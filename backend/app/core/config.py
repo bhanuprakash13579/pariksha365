@@ -5,7 +5,11 @@ class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
     
     # POSTGRES
-    POSTGRES_SERVER: str = ""
+    PGHOST: str = ""
+    PGPORT: str = ""
+    PGUSER: str = ""
+    PGPASSWORD: str = ""
+    PGDATABASE: str = ""
     POSTGRES_USER: str = ""
     POSTGRES_PASSWORD: str = ""
     POSTGRES_DB: str = ""
