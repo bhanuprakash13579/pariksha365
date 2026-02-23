@@ -1,7 +1,7 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "EdTech Test Series Platform"
+    PROJECT_NAME: str = "Pariksha365 Platform"
     API_V1_STR: str = "/api/v1"
     
     # POSTGRES

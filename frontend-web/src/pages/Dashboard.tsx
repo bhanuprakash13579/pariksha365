@@ -16,7 +16,7 @@ export const StudentDashboard = () => {
         <div className="min-h-screen bg-gray-50 flex flex-col">
             {/* Navbar */}
             <nav className="bg-orange-600 px-6 py-4 shadow-md flex justify-between items-center text-white">
-                <div className="text-2xl font-bold tracking-tight">EdTech Platform</div>
+                <div className="text-2xl font-bold tracking-tight">Pariksha365</div>
                 <div className="flex space-x-6 items-center">
                     <button className="hover:text-orange-200 transition-colors">My Tests</button>
                     <button className="hover:text-orange-200 transition-colors">Performance</button>

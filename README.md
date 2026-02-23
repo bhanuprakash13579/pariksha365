@@ -1,6 +1,6 @@
-# EdTech Test Series Platform - Deployment Guide
+# Pariksha365 Test Series Platform - Deployment Guide
 
-This full-stack EdTech platform acts as a production-grade skeleton, with a FastAPI backend, React+Vite frontend, and an Expo React Native mobile app.
+This full-stack Pariksha365 platform acts as a production-grade skeleton, with a FastAPI backend, React+Vite frontend, and an Expo React Native mobile app.
 
 ## Prerequisites
 - Docker & Docker Compose (Optional for backend deployment)
@@ -62,4 +62,4 @@ This full-stack EdTech platform acts as a production-grade skeleton, with a Fast
 ## Deployment Info
 - Ensure all CORS mappings match your production GUI domains.
 - Setup a reverse proxy like Nginx mapping `/api/v1` to the FastAPI instances.
-- For Docker deployment, use `docker build -t edtech-backend ./backend` and map `.env` correctly into the container.
+- For Docker deployment, use `docker build -t pariksha365-backend ./backend` and map `.env` correctly into the container.

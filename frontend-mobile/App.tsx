@@ -2,9 +2,22 @@ import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, FlatList, ScrollView, SafeAreaView, KeyboardAvoidingView, Platform, DimensionValue } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, FlatList, ScrollView, SafeAreaView, KeyboardAvoidingView, Platform, DimensionValue, Dimensions, Modal, Image, Alert } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { BarChart, LineChart, ProgressChart } from 'react-native-chart-kit';
+import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
+import * as AppleAuthentication from 'expo-apple-authentication';
+import * as Google from 'expo-auth-session/providers/google';
+import * as WebBrowser from 'expo-web-browser';
 
+WebBrowser.maybeCompleteAuthSession();
+
+// Replace with your actual IDs when generating for Web and Android
+const GOOGLE_IOS_CLIENT_ID = "592393648560-0csjsd0dvukv94qg05np14rj1v3o9gg2.apps.googleusercontent.com";
+const GOOGLE_WEB_CLIENT_ID = "592393648560-o4ou87jvmv6tj3uura8ls27td06pv0o5.apps.googleusercontent.com";
+const GOOGLE_ANDROID_CLIENT_ID = "592393648560-rpddhav13tiikcpgki71kvlegmi3s91c.apps.googleusercontent.com";
+
+const { width } = Dimensions.get('window');
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -18,6 +31,23 @@ const ENROLLED_TESTS = [
   { id: '1', title: 'SSC CGL Tier 1 Full Mock', progress: '30%', lastAttempted: '2 days ago' },
   { id: '2', title: 'SBI PO Prelims Mini Test', progress: '100%', lastAttempted: 'Completed' },
 ];
+
+const SERIES_TESTS = [
+  { id: 't1', title: 'Mock Test 1: Full Syllabus', questions: 100, mins: 60, type: 'Full Mock', isFree: true, isLocked: false },
+  { id: 't2', title: 'Mock Test 2: Full Syllabus', questions: 100, mins: 60, type: 'Full Mock', isFree: false, isLocked: true },
+  { id: 't3', title: 'Mock Test 3: Full Syllabus', questions: 100, mins: 60, type: 'Full Mock', isFree: false, isLocked: true },
+  { id: 't4', title: 'Sectional: Quant 1', questions: 25, mins: 15, type: 'Sectional', isFree: false, isLocked: true },
+  { id: 't5', title: 'Sectional: English 1', questions: 25, mins: 15, type: 'Sectional', isFree: false, isLocked: true },
+];
+
+const CHART_CONFIG = {
+  backgroundGradientFrom: "#ffffff",
+  backgroundGradientTo: "#ffffff",
+  color: (opacity = 1) => `rgba(249, 115, 22, ${opacity})`,
+  strokeWidth: 2,
+  barPercentage: 0.5,
+  useShadowColorFromDataset: false
+};
 
 // --- REUSABLE COMPONENTS ---
 const TestCard = ({ item, onPress }: any) => (
@@ -39,8 +69,62 @@ const TestCard = ({ item, onPress }: any) => (
   </TouchableOpacity>
 );
 
+// --- GUEST PAYWALL MODAL ---
+const GuestPaywallModal = ({ visible, onClose, navigation }: { visible: boolean, onClose: () => void, navigation: any }) => (
+  <Modal visible={visible} animationType="slide" transparent={true}>
+    <View style={styles.modalOverlay}>
+      <View style={styles.modalContent}>
+        <View style={styles.modalHeader}>
+          <Text style={styles.modalTitle}>Sign In Required</Text>
+          <TouchableOpacity onPress={onClose}><Ionicons name="close" size={28} color="#9ca3af" /></TouchableOpacity>
+        </View>
+        <Ionicons name="person-circle-outline" size={64} color="#f97316" style={{ alignSelf: 'center', marginVertical: 20 }} />
+        <Text style={styles.modalTextCenter}>You are currently browsing as a Guest.</Text>
+        <Text style={[styles.modalTextCenter, { marginTop: 10, fontWeight: 'bold' }]}>To save your progress, bookmark questions, or start an actual test, please create a free account.</Text>
+        <TouchableOpacity style={[styles.button, { marginTop: 30 }]} onPress={() => { onClose(); navigation.replace('Signup'); }}>
+          <Text style={styles.buttonText}>Create Free Account</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </Modal>
+);
+
 // --- AUTH SCREENS ---
 const LoginScreen = ({ navigation }: any) => {
+  const [request, response, promptAsync] = Google.useAuthRequest({
+    iosClientId: GOOGLE_IOS_CLIENT_ID,
+    webClientId: GOOGLE_WEB_CLIENT_ID,
+    androidClientId: GOOGLE_ANDROID_CLIENT_ID,
+  });
+
+  React.useEffect(() => {
+    if (response?.type === 'success') {
+      const { authentication } = response;
+      console.log('Google Auth Success:', authentication);
+      navigation.replace('MainTabs', { isGuest: false });
+    }
+  }, [response]);
+
+  const handleAppleAuth = async () => {
+    try {
+      const credential = await AppleAuthentication.signInAsync({
+        requestedScopes: [
+          AppleAuthentication.AppleAuthenticationScope.FULL_NAME,
+          AppleAuthentication.AppleAuthenticationScope.EMAIL,
+        ],
+      });
+      navigation.replace('MainTabs', { isGuest: false });
+    } catch (e: any) {
+      if (e.code !== 'ERR_REQUEST_CANCELED') {
+        Alert.alert('Authentication Failed', 'Apple Sign in failed.');
+      }
+    }
+  };
+
+  const handleGoogleAuth = () => {
+    promptAsync();
+  };
+
   return (
     <SafeAreaView style={styles.authContainer}>
       <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={styles.authInner}>
@@ -51,24 +135,112 @@ const LoginScreen = ({ navigation }: any) => {
         <View style={styles.formContainer}>
           <TextInput style={styles.input} placeholder="Email" placeholderTextColor="#9ca3af" keyboardType="email-address" autoCapitalize="none" />
           <TextInput style={styles.input} placeholder="Password" placeholderTextColor="#9ca3af" secureTextEntry />
-          <TouchableOpacity style={styles.primaryButton} onPress={() => navigation.replace('MainTabs')}>
-            <Text style={styles.primaryButtonText}>Login</Text>
+          <TouchableOpacity style={styles.primaryButton} onPress={() => navigation.replace('MainTabs', { isGuest: false })}>
+            <Text style={styles.primaryButtonText}>Log In</Text>
+          </TouchableOpacity>
+
+          <View style={styles.dividerRow}>
+            <View style={styles.divider} /><Text style={styles.dividerText}>OR</Text><View style={styles.divider} />
+          </View>
+
+          {Platform.OS === 'ios' && (
+            <AppleAuthentication.AppleAuthenticationButton
+              buttonType={AppleAuthentication.AppleAuthenticationButtonType.SIGN_IN}
+              buttonStyle={AppleAuthentication.AppleAuthenticationButtonStyle.BLACK}
+              cornerRadius={12}
+              style={{ width: '100%', height: 50, marginBottom: 15 }}
+              onPress={handleAppleAuth}
+            />
+          )}
+
+          <TouchableOpacity style={styles.socialButton} onPress={handleGoogleAuth}>
+            <Ionicons name="logo-google" size={24} color="#db4437" />
+            <Text style={styles.socialButtonText}>Sign in with Google</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={{ marginTop: 20, alignItems: 'center' }} onPress={() => navigation.navigate('Signup')}>
+            <Text style={{ color: '#4b5563', fontSize: 14 }}>Don't have an account? <Text style={{ color: '#f97316', fontWeight: 'bold' }}>Sign Up</Text></Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={{ marginTop: 25, alignItems: 'center' }} onPress={() => navigation.replace('MainTabs', { isGuest: true })}>
+            <Text style={{ color: '#6b7280', fontSize: 16, fontWeight: 'bold' }}>Explore as Guest  <Ionicons name="arrow-forward" size={14} /></Text>
           </TouchableOpacity>
         </View>
       </KeyboardAvoidingView>
     </SafeAreaView>
   );
 };
+
 const SignupScreen = ({ navigation }: any) => {
+  const [request, response, promptAsync] = Google.useAuthRequest({
+    iosClientId: GOOGLE_IOS_CLIENT_ID,
+    webClientId: GOOGLE_WEB_CLIENT_ID,
+    androidClientId: GOOGLE_ANDROID_CLIENT_ID,
+  });
+
+  React.useEffect(() => {
+    if (response?.type === 'success') {
+      const { authentication } = response;
+      console.log('Google Auth Success:', authentication);
+      navigation.replace('MainTabs', { isGuest: false });
+    }
+  }, [response]);
+
+  const handleAppleAuth = async () => {
+    try {
+      const credential = await AppleAuthentication.signInAsync({
+        requestedScopes: [
+          AppleAuthentication.AppleAuthenticationScope.FULL_NAME,
+          AppleAuthentication.AppleAuthenticationScope.EMAIL,
+        ],
+      });
+      navigation.replace('MainTabs', { isGuest: false });
+    } catch (e: any) {
+      if (e.code !== 'ERR_REQUEST_CANCELED') {
+        Alert.alert('Authentication Failed', 'Apple Sign in failed.');
+      }
+    }
+  };
+
+  const handleGoogleAuth = () => {
+    promptAsync();
+  };
+
   return (
     <SafeAreaView style={styles.authContainer}>
       <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={styles.authInner}>
         <Text style={styles.authTitle}>Create Account</Text>
+        <Text style={[styles.authSubtitle, { marginBottom: 20 }]}>Start your preparation journey today</Text>
         <View style={styles.formContainer}>
           <TextInput style={styles.input} placeholder="Full Name" placeholderTextColor="#9ca3af" />
           <TextInput style={styles.input} placeholder="Email" placeholderTextColor="#9ca3af" keyboardType="email-address" />
           <TextInput style={styles.input} placeholder="Password" placeholderTextColor="#9ca3af" secureTextEntry />
-          <TouchableOpacity style={styles.primaryButton} onPress={() => navigation.replace('MainTabs')}><Text style={styles.primaryButtonText}>Sign Up</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.primaryButton} onPress={() => navigation.replace('MainTabs', { isGuest: false })}>
+            <Text style={styles.primaryButtonText}>Sign Up</Text>
+          </TouchableOpacity>
+
+          <View style={styles.dividerRow}>
+            <View style={styles.divider} /><Text style={styles.dividerText}>OR</Text><View style={styles.divider} />
+          </View>
+
+          {Platform.OS === 'ios' && (
+            <AppleAuthentication.AppleAuthenticationButton
+              buttonType={AppleAuthentication.AppleAuthenticationButtonType.SIGN_UP}
+              buttonStyle={AppleAuthentication.AppleAuthenticationButtonStyle.BLACK}
+              cornerRadius={12}
+              style={{ width: '100%', height: 50, marginBottom: 15 }}
+              onPress={handleAppleAuth}
+            />
+          )}
+
+          <TouchableOpacity style={styles.socialButton} onPress={handleGoogleAuth}>
+            <Ionicons name="logo-google" size={24} color="#db4437" />
+            <Text style={styles.socialButtonText}>Sign up with Google</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={{ marginTop: 20, alignItems: 'center' }} onPress={() => navigation.navigate('Login')}>
+            <Text style={{ color: '#4b5563', fontSize: 14 }}>Already have an account? <Text style={{ color: '#f97316', fontWeight: 'bold' }}>Log In</Text></Text>
+          </TouchableOpacity>
         </View>
       </KeyboardAvoidingView>
     </SafeAreaView>
@@ -84,30 +256,45 @@ const HomeScreen = ({ navigation }: any) => {
         <Text style={styles.subGreeting}>Let's ace your next exam.</Text>
       </View>
       <View style={styles.contentPad}>
-        <Text style={styles.sectionTitle}>Upcoming Exams</Text>
+
+        {/* Exam Categories Row (Testbook style) */}
+        <Text style={styles.sectionTitle}>Exam Categories</Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.upcomingScroll}>
-          <View style={styles.upcomingCard}><Ionicons name="calendar" size={24} color="#f97316" /><View style={{ marginLeft: 12 }}><Text style={styles.upcomingTitle}>RRB NTPC</Text><Text style={styles.upcomingDate}>June 15, 2026</Text></View></View>
+          {['SSC', 'Banking', 'UPSC', 'Railways', 'State PSC'].map((cat, idx) => (
+            <View key={idx} style={styles.categoryBadge}>
+              <Text style={styles.categoryBadgeText}>{cat}</Text>
+            </View>
+          ))}
         </ScrollView>
-        <Text style={styles.sectionTitle}>Popular Test Series</Text>
+
+        <Text style={[styles.sectionTitle, { marginTop: 10 }]}>Live Tests & Quizzes</Text>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.upcomingScroll}>
+          <View style={styles.upcomingCard}><Ionicons name="flame" size={24} color="#ef4444" /><View style={{ marginLeft: 12 }}><Text style={styles.upcomingTitle}>Daily Current Affairs</Text><Text style={styles.upcomingDate}>15 Mins • Live Now</Text></View></View>
+          <View style={styles.upcomingCard}><Ionicons name="flash" size={24} color="#eab308" /><View style={{ marginLeft: 12 }}><Text style={styles.upcomingTitle}>Quant Speed Drill</Text><Text style={styles.upcomingDate}>10 Mins • Live Now</Text></View></View>
+        </ScrollView>
+
+        <Text style={[styles.sectionTitle, { marginTop: 10 }]}>Recommended Test Series</Text>
         <FlatList scrollEnabled={false} data={MOCK_TESTS} keyExtractor={item => item.id} renderItem={({ item }) => <TestCard item={item} onPress={() => navigation.navigate('TestDetail', { test: item })} />} />
       </View>
     </ScrollView>
   );
 };
 
-const MyTestsScreen = () => {
+const MyTestsScreen = ({ navigation }: any) => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.contentPad}>
         <Text style={[styles.sectionTitle, { marginTop: 15 }]}>Enrolled Test Series</Text>
         {ENROLLED_TESTS.map(test => (
-          <TouchableOpacity key={test.id} style={styles.card}>
+          <TouchableOpacity key={test.id} style={styles.card} onPress={() => navigation.navigate('SeriesTrend', { test })}>
             <View style={{ flex: 1 }}>
               <Text style={styles.cardTitle}>{test.title}</Text>
-              <View style={styles.progressBarBg}><View style={[styles.progressBarFill, { width: test.progress as DimensionValue }]} /></View>
+              <View style={styles.progressBarBg}>
+                <View style={[styles.progressBarFill, { width: test.progress as DimensionValue }]} />
+              </View>
               <Text style={styles.metricText}>Progress: {test.progress}</Text>
             </View>
-            <Ionicons name="chevron-forward" size={24} color="#9ca3af" />
+            <Ionicons name="chevron-forward" size={24} color="#f97316" />
           </TouchableOpacity>
         ))}
       </View>
@@ -116,7 +303,25 @@ const MyTestsScreen = () => {
 };
 
 // --- Testbook-Style Profile Screen ---
-const ProfileScreen = ({ navigation }: any) => {
+const ProfileScreen = ({ navigation, route }: any) => {
+  const isGuest = route.params?.isGuest || false;
+
+  if (isGuest) {
+    return (
+      <View style={[styles.container, { justifyContent: 'center', alignItems: 'center', padding: 20 }]}>
+        <Ionicons name="person-circle-outline" size={80} color="#d1d5db" />
+        <Text style={[styles.authTitle, { marginTop: 20 }]}>Guest Profile</Text>
+        <Text style={[styles.modalTextCenter, { marginVertical: 15 }]}>You are currently not signed in. Accounts are required to track history and save questions.</Text>
+        <TouchableOpacity style={[styles.button, { width: '100%', marginTop: 20 }]} onPress={() => navigation.replace('Signup')}>
+          <Text style={styles.buttonText}>Sign Up Now</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={{ marginTop: 20, alignItems: 'center' }} onPress={() => navigation.replace('Login')}>
+          <Text style={{ color: '#4b5563', fontSize: 16 }}>Already have an account? <Text style={{ color: '#f97316', fontWeight: 'bold' }}>Log In</Text></Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
+
   return (
     <ScrollView style={styles.container}>
       {/* Testbook Style Header */}
@@ -221,24 +426,149 @@ const DownloadsScreen = () => (
     </View>
   </View>
 );
-const AttemptHistoryScreen = () => (
+const AttemptHistoryScreen = ({ navigation }: any) => (
   <ScrollView style={styles.container}>
     <View style={styles.contentPadAlt}>
-      <View style={styles.card}>
+      <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('TestAnalysis')}>
         <View style={styles.flexRowBetween}>
-          <Text style={styles.cardTitle}>SSC CGL Full Mock 1</Text>
-          <Text style={styles.scoreText}>120/200</Text>
+          <View>
+            <Text style={styles.cardTitle}>SSC CGL Full Mock 1</Text>
+            <Text style={styles.metricText}>Attempted on Jan 14, 2026</Text>
+          </View>
+          <Text style={styles.scoreText}>120<Text style={{ fontSize: 12, color: '#6b7280' }}>/200</Text></Text>
         </View>
-        <Text style={styles.metricText}>Attempted on Jan 14, 2026</Text>
-        <Text style={styles.metricText}>Percentile: 94.5% - <Text style={{ color: '#10b981', fontWeight: 'bold' }}>Excellent</Text></Text>
-      </View>
+        <View style={{ flexDirection: 'row', marginTop: 15, justifyContent: 'space-between', borderTopWidth: 1, borderTopColor: '#f3f4f6', paddingTop: 10 }}>
+          <View><Text style={styles.metricText}>Rank</Text><Text style={[styles.cardTitle, { color: '#111827' }]}>1,402</Text></View>
+          <View><Text style={styles.metricText}>Percentile</Text><Text style={[styles.cardTitle, { color: '#10b981' }]}>94.5%</Text></View>
+          <View><Text style={styles.metricText}>Accuracy</Text><Text style={[styles.cardTitle, { color: '#111827' }]}>88%</Text></View>
+        </View>
+        <View style={[styles.button, { marginTop: 15, padding: 10, backgroundColor: '#fff7ed', borderWidth: 1, borderColor: '#fed7aa' }]}>
+          <Text style={[styles.buttonText, { color: '#ea580c' }]}>View Full Analysis</Text>
+        </View>
+      </TouchableOpacity>
     </View>
   </ScrollView>
 );
+
+const TestAnalysisScreen = () => {
+  return (
+    <ScrollView style={styles.container}>
+      <View style={styles.analysisHeader}>
+        <View style={{ alignItems: 'center' }}>
+          <ProgressChart
+            data={{ labels: ["Percentile"], data: [0.94] }}
+            width={width - 40}
+            height={150}
+            strokeWidth={16}
+            radius={50}
+            chartConfig={{ ...CHART_CONFIG, color: (opacity = 1) => `rgba(16, 185, 129, ${opacity})` }}
+            hideLegend={true}
+            style={{}}
+          />
+          <View style={{ position: 'absolute', top: 55, alignItems: 'center' }}>
+            <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#10b981' }}>94.5</Text>
+            <Text style={{ fontSize: 10, color: '#6b7280' }}>%ile</Text>
+          </View>
+        </View>
+
+        <View style={styles.statsBannerRow}>
+          <View style={styles.statsBox}>
+            <Text style={[styles.statsValue, { fontSize: 18, color: '#111827' }]}>1,402<Text style={{ fontSize: 10, color: '#9ca3af' }}>/10k</Text></Text>
+            <Text style={styles.statsLabel}>Rank</Text>
+          </View>
+          <View style={styles.statsBox}>
+            <Text style={[styles.statsValue, { fontSize: 18, color: '#111827' }]}>120<Text style={{ fontSize: 10, color: '#9ca3af' }}>/200</Text></Text>
+            <Text style={styles.statsLabel}>Score</Text>
+          </View>
+          <View style={styles.statsBox}>
+            <Text style={[styles.statsValue, { fontSize: 18, color: '#111827' }]}>88%</Text>
+            <Text style={styles.statsLabel}>Accuracy</Text>
+          </View>
+        </View>
+      </View>
+
+      <View style={styles.contentPadAlt}>
+        <Text style={styles.sectionTitle}>Section-wise Score</Text>
+        <View style={styles.chartWrapper}>
+          <BarChart
+            data={{
+              labels: ["Quant", "Reason", "Eng", "GK"],
+              datasets: [{ data: [45, 40, 25, 10] }]
+            }}
+            width={width - 64}
+            height={220}
+            yAxisLabel=""
+            yAxisSuffix=""
+            chartConfig={CHART_CONFIG}
+            verticalLabelRotation={0}
+            style={{ borderRadius: 16 }}
+            flatColor={true}
+            withInnerLines={false}
+          />
+        </View>
+
+        <Text style={[styles.sectionTitle, { marginTop: 20 }]}>Strong & Weak Areas</Text>
+        <View style={{ flexDirection: 'row', gap: 10 }}>
+          <View style={[styles.analysisCard, { borderColor: '#bbf7d0', backgroundColor: '#f0fdf4' }]}>
+            <Text style={[styles.cardTitle, { color: '#166534', marginBottom: 10 }]}>Strengths</Text>
+            <Text style={styles.tag}>Profit & Loss</Text>
+            <Text style={styles.tag}>Syllogism</Text>
+          </View>
+          <View style={[styles.analysisCard, { borderColor: '#fecaca', backgroundColor: '#fef2f2' }]}>
+            <Text style={[styles.cardTitle, { color: '#991b1b', marginBottom: 10 }]}>Weaknesses</Text>
+            <Text style={[styles.tag, { color: '#991b1b' }]}>Current Affairs</Text>
+            <Text style={[styles.tag, { color: '#991b1b' }]}>Vocabulary</Text>
+          </View>
+        </View>
+
+        <TouchableOpacity style={[styles.button, { marginTop: 30, marginBottom: 40 }]}>
+          <Text style={styles.buttonText}>Review All Answers</Text>
+        </TouchableOpacity>
+      </View>
+    </ScrollView>
+  );
+};
+
+const SeriesTrendScreen = ({ route }: any) => {
+  const { test } = route.params;
+  return (
+    <ScrollView style={styles.container}>
+      <View style={styles.analysisHeader}>
+        <Text style={styles.detailTitle}>{test.title}</Text>
+        <Text style={{ color: '#6b7280', marginTop: 5 }}>Performance Trajectory</Text>
+      </View>
+
+      <View style={styles.contentPadAlt}>
+        <Text style={styles.sectionTitle}>Score Progression</Text>
+        <View style={styles.chartWrapper}>
+          <LineChart
+            data={{
+              labels: ["M1", "M2", "M3", "M4", "M5"],
+              datasets: [{ data: [80, 95, 88, 110, 120] }]
+            }}
+            width={width - 64}
+            height={220}
+            chartConfig={CHART_CONFIG}
+            bezier
+            style={{ borderRadius: 16 }}
+            withShadow={false}
+            withHorizontalLines={true}
+            withVerticalLines={false}
+          />
+        </View>
+
+        <View style={styles.infoBox}>
+          <Text style={{ fontWeight: 'bold', color: '#166534' }}>Projected Result: Clear Cut-off</Text>
+          <Text style={[styles.infoText, { marginTop: 5 }]}>Based on your recent upward trend, you are projected to score ~135 in the actual exam, comfortably clearing the 130 cut-off mark.</Text>
+        </View>
+      </View>
+    </ScrollView>
+  );
+};
 const ReferEarnScreen = () => (
   <View style={styles.detailContainer}>
     <Text style={styles.detailTitle}>🎁 Refer & Earn</Text>
-    <Text style={[styles.metricText, { marginTop: 15, fontSize: 16, lineHeight: 24 }]}>Refer a friend and both of you get 10% off your next EdTech Pass PRO purchase! Use code S10X9A.</Text>
+    <Text style={[styles.metricText, { marginTop: 15, fontSize: 16, lineHeight: 24 }]}>Refer a friend and both of you get 10% off your next Pariksha365 Pass PRO purchase! Use code S10X9A.</Text>
   </View>
 );
 const ChangeExamScreen = () => (
@@ -294,27 +624,130 @@ const NotificationsScreen = () => (
 const HelpSupportScreen = () => (
   <View style={styles.detailContainer}>
     <Text style={styles.detailTitle}>Help Desk</Text>
-    <Text style={[styles.metricText, { marginTop: 15, fontSize: 16 }]}>For all queries, technical issues, or refund requests, please email us directly at support@edtech.com</Text>
+    <Text style={[styles.metricText, { marginTop: 15, fontSize: 16 }]}>For all queries, technical issues, or refund requests, please email us directly at support@pariksha365.in</Text>
   </View>
 );
 
-const TestDetailScreen = ({ route }: any) => {
-  const { test } = route.params;
-  return (
-    <ScrollView style={styles.detailContainer}>
-      <Text style={styles.detailTitle}>{test.title}</Text>
-      <View style={{ flexDirection: 'row', marginTop: 10, marginBottom: 20 }}><Text style={styles.tag}>{test.tags}</Text></View>
-      <View style={{ marginTop: 40 }}>
-        <TouchableOpacity style={test.isFree ? styles.button : styles.buttonDisabled}>
-          <Text style={styles.buttonText}>{test.isFree ? 'Start Test' : 'Purchase on Website'}</Text>
+// --- Deep Series Details & Netflix Reader Bypass ---
+const WebUnlockModal = ({ visible, onClose, testTitle }: { visible: boolean, onClose: () => void, testTitle: string }) => (
+  <Modal visible={visible} animationType="slide" transparent={true}>
+    <View style={styles.modalOverlay}>
+      <View style={styles.modalContent}>
+        <View style={styles.modalHeader}>
+          <Text style={styles.modalTitle}>Premium Content</Text>
+          <TouchableOpacity onPress={onClose}><Ionicons name="close" size={28} color="#9ca3af" /></TouchableOpacity>
+        </View>
+        <Ionicons name="lock-closed" size={64} color="#f97316" style={{ alignSelf: 'center', marginVertical: 20 }} />
+        <Text style={styles.modalTextCenter}>This is a premium test locked under the Pariksha365 platform policies.</Text>
+        <Text style={[styles.modalTextCenter, { marginTop: 10, fontWeight: 'bold' }]}>To take this test, please purchase the complete Test Series on our official website.</Text>
+        <TouchableOpacity style={[styles.button, { marginTop: 30 }]} onPress={onClose}>
+          <Text style={styles.buttonText}>Okay, I understand</Text>
         </TouchableOpacity>
       </View>
+    </View>
+  </Modal>
+);
+
+const TestDetailScreen = ({ route, navigation }: any) => {
+  const { test, isGuest } = route.params;
+  const [index, setIndex] = useState(0);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [guestModal, setGuestModal] = useState(false);
+  const [routes] = useState([
+    { key: 'overview', title: 'Overview' },
+    { key: 'tests', title: 'Content' },
+  ]);
+
+  const handleTestTap = (item: any) => {
+    if (item.isLocked) { setModalVisible(true); }
+    else if (isGuest) { setGuestModal(true); }
+    else { /* Navigate to Test Engine Screen */ }
+  };
+
+  const OverviewRoute = () => (
+    <ScrollView style={styles.contentPadAlt}>
+      <View style={styles.infoBox}>
+        <Text style={[styles.detailTitle, { fontSize: 20, marginBottom: 10 }]}>Syllabus Covered</Text>
+        <Text style={styles.metricText}>• Quantitative Aptitude (Algebra, Geometry)</Text>
+        <Text style={styles.metricText}>• Logical Reasoning (Puzzles, Syllogism)</Text>
+        <Text style={styles.metricText}>• English Language (Comprehension, Grammar)</Text>
+        <Text style={styles.metricText}>• General Awareness (History, Constitution, Physics)</Text>
+      </View>
+      <View style={[styles.card, { marginTop: 15 }]}>
+        <Text style={styles.cardTitle}>Total Tests</Text>
+        <Text style={styles.scoreText}>140+</Text>
+      </View>
     </ScrollView>
+  );
+
+  const TestsRoute = () => (
+    <ScrollView style={styles.contentPadAlt}>
+      <Text style={[styles.sectionTitle, { marginTop: 10 }]}>Full Mock Tests</Text>
+      {SERIES_TESTS.filter(t => t.type === 'Full Mock').map(item => (
+        <TouchableOpacity key={item.id} style={styles.card} onPress={() => handleTestTap(item)}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', flex: 1 }}>
+            <View style={[styles.iconBox, item.isLocked && styles.iconBoxLocked]}>
+              <Ionicons name={item.isLocked ? "lock-closed" : "play"} size={20} color={item.isLocked ? "#9ca3af" : "#f97316"} />
+            </View>
+            <View style={{ flex: 1, marginLeft: 15 }}>
+              <Text style={[styles.cardTitle, item.isLocked && { color: '#9ca3af' }]}>{item.title}</Text>
+              <View style={styles.metricsRow}>
+                <Text style={styles.metricText}>{item.questions} Qs</Text>
+                <Text style={styles.metricText}>{item.mins} Mins</Text>
+              </View>
+            </View>
+            {item.isFree && <View style={styles.freeTag}><Text style={styles.freeTagText}>FREE</Text></View>}
+          </View>
+        </TouchableOpacity>
+      ))}
+
+      <Text style={[styles.sectionTitle, { marginTop: 20 }]}>Sectional Tests</Text>
+      {SERIES_TESTS.filter(t => t.type === 'Sectional').map(item => (
+        <TouchableOpacity key={item.id} style={styles.card} onPress={() => handleTestTap(item)}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', flex: 1 }}>
+            <View style={[styles.iconBox, item.isLocked && styles.iconBoxLocked]}>
+              <Ionicons name={item.isLocked ? "lock-closed" : "play"} size={20} color={item.isLocked ? "#9ca3af" : "#f97316"} />
+            </View>
+            <View style={{ flex: 1, marginLeft: 15 }}>
+              <Text style={[styles.cardTitle, item.isLocked && { color: '#9ca3af' }]}>{item.title}</Text>
+              <View style={styles.metricsRow}>
+                <Text style={styles.metricText}>{item.questions} Qs</Text>
+                <Text style={styles.metricText}>{item.mins} Mins</Text>
+              </View>
+            </View>
+          </View>
+        </TouchableOpacity>
+      ))}
+    </ScrollView>
+  );
+
+  return (
+    <View style={styles.container}>
+      {/* Test Series Header Block */}
+      <View style={styles.seriesHeader}>
+        <Text style={styles.seriesTitle}>{test.title}</Text>
+        <Text style={{ color: '#6b7280', marginTop: 8 }}>{test.tags}</Text>
+      </View>
+
+      {/* Deep Tab Navigation */}
+      <TabView
+        navigationState={{ index, routes }}
+        renderScene={SceneMap({ overview: OverviewRoute, tests: TestsRoute })}
+        onIndexChange={setIndex}
+        initialLayout={{ width }}
+        renderTabBar={props => (
+          <TabBar {...props} indicatorStyle={{ backgroundColor: '#f97316' }} style={{ backgroundColor: '#ffffff', elevation: 0 }} activeColor="#f97316" inactiveColor="#6b7280" />
+        )}
+      />
+      <WebUnlockModal visible={modalVisible} onClose={() => setModalVisible(false)} testTitle={""} />
+      <GuestPaywallModal visible={guestModal} onClose={() => setGuestModal(false)} navigation={navigation} />
+    </View>
   );
 };
 
 // --- NAVIGATION CONFIG ---
-const MainTabs = () => {
+const MainTabs = ({ route }: any) => {
+  const isGuest = route.params?.isGuest || false;
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -332,9 +765,9 @@ const MainTabs = () => {
         headerTitleStyle: { fontWeight: 'bold' }
       })}
     >
-      <Tab.Screen name="HomeTab" component={HomeScreen} options={{ title: 'Home', headerShown: false }} />
+      <Tab.Screen name="HomeTab" component={HomeScreen} initialParams={{ isGuest }} options={{ title: 'Home', headerShown: false }} />
       <Tab.Screen name="MyTestsTab" component={MyTestsScreen} options={{ title: 'My Tests' }} />
-      <Tab.Screen name="ProfileTab" component={ProfileScreen} options={{ title: 'Profile', headerShown: false }} />
+      <Tab.Screen name="ProfileTab" component={ProfileScreen} initialParams={{ isGuest }} options={{ title: 'Profile', headerShown: false }} />
     </Tab.Navigator>
   );
 };
@@ -352,6 +785,8 @@ export default function App() {
         <Stack.Screen name="SavedQuestions" component={SavedQuestionsScreen} options={{ title: 'Saved Questions' }} />
         <Stack.Screen name="Downloads" component={DownloadsScreen} options={{ title: 'Downloads' }} />
         <Stack.Screen name="AttemptHistory" component={AttemptHistoryScreen} options={{ title: 'Attempt History' }} />
+        <Stack.Screen name="TestAnalysis" component={TestAnalysisScreen} options={{ title: 'Detailed Analysis' }} />
+        <Stack.Screen name="SeriesTrend" component={SeriesTrendScreen} options={{ title: 'Series Progress' }} />
         <Stack.Screen name="ReferEarn" component={ReferEarnScreen} options={{ title: 'Refer & Earn' }} />
         <Stack.Screen name="ChangeExam" component={ChangeExamScreen} options={{ title: 'Change Goal' }} />
         <Stack.Screen name="PaymentHistory" component={PaymentHistoryScreen} options={{ title: 'Payment History' }} />
@@ -380,6 +815,11 @@ const styles = StyleSheet.create({
   input: { backgroundColor: '#f3f4f6', borderRadius: 12, padding: 16, marginBottom: 16, fontSize: 16, color: '#1f2937', borderWidth: 1, borderColor: '#e5e7eb' },
   primaryButton: { backgroundColor: '#f97316', borderRadius: 12, padding: 16, alignItems: 'center', shadowColor: '#f97316', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 8, elevation: 5 },
   primaryButtonText: { color: '#ffffff', fontSize: 18, fontWeight: 'bold' },
+  dividerRow: { flexDirection: 'row', alignItems: 'center', marginVertical: 25 },
+  divider: { flex: 1, height: 1, backgroundColor: '#e5e7eb' },
+  dividerText: { color: '#9ca3af', paddingHorizontal: 10, fontWeight: 'bold' },
+  socialButton: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', backgroundColor: '#ffffff', borderWidth: 1, borderColor: '#e5e7eb', borderRadius: 12, padding: 14, marginBottom: 15 },
+  socialButtonText: { fontSize: 16, fontWeight: 'bold', color: '#374151', marginLeft: 10 },
 
   // Home Header
   header: { padding: 20, paddingTop: 60, backgroundColor: '#f97316', paddingBottom: 30, borderBottomLeftRadius: 24, borderBottomRightRadius: 24 },
@@ -449,4 +889,24 @@ const styles = StyleSheet.create({
   emptyState: { flex: 1, alignItems: 'center', justifyContent: 'center', paddingTop: 60 },
   emptyText: { fontSize: 18, fontWeight: 'bold', color: '#4b5563', marginTop: 16 },
   emptySubText: { fontSize: 14, color: '#9ca3af', textAlign: 'center', marginTop: 8, paddingHorizontal: 40 },
+
+  // Advanced Analysis
+  analysisHeader: { backgroundColor: '#ffffff', padding: 20, paddingTop: 30, borderBottomWidth: 1, borderBottomColor: '#f3f4f6' },
+  chartWrapper: { backgroundColor: '#ffffff', padding: 16, borderRadius: 16, alignItems: 'center', elevation: 1, shadowColor: '#000', shadowOpacity: 0.05, shadowRadius: 3, borderWidth: 1, borderColor: '#f3f4f6' },
+  analysisCard: { flex: 1, padding: 16, borderRadius: 16, borderWidth: 1 },
+
+  // Deep Series & Catgories
+  categoryBadge: { paddingHorizontal: 20, paddingVertical: 10, backgroundColor: '#f3f4f6', borderRadius: 20, marginRight: 10, borderWidth: 1, borderColor: '#e5e7eb' },
+  categoryBadgeText: { fontWeight: 'bold', color: '#4b5563' },
+  seriesHeader: { backgroundColor: '#ffffff', padding: 20, paddingTop: 20, borderBottomWidth: 1, borderBottomColor: '#f3f4f6' },
+  seriesTitle: { fontSize: 22, fontWeight: 'bold', color: '#111827' },
+  iconBox: { width: 40, height: 40, borderRadius: 20, backgroundColor: '#fff7ed', alignItems: 'center', justifyContent: 'center' },
+  iconBoxLocked: { backgroundColor: '#f3f4f6' },
+
+  // Modals
+  modalOverlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.5)', justifyContent: 'flex-end' },
+  modalContent: { backgroundColor: '#ffffff', borderTopLeftRadius: 24, borderTopRightRadius: 24, padding: 24, paddingBottom: 40 },
+  modalHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  modalTitle: { fontSize: 20, fontWeight: 'bold', color: '#111827' },
+  modalTextCenter: { fontSize: 16, color: '#4b5563', textAlign: 'center', lineHeight: 24 }
 });
