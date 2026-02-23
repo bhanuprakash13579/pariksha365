@@ -35,6 +35,61 @@ app.include_router(test_series_router.router, prefix=f"{settings.API_V1_STR}/tes
 app.include_router(attempt_router.router, prefix=f"{settings.API_V1_STR}/attempts", tags=["attempts"])
 app.include_router(payment_router.router, prefix=f"{settings.API_V1_STR}/payments", tags=["payments"])
 
+from fastapi.responses import HTMLResponse
+
 @app.get("/health")
 async def health_check():
     return {"status": "ok"}
+
+@app.get("/privacy", response_class=HTMLResponse)
+async def privacy_policy():
+    return """
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Privacy Policy - Pariksha365</title>
+        <style>
+            body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+            h1, h2, h3 { color: #2c3e50; }
+            .container { background-color: #f9f9f9; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Privacy Policy for Pariksha365</h1>
+            <p><strong>Last Updated: February 23, 2026</strong></p>
+            
+            <h2>1. Introduction</h2>
+            <p>Welcome to Pariksha365. This Privacy Policy outlines how we collect, use, and protect your information when you use our mobile application and related services.</p>
+            
+            <h2>2. Information We Collect</h2>
+            <ul>
+                <li><strong>Personal Information:</strong> When you register, we collect information such as your name, email address, and profile details (e.g., via Google or Apple Sign-In).</li>
+                <li><strong>Usage Data:</strong> We collect data regarding your mock test attempts, scores, analytics, and interaction with the app to provide personalized insights and rankings.</li>
+                <li><strong>Device Information:</strong> We may collect non-identifiable device information to ensure app stability and fix crashes.</li>
+            </ul>
+            
+            <h2>3. How We Use Your Information</h2>
+            <ul>
+                <li>To provide, maintain, and improve the Pariksha365 platform.</li>
+                <li>To generate test performance analytics, rankings, and percentiles.</li>
+                <li>To manage your account and communicate important updates.</li>
+            </ul>
+            
+            <h2>4. Data Sharing and Security</h2>
+            <p>We do not sell your personal information to third parties. We use industry-standard security measures to protect your data. Your password and sensitive data are encrypted.</p>
+            
+            <h2>5. Children's Privacy</h2>
+            <p>Our services are generally intended for users preparing for competitive exams (typically ages 16+). We do not knowingly collect personal information from children under the age of 13 without parental consent.</p>
+            
+            <h2>6. Your Rights</h2>
+            <p>You have the right to access, update, or request the deletion of your personal data. You can delete your account directly inside the app settings at any time.</p>
+            
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions regarding this Privacy Policy, please contact us at: support@pariksha365.in</p>
+        </div>
+    </body>
+    </html>
+    """
