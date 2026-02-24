@@ -9,7 +9,7 @@ LOCAL_URL="http://localhost:8000/api/v1"
 # For testing the mobile app on a physical device, you might need to change localhost to your computer's local IP address, e.g., 192.168.1.x
 MOBILE_LOCAL_URL="http://127.0.0.1:8000/api/v1" 
 
-PROD_URL="https://pariksha365-backend-production.up.railway.app/api/v1"
+PROD_URL="https://pariksha365-production.up.railway.app/api/v1"
 
 if [ "$ENV" == "local" ]; then
     echo "🔄 Switching to LOCAL environment..."
