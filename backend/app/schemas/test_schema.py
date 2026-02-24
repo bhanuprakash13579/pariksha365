@@ -45,3 +45,28 @@ class TestSeriesResponse(TestSeriesBase):
 
     class Config:
         from_attributes = True
+
+# Bulk Upload Schemas
+from app.models.question import DifficultyLevel
+
+class OptionBulkCreate(BaseModel):
+    option_text: str
+    is_correct: bool = False
+
+class QuestionBulkCreate(BaseModel):
+    question_text: str
+    image_url: Optional[str] = None
+    explanation: Optional[str] = None
+    difficulty: DifficultyLevel = DifficultyLevel.MEDIUM
+    subject: Optional[str] = None
+    topic: Optional[str] = None
+    options: List[OptionBulkCreate] = []
+
+class SectionBulkCreate(BaseModel):
+    title: str
+    time_limit_minutes: Optional[int] = None
+    marks_per_question: float = 1.0
+    questions: List[QuestionBulkCreate] = []
+
+class TestSeriesBulkCreate(TestSeriesBase):
+    sections: List[SectionBulkCreate] = []

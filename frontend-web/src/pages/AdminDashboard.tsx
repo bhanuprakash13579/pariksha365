@@ -12,6 +12,7 @@ export const AdminDashboard = () => {
     const [newCourse, setNewCourse] = useState({ title: '', description: '', price: 0, category: '' });
     const [newFolder, setNewFolder] = useState({ course_id: '', title: '', is_free: false });
     const [newLink, setNewLink] = useState({ folder_id: '', test_id: '' });
+    const [uploading, setUploading] = useState(false);
 
     const fetchData = async () => {
         try {
@@ -27,6 +28,29 @@ export const AdminDashboard = () => {
     useEffect(() => {
         fetchData();
     }, []);
+
+    const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        setUploading(true);
+        const reader = new FileReader();
+        reader.onload = async (event) => {
+            try {
+                const jsonData = JSON.parse(event.target?.result as string);
+                await api.post('/tests/bulk', jsonData);
+                alert('Test Series successfully created from JSON!');
+                fetchData();
+            } catch (err) {
+                console.error(err);
+                alert('Failed to upload JSON. Ensure schema matches TestSeriesBulkCreate.');
+            } finally {
+                setUploading(false);
+                if (e.target) e.target.value = ''; // Reset input
+            }
+        };
+        reader.readAsText(file);
+    };
 
     const handleCreateCourse = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -117,6 +141,18 @@ export const AdminDashboard = () => {
                                 <input type="text" placeholder="Custom Image URL (Optional)" className="border p-2 rounded" value={newCategory.image_url} onChange={e => setNewCategory({ ...newCategory, image_url: e.target.value })} />
                                 <button type="submit" className="col-span-2 bg-purple-600 text-white py-2 rounded font-bold hover:bg-purple-700">Create Category</button>
                             </form>
+                        </div>
+
+                        {/* Upload JSON Test Series */}
+                        <div className="bg-orange-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-orange-200 dark:border-gray-700">
+                            <h2 className="text-xl font-bold mb-4 text-orange-800 dark:text-orange-400">Bulk Upload JSON Test Series</h2>
+                            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                                Upload a structured `.json` file containing the Test Series details, Sections, Questions, and Options to instantiate an entire exam in one click.
+                            </p>
+                            <label className="cursor-pointer bg-white border border-gray-300 rounded p-2 px-4 shadow-sm hover:bg-gray-50 flex items-center inline-block">
+                                {uploading ? 'Parsing and Uploading...' : 'Select JSON File'}
+                                <input type="file" accept=".json" className="hidden" onChange={handleFileUpload} disabled={uploading} />
+                            </label>
                         </div>
 
                         {/* Create Course Form */}

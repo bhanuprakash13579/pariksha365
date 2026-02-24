@@ -55,3 +55,31 @@ async def create_question(db: AsyncSession, section_id: uuid.UUID, question_in: 
     await db.commit()
     await db.refresh(db_question)
     return db_question
+
+from app.schemas.test_schema import TestSeriesBulkCreate
+
+async def create_test_series_bulk(db: AsyncSession, test_in: TestSeriesBulkCreate) -> TestSeries:
+    test_data = test_in.model_dump(exclude={"sections"})
+    db_test = TestSeries(**test_data)
+    db.add(db_test)
+    await db.flush() # Get ID
+    
+    for s_idx, sec_in in enumerate(test_in.sections):
+        sec_data = sec_in.model_dump(exclude={"questions"})
+        db_sec = Section(test_series_id=db_test.id, order_index=s_idx+1, **sec_data)
+        db.add(db_sec)
+        await db.flush()
+        
+        for q_idx, q_in in enumerate(sec_in.questions):
+            q_data = q_in.model_dump(exclude={"options"})
+            db_q = Question(section_id=db_sec.id, order_index=q_idx+1, **q_data)
+            db.add(db_q)
+            await db.flush()
+            
+            for o_in in q_in.options:
+                db_opt = Option(question_id=db_q.id, **o_in.model_dump())
+                db.add(db_opt)
+
+    await db.commit()
+    await db.refresh(db_test)
+    return db_test
