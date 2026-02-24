@@ -3,6 +3,7 @@ import { AdminDashboard } from './pages/AdminDashboard';
 import { MockTestInterface } from './pages/MockTestInterface';
 import { Auth } from './pages/Auth';
 import { StudentDashboard } from './pages/Dashboard';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Route path="/dashboard" element={<StudentDashboard />} />
                 <Route path="/admin" element={<AdminDashboard />} />
                 <Route path="/mock-test" element={<MockTestInterface />} />
+                <Route path="/privacy" element={<PrivacyPolicy />} />
             </Routes>
         </Router>
     );
