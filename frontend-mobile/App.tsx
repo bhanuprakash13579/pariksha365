@@ -133,6 +133,7 @@ import CategoryScreen from './src/screens/Course/CategoryScreen';
 
 import MyLearningScreen from './src/screens/Main/MyLearningScreen';
 import AnalyticsScreen from './src/screens/Main/AnalyticsScreen';
+import DailyQuizScreen from './src/screens/Main/DailyQuizScreen';
 
 // --- Testbook-Style Profile Screen ---
 const ProfileScreen = ({ navigation, route }: any) => {
@@ -654,6 +655,7 @@ const MainTabs = ({ route }: any) => {
         tabBarIcon: ({ focused, color, size }) => {
           let iconName: any = 'home';
           if (route.name === 'HomeTab') iconName = focused ? 'home' : 'home-outline';
+          else if (route.name === 'DailyQuizTab') iconName = focused ? 'flash' : 'flash-outline';
           else if (route.name === 'MyLearningTab') iconName = focused ? 'book' : 'book-outline';
           else if (route.name === 'AnalyticsTab') iconName = focused ? 'stats-chart' : 'stats-chart-outline';
           else if (route.name === 'ProfileTab') iconName = focused ? 'person' : 'person-outline';
@@ -667,6 +669,7 @@ const MainTabs = ({ route }: any) => {
       })}
     >
       <Tab.Screen name="HomeTab" component={HomeScreen} initialParams={{ isGuest }} options={{ title: 'Home', headerShown: false }} />
+      <Tab.Screen name="DailyQuizTab" component={DailyQuizScreen} options={{ title: 'Daily Quizzes' }} />
       <Tab.Screen name="MyLearningTab" component={MyLearningScreen} options={{ title: 'My Learning' }} />
       <Tab.Screen name="AnalyticsTab" component={AnalyticsScreen} options={{ title: 'Analytics' }} />
       <Tab.Screen name="ProfileTab" component={ProfileScreen} initialParams={{ isGuest }} options={{ title: 'Profile', headerShown: false }} />
