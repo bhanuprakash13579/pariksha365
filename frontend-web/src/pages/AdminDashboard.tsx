@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Settings, Users, FileText, Activity, Plus, Folder, Link as LinkIcon } from 'lucide-react';
+import { FileText, Activity, Plus, Folder, Link as LinkIcon } from 'lucide-react';
 import { api } from '../services/api';
 
 export const AdminDashboard = () => {
