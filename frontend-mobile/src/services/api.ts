@@ -28,6 +28,12 @@ export const UserAPI = {
     getMe: () => api.get('/users/me'),
     updateMe: (data: { name?: string; phone?: string }) => api.put('/users/me', data),
     changePassword: (old_password: string, new_password: string) => api.put('/users/me/password', { old_password, new_password }),
+    getEnrollments: () => api.get('/users/me/enrollments')
+};
+
+export const AnalyticsAPI = {
+    getAttemptAnalytics: (attemptId: string) => api.get(`/analytics/attempt/${attemptId}`),
+    getSeriesAnalytics: (courseId: string) => api.get(`/analytics/series/${courseId}`)
 };
 
 export const CourseAPI = {

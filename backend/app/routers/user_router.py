@@ -19,6 +19,35 @@ async def read_user_me(
     """
     return current_user
 
+from app.schemas.course_schema import CourseResponse
+from sqlalchemy.future import select
+from sqlalchemy.orm import selectinload
+
+@router.get("/me/enrollments", response_model=List[CourseResponse])
+async def read_user_enrollments(
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_active_user),
+) -> Any:
+    """
+    Get courses the current user is enrolled in.
+    """
+    from app.models.enrollment import Enrollment
+    from app.models.course import Course
+    from app.models.course_folder import CourseFolder
+    
+    stmt = (
+        select(Enrollment)
+        .options(
+            selectinload(Enrollment.course)
+            .selectinload(Course.folders)
+            .selectinload(CourseFolder.tests)
+        )
+        .where(Enrollment.user_id == current_user.id)
+    )
+    result = await db.execute(stmt)
+    enrollments = result.scalars().all()
+    return [e.course for e in enrollments if e.course]
+
 @router.put("/me", response_model=UserResponse)
 async def update_user_me(
     user_update: UserUpdate,

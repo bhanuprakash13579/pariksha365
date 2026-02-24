@@ -31,17 +31,6 @@ export default function HomeScreen({ navigation, route }: any) {
             <GlobalHeader onOpenDrawer={() => setDrawerVisible(true)} />
 
             <ScrollView contentContainerStyle={styles.contentPadAlt}>
-                {/* Streaks Banner */}
-                <View style={[styles.card, { backgroundColor: '#111827', flexDirection: 'row', alignItems: 'center', marginTop: 10, marginBottom: 15 }]}>
-                    <View style={{ width: 50, height: 50, borderRadius: 25, backgroundColor: 'rgba(249, 115, 22, 0.2)', alignItems: 'center', justifyContent: 'center' }}>
-                        <Ionicons name="flame" size={28} color={COLORS.primary} />
-                    </View>
-                    <View style={{ flex: 1, marginLeft: 15 }}>
-                        <Text style={{ color: COLORS.white, fontSize: 18, fontWeight: 'bold' }}>3 Day Streak! 🔥</Text>
-                        <Text style={{ color: '#9ca3af', fontSize: 13, marginTop: 4 }}>Complete a daily quiz to extend your streak.</Text>
-                    </View>
-                </View>
-
                 <Text style={[styles.sectionTitle, { fontSize: 16, color: COLORS.textSub, marginTop: 10 }]}>| Explore All Categories</Text>
 
                 {loading ? <ActivityIndicator size="large" color={COLORS.primary} style={{ marginTop: 20 }} /> : null}
