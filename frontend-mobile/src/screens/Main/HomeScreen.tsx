@@ -31,7 +31,46 @@ export default function HomeScreen({ navigation, route }: any) {
             <GlobalHeader onOpenDrawer={() => setDrawerVisible(true)} />
 
             <ScrollView contentContainerStyle={styles.contentPadAlt}>
-                <Text style={[styles.sectionTitle, { fontSize: 16, color: COLORS.textSub, marginTop: 10 }]}>| Explore All Categories</Text>
+                {/* Streaks Banner */}
+                <View style={[styles.card, { backgroundColor: '#111827', flexDirection: 'row', alignItems: 'center', marginTop: 10 }]}>
+                    <View style={{ width: 50, height: 50, borderRadius: 25, backgroundColor: 'rgba(249, 115, 22, 0.2)', alignItems: 'center', justifyContent: 'center' }}>
+                        <Ionicons name="flame" size={28} color={COLORS.primary} />
+                    </View>
+                    <View style={{ flex: 1, marginLeft: 15 }}>
+                        <Text style={{ color: COLORS.white, fontSize: 18, fontWeight: 'bold' }}>3 Day Streak! 🔥</Text>
+                        <Text style={{ color: '#9ca3af', fontSize: 13, marginTop: 4 }}>Complete a daily quiz to extend your streak.</Text>
+                    </View>
+                </View>
+
+                {/* Daily Quizzes */}
+                <View style={{ marginTop: 15, marginBottom: 5 }}>
+                    <View style={styles.flexRowBetween}>
+                        <Text style={[styles.sectionTitle, { marginBottom: 10 }]}>Live Daily Quizzes</Text>
+                        <TouchableOpacity><Text style={{ color: COLORS.primary, fontWeight: 'bold' }}>View All</Text></TouchableOpacity>
+                    </View>
+                    <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                        {['Current Affairs - Oct 25', 'English Vocab Mini', 'Quant Speed Test'].map((quiz, i) => (
+                            <TouchableOpacity key={i} style={[styles.card, { width: 240, marginRight: 15, padding: 15, marginBottom: 10 }]}>
+                                <View style={styles.flexRowBetween}>
+                                    <View style={{ backgroundColor: '#e0e7ff', paddingHorizontal: 8, paddingVertical: 4, borderRadius: 4 }}>
+                                        <Text style={{ color: '#4338ca', fontSize: 10, fontWeight: 'bold' }}>10 Mins</Text>
+                                    </View>
+                                    <Text style={{ color: COLORS.success, fontSize: 12, fontWeight: 'bold' }}>+10 XP</Text>
+                                </View>
+                                <Text style={{ fontSize: 15, fontWeight: 'bold', color: COLORS.text, marginTop: 12 }}>{quiz}</Text>
+                                <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 10 }}>
+                                    <Ionicons name="people" size={14} color={COLORS.textSub} />
+                                    <Text style={{ color: COLORS.textSub, fontSize: 12, marginLeft: 5 }}>4.2k attempted today</Text>
+                                </View>
+                                <TouchableOpacity style={{ backgroundColor: COLORS.primary, paddingVertical: 8, borderRadius: 8, marginTop: 12, alignItems: 'center' }}>
+                                    <Text style={{ color: COLORS.white, fontWeight: 'bold' }}>Start Quiz</Text>
+                                </TouchableOpacity>
+                            </TouchableOpacity>
+                        ))}
+                    </ScrollView>
+                </View>
+
+                <Text style={[styles.sectionTitle, { fontSize: 16, color: COLORS.textSub, marginTop: 15 }]}>| Explore All Categories</Text>
 
                 {loading ? <ActivityIndicator size="large" color={COLORS.primary} style={{ marginTop: 20 }} /> : null}
 

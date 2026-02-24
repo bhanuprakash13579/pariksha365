@@ -58,6 +58,12 @@ export const styles = StyleSheet.create({
     freeTag: { backgroundColor: '#dcfce7', paddingHorizontal: 8, paddingVertical: 4, borderRadius: 6 },
     freeTagText: { color: '#15803d', fontWeight: 'bold', fontSize: 12 },
     price: { fontSize: 18, fontWeight: 'bold', color: '#1f2937' },
+    progressBarBg: { height: 6, backgroundColor: '#f3f4f6', borderRadius: 3, marginTop: 8, width: '100%' },
+    progressBarFill: { height: 6, backgroundColor: '#10b981', borderRadius: 3 },
+    scoreText: { fontSize: 18, fontWeight: 'bold', color: COLORS.primary },
+    infoBox: { marginTop: 20, padding: 15, backgroundColor: '#f0fdf4', borderRadius: 8, borderWidth: 1, borderColor: '#bbf7d0' },
+    infoText: { color: '#166534', fontSize: 14, lineHeight: 20 },
+    chartWrapper: { backgroundColor: COLORS.card, padding: 16, borderRadius: 16, alignItems: 'center', elevation: 1, shadowColor: COLORS.black, shadowOpacity: 0.05, shadowRadius: 3, borderWidth: 1, borderColor: '#f3f4f6' },
 
     // Course Detail Premium
     courseHeader: { backgroundColor: COLORS.card, padding: 20, paddingTop: 20, borderBottomWidth: 1, borderBottomColor: '#f3f4f6' },

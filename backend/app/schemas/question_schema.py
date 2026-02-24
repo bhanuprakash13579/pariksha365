@@ -22,6 +22,7 @@ class QuestionBase(BaseModel):
     image_url: Optional[str] = None
     explanation: Optional[str] = None
     difficulty: DifficultyLevel = DifficultyLevel.MEDIUM
+    subject: Optional[str] = None
     topic: Optional[str] = None
 
 class QuestionCreate(QuestionBase):

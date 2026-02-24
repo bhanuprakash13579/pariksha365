@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.core.database import engine, Base
-from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router, category_router
+from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router, category_router, analytics_router
 import app.models
 
 @asynccontextmanager
@@ -63,6 +63,7 @@ app.include_router(course_router.router, prefix=f"{settings.API_V1_STR}/courses"
 app.include_router(attempt_router.router, prefix=f"{settings.API_V1_STR}/attempts", tags=["attempts"])
 app.include_router(payment_router.router, prefix=f"{settings.API_V1_STR}/payments", tags=["payments"])
 app.include_router(category_router.router, prefix=f"{settings.API_V1_STR}/categories", tags=["categories"])
+app.include_router(analytics_router.router, prefix=f"{settings.API_V1_STR}/analytics", tags=["analytics"])
 
 from fastapi.responses import HTMLResponse
 

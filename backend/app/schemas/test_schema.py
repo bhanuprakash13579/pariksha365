@@ -29,6 +29,8 @@ class TestSeriesBase(BaseModel):
     shuffle_questions: bool = False
     show_notes: bool = True
     is_published: bool = False
+    is_daily_quiz: bool = False
+    quiz_date: Optional[datetime] = None
 
 class TestSeriesCreate(TestSeriesBase):
     pass

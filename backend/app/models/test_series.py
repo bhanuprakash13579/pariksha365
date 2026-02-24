@@ -17,6 +17,8 @@ class TestSeries(Base):
     show_notes = Column(Boolean, default=True)
     can_pause = Column(Boolean, default=False)  # Admin control
     is_published = Column(Boolean, default=False)
+    is_daily_quiz = Column(Boolean, default=False, index=True)
+    quiz_date = Column(DateTime(timezone=True), nullable=True, index=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
     sections = relationship("Section", back_populates="test_series", cascade="all, delete-orphan")

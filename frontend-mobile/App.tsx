@@ -131,27 +131,8 @@ import CategoryScreen from './src/screens/Course/CategoryScreen';
 
 // --- AUTH AND HOME SCREENS EXTRACTED TO src/screens ---
 
-const MyTestsScreen = ({ navigation }: any) => {
-  return (
-    <ScrollView style={styles.container}>
-      <View style={styles.contentPad}>
-        <Text style={[styles.sectionTitle, { marginTop: 15 }]}>Enrolled Test Series</Text>
-        {ENROLLED_TESTS.map(test => (
-          <TouchableOpacity key={test.id} style={styles.card} onPress={() => navigation.navigate('SeriesTrend', { test })}>
-            <View style={{ flex: 1 }}>
-              <Text style={styles.cardTitle}>{test.title}</Text>
-              <View style={styles.progressBarBg}>
-                <View style={[styles.progressBarFill, { width: test.progress as DimensionValue }]} />
-              </View>
-              <Text style={styles.metricText}>Progress: {test.progress}</Text>
-            </View>
-            <Ionicons name="chevron-forward" size={24} color="#f97316" />
-          </TouchableOpacity>
-        ))}
-      </View>
-    </ScrollView>
-  );
-};
+import MyLearningScreen from './src/screens/Main/MyLearningScreen';
+import AnalyticsScreen from './src/screens/Main/AnalyticsScreen';
 
 // --- Testbook-Style Profile Screen ---
 const ProfileScreen = ({ navigation, route }: any) => {
@@ -673,7 +654,8 @@ const MainTabs = ({ route }: any) => {
         tabBarIcon: ({ focused, color, size }) => {
           let iconName: any = 'home';
           if (route.name === 'HomeTab') iconName = focused ? 'home' : 'home-outline';
-          else if (route.name === 'MyTestsTab') iconName = focused ? 'document-text' : 'document-text-outline';
+          else if (route.name === 'MyLearningTab') iconName = focused ? 'book' : 'book-outline';
+          else if (route.name === 'AnalyticsTab') iconName = focused ? 'stats-chart' : 'stats-chart-outline';
           else if (route.name === 'ProfileTab') iconName = focused ? 'person' : 'person-outline';
           return <Ionicons name={iconName} size={size} color={color} />;
         },
@@ -685,7 +667,8 @@ const MainTabs = ({ route }: any) => {
       })}
     >
       <Tab.Screen name="HomeTab" component={HomeScreen} initialParams={{ isGuest }} options={{ title: 'Home', headerShown: false }} />
-      <Tab.Screen name="MyTestsTab" component={MyTestsScreen} options={{ title: 'My Tests' }} />
+      <Tab.Screen name="MyLearningTab" component={MyLearningScreen} options={{ title: 'My Learning' }} />
+      <Tab.Screen name="AnalyticsTab" component={AnalyticsScreen} options={{ title: 'Analytics' }} />
       <Tab.Screen name="ProfileTab" component={ProfileScreen} initialParams={{ isGuest }} options={{ title: 'Profile', headerShown: false }} />
     </Tab.Navigator>
   );

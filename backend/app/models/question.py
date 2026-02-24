@@ -19,6 +19,7 @@ class Question(Base):
     image_url = Column(String, nullable=True)
     explanation = Column(Text, nullable=True)
     difficulty = Column(SAEnum(DifficultyLevel), default=DifficultyLevel.MEDIUM)
+    subject = Column(String, index=True, nullable=True) # e.g. Polity, English, Reasoning
     topic = Column(String, nullable=True)
 
     section = relationship("Section", back_populates="questions")
