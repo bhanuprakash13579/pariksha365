@@ -23,6 +23,7 @@ class SubCategory(SubCategoryBase):
 class CategoryBase(BaseModel):
     name: str
     icon_name: Optional[str] = "grid-outline"
+    image_url: Optional[str] = None
     order: Optional[int] = 0
 
 class CategoryCreate(CategoryBase):

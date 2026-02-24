@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, Image } from 'react-native';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { getCategoryAsset } from '../../utils/categoryAssets';
@@ -53,6 +53,9 @@ export default function HomeScreen({ navigation, route }: any) {
                                     end={{ x: 1, y: 1 }}
                                     style={[styles.categoryGridCard, { width: '100%', marginBottom: 0, backgroundColor: 'transparent', overflow: 'hidden' }]}
                                 >
+                                    {cat.image_url && (
+                                        <Image source={{ uri: cat.image_url }} style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.3, width: '100%', height: '100%', resizeMode: 'cover' }} />
+                                    )}
                                     <View style={{ zIndex: 2, paddingRight: 10 }}>
                                         <Text style={[styles.categoryGridTitle, { color: '#111827', fontSize: 16 }]} numberOfLines={2}>
                                             {cat.name}
@@ -60,13 +63,15 @@ export default function HomeScreen({ navigation, route }: any) {
                                     </View>
 
                                     {/* Oversized Background Watermark Icon (Simulating 3D Illustration) */}
-                                    <View style={{ position: 'absolute', right: -15, bottom: -15, opacity: 0.15, transform: [{ rotate: '-15deg' }], zIndex: 1 }}>
-                                        {asset.iconFamily === 'MaterialCommunityIcons' ? (
-                                            <MaterialCommunityIcons name={asset.iconName as any} size={90} color={asset.iconColor} />
-                                        ) : (
-                                            <Ionicons name={asset.iconName as any} size={90} color={asset.iconColor} />
-                                        )}
-                                    </View>
+                                    {!cat.image_url && (
+                                        <View style={{ position: 'absolute', right: -15, bottom: -15, opacity: 0.15, transform: [{ rotate: '-15deg' }], zIndex: 1 }}>
+                                            {asset.iconFamily === 'MaterialCommunityIcons' ? (
+                                                <MaterialCommunityIcons name={asset.iconName as any} size={90} color={asset.iconColor} />
+                                            ) : (
+                                                <Ionicons name={asset.iconName as any} size={90} color={asset.iconColor} />
+                                            )}
+                                        </View>
+                                    )}
 
                                     {/* Small Crisp Icon */}
                                     <View style={[styles.categoryIconWrap, { backgroundColor: 'rgba(255,255,255,0.6)', zIndex: 2, shadowColor: '#000', shadowOpacity: 0.1, shadowRadius: 3, elevation: 2 }]}>

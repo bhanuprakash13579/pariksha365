@@ -11,6 +11,7 @@ class Category(Base):
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, index=True)
     name = Column(String, unique=True, index=True, nullable=False)
     icon_name = Column(String, nullable=True) # e.g. "ribbon-outline"
+    image_url = Column(String, nullable=True) # Custom high-res graphic URL for premium cards
     order = Column(Integer, default=0)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 

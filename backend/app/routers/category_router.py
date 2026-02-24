@@ -14,3 +14,10 @@ async def read_categories(db: AsyncSession = Depends(get_db)):
     """
     categories = await category_service.get_all_categories(db)
     return categories
+
+@router.post("/", response_model=category_schema.Category)
+async def create_category(category: category_schema.CategoryCreate, db: AsyncSession = Depends(get_db)):
+    """
+    Create a new top-level exam category (e.g. SSC, UPSC) with an optional image_url.
+    """
+    return await category_service.create_category(db, category)

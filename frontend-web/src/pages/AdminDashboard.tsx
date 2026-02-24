@@ -8,6 +8,7 @@ export const AdminDashboard = () => {
     const [activeTab, setActiveTab] = useState('courses');
 
     // Forms state
+    const [newCategory, setNewCategory] = useState({ name: '', image_url: '' });
     const [newCourse, setNewCourse] = useState({ title: '', description: '', price: 0, category: '' });
     const [newFolder, setNewFolder] = useState({ course_id: '', title: '', is_free: false });
     const [newLink, setNewLink] = useState({ folder_id: '', test_id: '' });
@@ -35,6 +36,16 @@ export const AdminDashboard = () => {
             fetchData();
             alert('Course created successfully!');
         } catch (err) { alert('Failed to create course'); }
+    };
+
+    const handleCreateCategory = async (e: React.FormEvent) => {
+        e.preventDefault();
+        try {
+            await api.post('/categories', newCategory);
+            setNewCategory({ name: '', image_url: '' });
+            fetchData();
+            alert('Category created successfully!');
+        } catch (err) { alert('Failed to create category'); }
     };
 
     const handleCreateFolder = async (e: React.FormEvent) => {
@@ -98,6 +109,16 @@ export const AdminDashboard = () => {
                             <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">Course & Content Manager</h1>
                         </div>
 
+                        {/* Create Category Form */}
+                        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
+                            <h2 className="text-xl font-bold mb-4 flex items-center"><Plus className="mr-2" /> Create New Exam Category</h2>
+                            <form onSubmit={handleCreateCategory} className="grid grid-cols-2 gap-4">
+                                <input type="text" placeholder="Category Name (e.g. UPSC)" className="border p-2 rounded" value={newCategory.name} onChange={e => setNewCategory({ ...newCategory, name: e.target.value })} required />
+                                <input type="text" placeholder="Custom Image URL (Optional)" className="border p-2 rounded" value={newCategory.image_url} onChange={e => setNewCategory({ ...newCategory, image_url: e.target.value })} />
+                                <button type="submit" className="col-span-2 bg-purple-600 text-white py-2 rounded font-bold hover:bg-purple-700">Create Category</button>
+                            </form>
+                        </div>
+
                         {/* Create Course Form */}
                         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
                             <h2 className="text-xl font-bold mb-4 flex items-center"><Plus className="mr-2" /> Create New Course (Pack)</h2>
@@ -138,7 +159,7 @@ export const AdminDashboard = () => {
                                 <select className="border p-2 rounded" value={newLink.folder_id} onChange={e => setNewLink({ ...newLink, folder_id: e.target.value })} required>
                                     <option value="">Select Target Folder</option>
                                     {courses.flatMap(c => (c.folders || []).map((f: any) => (
-                                        <option key={f.id} value={f.id}>{c.title} -> {f.title}</option>
+                                        <option key={f.id} value={f.id}>{c.title} - {f.title}</option>
                                     )))}
                                 </select>
                                 <button type="submit" className="col-span-2 bg-green-600 text-white py-2 rounded font-bold hover:bg-green-700">Link Test to Folder</button>
