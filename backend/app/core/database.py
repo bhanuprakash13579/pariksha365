@@ -16,6 +16,9 @@ async_session_maker = async_sessionmaker(
     engine, class_=AsyncSession, expire_on_commit=False
 )
 
+# Alias used by main.py lifespan seeder
+SessionLocal = async_session_maker
+
 Base = declarative_base()
 
 async def get_db():
