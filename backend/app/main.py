@@ -114,8 +114,21 @@ async def privacy_policy():
             <h2>5. Children's Privacy</h2>
             <p>Our services are generally intended for users preparing for competitive exams (typically ages 16+). We do not knowingly collect personal information from children under the age of 13 without parental consent.</p>
             
-            <h2>6. Your Rights</h2>
-            <p>You have the right to access, update, or request the deletion of your personal data. You can delete your account directly inside the app settings at any time.</p>
+            <h2>6. Account and Data Deletion</h2>
+            <p>You have the right to request the deletion of your personal data and account at any time. We provide a simple, automated way for you to delete your account entirely.</p>
+            <h3>How to Delete Your Account:</h3>
+            <ol>
+                <li>Open the Pariksha365 mobile application.</li>
+                <li>Tap on the <strong>Profile</strong> icon or navigate to the <strong>Settings</strong> menu.</li>
+                <li>Tap the <strong>Delete Account</strong> button at the bottom of the screen.</li>
+                <li>Confirm your request when prompted.</li>
+            </ol>
+            <h3>Data Retention and Deletion Practices:</h3>
+            <ul>
+                <li><strong>What is deleted immediately:</strong> Your personal profile, email, authentication tokens, and device identifiers are wiped from our active databases immediately upon request.</li>
+                <li><strong>What is retained:</strong> Anonymous, aggregated test attempt data (stripped of any personally identifiable information) may be retained for analytical purposes to calculate historical percentiles.</li>
+                <li><strong>Backup Retention:</strong> Your encrypted data may persist in routine secure backups for up to 90 days before being completely purged from all systems.</li>
+            </ul>
             
             <h2>7. Contact Us</h2>
             <p>If you have any questions regarding this Privacy Policy, please contact us at: support@pariksha365.in</p>
