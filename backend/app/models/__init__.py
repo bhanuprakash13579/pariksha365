@@ -14,6 +14,8 @@ from app.models.payment import Payment
 from app.models.course import Course
 from app.models.course_folder import CourseFolder
 from app.models.folder_test import FolderTest
+from app.models.category import Category
+from app.models.subcategory import SubCategory
 
 # Expose Base and Models for Alembic metadata
 __all__ = [
@@ -32,5 +34,7 @@ __all__ = [
     "Payment",
     "Course",
     "CourseFolder",
-    "FolderTest"
+    "FolderTest",
+    "Category",
+    "SubCategory"
 ]

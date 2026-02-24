@@ -10,13 +10,13 @@ router = APIRouter()
 
 @router.get("/", response_model=List[CourseResponse])
 async def list_courses(
-    category: Optional[str] = None,
+    subcategory_id: Optional[uuid.UUID] = None,
     db: AsyncSession = Depends(get_db)
 ) -> Any:
     """
     Retrieve all published courses.
     """
-    return await course_service.get_courses(db, category=category, is_published=True)
+    return await course_service.get_courses(db, subcategory_id=subcategory_id, is_published=True)
 
 @router.get("/{course_id}", response_model=CourseResponse)
 async def get_course(

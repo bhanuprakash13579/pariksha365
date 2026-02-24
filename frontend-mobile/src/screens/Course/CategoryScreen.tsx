@@ -4,29 +4,30 @@ import { Ionicons } from '@expo/vector-icons';
 import { CourseAPI } from '../../services/api';
 import { styles, COLORS } from '../../styles/theme';
 
-const SUB_CATEGORIES: any = {
-    'SSC Exams': ['SSC CGL', 'SSC CHSL', 'SSC MTS', 'SSC GD'],
-    'UPSC Civil Services': ['UPSC CSE', 'UPSC EPFO (APFC)', 'UPSC CDS'],
-    'State Govt. Exams': ['UPPSC', 'BPSC', 'MPSC', 'APPSC', 'TSPSC'],
-    'Railways': ['RRB NTPC', 'RRB Group D', 'RRB ALP'],
-    'Defence Exams': ['NDA', 'AFCAT', 'Airforce X & Y'],
-    'Teaching Exams': ['CTET', 'UPTET', 'KVS', 'Super TET']
-};
+
 
 export default function CategoryScreen({ navigation, route }: any) {
-    const { categoryTitle } = route.params;
+    const { categoryTitle, subcategories } = route.params;
     const [courses, setCourses] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
-    const [activeSub, setActiveSub] = useState<string | null>(null);
 
-    const subCats = SUB_CATEGORIES[categoryTitle] || ['All Exams'];
+    // Default to the first subcategory ID, or null
+    const [activeSubId, setActiveSubId] = useState<string | null>(
+        subcategories && subcategories.length > 0 ? subcategories[0].id : null
+    );
 
     useEffect(() => {
-        // In a real app, pass category/sub-category to the API. 
-        // Here we fetch all and render as a showcase.
+        if (!activeSubId) {
+            setLoading(false);
+            setCourses([]);
+            return;
+        }
+
         const fetchCourses = async () => {
+            setLoading(true);
             try {
-                const res = await CourseAPI.list();
+                // Fetch dynamically via the specific selected subcategory ID 
+                const res = await CourseAPI.list(activeSubId);
                 setCourses(res.data);
             } catch (err) {
                 console.error(err);
@@ -35,7 +36,7 @@ export default function CategoryScreen({ navigation, route }: any) {
             }
         };
         fetchCourses();
-    }, [categoryTitle]);
+    }, [activeSubId]);
 
     return (
         <View style={styles.container}>
@@ -53,17 +54,17 @@ export default function CategoryScreen({ navigation, route }: any) {
             {/* Sub Category Horizontal Chips */}
             <View style={{ backgroundColor: COLORS.headerBg, paddingBottom: 15 }}>
                 <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 15 }}>
-                    {subCats.map((sub: string) => (
+                    {(subcategories || []).map((sub: any) => (
                         <TouchableOpacity
-                            key={sub}
-                            onPress={() => setActiveSub(sub === activeSub ? null : sub)}
+                            key={sub.id}
+                            onPress={() => setActiveSubId(sub.id)}
                             style={{
                                 paddingHorizontal: 16, paddingVertical: 8,
-                                backgroundColor: activeSub === sub ? COLORS.primary : COLORS.searchBg,
+                                backgroundColor: activeSubId === sub.id ? COLORS.primary : COLORS.searchBg,
                                 borderRadius: 20, marginRight: 10,
-                                borderWidth: 1, borderColor: activeSub === sub ? COLORS.primary : '#3f3f46'
+                                borderWidth: 1, borderColor: activeSubId === sub.id ? COLORS.primary : '#3f3f46'
                             }}>
-                            <Text style={{ color: activeSub === sub ? COLORS.white : COLORS.iconColor, fontWeight: '600' }}>{sub}</Text>
+                            <Text style={{ color: activeSubId === sub.id ? COLORS.white : COLORS.iconColor, fontWeight: '600' }}>{sub.name}</Text>
                         </TouchableOpacity>
                     ))}
                 </ScrollView>

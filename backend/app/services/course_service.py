@@ -16,10 +16,10 @@ async def create_course(db: AsyncSession, course_in: CourseCreate) -> Course:
     await db.refresh(db_course)
     return db_course
 
-async def get_courses(db: AsyncSession, category: Optional[str] = None, is_published: Optional[bool] = None) -> List[Course]:
+async def get_courses(db: AsyncSession, subcategory_id: Optional[uuid.UUID] = None, is_published: Optional[bool] = None) -> List[Course]:
     stmt = select(Course)
-    if category:
-        stmt = stmt.where(Course.category == category)
+    if subcategory_id:
+        stmt = stmt.where(Course.subcategory_id == subcategory_id)
     if is_published is not None:
         stmt = stmt.where(Course.is_published == is_published)
     result = await db.execute(stmt)

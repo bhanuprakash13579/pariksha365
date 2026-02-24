@@ -35,6 +35,10 @@ export const CourseAPI = {
     getById: (id: string) => api.get(`/courses/${id}`),
 };
 
+export const CategoryAPI = {
+    list: () => api.get('/categories'),
+};
+
 export const AttemptAPI = {
     list: () => api.get('/attempts'),
     start: (test_series_id: string) => api.post(`/attempts/start/${test_series_id}`),

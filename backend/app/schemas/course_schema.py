@@ -37,7 +37,7 @@ class CourseFolderResponse(CourseFolderBase):
 class CourseBase(BaseModel):
     title: str
     description: Optional[str] = None
-    category: Optional[str] = None
+    subcategory_id: Optional[uuid.UUID] = None
     thumbnail_url: Optional[str] = None
     price: float = 0.0
     validity_days: int = 365
