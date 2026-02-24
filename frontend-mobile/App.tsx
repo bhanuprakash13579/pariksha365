@@ -127,6 +127,7 @@ import LoginScreen from './src/screens/Auth/LoginScreen';
 import SignupScreen from './src/screens/Auth/SignupScreen';
 import HomeScreen from './src/screens/Main/HomeScreen';
 import CourseDetailScreen from './src/screens/Course/CourseDetailScreen';
+import CategoryScreen from './src/screens/Course/CategoryScreen';
 
 // --- AUTH AND HOME SCREENS EXTRACTED TO src/screens ---
 
@@ -699,6 +700,7 @@ export default function App() {
         <Stack.Screen name="MainTabs" component={MainTabs} options={{ headerShown: false }} />
         <Stack.Screen name="TestDetail" component={TestDetailScreen} options={{ title: 'Overview' }} />
         <Stack.Screen name="CourseDetail" component={CourseDetailScreen} options={{ title: 'Course Details' }} />
+        <Stack.Screen name="Category" component={CategoryScreen} options={{ headerShown: false }} />
         {/* Testbook Sub-Screens */}
         <Stack.Screen name="EditProfile" component={EditProfileScreen} options={{ title: 'Edit Profile' }} />
         <Stack.Screen name="SavedQuestions" component={SavedQuestionsScreen} options={{ title: 'Saved Questions' }} />

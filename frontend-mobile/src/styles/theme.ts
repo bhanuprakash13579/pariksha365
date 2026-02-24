@@ -11,6 +11,11 @@ export const COLORS = {
     success: '#10b981',
     error: '#ef4444',
     black: '#000000',
+    white: '#ffffff',
+    headerBg: '#1f1f23',
+    searchBg: '#2a2a30',
+    drawerBg: '#18181b',
+    iconColor: '#a1a1aa'
 };
 
 export const styles = StyleSheet.create({
@@ -66,5 +71,28 @@ export const styles = StyleSheet.create({
     modalContent: { backgroundColor: COLORS.card, borderTopLeftRadius: 24, borderTopRightRadius: 24, padding: 24, paddingBottom: 40 },
     modalHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 15 },
     modalTitle: { fontSize: 22, fontWeight: 'bold', color: COLORS.text },
-    modalTextCenter: { fontSize: 16, color: '#4b5563', textAlign: 'center', lineHeight: 24, marginBottom: 20 }
+    modalTextCenter: { fontSize: 16, color: '#4b5563', textAlign: 'center', lineHeight: 24, marginBottom: 20 },
+
+    // Global Header (Testbook Style)
+    tbHeaderContainer: { backgroundColor: COLORS.headerBg, paddingHorizontal: 16, paddingVertical: 12, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingTop: 50 },
+    tbHeaderLeftBtn: { width: 40, height: 40, borderRadius: 20, backgroundColor: 'rgba(255,255,255,0.05)', alignItems: 'center', justifyContent: 'center' },
+    tbSearchContainer: { flex: 1, flexDirection: 'row', alignItems: 'center', backgroundColor: COLORS.searchBg, height: 40, borderRadius: 20, paddingHorizontal: 12, marginHorizontal: 10 },
+    tbSearchText: { color: COLORS.iconColor, fontSize: 14, marginLeft: 8 },
+    tbHeaderRightBtn: { width: 40, height: 40, borderRadius: 20, backgroundColor: 'rgba(255,255,255,0.05)', alignItems: 'center', justifyContent: 'center' },
+
+    // Exam Categories Grid
+    gridContainer: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', marginTop: 15 },
+    categoryGridCard: { width: '48%', backgroundColor: COLORS.card, padding: 16, borderRadius: 16, marginBottom: 15, elevation: 2, shadowColor: COLORS.black, shadowOpacity: 0.05, shadowRadius: 4, height: 110, justifyContent: 'space-between' },
+    categoryGridTitle: { fontSize: 15, fontWeight: 'bold', color: COLORS.text, lineHeight: 20 },
+    categoryIconWrap: { alignSelf: 'flex-end', width: 32, height: 32, borderRadius: 16, backgroundColor: '#f3f4f6', alignItems: 'center', justifyContent: 'center' },
+
+    // Drawer
+    drawerOverlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.6)', flexDirection: 'row' },
+    drawerContent: { width: '80%', backgroundColor: COLORS.drawerBg, height: '100%', padding: 0 },
+    drawerProfileSection: { padding: 24, paddingTop: 60, backgroundColor: '#111827', borderBottomWidth: 1, borderBottomColor: '#374151' },
+    drawerName: { fontSize: 22, fontWeight: 'bold', color: COLORS.white, marginTop: 15 },
+    drawerPhone: { fontSize: 14, color: '#9ca3af', marginTop: 4 },
+    drawerMenu: { flex: 1, paddingVertical: 10 },
+    drawerMenuItem: { flexDirection: 'row', alignItems: 'center', paddingVertical: 15, paddingHorizontal: 24 },
+    drawerMenuText: { fontSize: 16, color: COLORS.white, marginLeft: 16, fontWeight: '500' }
 });

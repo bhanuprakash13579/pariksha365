@@ -3,11 +3,23 @@ import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator } from 'rea
 import { Ionicons } from '@expo/vector-icons';
 import { CourseAPI } from '../../services/api';
 import { styles, COLORS } from '../../styles/theme';
+import GlobalHeader from '../../components/GlobalHeader';
+import ProfileDrawer from '../../components/ProfileDrawer';
+
+const EXAM_CATEGORIES = [
+    { id: '1', title: 'UPSC Civil Services', icon: 'ribbon-outline' },
+    { id: '2', title: 'State Govt. Exams', icon: 'business-outline' },
+    { id: '3', title: 'SSC Exams', icon: 'hammer-outline' },
+    { id: '4', title: 'Railways', icon: 'train-outline' },
+    { id: '5', title: 'Defence Exams', icon: 'shield-checkmark-outline' },
+    { id: '6', title: 'Teaching Exams', icon: 'book-outline' },
+];
 
 export default function HomeScreen({ navigation, route }: any) {
     const isGuest = route.params?.isGuest || false;
     const [courses, setCourses] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
+    const [drawerVisible, setDrawerVisible] = useState(false);
 
     useEffect(() => {
         const fetchCourses = async () => {
@@ -25,12 +37,27 @@ export default function HomeScreen({ navigation, route }: any) {
 
     return (
         <View style={styles.container}>
-            <View style={styles.header}>
-                <Text style={styles.greeting}>Hi Aspirant!</Text>
-                <Text style={styles.subGreeting}>Ready to crack your exam?</Text>
-            </View>
+            <GlobalHeader onOpenDrawer={() => setDrawerVisible(true)} />
+
             <ScrollView contentContainerStyle={styles.contentPadAlt}>
-                <Text style={styles.sectionTitle}>Available Courses & Test Series</Text>
+                <Text style={[styles.sectionTitle, { fontSize: 16, color: COLORS.textSub, marginTop: 10 }]}>| Explore All Categories</Text>
+
+                <View style={styles.gridContainer}>
+                    {EXAM_CATEGORIES.map(cat => (
+                        <TouchableOpacity
+                            key={cat.id}
+                            style={styles.categoryGridCard}
+                            onPress={() => navigation.navigate('Category', { categoryTitle: cat.title })}
+                        >
+                            <Text style={styles.categoryGridTitle}>{cat.title}</Text>
+                            <View style={styles.categoryIconWrap}>
+                                <Ionicons name={cat.icon as any} size={18} color={COLORS.textSub} />
+                            </View>
+                        </TouchableOpacity>
+                    ))}
+                </View>
+
+                <Text style={[styles.sectionTitle, { marginTop: 20 }]}>Popular Courses & Test Series</Text>
                 {loading ? <ActivityIndicator size="large" color={COLORS.primary} style={{ marginTop: 20 }} /> : null}
 
                 {courses.map(course => (
@@ -50,6 +77,8 @@ export default function HomeScreen({ navigation, route }: any) {
                     <Text style={{ textAlign: 'center', color: COLORS.textSub, marginTop: 20 }}>No courses available yet.</Text>
                 )}
             </ScrollView>
+
+            <ProfileDrawer visible={drawerVisible} onClose={() => setDrawerVisible(false)} isGuest={isGuest} />
         </View>
     );
 }
