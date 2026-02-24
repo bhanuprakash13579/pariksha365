@@ -1,16 +1,49 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, FlatList, ScrollView, SafeAreaView, KeyboardAvoidingView, Platform, DimensionValue, Dimensions, Modal, Image, Alert } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, FlatList, ScrollView, SafeAreaView, KeyboardAvoidingView, Platform, DimensionValue, Dimensions, Modal, Image, Alert, ActivityIndicator } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { BarChart, LineChart, ProgressChart } from 'react-native-chart-kit';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 import * as AppleAuthentication from 'expo-apple-authentication';
 import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
+import axios from 'axios';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 WebBrowser.maybeCompleteAuthSession();
+
+// --- API SERVICE ---
+const API_BASE_URL = 'https://pariksha365-backend-production.up.railway.app/api/v1';
+
+const api = axios.create({ baseURL: API_BASE_URL, headers: { 'Content-Type': 'application/json' } });
+
+api.interceptors.request.use(async (config) => {
+  const token = await AsyncStorage.getItem('token');
+  if (token && config.headers) { config.headers.Authorization = `Bearer ${token}`; }
+  return config;
+});
+
+const AuthAPI = {
+  login: (email: string, password: string) => api.post('/auth/login', { email, password }),
+  signup: (name: string, email: string, password: string) => api.post('/auth/signup', { name, email, password }),
+};
+const UserAPI = {
+  getMe: () => api.get('/users/me'),
+  updateMe: (data: { name?: string; phone?: string }) => api.put('/users/me', data),
+  changePassword: (old_password: string, new_password: string) => api.put('/users/me/password', { old_password, new_password }),
+};
+const TestAPI = {
+  list: (category?: string) => api.get('/tests', { params: category ? { category } : {} }),
+  getById: (id: string) => api.get(`/tests/${id}`),
+};
+const AttemptAPI = {
+  list: () => api.get('/attempts'),
+  start: (test_series_id: string) => api.post('/attempts/start', { test_series_id }),
+  saveAnswer: (attemptId: string, data: any) => api.post(`/attempts/${attemptId}/answers`, data),
+  submit: (attemptId: string) => api.post(`/attempts/${attemptId}/submit`),
+};
 
 // Replace with your actual IDs when generating for Web and Android
 const GOOGLE_IOS_CLIENT_ID = "592393648560-0csjsd0dvukv94qg05np14rj1v3o9gg2.apps.googleusercontent.com";
@@ -91,6 +124,9 @@ const GuestPaywallModal = ({ visible, onClose, navigation }: { visible: boolean,
 
 // --- AUTH SCREENS ---
 const LoginScreen = ({ navigation }: any) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
   const [request, response, promptAsync] = Google.useAuthRequest({
     iosClientId: GOOGLE_IOS_CLIENT_ID,
     webClientId: GOOGLE_WEB_CLIENT_ID,
@@ -121,8 +157,18 @@ const LoginScreen = ({ navigation }: any) => {
     }
   };
 
-  const handleGoogleAuth = () => {
-    promptAsync();
+  const handleGoogleAuth = () => { promptAsync(); };
+
+  const handleLogin = async () => {
+    if (!email || !password) { Alert.alert('Error', 'Please enter email and password.'); return; }
+    setLoading(true);
+    try {
+      const res = await AuthAPI.login(email, password);
+      await AsyncStorage.setItem('token', res.data.access_token);
+      navigation.replace('MainTabs', { isGuest: false });
+    } catch (err: any) {
+      Alert.alert('Login Failed', err.response?.data?.detail || 'Incorrect email or password.');
+    } finally { setLoading(false); }
   };
 
   return (
@@ -133,10 +179,10 @@ const LoginScreen = ({ navigation }: any) => {
           <Text style={styles.authSubtitle}>Sign in to continue your preparation</Text>
         </View>
         <View style={styles.formContainer}>
-          <TextInput style={styles.input} placeholder="Email" placeholderTextColor="#9ca3af" keyboardType="email-address" autoCapitalize="none" />
-          <TextInput style={styles.input} placeholder="Password" placeholderTextColor="#9ca3af" secureTextEntry />
-          <TouchableOpacity style={styles.primaryButton} onPress={() => navigation.replace('MainTabs', { isGuest: false })}>
-            <Text style={styles.primaryButtonText}>Log In</Text>
+          <TextInput style={styles.input} placeholder="Email" placeholderTextColor="#9ca3af" keyboardType="email-address" autoCapitalize="none" value={email} onChangeText={setEmail} />
+          <TextInput style={styles.input} placeholder="Password" placeholderTextColor="#9ca3af" secureTextEntry value={password} onChangeText={setPassword} />
+          <TouchableOpacity style={loading ? styles.buttonDisabled : styles.primaryButton} onPress={handleLogin} disabled={loading}>
+            {loading ? <ActivityIndicator color="#fff" /> : <Text style={styles.primaryButtonText}>Log In</Text>}
           </TouchableOpacity>
 
           <View style={styles.dividerRow}>
@@ -172,6 +218,10 @@ const LoginScreen = ({ navigation }: any) => {
 };
 
 const SignupScreen = ({ navigation }: any) => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
   const [request, response, promptAsync] = Google.useAuthRequest({
     iosClientId: GOOGLE_IOS_CLIENT_ID,
     webClientId: GOOGLE_WEB_CLIENT_ID,
@@ -202,8 +252,20 @@ const SignupScreen = ({ navigation }: any) => {
     }
   };
 
-  const handleGoogleAuth = () => {
-    promptAsync();
+  const handleGoogleAuth = () => { promptAsync(); };
+
+  const handleSignup = async () => {
+    if (!name || !email || !password) { Alert.alert('Error', 'Please fill all fields.'); return; }
+    setLoading(true);
+    try {
+      await AuthAPI.signup(name, email, password);
+      // Auto-login after successful signup
+      const loginRes = await AuthAPI.login(email, password);
+      await AsyncStorage.setItem('token', loginRes.data.access_token);
+      navigation.replace('MainTabs', { isGuest: false });
+    } catch (err: any) {
+      Alert.alert('Signup Failed', err.response?.data?.detail || 'Could not create account.');
+    } finally { setLoading(false); }
   };
 
   return (
@@ -212,11 +274,11 @@ const SignupScreen = ({ navigation }: any) => {
         <Text style={styles.authTitle}>Create Account</Text>
         <Text style={[styles.authSubtitle, { marginBottom: 20 }]}>Start your preparation journey today</Text>
         <View style={styles.formContainer}>
-          <TextInput style={styles.input} placeholder="Full Name" placeholderTextColor="#9ca3af" />
-          <TextInput style={styles.input} placeholder="Email" placeholderTextColor="#9ca3af" keyboardType="email-address" />
-          <TextInput style={styles.input} placeholder="Password" placeholderTextColor="#9ca3af" secureTextEntry />
-          <TouchableOpacity style={styles.primaryButton} onPress={() => navigation.replace('MainTabs', { isGuest: false })}>
-            <Text style={styles.primaryButtonText}>Sign Up</Text>
+          <TextInput style={styles.input} placeholder="Full Name" placeholderTextColor="#9ca3af" value={name} onChangeText={setName} />
+          <TextInput style={styles.input} placeholder="Email" placeholderTextColor="#9ca3af" keyboardType="email-address" autoCapitalize="none" value={email} onChangeText={setEmail} />
+          <TextInput style={styles.input} placeholder="Password" placeholderTextColor="#9ca3af" secureTextEntry value={password} onChangeText={setPassword} />
+          <TouchableOpacity style={loading ? styles.buttonDisabled : styles.primaryButton} onPress={handleSignup} disabled={loading}>
+            {loading ? <ActivityIndicator color="#fff" /> : <Text style={styles.primaryButtonText}>Sign Up</Text>}
           </TouchableOpacity>
 
           <View style={styles.dividerRow}>
@@ -249,6 +311,24 @@ const SignupScreen = ({ navigation }: any) => {
 
 // --- MAIN TAB SCREENS ---
 const HomeScreen = ({ navigation }: any) => {
+  const [tests, setTests] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchTests = async () => {
+      try {
+        const res = await TestAPI.list();
+        setTests(res.data.map((t: any) => ({
+          id: t.id, title: t.title, tags: t.category || 'General', price: t.is_free ? 'Free' : `₹${t.price}`,
+          isFree: t.is_free, questions: t.sections?.reduce((sum: number, s: any) => sum + (s.questions?.length || 0), 0) || 0,
+          mins: t.sections?.reduce((sum: number, s: any) => sum + (s.time_limit_minutes || 0), 0) || 60, validity: t.validity_days,
+        })));
+      } catch { setTests(MOCK_TESTS); } // fallback to mock data if API fails
+      finally { setLoading(false); }
+    };
+    fetchTests();
+  }, []);
+
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
@@ -256,8 +336,6 @@ const HomeScreen = ({ navigation }: any) => {
         <Text style={styles.subGreeting}>Let's ace your next exam.</Text>
       </View>
       <View style={styles.contentPad}>
-
-        {/* Exam Categories Row (Testbook style) */}
         <Text style={styles.sectionTitle}>Exam Categories</Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.upcomingScroll}>
           {['SSC', 'Banking', 'UPSC', 'Railways', 'State PSC'].map((cat, idx) => (
@@ -274,7 +352,9 @@ const HomeScreen = ({ navigation }: any) => {
         </ScrollView>
 
         <Text style={[styles.sectionTitle, { marginTop: 10 }]}>Recommended Test Series</Text>
-        <FlatList scrollEnabled={false} data={MOCK_TESTS} keyExtractor={item => item.id} renderItem={({ item }) => <TestCard item={item} onPress={() => navigation.navigate('TestDetail', { test: item })} />} />
+        {loading ? <ActivityIndicator size="large" color="#f97316" style={{ marginTop: 20 }} /> : (
+          <FlatList scrollEnabled={false} data={tests.length > 0 ? tests : MOCK_TESTS} keyExtractor={item => item.id} renderItem={({ item }) => <TestCard item={item} onPress={() => navigation.navigate('TestDetail', { test: item })} />} />
+        )}
       </View>
     </ScrollView>
   );
@@ -305,6 +385,28 @@ const MyTestsScreen = ({ navigation }: any) => {
 // --- Testbook-Style Profile Screen ---
 const ProfileScreen = ({ navigation, route }: any) => {
   const isGuest = route.params?.isGuest || false;
+  const [user, setUser] = useState<any>(null);
+  const [attempts, setAttempts] = useState<any[]>([]);
+  const [loadingProfile, setLoadingProfile] = useState(!isGuest);
+
+  useEffect(() => {
+    if (isGuest) return;
+    const fetchData = async () => {
+      try {
+        const userRes = await UserAPI.getMe();
+        setUser(userRes.data);
+        const attemptsRes = await AttemptAPI.list();
+        setAttempts(attemptsRes.data);
+      } catch { /* silently fall back */ }
+      finally { setLoadingProfile(false); }
+    };
+    fetchData();
+  }, [isGuest]);
+
+  const handleLogout = async () => {
+    await AsyncStorage.removeItem('token');
+    navigation.replace('Login');
+  };
 
   if (isGuest) {
     return (
@@ -322,38 +424,41 @@ const ProfileScreen = ({ navigation, route }: any) => {
     );
   }
 
+  if (loadingProfile) {
+    return <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}><ActivityIndicator size="large" color="#f97316" /></View>;
+  }
+
+  const avgScore = attempts.length > 0 ? Math.round(attempts.filter(a => a.status === 'SUBMITTED').length / attempts.length * 100) : 0;
+
   return (
     <ScrollView style={styles.container}>
-      {/* Testbook Style Header */}
       <View style={styles.profileHeaderAlt}>
         <View style={styles.profileHeaderContent}>
           <View style={styles.avatarPlaceholderAlt}>
-            <Text style={styles.avatarTextAlt}>S</Text>
+            <Text style={styles.avatarTextAlt}>{(user?.name || 'S').charAt(0).toUpperCase()}</Text>
           </View>
           <View style={{ flex: 1, marginLeft: 15 }}>
-            <Text style={styles.profileNameAlt}>Student Name</Text>
-            <Text style={styles.profileEmailAlt}>+91 9876543210</Text>
+            <Text style={styles.profileNameAlt}>{user?.name || 'Student'}</Text>
+            <Text style={styles.profileEmailAlt}>{user?.email || user?.phone || ''}</Text>
           </View>
-          <TouchableOpacity style={styles.editIconBtn} onPress={() => navigation.navigate('EditProfile')}>
+          <TouchableOpacity style={styles.editIconBtn} onPress={() => navigation.navigate('EditProfile', { user })}>
             <Ionicons name="pencil" size={20} color="white" />
           </TouchableOpacity>
         </View>
       </View>
 
-      {/* Top Quick Stats or Banner replacing the Pro Pass */}
       <View style={styles.contentPadAlt}>
         <View style={styles.statsBannerRow}>
           <View style={styles.statsBox}>
-            <Text style={styles.statsValue}>14</Text>
+            <Text style={styles.statsValue}>{attempts.length}</Text>
             <Text style={styles.statsLabel}>Tests Taken</Text>
           </View>
           <View style={styles.statsBox}>
-            <Text style={styles.statsValue}>88%</Text>
-            <Text style={styles.statsLabel}>Avg Score</Text>
+            <Text style={styles.statsValue}>{avgScore}%</Text>
+            <Text style={styles.statsLabel}>Completion</Text>
           </View>
         </View>
 
-        {/* Quick Links Grid */}
         <View style={styles.quickGrid}>
           <TouchableOpacity style={styles.quickGridItem} onPress={() => navigation.navigate('SavedQuestions')}>
             <Ionicons name="bookmark" size={24} color="#f97316" />
@@ -373,7 +478,6 @@ const ProfileScreen = ({ navigation, route }: any) => {
           </TouchableOpacity>
         </View>
 
-        {/* List Menu */}
         <View style={styles.settingsGroup}>
           <Text style={styles.settingsGroupTitle}>Account & Settings</Text>
           <TouchableOpacity style={styles.settingItem} onPress={() => navigation.navigate('ChangeExam')}>
@@ -398,7 +502,7 @@ const ProfileScreen = ({ navigation, route }: any) => {
           </TouchableOpacity>
         </View>
 
-        <TouchableOpacity style={styles.logoutButtonAlt} onPress={() => navigation.replace('Login')}>
+        <TouchableOpacity style={styles.logoutButtonAlt} onPress={handleLogout}>
           <Ionicons name="power" size={20} color="#ef4444" style={{ marginRight: 8 }} />
           <Text style={styles.logoutText}>Log Out</Text>
         </TouchableOpacity>
@@ -426,29 +530,53 @@ const DownloadsScreen = () => (
     </View>
   </View>
 );
-const AttemptHistoryScreen = ({ navigation }: any) => (
-  <ScrollView style={styles.container}>
-    <View style={styles.contentPadAlt}>
-      <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('TestAnalysis')}>
-        <View style={styles.flexRowBetween}>
-          <View>
-            <Text style={styles.cardTitle}>SSC CGL Full Mock 1</Text>
-            <Text style={styles.metricText}>Attempted on Jan 14, 2026</Text>
-          </View>
-          <Text style={styles.scoreText}>120<Text style={{ fontSize: 12, color: '#6b7280' }}>/200</Text></Text>
+const AttemptHistoryScreen = ({ navigation }: any) => {
+  const [attempts, setAttempts] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchAttempts = async () => {
+      try {
+        const res = await AttemptAPI.list();
+        setAttempts(res.data);
+      } catch { /* silent */ }
+      finally { setLoading(false); }
+    };
+    fetchAttempts();
+  }, []);
+
+  if (loading) return <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}><ActivityIndicator size="large" color="#f97316" /></View>;
+
+  if (attempts.length === 0) {
+    return (
+      <View style={styles.detailContainer}>
+        <View style={styles.emptyState}>
+          <Ionicons name="time-outline" size={64} color="#d1d5db" />
+          <Text style={styles.emptyText}>No attempts yet.</Text>
+          <Text style={styles.emptySubText}>Start a test to see your attempt history here.</Text>
         </View>
-        <View style={{ flexDirection: 'row', marginTop: 15, justifyContent: 'space-between', borderTopWidth: 1, borderTopColor: '#f3f4f6', paddingTop: 10 }}>
-          <View><Text style={styles.metricText}>Rank</Text><Text style={[styles.cardTitle, { color: '#111827' }]}>1,402</Text></View>
-          <View><Text style={styles.metricText}>Percentile</Text><Text style={[styles.cardTitle, { color: '#10b981' }]}>94.5%</Text></View>
-          <View><Text style={styles.metricText}>Accuracy</Text><Text style={[styles.cardTitle, { color: '#111827' }]}>88%</Text></View>
-        </View>
-        <View style={[styles.button, { marginTop: 15, padding: 10, backgroundColor: '#fff7ed', borderWidth: 1, borderColor: '#fed7aa' }]}>
-          <Text style={[styles.buttonText, { color: '#ea580c' }]}>View Full Analysis</Text>
-        </View>
-      </TouchableOpacity>
-    </View>
-  </ScrollView>
-);
+      </View>
+    );
+  }
+
+  return (
+    <ScrollView style={styles.container}>
+      <View style={styles.contentPadAlt}>
+        {attempts.map((attempt: any) => (
+          <TouchableOpacity key={attempt.id} style={styles.card} onPress={() => navigation.navigate('TestAnalysis')}>
+            <View style={styles.flexRowBetween}>
+              <View>
+                <Text style={styles.cardTitle}>Test Attempt</Text>
+                <Text style={styles.metricText}>{attempt.status} • {new Date(attempt.started_at).toLocaleDateString()}</Text>
+              </View>
+              <Text style={[styles.priceTagText, { color: attempt.status === 'SUBMITTED' ? '#15803d' : '#f97316' }]}>{attempt.status}</Text>
+            </View>
+          </TouchableOpacity>
+        ))}
+      </View>
+    </ScrollView>
+  );
+};
 
 const TestAnalysisScreen = () => {
   return (
@@ -592,15 +720,35 @@ const AppLanguageScreen = () => (
     ))}
   </View>
 );
-const EditProfileScreen = () => (
-  <View style={styles.detailContainer}>
-    <Text style={styles.detailTitle}>Edit Profile</Text>
-    <TextInput style={[styles.input, { marginTop: 20 }]} placeholder="Full Name" defaultValue="Student Name" />
-    <TextInput style={styles.input} placeholder="Phone Number" keyboardType="phone-pad" defaultValue="+91 9876543210" />
-    <TextInput style={styles.input} placeholder="Email" defaultValue="student@example.com" />
-    <TouchableOpacity style={styles.button}><Text style={styles.buttonText}>Save Changes</Text></TouchableOpacity>
-  </View>
-);
+const EditProfileScreen = ({ route }: any) => {
+  const userData = route?.params?.user;
+  const [name, setName] = useState(userData?.name || '');
+  const [phone, setPhone] = useState(userData?.phone || '');
+  const [email] = useState(userData?.email || '');
+  const [saving, setSaving] = useState(false);
+
+  const handleSave = async () => {
+    setSaving(true);
+    try {
+      await UserAPI.updateMe({ name, phone });
+      Alert.alert('Success', 'Profile updated successfully!');
+    } catch (err: any) {
+      Alert.alert('Error', err.response?.data?.detail || 'Could not update profile.');
+    } finally { setSaving(false); }
+  };
+
+  return (
+    <View style={styles.detailContainer}>
+      <Text style={styles.detailTitle}>Edit Profile</Text>
+      <TextInput style={[styles.input, { marginTop: 20 }]} placeholder="Full Name" value={name} onChangeText={setName} />
+      <TextInput style={styles.input} placeholder="Phone Number" keyboardType="phone-pad" value={phone} onChangeText={setPhone} />
+      <TextInput style={[styles.input, { color: '#9ca3af' }]} placeholder="Email" value={email} editable={false} />
+      <TouchableOpacity style={saving ? styles.buttonDisabled : styles.button} onPress={handleSave} disabled={saving}>
+        {saving ? <ActivityIndicator color="#fff" /> : <Text style={styles.buttonText}>Save Changes</Text>}
+      </TouchableOpacity>
+    </View>
+  );
+};
 const PaymentHistoryScreen = () => (
   <ScrollView style={styles.container}>
     <View style={styles.contentPadAlt}>

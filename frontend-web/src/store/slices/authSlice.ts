@@ -28,6 +28,18 @@ export const loginUser = createAsyncThunk(
     }
 );
 
+export const signupUser = createAsyncThunk(
+    'auth/signup',
+    async (userData: { name: string; email: string; password: string }, { rejectWithValue }) => {
+        try {
+            const response = await api.post('/auth/signup', userData);
+            return response.data;
+        } catch (error: any) {
+            return rejectWithValue(error.response?.data || { detail: 'Signup failed' });
+        }
+    }
+);
+
 const authSlice = createSlice({
     name: 'auth',
     initialState,

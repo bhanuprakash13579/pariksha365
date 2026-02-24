@@ -11,6 +11,12 @@ from app.models.option import Option
 from app.models.result import Result
 from app.schemas.attempt_schema import UserAnswerCreate
 from datetime import datetime
+from typing import List
+
+async def get_user_attempts(db: AsyncSession, user_id: uuid.UUID) -> List[Attempt]:
+    stmt = select(Attempt).where(Attempt.user_id == user_id).order_by(Attempt.started_at.desc())
+    result = await db.execute(stmt)
+    return result.scalars().all()
 
 async def start_attempt(db: AsyncSession, user_id: uuid.UUID, test_id: uuid.UUID) -> Attempt:
     # First check if active attempt exists

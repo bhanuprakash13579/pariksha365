@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, List
 from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 import uuid
@@ -10,6 +10,16 @@ from app.schemas.result_schema import ResultResponse
 from app.services import scoring_service
 
 router = APIRouter()
+
+@router.get("/", response_model=List[AttemptResponse])
+async def list_my_attempts(
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_active_user)
+) -> Any:
+    """
+    List all attempts for the current user.
+    """
+    return await scoring_service.get_user_attempts(db, current_user.id)
 
 @router.post("/start", response_model=AttemptResponse)
 async def start_attempt(

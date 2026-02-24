@@ -5,6 +5,7 @@ import { Auth } from './pages/Auth';
 import { StudentDashboard } from './pages/Dashboard';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsAndConditions } from './pages/TermsAndConditions';
+import { ForgotPassword } from './pages/ForgotPassword';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/mock-test" element={<MockTestInterface />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
                 <Route path="/terms" element={<TermsAndConditions />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
             </Routes>
         </Router>
     );

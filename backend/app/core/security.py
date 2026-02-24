@@ -29,3 +29,22 @@ def create_refresh_token(subject: Union[str, Any], expires_delta: timedelta = No
     to_encode = {"exp": expire, "sub": str(subject), "type": "refresh"}
     encoded_jwt = jwt.encode(to_encode, settings.SECRET_KEY, algorithm=settings.ALGORITHM)
     return encoded_jwt
+
+def create_password_reset_token(subject: Union[str, Any]) -> str:
+    expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode = {"exp": expire, "sub": str(subject), "type": "reset"}
+    encoded_jwt = jwt.encode(to_encode, settings.SECRET_KEY, algorithm=settings.ALGORITHM)
+    return encoded_jwt
+
+def verify_password_reset_token(token: str) -> str:
+    """Returns the user ID (sub) if the token is valid, otherwise raises."""
+    from jose import JWTError
+    try:
+        payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
+        user_id: str = payload.get("sub")
+        token_type: str = payload.get("type")
+        if user_id is None or token_type != "reset":
+            raise ValueError("Invalid token")
+        return user_id
+    except JWTError:
+        raise ValueError("Invalid or expired token")
