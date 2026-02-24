@@ -9,8 +9,8 @@ class Enrollment(Base):
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, index=True)
     user_id = Column(UUID(as_uuid=True), ForeignKey("users.id"), index=True)
-    test_series_id = Column(UUID(as_uuid=True), ForeignKey("test_series.id"), index=True)
+    course_id = Column(UUID(as_uuid=True), ForeignKey("courses.id"), index=True)
     valid_until = Column(DateTime(timezone=True), nullable=True)
 
     user = relationship("User", back_populates="enrollments")
-    test_series = relationship("TestSeries", back_populates="enrollments")
+    course = relationship("Course", back_populates="enrollments")

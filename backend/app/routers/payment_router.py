@@ -12,16 +12,16 @@ from app.services import payment_service
 
 router = APIRouter()
 
-@router.post("/create-checkout-session/{test_id}", response_model=CheckoutSessionResponse)
+@router.post("/create-checkout-session/{course_id}", response_model=CheckoutSessionResponse)
 async def create_checkout(
-    test_id: uuid.UUID,
+    course_id: uuid.UUID,
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_active_user)
 ) -> Any:
     """
     Create a Stripe Checkout Session for Web-first flow.
     """
-    url = await payment_service.create_checkout_session(db, current_user.id, test_id)
+    url = await payment_service.create_checkout_session(db, current_user.id, course_id)
     return CheckoutSessionResponse(checkout_url=url)
 
 @router.post("/webhook")
@@ -30,7 +30,7 @@ async def stripe_webhook(
     db: AsyncSession = Depends(get_db)
 ) -> Any:
     """
-    Stripe Webhook to verify payment signature and unlock test series securely.
+    Stripe Webhook to verify payment signature and unlock course securely.
     """
     payload = await request.body()
     sig_header = request.headers.get("stripe-signature")

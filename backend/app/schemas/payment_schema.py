@@ -4,7 +4,7 @@ from datetime import datetime
 from app.models.payment import PaymentStatus, PaymentProvider
 
 class PaymentCreate(BaseModel):
-    test_series_id: uuid.UUID
+    course_id: uuid.UUID
     amount: float
     provider: PaymentProvider
 

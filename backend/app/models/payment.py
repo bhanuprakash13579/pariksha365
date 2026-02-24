@@ -20,7 +20,7 @@ class Payment(Base):
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, index=True)
     user_id = Column(UUID(as_uuid=True), ForeignKey("users.id"), index=True)
-    test_series_id = Column(UUID(as_uuid=True), ForeignKey("test_series.id"), index=True)
+    course_id = Column(UUID(as_uuid=True), ForeignKey("courses.id"), index=True)
     amount = Column(Float, nullable=False)
     provider = Column(SAEnum(PaymentProvider), nullable=False)
     status = Column(SAEnum(PaymentStatus), default=PaymentStatus.PENDING)
@@ -28,4 +28,4 @@ class Payment(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
     user = relationship("User", back_populates="payments")
-    test_series = relationship("TestSeries", back_populates="payments")
+    course = relationship("Course", back_populates="payments")

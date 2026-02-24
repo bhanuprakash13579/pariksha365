@@ -3,13 +3,14 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.core.database import engine, Base
-from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router
+from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router
 import app.models
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Automatically create missing database tables on startup
+    # Automatically drop and create database tables on startup (WIPES DATA!)
     async with engine.begin() as conn:
+        await conn.run_sync(Base.metadata.drop_all)
         await conn.run_sync(Base.metadata.create_all)
     yield
 
@@ -32,6 +33,7 @@ app.include_router(auth_router.router, prefix=f"{settings.API_V1_STR}/auth", tag
 app.include_router(user_router.router, prefix=f"{settings.API_V1_STR}/users", tags=["users"])
 app.include_router(admin_router.router, prefix=f"{settings.API_V1_STR}/admin", tags=["admin"])
 app.include_router(test_series_router.router, prefix=f"{settings.API_V1_STR}/tests", tags=["test-series"])
+app.include_router(course_router.router, prefix=f"{settings.API_V1_STR}/courses", tags=["courses"])
 app.include_router(attempt_router.router, prefix=f"{settings.API_V1_STR}/attempts", tags=["attempts"])
 app.include_router(payment_router.router, prefix=f"{settings.API_V1_STR}/payments", tags=["payments"])
 

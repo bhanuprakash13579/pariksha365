@@ -5,27 +5,27 @@ from sqlalchemy.future import select
 from fastapi import HTTPException
 from app.core.config import settings
 from app.models.payment import Payment, PaymentStatus, PaymentProvider
-from app.models.test_series import TestSeries
+from app.models.course import Course
 from app.models.enrollment import Enrollment
 
 stripe.api_key = settings.STRIPE_API_KEY
 
-async def create_checkout_session(db: AsyncSession, user_id: uuid.UUID, test_id: uuid.UUID) -> str:
-    stmt = select(TestSeries).where(TestSeries.id == test_id)
+async def create_checkout_session(db: AsyncSession, user_id: uuid.UUID, course_id: uuid.UUID) -> str:
+    stmt = select(Course).where(Course.id == course_id)
     result = await db.execute(stmt)
-    test_series = result.scalars().first()
+    course = result.scalars().first()
     
-    if not test_series:
-        raise HTTPException(status_code=404, detail="Test series not found")
+    if not course:
+        raise HTTPException(status_code=404, detail="Course not found")
         
-    if test_series.is_free:
-        raise HTTPException(status_code=400, detail="Test series is free")
+    if course.price <= 0:
+        raise HTTPException(status_code=400, detail="Course is free, no payment needed")
         
     # Create DB Intent payment first
     db_payment = Payment(
         user_id=user_id,
-        test_series_id=test_id,
-        amount=test_series.price,
+        course_id=course_id,
+        amount=course.price,
         provider=PaymentProvider.STRIPE,
         status=PaymentStatus.PENDING
     )
@@ -41,9 +41,9 @@ async def create_checkout_session(db: AsyncSession, user_id: uuid.UUID, test_id:
                 'price_data': {
                     'currency': 'inr', # or configured currency
                     'product_data': {
-                        'name': test_series.title,
+                        'name': course.title,
                     },
-                    'unit_amount': int(test_series.price * 100),
+                    'unit_amount': int(course.price * 100),
                 },
                 'quantity': 1,
             }],
@@ -75,7 +75,7 @@ async def handle_stripe_webhook(db: AsyncSession, event: dict):
                 # Grant access via Enrollment
                 enrollment = Enrollment(
                     user_id=payment.user_id,
-                    test_series_id=payment.test_series_id
+                    course_id=payment.course_id
                 )
                 db.add(enrollment)
                 await db.commit()

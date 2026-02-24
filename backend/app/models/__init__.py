@@ -11,6 +11,9 @@ from app.models.result import Result
 from app.models.enrollment import Enrollment
 from app.models.notes import Note
 from app.models.payment import Payment
+from app.models.course import Course
+from app.models.course_folder import CourseFolder
+from app.models.folder_test import FolderTest
 
 # Expose Base and Models for Alembic metadata
 __all__ = [
@@ -26,5 +29,8 @@ __all__ = [
     "Result",
     "Enrollment",
     "Note",
-    "Payment"
+    "Payment",
+    "Course",
+    "CourseFolder",
+    "FolderTest"
 ]
