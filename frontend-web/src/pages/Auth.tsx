@@ -81,6 +81,33 @@ export const Auth = () => {
                             </div>
                         )}
 
+                        {!isLogin && (
+                            <div className="flex items-start">
+                                <div className="flex items-center h-5">
+                                    <input
+                                        id="terms"
+                                        name="terms"
+                                        type="checkbox"
+                                        required
+                                        className="focus:ring-orange-500 h-4 w-4 text-orange-600 border-gray-300 rounded"
+                                    />
+                                </div>
+                                <div className="ml-3 text-sm">
+                                    <label htmlFor="terms" className="font-medium text-gray-700">
+                                        I accept the{' '}
+                                        <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:text-orange-500">
+                                            Terms and Conditions
+                                        </a>
+                                        {' '}and{' '}
+                                        <a href="/privacy" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:text-orange-500">
+                                            Privacy Policy
+                                        </a>
+                                        .
+                                    </label>
+                                </div>
+                            </div>
+                        )}
+
                         <div>
                             <button type="submit" className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
                                 {isLogin ? 'Sign in' : 'Register'}

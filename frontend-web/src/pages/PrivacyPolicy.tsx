@@ -2,66 +2,82 @@ import React from 'react';
 
 export const PrivacyPolicy: React.FC = () => {
     return (
-        <div className="min-h-screen bg-gray-50 flex flex-col justify-center items-center py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl w-full bg-white shadow-xl rounded-2xl p-8 space-y-6">
-                <h1 className="text-3xl font-extrabold text-gray-900 border-b pb-4">Privacy Policy</h1>
+        <div className="min-h-screen bg-gray-50 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl w-full bg-white shadow-2xl rounded-2xl p-8 sm:p-12 space-y-8 text-gray-800">
+                <div className="text-center border-b pb-6 mb-8">
+                    <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">Privacy Policy & Comprehensive Legal Terms</h1>
+                    <p className="mt-4 text-sm text-gray-500 font-medium uppercase tracking-wider">Effective Date: {new Date().toLocaleDateString()}</p>
+                </div>
 
-                <p className="text-sm text-gray-500">Last updated: {new Date().toLocaleDateString()}</p>
+                <div className="space-y-8 text-sm leading-relaxed">
 
-                <div className="space-y-4 text-gray-700">
-                    <section>
-                        <h2 className="text-xl font-bold text-gray-900 mt-6 mb-2">1. Introduction</h2>
+                    <section className="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                        <h2 className="text-2xl font-bold text-gray-900 mb-4 tracking-tight">1. Acceptance of Terms</h2>
                         <p>
-                            Welcome to Pariksha365. We respect your privacy and are committed to protecting your personal data.
-                            This privacy policy will inform you as to how we look after your personal data when you visit our website
-                            or use our mobile application and tell you about your privacy rights and how the law protects you.
+                            By accessing, browsing, or using the Pariksha365 platform, including our website, mobile applications, mock tests, PDF notes, video lectures, and related services (collectively, the "Services"), you acknowledge that you have read, understood, and agree to be legally bound by this Privacy Policy and all incorporated terms. If you do not agree to these terms, you must immediately cease use of our Services.
                         </p>
                     </section>
 
                     <section>
-                        <h2 className="text-xl font-bold text-gray-900 mt-6 mb-2">2. Data We Collect</h2>
-                        <p>We may collect, use, store and transfer different kinds of personal data about you which we have grouped together as follows:</p>
-                        <ul className="list-disc pl-5 mt-2 space-y-1">
-                            <li><strong>Identity Data:</strong> includes first name, last name, username or similar identifier.</li>
-                            <li><strong>Contact Data:</strong> includes email address and telephone numbers.</li>
-                            <li><strong>Technical Data:</strong> includes internet protocol (IP) address, your login data, browser type and version.</li>
-                            <li><strong>Usage Data:</strong> includes information about how you use our app, test completion statistics, and scores.</li>
+                        <h2 className="text-2xl font-bold text-gray-900 mb-4 tracking-tight">2. Information We Collect</h2>
+                        <p className="mb-3">We collect information to provide better services to our users. The types of data we collect include:</p>
+                        <ul className="list-disc pl-5 mt-2 space-y-2 text-gray-700">
+                            <li><strong>Personal Identity Data:</strong> Names, email addresses, phone numbers, profile images, and login credentials.</li>
+                            <li><strong>Usage & Performance Data:</strong> Mock test scores, attempt histories, time spent per question, learning patterns, device information, IP addresses, and browser types.</li>
+                            <li><strong>Financial Data:</strong> Transactions are processed via secure third-party payment gateways. We do not store full credit card details on our servers.</li>
                         </ul>
                     </section>
 
                     <section>
-                        <h2 className="text-xl font-bold text-gray-900 mt-6 mb-2">3. How We Use Your Data</h2>
-                        <p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:</p>
-                        <ul className="list-disc pl-5 mt-2 space-y-1">
-                            <li>To register you as a new user.</li>
-                            <li>To process and deliver your mock test results.</li>
-                            <li>To manage our relationship with you.</li>
-                            <li>To improve our website, products/services, marketing or customer relationships.</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2 className="text-xl font-bold text-gray-900 mt-6 mb-2">4. Data Security</h2>
+                        <h2 className="text-2xl font-bold text-gray-900 mb-4 tracking-tight">3. How We Use and Share Information</h2>
+                        <p className="mb-3">We utilize your data for the core functionality of the platform, service improvement, academic analytics, and direct communication.</p>
+                        <b className="block mt-4 mb-2 text-gray-900">Third-Party Sharing & Affiliates</b>
                         <p>
-                            We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed.
-                            In addition, we limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know.
+                            We may share aggregated, non-personally identifiable information publicly and with our partners. We reserve the right to transfer all user data in connection with a corporate merger, consolidation, restructuring, or sale of assets, without prior consent. We may also disclose data to satisfy any applicable law, regulation, legal process, or enforceable governmental request.
+                        </p>
+                    </section>
+
+                    {/* CRITICAL SECTION FOR USER'S REQUEST */}
+                    <section className="bg-red-50 p-6 rounded-lg border border-red-100 mt-10">
+                        <h2 className="text-2xl font-bold text-gray-900 mb-4 tracking-tight">4. Content Disclaimer & Intermediary Status (Safe Harbor)</h2>
+                        <p className="mb-4">
+                            <strong>Platform as an Intermediary:</strong> Pariksha365 operates strictly as an "Intermediary" as defined under the Information Technology Act, 2000 (and subsequent amendments). Materials available on this platform, including but not limited to mock tests, syllabus breakdowns, current affairs updates, video lectures, objective questions, PDF study notes, and textual explanations, are aggregated, sourced, or independently created by various third-party educators, freelancers, and subject matter experts ("Content Providers").
+                        </p>
+                        <p className="mb-4 font-bold text-red-800">
+                            Pariksha365 explicitly disclaims any ownership over third-party generated content. We do not pre-screen, verify, or manually endorse the originality of every piece of educational material uploaded to our servers.
+                        </p>
+                        <p className="mb-4">
+                            <strong>Coincidental Resemblance:</strong> In the academic domain, specifically concerning competitive examinations, government job preparation, and standardized tests, syllabi and objective facts are universal. Consequently, certain questions, explanations, methodologies, or study notes provided on Pariksha365 may bear a resemblance to content published by other educational technology platforms, coaching institutes, or publishing houses (including but not limited to competitors in the market).
+                        </p>
+                        <p className="mb-4">
+                            <strong>No Intent of Plagiarism:</strong> Any such resemblance, overlap, or duplicate phrasing in fundamental academic facts, test questions, or learning structures is purely coincidental and incidental to the universal nature of the subject matter. Pariksha365 completely denies any intentional plagiarism, copyright infringement, or intellectual property violation.
+                        </p>
+                        <p>
+                            <strong>Notice and Takedown Policy (DMCA / Copyright claims):</strong> If you believe any content on Pariksha365 infringes upon your copyright, you must submit a formal, verifiable takedown notice detailing the specific URI/URL of the allegedly infringing material and proof of original ownership. Upon receipt of a valid notice, our sole obligation and liability is limited to promptly removing or disabling access to the disputed content without admitting any liability.
                         </p>
                     </section>
 
                     <section>
-                        <h2 className="text-xl font-bold text-gray-900 mt-6 mb-2">5. Your Legal Rights</h2>
-                        <p>Under certain circumstances, you have rights under data protection laws in relation to your personal data. These include the right to:</p>
-                        <ul className="list-disc pl-5 mt-2 space-y-1">
-                            <li>Request access to your personal data.</li>
-                            <li>Request correction of your personal data.</li>
-                            <li>Request erasure of your personal data.</li>
-                            <li>Object to processing of your personal data.</li>
-                        </ul>
+                        <h2 className="text-2xl font-bold text-gray-900 mb-4 tracking-tight">5. Limitation of Liability</h2>
+                        <b className="block mb-2 font-bold uppercase text-gray-900">Maximum Extent Permitted by Law</b>
+                        <p className="mb-4 text-gray-600 font-medium">
+                            TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL PARIKSHA365, ITS DIRECTORS, EMPLOYEES, PARTNERS, OR AGENTS, BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM (I) YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SERVICE; (II) ANY CONDUCT OR CONTENT OF ANY THIRD PARTY ON THE SERVICE; (III) ANY CONTENT OBTAINED FROM THE SERVICE, INCLUDING CLAIMS OF PLAGIARISM OR INTELLECTUAL PROPERTY INFRINGEMENT INITIATED BY THIRD PARTIES.
+                        </p>
+                        <p>
+                            Our platform is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance.
+                        </p>
                     </section>
 
-                    <section>
-                        <h2 className="text-xl font-bold text-gray-900 mt-6 mb-2">6. Contact Us</h2>
-                        <p>If you have any questions about this privacy policy or our privacy practices, please contact us at standard contact email address for developers.</p>
+                    <section className="bg-gray-100 p-6 rounded-lg mt-8">
+                        <h2 className="text-xl font-bold text-gray-900 mb-2">6. Indemnification</h2>
+                        <p>
+                            You agree to defend, indemnify and hold harmless Pariksha365 and its licensee and licensors, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of a) your use and access of the Service, by you or any person using your account and password, or b) a breach of these Terms.
+                        </p>
+                    </section>
+
+                    <section className="text-center pt-8 border-t mt-12 text-gray-500">
+                        <p>If you have questions regarding this policy or wish to issue a legal notice, contact our Grievance Officer.</p>
+                        <p className="mt-2 font-semibold">Pariksha365 Legal Department</p>
                     </section>
                 </div>
             </div>
