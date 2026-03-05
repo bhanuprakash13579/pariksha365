@@ -62,7 +62,12 @@ app = FastAPI(
 # Set all CORS enabled origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # In production, replace abstract with true domains
+    allow_origins=[
+        "http://localhost:5173",
+        "https://pariksha365.in",
+        "https://www.pariksha365.in",
+        "https://pariksha365-production-71d6.up.railway.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
