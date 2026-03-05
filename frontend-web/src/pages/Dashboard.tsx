@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from 'react';
+import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import { logout } from '../store/slices/authSlice';
 import { useNavigate } from 'react-router-dom';
@@ -10,6 +10,50 @@ import { Analytics } from '../components/dashboard/Analytics';
 import { Profile } from '../components/dashboard/Profile';
 import { Lock, PlayCircle, CheckCircle } from 'lucide-react';
 
+// Star thresholds (must match backend practice_service.py)
+const STAR_THRESHOLDS = [500, 2000, 5000, 15000, 50000];
+
+function getNextStarInfo(points: number, stars: number) {
+    if (stars >= 5) return { next: null, remaining: 0, progress: 100 };
+    const nextThreshold = STAR_THRESHOLDS[stars];
+    const prevThreshold = stars > 0 ? STAR_THRESHOLDS[stars - 1] : 0;
+    const rangeSize = nextThreshold - prevThreshold;
+    const progressInRange = points - prevThreshold;
+    const progress = Math.min(100, Math.max(0, (progressInRange / rangeSize) * 100));
+    return { next: nextThreshold, remaining: nextThreshold - points, progress };
+}
+
+const StarIcon = ({ filled }: { filled: boolean }) => (
+    <svg className={`w-5 h-5 transition-all duration-300 ${filled ? 'drop-shadow-[0_0_4px_rgba(255,215,0,0.6)]' : ''}`} viewBox="0 0 24 24" fill={filled ? '#FFD700' : 'none'} stroke={filled ? '#DAA520' : '#C0C0C0'} strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+    </svg>
+);
+
+const StarRating = ({ stars, points }: { stars: number; points: number }) => {
+    const { next, remaining, progress } = getNextStarInfo(points, stars);
+    return (
+        <div className="flex flex-col items-end gap-0.5">
+            <div className="flex items-center gap-0.5">
+                {[0, 1, 2, 3, 4].map(i => (
+                    <StarIcon key={i} filled={i < stars} />
+                ))}
+            </div>
+            <div className="text-[10px] font-bold text-gray-500 tracking-wider uppercase">
+                {points.toLocaleString()} Pts
+            </div>
+            {next && (
+                <div className="flex items-center gap-1 w-full">
+                    <div className="flex-1 h-1 bg-gray-200 rounded-full overflow-hidden" style={{ minWidth: '60px' }}>
+                        <div className="h-full bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full transition-all duration-500" style={{ width: `${progress}%` }} />
+                    </div>
+                    <span className="text-[9px] text-gray-400 whitespace-nowrap">{remaining.toLocaleString()} to ⭐</span>
+                </div>
+            )}
+            {!next && <span className="text-[9px] text-amber-500 font-bold">🏆 MAX</span>}
+        </div>
+    );
+};
+
 export const StudentDashboard = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -18,6 +62,15 @@ export const StudentDashboard = () => {
     const [userName, setUserName] = useState('');
     const [userPoints, setUserPoints] = useState(0);
     const [userStars, setUserStars] = useState(0);
+
+    // Refresh user stats (points/stars) — called after quiz completion
+    const refreshUserStats = useCallback(async () => {
+        try {
+            const res = await UserAPI.getMe();
+            setUserPoints(res.data.points || 0);
+            setUserStars(res.data.stars || 0);
+        } catch (e) { console.error('Failed to refresh user stats', e); }
+    }, []);
 
     const [selectedCourse, setSelectedCourse] = useState<any | null>(null);
     const [userEnrollments, setUserEnrollments] = useState<Set<string>>(new Set());
@@ -55,26 +108,8 @@ export const StudentDashboard = () => {
         });
     };
 
-    // Smart Nudging System
-    const [showNudge, setShowNudge] = useState(false);
-    const [nudgeData, setNudgeData] = useState({ title: '', message: '', type: '' });
-
     // Daily Streak Info
     const [dailyStreak, setDailyStreak] = useState<any>(null);
-
-    useEffect(() => {
-        // Trigger a random active nudge 3.5 seconds after login
-        const timer = setTimeout(() => {
-            const nudges = [
-                { title: '⏱️ Target Bounty', message: 'Complete 10 Geography questions in the next hour to unlock a 2x Streak Multiplier!', type: 'bounty' },
-                { title: '🔥 Momentum', message: 'You are only 5 points away from matching the Top 10% average accuracy today!', type: 'ghost' },
-                { title: '⚠️ Streak at Risk', message: 'Keep your 3-day streak alive! Take a quick 5-min mock test now.', type: 'streak' }
-            ];
-            setNudgeData(nudges[Math.floor(Math.random() * nudges.length)]);
-            setShowNudge(true);
-        }, 3500);
-        return () => clearTimeout(timer);
-    }, []);
 
     useEffect(() => {
         const fetchInitial = async () => {
@@ -345,14 +380,8 @@ export const StudentDashboard = () => {
                             </svg>
                         </button>
 
-                        <div className="flex flex-col items-end mr-3 hidden sm:flex">
-                            <div className="flex items-center gap-1.5 bg-yellow-400/10 px-2 py-0.5 rounded-full border border-yellow-400/20">
-                                <span className="text-yellow-500 text-sm">⭐</span>
-                                <span className="text-yellow-700 font-bold text-xs">{userStars}</span>
-                            </div>
-                            <div className="text-[10px] font-bold text-gray-500 mt-0.5 tracking-wider uppercase">
-                                {userPoints} Pts
-                            </div>
+                        <div className="hidden sm:flex">
+                            <StarRating stars={userStars} points={userPoints} />
                         </div>
 
                         <div className="relative">
@@ -392,22 +421,35 @@ export const StudentDashboard = () => {
                                                 <div className="absolute top-0 right-0 -mr-10 -mt-20 w-48 h-48 bg-white opacity-10 rounded-full blur-2xl group-hover:scale-110 transition-transform duration-700"></div>
                                                 <div className="absolute bottom-0 right-10 w-24 h-24 bg-orange-300 opacity-20 rounded-full blur-xl group-hover:-translate-y-4 transition-transform duration-700"></div>
 
-                                                <div className="relative z-10 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-                                                    <div className="flex items-center gap-6">
-                                                        <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center flex-shrink-0 border border-white/30 shadow-inner group-hover:scale-105 transition-transform duration-300">
-                                                            <span className="text-3xl">⚡</span>
+                                                <div className="relative z-10 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                                                    <div className="flex items-center gap-5">
+                                                        <div className="w-14 h-14 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center flex-shrink-0 border border-white/30 shadow-inner group-hover:scale-105 transition-transform duration-300">
+                                                            <span className="text-2xl">{dailyStreak?.current_streak > 0 ? '🔥' : '⚡'}</span>
                                                         </div>
                                                         <div>
-                                                            <div className="text-orange-100 font-bold text-xs uppercase tracking-widest mb-1 flex items-center gap-2">
-                                                                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-                                                                {dailyStreak?.current_streak > 0 ? `🔥 ${dailyStreak.current_streak}-Day Streak Live!` : "Daily Challenge Live"}
-                                                            </div>
-                                                            <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight mb-2">Build Your Prep Streak</h2>
-                                                            <p className="text-orange-50 font-medium text-sm md:text-base opacity-90">10 Questions • 10 Minutes • Earn Points & Stars</p>
+                                                            {dailyStreak?.current_streak > 0 ? (
+                                                                <>
+                                                                    <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight mb-1">
+                                                                        {dailyStreak.current_streak}-Day Streak 🔥
+                                                                    </h2>
+                                                                    <p className="text-orange-100 font-medium text-sm opacity-90">
+                                                                        Longest: {dailyStreak.longest_streak || dailyStreak.current_streak} days • Keep it alive with today's quiz!
+                                                                    </p>
+                                                                </>
+                                                            ) : (
+                                                                <>
+                                                                    <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight mb-1">
+                                                                        Start Your Streak Today
+                                                                    </h2>
+                                                                    <p className="text-orange-100 font-medium text-sm opacity-90">
+                                                                        10 Questions • 10 Minutes • Earn Points & Stars
+                                                                    </p>
+                                                                </>
+                                                            )}
                                                         </div>
                                                     </div>
-                                                    <button className="w-full md:w-auto px-8 py-3.5 bg-white text-orange-600 rounded-xl font-bold hover:bg-orange-50 hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 group-hover:text-orange-700">
-                                                        Play Today's Quiz
+                                                    <button className="w-full md:w-auto px-8 py-3 bg-white text-orange-600 rounded-xl font-bold hover:bg-orange-50 hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 group-hover:text-orange-700">
+                                                        {dailyStreak?.current_streak > 0 ? "Continue Streak" : "Play Today's Quiz"}
                                                         <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                                                     </button>
                                                 </div>
@@ -471,7 +513,7 @@ export const StudentDashboard = () => {
                                 case 'learning':
                                     return <MyLearning onSelectCourse={setSelectedCourse} />;
                                 case 'quiz':
-                                    return <DailyQuizzes />;
+                                    return <DailyQuizzes onQuizComplete={refreshUserStats} />;
                                 case 'analytics':
                                     return <Analytics />;
                                 case 'profile':
@@ -500,28 +542,7 @@ export const StudentDashboard = () => {
                 ))}
             </div>
 
-            {/* Smart Nudge Toast */}
-            {showNudge && (
-                <div className="fixed bottom-20 right-4 md:bottom-8 md:right-8 z-50 animate-fade-in-up translate-y-0 opacity-100 transition-all duration-500 ease-out">
-                    <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 p-4 max-w-sm flex items-start space-x-4 relative overflow-hidden">
-                        <div className={`absolute top-0 left-0 w-1.5 h-full ${nudgeData.type === 'bounty' ? 'bg-indigo-500' : nudgeData.type === 'streak' ? 'bg-red-500' : 'bg-orange-500'}`}></div>
 
-                        <div className="flex-1 pl-1">
-                            <div className="flex justify-between items-start">
-                                <h4 className="text-sm font-bold text-gray-900">{nudgeData.title}</h4>
-                                <button onClick={() => setShowNudge(false)} className="text-gray-400 hover:text-gray-600 focus:outline-none ml-2 bg-gray-50 rounded-full p-1 border border-gray-100">
-                                    <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M6 18L18 6M6 6l12 12" /></svg>
-                                </button>
-                            </div>
-                            <p className="text-xs text-gray-600 mt-1.5 pr-2 font-medium leading-relaxed">{nudgeData.message}</p>
-
-                            <button onClick={() => { setShowNudge(false); setActiveTab(nudgeData.type === 'streak' ? 'quiz' : 'learning'); }} className="mt-3 text-xs font-bold text-orange-600 hover:text-orange-700 transition-colors inline-flex border border-orange-200 bg-orange-50 px-3 py-1.5 rounded-lg shadow-sm">
-                                Take Action &rarr;
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            )}
 
             {/* Course Details Modal Overlay */}
             {selectedCourse && (

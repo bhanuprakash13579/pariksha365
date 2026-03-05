@@ -315,13 +315,13 @@ async def submit_quiz_answers(db: AsyncSession, user_id: uuid.UUID, answers: Lis
     if user:
         user.points = (user.points or 0) + points_earned
         
-        # Determine stars based on points
+        # Determine stars based on points (exponential thresholds)
         total_points = user.points
-        if total_points >= 5000: new_stars = 5
-        elif total_points >= 2500: new_stars = 4
-        elif total_points >= 1000: new_stars = 3
-        elif total_points >= 500: new_stars = 2
-        elif total_points >= 100: new_stars = 1
+        if total_points >= 50000: new_stars = 5
+        elif total_points >= 15000: new_stars = 4
+        elif total_points >= 5000: new_stars = 3
+        elif total_points >= 2000: new_stars = 2
+        elif total_points >= 500: new_stars = 1
         
         if new_stars > old_stars:
             user.stars = new_stars

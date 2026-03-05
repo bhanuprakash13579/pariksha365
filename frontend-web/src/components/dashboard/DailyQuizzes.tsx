@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { QuizAPI } from '../../services/api';
 
-export const DailyQuizzes = () => {
+export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }) => {
     const [categories, setCategories] = useState<any[]>([]);
     const [streak, setStreak] = useState<any>(null);
     const [weakQuiz, setWeakQuiz] = useState<any>(null);
@@ -88,6 +88,8 @@ export const DailyQuizzes = () => {
                 submitted: true,
                 scorecard: res.data
             }));
+            // Notify parent to refresh user stats (points/stars)
+            onQuizComplete?.();
         } catch (err) {
             console.error("Failed to submit quiz:", err);
             alert('Failed to submit quiz.');

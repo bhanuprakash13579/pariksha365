@@ -60,3 +60,51 @@ async def reset_password(
     """
     await auth_service.reset_password(db, token=body.token, new_password=body.new_password)
     return MessageResponse(message="Password has been reset successfully.")
+
+# TEMPORARY DEBUG - REMOVE AFTER FIXING LOGIN
+@router.get("/debug-verify/{email}")
+async def debug_verify(email: str, db: AsyncSession = Depends(get_db)):
+    from sqlalchemy.future import select
+    from app.models.user import User
+    from app.core.security import verify_password, get_password_hash
+    import bcrypt as _bcrypt
+    
+    stmt = select(User).where(User.email == email)
+    result = await db.execute(stmt)
+    user = result.scalars().first()
+    
+    if not user:
+        return {"found": False, "email": email}
+    
+    test_password = "Admin@Parisksha365"
+    stored_hash = user.password_hash
+    
+    # Test 1: Direct bcrypt
+    try:
+        direct_result = _bcrypt.checkpw(test_password.encode('utf-8'), stored_hash.encode('utf-8'))
+    except Exception as e:
+        direct_result = f"ERROR: {e}"
+    
+    # Test 2: via security.verify_password
+    try:
+        verify_result = verify_password(test_password, stored_hash)
+    except Exception as e:
+        verify_result = f"ERROR: {e}"
+    
+    # Test 3: generate a new hash and verify
+    new_hash = get_password_hash(test_password)
+    rehash_verify = _bcrypt.checkpw(test_password.encode('utf-8'), new_hash.encode('utf-8'))
+    
+    return {
+        "found": True,
+        "email": user.email,
+        "hash_prefix": stored_hash[:20],
+        "hash_len": len(stored_hash),
+        "bcrypt_version": _bcrypt.__version__,
+        "direct_verify": direct_result,
+        "security_verify": verify_result,
+        "rehash_verify": rehash_verify,
+        "role_id": str(user.role_id) if user.role_id else None,
+        "is_active": user.is_active,
+    }
+
