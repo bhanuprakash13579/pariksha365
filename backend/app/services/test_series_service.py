@@ -10,6 +10,7 @@ from app.models.question import Question
 from app.schemas.test_schema import TestSeriesCreate, TestSeriesUpdate, SectionCreate
 from app.schemas.question_schema import QuestionCreate
 from app.models.attempt import Attempt
+from app.models.user_answer import UserAnswer
 from sqlalchemy import update, delete
 import cloudinary
 import cloudinary.api
