@@ -14,6 +14,10 @@ async def lifespan(app: FastAPI):
     async with engine.begin() as conn:
         if os.getenv("WIPE_DB_ON_STARTUP") == "True":
             print("WIPE_DB_ON_STARTUP flag is enabled. Dropping all tables...")
+            if engine.dialect.name == "postgresql":
+                from sqlalchemy import text
+                print("Postgres dialect detected. Dropping old dependent tables via CASCADE...")
+                await conn.execute(text("DROP TABLE IF EXISTS options CASCADE;"))
             await conn.run_sync(Base.metadata.drop_all)
         await conn.run_sync(Base.metadata.create_all)
         
