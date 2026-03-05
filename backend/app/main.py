@@ -66,7 +66,8 @@ app.add_middleware(
         "http://localhost:5173",
         "https://pariksha365.in",
         "https://www.pariksha365.in",
-        "https://pariksha365-production-71d6.up.railway.app"
+        "https://api.pariksha365.in",
+        "https://pariksha365-production-v2.up.railway.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
