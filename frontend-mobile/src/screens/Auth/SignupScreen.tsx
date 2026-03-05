@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import * as Google from 'expo-auth-session/providers/google';
 import * as AppleAuthentication from 'expo-apple-authentication';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { AuthAPI } from '../../services/api';
+import { AuthAPI, UserAPI } from '../../services/api';
 import { styles } from '../../styles/theme';
 
 const GOOGLE_IOS_CLIENT_ID = "592393648560-0csjsd0dvukv94qg05np14rj1v3o9gg2.apps.googleusercontent.com";
@@ -22,10 +22,38 @@ export default function SignupScreen({ navigation }: any) {
         androidClientId: GOOGLE_ANDROID_CLIENT_ID,
     });
 
-    React.useEffect(() => {
-        if (response?.type === 'success') {
-            navigation.replace('MainTabs', { isGuest: false });
+    const navigateAfterAuth = async () => {
+        try {
+            const res = await UserAPI.getMe();
+            if (!res.data.selected_exam_category_id) {
+                navigation.replace('Onboarding');
+            } else {
+                navigation.replace('MainTabs', { isGuest: false });
+            }
+        } catch {
+            navigation.replace('Onboarding');
         }
+    };
+
+    React.useEffect(() => {
+        const handleGoogleLogin = async () => {
+            if (response?.type === 'success') {
+                const idToken = response.authentication?.idToken;
+                if (idToken) {
+                    setLoading(true);
+                    try {
+                        const loginRes = await AuthAPI.googleLogin(idToken);
+                        await AsyncStorage.setItem('token', loginRes.data.access_token);
+                        await navigateAfterAuth();
+                    } catch (err: any) {
+                        Alert.alert('Google Sign-In Failed', err.response?.data?.detail || 'Could not authenticate with Google.');
+                    } finally {
+                        setLoading(false);
+                    }
+                }
+            }
+        };
+        handleGoogleLogin();
     }, [response]);
 
     const handleAppleAuth = async () => {
@@ -36,7 +64,7 @@ export default function SignupScreen({ navigation }: any) {
                     AppleAuthentication.AppleAuthenticationScope.EMAIL,
                 ],
             });
-            navigation.replace('MainTabs', { isGuest: false });
+            navigation.replace('Onboarding');
         } catch (e: any) {
             if (e.code !== 'ERR_REQUEST_CANCELED') Alert.alert('Authentication Failed', 'Apple Sign in failed.');
         }
@@ -51,7 +79,7 @@ export default function SignupScreen({ navigation }: any) {
             await AuthAPI.signup(name, email, password);
             const loginRes = await AuthAPI.login(email, password);
             await AsyncStorage.setItem('token', loginRes.data.access_token);
-            navigation.replace('MainTabs', { isGuest: false });
+            await navigateAfterAuth();
         } catch (err: any) {
             Alert.alert('Signup Failed', err.response?.data?.detail || 'Could not create account.');
         } finally { setLoading(false); }

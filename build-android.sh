@@ -52,7 +52,7 @@ console.log('✅ app.json dynamically updated! New Version: ' + appData.expo.ver
 echo ""
 echo ">> 4️⃣ Initiating LOCAL Android Build (.aab)"
 echo "🏗️ Building directly on your Mac to bypass cloud queues..."
-eas build --platform android --profile production --local --output ~/Downloads/Pariksha365_Production.aab
+eas build --platform android --profile production
 
 echo ""
 echo "🎉 Build sequence completed successfully!"

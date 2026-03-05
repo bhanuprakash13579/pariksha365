@@ -1,18 +1,21 @@
 from pydantic import BaseModel
-from typing import Optional, List
+from typing import Optional, List, Any
 import uuid
 from datetime import datetime
 
 class FolderTestBase(BaseModel):
-    test_id: uuid.UUID
+    test_id: Optional[uuid.UUID] = None
     order: int = 0
 
 class FolderTestCreate(FolderTestBase):
     pass
 
+from app.schemas.test_schema import TestSeriesResponse
+
 class FolderTestResponse(FolderTestBase):
     id: uuid.UUID
     folder_id: uuid.UUID
+    test_series: Optional[TestSeriesResponse] = None
     
     class Config:
         from_attributes = True

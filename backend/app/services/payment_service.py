@@ -21,6 +21,9 @@ async def create_checkout_session(db: AsyncSession, user_id: uuid.UUID, course_i
     if course.price <= 0:
         raise HTTPException(status_code=400, detail="Course is free, no payment needed")
         
+    if not settings.STRIPE_API_KEY:
+        raise HTTPException(status_code=500, detail="Stripe payments are not currently configured on this server.")
+        
     # Create DB Intent payment first
     db_payment = Payment(
         user_id=user_id,
@@ -48,8 +51,8 @@ async def create_checkout_session(db: AsyncSession, user_id: uuid.UUID, course_i
                 'quantity': 1,
             }],
             mode='payment',
-            success_url=f"http://localhost:3000/payment-success?session_id={{CHECKOUT_SESSION_ID}}",
-            cancel_url=f"http://localhost:3000/payment-cancelled",
+            success_url=f"{settings.FRONTEND_URL or 'http://localhost:3000'}/payment-success?session_id={{CHECKOUT_SESSION_ID}}",
+            cancel_url=f"{settings.FRONTEND_URL or 'http://localhost:3000'}/payment-cancelled",
             client_reference_id=str(db_payment.id)
         )
         return session.url

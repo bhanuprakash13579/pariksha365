@@ -45,3 +45,14 @@ async def submit_attempt(
     current_user: User = Depends(get_current_active_user)
 ) -> Any:
     return await scoring_service.submit_attempt(db, attempt_id)
+
+@router.get("/{attempt_id}/answers", response_model=List[UserAnswerResponse])
+async def get_attempt_answers(
+    attempt_id: uuid.UUID,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_active_user)
+) -> Any:
+    """
+    Get all saved answers for an in-progress attempt (for resuming a paused test).
+    """
+    return await scoring_service.get_attempt_answers(db, attempt_id, current_user.id)

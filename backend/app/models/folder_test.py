@@ -8,8 +8,8 @@ class FolderTest(Base):
     __tablename__ = "folder_tests"
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, index=True)
-    folder_id = Column(UUID(as_uuid=True), ForeignKey("course_folders.id"), index=True)
-    test_id = Column(UUID(as_uuid=True), ForeignKey("test_series.id"), index=True)
+    folder_id = Column(UUID(as_uuid=True), ForeignKey("course_folders.id", ondelete="CASCADE"), index=True)
+    test_id = Column(UUID(as_uuid=True), ForeignKey("test_series.id", ondelete="CASCADE"), index=True)
     order = Column(Integer, default=0)
 
     folder = relationship("CourseFolder", back_populates="tests")

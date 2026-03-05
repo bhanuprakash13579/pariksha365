@@ -1,5 +1,5 @@
 import uuid
-from sqlalchemy import Column, String, Text, ForeignKey, Enum as SAEnum
+from sqlalchemy import Column, String, Text, ForeignKey, Integer, Enum as SAEnum, JSON
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 from app.core.database import Base
@@ -21,7 +21,9 @@ class Question(Base):
     difficulty = Column(SAEnum(DifficultyLevel), default=DifficultyLevel.MEDIUM)
     subject = Column(String, index=True, nullable=True) # e.g. Polity, English, Reasoning
     topic = Column(String, nullable=True)
+    topic_code = Column(String, index=True, nullable=True)  # e.g. POL_FR, ENG_SYNONYM — deterministic matching key
+    order_num = Column(Integer, default=0)
+    options = Column(JSON, nullable=False, default=list)
 
     section = relationship("Section", back_populates="questions")
-    options = relationship("Option", back_populates="question", cascade="all, delete-orphan")
     user_answers = relationship("UserAnswer", back_populates="question")

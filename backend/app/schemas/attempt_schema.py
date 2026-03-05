@@ -6,7 +6,7 @@ from app.models.attempt import AttemptStatus
 
 class UserAnswerCreate(BaseModel):
     question_id: uuid.UUID
-    selected_option_id: Optional[uuid.UUID] = None
+    selected_option_index: Optional[int] = None
     time_spent_seconds: int = 0
 
 class UserAnswerResponse(UserAnswerCreate):
@@ -28,6 +28,8 @@ class AttemptResponse(AttemptBase):
     started_at: datetime
     ended_at: Optional[datetime]
     status: AttemptStatus
+    test_title: Optional[str] = None
+    test_series: Optional[dict] = None # Added for embedding the cdn_url to the frontend
     
     class Config:
         from_attributes = True

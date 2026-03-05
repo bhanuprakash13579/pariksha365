@@ -9,7 +9,6 @@ from app.models.role import Role
 from app.models.test_series import TestSeries
 from app.models.section import Section
 from app.models.question import Question, DifficultyLevel
-from app.models.option import Option
 from app.core.security import get_password_hash
 
 logging.basicConfig(level=logging.INFO)
@@ -73,15 +72,12 @@ async def seed_data():
             )
             session.add(q1)
             await session.commit()
-            
-            opts = [
-                Option(question_id=q1.id, text="10%", is_correct=False),
-                Option(question_id=q1.id, text="15%", is_correct=False),
-                Option(question_id=q1.id, text="20%", is_correct=True),
-                Option(question_id=q1.id, text="25%", is_correct=False)
+            q1.options = [
+                {"option_text": "10%", "is_correct": False},
+                {"option_text": "15%", "is_correct": False},
+                {"option_text": "20%", "is_correct": True},
+                {"option_text": "25%", "is_correct": False}
             ]
-            session.add_all(opts)
-            await session.commit()
             
             logger.info("Seed data generated successfully!")
             

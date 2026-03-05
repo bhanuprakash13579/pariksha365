@@ -19,9 +19,10 @@ class TestSeries(Base):
     is_published = Column(Boolean, default=False)
     is_daily_quiz = Column(Boolean, default=False, index=True)
     quiz_date = Column(DateTime(timezone=True), nullable=True, index=True)
+    cdn_url = Column(String, nullable=True) # Cloudflare R2 Global CDN URL
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
-    sections = relationship("Section", back_populates="test_series", cascade="all, delete-orphan")
+    sections = relationship("Section", back_populates="test_series", cascade="all, delete-orphan", order_by="Section.order_num")
     attempts = relationship("Attempt", back_populates="test_series")
     notes = relationship("Note", back_populates="test_series", cascade="all, delete-orphan")
-    folder_links = relationship("FolderTest", back_populates="test_series", cascade="all, delete-orphan")
+    folder_links = relationship("FolderTest", back_populates="test_series", cascade="save-update, merge")

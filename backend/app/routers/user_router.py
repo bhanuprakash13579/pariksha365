@@ -4,7 +4,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.database import get_db
 from app.core.dependencies import get_current_active_user
 from app.models.user import User
-from app.schemas.user_schema import UserResponse, UserUpdate
+from app.schemas.user_schema import UserResponse, UserUpdate, UserExamPreferenceUpdate
 from app.schemas.auth_schema import ChangePasswordRequest, MessageResponse
 from app.services import auth_service
 
@@ -34,6 +34,8 @@ async def read_user_enrollments(
     from app.models.enrollment import Enrollment
     from app.models.course import Course
     from app.models.course_folder import CourseFolder
+    from app.models.folder_test import FolderTest
+    from app.models.test_series import TestSeries
     
     stmt = (
         select(Enrollment)
@@ -41,6 +43,8 @@ async def read_user_enrollments(
             selectinload(Enrollment.course)
             .selectinload(Course.folders)
             .selectinload(CourseFolder.tests)
+            .selectinload(FolderTest.test_series)
+            .selectinload(TestSeries.sections)
         )
         .where(Enrollment.user_id == current_user.id)
     )
@@ -70,3 +74,18 @@ async def change_password(
     """
     await auth_service.change_password(db, current_user, body.old_password, body.new_password)
     return MessageResponse(message="Password changed successfully.")
+
+@router.put("/me/exam-preference", response_model=UserResponse)
+async def update_exam_preference(
+    body: UserExamPreferenceUpdate,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_active_user),
+) -> Any:
+    """
+    Update current user's preferred exam category.
+    """
+    current_user.selected_exam_category_id = body.selected_exam_category_id
+    db.add(current_user)
+    await db.commit()
+    await db.refresh(current_user)
+    return current_user

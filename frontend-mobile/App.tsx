@@ -55,23 +55,7 @@ const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 // --- MOCK DATA ---
-const MOCK_TESTS = [
-  { id: '1', title: 'SSC CGL Tier 1 Full Mock', tags: 'Mock Test / English', price: '₹149', isFree: false, questions: 100, mins: 60, validity: 365 },
-  { id: '2', title: 'SBI PO Prelims Mini Test', tags: 'Mini Test / English', price: 'Free', isFree: true, questions: 30, mins: 20, validity: 30 },
-  { id: '3', title: 'UPSC CSAT Complete Prep', tags: 'Subject Wise / Hindi', price: '₹299', isFree: false, questions: 80, mins: 120, validity: 180 },
-];
-const ENROLLED_TESTS = [
-  { id: '1', title: 'SSC CGL Tier 1 Full Mock', progress: '30%', lastAttempted: '2 days ago' },
-  { id: '2', title: 'SBI PO Prelims Mini Test', progress: '100%', lastAttempted: 'Completed' },
-];
-
-const SERIES_TESTS = [
-  { id: 't1', title: 'Mock Test 1: Full Syllabus', questions: 100, mins: 60, type: 'Full Mock', isFree: true, isLocked: false },
-  { id: 't2', title: 'Mock Test 2: Full Syllabus', questions: 100, mins: 60, type: 'Full Mock', isFree: false, isLocked: true },
-  { id: 't3', title: 'Mock Test 3: Full Syllabus', questions: 100, mins: 60, type: 'Full Mock', isFree: false, isLocked: true },
-  { id: 't4', title: 'Sectional: Quant 1', questions: 25, mins: 15, type: 'Sectional', isFree: false, isLocked: true },
-  { id: 't5', title: 'Sectional: English 1', questions: 25, mins: 15, type: 'Sectional', isFree: false, isLocked: true },
-];
+// Removed static mock definitions. Data is now fetched dynamically from backend.
 
 const CHART_CONFIG = {
   backgroundGradientFrom: "#ffffff",
@@ -134,6 +118,11 @@ import CategoryScreen from './src/screens/Course/CategoryScreen';
 import MyLearningScreen from './src/screens/Main/MyLearningScreen';
 import AnalyticsScreen from './src/screens/Main/AnalyticsScreen';
 import DailyQuizScreen from './src/screens/Main/DailyQuizScreen';
+import OnboardingScreen from './src/screens/Auth/OnboardingScreen';
+import ForgotPasswordScreen from './src/screens/Auth/ForgotPasswordScreen';
+import MockTestScreen from './src/screens/Test/MockTestScreen';
+import PostTestResultsScreen from './src/screens/Test/PostTestResultsScreen';
+import QuizSessionScreen from './src/screens/Main/QuizSessionScreen';
 
 // --- Testbook-Style Profile Screen ---
 const ProfileScreen = ({ navigation, route }: any) => {
@@ -452,25 +441,17 @@ const ReferEarnScreen = () => (
     <Text style={[styles.metricText, { marginTop: 15, fontSize: 16, lineHeight: 24 }]}>Refer a friend and both of you get 10% off your next Pariksha365 Pass PRO purchase! Use code S10X9A.</Text>
   </View>
 );
-const ChangeExamScreen = () => (
-  <View style={styles.detailContainer}>
-    <Text style={styles.detailTitle}>Select Your Goal</Text>
-    {['SSC Exams', 'Banking Exams', 'UPSC Prelims', 'Teaching (CTET)'].map(exam => (
-      <TouchableOpacity key={exam} style={[styles.card, { marginTop: 15 }]}>
-        <Text style={styles.cardTitle}>{exam}</Text>
-        <Ionicons name="chevron-forward" size={20} color="#9ca3af" />
-      </TouchableOpacity>
-    ))}
-  </View>
-);
+const ChangeExamScreen = ({ navigation }: any) => {
+  return <OnboardingScreen navigation={navigation} route={{ params: { isChangeExam: true } }} />;
+};
 const AppLanguageScreen = () => (
   <View style={styles.detailContainer}>
     <Text style={styles.detailTitle}>Choose Language</Text>
-    {['English', 'हिन्दी (Hindi)'].map(lang => (
-      <TouchableOpacity key={lang} style={[styles.card, { marginTop: 15 }]}>
-        <Text style={styles.cardTitle}>{lang}</Text>
-      </TouchableOpacity>
-    ))}
+    <View style={styles.emptyState}>
+      <Ionicons name="language-outline" size={60} color="#9ca3af" />
+      <Text style={styles.emptyText}>Coming Soon</Text>
+      <Text style={styles.emptySubText}>Multi-language support will be rolling out shortly.</Text>
+    </View>
   </View>
 );
 const EditProfileScreen = ({ route }: any) => {
@@ -503,22 +484,22 @@ const EditProfileScreen = ({ route }: any) => {
   );
 };
 const PaymentHistoryScreen = () => (
-  <ScrollView style={styles.container}>
-    <View style={styles.contentPadAlt}>
-      <View style={[styles.card, { marginTop: 10 }]}>
-        <View>
-          <Text style={styles.cardTitle}>SSC CGL Full Mock</Text>
-          <Text style={styles.metricText}>Feb 15, 2026</Text>
-        </View>
-        <Text style={[styles.priceTagText, { color: '#15803d' }]}>SUCCESS (₹149)</Text>
-      </View>
+  <View style={styles.detailContainer}>
+    <Text style={styles.detailTitle}>Payment History</Text>
+    <View style={styles.emptyState}>
+      <Ionicons name="receipt-outline" size={60} color="#9ca3af" />
+      <Text style={styles.emptyText}>No Transactions</Text>
+      <Text style={styles.emptySubText}>You haven't made any purchases yet.</Text>
     </View>
-  </ScrollView>
+  </View>
 );
 const NotificationsScreen = () => (
   <View style={styles.detailContainer}>
-    <View style={styles.infoBox}>
-      <Text style={styles.infoText}>You have an upcoming exam (RRB NTPC) in 12 days. Complete your mocks!</Text>
+    <Text style={styles.detailTitle}>Notifications</Text>
+    <View style={styles.emptyState}>
+      <Ionicons name="notifications-outline" size={60} color="#9ca3af" />
+      <Text style={styles.emptyText}>All Caught Up</Text>
+      <Text style={styles.emptySubText}>You don't have any new notifications right now.</Text>
     </View>
   </View>
 );
@@ -554,71 +535,65 @@ const TestDetailScreen = ({ route, navigation }: any) => {
   const [index, setIndex] = useState(0);
   const [modalVisible, setModalVisible] = useState(false);
   const [guestModal, setGuestModal] = useState(false);
+  const [fullTest, setFullTest] = useState<any>(test);
+
+  useEffect(() => {
+    const fetchTest = async () => {
+      try {
+        const res = await TestAPI.getById(test.id);
+        setFullTest(res.data);
+      } catch (e) { }
+    };
+    if (test?.id) fetchTest();
+  }, [test?.id]);
+
   const [routes] = useState([
     { key: 'overview', title: 'Overview' },
     { key: 'tests', title: 'Content' },
   ]);
 
-  const handleTestTap = (item: any) => {
-    if (item.isLocked) { setModalVisible(true); }
-    else if (isGuest) { setGuestModal(true); }
-    else { /* Navigate to Test Engine Screen */ }
+  const handleTestTap = () => {
+    if (isGuest) { setGuestModal(true); }
+    else { navigation.navigate('MockTest', { testSeriesId: test.id, testTitle: fullTest?.title || test.title }); }
   };
 
   const OverviewRoute = () => (
     <ScrollView style={styles.contentPadAlt}>
       <View style={styles.infoBox}>
         <Text style={[styles.detailTitle, { fontSize: 20, marginBottom: 10 }]}>Syllabus Covered</Text>
-        <Text style={styles.metricText}>• Quantitative Aptitude (Algebra, Geometry)</Text>
-        <Text style={styles.metricText}>• Logical Reasoning (Puzzles, Syllogism)</Text>
-        <Text style={styles.metricText}>• English Language (Comprehension, Grammar)</Text>
-        <Text style={styles.metricText}>• General Awareness (History, Constitution, Physics)</Text>
+        <Text style={styles.metricText}>{fullTest?.description || 'General Syllabus Details.'}</Text>
       </View>
       <View style={[styles.card, { marginTop: 15 }]}>
-        <Text style={styles.cardTitle}>Total Tests</Text>
-        <Text style={styles.scoreText}>140+</Text>
+        <Text style={styles.cardTitle}>Total Sections</Text>
+        <Text style={styles.scoreText}>{fullTest?.sections?.length || 0}</Text>
       </View>
     </ScrollView>
   );
 
   const TestsRoute = () => (
     <ScrollView style={styles.contentPadAlt}>
-      <Text style={[styles.sectionTitle, { marginTop: 10 }]}>Full Mock Tests</Text>
-      {SERIES_TESTS.filter(t => t.type === 'Full Mock').map(item => (
-        <TouchableOpacity key={item.id} style={styles.card} onPress={() => handleTestTap(item)}>
+      <Text style={[styles.sectionTitle, { marginTop: 10 }]}>Test Sections</Text>
+      {(!fullTest?.sections || fullTest.sections.length === 0) && (
+        <Text style={{ textAlign: 'center', color: '#9ca3af', marginTop: 20 }}>No sections defined.</Text>
+      )}
+      {fullTest?.sections?.map((item: any) => (
+        <View key={item.id} style={styles.card}>
           <View style={{ flexDirection: 'row', alignItems: 'center', flex: 1 }}>
-            <View style={[styles.iconBox, item.isLocked && styles.iconBoxLocked]}>
-              <Ionicons name={item.isLocked ? "lock-closed" : "play"} size={20} color={item.isLocked ? "#9ca3af" : "#f97316"} />
+            <View style={styles.iconBox}>
+              <Ionicons name="list" size={20} color="#f97316" />
             </View>
             <View style={{ flex: 1, marginLeft: 15 }}>
-              <Text style={[styles.cardTitle, item.isLocked && { color: '#9ca3af' }]}>{item.title}</Text>
+              <Text style={styles.cardTitle}>{item.name}</Text>
               <View style={styles.metricsRow}>
-                <Text style={styles.metricText}>{item.questions} Qs</Text>
-                <Text style={styles.metricText}>{item.mins} Mins</Text>
-              </View>
-            </View>
-            {item.isFree && <View style={styles.freeTag}><Text style={styles.freeTagText}>FREE</Text></View>}
-          </View>
-        </TouchableOpacity>
-      ))}
-
-      <Text style={[styles.sectionTitle, { marginTop: 20 }]}>Sectional Tests</Text>
-      {SERIES_TESTS.filter(t => t.type === 'Sectional').map(item => (
-        <TouchableOpacity key={item.id} style={styles.card} onPress={() => handleTestTap(item)}>
-          <View style={{ flexDirection: 'row', alignItems: 'center', flex: 1 }}>
-            <View style={[styles.iconBox, item.isLocked && styles.iconBoxLocked]}>
-              <Ionicons name={item.isLocked ? "lock-closed" : "play"} size={20} color={item.isLocked ? "#9ca3af" : "#f97316"} />
-            </View>
-            <View style={{ flex: 1, marginLeft: 15 }}>
-              <Text style={[styles.cardTitle, item.isLocked && { color: '#9ca3af' }]}>{item.title}</Text>
-              <View style={styles.metricsRow}>
-                <Text style={styles.metricText}>{item.questions} Qs</Text>
-                <Text style={styles.metricText}>{item.mins} Mins</Text>
+                <Text style={styles.metricText}>{item.marks_per_question} Marks/Q</Text>
               </View>
             </View>
           </View>
-        </TouchableOpacity>
+        </View>
       ))}
+      <TouchableOpacity style={[styles.button, { marginTop: 20, marginBottom: 40 }]} onPress={handleTestTap}>
+        <Text style={styles.buttonText}>Start Test</Text>
+      </TouchableOpacity>
     </ScrollView>
   );
 
@@ -687,6 +662,11 @@ export default function App() {
         <Stack.Screen name="TestDetail" component={TestDetailScreen} options={{ title: 'Overview' }} />
         <Stack.Screen name="CourseDetail" component={CourseDetailScreen} options={{ title: 'Course Details' }} />
         <Stack.Screen name="Category" component={CategoryScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="Onboarding" component={OnboardingScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="MockTest" component={MockTestScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="PostTestResults" component={PostTestResultsScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="QuizSession" component={QuizSessionScreen} options={{ headerShown: false }} />
         {/* Testbook Sub-Screens */}
         <Stack.Screen name="EditProfile" component={EditProfileScreen} options={{ title: 'Edit Profile' }} />
         <Stack.Screen name="SavedQuestions" component={SavedQuestionsScreen} options={{ title: 'Saved Questions' }} />

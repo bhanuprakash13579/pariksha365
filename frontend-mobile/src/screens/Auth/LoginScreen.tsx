@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Alert, Platform, KeyboardAvoidingView, SafeAreaView, ActivityIndicator } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Alert, Platform, KeyboardAvoidingView, SafeAreaView, ActivityIndicator, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import * as Google from 'expo-auth-session/providers/google';
 import * as AppleAuthentication from 'expo-apple-authentication';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { AuthAPI } from '../../services/api';
+import { AuthAPI, UserAPI } from '../../services/api';
 import { styles } from '../../styles/theme';
 
 const GOOGLE_IOS_CLIENT_ID = "592393648560-0csjsd0dvukv94qg05np14rj1v3o9gg2.apps.googleusercontent.com";
@@ -21,10 +21,38 @@ export default function LoginScreen({ navigation }: any) {
         androidClientId: GOOGLE_ANDROID_CLIENT_ID,
     });
 
-    React.useEffect(() => {
-        if (response?.type === 'success') {
+    const navigateAfterAuth = async () => {
+        try {
+            const res = await UserAPI.getMe();
+            if (!res.data.selected_exam_category_id) {
+                navigation.replace('Onboarding');
+            } else {
+                navigation.replace('MainTabs', { isGuest: false });
+            }
+        } catch {
             navigation.replace('MainTabs', { isGuest: false });
         }
+    };
+
+    React.useEffect(() => {
+        const handleGoogleLogin = async () => {
+            if (response?.type === 'success') {
+                const idToken = response.authentication?.idToken;
+                if (idToken) {
+                    setLoading(true);
+                    try {
+                        const loginRes = await AuthAPI.googleLogin(idToken);
+                        await AsyncStorage.setItem('token', loginRes.data.access_token);
+                        await navigateAfterAuth();
+                    } catch (err: any) {
+                        Alert.alert('Google Sign-In Failed', err.response?.data?.detail || 'Could not authenticate with Google.');
+                    } finally {
+                        setLoading(false);
+                    }
+                }
+            }
+        };
+        handleGoogleLogin();
     }, [response]);
 
     const handleAppleAuth = async () => {
@@ -49,7 +77,7 @@ export default function LoginScreen({ navigation }: any) {
         try {
             const res = await AuthAPI.login(email, password);
             await AsyncStorage.setItem('token', res.data.access_token);
-            navigation.replace('MainTabs', { isGuest: false });
+            await navigateAfterAuth();
         } catch (err: any) {
             Alert.alert('Login Failed', err.response?.data?.detail || 'Incorrect email or password.');
         } finally { setLoading(false); }
@@ -58,7 +86,8 @@ export default function LoginScreen({ navigation }: any) {
     return (
         <SafeAreaView style={styles.authContainer}>
             <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={styles.authInner}>
-                <View style={styles.authHeader}>
+                <View style={[styles.authHeader, { alignItems: 'center' }]}>
+                    <Image source={require('../../../assets/icon.png')} style={{ width: 80, height: 80, resizeMode: 'contain', marginBottom: 15 }} />
                     <Text style={styles.authTitle}>Welcome Back</Text>
                     <Text style={styles.authSubtitle}>Sign in to continue your preparation</Text>
                 </View>
@@ -86,6 +115,10 @@ export default function LoginScreen({ navigation }: any) {
                     <TouchableOpacity style={styles.socialButton} onPress={handleGoogleAuth}>
                         <Ionicons name="logo-google" size={24} color="#db4437" />
                         <Text style={styles.socialButtonText}>Sign in with Google</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={{ marginTop: 15, alignItems: 'center' }} onPress={() => navigation.navigate('ForgotPassword')}>
+                        <Text style={{ color: '#f97316', fontSize: 14, fontWeight: 'bold' }}>Forgot Password?</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={{ marginTop: 20, alignItems: 'center' }} onPress={() => navigation.navigate('Signup')}>

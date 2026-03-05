@@ -12,6 +12,7 @@ class Section(Base):
     name = Column(String, nullable=False)
     time_limit_minutes = Column(Integer, nullable=True) # Overall test test time could be used if null
     marks_per_question = Column(Float, default=1.0)
+    order_num = Column(Integer, default=0)
 
     test_series = relationship("TestSeries", back_populates="sections")
-    questions = relationship("Question", back_populates="section", cascade="all, delete-orphan")
+    questions = relationship("Question", back_populates="section", cascade="all, delete-orphan", order_by="Question.order_num")

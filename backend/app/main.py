@@ -3,14 +3,18 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.core.database import engine, Base
-from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router, category_router, analytics_router
+from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router, category_router, analytics_router, search_router, quiz_router
 import app.models
+
+import os
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Automatically drop and create database tables on startup (WIPES DATA!)
     async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.drop_all)
+        if os.getenv("WIPE_DB_ON_STARTUP") == "True":
+            print("WIPE_DB_ON_STARTUP flag is enabled. Dropping all tables...")
+            await conn.run_sync(Base.metadata.drop_all)
         await conn.run_sync(Base.metadata.create_all)
         
     from app.core.database import SessionLocal
@@ -23,12 +27,17 @@ async def lifespan(app: FastAPI):
         if not result.scalars().first():
             print("Seeding default Exam Categories...")
             defaults = [
-                {"name": "UPSC Civil Services", "icon": "ribbon-outline", "subs": ["UPSC CSE", "UPSC EPFO (APFC)", "UPSC CDS"]},
-                {"name": "State Govt. Exams", "icon": "business-outline", "subs": ["UPPSC", "BPSC", "MPSC", "APPSC", "TSPSC"]},
-                {"name": "SSC Exams", "icon": "hammer-outline", "subs": ["SSC CGL", "SSC CHSL", "SSC MTS", "SSC GD"]},
-                {"name": "Railways", "icon": "train-outline", "subs": ["RRB NTPC", "RRB Group D", "RRB ALP"]},
-                {"name": "Defence Exams", "icon": "shield-checkmark-outline", "subs": ["NDA", "AFCAT", "Airforce X & Y"]},
-                {"name": "Teaching Exams", "icon": "book-outline", "subs": ["CTET", "UPTET", "KVS", "Super TET"]}
+                {"name": "Bank", "icon": "library-outline", "subs": []},
+                {"name": "Judicial", "icon": "hammer-outline", "subs": []},
+                {"name": "ESIC", "icon": "medkit-outline", "subs": []},
+                {"name": "Railway", "icon": "train-outline", "subs": []},
+                {"name": "Defence", "icon": "shield-checkmark-outline", "subs": []},
+                {"name": "PSUs", "icon": "business-outline", "subs": []},
+                {"name": "UPSC", "icon": "ribbon-outline", "subs": []},
+                {"name": "SSC", "icon": "clipboard-outline", "subs": []},
+                {"name": "Police", "icon": "shield-half-outline", "subs": []},
+                {"name": "PSCs", "icon": "newspaper-outline", "subs": []},
+                {"name": "Post-Office", "icon": "mail-outline", "subs": []}
             ]
             for i, c in enumerate(defaults):
                 cat_db = Category(name=c["name"], icon_name=c["icon"], order=i)
@@ -55,6 +64,17 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from fastapi import Request
+from fastapi.responses import JSONResponse
+import traceback
+
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    return JSONResponse(
+        status_code=500,
+        content={"detail": "Internal Server Error", "traceback": traceback.format_exc()},
+    )
+
 app.include_router(auth_router.router, prefix=f"{settings.API_V1_STR}/auth", tags=["auth"])
 app.include_router(user_router.router, prefix=f"{settings.API_V1_STR}/users", tags=["users"])
 app.include_router(admin_router.router, prefix=f"{settings.API_V1_STR}/admin", tags=["admin"])
@@ -64,8 +84,19 @@ app.include_router(attempt_router.router, prefix=f"{settings.API_V1_STR}/attempt
 app.include_router(payment_router.router, prefix=f"{settings.API_V1_STR}/payments", tags=["payments"])
 app.include_router(category_router.router, prefix=f"{settings.API_V1_STR}/categories", tags=["categories"])
 app.include_router(analytics_router.router, prefix=f"{settings.API_V1_STR}/analytics", tags=["analytics"])
+app.include_router(search_router.router, prefix=f"{settings.API_V1_STR}/search", tags=["search"])
+app.include_router(quiz_router.router, prefix=f"{settings.API_V1_STR}/quiz", tags=["quiz"])
 
+from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
+import os
+
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
+
+# Mount the uploads directory to serve uploaded images (e.g. from the Scraper Hub)
+os.makedirs("uploads/images", exist_ok=True)
+app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
+
 
 @app.get("/health")
 async def health_check():

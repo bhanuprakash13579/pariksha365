@@ -11,11 +11,7 @@ class OptionCreate(OptionBase):
     pass
 
 class OptionResponse(OptionBase):
-    id: uuid.UUID
-    question_id: uuid.UUID
-
-    class Config:
-        from_attributes = True
+    pass
 
 class QuestionBase(BaseModel):
     question_text: str

@@ -2,7 +2,7 @@ from typing import Any
 from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.database import get_db
-from app.schemas.auth_schema import Token, LoginRequest, ForgotPasswordRequest, ResetPasswordRequest, MessageResponse
+from app.schemas.auth_schema import Token, LoginRequest, ForgotPasswordRequest, ResetPasswordRequest, MessageResponse, GoogleLoginRequest
 from app.schemas.user_schema import UserCreate, UserResponse
 from app.services import auth_service
 
@@ -28,6 +28,16 @@ async def login(
     OAuth2 compatible token login, get an access token for future requests.
     """
     return await auth_service.login_user(db, email=login_data.email, password=login_data.password)
+
+@router.post("/google", response_model=Token)
+async def google_login(
+    login_data: GoogleLoginRequest,
+    db: AsyncSession = Depends(get_db)
+) -> Any:
+    """
+    Login or create a user via Google ID Token.
+    """
+    return await auth_service.authenticate_google_user(db, token=login_data.token)
 
 @router.post("/forgot-password", response_model=MessageResponse)
 async def forgot_password(

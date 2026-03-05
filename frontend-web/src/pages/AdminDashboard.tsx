@@ -1,18 +1,40 @@
-import React, { useState, useEffect } from 'react';
-import { FileText, Activity, Plus, Folder, Link as LinkIcon } from 'lucide-react';
-import { api } from '../services/api';
+import { useState, useEffect } from 'react';
+import { FileText, Activity, FilePlus, Folder, Trash2, Edit, BarChart2, Download, HelpCircle } from 'lucide-react';
+import { api, UserAPI } from '../services/api';
+import { ScrapeReviewWorkspace } from './ScrapeReviewWorkspace';
+import { FileExplorerCourseManager } from './FileExplorerCourseManager';
+import { AdminAnalytics } from '../components/dashboard/AdminAnalytics';
+import { AdminQuizPoolManager } from '../components/dashboard/AdminQuizPoolManager';
+import { useNavigate } from 'react-router-dom';
 
 export const AdminDashboard = () => {
+    const navigate = useNavigate();
     const [courses, setCourses] = useState<any[]>([]);
     const [tests, setTests] = useState<any[]>([]);
+    const [drafts, setDrafts] = useState<any[]>([]);
+    const [dbCategories, setDbCategories] = useState<any[]>([]);
     const [activeTab, setActiveTab] = useState('courses');
+    const [draftToEdit, setDraftToEdit] = useState<any>(null);
 
-    // Forms state
-    const [newCategory, setNewCategory] = useState({ name: '', image_url: '' });
-    const [newCourse, setNewCourse] = useState({ title: '', description: '', price: 0, category: '' });
-    const [newFolder, setNewFolder] = useState({ course_id: '', title: '', is_free: false });
-    const [newLink, setNewLink] = useState({ folder_id: '', test_id: '' });
-    const [uploading, setUploading] = useState(false);
+    const [isAuthorized, setIsAuthorized] = useState(false);
+
+    useEffect(() => {
+        const checkAuth = async () => {
+            try {
+                const res = await UserAPI.getMe();
+                if (res.data.role?.name?.toLowerCase() === 'admin') {
+                    setIsAuthorized(true);
+                    fetchData();
+                } else {
+                    alert("Access Denied. Admin Privileges Required.");
+                    navigate('/dashboard');
+                }
+            } catch (e) {
+                navigate('/auth');
+            }
+        };
+        checkAuth();
+    }, [navigate]);
 
     const fetchData = async () => {
         try {
@@ -20,77 +42,23 @@ export const AdminDashboard = () => {
             setCourses(courseRes.data);
             const testRes = await api.get('/tests');
             setTests(testRes.data);
+            const draftRes = await api.get('/tests?is_published=false');
+            setDrafts(draftRes.data);
+            const catRes = await api.get('/categories');
+            setDbCategories(catRes.data);
         } catch (e) {
             console.error("Failed to fetch data", e);
         }
     };
 
-    useEffect(() => {
-        fetchData();
-    }, []);
 
-    const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0];
-        if (!file) return;
-
-        setUploading(true);
-        const reader = new FileReader();
-        reader.onload = async (event) => {
-            try {
-                const jsonData = JSON.parse(event.target?.result as string);
-                await api.post('/tests/bulk', jsonData);
-                alert('Test Series successfully created from JSON!');
-                fetchData();
-            } catch (err) {
-                console.error(err);
-                alert('Failed to upload JSON. Ensure schema matches TestSeriesBulkCreate.');
-            } finally {
-                setUploading(false);
-                if (e.target) e.target.value = ''; // Reset input
-            }
-        };
-        reader.readAsText(file);
-    };
-
-    const handleCreateCourse = async (e: React.FormEvent) => {
-        e.preventDefault();
-        try {
-            await api.post('/courses', { ...newCourse, is_published: true });
-            setNewCourse({ title: '', description: '', price: 0, category: '' });
-            fetchData();
-            alert('Course created successfully!');
-        } catch (err) { alert('Failed to create course'); }
-    };
-
-    const handleCreateCategory = async (e: React.FormEvent) => {
-        e.preventDefault();
-        try {
-            await api.post('/categories', newCategory);
-            setNewCategory({ name: '', image_url: '' });
-            fetchData();
-            alert('Category created successfully!');
-        } catch (err) { alert('Failed to create category'); }
-    };
-
-    const handleCreateFolder = async (e: React.FormEvent) => {
-        e.preventDefault();
-        try {
-            await api.post(`/courses/${newFolder.course_id}/folders`, { title: newFolder.title, is_free: newFolder.is_free });
-            setNewFolder({ course_id: '', title: '', is_free: false });
-            fetchData();
-            alert('Folder created successfully!');
-        } catch (err) { alert('Failed to create folder'); }
-    };
-
-    const handleLinkTest = async (e: React.FormEvent) => {
-        e.preventDefault();
-        try {
-            await api.post(`/courses/folders/${newLink.folder_id}/tests`, { test_id: newLink.test_id });
-            setNewLink({ folder_id: '', test_id: '' });
-            fetchData();
-            alert('Test linked successfully!');
-        } catch (err) { alert('Failed to link test'); }
-    };
+    if (!isAuthorized) {
+        return (
+            <div className="flex bg-gray-100 h-screen items-center justify-center">
+                <p className="text-gray-500 font-medium">Verifying Administrator Privileges...</p>
+            </div>
+        );
+    }
 
     return (
         <div className="flex h-screen bg-gray-100 dark:bg-gray-900">
@@ -103,14 +71,26 @@ export const AdminDashboard = () => {
                     <button onClick={() => setActiveTab('overview')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'overview' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
                         <Activity className="w-5 h-5 mr-3" /> Dashboard Overview
                     </button>
+                    <button onClick={() => setActiveTab('analytics')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'analytics' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
+                        <BarChart2 className="w-5 h-5 mr-3" /> Intelligence Hub
+                    </button>
                     <button onClick={() => setActiveTab('courses')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'courses' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
                         <FileText className="w-5 h-5 mr-3" /> Course Manager
+                    </button>
+                    <button onClick={() => { setActiveTab('scraper'); setDraftToEdit(null); }} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'scraper' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
+                        <FilePlus className="w-5 h-5 mr-3" /> PDF Scraper Hub
+                    </button>
+                    <button onClick={() => setActiveTab('drafts')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'drafts' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
+                        <Folder className="w-5 h-5 mr-3" /> Drafts Vault
+                    </button>
+                    <button onClick={() => setActiveTab('quizpool')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'quizpool' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
+                        <HelpCircle className="w-5 h-5 mr-3" /> Quiz Pool
                     </button>
                 </nav>
             </aside>
 
             {/* Main Content */}
-            <main className="flex-1 p-8 overflow-y-auto">
+            <main className="flex-1 p-8 overflow-y-auto w-full">
                 {activeTab === 'overview' && (
                     <>
                         <h1 className="text-3xl font-semibold text-gray-800 dark:text-white mb-6">Overview</h1>
@@ -120,115 +100,132 @@ export const AdminDashboard = () => {
                                 <p className="text-3xl font-bold text-gray-800 dark:text-white mt-2">{courses.length}</p>
                             </div>
                             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
-                                <h3 className="text-gray-500 text-sm font-medium">Standalone Tests</h3>
+                                <h3 className="text-gray-500 text-sm font-medium">Published Tests</h3>
                                 <p className="text-3xl font-bold text-gray-800 dark:text-white mt-2">{tests.length}</p>
                             </div>
                         </div>
+                        <p className="text-sm text-gray-400">👉 Head to <button className="text-orange-500 font-semibold" onClick={() => setActiveTab('analytics')}>Intelligence Hub</button> for deep analytics.</p>
                     </>
                 )}
 
-                {activeTab === 'courses' && (
-                    <div className="space-y-8">
-                        <div className="flex justify-between items-center">
-                            <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">Course & Content Manager</h1>
+                {activeTab === 'analytics' && <AdminAnalytics />}
+
+                {activeTab === 'scraper' && (
+                    <ScrapeReviewWorkspace
+                        draftToEdit={draftToEdit}
+                        onClearDraft={() => setDraftToEdit(null)}
+                        refreshDrafts={fetchData}
+                    />
+                )}
+
+                {activeTab === 'drafts' && (
+                    <div className="space-y-6">
+                        <div className="flex justify-between items-center bg-yellow-50 dark:bg-gray-800 p-6 rounded-lg border border-yellow-200 dark:border-gray-700">
+                            <div>
+                                <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">Drafts Vault</h1>
+                                <p className="text-gray-600 dark:text-gray-400 mt-1">Manage mock tests that have been saved but not yet published to the main Course Manager.</p>
+                            </div>
+                            <div className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-bold">
+                                {drafts.length} Drafts
+                            </div>
                         </div>
 
-                        {/* Create Category Form */}
-                        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
-                            <h2 className="text-xl font-bold mb-4 flex items-center"><Plus className="mr-2" /> Create New Exam Category</h2>
-                            <form onSubmit={handleCreateCategory} className="grid grid-cols-2 gap-4">
-                                <input type="text" placeholder="Category Name (e.g. UPSC)" className="border p-2 rounded" value={newCategory.name} onChange={e => setNewCategory({ ...newCategory, name: e.target.value })} required />
-                                <input type="text" placeholder="Custom Image URL (Optional)" className="border p-2 rounded" value={newCategory.image_url} onChange={e => setNewCategory({ ...newCategory, image_url: e.target.value })} />
-                                <button type="submit" className="col-span-2 bg-purple-600 text-white py-2 rounded font-bold hover:bg-purple-700">Create Category</button>
-                            </form>
-                        </div>
-
-                        {/* Upload JSON Test Series */}
-                        <div className="bg-orange-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-orange-200 dark:border-gray-700">
-                            <h2 className="text-xl font-bold mb-4 text-orange-800 dark:text-orange-400">Bulk Upload JSON Test Series</h2>
-                            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                                Upload a structured `.json` file containing the Test Series details, Sections, Questions, and Options to instantiate an entire exam in one click.
-                            </p>
-                            <label className="cursor-pointer bg-white border border-gray-300 rounded p-2 px-4 shadow-sm hover:bg-gray-50 flex items-center inline-block">
-                                {uploading ? 'Parsing and Uploading...' : 'Select JSON File'}
-                                <input type="file" accept=".json" className="hidden" onChange={handleFileUpload} disabled={uploading} />
-                            </label>
-                        </div>
-
-                        {/* Create Course Form */}
-                        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
-                            <h2 className="text-xl font-bold mb-4 flex items-center"><Plus className="mr-2" /> Create New Course (Pack)</h2>
-                            <form onSubmit={handleCreateCourse} className="grid grid-cols-2 gap-4">
-                                <input type="text" placeholder="Course Title (e.g. SSC CGL Master Pack)" className="border p-2 rounded" value={newCourse.title} onChange={e => setNewCourse({ ...newCourse, title: e.target.value })} required />
-                                <input type="text" placeholder="Category (e.g. SSC)" className="border p-2 rounded" value={newCourse.category} onChange={e => setNewCourse({ ...newCourse, category: e.target.value })} />
-                                <input type="number" placeholder="Price (₹)" className="border p-2 rounded" value={newCourse.price} onChange={e => setNewCourse({ ...newCourse, price: Number(e.target.value) })} required />
-                                <input type="text" placeholder="Short Description" className="border p-2 rounded" value={newCourse.description} onChange={e => setNewCourse({ ...newCourse, description: e.target.value })} />
-                                <button type="submit" className="col-span-2 bg-orange-600 text-white py-2 rounded font-bold hover:bg-orange-700">Create Course</button>
-                            </form>
-                        </div>
-
-                        {/* Create Folder Form */}
-                        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
-                            <h2 className="text-xl font-bold mb-4 flex items-center"><Folder className="mr-2" /> Add Segment/Folder to Course</h2>
-                            <form onSubmit={handleCreateFolder} className="grid grid-cols-2 gap-4">
-                                <select className="border p-2 rounded" value={newFolder.course_id} onChange={e => setNewFolder({ ...newFolder, course_id: e.target.value })} required>
-                                    <option value="">Select Target Course</option>
-                                    {courses.map(c => <option key={c.id} value={c.id}>{c.title}</option>)}
-                                </select>
-                                <input type="text" placeholder="Folder Name (e.g. Previous Year Papers)" className="border p-2 rounded" value={newFolder.title} onChange={e => setNewFolder({ ...newFolder, title: e.target.value })} required />
-                                <label className="flex items-center space-x-2">
-                                    <input type="checkbox" checked={newFolder.is_free} onChange={e => setNewFolder({ ...newFolder, is_free: e.target.checked })} />
-                                    <span>Make all tests in this folder completely FREE</span>
-                                </label>
-                                <button type="submit" className="col-span-2 bg-blue-600 text-white py-2 rounded font-bold hover:bg-blue-700">Create Segment Folder</button>
-                            </form>
-                        </div>
-
-                        {/* Map Test to Folder Form */}
-                        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
-                            <h2 className="text-xl font-bold mb-4 flex items-center"><LinkIcon className="mr-2" /> Map Individual Mock Test into a Folder</h2>
-                            <form onSubmit={handleLinkTest} className="grid grid-cols-2 gap-4">
-                                <select className="border p-2 rounded" value={newLink.test_id} onChange={e => setNewLink({ ...newLink, test_id: e.target.value })} required>
-                                    <option value="">Select Existing Mock Test</option>
-                                    {tests.map(t => <option key={t.id} value={t.id}>{t.title} ({t.category})</option>)}
-                                </select>
-                                <select className="border p-2 rounded" value={newLink.folder_id} onChange={e => setNewLink({ ...newLink, folder_id: e.target.value })} required>
-                                    <option value="">Select Target Folder</option>
-                                    {courses.flatMap(c => (c.folders || []).map((f: any) => (
-                                        <option key={f.id} value={f.id}>{c.title} - {f.title}</option>
-                                    )))}
-                                </select>
-                                <button type="submit" className="col-span-2 bg-green-600 text-white py-2 rounded font-bold hover:bg-green-700">Link Test to Folder</button>
-                            </form>
-                        </div>
-
-                        {/* Existing Courses List */}
-                        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
-                            <h2 className="text-xl font-bold mb-4">Current Course Hierarchy</h2>
-                            {courses.map(course => (
-                                <div key={course.id} className="mb-4 p-4 border rounded bg-gray-50">
-                                    <h3 className="font-bold text-lg text-orange-600">{course.title} <span className="text-sm text-gray-500 font-normal ml-2">₹{course.price}</span></h3>
-                                    <div className="mt-2 ml-4">
-                                        {(course.folders || []).length === 0 ? <p className="text-sm text-gray-400">No folders yet</p> : null}
-                                        {course.folders?.map((folder: any) => (
-                                            <div key={folder.id} className="mb-2 p-2 border-l-4 border-blue-400 bg-white shadow-sm">
-                                                <h4 className="font-semibold text-gray-700">{folder.title} {folder.is_free && <span className="text-green-500 text-xs ml-2">FREE</span>}</h4>
-                                                <ul className="ml-4 list-disc list-inside text-sm text-gray-500 mt-1">
-                                                    {(folder.tests || []).map((mapped: any) => {
-                                                        const targetTest = tests.find(t => t.id === mapped.test_id);
-                                                        return <li key={mapped.id}>{targetTest?.title || 'Unknown Test'}</li>;
-                                                    })}
-                                                </ul>
-                                            </div>
-                                        ))}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {drafts.length === 0 ? (
+                                <div className="p-8 text-center bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 md:col-span-2 lg:col-span-3">
+                                    <p className="text-gray-400">No drafts currently saved. Go to the <span className="text-orange-500 font-semibold cursor-pointer" onClick={() => setActiveTab('scraper')}>Scraper Hub</span> to create one!</p>
+                                </div>
+                            ) : drafts.map(draft => (
+                                <div key={draft.id} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border-t-4 border-yellow-400 flex flex-col justify-between">
+                                    <div>
+                                        <h3 className="font-bold text-lg text-gray-800 dark:text-white mb-1 line-clamp-2" title={draft.title}>{draft.title}</h3>
+                                        <span className="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full mb-4 font-medium truncate max-w-full">
+                                            {draft.category}
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center space-x-3 mt-4 pt-4 border-t border-gray-50 dark:border-gray-700">
+                                        <button onClick={async () => {
+                                            if (confirm(`Are you sure you want to publish "${draft.title}"?\nIt will become available to link in courses immediately.`)) {
+                                                try {
+                                                    await api.patch(`/tests/${draft.id}/publish`);
+                                                    fetchData();
+                                                    alert("Draft successully published!");
+                                                } catch (e) {
+                                                    alert("Failed to publish draft.");
+                                                }
+                                            }
+                                        }} className="flex-1 bg-green-500 hover:bg-green-600 text-white flex justify-center items-center py-2.5 rounded text-sm font-semibold transition-colors">
+                                            Publish Now
+                                        </button>
+                                        <button onClick={async () => {
+                                            try {
+                                                const res = await api.get(`/tests/${draft.id}`);
+                                                setDraftToEdit(res.data);
+                                                setActiveTab('scraper');
+                                            } catch (e) {
+                                                alert("Failed to fetch full draft details.");
+                                            }
+                                        }} className="p-2.5 bg-blue-50 hover:bg-blue-100 text-blue-500 rounded transition-colors" title="Edit Draft">
+                                            <Edit className="w-5 h-5" />
+                                        </button>
+                                        <button onClick={async () => {
+                                            if (confirm(`Permanently delete draft "${draft.title}"?\nThis cannot be undone.`)) {
+                                                try {
+                                                    await api.delete(`/tests/${draft.id}`);
+                                                    fetchData();
+                                                } catch (e) {
+                                                    alert("Failed to delete draft.");
+                                                }
+                                            }
+                                        }} className="p-2.5 bg-red-50 hover:bg-red-100 text-red-500 rounded transition-colors" title="Delete Draft">
+                                            <Trash2 className="w-5 h-5" />
+                                        </button>
+                                        <button onClick={async () => {
+                                            try {
+                                                const res = await api.get(`/tests/${draft.id}`);
+                                                const exportData = res.data.sections && res.data.sections.length > 0 ? res.data.sections : [res.data];
+                                                const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportData, null, 2));
+                                                const a = document.createElement('a');
+                                                a.href = dataStr;
+                                                a.download = `${draft.title.replace(/\s+/g, '_')}_export.json`;
+                                                document.body.appendChild(a);
+                                                a.click();
+                                                a.remove();
+                                            } catch (e) {
+                                                alert("Failed to download test.");
+                                            }
+                                        }} className="p-2.5 bg-purple-50 hover:bg-purple-100 text-purple-600 rounded transition-colors" title="Download JSON">
+                                            <Download className="w-5 h-5" />
+                                        </button>
                                     </div>
                                 </div>
                             ))}
                         </div>
-
                     </div>
                 )}
+
+                {activeTab === 'courses' && (() => {
+                    // --- File Explorer State ---
+                    // breadcrumb: [{label, id, level}]
+                    // level 0 = Categories, 1 = SubCategories, 2 = Courses, 3 = Folders, 4 = Tests inside folder
+
+                    // We use a simple approach: store navigation in component-level state
+                    // Since hooks can't be conditional, we manage explorer state via the existing state variables
+                    // explorerPath is stored as JSON string in a state we'll add
+                    return <FileExplorerCourseManager
+                        dbCategories={dbCategories}
+                        courses={courses}
+                        tests={tests}
+                        api={api}
+                        fetchData={fetchData}
+                        setDraftToEdit={setDraftToEdit}
+                        setActiveTab={setActiveTab}
+                    />;
+                })()}
+
+                {activeTab === 'quizpool' && <AdminQuizPoolManager />}
             </main>
         </div>
     );
 };
+

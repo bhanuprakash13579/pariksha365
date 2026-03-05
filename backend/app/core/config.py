@@ -25,6 +25,30 @@ class Settings(BaseSettings):
     STRIPE_API_KEY: str = ""
     STRIPE_WEBHOOK_SECRET: str = ""
     
+    # AI MODELS / THIRD PARTY
+    GEMINI_API_KEY: str = ""
+    OPENAI_API_KEY: str = ""
+    CLOUDINARY_URL: str = ""
+    
+    # Cloudflare R2 Storage Config
+    R2_ENDPOINT_URL: str = ""
+    R2_ACCESS_KEY_ID: str = ""
+    R2_SECRET_ACCESS_KEY: str = ""
+    R2_BUCKET_NAME: str = "pariksha365-tests"
+    R2_PUBLIC_DOMAIN: str = ""
+    
+    # FRONTEND URL (for payment redirects etc.)
+    FRONTEND_URL: str = "http://localhost:3000"
+    
+    # GOOGLE OAUTH CLIENT IDS (from frontend)
+    GOOGLE_CLIENT_IDS: list[str] = [
+        "592393648560-0csjsd0dvukv94qg05np14rj1v3o9gg2.apps.googleusercontent.com", # iOS
+        "592393648560-70fdb8qfubom1sllvmb29ststk1h1k0v.apps.googleusercontent.com", # Web (LoginScreen)
+        "592393648560-o4ou87jvmv6tj3uura8ls27td06pv0o5.apps.googleusercontent.com", # Web (App.tsx)
+        "592393648560-tk26aam18hnsd38dskfkt64td6l23ebv.apps.googleusercontent.com", # Android (LoginScreen)
+        "592393648560-rpddhav13tiikcpgki71kvlegmi3s91c.apps.googleusercontent.com", # Android (App.tsx)
+    ]
+    
     class Config:
         env_file = ".env"
 

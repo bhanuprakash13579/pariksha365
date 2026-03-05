@@ -4,7 +4,6 @@ from app.models.user import User
 from app.models.test_series import TestSeries
 from app.models.section import Section
 from app.models.question import Question
-from app.models.option import Option
 from app.models.attempt import Attempt
 from app.models.user_answer import UserAnswer
 from app.models.result import Result
@@ -16,6 +15,8 @@ from app.models.course_folder import CourseFolder
 from app.models.folder_test import FolderTest
 from app.models.category import Category
 from app.models.subcategory import SubCategory
+from app.models.quiz_pool import QuizQuestion, QuizAttempt, UserWeakTopic, UserStreak, UserTopicMastery
+from app.models.taxonomy import SubjectTaxonomy
 
 # Expose Base and Models for Alembic metadata
 __all__ = [
@@ -25,7 +26,6 @@ __all__ = [
     "TestSeries",
     "Section",
     "Question",
-    "Option",
     "Attempt",
     "UserAnswer",
     "Result",
@@ -36,5 +36,11 @@ __all__ = [
     "CourseFolder",
     "FolderTest",
     "Category",
-    "SubCategory"
+    "SubCategory",
+    "QuizQuestion",
+    "QuizAttempt",
+    "UserWeakTopic",
+    "UserStreak",
+    "UserTopicMastery",
+    "SubjectTaxonomy",
 ]

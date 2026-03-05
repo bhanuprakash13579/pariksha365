@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, TouchableOpacity, Modal } from 'react-native';
+import { View, Text, TouchableOpacity, Modal, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { styles, COLORS } from '../styles/theme';
 import { UserAPI } from '../services/api';
@@ -27,10 +27,14 @@ export default function ProfileDrawer({ visible, onClose, isGuest }: any) {
             <View style={styles.drawerOverlay}>
                 <View style={styles.drawerContent}>
                     <View style={styles.drawerProfileSection}>
-                        <View style={{ width: 60, height: 60, borderRadius: 16, backgroundColor: COLORS.white, alignItems: 'center', justifyContent: 'center' }}>
-                            <Text style={{ fontSize: 24, fontWeight: 'bold', color: COLORS.drawerBg }}>
-                                {isGuest ? 'G' : (user?.name || 'S').charAt(0).toUpperCase()}
-                            </Text>
+                        <View style={{ width: 60, height: 60, borderRadius: 30, backgroundColor: COLORS.white, alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                            {(user && user.profile_picture) ? (
+                                <Image source={{ uri: user.profile_picture }} style={{ width: 60, height: 60, resizeMode: 'cover' }} />
+                            ) : (
+                                <Text style={{ fontSize: 24, fontWeight: 'bold', color: COLORS.drawerBg }}>
+                                    {isGuest ? 'G' : (user?.name || 'S').charAt(0).toUpperCase()}
+                                </Text>
+                            )}
                         </View>
                         <Text style={styles.drawerName}>{isGuest ? 'Guest User' : (user?.name || 'Student')}</Text>
                         <Text style={styles.drawerPhone}>{isGuest ? 'Login to save progress' : (user?.email || user?.phone || '')}</Text>

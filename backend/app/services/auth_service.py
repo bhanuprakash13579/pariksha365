@@ -8,6 +8,39 @@ from app.core.security import (
     create_refresh_token, create_password_reset_token, verify_password_reset_token
 )
 from app.schemas.auth_schema import Token
+from app.services import oauth_service
+import secrets
+
+async def authenticate_google_user(db: AsyncSession, token: str) -> Token:
+    idinfo = oauth_service.verify_google_token(token)
+    email = idinfo.get("email")
+    name = idinfo.get("name")
+    
+    if not email:
+        raise HTTPException(status_code=400, detail="Google token missing email")
+        
+    stmt = select(User).where(User.email == email)
+    result = await db.execute(stmt)
+    user = result.scalars().first()
+    
+    if not user:
+        # Create a new user with a random password
+        random_password = secrets.token_urlsafe(32)
+        db_user = User(
+            email=email,
+            password_hash=get_password_hash(random_password),
+            name=name or email.split("@")[0],
+        )
+        db.add(db_user)
+        await db.commit()
+        await db.refresh(db_user)
+        user = db_user
+    elif not user.is_active:
+        raise HTTPException(status_code=400, detail="Inactive user")
+
+    access_token = create_access_token(subject=user.id)
+    refresh_token = create_refresh_token(subject=user.id)
+    return Token(access_token=access_token, refresh_token=refresh_token)
 
 async def authenticate_user(db: AsyncSession, email: str, password: str) -> User:
     stmt = select(User).where(User.email == email)

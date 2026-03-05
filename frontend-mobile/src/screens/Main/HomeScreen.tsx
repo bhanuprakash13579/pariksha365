@@ -33,7 +33,47 @@ export default function HomeScreen({ navigation, route }: any) {
             <GlobalHeader onOpenDrawer={() => setDrawerVisible(true)} />
 
             <ScrollView contentContainerStyle={styles.contentPadAlt}>
-                <Text style={[styles.sectionTitle, { fontSize: 16, color: COLORS.textSub, marginTop: 10 }]}>| Explore All Categories</Text>
+                {/* Mobile Daily Quiz Hero Banner */}
+                <TouchableOpacity
+                    activeOpacity={0.9}
+                    onPress={() => navigation.navigate('DailyQuiz')}
+                    style={{ marginBottom: 20, marginTop: 10, shadowColor: '#f97316', shadowOpacity: 0.3, shadowRadius: 10, shadowOffset: { width: 0, height: 4 }, elevation: 8 }}
+                >
+                    <LinearGradient
+                        colors={['#f97316', '#ec4899']}
+                        start={{ x: 0, y: 0 }}
+                        end={{ x: 1, y: 1 }}
+                        style={{ borderRadius: 20, padding: 20, overflow: 'hidden', flexDirection: 'row', alignItems: 'center' }}
+                    >
+                        {/* Decorative background blobs */}
+                        <View style={{ position: 'absolute', top: -30, right: -20, width: 120, height: 120, borderRadius: 60, backgroundColor: 'rgba(255,255,255,0.15)' }} />
+                        <View style={{ position: 'absolute', bottom: -20, right: 40, width: 80, height: 80, borderRadius: 40, backgroundColor: 'rgba(255,255,255,0.1)' }} />
+                        <View style={{ position: 'absolute', top: 20, left: -20, width: 60, height: 60, borderRadius: 30, backgroundColor: 'rgba(255,255,255,0.1)' }} />
+
+                        {/* Icon */}
+                        <View style={{ width: 50, height: 50, borderRadius: 15, backgroundColor: 'rgba(255,255,255,0.25)', alignItems: 'center', justifyContent: 'center', marginRight: 15 }}>
+                            <Ionicons name="flash" size={28} color="white" />
+                        </View>
+
+                        {/* Content */}
+                        <View style={{ flex: 1 }}>
+                            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 4 }}>
+                                <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: '#4ade80', marginRight: 6 }} />
+                                <Text style={{ color: 'rgba(255,255,255,0.9)', fontSize: 10, fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: 1 }}>Live Challenge</Text>
+                            </View>
+                            <Text style={{ color: 'white', fontSize: 20, fontWeight: '900', marginBottom: 2, letterSpacing: -0.5 }}>Play Daily Quiz</Text>
+                            <Text style={{ color: 'rgba(255,255,255,0.85)', fontSize: 12, fontWeight: '500' }}>Maintain your prep streak 🔥</Text>
+                        </View>
+
+                        {/* Arrow */}
+                        <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center', shadowColor: '#000', shadowOpacity: 0.1, shadowRadius: 3, elevation: 2 }}>
+                            <Ionicons name="arrow-forward" size={18} color="#f97316" />
+                        </View>
+
+                    </LinearGradient>
+                </TouchableOpacity>
+
+                <Text style={[styles.sectionTitle, { fontSize: 16, color: COLORS.textSub }]}>| Explore All Categories</Text>
 
                 {loading ? <ActivityIndicator size="large" color={COLORS.primary} style={{ marginTop: 20 }} /> : null}
 
