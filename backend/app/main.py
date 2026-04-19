@@ -56,6 +56,65 @@ async def lifespan(app: FastAPI):
                     db.add(SubCategory(category_id=cat_db.id, name=sub, order=j, is_enabled=True))
             await db.commit()
 
+        # ADMIN BOOTSTRAP / PASSWORD RESET
+        # Runs when env var ADMIN_BOOTSTRAP_PASSWORD is set to a non-empty
+        # value. Creates the admin user if missing, OR resets its password +
+        # reactivates it if the user already exists with a drifted password.
+        # RECOVERY PROCEDURE when locked out:
+        #   1. Set ADMIN_BOOTSTRAP_PASSWORD and optionally ADMIN_BOOTSTRAP_EMAIL
+        #      in Railway env vars.
+        #   2. Redeploy. On startup, the admin's password is reset.
+        #   3. Log in with the new credentials.
+        #   4. UNSET the env var (or set to empty string) and redeploy again
+        #      so the reset doesn't re-run every boot.
+        # Safe because: (a) env is private; (b) idempotent — same password on
+        # every boot is a no-op; (c) explicit opt-in (no env → no reset).
+        admin_boot_pw = os.getenv("ADMIN_BOOTSTRAP_PASSWORD", "").strip()
+        if admin_boot_pw:
+            try:
+                from app.models.role import Role
+                from app.models.user import User
+                from app.core.security import get_password_hash
+                admin_email = (
+                    os.getenv("ADMIN_BOOTSTRAP_EMAIL", "").strip()
+                    or "admin@pariksha365.in"
+                )
+                admin_name = os.getenv("ADMIN_BOOTSTRAP_NAME", "Admin").strip() or "Admin"
+
+                role_res = await db.execute(select(Role).where(Role.name == "Admin"))
+                admin_role = role_res.scalars().first()
+                if admin_role is None:
+                    admin_role = Role(name="Admin")
+                    db.add(admin_role)
+                    await db.commit()
+                    await db.refresh(admin_role)
+                    print(f"ADMIN BOOTSTRAP: created 'Admin' role id={admin_role.id}")
+
+                user_res = await db.execute(select(User).where(User.email == admin_email))
+                admin_user = user_res.scalars().first()
+                if admin_user is None:
+                    admin_user = User(
+                        name=admin_name,
+                        email=admin_email,
+                        password_hash=get_password_hash(admin_boot_pw),
+                        role_id=admin_role.id,
+                        is_active=True,
+                    )
+                    db.add(admin_user)
+                    await db.commit()
+                    print(f"ADMIN BOOTSTRAP: created admin user {admin_email}")
+                else:
+                    admin_user.role_id = admin_role.id
+                    admin_user.password_hash = get_password_hash(admin_boot_pw)
+                    admin_user.is_active = True
+                    await db.commit()
+                    print(
+                        f"ADMIN BOOTSTRAP: reset password + reactivated {admin_email} "
+                        "(remove ADMIN_BOOTSTRAP_PASSWORD from env once login works)"
+                    )
+            except Exception as e:
+                print(f"ADMIN BOOTSTRAP failed: {e!r}")
+
         # SELF-HEAL: If EVERY category in the DB is currently is_enabled=False,
         # that almost certainly means a migration or an accidental toggle hid
         # them all, which cripples the admin UI. Flip them all back to True.

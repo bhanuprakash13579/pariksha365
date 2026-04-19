@@ -45,19 +45,22 @@ async def main():
             await db.commit()
             print("✅ Created 'Student' role")
 
-        # 3. Create admin user
+        # 3. Create-or-reset admin user.
+        # IMPORTANT: this script is intentionally IDEMPOTENT and password-
+        # resetting — if the admin user exists but the password drifted,
+        # re-running restores login. Previously this path only updated
+        # role_id on existing rows, leaving stale/unknown passwords
+        # unrecoverable without DB access.
         stmt3 = select(User).where(User.email == ADMIN_EMAIL)
         result3 = await db.execute(stmt3)
         existing = result3.scalars().first()
-        
+
         if existing:
-            # Update role to admin if not already
-            if existing.role_id != admin_role.id:
-                existing.role_id = admin_role.id
-                await db.commit()
-                print(f"✅ Updated existing user '{ADMIN_EMAIL}' to Admin role")
-            else:
-                print(f"ℹ️  Admin user '{ADMIN_EMAIL}' already exists with Admin role")
+            existing.role_id = admin_role.id
+            existing.password_hash = get_password_hash(ADMIN_PASSWORD)
+            existing.is_active = True
+            await db.commit()
+            print(f"✅ Reset admin user '{ADMIN_EMAIL}' — role + password + is_active refreshed")
         else:
             admin_user = User(
                 name=ADMIN_NAME,
