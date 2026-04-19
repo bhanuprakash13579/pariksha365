@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Motion in 1D & 2D",
+  "topic_code": "PHY_MOTION",
+  "description": null,
+  "questions": [
+    {
+      "stem": "A car starts from rest and accelerates uniformly at 2 m/s² for 10 seconds. What is the distance covered by the car in this time?",
+      "options": [
+        {"option_text": "50 m", "is_correct": false},
+        {"option_text": "100 m", "is_correct": true},
+        {"option_text": "150 m", "is_correct": false},
+        {"option_text": "200 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Use s = ut + ½at². Given: u = 0 (rest), a = 2 m/s², t = 10 s. So s = 0·10 + ½·(2)·(10)² = ½·2·100 = 100 m. Distractor 50 m comes from forgetting the 'half' factor; 200 m from omitting the ½ and doubling; 150 m from adding an extra velocity term.",
+      "subject": "Physics",
+      "topic": "Motion in 1D & 2D",
+      "topic_code": "PHY_MOTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-in-chat-2026-04-19-phy-motion-01",
+      "generated_at": "2026-04-19T17:25:00+00:00",
+      "id": "sgk_PHY_MOTION_00002"
+    },
+    {
+      "stem": "A body thrown vertically upward with an initial velocity of 20 m/s reaches a maximum height of (g = 10 m/s²):",
+      "options": [
+        {"option_text": "10 m", "is_correct": false},
+        {"option_text": "20 m", "is_correct": true},
+        {"option_text": "40 m", "is_correct": false},
+        {"option_text": "100 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "At max height, final velocity v = 0. Using v² = u² − 2gh: 0 = (20)² − 2·10·h → h = 400/20 = 20 m. A classic shortcut: h_max = u²/(2g) = 400/20 = 20 m. 40 m comes from forgetting the factor of 2; 10 m from dividing by 40 instead of 20; 100 m from using the wrong formula.",
+      "subject": "Physics",
+      "topic": "Motion in 1D & 2D",
+      "topic_code": "PHY_MOTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-in-chat-2026-04-19-phy-motion-01",
+      "generated_at": "2026-04-19T17:25:00+00:00",
+      "id": "sgk_PHY_MOTION_00003"
+    },
+    {
+      "stem": "A train moving at 72 km/h comes to rest in 20 seconds. What is its deceleration?",
+      "options": [
+        {"option_text": "0.5 m/s²", "is_correct": false},
+        {"option_text": "1 m/s²", "is_correct": true},
+        {"option_text": "2 m/s²", "is_correct": false},
+        {"option_text": "3.6 m/s²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Convert 72 km/h to m/s: 72 × (5/18) = 20 m/s. Use v = u + at: 0 = 20 + a·20 → a = −1 m/s². So the deceleration is 1 m/s². Key trap: if you forgot to convert km/h to m/s, you'd get 72/20 = 3.6 (distractor D). 0.5 m/s² arises from a sign/arithmetic error.",
+      "subject": "Physics",
+      "topic": "Motion in 1D & 2D",
+      "topic_code": "PHY_MOTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-in-chat-2026-04-19-phy-motion-01",
+      "generated_at": "2026-04-19T17:25:00+00:00",
+      "id": "sgk_PHY_MOTION_00004"
+    },
+    {
+      "stem": "A body falls freely from the top of a tower. If it covers 45 m in the last second of its fall, the height of the tower is (g = 10 m/s²):",
+      "options": [
+        {"option_text": "80 m", "is_correct": false},
+        {"option_text": "125 m", "is_correct": true},
+        {"option_text": "180 m", "is_correct": false},
+        {"option_text": "245 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Distance covered in the n-th second (from rest): s_n = u + (a/2)(2n−1). With u = 0, a = g = 10: s_n = 5(2n−1). Given s_n = 45: 5(2n−1) = 45 → 2n−1 = 9 → n = 5 s (total fall time). Total height: H = ½·g·t² = ½·10·25 = 125 m. 180 m results if you wrongly add an extra 5; 80 m comes from miscounting seconds; 245 m from using t = 7.",
+      "subject": "Physics",
+      "topic": "Motion in 1D & 2D",
+      "topic_code": "PHY_MOTION",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-in-chat-2026-04-19-phy-motion-01",
+      "generated_at": "2026-04-19T17:25:00+00:00",
+      "id": "sgk_PHY_MOTION_00005"
+    },
+    {
+      "stem": "A projectile is launched at an angle of 45° with a velocity of 20 m/s. What is the horizontal range? (g = 10 m/s²)",
+      "options": [
+        {"option_text": "20 m", "is_correct": false},
+        {"option_text": "40 m", "is_correct": true},
+        {"option_text": "50 m", "is_correct": false},
+        {"option_text": "80 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Range formula: R = (u² sin 2θ)/g. With u = 20, θ = 45° (so sin 90° = 1), g = 10: R = (400·1)/10 = 40 m. The maximum range for a given speed occurs at 45°, so this formula peaks here. 20 m would correspond to θ = 15° or 75°; 50 m comes from mis-substituting u = 25; 80 m from doubling erroneously.",
+      "subject": "Physics",
+      "topic": "Motion in 1D & 2D",
+      "topic_code": "PHY_MOTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-in-chat-2026-04-19-phy-motion-01",
+      "generated_at": "2026-04-19T17:25:00+00:00",
+      "id": "sgk_PHY_MOTION_00006"
+    },
+    {
+      "stem": "Two cars start from the same point. Car A travels 40 km north and then 30 km east. Car B travels directly to A's final position. What distance does Car B travel?",
+      "options": [
+        {"option_text": "35 km", "is_correct": false},
+        {"option_text": "50 km", "is_correct": true},
+        {"option_text": "60 km", "is_correct": false},
+        {"option_text": "70 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Car A's displacement from origin: 40 km N + 30 km E. Net displacement = √(40² + 30²) = √(1600 + 900) = √2500 = 50 km. Car B travels this straight-line distance. 70 km is Car A's TOTAL path distance (40 + 30) — a common distance vs. displacement trap. 35 km and 60 km result from incorrect Pythagorean arithmetic.",
+      "subject": "Physics",
+      "topic": "Motion in 1D & 2D",
+      "topic_code": "PHY_MOTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-in-chat-2026-04-19-phy-motion-01",
+      "generated_at": "2026-04-19T17:25:00+00:00",
+      "id": "sgk_PHY_MOTION_00007"
+    },
+    {
+      "stem": "The velocity-time graph of a body shows a straight line with a positive slope passing through the origin. This means:",
+      "options": [
+        {"option_text": "The body moves with uniform velocity", "is_correct": false},
+        {"option_text": "The body moves with uniform acceleration starting from rest", "is_correct": true},
+        {"option_text": "The body moves with increasing acceleration", "is_correct": false},
+        {"option_text": "The body decelerates uniformly", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Slope of v-t graph = acceleration. A constant positive slope means uniform acceleration (a = constant). Passing through origin means at t = 0, v = 0 (started from rest). Uniform velocity would give a horizontal line (slope = 0). Increasing acceleration gives a CURVE with increasing slope, not a straight line. Deceleration gives a negative slope.",
+      "subject": "Physics",
+      "topic": "Motion in 1D & 2D",
+      "topic_code": "PHY_MOTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-in-chat-2026-04-19-phy-motion-01",
+      "generated_at": "2026-04-19T17:25:00+00:00",
+      "id": "sgk_PHY_MOTION_00008"
+    },
+    {
+      "stem": "A stone is thrown horizontally from the top of a 45-m-high cliff with a velocity of 20 m/s. How far from the base of the cliff does it land? (g = 10 m/s²)",
+      "options": [
+        {"option_text": "30 m", "is_correct": false},
+        {"option_text": "60 m", "is_correct": true},
+        {"option_text": "90 m", "is_correct": false},
+        {"option_text": "120 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Horizontal projectile. Time to fall: use h = ½g·t² → 45 = ½·10·t² → t² = 9 → t = 3 s. Horizontal distance = u·t = 20·3 = 60 m. 30 m is u/g·h = wrong formula mix; 90 m comes from t = 4.5 (wrong); 120 m from t = 6 (wrong). Horizontal velocity stays 20 m/s throughout; only vertical motion is accelerated.",
+      "subject": "Physics",
+      "topic": "Motion in 1D & 2D",
+      "topic_code": "PHY_MOTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-in-chat-2026-04-19-phy-motion-01",
+      "generated_at": "2026-04-19T17:25:00+00:00",
+      "id": "sgk_PHY_MOTION_00009"
+    },
+    {
+      "stem": "A body moving in a circle of radius r with constant speed v has:",
+      "options": [
+        {"option_text": "Zero acceleration", "is_correct": false},
+        {"option_text": "Centripetal acceleration v²/r directed towards the center", "is_correct": true},
+        {"option_text": "Tangential acceleration v²/r", "is_correct": false},
+        {"option_text": "Linear acceleration that increases with time", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "In uniform circular motion, speed is constant but velocity (a vector) constantly changes DIRECTION. This requires acceleration — specifically centripetal (center-seeking) acceleration a = v²/r directed radially inward. Tangential acceleration would exist only if speed were changing. Magnitude of velocity constant ≠ zero acceleration; zero acceleration would require straight-line motion.",
+      "subject": "Physics",
+      "topic": "Motion in 1D & 2D",
+      "topic_code": "PHY_MOTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-in-chat-2026-04-19-phy-motion-01",
+      "generated_at": "2026-04-19T17:25:00+00:00",
+      "id": "sgk_PHY_MOTION_00010"
+    },
+    {
+      "stem": "A car covers the first half of a journey at 40 km/h and the second half at 60 km/h. The average speed for the whole journey is:",
+      "options": [
+        {"option_text": "48 km/h", "is_correct": true},
+        {"option_text": "50 km/h", "is_correct": false},
+        {"option_text": "52 km/h", "is_correct": false},
+        {"option_text": "55 km/h", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "For equal DISTANCES at different speeds, average speed = harmonic mean = 2v₁v₂/(v₁+v₂) = (2·40·60)/(40+60) = 4800/100 = 48 km/h. Common mistake: computing arithmetic mean (40+60)/2 = 50 km/h — WRONG because time spent at each speed is different (slower leg takes longer). The harmonic mean handles this correctly.",
+      "subject": "Physics",
+      "topic": "Motion in 1D & 2D",
+      "topic_code": "PHY_MOTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-in-chat-2026-04-19-phy-motion-01",
+      "generated_at": "2026-04-19T17:25:00+00:00",
+      "id": "sgk_PHY_MOTION_00011"
+    },
+    {
+      "stem": "A ball is dropped from a height of 20 m. With what velocity does it hit the ground? (g = 10 m/s²)",
+      "options": [
+        {"option_text": "10 m/s", "is_correct": false},
+        {"option_text": "20 m/s", "is_correct": true},
+        {"option_text": "40 m/s", "is_correct": false},
+        {"option_text": "400 m/s", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Use v² = u² + 2gh with u = 0, g = 10, h = 20: v² = 0 + 2·10·20 = 400 → v = √400 = 20 m/s. 400 m/s is the FORGETTING-THE-SQUARE-ROOT trap. 40 m/s comes from v = √(2gh) computed as v = 2gh. 10 m/s is the velocity after 1 s of free fall, a partial calculation.",
+      "subject": "Physics",
+      "topic": "Motion in 1D & 2D",
+      "topic_code": "PHY_MOTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-in-chat-2026-04-19-phy-motion-01",
+      "generated_at": "2026-04-19T17:25:00+00:00",
+      "id": "sgk_PHY_MOTION_00012"
+    },
+    {
+      "stem": "Which of the following is a scalar quantity?",
+      "options": [
+        {"option_text": "Displacement", "is_correct": false},
+        {"option_text": "Velocity", "is_correct": false},
+        {"option_text": "Speed", "is_correct": true},
+        {"option_text": "Acceleration", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "Scalar = magnitude only; vector = magnitude + direction. Speed is the magnitude of velocity — a scalar. Displacement, velocity, and acceleration are all vectors (they have direction). Other scalars: distance, mass, time, energy, temperature. Other vectors: force, momentum, torque, electric field.",
+      "subject": "Physics",
+      "topic": "Motion in 1D & 2D",
+      "topic_code": "PHY_MOTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-in-chat-2026-04-19-phy-motion-01",
+      "generated_at": "2026-04-19T17:25:00+00:00",
+      "id": "sgk_PHY_MOTION_00013"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "exam_slug": "ibps-po",
+  "stage_slug": "prelims",
+  "source": "IBPS PO 2026 notification pattern; Adda247 + Careerpower cross-reference",
+  "fetched_at": "2026-04-19",
+  "notes": "100 Qs / 100 marks / 60 min. Sectional timing 20 min per section. Note: English 30Qs = 30 marks, Quant 35Qs = 30 marks, Reasoning 35Qs = 40 marks — unlike SBI PO Prelims (100/100) Reasoning is weighted higher.",
+  "exam_pattern": {
+    "total_questions": 100,
+    "total_marks": 100,
+    "duration_minutes": 60,
+    "negative_mark_per_wrong": 0.25,
+    "sectional_timing": true
+  },
+  "sections": [
+    {
+      "name": "English Language",
+      "subject": "ENGLISH",
+      "question_count": 30,
+      "marks": 30,
+      "duration_minutes": 20,
+      "topics": [
+        {"topic": "reading_comprehension", "topic_code": "ENG_RC", "expected_qs": 7, "effort_tier": "B", "notes": "1 passage with 5-8 Qs"},
+        {"topic": "cloze_test", "topic_code": "ENG_CLOZE", "expected_qs": 5, "effort_tier": "B", "notes": "5-Q passage"},
+        {"topic": "para_jumbles", "topic_code": "ENG_PARA", "expected_qs": 4, "effort_tier": "B"},
+        {"topic": "spotting_error", "topic_code": "ENG_ERR", "expected_qs": 4, "effort_tier": "B", "notes": "Grammar rule violations"},
+        {"topic": "sentence_improvement", "topic_code": "ENG_IMPROV", "expected_qs": 3, "effort_tier": "B"},
+        {"topic": "fill_preposition", "topic_code": "ENG_FILL", "expected_qs": 3, "effort_tier": "B"},
+        {"topic": "word_swap", "topic_code": "ENG_WSWAP", "expected_qs": 2, "effort_tier": "B", "notes": "Swap 2 words in sentence for correctness"},
+        {"topic": "paragraph_completion", "topic_code": "ENG_PARA_COMP", "expected_qs": 2, "effort_tier": "B"}
+      ]
+    },
+    {
+      "name": "Quantitative Aptitude",
+      "subject": "QUANT",
+      "question_count": 35,
+      "marks": 30,
+      "duration_minutes": 20,
+      "topics": [
+        {"topic": "data_interpretation_tabular", "topic_code": "DI_TBL", "expected_qs": 5, "effort_tier": "B", "notes": "HIGH WEIGHT"},
+        {"topic": "data_interpretation_bar", "topic_code": "DI_BAR", "expected_qs": 5, "effort_tier": "B"},
+        {"topic": "data_interpretation_pie_line", "topic_code": "DI_PIE", "expected_qs": 5, "effort_tier": "B"},
+        {"topic": "simplification_approximation", "topic_code": "QNT_SIMP", "expected_qs": 5, "effort_tier": "A", "notes": "QUICK WIN"},
+        {"topic": "number_series", "topic_code": "QNT_NSER", "expected_qs": 5, "effort_tier": "A", "notes": "QUICK WIN"},
+        {"topic": "quadratic_equation", "topic_code": "QNT_ALG", "expected_qs": 3, "effort_tier": "A", "notes": "QUICK WIN"},
+        {"topic": "percentage", "topic_code": "QNT_PCT", "expected_qs": 1, "effort_tier": "B"},
+        {"topic": "profit_loss_discount", "topic_code": "QNT_PLD", "expected_qs": 1, "effort_tier": "B"},
+        {"topic": "simple_compound_interest", "topic_code": "QNT_SI_CI", "expected_qs": 1, "effort_tier": "B"},
+        {"topic": "ratio_proportion", "topic_code": "QNT_RATIO", "expected_qs": 1, "effort_tier": "B"},
+        {"topic": "time_speed_distance", "topic_code": "QNT_TSD", "expected_qs": 1, "effort_tier": "B"},
+        {"topic": "time_and_work", "topic_code": "QNT_TW", "expected_qs": 1, "effort_tier": "B"},
+        {"topic": "mixtures_alligation", "topic_code": "QNT_MIX", "expected_qs": 1, "effort_tier": "B"}
+      ]
+    },
+    {
+      "name": "Reasoning Ability",
+      "subject": "REASONING",
+      "question_count": 35,
+      "marks": 40,
+      "duration_minutes": 20,
+      "topics": [
+        {"topic": "seating_arrangement_linear", "topic_code": "RSN_SEAT_LIN", "expected_qs": 5, "effort_tier": "B", "notes": "HIGH WEIGHT"},
+        {"topic": "seating_arrangement_circular", "topic_code": "RSN_SEAT_CIRC", "expected_qs": 5, "effort_tier": "B"},
+        {"topic": "puzzle_floor", "topic_code": "RSN_PUZ_FLOOR", "expected_qs": 4, "effort_tier": "B"},
+        {"topic": "puzzle_month_day", "topic_code": "RSN_PUZ_MD", "expected_qs": 4, "effort_tier": "B"},
+        {"topic": "syllogism", "topic_code": "RSN_SYL", "expected_qs": 4, "effort_tier": "A", "notes": "QUICK WIN"},
+        {"topic": "inequality", "topic_code": "RSN_INEQ", "expected_qs": 3, "effort_tier": "A", "notes": "QUICK WIN"},
+        {"topic": "coding_decoding", "topic_code": "RSN_CODE", "expected_qs": 3, "effort_tier": "A", "notes": "QUICK WIN"},
+        {"topic": "blood_relations", "topic_code": "RSN_BLOOD", "expected_qs": 2, "effort_tier": "A"},
+        {"topic": "direction_sense", "topic_code": "RSN_DIR", "expected_qs": 2, "effort_tier": "A"},
+        {"topic": "alphanumeric_series", "topic_code": "RSN_SERIES_LN", "expected_qs": 2, "effort_tier": "A"},
+        {"topic": "order_ranking", "topic_code": "RSN_ORDER", "expected_qs": 1, "effort_tier": "A"}
+      ]
+    }
+  ],
+  "high_weight_topics": [
+    {"section": "Reasoning", "topic": "seating_arrangement_combined", "rationale": "10 Qs linear+circular"},
+    {"section": "Quant", "topic": "data_interpretation_combined", "rationale": "15 Qs — 43% of Quant"},
+    {"section": "English", "topic": "reading_comprehension", "rationale": "7 Qs in one block"},
+    {"section": "Reasoning", "topic": "syllogism", "rationale": "4 Qs, rules-based"},
+    {"section": "Quant", "topic": "simplification_approximation", "rationale": "5 Qs, pure speed drill"}
+  ],
+  "efficiency_pitch": "Drill Simplification + Number Series + Quadratics + Syllogism + Inequality + Coding (~22 Qs = 22-25 marks) in ~12 hours total. Reasoning is weighted at 40 marks (heavier than other sections), so reasoning quick-wins give the biggest ROI."
+}

@@ -25,3 +25,4 @@ class User(Base):
     attempts = relationship("Attempt", back_populates="user")
     enrollments = relationship("Enrollment", back_populates="user")
     payments = relationship("Payment", back_populates="user")
+    stage_purchases = relationship("ExamStagePurchase", back_populates="user", cascade="all, delete-orphan")

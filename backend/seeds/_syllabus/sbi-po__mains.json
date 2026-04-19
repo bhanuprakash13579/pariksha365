@@ -1,0 +1,386 @@
+{
+  "schema_version": 1,
+  "exam_slug": "sbi-po",
+  "stage_slug": "mains",
+  "source": "SBI PO 2026 notification pattern (updated: 170 objective Qs + descriptive); bankersadda.com syllabus",
+  "fetched_at": "2026-04-19",
+  "notes": "SBI PO Mains pattern updated in 2026: 170 objective Qs / 200 marks + 50-mark descriptive. Sectional timing enforced. Update ExamPattern seed in backend to reflect (previous blueprint had 155 Qs based on old pattern).",
+  "exam_pattern": {
+    "total_questions": 170,
+    "total_marks_objective": 200,
+    "total_marks_descriptive": 50,
+    "total_marks": 250,
+    "duration_minutes_objective": 180,
+    "duration_minutes_descriptive": 30,
+    "negative_mark_per_wrong": 0.25,
+    "sectional_timing": true
+  },
+  "sections": [
+    {
+      "name": "Reasoning & Computer Aptitude",
+      "subject": "REASONING",
+      "question_count": 40,
+      "marks": 60,
+      "duration_minutes": 50,
+      "topics": [
+        {
+          "topic": "seating_arrangement_circular",
+          "topic_code": "RSN_SEAT_CIRC",
+          "expected_qs": 5,
+          "notes": "Complex circular with dual rows — HIGH WEIGHT",
+          "effort_tier": "B"
+        },
+        {
+          "topic": "puzzle_floor",
+          "topic_code": "RSN_PUZ_FLOOR",
+          "expected_qs": 5,
+          "notes": "Advanced floor/flat puzzle",
+          "effort_tier": "B"
+        },
+        {
+          "topic": "puzzle_month_day",
+          "topic_code": "RSN_PUZ_MD",
+          "expected_qs": 5,
+          "notes": "Month-day scheduling with constraints",
+          "effort_tier": "B"
+        },
+        {
+          "topic": "puzzle_box_based",
+          "topic_code": "RSN_PUZ_BOX",
+          "expected_qs": 4,
+          "notes": "Box / stack arrangement",
+          "effort_tier": "B"
+        },
+        {
+          "topic": "input_output",
+          "topic_code": "RSN_IO",
+          "expected_qs": 5,
+          "notes": "Machine-input, step-based shifting",
+          "effort_tier": "C"
+        },
+        {
+          "topic": "data_sufficiency",
+          "topic_code": "RSN_DS",
+          "expected_qs": 3,
+          "effort_tier": "B"
+        },
+        {
+          "topic": "syllogism",
+          "topic_code": "RSN_SYL",
+          "expected_qs": 3,
+          "notes": "Reverse syllogism or multi-step",
+          "effort_tier": "A",
+          "study_shortcut": "5-rule framework (All/Some/No + possibility). 50 drills in 2 hours."
+        },
+        {
+          "topic": "blood_relations",
+          "topic_code": "RSN_BLOOD",
+          "expected_qs": 2,
+          "effort_tier": "A"
+        },
+        {
+          "topic": "direction_sense",
+          "topic_code": "RSN_DIR",
+          "expected_qs": 2,
+          "notes": "Coded direction with distance math",
+          "effort_tier": "A"
+        },
+        {
+          "topic": "coding_decoding",
+          "topic_code": "RSN_CODE",
+          "expected_qs": 2,
+          "effort_tier": "A",
+          "study_shortcut": "Classify 6 coding types, drill 100 Qs in 4 hours."
+        },
+        {
+          "topic": "critical_reasoning",
+          "topic_code": "RSN_CRIT",
+          "expected_qs": 2,
+          "notes": "Assumption / inference / course-of-action",
+          "effort_tier": "C"
+        },
+        {
+          "topic": "computer_fundamentals",
+          "topic_code": "CMP_FUND",
+          "expected_qs": 2,
+          "notes": "Computer aptitude module",
+          "effort_tier": "A",
+          "study_shortcut": "CPU/RAM/ROM + file formats flashcards. 2 hours."
+        }
+      ]
+    },
+    {
+      "name": "Data Analysis & Interpretation",
+      "subject": "DATA_INTERPRETATION",
+      "question_count": 30,
+      "marks": 60,
+      "duration_minutes": 45,
+      "topics": [
+        {
+          "topic": "di_caselet",
+          "topic_code": "DI_CASE",
+          "expected_qs": 5,
+          "notes": "Paragraph caselet — HIGH WEIGHT",
+          "effort_tier": "B"
+        },
+        {
+          "topic": "di_tabular",
+          "topic_code": "DI_TBL",
+          "expected_qs": 5,
+          "notes": "Multi-column table",
+          "effort_tier": "B"
+        },
+        {
+          "topic": "di_bar_chart",
+          "topic_code": "DI_BAR",
+          "expected_qs": 5,
+          "notes": "Bar with 2-3 categories",
+          "effort_tier": "B"
+        },
+        {
+          "topic": "di_line_chart",
+          "topic_code": "DI_LINE",
+          "expected_qs": 3,
+          "effort_tier": "B"
+        },
+        {
+          "topic": "di_pie_chart",
+          "topic_code": "DI_PIE",
+          "expected_qs": 3,
+          "effort_tier": "B"
+        },
+        {
+          "topic": "di_radar_mixed",
+          "topic_code": "DI_MIXED",
+          "expected_qs": 3,
+          "notes": "Radar / mixed graphs",
+          "effort_tier": "B"
+        },
+        {
+          "topic": "di_missing_case",
+          "topic_code": "DI_MISSING",
+          "expected_qs": 3,
+          "notes": "Missing-value DI",
+          "effort_tier": "B"
+        },
+        {
+          "topic": "probability",
+          "topic_code": "QNT_PROB",
+          "expected_qs": 2,
+          "effort_tier": "B"
+        },
+        {
+          "topic": "permutation_combination",
+          "topic_code": "QNT_PC",
+          "expected_qs": 1,
+          "effort_tier": "B"
+        }
+      ]
+    },
+    {
+      "name": "General / Economy / Banking Awareness",
+      "subject": "GENERAL_AWARENESS",
+      "question_count": 60,
+      "marks": 60,
+      "duration_minutes": 45,
+      "topics": [
+        {
+          "topic": "banking_static",
+          "topic_code": "GA_BANK",
+          "expected_qs": 15,
+          "notes": "RBI, SEBI, NABARD, regulations, banking products, KYC, NPAs — HIGH WEIGHT",
+          "effort_tier": "B",
+          "study_shortcut": "RBI structure, committees, KYC/AML norms. 10-12 hours."
+        },
+        {
+          "topic": "economy",
+          "topic_code": "GA_ECON",
+          "expected_qs": 10,
+          "notes": "Budget, fiscal/monetary policy, economic surveys",
+          "effort_tier": "B"
+        },
+        {
+          "topic": "polity_constitution",
+          "topic_code": "GA_POL",
+          "expected_qs": 5,
+          "notes": "Articles, amendments relevant to finance/banking",
+          "effort_tier": "B",
+          "study_shortcut": "Articles 12-35 (FRs), 36-51 (DPSP), Schedules 8-12."
+        },
+        {
+          "topic": "awards_books",
+          "topic_code": "GA_AWARDS",
+          "expected_qs": 3,
+          "effort_tier": "A"
+        },
+        {
+          "topic": "sports",
+          "topic_code": "GA_SPORTS",
+          "expected_qs": 3,
+          "effort_tier": "A"
+        },
+        {
+          "topic": "culture",
+          "topic_code": "GA_CULT",
+          "expected_qs": 2,
+          "effort_tier": "A",
+          "study_shortcut": "8 classical dances by state + major festivals. 2 hours."
+        },
+        {
+          "topic": "organizations",
+          "topic_code": "GA_ORG",
+          "expected_qs": 4,
+          "notes": "World Bank, IMF, WTO, ASEAN, SAARC",
+          "effort_tier": "A"
+        },
+        {
+          "topic": "insurance_principles",
+          "topic_code": "GA_INS",
+          "expected_qs": 3,
+          "notes": "Types of insurance, IRDAI, policies",
+          "effort_tier": "A"
+        },
+        {
+          "topic": "financial_awareness_static",
+          "topic_code": "GA_FIN",
+          "expected_qs": 8,
+          "notes": "Capital markets, MFs, bonds, fundamentals — static only",
+          "effort_tier": "B"
+        },
+        {
+          "topic": "modern_history",
+          "topic_code": "GA_HIS_MOD",
+          "expected_qs": 2,
+          "effort_tier": "B"
+        },
+        {
+          "topic": "geography_india",
+          "topic_code": "GA_GEO_IN",
+          "expected_qs": 2,
+          "effort_tier": "A"
+        },
+        {
+          "topic": "science_general",
+          "topic_code": "GA_SCI_PHY",
+          "expected_qs": 3,
+          "effort_tier": "B"
+        }
+      ]
+    },
+    {
+      "name": "English Language",
+      "subject": "ENGLISH",
+      "question_count": 40,
+      "marks": 20,
+      "duration_minutes": 40,
+      "topics": [
+        {
+          "topic": "reading_comprehension",
+          "topic_code": "ENG_RC",
+          "expected_qs": 12,
+          "notes": "2-3 passages, complex vocab and inference — HIGH WEIGHT",
+          "effort_tier": "B",
+          "study_shortcut": "Daily 1 editorial + 3 passages against a 4-min timer."
+        },
+        {
+          "topic": "cloze_test",
+          "topic_code": "ENG_CLOZE",
+          "expected_qs": 6,
+          "effort_tier": "B"
+        },
+        {
+          "topic": "para_jumbles",
+          "topic_code": "ENG_PARA",
+          "expected_qs": 5,
+          "effort_tier": "B"
+        },
+        {
+          "topic": "sentence_improvement",
+          "topic_code": "ENG_IMPROV",
+          "expected_qs": 4,
+          "effort_tier": "B"
+        },
+        {
+          "topic": "spotting_error",
+          "topic_code": "ENG_ERR",
+          "expected_qs": 4,
+          "effort_tier": "B"
+        },
+        {
+          "topic": "fill_preposition",
+          "topic_code": "ENG_FILL",
+          "expected_qs": 3,
+          "effort_tier": "B"
+        },
+        {
+          "topic": "word_association",
+          "topic_code": "ENG_WORD",
+          "expected_qs": 3,
+          "effort_tier": "B"
+        },
+        {
+          "topic": "synonym_antonym",
+          "topic_code": "ENG_SYN",
+          "expected_qs": 3,
+          "effort_tier": "C"
+        }
+      ]
+    }
+  ],
+  "descriptive_test": {
+    "marks": 50,
+    "duration_minutes": 30,
+    "questions": 2,
+    "types": [
+      "essay_250_words",
+      "letter_or_email_150_words"
+    ],
+    "notes": "Qualifying for Mains; essay topics cover economy, banking, current issues. Letter types include formal/informal. Must use static-only topics for mock generation."
+  },
+  "high_weight_topics": [
+    {
+      "section": "General Awareness",
+      "topic": "banking_static",
+      "rationale": "15 Qs = 25% of GA section; highest-leverage static topic in the entire paper"
+    },
+    {
+      "section": "General Awareness",
+      "topic": "economy",
+      "rationale": "10 Qs; predictable (budget, fiscal policy, monetary policy)"
+    },
+    {
+      "section": "English Language",
+      "topic": "reading_comprehension",
+      "rationale": "12 Qs on complex passages = 30% of English"
+    },
+    {
+      "section": "Data Analysis & Interpretation",
+      "topic": "di_caselet",
+      "rationale": "Caselet DI at 5 marks each Q = 25 marks, highest per-Q reward"
+    },
+    {
+      "section": "Reasoning & Computer Aptitude",
+      "topic": "puzzle_floor",
+      "rationale": "Puzzles dominate reasoning at 5 marks/Q; 25+ marks potential"
+    }
+  ],
+  "guidance_for_feedback_engine": {
+    "weak_student_priorities": [
+      "Banking Awareness (GA static) — 15 Qs = 15 marks, drillable & deterministic",
+      "Economy (GA) — 10 Qs, static concepts + schemes",
+      "DI Caselet (DIA) — 5-Q sets at 2 marks each = 10 marks",
+      "Reading Comprehension (English) — 12 Qs = 6 marks but fast if vocab is strong"
+    ],
+    "advanced_student_priorities": [
+      "Input-Output reasoning — niche but scoring if practised",
+      "Missing-case DI — unusual framing rewards depth",
+      "Critical Reasoning (assumption/inference) — separates toppers"
+    ],
+    "speed_benchmarks": {
+      "reasoning_per_q_seconds": 75,
+      "dia_per_q_seconds": 90,
+      "ga_per_q_seconds": 45,
+      "english_per_q_seconds": 60
+    }
+  }
+}

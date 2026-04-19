@@ -54,6 +54,27 @@ export const CategoryAPI = {
     list: () => api.get('/categories')
 };
 
+export const ExamStructureAPI = {
+    // Public tree (enabled nodes only) — powers the student exam browser
+    listPublic: () => api.get('/exam-structure'),
+    // Access check + my purchases
+    getStageAccess: (stageId: string) => api.get(`/exam-structure/exam-stages/${stageId}/access`),
+    listMyPurchases: () => api.get('/exam-structure/purchases/me'),
+
+    // Admin tree (full — includes disabled nodes)
+    adminList: () => api.get('/admin/exam-structure'),
+    adminToggleCategoryVisibility: (categoryId: string, is_enabled: boolean) =>
+        api.put(`/admin/exam-structure/categories/${categoryId}/visibility`, { is_enabled }),
+    adminToggleSubCategoryVisibility: (subCategoryId: string, is_enabled: boolean) =>
+        api.put(`/admin/exam-structure/subcategories/${subCategoryId}/visibility`, { is_enabled }),
+    adminToggleExamStageVisibility: (stageId: string, is_enabled: boolean) =>
+        api.put(`/admin/exam-structure/exam-stages/${stageId}/visibility`, { is_enabled }),
+    adminUpdateExamStagePricing: (stageId: string, price_inr: number, validity_days: number) =>
+        api.put(`/admin/exam-structure/exam-stages/${stageId}/pricing`, { price_inr, validity_days }),
+    adminGrantStagePurchase: (user_id: string, exam_stage_id: string, validity_days: number, note: string) =>
+        api.post('/admin/exam-structure/exam-stages/purchases/grant', { user_id, exam_stage_id, validity_days, note }),
+};
+
 export const CourseAPI = {
     list: () => api.get('/courses'),
     getById: (id: string) => api.get(`/courses/${id}`),

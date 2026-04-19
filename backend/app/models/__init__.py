@@ -1,7 +1,7 @@
 from app.core.database import Base
 from app.models.role import Role
 from app.models.user import User
-from app.models.test_series import TestSeries
+from app.models.test_series import TestSeries, TestType
 from app.models.section import Section
 from app.models.question import Question
 from app.models.attempt import Attempt
@@ -15,6 +15,9 @@ from app.models.course_folder import CourseFolder
 from app.models.folder_test import FolderTest
 from app.models.category import Category
 from app.models.subcategory import SubCategory
+from app.models.exam_stage import ExamStage
+from app.models.exam_stage_purchase import ExamStagePurchase
+from app.models.exam_pattern import ExamPattern, SectionPattern
 from app.models.quiz_pool import QuizQuestion, QuizAttempt, UserWeakTopic, UserStreak, UserTopicMastery
 from app.models.taxonomy import SubjectTaxonomy
 
@@ -24,6 +27,7 @@ __all__ = [
     "Role",
     "User",
     "TestSeries",
+    "TestType",
     "Section",
     "Question",
     "Attempt",
@@ -37,6 +41,10 @@ __all__ = [
     "FolderTest",
     "Category",
     "SubCategory",
+    "ExamStage",
+    "ExamStagePurchase",
+    "ExamPattern",
+    "SectionPattern",
     "QuizQuestion",
     "QuizAttempt",
     "UserWeakTopic",

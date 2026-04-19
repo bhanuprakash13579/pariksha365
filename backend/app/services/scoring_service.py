@@ -5,7 +5,7 @@ from sqlalchemy.orm import selectinload
 from fastapi import HTTPException
 from app.models.attempt import Attempt, AttemptStatus
 from app.models.user_answer import UserAnswer
-from app.models.test_series import TestSeries
+from app.models.test_series import TestSeries, TestType
 from app.models.question import Question
 from app.models.section import Section
 from app.models.result import Result
@@ -13,6 +13,7 @@ from app.models.course_folder import CourseFolder
 from app.models.folder_test import FolderTest
 from app.models.enrollment import Enrollment
 from app.schemas.attempt_schema import UserAnswerCreate
+from app.services import entitlement_service
 from datetime import datetime
 from typing import List
 
@@ -61,8 +62,59 @@ async def start_attempt(db: AsyncSession, user_id: uuid.UUID, test_id: uuid.UUID
             }
         }
         
-    # VALIDATION: Check if test is free or if user is enrolled
-    # 1. Find the folder this test is in
+    # VALIDATION: two gates run in order.
+    # Gate A — exam_stage pricing (NEW path): PYQ always allowed, MOCK under
+    # a priced stage requires an active purchase. If this gate returns, fall
+    # through to Gate B (legacy folder/enrollment) so old free courses keep
+    # working. Gate A raises 402 on a paid stage with no entitlement — that's
+    # the signal the frontend turns into a checkout redirect.
+    ts_stmt = select(TestSeries).where(TestSeries.id == test_id)
+    ts_res = await db.execute(ts_stmt)
+    test_series = ts_res.scalars().first()
+    if test_series is None:
+        raise HTTPException(status_code=404, detail="Test series not found")
+
+    await entitlement_service.ensure_test_series_access(db, user_id, test_series)
+
+    # Short-circuit: PYQs and test_series bound to a free, priced-0 stage
+    # already passed Gate A. We skip the legacy course-enrollment gate in
+    # those cases so PYQs never accidentally require an enrollment.
+    if test_series.test_type == TestType.PYQ:
+        attempt = Attempt(user_id=user_id, test_series_id=test_id)
+        db.add(attempt)
+        await db.commit()
+        stmt = select(Attempt).options(selectinload(Attempt.test_series)).where(Attempt.id == attempt.id)
+        attempt_full = (await db.execute(stmt)).scalars().first()
+        return {
+            "id": attempt_full.id,
+            "user_id": attempt_full.user_id,
+            "test_series_id": attempt_full.test_series_id,
+            "started_at": attempt_full.started_at,
+            "ended_at": attempt_full.ended_at,
+            "status": attempt_full.status,
+            "test_title": attempt_full.test_series.title if attempt_full.test_series else None,
+            "test_series": {"cdn_url": attempt_full.test_series.cdn_url if attempt_full.test_series else None},
+        }
+
+    if test_series.exam_stage_id is not None:
+        # Stage access already validated in Gate A (either free or purchased).
+        attempt = Attempt(user_id=user_id, test_series_id=test_id)
+        db.add(attempt)
+        await db.commit()
+        stmt = select(Attempt).options(selectinload(Attempt.test_series)).where(Attempt.id == attempt.id)
+        attempt_full = (await db.execute(stmt)).scalars().first()
+        return {
+            "id": attempt_full.id,
+            "user_id": attempt_full.user_id,
+            "test_series_id": attempt_full.test_series_id,
+            "started_at": attempt_full.started_at,
+            "ended_at": attempt_full.ended_at,
+            "status": attempt_full.status,
+            "test_title": attempt_full.test_series.title if attempt_full.test_series else None,
+            "test_series": {"cdn_url": attempt_full.test_series.cdn_url if attempt_full.test_series else None},
+        }
+
+    # Gate B — legacy folder/enrollment path for old course-linked tests.
     stmt = (
         select(FolderTest)
         .options(selectinload(FolderTest.folder))

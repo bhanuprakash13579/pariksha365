@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.core.database import engine, Base
-from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router, category_router, analytics_router, search_router, quiz_router
+from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router, category_router, analytics_router, search_router, quiz_router, exam_structure_router
 import app.models
 
 import os
@@ -96,6 +96,8 @@ app.include_router(category_router.router, prefix=f"{settings.API_V1_STR}/catego
 app.include_router(analytics_router.router, prefix=f"{settings.API_V1_STR}/analytics", tags=["analytics"])
 app.include_router(search_router.router, prefix=f"{settings.API_V1_STR}/search", tags=["search"])
 app.include_router(quiz_router.router, prefix=f"{settings.API_V1_STR}/quiz", tags=["quiz"])
+app.include_router(exam_structure_router.public_router, prefix=f"{settings.API_V1_STR}/exam-structure", tags=["exam-structure"])
+app.include_router(exam_structure_router.admin_router, prefix=f"{settings.API_V1_STR}/admin/exam-structure", tags=["admin-exam-structure"])
 
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse

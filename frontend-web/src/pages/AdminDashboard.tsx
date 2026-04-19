@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
-import { FileText, Activity, FilePlus, Folder, Trash2, Edit, BarChart2, Download, HelpCircle } from 'lucide-react';
+import { FileText, Activity, FilePlus, Folder, Trash2, Edit, BarChart2, Download, HelpCircle, Layers } from 'lucide-react';
 import { api, UserAPI } from '../services/api';
 import { ScrapeReviewWorkspace } from './ScrapeReviewWorkspace';
 import { FileExplorerCourseManager } from './FileExplorerCourseManager';
 import { AdminAnalytics } from '../components/dashboard/AdminAnalytics';
 import { AdminQuizPoolManager } from '../components/dashboard/AdminQuizPoolManager';
+import { AdminExamStructureManager } from '../components/dashboard/AdminExamStructureManager';
 import { useNavigate } from 'react-router-dom';
 
 export const AdminDashboard = () => {
@@ -85,6 +86,9 @@ export const AdminDashboard = () => {
                     </button>
                     <button onClick={() => setActiveTab('quizpool')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'quizpool' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
                         <HelpCircle className="w-5 h-5 mr-3" /> Quiz Pool
+                    </button>
+                    <button onClick={() => setActiveTab('exam-structure')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'exam-structure' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
+                        <Layers className="w-5 h-5 mr-3" /> Exam Structure
                     </button>
                 </nav>
             </aside>
@@ -224,6 +228,8 @@ export const AdminDashboard = () => {
                 })()}
 
                 {activeTab === 'quizpool' && <AdminQuizPoolManager />}
+
+                {activeTab === 'exam-structure' && <AdminExamStructureManager />}
             </main>
         </div>
     );

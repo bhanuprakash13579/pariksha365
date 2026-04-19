@@ -39,6 +39,13 @@ class Settings(BaseSettings):
     
     # FRONTEND URL (for payment redirects etc.)
     FRONTEND_URL: str = "http://localhost:3000"
+
+    # UPI PAYMENT (zero-commission path; see memory:project_stage_pricing_model)
+    # Set MERCHANT_UPI_VPA in Railway env vars (or backend/.env in dev). If it's
+    # empty the UPI checkout flow is disabled and /payments/upi/config returns
+    # {enabled: false} so the FE can hide the "Pay via UPI" button.
+    # Display name shown in the student's UPI app is hardcoded to "Pariksha365".
+    MERCHANT_UPI_VPA: str = ""                       # e.g. "pariksha365@hdfcbank"
     
     # GOOGLE OAUTH CLIENT IDS (from frontend)
     GOOGLE_CLIENT_IDS: list[str] = [
