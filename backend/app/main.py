@@ -43,14 +43,43 @@ async def lifespan(app: FastAPI):
                 {"name": "PSCs", "icon": "newspaper-outline", "subs": []},
                 {"name": "Post-Office", "icon": "mail-outline", "subs": []}
             ]
+            # Note: is_enabled=True explicitly — default-False on the column
+            # once hid all 11 pre-seeded categories from the admin UI, making
+            # it look as if the admin login was broken. See memory:
+            # feedback_migration_preserve_visibility for the original incident.
             for i, c in enumerate(defaults):
-                cat_db = Category(name=c["name"], icon_name=c["icon"], order=i)
+                cat_db = Category(name=c["name"], icon_name=c["icon"], order=i, is_enabled=True)
                 db.add(cat_db)
                 await db.commit()
                 await db.refresh(cat_db)
                 for j, sub in enumerate(c["subs"]):
-                    db.add(SubCategory(category_id=cat_db.id, name=sub, order=j))
+                    db.add(SubCategory(category_id=cat_db.id, name=sub, order=j, is_enabled=True))
             await db.commit()
+
+        # SELF-HEAL: If EVERY category in the DB is currently is_enabled=False,
+        # that almost certainly means a migration or an accidental toggle hid
+        # them all, which cripples the admin UI. Flip them all back to True.
+        # This runs on every startup but is a no-op when any category is
+        # already visible. This is the same one-liner we manually applied
+        # after the original 2026-04-19 admin-login incident.
+        try:
+            from sqlalchemy import func as _sql_func, update as _sql_update
+            total = (await db.execute(select(_sql_func.count()).select_from(Category))).scalar_one()
+            enabled = (
+                await db.execute(
+                    select(_sql_func.count()).select_from(Category).where(Category.is_enabled.is_(True))
+                )
+            ).scalar_one()
+            if total > 0 and enabled == 0:
+                print(
+                    f"SELF-HEAL: {total} categories all disabled — restoring "
+                    "is_enabled=True to prevent admin-panel-looks-broken state."
+                )
+                await db.execute(_sql_update(Category).values(is_enabled=True))
+                await db.execute(_sql_update(SubCategory).values(is_enabled=True))
+                await db.commit()
+        except Exception as e:  # defensive — never block startup
+            print(f"SELF-HEAL check skipped due to: {e!r}")
     yield
 
 app = FastAPI(

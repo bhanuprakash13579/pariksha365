@@ -45,10 +45,23 @@ export const AdminDashboard = () => {
             setTests(testRes.data);
             const draftRes = await api.get('/tests?is_published=false');
             setDrafts(draftRes.data);
-            const catRes = await api.get('/categories');
+            // Use the admin-dedicated endpoint so disabled categories remain
+            // visible in the admin panel. The public /categories endpoint
+            // filters is_enabled=false rows, which once made the admin UI
+            // appear broken after a migration (see feedback_migration_preserve_visibility).
+            const catRes = await api.get('/categories/admin');
             setDbCategories(catRes.data);
         } catch (e) {
             console.error("Failed to fetch data", e);
+            // Fallback to the public endpoint so a 404/older-backend deploy
+            // doesn't blank the dashboard. Better to show enabled categories
+            // than nothing at all.
+            try {
+                const catRes = await api.get('/categories');
+                setDbCategories(catRes.data);
+            } catch (fallbackErr) {
+                console.error("Fallback /categories also failed", fallbackErr);
+            }
         }
     };
 
