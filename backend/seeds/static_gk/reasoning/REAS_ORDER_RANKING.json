@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Order and Ranking",
+  "topic_code": "REAS_ORDER_RANKING",
+  "description": null,
+  "questions": [
+    {
+      "stem": "In a row, A is 7th from the left and 12th from the right. How many persons are in the row?",
+      "options": [
+        {"option_text": "17", "is_correct": false},
+        {"option_text": "18", "is_correct": true},
+        {"option_text": "19", "is_correct": false},
+        {"option_text": "20", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Total = left-rank + right-rank − 1 = 7 + 12 − 1 = 18. Subtract 1 because the person is counted from both sides.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-rk-01",
+      "generated_at": "2026-04-21T13:40:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00001"
+    },
+    {
+      "stem": "In a class of 35, Raju is 9th from the top. His rank from the bottom is:",
+      "options": [
+        {"option_text": "26", "is_correct": false},
+        {"option_text": "27", "is_correct": true},
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "25", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Rank from bottom = Total − Rank from top + 1 = 35 − 9 + 1 = 27.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-rk-02",
+      "generated_at": "2026-04-21T13:40:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00002"
+    },
+    {
+      "stem": "If there are 40 students in a class and Ravi's rank from top is 15, number of students below him is:",
+      "options": [
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "25", "is_correct": true},
+        {"option_text": "26", "is_correct": false},
+        {"option_text": "27", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Students below = Total − Rank = 40 − 15 = 25. (Note: 'below' = strictly below, so do NOT add 1.)",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-rk-03",
+      "generated_at": "2026-04-21T13:40:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00003"
+    },
+    {
+      "stem": "A moves 3 places forward in a queue and reaches 8th from front. His original position from front was:",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "11", "is_correct": true},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "12", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Moved forward 3 places → position decreased by 3. New pos 8 → old pos = 8 + 3 = 11.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-rk-04",
+      "generated_at": "2026-04-21T13:40:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00004"
+    },
+    {
+      "stem": "In a line of 20 people, P is 5th from right. Q is 9th from left. How many people are between P and Q?",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "P from left = 20 − 5 + 1 = 16. Q from left = 9. Positions strictly between 9 and 16 are {10, 11, 12, 13, 14, 15} → 6 people. Rule: between two positions a < b, count = b − a − 1.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-rk-05",
+      "generated_at": "2026-04-21T13:40:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00005"
+    }
+  ]
+}
