@@ -48,7 +48,25 @@ export const googleLogin = createAsyncThunk(
             localStorage.setItem('token', response.data.access_token);
             return response.data;
         } catch (error: any) {
-            return rejectWithValue(error.response?.data || { detail: 'Google Login failed' });
+            // Surface the real cause when possible — network error, 401, 500 etc.
+            // Makes production debugging much easier than the previous opaque
+            // "Google Login failed" string.
+            const backendDetail = error?.response?.data?.detail;
+            const status = error?.response?.status;
+            const msg = error?.message;
+            const combined =
+                backendDetail ||
+                (status ? `Google login failed (HTTP ${status})` : undefined) ||
+                msg ||
+                'Google Login failed';
+            // eslint-disable-next-line no-console
+            console.error('[Google login] error', {
+                status,
+                backendDetail,
+                msg,
+                data: error?.response?.data,
+            });
+            return rejectWithValue({ detail: combined });
         }
     }
 );

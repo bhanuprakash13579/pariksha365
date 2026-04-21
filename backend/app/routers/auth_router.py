@@ -2,6 +2,7 @@ from typing import Any
 from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.database import get_db
+from app.core.dependencies import get_current_admin_user
 from app.schemas.auth_schema import Token, LoginRequest, ForgotPasswordRequest, ResetPasswordRequest, MessageResponse, GoogleLoginRequest
 from app.schemas.user_schema import UserCreate, UserResponse
 from app.services import auth_service
@@ -61,40 +62,44 @@ async def reset_password(
     await auth_service.reset_password(db, token=body.token, new_password=body.new_password)
     return MessageResponse(message="Password has been reset successfully.")
 
-# TEMPORARY DEBUG - REMOVE AFTER FIXING LOGIN
+# Admin-only diagnostics for password-verification issues. The earlier version
+# of this endpoint was unauthenticated and leaked the stored hash prefix, the
+# bcrypt library version, and `is_active` for any email an attacker guessed.
+# Now requires a valid admin session via get_current_admin_user.
 @router.get("/debug-verify/{email}")
-async def debug_verify(email: str, db: AsyncSession = Depends(get_db)):
+async def debug_verify(
+    email: str,
+    db: AsyncSession = Depends(get_db),
+    _admin=Depends(get_current_admin_user),
+):
     from sqlalchemy.future import select
     from app.models.user import User
     from app.core.security import verify_password, get_password_hash
     import bcrypt as _bcrypt
-    
+
     stmt = select(User).where(User.email == email)
     result = await db.execute(stmt)
     user = result.scalars().first()
-    
+
     if not user:
         return {"found": False, "email": email}
-    
+
     test_password = "Admin@Parisksha365"
     stored_hash = user.password_hash
-    
-    # Test 1: Direct bcrypt
+
     try:
-        direct_result = _bcrypt.checkpw(test_password.encode('utf-8'), stored_hash.encode('utf-8'))
+        direct_result = _bcrypt.checkpw(test_password.encode("utf-8"), stored_hash.encode("utf-8"))
     except Exception as e:
         direct_result = f"ERROR: {e}"
-    
-    # Test 2: via security.verify_password
+
     try:
         verify_result = verify_password(test_password, stored_hash)
     except Exception as e:
         verify_result = f"ERROR: {e}"
-    
-    # Test 3: generate a new hash and verify
+
     new_hash = get_password_hash(test_password)
-    rehash_verify = _bcrypt.checkpw(test_password.encode('utf-8'), new_hash.encode('utf-8'))
-    
+    rehash_verify = _bcrypt.checkpw(test_password.encode("utf-8"), new_hash.encode("utf-8"))
+
     return {
         "found": True,
         "email": user.email,

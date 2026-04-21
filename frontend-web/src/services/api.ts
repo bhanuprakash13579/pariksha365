@@ -1,6 +1,28 @@
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1';
+// Determine API base URL with a safety net:
+// 1. If VITE_API_URL is injected at build time, trust it.
+// 2. Otherwise fall back to localhost (dev). BUT: when the app is served on
+//    https (production) without VITE_API_URL set, talking to http://localhost
+//    will be blocked by the browser as mixed content AND never reach the real
+//    backend — so we switch the fallback to the canonical prod API host. This
+//    kept Google login (and everything else) from silently failing on a prod
+//    deploy that was missing the env var.
+const envApiUrl = import.meta.env.VITE_API_URL as string | undefined;
+const isProdOrigin =
+    typeof window !== 'undefined' && window.location.protocol === 'https:';
+const PROD_FALLBACK = 'https://api.pariksha365.in/api/v1';
+const API_URL =
+    envApiUrl && envApiUrl.length > 0
+        ? envApiUrl
+        : isProdOrigin
+            ? PROD_FALLBACK
+            : 'http://localhost:8000/api/v1';
+
+if (typeof console !== 'undefined') {
+    // eslint-disable-next-line no-console
+    console.info('[Pariksha365] API base URL =', API_URL);
+}
 
 export const api = axios.create({
     baseURL: API_URL,
