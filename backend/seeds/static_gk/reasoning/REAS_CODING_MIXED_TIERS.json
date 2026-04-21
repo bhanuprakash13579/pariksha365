@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Coding-Decoding — mixed tiers",
+  "topic_code": "REAS_CODING_MIXED_TIERS",
+  "description": "Letter-shift, reverse, blockwise, symbol-based — Clerk → Bank Mains",
+  "questions": [
+    {
+      "stem": "[Clerk tier] If CAT is coded as DBU, then DOG is coded as:",
+      "options": [
+        {"option_text": "EPH", "is_correct": true},
+        {"option_text": "CNF", "is_correct": false},
+        {"option_text": "DOG", "is_correct": false},
+        {"option_text": "EMI", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Each letter shifts +1: C→D, A→B, T→U. Apply to DOG: D→E, O→P, G→H → EPH.",
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding — mixed tiers",
+      "topic_code": "REAS_CODING_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-ct-01",
+      "generated_at": "2026-04-21T19:20:00+00:00",
+      "id": "sgk_REAS_CODING_MIXED_TIERS_00001"
+    },
+    {
+      "stem": "[NTPC / CGL tier] If 'PAPER' is coded as 'OZODQ' (each letter shifted by −1), then 'PENCIL' is coded as:",
+      "options": [
+        {"option_text": "ODMBHK", "is_correct": true},
+        {"option_text": "OEMBHK", "is_correct": false},
+        {"option_text": "QFODJM", "is_correct": false},
+        {"option_text": "OCOBHK", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Shift each letter by −1: P→O, E→D, N→M, C→B, I→H, L→K → ODMBHK. Verify rule: PAPER → O(Z)O(D)Q → yes all −1 with Z wrap for A.",
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding — mixed tiers",
+      "topic_code": "REAS_CODING_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-ct-02",
+      "generated_at": "2026-04-21T19:20:00+00:00",
+      "id": "sgk_REAS_CODING_MIXED_TIERS_00002"
+    },
+    {
+      "stem": "[CGL / PO Prelims tier] In a certain code, 'MOON' is written as 'NLLM'. Deduce the rule.",
+      "options": [
+        {"option_text": "Each letter is replaced by its mirror in the alphabet (A↔Z, B↔Y, etc.)", "is_correct": true},
+        {"option_text": "Each letter shifted by +1", "is_correct": false},
+        {"option_text": "Reverse the word", "is_correct": false},
+        {"option_text": "Each letter shifted by −2", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Mirror alphabet: A↔Z, B↔Y, C↔X, …, M↔N, O↔L, N↔M. Apply: M→N, O→L, O→L, N→M → NLLM ✓. The pair (M,N) is the middle of the alphabet.",
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding — mixed tiers",
+      "topic_code": "REAS_CODING_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-ct-03",
+      "generated_at": "2026-04-21T19:20:00+00:00",
+      "id": "sgk_REAS_CODING_MIXED_TIERS_00003"
+    },
+    {
+      "stem": "[PO Mains tier] If each letter is assigned its alphabet position (A=1, B=2, …, Z=26) and the code of a word is the SUM of its letters' positions, the code for 'MOON' is:",
+      "options": [
+        {"option_text": "54", "is_correct": false},
+        {"option_text": "57", "is_correct": true},
+        {"option_text": "58", "is_correct": false},
+        {"option_text": "60", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "M(13) + O(15) + O(15) + N(14) = 13 + 15 + 15 + 14 = 57. Positional-sum coding is a Bank-PO favourite; drill A=1, J=10, N=14, O=15, T=20, Z=26 so the arithmetic is instant.",
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding — mixed tiers",
+      "topic_code": "REAS_CODING_MIXED_TIERS",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-ct-04",
+      "generated_at": "2026-04-21T19:20:00+00:00",
+      "id": "sgk_REAS_CODING_MIXED_TIERS_00004"
+    },
+    {
+      "stem": "[CGL tier] If 'BOY' is coded as 'BOY', 'GIRL' as 'GIRL', then which letter does NOT change when coded by 'identity' (A→A, B→B, …)?",
+      "options": [
+        {"option_text": "Only vowels", "is_correct": false},
+        {"option_text": "All letters — it's the identity function", "is_correct": true},
+        {"option_text": "Only consonants", "is_correct": false},
+        {"option_text": "None of the letters", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "The 'identity' rule is a trivial sanity-check item — every letter maps to itself. Classic warm-up.",
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding — mixed tiers",
+      "topic_code": "REAS_CODING_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-ct-05",
+      "generated_at": "2026-04-21T19:20:00+00:00",
+      "id": "sgk_REAS_CODING_MIXED_TIERS_00005"
+    }
+  ]
+}
