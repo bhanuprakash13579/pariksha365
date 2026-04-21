@@ -758,11 +758,11 @@ export const ScrapeReviewWorkspace: React.FC<ScrapeReviewWorkspaceProps> = ({ dr
                 )}
             </div>
 
-            {/* Split Screen Workspace */}
-            <div className="flex flex-1 overflow-hidden">
+            {/* Split Screen Workspace — stacks on mobile, split on md+ */}
+            <div className="flex flex-col md:flex-row flex-1 overflow-hidden min-h-0">
 
                 {/* LEFT PANE: Original Content */}
-                <div className="w-1/2 bg-gray-200 dark:bg-gray-950 overflow-y-auto border-r border-gray-300 relative">
+                <div className="w-full md:w-1/2 flex-1 md:flex-none min-h-0 bg-gray-200 dark:bg-gray-950 overflow-y-auto border-b md:border-b-0 md:border-r border-gray-300 relative">
                     {inputMode === 'pdf' ? (
                         !file ? (
                             <div className="flex items-center justify-center h-full text-gray-500">
@@ -841,7 +841,7 @@ export const ScrapeReviewWorkspace: React.FC<ScrapeReviewWorkspaceProps> = ({ dr
                 </div>
 
                 {/* RIGHT PANE: Editable Forms & Sections */}
-                <div className="w-1/2 bg-white dark:bg-gray-800 overflow-y-auto flex flex-col">
+                <div className="w-full md:w-1/2 flex-1 md:flex-none min-h-0 bg-white dark:bg-gray-800 overflow-y-auto flex flex-col">
 
                     {/* Section Tabs Container */}
                     <div className="bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 flex overflow-x-auto p-2 items-end shrink-0">

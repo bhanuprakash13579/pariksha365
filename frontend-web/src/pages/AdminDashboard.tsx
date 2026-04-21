@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FileText, Activity, FilePlus, Folder, Trash2, Edit, BarChart2, Download, HelpCircle, Layers } from 'lucide-react';
+import { FileText, Activity, FilePlus, Folder, Trash2, Edit, BarChart2, Download, HelpCircle, Layers, Menu, X } from 'lucide-react';
 import { api, UserAPI } from '../services/api';
 import { ScrapeReviewWorkspace } from './ScrapeReviewWorkspace';
 import { FileExplorerCourseManager } from './FileExplorerCourseManager';
@@ -16,8 +16,16 @@ export const AdminDashboard = () => {
     const [dbCategories, setDbCategories] = useState<any[]>([]);
     const [activeTab, setActiveTab] = useState('courses');
     const [draftToEdit, setDraftToEdit] = useState<any>(null);
+    const [sidebarOpen, setSidebarOpen] = useState(false);
 
     const [isAuthorized, setIsAuthorized] = useState(false);
+
+    // Close mobile drawer whenever we switch tabs (prevents the drawer from
+    // staying open after the user picks a destination).
+    const handleTabSelect = (tab: string) => {
+        setActiveTab(tab);
+        setSidebarOpen(false);
+    };
 
     useEffect(() => {
         const checkAuth = async () => {
@@ -74,54 +82,95 @@ export const AdminDashboard = () => {
         );
     }
 
+    const NAV_BUTTONS: { id: string; label: string; icon: React.ReactNode; onSelect?: () => void }[] = [
+        { id: 'overview', label: 'Dashboard Overview', icon: <Activity className="w-5 h-5 mr-3" /> },
+        { id: 'analytics', label: 'Intelligence Hub', icon: <BarChart2 className="w-5 h-5 mr-3" /> },
+        { id: 'courses', label: 'Course Manager', icon: <FileText className="w-5 h-5 mr-3" /> },
+        { id: 'scraper', label: 'PDF Scraper Hub', icon: <FilePlus className="w-5 h-5 mr-3" />, onSelect: () => setDraftToEdit(null) },
+        { id: 'drafts', label: 'Drafts Vault', icon: <Folder className="w-5 h-5 mr-3" /> },
+        { id: 'quizpool', label: 'Quiz Pool', icon: <HelpCircle className="w-5 h-5 mr-3" /> },
+        { id: 'exam-structure', label: 'Exam Structure', icon: <Layers className="w-5 h-5 mr-3" /> },
+    ];
+
+    const navLabel = NAV_BUTTONS.find(n => n.id === activeTab)?.label || 'Admin';
+
+    const SidebarContents = (
+        <>
+            <div className="p-4 border-b dark:border-gray-700 flex items-center justify-between">
+                <h2 className="text-2xl font-bold text-orange-600">AdminPanel</h2>
+                <button
+                    onClick={() => setSidebarOpen(false)}
+                    className="md:hidden p-1.5 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    aria-label="Close navigation"
+                >
+                    <X className="w-5 h-5" />
+                </button>
+            </div>
+            <nav className="flex-1 mt-4 overflow-y-auto">
+                {NAV_BUTTONS.map(item => (
+                    <button
+                        key={item.id}
+                        onClick={() => { item.onSelect?.(); handleTabSelect(item.id); }}
+                        className={`w-full flex items-center px-4 py-3 text-left ${activeTab === item.id ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}
+                    >
+                        {item.icon} {item.label}
+                    </button>
+                ))}
+            </nav>
+        </>
+    );
+
     return (
-        <div className="flex h-screen bg-gray-100 dark:bg-gray-900">
-            {/* Sidebar */}
-            <aside className="w-64 bg-white dark:bg-gray-800 shadow-md flex flex-col">
-                <div className="p-4 border-b dark:border-gray-700">
-                    <h2 className="text-2xl font-bold text-orange-600">AdminPanel</h2>
-                </div>
-                <nav className="flex-1 mt-4">
-                    <button onClick={() => setActiveTab('overview')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'overview' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
-                        <Activity className="w-5 h-5 mr-3" /> Dashboard Overview
-                    </button>
-                    <button onClick={() => setActiveTab('analytics')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'analytics' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
-                        <BarChart2 className="w-5 h-5 mr-3" /> Intelligence Hub
-                    </button>
-                    <button onClick={() => setActiveTab('courses')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'courses' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
-                        <FileText className="w-5 h-5 mr-3" /> Course Manager
-                    </button>
-                    <button onClick={() => { setActiveTab('scraper'); setDraftToEdit(null); }} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'scraper' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
-                        <FilePlus className="w-5 h-5 mr-3" /> PDF Scraper Hub
-                    </button>
-                    <button onClick={() => setActiveTab('drafts')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'drafts' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
-                        <Folder className="w-5 h-5 mr-3" /> Drafts Vault
-                    </button>
-                    <button onClick={() => setActiveTab('quizpool')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'quizpool' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
-                        <HelpCircle className="w-5 h-5 mr-3" /> Quiz Pool
-                    </button>
-                    <button onClick={() => setActiveTab('exam-structure')} className={`w-full flex items-center px-4 py-3 text-left ${activeTab === 'exam-structure' ? 'text-orange-600 bg-orange-50 dark:bg-gray-700' : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}>
-                        <Layers className="w-5 h-5 mr-3" /> Exam Structure
-                    </button>
-                </nav>
+        <div className="flex h-screen bg-gray-100 dark:bg-gray-900 overflow-hidden">
+            {/* Desktop Sidebar */}
+            <aside className="w-64 bg-white dark:bg-gray-800 shadow-md hidden md:flex flex-col">
+                {SidebarContents}
+            </aside>
+
+            {/* Mobile Drawer + Backdrop */}
+            {sidebarOpen && (
+                <div
+                    className="md:hidden fixed inset-0 bg-gray-900/50 backdrop-blur-sm z-40"
+                    onClick={() => setSidebarOpen(false)}
+                    aria-hidden="true"
+                />
+            )}
+            <aside
+                className={`md:hidden fixed inset-y-0 left-0 w-72 max-w-[85vw] bg-white dark:bg-gray-800 shadow-2xl flex flex-col z-50 transform transition-transform duration-300 ease-out ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
+            >
+                {SidebarContents}
             </aside>
 
             {/* Main Content */}
-            <main className="flex-1 p-8 overflow-y-auto w-full">
+            <div className="flex-1 flex flex-col min-w-0">
+                {/* Mobile Top Bar */}
+                <div className="md:hidden flex items-center justify-between bg-white dark:bg-gray-800 border-b dark:border-gray-700 px-4 py-3 shadow-sm flex-shrink-0">
+                    <button
+                        onClick={() => setSidebarOpen(true)}
+                        className="p-2 -ml-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                        aria-label="Open navigation"
+                    >
+                        <Menu className="w-5 h-5" />
+                    </button>
+                    <span className="font-bold text-gray-800 dark:text-white truncate">{navLabel}</span>
+                    <span className="text-xs font-bold text-orange-600">Admin</span>
+                </div>
+
+                <main className="flex-1 p-4 sm:p-6 md:p-8 overflow-y-auto overflow-x-hidden w-full">
                 {activeTab === 'overview' && (
                     <>
-                        <h1 className="text-3xl font-semibold text-gray-800 dark:text-white mb-6">Overview</h1>
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-                            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
-                                <h3 className="text-gray-500 text-sm font-medium">Active Courses</h3>
-                                <p className="text-3xl font-bold text-gray-800 dark:text-white mt-2">{courses.length}</p>
+                        <h1 className="text-2xl sm:text-3xl font-semibold text-gray-800 dark:text-white mb-6">Overview</h1>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-8">
+                            <div className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
+                                <h3 className="text-gray-500 text-xs sm:text-sm font-medium">Active Courses</h3>
+                                <p className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white mt-2">{courses.length}</p>
                             </div>
-                            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
-                                <h3 className="text-gray-500 text-sm font-medium">Published Tests</h3>
-                                <p className="text-3xl font-bold text-gray-800 dark:text-white mt-2">{tests.length}</p>
+                            <div className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
+                                <h3 className="text-gray-500 text-xs sm:text-sm font-medium">Published Tests</h3>
+                                <p className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-white mt-2">{tests.length}</p>
                             </div>
                         </div>
-                        <p className="text-sm text-gray-400">👉 Head to <button className="text-orange-500 font-semibold" onClick={() => setActiveTab('analytics')}>Intelligence Hub</button> for deep analytics.</p>
+                        <p className="text-sm text-gray-400">👉 Head to <button className="text-orange-500 font-semibold" onClick={() => handleTabSelect('analytics')}>Intelligence Hub</button> for deep analytics.</p>
                     </>
                 )}
 
@@ -137,12 +186,12 @@ export const AdminDashboard = () => {
 
                 {activeTab === 'drafts' && (
                     <div className="space-y-6">
-                        <div className="flex justify-between items-center bg-yellow-50 dark:bg-gray-800 p-6 rounded-lg border border-yellow-200 dark:border-gray-700">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 bg-yellow-50 dark:bg-gray-800 p-4 sm:p-6 rounded-lg border border-yellow-200 dark:border-gray-700">
                             <div>
-                                <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">Drafts Vault</h1>
-                                <p className="text-gray-600 dark:text-gray-400 mt-1">Manage mock tests that have been saved but not yet published to the main Course Manager.</p>
+                                <h1 className="text-2xl sm:text-3xl font-semibold text-gray-800 dark:text-white">Drafts Vault</h1>
+                                <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">Manage mock tests that have been saved but not yet published to the main Course Manager.</p>
                             </div>
-                            <div className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-bold">
+                            <div className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full font-bold self-start sm:self-auto">
                                 {drafts.length} Drafts
                             </div>
                         </div>
@@ -243,7 +292,8 @@ export const AdminDashboard = () => {
                 {activeTab === 'quizpool' && <AdminQuizPoolManager />}
 
                 {activeTab === 'exam-structure' && <AdminExamStructureManager />}
-            </main>
+                </main>
+            </div>
         </div>
     );
 };

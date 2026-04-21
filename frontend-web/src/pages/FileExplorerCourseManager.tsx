@@ -345,7 +345,7 @@ export const FileExplorerCourseManager: React.FC<Props> = ({
                 ))}
             </div>
 
-            <div className="flex gap-5">
+            <div className="flex flex-col lg:flex-row gap-5">
                 {/* Main Area */}
                 <div className="flex-1 min-w-0">
                     {currentLevel > 0 && (
@@ -496,9 +496,9 @@ export const FileExplorerCourseManager: React.FC<Props> = ({
                     )}
                 </div>
 
-                {/* Published Tests Sidebar */}
-                <div className="w-72 flex-shrink-0">
-                    <div className="bg-white border border-gray-100 rounded-xl shadow-sm sticky top-8 overflow-hidden">
+                {/* Published Tests Sidebar — below on mobile, aside on desktop */}
+                <div className="w-full lg:w-72 flex-shrink-0">
+                    <div className="bg-white border border-gray-100 rounded-xl shadow-sm lg:sticky lg:top-8 overflow-hidden">
                         <div className="p-4 border-b border-gray-50 bg-gradient-to-br from-green-50 to-emerald-50">
                             <div className="flex items-center justify-between mb-1">
                                 <h3 className="font-bold text-green-800 text-sm flex items-center gap-2">

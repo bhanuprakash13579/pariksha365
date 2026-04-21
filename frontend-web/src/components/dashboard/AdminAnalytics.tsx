@@ -49,7 +49,7 @@ export const AdminAnalytics: React.FC = () => {
     }, []);
 
     if (loading) return (
-        <div className="grid grid-cols-4 gap-4 animate-pulse">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 animate-pulse">
             {Array.from({ length: 8 }).map((_, i) => (
                 <div key={i} className="bg-gray-100 rounded-xl h-24" />
             ))}
@@ -90,12 +90,12 @@ export const AdminAnalytics: React.FC = () => {
     return (
         <div className="space-y-8">
             {/* Header */}
-            <div className="flex items-center justify-between">
-                <div>
-                    <h2 className="text-2xl font-black text-gray-900 flex items-center gap-2">
-                        <BarChart2 className="w-6 h-6 text-indigo-500" /> Admin Intelligence
+            <div className="flex flex-wrap items-center justify-between gap-3">
+                <div className="min-w-0">
+                    <h2 className="text-xl sm:text-2xl font-black text-gray-900 flex items-center gap-2">
+                        <BarChart2 className="w-5 h-5 sm:w-6 sm:h-6 text-indigo-500" /> Admin Intelligence
                     </h2>
-                    <p className="text-sm text-gray-400 mt-0.5">Cached · refreshes every 5 min · zero performance cost</p>
+                    <p className="text-xs sm:text-sm text-gray-400 mt-0.5">Cached · refreshes every 5 min · zero performance cost</p>
                 </div>
             </div>
 
@@ -108,7 +108,7 @@ export const AdminAnalytics: React.FC = () => {
             </div>
 
             {/* Health Bar */}
-            <div className="bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-100 rounded-xl p-5 grid grid-cols-3 gap-6">
+            <div className="bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-100 rounded-xl p-5 grid grid-cols-1 sm:grid-cols-3 gap-6">
                 {[
                     { label: 'Completion Rate', value: health.overall_completion_rate, suffix: '%', color: 'blue' },
                     { label: 'Avg Accuracy', value: health.overall_avg_accuracy, suffix: '%', color: 'green' },

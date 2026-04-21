@@ -689,7 +689,7 @@ const TaxonomyTab = ({ setToast, onTaxonomyChange }: { setToast: any; onTaxonomy
 
             {showAdd && (
                 <div className="bg-white dark:bg-gray-800 rounded-xl border p-4 mb-4">
-                    <div className="grid grid-cols-2 gap-3 mb-2">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-2">
                         <input type="text" placeholder="Subject (e.g. Polity)" value={addForm.subject}
                             onChange={e => setAddForm(p => ({ ...p, subject: e.target.value }))}
                             className="px-3 py-2 border rounded-lg text-sm dark:bg-gray-900 dark:border-gray-700 dark:text-white" />
@@ -697,7 +697,7 @@ const TaxonomyTab = ({ setToast, onTaxonomyChange }: { setToast: any; onTaxonomy
                             onChange={e => setAddForm(p => ({ ...p, topic: e.target.value }))}
                             className="px-3 py-2 border rounded-lg text-sm dark:bg-gray-900 dark:border-gray-700 dark:text-white" />
                     </div>
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <input type="text" placeholder="Topic Code (e.g. POL_FR)" value={addForm.topic_code}
                             onChange={e => setAddForm(p => ({ ...p, topic_code: e.target.value.toUpperCase() }))}
                             className="px-3 py-2 border rounded-lg text-sm font-mono dark:bg-gray-900 dark:border-gray-700 dark:text-white" />
@@ -815,7 +815,7 @@ const QuestionEditor = ({ form, setForm, editing, saving, onSave, onClose, topic
                         <p className="text-xs text-gray-400 mt-1">Leave blank if no image is needed.</p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <label className="block text-sm font-semibold mb-1">Subject</label>
                             <input type="text" value={form.subject} readOnly

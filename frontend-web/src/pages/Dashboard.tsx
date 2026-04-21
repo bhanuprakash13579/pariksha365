@@ -249,15 +249,15 @@ export const StudentDashboard = () => {
             <div className="flex-1 flex flex-col min-h-screen overflow-hidden relative">
 
                 {/* Top Header */}
-                <header className="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-4 sm:px-6 lg:px-8 shadow-sm relative z-10 w-full">
+                <header className="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-3 sm:px-6 lg:px-8 shadow-sm relative z-10 w-full gap-2">
 
                     {/* Mobile Logo (hidden on desktop) */}
-                    <div className="md:hidden flex items-center">
+                    <div className="md:hidden flex items-center flex-shrink-0">
                         <img src="/logo_square.png" alt="Pariksha365" className="h-10 w-10 object-contain rounded-full bg-white shadow-sm ring-2 ring-orange-300/30 p-1 mix-blend-multiply" />
                     </div>
 
                     {/* Search Bar */}
-                    <div className="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-start">
+                    <div className="flex-1 flex justify-center px-0 sm:px-2 lg:ml-6 lg:justify-start min-w-0">
                         <div className="max-w-lg w-full lg:max-w-xs relative" ref={searchRef}>
                             <label htmlFor="search" className="sr-only">Search</label>
                             <div className="relative">
@@ -324,21 +324,23 @@ export const StudentDashboard = () => {
                         </div>
                     </div>
 
-                    {/* Global Goal Switcher */}
-                    <div className="hidden lg:block relative ml-4">
+                    {/* Global Goal Switcher (desktop full + mobile compact) */}
+                    <div className="relative ml-2 sm:ml-4">
                         <button
                             onClick={() => setIsGoalDropdownOpen(!isGoalDropdownOpen)}
                             disabled={savingGoal}
-                            className="flex items-center gap-2 bg-orange-50 hover:bg-orange-100 border border-orange-200 px-4 py-2 rounded-xl text-orange-900 font-bold transition-colors"
+                            className="flex items-center gap-1.5 sm:gap-2 bg-orange-50 hover:bg-orange-100 border border-orange-200 px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-orange-900 font-bold transition-colors text-xs sm:text-sm"
                         >
-                            🎯 Target: {savingGoal ? 'Saving...' : globalExamGoalName}
-                            <svg className={`w-4 h-4 transition-transform ${isGoalDropdownOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <span className="hidden sm:inline">🎯 Target: </span>
+                            <span className="sm:hidden">🎯</span>
+                            <span className="max-w-[90px] sm:max-w-none truncate">{savingGoal ? 'Saving...' : globalExamGoalName}</span>
+                            <svg className={`w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform ${isGoalDropdownOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
 
                         {isGoalDropdownOpen && (
-                            <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
+                            <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50 max-h-[70vh] overflow-y-auto">
                                 <div className="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b border-gray-50 mb-2">
                                     Change Exam Goal
                                 </div>
@@ -372,15 +374,15 @@ export const StudentDashboard = () => {
                     </div>
 
                     {/* Right User Actions */}
-                    <div className="ml-4 flex items-center md:ml-6 space-x-4">
-                        <button className="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition-colors">
+                    <div className="ml-1 sm:ml-4 flex items-center md:ml-6 space-x-2 sm:space-x-4 flex-shrink-0">
+                        <button className="hidden sm:block bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition-colors">
                             <span className="sr-only">View notifications</span>
                             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                             </svg>
                         </button>
 
-                        <div className="hidden sm:flex">
+                        <div className="hidden md:flex">
                             <StarRating stars={userStars} points={userPoints} />
                         </div>
 
