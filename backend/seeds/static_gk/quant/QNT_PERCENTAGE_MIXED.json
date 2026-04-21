@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "Percentage — mixed tiers",
+  "topic_code": "QNT_PERCENTAGE_MIXED",
+  "description": "Percentage change, successive discount, population growth, mixed tiers",
+  "questions": [
+    {
+      "stem": "What is 30% of 450?",
+      "options": [
+        {"option_text": "120", "is_correct": false},
+        {"option_text": "135", "is_correct": true},
+        {"option_text": "145", "is_correct": false},
+        {"option_text": "150", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "30% of 450 = (30/100) × 450 = 135.",
+      "subject": "Quant",
+      "topic": "Percentage — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-per-01",
+      "generated_at": "2026-04-22T03:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_MIXED_00001"
+    },
+    {
+      "stem": "A number is first increased by 20% and then decreased by 20%. The net change is:",
+      "options": [
+        {"option_text": "0% (no change)", "is_correct": false},
+        {"option_text": "−4% (decrease of 4%)", "is_correct": true},
+        {"option_text": "+4% (increase of 4%)", "is_correct": false},
+        {"option_text": "−40% (decrease of 40%)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Let number = 100. After +20% → 120. After −20% on 120 → 120 × 0.80 = 96. Net change = −4%. Shortcut: net = a + b + ab/100 = 20 − 20 + (20)(−20)/100 = −4.",
+      "subject": "Quant",
+      "topic": "Percentage — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-per-02",
+      "generated_at": "2026-04-22T03:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_MIXED_00002"
+    },
+    {
+      "stem": "If A's income is 20% more than B's, by what percentage is B's income LESS than A's?",
+      "options": [
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "16⅔%", "is_correct": true},
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "18%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Let B = 100 → A = 120. B is less than A by 20/120 = 1/6 = 16⅔%. Shortcut: if X more = x%, then Y less = x/(100+x) × 100.",
+      "subject": "Quant",
+      "topic": "Percentage — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-per-03",
+      "generated_at": "2026-04-22T03:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_MIXED_00003"
+    },
+    {
+      "stem": "The price of a commodity increased by 25%. By what percentage must a consumer reduce their CONSUMPTION so that total expenditure stays the same?",
+      "options": [
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "20%", "is_correct": true},
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "30%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "If price rises by r%, consumption must fall by r/(100+r) × 100. Here r = 25 → reduction = 25/125 × 100 = 20%. Verify: price 100 → 125. Consumption 100 → 80. Expenditure = 125 × 80 = 10000 same as 100 × 100.",
+      "subject": "Quant",
+      "topic": "Percentage — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-per-04",
+      "generated_at": "2026-04-22T03:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_MIXED_00004"
+    },
+    {
+      "stem": "Two successive discounts of 20% and 10% are equivalent to a SINGLE discount of:",
+      "options": [
+        {"option_text": "30%", "is_correct": false},
+        {"option_text": "28%", "is_correct": true},
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "32%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Successive-percent formula for two reductions: single = a + b − ab/100 = 20 + 10 − (20×10)/100 = 30 − 2 = 28%. Verify: price 100 → 80 → 72. Discount from 100 = 28.",
+      "subject": "Quant",
+      "topic": "Percentage — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-per-05",
+      "generated_at": "2026-04-22T03:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_MIXED_00005"
+    },
+    {
+      "stem": "In an examination, 65% of students passed in Hindi, 55% passed in English, and 45% passed in both. The percentage of students who FAILED in both subjects is:",
+      "options": [
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "25%", "is_correct": true},
+        {"option_text": "30%", "is_correct": false},
+        {"option_text": "15%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Passed in at least one = 65 + 55 − 45 = 75%. So failed in both = 100 − 75 = 25%.",
+      "subject": "Quant",
+      "topic": "Percentage — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-per-06",
+      "generated_at": "2026-04-22T03:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_MIXED_00006"
+    },
+    {
+      "stem": "A population of a town is 10,000 and grows at 10% per annum. The population after 2 years will be:",
+      "options": [
+        {"option_text": "12,000", "is_correct": false},
+        {"option_text": "12,100", "is_correct": true},
+        {"option_text": "11,000", "is_correct": false},
+        {"option_text": "12,200", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Population = 10,000 × (1.10)² = 10,000 × 1.21 = 12,100. (Compound growth — 12,000 would be if we (wrongly) just added 10% twice on the original.)",
+      "subject": "Quant",
+      "topic": "Percentage — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-per-07",
+      "generated_at": "2026-04-22T03:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_MIXED_00007"
+    },
+    {
+      "stem": "A student scored 35% marks and failed by 40 marks. Another student scored 50% marks and got 50 marks more than the PASS MARK. What are the MAXIMUM marks?",
+      "options": [
+        {"option_text": "500", "is_correct": false},
+        {"option_text": "600", "is_correct": true},
+        {"option_text": "700", "is_correct": false},
+        {"option_text": "800", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Let max = M. Pass mark = 0.35 M + 40 = 0.50 M − 50. Solve: 40 + 50 = 0.50 M − 0.35 M → 90 = 0.15 M → M = 600.",
+      "subject": "Quant",
+      "topic": "Percentage — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-per-08",
+      "generated_at": "2026-04-22T03:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_MIXED_00008"
+    }
+  ]
+}

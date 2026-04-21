@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Blood relations — mixed tiers",
+  "topic_code": "REAS_BLOOD_RELATION_MIXED",
+  "description": "Family/relationship logic including generational and coded-relation problems",
+  "questions": [
+    {
+      "stem": "Pointing to a man, Rita said, 'His mother is the only daughter of my mother.' How is the man related to Rita?",
+      "options": [
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Son", "is_correct": true},
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "'Only daughter of my mother' = Rita herself. So his mother is Rita → he is Rita's son.",
+      "subject": "Reasoning",
+      "topic": "Blood relations — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATION_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-br-01",
+      "generated_at": "2026-04-22T03:45:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00001"
+    },
+    {
+      "stem": "If A is the brother of B, B is the sister of C, and C is the father of D, how is D related to A?",
+      "options": [
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Niece or nephew (gender not specified)", "is_correct": true},
+        {"option_text": "Cousin", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "A and C are siblings (both have B as sibling). D is C's child → D is A's niece/nephew. Gender of D is not stated so the safest answer is 'niece or nephew'.",
+      "subject": "Reasoning",
+      "topic": "Blood relations — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-br-02",
+      "generated_at": "2026-04-22T03:45:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00002"
+    },
+    {
+      "stem": "Pointing to a photograph, a man said, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph was it?",
+      "options": [
+        {"option_text": "His own", "is_correct": false},
+        {"option_text": "His son's", "is_correct": true},
+        {"option_text": "His father's", "is_correct": false},
+        {"option_text": "His nephew's", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "'My father's son' with no siblings = the man himself. So 'that man's father = the speaker' → the photograph is of the speaker's son.",
+      "subject": "Reasoning",
+      "topic": "Blood relations — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-br-03",
+      "generated_at": "2026-04-22T03:45:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00003"
+    },
+    {
+      "stem": "P is the brother of Q. Q is the brother of R. S is the father of P. How is R related to S?",
+      "options": [
+        {"option_text": "Son", "is_correct": false},
+        {"option_text": "Daughter", "is_correct": false},
+        {"option_text": "Son or daughter (gender of R unknown)", "is_correct": true},
+        {"option_text": "Grandson", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "P, Q, R are siblings. S is P's father → S is also R's father. R's gender isn't stated, so answer: S's son or daughter.",
+      "subject": "Reasoning",
+      "topic": "Blood relations — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATION_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-br-04",
+      "generated_at": "2026-04-22T03:45:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00004"
+    },
+    {
+      "stem": "In a family, A + B means A is the mother of B; A − B means A is the brother of B; A × B means A is the father of B; A ÷ B means A is the daughter of B. Which expression shows that P is the maternal uncle of Q?",
+      "options": [
+        {"option_text": "P − M + Q", "is_correct": true},
+        {"option_text": "P × M ÷ Q", "is_correct": false},
+        {"option_text": "P + M − Q", "is_correct": false},
+        {"option_text": "Q − M + P", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Maternal uncle = mother's brother. We need P as brother of Q's mother M. P − M (P is brother of M) + M + Q (M is mother of Q) → P − M + Q. Option A captures this relation.",
+      "subject": "Reasoning",
+      "topic": "Blood relations — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATION_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-br-05",
+      "generated_at": "2026-04-22T03:45:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00005"
+    },
+    {
+      "stem": "Introducing a woman, a man said, 'Her mother is the only daughter of my mother-in-law.' How is the woman related to the man?",
+      "options": [
+        {"option_text": "Daughter", "is_correct": true},
+        {"option_text": "Sister", "is_correct": false},
+        {"option_text": "Wife", "is_correct": false},
+        {"option_text": "Niece", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "'Only daughter of my mother-in-law' = the man's wife. So the woman's mother is the man's wife → the woman is the man's daughter.",
+      "subject": "Reasoning",
+      "topic": "Blood relations — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-br-06",
+      "generated_at": "2026-04-22T03:45:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00006"
+    }
+  ]
+}
