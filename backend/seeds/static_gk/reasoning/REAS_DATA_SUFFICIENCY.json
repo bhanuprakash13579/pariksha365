@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Data Sufficiency",
+  "topic_code": "REAS_DATA_SUFFICIENCY",
+  "description": null,
+  "questions": [
+    {
+      "stem": "Question: How old is Ravi? I: Ravi is 5 years older than his brother. II: His brother is 18. Which suffices?",
+      "options": [
+        {"option_text": "I alone suffices", "is_correct": false},
+        {"option_text": "II alone suffices", "is_correct": false},
+        {"option_text": "Both together suffice; neither alone", "is_correct": true},
+        {"option_text": "Neither I nor II suffices", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "I alone: gives a RELATION, not an age. II alone: gives brother's age but not Ravi's. Together: Ravi = 18 + 5 = 23. Standard DS template.",
+      "subject": "Reasoning",
+      "topic": "Data Sufficiency",
+      "topic_code": "REAS_DATA_SUFFICIENCY",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-ds-01",
+      "generated_at": "2026-04-21T14:35:00+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00001"
+    },
+    {
+      "stem": "Question: Is x > 10? I: x² > 100. II: x > 0.",
+      "options": [
+        {"option_text": "I alone suffices", "is_correct": false},
+        {"option_text": "II alone suffices", "is_correct": false},
+        {"option_text": "Both together suffice", "is_correct": true},
+        {"option_text": "Neither alone nor together", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "I alone: x² > 100 → x > 10 OR x < −10 (e.g., x = −20 also works) — not enough. II alone: x > 0 doesn't bound magnitude. Together: x > 0 AND x² > 100 → x > 10 definitely. Sign-ambiguity is a classic DS trap.",
+      "subject": "Reasoning",
+      "topic": "Data Sufficiency",
+      "topic_code": "REAS_DATA_SUFFICIENCY",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-ds-02",
+      "generated_at": "2026-04-21T14:35:00+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00002"
+    },
+    {
+      "stem": "Question: What is Mohan's profession? I: He works in a hospital. II: He wears a white coat.",
+      "options": [
+        {"option_text": "I alone suffices", "is_correct": false},
+        {"option_text": "II alone suffices", "is_correct": false},
+        {"option_text": "Both together suffice", "is_correct": false},
+        {"option_text": "Neither alone nor together suffices", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "explanation": "Neither clue isolates a single profession. 'Hospital worker' could be doctor, nurse, technician, janitor, admin. 'White coat' adds flavour but still matches doctor/dentist/pharmacist/lab-tech. Even together, ambiguous.",
+      "subject": "Reasoning",
+      "topic": "Data Sufficiency",
+      "topic_code": "REAS_DATA_SUFFICIENCY",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-ds-03",
+      "generated_at": "2026-04-21T14:35:00+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00003"
+    },
+    {
+      "stem": "Question: In what year was X born? I: He is 25 years old today. II: Today's date is 21 April 2026.",
+      "options": [
+        {"option_text": "I alone suffices", "is_correct": false},
+        {"option_text": "II alone suffices", "is_correct": false},
+        {"option_text": "Both together suffice", "is_correct": true},
+        {"option_text": "Neither alone suffices", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "I gives age but no reference date (today could be anywhere). II gives reference date but no age. Together: 2026 − 25 = 2001 (with ±1 year month-ambiguity — some DS exams accept this).",
+      "subject": "Reasoning",
+      "topic": "Data Sufficiency",
+      "topic_code": "REAS_DATA_SUFFICIENCY",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-ds-04",
+      "generated_at": "2026-04-21T14:35:00+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00004"
+    },
+    {
+      "stem": "Question: How many boys are in a class? I: There are 40 students. II: The boy-to-girl ratio is 3:2.",
+      "options": [
+        {"option_text": "I alone suffices", "is_correct": false},
+        {"option_text": "II alone suffices", "is_correct": false},
+        {"option_text": "Both together suffice", "is_correct": true},
+        {"option_text": "Neither alone suffices", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "I alone: doesn't say how boys/girls split. II alone: gives ratio but no absolute count. Together: 3/5 × 40 = 24 boys.",
+      "subject": "Reasoning",
+      "topic": "Data Sufficiency",
+      "topic_code": "REAS_DATA_SUFFICIENCY",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-ds-05",
+      "generated_at": "2026-04-21T14:35:00+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00005"
+    },
+    {
+      "stem": "Question: Is P an integer? I: P² is an integer. II: P + 1 is an integer.",
+      "options": [
+        {"option_text": "I alone suffices", "is_correct": false},
+        {"option_text": "II alone suffices", "is_correct": true},
+        {"option_text": "Both together suffice", "is_correct": false},
+        {"option_text": "Neither alone suffices", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "I alone fails: P = √2 gives P² = 2 integer but P irrational. II alone succeeds: integer − 1 = integer, so P is integer. 'II alone but not I' is a flagged DS pattern worth memorising.",
+      "subject": "Reasoning",
+      "topic": "Data Sufficiency",
+      "topic_code": "REAS_DATA_SUFFICIENCY",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-ds-06",
+      "generated_at": "2026-04-21T14:35:00+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00006"
+    }
+  ]
+}
