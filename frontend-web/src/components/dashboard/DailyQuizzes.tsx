@@ -360,15 +360,30 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                 ))}
             </div>
 
-            {/* Empty state if no weak topics */}
-            {(!weakQuiz || !weakQuiz.weak_topics || weakQuiz.weak_topics.length === 0) && (
-                <div className="mt-10 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-8 text-center border border-indigo-100">
-                    <div className="text-4xl mb-4">📝</div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Take a Mock Test First!</h3>
-                    <p className="text-gray-600 max-w-md mx-auto">
-                        Once you attempt a mock test, we'll automatically analyze your performance and create
-                        a personalized quiz targeting your exact weak areas.
-                    </p>
+            {/* Practice-mode CTA when no weak topics yet — still clickable, no mock required */}
+            {(!weakQuiz || !weakQuiz.weak_topics || weakQuiz.weak_topics.length === 0) &&
+             weakQuiz?.questions && weakQuiz.questions.length > 0 && (
+                <div className="mt-10 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 border border-indigo-100">
+                    <div className="flex items-start gap-4 mb-4">
+                        <div className="w-14 h-14 rounded-2xl bg-indigo-100 flex items-center justify-center flex-shrink-0">
+                            <span className="text-2xl">🚀</span>
+                        </div>
+                        <div>
+                            <h3 className="text-lg font-bold text-gray-900">Quick Practice</h3>
+                            <p className="text-sm text-gray-600 mt-1">
+                                {weakQuiz.message || "Start practising — we'll auto-learn your weak topics as you go."}
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex items-center justify-between">
+                        <div className="text-sm text-gray-500">
+                            {weakQuiz.questions.length} questions ready
+                        </div>
+                        <button onClick={startWeakTopicPractice}
+                            className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-3 rounded-xl transition-all transform hover:scale-105 shadow-lg shadow-indigo-200">
+                            Start Practice →
+                        </button>
+                    </div>
                 </div>
             )}
         </div>

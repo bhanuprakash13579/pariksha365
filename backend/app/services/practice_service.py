@@ -66,10 +66,11 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
 
 async def get_weak_topic_quiz(db: AsyncSession, user_id: uuid.UUID, limit: int = 10) -> dict:
     """
-    Personalized quiz using DETERMINISTIC topic_code matching.
-    1. Get user's weak topics (sorted by worst accuracy)
-    2. For each weak topic, match quiz questions by topic_code (exact) or subject (fallback)
-    3. Prioritize: unattempted → wrong → all, ordered EASY→MED→HARD
+    Personalized practice quiz.
+    - If user has weak topics (from mocks / PYQs / quiz practice): suggested questions first,
+      then high-priority fill to always give `limit` questions.
+    - If no weak topics yet: return high-priority unattempted questions across a balanced subject mix,
+      so the student can practice from day 1 without needing a mock test first.
     """
     stmt = (
         select(UserWeakTopic)
@@ -78,10 +79,7 @@ async def get_weak_topic_quiz(db: AsyncSession, user_id: uuid.UUID, limit: int =
     )
     weak_topics = (await db.execute(stmt)).scalars().all()
 
-    if not weak_topics:
-        return {"questions": [], "weak_topics": [], "message": "No weak topics detected yet. Take a mock test first!"}
-
-    # Get user's attempted + wrong question IDs
+    # Get user's attempted + wrong question IDs (needed for both paths)
     attempted_ids = set(r[0] for r in (await db.execute(
         select(QuizAttempt.question_id).where(QuizAttempt.user_id == user_id)
     )).all())
@@ -94,8 +92,8 @@ async def get_weak_topic_quiz(db: AsyncSession, user_id: uuid.UUID, limit: int =
     questions = []
     weak_topic_info = []
 
+    # ── Path 1: we have weak topics → suggested-first ──
     for wt in weak_topics:
-        # Resolve display name from topic_code
         display_info = None
         if wt.topic_code:
             display_info = await taxonomy_service.resolve_topic_code(db, wt.topic_code)
@@ -103,7 +101,6 @@ async def get_weak_topic_quiz(db: AsyncSession, user_id: uuid.UUID, limit: int =
         display_subject = display_info["subject"] if display_info else wt.subject
         display_topic = display_info["topic"] if display_info else (wt.topic or "General")
 
-        # Get mastery info
         mastery = await _get_or_create_mastery(db, user_id, display_subject, display_topic, wt.topic_code)
 
         weak_topic_info.append({
@@ -116,13 +113,13 @@ async def get_weak_topic_quiz(db: AsyncSession, user_id: uuid.UUID, limit: int =
             "coverage": f"{mastery.attempted_count}/{mastery.total_available}" if mastery else "0/0",
         })
 
-        per_topic = max(2, limit // len(weak_topics))
+        per_topic = max(2, limit // max(1, len(weak_topics)))
         topic_qs = await _fetch_prioritized_questions(
             db, wt.topic_code, display_subject, display_topic, per_topic, attempted_ids, wrong_ids
         )
         questions.extend(topic_qs)
 
-    # Deduplicate
+    # Deduplicate suggested pool
     seen = set()
     unique_qs = []
     for q in questions:
@@ -130,11 +127,56 @@ async def get_weak_topic_quiz(db: AsyncSession, user_id: uuid.UUID, limit: int =
             seen.add(q.id)
             unique_qs.append(q)
 
+    suggested_count = len(unique_qs)
+
+    # ── Path 2: fill remainder with high-priority practice so we ALWAYS return `limit` questions ──
+    if len(unique_qs) < limit:
+        already = set(q.id for q in unique_qs)
+        exclude = already | attempted_ids  # prefer unattempted first
+        fill_stmt = (
+            select(QuizQuestion)
+            .where(QuizQuestion.id.not_in(exclude) if exclude else True)
+            .order_by(func.random())
+            .limit(limit - len(unique_qs))
+        )
+        fillers = (await db.execute(fill_stmt)).scalars().all()
+
+        # If still short (user has attempted huge chunk), open to wrong-answer revisits
+        if len(fillers) < limit - len(unique_qs) and wrong_ids:
+            extra_exclude = already | {f.id for f in fillers}
+            pool = wrong_ids - extra_exclude
+            if pool:
+                more = (await db.execute(
+                    select(QuizQuestion).where(QuizQuestion.id.in_(pool))
+                    .order_by(func.random()).limit(limit - len(unique_qs) - len(fillers))
+                )).scalars().all()
+                fillers.extend(more)
+
+        # Last resort: any question, even attempted
+        if len(fillers) < limit - len(unique_qs):
+            extra_exclude = already | {f.id for f in fillers}
+            any_stmt = (
+                select(QuizQuestion)
+                .where(QuizQuestion.id.not_in(extra_exclude) if extra_exclude else True)
+                .order_by(func.random()).limit(limit - len(unique_qs) - len(fillers))
+            )
+            fillers.extend((await db.execute(any_stmt)).scalars().all())
+
+        unique_qs.extend(fillers)
+
+    # Build messaging
+    if weak_topic_info:
+        message = (f"Based on your performance, we found {len(weak_topic_info)} weak area(s) to improve. "
+                   f"Showing {suggested_count} suggested question(s) + extra practice.")
+    else:
+        message = "Practice mode — keep answering to help us learn your strengths and weaknesses."
+
     return {
         "questions": [_serialize_quiz_question(q) for q in unique_qs[:limit]],
         "weak_topics": weak_topic_info,
-        "total_available": await _count_weak_topic_questions(db, weak_topics),
-        "message": f"Based on your mock test results, we found {len(weak_topic_info)} weak areas to improve."
+        "suggested_count": suggested_count,
+        "total_available": await _count_weak_topic_questions(db, weak_topics) if weak_topics else 0,
+        "message": message,
     }
 
 
@@ -250,13 +292,23 @@ async def get_more_practice(db: AsyncSession, user_id: uuid.UUID, subject: str,
 
 async def submit_quiz_answers(db: AsyncSession, user_id: uuid.UUID, answers: List[dict]) -> dict:
     from app.models.user import User
+    from fastapi import HTTPException
+
     correct = 0
+    skipped = 0
     total = len(answers)
     details = []
     topic_stats = {}  # topic_code → {correct, total, subject, topic}
 
     for ans in answers:
-        q_id = uuid.UUID(ans["question_id"])
+        raw_qid = ans.get("question_id")
+        if not raw_qid:
+            raise HTTPException(status_code=400, detail="Every answer must include a question_id.")
+        try:
+            q_id = uuid.UUID(str(raw_qid))
+        except (ValueError, TypeError):
+            raise HTTPException(status_code=400, detail=f"Invalid question_id: {raw_qid!r}.")
+
         selected_index = ans.get("selected_option_index")
 
         question = (await db.execute(select(QuizQuestion).where(QuizQuestion.id == q_id))).scalars().first()
@@ -277,6 +329,8 @@ async def submit_quiz_answers(db: AsyncSession, user_id: uuid.UUID, answers: Lis
 
         if was_correct:
             correct += 1
+        if selected_index is None:
+            skipped += 1
 
         db.add(QuizAttempt(user_id=user_id, question_id=q_id, was_correct=was_correct))
 
@@ -287,26 +341,36 @@ async def submit_quiz_answers(db: AsyncSession, user_id: uuid.UUID, answers: Lis
                 "correct_option_index": correct_index, "explanation": question.explanation or ""
             })
 
-            # Track by topic_code (deterministic)
-            tc = question.topic_code or f"__{question.subject}_{question.topic}"
+            # Track by topic_code (deterministic), normalised via taxonomy
+            canon_subj, canon_topic, canon_code = await taxonomy_service.normalize(
+                db, question.subject or "General Knowledge", question.topic or "General", question.topic_code
+            )
+            tc = canon_code or f"__{canon_subj}_{canon_topic}"
             if tc not in topic_stats:
-                topic_stats[tc] = {"correct": 0, "total": 0, "subject": question.subject,
-                                   "topic": question.topic, "topic_code": question.topic_code}
+                topic_stats[tc] = {"correct": 0, "total": 0, "subject": canon_subj,
+                                   "topic": canon_topic, "topic_code": canon_code}
             topic_stats[tc]["total"] += 1
             if was_correct:
                 topic_stats[tc]["correct"] += 1
 
     await _update_streak(db, user_id)
-    await db.commit()
 
     # Update mastery per topic
     for tc, stats in topic_stats.items():
         await _update_mastery(db, user_id, stats["subject"], stats["topic"],
                               stats["topic_code"], stats["correct"], stats["total"])
 
+    # Feed weak-topic signal from quiz practice (not only mocks)
+    for tc, stats in topic_stats.items():
+        await _upsert_weak_topic(
+            db, user_id,
+            subject=stats["subject"], topic=stats["topic"], topic_code=stats["topic_code"],
+            correct=stats["correct"], total=stats["total"],
+        )
+
     user = (await db.execute(select(User).where(User.id == user_id))).scalars().first()
-    
-    # Gamification Logic
+
+    # Gamification
     points_earned = correct * 10
     old_stars = user.stars if user else 0
     new_star_unlocked = False
@@ -314,24 +378,23 @@ async def submit_quiz_answers(db: AsyncSession, user_id: uuid.UUID, answers: Lis
 
     if user:
         user.points = (user.points or 0) + points_earned
-        
-        # Determine stars based on points (exponential thresholds)
         total_points = user.points
         if total_points >= 50000: new_stars = 5
         elif total_points >= 15000: new_stars = 4
         elif total_points >= 5000: new_stars = 3
         elif total_points >= 2000: new_stars = 2
         elif total_points >= 500: new_stars = 1
-        
         if new_stars > old_stars:
             user.stars = new_stars
             new_star_unlocked = True
-        
         db.add(user)
 
+    # Single commit covering: quiz attempts + streak + mastery + weak-topic + user points/stars
     await db.commit()
 
     accuracy = (correct / total * 100) if total > 0 else 0
+    answered = total - skipped
+    score_percentage = (correct / answered * 100) if answered > 0 else 0
 
     mastery_info = []
     for tc, stats in topic_stats.items():
@@ -345,12 +408,31 @@ async def submit_quiz_answers(db: AsyncSession, user_id: uuid.UUID, answers: Lis
                 "coverage": f"{mastery.attempted_count}/{mastery.total_available}",
             })
 
+    # Identify THIS session's weak spots (for the scorecard focus-areas panel)
+    session_weak_topics = [
+        {"subject": s["subject"], "topic": s["topic"], "topic_code": s["topic_code"],
+         "accuracy": round((s["correct"] / s["total"] * 100) if s["total"] else 0, 1)}
+        for s in topic_stats.values() if s["total"] >= 2 and (s["correct"] / s["total"]) < 0.6
+    ]
+
+    nudge = _get_encouragement(accuracy)
+
     return {
-        "total": total, "correct": correct, "incorrect": total - correct,
-        "accuracy": round(accuracy, 1), "details": details,
-        "encouragement": _get_encouragement(accuracy), "mastery": mastery_info,
-        "points_earned": points_earned, "total_points": user.points if user else 0,
-        "stars": user.stars if user else 0, "new_star_unlocked": new_star_unlocked
+        "total": total,
+        "correct": correct,
+        "incorrect": answered - correct,
+        "skipped": skipped,
+        "accuracy": round(accuracy, 1),
+        "score_percentage": round(score_percentage, 1),
+        "details": details,
+        "encouragement": nudge,
+        "nudge": nudge,
+        "mastery": mastery_info,
+        "weak_topics": session_weak_topics,
+        "points_earned": points_earned,
+        "total_points": user.points if user else 0,
+        "stars": user.stars if user else 0,
+        "new_star_unlocked": new_star_unlocked,
     }
 
 
@@ -398,42 +480,63 @@ async def update_weak_topics_from_attempt(db: AsyncSession, user_id: uuid.UUID, 
 
     # Upsert UserWeakTopic — match by topic_code (deterministic)
     for key, stats in topic_map.items():
-        accuracy = (stats["correct"] / stats["total"] * 100) if stats["total"] > 0 else 0
-        topic_code = stats["topic_code"]
-
-        # Try to find existing by topic_code first, then by text
-        existing = None
-        if topic_code:
-            existing = (await db.execute(
-                select(UserWeakTopic).where(
-                    UserWeakTopic.user_id == user_id, UserWeakTopic.topic_code == topic_code
-                )
-            )).scalars().first()
-
-        if not existing:
-            existing = (await db.execute(
-                select(UserWeakTopic).where(
-                    UserWeakTopic.user_id == user_id,
-                    UserWeakTopic.subject == stats["subject"],
-                    UserWeakTopic.topic == stats["topic"]
-                )
-            )).scalars().first()
-
-        if existing:
-            existing.total_questions += stats["total"]
-            existing.correct_count += stats["correct"]
-            existing.accuracy = (existing.correct_count / existing.total_questions * 100) if existing.total_questions > 0 else 0
-            if topic_code and not existing.topic_code:
-                existing.topic_code = topic_code  # Backfill code for legacy records
-            db.add(existing)
-        else:
-            db.add(UserWeakTopic(
-                user_id=user_id, subject=stats["subject"], topic=stats["topic"],
-                topic_code=topic_code, accuracy=accuracy,
-                total_questions=stats["total"], correct_count=stats["correct"]
-            ))
+        await _upsert_weak_topic(
+            db, user_id,
+            subject=stats["subject"], topic=stats["topic"], topic_code=stats["topic_code"],
+            correct=stats["correct"], total=stats["total"],
+        )
 
     await db.commit()
+
+
+async def _upsert_weak_topic(
+    db: AsyncSession, user_id: uuid.UUID,
+    *, subject: str, topic: str, topic_code: Optional[str],
+    correct: int, total: int,
+) -> None:
+    """
+    Shared upsert for UserWeakTopic. Called from BOTH
+    (a) mock-test submission (via `update_weak_topics_from_attempt`), and
+    (b) practice-quiz submission (via `submit_quiz_answers`).
+    Caller is responsible for commit.
+    """
+    if total <= 0:
+        return
+
+    existing = None
+    if topic_code:
+        existing = (await db.execute(
+            select(UserWeakTopic).where(
+                UserWeakTopic.user_id == user_id, UserWeakTopic.topic_code == topic_code
+            )
+        )).scalars().first()
+
+    if not existing:
+        existing = (await db.execute(
+            select(UserWeakTopic).where(
+                UserWeakTopic.user_id == user_id,
+                UserWeakTopic.subject == subject,
+                UserWeakTopic.topic == topic,
+            )
+        )).scalars().first()
+
+    if existing:
+        existing.total_questions += total
+        existing.correct_count += correct
+        existing.accuracy = (
+            (existing.correct_count / existing.total_questions * 100)
+            if existing.total_questions > 0 else 0
+        )
+        if topic_code and not existing.topic_code:
+            existing.topic_code = topic_code  # backfill code for legacy records
+        db.add(existing)
+    else:
+        accuracy = (correct / total * 100) if total > 0 else 0
+        db.add(UserWeakTopic(
+            user_id=user_id, subject=subject, topic=topic,
+            topic_code=topic_code, accuracy=accuracy,
+            total_questions=total, correct_count=correct,
+        ))
 
 
 async def upload_quiz_questions(db: AsyncSession, questions: List[dict]) -> dict:
