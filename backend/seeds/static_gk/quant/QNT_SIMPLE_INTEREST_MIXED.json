@@ -6,12 +6,24 @@
   "description": "Entry → UPSC-CSAT level SI/CI problems",
   "questions": [
     {
-      "stem": "[Clerk tier] What is the simple interest on ₹5,000 at 8% per annum for 2 years?",
+      "stem": "What is the simple interest on ₹5,000 at 8% per annum for 2 years?",
       "options": [
-        {"option_text": "₹400", "is_correct": false},
-        {"option_text": "₹800", "is_correct": true},
-        {"option_text": "₹1,000", "is_correct": false},
-        {"option_text": "₹1,600", "is_correct": false}
+        {
+          "option_text": "₹400",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹800",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,600",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "SI = (P × R × T) / 100 = (5000 × 8 × 2) / 100 = 800.",
@@ -27,12 +39,24 @@
       "id": "sgk_QNT_SIMPLE_INTEREST_MIXED_00001"
     },
     {
-      "stem": "[Clerk tier] A sum doubles itself in 8 years at simple interest. The annual rate of interest is:",
+      "stem": "A sum doubles itself in 8 years at simple interest. The annual rate of interest is:",
       "options": [
-        {"option_text": "10 %", "is_correct": false},
-        {"option_text": "12.5 %", "is_correct": true},
-        {"option_text": "15 %", "is_correct": false},
-        {"option_text": "20 %", "is_correct": false}
+        {
+          "option_text": "10 %",
+          "is_correct": false
+        },
+        {
+          "option_text": "12.5 %",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 %",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 %",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "At SI, if principal doubles in T years, SI = P. So PR·T/100 = P → R·T = 100. With T = 8, R = 12.5 %.",
@@ -48,12 +72,24 @@
       "id": "sgk_QNT_SIMPLE_INTEREST_MIXED_00002"
     },
     {
-      "stem": "[NTPC / CGL tier] The COMPOUND interest on ₹10,000 at 10% per annum for 2 years, compounded annually, is:",
+      "stem": "The COMPOUND interest on ₹10,000 at 10% per annum for 2 years, compounded annually, is:",
       "options": [
-        {"option_text": "₹2,000", "is_correct": false},
-        {"option_text": "₹2,100", "is_correct": true},
-        {"option_text": "₹2,200", "is_correct": false},
-        {"option_text": "₹2,400", "is_correct": false}
+        {
+          "option_text": "₹2,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,100",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹2,200",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,400",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "A = P(1 + r/100)^n = 10000 × (1.1)² = 10000 × 1.21 = 12,100. CI = A − P = 2,100. SI at same rate/period would be 2,000 — a common distractor.",
@@ -69,12 +105,24 @@
       "id": "sgk_QNT_SIMPLE_INTEREST_MIXED_00003"
     },
     {
-      "stem": "[CGL / PO Prelims tier] The difference between CI and SI on ₹8,000 at 10% per annum for 2 years is:",
+      "stem": "The difference between CI and SI on ₹8,000 at 10% per annum for 2 years is:",
       "options": [
-        {"option_text": "₹80", "is_correct": true},
-        {"option_text": "₹100", "is_correct": false},
-        {"option_text": "₹120", "is_correct": false},
-        {"option_text": "₹160", "is_correct": false}
+        {
+          "option_text": "₹80",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹100",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹120",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹160",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "For 2 years, (CI − SI) = P × (R/100)² = 8000 × (0.1)² = 8000 × 0.01 = 80. Useful shortcut formula — avoids computing both CI and SI separately.",
@@ -90,12 +138,24 @@
       "id": "sgk_QNT_SIMPLE_INTEREST_MIXED_00004"
     },
     {
-      "stem": "[PO Mains / UPSC CSAT tier] A sum triples itself in 20 years under SIMPLE interest. In how many years will the same sum become 5 times itself under the same rate?",
+      "stem": "A sum triples itself in 20 years under SIMPLE interest. In how many years will the same sum become 5 times itself under the same rate?",
       "options": [
-        {"option_text": "30 years", "is_correct": false},
-        {"option_text": "40 years", "is_correct": true},
-        {"option_text": "50 years", "is_correct": false},
-        {"option_text": "60 years", "is_correct": false}
+        {
+          "option_text": "30 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 years",
+          "is_correct": true
+        },
+        {
+          "option_text": "50 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 years",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Triples → SI = 2P in 20 years → R = 2P·100 / (P·20) = 10 %. To become 5×: SI = 4P → T = 4P·100/(P·10) = 40 years. SHORTCUT: if a sum becomes k times, T = (k−1) · 100/R.",
@@ -111,12 +171,24 @@
       "id": "sgk_QNT_SIMPLE_INTEREST_MIXED_00005"
     },
     {
-      "stem": "[CGL Tier 2 / PO Mains tier] A sum of ₹6,000 invested at compound interest amounts to ₹7,260 in 2 years. The annual rate of interest is:",
+      "stem": "A sum of ₹6,000 invested at compound interest amounts to ₹7,260 in 2 years. The annual rate of interest is:",
       "options": [
-        {"option_text": "8 %", "is_correct": false},
-        {"option_text": "10 %", "is_correct": true},
-        {"option_text": "12 %", "is_correct": false},
-        {"option_text": "15 %", "is_correct": false}
+        {
+          "option_text": "8 %",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 %",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 %",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 %",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "A/P = (1 + r)² → 7260/6000 = 1.21 → (1 + r)² = 1.21 → 1 + r = 1.10 → r = 10 %.",
@@ -132,12 +204,24 @@
       "id": "sgk_QNT_SIMPLE_INTEREST_MIXED_00006"
     },
     {
-      "stem": "[NTPC / CHSL tier] If interest is compounded HALF-YEARLY, the formula for amount becomes:",
+      "stem": "If interest is compounded HALF-YEARLY, the formula for amount becomes:",
       "options": [
-        {"option_text": "P(1 + r/100)^n", "is_correct": false},
-        {"option_text": "P(1 + r/200)^(2n)", "is_correct": true},
-        {"option_text": "P(1 + r/400)^(4n)", "is_correct": false},
-        {"option_text": "P(1 + r/50)^n", "is_correct": false}
+        {
+          "option_text": "P(1 + r/100)^n",
+          "is_correct": false
+        },
+        {
+          "option_text": "P(1 + r/200)^(2n)",
+          "is_correct": true
+        },
+        {
+          "option_text": "P(1 + r/400)^(4n)",
+          "is_correct": false
+        },
+        {
+          "option_text": "P(1 + r/50)^n",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Half-yearly → rate per period = r/2 (in %), and number of periods = 2n. General: quarterly → r/4 and 4n. Monthly → r/12 and 12n. Continuous compounding → P·e^(r·n/100).",
@@ -153,12 +237,24 @@
       "id": "sgk_QNT_SIMPLE_INTEREST_MIXED_00007"
     },
     {
-      "stem": "[PO Mains tier] The simple interest on a sum for 5 years at 8 % p.a. is ₹1,600. The compound interest (annually compounded) on the same sum, rate, and period is:",
+      "stem": "The simple interest on a sum for 5 years at 8 % p.a. is ₹1,600. The compound interest (annually compounded) on the same sum, rate, and period is:",
       "options": [
-        {"option_text": "₹1,866", "is_correct": false},
-        {"option_text": "₹1,877", "is_correct": true},
-        {"option_text": "₹1,920", "is_correct": false},
-        {"option_text": "₹2,075", "is_correct": false}
+        {
+          "option_text": "₹1,866",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,877",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1,920",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,075",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "SI = 1600 at 8 % for 5 years → principal P = 1600 × 100 / (8 × 5) = 4000. CI = P[(1+r/100)^n − 1] = 4000 × (1.08⁵ − 1). 1.08⁵ ≈ 1.4693; CI ≈ 4000 × 0.4693 ≈ 1877.",

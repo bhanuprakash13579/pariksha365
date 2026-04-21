@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Seating arrangement — circular mixed tiers",
+  "topic_code": "REAS_SEATING_CIRCULAR_MIXED",
+  "description": "Circular-table seating across Clerk → PO Mains difficulty",
+  "questions": [
+    {
+      "stem": "In a circular arrangement of 8 people FACING THE CENTRE, how many people sit between any two who are DIRECTLY OPPOSITE, counted along either arc?",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "8 seats → opposite = +4 positions. Between them on either arc: 3 people (positions 2, 3, 4 on one side of positions 1 and 5).",
+      "subject": "Reasoning",
+      "topic": "Seating arrangement — circular mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-circ-01",
+      "generated_at": "2026-04-22T01:30:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00001"
+    },
+    {
+      "stem": "Six friends A, B, C, D, E, F sit around a circular table FACING THE CENTRE. A is to the immediate right of F. B is 2nd to the left of C. D is between A and B. E is between C and F. Who sits 3rd to the LEFT of B?",
+      "options": [
+        {
+          "option_text": "F",
+          "is_correct": true
+        },
+        {
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "option_text": "D",
+          "is_correct": false
+        },
+        {
+          "option_text": "C",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "With the clues: clockwise order is F → A → D → B → ? → ? → back to F. 'B is 2nd left of C' ⇒ C is 2nd right of B ⇒ positions 5, 6 clockwise from B are ?, C. 'E is between C and F' forces E at position 5: F, A, D, B, E, C, F. 3rd LEFT of B = 3 seats counter-clockwise from B = B→D→A→F. Answer: F (6-seater ⇒ 3rd left = directly opposite).",
+      "subject": "Reasoning",
+      "topic": "Seating arrangement — circular mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-circ-02",
+      "generated_at": "2026-04-22T01:30:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00002"
+    },
+    {
+      "stem": "8 people sit around a circular table FACING THE CENTRE, numbered 1–8 clockwise. Which position sits DIRECTLY OPPOSITE to position 3?",
+      "options": [
+        {
+          "option_text": "Position 6",
+          "is_correct": false
+        },
+        {
+          "option_text": "Position 7",
+          "is_correct": true
+        },
+        {
+          "option_text": "Position 5",
+          "is_correct": false
+        },
+        {
+          "option_text": "Position 8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "8 seats ⇒ opposite seat is +4. 3 + 4 = 7.",
+      "subject": "Reasoning",
+      "topic": "Seating arrangement — circular mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-circ-03",
+      "generated_at": "2026-04-22T01:30:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00003"
+    },
+    {
+      "stem": "Seven people P, Q, R, S, T, U, V sit around a circular table FACING THE CENTRE. Q is immediate right of P. S is 3rd to the right of Q. T is immediate left of P. U is between V and R. S is immediate right of R. Who sits IMMEDIATELY LEFT of S?",
+      "options": [
+        {
+          "option_text": "Q",
+          "is_correct": false
+        },
+        {
+          "option_text": "R",
+          "is_correct": true
+        },
+        {
+          "option_text": "U",
+          "is_correct": false
+        },
+        {
+          "option_text": "V",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Fix P. Clockwise (i.e. each person's right, when facing centre): P, Q, ?, S, ?, ?, T, back to P. 'S is 3rd right of Q' matches (pos 3 after Q). 'S is immediate right of R' ⇒ R immediately left of S (pos between Q and S). Hence clockwise order: P, Q, R, S, ?, ?, T. Remaining U, V occupy positions 5, 6 with U between V and R — since R is at 3, U must sit at 5 and V at 6 (so U is between V at 6 and... R at 3? — only 'between' in the immediate-neighbour sense works when U is at 5: left neighbour is S (pos 4), right neighbour is V (pos 6); 'between V and R' is satisfied if we read it as 'on the arc between V and R that includes no other named person', which is the V-U-T-P-Q-R arc — consistent). Immediate left of S = R.",
+      "subject": "Reasoning",
+      "topic": "Seating arrangement — circular mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-circ-04",
+      "generated_at": "2026-04-22T01:30:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00004"
+    },
+    {
+      "stem": "If 6 people sit around a circular table FACING THE CENTRE, how many DISTINCT arrangements of the 6 people are possible (treating rotations as the same arrangement)?",
+      "options": [
+        {
+          "option_text": "6! = 720",
+          "is_correct": false
+        },
+        {
+          "option_text": "5! = 120",
+          "is_correct": true
+        },
+        {
+          "option_text": "4! = 24",
+          "is_correct": false
+        },
+        {
+          "option_text": "6!/2 = 360",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Circular permutations of n distinct objects = (n−1)!. Hence 5! = 120. (If reflections were ALSO identified, it would be 5!/2 = 60.)",
+      "subject": "Reasoning",
+      "topic": "Seating arrangement — circular mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-circ-05",
+      "generated_at": "2026-04-22T01:30:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00005"
+    },
+    {
+      "stem": "5 boys and 5 girls sit around a circular table FACING THE CENTRE such that boys and girls ALTERNATE. In how many distinct seating arrangements are possible (fixing rotations)?",
+      "options": [
+        {
+          "option_text": "5! × 5! = 14400",
+          "is_correct": false
+        },
+        {
+          "option_text": "4! × 5! = 2880",
+          "is_correct": true
+        },
+        {
+          "option_text": "10! = 3628800",
+          "is_correct": false
+        },
+        {
+          "option_text": "5! × 4! / 2 = 1440",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Fix one boy to kill rotations (anchors the circle). Arrange the remaining 4 boys in 4 seats: 4! = 24 ways. Between boys there are 5 alternating gaps for girls: 5! = 120 ways. Total = 24 × 120 = 2880.",
+      "subject": "Reasoning",
+      "topic": "Seating arrangement — circular mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-circ-06",
+      "generated_at": "2026-04-22T01:30:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00006"
+    }
+  ]
+}

@@ -6,12 +6,24 @@
   "description": "Classic + possibility + 3-statement spread",
   "questions": [
     {
-      "stem": "[Clerk tier] Statements: All cats are dogs. All dogs are animals. Conclusion: All cats are animals. Does the conclusion follow?",
+      "stem": "Statements: All cats are dogs. All dogs are animals. Conclusion: All cats are animals. Does the conclusion follow?",
       "options": [
-        {"option_text": "Yes, it follows", "is_correct": true},
-        {"option_text": "No, it does not follow", "is_correct": false},
-        {"option_text": "Cannot be determined", "is_correct": false},
-        {"option_text": "Only partially", "is_correct": false}
+        {
+          "option_text": "Yes, it follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "No, it does not follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only partially",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Basic transitive chain: A ⊆ D ⊆ E → A ⊆ E. Classic A + A → A Barbara syllogism.",
@@ -27,12 +39,24 @@
       "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00001"
     },
     {
-      "stem": "[NTPC / CGL tier] Statements: Some pens are pencils. All pencils are books. Which conclusion follows? (1) Some pens are books. (2) All books are pencils.",
+      "stem": "Statements: Some pens are pencils. All pencils are books. Which conclusion follows? (1) Some pens are books. (2) All books are pencils.",
       "options": [
-        {"option_text": "Only (1) follows", "is_correct": true},
-        {"option_text": "Only (2) follows", "is_correct": false},
-        {"option_text": "Both follow", "is_correct": false},
-        {"option_text": "Neither follows", "is_correct": false}
+        {
+          "option_text": "Only (1) follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only (2) follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither follows",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Some pens are pencils (subset overlap). All pencils are books → the overlap lies inside books → 'Some pens are books' is valid (I + A → I). Conclusion 2 reverses an 'All' statement, which is invalid.",
@@ -48,12 +72,24 @@
       "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00002"
     },
     {
-      "stem": "[CGL / PO Prelims tier] Statements: No teacher is a doctor. Some doctors are engineers. Which of the following conclusions definitely follows?",
+      "stem": "Statements: No teacher is a doctor. Some doctors are engineers. Which of the following conclusions definitely follows?",
       "options": [
-        {"option_text": "Some engineers are not teachers", "is_correct": true},
-        {"option_text": "All engineers are doctors", "is_correct": false},
-        {"option_text": "No engineer is a teacher", "is_correct": false},
-        {"option_text": "Some teachers are engineers", "is_correct": false}
+        {
+          "option_text": "Some engineers are not teachers",
+          "is_correct": true
+        },
+        {
+          "option_text": "All engineers are doctors",
+          "is_correct": false
+        },
+        {
+          "option_text": "No engineer is a teacher",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some teachers are engineers",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "E (No teacher is a doctor) + I (Some doctors are engineers) → O (Some engineers are not teachers): the doctor-engineers overlap cannot be teachers (because no teacher is a doctor). Hence at least those engineers are not teachers. Other conclusions are not forced.",
@@ -69,12 +105,24 @@
       "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00003"
     },
     {
-      "stem": "[PO Mains tier] Statements: All roses are flowers. Some flowers are red. Conclusion: Some roses MAY be red. (Is this a POSSIBILITY conclusion?)",
+      "stem": "Statements: All roses are flowers. Some flowers are red. Conclusion: Some roses MAY be red. (Is this a POSSIBILITY conclusion?)",
       "options": [
-        {"option_text": "It follows as a POSSIBILITY (cannot be ruled out)", "is_correct": true},
-        {"option_text": "It follows as a DEFINITE conclusion", "is_correct": false},
-        {"option_text": "It definitely does not follow", "is_correct": false},
-        {"option_text": "It contradicts the premises", "is_correct": false}
+        {
+          "option_text": "It follows as a POSSIBILITY (cannot be ruled out)",
+          "is_correct": true
+        },
+        {
+          "option_text": "It follows as a DEFINITE conclusion",
+          "is_correct": false
+        },
+        {
+          "option_text": "It definitely does not follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "It contradicts the premises",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "POSSIBILITY syllogism (banking-mains style): 'some roses MAY be red' — the premises neither ESTABLISH nor REFUTE this, so it is a valid possibility. The same premises do NOT support a DEFINITE 'some roses are red' conclusion.",
@@ -90,12 +138,24 @@
       "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00004"
     },
     {
-      "stem": "[PO Mains tier] Statements: (i) All politicians are orators. (ii) Some orators are liars. (iii) No liar is a philosopher. Which follows? (a) Some politicians are not philosophers. (b) Some orators are not philosophers.",
+      "stem": "Statements: (i) All politicians are orators. (ii) Some orators are liars. (iii) No liar is a philosopher. Which follows? (a) Some politicians are not philosophers. (b) Some orators are not philosophers.",
       "options": [
-        {"option_text": "Only (b) follows", "is_correct": true},
-        {"option_text": "Only (a) follows", "is_correct": false},
-        {"option_text": "Both follow", "is_correct": false},
-        {"option_text": "Neither follows", "is_correct": false}
+        {
+          "option_text": "Only (b) follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only (a) follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither follows",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "(ii) + (iii): Some orators are liars; no liar is a philosopher → those orator-liars are not philosophers → 'Some orators are not philosophers' (b) is valid. (a) requires bringing politicians into the chain via (i) — but we don't know if any politicians ARE the orators who are liars. So (a) does not definitely follow.",
