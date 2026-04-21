@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Number System (HCF, LCM, Divisibility)",
+  "topic_code": "QNT_NUMBER_SYSTEM",
+  "description": null,
+  "questions": [
+    {
+      "stem": "The HCF of 48 and 60 is:",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "240", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "48 = 2⁴ × 3; 60 = 2² × 3 × 5. HCF = product of lowest powers of common primes = 2² × 3 = 12. LCM = 2⁴ × 3 × 5 = 240.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System (HCF, LCM, Divisibility)",
+      "topic_code": "QNT_NUMBER_SYSTEM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-ns-01",
+      "generated_at": "2026-04-21T13:00:00+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_00001"
+    },
+    {
+      "stem": "The LCM of 12, 15 and 20 is:",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "90", "is_correct": false},
+        {"option_text": "120", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "12 = 2²·3; 15 = 3·5; 20 = 2²·5. LCM = 2²·3·5 = 60. Rule: LCM = product of HIGHEST powers of every prime that appears.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System (HCF, LCM, Divisibility)",
+      "topic_code": "QNT_NUMBER_SYSTEM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-ns-02",
+      "generated_at": "2026-04-21T13:00:00+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_00002"
+    },
+    {
+      "stem": "Product × HCF relation: if HCF(a,b) = 12 and LCM(a,b) = 180, and a = 36, then b is:",
+      "options": [
+        {"option_text": "48", "is_correct": false},
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "72", "is_correct": false},
+        {"option_text": "90", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Key identity: a × b = HCF × LCM. 36 × b = 12 × 180 = 2160 → b = 60. Verify HCF(36, 60) = 12 ✓ and LCM = 180 ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System (HCF, LCM, Divisibility)",
+      "topic_code": "QNT_NUMBER_SYSTEM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-ns-03",
+      "generated_at": "2026-04-21T13:00:00+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_00003"
+    },
+    {
+      "stem": "The greatest number which divides 43, 91 and 183 leaving the same remainder in each case is:",
+      "options": [
+        {"option_text": "4", "is_correct": true},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "13", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "'Same remainder' trick: the required number is HCF of the differences. Differences: 91−43 = 48, 183−91 = 92, 183−43 = 140. HCF(48, 92, 140) = 4.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System (HCF, LCM, Divisibility)",
+      "topic_code": "QNT_NUMBER_SYSTEM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-ns-04",
+      "generated_at": "2026-04-21T13:00:00+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_00004"
+    },
+    {
+      "stem": "A number divisible by 3 requires its digit-sum to be divisible by:",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Divisibility rules to memorise — by 2: last digit even. By 3: digit sum divisible by 3. By 4: last 2 digits divisible by 4. By 5: ends in 0/5. By 9: digit sum divisible by 9. By 11: alternating-digit sum.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System (HCF, LCM, Divisibility)",
+      "topic_code": "QNT_NUMBER_SYSTEM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-ns-05",
+      "generated_at": "2026-04-21T13:00:00+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_00005"
+    },
+    {
+      "stem": "The smallest number that, when divided by 12, 15 and 18, leaves remainder 5 in each case is:",
+      "options": [
+        {"option_text": "180", "is_correct": false},
+        {"option_text": "185", "is_correct": true},
+        {"option_text": "360", "is_correct": false},
+        {"option_text": "365", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "'Same remainder r' rule: smallest number = LCM + r. LCM(12, 15, 18) = 180. Add 5 → 185.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System (HCF, LCM, Divisibility)",
+      "topic_code": "QNT_NUMBER_SYSTEM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-ns-06",
+      "generated_at": "2026-04-21T13:00:00+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_00006"
+    },
+    {
+      "stem": "The HCF of two numbers in ratio 5:7 is 8. Their LCM is:",
+      "options": [
+        {"option_text": "140", "is_correct": false},
+        {"option_text": "280", "is_correct": true},
+        {"option_text": "420", "is_correct": false},
+        {"option_text": "560", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Numbers = 5k, 7k where k = HCF = 8 → 40 and 56. LCM(40, 56) = 280. Shortcut: for two numbers in ratio a:b (coprime), LCM = HCF × a × b = 8 × 5 × 7 = 280.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System (HCF, LCM, Divisibility)",
+      "topic_code": "QNT_NUMBER_SYSTEM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-ns-07",
+      "generated_at": "2026-04-21T13:00:00+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_00007"
+    },
+    {
+      "stem": "Which of the following is divisible by 11?",
+      "options": [
+        {"option_text": "2468", "is_correct": false},
+        {"option_text": "6116", "is_correct": true},
+        {"option_text": "1234", "is_correct": false},
+        {"option_text": "5432", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Divisibility by 11 rule: alternating digit sum. 6116 → (6 + 1) − (1 + 6) = 7 − 7 = 0, which is divisible by 11 (0 counts). 2468 → (2+6) − (4+8) = 8 − 12 = −4, not divisible.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System (HCF, LCM, Divisibility)",
+      "topic_code": "QNT_NUMBER_SYSTEM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-ns-08",
+      "generated_at": "2026-04-21T13:00:00+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_00008"
+    },
+    {
+      "stem": "The unit digit of 7^100 is:",
+      "options": [
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Unit digit of 7^n has cycle 7, 9, 3, 1 (period 4). 100 mod 4 = 0 → 4th in cycle → 1. Same trick: 2^n cycles 2-4-8-6; 3^n cycles 3-9-7-1; 4^n cycles 4-6; 8^n cycles 8-4-2-6.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System (HCF, LCM, Divisibility)",
+      "topic_code": "QNT_NUMBER_SYSTEM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-ns-09",
+      "generated_at": "2026-04-21T13:00:00+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_00009"
+    },
+    {
+      "stem": "How many prime numbers lie between 1 and 30?",
+      "options": [
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "10", "is_correct": true},
+        {"option_text": "11", "is_correct": false},
+        {"option_text": "12", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Primes up to 30: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 — count 10. Drill primes up to 100 (25 of them). 1 is NOT prime by modern convention.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System (HCF, LCM, Divisibility)",
+      "topic_code": "QNT_NUMBER_SYSTEM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-ns-10",
+      "generated_at": "2026-04-21T13:00:00+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_00010"
+    }
+  ]
+}

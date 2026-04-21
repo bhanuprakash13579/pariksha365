@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Mathematical Inequalities",
+  "topic_code": "REAS_INEQUALITIES",
+  "description": null,
+  "questions": [
+    {
+      "stem": "If P > Q ≥ R = S > T, which of the following is definitely true?",
+      "options": [
+        {"option_text": "P < S", "is_correct": false},
+        {"option_text": "P > T", "is_correct": true},
+        {"option_text": "R > P", "is_correct": false},
+        {"option_text": "T ≥ S", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Chain: P > Q ≥ R = S > T. Travelling left to right the inequality direction stays the same (all ≥ or >). Since at least one is strict (>) along the way, P > T strictly.",
+      "subject": "Reasoning",
+      "topic": "Mathematical Inequalities",
+      "topic_code": "REAS_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-iq-01",
+      "generated_at": "2026-04-21T13:05:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_00001"
+    },
+    {
+      "stem": "Given A ≥ B > C = D < E, can we definitely conclude A > D?",
+      "options": [
+        {"option_text": "No, cannot be determined", "is_correct": false},
+        {"option_text": "Yes, A > D", "is_correct": true},
+        {"option_text": "A = D", "is_correct": false},
+        {"option_text": "A < D", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "A ≥ B > C = D. The chain from A to D is ≥ then > then =. Since it contains a STRICT >, A > D strictly.",
+      "subject": "Reasoning",
+      "topic": "Mathematical Inequalities",
+      "topic_code": "REAS_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-iq-02",
+      "generated_at": "2026-04-21T13:05:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_00002"
+    },
+    {
+      "stem": "Given P ≥ Q ≥ R, can we conclude P > R?",
+      "options": [
+        {"option_text": "Yes, always", "is_correct": false},
+        {"option_text": "No — P could equal R", "is_correct": true},
+        {"option_text": "Only if Q > R", "is_correct": false},
+        {"option_text": "Only if P > Q", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Without any STRICT > anywhere in the chain, equality is still possible (P = Q = R). So we can only conclude P ≥ R, not P > R.",
+      "subject": "Reasoning",
+      "topic": "Mathematical Inequalities",
+      "topic_code": "REAS_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-iq-03",
+      "generated_at": "2026-04-21T13:05:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_00003"
+    },
+    {
+      "stem": "If P > Q, Q < R, R ≥ S, then the relation between P and S is:",
+      "options": [
+        {"option_text": "P > S always", "is_correct": false},
+        {"option_text": "Cannot be determined", "is_correct": true},
+        {"option_text": "P = S", "is_correct": false},
+        {"option_text": "P < S always", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "The arrows don't form one continuous chain: P > Q < R ≥ S has an 'up-down' turn at Q. You cannot compare P to R (and thus to S) directly. Classic inequality trap.",
+      "subject": "Reasoning",
+      "topic": "Mathematical Inequalities",
+      "topic_code": "REAS_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-iq-04",
+      "generated_at": "2026-04-21T13:05:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_00004"
+    },
+    {
+      "stem": "Coded: @ = >, # = ≥, % = <, $ = ≤, & = =. If A @ B # C & D, then the valid comparison is:",
+      "options": [
+        {"option_text": "A < D", "is_correct": false},
+        {"option_text": "A > D", "is_correct": true},
+        {"option_text": "A = D", "is_correct": false},
+        {"option_text": "A ≤ D", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Decode: A > B ≥ C = D → one strict > in the chain → A > D.",
+      "subject": "Reasoning",
+      "topic": "Mathematical Inequalities",
+      "topic_code": "REAS_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-iq-05",
+      "generated_at": "2026-04-21T13:05:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_00005"
+    },
+    {
+      "stem": "If X ≤ Y = Z < W, which of the following is TRUE?",
+      "options": [
+        {"option_text": "W > X", "is_correct": true},
+        {"option_text": "X > W", "is_correct": false},
+        {"option_text": "Y > W", "is_correct": false},
+        {"option_text": "X > Z", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "X ≤ Y = Z < W → X ≤ Z < W → X < W → W > X. The ≤ and = don't break the chain; the strict < at the end guarantees a strict comparison.",
+      "subject": "Reasoning",
+      "topic": "Mathematical Inequalities",
+      "topic_code": "REAS_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-iq-06",
+      "generated_at": "2026-04-21T13:05:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_00006"
+    },
+    {
+      "stem": "If A ≥ B, B > C, C ≥ D, D > E, which of the following MUST be true?",
+      "options": [
+        {"option_text": "A = E", "is_correct": false},
+        {"option_text": "A > E", "is_correct": true},
+        {"option_text": "A < E", "is_correct": false},
+        {"option_text": "B = D", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Chain A ≥ B > C ≥ D > E. Two STRICT > present → A > E strictly. ≥ doesn't block the strict conclusion as long as at least one > exists along the path.",
+      "subject": "Reasoning",
+      "topic": "Mathematical Inequalities",
+      "topic_code": "REAS_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-iq-07",
+      "generated_at": "2026-04-21T13:05:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_00007"
+    },
+    {
+      "stem": "If P < Q ≤ R = S > T, then which of the following is TRUE?",
+      "options": [
+        {"option_text": "P > T", "is_correct": false},
+        {"option_text": "R > T", "is_correct": true},
+        {"option_text": "P > S", "is_correct": false},
+        {"option_text": "P = S", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "R = S > T → R > T directly. P vs T cannot be compared because P < Q ≤ R but T < S with no link from P's side.",
+      "subject": "Reasoning",
+      "topic": "Mathematical Inequalities",
+      "topic_code": "REAS_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-iq-08",
+      "generated_at": "2026-04-21T13:05:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_00008"
+    }
+  ]
+}
