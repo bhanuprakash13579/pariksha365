@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Linear Seating Arrangement",
+  "topic_code": "REAS_SEATING_LINEAR",
+  "description": null,
+  "questions": [
+    {
+      "stem": "Five friends A, B, C, D, E sit in a row facing north. B is at one end. D is to the immediate right of A. C is second from the left. E is next to D. Who sits at the other end?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "E", "is_correct": true},
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "C", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 1 — pure linear. B left-end; C 2nd from left → positions: B, C, _, _, _. D to immediate right of A → AD block. E next to D → ADE. Insert: B, C, A, D, E. Other end = E.",
+      "subject": "Reasoning",
+      "topic": "Linear Seating Arrangement",
+      "topic_code": "REAS_SEATING_LINEAR",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-sl-01",
+      "generated_at": "2026-04-21T12:30:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00001"
+    },
+    {
+      "stem": "P, Q, R, S, T sit in a row. T is immediately to the left of Q. R is at the right end. S is between T and P, to the immediate left of T. The leftmost person is:",
+      "options": [
+        {"option_text": "T", "is_correct": false},
+        {"option_text": "P", "is_correct": true},
+        {"option_text": "S", "is_correct": false},
+        {"option_text": "Q", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "R right-end → _ _ _ _ R. S just left of T, and between T and P → order is P, S, T. So P-S-T sit in three leftmost positions; T just left of Q → P-S-T-Q-R. Leftmost is P.",
+      "subject": "Reasoning",
+      "topic": "Linear Seating Arrangement",
+      "topic_code": "REAS_SEATING_LINEAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-sl-02",
+      "generated_at": "2026-04-21T12:30:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00002"
+    },
+    {
+      "stem": "Six students sit in a row facing north. Veer is 3rd from the left end. Ritu is immediately to the right of Veer. Sam is at an extreme end but not near Ritu. Who could sit to the immediate left of Veer?",
+      "options": [
+        {"option_text": "Sam", "is_correct": false},
+        {"option_text": "Any of the remaining three friends", "is_correct": true},
+        {"option_text": "Ritu", "is_correct": false},
+        {"option_text": "No one", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Veer is 3rd-from-left → position 3. Ritu at pos 4. Sam at the LEFT end (pos 1) since the right end is near Ritu's side. Pos 2 (immediate left of Veer) is any of the 3 remaining friends — information is not enough to uniquely fix.",
+      "subject": "Reasoning",
+      "topic": "Linear Seating Arrangement",
+      "topic_code": "REAS_SEATING_LINEAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-sl-03",
+      "generated_at": "2026-04-21T12:30:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00003"
+    },
+    {
+      "stem": "In a row, A is 7th from the left and 12th from the right. The total number of persons in the row is:",
+      "options": [
+        {"option_text": "17", "is_correct": false},
+        {"option_text": "18", "is_correct": true},
+        {"option_text": "19", "is_correct": false},
+        {"option_text": "20", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Formula: Total = (Left rank) + (Right rank) − 1 = 7 + 12 − 1 = 18. Subtract 1 because A is counted from both sides.",
+      "subject": "Reasoning",
+      "topic": "Linear Seating Arrangement",
+      "topic_code": "REAS_SEATING_LINEAR",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-sl-04",
+      "generated_at": "2026-04-21T12:30:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00004"
+    },
+    {
+      "stem": "Six people sit in a row, three facing north and three facing south, with each north-facer opposite a south-facer. Therefore 'left' and 'right' for a north-facer are _____ of a south-facer.",
+      "options": [
+        {"option_text": "Same as", "is_correct": false},
+        {"option_text": "Opposite to", "is_correct": true},
+        {"option_text": "Identical at the extremes only", "is_correct": false},
+        {"option_text": "Cannot be determined", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 2 — mixed facing. A person facing south has their back where a north-facer's front is, so their left/right are MIRRORED. This mirror rule is the single most-tested subtlety in parallel-row seating.",
+      "subject": "Reasoning",
+      "topic": "Linear Seating Arrangement",
+      "topic_code": "REAS_SEATING_LINEAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-sl-05",
+      "generated_at": "2026-04-21T12:30:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00005"
+    },
+    {
+      "stem": "Seven children sit in a row. M is 3rd from the left. N is 3rd to the right of M. O is at the right end. How many children sit between N and O?",
+      "options": [
+        {"option_text": "0", "is_correct": true},
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "M at pos 3. N = 3+3 = pos 6. O at pos 7 (right end). Positions 6 and 7 are adjacent, so 0 children sit between them. Rule: gap = |pos(A) − pos(B)| − 1.",
+      "subject": "Reasoning",
+      "topic": "Linear Seating Arrangement",
+      "topic_code": "REAS_SEATING_LINEAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-sl-06",
+      "generated_at": "2026-04-21T12:30:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00006"
+    }
+  ]
+}
