@@ -56,29 +56,22 @@ async def lifespan(app: FastAPI):
                     db.add(SubCategory(category_id=cat_db.id, name=sub, order=j, is_enabled=True))
             await db.commit()
 
-        # ADMIN BOOTSTRAP — idempotent by default, reset only when FORCE is set
+        # ADMIN BOOTSTRAP — simple and unconditional.
         #
-        # Previous behaviour (caused a bug): every time the service was
-        # redeployed with ADMIN_BOOTSTRAP_PASSWORD still set, the admin's
-        # password_hash was OVERWRITTEN on startup. If the admin had changed
-        # their password via the UI between deploys, they got locked out.
+        # Contract (user-preferred, 2026-04-21): as long as
+        # ADMIN_BOOTSTRAP_PASSWORD is set in the Railway env, the admin user
+        # logs in with exactly that password. Every time. No force flag, no
+        # dance with another env var.
         #
-        # New behaviour:
-        #   1. If the admin user does NOT exist and ADMIN_BOOTSTRAP_PASSWORD is
-        #      set, CREATE the admin user with that password. (Bootstrap.)
-        #   2. If the admin user ALREADY exists, DO NOT overwrite the
-        #      password. Just make sure role + is_active are correct.
-        #   3. To force a password reset when locked out, set
-        #      ADMIN_BOOTSTRAP_FORCE=true. Only then does the existing hash
-        #      get overwritten with the bootstrap password. After you log
-        #      in, unset ADMIN_BOOTSTRAP_FORCE.
+        # If the admin user does not exist, create it. If it exists, re-hash
+        # the password to match the env value and make sure role +
+        # is_active are correct. Idempotent: same env value on every boot
+        # means no effective change.
         #
-        # This means shipping code (content pushes, bug fixes, anything that
-        # triggers a redeploy) no longer touches the admin's chosen password.
+        # Trade-off: if you change the admin password via the UI, the next
+        # redeploy will reset it back to ADMIN_BOOTSTRAP_PASSWORD. This is
+        # the desired behaviour — the env var is the single source of truth.
         admin_boot_pw = os.getenv("ADMIN_BOOTSTRAP_PASSWORD", "").strip()
-        admin_force_reset = os.getenv("ADMIN_BOOTSTRAP_FORCE", "").strip().lower() in {
-            "1", "true", "yes", "on",
-        }
         if admin_boot_pw:
             try:
                 from app.models.role import Role
@@ -102,7 +95,6 @@ async def lifespan(app: FastAPI):
                 user_res = await db.execute(select(User).where(User.email == admin_email))
                 admin_user = user_res.scalars().first()
                 if admin_user is None:
-                    # No admin yet — create with bootstrap password.
                     admin_user = User(
                         name=admin_name,
                         email=admin_email,
@@ -113,39 +105,15 @@ async def lifespan(app: FastAPI):
                     db.add(admin_user)
                     await db.commit()
                     print(f"ADMIN BOOTSTRAP: created admin user {admin_email}")
-                elif admin_force_reset:
-                    # Explicit force — reset password and reactivate.
+                else:
                     admin_user.role_id = admin_role.id
                     admin_user.password_hash = get_password_hash(admin_boot_pw)
                     admin_user.is_active = True
                     await db.commit()
                     print(
-                        f"ADMIN BOOTSTRAP: FORCE reset password + reactivated {admin_email} "
-                        "(unset ADMIN_BOOTSTRAP_FORCE once login works)"
+                        f"ADMIN BOOTSTRAP: ensured {admin_email} has env-matching password "
+                        "(role + is_active reconciled)."
                     )
-                else:
-                    # Admin exists; DO NOT overwrite the password — the user
-                    # may have changed it. Just make sure role and active flag
-                    # are sane. If you are locked out, set
-                    # ADMIN_BOOTSTRAP_FORCE=true and redeploy.
-                    changed = False
-                    if admin_user.role_id != admin_role.id:
-                        admin_user.role_id = admin_role.id
-                        changed = True
-                    if not admin_user.is_active:
-                        admin_user.is_active = True
-                        changed = True
-                    if changed:
-                        await db.commit()
-                        print(
-                            f"ADMIN BOOTSTRAP: admin {admin_email} already exists; "
-                            "role/active corrected, password left untouched."
-                        )
-                    else:
-                        print(
-                            f"ADMIN BOOTSTRAP: admin {admin_email} already exists — "
-                            "password untouched. Set ADMIN_BOOTSTRAP_FORCE=true to reset."
-                        )
             except Exception as e:
                 print(f"ADMIN BOOTSTRAP failed: {e!r}")
 
