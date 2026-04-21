@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Direction Sense",
+  "topic_code": "REAS_DIRECTION",
+  "description": null,
+  "questions": [
+    {
+      "stem": "Rahul walks 5 m north, then 12 m east. His distance from the starting point is:",
+      "options": [
+        {"option_text": "11 m", "is_correct": false},
+        {"option_text": "13 m", "is_correct": true},
+        {"option_text": "15 m", "is_correct": false},
+        {"option_text": "17 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 2 — Pythagoras on N-S vs E-W nets. 5 and 12 are perpendicular, so distance = √(5² + 12²) = √169 = 13. The (5, 12, 13) triple should be instant recall. Distractor 17 sums the legs; 11 subtracts them.",
+      "subject": "Reasoning",
+      "topic": "Direction Sense",
+      "topic_code": "REAS_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-dir-01",
+      "generated_at": "2026-04-21T10:10:00+00:00",
+      "id": "sgk_REAS_DIRECTION_00001"
+    },
+    {
+      "stem": "A man faces north, then turns 135° clockwise. He now faces:",
+      "options": [
+        {"option_text": "South-east", "is_correct": true},
+        {"option_text": "South-west", "is_correct": false},
+        {"option_text": "North-east", "is_correct": false},
+        {"option_text": "North-west", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "TYPE 3 — turn tracking. Start N (0°). 135° clockwise lands between E (90°) and S (180°), i.e. at SE. Verification by the compass ladder: N(0) → NE(45) → E(90) → SE(135). Distractor SW is 225° CW (90° too far); NW is 315° CW (180° too far).",
+      "subject": "Reasoning",
+      "topic": "Direction Sense",
+      "topic_code": "REAS_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-dir-02",
+      "generated_at": "2026-04-21T10:10:00+00:00",
+      "id": "sgk_REAS_DIRECTION_00002"
+    },
+    {
+      "stem": "Starting from her home, Priya walks 3 km east, 4 km north, 3 km west and 1 km south. Her distance from home is:",
+      "options": [
+        {"option_text": "1 km", "is_correct": false},
+        {"option_text": "3 km", "is_correct": true},
+        {"option_text": "5 km", "is_correct": false},
+        {"option_text": "7 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 2 — net displacement. Net E-W = 3 − 3 = 0. Net N-S = 4 − 1 = 3 north. Distance = 3 km. Distractor 1 confuses 3 with 4−3; 5 uses Pythagoras on wrong legs.",
+      "subject": "Reasoning",
+      "topic": "Direction Sense",
+      "topic_code": "REAS_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-dir-03",
+      "generated_at": "2026-04-21T10:10:00+00:00",
+      "id": "sgk_REAS_DIRECTION_00003"
+    },
+    {
+      "stem": "At sunrise, a boy facing the sun sees his shadow. His shadow is to his:",
+      "options": [
+        {"option_text": "Left", "is_correct": false},
+        {"option_text": "Right", "is_correct": false},
+        {"option_text": "Front", "is_correct": false},
+        {"option_text": "Back", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "explanation": "TYPE 5 — shadow at sunrise/sunset. Sun rises in the east; shadows at sunrise fall to the west. If you FACE the sun (east), west is directly behind you. Distractors test students who forget that the sun and shadow point opposite each other.",
+      "subject": "Reasoning",
+      "topic": "Direction Sense",
+      "topic_code": "REAS_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-dir-04",
+      "generated_at": "2026-04-21T10:10:00+00:00",
+      "id": "sgk_REAS_DIRECTION_00004"
+    },
+    {
+      "stem": "A man walks 10 m south, 10 m east, 10 m north, 10 m east. His distance from the start is:",
+      "options": [
+        {"option_text": "10 m", "is_correct": false},
+        {"option_text": "20 m", "is_correct": true},
+        {"option_text": "30 m", "is_correct": false},
+        {"option_text": "40 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 2 — net displacement. N-S nets to 0 (10 S + 10 N cancel). E-W nets to 20 east. Distance = 20 m. Distractor 10 stops too early; 40 adds every leg ignoring cancellation.",
+      "subject": "Reasoning",
+      "topic": "Direction Sense",
+      "topic_code": "REAS_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-dir-05",
+      "generated_at": "2026-04-21T10:10:00+00:00",
+      "id": "sgk_REAS_DIRECTION_00005"
+    }
+  ]
+}

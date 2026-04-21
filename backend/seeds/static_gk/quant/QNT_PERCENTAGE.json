@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Percentage",
+  "topic_code": "QNT_PERCENTAGE",
+  "description": null,
+  "questions": [
+    {
+      "stem": "Express 5/8 as a percentage.",
+      "options": [
+        {"option_text": "60%", "is_correct": false},
+        {"option_text": "62.5%", "is_correct": true},
+        {"option_text": "65%", "is_correct": false},
+        {"option_text": "67.5%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 1 — fraction↔percentage conversion. 5/8 = 0.625 = 62.5%. Know the table: 1/8 = 12.5%, so 5/8 = 5 × 12.5 = 62.5. Traditional: (5 × 100) / 8 = 62.5. Wrong distractors come from miscomputing half of 125 or confusing with 5/7, 5/9 neighbours.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "topic_code": "QNT_PERCENTAGE",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-pct-01",
+      "generated_at": "2026-04-21T10:00:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_00001"
+    },
+    {
+      "stem": "23% of 850 equals:",
+      "options": [
+        {"option_text": "175.5", "is_correct": false},
+        {"option_text": "185.5", "is_correct": false},
+        {"option_text": "195.5", "is_correct": true},
+        {"option_text": "205.5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "TYPE 2 — x% of y via decomposition. 23% = 20% + 3%. 20% of 850 = 170; 1% of 850 = 8.5, so 3% = 25.5. Total 170 + 25.5 = 195.5. Mental-math takes <10 s. Traditional: (23 × 850)/100 = 19,550/100 = 195.5. Distractors arise from forgetting 3% slice or swapping 20%↔30%.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "topic_code": "QNT_PERCENTAGE",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-pct-02",
+      "generated_at": "2026-04-21T10:00:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_00002"
+    },
+    {
+      "stem": "A's salary rises by 20%, then falls by 10%. Net change is:",
+      "options": [
+        {"option_text": "+10%", "is_correct": false},
+        {"option_text": "+8%", "is_correct": true},
+        {"option_text": "+12%", "is_correct": false},
+        {"option_text": "+6%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 5 — successive percentage change. Net = a + b + (a·b)/100 with signed values. a = +20, b = −10 → 20 − 10 + (20×−10)/100 = 10 − 2 = +8%. Verify: 100 → 120 → 120 × 0.9 = 108 → +8% net. Trap +10% ignores the cross term ab/100; +12% adds instead of subtracts the cross term.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "topic_code": "QNT_PERCENTAGE",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-pct-03",
+      "generated_at": "2026-04-21T10:00:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_00003"
+    },
+    {
+      "stem": "The population of a town is 50,000 and grows at 10% per year. Population after 3 years is:",
+      "options": [
+        {"option_text": "60,500", "is_correct": false},
+        {"option_text": "65,000", "is_correct": false},
+        {"option_text": "66,550", "is_correct": true},
+        {"option_text": "68,500", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "TYPE 6 — compound growth. P(1 + r/100)ⁿ = 50,000 × (1.1)³ = 50,000 × 1.331 = 66,550. Stepwise: 50,000 → 55,000 → 60,500 → 66,550. Distractor 60,500 is 2-year result; 65,000 is naïve simple-interest thinking (50,000 × 1.3).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "topic_code": "QNT_PERCENTAGE",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-pct-04",
+      "generated_at": "2026-04-21T10:00:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_00004"
+    },
+    {
+      "stem": "A's salary is 25% more than B's. By what percent is B's salary less than A's?",
+      "options": [
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "20%", "is_correct": true},
+        {"option_text": "30%", "is_correct": false},
+        {"option_text": "15%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 7 — forward-to-reverse percent. Formula: r/(100+r) × 100. Here 25/125 × 100 = 20%. Verify: B = 100, A = 125, so (A−B)/A = 25/125 = 20%. The 25% distractor is the naïve mirror of the given; it forgets that the BASE has changed from B to A.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "topic_code": "QNT_PERCENTAGE",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-pct-05",
+      "generated_at": "2026-04-21T10:00:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_00005"
+    },
+    {
+      "stem": "Raj spends 75% of his income. If his income rises 20% and his expenditure rises 10%, his savings change by:",
+      "options": [
+        {"option_text": "+30%", "is_correct": false},
+        {"option_text": "+50%", "is_correct": true},
+        {"option_text": "+40%", "is_correct": false},
+        {"option_text": "+45%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 8 — income-expense-savings. Fix income 100, expense 75, savings 25. New income = 120, new expense = 75 × 1.1 = 82.5, new savings = 37.5. Change = (37.5 − 25)/25 = 12.5/25 = 50%. Distractor +40% is a common mis-step that applies +20% and −10% linearly to the savings base.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "topic_code": "QNT_PERCENTAGE",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-pct-06",
+      "generated_at": "2026-04-21T10:00:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_00006"
+    },
+    {
+      "stem": "Pass mark is 40%. A student scored 220 and failed by 20 marks. The maximum marks are:",
+      "options": [
+        {"option_text": "550", "is_correct": false},
+        {"option_text": "600", "is_correct": true},
+        {"option_text": "625", "is_correct": false},
+        {"option_text": "500", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 9 — pass-fail problem. Pass mark = 220 + 20 = 240. That 240 is 40% of max. Max = 240 × 100/40 = 600. Distractor 625 comes from using 38.4% misread; 500 skips the deficit step.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "topic_code": "QNT_PERCENTAGE",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-pct-07",
+      "generated_at": "2026-04-21T10:00:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_00007"
+    },
+    {
+      "stem": "30 L of a mixture contains 20% alcohol. How much water must be added to make alcohol exactly 15%?",
+      "options": [
+        {"option_text": "5 L", "is_correct": false},
+        {"option_text": "8 L", "is_correct": false},
+        {"option_text": "10 L", "is_correct": true},
+        {"option_text": "12 L", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "TYPE 11 — mixture percentage. Pure alcohol stays constant on adding water: 20% of 30 = 6 L. After adding x L water, 6 / (30 + x) = 15/100 = 3/20 → 30 + x = 40 → x = 10. Trap 5 L halves r carelessly; 12 L solves for 12.5% target by mistake.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "topic_code": "QNT_PERCENTAGE",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-pct-08",
+      "generated_at": "2026-04-21T10:00:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_00008"
+    },
+    {
+      "stem": "Price of sugar rises by 25%. By what percent must consumption fall so that expenditure stays constant?",
+      "options": [
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "20%", "is_correct": true},
+        {"option_text": "22.5%", "is_correct": false},
+        {"option_text": "18%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 12 — price-quantity inverse. Expenditure fixed → P × Q constant. Price up r → quantity down r/(100+r) × 100 = 25/125 × 100 = 20%. Verify: price 100 → 125; to keep E = 100, new Q = 100/1.25 = 80, i.e. 20% drop. Naïve 25% distractor wrongly mirrors the given %.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "topic_code": "QNT_PERCENTAGE",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-pct-09",
+      "generated_at": "2026-04-21T10:00:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_00009"
+    },
+    {
+      "stem": "Two successive discounts of 20% and 10% on a list price of ₹2000 give a selling price of:",
+      "options": [
+        {"option_text": "₹1400", "is_correct": false},
+        {"option_text": "₹1440", "is_correct": true},
+        {"option_text": "₹1460", "is_correct": false},
+        {"option_text": "₹1500", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 13 — successive discounts. Equivalent single discount = 20 + 10 − (20×10)/100 = 28%. SP = 2000 × 0.72 = 1440. Stepwise: 2000 → 1600 → 1440. Distractor 1400 uses a naïve 30% (forgets the +2% cross term); 1500 uses 25%.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "topic_code": "QNT_PERCENTAGE",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-pct-10",
+      "generated_at": "2026-04-21T10:00:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_00010"
+    },
+    {
+      "stem": "The side of a square is measured with an excess of 3%. The error percent in the calculated area is:",
+      "options": [
+        {"option_text": "6.00%", "is_correct": false},
+        {"option_text": "6.09%", "is_correct": true},
+        {"option_text": "3.09%", "is_correct": false},
+        {"option_text": "9.00%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TYPE 14 — error in measurement. Area ∝ side²; apply successive % with a = b = 3: net = 2(3) + (3×3)/100 = 6 + 0.09 = 6.09%. The 6.00% distractor drops the r²/100 term — the classic miss on this type.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "topic_code": "QNT_PERCENTAGE",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-pct-11",
+      "generated_at": "2026-04-21T10:00:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_00011"
+    },
+    {
+      "stem": "If 25% of a number is 40% less than 60% of 750, the number is:",
+      "options": [
+        {"option_text": "900", "is_correct": false},
+        {"option_text": "1000", "is_correct": false},
+        {"option_text": "1080", "is_correct": true},
+        {"option_text": "1200", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "TYPE 15 — chained percentages. Work right to left: 60% of 750 = 450; 40% less than 450 = 0.6 × 450 = 270. So 25% of N = 270 → N = 270 × 4 = 1080. Trap 900 comes from 20% less (misreading 40%); 1200 divides by 0.225 by mistake.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage",
+      "topic_code": "QNT_PERCENTAGE",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-qnt-pct-12",
+      "generated_at": "2026-04-21T10:00:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_00012"
+    }
+  ]
+}
