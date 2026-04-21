@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Input-Output machine (Bank PO Mains)",
+  "topic_code": "REAS_INPUT_OUTPUT",
+  "description": null,
+  "questions": [
+    {
+      "stem": "PUZZLE (Q1-Q3 share this setup): A word-arrangement machine processes the input in steps. INPUT: 'garden 42 flower 18 stone 67 river 25'. Step 1: '18 garden 42 flower stone 67 river 25'. Step 2: '18 flower 25 garden 42 stone 67 river'. Step 3: '18 flower 25 garden 42 river 67 stone'. Deduce the rule. Q: What will be the LAST step (no further change possible) for this input?",
+      "options": [
+        {"option_text": "Step 3 is already the last step", "is_correct": true},
+        {"option_text": "Step 4 with re-sorted numbers", "is_correct": false},
+        {"option_text": "Step 5 with alphabetised words", "is_correct": false},
+        {"option_text": "It keeps looping indefinitely", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "The rule: at each step the SMALLEST remaining number is placed at the front with its alphabetically-earliest remaining partner word next; the pair moves leftward. After 3 steps all four pairs '18-flower', '25-garden', '42-river', '67-stone' are in place, each pair alphabetised by word AND numbers ascending. Nothing further to rearrange.",
+      "subject": "Reasoning",
+      "topic": "Input-Output machine (Bank PO Mains)",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-io-01",
+      "generated_at": "2026-04-21T16:45:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00001"
+    },
+    {
+      "stem": "PUZZLE (same setup): If a new INPUT is 'table 55 apple 12 quilt 88 nest 30', what will be step 1?",
+      "options": [
+        {"option_text": "'12 apple table 55 quilt 88 nest 30'", "is_correct": true},
+        {"option_text": "'88 quilt table 55 apple 12 nest 30'", "is_correct": false},
+        {"option_text": "'apple 12 nest 30 quilt 88 table 55'", "is_correct": false},
+        {"option_text": "'30 nest apple 12 quilt 88 table 55'", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Rule re-applied: smallest number (12) with its alphabetically-earliest partner (apple) moves to front of whatever's left. Input shuffled: '12 apple' leads, rest follows original order: 'table 55 quilt 88 nest 30'.",
+      "subject": "Reasoning",
+      "topic": "Input-Output machine (Bank PO Mains)",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-io-02",
+      "generated_at": "2026-04-21T16:45:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00002"
+    },
+    {
+      "stem": "PUZZLE (same setup, new input 'table 55 apple 12 quilt 88 nest 30'): How many steps will the machine take to reach its final state?",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "5", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Four word-number pairs → three steps to sort three pairs once the smallest is placed, plus any needed cleanup. Each step fixes one pair; for 4 pairs it takes 3 steps (the last pair is then trivially at the end). Step 1 fixes 12-apple; Step 2 fixes 30-nest; Step 3 fixes 55-table; 88-quilt auto-fits last.",
+      "subject": "Reasoning",
+      "topic": "Input-Output machine (Bank PO Mains)",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-io-03",
+      "generated_at": "2026-04-21T16:45:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00003"
+    },
+    {
+      "stem": "Another machine does arithmetic. INPUT: 5 12 7 3 9 14. Step 1: 10 11 7 3 9 14 (one transformation applied). Rule: each pair of adjacent numbers starting from the left is replaced by (sum, difference) respectively until one pair is processed per step. Check and find Step 2:",
+      "options": [
+        {"option_text": "21 4 10 6 9 14", "is_correct": false},
+        {"option_text": "21 −1 7 3 9 14", "is_correct": false},
+        {"option_text": "10 11 10 4 9 14", "is_correct": true},
+        {"option_text": "10 11 7 3 23 5", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "Rule: In each step, take the next unprocessed adjacent PAIR (left to right) and replace with (sum, |diff|). Step 1 handled 5,12 → 10,11. Step 2 handles 7,3 → 10, 4. So: 10 11 10 4 9 14. Pattern-induction test.",
+      "subject": "Reasoning",
+      "topic": "Input-Output machine (Bank PO Mains)",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-io-04",
+      "generated_at": "2026-04-21T16:45:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00004"
+    },
+    {
+      "stem": "A machine takes an alphanumeric input and re-orders as follows. INPUT: cat 9 dog 3 fish 7 bird 5. Step 1: 3 cat 9 dog fish 7 bird 5. Step 2: 3 bird cat 9 dog fish 7 5. What will be step 3?",
+      "options": [
+        {"option_text": "3 bird 5 cat 9 dog fish 7", "is_correct": true},
+        {"option_text": "3 bird 5 cat dog 9 fish 7", "is_correct": false},
+        {"option_text": "3 bird 5 cat 7 dog 9 fish", "is_correct": false},
+        {"option_text": "3 5 bird cat dog fish 7 9", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Rule induced: each step moves the smallest remaining NUMBER to the left of all remaining items, then the alphabetically earliest remaining WORD to the right of that number. Step 1: 3 first. Step 2: 'bird' (alphabetically first) placed after 3. Step 3: next smallest number = 5 → place to right of 'bird'. Result: 3 bird 5 cat 9 dog fish 7.",
+      "subject": "Reasoning",
+      "topic": "Input-Output machine (Bank PO Mains)",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-io-05",
+      "generated_at": "2026-04-21T16:45:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00005"
+    }
+  ]
+}
