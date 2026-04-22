@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "LCM and HCF II — mixed tiers",
+  "topic_code": "QNT_LCM_HCF_II_MIXED",
+  "description": "Prime factorisation, real-world LCM/HCF problems",
+  "questions": [
+    {
+      "stem": "The LCM of 12, 15 and 20 is:",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "120", "is_correct": false},
+        {"option_text": "90", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Prime factorisation: 12 = 2² × 3; 15 = 3 × 5; 20 = 2² × 5. LCM = take highest power of each prime: 2² × 3 × 5 = 60. Verification: 60/12 = 5, 60/15 = 4, 60/20 = 3 — all clean divisions. HCF of the same three = 1 (no common prime).",
+      "subject": "Quant",
+      "topic": "LCM and HCF II — mixed tiers",
+      "topic_code": "QNT_LCM_HCF_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-lh2-01",
+      "generated_at": "2026-04-24T05:00:00+00:00",
+      "id": "sgk_QNT_LCM_HCF_II_MIXED_00001"
+    },
+    {
+      "stem": "The HCF of 72 and 108 is:",
+      "options": [
+        {"option_text": "18", "is_correct": false},
+        {"option_text": "36", "is_correct": true},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "54", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "72 = 2³ × 3²; 108 = 2² × 3³. HCF — lowest power of each prime: 2² × 3² = 4 × 9 = 36. Verify: 72/36 = 2, 108/36 = 3. LCM × HCF = product of the two numbers: 72 × 108 = 7,776. HCF × LCM = 36 × 216 = 7,776 ✓. Handy check when answering.",
+      "subject": "Quant",
+      "topic": "LCM and HCF II — mixed tiers",
+      "topic_code": "QNT_LCM_HCF_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-lh2-02",
+      "generated_at": "2026-04-24T05:00:00+00:00",
+      "id": "sgk_QNT_LCM_HCF_II_MIXED_00002"
+    },
+    {
+      "stem": "Three bells toll at intervals of 6, 8 and 10 seconds respectively. They all toll together at 9:00 AM. When will they next all toll together?",
+      "options": [
+        {"option_text": "After 100 seconds", "is_correct": false},
+        {"option_text": "After 120 seconds", "is_correct": true},
+        {"option_text": "After 60 seconds", "is_correct": false},
+        {"option_text": "After 80 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Bells toll together again at the LCM of the intervals. 6 = 2 × 3; 8 = 2³; 10 = 2 × 5. LCM = 2³ × 3 × 5 = 120 seconds = 2 minutes. So they will all toll together next at 9:02. Verify: 120/6 = 20, 120/8 = 15, 120/10 = 12 — all integer.",
+      "subject": "Quant",
+      "topic": "LCM and HCF II — mixed tiers",
+      "topic_code": "QNT_LCM_HCF_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-lh2-03",
+      "generated_at": "2026-04-24T05:00:00+00:00",
+      "id": "sgk_QNT_LCM_HCF_II_MIXED_00003"
+    },
+    {
+      "stem": "Find the greatest number that divides 62 and 96 leaving remainders 7 and 8 respectively.",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "11", "is_correct": true},
+        {"option_text": "15", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "To 'divide X leaving remainder R', the divisor must divide (X − R). Here 62 − 7 = 55 and 96 − 8 = 88. The greatest such divisor = HCF(55, 88). 55 = 5 × 11; 88 = 2³ × 11. HCF = 11. Verify: 62/11 = 5 remainder 7 ✓; 96/11 = 8 remainder 8 ✓.",
+      "subject": "Quant",
+      "topic": "LCM and HCF II — mixed tiers",
+      "topic_code": "QNT_LCM_HCF_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-lh2-04",
+      "generated_at": "2026-04-24T05:00:00+00:00",
+      "id": "sgk_QNT_LCM_HCF_II_MIXED_00004"
+    },
+    {
+      "stem": "The product of two numbers is 864 and their HCF is 12. What is their LCM?",
+      "options": [
+        {"option_text": "60", "is_correct": false},
+        {"option_text": "72", "is_correct": true},
+        {"option_text": "144", "is_correct": false},
+        {"option_text": "84", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Key identity: HCF × LCM = product of the two numbers. So LCM = 864 / 12 = 72. Verify: if HCF is 12, numbers could be 24 and 36; 24 × 36 = 864, HCF 12, LCM 72. ✓ This identity always holds for any pair of positive integers, not for triples or more.",
+      "subject": "Quant",
+      "topic": "LCM and HCF II — mixed tiers",
+      "topic_code": "QNT_LCM_HCF_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-lh2-05",
+      "generated_at": "2026-04-24T05:00:00+00:00",
+      "id": "sgk_QNT_LCM_HCF_II_MIXED_00005"
+    },
+    {
+      "stem": "Find the least number which when divided by 15, 18, 24 leaves remainder 3 in each case.",
+      "options": [
+        {"option_text": "360", "is_correct": false},
+        {"option_text": "363", "is_correct": true},
+        {"option_text": "183", "is_correct": false},
+        {"option_text": "243", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "'Leaves the SAME remainder R in each case' → the number is LCM + R. LCM(15, 18, 24): 15 = 3×5; 18 = 2×3²; 24 = 2³×3. LCM = 2³×3²×5 = 360. So the least number = 360 + 3 = 363. Verify: 363/15 = 24 r 3; 363/18 = 20 r 3; 363/24 = 15 r 3 ✓.",
+      "subject": "Quant",
+      "topic": "LCM and HCF II — mixed tiers",
+      "topic_code": "QNT_LCM_HCF_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-lh2-06",
+      "generated_at": "2026-04-24T05:00:00+00:00",
+      "id": "sgk_QNT_LCM_HCF_II_MIXED_00006"
+    },
+    {
+      "stem": "The HCF of two co-prime numbers is always:",
+      "options": [
+        {"option_text": "Their smaller number", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "Their product", "is_correct": false},
+        {"option_text": "Their difference", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "By definition, co-prime (relatively prime) numbers share no common factor other than 1 — so their HCF is 1. Examples — (7, 9), (14, 25), (3, 17). NOT the same as 'two primes' — two different primes are always co-prime (e.g., 7 and 11), but non-primes can also be co-prime (e.g., 8 and 15 — 8 = 2³, 15 = 3×5, no shared factor). If HCF = 1, their LCM = their product.",
+      "subject": "Quant",
+      "topic": "LCM and HCF II — mixed tiers",
+      "topic_code": "QNT_LCM_HCF_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-lh2-07",
+      "generated_at": "2026-04-24T05:00:00+00:00",
+      "id": "sgk_QNT_LCM_HCF_II_MIXED_00007"
+    }
+  ]
+}
