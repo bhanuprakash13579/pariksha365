@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "Profit and loss — mixed tiers",
+  "topic_code": "QNT_PROFIT_LOSS_MIXED",
+  "description": "CP, SP, profit %, loss %, discount problems",
+  "questions": [
+    {
+      "stem": "An article is bought for ₹500 and sold for ₹600. The profit percentage is:",
+      "options": [
+        {"option_text": "10%", "is_correct": false},
+        {"option_text": "20%", "is_correct": true},
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "16.67%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Profit = SP − CP = 600 − 500 = ₹100. Profit % = (Profit / CP) × 100 = (100/500) × 100 = 20 %. A common trap — 16.67 % — is (Profit / SP), which is the incorrect formula. Profit percentage is always on CP, unless the question specifies otherwise.",
+      "subject": "Quant",
+      "topic": "Profit and loss — mixed tiers",
+      "topic_code": "QNT_PROFIT_LOSS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-pl-01",
+      "generated_at": "2026-04-23T17:00:00+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00001"
+    },
+    {
+      "stem": "A shopkeeper sells a shirt at 10% loss for ₹450. The cost price of the shirt was:",
+      "options": [
+        {"option_text": "₹495", "is_correct": false},
+        {"option_text": "₹500", "is_correct": true},
+        {"option_text": "₹460", "is_correct": false},
+        {"option_text": "₹480", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "At 10 % loss, SP = 90 % of CP. So CP = SP / 0.90 = 450 / 0.90 = ₹500. Verify: 10 % loss on ₹500 = ₹50 → SP = 500 − 50 = ₹450. ✓. Trap 495 is what you get if you add 10 % to ₹450 by mistake (which would apply only if ₹450 were CP, not SP).",
+      "subject": "Quant",
+      "topic": "Profit and loss — mixed tiers",
+      "topic_code": "QNT_PROFIT_LOSS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-pl-02",
+      "generated_at": "2026-04-23T17:00:00+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00002"
+    },
+    {
+      "stem": "A trader marks up an article by 40% and then offers a discount of 20% on the marked price. His actual profit percentage is:",
+      "options": [
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "12%", "is_correct": true},
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "28%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Let CP = 100. Marked Price = 100 × 1.40 = 140. Discount 20 % on MP → SP = 140 × 0.80 = 112. Profit = 112 − 100 = 12 → Profit % = 12 %. Shortcut — successive-percentage: (+40) and (−20) → 40 − 20 − (40×20)/100 = 12 %. The ordering (mark up then discount) matters in phrasing but the final net is 12 %.",
+      "subject": "Quant",
+      "topic": "Profit and loss — mixed tiers",
+      "topic_code": "QNT_PROFIT_LOSS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-pl-03",
+      "generated_at": "2026-04-23T17:00:00+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00003"
+    },
+    {
+      "stem": "A fruit seller bought 120 oranges for ₹600. He sold them at 4 oranges for ₹25. His profit percentage is:",
+      "options": [
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "25%", "is_correct": true},
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "30%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "CP per orange = 600 / 120 = ₹5. SP per orange = 25 / 4 = ₹6.25. Profit per orange = 1.25. Profit % = (1.25 / 5) × 100 = 25 %. Alternative — total: 120 oranges sold for 120 × 6.25 = ₹750; profit = 750 − 600 = ₹150; (150/600) × 100 = 25 %.",
+      "subject": "Quant",
+      "topic": "Profit and loss — mixed tiers",
+      "topic_code": "QNT_PROFIT_LOSS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-pl-04",
+      "generated_at": "2026-04-23T17:00:00+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00004"
+    },
+    {
+      "stem": "A dishonest shopkeeper uses a 900-g weight in place of a 1-kg weight. His profit percentage (assuming he sells at cost price) is approximately:",
+      "options": [
+        {"option_text": "10%", "is_correct": false},
+        {"option_text": "11.11%", "is_correct": true},
+        {"option_text": "9%", "is_correct": false},
+        {"option_text": "12%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "The shopkeeper charges the customer the price of 1,000 g of goods but hands over only 900 g. His gain per transaction = 100 g out of 900 g he actually gave out. Profit % = (100/900) × 100 = 11.11 %. Shortcut — Profit % = [(True weight − False weight) / False weight] × 100. Many students wrongly take the base as 1000 (getting 10 %); the correct base is the actual weight handed over.",
+      "subject": "Quant",
+      "topic": "Profit and loss — mixed tiers",
+      "topic_code": "QNT_PROFIT_LOSS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-pl-05",
+      "generated_at": "2026-04-23T17:00:00+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00005"
+    },
+    {
+      "stem": "If the cost price of 15 articles equals the selling price of 12 articles, the profit percentage is:",
+      "options": [
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "25%", "is_correct": true},
+        {"option_text": "20%", "is_correct": false},
+        {"option_text": "30%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "15 CP = 12 SP → SP/CP = 15/12 = 5/4. So on each article, SP = 1.25 × CP → profit = 25 %. Shortcut — if 'CP of m articles = SP of n articles', profit % = [(m − n)/n] × 100. Here (15 − 12) / 12 × 100 = 25 %.",
+      "subject": "Quant",
+      "topic": "Profit and loss — mixed tiers",
+      "topic_code": "QNT_PROFIT_LOSS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-pl-06",
+      "generated_at": "2026-04-23T17:00:00+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00006"
+    },
+    {
+      "stem": "By selling an article for ₹480, a dealer loses 4%. For how much should he sell it to make a profit of 6%?",
+      "options": [
+        {"option_text": "₹500", "is_correct": false},
+        {"option_text": "₹530", "is_correct": true},
+        {"option_text": "₹520", "is_correct": false},
+        {"option_text": "₹550", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "At 4 % loss, SP = 96 % of CP. So CP = 480 / 0.96 = ₹500. For 6 % profit, new SP = 500 × 1.06 = ₹530. Verify: 6 % of 500 = 30 → SP = 500 + 30 = 530. ✓. Trap ₹520 corresponds to +4 % of 500 (the exact opposite of the loss) — tempting but wrong.",
+      "subject": "Quant",
+      "topic": "Profit and loss — mixed tiers",
+      "topic_code": "QNT_PROFIT_LOSS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-pl-07",
+      "generated_at": "2026-04-23T17:00:00+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00007"
+    }
+  ]
+}
