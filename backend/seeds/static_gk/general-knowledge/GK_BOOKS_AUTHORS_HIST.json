@@ -8,10 +8,22 @@
     {
       "stem": "Who authored the 'ARTHASHASTRA' — an ancient Indian treatise on statecraft, political economy, and military strategy?",
       "options": [
-        {"option_text": "Valmiki", "is_correct": false},
-        {"option_text": "Kautilya / Chanakya / Vishnugupta (4th c. BCE)", "is_correct": true},
-        {"option_text": "Panini", "is_correct": false},
-        {"option_text": "Aryabhata", "is_correct": false}
+        {
+          "option_text": "Valmiki",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kautilya / Chanakya / Vishnugupta",
+          "is_correct": true
+        },
+        {
+          "option_text": "Panini",
+          "is_correct": false
+        },
+        {
+          "option_text": "Aryabhata",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "ARTHASHASTRA — ancient Indian treatise on economics, statecraft, military strategy. Traditionally attributed to KAUTILYA (also known as Chanakya or Vishnugupta) — the legendary Brahmin advisor of Chandragupta Maurya (4th c. BCE). 15 books covering: finance, administration, foreign relations (Mandala theory of 'circles of states'), law, military strategy, spying, diplomacy. Rediscovered in 1905 by R. SHAMASASTRY (Mysore Govt Oriental Library). Compared to Machiavelli's 'The Prince' (1513) but 1800 years older + much broader. Other CLASSIC ancient Indian texts: (1) RAMAYANA by VALMIKI (~500 BCE - 100 BCE); (2) MAHABHARATA by VYASA / VEDA VYASA (100,000 couplets — world's longest epic, incl Bhagavad Gita); (3) ASHTADHYAYI by PANINI (4th c. BCE — Sanskrit grammar, ~4000 rules — first analytical language description in human history); (4) ARYABHATIYA by ARYABHATA (499 CE — astronomy, mathematics); (5) NATYA SHASTRA by BHARATA MUNI (on performing arts); (6) CHARAKA SAMHITA (medicine, by CHARAKA); SUSHRUTA SAMHITA (surgery); (7) KAMA SUTRA by VATSYAYANA.",
@@ -24,15 +36,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-gk-books-01",
       "generated_at": "2026-04-20T23:35:00+00:00",
-      "id": "sgk_GK_BOOKS_AUTHORS_HIST_00013"
+      "id": "sgk_GK_BOOKS_AUTHORS_HIST_00013",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Kautilya / Chanakya / Vishnugupta (4th c. BCE)",
+          "now": "Kautilya / Chanakya / Vishnugupta",
+          "moved_to_explanation": "4th c. BCE"
+        }
+      ]
     },
     {
       "stem": "Match book to author: (A) Gitanjali (B) Anandamath (C) Geetha Rahasya (D) Gora",
       "options": [
-        {"option_text": "(A) Tagore (B) Bankim Chandra Chatterjee (C) Tilak (D) Tagore", "is_correct": true},
-        {"option_text": "(A) Sharat Chandra (B) Premchand (C) Gandhi (D) Tagore", "is_correct": false},
-        {"option_text": "(A) Tagore (B) Sharat Chandra (C) Nehru (D) Sarojini Naidu", "is_correct": false},
-        {"option_text": "(A) Gandhi (B) Vivekananda (C) Bipin Chandra Pal (D) Tagore", "is_correct": false}
+        {
+          "option_text": "(A) Tagore (B) Bankim Chandra Chatterjee (C) Tilak (D) Tagore",
+          "is_correct": true
+        },
+        {
+          "option_text": "(A) Sharat Chandra (B) Premchand (C) Gandhi (D) Tagore",
+          "is_correct": false
+        },
+        {
+          "option_text": "(A) Tagore (B) Sharat Chandra (C) Nehru (D) Sarojini Naidu",
+          "is_correct": false
+        },
+        {
+          "option_text": "(A) Gandhi (B) Vivekananda (C) Bipin Chandra Pal (D) Tagore",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "MATCH: (A) GITANJALI (Song Offerings, 1910 Bengali, 1912 English) — RABINDRANATH TAGORE — won the NOBEL PRIZE in Literature 1913 (first non-European laureate). (B) ANANDAMATH (1882) — BANKIM CHANDRA CHATTERJEE — the novel that gave us 'VANDE MATARAM' (India's National Song). (C) GEETHA RAHASYA (Gita Rahasya, 1915, written in Mandalay jail) — BAL GANGADHAR TILAK — philosophical commentary on Bhagavad Gita emphasising Karma Yoga. (D) GORA (1910) — RABINDRANATH TAGORE — novel on nationalism + religious identity. OTHER FAMOUS WORKS: CHOKHER BALI (Tagore), SARE JAHAN SE ACHCHA (Muhammad Iqbal, 1904), DEVDAS + PARINEETA (Sharat Chandra Chattopadhyay), GODAN + GABAN + RANGBHOOMI (MUNSHI PREMCHAND — King of Hindi literature), BHARAT BHARATI (Maithili Sharan Gupt), KAMAYANI (Jaishankar Prasad), NEEL DARPAN (Dinabandhu Mitra — on indigo farmers, fueled 1859-60 Indigo Revolt), DISCOVERY OF INDIA + GLIMPSES OF WORLD HISTORY + AN AUTOBIOGRAPHY (Jawaharlal Nehru), INDIA WINS FREEDOM (Maulana Azad), POVERTY AND UN-BRITISH RULE IN INDIA (Dadabhai Naoroji, 1901 — drain theory).",
@@ -50,10 +82,22 @@
     {
       "stem": "'DISCOVERY OF INDIA' — the book that inspired the TV series 'BHARAT EK KHOJ' — was written by:",
       "options": [
-        {"option_text": "Mahatma Gandhi", "is_correct": false},
-        {"option_text": "Jawaharlal Nehru (while imprisoned at Ahmednagar Fort, 1942-45)", "is_correct": true},
-        {"option_text": "Bal Gangadhar Tilak", "is_correct": false},
-        {"option_text": "B.R. Ambedkar", "is_correct": false}
+        {
+          "option_text": "Mahatma Gandhi",
+          "is_correct": false
+        },
+        {
+          "option_text": "Jawaharlal Nehru",
+          "is_correct": true
+        },
+        {
+          "option_text": "Bal Gangadhar Tilak",
+          "is_correct": false
+        },
+        {
+          "option_text": "B.R. Ambedkar",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "'DISCOVERY OF INDIA' (written 1944, published 1946) — by JAWAHARLAL NEHRU while imprisoned at AHMEDNAGAR FORT prison during Quit India (Aug 1942-June 1945). An ambitious historical + philosophical study of India's civilisation. Television adaptation: 'BHARAT EK KHOJ' (1988) — directed by SHYAM BENEGAL for Doordarshan, 53 episodes covering 5000 years of Indian history. Nehru's other books (almost all written in jails): (1) 'AN AUTOBIOGRAPHY' / 'Toward Freedom' (1936, Naini jail + Dehradun jail); (2) 'GLIMPSES OF WORLD HISTORY' (1934, 196 letters to daughter Indira from various jails 1930-33); (3) 'LETTERS FROM A FATHER TO HIS DAUGHTER' (1929-31, letters to 10-year-old Indira on natural history); (4) 'INDIA AND THE WORLD' (1936); (5) 'EIGHTEEN MONTHS IN INDIA' (1938). Nehru spent ~9 YEARS in British jails over 9 stints. Other prison-written works: GANDHI's 'Hind Swaraj' (1909, ship voyage, not jail), Tilak's 'Gita Rahasya' (Mandalay jail 1908-14), Savarkar's 'The Indian War of Independence 1857' (written 1908 while in England; smuggled), Gandhi's 'My Experiments with Truth' / 'Satya Ke Mere Prayog' (1927-29, serialised in Navjivan + Young India).",
@@ -66,15 +110,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-gk-books-01",
       "generated_at": "2026-04-20T23:35:00+00:00",
-      "id": "sgk_GK_BOOKS_AUTHORS_HIST_00015"
+      "id": "sgk_GK_BOOKS_AUTHORS_HIST_00015",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Jawaharlal Nehru (while imprisoned at Ahmednagar Fort, 1942-45)",
+          "now": "Jawaharlal Nehru",
+          "moved_to_explanation": "while imprisoned at Ahmednagar Fort, 1942-45"
+        }
+      ]
     },
     {
       "stem": "The 'ORIGIN OF SPECIES' — which introduced the theory of evolution by natural selection — was published in 1859 by:",
       "options": [
-        {"option_text": "Gregor Mendel", "is_correct": false},
-        {"option_text": "Charles Darwin", "is_correct": true},
-        {"option_text": "Jean-Baptiste Lamarck", "is_correct": false},
-        {"option_text": "Alfred Russel Wallace", "is_correct": false}
+        {
+          "option_text": "Gregor Mendel",
+          "is_correct": false
+        },
+        {
+          "option_text": "Charles Darwin",
+          "is_correct": true
+        },
+        {
+          "option_text": "Jean-Baptiste Lamarck",
+          "is_correct": false
+        },
+        {
+          "option_text": "Alfred Russel Wallace",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "'ON THE ORIGIN OF SPECIES BY MEANS OF NATURAL SELECTION' — published 24 November 1859 by CHARLES DARWIN (1809-1882). Presented the theory of EVOLUTION by NATURAL SELECTION — individuals with favourable heritable variations have higher reproductive success; over generations, this changes populations. Based on observations during the 5-year voyage of HMS BEAGLE (1831-36, esp. Galapagos finches). Rushed to publication when Alfred Russel WALLACE independently arrived at the same conclusion from SE Asia — both presented a joint paper in July 1858 at Linnean Society before Darwin's book. Controversial at the time due to religious implications. Darwin's later 'THE DESCENT OF MAN' (1871) applied evolution to humans. OTHER REVOLUTIONARY BOOKS: NEWTON's 'PRINCIPIA' (1687) — mathematical laws of motion + gravitation; COPERNICUS's 'DE REVOLUTIONIBUS' (1543) — heliocentric solar system; KARL MARX + ENGELS — 'COMMUNIST MANIFESTO' (1848), 'DAS KAPITAL' (1867-94); ADAM SMITH — 'WEALTH OF NATIONS' (1776, economics); KEYNES — 'General Theory' (1936); FREUD — 'Interpretation of Dreams' (1899); EINSTEIN — special relativity papers (1905 'Annus Mirabilis'). MENDEL's pea genetics (1866, contemporary with Darwin) were ignored for 35 years.",
@@ -92,10 +156,22 @@
     {
       "stem": "'GOD OF SMALL THINGS' — Indian English novel that won the BOOKER PRIZE 1997 — was written by:",
       "options": [
-        {"option_text": "Salman Rushdie", "is_correct": false},
-        {"option_text": "Arundhati Roy", "is_correct": true},
-        {"option_text": "Vikram Seth", "is_correct": false},
-        {"option_text": "Amitav Ghosh", "is_correct": false}
+        {
+          "option_text": "Salman Rushdie",
+          "is_correct": false
+        },
+        {
+          "option_text": "Arundhati Roy",
+          "is_correct": true
+        },
+        {
+          "option_text": "Vikram Seth",
+          "is_correct": false
+        },
+        {
+          "option_text": "Amitav Ghosh",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "'THE GOD OF SMALL THINGS' (1997) — by ARUNDHATI ROY (Suzanna Arundhati Roy, born 1961). Her debut novel — won the BOOKER PRIZE (1997) — first Indian woman, first Indian resident (Rushdie was UK-based). Semi-autobiographical, set in Kerala; explored forbidden love, caste, trauma. Her second novel (20 years later): 'THE MINISTRY OF UTMOST HAPPINESS' (2017). Also a prominent activist + essayist on environmental, social, political issues (Narmada Bachao, Kashmir, nuclear tests critiques). INDIAN ENGLISH BOOKER PRIZE winners: (1) SALMAN RUSHDIE — 'MIDNIGHT'S CHILDREN' (1981, Booker of Bookers + Best of Booker); 'The Satanic Verses' (1988, shortlisted, banned in several countries). (2) ARUNDHATI ROY — 1997. (3) KIRAN DESAI — 'THE INHERITANCE OF LOSS' (2006) — daughter of Anita Desai (herself shortlisted multiple times). (4) ARAVIND ADIGA — 'THE WHITE TIGER' (2008). OTHER notable Indian English authors: VIKRAM SETH (Suitable Boy), AMITAV GHOSH (Ibis Trilogy, Shadow Lines — JNANPITH 2018, 1st English winner), JHUMPA LAHIRI (Pulitzer 2000 for 'Interpreter of Maladies'), ROHINTON MISTRY, CHITRA BANERJEE, RK NARAYAN (Malgudi Days), MULK RAJ ANAND (Coolie, Untouchable), RAJA RAO (Kanthapura).",
@@ -113,13 +189,25 @@
     {
       "stem": "Tagore's 'GITANJALI' (1910 Bengali; 1912 English) won him the Nobel Prize in 1913. Which other country's NATIONAL ANTHEM was also written by Tagore?",
       "options": [
-        {"option_text": "Sri Lanka", "is_correct": false},
-        {"option_text": "BANGLADESH ('Amar Shonar Bangla', 1905)", "is_correct": true},
-        {"option_text": "Myanmar", "is_correct": false},
-        {"option_text": "Nepal", "is_correct": false}
+        {
+          "option_text": "Sri Lanka",
+          "is_correct": false
+        },
+        {
+          "option_text": "BANGLADESH",
+          "is_correct": true
+        },
+        {
+          "option_text": "Myanmar",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nepal",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "RABINDRANATH TAGORE (1861-1941) wrote the national anthems of TWO countries: (1) INDIA — 'JANA GANA MANA' (Bengali, 1911; adopted 24 Jan 1950); (2) BANGLADESH — 'AMAR SHONAR BANGLA' ('My Golden Bengal') — originally written in 1905 in protest against British plans for Bengal Partition; adopted by Bangladesh on independence (1971) as its national anthem. SRI LANKA's national anthem 'SRI LANKA MATHA' was written by Ananda Samarakoon (a Tagore student at Shantiniketan — so Tagore's INFLUENCE extends there too, though he didn't write it). Tagore also composed the Bengali 'RABINDRA SANGEET' — ~2,230 songs. Founded VISHVA-BHARATI University at SHANTINIKETAN (now a CENTRAL UNIVERSITY, UNESCO WHS 2023). Knighted 1915; RENOUNCED Knighthood 30 May 1919 in protest against Jallianwala Bagh massacre. Wrote in multiple genres: novels (Chokher Bali, Gora, Ghare Baire), short stories (Kabuliwala, Postmaster), poetry, essays, plays. GANDHI called him 'GURUDEV'; Tagore called Gandhi 'MAHATMA'. First non-European Nobel laureate in Literature.",
+      "explanation": "RABINDRANATH TAGORE (1861-1941) wrote the national anthems of TWO countries: (1) INDIA — 'JANA GANA MANA' (Bengali, 1911; adopted 24 Jan 1950); (2) BANGLADESH — 'AMAR SHONAR BANGLA' ('My Golden Bengal') — originally written in 1905 in protest against British plans for Bengal Partition; adopted by Bangladesh on independence (1971) as its national anthem. SRI LANKA's national anthem 'SRI LANKA MATHA' was written by Ananda Samarakoon (a Tagore student at Shantiniketan — so Tagore's INFLUENCE extends there too, though he didn't write it). Tagore also composed the Bengali 'RABINDRA SANGEET' — ~2,230 songs. Founded VISHVA-BHARATI University at SHANTINIKETAN (now a CENTRAL UNIVERSITY, UNESCO WHS 2023). Knighted 1915; RENOUNCED Knighthood 30 May 1919 in protest against Jallianwala Bagh massacre. Wrote in multiple genres: novels (Chokher Bali, Gora, Ghare Baire), short stories (Kabuliwala, Postmaster), poetry, essays, plays. GANDHI called him 'GURUDEV'; Tagore called Gandhi 'MAHATMA'. First non-European Nobel laureate in Literature. 'Amar Shonar Bangla', 1905.",
       "subject": "General Knowledge",
       "topic": "Famous Books & Authors (Historical & Classic)",
       "topic_code": "GK_BOOKS_AUTHORS_HIST",
@@ -129,15 +217,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-gk-books-01",
       "generated_at": "2026-04-20T23:35:00+00:00",
-      "id": "sgk_GK_BOOKS_AUTHORS_HIST_00018"
+      "id": "sgk_GK_BOOKS_AUTHORS_HIST_00018",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "BANGLADESH ('Amar Shonar Bangla', 1905)",
+          "now": "BANGLADESH",
+          "moved_to_explanation": "'Amar Shonar Bangla', 1905"
+        }
+      ]
     },
     {
       "stem": "'INDIA WINS FREEDOM' (1959) — an autobiography chronicling India's journey to independence — was written by:",
       "options": [
-        {"option_text": "Jawaharlal Nehru", "is_correct": false},
-        {"option_text": "Maulana Abul Kalam Azad", "is_correct": true},
-        {"option_text": "Sardar Patel", "is_correct": false},
-        {"option_text": "Mahatma Gandhi", "is_correct": false}
+        {
+          "option_text": "Jawaharlal Nehru",
+          "is_correct": false
+        },
+        {
+          "option_text": "Maulana Abul Kalam Azad",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sardar Patel",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mahatma Gandhi",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "'INDIA WINS FREEDOM' (1959, published in full 1988 after contested 30-year embargo on sensitive portions) — by MAULANA ABUL KALAM AZAD (1888-1958) — Independent India's FIRST EDUCATION MINISTER, senior INC leader, scholar, freedom fighter. Youngest INC president (at 35 in 1923; again 1940-46 — longest serving president). His birthday 11 November is NATIONAL EDUCATION DAY. He was the architect of IITs + UGC + Sangeet Natak Akademi + Sahitya Akademi + Lalit Kala Akademi. BHARAT RATNA posthumously 1992. Favoured HINDU-MUSLIM UNITY + opposed Partition. 30 'secret' pages of his book were released only 30 years after his death (1988) — revealed critical views of Nehru/Gandhi on Partition etc. AUTOBIOGRAPHIES of Indian leaders: (1) GANDHI — 'MY EXPERIMENTS WITH TRUTH' (1927); (2) NEHRU — 'AN AUTOBIOGRAPHY' (1936) + 'TOWARD FREEDOM'; (3) DR. AMBEDKAR — 'WAITING FOR A VISA' (unfinished); (4) MORARJI DESAI — 'THE STORY OF MY LIFE' (3 vols); (5) AP J ABDUL KALAM — 'WINGS OF FIRE' (1999); (6) ATAL BIHARI VAJPAYEE — '21 poems' + 'Meri Ikyawan Kavitaayen'; (7) SAROJINI NAIDU — 'The Golden Threshold' (poems, not autobiography); (8) LAL BAHADUR SHASTRI — few writings; (9) DR. ZAKIR HUSSAIN — educator + philosopher.",
@@ -155,10 +263,22 @@
     {
       "stem": "KALIDASA — the legendary Sanskrit poet-playwright of the Gupta era — wrote several famous works. Which of the following is NOT by Kalidasa?",
       "options": [
-        {"option_text": "Abhijnanashakuntalam (play)", "is_correct": false},
-        {"option_text": "Meghadutam (poem)", "is_correct": false},
-        {"option_text": "Kumarasambhavam (poem)", "is_correct": false},
-        {"option_text": "Mudrarakshasa", "is_correct": true}
+        {
+          "option_text": "Abhijnanashakuntalam (play)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Meghadutam (poem)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kumarasambhavam (poem)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mudrarakshasa",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "explanation": "MUDRARAKSHASA ('The Signet Ring of Rakshasa') was written by VISHAKHADATTA (not Kalidasa) — a political drama based on Chanakya + Chandragupta Maurya's rise to power. KALIDASA — flourished in the Gupta era (~4th-5th c. CE, probably in the court of Chandragupta II Vikramaditya at Ujjain). Works attributed to him: PLAYS (NATAKAS): (1) ABHIJNANASHAKUNTALAM (The Recognition of Shakuntala) — masterpiece; Goethe praised it; first Sanskrit play translated to English (1789) by William Jones; (2) VIKRAMORVASHIYAM (Vikrama and Urvashi); (3) MALAVIKAGNIMITRAM (Malavika and Agnimitra — first, possibly earliest play). POEMS (KAVYAS): (1) MEGHADUTAM (The Cloud Messenger) — lyrical poem, a yaksha sends message to his wife via a cloud; (2) KUMARASAMBHAVAM (Birth of Kumara/Kartikeya); (3) RAGHUVAMSHAM (Dynasty of Raghu/Rama's ancestors); (4) RITUSAMHARAM (Pageant of Seasons). Called the 'SHAKESPEARE OF INDIA'. 'NAVARATNA' (Nine Gems) of Chandragupta II's court (later tradition). OTHER SANSKRIT LITERARY GIANTS: BHASA (earlier, 'Swapnavasavadatta'), SHUDRAKA ('Mrichchhakatika' — the Little Clay Cart), BHAVABHUTI ('Uttararamacharita'), BANABHATTA ('Harshacharita' + 'Kadambari'), JAYADEVA ('Gita Govinda').",

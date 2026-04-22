@@ -8,10 +8,22 @@
     {
       "stem": "Which is the LONGEST Peninsular river of India, flowing through six states and emptying into the Bay of Bengal?",
       "options": [
-        {"option_text": "Krishna", "is_correct": false},
-        {"option_text": "Godavari ('Dakshin Ganga')", "is_correct": true},
-        {"option_text": "Cauvery", "is_correct": false},
-        {"option_text": "Mahanadi", "is_correct": false}
+        {
+          "option_text": "Krishna",
+          "is_correct": false
+        },
+        {
+          "option_text": "Godavari",
+          "is_correct": true
+        },
+        {
+          "option_text": "Cauvery",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mahanadi",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "GODAVARI (1465 km) is the LONGEST Peninsular river and 2nd longest in India overall (after the Ganga). Called 'Dakshin Ganga' (Southern Ganges). Source: Triyambakeshwar (Nashik district, Maharashtra, Western Ghats). Flows E/SE through Maharashtra, Telangana, AP (and touches MP, CG, Odisha in catchment) → Bay of Bengal at Antarvedi (Andhra delta). Tributaries: Manjira, Wainganga, Pranhita, Indravati, Sabari. Rank of peninsular rivers by length: Godavari (1465) > Krishna (1400) > Mahanadi (851) > Cauvery (800) > Narmada (1312 westward) > Tapi (724 westward). Narmada is longer than Cauvery/Mahanadi but flows WESTWARD into the Arabian Sea.",
@@ -24,15 +36,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-geo-riv-pen-01",
       "generated_at": "2026-04-20T14:30:00+00:00",
-      "id": "sgk_GEO_IND_RIVER_PEN_00012"
+      "id": "sgk_GEO_IND_RIVER_PEN_00012",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Godavari ('Dakshin Ganga')",
+          "now": "Godavari",
+          "moved_to_explanation": "'Dakshin Ganga'"
+        }
+      ]
     },
     {
       "stem": "Which of the following peninsular rivers flows WESTWARD into the Arabian Sea (not eastward into Bay of Bengal)?",
       "options": [
-        {"option_text": "Krishna", "is_correct": false},
-        {"option_text": "Cauvery", "is_correct": false},
-        {"option_text": "Narmada", "is_correct": true},
-        {"option_text": "Mahanadi", "is_correct": false}
+        {
+          "option_text": "Krishna",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cauvery",
+          "is_correct": false
+        },
+        {
+          "option_text": "Narmada",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mahanadi",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "Most peninsular rivers flow EASTWARD (due to the gentle eastern slope of the Deccan Plateau) — Mahanadi, Godavari, Krishna, Cauvery. Only a few flow WESTWARD into the Arabian Sea: NARMADA (longest westward-flowing, 1312 km; source Amarkantak MP; flows through a RIFT VALLEY between Vindhya & Satpura ranges; NO delta — forms an estuary at Gulf of Khambhat near Bharuch Gujarat); TAPI / TAPTI (724 km, second-longest westward; source Multai MP; parallel to Narmada; also rift valley through Satpura; estuary at Surat Guj); SABARMATI (Rajasthan→Gujarat, Gandhi's ashram on its banks at Ahmedabad); MAHI (MP→Guj); LUNI (Thar, ends in Rann of Kutch). Western Ghats coastal streams (Bharatpuzha, Periyar, Netravati) also flow west.",
@@ -50,10 +82,22 @@
     {
       "stem": "The Cauvery river originates in which hill range, and which three states does it primarily flow through?",
       "options": [
-        {"option_text": "Nilgiri Hills; Kerala, Karnataka, TN", "is_correct": false},
-        {"option_text": "Brahmagiri Hills (Western Ghats); Karnataka, TN, Puducherry", "is_correct": true},
-        {"option_text": "Satpura Hills; Maharashtra, MP, AP", "is_correct": false},
-        {"option_text": "Eastern Ghats; AP, TN, Kerala", "is_correct": false}
+        {
+          "option_text": "Nilgiri Hills; Kerala, Karnataka, TN",
+          "is_correct": false
+        },
+        {
+          "option_text": "Brahmagiri Hills (Western Ghats); Karnataka, TN, Puducherry",
+          "is_correct": true
+        },
+        {
+          "option_text": "Satpura Hills; Maharashtra, MP, AP",
+          "is_correct": false
+        },
+        {
+          "option_text": "Eastern Ghats; AP, TN, Kerala",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "CAUVERY (~800 km) originates at TALAKAVERI in the BRAHMAGIRI HILLS (Western Ghats) in Kodagu (Coorg) district, KARNATAKA. Flows primarily through Karnataka, Tamil Nadu — enters Bay of Bengal near POOMPUHAR (TN) + Karaikal (Puducherry). Small catchment in Kerala (Wayanad) too. Major tributaries: Harangi, Hemavati, Shimsha, Arkavati, Kabini (from Kerala), Bhavani (Nilgiris), Noyyal, Amaravati. Famous dams: Krishna Raja Sagar (KA, near Mysuru), Mettur / Stanley Reservoir (TN). Water dispute (CAUVERY DISPUTE) between KA-TN-Kerala-Puducherry is one of India's oldest — CWDT 2007 award, SC settlement 2018. Cauvery is sacred; its delta in TN is called the 'Rice Bowl of South India'.",
@@ -71,10 +115,22 @@
     {
       "stem": "The Krishna river originates in Maharashtra (Western Ghats). Its main tributary, the largest by discharge, is:",
       "options": [
-        {"option_text": "Bhima", "is_correct": false},
-        {"option_text": "Tungabhadra", "is_correct": true},
-        {"option_text": "Koyna", "is_correct": false},
-        {"option_text": "Ghataprabha", "is_correct": false}
+        {
+          "option_text": "Bhima",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tungabhadra",
+          "is_correct": true
+        },
+        {
+          "option_text": "Koyna",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ghataprabha",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "KRISHNA (~1400 km, 2nd-longest peninsular) originates at MAHABALESHWAR (Maharashtra, Western Ghats) and flows through Maharashtra, Karnataka, Telangana, AP → Bay of Bengal near Vijayawada/Machilipatnam. Major tributaries: TUNGABHADRA (formed by union of Tunga and Bhadra in Karnataka; largest by water volume — joins Krishna at Alampur), BHIMA (longest tributary — rises in Bhimashankar Maha), KOYNA (major dam), GHATAPRABHA, MALAPRABHA, MUSI (flows through Hyderabad), MUSI. Famous dams: Nagarjuna Sagar (Telangana-AP — world's largest masonry dam; multi-purpose), Srisailam, Almatti (KA), Tungabhadra (KA-AP). Nagarjunasagar-Srisailam is also India's largest tiger reserve.",
@@ -92,10 +148,22 @@
     {
       "stem": "The Mahanadi river, with the Hirakud Dam — the world's LONGEST EARTHEN DAM — flows primarily through which state?",
       "options": [
-        {"option_text": "Chhattisgarh", "is_correct": false},
-        {"option_text": "Odisha", "is_correct": true},
-        {"option_text": "Jharkhand", "is_correct": false},
-        {"option_text": "Andhra Pradesh", "is_correct": false}
+        {
+          "option_text": "Chhattisgarh",
+          "is_correct": false
+        },
+        {
+          "option_text": "Odisha",
+          "is_correct": true
+        },
+        {
+          "option_text": "Jharkhand",
+          "is_correct": false
+        },
+        {
+          "option_text": "Andhra Pradesh",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "MAHANADI (~851 km) rises at Sihawa, Dhamtari district, CHHATTISGARH, but flows primarily through Odisha (empties into Bay of Bengal via its delta at Paradip). HIRAKUD DAM (Sambalpur district, Odisha, 1956) — built across Mahanadi. Length ~25.8 km (main + dykes) — world's longest EARTHEN / earth-and-concrete composite dam. Also India's first major post-independence multi-purpose river valley project. Main Mahanadi tributaries: Seonath, Ong, Jonk, Hasdeo, Ib, Mand, Tel. Mahanadi delta hosts the CHILIKA LAKE (via distributaries) and the BHITARKANIKA mangroves. Historically called 'Mahan' (great) + 'Nadi' (river).",
@@ -113,10 +181,22 @@
     {
       "stem": "The Narmada and Tapi rivers flow through rift valleys between which two mountain ranges?",
       "options": [
-        {"option_text": "Himalayas and Vindhya", "is_correct": false},
-        {"option_text": "Vindhya and Satpura", "is_correct": true},
-        {"option_text": "Satpura and Western Ghats", "is_correct": false},
-        {"option_text": "Aravalli and Vindhya", "is_correct": false}
+        {
+          "option_text": "Himalayas and Vindhya",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vindhya and Satpura",
+          "is_correct": true
+        },
+        {
+          "option_text": "Satpura and Western Ghats",
+          "is_correct": false
+        },
+        {
+          "option_text": "Aravalli and Vindhya",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Both NARMADA and TAPI flow westward through RIFT VALLEYS — a block faulted down (graben) between two parallel ranges. NARMADA is between the VINDHYA range (north) and SATPURA range (south). TAPI is south of the Satpura range — technically between the Satpura (north) and the Gawilgarh Hills / Ajanta Hills (south). Both rivers flow ~parallel to each other. This rift-valley origin is WHY they DON'T form deltas (rift-valley topography gives straight confined flow) — they form ESTUARIES at the Gulf of Khambhat (Narmada at Bharuch, Tapi at Surat). Vindhya also marks the TRADITIONAL DIVIDE between North and South India.",
@@ -134,13 +214,25 @@
     {
       "stem": "The LUNI river, India's only river of the arid Thar desert, originates in the Aravalli Hills and ends in which water body?",
       "options": [
-        {"option_text": "Gulf of Khambhat", "is_correct": false},
-        {"option_text": "Rann of Kutch (disappears into the marshlands)", "is_correct": true},
-        {"option_text": "Arabian Sea near Porbandar", "is_correct": false},
-        {"option_text": "Sambhar Lake", "is_correct": false}
+        {
+          "option_text": "Gulf of Khambhat",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rann of Kutch",
+          "is_correct": true
+        },
+        {
+          "option_text": "Arabian Sea near Porbandar",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sambhar Lake",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "LUNI ('Lavanavati' = 'salty river' due to its saline waters from the region) originates from Pushkar Valley in Ajmer district (Aravalli Hills) at ~550m elevation, flows ~495 km south-west through southern Rajasthan (Pali, Jodhpur, Barmer districts), and DISAPPEARS into the RANN OF KUTCH marshlands (Gujarat) — never reaches the sea. Seasonal/ephemeral flow — heavy during monsoon, dry most of the year. Other Thar desert rivers: GHAGGAR (proposed ancient Saraswati river), Krishnavati, Jojari, Bandi. Sambhar Lake (Raj) is India's largest inland saline lake — tributaries Mendha, Kharian, Rupangarh drain into it but Luni doesn't touch Sambhar.",
+      "explanation": "LUNI ('Lavanavati' = 'salty river' due to its saline waters from the region) originates from Pushkar Valley in Ajmer district (Aravalli Hills) at ~550m elevation, flows ~495 km south-west through southern Rajasthan (Pali, Jodhpur, Barmer districts), and DISAPPEARS into the RANN OF KUTCH marshlands (Gujarat) — never reaches the sea. Seasonal/ephemeral flow — heavy during monsoon, dry most of the year. Other Thar desert rivers: GHAGGAR (proposed ancient Saraswati river), Krishnavati, Jojari, Bandi. Sambhar Lake (Raj) is India's largest inland saline lake — tributaries Mendha, Kharian, Rupangarh drain into it but Luni doesn't touch Sambhar. disappears into the marshlands.",
       "subject": "Geography",
       "topic": "India - Peninsular River System",
       "topic_code": "GEO_IND_RIVER_PEN",
@@ -150,15 +242,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-geo-riv-pen-01",
       "generated_at": "2026-04-20T14:30:00+00:00",
-      "id": "sgk_GEO_IND_RIVER_PEN_00018"
+      "id": "sgk_GEO_IND_RIVER_PEN_00018",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Rann of Kutch (disappears into the marshlands)",
+          "now": "Rann of Kutch",
+          "moved_to_explanation": "disappears into the marshlands"
+        }
+      ]
     },
     {
       "stem": "Match each PENINSULAR river to its ORIGIN: (1) Krishna – (2) Godavari – (3) Cauvery – (4) Narmada",
       "options": [
-        {"option_text": "(1) Triyambakeshwar (2) Mahabaleshwar (3) Talakaveri (4) Amarkantak", "is_correct": false},
-        {"option_text": "(1) Mahabaleshwar (2) Triyambakeshwar (3) Talakaveri/Brahmagiri (4) Amarkantak", "is_correct": true},
-        {"option_text": "(1) Amarkantak (2) Triyambakeshwar (3) Multai (4) Mahabaleshwar", "is_correct": false},
-        {"option_text": "(1) Sihawa (2) Multai (3) Brahmagiri (4) Triyambakeshwar", "is_correct": false}
+        {
+          "option_text": "(1) Triyambakeshwar (2) Mahabaleshwar (3) Talakaveri (4) Amarkantak",
+          "is_correct": false
+        },
+        {
+          "option_text": "(1) Mahabaleshwar (2) Triyambakeshwar (3) Talakaveri/Brahmagiri (4) Amarkantak",
+          "is_correct": true
+        },
+        {
+          "option_text": "(1) Amarkantak (2) Triyambakeshwar (3) Multai (4) Mahabaleshwar",
+          "is_correct": false
+        },
+        {
+          "option_text": "(1) Sihawa (2) Multai (3) Brahmagiri (4) Triyambakeshwar",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Peninsular river sources: KRISHNA → Mahabaleshwar (Maharashtra, Western Ghats, ~1337m); GODAVARI → Triyambakeshwar (Nashik district, Maharashtra, WG, ~1067m); CAUVERY → Talakaveri in Brahmagiri Hills (Kodagu, Karnataka, WG, ~1341m); NARMADA → Amarkantak Plateau (Anuppur district, MP, where Vindhya meets Satpura and Maikal Hills); TAPI → Multai (Betul district, MP, Satpura Hills); MAHANADI → Sihawa (Dhamtari, Chhattisgarh); SABARMATI → Aravalli (Udaipur, Raj); LUNI → Pushkar Valley (Ajmer, Raj). Practice with maps — source identification is a staple exam pattern.",

@@ -8,10 +8,22 @@
     {
       "stem": "RADIOACTIVITY was discovered by:",
       "options": [
-        {"option_text": "Marie Curie", "is_correct": false},
-        {"option_text": "Henri Becquerel", "is_correct": true},
-        {"option_text": "Ernest Rutherford", "is_correct": false},
-        {"option_text": "Wilhelm Röntgen", "is_correct": false}
+        {
+          "option_text": "Marie Curie",
+          "is_correct": false
+        },
+        {
+          "option_text": "Henri Becquerel",
+          "is_correct": true
+        },
+        {
+          "option_text": "Ernest Rutherford",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wilhelm Röntgen",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Henri Becquerel (1896) discovered radioactivity in uranium salts accidentally — they fogged a photographic plate kept in a drawer. Marie and Pierre Curie later isolated polonium and radium. Rutherford identified alpha, beta rays. Röntgen discovered X-rays (1895). Nobel Physics 1903 shared: Becquerel + Curies.",
@@ -29,10 +41,22 @@
     {
       "stem": "The three radioactive emissions (in order of penetrating power, least to greatest) are:",
       "options": [
-        {"option_text": "Alpha < Beta < Gamma", "is_correct": true},
-        {"option_text": "Gamma < Beta < Alpha", "is_correct": false},
-        {"option_text": "Alpha < Gamma < Beta", "is_correct": false},
-        {"option_text": "Beta < Alpha < Gamma", "is_correct": false}
+        {
+          "option_text": "Alpha < Beta < Gamma",
+          "is_correct": true
+        },
+        {
+          "option_text": "Gamma < Beta < Alpha",
+          "is_correct": false
+        },
+        {
+          "option_text": "Alpha < Gamma < Beta",
+          "is_correct": false
+        },
+        {
+          "option_text": "Beta < Alpha < Gamma",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Alpha (helium nucleus, +2) — stopped by paper. Beta (fast electron, −1) — stopped by aluminium sheet. Gamma (high-energy EM) — needs thick lead or concrete. Ionising power is the REVERSE order (alpha most ionising, gamma least).",
@@ -50,10 +74,22 @@
     {
       "stem": "The famous mass-energy equivalence relation is:",
       "options": [
-        {"option_text": "E = mc", "is_correct": false},
-        {"option_text": "E = mc²", "is_correct": true},
-        {"option_text": "E = m/c²", "is_correct": false},
-        {"option_text": "E = m + c²", "is_correct": false}
+        {
+          "option_text": "E = mc",
+          "is_correct": false
+        },
+        {
+          "option_text": "E = mc²",
+          "is_correct": true
+        },
+        {
+          "option_text": "E = m/c²",
+          "is_correct": false
+        },
+        {
+          "option_text": "E = m + c²",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Einstein's 1905 special relativity — E = mc². Tiny mass converts to enormous energy (c² ≈ 9 × 10¹⁶ J/kg). Basis for nuclear fission (atom bomb, reactors) and fusion (Sun, stars, H-bomb).",
@@ -71,13 +107,25 @@
     {
       "stem": "The source of the SUN's energy is:",
       "options": [
-        {"option_text": "Nuclear fission", "is_correct": false},
-        {"option_text": "Nuclear fusion (hydrogen → helium)", "is_correct": true},
-        {"option_text": "Chemical combustion", "is_correct": false},
-        {"option_text": "Gravitational collapse", "is_correct": false}
+        {
+          "option_text": "Nuclear fission",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nuclear fusion",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chemical combustion",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gravitational collapse",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Sun fuses hydrogen into helium in its core (proton-proton chain, ~15 million K). 620 million tonnes H → He every second, losing ~4.3 million tonnes as energy (E=mc²). Fusion = combining nuclei. Fission = splitting heavy nuclei (U-235, Pu-239 in reactors/bombs).",
+      "explanation": "Sun fuses hydrogen into helium in its core (proton-proton chain, ~15 million K). 620 million tonnes H → He every second, losing ~4.3 million tonnes as energy (E=mc²). Fusion = combining nuclei. Fission = splitting heavy nuclei (U-235, Pu-239 in reactors/bombs). hydrogen → helium.",
       "subject": "Physics",
       "topic": "Modern physics & nuclear — mixed tiers",
       "topic_code": "PHY_MODERN_MIXED",
@@ -87,18 +135,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-phy-mod-04",
       "generated_at": "2026-04-22T17:00:00+00:00",
-      "id": "sgk_PHY_MODERN_MIXED_00004"
+      "id": "sgk_PHY_MODERN_MIXED_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Nuclear fusion (hydrogen → helium)",
+          "now": "Nuclear fusion",
+          "moved_to_explanation": "hydrogen → helium"
+        }
+      ]
     },
     {
       "stem": "The PHOTOELECTRIC EFFECT (for which Einstein won Nobel 1921) demonstrated that:",
       "options": [
-        {"option_text": "Light has wave nature only", "is_correct": false},
-        {"option_text": "Light has particle (photon) nature — exists in quanta of energy hν", "is_correct": true},
-        {"option_text": "Atoms have a nucleus", "is_correct": false},
-        {"option_text": "Matter has wavelike properties", "is_correct": false}
+        {
+          "option_text": "Light has wave nature only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Light has particle (photon) nature",
+          "is_correct": true
+        },
+        {
+          "option_text": "Atoms have a nucleus",
+          "is_correct": false
+        },
+        {
+          "option_text": "Matter has wavelike properties",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Einstein 1905: light acts as particles (photons) with energy E = hν. Explained why photoelectric emission depends on FREQUENCY, not intensity. Kicked off quantum mechanics. (Matter-wave hypothesis came from de Broglie 1924; nuclear discovery from Rutherford 1911.)",
+      "explanation": "Einstein 1905: light acts as particles (photons) with energy E = hν. Explained why photoelectric emission depends on FREQUENCY, not intensity. Kicked off quantum mechanics. (Matter-wave hypothesis came from de Broglie 1924; nuclear discovery from Rutherford 1911.). exists in quanta of energy hν.",
       "subject": "Physics",
       "topic": "Modern physics & nuclear — mixed tiers",
       "topic_code": "PHY_MODERN_MIXED",
@@ -108,15 +176,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-phy-mod-05",
       "generated_at": "2026-04-22T17:00:00+00:00",
-      "id": "sgk_PHY_MODERN_MIXED_00005"
+      "id": "sgk_PHY_MODERN_MIXED_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Light has particle (photon) nature — exists in quanta of energy hν",
+          "now": "Light has particle (photon) nature",
+          "moved_to_explanation": "exists in quanta of energy hν"
+        }
+      ]
     },
     {
       "stem": "The ATOMIC NUCLEUS was discovered by Ernest Rutherford in his famous:",
       "options": [
-        {"option_text": "Cathode ray experiment", "is_correct": false},
-        {"option_text": "Gold-foil / alpha-scattering experiment (1911)", "is_correct": true},
-        {"option_text": "Oil-drop experiment", "is_correct": false},
-        {"option_text": "Photoelectric experiment", "is_correct": false}
+        {
+          "option_text": "Cathode ray experiment",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gold-foil / alpha-scattering experiment (1911)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Oil-drop experiment",
+          "is_correct": false
+        },
+        {
+          "option_text": "Photoelectric experiment",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Rutherford (1911) — fired alpha particles at thin gold foil. Most passed through; a few bounced back sharply. Concluded the positive charge is concentrated in a tiny, dense nucleus. J.J. Thomson — cathode rays → electron. Millikan — oil-drop (electron charge).",
@@ -134,10 +222,22 @@
     {
       "stem": "The CERN LARGE HADRON COLLIDER (LHC) is located near the border of:",
       "options": [
-        {"option_text": "France and Germany", "is_correct": false},
-        {"option_text": "France and Switzerland (near Geneva)", "is_correct": true},
-        {"option_text": "Italy and Switzerland", "is_correct": false},
-        {"option_text": "Austria and Switzerland", "is_correct": false}
+        {
+          "option_text": "France and Germany",
+          "is_correct": false
+        },
+        {
+          "option_text": "France and Switzerland",
+          "is_correct": true
+        },
+        {
+          "option_text": "Italy and Switzerland",
+          "is_correct": false
+        },
+        {
+          "option_text": "Austria and Switzerland",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "LHC — 27 km underground ring at CERN, straddling the French-Swiss border near Geneva. In July 2012 LHC experiments (ATLAS + CMS) announced the discovery of the Higgs boson (Nobel 2013 for Higgs + Englert).",
@@ -150,7 +250,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-phy-mod-07",
       "generated_at": "2026-04-22T17:00:00+00:00",
-      "id": "sgk_PHY_MODERN_MIXED_00007"
+      "id": "sgk_PHY_MODERN_MIXED_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "France and Switzerland (near Geneva)",
+          "now": "France and Switzerland",
+          "moved_to_explanation": "near Geneva"
+        }
+      ]
     }
   ]
 }

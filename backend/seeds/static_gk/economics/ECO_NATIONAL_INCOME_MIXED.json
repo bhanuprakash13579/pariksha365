@@ -8,10 +8,22 @@
     {
       "stem": "GDP stands for:",
       "options": [
-        {"option_text": "Gross Development Product", "is_correct": false},
-        {"option_text": "Gross Domestic Product", "is_correct": true},
-        {"option_text": "Gross Domestic Price", "is_correct": false},
-        {"option_text": "Gross Deflationary Product", "is_correct": false}
+        {
+          "option_text": "Gross Development Product",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gross Domestic Product",
+          "is_correct": true
+        },
+        {
+          "option_text": "Gross Domestic Price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gross Deflationary Product",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "GDP — Gross Domestic Product — market value of all final goods and services produced WITHIN a country's borders in a year. GNP includes NET factor income from abroad (GNP = GDP + NFIA).",
@@ -29,13 +41,25 @@
     {
       "stem": "The relationship between GDP and GNP is:",
       "options": [
-        {"option_text": "GNP = GDP − Depreciation", "is_correct": false},
-        {"option_text": "GNP = GDP + NFIA (Net Factor Income from Abroad)", "is_correct": true},
-        {"option_text": "GNP = GDP + Indirect taxes", "is_correct": false},
-        {"option_text": "GNP = GDP × Inflation", "is_correct": false}
+        {
+          "option_text": "GNP = GDP − Depreciation",
+          "is_correct": false
+        },
+        {
+          "option_text": "GNP = GDP + NFIA",
+          "is_correct": true
+        },
+        {
+          "option_text": "GNP = GDP + Indirect taxes",
+          "is_correct": false
+        },
+        {
+          "option_text": "GNP = GDP × Inflation",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "GNP = GDP + NFIA. NFIA = income from abroad by citizens − income paid to foreigners for their work/investments here. For India, NFIA is typically NEGATIVE (more repatriated out than brought in), so GNP < GDP. NDP = GDP − depreciation. NNP = GNP − depreciation.",
+      "explanation": "GNP = GDP + NFIA. NFIA = income from abroad by citizens − income paid to foreigners for their work/investments here. For India, NFIA is typically NEGATIVE (more repatriated out than brought in), so GNP < GDP. NDP = GDP − depreciation. NNP = GNP − depreciation. Net Factor Income from Abroad.",
       "subject": "Economics",
       "topic": "National income — mixed tiers",
       "topic_code": "ECO_NATIONAL_INCOME_MIXED",
@@ -45,15 +69,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-eco-ni-02",
       "generated_at": "2026-04-23T04:10:00+00:00",
-      "id": "sgk_ECO_NATIONAL_INCOME_MIXED_00002"
+      "id": "sgk_ECO_NATIONAL_INCOME_MIXED_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "GNP = GDP + NFIA (Net Factor Income from Abroad)",
+          "now": "GNP = GDP + NFIA",
+          "moved_to_explanation": "Net Factor Income from Abroad"
+        }
+      ]
     },
     {
       "stem": "PER CAPITA INCOME is calculated as:",
       "options": [
-        {"option_text": "GDP × population", "is_correct": false},
-        {"option_text": "National Income / Total population", "is_correct": true},
-        {"option_text": "GDP / GNP", "is_correct": false},
-        {"option_text": "Population / GDP", "is_correct": false}
+        {
+          "option_text": "GDP × population",
+          "is_correct": false
+        },
+        {
+          "option_text": "National Income / Total population",
+          "is_correct": true
+        },
+        {
+          "option_text": "GDP / GNP",
+          "is_correct": false
+        },
+        {
+          "option_text": "Population / GDP",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Per capita income = National Income (or GDP) / Population. Useful indicator of individual prosperity; but hides inequality. India's per capita income (2024): around $2,500-2,700 (nominal). Much higher in PPP terms.",
@@ -71,13 +115,25 @@
     {
       "stem": "India's National Accounts / National Income estimates are published by:",
       "options": [
-        {"option_text": "RBI", "is_correct": false},
-        {"option_text": "NSO (National Statistical Office, under MoSPI)", "is_correct": true},
-        {"option_text": "NITI Aayog", "is_correct": false},
-        {"option_text": "Ministry of Finance", "is_correct": false}
+        {
+          "option_text": "RBI",
+          "is_correct": false
+        },
+        {
+          "option_text": "NSO",
+          "is_correct": true
+        },
+        {
+          "option_text": "NITI Aayog",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ministry of Finance",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "NSO — under MoSPI (Ministry of Statistics & Programme Implementation). Combines the former CSO (Central Statistics Office) + NSSO. Base year of GDP series: 2011-12 currently; 2022-23 series under development. Quarterly GDP released ~2 months after quarter end.",
+      "explanation": "NSO — under MoSPI (Ministry of Statistics & Programme Implementation). Combines the former CSO (Central Statistics Office) + NSSO. Base year of GDP series: 2011-12 currently; 2022-23 series under development. Quarterly GDP released ~2 months after quarter end. National Statistical Office, under MoSPI.",
       "subject": "Economics",
       "topic": "National income — mixed tiers",
       "topic_code": "ECO_NATIONAL_INCOME_MIXED",
@@ -87,18 +143,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-eco-ni-04",
       "generated_at": "2026-04-23T04:10:00+00:00",
-      "id": "sgk_ECO_NATIONAL_INCOME_MIXED_00004"
+      "id": "sgk_ECO_NATIONAL_INCOME_MIXED_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "NSO (National Statistical Office, under MoSPI)",
+          "now": "NSO",
+          "moved_to_explanation": "National Statistical Office, under MoSPI"
+        }
+      ]
     },
     {
       "stem": "REAL GDP vs NOMINAL GDP: the difference is:",
       "options": [
-        {"option_text": "Real GDP includes inflation effects; nominal does not", "is_correct": false},
-        {"option_text": "Nominal GDP is at current prices; Real GDP is adjusted for inflation (at constant/base-year prices)", "is_correct": true},
-        {"option_text": "Both are the same", "is_correct": false},
-        {"option_text": "Real GDP measures imports", "is_correct": false}
+        {
+          "option_text": "Real GDP includes inflation effects; nominal does not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nominal GDP is at current prices; Real GDP is adjusted for inflation",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both are the same",
+          "is_correct": false
+        },
+        {
+          "option_text": "Real GDP measures imports",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Nominal GDP — in current prices (inflated). Real GDP — deflated using a GDP deflator or base year prices, reflects actual output change. Real growth is the more meaningful measure of economic expansion.",
+      "explanation": "Nominal GDP — in current prices (inflated). Real GDP — deflated using a GDP deflator or base year prices, reflects actual output change. Real growth is the more meaningful measure of economic expansion. at constant/base-year prices.",
       "subject": "Economics",
       "topic": "National income — mixed tiers",
       "topic_code": "ECO_NATIONAL_INCOME_MIXED",
@@ -108,18 +184,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-eco-ni-05",
       "generated_at": "2026-04-23T04:10:00+00:00",
-      "id": "sgk_ECO_NATIONAL_INCOME_MIXED_00005"
+      "id": "sgk_ECO_NATIONAL_INCOME_MIXED_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Nominal GDP is at current prices; Real GDP is adjusted for inflation (at constant/base-year prices)",
+          "now": "Nominal GDP is at current prices; Real GDP is adjusted for inflation",
+          "moved_to_explanation": "at constant/base-year prices"
+        }
+      ]
     },
     {
       "stem": "India is the world's ___ LARGEST economy (nominal GDP, 2024-25):",
       "options": [
-        {"option_text": "10th", "is_correct": false},
-        {"option_text": "5th (passing UK in 2022)", "is_correct": true},
-        {"option_text": "15th", "is_correct": false},
-        {"option_text": "1st", "is_correct": false}
+        {
+          "option_text": "10th",
+          "is_correct": false
+        },
+        {
+          "option_text": "5th",
+          "is_correct": true
+        },
+        {
+          "option_text": "15th",
+          "is_correct": false
+        },
+        {
+          "option_text": "1st",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "India surpassed UK in nominal GDP ~2022 to become 5th largest economy (~$3.9 trillion as of 2024; projected to pass Germany/Japan by 2026-27 → 3rd largest). By PPP, India is already 3rd largest (after China and USA).",
+      "explanation": "India surpassed UK in nominal GDP ~2022 to become 5th largest economy (~$3.9 trillion as of 2024; projected to pass Germany/Japan by 2026-27 → 3rd largest). By PPP, India is already 3rd largest (after China and USA). passing UK in 2022.",
       "subject": "Economics",
       "topic": "National income — mixed tiers",
       "topic_code": "ECO_NATIONAL_INCOME_MIXED",
@@ -129,15 +225,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-eco-ni-06",
       "generated_at": "2026-04-23T04:10:00+00:00",
-      "id": "sgk_ECO_NATIONAL_INCOME_MIXED_00006"
+      "id": "sgk_ECO_NATIONAL_INCOME_MIXED_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "5th (passing UK in 2022)",
+          "now": "5th",
+          "moved_to_explanation": "passing UK in 2022"
+        }
+      ]
     },
     {
       "stem": "'PPP' (Purchasing Power Parity) adjustment is used to:",
       "options": [
-        {"option_text": "Measure inflation", "is_correct": false},
-        {"option_text": "Compare national incomes by adjusting for cost-of-living differences", "is_correct": true},
-        {"option_text": "Calculate corporate tax", "is_correct": false},
-        {"option_text": "Set interest rates", "is_correct": false}
+        {
+          "option_text": "Measure inflation",
+          "is_correct": false
+        },
+        {
+          "option_text": "Compare national incomes by adjusting for cost-of-living differences",
+          "is_correct": true
+        },
+        {
+          "option_text": "Calculate corporate tax",
+          "is_correct": false
+        },
+        {
+          "option_text": "Set interest rates",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "PPP — equalises the purchasing power of different currencies by comparing what a basket of goods costs in each country. Famous 'Big Mac Index' (Economist magazine). India's GDP is much larger in PPP terms than in nominal USD because costs are lower.",

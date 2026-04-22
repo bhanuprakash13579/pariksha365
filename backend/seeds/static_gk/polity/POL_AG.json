@@ -8,10 +8,22 @@
     {
       "stem": "Under which Article of the Indian Constitution is the office of the Attorney General of India established?",
       "options": [
-        {"option_text": "Article 75", "is_correct": false},
-        {"option_text": "Article 76", "is_correct": true},
-        {"option_text": "Article 148", "is_correct": false},
-        {"option_text": "Article 165", "is_correct": false}
+        {
+          "option_text": "Article 75",
+          "is_correct": false
+        },
+        {
+          "option_text": "Article 76",
+          "is_correct": true
+        },
+        {
+          "option_text": "Article 148",
+          "is_correct": false
+        },
+        {
+          "option_text": "Article 165",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Article 76 of the Constitution provides for the appointment of the Attorney General of India — the highest law officer of the country. Article 75 deals with the appointment of the PM and Council of Ministers; Article 148 deals with the CAG; Article 165 establishes the office of the Advocate General for States — the three most common distractors for this question.",
@@ -29,10 +41,22 @@
     {
       "stem": "Who appoints the Attorney General of India?",
       "options": [
-        {"option_text": "The Chief Justice of India", "is_correct": false},
-        {"option_text": "The Parliament by a special majority", "is_correct": false},
-        {"option_text": "The President of India on the advice of the Union Cabinet", "is_correct": true},
-        {"option_text": "The Prime Minister in consultation with the Law Minister", "is_correct": false}
+        {
+          "option_text": "The Chief Justice of India",
+          "is_correct": false
+        },
+        {
+          "option_text": "The Parliament by a special majority",
+          "is_correct": false
+        },
+        {
+          "option_text": "The President of India on the advice of the Union Cabinet",
+          "is_correct": true
+        },
+        {
+          "option_text": "The Prime Minister in consultation with the Law Minister",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "Under Article 76(1), the Attorney General is appointed by the President — who, per Article 74, acts on the aid and advice of the Union Council of Ministers (effectively the Cabinet). The CJI has no role; Parliament does not elect the AG; the PM recommends through the Cabinet rather than independently.",
@@ -50,10 +74,22 @@
     {
       "stem": "What qualification is required for appointment as the Attorney General of India, as per Article 76?",
       "options": [
-        {"option_text": "Must be qualified for appointment as a judge of a High Court", "is_correct": false},
-        {"option_text": "Must be qualified for appointment as a judge of the Supreme Court", "is_correct": true},
-        {"option_text": "Must have at least 15 years of practice in the Supreme Court", "is_correct": false},
-        {"option_text": "Must be a sitting or retired judge of the Supreme Court", "is_correct": false}
+        {
+          "option_text": "Must be qualified for appointment as a judge of a High Court",
+          "is_correct": false
+        },
+        {
+          "option_text": "Must be qualified for appointment as a judge of the Supreme Court",
+          "is_correct": true
+        },
+        {
+          "option_text": "Must have at least 15 years of practice in the Supreme Court",
+          "is_correct": false
+        },
+        {
+          "option_text": "Must be a sitting or retired judge of the Supreme Court",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Article 76(1) requires that a person must be qualified to be appointed a judge of the Supreme Court — i.e., be a citizen of India, and either have been a HC judge for 5 years, an HC advocate for 10 years, or be a distinguished jurist in the President's opinion. The AG need not currently be a judge, and there is no fixed year requirement for practice.",
@@ -71,13 +107,25 @@
     {
       "stem": "What is the term of office of the Attorney General of India?",
       "options": [
-        {"option_text": "6 years or till 65 years of age, whichever is earlier", "is_correct": false},
-        {"option_text": "5 years, co-terminus with the Lok Sabha", "is_correct": false},
-        {"option_text": "Not fixed by the Constitution; holds office during the pleasure of the President", "is_correct": true},
-        {"option_text": "Till 62 years of age", "is_correct": false}
+        {
+          "option_text": "6 years or till 65 years of age, whichever is earlier",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 years, co-terminus with the Lok Sabha",
+          "is_correct": false
+        },
+        {
+          "option_text": "Not fixed by the Constitution",
+          "is_correct": true
+        },
+        {
+          "option_text": "Till 62 years of age",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
-      "explanation": "The Constitution does not fix a term for the AG. Article 76(4) states the AG holds office 'during the pleasure of the President'. In practice, the AG resigns when the government that appointed them changes. Fixed 6-year/65-year terms apply to the CAG, not the AG. The AG's tenure is NOT tied to the Lok Sabha.",
+      "explanation": "The Constitution does not fix a term for the AG. Article 76(4) states the AG holds office 'during the pleasure of the President'. In practice, the AG resigns when the government that appointed them changes. Fixed 6-year/65-year terms apply to the CAG, not the AG. The AG's tenure is NOT tied to the Lok Sabha. holds office during the pleasure of the President.",
       "subject": "Polity",
       "topic": "Attorney & Advocate General",
       "topic_code": "POL_AG",
@@ -87,15 +135,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-19-pol-ag-01",
       "generated_at": "2026-04-19T17:00:00+00:00",
-      "id": "sgk_POL_AG_00005"
+      "id": "sgk_POL_AG_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Not fixed by the Constitution; holds office during the pleasure of the President",
+          "now": "Not fixed by the Constitution",
+          "moved_to_explanation": "holds office during the pleasure of the President"
+        }
+      ]
     },
     {
       "stem": "Which of the following is NOT a duty of the Attorney General of India under Article 76?",
       "options": [
-        {"option_text": "Give advice to the Government of India on legal matters referred to him", "is_correct": false},
-        {"option_text": "Perform such other duties of a legal character as assigned by the President", "is_correct": false},
-        {"option_text": "Discharge the functions conferred on him by or under the Constitution or any other law", "is_correct": false},
-        {"option_text": "Prosecute government servants in criminal cases of corruption", "is_correct": true}
+        {
+          "option_text": "Give advice to the Government of India on legal matters referred to him",
+          "is_correct": false
+        },
+        {
+          "option_text": "Perform such other duties of a legal character as assigned by the President",
+          "is_correct": false
+        },
+        {
+          "option_text": "Discharge the functions conferred on him by or under the Constitution or any other law",
+          "is_correct": false
+        },
+        {
+          "option_text": "Prosecute government servants in criminal cases of corruption",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "explanation": "Article 76(2) lists three duties — legal advice, assigned legal duties, and constitutional/statutory functions. Prosecution of government servants in corruption cases is handled by the CBI under the Prevention of Corruption Act, not by the AG. The AG is counsel for the government, not a prosecutor of its employees.",
@@ -113,10 +181,22 @@
     {
       "stem": "Which of the following rights does the Attorney General of India enjoy with respect to Parliament?",
       "options": [
-        {"option_text": "Right to vote in both Houses", "is_correct": false},
-        {"option_text": "Right to speak and take part in proceedings of both Houses and their committees, but not to vote", "is_correct": true},
-        {"option_text": "Right to introduce bills in the Lok Sabha only", "is_correct": false},
-        {"option_text": "No rights — AG is an executive officer only", "is_correct": false}
+        {
+          "option_text": "Right to vote in both Houses",
+          "is_correct": false
+        },
+        {
+          "option_text": "Right to speak and take part in proceedings of both Houses and their committees, but not to vote",
+          "is_correct": true
+        },
+        {
+          "option_text": "Right to introduce bills in the Lok Sabha only",
+          "is_correct": false
+        },
+        {
+          "option_text": "No rights — AG is an executive officer only",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Article 88 gives the Attorney General the right to speak in and take part in the proceedings of either House of Parliament, any joint sitting, and any parliamentary committee of which he may be named a member — WITHOUT the right to vote. This parallels the same right extended to Ministers (Article 88). The AG is NOT a Member of Parliament.",
@@ -134,10 +214,22 @@
     {
       "stem": "Which of the following statements about the Attorney General of India's private practice is correct?",
       "options": [
-        {"option_text": "The AG is barred from all private practice during the term of office", "is_correct": false},
-        {"option_text": "The AG can engage in private practice, but cannot advise or brief against the Government of India", "is_correct": true},
-        {"option_text": "The AG can appear against the Government of India but cannot accept private corporate work", "is_correct": false},
-        {"option_text": "The AG can take only international arbitration work privately", "is_correct": false}
+        {
+          "option_text": "The AG is barred from all private practice during the term of office",
+          "is_correct": false
+        },
+        {
+          "option_text": "The AG can engage in private practice, but cannot advise or brief against the Government of India",
+          "is_correct": true
+        },
+        {
+          "option_text": "The AG can appear against the Government of India but cannot accept private corporate work",
+          "is_correct": false
+        },
+        {
+          "option_text": "The AG can take only international arbitration work privately",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "The AG is NOT a full-time salaried government servant. He retains the right to private practice but — as per conventions and the 1987 Law Commission note — cannot advise or hold brief against the Government of India, or against any PSU/statutory body where the GoI is also a party, or defend an accused in criminal proceedings without government permission. This distinguishes the AG from full-time officers like the Solicitor General of earlier decades.",
@@ -155,10 +247,22 @@
     {
       "stem": "Who, among the following, ranks immediately below the Attorney General in the hierarchy of Government law officers?",
       "options": [
-        {"option_text": "Additional Solicitor General", "is_correct": false},
-        {"option_text": "Solicitor General of India", "is_correct": true},
-        {"option_text": "Standing Counsel for the Government", "is_correct": false},
-        {"option_text": "Secretary, Department of Legal Affairs", "is_correct": false}
+        {
+          "option_text": "Additional Solicitor General",
+          "is_correct": false
+        },
+        {
+          "option_text": "Solicitor General of India",
+          "is_correct": true
+        },
+        {
+          "option_text": "Standing Counsel for the Government",
+          "is_correct": false
+        },
+        {
+          "option_text": "Secretary, Department of Legal Affairs",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "The order is: Attorney General → Solicitor General → Additional Solicitors General → Standing/Panel counsels. The Solicitor General (and the Additional SGs) are statutory posts, unlike the AG which is constitutional. The Secretary of Legal Affairs is an administrative post in the Ministry of Law & Justice, not a 'law officer'.",
@@ -176,10 +280,22 @@
     {
       "stem": "Under Article 143 of the Constitution, the President may refer a question of law to the Supreme Court for its advisory opinion. In such a reference, who typically represents the Government of India?",
       "options": [
-        {"option_text": "The Prime Minister's Office's Legal Cell", "is_correct": false},
-        {"option_text": "The Attorney General of India", "is_correct": true},
-        {"option_text": "The Law Minister personally", "is_correct": false},
-        {"option_text": "The Chief Justice of India", "is_correct": false}
+        {
+          "option_text": "The Prime Minister's Office's Legal Cell",
+          "is_correct": false
+        },
+        {
+          "option_text": "The Attorney General of India",
+          "is_correct": true
+        },
+        {
+          "option_text": "The Law Minister personally",
+          "is_correct": false
+        },
+        {
+          "option_text": "The Chief Justice of India",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Presidential References under Article 143 are argued before the Supreme Court, and the Government of India is represented by the Attorney General as its chief law officer. Examples: Berubari Union Reference (1960), Kerala Education Bill Reference (1958), 2G Spectrum Reference (2012), Ayodhya Reference (1993) — AG led submissions in each. The CJI presides; he doesn't represent a party.",
@@ -197,10 +313,22 @@
     {
       "stem": "Who was the first Attorney General of India after the Constitution came into force on 26 January 1950?",
       "options": [
-        {"option_text": "C. K. Daphtary", "is_correct": false},
-        {"option_text": "M. C. Setalvad", "is_correct": true},
-        {"option_text": "Motilal Setalvad", "is_correct": false},
-        {"option_text": "H. M. Seervai", "is_correct": false}
+        {
+          "option_text": "C. K. Daphtary",
+          "is_correct": false
+        },
+        {
+          "option_text": "M. C. Setalvad",
+          "is_correct": true
+        },
+        {
+          "option_text": "Motilal Setalvad",
+          "is_correct": false
+        },
+        {
+          "option_text": "H. M. Seervai",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Motilal Chimanlal Setalvad — commonly written as M. C. Setalvad — served as the first Attorney General of India from 1950 to 1963, the longest tenure in the history of the office (13 years). 'Motilal Setalvad' (option C) is a redundant phrasing of the same name and is treated as a distractor. C. K. Daphtary succeeded him in 1963. H. M. Seervai was a jurist and Advocate General of Maharashtra, never AG of India.",
@@ -218,10 +346,22 @@
     {
       "stem": "The Advocate General of a State is provided for under which Article of the Constitution?",
       "options": [
-        {"option_text": "Article 76", "is_correct": false},
-        {"option_text": "Article 148", "is_correct": false},
-        {"option_text": "Article 165", "is_correct": true},
-        {"option_text": "Article 213", "is_correct": false}
+        {
+          "option_text": "Article 76",
+          "is_correct": false
+        },
+        {
+          "option_text": "Article 148",
+          "is_correct": false
+        },
+        {
+          "option_text": "Article 165",
+          "is_correct": true
+        },
+        {
+          "option_text": "Article 213",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "Article 165 establishes the office of the Advocate General for each State — the highest law officer at the State level, paralleling the Attorney General at the Union level. Article 76 is for the AG (Union). Article 148 covers the CAG. Article 213 empowers the Governor to promulgate ordinances, not a law-officer position.",
@@ -239,10 +379,22 @@
     {
       "stem": "Who appoints the Advocate General of a State, and whose pleasure does he hold office during?",
       "options": [
-        {"option_text": "Appointed by the President; holds office at the pleasure of the President", "is_correct": false},
-        {"option_text": "Appointed by the Governor; holds office during the pleasure of the Governor", "is_correct": true},
-        {"option_text": "Appointed by the Chief Minister; holds office till 65 years of age", "is_correct": false},
-        {"option_text": "Elected by the State Legislature for a 5-year term", "is_correct": false}
+        {
+          "option_text": "Appointed by the President; holds office at the pleasure of the President",
+          "is_correct": false
+        },
+        {
+          "option_text": "Appointed by the Governor; holds office during the pleasure of the Governor",
+          "is_correct": true
+        },
+        {
+          "option_text": "Appointed by the Chief Minister; holds office till 65 years of age",
+          "is_correct": false
+        },
+        {
+          "option_text": "Elected by the State Legislature for a 5-year term",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Under Article 165, the Governor appoints the Advocate General for the State, who holds office during the Governor's pleasure. The Governor acts on the advice of the State Council of Ministers (Article 163). Unlike the CAG, there is no fixed retirement age for the Advocate General. The President has no role — this is a State-level office.",
@@ -260,10 +412,22 @@
     {
       "stem": "What is the qualification required for appointment as Advocate General of a State?",
       "options": [
-        {"option_text": "Must be qualified to be appointed a judge of the Supreme Court", "is_correct": false},
-        {"option_text": "Must be qualified to be appointed a judge of a High Court", "is_correct": true},
-        {"option_text": "Must have at least 20 years of legal practice in the State", "is_correct": false},
-        {"option_text": "Must be a sitting MP/MLA of the ruling party in the State", "is_correct": false}
+        {
+          "option_text": "Must be qualified to be appointed a judge of the Supreme Court",
+          "is_correct": false
+        },
+        {
+          "option_text": "Must be qualified to be appointed a judge of a High Court",
+          "is_correct": true
+        },
+        {
+          "option_text": "Must have at least 20 years of legal practice in the State",
+          "is_correct": false
+        },
+        {
+          "option_text": "Must be a sitting MP/MLA of the ruling party in the State",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Article 165(1) states the Advocate General must be qualified to be appointed a judge of a High Court — i.e., a citizen of India who has held a judicial office for 10 years or been an advocate of an HC for 10 years. This is a LESSER threshold than that for the Attorney General (who needs SC judge eligibility — 5 years HC judge or 10 years HC advocate). The AG role is never political.",
@@ -281,10 +445,22 @@
     {
       "stem": "Which of the following rights does the Advocate General of a State enjoy under the Constitution?",
       "options": [
-        {"option_text": "Right to speak in both Houses of Parliament and vote on bills affecting his State", "is_correct": false},
-        {"option_text": "Right to speak and take part in proceedings of the State Legislature and its committees, without voting", "is_correct": true},
-        {"option_text": "Right to vote in the State Legislative Assembly on Money Bills", "is_correct": false},
-        {"option_text": "Right to introduce Finance Bills in the Legislative Assembly", "is_correct": false}
+        {
+          "option_text": "Right to speak in both Houses of Parliament and vote on bills affecting his State",
+          "is_correct": false
+        },
+        {
+          "option_text": "Right to speak and take part in proceedings of the State Legislature and its committees, without voting",
+          "is_correct": true
+        },
+        {
+          "option_text": "Right to vote in the State Legislative Assembly on Money Bills",
+          "is_correct": false
+        },
+        {
+          "option_text": "Right to introduce Finance Bills in the Legislative Assembly",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Article 177 gives the Advocate General the right to speak in and take part in proceedings of both Houses of the State Legislature (where bicameral) and their committees — WITHOUT voting. This parallels Article 88 for the AG at the Union level. He has no role in Parliament (Union), no voting rights, and cannot introduce any bill.",
@@ -302,10 +478,22 @@
     {
       "stem": "Who among the following is called the 'second law officer' of the Government of India?",
       "options": [
-        {"option_text": "Additional Attorney General", "is_correct": false},
-        {"option_text": "Solicitor General of India", "is_correct": true},
-        {"option_text": "Advocate General of Delhi", "is_correct": false},
-        {"option_text": "Secretary, Department of Justice", "is_correct": false}
+        {
+          "option_text": "Additional Attorney General",
+          "is_correct": false
+        },
+        {
+          "option_text": "Solicitor General of India",
+          "is_correct": true
+        },
+        {
+          "option_text": "Advocate General of Delhi",
+          "is_correct": false
+        },
+        {
+          "option_text": "Secretary, Department of Justice",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "The Solicitor General of India is conventionally referred to as the 'second law officer' after the Attorney General. The SG is a statutory post (under the Law Officers (Conditions of Service) Rules, 1987), unlike the constitutional AG. 'Additional Attorney General' is not an office that exists — Additional Solicitors General do exist, ranked below the SG. There is no 'Advocate General of Delhi' post for the Union.",
@@ -323,10 +511,22 @@
     {
       "stem": "The remuneration of the Attorney General of India is determined by which authority?",
       "options": [
-        {"option_text": "It is fixed by the Constitution under Article 76", "is_correct": false},
-        {"option_text": "It is determined by the President", "is_correct": true},
-        {"option_text": "It is fixed by the Parliament through a law", "is_correct": false},
-        {"option_text": "It is fixed by the Supreme Court rules", "is_correct": false}
+        {
+          "option_text": "It is fixed by the Constitution under Article 76",
+          "is_correct": false
+        },
+        {
+          "option_text": "It is determined by the President",
+          "is_correct": true
+        },
+        {
+          "option_text": "It is fixed by the Parliament through a law",
+          "is_correct": false
+        },
+        {
+          "option_text": "It is fixed by the Supreme Court rules",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Article 76(4) states the Attorney General shall receive 'such remuneration as the President may determine'. Unlike CAG or judges — whose salaries are fixed by Parliament by law — the AG's remuneration is fixed administratively by the President (in practice, through the Ministry of Law & Justice). It is charged on the Consolidated Fund of India (so not subject to legislative vote).",
@@ -344,10 +544,22 @@
     {
       "stem": "Which of the following statements about the Attorney General is INCORRECT?",
       "options": [
-        {"option_text": "The AG has the right of audience in all courts of India", "is_correct": false},
-        {"option_text": "The AG is a member of the Union Cabinet", "is_correct": true},
-        {"option_text": "The AG can be called upon to represent the Union in any court in India", "is_correct": false},
-        {"option_text": "The AG's salary is charged on the Consolidated Fund of India", "is_correct": false}
+        {
+          "option_text": "The AG has the right of audience in all courts of India",
+          "is_correct": false
+        },
+        {
+          "option_text": "The AG is a member of the Union Cabinet",
+          "is_correct": true
+        },
+        {
+          "option_text": "The AG can be called upon to represent the Union in any court in India",
+          "is_correct": false
+        },
+        {
+          "option_text": "The AG's salary is charged on the Consolidated Fund of India",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "The AG is NOT a member of the Union Cabinet. The Cabinet consists only of Ministers. The AG is a legal officer of the government — he can attend Cabinet meetings by invitation on legal matters, but is not a Minister. The other three statements are correct: the AG has pan-India audience rights, can represent the Union in any court, and his salary is charged (non-votable) on the CFI.",
@@ -365,10 +577,22 @@
     {
       "stem": "Who was the Attorney General of India who served during the Emergency (1975–77) and signed the controversial ADM Jabalpur case affidavit on behalf of the government?",
       "options": [
-        {"option_text": "M. C. Setalvad", "is_correct": false},
-        {"option_text": "Niren De", "is_correct": true},
-        {"option_text": "S. V. Gupte", "is_correct": false},
-        {"option_text": "L. N. Sinha", "is_correct": false}
+        {
+          "option_text": "M. C. Setalvad",
+          "is_correct": false
+        },
+        {
+          "option_text": "Niren De",
+          "is_correct": true
+        },
+        {
+          "option_text": "S. V. Gupte",
+          "is_correct": false
+        },
+        {
+          "option_text": "L. N. Sinha",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Niren De served as AG of India from 1968 to 1977 (under Indira Gandhi). He is best remembered for his controversial submission in the ADM Jabalpur v. Shivkant Shukla (1976) habeas corpus case during the Emergency, where he argued that a person whose fundamental right to life (Article 21) was suspended had no remedy — a position the SC later overruled in Puttaswamy (2017). M. C. Setalvad was the FIRST AG; S. V. Gupte (1977–79) succeeded De after Janata Party took office; L. N. Sinha served 1979–83.",
@@ -386,10 +610,22 @@
     {
       "stem": "Consider the following statements about the Attorney General of India: 1) He can appear on behalf of the Government of India in any court, including a State High Court. 2) He can be removed only by a two-thirds majority of Parliament. 3) He is ex-officio member of certain Committees of Parliament. Which of the above is/are correct?",
       "options": [
-        {"option_text": "1 only", "is_correct": true},
-        {"option_text": "1 and 2 only", "is_correct": false},
-        {"option_text": "2 and 3 only", "is_correct": false},
-        {"option_text": "1, 2 and 3", "is_correct": false}
+        {
+          "option_text": "1 only",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 and 2 only",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 and 3 only",
+          "is_correct": false
+        },
+        {
+          "option_text": "1, 2 and 3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Statement 1 is CORRECT — the AG has audience rights in every court in India (Article 76(3)). Statement 2 is WRONG — the AG holds office 'during the pleasure of the President' (Article 76(4)); there is no two-thirds removal procedure (that's for judges under Article 124/217). Statement 3 is WRONG — the AG is NOT an ex-officio member of any Parliamentary Committee unless specifically nominated under Rule 255 of the Rules of Procedure. Hence only Statement 1.",

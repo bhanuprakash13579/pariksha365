@@ -8,13 +8,25 @@
     {
       "stem": "The Vice-President of India is ELECTED by:",
       "options": [
-        {"option_text": "Electoral college of MPs + MLAs (similar to President)", "is_correct": false},
-        {"option_text": "Electoral college of ALL MPs of both houses — ELECTED + NOMINATED — of Lok Sabha and Rajya Sabha", "is_correct": true},
-        {"option_text": "Only Rajya Sabha members", "is_correct": false},
-        {"option_text": "Direct people's vote", "is_correct": false}
+        {
+          "option_text": "Electoral college of MPs + MLAs (similar to President)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Electoral college of ALL MPs of both houses",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only Rajya Sabha members",
+          "is_correct": false
+        },
+        {
+          "option_text": "Direct people's vote",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Art 66 — VP elected by Electoral College consisting of MEMBERS OF BOTH HOUSES of Parliament (including NOMINATED members — a key difference from President, whose electorate excludes nominated members). Single transferable vote, proportional representation.",
+      "explanation": "Art 66 — VP elected by Electoral College consisting of MEMBERS OF BOTH HOUSES of Parliament (including NOMINATED members — a key difference from President, whose electorate excludes nominated members). Single transferable vote, proportional representation. ELECTED + NOMINATED — of Lok Sabha and Rajya Sabha.",
       "subject": "Polity",
       "topic": "Vice-President of India — mixed tiers",
       "topic_code": "POL_VP_MIXED",
@@ -24,15 +36,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-pol-vp-01",
       "generated_at": "2026-04-23T07:20:00+00:00",
-      "id": "sgk_POL_VP_MIXED_00001"
+      "id": "sgk_POL_VP_MIXED_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Electoral college of ALL MPs of both houses — ELECTED + NOMINATED — of Lok Sabha and Rajya Sabha",
+          "now": "Electoral college of ALL MPs of both houses",
+          "moved_to_explanation": "ELECTED + NOMINATED — of Lok Sabha and Rajya Sabha"
+        }
+      ]
     },
     {
       "stem": "The Vice-President of India is the EX-OFFICIO:",
       "options": [
-        {"option_text": "Chairman of Lok Sabha", "is_correct": false},
-        {"option_text": "Chairman of Rajya Sabha", "is_correct": true},
-        {"option_text": "Speaker of Lok Sabha", "is_correct": false},
-        {"option_text": "Prime Minister", "is_correct": false}
+        {
+          "option_text": "Chairman of Lok Sabha",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chairman of Rajya Sabha",
+          "is_correct": true
+        },
+        {
+          "option_text": "Speaker of Lok Sabha",
+          "is_correct": false
+        },
+        {
+          "option_text": "Prime Minister",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "VP is Chairman of Rajya Sabha (Art 64). Not a member of RS (nor of Parliament). Presides over proceedings. When acting as President (temporary vacancy), he does NOT perform the RS Chairman role — Deputy Chairman does.",
@@ -50,10 +82,22 @@
     {
       "stem": "A Vice-President can be REMOVED from office by:",
       "options": [
-        {"option_text": "Impeachment (like the President)", "is_correct": false},
-        {"option_text": "A resolution of Rajya Sabha passed by EFFECTIVE majority, agreed by Lok Sabha", "is_correct": true},
-        {"option_text": "Public referendum", "is_correct": false},
-        {"option_text": "Supreme Court order", "is_correct": false}
+        {
+          "option_text": "Impeachment (like the President)",
+          "is_correct": false
+        },
+        {
+          "option_text": "A resolution of Rajya Sabha passed by EFFECTIVE majority, agreed by Lok Sabha",
+          "is_correct": true
+        },
+        {
+          "option_text": "Public referendum",
+          "is_correct": false
+        },
+        {
+          "option_text": "Supreme Court order",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Removal process simpler than President's. Art 67(b) — RS resolution passed by EFFECTIVE majority (majority of all current members), then agreed by simple majority in LS. No Article 61 impeachment procedure applies. Minimum 14 days' notice required.",
@@ -71,10 +115,22 @@
     {
       "stem": "The FIRST Vice-President of India was:",
       "options": [
-        {"option_text": "Dr. Sarvepalli Radhakrishnan (1952-62)", "is_correct": true},
-        {"option_text": "Dr. Rajendra Prasad", "is_correct": false},
-        {"option_text": "V. V. Giri", "is_correct": false},
-        {"option_text": "Zakir Husain", "is_correct": false}
+        {
+          "option_text": "Dr. Sarvepalli Radhakrishnan (1952-62)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Dr. Rajendra Prasad",
+          "is_correct": false
+        },
+        {
+          "option_text": "V. V. Giri",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zakir Husain",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Dr. S. Radhakrishnan — first VP (1952-62), subsequently 2nd President (1962-67). His birthday (5 September) is Teacher's Day in India. Rajendra Prasad was first PRESIDENT (1950-62). Zakir Husain and V.V. Giri were later VPs/Presidents.",
@@ -92,13 +148,25 @@
     {
       "stem": "The TERM of the Vice-President is:",
       "options": [
-        {"option_text": "4 years, re-eligible", "is_correct": false},
-        {"option_text": "5 years, re-eligible (no term limit)", "is_correct": true},
-        {"option_text": "6 years", "is_correct": false},
-        {"option_text": "Lifetime", "is_correct": false}
+        {
+          "option_text": "4 years, re-eligible",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 years, re-eligible",
+          "is_correct": true
+        },
+        {
+          "option_text": "6 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lifetime",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Art 67(a) — VP holds office for 5 years. Eligible for any number of re-elections (no limit). Term starts from day of taking charge; continues till successor takes charge. MINIMUM age: 35 years.",
+      "explanation": "Art 67(a) — VP holds office for 5 years. Eligible for any number of re-elections (no limit). Term starts from day of taking charge; continues till successor takes charge. MINIMUM age: 35 years. no term limit.",
       "subject": "Polity",
       "topic": "Vice-President of India — mixed tiers",
       "topic_code": "POL_VP_MIXED",
@@ -108,15 +176,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-pol-vp-05",
       "generated_at": "2026-04-23T07:20:00+00:00",
-      "id": "sgk_POL_VP_MIXED_00005"
+      "id": "sgk_POL_VP_MIXED_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "5 years, re-eligible (no term limit)",
+          "now": "5 years, re-eligible",
+          "moved_to_explanation": "no term limit"
+        }
+      ]
     },
     {
       "stem": "When the PRESIDENT's office is VACANT, who acts as President?",
       "options": [
-        {"option_text": "Prime Minister", "is_correct": false},
-        {"option_text": "Vice-President", "is_correct": true},
-        {"option_text": "Speaker of Lok Sabha", "is_correct": false},
-        {"option_text": "Chief Justice of India", "is_correct": false}
+        {
+          "option_text": "Prime Minister",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vice-President",
+          "is_correct": true
+        },
+        {
+          "option_text": "Speaker of Lok Sabha",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chief Justice of India",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Art 65 — VP acts as President during vacancy (death, resignation, impeachment of President). Election for a new President must be held within 6 months. If VP also unavailable, CJI acts as President (happened 1969, Hidayatullah between Zakir Husain's death and V.V. Giri's election).",
@@ -134,13 +222,25 @@
     {
       "stem": "In the Rajya Sabha, the CHAIRMAN (VP) has a vote:",
       "options": [
-        {"option_text": "In all divisions", "is_correct": false},
-        {"option_text": "Only in case of a tie (casting vote)", "is_correct": true},
-        {"option_text": "Never", "is_correct": false},
-        {"option_text": "Twice", "is_correct": false}
+        {
+          "option_text": "In all divisions",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only in case of a tie",
+          "is_correct": true
+        },
+        {
+          "option_text": "Never",
+          "is_correct": false
+        },
+        {
+          "option_text": "Twice",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Like the Speaker of Lok Sabha, the VP (as Chairman of RS) casts a vote only in case of a TIE. Maintains neutrality in regular proceedings.",
+      "explanation": "Like the Speaker of Lok Sabha, the VP (as Chairman of RS) casts a vote only in case of a TIE. Maintains neutrality in regular proceedings. casting vote.",
       "subject": "Polity",
       "topic": "Vice-President of India — mixed tiers",
       "topic_code": "POL_VP_MIXED",
@@ -150,7 +250,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-pol-vp-07",
       "generated_at": "2026-04-23T07:20:00+00:00",
-      "id": "sgk_POL_VP_MIXED_00007"
+      "id": "sgk_POL_VP_MIXED_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Only in case of a tie (casting vote)",
+          "now": "Only in case of a tie",
+          "moved_to_explanation": "casting vote"
+        }
+      ]
     }
   ]
 }

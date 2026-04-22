@@ -8,13 +8,25 @@
     {
       "stem": "The KYOTO PROTOCOL (1997) was the FIRST international treaty to set BINDING emission reduction targets. It was SUCCEEDED by:",
       "options": [
-        {"option_text": "Montreal Protocol", "is_correct": false},
-        {"option_text": "PARIS AGREEMENT (Dec 2015, COP-21) — limits global warming to WELL BELOW 2°C + pursuing 1.5°C; universal participation; 196 parties", "is_correct": true},
-        {"option_text": "Copenhagen Accord", "is_correct": false},
-        {"option_text": "Rio Declaration", "is_correct": false}
+        {
+          "option_text": "Montreal Protocol",
+          "is_correct": false
+        },
+        {
+          "option_text": "PARIS AGREEMENT",
+          "is_correct": true
+        },
+        {
+          "option_text": "Copenhagen Accord",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rio Declaration",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "UNFCCC (UN Framework Convention on Climate Change) — adopted 9 May 1992 at RIO EARTH SUMMIT (UNCED); entered force 21 Mar 1994. 197 parties. Annual Conference of Parties (COP) meetings. KEY MILESTONES: (1) 1997 — KYOTO PROTOCOL (COP-3, Kyoto, Japan) — first binding commitments. ONLY on 'Annex-I' countries (developed); commitment period 2008-2012 (~5% reduction below 1990 levels). Mechanisms: CDM (Clean Development Mechanism), JI (Joint Implementation), Emissions Trading. USA signed but didn't ratify; China + India exempted (emerging economies). 2nd commitment period 2013-20 (Doha Amendment) ratified late (2020) — ineffective. (2) 2009 — COPENHAGEN ACCORD (COP-15) — non-binding; 2°C target introduced; $100 billion/yr Green Climate Fund by 2020. (3) 2015 — PARIS AGREEMENT (COP-21 Paris, 12 Dec 2015, entered force 4 Nov 2016) — LANDMARK. All parties, bottom-up 'Nationally Determined Contributions' (NDCs). Target: limit temp rise to WELL BELOW 2°C above pre-industrial levels + pursuing efforts to limit 1.5°C. 5-year ratchet mechanism — NDCs reviewed + strengthened every 5 yrs. Global stocktake every 5 yrs starting 2023. India's NDC (updated 2022): (a) Reduce EMISSIONS INTENSITY of GDP by 45% from 2005 levels by 2030; (b) 50% cumulative electric power installed capacity from non-fossil sources by 2030; (c) Net Zero by 2070 (announced by PM Modi at COP-26 Glasgow 2021 as 'PANCHAMRIT' 5-point pledge); (d) Additional 2.5-3 GtCO2 carbon sink through tree cover. (4) 2018 — Katowice rulebook (COP-24). (5) 2021 — Glasgow Climate Pact (COP-26) — India's 'Phase DOWN' (not phase out) of coal; USA + EU committed to tripling renewables. (6) 2022 — Sharm el-Sheikh (COP-27, Egypt) — 'LOSS + DAMAGE' fund approved (historic — developed pay for climate damages in developing). (7) 2023 — Dubai (COP-28, UAE) — Global Stocktake 1; 'transitioning away from fossil fuels'; triple renewables + double efficiency by 2030. Ambition gap persists; current policies lead to ~2.7°C warming. (8) 2024 — Baku (COP-29, Azerbaijan) — 'Finance COP'; agreed NCQG (New Collective Quantified Goal) of $300 B/yr by 2035 for developing nations (criticised as inadequate; G77+China demanded $1.3T).",
+      "explanation": "UNFCCC (UN Framework Convention on Climate Change) — adopted 9 May 1992 at RIO EARTH SUMMIT (UNCED); entered force 21 Mar 1994. 197 parties. Annual Conference of Parties (COP) meetings. KEY MILESTONES: (1) 1997 — KYOTO PROTOCOL (COP-3, Kyoto, Japan) — first binding commitments. ONLY on 'Annex-I' countries (developed); commitment period 2008-2012 (~5% reduction below 1990 levels). Mechanisms: CDM (Clean Development Mechanism), JI (Joint Implementation), Emissions Trading. USA signed but didn't ratify; China + India exempted (emerging economies). 2nd commitment period 2013-20 (Doha Amendment) ratified late (2020) — ineffective. (2) 2009 — COPENHAGEN ACCORD (COP-15) — non-binding; 2°C target introduced; $100 billion/yr Green Climate Fund by 2020. (3) 2015 — PARIS AGREEMENT (COP-21 Paris, 12 Dec 2015, entered force 4 Nov 2016) — LANDMARK. All parties, bottom-up 'Nationally Determined Contributions' (NDCs). Target: limit temp rise to WELL BELOW 2°C above pre-industrial levels + pursuing efforts to limit 1.5°C. 5-year ratchet mechanism — NDCs reviewed + strengthened every 5 yrs. Global stocktake every 5 yrs starting 2023. India's NDC (updated 2022): (a) Reduce EMISSIONS INTENSITY of GDP by 45% from 2005 levels by 2030; (b) 50% cumulative electric power installed capacity from non-fossil sources by 2030; (c) Net Zero by 2070 (announced by PM Modi at COP-26 Glasgow 2021 as 'PANCHAMRIT' 5-point pledge); (d) Additional 2.5-3 GtCO2 carbon sink through tree cover. (4) 2018 — Katowice rulebook (COP-24). (5) 2021 — Glasgow Climate Pact (COP-26) — India's 'Phase DOWN' (not phase out) of coal; USA + EU committed to tripling renewables. (6) 2022 — Sharm el-Sheikh (COP-27, Egypt) — 'LOSS + DAMAGE' fund approved (historic — developed pay for climate damages in developing). (7) 2023 — Dubai (COP-28, UAE) — Global Stocktake 1; 'transitioning away from fossil fuels'; triple renewables + double efficiency by 2030. Ambition gap persists; current policies lead to ~2.7°C warming. (8) 2024 — Baku (COP-29, Azerbaijan) — 'Finance COP'; agreed NCQG (New Collective Quantified Goal) of $300 B/yr by 2035 for developing nations (criticised as inadequate; G77+China demanded $1.3T). limits global warming to WELL BELOW 2°C + pursuing 1.5°C; universal participation; 196 parties; Dec 2015, COP-21.",
       "subject": "General Knowledge",
       "topic": "Environment & Climate Change",
       "topic_code": "GK_ENV_CLIMATE",
@@ -24,18 +36,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-env-01",
       "generated_at": "2026-04-21T04:40:00+00:00",
-      "id": "sgk_GK_ENV_CLIMATE_00001"
+      "id": "sgk_GK_ENV_CLIMATE_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "PARIS AGREEMENT (Dec 2015, COP-21) — limits global warming to WELL BELOW 2°C + pursuing 1.5°C; universal participation; 196 parties",
+          "now": "PARIS AGREEMENT",
+          "moved_to_explanation": "limits global warming to WELL BELOW 2°C + pursuing 1.5°C; universal participation; 196 parties; Dec 2015, COP-21"
+        }
+      ]
     },
     {
       "stem": "The GREENHOUSE GAS with the HIGHEST contribution to global warming (by volume + impact) is:",
       "options": [
-        {"option_text": "Ozone", "is_correct": false},
-        {"option_text": "CARBON DIOXIDE (CO₂) — ~76% of anthropogenic GHG emissions (CO2-eq); atmospheric CO₂ 420+ ppm (April 2025) vs 280 ppm pre-industrial", "is_correct": true},
-        {"option_text": "Water vapor", "is_correct": false},
-        {"option_text": "Argon", "is_correct": false}
+        {
+          "option_text": "Ozone",
+          "is_correct": false
+        },
+        {
+          "option_text": "CARBON DIOXIDE (CO₂)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Water vapor",
+          "is_correct": false
+        },
+        {
+          "option_text": "Argon",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "GREENHOUSE GASES (GHGs) — trap HEAT in the atmosphere by absorbing infrared radiation (re-emitted from Earth's warm surface). Natural greenhouse effect keeps Earth at habitable 15°C (without it, would be -18°C); human emissions have ENHANCED it. KEY GHGs: (1) CARBON DIOXIDE (CO₂) — ~76% of human GHG emissions (CO2-eq); Global Warming Potential (GWP) = 1 (reference). Long-lived (centuries-millennia residence). Sources: fossil fuel combustion (coal, oil, gas), deforestation, cement making, land-use change. Concentration: 280 ppm pre-industrial → 420+ ppm (April 2025, NOAA Mauna Loa Observatory, Hawaii) → HIGHEST in 3-4 million years. Accelerating: +2-3 ppm/yr currently. (2) METHANE (CH₄) — ~16%; GWP 28-34 (100-yr) or 80+ (20-yr). Shorter-lived (~12 years). Sources: cattle (enteric fermentation), paddy fields, landfills, fossil fuel extraction (fracking, coal mines), wetlands. Rising rapidly 2020s. (3) NITROUS OXIDE (N₂O) — ~6%; GWP 265-298. Sources: fertilisers (Haber-Bosch N), biomass burning, industrial processes. (4) F-GASES (HFCs, PFCs, SF6, NF3) — ~2%; very HIGH GWP (1,000-25,000+); synthetic; used in refrigeration, electronics. Covered by Kigali Amendment 2016 to Montreal Protocol (HFCs to be phased down; India ratified Aug 2021). (5) WATER VAPOR — actually the most abundant greenhouse gas + accounts for ~50% of natural greenhouse effect, but NOT directly emitted by humans — a FEEDBACK (warming → more evaporation → more water vapor → more warming). (6) OZONE (O₃) — ground-level ozone is GHG + pollutant; stratospheric is protective. SOURCES of GLOBAL EMISSIONS (sector-wise, ~54 Gt CO2-eq/yr): energy 73% (electricity + heat 30%, transport 16%, manufacturing 12%, buildings 6%, fugitive 5%, other 10%), agri + forestry + land-use 18%, industrial processes (cement, chemicals) 5%, waste 3%. TOP EMITTERS (cumulative historical 1850-2021): USA 25%, EU 18%, China 14%, Russia 7%, Japan 4%, India 3%. TOP ANNUAL (2022): China 30%, USA 13%, EU 8%, India 7%, Russia 4%. INDIA's PER-CAPITA: ~2 tonnes CO2 (vs USA 15, China 8, world avg 4.7). IPCC AR6 (2021-23): 1.5°C warming likely reached by 2030s; limits to avoid 'catastrophic' tipping points; need 45% global emission cut by 2030.",
+      "explanation": "GREENHOUSE GASES (GHGs) — trap HEAT in the atmosphere by absorbing infrared radiation (re-emitted from Earth's warm surface). Natural greenhouse effect keeps Earth at habitable 15°C (without it, would be -18°C); human emissions have ENHANCED it. KEY GHGs: (1) CARBON DIOXIDE (CO₂) — ~76% of human GHG emissions (CO2-eq); Global Warming Potential (GWP) = 1 (reference). Long-lived (centuries-millennia residence). Sources: fossil fuel combustion (coal, oil, gas), deforestation, cement making, land-use change. Concentration: 280 ppm pre-industrial → 420+ ppm (April 2025, NOAA Mauna Loa Observatory, Hawaii) → HIGHEST in 3-4 million years. Accelerating: +2-3 ppm/yr currently. (2) METHANE (CH₄) — ~16%; GWP 28-34 (100-yr) or 80+ (20-yr). Shorter-lived (~12 years). Sources: cattle (enteric fermentation), paddy fields, landfills, fossil fuel extraction (fracking, coal mines), wetlands. Rising rapidly 2020s. (3) NITROUS OXIDE (N₂O) — ~6%; GWP 265-298. Sources: fertilisers (Haber-Bosch N), biomass burning, industrial processes. (4) F-GASES (HFCs, PFCs, SF6, NF3) — ~2%; very HIGH GWP (1,000-25,000+); synthetic; used in refrigeration, electronics. Covered by Kigali Amendment 2016 to Montreal Protocol (HFCs to be phased down; India ratified Aug 2021). (5) WATER VAPOR — actually the most abundant greenhouse gas + accounts for ~50% of natural greenhouse effect, but NOT directly emitted by humans — a FEEDBACK (warming → more evaporation → more water vapor → more warming). (6) OZONE (O₃) — ground-level ozone is GHG + pollutant; stratospheric is protective. SOURCES of GLOBAL EMISSIONS (sector-wise, ~54 Gt CO2-eq/yr): energy 73% (electricity + heat 30%, transport 16%, manufacturing 12%, buildings 6%, fugitive 5%, other 10%), agri + forestry + land-use 18%, industrial processes (cement, chemicals) 5%, waste 3%. TOP EMITTERS (cumulative historical 1850-2021): USA 25%, EU 18%, China 14%, Russia 7%, Japan 4%, India 3%. TOP ANNUAL (2022): China 30%, USA 13%, EU 8%, India 7%, Russia 4%. INDIA's PER-CAPITA: ~2 tonnes CO2 (vs USA 15, China 8, world avg 4.7). IPCC AR6 (2021-23): 1.5°C warming likely reached by 2030s; limits to avoid 'catastrophic' tipping points; need 45% global emission cut by 2030. ~76% of anthropogenic GHG emissions (CO2-eq); atmospheric CO₂ 420+ ppm (April 2025) vs 280 ppm pre-industrial.",
       "subject": "General Knowledge",
       "topic": "Environment & Climate Change",
       "topic_code": "GK_ENV_CLIMATE",
@@ -45,18 +77,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-env-01",
       "generated_at": "2026-04-21T04:40:00+00:00",
-      "id": "sgk_GK_ENV_CLIMATE_00002"
+      "id": "sgk_GK_ENV_CLIMATE_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "CARBON DIOXIDE (CO₂) — ~76% of anthropogenic GHG emissions (CO2-eq); atmospheric CO₂ 420+ ppm (April 2025) vs 280 ppm pre-industrial",
+          "now": "CARBON DIOXIDE (CO₂)",
+          "moved_to_explanation": "~76% of anthropogenic GHG emissions (CO2-eq); atmospheric CO₂ 420+ ppm (April 2025) vs 280 ppm pre-industrial"
+        }
+      ]
     },
     {
       "stem": "India has FOUR BIODIVERSITY HOTSPOTS (of the world's 36). Which of these is NOT one?",
       "options": [
-        {"option_text": "Western Ghats + Sri Lanka", "is_correct": false},
-        {"option_text": "Indo-Burma Region", "is_correct": false},
-        {"option_text": "Himalaya", "is_correct": false},
-        {"option_text": "THAR DESERT — is NOT a biodiversity hotspot (fourth is SUNDALAND-NICOBAR islands)", "is_correct": true}
+        {
+          "option_text": "Western Ghats + Sri Lanka",
+          "is_correct": false
+        },
+        {
+          "option_text": "Indo-Burma Region",
+          "is_correct": false
+        },
+        {
+          "option_text": "Himalaya",
+          "is_correct": false
+        },
+        {
+          "option_text": "THAR DESERT",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
-      "explanation": "BIODIVERSITY HOTSPOTS — term coined by Norman Myers (1988); regions with EXCEPTIONAL endemic species (≥1,500 endemic vascular plants) + LOST 70%+ of original habitat. 36 global hotspots identified by Conservation International. INDIA has 4 hotspots (FULLY or PARTIALLY): (1) HIMALAYA — entire Indian Himalayan range; covers W Himalaya (HP, UK, J&K) + E Himalaya (Sikkim, Arunachal, parts of NE); species: snow leopard, red panda, blue poppy, Himalayan monal (national bird of Uttarakhand), musk deer, takin (Arunachal state animal). (2) INDO-BURMA — includes NE India (except Assam Brahmaputra plain) extending into Myanmar, Thailand, Vietnam, Laos, Cambodia, S China; ~70% habitat loss; species: Hoolock gibbon (India's only ape), Brown hornbill, Swallowtail butterflies, ~1,300 bird species. (3) WESTERN GHATS + SRI LANKA — 'Sahyadri' range; 6 states (Maharashtra, Goa, Karnataka, Kerala, Tamil Nadu, Gujarat tiny); UNESCO World Heritage Site (2012, 39 properties listed); ~6,000 flowering plants (35% endemic), Nilgiri tahr, Lion-tailed macaque (India's most endangered primate), Malabar civet, purple frog, Hampi, Agastyamalai, Silent Valley. (4) SUNDALAND — includes Nicobar Islands (India's piece) + entire Sumatra + Java + Borneo + Malay Peninsula; Nicobar macaque, Nicobar megapode, Nicobar scrubfowl; orangutans (just outside India). NOT in this list: Thar Desert (arid; low endemism; not a hotspot). 36 GLOBAL HOTSPOTS include Mediterranean Basin, California Floristic Province, Mesoamerica, Atlantic Forest (Brazil), Cape Floristic (South Africa), Madagascar, Caucasus, New Zealand. INDIA's BIODIVERSITY stats: (1) 8% of world's recorded species on 2.4% of land. (2) ~47,000 plant + ~89,000 animal species described; est total 1 lakh + 2 lakh. (3) 18 BIOSPHERE RESERVES (12 on UNESCO MAB list: Nilgiri 1986 first, Nanda Devi, Gulf of Mannar, Sundarban, Manas, Nokrek, Pachmarhi, Similipal, Achanakmar-Amarkantak, Great Nicobar, Agasthyamalai, Kanchenjunga, Khangchendzonga later additions, Cold Desert, Panna, Dehang-Debang). (4) 106 National Parks + 573 Wildlife Sanctuaries (as of 2024). (5) 54 TIGER RESERVES (largest tiger range in world; India has ~75% of world's wild tigers — 3,682 in 2022 census, up from 1,411 in 2006). (6) 33 ELEPHANT RESERVES. (7) 85 RAMSAR SITES (wetlands of international importance — India 2nd largest tally in Asia after China; Sundarbans, Chilika, Loktak, Wular, Harike, Keoladeo, etc.). PROJECT TIGER (1973), PROJECT ELEPHANT (1992), PROJECT CHEETAH (2022 — reintroduction from Namibia + South Africa into Kuno NP, MP), GREAT INDIAN BUSTARD (critically endangered, Rajasthan).",
+      "explanation": "BIODIVERSITY HOTSPOTS — term coined by Norman Myers (1988); regions with EXCEPTIONAL endemic species (≥1,500 endemic vascular plants) + LOST 70%+ of original habitat. 36 global hotspots identified by Conservation International. INDIA has 4 hotspots (FULLY or PARTIALLY): (1) HIMALAYA — entire Indian Himalayan range; covers W Himalaya (HP, UK, J&K) + E Himalaya (Sikkim, Arunachal, parts of NE); species: snow leopard, red panda, blue poppy, Himalayan monal (national bird of Uttarakhand), musk deer, takin (Arunachal state animal). (2) INDO-BURMA — includes NE India (except Assam Brahmaputra plain) extending into Myanmar, Thailand, Vietnam, Laos, Cambodia, S China; ~70% habitat loss; species: Hoolock gibbon (India's only ape), Brown hornbill, Swallowtail butterflies, ~1,300 bird species. (3) WESTERN GHATS + SRI LANKA — 'Sahyadri' range; 6 states (Maharashtra, Goa, Karnataka, Kerala, Tamil Nadu, Gujarat tiny); UNESCO World Heritage Site (2012, 39 properties listed); ~6,000 flowering plants (35% endemic), Nilgiri tahr, Lion-tailed macaque (India's most endangered primate), Malabar civet, purple frog, Hampi, Agastyamalai, Silent Valley. (4) SUNDALAND — includes Nicobar Islands (India's piece) + entire Sumatra + Java + Borneo + Malay Peninsula; Nicobar macaque, Nicobar megapode, Nicobar scrubfowl; orangutans (just outside India). NOT in this list: Thar Desert (arid; low endemism; not a hotspot). 36 GLOBAL HOTSPOTS include Mediterranean Basin, California Floristic Province, Mesoamerica, Atlantic Forest (Brazil), Cape Floristic (South Africa), Madagascar, Caucasus, New Zealand. INDIA's BIODIVERSITY stats: (1) 8% of world's recorded species on 2.4% of land. (2) ~47,000 plant + ~89,000 animal species described; est total 1 lakh + 2 lakh. (3) 18 BIOSPHERE RESERVES (12 on UNESCO MAB list: Nilgiri 1986 first, Nanda Devi, Gulf of Mannar, Sundarban, Manas, Nokrek, Pachmarhi, Similipal, Achanakmar-Amarkantak, Great Nicobar, Agasthyamalai, Kanchenjunga, Khangchendzonga later additions, Cold Desert, Panna, Dehang-Debang). (4) 106 National Parks + 573 Wildlife Sanctuaries (as of 2024). (5) 54 TIGER RESERVES (largest tiger range in world; India has ~75% of world's wild tigers — 3,682 in 2022 census, up from 1,411 in 2006). (6) 33 ELEPHANT RESERVES. (7) 85 RAMSAR SITES (wetlands of international importance — India 2nd largest tally in Asia after China; Sundarbans, Chilika, Loktak, Wular, Harike, Keoladeo, etc.). PROJECT TIGER (1973), PROJECT ELEPHANT (1992), PROJECT CHEETAH (2022 — reintroduction from Namibia + South Africa into Kuno NP, MP), GREAT INDIAN BUSTARD (critically endangered, Rajasthan). is NOT a biodiversity hotspot (fourth is SUNDALAND-NICOBAR islands).",
       "subject": "General Knowledge",
       "topic": "Environment & Climate Change",
       "topic_code": "GK_ENV_CLIMATE",
@@ -66,15 +118,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-env-01",
       "generated_at": "2026-04-21T04:40:00+00:00",
-      "id": "sgk_GK_ENV_CLIMATE_00003"
+      "id": "sgk_GK_ENV_CLIMATE_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "THAR DESERT — is NOT a biodiversity hotspot (fourth is SUNDALAND-NICOBAR islands)",
+          "now": "THAR DESERT",
+          "moved_to_explanation": "is NOT a biodiversity hotspot (fourth is SUNDALAND-NICOBAR islands)"
+        }
+      ]
     },
     {
       "stem": "OZONE LAYER depletion was caused primarily by:",
       "options": [
-        {"option_text": "Methane emissions", "is_correct": false},
-        {"option_text": "CFCs (ChloroFluoroCarbons) — synthesized for refrigeration + aerosol propellants; banned by MONTREAL PROTOCOL (1987 — only universal-ratification environment treaty)", "is_correct": true},
-        {"option_text": "Carbon monoxide", "is_correct": false},
-        {"option_text": "Nitrogen compounds", "is_correct": false}
+        {
+          "option_text": "Methane emissions",
+          "is_correct": false
+        },
+        {
+          "option_text": "CFCs (ChloroFluoroCarbons) — synthesized for refrigeration + aerosol propellants; banned by MONTREAL PROTOCOL (1987 — only universal-ratification environment treaty)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Carbon monoxide",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nitrogen compounds",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "OZONE LAYER — the STRATOSPHERE (~15-35 km above Earth) has 90% of atmospheric ozone (O₃); protects Earth from UV-B + UV-C radiation (which causes skin cancer, cataracts, crop damage). DEPLETION DISCOVERED 1985 by Joe FARMAN + scientists of British Antarctic Survey — 'OZONE HOLE' over Antarctic (seasonal thinning in Sept-Oct each year); alarmed world. CAUSES: CHLOROFLUOROCARBONS (CFCs, 'Freons') — synthetic stable gases used as: (a) refrigerants in fridges + ACs (DuPont's Freon-12 since 1928); (b) aerosol propellants in deodorants, paints, cosmetics; (c) solvents; (d) foam-blowing agents. At stratosphere, CFCs photolysed by UV → release CHLORINE atoms → catalyse destruction of OZONE (1 Cl atom destroys ~100,000 O3 molecules). Also HALONS, HCFCs, methyl bromide, carbon tetrachloride contributing. 1985 — PAUL CRUTZEN, MARIO MOLINA, F. SHERWOOD ROWLAND (Nobel Chemistry 1995) for identifying ozone depletion chemistry. MONTREAL PROTOCOL (16 Sept 1987) — international treaty to PHASE OUT Ozone Depleting Substances (ODS). Entered into force 1989; subsequent Amendments (London 1990, Copenhagen 1992, Montreal 1997, Beijing 1999) progressively tightened. ONLY UN TREATY ratified by EVERY UN MEMBER STATE (universal ratification). RESULT: (1) ODS production / consumption down 99% globally since 1990. (2) Ozone layer RECOVERING; expected full recovery by 2045 (Arctic) - 2066 (Antarctic). 'SUCCESS story' of international environmental action. KIGALI AMENDMENT to Montreal Protocol (2016) — added HFCs (HydroFluoroCarbons) — which had replaced CFCs but are potent GHGs (though don't deplete ozone). HFCs to be phased down by 80-85% by 2047. India signed 2021. 16 SEPTEMBER = INTERNATIONAL DAY for PRESERVATION OF OZONE LAYER. DIFFERENCE from CLIMATE CHANGE: Ozone depletion (UV) + climate change (IR) are DIFFERENT mechanisms but overlap (e.g., CFCs are also GHGs; recovering ozone affects circulation). Mario Molina said 'the ozone layer's recovery shows global environmental action is possible if science + politics align'. India played key role — CFC manufacturers (Navin Fluorine, SRF) had to retool. Post-2000, India banned CFC imports / production in stages; consumption 1 Jan 2010 fully phased out for major CFCs.",
@@ -92,13 +164,25 @@
     {
       "stem": "India's target for NON-FOSSIL FUEL installed electricity capacity by 2030 (per updated NDCs 2022) is:",
       "options": [
-        {"option_text": "100 GW", "is_correct": false},
-        {"option_text": "500 GW (total); aim is 50% CUMULATIVE INSTALLED CAPACITY from non-fossil sources by 2030; part of 'PANCHAMRIT' Glasgow 2021 pledge", "is_correct": true},
-        {"option_text": "1000 GW", "is_correct": false},
-        {"option_text": "50 GW", "is_correct": false}
+        {
+          "option_text": "100 GW",
+          "is_correct": false
+        },
+        {
+          "option_text": "500 GW (total)",
+          "is_correct": true
+        },
+        {
+          "option_text": "1000 GW",
+          "is_correct": false
+        },
+        {
+          "option_text": "50 GW",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "INDIA'S CLIMATE + RENEWABLE TARGETS (PANCHAMRIT — 'five nectars', pledged by PM Modi at COP-26 Glasgow, 1 Nov 2021): (1) Reach 500 GW of NON-FOSSIL ENERGY capacity by 2030. (2) 50% of electricity REQUIREMENTS from renewable energy by 2030. (3) Reduce total projected carbon emissions by 1 BILLION TONNES from now to 2030. (4) Reduce carbon intensity of economy by 45% (UP from earlier 33-35% target) below 2005 levels by 2030. (5) NET ZERO by 2070. INDIA'S CURRENT RENEWABLE STATUS (2024-25): (a) TOTAL installed capacity: ~452 GW (of which ~210 GW non-fossil, ~46% — on track for 50% by 2030). (b) SOLAR: ~93 GW (world's 4th largest; targeting 280+ GW by 2030); massive solar parks (Bhadla 2.25 GW Rajasthan world's largest, Pavagada 2 GW Karnataka, Kurnool 1 GW AP, Rewa 0.75 GW MP). Rooftop solar: 11 GW. Solar PM-KUSUM (agriculture pump solarisation), PM Surya Ghar (Feb 2024 launch — 1 crore rooftop solar for free 300-unit electricity). (c) WIND: ~47 GW (world's 4th largest; Tamil Nadu + Gujarat + Maharashtra dominate). (d) LARGE HYDRO: ~47 GW. (e) SMALL HYDRO: ~5 GW. (f) BIOMASS: ~11 GW. (g) NUCLEAR: ~7.5 GW (7.5% of non-fossil). (h) THERMAL (Coal + gas + oil): ~240 GW (~53%). INTERNATIONAL SOLAR ALLIANCE (ISA) — launched by India + France at COP-21 Paris 2015; HQ Gurugram, India (first global HQ of an intergovernmental body in India); 120+ member states; promotes solar in tropical countries between Tropic of Cancer + Capricorn. GREEN HYDROGEN MISSION (Jan 2023) — ₹19,744 cr National Mission; target 5 MMT green hydrogen production + 125 GW renewables by 2030. 'Green Hydrogen' via electrolysis of water using renewable electricity. MAJOR RE developers: Adani Green (world's largest RE portfolio coming up), Tata Power, Reliance, NTPC (now big RE player), ReNew Power, JSW Energy, Vedanta, Azure. India also has 8 GW of AGRI-VOLTAIC + FLOATING SOLAR potential. EV PUSH: FAME-II subsidy, PLI for batteries, NITI Aayog targets 30% EV penetration by 2030; CEEW estimates India will need 50+ GWh battery capacity by 2030.",
+      "explanation": "INDIA'S CLIMATE + RENEWABLE TARGETS (PANCHAMRIT — 'five nectars', pledged by PM Modi at COP-26 Glasgow, 1 Nov 2021): (1) Reach 500 GW of NON-FOSSIL ENERGY capacity by 2030. (2) 50% of electricity REQUIREMENTS from renewable energy by 2030. (3) Reduce total projected carbon emissions by 1 BILLION TONNES from now to 2030. (4) Reduce carbon intensity of economy by 45% (UP from earlier 33-35% target) below 2005 levels by 2030. (5) NET ZERO by 2070. INDIA'S CURRENT RENEWABLE STATUS (2024-25): (a) TOTAL installed capacity: ~452 GW (of which ~210 GW non-fossil, ~46% — on track for 50% by 2030). (b) SOLAR: ~93 GW (world's 4th largest; targeting 280+ GW by 2030); massive solar parks (Bhadla 2.25 GW Rajasthan world's largest, Pavagada 2 GW Karnataka, Kurnool 1 GW AP, Rewa 0.75 GW MP). Rooftop solar: 11 GW. Solar PM-KUSUM (agriculture pump solarisation), PM Surya Ghar (Feb 2024 launch — 1 crore rooftop solar for free 300-unit electricity). (c) WIND: ~47 GW (world's 4th largest; Tamil Nadu + Gujarat + Maharashtra dominate). (d) LARGE HYDRO: ~47 GW. (e) SMALL HYDRO: ~5 GW. (f) BIOMASS: ~11 GW. (g) NUCLEAR: ~7.5 GW (7.5% of non-fossil). (h) THERMAL (Coal + gas + oil): ~240 GW (~53%). INTERNATIONAL SOLAR ALLIANCE (ISA) — launched by India + France at COP-21 Paris 2015; HQ Gurugram, India (first global HQ of an intergovernmental body in India); 120+ member states; promotes solar in tropical countries between Tropic of Cancer + Capricorn. GREEN HYDROGEN MISSION (Jan 2023) — ₹19,744 cr National Mission; target 5 MMT green hydrogen production + 125 GW renewables by 2030. 'Green Hydrogen' via electrolysis of water using renewable electricity. MAJOR RE developers: Adani Green (world's largest RE portfolio coming up), Tata Power, Reliance, NTPC (now big RE player), ReNew Power, JSW Energy, Vedanta, Azure. India also has 8 GW of AGRI-VOLTAIC + FLOATING SOLAR potential. EV PUSH: FAME-II subsidy, PLI for batteries, NITI Aayog targets 30% EV penetration by 2030; CEEW estimates India will need 50+ GWh battery capacity by 2030. aim is 50% CUMULATIVE INSTALLED CAPACITY from non-fossil sources by 2030; part of 'PANCHAMRIT' Glasgow 2021 pledge.",
       "subject": "General Knowledge",
       "topic": "Environment & Climate Change",
       "topic_code": "GK_ENV_CLIMATE",
@@ -108,18 +192,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-env-01",
       "generated_at": "2026-04-21T04:40:00+00:00",
-      "id": "sgk_GK_ENV_CLIMATE_00005"
+      "id": "sgk_GK_ENV_CLIMATE_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "500 GW (total); aim is 50% CUMULATIVE INSTALLED CAPACITY from non-fossil sources by 2030; part of 'PANCHAMRIT' Glasgow 2021 pledge",
+          "now": "500 GW (total)",
+          "moved_to_explanation": "aim is 50% CUMULATIVE INSTALLED CAPACITY from non-fossil sources by 2030; part of 'PANCHAMRIT' Glasgow 2021 pledge"
+        }
+      ]
     },
     {
       "stem": "The NATIONAL GREEN TRIBUNAL (NGT) is a SPECIALISED body for environmental protection, established under:",
       "options": [
-        {"option_text": "Indian Forest Act 1927", "is_correct": false},
-        {"option_text": "NGT Act 2010 — 5 benches (Delhi principal + Bhopal, Pune, Kolkata, Chennai); handles environmental + forest + biodiversity cases; orders time-bound", "is_correct": true},
-        {"option_text": "Environment Protection Act 1986", "is_correct": false},
-        {"option_text": "Wildlife Protection Act 1972", "is_correct": false}
+        {
+          "option_text": "Indian Forest Act 1927",
+          "is_correct": false
+        },
+        {
+          "option_text": "NGT Act 2010",
+          "is_correct": true
+        },
+        {
+          "option_text": "Environment Protection Act 1986",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wildlife Protection Act 1972",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "NATIONAL GREEN TRIBUNAL (NGT) — specialised statutory tribunal for environmental disputes. ESTABLISHED under NATIONAL GREEN TRIBUNAL ACT, 2010 (effective 18 Oct 2010). HEADQUARTERS: New Delhi (Principal Bench). 5 BENCHES: Delhi (Principal), Bhopal (Central Zone), Pune (Western), Kolkata (Eastern), Chennai (Southern). FIRST CHAIRMAN: Justice Lokeshwar Singh Panta (2011-12); then Justice Swatanter Kumar, etc. STRUCTURE: (1) Chairperson (retired SC judge or senior HC CJ); (2) Judicial Members (HC judges); (3) Expert Members (qualified in environment + science + engineering); (4) Total ~20 members. JURISDICTION: (1) CIVIL cases involving substantial environmental issue + 7 specified laws: Water (Prevention + Control of Pollution) Act 1974, Water (Cess) Act 1977, Forest (Conservation) Act 1980, Air (Prevention + Control of Pollution) Act 1981, Environment (Protection) Act 1986, Public Liability Insurance Act 1991, Biological Diversity Act 2002. (2) Appeals from Pollution Control Board / Forest Dept decisions. (3) Compensation + restoration. TIME-BOUND: NGT must dispose cases in 6 months. APPEAL: to SUPREME COURT within 90 days. LANDMARK ORDERS: (1) 2014 — banned 15-year-old diesel + 10-year-old petrol vehicles in NCR Delhi. (2) 2015-17 — odd-even scheme enforcement, ban on private vehicles on Yamuna floodplain. (3) 2017 — Art of Living Festival damages ₹5 crore for Yamuna floodplain damage. (4) BAN on sand mining Ganga basin. (5) Cleanup of Yamuna, Ganga. (6) 2016 — ₹100 crore penalty on Volkswagen for Dieselgate emissions cheating. (7) Pollution fine on industries (polluter pays principle). (8) Vizag gas leak (2020) compensation. POWERS (POLLUTER PAYS + PRECAUTIONARY + SUSTAINABLE DEVELOPMENT principles enshrined): (a) order compensation/damages; (b) direct restoration of environment; (c) order closure of polluting unit; (d) suo-motu cognisance (added 2022 by SC in Municipal Corp of Greater Mumbai v. Ankita Sinha). COMPOSITION issues: NGT has faced VACANCIES + understaffing. Key ENV LEGISLATIONS in India: (1) ENVIRONMENT (Protection) ACT 1986 — umbrella law; post-Bhopal gas tragedy 1984. (2) WATER ACT 1974 — CPCB + SPCBs created. (3) AIR ACT 1981 — CPCB + SPCBs. (4) FOREST (Conservation) ACT 1980. (5) FOREST RIGHTS ACT 2006. (6) WILDLIFE (Protection) ACT 1972. (7) BIOLOGICAL DIVERSITY ACT 2002 — NBA (National Biodiversity Authority, Chennai). (8) EIA NOTIFICATIONS (1994, 2006). (9) COMPENSATORY AFFORESTATION FUND ACT 2016 (CAMPA).",
+      "explanation": "NATIONAL GREEN TRIBUNAL (NGT) — specialised statutory tribunal for environmental disputes. ESTABLISHED under NATIONAL GREEN TRIBUNAL ACT, 2010 (effective 18 Oct 2010). HEADQUARTERS: New Delhi (Principal Bench). 5 BENCHES: Delhi (Principal), Bhopal (Central Zone), Pune (Western), Kolkata (Eastern), Chennai (Southern). FIRST CHAIRMAN: Justice Lokeshwar Singh Panta (2011-12); then Justice Swatanter Kumar, etc. STRUCTURE: (1) Chairperson (retired SC judge or senior HC CJ); (2) Judicial Members (HC judges); (3) Expert Members (qualified in environment + science + engineering); (4) Total ~20 members. JURISDICTION: (1) CIVIL cases involving substantial environmental issue + 7 specified laws: Water (Prevention + Control of Pollution) Act 1974, Water (Cess) Act 1977, Forest (Conservation) Act 1980, Air (Prevention + Control of Pollution) Act 1981, Environment (Protection) Act 1986, Public Liability Insurance Act 1991, Biological Diversity Act 2002. (2) Appeals from Pollution Control Board / Forest Dept decisions. (3) Compensation + restoration. TIME-BOUND: NGT must dispose cases in 6 months. APPEAL: to SUPREME COURT within 90 days. LANDMARK ORDERS: (1) 2014 — banned 15-year-old diesel + 10-year-old petrol vehicles in NCR Delhi. (2) 2015-17 — odd-even scheme enforcement, ban on private vehicles on Yamuna floodplain. (3) 2017 — Art of Living Festival damages ₹5 crore for Yamuna floodplain damage. (4) BAN on sand mining Ganga basin. (5) Cleanup of Yamuna, Ganga. (6) 2016 — ₹100 crore penalty on Volkswagen for Dieselgate emissions cheating. (7) Pollution fine on industries (polluter pays principle). (8) Vizag gas leak (2020) compensation. POWERS (POLLUTER PAYS + PRECAUTIONARY + SUSTAINABLE DEVELOPMENT principles enshrined): (a) order compensation/damages; (b) direct restoration of environment; (c) order closure of polluting unit; (d) suo-motu cognisance (added 2022 by SC in Municipal Corp of Greater Mumbai v. Ankita Sinha). COMPOSITION issues: NGT has faced VACANCIES + understaffing. Key ENV LEGISLATIONS in India: (1) ENVIRONMENT (Protection) ACT 1986 — umbrella law; post-Bhopal gas tragedy 1984. (2) WATER ACT 1974 — CPCB + SPCBs created. (3) AIR ACT 1981 — CPCB + SPCBs. (4) FOREST (Conservation) ACT 1980. (5) FOREST RIGHTS ACT 2006. (6) WILDLIFE (Protection) ACT 1972. (7) BIOLOGICAL DIVERSITY ACT 2002 — NBA (National Biodiversity Authority, Chennai). (8) EIA NOTIFICATIONS (1994, 2006). (9) COMPENSATORY AFFORESTATION FUND ACT 2016 (CAMPA). 5 benches (Delhi principal + Bhopal, Pune, Kolkata, Chennai); handles environmental + forest + biodiversity cases; orders time-bound.",
       "subject": "General Knowledge",
       "topic": "Environment & Climate Change",
       "topic_code": "GK_ENV_CLIMATE",
@@ -129,18 +233,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-env-01",
       "generated_at": "2026-04-21T04:40:00+00:00",
-      "id": "sgk_GK_ENV_CLIMATE_00006"
+      "id": "sgk_GK_ENV_CLIMATE_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "NGT Act 2010 — 5 benches (Delhi principal + Bhopal, Pune, Kolkata, Chennai); handles environmental + forest + biodiversity cases; orders time-bound",
+          "now": "NGT Act 2010",
+          "moved_to_explanation": "5 benches (Delhi principal + Bhopal, Pune, Kolkata, Chennai); handles environmental + forest + biodiversity cases; orders time-bound"
+        }
+      ]
     },
     {
       "stem": "PROJECT TIGER, India's flagship tiger conservation programme, was launched in:",
       "options": [
-        {"option_text": "1947", "is_correct": false},
-        {"option_text": "1 April 1973 — by Indira Gandhi; initial 9 reserves incl. JIM CORBETT, Ranthambore, Kanha, Sundarbans; now 54 tiger reserves", "is_correct": true},
-        {"option_text": "1972 (WPA enactment)", "is_correct": false},
-        {"option_text": "1992", "is_correct": false}
+        {
+          "option_text": "1947",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 April 1973",
+          "is_correct": true
+        },
+        {
+          "option_text": "1972 (WPA enactment)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1992",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "PROJECT TIGER — India's CONSERVATION FLAGSHIP; one of the world's most successful tiger conservation efforts. LAUNCHED 1 APRIL 1973 at Corbett NP by PM INDIRA GANDHI following alarming decline (1950s ~40,000 tigers → 1972 census ~1,827 tigers). BASED on KAILASH SANKHALA's work (first director). INITIAL 9 TIGER RESERVES: (1) JIM CORBETT (UP now UK); (2) RANTHAMBORE (Rajasthan); (3) SIMILIPAL (Odisha); (4) PALAMAU (Bihar now Jharkhand); (5) KANHA (MP); (6) SUNDARBANS (WB); (7) BANDIPUR (Karnataka); (8) MELGHAT (Maharashtra); (9) MANAS (Assam). TODAY: 54 TIGER RESERVES (as of 2024) across 18 states; ~75,000 sq km. NATIONAL TIGER CONSERVATION AUTHORITY (NTCA) — statutory body constituted 2005 under Wildlife Protection Act; chaired by Environment Minister. TIGER CENSUS (every 4 years, using camera traps + DNA + scat analysis): (a) 2006: 1,411 tigers (alarm — only 1,411 left; new methodology). (b) 2010: 1,706. (c) 2014: 2,226. (d) 2018: 2,967. (e) 2022 (released 9 April 2023, 50th anniversary of Project Tiger): 3,682 TIGERS. INDIA has ~75% of world's wild tigers (globally ~5,500). Key tiger reserves: BANDHAVGARH (MP, highest density), CORBETT (largest tiger population ~260), NAGARHOLE (Karnataka), PARAMBIKULAM (Kerala), TADOBA (Maharashtra), KAZIRANGA (Assam — tiger AND rhino), SARISKA (recovered from losing all tigers 2005; reintroduced 2008), PANNA (similarly recovered). 9th April = INTERNATIONAL TIGER DAY (WWF) — no wait, 29 JULY. FELINE SUBSPECIES: BENGAL tiger (Panthera tigris tigris) — India/Bangladesh/Nepal/Bhutan; 2nd largest tiger subspecies. WHITE TIGER — not a separate subspecies; colour mutation (leucism). SIBERIAN/AMUR TIGER — Russia/China; largest. South China, Sumatran, Indo-Chinese, Malayan are other extant subspecies; Bali, Javan, Caspian tigers EXTINCT. Other INDIAN Projects: (1) PROJECT ELEPHANT (1992) — 33 Elephant Reserves; ~30,000 Asian elephants in India (60% of global population). (2) PROJECT SNOW LEOPARD (2009) — 12 Himalayan states/UTs. (3) PROJECT RHINO (1987) — Assam, WB; Greater one-horned rhino (Indian Rhino) — 3,700+ (world's 80%). (4) PROJECT CHEETAH (2022, 17 Sep) — cheetah reintroduction to Kuno NP, MP; 20 cheetahs from Namibia + SAfrica; many cubs; adult deaths + heat issues; ongoing — India's first reintroduction of an extinct (since 1952) species. (5) PROJECT DOLPHIN (2020) — Gangetic River Dolphin (national aquatic animal since 2010).",
+      "explanation": "PROJECT TIGER — India's CONSERVATION FLAGSHIP; one of the world's most successful tiger conservation efforts. LAUNCHED 1 APRIL 1973 at Corbett NP by PM INDIRA GANDHI following alarming decline (1950s ~40,000 tigers → 1972 census ~1,827 tigers). BASED on KAILASH SANKHALA's work (first director). INITIAL 9 TIGER RESERVES: (1) JIM CORBETT (UP now UK); (2) RANTHAMBORE (Rajasthan); (3) SIMILIPAL (Odisha); (4) PALAMAU (Bihar now Jharkhand); (5) KANHA (MP); (6) SUNDARBANS (WB); (7) BANDIPUR (Karnataka); (8) MELGHAT (Maharashtra); (9) MANAS (Assam). TODAY: 54 TIGER RESERVES (as of 2024) across 18 states; ~75,000 sq km. NATIONAL TIGER CONSERVATION AUTHORITY (NTCA) — statutory body constituted 2005 under Wildlife Protection Act; chaired by Environment Minister. TIGER CENSUS (every 4 years, using camera traps + DNA + scat analysis): (a) 2006: 1,411 tigers (alarm — only 1,411 left; new methodology). (b) 2010: 1,706. (c) 2014: 2,226. (d) 2018: 2,967. (e) 2022 (released 9 April 2023, 50th anniversary of Project Tiger): 3,682 TIGERS. INDIA has ~75% of world's wild tigers (globally ~5,500). Key tiger reserves: BANDHAVGARH (MP, highest density), CORBETT (largest tiger population ~260), NAGARHOLE (Karnataka), PARAMBIKULAM (Kerala), TADOBA (Maharashtra), KAZIRANGA (Assam — tiger AND rhino), SARISKA (recovered from losing all tigers 2005; reintroduced 2008), PANNA (similarly recovered). 9th April = INTERNATIONAL TIGER DAY (WWF) — no wait, 29 JULY. FELINE SUBSPECIES: BENGAL tiger (Panthera tigris tigris) — India/Bangladesh/Nepal/Bhutan; 2nd largest tiger subspecies. WHITE TIGER — not a separate subspecies; colour mutation (leucism). SIBERIAN/AMUR TIGER — Russia/China; largest. South China, Sumatran, Indo-Chinese, Malayan are other extant subspecies; Bali, Javan, Caspian tigers EXTINCT. Other INDIAN Projects: (1) PROJECT ELEPHANT (1992) — 33 Elephant Reserves; ~30,000 Asian elephants in India (60% of global population). (2) PROJECT SNOW LEOPARD (2009) — 12 Himalayan states/UTs. (3) PROJECT RHINO (1987) — Assam, WB; Greater one-horned rhino (Indian Rhino) — 3,700+ (world's 80%). (4) PROJECT CHEETAH (2022, 17 Sep) — cheetah reintroduction to Kuno NP, MP; 20 cheetahs from Namibia + SAfrica; many cubs; adult deaths + heat issues; ongoing — India's first reintroduction of an extinct (since 1952) species. (5) PROJECT DOLPHIN (2020) — Gangetic River Dolphin (national aquatic animal since 2010). by Indira Gandhi; initial 9 reserves incl. JIM CORBETT, Ranthambore, Kanha, Sundarbans; now 54 tiger reserves.",
       "subject": "General Knowledge",
       "topic": "Environment & Climate Change",
       "topic_code": "GK_ENV_CLIMATE",
@@ -150,18 +274,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-env-01",
       "generated_at": "2026-04-21T04:40:00+00:00",
-      "id": "sgk_GK_ENV_CLIMATE_00007"
+      "id": "sgk_GK_ENV_CLIMATE_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "1 April 1973 — by Indira Gandhi; initial 9 reserves incl. JIM CORBETT, Ranthambore, Kanha, Sundarbans; now 54 tiger reserves",
+          "now": "1 April 1973",
+          "moved_to_explanation": "by Indira Gandhi; initial 9 reserves incl. JIM CORBETT, Ranthambore, Kanha, Sundarbans; now 54 tiger reserves"
+        }
+      ]
     },
     {
       "stem": "The IPCC (Intergovernmental Panel on Climate Change), which produces ASSESSMENT REPORTS on climate change, was established by:",
       "options": [
-        {"option_text": "G20", "is_correct": false},
-        {"option_text": "UNEP + WMO (World Meteorological Organization) in 1988 — 'science agency' of UN climate action; Nobel Peace Prize 2007 (shared with Al Gore)", "is_correct": true},
-        {"option_text": "US Congress", "is_correct": false},
-        {"option_text": "Greenpeace", "is_correct": false}
+        {
+          "option_text": "G20",
+          "is_correct": false
+        },
+        {
+          "option_text": "UNEP + WMO (World Meteorological Organization) in 1988",
+          "is_correct": true
+        },
+        {
+          "option_text": "US Congress",
+          "is_correct": false
+        },
+        {
+          "option_text": "Greenpeace",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "IPCC (INTERGOVERNMENTAL PANEL ON CLIMATE CHANGE) — UN body assessing scientific basis of climate change. ESTABLISHED 1988 jointly by UNEP (UN Environment Programme) + WMO (World Meteorological Organization). HQ: Geneva, Switzerland. MEMBERSHIP: 195 member states. SCIENTIFIC WORK: Does NOT do original research; ASSESSES + SYNTHESISES peer-reviewed scientific literature + prepares reports. ASSESSMENT REPORTS (AR): every 5-7 years; written by hundreds of volunteer scientists; approved line-by-line by government representatives in plenary. AR1 (1990), AR2 (1995), AR3 (2001), AR4 (2007 — 'Unequivocal warming' declared; shared NOBEL PEACE PRIZE with AL GORE 'An Inconvenient Truth'), AR5 (2013-14), AR6 (2021-23 — 3 Working Group reports + Synthesis Report + 3 Special Reports). AR6 KEY FINDINGS: (1) HUMAN INFLUENCE unequivocally causing warming. (2) Temperature rise ~1.1°C since 1850-1900; likely 1.5°C by early 2030s. (3) LIMITING warming to 1.5°C requires 45% GLOBAL emission CUT by 2030 + NET ZERO by ~2050. (4) Many tipping points (WAIS + GrIS collapse, Amazon dieback, AMOC slowdown, permafrost methane) may be crossed. (5) ADAPTATION has limits. SPECIAL REPORTS: (a) SR15 (2018) — 1.5°C special report; galvanised pre-Paris ambition. (b) SRCCL (2019) — Climate Change + Land. (c) SROCC (2019) — Ocean + Cryosphere. WORKING GROUPS: WG-I (Physical Science Basis), WG-II (Impacts, Adaptation, Vulnerability), WG-III (Mitigation). CURRENT CHAIR: Jim SKEA (UK, elected July 2023; replaced India's Hoesung Lee 2015-23 — South Korean). HOESUNG LEE was 1st Asian Chair. NOTABLE INDIAN climate scientists: (1) RAJENDRA PACHAURI — IPCC Chair 2002-2015; resigned amid controversy; led TERI. (2) Jayanth Pasricha. (3) Dinesh K. Paul. OTHER KEY CLIMATE INSTITUTIONS: (1) UNFCCC Secretariat (Bonn). (2) World Bank + IMF's increasing climate focus. (3) G20 under Indian Presidency 2023 — strong climate dialogue. (4) COP (Conference of Parties) to UNFCCC — COP-29 Baku 2024. INDIA's CLIMATE INSTITUTIONS: (1) Ministry of Environment, Forest + Climate Change (MoEFCC). (2) Central Pollution Control Board (CPCB). (3) IMD (India Meteorological Department). (4) Indian Institute of Tropical Meteorology (IITM, Pune). (5) National Institute of Oceanography. (6) Forest Survey of India. (7) State Action Plans on Climate Change (SAPCC). (8) National Action Plan on Climate Change (NAPCC, 2008) with 8 missions: Solar, Energy Efficiency, Sustainable Habitat, Water, Himalayan Ecosystem, Green India, Sustainable Agriculture, Strategic Knowledge.",
+      "explanation": "IPCC (INTERGOVERNMENTAL PANEL ON CLIMATE CHANGE) — UN body assessing scientific basis of climate change. ESTABLISHED 1988 jointly by UNEP (UN Environment Programme) + WMO (World Meteorological Organization). HQ: Geneva, Switzerland. MEMBERSHIP: 195 member states. SCIENTIFIC WORK: Does NOT do original research; ASSESSES + SYNTHESISES peer-reviewed scientific literature + prepares reports. ASSESSMENT REPORTS (AR): every 5-7 years; written by hundreds of volunteer scientists; approved line-by-line by government representatives in plenary. AR1 (1990), AR2 (1995), AR3 (2001), AR4 (2007 — 'Unequivocal warming' declared; shared NOBEL PEACE PRIZE with AL GORE 'An Inconvenient Truth'), AR5 (2013-14), AR6 (2021-23 — 3 Working Group reports + Synthesis Report + 3 Special Reports). AR6 KEY FINDINGS: (1) HUMAN INFLUENCE unequivocally causing warming. (2) Temperature rise ~1.1°C since 1850-1900; likely 1.5°C by early 2030s. (3) LIMITING warming to 1.5°C requires 45% GLOBAL emission CUT by 2030 + NET ZERO by ~2050. (4) Many tipping points (WAIS + GrIS collapse, Amazon dieback, AMOC slowdown, permafrost methane) may be crossed. (5) ADAPTATION has limits. SPECIAL REPORTS: (a) SR15 (2018) — 1.5°C special report; galvanised pre-Paris ambition. (b) SRCCL (2019) — Climate Change + Land. (c) SROCC (2019) — Ocean + Cryosphere. WORKING GROUPS: WG-I (Physical Science Basis), WG-II (Impacts, Adaptation, Vulnerability), WG-III (Mitigation). CURRENT CHAIR: Jim SKEA (UK, elected July 2023; replaced India's Hoesung Lee 2015-23 — South Korean). HOESUNG LEE was 1st Asian Chair. NOTABLE INDIAN climate scientists: (1) RAJENDRA PACHAURI — IPCC Chair 2002-2015; resigned amid controversy; led TERI. (2) Jayanth Pasricha. (3) Dinesh K. Paul. OTHER KEY CLIMATE INSTITUTIONS: (1) UNFCCC Secretariat (Bonn). (2) World Bank + IMF's increasing climate focus. (3) G20 under Indian Presidency 2023 — strong climate dialogue. (4) COP (Conference of Parties) to UNFCCC — COP-29 Baku 2024. INDIA's CLIMATE INSTITUTIONS: (1) Ministry of Environment, Forest + Climate Change (MoEFCC). (2) Central Pollution Control Board (CPCB). (3) IMD (India Meteorological Department). (4) Indian Institute of Tropical Meteorology (IITM, Pune). (5) National Institute of Oceanography. (6) Forest Survey of India. (7) State Action Plans on Climate Change (SAPCC). (8) National Action Plan on Climate Change (NAPCC, 2008) with 8 missions: Solar, Energy Efficiency, Sustainable Habitat, Water, Himalayan Ecosystem, Green India, Sustainable Agriculture, Strategic Knowledge. 'science agency' of UN climate action; Nobel Peace Prize 2007 (shared with Al Gore).",
       "subject": "General Knowledge",
       "topic": "Environment & Climate Change",
       "topic_code": "GK_ENV_CLIMATE",
@@ -171,18 +315,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-env-01",
       "generated_at": "2026-04-21T04:40:00+00:00",
-      "id": "sgk_GK_ENV_CLIMATE_00008"
+      "id": "sgk_GK_ENV_CLIMATE_00008",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "UNEP + WMO (World Meteorological Organization) in 1988 — 'science agency' of UN climate action; Nobel Peace Prize 2007 (shared with Al Gore)",
+          "now": "UNEP + WMO (World Meteorological Organization) in 1988",
+          "moved_to_explanation": "'science agency' of UN climate action; Nobel Peace Prize 2007 (shared with Al Gore)"
+        }
+      ]
     },
     {
       "stem": "The RAMSAR CONVENTION, 1971, is an international treaty for the conservation of:",
       "options": [
-        {"option_text": "Forests", "is_correct": false},
-        {"option_text": "WETLANDS of international importance — signed at Ramsar, Iran; India has 85 Ramsar sites (2nd largest in Asia after China); covers lakes, marshes, estuaries", "is_correct": true},
-        {"option_text": "Deserts", "is_correct": false},
-        {"option_text": "Grasslands", "is_correct": false}
+        {
+          "option_text": "Forests",
+          "is_correct": false
+        },
+        {
+          "option_text": "WETLANDS of international importance",
+          "is_correct": true
+        },
+        {
+          "option_text": "Deserts",
+          "is_correct": false
+        },
+        {
+          "option_text": "Grasslands",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "RAMSAR CONVENTION on WETLANDS — intergovernmental treaty for 'the conservation + wise use of wetlands'. Signed on 2 February 1971 at RAMSAR, Iran (a city on Caspian Sea). Effective 1975. 170 parties + 2,500+ Ramsar Sites globally (~257 million hectares). INDIA became party 1982. WETLAND — area where water is the primary factor controlling environment + plant + animal life; includes lakes, rivers, marshes, swamps, mangroves, peatlands, ponds, coral reefs, estuaries, mudflats. INDIA's RAMSAR SITES: 85 (as of 2024, expanded rapidly — was 26 in 2018, pushed aggressively to 75 for 75th Independence anniversary 2022, now 85). 2nd LARGEST TALLY in ASIA after China; 3rd LARGEST in world after UK + Mexico. FAMOUS SITES: (1) CHILIKA LAKE, ODISHA — 1st Ramsar site designated 1981; India's largest brackish-water lagoon (~1100 sq km, varying); home to Irrawaddy dolphins + flamingos. (2) KEOLADEO GHANA / Bharatpur, RAJASTHAN (1981) — 29 sq km; migratory birds paradise (Siberian crane once, now gone); UNESCO WHS too (1985). (3) SAMBHAR LAKE (RAJ) — largest inland saltwater lake. (4) WULAR LAKE (J&K) — Himalaya's largest freshwater lake. (5) HARIKE WETLAND (Punjab) — largest wetland in North India; migratory birds. (6) LOKTAK LAKE (MANIPUR) — largest freshwater lake in NE; floating 'phumdis' (islands of vegetation); Sangai (brow-antlered deer, state animal of Manipur) habitat in Keibul Lamjao NP (world's only FLOATING national park). (7) KOLLERU LAKE (AP). (8) POINT CALIMERE (TN) — flamingos. (9) DEEPOR BEEL (Assam). (10) NALSAROVAR (Gujarat). (11) SUNDARBANS (WB) — mangrove UNESCO WHS + biosphere reserve; royal bengal tiger. (12) RENUKA (HP). (13) CHANDERTAL (HP). (14) HOKERA (J&K). (15) TSOMORIRI (Ladakh). (16) UPPER GANGA RIVER (UP). WORLD WETLANDS DAY — 2 FEBRUARY each year. UNIQUE INDIAN WETLAND FACTS: (1) CHILIKA is Asia's largest coastal lagoon + LARGEST wintering ground for migratory waterfowl in India. (2) KANJLI (Punjab) — 1st man-made Ramsar. (3) INDIA's 10 LARGEST Ramsar sites are >150 sq km each. WETLAND CONSERVATION programmes: National Plan for Conservation of Aquatic Ecosystems (NPCA), Amrit Dharohar (2023 budget), Mishti mangrove scheme (2023). Threats: urbanisation (wetland loss 40% since 1970s), pollution, encroachment, invasive species (Eichhornia water hyacinth), drying + siltation, sand mining.",
+      "explanation": "RAMSAR CONVENTION on WETLANDS — intergovernmental treaty for 'the conservation + wise use of wetlands'. Signed on 2 February 1971 at RAMSAR, Iran (a city on Caspian Sea). Effective 1975. 170 parties + 2,500+ Ramsar Sites globally (~257 million hectares). INDIA became party 1982. WETLAND — area where water is the primary factor controlling environment + plant + animal life; includes lakes, rivers, marshes, swamps, mangroves, peatlands, ponds, coral reefs, estuaries, mudflats. INDIA's RAMSAR SITES: 85 (as of 2024, expanded rapidly — was 26 in 2018, pushed aggressively to 75 for 75th Independence anniversary 2022, now 85). 2nd LARGEST TALLY in ASIA after China; 3rd LARGEST in world after UK + Mexico. FAMOUS SITES: (1) CHILIKA LAKE, ODISHA — 1st Ramsar site designated 1981; India's largest brackish-water lagoon (~1100 sq km, varying); home to Irrawaddy dolphins + flamingos. (2) KEOLADEO GHANA / Bharatpur, RAJASTHAN (1981) — 29 sq km; migratory birds paradise (Siberian crane once, now gone); UNESCO WHS too (1985). (3) SAMBHAR LAKE (RAJ) — largest inland saltwater lake. (4) WULAR LAKE (J&K) — Himalaya's largest freshwater lake. (5) HARIKE WETLAND (Punjab) — largest wetland in North India; migratory birds. (6) LOKTAK LAKE (MANIPUR) — largest freshwater lake in NE; floating 'phumdis' (islands of vegetation); Sangai (brow-antlered deer, state animal of Manipur) habitat in Keibul Lamjao NP (world's only FLOATING national park). (7) KOLLERU LAKE (AP). (8) POINT CALIMERE (TN) — flamingos. (9) DEEPOR BEEL (Assam). (10) NALSAROVAR (Gujarat). (11) SUNDARBANS (WB) — mangrove UNESCO WHS + biosphere reserve; royal bengal tiger. (12) RENUKA (HP). (13) CHANDERTAL (HP). (14) HOKERA (J&K). (15) TSOMORIRI (Ladakh). (16) UPPER GANGA RIVER (UP). WORLD WETLANDS DAY — 2 FEBRUARY each year. UNIQUE INDIAN WETLAND FACTS: (1) CHILIKA is Asia's largest coastal lagoon + LARGEST wintering ground for migratory waterfowl in India. (2) KANJLI (Punjab) — 1st man-made Ramsar. (3) INDIA's 10 LARGEST Ramsar sites are >150 sq km each. WETLAND CONSERVATION programmes: National Plan for Conservation of Aquatic Ecosystems (NPCA), Amrit Dharohar (2023 budget), Mishti mangrove scheme (2023). Threats: urbanisation (wetland loss 40% since 1970s), pollution, encroachment, invasive species (Eichhornia water hyacinth), drying + siltation, sand mining. signed at Ramsar, Iran; India has 85 Ramsar sites (2nd largest in Asia after China); covers lakes, marshes, estuaries.",
       "subject": "General Knowledge",
       "topic": "Environment & Climate Change",
       "topic_code": "GK_ENV_CLIMATE",
@@ -192,18 +356,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-env-01",
       "generated_at": "2026-04-21T04:40:00+00:00",
-      "id": "sgk_GK_ENV_CLIMATE_00009"
+      "id": "sgk_GK_ENV_CLIMATE_00009",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "WETLANDS of international importance — signed at Ramsar, Iran; India has 85 Ramsar sites (2nd largest in Asia after China); covers lakes, marshes, estuaries",
+          "now": "WETLANDS of international importance",
+          "moved_to_explanation": "signed at Ramsar, Iran; India has 85 Ramsar sites (2nd largest in Asia after China); covers lakes, marshes, estuaries"
+        }
+      ]
     },
     {
       "stem": "The SWACHH BHARAT ABHIYAN (Clean India Mission), launched in 2014, aimed for:",
       "options": [
-        {"option_text": "Air pollution reduction only", "is_correct": false},
-        {"option_text": "UNIVERSAL SANITATION — ending open defecation + building toilets; target India OPEN-DEFECATION FREE by 2 Oct 2019 (150th birth anniv of Gandhi)", "is_correct": true},
-        {"option_text": "Rainwater harvesting", "is_correct": false},
-        {"option_text": "Plastic ban", "is_correct": false}
+        {
+          "option_text": "Air pollution reduction only",
+          "is_correct": false
+        },
+        {
+          "option_text": "UNIVERSAL SANITATION",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rainwater harvesting",
+          "is_correct": false
+        },
+        {
+          "option_text": "Plastic ban",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "SWACHH BHARAT ABHIYAN (SBA) / SWACHH BHARAT MISSION (SBM) — India's largest-ever SANITATION drive. LAUNCHED 2 OCT 2014 (Gandhi Jayanti) by PM NARENDRA MODI at Rajghat, Delhi. Mission symbol: GANDHI's SPECTACLES. FOUNDING GOAL: 'Open Defecation Free (ODF) INDIA by 2 October 2019' — 150th birth anniversary of Mahatma Gandhi. TWO COMPONENTS: (1) SBM (Grameen) — rural, implemented by Ministry of Drinking Water + Sanitation (now Jal Shakti). (2) SBM (Urban) — urban, implemented by Ministry of Housing + Urban Affairs. KEY TARGETS + ACHIEVEMENTS (Phase-I 2014-19): (1) 11+ CRORE household TOILETS built (rural + urban). (2) Rural household sanitation coverage rose from ~39% (2014) to 100% (officially 2 Oct 2019; self-declaration). (3) Over 6 lakh villages declared ODF. (4) 4,300+ cities declared ODF. (5) Solid waste management: door-to-door collection, segregation at source, waste processing; ~66% urban waste processed (up from 18%). FUNDING: Centre-state 60:40 (rural), 75:25 (Northeast + Himalayan). Total spend ~₹1.35 lakh crore. PHASE II (2020-2025 / 2025-26 extension): (a) 'ODF-PLUS' — beyond toilet construction to include SLWM (solid + liquid waste management), greywater treatment, faecal sludge management. Target: ODF-Plus for all villages by 2025. (b) 100% door-to-door waste segregation in urban areas. (c) Dump-site remediation. (d) PLASTIC WASTE management (single-use plastics banned July 2022). SUB-SCHEMES: Nirmal Bharat, GOBAR-Dhan (biogas), Individual Household Latrines (IHHL), Community/Public Toilets, Swachhata App, Swachh Sarvekshan (annual urban cleanliness survey — Indore has TOPPED the rankings 6 times consecutively). ACHIEVEMENTS notable: (1) India reduced reported open defecation from ~564 million people (2014) to ~12 million (2022 estimates — partial; real figure disputed, WHO/UNICEF JMP says varies). (2) 8.5+ lakh community + public toilets in urban areas. (3) 'Aspirational Districts' + state rankings drive performance. CRITIQUES: (a) quality of toilets variable; many not used (habit, water availability); (b) ODF-status contested by independent studies (SQUAT, RICE); (c) sanitation worker safety — manual scavenging persists (banned since 1993, 2013 law); (d) behaviour change (Swachh Bharat IEC) incomplete. Related: NAMAMI GANGE (Ganga cleaning 2014), JAL JEEVAN MISSION (piped water in every rural household 2019; 75%+ coverage as of 2024).",
+      "explanation": "SWACHH BHARAT ABHIYAN (SBA) / SWACHH BHARAT MISSION (SBM) — India's largest-ever SANITATION drive. LAUNCHED 2 OCT 2014 (Gandhi Jayanti) by PM NARENDRA MODI at Rajghat, Delhi. Mission symbol: GANDHI's SPECTACLES. FOUNDING GOAL: 'Open Defecation Free (ODF) INDIA by 2 October 2019' — 150th birth anniversary of Mahatma Gandhi. TWO COMPONENTS: (1) SBM (Grameen) — rural, implemented by Ministry of Drinking Water + Sanitation (now Jal Shakti). (2) SBM (Urban) — urban, implemented by Ministry of Housing + Urban Affairs. KEY TARGETS + ACHIEVEMENTS (Phase-I 2014-19): (1) 11+ CRORE household TOILETS built (rural + urban). (2) Rural household sanitation coverage rose from ~39% (2014) to 100% (officially 2 Oct 2019; self-declaration). (3) Over 6 lakh villages declared ODF. (4) 4,300+ cities declared ODF. (5) Solid waste management: door-to-door collection, segregation at source, waste processing; ~66% urban waste processed (up from 18%). FUNDING: Centre-state 60:40 (rural), 75:25 (Northeast + Himalayan). Total spend ~₹1.35 lakh crore. PHASE II (2020-2025 / 2025-26 extension): (a) 'ODF-PLUS' — beyond toilet construction to include SLWM (solid + liquid waste management), greywater treatment, faecal sludge management. Target: ODF-Plus for all villages by 2025. (b) 100% door-to-door waste segregation in urban areas. (c) Dump-site remediation. (d) PLASTIC WASTE management (single-use plastics banned July 2022). SUB-SCHEMES: Nirmal Bharat, GOBAR-Dhan (biogas), Individual Household Latrines (IHHL), Community/Public Toilets, Swachhata App, Swachh Sarvekshan (annual urban cleanliness survey — Indore has TOPPED the rankings 6 times consecutively). ACHIEVEMENTS notable: (1) India reduced reported open defecation from ~564 million people (2014) to ~12 million (2022 estimates — partial; real figure disputed, WHO/UNICEF JMP says varies). (2) 8.5+ lakh community + public toilets in urban areas. (3) 'Aspirational Districts' + state rankings drive performance. CRITIQUES: (a) quality of toilets variable; many not used (habit, water availability); (b) ODF-status contested by independent studies (SQUAT, RICE); (c) sanitation worker safety — manual scavenging persists (banned since 1993, 2013 law); (d) behaviour change (Swachh Bharat IEC) incomplete. Related: NAMAMI GANGE (Ganga cleaning 2014), JAL JEEVAN MISSION (piped water in every rural household 2019; 75%+ coverage as of 2024). ending open defecation + building toilets; target India OPEN-DEFECATION FREE by 2 Oct 2019 (150th birth anniv of Gandhi).",
       "subject": "General Knowledge",
       "topic": "Environment & Climate Change",
       "topic_code": "GK_ENV_CLIMATE",
@@ -213,7 +397,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-env-01",
       "generated_at": "2026-04-21T04:40:00+00:00",
-      "id": "sgk_GK_ENV_CLIMATE_00010"
+      "id": "sgk_GK_ENV_CLIMATE_00010",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "UNIVERSAL SANITATION — ending open defecation + building toilets; target India OPEN-DEFECATION FREE by 2 Oct 2019 (150th birth anniv of Gandhi)",
+          "now": "UNIVERSAL SANITATION",
+          "moved_to_explanation": "ending open defecation + building toilets; target India OPEN-DEFECATION FREE by 2 Oct 2019 (150th birth anniv of Gandhi)"
+        }
+      ]
     }
   ]
 }

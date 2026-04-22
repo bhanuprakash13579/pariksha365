@@ -8,10 +8,22 @@
     {
       "stem": "In a FOOD CHAIN, GREEN PLANTS are:",
       "options": [
-        {"option_text": "Consumers", "is_correct": false},
-        {"option_text": "Producers (autotrophs)", "is_correct": true},
-        {"option_text": "Decomposers", "is_correct": false},
-        {"option_text": "Predators", "is_correct": false}
+        {
+          "option_text": "Consumers",
+          "is_correct": false
+        },
+        {
+          "option_text": "Producers",
+          "is_correct": true
+        },
+        {
+          "option_text": "Decomposers",
+          "is_correct": false
+        },
+        {
+          "option_text": "Predators",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Producers = make their own food (autotrophs) via photosynthesis → green plants, algae, cyanobacteria. Consumers = herbivores (primary), carnivores (secondary/tertiary) — feed on others. Decomposers = fungi, bacteria; break down dead matter.",
@@ -24,15 +36,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-bio-eco-01",
       "generated_at": "2026-04-23T06:10:00+00:00",
-      "id": "sgk_BIO_ECOSYSTEMS_MIXED_00001"
+      "id": "sgk_BIO_ECOSYSTEMS_MIXED_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Producers (autotrophs)",
+          "now": "Producers",
+          "moved_to_explanation": "autotrophs"
+        }
+      ]
     },
     {
       "stem": "At each step in a FOOD CHAIN, approximately what % of energy is PASSED on to the next level (Lindeman's 10% rule)?",
       "options": [
-        {"option_text": "90%", "is_correct": false},
-        {"option_text": "10%", "is_correct": true},
-        {"option_text": "50%", "is_correct": false},
-        {"option_text": "100%", "is_correct": false}
+        {
+          "option_text": "90%",
+          "is_correct": false
+        },
+        {
+          "option_text": "10%",
+          "is_correct": true
+        },
+        {
+          "option_text": "50%",
+          "is_correct": false
+        },
+        {
+          "option_text": "100%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "10% rule (Lindeman, 1942) — only ~10% of energy at one trophic level passes to the next; the rest is lost as heat, used in metabolism etc. Explains why food chains usually have only 4-5 trophic levels (energy runs out).",
@@ -50,10 +82,22 @@
     {
       "stem": "DECOMPOSERS in an ecosystem include:",
       "options": [
-        {"option_text": "Wolves and lions", "is_correct": false},
-        {"option_text": "Bacteria and fungi", "is_correct": true},
-        {"option_text": "Trees", "is_correct": false},
-        {"option_text": "Birds of prey", "is_correct": false}
+        {
+          "option_text": "Wolves and lions",
+          "is_correct": false
+        },
+        {
+          "option_text": "Bacteria and fungi",
+          "is_correct": true
+        },
+        {
+          "option_text": "Trees",
+          "is_correct": false
+        },
+        {
+          "option_text": "Birds of prey",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Decomposers = bacteria + fungi (saprophytes). Break down dead organisms and waste into nutrients. Essential for recycling of nitrogen, carbon. Without them, dead matter would accumulate and nutrients wouldn't return to producers.",
@@ -71,10 +115,22 @@
     {
       "stem": "The STUDY of ecosystems is called:",
       "options": [
-        {"option_text": "Ecology", "is_correct": true},
-        {"option_text": "Etiology", "is_correct": false},
-        {"option_text": "Entomology", "is_correct": false},
-        {"option_text": "Ethology", "is_correct": false}
+        {
+          "option_text": "Ecology",
+          "is_correct": true
+        },
+        {
+          "option_text": "Etiology",
+          "is_correct": false
+        },
+        {
+          "option_text": "Entomology",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ethology",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Ecology — study of ecosystems, organisms' relationships with environment. Entomology — insects. Ethology — animal behaviour. Etiology — study of causes (esp. of disease). Near-twin trap.",
@@ -92,10 +148,22 @@
     {
       "stem": "A population of DIFFERENT species living and interacting in the same area is called:",
       "options": [
-        {"option_text": "Population", "is_correct": false},
-        {"option_text": "Community", "is_correct": true},
-        {"option_text": "Ecosystem", "is_correct": false},
-        {"option_text": "Biome", "is_correct": false}
+        {
+          "option_text": "Population",
+          "is_correct": false
+        },
+        {
+          "option_text": "Community",
+          "is_correct": true
+        },
+        {
+          "option_text": "Ecosystem",
+          "is_correct": false
+        },
+        {
+          "option_text": "Biome",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Hierarchy: organism → POPULATION (same species) → COMMUNITY (different species, same area) → ECOSYSTEM (community + physical environment) → BIOME (large regional ecosystem: tundra, rainforest) → BIOSPHERE (all life on Earth).",
@@ -113,10 +181,22 @@
     {
       "stem": "The MAIN source of energy for all ecosystems is:",
       "options": [
-        {"option_text": "Water", "is_correct": false},
-        {"option_text": "The Sun", "is_correct": true},
-        {"option_text": "Fossil fuels", "is_correct": false},
-        {"option_text": "Soil", "is_correct": false}
+        {
+          "option_text": "Water",
+          "is_correct": false
+        },
+        {
+          "option_text": "The Sun",
+          "is_correct": true
+        },
+        {
+          "option_text": "Fossil fuels",
+          "is_correct": false
+        },
+        {
+          "option_text": "Soil",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Sun — ultimate source of energy for nearly all ecosystems on Earth. Producers capture sunlight via photosynthesis and pass energy up the food chain. Exceptions: chemosynthesis at deep-sea hydrothermal vents (energy from chemicals, not sunlight).",
@@ -134,10 +214,22 @@
     {
       "stem": "Which of these is NOT a biome?",
       "options": [
-        {"option_text": "Tundra", "is_correct": false},
-        {"option_text": "Tropical rainforest", "is_correct": false},
-        {"option_text": "Desert", "is_correct": false},
-        {"option_text": "Terrarium", "is_correct": true}
+        {
+          "option_text": "Tundra",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tropical rainforest",
+          "is_correct": false
+        },
+        {
+          "option_text": "Desert",
+          "is_correct": false
+        },
+        {
+          "option_text": "Terrarium",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "explanation": "Biomes = large naturally-occurring ecological regions (tundra, taiga, temperate forest, tropical rainforest, grassland/savanna, desert, aquatic). Terrarium — an artificial glass container for plants, not a biome. Classic trap using near-twin words.",

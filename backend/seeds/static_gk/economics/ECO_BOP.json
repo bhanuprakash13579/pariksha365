@@ -79,7 +79,7 @@
           "is_correct": false
         },
         {
-          "option_text": "Net INVISIBLES — primarily remittances, software services exports, and tourism earnings",
+          "option_text": "Net INVISIBLES",
           "is_correct": true
         },
         {
@@ -92,7 +92,7 @@
         }
       ],
       "correct_letter": "B",
-      "explanation": "India structurally runs a MERCHANDISE (goods) trade deficit — roughly USD 250 bn/year in recent years, driven by crude-oil imports. The deficit is LARGELY financed by strong NET INVISIBLES EARNINGS (services + remittances): (i) IT/BPM services exports (~USD 200 bn/year); (ii) remittances (~USD 125 bn); (iii) tourism. Combined, these offset most of the goods deficit and keep the overall Current Account Deficit (CAD) manageable (~1-2 % of GDP in normal years). FDI (option A) is Capital Account, not Current. Option C is a Capital Account transaction. Option D is a domestic instrument — not a BoP item.",
+      "explanation": "India structurally runs a MERCHANDISE (goods) trade deficit — roughly USD 250 bn/year in recent years, driven by crude-oil imports. The deficit is LARGELY financed by strong NET INVISIBLES EARNINGS (services + remittances): (i) IT/BPM services exports (~USD 200 bn/year); (ii) remittances (~USD 125 bn); (iii) tourism. Combined, these offset most of the goods deficit and keep the overall Current Account Deficit (CAD) manageable (~1-2 % of GDP in normal years). FDI (option A) is Capital Account, not Current. Option C is a Capital Account transaction. Option D is a domestic instrument — not a BoP item. primarily remittances, software services exports, and tourism earnings.",
       "subject": "Economics",
       "topic": "Balance of Payments (BoP)",
       "topic_code": "ECO_BOP",
@@ -102,7 +102,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-19-eco-bop-01",
       "generated_at": "2026-04-19T16:52:03+00:00",
-      "id": "sgk_ECO_BOP_00003"
+      "id": "sgk_ECO_BOP_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Net INVISIBLES — primarily remittances, software services exports, and tourism earnings",
+          "now": "Net INVISIBLES",
+          "moved_to_explanation": "primarily remittances, software services exports, and tourism earnings"
+        }
+      ]
     },
     {
       "stem": "If India's Current Account Deficit (CAD) + Capital Account Surplus = positive overall balance, the RBI typically responds by:",
@@ -343,7 +351,7 @@
           "is_correct": false
         },
         {
-          "option_text": "Reserve Bank of India (BoP data) and Ministry of Finance (External Debt Report jointly with RBI)",
+          "option_text": "Reserve Bank of India (BoP data) and Ministry of Finance",
           "is_correct": true
         },
         {
@@ -356,7 +364,7 @@
         }
       ],
       "correct_letter": "B",
-      "explanation": "RBI publishes BoP data QUARTERLY in its Development in India's BoP release. India's External Debt Status Report is published QUARTERLY jointly by the Ministry of Finance (Economic Affairs Dept.) and RBI — the latter maintains the external-debt database. These releases are public, freely downloadable, and are the canonical source for all macro analysis of India's external accounts. Option A undersells RBI's role. Options C and D describe authorities with no direct role in BoP accounting.",
+      "explanation": "RBI publishes BoP data QUARTERLY in its Development in India's BoP release. India's External Debt Status Report is published QUARTERLY jointly by the Ministry of Finance (Economic Affairs Dept.) and RBI — the latter maintains the external-debt database. These releases are public, freely downloadable, and are the canonical source for all macro analysis of India's external accounts. Option A undersells RBI's role. Options C and D describe authorities with no direct role in BoP accounting. External Debt Report jointly with RBI.",
       "subject": "Economics",
       "topic": "Balance of Payments (BoP)",
       "topic_code": "ECO_BOP",
@@ -366,7 +374,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-19-eco-bop-01",
       "generated_at": "2026-04-19T16:52:03+00:00",
-      "id": "sgk_ECO_BOP_00011"
+      "id": "sgk_ECO_BOP_00011",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Reserve Bank of India (BoP data) and Ministry of Finance (External Debt Report jointly with RBI)",
+          "now": "Reserve Bank of India (BoP data) and Ministry of Finance",
+          "moved_to_explanation": "External Debt Report jointly with RBI"
+        }
+      ]
     },
     {
       "stem": "Which of the following is NOT a determinant typically used to assess if a country's Current Account Deficit is 'SUSTAINABLE'?",

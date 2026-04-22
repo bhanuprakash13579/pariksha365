@@ -145,7 +145,7 @@
           "is_correct": false
         },
         {
-          "option_text": "Rayleigh scattering — shorter wavelengths scattered more strongly by atmospheric molecules",
+          "option_text": "Rayleigh scattering",
           "is_correct": true
         },
         {
@@ -158,7 +158,7 @@
         }
       ],
       "correct_letter": "B",
-      "explanation": "Rayleigh scattering ∝ 1/λ⁴. Blue light (λ ≈ 450 nm) is scattered ~10× more strongly than red (~700 nm). Hence the scattered blue reaches our eyes from all directions. At sunset, light passes through a longer atmospheric path — blues are scattered OUT, leaving red-orange directly visible.",
+      "explanation": "Rayleigh scattering ∝ 1/λ⁴. Blue light (λ ≈ 450 nm) is scattered ~10× more strongly than red (~700 nm). Hence the scattered blue reaches our eyes from all directions. At sunset, light passes through a longer atmospheric path — blues are scattered OUT, leaving red-orange directly visible. shorter wavelengths scattered more strongly by atmospheric molecules.",
       "subject": "Physics",
       "topic": "Optics — mixed tiers",
       "topic_code": "PHY_OPTICS_MIXED_TIERS",
@@ -168,7 +168,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-21-phy-ot-05",
       "generated_at": "2026-04-21T18:10:00+00:00",
-      "id": "sgk_PHY_OPTICS_MIXED_TIERS_00005"
+      "id": "sgk_PHY_OPTICS_MIXED_TIERS_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Rayleigh scattering — shorter wavelengths scattered more strongly by atmospheric molecules",
+          "now": "Rayleigh scattering",
+          "moved_to_explanation": "shorter wavelengths scattered more strongly by atmospheric molecules"
+        }
+      ]
     },
     {
       "stem": "A convex lens of focal length 20 cm forms a real image at a distance of 40 cm. The object distance is:",

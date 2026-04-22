@@ -8,10 +8,22 @@
     {
       "stem": "Indira Gandhi International Airport serves which city?",
       "options": [
-        {"option_text": "Mumbai", "is_correct": false},
-        {"option_text": "New Delhi", "is_correct": true},
-        {"option_text": "Bengaluru", "is_correct": false},
-        {"option_text": "Kolkata", "is_correct": false}
+        {
+          "option_text": "Mumbai",
+          "is_correct": false
+        },
+        {
+          "option_text": "New Delhi",
+          "is_correct": true
+        },
+        {
+          "option_text": "Bengaluru",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kolkata",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "IGIA — Palam, New Delhi — busiest airport in India. Mumbai — Chhatrapati Shivaji Maharaj International. Bengaluru — Kempegowda International. Kolkata — Netaji Subhas Chandra Bose International. Chennai — Anna International.",
@@ -29,10 +41,22 @@
     {
       "stem": "Match the AIRPORT NAME with its CITY. A. Rajiv Gandhi International Airport.  B. Biju Patnaik International Airport.  C. Lokpriya Gopinath Bordoloi International Airport.  D. Sardar Vallabhbhai Patel International Airport. List-II: 1. Hyderabad.  2. Bhubaneswar.  3. Guwahati.  4. Ahmedabad.",
       "options": [
-        {"option_text": "A-1, B-2, C-3, D-4", "is_correct": true},
-        {"option_text": "A-2, B-1, C-3, D-4", "is_correct": false},
-        {"option_text": "A-1, B-3, C-2, D-4", "is_correct": false},
-        {"option_text": "A-1, B-2, C-4, D-3", "is_correct": false}
+        {
+          "option_text": "A-1, B-2, C-3, D-4",
+          "is_correct": true
+        },
+        {
+          "option_text": "A-2, B-1, C-3, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-3, C-2, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-2, C-4, D-3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Hyderabad — Rajiv Gandhi (Shamshabad). Bhubaneswar — Biju Patnaik. Guwahati — Lokpriya Gopinath Bordoloi. Ahmedabad — Sardar Patel. (Bordoloi was Assam's first CM, nicknamed 'Lokpriya' — 'loved by the people'.)",
@@ -50,13 +74,25 @@
     {
       "stem": "Which is the LARGEST natural harbour on the western coast of India?",
       "options": [
-        {"option_text": "Kandla", "is_correct": false},
-        {"option_text": "Mumbai (formerly Bombay)", "is_correct": true},
-        {"option_text": "Marmagao", "is_correct": false},
-        {"option_text": "Mangalore", "is_correct": false}
+        {
+          "option_text": "Kandla",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mumbai",
+          "is_correct": true
+        },
+        {
+          "option_text": "Marmagao",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mangalore",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Mumbai Port (at the Mumbai harbour of the Konkan coast) — India's largest natural harbour on the west coast. JNPT (Nhava Sheva) is also on the same harbour and handles most of Mumbai's container traffic. Kandla (now Deendayal Port) is a tidal port.",
+      "explanation": "Mumbai Port (at the Mumbai harbour of the Konkan coast) — India's largest natural harbour on the west coast. JNPT (Nhava Sheva) is also on the same harbour and handles most of Mumbai's container traffic. Kandla (now Deendayal Port) is a tidal port. formerly Bombay.",
       "subject": "General Knowledge",
       "topic": "Airports, ports & transport — mixed tiers",
       "topic_code": "GK_AIRPORTS_PORTS_MIXED",
@@ -66,18 +102,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-gk-apt-03",
       "generated_at": "2026-04-22T11:00:00+00:00",
-      "id": "sgk_GK_AIRPORTS_PORTS_MIXED_00003"
+      "id": "sgk_GK_AIRPORTS_PORTS_MIXED_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Mumbai (formerly Bombay)",
+          "now": "Mumbai",
+          "moved_to_explanation": "formerly Bombay"
+        }
+      ]
     },
     {
       "stem": "India's FIRST passenger train ran between:",
       "options": [
-        {"option_text": "Mumbai (Bori Bunder) and Thane (34 km, 1853)", "is_correct": true},
-        {"option_text": "Howrah and Hooghly, 1854", "is_correct": false},
-        {"option_text": "Madras and Arakkonam, 1856", "is_correct": false},
-        {"option_text": "Delhi and Meerut, 1860", "is_correct": false}
+        {
+          "option_text": "Mumbai (Bori Bunder) and Thane",
+          "is_correct": true
+        },
+        {
+          "option_text": "Howrah and Hooghly, 1854",
+          "is_correct": false
+        },
+        {
+          "option_text": "Madras and Arakkonam, 1856",
+          "is_correct": false
+        },
+        {
+          "option_text": "Delhi and Meerut, 1860",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
-      "explanation": "16 April 1853 — India's first passenger train ran 34 km from Bori Bunder (Mumbai) to Thane. Three locomotives — Sahib, Sindh, Sultan — pulled 14 carriages carrying ~400 passengers. Howrah-Hooghly in eastern India followed in 1854.",
+      "explanation": "16 April 1853 — India's first passenger train ran 34 km from Bori Bunder (Mumbai) to Thane. Three locomotives — Sahib, Sindh, Sultan — pulled 14 carriages carrying ~400 passengers. Howrah-Hooghly in eastern India followed in 1854. 34 km, 1853.",
       "subject": "General Knowledge",
       "topic": "Airports, ports & transport — mixed tiers",
       "topic_code": "GK_AIRPORTS_PORTS_MIXED",
@@ -87,15 +143,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-gk-apt-04",
       "generated_at": "2026-04-22T11:00:00+00:00",
-      "id": "sgk_GK_AIRPORTS_PORTS_MIXED_00004"
+      "id": "sgk_GK_AIRPORTS_PORTS_MIXED_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Mumbai (Bori Bunder) and Thane (34 km, 1853)",
+          "now": "Mumbai (Bori Bunder) and Thane",
+          "moved_to_explanation": "34 km, 1853"
+        }
+      ]
     },
     {
       "stem": "The LONGEST railway platform in the world is at:",
       "options": [
-        {"option_text": "Kharagpur (West Bengal)", "is_correct": false},
-        {"option_text": "Hubballi (Karnataka)", "is_correct": true},
-        {"option_text": "Gorakhpur (UP)", "is_correct": false},
-        {"option_text": "Howrah (WB)", "is_correct": false}
+        {
+          "option_text": "Kharagpur (West Bengal)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hubballi (Karnataka)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Gorakhpur (UP)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Howrah (WB)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Siddharoodha Swami Ji Maharaj Hubballi railway station holds the world record (inaugurated 2023) at ~1,507 m. Previous record holder was Gorakhpur (~1,366 m). Kharagpur (1,072 m) was earlier record-holder. (Facts may shift as records change — a staleness watchpoint.)",
@@ -113,10 +189,22 @@
     {
       "stem": "Jawaharlal Nehru Port (JNPT / Nhava Sheva) is located in which state?",
       "options": [
-        {"option_text": "Gujarat", "is_correct": false},
-        {"option_text": "Maharashtra", "is_correct": true},
-        {"option_text": "Goa", "is_correct": false},
-        {"option_text": "Kerala", "is_correct": false}
+        {
+          "option_text": "Gujarat",
+          "is_correct": false
+        },
+        {
+          "option_text": "Maharashtra",
+          "is_correct": true
+        },
+        {
+          "option_text": "Goa",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kerala",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "JNPT — on the eastern shore of Mumbai harbour, Raigad district, Maharashtra. Commissioned 1989. India's busiest container port; handles >50% of containerised cargo across major Indian ports.",
@@ -134,13 +222,25 @@
     {
       "stem": "The ONLY TIDAL port of India is:",
       "options": [
-        {"option_text": "Kolkata", "is_correct": false},
-        {"option_text": "Kandla (now Deendayal Port)", "is_correct": true},
-        {"option_text": "Visakhapatnam", "is_correct": false},
-        {"option_text": "Tuticorin", "is_correct": false}
+        {
+          "option_text": "Kolkata",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kandla",
+          "is_correct": true
+        },
+        {
+          "option_text": "Visakhapatnam",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tuticorin",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Kandla (Gujarat, Gulf of Kutch) — India's first port on the west coast after partition (1950s). Designed as a tidal port. Renamed Deendayal Port (2017). Chief exports: salt, cotton, oil, agricultural produce. Kolkata is a RIVERINE port on the Hooghly.",
+      "explanation": "Kandla (Gujarat, Gulf of Kutch) — India's first port on the west coast after partition (1950s). Designed as a tidal port. Renamed Deendayal Port (2017). Chief exports: salt, cotton, oil, agricultural produce. Kolkata is a RIVERINE port on the Hooghly. now Deendayal Port.",
       "subject": "General Knowledge",
       "topic": "Airports, ports & transport — mixed tiers",
       "topic_code": "GK_AIRPORTS_PORTS_MIXED",
@@ -150,7 +250,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-gk-apt-07",
       "generated_at": "2026-04-22T11:00:00+00:00",
-      "id": "sgk_GK_AIRPORTS_PORTS_MIXED_00007"
+      "id": "sgk_GK_AIRPORTS_PORTS_MIXED_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Kandla (now Deendayal Port)",
+          "now": "Kandla",
+          "moved_to_explanation": "now Deendayal Port"
+        }
+      ]
     }
   ]
 }

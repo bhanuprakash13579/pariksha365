@@ -8,13 +8,25 @@
     {
       "stem": "INDIA's LARGEST producer of IRON ORE is:",
       "options": [
-        {"option_text": "Karnataka", "is_correct": false},
-        {"option_text": "ODISHA — ~55% of India's iron ore production; major mines at Barbil-Joda-Bonai-Keonjhar-Sundargarh belt", "is_correct": true},
-        {"option_text": "Jharkhand", "is_correct": false},
-        {"option_text": "Chhattisgarh", "is_correct": false}
+        {
+          "option_text": "Karnataka",
+          "is_correct": false
+        },
+        {
+          "option_text": "ODISHA",
+          "is_correct": true
+        },
+        {
+          "option_text": "Jharkhand",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chhattisgarh",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "IRON ORE in INDIA — world's 4TH LARGEST producer after Australia + Brazil + China. Total production ~260 MT/yr (2023-24). India has among the world's best quality HEMATITE reserves + large magnetite reserves. STATE-WISE TOP PRODUCERS: (1) ODISHA — ~55% national production (2023-24). Main belts: KEONJHAR (Barbil-Joda — world's largest iron ore mining town), SUNDARGARH (Banspani-Daitari), MAYURBHANJ (Gorumahisani-Badampahar). KIRIBURU + MEGHAHATUBURU (Jharkhand border) major mines. TISCO + SAIL + NMDC key players. (2) CHHATTISGARH — ~18%; BAILADILA range in DANTEWADA (MAOIST-affected area), ~14 deposits, NMDC-operated. BAILADILA exports iron ore pellets. (3) KARNATAKA — ~14%; BELLARY-HOSPET (Sandur schist belt), KUDREMUKH (magnetite, mining stopped 2005 per SC order), Chitradurga, Tumkur. (4) JHARKHAND — ~8%; NOAMUNDI, GUA, CHIRIA, MANOHARPUR (Singhbhum district) — Tata Steel leases + SAIL. (5) Other: Goa (pre-ban), Maharashtra, AP, Rajasthan. IRON ORE GRADES: (a) HEMATITE (Fe₂O₃) — deep red/black, 60-70% Fe, FRIABLE HIGH-GRADE (DANTEWADA, Keonjhar). (b) MAGNETITE (Fe₃O₄) — black, magnetic, 70% Fe (Kudremukh, Salem). (c) LIMONITE + SIDERITE — less common. MAJOR STEEL PLANTS: TATA STEEL (Jamshedpur, 1907, private), SAIL (Bhilai, Bokaro, Durgapur, Rourkela, Burnpur, Salem), RINL-VIZAG (public), JSW (Vijayanagar, Dolvi), Jindal (Angul, Raigarh, Toranagallu), Essar (Hazira, now JSW). INDIA is world's 2ND LARGEST crude steel producer (behind China) since 2019 — ~140 MT/yr. EXPORTS of iron ore PELLETS big to China, Japan, Korea. 'GOA BAN' (2012 onwards, Shah Commission) halted illegal mining. NMDC (PSU, HQ Hyderabad) = largest iron ore miner publicly.",
+      "explanation": "IRON ORE in INDIA — world's 4TH LARGEST producer after Australia + Brazil + China. Total production ~260 MT/yr (2023-24). India has among the world's best quality HEMATITE reserves + large magnetite reserves. STATE-WISE TOP PRODUCERS: (1) ODISHA — ~55% national production (2023-24). Main belts: KEONJHAR (Barbil-Joda — world's largest iron ore mining town), SUNDARGARH (Banspani-Daitari), MAYURBHANJ (Gorumahisani-Badampahar). KIRIBURU + MEGHAHATUBURU (Jharkhand border) major mines. TISCO + SAIL + NMDC key players. (2) CHHATTISGARH — ~18%; BAILADILA range in DANTEWADA (MAOIST-affected area), ~14 deposits, NMDC-operated. BAILADILA exports iron ore pellets. (3) KARNATAKA — ~14%; BELLARY-HOSPET (Sandur schist belt), KUDREMUKH (magnetite, mining stopped 2005 per SC order), Chitradurga, Tumkur. (4) JHARKHAND — ~8%; NOAMUNDI, GUA, CHIRIA, MANOHARPUR (Singhbhum district) — Tata Steel leases + SAIL. (5) Other: Goa (pre-ban), Maharashtra, AP, Rajasthan. IRON ORE GRADES: (a) HEMATITE (Fe₂O₃) — deep red/black, 60-70% Fe, FRIABLE HIGH-GRADE (DANTEWADA, Keonjhar). (b) MAGNETITE (Fe₃O₄) — black, magnetic, 70% Fe (Kudremukh, Salem). (c) LIMONITE + SIDERITE — less common. MAJOR STEEL PLANTS: TATA STEEL (Jamshedpur, 1907, private), SAIL (Bhilai, Bokaro, Durgapur, Rourkela, Burnpur, Salem), RINL-VIZAG (public), JSW (Vijayanagar, Dolvi), Jindal (Angul, Raigarh, Toranagallu), Essar (Hazira, now JSW). INDIA is world's 2ND LARGEST crude steel producer (behind China) since 2019 — ~140 MT/yr. EXPORTS of iron ore PELLETS big to China, Japan, Korea. 'GOA BAN' (2012 onwards, Shah Commission) halted illegal mining. NMDC (PSU, HQ Hyderabad) = largest iron ore miner publicly. ~55% of India's iron ore production; major mines at Barbil-Joda-Bonai-Keonjhar-Sundargarh belt.",
       "subject": "Geography",
       "topic": "Indian Minerals & Mining",
       "topic_code": "GEO_IND_MINERALS",
@@ -24,18 +36,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-min-01",
       "generated_at": "2026-04-21T02:50:00+00:00",
-      "id": "sgk_GEO_IND_MINERALS_00001"
+      "id": "sgk_GEO_IND_MINERALS_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ODISHA — ~55% of India's iron ore production; major mines at Barbil-Joda-Bonai-Keonjhar-Sundargarh belt",
+          "now": "ODISHA",
+          "moved_to_explanation": "~55% of India's iron ore production; major mines at Barbil-Joda-Bonai-Keonjhar-Sundargarh belt"
+        }
+      ]
     },
     {
       "stem": "INDIA's largest COAL-PRODUCING state is:",
       "options": [
-        {"option_text": "West Bengal", "is_correct": false},
-        {"option_text": "JHARKHAND (coal) — ~25% of national production; Dhanbad district has INDIA's largest coal reserves (Jharia + Bokaro fields)", "is_correct": true},
-        {"option_text": "Tamil Nadu", "is_correct": false},
-        {"option_text": "Kerala", "is_correct": false}
+        {
+          "option_text": "West Bengal",
+          "is_correct": false
+        },
+        {
+          "option_text": "JHARKHAND (coal)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Tamil Nadu",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kerala",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "COAL in INDIA — world's 2nd LARGEST producer (after China) + 2nd LARGEST CONSUMER + 3rd LARGEST reserves (after USA + Russia). Power source for ~55-60% of India's electricity (though falling with renewables surge). ANNUAL PRODUCTION (FY 2023-24): ~1 BILLION TONNES (milestone crossed by COAL INDIA LIMITED + captive + commercial miners). STATE RANKINGS: (1) JHARKHAND ~25%; (2) ODISHA ~24%; (3) CHHATTISGARH ~21%; (4) MADHYA PRADESH ~11%; (5) TELANGANA ~8%; (6) MAHARASHTRA ~6%; (7) West Bengal ~3%. MAJOR COALFIELDS: (1) JHARIA (Jharkhand, Dhanbad) — India's LARGEST coal reserves + only COKING COAL (used in steel making); underground fires raging since 1916 — a ecological disaster + affects 500,000 people. (2) RANIGANJ (West Bengal, Asansol) — OLDEST coalfield; first discovered 1774 by Sumner + Heatly of EIC. (3) BOKARO (Jharkhand) — non-coking. (4) KARANPURA + GIRIDIH (Jharkhand). (5) SINGRAULI (MP-UP border). (6) TALCHER (Odisha). (7) KORBA (Chhattisgarh). (8) GODAVARI VALLEY (Telangana) — Singareni. (9) NEYVELI (Tamil Nadu) — LIGNITE (brown coal). COAL TYPES: (a) Anthracite (highest, ~95% C, rare in India — mostly J&K); (b) BITUMINOUS (60-80% C, most Indian coal); (c) SUB-BITUMINOUS; (d) LIGNITE (brown, 30-40%, Neyveli TN, Rajasthan, Gujarat). CHIEF PRODUCER: COAL INDIA LIMITED (CIL) — PSU with 8 subsidiaries (CCL, NCL, SECL, WCL, MCL, ECL, BCCL, CMPDIL); world's LARGEST coal-mining company. 2020 AUCTIONS — commercial coal mining opened to PRIVATE sector (previously nationalised 1973). CAPTIVE mines to steel + power companies. CLIMATE: India committed to NET ZERO by 2070 (Glasgow COP26); COAL PHASE-DOWN (not phase-out per India's insistence). RENEWABLES now ~42% of installed capacity.",
+      "explanation": "COAL in INDIA — world's 2nd LARGEST producer (after China) + 2nd LARGEST CONSUMER + 3rd LARGEST reserves (after USA + Russia). Power source for ~55-60% of India's electricity (though falling with renewables surge). ANNUAL PRODUCTION (FY 2023-24): ~1 BILLION TONNES (milestone crossed by COAL INDIA LIMITED + captive + commercial miners). STATE RANKINGS: (1) JHARKHAND ~25%; (2) ODISHA ~24%; (3) CHHATTISGARH ~21%; (4) MADHYA PRADESH ~11%; (5) TELANGANA ~8%; (6) MAHARASHTRA ~6%; (7) West Bengal ~3%. MAJOR COALFIELDS: (1) JHARIA (Jharkhand, Dhanbad) — India's LARGEST coal reserves + only COKING COAL (used in steel making); underground fires raging since 1916 — a ecological disaster + affects 500,000 people. (2) RANIGANJ (West Bengal, Asansol) — OLDEST coalfield; first discovered 1774 by Sumner + Heatly of EIC. (3) BOKARO (Jharkhand) — non-coking. (4) KARANPURA + GIRIDIH (Jharkhand). (5) SINGRAULI (MP-UP border). (6) TALCHER (Odisha). (7) KORBA (Chhattisgarh). (8) GODAVARI VALLEY (Telangana) — Singareni. (9) NEYVELI (Tamil Nadu) — LIGNITE (brown coal). COAL TYPES: (a) Anthracite (highest, ~95% C, rare in India — mostly J&K); (b) BITUMINOUS (60-80% C, most Indian coal); (c) SUB-BITUMINOUS; (d) LIGNITE (brown, 30-40%, Neyveli TN, Rajasthan, Gujarat). CHIEF PRODUCER: COAL INDIA LIMITED (CIL) — PSU with 8 subsidiaries (CCL, NCL, SECL, WCL, MCL, ECL, BCCL, CMPDIL); world's LARGEST coal-mining company. 2020 AUCTIONS — commercial coal mining opened to PRIVATE sector (previously nationalised 1973). CAPTIVE mines to steel + power companies. CLIMATE: India committed to NET ZERO by 2070 (Glasgow COP26); COAL PHASE-DOWN (not phase-out per India's insistence). RENEWABLES now ~42% of installed capacity. ~25% of national production; Dhanbad district has INDIA's largest coal reserves (Jharia + Bokaro fields).",
       "subject": "Geography",
       "topic": "Indian Minerals & Mining",
       "topic_code": "GEO_IND_MINERALS",
@@ -45,18 +77,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-min-01",
       "generated_at": "2026-04-21T02:50:00+00:00",
-      "id": "sgk_GEO_IND_MINERALS_00002"
+      "id": "sgk_GEO_IND_MINERALS_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "JHARKHAND (coal) — ~25% of national production; Dhanbad district has INDIA's largest coal reserves (Jharia + Bokaro fields)",
+          "now": "JHARKHAND (coal)",
+          "moved_to_explanation": "~25% of national production; Dhanbad district has INDIA's largest coal reserves (Jharia + Bokaro fields)"
+        }
+      ]
     },
     {
       "stem": "MUMBAI HIGH, India's largest OFFSHORE OIL FIELD, is located in the:",
       "options": [
-        {"option_text": "Bay of Bengal", "is_correct": false},
-        {"option_text": "ARABIAN SEA, ~160 km off Mumbai coast; discovered 1974 by ONGC + operational from 1976; ~70% of India's domestic crude oil historically", "is_correct": true},
-        {"option_text": "Gulf of Mannar", "is_correct": false},
-        {"option_text": "Indian Ocean south of Kanyakumari", "is_correct": false}
+        {
+          "option_text": "Bay of Bengal",
+          "is_correct": false
+        },
+        {
+          "option_text": "ARABIAN SEA, ~160 km off Mumbai coast",
+          "is_correct": true
+        },
+        {
+          "option_text": "Gulf of Mannar",
+          "is_correct": false
+        },
+        {
+          "option_text": "Indian Ocean south of Kanyakumari",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "MUMBAI HIGH (earlier called BOMBAY HIGH) — India's LARGEST OIL FIELD + offshore giant in the Arabian Sea, ~160 km west off Mumbai coast. DISCOVERED: 19 Feb 1974 by ONGC's jack-up rig SAGAR SAMRAT (leased from USSR); first oil flowed 21 May 1976. OWNED + operated by ONGC (Oil + Natural Gas Corporation, est. 14 Aug 1956 as a Commission, became Corporation 1994). COMPOSITION: (a) Mumbai High North + Mumbai High South (carbonate reservoirs, Miocene era); (b) linked to smaller fields — Neelam, Heera, Bassein, B-193 (all Bombay Offshore Basin). Total offshore oil: ~200+ platforms. PEAK PRODUCTION: ~22 MT/yr in 1990s. Today declining; ~10-12 MT/yr. Still accounts for ~40% of India's domestic crude. DISASTER: MUMBAI HIGH NORTH FIRE on 27 July 2005 — fire on Bombay High North platform killed 22; platform destroyed; set back production. OTHER INDIAN OIL FIELDS: (1) ONSHORE — ASSAM (Digboi est. 1889 — India's oldest oil field; Naharkatiya, Moran, Rudrasagar; Numaligarh refinery), GUJARAT (Ankleshwar, Kalol, Lunej — Cambay basin), RAJASTHAN (Barmer — Mangala field, discovered 2004 by Cairn, now Vedanta). (2) OFFSHORE — MUMBAI HIGH, Krishna-Godavari basin (KG-D6 block of Reliance — discovered 2002; disputed/declining gas), Cauvery basin (TN), Bengal basin. REFINERIES: India has 23 — Jamnagar (Reliance, world's largest complex — ~70 MT/yr), IOCL (Mathura, Barauni, Haldia, Panipat, Gujarat), BPCL, HPCL. INDIA imports ~85% of crude — world's 3rd largest oil importer (after China + US). MAJOR SUPPLIERS: Iraq, Saudi Arabia, UAE, Russia (post-2022, discounted due to Ukraine war), USA, Nigeria. SPR (Strategic Petroleum Reserve): Visakhapatnam, Mangaluru, Padur — ~5 MT crude, ~10 days of imports backup (adding more). REFINERY MAJORS of India: IOCL (largest public), RELIANCE (largest private), BPCL, HPCL.",
+      "explanation": "MUMBAI HIGH (earlier called BOMBAY HIGH) — India's LARGEST OIL FIELD + offshore giant in the Arabian Sea, ~160 km west off Mumbai coast. DISCOVERED: 19 Feb 1974 by ONGC's jack-up rig SAGAR SAMRAT (leased from USSR); first oil flowed 21 May 1976. OWNED + operated by ONGC (Oil + Natural Gas Corporation, est. 14 Aug 1956 as a Commission, became Corporation 1994). COMPOSITION: (a) Mumbai High North + Mumbai High South (carbonate reservoirs, Miocene era); (b) linked to smaller fields — Neelam, Heera, Bassein, B-193 (all Bombay Offshore Basin). Total offshore oil: ~200+ platforms. PEAK PRODUCTION: ~22 MT/yr in 1990s. Today declining; ~10-12 MT/yr. Still accounts for ~40% of India's domestic crude. DISASTER: MUMBAI HIGH NORTH FIRE on 27 July 2005 — fire on Bombay High North platform killed 22; platform destroyed; set back production. OTHER INDIAN OIL FIELDS: (1) ONSHORE — ASSAM (Digboi est. 1889 — India's oldest oil field; Naharkatiya, Moran, Rudrasagar; Numaligarh refinery), GUJARAT (Ankleshwar, Kalol, Lunej — Cambay basin), RAJASTHAN (Barmer — Mangala field, discovered 2004 by Cairn, now Vedanta). (2) OFFSHORE — MUMBAI HIGH, Krishna-Godavari basin (KG-D6 block of Reliance — discovered 2002; disputed/declining gas), Cauvery basin (TN), Bengal basin. REFINERIES: India has 23 — Jamnagar (Reliance, world's largest complex — ~70 MT/yr), IOCL (Mathura, Barauni, Haldia, Panipat, Gujarat), BPCL, HPCL. INDIA imports ~85% of crude — world's 3rd largest oil importer (after China + US). MAJOR SUPPLIERS: Iraq, Saudi Arabia, UAE, Russia (post-2022, discounted due to Ukraine war), USA, Nigeria. SPR (Strategic Petroleum Reserve): Visakhapatnam, Mangaluru, Padur — ~5 MT crude, ~10 days of imports backup (adding more). REFINERY MAJORS of India: IOCL (largest public), RELIANCE (largest private), BPCL, HPCL. discovered 1974 by ONGC + operational from 1976; ~70% of India's domestic crude oil historically.",
       "subject": "Geography",
       "topic": "Indian Minerals & Mining",
       "topic_code": "GEO_IND_MINERALS",
@@ -66,18 +118,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-min-01",
       "generated_at": "2026-04-21T02:50:00+00:00",
-      "id": "sgk_GEO_IND_MINERALS_00003"
+      "id": "sgk_GEO_IND_MINERALS_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ARABIAN SEA, ~160 km off Mumbai coast; discovered 1974 by ONGC + operational from 1976; ~70% of India's domestic crude oil historically",
+          "now": "ARABIAN SEA, ~160 km off Mumbai coast",
+          "moved_to_explanation": "discovered 1974 by ONGC + operational from 1976; ~70% of India's domestic crude oil historically"
+        }
+      ]
     },
     {
       "stem": "The KOLAR GOLD FIELDS (now closed) were located in:",
       "options": [
-        {"option_text": "Andhra Pradesh", "is_correct": false},
-        {"option_text": "KARNATAKA — ~100 km east of Bangalore; operated 1880-2001; once world's 2nd DEEPEST mine (~3.2 km); closed due to depletion + losses", "is_correct": true},
-        {"option_text": "Rajasthan", "is_correct": false},
-        {"option_text": "Jharkhand", "is_correct": false}
+        {
+          "option_text": "Andhra Pradesh",
+          "is_correct": false
+        },
+        {
+          "option_text": "KARNATAKA",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rajasthan",
+          "is_correct": false
+        },
+        {
+          "option_text": "Jharkhand",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "KOLAR GOLD FIELDS (KGF) — located in Kolar district, KARNATAKA, ~100 km east of Bengaluru (Bangalore). Operated 1880 (by John Taylor + Sons, British) — 2001 when BHARAT GOLD MINES LTD (BGML, successor PSU) closed them due to depletion + losses. PEAK: once among world's 2nd DEEPEST mines (~3.2 km deep at Champion Reef; deepest was South Africa's Mponeng at 4 km). KGF's 'town' was a company town, often called 'Mini England' due to British architecture + English-speaking workforce. OVER ~120 YEARS: produced ~800 TONNES of gold; a legendary mining community. MOVIE: 'KGF' (2018-22) the Kannada/PAN-Indian film franchise directed by PRASHANTH NEEL starring YASH — based on KGF lore (fictional). After closure, the town lost jobs + population; many went to Chennai, Bangalore. CURRENT gold mining in INDIA (reduced): (1) HUTTI (Raichur, Karnataka) — ONLY significant gold mine operational today; run by Hutti Gold Mines Ltd (Karnataka PSU). ~2-3 tonnes/yr. (2) RAMAGIRI (Anantapur, AP) — small. (3) SONBHADRA (UP) — recent reports of reserves. (4) LAVA KA BAAS (Rajasthan), Bundelkhand (MP). India PRODUCES only ~1.5-2 tonnes/yr but CONSUMES ~700-900 tonnes/yr (world's LARGEST gold consumer along with China) — mostly IMPORTS. PROCESSING: MMTC-PAMP in Mewat (Haryana) refines imported doré + recycles old gold. SOVEREIGN GOLD BONDS (2015) launched to reduce gold import demand. OTHER LINKED minerals: SILVER in India — mostly by-product of lead-zinc mining (Hindustan Zinc's Zawar/Rampura Agucha, Rajasthan); world's largest silver mine in Mexico (Fresnillo). GOLD RESERVES of RBI: ~800+ tonnes (Jun 2024); used for currency management.",
+      "explanation": "KOLAR GOLD FIELDS (KGF) — located in Kolar district, KARNATAKA, ~100 km east of Bengaluru (Bangalore). Operated 1880 (by John Taylor + Sons, British) — 2001 when BHARAT GOLD MINES LTD (BGML, successor PSU) closed them due to depletion + losses. PEAK: once among world's 2nd DEEPEST mines (~3.2 km deep at Champion Reef; deepest was South Africa's Mponeng at 4 km). KGF's 'town' was a company town, often called 'Mini England' due to British architecture + English-speaking workforce. OVER ~120 YEARS: produced ~800 TONNES of gold; a legendary mining community. MOVIE: 'KGF' (2018-22) the Kannada/PAN-Indian film franchise directed by PRASHANTH NEEL starring YASH — based on KGF lore (fictional). After closure, the town lost jobs + population; many went to Chennai, Bangalore. CURRENT gold mining in INDIA (reduced): (1) HUTTI (Raichur, Karnataka) — ONLY significant gold mine operational today; run by Hutti Gold Mines Ltd (Karnataka PSU). ~2-3 tonnes/yr. (2) RAMAGIRI (Anantapur, AP) — small. (3) SONBHADRA (UP) — recent reports of reserves. (4) LAVA KA BAAS (Rajasthan), Bundelkhand (MP). India PRODUCES only ~1.5-2 tonnes/yr but CONSUMES ~700-900 tonnes/yr (world's LARGEST gold consumer along with China) — mostly IMPORTS. PROCESSING: MMTC-PAMP in Mewat (Haryana) refines imported doré + recycles old gold. SOVEREIGN GOLD BONDS (2015) launched to reduce gold import demand. OTHER LINKED minerals: SILVER in India — mostly by-product of lead-zinc mining (Hindustan Zinc's Zawar/Rampura Agucha, Rajasthan); world's largest silver mine in Mexico (Fresnillo). GOLD RESERVES of RBI: ~800+ tonnes (Jun 2024); used for currency management. ~100 km east of Bangalore; operated 1880-2001; once world's 2nd DEEPEST mine (~3.2 km); closed due to depletion + losses.",
       "subject": "Geography",
       "topic": "Indian Minerals & Mining",
       "topic_code": "GEO_IND_MINERALS",
@@ -87,18 +159,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-min-01",
       "generated_at": "2026-04-21T02:50:00+00:00",
-      "id": "sgk_GEO_IND_MINERALS_00004"
+      "id": "sgk_GEO_IND_MINERALS_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "KARNATAKA — ~100 km east of Bangalore; operated 1880-2001; once world's 2nd DEEPEST mine (~3.2 km); closed due to depletion + losses",
+          "now": "KARNATAKA",
+          "moved_to_explanation": "~100 km east of Bangalore; operated 1880-2001; once world's 2nd DEEPEST mine (~3.2 km); closed due to depletion + losses"
+        }
+      ]
     },
     {
       "stem": "Which state is India's LARGEST producer of BAUXITE (aluminium ore)?",
       "options": [
-        {"option_text": "Madhya Pradesh", "is_correct": false},
-        {"option_text": "ODISHA — ~50% of national bauxite output; Koraput + Rayagada + Kalahandi belt; NALCO's Panchpatmali mine largest", "is_correct": true},
-        {"option_text": "Kerala", "is_correct": false},
-        {"option_text": "Assam", "is_correct": false}
+        {
+          "option_text": "Madhya Pradesh",
+          "is_correct": false
+        },
+        {
+          "option_text": "ODISHA",
+          "is_correct": true
+        },
+        {
+          "option_text": "Kerala",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assam",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "BAUXITE — primary ore of ALUMINIUM (Al₂O₃ + hydrates + impurities). India has world's 5th LARGEST bauxite reserves (~650 MT). STATE-WISE LARGEST PRODUCERS: (1) ODISHA ~50% — Koraput district (PANCHPATMALI mines of NALCO, world's largest Alumina-Aluminium complex). Also Rayagada, Kalahandi (NIYAMGIRI hills — Dongria Kondh tribe's struggle against Vedanta's mining plans, famous environmental case; rejected in 2013 after Gram Sabha vote — UN/ICCPR hailed the tribal veto). (2) GUJARAT ~15% — Kutch + Jamnagar-Devbhumi-Dwarka region. (3) JHARKHAND ~10% — Gumla, Lohardaga; Hindalco mines. (4) MAHARASHTRA ~8% — Kolhapur, Sindhudurg. (5) Madhya Pradesh — Balaghat, Mandla; minor. ALUMINIUM PRODUCTION (India = 2nd largest producer globally): NALCO (National Aluminium, PSU, Odisha) — integrated miner + smelter (Damanjodi refinery, Angul smelter, Panchpatmali mines); HINDALCO (Aditya Birla group) — largest private + global (after Novelis acquisition); VEDANTA / BALCO (Korba) + VEDANTA Jharsuguda (smelter). MAJOR ALUMINIUM SMELTERS: Hirakud, Renukoot (Hindalco UP), Mettur (Vedanta TN), Angul (NALCO), Jharsuguda (Vedanta), Korba (BALCO). BAYER + HALL-HÉROULT PROCESS: (1) bauxite → alumina via Bayer process (using NaOH); (2) alumina → aluminium via electrolysis (Hall-Héroult, 1886) — ENERGY-intensive (13-15 kWh/kg Al) — smelters usually co-located with cheap power. Hence coal-rich Odisha + Chhattisgarh + Jharkhand. USES of Al: Al foil, beverage cans, aircraft fuselages, rail coaches, power cables, window frames, automobiles (lightweighting). 2nd most abundant metal in earth's crust (7.5% — Fe 1st, Al 2nd, Ca 3rd). Can be 100% RECYCLED without loss of quality; recycling saves 95% energy.",
+      "explanation": "BAUXITE — primary ore of ALUMINIUM (Al₂O₃ + hydrates + impurities). India has world's 5th LARGEST bauxite reserves (~650 MT). STATE-WISE LARGEST PRODUCERS: (1) ODISHA ~50% — Koraput district (PANCHPATMALI mines of NALCO, world's largest Alumina-Aluminium complex). Also Rayagada, Kalahandi (NIYAMGIRI hills — Dongria Kondh tribe's struggle against Vedanta's mining plans, famous environmental case; rejected in 2013 after Gram Sabha vote — UN/ICCPR hailed the tribal veto). (2) GUJARAT ~15% — Kutch + Jamnagar-Devbhumi-Dwarka region. (3) JHARKHAND ~10% — Gumla, Lohardaga; Hindalco mines. (4) MAHARASHTRA ~8% — Kolhapur, Sindhudurg. (5) Madhya Pradesh — Balaghat, Mandla; minor. ALUMINIUM PRODUCTION (India = 2nd largest producer globally): NALCO (National Aluminium, PSU, Odisha) — integrated miner + smelter (Damanjodi refinery, Angul smelter, Panchpatmali mines); HINDALCO (Aditya Birla group) — largest private + global (after Novelis acquisition); VEDANTA / BALCO (Korba) + VEDANTA Jharsuguda (smelter). MAJOR ALUMINIUM SMELTERS: Hirakud, Renukoot (Hindalco UP), Mettur (Vedanta TN), Angul (NALCO), Jharsuguda (Vedanta), Korba (BALCO). BAYER + HALL-HÉROULT PROCESS: (1) bauxite → alumina via Bayer process (using NaOH); (2) alumina → aluminium via electrolysis (Hall-Héroult, 1886) — ENERGY-intensive (13-15 kWh/kg Al) — smelters usually co-located with cheap power. Hence coal-rich Odisha + Chhattisgarh + Jharkhand. USES of Al: Al foil, beverage cans, aircraft fuselages, rail coaches, power cables, window frames, automobiles (lightweighting). 2nd most abundant metal in earth's crust (7.5% — Fe 1st, Al 2nd, Ca 3rd). Can be 100% RECYCLED without loss of quality; recycling saves 95% energy. ~50% of national bauxite output; Koraput + Rayagada + Kalahandi belt; NALCO's Panchpatmali mine largest.",
       "subject": "Geography",
       "topic": "Indian Minerals & Mining",
       "topic_code": "GEO_IND_MINERALS",
@@ -108,18 +200,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-min-01",
       "generated_at": "2026-04-21T02:50:00+00:00",
-      "id": "sgk_GEO_IND_MINERALS_00005"
+      "id": "sgk_GEO_IND_MINERALS_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ODISHA — ~50% of national bauxite output; Koraput + Rayagada + Kalahandi belt; NALCO's Panchpatmali mine largest",
+          "now": "ODISHA",
+          "moved_to_explanation": "~50% of national bauxite output; Koraput + Rayagada + Kalahandi belt; NALCO's Panchpatmali mine largest"
+        }
+      ]
     },
     {
       "stem": "India's ONLY TIN-producing state is:",
       "options": [
-        {"option_text": "Bihar", "is_correct": false},
-        {"option_text": "CHHATTISGARH — DANTEWADA district (Bailadila-Bastar region) is India's only tin producer", "is_correct": true},
-        {"option_text": "Kerala", "is_correct": false},
-        {"option_text": "Uttarakhand", "is_correct": false}
+        {
+          "option_text": "Bihar",
+          "is_correct": false
+        },
+        {
+          "option_text": "CHHATTISGARH",
+          "is_correct": true
+        },
+        {
+          "option_text": "Kerala",
+          "is_correct": false
+        },
+        {
+          "option_text": "Uttarakhand",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "TIN (Sn) in INDIA — extremely SCARCE; India relies on imports for ~90%+ of tin needs. ONLY producing state: CHHATTISGARH — DANTEWADA district (BASTAR region). Mineral: CASSITERITE (SnO₂). Producer: HINDUSTAN ZINC (Vedanta) — small-scale operations. BIHAR earlier claims + Jharkhand potential. USES of tin: (a) TINPLATE (tin-coated steel) — cans, soldering; (b) BRONZE (Cu + Sn alloy) — classical alloy; (c) PEWTER (Sn + Sb + Cu). Industrial + consumer goods. WORLD's major tin producers: China, Indonesia, Myanmar, Peru, Bolivia, Malaysia. OTHER RARE / STRATEGIC MINERALS in INDIA: (1) URANIUM — JADUGUDA (Jharkhand — India's only operating uranium mine by UCIL); also Tummalapalle (AP), Turamdih (Jharkhand). Reserves in Meghalaya + Karnataka. (2) THORIUM — Kerala (Manavalakurichi) + Odisha (Chhatrapur) — MONAZITE sands. India has 25% world's thorium reserves → 3-STAGE NUCLEAR program (Bhabha): U-238 → Pu-239 → Th-232 for reactors. (3) RARE EARTH ELEMENTS (REEs) — Kerala + AP beach sands; IREL (Indian Rare Earths Ltd) PSU. China dominates globally. (4) LITHIUM — SALAL-HAIMANA block in REASI, J&K — 5.9 MT inferred REE resources found 2023 (significant for EV batteries). Also explored in Karnataka + Andhra Pradesh. Demand skyrocketed with EV + battery transition. Argentina, Chile, Australia, Bolivia are 'Lithium Triangle' giants. (5) COBALT — explored in Odisha, Jharkhand; also trace in copper ores. (6) GRAPHITE — ANDHRA PRADESH + ODISHA + Jharkhand + Tamil Nadu; India is 4th/5th largest producer (after China, Brazil, Mozambique, Madagascar). (7) MICA — JHARKHAND (Koderma — 'Mica Capital of World' historically), Rajasthan, AP; India is world's 2nd largest producer of mica. 'KOR' metals discovery: India's critical minerals list (2023) notifies 30 critical minerals — lithium, REE, cobalt, graphite, germanium, indium, niobium etc.",
+      "explanation": "TIN (Sn) in INDIA — extremely SCARCE; India relies on imports for ~90%+ of tin needs. ONLY producing state: CHHATTISGARH — DANTEWADA district (BASTAR region). Mineral: CASSITERITE (SnO₂). Producer: HINDUSTAN ZINC (Vedanta) — small-scale operations. BIHAR earlier claims + Jharkhand potential. USES of tin: (a) TINPLATE (tin-coated steel) — cans, soldering; (b) BRONZE (Cu + Sn alloy) — classical alloy; (c) PEWTER (Sn + Sb + Cu). Industrial + consumer goods. WORLD's major tin producers: China, Indonesia, Myanmar, Peru, Bolivia, Malaysia. OTHER RARE / STRATEGIC MINERALS in INDIA: (1) URANIUM — JADUGUDA (Jharkhand — India's only operating uranium mine by UCIL); also Tummalapalle (AP), Turamdih (Jharkhand). Reserves in Meghalaya + Karnataka. (2) THORIUM — Kerala (Manavalakurichi) + Odisha (Chhatrapur) — MONAZITE sands. India has 25% world's thorium reserves → 3-STAGE NUCLEAR program (Bhabha): U-238 → Pu-239 → Th-232 for reactors. (3) RARE EARTH ELEMENTS (REEs) — Kerala + AP beach sands; IREL (Indian Rare Earths Ltd) PSU. China dominates globally. (4) LITHIUM — SALAL-HAIMANA block in REASI, J&K — 5.9 MT inferred REE resources found 2023 (significant for EV batteries). Also explored in Karnataka + Andhra Pradesh. Demand skyrocketed with EV + battery transition. Argentina, Chile, Australia, Bolivia are 'Lithium Triangle' giants. (5) COBALT — explored in Odisha, Jharkhand; also trace in copper ores. (6) GRAPHITE — ANDHRA PRADESH + ODISHA + Jharkhand + Tamil Nadu; India is 4th/5th largest producer (after China, Brazil, Mozambique, Madagascar). (7) MICA — JHARKHAND (Koderma — 'Mica Capital of World' historically), Rajasthan, AP; India is world's 2nd largest producer of mica. 'KOR' metals discovery: India's critical minerals list (2023) notifies 30 critical minerals — lithium, REE, cobalt, graphite, germanium, indium, niobium etc. DANTEWADA district (Bailadila-Bastar region) is India's only tin producer.",
       "subject": "Geography",
       "topic": "Indian Minerals & Mining",
       "topic_code": "GEO_IND_MINERALS",
@@ -129,15 +241,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-min-01",
       "generated_at": "2026-04-21T02:50:00+00:00",
-      "id": "sgk_GEO_IND_MINERALS_00006"
+      "id": "sgk_GEO_IND_MINERALS_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "CHHATTISGARH — DANTEWADA district (Bailadila-Bastar region) is India's only tin producer",
+          "now": "CHHATTISGARH",
+          "moved_to_explanation": "DANTEWADA district (Bailadila-Bastar region) is India's only tin producer"
+        }
+      ]
     },
     {
       "stem": "Which of these is not a MANGANESE-producing state of India?",
       "options": [
-        {"option_text": "Madhya Pradesh (Balaghat)", "is_correct": false},
-        {"option_text": "Maharashtra (Nagpur-Bhandara)", "is_correct": false},
-        {"option_text": "Odisha (Sundargarh-Keonjhar)", "is_correct": false},
-        {"option_text": "PUNJAB — has no significant manganese deposits", "is_correct": true}
+        {
+          "option_text": "Madhya Pradesh (Balaghat)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Maharashtra (Nagpur-Bhandara)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Odisha (Sundargarh-Keonjhar)",
+          "is_correct": false
+        },
+        {
+          "option_text": "PUNJAB — has no significant manganese deposits",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "explanation": "MANGANESE in INDIA — 7th largest producer globally. MAIN states: (1) MADHYA PRADESH ~34% — BALAGHAT district (largest manganese mine in India, MOIL-operated). (2) MAHARASHTRA ~25% — NAGPUR-BHANDARA-GONDIA belt (MOIL's underground Dongri Buzurg mine). (3) ODISHA ~20% — SUNDARGARH-KEONJHAR-KORAPUT. (4) KARNATAKA ~10% — North Kanara, Shimoga, Chitradurga, Bellary. (5) ANDHRA PRADESH — Srikakulam, Vizianagaram. (6) JHARKHAND — Singhbhum. (7) RAJASTHAN — Banswara. Also Gujarat + Telangana. MOIL LTD (Manganese Ore India Ltd, Nagpur HQ) — public sector, 45% of India's production. USES of MANGANESE: (1) STEEL making — 90% of world's manganese goes into steelmaking (ferromanganese, silicomanganese alloys) to improve strength, hardness, resistance to wear, workability. Essential in rails, construction, auto-body. (2) DRY CELL BATTERIES — MnO₂ (manganese dioxide) as cathode in Zn-C batteries. (3) ALUMINIUM alloys — manganese improves corrosion resistance (aluminium cans, aircraft). (4) MMT (methylcyclopentadienyl manganese tricarbonyl) — petrol octane enhancer (gasoline additive, partially replaced lead; controversial in US). PUNJAB — DOES NOT HAVE significant manganese deposits. Same for most Indo-Gangetic plain states (Haryana, Punjab, UP plains) — because they're on ALLUVIAL soils (not the Peninsular Plateau where most metallic minerals of India are concentrated). OTHER metallic minerals largely absent in Gangetic plains: iron ore, copper, bauxite, chromite. Punjab has SAND + GRAVEL (important for construction), gypsum (a bit), + some limestone. INDIA's NON-METALLIC minerals: LIMESTONE (Rajasthan, MP, Chhattisgarh, Karnataka, AP, Gujarat — ~220 MT/yr); MICA (Jharkhand, Rajasthan, AP); DOLOMITE (Chhattisgarh); GYPSUM (Rajasthan, J&K, Gujarat — Jaisalmer, Bikaner); ASBESTOS (Andhra Pradesh, Rajasthan); SALT (Gujarat — Kutch, Rann; Rajasthan — Sambhar Lake; TN — Marakkanam); DIAMONDS (Panna, MP — only).",
@@ -155,13 +287,25 @@
     {
       "stem": "The only DIAMOND-producing mine still active in India is in:",
       "options": [
-        {"option_text": "Golconda, Hyderabad", "is_correct": false},
-        {"option_text": "PANNA, Madhya Pradesh — Majhgawan mine operated by NMDC; produces ~30,000 carats annually", "is_correct": true},
-        {"option_text": "Jaipur, Rajasthan", "is_correct": false},
-        {"option_text": "Surat, Gujarat", "is_correct": false}
+        {
+          "option_text": "Golconda, Hyderabad",
+          "is_correct": false
+        },
+        {
+          "option_text": "PANNA, Madhya Pradesh",
+          "is_correct": true
+        },
+        {
+          "option_text": "Jaipur, Rajasthan",
+          "is_correct": false
+        },
+        {
+          "option_text": "Surat, Gujarat",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "DIAMONDS in INDIA — HISTORIC global leader (until South Africa + Russia + Australia discoveries of 19th-20th c.). Ancient sources: (1) GOLCONDA kingdom (around Hyderabad) — produced legendary diamonds from mines along the Krishna River: KOH-I-NOOR ('Mountain of Light', 105.6 carats now in British Crown, part of Queen Mother's Crown; India's ongoing repatriation demand), HOPE DIAMOND (45.5 carats, dark blue, Smithsonian DC), DARYA-I-NOOR ('Sea of Light', Iranian crown jewels), REGENT (140 carats, Louvre Paris), ORLOV (189 carats, Kremlin) — many were found at Kollur mines Andhra. (2) In MEDIEVAL times, Golconda was WORLD'S ONLY diamond source until 18th c. Today only OPERATING diamond mine is at PANNA, Madhya Pradesh — MAJHGAWAN mine (kimberlite pipe, discovered 1960s), operated by NMDC (Nat Mineral Dev Corp, PSU). Produces ~30,000-40,000 carats per year. Small volume globally (world produces ~130 million carats/year). Other Panna-area mines private via auction. INDIA is now world's LARGEST CUTTER + POLISHER + EXPORTER OF DIAMONDS — not PRODUCER. ~90% of world's cut diamonds are processed in INDIA — mainly SURAT, Gujarat (~500,000 workers, 'Diamond City'; Surat diamond bourse inaugurated Dec 2023 — world's largest office complex). Indian POLISHERS import ROUGH diamonds from De Beers, Alrosa, Rio Tinto — cut them into brilliant form + export as POLISHED diamonds worth ~$22-25B annually. FAMOUS INDIAN diamond merchants: Jatin Mehta (Winsome), Nirav Modi (fled), Mehul Choksi (Gitanjali, fled), Savji Dholakia (Hari Krishna Exports, Surat — famous for giving employees cars + homes as Diwali bonus). Recent shift towards LAB-GROWN DIAMONDS (CVD-process) — India also emerging player. Natural diamond prices dropping 30-40% since 2022 due to LGD competition.",
+      "explanation": "DIAMONDS in INDIA — HISTORIC global leader (until South Africa + Russia + Australia discoveries of 19th-20th c.). Ancient sources: (1) GOLCONDA kingdom (around Hyderabad) — produced legendary diamonds from mines along the Krishna River: KOH-I-NOOR ('Mountain of Light', 105.6 carats now in British Crown, part of Queen Mother's Crown; India's ongoing repatriation demand), HOPE DIAMOND (45.5 carats, dark blue, Smithsonian DC), DARYA-I-NOOR ('Sea of Light', Iranian crown jewels), REGENT (140 carats, Louvre Paris), ORLOV (189 carats, Kremlin) — many were found at Kollur mines Andhra. (2) In MEDIEVAL times, Golconda was WORLD'S ONLY diamond source until 18th c. Today only OPERATING diamond mine is at PANNA, Madhya Pradesh — MAJHGAWAN mine (kimberlite pipe, discovered 1960s), operated by NMDC (Nat Mineral Dev Corp, PSU). Produces ~30,000-40,000 carats per year. Small volume globally (world produces ~130 million carats/year). Other Panna-area mines private via auction. INDIA is now world's LARGEST CUTTER + POLISHER + EXPORTER OF DIAMONDS — not PRODUCER. ~90% of world's cut diamonds are processed in INDIA — mainly SURAT, Gujarat (~500,000 workers, 'Diamond City'; Surat diamond bourse inaugurated Dec 2023 — world's largest office complex). Indian POLISHERS import ROUGH diamonds from De Beers, Alrosa, Rio Tinto — cut them into brilliant form + export as POLISHED diamonds worth ~$22-25B annually. FAMOUS INDIAN diamond merchants: Jatin Mehta (Winsome), Nirav Modi (fled), Mehul Choksi (Gitanjali, fled), Savji Dholakia (Hari Krishna Exports, Surat — famous for giving employees cars + homes as Diwali bonus). Recent shift towards LAB-GROWN DIAMONDS (CVD-process) — India also emerging player. Natural diamond prices dropping 30-40% since 2022 due to LGD competition. Majhgawan mine operated by NMDC; produces ~30,000 carats annually.",
       "subject": "Geography",
       "topic": "Indian Minerals & Mining",
       "topic_code": "GEO_IND_MINERALS",
@@ -171,15 +315,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-min-01",
       "generated_at": "2026-04-21T02:50:00+00:00",
-      "id": "sgk_GEO_IND_MINERALS_00008"
+      "id": "sgk_GEO_IND_MINERALS_00008",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "PANNA, Madhya Pradesh — Majhgawan mine operated by NMDC; produces ~30,000 carats annually",
+          "now": "PANNA, Madhya Pradesh",
+          "moved_to_explanation": "Majhgawan mine operated by NMDC; produces ~30,000 carats annually"
+        }
+      ]
     },
     {
       "stem": "NMDC, INDIA's largest IRON ORE producing company, is headquartered in:",
       "options": [
-        {"option_text": "Bhubaneswar", "is_correct": false},
-        {"option_text": "HYDERABAD (Telangana) — National Mineral Development Corporation, PSU; produces ~45 MT iron ore/yr; has stakes in diamonds (Panna) + limestone", "is_correct": true},
-        {"option_text": "Raipur", "is_correct": false},
-        {"option_text": "Ranchi", "is_correct": false}
+        {
+          "option_text": "Bhubaneswar",
+          "is_correct": false
+        },
+        {
+          "option_text": "HYDERABAD (Telangana)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Raipur",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ranchi",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "NMDC (NATIONAL MINERAL DEVELOPMENT CORPORATION) — India's largest iron-ore producer. ESTABLISHED: 1958. HEADQUARTERS: HYDERABAD (Telangana). Navratna CPSE (Central Public Sector Enterprise). Operates 4 integrated production facilities: BAILADILA sectors in CHHATTISGARH (Kirandul, Bacheli — ~35 MT/yr combined) + DONIMALAI in KARNATAKA. Total iron ore production: ~45 MT/yr — largest by tonnage in India. Also produces DIAMONDS (Panna, MP — Majhgawan mine, India's ONLY operating diamond mine), phosphorite, limestone, dolomite. Constructed NMDC STEEL LTD (Nagarnar, Chhattisgarh 3 MTPA steel plant, demerged 2022, being privatised). OTHER MAJOR PSU MINERS: (1) COAL INDIA LIMITED (CIL) — Kolkata HQ; world's largest coal miner. 8 subsidiaries + CMPDIL research. Listed 2010, largest IPO then. (2) ONGC — Delhi/Dehradun HQ; oil + gas. (3) SAIL — Delhi HQ; integrated steel. (4) NALCO — Bhubaneswar HQ; aluminium. (5) HINDUSTAN COPPER (HCL) — Kolkata HQ; copper ore + smelting. Main mines: Khetri (Rajasthan), Malanjkhand (MP), Singhbhum (Jharkhand). (6) HINDUSTAN ZINC (Vedanta) — Udaipur HQ; world's 2nd largest zinc miner. Zawar + Rampura Agucha (Rajasthan). (7) URANIUM CORP (UCIL) — Jaduguda HQ; uranium. (8) MOIL — Nagpur HQ; manganese. (9) ECL, BHEL, REC, NTPC in energy. INDIAN MINING CONTRIBUTES ~2.5% of GDP; employment ~1 million direct. REGULATED by: MINISTRY OF MINES, MINES + MINERALS (DEVELOPMENT + REGULATION) ACT (MMDR Act 1957), AMENDMENTS 2015 (auction-based allocation) + 2021 + 2023 (private sector opening for critical minerals + atomic). Indian Bureau of Mines (IBM, Nagpur) regulates. STATE Mines + Geology departments allocate minor minerals.",
@@ -192,15 +356,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-min-01",
       "generated_at": "2026-04-21T02:50:00+00:00",
-      "id": "sgk_GEO_IND_MINERALS_00009"
+      "id": "sgk_GEO_IND_MINERALS_00009",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "HYDERABAD (Telangana) — National Mineral Development Corporation, PSU; produces ~45 MT iron ore/yr; has stakes in diamonds (Panna) + limestone",
+          "now": "HYDERABAD (Telangana)",
+          "moved_to_explanation": "National Mineral Development Corporation, PSU; produces ~45 MT iron ore/yr; has stakes in diamonds (Panna) + limestone"
+        }
+      ]
     },
     {
       "stem": "JADUGUDA, India's only operating URANIUM mine, is in:",
       "options": [
-        {"option_text": "Jharkhand (Singhbhum)", "is_correct": true},
-        {"option_text": "Andhra Pradesh", "is_correct": false},
-        {"option_text": "Meghalaya", "is_correct": false},
-        {"option_text": "Karnataka", "is_correct": false}
+        {
+          "option_text": "Jharkhand (Singhbhum)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Andhra Pradesh",
+          "is_correct": false
+        },
+        {
+          "option_text": "Meghalaya",
+          "is_correct": false
+        },
+        {
+          "option_text": "Karnataka",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "JADUGUDA — India's FIRST + LONGEST-operating URANIUM MINE. LOCATION: Jaduguda (Jadugoda) in EAST SINGHBHUM district of JHARKHAND, ~35 km from Jamshedpur. MINING started 1967 by UCIL (URANIUM CORPORATION of INDIA LTD — PSU under Dept of Atomic Energy, DAE). Additional mines in the Singhbhum region: Bhatin, Narwapahar, Turamdih, Bagjata, Banduhurang, Mohuldih, Kamar PC. Grade ~0.06% U₃O₈ (low compared to world avg). Uranium from Jaduguda goes to the mill at Jaduguda → yellowcake (U₃O₈) → to Hyderabad's Nuclear Fuel Complex (NFC) for enrichment + fuel fabrication → ultimately to nuclear power plants. ENVIRONMENTAL + HEALTH CONCERNS: villages around Jaduguda have reported higher rates of birth defects + cancers — extensively documented by journalists + NGO studies. UCIL + DAE contest the link. Tailings ponds. TUMMALAPALLE, ANDHRA PRADESH — India's LARGEST uranium deposit (sedimentary, ~1.5 lakh tonnes U₃O₈; massive reserve by world standards). Operational since 2012. Processing plant runs but grade is low (~0.05%). MEGHALAYA — exploration deposits (Domiasiat); tribal opposition blocked mining. Karnataka + Chhattisgarh + Rajasthan — exploration. RAJASTHAN's Rohil deposit (Sikar district) found ~2007. India's total uranium reserves: ~2.7 lakh tonnes (as of 2024 DAE estimates). INDIA IS NOT signatory to NPT (Non-Proliferation Treaty); until 2008 INDO-US NUCLEAR DEAL (123 agreement + NSG waiver), India couldn't import uranium — forced reliance on domestic Jaduguda. Post-2008 — India signed civil nuclear cooperation with USA, France, Russia, Kazakhstan, Mongolia, Canada, Australia, Argentina, Namibia — now imports uranium from KAZAKHSTAN (main), France, Russia, Canada, Australia. India's 3-STAGE NUCLEAR PROGRAMME (Bhabha Plan): (1) Pressurised Heavy Water Reactors (PHWRs) on natural U — most current reactors; (2) Fast Breeder Reactors on Pu (from spent fuel) — Kalpakkam PFBR; (3) Thorium reactors using U-233 (from Th-232 converted in FBRs) — long-term self-sufficiency via India's huge thorium reserves.",

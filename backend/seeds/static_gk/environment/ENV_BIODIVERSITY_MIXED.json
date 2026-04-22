@@ -46,7 +46,7 @@
           "is_correct": false
         },
         {
-          "option_text": "Jim Corbett (originally Hailey National Park)",
+          "option_text": "Jim Corbett",
           "is_correct": true
         },
         {
@@ -59,7 +59,7 @@
         }
       ],
       "correct_letter": "B",
-      "explanation": "Established 1936 as Hailey National Park (after Governor Malcolm Hailey), renamed to Jim Corbett National Park in 1957 in honour of the British-Indian hunter-turned-conservationist. Located in Nainital district, Uttarakhand.",
+      "explanation": "Established 1936 as Hailey National Park (after Governor Malcolm Hailey), renamed to Jim Corbett National Park in 1957 in honour of the British-Indian hunter-turned-conservationist. Located in Nainital district, Uttarakhand. originally Hailey National Park.",
       "subject": "Environment",
       "topic": "Biodiversity & Wildlife — mixed tiers",
       "topic_code": "ENV_BIODIVERSITY_MIXED",
@@ -69,7 +69,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-env-bd-02",
       "generated_at": "2026-04-22T00:20:00+00:00",
-      "id": "sgk_ENV_BIODIVERSITY_MIXED_00002"
+      "id": "sgk_ENV_BIODIVERSITY_MIXED_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Jim Corbett (originally Hailey National Park)",
+          "now": "Jim Corbett",
+          "moved_to_explanation": "originally Hailey National Park"
+        }
+      ]
     },
     {
       "stem": "Match the national park with its CHIEF fauna. A. Kaziranga. B. Gir. C. Sundarbans. D. Keoladeo (Ghana). List-II: 1. Royal Bengal Tiger (mangrove habitat). 2. Migratory birds. 3. One-horned rhinoceros. 4. Asiatic lion.",
@@ -178,7 +186,7 @@
           "is_correct": false
         },
         {
-          "option_text": "Forest conservation (hugging trees to prevent logging)",
+          "option_text": "Forest conservation",
           "is_correct": true
         },
         {
@@ -191,7 +199,7 @@
         }
       ],
       "correct_letter": "B",
-      "explanation": "Chipko (literally 'to stick / hug') — non-violent movement in Uttarakhand (then UP), women of Reni village led by Gaura Devi in 1974 hugged trees to prevent contractor logging. Sundarlal Bahuguna + Chandi Prasad Bhatt were other leaders. Inspired global forest-conservation activism.",
+      "explanation": "Chipko (literally 'to stick / hug') — non-violent movement in Uttarakhand (then UP), women of Reni village led by Gaura Devi in 1974 hugged trees to prevent contractor logging. Sundarlal Bahuguna + Chandi Prasad Bhatt were other leaders. Inspired global forest-conservation activism. hugging trees to prevent logging.",
       "subject": "Environment",
       "topic": "Biodiversity & Wildlife — mixed tiers",
       "topic_code": "ENV_BIODIVERSITY_MIXED",
@@ -201,7 +209,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-env-bd-06",
       "generated_at": "2026-04-22T00:20:00+00:00",
-      "id": "sgk_ENV_BIODIVERSITY_MIXED_00006"
+      "id": "sgk_ENV_BIODIVERSITY_MIXED_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Forest conservation (hugging trees to prevent logging)",
+          "now": "Forest conservation",
+          "moved_to_explanation": "hugging trees to prevent logging"
+        }
+      ]
     }
   ]
 }

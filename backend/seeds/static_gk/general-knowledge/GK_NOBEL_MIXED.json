@@ -8,10 +8,22 @@
     {
       "stem": "The Nobel Prize was instituted in:",
       "options": [
-        {"option_text": "1895 (will), first awarded 1901", "is_correct": true},
-        {"option_text": "1864", "is_correct": false},
-        {"option_text": "1901, founded same year", "is_correct": false},
-        {"option_text": "1918", "is_correct": false}
+        {
+          "option_text": "1895 (will), first awarded 1901",
+          "is_correct": true
+        },
+        {
+          "option_text": "1864",
+          "is_correct": false
+        },
+        {
+          "option_text": "1901, founded same year",
+          "is_correct": false
+        },
+        {
+          "option_text": "1918",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Alfred Nobel's will signed 1895 (died 1896); first Nobel Prizes awarded 1901 in Physics, Chemistry, Physiology/Medicine, Literature, Peace. Economics (Sveriges Riksbank Prize) added in 1968, first awarded 1969.",
@@ -29,10 +41,22 @@
     {
       "stem": "The FIRST Indian to win the Nobel Prize was:",
       "options": [
-        {"option_text": "Rabindranath Tagore (Literature, 1913)", "is_correct": true},
-        {"option_text": "C. V. Raman (Physics, 1930)", "is_correct": false},
-        {"option_text": "Mother Teresa (Peace, 1979)", "is_correct": false},
-        {"option_text": "Hargobind Khorana (Medicine, 1968)", "is_correct": false}
+        {
+          "option_text": "Rabindranath Tagore (Literature, 1913)",
+          "is_correct": true
+        },
+        {
+          "option_text": "C. V. Raman (Physics, 1930)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mother Teresa (Peace, 1979)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hargobind Khorana (Medicine, 1968)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Rabindranath Tagore — Nobel in Literature, 1913, for 'Gitanjali'. Also first non-European Nobel laureate in Literature. Raman (1930) was first Indian to win in a science. Other Indian Nobels: Mother Teresa (Peace 1979), Amartya Sen (Economics 1998), Kailash Satyarthi (Peace 2014, shared with Malala), Abhijit Banerjee (Economics 2019).",
@@ -50,10 +74,22 @@
     {
       "stem": "Match the Indian NOBEL laureate with their field. A. Amartya Sen.  B. Kailash Satyarthi.  C. Venkatraman Ramakrishnan.  D. Abhijit Banerjee. List-II: 1. Economics (1998).  2. Peace (2014).  3. Chemistry (2009).  4. Economics (2019).",
       "options": [
-        {"option_text": "A-1, B-2, C-3, D-4", "is_correct": true},
-        {"option_text": "A-2, B-1, C-3, D-4", "is_correct": false},
-        {"option_text": "A-1, B-3, C-2, D-4", "is_correct": false},
-        {"option_text": "A-1, B-2, C-4, D-3", "is_correct": false}
+        {
+          "option_text": "A-1, B-2, C-3, D-4",
+          "is_correct": true
+        },
+        {
+          "option_text": "A-2, B-1, C-3, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-3, C-2, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-2, C-4, D-3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Amartya Sen — Economics 1998 (welfare economics). Satyarthi — Peace 2014 (child rights, Bachpan Bachao Andolan). Ramakrishnan — Chemistry 2009 (ribosome structure; British-American of Indian origin). Banerjee — Economics 2019 (experimental poverty research, with Esther Duflo + Michael Kremer).",
@@ -71,10 +107,22 @@
     {
       "stem": "The Nobel Prize in Physics 1930 was awarded to C. V. Raman for his work on:",
       "options": [
-        {"option_text": "Cosmic rays", "is_correct": false},
-        {"option_text": "Scattering of light (Raman Effect)", "is_correct": true},
-        {"option_text": "Photoelectric effect", "is_correct": false},
-        {"option_text": "Radioactivity", "is_correct": false}
+        {
+          "option_text": "Cosmic rays",
+          "is_correct": false
+        },
+        {
+          "option_text": "Scattering of light",
+          "is_correct": true
+        },
+        {
+          "option_text": "Photoelectric effect",
+          "is_correct": false
+        },
+        {
+          "option_text": "Radioactivity",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Raman Effect (1928) — inelastic scattering of light by molecules, providing a 'molecular fingerprint'. Announced on 28 February — now India's National Science Day. Raman became the first Asian Nobel laureate in the sciences.",
@@ -87,15 +135,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-gk-nobel-04",
       "generated_at": "2026-04-22T16:30:00+00:00",
-      "id": "sgk_GK_NOBEL_MIXED_00004"
+      "id": "sgk_GK_NOBEL_MIXED_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Scattering of light (Raman Effect)",
+          "now": "Scattering of light",
+          "moved_to_explanation": "Raman Effect"
+        }
+      ]
     },
     {
       "stem": "The Nobel Prize in ECONOMICS is NOT one of the original Nobel Prizes; it was added in:",
       "options": [
-        {"option_text": "1950", "is_correct": false},
-        {"option_text": "1968", "is_correct": true},
-        {"option_text": "1995", "is_correct": false},
-        {"option_text": "2001", "is_correct": false}
+        {
+          "option_text": "1950",
+          "is_correct": false
+        },
+        {
+          "option_text": "1968",
+          "is_correct": true
+        },
+        {
+          "option_text": "1995",
+          "is_correct": false
+        },
+        {
+          "option_text": "2001",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel — established 1968 by Sweden's central bank (Riksbank) on its 300th anniversary. First awarded 1969 (to Ragnar Frisch and Jan Tinbergen). Technically distinct from the other Nobels, though awarded with them.",
@@ -113,13 +181,25 @@
     {
       "stem": "The Nobel PEACE Prize is unique because it is awarded in:",
       "options": [
-        {"option_text": "Stockholm, Sweden", "is_correct": false},
-        {"option_text": "Oslo, Norway (all other Nobels are in Stockholm)", "is_correct": true},
-        {"option_text": "Geneva, Switzerland", "is_correct": false},
-        {"option_text": "Helsinki, Finland", "is_correct": false}
+        {
+          "option_text": "Stockholm, Sweden",
+          "is_correct": false
+        },
+        {
+          "option_text": "Oslo, Norway",
+          "is_correct": true
+        },
+        {
+          "option_text": "Geneva, Switzerland",
+          "is_correct": false
+        },
+        {
+          "option_text": "Helsinki, Finland",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "The Peace Prize is awarded by the Norwegian Nobel Committee in Oslo. All other Nobels are awarded in Stockholm by Swedish institutions. At the time of Nobel's will (1895), Sweden and Norway were still in a personal union; the unusual split reflects that history.",
+      "explanation": "The Peace Prize is awarded by the Norwegian Nobel Committee in Oslo. All other Nobels are awarded in Stockholm by Swedish institutions. At the time of Nobel's will (1895), Sweden and Norway were still in a personal union; the unusual split reflects that history. all other Nobels are in Stockholm.",
       "subject": "General Knowledge",
       "topic": "Nobel laureates — mixed tiers",
       "topic_code": "GK_NOBEL_MIXED",
@@ -129,15 +209,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-gk-nobel-06",
       "generated_at": "2026-04-22T16:30:00+00:00",
-      "id": "sgk_GK_NOBEL_MIXED_00006"
+      "id": "sgk_GK_NOBEL_MIXED_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Oslo, Norway (all other Nobels are in Stockholm)",
+          "now": "Oslo, Norway",
+          "moved_to_explanation": "all other Nobels are in Stockholm"
+        }
+      ]
     },
     {
       "stem": "Who was the FIRST WOMAN to win a Nobel Prize?",
       "options": [
-        {"option_text": "Jane Addams", "is_correct": false},
-        {"option_text": "Marie Curie (Physics 1903)", "is_correct": true},
-        {"option_text": "Selma Lagerlöf", "is_correct": false},
-        {"option_text": "Mother Teresa", "is_correct": false}
+        {
+          "option_text": "Jane Addams",
+          "is_correct": false
+        },
+        {
+          "option_text": "Marie Curie",
+          "is_correct": true
+        },
+        {
+          "option_text": "Selma Lagerlöf",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mother Teresa",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Marie Curie — first woman to win a Nobel (Physics 1903, shared with husband Pierre Curie and Henri Becquerel for radioactivity). Also first PERSON to win in two different fields (Chemistry 1911, for discovery of polonium and radium). Daughter Irène Joliot-Curie won Chemistry 1935.",
@@ -150,7 +250,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-gk-nobel-07",
       "generated_at": "2026-04-22T16:30:00+00:00",
-      "id": "sgk_GK_NOBEL_MIXED_00007"
+      "id": "sgk_GK_NOBEL_MIXED_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Marie Curie (Physics 1903)",
+          "now": "Marie Curie",
+          "moved_to_explanation": "Physics 1903"
+        }
+      ]
     }
   ]
 }

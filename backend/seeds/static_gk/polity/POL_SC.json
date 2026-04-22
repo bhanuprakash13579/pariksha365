@@ -8,13 +8,25 @@
     {
       "stem": "The SUPREME COURT OF INDIA came into existence on:",
       "options": [
-        {"option_text": "15 August 1947", "is_correct": false},
-        {"option_text": "28 JANUARY 1950 — 2 days after Constitution; replaced Federal Court (1937); first CJI = Harilal J. Kania", "is_correct": true},
-        {"option_text": "26 January 1950", "is_correct": false},
-        {"option_text": "26 November 1949", "is_correct": false}
+        {
+          "option_text": "15 August 1947",
+          "is_correct": false
+        },
+        {
+          "option_text": "28 JANUARY 1950",
+          "is_correct": true
+        },
+        {
+          "option_text": "26 January 1950",
+          "is_correct": false
+        },
+        {
+          "option_text": "26 November 1949",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "SUPREME COURT of INDIA — established 28 JANUARY 1950 (2 days after Constitution came into force). ESTABLISHMENT: Articles 124-147 of the Constitution (Part V, Chapter IV). Replaced the FEDERAL COURT of INDIA (est. 1 Oct 1937 under Govt of India Act 1935) + abolished JUDICIAL COMMITTEE of PRIVY COUNCIL (London, UK) as final court of appeal. Initial SITTING: Old Parliament House's 'Chamber of Princes' (Delhi). Moved to CURRENT building on Tilak Marg (designed by Ganesh Bhikaji Deolalikar, India's first CPWD chief architect, in 1958) — scales of justice form-like plan, main dome, 27m high. FIRST CJI: HARILAL JEKISUNDAS KANIA (26 Jan 1950 – 6 Nov 1951). STRENGTH: originally CJI + 7 judges = 8 total; raised over time — 1956 (10), 1960 (13), 1977 (17), 1985 (25), 2008 (30), 2019 (34 — 1 CJI + 33 judges, current strength). Art 124(1) — 'Supreme Court shall consist of CJI + not more than [33] other judges'. APPOINTMENT: by PRESIDENT under Art 124 — based on COLLEGIUM RECOMMENDATION since Second + Third Judges Cases (1993, 1998) — CJI + 4 senior-most SC judges. ELIGIBILITY: (a) Indian citizen; (b) HAS served as HC judge for 5 years; OR (c) advocate of HC for 10 years; OR (d) 'distinguished jurist' in President's opinion (this route NEVER used). RETIREMENT AGE: 65 YEARS. SALARY: CJI ₹2.80 lakh/month + allowances; judges ₹2.50 lakh + allowances (drawn from Consolidated Fund of India — not subject to parliamentary vote). OATH administered by President. REMOVAL by PARLIAMENTARY IMPEACHMENT (Art 124(4)) — 'proved misbehaviour or incapacity'; special majority; procedure in Judges (Inquiry) Act 1968. Justice V. Ramaswami (1991-93) + Justice Soumitra Sen (2011) are partial impeachment cases; no judge yet removed by successful impeachment. CURRENT CJI (2025-26): Justice Sanjiv Khanna (11 Nov 2024 – 13 May 2025); next DY Chandrachud retired.",
+      "explanation": "SUPREME COURT of INDIA — established 28 JANUARY 1950 (2 days after Constitution came into force). ESTABLISHMENT: Articles 124-147 of the Constitution (Part V, Chapter IV). Replaced the FEDERAL COURT of INDIA (est. 1 Oct 1937 under Govt of India Act 1935) + abolished JUDICIAL COMMITTEE of PRIVY COUNCIL (London, UK) as final court of appeal. Initial SITTING: Old Parliament House's 'Chamber of Princes' (Delhi). Moved to CURRENT building on Tilak Marg (designed by Ganesh Bhikaji Deolalikar, India's first CPWD chief architect, in 1958) — scales of justice form-like plan, main dome, 27m high. FIRST CJI: HARILAL JEKISUNDAS KANIA (26 Jan 1950 – 6 Nov 1951). STRENGTH: originally CJI + 7 judges = 8 total; raised over time — 1956 (10), 1960 (13), 1977 (17), 1985 (25), 2008 (30), 2019 (34 — 1 CJI + 33 judges, current strength). Art 124(1) — 'Supreme Court shall consist of CJI + not more than [33] other judges'. APPOINTMENT: by PRESIDENT under Art 124 — based on COLLEGIUM RECOMMENDATION since Second + Third Judges Cases (1993, 1998) — CJI + 4 senior-most SC judges. ELIGIBILITY: (a) Indian citizen; (b) HAS served as HC judge for 5 years; OR (c) advocate of HC for 10 years; OR (d) 'distinguished jurist' in President's opinion (this route NEVER used). RETIREMENT AGE: 65 YEARS. SALARY: CJI ₹2.80 lakh/month + allowances; judges ₹2.50 lakh + allowances (drawn from Consolidated Fund of India — not subject to parliamentary vote). OATH administered by President. REMOVAL by PARLIAMENTARY IMPEACHMENT (Art 124(4)) — 'proved misbehaviour or incapacity'; special majority; procedure in Judges (Inquiry) Act 1968. Justice V. Ramaswami (1991-93) + Justice Soumitra Sen (2011) are partial impeachment cases; no judge yet removed by successful impeachment. CURRENT CJI (2025-26): Justice Sanjiv Khanna (11 Nov 2024 – 13 May 2025); next DY Chandrachud retired. 2 days after Constitution; replaced Federal Court (1937); first CJI = Harilal J. Kania.",
       "subject": "Polity",
       "topic": "Supreme Court of India",
       "topic_code": "POL_SC",
@@ -24,18 +36,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sc-01",
       "generated_at": "2026-04-21T03:30:00+00:00",
-      "id": "sgk_POL_SC_00001"
+      "id": "sgk_POL_SC_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "28 JANUARY 1950 — 2 days after Constitution; replaced Federal Court (1937); first CJI = Harilal J. Kania",
+          "now": "28 JANUARY 1950",
+          "moved_to_explanation": "2 days after Constitution; replaced Federal Court (1937); first CJI = Harilal J. Kania"
+        }
+      ]
     },
     {
       "stem": "Which ARTICLE of the Constitution provides the SUPREME COURT with power to issue WRITS for enforcement of FUNDAMENTAL RIGHTS?",
       "options": [
-        {"option_text": "Article 226", "is_correct": false},
-        {"option_text": "ARTICLE 32 — 'Heart + Soul of the Constitution' per Dr. B.R. Ambedkar; guarantees Right to Constitutional Remedies (a Fundamental Right itself)", "is_correct": true},
-        {"option_text": "Article 136", "is_correct": false},
-        {"option_text": "Article 143", "is_correct": false}
+        {
+          "option_text": "Article 226",
+          "is_correct": false
+        },
+        {
+          "option_text": "ARTICLE 32",
+          "is_correct": true
+        },
+        {
+          "option_text": "Article 136",
+          "is_correct": false
+        },
+        {
+          "option_text": "Article 143",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ARTICLE 32 — RIGHT to CONSTITUTIONAL REMEDIES — the procedural right to approach the Supreme Court directly for enforcement of Fundamental Rights. Dr. B.R. AMBEDKAR called it 'the HEART AND SOUL OF THE CONSTITUTION'. Unlike most Fundamental Rights, Art 32 IS ITSELF a Fundamental Right — so Parliament cannot restrict it like any ordinary law; needs constitutional amendment. FIVE WRITS under Art 32 (+ Art 226 for HCs): (1) HABEAS CORPUS ('produce the body') — against illegal detention; compels authority to produce a detained person + justify detention. CANNOT be suspended even during Emergency post-44th Amendment. (2) MANDAMUS ('we command') — compels a public official to perform a statutory duty he/she has refused to perform. Can't be issued against President, Governor, Parliament. (3) PROHIBITION — issued by higher court to LOWER court / tribunal to STOP hearing a case beyond its jurisdiction. Preventive. (4) CERTIORARI ('to certify') — higher court QUASHES an order of lower court/tribunal already passed beyond its jurisdiction. Curative. (5) QUO WARRANTO ('by what authority') — questions the legal authority of a person holding a public office — to remove unauthorised occupant. DIFFERENCES Art 32 vs Art 226: (a) Art 32 = SC; Art 226 = HC; (b) Art 32 only for FRs; Art 226 for FRs + 'any other purpose' (broader); (c) Art 226 has territorial jurisdiction over the state + neighbouring areas; Art 32 pan-India; (d) HC wider power of PIL. PIL (PUBLIC INTEREST LITIGATION) — evolved in 1980s by Justice P.N. Bhagwati + V.R. Krishna Iyer; relaxed LOCUS STANDI (standing) so ANY public-spirited citizen can file petition on behalf of affected. Landmarks: S.P. Gupta, Hussainara Khatoon (under-trial prisoners), Asiad workers' case, Bandhua Mukti Morcha, Olga Tellis. PIL CAN BE CURATIVELY ABUSED — 'Publicity Interest Litigation', private agendas disguised — SC has cautioned (e.g., Ashok Kumar Pandey 2014).",
+      "explanation": "ARTICLE 32 — RIGHT to CONSTITUTIONAL REMEDIES — the procedural right to approach the Supreme Court directly for enforcement of Fundamental Rights. Dr. B.R. AMBEDKAR called it 'the HEART AND SOUL OF THE CONSTITUTION'. Unlike most Fundamental Rights, Art 32 IS ITSELF a Fundamental Right — so Parliament cannot restrict it like any ordinary law; needs constitutional amendment. FIVE WRITS under Art 32 (+ Art 226 for HCs): (1) HABEAS CORPUS ('produce the body') — against illegal detention; compels authority to produce a detained person + justify detention. CANNOT be suspended even during Emergency post-44th Amendment. (2) MANDAMUS ('we command') — compels a public official to perform a statutory duty he/she has refused to perform. Can't be issued against President, Governor, Parliament. (3) PROHIBITION — issued by higher court to LOWER court / tribunal to STOP hearing a case beyond its jurisdiction. Preventive. (4) CERTIORARI ('to certify') — higher court QUASHES an order of lower court/tribunal already passed beyond its jurisdiction. Curative. (5) QUO WARRANTO ('by what authority') — questions the legal authority of a person holding a public office — to remove unauthorised occupant. DIFFERENCES Art 32 vs Art 226: (a) Art 32 = SC; Art 226 = HC; (b) Art 32 only for FRs; Art 226 for FRs + 'any other purpose' (broader); (c) Art 226 has territorial jurisdiction over the state + neighbouring areas; Art 32 pan-India; (d) HC wider power of PIL. PIL (PUBLIC INTEREST LITIGATION) — evolved in 1980s by Justice P.N. Bhagwati + V.R. Krishna Iyer; relaxed LOCUS STANDI (standing) so ANY public-spirited citizen can file petition on behalf of affected. Landmarks: S.P. Gupta, Hussainara Khatoon (under-trial prisoners), Asiad workers' case, Bandhua Mukti Morcha, Olga Tellis. PIL CAN BE CURATIVELY ABUSED — 'Publicity Interest Litigation', private agendas disguised — SC has cautioned (e.g., Ashok Kumar Pandey 2014). 'Heart + Soul of the Constitution' per Dr. B.R. Ambedkar; guarantees Right to Constitutional Remedies (a Fundamental Right itself).",
       "subject": "Polity",
       "topic": "Supreme Court of India",
       "topic_code": "POL_SC",
@@ -45,15 +77,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sc-01",
       "generated_at": "2026-04-21T03:30:00+00:00",
-      "id": "sgk_POL_SC_00002"
+      "id": "sgk_POL_SC_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ARTICLE 32 — 'Heart + Soul of the Constitution' per Dr. B.R. Ambedkar; guarantees Right to Constitutional Remedies (a Fundamental Right itself)",
+          "now": "ARTICLE 32",
+          "moved_to_explanation": "'Heart + Soul of the Constitution' per Dr. B.R. Ambedkar; guarantees Right to Constitutional Remedies (a Fundamental Right itself)"
+        }
+      ]
     },
     {
       "stem": "The BASIC STRUCTURE DOCTRINE of the Indian Constitution was propounded in which landmark case?",
       "options": [
-        {"option_text": "Maneka Gandhi v. Union of India (1978)", "is_correct": false},
-        {"option_text": "KESAVANANDA BHARATI v. STATE OF KERALA (1973) — 13-judge bench held Parliament cannot amend Constitution to destroy its 'basic structure'", "is_correct": true},
-        {"option_text": "Golaknath v. State of Punjab (1967)", "is_correct": false},
-        {"option_text": "Minerva Mills v. Union of India (1980)", "is_correct": false}
+        {
+          "option_text": "Maneka Gandhi v. Union of India (1978)",
+          "is_correct": false
+        },
+        {
+          "option_text": "KESAVANANDA BHARATI v. STATE OF KERALA (1973) — 13-judge bench held Parliament cannot amend Constitution to destroy its 'basic structure'",
+          "is_correct": true
+        },
+        {
+          "option_text": "Golaknath v. State of Punjab (1967)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Minerva Mills v. Union of India (1980)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "KESAVANANDA BHARATI v. STATE OF KERALA (1973) — MOST FAMOUS case in Indian constitutional history. 13-JUDGE SC bench — the LARGEST bench ever. 7-6 VERDICT delivered on 24 April 1973 (marathon 68-day hearing). Petitioner: Swami KESAVANANDA BHARATI of Edneer Mutt (Kerala); challenged Kerala Land Reforms Act acquiring his monastery's land. HELD: (1) Parliament has WIDE powers to amend the Constitution (Art 368); (2) BUT Parliament CANNOT amend the Constitution to destroy its BASIC STRUCTURE / FEATURES / FRAMEWORK; (3) OVERRULED GOLAKNATH (1967 — which had said Parliament could NOT amend FRs); (4) BUT LIMITED the amending power to those amendments that do not alter the 'basic structure'. Core features of BASIC STRUCTURE (non-exhaustive — evolved case by case): (a) Supremacy of Constitution; (b) sovereign + democratic + republican nature; (c) SECULARISM (S.R. Bommai 1994); (d) FEDERALISM; (e) separation of powers; (f) JUDICIAL REVIEW; (g) FREE + FAIR ELECTIONS; (h) rule of law; (i) FUNDAMENTAL RIGHTS (partially); (j) unity + integrity of India; (k) PARLIAMENTARY system; (l) independence of judiciary; (m) welfare state (socialist); (n) equality; (o) dignity of individual. SUBSEQUENT cases elaborating: (1) INDIRA GANDHI v. RAJ NARAIN (1975) — struck down 39th CAA which had validated Indira's election retrospectively — added 'free + fair elections' to basic structure. (2) MINERVA MILLS v. UoI (1980) — struck down parts of 42nd CAA that curbed judicial review + gave DPSPs primacy over FRs; confirmed judicial review + harmony between FRs + DPSPs as basic structure. (3) S.R. BOMMAI (1994) — secularism = basic. (4) I.R. COELHO v. State of TN (2007) — 9th Schedule laws (since 24 April 1973) subject to judicial review if they violate basic structure. PRE-KESAVANANDA history: (a) SHANKARI PRASAD (1951) — Parliament CAN amend FRs; (b) SAJJAN SINGH (1965) — reaffirmed; (c) GOLAKNATH (1967 11-judge) — REVERSED — Parliament CANNOT amend FRs; (d) Kesavananda restored Parliament's amending power BUT with 'basic structure' limitation. Kesavananda is the DNA of Indian Constitutionalism.",
@@ -71,10 +123,22 @@
     {
       "stem": "The COLLEGIUM SYSTEM for appointment of Supreme Court + HC judges evolved from the:",
       "options": [
-        {"option_text": "Original Constitution (1950)", "is_correct": false},
-        {"option_text": "Second Judges Case (1993) + Third Judges Case (1998) — CJI + 4 senior-most SC judges for SC appts; CJI + 2 senior-most for HC", "is_correct": true},
-        {"option_text": "99th Constitutional Amendment (2014)", "is_correct": false},
-        {"option_text": "Sarkaria Commission", "is_correct": false}
+        {
+          "option_text": "Original Constitution (1950)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Second Judges Case (1993) + Third Judges Case (1998) — CJI + 4 senior-most SC judges for SC appts; CJI + 2 senior-most for HC",
+          "is_correct": true
+        },
+        {
+          "option_text": "99th Constitutional Amendment (2014)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sarkaria Commission",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "COLLEGIUM SYSTEM — institutional mechanism for JUDICIAL APPOINTMENTS to Supreme Court + High Courts in India. ORIGINAL CONSTITUTION Art 124: President appointed judges IN CONSULTATION with CJI (not bound to accept CJI advice). EVOLUTION: (1) FIRST JUDGES CASE / S.P. GUPTA v. UoI (1981) — held 'consultation' did NOT mean 'concurrence' — EXECUTIVE had primacy in appointments; CJI's view was merely consultative. (2) SECOND JUDGES CASE / Supreme Court Advocates-on-Record Association v. UoI (1993) — REVERSED — held 'consultation' meant 'concurrence'; CJI's opinion on appointments had PRIMACY. Introduced COLLEGIUM of CJI + 2 senior-most SC judges for SC appointments. (3) THIRD JUDGES CASE / In re Presidential Reference (1998) — EXPANDED collegium to CJI + 4 senior-most SC judges for SC appts; CJI + 2 senior-most SC judges from parent HC for HC judge appointment. ADDED that CJI's opinion must be formed after due consultation with collegium; individual opinion doesn't bind. (4) 99th CAA 2014 + NATIONAL JUDICIAL APPOINTMENTS COMMISSION (NJAC) ACT 2014 — Parliament unanimously replaced collegium with NJAC (CJI + 2 senior SC judges + Law Minister + 2 eminent persons chosen by CJI+PM+LoP). (5) FOURTH JUDGES CASE / SC Advocates-on-Record Association v. UoI (2015) — STRUCK DOWN 99th CAA + NJAC Act as UNCONSTITUTIONAL by 4-1 majority; held collegium = basic structure; judicial independence essential. RESTORED collegium system. CRITICISM of collegium: (a) OPAQUE, non-transparent, no written rules; (b) 'judges appointing judges' — closed club; (c) favouritism / nepotism (judges promoting own kin); (d) MoP (Memorandum of Procedure) amendments by govt — unresolved. MEMO OF PROCEDURE — procedural rules governing collegium-executive interaction; still under discussion. Executive can return a recommendation ONCE; if re-sent, binding (per 3rd Judges). PRESENT: Collegium recommendations + executive either accepts or returns. Appointments often delayed — TNL tensions recent years. CALLS for transparent body like NJAC revived; but judiciary rejects anything that compromises 'basic structure' independence.",
@@ -92,13 +156,25 @@
     {
       "stem": "Which Article of the Constitution enables the Supreme Court to grant SPECIAL LEAVE TO APPEAL against any judgment of any court or tribunal?",
       "options": [
-        {"option_text": "Article 32", "is_correct": false},
-        {"option_text": "ARTICLE 136 — 'Special Leave Petition' (SLP); discretionary, extraordinary jurisdiction; SC's most-used civil + criminal appellate power", "is_correct": true},
-        {"option_text": "Article 143", "is_correct": false},
-        {"option_text": "Article 139", "is_correct": false}
+        {
+          "option_text": "Article 32",
+          "is_correct": false
+        },
+        {
+          "option_text": "ARTICLE 136",
+          "is_correct": true
+        },
+        {
+          "option_text": "Article 143",
+          "is_correct": false
+        },
+        {
+          "option_text": "Article 139",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ARTICLE 136 — SPECIAL LEAVE TO APPEAL — gives SC DISCRETIONARY power to grant SPECIAL LEAVE (SLP — Special Leave Petition) to appeal from ANY JUDGMENT / DECREE / determination / sentence / order (civil, criminal, or other) of any court or tribunal in India (except military courts/tribunals). UNIQUE FEATURES: (1) PLENARY power — covers all types of cases. (2) DISCRETIONARY — SC need not accept an SLP. (3) Can be filed after HC judgment or directly from tribunals (in certain cases). (4) TIME LIMIT: 90 days from HC judgment (criminal 60). (5) Not a 'right of appeal' — only a 'leave to appeal'. (6) MOST-FILED PETITION in SC; forms ~90% of SC caseload. SC EVOLVED GUIDELINES to manage Art 136 flood — Pritam Singh (1950), Nihal Singh (1965), Mathai @ Joby (2005), Mathai Samuel (2020). SC generally entertains SLP only in matters of CONSTITUTIONAL IMPORTANCE, SUBSTANTIAL QUESTION OF LAW, OR gross miscarriage of justice; not as routine appeal. OTHER SC JURISDICTIONS: (1) ORIGINAL JURISDICTION — Art 131 — disputes between (a) Govt of India + 1 or more states; (b) states inter se. Exclusive jurisdiction. (2) WRIT JURISDICTION — Art 32 — Fundamental Rights enforcement. (3) APPELLATE JURISDICTION: (a) CONSTITUTIONAL (Art 132) — appeal from HC if HC certifies substantial Q of law of constitutional interpretation. (b) CIVIL (Art 133) — if substantial Q of law of general importance. (c) CRIMINAL (Art 134) — from HC in certain cases (death sentence confirmation etc). (d) Tribunals (Art 136). (4) ADVISORY JURISDICTION — Art 143 — President may refer to SC question of law + get opinion; SC discretion to answer. Major referrals: Delhi Laws case (1951), Kerala Education Bill (1958), Berubari (1960), Keshav Singh (1965), Presidential Poll (1974), Ayodhya Reference (1993). (5) JUDICIAL REVIEW — Art 13 — unwritten; SC can strike down laws inconsistent with Constitution. (6) OTHER — Art 129 (Court of Record — contempt powers), Art 142 (complete justice). FOR LAW STUDENTS: Art 136 = 'grinding mill' of SC.",
+      "explanation": "ARTICLE 136 — SPECIAL LEAVE TO APPEAL — gives SC DISCRETIONARY power to grant SPECIAL LEAVE (SLP — Special Leave Petition) to appeal from ANY JUDGMENT / DECREE / determination / sentence / order (civil, criminal, or other) of any court or tribunal in India (except military courts/tribunals). UNIQUE FEATURES: (1) PLENARY power — covers all types of cases. (2) DISCRETIONARY — SC need not accept an SLP. (3) Can be filed after HC judgment or directly from tribunals (in certain cases). (4) TIME LIMIT: 90 days from HC judgment (criminal 60). (5) Not a 'right of appeal' — only a 'leave to appeal'. (6) MOST-FILED PETITION in SC; forms ~90% of SC caseload. SC EVOLVED GUIDELINES to manage Art 136 flood — Pritam Singh (1950), Nihal Singh (1965), Mathai @ Joby (2005), Mathai Samuel (2020). SC generally entertains SLP only in matters of CONSTITUTIONAL IMPORTANCE, SUBSTANTIAL QUESTION OF LAW, OR gross miscarriage of justice; not as routine appeal. OTHER SC JURISDICTIONS: (1) ORIGINAL JURISDICTION — Art 131 — disputes between (a) Govt of India + 1 or more states; (b) states inter se. Exclusive jurisdiction. (2) WRIT JURISDICTION — Art 32 — Fundamental Rights enforcement. (3) APPELLATE JURISDICTION: (a) CONSTITUTIONAL (Art 132) — appeal from HC if HC certifies substantial Q of law of constitutional interpretation. (b) CIVIL (Art 133) — if substantial Q of law of general importance. (c) CRIMINAL (Art 134) — from HC in certain cases (death sentence confirmation etc). (d) Tribunals (Art 136). (4) ADVISORY JURISDICTION — Art 143 — President may refer to SC question of law + get opinion; SC discretion to answer. Major referrals: Delhi Laws case (1951), Kerala Education Bill (1958), Berubari (1960), Keshav Singh (1965), Presidential Poll (1974), Ayodhya Reference (1993). (5) JUDICIAL REVIEW — Art 13 — unwritten; SC can strike down laws inconsistent with Constitution. (6) OTHER — Art 129 (Court of Record — contempt powers), Art 142 (complete justice). FOR LAW STUDENTS: Art 136 = 'grinding mill' of SC. 'Special Leave Petition' (SLP); discretionary, extraordinary jurisdiction; SC's most-used civil + criminal appellate power.",
       "subject": "Polity",
       "topic": "Supreme Court of India",
       "topic_code": "POL_SC",
@@ -108,18 +184,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sc-01",
       "generated_at": "2026-04-21T03:30:00+00:00",
-      "id": "sgk_POL_SC_00005"
+      "id": "sgk_POL_SC_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ARTICLE 136 — 'Special Leave Petition' (SLP); discretionary, extraordinary jurisdiction; SC's most-used civil + criminal appellate power",
+          "now": "ARTICLE 136",
+          "moved_to_explanation": "'Special Leave Petition' (SLP); discretionary, extraordinary jurisdiction; SC's most-used civil + criminal appellate power"
+        }
+      ]
     },
     {
       "stem": "The FIRST WOMAN judge of the Supreme Court of India was:",
       "options": [
-        {"option_text": "Leila Seth", "is_correct": false},
-        {"option_text": "Justice M. FATHIMA BEEVI — appointed 6 October 1989; later Governor of TN (1997-2001)", "is_correct": true},
-        {"option_text": "Indira Banerjee", "is_correct": false},
-        {"option_text": "B.V. Nagarathna", "is_correct": false}
+        {
+          "option_text": "Leila Seth",
+          "is_correct": false
+        },
+        {
+          "option_text": "Justice M. FATHIMA BEEVI",
+          "is_correct": true
+        },
+        {
+          "option_text": "Indira Banerjee",
+          "is_correct": false
+        },
+        {
+          "option_text": "B.V. Nagarathna",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "JUSTICE M. FATHIMA BEEVI (1927-2023) — FIRST woman judge of the Supreme Court of India. APPOINTED 6 October 1989 (retired 29 April 1992). ALSO: first Muslim woman judge in higher judiciary; first woman judge of Kerala HC (1983). LATER: Governor of Tamil Nadu (25 Jan 1997 – 1 Jul 2001). Born Kerala, studied law at Govt Law College Trivandrum, topped BL examination (first woman to do so in Kerala). Pursued career through subordinate judiciary then district court then Kerala HC. After retirement, served on National Human Rights Commission. Died 23 Nov 2023, age 96. WOMEN JUDGES of Supreme Court since: (1) FATHIMA BEEVI (1989-92); (2) SUJATA V. MANOHAR (1994-99); (3) RUMA PAL (2000-06 — 5 years 10 months, longest-serving woman SC judge); (4) GYAN SUDHA MISRA (2010-14); (5) RANJANA DESAI (2011-14); (6) R. BANUMATHI (2014-20); (7) INDU MALHOTRA (2018-21 — first woman directly from Bar / advocate appointment); (8) INDIRA BANERJEE (2018-22); (9) HIMA KOHLI (2021-24); (10) B.V. NAGARATHNA (2021-present — projected to become first female CJI in Sept 2027); (11) BELA M. TRIVEDI (2021-present). TOTAL: ~11 women judges of SC till 2025; out of ~268 total SC judges since 1950. Ratio: ~4% overall; currently ~8% active. WOMEN CJIs: NONE yet in India. NAGARATHNA is slated to be India's first female CJI (35 days, 24 Sep–29 Oct 2027, per seniority). LEILA SETH (not SC) — first woman CJ of any HC (Himachal Pradesh HC 1991); also part of Justice Verma Committee (2013 anti-rape law reforms); mother of Vikram Seth (author). WOMEN CJ of HCs: Leila Seth (HP), Anna Chandy (Kerala HC 1959 — first woman HC judge in India, not CJ), Gita Mittal (J&K HC CJ), Manjula Chellur (Kerala-Calcutta-Bombay HCs CJ), Indira Banerjee (Madras HC CJ before SC). Women JUDGES in HCs ~15%. Gender diversity in judiciary still a WORK IN PROGRESS.",
+      "explanation": "JUSTICE M. FATHIMA BEEVI (1927-2023) — FIRST woman judge of the Supreme Court of India. APPOINTED 6 October 1989 (retired 29 April 1992). ALSO: first Muslim woman judge in higher judiciary; first woman judge of Kerala HC (1983). LATER: Governor of Tamil Nadu (25 Jan 1997 – 1 Jul 2001). Born Kerala, studied law at Govt Law College Trivandrum, topped BL examination (first woman to do so in Kerala). Pursued career through subordinate judiciary then district court then Kerala HC. After retirement, served on National Human Rights Commission. Died 23 Nov 2023, age 96. WOMEN JUDGES of Supreme Court since: (1) FATHIMA BEEVI (1989-92); (2) SUJATA V. MANOHAR (1994-99); (3) RUMA PAL (2000-06 — 5 years 10 months, longest-serving woman SC judge); (4) GYAN SUDHA MISRA (2010-14); (5) RANJANA DESAI (2011-14); (6) R. BANUMATHI (2014-20); (7) INDU MALHOTRA (2018-21 — first woman directly from Bar / advocate appointment); (8) INDIRA BANERJEE (2018-22); (9) HIMA KOHLI (2021-24); (10) B.V. NAGARATHNA (2021-present — projected to become first female CJI in Sept 2027); (11) BELA M. TRIVEDI (2021-present). TOTAL: ~11 women judges of SC till 2025; out of ~268 total SC judges since 1950. Ratio: ~4% overall; currently ~8% active. WOMEN CJIs: NONE yet in India. NAGARATHNA is slated to be India's first female CJI (35 days, 24 Sep–29 Oct 2027, per seniority). LEILA SETH (not SC) — first woman CJ of any HC (Himachal Pradesh HC 1991); also part of Justice Verma Committee (2013 anti-rape law reforms); mother of Vikram Seth (author). WOMEN CJ of HCs: Leila Seth (HP), Anna Chandy (Kerala HC 1959 — first woman HC judge in India, not CJ), Gita Mittal (J&K HC CJ), Manjula Chellur (Kerala-Calcutta-Bombay HCs CJ), Indira Banerjee (Madras HC CJ before SC). Women JUDGES in HCs ~15%. Gender diversity in judiciary still a WORK IN PROGRESS. appointed 6 October 1989; later Governor of TN (1997-2001).",
       "subject": "Polity",
       "topic": "Supreme Court of India",
       "topic_code": "POL_SC",
@@ -129,18 +225,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sc-01",
       "generated_at": "2026-04-21T03:30:00+00:00",
-      "id": "sgk_POL_SC_00006"
+      "id": "sgk_POL_SC_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Justice M. FATHIMA BEEVI — appointed 6 October 1989; later Governor of TN (1997-2001)",
+          "now": "Justice M. FATHIMA BEEVI",
+          "moved_to_explanation": "appointed 6 October 1989; later Governor of TN (1997-2001)"
+        }
+      ]
     },
     {
       "stem": "JUDICIAL REVIEW in India is:",
       "options": [
-        {"option_text": "Absent", "is_correct": false},
-        {"option_text": "The POWER of courts to REVIEW legislative + executive actions + declare them unconstitutional if they VIOLATE the Constitution — a basic structure feature", "is_correct": true},
-        {"option_text": "Only for tax laws", "is_correct": false},
-        {"option_text": "Only in HC, not SC", "is_correct": false}
+        {
+          "option_text": "Absent",
+          "is_correct": false
+        },
+        {
+          "option_text": "The POWER of courts to REVIEW legislative + executive actions + declare them unconstitutional if they VIOLATE the Constitution",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only for tax laws",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only in HC, not SC",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "JUDICIAL REVIEW — power of judiciary to review the constitutional validity of LAWS passed by legislature + EXECUTIVE ACTIONS; declare them invalid if inconsistent with Constitution. Derived from U.S. MARBURY v. MADISON (1803, Chief Justice John Marshall) — though implicitly present in British constitutionalism, judicial review as doctrine was an American innovation. SOURCES in Indian Constitution: (1) ART 13 — any law (pre + post 1950) in violation of FRs is VOID to the extent of inconsistency. (2) ART 32 — writs to enforce FRs (SC's 'guaranteed' power). (3) ART 131 — original jurisdiction (Centre-state + states). (4) ART 132-136 — appellate jurisdiction. (5) ART 226 + 227 — HC's writ + superintendence. (6) ART 246 + 7th Schedule — review of legislative competence (Centre vs State). (7) ART 254 — Centre-State law conflict. (8) BASIC STRUCTURE DOCTRINE — review of amendments (Kesavananda 1973). GROUNDS FOR STRIKING DOWN: (a) beyond legislative COMPETENCE (ultra vires); (b) violation of FUNDAMENTAL RIGHTS; (c) violation of BASIC STRUCTURE (for constitutional amendments); (d) procedural illegality; (e) arbitrariness (Royappa 1974, Maneka 1978, Ajay Hasia); (f) unreasonableness (Wednesbury UK test, adopted with modifications); (g) violation of Art 14 + proportionality. LANDMARK USES: A.K. Gopalan 1950, Golaknath 1967 (FRs not amendable), Kesavananda 1973, Indira Gandhi v. Raj Narain 1975 (election validation), Maneka Gandhi 1978 (expanded Art 21), Minerva Mills 1980, S.R. Bommai 1994 (Art 356), Shayara Bano 2017 (triple talaq struck down), Puttaswamy 2017 (Privacy = FR), Sabarimala 2018 (Art 17 + temple entry, still under review), NJAC 2015 (collegium restored), Navtej Johar 2018 (Sec 377 decriminalised), Joseph Shine 2018 (Sec 497 adultery struck), Indra Sawhney 1992 (Mandal, 50% ceiling — now under EWS review), Aadhaar 2018 (Puttaswamy-II). FRAMERS intended judicial review — Dr Ambedkar said 'I can't conceive of any better provision for protection of the Constitution than to give Supreme Court the power of judicial review.' COUNTER-MAJORITARIAN check in democracy; balance with democratic legitimacy has been subject of debate (judicial activism vs restraint).",
+      "explanation": "JUDICIAL REVIEW — power of judiciary to review the constitutional validity of LAWS passed by legislature + EXECUTIVE ACTIONS; declare them invalid if inconsistent with Constitution. Derived from U.S. MARBURY v. MADISON (1803, Chief Justice John Marshall) — though implicitly present in British constitutionalism, judicial review as doctrine was an American innovation. SOURCES in Indian Constitution: (1) ART 13 — any law (pre + post 1950) in violation of FRs is VOID to the extent of inconsistency. (2) ART 32 — writs to enforce FRs (SC's 'guaranteed' power). (3) ART 131 — original jurisdiction (Centre-state + states). (4) ART 132-136 — appellate jurisdiction. (5) ART 226 + 227 — HC's writ + superintendence. (6) ART 246 + 7th Schedule — review of legislative competence (Centre vs State). (7) ART 254 — Centre-State law conflict. (8) BASIC STRUCTURE DOCTRINE — review of amendments (Kesavananda 1973). GROUNDS FOR STRIKING DOWN: (a) beyond legislative COMPETENCE (ultra vires); (b) violation of FUNDAMENTAL RIGHTS; (c) violation of BASIC STRUCTURE (for constitutional amendments); (d) procedural illegality; (e) arbitrariness (Royappa 1974, Maneka 1978, Ajay Hasia); (f) unreasonableness (Wednesbury UK test, adopted with modifications); (g) violation of Art 14 + proportionality. LANDMARK USES: A.K. Gopalan 1950, Golaknath 1967 (FRs not amendable), Kesavananda 1973, Indira Gandhi v. Raj Narain 1975 (election validation), Maneka Gandhi 1978 (expanded Art 21), Minerva Mills 1980, S.R. Bommai 1994 (Art 356), Shayara Bano 2017 (triple talaq struck down), Puttaswamy 2017 (Privacy = FR), Sabarimala 2018 (Art 17 + temple entry, still under review), NJAC 2015 (collegium restored), Navtej Johar 2018 (Sec 377 decriminalised), Joseph Shine 2018 (Sec 497 adultery struck), Indra Sawhney 1992 (Mandal, 50% ceiling — now under EWS review), Aadhaar 2018 (Puttaswamy-II). FRAMERS intended judicial review — Dr Ambedkar said 'I can't conceive of any better provision for protection of the Constitution than to give Supreme Court the power of judicial review.' COUNTER-MAJORITARIAN check in democracy; balance with democratic legitimacy has been subject of debate (judicial activism vs restraint). a basic structure feature.",
       "subject": "Polity",
       "topic": "Supreme Court of India",
       "topic_code": "POL_SC",
@@ -150,15 +266,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sc-01",
       "generated_at": "2026-04-21T03:30:00+00:00",
-      "id": "sgk_POL_SC_00007"
+      "id": "sgk_POL_SC_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "The POWER of courts to REVIEW legislative + executive actions + declare them unconstitutional if they VIOLATE the Constitution — a basic structure feature",
+          "now": "The POWER of courts to REVIEW legislative + executive actions + declare them unconstitutional if they VIOLATE the Constitution",
+          "moved_to_explanation": "a basic structure feature"
+        }
+      ]
     },
     {
       "stem": "CONTEMPT OF COURT in India is classified into:",
       "options": [
-        {"option_text": "Only civil", "is_correct": false},
-        {"option_text": "CIVIL (willful disobedience of court order) + CRIMINAL (scandalising / lowering authority of court); under Contempt of Courts Act, 1971", "is_correct": true},
-        {"option_text": "Only criminal", "is_correct": false},
-        {"option_text": "Constitutional + statutory", "is_correct": false}
+        {
+          "option_text": "Only civil",
+          "is_correct": false
+        },
+        {
+          "option_text": "CIVIL (willful disobedience of court order) + CRIMINAL (scandalising / lowering authority of court); under Contempt of Courts Act, 1971",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only criminal",
+          "is_correct": false
+        },
+        {
+          "option_text": "Constitutional + statutory",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "CONTEMPT OF COURT — Art 129 of the Constitution makes the SUPREME COURT a 'COURT OF RECORD' with power to punish for CONTEMPT OF ITSELF. Art 215 does the same for HCs. Statutory law: CONTEMPT OF COURTS ACT, 1971. TWO TYPES: (1) CIVIL CONTEMPT — WILLFUL disobedience of any judgment, decree, direction, order, writ, or process of court, or willful breach of undertaking given to court. Remedial in nature — aims to get compliance. (2) CRIMINAL CONTEMPT — 'scandalising' the court, interfering with due course of judicial proceedings, or obstructing administration of justice. Punitive in nature — aims to protect dignity of courts. DEFENCES: (a) innocent publication / distribution; (b) FAIR + ACCURATE REPORT of judicial proceedings; (c) FAIR CRITICISM of judicial act (as long as not malicious + does not impair court's authority); (d) TRUTH — added as defence by 2006 Amendment (truth can be pleaded if in 'public interest' + 'bona fide'). PUNISHMENT: up to 6 MONTHS imprisonment +/or ₹2,000 fine. HIGHER PUNISHMENT requires separate procedure. NOTABLE CONTEMPT CASES: (1) 2020 — PRASHANT BHUSHAN (advocate) held GUILTY of criminal contempt for 2 tweets critical of SC + CJI Bobde; fined ₹1; refused to apologise. Became media flashpoint on FoE vs contempt. (2) 2002 — ARUNDHATI ROY (author) held in contempt for her criticism of SC on Narmada judgment; 1-day symbolic imprisonment. (3) 2006 — EDITOR of Times of India. (4) EX-CM MAMATA BANERJEE (warning). TENSIONS: (a) FREE SPEECH vs judicial reputation; (b) 'scandalising' broad + subjective; (c) increasingly criticised — UK abolished 'scandalising' contempt in 2013; LCI Report 274 recommended similar for India; (d) but contempt deemed necessary for rule of law. CIVIL vs CRIMINAL contempt often OVERLAP in practice. Judiciary generally EXERCISES SELF-RESTRAINT but enforces when required. Sub-judice RULE + GAG orders — related but separate concerns.",
@@ -176,13 +312,25 @@
     {
       "stem": "The SUPREME COURT's power to do 'COMPLETE JUSTICE' in any cause or matter is found in:",
       "options": [
-        {"option_text": "Article 32", "is_correct": false},
-        {"option_text": "ARTICLE 142 — allows SC to pass any decree or order necessary for complete justice; used in Ayodhya (2019), Bhopal gas (1989), Cauvery dispute, etc.", "is_correct": true},
-        {"option_text": "Article 129", "is_correct": false},
-        {"option_text": "Article 144", "is_correct": false}
+        {
+          "option_text": "Article 32",
+          "is_correct": false
+        },
+        {
+          "option_text": "ARTICLE 142",
+          "is_correct": true
+        },
+        {
+          "option_text": "Article 129",
+          "is_correct": false
+        },
+        {
+          "option_text": "Article 144",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ARTICLE 142 — UNIQUE POWER of the Supreme Court to do 'COMPLETE JUSTICE'. Article 142(1): 'The Supreme Court in the exercise of its jurisdiction may pass such decree or make such order as is necessary for doing complete justice in any cause or matter pending before it, and any decree so passed or order so made shall be enforceable throughout the territory of India.' Article 142(2): similar powers over securing attendance, production of documents, etc. SIGNIFICANCE: (1) gives SC EXTRAORDINARY power beyond procedural laws; allows equitable + creative remedies even where existing law is silent; (2) NO other country's supreme court has such broad textual power (US SC relies on common law + statutes). LANDMARK USES of Art 142: (1) BHOPAL GAS TRAGEDY (1989) — SC awarded $470 million compensation as a lump-sum settlement against Union Carbide; controversial because it overrode pending tort claims. (2) BABRI MASJID / AYODHYA verdict (9 Nov 2019) — 5-judge bench used Art 142 to award disputed 2.77-acre site to Hindus for Ram Mandir + 5-acre alternative site to Muslims for mosque, beyond strict legal title. (3) CAUVERY WATER DISPUTE — allocation + enforcement orders. (4) VINEETA SHARMA v. RAKESH SHARMA (2020) — equal coparcenary rights to daughters. (5) NAZ FOUNDATION / NAVTEJ JOHAR (2018) — decriminalisation of Sec 377; passed remedial directions. (6) NINJA case (restoration of wife's property). (7) MC MEHTA environmental cases — Ganga, Yamuna, Delhi air. (8) STATE OF UP v. RAJESH YADAV (2010) — reservation in promotions remedial. (9) TATA ELECTRIC v. REGULATORY COMMISSION — electricity pricing. LIMITATIONS (per A.R. Antulay v. RS Nayak 1988, Delhi Judicial Service 1991, others): (a) Art 142 cannot be used to supplant EXPRESS statutory provisions — only to supplement; (b) not a 'get out of jail free' card; must be invoked for legitimate public interest; (c) cannot override CONSTITUTION or fundamental rights; (d) cannot ignore general statutory mandates (R. RESHMA v. SC 2019 clarified). CRITICS argue Art 142 is sometimes OVERUSED (judicial overreach into policy). Defenders argue it's necessary for structural justice in complex public-law cases.",
+      "explanation": "ARTICLE 142 — UNIQUE POWER of the Supreme Court to do 'COMPLETE JUSTICE'. Article 142(1): 'The Supreme Court in the exercise of its jurisdiction may pass such decree or make such order as is necessary for doing complete justice in any cause or matter pending before it, and any decree so passed or order so made shall be enforceable throughout the territory of India.' Article 142(2): similar powers over securing attendance, production of documents, etc. SIGNIFICANCE: (1) gives SC EXTRAORDINARY power beyond procedural laws; allows equitable + creative remedies even where existing law is silent; (2) NO other country's supreme court has such broad textual power (US SC relies on common law + statutes). LANDMARK USES of Art 142: (1) BHOPAL GAS TRAGEDY (1989) — SC awarded $470 million compensation as a lump-sum settlement against Union Carbide; controversial because it overrode pending tort claims. (2) BABRI MASJID / AYODHYA verdict (9 Nov 2019) — 5-judge bench used Art 142 to award disputed 2.77-acre site to Hindus for Ram Mandir + 5-acre alternative site to Muslims for mosque, beyond strict legal title. (3) CAUVERY WATER DISPUTE — allocation + enforcement orders. (4) VINEETA SHARMA v. RAKESH SHARMA (2020) — equal coparcenary rights to daughters. (5) NAZ FOUNDATION / NAVTEJ JOHAR (2018) — decriminalisation of Sec 377; passed remedial directions. (6) NINJA case (restoration of wife's property). (7) MC MEHTA environmental cases — Ganga, Yamuna, Delhi air. (8) STATE OF UP v. RAJESH YADAV (2010) — reservation in promotions remedial. (9) TATA ELECTRIC v. REGULATORY COMMISSION — electricity pricing. LIMITATIONS (per A.R. Antulay v. RS Nayak 1988, Delhi Judicial Service 1991, others): (a) Art 142 cannot be used to supplant EXPRESS statutory provisions — only to supplement; (b) not a 'get out of jail free' card; must be invoked for legitimate public interest; (c) cannot override CONSTITUTION or fundamental rights; (d) cannot ignore general statutory mandates (R. RESHMA v. SC 2019 clarified). CRITICS argue Art 142 is sometimes OVERUSED (judicial overreach into policy). Defenders argue it's necessary for structural justice in complex public-law cases. allows SC to pass any decree or order necessary for complete justice; used in Ayodhya (2019), Bhopal gas (1989), Cauvery dispute, etc.",
       "subject": "Polity",
       "topic": "Supreme Court of India",
       "topic_code": "POL_SC",
@@ -192,18 +340,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sc-01",
       "generated_at": "2026-04-21T03:30:00+00:00",
-      "id": "sgk_POL_SC_00009"
+      "id": "sgk_POL_SC_00009",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ARTICLE 142 — allows SC to pass any decree or order necessary for complete justice; used in Ayodhya (2019), Bhopal gas (1989), Cauvery dispute, etc.",
+          "now": "ARTICLE 142",
+          "moved_to_explanation": "allows SC to pass any decree or order necessary for complete justice; used in Ayodhya (2019), Bhopal gas (1989), Cauvery dispute, etc."
+        }
+      ]
     },
     {
       "stem": "The FIRST CHIEF JUSTICE of INDIA was:",
       "options": [
-        {"option_text": "M. Hidayatullah", "is_correct": false},
-        {"option_text": "HARILAL JEKISUNDAS KANIA (26 Jan 1950 – 6 Nov 1951); first + only CJI to die in office", "is_correct": true},
-        {"option_text": "B.K. Mukherjea", "is_correct": false},
-        {"option_text": "Y.V. Chandrachud", "is_correct": false}
+        {
+          "option_text": "M. Hidayatullah",
+          "is_correct": false
+        },
+        {
+          "option_text": "HARILAL JEKISUNDAS KANIA (26 Jan 1950 – 6 Nov 1951)",
+          "is_correct": true
+        },
+        {
+          "option_text": "B.K. Mukherjea",
+          "is_correct": false
+        },
+        {
+          "option_text": "Y.V. Chandrachud",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "HARILAL JEKISUNDAS KANIA (3 Nov 1890 – 6 Nov 1951) — FIRST CHIEF JUSTICE of INDIA. Sworn in by President Rajendra Prasad on 26 January 1950. Served 21 months (Jan 1950 – Nov 1951). Died in office at age 61 of heart attack — only CJI to die in office. Born Surat, Gujarat. Studied at Government Law College, Bombay; practiced at Bombay HC; appointed Chief Justice of Bombay HC (1947); Federal Court judge (1948); elevated to first CJI (1950). Succeeded by M. PATANJALI SASTRI. NOTABLE CJIs chronologically (highlights): (1) Harilal Kania (1950-51); (2) M. Patanjali Sastri (1951-54); (3) Mehr Chand Mahajan (1954, brief); (4) B.K. Mukherjea (1954-56); (5) S.R. Das (1956-59); (6) B.P. Sinha (1959-64); (7) P.B. GAJENDRAGADKAR (1964-66); (8) Amal Kumar Sarkar (1966); (9) Koka Subba Rao (1966-67) — resigned to contest Presidential elections; (10) K.N. Wanchoo (1967-68); (11) M. HIDAYATULLAH (1968-70) — acting President twice; (12) J.C. Shah (1970-71); (13) S.M. Sikri (1971-73) — delivered KESAVANANDA BHARATI judgment; (14) A.N. RAY (1973-77) — SUPERSEDED 3 senior judges for CJI; controversial; (15) M.H. Beg (1977-78); (16) Y.V. CHANDRACHUD (1978-85) — LONGEST-SERVING CJI (7 years 4 months); father of DY Chandrachud; (17) P.N. BHAGWATI (1985-86) — PIL pioneer; (18) R.S. Pathak (1986-89); (19) E.S. Venkataramiah (1989, 6 months); (20) Sabyasachi Mukharji (1990, died in office; 2nd CJI to die in office); ...(45) R.M. Lodha (2014); (46) H.L. Dattu (2014-15); (47) T.S. Thakur (2015-17); (48) J.S. Khehar (2017) — first Sikh CJI; (49) Dipak Misra (2017-18); (50) Ranjan Gogoi (2018-19) — Ayodhya judge; (51) S.A. Bobde (2019-21); (52) N.V. Ramana (2021-22); (53) U.U. Lalit (2022, 74 days); (54) D.Y. CHANDRACHUD (Nov 2022 – Nov 2024); (55) Sanjiv Khanna (Nov 2024 – May 2025); (56) BR Gavai from May 2025 — India's first Dalit CJI. SHORTEST-SERVING CJI: K.N. Singh (17 days, 1991); MEHR CHAND MAHAJAN (49 days, 1954). The office embodies the independence of the Indian judiciary.",
+      "explanation": "HARILAL JEKISUNDAS KANIA (3 Nov 1890 – 6 Nov 1951) — FIRST CHIEF JUSTICE of INDIA. Sworn in by President Rajendra Prasad on 26 January 1950. Served 21 months (Jan 1950 – Nov 1951). Died in office at age 61 of heart attack — only CJI to die in office. Born Surat, Gujarat. Studied at Government Law College, Bombay; practiced at Bombay HC; appointed Chief Justice of Bombay HC (1947); Federal Court judge (1948); elevated to first CJI (1950). Succeeded by M. PATANJALI SASTRI. NOTABLE CJIs chronologically (highlights): (1) Harilal Kania (1950-51); (2) M. Patanjali Sastri (1951-54); (3) Mehr Chand Mahajan (1954, brief); (4) B.K. Mukherjea (1954-56); (5) S.R. Das (1956-59); (6) B.P. Sinha (1959-64); (7) P.B. GAJENDRAGADKAR (1964-66); (8) Amal Kumar Sarkar (1966); (9) Koka Subba Rao (1966-67) — resigned to contest Presidential elections; (10) K.N. Wanchoo (1967-68); (11) M. HIDAYATULLAH (1968-70) — acting President twice; (12) J.C. Shah (1970-71); (13) S.M. Sikri (1971-73) — delivered KESAVANANDA BHARATI judgment; (14) A.N. RAY (1973-77) — SUPERSEDED 3 senior judges for CJI; controversial; (15) M.H. Beg (1977-78); (16) Y.V. CHANDRACHUD (1978-85) — LONGEST-SERVING CJI (7 years 4 months); father of DY Chandrachud; (17) P.N. BHAGWATI (1985-86) — PIL pioneer; (18) R.S. Pathak (1986-89); (19) E.S. Venkataramiah (1989, 6 months); (20) Sabyasachi Mukharji (1990, died in office; 2nd CJI to die in office); ...(45) R.M. Lodha (2014); (46) H.L. Dattu (2014-15); (47) T.S. Thakur (2015-17); (48) J.S. Khehar (2017) — first Sikh CJI; (49) Dipak Misra (2017-18); (50) Ranjan Gogoi (2018-19) — Ayodhya judge; (51) S.A. Bobde (2019-21); (52) N.V. Ramana (2021-22); (53) U.U. Lalit (2022, 74 days); (54) D.Y. CHANDRACHUD (Nov 2022 – Nov 2024); (55) Sanjiv Khanna (Nov 2024 – May 2025); (56) BR Gavai from May 2025 — India's first Dalit CJI. SHORTEST-SERVING CJI: K.N. Singh (17 days, 1991); MEHR CHAND MAHAJAN (49 days, 1954). The office embodies the independence of the Indian judiciary. first + only CJI to die in office.",
       "subject": "Polity",
       "topic": "Supreme Court of India",
       "topic_code": "POL_SC",
@@ -213,7 +381,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sc-01",
       "generated_at": "2026-04-21T03:30:00+00:00",
-      "id": "sgk_POL_SC_00010"
+      "id": "sgk_POL_SC_00010",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "HARILAL JEKISUNDAS KANIA (26 Jan 1950 – 6 Nov 1951); first + only CJI to die in office",
+          "now": "HARILAL JEKISUNDAS KANIA (26 Jan 1950 – 6 Nov 1951)",
+          "moved_to_explanation": "first + only CJI to die in office"
+        }
+      ]
     }
   ]
 }

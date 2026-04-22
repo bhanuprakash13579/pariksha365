@@ -8,10 +8,22 @@
     {
       "stem": "The HIGHEST peak in the world is:",
       "options": [
-        {"option_text": "Mount Kilimanjaro", "is_correct": false},
-        {"option_text": "Mount Everest", "is_correct": true},
-        {"option_text": "K2", "is_correct": false},
-        {"option_text": "Kangchenjunga", "is_correct": false}
+        {
+          "option_text": "Mount Kilimanjaro",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mount Everest",
+          "is_correct": true
+        },
+        {
+          "option_text": "K2",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kangchenjunga",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Mount Everest — 8,848.86 m (newly measured 2020). K2 is second (8,611 m). Kangchenjunga is third (8,586 m) and the highest in India. Kilimanjaro (5,895 m) is Africa's highest. Everest is on Nepal-Tibet border.",
@@ -29,10 +41,22 @@
     {
       "stem": "The LARGEST desert in the world (by area) is:",
       "options": [
-        {"option_text": "Sahara", "is_correct": false},
-        {"option_text": "Antarctica (polar desert)", "is_correct": true},
-        {"option_text": "Gobi", "is_correct": false},
-        {"option_text": "Thar", "is_correct": false}
+        {
+          "option_text": "Sahara",
+          "is_correct": false
+        },
+        {
+          "option_text": "Antarctica",
+          "is_correct": true
+        },
+        {
+          "option_text": "Gobi",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thar",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Antarctica is technically a polar desert (very low precipitation) covering ~14.2 million sq km — the largest desert. Sahara (~9.2 million sq km) is the largest HOT desert. Desert definition: <25 cm annual precipitation.",
@@ -45,15 +69,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-geo-wp-02",
       "generated_at": "2026-04-22T12:30:00+00:00",
-      "id": "sgk_GEO_WORLD_PHYSICAL_MIXED_00002"
+      "id": "sgk_GEO_WORLD_PHYSICAL_MIXED_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Antarctica (polar desert)",
+          "now": "Antarctica",
+          "moved_to_explanation": "polar desert"
+        }
+      ]
     },
     {
       "stem": "Match the OCEAN/SEA with its LOCATION-FACT. A. Pacific Ocean.  B. Atlantic Ocean.  C. Indian Ocean.  D. Arctic Ocean. List-II: 1. World's largest and deepest (Mariana Trench).  2. S-shaped; separates Americas from Europe/Africa.  3. Only ocean named after a country.  4. Smallest ocean, frozen most of the year.",
       "options": [
-        {"option_text": "A-1, B-2, C-3, D-4", "is_correct": true},
-        {"option_text": "A-1, B-3, C-2, D-4", "is_correct": false},
-        {"option_text": "A-2, B-1, C-3, D-4", "is_correct": false},
-        {"option_text": "A-1, B-2, C-4, D-3", "is_correct": false}
+        {
+          "option_text": "A-1, B-2, C-3, D-4",
+          "is_correct": true
+        },
+        {
+          "option_text": "A-1, B-3, C-2, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-2, B-1, C-3, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-2, C-4, D-3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Pacific — largest (~165 million km²), deepest point = Challenger Deep in Mariana Trench (10,994 m). Atlantic — S-shape. Indian — only ocean named for a country. Arctic — smallest (~14 million km²), mostly frozen.",
@@ -71,10 +115,22 @@
     {
       "stem": "The IMAGINARY line at 0° longitude passing through Greenwich is called:",
       "options": [
-        {"option_text": "Tropic of Cancer", "is_correct": false},
-        {"option_text": "Prime Meridian", "is_correct": true},
-        {"option_text": "International Date Line", "is_correct": false},
-        {"option_text": "Equator", "is_correct": false}
+        {
+          "option_text": "Tropic of Cancer",
+          "is_correct": false
+        },
+        {
+          "option_text": "Prime Meridian",
+          "is_correct": true
+        },
+        {
+          "option_text": "International Date Line",
+          "is_correct": false
+        },
+        {
+          "option_text": "Equator",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Prime Meridian — 0° longitude, passes through Greenwich, London. Equator — 0° latitude (dividing N/S hemispheres). Tropic of Cancer — 23.5° N. International Date Line — approximately 180° longitude (zig-zags to avoid splitting countries).",
@@ -92,10 +148,22 @@
     {
       "stem": "'ROOF OF THE WORLD' is a term often used for:",
       "options": [
-        {"option_text": "Himalayas", "is_correct": false},
-        {"option_text": "Pamir Knot / Plateau", "is_correct": true},
-        {"option_text": "Tibetan Plateau (sometimes also used for this)", "is_correct": false},
-        {"option_text": "Andes", "is_correct": false}
+        {
+          "option_text": "Himalayas",
+          "is_correct": false
+        },
+        {
+          "option_text": "Pamir Knot / Plateau",
+          "is_correct": true
+        },
+        {
+          "option_text": "Tibetan Plateau (sometimes also used for this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Andes",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "The Pamir Mountains ('Pamir Knot', intersection of Hindu Kush, Karakoram, Kunlun, Tian Shan, Himalayas) is traditionally called the 'Roof of the World'. The Tibetan Plateau is also often given this epithet — both are acceptable in Indian exam context; Pamir is the more classical answer.",
@@ -113,10 +181,22 @@
     {
       "stem": "Which is the DEEPEST lake in the world?",
       "options": [
-        {"option_text": "Caspian Sea (actually a lake)", "is_correct": false},
-        {"option_text": "Lake Baikal", "is_correct": true},
-        {"option_text": "Lake Tanganyika", "is_correct": false},
-        {"option_text": "Dead Sea", "is_correct": false}
+        {
+          "option_text": "Caspian Sea (actually a lake)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lake Baikal",
+          "is_correct": true
+        },
+        {
+          "option_text": "Lake Tanganyika",
+          "is_correct": false
+        },
+        {
+          "option_text": "Dead Sea",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Lake Baikal (Siberia, Russia) — maximum depth 1,642 m, the deepest and one of the oldest (~25 million years). Caspian Sea is the LARGEST lake by area. Dead Sea — lowest elevation lake (~430 m below sea level).",
@@ -134,10 +214,22 @@
     {
       "stem": "The HIGHEST waterfall in the world is:",
       "options": [
-        {"option_text": "Niagara Falls", "is_correct": false},
-        {"option_text": "Angel Falls (Venezuela)", "is_correct": true},
-        {"option_text": "Victoria Falls", "is_correct": false},
-        {"option_text": "Iguazu Falls", "is_correct": false}
+        {
+          "option_text": "Niagara Falls",
+          "is_correct": false
+        },
+        {
+          "option_text": "Angel Falls (Venezuela)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Victoria Falls",
+          "is_correct": false
+        },
+        {
+          "option_text": "Iguazu Falls",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Angel Falls (Salto Ángel), Venezuela — 979 m total drop — world's highest uninterrupted waterfall. Victoria Falls (Zambia/Zimbabwe) is widest+highest-flow. Niagara (USA/Canada) is most popular tourist. Iguazu (Brazil/Argentina) has the broadest spread.",

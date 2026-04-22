@@ -79,7 +79,7 @@
           "is_correct": false
         },
         {
-          "option_text": "To exhaust oneself by working too hard (especially late into the night)",
+          "option_text": "To exhaust oneself by working too hard",
           "is_correct": true
         },
         {
@@ -92,7 +92,7 @@
         }
       ],
       "correct_letter": "B",
-      "explanation": "A candle burned at both ends is used up twice as fast — meaning: overworking to exhaustion, sleeping too little, overextending oneself.",
+      "explanation": "A candle burned at both ends is used up twice as fast — meaning: overworking to exhaustion, sleeping too little, overextending oneself. especially late into the night.",
       "subject": "Vocabulary",
       "topic": "Idioms and phrases — mixed tiers",
       "topic_code": "VOCAB_IDIOMS_MIXED_TIERS",
@@ -102,7 +102,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-21-voc-it-03",
       "generated_at": "2026-04-21T19:00:00+00:00",
-      "id": "sgk_VOCAB_IDIOMS_MIXED_TIERS_00003"
+      "id": "sgk_VOCAB_IDIOMS_MIXED_TIERS_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "To exhaust oneself by working too hard (especially late into the night)",
+          "now": "To exhaust oneself by working too hard",
+          "moved_to_explanation": "especially late into the night"
+        }
+      ]
     },
     {
       "stem": "'To cut the Gordian knot' means:",

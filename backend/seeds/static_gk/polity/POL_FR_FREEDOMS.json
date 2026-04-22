@@ -281,7 +281,7 @@
           "is_correct": false
         },
         {
-          "option_text": "Applying a PROCEDURAL change retroactively (e.g. rules of evidence, trial procedure)",
+          "option_text": "Applying a PROCEDURAL change retroactively",
           "is_correct": true
         },
         {
@@ -290,7 +290,7 @@
         }
       ],
       "correct_letter": "C",
-      "explanation": "Article 20(1) protects against retroactive SUBSTANTIVE criminal law — creating offences or increasing penalties after the act. It does NOT protect against retroactive procedural changes. Courts routinely apply new procedural rules (evidence, trial procedure, sentencing guidelines) to ongoing cases. A classic 2010 Supreme Court case reiterated this: the accused has no right to be tried under the specific procedural law that existed at the moment of the offence. Options A, B, and D are all within the protection.",
+      "explanation": "Article 20(1) protects against retroactive SUBSTANTIVE criminal law — creating offences or increasing penalties after the act. It does NOT protect against retroactive procedural changes. Courts routinely apply new procedural rules (evidence, trial procedure, sentencing guidelines) to ongoing cases. A classic 2010 Supreme Court case reiterated this: the accused has no right to be tried under the specific procedural law that existed at the moment of the offence. Options A, B, and D are all within the protection. e.g. rules of evidence, trial procedure.",
       "subject": "Polity",
       "topic": "Fundamental Rights — Freedoms, Life & Liberty (Arts 19-22)",
       "topic_code": "POL_FR_FREEDOMS",
@@ -300,7 +300,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-19-pol-fr-freedoms-01",
       "generated_at": "2026-04-19T16:00:01+00:00",
-      "id": "sgk_POL_FR_FREEDOMS_00009"
+      "id": "sgk_POL_FR_FREEDOMS_00009",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Applying a PROCEDURAL change retroactively (e.g. rules of evidence, trial procedure)",
+          "now": "Applying a PROCEDURAL change retroactively",
+          "moved_to_explanation": "e.g. rules of evidence, trial procedure"
+        }
+      ]
     },
     {
       "stem": "Article 19(2) permits 'reasonable restrictions' on the freedom of speech and expression. Which of the following grounds is NOT enumerated in Article 19(2)?",

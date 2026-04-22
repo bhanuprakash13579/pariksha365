@@ -75,7 +75,7 @@
       "stem": "In a certain code, 'MOON' is written as 'NLLM'. Deduce the rule.",
       "options": [
         {
-          "option_text": "Each letter is replaced by its mirror in the alphabet (A↔Z, B↔Y, etc.)",
+          "option_text": "Each letter is replaced by its mirror in the alphabet",
           "is_correct": true
         },
         {
@@ -92,7 +92,7 @@
         }
       ],
       "correct_letter": "A",
-      "explanation": "Mirror alphabet: A↔Z, B↔Y, C↔X, …, M↔N, O↔L, N↔M. Apply: M→N, O→L, O→L, N→M → NLLM ✓. The pair (M,N) is the middle of the alphabet.",
+      "explanation": "Mirror alphabet: A↔Z, B↔Y, C↔X, …, M↔N, O↔L, N↔M. Apply: M→N, O→L, O→L, N→M → NLLM ✓. The pair (M,N) is the middle of the alphabet. A↔Z, B↔Y, etc.",
       "subject": "Reasoning",
       "topic": "Coding-Decoding — mixed tiers",
       "topic_code": "REAS_CODING_MIXED_TIERS",
@@ -102,7 +102,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-21-reas-ct-03",
       "generated_at": "2026-04-21T19:20:00+00:00",
-      "id": "sgk_REAS_CODING_MIXED_TIERS_00003"
+      "id": "sgk_REAS_CODING_MIXED_TIERS_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Each letter is replaced by its mirror in the alphabet (A↔Z, B↔Y, etc.)",
+          "now": "Each letter is replaced by its mirror in the alphabet",
+          "moved_to_explanation": "A↔Z, B↔Y, etc."
+        }
+      ]
     },
     {
       "stem": "If each letter is assigned its alphabet position (A=1, B=2, …, Z=26) and the code of a word is the SUM of its letters' positions, the code for 'MOON' is:",
@@ -145,7 +153,7 @@
           "is_correct": false
         },
         {
-          "option_text": "All letters — it's the identity function",
+          "option_text": "All letters",
           "is_correct": true
         },
         {
@@ -158,7 +166,7 @@
         }
       ],
       "correct_letter": "B",
-      "explanation": "The 'identity' rule is a trivial sanity-check item — every letter maps to itself. Classic warm-up.",
+      "explanation": "The 'identity' rule is a trivial sanity-check item — every letter maps to itself. Classic warm-up. it's the identity function.",
       "subject": "Reasoning",
       "topic": "Coding-Decoding — mixed tiers",
       "topic_code": "REAS_CODING_MIXED_TIERS",
@@ -168,7 +176,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-21-reas-ct-05",
       "generated_at": "2026-04-21T19:20:00+00:00",
-      "id": "sgk_REAS_CODING_MIXED_TIERS_00005"
+      "id": "sgk_REAS_CODING_MIXED_TIERS_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "All letters — it's the identity function",
+          "now": "All letters",
+          "moved_to_explanation": "it's the identity function"
+        }
+      ]
     }
   ]
 }

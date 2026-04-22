@@ -8,10 +8,22 @@
     {
       "stem": "NEWTON's LAW OF UNIVERSAL GRAVITATION states that the gravitational force between two masses is:",
       "options": [
-        {"option_text": "Proportional to sum of masses + distance", "is_correct": false},
-        {"option_text": "F = G·m₁·m₂/r² — directly proportional to product of masses + inversely proportional to SQUARE of distance between centres", "is_correct": true},
-        {"option_text": "Depends only on mass of larger body", "is_correct": false},
-        {"option_text": "Proportional to r (not r²)", "is_correct": false}
+        {
+          "option_text": "Proportional to sum of masses + distance",
+          "is_correct": false
+        },
+        {
+          "option_text": "F = G·m₁·m₂/r²",
+          "is_correct": true
+        },
+        {
+          "option_text": "Depends only on mass of larger body",
+          "is_correct": false
+        },
+        {
+          "option_text": "Proportional to r (not r²)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "NEWTON's LAW OF UNIVERSAL GRAVITATION (1687, published in PRINCIPIA MATHEMATICA) — every particle in universe attracts every other with a force directly proportional to product of their masses + inversely proportional to square of distance between centers. FORMULA: F = G·m₁·m₂/r². (1) F = gravitational force (Newtons); (2) m₁, m₂ = masses (kg); (3) r = distance between centers (m); (4) G = UNIVERSAL GRAVITATIONAL CONSTANT = 6.674 × 10⁻¹¹ N·m²/kg². G measured by HENRY CAVENDISH (1798, 'Cavendish Experiment') using torsion balance — famous 'weighing the Earth' experiment; gave first accurate G value + hence Earth's mass + density. PROPERTIES: (1) ALWAYS ATTRACTIVE (no repulsive gravity known, unlike EM force). (2) INVERSE-SQUARE law (F ∝ 1/r²) — identical mathematical form to Coulomb's electric force. (3) Acts over ANY DISTANCE (infinite range). (4) Independent of medium. (5) Mutual (Newton's 3rd law — Earth attracts Moon; Moon attracts Earth same magnitude opposite direction). APPLICATIONS: (1) PLANETARY MOTION — Kepler's 3 LAWS (1609, 1619) elegantly derived from Newton's law — (a) Law 1 (ellipse): planets orbit Sun in ellipses with Sun at one focus. (b) Law 2 (equal areas): line from Sun to planet sweeps equal areas in equal times (conservation of angular momentum). (c) Law 3 (harmonic): T² ∝ r³ (period squared proportional to semi-major axis cubed). (2) TIDES — Moon + Sun gravity causes tidal bulges; 2 high tides per day (Moon side + opposite side); SPRING TIDES (new + full moon, Sun + Moon aligned) + NEAP TIDES (quarter moons, 90°); impacts on coastal life, marine creatures, fisheries. (3) SATELLITE MOTION — artificial satellites orbit by centripetal gravity balance (gravity = mv²/r). LEO (altitude 200-2000 km, period 90-120 min); MEO (2,000-35,786 km; GPS ~20,200 km, 12 hr period); GEO / GEOSTATIONARY (35,786 km altitude, 24 hr period — 'sidereal day'; appears stationary over equator — used for communications, weather satellites); HEO (highly elliptical). (4) ESCAPE VELOCITY — v = √(2GM/R) = 11.2 km/s for Earth (to escape Earth's gravity). From Moon ~2.4 km/s. From Sun ~42 km/s at Earth distance. LIMITATIONS of Newton: fails at strong fields + near speed of light. REPLACED by EINSTEIN'S GENERAL RELATIVITY (1915) — gravity is CURVATURE OF SPACETIME by mass-energy; predicts gravitational lensing, gravitational waves (LIGO 2015 direct detection; Nobel 2017), black holes, cosmological expansion, time dilation (GPS satellites' clocks corrected for relativistic effects daily). Newton's law remains ACCURATE ENOUGH for most engineering + everyday uses.",
@@ -24,18 +36,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-grav-01",
       "generated_at": "2026-04-21T06:00:00+00:00",
-      "id": "sgk_PHY_GRAVITATION_00001"
+      "id": "sgk_PHY_GRAVITATION_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "F = G·m₁·m₂/r² — directly proportional to product of masses + inversely proportional to SQUARE of distance between centres",
+          "now": "F = G·m₁·m₂/r²",
+          "moved_to_explanation": "directly proportional to product of masses + inversely proportional to SQUARE of distance between centres"
+        }
+      ]
     },
     {
       "stem": "Acceleration due to gravity (g) on Earth's surface is approximately:",
       "options": [
-        {"option_text": "3.7 m/s²", "is_correct": false},
-        {"option_text": "9.8 m/s² (average); varies 9.78 (equator) to 9.83 (poles) due to Earth's oblate shape + rotation; STANDARD g = 9.80665 m/s²", "is_correct": true},
-        {"option_text": "100 m/s²", "is_correct": false},
-        {"option_text": "1 m/s²", "is_correct": false}
+        {
+          "option_text": "3.7 m/s²",
+          "is_correct": false
+        },
+        {
+          "option_text": "9.8 m/s² (average)",
+          "is_correct": true
+        },
+        {
+          "option_text": "100 m/s²",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 m/s²",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ACCELERATION DUE TO GRAVITY (g) on Earth — the rate at which free-falling objects accelerate due to Earth's gravity. AVERAGE g ≈ 9.8 m/s² (or 9.81 m/s² approximate). STANDARD VALUE = 9.80665 m/s² (exactly, by SI convention). FROM NEWTON's LAW: g = GM/R² where M = Earth's mass (5.972 × 10²⁴ kg), R = Earth's radius (~6371 km). Calculation: 6.674e-11 × 5.972e24 / (6.371e6)² = 9.82 m/s². VARIES WITH LOCATION: (1) EQUATOR: 9.78 m/s² — LOWEST. Reasons: (a) Earth is OBLATE SPHEROID (bulges at equator due to rotation; radius 21 km more at equator than poles; greater r → smaller g; (b) centrifugal 'pseudo-force' due to Earth's rotation reduces effective gravity (~0.034 m/s²); (c) latitude effect. (2) POLES: 9.83 m/s² — HIGHEST; no centrifugal + closer to center. (3) ALTITUDE: g decreases with height (g' = g(1-2h/R) approximately for small h). Mt Everest (8848m): g ~9.77; ISS altitude (400 km): g ~8.7 m/s² (astronauts are in FREE FALL, not zero gravity — 'microgravity' more accurate). (4) DEEP WITHIN Earth: g decreases (only mass BELOW you contributes); at center g = 0 (all mass surrounds you, cancels out). (5) LOCAL anomalies — gravimetry used for MINERAL EXPLORATION (dense ore bodies increase local g; GRACE satellite mission). VALUES of g on OTHER PLANETS (Earth g = 9.8 is reference ≈ 1 g): (a) MERCURY 3.7 m/s² (~0.38 g); (b) VENUS 8.87 (~0.9 g); (c) MOON 1.62 (~0.16 g — why Apollo astronauts bounce); (d) MARS 3.71 (~0.38 g); (e) JUPITER 24.79 (~2.53 g — enormous); (f) SATURN 10.44 (~1.07 g); (g) URANUS 8.69 (~0.89 g); (h) NEPTUNE 11.15 (~1.14 g); (i) SUN 274 (~28 g — crushing; can't stand). EXPERIMENTS: (1) Galileo's LEANING TOWER OF PISA (legend, ~1590) — cannonballs of different mass fall in same time (independent of mass). Actually done by Stevin + Adrian 1586 Delft; Galileo with inclined planes. (2) Galileo's INCLINED PLANE — showed s ∝ t² for uniformly accelerated motion. (3) Apollo 15 (1971) on MOON — Commander Dave Scott dropped a hammer + a feather (in vacuum): both hit lunar surface at SAME TIME — Galileo vindicated. (4) FREE-FALL experiments: s = ½gt² (falling distance), v = gt (speed after time t), v² = 2gs. FORCES + EQUATIONS: Weight W = mg (force due to gravity on mass m at surface). Mass (invariant scalar) vs Weight (location-dependent vector force). Your mass is constant; your WEIGHT on the Moon is 1/6 of on Earth.",
+      "explanation": "ACCELERATION DUE TO GRAVITY (g) on Earth — the rate at which free-falling objects accelerate due to Earth's gravity. AVERAGE g ≈ 9.8 m/s² (or 9.81 m/s² approximate). STANDARD VALUE = 9.80665 m/s² (exactly, by SI convention). FROM NEWTON's LAW: g = GM/R² where M = Earth's mass (5.972 × 10²⁴ kg), R = Earth's radius (~6371 km). Calculation: 6.674e-11 × 5.972e24 / (6.371e6)² = 9.82 m/s². VARIES WITH LOCATION: (1) EQUATOR: 9.78 m/s² — LOWEST. Reasons: (a) Earth is OBLATE SPHEROID (bulges at equator due to rotation; radius 21 km more at equator than poles; greater r → smaller g; (b) centrifugal 'pseudo-force' due to Earth's rotation reduces effective gravity (~0.034 m/s²); (c) latitude effect. (2) POLES: 9.83 m/s² — HIGHEST; no centrifugal + closer to center. (3) ALTITUDE: g decreases with height (g' = g(1-2h/R) approximately for small h). Mt Everest (8848m): g ~9.77; ISS altitude (400 km): g ~8.7 m/s² (astronauts are in FREE FALL, not zero gravity — 'microgravity' more accurate). (4) DEEP WITHIN Earth: g decreases (only mass BELOW you contributes); at center g = 0 (all mass surrounds you, cancels out). (5) LOCAL anomalies — gravimetry used for MINERAL EXPLORATION (dense ore bodies increase local g; GRACE satellite mission). VALUES of g on OTHER PLANETS (Earth g = 9.8 is reference ≈ 1 g): (a) MERCURY 3.7 m/s² (~0.38 g); (b) VENUS 8.87 (~0.9 g); (c) MOON 1.62 (~0.16 g — why Apollo astronauts bounce); (d) MARS 3.71 (~0.38 g); (e) JUPITER 24.79 (~2.53 g — enormous); (f) SATURN 10.44 (~1.07 g); (g) URANUS 8.69 (~0.89 g); (h) NEPTUNE 11.15 (~1.14 g); (i) SUN 274 (~28 g — crushing; can't stand). EXPERIMENTS: (1) Galileo's LEANING TOWER OF PISA (legend, ~1590) — cannonballs of different mass fall in same time (independent of mass). Actually done by Stevin + Adrian 1586 Delft; Galileo with inclined planes. (2) Galileo's INCLINED PLANE — showed s ∝ t² for uniformly accelerated motion. (3) Apollo 15 (1971) on MOON — Commander Dave Scott dropped a hammer + a feather (in vacuum): both hit lunar surface at SAME TIME — Galileo vindicated. (4) FREE-FALL experiments: s = ½gt² (falling distance), v = gt (speed after time t), v² = 2gs. FORCES + EQUATIONS: Weight W = mg (force due to gravity on mass m at surface). Mass (invariant scalar) vs Weight (location-dependent vector force). Your mass is constant; your WEIGHT on the Moon is 1/6 of on Earth. varies 9.78 (equator) to 9.83 (poles) due to Earth's oblate shape + rotation; STANDARD g = 9.80665 m/s².",
       "subject": "Physics",
       "topic": "Gravitation",
       "topic_code": "PHY_GRAVITATION",
@@ -45,18 +77,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-grav-01",
       "generated_at": "2026-04-21T06:00:00+00:00",
-      "id": "sgk_PHY_GRAVITATION_00002"
+      "id": "sgk_PHY_GRAVITATION_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "9.8 m/s² (average); varies 9.78 (equator) to 9.83 (poles) due to Earth's oblate shape + rotation; STANDARD g = 9.80665 m/s²",
+          "now": "9.8 m/s² (average)",
+          "moved_to_explanation": "varies 9.78 (equator) to 9.83 (poles) due to Earth's oblate shape + rotation; STANDARD g = 9.80665 m/s²"
+        }
+      ]
     },
     {
       "stem": "ESCAPE VELOCITY from the surface of EARTH is:",
       "options": [
-        {"option_text": "3 km/s", "is_correct": false},
-        {"option_text": "11.2 km/s (~40,270 km/h) — minimum speed to escape Earth's gravity without further propulsion; formula v = √(2GM/R)", "is_correct": true},
-        {"option_text": "100 km/s", "is_correct": false},
-        {"option_text": "1 km/s", "is_correct": false}
+        {
+          "option_text": "3 km/s",
+          "is_correct": false
+        },
+        {
+          "option_text": "11.2 km/s",
+          "is_correct": true
+        },
+        {
+          "option_text": "100 km/s",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 km/s",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ESCAPE VELOCITY (Ve) — minimum speed needed for an object (without propulsion) at a specified distance from a body to escape its gravitational pull completely + never return. For EARTH SURFACE: Ve = 11.186 km/s (~11.2 km/s = ~40,270 km/h). FORMULA: Ve = √(2GM/R) where G = grav constant, M = Earth's mass, R = Earth's radius. Equivalently, Ve = √2 × orbital velocity. DERIVATION: Kinetic energy ½mv² = Gravitational PE −GMm/R → v_min = √(2GM/R). VALUES from DIFFERENT BODIES: (a) MOON surface: 2.4 km/s (much lower → easy lunar ascent — LUNAR MODULE had small fuel); (b) MARS surface: 5.03 km/s; (c) JUPITER surface (no solid surface; from cloud tops): 59.5 km/s; (d) SATURN: 35.5 km/s; (e) SUN surface: 617.5 km/s. Earth-at-solar-distance from Sun: 42.1 km/s (to escape the Sun entirely from Earth's orbit — needed for Voyager + New Horizons). From NEUTRON STAR: up to 100,000 km/s (c/3). From BLACK HOLE event horizon: c (speed of light) — definition. PRACTICAL SIGNIFICANCE: (1) Rockets carry enough fuel to reach SPEEDS above Ve for interplanetary missions (Apollo, Voyager, Mars missions). (2) Orbital mechanics — Ve is upper bound; LOWER ORBITAL velocity (~7.8 km/s at LEO 200 km) needed for circular orbit (satellites). Going faster than orbital but less than Ve = elliptical orbit. (3) SATELLITE LAUNCH requires achieving orbital velocity (for LEO) or trans-lunar injection velocity (for Moon) or higher. (4) GRAVITY ASSIST / SLINGSHOT — spacecraft uses a planet's gravity to gain energy — e.g., Voyager 1+2 used Jupiter + Saturn gravity; Cassini used Venus-Venus-Earth-Jupiter swingbys. ORBITAL VELOCITY of Earth satellites: (a) ISS (400 km altitude): 7.66 km/s (circular orbit; period 90 min). (b) GPS (20,200 km): 3.87 km/s. (c) GEOSTATIONARY (35,786 km): 3.07 km/s, period 24 hr. (d) Moon (384,400 km): 1.02 km/s. ROCKETS in INDIA (ISRO): PSLV can deliver 1.75 tonne to 600 km SSO (orbital velocities achieved); GSLV Mk-II + III (LVM3) can deliver to GTO (geostationary transfer orbit); Chandrayaan-3 (2023) achieved lunar transfer (~11 km/s near Earth escape); Mars Orbiter Mission (2013) achieved HELIOCENTRIC orbit via 6 earth-orbit raising manoeuvres then hyperbolic trans-Mars trajectory. V₂ ROCKET (1944 Nazi Germany) — FIRST rocket to CROSS KÁRMÁN LINE (100 km, boundary of space); reached 1.6 km/s (sub-orbital). SOYUZ / FALCON 9 / SATURN V etc. designed for 7.8-11.2 km/s depending on destination. FIRST spacecraft to achieve solar-system escape: PIONEER 10 (launched 1972; last signal 2003). VOYAGER 1 left heliosphere 2012 (first to enter interstellar space).",
+      "explanation": "ESCAPE VELOCITY (Ve) — minimum speed needed for an object (without propulsion) at a specified distance from a body to escape its gravitational pull completely + never return. For EARTH SURFACE: Ve = 11.186 km/s (~11.2 km/s = ~40,270 km/h). FORMULA: Ve = √(2GM/R) where G = grav constant, M = Earth's mass, R = Earth's radius. Equivalently, Ve = √2 × orbital velocity. DERIVATION: Kinetic energy ½mv² = Gravitational PE −GMm/R → v_min = √(2GM/R). VALUES from DIFFERENT BODIES: (a) MOON surface: 2.4 km/s (much lower → easy lunar ascent — LUNAR MODULE had small fuel); (b) MARS surface: 5.03 km/s; (c) JUPITER surface (no solid surface; from cloud tops): 59.5 km/s; (d) SATURN: 35.5 km/s; (e) SUN surface: 617.5 km/s. Earth-at-solar-distance from Sun: 42.1 km/s (to escape the Sun entirely from Earth's orbit — needed for Voyager + New Horizons). From NEUTRON STAR: up to 100,000 km/s (c/3). From BLACK HOLE event horizon: c (speed of light) — definition. PRACTICAL SIGNIFICANCE: (1) Rockets carry enough fuel to reach SPEEDS above Ve for interplanetary missions (Apollo, Voyager, Mars missions). (2) Orbital mechanics — Ve is upper bound; LOWER ORBITAL velocity (~7.8 km/s at LEO 200 km) needed for circular orbit (satellites). Going faster than orbital but less than Ve = elliptical orbit. (3) SATELLITE LAUNCH requires achieving orbital velocity (for LEO) or trans-lunar injection velocity (for Moon) or higher. (4) GRAVITY ASSIST / SLINGSHOT — spacecraft uses a planet's gravity to gain energy — e.g., Voyager 1+2 used Jupiter + Saturn gravity; Cassini used Venus-Venus-Earth-Jupiter swingbys. ORBITAL VELOCITY of Earth satellites: (a) ISS (400 km altitude): 7.66 km/s (circular orbit; period 90 min). (b) GPS (20,200 km): 3.87 km/s. (c) GEOSTATIONARY (35,786 km): 3.07 km/s, period 24 hr. (d) Moon (384,400 km): 1.02 km/s. ROCKETS in INDIA (ISRO): PSLV can deliver 1.75 tonne to 600 km SSO (orbital velocities achieved); GSLV Mk-II + III (LVM3) can deliver to GTO (geostationary transfer orbit); Chandrayaan-3 (2023) achieved lunar transfer (~11 km/s near Earth escape); Mars Orbiter Mission (2013) achieved HELIOCENTRIC orbit via 6 earth-orbit raising manoeuvres then hyperbolic trans-Mars trajectory. V₂ ROCKET (1944 Nazi Germany) — FIRST rocket to CROSS KÁRMÁN LINE (100 km, boundary of space); reached 1.6 km/s (sub-orbital). SOYUZ / FALCON 9 / SATURN V etc. designed for 7.8-11.2 km/s depending on destination. FIRST spacecraft to achieve solar-system escape: PIONEER 10 (launched 1972; last signal 2003). VOYAGER 1 left heliosphere 2012 (first to enter interstellar space). minimum speed to escape Earth's gravity without further propulsion; formula v = √(2GM/R); ~40,270 km/h.",
       "subject": "Physics",
       "topic": "Gravitation",
       "topic_code": "PHY_GRAVITATION",
@@ -66,18 +118,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-grav-01",
       "generated_at": "2026-04-21T06:00:00+00:00",
-      "id": "sgk_PHY_GRAVITATION_00003"
+      "id": "sgk_PHY_GRAVITATION_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "11.2 km/s (~40,270 km/h) — minimum speed to escape Earth's gravity without further propulsion; formula v = √(2GM/R)",
+          "now": "11.2 km/s",
+          "moved_to_explanation": "minimum speed to escape Earth's gravity without further propulsion; formula v = √(2GM/R); ~40,270 km/h"
+        }
+      ]
     },
     {
       "stem": "KEPLER's THIRD LAW of planetary motion states that:",
       "options": [
-        {"option_text": "All orbits are circles", "is_correct": false},
-        {"option_text": "T² ∝ r³ — square of orbital period is proportional to cube of semi-major axis (orbital radius); enables mass-distance determination in celestial mechanics", "is_correct": true},
-        {"option_text": "T ∝ r²", "is_correct": false},
-        {"option_text": "Orbits never change", "is_correct": false}
+        {
+          "option_text": "All orbits are circles",
+          "is_correct": false
+        },
+        {
+          "option_text": "T² ∝ r³",
+          "is_correct": true
+        },
+        {
+          "option_text": "T ∝ r²",
+          "is_correct": false
+        },
+        {
+          "option_text": "Orbits never change",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "KEPLER's LAWS of PLANETARY MOTION — 3 empirical laws formulated by JOHANNES KEPLER (1571-1630, German astronomer + mathematician) based on TYCHO BRAHE's precise naked-eye observations (1546-1601). Kepler worked for decades to deduce them. (1) FIRST LAW (Law of Ellipses, 1609) — planets move in ELLIPTICAL ORBITS with the SUN at one FOCUS (not center). Broke the 2000-year circular-orbit dogma of Aristotle + Ptolemy. (2) SECOND LAW (Law of Equal Areas, 1609) — line joining planet to Sun SWEEPS EQUAL AREAS in EQUAL TIMES. Consequence: planets move FASTER at PERIHELION (closest to Sun) + SLOWER at APHELION. Fundamental: conservation of angular momentum L = mvr (constant). (3) THIRD LAW (Harmonic Law, 1619) — T² = (4π²/GM) × a³; commonly T² ∝ a³ where T = orbital period + a = semi-major axis. FOR Earth, T = 1 year, a = 1 AU = 1.496 × 10⁸ km. For ANY planet, T² (in years²) = a³ (in AU³). DERIVATION: from Newton's gravitation + centripetal force. MASS of central body M = 4π²a³/(GT²) — this lets ASTRONOMERS measure Earth's mass, Sun's mass, stars' masses! Examples: Earth T = 1 yr, a = 1 AU → T² = 1, a³ = 1 ✓. Mars: T = 1.88 yr, a = 1.524 AU → T² = 3.53, a³ = 3.54 ✓. Jupiter: T = 11.86 yr, a = 5.20 AU → T² = 140.7, a³ = 140.6 ✓. NEPTUNE: T = 164.8 yr, a = 30.07 AU → T² = 27,170, a³ = 27,200 ✓. NEWTON (1687) EXPLAINED Kepler's laws mathematically using his inverse-square gravitation law. SOLAR SYSTEM structure: (A) ROCKY planets: Mercury, Venus, Earth, Mars (inside Main Asteroid Belt between Mars + Jupiter). (B) GAS GIANTS: Jupiter, Saturn (hydrogen + helium). (C) ICE GIANTS: Uranus, Neptune (water + ammonia + methane ices). (D) DWARF PLANETS: Pluto (reclassified 2006 by IAU; Kuiper Belt object), Eris, Haumea, Makemake, Ceres (asteroid belt). (E) KUIPER BELT (30-50 AU, icy bodies) + OORT CLOUD (1-100k AU; source of long-period comets). PLANET LINE-UP (by distance from Sun, 'My Very Educated Mother Just Served Us Noodles'): MERCURY (0.4 AU), VENUS (0.7), EARTH (1), MARS (1.5), JUPITER (5.2), SATURN (9.5), URANUS (19.2), NEPTUNE (30.1). (Pluto used to be 9th — reclassified 2006 as 'dwarf planet' by IAU at Prague because it hadn't 'cleared its orbital neighborhood'.) EXOPLANET discoveries explosion since 1995 (51 Pegasi b, Nobel 2019 to Mayor + Queloz) — 5,700+ confirmed exoplanets known (Dec 2024); Kepler + TESS space missions + JWST characterising atmospheres. 'GOLDILOCKS ZONE' / habitable zone around stars where liquid water possible.",
+      "explanation": "KEPLER's LAWS of PLANETARY MOTION — 3 empirical laws formulated by JOHANNES KEPLER (1571-1630, German astronomer + mathematician) based on TYCHO BRAHE's precise naked-eye observations (1546-1601). Kepler worked for decades to deduce them. (1) FIRST LAW (Law of Ellipses, 1609) — planets move in ELLIPTICAL ORBITS with the SUN at one FOCUS (not center). Broke the 2000-year circular-orbit dogma of Aristotle + Ptolemy. (2) SECOND LAW (Law of Equal Areas, 1609) — line joining planet to Sun SWEEPS EQUAL AREAS in EQUAL TIMES. Consequence: planets move FASTER at PERIHELION (closest to Sun) + SLOWER at APHELION. Fundamental: conservation of angular momentum L = mvr (constant). (3) THIRD LAW (Harmonic Law, 1619) — T² = (4π²/GM) × a³; commonly T² ∝ a³ where T = orbital period + a = semi-major axis. FOR Earth, T = 1 year, a = 1 AU = 1.496 × 10⁸ km. For ANY planet, T² (in years²) = a³ (in AU³). DERIVATION: from Newton's gravitation + centripetal force. MASS of central body M = 4π²a³/(GT²) — this lets ASTRONOMERS measure Earth's mass, Sun's mass, stars' masses! Examples: Earth T = 1 yr, a = 1 AU → T² = 1, a³ = 1 ✓. Mars: T = 1.88 yr, a = 1.524 AU → T² = 3.53, a³ = 3.54 ✓. Jupiter: T = 11.86 yr, a = 5.20 AU → T² = 140.7, a³ = 140.6 ✓. NEPTUNE: T = 164.8 yr, a = 30.07 AU → T² = 27,170, a³ = 27,200 ✓. NEWTON (1687) EXPLAINED Kepler's laws mathematically using his inverse-square gravitation law. SOLAR SYSTEM structure: (A) ROCKY planets: Mercury, Venus, Earth, Mars (inside Main Asteroid Belt between Mars + Jupiter). (B) GAS GIANTS: Jupiter, Saturn (hydrogen + helium). (C) ICE GIANTS: Uranus, Neptune (water + ammonia + methane ices). (D) DWARF PLANETS: Pluto (reclassified 2006 by IAU; Kuiper Belt object), Eris, Haumea, Makemake, Ceres (asteroid belt). (E) KUIPER BELT (30-50 AU, icy bodies) + OORT CLOUD (1-100k AU; source of long-period comets). PLANET LINE-UP (by distance from Sun, 'My Very Educated Mother Just Served Us Noodles'): MERCURY (0.4 AU), VENUS (0.7), EARTH (1), MARS (1.5), JUPITER (5.2), SATURN (9.5), URANUS (19.2), NEPTUNE (30.1). (Pluto used to be 9th — reclassified 2006 as 'dwarf planet' by IAU at Prague because it hadn't 'cleared its orbital neighborhood'.) EXOPLANET discoveries explosion since 1995 (51 Pegasi b, Nobel 2019 to Mayor + Queloz) — 5,700+ confirmed exoplanets known (Dec 2024); Kepler + TESS space missions + JWST characterising atmospheres. 'GOLDILOCKS ZONE' / habitable zone around stars where liquid water possible. square of orbital period is proportional to cube of semi-major axis (orbital radius); enables mass-distance determination in celestial mechanics.",
       "subject": "Physics",
       "topic": "Gravitation",
       "topic_code": "PHY_GRAVITATION",
@@ -87,18 +159,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-grav-01",
       "generated_at": "2026-04-21T06:00:00+00:00",
-      "id": "sgk_PHY_GRAVITATION_00004"
+      "id": "sgk_PHY_GRAVITATION_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "T² ∝ r³ — square of orbital period is proportional to cube of semi-major axis (orbital radius); enables mass-distance determination in celestial mechanics",
+          "now": "T² ∝ r³",
+          "moved_to_explanation": "square of orbital period is proportional to cube of semi-major axis (orbital radius); enables mass-distance determination in celestial mechanics"
+        }
+      ]
     },
     {
       "stem": "A GEOSTATIONARY SATELLITE orbits at approximately what altitude above Earth's equator?",
       "options": [
-        {"option_text": "400 km (LEO)", "is_correct": false},
-        {"option_text": "35,786 km — period 24 hours matching Earth's rotation; appears STATIONARY over fixed equatorial point; ideal for communication + broadcast", "is_correct": true},
-        {"option_text": "1,000,000 km", "is_correct": false},
-        {"option_text": "100 km", "is_correct": false}
+        {
+          "option_text": "400 km (LEO)",
+          "is_correct": false
+        },
+        {
+          "option_text": "35,786 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "1,000,000 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "100 km",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "GEOSTATIONARY ORBIT (GEO) — circular orbit at ~35,786 KM ALTITUDE (42,164 km from Earth's center) with period equal to Earth's SIDEREAL DAY (23 hours 56 minutes 4 seconds). Satellite moves east at same angular speed as Earth → appears STATIONARY from ground. Discovered as theoretical concept by Herman Potočnik (1929) + popularised by ARTHUR C. CLARKE (1945 WIRELESS WORLD article 'Extra-Terrestrial Relays') — hence 'CLARKE ORBIT' / 'CLARKE BELT'. FIRST geostationary satellite: SYNCOM 3 (NASA, 1964). USES: (1) COMMUNICATION — 3 GEO satellites at 120° apart cover entire Earth (near equator); fixed dishes + no tracking needed (consumer DTH like Tata Sky + Airtel Xstream + Dish TV in India). (2) WEATHER — INSAT series (India), GOES (USA), Meteosat (Europe). (3) BROADCASTING — TV, radio. (4) MILITARY communications. ~500+ satellites in GEO currently. GEO congestion is growing — INTERNATIONAL TELECOMMUNICATION UNION (ITU) allocates slots. INDIA's GEO satellites: (a) APPLE (1981 — first Indian 3-axis stabilized; launched by Ariane-1). (b) INSAT series — 1A, 1B, 1C, 1D (communications + weather, 1980s-90s). (c) INSAT-3 + INSAT-4 series (2000s-10s — COMMUNICATION + Ku band). (d) GSAT series (GSAT-1 to GSAT-30+; heavy geo-communication, internet, broadcast, ISRO-Defence). (e) CARTOSAT (Earth observation in SSO, not GEO). OTHER TYPES of ORBIT: (1) LOW EARTH ORBIT (LEO) — 200-2,000 km altitude; period 90-120 min. Examples: ISS (400 km), HUBBLE (540 km, retired 2025?), Starlink constellation (~550 km), OneWeb (1,200 km); Earth observation, space stations, spy satellites. (2) MEDIUM EARTH ORBIT (MEO) — 2,000-35,786 km. Examples: GPS (20,200 km, 12 hr), Galileo, GLONASS, NavIC (partially MEO, partially GSO). (3) GEOSTATIONARY (GEO) — 35,786 km, 24 hr, equatorial, 0° inclination. (4) GEOSYNCHRONOUS (GSO) — same period as Earth but inclined orbit (not above equator); appears as FIGURE-8 in sky (analemma). (5) POLAR ORBIT — ~90° inclination; each orbit covers different longitude as Earth rotates — for Earth observation, weather, remote sensing; e.g., Landsat, NOAA, INSAT-3D, Cartosat. (6) SUN-SYNCHRONOUS ORBIT (SSO) — polar orbit synchronized with sun; passes each latitude at same LOCAL time — constant illumination angle for Earth imaging; altitude 600-800 km. (7) HIGHLY ELLIPTICAL ORBIT (HEO) — Molniya (Russia — 12 hr, good for polar high-latitude coverage), Tundra (24 hr). (8) MOON ORBIT: ~384,400 km; 27.3-day period. (9) LAGRANGE POINTS (L1-L5) — balance points in 2-body system. L1 Earth-Sun (1.5M km — SOHO, DSCOVR, Aditya-L1); L2 Earth-Sun (opposite — JWST, Gaia, Herschel). KESSLER SYNDROME — space debris cascading collisions; concern for future of LEO.",
+      "explanation": "GEOSTATIONARY ORBIT (GEO) — circular orbit at ~35,786 KM ALTITUDE (42,164 km from Earth's center) with period equal to Earth's SIDEREAL DAY (23 hours 56 minutes 4 seconds). Satellite moves east at same angular speed as Earth → appears STATIONARY from ground. Discovered as theoretical concept by Herman Potočnik (1929) + popularised by ARTHUR C. CLARKE (1945 WIRELESS WORLD article 'Extra-Terrestrial Relays') — hence 'CLARKE ORBIT' / 'CLARKE BELT'. FIRST geostationary satellite: SYNCOM 3 (NASA, 1964). USES: (1) COMMUNICATION — 3 GEO satellites at 120° apart cover entire Earth (near equator); fixed dishes + no tracking needed (consumer DTH like Tata Sky + Airtel Xstream + Dish TV in India). (2) WEATHER — INSAT series (India), GOES (USA), Meteosat (Europe). (3) BROADCASTING — TV, radio. (4) MILITARY communications. ~500+ satellites in GEO currently. GEO congestion is growing — INTERNATIONAL TELECOMMUNICATION UNION (ITU) allocates slots. INDIA's GEO satellites: (a) APPLE (1981 — first Indian 3-axis stabilized; launched by Ariane-1). (b) INSAT series — 1A, 1B, 1C, 1D (communications + weather, 1980s-90s). (c) INSAT-3 + INSAT-4 series (2000s-10s — COMMUNICATION + Ku band). (d) GSAT series (GSAT-1 to GSAT-30+; heavy geo-communication, internet, broadcast, ISRO-Defence). (e) CARTOSAT (Earth observation in SSO, not GEO). OTHER TYPES of ORBIT: (1) LOW EARTH ORBIT (LEO) — 200-2,000 km altitude; period 90-120 min. Examples: ISS (400 km), HUBBLE (540 km, retired 2025?), Starlink constellation (~550 km), OneWeb (1,200 km); Earth observation, space stations, spy satellites. (2) MEDIUM EARTH ORBIT (MEO) — 2,000-35,786 km. Examples: GPS (20,200 km, 12 hr), Galileo, GLONASS, NavIC (partially MEO, partially GSO). (3) GEOSTATIONARY (GEO) — 35,786 km, 24 hr, equatorial, 0° inclination. (4) GEOSYNCHRONOUS (GSO) — same period as Earth but inclined orbit (not above equator); appears as FIGURE-8 in sky (analemma). (5) POLAR ORBIT — ~90° inclination; each orbit covers different longitude as Earth rotates — for Earth observation, weather, remote sensing; e.g., Landsat, NOAA, INSAT-3D, Cartosat. (6) SUN-SYNCHRONOUS ORBIT (SSO) — polar orbit synchronized with sun; passes each latitude at same LOCAL time — constant illumination angle for Earth imaging; altitude 600-800 km. (7) HIGHLY ELLIPTICAL ORBIT (HEO) — Molniya (Russia — 12 hr, good for polar high-latitude coverage), Tundra (24 hr). (8) MOON ORBIT: ~384,400 km; 27.3-day period. (9) LAGRANGE POINTS (L1-L5) — balance points in 2-body system. L1 Earth-Sun (1.5M km — SOHO, DSCOVR, Aditya-L1); L2 Earth-Sun (opposite — JWST, Gaia, Herschel). KESSLER SYNDROME — space debris cascading collisions; concern for future of LEO. period 24 hours matching Earth's rotation; appears STATIONARY over fixed equatorial point; ideal for communication + broadcast.",
       "subject": "Physics",
       "topic": "Gravitation",
       "topic_code": "PHY_GRAVITATION",
@@ -108,18 +200,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-grav-01",
       "generated_at": "2026-04-21T06:00:00+00:00",
-      "id": "sgk_PHY_GRAVITATION_00005"
+      "id": "sgk_PHY_GRAVITATION_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "35,786 km — period 24 hours matching Earth's rotation; appears STATIONARY over fixed equatorial point; ideal for communication + broadcast",
+          "now": "35,786 km",
+          "moved_to_explanation": "period 24 hours matching Earth's rotation; appears STATIONARY over fixed equatorial point; ideal for communication + broadcast"
+        }
+      ]
     },
     {
       "stem": "Why do ASTRONAUTS appear WEIGHTLESS on the International Space Station?",
       "options": [
-        {"option_text": "There is no gravity in space", "is_correct": false},
-        {"option_text": "They are in CONTINUOUS FREE-FALL around Earth — gravity pulls ISS + astronauts equally, so they float inside; this is 'MICROGRAVITY', not zero-gravity", "is_correct": true},
-        {"option_text": "Air pressure lifts them", "is_correct": false},
-        {"option_text": "Magnets in suit", "is_correct": false}
+        {
+          "option_text": "There is no gravity in space",
+          "is_correct": false
+        },
+        {
+          "option_text": "They are in CONTINUOUS FREE-FALL around Earth",
+          "is_correct": true
+        },
+        {
+          "option_text": "Air pressure lifts them",
+          "is_correct": false
+        },
+        {
+          "option_text": "Magnets in suit",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "MICROGRAVITY on ISS — astronauts + ISS are in CONSTANT FREE-FALL around Earth. Gravity at ISS altitude (~400 km) is still ~8.7 m/s² (only 11% less than surface) — NOT zero. HOW: ISS orbits at 7.66 km/s tangentially; Earth's gravity pulls it downward, but its forward speed makes it 'miss' Earth — it keeps falling AROUND Earth (elliptical/circular orbit). INSIDE the ISS, both structure + astronauts accelerate at SAME RATE toward Earth (~8.7 m/s²) → no relative acceleration → astronauts FLOAT relative to ISS → 'weightlessness'. EQUIVALENCE PRINCIPLE (Einstein's insight): free-fall is indistinguishable from being in zero gravity (locally). BASIS for General Relativity 1915. DEMONSTRATED: (1) Elevator thought experiment — if cable cuts, you float inside falling elevator. (2) VOMIT COMET / Reduced Gravity Aircraft — KC-135 / A300 'Zero-G' planes fly parabolic trajectories giving ~25 seconds of weightlessness; used for astronaut training + microgravity research + filming (Apollo 13 movie 1995 filmed aboard KC-135). MICROGRAVITY RESEARCH: (1) PROTEIN CRYSTALS — better crystallization in microgravity → drug design (insulin, anti-cancer, HIV). (2) COMBUSTION — flames behave differently (spherical, cooler, no convection). (3) MATERIAL SCIENCE — alloys, ceramics form without gravity-induced separation. (4) FLUID DYNAMICS — surface tension dominates; droplets + bubbles form unusual shapes. (5) BIOLOGY — cell growth differs (bone loss studies; muscle atrophy — astronauts lose ~2% bone + muscle mass per month, exercise 2 hrs/day to combat). (6) PLANT GROWTH — direction without gravity; photosynthesis studies. (7) HUMAN PHYSIOLOGY — fluids shift to upper body (puffy faces), vision changes (Space-Associated Neuro-ocular Syndrome), sleep disruption. ISS: International Space Station, est. 1998 (first module Zarya); continuously inhabited since 2000. 16-nation collab led by NASA + Roscosmos + ESA + JAXA + CSA. 73m × 109m × 20m. 420 tonnes. Orbits every 92.68 min → 15.54 orbits/day. India has sent 1 astronaut (Rakesh Sharma, 1984, Soyuz T-11 — didn't visit ISS since ISS hadn't existed; visited Salyut 7). Sunita Williams (Indian-American, NASA) — 7 spacewalks; 3 ISS missions (2006-07, 2012, 2024-25 Boeing Starliner Crew Flight Test — stranded + returned via SpaceX Crew 9 Mar 2025). Rakesh Sharma STILL the only Indian to space via an Indian-selected path (Gaganyaan coming 2025-26 for Indian rocket). CHANDRAYAAN-3 (2023) simulated microgravity on Moon (1/6 g) — Pragyan rover + Vikram lander. ISS RETIRE planned ~2030; CHINESE TIANGONG station operational since 2021 + INDIA'S BHARATIYA ANTARIKSH STATION (BAS, 5-module) targeted 2035.",
+      "explanation": "MICROGRAVITY on ISS — astronauts + ISS are in CONSTANT FREE-FALL around Earth. Gravity at ISS altitude (~400 km) is still ~8.7 m/s² (only 11% less than surface) — NOT zero. HOW: ISS orbits at 7.66 km/s tangentially; Earth's gravity pulls it downward, but its forward speed makes it 'miss' Earth — it keeps falling AROUND Earth (elliptical/circular orbit). INSIDE the ISS, both structure + astronauts accelerate at SAME RATE toward Earth (~8.7 m/s²) → no relative acceleration → astronauts FLOAT relative to ISS → 'weightlessness'. EQUIVALENCE PRINCIPLE (Einstein's insight): free-fall is indistinguishable from being in zero gravity (locally). BASIS for General Relativity 1915. DEMONSTRATED: (1) Elevator thought experiment — if cable cuts, you float inside falling elevator. (2) VOMIT COMET / Reduced Gravity Aircraft — KC-135 / A300 'Zero-G' planes fly parabolic trajectories giving ~25 seconds of weightlessness; used for astronaut training + microgravity research + filming (Apollo 13 movie 1995 filmed aboard KC-135). MICROGRAVITY RESEARCH: (1) PROTEIN CRYSTALS — better crystallization in microgravity → drug design (insulin, anti-cancer, HIV). (2) COMBUSTION — flames behave differently (spherical, cooler, no convection). (3) MATERIAL SCIENCE — alloys, ceramics form without gravity-induced separation. (4) FLUID DYNAMICS — surface tension dominates; droplets + bubbles form unusual shapes. (5) BIOLOGY — cell growth differs (bone loss studies; muscle atrophy — astronauts lose ~2% bone + muscle mass per month, exercise 2 hrs/day to combat). (6) PLANT GROWTH — direction without gravity; photosynthesis studies. (7) HUMAN PHYSIOLOGY — fluids shift to upper body (puffy faces), vision changes (Space-Associated Neuro-ocular Syndrome), sleep disruption. ISS: International Space Station, est. 1998 (first module Zarya); continuously inhabited since 2000. 16-nation collab led by NASA + Roscosmos + ESA + JAXA + CSA. 73m × 109m × 20m. 420 tonnes. Orbits every 92.68 min → 15.54 orbits/day. India has sent 1 astronaut (Rakesh Sharma, 1984, Soyuz T-11 — didn't visit ISS since ISS hadn't existed; visited Salyut 7). Sunita Williams (Indian-American, NASA) — 7 spacewalks; 3 ISS missions (2006-07, 2012, 2024-25 Boeing Starliner Crew Flight Test — stranded + returned via SpaceX Crew 9 Mar 2025). Rakesh Sharma STILL the only Indian to space via an Indian-selected path (Gaganyaan coming 2025-26 for Indian rocket). CHANDRAYAAN-3 (2023) simulated microgravity on Moon (1/6 g) — Pragyan rover + Vikram lander. ISS RETIRE planned ~2030; CHINESE TIANGONG station operational since 2021 + INDIA'S BHARATIYA ANTARIKSH STATION (BAS, 5-module) targeted 2035. gravity pulls ISS + astronauts equally, so they float inside; this is 'MICROGRAVITY', not zero-gravity.",
       "subject": "Physics",
       "topic": "Gravitation",
       "topic_code": "PHY_GRAVITATION",
@@ -129,18 +241,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-grav-01",
       "generated_at": "2026-04-21T06:00:00+00:00",
-      "id": "sgk_PHY_GRAVITATION_00006"
+      "id": "sgk_PHY_GRAVITATION_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "They are in CONTINUOUS FREE-FALL around Earth — gravity pulls ISS + astronauts equally, so they float inside; this is 'MICROGRAVITY', not zero-gravity",
+          "now": "They are in CONTINUOUS FREE-FALL around Earth",
+          "moved_to_explanation": "gravity pulls ISS + astronauts equally, so they float inside; this is 'MICROGRAVITY', not zero-gravity"
+        }
+      ]
     },
     {
       "stem": "GRAVITATIONAL WAVES were FIRST directly detected on 14 September 2015 by:",
       "options": [
-        {"option_text": "ISRO", "is_correct": false},
-        {"option_text": "LIGO (Laser Interferometer Gravitational-Wave Observatory, USA) — Hanford + Livingston detectors; from binary black hole merger 1.3 BILLION years ago; Nobel Physics 2017", "is_correct": true},
-        {"option_text": "Hubble Space Telescope", "is_correct": false},
-        {"option_text": "James Webb Telescope", "is_correct": false}
+        {
+          "option_text": "ISRO",
+          "is_correct": false
+        },
+        {
+          "option_text": "LIGO",
+          "is_correct": true
+        },
+        {
+          "option_text": "Hubble Space Telescope",
+          "is_correct": false
+        },
+        {
+          "option_text": "James Webb Telescope",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "GRAVITATIONAL WAVES (GW) — RIPPLES in SPACETIME caused by accelerating massive objects (like merging black holes + neutron stars). Predicted by EINSTEIN's GENERAL RELATIVITY (1916). Travel at SPEED OF LIGHT. Incredibly WEAK — detection required century of tech development. FIRST DIRECT DETECTION: 14 SEPTEMBER 2015 at 5:51 AM UTC by LIGO (Laser Interferometer Gravitational-Wave Observatory) — dual detectors at Hanford, Washington + Livingston, Louisiana. Signal named 'GW150914'. Source: merger of 2 BLACK HOLES (~29 + 36 solar masses → 62 solar mass BH, 3 solar masses converted to GW energy) about 1.3 BILLION light-years away. Merger event lasted ~0.2 second in Earth's detectors; peak amplitude ~10⁻²¹ (spacetime stretched/compressed by 1/1000 proton diameter over 4 km arm). Announced 11 FEB 2016 — breakthrough of the century. NOBEL PHYSICS 2017 to RAINER WEISS + KIP THORNE + BARRY BARISH (pioneers of LIGO). LIGO TECHNOLOGY: (1) Two 4-km-long L-shaped arms; (2) Laser interferometer — splits laser, reflects off mirrors at end of each arm, recombines; gravitational wave changes arm length differentially → interference pattern shifts. (3) DETECTOR SENSITIVITY: can measure length changes of 10⁻¹⁹ m (1/1000th of proton diameter!); uses sophisticated vibration isolation, vacuum, quantum-squeezed light. (4) COINCIDENCE detection (2 detectors, 3,000 km apart) — essential to rule out local noise. SUBSEQUENT DETECTIONS: Over 90 GW events catalogued (O1 + O2 + O3 + O4 observing runs). Mergers of BH-BH, NS-NS, BH-NS. (a) GW170817 (17 Aug 2017) — BINARY NEUTRON STAR merger; first GW event with ELECTROMAGNETIC counterpart (gamma-ray burst + kilonova seen across spectrum) — proof of 'MULTI-MESSENGER ASTRONOMY'. Nobel groundwork. (b) GW190521 — heaviest known BH merger (142 solar mass intermediate BH). NETWORK: LIGO (USA), VIRGO (Italy, 3 km), KAGRA (Japan), LIGO-INDIA (UNDER CONSTRUCTION at HINGOLI, MAHARASHTRA — 4km, joint IndIGO + LIGO Caltech — Cabinet approved 2023 ₹2,600 cr, operational target 2030). LIGO-INDIA will significantly improve source localization (triangulation from 4 detectors). FUTURE: LISA (Laser Interferometer Space Antenna, ESA+NASA, launch 2035) — space-based LIGO; 3 spacecraft separated 2.5M km forming equilateral triangle; sensitive to LOW-frequency GW from supermassive BH mergers + galactic binary stars. EINSTEIN TELESCOPE (Europe underground, planned 2035) + COSMIC EXPLORER (USA, 40-km arms, 2040). PULSAR TIMING ARRAYS (NANOGrav, 2023 detected stochastic GW background from supermassive BH mergers in galaxy cores). Gravitational-wave astronomy is a NEW TELESCOPE on universe — seeing invisible events like BH mergers. CP Ramanujan, Sanjeev Dhurandhar (IUCAA Pune, India), Sanjeev Krishnagiri, Tarun Souradeep, Bala Iyer — Indian contributors.",
+      "explanation": "GRAVITATIONAL WAVES (GW) — RIPPLES in SPACETIME caused by accelerating massive objects (like merging black holes + neutron stars). Predicted by EINSTEIN's GENERAL RELATIVITY (1916). Travel at SPEED OF LIGHT. Incredibly WEAK — detection required century of tech development. FIRST DIRECT DETECTION: 14 SEPTEMBER 2015 at 5:51 AM UTC by LIGO (Laser Interferometer Gravitational-Wave Observatory) — dual detectors at Hanford, Washington + Livingston, Louisiana. Signal named 'GW150914'. Source: merger of 2 BLACK HOLES (~29 + 36 solar masses → 62 solar mass BH, 3 solar masses converted to GW energy) about 1.3 BILLION light-years away. Merger event lasted ~0.2 second in Earth's detectors; peak amplitude ~10⁻²¹ (spacetime stretched/compressed by 1/1000 proton diameter over 4 km arm). Announced 11 FEB 2016 — breakthrough of the century. NOBEL PHYSICS 2017 to RAINER WEISS + KIP THORNE + BARRY BARISH (pioneers of LIGO). LIGO TECHNOLOGY: (1) Two 4-km-long L-shaped arms; (2) Laser interferometer — splits laser, reflects off mirrors at end of each arm, recombines; gravitational wave changes arm length differentially → interference pattern shifts. (3) DETECTOR SENSITIVITY: can measure length changes of 10⁻¹⁹ m (1/1000th of proton diameter!); uses sophisticated vibration isolation, vacuum, quantum-squeezed light. (4) COINCIDENCE detection (2 detectors, 3,000 km apart) — essential to rule out local noise. SUBSEQUENT DETECTIONS: Over 90 GW events catalogued (O1 + O2 + O3 + O4 observing runs). Mergers of BH-BH, NS-NS, BH-NS. (a) GW170817 (17 Aug 2017) — BINARY NEUTRON STAR merger; first GW event with ELECTROMAGNETIC counterpart (gamma-ray burst + kilonova seen across spectrum) — proof of 'MULTI-MESSENGER ASTRONOMY'. Nobel groundwork. (b) GW190521 — heaviest known BH merger (142 solar mass intermediate BH). NETWORK: LIGO (USA), VIRGO (Italy, 3 km), KAGRA (Japan), LIGO-INDIA (UNDER CONSTRUCTION at HINGOLI, MAHARASHTRA — 4km, joint IndIGO + LIGO Caltech — Cabinet approved 2023 ₹2,600 cr, operational target 2030). LIGO-INDIA will significantly improve source localization (triangulation from 4 detectors). FUTURE: LISA (Laser Interferometer Space Antenna, ESA+NASA, launch 2035) — space-based LIGO; 3 spacecraft separated 2.5M km forming equilateral triangle; sensitive to LOW-frequency GW from supermassive BH mergers + galactic binary stars. EINSTEIN TELESCOPE (Europe underground, planned 2035) + COSMIC EXPLORER (USA, 40-km arms, 2040). PULSAR TIMING ARRAYS (NANOGrav, 2023 detected stochastic GW background from supermassive BH mergers in galaxy cores). Gravitational-wave astronomy is a NEW TELESCOPE on universe — seeing invisible events like BH mergers. CP Ramanujan, Sanjeev Dhurandhar (IUCAA Pune, India), Sanjeev Krishnagiri, Tarun Souradeep, Bala Iyer — Indian contributors. Hanford + Livingston detectors; from binary black hole merger 1.3 BILLION years ago; Nobel Physics 2017; Laser Interferometer Gravitational-Wave Observatory, USA.",
       "subject": "Physics",
       "topic": "Gravitation",
       "topic_code": "PHY_GRAVITATION",
@@ -150,15 +282,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-grav-01",
       "generated_at": "2026-04-21T06:00:00+00:00",
-      "id": "sgk_PHY_GRAVITATION_00007"
+      "id": "sgk_PHY_GRAVITATION_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "LIGO (Laser Interferometer Gravitational-Wave Observatory, USA) — Hanford + Livingston detectors; from binary black hole merger 1.3 BILLION years ago; Nobel Physics 2017",
+          "now": "LIGO",
+          "moved_to_explanation": "Hanford + Livingston detectors; from binary black hole merger 1.3 BILLION years ago; Nobel Physics 2017; Laser Interferometer Gravitational-Wave Observatory, USA"
+        }
+      ]
     },
     {
       "stem": "A BLACK HOLE is a region of space where:",
       "options": [
-        {"option_text": "Light has no energy", "is_correct": false},
-        {"option_text": "GRAVITY is so strong that NOTHING, not even LIGHT, can escape once past the 'EVENT HORIZON'; formed by collapse of massive stars; first image captured Apr 2019 (M87*) by EHT", "is_correct": true},
-        {"option_text": "There is no matter", "is_correct": false},
-        {"option_text": "Temperature drops to zero", "is_correct": false}
+        {
+          "option_text": "Light has no energy",
+          "is_correct": false
+        },
+        {
+          "option_text": "GRAVITY is so strong that NOTHING, not even LIGHT, can escape once past the 'EVENT HORIZON'; formed by collapse of massive stars; first image captured Apr 2019 (M87*) by EHT",
+          "is_correct": true
+        },
+        {
+          "option_text": "There is no matter",
+          "is_correct": false
+        },
+        {
+          "option_text": "Temperature drops to zero",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "BLACK HOLE — region of space where gravity is SO STRONG that escape velocity exceeds speed of light → NOTHING (not even light or information) can escape once past the EVENT HORIZON (boundary of no return). Predicted by Schwarzschild from Einstein's GR (1916) within weeks of its publication. NAME coined 1967 by John Archibald Wheeler. FORMATION: (1) STELLAR collapse — massive star (>~20 solar masses) runs out of fuel, core collapses; outer layers blow off in SUPERNOVA; remnant core >3 solar masses CANNOT be stabilized by neutron degeneracy → collapses indefinitely to SINGULARITY (point of infinite density). (2) PRIMORDIAL BHs — hypothetical, from density fluctuations in very early universe. (3) SUPERMASSIVE BHs (SMBH) — at centres of galaxies; millions to billions of solar masses. Formation still debated; possibly direct collapse of massive gas clouds or hierarchical mergers. PARTS: (1) SINGULARITY — central point of infinite density + zero volume. (2) EVENT HORIZON — boundary; Schwarzschild radius Rs = 2GM/c² (for non-rotating BH). For Sun: 3 km. For Earth: 9 mm. For 4 million solar-mass SMBH Sagittarius A*: 12 million km. (3) ACCRETION DISK — in-falling matter heats to millions of K, emits X-rays. (4) PHOTON SPHERE — where photons can orbit. (5) ERGOSPHERE (rotating Kerr BH only) — frame-dragging region. TYPES: (1) Stellar BH (5-100 solar masses, from star deaths). (2) Intermediate BH (100-1000 solar mass; recently confirmed). (3) Supermassive BH (millions-billions). (4) Possibly primordial micro-BHs (unconfirmed). DISCOVERY milestones: (1) CYGNUS X-1 (1964) — first strong stellar BH candidate via X-ray; confirmed 1990s. (2) SAGITTARIUS A* — SMBH at Milky Way center; 4.1 million solar masses; 26,000 LY away; orbits of stars like S2 (16 yr orbit) prove its existence. ANDREA GHEZ + REINHARD GENZEL + ROGER PENROSE got 2020 Nobel Physics for Sgr A*. (3) GRAVITATIONAL WAVE DETECTION (LIGO 2015) — indirect BH confirmation via mergers. (4) FIRST IMAGE of BH: 10 APRIL 2019 — EVENT HORIZON TELESCOPE collaboration imaged M87* (supermassive BH at centre of Messier 87 galaxy, 55 million LY away; 6.5 billion solar masses); iconic orange-ring image. KATIE BOUMAN (MIT) algorithm enabled reconstruction. (5) 2022 — EHT imaged SAGITTARIUS A* (our galaxy's). (6) JWST since 2022 finding SMBHs even at cosmic dawn (~300 Myr post-Big Bang) — challenging formation models. HAWKING RADIATION (Stephen Hawking 1974) — quantum effect near horizon causes BH to SLOWLY EVAPORATE over cosmic timescales; smaller BHs evaporate faster. NOT yet observed but fundamental prediction. INFORMATION PARADOX — quantum information seemingly destroyed → violation of unitarity. Active research (holography, AdS/CFT, firewalls). 'NO HAIR THEOREM' — BH defined by only 3 parameters: Mass, Charge, Angular Momentum.",
@@ -176,13 +328,25 @@
     {
       "stem": "WEIGHT of a person on the MOON compared to EARTH is approximately:",
       "options": [
-        {"option_text": "Same", "is_correct": false},
-        {"option_text": "1/6th — Moon's gravity (1.62 m/s²) is ~16.5% of Earth's (9.8 m/s²); mass is invariant, weight is location-dependent", "is_correct": true},
-        {"option_text": "Twice", "is_correct": false},
-        {"option_text": "Zero", "is_correct": false}
+        {
+          "option_text": "Same",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/6th",
+          "is_correct": true
+        },
+        {
+          "option_text": "Twice",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zero",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "WEIGHT of PERSON on MOON = 1/6th of Earth weight (approximately; actually 16.5%). MOON's GRAVITY = 1.62 m/s² (compared to Earth's 9.8 m/s²). Reason: Moon is much less massive (7.3 × 10²² kg vs Earth's 5.97 × 10²⁴ kg; ratio 1/81) + slightly smaller (3,474 km diameter vs Earth's 12,742 km). By g = GM/R²: Moon g = 6.674e-11 × 7.3e22 / (1737000)² = 1.62 m/s². MASS vs WEIGHT: (1) MASS — measure of AMOUNT of matter; INVARIANT (kg); same anywhere in universe. (2) WEIGHT — FORCE due to gravity = m × g; LOCATION-dependent (N or kgf); varies with g. EXAMPLES: A 60-kg person (Earth) — weighs ~590 N on Earth (60×9.8); ~97 N on Moon (60×1.62); ~223 N on Mars (60×3.71); ~221 N on Mercury (60×3.7); ~1487 N on Jupiter (60×24.79 — crushing 2.5× Earth weight!); mass remains 60 kg everywhere. WEIGHT on OTHER PLANETS (for 60 kg Earth person): Moon 10 kgf (~97 N); Mars 22.8 kgf (~223 N); Mercury + Mars similar; Venus ~54 kgf (~533 N, 90% of Earth); Saturn 64 kgf (1.07 g); Jupiter 152 kgf (2.53 g); Uranus 53 kgf (0.89 g); Neptune 68 kgf (1.14 g); Sun 1680 kgf (28 g — would crush human; surface equivalent 280x earth gravity). MOON's special features due to lower gravity: (a) Apollo astronauts could 'bounce-walk' (low-g hopping gait used less energy than walking). (b) Jump heights 6× higher (Alan Shepard's 1971 6-iron golf shot on Apollo 14 travelled much farther). (c) Rockets ascending from Moon need much less fuel (lunar module used ~2,500 kg for Moon-orbit vs Saturn V's 2.3 million kg for Earth launch). (d) Escape velocity 2.4 km/s (vs Earth's 11.2). PHYSICAL EFFECTS of reduced gravity on humans: (1) Bone density loss 1-2% per month — astronauts need calcium + vitamin D + exercise; some permanent loss even after return. (2) Muscle atrophy — 2 hours of exercise per day on ISS to combat. (3) Cardiovascular deconditioning — fluid shifts upward + heart pumps less (LAB RAT). (4) Vestibular disorientation — balance-eye-ear confusion (motion sickness). (5) Vision changes. (6) Immune system disturbance. LONG-DURATION Mars missions (~2.5 years round trip) major health challenge. Apollo 11 (20 July 1969) LANDED on Moon — Neil Armstrong + Buzz Aldrin walked; Michael Collins orbited. 6 manned lunar landings (1969-72, Apollo 11, 12, 14, 15, 16, 17 — 12 astronauts walked on Moon). ARTEMIS program (NASA + ESA + JAXA + CSA + CSA + ISRO via Artemis Accords) — to return humans to Moon + establish sustainable presence; Artemis I (2022 uncrewed), II (2026 crewed flyby), III (2027+ crewed landing). Lunar Gateway station planned. Indian Gaganyaan post-LEO extension to Moon on slow timeline.",
+      "explanation": "WEIGHT of PERSON on MOON = 1/6th of Earth weight (approximately; actually 16.5%). MOON's GRAVITY = 1.62 m/s² (compared to Earth's 9.8 m/s²). Reason: Moon is much less massive (7.3 × 10²² kg vs Earth's 5.97 × 10²⁴ kg; ratio 1/81) + slightly smaller (3,474 km diameter vs Earth's 12,742 km). By g = GM/R²: Moon g = 6.674e-11 × 7.3e22 / (1737000)² = 1.62 m/s². MASS vs WEIGHT: (1) MASS — measure of AMOUNT of matter; INVARIANT (kg); same anywhere in universe. (2) WEIGHT — FORCE due to gravity = m × g; LOCATION-dependent (N or kgf); varies with g. EXAMPLES: A 60-kg person (Earth) — weighs ~590 N on Earth (60×9.8); ~97 N on Moon (60×1.62); ~223 N on Mars (60×3.71); ~221 N on Mercury (60×3.7); ~1487 N on Jupiter (60×24.79 — crushing 2.5× Earth weight!); mass remains 60 kg everywhere. WEIGHT on OTHER PLANETS (for 60 kg Earth person): Moon 10 kgf (~97 N); Mars 22.8 kgf (~223 N); Mercury + Mars similar; Venus ~54 kgf (~533 N, 90% of Earth); Saturn 64 kgf (1.07 g); Jupiter 152 kgf (2.53 g); Uranus 53 kgf (0.89 g); Neptune 68 kgf (1.14 g); Sun 1680 kgf (28 g — would crush human; surface equivalent 280x earth gravity). MOON's special features due to lower gravity: (a) Apollo astronauts could 'bounce-walk' (low-g hopping gait used less energy than walking). (b) Jump heights 6× higher (Alan Shepard's 1971 6-iron golf shot on Apollo 14 travelled much farther). (c) Rockets ascending from Moon need much less fuel (lunar module used ~2,500 kg for Moon-orbit vs Saturn V's 2.3 million kg for Earth launch). (d) Escape velocity 2.4 km/s (vs Earth's 11.2). PHYSICAL EFFECTS of reduced gravity on humans: (1) Bone density loss 1-2% per month — astronauts need calcium + vitamin D + exercise; some permanent loss even after return. (2) Muscle atrophy — 2 hours of exercise per day on ISS to combat. (3) Cardiovascular deconditioning — fluid shifts upward + heart pumps less (LAB RAT). (4) Vestibular disorientation — balance-eye-ear confusion (motion sickness). (5) Vision changes. (6) Immune system disturbance. LONG-DURATION Mars missions (~2.5 years round trip) major health challenge. Apollo 11 (20 July 1969) LANDED on Moon — Neil Armstrong + Buzz Aldrin walked; Michael Collins orbited. 6 manned lunar landings (1969-72, Apollo 11, 12, 14, 15, 16, 17 — 12 astronauts walked on Moon). ARTEMIS program (NASA + ESA + JAXA + CSA + CSA + ISRO via Artemis Accords) — to return humans to Moon + establish sustainable presence; Artemis I (2022 uncrewed), II (2026 crewed flyby), III (2027+ crewed landing). Lunar Gateway station planned. Indian Gaganyaan post-LEO extension to Moon on slow timeline. Moon's gravity (1.62 m/s²) is ~16.5% of Earth's (9.8 m/s²); mass is invariant, weight is location-dependent.",
       "subject": "Physics",
       "topic": "Gravitation",
       "topic_code": "PHY_GRAVITATION",
@@ -192,15 +356,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-grav-01",
       "generated_at": "2026-04-21T06:00:00+00:00",
-      "id": "sgk_PHY_GRAVITATION_00009"
+      "id": "sgk_PHY_GRAVITATION_00009",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "1/6th — Moon's gravity (1.62 m/s²) is ~16.5% of Earth's (9.8 m/s²); mass is invariant, weight is location-dependent",
+          "now": "1/6th",
+          "moved_to_explanation": "Moon's gravity (1.62 m/s²) is ~16.5% of Earth's (9.8 m/s²); mass is invariant, weight is location-dependent"
+        }
+      ]
     },
     {
       "stem": "EINSTEIN's GENERAL RELATIVITY (1915) reinterprets GRAVITY as:",
       "options": [
-        {"option_text": "An electromagnetic effect", "is_correct": false},
-        {"option_text": "CURVATURE OF SPACETIME by mass-energy — matter tells spacetime how to curve; spacetime tells matter how to move. Predicts light bending + gravitational time dilation", "is_correct": true},
-        {"option_text": "A quantum effect only", "is_correct": false},
-        {"option_text": "Friction between objects", "is_correct": false}
+        {
+          "option_text": "An electromagnetic effect",
+          "is_correct": false
+        },
+        {
+          "option_text": "CURVATURE OF SPACETIME by mass-energy",
+          "is_correct": true
+        },
+        {
+          "option_text": "A quantum effect only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Friction between objects",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "GENERAL RELATIVITY (GR) — ALBERT EINSTEIN's masterpiece theory of gravity; published 1915 (presented Nov 25, 1915 at Prussian Academy); 'the most beautiful theory in physics'. KEY IDEA: GRAVITY is NOT a force (per Newton) but the CURVATURE of 4-D SPACETIME caused by MASS-ENERGY. FAMOUS JOHN WHEELER QUOTE: 'Matter tells spacetime how to curve; spacetime tells matter how to move.' BASED on 2 PRINCIPLES: (1) PRINCIPLE OF RELATIVITY — laws of physics are same in all reference frames (from SR 1905). (2) EQUIVALENCE PRINCIPLE — gravitational + inertial mass are identical; observer in free-fall cannot distinguish from floating in zero gravity. Thought experiment: falling person in elevator vs. drifting in space — locally same. FIELD EQUATIONS: Gμν = 8πG/c⁴ × Tμν. Left side (Gμν) = Einstein tensor (curvature of spacetime); right side (Tμν) = stress-energy tensor (matter + energy distribution). 10 coupled non-linear PDEs. PREDICTIONS + VERIFICATIONS: (1) PERIHELION ADVANCE of MERCURY — 43 arcsec/century unexplained by Newton; GR gave EXACT match (announced 1915 before general observation). (2) LIGHT BENDING — light path curves near massive objects; PREDICTION (1.75 arcsec for Sun's edge). VERIFIED by ARTHUR EDDINGTON at SOLAR ECLIPSE 1919 (Principe Island + Sobral Brazil) — HEADLINES ACROSS WORLD; made Einstein a global celebrity. Also 'GRAVITATIONAL LENSING' — now a routine astronomy tool (Einstein rings, dark matter mapping, exoplanet detection via microlensing). (3) GRAVITATIONAL TIME DILATION — clocks tick SLOWER in stronger gravity. Confirmed in atomic clocks (Hafele-Keating 1971 atomic clock flights); CRUCIAL for GPS (satellite clocks tick FASTER by ~38 microseconds/day than ground — GPS software corrects; without correction, navigation errors 10 km/day). (4) BLACK HOLES — singular solutions of GR (Schwarzschild 1916). First direct image M87* (EHT 2019). (5) GRAVITATIONAL WAVES — ripples in spacetime from accelerating masses. Direct detection LIGO 2015; Nobel 2017. (6) EXPANDING UNIVERSE — Friedmann solutions + HUBBLE's 1929 observation of receding galaxies; BIG BANG model. 'Biggest blunder' Einstein's cosmological constant (Λ) — introduced to give static universe, removed after expansion found; NOW REINSTATED as dark energy driving accelerating expansion (Nobel 2011 to Perlmutter + Schmidt + Riess). (7) FRAME DRAGGING — rotating masses drag spacetime; Gravity Probe B (NASA 2004-11) confirmed. LIMITATIONS: doesn't work at QUANTUM scales; UNIFICATION with quantum mechanics = HOLY GRAIL of physics (string theory, loop quantum gravity, causal dynamical triangulation — competing approaches; none complete). Would reconcile gravity with other 3 fundamental forces (electromagnetic + strong + weak nuclear). EINSTEIN never got Nobel for GR (got 1921 Nobel for photoelectric effect + QM foundation). GR is a pillar of modern cosmology + astrophysics — tested to extreme precision.",
@@ -213,7 +397,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-grav-01",
       "generated_at": "2026-04-21T06:00:00+00:00",
-      "id": "sgk_PHY_GRAVITATION_00010"
+      "id": "sgk_PHY_GRAVITATION_00010",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "CURVATURE OF SPACETIME by mass-energy — matter tells spacetime how to curve; spacetime tells matter how to move. Predicts light bending + gravitational time dilation",
+          "now": "CURVATURE OF SPACETIME by mass-energy",
+          "moved_to_explanation": "matter tells spacetime how to curve; spacetime tells matter how to move. Predicts light bending + gravitational time dilation"
+        }
+      ]
     }
   ]
 }

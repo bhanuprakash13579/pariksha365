@@ -8,10 +8,22 @@
     {
       "stem": "A freely suspended magnetic needle always comes to rest pointing approximately:",
       "options": [
-        {"option_text": "East to west", "is_correct": false},
-        {"option_text": "North to south (geographic)", "is_correct": true},
-        {"option_text": "Towards the Sun", "is_correct": false},
-        {"option_text": "Straight down", "is_correct": false}
+        {
+          "option_text": "East to west",
+          "is_correct": false
+        },
+        {
+          "option_text": "North to south",
+          "is_correct": true
+        },
+        {
+          "option_text": "Towards the Sun",
+          "is_correct": false
+        },
+        {
+          "option_text": "Straight down",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "A suspended magnet aligns with Earth's magnetic field, which runs roughly north-south. The magnet's 'N-seeking' pole points to the geographic North (near which lies Earth's magnetic South Pole — because opposite poles attract). The small angular difference between geographic and magnetic north is called 'magnetic declination'. Mariner's compasses exploit this alignment.",
@@ -24,15 +36,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-phy-mg2-01",
       "generated_at": "2026-04-23T17:30:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_II_MIXED_00001"
+      "id": "sgk_PHY_MAGNETISM_II_MIXED_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "North to south (geographic)",
+          "now": "North to south",
+          "moved_to_explanation": "geographic"
+        }
+      ]
     },
     {
       "stem": "The magnetic north pole of the Earth is located near the:",
       "options": [
-        {"option_text": "Geographic north pole", "is_correct": false},
-        {"option_text": "Geographic south pole", "is_correct": true},
-        {"option_text": "Equator", "is_correct": false},
-        {"option_text": "Tropic of Cancer", "is_correct": false}
+        {
+          "option_text": "Geographic north pole",
+          "is_correct": false
+        },
+        {
+          "option_text": "Geographic south pole",
+          "is_correct": true
+        },
+        {
+          "option_text": "Equator",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tropic of Cancer",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Counter-intuitive but true — Earth's north-seeking compass pole is attracted to the Arctic, so the magnetic S-pole of Earth is near the geographic North Pole, and Earth's magnetic N-pole is near the geographic South Pole. Unlike poles attract. The magnetic poles wander and have flipped many times in geological history (records preserved in cooled lava).",
@@ -50,10 +82,22 @@
     {
       "stem": "A temporary magnet — produced only when electric current flows through a coil around an iron core — is called an:",
       "options": [
-        {"option_text": "Permanent magnet", "is_correct": false},
-        {"option_text": "Electromagnet", "is_correct": true},
-        {"option_text": "Diamagnet", "is_correct": false},
-        {"option_text": "Paramagnet", "is_correct": false}
+        {
+          "option_text": "Permanent magnet",
+          "is_correct": false
+        },
+        {
+          "option_text": "Electromagnet",
+          "is_correct": true
+        },
+        {
+          "option_text": "Diamagnet",
+          "is_correct": false
+        },
+        {
+          "option_text": "Paramagnet",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "An electromagnet — coil + soft iron core — behaves as a strong magnet only while current flows, and loses magnetism when switched off. Used in electric bells, motors, MRI machines, magnetic cranes lifting scrap. Permanent magnets (alloys like neodymium-iron-boron) retain magnetism indefinitely. Diamagnets are weakly repelled by external fields (copper, bismuth). Paramagnets weakly align with them (aluminium).",
@@ -71,10 +115,22 @@
     {
       "stem": "Which of the following materials is ferromagnetic (strongly magnetic)?",
       "options": [
-        {"option_text": "Copper", "is_correct": false},
-        {"option_text": "Iron", "is_correct": true},
-        {"option_text": "Aluminium", "is_correct": false},
-        {"option_text": "Wood", "is_correct": false}
+        {
+          "option_text": "Copper",
+          "is_correct": false
+        },
+        {
+          "option_text": "Iron",
+          "is_correct": true
+        },
+        {
+          "option_text": "Aluminium",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wood",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Iron — and its siblings nickel and cobalt, plus some rare earths (gadolinium) — are ferromagnetic; they can be strongly magnetised. Copper is diamagnetic (weakly repelled). Aluminium is paramagnetic (weakly attracted). Wood is essentially non-magnetic. The mnemonic 'iron, nickel, cobalt + few rare earths' covers the room-temperature ferromagnets encountered in everyday physics.",
@@ -92,10 +148,22 @@
     {
       "stem": "The SI unit of magnetic flux density (also called the strength of the magnetic field) is the:",
       "options": [
-        {"option_text": "Ampere", "is_correct": false},
-        {"option_text": "Tesla", "is_correct": true},
-        {"option_text": "Weber", "is_correct": false},
-        {"option_text": "Henry", "is_correct": false}
+        {
+          "option_text": "Ampere",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tesla",
+          "is_correct": true
+        },
+        {
+          "option_text": "Weber",
+          "is_correct": false
+        },
+        {
+          "option_text": "Henry",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Tesla (T) is the SI unit of magnetic flux density — named after Nikola Tesla. Earth's field ≈ 5 × 10⁻⁵ T; a fridge magnet ≈ 10⁻² T; MRI machines ≈ 1-3 T. Weber (Wb) is the unit of total magnetic flux (through a surface). Henry (H) is the unit of inductance. Ampere is the unit of electric current.",
@@ -113,10 +181,22 @@
     {
       "stem": "Hans Christian Oersted's famous 1820 experiment showed that:",
       "options": [
-        {"option_text": "A magnet exerts a force on another magnet", "is_correct": false},
-        {"option_text": "A current-carrying wire produces a magnetic field around it", "is_correct": true},
-        {"option_text": "Light has the same speed in all media", "is_correct": false},
-        {"option_text": "Objects fall at the same rate in a vacuum", "is_correct": false}
+        {
+          "option_text": "A magnet exerts a force on another magnet",
+          "is_correct": false
+        },
+        {
+          "option_text": "A current-carrying wire produces a magnetic field around it",
+          "is_correct": true
+        },
+        {
+          "option_text": "Light has the same speed in all media",
+          "is_correct": false
+        },
+        {
+          "option_text": "Objects fall at the same rate in a vacuum",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Oersted (1820) found that a compass needle near a current-carrying wire deflects — showing that electricity and magnetism are linked. This single observation founded the subject of electromagnetism. It was followed in 1831 by Faraday's discovery that a changing magnetic field can induce an electric current (electromagnetic induction) — the basis for generators and transformers.",
@@ -134,10 +214,22 @@
     {
       "stem": "The rule used to find the direction of the magnetic field around a current-carrying straight conductor is:",
       "options": [
-        {"option_text": "Fleming's left-hand rule", "is_correct": false},
-        {"option_text": "Right-hand thumb rule (Ampere's rule)", "is_correct": true},
-        {"option_text": "Fleming's right-hand rule", "is_correct": false},
-        {"option_text": "Lenz's rule", "is_correct": false}
+        {
+          "option_text": "Fleming's left-hand rule",
+          "is_correct": false
+        },
+        {
+          "option_text": "Right-hand thumb rule",
+          "is_correct": true
+        },
+        {
+          "option_text": "Fleming's right-hand rule",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lenz's rule",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Right-hand thumb rule (sometimes called Maxwell's / Ampere's rule) — hold the wire in the right hand with the thumb pointing along the direction of the current; the curl of the fingers gives the direction of the magnetic field lines around the wire. Fleming's left-hand rule — force on a current-carrying conductor in a magnetic field (motor rule). Fleming's right-hand rule — direction of induced current in a conductor moving in a field (generator rule). Lenz's law fixes the direction of induced current (opposes the change causing it).",
@@ -150,7 +242,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-phy-mg2-07",
       "generated_at": "2026-04-23T17:30:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_II_MIXED_00007"
+      "id": "sgk_PHY_MAGNETISM_II_MIXED_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Right-hand thumb rule (Ampere's rule)",
+          "now": "Right-hand thumb rule",
+          "moved_to_explanation": "Ampere's rule"
+        }
+      ]
     }
   ]
 }

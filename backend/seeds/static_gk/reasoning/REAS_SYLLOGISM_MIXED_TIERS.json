@@ -108,7 +108,7 @@
       "stem": "Statements: All roses are flowers. Some flowers are red. Conclusion: Some roses MAY be red. (Is this a POSSIBILITY conclusion?)",
       "options": [
         {
-          "option_text": "It follows as a POSSIBILITY (cannot be ruled out)",
+          "option_text": "It follows as a POSSIBILITY",
           "is_correct": true
         },
         {
@@ -125,7 +125,7 @@
         }
       ],
       "correct_letter": "A",
-      "explanation": "POSSIBILITY syllogism (banking-mains style): 'some roses MAY be red' — the premises neither ESTABLISH nor REFUTE this, so it is a valid possibility. The same premises do NOT support a DEFINITE 'some roses are red' conclusion.",
+      "explanation": "POSSIBILITY syllogism (banking-mains style): 'some roses MAY be red' — the premises neither ESTABLISH nor REFUTE this, so it is a valid possibility. The same premises do NOT support a DEFINITE 'some roses are red' conclusion. cannot be ruled out.",
       "subject": "Reasoning",
       "topic": "Syllogism — mixed tiers",
       "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
@@ -135,7 +135,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-21-reas-sym-04",
       "generated_at": "2026-04-21T18:40:00+00:00",
-      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00004"
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "It follows as a POSSIBILITY (cannot be ruled out)",
+          "now": "It follows as a POSSIBILITY",
+          "moved_to_explanation": "cannot be ruled out"
+        }
+      ]
     },
     {
       "stem": "Statements: (i) All politicians are orators. (ii) Some orators are liars. (iii) No liar is a philosopher. Which follows? (a) Some politicians are not philosophers. (b) Some orators are not philosophers.",

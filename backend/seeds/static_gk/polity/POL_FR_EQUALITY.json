@@ -149,7 +149,7 @@
           "is_correct": false
         },
         {
-          "option_text": "A citizen accepting an academic or military distinction (e.g. 'Dr.', 'Lt. Col.')",
+          "option_text": "A citizen accepting an academic or military distinction",
           "is_correct": true
         },
         {
@@ -158,7 +158,7 @@
         }
       ],
       "correct_letter": "C",
-      "explanation": "Article 18 abolishes titles EXCEPT academic and military distinctions — so 'Dr.', 'Professor', 'Major', 'Colonel' etc. are all permitted and widely used. Article 18(1) bars the State from conferring any title other than military/academic; 18(2) bars citizens from accepting foreign titles; 18(3)-(4) regulate non-citizens holding office under the State and citizens holding office under foreign States. Crucially, civilian awards like Bharat Ratna and Padma awards are NOT considered 'titles' per the Supreme Court (Balaji Raghavan, 1996) — they're just recognitions and cannot be used as prefixes/suffixes to names.",
+      "explanation": "Article 18 abolishes titles EXCEPT academic and military distinctions — so 'Dr.', 'Professor', 'Major', 'Colonel' etc. are all permitted and widely used. Article 18(1) bars the State from conferring any title other than military/academic; 18(2) bars citizens from accepting foreign titles; 18(3)-(4) regulate non-citizens holding office under the State and citizens holding office under foreign States. Crucially, civilian awards like Bharat Ratna and Padma awards are NOT considered 'titles' per the Supreme Court (Balaji Raghavan, 1996) — they're just recognitions and cannot be used as prefixes/suffixes to names. e.g. 'Dr.', 'Lt. Col.'.",
       "subject": "Polity",
       "topic": "Fundamental Rights — Right to Equality (Arts 14-18)",
       "topic_code": "POL_FR_EQUALITY",
@@ -168,7 +168,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-19-pol-fr-equality-01",
       "generated_at": "2026-04-19T15:41:04+00:00",
-      "id": "sgk_POL_FR_EQUALITY_00005"
+      "id": "sgk_POL_FR_EQUALITY_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "A citizen accepting an academic or military distinction (e.g. 'Dr.', 'Lt. Col.')",
+          "now": "A citizen accepting an academic or military distinction",
+          "moved_to_explanation": "e.g. 'Dr.', 'Lt. Col.'"
+        }
+      ]
     },
     {
       "stem": "Article 16 deals with equality of opportunity in matters of public employment. Which clause of Article 16 specifically enables reservations in PROMOTIONS for SCs and STs?",
@@ -277,7 +285,7 @@
           "is_correct": false
         },
         {
-          "option_text": "The creamy layer doctrine applies to OBCs for reservations, and — per Jarnail Singh (2018) — also to SC/ST PROMOTIONS",
+          "option_text": "The creamy layer doctrine applies to OBCs for reservations, and",
           "is_correct": true
         },
         {
@@ -290,7 +298,7 @@
         }
       ],
       "correct_letter": "B",
-      "explanation": "Correct nuance: Indra Sawhney mandated creamy-layer exclusion for OBCs but explicitly SAID the concept did NOT apply to SC/STs. HOWEVER, in Jarnail Singh v. Lachhmi Narain Gupta (2018) the Supreme Court extended creamy-layer exclusion to SC/ST PROMOTIONS (not to initial appointments). So the rule today is: OBC initial appointments — creamy layer applies; SC/ST initial appointments — creamy layer does NOT apply; SC/ST promotions — creamy layer DOES apply (Jarnail Singh). Options C and D are fiction.",
+      "explanation": "Correct nuance: Indra Sawhney mandated creamy-layer exclusion for OBCs but explicitly SAID the concept did NOT apply to SC/STs. HOWEVER, in Jarnail Singh v. Lachhmi Narain Gupta (2018) the Supreme Court extended creamy-layer exclusion to SC/ST PROMOTIONS (not to initial appointments). So the rule today is: OBC initial appointments — creamy layer applies; SC/ST initial appointments — creamy layer does NOT apply; SC/ST promotions — creamy layer DOES apply (Jarnail Singh). Options C and D are fiction. per Jarnail Singh (2018) — also to SC/ST PROMOTIONS.",
       "subject": "Polity",
       "topic": "Fundamental Rights — Right to Equality (Arts 14-18)",
       "topic_code": "POL_FR_EQUALITY",
@@ -300,7 +308,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-19-pol-fr-equality-01",
       "generated_at": "2026-04-19T15:41:04+00:00",
-      "id": "sgk_POL_FR_EQUALITY_00009"
+      "id": "sgk_POL_FR_EQUALITY_00009",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "The creamy layer doctrine applies to OBCs for reservations, and — per Jarnail Singh (2018) — also to SC/ST PROMOTIONS",
+          "now": "The creamy layer doctrine applies to OBCs for reservations, and",
+          "moved_to_explanation": "per Jarnail Singh (2018) — also to SC/ST PROMOTIONS"
+        }
+      ]
     },
     {
       "stem": "The 103rd Constitutional Amendment Act (2019) introduced a NEW clause enabling reservations for 'Economically Weaker Sections' (EWS). Which Articles were amended?",

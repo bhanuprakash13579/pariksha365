@@ -8,13 +8,25 @@
     {
       "stem": "The pH scale ranges from 0 to 14. A solution with pH = 7 is:",
       "options": [
-        {"option_text": "Strongly acidic", "is_correct": false},
-        {"option_text": "Neutral (neither acidic nor basic)", "is_correct": true},
-        {"option_text": "Strongly basic", "is_correct": false},
-        {"option_text": "Weakly acidic", "is_correct": false}
+        {
+          "option_text": "Strongly acidic",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neutral",
+          "is_correct": true
+        },
+        {
+          "option_text": "Strongly basic",
+          "is_correct": false
+        },
+        {
+          "option_text": "Weakly acidic",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "At 25°C, pure water has pH = 7 — exactly neutral. pH < 7 is acidic (lower = more acidic); pH > 7 is basic (higher = more basic). The pH scale is LOGARITHMIC (base 10): a pH 4 solution has 10x more H⁺ ions than pH 5. Each unit change = 10-fold change in [H⁺]. Strong acids like HCl have pH ~0-1; strong bases like NaOH have pH ~13-14. Lemon juice pH ~2; stomach acid ~1.5; blood ~7.4.",
+      "explanation": "At 25°C, pure water has pH = 7 — exactly neutral. pH < 7 is acidic (lower = more acidic); pH > 7 is basic (higher = more basic). The pH scale is LOGARITHMIC (base 10): a pH 4 solution has 10x more H⁺ ions than pH 5. Each unit change = 10-fold change in [H⁺]. Strong acids like HCl have pH ~0-1; strong bases like NaOH have pH ~13-14. Lemon juice pH ~2; stomach acid ~1.5; blood ~7.4. neither acidic nor basic.",
       "subject": "Chemistry",
       "topic": "Acids, Bases & pH",
       "topic_code": "CHE_ACIDS_BASES",
@@ -24,15 +36,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-19-che-ab-01",
       "generated_at": "2026-04-19T17:55:00+00:00",
-      "id": "sgk_CHE_ACIDS_BASES_00003"
+      "id": "sgk_CHE_ACIDS_BASES_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Neutral (neither acidic nor basic)",
+          "now": "Neutral",
+          "moved_to_explanation": "neither acidic nor basic"
+        }
+      ]
     },
     {
       "stem": "Which of the following is NOT a property of acids?",
       "options": [
-        {"option_text": "Sour taste", "is_correct": false},
-        {"option_text": "Turn blue litmus red", "is_correct": false},
-        {"option_text": "React with metals to release hydrogen gas", "is_correct": false},
-        {"option_text": "Turn red litmus blue", "is_correct": true}
+        {
+          "option_text": "Sour taste",
+          "is_correct": false
+        },
+        {
+          "option_text": "Turn blue litmus red",
+          "is_correct": false
+        },
+        {
+          "option_text": "React with metals to release hydrogen gas",
+          "is_correct": false
+        },
+        {
+          "option_text": "Turn red litmus blue",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "explanation": "Turning RED litmus BLUE is a property of BASES, not acids. Acid properties: (1) sour taste (lemon, vinegar); (2) turn BLUE litmus RED; (3) react with active metals (Zn, Mg) to release H₂ gas; (4) react with bases to form salt + water (neutralization); (5) react with carbonates to release CO₂. Bases: bitter taste, slippery, turn red litmus blue, feel soapy.",
@@ -50,10 +82,22 @@
     {
       "stem": "According to the Arrhenius definition, an acid is a substance that:",
       "options": [
-        {"option_text": "Accepts a proton (H⁺)", "is_correct": false},
-        {"option_text": "Produces H⁺ ions in aqueous solution", "is_correct": true},
-        {"option_text": "Accepts a pair of electrons", "is_correct": false},
-        {"option_text": "Donates a pair of electrons", "is_correct": false}
+        {
+          "option_text": "Accepts a proton (H⁺)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Produces H⁺ ions in aqueous solution",
+          "is_correct": true
+        },
+        {
+          "option_text": "Accepts a pair of electrons",
+          "is_correct": false
+        },
+        {
+          "option_text": "Donates a pair of electrons",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Three definitions of acid/base: (1) ARRHENIUS (1884): acid produces H⁺ in water, base produces OH⁻. (2) BRØNSTED-LOWRY (1923): acid donates H⁺ (proton); base accepts H⁺. (3) LEWIS (1923): acid accepts electron pair; base donates electron pair. Arrhenius is the narrowest (restricted to aqueous solutions); Lewis is the most general (covers non-proton reactions). Answer is B per Arrhenius. Option A describes a Brønsted base. Option C describes a Lewis acid.",
@@ -71,10 +115,22 @@
     {
       "stem": "If the pH of a solution is 3, its hydrogen ion concentration [H⁺] is:",
       "options": [
-        {"option_text": "3 M", "is_correct": false},
-        {"option_text": "10⁻³ M", "is_correct": true},
-        {"option_text": "10³ M", "is_correct": false},
-        {"option_text": "3 × 10⁻¹ M", "is_correct": false}
+        {
+          "option_text": "3 M",
+          "is_correct": false
+        },
+        {
+          "option_text": "10⁻³ M",
+          "is_correct": true
+        },
+        {
+          "option_text": "10³ M",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 × 10⁻¹ M",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Definition: pH = −log₁₀[H⁺]. So [H⁺] = 10⁻ᵖᴴ. For pH = 3: [H⁺] = 10⁻³ M = 0.001 M. Common error: pH 3 DOES NOT mean [H⁺] = 3 M; the pH is a logarithmic measure. Similarly, pOH = −log[OH⁻], and at 25°C: pH + pOH = 14. So a pH-3 solution has [OH⁻] = 10⁻¹¹ M — highly acidic.",
@@ -92,10 +148,22 @@
     {
       "stem": "Which of the following salts would give a basic aqueous solution?",
       "options": [
-        {"option_text": "Sodium chloride (NaCl)", "is_correct": false},
-        {"option_text": "Ammonium chloride (NH₄Cl)", "is_correct": false},
-        {"option_text": "Sodium carbonate (Na₂CO₃)", "is_correct": true},
-        {"option_text": "Sodium sulphate (Na₂SO₄)", "is_correct": false}
+        {
+          "option_text": "Sodium chloride (NaCl)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ammonium chloride (NH₄Cl)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sodium carbonate (Na₂CO₃)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sodium sulphate (Na₂SO₄)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "Salt hydrolysis rules: (1) strong acid + strong base salt → NEUTRAL (e.g., NaCl from HCl+NaOH, Na₂SO₄ from H₂SO₄+NaOH); (2) strong base + weak acid salt → BASIC (e.g., Na₂CO₃ from NaOH+H₂CO₃ weak); (3) strong acid + weak base salt → ACIDIC (e.g., NH₄Cl from HCl+NH₃ weak). Sodium carbonate (washing soda) solution is basic (pH ~11-12) — used historically as a cleaning agent for this reason.",
@@ -113,10 +181,22 @@
     {
       "stem": "Acid rain is caused primarily by the presence of which gases in the atmosphere?",
       "options": [
-        {"option_text": "CO₂ and CH₄", "is_correct": false},
-        {"option_text": "SO₂ and NO₂", "is_correct": true},
-        {"option_text": "O₃ and N₂O", "is_correct": false},
-        {"option_text": "CFC and H₂O", "is_correct": false}
+        {
+          "option_text": "CO₂ and CH₄",
+          "is_correct": false
+        },
+        {
+          "option_text": "SO₂ and NO₂",
+          "is_correct": true
+        },
+        {
+          "option_text": "O₃ and N₂O",
+          "is_correct": false
+        },
+        {
+          "option_text": "CFC and H₂O",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "ACID RAIN forms when SO₂ (sulphur dioxide, from coal burning) and NO_x (nitrogen oxides, from vehicle exhaust) react with atmospheric water: SO₂ + H₂O → H₂SO₃; further oxidised to H₂SO₄ (sulphuric acid). NO₂ + H₂O → HNO₃ (nitric acid). These acids return to Earth as rain with pH ~4-5 (normal rain is pH ~5.6 due to dissolved CO₂ — not classified as acid rain unless <5). Effects: damage to aquatic ecosystems, forests, monuments (e.g., Taj Mahal).",
@@ -134,10 +214,22 @@
     {
       "stem": "Which of the following acids is found in ant stings and nettle leaves?",
       "options": [
-        {"option_text": "Acetic acid", "is_correct": false},
-        {"option_text": "Formic acid", "is_correct": true},
-        {"option_text": "Oxalic acid", "is_correct": false},
-        {"option_text": "Lactic acid", "is_correct": false}
+        {
+          "option_text": "Acetic acid",
+          "is_correct": false
+        },
+        {
+          "option_text": "Formic acid",
+          "is_correct": true
+        },
+        {
+          "option_text": "Oxalic acid",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lactic acid",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Common biological acids and their sources: FORMIC ACID (HCOOH) — ants, bees, nettle leaves (genus Formica gave the name). ACETIC ACID (CH₃COOH) — vinegar (dilute). CITRIC ACID — citrus fruits. TARTARIC ACID — tamarind, grapes. LACTIC ACID — curd, muscle during anaerobic respiration. OXALIC ACID — spinach, rhubarb. ASCORBIC ACID — Vitamin C. MALIC ACID — apples. Formic acid's Latin name 'acidum formicum' comes from 'formica' (Latin for ant).",
@@ -155,10 +247,22 @@
     {
       "stem": "Neutralization reaction between an acid and a base produces:",
       "options": [
-        {"option_text": "Hydrogen gas and water", "is_correct": false},
-        {"option_text": "Salt and water", "is_correct": true},
-        {"option_text": "Carbon dioxide and water", "is_correct": false},
-        {"option_text": "Only salt", "is_correct": false}
+        {
+          "option_text": "Hydrogen gas and water",
+          "is_correct": false
+        },
+        {
+          "option_text": "Salt and water",
+          "is_correct": true
+        },
+        {
+          "option_text": "Carbon dioxide and water",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only salt",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "NEUTRALIZATION: Acid + Base → Salt + Water. Example: HCl + NaOH → NaCl + H₂O. The reaction is EXOTHERMIC (releases heat). In terms of ions, it reduces to H⁺ + OH⁻ → H₂O. Acid + metal → salt + H₂ gas (not the same as neutralization). Acid + carbonate → salt + water + CO₂ gas.",
@@ -176,10 +280,22 @@
     {
       "stem": "Which of the following is a common indicator used in acid-base titrations?",
       "options": [
-        {"option_text": "Phenolphthalein", "is_correct": true},
-        {"option_text": "Silver nitrate", "is_correct": false},
-        {"option_text": "Hydrogen peroxide", "is_correct": false},
-        {"option_text": "Sodium thiosulphate", "is_correct": false}
+        {
+          "option_text": "Phenolphthalein",
+          "is_correct": true
+        },
+        {
+          "option_text": "Silver nitrate",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hydrogen peroxide",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sodium thiosulphate",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Common acid-base indicators: PHENOLPHTHALEIN (colourless in acid, pink in base; turnover pH ~8.2-10); METHYL ORANGE (red in acid, yellow in base; pH 3.1-4.4); METHYL RED (red in acid, yellow in base; pH 4.4-6.2); LITMUS (red/blue, pH 5.0-8.0); BROMOTHYMOL BLUE (yellow/blue, pH 6.0-7.6). Silver nitrate is used in HALIDE detection; hydrogen peroxide is an oxidant; sodium thiosulphate is used for iodine titrations (not acid-base).",

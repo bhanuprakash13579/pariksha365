@@ -8,13 +8,25 @@
     {
       "stem": "The MAJOR ORGAN responsible for nutrient absorption is the:",
       "options": [
-        {"option_text": "Stomach", "is_correct": false},
-        {"option_text": "Small intestine (particularly jejunum and ileum)", "is_correct": true},
-        {"option_text": "Large intestine", "is_correct": false},
-        {"option_text": "Liver", "is_correct": false}
+        {
+          "option_text": "Stomach",
+          "is_correct": false
+        },
+        {
+          "option_text": "Small intestine",
+          "is_correct": true
+        },
+        {
+          "option_text": "Large intestine",
+          "is_correct": false
+        },
+        {
+          "option_text": "Liver",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Small intestine — ~6-7 m long in adults. Villi and microvilli hugely increase surface area for absorption. Stomach primarily does acidic digestion (pepsin, HCl). Large intestine absorbs water and electrolytes; liver metabolises nutrients AFTER they're absorbed.",
+      "explanation": "Small intestine — ~6-7 m long in adults. Villi and microvilli hugely increase surface area for absorption. Stomach primarily does acidic digestion (pepsin, HCl). Large intestine absorbs water and electrolytes; liver metabolises nutrients AFTER they're absorbed. particularly jejunum and ileum.",
       "subject": "Biology",
       "topic": "Food, nutrition & digestion — mixed tiers",
       "topic_code": "BIO_NUTRITION_MIXED",
@@ -24,15 +36,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-bio-nut-01",
       "generated_at": "2026-04-22T18:20:00+00:00",
-      "id": "sgk_BIO_NUTRITION_MIXED_00001"
+      "id": "sgk_BIO_NUTRITION_MIXED_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Small intestine (particularly jejunum and ileum)",
+          "now": "Small intestine",
+          "moved_to_explanation": "particularly jejunum and ileum"
+        }
+      ]
     },
     {
       "stem": "The three MACRONUTRIENTS are:",
       "options": [
-        {"option_text": "Vitamins, minerals, water", "is_correct": false},
-        {"option_text": "Carbohydrates, proteins, fats", "is_correct": true},
-        {"option_text": "Calcium, iron, zinc", "is_correct": false},
-        {"option_text": "A, B, C", "is_correct": false}
+        {
+          "option_text": "Vitamins, minerals, water",
+          "is_correct": false
+        },
+        {
+          "option_text": "Carbohydrates, proteins, fats",
+          "is_correct": true
+        },
+        {
+          "option_text": "Calcium, iron, zinc",
+          "is_correct": false
+        },
+        {
+          "option_text": "A, B, C",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Macronutrients (needed in large amounts): carbohydrates (4 kcal/g), proteins (4 kcal/g), fats (9 kcal/g). Also water. Micronutrients (needed in small amounts): vitamins and minerals.",
@@ -50,10 +82,22 @@
     {
       "stem": "Match the DIGESTIVE ENZYME with the ORGAN/site that secretes it. A. Ptyalin (salivary amylase).  B. Pepsin.  C. Trypsin.  D. Lipase. List-II: 1. Salivary glands.  2. Stomach.  3. Pancreas.  4. Pancreas (also mouth / stomach trace amounts).",
       "options": [
-        {"option_text": "A-1, B-2, C-3, D-4", "is_correct": true},
-        {"option_text": "A-2, B-1, C-3, D-4", "is_correct": false},
-        {"option_text": "A-1, B-3, C-2, D-4", "is_correct": false},
-        {"option_text": "A-1, B-2, C-4, D-3", "is_correct": false}
+        {
+          "option_text": "A-1, B-2, C-3, D-4",
+          "is_correct": true
+        },
+        {
+          "option_text": "A-2, B-1, C-3, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-3, C-2, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-2, C-4, D-3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Ptyalin — salivary amylase, starts carbohydrate digestion in the mouth. Pepsin — stomach, digests proteins (optimal pH 1.5-2). Trypsin — pancreatic enzyme, digests proteins in alkaline small intestine. Lipase — pancreas (major) and stomach, digests fats.",
@@ -71,13 +115,25 @@
     {
       "stem": "BILE, which emulsifies fats, is produced by:",
       "options": [
-        {"option_text": "Pancreas", "is_correct": false},
-        {"option_text": "Liver (stored in gall bladder)", "is_correct": true},
-        {"option_text": "Kidney", "is_correct": false},
-        {"option_text": "Stomach lining", "is_correct": false}
+        {
+          "option_text": "Pancreas",
+          "is_correct": false
+        },
+        {
+          "option_text": "Liver",
+          "is_correct": true
+        },
+        {
+          "option_text": "Kidney",
+          "is_correct": false
+        },
+        {
+          "option_text": "Stomach lining",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Bile — produced by the liver, concentrated and stored in the gall bladder, released into duodenum through the bile duct when food arrives. Bile salts emulsify fats into smaller droplets (larger surface area for lipase to act). Bile itself has no enzymes.",
+      "explanation": "Bile — produced by the liver, concentrated and stored in the gall bladder, released into duodenum through the bile duct when food arrives. Bile salts emulsify fats into smaller droplets (larger surface area for lipase to act). Bile itself has no enzymes. stored in gall bladder.",
       "subject": "Biology",
       "topic": "Food, nutrition & digestion — mixed tiers",
       "topic_code": "BIO_NUTRITION_MIXED",
@@ -87,15 +143,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-bio-nut-04",
       "generated_at": "2026-04-22T18:20:00+00:00",
-      "id": "sgk_BIO_NUTRITION_MIXED_00004"
+      "id": "sgk_BIO_NUTRITION_MIXED_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Liver (stored in gall bladder)",
+          "now": "Liver",
+          "moved_to_explanation": "stored in gall bladder"
+        }
+      ]
     },
     {
       "stem": "The FAT-SOLUBLE vitamins are:",
       "options": [
-        {"option_text": "A, B, C, D", "is_correct": false},
-        {"option_text": "A, D, E, K", "is_correct": true},
-        {"option_text": "B, C only", "is_correct": false},
-        {"option_text": "Only vitamin D", "is_correct": false}
+        {
+          "option_text": "A, B, C, D",
+          "is_correct": false
+        },
+        {
+          "option_text": "A, D, E, K",
+          "is_correct": true
+        },
+        {
+          "option_text": "B, C only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only vitamin D",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Fat-soluble: A, D, E, K — stored in body fat and liver, deficiencies develop slowly, toxicity possible from overdose. Water-soluble: B-complex + C — excess excreted in urine; deficiencies develop faster.",
@@ -113,10 +189,22 @@
     {
       "stem": "The vitamin essential for BLOOD CLOTTING is:",
       "options": [
-        {"option_text": "Vitamin A", "is_correct": false},
-        {"option_text": "Vitamin K", "is_correct": true},
-        {"option_text": "Vitamin C", "is_correct": false},
-        {"option_text": "Vitamin E", "is_correct": false}
+        {
+          "option_text": "Vitamin A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vitamin K",
+          "is_correct": true
+        },
+        {
+          "option_text": "Vitamin C",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vitamin E",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Vitamin K — needed for synthesis of prothrombin and clotting factors. Deficiency → bleeding disorders. Source: leafy greens, liver; also produced by intestinal bacteria. Warfarin (blood thinner) acts by interfering with Vitamin K cycle.",
@@ -134,10 +222,22 @@
     {
       "stem": "Which amino acid is NOT synthesised by the human body and MUST be supplied through diet?",
       "options": [
-        {"option_text": "Glycine", "is_correct": false},
-        {"option_text": "Lysine", "is_correct": true},
-        {"option_text": "Alanine", "is_correct": false},
-        {"option_text": "Serine", "is_correct": false}
+        {
+          "option_text": "Glycine",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lysine",
+          "is_correct": true
+        },
+        {
+          "option_text": "Alanine",
+          "is_correct": false
+        },
+        {
+          "option_text": "Serine",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Essential amino acids (9 in humans) — cannot be synthesised: histidine, isoleucine, leucine, LYSINE, methionine, phenylalanine, threonine, tryptophan, valine. Non-essential are synthesised internally (glycine, alanine, serine, etc.).",

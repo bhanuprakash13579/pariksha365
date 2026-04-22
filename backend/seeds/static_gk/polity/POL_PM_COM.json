@@ -8,13 +8,25 @@
     {
       "stem": "Which Article of the Indian Constitution provides for the appointment of the Prime Minister and the Council of Ministers?",
       "options": [
-        {"option_text": "Article 52", "is_correct": false},
-        {"option_text": "ARTICLE 75 — PM appointed by the President; other ministers appointed by the President on PM's advice", "is_correct": true},
-        {"option_text": "Article 74", "is_correct": false},
-        {"option_text": "Article 76", "is_correct": false}
+        {
+          "option_text": "Article 52",
+          "is_correct": false
+        },
+        {
+          "option_text": "ARTICLE 75",
+          "is_correct": true
+        },
+        {
+          "option_text": "Article 74",
+          "is_correct": false
+        },
+        {
+          "option_text": "Article 76",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ARTICLE 75 — 'APPOINTMENT OF MINISTERS': (1) The PRIME MINISTER shall be APPOINTED by the PRESIDENT + other Ministers appointed by the President on the ADVICE of the PM. (2) Ministers hold office during the PLEASURE of the President (in reality, so long as they retain Lok Sabha confidence). (3) 91st CAA (2003) — size of CoM capped at 15% of Lok Sabha strength (so max = 81 in a 543-member LS after 91st — though 540-seat 2024 LS means cap is 81). (4) Minister must be a MEMBER of either House within 6 MONTHS of being sworn in (Art 75(5)); if not elected by then, must resign. (5) Ministers collectively responsible to LOK SABHA (Art 75(3)). RELATED ARTICLES: ART 74 — Council of Ministers headed by PM to AID + ADVISE the President (binding after 42nd Amendment 1976 + 44th Amendment 1978 clarifications — president normally bound; can return once for reconsideration). ART 78 — DUTIES of the PM: communicate decisions of CoM to President; furnish info as President requests; submit any matter referred to President for CoM consideration. ART 52 — President's office. ART 76 — Attorney General.",
+      "explanation": "ARTICLE 75 — 'APPOINTMENT OF MINISTERS': (1) The PRIME MINISTER shall be APPOINTED by the PRESIDENT + other Ministers appointed by the President on the ADVICE of the PM. (2) Ministers hold office during the PLEASURE of the President (in reality, so long as they retain Lok Sabha confidence). (3) 91st CAA (2003) — size of CoM capped at 15% of Lok Sabha strength (so max = 81 in a 543-member LS after 91st — though 540-seat 2024 LS means cap is 81). (4) Minister must be a MEMBER of either House within 6 MONTHS of being sworn in (Art 75(5)); if not elected by then, must resign. (5) Ministers collectively responsible to LOK SABHA (Art 75(3)). RELATED ARTICLES: ART 74 — Council of Ministers headed by PM to AID + ADVISE the President (binding after 42nd Amendment 1976 + 44th Amendment 1978 clarifications — president normally bound; can return once for reconsideration). ART 78 — DUTIES of the PM: communicate decisions of CoM to President; furnish info as President requests; submit any matter referred to President for CoM consideration. ART 52 — President's office. ART 76 — Attorney General. PM appointed by the President; other ministers appointed by the President on PM's advice.",
       "subject": "Polity",
       "topic": "Prime Minister & Council of Ministers",
       "topic_code": "POL_PM_COM",
@@ -24,18 +36,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-pm-com-01",
       "generated_at": "2026-04-21T00:00:00+00:00",
-      "id": "sgk_POL_PM_COM_00001"
+      "id": "sgk_POL_PM_COM_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ARTICLE 75 — PM appointed by the President; other ministers appointed by the President on PM's advice",
+          "now": "ARTICLE 75",
+          "moved_to_explanation": "PM appointed by the President; other ministers appointed by the President on PM's advice"
+        }
+      ]
     },
     {
       "stem": "As per the 91st Constitutional Amendment (2003), the size of the Union Council of Ministers cannot exceed:",
       "options": [
-        {"option_text": "10% of Lok Sabha strength", "is_correct": false},
-        {"option_text": "15% of the TOTAL STRENGTH of the LOK SABHA (including PM) — to curb jumbo ministries", "is_correct": true},
-        {"option_text": "25% of Lok Sabha strength", "is_correct": false},
-        {"option_text": "No limit", "is_correct": false}
+        {
+          "option_text": "10% of Lok Sabha strength",
+          "is_correct": false
+        },
+        {
+          "option_text": "15% of the TOTAL STRENGTH of the LOK SABHA",
+          "is_correct": true
+        },
+        {
+          "option_text": "25% of Lok Sabha strength",
+          "is_correct": false
+        },
+        {
+          "option_text": "No limit",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "91st CONSTITUTIONAL AMENDMENT ACT, 2003 — inserted Art 75(1A) [Union] + Art 164(1A) [State] to cap the size of the Council of Ministers. PROVISIONS: (1) TOTAL number of Ministers INCLUDING the PM shall not exceed 15% of LOK SABHA's total strength. For the current 543-member LS (will rise post-delimitation), the cap = 81 ministers. (2) SIMILAR cap for STATES: 15% of Legislative Assembly; minimum 12 even in small states. (3) ALSO made DEFECTED legislators disqualified from holding a ministerial post (plugs a loophole that let defectors join ruling coalition as ministers). BACKGROUND: 'JUMBO MINISTRIES' — e.g., in some states pre-2003, a CM would appoint 40-80 ministers to hold coalitions together; the amendment was passed on all-party consensus (NCRWC recommendation, National Commission to Review Working of the Constitution, 2002). CURRENT: Modi Cabinet (post-2024 elections) has ~72 ministers (Cabinet + MoS), well within 81 cap. RANKS of Ministers: (a) CABINET MINISTERS (members of Cabinet — senior); (b) MINISTERS OF STATE with Independent Charge (head a ministry, not in Cabinet); (c) Ministers of State (assist Cabinet Ministers). DEPUTY PMs (not a constitutional post) — there have been 8 historically (Patel, Morarji Desai, Charan Singh, Jagjivan Ram, Y.B. Chavan, Devi Lal, L.K. Advani).",
+      "explanation": "91st CONSTITUTIONAL AMENDMENT ACT, 2003 — inserted Art 75(1A) [Union] + Art 164(1A) [State] to cap the size of the Council of Ministers. PROVISIONS: (1) TOTAL number of Ministers INCLUDING the PM shall not exceed 15% of LOK SABHA's total strength. For the current 543-member LS (will rise post-delimitation), the cap = 81 ministers. (2) SIMILAR cap for STATES: 15% of Legislative Assembly; minimum 12 even in small states. (3) ALSO made DEFECTED legislators disqualified from holding a ministerial post (plugs a loophole that let defectors join ruling coalition as ministers). BACKGROUND: 'JUMBO MINISTRIES' — e.g., in some states pre-2003, a CM would appoint 40-80 ministers to hold coalitions together; the amendment was passed on all-party consensus (NCRWC recommendation, National Commission to Review Working of the Constitution, 2002). CURRENT: Modi Cabinet (post-2024 elections) has ~72 ministers (Cabinet + MoS), well within 81 cap. RANKS of Ministers: (a) CABINET MINISTERS (members of Cabinet — senior); (b) MINISTERS OF STATE with Independent Charge (head a ministry, not in Cabinet); (c) Ministers of State (assist Cabinet Ministers). DEPUTY PMs (not a constitutional post) — there have been 8 historically (Patel, Morarji Desai, Charan Singh, Jagjivan Ram, Y.B. Chavan, Devi Lal, L.K. Advani). to curb jumbo ministries; including PM.",
       "subject": "Polity",
       "topic": "Prime Minister & Council of Ministers",
       "topic_code": "POL_PM_COM",
@@ -45,18 +77,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-pm-com-01",
       "generated_at": "2026-04-21T00:00:00+00:00",
-      "id": "sgk_POL_PM_COM_00002"
+      "id": "sgk_POL_PM_COM_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "15% of the TOTAL STRENGTH of the LOK SABHA (including PM) — to curb jumbo ministries",
+          "now": "15% of the TOTAL STRENGTH of the LOK SABHA",
+          "moved_to_explanation": "to curb jumbo ministries; including PM"
+        }
+      ]
     },
     {
       "stem": "Who was India's first PRIME MINISTER to come from Lok Sabha via a no-confidence motion win after initially being in a minority?",
       "options": [
-        {"option_text": "Jawaharlal Nehru", "is_correct": false},
-        {"option_text": "P.V. NARASIMHA RAO (1991-96) — led minority Congress govt that survived by attracting defectors + passing LPG reforms", "is_correct": true},
-        {"option_text": "Morarji Desai", "is_correct": false},
-        {"option_text": "V.P. Singh", "is_correct": false}
+        {
+          "option_text": "Jawaharlal Nehru",
+          "is_correct": false
+        },
+        {
+          "option_text": "P.V. NARASIMHA RAO (1991-96)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Morarji Desai",
+          "is_correct": false
+        },
+        {
+          "option_text": "V.P. Singh",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "P.V. NARASIMHA RAO (1921-2004) — 9th PM of India (21 June 1991 – 16 May 1996). Significance: (1) First PM from SOUTH INDIA (born in Karimnagar, united Andhra, now Telangana); (2) First FULL-TERM MINORITY GOVERNMENT to complete 5 years; (3) Polyglot — knew ~17 languages; (4) Architect of LPG REFORMS (Liberalisation, Privatisation, Globalisation, 1991) along with FM MANMOHAN SINGH — rescued India from the 1991 BoP crisis (FOREX reserves ~2 weeks; 67 tonnes of gold pledged to BoE + UBS); (5) Started the LOOK EAST POLICY; (6) Opened up India to FDI + scrapped the License Raj. COALITION MANAGEMENT: Congress had 244/543 seats, short of majority; Rao ran a minority govt surviving multiple no-confidence motions — most controversially the 1993 NC motion he won through allegations of paying JMM MPs (later Supreme Court ruled MPs immune for votes even if bribed — V. Ashok Kumar Singh case). Also PM during demolition of BABRI MASJID (6 Dec 1992) — a blot on his tenure. BOOK: 'THE INSIDER' — his political novel. AFTERMATH: sidelined by the Gandhi family after loss in 1996; denied state funeral in Delhi (cremated in Hyderabad). BHARAT RATNA awarded POSTHUMOUSLY in 2024.",
+      "explanation": "P.V. NARASIMHA RAO (1921-2004) — 9th PM of India (21 June 1991 – 16 May 1996). Significance: (1) First PM from SOUTH INDIA (born in Karimnagar, united Andhra, now Telangana); (2) First FULL-TERM MINORITY GOVERNMENT to complete 5 years; (3) Polyglot — knew ~17 languages; (4) Architect of LPG REFORMS (Liberalisation, Privatisation, Globalisation, 1991) along with FM MANMOHAN SINGH — rescued India from the 1991 BoP crisis (FOREX reserves ~2 weeks; 67 tonnes of gold pledged to BoE + UBS); (5) Started the LOOK EAST POLICY; (6) Opened up India to FDI + scrapped the License Raj. COALITION MANAGEMENT: Congress had 244/543 seats, short of majority; Rao ran a minority govt surviving multiple no-confidence motions — most controversially the 1993 NC motion he won through allegations of paying JMM MPs (later Supreme Court ruled MPs immune for votes even if bribed — V. Ashok Kumar Singh case). Also PM during demolition of BABRI MASJID (6 Dec 1992) — a blot on his tenure. BOOK: 'THE INSIDER' — his political novel. AFTERMATH: sidelined by the Gandhi family after loss in 1996; denied state funeral in Delhi (cremated in Hyderabad). BHARAT RATNA awarded POSTHUMOUSLY in 2024. led minority Congress govt that survived by attracting defectors + passing LPG reforms.",
       "subject": "Polity",
       "topic": "Prime Minister & Council of Ministers",
       "topic_code": "POL_PM_COM",
@@ -66,18 +118,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-pm-com-01",
       "generated_at": "2026-04-21T00:00:00+00:00",
-      "id": "sgk_POL_PM_COM_00003"
+      "id": "sgk_POL_PM_COM_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "P.V. NARASIMHA RAO (1991-96) — led minority Congress govt that survived by attracting defectors + passing LPG reforms",
+          "now": "P.V. NARASIMHA RAO (1991-96)",
+          "moved_to_explanation": "led minority Congress govt that survived by attracting defectors + passing LPG reforms"
+        }
+      ]
     },
     {
       "stem": "Article 74(1) of the Constitution provides that there SHALL BE a Council of Ministers to aid and advise the President. The advice is BINDING on the President because of the:",
       "options": [
-        {"option_text": "42nd Amendment 1976 (made it binding) + 44th Amendment 1978 (allowed ONE return for reconsideration)", "is_correct": true},
-        {"option_text": "It has always been binding since 1950", "is_correct": false},
-        {"option_text": "Supreme Court judgments only", "is_correct": false},
-        {"option_text": "It is only a convention, not legally binding", "is_correct": false}
+        {
+          "option_text": "42nd Amendment 1976 (made it binding) + 44th Amendment 1978",
+          "is_correct": true
+        },
+        {
+          "option_text": "It has always been binding since 1950",
+          "is_correct": false
+        },
+        {
+          "option_text": "Supreme Court judgments only",
+          "is_correct": false
+        },
+        {
+          "option_text": "It is only a convention, not legally binding",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
-      "explanation": "ARTICLE 74(1) — CoM advice to the President: (a) ORIGINAL text (1950-1976): 'There shall be a Council of Ministers with the PM at the head to aid and advise the President' — ambiguity whether binding; (b) 42nd AMENDMENT (1976): inserted 'who shall, in the exercise of his functions, act in accordance with such advice' — made advice binding; (c) 44th AMENDMENT (1978 — post-Emergency corrective): added proviso allowing the President to RETURN the advice ONCE for reconsideration; but the President SHALL ACT in accordance with the advice tendered after such reconsideration. RESULT: President is effectively a CEREMONIAL head bound by CoM advice, except for the 'pocket veto' or the one-time send-back. Article 74(2) — the question whether any advice was tendered + what advice was tendered CANNOT be inquired into in any court (protects secrecy of deliberations). DISCRETIONARY POWERS of the President that survive (SITUATIONAL DISCRETION): (1) appointing PM when no party has majority (hung LS); (2) dismissing Council when it loses majority + refuses to resign; (3) dissolving LS when CoM has lost confidence. SHAMSHER SINGH case (1974) + S.R. BOMMAI case (1994) reaffirmed the binding nature subject to these exceptions.",
+      "explanation": "ARTICLE 74(1) — CoM advice to the President: (a) ORIGINAL text (1950-1976): 'There shall be a Council of Ministers with the PM at the head to aid and advise the President' — ambiguity whether binding; (b) 42nd AMENDMENT (1976): inserted 'who shall, in the exercise of his functions, act in accordance with such advice' — made advice binding; (c) 44th AMENDMENT (1978 — post-Emergency corrective): added proviso allowing the President to RETURN the advice ONCE for reconsideration; but the President SHALL ACT in accordance with the advice tendered after such reconsideration. RESULT: President is effectively a CEREMONIAL head bound by CoM advice, except for the 'pocket veto' or the one-time send-back. Article 74(2) — the question whether any advice was tendered + what advice was tendered CANNOT be inquired into in any court (protects secrecy of deliberations). DISCRETIONARY POWERS of the President that survive (SITUATIONAL DISCRETION): (1) appointing PM when no party has majority (hung LS); (2) dismissing Council when it loses majority + refuses to resign; (3) dissolving LS when CoM has lost confidence. SHAMSHER SINGH case (1974) + S.R. BOMMAI case (1994) reaffirmed the binding nature subject to these exceptions. allowed ONE return for reconsideration.",
       "subject": "Polity",
       "topic": "Prime Minister & Council of Ministers",
       "topic_code": "POL_PM_COM",
@@ -87,18 +159,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-pm-com-01",
       "generated_at": "2026-04-21T00:00:00+00:00",
-      "id": "sgk_POL_PM_COM_00004"
+      "id": "sgk_POL_PM_COM_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "42nd Amendment 1976 (made it binding) + 44th Amendment 1978 (allowed ONE return for reconsideration)",
+          "now": "42nd Amendment 1976 (made it binding) + 44th Amendment 1978",
+          "moved_to_explanation": "allowed ONE return for reconsideration"
+        }
+      ]
     },
     {
       "stem": "Who was India's YOUNGEST Prime Minister?",
       "options": [
-        {"option_text": "Jawaharlal Nehru at 58", "is_correct": false},
-        {"option_text": "RAJIV GANDHI — sworn in at 40 years, on 31 October 1984 after the assassination of his mother Indira Gandhi", "is_correct": true},
-        {"option_text": "Narendra Modi at 63", "is_correct": false},
-        {"option_text": "Indira Gandhi at 48", "is_correct": false}
+        {
+          "option_text": "Jawaharlal Nehru at 58",
+          "is_correct": false
+        },
+        {
+          "option_text": "RAJIV GANDHI",
+          "is_correct": true
+        },
+        {
+          "option_text": "Narendra Modi at 63",
+          "is_correct": false
+        },
+        {
+          "option_text": "Indira Gandhi at 48",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "RAJIV GANDHI (20 Aug 1944 – 21 May 1991) — 6th PM of India (31 October 1984 – 2 December 1989). Sworn in at 40 YEARS + 72 days — the YOUNGEST PM in India's history. CIRCUMSTANCES: mother Indira Gandhi assassinated by her Sikh bodyguards (Beant Singh + Satwant Singh) on the morning of 31 Oct 1984 — Rajiv was a young politician (entered politics only after younger brother Sanjay's death in 1980 plane crash); was sworn in the same evening by President Zail Singh. 1984 ELECTION: Congress won 414/514 seats — LARGEST MAJORITY EVER in Indian political history (sympathy wave). KEY INITIATIVES: (1) ANTI-DEFECTION LAW (52nd CAA 1985 — Tenth Schedule); (2) lowered voting age from 21 to 18 (61st CAA 1989); (3) Panchayati Raj Bill (became 73rd CAA later, 1992); (4) TELECOM + COMPUTER revolution — founded MTNL (1986) + Sam Pitroda's C-DoT + brought PCs to Indian ministries; (5) Educational Technology Mission + Operation Blackboard. LOWS: BOFORS scandal (kickbacks in Swedish artillery deal — unproven legally but politically fatal); IPKF intervention in Sri Lanka (1987-90); handling of 1984 anti-Sikh riots + Shah Bano case U-turn. ASSASSINATION: 21 May 1991 at Sriperumbudur (TN) by a LTTE suicide-bomber Thenmozhi Rajaratnam during a campaign rally — at age 46. Posthumous Bharat Ratna 1991. Atal Bihari Vajpayee became PM at ~73; Narendra Modi at ~63 (oldest BJP PM).",
+      "explanation": "RAJIV GANDHI (20 Aug 1944 – 21 May 1991) — 6th PM of India (31 October 1984 – 2 December 1989). Sworn in at 40 YEARS + 72 days — the YOUNGEST PM in India's history. CIRCUMSTANCES: mother Indira Gandhi assassinated by her Sikh bodyguards (Beant Singh + Satwant Singh) on the morning of 31 Oct 1984 — Rajiv was a young politician (entered politics only after younger brother Sanjay's death in 1980 plane crash); was sworn in the same evening by President Zail Singh. 1984 ELECTION: Congress won 414/514 seats — LARGEST MAJORITY EVER in Indian political history (sympathy wave). KEY INITIATIVES: (1) ANTI-DEFECTION LAW (52nd CAA 1985 — Tenth Schedule); (2) lowered voting age from 21 to 18 (61st CAA 1989); (3) Panchayati Raj Bill (became 73rd CAA later, 1992); (4) TELECOM + COMPUTER revolution — founded MTNL (1986) + Sam Pitroda's C-DoT + brought PCs to Indian ministries; (5) Educational Technology Mission + Operation Blackboard. LOWS: BOFORS scandal (kickbacks in Swedish artillery deal — unproven legally but politically fatal); IPKF intervention in Sri Lanka (1987-90); handling of 1984 anti-Sikh riots + Shah Bano case U-turn. ASSASSINATION: 21 May 1991 at Sriperumbudur (TN) by a LTTE suicide-bomber Thenmozhi Rajaratnam during a campaign rally — at age 46. Posthumous Bharat Ratna 1991. Atal Bihari Vajpayee became PM at ~73; Narendra Modi at ~63 (oldest BJP PM). sworn in at 40 years, on 31 October 1984 after the assassination of his mother Indira Gandhi.",
       "subject": "Polity",
       "topic": "Prime Minister & Council of Ministers",
       "topic_code": "POL_PM_COM",
@@ -108,18 +200,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-pm-com-01",
       "generated_at": "2026-04-21T00:00:00+00:00",
-      "id": "sgk_POL_PM_COM_00005"
+      "id": "sgk_POL_PM_COM_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "RAJIV GANDHI — sworn in at 40 years, on 31 October 1984 after the assassination of his mother Indira Gandhi",
+          "now": "RAJIV GANDHI",
+          "moved_to_explanation": "sworn in at 40 years, on 31 October 1984 after the assassination of his mother Indira Gandhi"
+        }
+      ]
     },
     {
       "stem": "The principle of COLLECTIVE RESPONSIBILITY of the Council of Ministers means:",
       "options": [
-        {"option_text": "Each minister is responsible only for his own department", "is_correct": false},
-        {"option_text": "The CoM as a whole is RESPONSIBLE TO THE LOK SABHA — they swim + sink together; losing LS confidence compels resignation of the entire CoM", "is_correct": true},
-        {"option_text": "Ministers are responsible to the Rajya Sabha", "is_correct": false},
-        {"option_text": "The PM alone is responsible", "is_correct": false}
+        {
+          "option_text": "Each minister is responsible only for his own department",
+          "is_correct": false
+        },
+        {
+          "option_text": "The CoM as a whole is RESPONSIBLE TO THE LOK SABHA",
+          "is_correct": true
+        },
+        {
+          "option_text": "Ministers are responsible to the Rajya Sabha",
+          "is_correct": false
+        },
+        {
+          "option_text": "The PM alone is responsible",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "COLLECTIVE RESPONSIBILITY (Article 75(3)) — the bedrock of Parliamentary democracy: the Council of Ministers is COLLECTIVELY responsible to the LOK SABHA (not Rajya Sabha). IMPLICATIONS: (1) CoM stays in office only as long as it commands Lok Sabha's CONFIDENCE. If a NO-CONFIDENCE motion passes, or a confidence motion fails, the ENTIRE CoM must resign (including non-LS ministers). (2) CABINET DECISIONS are binding on ALL ministers — a minister who disagrees publicly must resign (e.g., Arun Shourie-Yashwant Sinha disagreements in Vajpayee Cabinet; more recently, Jaitley's disagreements). (3) CONFIDENTIALITY — ministers bound by an OATH OF SECRECY; Cabinet deliberations not to be disclosed. INDIVIDUAL RESPONSIBILITY (Art 75(2)): 'Ministers hold office during the pleasure of the President' — but in practice, only the PM can recommend dismissal. INDIAN PRACTICE: PM often removes underperforming ministers (reshuffle) — e.g., Vajpayee removed Babulal Marandi; Modi dropped many in 2021 reshuffle + 2024 rejig. NO-CONFIDENCE MOTIONS THAT SUCCEEDED: VP Singh 1990, Deve Gowda 1997, Gujral 1998, Vajpayee 1999 (lost by 1 vote — 269-270 — Giridhar Gomango voted despite being Odisha CM). Most no-confidence motions FAIL (2003 Sonia against Vajpayee; 2018 against Modi).",
+      "explanation": "COLLECTIVE RESPONSIBILITY (Article 75(3)) — the bedrock of Parliamentary democracy: the Council of Ministers is COLLECTIVELY responsible to the LOK SABHA (not Rajya Sabha). IMPLICATIONS: (1) CoM stays in office only as long as it commands Lok Sabha's CONFIDENCE. If a NO-CONFIDENCE motion passes, or a confidence motion fails, the ENTIRE CoM must resign (including non-LS ministers). (2) CABINET DECISIONS are binding on ALL ministers — a minister who disagrees publicly must resign (e.g., Arun Shourie-Yashwant Sinha disagreements in Vajpayee Cabinet; more recently, Jaitley's disagreements). (3) CONFIDENTIALITY — ministers bound by an OATH OF SECRECY; Cabinet deliberations not to be disclosed. INDIVIDUAL RESPONSIBILITY (Art 75(2)): 'Ministers hold office during the pleasure of the President' — but in practice, only the PM can recommend dismissal. INDIAN PRACTICE: PM often removes underperforming ministers (reshuffle) — e.g., Vajpayee removed Babulal Marandi; Modi dropped many in 2021 reshuffle + 2024 rejig. NO-CONFIDENCE MOTIONS THAT SUCCEEDED: VP Singh 1990, Deve Gowda 1997, Gujral 1998, Vajpayee 1999 (lost by 1 vote — 269-270 — Giridhar Gomango voted despite being Odisha CM). Most no-confidence motions FAIL (2003 Sonia against Vajpayee; 2018 against Modi). they swim + sink together; losing LS confidence compels resignation of the entire CoM.",
       "subject": "Polity",
       "topic": "Prime Minister & Council of Ministers",
       "topic_code": "POL_PM_COM",
@@ -129,18 +241,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-pm-com-01",
       "generated_at": "2026-04-21T00:00:00+00:00",
-      "id": "sgk_POL_PM_COM_00006"
+      "id": "sgk_POL_PM_COM_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "The CoM as a whole is RESPONSIBLE TO THE LOK SABHA — they swim + sink together; losing LS confidence compels resignation of the entire CoM",
+          "now": "The CoM as a whole is RESPONSIBLE TO THE LOK SABHA",
+          "moved_to_explanation": "they swim + sink together; losing LS confidence compels resignation of the entire CoM"
+        }
+      ]
     },
     {
       "stem": "The ONLY Prime Minister of India who NEVER faced the Parliament as Prime Minister (resigned before addressing Lok Sabha) was:",
       "options": [
-        {"option_text": "H.D. Deve Gowda", "is_correct": false},
-        {"option_text": "CHOUDHARY CHARAN SINGH (1979-80) — resigned before facing the House when INC(I) withdrew support; acted as caretaker till Jan 1980", "is_correct": true},
-        {"option_text": "Chandra Shekhar", "is_correct": false},
-        {"option_text": "Morarji Desai", "is_correct": false}
+        {
+          "option_text": "H.D. Deve Gowda",
+          "is_correct": false
+        },
+        {
+          "option_text": "CHOUDHARY CHARAN SINGH (1979-80)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chandra Shekhar",
+          "is_correct": false
+        },
+        {
+          "option_text": "Morarji Desai",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "CHAUDHARY CHARAN SINGH (1902-1987) — 5th PM of India, 28 July 1979 – 14 January 1980. ONLY PM to have NEVER addressed the Lok Sabha as PM (resigned before he could face the confidence vote — 170 days in office). CIRCUMSTANCES: (a) Janata Party government led by Morarji Desai collapsed in July 1979 over internal dissensions (Dual membership issue — Jana Sangh members continuing with RSS); (b) Charan Singh split with 'Janata (S)' + was invited by President Neelam Sanjiva Reddy to form government with OUTSIDE SUPPORT from Indira Gandhi's INC(I) + CPI. (c) Indira WITHDREW support just before the confidence vote; Charan Singh resigned on 20 Aug 1979 — but continued as CARETAKER PM until Jan 1980 elections. 1980 ELECTION: Indira Gandhi's Congress(I) swept back; Charan Singh never returned to power. BACKGROUND: Charan Singh — farmer-leader from UP, champion of the kulak (rich peasant) lobby; advocated for small-scale agrarian economy; as UP CM (1967, 1970), key architect of land reforms. Birthday (23 DECEMBER) celebrated as KISAN DIWAS (Farmers' Day). BHARAT RATNA 2024 (posthumous, along with PV Narasimha Rao + MS Swaminathan + Advani + Karpoori Thakur). Other short-tenure PMs: Gulzarilal Nanda (2 stints as acting PM, 13 days each); Chandrashekhar (7 months); I.K. Gujral (11 months); H.D. Deve Gowda (10 months).",
+      "explanation": "CHAUDHARY CHARAN SINGH (1902-1987) — 5th PM of India, 28 July 1979 – 14 January 1980. ONLY PM to have NEVER addressed the Lok Sabha as PM (resigned before he could face the confidence vote — 170 days in office). CIRCUMSTANCES: (a) Janata Party government led by Morarji Desai collapsed in July 1979 over internal dissensions (Dual membership issue — Jana Sangh members continuing with RSS); (b) Charan Singh split with 'Janata (S)' + was invited by President Neelam Sanjiva Reddy to form government with OUTSIDE SUPPORT from Indira Gandhi's INC(I) + CPI. (c) Indira WITHDREW support just before the confidence vote; Charan Singh resigned on 20 Aug 1979 — but continued as CARETAKER PM until Jan 1980 elections. 1980 ELECTION: Indira Gandhi's Congress(I) swept back; Charan Singh never returned to power. BACKGROUND: Charan Singh — farmer-leader from UP, champion of the kulak (rich peasant) lobby; advocated for small-scale agrarian economy; as UP CM (1967, 1970), key architect of land reforms. Birthday (23 DECEMBER) celebrated as KISAN DIWAS (Farmers' Day). BHARAT RATNA 2024 (posthumous, along with PV Narasimha Rao + MS Swaminathan + Advani + Karpoori Thakur). Other short-tenure PMs: Gulzarilal Nanda (2 stints as acting PM, 13 days each); Chandrashekhar (7 months); I.K. Gujral (11 months); H.D. Deve Gowda (10 months). resigned before facing the House when INC(I) withdrew support; acted as caretaker till Jan 1980.",
       "subject": "Polity",
       "topic": "Prime Minister & Council of Ministers",
       "topic_code": "POL_PM_COM",
@@ -150,18 +282,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-pm-com-01",
       "generated_at": "2026-04-21T00:00:00+00:00",
-      "id": "sgk_POL_PM_COM_00007"
+      "id": "sgk_POL_PM_COM_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "CHOUDHARY CHARAN SINGH (1979-80) — resigned before facing the House when INC(I) withdrew support; acted as caretaker till Jan 1980",
+          "now": "CHOUDHARY CHARAN SINGH (1979-80)",
+          "moved_to_explanation": "resigned before facing the House when INC(I) withdrew support; acted as caretaker till Jan 1980"
+        }
+      ]
     },
     {
       "stem": "According to Article 75(5), if a person is appointed as a Minister and is not a member of either House of Parliament, he must become a member within:",
       "options": [
-        {"option_text": "3 months", "is_correct": false},
-        {"option_text": "SIX (6) MONTHS — failing which he ceases to be a Minister", "is_correct": true},
-        {"option_text": "1 year", "is_correct": false},
-        {"option_text": "No time limit", "is_correct": false}
+        {
+          "option_text": "3 months",
+          "is_correct": false
+        },
+        {
+          "option_text": "SIX (6) MONTHS",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 year",
+          "is_correct": false
+        },
+        {
+          "option_text": "No time limit",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ARTICLE 75(5) — six-month rule for non-member ministers. A person can be sworn in as a MINISTER (including PM) WITHOUT being a current MP, but MUST be elected/nominated to either House within 6 MONTHS. If they fail, they MUST CEASE to be a Minister. RATIONALE: allows talented outsiders to be brought in, but requires democratic sanction. CLASSIC EXAMPLES: (1) MANMOHAN SINGH — an economist + former RBI Governor, made FM in 1991 Rao Cabinet while not an MP; elected to Rajya Sabha (from Assam) within 6 months; became PM (2004, 2009) — only PM to have NEVER won a Lok Sabha election; Rajya Sabha 5 times. (2) HD DEVE GOWDA — became PM in 1996 before being an MP. (3) P.V. NARASIMHA RAO — was not an MP when chosen PM in 1991; won by-election in Nandyal (AP) with record margin. SC JUDGMENT: S.R. CHAUDHURI v. STATE OF PUNJAB (2001) — a minister who has failed to get elected once within 6 months CANNOT be re-appointed for another 6-month term without election — plugged a loophole used in Punjab by Parkash Singh Badal. Note: Rajya Sabha vacancy is easier to engineer (party biennial elections + by-election to fill death/resignation-caused vacancy) than Lok Sabha seat — many non-MP ministers take the Upper House route.",
+      "explanation": "ARTICLE 75(5) — six-month rule for non-member ministers. A person can be sworn in as a MINISTER (including PM) WITHOUT being a current MP, but MUST be elected/nominated to either House within 6 MONTHS. If they fail, they MUST CEASE to be a Minister. RATIONALE: allows talented outsiders to be brought in, but requires democratic sanction. CLASSIC EXAMPLES: (1) MANMOHAN SINGH — an economist + former RBI Governor, made FM in 1991 Rao Cabinet while not an MP; elected to Rajya Sabha (from Assam) within 6 months; became PM (2004, 2009) — only PM to have NEVER won a Lok Sabha election; Rajya Sabha 5 times. (2) HD DEVE GOWDA — became PM in 1996 before being an MP. (3) P.V. NARASIMHA RAO — was not an MP when chosen PM in 1991; won by-election in Nandyal (AP) with record margin. SC JUDGMENT: S.R. CHAUDHURI v. STATE OF PUNJAB (2001) — a minister who has failed to get elected once within 6 months CANNOT be re-appointed for another 6-month term without election — plugged a loophole used in Punjab by Parkash Singh Badal. Note: Rajya Sabha vacancy is easier to engineer (party biennial elections + by-election to fill death/resignation-caused vacancy) than Lok Sabha seat — many non-MP ministers take the Upper House route. failing which he ceases to be a Minister.",
       "subject": "Polity",
       "topic": "Prime Minister & Council of Ministers",
       "topic_code": "POL_PM_COM",
@@ -171,18 +323,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-pm-com-01",
       "generated_at": "2026-04-21T00:00:00+00:00",
-      "id": "sgk_POL_PM_COM_00008"
+      "id": "sgk_POL_PM_COM_00008",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "SIX (6) MONTHS — failing which he ceases to be a Minister",
+          "now": "SIX (6) MONTHS",
+          "moved_to_explanation": "failing which he ceases to be a Minister"
+        }
+      ]
     },
     {
       "stem": "Who administers the oath of office to the Prime Minister?",
       "options": [
-        {"option_text": "Chief Justice of India", "is_correct": false},
-        {"option_text": "PRESIDENT OF INDIA — as per the Third Schedule of the Constitution", "is_correct": true},
-        {"option_text": "Speaker of Lok Sabha", "is_correct": false},
-        {"option_text": "Vice-President", "is_correct": false}
+        {
+          "option_text": "Chief Justice of India",
+          "is_correct": false
+        },
+        {
+          "option_text": "PRESIDENT OF INDIA",
+          "is_correct": true
+        },
+        {
+          "option_text": "Speaker of Lok Sabha",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vice-President",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "OATH OF OFFICE for the Prime Minister + Union Ministers — administered by the PRESIDENT of INDIA, at the Rashtrapati Bhavan. FORMS of the oath in the THIRD SCHEDULE of the Constitution. TWO oaths are administered: (1) OATH OF OFFICE — to bear true faith + allegiance to the Constitution, uphold sovereignty + integrity of India, faithfully + conscientiously discharge duties. (2) OATH OF SECRECY — not to directly or indirectly communicate any matter considered in Council, except as required for proper discharge of duties. Ceremony traditionally held at FORECOURT of Rashtrapati Bhavan; PM typically sworn first followed by Cabinet Ministers + MoS. MODI 2024: sworn in by President DROUPADI MURMU on 9 June 2024 — 3rd consecutive term (only other PM after Nehru to do so). OTHER CONSTITUTIONAL OATHS admin by President: Vice-President, Governors (to respective State Governors technically — PRESIDENT admins VP's oath + Governors take oath before the CJI of respective HC / senior-most HC judge), CEC, CAG, judges of SC (admin by President; CJI admins Supreme Court judge oath if CJI in office). CJI takes his/her oath from the PRESIDENT. Governor admins State CM + State Ministers' oaths.",
+      "explanation": "OATH OF OFFICE for the Prime Minister + Union Ministers — administered by the PRESIDENT of INDIA, at the Rashtrapati Bhavan. FORMS of the oath in the THIRD SCHEDULE of the Constitution. TWO oaths are administered: (1) OATH OF OFFICE — to bear true faith + allegiance to the Constitution, uphold sovereignty + integrity of India, faithfully + conscientiously discharge duties. (2) OATH OF SECRECY — not to directly or indirectly communicate any matter considered in Council, except as required for proper discharge of duties. Ceremony traditionally held at FORECOURT of Rashtrapati Bhavan; PM typically sworn first followed by Cabinet Ministers + MoS. MODI 2024: sworn in by President DROUPADI MURMU on 9 June 2024 — 3rd consecutive term (only other PM after Nehru to do so). OTHER CONSTITUTIONAL OATHS admin by President: Vice-President, Governors (to respective State Governors technically — PRESIDENT admins VP's oath + Governors take oath before the CJI of respective HC / senior-most HC judge), CEC, CAG, judges of SC (admin by President; CJI admins Supreme Court judge oath if CJI in office). CJI takes his/her oath from the PRESIDENT. Governor admins State CM + State Ministers' oaths. as per the Third Schedule of the Constitution.",
       "subject": "Polity",
       "topic": "Prime Minister & Council of Ministers",
       "topic_code": "POL_PM_COM",
@@ -192,18 +364,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-pm-com-01",
       "generated_at": "2026-04-21T00:00:00+00:00",
-      "id": "sgk_POL_PM_COM_00009"
+      "id": "sgk_POL_PM_COM_00009",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "PRESIDENT OF INDIA — as per the Third Schedule of the Constitution",
+          "now": "PRESIDENT OF INDIA",
+          "moved_to_explanation": "as per the Third Schedule of the Constitution"
+        }
+      ]
     },
     {
       "stem": "The CABINET SECRETARIAT, which assists the Prime Minister + Council of Ministers, is headed by:",
       "options": [
-        {"option_text": "Principal Secretary to the PM", "is_correct": false},
-        {"option_text": "CABINET SECRETARY — senior-most IAS officer of India, ex-officio Chairman of the Civil Services Board", "is_correct": true},
-        {"option_text": "Home Secretary", "is_correct": false},
-        {"option_text": "Attorney General", "is_correct": false}
+        {
+          "option_text": "Principal Secretary to the PM",
+          "is_correct": false
+        },
+        {
+          "option_text": "CABINET SECRETARY",
+          "is_correct": true
+        },
+        {
+          "option_text": "Home Secretary",
+          "is_correct": false
+        },
+        {
+          "option_text": "Attorney General",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "CABINET SECRETARY — the HIGHEST-RANKING civil servant in India; head of the CABINET SECRETARIAT + secretary of the Cabinet + senior-most IAS officer; ex-officio CHAIRMAN of: (1) CIVIL SERVICES BOARD, (2) Committee of Secretaries, (3) ACC (Appointments Committee of the Cabinet) 'Establishment Officer' role. REPORTS TO: the Prime Minister (not to the President). TENURE: originally 2 years; extended up to 4 years by convention; longest-serving = P.K. Sinha (4 years, 2015-19). CURRENT: T.V. Somanathan (took over August 2024, previous Finance Secy). ROLE: (a) coordinates inter-ministerial issues; (b) circulates cabinet papers + draft notes; (c) monitors implementation of cabinet decisions; (d) heads emergency-response coordination (e.g., during COVID-19, Ukraine evacuation). CABINET SECRETARIAT IS DIFFERENT from PMO (Prime Minister's Office) — PMO is headed by PRINCIPAL SECRETARY TO THE PM (a separate role; currently P.K. Mishra of Modi govt; NSA Ajit Doval also sits in PMO structure). Cabinet Secretariat has Departments of: Cabinet Affairs, Coordination, + the National Security Council Secretariat (till recent). Order of Precedence: Cabinet Secretary is at rank 11 (above Chief Secretaries of all states, above all union secretaries, above DGMO).",
+      "explanation": "CABINET SECRETARY — the HIGHEST-RANKING civil servant in India; head of the CABINET SECRETARIAT + secretary of the Cabinet + senior-most IAS officer; ex-officio CHAIRMAN of: (1) CIVIL SERVICES BOARD, (2) Committee of Secretaries, (3) ACC (Appointments Committee of the Cabinet) 'Establishment Officer' role. REPORTS TO: the Prime Minister (not to the President). TENURE: originally 2 years; extended up to 4 years by convention; longest-serving = P.K. Sinha (4 years, 2015-19). CURRENT: T.V. Somanathan (took over August 2024, previous Finance Secy). ROLE: (a) coordinates inter-ministerial issues; (b) circulates cabinet papers + draft notes; (c) monitors implementation of cabinet decisions; (d) heads emergency-response coordination (e.g., during COVID-19, Ukraine evacuation). CABINET SECRETARIAT IS DIFFERENT from PMO (Prime Minister's Office) — PMO is headed by PRINCIPAL SECRETARY TO THE PM (a separate role; currently P.K. Mishra of Modi govt; NSA Ajit Doval also sits in PMO structure). Cabinet Secretariat has Departments of: Cabinet Affairs, Coordination, + the National Security Council Secretariat (till recent). Order of Precedence: Cabinet Secretary is at rank 11 (above Chief Secretaries of all states, above all union secretaries, above DGMO). senior-most IAS officer of India, ex-officio Chairman of the Civil Services Board.",
       "subject": "Polity",
       "topic": "Prime Minister & Council of Ministers",
       "topic_code": "POL_PM_COM",
@@ -213,7 +405,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-pm-com-01",
       "generated_at": "2026-04-21T00:00:00+00:00",
-      "id": "sgk_POL_PM_COM_00010"
+      "id": "sgk_POL_PM_COM_00010",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "CABINET SECRETARY — senior-most IAS officer of India, ex-officio Chairman of the Civil Services Board",
+          "now": "CABINET SECRETARY",
+          "moved_to_explanation": "senior-most IAS officer of India, ex-officio Chairman of the Civil Services Board"
+        }
+      ]
     }
   ]
 }

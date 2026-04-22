@@ -8,10 +8,22 @@
     {
       "stem": "The overall equation of PHOTOSYNTHESIS is:",
       "options": [
-        {"option_text": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂", "is_correct": true},
-        {"option_text": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O", "is_correct": false},
-        {"option_text": "CO₂ + H₂O → O₂ + C", "is_correct": false},
-        {"option_text": "6CO₂ → C₆H₁₂O₆", "is_correct": false}
+        {
+          "option_text": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂",
+          "is_correct": true
+        },
+        {
+          "option_text": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O",
+          "is_correct": false
+        },
+        {
+          "option_text": "CO₂ + H₂O → O₂ + C",
+          "is_correct": false
+        },
+        {
+          "option_text": "6CO₂ → C₆H₁₂O₆",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Photosynthesis: 6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ + 6O₂ (using chlorophyll). Reverse reaction is cellular respiration. Site: chloroplasts (thylakoids for light reactions, stroma for Calvin cycle).",
@@ -29,10 +41,22 @@
     {
       "stem": "Which part of the plant cell is the SITE of photosynthesis?",
       "options": [
-        {"option_text": "Mitochondria", "is_correct": false},
-        {"option_text": "Chloroplast", "is_correct": true},
-        {"option_text": "Nucleus", "is_correct": false},
-        {"option_text": "Vacuole", "is_correct": false}
+        {
+          "option_text": "Mitochondria",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chloroplast",
+          "is_correct": true
+        },
+        {
+          "option_text": "Nucleus",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vacuole",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Chloroplast — double-membrane organelle; contains chlorophyll + stacks of thylakoid discs (grana). Light reactions on thylakoid membrane → ATP + NADPH + O₂. Calvin cycle (dark reactions) in stroma → glucose. Origin: endosymbiont theory (cyanobacterial ancestor).",
@@ -50,10 +74,22 @@
     {
       "stem": "The PRIMARY PIGMENT that captures light energy in photosynthesis is:",
       "options": [
-        {"option_text": "Chlorophyll-a", "is_correct": true},
-        {"option_text": "Chlorophyll-b", "is_correct": false},
-        {"option_text": "Carotene", "is_correct": false},
-        {"option_text": "Xanthophyll", "is_correct": false}
+        {
+          "option_text": "Chlorophyll-a",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chlorophyll-b",
+          "is_correct": false
+        },
+        {
+          "option_text": "Carotene",
+          "is_correct": false
+        },
+        {
+          "option_text": "Xanthophyll",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Chlorophyll-a — primary photosynthetic pigment, the 'reaction centre' (P680, P700) that directly converts light to chemical energy. Chlorophyll-b, carotenoids (carotene, xanthophyll) are ACCESSORY pigments — absorb light and pass energy to chl-a.",
@@ -71,13 +107,25 @@
     {
       "stem": "The OXYGEN released during photosynthesis comes from:",
       "options": [
-        {"option_text": "CO₂", "is_correct": false},
-        {"option_text": "Water (H₂O, via photolysis)", "is_correct": true},
-        {"option_text": "Glucose", "is_correct": false},
-        {"option_text": "Soil", "is_correct": false}
+        {
+          "option_text": "CO₂",
+          "is_correct": false
+        },
+        {
+          "option_text": "Water",
+          "is_correct": true
+        },
+        {
+          "option_text": "Glucose",
+          "is_correct": false
+        },
+        {
+          "option_text": "Soil",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Photolysis of water (H₂O → 4 H⁺ + O₂ + 4 e⁻) on the thylakoid — oxygen released is the byproduct. Proved by Robin Hill (Hill reaction) + Sam Ruben / Martin Kamen isotope-labelling experiments (¹⁸O-labelled water gave ¹⁸O₂).",
+      "explanation": "Photolysis of water (H₂O → 4 H⁺ + O₂ + 4 e⁻) on the thylakoid — oxygen released is the byproduct. Proved by Robin Hill (Hill reaction) + Sam Ruben / Martin Kamen isotope-labelling experiments (¹⁸O-labelled water gave ¹⁸O₂). H₂O, via photolysis.",
       "subject": "Biology",
       "topic": "Photosynthesis — mixed tiers",
       "topic_code": "BIO_PHOTOSYNTHESIS_MIXED",
@@ -87,15 +135,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-bio-ph-04",
       "generated_at": "2026-04-23T03:30:00+00:00",
-      "id": "sgk_BIO_PHOTOSYNTHESIS_MIXED_00004"
+      "id": "sgk_BIO_PHOTOSYNTHESIS_MIXED_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Water (H₂O, via photolysis)",
+          "now": "Water",
+          "moved_to_explanation": "H₂O, via photolysis"
+        }
+      ]
     },
     {
       "stem": "The DARK reactions of photosynthesis (Calvin-Benson cycle) take place in the:",
       "options": [
-        {"option_text": "Thylakoid lumen", "is_correct": false},
-        {"option_text": "Stroma of the chloroplast", "is_correct": true},
-        {"option_text": "Nucleus", "is_correct": false},
-        {"option_text": "Cytoplasm", "is_correct": false}
+        {
+          "option_text": "Thylakoid lumen",
+          "is_correct": false
+        },
+        {
+          "option_text": "Stroma of the chloroplast",
+          "is_correct": true
+        },
+        {
+          "option_text": "Nucleus",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cytoplasm",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Calvin cycle (light-independent) — stroma. Uses ATP + NADPH (from light reactions) to fix CO₂ into 3-carbon compounds and eventually glucose. Discovered by Melvin Calvin (Nobel 1961, using ¹⁴C tracers).",
@@ -113,13 +181,25 @@
     {
       "stem": "C4 plants (like maize, sugarcane) have an advantage over C3 plants (like wheat, rice) in:",
       "options": [
-        {"option_text": "Cold climates", "is_correct": false},
-        {"option_text": "Hot / dry / high-light environments — they lose less water and use CO₂ more efficiently", "is_correct": true},
-        {"option_text": "Dark conditions", "is_correct": false},
-        {"option_text": "Shallow soil", "is_correct": false}
+        {
+          "option_text": "Cold climates",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hot / dry / high-light environments",
+          "is_correct": true
+        },
+        {
+          "option_text": "Dark conditions",
+          "is_correct": false
+        },
+        {
+          "option_text": "Shallow soil",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "C4 plants — use PEP carboxylase to concentrate CO₂ near RuBisCO; reduce photorespiration (common in C3 at high temp). Bundle-sheath anatomy (Kranz anatomy). Examples: maize, sugarcane, sorghum, millets. CAM plants (cacti, pineapple) — capture CO₂ at night to save water.",
+      "explanation": "C4 plants — use PEP carboxylase to concentrate CO₂ near RuBisCO; reduce photorespiration (common in C3 at high temp). Bundle-sheath anatomy (Kranz anatomy). Examples: maize, sugarcane, sorghum, millets. CAM plants (cacti, pineapple) — capture CO₂ at night to save water. they lose less water and use CO₂ more efficiently.",
       "subject": "Biology",
       "topic": "Photosynthesis — mixed tiers",
       "topic_code": "BIO_PHOTOSYNTHESIS_MIXED",
@@ -129,15 +209,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-bio-ph-06",
       "generated_at": "2026-04-23T03:30:00+00:00",
-      "id": "sgk_BIO_PHOTOSYNTHESIS_MIXED_00006"
+      "id": "sgk_BIO_PHOTOSYNTHESIS_MIXED_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Hot / dry / high-light environments — they lose less water and use CO₂ more efficiently",
+          "now": "Hot / dry / high-light environments",
+          "moved_to_explanation": "they lose less water and use CO₂ more efficiently"
+        }
+      ]
     },
     {
       "stem": "The pores on the underside of leaves through which CO₂ enters and O₂ exits are called:",
       "options": [
-        {"option_text": "Lenticels", "is_correct": false},
-        {"option_text": "Stomata", "is_correct": true},
-        {"option_text": "Xylem", "is_correct": false},
-        {"option_text": "Cuticle", "is_correct": false}
+        {
+          "option_text": "Lenticels",
+          "is_correct": false
+        },
+        {
+          "option_text": "Stomata",
+          "is_correct": true
+        },
+        {
+          "option_text": "Xylem",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cuticle",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Stomata — tiny pores flanked by GUARD CELLS that control opening/closing. Gas exchange + transpiration happen here. Lenticels — pores on woody stems. Cuticle — waxy outer layer preventing water loss. Most stomata on lower leaf surface to reduce evaporation.",

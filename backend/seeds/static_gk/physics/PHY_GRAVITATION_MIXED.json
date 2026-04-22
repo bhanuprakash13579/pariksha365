@@ -8,10 +8,22 @@
     {
       "stem": "Newton's THIRD LAW of motion states:",
       "options": [
-        {"option_text": "F = ma", "is_correct": false},
-        {"option_text": "To every action there is an equal and opposite reaction", "is_correct": true},
-        {"option_text": "An object at rest stays at rest unless acted on by force", "is_correct": false},
-        {"option_text": "Energy is conserved", "is_correct": false}
+        {
+          "option_text": "F = ma",
+          "is_correct": false
+        },
+        {
+          "option_text": "To every action there is an equal and opposite reaction",
+          "is_correct": true
+        },
+        {
+          "option_text": "An object at rest stays at rest unless acted on by force",
+          "is_correct": false
+        },
+        {
+          "option_text": "Energy is conserved",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "3rd law — action-reaction pairs act on DIFFERENT bodies. 1st law = inertia (option C). 2nd law = F = dp/dt ≈ ma (option A). Energy conservation is a separate principle.",
@@ -29,10 +41,22 @@
     {
       "stem": "The ESCAPE VELOCITY from the Earth's surface is approximately:",
       "options": [
-        {"option_text": "7.9 km/s", "is_correct": false},
-        {"option_text": "11.2 km/s", "is_correct": true},
-        {"option_text": "1.5 km/s", "is_correct": false},
-        {"option_text": "300,000 km/s", "is_correct": false}
+        {
+          "option_text": "7.9 km/s",
+          "is_correct": false
+        },
+        {
+          "option_text": "11.2 km/s",
+          "is_correct": true
+        },
+        {
+          "option_text": "1.5 km/s",
+          "is_correct": false
+        },
+        {
+          "option_text": "300,000 km/s",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Escape velocity from Earth's surface ≈ 11.2 km/s (from formula v_e = √(2GM/R)). 7.9 km/s is the ORBITAL velocity for low-Earth orbit. Escape velocity from the Moon ~2.4 km/s. Light travels at 300,000 km/s (c).",
@@ -50,13 +74,25 @@
     {
       "stem": "If the Earth SUDDENLY shrank to half its present radius while keeping its mass the same, the weight of a 50 kg person would:",
       "options": [
-        {"option_text": "Remain 50 kg × g", "is_correct": false},
-        {"option_text": "Become 4 times (g' = GM/r'² with r' = r/2)", "is_correct": true},
-        {"option_text": "Become half", "is_correct": false},
-        {"option_text": "Become zero", "is_correct": false}
+        {
+          "option_text": "Remain 50 kg × g",
+          "is_correct": false
+        },
+        {
+          "option_text": "Become 4 times",
+          "is_correct": true
+        },
+        {
+          "option_text": "Become half",
+          "is_correct": false
+        },
+        {
+          "option_text": "Become zero",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "g ∝ 1/r² (surface gravity for fixed mass). If r halves → g × 4. Weight = mg, so weight becomes 4×. (Mass is unchanged, but WEIGHT — the gravitational force — quadruples.)",
+      "explanation": "g ∝ 1/r² (surface gravity for fixed mass). If r halves → g × 4. Weight = mg, so weight becomes 4×. (Mass is unchanged, but WEIGHT — the gravitational force — quadruples.). g' = GM/r'² with r' = r/2.",
       "subject": "Physics",
       "topic": "Gravitation & motion — mixed tiers",
       "topic_code": "PHY_GRAVITATION_MIXED",
@@ -66,15 +102,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-phy-grav-03",
       "generated_at": "2026-04-22T21:10:00+00:00",
-      "id": "sgk_PHY_GRAVITATION_MIXED_00003"
+      "id": "sgk_PHY_GRAVITATION_MIXED_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Become 4 times (g' = GM/r'² with r' = r/2)",
+          "now": "Become 4 times",
+          "moved_to_explanation": "g' = GM/r'² with r' = r/2"
+        }
+      ]
     },
     {
       "stem": "A GEOSTATIONARY satellite:",
       "options": [
-        {"option_text": "Is always directly over the equator at altitude ~36,000 km, with a 24-hour orbital period", "is_correct": true},
-        {"option_text": "Orbits at 200 km altitude", "is_correct": false},
-        {"option_text": "Orbits over the poles", "is_correct": false},
-        {"option_text": "Has a period of 12 hours", "is_correct": false}
+        {
+          "option_text": "Is always directly over the equator at altitude ~36,000 km, with a 24-hour orbital period",
+          "is_correct": true
+        },
+        {
+          "option_text": "Orbits at 200 km altitude",
+          "is_correct": false
+        },
+        {
+          "option_text": "Orbits over the poles",
+          "is_correct": false
+        },
+        {
+          "option_text": "Has a period of 12 hours",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Geostationary — equatorial orbit at ~35,786 km altitude; orbital period = Earth's rotation period (23h 56m) so the satellite stays over the same ground point. Used for TV broadcasting, weather. INSAT satellites of India are geostationary.",
@@ -92,10 +148,22 @@
     {
       "stem": "An object is thrown vertically upward with velocity u. The maximum HEIGHT reached is:",
       "options": [
-        {"option_text": "u²/g", "is_correct": false},
-        {"option_text": "u²/(2g)", "is_correct": true},
-        {"option_text": "u/g", "is_correct": false},
-        {"option_text": "u·g", "is_correct": false}
+        {
+          "option_text": "u²/g",
+          "is_correct": false
+        },
+        {
+          "option_text": "u²/(2g)",
+          "is_correct": true
+        },
+        {
+          "option_text": "u/g",
+          "is_correct": false
+        },
+        {
+          "option_text": "u·g",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "At max height, v = 0. Using v² = u² − 2gh → 0 = u² − 2gh → h = u²/(2g). Time to reach max height: t = u/g.",
@@ -113,13 +181,25 @@
     {
       "stem": "The ACCELERATION DUE TO GRAVITY (g) at the equator compared to the poles is:",
       "options": [
-        {"option_text": "Greater at the equator", "is_correct": false},
-        {"option_text": "Smaller at the equator (≈ 9.78 m/s² vs ≈ 9.83 m/s² at poles)", "is_correct": true},
-        {"option_text": "Same at both", "is_correct": false},
-        {"option_text": "Zero at the equator", "is_correct": false}
+        {
+          "option_text": "Greater at the equator",
+          "is_correct": false
+        },
+        {
+          "option_text": "Smaller at the equator",
+          "is_correct": true
+        },
+        {
+          "option_text": "Same at both",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zero at the equator",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "g is SMALLER at the equator due to (a) centrifugal effect of rotation reducing effective g, (b) equatorial bulge (Earth isn't a perfect sphere — r is ~21 km larger at equator). Combined: equator g ~9.78, poles g ~9.83, standard g = 9.81 m/s².",
+      "explanation": "g is SMALLER at the equator due to (a) centrifugal effect of rotation reducing effective g, (b) equatorial bulge (Earth isn't a perfect sphere — r is ~21 km larger at equator). Combined: equator g ~9.78, poles g ~9.83, standard g = 9.81 m/s². ≈ 9.78 m/s² vs ≈ 9.83 m/s² at poles.",
       "subject": "Physics",
       "topic": "Gravitation & motion — mixed tiers",
       "topic_code": "PHY_GRAVITATION_MIXED",
@@ -129,18 +209,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-phy-grav-06",
       "generated_at": "2026-04-22T21:10:00+00:00",
-      "id": "sgk_PHY_GRAVITATION_MIXED_00006"
+      "id": "sgk_PHY_GRAVITATION_MIXED_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Smaller at the equator (≈ 9.78 m/s² vs ≈ 9.83 m/s² at poles)",
+          "now": "Smaller at the equator",
+          "moved_to_explanation": "≈ 9.78 m/s² vs ≈ 9.83 m/s² at poles"
+        }
+      ]
     },
     {
       "stem": "KEPLER'S THIRD LAW states T² ∝ ?, where T is the orbital period:",
       "options": [
-        {"option_text": "a (semi-major axis)", "is_correct": false},
-        {"option_text": "a³ (cube of semi-major axis)", "is_correct": true},
-        {"option_text": "a²", "is_correct": false},
-        {"option_text": "1/a", "is_correct": false}
+        {
+          "option_text": "a (semi-major axis)",
+          "is_correct": false
+        },
+        {
+          "option_text": "a³",
+          "is_correct": true
+        },
+        {
+          "option_text": "a²",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/a",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Kepler's 3rd law: T² = (4π²/GM) × a³ → T² ∝ a³. Hence inner planets (smaller a) have much shorter years; outer planets take far longer (Neptune: 165 years).",
+      "explanation": "Kepler's 3rd law: T² = (4π²/GM) × a³ → T² ∝ a³. Hence inner planets (smaller a) have much shorter years; outer planets take far longer (Neptune: 165 years). cube of semi-major axis.",
       "subject": "Physics",
       "topic": "Gravitation & motion — mixed tiers",
       "topic_code": "PHY_GRAVITATION_MIXED",
@@ -150,7 +250,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-phy-grav-07",
       "generated_at": "2026-04-22T21:10:00+00:00",
-      "id": "sgk_PHY_GRAVITATION_MIXED_00007"
+      "id": "sgk_PHY_GRAVITATION_MIXED_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "a³ (cube of semi-major axis)",
+          "now": "a³",
+          "moved_to_explanation": "cube of semi-major axis"
+        }
+      ]
     }
   ]
 }

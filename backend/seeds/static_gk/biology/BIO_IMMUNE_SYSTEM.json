@@ -8,13 +8,25 @@
     {
       "stem": "The two MAIN CATEGORIES of human immunity are:",
       "options": [
-        {"option_text": "Passive + active only", "is_correct": false},
-        {"option_text": "INNATE (inborn, non-specific — skin, mucus, phagocytes, complement) + ADAPTIVE (acquired, specific — lymphocytes, antibodies, memory)", "is_correct": true},
-        {"option_text": "Physical + chemical only", "is_correct": false},
-        {"option_text": "Bacterial + viral", "is_correct": false}
+        {
+          "option_text": "Passive + active only",
+          "is_correct": false
+        },
+        {
+          "option_text": "INNATE (inborn, non-specific — skin, mucus, phagocytes, complement) + ADAPTIVE",
+          "is_correct": true
+        },
+        {
+          "option_text": "Physical + chemical only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Bacterial + viral",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "IMMUNE SYSTEM — body's defence network against pathogens (bacteria, viruses, fungi, parasites) + cancerous cells. Two main lines: (1) INNATE / NATURAL / NON-SPECIFIC IMMUNITY — present from BIRTH; rapid response; not pathogen-specific. Components: (a) PHYSICAL barriers — SKIN (tight junctions + sebum + low pH), mucus membranes, cilia; (b) CHEMICAL barriers — lysozyme (saliva, tears), stomach acid (pH 1-2), antimicrobial peptides (defensins); (c) CELLULAR — PHAGOCYTES (MACROPHAGES — tissue; NEUTROPHILS — blood; DENDRITIC CELLS — bridge to adaptive), NATURAL KILLER (NK) cells, mast cells, eosinophils, basophils; (d) SOLUBLE — COMPLEMENT system (30+ proteins; MAC forms pores; opsonise; anaphylatoxins), acute-phase proteins, CRP, INTERFERONS (antiviral), cytokines; (e) INFLAMMATION — redness, warmth, swelling, pain (rubor-calor-tumor-dolor); vasodilation + increased permeability + migration of phagocytes. (2) ADAPTIVE / ACQUIRED / SPECIFIC IMMUNITY — develops over lifetime; pathogen-specific; slower (days) but SUPERB memory. 2 arms: (a) HUMORAL (antibody-mediated) — B LYMPHOCYTES in bone marrow; produce ANTIBODIES (IgG, IgM, IgA, IgE, IgD — 5 classes). Plasma cells + memory B cells. (b) CELL-MEDIATED — T LYMPHOCYTES mature in THYMUS. HELPER T (CD4+) — orchestrate immune response; KILLER / cytotoxic T (CD8+) — destroy infected / cancerous cells; REGULATORY T (Tregs) — suppress autoimmunity; MEMORY T. HIV attacks CD4 T cells → collapse of immunity = AIDS. LYMPHATIC ORGANS: (a) PRIMARY — bone marrow (B cells develop; T cell precursors) + THYMUS (T cells mature). (b) SECONDARY — lymph nodes (400+ in body), spleen, tonsils, Peyer's patches of gut, appendix, MALT (mucosa-associated lymphoid tissue). ADAPTIVE IMMUNITY uniquely has: MEMORY (faster + stronger 2nd response — basis of vaccination) + SPECIFICITY (can distinguish between thousands of antigens). Trained vs untrained is clinical distinction for innate ('TRAINED IMMUNITY' is recent concept).",
+      "explanation": "IMMUNE SYSTEM — body's defence network against pathogens (bacteria, viruses, fungi, parasites) + cancerous cells. Two main lines: (1) INNATE / NATURAL / NON-SPECIFIC IMMUNITY — present from BIRTH; rapid response; not pathogen-specific. Components: (a) PHYSICAL barriers — SKIN (tight junctions + sebum + low pH), mucus membranes, cilia; (b) CHEMICAL barriers — lysozyme (saliva, tears), stomach acid (pH 1-2), antimicrobial peptides (defensins); (c) CELLULAR — PHAGOCYTES (MACROPHAGES — tissue; NEUTROPHILS — blood; DENDRITIC CELLS — bridge to adaptive), NATURAL KILLER (NK) cells, mast cells, eosinophils, basophils; (d) SOLUBLE — COMPLEMENT system (30+ proteins; MAC forms pores; opsonise; anaphylatoxins), acute-phase proteins, CRP, INTERFERONS (antiviral), cytokines; (e) INFLAMMATION — redness, warmth, swelling, pain (rubor-calor-tumor-dolor); vasodilation + increased permeability + migration of phagocytes. (2) ADAPTIVE / ACQUIRED / SPECIFIC IMMUNITY — develops over lifetime; pathogen-specific; slower (days) but SUPERB memory. 2 arms: (a) HUMORAL (antibody-mediated) — B LYMPHOCYTES in bone marrow; produce ANTIBODIES (IgG, IgM, IgA, IgE, IgD — 5 classes). Plasma cells + memory B cells. (b) CELL-MEDIATED — T LYMPHOCYTES mature in THYMUS. HELPER T (CD4+) — orchestrate immune response; KILLER / cytotoxic T (CD8+) — destroy infected / cancerous cells; REGULATORY T (Tregs) — suppress autoimmunity; MEMORY T. HIV attacks CD4 T cells → collapse of immunity = AIDS. LYMPHATIC ORGANS: (a) PRIMARY — bone marrow (B cells develop; T cell precursors) + THYMUS (T cells mature). (b) SECONDARY — lymph nodes (400+ in body), spleen, tonsils, Peyer's patches of gut, appendix, MALT (mucosa-associated lymphoid tissue). ADAPTIVE IMMUNITY uniquely has: MEMORY (faster + stronger 2nd response — basis of vaccination) + SPECIFICITY (can distinguish between thousands of antigens). Trained vs untrained is clinical distinction for innate ('TRAINED IMMUNITY' is recent concept). acquired, specific — lymphocytes, antibodies, memory.",
       "subject": "Biology",
       "topic": "Immune System",
       "topic_code": "BIO_IMMUNE_SYSTEM",
@@ -24,18 +36,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-imm-01",
       "generated_at": "2026-04-21T04:20:00+00:00",
-      "id": "sgk_BIO_IMMUNE_SYSTEM_00001"
+      "id": "sgk_BIO_IMMUNE_SYSTEM_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "INNATE (inborn, non-specific — skin, mucus, phagocytes, complement) + ADAPTIVE (acquired, specific — lymphocytes, antibodies, memory)",
+          "now": "INNATE (inborn, non-specific — skin, mucus, phagocytes, complement) + ADAPTIVE",
+          "moved_to_explanation": "acquired, specific — lymphocytes, antibodies, memory"
+        }
+      ]
     },
     {
       "stem": "The 5 CLASSES of ANTIBODIES (immunoglobulins) produced by plasma cells are:",
       "options": [
-        {"option_text": "IgA, IgB, IgC, IgD, IgE", "is_correct": false},
-        {"option_text": "IgG, IgM, IgA, IgE, IgD — distinguished by heavy-chain constant region; each with distinct functions", "is_correct": true},
-        {"option_text": "alpha, beta, gamma globulins only", "is_correct": false},
-        {"option_text": "T1, T2, T3, T4, T5", "is_correct": false}
+        {
+          "option_text": "IgA, IgB, IgC, IgD, IgE",
+          "is_correct": false
+        },
+        {
+          "option_text": "IgG, IgM, IgA, IgE, IgD",
+          "is_correct": true
+        },
+        {
+          "option_text": "alpha, beta, gamma globulins only",
+          "is_correct": false
+        },
+        {
+          "option_text": "T1, T2, T3, T4, T5",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ANTIBODIES / IMMUNOGLOBULINS — Y-shaped glycoproteins produced by PLASMA CELLS (differentiated B cells) against specific antigens. 5 ISOTYPES based on heavy-chain constant region (γ, μ, α, ε, δ): (1) IgG — 75% of serum antibodies; smallest; ONLY isotype that crosses PLACENTA (gives fetus passive immunity); 4 subclasses (IgG1-4); long half-life ~21 days; main antibody of secondary immune response; opsonises + neutralises + complement fix. (2) IgM — 10% of serum; LARGEST (pentamer); FIRST antibody produced in primary response; excellent at agglutination + complement activation (10 Fc regions in pentamer). Also on B cell surface as monomer (B cell receptor). (3) IgA — 15% of serum; PRIMARY antibody of MUCOSAL immunity; dimer secreted at mucosal surfaces (gut, respiratory tract, vagina, tears, saliva); also in BREAST MILK (passive immunity to newborn's gut). Chief defender of gut + respiratory lining. (4) IgE — TRACE in serum; binds to mast cells + basophils; mediates ALLERGIC reactions (type I hypersensitivity) — histamine release → asthma, anaphylaxis, hay fever; also role in parasite defence (helminths). (5) IgD — least understood; trace in serum; found on naive B cells surface along with IgM; role in B cell activation + respiratory immunity (newer research). ANTIBODY STRUCTURE: Y-shaped with 2 IDENTICAL HEAVY chains (γ/μ/α/ε/δ) + 2 IDENTICAL LIGHT chains (kappa κ or lambda λ). Variable (Fab) region binds antigen; constant (Fc) region binds immune cells. ANTIBODY PRODUCTION: generated by combinatorial V(D)J recombination of gene segments → 10^11 different specificities possible from limited gene number. SOMATIC HYPERMUTATION + class switching in germinal centres of lymph nodes during affinity maturation. Nobel Prize Medicine 1987 to SUSUMU TONEGAWA for this mechanism. MONOCLONAL ANTIBODY therapy (Köhler + Milstein, Nobel 1984) revolutionised medicine — treatments for cancer (rituximab, trastuzumab), autoimmune (adalimumab/Humira for RA, infliximab), COVID (bamlanivimab), migraine (erenumab), etc. PLASMA THERAPY (COVID) + IVIG (intravenous immunoglobulin) are antibody-based therapies.",
+      "explanation": "ANTIBODIES / IMMUNOGLOBULINS — Y-shaped glycoproteins produced by PLASMA CELLS (differentiated B cells) against specific antigens. 5 ISOTYPES based on heavy-chain constant region (γ, μ, α, ε, δ): (1) IgG — 75% of serum antibodies; smallest; ONLY isotype that crosses PLACENTA (gives fetus passive immunity); 4 subclasses (IgG1-4); long half-life ~21 days; main antibody of secondary immune response; opsonises + neutralises + complement fix. (2) IgM — 10% of serum; LARGEST (pentamer); FIRST antibody produced in primary response; excellent at agglutination + complement activation (10 Fc regions in pentamer). Also on B cell surface as monomer (B cell receptor). (3) IgA — 15% of serum; PRIMARY antibody of MUCOSAL immunity; dimer secreted at mucosal surfaces (gut, respiratory tract, vagina, tears, saliva); also in BREAST MILK (passive immunity to newborn's gut). Chief defender of gut + respiratory lining. (4) IgE — TRACE in serum; binds to mast cells + basophils; mediates ALLERGIC reactions (type I hypersensitivity) — histamine release → asthma, anaphylaxis, hay fever; also role in parasite defence (helminths). (5) IgD — least understood; trace in serum; found on naive B cells surface along with IgM; role in B cell activation + respiratory immunity (newer research). ANTIBODY STRUCTURE: Y-shaped with 2 IDENTICAL HEAVY chains (γ/μ/α/ε/δ) + 2 IDENTICAL LIGHT chains (kappa κ or lambda λ). Variable (Fab) region binds antigen; constant (Fc) region binds immune cells. ANTIBODY PRODUCTION: generated by combinatorial V(D)J recombination of gene segments → 10^11 different specificities possible from limited gene number. SOMATIC HYPERMUTATION + class switching in germinal centres of lymph nodes during affinity maturation. Nobel Prize Medicine 1987 to SUSUMU TONEGAWA for this mechanism. MONOCLONAL ANTIBODY therapy (Köhler + Milstein, Nobel 1984) revolutionised medicine — treatments for cancer (rituximab, trastuzumab), autoimmune (adalimumab/Humira for RA, infliximab), COVID (bamlanivimab), migraine (erenumab), etc. PLASMA THERAPY (COVID) + IVIG (intravenous immunoglobulin) are antibody-based therapies. distinguished by heavy-chain constant region; each with distinct functions.",
       "subject": "Biology",
       "topic": "Immune System",
       "topic_code": "BIO_IMMUNE_SYSTEM",
@@ -45,18 +77,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-imm-01",
       "generated_at": "2026-04-21T04:20:00+00:00",
-      "id": "sgk_BIO_IMMUNE_SYSTEM_00002"
+      "id": "sgk_BIO_IMMUNE_SYSTEM_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "IgG, IgM, IgA, IgE, IgD — distinguished by heavy-chain constant region; each with distinct functions",
+          "now": "IgG, IgM, IgA, IgE, IgD",
+          "moved_to_explanation": "distinguished by heavy-chain constant region; each with distinct functions"
+        }
+      ]
     },
     {
       "stem": "VACCINATION was discovered by:",
       "options": [
-        {"option_text": "Louis Pasteur", "is_correct": false},
-        {"option_text": "EDWARD JENNER (1796) — inoculated 8-y-old James Phipps with COWPOX; used Latin 'vacca' (cow) → 'vaccine'; created smallpox vaccine", "is_correct": true},
-        {"option_text": "Robert Koch", "is_correct": false},
-        {"option_text": "Alexander Fleming", "is_correct": false}
+        {
+          "option_text": "Louis Pasteur",
+          "is_correct": false
+        },
+        {
+          "option_text": "EDWARD JENNER (1796)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Robert Koch",
+          "is_correct": false
+        },
+        {
+          "option_text": "Alexander Fleming",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "EDWARD JENNER (1749-1823) — English country doctor, 'Father of Immunology + Vaccinology'. On 14 MAY 1796 at BERKELEY village, Gloucestershire, England, inoculated 8-YEAR-OLD JAMES PHIPPS (his gardener's son) with pus from a COWPOX pustule on dairy maid SARAH NELMES' hand (who had contracted cowpox from cow 'BLOSSOM'). Few weeks later, Jenner exposed Phipps to SMALLPOX — the boy did NOT develop smallpox. This was the FIRST deliberate VACCINATION. Jenner had observed that dairymaids who had cowpox were IMMUNE to smallpox — a folk belief he scientifically validated. ETYMOLOGY: 'VACCINE' from Latin 'VACCA' (cow) + 'vaccinia' (cowpox virus); Jenner himself used 'variolae vaccinae' (cow-pox). Word popularised by LOUIS PASTEUR in 1881 honoring Jenner. PREDECESSOR: INOCULATION / VARIOLATION — infecting healthy people with smallpox pus from mild cases (practised in India, China for centuries; brought to Britain by Lady Mary Wortley Montagu 1721 from Turkey). Gave immunity but had 2-3% mortality risk; Jenner's cowpox approach was SAFER. JENNER published 'AN INQUIRY INTO THE CAUSES AND EFFECTS OF THE VARIOLAE VACCINAE' in 1798. SMALLPOX ERADICATION: 180 years after Jenner's discovery, the SMALLPOX VACCINATION CAMPAIGN (WHO, 1967-80) succeeded; last natural case was Ali Maow Maalin in Somalia, 26 Oct 1977; WHO DECLARED SMALLPOX ERADICATED on 8 May 1980 (Geneva assembly). ONLY DISEASE ERADICATED from human world. India was declared smallpox-free on 5 July 1975 (last case: Saiban Bibi, Bihar). VACCINE PIONEERS after Jenner: (1) LOUIS PASTEUR — rabies (1885 — treated Joseph Meister bitten by rabid dog; successful); anthrax; cholera. (2) ROBERT KOCH — tuberculin (TB test); isolated M. tuberculosis, anthrax bacillus, cholera vibrio. (3) Sabin + Salk — polio. (4) HILLEMAN — 40+ vaccines incl MMR. (5) Katalin Karikó + Drew Weissman — mRNA (COVID; Nobel Med 2023). India's vaccine ecosystem: BHARAT BIOTECH (Covaxin, COVID + Rotavac, TYPBAR-TCV), SERUM INSTITUTE (world's largest vaccine maker, Covishield), INDIAN IMMUNOLOGICALS, BIOLOGICAL E, PANACEA. Universal Immunisation Programme (UIP, 1985) covers 12 vaccines for children + 2 for pregnant women; ~3 crore children immunised annually.",
+      "explanation": "EDWARD JENNER (1749-1823) — English country doctor, 'Father of Immunology + Vaccinology'. On 14 MAY 1796 at BERKELEY village, Gloucestershire, England, inoculated 8-YEAR-OLD JAMES PHIPPS (his gardener's son) with pus from a COWPOX pustule on dairy maid SARAH NELMES' hand (who had contracted cowpox from cow 'BLOSSOM'). Few weeks later, Jenner exposed Phipps to SMALLPOX — the boy did NOT develop smallpox. This was the FIRST deliberate VACCINATION. Jenner had observed that dairymaids who had cowpox were IMMUNE to smallpox — a folk belief he scientifically validated. ETYMOLOGY: 'VACCINE' from Latin 'VACCA' (cow) + 'vaccinia' (cowpox virus); Jenner himself used 'variolae vaccinae' (cow-pox). Word popularised by LOUIS PASTEUR in 1881 honoring Jenner. PREDECESSOR: INOCULATION / VARIOLATION — infecting healthy people with smallpox pus from mild cases (practised in India, China for centuries; brought to Britain by Lady Mary Wortley Montagu 1721 from Turkey). Gave immunity but had 2-3% mortality risk; Jenner's cowpox approach was SAFER. JENNER published 'AN INQUIRY INTO THE CAUSES AND EFFECTS OF THE VARIOLAE VACCINAE' in 1798. SMALLPOX ERADICATION: 180 years after Jenner's discovery, the SMALLPOX VACCINATION CAMPAIGN (WHO, 1967-80) succeeded; last natural case was Ali Maow Maalin in Somalia, 26 Oct 1977; WHO DECLARED SMALLPOX ERADICATED on 8 May 1980 (Geneva assembly). ONLY DISEASE ERADICATED from human world. India was declared smallpox-free on 5 July 1975 (last case: Saiban Bibi, Bihar). VACCINE PIONEERS after Jenner: (1) LOUIS PASTEUR — rabies (1885 — treated Joseph Meister bitten by rabid dog; successful); anthrax; cholera. (2) ROBERT KOCH — tuberculin (TB test); isolated M. tuberculosis, anthrax bacillus, cholera vibrio. (3) Sabin + Salk — polio. (4) HILLEMAN — 40+ vaccines incl MMR. (5) Katalin Karikó + Drew Weissman — mRNA (COVID; Nobel Med 2023). India's vaccine ecosystem: BHARAT BIOTECH (Covaxin, COVID + Rotavac, TYPBAR-TCV), SERUM INSTITUTE (world's largest vaccine maker, Covishield), INDIAN IMMUNOLOGICALS, BIOLOGICAL E, PANACEA. Universal Immunisation Programme (UIP, 1985) covers 12 vaccines for children + 2 for pregnant women; ~3 crore children immunised annually. inoculated 8-y-old James Phipps with COWPOX; used Latin 'vacca' (cow) → 'vaccine'; created smallpox vaccine.",
       "subject": "Biology",
       "topic": "Immune System",
       "topic_code": "BIO_IMMUNE_SYSTEM",
@@ -66,18 +118,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-imm-01",
       "generated_at": "2026-04-21T04:20:00+00:00",
-      "id": "sgk_BIO_IMMUNE_SYSTEM_00003"
+      "id": "sgk_BIO_IMMUNE_SYSTEM_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "EDWARD JENNER (1796) — inoculated 8-y-old James Phipps with COWPOX; used Latin 'vacca' (cow) → 'vaccine'; created smallpox vaccine",
+          "now": "EDWARD JENNER (1796)",
+          "moved_to_explanation": "inoculated 8-y-old James Phipps with COWPOX; used Latin 'vacca' (cow) → 'vaccine'; created smallpox vaccine"
+        }
+      ]
     },
     {
       "stem": "HIV (Human Immunodeficiency Virus) attacks primarily:",
       "options": [
-        {"option_text": "Red blood cells", "is_correct": false},
-        {"option_text": "CD4+ T HELPER LYMPHOCYTES — gradual depletion leads to AIDS (<200 cells/µL; normal 500-1500); opportunistic infections cause death", "is_correct": true},
-        {"option_text": "Neurons", "is_correct": false},
-        {"option_text": "Liver cells", "is_correct": false}
+        {
+          "option_text": "Red blood cells",
+          "is_correct": false
+        },
+        {
+          "option_text": "CD4+ T HELPER LYMPHOCYTES",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neurons",
+          "is_correct": false
+        },
+        {
+          "option_text": "Liver cells",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "HIV (HUMAN IMMUNODEFICIENCY VIRUS) — RETROVIRUS causing AIDS. DISCOVERED 1983-84 by Luc MONTAGNIER + Françoise BARRÉ-SINOUSSI at Institut Pasteur, Paris (Nobel Medicine 2008). 2 TYPES: HIV-1 (global epidemic) + HIV-2 (mostly West Africa, less virulent). TARGET: CD4+ T HELPER LYMPHOCYTES (also macrophages, dendritic cells) — enters by binding CD4 receptor + CCR5 / CXCR4 co-receptor. Reverse transcriptase converts RNA genome to DNA → integrates into host DNA as 'provirus' → chronic lifelong infection. PROGRESSION: (1) ACUTE HIV (2-4 weeks post-exposure) — flu-like, rash, lymphadenopathy; seroconversion; HIGH viral load; HIGHLY INFECTIOUS. (2) CLINICAL LATENCY / Chronic (1-10+ yrs) — slow CD4 decline; often asymptomatic; still transmissible. (3) AIDS — CD4 drops <200/µL (normal 500-1500); severe immunodeficiency → opportunistic infections (Pneumocystis pneumonia, TB, esophageal candidiasis, CMV, cryptococcal meningitis, Kaposi's sarcoma), wasting syndrome; without treatment, death in 1-3 years. TRANSMISSION: (a) UNPROTECTED sex (anal > vaginal > oral); (b) blood-to-blood (needles, transfusion, tattoos); (c) MOTHER TO CHILD (pregnancy, birth, breastfeeding — PMTCT interventions reduce to <1%); NOT by casual contact, insect bites, saliva, sharing utensils. DIAGNOSIS: ELISA + Western blot; rapid tests; PCR viral load; CD4 count. TREATMENT: ANTI-RETROVIRAL THERAPY (ART) — COMBINATION of drugs (NRTIs + NNRTIs + PIs + Integrase inhibitors) — suppresses viral load to UNDETECTABLE; 'U=U' (Undetectable = Untransmittable). Not a cure but makes HIV a MANAGEABLE chronic condition. India provides ART FREE since 2004 under NACO (National AIDS Control Organisation, 1992). PREP (Pre-Exposure Prophylaxis) — daily pill for HIV-uninfected high-risk individuals; highly effective; India approved 2021. STATUS: ~2.4 MILLION PLHIV (People Living with HIV) in INDIA (NACO 2022); new infections declining (~85% since 2010). Globally ~39 million PLHIV; 28 million on ART; 670,000 deaths/yr. WORLD AIDS DAY = 1 December (since 1988). Red ribbon = global AIDS awareness symbol. INDIA's HIV FIGHT: NACP I-V phases; 1580+ ART centres; rapid testing kits; drug price reductions — CIPLA's 2001 $1/day triple-cocktail transformed global AIDS care.",
+      "explanation": "HIV (HUMAN IMMUNODEFICIENCY VIRUS) — RETROVIRUS causing AIDS. DISCOVERED 1983-84 by Luc MONTAGNIER + Françoise BARRÉ-SINOUSSI at Institut Pasteur, Paris (Nobel Medicine 2008). 2 TYPES: HIV-1 (global epidemic) + HIV-2 (mostly West Africa, less virulent). TARGET: CD4+ T HELPER LYMPHOCYTES (also macrophages, dendritic cells) — enters by binding CD4 receptor + CCR5 / CXCR4 co-receptor. Reverse transcriptase converts RNA genome to DNA → integrates into host DNA as 'provirus' → chronic lifelong infection. PROGRESSION: (1) ACUTE HIV (2-4 weeks post-exposure) — flu-like, rash, lymphadenopathy; seroconversion; HIGH viral load; HIGHLY INFECTIOUS. (2) CLINICAL LATENCY / Chronic (1-10+ yrs) — slow CD4 decline; often asymptomatic; still transmissible. (3) AIDS — CD4 drops <200/µL (normal 500-1500); severe immunodeficiency → opportunistic infections (Pneumocystis pneumonia, TB, esophageal candidiasis, CMV, cryptococcal meningitis, Kaposi's sarcoma), wasting syndrome; without treatment, death in 1-3 years. TRANSMISSION: (a) UNPROTECTED sex (anal > vaginal > oral); (b) blood-to-blood (needles, transfusion, tattoos); (c) MOTHER TO CHILD (pregnancy, birth, breastfeeding — PMTCT interventions reduce to <1%); NOT by casual contact, insect bites, saliva, sharing utensils. DIAGNOSIS: ELISA + Western blot; rapid tests; PCR viral load; CD4 count. TREATMENT: ANTI-RETROVIRAL THERAPY (ART) — COMBINATION of drugs (NRTIs + NNRTIs + PIs + Integrase inhibitors) — suppresses viral load to UNDETECTABLE; 'U=U' (Undetectable = Untransmittable). Not a cure but makes HIV a MANAGEABLE chronic condition. India provides ART FREE since 2004 under NACO (National AIDS Control Organisation, 1992). PREP (Pre-Exposure Prophylaxis) — daily pill for HIV-uninfected high-risk individuals; highly effective; India approved 2021. STATUS: ~2.4 MILLION PLHIV (People Living with HIV) in INDIA (NACO 2022); new infections declining (~85% since 2010). Globally ~39 million PLHIV; 28 million on ART; 670,000 deaths/yr. WORLD AIDS DAY = 1 December (since 1988). Red ribbon = global AIDS awareness symbol. INDIA's HIV FIGHT: NACP I-V phases; 1580+ ART centres; rapid testing kits; drug price reductions — CIPLA's 2001 $1/day triple-cocktail transformed global AIDS care. gradual depletion leads to AIDS (<200 cells/µL; normal 500-1500); opportunistic infections cause death.",
       "subject": "Biology",
       "topic": "Immune System",
       "topic_code": "BIO_IMMUNE_SYSTEM",
@@ -87,18 +159,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-imm-01",
       "generated_at": "2026-04-21T04:20:00+00:00",
-      "id": "sgk_BIO_IMMUNE_SYSTEM_00004"
+      "id": "sgk_BIO_IMMUNE_SYSTEM_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "CD4+ T HELPER LYMPHOCYTES — gradual depletion leads to AIDS (<200 cells/µL; normal 500-1500); opportunistic infections cause death",
+          "now": "CD4+ T HELPER LYMPHOCYTES",
+          "moved_to_explanation": "gradual depletion leads to AIDS (<200 cells/µL; normal 500-1500); opportunistic infections cause death"
+        }
+      ]
     },
     {
       "stem": "AUTOIMMUNE DISEASES occur when:",
       "options": [
-        {"option_text": "Pathogens infect the body", "is_correct": false},
-        {"option_text": "The immune system mistakenly ATTACKS the body's OWN tissues — examples: RA, SLE, Type 1 Diabetes, MS, psoriasis, Hashimoto's, celiac", "is_correct": true},
-        {"option_text": "Vaccines cause disease", "is_correct": false},
-        {"option_text": "Blood transfusion is rejected", "is_correct": false}
+        {
+          "option_text": "Pathogens infect the body",
+          "is_correct": false
+        },
+        {
+          "option_text": "The immune system mistakenly ATTACKS the body's OWN tissues",
+          "is_correct": true
+        },
+        {
+          "option_text": "Vaccines cause disease",
+          "is_correct": false
+        },
+        {
+          "option_text": "Blood transfusion is rejected",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "AUTOIMMUNE DISEASES — when IMMUNE SYSTEM mistakes body's OWN tissues / cells as FOREIGN + ATTACKS them. Occurs due to FAILURE of IMMUNE TOLERANCE (central tolerance in thymus/bone marrow + peripheral tolerance). 80+ AUTOIMMUNE DISEASES known; affect ~5-8% of population worldwide. MORE COMMON in WOMEN (75-80% of autoimmune patients are female — estrogen + X-chromosome linked factors). EXAMPLES: (1) TYPE 1 DIABETES MELLITUS — immune attack on pancreatic β-cells → INSULIN deficiency; needs lifelong insulin. (2) RHEUMATOID ARTHRITIS (RA) — synovial joint inflammation; symmetric small-joint (hands, wrists, feet) polyarthritis; anti-CCP + RF antibodies; morning stiffness; deformities if untreated. Treatment: DMARDs (methotrexate, sulfasalazine), biologics (adalimumab, etanercept, rituximab), JAK inhibitors. (3) SYSTEMIC LUPUS ERYTHEMATOSUS (SLE) — multi-organ (skin butterfly rash, joints, kidneys, blood, neuro); ANA + anti-dsDNA + anti-Sm antibodies; predominantly women 20-40. (4) MULTIPLE SCLEROSIS (MS) — myelin sheath attack in CNS; demyelinating plaques; visual disturbances, weakness, coordination issues. Interferon beta, natalizumab, ocrelizumab. (5) PSORIASIS + PSORIATIC ARTHRITIS — skin plaques + joint involvement; T cell mediated. (6) HASHIMOTO'S THYROIDITIS — TPO antibodies; HYPOTHYROIDISM most common cause worldwide. (7) GRAVES' DISEASE — TSH receptor antibodies; HYPERthyroidism + exophthalmos. (8) CELIAC DISEASE — gluten-triggered enteropathy; anti-TTG antibodies; gluten-free diet cure. (9) INFLAMMATORY BOWEL DISEASE (IBD) — Crohn's + Ulcerative Colitis. (10) MYASTHENIA GRAVIS — anti-AChR antibodies; muscle weakness. (11) VITILIGO — melanocyte destruction; skin depigmentation. (12) PERNICIOUS ANAEMIA — intrinsic factor antibodies → B12 malabsorption. (13) PEMPHIGUS. (14) IDIOPATHIC THROMBOCYTOPENIC PURPURA (ITP). (15) GOODPASTURE + ANCA vasculitides. (16) Addison's disease (adrenal). (17) Sjögren's syndrome. CAUSES: genetic predisposition (HLA alleles), environmental triggers (infections via molecular mimicry — post-streptococcal rheumatic fever; EBV + SLE), hormonal (female predilection), hygiene hypothesis. DIAGNOSIS: auto-antibody panels, biopsy, imaging. TREATMENT: (a) IMMUNOSUPPRESSANTS — corticosteroids (prednisolone), cyclophosphamide, methotrexate, azathioprine, mycophenolate; (b) BIOLOGICS — anti-TNF, anti-IL-6, rituximab; (c) JAK inhibitors; (d) plasmapheresis; (e) IVIG; (f) disease-specific (insulin, thyroxine).",
+      "explanation": "AUTOIMMUNE DISEASES — when IMMUNE SYSTEM mistakes body's OWN tissues / cells as FOREIGN + ATTACKS them. Occurs due to FAILURE of IMMUNE TOLERANCE (central tolerance in thymus/bone marrow + peripheral tolerance). 80+ AUTOIMMUNE DISEASES known; affect ~5-8% of population worldwide. MORE COMMON in WOMEN (75-80% of autoimmune patients are female — estrogen + X-chromosome linked factors). EXAMPLES: (1) TYPE 1 DIABETES MELLITUS — immune attack on pancreatic β-cells → INSULIN deficiency; needs lifelong insulin. (2) RHEUMATOID ARTHRITIS (RA) — synovial joint inflammation; symmetric small-joint (hands, wrists, feet) polyarthritis; anti-CCP + RF antibodies; morning stiffness; deformities if untreated. Treatment: DMARDs (methotrexate, sulfasalazine), biologics (adalimumab, etanercept, rituximab), JAK inhibitors. (3) SYSTEMIC LUPUS ERYTHEMATOSUS (SLE) — multi-organ (skin butterfly rash, joints, kidneys, blood, neuro); ANA + anti-dsDNA + anti-Sm antibodies; predominantly women 20-40. (4) MULTIPLE SCLEROSIS (MS) — myelin sheath attack in CNS; demyelinating plaques; visual disturbances, weakness, coordination issues. Interferon beta, natalizumab, ocrelizumab. (5) PSORIASIS + PSORIATIC ARTHRITIS — skin plaques + joint involvement; T cell mediated. (6) HASHIMOTO'S THYROIDITIS — TPO antibodies; HYPOTHYROIDISM most common cause worldwide. (7) GRAVES' DISEASE — TSH receptor antibodies; HYPERthyroidism + exophthalmos. (8) CELIAC DISEASE — gluten-triggered enteropathy; anti-TTG antibodies; gluten-free diet cure. (9) INFLAMMATORY BOWEL DISEASE (IBD) — Crohn's + Ulcerative Colitis. (10) MYASTHENIA GRAVIS — anti-AChR antibodies; muscle weakness. (11) VITILIGO — melanocyte destruction; skin depigmentation. (12) PERNICIOUS ANAEMIA — intrinsic factor antibodies → B12 malabsorption. (13) PEMPHIGUS. (14) IDIOPATHIC THROMBOCYTOPENIC PURPURA (ITP). (15) GOODPASTURE + ANCA vasculitides. (16) Addison's disease (adrenal). (17) Sjögren's syndrome. CAUSES: genetic predisposition (HLA alleles), environmental triggers (infections via molecular mimicry — post-streptococcal rheumatic fever; EBV + SLE), hormonal (female predilection), hygiene hypothesis. DIAGNOSIS: auto-antibody panels, biopsy, imaging. TREATMENT: (a) IMMUNOSUPPRESSANTS — corticosteroids (prednisolone), cyclophosphamide, methotrexate, azathioprine, mycophenolate; (b) BIOLOGICS — anti-TNF, anti-IL-6, rituximab; (c) JAK inhibitors; (d) plasmapheresis; (e) IVIG; (f) disease-specific (insulin, thyroxine). examples: RA, SLE, Type 1 Diabetes, MS, psoriasis, Hashimoto's, celiac.",
       "subject": "Biology",
       "topic": "Immune System",
       "topic_code": "BIO_IMMUNE_SYSTEM",
@@ -108,18 +200,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-imm-01",
       "generated_at": "2026-04-21T04:20:00+00:00",
-      "id": "sgk_BIO_IMMUNE_SYSTEM_00005"
+      "id": "sgk_BIO_IMMUNE_SYSTEM_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "The immune system mistakenly ATTACKS the body's OWN tissues — examples: RA, SLE, Type 1 Diabetes, MS, psoriasis, Hashimoto's, celiac",
+          "now": "The immune system mistakenly ATTACKS the body's OWN tissues",
+          "moved_to_explanation": "examples: RA, SLE, Type 1 Diabetes, MS, psoriasis, Hashimoto's, celiac"
+        }
+      ]
     },
     {
       "stem": "The organ where T LYMPHOCYTES mature is the:",
       "options": [
-        {"option_text": "Spleen", "is_correct": false},
-        {"option_text": "THYMUS — located in upper chest (mediastinum); peak size in childhood, involutes after puberty", "is_correct": true},
-        {"option_text": "Bone marrow", "is_correct": false},
-        {"option_text": "Liver", "is_correct": false}
+        {
+          "option_text": "Spleen",
+          "is_correct": false
+        },
+        {
+          "option_text": "THYMUS",
+          "is_correct": true
+        },
+        {
+          "option_text": "Bone marrow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Liver",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "THYMUS — primary lymphoid organ where T LYMPHOCYTES MATURE. Located in UPPER ANTERIOR MEDIASTINUM (behind sternum, between lungs). 2-lobed, pinkish-grey. MAXIMUM size at PUBERTY (~30-40g); INVOLUTES (atrophies) after — replaced by fat; by old age, barely visible (but residual T cell production continues). T CELL DEVELOPMENT: (1) PROGENITORS arise in BONE MARROW; migrate to thymus as 'thymocytes'. (2) In CORTEX of thymus, undergo POSITIVE SELECTION — only T cells that can bind MHC (major histocompatibility complex) molecules survive. (3) In MEDULLA, NEGATIVE SELECTION — T cells that react TOO STRONGLY to SELF-antigens are DELETED (apoptosis) — establishes 'central tolerance' preventing autoimmunity. (4) 95-98% of thymocytes DIE during selection; only 2-5% mature + exit as single-positive CD4 (helper) or CD8 (cytotoxic) T cells. (5) Auto-immune regulator (AIRE) gene expresses peripheral tissue antigens in thymic epithelium — showcases 'self' to developing T cells. MYASTHENIA GRAVIS: associated with THYMOMA (thymic tumor) in ~15% of cases; thymectomy helpful in selected patients. DIGEORGE SYNDROME: congenital absence of thymus (+ parathyroids, cardiac defects); severe T cell deficiency. BONE MARROW: primary lymphoid organ for B LYMPHOCYTES (named from Fabricius's bursa in birds — where B cells mature in birds; in mammals bone marrow serves same role). ALSO site of hematopoiesis (all blood cells). SPLEEN: largest SECONDARY LYMPHOID ORGAN; filters blood, cleanses old RBCs + pathogens, site of antibody production, B + T cells mature effector function here, stores platelets. Splenectomy → lifelong susceptibility to encapsulated bacteria (pneumococci, meningococci, Haemophilus) → need vaccines + prophylactic penicillin. LYMPH NODES: 400-700 small bean-shaped organs distributed along lymphatic vessels; filter lymph. Swell when active (lymphadenopathy). TONSILS (palatine + pharyngeal/adenoids + lingual) = first line for oral + respiratory pathogens. PEYER's PATCHES — lymphoid aggregates in small intestine (ileum). APPENDIX — vestigial-ish; has lymphoid tissue, some immune role. MALT (Mucosa-Associated Lymphoid Tissue) — general term for gut + respiratory lymphoid tissue; GALT (Gut-Assoc) + BALT (Bronchus-Assoc).",
+      "explanation": "THYMUS — primary lymphoid organ where T LYMPHOCYTES MATURE. Located in UPPER ANTERIOR MEDIASTINUM (behind sternum, between lungs). 2-lobed, pinkish-grey. MAXIMUM size at PUBERTY (~30-40g); INVOLUTES (atrophies) after — replaced by fat; by old age, barely visible (but residual T cell production continues). T CELL DEVELOPMENT: (1) PROGENITORS arise in BONE MARROW; migrate to thymus as 'thymocytes'. (2) In CORTEX of thymus, undergo POSITIVE SELECTION — only T cells that can bind MHC (major histocompatibility complex) molecules survive. (3) In MEDULLA, NEGATIVE SELECTION — T cells that react TOO STRONGLY to SELF-antigens are DELETED (apoptosis) — establishes 'central tolerance' preventing autoimmunity. (4) 95-98% of thymocytes DIE during selection; only 2-5% mature + exit as single-positive CD4 (helper) or CD8 (cytotoxic) T cells. (5) Auto-immune regulator (AIRE) gene expresses peripheral tissue antigens in thymic epithelium — showcases 'self' to developing T cells. MYASTHENIA GRAVIS: associated with THYMOMA (thymic tumor) in ~15% of cases; thymectomy helpful in selected patients. DIGEORGE SYNDROME: congenital absence of thymus (+ parathyroids, cardiac defects); severe T cell deficiency. BONE MARROW: primary lymphoid organ for B LYMPHOCYTES (named from Fabricius's bursa in birds — where B cells mature in birds; in mammals bone marrow serves same role). ALSO site of hematopoiesis (all blood cells). SPLEEN: largest SECONDARY LYMPHOID ORGAN; filters blood, cleanses old RBCs + pathogens, site of antibody production, B + T cells mature effector function here, stores platelets. Splenectomy → lifelong susceptibility to encapsulated bacteria (pneumococci, meningococci, Haemophilus) → need vaccines + prophylactic penicillin. LYMPH NODES: 400-700 small bean-shaped organs distributed along lymphatic vessels; filter lymph. Swell when active (lymphadenopathy). TONSILS (palatine + pharyngeal/adenoids + lingual) = first line for oral + respiratory pathogens. PEYER's PATCHES — lymphoid aggregates in small intestine (ileum). APPENDIX — vestigial-ish; has lymphoid tissue, some immune role. MALT (Mucosa-Associated Lymphoid Tissue) — general term for gut + respiratory lymphoid tissue; GALT (Gut-Assoc) + BALT (Bronchus-Assoc). located in upper chest (mediastinum); peak size in childhood, involutes after puberty.",
       "subject": "Biology",
       "topic": "Immune System",
       "topic_code": "BIO_IMMUNE_SYSTEM",
@@ -129,18 +241,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-imm-01",
       "generated_at": "2026-04-21T04:20:00+00:00",
-      "id": "sgk_BIO_IMMUNE_SYSTEM_00006"
+      "id": "sgk_BIO_IMMUNE_SYSTEM_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "THYMUS — located in upper chest (mediastinum); peak size in childhood, involutes after puberty",
+          "now": "THYMUS",
+          "moved_to_explanation": "located in upper chest (mediastinum); peak size in childhood, involutes after puberty"
+        }
+      ]
     },
     {
       "stem": "The UNIVERSAL IMMUNIZATION PROGRAMME (UIP) in India provides FREE vaccines against:",
       "options": [
-        {"option_text": "Only polio", "is_correct": false},
-        {"option_text": "12+ preventable diseases — BCG (TB), OPV + IPV (polio), DPT, Hepatitis B, Hib, MR/MMR, Rotavirus, PCV, JE, Typhoid (select), TT for pregnant women", "is_correct": true},
-        {"option_text": "Only smallpox", "is_correct": false},
-        {"option_text": "Only COVID-19", "is_correct": false}
+        {
+          "option_text": "Only polio",
+          "is_correct": false
+        },
+        {
+          "option_text": "12+ preventable diseases",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only smallpox",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only COVID-19",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "UNIVERSAL IMMUNIZATION PROGRAMME (UIP) — India's flagship public health programme providing FREE vaccines to ~2.6 CRORE children + ~2.9 CRORE pregnant women annually. Launched 1985 (expanded EPI — Expanded Programme on Immunization launched 1978). WORLD'S LARGEST PUBLIC HEALTH PROGRAMME. COVERED VACCINES (as of 2024): (1) BCG — at birth (vs TB). (2) HEPATITIS B — birth dose + 3 more. (3) OPV (Oral Polio Vaccine) — birth + 6, 10, 14 weeks + booster. (4) IPV (Inactivated Polio Vaccine) — 6 + 14 weeks (fractional intradermal) to combat polio. (5) DPT (Diphtheria-Pertussis-Tetanus) — 6, 10, 14 wk + boosters. (6) Hib (Haemophilus influenzae type B) — in PENTAVALENT vaccine (DPT+HepB+Hib, 6-10-14 wk). (7) ROTAVIRUS VACCINE — 3 doses, 6-10-14 wk (RVV, indigenous Bharat Biotech's Rotavac). (8) PNEUMOCOCCAL CONJUGATE VACCINE (PCV) — 6, 14 wk + 9 mo (against Streptococcus pneumoniae). (9) MEASLES-RUBELLA (MR) — 9 mo + 16-24 mo (replaced standalone measles 2017). (10) JE (Japanese Encephalitis) — in endemic districts. (11) Td (Tetanus-diphtheria) — 10 + 16 yrs + pregnancy boost (2 doses). (12) HPV (Human Papillomavirus) — introduced 2022 pilot; universal by 2025-26 (for cervical cancer prevention). (13) TYPHOID CONJUGATE VACCINE (TCV) — phased introduction. (14) COVID-19 — added via CoWIN platform 2021. Inactivated COVID + Oral ORV Zydus ZyCoV-D + SII Covishield + Bharat Covaxin etc. FULL IMMUNISATION COVERAGE: NFHS-5 (2019-21): 76.4% — up from 62% in 2015-16. TARGET: 90% full coverage. MISSION INDRADHANUSH (2014) + INTENSIFIED MI + IMI-4.0 — accelerated campaigns targeting missed districts + hesitant populations. eVIN (electronic Vaccine Intelligence Network) — cold chain monitoring. U-WIN app being launched (like CoWIN for routine immunisation, 2024). COWIN — COVID-19 Vaccine Intelligence Network; technology backbone for world's largest vaccination drive — over 220 crore doses administered by 2024. INDIA = 'PHARMACY OF THE WORLD' — Serum Institute (world's largest vaccine manufacturer), Bharat Biotech, Biological E produce 60%+ of WHO-UNICEF-GAVI procured vaccines. POLIO-FREE INDIA since 2014 (WHO certified 27 March 2014 for SEARO region).",
+      "explanation": "UNIVERSAL IMMUNIZATION PROGRAMME (UIP) — India's flagship public health programme providing FREE vaccines to ~2.6 CRORE children + ~2.9 CRORE pregnant women annually. Launched 1985 (expanded EPI — Expanded Programme on Immunization launched 1978). WORLD'S LARGEST PUBLIC HEALTH PROGRAMME. COVERED VACCINES (as of 2024): (1) BCG — at birth (vs TB). (2) HEPATITIS B — birth dose + 3 more. (3) OPV (Oral Polio Vaccine) — birth + 6, 10, 14 weeks + booster. (4) IPV (Inactivated Polio Vaccine) — 6 + 14 weeks (fractional intradermal) to combat polio. (5) DPT (Diphtheria-Pertussis-Tetanus) — 6, 10, 14 wk + boosters. (6) Hib (Haemophilus influenzae type B) — in PENTAVALENT vaccine (DPT+HepB+Hib, 6-10-14 wk). (7) ROTAVIRUS VACCINE — 3 doses, 6-10-14 wk (RVV, indigenous Bharat Biotech's Rotavac). (8) PNEUMOCOCCAL CONJUGATE VACCINE (PCV) — 6, 14 wk + 9 mo (against Streptococcus pneumoniae). (9) MEASLES-RUBELLA (MR) — 9 mo + 16-24 mo (replaced standalone measles 2017). (10) JE (Japanese Encephalitis) — in endemic districts. (11) Td (Tetanus-diphtheria) — 10 + 16 yrs + pregnancy boost (2 doses). (12) HPV (Human Papillomavirus) — introduced 2022 pilot; universal by 2025-26 (for cervical cancer prevention). (13) TYPHOID CONJUGATE VACCINE (TCV) — phased introduction. (14) COVID-19 — added via CoWIN platform 2021. Inactivated COVID + Oral ORV Zydus ZyCoV-D + SII Covishield + Bharat Covaxin etc. FULL IMMUNISATION COVERAGE: NFHS-5 (2019-21): 76.4% — up from 62% in 2015-16. TARGET: 90% full coverage. MISSION INDRADHANUSH (2014) + INTENSIFIED MI + IMI-4.0 — accelerated campaigns targeting missed districts + hesitant populations. eVIN (electronic Vaccine Intelligence Network) — cold chain monitoring. U-WIN app being launched (like CoWIN for routine immunisation, 2024). COWIN — COVID-19 Vaccine Intelligence Network; technology backbone for world's largest vaccination drive — over 220 crore doses administered by 2024. INDIA = 'PHARMACY OF THE WORLD' — Serum Institute (world's largest vaccine manufacturer), Bharat Biotech, Biological E produce 60%+ of WHO-UNICEF-GAVI procured vaccines. POLIO-FREE INDIA since 2014 (WHO certified 27 March 2014 for SEARO region). BCG (TB), OPV + IPV (polio), DPT, Hepatitis B, Hib, MR/MMR, Rotavirus, PCV, JE, Typhoid (select), TT for pregnant women.",
       "subject": "Biology",
       "topic": "Immune System",
       "topic_code": "BIO_IMMUNE_SYSTEM",
@@ -150,18 +282,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-imm-01",
       "generated_at": "2026-04-21T04:20:00+00:00",
-      "id": "sgk_BIO_IMMUNE_SYSTEM_00007"
+      "id": "sgk_BIO_IMMUNE_SYSTEM_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "12+ preventable diseases — BCG (TB), OPV + IPV (polio), DPT, Hepatitis B, Hib, MR/MMR, Rotavirus, PCV, JE, Typhoid (select), TT for pregnant women",
+          "now": "12+ preventable diseases",
+          "moved_to_explanation": "BCG (TB), OPV + IPV (polio), DPT, Hepatitis B, Hib, MR/MMR, Rotavirus, PCV, JE, Typhoid (select), TT for pregnant women"
+        }
+      ]
     },
     {
       "stem": "The phenomenon by which POISONOUS substances (e.g., snake venom) provoke ANTIBODY production is called:",
       "options": [
-        {"option_text": "Vaccination", "is_correct": false},
-        {"option_text": "ACTIVE IMMUNITY generation by anti-venom; the anti-venom (immunoglobulin) administered to bite victims is a form of PASSIVE IMMUNITY", "is_correct": true},
-        {"option_text": "Autoimmunity", "is_correct": false},
-        {"option_text": "Allergic response", "is_correct": false}
+        {
+          "option_text": "Vaccination",
+          "is_correct": false
+        },
+        {
+          "option_text": "ACTIVE IMMUNITY generation by anti-venom",
+          "is_correct": true
+        },
+        {
+          "option_text": "Autoimmunity",
+          "is_correct": false
+        },
+        {
+          "option_text": "Allergic response",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ACTIVE vs PASSIVE IMMUNITY: (1) ACTIVE IMMUNITY — own body produces antibodies / activated T cells. (a) NATURAL — from actual INFECTION (e.g., recovering from measles gives lifelong immunity). (b) ARTIFICIAL — from VACCINATION (killed, live-attenuated, subunit, mRNA, viral vector). Slow onset (days-weeks), long-lasting (years-lifelong) due to MEMORY cells. (2) PASSIVE IMMUNITY — receives ready-made antibodies from external source. (a) NATURAL — maternal IgG via placenta + colostrum IgA via breast milk → baby gets protection for first 4-6 months. (b) ARTIFICIAL — ANTI-VENOM (for snakes, scorpions), anti-serum (diphtheria antitoxin, tetanus immunoglobulin TIG, rabies immunoglobulin RIG), IVIG, monoclonal antibodies (bamlanivimab for COVID, palivizumab for RSV). Rapid onset (minutes-hours), SHORT-LASTING (few weeks-months) — no memory. SNAKE ANTI-VENOM: prepared by HYPERIMMUNISING horses (or sheep) with VENOM → horse produces antibodies → serum purified → IgG/F(ab')2 fragments injected into snakebite victims. INDIAN POLYVALENT ANTI-VENOM covers 'BIG FOUR' deadly snakes: RUSSELL'S VIPER, COMMON KRAIT, INDIAN COBRA, SAW-SCALED VIPER. India produces majority at HAFFKINE INSTITUTE Mumbai (est. 1899 by Waldemar Haffkine) + King Institute Chennai + others. INDIA's SNAKEBITE BURDEN — ~58,000 deaths/yr (highest in world); WHO declared neglected tropical disease; Snakebite Envenomation Awareness day 19 September. Under 'SNAKEBITE MITIGATION INITIATIVE' + National Action Plan 2024. VENOM used for: (a) PAIN research (conotoxins from cone snails); (b) DRUG discovery (Captopril — first ACE inhibitor, derived from Brazilian pit viper venom; Tirofiban for angina; Ziconotide from cone snail; Batroxobin from South American viper for clotting tests); (c) Exenatide (diabetes, from Gila monster saliva). SEROLOGY — study of antibodies in serum — diagnostic for infections + autoimmune + blood groups. ABO BLOOD GROUPS (Karl Landsteiner, 1900, Nobel 1930) + Rh factor (Landsteiner + Wiener, 1937) are based on ANTIBODIES against RBC ANTIGENS. Universal donor O-; universal recipient AB+.",
+      "explanation": "ACTIVE vs PASSIVE IMMUNITY: (1) ACTIVE IMMUNITY — own body produces antibodies / activated T cells. (a) NATURAL — from actual INFECTION (e.g., recovering from measles gives lifelong immunity). (b) ARTIFICIAL — from VACCINATION (killed, live-attenuated, subunit, mRNA, viral vector). Slow onset (days-weeks), long-lasting (years-lifelong) due to MEMORY cells. (2) PASSIVE IMMUNITY — receives ready-made antibodies from external source. (a) NATURAL — maternal IgG via placenta + colostrum IgA via breast milk → baby gets protection for first 4-6 months. (b) ARTIFICIAL — ANTI-VENOM (for snakes, scorpions), anti-serum (diphtheria antitoxin, tetanus immunoglobulin TIG, rabies immunoglobulin RIG), IVIG, monoclonal antibodies (bamlanivimab for COVID, palivizumab for RSV). Rapid onset (minutes-hours), SHORT-LASTING (few weeks-months) — no memory. SNAKE ANTI-VENOM: prepared by HYPERIMMUNISING horses (or sheep) with VENOM → horse produces antibodies → serum purified → IgG/F(ab')2 fragments injected into snakebite victims. INDIAN POLYVALENT ANTI-VENOM covers 'BIG FOUR' deadly snakes: RUSSELL'S VIPER, COMMON KRAIT, INDIAN COBRA, SAW-SCALED VIPER. India produces majority at HAFFKINE INSTITUTE Mumbai (est. 1899 by Waldemar Haffkine) + King Institute Chennai + others. INDIA's SNAKEBITE BURDEN — ~58,000 deaths/yr (highest in world); WHO declared neglected tropical disease; Snakebite Envenomation Awareness day 19 September. Under 'SNAKEBITE MITIGATION INITIATIVE' + National Action Plan 2024. VENOM used for: (a) PAIN research (conotoxins from cone snails); (b) DRUG discovery (Captopril — first ACE inhibitor, derived from Brazilian pit viper venom; Tirofiban for angina; Ziconotide from cone snail; Batroxobin from South American viper for clotting tests); (c) Exenatide (diabetes, from Gila monster saliva). SEROLOGY — study of antibodies in serum — diagnostic for infections + autoimmune + blood groups. ABO BLOOD GROUPS (Karl Landsteiner, 1900, Nobel 1930) + Rh factor (Landsteiner + Wiener, 1937) are based on ANTIBODIES against RBC ANTIGENS. Universal donor O-; universal recipient AB+. the anti-venom (immunoglobulin) administered to bite victims is a form of PASSIVE IMMUNITY.",
       "subject": "Biology",
       "topic": "Immune System",
       "topic_code": "BIO_IMMUNE_SYSTEM",
@@ -171,18 +323,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-imm-01",
       "generated_at": "2026-04-21T04:20:00+00:00",
-      "id": "sgk_BIO_IMMUNE_SYSTEM_00008"
+      "id": "sgk_BIO_IMMUNE_SYSTEM_00008",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ACTIVE IMMUNITY generation by anti-venom; the anti-venom (immunoglobulin) administered to bite victims is a form of PASSIVE IMMUNITY",
+          "now": "ACTIVE IMMUNITY generation by anti-venom",
+          "moved_to_explanation": "the anti-venom (immunoglobulin) administered to bite victims is a form of PASSIVE IMMUNITY"
+        }
+      ]
     },
     {
       "stem": "An ALLERGIC REACTION (Type I Hypersensitivity, e.g., hay fever or anaphylaxis) is mediated primarily by which antibody?",
       "options": [
-        {"option_text": "IgG", "is_correct": false},
-        {"option_text": "IgE — binds to MAST CELLS + basophils; allergen cross-linking triggers histamine + leukotriene release → allergy symptoms", "is_correct": true},
-        {"option_text": "IgA", "is_correct": false},
-        {"option_text": "IgM", "is_correct": false}
+        {
+          "option_text": "IgG",
+          "is_correct": false
+        },
+        {
+          "option_text": "IgE",
+          "is_correct": true
+        },
+        {
+          "option_text": "IgA",
+          "is_correct": false
+        },
+        {
+          "option_text": "IgM",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "TYPE I / IMMEDIATE HYPERSENSITIVITY — IgE-MEDIATED allergic reactions. MECHANISM: (1) FIRST EXPOSURE (sensitisation) — allergen processed by dendritic cells → Th2 response → IgE antibody production by plasma cells. (2) IgE binds to high-affinity Fc-ε-RI receptors on MAST CELLS (in tissues) + BASOPHILS (blood). 'Armed' cells. (3) SECOND EXPOSURE — allergen CROSS-LINKS mast-cell-bound IgE → degranulation → release of preformed MEDIATORS (HISTAMINE, tryptase, heparin) + NEWLY synthesised (leukotrienes, prostaglandins, cytokines). (4) EFFECTS — vasodilation, vascular permeability increase (edema, hives), smooth muscle contraction (bronchospasm, diarrhea), mucus secretion (rhinorrhea), itching. COMMON ALLERGIES: (a) ALLERGIC RHINITIS (hay fever) — pollen, dust mites, animal dander; (b) ASTHMA — bronchial hyper-responsiveness; (c) URTICARIA (hives), ANGIOEDEMA; (d) FOOD ALLERGY — peanuts, tree nuts, shellfish, eggs, milk, wheat, soy; (e) INSECT STING — bees, wasps; (f) DRUGS — penicillin (most common), NSAIDs, contrast media; (g) LATEX. ANAPHYLAXIS — severe systemic reaction: hypotension, shock, airway compromise, cardiac arrest; MEDICAL EMERGENCY — treated with EPINEPHRINE/ADRENALINE intramuscular (EpiPen auto-injector; 0.3-0.5 mg). All other treatments (antihistamines, steroids) are SECONDARY to epinephrine. HYPERSENSITIVITY CLASSIFICATION (Gell + Coombs, 1963): (1) TYPE I = IgE-mediated immediate (minutes) — allergy + anaphylaxis. (2) TYPE II = Antibody-mediated CYTOTOXIC (hrs) — e.g., hemolytic disease of newborn (Rh), transfusion reaction, Goodpasture, Graves, myasthenia gravis, ITP. (3) TYPE III = IMMUNE COMPLEX (hrs-days) — e.g., SLE, serum sickness, rheumatoid arthritis, post-streptococcal glomerulonephritis, farmer's lung. (4) TYPE IV = DELAYED / CELL-mediated (24-72 hrs) — T cell driven; tuberculin (Mantoux) test, contact dermatitis (nickel, poison ivy), graft rejection, TB granulomas, leprosy, psoriasis. TREATMENTS for ALLERGIES: (a) Antihistamines (H1 blockers — cetirizine, loratadine, fexofenadine); (b) Leukotriene receptor antagonists (Montelukast); (c) Corticosteroids (topical + oral); (d) IMMUNOTHERAPY (allergen desensitisation, 'allergy shots') — subcutaneous or sublingual; (e) Biologics: omalizumab (anti-IgE), dupilumab (anti-IL4Rα). Epidemic rise in allergies attributed to 'HYGIENE HYPOTHESIS' (David Strachan 1989) — reduced early microbial exposure.",
+      "explanation": "TYPE I / IMMEDIATE HYPERSENSITIVITY — IgE-MEDIATED allergic reactions. MECHANISM: (1) FIRST EXPOSURE (sensitisation) — allergen processed by dendritic cells → Th2 response → IgE antibody production by plasma cells. (2) IgE binds to high-affinity Fc-ε-RI receptors on MAST CELLS (in tissues) + BASOPHILS (blood). 'Armed' cells. (3) SECOND EXPOSURE — allergen CROSS-LINKS mast-cell-bound IgE → degranulation → release of preformed MEDIATORS (HISTAMINE, tryptase, heparin) + NEWLY synthesised (leukotrienes, prostaglandins, cytokines). (4) EFFECTS — vasodilation, vascular permeability increase (edema, hives), smooth muscle contraction (bronchospasm, diarrhea), mucus secretion (rhinorrhea), itching. COMMON ALLERGIES: (a) ALLERGIC RHINITIS (hay fever) — pollen, dust mites, animal dander; (b) ASTHMA — bronchial hyper-responsiveness; (c) URTICARIA (hives), ANGIOEDEMA; (d) FOOD ALLERGY — peanuts, tree nuts, shellfish, eggs, milk, wheat, soy; (e) INSECT STING — bees, wasps; (f) DRUGS — penicillin (most common), NSAIDs, contrast media; (g) LATEX. ANAPHYLAXIS — severe systemic reaction: hypotension, shock, airway compromise, cardiac arrest; MEDICAL EMERGENCY — treated with EPINEPHRINE/ADRENALINE intramuscular (EpiPen auto-injector; 0.3-0.5 mg). All other treatments (antihistamines, steroids) are SECONDARY to epinephrine. HYPERSENSITIVITY CLASSIFICATION (Gell + Coombs, 1963): (1) TYPE I = IgE-mediated immediate (minutes) — allergy + anaphylaxis. (2) TYPE II = Antibody-mediated CYTOTOXIC (hrs) — e.g., hemolytic disease of newborn (Rh), transfusion reaction, Goodpasture, Graves, myasthenia gravis, ITP. (3) TYPE III = IMMUNE COMPLEX (hrs-days) — e.g., SLE, serum sickness, rheumatoid arthritis, post-streptococcal glomerulonephritis, farmer's lung. (4) TYPE IV = DELAYED / CELL-mediated (24-72 hrs) — T cell driven; tuberculin (Mantoux) test, contact dermatitis (nickel, poison ivy), graft rejection, TB granulomas, leprosy, psoriasis. TREATMENTS for ALLERGIES: (a) Antihistamines (H1 blockers — cetirizine, loratadine, fexofenadine); (b) Leukotriene receptor antagonists (Montelukast); (c) Corticosteroids (topical + oral); (d) IMMUNOTHERAPY (allergen desensitisation, 'allergy shots') — subcutaneous or sublingual; (e) Biologics: omalizumab (anti-IgE), dupilumab (anti-IL4Rα). Epidemic rise in allergies attributed to 'HYGIENE HYPOTHESIS' (David Strachan 1989) — reduced early microbial exposure. binds to MAST CELLS + basophils; allergen cross-linking triggers histamine + leukotriene release → allergy symptoms.",
       "subject": "Biology",
       "topic": "Immune System",
       "topic_code": "BIO_IMMUNE_SYSTEM",
@@ -192,18 +364,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-imm-01",
       "generated_at": "2026-04-21T04:20:00+00:00",
-      "id": "sgk_BIO_IMMUNE_SYSTEM_00009"
+      "id": "sgk_BIO_IMMUNE_SYSTEM_00009",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "IgE — binds to MAST CELLS + basophils; allergen cross-linking triggers histamine + leukotriene release → allergy symptoms",
+          "now": "IgE",
+          "moved_to_explanation": "binds to MAST CELLS + basophils; allergen cross-linking triggers histamine + leukotriene release → allergy symptoms"
+        }
+      ]
     },
     {
       "stem": "The COVID-19 vaccines Covishield (India) + ChAdOx1 (Oxford) are based on which platform?",
       "options": [
-        {"option_text": "mRNA", "is_correct": false},
-        {"option_text": "VIRAL VECTOR — uses a modified chimpanzee adenovirus (non-replicating) carrying SARS-CoV-2 spike protein gene; triggers immune response", "is_correct": true},
-        {"option_text": "Live attenuated", "is_correct": false},
-        {"option_text": "Protein subunit only", "is_correct": false}
+        {
+          "option_text": "mRNA",
+          "is_correct": false
+        },
+        {
+          "option_text": "VIRAL VECTOR",
+          "is_correct": true
+        },
+        {
+          "option_text": "Live attenuated",
+          "is_correct": false
+        },
+        {
+          "option_text": "Protein subunit only",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "COVID-19 VACCINE PLATFORMS — 5 major types used during pandemic: (1) mRNA — delivers mRNA encoding spike protein in LNP (Lipid Nanoparticles); cells translate + display spike → immune response. PFIZER-BioNTech (BNT162b2 / Comirnaty) + MODERNA (mRNA-1273 / Spikevax). Katalin Karikó + Drew Weissman Nobel Medicine 2023 for foundational work. Needs ultra-cold chain (-70°C Pfizer initially; improved later). Highly effective (95%+ initial efficacy). (2) VIRAL VECTOR — non-replicating adenovirus delivers DNA coding for spike protein → cells make spike → immune response. (a) OXFORD-ASTRAZENECA / ChAdOx1-S = CHIMPANZEE ADENOVIRUS; manufactured in India by SERUM INSTITUTE as COVISHIELD (largest quantity produced in India); pan-India rollout; world's most-used COVID vaccine by doses. (b) JOHNSON + JOHNSON (Ad26.COV2.S). (c) SPUTNIK V (Russia; 2 different adenoviruses for prime + boost). (3) INACTIVATED VIRUS — whole killed virus + adjuvant. (a) COVAXIN / BBV152 — BHARAT BIOTECH, HYDERABAD; indigenous inactivated + Algel-IMDG adjuvant. (b) SINOVAC CoronaVac + SINOPHARM (China). (c) COVAXIN used in India + exported to several countries. (4) PROTEIN SUBUNIT — purified spike protein + adjuvant. (a) NOVAVAX (NVX-CoV2373) + adaptation COVOVAX (SII). (b) CORBEVAX (Biological E). (5) DNA — plasmid DNA. (a) ZyCoV-D (ZYDUS CADILA) — world's FIRST DNA-based COVID vaccine approved; needle-free jet injection; 3 doses. (6) mRNA INDIAN: GEMCOVAC (Gennova Biopharmaceuticals) — India's first indigenous mRNA COVID vaccine approved 2022. INDIA's COVID VACCINATION DRIVE (world's largest): launched 16 January 2021. 220+ CRORE doses administered by 2024 (Covishield + Covaxin dominant; Sputnik, Corbevax, Covovax, ZyCoV-D later). VACCINE MAITRI — India supplied vaccines to 100+ countries (Jan 2021-). CoWIN digital platform — gold standard. COVID-19 caused global pandemic (declared 11 March 2020 by WHO); 7M+ deaths officially; 20M+ excess deaths estimated. India's officially 5.3 lakh deaths; excess estimates 1-4 million. COVID-19 has since become ENDEMIC with seasonal surges from variants (Alpha, Beta, Gamma, Delta, Omicron sub-lineages BA.1-BA.5, XBB, JN.1). COVID reconfigured public health globally + biotechnology (rapid mRNA deployment).",
+      "explanation": "COVID-19 VACCINE PLATFORMS — 5 major types used during pandemic: (1) mRNA — delivers mRNA encoding spike protein in LNP (Lipid Nanoparticles); cells translate + display spike → immune response. PFIZER-BioNTech (BNT162b2 / Comirnaty) + MODERNA (mRNA-1273 / Spikevax). Katalin Karikó + Drew Weissman Nobel Medicine 2023 for foundational work. Needs ultra-cold chain (-70°C Pfizer initially; improved later). Highly effective (95%+ initial efficacy). (2) VIRAL VECTOR — non-replicating adenovirus delivers DNA coding for spike protein → cells make spike → immune response. (a) OXFORD-ASTRAZENECA / ChAdOx1-S = CHIMPANZEE ADENOVIRUS; manufactured in India by SERUM INSTITUTE as COVISHIELD (largest quantity produced in India); pan-India rollout; world's most-used COVID vaccine by doses. (b) JOHNSON + JOHNSON (Ad26.COV2.S). (c) SPUTNIK V (Russia; 2 different adenoviruses for prime + boost). (3) INACTIVATED VIRUS — whole killed virus + adjuvant. (a) COVAXIN / BBV152 — BHARAT BIOTECH, HYDERABAD; indigenous inactivated + Algel-IMDG adjuvant. (b) SINOVAC CoronaVac + SINOPHARM (China). (c) COVAXIN used in India + exported to several countries. (4) PROTEIN SUBUNIT — purified spike protein + adjuvant. (a) NOVAVAX (NVX-CoV2373) + adaptation COVOVAX (SII). (b) CORBEVAX (Biological E). (5) DNA — plasmid DNA. (a) ZyCoV-D (ZYDUS CADILA) — world's FIRST DNA-based COVID vaccine approved; needle-free jet injection; 3 doses. (6) mRNA INDIAN: GEMCOVAC (Gennova Biopharmaceuticals) — India's first indigenous mRNA COVID vaccine approved 2022. INDIA's COVID VACCINATION DRIVE (world's largest): launched 16 January 2021. 220+ CRORE doses administered by 2024 (Covishield + Covaxin dominant; Sputnik, Corbevax, Covovax, ZyCoV-D later). VACCINE MAITRI — India supplied vaccines to 100+ countries (Jan 2021-). CoWIN digital platform — gold standard. COVID-19 caused global pandemic (declared 11 March 2020 by WHO); 7M+ deaths officially; 20M+ excess deaths estimated. India's officially 5.3 lakh deaths; excess estimates 1-4 million. COVID-19 has since become ENDEMIC with seasonal surges from variants (Alpha, Beta, Gamma, Delta, Omicron sub-lineages BA.1-BA.5, XBB, JN.1). COVID reconfigured public health globally + biotechnology (rapid mRNA deployment). uses a modified chimpanzee adenovirus (non-replicating) carrying SARS-CoV-2 spike protein gene; triggers immune response.",
       "subject": "Biology",
       "topic": "Immune System",
       "topic_code": "BIO_IMMUNE_SYSTEM",
@@ -213,7 +405,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-imm-01",
       "generated_at": "2026-04-21T04:20:00+00:00",
-      "id": "sgk_BIO_IMMUNE_SYSTEM_00010"
+      "id": "sgk_BIO_IMMUNE_SYSTEM_00010",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "VIRAL VECTOR — uses a modified chimpanzee adenovirus (non-replicating) carrying SARS-CoV-2 spike protein gene; triggers immune response",
+          "now": "VIRAL VECTOR",
+          "moved_to_explanation": "uses a modified chimpanzee adenovirus (non-replicating) carrying SARS-CoV-2 spike protein gene; triggers immune response"
+        }
+      ]
     }
   ]
 }

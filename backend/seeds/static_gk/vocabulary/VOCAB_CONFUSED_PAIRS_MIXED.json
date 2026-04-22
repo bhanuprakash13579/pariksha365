@@ -8,10 +8,22 @@
     {
       "stem": "Choose the correct usage: 'Please ____ the document before signing.'",
       "options": [
-        {"option_text": "peruse (read carefully)", "is_correct": true},
-        {"option_text": "pursue (chase / follow)", "is_correct": false},
-        {"option_text": "persuade (influence)", "is_correct": false},
-        {"option_text": "perturb (disturb)", "is_correct": false}
+        {
+          "option_text": "peruse (read carefully)",
+          "is_correct": true
+        },
+        {
+          "option_text": "pursue (chase / follow)",
+          "is_correct": false
+        },
+        {
+          "option_text": "persuade (influence)",
+          "is_correct": false
+        },
+        {
+          "option_text": "perturb (disturb)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "PERUSE = read carefully (opposite of 'skim'). PURSUE = chase / follow. PERSUADE = convince. PERTURB = worry / disturb. All four sound similar but are wholly different in meaning.",
@@ -29,10 +41,22 @@
     {
       "stem": "Pick the CORRECT pair: 'The teacher's ____ was a highlight of the event; her ____ had inspired many students.'",
       "options": [
-        {"option_text": "advice / advise", "is_correct": false},
-        {"option_text": "presence / presents", "is_correct": true},
-        {"option_text": "complement / compliment", "is_correct": false},
-        {"option_text": "stationery / stationary", "is_correct": false}
+        {
+          "option_text": "advice / advise",
+          "is_correct": false
+        },
+        {
+          "option_text": "presence / presents",
+          "is_correct": true
+        },
+        {
+          "option_text": "complement / compliment",
+          "is_correct": false
+        },
+        {
+          "option_text": "stationery / stationary",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Context: 'was a highlight' → presence (being there); 'had inspired' → presents (gifts) is awkward; strongest fit overall for the sentence structure is presence / presents among options. (Note: real-world logical sentence would typically use 'presence' / 'speech' — this item tests awareness of the homophone pair, not a smooth sentence. Option B is the only valid homophone-pair among the four.)",
@@ -50,10 +74,22 @@
     {
       "stem": "STATIONERY vs STATIONARY: 'The truck remained ____ at the red signal.'",
       "options": [
-        {"option_text": "stationery", "is_correct": false},
-        {"option_text": "stationary", "is_correct": true},
-        {"option_text": "station-airy", "is_correct": false},
-        {"option_text": "stationed-airy", "is_correct": false}
+        {
+          "option_text": "stationery",
+          "is_correct": false
+        },
+        {
+          "option_text": "stationary",
+          "is_correct": true
+        },
+        {
+          "option_text": "station-airy",
+          "is_correct": false
+        },
+        {
+          "option_text": "stationed-airy",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Stationary (with -ary) = standing still (remember: cAR is stAtionAry). Stationery (with -ery) = writing supplies (pens, paper — remember: pEn, papEr are stationErY).",
@@ -71,13 +107,25 @@
     {
       "stem": "COMPLEMENT vs COMPLIMENT: 'The red tie perfectly ____ed his blue shirt.'",
       "options": [
-        {"option_text": "complimented (praised)", "is_correct": false},
-        {"option_text": "complemented (completed / went well with)", "is_correct": true},
-        {"option_text": "complicated", "is_correct": false},
-        {"option_text": "compliance", "is_correct": false}
+        {
+          "option_text": "complimented (praised)",
+          "is_correct": false
+        },
+        {
+          "option_text": "complemented",
+          "is_correct": true
+        },
+        {
+          "option_text": "complicated",
+          "is_correct": false
+        },
+        {
+          "option_text": "compliance",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Complement (with -e) = completes/matches (Tom's cheese complements the wine). Compliment (with -i) = express admiration/praise. Mnemonic: complEments complEte.",
+      "explanation": "Complement (with -e) = completes/matches (Tom's cheese complements the wine). Compliment (with -i) = express admiration/praise. Mnemonic: complEments complEte. completed / went well with.",
       "subject": "Vocabulary",
       "topic": "Commonly confused pairs — mixed tiers",
       "topic_code": "VOCAB_CONFUSED_PAIRS_MIXED",
@@ -87,18 +135,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-vocab-cp-04",
       "generated_at": "2026-04-22T13:40:00+00:00",
-      "id": "sgk_VOCAB_CONFUSED_PAIRS_MIXED_00004"
+      "id": "sgk_VOCAB_CONFUSED_PAIRS_MIXED_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "complemented (completed / went well with)",
+          "now": "complemented",
+          "moved_to_explanation": "completed / went well with"
+        }
+      ]
     },
     {
       "stem": "PRINCIPAL vs PRINCIPLE: 'The school ____ addressed the students on the first day.'",
       "options": [
-        {"option_text": "principle (rule)", "is_correct": false},
-        {"option_text": "principal (head of institution)", "is_correct": true},
-        {"option_text": "principality", "is_correct": false},
-        {"option_text": "principally", "is_correct": false}
+        {
+          "option_text": "principle (rule)",
+          "is_correct": false
+        },
+        {
+          "option_text": "principal",
+          "is_correct": true
+        },
+        {
+          "option_text": "principality",
+          "is_correct": false
+        },
+        {
+          "option_text": "principally",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Principal — head/most important (noun or adjective). Principle — rule or moral standard (noun). Mnemonic: principAL is my pAL (the head). Also: 'principal amount' in loans = amount lent.",
+      "explanation": "Principal — head/most important (noun or adjective). Principle — rule or moral standard (noun). Mnemonic: principAL is my pAL (the head). Also: 'principal amount' in loans = amount lent. head of institution.",
       "subject": "Vocabulary",
       "topic": "Commonly confused pairs — mixed tiers",
       "topic_code": "VOCAB_CONFUSED_PAIRS_MIXED",
@@ -108,15 +176,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-vocab-cp-05",
       "generated_at": "2026-04-22T13:40:00+00:00",
-      "id": "sgk_VOCAB_CONFUSED_PAIRS_MIXED_00005"
+      "id": "sgk_VOCAB_CONFUSED_PAIRS_MIXED_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "principal (head of institution)",
+          "now": "principal",
+          "moved_to_explanation": "head of institution"
+        }
+      ]
     },
     {
       "stem": "AFFECT vs EFFECT: 'The rain will ____ our travel plans.'",
       "options": [
-        {"option_text": "effect", "is_correct": false},
-        {"option_text": "affect", "is_correct": true},
-        {"option_text": "effective", "is_correct": false},
-        {"option_text": "affective", "is_correct": false}
+        {
+          "option_text": "effect",
+          "is_correct": false
+        },
+        {
+          "option_text": "affect",
+          "is_correct": true
+        },
+        {
+          "option_text": "effective",
+          "is_correct": false
+        },
+        {
+          "option_text": "affective",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Affect (usually VERB) = to influence. Effect (usually NOUN) = the result. 'The rain will affect (influence) our plans → the effect (result) was a cancellation.' Exception: 'effect' can also be a verb meaning 'to bring about' (effect change).",
@@ -134,10 +222,22 @@
     {
       "stem": "ACCEPT vs EXCEPT: 'Everyone attended the meeting ____ Ramesh.'",
       "options": [
-        {"option_text": "accept", "is_correct": false},
-        {"option_text": "except", "is_correct": true},
-        {"option_text": "exception", "is_correct": false},
-        {"option_text": "acceptance", "is_correct": false}
+        {
+          "option_text": "accept",
+          "is_correct": false
+        },
+        {
+          "option_text": "except",
+          "is_correct": true
+        },
+        {
+          "option_text": "exception",
+          "is_correct": false
+        },
+        {
+          "option_text": "acceptance",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Accept = receive (with consent). Except = excluding. Classic homophone. 'She accepted the gift' vs 'all except her'.",
@@ -155,10 +255,22 @@
     {
       "stem": "LOSE vs LOOSE: 'The nails were so ____ the shelf almost fell.'",
       "options": [
-        {"option_text": "lose", "is_correct": false},
-        {"option_text": "loose", "is_correct": true},
-        {"option_text": "lost", "is_correct": false},
-        {"option_text": "loosed", "is_correct": false}
+        {
+          "option_text": "lose",
+          "is_correct": false
+        },
+        {
+          "option_text": "loose",
+          "is_correct": true
+        },
+        {
+          "option_text": "lost",
+          "is_correct": false
+        },
+        {
+          "option_text": "loosed",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Loose (adjective) = not tight/not firm. Lose (verb) = fail to keep / misplace. 'If you loosen the knot too much, you may lose the rope.' Near-twin spelling trap.",

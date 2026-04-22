@@ -8,10 +8,22 @@
     {
       "stem": "X-RAYS were discovered by:",
       "options": [
-        {"option_text": "Marie Curie", "is_correct": false},
-        {"option_text": "Wilhelm Röntgen (1895)", "is_correct": true},
-        {"option_text": "Edison", "is_correct": false},
-        {"option_text": "Alexander Fleming", "is_correct": false}
+        {
+          "option_text": "Marie Curie",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wilhelm Röntgen (1895)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Edison",
+          "is_correct": false
+        },
+        {
+          "option_text": "Alexander Fleming",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Wilhelm Röntgen — German physicist, discovered X-rays accidentally in 1895 while experimenting with cathode rays. First Nobel Prize in Physics, 1901. Named 'X' since nature was unknown. Quickly applied to medical imaging.",
@@ -29,10 +41,22 @@
     {
       "stem": "The TRANSISTOR was invented in 1947 at Bell Labs by:",
       "options": [
-        {"option_text": "Einstein, Bohr, Schrödinger", "is_correct": false},
-        {"option_text": "Bardeen, Brattain, Shockley", "is_correct": true},
-        {"option_text": "Watson, Crick, Wilkins", "is_correct": false},
-        {"option_text": "Gates, Jobs, Ritchie", "is_correct": false}
+        {
+          "option_text": "Einstein, Bohr, Schrödinger",
+          "is_correct": false
+        },
+        {
+          "option_text": "Bardeen, Brattain, Shockley",
+          "is_correct": true
+        },
+        {
+          "option_text": "Watson, Crick, Wilkins",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gates, Jobs, Ritchie",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Bardeen, Brattain, Shockley — Bell Labs, 23 December 1947. Nobel Physics 1956. Replaced vacuum tubes; foundation of modern electronics. Bardeen also won a 2nd Nobel (for BCS theory of superconductivity) — only person with two physics Nobels.",
@@ -50,13 +74,25 @@
     {
       "stem": "The STEAM ENGINE — central to the Industrial Revolution — was refined by:",
       "options": [
-        {"option_text": "Thomas Newcomen only", "is_correct": false},
-        {"option_text": "James Watt (who added separate condenser, late 18th c.)", "is_correct": true},
-        {"option_text": "Galileo", "is_correct": false},
-        {"option_text": "Henry Ford", "is_correct": false}
+        {
+          "option_text": "Thomas Newcomen only",
+          "is_correct": false
+        },
+        {
+          "option_text": "James Watt",
+          "is_correct": true
+        },
+        {
+          "option_text": "Galileo",
+          "is_correct": false
+        },
+        {
+          "option_text": "Henry Ford",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "James Watt — improved Thomas Newcomen's 1712 atmospheric steam engine by adding a separate condenser (1769) + sun-and-planet gear + double action. Made engines far more efficient. Unit 'Watt' (power) named after him. Spurred the first Industrial Revolution.",
+      "explanation": "James Watt — improved Thomas Newcomen's 1712 atmospheric steam engine by adding a separate condenser (1769) + sun-and-planet gear + double action. Made engines far more efficient. Unit 'Watt' (power) named after him. Spurred the first Industrial Revolution. who added separate condenser, late 18th c.",
       "subject": "General Knowledge",
       "topic": "Science inventions II — mixed tiers",
       "topic_code": "GK_SCIENCE_INVENTIONS_II_MIXED",
@@ -66,15 +102,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-gk-sci-03",
       "generated_at": "2026-04-23T05:40:00+00:00",
-      "id": "sgk_GK_SCIENCE_INVENTIONS_II_MIXED_00003"
+      "id": "sgk_GK_SCIENCE_INVENTIONS_II_MIXED_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "James Watt (who added separate condenser, late 18th c.)",
+          "now": "James Watt",
+          "moved_to_explanation": "who added separate condenser, late 18th c."
+        }
+      ]
     },
     {
       "stem": "Match the INVENTION with its INVENTOR. A. Dynamo (electrical generator).  B. Incandescent bulb.  C. Radio (long-distance).  D. Powered airplane. List-II: 1. Michael Faraday.  2. Thomas Edison (with Swan).  3. Guglielmo Marconi (1890s).  4. Wright Brothers (1903).",
       "options": [
-        {"option_text": "A-1, B-2, C-3, D-4", "is_correct": true},
-        {"option_text": "A-2, B-1, C-3, D-4", "is_correct": false},
-        {"option_text": "A-1, B-3, C-2, D-4", "is_correct": false},
-        {"option_text": "A-1, B-2, C-4, D-3", "is_correct": false}
+        {
+          "option_text": "A-1, B-2, C-3, D-4",
+          "is_correct": true
+        },
+        {
+          "option_text": "A-2, B-1, C-3, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-3, C-2, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-2, C-4, D-3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Faraday (1831) — electromagnetic induction, first dynamo. Edison + Joseph Swan (independently) — practical incandescent bulb (1879). Marconi — wireless telegraphy / radio (1890s-1900s). Wright Brothers — first sustained powered flight, 17 December 1903 at Kitty Hawk.",
@@ -92,13 +148,25 @@
     {
       "stem": "The INTERNET evolved from which military research network?",
       "options": [
-        {"option_text": "NSFNET", "is_correct": false},
-        {"option_text": "ARPANET (US Defence, late 1960s)", "is_correct": true},
-        {"option_text": "SDI", "is_correct": false},
-        {"option_text": "NASA network", "is_correct": false}
+        {
+          "option_text": "NSFNET",
+          "is_correct": false
+        },
+        {
+          "option_text": "ARPANET",
+          "is_correct": true
+        },
+        {
+          "option_text": "SDI",
+          "is_correct": false
+        },
+        {
+          "option_text": "NASA network",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ARPANET — Advanced Research Projects Agency Network. Began 1969 with 4 nodes (UCLA, Stanford, UCSB, Utah). TCP/IP (Vint Cerf + Bob Kahn) protocols adopted 1983. NSFNET later supplemented and commercialised in the 1990s. Tim Berners-Lee invented WWW on top of this (1989-91 at CERN).",
+      "explanation": "ARPANET — Advanced Research Projects Agency Network. Began 1969 with 4 nodes (UCLA, Stanford, UCSB, Utah). TCP/IP (Vint Cerf + Bob Kahn) protocols adopted 1983. NSFNET later supplemented and commercialised in the 1990s. Tim Berners-Lee invented WWW on top of this (1989-91 at CERN). US Defence, late 1960s.",
       "subject": "General Knowledge",
       "topic": "Science inventions II — mixed tiers",
       "topic_code": "GK_SCIENCE_INVENTIONS_II_MIXED",
@@ -108,15 +176,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-gk-sci-05",
       "generated_at": "2026-04-23T05:40:00+00:00",
-      "id": "sgk_GK_SCIENCE_INVENTIONS_II_MIXED_00005"
+      "id": "sgk_GK_SCIENCE_INVENTIONS_II_MIXED_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ARPANET (US Defence, late 1960s)",
+          "now": "ARPANET",
+          "moved_to_explanation": "US Defence, late 1960s"
+        }
+      ]
     },
     {
       "stem": "CRISPR — the revolutionary GENE-EDITING tool — earned the Nobel Chemistry 2020 for:",
       "options": [
-        {"option_text": "Watson and Crick", "is_correct": false},
-        {"option_text": "Emmanuelle Charpentier and Jennifer Doudna", "is_correct": true},
-        {"option_text": "Hargobind Khorana", "is_correct": false},
-        {"option_text": "Craig Venter", "is_correct": false}
+        {
+          "option_text": "Watson and Crick",
+          "is_correct": false
+        },
+        {
+          "option_text": "Emmanuelle Charpentier and Jennifer Doudna",
+          "is_correct": true
+        },
+        {
+          "option_text": "Hargobind Khorana",
+          "is_correct": false
+        },
+        {
+          "option_text": "Craig Venter",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Charpentier (French) + Doudna (American) — first all-female team to share a Nobel in the sciences. CRISPR-Cas9 = programmable gene-editing system. Huge potential + ethical concerns. Revolutionised biotech. Watson and Crick + Wilkins shared Physiology 1962 (DNA structure).",
@@ -134,10 +222,22 @@
     {
       "stem": "The MRI (Magnetic Resonance Imaging) machine is based on the principle of:",
       "options": [
-        {"option_text": "X-ray absorption", "is_correct": false},
-        {"option_text": "Nuclear Magnetic Resonance (NMR)", "is_correct": true},
-        {"option_text": "Ultrasound reflection", "is_correct": false},
-        {"option_text": "Radioactive decay", "is_correct": false}
+        {
+          "option_text": "X-ray absorption",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nuclear Magnetic Resonance (NMR)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Ultrasound reflection",
+          "is_correct": false
+        },
+        {
+          "option_text": "Radioactive decay",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "MRI — based on Nuclear Magnetic Resonance (NMR). Strong magnetic field + radio-frequency pulses align and perturb hydrogen nuclei (in water/fat) in tissues; signals emitted are mapped into images. Nobel Physiology 2003 (Lauterbur, Mansfield). No ionising radiation unlike X-rays / CT.",

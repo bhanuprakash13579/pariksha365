@@ -8,13 +8,25 @@
     {
       "stem": "The currency of JAPAN is the:",
       "options": [
-        {"option_text": "Won", "is_correct": false},
-        {"option_text": "YEN (symbol ¥; ISO JPY) — issued by the Bank of Japan since 1871", "is_correct": true},
-        {"option_text": "Yuan", "is_correct": false},
-        {"option_text": "Ringgit", "is_correct": false}
+        {
+          "option_text": "Won",
+          "is_correct": false
+        },
+        {
+          "option_text": "YEN",
+          "is_correct": true
+        },
+        {
+          "option_text": "Yuan",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ringgit",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "CURRENCIES OF MAJOR COUNTRIES (mnemonic: connect by language family / region): EAST ASIA — Japan: YEN (¥, JPY); China: YUAN / RENMINBI (¥, CNY — ‘people's currency’); South Korea: WON (₩, KRW); North Korea: (different) WON; Taiwan: NEW TAIWAN DOLLAR (TWD); Hong Kong: HK Dollar (HKD); Macau: Pataca. SE ASIA — Malaysia: RINGGIT (RM, MYR); Singapore: Singapore Dollar; Thailand: BAHT (฿, THB); Vietnam: DONG (₫, VND); Indonesia: RUPIAH (Rp, IDR); Philippines: PESO (₱, PHP); Myanmar: KYAT (MMK); Cambodia: RIEL; Laos: KIP; Brunei: Brunei Dollar. SOUTH ASIA — India, Pakistan, Nepal, Sri Lanka, Mauritius, Seychelles: RUPEE (₹ for Indian); Bangladesh: TAKA (BDT); Bhutan: NGULTRUM (BTN, pegged to INR); Maldives: RUFIYAA (MVR); Afghanistan: AFGHANI. MIDDLE EAST — Iran: RIAL; Iraq: DINAR; Saudi Arabia / Qatar / Oman: RIYAL; UAE: DIRHAM; Kuwait: DINAR (world's highest-valued currency); Bahrain: DINAR; Jordan: DINAR; Israel: SHEKEL; Turkey: LIRA; Syria/Lebanon: LIRA/POUND. EUROPE — Eurozone 20 countries use EURO (€) — Germany, France, Italy, Spain, Netherlands, Belgium, Ireland, Portugal, Greece, Finland, Austria, Luxembourg, Slovakia, Slovenia, Estonia, Latvia, Lithuania, Cyprus, Malta, Croatia (joined 2023). UK: POUND STERLING (£, GBP); Switzerland: FRANC (CHF); Sweden/Norway/Denmark: KRONA/KRONE; Russia: ROUBLE (₽).",
+      "explanation": "CURRENCIES OF MAJOR COUNTRIES (mnemonic: connect by language family / region): EAST ASIA — Japan: YEN (¥, JPY); China: YUAN / RENMINBI (¥, CNY — ‘people's currency’); South Korea: WON (₩, KRW); North Korea: (different) WON; Taiwan: NEW TAIWAN DOLLAR (TWD); Hong Kong: HK Dollar (HKD); Macau: Pataca. SE ASIA — Malaysia: RINGGIT (RM, MYR); Singapore: Singapore Dollar; Thailand: BAHT (฿, THB); Vietnam: DONG (₫, VND); Indonesia: RUPIAH (Rp, IDR); Philippines: PESO (₱, PHP); Myanmar: KYAT (MMK); Cambodia: RIEL; Laos: KIP; Brunei: Brunei Dollar. SOUTH ASIA — India, Pakistan, Nepal, Sri Lanka, Mauritius, Seychelles: RUPEE (₹ for Indian); Bangladesh: TAKA (BDT); Bhutan: NGULTRUM (BTN, pegged to INR); Maldives: RUFIYAA (MVR); Afghanistan: AFGHANI. MIDDLE EAST — Iran: RIAL; Iraq: DINAR; Saudi Arabia / Qatar / Oman: RIYAL; UAE: DIRHAM; Kuwait: DINAR (world's highest-valued currency); Bahrain: DINAR; Jordan: DINAR; Israel: SHEKEL; Turkey: LIRA; Syria/Lebanon: LIRA/POUND. EUROPE — Eurozone 20 countries use EURO (€) — Germany, France, Italy, Spain, Netherlands, Belgium, Ireland, Portugal, Greece, Finland, Austria, Luxembourg, Slovakia, Slovenia, Estonia, Latvia, Lithuania, Cyprus, Malta, Croatia (joined 2023). UK: POUND STERLING (£, GBP); Switzerland: FRANC (CHF); Sweden/Norway/Denmark: KRONA/KRONE; Russia: ROUBLE (₽). issued by the Bank of Japan since 1871; symbol ¥; ISO JPY.",
       "subject": "General Knowledge",
       "topic": "Countries, Capitals and Currencies",
       "topic_code": "GK_CURRENCIES",
@@ -24,15 +36,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-cur-01",
       "generated_at": "2026-04-21T08:25:00+00:00",
-      "id": "sgk_GK_CURRENCIES_00001"
+      "id": "sgk_GK_CURRENCIES_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "YEN (symbol ¥; ISO JPY) — issued by the Bank of Japan since 1871",
+          "now": "YEN",
+          "moved_to_explanation": "issued by the Bank of Japan since 1871; symbol ¥; ISO JPY"
+        }
+      ]
     },
     {
       "stem": "Which country is the CAPITAL of Australia?",
       "options": [
-        {"option_text": "Sydney (largest city, but NOT capital)", "is_correct": false},
-        {"option_text": "Melbourne (2nd-largest, former capital)", "is_correct": false},
-        {"option_text": "CANBERRA — purpose-built capital, located in the Australian Capital Territory (ACT); chosen 1908 as compromise between Sydney & Melbourne rivalry", "is_correct": true},
-        {"option_text": "Perth", "is_correct": false}
+        {
+          "option_text": "Sydney (largest city, but NOT capital)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Melbourne (2nd-largest, former capital)",
+          "is_correct": false
+        },
+        {
+          "option_text": "CANBERRA — purpose-built capital, located in the Australian Capital Territory (ACT); chosen 1908 as compromise between Sydney & Melbourne rivalry",
+          "is_correct": true
+        },
+        {
+          "option_text": "Perth",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "CANBERRA (pronounced ‘KAN-brə’) — capital of AUSTRALIA; purpose-built between 1913-1927 as a COMPROMISE between the long-standing rivalry of SYDNEY (largest, NSW) and MELBOURNE (2nd-largest, Victoria). The word ‘Canberra’ derives from an Aboriginal term ‘Kambera’ meaning ‘meeting place’. LOCATED in the ‘AUSTRALIAN CAPITAL TERRITORY’ (ACT) — a small federal territory carved out of NSW, equivalent in concept to Washington D.C. in USA. Parliament House sits on Capital Hill, opened 1988. OTHER ‘DESIGNED / PURPOSE-BUILT’ capitals: (1) BRASÍLIA (Brazil, built 1960 by Oscar Niemeyer & Lucio Costa; moved from Rio de Janeiro; UNESCO 1987); (2) WASHINGTON D.C. (USA, 1800, District of Columbia); (3) ISLAMABAD (Pakistan, 1960s, moved from Karachi); (4) NAYPYIDAW (Myanmar, 2005, moved from Yangon); (5) ASTANA → NUR-SULTAN → ASTANA again (Kazakhstan, moved 1997 from Almaty); (6) ABUJA (Nigeria, 1991, moved from Lagos); (7) DODOMA (Tanzania, from Dar es Salaam); (8) NUSANTARA (Indonesia, announced 2019, under construction to replace Jakarta which is sinking); (9) New Administrative Capital (Egypt, 2020+, next to Cairo). Some COUNTRIES have MULTIPLE CAPITALS: SOUTH AFRICA — PRETORIA (executive), CAPE TOWN (legislative), BLOEMFONTEIN (judicial). BOLIVIA — SUCRE (constitutional), LA PAZ (executive+legislative). NETHERLANDS — AMSTERDAM (capital) but government seat at THE HAGUE. SRI LANKA — COLOMBO (commercial), SRI JAYAWARDENEPURA KOTTE (administrative).",
@@ -50,13 +82,25 @@
     {
       "stem": "Which is the HIGHEST-VALUED currency in the world (by exchange rate vs USD)?",
       "options": [
-        {"option_text": "US Dollar", "is_correct": false},
-        {"option_text": "Euro", "is_correct": false},
-        {"option_text": "British Pound", "is_correct": false},
-        {"option_text": "KUWAITI DINAR (KWD) — 1 KWD ≈ 3.25 USD; highest-valued currency in the world due to oil wealth + pegged to a basket", "is_correct": true}
+        {
+          "option_text": "US Dollar",
+          "is_correct": false
+        },
+        {
+          "option_text": "Euro",
+          "is_correct": false
+        },
+        {
+          "option_text": "British Pound",
+          "is_correct": false
+        },
+        {
+          "option_text": "KUWAITI DINAR (KWD)",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
-      "explanation": "HIGHEST-VALUED CURRENCIES (ranked by value vs US Dollar) — top 5 consistently: (1) KUWAITI DINAR (KWD) ≈ 3.25 USD — has been #1 since 1960; reflects Kuwait's oil wealth + controlled peg to a weighted basket of currencies; stable. (2) BAHRAINI DINAR (BHD) ≈ 2.65 USD — pegged to USD; oil wealth. (3) OMANI RIAL (OMR) ≈ 2.60 USD — oil wealth. (4) JORDANIAN DINAR (JOD) ≈ 1.41 USD — controlled peg; surprisingly strong given Jordan lacks oil. (5) GIBRALTAR POUND / FALKLAND / MANX POUND ≈ 1.25 USD — pegged 1:1 to GBP. (6) BRITISH POUND (GBP) ≈ 1.25 USD. (7) CAYMAN ISLANDS DOLLAR ≈ 1.20 USD. (8) SWISS FRANC (CHF) ≈ 1.10 USD. EURO and US Dollar typically around 1.05-1.10. NOTE: ‘HIGHEST-VALUED’ does NOT mean ‘STRONGEST’ / ‘BEST PERFORMING’ — value vs USD is just a peg choice; Japan's YEN has nominally low per-unit value (~150 JPY = 1 USD) but JPY is a major reserve currency and economically strong. LOWEST-VALUED currencies (per USD): IRANIAN RIAL, VIETNAMESE DONG, SIERRA LEONE LEONE, LAOTIAN KIP, INDONESIAN RUPIAH, UZBEKISTANI SOM — all around or above 10,000 units per USD (inflation-eroded). INDIA’S RUPEE: ~₹85 = 1 USD (2026). Currency strength != economic strength; tiny Gulf states with fixed pegs look 'strong' but are tiny economies.",
+      "explanation": "HIGHEST-VALUED CURRENCIES (ranked by value vs US Dollar) — top 5 consistently: (1) KUWAITI DINAR (KWD) ≈ 3.25 USD — has been #1 since 1960; reflects Kuwait's oil wealth + controlled peg to a weighted basket of currencies; stable. (2) BAHRAINI DINAR (BHD) ≈ 2.65 USD — pegged to USD; oil wealth. (3) OMANI RIAL (OMR) ≈ 2.60 USD — oil wealth. (4) JORDANIAN DINAR (JOD) ≈ 1.41 USD — controlled peg; surprisingly strong given Jordan lacks oil. (5) GIBRALTAR POUND / FALKLAND / MANX POUND ≈ 1.25 USD — pegged 1:1 to GBP. (6) BRITISH POUND (GBP) ≈ 1.25 USD. (7) CAYMAN ISLANDS DOLLAR ≈ 1.20 USD. (8) SWISS FRANC (CHF) ≈ 1.10 USD. EURO and US Dollar typically around 1.05-1.10. NOTE: ‘HIGHEST-VALUED’ does NOT mean ‘STRONGEST’ / ‘BEST PERFORMING’ — value vs USD is just a peg choice; Japan's YEN has nominally low per-unit value (~150 JPY = 1 USD) but JPY is a major reserve currency and economically strong. LOWEST-VALUED currencies (per USD): IRANIAN RIAL, VIETNAMESE DONG, SIERRA LEONE LEONE, LAOTIAN KIP, INDONESIAN RUPIAH, UZBEKISTANI SOM — all around or above 10,000 units per USD (inflation-eroded). INDIA’S RUPEE: ~₹85 = 1 USD (2026). Currency strength != economic strength; tiny Gulf states with fixed pegs look 'strong' but are tiny economies. 1 KWD ≈ 3.25 USD; highest-valued currency in the world due to oil wealth + pegged to a basket.",
       "subject": "General Knowledge",
       "topic": "Countries, Capitals and Currencies",
       "topic_code": "GK_CURRENCIES",
@@ -66,15 +110,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-cur-03",
       "generated_at": "2026-04-21T08:25:00+00:00",
-      "id": "sgk_GK_CURRENCIES_00003"
+      "id": "sgk_GK_CURRENCIES_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "KUWAITI DINAR (KWD) — 1 KWD ≈ 3.25 USD; highest-valued currency in the world due to oil wealth + pegged to a basket",
+          "now": "KUWAITI DINAR (KWD)",
+          "moved_to_explanation": "1 KWD ≈ 3.25 USD; highest-valued currency in the world due to oil wealth + pegged to a basket"
+        }
+      ]
     },
     {
       "stem": "The capital of SWITZERLAND is:",
       "options": [
-        {"option_text": "Zurich (largest city, financial centre)", "is_correct": false},
-        {"option_text": "Geneva (diplomatic hub — UN, WHO, WTO, Red Cross HQ)", "is_correct": false},
-        {"option_text": "BERN — de facto ‘federal city’ (no official ‘capital’ in constitution, but hosts parliament & government)", "is_correct": true},
-        {"option_text": "Lucerne", "is_correct": false}
+        {
+          "option_text": "Zurich (largest city, financial centre)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Geneva (diplomatic hub — UN, WHO, WTO, Red Cross HQ)",
+          "is_correct": false
+        },
+        {
+          "option_text": "BERN — de facto ‘federal city’ (no official ‘capital’ in constitution, but hosts parliament & government)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Lucerne",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "BERN (Swiss German ‘Bärn’) — DE FACTO CAPITAL of Switzerland; officially called the ‘FEDERAL CITY’ (Bundesstadt). Swiss constitution does NOT designate a formal ‘capital’ — reflects Swiss federalist ethos where cantons are equal. Bern hosts the FEDERAL ASSEMBLY (parliament), FEDERAL COUNCIL (executive), and the FEDERAL SUPREME COURT (in Lausanne, actually). Bern old town is UNESCO World Heritage (1983) — medieval arcades, clock tower Zytglogge. CURRENCY: SWISS FRANC (CHF, ‘Confoederatio Helvetica Franc’); symbol ‘Fr.’ or ‘sFr.’. Switzerland never joined the EURO; retains Franc as safe-haven currency; known for banking secrecy (reformed since FATCA 2014). OTHER MAJOR SWISS CITIES: (1) ZURICH — largest city, financial/banking capital; HQ of UBS, Credit Suisse (merged into UBS 2023). (2) GENEVA — DIPLOMATIC HUB — hosts UN European HQ ‘Palais des Nations’, WHO, WTO, ILO, UNHCR, IOM, ITU, WMO, WIPO, IPU, IOM, ICRC (Red Cross, founded 1863 by Henry Dunant — Nobel Peace 1901), CERN (on Franco-Swiss border). (3) LAUSANNE — IOC HQ, Federal Supreme Court, Olympic Museum. (4) BASEL — pharma hub (Novartis, Roche), Bank for International Settlements (BIS). SWISS OFFICIAL LANGUAGES: 4 — German (63%), French (23%), Italian (8%), Romansh (<1%). Swiss neutrality since 1815 (Congress of Vienna). Joined UN only in 2002.",
@@ -92,10 +156,22 @@
     {
       "stem": "Which currency is shared by over 20 European countries and is the SECOND-most traded in the world after the US Dollar?",
       "options": [
-        {"option_text": "British Pound Sterling", "is_correct": false},
-        {"option_text": "EURO (€, ISO EUR) — introduced 1999 as electronic currency; notes/coins 2002; 20 Eurozone countries as of 2026 (Croatia joined 2023)", "is_correct": true},
-        {"option_text": "Swiss Franc", "is_correct": false},
-        {"option_text": "Swedish Krona", "is_correct": false}
+        {
+          "option_text": "British Pound Sterling",
+          "is_correct": false
+        },
+        {
+          "option_text": "EURO (€, ISO EUR) — introduced 1999 as electronic currency; notes/coins 2002; 20 Eurozone countries as of 2026 (Croatia joined 2023)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Swiss Franc",
+          "is_correct": false
+        },
+        {
+          "option_text": "Swedish Krona",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "EURO (€, ISO CODE EUR) — single CURRENCY of the EUROZONE (Economic and Monetary Union of the EU). Introduced: (a) 1 JAN 1999 — as electronic/accounting currency; (b) 1 JAN 2002 — physical euro banknotes + coins circulated, replacing national currencies (franc, mark, lira, peseta, etc.). 20 COUNTRIES as of 2026 — 19+ CROATIA (joined 1 Jan 2023): AUSTRIA, BELGIUM, CYPRUS, CROATIA, ESTONIA, FINLAND, FRANCE, GERMANY, GREECE, IRELAND, ITALY, LATVIA, LITHUANIA, LUXEMBOURG, MALTA, NETHERLANDS, PORTUGAL, SLOVAKIA, SLOVENIA, SPAIN. (BULGARIA announced entry 1 Jan 2026.) EU members NOT in Eurozone: Bulgaria (joined 2026), Czechia, Denmark, Hungary, Poland, Romania, Sweden. UK: was in EU 1973-2020 (Brexit) but NEVER in Eurozone. MANAGED BY: EUROPEAN CENTRAL BANK (ECB), HQ Frankfurt am Main, Germany. First ECB President: Wim Duisenberg; currently: CHRISTINE LAGARDE (since 2019, first female; formerly IMF MD). EURO is 2nd-most traded currency (after USD), 2nd-largest reserve currency (~20% of global reserves vs USD's ~59%). Currency before euro: German MARK, French FRANC, Italian LIRA, Spanish PESETA, Dutch GUILDER, Portuguese ESCUDO, Greek DRACHMA, Irish PUNT, Finnish MARKKA, Austrian SCHILLING, Belgian/Luxembourg FRANC. EURO TOP: MONACO, SAN MARINO, ANDORRA, VATICAN CITY use the euro by agreement even though not EU members. Montenegro and Kosovo use it unilaterally.",
@@ -113,10 +189,22 @@
     {
       "stem": "The currency ‘NGULTRUM’ is used in which country?",
       "options": [
-        {"option_text": "Nepal (Rupee)", "is_correct": false},
-        {"option_text": "BHUTAN — NGULTRUM (Nu., BTN); pegged at par (1:1) with Indian Rupee (INR), and INR is also legal tender in Bhutan", "is_correct": true},
-        {"option_text": "Myanmar (Kyat)", "is_correct": false},
-        {"option_text": "Mongolia (Tugrik)", "is_correct": false}
+        {
+          "option_text": "Nepal (Rupee)",
+          "is_correct": false
+        },
+        {
+          "option_text": "BHUTAN — NGULTRUM (Nu., BTN); pegged at par (1:1) with Indian Rupee (INR), and INR is also legal tender in Bhutan",
+          "is_correct": true
+        },
+        {
+          "option_text": "Myanmar (Kyat)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mongolia (Tugrik)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "NGULTRUM (Nu., ISO BTN) — currency of BHUTAN since 1974 (when Bhutan established its monetary system). Pegged at PAR (1:1) with INDIAN RUPEE (INR). INR is also LEGAL TENDER in Bhutan (₹500 and ₹2000 notes have been subject to limits). 1 Ngultrum = 100 Chhertum (like paise). Issued by: ROYAL MONETARY AUTHORITY OF BHUTAN (RMA, est. 1982), Thimphu. Bhutan's banknotes feature images of the dzongs (fortress monasteries) and the Dragon King (‘Druk Gyalpo’). BHUTAN at a glance: (1) Capital: THIMPHU (the only world capital without traffic lights — traffic cops only); (2) Largest city: Thimphu; (3) Monarchy: Kings of the Wangchuck dynasty since 1907; current king JIGME KHESAR NAMGYEL WANGCHUCK (5th Druk Gyalpo, crowned 2008); (4) Geography: landlocked Himalayan, between India & China; (5) Religion: Vajrayana Buddhism (state religion); (6) Famous for: GROSS NATIONAL HAPPINESS (GNH, constitutional goal since 1972, 9 domains, 4 pillars); (7) Major exports: hydroelectricity (mostly to India), cardamom, gypsum; (8) Connectivity: only 1 international airport at PARO (famously difficult approach). OTHER ‘INDIA-PEGGED’ or Indian Rupee-linked currencies: NEPALI RUPEE (1 INR = 1.6 NPR, fixed since 1993); MALDIVIAN RUFIYAA (not pegged). SIMILAR-SOUNDING but DIFFERENT: Mongolian TUGRIK, Uzbek SUM, Myanmar KYAT, Cambodian RIEL, Laotian KIP.",
@@ -134,10 +222,22 @@
     {
       "stem": "ANKARA is the capital of which country?",
       "options": [
-        {"option_text": "Greece (capital: Athens)", "is_correct": false},
-        {"option_text": "TURKEY — capital since 1923 when Mustafa Kemal Atatürk moved it from Istanbul/Constantinople to symbolise the new Republic", "is_correct": true},
-        {"option_text": "Jordan (capital: Amman)", "is_correct": false},
-        {"option_text": "Iran (capital: Tehran)", "is_correct": false}
+        {
+          "option_text": "Greece (capital: Athens)",
+          "is_correct": false
+        },
+        {
+          "option_text": "TURKEY — capital since 1923 when Mustafa Kemal Atatürk moved it from Istanbul/Constantinople to symbolise the new Republic",
+          "is_correct": true
+        },
+        {
+          "option_text": "Jordan (capital: Amman)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Iran (capital: Tehran)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "ANKARA — capital of TURKEY since 13 OCTOBER 1923 (proclaimed by Mustafa Kemal Atatürk at the founding of the Republic of Turkey). PREVIOUSLY: the OTTOMAN capital was CONSTANTINOPLE (renamed ISTANBUL in 1930) — which is still Turkey's largest city and economic hub. Atatürk moved capital to Ankara to symbolise the break from Ottoman past, move toward the Anatolian heartland, and because Istanbul was vulnerable to attack (near straits). Population ~5 million; Istanbul ~15 million. Ankara hosts the PRESIDENT, GRAND NATIONAL ASSEMBLY, SUPREME COURT; Atatürk's mausoleum ANITKABIR is here. Currency: TURKISH LIRA (TRY, ₺) — has suffered massive inflation (revalued 2005, currently undergoing high inflation again since 2021). TURKEY: trans-continental — 3% Europe (East Thrace), 97% Asia; straits of BOSPORUS, SEA OF MARMARA, and DARDANELLES separate the two; Istanbul is the only city in the WORLD on 2 CONTINENTS. NATO member since 1952; EU candidate since 1999 (stalled); applied again 2024. Geography: borders 8 countries — Greece, Bulgaria, Georgia, Armenia, Azerbaijan (Nakhichevan), Iran, Iraq, Syria. Mt ARARAT — highest point (5,137 m). Cappadocia, Pamukkale, Ephesus (ancient Ionian city), Troy — tourist draws. Recent: Feb 2023 Turkey-Syria earthquake (>50,000 dead).",
@@ -155,13 +255,25 @@
     {
       "stem": "THIMPHU is famous for being one of the very few world capitals WITHOUT:",
       "options": [
-        {"option_text": "An international airport", "is_correct": false},
-        {"option_text": "A railway station", "is_correct": false},
-        {"option_text": "TRAFFIC LIGHTS / signals — police officers manually direct traffic with hand signals", "is_correct": true},
-        {"option_text": "A shopping mall", "is_correct": false}
+        {
+          "option_text": "An international airport",
+          "is_correct": false
+        },
+        {
+          "option_text": "A railway station",
+          "is_correct": false
+        },
+        {
+          "option_text": "TRAFFIC LIGHTS / signals",
+          "is_correct": true
+        },
+        {
+          "option_text": "A shopping mall",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
-      "explanation": "THIMPHU — capital of BHUTAN, and widely cited as ‘the only world capital without TRAFFIC LIGHTS’. The capital tried installing signals in 1999 but residents disliked the impersonal feel and reverted to traditional POLICE HAND-SIGNALLING at intersections — now the tourist attraction itself. Thimphu population ~1.15 lakh; country population ~7.8 lakh. No traffic light until at least 2025. BHUTAN broadly: landlocked Himalayan monarchy; 5th King JIGME KHESAR NAMGYEL WANGCHUCK (since 2006). (A) Parliament: National Assembly + National Council (bicameral). (B) National sport: ARCHERY (‘dha’). (C) National animal: TAKIN. (D) National flower: BLUE POPPY (Meconopsis). (E) National bird: RAVEN. (F) National tree: CYPRESS. (G) ‘GROSS NATIONAL HAPPINESS’ (GNH) — concept coined by King Jigme Singye Wangchuck (4th) in 1972 — 4 pillars (sustainable development, environment, culture, good governance), 9 domains, GNH INDEX created 2008. (H) FOREIGN RELATIONS: special relationship with INDIA under 2007 Treaty of Friendship (updated from 1949); Indian Rupee is legal tender; India manages Bhutan's defence. (I) No diplomatic ties with UNITED NATIONS Permanent Members (UK, USA, Russia, China, France) — Bhutan has NO embassies in USA or China. (J) UN member since 1971. OTHER notable ‘quirky’ capitals: LA PAZ (Bolivia) — highest administrative capital (3,600 m); FUNAFUTI (Tuvalu) — smallest; VATICAN CITY — smallest state & capital; SAN MARINO city — in one of world's oldest republics.",
+      "explanation": "THIMPHU — capital of BHUTAN, and widely cited as ‘the only world capital without TRAFFIC LIGHTS’. The capital tried installing signals in 1999 but residents disliked the impersonal feel and reverted to traditional POLICE HAND-SIGNALLING at intersections — now the tourist attraction itself. Thimphu population ~1.15 lakh; country population ~7.8 lakh. No traffic light until at least 2025. BHUTAN broadly: landlocked Himalayan monarchy; 5th King JIGME KHESAR NAMGYEL WANGCHUCK (since 2006). (A) Parliament: National Assembly + National Council (bicameral). (B) National sport: ARCHERY (‘dha’). (C) National animal: TAKIN. (D) National flower: BLUE POPPY (Meconopsis). (E) National bird: RAVEN. (F) National tree: CYPRESS. (G) ‘GROSS NATIONAL HAPPINESS’ (GNH) — concept coined by King Jigme Singye Wangchuck (4th) in 1972 — 4 pillars (sustainable development, environment, culture, good governance), 9 domains, GNH INDEX created 2008. (H) FOREIGN RELATIONS: special relationship with INDIA under 2007 Treaty of Friendship (updated from 1949); Indian Rupee is legal tender; India manages Bhutan's defence. (I) No diplomatic ties with UNITED NATIONS Permanent Members (UK, USA, Russia, China, France) — Bhutan has NO embassies in USA or China. (J) UN member since 1971. OTHER notable ‘quirky’ capitals: LA PAZ (Bolivia) — highest administrative capital (3,600 m); FUNAFUTI (Tuvalu) — smallest; VATICAN CITY — smallest state & capital; SAN MARINO city — in one of world's oldest republics. police officers manually direct traffic with hand signals.",
       "subject": "General Knowledge",
       "topic": "Countries, Capitals and Currencies",
       "topic_code": "GK_CURRENCIES",
@@ -171,18 +283,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-cur-08",
       "generated_at": "2026-04-21T08:25:00+00:00",
-      "id": "sgk_GK_CURRENCIES_00008"
+      "id": "sgk_GK_CURRENCIES_00008",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "TRAFFIC LIGHTS / signals — police officers manually direct traffic with hand signals",
+          "now": "TRAFFIC LIGHTS / signals",
+          "moved_to_explanation": "police officers manually direct traffic with hand signals"
+        }
+      ]
     },
     {
       "stem": "Which country's currency is the DONG?",
       "options": [
-        {"option_text": "Thailand", "is_correct": false},
-        {"option_text": "Cambodia", "is_correct": false},
-        {"option_text": "VIETNAM — ‘Đồng’ (₫, VND); issued by State Bank of Vietnam; one of the world's weakest currencies per unit (~25,000 VND = 1 USD in 2026)", "is_correct": true},
-        {"option_text": "Indonesia", "is_correct": false}
+        {
+          "option_text": "Thailand",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cambodia",
+          "is_correct": false
+        },
+        {
+          "option_text": "VIETNAM",
+          "is_correct": true
+        },
+        {
+          "option_text": "Indonesia",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
-      "explanation": "VIETNAMESE DONG (Đồng, symbol ₫, ISO VND) — currency of VIETNAM since 1978 when North & South Vietnam currencies were unified (North had used dong since 1946; South had used piastre → southern dong). Issued by the STATE BANK OF VIETNAM, HQ HANOI. Currently around ~25,000 VND per 1 USD (2026) — one of the LOWEST per-unit value currencies globally (inflation-eroded). A ‘new dong’ has been mooted but not implemented. 1 VND = 10 hao = 100 xu (subdivisions rarely used). Modern notes feature HO CHI MINH (the revolutionary founding father). VIETNAM overview: (a) Capital: HANOI (northern, political); largest city: HO CHI MINH CITY (southern, formerly Saigon, economic hub); (b) Area: ~331,000 sq km (S-shaped along South China Sea / East Sea); (c) Population: ~100 million (world's 16th most-populous); (d) Government: single-party socialist republic under Communist Party of Vietnam; (e) Key rivers: RED RIVER (Hanoi delta), MEKONG (Saigon delta); (f) History: French Indochina colony until 1954; Vietnam War (1955-75) ended with communist North taking over the South; economic ‘DOI MOI’ reforms since 1986; joined ASEAN 1995, WTO 2007. NEIGHBOURING SE ASIA currencies: CAMBODIA — RIEL (KHR); LAOS — KIP (LAK); THAILAND — BAHT (THB); MYANMAR — KYAT (MMK); MALAYSIA — RINGGIT (MYR); INDONESIA — RUPIAH (IDR); PHILIPPINES — PESO (PHP); SINGAPORE — SGD; BRUNEI — Brunei Dollar (BND, pegged 1:1 with SGD).",
+      "explanation": "VIETNAMESE DONG (Đồng, symbol ₫, ISO VND) — currency of VIETNAM since 1978 when North & South Vietnam currencies were unified (North had used dong since 1946; South had used piastre → southern dong). Issued by the STATE BANK OF VIETNAM, HQ HANOI. Currently around ~25,000 VND per 1 USD (2026) — one of the LOWEST per-unit value currencies globally (inflation-eroded). A ‘new dong’ has been mooted but not implemented. 1 VND = 10 hao = 100 xu (subdivisions rarely used). Modern notes feature HO CHI MINH (the revolutionary founding father). VIETNAM overview: (a) Capital: HANOI (northern, political); largest city: HO CHI MINH CITY (southern, formerly Saigon, economic hub); (b) Area: ~331,000 sq km (S-shaped along South China Sea / East Sea); (c) Population: ~100 million (world's 16th most-populous); (d) Government: single-party socialist republic under Communist Party of Vietnam; (e) Key rivers: RED RIVER (Hanoi delta), MEKONG (Saigon delta); (f) History: French Indochina colony until 1954; Vietnam War (1955-75) ended with communist North taking over the South; economic ‘DOI MOI’ reforms since 1986; joined ASEAN 1995, WTO 2007. NEIGHBOURING SE ASIA currencies: CAMBODIA — RIEL (KHR); LAOS — KIP (LAK); THAILAND — BAHT (THB); MYANMAR — KYAT (MMK); MALAYSIA — RINGGIT (MYR); INDONESIA — RUPIAH (IDR); PHILIPPINES — PESO (PHP); SINGAPORE — SGD; BRUNEI — Brunei Dollar (BND, pegged 1:1 with SGD). ‘Đồng’ (₫, VND); issued by State Bank of Vietnam; one of the world's weakest currencies per unit (~25,000 VND = 1 USD in 2026).",
       "subject": "General Knowledge",
       "topic": "Countries, Capitals and Currencies",
       "topic_code": "GK_CURRENCIES",
@@ -192,18 +324,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-cur-09",
       "generated_at": "2026-04-21T08:25:00+00:00",
-      "id": "sgk_GK_CURRENCIES_00009"
+      "id": "sgk_GK_CURRENCIES_00009",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "VIETNAM — ‘Đồng’ (₫, VND); issued by State Bank of Vietnam; one of the world's weakest currencies per unit (~25,000 VND = 1 USD in 2026)",
+          "now": "VIETNAM",
+          "moved_to_explanation": "‘Đồng’ (₫, VND); issued by State Bank of Vietnam; one of the world's weakest currencies per unit (~25,000 VND = 1 USD in 2026)"
+        }
+      ]
     },
     {
       "stem": "The capital of NEW ZEALAND is:",
       "options": [
-        {"option_text": "Auckland (largest city)", "is_correct": false},
-        {"option_text": "Christchurch", "is_correct": false},
-        {"option_text": "WELLINGTON — on the southern tip of the North Island; one of the southernmost national capitals in the world (41° S)", "is_correct": true},
-        {"option_text": "Queenstown", "is_correct": false}
+        {
+          "option_text": "Auckland (largest city)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Christchurch",
+          "is_correct": false
+        },
+        {
+          "option_text": "WELLINGTON",
+          "is_correct": true
+        },
+        {
+          "option_text": "Queenstown",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
-      "explanation": "WELLINGTON — capital of NEW ZEALAND; located at the southern tip of the NORTH ISLAND on the shore of Cook Strait. SELECTED as capital in 1865 (moved from Auckland, the original capital post-1841) because of its CENTRAL LOCATION relative to the two islands, as South Island settlers complained Auckland was too remote. Population ~215,000 (city); metropolitan area ~420,000; 3rd-largest metro area in NZ after Auckland and Christchurch. Known as the ‘WINDY CITY’ due to Cook Strait winds; nicknamed ‘Welly’. Hosts Parliament of NZ (famous ‘BEEHIVE’ executive wing — architect Sir Basil Spence 1977), Government House (Governor-General's residence), Supreme Court, Cabinet, most Civil Service HQ. Also hosts TE PAPA Tongarewa (Museum of New Zealand), the National Film Archive, Victoria University. Sir PETER JACKSON's WETA WORKSHOP + Weta Digital (Lord of the Rings VFX) are based here. NEW ZEALAND factsheet: (a) Currency: NEW ZEALAND DOLLAR (NZ$, ISO NZD) — introduced 1967, decimal; also used in Cook Islands, Niue, Tokelau, Pitcairn. (b) Prime Minister: CHRISTOPHER LUXON (National Party, since 2023). (c) King: Charles III (Commonwealth realm). (d) Languages: English, Māori (reo Māori), NZ Sign Language (all official). (e) Area: 268,000 sq km (similar to UK). (f) Major cities: Auckland (largest, 1/3 of population), Wellington (capital), Christchurch (Canterbury, South Island), Hamilton, Tauranga. (g) Geography: two main islands (North + South) + many smaller; divided by Cook Strait; South Island dominated by SOUTHERN ALPS + Mt. COOK/Aoraki (3,724 m, highest).",
+      "explanation": "WELLINGTON — capital of NEW ZEALAND; located at the southern tip of the NORTH ISLAND on the shore of Cook Strait. SELECTED as capital in 1865 (moved from Auckland, the original capital post-1841) because of its CENTRAL LOCATION relative to the two islands, as South Island settlers complained Auckland was too remote. Population ~215,000 (city); metropolitan area ~420,000; 3rd-largest metro area in NZ after Auckland and Christchurch. Known as the ‘WINDY CITY’ due to Cook Strait winds; nicknamed ‘Welly’. Hosts Parliament of NZ (famous ‘BEEHIVE’ executive wing — architect Sir Basil Spence 1977), Government House (Governor-General's residence), Supreme Court, Cabinet, most Civil Service HQ. Also hosts TE PAPA Tongarewa (Museum of New Zealand), the National Film Archive, Victoria University. Sir PETER JACKSON's WETA WORKSHOP + Weta Digital (Lord of the Rings VFX) are based here. NEW ZEALAND factsheet: (a) Currency: NEW ZEALAND DOLLAR (NZ$, ISO NZD) — introduced 1967, decimal; also used in Cook Islands, Niue, Tokelau, Pitcairn. (b) Prime Minister: CHRISTOPHER LUXON (National Party, since 2023). (c) King: Charles III (Commonwealth realm). (d) Languages: English, Māori (reo Māori), NZ Sign Language (all official). (e) Area: 268,000 sq km (similar to UK). (f) Major cities: Auckland (largest, 1/3 of population), Wellington (capital), Christchurch (Canterbury, South Island), Hamilton, Tauranga. (g) Geography: two main islands (North + South) + many smaller; divided by Cook Strait; South Island dominated by SOUTHERN ALPS + Mt. COOK/Aoraki (3,724 m, highest). on the southern tip of the North Island; one of the southernmost national capitals in the world (41° S).",
       "subject": "General Knowledge",
       "topic": "Countries, Capitals and Currencies",
       "topic_code": "GK_CURRENCIES",
@@ -213,7 +365,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-cur-10",
       "generated_at": "2026-04-21T08:25:00+00:00",
-      "id": "sgk_GK_CURRENCIES_00010"
+      "id": "sgk_GK_CURRENCIES_00010",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "WELLINGTON — on the southern tip of the North Island; one of the southernmost national capitals in the world (41° S)",
+          "now": "WELLINGTON",
+          "moved_to_explanation": "on the southern tip of the North Island; one of the southernmost national capitals in the world (41° S)"
+        }
+      ]
     }
   ]
 }

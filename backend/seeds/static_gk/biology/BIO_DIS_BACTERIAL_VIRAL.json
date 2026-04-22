@@ -8,10 +8,22 @@
     {
       "stem": "Tuberculosis (TB) is caused by which pathogen?",
       "options": [
-        {"option_text": "Mycobacterium leprae", "is_correct": false},
-        {"option_text": "Mycobacterium tuberculosis", "is_correct": true},
-        {"option_text": "Corynebacterium diphtheriae", "is_correct": false},
-        {"option_text": "Vibrio cholerae", "is_correct": false}
+        {
+          "option_text": "Mycobacterium leprae",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mycobacterium tuberculosis",
+          "is_correct": true
+        },
+        {
+          "option_text": "Corynebacterium diphtheriae",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vibrio cholerae",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "TB is caused by Mycobacterium tuberculosis (discovered by Robert Koch in 1882, 'Koch's Bacillus'). Primarily affects the lungs (pulmonary TB) but can affect any organ (extra-pulmonary TB). Spread via airborne droplets. VACCINE: BCG (Bacillus Calmette-Guérin), given at birth in India. World TB Day: 24 March. Current treatment: DOTS (Directly Observed Treatment, Short-course) — a 6-month multi-drug regimen. India has the world's highest TB burden (~28% of global cases). National TB Elimination Programme targets 2025 for elimination. Mycobacterium leprae causes leprosy; C. diphtheriae causes diphtheria; V. cholerae causes cholera.",
@@ -29,10 +41,22 @@
     {
       "stem": "Which disease is caused by the bacterium Vibrio cholerae, typically spread through contaminated water?",
       "options": [
-        {"option_text": "Typhoid", "is_correct": false},
-        {"option_text": "Cholera", "is_correct": true},
-        {"option_text": "Tetanus", "is_correct": false},
-        {"option_text": "Plague", "is_correct": false}
+        {
+          "option_text": "Typhoid",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cholera",
+          "is_correct": true
+        },
+        {
+          "option_text": "Tetanus",
+          "is_correct": false
+        },
+        {
+          "option_text": "Plague",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Cholera is caused by Vibrio cholerae (discovered by Robert Koch, 1884; actually first identified by Filippo Pacini 1854 though unrecognised at the time). Transmitted via faecally-contaminated water/food; causes severe watery diarrhoea ('rice water stools') and rapid dehydration. Treatment: ORS (Oral Rehydration Solution — life-saving intervention discovered 1970s). Vaccines: oral killed (Shanchol) and live attenuated. Pandemic history: seven distinct cholera pandemics since 1817 — the 7th (current) started 1961. Typhoid = Salmonella typhi; Tetanus = Clostridium tetani; Plague = Yersinia pestis.",
@@ -50,10 +74,22 @@
     {
       "stem": "Malaria is caused by which type of pathogen?",
       "options": [
-        {"option_text": "Bacteria", "is_correct": false},
-        {"option_text": "Virus", "is_correct": false},
-        {"option_text": "Protozoan parasite (Plasmodium)", "is_correct": true},
-        {"option_text": "Fungus", "is_correct": false}
+        {
+          "option_text": "Bacteria",
+          "is_correct": false
+        },
+        {
+          "option_text": "Virus",
+          "is_correct": false
+        },
+        {
+          "option_text": "Protozoan parasite",
+          "is_correct": true
+        },
+        {
+          "option_text": "Fungus",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "Malaria is caused by the PROTOZOAN PARASITE Plasmodium (5 species infect humans: P. falciparum — most deadly, P. vivax — most widespread in India, P. ovale, P. malariae, P. knowlesi). Transmitted by the bite of infected FEMALE Anopheles mosquitoes. Life cycle involves liver stage (exo-erythrocytic) and blood stage (erythrocytic). Sir RONALD ROSS (British, working in Secunderabad India) proved in 1897 that mosquitoes transmit malaria — Nobel Prize 1902; first India-based discovery to win a Nobel. World Malaria Day: 25 April. Treatment: Chloroquine (resistance growing), Artemisinin-based combination therapy (ACT). Vaccine: RTS,S and R21/Matrix-M approved recently. Malaria ≠ bacterial/viral — a common student error.",
@@ -66,15 +102,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-bio-dis-01",
       "generated_at": "2026-04-20T10:45:00+00:00",
-      "id": "sgk_BIO_DIS_BACTERIAL_VIRAL_00013"
+      "id": "sgk_BIO_DIS_BACTERIAL_VIRAL_00013",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Protozoan parasite (Plasmodium)",
+          "now": "Protozoan parasite",
+          "moved_to_explanation": "Plasmodium"
+        }
+      ]
     },
     {
       "stem": "Dengue fever is primarily transmitted by which mosquito?",
       "options": [
-        {"option_text": "Anopheles stephensi", "is_correct": false},
-        {"option_text": "Culex pipiens", "is_correct": false},
-        {"option_text": "Aedes aegypti (and A. albopictus)", "is_correct": true},
-        {"option_text": "Mansonia uniformis", "is_correct": false}
+        {
+          "option_text": "Anopheles stephensi",
+          "is_correct": false
+        },
+        {
+          "option_text": "Culex pipiens",
+          "is_correct": false
+        },
+        {
+          "option_text": "Aedes aegypti",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mansonia uniformis",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "Dengue virus (DEN-1, 2, 3, 4 serotypes — infection with one provides lifelong immunity to THAT serotype but not to others, hence 'Dengue Hemorrhagic Fever' on second infection) is transmitted by Aedes aegypti (primary) and A. albopictus (secondary). Aedes bites during the DAY (unlike Anopheles which bites at night — why bed nets alone don't prevent dengue). Key identifying feature: Aedes has black-and-white striped legs. Aedes also transmits CHIKUNGUNYA, YELLOW FEVER, ZIKA. Anopheles = malaria. Culex = filariasis, Japanese encephalitis, West Nile. Mansonia = lymphatic filariasis (rural India).",
@@ -87,15 +143,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-bio-dis-01",
       "generated_at": "2026-04-20T10:45:00+00:00",
-      "id": "sgk_BIO_DIS_BACTERIAL_VIRAL_00014"
+      "id": "sgk_BIO_DIS_BACTERIAL_VIRAL_00014",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Aedes aegypti (and A. albopictus)",
+          "now": "Aedes aegypti",
+          "moved_to_explanation": "and A. albopictus"
+        }
+      ]
     },
     {
       "stem": "HIV (Human Immunodeficiency Virus) specifically targets which type of immune cells?",
       "options": [
-        {"option_text": "B-lymphocytes", "is_correct": false},
-        {"option_text": "CD4+ T-helper lymphocytes", "is_correct": true},
-        {"option_text": "Neutrophils", "is_correct": false},
-        {"option_text": "Erythrocytes", "is_correct": false}
+        {
+          "option_text": "B-lymphocytes",
+          "is_correct": false
+        },
+        {
+          "option_text": "CD4+ T-helper lymphocytes",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neutrophils",
+          "is_correct": false
+        },
+        {
+          "option_text": "Erythrocytes",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "HIV is a RETROVIRUS (uses reverse transcriptase enzyme to convert its RNA to DNA, discovered by David Baltimore & Howard Temin — Nobel 1975). It specifically infects CD4+ T-helper lymphocytes (which coordinate the immune response), gradually depleting them. Normal CD4 count: 500-1500 cells/mm³; below 200 = AIDS (Acquired Immunodeficiency Syndrome). Transmitted via blood, sexual contact, mother-to-child. Treatment: ART (Antiretroviral Therapy — combination of 3+ drugs, available free in India via NACO). World AIDS Day: 1 December. HIV discovered by Luc Montagnier & Françoise Barré-Sinoussi (French) and Robert Gallo (US) — Nobel 2008 to the French duo (controversial not to include Gallo). First identified 1981, officially named 1986.",
@@ -113,10 +189,22 @@
     {
       "stem": "Which disease is caused by the virus transmitted through the bite of an infected dog?",
       "options": [
-        {"option_text": "Swine flu", "is_correct": false},
-        {"option_text": "Rabies", "is_correct": true},
-        {"option_text": "Japanese encephalitis", "is_correct": false},
-        {"option_text": "Hepatitis B", "is_correct": false}
+        {
+          "option_text": "Swine flu",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rabies",
+          "is_correct": true
+        },
+        {
+          "option_text": "Japanese encephalitis",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hepatitis B",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Rabies is caused by the Rabies lyssavirus (Rhabdoviridae family), transmitted through saliva when an infected animal (dog primarily in India; also bats, foxes, jackals, mongoose) bites or licks broken skin. Affects the central nervous system; once symptoms appear, it is almost 100% FATAL — but preventable with post-exposure prophylaxis (wound washing + vaccine ± immunoglobulin) given promptly. Louis Pasteur developed the first rabies vaccine (1885, successfully treating 9-year-old Joseph Meister). World Rabies Day: 28 September. India accounts for ~36% of global rabies deaths. NEGRI BODIES (named after Adelchi Negri) in brain neurons are diagnostic.",
@@ -134,10 +222,22 @@
     {
       "stem": "Filariasis (Elephantiasis), causing severe swelling of limbs, is caused by which parasite?",
       "options": [
-        {"option_text": "Plasmodium vivax", "is_correct": false},
-        {"option_text": "Wuchereria bancrofti", "is_correct": true},
-        {"option_text": "Leishmania donovani", "is_correct": false},
-        {"option_text": "Trypanosoma brucei", "is_correct": false}
+        {
+          "option_text": "Plasmodium vivax",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wuchereria bancrofti",
+          "is_correct": true
+        },
+        {
+          "option_text": "Leishmania donovani",
+          "is_correct": false
+        },
+        {
+          "option_text": "Trypanosoma brucei",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Lymphatic filariasis / Elephantiasis is caused by nematode worms — primarily Wuchereria bancrofti (90% of cases globally), also Brugia malayi, Brugia timori. Transmitted by Culex mosquitoes (W. bancrofti), Mansonia (Brugia). Adult worms live in lymphatic vessels, blocking lymph flow and causing massive swelling (elephantiasis) of legs, arms, scrotum. WHO aims to ELIMINATE LF as a public health problem — India launched Mass Drug Administration (MDA) with DEC + Albendazole + Ivermectin in endemic districts. Plasmodium = malaria (protozoan). Leishmania = kala-azar. Trypanosoma = African sleeping sickness (not in India).",
@@ -155,10 +255,22 @@
     {
       "stem": "Kala-azar (Visceral Leishmaniasis) is spread by which vector?",
       "options": [
-        {"option_text": "Anopheles mosquito", "is_correct": false},
-        {"option_text": "Sandfly (Phlebotomus argentipes in India)", "is_correct": true},
-        {"option_text": "Tsetse fly", "is_correct": false},
-        {"option_text": "Rat flea", "is_correct": false}
+        {
+          "option_text": "Anopheles mosquito",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sandfly",
+          "is_correct": true
+        },
+        {
+          "option_text": "Tsetse fly",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rat flea",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Kala-azar / Visceral Leishmaniasis is caused by Leishmania donovani (protozoan parasite) and transmitted by the bite of an infected SANDFLY (Phlebotomus argentipes in India, Lutzomyia elsewhere). Affects spleen, liver, bone marrow; symptoms: prolonged fever, weight loss, hepatosplenomegaly, blackening of skin (hence 'kala-azar' = 'black fever'). Endemic in Bihar, Jharkhand, WB, UP. India aimed to ELIMINATE kala-azar as a public health problem (<1 case/10,000) and as of 2023 has achieved this in most endemic blocks. Tsetse fly = African sleeping sickness. Rat flea (Xenopsylla) = plague.",
@@ -171,18 +283,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-bio-dis-01",
       "generated_at": "2026-04-20T10:45:00+00:00",
-      "id": "sgk_BIO_DIS_BACTERIAL_VIRAL_00018"
+      "id": "sgk_BIO_DIS_BACTERIAL_VIRAL_00018",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Sandfly (Phlebotomus argentipes in India)",
+          "now": "Sandfly",
+          "moved_to_explanation": "Phlebotomus argentipes in India"
+        }
+      ]
     },
     {
       "stem": "The only disease to be declared eradicated globally by WHO was:",
       "options": [
-        {"option_text": "Polio", "is_correct": false},
-        {"option_text": "Smallpox (declared eradicated 1980)", "is_correct": true},
-        {"option_text": "Measles", "is_correct": false},
-        {"option_text": "Guinea worm disease", "is_correct": false}
+        {
+          "option_text": "Polio",
+          "is_correct": false
+        },
+        {
+          "option_text": "Smallpox",
+          "is_correct": true
+        },
+        {
+          "option_text": "Measles",
+          "is_correct": false
+        },
+        {
+          "option_text": "Guinea worm disease",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "SMALLPOX (Variola major virus) became the FIRST and ONLY HUMAN disease globally eradicated — declared by WHO on 8 May 1980 after a massive vaccination campaign. The last natural case was Ali Maow Maalin of Somalia in October 1977. Edward Jenner invented the first vaccine in 1796 using cowpox (the word 'vaccine' comes from 'vacca' = cow in Latin). RINDERPEST (cattle plague) was the second disease eradicated (2011), but it affects animals not humans. POLIO is close to eradication — India was declared polio-free in March 2014. Guinea worm (Dracunculiasis) nearly eradicated (<15 cases/year globally). India has eliminated yaws, maternal-neonatal tetanus.",
+      "explanation": "SMALLPOX (Variola major virus) became the FIRST and ONLY HUMAN disease globally eradicated — declared by WHO on 8 May 1980 after a massive vaccination campaign. The last natural case was Ali Maow Maalin of Somalia in October 1977. Edward Jenner invented the first vaccine in 1796 using cowpox (the word 'vaccine' comes from 'vacca' = cow in Latin). RINDERPEST (cattle plague) was the second disease eradicated (2011), but it affects animals not humans. POLIO is close to eradication — India was declared polio-free in March 2014. Guinea worm (Dracunculiasis) nearly eradicated (<15 cases/year globally). India has eliminated yaws, maternal-neonatal tetanus. declared eradicated 1980.",
       "subject": "Biology",
       "topic": "Human Diseases - Bacterial & Viral",
       "topic_code": "BIO_DIS_BACTERIAL_VIRAL",
@@ -192,15 +324,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-bio-dis-01",
       "generated_at": "2026-04-20T10:45:00+00:00",
-      "id": "sgk_BIO_DIS_BACTERIAL_VIRAL_00019"
+      "id": "sgk_BIO_DIS_BACTERIAL_VIRAL_00019",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Smallpox (declared eradicated 1980)",
+          "now": "Smallpox",
+          "moved_to_explanation": "declared eradicated 1980"
+        }
+      ]
     },
     {
       "stem": "Which of the following diseases is NOT caused by a virus?",
       "options": [
-        {"option_text": "Japanese encephalitis", "is_correct": false},
-        {"option_text": "Chickenpox", "is_correct": false},
-        {"option_text": "Tetanus", "is_correct": true},
-        {"option_text": "Mumps", "is_correct": false}
+        {
+          "option_text": "Japanese encephalitis",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chickenpox",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tetanus",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mumps",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "Tetanus is caused by the BACTERIUM Clostridium tetani (Gram-positive, anaerobic, spore-forming), which produces the tetanospasmin toxin causing muscle spasms ('lockjaw'). Spores live in soil, rusty metal. Entry via deep puncture wounds. Prevented by DPT vaccine (Diphtheria, Pertussis, Tetanus) / DT / TT booster. The other three are VIRAL: Japanese encephalitis (Flavivirus, Culex transmitted), Chickenpox (Varicella-zoster — same virus causes shingles on reactivation), Mumps (Paramyxovirus — causes parotitis, part of MMR vaccine). Knowing pathogen TYPE (bacterial vs viral vs parasite) for common diseases is a frequent SSC/Banking question.",

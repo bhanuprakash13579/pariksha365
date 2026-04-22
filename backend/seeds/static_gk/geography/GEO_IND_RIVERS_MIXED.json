@@ -8,13 +8,25 @@
     {
       "stem": "The LONGEST river in India is:",
       "options": [
-        {"option_text": "Brahmaputra", "is_correct": false},
-        {"option_text": "Ganga (length within India)", "is_correct": true},
-        {"option_text": "Godavari", "is_correct": false},
-        {"option_text": "Krishna", "is_correct": false}
+        {
+          "option_text": "Brahmaputra",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ganga",
+          "is_correct": true
+        },
+        {
+          "option_text": "Godavari",
+          "is_correct": false
+        },
+        {
+          "option_text": "Krishna",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Ganga — longest river in India (~2,525 km entirely within India; 2,704 km total including the last stretch in Bangladesh as Padma). Indus is longer overall (~3,180 km) but most flows in Pakistan. Brahmaputra ~2,900 km total (much outside India). Godavari (~1,465 km) is the longest of the peninsular rivers.",
+      "explanation": "Ganga — longest river in India (~2,525 km entirely within India; 2,704 km total including the last stretch in Bangladesh as Padma). Indus is longer overall (~3,180 km) but most flows in Pakistan. Brahmaputra ~2,900 km total (much outside India). Godavari (~1,465 km) is the longest of the peninsular rivers. length within India.",
       "subject": "Geography",
       "topic": "Indian rivers — mixed tiers",
       "topic_code": "GEO_IND_RIVERS_MIXED",
@@ -24,15 +36,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-geo-riv-01",
       "generated_at": "2026-04-22T18:10:00+00:00",
-      "id": "sgk_GEO_IND_RIVERS_MIXED_00001"
+      "id": "sgk_GEO_IND_RIVERS_MIXED_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Ganga (length within India)",
+          "now": "Ganga",
+          "moved_to_explanation": "length within India"
+        }
+      ]
     },
     {
       "stem": "The source of the GANGA is:",
       "options": [
-        {"option_text": "Manasarovar lake", "is_correct": false},
-        {"option_text": "Gaumukh / Gangotri glacier (Uttarakhand)", "is_correct": true},
-        {"option_text": "Amarkantak plateau", "is_correct": false},
-        {"option_text": "Nasik", "is_correct": false}
+        {
+          "option_text": "Manasarovar lake",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gaumukh / Gangotri glacier",
+          "is_correct": true
+        },
+        {
+          "option_text": "Amarkantak plateau",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nasik",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Ganga originates at Gaumukh, the snout of the Gangotri glacier (Uttarakhand Himalayas) as Bhagirathi. Joined by Alaknanda at Devprayag, whereupon it becomes the Ganga. Amarkantak — source of Narmada + Son. Manasarovar — Indus, Sutlej, Brahmaputra. Nasik — Godavari.",
@@ -45,15 +77,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-geo-riv-02",
       "generated_at": "2026-04-22T18:10:00+00:00",
-      "id": "sgk_GEO_IND_RIVERS_MIXED_00002"
+      "id": "sgk_GEO_IND_RIVERS_MIXED_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Gaumukh / Gangotri glacier (Uttarakhand)",
+          "now": "Gaumukh / Gangotri glacier",
+          "moved_to_explanation": "Uttarakhand"
+        }
+      ]
     },
     {
       "stem": "Match the RIVER with its ORIGIN. A. Narmada.  B. Godavari.  C. Krishna.  D. Kaveri. List-II: 1. Amarkantak (MP).  2. Trimbakeshwar (Maharashtra).  3. Mahabaleshwar (Maharashtra).  4. Talakaveri (Karnataka).",
       "options": [
-        {"option_text": "A-1, B-2, C-3, D-4", "is_correct": true},
-        {"option_text": "A-2, B-1, C-3, D-4", "is_correct": false},
-        {"option_text": "A-1, B-3, C-2, D-4", "is_correct": false},
-        {"option_text": "A-1, B-2, C-4, D-3", "is_correct": false}
+        {
+          "option_text": "A-1, B-2, C-3, D-4",
+          "is_correct": true
+        },
+        {
+          "option_text": "A-2, B-1, C-3, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-3, C-2, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-2, C-4, D-3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Narmada — Amarkantak (MP, Satpura range). Godavari — Trimbakeshwar, Nasik district, Maharashtra. Krishna — Mahabaleshwar (Maharashtra, Western Ghats). Kaveri — Talakaveri, Kodagu, Karnataka.",
@@ -71,10 +123,22 @@
     {
       "stem": "Which of the following rivers FLOWS WESTWARD and drains into the Arabian Sea?",
       "options": [
-        {"option_text": "Ganga", "is_correct": false},
-        {"option_text": "Narmada", "is_correct": true},
-        {"option_text": "Godavari", "is_correct": false},
-        {"option_text": "Mahanadi", "is_correct": false}
+        {
+          "option_text": "Ganga",
+          "is_correct": false
+        },
+        {
+          "option_text": "Narmada",
+          "is_correct": true
+        },
+        {
+          "option_text": "Godavari",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mahanadi",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Peninsular rivers that flow WESTWARD: Narmada and Tapi (Tapti). Both drain into the Arabian Sea via estuaries (not deltas). Rest of the big peninsular rivers (Godavari, Krishna, Kaveri, Mahanadi) flow east and form deltas.",
@@ -92,10 +156,22 @@
     {
       "stem": "The BRAHMAPUTRA river is known in Tibet as:",
       "options": [
-        {"option_text": "Siang", "is_correct": false},
-        {"option_text": "Tsangpo", "is_correct": true},
-        {"option_text": "Jamuna", "is_correct": false},
-        {"option_text": "Lohit", "is_correct": false}
+        {
+          "option_text": "Siang",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tsangpo",
+          "is_correct": true
+        },
+        {
+          "option_text": "Jamuna",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lohit",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Brahmaputra is called Tsangpo / Yarlung Tsangpo in Tibet, Siang / Dihang in Arunachal Pradesh, Brahmaputra in Assam, and Jamuna in Bangladesh. Source: Chemayungdung glacier near Manasarovar, Tibet. Total length ~2,900 km.",
@@ -113,10 +189,22 @@
     {
       "stem": "The SUNDARBANS delta is formed by the joining of which rivers?",
       "options": [
-        {"option_text": "Godavari and Krishna", "is_correct": false},
-        {"option_text": "Ganga, Brahmaputra, and Meghna", "is_correct": true},
-        {"option_text": "Narmada and Tapi", "is_correct": false},
-        {"option_text": "Indus and Sutlej", "is_correct": false}
+        {
+          "option_text": "Godavari and Krishna",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ganga, Brahmaputra, and Meghna",
+          "is_correct": true
+        },
+        {
+          "option_text": "Narmada and Tapi",
+          "is_correct": false
+        },
+        {
+          "option_text": "Indus and Sutlej",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Sundarbans — world's LARGEST delta, formed by Ganga + Brahmaputra + Meghna. Named after the Sundari mangrove trees. UNESCO WHS. Home to Royal Bengal Tiger, spotted deer, estuarine crocodiles. Split between India (WB, Sundarban National Park) and Bangladesh.",
@@ -134,10 +222,22 @@
     {
       "stem": "Which Himalayan river is NOT a tributary of the Ganga?",
       "options": [
-        {"option_text": "Yamuna", "is_correct": false},
-        {"option_text": "Sutlej", "is_correct": true},
-        {"option_text": "Gandak", "is_correct": false},
-        {"option_text": "Kosi", "is_correct": false}
+        {
+          "option_text": "Yamuna",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sutlej",
+          "is_correct": true
+        },
+        {
+          "option_text": "Gandak",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kosi",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Sutlej is a tributary of the INDUS (one of Punjab's 5 rivers — Jhelum, Chenab, Ravi, Beas, Sutlej). Yamuna, Gandak, Kosi, Ghaghra, Son are Ganga's main tributaries. Yamuna joins Ganga at Prayag (Triveni Sangam with mythical Saraswati).",

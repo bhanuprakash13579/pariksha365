@@ -8,10 +8,22 @@
     {
       "stem": "PUZZLE (Q1-Q5 share this scenario): Seven persons A, B, C, D, E, F, G live on seven different floors of a building (1 = ground, 7 = top). (i) C lives on floor 4. (ii) Exactly two persons live between C and A (A below C). (iii) B lives immediately above A. (iv) Three persons live between D and E, with D above E. (v) F lives neither on the top nor on the bottom floor. (vi) G lives on an ODD-numbered floor above C. Q: Who lives on floor 7?",
       "options": [
-        {"option_text": "A", "is_correct": false},
-        {"option_text": "D", "is_correct": true},
-        {"option_text": "G", "is_correct": false},
-        {"option_text": "F", "is_correct": false}
+        {
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "option_text": "D",
+          "is_correct": true
+        },
+        {
+          "option_text": "G",
+          "is_correct": false
+        },
+        {
+          "option_text": "F",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "From (i) C=4. (ii) with 'two between and A below C' → A=1. (iii) B=2. (vi) G odd-numbered and >4 → G ∈ {5, 7}. (iv) D–E with 3 between, D above E → pairs (5,1),(6,2),(7,3). A=1 and B=2 block the first two; so D=7, E=3. G=7 now clashes with D → G=5. (v) F not 1/7; unused floor left = 6 → F=6. Final: 1-A, 2-B, 3-E, 4-C, 5-G, 6-F, 7-D. Floor 7 = D.",
@@ -29,10 +41,22 @@
     {
       "stem": "PUZZLE (same scenario): How many persons live between B and F?",
       "options": [
-        {"option_text": "Two", "is_correct": false},
-        {"option_text": "Three", "is_correct": true},
-        {"option_text": "Four", "is_correct": false},
-        {"option_text": "Five", "is_correct": false}
+        {
+          "option_text": "Two",
+          "is_correct": false
+        },
+        {
+          "option_text": "Three",
+          "is_correct": true
+        },
+        {
+          "option_text": "Four",
+          "is_correct": false
+        },
+        {
+          "option_text": "Five",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "B=2, F=6. Between floors 2 and 6 are floors 3, 4, 5 → THREE persons (E, C, G).",
@@ -50,10 +74,22 @@
     {
       "stem": "PUZZLE (same scenario): Who lives immediately below C?",
       "options": [
-        {"option_text": "A", "is_correct": false},
-        {"option_text": "E", "is_correct": true},
-        {"option_text": "G", "is_correct": false},
-        {"option_text": "F", "is_correct": false}
+        {
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "option_text": "E",
+          "is_correct": true
+        },
+        {
+          "option_text": "G",
+          "is_correct": false
+        },
+        {
+          "option_text": "F",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "C=4. Immediately below = floor 3 = E.",
@@ -71,10 +107,22 @@
     {
       "stem": "PUZZLE (same scenario): If we number floors 1 to 7, on which floor does G live?",
       "options": [
-        {"option_text": "3", "is_correct": false},
-        {"option_text": "5", "is_correct": true},
-        {"option_text": "6", "is_correct": false},
-        {"option_text": "7", "is_correct": false}
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "From the arrangement 1-A, 2-B, 3-E, 4-C, 5-G, 6-F, 7-D — G = floor 5.",
@@ -92,13 +140,25 @@
     {
       "stem": "PUZZLE (same scenario): Who among the following is the ODD-ONE-OUT based on their floor?",
       "options": [
-        {"option_text": "A–1, G–5, D–7 (all odd-numbered floors)", "is_correct": false},
-        {"option_text": "B–2, F–6, C–4 (all even)", "is_correct": false},
-        {"option_text": "E lives on floor 3, between B and C in the sequence", "is_correct": false},
-        {"option_text": "All three groupings above are internally consistent — none is 'odd'", "is_correct": true}
+        {
+          "option_text": "A–1, G–5, D–7 (all odd-numbered floors)",
+          "is_correct": false
+        },
+        {
+          "option_text": "B–2, F–6, C–4 (all even)",
+          "is_correct": false
+        },
+        {
+          "option_text": "E lives on floor 3, between B and C in the sequence",
+          "is_correct": false
+        },
+        {
+          "option_text": "All three groupings above are internally consistent",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
-      "explanation": "Each of (a), (b), (c) states a true pattern within the arrangement. The question tests whether the student can cross-check all three statements against the solved layout — a 'trap' where every grouping holds.",
+      "explanation": "Each of (a), (b), (c) states a true pattern within the arrangement. The question tests whether the student can cross-check all three statements against the solved layout — a 'trap' where every grouping holds. none is 'odd'.",
       "subject": "Reasoning",
       "topic": "Floor-based Puzzle (Bank PO Mains style)",
       "topic_code": "REAS_PUZZLE_FLOOR",
@@ -108,7 +168,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-21-reas-fl-05",
       "generated_at": "2026-04-21T16:20:00+00:00",
-      "id": "sgk_REAS_PUZZLE_FLOOR_00005"
+      "id": "sgk_REAS_PUZZLE_FLOOR_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "All three groupings above are internally consistent — none is 'odd'",
+          "now": "All three groupings above are internally consistent",
+          "moved_to_explanation": "none is 'odd'"
+        }
+      ]
     }
   ]
 }

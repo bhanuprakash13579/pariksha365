@@ -8,10 +8,22 @@
     {
       "stem": "'PONGAL' is the HARVEST FESTIVAL of which state?",
       "options": [
-        {"option_text": "Kerala", "is_correct": false},
-        {"option_text": "Tamil Nadu", "is_correct": true},
-        {"option_text": "Andhra Pradesh", "is_correct": false},
-        {"option_text": "Karnataka", "is_correct": false}
+        {
+          "option_text": "Kerala",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tamil Nadu",
+          "is_correct": true
+        },
+        {
+          "option_text": "Andhra Pradesh",
+          "is_correct": false
+        },
+        {
+          "option_text": "Karnataka",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Pongal — 4-day Tamil harvest festival in mid-January (Bhogi, Thai Pongal, Maatu Pongal, Kaanum Pongal). Kerala — Onam. Andhra/Karnataka — Makar Sankranti / Sankranti. Punjab — Lohri/Maghi. Assam — Magh Bihu. All celebrated within a 5-day window in mid-January.",
@@ -29,10 +41,22 @@
     {
       "stem": "Match the FESTIVAL with its STATE/COMMUNITY. A. Onam.  B. Bihu.  C. Chhath Puja.  D. Vishu. List-II: 1. Kerala.  2. Assam.  3. Bihar / UP / eastern India.  4. Kerala (new-year).",
       "options": [
-        {"option_text": "A-1, B-2, C-3, D-4", "is_correct": true},
-        {"option_text": "A-2, B-1, C-3, D-4", "is_correct": false},
-        {"option_text": "A-1, B-2, C-4, D-3", "is_correct": false},
-        {"option_text": "A-1, B-3, C-2, D-4", "is_correct": false}
+        {
+          "option_text": "A-1, B-2, C-3, D-4",
+          "is_correct": true
+        },
+        {
+          "option_text": "A-2, B-1, C-3, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-2, C-4, D-3",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-3, C-2, D-4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Onam — Kerala's harvest festival (Aug-Sep, King Mahabali). Bihu — Assam (3 Bihus). Chhath — Bihar/eastern UP, worship of Sun God + Chhathi Maiya (Oct-Nov). Vishu — Kerala's new-year (mid-April).",
@@ -50,10 +74,22 @@
     {
       "stem": "The festival of 'LOHRI' marks:",
       "options": [
-        {"option_text": "Harvesting of Rabi crops; celebrated in Punjab on 13 January", "is_correct": true},
-        {"option_text": "Harvesting of Kharif rice; celebrated in Bengal", "is_correct": false},
-        {"option_text": "Onset of summer; celebrated in Maharashtra", "is_correct": false},
-        {"option_text": "Birth of Guru Nanak", "is_correct": false}
+        {
+          "option_text": "Harvesting of Rabi crops; celebrated in Punjab on 13 January",
+          "is_correct": true
+        },
+        {
+          "option_text": "Harvesting of Kharif rice; celebrated in Bengal",
+          "is_correct": false
+        },
+        {
+          "option_text": "Onset of summer; celebrated in Maharashtra",
+          "is_correct": false
+        },
+        {
+          "option_text": "Birth of Guru Nanak",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Lohri — 13 January, Punjab/Haryana/HP. Bonfires, singing, dancing (bhangra), makki-di-roti + sarson-da-saag. Celebrates winter solstice + end of rabi harvest season. Maghi falls the next day (14 January), coinciding with Makar Sankranti.",
@@ -71,13 +107,25 @@
     {
       "stem": "'EID-UL-FITR' marks:",
       "options": [
-        {"option_text": "Beginning of Ramadan (month of fasting)", "is_correct": false},
-        {"option_text": "End of Ramadan (month of fasting)", "is_correct": true},
-        {"option_text": "Sacrifice of Prophet Ibrahim's son", "is_correct": false},
-        {"option_text": "Birth of Prophet Muhammad", "is_correct": false}
+        {
+          "option_text": "Beginning of Ramadan (month of fasting)",
+          "is_correct": false
+        },
+        {
+          "option_text": "End of Ramadan",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sacrifice of Prophet Ibrahim's son",
+          "is_correct": false
+        },
+        {
+          "option_text": "Birth of Prophet Muhammad",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Eid-ul-Fitr — 'festival of breaking the fast' — celebrates the end of Ramadan. Eid-ul-Adha / Bakrid — commemorates Prophet Ibrahim's willingness to sacrifice his son (goat-sacrifice). Milad-un-Nabi / Eid-e-Milad — Prophet Muhammad's birth.",
+      "explanation": "Eid-ul-Fitr — 'festival of breaking the fast' — celebrates the end of Ramadan. Eid-ul-Adha / Bakrid — commemorates Prophet Ibrahim's willingness to sacrifice his son (goat-sacrifice). Milad-un-Nabi / Eid-e-Milad — Prophet Muhammad's birth. month of fasting.",
       "subject": "General Knowledge",
       "topic": "Indian festivals — mixed tiers",
       "topic_code": "GK_FESTIVALS_MIXED",
@@ -87,15 +135,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-gk-fest-04",
       "generated_at": "2026-04-22T10:40:00+00:00",
-      "id": "sgk_GK_FESTIVALS_MIXED_00004"
+      "id": "sgk_GK_FESTIVALS_MIXED_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "End of Ramadan (month of fasting)",
+          "now": "End of Ramadan",
+          "moved_to_explanation": "month of fasting"
+        }
+      ]
     },
     {
       "stem": "'HORNBILL FESTIVAL' is the cultural showcase of:",
       "options": [
-        {"option_text": "Manipur", "is_correct": false},
-        {"option_text": "Nagaland", "is_correct": true},
-        {"option_text": "Mizoram", "is_correct": false},
-        {"option_text": "Meghalaya", "is_correct": false}
+        {
+          "option_text": "Manipur",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nagaland",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mizoram",
+          "is_correct": false
+        },
+        {
+          "option_text": "Meghalaya",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Hornbill Festival — 1-10 December every year at Kisama Heritage Village, Kohima, Nagaland. Named after the hornbill bird, central to Naga folklore. Called 'festival of festivals' because it showcases all major Naga tribes together. Started in 2000 to promote inter-tribal cultural exchange and tourism.",
@@ -113,10 +181,22 @@
     {
       "stem": "'GURU PURAB' / GURPURAB (celebrated in November) is associated with:",
       "options": [
-        {"option_text": "Birth of Guru Nanak", "is_correct": true},
-        {"option_text": "Martyrdom of Guru Arjan Dev", "is_correct": false},
-        {"option_text": "Birth of Guru Gobind Singh", "is_correct": false},
-        {"option_text": "End of Sikh calendar year", "is_correct": false}
+        {
+          "option_text": "Birth of Guru Nanak",
+          "is_correct": true
+        },
+        {
+          "option_text": "Martyrdom of Guru Arjan Dev",
+          "is_correct": false
+        },
+        {
+          "option_text": "Birth of Guru Gobind Singh",
+          "is_correct": false
+        },
+        {
+          "option_text": "End of Sikh calendar year",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Guru Nanak Jayanti / Guru Purab — birth anniversary of Guru Nanak Dev (1469), the first Sikh Guru. Celebrated on the Kartik Purnima (full moon of Kartik) — usually November. Guru Gobind Singh Jayanti is in January; Guru Arjan Dev's martyrdom (May-June).",
@@ -134,10 +214,22 @@
     {
       "stem": "Consider the following. 1. 'Teej' is a monsoon festival of Rajasthan / northern India, celebrated by women. 2. 'Baisakhi' (13/14 April) marks the solar new year and the foundation of the Khalsa (1699). 3. 'Pushkar Mela' is the world's largest camel fair, held in Rajasthan. 4. 'Thrissur Pooram' is Kerala's spectacular temple festival with caparisoned elephants. Which are correct?",
       "options": [
-        {"option_text": "1 and 2 only", "is_correct": false},
-        {"option_text": "1, 2 and 3 only", "is_correct": false},
-        {"option_text": "1, 2, 3 and 4", "is_correct": true},
-        {"option_text": "2 and 4 only", "is_correct": false}
+        {
+          "option_text": "1 and 2 only",
+          "is_correct": false
+        },
+        {
+          "option_text": "1, 2 and 3 only",
+          "is_correct": false
+        },
+        {
+          "option_text": "1, 2, 3 and 4",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 and 4 only",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "All four correct. Teej — Shravan month, women sing and swing for Shiva-Parvati. Baisakhi — harvest + Khalsa day (13-14 April 1699). Pushkar Mela — each November on Kartik Purnima. Thrissur Pooram — Vadakkunnathan temple, 36-hour procession.",

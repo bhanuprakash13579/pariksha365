@@ -8,13 +8,25 @@
     {
       "stem": "The CENTRAL PROCESSING UNIT (CPU) of a computer is called the:",
       "options": [
-        {"option_text": "Memory of the computer", "is_correct": false},
-        {"option_text": "BRAIN of the computer — executes instructions; has ARITHMETIC LOGIC UNIT (ALU) + CONTROL UNIT (CU) + REGISTERS", "is_correct": true},
-        {"option_text": "Output device", "is_correct": false},
-        {"option_text": "Data storage", "is_correct": false}
+        {
+          "option_text": "Memory of the computer",
+          "is_correct": false
+        },
+        {
+          "option_text": "BRAIN of the computer",
+          "is_correct": true
+        },
+        {
+          "option_text": "Output device",
+          "is_correct": false
+        },
+        {
+          "option_text": "Data storage",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "CPU (CENTRAL PROCESSING UNIT) — 'BRAIN OF THE COMPUTER'; executes instructions of computer programs (fetching from memory, decoding, executing, writing back). ALSO called PROCESSOR / microprocessor. INTERNAL COMPONENTS: (1) ARITHMETIC LOGIC UNIT (ALU) — performs arithmetic (+, −, ×, ÷) + logic (AND, OR, NOT, XOR, comparisons) operations. (2) CONTROL UNIT (CU) — directs flow of data + instructions; decodes instructions + signals ALU + memory + I/O. (3) REGISTERS — small fast storage inside CPU (general-purpose, instruction register, program counter, stack pointer, etc.). (4) CACHE MEMORY — ultra-fast SRAM close to CPU (L1, L2, L3 levels); reduces RAM access latency. CPU METRICS: (a) CLOCK SPEED (in GHz — billions of cycles per second; modern CPUs 3-5 GHz). (b) CORES (independent execution units; modern CPUs 4-64+ cores; server CPUs like AMD EPYC 9654 = 96 cores). (c) THREADS (1-2 per core; Intel Hyper-Threading / AMD SMT). (d) CACHE size (L1 ~64KB/core, L2 512KB-1MB, L3 many MB shared). (e) IPC (Instructions Per Clock). CPU MANUFACTURERS: (1) INTEL — market leader for decades; x86 architecture; Core i3/i5/i7/i9, Xeon (server); recent struggles vs AMD. (2) AMD — Ryzen (desktop/laptop), EPYC (server), Threadripper (workstation); strong comeback since Zen arch 2017. (3) APPLE — M1/M2/M3/M4 ARM-based silicon (2020 onwards) — revolutionised Macbook + iPad; also iPhone A-series. (4) QUALCOMM — Snapdragon for mobile (Android); recently Snapdragon X Elite for PCs. (5) ARM Holdings (UK/Japan-owned) — licenses ARM architecture; most smartphones worldwide. (6) MediaTek, Samsung Exynos, HiSilicon Kirin. INSTRUCTION SET ARCHITECTURES (ISA): x86 (Intel + AMD — CISC), ARM (mobile + Apple Silicon + Snapdragon PCs — RISC), RISC-V (open-source, rising), PowerPC (niche). TRANSISTOR COUNT: Moore's Law — doubling every 2 years (Gordon Moore, Intel, 1965). Current top CPUs have 100+ BILLION transistors. PROCESS NODE: 3nm (TSMC N3 for Apple M3 + Snapdragon 8 Gen 3), 4nm (mass), 2nm coming (Intel 18A, TSMC N2). INDIAN CPU: (a) SHAKTI (IIT Madras) — open-source RISC-V family; 'Made in India'. (b) AJIT (IIT Bombay) — low-power. Semiconductor manufacturing drive: IndiaSemicon policy 2022; Micron, Vedanta-Foxconn, Tata-PSMC fabs in Gujarat + TN; India Semiconductor Mission (ISM).",
+      "explanation": "CPU (CENTRAL PROCESSING UNIT) — 'BRAIN OF THE COMPUTER'; executes instructions of computer programs (fetching from memory, decoding, executing, writing back). ALSO called PROCESSOR / microprocessor. INTERNAL COMPONENTS: (1) ARITHMETIC LOGIC UNIT (ALU) — performs arithmetic (+, −, ×, ÷) + logic (AND, OR, NOT, XOR, comparisons) operations. (2) CONTROL UNIT (CU) — directs flow of data + instructions; decodes instructions + signals ALU + memory + I/O. (3) REGISTERS — small fast storage inside CPU (general-purpose, instruction register, program counter, stack pointer, etc.). (4) CACHE MEMORY — ultra-fast SRAM close to CPU (L1, L2, L3 levels); reduces RAM access latency. CPU METRICS: (a) CLOCK SPEED (in GHz — billions of cycles per second; modern CPUs 3-5 GHz). (b) CORES (independent execution units; modern CPUs 4-64+ cores; server CPUs like AMD EPYC 9654 = 96 cores). (c) THREADS (1-2 per core; Intel Hyper-Threading / AMD SMT). (d) CACHE size (L1 ~64KB/core, L2 512KB-1MB, L3 many MB shared). (e) IPC (Instructions Per Clock). CPU MANUFACTURERS: (1) INTEL — market leader for decades; x86 architecture; Core i3/i5/i7/i9, Xeon (server); recent struggles vs AMD. (2) AMD — Ryzen (desktop/laptop), EPYC (server), Threadripper (workstation); strong comeback since Zen arch 2017. (3) APPLE — M1/M2/M3/M4 ARM-based silicon (2020 onwards) — revolutionised Macbook + iPad; also iPhone A-series. (4) QUALCOMM — Snapdragon for mobile (Android); recently Snapdragon X Elite for PCs. (5) ARM Holdings (UK/Japan-owned) — licenses ARM architecture; most smartphones worldwide. (6) MediaTek, Samsung Exynos, HiSilicon Kirin. INSTRUCTION SET ARCHITECTURES (ISA): x86 (Intel + AMD — CISC), ARM (mobile + Apple Silicon + Snapdragon PCs — RISC), RISC-V (open-source, rising), PowerPC (niche). TRANSISTOR COUNT: Moore's Law — doubling every 2 years (Gordon Moore, Intel, 1965). Current top CPUs have 100+ BILLION transistors. PROCESS NODE: 3nm (TSMC N3 for Apple M3 + Snapdragon 8 Gen 3), 4nm (mass), 2nm coming (Intel 18A, TSMC N2). INDIAN CPU: (a) SHAKTI (IIT Madras) — open-source RISC-V family; 'Made in India'. (b) AJIT (IIT Bombay) — low-power. Semiconductor manufacturing drive: IndiaSemicon policy 2022; Micron, Vedanta-Foxconn, Tata-PSMC fabs in Gujarat + TN; India Semiconductor Mission (ISM). executes instructions; has ARITHMETIC LOGIC UNIT (ALU) + CONTROL UNIT (CU) + REGISTERS.",
       "subject": "General Knowledge",
       "topic": "Computer Fundamentals",
       "topic_code": "GK_COMPUTER_BASICS",
@@ -24,18 +36,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-comp-01",
       "generated_at": "2026-04-21T05:20:00+00:00",
-      "id": "sgk_GK_COMPUTER_BASICS_00001"
+      "id": "sgk_GK_COMPUTER_BASICS_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "BRAIN of the computer — executes instructions; has ARITHMETIC LOGIC UNIT (ALU) + CONTROL UNIT (CU) + REGISTERS",
+          "now": "BRAIN of the computer",
+          "moved_to_explanation": "executes instructions; has ARITHMETIC LOGIC UNIT (ALU) + CONTROL UNIT (CU) + REGISTERS"
+        }
+      ]
     },
     {
       "stem": "The SMALLEST unit of data in a computer is a:",
       "options": [
-        {"option_text": "Byte", "is_correct": false},
-        {"option_text": "BIT (Binary Digit) — 0 or 1; 8 bits = 1 BYTE; memory + storage typically measured in bytes (KB, MB, GB, TB, PB)", "is_correct": true},
-        {"option_text": "Nibble", "is_correct": false},
-        {"option_text": "Word", "is_correct": false}
+        {
+          "option_text": "Byte",
+          "is_correct": false
+        },
+        {
+          "option_text": "BIT",
+          "is_correct": true
+        },
+        {
+          "option_text": "Nibble",
+          "is_correct": false
+        },
+        {
+          "option_text": "Word",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "COMPUTER DATA UNITS HIERARCHY: (1) BIT (Binary digIT) — smallest unit; value 0 or 1 (OFF/ON, False/True). Named by Claude Shannon (1948) + John Tukey. (2) NIBBLE — 4 bits (half byte; one hex digit). (3) BYTE — 8 BITS; basic addressable unit in most computers; can represent 256 values (0-255); one ASCII character or a small integer. (4) KILOBYTE (KB) — 1,024 bytes (binary) or 1,000 bytes (decimal, SI; technically KiB for binary per IEC). (5) MEGABYTE (MB) — 1,024 KB ≈ 10⁶ B. (6) GIGABYTE (GB) — 1,024 MB ≈ 10⁹ B. (7) TERABYTE (TB) — 10¹² B. (8) PETABYTE (PB) — 10¹⁵ B. (9) EXABYTE (EB) — 10¹⁸. (10) ZETTABYTE (ZB) — 10²¹. (11) YOTTABYTE (YB) — 10²⁴. Global digital data: ~180 ZB annually (2025). REFERENCE sizes: (a) MP3 song ~5 MB. (b) 1-hour HD video ~4 GB. (c) 4K movie ~25 GB. (d) Modern SSDs 500GB-8TB; cloud storage PB. (e) Library of Congress digitized ~10 PB. NUMBER REPRESENTATION: (1) BINARY (base 2) — computer native; 0, 1. (2) OCTAL (base 8). (3) DECIMAL (base 10, human). (4) HEXADECIMAL (base 16) — compact display of bytes; 00 to FF per byte; uses 0-9, A-F. CHARACTER ENCODING: (1) ASCII — 7-bit; 128 characters (English); 1960s. (2) EXTENDED ASCII — 8-bit; 256. (3) UNICODE — universal; 1,100,000+ characters covering all world scripts (English, Devanagari, Chinese, Arabic, Emoji etc.). Encodings: UTF-8 (1-4 bytes, most common on web, 95%+ of pages), UTF-16, UTF-32. EMOJI — over 3,000 Unicode code points. DATA vs INFORMATION: DATA = raw facts/figures; INFORMATION = processed, organised, meaningful data. STORAGE TYPES: (1) PRIMARY (volatile) — RAM, CPU registers, Cache; very fast, lost when power off. (2) SECONDARY (non-volatile) — HDD, SSD, SD cards, USB drives, optical (CD/DVD/Blu-ray); persistent. (3) TERTIARY — archival, tape (LTO magnetic), optical libraries, cloud glacier storage. COMMON FILE SIZES: text 1-10 KB/page; image 100 KB-10 MB; audio 1-10 MB/min; video 10 MB-1 GB/min. DATA COMPRESSION: LOSSLESS (ZIP, PNG, FLAC) + LOSSY (JPEG, MP3, H.264, AAC) — lossy throws away info not noticed by humans.",
+      "explanation": "COMPUTER DATA UNITS HIERARCHY: (1) BIT (Binary digIT) — smallest unit; value 0 or 1 (OFF/ON, False/True). Named by Claude Shannon (1948) + John Tukey. (2) NIBBLE — 4 bits (half byte; one hex digit). (3) BYTE — 8 BITS; basic addressable unit in most computers; can represent 256 values (0-255); one ASCII character or a small integer. (4) KILOBYTE (KB) — 1,024 bytes (binary) or 1,000 bytes (decimal, SI; technically KiB for binary per IEC). (5) MEGABYTE (MB) — 1,024 KB ≈ 10⁶ B. (6) GIGABYTE (GB) — 1,024 MB ≈ 10⁹ B. (7) TERABYTE (TB) — 10¹² B. (8) PETABYTE (PB) — 10¹⁵ B. (9) EXABYTE (EB) — 10¹⁸. (10) ZETTABYTE (ZB) — 10²¹. (11) YOTTABYTE (YB) — 10²⁴. Global digital data: ~180 ZB annually (2025). REFERENCE sizes: (a) MP3 song ~5 MB. (b) 1-hour HD video ~4 GB. (c) 4K movie ~25 GB. (d) Modern SSDs 500GB-8TB; cloud storage PB. (e) Library of Congress digitized ~10 PB. NUMBER REPRESENTATION: (1) BINARY (base 2) — computer native; 0, 1. (2) OCTAL (base 8). (3) DECIMAL (base 10, human). (4) HEXADECIMAL (base 16) — compact display of bytes; 00 to FF per byte; uses 0-9, A-F. CHARACTER ENCODING: (1) ASCII — 7-bit; 128 characters (English); 1960s. (2) EXTENDED ASCII — 8-bit; 256. (3) UNICODE — universal; 1,100,000+ characters covering all world scripts (English, Devanagari, Chinese, Arabic, Emoji etc.). Encodings: UTF-8 (1-4 bytes, most common on web, 95%+ of pages), UTF-16, UTF-32. EMOJI — over 3,000 Unicode code points. DATA vs INFORMATION: DATA = raw facts/figures; INFORMATION = processed, organised, meaningful data. STORAGE TYPES: (1) PRIMARY (volatile) — RAM, CPU registers, Cache; very fast, lost when power off. (2) SECONDARY (non-volatile) — HDD, SSD, SD cards, USB drives, optical (CD/DVD/Blu-ray); persistent. (3) TERTIARY — archival, tape (LTO magnetic), optical libraries, cloud glacier storage. COMMON FILE SIZES: text 1-10 KB/page; image 100 KB-10 MB; audio 1-10 MB/min; video 10 MB-1 GB/min. DATA COMPRESSION: LOSSLESS (ZIP, PNG, FLAC) + LOSSY (JPEG, MP3, H.264, AAC) — lossy throws away info not noticed by humans. 0 or 1; 8 bits = 1 BYTE; memory + storage typically measured in bytes (KB, MB, GB, TB, PB); Binary Digit.",
       "subject": "General Knowledge",
       "topic": "Computer Fundamentals",
       "topic_code": "GK_COMPUTER_BASICS",
@@ -45,18 +77,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-comp-01",
       "generated_at": "2026-04-21T05:20:00+00:00",
-      "id": "sgk_GK_COMPUTER_BASICS_00002"
+      "id": "sgk_GK_COMPUTER_BASICS_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "BIT (Binary Digit) — 0 or 1; 8 bits = 1 BYTE; memory + storage typically measured in bytes (KB, MB, GB, TB, PB)",
+          "now": "BIT",
+          "moved_to_explanation": "0 or 1; 8 bits = 1 BYTE; memory + storage typically measured in bytes (KB, MB, GB, TB, PB); Binary Digit"
+        }
+      ]
     },
     {
       "stem": "The FATHER OF COMPUTER is considered to be:",
       "options": [
-        {"option_text": "Bill Gates", "is_correct": false},
-        {"option_text": "CHARLES BABBAGE (1791-1871) — English mathematician; designed 'DIFFERENCE ENGINE' (1822) + 'ANALYTICAL ENGINE' (1837); first programmable computer concept", "is_correct": true},
-        {"option_text": "Alan Turing", "is_correct": false},
-        {"option_text": "Herman Hollerith", "is_correct": false}
+        {
+          "option_text": "Bill Gates",
+          "is_correct": false
+        },
+        {
+          "option_text": "CHARLES BABBAGE (1791-1871)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Alan Turing",
+          "is_correct": false
+        },
+        {
+          "option_text": "Herman Hollerith",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "CHARLES BABBAGE (1791-1871) — English polymath; widely regarded as the 'FATHER OF COMPUTER'. DESIGNED (though never fully built in his lifetime): (1) DIFFERENCE ENGINE (started 1822) — mechanical calculator for polynomial functions + generating mathematical tables automatically; handled by cranks + gears; partially built, abandoned. RECONSTRUCTED by Science Museum London (1991-2002) from Babbage's drawings — IT WORKED! (2) ANALYTICAL ENGINE (designed 1837) — proposed general-purpose MECHANICAL COMPUTER with separate 'store' (memory), 'mill' (CPU), punched-card INPUT (inspired by Jacquard loom), conditional branching, loops. All concepts of MODERN COMPUTER architecturally anticipated! Never built. ADA LOVELACE (1815-1852, daughter of Lord Byron) — Babbage's collaborator; wrote the FIRST ALGORITHM intended for a machine (Bernoulli numbers computation for Analytical Engine). Considered 'WORLD's FIRST COMPUTER PROGRAMMER'. October celebrates 'Ada Lovelace Day'. Programming language ADA (US DoD 1983) named after her. OTHER COMPUTING PIONEERS: (1) BLAISE PASCAL (1642) — Pascaline mechanical calculator (addition). (2) GOTTFRIED LEIBNIZ (1673) — Stepped Reckoner (×/÷); invented binary number system + concept of calculus ratiocinator. (3) GEORGE BOOLE (1854) — Boolean algebra (basis of digital logic). (4) HERMAN HOLLERITH (1890) — punched card tabulator for US 1890 Census → founded Tabulating Machine Company → merged into IBM (1911, renamed 1924). (5) ALAN TURING (1912-54) — CONCEPTUAL basis of computability; TURING MACHINE (1936); broke Enigma at Bletchley Park WWII; Turing test for AI (1950); Turing Award = 'Nobel of computing'. (6) KONRAD ZUSE (1938-41) — Z1, Z3 (first programmable digital computer, Germany). (7) JOHN ATANASOFF + CLIFFORD BERRY (1942) — ABC (first electronic digital computer). (8) JOHN MAUCHLY + J.P. ECKERT (1946) — ENIAC (Electronic Numerical Integrator + Computer; 18,000 vacuum tubes; US Army Ballistic Research Lab). Often called first general-purpose electronic computer. (9) JOHN von NEUMANN (1945) — von Neumann architecture (shared memory for data + programs) — basis of modern computers. (10) GRACE HOPPER — FLOW-MATIC + COBOL; coined 'debug' when moth found in relay. EDSAC (1949, UK, Maurice Wilkes), EDVAC, MANCHESTER Mark 1. FIRST COMMERCIAL computer = UNIVAC 1 (1951). India's first computer = HEC-2M (Calcutta, 1955 via HOMI BHABHA, imported British). First Indian-designed = TIFRAC (1960 Bombay, by TIFR). Param Siddhi-AI (2020) = India's fastest supercomputer.",
+      "explanation": "CHARLES BABBAGE (1791-1871) — English polymath; widely regarded as the 'FATHER OF COMPUTER'. DESIGNED (though never fully built in his lifetime): (1) DIFFERENCE ENGINE (started 1822) — mechanical calculator for polynomial functions + generating mathematical tables automatically; handled by cranks + gears; partially built, abandoned. RECONSTRUCTED by Science Museum London (1991-2002) from Babbage's drawings — IT WORKED! (2) ANALYTICAL ENGINE (designed 1837) — proposed general-purpose MECHANICAL COMPUTER with separate 'store' (memory), 'mill' (CPU), punched-card INPUT (inspired by Jacquard loom), conditional branching, loops. All concepts of MODERN COMPUTER architecturally anticipated! Never built. ADA LOVELACE (1815-1852, daughter of Lord Byron) — Babbage's collaborator; wrote the FIRST ALGORITHM intended for a machine (Bernoulli numbers computation for Analytical Engine). Considered 'WORLD's FIRST COMPUTER PROGRAMMER'. October celebrates 'Ada Lovelace Day'. Programming language ADA (US DoD 1983) named after her. OTHER COMPUTING PIONEERS: (1) BLAISE PASCAL (1642) — Pascaline mechanical calculator (addition). (2) GOTTFRIED LEIBNIZ (1673) — Stepped Reckoner (×/÷); invented binary number system + concept of calculus ratiocinator. (3) GEORGE BOOLE (1854) — Boolean algebra (basis of digital logic). (4) HERMAN HOLLERITH (1890) — punched card tabulator for US 1890 Census → founded Tabulating Machine Company → merged into IBM (1911, renamed 1924). (5) ALAN TURING (1912-54) — CONCEPTUAL basis of computability; TURING MACHINE (1936); broke Enigma at Bletchley Park WWII; Turing test for AI (1950); Turing Award = 'Nobel of computing'. (6) KONRAD ZUSE (1938-41) — Z1, Z3 (first programmable digital computer, Germany). (7) JOHN ATANASOFF + CLIFFORD BERRY (1942) — ABC (first electronic digital computer). (8) JOHN MAUCHLY + J.P. ECKERT (1946) — ENIAC (Electronic Numerical Integrator + Computer; 18,000 vacuum tubes; US Army Ballistic Research Lab). Often called first general-purpose electronic computer. (9) JOHN von NEUMANN (1945) — von Neumann architecture (shared memory for data + programs) — basis of modern computers. (10) GRACE HOPPER — FLOW-MATIC + COBOL; coined 'debug' when moth found in relay. EDSAC (1949, UK, Maurice Wilkes), EDVAC, MANCHESTER Mark 1. FIRST COMMERCIAL computer = UNIVAC 1 (1951). India's first computer = HEC-2M (Calcutta, 1955 via HOMI BHABHA, imported British). First Indian-designed = TIFRAC (1960 Bombay, by TIFR). Param Siddhi-AI (2020) = India's fastest supercomputer. English mathematician; designed 'DIFFERENCE ENGINE' (1822) + 'ANALYTICAL ENGINE' (1837); first programmable computer concept.",
       "subject": "General Knowledge",
       "topic": "Computer Fundamentals",
       "topic_code": "GK_COMPUTER_BASICS",
@@ -66,18 +118,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-comp-01",
       "generated_at": "2026-04-21T05:20:00+00:00",
-      "id": "sgk_GK_COMPUTER_BASICS_00003"
+      "id": "sgk_GK_COMPUTER_BASICS_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "CHARLES BABBAGE (1791-1871) — English mathematician; designed 'DIFFERENCE ENGINE' (1822) + 'ANALYTICAL ENGINE' (1837); first programmable computer concept",
+          "now": "CHARLES BABBAGE (1791-1871)",
+          "moved_to_explanation": "English mathematician; designed 'DIFFERENCE ENGINE' (1822) + 'ANALYTICAL ENGINE' (1837); first programmable computer concept"
+        }
+      ]
     },
     {
       "stem": "RAM (Random Access Memory) is:",
       "options": [
-        {"option_text": "Permanent storage", "is_correct": false},
-        {"option_text": "VOLATILE (temporary) memory — loses data on power loss; stores data + running programs for CPU access; different from ROM (non-volatile)", "is_correct": true},
-        {"option_text": "Disk-based", "is_correct": false},
-        {"option_text": "Only read-only", "is_correct": false}
+        {
+          "option_text": "Permanent storage",
+          "is_correct": false
+        },
+        {
+          "option_text": "VOLATILE (temporary) memory",
+          "is_correct": true
+        },
+        {
+          "option_text": "Disk-based",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only read-only",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "RAM (RANDOM ACCESS MEMORY) — PRIMARY storage for running programs + data in use. Called 'random access' because ANY location can be accessed directly in the same time (unlike sequential access tape). CHARACTERISTICS: (1) VOLATILE — LOSES DATA when power removed; 'working memory' of computer. (2) FAST — 10-100x faster than SSD, 1000x faster than HDD. (3) EXPENSIVE per GB than disk. TYPES: (1) DRAM (Dynamic RAM) — modern main memory; uses capacitor + transistor per bit; needs REFRESHING (capacitor discharges). Standards: DDR3 (2007), DDR4 (2014), DDR5 (2020-, current). LPDDR (low-power) for mobile; GDDR for graphics cards. (2) SRAM (Static RAM) — 6 transistors per bit; FASTER but more expensive; used for CPU CACHE (L1/L2/L3). Doesn't need refresh. TYPICAL RAM sizes (2024): mobile 4-16 GB; budget laptop 8 GB; mainstream 16 GB; gaming/creator 32 GB; workstation 64-256 GB; server 256GB-24TB. ROM (READ-ONLY MEMORY) — NON-VOLATILE; stores BIOS/UEFI firmware (boot code), embedded system software. TYPES: (1) PROM (programmable once); (2) EPROM (erasable via UV); (3) EEPROM (electrically erasable); (4) FLASH memory (modern, block-erased; SSDs + USB drives + SD cards based on NAND flash). STORAGE: (1) HDD (Hard Disk Drive) — spinning magnetic platters; slow (mechanical); 100-250 MB/s; cheap; typical 1-20 TB. Seagate, WD. (2) SSD (Solid State Drive) — FLASH memory; FAST (500 MB/s SATA, 7000 MB/s PCIe NVMe); no moving parts; quiet; lower power; pricier per GB but gap closing. Samsung, Crucial, Kingston. NVMe standard. (3) Optical — CD (700 MB, 1982 — music discs, data CD-ROM), DVD (4.7-9 GB, 1996 — movies, software), BLU-RAY (25-100 GB, 2006 — HD-4K video). Declining with streaming. (4) CLOUD storage — Google Drive, OneDrive, iCloud, Dropbox. MEMORY HIERARCHY: (by speed decreasing, capacity increasing): CPU Registers → L1 cache → L2 cache → L3 cache → RAM → SSD → HDD → Cloud / Tape. Trade-off: SPEED vs SIZE vs COST. ACCESS times: Register <1 ns; L1 ~1 ns; L2 ~3 ns; L3 ~15 ns; RAM ~100 ns; SSD ~100 µs; HDD ~10 ms; network/cloud ~100 ms. Computer architects design memory hierarchy to hide latency + maximise throughput.",
+      "explanation": "RAM (RANDOM ACCESS MEMORY) — PRIMARY storage for running programs + data in use. Called 'random access' because ANY location can be accessed directly in the same time (unlike sequential access tape). CHARACTERISTICS: (1) VOLATILE — LOSES DATA when power removed; 'working memory' of computer. (2) FAST — 10-100x faster than SSD, 1000x faster than HDD. (3) EXPENSIVE per GB than disk. TYPES: (1) DRAM (Dynamic RAM) — modern main memory; uses capacitor + transistor per bit; needs REFRESHING (capacitor discharges). Standards: DDR3 (2007), DDR4 (2014), DDR5 (2020-, current). LPDDR (low-power) for mobile; GDDR for graphics cards. (2) SRAM (Static RAM) — 6 transistors per bit; FASTER but more expensive; used for CPU CACHE (L1/L2/L3). Doesn't need refresh. TYPICAL RAM sizes (2024): mobile 4-16 GB; budget laptop 8 GB; mainstream 16 GB; gaming/creator 32 GB; workstation 64-256 GB; server 256GB-24TB. ROM (READ-ONLY MEMORY) — NON-VOLATILE; stores BIOS/UEFI firmware (boot code), embedded system software. TYPES: (1) PROM (programmable once); (2) EPROM (erasable via UV); (3) EEPROM (electrically erasable); (4) FLASH memory (modern, block-erased; SSDs + USB drives + SD cards based on NAND flash). STORAGE: (1) HDD (Hard Disk Drive) — spinning magnetic platters; slow (mechanical); 100-250 MB/s; cheap; typical 1-20 TB. Seagate, WD. (2) SSD (Solid State Drive) — FLASH memory; FAST (500 MB/s SATA, 7000 MB/s PCIe NVMe); no moving parts; quiet; lower power; pricier per GB but gap closing. Samsung, Crucial, Kingston. NVMe standard. (3) Optical — CD (700 MB, 1982 — music discs, data CD-ROM), DVD (4.7-9 GB, 1996 — movies, software), BLU-RAY (25-100 GB, 2006 — HD-4K video). Declining with streaming. (4) CLOUD storage — Google Drive, OneDrive, iCloud, Dropbox. MEMORY HIERARCHY: (by speed decreasing, capacity increasing): CPU Registers → L1 cache → L2 cache → L3 cache → RAM → SSD → HDD → Cloud / Tape. Trade-off: SPEED vs SIZE vs COST. ACCESS times: Register <1 ns; L1 ~1 ns; L2 ~3 ns; L3 ~15 ns; RAM ~100 ns; SSD ~100 µs; HDD ~10 ms; network/cloud ~100 ms. Computer architects design memory hierarchy to hide latency + maximise throughput. loses data on power loss; stores data + running programs for CPU access; different from ROM (non-volatile).",
       "subject": "General Knowledge",
       "topic": "Computer Fundamentals",
       "topic_code": "GK_COMPUTER_BASICS",
@@ -87,18 +159,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-comp-01",
       "generated_at": "2026-04-21T05:20:00+00:00",
-      "id": "sgk_GK_COMPUTER_BASICS_00004"
+      "id": "sgk_GK_COMPUTER_BASICS_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "VOLATILE (temporary) memory — loses data on power loss; stores data + running programs for CPU access; different from ROM (non-volatile)",
+          "now": "VOLATILE (temporary) memory",
+          "moved_to_explanation": "loses data on power loss; stores data + running programs for CPU access; different from ROM (non-volatile)"
+        }
+      ]
     },
     {
       "stem": "An OPERATING SYSTEM (OS) is:",
       "options": [
-        {"option_text": "Hardware of computer", "is_correct": false},
-        {"option_text": "SYSTEM SOFTWARE that manages hardware + software resources + services to user + application programs — e.g., Windows, macOS, Linux, Android, iOS", "is_correct": true},
-        {"option_text": "Anti-virus", "is_correct": false},
-        {"option_text": "A type of RAM", "is_correct": false}
+        {
+          "option_text": "Hardware of computer",
+          "is_correct": false
+        },
+        {
+          "option_text": "SYSTEM SOFTWARE that manages hardware + software resources + services to user + application programs",
+          "is_correct": true
+        },
+        {
+          "option_text": "Anti-virus",
+          "is_correct": false
+        },
+        {
+          "option_text": "A type of RAM",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "OPERATING SYSTEM (OS) — CORE SYSTEM SOFTWARE that: (1) MANAGES HARDWARE (CPU, RAM, disk, peripherals); (2) PROVIDES SERVICES to applications; (3) MANAGES FILES + processes + memory + network; (4) PROVIDES USER INTERFACE (CLI + GUI). WITHOUT OS, computer is unusable. FUNCTIONS: (1) PROCESS management (schedule tasks across CPU cores); (2) MEMORY management (virtual memory, paging); (3) FILE management (directories, permissions, access); (4) DEVICE management (drivers for peripherals); (5) SECURITY (access control, user accounts, firewall); (6) NETWORKING (protocols, sockets); (7) USER INTERFACE (shell, GUI — windowing, menus, buttons). DESKTOP OS: (1) MICROSOFT WINDOWS — dominant on PCs. Version history: Windows 3.1 (1992), 95, 98, ME, XP (2001, very popular), Vista, 7 (2009, beloved), 8, 10 (2015), 11 (2021), 12 upcoming. Market share ~70% of desktops. (2) macOS (Apple) — BSD Unix-based; Snow Leopard, Lion, Mountain Lion, Mavericks, Yosemite, Sierra, High Sierra, Mojave, Catalina, Big Sur (11), Monterey (12), Ventura (13), Sonoma (14), Sequoia (15). Since M1 ARM chips (2020) — transition to Apple Silicon. ~15% desktop share. (3) LINUX — OPEN-SOURCE UNIX-like; developed by Linus Torvalds (1991, Finland). Distributions: Ubuntu, Fedora, Debian, Arch, Red Hat Enterprise Linux, Mint, Manjaro. Kernel = LINUX; full OS = GNU/Linux. <5% desktop share but DOMINANT on SERVERS (~70%), supercomputers (100% of TOP500), embedded systems, Android base. (4) Chrome OS — Google; cloud-first laptops (Chromebooks); popular in education. MOBILE OS: (1) ANDROID — Google; Linux-based; open-source (AOSP); ~70% of global smartphones (2024). Versions: Cupcake, Donut, Eclair... Oreo, Pie, Android 10/11/12/13/14/15 (alphabetic dessert codenames dropped after 9). (2) iOS — Apple iPhone/iPad; BSD/Darwin-based. Versions iOS 1 (2007) through iOS 18 (2024). ~30% global share. (3) HarmonyOS (Huawei) — after US ban of Google; China-focused. (4) KaiOS — feature phones (Jio Phone in India based on KaiOS). (5) Obsolete: Windows Phone, BlackBerry, Symbian, Palm. EMBEDDED OS: (1) RTOS (Real-Time) — VxWorks, FreeRTOS, QNX. (2) Linux variants for routers/IoT. SERVER OS: Linux dominates cloud (AWS Linux, Ubuntu Server, Red Hat, CentOS); Windows Server for enterprise; UNIX legacy (Solaris, HP-UX, AIX) declining. INDIAN OS initiative: BHARAT OS (BharOS) by IIT Madras startup (2023) — stripped-down AOSP with no Google apps; NAVIC integration; for govt + security use. BOSS Linux (Bharat Operating System Solutions) by C-DAC — desktop + school + thin client editions.",
+      "explanation": "OPERATING SYSTEM (OS) — CORE SYSTEM SOFTWARE that: (1) MANAGES HARDWARE (CPU, RAM, disk, peripherals); (2) PROVIDES SERVICES to applications; (3) MANAGES FILES + processes + memory + network; (4) PROVIDES USER INTERFACE (CLI + GUI). WITHOUT OS, computer is unusable. FUNCTIONS: (1) PROCESS management (schedule tasks across CPU cores); (2) MEMORY management (virtual memory, paging); (3) FILE management (directories, permissions, access); (4) DEVICE management (drivers for peripherals); (5) SECURITY (access control, user accounts, firewall); (6) NETWORKING (protocols, sockets); (7) USER INTERFACE (shell, GUI — windowing, menus, buttons). DESKTOP OS: (1) MICROSOFT WINDOWS — dominant on PCs. Version history: Windows 3.1 (1992), 95, 98, ME, XP (2001, very popular), Vista, 7 (2009, beloved), 8, 10 (2015), 11 (2021), 12 upcoming. Market share ~70% of desktops. (2) macOS (Apple) — BSD Unix-based; Snow Leopard, Lion, Mountain Lion, Mavericks, Yosemite, Sierra, High Sierra, Mojave, Catalina, Big Sur (11), Monterey (12), Ventura (13), Sonoma (14), Sequoia (15). Since M1 ARM chips (2020) — transition to Apple Silicon. ~15% desktop share. (3) LINUX — OPEN-SOURCE UNIX-like; developed by Linus Torvalds (1991, Finland). Distributions: Ubuntu, Fedora, Debian, Arch, Red Hat Enterprise Linux, Mint, Manjaro. Kernel = LINUX; full OS = GNU/Linux. <5% desktop share but DOMINANT on SERVERS (~70%), supercomputers (100% of TOP500), embedded systems, Android base. (4) Chrome OS — Google; cloud-first laptops (Chromebooks); popular in education. MOBILE OS: (1) ANDROID — Google; Linux-based; open-source (AOSP); ~70% of global smartphones (2024). Versions: Cupcake, Donut, Eclair... Oreo, Pie, Android 10/11/12/13/14/15 (alphabetic dessert codenames dropped after 9). (2) iOS — Apple iPhone/iPad; BSD/Darwin-based. Versions iOS 1 (2007) through iOS 18 (2024). ~30% global share. (3) HarmonyOS (Huawei) — after US ban of Google; China-focused. (4) KaiOS — feature phones (Jio Phone in India based on KaiOS). (5) Obsolete: Windows Phone, BlackBerry, Symbian, Palm. EMBEDDED OS: (1) RTOS (Real-Time) — VxWorks, FreeRTOS, QNX. (2) Linux variants for routers/IoT. SERVER OS: Linux dominates cloud (AWS Linux, Ubuntu Server, Red Hat, CentOS); Windows Server for enterprise; UNIX legacy (Solaris, HP-UX, AIX) declining. INDIAN OS initiative: BHARAT OS (BharOS) by IIT Madras startup (2023) — stripped-down AOSP with no Google apps; NAVIC integration; for govt + security use. BOSS Linux (Bharat Operating System Solutions) by C-DAC — desktop + school + thin client editions. e.g., Windows, macOS, Linux, Android, iOS.",
       "subject": "General Knowledge",
       "topic": "Computer Fundamentals",
       "topic_code": "GK_COMPUTER_BASICS",
@@ -108,15 +200,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-comp-01",
       "generated_at": "2026-04-21T05:20:00+00:00",
-      "id": "sgk_GK_COMPUTER_BASICS_00005"
+      "id": "sgk_GK_COMPUTER_BASICS_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "SYSTEM SOFTWARE that manages hardware + software resources + services to user + application programs — e.g., Windows, macOS, Linux, Android, iOS",
+          "now": "SYSTEM SOFTWARE that manages hardware + software resources + services to user + application programs",
+          "moved_to_explanation": "e.g., Windows, macOS, Linux, Android, iOS"
+        }
+      ]
     },
     {
       "stem": "The INTERNET is:",
       "options": [
-        {"option_text": "Same as World Wide Web", "is_correct": false},
-        {"option_text": "A GLOBAL NETWORK OF NETWORKS connecting billions of devices via TCP/IP protocols; WWW is just ONE service running on it", "is_correct": true},
-        {"option_text": "Only accessible via Chrome", "is_correct": false},
-        {"option_text": "A computer", "is_correct": false}
+        {
+          "option_text": "Same as World Wide Web",
+          "is_correct": false
+        },
+        {
+          "option_text": "A GLOBAL NETWORK OF NETWORKS connecting billions of devices via TCP/IP protocols; WWW is just ONE service running on it",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only accessible via Chrome",
+          "is_correct": false
+        },
+        {
+          "option_text": "A computer",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "INTERNET — global network of interconnected networks; billions of computers + IoT devices connected. ORIGINATED as ARPANET (1969, US Department of Defense research) — first message 'LO' sent 29 Oct 1969 from UCLA to SRI Stanford — trying to type 'LOGIN' but system crashed. 1983 — ARPANET switched to TCP/IP (by Vint Cerf + Bob Kahn) — 'Birthday of the Internet'. 1990 — ARPANET retired. Internet opened for commercial use 1991-93. INDIA: first internet connectivity = 15 Aug 1995 via VSNL. BSNL + MTNL + private ISPs followed. KEY PROTOCOLS: (1) TCP/IP (Transmission Control Protocol/Internet Protocol) — foundation. Connection-oriented reliable data transfer. (2) UDP — faster, no reliability guarantee (for streaming, DNS, gaming). (3) IP addresses — IPv4 (32-bit, 4.3 billion, running out; like 192.168.0.1) + IPv6 (128-bit, virtually unlimited; like 2001:0db8:85a3::8a2e). (4) DNS (Domain Name System) — translates domain names (google.com) to IP addresses. 13 root DNS servers worldwide (with anycast copies). (5) HTTP/HTTPS — web protocol. (6) SMTP (email send) + IMAP/POP3 (email receive). (7) FTP (file transfer). (8) SSH (secure shell). INTERNET vs WWW: (a) INTERNET = the INFRASTRUCTURE (physical + logical network). (b) WWW (World Wide Web) = an APPLICATION / service on Internet; hypertext documents accessed via HTTP using browsers. Invented by Tim Berners-Lee at CERN (1989-91). OTHER Internet services: email, FTP, VoIP, streaming, gaming, SSH, torrents, cloud computing, IoT. WEB BROWSERS: (1) GOOGLE CHROME — ~65% global share. (2) SAFARI (Apple) — ~18%. (3) MICROSOFT EDGE — ~5%. (4) FIREFOX (Mozilla) — ~3%. (5) Opera, Brave, DuckDuckGo, Tor Browser. SEARCH ENGINES: (1) GOOGLE (1998, Larry Page + Sergey Brin, Stanford PhD students; PageRank algorithm) — ~90% search share. (2) BING (Microsoft) — 3%, boosted by ChatGPT. (3) Yahoo, Baidu (China), Yandex (Russia), DuckDuckGo, Ecosia. SOCIAL MEDIA: Facebook/Meta (2004, Mark Zuckerberg, 3B users), YouTube (2005), Instagram (2010), WhatsApp (2009, Jan Koum + Brian Acton; FB bought 2014), X/Twitter (2006, Jack Dorsey; Musk bought 2022), TikTok (2016, Bytedance China; banned in India 2020), Snapchat, LinkedIn, Reddit, Pinterest, Telegram, Discord. INDIAN social media: Koo (now shut), Sharechat, Josh (short video), Chingari, Roposo. INTERNET GOVERNANCE: (1) ICANN (Internet Corp for Assigned Names + Numbers, 1998) — manages DNS + IP addresses. (2) IETF — Internet Engineering Task Force, technical standards (RFCs). (3) W3C — web standards. (4) IANA. INDIA INTERNET STATS: ~830 million users (2024); 2nd largest online population after China; Jio revolutionised with cheap data (2016 launch); 5G rollout 2022.",
@@ -134,13 +246,25 @@
     {
       "stem": "The GENERATIONS OF COMPUTERS are characterised by their underlying hardware technology. The THIRD generation used:",
       "options": [
-        {"option_text": "Vacuum tubes", "is_correct": false},
-        {"option_text": "INTEGRATED CIRCUITS (ICs) — starting mid-1960s; microscopic transistors on silicon chip; enabled minicomputers + faster, cheaper, smaller", "is_correct": true},
-        {"option_text": "Microprocessors only", "is_correct": false},
-        {"option_text": "Transistors only", "is_correct": false}
+        {
+          "option_text": "Vacuum tubes",
+          "is_correct": false
+        },
+        {
+          "option_text": "INTEGRATED CIRCUITS (ICs)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Microprocessors only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Transistors only",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "GENERATIONS OF COMPUTERS — by dominant hardware technology: (1) 1ST GENERATION (1940-56) — VACUUM TUBES. Large (fill rooms), hot, fragile, power-hungry. ENIAC (1946, 18,000 tubes, 30 tons, 150 kW), UNIVAC I (1951). Programmed via wires + switches; machine code + assembly. Operated in days, often failing; HUGE heat dissipation. (2) 2ND GENERATION (1956-63) — TRANSISTORS. Invented 1947 at Bell Labs by Bardeen, Brattain, Shockley (Nobel Physics 1956). Solid-state; smaller + faster + cooler + more reliable than tubes. Enabled COMMERCIAL expansion. IBM 1401 (most-sold 2nd-gen, 10,000+ units), IBM 7094, CDC 1604. HIGH-LEVEL LANGUAGES emerged: FORTRAN (1957, IBM, John Backus — 'formula translation', scientific computing), COBOL (1959, US DoD, Grace Hopper — business data processing), ALGOL, LISP. (3) 3RD GENERATION (1964-71) — INTEGRATED CIRCUITS (ICs). Jack Kilby at Texas Instruments + Robert Noyce at Fairchild Semiconductor (1958-59) — Nobel Physics 2000 to Kilby. Multiple transistors on SINGLE SILICON CHIP. IBM System/360 (1964, revolutionary — compatible family). MINICOMPUTERS emerged (DEC PDP series). TIMESHARING OS (Multics → UNIX). Keyboards + monitors replaced punch cards. (4) 4TH GENERATION (1971-PRESENT) — MICROPROCESSORS (CPU on a single chip). INTEL 4004 (1971) — world's first microprocessor (4-bit, 2,300 transistors, Faggin + Hoff + Mazor). Intel 8008, 8080, 8086 (x86 birth), 80286, 386, 486, Pentium series. Apple II (1977), IBM PC (1981), Macintosh (1984). Rise of PC industry: Microsoft (1975 Gates + Allen), Apple (1976 Jobs + Wozniak + Wayne). Graphical User Interface (Xerox PARC → Apple → Microsoft). Internet explosion 1990s. SMARTPHONES 2007+ (iPhone). Today: 10+ billion transistors per chip; 3nm process. (5) 5TH GENERATION (future/present) — AI, QUANTUM COMPUTING, NEUROMORPHIC, PARALLEL PROCESSING. ARTIFICIAL INTELLIGENCE (LLMs like GPT-4, Claude, Gemini, Llama since 2017 transformer paper). QUANTUM computers (IBM Condor 1,121 qubits 2023; Google Sycamore 53 qubits 2019 supremacy claim; IBM Osprey, IBM System Two). NATURAL LANGUAGE UI becoming standard. AI-CHIPS (Nvidia H100/B200, Google TPU, AMD MI300, Apple M-series Neural Engine). COMPUTER SIZE evolution: ROOM-SIZED (1st gen) → desk-sized → desktop → laptop → smartphone → wearable → ubiquitous IoT. Moore's Law (doubling transistors every 2 years) drove this — slowing down since ~2016 but continuing via 3D stacking, chiplets, new materials (GaN, diamond). INDIA: PARAM 8000 (1991, C-DAC, Pune) — first Indian supercomputer; PARAM SIDDHI-AI (2020, ~5.2 PF) one of world's top 100.",
+      "explanation": "GENERATIONS OF COMPUTERS — by dominant hardware technology: (1) 1ST GENERATION (1940-56) — VACUUM TUBES. Large (fill rooms), hot, fragile, power-hungry. ENIAC (1946, 18,000 tubes, 30 tons, 150 kW), UNIVAC I (1951). Programmed via wires + switches; machine code + assembly. Operated in days, often failing; HUGE heat dissipation. (2) 2ND GENERATION (1956-63) — TRANSISTORS. Invented 1947 at Bell Labs by Bardeen, Brattain, Shockley (Nobel Physics 1956). Solid-state; smaller + faster + cooler + more reliable than tubes. Enabled COMMERCIAL expansion. IBM 1401 (most-sold 2nd-gen, 10,000+ units), IBM 7094, CDC 1604. HIGH-LEVEL LANGUAGES emerged: FORTRAN (1957, IBM, John Backus — 'formula translation', scientific computing), COBOL (1959, US DoD, Grace Hopper — business data processing), ALGOL, LISP. (3) 3RD GENERATION (1964-71) — INTEGRATED CIRCUITS (ICs). Jack Kilby at Texas Instruments + Robert Noyce at Fairchild Semiconductor (1958-59) — Nobel Physics 2000 to Kilby. Multiple transistors on SINGLE SILICON CHIP. IBM System/360 (1964, revolutionary — compatible family). MINICOMPUTERS emerged (DEC PDP series). TIMESHARING OS (Multics → UNIX). Keyboards + monitors replaced punch cards. (4) 4TH GENERATION (1971-PRESENT) — MICROPROCESSORS (CPU on a single chip). INTEL 4004 (1971) — world's first microprocessor (4-bit, 2,300 transistors, Faggin + Hoff + Mazor). Intel 8008, 8080, 8086 (x86 birth), 80286, 386, 486, Pentium series. Apple II (1977), IBM PC (1981), Macintosh (1984). Rise of PC industry: Microsoft (1975 Gates + Allen), Apple (1976 Jobs + Wozniak + Wayne). Graphical User Interface (Xerox PARC → Apple → Microsoft). Internet explosion 1990s. SMARTPHONES 2007+ (iPhone). Today: 10+ billion transistors per chip; 3nm process. (5) 5TH GENERATION (future/present) — AI, QUANTUM COMPUTING, NEUROMORPHIC, PARALLEL PROCESSING. ARTIFICIAL INTELLIGENCE (LLMs like GPT-4, Claude, Gemini, Llama since 2017 transformer paper). QUANTUM computers (IBM Condor 1,121 qubits 2023; Google Sycamore 53 qubits 2019 supremacy claim; IBM Osprey, IBM System Two). NATURAL LANGUAGE UI becoming standard. AI-CHIPS (Nvidia H100/B200, Google TPU, AMD MI300, Apple M-series Neural Engine). COMPUTER SIZE evolution: ROOM-SIZED (1st gen) → desk-sized → desktop → laptop → smartphone → wearable → ubiquitous IoT. Moore's Law (doubling transistors every 2 years) drove this — slowing down since ~2016 but continuing via 3D stacking, chiplets, new materials (GaN, diamond). INDIA: PARAM 8000 (1991, C-DAC, Pune) — first Indian supercomputer; PARAM SIDDHI-AI (2020, ~5.2 PF) one of world's top 100. starting mid-1960s; microscopic transistors on silicon chip; enabled minicomputers + faster, cheaper, smaller.",
       "subject": "General Knowledge",
       "topic": "Computer Fundamentals",
       "topic_code": "GK_COMPUTER_BASICS",
@@ -150,15 +274,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-comp-01",
       "generated_at": "2026-04-21T05:20:00+00:00",
-      "id": "sgk_GK_COMPUTER_BASICS_00007"
+      "id": "sgk_GK_COMPUTER_BASICS_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "INTEGRATED CIRCUITS (ICs) — starting mid-1960s; microscopic transistors on silicon chip; enabled minicomputers + faster, cheaper, smaller",
+          "now": "INTEGRATED CIRCUITS (ICs)",
+          "moved_to_explanation": "starting mid-1960s; microscopic transistors on silicon chip; enabled minicomputers + faster, cheaper, smaller"
+        }
+      ]
     },
     {
       "stem": "The PROGRAMMING LANGUAGE created by GUIDO VAN ROSSUM in 1991 and now most popular for AI + data science is:",
       "options": [
-        {"option_text": "Java", "is_correct": false},
-        {"option_text": "PYTHON — interpreted, dynamically-typed, high-readability; dominant in ML (NumPy, TensorFlow, PyTorch), data science, automation", "is_correct": true},
-        {"option_text": "C++", "is_correct": false},
-        {"option_text": "JavaScript", "is_correct": false}
+        {
+          "option_text": "Java",
+          "is_correct": false
+        },
+        {
+          "option_text": "PYTHON",
+          "is_correct": true
+        },
+        {
+          "option_text": "C++",
+          "is_correct": false
+        },
+        {
+          "option_text": "JavaScript",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "PYTHON — high-level, interpreted, dynamically-typed programming language. Created by GUIDO VAN ROSSUM (Dutch programmer) in 1989-91 at CWI Netherlands, released 1991. Named after 'Monty Python' comedy. Guido was called 'BDFL' (Benevolent Dictator For Life) for Python until stepping down 2018. DESIGN PHILOSOPHY: 'The Zen of Python' (by Tim Peters) — 'Beautiful is better than ugly; Explicit is better than implicit; Simple is better than complex; Readability counts; There should be one + preferably only one obvious way to do it.' VERSIONS: Python 2 (2000; deprecated end 2019) + Python 3 (2008, current — 3.13 latest 2024). Not backward-compatible across 2/3. STRENGTHS: (1) READABLE + CONCISE; (2) HUGE ECOSYSTEM — 500,000+ packages on PyPI; (3) GLUE LANGUAGE — bridges C/C++ + Java/other systems. LIBRARIES: (a) DATA SCIENCE: NumPy (arrays), pandas (dataframes), SciPy, Matplotlib, Seaborn, Plotly. (b) ML/AI: TensorFlow (Google), PyTorch (Meta), JAX (Google), scikit-learn, Keras, Hugging Face transformers, LangChain. (c) WEB: Django, Flask, FastAPI, Streamlit. (d) AUTOMATION: Selenium, BeautifulSoup, Requests. (e) GAME: Pygame. Python is the language of choice for AI RESEARCH + MACHINE LEARNING due to these libraries. POPULAR PROGRAMMING LANGUAGES (TIOBE index + IEEE Spectrum 2024): (1) PYTHON — #1; used in Google, Netflix, Instagram, Dropbox, NASA. (2) C — low-level system programming; OS kernels (Linux, Windows), embedded. (3) JAVA — enterprise, Android, banking; 'Write Once Run Anywhere' via JVM. (4) C++ — game engines, browsers, HPC, systems; OOP extension of C. (5) JAVASCRIPT / TypeScript — web browsers (front-end); Node.js (back-end). Ubiquitous. (6) C# (Microsoft) — enterprise, Windows, Unity gaming. (7) SQL — databases (declarative; Structured Query Language, 1970s IBM). (8) Go / Golang (Google 2009) — Cloud, concurrency. (9) RUST (Mozilla 2010) — memory-safe, systems. (10) SWIFT (Apple 2014) — iOS/Mac apps. (11) KOTLIN (JetBrains 2011) — Android preferred since 2017. (12) RUBY — Rails web framework. (13) R — statistics, data visualisation. (14) MATLAB — engineering, scientific. (15) SCALA, Elixir, Haskell, Clojure — functional. PARADIGMS: (1) PROCEDURAL (C, Pascal, BASIC); (2) OBJECT-ORIENTED (Java, C++, Python, C#); (3) FUNCTIONAL (Haskell, Lisp, Scheme, Erlang); (4) DECLARATIVE (SQL, Prolog, HTML); (5) SCRIPTING (Python, Perl, Ruby, JavaScript). FIRST PROGRAMMING LANGUAGE: FORTRAN (1957, IBM). LISP (1958, McCarthy) oldest used today. COBOL still runs 70% of banking + govt (legacy). AGE OF AI: 'Prompt engineering' emerging as programming paradigm with LLMs; code assistants (GitHub Copilot, ChatGPT, Claude) transforming coding productivity.",
@@ -171,15 +315,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-comp-01",
       "generated_at": "2026-04-21T05:20:00+00:00",
-      "id": "sgk_GK_COMPUTER_BASICS_00008"
+      "id": "sgk_GK_COMPUTER_BASICS_00008",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "PYTHON — interpreted, dynamically-typed, high-readability; dominant in ML (NumPy, TensorFlow, PyTorch), data science, automation",
+          "now": "PYTHON",
+          "moved_to_explanation": "interpreted, dynamically-typed, high-readability; dominant in ML (NumPy, TensorFlow, PyTorch), data science, automation"
+        }
+      ]
     },
     {
       "stem": "A COMPUTER VIRUS is:",
       "options": [
-        {"option_text": "A hardware failure", "is_correct": false},
-        {"option_text": "MALICIOUS SOFTWARE that replicates by modifying other programs; types include worms, trojans, ransomware, spyware, adware", "is_correct": true},
-        {"option_text": "A browser extension", "is_correct": false},
-        {"option_text": "A type of RAM", "is_correct": false}
+        {
+          "option_text": "A hardware failure",
+          "is_correct": false
+        },
+        {
+          "option_text": "MALICIOUS SOFTWARE that replicates by modifying other programs; types include worms, trojans, ransomware, spyware, adware",
+          "is_correct": true
+        },
+        {
+          "option_text": "A browser extension",
+          "is_correct": false
+        },
+        {
+          "option_text": "A type of RAM",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "COMPUTER VIRUS — malicious software that self-replicates by attaching itself to other programs. Broader category: MALWARE (MALicious softWARE). FIRST virus in wild: Creeper (1971, on ARPANET, not truly malicious). First PC virus: Brain (1986, Pakistani — Amjad + Basit Farooq Alvi, to protect their own software from piracy; went global accidentally). TYPES of MALWARE: (1) VIRUS — attaches to executables/files; spreads when user runs. (2) WORM — self-replicates across networks without human action; Morris Worm (1988 first big; ILOVEYOU 2000, Conficker 2008, WannaCry 2017, Stuxnet 2010). (3) TROJAN HORSE — disguised as legitimate software; doesn't self-replicate but delivers payload. Trickbot, Zeus. (4) RANSOMWARE — encrypts files, demands ransom in crypto. WannaCry (2017) hit 200,000 systems in 150 countries incl NHS UK, Indian banks; Petya/NotPetya (2017), Ryuk, REvil, LockBit. Pay 0.1-10 BTC. (5) SPYWARE — secretly monitors user; logs keystrokes, exfiltrates data. Pegasus (NSO Group, Israel — sold to governments; used to target journalists + dissidents; controversy 2021 Forbidden Stories + Amnesty exposure). (6) ADWARE — bombards ads; bundled in freeware. (7) ROOTKITS — hide deep in OS; hardest to remove. (8) BOTNETS — network of compromised 'zombie' computers controlled by attacker; used for DDoS, spam, crypto mining. Mirai (2016 IoT botnet). (9) KEYLOGGERS; (10) CRYPTOMINERS; (11) BACKDOORS; (12) SCAREWARE. PROTECTION: (1) ANTIVIRUS — Norton, McAfee, Kaspersky (Russian — banned in several countries since 2022), Bitdefender, Windows Defender (built-in free), Avast, ESET, Quick Heal (Indian). (2) FIREWALL — OS-built (Windows Defender Firewall) + network. (3) SOFTWARE UPDATES — patch security holes. (4) STRONG PASSWORDS + PASSWORD MANAGERS (LastPass, 1Password, Bitwarden). (5) 2FA / MFA (Two-Factor Authentication) — SMS/app-based OTP/security key. (6) BACKUPS — air-gapped or immutable cloud. (7) SAFE BROWSING — avoid suspicious links, verify URLs. (8) PHISHING awareness. (9) VPN for public Wi-Fi. (10) Don't use cracked software. MAJOR CYBER INCIDENTS: (1) Stuxnet (2010) — US-Israeli joint; destroyed Iranian nuclear centrifuges. (2) Sony Pictures hack (2014) — N. Korea, The Interview movie. (3) Equifax breach (2017) — 147M records. (4) AIIMS Delhi ransomware (Nov 2022) — ₹200 cr demand; 5 servers encrypted. (5) 2021 — Air India + Domino's India breaches. INDIA cyber governance: CERT-In (Indian Computer Emergency Response Team, under MeitY, est 2004) — monitors + responds; CYBER CRIME helpline 1930; NCIIPC (Critical Infrastructure); DIGITAL PERSONAL DATA PROTECTION (DPDP) ACT 2023 — privacy law; IT ACT 2000 — primary cyber law + amended. RBI Cyber Security Framework for banks. India 3rd largest cybercrime victim after US + China.",
@@ -197,13 +361,25 @@
     {
       "stem": "ARTIFICIAL INTELLIGENCE (AI) term was coined in 1956 by:",
       "options": [
-        {"option_text": "Alan Turing", "is_correct": false},
-        {"option_text": "JOHN McCARTHY — at the DARTMOUTH SUMMER RESEARCH PROJECT ON AI, widely regarded as the FOUNDING event of AI as a field", "is_correct": true},
-        {"option_text": "Marvin Minsky", "is_correct": false},
-        {"option_text": "Claude Shannon", "is_correct": false}
+        {
+          "option_text": "Alan Turing",
+          "is_correct": false
+        },
+        {
+          "option_text": "JOHN McCARTHY",
+          "is_correct": true
+        },
+        {
+          "option_text": "Marvin Minsky",
+          "is_correct": false
+        },
+        {
+          "option_text": "Claude Shannon",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ARTIFICIAL INTELLIGENCE (AI) — 'intelligence' exhibited by machines. TERM coined by JOHN MCCARTHY (Stanford + Dartmouth + MIT professor) for the 1956 DARTMOUTH SUMMER RESEARCH PROJECT ON AI — 6-8 week workshop at Dartmouth College (Hanover, New Hampshire); considered the FOUNDING event of AI as a field. ATTENDEES included: John McCarthy, Marvin Minsky (MIT), Claude Shannon (Bell Labs, information theory), Nathaniel Rochester (IBM), Allen Newell + Herbert Simon (CMU — later Nobel Econ + Turing). EARLIER: Alan Turing (1950) — 'Computing Machinery + Intelligence' paper + TURING TEST ('Can machines think?'). AI MILESTONES: (1) 1956 Dartmouth. (2) 1957 Perceptron (Rosenblatt) — first neural network. (3) 1966 ELIZA (Weizenbaum) — early chatbot. (4) 1970s-80s AI 'WINTERS' (funding + interest dried due to overpromising + under-delivery). (5) 1997 — IBM DEEP BLUE defeated world chess champion GARRY KASPAROV 3.5-2.5. (6) 2004 — DARPA Grand Challenge self-driving (no one finished initially). (7) 2011 — IBM WATSON won Jeopardy! vs Ken Jennings + Brad Rutter. (8) 2012 — DEEP LEARNING revolution; Krizhevsky-Sutskever-Hinton's AlexNet won ImageNet competition using GPUs + convolutional neural networks. (9) 2016 — GOOGLE DEEPMIND's ALPHAGO defeated world Go champion LEE SEDOL 4-1 (earlier Fan Hui). Go was considered untouchable by AI for decades. (10) 2017 — TRANSFORMER architecture paper 'Attention is All You Need' (Vaswani et al., Google). Foundation of LLMs. (11) 2018 — BERT (Google), GPT (OpenAI); rise of pretrained language models. (12) 2020 — AlphaFold2 (DeepMind) — 50-year-old protein-folding problem solved; Nobel Chemistry 2024 shared. (13) Nov 2022 — CHATGPT (OpenAI, GPT-3.5) released; mass adoption of generative AI. (14) 2023+ — explosion: GPT-4 (OpenAI), Claude (Anthropic — Dario + Daniela Amodei), Gemini (Google), Llama (Meta, open-source), Mistral (France), Grok (xAI). Stable Diffusion, Midjourney, DALL-E for images; Sora + Runway for video; Whisper for speech. TYPES OF AI: (1) ANI (Artificial Narrow Intelligence) — domain-specific (chess AI, image recognition, voice assistants); we are here. (2) AGI (Artificial General Intelligence) — human-level across domains; goal of OpenAI, DeepMind, Anthropic; not yet achieved. (3) ASI (Artificial Super Intelligence) — beyond human; hypothetical; existential concerns. SUBFIELDS: machine learning (ML), deep learning (neural networks), natural language processing (NLP), computer vision, robotics, reinforcement learning, generative AI, agent-based systems. INDIA: AI policy 'AI for ALL' by NITI Aayog; INDIAai portal; Bhashini (NLP for Indian languages); Digital Public Infrastructure (DPI) + AI intersection; GoI's IndiaAI Mission ₹10,372 cr approved 2024.",
+      "explanation": "ARTIFICIAL INTELLIGENCE (AI) — 'intelligence' exhibited by machines. TERM coined by JOHN MCCARTHY (Stanford + Dartmouth + MIT professor) for the 1956 DARTMOUTH SUMMER RESEARCH PROJECT ON AI — 6-8 week workshop at Dartmouth College (Hanover, New Hampshire); considered the FOUNDING event of AI as a field. ATTENDEES included: John McCarthy, Marvin Minsky (MIT), Claude Shannon (Bell Labs, information theory), Nathaniel Rochester (IBM), Allen Newell + Herbert Simon (CMU — later Nobel Econ + Turing). EARLIER: Alan Turing (1950) — 'Computing Machinery + Intelligence' paper + TURING TEST ('Can machines think?'). AI MILESTONES: (1) 1956 Dartmouth. (2) 1957 Perceptron (Rosenblatt) — first neural network. (3) 1966 ELIZA (Weizenbaum) — early chatbot. (4) 1970s-80s AI 'WINTERS' (funding + interest dried due to overpromising + under-delivery). (5) 1997 — IBM DEEP BLUE defeated world chess champion GARRY KASPAROV 3.5-2.5. (6) 2004 — DARPA Grand Challenge self-driving (no one finished initially). (7) 2011 — IBM WATSON won Jeopardy! vs Ken Jennings + Brad Rutter. (8) 2012 — DEEP LEARNING revolution; Krizhevsky-Sutskever-Hinton's AlexNet won ImageNet competition using GPUs + convolutional neural networks. (9) 2016 — GOOGLE DEEPMIND's ALPHAGO defeated world Go champion LEE SEDOL 4-1 (earlier Fan Hui). Go was considered untouchable by AI for decades. (10) 2017 — TRANSFORMER architecture paper 'Attention is All You Need' (Vaswani et al., Google). Foundation of LLMs. (11) 2018 — BERT (Google), GPT (OpenAI); rise of pretrained language models. (12) 2020 — AlphaFold2 (DeepMind) — 50-year-old protein-folding problem solved; Nobel Chemistry 2024 shared. (13) Nov 2022 — CHATGPT (OpenAI, GPT-3.5) released; mass adoption of generative AI. (14) 2023+ — explosion: GPT-4 (OpenAI), Claude (Anthropic — Dario + Daniela Amodei), Gemini (Google), Llama (Meta, open-source), Mistral (France), Grok (xAI). Stable Diffusion, Midjourney, DALL-E for images; Sora + Runway for video; Whisper for speech. TYPES OF AI: (1) ANI (Artificial Narrow Intelligence) — domain-specific (chess AI, image recognition, voice assistants); we are here. (2) AGI (Artificial General Intelligence) — human-level across domains; goal of OpenAI, DeepMind, Anthropic; not yet achieved. (3) ASI (Artificial Super Intelligence) — beyond human; hypothetical; existential concerns. SUBFIELDS: machine learning (ML), deep learning (neural networks), natural language processing (NLP), computer vision, robotics, reinforcement learning, generative AI, agent-based systems. INDIA: AI policy 'AI for ALL' by NITI Aayog; INDIAai portal; Bhashini (NLP for Indian languages); Digital Public Infrastructure (DPI) + AI intersection; GoI's IndiaAI Mission ₹10,372 cr approved 2024. at the DARTMOUTH SUMMER RESEARCH PROJECT ON AI, widely regarded as the FOUNDING event of AI as a field.",
       "subject": "General Knowledge",
       "topic": "Computer Fundamentals",
       "topic_code": "GK_COMPUTER_BASICS",
@@ -213,7 +389,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-comp-01",
       "generated_at": "2026-04-21T05:20:00+00:00",
-      "id": "sgk_GK_COMPUTER_BASICS_00010"
+      "id": "sgk_GK_COMPUTER_BASICS_00010",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "JOHN McCARTHY — at the DARTMOUTH SUMMER RESEARCH PROJECT ON AI, widely regarded as the FOUNDING event of AI as a field",
+          "now": "JOHN McCARTHY",
+          "moved_to_explanation": "at the DARTMOUTH SUMMER RESEARCH PROJECT ON AI, widely regarded as the FOUNDING event of AI as a field"
+        }
+      ]
     }
   ]
 }

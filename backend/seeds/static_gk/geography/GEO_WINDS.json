@@ -8,13 +8,25 @@
     {
       "stem": "The three global WIND SYSTEMS are the Trade Winds, Westerlies, and Polar Easterlies. Which wind system is responsible for the Indian MONSOON?",
       "options": [
-        {"option_text": "Polar Easterlies", "is_correct": false},
-        {"option_text": "Trade Winds (reversed as monsoon in summer)", "is_correct": true},
-        {"option_text": "Jet streams only", "is_correct": false},
-        {"option_text": "Westerlies", "is_correct": false}
+        {
+          "option_text": "Polar Easterlies",
+          "is_correct": false
+        },
+        {
+          "option_text": "Trade Winds",
+          "is_correct": true
+        },
+        {
+          "option_text": "Jet streams only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Westerlies",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "PERMANENT WINDS: (1) TRADE WINDS — blow from sub-tropical HIGH (30°N/S) towards the equatorial LOW (0°). Northeast Trades (N hemisphere) + Southeast Trades (S hemisphere). CORIOLIS EFFECT deflects them. Named 'Trade' because they helped sailing ships in colonial 'trade'. (2) WESTERLIES — blow from 30° to 60° latitude. Come from the west. Stronger in S hemisphere ('ROARING FORTIES', 'FURIOUS FIFTIES', 'SCREAMING SIXTIES' — due to fewer landmasses). (3) POLAR EASTERLIES — blow from polar highs toward sub-polar lows. INDIAN MONSOON = a DIFFERENTIAL HEATING phenomenon — in summer, the Indian subcontinent's massive landmass heats up faster than the Indian Ocean → LOW PRESSURE over land + HIGH PRESSURE over sea → the SE trades cross the equator (deflected to SW monsoon by Coriolis) and blow moist air onto the subcontinent (June-September). In winter, REVERSE: land cold → high pressure → NE monsoon blows dry air OUTWARD from land to sea. Monsoon is technically a SEASONAL REVERSAL of winds.",
+      "explanation": "PERMANENT WINDS: (1) TRADE WINDS — blow from sub-tropical HIGH (30°N/S) towards the equatorial LOW (0°). Northeast Trades (N hemisphere) + Southeast Trades (S hemisphere). CORIOLIS EFFECT deflects them. Named 'Trade' because they helped sailing ships in colonial 'trade'. (2) WESTERLIES — blow from 30° to 60° latitude. Come from the west. Stronger in S hemisphere ('ROARING FORTIES', 'FURIOUS FIFTIES', 'SCREAMING SIXTIES' — due to fewer landmasses). (3) POLAR EASTERLIES — blow from polar highs toward sub-polar lows. INDIAN MONSOON = a DIFFERENTIAL HEATING phenomenon — in summer, the Indian subcontinent's massive landmass heats up faster than the Indian Ocean → LOW PRESSURE over land + HIGH PRESSURE over sea → the SE trades cross the equator (deflected to SW monsoon by Coriolis) and blow moist air onto the subcontinent (June-September). In winter, REVERSE: land cold → high pressure → NE monsoon blows dry air OUTWARD from land to sea. Monsoon is technically a SEASONAL REVERSAL of winds. reversed as monsoon in summer.",
       "subject": "Geography",
       "topic": "Climatology - Pressure & Winds",
       "topic_code": "GEO_WINDS",
@@ -24,18 +36,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-geo-winds-01",
       "generated_at": "2026-04-20T22:30:00+00:00",
-      "id": "sgk_GEO_WINDS_00005"
+      "id": "sgk_GEO_WINDS_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Trade Winds (reversed as monsoon in summer)",
+          "now": "Trade Winds",
+          "moved_to_explanation": "reversed as monsoon in summer"
+        }
+      ]
     },
     {
       "stem": "The 'LOO' is a hot, dry wind experienced in which region, during which season?",
       "options": [
-        {"option_text": "Himalayan foothills; winter", "is_correct": false},
-        {"option_text": "Northwest India (Rajasthan, Punjab, Haryana, UP, Delhi); summer (May-June)", "is_correct": true},
-        {"option_text": "Coastal Tamil Nadu; monsoon", "is_correct": false},
-        {"option_text": "Central Maharashtra; spring", "is_correct": false}
+        {
+          "option_text": "Himalayan foothills; winter",
+          "is_correct": false
+        },
+        {
+          "option_text": "Northwest India (Rajasthan, Punjab, Haryana, UP, Delhi)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Coastal Tamil Nadu; monsoon",
+          "is_correct": false
+        },
+        {
+          "option_text": "Central Maharashtra; spring",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "LOO — a hot, dry, dusty wind blowing westerly/northwesterly over the PLAINS of northwestern India + Pakistan. Mostly May-June. Temperatures 45-50°C. Can cause heat strokes. Plants wilt; groundwater dries. Contrary to normal afternoon cooling, Loo afternoons are the hottest. Other LOCAL WINDS in India: (1) KALBAISAKHI / NORWESTERS — sudden violent thunderstorms in WB + Assam pre-monsoon (April-May). Also called 'Bardoli Chheerha' in Assam. Brings relief from heat + some rain for tea crops. (2) MANGO SHOWERS — pre-monsoon summer showers in KA, Kerala, Coastal AP (April-May) — help mango flowering, hence the name. (3) BLOSSOM / CHERRY BLOSSOM SHOWERS — Kerala, KA post-picking summer showers on coffee plantations (April-May — similar). (4) ANDHI — hot dust storms in Rajasthan. WORLD LOCAL WINDS: CHINOOK (Rockies, warm + dry — 'snow-eater'), FOEHN (Alps — analogous), MISTRAL (France, cold N wind), SIROCCO (N Africa, hot dry), HARMATTAN (W Africa, dry), ZONDA (Andes), SIMOOM (Arabia), KHAMSIN (Egypt), BORA (Adriatic, cold NE), BRICKFIELDER (Aus, hot dry).",
+      "explanation": "LOO — a hot, dry, dusty wind blowing westerly/northwesterly over the PLAINS of northwestern India + Pakistan. Mostly May-June. Temperatures 45-50°C. Can cause heat strokes. Plants wilt; groundwater dries. Contrary to normal afternoon cooling, Loo afternoons are the hottest. Other LOCAL WINDS in India: (1) KALBAISAKHI / NORWESTERS — sudden violent thunderstorms in WB + Assam pre-monsoon (April-May). Also called 'Bardoli Chheerha' in Assam. Brings relief from heat + some rain for tea crops. (2) MANGO SHOWERS — pre-monsoon summer showers in KA, Kerala, Coastal AP (April-May) — help mango flowering, hence the name. (3) BLOSSOM / CHERRY BLOSSOM SHOWERS — Kerala, KA post-picking summer showers on coffee plantations (April-May — similar). (4) ANDHI — hot dust storms in Rajasthan. WORLD LOCAL WINDS: CHINOOK (Rockies, warm + dry — 'snow-eater'), FOEHN (Alps — analogous), MISTRAL (France, cold N wind), SIROCCO (N Africa, hot dry), HARMATTAN (W Africa, dry), ZONDA (Andes), SIMOOM (Arabia), KHAMSIN (Egypt), BORA (Adriatic, cold NE), BRICKFIELDER (Aus, hot dry). summer (May-June).",
       "subject": "Geography",
       "topic": "Climatology - Pressure & Winds",
       "topic_code": "GEO_WINDS",
@@ -45,15 +77,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-geo-winds-01",
       "generated_at": "2026-04-20T22:30:00+00:00",
-      "id": "sgk_GEO_WINDS_00006"
+      "id": "sgk_GEO_WINDS_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Northwest India (Rajasthan, Punjab, Haryana, UP, Delhi); summer (May-June)",
+          "now": "Northwest India (Rajasthan, Punjab, Haryana, UP, Delhi)",
+          "moved_to_explanation": "summer (May-June)"
+        }
+      ]
     },
     {
       "stem": "The CHINOOK wind — warm + dry, known as the 'SNOW-EATER' — blows down the leeward side of which mountain range?",
       "options": [
-        {"option_text": "Alps in Europe", "is_correct": false},
-        {"option_text": "Rocky Mountains in North America", "is_correct": true},
-        {"option_text": "Andes in South America", "is_correct": false},
-        {"option_text": "Himalayas", "is_correct": false}
+        {
+          "option_text": "Alps in Europe",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rocky Mountains in North America",
+          "is_correct": true
+        },
+        {
+          "option_text": "Andes in South America",
+          "is_correct": false
+        },
+        {
+          "option_text": "Himalayas",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "CHINOOK — warm, dry wind on the EASTERN (leeward) slopes of the ROCKY MOUNTAINS in the USA + Canada. Can raise temperatures by 20-30°C within hours (especially in winter), melting snow rapidly — hence 'SNOW-EATER'. Forms when a moist Pacific air mass rises on the western slopes (loses moisture as rain/snow), then descends dry on the eastern slopes — compression heats it (adiabatic warming: ~10°C/km for dry air). Similar FOEHN WINDS occur worldwide on leeward sides: FOEHN (Alps — German original name, which 'chinook' loosely translates), CHINOOK (Rockies), BERG (South Africa), ZONDA (Andes). KATABATIC WINDS — cold winds flowing downhill by gravity (denser cold air) — include MISTRAL (Alps → Rhone valley → Mediterranean, cold NW, France), BORA (Dalmatia coast, cold NE from Balkans to Adriatic), FALL WINDS on Antarctic coast. HURRICANES / CYCLONES / TYPHOONS: region-specific names for the same phenomenon — tropical cyclones. Atlantic + NE Pacific = 'hurricane'; NW Pacific = 'typhoon'; Indian Ocean + South Pacific = 'cyclone'.",
@@ -71,10 +123,22 @@
     {
       "stem": "The CORIOLIS FORCE — an APPARENT force caused by Earth's rotation — deflects winds (and ocean currents) to the RIGHT in the Northern Hemisphere and to the LEFT in the Southern Hemisphere. Where is Coriolis effect ZERO?",
       "options": [
-        {"option_text": "North Pole", "is_correct": false},
-        {"option_text": "At the EQUATOR (latitude 0°)", "is_correct": true},
-        {"option_text": "Tropic of Cancer", "is_correct": false},
-        {"option_text": "At 45° latitude", "is_correct": false}
+        {
+          "option_text": "North Pole",
+          "is_correct": false
+        },
+        {
+          "option_text": "At the EQUATOR",
+          "is_correct": true
+        },
+        {
+          "option_text": "Tropic of Cancer",
+          "is_correct": false
+        },
+        {
+          "option_text": "At 45° latitude",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "CORIOLIS EFFECT — an apparent deflection of moving objects (air, water, projectiles) as observed from a rotating frame (Earth). Magnitude proportional to sin(latitude) × velocity × 2ω (ω = Earth's angular velocity). ZERO at the EQUATOR (latitude 0°). MAXIMUM at the POLES (latitude 90°). In N Hemisphere: deflects to the RIGHT. In S Hemisphere: deflects to the LEFT. CONSEQUENCES: (1) Tropical cyclones rotate counterclockwise in N and clockwise in S hemispheres; (2) They DON'T form within ~5° of the equator (too little Coriolis); (3) Trade winds deflect from northward/southward to become NE trades (N hem) + SE trades (S hem); (4) Bullet trajectories curve over long distances. Named after Gaspard-Gustave de Coriolis (French, 1835). Myth: toilet/sink water drains in opposite directions N vs S hemispheres — FALSE for small basins (effect too weak; drain direction depends on basin shape).",
@@ -87,15 +151,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-geo-winds-01",
       "generated_at": "2026-04-20T22:30:00+00:00",
-      "id": "sgk_GEO_WINDS_00008"
+      "id": "sgk_GEO_WINDS_00008",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "At the EQUATOR (latitude 0°)",
+          "now": "At the EQUATOR",
+          "moved_to_explanation": "latitude 0°"
+        }
+      ]
     },
     {
       "stem": "The Indian SUMMER MONSOON enters India from which direction, and which branch is formed by the Western Ghats' orographic effect?",
       "options": [
-        {"option_text": "NE direction; Arabian Sea branch", "is_correct": false},
-        {"option_text": "SOUTHWEST direction; ARABIAN SEA branch strikes Kerala first (~1 June), Western Ghats force uplift → heavy rain on windward slopes", "is_correct": true},
-        {"option_text": "West direction; Bay of Bengal branch", "is_correct": false},
-        {"option_text": "Easterly; from China", "is_correct": false}
+        {
+          "option_text": "NE direction; Arabian Sea branch",
+          "is_correct": false
+        },
+        {
+          "option_text": "SOUTHWEST direction; ARABIAN SEA branch strikes Kerala first (~1 June), Western Ghats force uplift → heavy rain on windward slopes",
+          "is_correct": true
+        },
+        {
+          "option_text": "West direction; Bay of Bengal branch",
+          "is_correct": false
+        },
+        {
+          "option_text": "Easterly; from China",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "INDIAN SUMMER MONSOON (SW Monsoon, June-September) has TWO BRANCHES from the Indian Ocean: (1) ARABIAN SEA BRANCH — strikes Kerala coast first around 1 June (official 'monsoon onset'). Moves up the west coast, hits WESTERN GHATS which force it to rise → OROGRAPHIC / RELIEF RAIN on the windward (western) slopes — Mahabaleshwar, Amboli, Agumbe (Karnataka's 'Cherrapunji of the South' — ~7000 mm/year), Western Ghats spine. Rain shadow (leeward side) → Deccan plateau gets much less rain. (2) BAY OF BENGAL BRANCH — reaches NE India first, deflected by Arakan Yoma + Meghalaya hills → strikes Khasi Hills (MAWSYNRAM — Earth's wettest place, ~11,872mm/year; CHERRAPUNJI — #2). Then curves up Ganga plain from east to west. ONSET dates (normal): Kerala 1 June → Mumbai 10 June → Delhi 27 June → NW India/Punjab 1 July. WITHDRAWAL: reverse order, starting NW India early September to full withdrawal by mid-October. IMD officially records monsoon start/end dates every year.",
@@ -113,10 +197,22 @@
     {
       "stem": "The 'ROARING FORTIES', 'FURIOUS FIFTIES', and 'SCREAMING SIXTIES' refer to:",
       "options": [
-        {"option_text": "Nautical miles per hour", "is_correct": false},
-        {"option_text": "Strong WESTERLIES in the SOUTHERN HEMISPHERE between 40°-60° latitudes", "is_correct": true},
-        {"option_text": "Speeds of Indian monsoon winds", "is_correct": false},
-        {"option_text": "Colours of sea at different depths", "is_correct": false}
+        {
+          "option_text": "Nautical miles per hour",
+          "is_correct": false
+        },
+        {
+          "option_text": "Strong WESTERLIES in the SOUTHERN HEMISPHERE between 40°-60° latitudes",
+          "is_correct": true
+        },
+        {
+          "option_text": "Speeds of Indian monsoon winds",
+          "is_correct": false
+        },
+        {
+          "option_text": "Colours of sea at different depths",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "'ROARING FORTIES' (40-50°S), 'FURIOUS FIFTIES' (50-60°S), 'SCREAMING SIXTIES' (60-70°S) — strong westerly winds in the SOUTHERN HEMISPHERE Mid-latitudes. These winds are much more intense than their N hemisphere counterparts because: (1) less LAND in S hemisphere to create friction (90% of mid-latitude S hem is OCEAN — big open water bodies); (2) more uninterrupted fetch → winds build up. Sailors historically used Roaring Forties for SW Passage / fast east-bound voyages around the Cape of Good Hope (Africa) or Cape Horn (S America). Still dangerous for shipping. Home to many famous ocean disasters. In N hemisphere, the 40-60° zone is mostly LAND (Eurasia + N America), so winds are moderated. The ANTARCTIC CIRCUMPOLAR CURRENT (ACC) — driven by these westerlies — is the largest ocean current in the world (~125 Sverdrups). Also called the 'WEST WIND DRIFT'. No continents obstruct it.",
@@ -134,13 +230,25 @@
     {
       "stem": "The 'HORSE LATITUDES' refer to:",
       "options": [
-        {"option_text": "Latitudes near the equator with no winds (Doldrums)", "is_correct": false},
-        {"option_text": "SUBTROPICAL HIGH PRESSURE belts at ~30° N/S where winds are CALM / variable and descending air causes DRY conditions (most deserts here)", "is_correct": true},
-        {"option_text": "Latitudes where horses naturally migrate", "is_correct": false},
-        {"option_text": "Polar regions", "is_correct": false}
+        {
+          "option_text": "Latitudes near the equator with no winds (Doldrums)",
+          "is_correct": false
+        },
+        {
+          "option_text": "SUBTROPICAL HIGH PRESSURE belts at ~30° N/S where winds are CALM / variable and descending air causes DRY conditions",
+          "is_correct": true
+        },
+        {
+          "option_text": "Latitudes where horses naturally migrate",
+          "is_correct": false
+        },
+        {
+          "option_text": "Polar regions",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "HORSE LATITUDES — 30° N and 30° S latitudes — regions of SUBTROPICAL HIGH PRESSURE, where air descends (from equatorial ascent) and winds are CALM / light / variable. Descending air is COMPRESSED + WARMED → LOW HUMIDITY → clear skies + DRY conditions. Home to MOST of the world's great DESERTS: Sahara (Africa, 30°N), Thar (India), Arabian (Arabia), Gobi (Mongolia, slightly higher), Mexican, Great Victoria (Aus), Kalahari + Namib (S Africa, 30°S), Patagonian, Atacama (Chile). NAME ORIGIN: Sailing ships would be becalmed here for weeks — to save water, sailors threw HORSES (cargo) overboard. Also called the 'Calms of Cancer/Capricorn'. Adjacent zones: EQUATORIAL CALMS = DOLDRUMS / ITCZ (Intertropical Convergence Zone) — where trade winds meet, low pressure, ascending air, heavy rains (equatorial rainforests: Amazon, Congo, Indonesian). Polar regions also have SUBSIDING cold air → dry (Antarctica = technically largest desert). POLAR FRONTS at 60° latitude — low pressure, stormy — birthplace of mid-latitude cyclones.",
+      "explanation": "HORSE LATITUDES — 30° N and 30° S latitudes — regions of SUBTROPICAL HIGH PRESSURE, where air descends (from equatorial ascent) and winds are CALM / light / variable. Descending air is COMPRESSED + WARMED → LOW HUMIDITY → clear skies + DRY conditions. Home to MOST of the world's great DESERTS: Sahara (Africa, 30°N), Thar (India), Arabian (Arabia), Gobi (Mongolia, slightly higher), Mexican, Great Victoria (Aus), Kalahari + Namib (S Africa, 30°S), Patagonian, Atacama (Chile). NAME ORIGIN: Sailing ships would be becalmed here for weeks — to save water, sailors threw HORSES (cargo) overboard. Also called the 'Calms of Cancer/Capricorn'. Adjacent zones: EQUATORIAL CALMS = DOLDRUMS / ITCZ (Intertropical Convergence Zone) — where trade winds meet, low pressure, ascending air, heavy rains (equatorial rainforests: Amazon, Congo, Indonesian). Polar regions also have SUBSIDING cold air → dry (Antarctica = technically largest desert). POLAR FRONTS at 60° latitude — low pressure, stormy — birthplace of mid-latitude cyclones. most deserts here.",
       "subject": "Geography",
       "topic": "Climatology - Pressure & Winds",
       "topic_code": "GEO_WINDS",
@@ -150,15 +258,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-geo-winds-01",
       "generated_at": "2026-04-20T22:30:00+00:00",
-      "id": "sgk_GEO_WINDS_00011"
+      "id": "sgk_GEO_WINDS_00011",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "SUBTROPICAL HIGH PRESSURE belts at ~30° N/S where winds are CALM / variable and descending air causes DRY conditions (most deserts here)",
+          "now": "SUBTROPICAL HIGH PRESSURE belts at ~30° N/S where winds are CALM / variable and descending air causes DRY conditions",
+          "moved_to_explanation": "most deserts here"
+        }
+      ]
     },
     {
       "stem": "The SAHARA DESERT in Africa is kept extremely dry due to which major atmospheric feature?",
       "options": [
-        {"option_text": "Ocean currents only", "is_correct": false},
-        {"option_text": "Subtropical HIGH PRESSURE belt at ~30°N (Horse Latitudes) causing descending dry air", "is_correct": true},
-        {"option_text": "Rain shadow of the Rockies", "is_correct": false},
-        {"option_text": "Polar vortex influence", "is_correct": false}
+        {
+          "option_text": "Ocean currents only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Subtropical HIGH PRESSURE belt at ~30°N (Horse Latitudes) causing descending dry air",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rain shadow of the Rockies",
+          "is_correct": false
+        },
+        {
+          "option_text": "Polar vortex influence",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "SAHARA DESERT dryness: primarily due to the SUBTROPICAL HIGH PRESSURE BELT at ~30°N latitude (Horse Latitudes) — subsiding dry air from the HADLEY CELL circulation. Sahara sits right under this zone. Secondary factors: cold CANARY CURRENT off the west African coast (cold water → less evaporation → less rain over land); huge distance from moisture sources (interior Africa); Atlas Mountains + Red Sea create additional barriers. Sahara is ~9.2 million km² — larger than continental USA — and the 3rd-largest desert globally (after Antarctic + Arctic polar deserts). HOTTEST recorded temperature on Earth: Furnace Creek, Death Valley (56.7°C, 1913) — though some Sahara sites have come close. HADLEY CELL — tropical atmospheric circulation cell from 0° to ~30°; responsible for tropical rains AND subtropical deserts (0°=rising, 30°=sinking). FERREL CELL (30°-60°) + POLAR CELL (60°-90°) — other global circulation cells. IRONY of Sahara: used to be a lush savannah with lakes as recently as 6000 years ago (Holocene Green Sahara).",

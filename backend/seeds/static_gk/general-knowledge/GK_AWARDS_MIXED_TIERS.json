@@ -79,7 +79,7 @@
           "is_correct": false
         },
         {
-          "option_text": "Literature (in any scheduled Indian language)",
+          "option_text": "Literature",
           "is_correct": true
         },
         {
@@ -92,7 +92,7 @@
         }
       ],
       "correct_letter": "B",
-      "explanation": "Jnanpith (instituted 1961, first awarded 1965) — India's highest literary honour. Instituted by the Sahu Jain family (Bharatiya Jnanpith). First recipient: G. Sankara Kurup (Malayalam). Author must work in any Eighth-Schedule language.",
+      "explanation": "Jnanpith (instituted 1961, first awarded 1965) — India's highest literary honour. Instituted by the Sahu Jain family (Bharatiya Jnanpith). First recipient: G. Sankara Kurup (Malayalam). Author must work in any Eighth-Schedule language. in any scheduled Indian language.",
       "subject": "General Knowledge",
       "topic": "Indian Awards & Honours — mixed tiers",
       "topic_code": "GK_AWARDS_MIXED_TIERS",
@@ -102,7 +102,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-21-gk-aw-03",
       "generated_at": "2026-04-21T18:45:00+00:00",
-      "id": "sgk_GK_AWARDS_MIXED_TIERS_00003"
+      "id": "sgk_GK_AWARDS_MIXED_TIERS_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Literature (in any scheduled Indian language)",
+          "now": "Literature",
+          "moved_to_explanation": "in any scheduled Indian language"
+        }
+      ]
     },
     {
       "stem": "The 'Arjuna Award' in India is given for:",

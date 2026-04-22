@@ -8,13 +8,25 @@
     {
       "stem": "The modern periodic table is arranged by:",
       "options": [
-        {"option_text": "Atomic mass (as Mendeleev originally proposed)", "is_correct": false},
-        {"option_text": "Atomic number (the Moseley arrangement)", "is_correct": true},
-        {"option_text": "Valency alone", "is_correct": false},
-        {"option_text": "Density", "is_correct": false}
+        {
+          "option_text": "Atomic mass (as Mendeleev originally proposed)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Atomic number",
+          "is_correct": true
+        },
+        {
+          "option_text": "Valency alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Density",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "DMITRI MENDELEEV (1869) first arranged elements by ATOMIC MASS — his periodic table had anomalies like Ar-K, Co-Ni, Te-I pairs where mass order didn't match chemical behaviour. Henry MOSELEY (1913) discovered that arranging by ATOMIC NUMBER (Z — number of protons) resolves ALL such anomalies — formulated the 'Periodic Law': physical and chemical properties are periodic functions of atomic number. Modern periodic table has 118 confirmed elements (last 4 — Nh Nihonium 113, Mc Moscovium 115, Ts Tennessine 117, Og Oganesson 118 — added Nov 2016). 7 PERIODS (rows) and 18 GROUPS (columns). s-block (Gp 1-2), p-block (Gp 13-18), d-block (Gp 3-12, transition metals), f-block (lanthanides + actinides).",
+      "explanation": "DMITRI MENDELEEV (1869) first arranged elements by ATOMIC MASS — his periodic table had anomalies like Ar-K, Co-Ni, Te-I pairs where mass order didn't match chemical behaviour. Henry MOSELEY (1913) discovered that arranging by ATOMIC NUMBER (Z — number of protons) resolves ALL such anomalies — formulated the 'Periodic Law': physical and chemical properties are periodic functions of atomic number. Modern periodic table has 118 confirmed elements (last 4 — Nh Nihonium 113, Mc Moscovium 115, Ts Tennessine 117, Og Oganesson 118 — added Nov 2016). 7 PERIODS (rows) and 18 GROUPS (columns). s-block (Gp 1-2), p-block (Gp 13-18), d-block (Gp 3-12, transition metals), f-block (lanthanides + actinides). the Moseley arrangement.",
       "subject": "Chemistry",
       "topic": "Periodic Table & Periodicity",
       "topic_code": "CHE_PERIODIC_TABLE",
@@ -24,15 +36,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-che-pt-01",
       "generated_at": "2026-04-20T14:45:00+00:00",
-      "id": "sgk_CHE_PERIODIC_TABLE_00002"
+      "id": "sgk_CHE_PERIODIC_TABLE_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Atomic number (the Moseley arrangement)",
+          "now": "Atomic number",
+          "moved_to_explanation": "the Moseley arrangement"
+        }
+      ]
     },
     {
       "stem": "The 'Noble Gases' (Group 18) are characterised by:",
       "options": [
-        {"option_text": "Extreme reactivity", "is_correct": false},
-        {"option_text": "Full outer electron shell → very low chemical reactivity", "is_correct": true},
-        {"option_text": "Low ionisation energy", "is_correct": false},
-        {"option_text": "Strong metallic character", "is_correct": false}
+        {
+          "option_text": "Extreme reactivity",
+          "is_correct": false
+        },
+        {
+          "option_text": "Full outer electron shell → very low chemical reactivity",
+          "is_correct": true
+        },
+        {
+          "option_text": "Low ionisation energy",
+          "is_correct": false
+        },
+        {
+          "option_text": "Strong metallic character",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "NOBLE GASES (Group 18 / VIIIA / Inert gases): Helium, Neon, Argon, Krypton, Xenon, Radon (radioactive), Oganesson (super-heavy). Fully filled valence shell (He has 2 electrons — 1s²; others have 8 — ns² np⁶). Octet rule → extremely stable → inert under normal conditions. HIGHEST ionisation energy in each period. Abundance in air: N₂ (78%) > O₂ (21%) > ARGON (~0.93% — most abundant noble gas in air) > CO₂ (0.04%) > Ne + He + Kr + Xe (trace). Uses: HELIUM (balloons, MRI, low-temp cooling — non-flammable unlike hydrogen); NEON (advertising signs, red-orange colour); ARGON (inert gas shield for welding, light bulb filament filling); KRYPTON (runway lighting); XENON (car headlights, xenon arc lamps); RADON (health hazard in basements). Though 'inert', Xe can form XeF₂, XeF₄, XeF₆ etc. under specific conditions (discovered 1962 by Bartlett).",
@@ -50,10 +82,22 @@
     {
       "stem": "Moving LEFT TO RIGHT across a period in the periodic table, which of the following GENERALLY INCREASES?",
       "options": [
-        {"option_text": "Atomic radius", "is_correct": false},
-        {"option_text": "Electronegativity and ionisation energy", "is_correct": true},
-        {"option_text": "Metallic character", "is_correct": false},
-        {"option_text": "Number of electron shells", "is_correct": false}
+        {
+          "option_text": "Atomic radius",
+          "is_correct": false
+        },
+        {
+          "option_text": "Electronegativity and ionisation energy",
+          "is_correct": true
+        },
+        {
+          "option_text": "Metallic character",
+          "is_correct": false
+        },
+        {
+          "option_text": "Number of electron shells",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Periodic trends — across a PERIOD (left to right): (a) Atomic number ↑ (trivially); (b) ATOMIC RADIUS ↓ (effective nuclear charge increases, pulls electrons closer); (c) IONISATION ENERGY ↑ (harder to remove valence electron); (d) ELECTRONEGATIVITY ↑ (F is most electronegative, 3.98 on Pauling scale; noble gases excluded from scale); (e) ELECTRON AFFINITY ↑ (Cl has highest); (f) METALLIC CHARACTER ↓ (metal to non-metal transition); (g) Non-metallic character ↑; (h) Oxidation number ↑; (i) Number of shells UNCHANGED within a period. Down a GROUP: atomic radius ↑, metallic character ↑, ionisation energy ↓, electronegativity ↓.",
@@ -71,10 +115,22 @@
     {
       "stem": "Which element has the HIGHEST electronegativity on the Pauling scale?",
       "options": [
-        {"option_text": "Chlorine", "is_correct": false},
-        {"option_text": "Fluorine", "is_correct": true},
-        {"option_text": "Oxygen", "is_correct": false},
-        {"option_text": "Nitrogen", "is_correct": false}
+        {
+          "option_text": "Chlorine",
+          "is_correct": false
+        },
+        {
+          "option_text": "Fluorine",
+          "is_correct": true
+        },
+        {
+          "option_text": "Oxygen",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nitrogen",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Electronegativity order (Pauling scale): F (3.98) > O (3.44) > Cl (3.16) ≈ N (3.04) > Br (2.96) > I (2.66) > S (2.58) > C (2.55) > H (2.20). FLUORINE is the MOST ELECTRONEGATIVE element (top-right, just before Ne). It's also the smallest halogen with highest electron affinity in practice (Cl has numerically higher electron affinity due to F's small size causing repulsion). LOWEST electronegativity: FRANCIUM (0.7) in Group 1 (bottom-left — most metallic, largest atom of stable elements). Noble gases (He, Ne, Ar) are generally not assigned electronegativities on the Pauling scale as they don't commonly form bonds. Trend mnemonic: 'FONCL BrISCH' for top-9 most electronegative.",
@@ -92,10 +148,22 @@
     {
       "stem": "The LANTHANIDES (rare earth elements) occupy which positions in the periodic table?",
       "options": [
-        {"option_text": "Group 3, Period 4 (4th row)", "is_correct": false},
-        {"option_text": "The separate bottom row (Period 6), elements 57 (La) to 71 (Lu)", "is_correct": true},
-        {"option_text": "Group 18 (Noble gases)", "is_correct": false},
-        {"option_text": "Period 7, bottom row", "is_correct": false}
+        {
+          "option_text": "Group 3, Period 4 (4th row)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The separate bottom row (Period 6), elements 57 (La) to 71 (Lu)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Group 18 (Noble gases)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Period 7, bottom row",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "LANTHANIDES (also called 'rare earths' though not actually rare in Earth's crust) — 15 elements from LANTHANUM (La, atomic number 57) to LUTETIUM (Lu, Z=71). Technically 14 + La = 15. Placed SEPARATELY at the bottom to avoid stretching the main table. f-block elements — their 4f orbitals are being filled. Part of Period 6. ACTINIDES (Z=89 Ac to 103 Lr) are the corresponding f-block Period 7 — all RADIOACTIVE, includes Uranium (Z=92), Plutonium (Z=94). Transuranic = beyond U (synthetic). India's significant rare-earth reserves: KERALA beach monazite sands (Th, LREE) — one of the world's richest. IREL (India Rare Earths Ltd) extracts these. Rare-earths critical for magnets (Nd-Fe-B), phosphors, batteries, EVs.",
@@ -113,10 +181,22 @@
     {
       "stem": "Which element is named after India — the first chemical element named after an Asian country?",
       "options": [
-        {"option_text": "Einsteinium", "is_correct": false},
-        {"option_text": "Indium", "is_correct": true},
-        {"option_text": "Gallium", "is_correct": false},
-        {"option_text": "Mendelevium", "is_correct": false}
+        {
+          "option_text": "Einsteinium",
+          "is_correct": false
+        },
+        {
+          "option_text": "Indium",
+          "is_correct": true
+        },
+        {
+          "option_text": "Gallium",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mendelevium",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "INDIUM (In, atomic number 49, Group 13) was discovered in 1863 by German chemists Ferdinand Reich and Hieronymous Theodor Richter at Freiberg. Named after the INDIGO (deep blue) colour line in its atomic emission spectrum — indirectly named after 'India'. Uses: transparent conductive indium tin oxide (ITO — used in all LCD/OLED screens, smartphones), low-melting alloys, solders. Other country-origin element names: GERMANIUM (Germany, Winkler 1886), GALLIUM (Gallia = Latin for France, Boisbaudran 1875), POLONIUM (Poland — Marie Curie named after her homeland, 1898), FRANCIUM (France — Marguerite Perey 1939), AMERICIUM (Americas), CALIFORNIUM (California), RUTHENIUM (Rus — Russia), EUROPIUM, COPERNICIUM, FLEROVIUM, DUBNIUM, TENNESSINE, NIHONIUM (Japan), MOSCOVIUM. Person-named: EINSTEINIUM, FERMIUM, MENDELEVIUM, BOHRIUM, SEABORGIUM, RUTHERFORDIUM etc.",
@@ -134,10 +214,22 @@
     {
       "stem": "Which element has the symbol 'Au' and atomic number 79?",
       "options": [
-        {"option_text": "Silver", "is_correct": false},
-        {"option_text": "Gold", "is_correct": true},
-        {"option_text": "Aluminium", "is_correct": false},
-        {"option_text": "Argon", "is_correct": false}
+        {
+          "option_text": "Silver",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gold",
+          "is_correct": true
+        },
+        {
+          "option_text": "Aluminium",
+          "is_correct": false
+        },
+        {
+          "option_text": "Argon",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "GOLD — symbol Au (from Latin 'aurum' = shining dawn), atomic number 79. Transition metal (Group 11, Period 6). Latin-origin element symbols students must know: Au (Aurum — Gold), Ag (Argentum — Silver), Cu (Cuprum — Copper), Fe (Ferrum — Iron), Pb (Plumbum — Lead), Sn (Stannum — Tin), Hg (Hydrargyrum — Mercury, 'liquid silver'), K (Kalium — Potassium), Na (Natrium — Sodium), Sb (Stibium — Antimony), W (Wolfram — Tungsten). Greek-origin: many. Trivia: Gold is the most malleable/ductile metal — 1 gram can be drawn into 2.4 km of wire, or hammered into 1 m² sheet.",

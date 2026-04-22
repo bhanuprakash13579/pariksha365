@@ -376,7 +376,7 @@
           "is_correct": false
         },
         {
-          "option_text": "Vitamin D (and consequent impaired calcium absorption)",
+          "option_text": "Vitamin D",
           "is_correct": true
         },
         {
@@ -389,7 +389,7 @@
         }
       ],
       "correct_letter": "B",
-      "explanation": "Rickets (children, before epiphyseal plate closure — bowing of legs, rachitic rosary, widened wrists) and osteomalacia (adults, with already-closed epiphyses — diffuse bone pain, pseudo-fractures) are the SAME underlying deficiency — Vitamin D — expressed at different ages. Low D reduces intestinal calcium absorption and renal calcium reabsorption, so bones demineralise despite adequate calcium intake. Pure dietary calcium deficiency can cause similar symptoms in extreme cases but is rare because dairy and leafy greens supply enough; the exam's canonical answer is D. B₁₂ and iron cause anaemia, not bone-softening syndromes.",
+      "explanation": "Rickets (children, before epiphyseal plate closure — bowing of legs, rachitic rosary, widened wrists) and osteomalacia (adults, with already-closed epiphyses — diffuse bone pain, pseudo-fractures) are the SAME underlying deficiency — Vitamin D — expressed at different ages. Low D reduces intestinal calcium absorption and renal calcium reabsorption, so bones demineralise despite adequate calcium intake. Pure dietary calcium deficiency can cause similar symptoms in extreme cases but is rare because dairy and leafy greens supply enough; the exam's canonical answer is D. B₁₂ and iron cause anaemia, not bone-softening syndromes. and consequent impaired calcium absorption.",
       "subject": "Biology",
       "topic": "Vitamins — Deficiencies, Sources & Chemistry",
       "topic_code": "BIO_VITAMINS_DEFICIENCIES",
@@ -399,7 +399,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-19-bio-vitamins-def-01",
       "generated_at": "2026-04-19T15:44:12+00:00",
-      "id": "sgk_BIO_VITAMINS_DEFICIENCIES_00012"
+      "id": "sgk_BIO_VITAMINS_DEFICIENCIES_00012",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Vitamin D (and consequent impaired calcium absorption)",
+          "now": "Vitamin D",
+          "moved_to_explanation": "and consequent impaired calcium absorption"
+        }
+      ]
     },
     {
       "stem": "Which pair of vitamins functions PRIMARILY as an ANTIOXIDANT in the human body?",

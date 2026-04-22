@@ -8,10 +8,22 @@
     {
       "stem": "The World Health Organization (WHO) is headquartered at:",
       "options": [
-        {"option_text": "New York", "is_correct": false},
-        {"option_text": "Geneva, Switzerland", "is_correct": true},
-        {"option_text": "Paris", "is_correct": false},
-        {"option_text": "Brussels", "is_correct": false}
+        {
+          "option_text": "New York",
+          "is_correct": false
+        },
+        {
+          "option_text": "Geneva, Switzerland",
+          "is_correct": true
+        },
+        {
+          "option_text": "Paris",
+          "is_correct": false
+        },
+        {
+          "option_text": "Brussels",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "WHO — Geneva. Founded 7 April 1948 (now World Health Day). Specialised UN agency for public health. 194 member states. Current DG (2025): Tedros Adhanom Ghebreyesus (Ethiopia). Led global response to H1N1, Ebola, COVID-19.",
@@ -29,13 +41,25 @@
     {
       "stem": "UNESCO is responsible for:",
       "options": [
-        {"option_text": "Refugees", "is_correct": false},
-        {"option_text": "Education, science, culture (incl. World Heritage Sites)", "is_correct": true},
-        {"option_text": "Labour rights", "is_correct": false},
-        {"option_text": "Children's welfare", "is_correct": false}
+        {
+          "option_text": "Refugees",
+          "is_correct": false
+        },
+        {
+          "option_text": "Education, science, culture",
+          "is_correct": true
+        },
+        {
+          "option_text": "Labour rights",
+          "is_correct": false
+        },
+        {
+          "option_text": "Children's welfare",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "UNESCO — United Nations Educational, Scientific and Cultural Organization. HQ: Paris (founded 1945). Programs: World Heritage Sites, literacy, free press, teaching of climate change, MGIEP (Gandhi Institute for Education for Peace, Delhi). UNHCR — refugees. ILO — labour. UNICEF — children.",
+      "explanation": "UNESCO — United Nations Educational, Scientific and Cultural Organization. HQ: Paris (founded 1945). Programs: World Heritage Sites, literacy, free press, teaching of climate change, MGIEP (Gandhi Institute for Education for Peace, Delhi). UNHCR — refugees. ILO — labour. UNICEF — children. incl. World Heritage Sites.",
       "subject": "General Knowledge",
       "topic": "UN specialised agencies — mixed tiers",
       "topic_code": "GK_UN_AGENCIES_MIXED",
@@ -45,15 +69,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-gk-un-02",
       "generated_at": "2026-04-23T02:30:00+00:00",
-      "id": "sgk_GK_UN_AGENCIES_MIXED_00002"
+      "id": "sgk_GK_UN_AGENCIES_MIXED_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Education, science, culture (incl. World Heritage Sites)",
+          "now": "Education, science, culture",
+          "moved_to_explanation": "incl. World Heritage Sites"
+        }
+      ]
     },
     {
       "stem": "Match the UN AGENCY with its HQ. A. FAO.  B. ILO.  C. IAEA.  D. IMO. List-II: 1. Rome.  2. Geneva.  3. Vienna.  4. London.",
       "options": [
-        {"option_text": "A-1, B-2, C-3, D-4", "is_correct": true},
-        {"option_text": "A-2, B-1, C-3, D-4", "is_correct": false},
-        {"option_text": "A-1, B-3, C-2, D-4", "is_correct": false},
-        {"option_text": "A-1, B-2, C-4, D-3", "is_correct": false}
+        {
+          "option_text": "A-1, B-2, C-3, D-4",
+          "is_correct": true
+        },
+        {
+          "option_text": "A-2, B-1, C-3, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-3, C-2, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-2, C-4, D-3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "FAO (Food & Agriculture Org) — Rome. ILO (International Labour Org) — Geneva. IAEA (International Atomic Energy Agency) — Vienna. IMO (International Maritime Org) — London.",
@@ -71,13 +115,25 @@
     {
       "stem": "The HEADQUARTERS of the UNITED NATIONS is in:",
       "options": [
-        {"option_text": "Geneva", "is_correct": false},
-        {"option_text": "New York City (Turtle Bay, Manhattan)", "is_correct": true},
-        {"option_text": "Paris", "is_correct": false},
-        {"option_text": "Vienna", "is_correct": false}
+        {
+          "option_text": "Geneva",
+          "is_correct": false
+        },
+        {
+          "option_text": "New York City",
+          "is_correct": true
+        },
+        {
+          "option_text": "Paris",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vienna",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "UN HQ — 17-acre site in Manhattan, New York. Internationally-governed zone (not US territory). 4 other UN offices: Geneva, Vienna, Nairobi, and since 2019, Rome. Secretary-General (2025): António Guterres (Portugal, 2nd term).",
+      "explanation": "UN HQ — 17-acre site in Manhattan, New York. Internationally-governed zone (not US territory). 4 other UN offices: Geneva, Vienna, Nairobi, and since 2019, Rome. Secretary-General (2025): António Guterres (Portugal, 2nd term). Turtle Bay, Manhattan.",
       "subject": "General Knowledge",
       "topic": "UN specialised agencies — mixed tiers",
       "topic_code": "GK_UN_AGENCIES_MIXED",
@@ -87,18 +143,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-gk-un-04",
       "generated_at": "2026-04-23T02:30:00+00:00",
-      "id": "sgk_GK_UN_AGENCIES_MIXED_00004"
+      "id": "sgk_GK_UN_AGENCIES_MIXED_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "New York City (Turtle Bay, Manhattan)",
+          "now": "New York City",
+          "moved_to_explanation": "Turtle Bay, Manhattan"
+        }
+      ]
     },
     {
       "stem": "The ILO (International Labour Organization) was founded in:",
       "options": [
-        {"option_text": "1919 (after WWI, Treaty of Versailles)", "is_correct": true},
-        {"option_text": "1945", "is_correct": false},
-        {"option_text": "1948", "is_correct": false},
-        {"option_text": "1960", "is_correct": false}
+        {
+          "option_text": "1919",
+          "is_correct": true
+        },
+        {
+          "option_text": "1945",
+          "is_correct": false
+        },
+        {
+          "option_text": "1948",
+          "is_correct": false
+        },
+        {
+          "option_text": "1960",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
-      "explanation": "ILO — 1919, one of the oldest UN bodies, founded as part of the League of Nations after WWI (Treaty of Versailles). Became a specialised UN agency in 1946. HQ: Geneva. Unique 'tripartite' structure — governments + employers + workers represented.",
+      "explanation": "ILO — 1919, one of the oldest UN bodies, founded as part of the League of Nations after WWI (Treaty of Versailles). Became a specialised UN agency in 1946. HQ: Geneva. Unique 'tripartite' structure — governments + employers + workers represented. after WWI, Treaty of Versailles.",
       "subject": "General Knowledge",
       "topic": "UN specialised agencies — mixed tiers",
       "topic_code": "GK_UN_AGENCIES_MIXED",
@@ -108,15 +184,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-23-gk-un-05",
       "generated_at": "2026-04-23T02:30:00+00:00",
-      "id": "sgk_GK_UN_AGENCIES_MIXED_00005"
+      "id": "sgk_GK_UN_AGENCIES_MIXED_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "1919 (after WWI, Treaty of Versailles)",
+          "now": "1919",
+          "moved_to_explanation": "after WWI, Treaty of Versailles"
+        }
+      ]
     },
     {
       "stem": "UNICEF focuses on:",
       "options": [
-        {"option_text": "Workers' rights", "is_correct": false},
-        {"option_text": "Children's welfare + humanitarian aid to children worldwide", "is_correct": true},
-        {"option_text": "Cultural preservation", "is_correct": false},
-        {"option_text": "Intellectual property", "is_correct": false}
+        {
+          "option_text": "Workers' rights",
+          "is_correct": false
+        },
+        {
+          "option_text": "Children's welfare + humanitarian aid to children worldwide",
+          "is_correct": true
+        },
+        {
+          "option_text": "Cultural preservation",
+          "is_correct": false
+        },
+        {
+          "option_text": "Intellectual property",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "UNICEF — United Nations Children's Fund. HQ: New York. Founded 1946 (originally 'UN International Children's Emergency Fund'). Nobel Peace Prize 1965. Key campaigns: polio eradication, immunisation, nutrition, girl-child education, WASH (water-sanitation-hygiene).",
@@ -134,10 +230,22 @@
     {
       "stem": "The 'WORLD INTELLECTUAL PROPERTY ORGANIZATION' (WIPO) is headquartered at:",
       "options": [
-        {"option_text": "New York", "is_correct": false},
-        {"option_text": "Geneva", "is_correct": true},
-        {"option_text": "Washington DC", "is_correct": false},
-        {"option_text": "Tokyo", "is_correct": false}
+        {
+          "option_text": "New York",
+          "is_correct": false
+        },
+        {
+          "option_text": "Geneva",
+          "is_correct": true
+        },
+        {
+          "option_text": "Washington DC",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tokyo",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "WIPO — Geneva. Set up 1967, became UN agency 1974. Handles patents, copyrights, trademarks, design rights, geographical indications. India joined WIPO in 1975. Famous annual 'Global Innovation Index' (GII).",

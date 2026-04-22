@@ -46,7 +46,7 @@
           "is_correct": false
         },
         {
-          "option_text": "West Bengal (Hugli basin)",
+          "option_text": "West Bengal",
           "is_correct": true
         },
         {
@@ -69,7 +69,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-21-geo-ie-02",
       "generated_at": "2026-04-21T19:15:00+00:00",
-      "id": "sgk_GEO_IND_ECONOMIC_MIXED_00002"
+      "id": "sgk_GEO_IND_ECONOMIC_MIXED_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "West Bengal (Hugli basin)",
+          "now": "West Bengal",
+          "moved_to_explanation": "Hugli basin"
+        }
+      ]
     },
     {
       "stem": "The 'GREEN REVOLUTION' in India was primarily associated with:",

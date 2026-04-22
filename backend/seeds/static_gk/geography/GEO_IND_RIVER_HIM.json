@@ -8,10 +8,22 @@
     {
       "stem": "The GANGA originates at which glacier, and what is its traditional name at the origin point?",
       "options": [
-        {"option_text": "Siachen Glacier; Shyok", "is_correct": false},
-        {"option_text": "Gangotri Glacier (Gomukh); called BHAGIRATHI", "is_correct": true},
-        {"option_text": "Yamunotri Glacier; Yamuna", "is_correct": false},
-        {"option_text": "Milam Glacier; Gori", "is_correct": false}
+        {
+          "option_text": "Siachen Glacier; Shyok",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gangotri Glacier (Gomukh)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Yamunotri Glacier; Yamuna",
+          "is_correct": false
+        },
+        {
+          "option_text": "Milam Glacier; Gori",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "BHAGIRATHI — emerges from GAUMUKH ('Cow's Mouth') — the snout of GANGOTRI GLACIER (30 km long, Uttarkashi district, Uttarakhand, ~3892 m altitude). Called BHAGIRATHI until it meets the ALAKNANDA (from Satopanth Glacier) at DEVPRAYAG — after that, it's called GANGA. Alaknanda's tributaries: Dhauliganga, Nandakini, Pindar, Mandakini, Bhagirathi itself — together the 'Panch Prayag' (5 confluences): Vishnuprayag, Nandaprayag, Karnaprayag, Rudraprayag, Devprayag. The Ganga traverses 2,525 km through 5 states (Uttarakhand, UP, Bihar, Jharkhand, WB) + Bangladesh (as Padma-Jamuna) → Bay of Bengal. World's most sacred river in Hinduism + world's 3rd-largest river by discharge to ocean. NATIONAL RIVER since 2008.",
@@ -24,18 +36,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-geo-riv-him-01",
       "generated_at": "2026-04-20T21:30:00+00:00",
-      "id": "sgk_GEO_IND_RIVER_HIM_00015"
+      "id": "sgk_GEO_IND_RIVER_HIM_00015",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Gangotri Glacier (Gomukh); called BHAGIRATHI",
+          "now": "Gangotri Glacier (Gomukh)",
+          "moved_to_explanation": "called BHAGIRATHI"
+        }
+      ]
     },
     {
       "stem": "The YAMUNA — longest tributary of the Ganga — originates from which glacier?",
       "options": [
-        {"option_text": "Gangotri Glacier", "is_correct": false},
-        {"option_text": "Yamunotri Glacier (near Champasar, Uttarakhand)", "is_correct": true},
-        {"option_text": "Milam Glacier", "is_correct": false},
-        {"option_text": "Pindari Glacier", "is_correct": false}
+        {
+          "option_text": "Gangotri Glacier",
+          "is_correct": false
+        },
+        {
+          "option_text": "Yamunotri Glacier",
+          "is_correct": true
+        },
+        {
+          "option_text": "Milam Glacier",
+          "is_correct": false
+        },
+        {
+          "option_text": "Pindari Glacier",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "YAMUNA (~1,376 km — India's LONGEST Ganga tributary) originates from YAMUNOTRI GLACIER near BANDERPOOCH Peak (~6,316m, Uttarakhand Himalayas), ~6,400m elevation. Yamunotri Temple (one of 4 Char Dham sites of Uttarakhand — others: Gangotri, Kedarnath, Badrinath). Main tributaries: TONS (largest, from Har-ki-Dun), GIRI, HINDON, CHAMBAL, SIND, BETWA, KEN. Flows through Haryana (Delhi at Yamuna's bank), UP. Meets GANGA at PRAYAGRAJ (formerly Allahabad) — TRIVENI SANGAM (Yamuna + Ganga + mythical Saraswati). Major cities on Yamuna: Yamunanagar (Haryana), Delhi, Mathura, Agra (Taj Mahal on its bank), Etawah, Kanpur area. Heavily polluted by Delhi and Agra. Chambal is surprisingly the CLEANEST of its tributaries (flows through ravines, less human settlement).",
+      "explanation": "YAMUNA (~1,376 km — India's LONGEST Ganga tributary) originates from YAMUNOTRI GLACIER near BANDERPOOCH Peak (~6,316m, Uttarakhand Himalayas), ~6,400m elevation. Yamunotri Temple (one of 4 Char Dham sites of Uttarakhand — others: Gangotri, Kedarnath, Badrinath). Main tributaries: TONS (largest, from Har-ki-Dun), GIRI, HINDON, CHAMBAL, SIND, BETWA, KEN. Flows through Haryana (Delhi at Yamuna's bank), UP. Meets GANGA at PRAYAGRAJ (formerly Allahabad) — TRIVENI SANGAM (Yamuna + Ganga + mythical Saraswati). Major cities on Yamuna: Yamunanagar (Haryana), Delhi, Mathura, Agra (Taj Mahal on its bank), Etawah, Kanpur area. Heavily polluted by Delhi and Agra. Chambal is surprisingly the CLEANEST of its tributaries (flows through ravines, less human settlement). near Champasar, Uttarakhand.",
       "subject": "Geography",
       "topic": "India - Himalayan River System",
       "topic_code": "GEO_IND_RIVER_HIM",
@@ -45,15 +77,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-geo-riv-him-01",
       "generated_at": "2026-04-20T21:30:00+00:00",
-      "id": "sgk_GEO_IND_RIVER_HIM_00016"
+      "id": "sgk_GEO_IND_RIVER_HIM_00016",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Yamunotri Glacier (near Champasar, Uttarakhand)",
+          "now": "Yamunotri Glacier",
+          "moved_to_explanation": "near Champasar, Uttarakhand"
+        }
+      ]
     },
     {
       "stem": "The BRAHMAPUTRA's origin in Tibet has a local name. What is it?",
       "options": [
-        {"option_text": "Tsangpo / Yarlung Tsangpo", "is_correct": true},
-        {"option_text": "Sutlej / Langchen Zangbo", "is_correct": false},
-        {"option_text": "Indus / Sengge Zangbo", "is_correct": false},
-        {"option_text": "Kosi / Tamakoshi", "is_correct": false}
+        {
+          "option_text": "Tsangpo / Yarlung Tsangpo",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sutlej / Langchen Zangbo",
+          "is_correct": false
+        },
+        {
+          "option_text": "Indus / Sengge Zangbo",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kosi / Tamakoshi",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "BRAHMAPUTRA rises near Mt Kailash/Lake Manasarovar on the Tibetan Plateau (south Tibet) as the YARLUNG TSANGPO. Flows ~1,700 km east through Tibet, then takes a sharp U-turn ('THE GREAT BEND' around Namcha Barwa peak — deepest canyon in world), enters Arunachal Pradesh as SIANG/DIHANG. At Kobo village, joined by LOHIT + DIBANG → becomes BRAHMAPUTRA. Flows westward through Assam (1,000+ km), then south into Bangladesh as JAMUNA, meets Padma (Ganga), then MEGHNA (combined flow), → Bay of Bengal. Total length 2,900 km. World's 9th-longest river, 4th by discharge. Majuli (world's largest RIVER ISLAND) is in the Brahmaputra near Jorhat, Assam. Indus-Yarlung Tsangpo all rise in the same Kailash-Manasarovar region.",
@@ -71,13 +123,25 @@
     {
       "stem": "The INDUS RIVER SYSTEM, under the 1960 Indus Waters Treaty, allocates EASTERN rivers (Sutlej, Beas, Ravi) to India and WESTERN rivers (Indus, Jhelum, Chenab) to Pakistan. Which river passes through Ladakh and Kashmir before entering Pakistan?",
       "options": [
-        {"option_text": "Sutlej", "is_correct": false},
-        {"option_text": "Indus (main stream)", "is_correct": true},
-        {"option_text": "Ravi", "is_correct": false},
-        {"option_text": "Beas", "is_correct": false}
+        {
+          "option_text": "Sutlej",
+          "is_correct": false
+        },
+        {
+          "option_text": "Indus",
+          "is_correct": true
+        },
+        {
+          "option_text": "Ravi",
+          "is_correct": false
+        },
+        {
+          "option_text": "Beas",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "INDUS SYSTEM (5 Punjab rivers + Indus main = PUNJ-AB = 'land of 5 rivers'). INDUS (Sengge Zangbo in Tibetan) rises near Mt Kailash, flows through LADAKH (Leh on its bank) and across the GILGIT-BALTISTAN region (Pak-occupied), through Pakistan to Arabian Sea. INDUS WATERS TREATY 1960 (signed by Nehru + Ayub Khan, mediated by World Bank): Eastern Rivers (SUTLEJ, BEAS, RAVI) to INDIA for unrestricted use; Western Rivers (INDUS, JHELUM, CHENAB) to PAKISTAN. India can use western rivers for limited purposes (domestic, non-consumptive, some hydroelectric). Has survived THREE Indo-Pak wars. Sutlej rises in Rakshastal (Tibet); Beas rises in Rohtang Pass (HP); Ravi rises in HP near Bara Banghal; Chenab formed from Chandra + Bhaga (Lahaul HP); Jhelum rises from Verinag (Kashmir). All meet eventually to form Indus.",
+      "explanation": "INDUS SYSTEM (5 Punjab rivers + Indus main = PUNJ-AB = 'land of 5 rivers'). INDUS (Sengge Zangbo in Tibetan) rises near Mt Kailash, flows through LADAKH (Leh on its bank) and across the GILGIT-BALTISTAN region (Pak-occupied), through Pakistan to Arabian Sea. INDUS WATERS TREATY 1960 (signed by Nehru + Ayub Khan, mediated by World Bank): Eastern Rivers (SUTLEJ, BEAS, RAVI) to INDIA for unrestricted use; Western Rivers (INDUS, JHELUM, CHENAB) to PAKISTAN. India can use western rivers for limited purposes (domestic, non-consumptive, some hydroelectric). Has survived THREE Indo-Pak wars. Sutlej rises in Rakshastal (Tibet); Beas rises in Rohtang Pass (HP); Ravi rises in HP near Bara Banghal; Chenab formed from Chandra + Bhaga (Lahaul HP); Jhelum rises from Verinag (Kashmir). All meet eventually to form Indus. main stream.",
       "subject": "Geography",
       "topic": "India - Himalayan River System",
       "topic_code": "GEO_IND_RIVER_HIM",
@@ -87,15 +151,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-geo-riv-him-01",
       "generated_at": "2026-04-20T21:30:00+00:00",
-      "id": "sgk_GEO_IND_RIVER_HIM_00018"
+      "id": "sgk_GEO_IND_RIVER_HIM_00018",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Indus (main stream)",
+          "now": "Indus",
+          "moved_to_explanation": "main stream"
+        }
+      ]
     },
     {
       "stem": "The 'SORROW OF BIHAR' — notorious for causing annual floods — is which river?",
       "options": [
-        {"option_text": "Gandak", "is_correct": false},
-        {"option_text": "Kosi (Koshi)", "is_correct": true},
-        {"option_text": "Mahananda", "is_correct": false},
-        {"option_text": "Son", "is_correct": false}
+        {
+          "option_text": "Gandak",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kosi (Koshi)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mahananda",
+          "is_correct": false
+        },
+        {
+          "option_text": "Son",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "KOSI RIVER — left-bank tributary of the Ganga. Called 'SORROW OF BIHAR' because of its frequent floods — historical records show the Kosi has shifted its course westward by over 120 km in the last 250 years. Origin: Nepal (tributaries: Sun Kosi, Arun, Tamur — all from high Himalayas — convergence called Sapta Kosi, 7 Kosis). Famous 2008 Kosi embankment breach — 3 million displaced. Other rivers with similar 'sorrow' nicknames: DAMODAR — 'Sorrow of BENGAL' (before Damodar Valley Corporation dams tamed it 1948); BRAHMAPUTRA — 'Sorrow of Assam' (though unofficial) due to major annual floods. HWANG HO (YELLOW RIVER, China) = 'Sorrow of China'. Kosi Barrage controls some flow; Kosi High Dam proposed in Nepal but delayed. Kosi brings huge sediment load from Himalayas.",
@@ -113,10 +197,22 @@
     {
       "stem": "Which of the following is a LEFT-BANK tributary of the Ganga (i.e., joins from the north side)?",
       "options": [
-        {"option_text": "Yamuna", "is_correct": false},
-        {"option_text": "Ghaghra (Karnali)", "is_correct": true},
-        {"option_text": "Son", "is_correct": false},
-        {"option_text": "Chambal", "is_correct": false}
+        {
+          "option_text": "Yamuna",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ghaghra (Karnali)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Son",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chambal",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "GANGA tributaries by bank: LEFT-BANK (Himalayan, north side): Ramganga, GHAGHRA (Karnali in Nepal — main left tributary, longest tributary by discharge), Gandak (Gandaki), Kosi, Mahananda. RIGHT-BANK (Peninsular, south side): Yamuna (largest by total contribution including its own tribs), Chambal, Betwa, Son, Damodar. Left-bank tributaries originate in the HIMALAYAS (via Nepal); right-bank from the Peninsular Plateau. This is the classic 'comb' pattern of Ganga basin drainage. Ghaghra is the LARGEST LEFT-BANK tributary of Ganga by volume. Son is the LARGEST RIGHT-BANK tributary by length from Peninsular India (southern plateau).",
@@ -134,13 +230,25 @@
     {
       "stem": "The SUTLEJ river — 1,500 km long, easternmost of the 'five Punjab rivers' — originates from:",
       "options": [
-        {"option_text": "Gangotri Glacier", "is_correct": false},
-        {"option_text": "Lake Rakshastal (near Lake Manasarovar, Tibet)", "is_correct": true},
-        {"option_text": "Pir Panjal range", "is_correct": false},
-        {"option_text": "Manimahesh Lake, HP", "is_correct": false}
+        {
+          "option_text": "Gangotri Glacier",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lake Rakshastal",
+          "is_correct": true
+        },
+        {
+          "option_text": "Pir Panjal range",
+          "is_correct": false
+        },
+        {
+          "option_text": "Manimahesh Lake, HP",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "SUTLEJ (LANGQEN ZANGBO in Tibetan = 'Elephant River') — originates from RAKSHASTAL ('Demon Lake'), near the sacred MANASAROVAR lake in Tibet. Flows westward through Himachal Pradesh (entering via Shipki La pass), then Punjab. Joins BEAS near Harike Wetlands — then joined by CHENAB near Uch (Pakistan) to form PANJNAD ('5 rivers together' in Persian) which joins the INDUS. The BHAKRA DAM — one of India's tallest dams (226 m, gravity dam — 2nd highest in Asia) — is on the Sutlej, HP. Creates GOBIND SAGAR reservoir. India's Sutlej-Yamuna Link (SYL) canal is a contentious irrigation project between Punjab and Haryana. Indus Waters Treaty 1960 gave full Sutlej rights to India.",
+      "explanation": "SUTLEJ (LANGQEN ZANGBO in Tibetan = 'Elephant River') — originates from RAKSHASTAL ('Demon Lake'), near the sacred MANASAROVAR lake in Tibet. Flows westward through Himachal Pradesh (entering via Shipki La pass), then Punjab. Joins BEAS near Harike Wetlands — then joined by CHENAB near Uch (Pakistan) to form PANJNAD ('5 rivers together' in Persian) which joins the INDUS. The BHAKRA DAM — one of India's tallest dams (226 m, gravity dam — 2nd highest in Asia) — is on the Sutlej, HP. Creates GOBIND SAGAR reservoir. India's Sutlej-Yamuna Link (SYL) canal is a contentious irrigation project between Punjab and Haryana. Indus Waters Treaty 1960 gave full Sutlej rights to India. near Lake Manasarovar, Tibet.",
       "subject": "Geography",
       "topic": "India - Himalayan River System",
       "topic_code": "GEO_IND_RIVER_HIM",
@@ -150,15 +258,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-geo-riv-him-01",
       "generated_at": "2026-04-20T21:30:00+00:00",
-      "id": "sgk_GEO_IND_RIVER_HIM_00021"
+      "id": "sgk_GEO_IND_RIVER_HIM_00021",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Lake Rakshastal (near Lake Manasarovar, Tibet)",
+          "now": "Lake Rakshastal",
+          "moved_to_explanation": "near Lake Manasarovar, Tibet"
+        }
+      ]
     },
     {
       "stem": "The FARAKKA BARRAGE (1975) on the Ganga river, at the West Bengal-Bangladesh border, was built to:",
       "options": [
-        {"option_text": "Generate hydroelectric power", "is_correct": false},
-        {"option_text": "Divert Ganga waters into the Bhagirathi-Hooghly system to flush Kolkata port silt", "is_correct": true},
-        {"option_text": "Support canal irrigation in Bihar", "is_correct": false},
-        {"option_text": "Create a flood buffer for Assam", "is_correct": false}
+        {
+          "option_text": "Generate hydroelectric power",
+          "is_correct": false
+        },
+        {
+          "option_text": "Divert Ganga waters into the Bhagirathi-Hooghly system to flush Kolkata port silt",
+          "is_correct": true
+        },
+        {
+          "option_text": "Support canal irrigation in Bihar",
+          "is_correct": false
+        },
+        {
+          "option_text": "Create a flood buffer for Assam",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "FARAKKA BARRAGE (Murshidabad district, West Bengal, ~17 km from Bangladesh border) — operational 1975. PRIMARY PURPOSE: divert ~40,000 cusecs of Ganga waters into the 38-km Farakka feeder canal → BHAGIRATHI-HOOGHLY river, to flush sediment from KOLKATA (CALCUTTA) PORT (the Hooghly was silting, threatening port viability). Bangladesh objected that reduced Ganga flow would damage its deltaic ecology (Sundarbans etc.) — INDO-BANGLADESH GANGES WATER TREATY signed 1996 for 30 years (equitable sharing of dry-season water). Other major barrages: TEESTA (WB), SARDA on Sharda River, GANDAK (Valmiki Nagar, Bihar-Nepal border). Hirakud is a DAM not barrage. BARRAGE = low-height gated structure to regulate flow; DAM = taller, stores water.",
@@ -176,13 +304,25 @@
     {
       "stem": "The TEHRI DAM — India's TALLEST dam — is on which Himalayan river?",
       "options": [
-        {"option_text": "Alaknanda", "is_correct": false},
-        {"option_text": "Bhagirathi (above the Ganga confluence)", "is_correct": true},
-        {"option_text": "Kosi", "is_correct": false},
-        {"option_text": "Gandak", "is_correct": false}
+        {
+          "option_text": "Alaknanda",
+          "is_correct": false
+        },
+        {
+          "option_text": "Bhagirathi",
+          "is_correct": true
+        },
+        {
+          "option_text": "Kosi",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gandak",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "TEHRI DAM (Uttarakhand, at Tehri town where the Bhagirathi + Bhilangna rivers meet) — India's TALLEST dam at 260.5 m. Type: earth-and-rockfill embankment. Built 1978-2006 (long delay due to protests — Sunderlal Bahuguna led anti-Tehri movement on environmental + cultural grounds; Old Tehri town was submerged). Capacity: ~3.55 km³. Power: 1000 MW (being expanded with Tehri Pumped Storage Plant — 1000 MW more). BHAKRA (SUTLEJ, HP — 226m, concrete gravity) and IDUKKI (PERIYAR, KERALA — 168m, double-curvature arch) are also notable for height. KARAPUZHA DAM (Kerala) = smallest. LONGEST DAM: HIRAKUD (Mahanadi, Odisha, 25.8 km main+dykes — world's longest earthen dam). Other Himalayan river dams: NATHPA JHAKRI (Sutlej — 1500 MW), DHAULIGANGA (Pithoragarh), SRISAILAM (Krishna — peninsular, not Himalayan).",
+      "explanation": "TEHRI DAM (Uttarakhand, at Tehri town where the Bhagirathi + Bhilangna rivers meet) — India's TALLEST dam at 260.5 m. Type: earth-and-rockfill embankment. Built 1978-2006 (long delay due to protests — Sunderlal Bahuguna led anti-Tehri movement on environmental + cultural grounds; Old Tehri town was submerged). Capacity: ~3.55 km³. Power: 1000 MW (being expanded with Tehri Pumped Storage Plant — 1000 MW more). BHAKRA (SUTLEJ, HP — 226m, concrete gravity) and IDUKKI (PERIYAR, KERALA — 168m, double-curvature arch) are also notable for height. KARAPUZHA DAM (Kerala) = smallest. LONGEST DAM: HIRAKUD (Mahanadi, Odisha, 25.8 km main+dykes — world's longest earthen dam). Other Himalayan river dams: NATHPA JHAKRI (Sutlej — 1500 MW), DHAULIGANGA (Pithoragarh), SRISAILAM (Krishna — peninsular, not Himalayan). above the Ganga confluence.",
       "subject": "Geography",
       "topic": "India - Himalayan River System",
       "topic_code": "GEO_IND_RIVER_HIM",
@@ -192,15 +332,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-geo-riv-him-01",
       "generated_at": "2026-04-20T21:30:00+00:00",
-      "id": "sgk_GEO_IND_RIVER_HIM_00023"
+      "id": "sgk_GEO_IND_RIVER_HIM_00023",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Bhagirathi (above the Ganga confluence)",
+          "now": "Bhagirathi",
+          "moved_to_explanation": "above the Ganga confluence"
+        }
+      ]
     },
     {
       "stem": "Major Himalayan rivers by length (in India or partially in India). Arrange from LONGEST to SHORTEST: (1) Indus, (2) Brahmaputra, (3) Ganga, (4) Sutlej",
       "options": [
-        {"option_text": "Brahmaputra > Ganga > Indus > Sutlej", "is_correct": false},
-        {"option_text": "Brahmaputra > Indus > Ganga > Sutlej", "is_correct": true},
-        {"option_text": "Ganga > Brahmaputra > Sutlej > Indus", "is_correct": false},
-        {"option_text": "Indus > Brahmaputra > Ganga > Sutlej", "is_correct": false}
+        {
+          "option_text": "Brahmaputra > Ganga > Indus > Sutlej",
+          "is_correct": false
+        },
+        {
+          "option_text": "Brahmaputra > Indus > Ganga > Sutlej",
+          "is_correct": true
+        },
+        {
+          "option_text": "Ganga > Brahmaputra > Sutlej > Indus",
+          "is_correct": false
+        },
+        {
+          "option_text": "Indus > Brahmaputra > Ganga > Sutlej",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Major Himalayan rivers TOTAL length (including portions outside India): BRAHMAPUTRA ~2,900 km (in India ~1,800 km; originates Tibet, India, Bangladesh). INDUS ~3,180 km (most in Pakistan after Partition — only ~700 km in India through Ladakh). GANGA ~2,525 km (entirely in India + Bangladesh as Padma — largest catchment in India). SUTLEJ ~1,500 km (in India ~1,050 km). So by total length: Indus (3180) > Brahmaputra (2900) > Ganga (2525) > Sutlej (1500). But by Indian length: Ganga (2525) > Brahmaputra (1800) > Sutlej (1050) > Indus (700). LONGEST RIVER within India: GANGA. Longest river ORIGINATING in India: MAHANADI (fully in India). Longest peninsular river: GODAVARI (1,465 km, 'Dakshin Ganga'). Longest WESTWARD river: NARMADA (1,312 km).",

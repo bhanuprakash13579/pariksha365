@@ -8,13 +8,25 @@
     {
       "stem": "A magnet has NORTH + SOUTH poles. The fundamental law of magnetism states:",
       "options": [
-        {"option_text": "Like poles attract", "is_correct": false},
-        {"option_text": "LIKE POLES REPEL, UNLIKE POLES ATTRACT — magnetic monopoles do not exist; always dipole (N + S pair inseparable)", "is_correct": true},
-        {"option_text": "Only repulsion occurs", "is_correct": false},
-        {"option_text": "Poles have no attraction", "is_correct": false}
+        {
+          "option_text": "Like poles attract",
+          "is_correct": false
+        },
+        {
+          "option_text": "LIKE POLES REPEL, UNLIKE POLES ATTRACT",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only repulsion occurs",
+          "is_correct": false
+        },
+        {
+          "option_text": "Poles have no attraction",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "MAGNETISM — fundamental phenomenon of nature. KEY PROPERTIES: (1) MAGNETS have 2 POLES — NORTH-SEEKING + SOUTH-SEEKING. (2) LIKE poles REPEL; UNLIKE poles ATTRACT (analogous to electric charges, but magnetic MONOPOLES don't exist — cutting a magnet in half gives 2 complete magnets each with N + S). (3) Magnet ATTRACTS ferromagnetic materials (IRON, NICKEL, COBALT, their alloys, rare-earth neodymium) — these become induced magnets. (4) EARTH is a giant magnet; compass needle aligns N-S. Geographic NORTH is actually MAGNETIC SOUTH (a compass N-pole points to geographic N because unlike poles attract). TYPES of MAGNETIC MATERIALS: (a) FERROMAGNETIC — strongly attracted; retain magnetism; Fe, Ni, Co, Gd, Dy + alloys; examples alnico, neodymium (NdFeB, strongest common magnet), ferrites. Curie temperature (above which becomes paramagnetic): Fe 770°C, Ni 358°C, Co 1115°C. (b) PARAMAGNETIC — weakly attracted; Al, Pt, Mg, Li, Na, O₂ liquid; attraction disappears when field removed. (c) DIAMAGNETIC — weakly REPELLED by magnetic field; Cu, Bi, C, Au, Ag, water, most materials. (d) ANTIFERROMAGNETIC — neighbouring spins cancel (Cr, MnO, FeO). (e) FERRIMAGNETIC — like antiferro but net magnetic moment (magnetite Fe₃O₄, most ferrites). MAGNETIC FIELD (B): region around magnet / current-carrying conductor where magnetic force is experienced. UNITS: SI — TESLA (T) = Wb/m² = kg/(A·s²); CGS — GAUSS (G), 1 T = 10,000 G. Earth's field ~0.5 G = 5 × 10⁻⁵ T; fridge magnet ~5 mT; MRI machine 1.5-7 T; LHC magnets 8 T; strongest lab field ~45 T (continuous, National High Magnetic Field Laboratory, Florida). MAGNETIC FIELD LINES — direction of compass needle + closeness = field strength; FORM CLOSED LOOPS (no monopoles means no sources/sinks); go from N to S outside + S to N inside. ELECTRO-MAGNETISM (Oersted 1820, Ampere, Faraday, Maxwell) — electricity + magnetism are UNIFIED phenomena. Moving charges produce magnetic fields; changing magnetic fields produce electric fields (Faraday's law). MAXWELL's 4 EQUATIONS unify E + M = CLASSICAL ELECTROMAGNETISM. One of physics's crowning achievements. LIGHT is an EM wave (Maxwell 1865). RELATIVITY: magnetism is a RELATIVISTIC EFFECT of moving charges (Einstein 1905).",
+      "explanation": "MAGNETISM — fundamental phenomenon of nature. KEY PROPERTIES: (1) MAGNETS have 2 POLES — NORTH-SEEKING + SOUTH-SEEKING. (2) LIKE poles REPEL; UNLIKE poles ATTRACT (analogous to electric charges, but magnetic MONOPOLES don't exist — cutting a magnet in half gives 2 complete magnets each with N + S). (3) Magnet ATTRACTS ferromagnetic materials (IRON, NICKEL, COBALT, their alloys, rare-earth neodymium) — these become induced magnets. (4) EARTH is a giant magnet; compass needle aligns N-S. Geographic NORTH is actually MAGNETIC SOUTH (a compass N-pole points to geographic N because unlike poles attract). TYPES of MAGNETIC MATERIALS: (a) FERROMAGNETIC — strongly attracted; retain magnetism; Fe, Ni, Co, Gd, Dy + alloys; examples alnico, neodymium (NdFeB, strongest common magnet), ferrites. Curie temperature (above which becomes paramagnetic): Fe 770°C, Ni 358°C, Co 1115°C. (b) PARAMAGNETIC — weakly attracted; Al, Pt, Mg, Li, Na, O₂ liquid; attraction disappears when field removed. (c) DIAMAGNETIC — weakly REPELLED by magnetic field; Cu, Bi, C, Au, Ag, water, most materials. (d) ANTIFERROMAGNETIC — neighbouring spins cancel (Cr, MnO, FeO). (e) FERRIMAGNETIC — like antiferro but net magnetic moment (magnetite Fe₃O₄, most ferrites). MAGNETIC FIELD (B): region around magnet / current-carrying conductor where magnetic force is experienced. UNITS: SI — TESLA (T) = Wb/m² = kg/(A·s²); CGS — GAUSS (G), 1 T = 10,000 G. Earth's field ~0.5 G = 5 × 10⁻⁵ T; fridge magnet ~5 mT; MRI machine 1.5-7 T; LHC magnets 8 T; strongest lab field ~45 T (continuous, National High Magnetic Field Laboratory, Florida). MAGNETIC FIELD LINES — direction of compass needle + closeness = field strength; FORM CLOSED LOOPS (no monopoles means no sources/sinks); go from N to S outside + S to N inside. ELECTRO-MAGNETISM (Oersted 1820, Ampere, Faraday, Maxwell) — electricity + magnetism are UNIFIED phenomena. Moving charges produce magnetic fields; changing magnetic fields produce electric fields (Faraday's law). MAXWELL's 4 EQUATIONS unify E + M = CLASSICAL ELECTROMAGNETISM. One of physics's crowning achievements. LIGHT is an EM wave (Maxwell 1865). RELATIVITY: magnetism is a RELATIVISTIC EFFECT of moving charges (Einstein 1905). magnetic monopoles do not exist; always dipole (N + S pair inseparable).",
       "subject": "Physics",
       "topic": "Magnetism & Electromagnetism",
       "topic_code": "PHY_MAGNETISM",
@@ -24,15 +36,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-mag-01",
       "generated_at": "2026-04-21T04:50:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_00001"
+      "id": "sgk_PHY_MAGNETISM_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "LIKE POLES REPEL, UNLIKE POLES ATTRACT — magnetic monopoles do not exist; always dipole (N + S pair inseparable)",
+          "now": "LIKE POLES REPEL, UNLIKE POLES ATTRACT",
+          "moved_to_explanation": "magnetic monopoles do not exist; always dipole (N + S pair inseparable)"
+        }
+      ]
     },
     {
       "stem": "OERSTED's EXPERIMENT (1820) demonstrated that:",
       "options": [
-        {"option_text": "Magnets attract iron", "is_correct": false},
-        {"option_text": "ELECTRIC CURRENT PRODUCES A MAGNETIC FIELD — compass needle deflected when placed near a current-carrying wire; united electricity + magnetism", "is_correct": true},
-        {"option_text": "Magnetic fields produce light", "is_correct": false},
-        {"option_text": "Electrons have spin", "is_correct": false}
+        {
+          "option_text": "Magnets attract iron",
+          "is_correct": false
+        },
+        {
+          "option_text": "ELECTRIC CURRENT PRODUCES A MAGNETIC FIELD",
+          "is_correct": true
+        },
+        {
+          "option_text": "Magnetic fields produce light",
+          "is_correct": false
+        },
+        {
+          "option_text": "Electrons have spin",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "HANS CHRISTIAN OERSTED (1777-1851, Danish physicist) — in April 1820, during a lecture demonstration at Copenhagen University, accidentally noticed that a COMPASS NEEDLE DEFLECTED when he switched on an electric current in a nearby wire. This was the FIRST observed connection between ELECTRICITY + MAGNETISM — founded the field of ELECTROMAGNETISM. RIGHT-HAND THUMB RULE (Maxwell's RH rule): for a straight current-carrying wire, point RIGHT THUMB in direction of CURRENT, FINGERS CURL in direction of MAGNETIC FIELD. B field forms CONCENTRIC CIRCLES around the wire. For SOLENOID/COIL, RH rule: fingers curl in current direction, thumb points to N pole. AMPERE'S LAW (André-Marie Ampère, 1820s, soon after Oersted) — mathematical formulation; magnetic field around a long wire: B = μ₀I/(2πr), where μ₀ = permeability of free space = 4π × 10⁻⁷ T·m/A. BIOT-SAVART LAW (Jean-Baptiste Biot + Félix Savart, 1820) — dB = (μ₀/4π)(I dL × r̂)/r². FARADAY (1831) — REVERSE: a CHANGING MAGNETIC FIELD INDUCES an EMF / electric current in a nearby conductor — FARADAY's LAW of ELECTROMAGNETIC INDUCTION. Basis of GENERATORS, TRANSFORMERS, INDUCTION motors, induction cooktops. LENZ's LAW (1834) — the induced current opposes the change in flux (consequence of conservation of energy). MAXWELL (1864-73) — UNIFIED electricity + magnetism in 4 equations: (1) GAUSS's law for E; (2) Gauss's law for B (no monopoles); (3) FARADAY's law; (4) AMPERE-MAXWELL law (with displacement current). Predicted EM waves travelling at speed of light — light IS an EM wave! HERTZ (1887) — experimentally produced + detected EM waves (radio waves) confirming Maxwell. TESLA + EDISON + others — developed practical AC + DC systems (War of Currents). MARCONI (1895-1901) — wireless radio communication using EM waves. APPLICATIONS of Oersted's discovery are EVERYWHERE: motors (electricity → motion), generators (motion → electricity), transformers, loudspeakers (audio to vibration), microphones (vibration to audio), MRI (magnetic resonance imaging), induction cookers, wireless charging, maglev trains, particle accelerators (LHC), all of modern electronics. Without electromagnetism → no industrial civilization.",
@@ -45,18 +77,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-mag-01",
       "generated_at": "2026-04-21T04:50:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_00002"
+      "id": "sgk_PHY_MAGNETISM_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ELECTRIC CURRENT PRODUCES A MAGNETIC FIELD — compass needle deflected when placed near a current-carrying wire; united electricity + magnetism",
+          "now": "ELECTRIC CURRENT PRODUCES A MAGNETIC FIELD",
+          "moved_to_explanation": "compass needle deflected when placed near a current-carrying wire; united electricity + magnetism"
+        }
+      ]
     },
     {
       "stem": "EARTH's MAGNETIC POLES are:",
       "options": [
-        {"option_text": "Fixed at geographic poles", "is_correct": false},
-        {"option_text": "Near but NOT at geographic poles; DRIFT ~55 km/yr; Magnetic N pole currently in Arctic Ocean near Siberia; poles have REVERSED multiple times in history", "is_correct": true},
-        {"option_text": "Non-existent", "is_correct": false},
-        {"option_text": "Located at equator", "is_correct": false}
+        {
+          "option_text": "Fixed at geographic poles",
+          "is_correct": false
+        },
+        {
+          "option_text": "Near but NOT at geographic poles",
+          "is_correct": true
+        },
+        {
+          "option_text": "Non-existent",
+          "is_correct": false
+        },
+        {
+          "option_text": "Located at equator",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "EARTH's MAGNETIC FIELD ('GEOMAGNETIC FIELD') — generated by DYNAMO EFFECT in Earth's OUTER CORE — convection of molten iron + nickel alloy + Earth's rotation create + sustain the field. FIELD STRENGTH: ~25-65 µT at surface (~0.25-0.65 G); strongest at magnetic poles (70 µT), weakest near magnetic equator (25 µT). Varies with location, altitude, time. MAGNETIC POLES: distinct from GEOGRAPHIC POLES. (1) MAGNETIC NORTH POLE (where a compass N-pole points to — technically called magnetic SOUTH because unlike poles attract, but conventionally 'Magnetic North'). Currently located in ARCTIC OCEAN near SIBERIA + moving rapidly TOWARDS Russia — ~55 KM/YEAR (accelerated since 1990s from ~15 km/yr). Current position (2025) near 86°N, 172°E. Located in Canadian Arctic before 1990s, now moved northwest. Updated regularly in WORLD MAGNETIC MODEL (WMM, NOAA/British Geological Survey, 5-year cycle; 2020 model updated early due to rapid movement). (2) MAGNETIC SOUTH POLE — near coast of East Antarctica; also drifts ~5 km/yr. DIFFERENCE from geographic: MAGNETIC VARIATION (DECLINATION) — angle between magnetic + true north; varies by location; important for navigation. INCLINATION (DIP) — angle field makes with horizontal; 0° at magnetic equator, 90° at poles. GEOMAGNETIC REVERSALS — the N + S poles have FLIPPED POSITIONS ~200 times over geological history. Last reversal: Brunhes-Matuyama reversal, ~780,000 years ago. Typical reversal takes 1000-10,000 years; during which field weakens dramatically. We are currently experiencing field weakening (~9% weaker in 200 years — SOUTH ATLANTIC ANOMALY growing) — possible indicator of imminent reversal (could be geologically 'imminent' = within millennia). PALAEOMAGNETISM — records of past polarity preserved in volcanic + sedimentary rocks; led to discovery of PLATE TECTONICS + SEAFLOOR SPREADING (Harry Hess, Vine-Matthews-Morley, 1960s). CONSEQUENCES of Earth's field: (1) DEFLECTS solar wind + cosmic rays into VAN ALLEN BELTS (protects biosphere from radiation); without it, atmosphere + water would strip (like Mars did 4 Ga ago when its dynamo stopped). (2) AURORAE BOREALIS + AUSTRALIS — solar wind particles funneled to magnetic poles, excite atmospheric atoms → glow green (O), red (O), pink (N). (3) NAVIGATION — magnetic compass, bird migration + turtle navigation use magnetic field. (4) RADIO communication — ionosphere + magnetic field reflect radio waves. GEOMAGNETIC STORMS — solar CMEs disturb field; can cause aurora at low latitudes, knock out satellites + power grids (1989 Quebec blackout). SPACE WEATHER monitored by agencies.",
+      "explanation": "EARTH's MAGNETIC FIELD ('GEOMAGNETIC FIELD') — generated by DYNAMO EFFECT in Earth's OUTER CORE — convection of molten iron + nickel alloy + Earth's rotation create + sustain the field. FIELD STRENGTH: ~25-65 µT at surface (~0.25-0.65 G); strongest at magnetic poles (70 µT), weakest near magnetic equator (25 µT). Varies with location, altitude, time. MAGNETIC POLES: distinct from GEOGRAPHIC POLES. (1) MAGNETIC NORTH POLE (where a compass N-pole points to — technically called magnetic SOUTH because unlike poles attract, but conventionally 'Magnetic North'). Currently located in ARCTIC OCEAN near SIBERIA + moving rapidly TOWARDS Russia — ~55 KM/YEAR (accelerated since 1990s from ~15 km/yr). Current position (2025) near 86°N, 172°E. Located in Canadian Arctic before 1990s, now moved northwest. Updated regularly in WORLD MAGNETIC MODEL (WMM, NOAA/British Geological Survey, 5-year cycle; 2020 model updated early due to rapid movement). (2) MAGNETIC SOUTH POLE — near coast of East Antarctica; also drifts ~5 km/yr. DIFFERENCE from geographic: MAGNETIC VARIATION (DECLINATION) — angle between magnetic + true north; varies by location; important for navigation. INCLINATION (DIP) — angle field makes with horizontal; 0° at magnetic equator, 90° at poles. GEOMAGNETIC REVERSALS — the N + S poles have FLIPPED POSITIONS ~200 times over geological history. Last reversal: Brunhes-Matuyama reversal, ~780,000 years ago. Typical reversal takes 1000-10,000 years; during which field weakens dramatically. We are currently experiencing field weakening (~9% weaker in 200 years — SOUTH ATLANTIC ANOMALY growing) — possible indicator of imminent reversal (could be geologically 'imminent' = within millennia). PALAEOMAGNETISM — records of past polarity preserved in volcanic + sedimentary rocks; led to discovery of PLATE TECTONICS + SEAFLOOR SPREADING (Harry Hess, Vine-Matthews-Morley, 1960s). CONSEQUENCES of Earth's field: (1) DEFLECTS solar wind + cosmic rays into VAN ALLEN BELTS (protects biosphere from radiation); without it, atmosphere + water would strip (like Mars did 4 Ga ago when its dynamo stopped). (2) AURORAE BOREALIS + AUSTRALIS — solar wind particles funneled to magnetic poles, excite atmospheric atoms → glow green (O), red (O), pink (N). (3) NAVIGATION — magnetic compass, bird migration + turtle navigation use magnetic field. (4) RADIO communication — ionosphere + magnetic field reflect radio waves. GEOMAGNETIC STORMS — solar CMEs disturb field; can cause aurora at low latitudes, knock out satellites + power grids (1989 Quebec blackout). SPACE WEATHER monitored by agencies. DRIFT ~55 km/yr; Magnetic N pole currently in Arctic Ocean near Siberia; poles have REVERSED multiple times in history.",
       "subject": "Physics",
       "topic": "Magnetism & Electromagnetism",
       "topic_code": "PHY_MAGNETISM",
@@ -66,18 +118,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-mag-01",
       "generated_at": "2026-04-21T04:50:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_00003"
+      "id": "sgk_PHY_MAGNETISM_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Near but NOT at geographic poles; DRIFT ~55 km/yr; Magnetic N pole currently in Arctic Ocean near Siberia; poles have REVERSED multiple times in history",
+          "now": "Near but NOT at geographic poles",
+          "moved_to_explanation": "DRIFT ~55 km/yr; Magnetic N pole currently in Arctic Ocean near Siberia; poles have REVERSED multiple times in history"
+        }
+      ]
     },
     {
       "stem": "A TRANSFORMER works on the principle of:",
       "options": [
-        {"option_text": "Static electricity", "is_correct": false},
-        {"option_text": "MUTUAL ELECTROMAGNETIC INDUCTION — AC primary generates changing flux; secondary coil (different turns) produces transformed voltage per turn ratio", "is_correct": true},
-        {"option_text": "Ohm's law alone", "is_correct": false},
-        {"option_text": "Hall effect", "is_correct": false}
+        {
+          "option_text": "Static electricity",
+          "is_correct": false
+        },
+        {
+          "option_text": "MUTUAL ELECTROMAGNETIC INDUCTION",
+          "is_correct": true
+        },
+        {
+          "option_text": "Ohm's law alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hall effect",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "TRANSFORMER — static electrical device that TRANSFERS ELECTRICAL ENERGY between two circuits via ELECTROMAGNETIC INDUCTION. Can step UP or step DOWN voltage (works only for AC, not DC). INVENTED by WILLIAM STANLEY (1885, USA), based on Michael Faraday + Joseph Henry's discoveries. STRUCTURE: (1) PRIMARY COIL (input); (2) SECONDARY COIL (output); (3) LAMINATED IRON CORE (soft iron, laminated to reduce eddy current losses). Windings insulated. PRINCIPLE: AC in primary creates OSCILLATING MAGNETIC FLUX in core → flux links secondary coil → induces EMF in secondary (Faraday's law). Voltage RATIO = TURNS RATIO: V_s / V_p = N_s / N_p. Ideal transformer: power conserved (P_p = P_s): V_p × I_p = V_s × I_s. STEP-UP: more turns on secondary → higher output voltage. STEP-DOWN: fewer turns on secondary → lower output voltage. LOSSES (real transformers 95-99% efficient): (1) COPPER LOSSES (I²R in windings, reduce by thicker wire). (2) IRON LOSSES: (a) Hysteresis losses (reduce with soft iron core); (b) EDDY CURRENT LOSSES (reduce with laminated core + silicon steel). (3) FLUX leakage. (4) Skin effect at HV. USES of TRANSFORMERS: (1) POWER TRANSMISSION — step-up at generation (11 kV → 220/400/765 kV for long-distance transmission, reduces I²R losses); step-down at distribution (400 kV → 33 kV → 11 kV → 230/415 V). Transformers at every substation. (2) ELECTRONICS — step-down transformers in chargers, AC adapters, doorbell transformers. (3) WELDING — high current, low voltage. (4) X-ray machines, induction furnaces, ignition coils of cars. WHY AC, NOT DC: transformers work ONLY with CHANGING flux (AC inherently); DC does not produce changing flux (unless chopped by electronics). AC's advantage in distribution = easy voltage transformation. TRANSMISSION: AC (3-phase, 50 Hz in India, 60 Hz USA) dominates; HVDC (High Voltage DC) now common for LONG-distance point-to-point transmission (lower losses, no reactive power issues) — India has 7+ HVDC links (Rihand-Dadri, Champa-Kurukshetra, Raigarh-Pugalur etc.). TATAR VS EDISON 'War of Currents' (1880s-90s) — Tesla's AC won over Edison's DC for distribution (Niagara Falls power station 1895, Westinghouse). INDIAN POWER: 11 kV, 33 kV, 66 kV, 132 kV, 220 kV, 400 kV, 765 kV, ±800 kV HVDC, ±1,200 kV UHVAC (experimental). Household supply: 230V RMS (325V peak) AC at 50 Hz single-phase + 400V 3-phase for industries.",
+      "explanation": "TRANSFORMER — static electrical device that TRANSFERS ELECTRICAL ENERGY between two circuits via ELECTROMAGNETIC INDUCTION. Can step UP or step DOWN voltage (works only for AC, not DC). INVENTED by WILLIAM STANLEY (1885, USA), based on Michael Faraday + Joseph Henry's discoveries. STRUCTURE: (1) PRIMARY COIL (input); (2) SECONDARY COIL (output); (3) LAMINATED IRON CORE (soft iron, laminated to reduce eddy current losses). Windings insulated. PRINCIPLE: AC in primary creates OSCILLATING MAGNETIC FLUX in core → flux links secondary coil → induces EMF in secondary (Faraday's law). Voltage RATIO = TURNS RATIO: V_s / V_p = N_s / N_p. Ideal transformer: power conserved (P_p = P_s): V_p × I_p = V_s × I_s. STEP-UP: more turns on secondary → higher output voltage. STEP-DOWN: fewer turns on secondary → lower output voltage. LOSSES (real transformers 95-99% efficient): (1) COPPER LOSSES (I²R in windings, reduce by thicker wire). (2) IRON LOSSES: (a) Hysteresis losses (reduce with soft iron core); (b) EDDY CURRENT LOSSES (reduce with laminated core + silicon steel). (3) FLUX leakage. (4) Skin effect at HV. USES of TRANSFORMERS: (1) POWER TRANSMISSION — step-up at generation (11 kV → 220/400/765 kV for long-distance transmission, reduces I²R losses); step-down at distribution (400 kV → 33 kV → 11 kV → 230/415 V). Transformers at every substation. (2) ELECTRONICS — step-down transformers in chargers, AC adapters, doorbell transformers. (3) WELDING — high current, low voltage. (4) X-ray machines, induction furnaces, ignition coils of cars. WHY AC, NOT DC: transformers work ONLY with CHANGING flux (AC inherently); DC does not produce changing flux (unless chopped by electronics). AC's advantage in distribution = easy voltage transformation. TRANSMISSION: AC (3-phase, 50 Hz in India, 60 Hz USA) dominates; HVDC (High Voltage DC) now common for LONG-distance point-to-point transmission (lower losses, no reactive power issues) — India has 7+ HVDC links (Rihand-Dadri, Champa-Kurukshetra, Raigarh-Pugalur etc.). TATAR VS EDISON 'War of Currents' (1880s-90s) — Tesla's AC won over Edison's DC for distribution (Niagara Falls power station 1895, Westinghouse). INDIAN POWER: 11 kV, 33 kV, 66 kV, 132 kV, 220 kV, 400 kV, 765 kV, ±800 kV HVDC, ±1,200 kV UHVAC (experimental). Household supply: 230V RMS (325V peak) AC at 50 Hz single-phase + 400V 3-phase for industries. AC primary generates changing flux; secondary coil (different turns) produces transformed voltage per turn ratio.",
       "subject": "Physics",
       "topic": "Magnetism & Electromagnetism",
       "topic_code": "PHY_MAGNETISM",
@@ -87,18 +159,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-mag-01",
       "generated_at": "2026-04-21T04:50:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_00004"
+      "id": "sgk_PHY_MAGNETISM_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "MUTUAL ELECTROMAGNETIC INDUCTION — AC primary generates changing flux; secondary coil (different turns) produces transformed voltage per turn ratio",
+          "now": "MUTUAL ELECTROMAGNETIC INDUCTION",
+          "moved_to_explanation": "AC primary generates changing flux; secondary coil (different turns) produces transformed voltage per turn ratio"
+        }
+      ]
     },
     {
       "stem": "An ELECTRIC MOTOR converts:",
       "options": [
-        {"option_text": "Sound to electricity", "is_correct": false},
-        {"option_text": "ELECTRICAL ENERGY to MECHANICAL energy — current-carrying coil in magnetic field experiences force (Fleming's LEFT HAND rule)", "is_correct": true},
-        {"option_text": "Heat to electricity", "is_correct": false},
-        {"option_text": "Light to mechanical motion", "is_correct": false}
+        {
+          "option_text": "Sound to electricity",
+          "is_correct": false
+        },
+        {
+          "option_text": "ELECTRICAL ENERGY to MECHANICAL energy",
+          "is_correct": true
+        },
+        {
+          "option_text": "Heat to electricity",
+          "is_correct": false
+        },
+        {
+          "option_text": "Light to mechanical motion",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ELECTRIC MOTOR — converts ELECTRICAL ENERGY to MECHANICAL energy (rotational). Inverse of GENERATOR. Based on PRINCIPLE that a current-carrying CONDUCTOR in a MAGNETIC FIELD experiences a FORCE (F = IL × B, vector form). FLEMING'S LEFT HAND RULE (for motors): thumb = Motion (force), forefinger = (magnetic) Field, middle = Current; arranged mutually perpendicular (left hand). Thumb → force on wire. BASIC DC MOTOR: rectangular coil (armature) pivoted in magnetic field (permanent magnet or field coil); current fed via commutator + brushes; current direction reverses every half turn → torque always in same direction → continuous rotation. TYPES of MOTORS: (1) DC MOTORS — commutator-based; subdivided into (a) series-wound (high starting torque; traction — old trains); (b) shunt-wound (constant speed); (c) compound; (d) permanent magnet (PMDC). Used in battery-operated devices, cars (starter), toys. (2) AC INDUCTION MOTORS — Tesla's invention 1887; most common industrial motor worldwide. Rotor inductively coupled to rotating magnetic field of stator (no brushes). Subdivided: squirrel-cage (simple, cheap, robust, widely used in fans, pumps, compressors) + wound-rotor (slip-ring, for high-torque start). (3) SYNCHRONOUS MOTORS — rotor locks to rotating field frequency; constant speed regardless of load; used in clocks (till quartz replaced them), generators, high-precision drives. (4) STEPPER MOTORS — rotate in discrete steps; used in printers, CNC, robotics. (5) BRUSHLESS DC (BLDC) — permanent magnet rotor, electronic commutation; quieter, more efficient; cars, drones, e-bikes, fans. (6) SERVO MOTORS — precise position control; robotics, industrial automation. FLEMING'S RIGHT HAND RULE (for generators): thumb = motion, forefinger = field, middle = induced current (right hand). Mnemonic: motor = left, generator = right. GENERATOR / DYNAMO — converts MECHANICAL → ELECTRICAL; based on FARADAY'S LAW of electromagnetic induction (changing flux through coil → EMF). Power plants (thermal, hydro, nuclear, wind) use generators to produce electricity. DC generators = dynamos; AC generators = alternators. ELECTRIC VEHICLES (EV) use motors (typically AC synchronous PM or BLDC) + BATTERIES instead of ICE + petrol. Modern EV motors reach 97%+ efficiency (vs ICE engines ~25%). Regenerative braking recovers kinetic energy back to battery. INDIA EV push: FAME-II subsidy, state EV policies, PM-Drive scheme 2024, Tata Nexon EV, Mahindra eVerito, Ola + Ather e-scooters, Atto 3 MG, + growth expected 30% EV by 2030.",
+      "explanation": "ELECTRIC MOTOR — converts ELECTRICAL ENERGY to MECHANICAL energy (rotational). Inverse of GENERATOR. Based on PRINCIPLE that a current-carrying CONDUCTOR in a MAGNETIC FIELD experiences a FORCE (F = IL × B, vector form). FLEMING'S LEFT HAND RULE (for motors): thumb = Motion (force), forefinger = (magnetic) Field, middle = Current; arranged mutually perpendicular (left hand). Thumb → force on wire. BASIC DC MOTOR: rectangular coil (armature) pivoted in magnetic field (permanent magnet or field coil); current fed via commutator + brushes; current direction reverses every half turn → torque always in same direction → continuous rotation. TYPES of MOTORS: (1) DC MOTORS — commutator-based; subdivided into (a) series-wound (high starting torque; traction — old trains); (b) shunt-wound (constant speed); (c) compound; (d) permanent magnet (PMDC). Used in battery-operated devices, cars (starter), toys. (2) AC INDUCTION MOTORS — Tesla's invention 1887; most common industrial motor worldwide. Rotor inductively coupled to rotating magnetic field of stator (no brushes). Subdivided: squirrel-cage (simple, cheap, robust, widely used in fans, pumps, compressors) + wound-rotor (slip-ring, for high-torque start). (3) SYNCHRONOUS MOTORS — rotor locks to rotating field frequency; constant speed regardless of load; used in clocks (till quartz replaced them), generators, high-precision drives. (4) STEPPER MOTORS — rotate in discrete steps; used in printers, CNC, robotics. (5) BRUSHLESS DC (BLDC) — permanent magnet rotor, electronic commutation; quieter, more efficient; cars, drones, e-bikes, fans. (6) SERVO MOTORS — precise position control; robotics, industrial automation. FLEMING'S RIGHT HAND RULE (for generators): thumb = motion, forefinger = field, middle = induced current (right hand). Mnemonic: motor = left, generator = right. GENERATOR / DYNAMO — converts MECHANICAL → ELECTRICAL; based on FARADAY'S LAW of electromagnetic induction (changing flux through coil → EMF). Power plants (thermal, hydro, nuclear, wind) use generators to produce electricity. DC generators = dynamos; AC generators = alternators. ELECTRIC VEHICLES (EV) use motors (typically AC synchronous PM or BLDC) + BATTERIES instead of ICE + petrol. Modern EV motors reach 97%+ efficiency (vs ICE engines ~25%). Regenerative braking recovers kinetic energy back to battery. INDIA EV push: FAME-II subsidy, state EV policies, PM-Drive scheme 2024, Tata Nexon EV, Mahindra eVerito, Ola + Ather e-scooters, Atto 3 MG, + growth expected 30% EV by 2030. current-carrying coil in magnetic field experiences force (Fleming's LEFT HAND rule).",
       "subject": "Physics",
       "topic": "Magnetism & Electromagnetism",
       "topic_code": "PHY_MAGNETISM",
@@ -108,15 +200,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-mag-01",
       "generated_at": "2026-04-21T04:50:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_00005"
+      "id": "sgk_PHY_MAGNETISM_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ELECTRICAL ENERGY to MECHANICAL energy — current-carrying coil in magnetic field experiences force (Fleming's LEFT HAND rule)",
+          "now": "ELECTRICAL ENERGY to MECHANICAL energy",
+          "moved_to_explanation": "current-carrying coil in magnetic field experiences force (Fleming's LEFT HAND rule)"
+        }
+      ]
     },
     {
       "stem": "ELECTROMAGNETIC WAVES travel in VACUUM at a speed of:",
       "options": [
-        {"option_text": "340 m/s (sound)", "is_correct": false},
-        {"option_text": "3 × 10⁸ m/s (speed of LIGHT in vacuum, c = 299,792,458 m/s exactly — defines the metre); all EM waves (radio to gamma) share this speed", "is_correct": true},
-        {"option_text": "30,000 km/s", "is_correct": false},
-        {"option_text": "1 m/s", "is_correct": false}
+        {
+          "option_text": "340 m/s (sound)",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 × 10⁸ m/s (speed of LIGHT in vacuum, c = 299,792,458 m/s exactly — defines the metre); all EM waves (radio to gamma) share this speed",
+          "is_correct": true
+        },
+        {
+          "option_text": "30,000 km/s",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 m/s",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "SPEED OF LIGHT (c) in VACUUM = 299,792,458 METRES/SECOND exactly (defined, not measured, since 1983 SI redefinition — metre is defined as the distance light travels in 1/299,792,458 s). Approximately 3 × 10⁸ m/s = 300,000 km/s = 186,000 miles/s. PROPERTIES: (1) FASTEST possible speed in universe (per Einstein's special relativity 1905). (2) SAME in ALL INERTIAL frames (Michelson-Morley experiment 1887 disproved aether; Einstein axiom). (3) Same speed for ALL EM waves in vacuum — radio waves, microwaves, infrared, visible light, UV, X-rays, gamma rays. (4) SLOWER in media — refractive index n = c/v > 1 for ordinary media. Water n≈1.33, glass ~1.5, diamond ~2.4. Cherenkov radiation = particles exceeding c/n in medium (like blue glow in nuclear reactors). ELECTROMAGNETIC SPECTRUM (in order of INCREASING frequency / DECREASING wavelength): (1) RADIO WAVES — λ > 1m, used in AM/FM radio, TV, mobile (GSM, 4G, 5G). ELF, VLF, LF, MF, HF, VHF, UHF. (2) MICROWAVES — λ 1m-1mm; satellite, radar, mobile (cm-wave, mm-wave 5G), MICROWAVE OVEN (2.45 GHz heats water via dipole rotation). (3) INFRARED (IR) — λ 1mm-700nm; heat radiation, night-vision, remote controls, fiber-optic communication (1.3/1.55 μm windows in silica glass). (4) VISIBLE LIGHT — λ 700-400 nm; ROYGBIV (Red, Orange, Yellow, Green, Blue, Indigo, Violet); our eyes evolved for this band (Sun's peak emission). (5) ULTRAVIOLET (UV) — λ 400-10 nm; sunburn, vitamin D synthesis, sterilisation, forensics; UV-A/B/C. Ozone absorbs UV-C + most UV-B. (6) X-RAYS — λ 10nm-0.01nm; medical imaging (Röntgen 1895), security screening, CT scans. (7) GAMMA RAYS — λ < 0.01nm; nuclear decay, gamma-ray bursts (most energetic events in universe), radiotherapy. ENERGY: E = hν = hc/λ (Planck's constant h = 6.626 × 10⁻³⁴ Js) — higher frequency = higher photon energy; gamma + X-rays are ionising (can damage DNA → cancer); UV above 290nm as well; visible + lower = non-ionising. MEASUREMENT of c: (1) ROEMER (1676) via Jupiter's moons — first measurement. (2) FIZEAU + FOUCAULT (1850s) — rotating mirror. (3) MICHELSON (1920s) — interferometer. (4) Modern: cavity resonance, laser interferometry. EVENTUALLY FIXED by definition 1983. Light takes: 8.3 min from Sun, 1.3 s from Moon, 4.2 yrs from Proxima Centauri, 2.5 MY from Andromeda.",
@@ -134,10 +246,22 @@
     {
       "stem": "MAGNETIC RESONANCE IMAGING (MRI) uses:",
       "options": [
-        {"option_text": "X-rays", "is_correct": false},
-        {"option_text": "STRONG MAGNETIC FIELD (1.5-7 Tesla) + RADIO WAVES to image soft tissues; NO ionising radiation; based on NMR principle", "is_correct": true},
-        {"option_text": "Gamma rays", "is_correct": false},
-        {"option_text": "Ultrasound", "is_correct": false}
+        {
+          "option_text": "X-rays",
+          "is_correct": false
+        },
+        {
+          "option_text": "STRONG MAGNETIC FIELD (1.5-7 Tesla) + RADIO WAVES to image soft tissues; NO ionising radiation; based on NMR principle",
+          "is_correct": true
+        },
+        {
+          "option_text": "Gamma rays",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ultrasound",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "MRI (MAGNETIC RESONANCE IMAGING) — non-invasive medical imaging technique. PRINCIPLE: NUCLEAR MAGNETIC RESONANCE (NMR) — discovered by FELIX BLOCH + EDWARD PURCELL (Nobel Physics 1952). HOW IT WORKS: (1) PATIENT placed in STRONG MAGNETIC FIELD — typical clinical 1.5 T or 3 T (2100-4500× Earth's field); research MRI up to 10.5 T (Minnesota, 2023); 11.7 T INUMAC (France, 2019). (2) Hydrogen NUCLEI (protons — abundant in water + fat in body, 63% of body H₂O) ALIGN with magnetic field (most parallel, some anti-parallel). (3) RADIO FREQUENCY (RF) pulse at the LARMOR FREQUENCY (42.58 MHz/Tesla for proton; so 63.9 MHz for 1.5T, 127.7 MHz for 3T) causes protons to ABSORB energy + tip out of alignment. (4) When RF pulse off, protons RELAX BACK to alignment, emitting RF signal (T1 + T2 relaxation times — tissue-specific; differ for fat vs water vs muscle vs tumor). (5) Signal + position mapped via GRADIENT COILS + computer Fourier reconstruction = IMAGE. ADVANTAGES over CT/X-RAY: (a) NO IONISING RADIATION (safe for repeated use + pregnant women); (b) SUPERB SOFT TISSUE contrast — brain, spinal cord, muscles, cartilage, organs; (c) MULTIPLANAR imaging (any slice orientation); (d) FUNCTIONAL MRI (fMRI) can see brain activity via BOLD signal. DISADVANTAGES: (a) EXPENSIVE (machines $1-3 million; scan $200-2000); (b) SLOW scans 30-60 min; (c) NOISY (gradient coil banging); (d) Claustrophobic bore; (e) CONTRAINDICATED in patients with metal implants (pacemakers, some clips, cochlear implants — though MR-conditional implants increasingly available); (f) less good for bones (use CT). NOBEL PRIZES: Medicine 2003 to Paul LAUTERBUR + Peter MANSFIELD for MRI development (1970s). Chemistry 2002 to Kurt WÜTHRICH + Fenn + Tanaka for NMR application to biomolecules. FUNCTIONAL MRI (fMRI) — measures blood oxygenation level (BOLD); maps brain activity; core neuroscience tool since 1990s. OTHER IMAGING (India + world): (1) X-RAY / RADIOGRAPHY (1895, Röntgen) — bones, chest, dental; (2) CT / CAT SCAN (1971, Hounsfield + Cormack, Nobel 1979) — cross-sectional X-ray; brain injuries, cancers. (3) ULTRASOUND — sonar waves; pregnancy, abdomen. (4) PET SCAN (Positron Emission Tomography) — radioactive tracers; cancer staging + brain + heart. (5) SPECT — like PET but cheaper isotopes. (6) NUCLEAR bone scan, thyroid scan. (7) Endoscopy — cameras through openings. INDIA has ~5,000 MRI machines (USA ~13,000), radiology infrastructure still inadequate for 140 crore people; telemedicine + AI reading help.",
@@ -155,10 +279,22 @@
     {
       "stem": "A COMPASS needle always points approximately:",
       "options": [
-        {"option_text": "East-West", "is_correct": false},
-        {"option_text": "NORTH-SOUTH — aligns with Earth's magnetic field; compass N-pole points to geographic North (which is actually magnetic South)", "is_correct": true},
-        {"option_text": "Upward", "is_correct": false},
-        {"option_text": "Randomly", "is_correct": false}
+        {
+          "option_text": "East-West",
+          "is_correct": false
+        },
+        {
+          "option_text": "NORTH-SOUTH",
+          "is_correct": true
+        },
+        {
+          "option_text": "Upward",
+          "is_correct": false
+        },
+        {
+          "option_text": "Randomly",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "COMPASS — freely-pivoting MAGNETIZED NEEDLE that aligns with Earth's MAGNETIC FIELD. Needle's N-POLE (north-seeking pole) points towards GEOGRAPHIC NORTH — which is technically near the MAGNETIC SOUTH pole (unlike poles attract; the 'North Magnetic Pole' is actually the S-pole of Earth's magnetic dipole). INVENTED: in China, between 200 BCE-100 CE using LODESTONE (natural magnetite Fe₃O₄ — 'magnesian stone'). Used first for fortune-telling (feng shui), then navigation by 1000 CE (Song Dynasty). Spread to Europe by 12th c. (Alexander Neckam 1190 described it). Enabled AGE OF EXPLORATION — Columbus, Vasco da Gama, Magellan. EARTH's FIELD — produces DECLINATION (angle between magnetic + true N) + INCLINATION (angle with horizontal). Declination varies by location + over time (updated in World Magnetic Model). For navigation, maps give local magnetic declination to convert compass → true bearing. TYPES of COMPASS: (1) MAGNETIC compass — traditional, uses Earth's field; cheap, no power; but affected by local magnetic anomalies + interference. (2) GYROCOMPASS — uses gyroscope + Earth's rotation; finds TRUE NORTH (no declination); used in ships + aircraft; not affected by magnetic field but needs power. (3) GPS compass — computes heading from GPS speed/vector. (4) SOLID STATE electronic (magnetometer) — in smartphones, drones, AR/VR; Hall effect or magnetoresistive sensors. USES of COMPASS: (1) NAVIGATION — maritime, aviation, hiking, military; (2) SURVEYING + mapping; (3) alignment of solar panels + dishes; (4) Islamic prayer direction (Qibla to Mecca); (5) Feng Shui; (6) Search + rescue; (7) Mobile apps (Google Maps arrow, Pokémon Go direction). BIRD + ANIMAL MAGNETORECEPTION — many animals can sense Earth's magnetic field: HOMING pigeons, MONARCH butterflies (annual 3000-km migration), sea TURTLES (return to natal beaches after decades), SHARKS, SALMON, bees, bats. Mechanism debated: (a) MAGNETITE crystals (in beak of pigeons, trout noses); (b) CRYPTOCHROME proteins in eye (quantum biology — radical pair mechanism). Research frontier. HUMANS may also have weak magnetoreception — Caltech study 2019 showed brain responses but no conscious perception. CUSTOM ETHICS: cattle + deer face NS axis while grazing (Begall et al. 2008). MAGNETIC STORMS can make compasses erratic; sailors knew this. ASTRONAUTS: compasses don't work in space (no Earth magnetic field beyond Van Allen belts); use gyros + star trackers.",
@@ -171,15 +307,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-mag-01",
       "generated_at": "2026-04-21T04:50:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_00008"
+      "id": "sgk_PHY_MAGNETISM_00008",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "NORTH-SOUTH — aligns with Earth's magnetic field; compass N-pole points to geographic North (which is actually magnetic South)",
+          "now": "NORTH-SOUTH",
+          "moved_to_explanation": "aligns with Earth's magnetic field; compass N-pole points to geographic North (which is actually magnetic South)"
+        }
+      ]
     },
     {
       "stem": "MAGLEV (magnetic levitation) trains utilise:",
       "options": [
-        {"option_text": "Steam power", "is_correct": false},
-        {"option_text": "MAGNETIC FIELDS to LIFT + PROPEL trains without physical contact; zero friction on wheels; Japan Chuo Shinkansen achieved 603 km/h", "is_correct": true},
-        {"option_text": "Superconducting cables buried underground", "is_correct": false},
-        {"option_text": "Electrostatic charge", "is_correct": false}
+        {
+          "option_text": "Steam power",
+          "is_correct": false
+        },
+        {
+          "option_text": "MAGNETIC FIELDS to LIFT + PROPEL trains without physical contact; zero friction on wheels; Japan Chuo Shinkansen achieved 603 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "Superconducting cables buried underground",
+          "is_correct": false
+        },
+        {
+          "option_text": "Electrostatic charge",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "MAGLEV (MAGNETIC LEVITATION) — transport technology that uses MAGNETIC FORCES to LIFT + PROPEL vehicles WITHOUT physical contact with the track. Advantages: (1) NO friction from wheels (only air resistance); (2) HIGH SPEEDS (500+ km/h); (3) Smooth, quiet ride; (4) Low maintenance (no wheel/track wear). Disadvantages: (1) COSTLY infrastructure ($20-50M/km); (2) Specialized tracks; (3) Power-intensive. TYPES: (1) EMS (Electromagnetic Suspension) — ELECTROMAGNETS on train attracted UPWARD to iron rails; active control (feedback) since unstable by Earnshaw's theorem; e.g., TRANSRAPID (Germany — Shanghai Maglev; bankrupt). (2) EDS (Electrodynamic Suspension) — SUPERCONDUCTING magnets on train + induced currents in track coils REPEL (Lenz's law); more stable at high speed; Japan's SCMaglev (Chuo Shinkansen). (3) INDUCTRACK — permanent magnet arrays (Halbach) on train + passive coils in track; no superconductor needed; new approach. (4) LINEAR INDUCTION MOTOR for propulsion — stator along track, train acts as rotor; interaction with rail coils + train magnets provides thrust. OPERATIONAL MAGLEV LINES (world): (1) SHANGHAI MAGLEV (China, 30 km airport line, 431 km/h top; operational 2004). (2) CHUO SHINKANSEN Maglev (Japan, Tokyo-Nagoya under construction; 505 km/h design speed; record 603 km/h in 2015 manned test). (3) LINIMO (Japan, 9 km commuter line, 100 km/h). (4) Incheon Airport Maglev (S. Korea, 6 km, 110 km/h). (5) CHANGSHA Maglev (China, 18.5 km, 100 km/h). (6) BEIJING S1 maglev line (10 km). INDIA: proposals + studies for Mumbai-Nagpur, Mumbai-Delhi, Mumbai-Pune etc.; MUMBAI-AHMEDABAD bullet train (high-speed rail, not maglev — Shinkansen tech) under construction (Japanese collab, due 2028). No operational maglev in India yet. HYPERLOOP — proposed ultrafast (1000+ km/h) tube transport by Elon Musk (2013 white paper); combines maglev + vacuum tube. Virgin Hyperloop tested 2020 (472 km/h). Several hyperloop companies (Hardt, Zeleros, TransPod, Hyperloop TT) in development; Virgin Hyperloop scaled back 2022. Maharashtra + others explored Pune-Mumbai hyperloop (now on hold). HIGH-SPEED RAIL (HSR) in India: MUMBAI-AHMEDABAD (508 km, 320 km/h, 12 stations, due 2028 — Japan International Cooperation funded ₹1.08 lakh crore) — first bullet train. Future corridors: Delhi-Varanasi, Delhi-Ahmedabad, Mumbai-Hyderabad, Chennai-Bengaluru-Mysuru, Delhi-Amritsar, etc.",
@@ -197,13 +353,25 @@
     {
       "stem": "The SI unit of MAGNETIC FIELD STRENGTH (Magnetic Flux Density) is:",
       "options": [
-        {"option_text": "Gauss", "is_correct": false},
-        {"option_text": "TESLA (T) — named after Nikola Tesla; 1 T = Wb/m² = kg/(A·s²); CGS unit Gauss, 1 T = 10,000 G", "is_correct": true},
-        {"option_text": "Newton", "is_correct": false},
-        {"option_text": "Weber", "is_correct": false}
+        {
+          "option_text": "Gauss",
+          "is_correct": false
+        },
+        {
+          "option_text": "TESLA (T)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Newton",
+          "is_correct": false
+        },
+        {
+          "option_text": "Weber",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "MAGNETIC FIELD / FLUX DENSITY (B) — SI unit TESLA (T). NAMED AFTER NIKOLA TESLA (1856-1943), Serbian-American inventor + electrical genius; adopted 1960 by CGPM. DEFINITION: 1 T = 1 WEBER per square METRE (Wb/m²) = 1 kg/(A·s²) = 1 V·s/m². Alternative definition: 1 T is magnetic field that exerts 1 NEWTON force on a 1-metre wire carrying 1 AMPERE perpendicular to it (F = BIL). CGS unit: GAUSS (G); 1 T = 10,000 G. Earth's field ~25-65 µT = 0.25-0.65 G. TYPICAL MAGNETIC FIELD STRENGTHS: (1) Neurons' magnetic field (MEG): femtotesla (10⁻¹⁵ T). (2) Intergalactic: nT (10⁻⁹). (3) Earth's surface: ~30-60 µT. (4) Refrigerator magnet: 1-5 mT (10⁻³ T). (5) Surface of sunspot: 0.15 T. (6) Neodymium (NdFeB) magnet: 1-1.4 T. (7) Typical MRI: 1.5-7 T. (8) Research MRI: up to 11.7 T. (9) LHC dipole magnets: 8.3 T. (10) Strongest continuous lab magnet: 45 T (National High Magnetic Field Lab, Florida). (11) Strongest pulsed: ~1,200 T (Japan, milliseconds). (12) Neutron star surface: 10⁸-10¹⁰ T; magnetar (extreme neutron star): 10¹⁰-10¹¹ T (most magnetic objects in universe; 1 T on magnetar surface would distort atoms). RELATED MAGNETIC SI UNITS: (1) WEBER (Wb) = MAGNETIC FLUX = T·m² = V·s. Named after Wilhelm Eduard Weber. Flux Φ = B × A (for uniform field perpendicular to area A). (2) HENRY (H) = INDUCTANCE = V·s/A = Wb/A. Named after Joseph Henry. (3) AMPERE-TURN = MAGNETOMOTIVE FORCE. (4) Reluctance (R) = A·turns/Wb. GAUSS WAS THE CGS UNIT — 100 years of use (1830s-1960s). Many practitioners still prefer Gauss for small fields (e.g., Earth's). 'GAUSSMETER' still common in testing. MAGNETIC FIELD INTENSITY (H) — separate quantity; H = B/μ (in medium); SI unit = Ampere/metre (A/m); measures field without magnetic response of material. PERMEABILITY (μ) of free space (μ₀) = 4π × 10⁻⁷ T·m/A ≈ 1.257 × 10⁻⁶ exact value (was exact pre-2019 SI redefinition; now measured with small uncertainty). Relative permeability μ_r = μ/μ₀; for iron 200-5000; soft iron for transformer cores. PROGRESSION: magnets get stronger — NdFeB (1984) + SmCo best permanent magnets; superconducting coils (NbTi, Nb3Sn) enable high-field MRI + accelerators + fusion (ITER's 13 T toroidal field coils — world's largest superconducting magnet).",
+      "explanation": "MAGNETIC FIELD / FLUX DENSITY (B) — SI unit TESLA (T). NAMED AFTER NIKOLA TESLA (1856-1943), Serbian-American inventor + electrical genius; adopted 1960 by CGPM. DEFINITION: 1 T = 1 WEBER per square METRE (Wb/m²) = 1 kg/(A·s²) = 1 V·s/m². Alternative definition: 1 T is magnetic field that exerts 1 NEWTON force on a 1-metre wire carrying 1 AMPERE perpendicular to it (F = BIL). CGS unit: GAUSS (G); 1 T = 10,000 G. Earth's field ~25-65 µT = 0.25-0.65 G. TYPICAL MAGNETIC FIELD STRENGTHS: (1) Neurons' magnetic field (MEG): femtotesla (10⁻¹⁵ T). (2) Intergalactic: nT (10⁻⁹). (3) Earth's surface: ~30-60 µT. (4) Refrigerator magnet: 1-5 mT (10⁻³ T). (5) Surface of sunspot: 0.15 T. (6) Neodymium (NdFeB) magnet: 1-1.4 T. (7) Typical MRI: 1.5-7 T. (8) Research MRI: up to 11.7 T. (9) LHC dipole magnets: 8.3 T. (10) Strongest continuous lab magnet: 45 T (National High Magnetic Field Lab, Florida). (11) Strongest pulsed: ~1,200 T (Japan, milliseconds). (12) Neutron star surface: 10⁸-10¹⁰ T; magnetar (extreme neutron star): 10¹⁰-10¹¹ T (most magnetic objects in universe; 1 T on magnetar surface would distort atoms). RELATED MAGNETIC SI UNITS: (1) WEBER (Wb) = MAGNETIC FLUX = T·m² = V·s. Named after Wilhelm Eduard Weber. Flux Φ = B × A (for uniform field perpendicular to area A). (2) HENRY (H) = INDUCTANCE = V·s/A = Wb/A. Named after Joseph Henry. (3) AMPERE-TURN = MAGNETOMOTIVE FORCE. (4) Reluctance (R) = A·turns/Wb. GAUSS WAS THE CGS UNIT — 100 years of use (1830s-1960s). Many practitioners still prefer Gauss for small fields (e.g., Earth's). 'GAUSSMETER' still common in testing. MAGNETIC FIELD INTENSITY (H) — separate quantity; H = B/μ (in medium); SI unit = Ampere/metre (A/m); measures field without magnetic response of material. PERMEABILITY (μ) of free space (μ₀) = 4π × 10⁻⁷ T·m/A ≈ 1.257 × 10⁻⁶ exact value (was exact pre-2019 SI redefinition; now measured with small uncertainty). Relative permeability μ_r = μ/μ₀; for iron 200-5000; soft iron for transformer cores. PROGRESSION: magnets get stronger — NdFeB (1984) + SmCo best permanent magnets; superconducting coils (NbTi, Nb3Sn) enable high-field MRI + accelerators + fusion (ITER's 13 T toroidal field coils — world's largest superconducting magnet). named after Nikola Tesla; 1 T = Wb/m² = kg/(A·s²); CGS unit Gauss, 1 T = 10,000 G.",
       "subject": "Physics",
       "topic": "Magnetism & Electromagnetism",
       "topic_code": "PHY_MAGNETISM",
@@ -213,7 +381,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-mag-01",
       "generated_at": "2026-04-21T04:50:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_00010"
+      "id": "sgk_PHY_MAGNETISM_00010",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "TESLA (T) — named after Nikola Tesla; 1 T = Wb/m² = kg/(A·s²); CGS unit Gauss, 1 T = 10,000 G",
+          "now": "TESLA (T)",
+          "moved_to_explanation": "named after Nikola Tesla; 1 T = Wb/m² = kg/(A·s²); CGS unit Gauss, 1 T = 10,000 G"
+        }
+      ]
     }
   ]
 }

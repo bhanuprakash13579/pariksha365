@@ -8,10 +8,22 @@
     {
       "stem": "The MOST reactive metal in the reactivity series (from those commonly tested) is:",
       "options": [
-        {"option_text": "Iron", "is_correct": false},
-        {"option_text": "Potassium", "is_correct": true},
-        {"option_text": "Copper", "is_correct": false},
-        {"option_text": "Zinc", "is_correct": false}
+        {
+          "option_text": "Iron",
+          "is_correct": false
+        },
+        {
+          "option_text": "Potassium",
+          "is_correct": true
+        },
+        {
+          "option_text": "Copper",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zinc",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Reactivity series (most → least reactive): K > Na > Ca > Mg > Al > Zn > Fe > Pb > [H] > Cu > Ag > Au > Pt. Potassium reacts violently with water. Gold and platinum are the least reactive (noble metals).",
@@ -29,10 +41,22 @@
     {
       "stem": "Match the ALLOY with its MAIN COMPOSITION. A. Brass.  B. Bronze.  C. Stainless Steel.  D. Solder. List-II: 1. Copper + Zinc.  2. Copper + Tin.  3. Iron + Chromium + Nickel.  4. Tin + Lead.",
       "options": [
-        {"option_text": "A-1, B-2, C-3, D-4", "is_correct": true},
-        {"option_text": "A-2, B-1, C-3, D-4", "is_correct": false},
-        {"option_text": "A-1, B-3, C-2, D-4", "is_correct": false},
-        {"option_text": "A-1, B-2, C-4, D-3", "is_correct": false}
+        {
+          "option_text": "A-1, B-2, C-3, D-4",
+          "is_correct": true
+        },
+        {
+          "option_text": "A-2, B-1, C-3, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-3, C-2, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-1, B-2, C-4, D-3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Brass (Cu + Zn). Bronze (Cu + Sn — classical Bronze-Age material). Stainless Steel (Fe + Cr + Ni — typically 18% Cr + 8% Ni for '18/8'). Solder (Sn + Pb — modern lead-free uses Sn + Ag). Other alloys: duralumin (Al + Cu + Mg + Mn), gunmetal (Cu + Sn + Zn).",
@@ -50,10 +74,22 @@
     {
       "stem": "The LIGHTEST metal is:",
       "options": [
-        {"option_text": "Aluminium", "is_correct": false},
-        {"option_text": "Lithium", "is_correct": true},
-        {"option_text": "Magnesium", "is_correct": false},
-        {"option_text": "Sodium", "is_correct": false}
+        {
+          "option_text": "Aluminium",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lithium",
+          "is_correct": true
+        },
+        {
+          "option_text": "Magnesium",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sodium",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Lithium — lightest metal (density 0.53 g/cc). Li-ion batteries. Used in lubricants, aircraft alloys. Aluminium (2.7) is the lightest COMMON construction metal. Magnesium (1.74), Sodium (0.97) are also very light. Densest metal: Osmium (22.6).",
@@ -71,13 +107,25 @@
     {
       "stem": "The metal used in making MAGNETS is:",
       "options": [
-        {"option_text": "Aluminium", "is_correct": false},
-        {"option_text": "Iron / Cobalt / Nickel (and some alloys)", "is_correct": true},
-        {"option_text": "Copper", "is_correct": false},
-        {"option_text": "Silver", "is_correct": false}
+        {
+          "option_text": "Aluminium",
+          "is_correct": false
+        },
+        {
+          "option_text": "Iron / Cobalt / Nickel",
+          "is_correct": true
+        },
+        {
+          "option_text": "Copper",
+          "is_correct": false
+        },
+        {
+          "option_text": "Silver",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Ferromagnetic metals: Iron (Fe), Cobalt (Co), Nickel (Ni), Gadolinium. Most common in everyday magnets: iron + alloys (Alnico: Al+Ni+Co+Fe), neodymium (NdFeB), samarium-cobalt. Copper/silver — diamagnetic / paramagnetic, not permanent magnets.",
+      "explanation": "Ferromagnetic metals: Iron (Fe), Cobalt (Co), Nickel (Ni), Gadolinium. Most common in everyday magnets: iron + alloys (Alnico: Al+Ni+Co+Fe), neodymium (NdFeB), samarium-cobalt. Copper/silver — diamagnetic / paramagnetic, not permanent magnets. and some alloys.",
       "subject": "Chemistry",
       "topic": "Metals, non-metals & alloys — mixed tiers",
       "topic_code": "CHE_METALS_NONMETALS_MIXED",
@@ -87,15 +135,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-22-che-met-04",
       "generated_at": "2026-04-22T21:00:00+00:00",
-      "id": "sgk_CHE_METALS_NONMETALS_MIXED_00004"
+      "id": "sgk_CHE_METALS_NONMETALS_MIXED_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Iron / Cobalt / Nickel (and some alloys)",
+          "now": "Iron / Cobalt / Nickel",
+          "moved_to_explanation": "and some alloys"
+        }
+      ]
     },
     {
       "stem": "The ONLY non-metal that is LIQUID at room temperature is:",
       "options": [
-        {"option_text": "Mercury", "is_correct": false},
-        {"option_text": "Bromine", "is_correct": true},
-        {"option_text": "Iodine", "is_correct": false},
-        {"option_text": "Sulphur", "is_correct": false}
+        {
+          "option_text": "Mercury",
+          "is_correct": false
+        },
+        {
+          "option_text": "Bromine",
+          "is_correct": true
+        },
+        {
+          "option_text": "Iodine",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sulphur",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Bromine (Br₂) — only LIQUID non-metal at room temperature (reddish-brown liquid, MP −7 °C, BP 59 °C). Iodine is solid (sublimes). Sulphur is yellow solid. Mercury (Hg) is the only LIQUID METAL at room temperature.",
@@ -113,10 +181,22 @@
     {
       "stem": "STEEL becomes STAINLESS when alloyed with:",
       "options": [
-        {"option_text": "Carbon only", "is_correct": false},
-        {"option_text": "Chromium (usually ≥10.5%) + Nickel", "is_correct": true},
-        {"option_text": "Copper only", "is_correct": false},
-        {"option_text": "Silver", "is_correct": false}
+        {
+          "option_text": "Carbon only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chromium (usually ≥10.5%) + Nickel",
+          "is_correct": true
+        },
+        {
+          "option_text": "Copper only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Silver",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Stainless Steel = Fe + C (≤2%) + Cr (≥10.5%, typically 16-18%) + Ni (for austenitic grades, 8-10%). Cr forms a passive oxide layer that resists corrosion. Named grades: 304, 316 (marine). 18/8 stainless = 18% Cr + 8% Ni.",
@@ -134,10 +214,22 @@
     {
       "stem": "The metal with the HIGHEST electrical and thermal conductivity is:",
       "options": [
-        {"option_text": "Copper", "is_correct": false},
-        {"option_text": "Silver", "is_correct": true},
-        {"option_text": "Gold", "is_correct": false},
-        {"option_text": "Aluminium", "is_correct": false}
+        {
+          "option_text": "Copper",
+          "is_correct": false
+        },
+        {
+          "option_text": "Silver",
+          "is_correct": true
+        },
+        {
+          "option_text": "Gold",
+          "is_correct": false
+        },
+        {
+          "option_text": "Aluminium",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Silver — highest electrical AND thermal conductivity of any metal. Expensive, so COPPER is preferred in everyday electrical wiring (next best). Silver is used in high-end electronics, RF connectors, antibacterial coatings. Gold — least reactive + good conductor, used where corrosion resistance matters.",

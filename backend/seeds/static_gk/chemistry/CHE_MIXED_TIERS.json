@@ -207,7 +207,7 @@
       "stem": "A MOLE of any substance contains:",
       "options": [
         {
-          "option_text": "6.022 × 10²³ particles (atoms/molecules/ions)",
+          "option_text": "6.022 × 10²³ particles",
           "is_correct": true
         },
         {
@@ -224,7 +224,7 @@
         }
       ],
       "correct_letter": "A",
-      "explanation": "Avogadro's number NA = 6.022 × 10²³ per mole (exact since 2019 SI redefinition). Distractor D is a partial truth — 22.4 L is the molar volume of IDEAL GAS at OLD-STP only (1 atm, 0 °C), not a definition of the mole.",
+      "explanation": "Avogadro's number NA = 6.022 × 10²³ per mole (exact since 2019 SI redefinition). Distractor D is a partial truth — 22.4 L is the molar volume of IDEAL GAS at OLD-STP only (1 atm, 0 °C), not a definition of the mole. atoms/molecules/ions.",
       "subject": "Chemistry",
       "topic": "Chemistry — mixed tiers",
       "topic_code": "CHE_MIXED_TIERS",
@@ -234,7 +234,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-21-che-mt-07",
       "generated_at": "2026-04-21T18:15:00+00:00",
-      "id": "sgk_CHE_MIXED_TIERS_00007"
+      "id": "sgk_CHE_MIXED_TIERS_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "6.022 × 10²³ particles (atoms/molecules/ions)",
+          "now": "6.022 × 10²³ particles",
+          "moved_to_explanation": "atoms/molecules/ions"
+        }
+      ]
     },
     {
       "stem": "Which of the following is INCORRECTLY paired?",

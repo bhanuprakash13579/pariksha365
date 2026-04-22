@@ -8,13 +8,25 @@
     {
       "stem": "The DELHI SULTANATE (1206-1526) comprised FIVE SUCCESSIVE dynasties. The FIRST was:",
       "options": [
-        {"option_text": "Tughlaq", "is_correct": false},
-        {"option_text": "SLAVE / MAMLUK dynasty (1206-1290) — founded by Qutb-ud-din Aibak, a slave-general of Muhammad Ghori", "is_correct": true},
-        {"option_text": "Khilji", "is_correct": false},
-        {"option_text": "Lodi", "is_correct": false}
+        {
+          "option_text": "Tughlaq",
+          "is_correct": false
+        },
+        {
+          "option_text": "SLAVE / MAMLUK dynasty (1206-1290)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Khilji",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lodi",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "DELHI SULTANATE (1206-1526) — five successive dynasties of Muslim rulers in North India. (1) SLAVE / MAMLUK dynasty (1206-1290) — founded by QUTB-UD-DIN AIBAK (1206-1210), originally Turkic slave of MUHAMMAD GHORI. Succeeded by ILTUTMISH (1211-36, proper founder of sultanate), RAZIA SULTANA (1236-40, first + only female sultan), BALBAN (1266-87, 'iron-handed' — 'zil-i-ilahi' theory). (2) KHILJI dynasty (1290-1320) — founded by Jalal-ud-din Khilji; apex under ALA-UD-DIN KHILJI (1296-1316) who repelled Mongol invasions, conquered Gujarat, Malwa, Deccan (Devagiri, Warangal, Dwarasamudra, Madurai); introduced market price controls; built Siri fort, Alai Darwaza, Hauz Khas. Died after court intrigue. (3) TUGHLAQ dynasty (1320-1414) — GHIYAS-UD-DIN TUGHLAQ founded (1320). MUHAMMAD-BIN-TUGHLAQ (1325-51) — 'wise fool' — moved capital Delhi→Daulatabad (forced migration, disaster); issued token currency (copper coins as silver — counterfeited, withdrawn); ambitious failed projects. FIROZ SHAH TUGHLAQ (1351-88) — moderate reformer; restored Delhi; built canals, Firoz Shah Kotla; shifted Ashokan pillars to Delhi. TIMUR's INVASION 1398 destroyed Delhi — effectively ended Tughlaq power. (4) SAYYID dynasty (1414-51) — founded by Khizr Khan (Timur's appointee); 4 weak rulers; Delhi reduced to 'Delhi to Palam'. (5) LODI dynasty (1451-1526) — first AFGHAN dynasty; Bahlul Lodi founded. IBRAHIM LODI (1517-26) — defeated by BABUR at FIRST BATTLE OF PANIPAT (21 April 1526) — ended Delhi Sultanate, began MUGHAL empire. MNEMONIC 'SKTSL' — Slave, Khilji, Tughlaq, Sayyid, Lodi.",
+      "explanation": "DELHI SULTANATE (1206-1526) — five successive dynasties of Muslim rulers in North India. (1) SLAVE / MAMLUK dynasty (1206-1290) — founded by QUTB-UD-DIN AIBAK (1206-1210), originally Turkic slave of MUHAMMAD GHORI. Succeeded by ILTUTMISH (1211-36, proper founder of sultanate), RAZIA SULTANA (1236-40, first + only female sultan), BALBAN (1266-87, 'iron-handed' — 'zil-i-ilahi' theory). (2) KHILJI dynasty (1290-1320) — founded by Jalal-ud-din Khilji; apex under ALA-UD-DIN KHILJI (1296-1316) who repelled Mongol invasions, conquered Gujarat, Malwa, Deccan (Devagiri, Warangal, Dwarasamudra, Madurai); introduced market price controls; built Siri fort, Alai Darwaza, Hauz Khas. Died after court intrigue. (3) TUGHLAQ dynasty (1320-1414) — GHIYAS-UD-DIN TUGHLAQ founded (1320). MUHAMMAD-BIN-TUGHLAQ (1325-51) — 'wise fool' — moved capital Delhi→Daulatabad (forced migration, disaster); issued token currency (copper coins as silver — counterfeited, withdrawn); ambitious failed projects. FIROZ SHAH TUGHLAQ (1351-88) — moderate reformer; restored Delhi; built canals, Firoz Shah Kotla; shifted Ashokan pillars to Delhi. TIMUR's INVASION 1398 destroyed Delhi — effectively ended Tughlaq power. (4) SAYYID dynasty (1414-51) — founded by Khizr Khan (Timur's appointee); 4 weak rulers; Delhi reduced to 'Delhi to Palam'. (5) LODI dynasty (1451-1526) — first AFGHAN dynasty; Bahlul Lodi founded. IBRAHIM LODI (1517-26) — defeated by BABUR at FIRST BATTLE OF PANIPAT (21 April 1526) — ended Delhi Sultanate, began MUGHAL empire. MNEMONIC 'SKTSL' — Slave, Khilji, Tughlaq, Sayyid, Lodi. founded by Qutb-ud-din Aibak, a slave-general of Muhammad Ghori.",
       "subject": "History",
       "topic": "Delhi Sultanate",
       "topic_code": "HIS_DELHI_SULT",
@@ -24,18 +36,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sult-01",
       "generated_at": "2026-04-21T03:10:00+00:00",
-      "id": "sgk_HIS_DELHI_SULT_00001"
+      "id": "sgk_HIS_DELHI_SULT_00001",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "SLAVE / MAMLUK dynasty (1206-1290) — founded by Qutb-ud-din Aibak, a slave-general of Muhammad Ghori",
+          "now": "SLAVE / MAMLUK dynasty (1206-1290)",
+          "moved_to_explanation": "founded by Qutb-ud-din Aibak, a slave-general of Muhammad Ghori"
+        }
+      ]
     },
     {
       "stem": "The QUTB MINAR, Delhi's iconic 72.5m tower, was begun by Qutb-ud-din Aibak (1199) but COMPLETED by:",
       "options": [
-        {"option_text": "Balban", "is_correct": false},
-        {"option_text": "ILTUTMISH (1210-36) who added 3 storeys; 5th + top storey rebuilt by FIROZ SHAH TUGHLAQ in 1368 after lightning strike", "is_correct": true},
-        {"option_text": "Alauddin Khilji", "is_correct": false},
-        {"option_text": "Razia Sultana", "is_correct": false}
+        {
+          "option_text": "Balban",
+          "is_correct": false
+        },
+        {
+          "option_text": "ILTUTMISH (1210-36) who added 3 storeys",
+          "is_correct": true
+        },
+        {
+          "option_text": "Alauddin Khilji",
+          "is_correct": false
+        },
+        {
+          "option_text": "Razia Sultana",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "QUTB MINAR — 72.5m tall (5-storey), RED SANDSTONE + marble tower in MEHRAULI, Delhi; UNESCO World Heritage Site (1993). CONSTRUCTION STAGES: (1) QUTB-UD-DIN AIBAK (1199-1210) — began foundation + first storey to celebrate Muslim victory over the last Hindu kingdom of Delhi; named after sufi saint QUTB-UD-DIN BAKHTIYAR KAKI (whose dargah is nearby). (2) ILTUTMISH (c. 1220) — added 2nd, 3rd + 4th storeys. (3) FIROZ SHAH TUGHLAQ (1368) — after lightning damaged top storey (1369), rebuilt TOP TWO storeys + replaced sandstone with white MARBLE + red sandstone. Cupola added. (4) SIKANDAR LODI (1505) — further repair after earthquake. (5) BRITISH era — iron railing added; small pavilion atop removed in 1848. PURPOSE: a victory tower + minaret for adjacent QUWWAT-UL-ISLAM MOSQUE (first built mosque in Delhi, using pillars from 27 Hindu + Jain temples — visible today). INSCRIPTIONS: Quranic verses + rulers' names in ornamental calligraphy. QUTB COMPLEX also has: (a) IRON PILLAR of Delhi — 7m cast iron pillar erected by CHANDRAGUPTA II 'Vikramaditya' (c. 400 CE) in honor of Vishnu; originally at Udayagiri; famous for its RUST-RESISTANCE (high P content ~1%, low S, Fe-P passive layer); tradition of 'encircling it with arms backwards' to make wishes (now fenced). (b) ALAI DARWAZA (1311) by ALAUDDIN KHILJI — gateway in Indo-Islamic style; first TRUE ARCH in India. (c) ALAI MINAR — Alauddin's attempt to build a minar DOUBLE Qutb's height; only 24m base completed at his death. (d) TOMB of ILTUTMISH (1235). (e) TOMB of IMAM ZAMIN (Lodi era). Qutb Complex = founding monument of INDO-ISLAMIC ARCHITECTURE in India.",
+      "explanation": "QUTB MINAR — 72.5m tall (5-storey), RED SANDSTONE + marble tower in MEHRAULI, Delhi; UNESCO World Heritage Site (1993). CONSTRUCTION STAGES: (1) QUTB-UD-DIN AIBAK (1199-1210) — began foundation + first storey to celebrate Muslim victory over the last Hindu kingdom of Delhi; named after sufi saint QUTB-UD-DIN BAKHTIYAR KAKI (whose dargah is nearby). (2) ILTUTMISH (c. 1220) — added 2nd, 3rd + 4th storeys. (3) FIROZ SHAH TUGHLAQ (1368) — after lightning damaged top storey (1369), rebuilt TOP TWO storeys + replaced sandstone with white MARBLE + red sandstone. Cupola added. (4) SIKANDAR LODI (1505) — further repair after earthquake. (5) BRITISH era — iron railing added; small pavilion atop removed in 1848. PURPOSE: a victory tower + minaret for adjacent QUWWAT-UL-ISLAM MOSQUE (first built mosque in Delhi, using pillars from 27 Hindu + Jain temples — visible today). INSCRIPTIONS: Quranic verses + rulers' names in ornamental calligraphy. QUTB COMPLEX also has: (a) IRON PILLAR of Delhi — 7m cast iron pillar erected by CHANDRAGUPTA II 'Vikramaditya' (c. 400 CE) in honor of Vishnu; originally at Udayagiri; famous for its RUST-RESISTANCE (high P content ~1%, low S, Fe-P passive layer); tradition of 'encircling it with arms backwards' to make wishes (now fenced). (b) ALAI DARWAZA (1311) by ALAUDDIN KHILJI — gateway in Indo-Islamic style; first TRUE ARCH in India. (c) ALAI MINAR — Alauddin's attempt to build a minar DOUBLE Qutb's height; only 24m base completed at his death. (d) TOMB of ILTUTMISH (1235). (e) TOMB of IMAM ZAMIN (Lodi era). Qutb Complex = founding monument of INDO-ISLAMIC ARCHITECTURE in India. 5th + top storey rebuilt by FIROZ SHAH TUGHLAQ in 1368 after lightning strike.",
       "subject": "History",
       "topic": "Delhi Sultanate",
       "topic_code": "HIS_DELHI_SULT",
@@ -45,18 +77,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sult-01",
       "generated_at": "2026-04-21T03:10:00+00:00",
-      "id": "sgk_HIS_DELHI_SULT_00002"
+      "id": "sgk_HIS_DELHI_SULT_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ILTUTMISH (1210-36) who added 3 storeys; 5th + top storey rebuilt by FIROZ SHAH TUGHLAQ in 1368 after lightning strike",
+          "now": "ILTUTMISH (1210-36) who added 3 storeys",
+          "moved_to_explanation": "5th + top storey rebuilt by FIROZ SHAH TUGHLAQ in 1368 after lightning strike"
+        }
+      ]
     },
     {
       "stem": "RAZIA SULTANA (1236-1240), the FIRST + only female sultan of Delhi, was the daughter of:",
       "options": [
-        {"option_text": "Qutb-ud-din Aibak", "is_correct": false},
-        {"option_text": "ILTUTMISH — nominated by him as successor over his sons; overthrown by Turkish nobility after 4-year reign; killed Kaithal 1240", "is_correct": true},
-        {"option_text": "Balban", "is_correct": false},
-        {"option_text": "Muhammad Ghori", "is_correct": false}
+        {
+          "option_text": "Qutb-ud-din Aibak",
+          "is_correct": false
+        },
+        {
+          "option_text": "ILTUTMISH",
+          "is_correct": true
+        },
+        {
+          "option_text": "Balban",
+          "is_correct": false
+        },
+        {
+          "option_text": "Muhammad Ghori",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "RAZIA SULTANA (Razia-uddin, 1205-1240) — FIRST + ONLY WOMAN SULTAN of Delhi. REIGN: 10 Nov 1236 – 14 Oct 1240 (3 years, 11 months). BACKGROUND: daughter of ILTUTMISH (3rd Slave-dynasty sultan). Her father was impressed by her abilities during her brothers' inadequate conduct; he NOMINATED her as successor, writing 'Razia is better than 20 sons'. Succeeded her brother Rukn-ud-din Firoz Shah (deposed + murdered after 6 months). FEATURES of her rule: (a) discarded purdah + female dress; appeared in court in male attire (qaba + kulah); rode elephant publicly. (b) Efficient administrator; suppressed rebellions; appointed non-Turks to high offices — enraged the TURKIC 'CHAHALGANI' (Forty) nobility. (c) Close association with YAQUT (Abyssinian slave, appointed Amir-i-Akhur / Master of Horse) — created jealousy, scandal. (d) Fought 2 civil wars. OVERTHROW: 1240 — Governor of Bhatinda, MALIK ALTUNIYA, revolted; Razia defeated + captured; Yaqut killed. She married Altuniya in prison; they attempted to reclaim Delhi; defeated by her brother Bahram Shah; both Razia + Altuniya killed near KAITHAL (Haryana, 1240) after reportedly being robbed by an Indian zamindar (some say a Hindu, Jat) after fleeing. Tomb in Turkman Gate area of Old Delhi (modest, often disputed location). SIGNIFICANCE: (1) progressive for her time; (2) challenge to medieval Islamic gender norms; (3) tragic end shows the limits of TURKIC NOBILITY ('CHAHALGANI' = Forty) + patriarchal court politics; (4) pop culture — Kamal Amrohi's 1983 film 'Razia Sultan' (Hema Malini); Rajesh Kumar TV serial 2015. First female Indian monarch (CHAND BIBI of Ahmednagar, DURGAVATI of Gondwana, ZEB-UN-NISSA, MANGAMMAL of Madurai, NUR JAHAN of Mughals, AHILYABAI HOLKAR of Indore later exercised power but mostly as regents or in smaller principalities). She is India's first politically de jure reigning female monarch.",
+      "explanation": "RAZIA SULTANA (Razia-uddin, 1205-1240) — FIRST + ONLY WOMAN SULTAN of Delhi. REIGN: 10 Nov 1236 – 14 Oct 1240 (3 years, 11 months). BACKGROUND: daughter of ILTUTMISH (3rd Slave-dynasty sultan). Her father was impressed by her abilities during her brothers' inadequate conduct; he NOMINATED her as successor, writing 'Razia is better than 20 sons'. Succeeded her brother Rukn-ud-din Firoz Shah (deposed + murdered after 6 months). FEATURES of her rule: (a) discarded purdah + female dress; appeared in court in male attire (qaba + kulah); rode elephant publicly. (b) Efficient administrator; suppressed rebellions; appointed non-Turks to high offices — enraged the TURKIC 'CHAHALGANI' (Forty) nobility. (c) Close association with YAQUT (Abyssinian slave, appointed Amir-i-Akhur / Master of Horse) — created jealousy, scandal. (d) Fought 2 civil wars. OVERTHROW: 1240 — Governor of Bhatinda, MALIK ALTUNIYA, revolted; Razia defeated + captured; Yaqut killed. She married Altuniya in prison; they attempted to reclaim Delhi; defeated by her brother Bahram Shah; both Razia + Altuniya killed near KAITHAL (Haryana, 1240) after reportedly being robbed by an Indian zamindar (some say a Hindu, Jat) after fleeing. Tomb in Turkman Gate area of Old Delhi (modest, often disputed location). SIGNIFICANCE: (1) progressive for her time; (2) challenge to medieval Islamic gender norms; (3) tragic end shows the limits of TURKIC NOBILITY ('CHAHALGANI' = Forty) + patriarchal court politics; (4) pop culture — Kamal Amrohi's 1983 film 'Razia Sultan' (Hema Malini); Rajesh Kumar TV serial 2015. First female Indian monarch (CHAND BIBI of Ahmednagar, DURGAVATI of Gondwana, ZEB-UN-NISSA, MANGAMMAL of Madurai, NUR JAHAN of Mughals, AHILYABAI HOLKAR of Indore later exercised power but mostly as regents or in smaller principalities). She is India's first politically de jure reigning female monarch. nominated by him as successor over his sons; overthrown by Turkish nobility after 4-year reign; killed Kaithal 1240.",
       "subject": "History",
       "topic": "Delhi Sultanate",
       "topic_code": "HIS_DELHI_SULT",
@@ -66,18 +118,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sult-01",
       "generated_at": "2026-04-21T03:10:00+00:00",
-      "id": "sgk_HIS_DELHI_SULT_00003"
+      "id": "sgk_HIS_DELHI_SULT_00003",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "ILTUTMISH — nominated by him as successor over his sons; overthrown by Turkish nobility after 4-year reign; killed Kaithal 1240",
+          "now": "ILTUTMISH",
+          "moved_to_explanation": "nominated by him as successor over his sons; overthrown by Turkish nobility after 4-year reign; killed Kaithal 1240"
+        }
+      ]
     },
     {
       "stem": "ALAUDDIN KHILJI's MARKET CONTROL regulations (price-fixing) were SUPERVISED by officials called:",
       "options": [
-        {"option_text": "Mansabdars", "is_correct": false},
-        {"option_text": "DIWAN-I-RIYASAT (Malik Yaqub) + SHAHNA-I-MANDI — controlled prices in 4 markets of Delhi for grain, cloth, horses, slaves", "is_correct": true},
-        {"option_text": "Jagirdars", "is_correct": false},
-        {"option_text": "Zamindars", "is_correct": false}
+        {
+          "option_text": "Mansabdars",
+          "is_correct": false
+        },
+        {
+          "option_text": "DIWAN-I-RIYASAT (Malik Yaqub) + SHAHNA-I-MANDI",
+          "is_correct": true
+        },
+        {
+          "option_text": "Jagirdars",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zamindars",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "ALAUDDIN KHILJI (1296-1316) — 2nd Khilji sultan, one of Delhi Sultanate's most powerful + most feared rulers. KEY REFORMS: (1) MARKET CONTROL / PRICE REGULATION — unique in medieval world. Motivated by: need to maintain huge standing army against Mongol threat. 4 DELHI MARKETS (mandis) controlled: (a) grain (Mandi); (b) cloth, sugar, dry fruits, medicines (Sarai-Adl); (c) horses, slaves, cattle; (d) general goods. OFFICIALS: Diwan-i-Riyasat (headed by MALIK YAQUB) oversaw all markets; SHAHNA-I-MANDI was the chief market officer for grain; BARID + MUNHIYAN were spies who reported any price hike to Sultan. Fixed prices with HARSH punishments for overcharging — even light thumb on scale → loss of equivalent flesh. Resulted in (a) prices stable for 25 years; (b) soldiers' wages sufficient (low-cost food). System collapsed soon after his death. (2) MILITARY REFORMS — huge standing army under central pay (cash, not jagirs); horse-branding (DAGH) + descriptive roll of soldiers (HULIA) — to prevent corruption. (3) ECONOMIC reforms — increased land revenue from 1/3 to 1/2 in Delhi region; MEASURED land (masahat) for revenue; eliminated intermediaries. (4) REPELLED MONGOL invasions — 5 major Mongol attacks (1299, 1303, 1305, 1306, 1308) all repelled; built SIRI FORT as 2nd Delhi + HAUZ KHAS TANK. (5) CONQUESTS — Gujarat (1299, married widow of Gujarat king, Kamala Devi; brought Khusraw Khan + Malik Kafur from there), Ranthambore (1301, killed Hammir Dev + Rani Padmini per legend), Chittor (1303 — Rani PADMINI's jauhar per Padmavat of Malik Muhammad Jayasi 1540, largely legendary), Malwa (1305), DECCAN (Devagiri, Warangal, Dwarasamudra, Madurai — captured fabulous wealth incl. KOHINOOR). (6) BUILDINGS — Alai Darwaza (1311), Alai Minar (incomplete), SIRI CITY. (7) Spent last years paranoid, ill; Malik Kafur killed him 1316. AMIR KHUSRAU was his court poet. Declared himself 'Sikander Sani' (Second Alexander) on coins. ONE OF the great conquerors; ruthless but effective.",
+      "explanation": "ALAUDDIN KHILJI (1296-1316) — 2nd Khilji sultan, one of Delhi Sultanate's most powerful + most feared rulers. KEY REFORMS: (1) MARKET CONTROL / PRICE REGULATION — unique in medieval world. Motivated by: need to maintain huge standing army against Mongol threat. 4 DELHI MARKETS (mandis) controlled: (a) grain (Mandi); (b) cloth, sugar, dry fruits, medicines (Sarai-Adl); (c) horses, slaves, cattle; (d) general goods. OFFICIALS: Diwan-i-Riyasat (headed by MALIK YAQUB) oversaw all markets; SHAHNA-I-MANDI was the chief market officer for grain; BARID + MUNHIYAN were spies who reported any price hike to Sultan. Fixed prices with HARSH punishments for overcharging — even light thumb on scale → loss of equivalent flesh. Resulted in (a) prices stable for 25 years; (b) soldiers' wages sufficient (low-cost food). System collapsed soon after his death. (2) MILITARY REFORMS — huge standing army under central pay (cash, not jagirs); horse-branding (DAGH) + descriptive roll of soldiers (HULIA) — to prevent corruption. (3) ECONOMIC reforms — increased land revenue from 1/3 to 1/2 in Delhi region; MEASURED land (masahat) for revenue; eliminated intermediaries. (4) REPELLED MONGOL invasions — 5 major Mongol attacks (1299, 1303, 1305, 1306, 1308) all repelled; built SIRI FORT as 2nd Delhi + HAUZ KHAS TANK. (5) CONQUESTS — Gujarat (1299, married widow of Gujarat king, Kamala Devi; brought Khusraw Khan + Malik Kafur from there), Ranthambore (1301, killed Hammir Dev + Rani Padmini per legend), Chittor (1303 — Rani PADMINI's jauhar per Padmavat of Malik Muhammad Jayasi 1540, largely legendary), Malwa (1305), DECCAN (Devagiri, Warangal, Dwarasamudra, Madurai — captured fabulous wealth incl. KOHINOOR). (6) BUILDINGS — Alai Darwaza (1311), Alai Minar (incomplete), SIRI CITY. (7) Spent last years paranoid, ill; Malik Kafur killed him 1316. AMIR KHUSRAU was his court poet. Declared himself 'Sikander Sani' (Second Alexander) on coins. ONE OF the great conquerors; ruthless but effective. controlled prices in 4 markets of Delhi for grain, cloth, horses, slaves.",
       "subject": "History",
       "topic": "Delhi Sultanate",
       "topic_code": "HIS_DELHI_SULT",
@@ -87,18 +159,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sult-01",
       "generated_at": "2026-04-21T03:10:00+00:00",
-      "id": "sgk_HIS_DELHI_SULT_00004"
+      "id": "sgk_HIS_DELHI_SULT_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "DIWAN-I-RIYASAT (Malik Yaqub) + SHAHNA-I-MANDI — controlled prices in 4 markets of Delhi for grain, cloth, horses, slaves",
+          "now": "DIWAN-I-RIYASAT (Malik Yaqub) + SHAHNA-I-MANDI",
+          "moved_to_explanation": "controlled prices in 4 markets of Delhi for grain, cloth, horses, slaves"
+        }
+      ]
     },
     {
       "stem": "MUHAMMAD-BIN-TUGHLAQ (1325-51) is famous for two BLUNDERS that inspired his nickname 'wise fool'. They were:",
       "options": [
-        {"option_text": "Moving army to Persia + inviting Mongols", "is_correct": false},
-        {"option_text": "(a) TRANSFER of CAPITAL from Delhi to DAULATABAD (Devagiri) + (b) TOKEN CURRENCY (copper coins as substitute for silver tankas)", "is_correct": true},
-        {"option_text": "Burning of Taxila + Alexandria", "is_correct": false},
-        {"option_text": "War against all Hindu kingdoms", "is_correct": false}
+        {
+          "option_text": "Moving army to Persia + inviting Mongols",
+          "is_correct": false
+        },
+        {
+          "option_text": "(a) TRANSFER of CAPITAL from Delhi to DAULATABAD (Devagiri) + (b) TOKEN CURRENCY",
+          "is_correct": true
+        },
+        {
+          "option_text": "Burning of Taxila + Alexandria",
+          "is_correct": false
+        },
+        {
+          "option_text": "War against all Hindu kingdoms",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "MUHAMMAD-BIN-TUGHLAQ (real name Jauna Khan / Ulugh Khan; son of Ghiyas-ud-din Tughlaq; r. 1325-51) — 2nd Tughlaq sultan; accomplished scholar (knew philosophy, medicine, math, Persian literature) but plagued by disastrous experiments. Called 'WISE FOOL'. KEY 'BLUNDERS' / SCHEMES: (1) TRANSFER OF CAPITAL (1327) — from Delhi to DAULATABAD (renamed Devagiri, Maharashtra), to centralise southern empire. FORCED MIGRATION of ENTIRE Delhi population (officials + families, not just court) — thousands died on the 700-mile march in summer. When Mongol threats resurged, reversed back to Delhi — ANOTHER forced march back. Delhi devastated. (2) TOKEN CURRENCY (1329-32) — issued COPPER / BRASS coins (jital, tanka) as legal tender equivalent to silver tanka. Masses counterfeited these at home; state treasury dried up; eventually had to REDEEM all tokens for silver — enormous loss. (3) KHURASAN EXPEDITION — raised a 370,000-strong army for invasion of Central Asia (Khurasan); disbanded when funds ran out — those troops returned + roamed countryside as bandits. (4) QARACHIL EXPEDITION into HIMALAYAN Kangra; most of army perished in mountains. (5) INCREASED tax rates on DOAB (already famine-struck) — widespread rebellions. RESULT: empire rebellions + breakaways — (a) BENGAL (1335 Fakhr-ud-din Mubarak Shah independent); (b) MADURAI (1335, Jalal-ud-din Ahsan Khan); (c) Vijayanagar (1336, founded by Harihara + Bukka — breakaway state with Hindu revival); (d) Bahmani Sultanate (1347, Hasan Gangu — breakaway in Deccan). KEY PRIMARY SOURCE: IBN BATTUTA — Moroccan traveller who served as Delhi qazi for 8 years, wrote 'RIHLA'; Tughlaq appointed him ambassador to China. ZIAUDDIN BARANI = other major chronicler. DIED in 1351 in Sind pursuing rebels; historian BADAUNI wrote 'the king was freed from his people + the people from their king'. Successor FIROZ SHAH TUGHLAQ was MUCH more moderate.",
+      "explanation": "MUHAMMAD-BIN-TUGHLAQ (real name Jauna Khan / Ulugh Khan; son of Ghiyas-ud-din Tughlaq; r. 1325-51) — 2nd Tughlaq sultan; accomplished scholar (knew philosophy, medicine, math, Persian literature) but plagued by disastrous experiments. Called 'WISE FOOL'. KEY 'BLUNDERS' / SCHEMES: (1) TRANSFER OF CAPITAL (1327) — from Delhi to DAULATABAD (renamed Devagiri, Maharashtra), to centralise southern empire. FORCED MIGRATION of ENTIRE Delhi population (officials + families, not just court) — thousands died on the 700-mile march in summer. When Mongol threats resurged, reversed back to Delhi — ANOTHER forced march back. Delhi devastated. (2) TOKEN CURRENCY (1329-32) — issued COPPER / BRASS coins (jital, tanka) as legal tender equivalent to silver tanka. Masses counterfeited these at home; state treasury dried up; eventually had to REDEEM all tokens for silver — enormous loss. (3) KHURASAN EXPEDITION — raised a 370,000-strong army for invasion of Central Asia (Khurasan); disbanded when funds ran out — those troops returned + roamed countryside as bandits. (4) QARACHIL EXPEDITION into HIMALAYAN Kangra; most of army perished in mountains. (5) INCREASED tax rates on DOAB (already famine-struck) — widespread rebellions. RESULT: empire rebellions + breakaways — (a) BENGAL (1335 Fakhr-ud-din Mubarak Shah independent); (b) MADURAI (1335, Jalal-ud-din Ahsan Khan); (c) Vijayanagar (1336, founded by Harihara + Bukka — breakaway state with Hindu revival); (d) Bahmani Sultanate (1347, Hasan Gangu — breakaway in Deccan). KEY PRIMARY SOURCE: IBN BATTUTA — Moroccan traveller who served as Delhi qazi for 8 years, wrote 'RIHLA'; Tughlaq appointed him ambassador to China. ZIAUDDIN BARANI = other major chronicler. DIED in 1351 in Sind pursuing rebels; historian BADAUNI wrote 'the king was freed from his people + the people from their king'. Successor FIROZ SHAH TUGHLAQ was MUCH more moderate. copper coins as substitute for silver tankas.",
       "subject": "History",
       "topic": "Delhi Sultanate",
       "topic_code": "HIS_DELHI_SULT",
@@ -108,15 +200,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sult-01",
       "generated_at": "2026-04-21T03:10:00+00:00",
-      "id": "sgk_HIS_DELHI_SULT_00005"
+      "id": "sgk_HIS_DELHI_SULT_00005",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "(a) TRANSFER of CAPITAL from Delhi to DAULATABAD (Devagiri) + (b) TOKEN CURRENCY (copper coins as substitute for silver tankas)",
+          "now": "(a) TRANSFER of CAPITAL from Delhi to DAULATABAD (Devagiri) + (b) TOKEN CURRENCY",
+          "moved_to_explanation": "copper coins as substitute for silver tankas"
+        }
+      ]
     },
     {
       "stem": "FEROZ SHAH TUGHLAQ (1351-88) brought two ASHOKAN PILLARS to Delhi + built many public works. He is most famous for founding the city of:",
       "options": [
-        {"option_text": "Agra", "is_correct": false},
-        {"option_text": "FEROZABAD (Firoz Shah Kotla, near Yamuna in Delhi) + extensive public works: 4 Delhi canals (Yamuna-Hissar), Firozabad fort, Hissar + Fatehabad towns", "is_correct": true},
-        {"option_text": "Lucknow", "is_correct": false},
-        {"option_text": "Patna", "is_correct": false}
+        {
+          "option_text": "Agra",
+          "is_correct": false
+        },
+        {
+          "option_text": "FEROZABAD (Firoz Shah Kotla, near Yamuna in Delhi) + extensive public works: 4 Delhi canals (Yamuna-Hissar), Firozabad fort, Hissar + Fatehabad towns",
+          "is_correct": true
+        },
+        {
+          "option_text": "Lucknow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Patna",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "FIROZ SHAH TUGHLAQ (1351-88) — cousin + successor of Muhammad-bin-Tughlaq; most BENEVOLENT + PUBLIC-WORKS-focused Tughlaq sultan. 37-year reign. KEY POLICIES: (1) Abolished many oppressive taxes; collected only 4 legal Islamic taxes — Kharaj (land revenue), Khums (1/5 war booty), Jizya (on non-Muslims; first extended to BRAHMINS, causing protest), Zakat. (2) Built extensive PUBLIC WORKS: (a) FEROZABAD / Firoz Shah Kotla — his new capital on Yamuna banks (ruins near Delhi Gate, cricket stadium named after it). (b) 4 IRRIGATION CANALS — Yamuna-to-Hissar canal (a predecessor of modern Western Yamuna Canal), Rajab canal, Khadi-karan canal, Ulugh-Khani canal — irrigated millions of acres; first large-scale irrigation works in medieval India. (c) FOUNDED CITIES — FATEHABAD, HISSAR, FIROZPUR, JAUNPUR (named after his cousin Juna Khan), FIROZABAD. (d) Built ~40 MOSQUES, 30 COLLEGES, 100 HOSPITALS (DAR-UL-SHIFA), 100 public baths (hammams), 100 wells, 150 bridges, 1200 SARAIS (inns). (e) DAR-UL-SHAFA (free hospital, Delhi). (f) DIWAN-I-KHAIRAT (department of charity) — helped widows, orphans, dowries for poor girls. (3) BROUGHT TWO ASHOKAN PILLARS from Topra (Haryana) + Meerut (UP) to Delhi — by boats + bullock carts, despite not reading the inscriptions (later deciphered by James Prinsep 1837). One pillar stands at FIROZ SHAH KOTLA (Topra) + Delhi Ridge (Meerut, near Bara Hindu Rao). (4) HOWEVER, DESTROYED many Hindu temples (unlike his pragmatic predecessors). Imposed jizya on Brahmins (novel + controversial; Hindus demanded relief after huge hunger strike — he relented partially). (5) Continued JAGIR system — IQTAS made hereditary; led to decentralisation + weakening of central control — SEED of his dynasty's post-death collapse. (6) AUTHORED 'FUTUHAT-I-FIROZ SHAHI' — 30-page memoir. After his death 1388, TUGHLAQ dynasty disintegrated within a decade; TIMUR's invasion of 1398 finished them off.",
@@ -134,13 +246,25 @@
     {
       "stem": "TIMUR (Tamerlane) invaded India in 1398 and sacked Delhi. Who was the ruling sultan at the time?",
       "options": [
-        {"option_text": "Alauddin Khilji", "is_correct": false},
-        {"option_text": "NASIR-UD-DIN MAHMUD SHAH TUGHLAQ — the last effective Tughlaq ruler; fled Delhi as Timur entered", "is_correct": true},
-        {"option_text": "Firoz Shah Tughlaq", "is_correct": false},
-        {"option_text": "Ibrahim Lodi", "is_correct": false}
+        {
+          "option_text": "Alauddin Khilji",
+          "is_correct": false
+        },
+        {
+          "option_text": "NASIR-UD-DIN MAHMUD SHAH TUGHLAQ",
+          "is_correct": true
+        },
+        {
+          "option_text": "Firoz Shah Tughlaq",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ibrahim Lodi",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "TIMUR's INVASION of India (1398-99) — catastrophic sack of Delhi by the Turco-Mongol conqueror TIMUR (Tamerlane, 1336-1405) from Samarkand. ROUTE: crossed Indus Sep 1398; sacked Multan, Tulamba, Dipalpur, Bhatner (Hanumangarh), Panipat; reached Delhi on 17 Dec 1398. RULING SULTAN: NASIR-UD-DIN MAHMUD SHAH TUGHLAQ (1394-1413) — weak ruler, fled Delhi as Timur's forces entered. SACK OF DELHI (17-20 Dec 1398): one of the worst in Indian history. (1) 100,000 Hindu prisoners taken captive earlier were massacred (to prevent rebellion during assault). (2) Delhi LOOTED for 3 days — virtually every Delhi building + population affected; tens of thousands dead; city-wide fires; took skilled craftsmen (masons, artisans) back to SAMARKAND to build his famous monuments (incl. Bibi-Khanum mosque). (3) Took massive loot — jewels, gold, silver; elephants; slaves. (4) Left Delhi 30 Dec 1398, returned to Samarkand via Meerut, Haridwar (sacked), Kangra (sacked), Jammu (sacked); crossed Indus Mar 1399. Appointed KHIZR KHAN (governor of Multan, a Sayyid noble) as his viceroy — founder of SAYYID dynasty (1414-51). IMPACT: (1) Effectively ended TUGHLAQ sultanate. (2) Delhi DESOLATE for decades — 'Malwa, Gujarat, Khandesh, Jaunpur, Bengal', Sharqi rulers consolidated independent regional kingdoms. (3) REGIONAL STATES flourished — Gujarat Sultanate (1407), Malwa Sultanate (1392), Jaunpur Sharqi Sultanate (1394-1479 — Sharqi means 'east'; Jaunpur = 'Shiraz of India' for its scholars + architecture), Bengal Sultanate, Bahmani Sultanate (1347, Deccan), Vijayanagar Empire (1336, southern resistance). (4) Timur's descendant BABUR (5th gen) later founded MUGHAL empire (1526) — 'MUGHAL' = Persian for Mongol. POST-TIMUR legacy: Samarkand + Bukhara flourished; Timurid Renaissance in Central Asia; Ulugh Beg's observatory. AMIR TIMUR of Uzbekistan today venerated as national hero.",
+      "explanation": "TIMUR's INVASION of India (1398-99) — catastrophic sack of Delhi by the Turco-Mongol conqueror TIMUR (Tamerlane, 1336-1405) from Samarkand. ROUTE: crossed Indus Sep 1398; sacked Multan, Tulamba, Dipalpur, Bhatner (Hanumangarh), Panipat; reached Delhi on 17 Dec 1398. RULING SULTAN: NASIR-UD-DIN MAHMUD SHAH TUGHLAQ (1394-1413) — weak ruler, fled Delhi as Timur's forces entered. SACK OF DELHI (17-20 Dec 1398): one of the worst in Indian history. (1) 100,000 Hindu prisoners taken captive earlier were massacred (to prevent rebellion during assault). (2) Delhi LOOTED for 3 days — virtually every Delhi building + population affected; tens of thousands dead; city-wide fires; took skilled craftsmen (masons, artisans) back to SAMARKAND to build his famous monuments (incl. Bibi-Khanum mosque). (3) Took massive loot — jewels, gold, silver; elephants; slaves. (4) Left Delhi 30 Dec 1398, returned to Samarkand via Meerut, Haridwar (sacked), Kangra (sacked), Jammu (sacked); crossed Indus Mar 1399. Appointed KHIZR KHAN (governor of Multan, a Sayyid noble) as his viceroy — founder of SAYYID dynasty (1414-51). IMPACT: (1) Effectively ended TUGHLAQ sultanate. (2) Delhi DESOLATE for decades — 'Malwa, Gujarat, Khandesh, Jaunpur, Bengal', Sharqi rulers consolidated independent regional kingdoms. (3) REGIONAL STATES flourished — Gujarat Sultanate (1407), Malwa Sultanate (1392), Jaunpur Sharqi Sultanate (1394-1479 — Sharqi means 'east'; Jaunpur = 'Shiraz of India' for its scholars + architecture), Bengal Sultanate, Bahmani Sultanate (1347, Deccan), Vijayanagar Empire (1336, southern resistance). (4) Timur's descendant BABUR (5th gen) later founded MUGHAL empire (1526) — 'MUGHAL' = Persian for Mongol. POST-TIMUR legacy: Samarkand + Bukhara flourished; Timurid Renaissance in Central Asia; Ulugh Beg's observatory. AMIR TIMUR of Uzbekistan today venerated as national hero. the last effective Tughlaq ruler; fled Delhi as Timur entered.",
       "subject": "History",
       "topic": "Delhi Sultanate",
       "topic_code": "HIS_DELHI_SULT",
@@ -150,18 +274,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sult-01",
       "generated_at": "2026-04-21T03:10:00+00:00",
-      "id": "sgk_HIS_DELHI_SULT_00007"
+      "id": "sgk_HIS_DELHI_SULT_00007",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "NASIR-UD-DIN MAHMUD SHAH TUGHLAQ — the last effective Tughlaq ruler; fled Delhi as Timur entered",
+          "now": "NASIR-UD-DIN MAHMUD SHAH TUGHLAQ",
+          "moved_to_explanation": "the last effective Tughlaq ruler; fled Delhi as Timur entered"
+        }
+      ]
     },
     {
       "stem": "The FIRST BATTLE OF PANIPAT (21 April 1526) ended the Delhi Sultanate + began the Mughal Empire. It was fought between:",
       "options": [
-        {"option_text": "Akbar vs Hemu", "is_correct": false},
-        {"option_text": "BABUR vs IBRAHIM LODI — Babur's smaller force (~12,000) defeated Lodi's (~100,000) using ARTILLERY (matchlocks) + TULGHMA cavalry tactics", "is_correct": true},
-        {"option_text": "Sher Shah Suri vs Humayun", "is_correct": false},
-        {"option_text": "Aurangzeb vs Shivaji", "is_correct": false}
+        {
+          "option_text": "Akbar vs Hemu",
+          "is_correct": false
+        },
+        {
+          "option_text": "BABUR vs IBRAHIM LODI",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sher Shah Suri vs Humayun",
+          "is_correct": false
+        },
+        {
+          "option_text": "Aurangzeb vs Shivaji",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "FIRST BATTLE OF PANIPAT — 21 APRIL 1526 — one of the most consequential battles in Indian history. COMBATANTS: (1) ZAHIR-UD-DIN MUHAMMAD BABUR (1483-1530, Timurid ruler of Kabul, descendant of TIMUR on father's side + GENGHIS KHAN on mother's side) with ~12,000 troops. (2) IBRAHIM LODI (last Lodi sultan of Delhi, 1517-26) with ~100,000 + 1,000 elephants. TERRAIN: Panipat plain north of Delhi (Haryana). BABUR'S FORMATION: (a) Center of army protected by 700 carts tied with rawhide thongs (TULGHMA system — central fortification, a Turco-Mongol tactic adopted from Ottomans). (b) Gaps between carts for MATCHLOCK GUNS (tufang) + CANNONS — fired by Ottoman-trained gunners Ustad Ali Quli + Mustafa Rumi. (c) Flanks used Turkic CAVALRY WHEEL (Tulghma) — rapid encirclement tactic. KEY FACTORS: (1) Babur's ARTILLERY was NEW to Indian warfare — Lodi had only swords, bows, elephants. (2) Ibrahim's troops were disciplined but slow; elephants panicked at gunfire. (3) Babur's flanking cavalry encircled Lodi's host. BY MIDDAY, Ibrahim Lodi + 15,000-20,000 men DEAD (including Ibrahim himself); Babur entered DELHI + AGRA; proclaimed emperor of 'Hindustan'. SIGNIFICANCE: (1) ENDED Delhi Sultanate (1206-1526, 320 years, 5 dynasties). (2) BEGAN MUGHAL EMPIRE (1526-1857, 331 years). (3) First major Indian battle decided by GUNPOWDER ARTILLERY — start of 'GUNPOWDER EMPIRES' in India. (4) KOHINOOR diamond changed hands — Babur received it from Raja Vikramaditya of Gwalior (who had taken it from Alauddin's loot), passed to Humayun, back + forth, eventually to Mughal Red Fort → Nadir Shah 1739 → Ahmad Shah Durrani → Ranjit Singh → British 1849 → Queen Victoria 1877 → Crown Jewels UK. BABUR wrote BABURNAMA (memoirs in Chaghatai Turkish) — famous autobiography. SECOND + THIRD battles of Panipat followed (1556 Akbar-Hemu, 1761 Marathas-Abdali).",
+      "explanation": "FIRST BATTLE OF PANIPAT — 21 APRIL 1526 — one of the most consequential battles in Indian history. COMBATANTS: (1) ZAHIR-UD-DIN MUHAMMAD BABUR (1483-1530, Timurid ruler of Kabul, descendant of TIMUR on father's side + GENGHIS KHAN on mother's side) with ~12,000 troops. (2) IBRAHIM LODI (last Lodi sultan of Delhi, 1517-26) with ~100,000 + 1,000 elephants. TERRAIN: Panipat plain north of Delhi (Haryana). BABUR'S FORMATION: (a) Center of army protected by 700 carts tied with rawhide thongs (TULGHMA system — central fortification, a Turco-Mongol tactic adopted from Ottomans). (b) Gaps between carts for MATCHLOCK GUNS (tufang) + CANNONS — fired by Ottoman-trained gunners Ustad Ali Quli + Mustafa Rumi. (c) Flanks used Turkic CAVALRY WHEEL (Tulghma) — rapid encirclement tactic. KEY FACTORS: (1) Babur's ARTILLERY was NEW to Indian warfare — Lodi had only swords, bows, elephants. (2) Ibrahim's troops were disciplined but slow; elephants panicked at gunfire. (3) Babur's flanking cavalry encircled Lodi's host. BY MIDDAY, Ibrahim Lodi + 15,000-20,000 men DEAD (including Ibrahim himself); Babur entered DELHI + AGRA; proclaimed emperor of 'Hindustan'. SIGNIFICANCE: (1) ENDED Delhi Sultanate (1206-1526, 320 years, 5 dynasties). (2) BEGAN MUGHAL EMPIRE (1526-1857, 331 years). (3) First major Indian battle decided by GUNPOWDER ARTILLERY — start of 'GUNPOWDER EMPIRES' in India. (4) KOHINOOR diamond changed hands — Babur received it from Raja Vikramaditya of Gwalior (who had taken it from Alauddin's loot), passed to Humayun, back + forth, eventually to Mughal Red Fort → Nadir Shah 1739 → Ahmad Shah Durrani → Ranjit Singh → British 1849 → Queen Victoria 1877 → Crown Jewels UK. BABUR wrote BABURNAMA (memoirs in Chaghatai Turkish) — famous autobiography. SECOND + THIRD battles of Panipat followed (1556 Akbar-Hemu, 1761 Marathas-Abdali). Babur's smaller force (~12,000) defeated Lodi's (~100,000) using ARTILLERY (matchlocks) + TULGHMA cavalry tactics.",
       "subject": "History",
       "topic": "Delhi Sultanate",
       "topic_code": "HIS_DELHI_SULT",
@@ -171,18 +315,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sult-01",
       "generated_at": "2026-04-21T03:10:00+00:00",
-      "id": "sgk_HIS_DELHI_SULT_00008"
+      "id": "sgk_HIS_DELHI_SULT_00008",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "BABUR vs IBRAHIM LODI — Babur's smaller force (~12,000) defeated Lodi's (~100,000) using ARTILLERY (matchlocks) + TULGHMA cavalry tactics",
+          "now": "BABUR vs IBRAHIM LODI",
+          "moved_to_explanation": "Babur's smaller force (~12,000) defeated Lodi's (~100,000) using ARTILLERY (matchlocks) + TULGHMA cavalry tactics"
+        }
+      ]
     },
     {
       "stem": "Which Delhi Sultan was known as the 'SHADOW OF GOD ON EARTH' + formulated the 'ZIL-I-ILAHI' theory of kingship?",
       "options": [
-        {"option_text": "Qutb-ud-din Aibak", "is_correct": false},
-        {"option_text": "BALBAN (Ghiyas-ud-din Balban, 1266-87) — Slave dynasty; introduced Persian court ceremonial (sijda + paibos); crushed Turkish Chahalgani", "is_correct": true},
-        {"option_text": "Iltutmish", "is_correct": false},
-        {"option_text": "Alauddin Khilji", "is_correct": false}
+        {
+          "option_text": "Qutb-ud-din Aibak",
+          "is_correct": false
+        },
+        {
+          "option_text": "BALBAN",
+          "is_correct": true
+        },
+        {
+          "option_text": "Iltutmish",
+          "is_correct": false
+        },
+        {
+          "option_text": "Alauddin Khilji",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "GHIYAS-UD-DIN BALBAN (r. 1266-1287) — 9th Mamluk / Slave dynasty sultan; one of the most POWERFUL + DESPOTIC sultans of Delhi. ORIGINAL name: BAHA-UD-DIN; born Turkic (Ilbari tribe); captured + sold to Khwaja Jamal-ud-din of Basra; brought to Delhi by Iltutmish. Rose through Iltutmish + Razia's court; served as NAIB-I-MAMLAKAT (regent) for Sultan Nasir-ud-din Mahmud (1246-66); married daughter to the sultan; ultimately ascended himself at age 60. KEY POLICIES: (1) 'ZIL-I-ILAHI' ('Shadow of God on Earth') theory — derived Sultan's authority from God DIRECTLY, not from the Caliphate; sultan superior to all mortals; elevated + distanced the monarchy from nobility. (2) Persian COURT CEREMONIAL — introduced SIJDA (prostration) + PAIBOS (kissing the feet / ground before the Sultan); court etiquette to awe subjects. Inspired by Iranian Sasanian court tradition. (3) CRUSHED the TURKISH CHAHALGANI (Forty) — the powerful 40-noble Turkic oligarchy Iltutmish had created; Balban systematically killed / exiled them; replaced by non-Turks + trusted men. (4) Restored law + order — the Mewatis + Doab bandits terrorising Delhi's outskirts crushed with ruthless force; reopened trade routes. (5) Built + strengthened FORTS — Lahore, Multan, Hisar, Delhi; raised CAVALRY + army; established DIWAN-I-ARZ (military dept). (6) Suppressed BENGAL rebellion (Tughril Khan, 1279-80) — personally led army. (7) Repelled Mongol raids — central Asian border stabilised. (8) SON MUHAMMAD (the 'Khan Shahid') KILLED while guarding against Mongols at Multan (1285) — broke Balban's spirit; died 1287 of grief. NOTABLE COURTIERS: AMIR KHUSRAU (poet, just beginning career), Amir Hasan. HISTORIAN: Ziauddin Barani (wrote Tarikh-i-Firuz Shahi, Fatawa-i-Jahandari). SUCCESSOR: grandson Kaiqubad (murdered 1290); LAST Slave sultan. 1290 — JALAL-UD-DIN KHILJI ended Slave dynasty. BALBAN's DESPOTISM + anti-noble purges = template for later Sultanate centralisation.",
+      "explanation": "GHIYAS-UD-DIN BALBAN (r. 1266-1287) — 9th Mamluk / Slave dynasty sultan; one of the most POWERFUL + DESPOTIC sultans of Delhi. ORIGINAL name: BAHA-UD-DIN; born Turkic (Ilbari tribe); captured + sold to Khwaja Jamal-ud-din of Basra; brought to Delhi by Iltutmish. Rose through Iltutmish + Razia's court; served as NAIB-I-MAMLAKAT (regent) for Sultan Nasir-ud-din Mahmud (1246-66); married daughter to the sultan; ultimately ascended himself at age 60. KEY POLICIES: (1) 'ZIL-I-ILAHI' ('Shadow of God on Earth') theory — derived Sultan's authority from God DIRECTLY, not from the Caliphate; sultan superior to all mortals; elevated + distanced the monarchy from nobility. (2) Persian COURT CEREMONIAL — introduced SIJDA (prostration) + PAIBOS (kissing the feet / ground before the Sultan); court etiquette to awe subjects. Inspired by Iranian Sasanian court tradition. (3) CRUSHED the TURKISH CHAHALGANI (Forty) — the powerful 40-noble Turkic oligarchy Iltutmish had created; Balban systematically killed / exiled them; replaced by non-Turks + trusted men. (4) Restored law + order — the Mewatis + Doab bandits terrorising Delhi's outskirts crushed with ruthless force; reopened trade routes. (5) Built + strengthened FORTS — Lahore, Multan, Hisar, Delhi; raised CAVALRY + army; established DIWAN-I-ARZ (military dept). (6) Suppressed BENGAL rebellion (Tughril Khan, 1279-80) — personally led army. (7) Repelled Mongol raids — central Asian border stabilised. (8) SON MUHAMMAD (the 'Khan Shahid') KILLED while guarding against Mongols at Multan (1285) — broke Balban's spirit; died 1287 of grief. NOTABLE COURTIERS: AMIR KHUSRAU (poet, just beginning career), Amir Hasan. HISTORIAN: Ziauddin Barani (wrote Tarikh-i-Firuz Shahi, Fatawa-i-Jahandari). SUCCESSOR: grandson Kaiqubad (murdered 1290); LAST Slave sultan. 1290 — JALAL-UD-DIN KHILJI ended Slave dynasty. BALBAN's DESPOTISM + anti-noble purges = template for later Sultanate centralisation. Slave dynasty; introduced Persian court ceremonial (sijda + paibos); crushed Turkish Chahalgani; Ghiyas-ud-din Balban, 1266-87.",
       "subject": "History",
       "topic": "Delhi Sultanate",
       "topic_code": "HIS_DELHI_SULT",
@@ -192,18 +356,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sult-01",
       "generated_at": "2026-04-21T03:10:00+00:00",
-      "id": "sgk_HIS_DELHI_SULT_00009"
+      "id": "sgk_HIS_DELHI_SULT_00009",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "BALBAN (Ghiyas-ud-din Balban, 1266-87) — Slave dynasty; introduced Persian court ceremonial (sijda + paibos); crushed Turkish Chahalgani",
+          "now": "BALBAN",
+          "moved_to_explanation": "Slave dynasty; introduced Persian court ceremonial (sijda + paibos); crushed Turkish Chahalgani; Ghiyas-ud-din Balban, 1266-87"
+        }
+      ]
     },
     {
       "stem": "The LAND REVENUE system 'IQTA' under the Delhi Sultanate was:",
       "options": [
-        {"option_text": "Hereditary land ownership by peasants", "is_correct": false},
-        {"option_text": "Assignment of LAND REVENUE from a territory to a noble / officer (IQTADAR / MUQTI) — NON-hereditary; revenue basis of Sultanate administration", "is_correct": true},
-        {"option_text": "Salary paid in gold", "is_correct": false},
-        {"option_text": "Temple lands tax-exempt", "is_correct": false}
+        {
+          "option_text": "Hereditary land ownership by peasants",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assignment of LAND REVENUE from a territory to a noble / officer",
+          "is_correct": true
+        },
+        {
+          "option_text": "Salary paid in gold",
+          "is_correct": false
+        },
+        {
+          "option_text": "Temple lands tax-exempt",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "IQTA system — key ADMINISTRATIVE + MILITARY institution of the Delhi Sultanate. ORIGIN: Arabic 'iqta' = assignment / share. Borrowed from Abbasid Caliphate. CHARACTERISTICS: (1) the SULTAN granted to a noble / military officer (IQTADAR / MUQTI / WALI) the right to COLLECT LAND REVENUE of a specified territory instead of paying him a salary. (2) Revenue collected was expected to MAINTAIN a military contingent (soldiers + horses) + remit SURPLUS to central treasury. (3) NON-HEREDITARY — iqta-dar could be TRANSFERRED or removed at Sultan's pleasure → maintained central control (unlike European feudalism). (4) Officers were also expected to ADMINISTER the territory (judicial, civil). EVOLUTION: (1) Under ILTUTMISH — iqtas introduced widely; granted to Turkish soldiers to maintain cavalry. Created the '40 CHAHALGANI'. (2) BALBAN — tightened control; reclaimed many iqtas. (3) ALAUDDIN KHILJI — DRASTIC reforms; RESUMED many iqtas; paid cash salaries instead; maintained direct central army (lessons from Mongol threats). Land revenue raised to 50%; MEASURED land (masahat). (4) MUHAMMAD-BIN-TUGHLAQ — rebellions forced him to re-assign iqtas. (5) FIROZ SHAH TUGHLAQ — made iqtas HEREDITARY (huge mistake) — decentralised power to provincial iqtadars; after his death, iqtas became de facto principalities → break-up of Sultanate. (6) Mughal era — replaced by JAGIR + MANSABDARI system (Akbar). KEY OFFICIALS: MUQTI (iqta-dar/governor), AMIR (mid-rank), MALIK (senior), KHAN (royal rank — Amir Khusrau, Bahram Khan). REVENUE DEMAND historically: (a) Sultanate — 25% to 50% of produce (Alauddin raised to 50%); (b) Collected in cash + kind; (c) measured via MASAHAT (land survey by jarib); (d) BATAI (sharing crop between state + cultivator); (e) KANKUT (estimation). Nobles lived lavishly from iqta income; standing army supported. VILLAGE LEVEL: MUQADDAM (village headman), KHUT (big peasant, land-holding), BALAHAR (minor functionary), CHAUDHURIES (medium-large) — rural power intermediaries. PEASANT (RAIYAT) life was often hard; oppressive demands drove many to forest banditry (Rajputs, Meos).",
+      "explanation": "IQTA system — key ADMINISTRATIVE + MILITARY institution of the Delhi Sultanate. ORIGIN: Arabic 'iqta' = assignment / share. Borrowed from Abbasid Caliphate. CHARACTERISTICS: (1) the SULTAN granted to a noble / military officer (IQTADAR / MUQTI / WALI) the right to COLLECT LAND REVENUE of a specified territory instead of paying him a salary. (2) Revenue collected was expected to MAINTAIN a military contingent (soldiers + horses) + remit SURPLUS to central treasury. (3) NON-HEREDITARY — iqta-dar could be TRANSFERRED or removed at Sultan's pleasure → maintained central control (unlike European feudalism). (4) Officers were also expected to ADMINISTER the territory (judicial, civil). EVOLUTION: (1) Under ILTUTMISH — iqtas introduced widely; granted to Turkish soldiers to maintain cavalry. Created the '40 CHAHALGANI'. (2) BALBAN — tightened control; reclaimed many iqtas. (3) ALAUDDIN KHILJI — DRASTIC reforms; RESUMED many iqtas; paid cash salaries instead; maintained direct central army (lessons from Mongol threats). Land revenue raised to 50%; MEASURED land (masahat). (4) MUHAMMAD-BIN-TUGHLAQ — rebellions forced him to re-assign iqtas. (5) FIROZ SHAH TUGHLAQ — made iqtas HEREDITARY (huge mistake) — decentralised power to provincial iqtadars; after his death, iqtas became de facto principalities → break-up of Sultanate. (6) Mughal era — replaced by JAGIR + MANSABDARI system (Akbar). KEY OFFICIALS: MUQTI (iqta-dar/governor), AMIR (mid-rank), MALIK (senior), KHAN (royal rank — Amir Khusrau, Bahram Khan). REVENUE DEMAND historically: (a) Sultanate — 25% to 50% of produce (Alauddin raised to 50%); (b) Collected in cash + kind; (c) measured via MASAHAT (land survey by jarib); (d) BATAI (sharing crop between state + cultivator); (e) KANKUT (estimation). Nobles lived lavishly from iqta income; standing army supported. VILLAGE LEVEL: MUQADDAM (village headman), KHUT (big peasant, land-holding), BALAHAR (minor functionary), CHAUDHURIES (medium-large) — rural power intermediaries. PEASANT (RAIYAT) life was often hard; oppressive demands drove many to forest banditry (Rajputs, Meos). NON-hereditary; revenue basis of Sultanate administration; IQTADAR / MUQTI.",
       "subject": "History",
       "topic": "Delhi Sultanate",
       "topic_code": "HIS_DELHI_SULT",
@@ -213,7 +397,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-21-sult-01",
       "generated_at": "2026-04-21T03:10:00+00:00",
-      "id": "sgk_HIS_DELHI_SULT_00010"
+      "id": "sgk_HIS_DELHI_SULT_00010",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Assignment of LAND REVENUE from a territory to a noble / officer (IQTADAR / MUQTI) — NON-hereditary; revenue basis of Sultanate administration",
+          "now": "Assignment of LAND REVENUE from a territory to a noble / officer",
+          "moved_to_explanation": "NON-hereditary; revenue basis of Sultanate administration; IQTADAR / MUQTI"
+        }
+      ]
     }
   ]
 }

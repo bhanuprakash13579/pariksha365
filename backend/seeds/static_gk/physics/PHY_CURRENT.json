@@ -8,10 +8,22 @@
     {
       "stem": "OHM'S LAW states that the current (I) through a conductor between two points is directly proportional to the voltage (V) across it, with resistance (R) as the constant of proportionality. Mathematically:",
       "options": [
-        {"option_text": "V = I × R", "is_correct": true},
-        {"option_text": "V = I / R", "is_correct": false},
-        {"option_text": "V = I² × R", "is_correct": false},
-        {"option_text": "V = R / I", "is_correct": false}
+        {
+          "option_text": "V = I × R",
+          "is_correct": true
+        },
+        {
+          "option_text": "V = I / R",
+          "is_correct": false
+        },
+        {
+          "option_text": "V = I² × R",
+          "is_correct": false
+        },
+        {
+          "option_text": "V = R / I",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "OHM'S LAW: V = IR, where V = voltage (volts, V), I = current (amperes, A), R = resistance (ohms, Ω). Given by Georg Simon OHM (German, 1827). Applies to ohmic conductors (metal wires, resistors at constant temperature). Non-ohmic: diodes, transistors, filament bulbs at high current (resistance changes with temperature), electrolytes. POWER equations: P = VI = I²R = V²/R (watts). ENERGY = P × t (joules). 1 kWh = 3.6 × 10⁶ J. Units in SI: VOLT (V) — potential difference; AMPERE (A) — current; OHM (Ω) — resistance; WATT (W) — power; COULOMB (C) — charge. I = Q/t (charge per unit time).",
@@ -29,10 +41,22 @@
     {
       "stem": "Three resistors of 2Ω, 4Ω, and 6Ω are connected in SERIES. The equivalent resistance is:",
       "options": [
-        {"option_text": "12 Ω", "is_correct": true},
-        {"option_text": "12/11 Ω", "is_correct": false},
-        {"option_text": "8/3 Ω", "is_correct": false},
-        {"option_text": "6 Ω", "is_correct": false}
+        {
+          "option_text": "12 Ω",
+          "is_correct": true
+        },
+        {
+          "option_text": "12/11 Ω",
+          "is_correct": false
+        },
+        {
+          "option_text": "8/3 Ω",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 Ω",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "SERIES connection: resistances ADD. R_series = R₁ + R₂ + R₃ = 2 + 4 + 6 = 12 Ω. Same current through all (I_total = I₁ = I₂ = I₃), voltages add (V_total = V₁ + V₂ + V₃). PARALLEL connection: 1/R_parallel = 1/R₁ + 1/R₂ + 1/R₃ = 1/2 + 1/4 + 1/6 = 6/12 + 3/12 + 2/12 = 11/12 → R_parallel = 12/11 ≈ 1.09 Ω (so parallel equivalent is LESS than the smallest resistor). Parallel: same voltage across all (V_total = V₁ = V₂ = V₃), currents add (I_total = I₁ + I₂ + I₃). Domestic wiring uses parallel (each appliance gets same voltage, independent on/off). Christmas tree lights can be series (one fails → all out) or parallel.",
@@ -50,10 +74,22 @@
     {
       "stem": "A 60 W light bulb operates on 220 V mains. What is the current flowing through it?",
       "options": [
-        {"option_text": "0.27 A", "is_correct": true},
-        {"option_text": "3.67 A", "is_correct": false},
-        {"option_text": "13200 A", "is_correct": false},
-        {"option_text": "0.036 A", "is_correct": false}
+        {
+          "option_text": "0.27 A",
+          "is_correct": true
+        },
+        {
+          "option_text": "3.67 A",
+          "is_correct": false
+        },
+        {
+          "option_text": "13200 A",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.036 A",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Use P = VI → I = P/V = 60/220 = 0.2727 A ≈ 0.27 A (or 273 mA). Working: power 60 W, voltage 220 V, so I = 60 W / 220 V = 3/11 A. Resistance: R = V/I = 220 / 0.27 ≈ 806 Ω (or R = V²/P = 220²/60 = 48400/60 ≈ 807 Ω — same answer). 3.67 A would be wrong — that's V/P; 13200 A comes from V×P (wrong formula). Indian mains: 220-240V, 50 Hz. European: 230V, 50Hz. US: 110-120V, 60 Hz. A typical home has 15-30 A per circuit. Circuit breaker trips if exceeded. Higher voltage → less current for same power → thinner wires feasible → less I²R loss in transmission — rationale for HIGH-VOLTAGE power transmission (132 kV, 220 kV, 400 kV, 765 kV).",
@@ -71,10 +107,22 @@
     {
       "stem": "The unit of ELECTRIC CHARGE in the SI system is:",
       "options": [
-        {"option_text": "Ampere", "is_correct": false},
-        {"option_text": "Coulomb", "is_correct": true},
-        {"option_text": "Volt", "is_correct": false},
-        {"option_text": "Farad", "is_correct": false}
+        {
+          "option_text": "Ampere",
+          "is_correct": false
+        },
+        {
+          "option_text": "Coulomb",
+          "is_correct": true
+        },
+        {
+          "option_text": "Volt",
+          "is_correct": false
+        },
+        {
+          "option_text": "Farad",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "COULOMB (C) — SI unit of electric charge, named after Charles-Augustin de Coulomb (French, 1736-1806). Defined: 1 C = charge transported by a current of 1 A in 1 s (Q = I × t). One electron: e = 1.602 × 10⁻¹⁹ C (elementary charge). One Coulomb ≈ 6.24 × 10¹⁸ electrons. AMPERE (A) = current = C/s. VOLT (V) = electric potential = J/C (work done per unit charge). FARAD (F) = capacitance = C/V. OHM (Ω) = V/A. WATT (W) = V × A = J/s. TESLA (T) = magnetic flux density = V·s/m². WEBER (Wb) = magnetic flux = V·s. HENRY (H) = inductance = V·s/A. COULOMB'S LAW: F = kQ₁Q₂/r², where k ≈ 9 × 10⁹ Nm²/C². Compare with Newton's gravity: F = Gm₁m₂/r², G = 6.67 × 10⁻¹¹. Coulomb force is ~10⁴⁰ stronger than gravity between charged particles.",
@@ -92,10 +140,22 @@
     {
       "stem": "KIRCHHOFF'S CURRENT LAW (KCL) states that:",
       "options": [
-        {"option_text": "The sum of voltages around a closed loop is zero", "is_correct": false},
-        {"option_text": "The sum of currents entering a junction equals the sum of currents leaving it", "is_correct": true},
-        {"option_text": "Current is proportional to voltage", "is_correct": false},
-        {"option_text": "Resistance in series is additive", "is_correct": false}
+        {
+          "option_text": "The sum of voltages around a closed loop is zero",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sum of currents entering a junction equals the sum of currents leaving it",
+          "is_correct": true
+        },
+        {
+          "option_text": "Current is proportional to voltage",
+          "is_correct": false
+        },
+        {
+          "option_text": "Resistance in series is additive",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "KIRCHHOFF'S TWO LAWS (1845, Gustav Kirchhoff, German): (1) CURRENT LAW (KCL / Junction Rule): Σ I_in = Σ I_out at any junction. Based on conservation of CHARGE. (2) VOLTAGE LAW (KVL / Loop Rule): Σ V = 0 around any closed loop. Based on conservation of ENERGY. These laws allow analysis of complex multi-loop circuits that Ohm's law alone can't handle. Example multi-loop: Wheatstone bridge, star-delta networks. Sign convention: current entering junction positive, leaving negative. For voltage: going through EMF source negative-to-positive terminal = +EMF; in direction of current through resistor = -IR. Kirchhoff also worked on black-body radiation (another 'Kirchhoff's law' in thermodynamics: good emitter = good absorber).",
@@ -113,13 +173,25 @@
     {
       "stem": "A FUSE wire in an electrical circuit is made of a material with:",
       "options": [
-        {"option_text": "High melting point + low resistance", "is_correct": false},
-        {"option_text": "Low melting point + high resistance (so heat generated by excess current melts it)", "is_correct": true},
-        {"option_text": "Zero resistance (superconductor)", "is_correct": false},
-        {"option_text": "Very high melting point + high resistance", "is_correct": false}
+        {
+          "option_text": "High melting point + low resistance",
+          "is_correct": false
+        },
+        {
+          "option_text": "Low melting point + high resistance",
+          "is_correct": true
+        },
+        {
+          "option_text": "Zero resistance (superconductor)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Very high melting point + high resistance",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "FUSE — safety device that melts when excessive current (overcurrent/short circuit) flows, breaking the circuit. Material: TIN-LEAD ALLOY (typically 37% Pb + 63% Sn), with LOW melting point (~200°C) + relatively HIGH resistance — so it heats up (I²R) and melts BEFORE the wiring or appliance does. Rated in amperes (e.g., 5A, 15A household fuses). Must be placed in the LIVE (phase) wire, not neutral. CIRCUIT BREAKERS (MCB — Miniature Circuit Breakers) have replaced fuses in modern wiring — resettable, uses electromagnet or bimetallic strip. ELCB/RCCB = Earth Leakage Circuit Breaker — detects current mismatch between live + neutral (leakage through human body or earth) and trips within 30ms. Fuse DIFFERS from a resistor (which limits but doesn't break). 'Fuse blown' = fuse has melted; must be replaced with the same rating.",
+      "explanation": "FUSE — safety device that melts when excessive current (overcurrent/short circuit) flows, breaking the circuit. Material: TIN-LEAD ALLOY (typically 37% Pb + 63% Sn), with LOW melting point (~200°C) + relatively HIGH resistance — so it heats up (I²R) and melts BEFORE the wiring or appliance does. Rated in amperes (e.g., 5A, 15A household fuses). Must be placed in the LIVE (phase) wire, not neutral. CIRCUIT BREAKERS (MCB — Miniature Circuit Breakers) have replaced fuses in modern wiring — resettable, uses electromagnet or bimetallic strip. ELCB/RCCB = Earth Leakage Circuit Breaker — detects current mismatch between live + neutral (leakage through human body or earth) and trips within 30ms. Fuse DIFFERS from a resistor (which limits but doesn't break). 'Fuse blown' = fuse has melted; must be replaced with the same rating. so heat generated by excess current melts it.",
       "subject": "Physics",
       "topic": "Current Electricity",
       "topic_code": "PHY_CURRENT",
@@ -129,15 +201,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-phy-cur-01",
       "generated_at": "2026-04-20T20:50:00+00:00",
-      "id": "sgk_PHY_CURRENT_00010"
+      "id": "sgk_PHY_CURRENT_00010",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Low melting point + high resistance (so heat generated by excess current melts it)",
+          "now": "Low melting point + high resistance",
+          "moved_to_explanation": "so heat generated by excess current melts it"
+        }
+      ]
     },
     {
       "stem": "Which material is considered the BEST conductor of electricity at room temperature (highest conductivity)?",
       "options": [
-        {"option_text": "Copper", "is_correct": false},
-        {"option_text": "Silver", "is_correct": true},
-        {"option_text": "Gold", "is_correct": false},
-        {"option_text": "Aluminium", "is_correct": false}
+        {
+          "option_text": "Copper",
+          "is_correct": false
+        },
+        {
+          "option_text": "Silver",
+          "is_correct": true
+        },
+        {
+          "option_text": "Gold",
+          "is_correct": false
+        },
+        {
+          "option_text": "Aluminium",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "ELECTRICAL CONDUCTIVITY (at 20°C): Silver (6.3 × 10⁷ S/m) > Copper (5.96) > Gold (4.52) > Aluminium (3.77) > Tungsten (1.79) > Iron (1.00) > Lead (0.48). SILVER is the best, but TOO EXPENSIVE for general wiring → COPPER is the industry standard (good conductivity + affordability + ductility). ALUMINIUM is used for overhead power lines (lighter weight — reduces tower spacing costs, despite being ~60% as conductive as copper). GOLD is used in fine electronics (phone connectors, PCB plating) because of corrosion resistance. SUPERCONDUCTORS have ZERO electrical resistance below critical temperature (Tc): Mercury Tc = 4.2K (Kamerlingh Onnes, 1911, Nobel 1913); YBa₂Cu₃O₇ (YBCO) Tc = 92K (high-Tc cuprate, above liquid nitrogen 77K); recent room-temperature superconductor claims (LK-99, 2023) remain disputed.",
@@ -155,10 +247,22 @@
     {
       "stem": "In a HOUSEHOLD electric circuit, the three wires typically supplied by the mains are:",
       "options": [
-        {"option_text": "Live (phase), Neutral, Earth", "is_correct": true},
-        {"option_text": "Positive, Negative, Ground", "is_correct": false},
-        {"option_text": "DC+, DC−, AC", "is_correct": false},
-        {"option_text": "Source, Sink, Bypass", "is_correct": false}
+        {
+          "option_text": "Live (phase), Neutral, Earth",
+          "is_correct": true
+        },
+        {
+          "option_text": "Positive, Negative, Ground",
+          "is_correct": false
+        },
+        {
+          "option_text": "DC+, DC−, AC",
+          "is_correct": false
+        },
+        {
+          "option_text": "Source, Sink, Bypass",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Indian household mains wires (3-pin plug): (1) LIVE (phase) — RED (old) or BROWN (new standard) — carries current at 220-240V AC relative to neutral. (2) NEUTRAL — BLACK (old) or BLUE — completes the circuit, should ideally be at 0V. (3) EARTH (ground) — GREEN / GREEN-YELLOW — connects metal casings to ground to prevent shock if live wire touches casing. Frequency: 50 Hz (60 Hz in US, Canada, parts of Japan). AC (Alternating Current) used for distribution because of ease of voltage transformation (step-up for transmission, step-down for consumption). 3-phase vs single-phase: commercial/industrial use 3-phase (three live wires 120° phase apart + neutral), residences get one phase. MCB trips if current exceeds its rating; ELCB trips on leakage.",
@@ -176,10 +280,22 @@
     {
       "stem": "A transformer works on the principle of:",
       "options": [
-        {"option_text": "Mutual electromagnetic induction (Faraday's law)", "is_correct": true},
-        {"option_text": "Ohm's law", "is_correct": false},
-        {"option_text": "Kirchhoff's laws", "is_correct": false},
-        {"option_text": "Joule heating", "is_correct": false}
+        {
+          "option_text": "Mutual electromagnetic induction",
+          "is_correct": true
+        },
+        {
+          "option_text": "Ohm's law",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kirchhoff's laws",
+          "is_correct": false
+        },
+        {
+          "option_text": "Joule heating",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "TRANSFORMER works on MUTUAL INDUCTION — Michael Faraday's law (1831): a changing magnetic flux in one coil induces an EMF in a nearby coil. Only works with AC (not DC, since DC doesn't produce a changing flux). Structure: two coils (PRIMARY + SECONDARY) wound on a common laminated iron CORE. V_primary / V_secondary = N_primary / N_secondary (turns ratio). If N_secondary > N_primary → STEP-UP (raises voltage, lowers current). If N_secondary < N_primary → STEP-DOWN. Power conservation (ideal): V₁I₁ = V₂I₂. Real transformers have ~95-99% efficiency (losses: copper = I²R, iron = eddy currents + hysteresis). Used in: power distribution (11kV → 415V/220V), phone chargers, doorbells. Invented by William Stanley (1885) + Zipernowsky-Déri-Bláthy in Hungary (1884-85).",
@@ -192,15 +308,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-phy-cur-01",
       "generated_at": "2026-04-20T20:50:00+00:00",
-      "id": "sgk_PHY_CURRENT_00013"
+      "id": "sgk_PHY_CURRENT_00013",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Mutual electromagnetic induction (Faraday's law)",
+          "now": "Mutual electromagnetic induction",
+          "moved_to_explanation": "Faraday's law"
+        }
+      ]
     },
     {
       "stem": "Who invented the electric BATTERY (the first reliable source of continuous electric current) in 1800?",
       "options": [
-        {"option_text": "Benjamin Franklin", "is_correct": false},
-        {"option_text": "Alessandro Volta (Voltaic Pile)", "is_correct": true},
-        {"option_text": "Thomas Edison", "is_correct": false},
-        {"option_text": "Michael Faraday", "is_correct": false}
+        {
+          "option_text": "Benjamin Franklin",
+          "is_correct": false
+        },
+        {
+          "option_text": "Alessandro Volta",
+          "is_correct": true
+        },
+        {
+          "option_text": "Thomas Edison",
+          "is_correct": false
+        },
+        {
+          "option_text": "Michael Faraday",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "ALESSANDRO VOLTA (Italian, 1745-1827) invented the VOLTAIC PILE in 1800 — alternating discs of zinc + copper separated by brine-soaked cloth. First reliable source of steady electric current. UNIT 'VOLT' named after him. Earlier, Luigi Galvani had observed 'animal electricity' in frog legs (1780), but Volta proved it was chemistry-based (not biological). Volta demonstrated his pile to Napoleon (1801) who ennobled him. Subsequent developments: DANIELL CELL (1836, John Daniell — more stable); LECLANCHÉ CELL (1866, carbon-zinc — basis of modern dry cells); LEAD-ACID BATTERY (1859, Planté — first rechargeable, still in cars); NICKEL-CADMIUM (1899); LITHIUM-ION (1985, John Goodenough + Stanley Whittingham + Akira Yoshino — Nobel 2019; powers phones + EVs). BENJAMIN FRANKLIN's famous kite experiment (1752) proved lightning is electrical — but he didn't invent the battery. FARADAY's work on electromagnetic induction enabled generators.",
@@ -213,7 +349,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-phy-cur-01",
       "generated_at": "2026-04-20T20:50:00+00:00",
-      "id": "sgk_PHY_CURRENT_00014"
+      "id": "sgk_PHY_CURRENT_00014",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Alessandro Volta (Voltaic Pile)",
+          "now": "Alessandro Volta",
+          "moved_to_explanation": "Voltaic Pile"
+        }
+      ]
     }
   ]
 }

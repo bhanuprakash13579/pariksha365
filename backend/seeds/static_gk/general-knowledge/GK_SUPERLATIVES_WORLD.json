@@ -8,10 +8,22 @@
     {
       "stem": "The LONGEST RIVER in the world is:",
       "options": [
-        {"option_text": "Amazon (Brazil/Peru)", "is_correct": false},
-        {"option_text": "Nile (Egypt/Sudan/Uganda)", "is_correct": true},
-        {"option_text": "Yangtze (China)", "is_correct": false},
-        {"option_text": "Mississippi (USA)", "is_correct": false}
+        {
+          "option_text": "Amazon (Brazil/Peru)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nile (Egypt/Sudan/Uganda)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Yangtze (China)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mississippi (USA)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "NILE — 6,650 km (4,130 miles), traditionally considered the world's longest river. Flows NORTH through 11 African countries (Uganda, South Sudan, Sudan, Egypt, Ethiopia, etc.) → Mediterranean. Two main tributaries: WHITE NILE (primary — from Lake Victoria) + BLUE NILE (from Ethiopian highlands, Lake Tana — carries 85% of water). AMAZON (~6,400 km) — long contested as the longest; 2014 Brazilian study claimed 6,992 km (making it longer), but measurement methodology disputed. Amazon has the LARGEST discharge by far (20% of world's fresh water into oceans). Other top 10: YANGTZE (3rd, 6,300 km, China's longest); MISSISSIPPI-MISSOURI (4th, ~6,275 km); YENISEI-ANGARA (Russia); YELLOW (HUANG HE, China — 'cradle of Chinese civilization'). LONGEST river ENTIRELY within one country: YANGTZE (entirely in China).",
@@ -29,13 +41,25 @@
     {
       "stem": "The LARGEST OCEAN by area AND the DEEPEST POINT on Earth are:",
       "options": [
-        {"option_text": "Atlantic Ocean; Puerto Rico Trench", "is_correct": false},
-        {"option_text": "Pacific Ocean; Mariana Trench (Challenger Deep, ~10,935 m)", "is_correct": true},
-        {"option_text": "Indian Ocean; Java Trench", "is_correct": false},
-        {"option_text": "Southern Ocean; South Sandwich Trench", "is_correct": false}
+        {
+          "option_text": "Atlantic Ocean; Puerto Rico Trench",
+          "is_correct": false
+        },
+        {
+          "option_text": "Pacific Ocean; Mariana Trench",
+          "is_correct": true
+        },
+        {
+          "option_text": "Indian Ocean; Java Trench",
+          "is_correct": false
+        },
+        {
+          "option_text": "Southern Ocean; South Sandwich Trench",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "PACIFIC OCEAN — largest (165 million km², ~46% of global ocean area, ~32% of Earth's surface). Contains the MARIANA TRENCH with CHALLENGER DEEP — deepest point on Earth at ~10,935 m (35,876 ft) — deeper than Mt Everest is tall! First reached 1960 (Trieste bathyscaphe: Piccard & Walsh); James Cameron solo-descended in 2012 (Deepsea Challenger submarine). Five oceans (since 2021, NGS recognition): Pacific > Atlantic > Indian > Southern (Antarctic) > Arctic. Shallowest: Arctic. Largest TROPICAL sea: Caribbean. Saltiest sea: DEAD SEA (~34% salinity — ~10× ocean avg; but it's a lake, not open ocean). Saltiest open water: RED SEA (~4%). Fresh-est: BALTIC SEA (low salinity due to rivers).",
+      "explanation": "PACIFIC OCEAN — largest (165 million km², ~46% of global ocean area, ~32% of Earth's surface). Contains the MARIANA TRENCH with CHALLENGER DEEP — deepest point on Earth at ~10,935 m (35,876 ft) — deeper than Mt Everest is tall! First reached 1960 (Trieste bathyscaphe: Piccard & Walsh); James Cameron solo-descended in 2012 (Deepsea Challenger submarine). Five oceans (since 2021, NGS recognition): Pacific > Atlantic > Indian > Southern (Antarctic) > Arctic. Shallowest: Arctic. Largest TROPICAL sea: Caribbean. Saltiest sea: DEAD SEA (~34% salinity — ~10× ocean avg; but it's a lake, not open ocean). Saltiest open water: RED SEA (~4%). Fresh-est: BALTIC SEA (low salinity due to rivers). Challenger Deep, ~10,935 m.",
       "subject": "General Knowledge",
       "topic": "Superlatives - World (Largest, Longest, Highest)",
       "topic_code": "GK_SUPERLATIVES_WORLD",
@@ -45,15 +69,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-gk-sup-01",
       "generated_at": "2026-04-20T21:10:00+00:00",
-      "id": "sgk_GK_SUPERLATIVES_WORLD_00006"
+      "id": "sgk_GK_SUPERLATIVES_WORLD_00006",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Pacific Ocean; Mariana Trench (Challenger Deep, ~10,935 m)",
+          "now": "Pacific Ocean; Mariana Trench",
+          "moved_to_explanation": "Challenger Deep, ~10,935 m"
+        }
+      ]
     },
     {
       "stem": "The LARGEST DESERT in the world by area is:",
       "options": [
-        {"option_text": "Sahara Desert (Africa)", "is_correct": false},
-        {"option_text": "Antarctic Polar Desert", "is_correct": true},
-        {"option_text": "Arabian Desert", "is_correct": false},
-        {"option_text": "Gobi Desert (Mongolia/China)", "is_correct": false}
+        {
+          "option_text": "Sahara Desert (Africa)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Antarctic Polar Desert",
+          "is_correct": true
+        },
+        {
+          "option_text": "Arabian Desert",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gobi Desert (Mongolia/China)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "TRICKY QUESTION. Technically, a DESERT is defined as a region with LESS THAN 250mm annual precipitation — doesn't have to be hot or sandy. The LARGEST desert by area is the ANTARCTIC POLAR DESERT (~14.2 million km²) followed by the ARCTIC POLAR DESERT (~13.9 million km²). SAHARA (~9.2 million km²) is the LARGEST HOT desert AND the 3rd overall. Other major hot deserts: ARABIAN (2.3M), GOBI (1.3M — Asia), KALAHARI (0.9M — Southern Africa), PATAGONIAN, GREAT VICTORIA (Aus). In India: THAR DESERT (~200,000 km², mostly Rajasthan + parts of Gujarat, Punjab, Haryana) — officially India's only desert. Driest place on Earth: ATACAMA DESERT (Chile) — some parts <1mm rain/year for centuries. Used as Mars analog by NASA.",
@@ -71,13 +115,25 @@
     {
       "stem": "The LARGEST country in the world by AREA is Russia (17.1 million km²). The SMALLEST is:",
       "options": [
-        {"option_text": "Monaco", "is_correct": false},
-        {"option_text": "Vatican City (0.49 km² / 0.17 sq mi)", "is_correct": true},
-        {"option_text": "Singapore", "is_correct": false},
-        {"option_text": "Nauru", "is_correct": false}
+        {
+          "option_text": "Monaco",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vatican City",
+          "is_correct": true
+        },
+        {
+          "option_text": "Singapore",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nauru",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "SMALLEST countries by AREA: (1) VATICAN CITY — 0.49 km² (pop. ~800) — smallest, located inside Rome; (2) MONACO — 2.1 km² (pop. ~40,000); (3) NAURU — 21 km²; (4) TUVALU — 26 km²; (5) SAN MARINO — 61 km². LARGEST countries: Russia (17.1M) > Canada (9.98M) > USA (9.83M) > China (9.60M) > Brazil (8.51M) > Australia (7.69M) > India (3.29M — 7th largest). SMALLEST by POPULATION: Vatican (~800) > Tuvalu (~12k) > Nauru > Palau. LARGEST by POPULATION (2024): INDIA (1.43 billion — overtook China in 2023 per UN estimates) > China (1.42B) > USA (~335M). LARGEST DEMOCRATICALLY-run elections: India's general elections. Landlocked countries: 44 (Nepal, Bhutan, Switzerland, Austria, most Central Asian). DOUBLY landlocked: only 2 — Uzbekistan + Liechtenstein.",
+      "explanation": "SMALLEST countries by AREA: (1) VATICAN CITY — 0.49 km² (pop. ~800) — smallest, located inside Rome; (2) MONACO — 2.1 km² (pop. ~40,000); (3) NAURU — 21 km²; (4) TUVALU — 26 km²; (5) SAN MARINO — 61 km². LARGEST countries: Russia (17.1M) > Canada (9.98M) > USA (9.83M) > China (9.60M) > Brazil (8.51M) > Australia (7.69M) > India (3.29M — 7th largest). SMALLEST by POPULATION: Vatican (~800) > Tuvalu (~12k) > Nauru > Palau. LARGEST by POPULATION (2024): INDIA (1.43 billion — overtook China in 2023 per UN estimates) > China (1.42B) > USA (~335M). LARGEST DEMOCRATICALLY-run elections: India's general elections. Landlocked countries: 44 (Nepal, Bhutan, Switzerland, Austria, most Central Asian). DOUBLY landlocked: only 2 — Uzbekistan + Liechtenstein. 0.49 km² / 0.17 sq mi.",
       "subject": "General Knowledge",
       "topic": "Superlatives - World (Largest, Longest, Highest)",
       "topic_code": "GK_SUPERLATIVES_WORLD",
@@ -87,18 +143,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-gk-sup-01",
       "generated_at": "2026-04-20T21:10:00+00:00",
-      "id": "sgk_GK_SUPERLATIVES_WORLD_00008"
+      "id": "sgk_GK_SUPERLATIVES_WORLD_00008",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Vatican City (0.49 km² / 0.17 sq mi)",
+          "now": "Vatican City",
+          "moved_to_explanation": "0.49 km² / 0.17 sq mi"
+        }
+      ]
     },
     {
       "stem": "The TALLEST FREESTANDING STRUCTURE in the world (as of 2024) is the Burj Khalifa in Dubai, UAE. Its height is approximately:",
       "options": [
-        {"option_text": "452 m", "is_correct": false},
-        {"option_text": "828 m (2,717 feet)", "is_correct": true},
-        {"option_text": "1,000 m", "is_correct": false},
-        {"option_text": "632 m", "is_correct": false}
+        {
+          "option_text": "452 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "828 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "1,000 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "632 m",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "BURJ KHALIFA (Dubai) — 828 m / 2,717 ft — tallest BUILDING & FREESTANDING structure in the world since 2010. 163 floors. Designed by Skidmore, Owings & Merrill (SOM, USA). Built by Samsung C&T Corporation (Korea). Named after UAE President Khalifa bin Zayed. Opened Jan 2010. Under construction in Jeddah: JEDDAH TOWER (Saudi Arabia) — targets 1 km (3,281 ft) on completion (delayed). Other notable tall: SHANGHAI TOWER (632 m, 2015); LOTTE WORLD TOWER (Seoul, 555 m); MERDEKA 118 (KL, 679 m, 2023); ONE WORLD TRADE CENTER (New York, 541 m). India's tallest (2024): PALAIS ROYALE (Mumbai, ~320 m). Tallest TEMPLE: ANGKOR WAT (Cambodia). Tallest STATUE: STATUE OF UNITY (Sardar Patel, Gujarat, 182 m, 2018) — tallest statue in the world.",
+      "explanation": "BURJ KHALIFA (Dubai) — 828 m / 2,717 ft — tallest BUILDING & FREESTANDING structure in the world since 2010. 163 floors. Designed by Skidmore, Owings & Merrill (SOM, USA). Built by Samsung C&T Corporation (Korea). Named after UAE President Khalifa bin Zayed. Opened Jan 2010. Under construction in Jeddah: JEDDAH TOWER (Saudi Arabia) — targets 1 km (3,281 ft) on completion (delayed). Other notable tall: SHANGHAI TOWER (632 m, 2015); LOTTE WORLD TOWER (Seoul, 555 m); MERDEKA 118 (KL, 679 m, 2023); ONE WORLD TRADE CENTER (New York, 541 m). India's tallest (2024): PALAIS ROYALE (Mumbai, ~320 m). Tallest TEMPLE: ANGKOR WAT (Cambodia). Tallest STATUE: STATUE OF UNITY (Sardar Patel, Gujarat, 182 m, 2018) — tallest statue in the world. 2,717 feet.",
       "subject": "General Knowledge",
       "topic": "Superlatives - World (Largest, Longest, Highest)",
       "topic_code": "GK_SUPERLATIVES_WORLD",
@@ -108,18 +184,38 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-gk-sup-01",
       "generated_at": "2026-04-20T21:10:00+00:00",
-      "id": "sgk_GK_SUPERLATIVES_WORLD_00009"
+      "id": "sgk_GK_SUPERLATIVES_WORLD_00009",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "828 m (2,717 feet)",
+          "now": "828 m",
+          "moved_to_explanation": "2,717 feet"
+        }
+      ]
     },
     {
       "stem": "The HIGHEST MOUNTAIN peak above sea level is Mt. Everest (Nepal/China), 8,849 m. The SECOND-highest is:",
       "options": [
-        {"option_text": "Kanchenjunga (India/Nepal, 8,586 m)", "is_correct": false},
-        {"option_text": "K2 / Mount Godwin-Austen (Pakistan-China, 8,611 m)", "is_correct": true},
-        {"option_text": "Makalu", "is_correct": false},
-        {"option_text": "Cho Oyu", "is_correct": false}
+        {
+          "option_text": "Kanchenjunga (India/Nepal, 8,586 m)",
+          "is_correct": false
+        },
+        {
+          "option_text": "K2 / Mount Godwin-Austen",
+          "is_correct": true
+        },
+        {
+          "option_text": "Makalu",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cho Oyu",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "World's top mountain peaks (above sea level): (1) EVEREST — 8,849 m (Nepal-China, Mahalangur range); (2) K2 — 8,611 m (Pakistan-China, Karakoram; named 'K2' by Great Trigonometrical Survey of India 1856, Karakoram peak 2); also called GODWIN-AUSTEN; known as SAVAGE MOUNTAIN — higher fatality rate than Everest; first summited 1954 by Italian team; (3) KANGCHENJUNGA — 8,586 m (India-Nepal, Sikkim — HIGHEST in India); (4) LHOTSE — 8,516 m; (5) MAKALU; (6) CHO OYU; (7) DHAULAGIRI; (8) MANASLU; (9) NANGA PARBAT (9th, Pakistan — 'Killer Mountain'); (10) ANNAPURNA I (10th, Nepal). ALL 14 eight-thousanders (>8,000 m) are in the HIMALAYAN-KARAKORAM range in Asia. Everest first climbed 29 May 1953 — Sir Edmund Hillary (NZ) + Tenzing Norgay (Nepali Sherpa). Naming: 'Everest' after Sir George Everest (British surveyor, GTS).",
+      "explanation": "World's top mountain peaks (above sea level): (1) EVEREST — 8,849 m (Nepal-China, Mahalangur range); (2) K2 — 8,611 m (Pakistan-China, Karakoram; named 'K2' by Great Trigonometrical Survey of India 1856, Karakoram peak 2); also called GODWIN-AUSTEN; known as SAVAGE MOUNTAIN — higher fatality rate than Everest; first summited 1954 by Italian team; (3) KANGCHENJUNGA — 8,586 m (India-Nepal, Sikkim — HIGHEST in India); (4) LHOTSE — 8,516 m; (5) MAKALU; (6) CHO OYU; (7) DHAULAGIRI; (8) MANASLU; (9) NANGA PARBAT (9th, Pakistan — 'Killer Mountain'); (10) ANNAPURNA I (10th, Nepal). ALL 14 eight-thousanders (>8,000 m) are in the HIMALAYAN-KARAKORAM range in Asia. Everest first climbed 29 May 1953 — Sir Edmund Hillary (NZ) + Tenzing Norgay (Nepali Sherpa). Naming: 'Everest' after Sir George Everest (British surveyor, GTS). Pakistan-China, 8,611 m.",
       "subject": "General Knowledge",
       "topic": "Superlatives - World (Largest, Longest, Highest)",
       "topic_code": "GK_SUPERLATIVES_WORLD",
@@ -129,15 +225,35 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-gk-sup-01",
       "generated_at": "2026-04-20T21:10:00+00:00",
-      "id": "sgk_GK_SUPERLATIVES_WORLD_00010"
+      "id": "sgk_GK_SUPERLATIVES_WORLD_00010",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "K2 / Mount Godwin-Austen (Pakistan-China, 8,611 m)",
+          "now": "K2 / Mount Godwin-Austen",
+          "moved_to_explanation": "Pakistan-China, 8,611 m"
+        }
+      ]
     },
     {
       "stem": "The LARGEST island in the world is:",
       "options": [
-        {"option_text": "Australia", "is_correct": false},
-        {"option_text": "Greenland", "is_correct": true},
-        {"option_text": "New Guinea", "is_correct": false},
-        {"option_text": "Madagascar", "is_correct": false}
+        {
+          "option_text": "Australia",
+          "is_correct": false
+        },
+        {
+          "option_text": "Greenland",
+          "is_correct": true
+        },
+        {
+          "option_text": "New Guinea",
+          "is_correct": false
+        },
+        {
+          "option_text": "Madagascar",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "GREENLAND — 2,166,086 km² — largest ISLAND (distinct from CONTINENT). Politically part of Denmark (autonomous). 80% covered by ice sheet. Pop. ~57,000. AUSTRALIA is a CONTINENT (smallest of the 7 continents) — not counted as an island. Top islands: (1) GREENLAND; (2) NEW GUINEA (split Indonesia-Papua New Guinea); (3) BORNEO (split Indonesia-Malaysia-Brunei); (4) MADAGASCAR; (5) BAFFIN (Canada); (6) SUMATRA (Indonesia); (7) HONSHU (Japan); (8) GREAT BRITAIN; (9) VICTORIA (Canada); (10) ELLESMERE (Canada). India's largest island: MIDDLE ANDAMAN (~1,536 km²). India also claims the SARALAN group via Sagar Island in Sundarbans delta. Smallest UNINHABITED island in India — Barren Island (Andaman — India's only active volcano, erupted 2017).",
@@ -155,10 +271,22 @@
     {
       "stem": "The TALLEST WATERFALL in the world is:",
       "options": [
-        {"option_text": "Niagara Falls (USA-Canada)", "is_correct": false},
-        {"option_text": "Angel Falls / Kerepakupai Vená (Venezuela, 979 m)", "is_correct": true},
-        {"option_text": "Victoria Falls (Zambia-Zimbabwe)", "is_correct": false},
-        {"option_text": "Iguazu Falls (Brazil-Argentina)", "is_correct": false}
+        {
+          "option_text": "Niagara Falls (USA-Canada)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Angel Falls / Kerepakupai Vená (Venezuela, 979 m)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Victoria Falls (Zambia-Zimbabwe)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Iguazu Falls (Brazil-Argentina)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "ANGEL FALLS (Venezuela, Canaima National Park) — TALLEST at 979 m (3,212 ft), with 807 m uninterrupted drop — 19× taller than Niagara. Named after American pilot JIMMIE ANGEL (1933 discovery by outside world). Local Pemon name: KEREPAKUPAI VENÁ. UNESCO WHS. Other famous waterfalls: NIAGARA (USA-Canada, 51 m — NOT tall but highest BY VOLUME among famous ones; also shared by US-Canada); VICTORIA FALLS (Zambia-Zimbabwe, 108 m, widest at 1.7 km — called 'Mosi-oa-Tunya' = 'smoke that thunders'); IGUAZU (Brazil-Argentina, 82 m, widest by some metrics — 275 individual falls); ANGEL (tallest); TUGELA (S. Africa, 948 m — 2nd tallest, disputed with Angel). India's tallest: KUNCHIKAL (Karnataka, 455 m). Largest by VOLUME: INGA FALLS (Congo — discharges ~25,000 m³/s of Congo river) — not a single waterfall but cascade.",
@@ -176,10 +304,22 @@
     {
       "stem": "The LARGEST LAKE in the world by AREA is:",
       "options": [
-        {"option_text": "Lake Superior (USA-Canada)", "is_correct": false},
-        {"option_text": "Caspian Sea (Iran-Russia-Kazakhstan-Turkmenistan-Azerbaijan)", "is_correct": true},
-        {"option_text": "Lake Victoria (Africa)", "is_correct": false},
-        {"option_text": "Dead Sea", "is_correct": false}
+        {
+          "option_text": "Lake Superior (USA-Canada)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Caspian Sea (Iran-Russia-Kazakhstan-Turkmenistan-Azerbaijan)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Lake Victoria (Africa)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Dead Sea",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "CASPIAN SEA — 371,000 km² — despite being called 'sea', it is technically the WORLD'S LARGEST LAKE (landlocked, salt water; classified as a lake by most geographers but legally as a sea by the 5 littoral states, 2018 Caspian Convention). Borders: Iran (S), Russia + Kazakhstan (N), Turkmenistan (E), Azerbaijan (W). Contains ~40% of world's lake water. LARGEST FRESHWATER LAKE BY AREA: SUPERIOR (82,100 km², USA-Canada Great Lakes). LARGEST BY VOLUME: LAKE BAIKAL (Siberia, Russia — 23,600 km³, 20% of world's fresh surface water, deepest at 1,642 m). DEEPEST LAKE: Baikal. HIGHEST LAKE: Ojos del Salado crater (Argentina-Chile). LARGEST SALTWATER LAKE: Caspian. LAKES WITHIN LAKES (nested): Manitoulin Island's Lake Manitou within Lake Huron. India's largest freshwater lake: WULAR (J&K, Asia's largest freshwater in some rankings). Largest saltwater: CHILIKA (Odisha — brackish lagoon).",
@@ -197,13 +337,25 @@
     {
       "stem": "The FASTEST LAND animal is:",
       "options": [
-        {"option_text": "Lion", "is_correct": false},
-        {"option_text": "Cheetah (up to 112 km/h)", "is_correct": true},
-        {"option_text": "Greyhound", "is_correct": false},
-        {"option_text": "Pronghorn antelope", "is_correct": false}
+        {
+          "option_text": "Lion",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cheetah",
+          "is_correct": true
+        },
+        {
+          "option_text": "Greyhound",
+          "is_correct": false
+        },
+        {
+          "option_text": "Pronghorn antelope",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "CHEETAH (Acinonyx jubatus) — fastest land animal, hits 110-112 km/h (70 mph) in short bursts (3-4 sec). Reaches 100 km/h from standstill in ~3 seconds (faster than most supercars). Adaptations: long legs, spine-like muscles, non-retractable claws (grip), long tail (balance), large nostrils + heart/lungs. Second-fastest: PRONGHORN ANTELOPE (USA, ~88 km/h but for LONGER duration, several km). SPRINGBOK (~88 km/h). Other speeds: Lion 80 km/h; Greyhound 72 km/h; Horse 55-70 km/h. FASTEST in AIR: PEREGRINE FALCON (~389 km/h in hunting stoop dive — fastest animal overall). FASTEST in WATER: BLACK MARLIN (~129 km/h) or SAILFISH. SLOWEST: three-toed sloth (~0.24 km/h). Cheetahs nearly extinct by 1970s India; CHEETAHS REINTRODUCED from Namibia + SA to Kuno NP (MP) in 2022-23 via Project Cheetah.",
+      "explanation": "CHEETAH (Acinonyx jubatus) — fastest land animal, hits 110-112 km/h (70 mph) in short bursts (3-4 sec). Reaches 100 km/h from standstill in ~3 seconds (faster than most supercars). Adaptations: long legs, spine-like muscles, non-retractable claws (grip), long tail (balance), large nostrils + heart/lungs. Second-fastest: PRONGHORN ANTELOPE (USA, ~88 km/h but for LONGER duration, several km). SPRINGBOK (~88 km/h). Other speeds: Lion 80 km/h; Greyhound 72 km/h; Horse 55-70 km/h. FASTEST in AIR: PEREGRINE FALCON (~389 km/h in hunting stoop dive — fastest animal overall). FASTEST in WATER: BLACK MARLIN (~129 km/h) or SAILFISH. SLOWEST: three-toed sloth (~0.24 km/h). Cheetahs nearly extinct by 1970s India; CHEETAHS REINTRODUCED from Namibia + SA to Kuno NP (MP) in 2022-23 via Project Cheetah. up to 112 km/h.",
       "subject": "General Knowledge",
       "topic": "Superlatives - World (Largest, Longest, Highest)",
       "topic_code": "GK_SUPERLATIVES_WORLD",
@@ -213,7 +365,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-20-gk-sup-01",
       "generated_at": "2026-04-20T21:10:00+00:00",
-      "id": "sgk_GK_SUPERLATIVES_WORLD_00014"
+      "id": "sgk_GK_SUPERLATIVES_WORLD_00014",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Cheetah (up to 112 km/h)",
+          "now": "Cheetah",
+          "moved_to_explanation": "up to 112 km/h"
+        }
+      ]
     }
   ]
 }

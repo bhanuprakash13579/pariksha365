@@ -405,7 +405,7 @@
       "stem": "Which of the following warm-water current systems is primarily responsible for the comparatively MILD winters of Northwestern Europe (compared with regions at the same latitude in North America)?",
       "options": [
         {
-          "option_text": "Gulf Stream and its extension — the North Atlantic Drift (Current)",
+          "option_text": "Gulf Stream and its extension",
           "is_correct": true
         },
         {
@@ -422,7 +422,7 @@
         }
       ],
       "correct_letter": "A",
-      "explanation": "The Gulf Stream carries warm tropical water northward from the Gulf of Mexico; at around 40°N it becomes the North Atlantic Drift/Current, which warms air masses reaching Western Europe. This is why Britain (latitude ~55°N) has winters comparable to much milder latitudes in North America. Labrador (same latitude, eastern Canada) has a frigid winter due to cold Labrador Current. The Kuroshio warms Japan; East Australian warms NZ's east coast; Agulhas warms SE Africa — all parallel climate effects on their respective continents.",
+      "explanation": "The Gulf Stream carries warm tropical water northward from the Gulf of Mexico; at around 40°N it becomes the North Atlantic Drift/Current, which warms air masses reaching Western Europe. This is why Britain (latitude ~55°N) has winters comparable to much milder latitudes in North America. Labrador (same latitude, eastern Canada) has a frigid winter due to cold Labrador Current. The Kuroshio warms Japan; East Australian warms NZ's east coast; Agulhas warms SE Africa — all parallel climate effects on their respective continents. the North Atlantic Drift (Current).",
       "subject": "Geography",
       "topic": "Oceanography — Currents & Tides",
       "topic_code": "GEO_OCEAN_CURRENTS",
@@ -432,7 +432,15 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-in-chat-2026-04-19-geo-ocean-currents-01",
       "generated_at": "2026-04-19T16:05:54+00:00",
-      "id": "sgk_GEO_OCEAN_CURRENTS_00013"
+      "id": "sgk_GEO_OCEAN_CURRENTS_00013",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Gulf Stream and its extension — the North Atlantic Drift (Current)",
+          "now": "Gulf Stream and its extension",
+          "moved_to_explanation": "the North Atlantic Drift (Current)"
+        }
+      ]
     },
     {
       "stem": "Which of the following is INCORRECT about ocean tides?",
