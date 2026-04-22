@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "SI + CI advanced — mixed tiers",
+  "topic_code": "QNT_SI_CI_MIXED_II",
+  "description": "Part-year, rate change, doubling, compounding frequency",
+  "questions": [
+    {
+      "stem": "Simple interest on ₹5,000 at 6% p.a. for 3 years is:",
+      "options": [
+        {"option_text": "₹900", "is_correct": true},
+        {"option_text": "₹1,500", "is_correct": false},
+        {"option_text": "₹800", "is_correct": false},
+        {"option_text": "₹1,000", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "SI = P·R·T/100 = 5000·6·3/100 = 900.",
+      "subject": "Quant",
+      "topic": "SI + CI advanced — mixed tiers",
+      "topic_code": "QNT_SI_CI_MIXED_II",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-sici-01",
+      "generated_at": "2026-04-22T23:30:00+00:00",
+      "id": "sgk_QNT_SI_CI_MIXED_II_00001"
+    },
+    {
+      "stem": "At what rate of SIMPLE INTEREST will a sum become DOUBLE itself in 10 years?",
+      "options": [
+        {"option_text": "5%", "is_correct": false},
+        {"option_text": "10%", "is_correct": true},
+        {"option_text": "12.5%", "is_correct": false},
+        {"option_text": "20%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Doubling → SI = P → P = P·R·T/100 → 100 = R·T → R·T = 100. With T = 10, R = 10%.",
+      "subject": "Quant",
+      "topic": "SI + CI advanced — mixed tiers",
+      "topic_code": "QNT_SI_CI_MIXED_II",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-sici-02",
+      "generated_at": "2026-04-22T23:30:00+00:00",
+      "id": "sgk_QNT_SI_CI_MIXED_II_00002"
+    },
+    {
+      "stem": "Rule of 72 says: at 12% compound annual rate, a sum approximately DOUBLES in:",
+      "options": [
+        {"option_text": "4 years", "is_correct": false},
+        {"option_text": "6 years", "is_correct": true},
+        {"option_text": "10 years", "is_correct": false},
+        {"option_text": "12 years", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Rule of 72: doubling time ≈ 72/rate. At 12%, 72/12 = 6 years. Useful for quick mental estimates. Exact: ln 2 / ln 1.12 ≈ 6.12 years.",
+      "subject": "Quant",
+      "topic": "SI + CI advanced — mixed tiers",
+      "topic_code": "QNT_SI_CI_MIXED_II",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-sici-03",
+      "generated_at": "2026-04-22T23:30:00+00:00",
+      "id": "sgk_QNT_SI_CI_MIXED_II_00003"
+    },
+    {
+      "stem": "The amount of ₹1000 at 10% compounded ANNUALLY for 3 years is:",
+      "options": [
+        {"option_text": "₹1,300", "is_correct": false},
+        {"option_text": "₹1,331", "is_correct": true},
+        {"option_text": "₹1,331.10", "is_correct": false},
+        {"option_text": "₹1,210", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "A = 1000·(1.1)³ = 1000·1.331 = 1331. CI = 331.",
+      "subject": "Quant",
+      "topic": "SI + CI advanced — mixed tiers",
+      "topic_code": "QNT_SI_CI_MIXED_II",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-sici-04",
+      "generated_at": "2026-04-22T23:30:00+00:00",
+      "id": "sgk_QNT_SI_CI_MIXED_II_00004"
+    },
+    {
+      "stem": "SI for 3 years at some rate is ₹600. CI at the SAME RATE for 2 years is ₹420. Find P and R.",
+      "options": [
+        {"option_text": "P = ₹2000, R = 10%", "is_correct": true},
+        {"option_text": "P = ₹3000, R = 10%", "is_correct": false},
+        {"option_text": "P = ₹2000, R = 15%", "is_correct": false},
+        {"option_text": "P = ₹1000, R = 20%", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "SI_3 = P·3R/100 = 600 ⇒ P·R = 20000. For 2 years: CI − SI_2 = P·(R/100)². SI_2 = 400. So CI_2 − SI_2 = 420 − 400 = 20 → P·R²/10000 = 20 → P·R² = 200000. Divide (P·R² = 200000) by (P·R = 20000): R = 10%. Then P = 20000/10 = 2000.",
+      "subject": "Quant",
+      "topic": "SI + CI advanced — mixed tiers",
+      "topic_code": "QNT_SI_CI_MIXED_II",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-sici-05",
+      "generated_at": "2026-04-22T23:30:00+00:00",
+      "id": "sgk_QNT_SI_CI_MIXED_II_00005"
+    },
+    {
+      "stem": "If compound interest is reckoned half-yearly at a nominal rate of 8% p.a., the effective rate per HALF-YEAR is:",
+      "options": [
+        {"option_text": "8%", "is_correct": false},
+        {"option_text": "4%", "is_correct": true},
+        {"option_text": "16%", "is_correct": false},
+        {"option_text": "2%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Half-yearly → annual rate divided by 2 = 8/2 = 4% per half-year. Annual effective yield = (1.04)² − 1 = 8.16% > 8%.",
+      "subject": "Quant",
+      "topic": "SI + CI advanced — mixed tiers",
+      "topic_code": "QNT_SI_CI_MIXED_II",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-sici-06",
+      "generated_at": "2026-04-22T23:30:00+00:00",
+      "id": "sgk_QNT_SI_CI_MIXED_II_00006"
+    },
+    {
+      "stem": "The SI on a sum for 2 years is ₹400 and CI for the same sum at same rate is ₹420. The rate of interest is:",
+      "options": [
+        {"option_text": "5%", "is_correct": false},
+        {"option_text": "10%", "is_correct": true},
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "20%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "For 2 years: CI − SI = P(R/100)². SI(1 yr) = 200 → P·R/100 = 200. CI − SI = 420 − 400 = 20 → P·R²/10000 = 20. Divide: R = 10%.",
+      "subject": "Quant",
+      "topic": "SI + CI advanced — mixed tiers",
+      "topic_code": "QNT_SI_CI_MIXED_II",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-sici-07",
+      "generated_at": "2026-04-22T23:30:00+00:00",
+      "id": "sgk_QNT_SI_CI_MIXED_II_00007"
+    }
+  ]
+}
