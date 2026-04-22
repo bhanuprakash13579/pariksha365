@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Blood relations II — mixed tiers",
+  "topic_code": "REAS_BLOOD_RELATIONS_II_MIXED",
+  "description": "Pointing, coded kinship, generations",
+  "questions": [
+    {
+      "stem": "Pointing to a photograph, a man said, 'She is the daughter of my grandfather's only son.' How is the girl related to the man?",
+      "options": [
+        {"option_text": "Cousin", "is_correct": false},
+        {"option_text": "Sister", "is_correct": true},
+        {"option_text": "Niece", "is_correct": false},
+        {"option_text": "Daughter", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Grandfather's only son = the man's own father. His father's daughter = the man's sister. Trap options: 'Cousin' would require an uncle (father's brother); 'Niece' would require the man to be her uncle; 'Daughter' would need the girl's parent to be the man himself.",
+      "subject": "Reasoning",
+      "topic": "Blood relations II — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-br2-01",
+      "generated_at": "2026-04-23T10:00:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00001"
+    },
+    {
+      "stem": "A woman says, 'That boy's mother is the only daughter of my mother.' How is the boy related to the woman?",
+      "options": [
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Son", "is_correct": true},
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "The only daughter of the woman's mother is the woman herself. So the boy's mother is the woman, i.e., the boy is her son. 'Nephew' would require the mother to be the woman's sister; 'Brother' would need the boy to share her parents.",
+      "subject": "Reasoning",
+      "topic": "Blood relations II — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-br2-02",
+      "generated_at": "2026-04-23T10:00:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00002"
+    },
+    {
+      "stem": "If A is the brother of B, B is the sister of C, and C is the father of D, then D is the ______ of A.",
+      "options": [
+        {"option_text": "Niece", "is_correct": false},
+        {"option_text": "Niece or nephew", "is_correct": true},
+        {"option_text": "Son", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "C is the sibling of A (B's brother) and also B's other sibling. D is the child of C, so D is A's niece or nephew. D's sex is not stated, so 'Niece or nephew' is the only safe answer; a single 'Niece' is wrong because we cannot exclude a male child.",
+      "subject": "Reasoning",
+      "topic": "Blood relations II — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-br2-03",
+      "generated_at": "2026-04-23T10:00:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00003"
+    },
+    {
+      "stem": "P is the father of Q. R is the son of Q. S is the brother of P. Then S is the ______ of R.",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Grand-uncle", "is_correct": true},
+        {"option_text": "Uncle", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "P is R's grandfather (because Q is R's father and P is Q's father). S is P's brother, so S is the brother of R's grandfather — that relationship is called grand-uncle. 'Uncle' would apply if S were the brother of R's father (Q), but S is the brother of R's grandfather.",
+      "subject": "Reasoning",
+      "topic": "Blood relations II — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-br2-04",
+      "generated_at": "2026-04-23T10:00:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00004"
+    },
+    {
+      "stem": "Pointing to a woman, a man said, 'Her son's father is my father's only son.' How is the woman related to the man?",
+      "options": [
+        {"option_text": "Sister", "is_correct": false},
+        {"option_text": "Wife", "is_correct": true},
+        {"option_text": "Mother", "is_correct": false},
+        {"option_text": "Daughter", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "The only son of the man's father is the man himself. So 'her son's father' = the man. If the man is the father of the woman's son, the woman must be the man's wife. 'Mother' would need her son to be the man's brother; 'Sister' would need her son to be a nephew, which is inconsistent with the man being the son's father.",
+      "subject": "Reasoning",
+      "topic": "Blood relations II — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-br2-05",
+      "generated_at": "2026-04-23T10:00:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00005"
+    },
+    {
+      "stem": "If X is the mother of Y, Y is the sister of Z, and Z is the son of W, then how is X related to W?",
+      "options": [
+        {"option_text": "Daughter", "is_correct": false},
+        {"option_text": "Wife", "is_correct": true},
+        {"option_text": "Sister", "is_correct": false},
+        {"option_text": "Mother", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Y is the child of X, and Y is also the sibling of Z. Z is the son of W, so Z and Y share parents — W is the other parent of Y. X is Y's mother, so W is Y's father, making X the wife of W.",
+      "subject": "Reasoning",
+      "topic": "Blood relations II — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-br2-06",
+      "generated_at": "2026-04-23T10:00:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00006"
+    },
+    {
+      "stem": "A man pointed to a boy and said, 'His father is the only son of my father.' How is the boy related to the man?",
+      "options": [
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Son", "is_correct": true},
+        {"option_text": "Cousin", "is_correct": false},
+        {"option_text": "Nephew", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "'The only son of my father' is the man himself. So the boy's father is the man, meaning the boy is his son. 'Nephew' would need the boy's father to be the man's brother; 'Brother' would need the boy to share his parents; 'Cousin' would need his father to be the man's uncle.",
+      "subject": "Reasoning",
+      "topic": "Blood relations II — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-br2-07",
+      "generated_at": "2026-04-23T10:00:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00007"
+    }
+  ]
+}
