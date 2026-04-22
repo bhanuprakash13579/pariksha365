@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "Time, Speed & Distance — mixed tiers",
+  "topic_code": "QNT_SPEED_DISTANCE_MIXED",
+  "description": "TSD core drills: average speed, relative speed, trains, boats-streams",
+  "questions": [
+    {
+      "stem": "A car travels 240 km in 4 hours. Its AVERAGE SPEED in km/h is:",
+      "options": [
+        {"option_text": "50", "is_correct": false},
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "65", "is_correct": false},
+        {"option_text": "70", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Speed = Distance / Time = 240/4 = 60 km/h.",
+      "subject": "Quant",
+      "topic": "Time, Speed & Distance — mixed tiers",
+      "topic_code": "QNT_SPEED_DISTANCE_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-tsd-01",
+      "generated_at": "2026-04-22T09:50:00+00:00",
+      "id": "sgk_QNT_SPEED_DISTANCE_MIXED_00001"
+    },
+    {
+      "stem": "A man covers the first half of a journey at 40 km/h and the second half at 60 km/h. His AVERAGE speed for the entire journey is:",
+      "options": [
+        {"option_text": "50 km/h", "is_correct": false},
+        {"option_text": "48 km/h", "is_correct": true},
+        {"option_text": "52 km/h", "is_correct": false},
+        {"option_text": "45 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Equal DISTANCES, different speeds → average = harmonic mean = 2·v₁·v₂/(v₁+v₂) = 2·40·60/100 = 4800/100 = 48 km/h. Common trap: straight arithmetic mean 50 is WRONG for equal-distance case.",
+      "subject": "Quant",
+      "topic": "Time, Speed & Distance — mixed tiers",
+      "topic_code": "QNT_SPEED_DISTANCE_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-tsd-02",
+      "generated_at": "2026-04-22T09:50:00+00:00",
+      "id": "sgk_QNT_SPEED_DISTANCE_MIXED_00002"
+    },
+    {
+      "stem": "Two trains of lengths 120 m and 80 m run on parallel tracks in OPPOSITE directions at 60 km/h and 40 km/h. The time they take to pass each other completely is:",
+      "options": [
+        {"option_text": "6 seconds", "is_correct": false},
+        {"option_text": "7.2 seconds", "is_correct": true},
+        {"option_text": "10 seconds", "is_correct": false},
+        {"option_text": "12 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Opposite direction → relative speed = 60 + 40 = 100 km/h = 100 × 5/18 = 250/9 m/s. Total length = 200 m. Time = 200 / (250/9) = 200·9/250 = 1800/250 = 7.2 s.",
+      "subject": "Quant",
+      "topic": "Time, Speed & Distance — mixed tiers",
+      "topic_code": "QNT_SPEED_DISTANCE_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-tsd-03",
+      "generated_at": "2026-04-22T09:50:00+00:00",
+      "id": "sgk_QNT_SPEED_DISTANCE_MIXED_00003"
+    },
+    {
+      "stem": "A boat's speed in still water is 10 km/h. A stream flows at 2 km/h. The time to row 24 km DOWNSTREAM is:",
+      "options": [
+        {"option_text": "1.5 hours", "is_correct": false},
+        {"option_text": "2 hours", "is_correct": true},
+        {"option_text": "2.5 hours", "is_correct": false},
+        {"option_text": "3 hours", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Downstream speed = boat + stream = 10 + 2 = 12 km/h. Time = 24/12 = 2 hours. Upstream would take 24/(10−2) = 3 hours.",
+      "subject": "Quant",
+      "topic": "Time, Speed & Distance — mixed tiers",
+      "topic_code": "QNT_SPEED_DISTANCE_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-tsd-04",
+      "generated_at": "2026-04-22T09:50:00+00:00",
+      "id": "sgk_QNT_SPEED_DISTANCE_MIXED_00004"
+    },
+    {
+      "stem": "A 150-m-long train running at 72 km/h crosses a signal POLE in:",
+      "options": [
+        {"option_text": "5 seconds", "is_correct": false},
+        {"option_text": "7.5 seconds", "is_correct": true},
+        {"option_text": "10 seconds", "is_correct": false},
+        {"option_text": "15 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Speed 72 km/h = 72 × 5/18 = 20 m/s. Crossing a pole → distance = length of train = 150 m. Time = 150/20 = 7.5 s. (Crossing a platform → add platform length to 150 m.)",
+      "subject": "Quant",
+      "topic": "Time, Speed & Distance — mixed tiers",
+      "topic_code": "QNT_SPEED_DISTANCE_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-tsd-05",
+      "generated_at": "2026-04-22T09:50:00+00:00",
+      "id": "sgk_QNT_SPEED_DISTANCE_MIXED_00005"
+    },
+    {
+      "stem": "If a man walks at 5 km/h, he reaches office 10 minutes LATE. If he walks at 6 km/h, he is 5 minutes EARLY. The distance to his office is:",
+      "options": [
+        {"option_text": "5.5 km", "is_correct": false},
+        {"option_text": "7.5 km", "is_correct": true},
+        {"option_text": "6 km", "is_correct": false},
+        {"option_text": "8 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Let correct time = t hours. At 5 km/h: d = 5(t + 10/60). At 6 km/h: d = 6(t − 5/60). Equate: 5t + 5/6 = 6t − 1/2 → t = 5/6 + 1/2 = 10/6 + 3/6 = 13/6 × ? re-do: 5t + 50/60 = 6t − 30/60 → 5t + 5/6 = 6t − 1/2 → 5/6 + 1/2 = t → 10/12 + 6/12 = t → t = 16/12 = 4/3 h. Distance = 6(4/3 − 1/12) = 6·(16/12 − 1/12) = 6·15/12 = 90/12 = 7.5 km.",
+      "subject": "Quant",
+      "topic": "Time, Speed & Distance — mixed tiers",
+      "topic_code": "QNT_SPEED_DISTANCE_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-tsd-06",
+      "generated_at": "2026-04-22T09:50:00+00:00",
+      "id": "sgk_QNT_SPEED_DISTANCE_MIXED_00006"
+    },
+    {
+      "stem": "Two trains start from stations A and B towards each other at 50 km/h and 70 km/h. The distance between A and B is 600 km. How far from A do they MEET?",
+      "options": [
+        {"option_text": "250 km", "is_correct": true},
+        {"option_text": "300 km", "is_correct": false},
+        {"option_text": "350 km", "is_correct": false},
+        {"option_text": "400 km", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Closing speed = 50 + 70 = 120 km/h. Time to meet = 600/120 = 5 h. Distance from A = 50 × 5 = 250 km. (From B = 70 × 5 = 350 km; sum = 600 ✓.)",
+      "subject": "Quant",
+      "topic": "Time, Speed & Distance — mixed tiers",
+      "topic_code": "QNT_SPEED_DISTANCE_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-qnt-tsd-07",
+      "generated_at": "2026-04-22T09:50:00+00:00",
+      "id": "sgk_QNT_SPEED_DISTANCE_MIXED_00007"
+    }
+  ]
+}
