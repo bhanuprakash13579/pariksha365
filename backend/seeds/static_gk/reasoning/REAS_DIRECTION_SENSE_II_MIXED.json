@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Direction sense II — mixed tiers",
+  "topic_code": "REAS_DIRECTION_SENSE_II_MIXED",
+  "description": "Path tracing, net displacement, directions",
+  "questions": [
+    {
+      "stem": "A man walks 5 km north, then 3 km east, then 5 km south. How far is he from the starting point, and in what direction?",
+      "options": [
+        {"option_text": "13 km, east", "is_correct": false},
+        {"option_text": "3 km, east", "is_correct": true},
+        {"option_text": "8 km, north-east", "is_correct": false},
+        {"option_text": "5 km, south", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Start at origin. +5 km N to (0,5). +3 km E to (3,5). +5 km S to (3,0). Final displacement = 3 km east of starting point. The two 5-km legs cancel; only the 3-km east leg survives. 13 km is the total distance walked, not displacement.",
+      "subject": "Reasoning",
+      "topic": "Direction sense II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_SENSE_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-ds2-01",
+      "generated_at": "2026-04-23T11:50:00+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_II_MIXED_00001"
+    },
+    {
+      "stem": "A cyclist rides 4 km east, then 3 km north. How far is she from the start in a straight line?",
+      "options": [
+        {"option_text": "7 km", "is_correct": false},
+        {"option_text": "5 km", "is_correct": true},
+        {"option_text": "1 km", "is_correct": false},
+        {"option_text": "12 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Straight-line (shortest) distance = √(4² + 3²) = √(16 + 9) = √25 = 5 km. 7 km is the sum of the two legs (total distance walked, not displacement). 3-4-5 is the classic Pythagorean triple — worth memorising for speed.",
+      "subject": "Reasoning",
+      "topic": "Direction sense II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_SENSE_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-ds2-02",
+      "generated_at": "2026-04-23T11:50:00+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_II_MIXED_00002"
+    },
+    {
+      "stem": "If south-east becomes north, north-east becomes west, and so on, what will west become?",
+      "options": [
+        {"option_text": "North-east", "is_correct": false},
+        {"option_text": "South-east", "is_correct": true},
+        {"option_text": "North-west", "is_correct": false},
+        {"option_text": "South", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "The directions are being rotated 135° anticlockwise (SE = 135° → N = 0°). Applying the same rotation to W (270°): 270° − 135° = 135° → SE. Method: work out the rotation from the first pair, apply the same to the asked direction. Anticlockwise: SE → N → NW → W → SW → S → SE → ...",
+      "subject": "Reasoning",
+      "topic": "Direction sense II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_SENSE_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-ds2-03",
+      "generated_at": "2026-04-23T11:50:00+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_II_MIXED_00003"
+    },
+    {
+      "stem": "A man starts from point A and walks 10 m east, then turns right and walks 5 m, then turns right again and walks 10 m. How far is he from A and in which direction?",
+      "options": [
+        {"option_text": "5 m north", "is_correct": false},
+        {"option_text": "5 m south", "is_correct": true},
+        {"option_text": "10 m west", "is_correct": false},
+        {"option_text": "15 m east", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Start at A (0,0). 10 m east → (10,0). Turn right (now facing south) + 5 m → (10,−5). Turn right again (now facing west) + 10 m → (0,−5). Final position 5 m south of A. Right turns when walking east: next is south, then west, then north.",
+      "subject": "Reasoning",
+      "topic": "Direction sense II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_SENSE_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-ds2-04",
+      "generated_at": "2026-04-23T11:50:00+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_II_MIXED_00004"
+    },
+    {
+      "stem": "Raj walks 6 km north, then 8 km west, then 6 km south. His displacement from the starting point is:",
+      "options": [
+        {"option_text": "20 km west", "is_correct": false},
+        {"option_text": "8 km west", "is_correct": true},
+        {"option_text": "10 km north-west", "is_correct": false},
+        {"option_text": "6 km south", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Start at (0,0). +6 N → (0,6). −8 E (i.e., 8 km west) → (−8,6). −6 N (6 km south) → (−8,0). Displacement = 8 km west. The 6-km north and 6-km south cancel. 20 km is the total path length (6+8+6).",
+      "subject": "Reasoning",
+      "topic": "Direction sense II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_SENSE_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-ds2-05",
+      "generated_at": "2026-04-23T11:50:00+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_II_MIXED_00005"
+    },
+    {
+      "stem": "A boy facing north turns 90° clockwise, then 135° anticlockwise. Which direction is he facing now?",
+      "options": [
+        {"option_text": "South-east", "is_correct": false},
+        {"option_text": "North-west", "is_correct": true},
+        {"option_text": "North-east", "is_correct": false},
+        {"option_text": "South-west", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Measure rotations clockwise from north as positive. Net rotation = +90° − 135° = −45°, i.e., 45° anticlockwise from north = North-West. Verification step-by-step: start facing N, +90° CW puts him facing E, then −135° CCW moves him back by 135° (E → N → NW), landing on NW.",
+      "subject": "Reasoning",
+      "topic": "Direction sense II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_SENSE_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-ds2-06",
+      "generated_at": "2026-04-23T11:50:00+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_II_MIXED_00006"
+    },
+    {
+      "stem": "From town P, Q is 30 km east. R is 40 km north of Q. The shortest distance from P to R is:",
+      "options": [
+        {"option_text": "70 km", "is_correct": false},
+        {"option_text": "50 km", "is_correct": true},
+        {"option_text": "35 km", "is_correct": false},
+        {"option_text": "10 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "P is at (0,0); Q at (30,0); R at (30,40). PR = √(30² + 40²) = √(900 + 1600) = √2500 = 50 km. 70 km is 30 + 40, the total path via Q. Another Pythagorean triple worth memorising — 3-4-5 scaled up ten times.",
+      "subject": "Reasoning",
+      "topic": "Direction sense II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_SENSE_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-ds2-07",
+      "generated_at": "2026-04-23T11:50:00+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_II_MIXED_00007"
+    }
+  ]
+}
