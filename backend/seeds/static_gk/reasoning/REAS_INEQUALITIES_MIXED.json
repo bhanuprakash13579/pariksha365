@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Inequalities — mixed tiers",
+  "topic_code": "REAS_INEQUALITIES_MIXED",
+  "description": "Banking-style symbol-based inequality chains",
+  "questions": [
+    {
+      "stem": "Statements: A > B, B ≥ C. Conclusion: A > C. Does the conclusion FOLLOW?",
+      "options": [
+        {"option_text": "Yes, A > C follows", "is_correct": true},
+        {"option_text": "No, A = C also possible", "is_correct": false},
+        {"option_text": "Cannot be determined", "is_correct": false},
+        {"option_text": "Only A ≥ C follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "A > B and B ≥ C. Two cases: if B > C then A > B > C → A > C. If B = C then A > B = C → A > C. In both cases A > C strictly. Conclusion is valid.",
+      "subject": "Reasoning",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "REAS_INEQUALITIES_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-ineq-01",
+      "generated_at": "2026-04-22T20:00:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_MIXED_00001"
+    },
+    {
+      "stem": "Statements: P ≥ Q, Q < R. Which follows? (I) P > R  (II) R > Q.",
+      "options": [
+        {"option_text": "Only (I) follows", "is_correct": false},
+        {"option_text": "Only (II) follows", "is_correct": true},
+        {"option_text": "Both follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "(I) P > R? — P ≥ Q and Q < R means P could be > R, equal, or < R (no unique relation between P and R). NOT valid. (II) R > Q is a direct restatement of Q < R. Valid.",
+      "subject": "Reasoning",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "REAS_INEQUALITIES_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-ineq-02",
+      "generated_at": "2026-04-22T20:00:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_MIXED_00002"
+    },
+    {
+      "stem": "Statements: X = Y, Y ≥ Z. Conclusion: X ≥ Z. Does it follow?",
+      "options": [
+        {"option_text": "Yes", "is_correct": true},
+        {"option_text": "No, X could be less than Z", "is_correct": false},
+        {"option_text": "Only X > Z follows", "is_correct": false},
+        {"option_text": "Only X = Z follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "X = Y and Y ≥ Z ⇒ X ≥ Z. (If Y = Z then X = Z; if Y > Z then X > Z — so in both cases X ≥ Z holds.)",
+      "subject": "Reasoning",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "REAS_INEQUALITIES_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-ineq-03",
+      "generated_at": "2026-04-22T20:00:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_MIXED_00003"
+    },
+    {
+      "stem": "Statements: A > B ≥ C, D < E, E ≤ C. Conclusion: A > D. Does it follow?",
+      "options": [
+        {"option_text": "Yes", "is_correct": true},
+        {"option_text": "No", "is_correct": false},
+        {"option_text": "Cannot be determined", "is_correct": false},
+        {"option_text": "Only A ≥ D follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Chain: A > B ≥ C ≥ E > D (since E ≤ C means C ≥ E, and D < E means E > D). So A > B ≥ C ≥ E > D → A > D strictly.",
+      "subject": "Reasoning",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "REAS_INEQUALITIES_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-ineq-04",
+      "generated_at": "2026-04-22T20:00:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_MIXED_00004"
+    },
+    {
+      "stem": "Statements: M ≤ N, N = O, O < P. Which of the following CANNOT be deduced?",
+      "options": [
+        {"option_text": "M ≤ O", "is_correct": false},
+        {"option_text": "N < P", "is_correct": false},
+        {"option_text": "M < P", "is_correct": false},
+        {"option_text": "M > P", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "explanation": "M ≤ N = O < P → M ≤ O (yes), N < P (yes), M < P (yes — M ≤ O < P ⇒ M < P). M > P is definitely FALSE given M ≤ O < P. So 'M > P' cannot be deduced.",
+      "subject": "Reasoning",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "REAS_INEQUALITIES_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-ineq-05",
+      "generated_at": "2026-04-22T20:00:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_MIXED_00005"
+    },
+    {
+      "stem": "Statements: A ≥ B > C ≤ D, D < E. Which follows? (I) A > C  (II) E > C",
+      "options": [
+        {"option_text": "Only (I)", "is_correct": false},
+        {"option_text": "Only (II)", "is_correct": false},
+        {"option_text": "Both (I) and (II)", "is_correct": true},
+        {"option_text": "Neither", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "(I) A ≥ B > C ⇒ A > C. True. (II) C ≤ D < E ⇒ C < E (strict because D < E). True. Both follow.",
+      "subject": "Reasoning",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "REAS_INEQUALITIES_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-ineq-06",
+      "generated_at": "2026-04-22T20:00:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_MIXED_00006"
+    },
+    {
+      "stem": "Statements: L > M, M = N. Which follows? (I) L > N  (II) L = N",
+      "options": [
+        {"option_text": "Only (I)", "is_correct": true},
+        {"option_text": "Only (II)", "is_correct": false},
+        {"option_text": "Both", "is_correct": false},
+        {"option_text": "Neither", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "L > M and M = N ⇒ L > N (definitely strict). L = N is NOT possible since L > M = N means L is strictly greater. Only (I) follows.",
+      "subject": "Reasoning",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "REAS_INEQUALITIES_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-ineq-07",
+      "generated_at": "2026-04-22T20:00:00+00:00",
+      "id": "sgk_REAS_INEQUALITIES_MIXED_00007"
+    }
+  ]
+}
