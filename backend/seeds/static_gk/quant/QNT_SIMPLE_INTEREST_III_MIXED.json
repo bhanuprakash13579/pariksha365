@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "Simple interest III — mixed tiers",
+  "topic_code": "QNT_SIMPLE_INTEREST_III_MIXED",
+  "description": "Simple interest, rate, principal, time problems",
+  "questions": [
+    {
+      "stem": "The simple interest on ₹2,000 at 5% per annum for 3 years is:",
+      "options": [
+        {"option_text": "₹200", "is_correct": false},
+        {"option_text": "₹300", "is_correct": true},
+        {"option_text": "₹600", "is_correct": false},
+        {"option_text": "₹150", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "SI = P × R × T / 100 = 2000 × 5 × 3 / 100 = 30000 / 100 = ₹300. ₹600 would be the total amount-growth treated as interest (trap — that's still SI, but for different values). Quick check: 5 % of 2000 = 100 per year; 3 years × ₹100 = ₹300.",
+      "subject": "Quant",
+      "topic": "Simple interest III — mixed tiers",
+      "topic_code": "QNT_SIMPLE_INTEREST_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-si3-01",
+      "generated_at": "2026-04-23T14:30:00+00:00",
+      "id": "sgk_QNT_SIMPLE_INTEREST_III_MIXED_00001"
+    },
+    {
+      "stem": "A sum of ₹5,000 earns simple interest of ₹1,500 in 3 years. The rate of interest per annum is:",
+      "options": [
+        {"option_text": "8%", "is_correct": false},
+        {"option_text": "10%", "is_correct": true},
+        {"option_text": "12%", "is_correct": false},
+        {"option_text": "15%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "R = (SI × 100) / (P × T) = (1500 × 100) / (5000 × 3) = 150000 / 15000 = 10 %. Verify: at 10 % of ₹5,000 for 3 years → 500 × 3 = ₹1,500. ✓",
+      "subject": "Quant",
+      "topic": "Simple interest III — mixed tiers",
+      "topic_code": "QNT_SIMPLE_INTEREST_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-si3-02",
+      "generated_at": "2026-04-23T14:30:00+00:00",
+      "id": "sgk_QNT_SIMPLE_INTEREST_III_MIXED_00002"
+    },
+    {
+      "stem": "A sum triples itself at simple interest in 16 years. The rate of interest per annum is:",
+      "options": [
+        {"option_text": "10%", "is_correct": false},
+        {"option_text": "12.5%", "is_correct": true},
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "20%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "If the amount triples, the interest earned is 2 × P (since A = P + SI, and A = 3P). So SI = 2P. Using SI = P × R × T / 100: 2P = P × R × 16 / 100 → 200 = 16R → R = 12.5 %. Shortcut — money multiplies 'n' times when (n−1) × 100 / R = T years.",
+      "subject": "Quant",
+      "topic": "Simple interest III — mixed tiers",
+      "topic_code": "QNT_SIMPLE_INTEREST_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-si3-03",
+      "generated_at": "2026-04-23T14:30:00+00:00",
+      "id": "sgk_QNT_SIMPLE_INTEREST_III_MIXED_00003"
+    },
+    {
+      "stem": "What principal would amount to ₹7,200 in 4 years at 5% simple interest per annum?",
+      "options": [
+        {"option_text": "₹6,000", "is_correct": true},
+        {"option_text": "₹5,760", "is_correct": false},
+        {"option_text": "₹7,000", "is_correct": false},
+        {"option_text": "₹6,500", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Amount A = P + SI = P (1 + RT/100). So P = A / (1 + RT/100) = 7200 / (1 + 5×4/100) = 7200 / 1.20 = ₹6,000. Verify: SI on 6000 for 4 years at 5 % = 6000 × 0.05 × 4 = ₹1,200; A = 6000 + 1200 = 7200. ✓",
+      "subject": "Quant",
+      "topic": "Simple interest III — mixed tiers",
+      "topic_code": "QNT_SIMPLE_INTEREST_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-si3-04",
+      "generated_at": "2026-04-23T14:30:00+00:00",
+      "id": "sgk_QNT_SIMPLE_INTEREST_III_MIXED_00004"
+    },
+    {
+      "stem": "In how many years will a sum of money double at 8% per annum simple interest?",
+      "options": [
+        {"option_text": "10 years", "is_correct": false},
+        {"option_text": "12.5 years", "is_correct": true},
+        {"option_text": "15 years", "is_correct": false},
+        {"option_text": "8 years", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Doubling means SI = P. Using SI = P × R × T / 100: P = P × 8 × T / 100 → T = 100 / 8 = 12.5 years. Shortcut for 'n-fold' — Time = 100 × (n−1) / R. Here n=2, R=8 → T = 100 × 1 / 8 = 12.5 years. Do not confuse with compound-interest rule of 72.",
+      "subject": "Quant",
+      "topic": "Simple interest III — mixed tiers",
+      "topic_code": "QNT_SIMPLE_INTEREST_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-si3-05",
+      "generated_at": "2026-04-23T14:30:00+00:00",
+      "id": "sgk_QNT_SIMPLE_INTEREST_III_MIXED_00005"
+    },
+    {
+      "stem": "A sum of ₹800 at simple interest becomes ₹920 in 3 years. If the rate is increased by 3% p.a., the new amount after 3 years will be:",
+      "options": [
+        {"option_text": "₹960", "is_correct": false},
+        {"option_text": "₹992", "is_correct": true},
+        {"option_text": "₹975", "is_correct": false},
+        {"option_text": "₹1,000", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Original SI = 920 − 800 = ₹120 in 3 years. Original rate R = (120 × 100) / (800 × 3) = 5 %. New rate = 5 + 3 = 8 %. New SI = (800 × 8 × 3) / 100 = ₹192. New amount = 800 + 192 = ₹992.",
+      "subject": "Quant",
+      "topic": "Simple interest III — mixed tiers",
+      "topic_code": "QNT_SIMPLE_INTEREST_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-si3-06",
+      "generated_at": "2026-04-23T14:30:00+00:00",
+      "id": "sgk_QNT_SIMPLE_INTEREST_III_MIXED_00006"
+    },
+    {
+      "stem": "The simple interest on a principal for 5 years is one-fourth of the principal. The rate of interest per annum is:",
+      "options": [
+        {"option_text": "4%", "is_correct": false},
+        {"option_text": "5%", "is_correct": true},
+        {"option_text": "6%", "is_correct": false},
+        {"option_text": "8%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Given SI = P/4 in 5 years. Using SI = P × R × T / 100: P/4 = P × R × 5 / 100 → 1/4 = 5R/100 → R = 100 / (4 × 5) = 5 %. Quick sanity-check — at 5 % over 5 years, SI = 25 % of P = P/4. ✓",
+      "subject": "Quant",
+      "topic": "Simple interest III — mixed tiers",
+      "topic_code": "QNT_SIMPLE_INTEREST_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-si3-07",
+      "generated_at": "2026-04-23T14:30:00+00:00",
+      "id": "sgk_QNT_SIMPLE_INTEREST_III_MIXED_00007"
+    }
+  ]
+}
