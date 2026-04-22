@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Dice / cube logic — mixed tiers",
+  "topic_code": "REAS_DICE_CUBE_MIXED",
+  "description": "Standard-dice face rules, cube painting, cube counting",
+  "questions": [
+    {
+      "stem": "On a STANDARD DIE, the sum of opposite faces is:",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "7", "is_correct": true},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Standard-dice rule: 1-6, 2-5, 3-4 on opposite faces — each pair sums to 7. Total of all 6 faces = 21. Useful to predict hidden bottom face given top.",
+      "subject": "Reasoning",
+      "topic": "Dice / cube logic — mixed tiers",
+      "topic_code": "REAS_DICE_CUBE_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dc-01",
+      "generated_at": "2026-04-23T06:30:00+00:00",
+      "id": "sgk_REAS_DICE_CUBE_MIXED_00001"
+    },
+    {
+      "stem": "A cube of side 3 cm is painted on ALL 6 faces and cut into unit cubes (27 total). How many small cubes have exactly TWO faces painted?",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "1", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "For n×n×n cube cut into unit cubes: 3-face-painted = 8 (corners). 2-face-painted = 12·(n−2) = 12·1 = 12 (edge, excl. corner). 1-face-painted = 6·(n−2)² = 6·1 = 6 (face interior). 0-face-painted = (n−2)³ = 1 (inside).",
+      "subject": "Reasoning",
+      "topic": "Dice / cube logic — mixed tiers",
+      "topic_code": "REAS_DICE_CUBE_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dc-02",
+      "generated_at": "2026-04-23T06:30:00+00:00",
+      "id": "sgk_REAS_DICE_CUBE_MIXED_00002"
+    },
+    {
+      "stem": "A 4×4×4 cube is painted on all faces and cut into unit cubes. How many unit cubes have NO face painted?",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "8", "is_correct": true},
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "24", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "0-face-painted = (n−2)³ = (4−2)³ = 8. These are the 'interior' cubes, entirely inside.",
+      "subject": "Reasoning",
+      "topic": "Dice / cube logic — mixed tiers",
+      "topic_code": "REAS_DICE_CUBE_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dc-03",
+      "generated_at": "2026-04-23T06:30:00+00:00",
+      "id": "sgk_REAS_DICE_CUBE_MIXED_00003"
+    },
+    {
+      "stem": "A cube of side 5 cm is cut into 1 cm cubes. The total number of small cubes obtained is:",
+      "options": [
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "125", "is_correct": true},
+        {"option_text": "100", "is_correct": false},
+        {"option_text": "150", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Volume of big cube = 5³ = 125 cm³. Each small cube = 1 cm³. Total = 125.",
+      "subject": "Reasoning",
+      "topic": "Dice / cube logic — mixed tiers",
+      "topic_code": "REAS_DICE_CUBE_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dc-04",
+      "generated_at": "2026-04-23T06:30:00+00:00",
+      "id": "sgk_REAS_DICE_CUBE_MIXED_00004"
+    },
+    {
+      "stem": "A die shows 5 on the top face. What is the number on the BOTTOM face (standard die convention)?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Opposite faces sum to 7 (standard die). Top 5 → Bottom 7 − 5 = 2.",
+      "subject": "Reasoning",
+      "topic": "Dice / cube logic — mixed tiers",
+      "topic_code": "REAS_DICE_CUBE_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dc-05",
+      "generated_at": "2026-04-23T06:30:00+00:00",
+      "id": "sgk_REAS_DICE_CUBE_MIXED_00005"
+    },
+    {
+      "stem": "The number of small cubes with EXACTLY 3 painted faces (from a painted 4×4×4 cube) is:",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "8", "is_correct": true},
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "24", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "3-face-painted cubes — only the CORNER cubes. A cube of any size has 8 corners → 8 such cubes.",
+      "subject": "Reasoning",
+      "topic": "Dice / cube logic — mixed tiers",
+      "topic_code": "REAS_DICE_CUBE_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dc-06",
+      "generated_at": "2026-04-23T06:30:00+00:00",
+      "id": "sgk_REAS_DICE_CUBE_MIXED_00006"
+    },
+    {
+      "stem": "Two dice are rolled together. The probability of getting a SUM of 7 is:",
+      "options": [
+        {"option_text": "1/6", "is_correct": true},
+        {"option_text": "1/12", "is_correct": false},
+        {"option_text": "1/36", "is_correct": false},
+        {"option_text": "7/36", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Total outcomes = 6×6 = 36. Favourable (sum = 7): (1,6)(2,5)(3,4)(4,3)(5,2)(6,1) = 6 ways. Probability = 6/36 = 1/6. Note: 7 is the MOST likely sum when rolling 2 dice — a classic dice fact.",
+      "subject": "Reasoning",
+      "topic": "Dice / cube logic — mixed tiers",
+      "topic_code": "REAS_DICE_CUBE_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dc-07",
+      "generated_at": "2026-04-23T06:30:00+00:00",
+      "id": "sgk_REAS_DICE_CUBE_MIXED_00007"
+    }
+  ]
+}
