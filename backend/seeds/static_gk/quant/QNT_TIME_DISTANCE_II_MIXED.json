@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "Time, speed and distance II — mixed tiers",
+  "topic_code": "QNT_TIME_DISTANCE_II_MIXED",
+  "description": "Average speed, relative speed, trains, boats",
+  "questions": [
+    {
+      "stem": "A car travels 120 km in 2 hours. Its average speed is:",
+      "options": [
+        {"option_text": "40 km/h", "is_correct": false},
+        {"option_text": "60 km/h", "is_correct": true},
+        {"option_text": "120 km/h", "is_correct": false},
+        {"option_text": "80 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Speed = distance / time = 120 / 2 = 60 km/h. A common trap is 120 (total distance, not speed) or 40 (from wrong division). Note — average speed over a trip is not always the arithmetic mean of individual-leg speeds; it is total distance divided by total time.",
+      "subject": "Quant",
+      "topic": "Time, speed and distance II — mixed tiers",
+      "topic_code": "QNT_TIME_DISTANCE_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-td2-01",
+      "generated_at": "2026-04-23T19:20:00+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_II_MIXED_00001"
+    },
+    {
+      "stem": "A man covers a distance at 40 km/h and returns along the same route at 60 km/h. His average speed for the entire journey is:",
+      "options": [
+        {"option_text": "50 km/h", "is_correct": false},
+        {"option_text": "48 km/h", "is_correct": true},
+        {"option_text": "52 km/h", "is_correct": false},
+        {"option_text": "45 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "For equal distances at different speeds, average speed = harmonic mean = 2ab/(a+b) = 2 × 40 × 60 / (40+60) = 4800/100 = 48 km/h. The arithmetic mean 50 is a classic trap. Proof — let distance each way = 120 km; time at 40 km/h = 3 h, time at 60 km/h = 2 h; total 240 km in 5 h → 48 km/h.",
+      "subject": "Quant",
+      "topic": "Time, speed and distance II — mixed tiers",
+      "topic_code": "QNT_TIME_DISTANCE_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-td2-02",
+      "generated_at": "2026-04-23T19:20:00+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_II_MIXED_00002"
+    },
+    {
+      "stem": "A train 150 m long travelling at 72 km/h takes how many seconds to cross a stationary pole?",
+      "options": [
+        {"option_text": "5 seconds", "is_correct": false},
+        {"option_text": "7.5 seconds", "is_correct": true},
+        {"option_text": "10 seconds", "is_correct": false},
+        {"option_text": "15 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "72 km/h = 72 × (5/18) m/s = 20 m/s. Time to cross a pole = length of train / speed = 150 / 20 = 7.5 s. Remember — to cross a pole, only the length of the train matters; to cross a bridge, the length of the train + length of the bridge.",
+      "subject": "Quant",
+      "topic": "Time, speed and distance II — mixed tiers",
+      "topic_code": "QNT_TIME_DISTANCE_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-td2-03",
+      "generated_at": "2026-04-23T19:20:00+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_II_MIXED_00003"
+    },
+    {
+      "stem": "Two trains of length 120 m and 180 m are moving in opposite directions at 54 km/h and 36 km/h. The time they take to completely cross each other is:",
+      "options": [
+        {"option_text": "10 seconds", "is_correct": false},
+        {"option_text": "12 seconds", "is_correct": true},
+        {"option_text": "15 seconds", "is_correct": false},
+        {"option_text": "20 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "For opposite directions, relative speed = 54 + 36 = 90 km/h = 90 × (5/18) = 25 m/s. Total distance to clear = 120 + 180 = 300 m. Time = 300/25 = 12 s. If the trains were running in the same direction, the relative speed would be 54 − 36 = 18 km/h = 5 m/s, giving time = 300/5 = 60 s.",
+      "subject": "Quant",
+      "topic": "Time, speed and distance II — mixed tiers",
+      "topic_code": "QNT_TIME_DISTANCE_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-td2-04",
+      "generated_at": "2026-04-23T19:20:00+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_II_MIXED_00004"
+    },
+    {
+      "stem": "A boat rows 24 km downstream in 2 hours and 24 km upstream in 3 hours. The speed of the stream is:",
+      "options": [
+        {"option_text": "1 km/h", "is_correct": false},
+        {"option_text": "2 km/h", "is_correct": true},
+        {"option_text": "4 km/h", "is_correct": false},
+        {"option_text": "6 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Downstream speed = 24/2 = 12 km/h = b + s (boat + stream). Upstream speed = 24/3 = 8 km/h = b − s. Adding: 2b = 20 → b = 10 km/h. Subtracting: 2s = 4 → s = 2 km/h. Always — boat speed = (down + up)/2; stream speed = (down − up)/2.",
+      "subject": "Quant",
+      "topic": "Time, speed and distance II — mixed tiers",
+      "topic_code": "QNT_TIME_DISTANCE_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-td2-05",
+      "generated_at": "2026-04-23T19:20:00+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_II_MIXED_00005"
+    },
+    {
+      "stem": "A person walks at 5 km/h, 4 hours a day. How far will he walk in 3 days?",
+      "options": [
+        {"option_text": "20 km", "is_correct": false},
+        {"option_text": "60 km", "is_correct": true},
+        {"option_text": "12 km", "is_correct": false},
+        {"option_text": "15 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Daily distance = speed × time per day = 5 × 4 = 20 km. Over 3 days → 20 × 3 = 60 km. 20 is one day's distance (trap); 12 comes from multiplying 4 and 3 only (ignoring speed); 15 is 5 × 3 (ignoring daily hours).",
+      "subject": "Quant",
+      "topic": "Time, speed and distance II — mixed tiers",
+      "topic_code": "QNT_TIME_DISTANCE_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-td2-06",
+      "generated_at": "2026-04-23T19:20:00+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_II_MIXED_00006"
+    },
+    {
+      "stem": "A train running at 60 km/h crosses a 180-m-long bridge in 21 seconds. The length of the train is:",
+      "options": [
+        {"option_text": "150 m", "is_correct": false},
+        {"option_text": "170 m", "is_correct": true},
+        {"option_text": "200 m", "is_correct": false},
+        {"option_text": "120 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Speed = 60 × 5/18 = 50/3 m/s. Total distance covered in 21 s = 50/3 × 21 = 350 m. Train length = 350 − 180 (bridge length) = 170 m. To cross a bridge, total distance = length of train + length of bridge.",
+      "subject": "Quant",
+      "topic": "Time, speed and distance II — mixed tiers",
+      "topic_code": "QNT_TIME_DISTANCE_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-qnt-td2-07",
+      "generated_at": "2026-04-23T19:20:00+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_II_MIXED_00007"
+    }
+  ]
+}
