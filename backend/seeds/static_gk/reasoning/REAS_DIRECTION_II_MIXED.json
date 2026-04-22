@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Directions II — mixed tiers",
+  "topic_code": "REAS_DIRECTION_II_MIXED",
+  "description": "Direction-sense, turning, shadow, distance-displacement",
+  "questions": [
+    {
+      "stem": "Ravi walks 5 km east, then turns left and walks 12 km. How FAR is he from the starting point?",
+      "options": [
+        {"option_text": "7 km", "is_correct": false},
+        {"option_text": "13 km", "is_correct": true},
+        {"option_text": "17 km", "is_correct": false},
+        {"option_text": "10 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "5 E + 12 N → right-angle displacement. Distance = √(5² + 12²) = √(25 + 144) = √169 = 13 km. (5-12-13 Pythagorean triple.)",
+      "subject": "Reasoning",
+      "topic": "Directions II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dir2-01",
+      "generated_at": "2026-04-23T01:40:00+00:00",
+      "id": "sgk_REAS_DIRECTION_II_MIXED_00001"
+    },
+    {
+      "stem": "A man faces NORTH. He turns 90° clockwise, then 180° anti-clockwise. Which direction is he now facing?",
+      "options": [
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "West", "is_correct": true},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "North", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Start: N. 90° CW → E. Then 180° ACW from E → W. (Or net rotation: 90° CW − 180° ACW = 90° CW + 180° CW = 270° CW from N = W.)",
+      "subject": "Reasoning",
+      "topic": "Directions II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dir2-02",
+      "generated_at": "2026-04-23T01:40:00+00:00",
+      "id": "sgk_REAS_DIRECTION_II_MIXED_00002"
+    },
+    {
+      "stem": "In the morning at sunrise, if a person's SHADOW falls to his LEFT, which direction is he facing?",
+      "options": [
+        {"option_text": "North", "is_correct": true},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "West", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Sun rises in the EAST at sunrise → shadow points WEST. If shadow is on the LEFT, then left = west → person faces NORTH.",
+      "subject": "Reasoning",
+      "topic": "Directions II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dir2-03",
+      "generated_at": "2026-04-23T01:40:00+00:00",
+      "id": "sgk_REAS_DIRECTION_II_MIXED_00003"
+    },
+    {
+      "stem": "A car starts from point A and travels 8 km north, then 5 km east, then 8 km south. How far is the car from A?",
+      "options": [
+        {"option_text": "3 km", "is_correct": false},
+        {"option_text": "5 km", "is_correct": true},
+        {"option_text": "8 km", "is_correct": false},
+        {"option_text": "13 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "8 N + 5 E + 8 S. N and S cancel → net displacement = 5 km E. So car is 5 km from A.",
+      "subject": "Reasoning",
+      "topic": "Directions II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dir2-04",
+      "generated_at": "2026-04-23T01:40:00+00:00",
+      "id": "sgk_REAS_DIRECTION_II_MIXED_00004"
+    },
+    {
+      "stem": "A is to the north of B. C is to the east of B. D is to the south of C. In which direction is D from A?",
+      "options": [
+        {"option_text": "North-east", "is_correct": false},
+        {"option_text": "South-east", "is_correct": true},
+        {"option_text": "North-west", "is_correct": false},
+        {"option_text": "South-west", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Let B be origin. A at (0, +y_a). C at (+x_c, 0). D at (+x_c, −y_d) where y_d > 0. From A (0, y_a) → D (x_c, −y_d): Δx = +, Δy = −. Positive east + negative north = SOUTH-EAST.",
+      "subject": "Reasoning",
+      "topic": "Directions II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dir2-05",
+      "generated_at": "2026-04-23T01:40:00+00:00",
+      "id": "sgk_REAS_DIRECTION_II_MIXED_00005"
+    },
+    {
+      "stem": "Facing EAST, a man walks 6 km, turns right, walks 8 km. Find his distance and direction from the start.",
+      "options": [
+        {"option_text": "10 km south-east", "is_correct": true},
+        {"option_text": "14 km south-east", "is_correct": false},
+        {"option_text": "10 km north-east", "is_correct": false},
+        {"option_text": "10 km south", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Facing east, right turn → south. So man walks 6 E + 8 S. Distance = √(6² + 8²) = √100 = 10 km. Direction = +x and −y → south-east (of start).",
+      "subject": "Reasoning",
+      "topic": "Directions II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dir2-06",
+      "generated_at": "2026-04-23T01:40:00+00:00",
+      "id": "sgk_REAS_DIRECTION_II_MIXED_00006"
+    },
+    {
+      "stem": "In the evening at sunset, if a person's shadow falls exactly in FRONT of him, which direction is he facing?",
+      "options": [
+        {"option_text": "East", "is_correct": true},
+        {"option_text": "West", "is_correct": false},
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "South", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Sun sets in the WEST → shadow points EAST. If shadow is in FRONT → front = east → person faces EAST.",
+      "subject": "Reasoning",
+      "topic": "Directions II — mixed tiers",
+      "topic_code": "REAS_DIRECTION_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-23-reas-dir2-07",
+      "generated_at": "2026-04-23T01:40:00+00:00",
+      "id": "sgk_REAS_DIRECTION_II_MIXED_00007"
+    }
+  ]
+}
