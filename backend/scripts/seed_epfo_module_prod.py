@@ -10,12 +10,13 @@ This script:
   * upserts the ``epfo-apfc`` module;
   * replaces all its questions with the 1966 rows from
     ``backend/seeds/epfo_apfc_bank.json``;
-  * grants access to ``bhanuprakashnaidu13579@gmail.com`` (plus any ``--email``).
+  * does NOT grant any access by default — whitelist management is handled via
+    the admin panel so the authoritative list lives in the DB, not in source.
 
 Usage::
 
     python3 backend/scripts/seed_epfo_module_prod.py
-    python3 backend/scripts/seed_epfo_module_prod.py --email teammate@gmail.com
+    python3 backend/scripts/seed_epfo_module_prod.py --email teammate@gmail.com  # optional escape hatch
 """
 from __future__ import annotations
 
@@ -39,7 +40,6 @@ MODULE_DESC = (
     "Science, Current Affairs, Geography and more. Isolated practice: "
     "wrong answers only surface follow-ups from the EPFO bank itself."
 )
-DEFAULT_OWNER_EMAIL = "bhanuprakashnaidu13579@gmail.com"
 
 
 def _load_env_local(env_path: Path) -> dict:
@@ -222,25 +222,30 @@ def run(db_url: str, data: list[dict], emails: list[str]) -> None:
                 )
             log.info("inserted %d questions", len(rows))
 
-            # 4. Grant access
-            for raw in emails:
-                email = raw.strip().lower()
-                if not email or "@" not in email:
-                    continue
-                cur.execute(
-                    "SELECT 1 FROM private_module_access "
-                    "WHERE module_id=%s AND LOWER(email)=%s",
-                    (str(module_id), email),
-                )
-                if cur.fetchone():
-                    log.info("access already granted: %s", email)
-                    continue
-                cur.execute(
-                    "INSERT INTO private_module_access "
-                    "(id, module_id, email, note) VALUES (%s, %s, %s, %s)",
-                    (str(uuid.uuid4()), str(module_id), email, "seed script"),
-                )
-                log.info("granted access: %s", email)
+            # 4. Grant access — only when explicitly requested via --email.
+            #    Default flow is zero auto-grants; admins whitelist emails
+            #    through the admin panel so the DB is the single source of truth.
+            if emails:
+                for raw in emails:
+                    email = raw.strip().lower()
+                    if not email or "@" not in email:
+                        continue
+                    cur.execute(
+                        "SELECT 1 FROM private_module_access "
+                        "WHERE module_id=%s AND LOWER(email)=%s",
+                        (str(module_id), email),
+                    )
+                    if cur.fetchone():
+                        log.info("access already granted: %s", email)
+                        continue
+                    cur.execute(
+                        "INSERT INTO private_module_access "
+                        "(id, module_id, email, note) VALUES (%s, %s, %s, %s)",
+                        (str(uuid.uuid4()), str(module_id), email, "seed script"),
+                    )
+                    log.info("granted access: %s", email)
+            else:
+                log.info("no --email passed; manage access from the admin panel.")
 
         conn.commit()
         log.info("committed.")
@@ -268,8 +273,7 @@ def main() -> int:
     data = json.loads(json_path.read_text(encoding="utf-8"))
     log.info("loaded %d questions from %s", len(data), json_path.name)
 
-    emails = [DEFAULT_OWNER_EMAIL, *args.email]
-    run(db_url, data, emails)
+    run(db_url, data, list(args.email))
     log.info("done.")
     return 0
 

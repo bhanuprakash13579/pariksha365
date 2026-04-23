@@ -4,14 +4,15 @@
 Idempotent:
   * creates the ``epfo-apfc`` module row if absent,
   * replaces all questions on every run (delete-then-insert for clean updates),
-  * grants access to the default owner email and any extras passed on the CLI.
+  * does NOT grant any access — whitelist management is handled exclusively via
+    the admin panel so the authoritative list lives in the DB, not in source.
 
 Usage:
     python3 backend/scripts/seed_epfo_module.py [--json PATH] [--email extra@x.com]*
 
-Defaults:
-    --json  /tmp/epfo_classified.json   (from /tmp/classify_epfo.py)
-    default owner email: bhanuprakashnaidu13579@gmail.com
+The optional ``--email`` flag still exists as an escape hatch (e.g. rehydrating
+access after a DB wipe), but production flow is: run the seed, then whitelist
+emails from Admin → Private Modules.
 """
 import argparse
 import asyncio
@@ -40,7 +41,6 @@ MODULE_DESC = (
     "Science, Current Affairs, Geography and more. Isolated practice: "
     "wrong answers only surface follow-ups from the EPFO bank itself."
 )
-DEFAULT_OWNER_EMAIL = "bhanuprakashnaidu13579@gmail.com"
 
 
 async def upsert_module(db: AsyncSession) -> PrivateModule:
@@ -127,8 +127,10 @@ async def main():
     async with SessionLocal() as db:
         module = await upsert_module(db)
         await replace_questions(db, module, data)
-        emails = [DEFAULT_OWNER_EMAIL, *args.email]
-        await grant_access(db, module, emails)
+        if args.email:
+            await grant_access(db, module, args.email)
+        else:
+            print("[seed] no --email passed; manage access from the admin panel.")
 
     print("[seed] done.")
 
