@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
-import { QuizAPI } from '../../services/api';
+import { Lock, ChevronRight } from 'lucide-react';
+import { QuizAPI, PrivateModuleAPI } from '../../services/api';
+import { PrivateModuleQuizzes } from './PrivateModuleQuizzes';
+
+type AccessibleModule = { slug: string; name: string; description?: string };
 
 export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }) => {
     const [categories, setCategories] = useState<any[]>([]);
@@ -7,23 +11,33 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
     const [weakQuiz, setWeakQuiz] = useState<any>(null);
     const [loading, setLoading] = useState(true);
 
+    // Private modules (e.g. EPFO APFC) the signed-in email has been whitelisted for.
+    // Fetched in parallel with the rest; `privateChecked` gates the card render so
+    // we don't flash the "Invite-only" heading for users without access.
+    const [privateModules, setPrivateModules] = useState<AccessibleModule[]>([]);
+    const [privateChecked, setPrivateChecked] = useState(false);
+    const [activePrivateSlug, setActivePrivateSlug] = useState<string | null>(null);
+
     // Quiz session state
     const [activeQuiz, setActiveQuiz] = useState<any>(null); // { subject, questions, current, answers, submitted, scorecard }
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const [catRes, weakRes] = await Promise.all([
+                const [catRes, weakRes, privRes] = await Promise.all([
                     QuizAPI.getCategories(),
-                    QuizAPI.getWeakTopicQuiz()
+                    QuizAPI.getWeakTopicQuiz(),
+                    PrivateModuleAPI.listMine().catch(() => ({ data: { modules: [] } })),
                 ]);
                 setCategories(catRes.data.categories || []);
                 setStreak(catRes.data.streak || null);
                 setWeakQuiz(weakRes.data || null);
+                setPrivateModules(privRes.data?.modules || []);
             } catch (err) {
                 console.error("Failed to fetch quiz data:", err);
             } finally {
                 setLoading(false);
+                setPrivateChecked(true);
             }
         };
         fetchData();
@@ -245,8 +259,60 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
         );
     }
 
+    // If the user picked a private module, swap the whole view for the module's
+    // isolated quiz universe (subject grid, weak-topic banner, session flow).
+    if (activePrivateSlug) {
+        return (
+            <div>
+                <div className="max-w-6xl mx-auto pt-4 px-4 sm:px-0">
+                    <button
+                        onClick={() => { setActivePrivateSlug(null); onQuizComplete?.(); }}
+                        className="text-sm text-gray-500 hover:text-gray-700"
+                    >
+                        ← Back to Daily Quizzes
+                    </button>
+                </div>
+                <PrivateModuleQuizzes slug={activePrivateSlug} />
+            </div>
+        );
+    }
+
     return (
         <div className="max-w-6xl mx-auto py-8">
+            {/* Private Modules (invite-only banks — e.g. EPFO APFC) */}
+            {privateChecked && privateModules.length > 0 && (
+                <div className="mb-8">
+                    <div className="flex items-center gap-2 mb-3">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-purple-700 bg-purple-100 px-2 py-0.5 rounded-full">
+                            Invite-only
+                        </span>
+                        <h2 className="text-lg font-bold text-gray-900">Your Private Modules</h2>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                        {privateModules.map((m) => (
+                            <button
+                                key={m.slug}
+                                onClick={() => setActivePrivateSlug(m.slug)}
+                                className="group text-left bg-gradient-to-br from-indigo-50 to-purple-50 border border-purple-200 hover:border-purple-400 rounded-2xl p-5 transition-all hover:shadow-md"
+                            >
+                                <div className="flex items-start gap-3">
+                                    <div className="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center flex-shrink-0">
+                                        <Lock className="w-4 h-4" />
+                                    </div>
+                                    <div className="min-w-0 flex-1">
+                                        <h3 className="font-bold text-gray-900">{m.name}</h3>
+                                        {m.description && (
+                                            <p className="text-xs text-gray-500 mt-1 line-clamp-2">{m.description}</p>
+                                        )}
+                                    </div>
+                                    <ChevronRight className="w-4 h-4 text-purple-500 mt-1 opacity-70 group-hover:opacity-100" />
+                                </div>
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            )}
+
             {/* Streak Banner */}
             {streak && (
                 <div className={`mb-8 rounded-2xl p-6 flex items-center justify-between ${streak.at_risk
