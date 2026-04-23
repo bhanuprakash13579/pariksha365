@@ -37,14 +37,22 @@ SUBJECT_KEY_MAP = {cat["key"]: cat["name"] for cat in QUIZ_CATEGORIES}
 
 
 async def get_quiz_categories_with_counts(db: AsyncSession) -> list:
-    result = []
-    for cat in QUIZ_CATEGORIES:
-        stmt = select(func.count(QuizQuestion.id)).where(
-            func.lower(QuizQuestion.subject) == cat["name"].lower()
-        )
-        count = (await db.execute(stmt)).scalar() or 0
-        result.append({**cat, "question_count": count, "has_questions": count > 0})
-    return result
+    """Per-category question counts — single round-trip instead of one query
+    per category (the old loop made 14 sequential COUNTs, ~14x the latency).
+    """
+    stmt = (
+        select(func.lower(QuizQuestion.subject), func.count(QuizQuestion.id))
+        .group_by(func.lower(QuizQuestion.subject))
+    )
+    counts_by_subject = {row[0]: row[1] for row in (await db.execute(stmt)).all()}
+    return [
+        {
+            **cat,
+            "question_count": counts_by_subject.get(cat["name"].lower(), 0),
+            "has_questions": counts_by_subject.get(cat["name"].lower(), 0) > 0,
+        }
+        for cat in QUIZ_CATEGORIES
+    ]
 
 
 async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, limit: int = 10) -> list:
