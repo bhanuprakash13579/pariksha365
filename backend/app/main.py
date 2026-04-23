@@ -1,6 +1,7 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from app.core.config import settings
 from app.core.database import engine, Base
 from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router, category_router, analytics_router, search_router, quiz_router, exam_structure_router, private_module_router
@@ -148,6 +149,12 @@ app = FastAPI(
     openapi_url=f"{settings.API_V1_STR}/openapi.json",
     lifespan=lifespan
 )
+
+# Gzip large JSON responses. Course/tests listings and the EPFO bank can be
+# hundreds of KB; on a cold Railway→browser hop that's often the single biggest
+# wall-clock cost. minimum_size=1000 means small responses (health, auth tokens)
+# skip the compression cost entirely.
+app.add_middleware(GZipMiddleware, minimum_size=1000)
 
 # Set all CORS enabled origins
 app.add_middleware(

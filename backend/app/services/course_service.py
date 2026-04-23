@@ -21,11 +21,17 @@ async def create_course(db: AsyncSession, course_in: CourseCreate) -> Course:
     return result.scalars().first()
 
 async def get_courses(db: AsyncSession, subcategory_id: Optional[uuid.UUID] = None, is_published: Optional[bool] = None) -> List[Course]:
+    """Course list — returns folders + folder-test links + test_series metadata,
+    but deliberately NOT the nested ``TestSeries.sections``. Loading sections
+    eagerly here made dashboard mount a multi-thousand-row fetch even though
+    the UI only shows section counts on test-detail pages. Individual test
+    detail views should call ``get_course_by_id`` (which stays scoped) or the
+    test-series endpoints for section data.
+    """
     stmt = select(Course).options(
         selectinload(Course.folders)
         .selectinload(CourseFolder.tests)
         .selectinload(FolderTest.test_series)
-        .selectinload(TestSeries.sections)
     )
     if subcategory_id:
         stmt = stmt.where(Course.subcategory_id == subcategory_id)
@@ -33,14 +39,14 @@ async def get_courses(db: AsyncSession, subcategory_id: Optional[uuid.UUID] = No
         stmt = stmt.where(Course.is_published == is_published)
     result = await db.execute(stmt)
     courses = list(result.scalars().all())
-    
+
     for course in courses:
         course.folders.sort(key=lambda f: getattr(f, 'order', 0) or 0)
         for folder in course.folders:
             # Filter out dangling tests (test_series deleted but folder link remains)
             folder.tests = [t for t in folder.tests if t.test_id is not None]
             folder.tests.sort(key=lambda t: getattr(t, 'order', 0) or 0)
-            
+
     return courses
 
 async def get_course_by_id(db: AsyncSession, course_id: uuid.UUID) -> Course:

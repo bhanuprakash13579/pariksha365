@@ -43,7 +43,7 @@ async def get_overview(db: AsyncSession) -> dict:
     totals = (await db.execute(text("""
         SELECT
             (SELECT COUNT(*) FROM users)           AS total_users,
-            (SELECT COUNT(*) FROM test_series WHERE is_published = 1) AS total_tests,
+            (SELECT COUNT(*) FROM test_series WHERE is_published = TRUE) AS total_tests,
             (SELECT COUNT(*) FROM attempts)        AS total_attempts,
             (SELECT COUNT(*) FROM attempts WHERE status = 'submitted') AS completed_attempts
     """))).mappings().first()
@@ -63,7 +63,7 @@ async def get_overview(db: AsyncSession) -> dict:
         FROM test_series ts
         LEFT JOIN attempts a ON a.test_series_id = ts.id
         LEFT JOIN results  r ON r.attempt_id = a.id
-        WHERE ts.is_published = 1
+        WHERE ts.is_published = TRUE
         GROUP BY ts.id, ts.title, ts.category
         ORDER BY attempt_count DESC
         LIMIT 10
@@ -79,7 +79,7 @@ async def get_overview(db: AsyncSession) -> dict:
             COUNT(DISTINCT a.user_id)             AS unique_students
         FROM test_series ts
         LEFT JOIN attempts a ON a.test_series_id = ts.id
-        WHERE ts.is_published = 1
+        WHERE ts.is_published = TRUE
         GROUP BY ts.category
         ORDER BY attempt_count DESC
     """))).mappings().all()
@@ -91,7 +91,7 @@ async def get_overview(db: AsyncSession) -> dict:
             DATE(started_at) AS day,
             COUNT(*)         AS attempt_count
         FROM attempts
-        WHERE started_at >= DATE('now', '-13 days')
+        WHERE started_at >= (CURRENT_DATE - INTERVAL '13 days')
         GROUP BY day
         ORDER BY day ASC
     """))).mappings().all()
@@ -103,7 +103,7 @@ async def get_overview(db: AsyncSession) -> dict:
             category,
             COUNT(*) AS test_count
         FROM test_series
-        WHERE is_published = 1
+        WHERE is_published = TRUE
         GROUP BY category
         ORDER BY test_count ASC
     """))).mappings().all()

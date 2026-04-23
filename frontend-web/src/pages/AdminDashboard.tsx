@@ -47,29 +47,29 @@ export const AdminDashboard = () => {
     }, [navigate]);
 
     const fetchData = async () => {
-        try {
-            const courseRes = await api.get('/courses');
-            setCourses(courseRes.data);
-            const testRes = await api.get('/tests');
-            setTests(testRes.data);
-            const draftRes = await api.get('/tests?is_published=false');
-            setDrafts(draftRes.data);
-            // Use the admin-dedicated endpoint so disabled categories remain
-            // visible in the admin panel. The public /categories endpoint
-            // filters is_enabled=false rows, which once made the admin UI
-            // appear broken after a migration (see feedback_migration_preserve_visibility).
-            const catRes = await api.get('/categories/admin');
-            setDbCategories(catRes.data);
-        } catch (e) {
-            console.error("Failed to fetch data", e);
-            // Fallback to the public endpoint so a 404/older-backend deploy
-            // doesn't blank the dashboard. Better to show enabled categories
-            // than nothing at all.
+        // Fire all four initial calls in parallel — the previous sequential
+        // `await`s made admin dashboard mount pay 4x network round-trips.
+        // Use the admin-dedicated /categories/admin endpoint so disabled
+        // categories remain visible (see feedback_migration_preserve_visibility
+        // for the original incident); fall back to /categories if that 404s
+        // on an older backend deploy.
+        const [courseSet, testSet, draftSet, catSet] = await Promise.allSettled([
+            api.get('/courses'),
+            api.get('/tests'),
+            api.get('/tests?is_published=false'),
+            api.get('/categories/admin'),
+        ]);
+        if (courseSet.status === 'fulfilled') setCourses(courseSet.value.data);
+        if (testSet.status === 'fulfilled') setTests(testSet.value.data);
+        if (draftSet.status === 'fulfilled') setDrafts(draftSet.value.data);
+        if (catSet.status === 'fulfilled') {
+            setDbCategories(catSet.value.data);
+        } else {
             try {
-                const catRes = await api.get('/categories');
-                setDbCategories(catRes.data);
+                const fb = await api.get('/categories');
+                setDbCategories(fb.data);
             } catch (fallbackErr) {
-                console.error("Fallback /categories also failed", fallbackErr);
+                console.error('Fallback /categories also failed', fallbackErr);
             }
         }
     };
