@@ -15,13 +15,11 @@ engine = create_async_engine(
     # TCP timeout before SQLAlchemy notices and reconnects — users experience
     # this as the app being "frozen" or returning Network Error on login.
     pool_pre_ping=True,
-    # Recycle connections every 25 minutes so we proactively rotate before
-    # Railway's internal 30-minute idle cutoff.
     pool_recycle=1500,
-    # Modest sizing — most requests are short and we don't want to hoard
-    # connections against Railway's plan limits.
-    pool_size=10,
-    max_overflow=20,
+    # Keep pool sizing at SQLAlchemy defaults (pool_size=5, max_overflow=10)
+    # to stay well under Railway's per-instance connection cap. Bumping these
+    # previously made multi-worker deployments exhaust the DB connection limit
+    # so every request queued indefinitely — manifesting as login hangs.
 )
 
 async_session_maker = async_sessionmaker(
