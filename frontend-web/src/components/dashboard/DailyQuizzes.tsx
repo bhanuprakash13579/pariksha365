@@ -22,25 +22,30 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
     const [activeQuiz, setActiveQuiz] = useState<any>(null); // { subject, questions, current, answers, submitted, scorecard }
 
     useEffect(() => {
+        // Main quiz data — must never block on the private-module fetch.
         const fetchData = async () => {
             try {
-                const [catRes, weakRes, privRes] = await Promise.all([
+                const [catRes, weakRes] = await Promise.all([
                     QuizAPI.getCategories(),
                     QuizAPI.getWeakTopicQuiz(),
-                    PrivateModuleAPI.listMine().catch(() => ({ data: { modules: [] } })),
                 ]);
                 setCategories(catRes.data.categories || []);
                 setStreak(catRes.data.streak || null);
                 setWeakQuiz(weakRes.data || null);
-                setPrivateModules(privRes.data?.modules || []);
             } catch (err) {
                 console.error("Failed to fetch quiz data:", err);
             } finally {
                 setLoading(false);
-                setPrivateChecked(true);
             }
         };
         fetchData();
+
+        // Private modules — fire-and-forget side fetch. If it 404s or the
+        // prod backend hasn't redeployed yet, the main page is unaffected.
+        PrivateModuleAPI.listMine()
+            .then((r) => setPrivateModules(r.data?.modules || []))
+            .catch(() => setPrivateModules([]))
+            .finally(() => setPrivateChecked(true));
     }, []);
 
     // Start a daily quiz for a category
