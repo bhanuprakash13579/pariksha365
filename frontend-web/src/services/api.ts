@@ -129,3 +129,32 @@ export const QuizAPI = {
     adminDeleteTaxonomy: (id: string) => api.delete(`/quiz/admin/taxonomy/${id}`),
     adminSeedTaxonomy: () => api.post('/quiz/admin/taxonomy/seed'),
 };
+
+// Private modules (e.g. EPFO APFC) — email-whitelisted question banks
+export const PrivateModuleAPI = {
+    // User-facing
+    listMine: () => api.get('/private/modules'),
+    getModule: (slug: string) => api.get(`/private/modules/${slug}`),
+    getTopics: (slug: string, subject: string) =>
+        api.get(`/private/modules/${slug}/subjects/${encodeURIComponent(subject)}/topics`),
+    getQuiz: (slug: string, subject: string, limit?: number) =>
+        api.get(`/private/modules/${slug}/quiz/${encodeURIComponent(subject)}`, { params: limit ? { limit } : {} }),
+    getWeakTopics: (slug: string, limit?: number) =>
+        api.get(`/private/modules/${slug}/weak-topics`, { params: limit ? { limit } : {} }),
+    getMorePractice: (slug: string, subject: string, topic?: string, excludeIds?: string[]) =>
+        api.post(
+            `/private/modules/${slug}/more-practice?subject=${encodeURIComponent(subject)}` +
+            (topic ? `&topic=${encodeURIComponent(topic)}` : '') +
+            `&exclude_ids=${(excludeIds || []).join(',')}`
+        ),
+    submitQuiz: (slug: string, answers: { question_id: string; selected_option_index: number | null }[]) =>
+        api.post(`/private/modules/${slug}/submit`, { answers }),
+
+    // Admin
+    adminListModules: () => api.get('/private/admin/modules'),
+    adminListAccess: (slug: string) => api.get(`/private/admin/modules/${slug}/access`),
+    adminGrantAccess: (slug: string, email: string, note?: string) =>
+        api.post(`/private/admin/modules/${slug}/access`, { email, note }),
+    adminRevokeAccess: (slug: string, accessId: string) =>
+        api.delete(`/private/admin/modules/${slug}/access/${accessId}`),
+};

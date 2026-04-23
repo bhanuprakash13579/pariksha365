@@ -20,6 +20,10 @@ from app.models.exam_stage_purchase import ExamStagePurchase
 from app.models.exam_pattern import ExamPattern, SectionPattern
 from app.models.quiz_pool import QuizQuestion, QuizAttempt, UserWeakTopic, UserStreak, UserTopicMastery
 from app.models.taxonomy import SubjectTaxonomy
+from app.models.private_module import (
+    PrivateModule, PrivateModuleQuestion, PrivateModuleAccess,
+    PrivateModuleAttempt, PrivateModuleWeakTopic,
+)
 
 # Expose Base and Models for Alembic metadata
 __all__ = [
@@ -51,4 +55,9 @@ __all__ = [
     "UserStreak",
     "UserTopicMastery",
     "SubjectTaxonomy",
+    "PrivateModule",
+    "PrivateModuleQuestion",
+    "PrivateModuleAccess",
+    "PrivateModuleAttempt",
+    "PrivateModuleWeakTopic",
 ]

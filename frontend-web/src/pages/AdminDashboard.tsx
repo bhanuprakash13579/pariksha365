@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { FileText, Activity, FilePlus, Folder, Trash2, Edit, BarChart2, Download, HelpCircle, Layers, Menu, X } from 'lucide-react';
+import { FileText, Activity, FilePlus, Folder, Trash2, Edit, BarChart2, Download, HelpCircle, Layers, Menu, X, Lock } from 'lucide-react';
 import { api, UserAPI } from '../services/api';
 import { ScrapeReviewWorkspace } from './ScrapeReviewWorkspace';
 import { FileExplorerCourseManager } from './FileExplorerCourseManager';
 import { AdminAnalytics } from '../components/dashboard/AdminAnalytics';
 import { AdminQuizPoolManager } from '../components/dashboard/AdminQuizPoolManager';
 import { AdminExamStructureManager } from '../components/dashboard/AdminExamStructureManager';
+import { AdminPrivateModuleManager } from '../components/dashboard/AdminPrivateModuleManager';
 import { useNavigate } from 'react-router-dom';
 
 export const AdminDashboard = () => {
@@ -90,6 +91,7 @@ export const AdminDashboard = () => {
         { id: 'drafts', label: 'Drafts Vault', icon: <Folder className="w-5 h-5 mr-3" /> },
         { id: 'quizpool', label: 'Quiz Pool', icon: <HelpCircle className="w-5 h-5 mr-3" /> },
         { id: 'exam-structure', label: 'Exam Structure', icon: <Layers className="w-5 h-5 mr-3" /> },
+        { id: 'private-modules', label: 'Private Modules', icon: <Lock className="w-5 h-5 mr-3" /> },
     ];
 
     const navLabel = NAV_BUTTONS.find(n => n.id === activeTab)?.label || 'Admin';
@@ -292,6 +294,8 @@ export const AdminDashboard = () => {
                 {activeTab === 'quizpool' && <AdminQuizPoolManager />}
 
                 {activeTab === 'exam-structure' && <AdminExamStructureManager />}
+
+                {activeTab === 'private-modules' && <AdminPrivateModuleManager />}
                 </main>
             </div>
         </div>
