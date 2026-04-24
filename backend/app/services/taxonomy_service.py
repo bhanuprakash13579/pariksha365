@@ -11,7 +11,10 @@ from sqlalchemy import func
 from app.models.taxonomy import SubjectTaxonomy
 
 
-# In-memory cache: { topic_code: {subject, topic, aliases} }
+# In-memory cache: { topic_code: {subject, topic, aliases} }.
+# ``_code_cache`` is keyed by BOTH the canonical topic_code AND every alias,
+# so that resolve_topic_code() succeeds for any code a seed file might use.
+# The primary key (taxonomy row) carries the canonical display name.
 _code_cache: Optional[dict] = None
 _entries_cache: Optional[List[SubjectTaxonomy]] = None
 
@@ -22,12 +25,20 @@ async def _load_cache(db: AsyncSession):
     _entries_cache = list((await db.execute(stmt)).scalars().all())
     _code_cache = {}
     for e in _entries_cache:
-        _code_cache[e.topic_code] = {
+        entry_view = {
             "subject": e.subject,
             "topic": e.topic,
             "topic_code": e.topic_code,
             "aliases": e.aliases or [],
         }
+        _code_cache[e.topic_code] = entry_view
+        # Expose every alias as a resolvable key — multiple _MIXED seed files
+        # share a (subject, topic) display row but carry distinct topic_codes;
+        # without alias lookup those codes return None and weak-topic display
+        # falls back to raw values.
+        for alias in entry_view["aliases"]:
+            # Primary code wins a collision — never overwrite an existing key.
+            _code_cache.setdefault(alias, entry_view)
 
 
 def invalidate_cache():
