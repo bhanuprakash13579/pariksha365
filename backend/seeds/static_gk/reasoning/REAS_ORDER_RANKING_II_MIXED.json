@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Order and ranking — mixed tiers",
+  "topic_code": "REAS_ORDER_RANKING_II_MIXED",
+  "description": "Position-from-left/right tricks, total-count formula, overlapping rank puzzles",
+  "questions": [
+    {
+      "stem": "In a class of 40 students, Raju ranks 12th from the top. What is his rank from the bottom?",
+      "options": [
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "29", "is_correct": true},
+        {"option_text": "27", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Rule: rank-from-bottom = Total − rank-from-top + 1. So 40 − 12 + 1 = 29. Verify — the 12 students from top + Raju himself is 12; below him there must be 40 − 12 = 28 students, so Raju is the 29th from bottom. Trap: many students forget the '+1' and answer 28.",
+      "subject": "Reasoning",
+      "topic": "Order and ranking — mixed tiers",
+      "topic_code": "REAS_ORDER_RANKING_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-or-01",
+      "generated_at": "2026-04-24T08:20:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_II_MIXED_00001"
+    },
+    {
+      "stem": "In a row, Priya is 15th from the left and 21st from the right. How many persons are in the row?",
+      "options": [
+        {"option_text": "34", "is_correct": false},
+        {"option_text": "35", "is_correct": true},
+        {"option_text": "36", "is_correct": false},
+        {"option_text": "37", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Total = (rank-from-left) + (rank-from-right) − 1 (because Priya is counted in both). So 15 + 21 − 1 = 35. Check: 14 persons to her left + Priya + 20 to her right = 14 + 1 + 20 = 35 ✓. The −1 adjusts for the double count.",
+      "subject": "Reasoning",
+      "topic": "Order and ranking — mixed tiers",
+      "topic_code": "REAS_ORDER_RANKING_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-or-02",
+      "generated_at": "2026-04-24T08:20:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_II_MIXED_00002"
+    },
+    {
+      "stem": "In a queue, Rohan is 9th from the front and Sneha is 23rd from the front. The number of persons standing strictly between Rohan and Sneha is:",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "13", "is_correct": true},
+        {"option_text": "14", "is_correct": false},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "When the direction is the SAME for both (both 'from the front'), persons strictly between = |difference of ranks| − 1 = (23 − 9) − 1 = 13. If the directions had been OPPOSITE (one from front, one from back), the formula becomes Total − (rank-from-front + rank-from-back) + 1 'between' — careful not to mix them up.",
+      "subject": "Reasoning",
+      "topic": "Order and ranking — mixed tiers",
+      "topic_code": "REAS_ORDER_RANKING_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-or-03",
+      "generated_at": "2026-04-24T08:20:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_II_MIXED_00003"
+    },
+    {
+      "stem": "In a queue, Ravi is 18th from the front. Two persons leave from behind Ravi, and 5 new persons join at the back. Ravi's rank from the back becomes 20th. How many persons are in the queue now?",
+      "options": [
+        {"option_text": "36", "is_correct": false},
+        {"option_text": "37", "is_correct": true},
+        {"option_text": "38", "is_correct": false},
+        {"option_text": "39", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "After the movements, rank-from-front is still 18 (nobody ahead of Ravi changed) and rank-from-back is 20. Total = 18 + 20 − 1 = 37. The 2-leave and 5-join details are redundant — the final ranks already capture the net change. Trap: trying to recompute step-by-step with the add/subtract flow wastes time and causes off-by-one errors.",
+      "subject": "Reasoning",
+      "topic": "Order and ranking — mixed tiers",
+      "topic_code": "REAS_ORDER_RANKING_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-or-04",
+      "generated_at": "2026-04-24T08:20:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_II_MIXED_00004"
+    },
+    {
+      "stem": "If Priya ranks 17th from the top and her rank from the bottom is the 24th in the same class, the total strength is:",
+      "options": [
+        {"option_text": "39", "is_correct": false},
+        {"option_text": "40", "is_correct": true},
+        {"option_text": "41", "is_correct": false},
+        {"option_text": "42", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Total = (rank from top) + (rank from bottom) − 1 = 17 + 24 − 1 = 40. Priya counted once in each direction, so subtract one for the double-count. Shortcut to remember: 'top + bottom = total + 1' (always).",
+      "subject": "Reasoning",
+      "topic": "Order and ranking — mixed tiers",
+      "topic_code": "REAS_ORDER_RANKING_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-or-05",
+      "generated_at": "2026-04-24T08:20:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_II_MIXED_00005"
+    },
+    {
+      "stem": "In a row of children facing north, Ananya is 9th from the left end and Meena is 13th from the right. They exchange places and Ananya now becomes 17th from the left. The total number of children in the row is:",
+      "options": [
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "29", "is_correct": true},
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "31", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "After exchange, Ananya occupies Meena's original spot. Meena was 13th from the right, which means her position from the left = Total − 13 + 1 = Total − 12. Given Ananya is now 17th from the left at that same spot, Total − 12 = 17, so Total = 29. Check: 29 − 13 + 1 = 17 ✓.",
+      "subject": "Reasoning",
+      "topic": "Order and ranking — mixed tiers",
+      "topic_code": "REAS_ORDER_RANKING_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-or-06",
+      "generated_at": "2026-04-24T08:20:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_II_MIXED_00006"
+    },
+    {
+      "stem": "In a class of 60 students, the rank of Kavya is 35th from the top. What is the difference between her rank from the top and her rank from the bottom?",
+      "options": [
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "9", "is_correct": true},
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "11", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Rank from bottom = 60 − 35 + 1 = 26. Difference = 35 − 26 = 9. Shortcut: difference = |2·(rank from top) − (Total + 1)|. Here |2·35 − 61| = |70 − 61| = 9 ✓.",
+      "subject": "Reasoning",
+      "topic": "Order and ranking — mixed tiers",
+      "topic_code": "REAS_ORDER_RANKING_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-or-07",
+      "generated_at": "2026-04-24T08:20:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_II_MIXED_00007"
+    }
+  ]
+}
