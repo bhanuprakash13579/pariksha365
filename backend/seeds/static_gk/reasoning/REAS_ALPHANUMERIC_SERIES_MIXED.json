@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Alphanumeric series — mixed tiers",
+  "topic_code": "REAS_ALPHANUMERIC_SERIES_MIXED",
+  "description": "Mixed sequences of letters, digits and symbols — find next term, count rules, position",
+  "questions": [
+    {
+      "stem": "Find the next term in the series: A1, B3, C5, D7, __?",
+      "options": [
+        {"option_text": "E8", "is_correct": false},
+        {"option_text": "E9", "is_correct": true},
+        {"option_text": "F9", "is_correct": false},
+        {"option_text": "E10", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Letters go A, B, C, D, E (consecutive +1). Numbers go 1, 3, 5, 7, 9 (odd numbers, AP with common difference 2). Next term = E + 9 = E9. Mental shortcut: number formula = 2n − 1 for n = 1, 2, 3 …; the 5th term is 2·5 − 1 = 9.",
+      "subject": "Reasoning",
+      "topic": "Alphanumeric series — mixed tiers",
+      "topic_code": "REAS_ALPHANUMERIC_SERIES_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-ans-01",
+      "generated_at": "2026-04-24T10:20:00+00:00",
+      "id": "sgk_REAS_ALPHANUMERIC_SERIES_MIXED_00001"
+    },
+    {
+      "stem": "In the series J2K, L4M, N6O, P8Q, __? what comes next?",
+      "options": [
+        {"option_text": "Q10R", "is_correct": false},
+        {"option_text": "R10S", "is_correct": true},
+        {"option_text": "R12S", "is_correct": false},
+        {"option_text": "Q9R", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Each block is letterX[number]letterY where letter pairs are consecutive (J-K, L-M, N-O, P-Q, …). Pairs go: JK → LM (skip 1) → NO (skip 1) → PQ (skip 1) → next pair RS. Numbers: 2, 4, 6, 8 → +2 each → 10. Next block = R10S. Verify alphabet skips: J→L (gap K), L→N (gap M), N→P (gap O), P→R (gap Q) ✓.",
+      "subject": "Reasoning",
+      "topic": "Alphanumeric series — mixed tiers",
+      "topic_code": "REAS_ALPHANUMERIC_SERIES_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-ans-02",
+      "generated_at": "2026-04-24T10:20:00+00:00",
+      "id": "sgk_REAS_ALPHANUMERIC_SERIES_MIXED_00002"
+    },
+    {
+      "stem": "Consider the sequence: 5 K @ 8 P # 3 R 7 % L 2 A & 9 — How many digits are immediately preceded by a letter?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Identify letters and digits: letters K, P, R, L, A; digits 5, 8, 3, 7, 2, 9. For each digit, check the immediate left neighbour: 5 (start), 8 (left = @), 3 (left = #), 7 (left = R ✓), 2 (left = L ✓), 9 (left = &). Two digits qualify — '7' after R and '2' after L. Count = 2.",
+      "subject": "Reasoning",
+      "topic": "Alphanumeric series — mixed tiers",
+      "topic_code": "REAS_ALPHANUMERIC_SERIES_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-ans-03",
+      "generated_at": "2026-04-24T10:20:00+00:00",
+      "id": "sgk_REAS_ALPHANUMERIC_SERIES_MIXED_00003"
+    },
+    {
+      "stem": "Find the missing term: Z26, X24, V22, T20, __?",
+      "options": [
+        {"option_text": "S19", "is_correct": false},
+        {"option_text": "R18", "is_correct": true},
+        {"option_text": "Q17", "is_correct": false},
+        {"option_text": "U21", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Letters reverse from Z, with skip 1 each: Z(26) → X(24) → V(22) → T(20) → R(18). Numbers attached are alphabet positions of those letters. Next: skip U → R, position 18. So next term = R18.",
+      "subject": "Reasoning",
+      "topic": "Alphanumeric series — mixed tiers",
+      "topic_code": "REAS_ALPHANUMERIC_SERIES_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-ans-04",
+      "generated_at": "2026-04-24T10:20:00+00:00",
+      "id": "sgk_REAS_ALPHANUMERIC_SERIES_MIXED_00004"
+    },
+    {
+      "stem": "What comes next in: AZ1, BY3, CX5, DW7, __?",
+      "options": [
+        {"option_text": "EV9", "is_correct": true},
+        {"option_text": "EV8", "is_correct": false},
+        {"option_text": "FV9", "is_correct": false},
+        {"option_text": "EU9", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Three sub-patterns: 1st letter A, B, C, D → next E (forward). 2nd letter Z, Y, X, W → next V (backward). Numbers 1, 3, 5, 7 → next 9 (odd AP +2). So next term = EV9. Quick check: position-sums of letter pair are 1+26=27, 2+25=27, 3+24=27, 4+23=27, 5+22=27 ✓ — invariant.",
+      "subject": "Reasoning",
+      "topic": "Alphanumeric series — mixed tiers",
+      "topic_code": "REAS_ALPHANUMERIC_SERIES_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-ans-05",
+      "generated_at": "2026-04-24T10:20:00+00:00",
+      "id": "sgk_REAS_ALPHANUMERIC_SERIES_MIXED_00005"
+    },
+    {
+      "stem": "If every letter in the word REASONING is replaced by its alphabetical position (A=1, B=2 …, Z=26), the sum of the resulting numbers is:",
+      "options": [
+        {"option_text": "98", "is_correct": false},
+        {"option_text": "102", "is_correct": true},
+        {"option_text": "108", "is_correct": false},
+        {"option_text": "112", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "REASONING letter positions: R=18, E=5, A=1, S=19, O=15, N=14, I=9, N=14, G=7. Sum: 18+5+1+19+15+14+9+14+7 = (18+5) + (1+19) + (15+14) + (9+14) + 7 = 23 + 20 + 29 + 23 + 7 = 102. Quick check: average ≈ 11.3 per letter × 9 letters ≈ 102 ✓.",
+      "subject": "Reasoning",
+      "topic": "Alphanumeric series — mixed tiers",
+      "topic_code": "REAS_ALPHANUMERIC_SERIES_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-ans-06",
+      "generated_at": "2026-04-24T10:20:00+00:00",
+      "id": "sgk_REAS_ALPHANUMERIC_SERIES_MIXED_00006"
+    },
+    {
+      "stem": "Find the next term: B2D, F4H, J6L, N8P, __?",
+      "options": [
+        {"option_text": "Q10R", "is_correct": false},
+        {"option_text": "R10T", "is_correct": true},
+        {"option_text": "R10S", "is_correct": false},
+        {"option_text": "Q9S", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Each block is letterX[even number]letterY. 1st letters: B, F, J, N → +4 each (B-F-J-N) → next R. 2nd letters: D, H, L, P → +4 each → next T. Numbers: 2, 4, 6, 8 → next 10. So R10T. Verify by alphabet positions: B(2)→F(6)→J(10)→N(14)→R(18) all +4 ✓; D(4)→H(8)→L(12)→P(16)→T(20) all +4 ✓.",
+      "subject": "Reasoning",
+      "topic": "Alphanumeric series — mixed tiers",
+      "topic_code": "REAS_ALPHANUMERIC_SERIES_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-reas-ans-07",
+      "generated_at": "2026-04-24T10:20:00+00:00",
+      "id": "sgk_REAS_ALPHANUMERIC_SERIES_MIXED_00007"
+    }
+  ]
+}
