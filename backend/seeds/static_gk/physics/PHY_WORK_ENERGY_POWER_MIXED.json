@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Work, energy and power — mixed tiers",
+  "topic_code": "PHY_WORK_ENERGY_POWER_MIXED",
+  "description": "Definitions, units, KE/PE conversion, work-energy theorem, problem-solving",
+  "questions": [
+    {
+      "stem": "Work done by a constant force F over a displacement d in the same direction is given by:",
+      "options": [
+        {"option_text": "F × d²", "is_correct": false},
+        {"option_text": "F × d (force × distance)", "is_correct": true},
+        {"option_text": "F + d", "is_correct": false},
+        {"option_text": "F / d", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Work W = F · d cosθ (where θ = angle between force and displacement). When F is in same direction as d, θ = 0, cosθ = 1, so W = F × d. SI unit: joule (J) = newton·metre. If force is perpendicular to displacement (θ = 90°), W = 0 — e.g., gravity does NO work on a horizontally-moving object; centripetal force does NO work in circular motion.",
+      "subject": "Physics",
+      "topic": "Work, energy and power — mixed tiers",
+      "topic_code": "PHY_WORK_ENERGY_POWER_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-wep-01",
+      "generated_at": "2026-04-24T21:10:00+00:00",
+      "id": "sgk_PHY_WORK_ENERGY_POWER_MIXED_00001"
+    },
+    {
+      "stem": "Kinetic energy of an object of mass m moving at speed v is:",
+      "options": [
+        {"option_text": "m·v", "is_correct": false},
+        {"option_text": "½ m·v² (half mass velocity-squared)", "is_correct": true},
+        {"option_text": "m·v²", "is_correct": false},
+        {"option_text": "m·g·h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Translational kinetic energy KE = ½mv² — joules in SI. m in kg, v in m/s. Doubling velocity QUADRUPLES the KE (a key safe-driving message). m·v is momentum (linear); m·v² is twice the KE; m·g·h is gravitational potential energy. Rotational KE = ½ I ω² (I — moment of inertia, ω — angular speed). Total KE for an object that translates AND rotates = sum of both.",
+      "subject": "Physics",
+      "topic": "Work, energy and power — mixed tiers",
+      "topic_code": "PHY_WORK_ENERGY_POWER_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-wep-02",
+      "generated_at": "2026-04-24T21:10:00+00:00",
+      "id": "sgk_PHY_WORK_ENERGY_POWER_MIXED_00002"
+    },
+    {
+      "stem": "Potential energy of a body of mass 5 kg raised to a height of 10 m above ground (g = 10 m/s²) is:",
+      "options": [
+        {"option_text": "100 J", "is_correct": false},
+        {"option_text": "500 J", "is_correct": true},
+        {"option_text": "50 J", "is_correct": false},
+        {"option_text": "1000 J", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Gravitational PE = m·g·h = 5 × 10 × 10 = 500 J. Sign convention — usually positive if h measured up from a reference; can be negative if below reference. Alternative — elastic PE = ½kx² for a spring stretched by x. Conservation of mechanical energy: KE + PE = constant (in absence of friction). Free-fall: PE→KE conversion. At a pendulum's lowest point, PE→0, KE max; at extremes, KE→0, PE max.",
+      "subject": "Physics",
+      "topic": "Work, energy and power — mixed tiers",
+      "topic_code": "PHY_WORK_ENERGY_POWER_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-wep-03",
+      "generated_at": "2026-04-24T21:10:00+00:00",
+      "id": "sgk_PHY_WORK_ENERGY_POWER_MIXED_00003"
+    },
+    {
+      "stem": "Power is defined as:",
+      "options": [
+        {"option_text": "Force per unit area", "is_correct": false},
+        {"option_text": "Rate of doing work; energy per unit time (P = W/t)", "is_correct": true},
+        {"option_text": "Mass × acceleration", "is_correct": false},
+        {"option_text": "Force × distance", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Power P = W/t = energy/time. SI unit: watt (W) = J/s. 1 horsepower (hp) = 746 W ≈ 0.75 kW. Bulb rated 60 W consumes 60 J/s. 1 kWh (kilowatt-hour) = 3.6 × 10⁶ J = 1 unit of electricity (the billing unit). For circuits: P = V·I = I²·R = V²/R. The car horsepower is a good intuitive comparator — a 100-hp car can do 100×746 J = 74.6 kJ of work per second.",
+      "subject": "Physics",
+      "topic": "Work, energy and power — mixed tiers",
+      "topic_code": "PHY_WORK_ENERGY_POWER_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-wep-04",
+      "generated_at": "2026-04-24T21:10:00+00:00",
+      "id": "sgk_PHY_WORK_ENERGY_POWER_MIXED_00004"
+    },
+    {
+      "stem": "A pump delivers 1500 J of energy in 5 seconds. Its power output is:",
+      "options": [
+        {"option_text": "30 W", "is_correct": false},
+        {"option_text": "300 W", "is_correct": true},
+        {"option_text": "750 W", "is_correct": false},
+        {"option_text": "7500 W", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "P = W/t = 1500 / 5 = 300 W. Power = energy delivered per second. Compare household appliances: tube light ~40 W, ceiling fan ~70 W, fridge ~200 W (steady state), microwave ~800 W, AC ~1500 W (per ton).",
+      "subject": "Physics",
+      "topic": "Work, energy and power — mixed tiers",
+      "topic_code": "PHY_WORK_ENERGY_POWER_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-wep-05",
+      "generated_at": "2026-04-24T21:10:00+00:00",
+      "id": "sgk_PHY_WORK_ENERGY_POWER_MIXED_00005"
+    },
+    {
+      "stem": "By the work-energy theorem, the net work done on a moving object equals:",
+      "options": [
+        {"option_text": "Change in its mass", "is_correct": false},
+        {"option_text": "Change in its kinetic energy", "is_correct": true},
+        {"option_text": "Change in temperature", "is_correct": false},
+        {"option_text": "Total displacement", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Work-Energy Theorem: W_net = ΔKE = ½m(v² − u²), where u and v are initial and final speeds. Positive work → KE increases (object accelerates); negative work (e.g., friction, brakes) → KE decreases. Foundational to all energy problems in mechanics. Implies if you know force × distance, you can find final velocity without doing kinematics. Doesn't depend on path — only initial / final states (path-independence is true for conservative forces only).",
+      "subject": "Physics",
+      "topic": "Work, energy and power — mixed tiers",
+      "topic_code": "PHY_WORK_ENERGY_POWER_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-wep-06",
+      "generated_at": "2026-04-24T21:10:00+00:00",
+      "id": "sgk_PHY_WORK_ENERGY_POWER_MIXED_00006"
+    },
+    {
+      "stem": "A 100 W bulb operating for 10 hours consumes electrical energy equal to:",
+      "options": [
+        {"option_text": "1 kWh (= 1 'unit')", "is_correct": true},
+        {"option_text": "10 kWh", "is_correct": false},
+        {"option_text": "0.1 kWh", "is_correct": false},
+        {"option_text": "100 kWh", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Energy = power × time = 100 W × 10 h = 1,000 Wh = 1 kWh = 1 'unit' on your electricity bill. At ₹6/unit (typical residential), that costs ₹6. LED bulb of equivalent brightness consumes ~10 W → 90% energy saving. India's CFL/LED rollout (UJALA scheme since 2015) has saved billions of kWh.",
+      "subject": "Physics",
+      "topic": "Work, energy and power — mixed tiers",
+      "topic_code": "PHY_WORK_ENERGY_POWER_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-wep-07",
+      "generated_at": "2026-04-24T21:10:00+00:00",
+      "id": "sgk_PHY_WORK_ENERGY_POWER_MIXED_00007"
+    }
+  ]
+}
