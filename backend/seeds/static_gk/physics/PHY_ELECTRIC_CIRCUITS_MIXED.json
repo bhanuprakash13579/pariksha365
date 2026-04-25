@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Electric circuits — mixed tiers",
+  "topic_code": "PHY_ELECTRIC_CIRCUITS_MIXED",
+  "description": "Ohm's law, series vs parallel, Kirchhoff's laws, power, fuses",
+  "questions": [
+    {
+      "stem": "Ohm's law states that the current through a conductor (at constant temperature) is:",
+      "options": [
+        {"option_text": "Inversely proportional to voltage", "is_correct": false},
+        {"option_text": "Directly proportional to potential difference (V) across the conductor: V = I·R", "is_correct": true},
+        {"option_text": "Independent of voltage", "is_correct": false},
+        {"option_text": "Equal to voltage", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Ohm's Law (Georg Ohm, 1827): V = I·R. Constant of proportionality R = resistance (in ohms, Ω). Holds only for 'ohmic' materials at constant temperature; non-ohmic devices include diodes, transistors, gas-discharge tubes, filament bulbs at high T. Power dissipated P = V·I = I²·R = V²/R (joules per second = watts).",
+      "subject": "Physics",
+      "topic": "Electric circuits — mixed tiers",
+      "topic_code": "PHY_ELECTRIC_CIRCUITS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-cir-01",
+      "generated_at": "2026-04-24T18:00:00+00:00",
+      "id": "sgk_PHY_ELECTRIC_CIRCUITS_MIXED_00001"
+    },
+    {
+      "stem": "When two resistors of resistance 6 Ω and 3 Ω are connected in PARALLEL, the equivalent resistance is:",
+      "options": [
+        {"option_text": "9 Ω", "is_correct": false},
+        {"option_text": "2 Ω", "is_correct": true},
+        {"option_text": "3 Ω", "is_correct": false},
+        {"option_text": "18 Ω", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Parallel: 1/R_eq = 1/R₁ + 1/R₂ + … = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 → R_eq = 2 Ω. Always smaller than the smallest individual resistance. Series: R_eq = R₁ + R₂ + … = 6 + 3 = 9 Ω (always larger than the largest individual). For two parallel resistors: shortcut R_eq = R₁·R₂/(R₁+R₂) = 6·3/9 = 2.",
+      "subject": "Physics",
+      "topic": "Electric circuits — mixed tiers",
+      "topic_code": "PHY_ELECTRIC_CIRCUITS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-cir-02",
+      "generated_at": "2026-04-24T18:00:00+00:00",
+      "id": "sgk_PHY_ELECTRIC_CIRCUITS_MIXED_00002"
+    },
+    {
+      "stem": "Domestic electrical appliances in India are connected in PARALLEL across the supply because:",
+      "options": [
+        {"option_text": "It saves wire", "is_correct": false},
+        {"option_text": "Each device gets the same voltage; one device failing doesn't break the others; each can be switched independently", "is_correct": true},
+        {"option_text": "Series gives higher current", "is_correct": false},
+        {"option_text": "Parallel reduces voltage", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Houses run on parallel circuits. Each appliance — bulb, fan, AC, fridge — sees the supply voltage 230 V. Currents add up in the main wire. If a bulb fuses, others still work. Independent on/off via individual switches. In a SERIES circuit, all elements share current; voltage divides; if any single bulb fuses, entire series goes off (older Christmas-tree lights work this way).",
+      "subject": "Physics",
+      "topic": "Electric circuits — mixed tiers",
+      "topic_code": "PHY_ELECTRIC_CIRCUITS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-cir-03",
+      "generated_at": "2026-04-24T18:00:00+00:00",
+      "id": "sgk_PHY_ELECTRIC_CIRCUITS_MIXED_00003"
+    },
+    {
+      "stem": "An electric fuse works on the principle of:",
+      "options": [
+        {"option_text": "Magnetic effect of current", "is_correct": false},
+        {"option_text": "Heating effect of current — wire melts if current exceeds rating", "is_correct": true},
+        {"option_text": "Chemical effect", "is_correct": false},
+        {"option_text": "Electromagnetic induction", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Fuse — short piece of wire (tin-lead alloy, low melting point ~200 °C) inserted in series with appliances. If current exceeds the rated value (e.g. 5A, 15A), I²·R heating melts the fuse, breaks the circuit — preventing fire/electrocution. Modern alternative: MCB (Miniature Circuit Breaker) — uses a bimetallic strip + electromagnetic trip, can be reset (vs fuse which must be replaced). RCCB / ELCB detects current LEAKAGE to ground (different mechanism).",
+      "subject": "Physics",
+      "topic": "Electric circuits — mixed tiers",
+      "topic_code": "PHY_ELECTRIC_CIRCUITS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-cir-04",
+      "generated_at": "2026-04-24T18:00:00+00:00",
+      "id": "sgk_PHY_ELECTRIC_CIRCUITS_MIXED_00004"
+    },
+    {
+      "stem": "An electric heater rated 1500 W operates on a 230 V supply. The current drawn is approximately:",
+      "options": [
+        {"option_text": "3.4 A", "is_correct": false},
+        {"option_text": "6.5 A", "is_correct": true},
+        {"option_text": "10 A", "is_correct": false},
+        {"option_text": "13 A", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Power formula: P = V·I → I = P/V = 1500 / 230 ≈ 6.52 A. Resistance of heater = V/I = 230/6.52 ≈ 35.3 Ω. Power consumption per hour = 1.5 kWh = 1.5 'units' on the electricity bill. Rule of thumb — every kW of appliance load draws ~4.35 A on Indian 230 V supply.",
+      "subject": "Physics",
+      "topic": "Electric circuits — mixed tiers",
+      "topic_code": "PHY_ELECTRIC_CIRCUITS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-cir-05",
+      "generated_at": "2026-04-24T18:00:00+00:00",
+      "id": "sgk_PHY_ELECTRIC_CIRCUITS_MIXED_00005"
+    },
+    {
+      "stem": "Kirchhoff's current law (KCL) states that at any junction in an electric circuit:",
+      "options": [
+        {"option_text": "Total energy is conserved", "is_correct": false},
+        {"option_text": "Algebraic sum of currents = 0 (currents in = currents out)", "is_correct": true},
+        {"option_text": "Voltage drops add up to EMF", "is_correct": false},
+        {"option_text": "Resistance equals voltage", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Kirchhoff's two laws: (1) KCL (current law / junction rule): ∑I = 0 at any node — conservation of charge. (2) KVL (voltage law / loop rule): ∑V = 0 around any closed loop — conservation of energy. KCL implies whatever flows in must flow out. KVL implies the total potential gain (EMF) around a loop equals total potential drop (across resistors). Together they enable analysis of any DC circuit, however complex.",
+      "subject": "Physics",
+      "topic": "Electric circuits — mixed tiers",
+      "topic_code": "PHY_ELECTRIC_CIRCUITS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-cir-06",
+      "generated_at": "2026-04-24T18:00:00+00:00",
+      "id": "sgk_PHY_ELECTRIC_CIRCUITS_MIXED_00006"
+    },
+    {
+      "stem": "If the same current flows through two resistors connected in series, the larger resistor:",
+      "options": [
+        {"option_text": "Dissipates less power", "is_correct": false},
+        {"option_text": "Dissipates more power (P = I²R, so larger R → more heat)", "is_correct": true},
+        {"option_text": "Always blows the fuse", "is_correct": false},
+        {"option_text": "Carries less current", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Series: same current I through every element. Power dissipated by each resistor = I²R, so the LARGER resistance dissipates more power → gets hotter. In parallel: voltage is the same across both, current divides; P = V²/R, so the SMALLER resistor dissipates more power. This is the underpinning of why nichrome (high R) is used in heaters but copper (low R) in connecting wires.",
+      "subject": "Physics",
+      "topic": "Electric circuits — mixed tiers",
+      "topic_code": "PHY_ELECTRIC_CIRCUITS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-cir-07",
+      "generated_at": "2026-04-24T18:00:00+00:00",
+      "id": "sgk_PHY_ELECTRIC_CIRCUITS_MIXED_00007"
+    }
+  ]
+}
