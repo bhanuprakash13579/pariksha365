@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Electromagnetic induction — mixed tiers",
+  "topic_code": "PHY_EMI_INDUCTION_MIXED",
+  "description": "Faraday-Lenz, generators, transformers, AC vs DC, eddy currents",
+  "questions": [
+    {
+      "stem": "AC generators (alternators) work on the principle of:",
+      "options": [
+        {"option_text": "Coulomb's law", "is_correct": false},
+        {"option_text": "Electromagnetic induction (Faraday's law)", "is_correct": true},
+        {"option_text": "Ohm's law", "is_correct": false},
+        {"option_text": "Conservation of mass", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "AC generator — coil rotates in a magnetic field; flux Φ = BA cosθ varies with θ = ωt → induced EMF ε = −dΦ/dt = BAω sin(ωt) → sinusoidal AC. India's electricity grid runs at 50 Hz (vs 60 Hz US). DC generator uses a commutator to flip current every half-cycle. Power-station turbines (steam from coal/nuclear/gas, water from dams, wind) all convert mechanical → electrical via this principle.",
+      "subject": "Physics",
+      "topic": "Electromagnetic induction — mixed tiers",
+      "topic_code": "PHY_EMI_INDUCTION_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-emi-01",
+      "generated_at": "2026-04-25T01:00:00+00:00",
+      "id": "sgk_PHY_EMI_INDUCTION_MIXED_00001"
+    },
+    {
+      "stem": "A transformer changes voltage by:",
+      "options": [
+        {"option_text": "Direct conduction", "is_correct": false},
+        {"option_text": "Mutual induction between primary and secondary coils via a shared magnetic flux", "is_correct": true},
+        {"option_text": "Static charge", "is_correct": false},
+        {"option_text": "Diodes", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Transformer — works only with AC (changing flux essential). Voltage ratio V_s/V_p = N_s/N_p (turns ratio). Step-up — N_s > N_p (voltage up, current down). Step-down — opposite. Power conserved (η ~95-99%): V_p·I_p ≈ V_s·I_s. India's transmission grid: 765/400/220/132/66/33/11 kV → step-down to 230 V at distribution. DC cannot use transformers — that's why HVDC links use thyristors.",
+      "subject": "Physics",
+      "topic": "Electromagnetic induction — mixed tiers",
+      "topic_code": "PHY_EMI_INDUCTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-emi-02",
+      "generated_at": "2026-04-25T01:00:00+00:00",
+      "id": "sgk_PHY_EMI_INDUCTION_MIXED_00002"
+    },
+    {
+      "stem": "A step-up transformer with primary 100 turns and secondary 1,000 turns. If primary voltage is 230 V, secondary voltage is:",
+      "options": [
+        {"option_text": "23 V", "is_correct": false},
+        {"option_text": "2,300 V", "is_correct": true},
+        {"option_text": "1,000 V", "is_correct": false},
+        {"option_text": "230 V", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "V_s/V_p = N_s/N_p → V_s = V_p × (N_s/N_p) = 230 × 1000/100 = 230 × 10 = 2,300 V. So a 10:1 turns ratio gives 10× voltage. By power conservation, primary current is also 10× the secondary current — high-voltage low-current secondary is what makes long-distance transmission efficient (less I²R loss).",
+      "subject": "Physics",
+      "topic": "Electromagnetic induction — mixed tiers",
+      "topic_code": "PHY_EMI_INDUCTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-emi-03",
+      "generated_at": "2026-04-25T01:00:00+00:00",
+      "id": "sgk_PHY_EMI_INDUCTION_MIXED_00003"
+    },
+    {
+      "stem": "Eddy currents are loops of induced current in a conductor when subjected to a changing magnetic field. They are USEFUL in:",
+      "options": [
+        {"option_text": "Increasing transformer losses", "is_correct": false},
+        {"option_text": "Induction heating, induction cooktops, electromagnetic braking, metal detectors", "is_correct": true},
+        {"option_text": "Photovoltaic effect", "is_correct": false},
+        {"option_text": "Lasers", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Eddy currents — circulating currents in a bulk conductor when exposed to a varying magnetic field. UNDESIRABLE in transformer cores → laminated cores (thin steel sheets insulated by varnish) reduce eddy losses. USEFUL: (1) Induction cooktop — alternating field induces currents in iron pan → I²R heats it; cooler than gas; (2) Eddy-current brakes — used in trains, roller-coasters; (3) Metal detectors; (4) Electromagnetic damping in galvanometers; (5) Levitation in maglev trains. Foucault first studied them (~1855).",
+      "subject": "Physics",
+      "topic": "Electromagnetic induction — mixed tiers",
+      "topic_code": "PHY_EMI_INDUCTION_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-emi-04",
+      "generated_at": "2026-04-25T01:00:00+00:00",
+      "id": "sgk_PHY_EMI_INDUCTION_MIXED_00004"
+    },
+    {
+      "stem": "AC is preferred over DC for long-distance transmission because:",
+      "options": [
+        {"option_text": "AC conducts more easily through air", "is_correct": false},
+        {"option_text": "AC voltage can be easily stepped up / down using transformers; high-voltage transmission minimises I²R losses", "is_correct": true},
+        {"option_text": "DC needs more wires", "is_correct": false},
+        {"option_text": "DC cannot carry power", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Power loss in cables = I²R. For same power P, doubling voltage halves current, reducing losses by 4×. Transformers (only work with AC) make stepping up/down trivial. Generation ~11 kV → step up to 220-765 kV for transmission → step down to 11 kV near city → 230 V at home. HVDC (High Voltage Direct Current) links — used for very long distances or undersea cables; uses thyristor converters. India has several HVDC lines (e.g., Talcher-Kolar 1.4 GW). For local distribution AC is universal.",
+      "subject": "Physics",
+      "topic": "Electromagnetic induction — mixed tiers",
+      "topic_code": "PHY_EMI_INDUCTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-emi-05",
+      "generated_at": "2026-04-25T01:00:00+00:00",
+      "id": "sgk_PHY_EMI_INDUCTION_MIXED_00005"
+    },
+    {
+      "stem": "The principle of an electric motor is essentially:",
+      "options": [
+        {"option_text": "Same as a generator (Faraday's law)", "is_correct": false},
+        {"option_text": "OPPOSITE of generator — electrical input → mechanical output via force on current-carrying conductor in B field (F = BIL)", "is_correct": true},
+        {"option_text": "Heating effect", "is_correct": false},
+        {"option_text": "Electromagnetic resonance", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Generator: mechanical motion → induced EMF (Faraday). Motor: current in coil placed in B field → force F = BIL on each side; couple → torque → rotation. Direction by Fleming's LEFT-hand rule (motor; First-finger Field, seCond Current, thuMb Motion). Generator uses RIGHT-hand rule. Motors and generators are essentially the same machine — only direction of energy flow differs. DC motor uses commutator + brushes; AC motor (induction motor — Tesla) needs no commutator.",
+      "subject": "Physics",
+      "topic": "Electromagnetic induction — mixed tiers",
+      "topic_code": "PHY_EMI_INDUCTION_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-emi-06",
+      "generated_at": "2026-04-25T01:00:00+00:00",
+      "id": "sgk_PHY_EMI_INDUCTION_MIXED_00006"
+    },
+    {
+      "stem": "Self-inductance of a coil depends on:",
+      "options": [
+        {"option_text": "Voltage applied", "is_correct": false},
+        {"option_text": "Geometry (turns N², area, length) and core material (μ)", "is_correct": true},
+        {"option_text": "Current alone", "is_correct": false},
+        {"option_text": "Resistance only", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Self-inductance L (henries) is a geometric + material property. For a long solenoid: L = μ₀μ_r·N²·A/l. Higher μ_r (iron core) → much larger L. EMF self-induced: ε = −L·dI/dt. Stored energy: U = ½LI² (joules). Inductors oppose CHANGE in current (high-pass filter for current changes / low-pass for voltage). Used in chokes, fluorescent ballasts, RF tuned circuits, switching power supplies. Inductive reactance X_L = ωL = 2πfL — increases with frequency.",
+      "subject": "Physics",
+      "topic": "Electromagnetic induction — mixed tiers",
+      "topic_code": "PHY_EMI_INDUCTION_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-emi-07",
+      "generated_at": "2026-04-25T01:00:00+00:00",
+      "id": "sgk_PHY_EMI_INDUCTION_MIXED_00007"
+    }
+  ]
+}
