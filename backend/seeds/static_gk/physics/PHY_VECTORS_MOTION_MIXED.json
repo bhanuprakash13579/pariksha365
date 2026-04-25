@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Vectors and motion — mixed tiers",
+  "topic_code": "PHY_VECTORS_MOTION_MIXED",
+  "description": "Scalar vs vector, displacement, velocity, acceleration, projectile motion",
+  "questions": [
+    {
+      "stem": "Which of the following is a SCALAR quantity?",
+      "options": [
+        {"option_text": "Displacement", "is_correct": false},
+        {"option_text": "Speed", "is_correct": true},
+        {"option_text": "Velocity", "is_correct": false},
+        {"option_text": "Acceleration", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "SCALAR — magnitude only (no direction). Examples: speed, distance, mass, time, temperature, energy, work, power, charge, density. VECTOR — magnitude + direction. Examples: displacement, velocity, acceleration, force, momentum, torque, electric/magnetic field. Speed = |velocity|; distance ≥ |displacement| (path length vs straight-line displacement). Vectors follow vector-addition (parallelogram, triangle); scalars add algebraically.",
+      "subject": "Physics",
+      "topic": "Vectors and motion — mixed tiers",
+      "topic_code": "PHY_VECTORS_MOTION_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-vec-01",
+      "generated_at": "2026-04-24T23:20:00+00:00",
+      "id": "sgk_PHY_VECTORS_MOTION_MIXED_00001"
+    },
+    {
+      "stem": "A car travelling at 20 m/s decelerates uniformly at 4 m/s² and comes to a stop. Distance travelled before stopping:",
+      "options": [
+        {"option_text": "25 m", "is_correct": false},
+        {"option_text": "50 m", "is_correct": true},
+        {"option_text": "80 m", "is_correct": false},
+        {"option_text": "100 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Use v² = u² + 2as. Final v = 0, initial u = 20, a = −4 (deceleration). 0 = 400 + 2·(−4)·s → 8s = 400 → s = 50 m. Time to stop: v = u + at → 0 = 20 + (−4)t → t = 5 s. Or use s = ut + ½at² = 20(5) + ½(−4)(25) = 100 − 50 = 50 m ✓.",
+      "subject": "Physics",
+      "topic": "Vectors and motion — mixed tiers",
+      "topic_code": "PHY_VECTORS_MOTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-vec-02",
+      "generated_at": "2026-04-24T23:20:00+00:00",
+      "id": "sgk_PHY_VECTORS_MOTION_MIXED_00002"
+    },
+    {
+      "stem": "An object is in projectile motion. At the highest point of the trajectory, its:",
+      "options": [
+        {"option_text": "Velocity is zero in both x and y", "is_correct": false},
+        {"option_text": "Vertical (y) velocity is zero, but horizontal (x) velocity remains constant", "is_correct": true},
+        {"option_text": "Total speed is maximum", "is_correct": false},
+        {"option_text": "Acceleration is zero", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Projectile motion = independent x + y. x-component: a_x = 0 (no horizontal force, ignoring air drag) → v_x = u·cosθ constant throughout. y-component: a_y = −g (downward) → v_y = u·sinθ − gt. At highest point, v_y = 0 (rising stops) → t = u·sinθ/g; H_max = (u·sinθ)²/(2g); Range R = u²·sin(2θ)/g. Maximum range at θ = 45°. Acceleration is g (downward) at all times — never zero. Total speed at top = u·cosθ (horizontal only).",
+      "subject": "Physics",
+      "topic": "Vectors and motion — mixed tiers",
+      "topic_code": "PHY_VECTORS_MOTION_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-vec-03",
+      "generated_at": "2026-04-24T23:20:00+00:00",
+      "id": "sgk_PHY_VECTORS_MOTION_MIXED_00003"
+    },
+    {
+      "stem": "If two forces of 3 N and 4 N act on a body at right angles, the magnitude of the resultant is:",
+      "options": [
+        {"option_text": "1 N", "is_correct": false},
+        {"option_text": "5 N (Pythagoras: √(3² + 4²))", "is_correct": true},
+        {"option_text": "7 N", "is_correct": false},
+        {"option_text": "12 N", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "For two perpendicular vectors: |R|² = |A|² + |B|² → |R| = √(9 + 16) = √25 = 5 N. Direction tan θ = 4/3 → θ ≈ 53° from the 3-N vector. For non-perpendicular: |R|² = |A|² + |B|² + 2|A||B|·cosα, where α is the angle between them. Max R = A + B when α = 0; min R = |A − B| when α = 180°. For 3 + 4 vectors, range is 1 N to 7 N.",
+      "subject": "Physics",
+      "topic": "Vectors and motion — mixed tiers",
+      "topic_code": "PHY_VECTORS_MOTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-vec-04",
+      "generated_at": "2026-04-24T23:20:00+00:00",
+      "id": "sgk_PHY_VECTORS_MOTION_MIXED_00004"
+    },
+    {
+      "stem": "A body moves around a circle of radius r at constant speed v. Its acceleration is:",
+      "options": [
+        {"option_text": "Zero", "is_correct": false},
+        {"option_text": "v²/r — directed towards the centre (centripetal)", "is_correct": true},
+        {"option_text": "v/r outwards", "is_correct": false},
+        {"option_text": "v²·r", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Even at constant SPEED, the velocity vector changes direction continuously → acceleration is non-zero. Centripetal acceleration a_c = v²/r, always pointing towards the centre. Force F = m·v²/r is the net inward force (provided by gravity for satellites; tension for a stone on a string; normal/friction for a car on a curved road). Without this force, body would move tangentially (Newton's 1st law). Centrifugal 'force' is a pseudo-force in rotating frame — not a real force.",
+      "subject": "Physics",
+      "topic": "Vectors and motion — mixed tiers",
+      "topic_code": "PHY_VECTORS_MOTION_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-vec-05",
+      "generated_at": "2026-04-24T23:20:00+00:00",
+      "id": "sgk_PHY_VECTORS_MOTION_MIXED_00005"
+    },
+    {
+      "stem": "A ball is thrown vertically upwards with initial velocity 20 m/s (g = 10 m/s²). Time to reach maximum height:",
+      "options": [
+        {"option_text": "1 s", "is_correct": false},
+        {"option_text": "2 s", "is_correct": true},
+        {"option_text": "4 s", "is_correct": false},
+        {"option_text": "10 s", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "At maximum height, v = 0. Use v = u − gt (taking up positive, g acts down): 0 = 20 − 10t → t = 2 s. Maximum height: h = u·t − ½g·t² = 20·2 − ½·10·4 = 40 − 20 = 20 m. Total time of flight (up and back down) = 4 s. By symmetry, time up = time down = 2 s; the ball returns with same speed (20 m/s, but downward).",
+      "subject": "Physics",
+      "topic": "Vectors and motion — mixed tiers",
+      "topic_code": "PHY_VECTORS_MOTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-vec-06",
+      "generated_at": "2026-04-24T23:20:00+00:00",
+      "id": "sgk_PHY_VECTORS_MOTION_MIXED_00006"
+    },
+    {
+      "stem": "A man walks 4 km East then 3 km North. His total DISPLACEMENT (straight-line distance from start) is:",
+      "options": [
+        {"option_text": "7 km", "is_correct": false},
+        {"option_text": "5 km (Pythagoras: √(4²+3²) = 5)", "is_correct": true},
+        {"option_text": "12 km", "is_correct": false},
+        {"option_text": "1 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "DISTANCE traversed = 4 + 3 = 7 km (scalar, path length). DISPLACEMENT = vector from start to end = √(4² + 3²) = 5 km in direction NE (tan⁻¹(3/4) ≈ 37° North of East). Distance ≥ |displacement| always. Equal only when motion is in a single direction. The 3-4-5 right-triangle is the most familiar Pythagorean triple — useful pattern to recognise instantly.",
+      "subject": "Physics",
+      "topic": "Vectors and motion — mixed tiers",
+      "topic_code": "PHY_VECTORS_MOTION_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-phy-vec-07",
+      "generated_at": "2026-04-24T23:20:00+00:00",
+      "id": "sgk_PHY_VECTORS_MOTION_MIXED_00007"
+    }
+  ]
+}
