@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Problems on trains — mixed tiers",
+  "topic_code": "QNT_TRAINS_MIXED",
+  "description": "Train passes pole/platform/another train; relative speed; conversion km/h ↔ m/s",
+  "questions": [
+    {
+      "stem": "A 150-metre-long train running at 54 km/h crosses a vertical pole in:",
+      "options": [
+        {"option_text": "8 seconds", "is_correct": false},
+        {"option_text": "10 seconds", "is_correct": true},
+        {"option_text": "12 seconds", "is_correct": false},
+        {"option_text": "15 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Convert speed: 54 km/h × (5/18) = 15 m/s. To cross a pole, the train travels its own length. Time = distance / speed = 150 / 15 = 10 seconds. Memory aid: km/h to m/s, multiply by 5/18; reverse direction multiply by 18/5.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains — mixed tiers",
+      "topic_code": "QNT_TRAINS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-tr-01",
+      "generated_at": "2026-04-24T12:40:00+00:00",
+      "id": "sgk_QNT_TRAINS_MIXED_00001"
+    },
+    {
+      "stem": "A 200-metre-long train running at 72 km/h crosses a 250-metre-long platform in:",
+      "options": [
+        {"option_text": "20 seconds", "is_correct": false},
+        {"option_text": "22.5 seconds", "is_correct": true},
+        {"option_text": "25 seconds", "is_correct": false},
+        {"option_text": "18 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Speed = 72 × 5/18 = 20 m/s. To cross a platform, train must cover its own length + platform length = 200 + 250 = 450 m. Time = 450 / 20 = 22.5 seconds. Rule of thumb: pole → train's own length; platform/bridge/tunnel → train length + structure length.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains — mixed tiers",
+      "topic_code": "QNT_TRAINS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-tr-02",
+      "generated_at": "2026-04-24T12:40:00+00:00",
+      "id": "sgk_QNT_TRAINS_MIXED_00002"
+    },
+    {
+      "stem": "Two trains of length 120 m and 80 m travel in the SAME direction at 50 km/h and 30 km/h. The faster train passes the slower in:",
+      "options": [
+        {"option_text": "30 seconds", "is_correct": false},
+        {"option_text": "36 seconds", "is_correct": true},
+        {"option_text": "24 seconds", "is_correct": false},
+        {"option_text": "18 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Same direction → relative speed = (50 − 30) km/h = 20 km/h = 20 × 5/18 = 50/9 m/s. Total distance to cover = sum of lengths = 120 + 80 = 200 m. Time = 200 ÷ (50/9) = 200 × 9/50 = 36 seconds. Trap: in OPPOSITE direction (head-on), relative speed = sum (50+30 = 80 km/h ≈ 22.22 m/s) → time = 200/22.22 ≈ 9 seconds — much shorter.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains — mixed tiers",
+      "topic_code": "QNT_TRAINS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-tr-03",
+      "generated_at": "2026-04-24T12:40:00+00:00",
+      "id": "sgk_QNT_TRAINS_MIXED_00003"
+    },
+    {
+      "stem": "Two trains 160 m and 140 m long, running in opposite directions on parallel tracks at 60 km/h and 40 km/h respectively, cross each other in:",
+      "options": [
+        {"option_text": "9.5 s", "is_correct": false},
+        {"option_text": "10.8 s", "is_correct": true},
+        {"option_text": "12 s", "is_correct": false},
+        {"option_text": "8 s", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Opposite directions → relative speed = 60 + 40 = 100 km/h = 100 × 5/18 = 250/9 m/s. Distance = 160 + 140 = 300 m. Time = 300 ÷ (250/9) = 300 × 9/250 = 2700/250 = 10.8 seconds.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains — mixed tiers",
+      "topic_code": "QNT_TRAINS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-tr-04",
+      "generated_at": "2026-04-24T12:40:00+00:00",
+      "id": "sgk_QNT_TRAINS_MIXED_00004"
+    },
+    {
+      "stem": "A train crosses a man standing on the platform in 8 seconds and crosses the platform in 18 seconds. If the man is at the END of the platform and the speed of the train is 36 km/h, the length of the platform is:",
+      "options": [
+        {"option_text": "80 m", "is_correct": false},
+        {"option_text": "100 m", "is_correct": true},
+        {"option_text": "120 m", "is_correct": false},
+        {"option_text": "150 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Speed = 36 × 5/18 = 10 m/s. Man (a 'point') is crossed in 8 s → train length = 10 × 8 = 80 m. Platform crossed in 18 s → train + platform = 10 × 18 = 180 m. Platform length = 180 − 80 = 100 m. Standard 'subtract two-times' approach.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains — mixed tiers",
+      "topic_code": "QNT_TRAINS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-tr-05",
+      "generated_at": "2026-04-24T12:40:00+00:00",
+      "id": "sgk_QNT_TRAINS_MIXED_00005"
+    },
+    {
+      "stem": "A train running at 90 km/h crosses a tunnel of length 1.4 km in 1 minute 12 seconds. The length of the train is:",
+      "options": [
+        {"option_text": "300 m", "is_correct": false},
+        {"option_text": "400 m", "is_correct": true},
+        {"option_text": "500 m", "is_correct": false},
+        {"option_text": "350 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Speed = 90 × 5/18 = 25 m/s. Time = 1 min 12 s = 72 s. Total distance = 25 × 72 = 1,800 m. Tunnel = 1.4 km = 1,400 m. Train length = 1,800 − 1,400 = 400 m.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains — mixed tiers",
+      "topic_code": "QNT_TRAINS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-tr-06",
+      "generated_at": "2026-04-24T12:40:00+00:00",
+      "id": "sgk_QNT_TRAINS_MIXED_00006"
+    },
+    {
+      "stem": "Two trains starting from stations A and B simultaneously towards each other, distance between A and B is 480 km, train from A runs at 60 km/h and from B at 40 km/h. After how long do they meet?",
+      "options": [
+        {"option_text": "3 hours", "is_correct": false},
+        {"option_text": "4.8 hours", "is_correct": true},
+        {"option_text": "6 hours", "is_correct": false},
+        {"option_text": "8 hours", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "When two objects move towards each other, relative speed = sum = 60 + 40 = 100 km/h. Time to meet = total distance / relative speed = 480 / 100 = 4.8 hours = 4 hr 48 min. At meeting point, the train from A has covered 60 × 4.8 = 288 km; the one from B has covered 40 × 4.8 = 192 km; sum = 480 ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains — mixed tiers",
+      "topic_code": "QNT_TRAINS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-tr-07",
+      "generated_at": "2026-04-24T12:40:00+00:00",
+      "id": "sgk_QNT_TRAINS_MIXED_00007"
+    }
+  ]
+}
