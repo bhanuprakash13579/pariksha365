@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Probability — mixed tiers",
+  "topic_code": "QNT_PROBABILITY_II_MIXED",
+  "description": "Sample space, dice/coins, cards, conditional probability, complementary events",
+  "questions": [
+    {
+      "stem": "A fair die is rolled once. The probability of getting a number greater than 4 is:",
+      "options": [
+        {"option_text": "1/2", "is_correct": false},
+        {"option_text": "1/3", "is_correct": true},
+        {"option_text": "1/6", "is_correct": false},
+        {"option_text": "2/3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Sample space S = {1, 2, 3, 4, 5, 6}, n(S) = 6. Favourable outcomes (>4) = {5, 6}, n(E) = 2. Probability = 2/6 = 1/3. Read 'greater than 4' carefully — it does NOT include 4 itself. If it were 'at least 4', the favourable set would be {4, 5, 6} → 3/6 = 1/2.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Probability — mixed tiers",
+      "topic_code": "QNT_PROBABILITY_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-prb-01",
+      "generated_at": "2026-04-24T11:50:00+00:00",
+      "id": "sgk_QNT_PROBABILITY_II_MIXED_00001"
+    },
+    {
+      "stem": "Two fair coins are tossed simultaneously. The probability of getting at least one head is:",
+      "options": [
+        {"option_text": "1/4", "is_correct": false},
+        {"option_text": "3/4", "is_correct": true},
+        {"option_text": "1/2", "is_correct": false},
+        {"option_text": "1", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Sample space = {HH, HT, TH, TT}, |S| = 4. 'At least one head' = complement of 'no head' (= TT). P(no head) = 1/4. P(at least one head) = 1 − 1/4 = 3/4. Direct count: HH, HT, TH all qualify → 3/4 ✓. The complementary trick (1 − P(none)) is invaluable for 'at least one' problems.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Probability — mixed tiers",
+      "topic_code": "QNT_PROBABILITY_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-prb-02",
+      "generated_at": "2026-04-24T11:50:00+00:00",
+      "id": "sgk_QNT_PROBABILITY_II_MIXED_00002"
+    },
+    {
+      "stem": "From a well-shuffled deck of 52 cards, a card is drawn at random. The probability of drawing a King OR a Heart is:",
+      "options": [
+        {"option_text": "16/52", "is_correct": false},
+        {"option_text": "16/52 = 4/13", "is_correct": true},
+        {"option_text": "17/52", "is_correct": false},
+        {"option_text": "13/52", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Inclusion-Exclusion: P(K ∪ H) = P(K) + P(H) − P(K ∩ H). 4 Kings, 13 Hearts, 1 King-of-Hearts (counted in both). So 4 + 13 − 1 = 16 favourable cards. P = 16/52 = 4/13. Trap option 17/52 forgets to subtract the overlap (the King-of-Hearts).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Probability — mixed tiers",
+      "topic_code": "QNT_PROBABILITY_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-prb-03",
+      "generated_at": "2026-04-24T11:50:00+00:00",
+      "id": "sgk_QNT_PROBABILITY_II_MIXED_00003"
+    },
+    {
+      "stem": "Two fair dice are rolled. The probability that the sum of the numbers showing is 8 is:",
+      "options": [
+        {"option_text": "5/36", "is_correct": true},
+        {"option_text": "1/6", "is_correct": false},
+        {"option_text": "1/9", "is_correct": false},
+        {"option_text": "7/36", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Sample space = 6 × 6 = 36 ordered outcomes. Outcomes giving sum 8 — list them: (2,6), (3,5), (4,4), (5,3), (6,2) → 5 outcomes. Probability = 5/36. Note: (4,4) is one outcome (not two, because two dice are independent and we're listing ordered pairs but the same pair). Common counts to memorise — sums 7 (=6/36, the most likely), 6 = 5/36, 8 = 5/36, 5 = 4/36, 9 = 4/36, 2 or 12 = 1/36 each.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Probability — mixed tiers",
+      "topic_code": "QNT_PROBABILITY_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-prb-04",
+      "generated_at": "2026-04-24T11:50:00+00:00",
+      "id": "sgk_QNT_PROBABILITY_II_MIXED_00004"
+    },
+    {
+      "stem": "A bag contains 5 white and 4 red balls. Two balls are drawn one after another WITHOUT replacement. The probability that BOTH are red is:",
+      "options": [
+        {"option_text": "16/81", "is_correct": false},
+        {"option_text": "1/6", "is_correct": true},
+        {"option_text": "12/72", "is_correct": false},
+        {"option_text": "2/9", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Without replacement → conditional probability. P(1st red) = 4/9. After taking one red, 3 reds remain among 8 total. P(2nd red | 1st red) = 3/8. Joint probability = (4/9) × (3/8) = 12/72 = 1/6. With replacement, it would be (4/9)² = 16/81. Use the multiplication rule for sequential events; conditioning is the key word for 'without replacement'.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Probability — mixed tiers",
+      "topic_code": "QNT_PROBABILITY_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-prb-05",
+      "generated_at": "2026-04-24T11:50:00+00:00",
+      "id": "sgk_QNT_PROBABILITY_II_MIXED_00005"
+    },
+    {
+      "stem": "If P(A) = 0.4 and P(B) = 0.3 and A, B are independent events, then P(A ∩ B) is:",
+      "options": [
+        {"option_text": "0.7", "is_correct": false},
+        {"option_text": "0.12", "is_correct": true},
+        {"option_text": "0.1", "is_correct": false},
+        {"option_text": "0", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Independent events: P(A ∩ B) = P(A) × P(B) = 0.4 × 0.3 = 0.12. Don't confuse with mutually exclusive events: P(A ∩ B) = 0 (cannot occur together; addition rule gives P(A ∪ B) = P(A) + P(B)). Always note the relationship — independent ≠ mutually exclusive — exam papers test this distinction.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Probability — mixed tiers",
+      "topic_code": "QNT_PROBABILITY_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-prb-06",
+      "generated_at": "2026-04-24T11:50:00+00:00",
+      "id": "sgk_QNT_PROBABILITY_II_MIXED_00006"
+    },
+    {
+      "stem": "From 7 boys and 4 girls, a committee of 3 is to be formed. The probability that the committee has exactly 2 girls is:",
+      "options": [
+        {"option_text": "21/55", "is_correct": false},
+        {"option_text": "42/165 = 14/55", "is_correct": true},
+        {"option_text": "21/165", "is_correct": false},
+        {"option_text": "1/3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Total ways to pick 3 from 11: ¹¹C₃ = 165. Favourable = (pick 2 girls) × (pick 1 boy) = ⁴C₂ × ⁷C₁ = 6 × 7 = 42. Probability = 42/165 = 14/55. Verify by simplifying — divide by 3: 42/165 = 14/55 ≈ 0.2545. Check sum across all girl-counts: P(0G) + P(1G) + P(2G) + P(3G) = 35/165 + 84/165 + 42/165 + 4/165 = 165/165 = 1 ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Probability — mixed tiers",
+      "topic_code": "QNT_PROBABILITY_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-24-qnt-prb-07",
+      "generated_at": "2026-04-24T11:50:00+00:00",
+      "id": "sgk_QNT_PROBABILITY_II_MIXED_00007"
+    }
+  ]
+}
