@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Gravitation II — mixed tiers",
+  "topic_code": "PHY_GRAVITATION_II_MIXED",
+  "description": "Newton's universal law, g, weightlessness, escape velocity, satellite motion, Kepler's laws",
+  "questions": [
+    {
+      "stem": "Newton's UNIVERSAL LAW of gravitation states that the force between two masses is:",
+      "options": [
+        {"option_text": "Proportional to the sum of the two masses involved", "is_correct": false},
+        {"option_text": "Proportional to product of masses, inverse-square of distance", "is_correct": true},
+        {"option_text": "Independent of mass, dependent only on the distance", "is_correct": false},
+        {"option_text": "Proportional to the cube of the distance separating them", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "F = G m₁m₂ / r². Force ∝ product of masses, INVERSELY proportional to SQUARE of distance. G = 6.674 × 10⁻¹¹ N·m²/kg² (universal gravitational constant; measured by Cavendish, 1798). Distractor 1 — sum, not product. Distractor 3 — false (mass matters). Distractor 4 — wrong power.",
+      "subject": "Physics",
+      "topic": "Gravitation II — mixed tiers",
+      "topic_code": "PHY_GRAVITATION_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-gv-01",
+      "generated_at": "2026-04-26T17:35:00+00:00",
+      "id": "sgk_PHY_GRAVITATION_II_MIXED_00001"
+    },
+    {
+      "stem": "The acceleration due to gravity (g) at the SURFACE of the Earth is approximately:",
+      "options": [
+        {"option_text": "5 m/s² near the Earth's surface", "is_correct": false},
+        {"option_text": "9.8 m/s² near the Earth's surface", "is_correct": true},
+        {"option_text": "20 m/s² near the Earth's surface", "is_correct": false},
+        {"option_text": "1.6 m/s² near the Earth's surface", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "g ≈ 9.8 m/s² at sea level. Varies slightly with latitude (more at poles, less at equator due to Earth's bulge + rotation), with altitude (decreases with height). Distractor 4 = MOON's gravity (1.6 m/s², ~1/6 of Earth). Mars ~3.7 m/s². Jupiter ~24.8 m/s². Sun ~274 m/s².",
+      "subject": "Physics",
+      "topic": "Gravitation II — mixed tiers",
+      "topic_code": "PHY_GRAVITATION_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-gv-02",
+      "generated_at": "2026-04-26T17:35:00+00:00",
+      "id": "sgk_PHY_GRAVITATION_II_MIXED_00002"
+    },
+    {
+      "stem": "ESCAPE VELOCITY from Earth's surface is approximately:",
+      "options": [
+        {"option_text": "7.9 km/s, the orbital velocity at low orbit", "is_correct": false},
+        {"option_text": "11.2 km/s, the speed needed to leave gravity", "is_correct": true},
+        {"option_text": "30 km/s, Earth's orbital speed around Sun", "is_correct": false},
+        {"option_text": "300,000 km/s, the speed of light in vacuum", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "ESCAPE VELOCITY = √(2gR) ≈ 11.2 km/s for Earth (~40,300 km/h). Below this, an object falls back. Above, it escapes Earth's gravity. Distractor 1 = first cosmic velocity (orbital, ~7.9 km/s for low Earth orbit). Distractor 3 = Earth's orbital velocity around Sun. Distractor 4 = speed of light.",
+      "subject": "Physics",
+      "topic": "Gravitation II — mixed tiers",
+      "topic_code": "PHY_GRAVITATION_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-gv-03",
+      "generated_at": "2026-04-26T17:35:00+00:00",
+      "id": "sgk_PHY_GRAVITATION_II_MIXED_00003"
+    },
+    {
+      "stem": "An astronaut in a satellite orbiting the Earth feels WEIGHTLESS because:",
+      "options": [
+        {"option_text": "There is no gravity acting up there in space", "is_correct": false},
+        {"option_text": "Both astronaut and satellite are in continuous free fall", "is_correct": true},
+        {"option_text": "Air pressure outside zero out the felt weight", "is_correct": false},
+        {"option_text": "Centrifugal force exactly cancels gravity acting", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "FREE FALL — gravity still acts (~90% of surface g at ISS altitude!), but the satellite is in continuous free fall AROUND the Earth (orbital path = falling and missing). Astronaut + satellite fall TOGETHER, so there's no normal-force pressing on astronaut → felt as weightlessness. Distractor 1 — wrong; gravity is strong even there. Distractor 3 — vacuum; no air pressure. Distractor 4 — centrifugal force is a pseudo-force in the rotating frame; gravity is what provides centripetal force in the inertial frame.",
+      "subject": "Physics",
+      "topic": "Gravitation II — mixed tiers",
+      "topic_code": "PHY_GRAVITATION_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-gv-04",
+      "generated_at": "2026-04-26T17:35:00+00:00",
+      "id": "sgk_PHY_GRAVITATION_II_MIXED_00004"
+    },
+    {
+      "stem": "A GEOSTATIONARY satellite orbits at an altitude of approximately:",
+      "options": [
+        {"option_text": "400 km, where the ISS roughly orbits the Earth", "is_correct": false},
+        {"option_text": "36,000 km above the equator with 24-hour period", "is_correct": true},
+        {"option_text": "100 km, the boundary of space (Karman line)", "is_correct": false},
+        {"option_text": "200,000 km, between Earth and Moon distance", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Geostationary orbit (GEO) — ~35,786 km above equator. Period 23h 56min ≈ Earth's rotation → satellite appears stationary in sky. Used for communication satellites, TV broadcasting, weather (INSAT, GSAT series). Distractor 1 = LEO (Low Earth Orbit) where ISS orbits. Distractor 3 = boundary of space, not orbital. Distractor 4 = halfway to Moon, no satellites at that orbit.",
+      "subject": "Physics",
+      "topic": "Gravitation II — mixed tiers",
+      "topic_code": "PHY_GRAVITATION_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-gv-05",
+      "generated_at": "2026-04-26T17:35:00+00:00",
+      "id": "sgk_PHY_GRAVITATION_II_MIXED_00005"
+    },
+    {
+      "stem": "The value of g at the EQUATOR is slightly LESS than at the POLES because:",
+      "options": [
+        {"option_text": "The atmosphere is thicker at the equator zone", "is_correct": false},
+        {"option_text": "Equator is farther from centre + Earth rotates faster there", "is_correct": true},
+        {"option_text": "The Sun's gravity reduces the felt g near equator", "is_correct": false},
+        {"option_text": "Magnetic field is stronger at the equator zone", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Two reasons: (1) Earth is OBLATE — equatorial radius (~6378 km) > polar radius (~6357 km), so equatorial surface is FURTHER from Earth's centre → smaller g (gravitational F ∝ 1/r²). (2) Earth ROTATES — centripetal force needed for objects on the surface comes from gravity; at equator the rotational velocity is highest → effective g (felt) is reduced more. Polar g ≈ 9.83; equatorial g ≈ 9.78 m/s². Distractors 1, 3, 4 are wrong reasons.",
+      "subject": "Physics",
+      "topic": "Gravitation II — mixed tiers",
+      "topic_code": "PHY_GRAVITATION_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-gv-06",
+      "generated_at": "2026-04-26T17:35:00+00:00",
+      "id": "sgk_PHY_GRAVITATION_II_MIXED_00006"
+    },
+    {
+      "stem": "Kepler's THIRD LAW of planetary motion states that the square of the orbital period is proportional to:",
+      "options": [
+        {"option_text": "The radius of the orbit raised to the first power", "is_correct": false},
+        {"option_text": "The cube of the semi-major axis of the orbit", "is_correct": true},
+        {"option_text": "The mass of the orbiting body's celestial size", "is_correct": false},
+        {"option_text": "The exponential of the orbit's eccentricity values", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Kepler's Third Law: T² ∝ a³ (a = semi-major axis). For Solar System: T² = a³ when T is in years and a in AU. E.g., Jupiter: a = 5.2 AU; T² = 5.2³ = 140.6; T ≈ 11.86 years (matches!). Derived from Newton's law of gravitation. First two laws: (1) planets move in ELLIPTICAL orbits with the Sun at one focus; (2) equal areas swept in equal times.",
+      "subject": "Physics",
+      "topic": "Gravitation II — mixed tiers",
+      "topic_code": "PHY_GRAVITATION_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-gv-07",
+      "generated_at": "2026-04-26T17:35:00+00:00",
+      "id": "sgk_PHY_GRAVITATION_II_MIXED_00007"
+    }
+  ]
+}
