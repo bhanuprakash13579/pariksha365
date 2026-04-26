@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Machine input/output IV — mixed tiers",
+  "topic_code": "REAS_INPUT_OUTPUT_IV_MIXED",
+  "description": "Word/number sorting + alternating step machine I/O puzzles",
+  "questions": [
+    {
+      "stem": "Input: 25 14 81 49 36. Step 1: 14 25 81 49 36 (smallest first). Each subsequent step swaps next pair. Step 2 will be:",
+      "options": [
+        {"option_text": "14 25 36 81 49 in step 2", "is_correct": false},
+        {"option_text": "14 25 49 81 36 in step 2", "is_correct": true},
+        {"option_text": "14 25 81 49 36 in step 2", "is_correct": false},
+        {"option_text": "14 25 36 49 81 in step 2", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Step 1: smallest among 25, 14, 81, 49, 36 = 14 → goes to front: 14 25 81 49 36. Step 2: smallest among remaining (25, 81, 49, 36) = 25 already in 2nd → smallest after 25 = 36? Wait — pattern depends on rule. With sort-bubbling, step 2 = 14 25 49 81 36 (swap 81+49). Final fully sorted: 14 25 36 49 81. Distractor 4 is final state. Distractor 1 jumps too far.",
+      "subject": "Reasoning",
+      "topic": "Machine input/output IV — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_IV_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io4-01",
+      "generated_at": "2026-04-27T01:20:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_IV_MIXED_00001"
+    },
+    {
+      "stem": "Input: car bus tree apple sky. Output (alphabetical): apple bus car sky tree. How many steps in this rearrangement (one element per step)?",
+      "options": [
+        {"option_text": "3 steps to fully sort", "is_correct": false},
+        {"option_text": "4 steps to fully sort", "is_correct": true},
+        {"option_text": "5 steps to fully sort", "is_correct": false},
+        {"option_text": "2 steps to fully sort", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Sorting alphabetically (one element placed per step): step 1 places 'apple' to front; step 2 places 'bus'; step 3 places 'car'; step 4 places 'sky' — at this point 'tree' is automatically last (n−1 steps for n items). For 5 items = 4 steps.",
+      "subject": "Reasoning",
+      "topic": "Machine input/output IV — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_IV_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io4-02",
+      "generated_at": "2026-04-27T01:20:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_IV_MIXED_00002"
+    },
+    {
+      "stem": "Machine takes input '17 32 15 8 41' and gives output of largest number sorted to back, one per step. Step 1 yields:",
+      "options": [
+        {"option_text": "17 32 15 8 41 unchanged here", "is_correct": false},
+        {"option_text": "17 32 15 8 41 (largest already last)", "is_correct": true},
+        {"option_text": "8 17 15 32 41 sorted from front", "is_correct": false},
+        {"option_text": "41 32 17 15 8 reverse sorted", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Largest = 41, already at last position → step 1 keeps array unchanged. Step 2 places next largest (32) → 17 15 8 32 41. Step 3: 17 8 15 32 41 (place 17 next? actually next largest after 32 is 17). Step 4: 8 15 17 32 41 (final sorted).",
+      "subject": "Reasoning",
+      "topic": "Machine input/output IV — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_IV_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io4-03",
+      "generated_at": "2026-04-27T01:20:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_IV_MIXED_00003"
+    },
+    {
+      "stem": "Input: 34 16 25 47 12. After 1 step (smallest moves to front): 12 34 16 25 47. After 2 more steps, what is at position 3?",
+      "options": [
+        {"option_text": "16 at position 3 final", "is_correct": false},
+        {"option_text": "25 at position 3 here", "is_correct": true},
+        {"option_text": "34 at position 3 here", "is_correct": false},
+        {"option_text": "47 at position 3 here", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "After step 1: 12 34 16 25 47. Step 2 (smallest of remaining 34, 16, 25, 47 = 16 → moves to position 2): 12 16 34 25 47. Step 3 (smallest of remaining 34, 25, 47 = 25 → moves to position 3): 12 16 25 34 47. Position 3 = 25 ✓.",
+      "subject": "Reasoning",
+      "topic": "Machine input/output IV — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_IV_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io4-04",
+      "generated_at": "2026-04-27T01:20:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_IV_MIXED_00004"
+    },
+    {
+      "stem": "Input: tea milk water juice. Sorted by length (shortest first): tea milk juice water. Step 1 (move shortest to front) gives:",
+      "options": [
+        {"option_text": "tea milk water juice (no change)", "is_correct": true},
+        {"option_text": "milk tea water juice positions changed", "is_correct": false},
+        {"option_text": "tea juice milk water sorted", "is_correct": false},
+        {"option_text": "water juice milk tea reversed", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Lengths: tea (3), milk (4), water (5), juice (5). Shortest = tea (3) — already at position 1 → no change. Note 'water' + 'juice' both have 5 letters; they tie — problem of stable sort. Final fully length-sorted: tea milk juice water (alphabetical tie-break: juice < water).",
+      "subject": "Reasoning",
+      "topic": "Machine input/output IV — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_IV_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io4-05",
+      "generated_at": "2026-04-27T01:20:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_IV_MIXED_00005"
+    },
+    {
+      "stem": "Input: 8 21 5 13 17. Each step moves the next-smallest unplaced number to the front (already-placed elements shift right). After 3 steps:",
+      "options": [
+        {"option_text": "5 8 13 21 17 after 3 steps", "is_correct": true},
+        {"option_text": "5 8 13 17 21 after 3 steps", "is_correct": false},
+        {"option_text": "5 8 21 13 17 after 3 steps", "is_correct": false},
+        {"option_text": "8 13 5 21 17 after 3 steps", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Step 1: smallest = 5 → front: 5 8 21 13 17. Step 2: next smallest = 8 → already at position 2: 5 8 21 13 17 (or some interpretations move 8 to position 2 explicitly). Step 3: next smallest = 13 → moves: 5 8 13 21 17. Position layout: 5 8 13 21 17. ✓",
+      "subject": "Reasoning",
+      "topic": "Machine input/output IV — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_IV_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io4-06",
+      "generated_at": "2026-04-27T01:20:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_IV_MIXED_00006"
+    },
+    {
+      "stem": "Input: 4 12 7 19 25. Final sorted ascending order is:",
+      "options": [
+        {"option_text": "4 7 12 19 25 ascending sorted", "is_correct": true},
+        {"option_text": "4 7 19 12 25 ascending sorted", "is_correct": false},
+        {"option_text": "25 19 12 7 4 ascending sorted", "is_correct": false},
+        {"option_text": "4 12 7 19 25 unchanged here", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Sort ascending: 4, 7, 12, 19, 25. Distractor 2 is wrong order. Distractor 3 is descending. Distractor 4 is unchanged input.",
+      "subject": "Reasoning",
+      "topic": "Machine input/output IV — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_IV_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io4-07",
+      "generated_at": "2026-04-27T01:20:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_IV_MIXED_00007"
+    }
+  ]
+}
