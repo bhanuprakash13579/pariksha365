@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "English",
+  "topic": "Direct-indirect speech for questions — mixed tiers",
+  "topic_code": "ENG_DIRECT_INDIRECT_QUESTIONS_MIXED",
+  "description": "Reporting Wh- and Yes/No questions; tense backshift, word order changes",
+  "questions": [
+    {
+      "stem": "Convert to indirect: 'He said to me, \"Where do you live?\"'",
+      "options": [
+        {"option_text": "He asked me where I live now", "is_correct": false},
+        {"option_text": "He asked me where I lived then", "is_correct": true},
+        {"option_text": "He told me where I do live now", "is_correct": false},
+        {"option_text": "He asked me that where did I live", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Wh-question reporting: drop quotation, drop 'do/does/did', use straight word order, backshift tense. 'do live' → 'lived'. 'Asked' (not 'told' for questions). Distractor 1 — present tense, wrong. Distractor 3 — 'told' is for statements; 'do' should be dropped. Distractor 4 — 'that' is for statements; question structure (did) should not be retained.",
+      "subject": "English",
+      "topic": "Direct-indirect speech for questions — mixed tiers",
+      "topic_code": "ENG_DIRECT_INDIRECT_QUESTIONS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-eng-dq-01",
+      "generated_at": "2026-04-26T19:40:00+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00001"
+    },
+    {
+      "stem": "Convert to indirect: 'She said to him, \"Are you happy?\"'",
+      "options": [
+        {"option_text": "She asked him that he was happy", "is_correct": false},
+        {"option_text": "She asked him if he was happy", "is_correct": true},
+        {"option_text": "She told him are you happy now", "is_correct": false},
+        {"option_text": "She asked him whether is he happy", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Yes/No question reporting: use 'if' or 'whether', drop quotes, no 'that', backshift tense ('are' → 'was'), straight word order. Distractor 1 — 'that' wrongly used (it's for statements). Distractor 3 — 'told' for question is wrong; structure also broken. Distractor 4 — 'whether' OK but kept question inversion 'is he', wrong.",
+      "subject": "English",
+      "topic": "Direct-indirect speech for questions — mixed tiers",
+      "topic_code": "ENG_DIRECT_INDIRECT_QUESTIONS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-eng-dq-02",
+      "generated_at": "2026-04-26T19:40:00+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00002"
+    },
+    {
+      "stem": "Convert to indirect: 'The teacher said, \"Why are you late, Ravi?\"'",
+      "options": [
+        {"option_text": "The teacher told Ravi why was he late", "is_correct": false},
+        {"option_text": "The teacher asked Ravi why he was late", "is_correct": true},
+        {"option_text": "The teacher said Ravi why he is late", "is_correct": false},
+        {"option_text": "The teacher told Ravi if he was late then", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Wh-question to indirect: 'asked' (not 'told'), drop 'are' inversion ('was he' → 'he was'), retain wh-word, backshift tense. 'Are' → 'was'. Distractor 1 — kept inverted question form. Distractor 3 — 'said' should become 'asked' for questions; tense also wrong. Distractor 4 — 'if' is for yes/no questions, not wh-questions.",
+      "subject": "English",
+      "topic": "Direct-indirect speech for questions — mixed tiers",
+      "topic_code": "ENG_DIRECT_INDIRECT_QUESTIONS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-eng-dq-03",
+      "generated_at": "2026-04-26T19:40:00+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00003"
+    },
+    {
+      "stem": "Convert to indirect: 'My brother said to me, \"Did you complete the assignment?\"'",
+      "options": [
+        {"option_text": "My brother asked me did I complete it", "is_correct": false},
+        {"option_text": "My brother asked me if I had completed it", "is_correct": true},
+        {"option_text": "My brother told me whether I completed it", "is_correct": false},
+        {"option_text": "My brother asked me that I had completed it", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Yes/No past question: use 'if', drop 'did' inversion, backshift simple-past 'did complete' → past-perfect 'had completed'. Distractor 1 — kept 'did' inversion, wrong. Distractor 3 — 'told' is for statements. Distractor 4 — 'that' for statements; questions need 'if/whether'.",
+      "subject": "English",
+      "topic": "Direct-indirect speech for questions — mixed tiers",
+      "topic_code": "ENG_DIRECT_INDIRECT_QUESTIONS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-eng-dq-04",
+      "generated_at": "2026-04-26T19:40:00+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00004"
+    },
+    {
+      "stem": "Convert to indirect: 'She said, \"Will you help me with this?\"'",
+      "options": [
+        {"option_text": "She asked me would I help her with it", "is_correct": false},
+        {"option_text": "She asked me if I would help her with that", "is_correct": true},
+        {"option_text": "She said me whether I would help her with it", "is_correct": false},
+        {"option_text": "She told me that I would help her with it", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Yes/No future-modal question: 'will' → 'would' (backshift), use 'if', straight order, 'this' → 'that' for distance. Distractor 1 — kept 'would I' inversion. Distractor 3 — 'said me' is wrong (said + to me, OR asked me); also question needs 'asked'. Distractor 4 — 'told that' is for statements.",
+      "subject": "English",
+      "topic": "Direct-indirect speech for questions — mixed tiers",
+      "topic_code": "ENG_DIRECT_INDIRECT_QUESTIONS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-eng-dq-05",
+      "generated_at": "2026-04-26T19:40:00+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00005"
+    },
+    {
+      "stem": "Convert to indirect: 'They said, \"How long has she been waiting here?\"'",
+      "options": [
+        {"option_text": "They asked how long had she been waiting", "is_correct": false},
+        {"option_text": "They asked how long she had been waiting there", "is_correct": true},
+        {"option_text": "They said how long has she been waiting here", "is_correct": false},
+        {"option_text": "They told how long had she been waiting here", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Wh-question with present-perfect-continuous: 'has been' → 'had been' (backshift), drop inversion, 'here' → 'there'. Distractor 1 — kept 'had she' inversion. Distractor 3 — kept original tense + place adverb. Distractor 4 — 'told' for question + kept inversion.",
+      "subject": "English",
+      "topic": "Direct-indirect speech for questions — mixed tiers",
+      "topic_code": "ENG_DIRECT_INDIRECT_QUESTIONS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-eng-dq-06",
+      "generated_at": "2026-04-26T19:40:00+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00006"
+    },
+    {
+      "stem": "Convert to indirect: 'The doctor said, \"Have you eaten breakfast?\"'",
+      "options": [
+        {"option_text": "The doctor said have I eaten breakfast", "is_correct": false},
+        {"option_text": "The doctor asked if I had eaten breakfast", "is_correct": true},
+        {"option_text": "The doctor told me that I had eaten breakfast", "is_correct": false},
+        {"option_text": "The doctor asked whether had I eaten breakfast", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Yes/No present-perfect question: 'have eaten' → 'had eaten' (backshift), 'if' (or whether), drop inversion. Distractor 1 — kept question form + 'said'. Distractor 3 — 'told that' is for statements (loses question sense). Distractor 4 — kept 'had I' inversion.",
+      "subject": "English",
+      "topic": "Direct-indirect speech for questions — mixed tiers",
+      "topic_code": "ENG_DIRECT_INDIRECT_QUESTIONS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-eng-dq-07",
+      "generated_at": "2026-04-26T19:40:00+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00007"
+    }
+  ]
+}

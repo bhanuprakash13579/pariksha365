@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Syllogism III — mixed tiers",
+  "topic_code": "REAS_SYLLOGISM_III_MIXED",
+  "description": "Two-premise syllogisms with possibility / either-or conclusions",
+  "questions": [
+    {
+      "stem": "Statements: 'All birds are animals. All animals are living things.' Conclusion that follows necessarily:",
+      "options": [
+        {"option_text": "Some animals are not birds, definitely true", "is_correct": false},
+        {"option_text": "All birds are living things by transitivity", "is_correct": true},
+        {"option_text": "All living things are animals, fully true", "is_correct": false},
+        {"option_text": "Some living things are not birds either", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Standard categorical transitivity: All A are B; All B are C → All A are C. Birds → animals → living things; therefore all birds are living things. Distractor 1 may be true factually but doesn't FOLLOW from the premises (premises don't say there are non-bird animals). Distractor 3 reverses the implication. Distractor 4 again may be true but not strictly entailed.",
+      "subject": "Reasoning",
+      "topic": "Syllogism III — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sy3-01",
+      "generated_at": "2026-04-26T19:35:00+00:00",
+      "id": "sgk_REAS_SYLLOGISM_III_MIXED_00001"
+    },
+    {
+      "stem": "Statements: 'Some pens are pencils. All pencils are erasers.' Which conclusion follows?",
+      "options": [
+        {"option_text": "All pens are erasers, fully true", "is_correct": false},
+        {"option_text": "Some pens are erasers, by overlap", "is_correct": true},
+        {"option_text": "All erasers are pens, fully true", "is_correct": false},
+        {"option_text": "No pen is an eraser, fully true", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Some pens are pencils → those pen-pencils are also erasers (since all pencils are erasers). So SOME pens are erasers. Cannot conclude ALL pens are erasers. Distractor 1 too strong. Distractor 3 reverses 'all'. Distractor 4 contradicts.",
+      "subject": "Reasoning",
+      "topic": "Syllogism III — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sy3-02",
+      "generated_at": "2026-04-26T19:35:00+00:00",
+      "id": "sgk_REAS_SYLLOGISM_III_MIXED_00002"
+    },
+    {
+      "stem": "Statements: 'No cat is a dog. Some dogs are pets.' Which conclusion follows?",
+      "options": [
+        {"option_text": "All pets are dogs, true universally", "is_correct": false},
+        {"option_text": "Some pets are not cats, true necessarily", "is_correct": true},
+        {"option_text": "No pet is a cat, true universally", "is_correct": false},
+        {"option_text": "All cats are pets, true universally", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Some dogs are pets → those dog-pets exist; no cat is a dog → those dog-pets are not cats. So SOME PETS ARE NOT CATS. Distractor 1 too strong (premises don't say all pets are dogs). Distractor 3 too strong — there COULD be cats that are pets too. Distractor 4 is unrelated and unsupported.",
+      "subject": "Reasoning",
+      "topic": "Syllogism III — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sy3-03",
+      "generated_at": "2026-04-26T19:35:00+00:00",
+      "id": "sgk_REAS_SYLLOGISM_III_MIXED_00003"
+    },
+    {
+      "stem": "Statements: 'All teachers are educated. All educated people read books.' Which conclusion follows?",
+      "options": [
+        {"option_text": "All readers are teachers, true universally", "is_correct": false},
+        {"option_text": "All teachers read books, by transitivity", "is_correct": true},
+        {"option_text": "Some teachers don't read, true sometimes", "is_correct": false},
+        {"option_text": "Only educated people are teachers ever", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Transitivity: teachers → educated → readers. So all teachers read books. Distractor 1 reverses the chain. Distractor 3 contradicts the universal. Distractor 4 mistakes 'all teachers are educated' for the converse 'only educated are teachers' — these are different.",
+      "subject": "Reasoning",
+      "topic": "Syllogism III — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sy3-04",
+      "generated_at": "2026-04-26T19:35:00+00:00",
+      "id": "sgk_REAS_SYLLOGISM_III_MIXED_00004"
+    },
+    {
+      "stem": "Statements: 'Some books are heavy. All heavy things are difficult to lift.' Which conclusion follows?",
+      "options": [
+        {"option_text": "All books are difficult to lift, true", "is_correct": false},
+        {"option_text": "Some books are difficult to lift, true", "is_correct": true},
+        {"option_text": "Heavy things are always books only", "is_correct": false},
+        {"option_text": "Difficult to lift implies it is a book", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Some books are heavy + all heavy things are hard to lift → those heavy books are hard to lift → SOME books are hard to lift. Distractor 1 too strong. Distractor 3 reverses. Distractor 4 also reverses.",
+      "subject": "Reasoning",
+      "topic": "Syllogism III — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sy3-05",
+      "generated_at": "2026-04-26T19:35:00+00:00",
+      "id": "sgk_REAS_SYLLOGISM_III_MIXED_00005"
+    },
+    {
+      "stem": "Statements: 'No flower is a fruit. Some flowers are red.' Which conclusion follows?",
+      "options": [
+        {"option_text": "All red things are flowers necessarily", "is_correct": false},
+        {"option_text": "Some red things are not fruits necessarily", "is_correct": true},
+        {"option_text": "No red thing is a fruit necessarily", "is_correct": false},
+        {"option_text": "All fruits are red things necessarily", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Some flowers are red. No flower is a fruit → those red flowers are not fruits → SOME RED THINGS are not fruits. Distractor 1 too strong (red things include other categories). Distractor 3 too strong — non-flower red things could be fruits. Distractor 4 unsupported.",
+      "subject": "Reasoning",
+      "topic": "Syllogism III — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sy3-06",
+      "generated_at": "2026-04-26T19:35:00+00:00",
+      "id": "sgk_REAS_SYLLOGISM_III_MIXED_00006"
+    },
+    {
+      "stem": "Statements: 'All squares are rectangles. Some rectangles are red.' Which conclusion follows?",
+      "options": [
+        {"option_text": "All squares are red, fully true", "is_correct": false},
+        {"option_text": "Some squares may or may not be red", "is_correct": true},
+        {"option_text": "No red figure is a square, fully true", "is_correct": false},
+        {"option_text": "All red things are squares, fully true", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Some rectangles are red — but those red rectangles might or might not include any squares. The premises don't FORCE any square to be red. Conclusion: cannot conclude either 'some squares are red' as DEFINITE. Often expressed as 'possibility' — squares may or may not be red. Distractor 1 too strong. Distractor 3 unsupported. Distractor 4 reverses.",
+      "subject": "Reasoning",
+      "topic": "Syllogism III — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sy3-07",
+      "generated_at": "2026-04-26T19:35:00+00:00",
+      "id": "sgk_REAS_SYLLOGISM_III_MIXED_00007"
+    }
+  ]
+}

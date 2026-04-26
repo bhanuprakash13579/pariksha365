@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "Time and work III — mixed tiers",
+  "topic_code": "QNT_TIME_WORK_III_MIXED",
+  "description": "Time-and-work problems with efficiency ratios, alternate days, leaving partway",
+  "questions": [
+    {
+      "stem": "A and B together can finish a job in 12 days. A alone takes 20 days. B alone will take how many days?",
+      "options": [
+        {"option_text": "24 days to do it alone", "is_correct": false},
+        {"option_text": "30 days to do it alone", "is_correct": true},
+        {"option_text": "36 days to do it alone", "is_correct": false},
+        {"option_text": "32 days to do it alone", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Combined rate = 1/12 per day. A's rate = 1/20. B's rate = 1/12 − 1/20 = (5 − 3)/60 = 2/60 = 1/30 → B alone takes 30 days. Distractor 24 → if you mistakenly compute 1/12 + 1/20 instead of subtracting. Distractor 36 → 12 × 3.",
+      "subject": "Quant",
+      "topic": "Time and work III — mixed tiers",
+      "topic_code": "QNT_TIME_WORK_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tw3-01",
+      "generated_at": "2026-04-26T20:30:00+00:00",
+      "id": "sgk_QNT_TIME_WORK_III_MIXED_00001"
+    },
+    {
+      "stem": "A is 50% more efficient than B. If B alone can finish a piece of work in 30 days, A alone will finish it in:",
+      "options": [
+        {"option_text": "15 days, exactly half the time", "is_correct": false},
+        {"option_text": "20 days to finish the work alone", "is_correct": true},
+        {"option_text": "25 days to finish the work alone", "is_correct": false},
+        {"option_text": "18 days to finish the work alone", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Efficiency ratio A : B = 1.5 : 1 = 3 : 2. Time ratio is the INVERSE = 2 : 3. If B = 30 days → A = 30 × (2/3) = 20 days. Distractor 15 → if you mistakenly halve. Distractor 25 → arbitrary. Distractor 18 → 30 × 0.6.",
+      "subject": "Quant",
+      "topic": "Time and work III — mixed tiers",
+      "topic_code": "QNT_TIME_WORK_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tw3-02",
+      "generated_at": "2026-04-26T20:30:00+00:00",
+      "id": "sgk_QNT_TIME_WORK_III_MIXED_00002"
+    },
+    {
+      "stem": "A can do a piece of work in 15 days and B in 10 days. They work on alternate days, A starting first. The work will be completed in:",
+      "options": [
+        {"option_text": "11 days to fully finish off", "is_correct": false},
+        {"option_text": "12 days to fully finish off", "is_correct": true},
+        {"option_text": "13 days to fully finish off", "is_correct": false},
+        {"option_text": "10 days to fully finish off", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "LCM(15, 10) = 30 units of work. A = 2 units/day, B = 3 units/day. In 2 days (one A-day + one B-day) they do 5 units. After 5 such pairs (10 days): 25 units done; 5 units left. Day 11 (A's turn): A does 2 → 27 done, 3 left. Day 12 (B's turn): B does 3 → done. Total 12 days.",
+      "subject": "Quant",
+      "topic": "Time and work III — mixed tiers",
+      "topic_code": "QNT_TIME_WORK_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tw3-03",
+      "generated_at": "2026-04-26T20:30:00+00:00",
+      "id": "sgk_QNT_TIME_WORK_III_MIXED_00003"
+    },
+    {
+      "stem": "A and B together can do a job in 8 days. B and C together can do it in 12 days. A and C together can do it in 16 days. How long will all three take working together?",
+      "options": [
+        {"option_text": "Just over 6 days, around 6.4", "is_correct": false},
+        {"option_text": "Around 7.4 days exactly", "is_correct": true},
+        {"option_text": "Just under 6 days, around 5.8", "is_correct": false},
+        {"option_text": "Around 9.6 days exactly", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "(A+B) + (B+C) + (A+C) = 1/8 + 1/12 + 1/16 = 6/48 + 4/48 + 3/48 = 13/48. This equals 2(A+B+C). So (A+B+C) = 13/96 per day → time = 96/13 ≈ 7.38 days. Distractor 6.4 → forgot to halve. Distractor 9.6 → 96/10. Distractor 5.8 → arbitrary.",
+      "subject": "Quant",
+      "topic": "Time and work III — mixed tiers",
+      "topic_code": "QNT_TIME_WORK_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tw3-04",
+      "generated_at": "2026-04-26T20:30:00+00:00",
+      "id": "sgk_QNT_TIME_WORK_III_MIXED_00004"
+    },
+    {
+      "stem": "12 men can complete a work in 18 days. After 6 days, 4 men leave. The remaining men will take how many more days?",
+      "options": [
+        {"option_text": "16 days more to complete", "is_correct": false},
+        {"option_text": "18 days more to complete", "is_correct": true},
+        {"option_text": "12 days more to complete", "is_correct": false},
+        {"option_text": "24 days more to complete", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Total man-days = 12 × 18 = 216. Done in first 6 days = 12 × 6 = 72 → 144 left. After 4 leave, 8 men remain. Days needed = 144 / 8 = 18 days. Distractor 16 → 144/9. Distractor 12 → 144/12 (forgot 4 left). Distractor 24 → 144/6.",
+      "subject": "Quant",
+      "topic": "Time and work III — mixed tiers",
+      "topic_code": "QNT_TIME_WORK_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tw3-05",
+      "generated_at": "2026-04-26T20:30:00+00:00",
+      "id": "sgk_QNT_TIME_WORK_III_MIXED_00005"
+    },
+    {
+      "stem": "A can do a work in 24 days. He works for 4 days, then B alone finishes the remaining work in 15 days. B alone could do the whole work in:",
+      "options": [
+        {"option_text": "20 days alone to do whole job", "is_correct": false},
+        {"option_text": "18 days alone to do whole job", "is_correct": true},
+        {"option_text": "16 days alone to do whole job", "is_correct": false},
+        {"option_text": "22 days alone to do whole job", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "A in 4 days does 4/24 = 1/6 of work. Remaining = 5/6. B does 5/6 in 15 days → B's whole-work time = 15 × (6/5) = 18 days. Distractor 20 → 15 × (4/3). Distractor 16 → arbitrary. Distractor 22 → arbitrary.",
+      "subject": "Quant",
+      "topic": "Time and work III — mixed tiers",
+      "topic_code": "QNT_TIME_WORK_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tw3-06",
+      "generated_at": "2026-04-26T20:30:00+00:00",
+      "id": "sgk_QNT_TIME_WORK_III_MIXED_00006"
+    },
+    {
+      "stem": "A is twice as good as B. Together they finish a work in 18 days. A alone will finish it in:",
+      "options": [
+        {"option_text": "36 days alone, twice as long", "is_correct": false},
+        {"option_text": "27 days alone to finish off", "is_correct": true},
+        {"option_text": "30 days alone to finish off", "is_correct": false},
+        {"option_text": "24 days alone to finish off", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Efficiency A : B = 2 : 1. Combined rate = 1/18 → 3 parts = 1/18 → 1 part = 1/54. A's rate = 2 parts = 2/54 = 1/27 → A alone = 27 days. Quick check: B = 54 days; 1/27 + 1/54 = 2/54 + 1/54 = 3/54 = 1/18. ✓",
+      "subject": "Quant",
+      "topic": "Time and work III — mixed tiers",
+      "topic_code": "QNT_TIME_WORK_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tw3-07",
+      "generated_at": "2026-04-26T20:30:00+00:00",
+      "id": "sgk_QNT_TIME_WORK_III_MIXED_00007"
+    }
+  ]
+}
