@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Machine input-output II — mixed tiers",
+  "topic_code": "REAS_INPUT_OUTPUT_II_MIXED",
+  "description": "Step-wise rearrangement, alphabetical/numerical sorting, two-rule alternation",
+  "questions": [
+    {
+      "stem": "Input: 25 pen 14 cap 36 box 9. Each step shifts the smallest available number to the leftmost position (then the smallest word alphabetically next, alternating). Step I would be:",
+      "options": [
+        {"option_text": "9 25 pen 14 cap 36 box", "is_correct": true},
+        {"option_text": "box 25 pen 14 cap 36 9", "is_correct": false},
+        {"option_text": "25 pen 14 cap 36 box 9 (no change)", "is_correct": false},
+        {"option_text": "9 box 25 pen 14 cap 36", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Rule alternates: Step I picks the SMALLEST NUMBER (9) and moves it to the leftmost position. Numbers 25, 14, 36, 9 → smallest = 9. Move 9 to the left: '9 25 pen 14 cap 36 box'. Step II would pick the smallest WORD alphabetically — 'box', and move it after the already-shifted number block. Each subsequent step alternates.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output II — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-reas-io-01",
+      "generated_at": "2026-04-25T02:50:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_II_MIXED_00001"
+    },
+    {
+      "stem": "Input: 56 23 87 12 49 33. Each step moves the LARGEST number to the rightmost end. After Step II the arrangement is:",
+      "options": [
+        {"option_text": "12 23 49 33 56 87", "is_correct": false},
+        {"option_text": "23 12 49 33 56 87", "is_correct": true},
+        {"option_text": "23 49 33 12 56 87", "is_correct": false},
+        {"option_text": "12 23 33 49 56 87", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Step I: move the largest (87) to the right end. Take it out and shift others left. Input: 56 23 87 12 49 33 → Step I: 56 23 12 49 33 87. Step II: move the next largest (56) to the rightmost-but-before-87 position → 23 12 49 33 56 87. So Step II = 23 12 49 33 56 87. Continuing: Step III moves 49 → 23 12 33 49 56 87; Step IV moves 33 → 23 12 33 49 56 87 (stable, sorted).",
+      "subject": "Reasoning",
+      "topic": "Machine input-output II — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-reas-io-02",
+      "generated_at": "2026-04-25T02:50:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_II_MIXED_00002"
+    },
+    {
+      "stem": "Input: cat dog ant bear elephant. Each step moves the alphabetically FIRST word to the leftmost position (already in the front then the next-first to the left of it). Step I:",
+      "options": [
+        {"option_text": "ant cat dog bear elephant", "is_correct": true},
+        {"option_text": "cat dog ant bear elephant (no change)", "is_correct": false},
+        {"option_text": "elephant cat dog ant bear", "is_correct": false},
+        {"option_text": "ant bear cat dog elephant (fully sorted)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Alphabetical order of given words: ant, bear, cat, dog, elephant. Step I — pick the alphabetically first ('ant') and move it to the leftmost position. Result: ant cat dog bear elephant. Step II would then move 'bear' next: ant bear cat dog elephant (now sorted). Each step processes ONE element.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output II — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-reas-io-03",
+      "generated_at": "2026-04-25T02:50:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_II_MIXED_00003"
+    },
+    {
+      "stem": "Input: 73 ape 41 bird 28 cat 65. The machine shifts the SMALLEST number to the right and alphabetically LAST word to the left, alternating (number first). Step I:",
+      "options": [
+        {"option_text": "73 ape 41 bird cat 65 28", "is_correct": true},
+        {"option_text": "cat 73 ape 41 bird 28 65", "is_correct": false},
+        {"option_text": "28 73 ape 41 bird cat 65", "is_correct": false},
+        {"option_text": "73 ape 41 bird 28 65 cat", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Step I: numbers in input — 73, 41, 28, 65; smallest = 28. Move 28 to the rightmost position. Original: 73 ape 41 bird 28 cat 65. After Step I: 73 ape 41 bird cat 65 28. Step II would then move alphabetically last word ('cat' is currently last alphabetically among 'ape', 'bird', 'cat') to the LEFT end: cat 73 ape 41 bird 65 28.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output II — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-reas-io-04",
+      "generated_at": "2026-04-25T02:50:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_II_MIXED_00004"
+    },
+    {
+      "stem": "If the machine fully sorts numbers in ASCENDING order from left to right, and the input is 88 15 47 22 63 31 — how many STEPS will the machine take to fully sort it (one number moved per step)?",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "5 (n − 1 steps for n = 6 numbers; the last sorts itself)", "is_correct": true},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Machine input-output sorting typically takes (n − 1) steps when one element is fixed per step (selection-sort style). For n = 6 numbers → 5 steps. Verification (largest goes to right each step): Step I: 15 47 22 63 31 88; Step II: 15 47 22 31 63 88; Step III: 15 47 22 31 63 88 (no, 47 still > 22 → 15 22 47 31 63 88); Step IV: 15 22 31 47 63 88; Step V: stable. Generally 5 steps suffice. The (n−1) rule holds for any input of n distinct elements.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output II — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-reas-io-05",
+      "generated_at": "2026-04-25T02:50:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_II_MIXED_00005"
+    },
+    {
+      "stem": "Input: hat 11 jam 4 kite 7 lily 19. Step rule: move the smallest number, then the next smallest, alternately preceded by their adjacent words, to the right end. The FINAL fully-sorted output (numbers ascending at right, words alphabetical at left) is:",
+      "options": [
+        {"option_text": "hat jam kite lily 4 7 11 19", "is_correct": true},
+        {"option_text": "lily kite jam hat 19 11 7 4", "is_correct": false},
+        {"option_text": "11 4 7 19 hat jam kite lily", "is_correct": false},
+        {"option_text": "hat 4 jam 7 kite 11 lily 19", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Final sorted output: words alphabetically (hat, jam, kite, lily) on the left + numbers ascending (4, 7, 11, 19) on the right. Words: h < j < k < l → hat jam kite lily. Numbers: 4 < 7 < 11 < 19. Result: 'hat jam kite lily 4 7 11 19'.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output II — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-reas-io-06",
+      "generated_at": "2026-04-25T02:50:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_II_MIXED_00006"
+    },
+    {
+      "stem": "When solving machine input-output problems, the BEST strategy is to:",
+      "options": [
+        {"option_text": "Memorise specific outputs", "is_correct": false},
+        {"option_text": "Identify the rule pattern by comparing two consecutive steps; the difference reveals the operation", "is_correct": true},
+        {"option_text": "Always assume alphabetical sorting", "is_correct": false},
+        {"option_text": "Ignore the input", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Method: (1) Compare Step (n) with Step (n+1) — only ONE element changes position per step in classical IO problems; (2) Identify what kind of element it is (smallest/largest number, alphabetically first/last word); (3) Identify where it moves (leftmost / rightmost / specific position relative to anchor); (4) Project forward to find the asked step or final output. Common rule patterns: bubble-sort numbers/words; alternating number-word; swap pairs; reverse halves. Speed comes from quickly spotting the rule from one transition.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output II — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-reas-io-07",
+      "generated_at": "2026-04-25T02:50:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_II_MIXED_00007"
+    }
+  ]
+}

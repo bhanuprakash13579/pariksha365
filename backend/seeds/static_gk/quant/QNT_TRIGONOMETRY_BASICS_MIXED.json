@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Trigonometry basics — mixed tiers",
+  "topic_code": "QNT_TRIGONOMETRY_BASICS_MIXED",
+  "description": "sin/cos/tan ratios, standard angles, identities, height & distance, complementary angles",
+  "questions": [
+    {
+      "stem": "The value of sin 30° is:",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "1/2", "is_correct": true},
+        {"option_text": "√3/2", "is_correct": false},
+        {"option_text": "1/√2", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Standard angles table: sin 0°=0, sin 30°=1/2, sin 45°=1/√2, sin 60°=√3/2, sin 90°=1. cos values are mirror: cos 0°=1, cos 30°=√3/2, cos 45°=1/√2, cos 60°=1/2, cos 90°=0. tan = sin/cos: tan 0°=0, tan 30°=1/√3, tan 45°=1, tan 60°=√3, tan 90°=∞ (undefined). Easy mnemonic: sin numerator goes √0/2, √1/2, √2/2, √3/2, √4/2 for 0, 30, 45, 60, 90 — i.e. 0, 1/2, 1/√2, √3/2, 1.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Trigonometry basics — mixed tiers",
+      "topic_code": "QNT_TRIGONOMETRY_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-tg-01",
+      "generated_at": "2026-04-25T02:45:00+00:00",
+      "id": "sgk_QNT_TRIGONOMETRY_BASICS_MIXED_00001"
+    },
+    {
+      "stem": "If sin θ = 3/5, then cos θ equals (assuming θ is acute):",
+      "options": [
+        {"option_text": "5/3", "is_correct": false},
+        {"option_text": "4/5", "is_correct": true},
+        {"option_text": "3/4", "is_correct": false},
+        {"option_text": "5/4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Using sin² θ + cos² θ = 1 → cos² θ = 1 − 9/25 = 16/25 → cos θ = 4/5 (positive since θ is acute). Equivalently, draw a right triangle: opposite = 3, hypotenuse = 5 → adjacent = √(25 − 9) = 4. So cos = adj/hyp = 4/5. tan = 3/4. (3, 4, 5) is the famous Pythagorean triple.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Trigonometry basics — mixed tiers",
+      "topic_code": "QNT_TRIGONOMETRY_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-tg-02",
+      "generated_at": "2026-04-25T02:45:00+00:00",
+      "id": "sgk_QNT_TRIGONOMETRY_BASICS_MIXED_00002"
+    },
+    {
+      "stem": "The value of sin² 60° + cos² 60° is:",
+      "options": [
+        {"option_text": "0", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "1/2", "is_correct": false},
+        {"option_text": "√3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Pythagorean identity: sin² θ + cos² θ = 1 for ANY angle θ. Verify directly: sin 60° = √3/2 → sin² 60° = 3/4; cos 60° = 1/2 → cos² 60° = 1/4. Sum = 3/4 + 1/4 = 1. ✓ Other key identities: 1 + tan² θ = sec² θ; 1 + cot² θ = cosec² θ.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Trigonometry basics — mixed tiers",
+      "topic_code": "QNT_TRIGONOMETRY_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-tg-03",
+      "generated_at": "2026-04-25T02:45:00+00:00",
+      "id": "sgk_QNT_TRIGONOMETRY_BASICS_MIXED_00003"
+    },
+    {
+      "stem": "If tan θ = 1, the value of θ (in the range 0° to 90°) is:",
+      "options": [
+        {"option_text": "30°", "is_correct": false},
+        {"option_text": "45°", "is_correct": true},
+        {"option_text": "60°", "is_correct": false},
+        {"option_text": "90°", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "tan 45° = sin 45°/cos 45° = (1/√2)/(1/√2) = 1. The 45° angle corresponds to the isoceles right triangle (legs equal). tan 30° = 1/√3 ≈ 0.577; tan 60° = √3 ≈ 1.732; tan 90° = undefined.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Trigonometry basics — mixed tiers",
+      "topic_code": "QNT_TRIGONOMETRY_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-tg-04",
+      "generated_at": "2026-04-25T02:45:00+00:00",
+      "id": "sgk_QNT_TRIGONOMETRY_BASICS_MIXED_00004"
+    },
+    {
+      "stem": "A man observes the top of a tower at an angle of elevation of 60° from a distance of 30 m from its base. The height of the tower is:",
+      "options": [
+        {"option_text": "30 m", "is_correct": false},
+        {"option_text": "30√3 m (≈ 51.96 m)", "is_correct": true},
+        {"option_text": "30/√3 m", "is_correct": false},
+        {"option_text": "60 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "tan(angle of elevation) = opposite (height) / adjacent (distance). tan 60° = h/30 → h = 30 × tan 60° = 30 × √3 = 30√3 m ≈ 51.96 m. Common variant: at 30° elevation from 30 m → h = 30 × tan 30° = 30 × (1/√3) = 30/√3 = 10√3 m ≈ 17.3 m.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Trigonometry basics — mixed tiers",
+      "topic_code": "QNT_TRIGONOMETRY_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-tg-05",
+      "generated_at": "2026-04-25T02:45:00+00:00",
+      "id": "sgk_QNT_TRIGONOMETRY_BASICS_MIXED_00005"
+    },
+    {
+      "stem": "If sin (A + B) = 1 and cos (A − B) = √3/2, where A > B > 0 and A, B ≤ 90°, then the values of A and B are:",
+      "options": [
+        {"option_text": "A = 45°, B = 45°", "is_correct": false},
+        {"option_text": "A = 60°, B = 30°", "is_correct": true},
+        {"option_text": "A = 30°, B = 60°", "is_correct": false},
+        {"option_text": "A = 90°, B = 30°", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "sin(A+B)=1 → A+B=90°. cos(A−B)=√3/2 → A−B=30°. Adding: 2A=120° → A=60°. Subtracting: 2B=60° → B=30°. Verify A>B: 60>30 ✓. Verify cos(60−30)=cos 30°=√3/2 ✓. A common SSC favourite — uses two simultaneous trig conditions.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Trigonometry basics — mixed tiers",
+      "topic_code": "QNT_TRIGONOMETRY_BASICS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-tg-06",
+      "generated_at": "2026-04-25T02:45:00+00:00",
+      "id": "sgk_QNT_TRIGONOMETRY_BASICS_MIXED_00006"
+    },
+    {
+      "stem": "The value of sin 60° · cos 30° + cos 60° · sin 30° is:",
+      "options": [
+        {"option_text": "1/2", "is_correct": false},
+        {"option_text": "1 (this is sin(60° + 30°) = sin 90°)", "is_correct": true},
+        {"option_text": "√3/2", "is_correct": false},
+        {"option_text": "0", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Use the sum formula sin(A+B) = sin A · cos B + cos A · sin B. So sin 60·cos 30 + cos 60·sin 30 = sin(60+30) = sin 90° = 1. Direct calculation: (√3/2)(√3/2) + (1/2)(1/2) = 3/4 + 1/4 = 1 ✓. Other useful sum formulas: cos(A+B) = cos A cos B − sin A sin B; tan(A+B) = (tan A + tan B)/(1 − tan A tan B).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Trigonometry basics — mixed tiers",
+      "topic_code": "QNT_TRIGONOMETRY_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-tg-07",
+      "generated_at": "2026-04-25T02:45:00+00:00",
+      "id": "sgk_QNT_TRIGONOMETRY_BASICS_MIXED_00007"
+    }
+  ]
+}
