@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Semiconductors basic — mixed tiers",
+  "topic_code": "PHY_SEMICONDUCTORS_BASIC_MIXED",
+  "description": "Conductors / insulators / semiconductors, doping, p-n junction, diodes",
+  "questions": [
+    {
+      "stem": "SEMICONDUCTORS like silicon have:",
+      "options": [
+        {"option_text": "Conductivity higher than copper metal", "is_correct": false},
+        {"option_text": "Conductivity between conductors and insulators", "is_correct": true},
+        {"option_text": "Conductivity equal to glass insulator", "is_correct": false},
+        {"option_text": "Conductivity decreases with increasing temperature", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "SEMICONDUCTOR — material with conductivity BETWEEN good conductors (Cu, Ag) and good insulators (glass, rubber). Examples: Silicon (Si), Germanium (Ge), GaAs. Energy band gap small (~1.1 eV for Si). Conductivity INCREASES with temperature (opposite to metals — hence 'negative temperature coefficient of resistance'). Adding impurities (DOPING) can drastically change conductivity. Foundation of electronics — diodes, transistors, ICs, solar cells, LEDs all built from semiconductors.",
+      "subject": "Physics",
+      "topic": "Semiconductors basic — mixed tiers",
+      "topic_code": "PHY_SEMICONDUCTORS_BASIC_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-sem-01",
+      "generated_at": "2026-04-26T22:50:00+00:00",
+      "id": "sgk_PHY_SEMICONDUCTORS_BASIC_MIXED_00001"
+    },
+    {
+      "stem": "Adding small amounts of impurities to a pure semiconductor (DOPING) is done to:",
+      "options": [
+        {"option_text": "Decrease its conductivity drastically", "is_correct": false},
+        {"option_text": "Greatly increase its conductivity", "is_correct": true},
+        {"option_text": "Keep its conductivity unchanged", "is_correct": false},
+        {"option_text": "Convert it into an insulator type", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Pure semiconductor (intrinsic Si) — low conductivity. DOPING (~1 part per million) → boosts conductivity by ORDERS of magnitude. Two types: N-TYPE — dope with PENTAVALENT atom (P, As, Sb): 5 valence electrons; 4 bond, 1 free → extra ELECTRONS; e is majority carrier. P-TYPE — dope with TRIVALENT atom (B, Al, Ga, In): 3 valence electrons → leaves a 'HOLE' (missing electron); hole is majority carrier. Combining n + p → P-N JUNCTION = the basic DIODE.",
+      "subject": "Physics",
+      "topic": "Semiconductors basic — mixed tiers",
+      "topic_code": "PHY_SEMICONDUCTORS_BASIC_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-sem-02",
+      "generated_at": "2026-04-26T22:50:00+00:00",
+      "id": "sgk_PHY_SEMICONDUCTORS_BASIC_MIXED_00002"
+    },
+    {
+      "stem": "A P-N JUNCTION DIODE allows current to flow:",
+      "options": [
+        {"option_text": "Only when reverse-biased always at all", "is_correct": false},
+        {"option_text": "Mainly when forward-biased (p+, n−)", "is_correct": true},
+        {"option_text": "Equally well in both directions of bias", "is_correct": false},
+        {"option_text": "Only when there is no applied voltage", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "DIODE — one-way valve for current. FORWARD BIAS: p-side connected to + terminal, n-side to − terminal → low resistance, current flows easily. REVERSE BIAS: p to −, n to + → very high resistance, almost no current. (At very high reverse voltage, breakdown occurs — Zener / avalanche.) Used as RECTIFIER (AC → DC). Half-wave (1 diode) + full-wave (4 diodes in bridge) rectifiers. Diode symbol: triangle pointing toward bar.",
+      "subject": "Physics",
+      "topic": "Semiconductors basic — mixed tiers",
+      "topic_code": "PHY_SEMICONDUCTORS_BASIC_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-sem-03",
+      "generated_at": "2026-04-26T22:50:00+00:00",
+      "id": "sgk_PHY_SEMICONDUCTORS_BASIC_MIXED_00003"
+    },
+    {
+      "stem": "An LED (Light-Emitting Diode) emits light when:",
+      "options": [
+        {"option_text": "Heated above its critical temperature", "is_correct": false},
+        {"option_text": "Forward-biased; electrons recombine with holes", "is_correct": true},
+        {"option_text": "Reverse-biased till the breakdown level", "is_correct": false},
+        {"option_text": "Lit by sunlight on its outer surface", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "LED — special diode. When FORWARD-BIASED, electrons + holes recombine at the junction; energy released as PHOTONS (light). Colour depends on semiconductor's BAND GAP: red = GaAsP, green = GaP, blue = InGaN, white = blue LED + yellow phosphor (or 3-LED mix). Inventors of efficient blue LED — Akasaki, Amano, Nakamura (Nobel 2014). Why LED is replacing incandescent: ~10× more efficient (no heat loss), longer life, lower cost. Indian UJALA scheme (2015) sold ~370 million LEDs at low price, big energy saver.",
+      "subject": "Physics",
+      "topic": "Semiconductors basic — mixed tiers",
+      "topic_code": "PHY_SEMICONDUCTORS_BASIC_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-sem-04",
+      "generated_at": "2026-04-26T22:50:00+00:00",
+      "id": "sgk_PHY_SEMICONDUCTORS_BASIC_MIXED_00004"
+    },
+    {
+      "stem": "The TRANSISTOR was invented in 1947 at:",
+      "options": [
+        {"option_text": "Stanford University in California", "is_correct": false},
+        {"option_text": "Bell Labs (Bardeen, Brattain, Shockley)", "is_correct": true},
+        {"option_text": "MIT in Cambridge, Massachusetts", "is_correct": false},
+        {"option_text": "Cambridge University in England UK", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "TRANSISTOR — invented at BELL LABS (USA), Dec 1947, by John BARDEEN, Walter BRATTAIN, William SHOCKLEY. Nobel Prize 1956. Replaced vacuum tubes — smaller, cheaper, more reliable, much less power. Started the electronics revolution. Transistor types: BJT (Bipolar Junction — n-p-n or p-n-p), FET (Field-Effect), MOSFET (Metal-Oxide-Semiconductor FET — used in modern ICs). Modern CPU has BILLIONS of MOSFETs (e.g., Apple M-series chip: ~50-100 billion transistors). MOORE'S LAW — transistor count doubles every ~2 years (slowing now).",
+      "subject": "Physics",
+      "topic": "Semiconductors basic — mixed tiers",
+      "topic_code": "PHY_SEMICONDUCTORS_BASIC_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-sem-05",
+      "generated_at": "2026-04-26T22:50:00+00:00",
+      "id": "sgk_PHY_SEMICONDUCTORS_BASIC_MIXED_00005"
+    },
+    {
+      "stem": "A SOLAR CELL converts:",
+      "options": [
+        {"option_text": "Heat energy into electrical energy", "is_correct": false},
+        {"option_text": "Light energy into electrical energy", "is_correct": true},
+        {"option_text": "Mechanical work into electrical energy", "is_correct": false},
+        {"option_text": "Chemical energy into electricity from cells", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "SOLAR CELL (photovoltaic cell, PV) — converts LIGHT directly into electricity using PHOTOELECTRIC effect. Made of doped silicon (p-n junction). Sunlight photons free electrons; junction's electric field separates them → current flows. Efficiency: typical Si cells ~15-22%. Theoretical max for single junction ~33% (Shockley-Queisser limit). Solar Mission of India: 100 GW solar by 2022 (target met partly), now aiming 500 GW by 2030. Bhadla Solar Park (Rajasthan) — among world's largest. Distractor 1 = thermoelectric. Distractor 4 = battery.",
+      "subject": "Physics",
+      "topic": "Semiconductors basic — mixed tiers",
+      "topic_code": "PHY_SEMICONDUCTORS_BASIC_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-sem-06",
+      "generated_at": "2026-04-26T22:50:00+00:00",
+      "id": "sgk_PHY_SEMICONDUCTORS_BASIC_MIXED_00006"
+    },
+    {
+      "stem": "Common P-type DOPANT for silicon (adding 'holes' to it) is:",
+      "options": [
+        {"option_text": "Phosphorus, the pentavalent element", "is_correct": false},
+        {"option_text": "Boron, the trivalent element", "is_correct": true},
+        {"option_text": "Carbon, also tetravalent like Si", "is_correct": false},
+        {"option_text": "Oxygen, with 6 outer electrons", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "P-TYPE doping: add TRIVALENT atoms (3 valence electrons) like BORON (B), Aluminium (Al), Gallium (Ga), Indium (In). Creates 'HOLES' — missing electrons that act like positive charge carriers. N-TYPE doping: add PENTAVALENT atoms (5 valence electrons) like PHOSPHORUS (P), Arsenic (As), Antimony (Sb). Provides extra free electrons (n-type carriers). Distractor 1 (P) = N-type. Distractor 3 (C) = same valence as Si, doesn't make donor or acceptor. Distractor 4 (O) = doesn't dope semiconductors usefully.",
+      "subject": "Physics",
+      "topic": "Semiconductors basic — mixed tiers",
+      "topic_code": "PHY_SEMICONDUCTORS_BASIC_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-sem-07",
+      "generated_at": "2026-04-26T22:50:00+00:00",
+      "id": "sgk_PHY_SEMICONDUCTORS_BASIC_MIXED_00007"
+    }
+  ]
+}

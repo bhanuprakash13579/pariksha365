@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "Number series III — mixed tiers",
+  "topic_code": "QNT_NUMBER_SERIES_III_MIXED",
+  "description": "Find next term: arithmetic, geometric, square/cube, mixed-rule",
+  "questions": [
+    {
+      "stem": "What number replaces the question mark? 3, 6, 11, 18, 27, ?",
+      "options": [
+        {"option_text": "36 as the next term", "is_correct": false},
+        {"option_text": "38 as the next term", "is_correct": true},
+        {"option_text": "40 as the next term", "is_correct": false},
+        {"option_text": "42 as the next term", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Differences: 6−3=3, 11−6=5, 18−11=7, 27−18=9, next diff=11. So 27 + 11 = 38. (Differences are odd numbers 3, 5, 7, 9, 11... = pattern of consecutive odds.) Distractor 36 = +9. Distractor 40 = +13. Distractor 42 = arbitrary.",
+      "subject": "Quant",
+      "topic": "Number series III — mixed tiers",
+      "topic_code": "QNT_NUMBER_SERIES_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ns3-01",
+      "generated_at": "2026-04-26T22:30:00+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_III_MIXED_00001"
+    },
+    {
+      "stem": "Find the missing term: 2, 6, 12, 20, 30, ?",
+      "options": [
+        {"option_text": "40 as the next term value", "is_correct": false},
+        {"option_text": "42 as the next term value", "is_correct": true},
+        {"option_text": "44 as the next term value", "is_correct": false},
+        {"option_text": "36 as the next term value", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Pattern: n(n+1) for n = 1, 2, 3, ... → 1×2 = 2, 2×3 = 6, 3×4 = 12, 4×5 = 20, 5×6 = 30, 6×7 = 42. Or differences: 4, 6, 8, 10, next 12 → 30 + 12 = 42. Distractor 40 = +10. Distractor 44 = +14. Distractor 36 = +6 mistakenly.",
+      "subject": "Quant",
+      "topic": "Number series III — mixed tiers",
+      "topic_code": "QNT_NUMBER_SERIES_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ns3-02",
+      "generated_at": "2026-04-26T22:30:00+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_III_MIXED_00002"
+    },
+    {
+      "stem": "Find the next term: 1, 4, 9, 16, 25, ?",
+      "options": [
+        {"option_text": "30 as the next square term", "is_correct": false},
+        {"option_text": "36 as the next square term", "is_correct": true},
+        {"option_text": "32 as the next square term", "is_correct": false},
+        {"option_text": "40 as the next square term", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Squares: 1², 2², 3², 4², 5² = 1, 4, 9, 16, 25. Next = 6² = 36. Distractor 30 = arbitrary. Distractor 32 = 25 + 7. Distractor 40 = arbitrary.",
+      "subject": "Quant",
+      "topic": "Number series III — mixed tiers",
+      "topic_code": "QNT_NUMBER_SERIES_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ns3-03",
+      "generated_at": "2026-04-26T22:30:00+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_III_MIXED_00003"
+    },
+    {
+      "stem": "Find the missing term: 5, 11, 23, 47, 95, ?",
+      "options": [
+        {"option_text": "183 as the next term value", "is_correct": false},
+        {"option_text": "191 as the next term value", "is_correct": true},
+        {"option_text": "195 as the next term value", "is_correct": false},
+        {"option_text": "189 as the next term value", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Pattern: each term = (previous × 2) + 1. 5×2+1 = 11; 11×2+1 = 23; 23×2+1 = 47; 47×2+1 = 95; 95×2+1 = 191. Distractor 183 = ×2 only (95×2 - 7). Distractor 195 = ×2+5. Distractor 189 = ×2−1.",
+      "subject": "Quant",
+      "topic": "Number series III — mixed tiers",
+      "topic_code": "QNT_NUMBER_SERIES_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ns3-04",
+      "generated_at": "2026-04-26T22:30:00+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_III_MIXED_00004"
+    },
+    {
+      "stem": "Find the next term: 1, 8, 27, 64, 125, ?",
+      "options": [
+        {"option_text": "196 as the next cube term", "is_correct": false},
+        {"option_text": "216 as the next cube term", "is_correct": true},
+        {"option_text": "256 as the next cube term", "is_correct": false},
+        {"option_text": "200 as the next cube term", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Cubes: 1³, 2³, 3³, 4³, 5³ = 1, 8, 27, 64, 125. Next = 6³ = 216. Distractor 196 = 14². Distractor 256 = 4⁴. Distractor 200 = arbitrary.",
+      "subject": "Quant",
+      "topic": "Number series III — mixed tiers",
+      "topic_code": "QNT_NUMBER_SERIES_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ns3-05",
+      "generated_at": "2026-04-26T22:30:00+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_III_MIXED_00005"
+    },
+    {
+      "stem": "Find the next term: 3, 7, 15, 31, 63, ?",
+      "options": [
+        {"option_text": "121 as the next term value", "is_correct": false},
+        {"option_text": "127 as the next term value", "is_correct": true},
+        {"option_text": "129 as the next term value", "is_correct": false},
+        {"option_text": "125 as the next term value", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Pattern: each term = (previous × 2) + 1. 3×2+1=7; 7×2+1=15; 15×2+1=31; 31×2+1=63; 63×2+1=127. Alternatively: 2ⁿ⁺¹ − 1 form (= 4-1, 8-1, 16-1, 32-1, 64-1, 128-1).",
+      "subject": "Quant",
+      "topic": "Number series III — mixed tiers",
+      "topic_code": "QNT_NUMBER_SERIES_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ns3-06",
+      "generated_at": "2026-04-26T22:30:00+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_III_MIXED_00006"
+    },
+    {
+      "stem": "Find the missing term: 7, 13, 25, 49, 97, ?",
+      "options": [
+        {"option_text": "189 as the next term value", "is_correct": false},
+        {"option_text": "193 as the next term value", "is_correct": true},
+        {"option_text": "199 as the next term value", "is_correct": false},
+        {"option_text": "187 as the next term value", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Pattern: each term = (previous × 2) − 1. 7×2−1 = 13; 13×2−1 = 25; 25×2−1 = 49; 49×2−1 = 97; 97×2−1 = 193. Distractor 189 = ×2−5. Distractor 199 = ×2+5. Distractor 187 = ×2−7.",
+      "subject": "Quant",
+      "topic": "Number series III — mixed tiers",
+      "topic_code": "QNT_NUMBER_SERIES_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ns3-07",
+      "generated_at": "2026-04-26T22:30:00+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_III_MIXED_00007"
+    }
+  ]
+}
