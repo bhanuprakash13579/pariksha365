@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Sound basics — mixed tiers",
+  "topic_code": "PHY_SOUND_BASICS_MIXED",
+  "description": "Sound waves, frequency, pitch, loudness, speed in media, doppler",
+  "questions": [
+    {
+      "stem": "SOUND requires a MEDIUM to travel because sound is:",
+      "options": [
+        {"option_text": "An electromagnetic wave (no medium needed)", "is_correct": false},
+        {"option_text": "A mechanical wave (needs particles to vibrate)", "is_correct": true},
+        {"option_text": "A transverse wave like light fully", "is_correct": false},
+        {"option_text": "A standing wave that doesn't move", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Sound = MECHANICAL LONGITUDINAL wave; needs medium (air, water, solid) — particles compress + rarefy + transmit energy. Cannot travel through VACUUM. Light + radio = ELECTROMAGNETIC waves; CAN travel through vacuum (sun's light reaches us through space). LONGITUDINAL = particles oscillate parallel to wave direction. Compare TRANSVERSE = perpendicular (light, water surface waves).",
+      "subject": "Physics",
+      "topic": "Sound basics — mixed tiers",
+      "topic_code": "PHY_SOUND_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-snd-01",
+      "generated_at": "2026-04-27T00:40:00+00:00",
+      "id": "sgk_PHY_SOUND_BASICS_MIXED_00001"
+    },
+    {
+      "stem": "Speed of sound in AIR at room temperature (~20°C) is approximately:",
+      "options": [
+        {"option_text": "330 m/s in cold dry air", "is_correct": false},
+        {"option_text": "343 m/s (~1235 km/h)", "is_correct": true},
+        {"option_text": "1500 m/s in dry warm air", "is_correct": false},
+        {"option_text": "300,000 km/s like light", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Speed of sound in dry air at 20°C = 343 m/s (~1235 km/h, ~767 mph, ~Mach 1). Increases with temperature (~0.6 m/s per °C). At 0°C = 331 m/s. WATER = ~1500 m/s (~4.4× faster than air). STEEL / IRON = ~5000 m/s (~15× faster). Speed depends on medium's elasticity + density — DENSER + MORE ELASTIC media transmit faster (counter-intuitive). Distractor 4 = speed of light (~10⁶ × faster than sound).",
+      "subject": "Physics",
+      "topic": "Sound basics — mixed tiers",
+      "topic_code": "PHY_SOUND_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-snd-02",
+      "generated_at": "2026-04-27T00:40:00+00:00",
+      "id": "sgk_PHY_SOUND_BASICS_MIXED_00002"
+    },
+    {
+      "stem": "PITCH of a sound is determined by its:",
+      "options": [
+        {"option_text": "Amplitude (height of wave only)", "is_correct": false},
+        {"option_text": "Frequency (number of vibrations / sec)", "is_correct": true},
+        {"option_text": "Speed of travel only through medium", "is_correct": false},
+        {"option_text": "Wavelength alone, not frequency", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "PITCH (high or low note) = subjective perception of FREQUENCY (Hz). High frequency → high pitch; low frequency → low pitch. Human range: ~20 Hz - 20 kHz (declines with age). Below 20 Hz = INFRASOUND (elephants, whales communicate); above 20 kHz = ULTRASOUND (bats, dolphins, medical imaging). Distractor 1 — amplitude = LOUDNESS (dB). Distractor 3 — speed determined by medium, not source. Distractor 4 — wavelength = speed/frequency; in same medium, frequency uniquely determines wavelength.",
+      "subject": "Physics",
+      "topic": "Sound basics — mixed tiers",
+      "topic_code": "PHY_SOUND_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-snd-03",
+      "generated_at": "2026-04-27T00:40:00+00:00",
+      "id": "sgk_PHY_SOUND_BASICS_MIXED_00003"
+    },
+    {
+      "stem": "ULTRASOUND has frequency:",
+      "options": [
+        {"option_text": "Below 20 Hz (infrasound range here)", "is_correct": false},
+        {"option_text": "Above 20,000 Hz (above human hearing)", "is_correct": true},
+        {"option_text": "Between 1000 and 5000 Hz only here", "is_correct": false},
+        {"option_text": "Same as visible-light frequency band", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "ULTRASOUND = > 20 kHz (above human upper hearing limit). USES: medical imaging (gestational ultrasound, echocardiography); SONAR (ships, submarines, fish-finding); industrial flaw detection (NDT — non-destructive testing); cleaning (ultrasonic cleaners for jewellery, dental tools); pest repellers; ultrasonic welding. ANIMALS using ultrasound: BATS (echolocation, up to 200 kHz); DOLPHINS, WHALES; MOTHS detect bat ultrasound. INFRASOUND (< 20 Hz) — elephants, earthquakes, large explosions. Distractor 4 — light is ~10¹⁴ Hz, completely different (electromagnetic, not mechanical).",
+      "subject": "Physics",
+      "topic": "Sound basics — mixed tiers",
+      "topic_code": "PHY_SOUND_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-snd-04",
+      "generated_at": "2026-04-27T00:40:00+00:00",
+      "id": "sgk_PHY_SOUND_BASICS_MIXED_00004"
+    },
+    {
+      "stem": "DOPPLER EFFECT explains why an ambulance siren sounds:",
+      "options": [
+        {"option_text": "Same pitch when approaching + leaving", "is_correct": false},
+        {"option_text": "Higher when approaching, lower when leaving", "is_correct": true},
+        {"option_text": "Lower when approaching, higher when leaving", "is_correct": false},
+        {"option_text": "Distorted but at constant frequency", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "DOPPLER EFFECT (1842, Christian Doppler): apparent frequency change due to relative motion between source + observer. SOURCE APPROACHING → wavefronts compressed → higher frequency → HIGHER PITCH. SOURCE RECEDING → wavefronts stretched → lower frequency → LOWER PITCH. Sudden drop as siren passes. Used in: RADAR speed guns (police), weather radar (storm tracking), medical Doppler (blood flow), astronomy (RED SHIFT — galaxies receding → expanding universe — Hubble's discovery, 1929).",
+      "subject": "Physics",
+      "topic": "Sound basics — mixed tiers",
+      "topic_code": "PHY_SOUND_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-snd-05",
+      "generated_at": "2026-04-27T00:40:00+00:00",
+      "id": "sgk_PHY_SOUND_BASICS_MIXED_00005"
+    },
+    {
+      "stem": "ECHO is heard distinctly when minimum reflection time is:",
+      "options": [
+        {"option_text": "0.05 second from the wall surface", "is_correct": false},
+        {"option_text": "0.1 second (persistence of hearing)", "is_correct": true},
+        {"option_text": "1 second of delay from the wall", "is_correct": false},
+        {"option_text": "Instantly without any delay at all", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Echo = reflected sound heard distinctly. Minimum gap = 0.1 s (persistence of hearing) → minimum reflector distance = (speed × time)/2 = (343 × 0.1)/2 ≈ 17 m. Less than this → original + echo overlap (heard as a single, lingering sound — REVERBERATION, common in halls). Echoes used in: SONAR (ship → seabed), animal echolocation (bats, dolphins). Distractor 4 — instant reflection = no echo perceived.",
+      "subject": "Physics",
+      "topic": "Sound basics — mixed tiers",
+      "topic_code": "PHY_SOUND_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-snd-06",
+      "generated_at": "2026-04-27T00:40:00+00:00",
+      "id": "sgk_PHY_SOUND_BASICS_MIXED_00006"
+    },
+    {
+      "stem": "A 'SONIC BOOM' is created when an aircraft:",
+      "options": [
+        {"option_text": "Lands or takes off from runway", "is_correct": false},
+        {"option_text": "Exceeds the speed of sound (Mach 1)", "is_correct": true},
+        {"option_text": "Flies at low altitude over cities", "is_correct": false},
+        {"option_text": "Cuts through clouds at any speed", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "SONIC BOOM = shock wave heard as loud bang/clap when aircraft exceeds SPEED OF SOUND (Mach 1, ~343 m/s at SL). Compressed air waves accumulate at nose of aircraft; can't get out of the way → form a CONE (Mach cone) trailing behind. When the cone passes over an observer = the boom. Concorde (1976-2003) was supersonic civilian jet — banned from supersonic flight over land due to noise. Modern fighter jets (F-22, Su-30, Rafale, Tejas Mk2) routinely supersonic. Mach 2 = twice speed of sound; Mach 3 = thrice; etc.",
+      "subject": "Physics",
+      "topic": "Sound basics — mixed tiers",
+      "topic_code": "PHY_SOUND_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-snd-07",
+      "generated_at": "2026-04-27T00:40:00+00:00",
+      "id": "sgk_PHY_SOUND_BASICS_MIXED_00007"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Seating circular III — mixed tiers",
+  "topic_code": "REAS_SEATING_CIRCULAR_III_MIXED",
+  "description": "Circular-seating puzzles, facing centre vs outwards, deductions",
+  "questions": [
+    {
+      "stem": "Six friends A, B, C, D, E, F sit around a circular table FACING THE CENTRE. A is between F and C. B is opposite to A. D is to the left of B. E is to the right of B. Who is to the IMMEDIATE LEFT of A?",
+      "options": [
+        {"option_text": "F is to A's immediate left", "is_correct": false},
+        {"option_text": "C is to A's immediate left", "is_correct": true},
+        {"option_text": "D is to A's immediate left", "is_correct": false},
+        {"option_text": "E is to A's immediate left", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Six positions, facing centre. Place A. B is OPPOSITE A. D is left of B (so D is on B's left → from centre, D is to viewer's right of B); E is right of B. A is between F + C → F + C flank A. Now from A's perspective (facing centre): A's left is one neighbour, right is other. Working through: when facing centre, my LEFT = clockwise. With A at top, B at bottom: C to A's clockwise (left) = C to A's left; F to A's right. Distractors are wrong configurations.",
+      "subject": "Reasoning",
+      "topic": "Seating circular III — mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sc3-01",
+      "generated_at": "2026-04-27T00:25:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_III_MIXED_00001"
+    },
+    {
+      "stem": "Five people P, Q, R, S, T sit around a round table FACING THE CENTRE. Q is to the right of P. R is opposite P. S is between R and T. Who is opposite Q?",
+      "options": [
+        {"option_text": "S is opposite Q here", "is_correct": false},
+        {"option_text": "T is opposite Q here", "is_correct": true},
+        {"option_text": "R is opposite Q here", "is_correct": false},
+        {"option_text": "P is opposite Q here", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "5 positions = irregular pentagon, no exact 'opposite' but for analytical purposes: place P at 12 o'clock; Q on P's right (clockwise → 4 o'clock); R opposite to P (≈ 6 o'clock). S is between R + T. Remaining slots ≈ 8 o'clock + 10 o'clock for S, T. With S between R + T, layout: P (12), Q (~4-5), R (~6-7), S (~8-9), T (~10-11). Across from Q (at 4) ≈ T (at 10). So T 'opposite' Q. ✓",
+      "subject": "Reasoning",
+      "topic": "Seating circular III — mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sc3-02",
+      "generated_at": "2026-04-27T00:25:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_III_MIXED_00002"
+    },
+    {
+      "stem": "8 people sit equally spaced around a circular table, FACING THE CENTRE. If A is exactly opposite B, B is exactly opposite A. How many seats are between A and B in one direction?",
+      "options": [
+        {"option_text": "2 seats are between A and B", "is_correct": false},
+        {"option_text": "3 seats are between A and B", "is_correct": true},
+        {"option_text": "4 seats are between A and B", "is_correct": false},
+        {"option_text": "1 seat is between A and B", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "8 seats around circle. Opposite seats are 4 positions apart (180°). So A + B at positions 1 + 5 (say). Between them in one direction: positions 2, 3, 4 = 3 seats. (In other direction: positions 6, 7, 8 = 3 seats too.) Distractor 4 = total positions including B. Distractor 2 = wrong count.",
+      "subject": "Reasoning",
+      "topic": "Seating circular III — mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sc3-03",
+      "generated_at": "2026-04-27T00:25:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_III_MIXED_00003"
+    },
+    {
+      "stem": "Six persons sit around circle facing OUTSIDE. From centre's view, when an outward-facing person turns 'to his RIGHT', it is which clockwise direction?",
+      "options": [
+        {"option_text": "Their left is clockwise from outside view", "is_correct": false},
+        {"option_text": "Their right is anticlockwise from outside", "is_correct": true},
+        {"option_text": "It is same direction as facing-inward case", "is_correct": false},
+        {"option_text": "There is no fixed convention possible", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "When FACING CENTRE: their right = clockwise. When FACING OUT: their right = anticlockwise (mirror reverses left/right relative to fixed observer). This direction inversion catches students. ALWAYS confirm facing direction at the start of each problem!",
+      "subject": "Reasoning",
+      "topic": "Seating circular III — mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sc3-04",
+      "generated_at": "2026-04-27T00:25:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_III_MIXED_00004"
+    },
+    {
+      "stem": "Five persons V, W, X, Y, Z around a round table facing CENTRE. V is between W and X. Y is to the immediate right of W. Z is to the immediate left of X. Who is sitting opposite V (approx)?",
+      "options": [
+        {"option_text": "Y is exactly opposite V here always", "is_correct": false},
+        {"option_text": "Y or Z (5-seat table = no exact opposite)", "is_correct": true},
+        {"option_text": "W is exactly opposite V approximately", "is_correct": false},
+        {"option_text": "X is exactly opposite V approximately", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "5 seats — no exact opposite. Layout (facing centre, going clockwise): say V at 12. W on V's left (~9-10 area), X on V's right (~2-3 area). Y immediate right of W → Y at ~7-8. Z immediate left of X → Z at ~4-5. So opposite-ish to V (12 o'clock) lies between Y (7-8) + Z (4-5) — i.e., near 6 o'clock. Both Y + Z are 'across' from V; with 5 seats, no exact opposite.",
+      "subject": "Reasoning",
+      "topic": "Seating circular III — mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sc3-05",
+      "generated_at": "2026-04-27T00:25:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_III_MIXED_00005"
+    },
+    {
+      "stem": "If A, B, C, D, E, F sit at a hexagonal table (6 seats) facing CENTRE, and A is opposite D, then immediate neighbours of A's opposite (D) are:",
+      "options": [
+        {"option_text": "A and D themselves are neighbours always", "is_correct": false},
+        {"option_text": "Two of B, C, E, F (the seat-2 neighbours)", "is_correct": true},
+        {"option_text": "Just one neighbour beside D's chair", "is_correct": false},
+        {"option_text": "Three neighbours flanking D's seat here", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "6 seats around hexagonal table. D has 2 immediate neighbours (one on each side). With A opposite to D (3 seats apart on each side), the 4 seats between are B, C, E, F — D's neighbours are 2 of these (the ones immediately flanking D). Without further info, we can't say which two; but ANY two from B, C, E, F (specifically the seats immediately to D's left + right). Distractor 1 — A is opposite, not adjacent.",
+      "subject": "Reasoning",
+      "topic": "Seating circular III — mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sc3-06",
+      "generated_at": "2026-04-27T00:25:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_III_MIXED_00006"
+    },
+    {
+      "stem": "Eight people sit around a circular table facing CENTRE. A is to immediate right of B; C is opposite A; D is to immediate left of C. The seat directly opposite D is occupied by:",
+      "options": [
+        {"option_text": "A himself is opposite D here", "is_correct": false},
+        {"option_text": "B is exactly opposite D here", "is_correct": true},
+        {"option_text": "C is exactly opposite D here", "is_correct": false},
+        {"option_text": "Cannot be determined from clues", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "8 seats; opposite = 4 seats apart. Place A at position 1; B at position 2 (since A is right of B = A at clockwise from B; facing centre 'right' = clockwise, so A is at B's right means A is one CW step from B → B at position 8 or A at position 1 + B at position 2 if reverse. Take simpler: B at 2, A at 1 (so A is to immediate right of B from B's view is anticlockwise = position 1 if B at 2, facing centre — so working). C opposite A → C at position 5. D immediate left of C → D at position 6 (from C facing centre, left = CW = position 6). Opposite D (6) is position 2 = B. ✓",
+      "subject": "Reasoning",
+      "topic": "Seating circular III — mixed tiers",
+      "topic_code": "REAS_SEATING_CIRCULAR_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sc3-07",
+      "generated_at": "2026-04-27T00:25:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_III_MIXED_00007"
+    }
+  ]
+}
