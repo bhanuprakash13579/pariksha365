@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Logical deduction — mixed tiers",
+  "topic_code": "REAS_LOGICAL_DEDUCTION_MIXED",
+  "description": "Statement-conclusion, syllogism-style implications, only conclusion which follows",
+  "questions": [
+    {
+      "stem": "Statement: 'All roses are flowers. All flowers fade.' Which conclusion necessarily follows?",
+      "options": [
+        {"option_text": "Some flowers are not roses, regardless of fading", "is_correct": false},
+        {"option_text": "All roses fade in due course of time", "is_correct": true},
+        {"option_text": "Only roses fade, not other flowers", "is_correct": false},
+        {"option_text": "Flowers do not fade if they are roses", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Transitivity of universal categorical statements: All A are B; All B are C → All A are C. So all roses are flowers and all flowers fade → all roses fade. Distractor 1 may be true in fact but doesn't FOLLOW from the given statements (statements don't say there exist non-rose flowers). Distractor 3 reverses the universal. Distractor 4 contradicts the conclusion.",
+      "subject": "Reasoning",
+      "topic": "Logical deduction — mixed tiers",
+      "topic_code": "REAS_LOGICAL_DEDUCTION_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-ld-01",
+      "generated_at": "2026-04-26T14:35:00+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_MIXED_00001"
+    },
+    {
+      "stem": "Statement: 'Some doctors are surgeons. All surgeons attend conferences.' Which conclusion necessarily follows?",
+      "options": [
+        {"option_text": "All doctors attend conferences regularly", "is_correct": false},
+        {"option_text": "Some doctors attend conferences regularly", "is_correct": true},
+        {"option_text": "All conference attendees are surgeons", "is_correct": false},
+        {"option_text": "No doctors attend any conferences ever", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Some doctors are surgeons; all surgeons attend → those doctor-surgeons attend → SOME doctors attend conferences. Cannot conclude ALL doctors attend (we only know SOME are surgeons). Distractor 1 is too strong. Distractor 3 reverses (all surgeons attend ≠ all attendees are surgeons). Distractor 4 contradicts.",
+      "subject": "Reasoning",
+      "topic": "Logical deduction — mixed tiers",
+      "topic_code": "REAS_LOGICAL_DEDUCTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-ld-02",
+      "generated_at": "2026-04-26T14:35:00+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_MIXED_00002"
+    },
+    {
+      "stem": "Statement: 'No politician is honest. Some lawyers are politicians.' Which conclusion necessarily follows?",
+      "options": [
+        {"option_text": "All lawyers are dishonest because of their profession", "is_correct": false},
+        {"option_text": "Some lawyers are not honest because they are politicians", "is_correct": true},
+        {"option_text": "All politicians are also lawyers in this scenario", "is_correct": false},
+        {"option_text": "No lawyer can ever take part in active politics", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Some lawyers are politicians, and no politician is honest. Therefore those lawyer-politicians are not honest → SOME lawyers are not honest. Cannot conclude ALL lawyers are dishonest. Distractor 1 too strong. Distractor 3 reverses 'some'. Distractor 4 contradicts the second statement.",
+      "subject": "Reasoning",
+      "topic": "Logical deduction — mixed tiers",
+      "topic_code": "REAS_LOGICAL_DEDUCTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-ld-03",
+      "generated_at": "2026-04-26T14:35:00+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_MIXED_00003"
+    },
+    {
+      "stem": "Statement: 'If it rains, the match will be cancelled. The match was not cancelled.' What can be deduced?",
+      "options": [
+        {"option_text": "It rained heavily during the match", "is_correct": false},
+        {"option_text": "It did not rain during the match", "is_correct": true},
+        {"option_text": "The match was cancelled for another reason", "is_correct": false},
+        {"option_text": "Rain has no effect on cancelling matches", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "MODUS TOLLENS: 'If P then Q' + 'NOT Q' → 'NOT P'. If rain → cancelled. Match wasn't cancelled (NOT Q) → it didn't rain (NOT P). Distractor 1 contradicts the deduction. Distractor 3 wrongly assumes the match was cancelled. Distractor 4 misreads the conditional structure.",
+      "subject": "Reasoning",
+      "topic": "Logical deduction — mixed tiers",
+      "topic_code": "REAS_LOGICAL_DEDUCTION_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-ld-04",
+      "generated_at": "2026-04-26T14:35:00+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_MIXED_00004"
+    },
+    {
+      "stem": "Statement: 'All students study hard. Ravi studies hard.' What CAN be concluded?",
+      "options": [
+        {"option_text": "Ravi is definitely a student in some school", "is_correct": false},
+        {"option_text": "Ravi may or may not be a student", "is_correct": true},
+        {"option_text": "Ravi studies harder than other students do", "is_correct": false},
+        {"option_text": "Ravi is not a student in any school", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "AFFIRMING THE CONSEQUENT FALLACY: 'all students study hard' means S → H, but knowing H doesn't imply S (other people may study hard too). Ravi may or may not be a student. Distractor 1 falls into the affirming-the-consequent trap. Distractors 3 and 4 are unsupported.",
+      "subject": "Reasoning",
+      "topic": "Logical deduction — mixed tiers",
+      "topic_code": "REAS_LOGICAL_DEDUCTION_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-ld-05",
+      "generated_at": "2026-04-26T14:35:00+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_MIXED_00005"
+    },
+    {
+      "stem": "Statement: 'All cats are mammals. No mammal lays eggs (excluding monotremes).' Which conclusion follows for cats?",
+      "options": [
+        {"option_text": "Cats lay eggs in some habitats", "is_correct": false},
+        {"option_text": "Cats do not lay eggs in any habitat", "is_correct": true},
+        {"option_text": "Cats sometimes belong to the bird family", "is_correct": false},
+        {"option_text": "Cats are reptiles in cold climates only", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "All cats are mammals; no mammal lays eggs (with the parenthetical excluding monotremes like platypus). Therefore no cat lays eggs. Direct categorical syllogism. Distractor 1 contradicts. Distractor 3 — cats are not birds. Distractor 4 — cats are not reptiles.",
+      "subject": "Reasoning",
+      "topic": "Logical deduction — mixed tiers",
+      "topic_code": "REAS_LOGICAL_DEDUCTION_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-ld-06",
+      "generated_at": "2026-04-26T14:35:00+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_MIXED_00006"
+    },
+    {
+      "stem": "Statement: 'Either Ravi or Sita won the contest. Sita did not win the contest.' What follows?",
+      "options": [
+        {"option_text": "Both Ravi and Sita lost the contest", "is_correct": false},
+        {"option_text": "Ravi won the contest", "is_correct": true},
+        {"option_text": "Neither of them participated in the contest", "is_correct": false},
+        {"option_text": "The contest was cancelled before completion", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "DISJUNCTIVE SYLLOGISM: 'P or Q' + 'NOT Q' → 'P'. 'Either Ravi or Sita won' + 'Sita did not' → Ravi won. Distractor 1 contradicts the original 'either won'. Distractors 3, 4 import unsupported claims.",
+      "subject": "Reasoning",
+      "topic": "Logical deduction — mixed tiers",
+      "topic_code": "REAS_LOGICAL_DEDUCTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-ld-07",
+      "generated_at": "2026-04-26T14:35:00+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_MIXED_00007"
+    }
+  ]
+}
