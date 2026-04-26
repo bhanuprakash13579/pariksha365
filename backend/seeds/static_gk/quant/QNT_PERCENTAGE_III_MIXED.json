@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Percentage III — mixed tiers",
+  "topic_code": "QNT_PERCENTAGE_III_MIXED",
+  "description": "Successive percentage change, percentage error, population growth, salt mixtures",
+  "questions": [
+    {
+      "stem": "If the price of an article is increased by 20% and then DECREASED by 20%, the net effect on the original price is:",
+      "options": [
+        {"option_text": "No change overall", "is_correct": false},
+        {"option_text": "4% decrease", "is_correct": true},
+        {"option_text": "4% increase", "is_correct": false},
+        {"option_text": "8% decrease", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Successive % shortcut: net change = a + b + ab/100. With a = +20, b = −20 → 20 − 20 + (−400/100) = 0 − 4 = −4%. Equivalently: 100 → 120 (after +20%) → 96 (after −20% of 120). Net change = (96−100)/100 = −4%. Distractor 1 is the common-sense WRONG answer (people assume they cancel). Distractor 3 has correct magnitude but wrong sign. Distractor 4 doubles correct value.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage III — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-pct3-01",
+      "generated_at": "2026-04-26T13:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00001"
+    },
+    {
+      "stem": "If A's salary is 25% more than B's salary, by what percent is B's salary LESS than A's salary?",
+      "options": [
+        {"option_text": "25%", "is_correct": false},
+        {"option_text": "20%", "is_correct": true},
+        {"option_text": "15%", "is_correct": false},
+        {"option_text": "30%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Let B = 100 → A = 125. B is less than A by 25/125 × 100 = 20%. General formula: if A is x% more than B, then B is (100x/(100+x))% less than A. Here x = 25 → 2500/125 = 20%. Distractor 1 is the COMMON WRONG answer (% more and % less aren't symmetrical). Distractor 3 = 15% from another miscomputation. Distractor 4 = 30% from yet another error.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage III — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-pct3-02",
+      "generated_at": "2026-04-26T13:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00002"
+    },
+    {
+      "stem": "The population of a town is 10,000 and grows at 10% per year. After two years, the population will be:",
+      "options": [
+        {"option_text": "12,000", "is_correct": false},
+        {"option_text": "12,100", "is_correct": true},
+        {"option_text": "11,000", "is_correct": false},
+        {"option_text": "12,200", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Compound growth: P(1 + r)ⁿ = 10000 × 1.1² = 10000 × 1.21 = 12,100. Year by year: Year 1 → 11,000 (10000 + 1000); Year 2 → 12,100 (11000 + 1100). Distractor 12,000 from simple-interest-style 10000 × (1 + 0.10×2) = 12,000 (uses simple interest formula). Distractor 11,000 stops at year 1. Distractor 12,200 from a different miscalculation.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage III — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-pct3-03",
+      "generated_at": "2026-04-26T13:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00003"
+    },
+    {
+      "stem": "30% of a number is 60. What is 75% of the same number?",
+      "options": [
+        {"option_text": "100", "is_correct": false},
+        {"option_text": "150", "is_correct": true},
+        {"option_text": "200", "is_correct": false},
+        {"option_text": "175", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "0.30 x = 60 → x = 200. 75% of 200 = 0.75 × 200 = 150. Distractor 100 = 50% (used wrong percentage). Distractor 200 = the original number (not the 75%). Distractor 175 from a calculation slip.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage III — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-pct3-04",
+      "generated_at": "2026-04-26T13:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00004"
+    },
+    {
+      "stem": "In an exam a student got 35% marks and failed by 40 marks. Another student got 50% and passed with 35 marks more than the pass mark. The maximum marks of the exam are:",
+      "options": [
+        {"option_text": "400", "is_correct": false},
+        {"option_text": "500", "is_correct": true},
+        {"option_text": "450", "is_correct": false},
+        {"option_text": "600", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Let max marks = M, pass mark = P. From student 1: 0.35M = P − 40 → P = 0.35M + 40. From student 2: 0.50M = P + 35 → P = 0.50M − 35. Equate: 0.35M + 40 = 0.50M − 35 → 75 = 0.15M → M = 500. Pass mark = 0.35(500)+40 = 215. Verify: 0.5(500) = 250 = 215+35 ✓. Distractor 400 from M = 75/0.1875 (rounded). Distractor 450 from miscomputed difference. Distractor 600 from M = 90/0.15.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage III — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-pct3-05",
+      "generated_at": "2026-04-26T13:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00005"
+    },
+    {
+      "stem": "A's income is 20% more than B's. If B's income is 25% less than C's, then A's income is what percent of C's?",
+      "options": [
+        {"option_text": "85%", "is_correct": false},
+        {"option_text": "90%", "is_correct": true},
+        {"option_text": "100%", "is_correct": false},
+        {"option_text": "95%", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Let C = 100. B = 100 − 25 = 75 (25% less than C). A = 1.20 × 75 = 90 (20% more than B). So A is 90% of C. Distractor 85% from miscomputed 0.85 × 100. Distractor 100% incorrect intuition. Distractor 95% from different chain.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage III — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-pct3-06",
+      "generated_at": "2026-04-26T13:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00006"
+    },
+    {
+      "stem": "A solution contains 20% salt by weight. After evaporating some water, the salt concentration becomes 25%. The fraction of original water that was evaporated is:",
+      "options": [
+        {"option_text": "1/4 of the original water", "is_correct": true},
+        {"option_text": "1/5 of the original water", "is_correct": false},
+        {"option_text": "1/6 of the original water", "is_correct": false},
+        {"option_text": "1/3 of the original water", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Take 100 g solution: 20 g salt + 80 g water. After evaporation salt is unchanged (20 g) but concentration is 25%, so total solution = 20/0.25 = 80 g. Water now = 80 − 20 = 60 g. Evaporated water = 80 − 60 = 20 g. Fraction of original water evaporated = 20/80 = 1/4. Distractor 1/5 from 20/100. Distractor 1/6 from another denominator slip. Distractor 1/3 from miscalculating final water as 40 g.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage III — mixed tiers",
+      "topic_code": "QNT_PERCENTAGE_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-pct3-07",
+      "generated_at": "2026-04-26T13:30:00+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00007"
+    }
+  ]
+}

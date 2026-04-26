@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Venn diagrams II — mixed tiers",
+  "topic_code": "REAS_VENN_DIAGRAMS_II_MIXED",
+  "description": "Set relationships, three-set inclusion-exclusion, classification puzzles",
+  "questions": [
+    {
+      "stem": "Which Venn-diagram relationship best fits the categories — DOCTORS, ENGINEERS, MEN?",
+      "options": [
+        {"option_text": "Three completely separate non-overlapping circles", "is_correct": false},
+        {"option_text": "Three circles overlapping since some men are doctors or engineers", "is_correct": true},
+        {"option_text": "Doctors and engineers in a circle entirely outside men", "is_correct": false},
+        {"option_text": "Men inside doctors and engineers totally outside both", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "There exist men who are doctors, men who are engineers, and (rarely but possibly) men who are both. So all three sets share some common members. The right diagram is THREE OVERLAPPING CIRCLES with seven distinct regions (only-D, only-E, only-M, D∩E only, D∩M only, E∩M only, D∩E∩M). Distractor 1 — disjoint sets would imply no doctor is a man, which is false. Distractor 3 — sets cannot be inside doctors+engineers and outside men. Distractor 4 — implies engineers are not men.",
+      "subject": "Reasoning",
+      "topic": "Venn diagrams II — mixed tiers",
+      "topic_code": "REAS_VENN_DIAGRAMS_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-vd-01",
+      "generated_at": "2026-04-26T13:35:00+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAMS_II_MIXED_00001"
+    },
+    {
+      "stem": "In a class of 60 students, 35 like cricket, 30 like football, and 10 like both sports. How many students like NEITHER sport?",
+      "options": [
+        {"option_text": "5 students", "is_correct": true},
+        {"option_text": "15 students", "is_correct": false},
+        {"option_text": "10 students", "is_correct": false},
+        {"option_text": "20 students", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Inclusion-exclusion: |C ∪ F| = |C| + |F| − |C ∩ F| = 35 + 30 − 10 = 55. Neither = total − (C ∪ F) = 60 − 55 = 5. Distractor 15 from 60 − 35 − 10. Distractor 10 confuses with the both count. Distractor 20 from another miscomputation.",
+      "subject": "Reasoning",
+      "topic": "Venn diagrams II — mixed tiers",
+      "topic_code": "REAS_VENN_DIAGRAMS_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-vd-02",
+      "generated_at": "2026-04-26T13:35:00+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAMS_II_MIXED_00002"
+    },
+    {
+      "stem": "Which Venn-diagram relationship best fits the categories — TIGERS, MAMMALS, ANIMALS?",
+      "options": [
+        {"option_text": "Three completely overlapping circles, with seven shared regions", "is_correct": false},
+        {"option_text": "Tigers inside mammals, mammals inside animals (concentric)", "is_correct": true},
+        {"option_text": "Three separate non-overlapping circles in the same plane", "is_correct": false},
+        {"option_text": "Tigers and mammals overlapping but both outside animals entirely", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Hierarchical containment: every TIGER is a MAMMAL (subset). Every MAMMAL is an ANIMAL (subset). So tigers ⊂ mammals ⊂ animals. The Venn diagram shows three CONCENTRIC circles. Distractor 1 — partial overlap doesn't capture strict containment. Distractor 3 — fully separate would mean no tiger is a mammal. Distractor 4 — contradicts mammals being animals.",
+      "subject": "Reasoning",
+      "topic": "Venn diagrams II — mixed tiers",
+      "topic_code": "REAS_VENN_DIAGRAMS_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-vd-03",
+      "generated_at": "2026-04-26T13:35:00+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAMS_II_MIXED_00003"
+    },
+    {
+      "stem": "In a survey of 100 people, 50 read the Times, 40 read the Hindu, 30 read both. The number who read at least one of these papers is:",
+      "options": [
+        {"option_text": "70 people", "is_correct": false},
+        {"option_text": "60 people", "is_correct": true},
+        {"option_text": "80 people", "is_correct": false},
+        {"option_text": "90 people", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "|T ∪ H| = |T| + |H| − |T ∩ H| = 50 + 40 − 30 = 60. Distractor 70 ignores subtraction (50 + 40 − 20). Distractor 80 = simple addition without overlap. Distractor 90 from yet another miscomputation. Always: |A ∪ B| = |A| + |B| − |A ∩ B|.",
+      "subject": "Reasoning",
+      "topic": "Venn diagrams II — mixed tiers",
+      "topic_code": "REAS_VENN_DIAGRAMS_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-vd-04",
+      "generated_at": "2026-04-26T13:35:00+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAMS_II_MIXED_00004"
+    },
+    {
+      "stem": "Which Venn-diagram relationship best fits the categories — POLICEMEN, THIEVES, HUMANS?",
+      "options": [
+        {"option_text": "Three overlapping circles since policemen and thieves share members", "is_correct": false},
+        {"option_text": "Two disjoint circles (policemen, thieves) both inside humans", "is_correct": true},
+        {"option_text": "Three concentric circles, like nested boxes", "is_correct": false},
+        {"option_text": "Three completely separate circles in the same plane", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Policemen and thieves are mutually exclusive (a policeman by definition is not a thief). Both are subsets of humans. Diagram: humans is the outer ellipse; inside it, two non-overlapping circles for policemen and thieves; rest of humans outside both. Distractor 1 — 'overlap' would imply policeman-thieves exist (not in standard logical sense). Distractor 3 — concentric implies hierarchical containment, but policemen ⊄ thieves. Distractor 4 — fully separate ignores both being humans.",
+      "subject": "Reasoning",
+      "topic": "Venn diagrams II — mixed tiers",
+      "topic_code": "REAS_VENN_DIAGRAMS_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-vd-05",
+      "generated_at": "2026-04-26T13:35:00+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAMS_II_MIXED_00005"
+    },
+    {
+      "stem": "In a group of 200 students: 90 study Maths, 80 study Physics, 70 study Chemistry, 30 study M+P, 25 study M+C, 20 study P+C, 15 study all three. The number who study NONE of the three is:",
+      "options": [
+        {"option_text": "20 students", "is_correct": true},
+        {"option_text": "25 students", "is_correct": false},
+        {"option_text": "30 students", "is_correct": false},
+        {"option_text": "15 students", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Three-set inclusion-exclusion: |M ∪ P ∪ C| = |M| + |P| + |C| − |M∩P| − |M∩C| − |P∩C| + |M∩P∩C| = 90+80+70 − 30−25−20 + 15 = 240 − 75 + 15 = 180. None = 200 − 180 = 20. Distractor 25 from forgetting to add back the triple intersection. Distractor 30 from another arithmetic slip. Distractor 15 confuses with triple intersection count.",
+      "subject": "Reasoning",
+      "topic": "Venn diagrams II — mixed tiers",
+      "topic_code": "REAS_VENN_DIAGRAMS_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-vd-06",
+      "generated_at": "2026-04-26T13:35:00+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAMS_II_MIXED_00006"
+    },
+    {
+      "stem": "Which Venn-diagram relationship best fits — STUDENTS, GIRLS, FEMALE SCHOOL CAPTAINS?",
+      "options": [
+        {"option_text": "Three disjoint circles, no shared members at all", "is_correct": false},
+        {"option_text": "Female captains inside girls inside students (concentric)", "is_correct": true},
+        {"option_text": "Three partially overlapping circles", "is_correct": false},
+        {"option_text": "Girls inside captains inside students (different concentric)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Every female school captain is a girl (subset). Every girl in school is a student (subset). So: female-captains ⊂ girls ⊂ students. CONCENTRIC. Distractor 1 — disjoint is wrong. Distractor 3 — partial overlap doesn't capture strict containment. Distractor 4 — reverses captain ⊂ girls (not all girls are captains, but all female captains are girls).",
+      "subject": "Reasoning",
+      "topic": "Venn diagrams II — mixed tiers",
+      "topic_code": "REAS_VENN_DIAGRAMS_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-vd-07",
+      "generated_at": "2026-04-26T13:35:00+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAMS_II_MIXED_00007"
+    }
+  ]
+}
