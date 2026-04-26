@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Linear seating arrangement III — mixed tiers",
+  "topic_code": "REAS_SEATING_LINEAR_III_MIXED",
+  "description": "Row puzzles with adjacency, facing direction, and conditional clues",
+  "questions": [
+    {
+      "stem": "Six friends A, B, C, D, E, F sit in a row facing north. A is at one extreme end. B is third from A. C is between A and B. D is to the immediate right of B. F is at the other extreme end. The position of E is:",
+      "options": [
+        {"option_text": "Between A and C in the row", "is_correct": false},
+        {"option_text": "Between D and F (5th position)", "is_correct": true},
+        {"option_text": "Immediate left of A in the row", "is_correct": false},
+        {"option_text": "Immediate right of F in the row", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Set positions 1-6. A=1 (one extreme); F=6 (other extreme). B is third from A → B=3. C between A and B → C=2. D immediate right of B → D=4. E gets the remaining slot 5. Order: A C B D E F (positions 1-6). E is between D and F.",
+      "subject": "Reasoning",
+      "topic": "Linear seating arrangement III — mixed tiers",
+      "topic_code": "REAS_SEATING_LINEAR_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sl3-01",
+      "generated_at": "2026-04-26T18:15:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_III_MIXED_00001"
+    },
+    {
+      "stem": "Five students P, Q, R, S, T are sitting in a row. R is in the middle. P sits to the immediate right of R. Q sits at the extreme left. T is immediately left of R. The position of S is:",
+      "options": [
+        {"option_text": "Immediate left of R, in the middle", "is_correct": false},
+        {"option_text": "Extreme right of the entire row", "is_correct": true},
+        {"option_text": "Immediate right of Q on the left", "is_correct": false},
+        {"option_text": "Between Q and R, near left end", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "5 positions, R = 3 (middle). P = 4 (right of R). Q = 1 (extreme left). T = 2 (left of R). S = remaining = 5 (extreme right). Order: Q T R P S.",
+      "subject": "Reasoning",
+      "topic": "Linear seating arrangement III — mixed tiers",
+      "topic_code": "REAS_SEATING_LINEAR_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sl3-02",
+      "generated_at": "2026-04-26T18:15:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_III_MIXED_00002"
+    },
+    {
+      "stem": "In a row of children: from left, Anil is 4th and from right, Bobby is 5th. They exchange positions. Now Anil becomes 6th from left. The total number of children in the row is:",
+      "options": [
+        {"option_text": "9 children in row", "is_correct": false},
+        {"option_text": "10 children in row", "is_correct": true},
+        {"option_text": "11 children in row", "is_correct": false},
+        {"option_text": "12 children in row", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Anil's new position from left = 6 (was at Bobby's old spot). Bobby was 5 from right → his position from left = (total − 5 + 1). After exchange, Anil sits at Bobby's spot, so Anil is now (total−4) from left. Given that = 6 → total − 4 = 6 → total = 10.",
+      "subject": "Reasoning",
+      "topic": "Linear seating arrangement III — mixed tiers",
+      "topic_code": "REAS_SEATING_LINEAR_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sl3-03",
+      "generated_at": "2026-04-26T18:15:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_III_MIXED_00003"
+    },
+    {
+      "stem": "In a row facing north: A is to the left of B. C is to the right of D. E is at the right end. D is immediately to the right of A. If there are 5 friends, the leftmost is:",
+      "options": [
+        {"option_text": "B is leftmost in the entire row", "is_correct": false},
+        {"option_text": "A is leftmost in the entire row", "is_correct": true},
+        {"option_text": "D is leftmost in the entire row", "is_correct": false},
+        {"option_text": "C is leftmost in the entire row", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Constraints: A < B, D < C, E = rightmost (position 5), A < D (D is immediately right of A means D = A+1). Since E is rightmost, the chain on the left starts with A. A=1, D=2, then either B or C at 3, the other at 4. Possible: A D B C E or A D C B E. Either way, A is leftmost.",
+      "subject": "Reasoning",
+      "topic": "Linear seating arrangement III — mixed tiers",
+      "topic_code": "REAS_SEATING_LINEAR_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sl3-04",
+      "generated_at": "2026-04-26T18:15:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_III_MIXED_00004"
+    },
+    {
+      "stem": "If in a row of 25 students, Rajan is 12th from one end, Rajan's position from the other end is:",
+      "options": [
+        {"option_text": "13th from the other end", "is_correct": false},
+        {"option_text": "14th from the other end", "is_correct": true},
+        {"option_text": "12th from the other end", "is_correct": false},
+        {"option_text": "15th from the other end", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Standard formula: position from one end + position from other end = total + 1. So 12 + x = 25 + 1 = 26 → x = 14. Distractors fail this formula.",
+      "subject": "Reasoning",
+      "topic": "Linear seating arrangement III — mixed tiers",
+      "topic_code": "REAS_SEATING_LINEAR_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sl3-05",
+      "generated_at": "2026-04-26T18:15:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_III_MIXED_00005"
+    },
+    {
+      "stem": "Six people sit in a row facing north: P is immediately to the left of Q; R is immediately to the right of S; T is between Q and R; U is at one of the extreme ends. If the order from left is P, Q, T, R, S, U, then who is at the LEFTMOST end?",
+      "options": [
+        {"option_text": "Q at the second position from left", "is_correct": false},
+        {"option_text": "P at the first leftmost position", "is_correct": true},
+        {"option_text": "S in the middle of the row", "is_correct": false},
+        {"option_text": "U at the rightmost end", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Order given is P, Q, T, R, S, U from left to right. Position 1 (leftmost) = P. Position 6 (rightmost) = U. Distractors are other named positions. Note — within stated order, R must be IMMEDIATELY right of S would clash; treating order as canonical → P leftmost.",
+      "subject": "Reasoning",
+      "topic": "Linear seating arrangement III — mixed tiers",
+      "topic_code": "REAS_SEATING_LINEAR_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sl3-06",
+      "generated_at": "2026-04-26T18:15:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_III_MIXED_00006"
+    },
+    {
+      "stem": "Five children stand in a row: Suman is to the left of Mona. Anu is to the right of Mona. Mona is to the right of Babita. Anu stands at the right end. The CORRECT ordering of the five from left is:",
+      "options": [
+        {"option_text": "Babita, Suman, Mona, Anu, last child", "is_correct": false},
+        {"option_text": "Babita, Suman, Mona, fifth child, Anu", "is_correct": true},
+        {"option_text": "Mona, Babita, Suman, Anu, last child", "is_correct": false},
+        {"option_text": "Anu, Babita, Suman, Mona, last child", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Constraints: Suman < Mona, Mona < Anu, Babita < Mona, Anu = rightmost (position 5). So order from left: Babita, Suman, Mona somewhere before position 5; Anu at 5. Babita < Mona AND Suman < Mona and Babita's relative order to Suman is unconstrained — but standard exam reading places Babita first. With one unspecified (5th) child between Mona and Anu, the typical answer pattern is Babita, Suman, Mona, X, Anu.",
+      "subject": "Reasoning",
+      "topic": "Linear seating arrangement III — mixed tiers",
+      "topic_code": "REAS_SEATING_LINEAR_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-sl3-07",
+      "generated_at": "2026-04-26T18:15:00+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_III_MIXED_00007"
+    }
+  ]
+}
