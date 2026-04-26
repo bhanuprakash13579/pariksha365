@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Arithmetic & geometric progressions — mixed tiers",
+  "topic_code": "QNT_PROGRESSION_AP_GP_MIXED",
+  "description": "AP / GP nth term, sum, common difference, common ratio, mean",
+  "questions": [
+    {
+      "stem": "The 10th term of the arithmetic progression 3, 7, 11, 15, ... is:",
+      "options": [
+        {"option_text": "37", "is_correct": false},
+        {"option_text": "39", "is_correct": true},
+        {"option_text": "40", "is_correct": false},
+        {"option_text": "41", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "AP nth term: aₙ = a + (n−1)d. Here a = 3, d = 7 − 3 = 4, n = 10. a₁₀ = 3 + 9 × 4 = 3 + 36 = 39.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Arithmetic & geometric progressions — mixed tiers",
+      "topic_code": "QNT_PROGRESSION_AP_GP_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-pg-01",
+      "generated_at": "2026-04-25T05:00:00+00:00",
+      "id": "sgk_QNT_PROGRESSION_AP_GP_MIXED_00001"
+    },
+    {
+      "stem": "The sum of the first 20 natural numbers (1 + 2 + 3 + ... + 20) is:",
+      "options": [
+        {"option_text": "200", "is_correct": false},
+        {"option_text": "210", "is_correct": true},
+        {"option_text": "220", "is_correct": false},
+        {"option_text": "190", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Sum of first n natural numbers: Sₙ = n(n+1)/2. For n = 20 → 20 × 21 / 2 = 210. Equivalently, AP sum: Sₙ = n/2 × [2a + (n−1)d] = 20/2 × [2 + 19] = 10 × 21 = 210. Sum of first n odd numbers = n². Sum of first n even numbers = n(n+1). Sum of squares = n(n+1)(2n+1)/6. Sum of cubes = [n(n+1)/2]² (interesting — square of the sum).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Arithmetic & geometric progressions — mixed tiers",
+      "topic_code": "QNT_PROGRESSION_AP_GP_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-pg-02",
+      "generated_at": "2026-04-25T05:00:00+00:00",
+      "id": "sgk_QNT_PROGRESSION_AP_GP_MIXED_00002"
+    },
+    {
+      "stem": "The common ratio of the geometric progression 2, 6, 18, 54, ... is:",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "GP common ratio r = aₙ₊₁ / aₙ. Here 6/2 = 3; 18/6 = 3; 54/18 = 3. So r = 3. GP nth term: aₙ = a · rⁿ⁻¹. For this GP, aₙ = 2 · 3ⁿ⁻¹.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Arithmetic & geometric progressions — mixed tiers",
+      "topic_code": "QNT_PROGRESSION_AP_GP_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-pg-03",
+      "generated_at": "2026-04-25T05:00:00+00:00",
+      "id": "sgk_QNT_PROGRESSION_AP_GP_MIXED_00003"
+    },
+    {
+      "stem": "The 7th term of the geometric progression 5, 10, 20, 40, ... is:",
+      "options": [
+        {"option_text": "160", "is_correct": false},
+        {"option_text": "320", "is_correct": true},
+        {"option_text": "640", "is_correct": false},
+        {"option_text": "80", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "GP: a = 5, r = 10/5 = 2. aₙ = a · rⁿ⁻¹. a₇ = 5 × 2⁶ = 5 × 64 = 320.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Arithmetic & geometric progressions — mixed tiers",
+      "topic_code": "QNT_PROGRESSION_AP_GP_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-pg-04",
+      "generated_at": "2026-04-25T05:00:00+00:00",
+      "id": "sgk_QNT_PROGRESSION_AP_GP_MIXED_00004"
+    },
+    {
+      "stem": "The sum of an infinite geometric progression with first term 1 and common ratio 1/2 is:",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "1/2", "is_correct": false},
+        {"option_text": "Infinite", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Infinite GP sum (when |r| < 1): S∞ = a / (1 − r). Here a = 1, r = 1/2 → S∞ = 1 / (1 − 1/2) = 1 / 0.5 = 2. Verify: 1 + 1/2 + 1/4 + 1/8 + ... → approaches 2 (Zeno's paradox of bisection — the famous 'half the distance, then half again' illustration). For |r| ≥ 1, the sum diverges (no finite limit).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Arithmetic & geometric progressions — mixed tiers",
+      "topic_code": "QNT_PROGRESSION_AP_GP_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-pg-05",
+      "generated_at": "2026-04-25T05:00:00+00:00",
+      "id": "sgk_QNT_PROGRESSION_AP_GP_MIXED_00005"
+    },
+    {
+      "stem": "If three numbers a, b, c are in AP (in that order), then 2b equals:",
+      "options": [
+        {"option_text": "ac", "is_correct": false},
+        {"option_text": "a + c", "is_correct": true},
+        {"option_text": "a − c", "is_correct": false},
+        {"option_text": "a/c", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Three numbers in AP: middle = average of outer two. So b = (a + c)/2 → 2b = a + c. Equivalently, b − a = c − b (common difference is the same on both sides). For GP, the analogous property: b² = ac (b is the GEOMETRIC MEAN of a and c). For HP (harmonic): 2/b = 1/a + 1/c. Useful for inserting means: between a and c, if we want 1 AM → b = (a+c)/2; 1 GM → b = √(ac); 1 HM → b = 2ac/(a+c). Always AM ≥ GM ≥ HM (with equality iff a = c).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Arithmetic & geometric progressions — mixed tiers",
+      "topic_code": "QNT_PROGRESSION_AP_GP_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-pg-06",
+      "generated_at": "2026-04-25T05:00:00+00:00",
+      "id": "sgk_QNT_PROGRESSION_AP_GP_MIXED_00006"
+    },
+    {
+      "stem": "If the sum of the first n terms of an AP is given by Sₙ = 3n² + 5n, the common difference of the AP is:",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "3", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "When Sₙ = an² + bn (quadratic in n with no constant), the AP has first term = a + b and common difference = 2a. Here a = 3, b = 5 → first term = 3 + 5 = 8; common difference = 2 × 3 = 6. Verify: S₁ = 3 + 5 = 8 → t₁ = 8. S₂ = 12 + 10 = 22 → t₂ = S₂ − S₁ = 22 − 8 = 14. d = t₂ − t₁ = 14 − 8 = 6 ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Arithmetic & geometric progressions — mixed tiers",
+      "topic_code": "QNT_PROGRESSION_AP_GP_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-qnt-pg-07",
+      "generated_at": "2026-04-25T05:00:00+00:00",
+      "id": "sgk_QNT_PROGRESSION_AP_GP_MIXED_00007"
+    }
+  ]
+}

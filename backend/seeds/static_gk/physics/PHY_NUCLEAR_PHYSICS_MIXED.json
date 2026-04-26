@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Nuclear physics — mixed tiers",
+  "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
+  "description": "Nucleus, isotopes, half-life, fission vs fusion, mass defect E=mc², chain reaction, reactors",
+  "questions": [
+    {
+      "stem": "The nucleus of an atom contains:",
+      "options": [
+        {"option_text": "Electrons and protons", "is_correct": false},
+        {"option_text": "Protons (positive charge) and neutrons (neutral) — collectively called nucleons", "is_correct": true},
+        {"option_text": "Neutrons and electrons", "is_correct": false},
+        {"option_text": "Only protons", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Atomic structure: NUCLEUS (protons + neutrons; ~10⁻¹⁵ m, 99.9% of atomic mass); ELECTRONS orbit nucleus (~10⁻¹⁰ m). Atomic number Z = number of protons. Mass number A = protons + neutrons. ISOTOPES — same Z, different A (e.g., ¹H, ²H/D, ³H/T; ²³⁵U, ²³⁸U). Strong nuclear force binds nucleons (~100x electromagnetic; very short range, ~1 fm). Discoveries — Rutherford 1911 (nucleus, α-scattering); Chadwick 1932 (neutron); Anderson 1932 (positron, antimatter); Pauli 1930 / Reines-Cowan 1956 (neutrino).",
+      "subject": "Physics",
+      "topic": "Nuclear physics — mixed tiers",
+      "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-np-01",
+      "generated_at": "2026-04-25T05:40:00+00:00",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00001"
+    },
+    {
+      "stem": "The half-life of a radioactive substance is:",
+      "options": [
+        {"option_text": "The total lifetime of the substance", "is_correct": false},
+        {"option_text": "The time taken for HALF of the original radioactive nuclei to decay (a constant for each isotope)", "is_correct": true},
+        {"option_text": "The time it takes to be detected", "is_correct": false},
+        {"option_text": "Half the time of one full radioactive cycle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Half-life (T½) — time for half the original nuclei to decay. Constant for a given isotope (independent of physical/chemical conditions). After n half-lives, the surviving fraction = (1/2)ⁿ. Examples: ³H tritium 12.3 yr; ¹⁴C 5,730 yr (used in carbon-dating); ¹³¹I 8 days (used in thyroid imaging + therapy); ²³⁵U 704 million years; ²³⁸U 4.5 billion years; ⁴⁰K 1.3 billion years (used to date rocks); ¹³⁷Cs 30 years (post-Chernobyl/Fukushima fallout). Decay constant λ = ln 2 / T½. Activity A = λN; measured in becquerel (Bq, 1 decay/s) or curie (Ci = 3.7 × 10¹⁰ Bq).",
+      "subject": "Physics",
+      "topic": "Nuclear physics — mixed tiers",
+      "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-np-02",
+      "generated_at": "2026-04-25T05:40:00+00:00",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00002"
+    },
+    {
+      "stem": "In nuclear FISSION (used in nuclear reactors and atom bombs):",
+      "options": [
+        {"option_text": "Two light nuclei fuse to form a heavier nucleus", "is_correct": false},
+        {"option_text": "A heavy nucleus (e.g., U-235) splits into two lighter nuclei + neutrons + energy", "is_correct": true},
+        {"option_text": "An electron is emitted from the nucleus", "is_correct": false},
+        {"option_text": "Atoms simply rearrange chemically", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "FISSION — heavy nucleus splits. Discovered 1938 by Otto Hahn + Lise Meitner + Fritz Strassmann. Example: ²³⁵U + n → ¹⁴¹Ba + ⁹²Kr + 3n + ~200 MeV energy. Released neutrons can trigger further fissions → CHAIN REACTION. Critical mass — minimum mass for sustained chain reaction (uranium-235 ~52 kg sphere; can be smaller with reflector). Atom bomb (uncontrolled chain reaction); nuclear reactor (controlled, with moderator + control rods). Hiroshima 'Little Boy' (Aug 6, 1945) — U-235 gun-type. Nagasaki 'Fat Man' (Aug 9, 1945) — Pu-239 implosion-type. FUSION (opposite) — light nuclei combine; powers stars, hydrogen bomb, tokamak research (ITER). E = mc² governs both.",
+      "subject": "Physics",
+      "topic": "Nuclear physics — mixed tiers",
+      "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-np-03",
+      "generated_at": "2026-04-25T05:40:00+00:00",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00003"
+    },
+    {
+      "stem": "Einstein's famous equation E = mc² describes:",
+      "options": [
+        {"option_text": "Speed of sound", "is_correct": false},
+        {"option_text": "Mass-energy equivalence — even tiny mass converts to enormous energy (since c² is huge)", "is_correct": true},
+        {"option_text": "Newton's second law", "is_correct": false},
+        {"option_text": "Wave equation", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "E = mc² (c = 3 × 10⁸ m/s). 1 g of matter converted entirely to energy = (10⁻³)(3×10⁸)² = 9 × 10¹³ J ≈ 21,500 tons of TNT (= about Hiroshima yield). In nuclear reactions, only a small fraction (~0.1%) of mass converts. MASS DEFECT — the mass of a nucleus is slightly less than the sum of its individual nucleons; the missing mass appears as binding energy. Iron-56 has the highest binding energy per nucleon — fusion + fission both move toward Fe-56 → release energy. Stars: hydrogen → helium fusion (proton-proton chain in sun, CNO cycle in heavier stars); supernovae produce elements heavier than iron via r-process.",
+      "subject": "Physics",
+      "topic": "Nuclear physics — mixed tiers",
+      "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-np-04",
+      "generated_at": "2026-04-25T05:40:00+00:00",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00004"
+    },
+    {
+      "stem": "The MOST common moderator used in Indian PHWR (Pressurised Heavy Water Reactor) nuclear reactors is:",
+      "options": [
+        {"option_text": "Graphite", "is_correct": false},
+        {"option_text": "Heavy water (D₂O)", "is_correct": true},
+        {"option_text": "Light water (H₂O)", "is_correct": false},
+        {"option_text": "Liquid sodium", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "MODERATOR — slows down neutrons (fast neutrons → thermal neutrons, more likely to cause fission of U-235). Common moderators: HEAVY WATER (D₂O — used in PHWRs / CANDU; expensive but allows use of natural uranium without enrichment). LIGHT WATER (H₂O — used in PWR/BWR; cheaper but absorbs more neutrons → requires enriched U-235); GRAPHITE (used in earlier UK Magnox + Soviet RBMK; Chernobyl was graphite-moderated). India's nuclear programme — 3-stage: Stage 1 PHWR with natural U; Stage 2 fast breeder with Pu + thorium; Stage 3 thorium-based reactors. Tarapur was the first nuclear power plant (1969, BWR design from US). India has 23 operational reactors (~7,500 MWe, ~3% of grid). Kudankulam (TN) — VVER design with Russia.",
+      "subject": "Physics",
+      "topic": "Nuclear physics — mixed tiers",
+      "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-np-05",
+      "generated_at": "2026-04-25T05:40:00+00:00",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00005"
+    },
+    {
+      "stem": "When a radioactive nucleus emits an ALPHA particle, the resulting nucleus has:",
+      "options": [
+        {"option_text": "Same atomic number, same mass number", "is_correct": false},
+        {"option_text": "Atomic number reduced by 2; mass number reduced by 4", "is_correct": true},
+        {"option_text": "Atomic number increased by 1; mass number unchanged", "is_correct": false},
+        {"option_text": "Atomic number reduced by 1; mass number unchanged", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Alpha (α) particle = helium nucleus (2 protons + 2 neutrons; ⁴₂He). Alpha decay: ᴬ₂X → ᴬ⁻⁴₂₋₂Y + ⁴₂He. Example: ²³⁸U → ²³⁴Th + α. BETA-MINUS (β⁻) decay: a neutron in the nucleus becomes a proton + electron + antineutrino → atomic number INCREASES by 1; mass number unchanged. Example: ¹⁴C → ¹⁴N + e⁻ + ν̄. BETA-PLUS (β⁺): proton → neutron + positron + neutrino → atomic number decreases by 1. GAMMA (γ) decay: high-energy photon emitted; no change in atomic or mass number — nucleus drops from excited to ground state. Penetrating power: α (stopped by paper) < β (stopped by aluminium foil) < γ (needs lead/concrete).",
+      "subject": "Physics",
+      "topic": "Nuclear physics — mixed tiers",
+      "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-np-06",
+      "generated_at": "2026-04-25T05:40:00+00:00",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00006"
+    },
+    {
+      "stem": "If 8 g of a radioactive substance has a half-life of 4 days, how much will remain after 16 days?",
+      "options": [
+        {"option_text": "1 g", "is_correct": false},
+        {"option_text": "0.5 g", "is_correct": true},
+        {"option_text": "2 g", "is_correct": false},
+        {"option_text": "4 g", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "16 days = 4 half-lives (16 / 4 = 4). After n half-lives, the remaining fraction = (1/2)ⁿ = (1/2)⁴ = 1/16. Remaining = 8 × 1/16 = 0.5 g. Step-wise: Day 0 → 8 g; Day 4 → 4 g; Day 8 → 2 g; Day 12 → 1 g; Day 16 → 0.5 g. Note — the decay is exponential, not linear; after 4 half-lives, ~93.75% has decayed.",
+      "subject": "Physics",
+      "topic": "Nuclear physics — mixed tiers",
+      "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-25-phy-np-07",
+      "generated_at": "2026-04-25T05:40:00+00:00",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00007"
+    }
+  ]
+}
