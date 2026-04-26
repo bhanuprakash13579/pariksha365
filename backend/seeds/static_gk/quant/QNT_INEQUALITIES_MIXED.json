@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "Inequalities — mixed tiers",
+  "topic_code": "QNT_INEQUALITIES_MIXED",
+  "description": "Symbol-based inequalities, code-language comparisons, deductions",
+  "questions": [
+    {
+      "stem": "If A > B, B = C, C ≥ D, then which is definitely true?",
+      "options": [
+        {"option_text": "A > D, by chain of inequalities", "is_correct": true},
+        {"option_text": "A < D, the reverse direction here", "is_correct": false},
+        {"option_text": "A = D, equality from chain steps", "is_correct": false},
+        {"option_text": "B < D, only sometimes true", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Combine: A > B, B = C, so A > C. C ≥ D, so A > C ≥ D → A > D (definitely true). Distractor 2 is opposite. Distractor 3 only equality if D = C and B = A, but A > B, not =, so equality is impossible. Distractor 4 — B = C ≥ D, so B ≥ D (could be B = D, never B < D).",
+      "subject": "Quant",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "QNT_INEQUALITIES_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ineq-01",
+      "generated_at": "2026-04-26T23:25:00+00:00",
+      "id": "sgk_QNT_INEQUALITIES_MIXED_00001"
+    },
+    {
+      "stem": "If P ≥ Q, Q > R, R = S, S ≤ T, which is NOT necessarily true?",
+      "options": [
+        {"option_text": "P > R, definitely from given chain", "is_correct": false},
+        {"option_text": "P > T, NOT definitely from chain", "is_correct": true},
+        {"option_text": "Q > S, definitely from chain", "is_correct": false},
+        {"option_text": "P > S, definitely from chain", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "P ≥ Q > R = S ≤ T. So P ≥ Q > R = S, hence P > R, P > S, Q > S — all definite. But for P vs T: we have P ≥ S (since P > S follows). And S ≤ T means T could be larger or equal to S. So T could be > P (if T is much larger) or T ≤ P. Hence P > T is NOT guaranteed. ✓",
+      "subject": "Quant",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "QNT_INEQUALITIES_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ineq-02",
+      "generated_at": "2026-04-26T23:25:00+00:00",
+      "id": "sgk_QNT_INEQUALITIES_MIXED_00002"
+    },
+    {
+      "stem": "If x is an integer and 2x + 5 < 17, the LARGEST possible value of x is:",
+      "options": [
+        {"option_text": "5 is the largest integer here", "is_correct": true},
+        {"option_text": "6 is the largest integer here", "is_correct": false},
+        {"option_text": "7 is the largest integer here", "is_correct": false},
+        {"option_text": "4 is the largest integer here", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "2x + 5 < 17 → 2x < 12 → x < 6. Largest INTEGER < 6 is 5. Verify: 2(5)+5 = 15 < 17 ✓. 2(6)+5 = 17 NOT < 17. Distractor 6 = boundary exclusion error. Distractor 7 = wrong direction. Distractor 4 = answered ≤ 5 wrongly.",
+      "subject": "Quant",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "QNT_INEQUALITIES_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ineq-03",
+      "generated_at": "2026-04-26T23:25:00+00:00",
+      "id": "sgk_QNT_INEQUALITIES_MIXED_00003"
+    },
+    {
+      "stem": "Solve for y: 3y − 7 ≥ 2y + 5",
+      "options": [
+        {"option_text": "y ≥ 12 satisfies the inequality", "is_correct": true},
+        {"option_text": "y ≥ 5 satisfies the inequality", "is_correct": false},
+        {"option_text": "y ≤ 12 satisfies the inequality", "is_correct": false},
+        {"option_text": "y ≤ 5 satisfies the inequality", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "3y − 7 ≥ 2y + 5 → 3y − 2y ≥ 5 + 7 → y ≥ 12. Verify y = 12: 3(12)−7 = 29; 2(12)+5 = 29. 29 ≥ 29 ✓. y = 13: 32 ≥ 31 ✓. Distractor 2 — used 7 + 2 wrongly. Distractor 3 — wrong sign direction. Distractor 4 — wrong both.",
+      "subject": "Quant",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "QNT_INEQUALITIES_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ineq-04",
+      "generated_at": "2026-04-26T23:25:00+00:00",
+      "id": "sgk_QNT_INEQUALITIES_MIXED_00004"
+    },
+    {
+      "stem": "Solve: −2x ≥ 8 (note negative coefficient).",
+      "options": [
+        {"option_text": "x ≥ −4, with the sign retained", "is_correct": false},
+        {"option_text": "x ≤ −4, sign FLIPS on negative divide", "is_correct": true},
+        {"option_text": "x ≥ 4, with the positive answer", "is_correct": false},
+        {"option_text": "x ≤ 4, the positive answer here", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "−2x ≥ 8 → divide both sides by −2. CRUCIAL RULE: when multiplying/dividing both sides of an inequality by a NEGATIVE number, FLIP the inequality sign. So x ≤ 8/(−2) = −4. Verify x = −5: −2(−5) = 10 ≥ 8 ✓. x = −4: −2(−4) = 8 ≥ 8 ✓. x = 0: 0 ≥ 8 ✗.",
+      "subject": "Quant",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "QNT_INEQUALITIES_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ineq-05",
+      "generated_at": "2026-04-26T23:25:00+00:00",
+      "id": "sgk_QNT_INEQUALITIES_MIXED_00005"
+    },
+    {
+      "stem": "If 5 < x < 12 and x is an integer, the SUM of all possible values of x is:",
+      "options": [
+        {"option_text": "63 from arithmetic-miscount answer", "is_correct": false},
+        {"option_text": "51 from sum of 6 to 11 inclusive", "is_correct": true},
+        {"option_text": "75 from arithmetic-miscount answer", "is_correct": false},
+        {"option_text": "68 if endpoints 5 and 12 included", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Strict inequalities: 5 < x < 12 → x ∈ {6, 7, 8, 9, 10, 11}. Sum = 6+7+8+9+10+11 = 6×(6+11)/2 = 6×17/2 = 51. Distractor 68 = if you wrongly include 5 + 12: that gives 5+6+...+12 = 8×17/2 = 68. Distractor 63 = arithmetic slip. Distractor 75 = miscount.",
+      "subject": "Quant",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "QNT_INEQUALITIES_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ineq-06",
+      "generated_at": "2026-04-26T23:25:00+00:00",
+      "id": "sgk_QNT_INEQUALITIES_MIXED_00006"
+    },
+    {
+      "stem": "If a < b < c and all are positive, then which is largest in 1/a, 1/b, 1/c?",
+      "options": [
+        {"option_text": "1/a is the largest reciprocal", "is_correct": true},
+        {"option_text": "1/c is the largest reciprocal", "is_correct": false},
+        {"option_text": "1/b is the largest reciprocal", "is_correct": false},
+        {"option_text": "All reciprocals are equal", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "For positive numbers, smallest denominator → largest fraction. a < b < c (a smallest), so 1/a > 1/b > 1/c. Reciprocal REVERSES order for positive numbers. Example: a=2, b=3, c=4 → 1/a = 0.5, 1/b = 0.33, 1/c = 0.25. So 1/a largest.",
+      "subject": "Quant",
+      "topic": "Inequalities — mixed tiers",
+      "topic_code": "QNT_INEQUALITIES_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-ineq-07",
+      "generated_at": "2026-04-26T23:25:00+00:00",
+      "id": "sgk_QNT_INEQUALITIES_MIXED_00007"
+    }
+  ]
+}

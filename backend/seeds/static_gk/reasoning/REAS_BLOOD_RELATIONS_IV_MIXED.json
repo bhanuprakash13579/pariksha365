@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Blood relations IV — mixed tiers",
+  "topic_code": "REAS_BLOOD_RELATIONS_IV_MIXED",
+  "description": "Family-tree puzzles, pointing-at-photo, generation reasoning",
+  "questions": [
+    {
+      "stem": "Pointing to a photo, A says, 'She is the daughter of my grandfather's only son.' How is the girl related to A?",
+      "options": [
+        {"option_text": "Cousin to A in the photo", "is_correct": false},
+        {"option_text": "Sister to A in the photo", "is_correct": true},
+        {"option_text": "Niece to A in the photo", "is_correct": false},
+        {"option_text": "Aunt to A in the photo", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "'My grandfather's only son' = A's father (since A is grandfather's grandchild via this only son). So girl = daughter of A's father = SISTER of A. Distractor 1 — cousin would require uncle/aunt. Distractor 3 — niece is daughter of A's sibling (A's daughter is A's daughter). Distractor 4 — aunt would be grandfather's daughter.",
+      "subject": "Reasoning",
+      "topic": "Blood relations IV — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_IV_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br4-01",
+      "generated_at": "2026-04-26T23:30:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_IV_MIXED_00001"
+    },
+    {
+      "stem": "X is the brother of Y. Y is the son of Z. Z is the wife of W. What is X to W?",
+      "options": [
+        {"option_text": "Nephew of W in the family", "is_correct": false},
+        {"option_text": "Son of W in the family", "is_correct": true},
+        {"option_text": "Brother of W in the family", "is_correct": false},
+        {"option_text": "Father of W in the family", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Y is son of Z (mother). Z is wife of W → W is Y's FATHER. X is Y's brother → X is also W's son. So X to W = SON. Distractors are wrong relationships from the chain.",
+      "subject": "Reasoning",
+      "topic": "Blood relations IV — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_IV_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br4-02",
+      "generated_at": "2026-04-26T23:30:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_IV_MIXED_00002"
+    },
+    {
+      "stem": "P's mother is Q's daughter. Q's son R has only sister S. How is P related to S?",
+      "options": [
+        {"option_text": "Cousin (sister), same generation", "is_correct": false},
+        {"option_text": "Niece or nephew (S is P's aunt)", "is_correct": true},
+        {"option_text": "Sister (in own generation)", "is_correct": false},
+        {"option_text": "Mother (older generation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Q has children: P's mother + R (R is Q's son). R has 'only sister' S → S is also Q's daughter. So Q's daughters = P's mother + S. Hence S is P's mother's SISTER → P's MATERNAL AUNT. P is S's NIECE/NEPHEW. (Whether nephew or niece depends on P's gender, which isn't given.)",
+      "subject": "Reasoning",
+      "topic": "Blood relations IV — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_IV_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br4-03",
+      "generated_at": "2026-04-26T23:30:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_IV_MIXED_00003"
+    },
+    {
+      "stem": "Pointing to a man, a woman says, 'His mother is the only daughter of my mother.' How is the woman related to that man?",
+      "options": [
+        {"option_text": "Aunt of the man (the man's mother's sister)", "is_correct": false},
+        {"option_text": "Mother of the man (the woman is herself the daughter)", "is_correct": true},
+        {"option_text": "Cousin of the man, in the same generation", "is_correct": false},
+        {"option_text": "Grandmother of the man, two generations up", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "'Only daughter of my mother' = the woman HERSELF (assuming woman is her mother's only daughter). So 'his mother' = the woman speaking. Hence woman = man's MOTHER. (Trick puzzle — students often answer 'aunt'.) Always test: 'only daughter of my mother' = the speaker herself.",
+      "subject": "Reasoning",
+      "topic": "Blood relations IV — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_IV_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br4-04",
+      "generated_at": "2026-04-26T23:30:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_IV_MIXED_00004"
+    },
+    {
+      "stem": "A is B's father. B is C's mother. D is C's brother. E is D's father. How is A related to E?",
+      "options": [
+        {"option_text": "Brother of E (same generation)", "is_correct": false},
+        {"option_text": "Father-in-law of E (his wife's father)", "is_correct": true},
+        {"option_text": "Father of E (one up generation)", "is_correct": false},
+        {"option_text": "Son of E (one down generation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "C has parents B (mother) + 'someone' (father). D is C's brother → D has same parents as C. E is D's father → E = D's + C's father. So E is married to B (since B is C's mother). A is B's father → A is E's wife's father → A = E's FATHER-IN-LAW.",
+      "subject": "Reasoning",
+      "topic": "Blood relations IV — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_IV_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br4-05",
+      "generated_at": "2026-04-26T23:30:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_IV_MIXED_00005"
+    },
+    {
+      "stem": "Pointing to a boy, Anita said, 'He is the son of my father's only sister's husband.' The boy is Anita's:",
+      "options": [
+        {"option_text": "Brother (own sibling here)", "is_correct": false},
+        {"option_text": "Cousin (paternal aunt's son)", "is_correct": true},
+        {"option_text": "Nephew (sister's son)", "is_correct": false},
+        {"option_text": "Uncle (parent's sibling)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "'My father's only sister' = Anita's PATERNAL AUNT (बुआ / phupi). Her HUSBAND = Anita's UNCLE BY MARRIAGE (फूफा / phupha). His son = Anita's COUSIN (specifically, cousin via paternal aunt). Note: 'son of aunt's husband' = aunt's son IF the husband + aunt have biological children (assumed default). Distractor 1 = brother is sibling (own father's son). Distractor 3 = nephew is from a sibling.",
+      "subject": "Reasoning",
+      "topic": "Blood relations IV — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_IV_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br4-06",
+      "generated_at": "2026-04-26T23:30:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_IV_MIXED_00006"
+    },
+    {
+      "stem": "If A's father is B's mother's husband, and C is the daughter of A, how is C related to B?",
+      "options": [
+        {"option_text": "Daughter of B (the next generation)", "is_correct": false},
+        {"option_text": "Niece of B (sister's daughter)", "is_correct": true},
+        {"option_text": "Cousin of B (same generation)", "is_correct": false},
+        {"option_text": "Sister of B (same generation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "B's mother's husband = B's FATHER. A's father = B's father → A + B share a father → A + B are SIBLINGS (or half-siblings, but treat as siblings). C is A's daughter → C is A's child. Since A is B's sibling, C is B's NIECE.",
+      "subject": "Reasoning",
+      "topic": "Blood relations IV — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_IV_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br4-07",
+      "generated_at": "2026-04-26T23:30:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_IV_MIXED_00007"
+    }
+  ]
+}
