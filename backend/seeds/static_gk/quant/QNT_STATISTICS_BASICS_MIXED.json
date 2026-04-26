@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Statistics basics — mixed tiers",
+  "topic_code": "QNT_STATISTICS_BASICS_MIXED",
+  "description": "Mean, median, mode, range, variance, standard deviation, weighted mean",
+  "questions": [
+    {
+      "stem": "The arithmetic mean of 12, 14, 16, 18, 20 is:",
+      "options": [
+        {"option_text": "14", "is_correct": false},
+        {"option_text": "16", "is_correct": true},
+        {"option_text": "17", "is_correct": false},
+        {"option_text": "18", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Sum = 12+14+16+18+20 = 80. Mean = 80/5 = 16. Distractor 14 picks the second value. Distractor 17 takes (12+20)/2 + 1, an averaging error. Distractor 18 picks the fourth value. For an evenly-spaced sequence the mean equals the middle value.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Statistics basics — mixed tiers",
+      "topic_code": "QNT_STATISTICS_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-stat-01",
+      "generated_at": "2026-04-26T10:05:00+00:00",
+      "id": "sgk_QNT_STATISTICS_BASICS_MIXED_00001"
+    },
+    {
+      "stem": "The MEDIAN of 5, 8, 12, 15, 20, 22, 25 is:",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "15", "is_correct": true},
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "20", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Median = middle value of sorted list. Already sorted; 7 values → middle = 4th value = 15. Distractor 12 picks the 3rd value. Distractor 16 = (12+20)/2, treating it like an even-length list. Distractor 20 picks the 5th value.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Statistics basics — mixed tiers",
+      "topic_code": "QNT_STATISTICS_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-stat-02",
+      "generated_at": "2026-04-26T10:05:00+00:00",
+      "id": "sgk_QNT_STATISTICS_BASICS_MIXED_00002"
+    },
+    {
+      "stem": "The MODE of 4, 7, 7, 9, 10, 11, 11, 11, 12 is:",
+      "options": [
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "11", "is_correct": true},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "10", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Mode = most frequent value. Counts — 7 appears 2×; 11 appears 3×; others 1×. Mode = 11. Distractor 7 = 2nd most frequent. Distractor 9 = the median, not the mode. Distractor 10 = a randomly visible middle value.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Statistics basics — mixed tiers",
+      "topic_code": "QNT_STATISTICS_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-stat-03",
+      "generated_at": "2026-04-26T10:05:00+00:00",
+      "id": "sgk_QNT_STATISTICS_BASICS_MIXED_00003"
+    },
+    {
+      "stem": "The RANGE of the data 18, 22, 14, 30, 25, 19 is:",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "16", "is_correct": true},
+        {"option_text": "44", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Range = max − min = 30 − 14 = 16. Distractor 12 = 30 − 18 (used 2nd-smallest). Distractor 44 = 30 + 14 (added instead of subtracted). Distractor 30 = the maximum value alone.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Statistics basics — mixed tiers",
+      "topic_code": "QNT_STATISTICS_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-stat-04",
+      "generated_at": "2026-04-26T10:05:00+00:00",
+      "id": "sgk_QNT_STATISTICS_BASICS_MIXED_00004"
+    },
+    {
+      "stem": "The mean of 5 numbers is 18. If a 6th number is added and the new mean becomes 20, the 6th number is:",
+      "options": [
+        {"option_text": "22", "is_correct": false},
+        {"option_text": "30", "is_correct": true},
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "25", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Original sum = 5 × 18 = 90. New sum = 6 × 20 = 120. Sixth number = 120 − 90 = 30. Distractor 22 = old mean + 4 (rough adjustment). Distractor 20 = the new mean itself. Distractor 25 = average of 20 and 30.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Statistics basics — mixed tiers",
+      "topic_code": "QNT_STATISTICS_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-stat-05",
+      "generated_at": "2026-04-26T10:05:00+00:00",
+      "id": "sgk_QNT_STATISTICS_BASICS_MIXED_00005"
+    },
+    {
+      "stem": "Which measure of central tendency is most affected by EXTREME (outlier) values?",
+      "options": [
+        {"option_text": "Median", "is_correct": false},
+        {"option_text": "Mean", "is_correct": true},
+        {"option_text": "Mode", "is_correct": false},
+        {"option_text": "Range", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Mean uses every value, so a single very large or small number shifts it sharply. Median uses position only, mode uses frequency only — both are robust to outliers. Range is a measure of spread, not central tendency. Examples: mean income vs median income — outliers (a few billionaires) push mean far above median.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Statistics basics — mixed tiers",
+      "topic_code": "QNT_STATISTICS_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-stat-06",
+      "generated_at": "2026-04-26T10:05:00+00:00",
+      "id": "sgk_QNT_STATISTICS_BASICS_MIXED_00006"
+    },
+    {
+      "stem": "The standard deviation of 4, 4, 4, 4, 4 is:",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "0", "is_correct": true},
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Standard deviation measures spread from the mean. All 5 values equal the mean (4), so each deviation is 0; SD = 0. Distractor 4 is the mean itself, not the SD. Distractor 1 reflects the misconception that SD must be at least 1. Distractor 2 is 4/2, an arbitrary guess. SD = 0 if and only if all values are identical.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Statistics basics — mixed tiers",
+      "topic_code": "QNT_STATISTICS_BASICS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-stat-07",
+      "generated_at": "2026-04-26T10:05:00+00:00",
+      "id": "sgk_QNT_STATISTICS_BASICS_MIXED_00007"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Algebra basics — mixed tiers",
+  "topic_code": "QNT_ALGEBRA_BASICS_MIXED",
+  "description": "Linear & simultaneous equations, quadratic, identities, factoring",
+  "questions": [
+    {
+      "stem": "If 3x + 7 = 25, then x equals:",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "8", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "3x + 7 = 25 → 3x = 18 → x = 6. Distractor 5 corresponds to the error of subtracting 7/3 (≈2.3) instead of 7. Distractor 7 comes from solving 3x = 21 (forgetting the 25 on the right). Distractor 8 from solving 3x = 24.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Algebra basics — mixed tiers",
+      "topic_code": "QNT_ALGEBRA_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-alg-01",
+      "generated_at": "2026-04-26T10:00:00+00:00",
+      "id": "sgk_QNT_ALGEBRA_BASICS_MIXED_00001"
+    },
+    {
+      "stem": "If x + y = 10 and x − y = 4, what is the value of x?",
+      "options": [
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "7", "is_correct": true},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "8", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Add the two equations: 2x = 14 → x = 7. Then y = 3. Distractor 5 from averaging without solving (10/2). Distractor 6 from x = (10−4) wrongly. Distractor 8 from sub-error 10−2 = 8.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Algebra basics — mixed tiers",
+      "topic_code": "QNT_ALGEBRA_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-alg-02",
+      "generated_at": "2026-04-26T10:00:00+00:00",
+      "id": "sgk_QNT_ALGEBRA_BASICS_MIXED_00002"
+    },
+    {
+      "stem": "The roots of the quadratic x² − 5x + 6 = 0 are:",
+      "options": [
+        {"option_text": "1 and 6", "is_correct": false},
+        {"option_text": "2 and 3", "is_correct": true},
+        {"option_text": "−2 and −3", "is_correct": false},
+        {"option_text": "−1 and −6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Factor: x² − 5x + 6 = (x − 2)(x − 3). Roots = 2, 3. Sum = 5, product = 6 (Vieta's). Distractor 1,6 — sum 7, product 6: matches product but not sum. Distractor −2,−3 — sum −5 (wrong sign). −1,−6 — sum −7, product 6: wrong sign on sum.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Algebra basics — mixed tiers",
+      "topic_code": "QNT_ALGEBRA_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-alg-03",
+      "generated_at": "2026-04-26T10:00:00+00:00",
+      "id": "sgk_QNT_ALGEBRA_BASICS_MIXED_00003"
+    },
+    {
+      "stem": "If a + b = 7 and ab = 12, the value of a² + b² is:",
+      "options": [
+        {"option_text": "49", "is_correct": false},
+        {"option_text": "25", "is_correct": true},
+        {"option_text": "37", "is_correct": false},
+        {"option_text": "73", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Use identity (a+b)² = a² + b² + 2ab. So a²+b² = (a+b)² − 2ab = 49 − 24 = 25. Distractor 49 = the squared sum, no subtraction. Distractor 37 = 49 − 12 (subtracted ab once instead of 2ab). Distractor 73 = 49 + 24 (added instead of subtracted).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Algebra basics — mixed tiers",
+      "topic_code": "QNT_ALGEBRA_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-alg-04",
+      "generated_at": "2026-04-26T10:00:00+00:00",
+      "id": "sgk_QNT_ALGEBRA_BASICS_MIXED_00004"
+    },
+    {
+      "stem": "The sum of the roots of the quadratic 2x² − 6x + 4 = 0 is:",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "−3", "is_correct": false},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "For ax² + bx + c = 0, sum of roots = −b/a = −(−6)/2 = 3. Verify by factoring: 2x² − 6x + 4 = 2(x² − 3x + 2) = 2(x−1)(x−2); roots 1 and 2; sum = 3. Distractor 2 = product of roots (c/a = 4/2). Distractor −3 = sign error (−b read as b). Distractor 6 = took −b without dividing by a.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Algebra basics — mixed tiers",
+      "topic_code": "QNT_ALGEBRA_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-alg-05",
+      "generated_at": "2026-04-26T10:00:00+00:00",
+      "id": "sgk_QNT_ALGEBRA_BASICS_MIXED_00005"
+    },
+    {
+      "stem": "If x² − y² = 27 and x + y = 9, then x − y equals:",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Identity: x² − y² = (x+y)(x−y) → 27 = 9(x−y) → x−y = 3. Then from x+y = 9 and x−y = 3, x = 6, y = 3. Distractor 2 from misreading 27/(9+1). Distractor 4 from 36/9 (squaring error). Distractor 9 from copying x+y without using identity.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Algebra basics — mixed tiers",
+      "topic_code": "QNT_ALGEBRA_BASICS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-alg-06",
+      "generated_at": "2026-04-26T10:00:00+00:00",
+      "id": "sgk_QNT_ALGEBRA_BASICS_MIXED_00006"
+    },
+    {
+      "stem": "If 2x − 3y = 7 and 4x + 5y = 25, the value of y is:",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "1", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "−1", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Multiply first equation by 2: 4x − 6y = 14. Subtract from second: (4x+5y) − (4x−6y) = 25 − 14 → 11y = 11 → y = 1. Then 2x = 7 + 3(1) = 10, x = 5. Verify: 4(5)+5(1) = 25 ✓. Distractor 2 from mis-aligning coefficients. Distractor 3 from solving for x not y. Distractor −1 from sign-flip during elimination.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Algebra basics — mixed tiers",
+      "topic_code": "QNT_ALGEBRA_BASICS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-alg-07",
+      "generated_at": "2026-04-26T10:00:00+00:00",
+      "id": "sgk_QNT_ALGEBRA_BASICS_MIXED_00007"
+    }
+  ]
+}
