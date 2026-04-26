@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Non-verbal pattern recognition (text descriptions) — mixed tiers",
+  "topic_code": "REAS_NON_VERBAL_PATTERN_MIXED",
+  "description": "Pattern + symbol description style problems suitable for text rendering",
+  "questions": [
+    {
+      "stem": "In a series of figures, the first three are squares with 1, 2, 3 dots respectively. The next figure most logically would be a square with:",
+      "options": [
+        {"option_text": "5 dots, doubling the previous count", "is_correct": false},
+        {"option_text": "4 dots, continuing the +1 pattern", "is_correct": true},
+        {"option_text": "9 dots, squaring the position number", "is_correct": false},
+        {"option_text": "1 dot, restarting the counting pattern", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Pattern: each next square has one more dot than the previous (1, 2, 3, ?). Next = 4. Distractor 1 doubles (would give 6). Distractor 3 squares position (4²=16, mismatch). Distractor 4 — no reason to restart.",
+      "subject": "Reasoning",
+      "topic": "Non-verbal pattern recognition (text descriptions) — mixed tiers",
+      "topic_code": "REAS_NON_VERBAL_PATTERN_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-nv-01",
+      "generated_at": "2026-04-26T15:35:00+00:00",
+      "id": "sgk_REAS_NON_VERBAL_PATTERN_MIXED_00001"
+    },
+    {
+      "stem": "Each step of a series has 1 more side than the previous shape: triangle (3), square (4), pentagon (5), ?. The next shape is:",
+      "options": [
+        {"option_text": "A heptagon, having seven sides total", "is_correct": false},
+        {"option_text": "A hexagon, having six sides total", "is_correct": true},
+        {"option_text": "An octagon, having eight sides total", "is_correct": false},
+        {"option_text": "A quadrilateral, having four sides total", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Pattern: 3, 4, 5, 6, ... → hexagon (6 sides). Distractor 1 = 7 sides (skipped a step). Distractor 3 = 8 sides. Distractor 4 = quad goes back to 4.",
+      "subject": "Reasoning",
+      "topic": "Non-verbal pattern recognition (text descriptions) — mixed tiers",
+      "topic_code": "REAS_NON_VERBAL_PATTERN_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-nv-02",
+      "generated_at": "2026-04-26T15:35:00+00:00",
+      "id": "sgk_REAS_NON_VERBAL_PATTERN_MIXED_00002"
+    },
+    {
+      "stem": "Symbols in a sequence: △, △△, △△△, △△△△, ?. The next group has:",
+      "options": [
+        {"option_text": "6 triangles in the next group", "is_correct": false},
+        {"option_text": "5 triangles in the next group", "is_correct": true},
+        {"option_text": "8 triangles in the next group", "is_correct": false},
+        {"option_text": "1 triangle in the next group", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Linear count: 1, 2, 3, 4, → 5. Distractor 1 jumps by 2. Distractor 3 doubles. Distractor 4 restarts.",
+      "subject": "Reasoning",
+      "topic": "Non-verbal pattern recognition (text descriptions) — mixed tiers",
+      "topic_code": "REAS_NON_VERBAL_PATTERN_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-nv-03",
+      "generated_at": "2026-04-26T15:35:00+00:00",
+      "id": "sgk_REAS_NON_VERBAL_PATTERN_MIXED_00003"
+    },
+    {
+      "stem": "A clock-rotation pattern: at step 1 hand at 12, step 2 at 3, step 3 at 6, step 4 at 9. At step 5 the hand will point at:",
+      "options": [
+        {"option_text": "Position 6 of the clock face", "is_correct": false},
+        {"option_text": "Position 12 (back to start)", "is_correct": true},
+        {"option_text": "Position 9 of the clock face", "is_correct": false},
+        {"option_text": "Position 3 of the clock face", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Each step the hand rotates 90° clockwise: 12→3→6→9→12. Cycle of 4. Step 5 returns to start (12). Distractor 1, 3, 4 are intermediate positions.",
+      "subject": "Reasoning",
+      "topic": "Non-verbal pattern recognition (text descriptions) — mixed tiers",
+      "topic_code": "REAS_NON_VERBAL_PATTERN_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-nv-04",
+      "generated_at": "2026-04-26T15:35:00+00:00",
+      "id": "sgk_REAS_NON_VERBAL_PATTERN_MIXED_00004"
+    },
+    {
+      "stem": "Pattern series: 2, 4, 8, 16, ?. The next number is:",
+      "options": [
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "32", "is_correct": true},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Geometric series: each term doubles the previous. 16 × 2 = 32. Distractor 20 = 16+4 (arithmetic). Distractor 24 = 16+8. Distractor 30 = 16+14.",
+      "subject": "Reasoning",
+      "topic": "Non-verbal pattern recognition (text descriptions) — mixed tiers",
+      "topic_code": "REAS_NON_VERBAL_PATTERN_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-nv-05",
+      "generated_at": "2026-04-26T15:35:00+00:00",
+      "id": "sgk_REAS_NON_VERBAL_PATTERN_MIXED_00005"
+    },
+    {
+      "stem": "In the sequence 'A, BB, CCC, DDDD, ?', the next group has:",
+      "options": [
+        {"option_text": "5 letters of D", "is_correct": false},
+        {"option_text": "5 letters of E", "is_correct": true},
+        {"option_text": "4 letters of F", "is_correct": false},
+        {"option_text": "6 letters of E", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Pattern: nth term = n copies of the nth letter. Position 5 → letter E, 5 copies → EEEEE. Distractor 1 keeps the letter D. Distractor 3 advances letter but keeps count 4. Distractor 4 jumps count to 6.",
+      "subject": "Reasoning",
+      "topic": "Non-verbal pattern recognition (text descriptions) — mixed tiers",
+      "topic_code": "REAS_NON_VERBAL_PATTERN_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-nv-06",
+      "generated_at": "2026-04-26T15:35:00+00:00",
+      "id": "sgk_REAS_NON_VERBAL_PATTERN_MIXED_00006"
+    },
+    {
+      "stem": "A grid pattern shows: row 1 has 1 box, row 2 has 4 boxes, row 3 has 9 boxes. Row 4 will have:",
+      "options": [
+        {"option_text": "12 boxes (linear continuation)", "is_correct": false},
+        {"option_text": "16 boxes (square pattern)", "is_correct": true},
+        {"option_text": "10 boxes (diagonal pattern)", "is_correct": false},
+        {"option_text": "20 boxes (different jump rule)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Row n has n² boxes: 1, 4, 9, 16, 25, ... (perfect squares). Row 4 = 16. Distractor 1 = 9+3. Distractor 3 = 9+1. Distractor 4 = 9+11.",
+      "subject": "Reasoning",
+      "topic": "Non-verbal pattern recognition (text descriptions) — mixed tiers",
+      "topic_code": "REAS_NON_VERBAL_PATTERN_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-nv-07",
+      "generated_at": "2026-04-26T15:35:00+00:00",
+      "id": "sgk_REAS_NON_VERBAL_PATTERN_MIXED_00007"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "DC and AC circuits — mixed tiers",
+  "topic_code": "PHY_DC_AC_CIRCUITS_MIXED",
+  "description": "Ohm's law, series-parallel resistors, Kirchhoff's laws, AC vs DC, RMS values",
+  "questions": [
+    {
+      "stem": "OHM'S LAW states the relationship V = IR. The unit of resistance R is the:",
+      "options": [
+        {"option_text": "Ampere, the unit of electric current flowing", "is_correct": false},
+        {"option_text": "Ohm, equal to one volt per ampere ratio", "is_correct": true},
+        {"option_text": "Volt, the unit of potential difference", "is_correct": false},
+        {"option_text": "Watt, the unit of power dissipated as heat", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "OHM (Ω) — unit of resistance. 1 Ω = 1 V/A. Volt = unit of voltage / EMF. Ampere = unit of current. Watt = unit of power (P = VI). Ohm's law applies for OHMIC conductors (linear V-I); not for diodes / non-linear materials.",
+      "subject": "Physics",
+      "topic": "DC and AC circuits — mixed tiers",
+      "topic_code": "PHY_DC_AC_CIRCUITS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-cir-01",
+      "generated_at": "2026-04-26T15:50:00+00:00",
+      "id": "sgk_PHY_DC_AC_CIRCUITS_MIXED_00001"
+    },
+    {
+      "stem": "Three resistors of 6 Ω, 6 Ω and 6 Ω are connected in PARALLEL. The equivalent resistance is:",
+      "options": [
+        {"option_text": "18 Ω, the sum of all three resistor values", "is_correct": false},
+        {"option_text": "2 Ω, equal to one resistor divided by three", "is_correct": true},
+        {"option_text": "6 Ω, the same as a single resistor's value", "is_correct": false},
+        {"option_text": "9 Ω, average of three resistors plus one", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Parallel: 1/R = 1/R₁ + 1/R₂ + 1/R₃ = 3/6 = 1/2 → R = 2 Ω. For n equal resistors of value R in parallel: R_eq = R/n. Distractor 18 = SERIES sum (R₁+R₂+R₃). Distractor 6 ignores parallel combination. Distractor 9 from arbitrary mistake.",
+      "subject": "Physics",
+      "topic": "DC and AC circuits — mixed tiers",
+      "topic_code": "PHY_DC_AC_CIRCUITS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-cir-02",
+      "generated_at": "2026-04-26T15:50:00+00:00",
+      "id": "sgk_PHY_DC_AC_CIRCUITS_MIXED_00002"
+    },
+    {
+      "stem": "The MAIN difference between DC (Direct Current) and AC (Alternating Current) is that DC:",
+      "options": [
+        {"option_text": "Flows in one constant direction throughout time", "is_correct": true},
+        {"option_text": "Periodically reverses direction at fixed frequency", "is_correct": false},
+        {"option_text": "Cannot transmit any power at long distance ever", "is_correct": false},
+        {"option_text": "Is generated only by lightning during thunderstorms", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "DC — current flows in ONE direction (e.g., from a battery, solar cell). AC — current periodically reverses direction (sinusoidal in most distribution; 50 Hz in India, 60 Hz in US). DC: simpler for electronics, batteries, electroplating. AC: easy to step up/down with transformers → ideal for long-distance transmission. HVDC links exist for very long distances. Distractor 2 describes AC, not DC. Distractors 3, 4 are false generalisations.",
+      "subject": "Physics",
+      "topic": "DC and AC circuits — mixed tiers",
+      "topic_code": "PHY_DC_AC_CIRCUITS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-cir-03",
+      "generated_at": "2026-04-26T15:50:00+00:00",
+      "id": "sgk_PHY_DC_AC_CIRCUITS_MIXED_00003"
+    },
+    {
+      "stem": "The frequency of household AC supply in India is:",
+      "options": [
+        {"option_text": "60 Hz, the standard used in North America", "is_correct": false},
+        {"option_text": "50 Hz, the standard used across most of India", "is_correct": true},
+        {"option_text": "100 Hz, twice the European standard rate", "is_correct": false},
+        {"option_text": "25 Hz, used in heavy electric traction systems", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "India: 50 Hz, 230 V (single phase) / 400 V (three phase). Most of the world (Europe, Africa, Asia, Australia): 50 Hz. North America (US, Canada, parts of Latin America), Japan east of Mt Fuji: 60 Hz. Choice was historical — Westinghouse + Tesla picked 60 Hz, the rest of the world standardised at 50 Hz. Distractor 4 — 25 Hz was used in older Indian railway traction (now mostly converted).",
+      "subject": "Physics",
+      "topic": "DC and AC circuits — mixed tiers",
+      "topic_code": "PHY_DC_AC_CIRCUITS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-cir-04",
+      "generated_at": "2026-04-26T15:50:00+00:00",
+      "id": "sgk_PHY_DC_AC_CIRCUITS_MIXED_00004"
+    },
+    {
+      "stem": "An electric heater of 1000 W is used for 5 hours. Energy consumed in kilowatt-hours (kWh) is:",
+      "options": [
+        {"option_text": "1 kWh, equal to a thousand watt-seconds total", "is_correct": false},
+        {"option_text": "5 kWh, equal to five units of electricity used", "is_correct": true},
+        {"option_text": "10 kWh, double the actual energy used", "is_correct": false},
+        {"option_text": "50 kWh, equivalent to a month's heavy use", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Energy = Power × Time = 1 kW × 5 h = 5 kWh. Each kWh = 1 'unit' of electricity in commercial billing. Cost ≈ ₹5-10/unit in India depending on tariff slab. Distractor 1 from forgetting to multiply by hours. Distractor 3 doubles. Distractor 4 way off.",
+      "subject": "Physics",
+      "topic": "DC and AC circuits — mixed tiers",
+      "topic_code": "PHY_DC_AC_CIRCUITS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-cir-05",
+      "generated_at": "2026-04-26T15:50:00+00:00",
+      "id": "sgk_PHY_DC_AC_CIRCUITS_MIXED_00005"
+    },
+    {
+      "stem": "A FUSE in an electrical circuit is designed to:",
+      "options": [
+        {"option_text": "Step up the voltage from low to high values", "is_correct": false},
+        {"option_text": "Melt and break the circuit when current is excessive", "is_correct": true},
+        {"option_text": "Convert AC to DC for use in electronic appliances", "is_correct": false},
+        {"option_text": "Store electrical energy for later use as needed", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "FUSE — a thin wire of low-melting alloy (tin-lead, zinc) chosen so it melts when current exceeds a rated value (commonly 5 A, 10 A, 16 A). Breaks the circuit, protecting wiring + appliances from overheating + fire. Once blown, must be replaced. Modern equivalents — MCB (Miniature Circuit Breaker) which trips and can be reset; ELCB / RCCB — earth-leakage protection. Distractor 1 = transformer. Distractor 3 = rectifier. Distractor 4 = capacitor / battery.",
+      "subject": "Physics",
+      "topic": "DC and AC circuits — mixed tiers",
+      "topic_code": "PHY_DC_AC_CIRCUITS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-cir-06",
+      "generated_at": "2026-04-26T15:50:00+00:00",
+      "id": "sgk_PHY_DC_AC_CIRCUITS_MIXED_00006"
+    },
+    {
+      "stem": "The RMS (root mean square) value of an AC voltage with peak value 311 V is approximately:",
+      "options": [
+        {"option_text": "440 V, the peak times root two", "is_correct": false},
+        {"option_text": "220 V, the peak divided by root two", "is_correct": true},
+        {"option_text": "311 V, the peak value itself", "is_correct": false},
+        {"option_text": "156 V, half of the peak value", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "For sinusoidal AC: V_rms = V_peak / √2 ≈ V_peak × 0.707. So 311 / √2 ≈ 220 V — matches the household supply rating in India. RMS represents the equivalent DC voltage that would dissipate the same power in a resistor. Distractor 1 multiplies by √2 (gives peak from RMS). Distractor 3 = peak itself. Distractor 4 = peak/2 (incorrect formula).",
+      "subject": "Physics",
+      "topic": "DC and AC circuits — mixed tiers",
+      "topic_code": "PHY_DC_AC_CIRCUITS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-cir-07",
+      "generated_at": "2026-04-26T15:50:00+00:00",
+      "id": "sgk_PHY_DC_AC_CIRCUITS_MIXED_00007"
+    }
+  ]
+}
