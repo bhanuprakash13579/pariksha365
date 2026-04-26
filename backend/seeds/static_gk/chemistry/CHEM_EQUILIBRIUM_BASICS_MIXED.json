@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Chemistry",
+  "topic": "Chemical equilibrium basics — mixed tiers",
+  "topic_code": "CHEM_EQUILIBRIUM_BASICS_MIXED",
+  "description": "Reversible reactions, dynamic equilibrium, Le Chatelier's principle, Kc/Kp",
+  "questions": [
+    {
+      "stem": "At chemical equilibrium, the rates of the forward and reverse reactions are:",
+      "options": [
+        {"option_text": "Both equal to zero, so the reaction stops completely", "is_correct": false},
+        {"option_text": "Equal to each other, so concentrations stay constant", "is_correct": true},
+        {"option_text": "Forward rate is faster than the reverse rate value", "is_correct": false},
+        {"option_text": "Reverse rate is faster than the forward rate value", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "DYNAMIC equilibrium — molecular reactions continue in both directions, but rates are equal so net concentrations don't change. Equilibrium ≠ stopping. Distractor 1 — common misconception; reactions DO continue. Distractors 3 and 4 describe non-equilibrium states (where reaction proceeds in one net direction).",
+      "subject": "Chemistry",
+      "topic": "Chemical equilibrium basics — mixed tiers",
+      "topic_code": "CHEM_EQUILIBRIUM_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-chem-eq-01",
+      "generated_at": "2026-04-26T12:48:00+00:00",
+      "id": "sgk_CHEM_EQUILIBRIUM_BASICS_MIXED_00001"
+    },
+    {
+      "stem": "LE CHATELIER'S PRINCIPLE states that a system at equilibrium responds to a disturbance by:",
+      "options": [
+        {"option_text": "Speeding up both reactions until the disturbance is gone", "is_correct": false},
+        {"option_text": "Shifting in a direction that opposes the change applied", "is_correct": true},
+        {"option_text": "Reaching a new equilibrium with the same constant value", "is_correct": false},
+        {"option_text": "Producing only the original reactants and no products", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Le Chatelier (1884): if a system in equilibrium is disturbed (change in concentration, temperature, or pressure), it shifts in the direction that opposes the disturbance, restoring a new equilibrium. Examples: increase reactant → forward shift; remove product → forward shift; increase pressure → shift to side with fewer moles of gas; raise temperature → shift in endothermic direction. Distractor 3 false because Kc CAN change with temperature.",
+      "subject": "Chemistry",
+      "topic": "Chemical equilibrium basics — mixed tiers",
+      "topic_code": "CHEM_EQUILIBRIUM_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-chem-eq-02",
+      "generated_at": "2026-04-26T12:48:00+00:00",
+      "id": "sgk_CHEM_EQUILIBRIUM_BASICS_MIXED_00002"
+    },
+    {
+      "stem": "For the reaction N₂ + 3H₂ ⇌ 2NH₃ (exothermic), increasing the TEMPERATURE will:",
+      "options": [
+        {"option_text": "Shift equilibrium toward more ammonia formation", "is_correct": false},
+        {"option_text": "Shift equilibrium back toward N₂ and H₂ reactants", "is_correct": true},
+        {"option_text": "Have no effect because Kc remains exactly constant", "is_correct": false},
+        {"option_text": "Cause both reactions to halt completely at higher heat", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Forward reaction is EXOTHERMIC (releases heat). Raising temperature ADDS heat → equilibrium shifts in the ENDOTHERMIC direction (consumes heat) → REVERSE direction → less ammonia, more N₂ and H₂. Industrial Haber-Bosch process compromises: moderate temperature (~450 °C — high enough for adequate rate but not so high that equilibrium goes backwards), high pressure (~200 atm — pushes forward by Le Chatelier since 4 mol gas → 2 mol). Iron catalyst speeds up both forward and reverse equally.",
+      "subject": "Chemistry",
+      "topic": "Chemical equilibrium basics — mixed tiers",
+      "topic_code": "CHEM_EQUILIBRIUM_BASICS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-chem-eq-03",
+      "generated_at": "2026-04-26T12:48:00+00:00",
+      "id": "sgk_CHEM_EQUILIBRIUM_BASICS_MIXED_00003"
+    },
+    {
+      "stem": "Adding a CATALYST to a reaction at equilibrium will:",
+      "options": [
+        {"option_text": "Shift equilibrium toward more products being formed", "is_correct": false},
+        {"option_text": "Help equilibrium be reached faster without shifting position", "is_correct": true},
+        {"option_text": "Increase the equilibrium constant for the forward step", "is_correct": false},
+        {"option_text": "Decrease both forward and reverse reaction rates equally", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "A catalyst speeds up FORWARD AND REVERSE reactions equally → equilibrium reached faster, but POSITION of equilibrium (Kc) is UNCHANGED. Catalyst does not appear in the equilibrium expression. Industrial significance: catalysts make commercial-scale reactions feasible by reducing the time to reach equilibrium, even though they can't change the maximum yield. Distractor 1 false. Distractor 3 — catalysts don't change Kc. Distractor 4 — they INCREASE rates, not decrease.",
+      "subject": "Chemistry",
+      "topic": "Chemical equilibrium basics — mixed tiers",
+      "topic_code": "CHEM_EQUILIBRIUM_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-chem-eq-04",
+      "generated_at": "2026-04-26T12:48:00+00:00",
+      "id": "sgk_CHEM_EQUILIBRIUM_BASICS_MIXED_00004"
+    },
+    {
+      "stem": "For the reaction A(g) + B(g) ⇌ 2C(g), if the volume of the container is HALVED (pressure doubled), equilibrium will:",
+      "options": [
+        {"option_text": "Shift toward the products since they have more atoms", "is_correct": false},
+        {"option_text": "Stay in place since the moles of gas are equal on both sides", "is_correct": true},
+        {"option_text": "Shift toward the reactants since they were given first", "is_correct": false},
+        {"option_text": "The forward and reverse rates both fall to zero now", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Le Chatelier and pressure: equilibrium shifts toward the side with FEWER moles of gas when pressure is increased. Here both sides have 2 moles of gas (1+1 reactants vs 2 products) → no shift. Example: H₂ + I₂ ⇌ 2HI is also pressure-insensitive. CONTRAST: N₂ + 3H₂ ⇌ 2NH₃ has 4 → 2 moles → high pressure favours products (forward).",
+      "subject": "Chemistry",
+      "topic": "Chemical equilibrium basics — mixed tiers",
+      "topic_code": "CHEM_EQUILIBRIUM_BASICS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-chem-eq-05",
+      "generated_at": "2026-04-26T12:48:00+00:00",
+      "id": "sgk_CHEM_EQUILIBRIUM_BASICS_MIXED_00005"
+    },
+    {
+      "stem": "If the equilibrium constant Kc for a reaction is VERY LARGE (e.g., 10⁶), it means at equilibrium:",
+      "options": [
+        {"option_text": "Reactants are present in much larger amounts than products", "is_correct": false},
+        {"option_text": "Products are formed almost completely from the reactants", "is_correct": true},
+        {"option_text": "The reaction proceeds equally in both directions still", "is_correct": false},
+        {"option_text": "The reaction has not started since rate is far too low", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Kc = [products]^stoich / [reactants]^stoich. Large Kc → numerator (products) >> denominator (reactants) → equilibrium lies far toward the products. Practical implication: reaction is essentially complete (e.g., combustion reactions have Kc ~10⁴⁰, considered to 'go to completion'). Small Kc (<<1) → equilibrium lies toward reactants; very little product forms. Kc ≈ 1 → comparable amounts of both. Note: Kc only describes the equilibrium position, NOT the rate.",
+      "subject": "Chemistry",
+      "topic": "Chemical equilibrium basics — mixed tiers",
+      "topic_code": "CHEM_EQUILIBRIUM_BASICS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-chem-eq-06",
+      "generated_at": "2026-04-26T12:48:00+00:00",
+      "id": "sgk_CHEM_EQUILIBRIUM_BASICS_MIXED_00006"
+    },
+    {
+      "stem": "If we DOUBLE the concentration of one of the reactants in a reversible reaction at equilibrium, the system will:",
+      "options": [
+        {"option_text": "Shift the equilibrium backward to undo the addition", "is_correct": false},
+        {"option_text": "Shift forward to consume the added reactant gradually", "is_correct": true},
+        {"option_text": "Halt all reaction since equilibrium is now disturbed", "is_correct": false},
+        {"option_text": "Decompose into the original elements automatically", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Le Chatelier: adding more reactant → forward reaction speeds up (relative to reverse) until a NEW equilibrium is reached, with more products formed. Some of the added reactant gets consumed; final concentration of reactant is higher than original equilibrium but lower than the disturbed value. Industrial principle: removing product (or adding reactant) keeps reaction going; this is exploited in continuous processes. Distractor 1 reverses direction. Distractor 3 — equilibrium doesn't HALT. Distractor 4 — false.",
+      "subject": "Chemistry",
+      "topic": "Chemical equilibrium basics — mixed tiers",
+      "topic_code": "CHEM_EQUILIBRIUM_BASICS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-chem-eq-07",
+      "generated_at": "2026-04-26T12:48:00+00:00",
+      "id": "sgk_CHEM_EQUILIBRIUM_BASICS_MIXED_00007"
+    }
+  ]
+}

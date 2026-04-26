@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Problems on trains II — mixed tiers",
+  "topic_code": "QNT_TRAINS_II_MIXED",
+  "description": "Train passing pole, platform, person, opposite-direction, same-direction crossing",
+  "questions": [
+    {
+      "stem": "A train 150 m long is moving at 54 km/h. The time it takes to pass a stationary pole is:",
+      "options": [
+        {"option_text": "8 seconds", "is_correct": false},
+        {"option_text": "10 seconds", "is_correct": true},
+        {"option_text": "12 seconds", "is_correct": false},
+        {"option_text": "15 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Speed = 54 km/h = 54 × 5/18 = 15 m/s. Time = length / speed = 150 / 15 = 10 s. Distractor 8 s comes from 150/18.75 (used 67.5 km/h). Distractor 12 s from 150/12.5. Distractor 15 s confuses the speed with the time directly.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains II — mixed tiers",
+      "topic_code": "QNT_TRAINS_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tr2-01",
+      "generated_at": "2026-04-26T12:30:00+00:00",
+      "id": "sgk_QNT_TRAINS_II_MIXED_00001"
+    },
+    {
+      "stem": "A train 200 m long is travelling at 72 km/h. How long does it take to cross a platform 100 m long?",
+      "options": [
+        {"option_text": "12 seconds", "is_correct": false},
+        {"option_text": "15 seconds", "is_correct": true},
+        {"option_text": "18 seconds", "is_correct": false},
+        {"option_text": "20 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "When crossing a platform, the train covers (its own length + platform length) = 200 + 100 = 300 m. Speed = 72 km/h = 20 m/s. Time = 300 / 20 = 15 s. Distractor 12 s only counts platform length (100/8.33). Distractor 18 s from 360/20 (added an extra 60 m by mistake). Distractor 20 s = (200+200)/20 (over-counts platform).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains II — mixed tiers",
+      "topic_code": "QNT_TRAINS_II_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tr2-02",
+      "generated_at": "2026-04-26T12:30:00+00:00",
+      "id": "sgk_QNT_TRAINS_II_MIXED_00002"
+    },
+    {
+      "stem": "Two trains, each 120 m long, are running in OPPOSITE directions at 36 km/h and 54 km/h. The time taken to cross each other completely is:",
+      "options": [
+        {"option_text": "9.6 seconds", "is_correct": true},
+        {"option_text": "12 seconds", "is_correct": false},
+        {"option_text": "16 seconds", "is_correct": false},
+        {"option_text": "24 seconds", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Opposite direction → relative speed = sum = 36 + 54 = 90 km/h = 90 × 5/18 = 25 m/s. Combined length = 120 + 120 = 240 m. Time = 240 / 25 = 9.6 s. Distractor 12 s from 240/20 (used 72 km/h relative). Distractor 16 s from 240/15 (used 54 km/h alone). Distractor 24 s from 240/10 (used 36 km/h alone).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains II — mixed tiers",
+      "topic_code": "QNT_TRAINS_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tr2-03",
+      "generated_at": "2026-04-26T12:30:00+00:00",
+      "id": "sgk_QNT_TRAINS_II_MIXED_00003"
+    },
+    {
+      "stem": "Two trains 150 m and 100 m long are moving in the SAME direction at 60 km/h and 40 km/h. The faster train overtakes the slower in:",
+      "options": [
+        {"option_text": "30 seconds", "is_correct": false},
+        {"option_text": "45 seconds", "is_correct": true},
+        {"option_text": "60 seconds", "is_correct": false},
+        {"option_text": "90 seconds", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Same direction → relative speed = difference = 60 − 40 = 20 km/h = 20 × 5/18 = 50/9 m/s ≈ 5.56 m/s. Combined length = 150 + 100 = 250 m. Time = 250 / (50/9) = 250 × 9/50 = 45 s. Distractor 30 s would require 60 km/h relative speed (treats it as opposite direction). Distractor 60 s from 250/4.17 (used wrong conversion). Distractor 90 s = double the correct value.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains II — mixed tiers",
+      "topic_code": "QNT_TRAINS_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tr2-04",
+      "generated_at": "2026-04-26T12:30:00+00:00",
+      "id": "sgk_QNT_TRAINS_II_MIXED_00004"
+    },
+    {
+      "stem": "A train passes a person walking at 5 km/h in the SAME direction in 9 seconds. If the train is 150 m long, the speed of the train is:",
+      "options": [
+        {"option_text": "55 km/h", "is_correct": false},
+        {"option_text": "65 km/h", "is_correct": true},
+        {"option_text": "75 km/h", "is_correct": false},
+        {"option_text": "60 km/h", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Relative speed of train w.r.t. person = 150 m / 9 s = 50/3 m/s = 50/3 × 18/5 = 60 km/h. Since train and person are in same direction, relative speed = train speed − 5 km/h. So train speed = 60 + 5 = 65 km/h. Distractor 55 km/h subtracts 5 instead of adding (wrong direction). Distractor 75 km/h adds 15 (wrong magnitude). Distractor 60 km/h forgets to add the person's speed.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains II — mixed tiers",
+      "topic_code": "QNT_TRAINS_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tr2-05",
+      "generated_at": "2026-04-26T12:30:00+00:00",
+      "id": "sgk_QNT_TRAINS_II_MIXED_00005"
+    },
+    {
+      "stem": "A 180-m-long train crosses a bridge in 24 seconds at 45 km/h. The length of the bridge is:",
+      "options": [
+        {"option_text": "100 m", "is_correct": false},
+        {"option_text": "120 m", "is_correct": true},
+        {"option_text": "150 m", "is_correct": false},
+        {"option_text": "180 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Speed = 45 × 5/18 = 12.5 m/s. Total distance covered in 24 s = 12.5 × 24 = 300 m. This equals (train + bridge) = 180 + bridge. So bridge = 300 − 180 = 120 m. Distractor 100 m from 280 − 180 (used 11.67 m/s wrongly). Distractor 150 m = total/2 (forgot subtract). Distractor 180 m equals the train length (assumes bridge equals train).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains II — mixed tiers",
+      "topic_code": "QNT_TRAINS_II_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tr2-06",
+      "generated_at": "2026-04-26T12:30:00+00:00",
+      "id": "sgk_QNT_TRAINS_II_MIXED_00006"
+    },
+    {
+      "stem": "A train running at 90 km/h crosses a man running at 9 km/h in the OPPOSITE direction in 4 seconds. The length of the train is:",
+      "options": [
+        {"option_text": "90 m", "is_correct": false},
+        {"option_text": "110 m", "is_correct": true},
+        {"option_text": "100 m", "is_correct": false},
+        {"option_text": "125 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Opposite direction → relative speed = 90 + 9 = 99 km/h = 99 × 5/18 = 27.5 m/s. Length = relative speed × time = 27.5 × 4 = 110 m. Distractor 90 m comes from using 90 km/h alone. Distractor 100 m = 90 km/h × 4 s ÷ 18/5 (rounded). Distractor 125 m = 31.25 × 4 (used 112.5 km/h).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Problems on trains II — mixed tiers",
+      "topic_code": "QNT_TRAINS_II_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-qnt-tr2-07",
+      "generated_at": "2026-04-26T12:30:00+00:00",
+      "id": "sgk_QNT_TRAINS_II_MIXED_00007"
+    }
+  ]
+}
