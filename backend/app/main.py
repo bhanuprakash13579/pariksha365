@@ -12,20 +12,91 @@ import os
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Automatically drop and create database tables on startup (WIPES DATA!)
-    async with engine.begin() as conn:
-        if os.getenv("WIPE_DB_ON_STARTUP") == "True":
-            print("WIPE_DB_ON_STARTUP flag is enabled. Dropping all tables...")
-            if engine.dialect.name == "postgresql":
-                from sqlalchemy import text
-                print("Postgres dialect detected. Dropping old dependent tables via CASCADE...")
-                await conn.execute(text("DROP TABLE IF EXISTS options CASCADE;"))
-            await conn.run_sync(Base.metadata.drop_all)
-        await conn.run_sync(Base.metadata.create_all)
-        
+    try:
+        async with engine.begin() as conn:
+            if os.getenv("WIPE_DB_ON_STARTUP") == "True":
+                print("WIPE_DB_ON_STARTUP flag is enabled. Dropping all tables...")
+                if engine.dialect.name == "postgresql":
+                    from sqlalchemy import text
+                    print("Postgres dialect detected. Dropping old dependent tables via CASCADE...")
+                    await conn.execute(text("DROP TABLE IF EXISTS options CASCADE;"))
+                await conn.run_sync(Base.metadata.drop_all)
+            await conn.run_sync(Base.metadata.create_all)
+        print("STARTUP: Base.metadata.create_all completed")
+    except Exception as create_err:
+        # Don't let a schema-creation problem block the rest of startup —
+        # in particular, the admin bootstrap MUST run so the user can always
+        # log in with the env-var password even if a new model has a
+        # migration-style problem.
+        print(f"STARTUP: create_all failed (continuing anyway): {create_err!r}")
+
     from app.core.database import SessionLocal
     from app.models.category import Category
     from app.models.subcategory import SubCategory
     from sqlalchemy.future import select
+
+    # ADMIN BOOTSTRAP — runs BEFORE other startup work so a problem in
+    # category seeding or self-heal can never block the admin from logging in.
+    # Wrapped in its own session so failures here don't poison later work.
+    async with SessionLocal() as db:
+        admin_boot_pw = os.getenv("ADMIN_BOOTSTRAP_PASSWORD", "").strip()
+        if not admin_boot_pw:
+            print(
+                "ADMIN BOOTSTRAP: ADMIN_BOOTSTRAP_PASSWORD env var is EMPTY — "
+                "skipping. Set it on Railway to enable env-driven admin password."
+            )
+        else:
+            try:
+                from app.models.role import Role
+                from app.models.user import User
+                from app.core.security import get_password_hash
+                admin_email = (
+                    os.getenv("ADMIN_BOOTSTRAP_EMAIL", "").strip()
+                    or "admin@pariksha365.in"
+                )
+                admin_name = os.getenv("ADMIN_BOOTSTRAP_NAME", "Admin").strip() or "Admin"
+
+                role_res = await db.execute(select(Role).where(Role.name == "Admin"))
+                admin_role = role_res.scalars().first()
+                if admin_role is None:
+                    admin_role = Role(name="Admin")
+                    db.add(admin_role)
+                    await db.commit()
+                    await db.refresh(admin_role)
+                    print(f"ADMIN BOOTSTRAP: created 'Admin' role id={admin_role.id}")
+
+                new_hash = get_password_hash(admin_boot_pw)
+                user_res = await db.execute(select(User).where(User.email == admin_email))
+                admin_user = user_res.scalars().first()
+                if admin_user is None:
+                    admin_user = User(
+                        name=admin_name,
+                        email=admin_email,
+                        password_hash=new_hash,
+                        role_id=admin_role.id,
+                        is_active=True,
+                    )
+                    db.add(admin_user)
+                    await db.commit()
+                    print(
+                        f"ADMIN BOOTSTRAP_SUCCESS: created admin user "
+                        f"email={admin_email} hash_prefix={new_hash[:7]}... "
+                        f"hash_len={len(new_hash)} env_pw_len={len(admin_boot_pw)}"
+                    )
+                else:
+                    admin_user.role_id = admin_role.id
+                    admin_user.password_hash = new_hash
+                    admin_user.is_active = True
+                    await db.commit()
+                    print(
+                        f"ADMIN BOOTSTRAP_SUCCESS: rehashed admin password "
+                        f"email={admin_email} hash_prefix={new_hash[:7]}... "
+                        f"hash_len={len(new_hash)} env_pw_len={len(admin_boot_pw)} "
+                        f"is_active={admin_user.is_active}"
+                    )
+            except Exception as e:
+                # Loud failure — visible in Railway logs.
+                print(f"ADMIN BOOTSTRAP_FAILED: {type(e).__name__}: {e!r}")
 
     async with SessionLocal() as db:
         result = await db.execute(select(Category).limit(1))
@@ -56,67 +127,6 @@ async def lifespan(app: FastAPI):
                 for j, sub in enumerate(c["subs"]):
                     db.add(SubCategory(category_id=cat_db.id, name=sub, order=j, is_enabled=True))
             await db.commit()
-
-        # ADMIN BOOTSTRAP — simple and unconditional.
-        #
-        # Contract (user-preferred, 2026-04-21): as long as
-        # ADMIN_BOOTSTRAP_PASSWORD is set in the Railway env, the admin user
-        # logs in with exactly that password. Every time. No force flag, no
-        # dance with another env var.
-        #
-        # If the admin user does not exist, create it. If it exists, re-hash
-        # the password to match the env value and make sure role +
-        # is_active are correct. Idempotent: same env value on every boot
-        # means no effective change.
-        #
-        # Trade-off: if you change the admin password via the UI, the next
-        # redeploy will reset it back to ADMIN_BOOTSTRAP_PASSWORD. This is
-        # the desired behaviour — the env var is the single source of truth.
-        admin_boot_pw = os.getenv("ADMIN_BOOTSTRAP_PASSWORD", "").strip()
-        if admin_boot_pw:
-            try:
-                from app.models.role import Role
-                from app.models.user import User
-                from app.core.security import get_password_hash
-                admin_email = (
-                    os.getenv("ADMIN_BOOTSTRAP_EMAIL", "").strip()
-                    or "admin@pariksha365.in"
-                )
-                admin_name = os.getenv("ADMIN_BOOTSTRAP_NAME", "Admin").strip() or "Admin"
-
-                role_res = await db.execute(select(Role).where(Role.name == "Admin"))
-                admin_role = role_res.scalars().first()
-                if admin_role is None:
-                    admin_role = Role(name="Admin")
-                    db.add(admin_role)
-                    await db.commit()
-                    await db.refresh(admin_role)
-                    print(f"ADMIN BOOTSTRAP: created 'Admin' role id={admin_role.id}")
-
-                user_res = await db.execute(select(User).where(User.email == admin_email))
-                admin_user = user_res.scalars().first()
-                if admin_user is None:
-                    admin_user = User(
-                        name=admin_name,
-                        email=admin_email,
-                        password_hash=get_password_hash(admin_boot_pw),
-                        role_id=admin_role.id,
-                        is_active=True,
-                    )
-                    db.add(admin_user)
-                    await db.commit()
-                    print(f"ADMIN BOOTSTRAP: created admin user {admin_email}")
-                else:
-                    admin_user.role_id = admin_role.id
-                    admin_user.password_hash = get_password_hash(admin_boot_pw)
-                    admin_user.is_active = True
-                    await db.commit()
-                    print(
-                        f"ADMIN BOOTSTRAP: ensured {admin_email} has env-matching password "
-                        "(role + is_active reconciled)."
-                    )
-            except Exception as e:
-                print(f"ADMIN BOOTSTRAP failed: {e!r}")
 
         # SELF-HEAL: If EVERY category in the DB is currently is_enabled=False,
         # that almost certainly means a migration or an accidental toggle hid
