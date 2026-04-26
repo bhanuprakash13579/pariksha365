@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Machine input-output III — mixed tiers",
+  "topic_code": "REAS_INPUT_OUTPUT_III_MIXED",
+  "description": "Step-wise rearrangements with two-rule alternation, position tracking",
+  "questions": [
+    {
+      "stem": "Input: 81 coin 64 dice 49 lock 36 ring. The machine's Step I moves the LARGEST number to the leftmost position. Step I will be:",
+      "options": [
+        {
+          "option_text": "64 81 coin dice 49 lock 36 ring",
+          "is_correct": false
+        },
+        {
+          "option_text": "81 coin 64 dice 49 lock 36 ring",
+          "is_correct": true
+        },
+        {
+          "option_text": "ring 81 coin 64 dice 49 lock 36",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 ring 81 coin 64 dice 49 lock",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Largest number is 81; already at the leftmost position → Step I leaves it unchanged. Step II would move next-largest 64 to leftmost-but-one (after 81), etc. Distractor 1 swaps wrongly. Distractor 3 prepends ring (alphabetical operation). Distractor 4 prepends 36.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output III — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io3-01",
+      "generated_at": "2026-04-26T16:30:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_III_MIXED_00001"
+    },
+    {
+      "stem": "If a machine reverses the order of items at every step, an input of 'A B C D E' becomes after Step II:",
+      "options": [
+        {
+          "option_text": "E D C B A",
+          "is_correct": false
+        },
+        {
+          "option_text": "A B C D E",
+          "is_correct": true
+        },
+        {
+          "option_text": "C D E A B",
+          "is_correct": false
+        },
+        {
+          "option_text": "B C D E A",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Reversing an arrangement TWICE yields the original. Step I reverses 'A B C D E' → 'E D C B A'. Step II reverses again → 'A B C D E'. Distractor 1 is Step I result. Distractors 3, 4 are unrelated operations.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output III — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io3-02",
+      "generated_at": "2026-04-26T16:30:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_III_MIXED_00002"
+    },
+    {
+      "stem": "Input: 18 11 22 33 14 27. The machine moves all EVEN numbers to the left side and ODD to the right, preserving each side's order. Output:",
+      "options": [
+        {
+          "option_text": "11 33 27 18 22 14",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 22 14 11 33 27",
+          "is_correct": true
+        },
+        {
+          "option_text": "14 22 18 27 33 11",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 14 18 22 27 33",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Evens in input order: 18, 22, 14. Odds in input order: 11, 33, 27. Output: 18 22 14 11 33 27. Distractor 1 puts odds first. Distractor 3 reverses internal order. Distractor 4 fully sorts.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output III — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io3-03",
+      "generated_at": "2026-04-26T16:30:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_III_MIXED_00003"
+    },
+    {
+      "stem": "Input: cat 5 dog 2 bird 8 fish 1. Step I moves the smallest number rightmost. After Step I:",
+      "options": [
+        {
+          "option_text": "cat 5 dog 2 bird 8 fish 1",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 cat 5 dog 2 bird 8 fish",
+          "is_correct": false
+        },
+        {
+          "option_text": "cat 2 dog 5 bird 8 fish 1",
+          "is_correct": false
+        },
+        {
+          "option_text": "cat 5 dog 8 bird 2 fish 1",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Smallest number is 1, already at the rightmost position → Step I leaves it unchanged. Step II would move next-smallest 2 to rightmost-but-one. Distractor 2 puts 1 leftmost. Distractor 3 partially sorts. Distractor 4 random.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output III — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io3-04",
+      "generated_at": "2026-04-26T16:30:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_III_MIXED_00004"
+    },
+    {
+      "stem": "If a machine in each step swaps the first and last elements of the arrangement, after Step III the input 'P Q R S T' becomes:",
+      "options": [
+        {
+          "option_text": "P Q R S T",
+          "is_correct": false
+        },
+        {
+          "option_text": "T Q R S P",
+          "is_correct": true
+        },
+        {
+          "option_text": "S Q R P T",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q P R S T",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Step I swaps first and last: T Q R S P. Step II swaps again, restoring P Q R S T. Step III: T Q R S P (back to Step-I state). Pattern repeats every 2 steps; odd steps differ from even. Distractor 1 = Step II / Step IV. Distractors 3, 4 are different operations.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output III — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io3-05",
+      "generated_at": "2026-04-26T16:30:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_III_MIXED_00005"
+    },
+    {
+      "stem": "Input: 2 4 6 8 10. A machine adds 1 to each number per step. After Step IV the arrangement is:",
+      "options": [
+        {
+          "option_text": "3 5 7 9 11",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 8 10 12 14",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 7 9 11 13",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 12 14 16 18",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Each step adds 1 to every number. After 4 steps, each is +4. 2+4=6, 4+4=8, 6+4=10, 8+4=12, 10+4=14. Distractor 1 = Step I. Distractor 3 = Step III. Distractor 4 = Step VIII.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output III — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io3-06",
+      "generated_at": "2026-04-26T16:30:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_III_MIXED_00006"
+    },
+    {
+      "stem": "When solving machine I-O sequences, the BEST first step is to:",
+      "options": [
+        {
+          "option_text": "Memorise common pattern templates from textbooks",
+          "is_correct": false
+        },
+        {
+          "option_text": "Identify the rule by comparing two consecutive shown steps",
+          "is_correct": true
+        },
+        {
+          "option_text": "Skip immediately to the last step asked in the question",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assume the rule is alphabetical sorting always",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Comparing two consecutive steps reveals which element moved and where → identify the rule. Then apply it forward / backward. Memorisation (distractor 1) doesn't help with novel rules. Skipping (distractor 3) loses the rule. Assuming alphabetical (distractor 4) is wrong if numbers are involved.",
+      "subject": "Reasoning",
+      "topic": "Machine input-output III — mixed tiers",
+      "topic_code": "REAS_INPUT_OUTPUT_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-io3-07",
+      "generated_at": "2026-04-26T16:30:00+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_III_MIXED_00007"
+    }
+  ]
+}

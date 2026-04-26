@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Projectile motion — mixed tiers",
+  "topic_code": "PHY_PROJECTILE_MOTION_MIXED",
+  "description": "Range, height, time of flight, parabolic trajectory, optimal angle",
+  "questions": [
+    {
+      "stem": "An object thrown into the air at an angle (in absence of air resistance) follows a path that is:",
+      "options": [
+        {"option_text": "A straight line tilted at the launch angle", "is_correct": false},
+        {"option_text": "A parabola, due to constant downward gravity", "is_correct": true},
+        {"option_text": "A perfect circle around the centre of the earth", "is_correct": false},
+        {"option_text": "A spiral, due to the rotation of the earth", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Without air resistance, projectile horizontal velocity stays constant; vertical velocity changes uniformly with g. Resulting trajectory: PARABOLA. Galileo first showed this. Distractor 1 — straight line would need no gravity. Distractor 3 — circular orbit needs continuous central pull (orbital velocity). Distractor 4 — spirals would need rotational drag, irrelevant here.",
+      "subject": "Physics",
+      "topic": "Projectile motion — mixed tiers",
+      "topic_code": "PHY_PROJECTILE_MOTION_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-pj-01",
+      "generated_at": "2026-04-26T16:36:00+00:00",
+      "id": "sgk_PHY_PROJECTILE_MOTION_MIXED_00001"
+    },
+    {
+      "stem": "For a given initial speed, the angle that gives the MAXIMUM RANGE on level ground is:",
+      "options": [
+        {"option_text": "30° from the horizontal direction", "is_correct": false},
+        {"option_text": "45° from the horizontal direction", "is_correct": true},
+        {"option_text": "60° from the horizontal direction", "is_correct": false},
+        {"option_text": "90° from the horizontal direction", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Range R = u² sin(2θ) / g. Maximum when sin(2θ) = 1 → 2θ = 90° → θ = 45°. Range R_max = u²/g. Complementary angles (θ and 90°−θ) give the SAME range — e.g., 30° and 60°. Distractor 4 (90° = straight up) gives zero range.",
+      "subject": "Physics",
+      "topic": "Projectile motion — mixed tiers",
+      "topic_code": "PHY_PROJECTILE_MOTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-pj-02",
+      "generated_at": "2026-04-26T16:36:00+00:00",
+      "id": "sgk_PHY_PROJECTILE_MOTION_MIXED_00002"
+    },
+    {
+      "stem": "A ball is thrown horizontally from a tower. As it falls, the HORIZONTAL velocity component:",
+      "options": [
+        {"option_text": "Decreases due to air resistance always", "is_correct": false},
+        {"option_text": "Stays constant in absence of air resistance", "is_correct": true},
+        {"option_text": "Increases as it falls under gravity force", "is_correct": false},
+        {"option_text": "Reverses direction at the highest point", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Gravity acts only VERTICALLY. So horizontal velocity component is unchanged in absence of air drag. Vertical velocity grows linearly downward. Two motions are independent → parabolic trajectory. Distractor 1 — true with air resistance, but ideal projectile assumption ignores it. Distractor 3 — gravity is vertical, so doesn't affect horizontal. Distractor 4 — direction doesn't reverse.",
+      "subject": "Physics",
+      "topic": "Projectile motion — mixed tiers",
+      "topic_code": "PHY_PROJECTILE_MOTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-pj-03",
+      "generated_at": "2026-04-26T16:36:00+00:00",
+      "id": "sgk_PHY_PROJECTILE_MOTION_MIXED_00003"
+    },
+    {
+      "stem": "At the highest point of a projectile's path, its VERTICAL velocity is:",
+      "options": [
+        {"option_text": "Maximum at that highest point", "is_correct": false},
+        {"option_text": "Zero, just before reversing direction", "is_correct": true},
+        {"option_text": "Same as the initial vertical speed", "is_correct": false},
+        {"option_text": "Equal to the horizontal speed component", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Vertical velocity is u·sin θ at launch, decreases at rate g (deceleration on the way up), reaches ZERO at the apex (highest point), then accelerates downward. Horizontal velocity remains u·cos θ throughout. Distractor 1 — maximum at launch + landing, not at apex. Distractor 3 — same as launch only at landing. Distractor 4 — coincidence only if launch was at 45°.",
+      "subject": "Physics",
+      "topic": "Projectile motion — mixed tiers",
+      "topic_code": "PHY_PROJECTILE_MOTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-pj-04",
+      "generated_at": "2026-04-26T16:36:00+00:00",
+      "id": "sgk_PHY_PROJECTILE_MOTION_MIXED_00004"
+    },
+    {
+      "stem": "A projectile is launched at angle 30° with speed 20 m/s. Time of flight on level ground (g=10) is:",
+      "options": [
+        {"option_text": "1 second of flight time", "is_correct": false},
+        {"option_text": "2 seconds of flight time", "is_correct": true},
+        {"option_text": "3 seconds of flight time", "is_correct": false},
+        {"option_text": "4 seconds of flight time", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Time of flight T = 2u sin θ / g = 2 × 20 × sin 30° / 10 = 40 × 0.5 / 10 = 20/10 = 2 s. Distractor 1 — half. Distractor 3 — wrong sin. Distractor 4 — would correspond to a steeper angle.",
+      "subject": "Physics",
+      "topic": "Projectile motion — mixed tiers",
+      "topic_code": "PHY_PROJECTILE_MOTION_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-pj-05",
+      "generated_at": "2026-04-26T16:36:00+00:00",
+      "id": "sgk_PHY_PROJECTILE_MOTION_MIXED_00005"
+    },
+    {
+      "stem": "Two stones, one dropped from rest and another thrown horizontally, fall from the same height H. They:",
+      "options": [
+        {"option_text": "Hit the ground at very different times", "is_correct": false},
+        {"option_text": "Hit the ground at exactly the same time", "is_correct": true},
+        {"option_text": "Have very different vertical accelerations", "is_correct": false},
+        {"option_text": "Reach the ground only along straight paths", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Vertical motion is independent of horizontal motion. Both stones experience the same gravity from the same height → same time to fall (T = √(2H/g)). The thrown stone covers more horizontal distance, but reaches ground at the SAME instant as the dropped one. Classic Galileo demonstration. Distractor 1 contradicts independence. Distractor 3 — both fall under same g. Distractor 4 — thrown stone follows a parabola.",
+      "subject": "Physics",
+      "topic": "Projectile motion — mixed tiers",
+      "topic_code": "PHY_PROJECTILE_MOTION_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-pj-06",
+      "generated_at": "2026-04-26T16:36:00+00:00",
+      "id": "sgk_PHY_PROJECTILE_MOTION_MIXED_00006"
+    },
+    {
+      "stem": "The MAXIMUM HEIGHT reached by a projectile depends on which factor most directly?",
+      "options": [
+        {"option_text": "The horizontal launch speed component", "is_correct": false},
+        {"option_text": "The vertical launch speed component", "is_correct": true},
+        {"option_text": "The total mass of the projectile body", "is_correct": false},
+        {"option_text": "The colour or shape of the projectile", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Maximum height H_max = u² sin² θ / (2g) = (vertical component)² / (2g). Depends on VERTICAL launch speed, NOT horizontal. Distractor 1 — horizontal component controls range, not height. Distractor 3 — mass irrelevant in vacuum (Galileo). Distractor 4 — shape matters only with air resistance.",
+      "subject": "Physics",
+      "topic": "Projectile motion — mixed tiers",
+      "topic_code": "PHY_PROJECTILE_MOTION_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-pj-07",
+      "generated_at": "2026-04-26T16:36:00+00:00",
+      "id": "sgk_PHY_PROJECTILE_MOTION_MIXED_00007"
+    }
+  ]
+}
