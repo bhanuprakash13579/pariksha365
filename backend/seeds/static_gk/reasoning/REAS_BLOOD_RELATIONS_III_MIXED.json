@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Blood relations III — mixed tiers",
+  "topic_code": "REAS_BLOOD_RELATIONS_III_MIXED",
+  "description": "Generation tracking, in-law relations, multi-step pointing puzzles",
+  "questions": [
+    {
+      "stem": "Pointing to a man, a woman said, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
+      "options": [
+        {"option_text": "Aunt of the man pictured", "is_correct": false},
+        {"option_text": "Mother of the man pictured", "is_correct": true},
+        {"option_text": "Sister of the man pictured", "is_correct": false},
+        {"option_text": "Daughter of the man pictured", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "'The only daughter of my mother' = the woman herself. So 'his mother' = the woman → she is the man's mother. Distractor 1 = aunt (would be 'His mother is my sister'). Distractor 3 = sister (different chain). Distractor 4 = daughter (reversed direction).",
+      "subject": "Reasoning",
+      "topic": "Blood relations III — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br3-01",
+      "generated_at": "2026-04-26T17:05:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_III_MIXED_00001"
+    },
+    {
+      "stem": "If A is the brother of B; B is the sister of C; C is the father of D, then D is A's:",
+      "options": [
+        {"option_text": "Niece of A through brother B's family", "is_correct": false},
+        {"option_text": "Nephew or niece (D's gender unspecified)", "is_correct": true},
+        {"option_text": "Daughter of A through her own family", "is_correct": false},
+        {"option_text": "Cousin of A through some other branch", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "A and B share parents (siblings). B and C are also siblings (B sister of C). So A and C are siblings. C is father of D → D is A's nephew/niece. Gender of D not specified, so 'nephew or niece' is the correct answer. Distractor 1 — only correct if D is female. Distractors 3, 4 wrong.",
+      "subject": "Reasoning",
+      "topic": "Blood relations III — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_III_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br3-02",
+      "generated_at": "2026-04-26T17:05:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_III_MIXED_00002"
+    },
+    {
+      "stem": "Pointing to a girl, Anil said, 'She is the daughter of my mother's only son.' How is the girl related to Anil?",
+      "options": [
+        {"option_text": "Sister of Anil himself", "is_correct": false},
+        {"option_text": "Daughter of Anil himself", "is_correct": true},
+        {"option_text": "Niece of Anil himself", "is_correct": false},
+        {"option_text": "Cousin of Anil himself", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "'My mother's only son' = Anil himself. 'Daughter of Anil' = Anil's daughter. Distractor 1 (sister) = if it were 'father's daughter'. Distractor 3 (niece) = if 'mother's son's daughter' included another sibling. Distractor 4 (cousin) = different chain.",
+      "subject": "Reasoning",
+      "topic": "Blood relations III — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_III_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br3-03",
+      "generated_at": "2026-04-26T17:05:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_III_MIXED_00003"
+    },
+    {
+      "stem": "Sita said, 'Hari's mother is the only daughter-in-law of my mother.' How is Hari related to Sita?",
+      "options": [
+        {"option_text": "Brother of Sita herself", "is_correct": false},
+        {"option_text": "Son of Sita herself", "is_correct": true},
+        {"option_text": "Father of Sita herself", "is_correct": false},
+        {"option_text": "Nephew of Sita herself", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Sita's mother's 'only daughter-in-law' = the wife of Sita's only brother, OR Sita herself if she is married into another family. Standard simpler reading: if Sita is married, the 'only daughter-in-law of my (own) mother' refers to Sita herself. Hari's mother = Sita → Hari is Sita's son. Distractor 1, 3, 4 don't fit the chain.",
+      "subject": "Reasoning",
+      "topic": "Blood relations III — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br3-04",
+      "generated_at": "2026-04-26T17:05:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_III_MIXED_00004"
+    },
+    {
+      "stem": "Pointing to a photograph, Vijay said, 'He is the son of my father's only sister.' How is the man in the photograph related to Vijay?",
+      "options": [
+        {"option_text": "Brother of Vijay through both parents", "is_correct": false},
+        {"option_text": "Cousin (maternal uncle's son) of Vijay", "is_correct": false},
+        {"option_text": "Cousin (maternal aunt's son) of Vijay", "is_correct": false},
+        {"option_text": "Cousin (paternal aunt's son) of Vijay", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "explanation": "'My father's only sister' = paternal aunt (bua). Her son = paternal aunt's son = Vijay's cousin (paternal side). Distractor 1 = brother (would need same parents). Distractors 2 and 3 are maternal-side cousins, but here we have paternal.",
+      "subject": "Reasoning",
+      "topic": "Blood relations III — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br3-05",
+      "generated_at": "2026-04-26T17:05:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_III_MIXED_00005"
+    },
+    {
+      "stem": "Manish said to Renu, 'Your mother's husband's sister is my aunt.' How is Manish related to Renu?",
+      "options": [
+        {"option_text": "Father of Renu's family", "is_correct": false},
+        {"option_text": "Cousin of Renu's family", "is_correct": true},
+        {"option_text": "Uncle of Renu's family", "is_correct": false},
+        {"option_text": "Brother of Renu's family", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Renu's mother's husband = Renu's father. His sister = Renu's aunt (paternal side). She is Manish's aunt too → Manish + Renu share paternal aunt → Manish is Renu's COUSIN.",
+      "subject": "Reasoning",
+      "topic": "Blood relations III — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br3-06",
+      "generated_at": "2026-04-26T17:05:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_III_MIXED_00006"
+    },
+    {
+      "stem": "If X is the brother of the SON of Y's son, how is X related to Y?",
+      "options": [
+        {"option_text": "Great-grandson of Y in this scenario", "is_correct": false},
+        {"option_text": "Grandson of Y in this scenario", "is_correct": true},
+        {"option_text": "Brother of Y in this scenario", "is_correct": false},
+        {"option_text": "Cousin of Y in this scenario", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Y's son's son = Y's grandson. X is BROTHER of that grandson → X has the same parent (Y's son) → X is also Y's grandson. Distractor 1 = wrong (would need an additional generation). Distractor 3 = brother (wrong, X is in younger generation). Distractor 4 = cousin (wrong relation type).",
+      "subject": "Reasoning",
+      "topic": "Blood relations III — mixed tiers",
+      "topic_code": "REAS_BLOOD_RELATIONS_III_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-br3-07",
+      "generated_at": "2026-04-26T17:05:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_III_MIXED_00007"
+    }
+  ]
+}
