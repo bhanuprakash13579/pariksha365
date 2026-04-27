@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Forms of energy — mixed tiers",
+  "topic_code": "PHY_ENERGY_FORMS_MIXED",
+  "description": "KE, PE, mechanical, thermal, chemical, nuclear; conservation of energy",
+  "questions": [
+    {
+      "stem": "KINETIC ENERGY of a body of mass m moving at velocity v is:",
+      "options": [
+        {
+          "option_text": "(1/2)mv² (depends on v squared)",
+          "is_correct": true
+        },
+        {
+          "option_text": "mv (linear in velocity)",
+          "is_correct": false
+        },
+        {
+          "option_text": "(1/2)mv (linear, wrong)",
+          "is_correct": false
+        },
+        {
+          "option_text": "mv² (missing 1/2 factor)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "KE = (1/2)mv². DEPENDENCE ON v²: doubling speed quadruples KE. UNIT: Joules (J = kg·m²/s²). INSIGHT — at HIGH speeds (relativistic, near speed of light), this formula breaks down. Einstein's relativity: KE = (γ−1)mc² where γ = 1/√(1−v²/c²). For v << c, reduces to (1/2)mv². EXAMPLE: car at 60 km/h (~17 m/s), mass 1000 kg → KE = (1/2)(1000)(17²) = 144,500 J = ~145 kJ. Same car at 120 km/h → 4× KE = 580 kJ. This is why ROAD ACCIDENTS are far worse at high speeds (energy quadruples; damage scales). KE is RELATIVE — depends on reference frame (passenger has zero KE relative to car, high KE relative to road).",
+      "subject": "Physics",
+      "topic": "Forms of energy — mixed tiers",
+      "topic_code": "PHY_ENERGY_FORMS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-en-01",
+      "generated_at": "2026-04-27T06:05:00+00:00",
+      "id": "sgk_PHY_ENERGY_FORMS_MIXED_00001"
+    },
+    {
+      "stem": "POTENTIAL ENERGY of a body of mass m at HEIGHT h is:",
+      "options": [
+        {
+          "option_text": "mgh (gravity × mass × height)",
+          "is_correct": true
+        },
+        {
+          "option_text": "mh (missing gravity term)",
+          "is_correct": false
+        },
+        {
+          "option_text": "gh (missing mass term)",
+          "is_correct": false
+        },
+        {
+          "option_text": "(1/2)mgh (wrong half-factor)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "GRAVITATIONAL PE = mgh, where g = 9.8 m/s² on Earth's surface. PE depends on REFERENCE LEVEL — if ground = 0, PE = mgh; if some other level, scales accordingly. ENERGY CONVERSION: object falls → PE → KE (mgh = (1/2)mv², so v = √(2gh) ignoring air resistance). EXAMPLE: dropping ball from 5 m → hits ground at v = √(2×9.8×5) ≈ 9.9 m/s. CONSERVATION OF MECHANICAL ENERGY: KE + PE = constant (in absence of friction). USES: hydroelectric dams (water's PE → KE → electric); pumped storage (charge by lifting water at low demand, generate when demand high). PE is also defined for: SPRINGS (PE = (1/2)kx²); chemical bonds (chemical PE — fuels, batteries); nuclear (mass-energy).",
+      "subject": "Physics",
+      "topic": "Forms of energy — mixed tiers",
+      "topic_code": "PHY_ENERGY_FORMS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-en-02",
+      "generated_at": "2026-04-27T06:05:00+00:00",
+      "id": "sgk_PHY_ENERGY_FORMS_MIXED_00002"
+    },
+    {
+      "stem": "Law of CONSERVATION OF ENERGY states that:",
+      "options": [
+        {
+          "option_text": "Energy can be transformed but NOT created or destroyed",
+          "is_correct": true
+        },
+        {
+          "option_text": "Energy can be created from nothing in special cases",
+          "is_correct": false
+        },
+        {
+          "option_text": "Energy disappears in friction always (option here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Energy is constant only in vacuum (option here)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "CONSERVATION OF ENERGY (1st Law of Thermodynamics) — total energy of an ISOLATED system is CONSTANT. Energy can convert between forms but cannot be created or destroyed. APPLICATIONS: friction → KE → heat; rolling ball → KE → sound + heat (eventually stops); battery → electrical → light + heat (LED). Doesn't violate when energy 'disappears' — it just transformed (often to heat). EINSTEIN'S extension: mass + energy interchangeable (E = mc²). NUCLEAR reactions convert tiny mass to huge energy (matter NOT conserved separately; mass-energy is). PERPETUAL MOTION machines violate this — many proposed historically; all proven impossible. PHYSICS' MOST FUNDAMENTAL law (along with momentum conservation). NOETHER's THEOREM: energy conservation = consequence of TIME translation symmetry (laws of physics are same at all times).",
+      "subject": "Physics",
+      "topic": "Forms of energy — mixed tiers",
+      "topic_code": "PHY_ENERGY_FORMS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-en-03",
+      "generated_at": "2026-04-27T06:05:00+00:00",
+      "id": "sgk_PHY_ENERGY_FORMS_MIXED_00003"
+    },
+    {
+      "stem": "CHEMICAL energy is RELEASED in:",
+      "options": [
+        {
+          "option_text": "Combustion + battery + food digestion",
+          "is_correct": true
+        },
+        {
+          "option_text": "Stretching a rubber band only here",
+          "is_correct": false
+        },
+        {
+          "option_text": "Dropping a ball from height",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rotating a spinning wheel here",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "CHEMICAL ENERGY — stored in BONDS between atoms in molecules. RELEASED via: COMBUSTION (fuel burns → CO₂ + H₂O + heat); BATTERIES (electrochemical reactions); FOOD METABOLISM (cellular respiration: glucose + O₂ → CO₂ + H₂O + ATP); EXPLOSIVES (TNT, dynamite — rapid chemical release). FOSSIL FUELS = stored solar energy (millions of years ago, plants captured sun energy via photosynthesis; later compressed → coal/oil/gas). FOOD CALORIES (kcal) = chemical energy per unit mass. INSIGHT — chemical PE is electrical PE between atoms (electron arrangements). NUCLEAR energy = much more concentrated (~million× chemical) — bonds within nucleus, not between atoms.",
+      "subject": "Physics",
+      "topic": "Forms of energy — mixed tiers",
+      "topic_code": "PHY_ENERGY_FORMS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-en-04",
+      "generated_at": "2026-04-27T06:05:00+00:00",
+      "id": "sgk_PHY_ENERGY_FORMS_MIXED_00004"
+    },
+    {
+      "stem": "RENEWABLE energy sources include all EXCEPT:",
+      "options": [
+        {
+          "option_text": "Coal (fossil fuel — finite, non-renewable)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Solar (sun is renewable forever)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wind (atmospheric circulation) too",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hydro (water cycle, refilled) too",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "RENEWABLE — replenished naturally on human timescales: SOLAR (PV cells, solar thermal); WIND; HYDRO (rivers, dams); BIOMASS (plant matter, biofuels); GEOTHERMAL (Earth's heat); TIDAL + WAVE; HYDROGEN (if produced by renewable electricity). NON-RENEWABLE: COAL, OIL, NATURAL GAS, NUCLEAR (Uranium-235 finite). India's renewable goal: 500 GW by 2030 (already 175+ GW). India world's #4 in installed RENEWABLE capacity. INSIGHT — even 'renewable' has caveats: solar panels need rare metals; wind farms affect bird migration; hydro displaces communities; biofuels can compete with food crops. CLEAN energy transition is complex; mix of sources + storage (batteries, pumped hydro) needed.",
+      "subject": "Physics",
+      "topic": "Forms of energy — mixed tiers",
+      "topic_code": "PHY_ENERGY_FORMS_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-en-05",
+      "generated_at": "2026-04-27T06:05:00+00:00",
+      "id": "sgk_PHY_ENERGY_FORMS_MIXED_00005"
+    },
+    {
+      "stem": "1 CALORIE (food / nutrition) equals approximately:",
+      "options": [
+        {
+          "option_text": "1 kilocalorie = 4184 joules (= 1 kcal)",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 calorie = 4.184 J (small calorie)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 watt-hour = 3600 J (option here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 BTU = 1055 J (option here)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "FOOD calorie = LARGE / KILOcalorie (kcal) = 1000 small calories = 4184 J. Often ambiguously written 'calorie' on labels. SCIENTIFIC CALORIE (small) = energy to raise 1g of water by 1°C = 4.184 J. Daily energy intake: ~2000 kcal/day for women, ~2500 kcal/day for men. CALORIES BURNED: walking 1 hr ~250 kcal; jogging 1 hr ~500-700; sleeping 1 hr ~50. ENERGY CONTENT (kcal/g): CARBS 4, PROTEIN 4, FAT 9, ALCOHOL 7. UNITS: J (SI), cal, kcal, kJ, BTU (British Thermal Unit), kWh. CONVERSIONS: 1 kcal = 4184 J; 1 kJ = 0.239 kcal; 1 kWh = 3600 kJ = 860 kcal; 1 BTU = 1.055 kJ.",
+      "subject": "Physics",
+      "topic": "Forms of energy — mixed tiers",
+      "topic_code": "PHY_ENERGY_FORMS_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-en-06",
+      "generated_at": "2026-04-27T06:05:00+00:00",
+      "id": "sgk_PHY_ENERGY_FORMS_MIXED_00006"
+    },
+    {
+      "stem": "An object thrown vertically up from earth: at HIGHEST POINT, its:",
+      "options": [
+        {
+          "option_text": "KE is zero, PE is maximum",
+          "is_correct": true
+        },
+        {
+          "option_text": "KE is maximum, PE is zero",
+          "is_correct": false
+        },
+        {
+          "option_text": "KE = PE (equal at top)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both KE and PE are zero",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "AT highest point: velocity = 0 → KE = (1/2)mv² = 0. Height max → PE = mgh max. CONSERVATION: KE + PE = constant (initial KE at launch). At launch: all KE, no PE. At top: all PE, no KE. On way down: PE → KE again. Total energy conserved (ignore air resistance). INSIGHT — same logic for: PENDULUM (KE max at bottom of swing; PE max at extremes); DROPPED ball (PE → KE on way down); HYDRAULIC ENERGY (water at top of dam). REAL-WORLD: friction / air resistance dissipates some energy as heat → object doesn't return to original height.",
+      "subject": "Physics",
+      "topic": "Forms of energy — mixed tiers",
+      "topic_code": "PHY_ENERGY_FORMS_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-phy-en-07",
+      "generated_at": "2026-04-27T06:05:00+00:00",
+      "id": "sgk_PHY_ENERGY_FORMS_MIXED_00007"
+    }
+  ]
+}
