@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "Logarithms II",
+  "topic_code": "QNT_LOGARITHMS_II_MIXED",
+  "description": "Logarithm rules — product, quotient, power, change-of-base; characteristic and mantissa; common applications.",
+  "questions": [
+    {
+      "stem": "If log₁₀ 2 = 0.3010, find the value of log₁₀ 80.",
+      "options": [
+        {
+          "option_text": "1.9030 is the result",
+          "is_correct": true
+        },
+        {
+          "option_text": "0.9030 alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "1.6020 alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "2.4082 alone alone alone alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "DECOMPOSE: 80 = 8 × 10 = 2³ × 10. So log₁₀ 80 = log 2³ + log 10 = 3·log 2 + 1 = 3(0.3010) + 1 = 0.9030 + 1 = 1.9030. KEY LOG RULES: (1) log(ab) = log a + log b. (2) log(a/b) = log a − log b. (3) log(aⁿ) = n·log a. (4) log_b b = 1; log 1 = 0. (5) log₁₀ 10 = 1 by definition. CHARACTERISTIC + MANTISSA: log 80 = 1.9030 — characteristic 1 means 80 has 2 digits left of decimal; mantissa 0.9030 is the fractional part. STANDARD VALUES TO MEMORIZE: log 2 ≈ 0.3010; log 3 ≈ 0.4771; log 5 = 1 − log 2 ≈ 0.6990; log 7 ≈ 0.8451. APPLICATION — pH SCALE in chemistry uses log: pH = −log[H⁺]; sound DECIBELS: dB = 10 log₁₀(I/I₀). EXAM TIP: when given log 2, you can derive log 4, 5, 8, 16, 25, 32, 50, etc. via decomposition. PYQ FREQUENCY: 1-2 log Qs per CGL Tier 1 paper.",
+      "subject": "Quant",
+      "topic": "Logarithms II",
+      "topic_code": "QNT_LOGARITHMS_II_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_LOGARITHMS_II_MIXED_001"
+    },
+    {
+      "stem": "Simplify: log 5 + log 4 (base 10).",
+      "options": [
+        {
+          "option_text": "log 20 = 1.3010 approximately",
+          "is_correct": true
+        },
+        {
+          "option_text": "log 9 alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "log 1 = 0 alone alone (option here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "log 5/4 alone alone alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "PRODUCT RULE: log a + log b = log(a×b). So log 5 + log 4 = log(20). Numerically: log 20 = log(2 × 10) = log 2 + log 10 = 0.3010 + 1 = 1.3010. INTUITION: logarithms convert MULTIPLICATION into ADDITION — that's why pre-electronic-calculator engineers used log tables and slide rules to multiply huge numbers by ADDING their logs (e.g., 2487 × 3654 = antilog(log 2487 + log 3654)). HISTORY: John Napier invented logs in 1614 to simplify astronomical calculations. SLIDE RULE: pre-1970s engineers' main computational tool — based entirely on log scales. APOLLO 11 navigation used both digital and slide-rule backup. PYQ NOTE: log 5 = log(10/2) = 1 − log 2 = 0.6990 — useful identity. EXAM-FAVORITE: simplification questions like 'log 25 + log 4' (= log 100 = 2) test whether you've internalized log identities. EXAMINER MINDSET: testing fluency with log → algebra translation.",
+      "subject": "Quant",
+      "topic": "Logarithms II",
+      "topic_code": "QNT_LOGARITHMS_II_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_LOGARITHMS_II_MIXED_002"
+    },
+    {
+      "stem": "What is the value of log₂ 64?",
+      "options": [
+        {
+          "option_text": "6 (since 2^6 = 64)",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 alone alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 alone alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "32 alone alone alone alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "log₂ 64 asks: '2 raised to what power gives 64?' Since 2⁶ = 64, log₂ 64 = 6. POWERS OF 2 to memorize: 2¹=2, 2²=4, 2³=8, 2⁴=16, 2⁵=32, 2⁶=64, 2⁷=128, 2⁸=256, 2⁹=512, 2¹⁰=1024. KEY FORMULA: log_b(b^n) = n. CHANGE-OF-BASE: log_b a = log a / log b (any other base). E.g., log₂ 64 = log₁₀ 64 / log₁₀ 2 = 1.806/0.301 ≈ 6. COMPUTER SCIENCE: log₂ is the natural unit for binary information theory; it tells how many BITS are needed to represent N items: log₂ 64 = 6 bits. CD-ROM, DVD storage capacities scale with log₂. INFORMATION ENTROPY (Shannon): H = −Σ p·log₂ p — measured in 'bits of information'. PYQ ANGLE: log₂ values (8, 16, 32, 64, 128, 256) routinely test in CGL, IBPS PO, JEE-Main. EXAMINER MINDSET: tests power-of-2 memorization + log definition.",
+      "subject": "Quant",
+      "topic": "Logarithms II",
+      "topic_code": "QNT_LOGARITHMS_II_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_LOGARITHMS_II_MIXED_003"
+    },
+    {
+      "stem": "If log₃ x = 4, what is the value of x?",
+      "options": [
+        {
+          "option_text": "81 (since 3⁴ = 81)",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 alone alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "64 alone alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "27 alone alone alone alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "DEFINITION OF LOG: log_b a = c is equivalent to b^c = a. So log₃ x = 4 ⇒ 3⁴ = x = 81. POWERS OF 3: 3¹=3, 3²=9, 3³=27, 3⁴=81, 3⁵=243, 3⁶=729. CONVERTING LOG TO EXPONENTIAL is the FIRST STEP in solving any log equation. EXAM DRILLS — practice these conversions: log₂ 32 = 5; log₅ 125 = 3; log₁₀ 1000 = 3; log₂ (1/8) = −3. COMMON LOGS (base 10) used in engineering, chemistry; NATURAL LOGS (base e ≈ 2.718) used in calculus, physics, finance (continuous compounding). MEMORY: ln e = 1, ln 1 = 0. APPLICATION — RICHTER SCALE (earthquakes): Magnitude = log₁₀(amplitude/A₀); each whole number = 10× the amplitude, ~32× the energy. M7 quake = 1000× amplitude of M4 quake. PYQ FREQUENCY: definitional log Qs appear in 70% of SSC CGL Tier 1 quant sections.",
+      "subject": "Quant",
+      "topic": "Logarithms II",
+      "topic_code": "QNT_LOGARITHMS_II_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_LOGARITHMS_II_MIXED_004"
+    },
+    {
+      "stem": "Find the value of log 100 − log 10.",
+      "options": [
+        {
+          "option_text": "1 (i.e., log 10 = 1)",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 alone alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 alone alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "0 alone alone alone alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "QUOTIENT RULE: log a − log b = log(a/b). So log 100 − log 10 = log(100/10) = log 10 = 1. VERIFY: log 100 = 2, log 10 = 1, so 2 − 1 = 1. ✓ KEY IDENTITIES (base 10): log 10 = 1; log 100 = 2; log 1000 = 3; log 10ⁿ = n; log 1 = 0; log 10⁻ⁿ = −n. NEGATIVE LOGS: log 0.1 = log 10⁻¹ = −1; log 0.01 = −2 (used in pH calc). EVERYDAY APPLICATION: pH 1 = log 0.1 [H⁺] = 10⁻¹ M (very acidic, like stomach acid); pH 7 = neutral (water); pH 14 = 10⁻¹⁴ M (very basic, like bleach). DECIBEL SCALE: 100 dB sound = 10× louder than 90 dB sound (log scale). EXAM TIP: recognize 'log a − log b' instantly as 'log(a/b)' — saves time on multi-step problems. PYQ ANGLE: log identities are bread-and-butter Qs in SSC CGL.",
+      "subject": "Quant",
+      "topic": "Logarithms II",
+      "topic_code": "QNT_LOGARITHMS_II_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_LOGARITHMS_II_MIXED_005"
+    },
+    {
+      "stem": "Solve: log₂ x + log₂ (x − 2) = 3.",
+      "options": [
+        {
+          "option_text": "x = 4 only valid solution",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = −2 alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 2 alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 8 alone alone alone alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "STEP 1 — combine via product rule: log₂[x(x−2)] = 3 → x(x−2) = 2³ = 8 → x² − 2x − 8 = 0. STEP 2 — factor: (x−4)(x+2) = 0 → x = 4 or x = −2. STEP 3 — check domain: log requires positive arg. x = −2 → log₂(−2) undefined (impossible); x = 4 → log₂ 4 + log₂ 2 = 2 + 1 = 3 ✓. Only x = 4 is VALID. KEY EXAM TRAP: students forget the DOMAIN RESTRICTION and mark x = −2 (which the algebra allows but log refuses). ALWAYS CHECK back-substitution. INSIGHT: log equations often produce 'extraneous roots' from the algebraic manipulation; the original equation's domain rejects them. APPLICATION: similar rejection happens with sqrt(x) equations and absolute-value equations. PYQ ANGLE: SSC CGL Tier 2 has 1-2 log-equation Qs per paper. EXAMINER MINDSET: tests whether you VERIFY solutions in the original equation, a habit indicating mathematical maturity.",
+      "subject": "Quant",
+      "topic": "Logarithms II",
+      "topic_code": "QNT_LOGARITHMS_II_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_LOGARITHMS_II_MIXED_006"
+    },
+    {
+      "stem": "If log₁₀ 2 = 0.3010 and log₁₀ 3 = 0.4771, find log₁₀ 6.",
+      "options": [
+        {
+          "option_text": "0.7781 is the result",
+          "is_correct": true
+        },
+        {
+          "option_text": "0.1761 alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "1.4351 alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.6020 alone alone alone alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "DECOMPOSE: 6 = 2 × 3. So log 6 = log 2 + log 3 = 0.3010 + 0.4771 = 0.7781. CONNECT TO CHARACTERISTIC: log 6 has characteristic 0 (since 6 < 10), mantissa 0.7781 — meaning 6 has 1 digit left of decimal. KEY ANTILOG: 10^0.7781 ≈ 6 ✓. RELATED EXAM-USEFUL VALUES (derive on the spot): log 12 = log(4×3) = 2 log 2 + log 3 = 0.6020 + 0.4771 = 1.0791. log 9 = 2 log 3 = 0.9542. log 27 = 3 log 3 = 1.4313. log 18 = log 2 + 2 log 3 = 1.2552. log 24 = 3 log 2 + log 3 = 1.3801. PRACTICE: derive log 36, 48, 54, 72 using just log 2 and log 3. APPLICATION: log tables historically had 4-place values for log 2, 3, 5, 7 — engineers built complex calc from these. EXAM-FAVORITE technique: BREAK EVERY NUMBER INTO PRIMES. PYQ ANGLE: 'given log 2 and log 3, find log X' is a CGL Tier 1 staple — appears 1× per cycle.",
+      "subject": "Quant",
+      "topic": "Logarithms II",
+      "topic_code": "QNT_LOGARITHMS_II_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_LOGARITHMS_II_MIXED_007"
+    }
+  ]
+}

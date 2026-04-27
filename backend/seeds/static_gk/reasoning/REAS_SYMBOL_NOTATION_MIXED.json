@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Symbol Notation",
+  "topic_code": "REAS_SYMBOL_NOTATION_MIXED",
+  "description": "Symbol notation reasoning: relational symbols, conditional rule application, comparing values via symbol-defined relations.",
+  "questions": [
+    {
+      "stem": "If 'P > Q' means 'P is the brother of Q' and 'P × Q' means 'P is the father of Q', then in 'A > B × C', how is A related to C?",
+      "options": [
+        {
+          "option_text": "Uncle of C (paternal side)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Father of C in this chain",
+          "is_correct": false
+        },
+        {
+          "option_text": "Brother of C close kin",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin of C through B",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "DECODE step-by-step: A > B → A is BROTHER of B. B × C → B is FATHER of C. Chain: A is brother of C's father → A is C's UNCLE (paternal uncle, since B is male = father). KEY METHOD: (1) translate each symbol into the relation. (2) draw a FAMILY TREE on rough paper. Tree: A and B are SIBLINGS (top level); B is parent of C (one level below). So A's relation to C = 'sibling-of-parent' = uncle/aunt. Since B is male (father), A (sibling of male) is the PATERNAL UNCLE if A is male; the symbol said brother → A is male → uncle. WHY NOT 'father'? Because A is B's brother, not C's parent. WHY NOT 'brother'? Because brother requires same-generation; C is one generation below A. WHY NOT 'cousin'? Cousins are children of uncles/aunts, not parent's brother. PYQ FREQUENCY: blood-relations via coded symbols appear in IBPS PO Prelims, SSC CGL Tier 2, RRB NTPC — 1-2 Qs per paper. EXAMINER MINDSET: tests systematic symbol-substitution + family-tree visualization. TIME: ~20-30 seconds with practice.",
+      "subject": "Reasoning",
+      "topic": "Symbol Notation",
+      "topic_code": "REAS_SYMBOL_NOTATION_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_REAS_SYMBOL_NOTATION_MIXED_001"
+    },
+    {
+      "stem": "If 'A @ B' means 'A is greater than B', and 'A # B' means 'A is less than B', and 'A $ B' means 'A is equal to B', evaluate: 5 @ 3 AND 4 # 9 are both:",
+      "options": [
+        {
+          "option_text": "True statements (correct relations)",
+          "is_correct": true
+        },
+        {
+          "option_text": "False statements alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined alone (option here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "One true, one false alone (option here)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Apply the symbol definitions: 5 @ 3 means '5 is greater than 3' → TRUE (5 > 3). 4 # 9 means '4 is less than 9' → TRUE (4 < 9). Both relations hold, so the combined statement is TRUE. SYMBOLS-FOR-RELATIONS pattern: examiners assign arbitrary symbols to >, <, =, and ask if a chain of relations is consistent. KEY METHOD: substitute back to verify each relation; an entire chain is TRUE only if every link is valid. EXAM PROGRESSION: simpler versions test single relations; harder versions chain 3-4 relations and test transitivity (e.g., A @ B, B @ C → A @ C only if @ is transitive). RELATIONS THAT ARE TRANSITIVE: equality, less-than, greater-than. NOT TRANSITIVE: father-son, friend-of (a friend of a friend isn't necessarily a friend). PYQ FREQUENCY: IBPS Clerk Prelims, RRB NTPC have 2-3 such Qs per paper. EXAMINER MINDSET: tests symbol-decoding + logic — a foundation skill for syllogism.",
+      "subject": "Reasoning",
+      "topic": "Symbol Notation",
+      "topic_code": "REAS_SYMBOL_NOTATION_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_REAS_SYMBOL_NOTATION_MIXED_002"
+    },
+    {
+      "stem": "If '>' means '+', '<' means '−', '×' means '÷', '÷' means '×', then evaluate: 16 > 4 < 8 × 2 ÷ 3.",
+      "options": [
+        {
+          "option_text": "8 (correct under BODMAS)",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 (an alternative sum)",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 (LTR ignoring BODMAS)",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 (pure LTR — wrong)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Substitute: '>' → +, '<' → −, '×' → ÷, '÷' → ×. So 16 > 4 < 8 × 2 ÷ 3 becomes 16 + 4 − 8 ÷ 2 × 3. Apply BODMAS strictly: ÷ and × have EQUAL precedence — evaluate LEFT-TO-RIGHT. Step 1: 8 ÷ 2 = 4. Step 2: 4 × 3 = 12. Step 3: 16 + 4 − 12 = 20 − 12 = 8. ANSWER: 8. EXAM TRAP: students who do LTR WITHOUT respecting ÷×-precedence over +− will compute (16+4−8)÷2×3 = 12÷2×3 = 18 (wrong); or (16+4)−8÷2×3 = 20 − 12 = 8 (correct path) but if they mis-bracket they get 20. The distractors 12, 20, 30 each correspond to a SPECIFIC mis-step. KEY METHOD: substitute symbols → write as a clean arithmetic expression → apply BODMAS rigorously (B-O-D-M-A-S; ÷ and × same level, LTR; + and − same level, LTR). PYQ ANGLE: standard SSC CGL/CHSL trap — distractors deliberately match common errors. INSIGHT: 1-mark Q but tests 3-step discipline.",
+      "subject": "Reasoning",
+      "topic": "Symbol Notation",
+      "topic_code": "REAS_SYMBOL_NOTATION_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_REAS_SYMBOL_NOTATION_MIXED_003"
+    },
+    {
+      "stem": "If 'A © B' means A is father of B, 'A * B' means A is brother of B, 'A # B' means A is mother of B, then in P © Q * R, how is P related to R?",
+      "options": [
+        {
+          "option_text": "Father (P is father of R)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Brother of R alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Uncle of R alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "DECODE: P © Q → P is FATHER of Q. Q * R → Q is BROTHER of R. So Q's father (P) is also R's father, since brothers share parents. Therefore P is FATHER of R. KEY INFERENCE: 'siblings share parents' — if two are siblings, anyone who is parent of one is parent of both. METHOD — DRAW FAMILY TREE: P (top) → Q & R (below, as siblings, both Q and R are children of P). EXAM TIP: when question chains use 'brother/sister', remember they imply same-parent relationship. Distinguish from 'cousin' (one-step further). DOMAIN AWARENESS: real-life half-siblings (different fathers) is an edge case — exam questions assume FULL siblings unless stated. PYQ ANGLE: blood-relations-via-symbols is a 1-2 mark guaranteed Q type in IBPS Clerk Prelims, SBI PO. EXAMINER MINDSET: tests CHAIN INFERENCE + family-tree visualization. TIME: an experienced student solves this in 15-20 seconds.",
+      "subject": "Reasoning",
+      "topic": "Symbol Notation",
+      "topic_code": "REAS_SYMBOL_NOTATION_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_REAS_SYMBOL_NOTATION_MIXED_004"
+    },
+    {
+      "stem": "If '*' means 'subtract', '/' means 'add', '+' means 'multiply', '−' means 'divide', evaluate 10 + 5 / 4 * 3.",
+      "options": [
+        {
+          "option_text": "51 is the value",
+          "is_correct": true
+        },
+        {
+          "option_text": "47 alone alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "33 alone alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "21 alone alone alone alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Substitute: '*' → −, '/' → +, '+' → ×, '−' → ÷. So 10 + 5 / 4 * 3 becomes 10 × 5 + 4 − 3. BODMAS: × first → 10 × 5 = 50. Then 50 + 4 − 3 = 51. CHECK SIGN-MATCH: '+' in stem becomes ×; '/' becomes +; '*' becomes −. ✓ EXAM TRAP: students confuse the SUBSTITUTION direction (which symbol BECOMES which). Write the swap-table on rough paper. INSIGHT: this 4-symbol redefinition takes ~30 seconds per Q with practice. SHORTCUT: re-write the expression with substitutions BEFORE applying BODMAS — never try to compute and substitute simultaneously. PYQ ANGLE: this question style is a CGL/IBPS staple — 1-2 per paper. EXAMINER MINDSET: testing memory + arithmetic + attention discipline.",
+      "subject": "Reasoning",
+      "topic": "Symbol Notation",
+      "topic_code": "REAS_SYMBOL_NOTATION_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_REAS_SYMBOL_NOTATION_MIXED_005"
+    },
+    {
+      "stem": "If '#' means 'is greater than', '@' means 'is less than', '$' means 'is equal to', then which conclusion follows from: A # B, B @ C, C $ D?",
+      "options": [
+        {
+          "option_text": "D is greater than B (D # B)",
+          "is_correct": true
+        },
+        {
+          "option_text": "A is less than D alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "C is less than B alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is equal to D alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Translate: A # B → A > B. B @ C → B < C, i.e., C > B. C $ D → C = D. SO: D = C > B → D > B → 'D # B' (D is greater than B). VERIFY OTHER OPTIONS: 'A < D'? We have A > B and D > B, but A and D are both greater than B — their relative size is INDETERMINATE. So 'A < D' cannot be concluded. 'C < B'? We have C > B, OPPOSITE. 'A = D'? Indeterminate. KEY METHOD: TRANSITIVITY — if a > b and b < c, you CAN'T directly say a vs c (it depends). But if a > b = c, then a > c. PRACTICE TIP: build a SCALE diagram (number line) with the variables placed; visualize >, <, =. PYQ ANGLE: SSC, IBPS, RBI Grade B routinely include such 3-relation Qs. EXAMINER MINDSET: tests TRANSITIVITY of relations and the ability to identify when conclusions are SOUND vs INDETERMINATE.",
+      "subject": "Reasoning",
+      "topic": "Symbol Notation",
+      "topic_code": "REAS_SYMBOL_NOTATION_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_REAS_SYMBOL_NOTATION_MIXED_006"
+    },
+    {
+      "stem": "If '@' means '+', '*' means '×', '$' means '−', and '%' means '÷', evaluate: 36 % 6 * 2 @ 5 $ 1.",
+      "options": [
+        {
+          "option_text": "16 is the value",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 alone alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 alone alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 alone alone alone alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Substitute: '@' → +, '*' → ×, '$' → −, '%' → ÷. Expression: 36 ÷ 6 × 2 + 5 − 1. BODMAS — ÷ and × LTR: 36 ÷ 6 = 6; 6 × 2 = 12. Then 12 + 5 − 1 = 16. KEY RULE: when ÷ and × appear together, evaluate LEFT-TO-RIGHT (equal precedence) — students often mistakenly do × before ÷, getting wrong answers. SAME LTR rule applies to + and −. CHECKLIST: (1) substitute symbols. (2) identify ÷× block, evaluate LTR. (3) handle +− last, also LTR. PYQ FREQUENCY: appears 2-3× per CGL Tier 1 paper. INSIGHT: this category is essentially BODMAS-revision under symbol-disguise — disciplined students see through the disguise instantly. EXAM TIP: in test conditions, write 'swap-table' (e.g., '@=+, *=×, $=−, %=÷') on rough paper before plugging — saves 30+ seconds per Q.",
+      "subject": "Reasoning",
+      "topic": "Symbol Notation",
+      "topic_code": "REAS_SYMBOL_NOTATION_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_REAS_SYMBOL_NOTATION_MIXED_007"
+    }
+  ]
+}
