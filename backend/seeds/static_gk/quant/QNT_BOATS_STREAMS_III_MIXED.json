@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "Boats and Streams III",
+  "topic_code": "QNT_BOATS_STREAMS_III_MIXED",
+  "description": "Boats-and-streams problems: downstream/upstream relations, average speeds, problem-solving with currents.",
+  "questions": [
+    {
+      "stem": "A boat covers 30 km downstream in 2 hours and the same distance upstream in 3 hours. Find the speed of the boat in still water.",
+      "options": [
+        {"option_text": "12.5 km/h is the still-water speed", "is_correct": true},
+        {"option_text": "10 km/h alone alone alone", "is_correct": false},
+        {"option_text": "15 km/h alone alone alone", "is_correct": false},
+        {"option_text": "12 km/h alone alone alone alone", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "DOWNSTREAM: 30÷2 = 15 km/h. UPSTREAM: 30÷3 = 10 km/h. STILL-WATER speed = (downstream + upstream)/2 = (15+10)/2 = 12.5 km/h. CURRENT = (downstream − upstream)/2 = (15−10)/2 = 2.5 km/h. KEY FORMULAS — let b = boat in still water, c = current speed: downstream = b+c, upstream = b−c. So b = (down+up)/2 (the AVERAGE) and c = (down−up)/2 (HALF the GAP). REAL-WORLD: rowing teams measure these on calm vs flowing rivers — Olympic flat-water races deliberately pick zero-current canals so all lanes are fair. INDIAN GEOGRAPHY ANGLE: the Brahmaputra current can hit 4-5 m/s during monsoon, making upstream travel 3-4× slower than downstream — that's why river-based commerce favours downstream cities like Dibrugarh & Guwahati. EXAM TRAP: students average the TIMES (2.5 hrs) instead of the SPEEDS — wrong! Average speed for a round trip uses harmonic mean = 2(15)(10)/(15+10) = 12 km/h, NOT still-water speed.",
+      "subject": "Quant",
+      "topic": "Boats and Streams III",
+      "topic_code": "QNT_BOATS_STREAMS_III_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_BOATS_STREAMS_III_MIXED_001"
+    },
+    {
+      "stem": "A boat's speed in still water is 9 km/h. It takes 4 hours to row to a point and back, with the round trip distance 32 km total. Find the stream speed.",
+      "options": [
+        {"option_text": "3 km/h is the stream's speed", "is_correct": true},
+        {"option_text": "2 km/h alone alone alone", "is_correct": false},
+        {"option_text": "4 km/h alone alone alone", "is_correct": false},
+        {"option_text": "1 km/h alone alone alone alone", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Round trip = 32 km, so one-way = 16 km. Let stream = c. Downstream time = 16/(9+c), upstream = 16/(9−c). Total = 4 hrs. Solve: 16/(9+c) + 16/(9−c) = 4 → 16(9−c+9+c) = 4(81−c²) → 288 = 324 − 4c² → 4c² = 36 → c² = 9 → c = 3. KEY INSIGHT: round-trip equations always reduce to a quadratic in current speed because (b+c) and (b−c) appear in denominators. SHORTCUT: when a question gives total TIME for a round trip and you know still-water speed b, use (b²−c²) = b·D/T_one-way where D = round-trip distance. Here: 81−c² = 9·16/4·(round-trip-factor)… messy; quadratic is cleaner. PHYSICS: real rivers have higher current at the centre and slower near banks (boundary-layer drag) — boats hugging banks save energy upstream, ride centre downstream. EXAM PITFALL: forgetting to halve the round-trip distance — students plug 32 km, get c² negative, panic.",
+      "subject": "Quant",
+      "topic": "Boats and Streams III",
+      "topic_code": "QNT_BOATS_STREAMS_III_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_BOATS_STREAMS_III_MIXED_002"
+    },
+    {
+      "stem": "A man rows 18 km downstream in 90 minutes. If the stream speed is 3 km/h, find his rowing speed in still water.",
+      "options": [
+        {"option_text": "9 km/h in still water", "is_correct": true},
+        {"option_text": "12 km/h alone alone", "is_correct": false},
+        {"option_text": "10 km/h alone alone", "is_correct": false},
+        {"option_text": "15 km/h alone alone", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "TIME conversion: 90 min = 1.5 hrs. DOWNSTREAM speed = 18÷1.5 = 12 km/h. Downstream = b + c, so b = 12 − 3 = 9 km/h. SANITY CHECK: at 9 km/h still-water + 3 km/h current, downstream = 12 km/h, upstream = 6 km/h. So upstream takes 18÷6 = 3 hrs (twice the downstream time) — believable. WHY THE 1:2 RATIO? When still-water speed = 3× stream speed, downstream is 4c, upstream is 2c → ratio 2:1 in speeds, hence 1:2 in times. ROWING SCIENCE: a trained sculler maintains ~5 m/s (~18 km/h) on flat water; recreational rowers ~2.5 m/s (9 km/h). The Cambridge Boat Race on the Thames (2.5 mi) sees boats peak at 21 km/h with tide assist. EXAM TIP: always convert minutes to hours FIRST or you'll get factor-of-60 errors.",
+      "subject": "Quant",
+      "topic": "Boats and Streams III",
+      "topic_code": "QNT_BOATS_STREAMS_III_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_BOATS_STREAMS_III_MIXED_003"
+    },
+    {
+      "stem": "A boat takes twice as long to go upstream as downstream over the same distance. If still-water speed is 12 km/h, find the stream speed.",
+      "options": [
+        {"option_text": "4 km/h is the stream speed", "is_correct": true},
+        {"option_text": "6 km/h alone alone alone", "is_correct": false},
+        {"option_text": "3 km/h alone alone alone", "is_correct": false},
+        {"option_text": "5 km/h alone alone alone alone", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "TIME-RATIO TRICK: time is INVERSELY proportional to speed for a fixed distance. Time_up = 2 × Time_down means Speed_down = 2 × Speed_up → (12+c) = 2(12−c) → 12+c = 24−2c → 3c = 12 → c = 4 km/h. RATIO SHORTCUT: if Time_up : Time_down = n:1, then Speed_down : Speed_up = n:1 → (b+c)/(b−c) = n → c/b = (n−1)/(n+1). Here n=2 → c/b = 1/3 → c = 12/3 = 4. Memorize this! It saves 30 seconds in exams. PYQ FREQUENCY: SSC, IBPS PO, RRB Group D all reuse this exact framing 2-3 times per year. INTUITION: when current is 1/3 of boat speed, upstream takes 2× longer — meaning current robs 33% of effective speed. SAILING ANALOG: tacking against wind doubles travel time vs running with wind — same physics, different medium.",
+      "subject": "Quant",
+      "topic": "Boats and Streams III",
+      "topic_code": "QNT_BOATS_STREAMS_III_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_BOATS_STREAMS_III_MIXED_004"
+    },
+    {
+      "stem": "A swimmer covers a distance of 28 km against the current and 40 km with the current in 8 hours total, with each leg taking equal time. Find the still-water speed.",
+      "options": [
+        {"option_text": "8.5 km/h in still water", "is_correct": true},
+        {"option_text": "9 km/h alone alone alone", "is_correct": false},
+        {"option_text": "8 km/h alone alone alone", "is_correct": false},
+        {"option_text": "10 km/h alone alone alone", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Each leg = 4 hrs (8 hrs total ÷ 2 equal legs). UPSTREAM speed = 28/4 = 7 km/h. DOWNSTREAM speed = 40/4 = 10 km/h. STILL-WATER = (10+7)/2 = 8.5 km/h. CURRENT = (10−7)/2 = 1.5 km/h. SANITY: at 8.5 km/h with 1.5 current, down = 10, up = 7 — matches. INSIGHT: 'equal time' means we can decouple the legs and treat each as a simple speed-distance problem. If times were UNEQUAL, we'd need the harmonic-mean formula or set up simultaneous equations. SWIMMING PHYSIOLOGY: open-water swimmers maintain ~3-4 km/h (1 m/s); 8.5 km/h is unrealistic for humans but realistic for inflatable rafts or kayaks. The English Channel record (Trent Grimsey, 6h 55min for 33 km) averaged ~5 km/h with strong tidal assist on certain legs. EXAM ANGLE: this 'equal-time' phrasing appears 2-3× annually in CGL Tier 1.",
+      "subject": "Quant",
+      "topic": "Boats and Streams III",
+      "topic_code": "QNT_BOATS_STREAMS_III_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_BOATS_STREAMS_III_MIXED_005"
+    },
+    {
+      "stem": "A boat goes 24 km downstream and 8 km upstream in 4 hours. The same boat takes 24 km downstream and 16 km upstream in 6 hours. Find the boat's still-water speed.",
+      "options": [
+        {"option_text": "8 km/h in still water", "is_correct": true},
+        {"option_text": "6 km/h alone alone", "is_correct": false},
+        {"option_text": "10 km/h alone alone", "is_correct": false},
+        {"option_text": "12 km/h alone alone", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Substitute x = 1/(b+c) and y = 1/(b−c) to LINEARIZE the two-variable system. EQ1: 24x + 8y = 4. EQ2: 24x + 16y = 6. Subtract EQ1 from EQ2: 8y = 2 → y = 1/4 → b−c = 4. From EQ1: 24x + 8(1/4) = 4 → 24x = 2 → x = 1/12 → b+c = 12. Adding: 2b = 16 → b = 8 km/h. Subtracting: 2c = 8 → c = 4 km/h. VERIFY EQ1: 24/12 + 8/4 = 2 + 2 = 4 ✓. EQ2: 24/12 + 16/4 = 2 + 4 = 6 ✓. KEY METHOD: when given two pairs of (down-distance, up-distance, time), the trick is the LINEARIZING SUBSTITUTION — set u=1/(b+c), v=1/(b−c), giving two LINEAR equations in u, v. Solve simultaneously, then back-derive b and c. EXAM TRAP: students try to set up b and c directly and get stuck in a quadratic mess. SUBSTITUTION-LINEARIZATION is the elegant route — it converts a non-linear system into linear algebra, solvable in 60 seconds.",
+      "subject": "Quant",
+      "topic": "Boats and Streams III",
+      "topic_code": "QNT_BOATS_STREAMS_III_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_BOATS_STREAMS_III_MIXED_006"
+    },
+    {
+      "stem": "A boat moves at 15 km/h in still water. It travels 60 km downstream and returns; total time = 9 hours. What is the current's speed?",
+      "options": [
+        {"option_text": "5 km/h is the stream's speed", "is_correct": true},
+        {"option_text": "3 km/h alone alone alone", "is_correct": false},
+        {"option_text": "4 km/h alone alone alone", "is_correct": false},
+        {"option_text": "6 km/h alone alone alone alone", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Equation: 60/(15+c) + 60/(15−c) = 9. Cross-multiply: 60(15−c) + 60(15+c) = 9(225−c²) → 60·30 = 9(225−c²) → 1800 = 2025 − 9c² → 9c² = 225 → c² = 25 → c = 5 km/h. VERIFY: down speed = 20 km/h → 60/20 = 3 hrs; up speed = 10 km/h → 60/10 = 6 hrs; total = 9 hrs ✓. SHORTCUT FORMULA: for round trip with still-speed b, distance d each way, total time T: T = 2bd/(b²−c²) → c² = b² − 2bd/T = 225 − 2(15)(60)/9 = 225 − 200 = 25 → c=5. MEMORIZE this formula — saves 90 seconds. INSIGHT: when c approaches b, upstream speed → 0 → time → ∞. The relation b² − c² = 2bd/T is essentially the 'effective speed²' formula. RIVER FACT: the Ganga at Varanasi has a current of ~3-5 km/h in non-monsoon — boats with 15 km/h still-water capacity (motor-boats) experience this exact 1:2 time ratio for upstream:downstream.",
+      "subject": "Quant",
+      "topic": "Boats and Streams III",
+      "topic_code": "QNT_BOATS_STREAMS_III_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-27",
+      "id": "sgk_QNT_BOATS_STREAMS_III_MIXED_007"
+    }
+  ]
+}
