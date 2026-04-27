@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Kinematics Basics",
+  "topic_code": "PHY_KINEMATICS_BASIC_MIXED",
+  "description": "Kinematics — distance, displacement, speed, velocity, acceleration; equations of uniformly accelerated motion (v=u+at, s=ut+½at², v²=u²+2as); free fall, projectile basics.",
+  "questions": [
+    {
+      "stem": "What is the difference between SPEED and VELOCITY?",
+      "options": [
+        {"option_text": "Velocity has direction; speed scalar", "is_correct": true},
+        {"option_text": "They are completely identical now", "is_correct": false},
+        {"option_text": "Speed is direction; velocity scalar", "is_correct": false},
+        {"option_text": "Both are vectors with directions", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "SPEED = SCALAR (magnitude only); how fast something moves regardless of direction. VELOCITY = VECTOR (magnitude + direction); how fast AND in which direction. SAME UNITS: m/s (or km/h). EXAMPLE: a car driving 60 km/h NORTH has velocity 60 km/h NORTH; if it turns and goes 60 km/h SOUTH, its SPEED is unchanged (60 km/h) but its VELOCITY changed. CIRCULAR MOTION: an object moving in a circle at constant speed has CHANGING velocity (because direction continuously changes) — that's why circular motion has acceleration even at uniform speed. DISTANCE vs DISPLACEMENT (analogous distinction): DISTANCE = total path length (scalar); DISPLACEMENT = straight-line change of position (vector). If you walk 3 m east then 4 m north, distance = 7 m but displacement = 5 m NE (Pythagoras). KEY DEFINITIONS: AVERAGE SPEED = total distance / total time. AVERAGE VELOCITY = total displacement / total time. INSTANTANEOUS values use limit as time → 0 (calculus). PYQ FREQUENCY: scalar/vector distinction is a 1-mark guarantee in JEE-Main, NEET, Class 11 NCERT.",
+      "subject": "Physics",
+      "topic": "Kinematics Basics",
+      "topic_code": "PHY_KINEMATICS_BASIC_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "physics-textbook",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_PHY_KINEMATICS_BASIC_MIXED_001"
+    },
+    {
+      "stem": "The first equation of motion (uniformly accelerated motion) is:",
+      "options": [
+        {"option_text": "v = u + at (final = initial + accel·time)", "is_correct": true},
+        {"option_text": "s = ut + ½at² (distance covered)", "is_correct": false},
+        {"option_text": "v² = u² + 2as (no time variable)", "is_correct": false},
+        {"option_text": "F = ma (Newton's second law form)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "FIRST EQUATION OF MOTION: v = u + at, where u = initial velocity, v = final velocity, a = (constant) acceleration, t = time elapsed. DERIVATION: a = (v − u) / t → v = u + at. The other two equations are: SECOND EQUATION: s = ut + ½at² (gives distance covered). THIRD EQUATION: v² = u² + 2as (eliminates time). KEY ASSUMPTION: all three EQUATIONS OF MOTION assume CONSTANT (uniform) acceleration. They DO NOT apply to non-uniform acceleration (e.g., variable forces). INDIA EXAM CONTEXT: introduced in NCERT Class 9 (basic) and Class 11 (formal vector treatment). FREE FALL APPLICATION: a = g ≈ 9.8 m/s² (downward) — for objects in vacuum near Earth surface. e.g., dropped from rest (u=0) for time t: v = gt; s = ½gt² (the famous 'distance in free fall is half g t squared'). NUMERICAL EXAMPLE: ball dropped from 20 m height: 20 = 0 + ½(10)t² → t² = 4 → t = 2 s. PYQ FREQUENCY: equations of motion appear in JEE-Main, NEET, NCERT-tested SSC ~1-2 per paper.",
+      "subject": "Physics",
+      "topic": "Kinematics Basics",
+      "topic_code": "PHY_KINEMATICS_BASIC_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "physics-textbook",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_PHY_KINEMATICS_BASIC_MIXED_002"
+    },
+    {
+      "stem": "A car accelerates from rest at 2 m/s² for 5 seconds. Its final velocity is:",
+      "options": [
+        {"option_text": "10 m/s (using v=u+at)", "is_correct": true},
+        {"option_text": "5 m/s (mid-calc value here)", "is_correct": false},
+        {"option_text": "25 m/s (an over-estimate now)", "is_correct": false},
+        {"option_text": "2.5 m/s (an under-estimate)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Apply v = u + at. GIVEN: u = 0 (from rest), a = 2 m/s², t = 5 s. So v = 0 + (2)(5) = 10 m/s. SCALE-CHECK: 10 m/s = 36 km/h — reasonable for a car after 5 seconds of moderate acceleration. INSIGHT: 2 m/s² is similar to a typical sedan's acceleration (real cars accelerate ~2-4 m/s² normally, ~10 m/s² for performance models). 0-100 km/h time = 100/3.6 ÷ a = ~27.78/a seconds; for a=2, that's ~13.9 s (slow); for a=10, that's ~2.8 s (sports car). DISTANCE COVERED in 5 s: s = ut + ½at² = 0 + ½(2)(25) = 25 m. CHECKING with third equation: v² = u² + 2as → 100 = 0 + 2(2)(25) = 100 ✓. PYQ FREQUENCY: 1-step kinematics calculations appear in JEE-Main, NEET, SSC CGL Tier 2 1-2× per paper. EXAMINER MINDSET: tests formula recall + plug-and-chug discipline.",
+      "subject": "Physics",
+      "topic": "Kinematics Basics",
+      "topic_code": "PHY_KINEMATICS_BASIC_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_PHY_KINEMATICS_BASIC_MIXED_003"
+    },
+    {
+      "stem": "Acceleration due to gravity (g) on Earth's surface is approximately:",
+      "options": [
+        {"option_text": "9.8 m/s² (standard value)", "is_correct": true},
+        {"option_text": "9.8 km/s² (way too high)", "is_correct": false},
+        {"option_text": "1.6 m/s² (the Moon's value)", "is_correct": false},
+        {"option_text": "3.7 m/s² (the Mars value)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "g = 9.81 m/s² (often rounded to 9.8 or even 10 in problems). It's the acceleration any object FREE-FALLING in vacuum experiences near Earth's surface (vacuum = no air resistance). VARIATION: (1) at EQUATOR: ~9.78 m/s² (less due to Earth's rotation centrifugal effect + slightly larger radius). (2) at POLES: ~9.83 m/s² (more — Earth slightly flattened). (3) at altitude: g decreases ~0.3% per km up. (4) underground/in mines: g decreases as you approach Earth's center (becomes 0 at the center). g VALUES on OTHER BODIES: Moon 1.62 m/s² (~1/6 Earth); Mars 3.71 m/s²; Jupiter 24.79 m/s²; Sun 274 m/s². CONSEQUENCE — APOLLO MOON: astronauts could leap many metres on the Moon because g is 1/6th. CAVENDISH EXPERIMENT (1798): measured G (universal grav constant), allowing g = GM/R² calculation. EQUATION g = GM/R²: M = Earth's mass (~6 × 10²⁴ kg), R = Earth's radius (~6,371 km), G = 6.674 × 10⁻¹¹ N·m²/kg². PYQ FREQUENCY: 'value of g' is a 1-mark guarantee in NEET, JEE-Main, SSC CGL.",
+      "subject": "Physics",
+      "topic": "Kinematics Basics",
+      "topic_code": "PHY_KINEMATICS_BASIC_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "physics-textbook",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_PHY_KINEMATICS_BASIC_MIXED_004"
+    },
+    {
+      "stem": "An object is thrown vertically upward with velocity 20 m/s. The maximum height reached (g = 10 m/s²) is:",
+      "options": [
+        {"option_text": "20 m (using v²=u²−2gh)", "is_correct": true},
+        {"option_text": "10 m (a calc error result)", "is_correct": false},
+        {"option_text": "40 m (an over-estimate)", "is_correct": false},
+        {"option_text": "200 m (way too large)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Apply third equation of motion: v² = u² − 2gh (deceleration due to gravity going up; acceleration becomes negative). At MAXIMUM HEIGHT, v = 0 (object momentarily stops before falling). So 0 = (20)² − 2(10)h → 0 = 400 − 20h → h = 400/20 = 20 m. ALTERNATIVE: time to reach max = u/g = 20/10 = 2 s. Distance = ut − ½gt² = 20(2) − ½(10)(4) = 40 − 20 = 20 m ✓. SYMMETRY: time to RISE = time to FALL back to launch height; final speed at launch height = initial speed (energy conservation in vacuum). NEGLECT AIR RESISTANCE: real-world projectiles lose energy to air drag — actual max height is slightly less. ENERGY APPROACH: ½mu² = mgh → h = u²/(2g) = 400/20 = 20 m ✓ (same answer, different method). FUN FACT: world high-jumpers reach ~2 m above their stomach launch — leg muscles can launch the body upward at ~6 m/s. PYQ FREQUENCY: 'max-height' projectile Qs in JEE-Main, NEET 2-3× per paper. EXAMINER MINDSET: tests v=0 condition recognition.",
+      "subject": "Physics",
+      "topic": "Kinematics Basics",
+      "topic_code": "PHY_KINEMATICS_BASIC_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_PHY_KINEMATICS_BASIC_MIXED_005"
+    },
+    {
+      "stem": "A body covers half its total path length in the LAST second of free fall from rest. The total time of fall is approximately:",
+      "options": [
+        {"option_text": "About 3.4 seconds (over 2+√2)", "is_correct": true},
+        {"option_text": "Exactly 2 seconds always now", "is_correct": false},
+        {"option_text": "4 seconds is the answer", "is_correct": false},
+        {"option_text": "5 seconds for free fall", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Let total time = T seconds. TOTAL DISTANCE = ½gT². DISTANCE in LAST second = total − distance covered in (T−1) seconds = ½gT² − ½g(T−1)². GIVEN: distance in last second = ½ of total. So ½gT² − ½g(T−1)² = ½ × ½gT². Cancel g/2: T² − (T−1)² = ½T² → T² − (T² − 2T + 1) = ½T² → 2T − 1 = ½T². Multiply by 2: 4T − 2 = T². Rearrange: T² − 4T + 2 = 0. Quadratic: T = (4 ± √(16−8))/2 = (4 ± √8)/2 = (4 ± 2√2)/2 = 2 ± √2. Take positive root larger than 1 (last second must exist): T = 2 + √2 ≈ 3.414 s. KEY METHOD: write expression for last-second distance; equate to fraction of total; solve quadratic. NUMERICAL CHECK (g=10): total dist = ½(10)(3.414)² ≈ 58.3 m; distance in last second = ½(10)(3.414)² − ½(10)(2.414)² ≈ 58.3 − 29.1 = 29.2 m ≈ half of 58.3 ✓. PYQ ANGLE: 'distance in nth second' in JEE-Main, NEET, advanced kinematics MCQ. EXAMINER MINDSET: tests algebraic manipulation + kinematic insight.",
+      "subject": "Physics",
+      "topic": "Kinematics Basics",
+      "topic_code": "PHY_KINEMATICS_BASIC_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_PHY_KINEMATICS_BASIC_MIXED_006"
+    },
+    {
+      "stem": "A particle moves in a straight line with VELOCITY-TIME graph that is a horizontal line. This means:",
+      "options": [
+        {"option_text": "Constant velocity, zero acceleration", "is_correct": true},
+        {"option_text": "Increasing velocity uniformly here", "is_correct": false},
+        {"option_text": "Particle is at rest stationary", "is_correct": false},
+        {"option_text": "Acceleration is increasing now too", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "VELOCITY-TIME (v-t) GRAPH: a HORIZONTAL line means velocity does NOT change with time → CONSTANT VELOCITY → ZERO ACCELERATION. KEY GRAPH READING SKILLS: (1) v-t graph SLOPE = ACCELERATION. Horizontal slope = 0 = no acceleration. Steep upward slope = high positive accel. Downward slope = deceleration. (2) AREA UNDER v-t graph = DISPLACEMENT. (3) For STRAIGHT-LINE v-t graph (any slope) → uniform acceleration. (4) For CURVED v-t graph → variable acceleration. POSITION-TIME (s-t) GRAPH: (a) horizontal line = at rest. (b) straight slope = constant velocity. (c) curved (parabola for uniform accel). ACCELERATION-TIME (a-t) GRAPH: horizontal line at non-zero a = uniform accel; horizontal at 0 = constant velocity. PRACTICE — COMBINING graphs: from a v-t graph, you can derive both s-t (integrate) and a-t (differentiate slope). PYQ ANGLE: graph-interpretation Qs are top JEE-Main, NEET kinematics MCQs (1-2 per paper). EXAMINER MINDSET: tests multi-representation fluency in physics.",
+      "subject": "Physics",
+      "topic": "Kinematics Basics",
+      "topic_code": "PHY_KINEMATICS_BASIC_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "physics-textbook",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_PHY_KINEMATICS_BASIC_MIXED_007"
+    }
+  ]
+}

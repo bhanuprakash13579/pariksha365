@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Chemistry",
+  "topic": "Rate of Reaction",
+  "topic_code": "CHEM_RATE_REACTION_MIXED",
+  "description": "Chemical kinetics — rate of reaction, factors affecting rate (concentration, temperature, surface area, catalyst), order of reaction, activation energy.",
+  "questions": [
+    {
+      "stem": "Which of these factors does NOT generally affect the rate of a chemical reaction?",
+      "options": [
+        {"option_text": "Volume of empty container space", "is_correct": true},
+        {"option_text": "Temperature of the reaction mix", "is_correct": false},
+        {"option_text": "Concentration of the reactants here", "is_correct": false},
+        {"option_text": "Presence of a suitable catalyst", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "FACTORS that AFFECT reaction rate: (1) CONCENTRATION of reactants — higher conc → more collisions → faster rate. (2) TEMPERATURE — higher T → more KE → more effective collisions → faster (rate roughly DOUBLES per 10°C rise). (3) SURFACE AREA — for solids, finer particles = more reactive surface = faster (powdered Mg burns faster than a Mg ribbon). (4) CATALYST — lowers activation energy, speeds up reaction without being consumed. (5) PRESSURE (for gases) — higher P = higher concentration, faster rate. (6) NATURE of reactants — ionic reactions in solution are very fast; covalent bond breaking is slower. (7) RADIATION/light — for photochemical reactions (e.g., chlorine + methane). FACTOR THAT DOESN'T MATTER (in most basic-chem contexts): EMPTY VOLUME of container — only reactant concentrations and contact matter; whether you have 1 L or 10 L of empty headspace (with same concentrations) doesn't change rate. EXCEPTION: in gas-phase, total volume affects pressure/concentration; but in solution, empty volume is irrelevant. PYQ FREQUENCY: factor-affecting Qs are 1-mark guarantees in NEET, JEE-Main, NCERT-driven CGL.",
+      "subject": "Chemistry",
+      "topic": "Rate of Reaction",
+      "topic_code": "CHEM_RATE_REACTION_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "chemistry-textbook",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_CHEM_RATE_REACTION_MIXED_001"
+    },
+    {
+      "stem": "Increasing the temperature by 10°C typically increases the reaction rate by approximately:",
+      "options": [
+        {"option_text": "2-3 times (Arrhenius rule)", "is_correct": true},
+        {"option_text": "10 times exactly always", "is_correct": false},
+        {"option_text": "100 times always now", "is_correct": false},
+        {"option_text": "It always halves the rate", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "GENERAL RULE OF THUMB (Van't Hoff's rule): for every 10°C rise in temperature, reaction rate roughly DOUBLES (sometimes triples for some reactions). MORE PRECISE: ARRHENIUS EQUATION: k = A·e^(−Ea/RT), where k = rate constant, A = pre-exponential factor, Ea = activation energy, R = gas constant, T = temperature in K. WHY does T affect rate so strongly? At higher T: (1) MORE molecules have kinetic energy ≥ Ea (Maxwell-Boltzmann distribution shifts right). (2) Effective collision frequency increases. (3) The exponential dependence on T means small T changes have big effects. PRACTICAL EXAMPLE — REFRIGERATION: food kept at 4°C lasts ~10× longer than at room temp (~25°C). The 21°C lower temperature slows microbial enzymes. EXAMPLE — PRESSURE COOKER: increases water boiling point from 100°C to 120°C → cooks food ~3-4× faster (by Van't Hoff's rule). ACTIVATION ENERGY: minimum energy required for reactants to convert into products. CATALYSTS work by REDUCING Ea — making rate increase even at the same T. PYQ FREQUENCY: T-effect on rate appears in NEET, JEE-Main, NCERT MCQs ~1× per cycle.",
+      "subject": "Chemistry",
+      "topic": "Rate of Reaction",
+      "topic_code": "CHEM_RATE_REACTION_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "chemistry-textbook",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_CHEM_RATE_REACTION_MIXED_002"
+    },
+    {
+      "stem": "ACTIVATION ENERGY of a reaction is:",
+      "options": [
+        {"option_text": "Minimum energy needed for reaction", "is_correct": true},
+        {"option_text": "Heat released by the reaction here", "is_correct": false},
+        {"option_text": "Energy to break only one bond", "is_correct": false},
+        {"option_text": "Total energy in the reaction mix", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "ACTIVATION ENERGY (Ea) = the MINIMUM ENERGY threshold that REACTANT MOLECULES must possess for a successful reaction to occur. Unit: kJ/mol. INTUITION: imagine pushing a boulder over a hill — Ea is the hill's HEIGHT. Reactants 'climb' the energy hill to form an unstable TRANSITION STATE (or activated complex), then 'roll down' to form products. PROPERTIES: (1) Lower Ea → faster reaction. (2) Higher Ea → slower reaction. (3) Catalysts LOWER Ea (provide an alternative reaction pathway). (4) Ea is INDEPENDENT of concentration; only depends on the reaction itself + temperature. KEY CONTRASTS: (a) ENTHALPY (ΔH) = NET energy change between reactants and products (can be + or −). (b) Ea is the BARRIER height, regardless of overall ΔH. EXAMPLES: H₂ + O₂ → H₂O has high Ea (needs spark or flame to start) — but ΔH is highly EXOTHERMIC (releases lots of heat). At room temp, mixture sits stable; once initiated, it explodes. Ea concept is foundational to ENZYMES (biological catalysts), explosives, and combustion engines. PYQ FREQUENCY: Ea is a top-3 chemical-kinetics MCQ in NEET, JEE-Main.",
+      "subject": "Chemistry",
+      "topic": "Rate of Reaction",
+      "topic_code": "CHEM_RATE_REACTION_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "chemistry-textbook",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_CHEM_RATE_REACTION_MIXED_003"
+    },
+    {
+      "stem": "What is the ORDER of a reaction whose rate equation is: rate = k[A]²[B]?",
+      "options": [
+        {"option_text": "Third order overall (2+1=3)", "is_correct": true},
+        {"option_text": "Second order overall (just A)", "is_correct": false},
+        {"option_text": "First order overall always", "is_correct": false},
+        {"option_text": "Zero order (no concentration)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "ORDER of a REACTION = SUM of the powers of concentrations in the rate law. rate = k[A]²[B] means: order w.r.t. A = 2; order w.r.t. B = 1; OVERALL ORDER = 2 + 1 = 3 (third-order reaction). KEY DEFINITIONS: (1) MOLECULARITY = number of MOLECULES involved in an ELEMENTARY step (always whole number, max 3 — termolecular). (2) ORDER = derived from EXPERIMENTAL rate law; can be FRACTIONAL or ZERO (e.g., catalytic reactions on surfaces are often zero-order). RATE LAW: experimentally determined, NOT directly read from balanced equation (except for elementary reactions). EXAMPLE — H₂ + I₂ → 2HI: rate = k[H₂][I₂] (second-order, despite balanced eqn having 2 mol gas). EXAMPLE — DECOMPOSITION of N₂O₅ → 2NO₂ + ½O₂: rate = k[N₂O₅] (first order). UNITS of k depend on order: zero-order: M/s; first-order: 1/s; second-order: M⁻¹·s⁻¹; third-order: M⁻²·s⁻¹. ZERO ORDER: rate INDEPENDENT of concentration (e.g., enzyme reactions at saturation). PYQ FREQUENCY: order/rate-law MCQ appears in NEET, JEE-Main 2-3× per paper.",
+      "subject": "Chemistry",
+      "topic": "Rate of Reaction",
+      "topic_code": "CHEM_RATE_REACTION_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "chemistry-textbook",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_CHEM_RATE_REACTION_MIXED_004"
+    },
+    {
+      "stem": "Why does a powdered solid react FASTER than the same amount in a single lump?",
+      "options": [
+        {"option_text": "Greater surface area in powder", "is_correct": true},
+        {"option_text": "Powder is at higher temperature", "is_correct": false},
+        {"option_text": "Powder has more atoms per gram", "is_correct": false},
+        {"option_text": "Powder has higher activation energy", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "POWDERED solids have a much GREATER SURFACE AREA per unit mass than a single lump. Reactions occur AT THE SURFACE (or interface) — more surface = more reactive sites = faster reaction. NUMERICAL: a 1 cm cube has surface area 6 cm². If you cut it into 1000 small (1mm)³ cubes, total surface area becomes 60 cm² — TEN TIMES more. Smaller particles = even greater ratio. SAFETY EXAMPLES: (1) FLOUR DUST EXPLOSIONS — fine flour suspended in air ignites violently due to massive effective surface (Imperial Sugar refinery explosion 2008, USA). (2) COAL DUST EXPLOSIONS in mines — Senghenydd, Wales 1913 killed 439. (3) MAGNESIUM RIBBON burns in air; magnesium POWDER (turnings) explodes more violently. INDUSTRIAL: ground catalysts (e.g., platinum in catalytic converters) are deposited as nanoparticles to maximize surface. KEY INSIGHT: total amount of substance is unchanged; only ACCESSIBILITY of reactant atoms changes. EXAM FAVOURITE: 'why does iron filings rust faster than iron rod?' = surface area. PYQ FREQUENCY: surface-area-affects-rate is a Class 9-10 NCERT MCQ — appears in SSC, NEET, IBPS GA 1× per cycle.",
+      "subject": "Chemistry",
+      "topic": "Rate of Reaction",
+      "topic_code": "CHEM_RATE_REACTION_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "chemistry-textbook",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_CHEM_RATE_REACTION_MIXED_005"
+    },
+    {
+      "stem": "A CATALYST changes the rate of reaction by:",
+      "options": [
+        {"option_text": "Lowering activation energy barrier", "is_correct": true},
+        {"option_text": "Raising the activation energy", "is_correct": false},
+        {"option_text": "Heating the reaction mixture", "is_correct": false},
+        {"option_text": "Increasing reactant concentration", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "CATALYST = substance that SPEEDS UP a reaction WITHOUT being consumed itself. MECHANISM: provides an ALTERNATIVE pathway with LOWER ACTIVATION ENERGY (Ea). It does NOT change ΔH (the overall energy difference between reactants and products) — it only lowers the BARRIER. PROPERTIES: (1) Used in small quantities. (2) Recovered chemically unchanged. (3) Specific to particular reactions. (4) Can be poisoned by certain impurities. (5) Doesn't affect equilibrium position — both forward and reverse rates equally. TYPES: (a) HOMOGENEOUS (same phase as reactants — e.g., acid catalyzing ester hydrolysis in solution). (b) HETEROGENEOUS (different phase — e.g., solid Pt catalyzing gas reactions in catalytic converters). (c) ENZYMES — biological protein catalysts; extraordinarily specific (lock-and-key), can speed reactions by 10¹⁷×. INDUSTRIAL EXAMPLES: (1) Iron catalyst in HABER PROCESS (NH₃ synthesis). (2) Vanadium oxide V₂O₅ in CONTACT PROCESS (H₂SO₄). (3) Nickel in HYDROGENATION of vegetable oils → vanaspati. (4) Pt-Pd in catalytic converters (CO + NOx removal). NOBEL: Ostwald (1909), Sabatier (1912), Haber (1918) — all catalysis-related. PYQ FREQUENCY: 1-mark guarantee.",
+      "subject": "Chemistry",
+      "topic": "Rate of Reaction",
+      "topic_code": "CHEM_RATE_REACTION_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "chemistry-textbook",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_CHEM_RATE_REACTION_MIXED_006"
+    },
+    {
+      "stem": "The HALF-LIFE (t½) of a FIRST-ORDER reaction depends on:",
+      "options": [
+        {"option_text": "Rate constant k only — t½ = 0.693/k", "is_correct": true},
+        {"option_text": "Both k and initial concentration", "is_correct": false},
+        {"option_text": "Initial concentration only here", "is_correct": false},
+        {"option_text": "Volume of reaction container", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "FIRST-ORDER reaction half-life: t½ = 0.693/k, INDEPENDENT of initial concentration. This means: regardless of where you start, half the substance disappears in the same time interval. Then half AGAIN in another t½, etc. — exponential decay. MOST IMPORTANT EXAMPLE: RADIOACTIVE DECAY (a first-order process). Carbon-14 has t½ = 5,730 years; uranium-238 has t½ = 4.5 billion years. PHARMACOKINETICS: most drugs follow first-order elimination — dosage intervals are set as ~t½ to maintain therapeutic levels. ZERO-ORDER half-life: t½ = [A]₀/(2k) — DEPENDS on initial concentration (alcohol elimination is approximately zero-order). SECOND-ORDER half-life: t½ = 1/(k[A]₀) — also depends on initial conc. RECOGNITION: in first-order graphs, ln[A] vs t is LINEAR with slope = −k. EXAMPLES of first-order: (1) Decomposition of N₂O₅. (2) Hydrolysis of esters in dilute acid. (3) Most enzyme reactions at LOW substrate concentration. INSIGHT: the 0.693 = ln 2 ≈ 0.6931. After 10 half-lives, only 1/1024 (~0.1%) of original remains. PYQ FREQUENCY: half-life kinetics is top NEET, JEE-Main, JEE-Adv.",
+      "subject": "Chemistry",
+      "topic": "Rate of Reaction",
+      "topic_code": "CHEM_RATE_REACTION_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "chemistry-textbook",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_CHEM_RATE_REACTION_MIXED_007"
+    }
+  ]
+}
