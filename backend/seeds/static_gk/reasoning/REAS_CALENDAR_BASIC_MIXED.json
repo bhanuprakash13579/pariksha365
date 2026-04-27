@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Calendar problems basic — mixed tiers",
+  "topic_code": "REAS_CALENDAR_BASIC_MIXED",
+  "description": "Day-of-week problems, leap years, odd days, repeating calendars",
+  "questions": [
+    {
+      "stem": "How many ODD DAYS are there in a NON-LEAP year (365 days)?",
+      "options": [
+        {"option_text": "1 odd day in non-leap year", "is_correct": true},
+        {"option_text": "2 odd days in non-leap year", "is_correct": false},
+        {"option_text": "0 odd days in non-leap year", "is_correct": false},
+        {"option_text": "3 odd days in non-leap year", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "ODD DAYS = days ≡ remainder when total days mod 7. Non-leap year = 365 days; 365/7 = 52 weeks + 1 day → 1 ODD day. LEAP year = 366 = 52 weeks + 2 odd days. INSIGHT — calendar repeats every 7 days; tracking 'odd days' tells you which DAY OF WEEK shifts. After 1 non-leap year, day shifts by 1; after leap year by 2. Useful for: 'what day was X date?' problems. RULE: 100 years = 124 odd days = 124 mod 7 = 5 odd days. 400 years = 0 odd days (calendar repeats). LEAP YEAR rules: divisible by 4 (year divisible by 4 = leap); EXCEPT century years divisible by 100 (NOT leap) UNLESS also divisible by 400 (THEN leap). 2000 = leap (÷ 400). 1900 = NOT leap.",
+      "subject": "Reasoning",
+      "topic": "Calendar problems basic — mixed tiers",
+      "topic_code": "REAS_CALENDAR_BASIC_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-cal-01",
+      "generated_at": "2026-04-27T06:40:00+00:00",
+      "id": "sgk_REAS_CALENDAR_BASIC_MIXED_00001"
+    },
+    {
+      "stem": "If 1 January 2025 is a Wednesday, what day will 1 January 2026 be?",
+      "options": [
+        {"option_text": "Thursday (+ 1 odd day)", "is_correct": true},
+        {"option_text": "Wednesday (no shift here)", "is_correct": false},
+        {"option_text": "Friday (+ 2 odd days)", "is_correct": false},
+        {"option_text": "Tuesday (− 1 day shift)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "2025 is NOT a leap year (not divisible by 4). So 1 odd day → next year same date shifts forward 1 weekday. Wed → Thu. SIMILARLY: 1 Jan 2027 (after 2026 — also non-leap) → Friday. 1 Jan 2028 (after 2027, non-leap) → Saturday. 1 Jan 2029 (after 2028 LEAP) → Monday (skips Sunday since 2 odd days). RULE: every non-leap shifts by 1; leap shifts by 2. INSIGHT — calendar fully repeats every 28 years (or 11/6 years for non-leap/leap-pair if no century year intervenes). Useful for: birthday-day questions, anniversary-day predictions.",
+      "subject": "Reasoning",
+      "topic": "Calendar problems basic — mixed tiers",
+      "topic_code": "REAS_CALENDAR_BASIC_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-cal-02",
+      "generated_at": "2026-04-27T06:40:00+00:00",
+      "id": "sgk_REAS_CALENDAR_BASIC_MIXED_00002"
+    },
+    {
+      "stem": "Which of the following years is a LEAP YEAR?",
+      "options": [
+        {"option_text": "2000 (divisible by 400)", "is_correct": true},
+        {"option_text": "1900 (century not by 400)", "is_correct": false},
+        {"option_text": "2023 (not divisible by 4)", "is_correct": false},
+        {"option_text": "1700 (century not by 400)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "LEAP YEAR rules: (1) Divisible by 4 → leap; (2) BUT if divisible by 100 → NOT leap; (3) EXCEPT divisible by 400 → leap. 2000: ÷ 400 → leap ✓. 1900: ÷ 100 (not 400) → NOT leap. 2023: not ÷ 4 → not leap. 1700: ÷ 100 (not 400) → not leap. INSIGHT — Gregorian calendar (introduced 1582 by Pope Gregory XIII) uses this rule to align with solar year (~365.2422 days). India adopted Gregorian 1752 (along with British Empire — that year 'lost' 11 days, Sept 3-13 simply didn't exist!). Earlier JULIAN calendar (Julius Caesar's) had simpler 'every 4 years leap' → drifted ~11 min/year → reached 11 days off by 1582. Hence Gregorian fix. Russia kept Julian till 1918; Greece till 1923.",
+      "subject": "Reasoning",
+      "topic": "Calendar problems basic — mixed tiers",
+      "topic_code": "REAS_CALENDAR_BASIC_MIXED",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-cal-03",
+      "generated_at": "2026-04-27T06:40:00+00:00",
+      "id": "sgk_REAS_CALENDAR_BASIC_MIXED_00003"
+    },
+    {
+      "stem": "If 14 August is a Monday, what day will be 14 OCTOBER (same year)?",
+      "options": [
+        {"option_text": "Saturday (61 days = 8 wks + 5 days)", "is_correct": true},
+        {"option_text": "Friday (incorrect odd-day count)", "is_correct": false},
+        {"option_text": "Sunday (incorrect odd-day count)", "is_correct": false},
+        {"option_text": "Monday (incorrect: same day)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Days from 14 Aug to 14 Oct: AUG remaining (Aug 14 to Aug 31) = 17; SEP = 30; OCT 14 = 14. Total = 17 + 30 + 14 = 61 days. (Easier: count 31 (Aug 14 to Sep 14) + 30 (Sep 14 to Oct 14) = 61 — both methods.) 61 mod 7 = 5 odd days. So Mon + 5 = Sat. INSIGHT — count days INCLUDING start or NOT carefully (here 'from Aug 14 TO Oct 14' = 61 days difference; or '61 days later'). Practical use: planning meetings, calculating EMI / interest dates, SQL date arithmetic.",
+      "subject": "Reasoning",
+      "topic": "Calendar problems basic — mixed tiers",
+      "topic_code": "REAS_CALENDAR_BASIC_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-cal-04",
+      "generated_at": "2026-04-27T06:40:00+00:00",
+      "id": "sgk_REAS_CALENDAR_BASIC_MIXED_00004"
+    },
+    {
+      "stem": "How many days are there in a leap year (Feb has 29)?",
+      "options": [
+        {"option_text": "366 days in a leap year", "is_correct": true},
+        {"option_text": "365 days in a leap year", "is_correct": false},
+        {"option_text": "364 days in a leap year", "is_correct": false},
+        {"option_text": "367 days in a leap year", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "LEAP year: 366 days (29 days in February). NORMAL year: 365 (28 in Feb). EXTRA day INSERTED to align CIVIL CALENDAR with TROPICAL year (Earth's orbital period ~365.2422 days). Without leap: drift of ~6 hours/year → ~24 days/century. WHY 29 FEB? Roman tradition; Feb was the SHORTEST month (since Caesar's time). LEAPLINGS = people born Feb 29 (rare, ~1 in 1500); celebrate birthday on 28 Feb / 1 Mar in non-leap years. Years with FEB 29: 2024, 2028, 2032, ..., 2100 NOT (century not by 400). FAMOUS LEAP YEAR EVENTS: 2020 (COVID-19 began), 2016 (Brexit, Trump won), 2012 (Mayan calendar end / Olympics in London), 2008 (Lehman crisis).",
+      "subject": "Reasoning",
+      "topic": "Calendar problems basic — mixed tiers",
+      "topic_code": "REAS_CALENDAR_BASIC_MIXED",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-cal-05",
+      "generated_at": "2026-04-27T06:40:00+00:00",
+      "id": "sgk_REAS_CALENDAR_BASIC_MIXED_00005"
+    },
+    {
+      "stem": "What was the day on 26 January 1950 (India became Republic)?",
+      "options": [
+        {"option_text": "Thursday (Republic Day)", "is_correct": true},
+        {"option_text": "Wednesday (calendar slip wrong)", "is_correct": false},
+        {"option_text": "Friday (calendar slip wrong)", "is_correct": false},
+        {"option_text": "Saturday (calendar slip wrong)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "26 JAN 1950 = THURSDAY. INDIA's Constitution adopted; Republic Day. METHOD: count odd days from any reference; standard table-based approach: 1600 yrs (0 odd) + 300 yrs (1 odd × 3 = 3) + 49 yrs (49 + 12 leap = 61 odd → 5 odd) + January 26 = 26 odd. Total: 0 + 3 + 5 + 26 mod 7 = 34 mod 7 = 6 odd days = THURSDAY. (Mon=1, Tue=2, Wed=3, Thu=4, Fri=5, Sat=6, Sun=0; or by convention Sun=0/7, Mon=1, ...) PRACTICAL — Indian school problems require this for 26 Jan, 15 Aug, Gandhi Jayanti type dates. Sometimes you can use known anchors: 'I know Today is X day, and date Y... how many days difference + add'. Easier method.",
+      "subject": "Reasoning",
+      "topic": "Calendar problems basic — mixed tiers",
+      "topic_code": "REAS_CALENDAR_BASIC_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-cal-06",
+      "generated_at": "2026-04-27T06:40:00+00:00",
+      "id": "sgk_REAS_CALENDAR_BASIC_MIXED_00006"
+    },
+    {
+      "stem": "After how many years does the SAME calendar (same day-date pairing) typically repeat for a non-leap year?",
+      "options": [
+        {"option_text": "11 OR 6 years (non-leap pattern)", "is_correct": true},
+        {"option_text": "Exactly 7 years (always)", "is_correct": false},
+        {"option_text": "Always 28 years (leap years)", "is_correct": false},
+        {"option_text": "Always 4 years (after 1 leap)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "FOR NON-LEAP year: same calendar can repeat in 6 OR 11 years (depending on placement of leap years between). E.g., 2025 calendar = 2031 calendar (next match), then 2042. FOR LEAP year: typically repeats every 28 years (cycle of 4 leap years × 7 days). Special case: when a CENTURY YEAR intervenes (like 1900, 2100 — non-leap centuries) — disrupts pattern. KEY: cumulative odd days must reset to 0 (mod 7). Each non-leap = 1 odd day; each leap = 2 odd days. Sum must be 0 (mod 7) for calendar repeat. PRACTICAL — 'same desk calendar can be reused after X years' calculations. INSIGHT — every year-month-day combo cycles every 400 years guaranteed (Gregorian cycle).",
+      "subject": "Reasoning",
+      "topic": "Calendar problems basic — mixed tiers",
+      "topic_code": "REAS_CALENDAR_BASIC_MIXED",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-26-reas-cal-07",
+      "generated_at": "2026-04-27T06:40:00+00:00",
+      "id": "sgk_REAS_CALENDAR_BASIC_MIXED_00007"
+    }
+  ]
+}
