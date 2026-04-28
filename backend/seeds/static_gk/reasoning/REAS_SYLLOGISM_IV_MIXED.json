@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Syllogism IV",
+  "topic_code": "REAS_SYLLOGISM_IV_MIXED",
+  "description": "Syllogism — categorical statements (All/No/Some), Venn diagram method, valid conclusions, possibility cases.",
+  "questions": [
+    {
+      "stem": "Premise 1: 'All cats are animals.' Premise 2: 'All dogs are animals.' Which conclusion follows?",
+      "options": [
+        {"option_text": "Some animals are cats (definite)", "is_correct": true},
+        {"option_text": "All cats are dogs (no link)", "is_correct": false},
+        {"option_text": "All dogs are cats (no link)", "is_correct": false},
+        {"option_text": "Cats and dogs are same", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Apply VENN DIAGRAM method. 'All cats are animals' → CATS circle inside ANIMALS circle. 'All dogs are animals' → DOGS circle inside ANIMALS circle. Cats and dogs may be SEPARATE inside animals (no overlap forced). FROM the premises, what FOLLOWS DEFINITELY: (1) 'Some animals are cats' — TRUE (since all cats are animals, at least the cat-set is part of animals). (2) 'Some animals are dogs' — TRUE. (3) 'All cats are dogs' — UNDETERMINED (premises don't say). (4) 'No cats are dogs' — UNDETERMINED. SYLLOGISM RULES: (1) Universal statements ('All X are Y') REVERSE to PARTICULAR ('Some Y are X') — but NOT universal. Some Y are X is the CONVERSE of 'All X are Y'. (2) MIDDLE TERM (the term in both premises) must be DISTRIBUTED at least once. (3) From two PARTICULAR premises, no conclusion. (4) From two NEGATIVE premises, no conclusion. CONVERSION RULES: (a) 'No A is B' converts to 'No B is A' (universal both ways). (b) 'Some A are B' converts to 'Some B are A' (particular both ways). (c) 'All A are B' converts to 'Some B are A' (NOT 'All B are A'). PYQ FREQUENCY: syllogism in IBPS PO Pre, SBI PO, RRB NTPC — 1-3× per paper.",
+      "subject": "Reasoning",
+      "topic": "Syllogism IV",
+      "topic_code": "REAS_SYLLOGISM_IV_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_SYLLOGISM_IV_MIXED_001"
+    },
+    {
+      "stem": "Premise 1: 'No men are immortal.' Premise 2: 'Some kings are men.' Which follows?",
+      "options": [
+        {"option_text": "Some kings are not immortal", "is_correct": true},
+        {"option_text": "All kings are immortal here", "is_correct": false},
+        {"option_text": "No kings are immortal definitely", "is_correct": false},
+        {"option_text": "All immortal beings are kings", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Apply LOGICAL DEDUCTION: 'No men are immortal' = no overlap between MEN and IMMORTAL. 'Some kings are men' = at least one king is in MEN set. So at least one king (the king who is a man) is NOT IMMORTAL → 'Some kings are not immortal' is DEFINITELY TRUE. WHY NOT 'No kings are immortal'? Because we don't know about the kings who AREN'T men (some kings might not be men — though biologically unusual, syllogism doesn't assume). From the premises, only SOME kings (those who are men) are confirmed not-immortal. KEY METHOD — VENN DIAGRAMS: (1) Draw circles for each set. (2) Apply 'All X are Y' → X inside Y. (3) Apply 'No X are Y' → X and Y disjoint. (4) Apply 'Some X are Y' → at least one element in X∩Y. (5) Test each conclusion: does it MUST hold given the diagrams? STANDARD SYLLOGISM TYPES (memorize): (a) BARBARA: All A→B, All B→C ⊢ All A→C. (b) CELARENT: All A→B, No B→C ⊢ No A→C. (c) DARII: All A→B, Some C→A ⊢ Some C→B. (d) FERIO: No A→B, Some C→A ⊢ Some C are not B. (= our example). PYQ FREQUENCY: syllogism with negative premises in IBPS PO Mains, SBI PO 1-2× per paper.",
+      "subject": "Reasoning",
+      "topic": "Syllogism IV",
+      "topic_code": "REAS_SYLLOGISM_IV_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_SYLLOGISM_IV_MIXED_002"
+    },
+    {
+      "stem": "Premises: 'Some doctors are engineers' and 'All engineers are professionals'. Which follows?",
+      "options": [
+        {"option_text": "Some doctors are professionals", "is_correct": true},
+        {"option_text": "All doctors are professionals here", "is_correct": false},
+        {"option_text": "All professionals are doctors", "is_correct": false},
+        {"option_text": "No engineers are doctors today", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "DEDUCTION: 'Some doctors are engineers' = at least one doctor is in ENGINEERS set. 'All engineers are professionals' = ENGINEERS subset of PROFESSIONALS. So that 'doctor-engineer' is also a PROFESSIONAL. Therefore 'Some doctors are professionals' is DEFINITELY TRUE. WHY NOT 'All doctors are professionals'? We only know SOME doctors are engineers; doctors who are NOT engineers might or might not be professionals — undetermined. KEY METHOD — TRACING through chains: when premises are like 'Some A→B, All B→C', conclude 'Some A→C' (by transitivity through the 'some' element). BARBARA-type all-all conclusion: 'All A→B + All B→C' ⊢ 'All A→C'. DARII-type: 'All B→C + Some A→B' ⊢ 'Some A→C'. SAMPLE BAD CONCLUSIONS to avoid: (1) 'All doctors are professionals' — too strong. (2) 'All professionals are doctors' — converse error. (3) 'Some professionals are not doctors' — undetermined. EXAM TIP: practice with VENN DIAGRAMS until you can SPOT valid conclusions visually in seconds. SYLLOGISM is a CORE skill in IBPS PO/SBI Mains; ~5-7 questions worth 7-10 marks per paper. PYQ FREQUENCY: 2-3× per IBPS PO Mains.",
+      "subject": "Reasoning",
+      "topic": "Syllogism IV",
+      "topic_code": "REAS_SYLLOGISM_IV_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_SYLLOGISM_IV_MIXED_003"
+    },
+    {
+      "stem": "Premises: 'All birds fly' and 'Some animals do not fly'. Which is a valid conclusion?",
+      "options": [
+        {"option_text": "Some animals are not birds", "is_correct": true},
+        {"option_text": "All animals are birds (no support)", "is_correct": false},
+        {"option_text": "All birds are animals here", "is_correct": false},
+        {"option_text": "No animals can fly anywhere", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Apply DEDUCTION: 'All birds fly' = BIRDS subset of FLIERS. 'Some animals do not fly' = at least one animal is NOT in FLIERS set. That animal CANNOT BE a bird (since all birds fly). Therefore 'Some animals are not birds' is DEFINITELY TRUE. WHY NOT 'All birds are animals'? It MIGHT be true biologically, but the premises don't establish a relationship between BIRDS and ANIMALS sets. Strict syllogism — don't assume. PROOF IN VENN DIAGRAM: BIRDS ⊆ FLIERS. There exist animals NOT in FLIERS. These can't be birds. So 'some animals are NOT birds' must be true. WHY NOT 'No animals can fly'? 'Some animals don't fly' ≠ 'No animals fly'; some animals MIGHT fly. EXAM TIP: read 'some' carefully — it means 'at least one', NOT 'most' and NOT 'not all'. SYLLOGISM TIPS: (1) Translate premises to set-relations. (2) Test each conclusion: 'must this hold given premises?' (3) Reject conclusions that go BEYOND what's stated. EXAM TRAPS: (a) Confusing real-world knowledge with logical implication. (b) Drawing converse incorrectly. (c) Combining 'some' from one premise with 'all' wrongly. PYQ FREQUENCY: this 'all-some-not' pattern in IBPS PO, SBI PO 1-2× per cycle.",
+      "subject": "Reasoning",
+      "topic": "Syllogism IV",
+      "topic_code": "REAS_SYLLOGISM_IV_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_SYLLOGISM_IV_MIXED_004"
+    },
+    {
+      "stem": "Premises: 'No politicians are honest' and 'All ministers are politicians'. Which follows?",
+      "options": [
+        {"option_text": "No ministers are honest (definite)", "is_correct": true},
+        {"option_text": "Some ministers are honest still", "is_correct": false},
+        {"option_text": "All honest people are ministers", "is_correct": false},
+        {"option_text": "Some politicians are ministers only", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "CELARENT type syllogism: 'No A are B' + 'All C are A' ⊢ 'No C are B'. Plug: No POLITICIANS are HONEST + All MINISTERS are POLITICIANS ⊢ No MINISTERS are HONEST. PROOF: ministers ⊆ politicians (from premise 2). Politicians ∩ honest = ∅ (from premise 1). Since ministers is subset of politicians, ministers ∩ honest must also = ∅. Therefore 'No ministers are honest' is definitively true. EXAM-FAVOURITE STRUCTURE: 'No A are B + All C are A → No C are B' (always valid). VARIANT: 'No A are B + All B are C → Some C are not A' (valid). EXAMPLES: 'No mammals lay eggs (false biologically but for syllogism); All cows are mammals → No cows lay eggs' (consistent with premises, ignoring biology). KEY: SYLLOGISM is about FORMAL VALIDITY, not factual truth. As long as the premise-to-conclusion structure is valid, the syllogism is valid — even if premises themselves are false. SAMPLE EXAM SETUP — 4-statement format common in IBPS PO Mains: 'Statements: 1) ... 2) ... Conclusions: I) ... II) ... Mark which conclusion(s) follow.' Options: only I, only II, both, neither, either. PYQ FREQUENCY: SBI PO Mains 5+ syllogism Qs per paper.",
+      "subject": "Reasoning",
+      "topic": "Syllogism IV",
+      "topic_code": "REAS_SYLLOGISM_IV_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_SYLLOGISM_IV_MIXED_005"
+    },
+    {
+      "stem": "Premises: 'All boys are tall' and 'Some tall people are athletes'. Which follows?",
+      "options": [
+        {"option_text": "Some boys may be athletes (possibility)", "is_correct": true},
+        {"option_text": "All boys are athletes definitely", "is_correct": false},
+        {"option_text": "Some boys are athletes definitely", "is_correct": false},
+        {"option_text": "All athletes are boys clearly", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "CRITICAL DEDUCTION: 'All boys are tall' = BOYS ⊆ TALL. 'Some tall people are athletes' = at least one tall person is an athlete. But that athlete might not be a boy! The 'some tall who are athletes' could be the NON-BOY tall people. So 'Some boys are athletes DEFINITELY' is NOT supported. POSSIBILITY: 'Some boys MAY BE athletes' — this expresses possibility, not certainty — POSSIBLE in some Venn arrangements. SYLLOGISM CONVENTION: 'definite' conclusion vs 'possibility' conclusion. Most exam syllogisms ask for DEFINITE conclusions only. KEY RULE: when the 'middle term' (here: TALL) is distributed in only the FIRST premise (BOYS subset of TALL → all of BOYS distributed), and SECOND premise has 'some tall' (not distributed) → no SOLID conclusion possible between BOYS and ATHLETES. RULE: middle term must be DISTRIBUTED at least ONCE for valid conclusion. INSIGHT: when a 'definite' conclusion isn't possible, but a 'possibility' is — the answer is often 'It is POSSIBLE that some boys are athletes' (specific phrasing). EXAM ANGLE — POSSIBILITY-CONCLUSION style is common in IBPS PO Mains advanced syllogism. STRUCTURE: 'Some boys are athletes' as POSSIBILITY = TRUE; as DEFINITE = NOT FOLLOWING. PYQ FREQUENCY: this trap-style in IBPS PO Mains 1-2× per cycle.",
+      "subject": "Reasoning",
+      "topic": "Syllogism IV",
+      "topic_code": "REAS_SYLLOGISM_IV_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_SYLLOGISM_IV_MIXED_006"
+    },
+    {
+      "stem": "Premises: 'All flowers are red' and 'No red things are bitter'. Which follows?",
+      "options": [
+        {"option_text": "No flowers are bitter (chain)", "is_correct": true},
+        {"option_text": "Some flowers are bitter perhaps", "is_correct": false},
+        {"option_text": "All red things are flowers also", "is_correct": false},
+        {"option_text": "Some bitter things are red here", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Apply CHAIN (CELARENT type): 'All A are B' + 'No B are C' ⊢ 'No A are C'. Plug: All FLOWERS are RED + No RED things are BITTER ⊢ No FLOWERS are BITTER. PROOF: flowers ⊆ red. red ∩ bitter = ∅. Therefore flowers ∩ bitter ⊆ red ∩ bitter = ∅. So 'No flowers are bitter' must be true. KEY: this is one of the FUNDAMENTAL valid syllogism forms (figure 1 mood EAE). SOMETIMES called SYLLOGISM CHAIN: 'A → B, B exclude C, hence A exclude C'. EXAM TIP: when one premise has 'All A are B' (positive subset) and another has 'No B are C' (negative exclusion), conclude 'No A are C'. If you swap: 'No B are C' (first) + 'All A are B' (second) — same conclusion. PRACTICE: (1) 'All cats are mammals' + 'No mammals are reptiles' → No cats are reptiles ✓. (2) 'All children are humans' + 'No humans are immortal' → No children are immortal ✓. INVALID variants: (a) 'All A are B' + 'Some B are C' — doesn't yield 'Some A are C' (could be the C-element is from B but not from A). (b) 'Some A are B' + 'No B are C' — yields 'Some A are not C' (specific). PYQ FREQUENCY: chain syllogism in IBPS PO Mains, SBI PO Mains 2-3× per paper.",
+      "subject": "Reasoning",
+      "topic": "Syllogism IV",
+      "topic_code": "REAS_SYLLOGISM_IV_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_SYLLOGISM_IV_MIXED_007"
+    }
+  ]
+}
