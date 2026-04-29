@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Venn Diagrams IV",
+  "topic_code": "REAS_VENN_DIAGRAMS_IV_MIXED",
+  "description": "Venn diagrams — set membership, two-set / three-set overlaps, region counting, classification of category-relations.",
+  "questions": [
+    {
+      "stem": "Which Venn diagram BEST represents the relation between: COW, ANIMAL, BIRD?",
+      "options": [
+        {
+          "option_text": "Cow inside Animal; Bird separate inside Animal",
+          "is_correct": true
+        },
+        {
+          "option_text": "Three overlapping circles equal area",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cow and Bird both outside Animal",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cow inside Bird; Bird inside Animal",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "RELATIONSHIP: COW is a type of ANIMAL → Cow circle INSIDE Animal circle. BIRD is also a type of ANIMAL → Bird circle inside Animal. But Cow and Bird are SEPARATE categories within Animals (no cow is a bird). VENN DIAGRAM: large 'Animal' circle; two NON-OVERLAPPING smaller circles (Cow + Bird) inside it. KEY VENN PATTERNS for classification: (1) ALL X are Y (X subset Y) → X circle INSIDE Y. (2) NO X are Y → X and Y SEPARATE (no overlap). (3) SOME X are Y → X and Y OVERLAP (intersection non-empty). (4) X and Y same → coinciding circles. STANDARD CATEGORY-CLASSIFICATION patterns: (a) MAMMAL, COW, HORSE — all 3 separate inside Animal; or Cow + Horse separately inside Mammal which is inside Animal. (b) DOCTOR, MAN, FATHER — all 3 OVERLAP partially (a person can be all 3). (c) DELHI, INDIA, ASIA — nested (Delhi inside India inside Asia). (d) RED, FLOWER, ROSE — Rose ⊂ Flower; Red overlaps Flower. PYQ FREQUENCY: Venn-classification problems in SSC CGL Tier 1, IBPS Clerk Pre, RRB NTPC — 1-2 per paper.",
+      "subject": "Reasoning",
+      "topic": "Venn Diagrams IV",
+      "topic_code": "REAS_VENN_DIAGRAMS_IV_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_VENN_DIAGRAMS_IV_MIXED_001"
+    },
+    {
+      "stem": "If A ∪ B = 50, A ∩ B = 10, A = 30. The number of elements in B is:",
+      "options": [
+        {
+          "option_text": "30 elements (using union formula)",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 elements (calc error here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 elements (an over-estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 elements (under-estimate)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Apply UNION FORMULA: |A ∪ B| = |A| + |B| − |A ∩ B|. Plug: 50 = 30 + |B| − 10 → |B| = 50 − 30 + 10 = 30. KEY: this 'inclusion-exclusion' principle prevents double-counting elements that are in both A and B. EXTENDED to 3 sets: |A ∪ B ∪ C| = |A| + |B| + |C| − |A∩B| − |B∩C| − |A∩C| + |A∩B∩C|. PRACTICE: in a class of 50 students, 30 study Physics, 20 Chemistry, 10 study both. How many study at least one? P ∪ C = 30+20−10 = 40. How many study NEITHER? 50−40 = 10. KEY VENN-DIAGRAM REGIONS for two sets: (a) Only A (not B) = |A| − |A∩B|. (b) Only B (not A) = |B| − |A∩B|. (c) Both A and B = |A∩B|. (d) Neither = Total − |A∪B|. PRACTICE for 3 sets: 'In a survey of 100 people, 60 read English, 50 Hindi, 40 Tamil; 30 English+Hindi, 20 Hindi+Tamil, 10 English+Tamil; 5 all three. How many read at least one?' = 60+50+40−30−20−10+5 = 95. UPSC angle: Venn diagrams used in problem-solving in CSAT (paper 2). PYQ FREQUENCY: Venn-set arithmetic in SSC CGL Tier 1, IBPS PO, RBI Grade B 1× per paper.",
+      "subject": "Reasoning",
+      "topic": "Venn Diagrams IV",
+      "topic_code": "REAS_VENN_DIAGRAMS_IV_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_VENN_DIAGRAMS_IV_MIXED_002"
+    },
+    {
+      "stem": "Choose Venn relation: TEACHER, FATHER, DOCTOR.",
+      "options": [
+        {
+          "option_text": "Three overlapping circles (any combo possible)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Three separate circles (no relation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Three nested circles (one inside other)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two overlapping plus one separate (mixed)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Three INDEPENDENT categories — a person CAN BE any combination: teacher only, father only, doctor only, teacher+father, teacher+doctor, father+doctor, all three. So all 3 categories OVERLAP — venn diagram is THREE OVERLAPPING CIRCLES with 7 distinct regions (each non-empty in real life). KEY: relations among 3 sets fall into different patterns: (1) ALL OVERLAP — like teacher/father/doctor (any combo possible). (2) ONE INSIDE OTHER — like rose ⊂ flower ⊂ plant (nested). (3) DISJOINT — like cow/bird/fish (no overlap; though all are animals — separate species). (4) PARTIAL OVERLAP — e.g., 'students who play cricket'; 'students who play football'; 'students who play hockey' — overlaps possible. EXAMPLES of OVERLAPPING categories (Venn-diagram drillable): (a) Singer, Dancer, Actor — all roles different but a person can have all. (b) Engineer, Manager, Indian — independent. (c) Mother, Doctor, Sister — multi-role. NESTED examples: (i) Vegetable ⊂ Plant ⊂ Living thing. (ii) Sparrow ⊂ Bird ⊂ Animal. (iii) Lawyer ⊂ Graduate ⊂ Educated. EXAM TIP: think 'Can a single entity belong to multiple categories?' If yes → overlap; if no → separate; if always part of bigger → nested. PYQ FREQUENCY: 3-circle Venn classification in SSC CGL, IBPS Clerk Pre — 1-2× per paper.",
+      "subject": "Reasoning",
+      "topic": "Venn Diagrams IV",
+      "topic_code": "REAS_VENN_DIAGRAMS_IV_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_VENN_DIAGRAMS_IV_MIXED_003"
+    },
+    {
+      "stem": "Pick the Venn relation: SQUARE, RECTANGLE, RHOMBUS.",
+      "options": [
+        {
+          "option_text": "Square inside both Rectangle and Rhombus",
+          "is_correct": true
+        },
+        {
+          "option_text": "Three separate, no relation here",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rectangle inside Square inside Rhombus",
+          "is_correct": false
+        },
+        {
+          "option_text": "All three same (coinciding circles)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "GEOMETRIC SET RELATIONS: (1) RECTANGLE = quadrilateral with all 4 angles = 90°. (2) RHOMBUS = quadrilateral with all 4 sides equal. (3) SQUARE = quadrilateral with all 4 sides EQUAL AND all 4 angles 90° = both rectangle AND rhombus. So SQUARE ⊂ RECTANGLE (every square is a rectangle but not vice versa) AND SQUARE ⊂ RHOMBUS. The OVERLAP of Rectangle and Rhombus = Square. VENN DIAGRAM: Rectangle and Rhombus circles OVERLAP; the OVERLAP REGION = SQUARE. So Square is INSIDE the intersection. QUADRILATERAL HIERARCHY (memorize): (1) QUADRILATERAL — any 4-sided figure. (2) TRAPEZIUM (US: Trapezoid) — at least one pair of parallel sides. (3) PARALLELOGRAM — TWO pairs of parallel sides. (4) RECTANGLE — parallelogram with right angles. (5) RHOMBUS — parallelogram with equal sides. (6) SQUARE — both rectangle + rhombus. (7) KITE — adjacent sides pairwise equal. NESTED: SQUARE ⊂ (RECTANGLE ∩ RHOMBUS) ⊂ PARALLELOGRAM ⊂ TRAPEZIUM ⊂ QUADRILATERAL. SAMPLE Q types: (a) 'every square is a rectangle' (T). (b) 'every rectangle is a square' (F). (c) 'every rhombus is a square' (F). (d) 'every square is a rhombus' (T). PYQ FREQUENCY: geometric-set Venn classification in SSC CGL Tier 2, IBPS PO Mains 1× per cycle.",
+      "subject": "Reasoning",
+      "topic": "Venn Diagrams IV",
+      "topic_code": "REAS_VENN_DIAGRAMS_IV_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_VENN_DIAGRAMS_IV_MIXED_004"
+    },
+    {
+      "stem": "In a class, 30 like cricket, 20 like football, 5 like both. Total students who like AT LEAST ONE game:",
+      "options": [
+        {
+          "option_text": "45 students (using inclusion-exclusion)",
+          "is_correct": true
+        },
+        {
+          "option_text": "50 students (over-counted both)",
+          "is_correct": false
+        },
+        {
+          "option_text": "55 students (under-discount)",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 students (way under-shot)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Apply |A ∪ B| = |A| + |B| − |A ∩ B|. Plug: cricket + football − both = 30 + 20 − 5 = 45. So 45 students like at least one game. KEY INSIGHT: simply adding 30 + 20 = 50 DOUBLE-COUNTS the 5 students who like BOTH. Subtract once to correct: 50 − 5 = 45. VENN-DIAGRAM regions for this problem: (a) Only Cricket = 30 − 5 = 25. (b) Only Football = 20 − 5 = 15. (c) Both Cricket AND Football = 5. (d) Total liking at least one = 25 + 15 + 5 = 45 ✓. CHECK: if total class is 50, then 50 − 45 = 5 students like NEITHER game. INCLUSION-EXCLUSION FORMULA generalizes to N sets with alternating addition + subtraction. EXAMPLE for 3 SETS: |A∪B∪C| = |A|+|B|+|C| − |A∩B| − |B∩C| − |C∩A| + |A∩B∩C|. PRACTICE: 'In college fest, 60 attended dance, 50 music, 40 drama; 25 dance+music, 20 music+drama, 15 dance+drama; 10 all three. How many attended at least one?' = 60+50+40−25−20−15+10 = 100. PYQ FREQUENCY: 2-set + 3-set Venn arithmetic in SSC CGL, IBPS PO, RBI Grade B Mains 1-2× per cycle. UPSC CSAT: Venn problems regular feature.",
+      "subject": "Reasoning",
+      "topic": "Venn Diagrams IV",
+      "topic_code": "REAS_VENN_DIAGRAMS_IV_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_VENN_DIAGRAMS_IV_MIXED_005"
+    },
+    {
+      "stem": "Pick the Venn relation: CHAIR, FURNITURE, WOOD.",
+      "options": [
+        {
+          "option_text": "Chair inside Furniture; Wood overlaps Furniture",
+          "is_correct": true
+        },
+        {
+          "option_text": "Three completely overlapping circles",
+          "is_correct": false
+        },
+        {
+          "option_text": "All three completely separate from (option here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chair = Furniture = Wood always (option here)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "ANALYZE relations: (1) CHAIR is a TYPE of FURNITURE → Chair ⊂ Furniture. (2) WOOD is a MATERIAL — some furniture is made of wood, but not all (metal/plastic furniture exists); also, some wood items are NOT furniture (logs, paper, baseball bats). So WOOD partially OVERLAPS Furniture. VENN DIAGRAM: (a) Chair circle entirely INSIDE Furniture circle. (b) Wood circle PARTIALLY OVERLAPS Furniture (where wooden furniture lives). (c) Wood and Chair: most wooden chairs are in BOTH; metal/plastic chairs are inside Chair but outside Wood. KEY VENN ANALYSIS METHOD: (1) Identify each pair's relation: subset, overlap, disjoint, equal. (2) Combine to a 3-circle diagram. PRACTICE — common 'tricky' triples: (a) DOCTOR, MAN, MOTHER — Mother is FEMALE; Doctor + Man overlap; Mother is separate from Man (in standard interpretation). So Doctor partially overlaps Man + Mother; Man and Mother disjoint. (b) FRUIT, APPLE, RED — Apple ⊂ Fruit; Red overlaps Fruit (some fruits are red, some not; some red things aren't fruits). (c) CRICKETER, ENGINEER, INDIAN — typically all three OVERLAP independently. EXAMINER MINDSET: tests careful real-world classification + diagram skill. PYQ FREQUENCY: 3-set classification in SSC CGL, IBPS PO 1× per paper.",
+      "subject": "Reasoning",
+      "topic": "Venn Diagrams IV",
+      "topic_code": "REAS_VENN_DIAGRAMS_IV_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_VENN_DIAGRAMS_IV_MIXED_006"
+    },
+    {
+      "stem": "60% read newspaper A, 50% read B, 30% read both. % who read at least one:",
+      "options": [
+        {
+          "option_text": "80% (using A+B−both)",
+          "is_correct": true
+        },
+        {
+          "option_text": "70% (an under-estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "110% (impossible value)",
+          "is_correct": false
+        },
+        {
+          "option_text": "90% (over-estimate)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Apply UNION FORMULA: |A ∪ B| = |A| + |B| − |A ∩ B| = 60 + 50 − 30 = 80%. So 80% read at least one paper. NEITHER: 100 − 80 = 20% read no newspaper at all. ONLY A: 60 − 30 = 30%. ONLY B: 50 − 30 = 20%. CHECK: 30 (only A) + 20 (only B) + 30 (both) + 20 (neither) = 100% ✓. KEY METHOD: percentage Venn problems work IDENTICALLY to count problems — just treat 100 as the 'total population'. UPSC CSAT-style Venn problem: 'In a survey, 70% adults read newspapers; 50% watch TV news; 30% do both. What % consume only TV news (not newspapers)?' Answer: 50 − 30 = 20%. INDIAN CONTEXT: print circulation stats + digital news consumption. As of 2024: newspaper readership in India ~46 crore (largest in world due to vernacular press); TV news ~80 crore viewers; digital (YouTube/online) ~50-60 crore. NEW MEDIA OVERLAP: many people consume from MULTIPLE sources. RECENT TRENDS: digital growing rapidly; print stable; TV news polarizing. UPSC angle: media + governance, regulation (Press Council, NBSA, PIB). PYQ FREQUENCY: Venn % problems in SSC CGL, IBPS PO Mains, UPSC CSAT 1× per paper.",
+      "subject": "Reasoning",
+      "topic": "Venn Diagrams IV",
+      "topic_code": "REAS_VENN_DIAGRAMS_IV_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_VENN_DIAGRAMS_IV_MIXED_007"
+    }
+  ]
+}
