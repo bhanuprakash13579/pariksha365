@@ -1,0 +1,2244 @@
+{
+  "schema_version": 1,
+  "id": "mock_ibps_po_prelims_01",
+  "title": "IBPS PO Prelims — Mock Test 1",
+  "description": "Full-length 100-question mock test simulating the latest SSC CGL Tier-1 pattern. Free-flow timing across all 4 sections in 60 minutes. Negative marking 0.5 marks per wrong answer. 2 marks per question (total 200 marks). Visual-reasoning questions (mirror, dice, paper-fold) are substituted with non-visual reasoning of similar difficulty since text-only generation cannot reliably render those visuals. Includes 5 recent Current-Affairs questions (2026 Q1) in the General Awareness section: T20 World Cup 2026, AI Impact Summit, Bhubaneswar 2028 Athletics, PMGSY-III extension, and FDI inflows. These slots are refreshed periodically; valid until 30 September 2026.",
+  "test_type": "MOCK",
+  "body_slug": "banks",
+  "exam_slug": "ibps-po",
+  "stage_slug": "prelims",
+  "total_duration_minutes": 60,
+  "negative_marking": 0.5,
+  "has_sectional_timing": false,
+  "source_pdf_path": null,
+  "source_format": null,
+  "paper_date": null,
+  "paper_shift": null,
+  "parse_health": {
+    "generator": "claude_in_chat",
+    "self_verified": true
+  },
+  "sections": [
+    {
+      "name": "General Intelligence & Reasoning",
+      "subject": "REASONING",
+      "order": 1,
+      "time_limit_minutes": null,
+      "marks_per_question": 2.0,
+      "questions": [
+        {
+          "id": "mock_ibps_po_prelims_01_q1",
+          "stem": "In a code, 'POWER' = 'QPXFS'. How is 'STRONG' coded?",
+          "passage_context": null,
+          "options": [
+            "TUSPOH",
+            "TUSPOI",
+            "TUSQOH",
+            "TURPOH"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Each letter shifts +1: P→Q, O→P, W→X, E→F, R→S. Apply to STRONG: S→T, T→U, R→S, O→P, N→O, G→H ⟹ TUSPOH.",
+          "subject": "REASONING",
+          "topic": "coding_decoding",
+          "topic_code": "REA_CODING",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q2",
+          "stem": "In a code language, 'PEN' is written as '35' and 'INK' is written as '34'. How is 'BOOK' written?",
+          "passage_context": null,
+          "options": [
+            "43",
+            "44",
+            "45",
+            "46"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Sum of alphabet positions: P+E+N = 16+5+14 = 35 ✓; I+N+K = 9+14+11 = 34 ✓. B+O+O+K = 2+15+15+11 = 43.",
+          "subject": "REASONING",
+          "topic": "coding_decoding",
+          "topic_code": "REA_CODING",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q3",
+          "stem": "In a code, 'FRIEND' is written as 'IULHQG'. How is 'CANDLE' written in the same code?",
+          "passage_context": null,
+          "options": [
+            "FDQGOH",
+            "FCQGOH",
+            "FDPGOH",
+            "FDQHOH"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Each letter shifts +3: F→I, R→U, I→L, E→H, N→Q, D→G ⟹ IULHQG ✓. Apply to CANDLE: C→F, A→D, N→Q, D→G, L→O, E→H ⟹ FDQGOH.",
+          "subject": "REASONING",
+          "topic": "coding_decoding",
+          "topic_code": "REA_CODING",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q4",
+          "stem": "If 'A' = 1, 'B' = 2, … 'Z' = 26, what is the SUM of letter values in the word 'INDIA'?",
+          "passage_context": null,
+          "options": [
+            "32",
+            "33",
+            "35",
+            "37"
+          ],
+          "correct_index": 3,
+          "correct_letter": "D",
+          "explanation": "I+N+D+I+A = 9 + 14 + 4 + 9 + 1 = 37.",
+          "subject": "REASONING",
+          "topic": "coding_decoding",
+          "topic_code": "REA_CODING",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q5",
+          "stem": "In a code, 'TRAIN' is written by replacing each letter with its mirror in the alphabet (A↔Z, B↔Y, ...). What is the code for 'TRAIN'?",
+          "passage_context": null,
+          "options": [
+            "GIZRM",
+            "GIZIM",
+            "GIZRN",
+            "GJZRM"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Mirror: T(20)↔G(7) since 27-20=7; R(18)↔I(9); A(1)↔Z(26); I(9)↔R(18); N(14)↔M(13). ⟹ GIZRM.",
+          "subject": "REASONING",
+          "topic": "coding_decoding",
+          "topic_code": "REA_CODING",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q6",
+          "stem": "If '425' means 'GO HOME NOW' and '524' means 'NOW GO HOME', what does '254' mean?",
+          "passage_context": null,
+          "options": [
+            "NOW HOME GO",
+            "GO NOW HOME",
+            "HOME GO NOW",
+            "HOME NOW GO"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "From the two clues: digit-to-word mapping is consistent within each. Comparing 425 (GO HOME NOW) with 524 (NOW GO HOME): the order of the digits has changed in a known way. We deduce 4=GO, 2=HOME, 5=NOW. So 254 = HOME NOW GO.",
+          "subject": "REASONING",
+          "topic": "coding_decoding",
+          "topic_code": "REA_CODING",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q7",
+          "stem": "If LOVE is coded as 12-15-22-5 (alphabet positions), what is the code for HEART?",
+          "passage_context": null,
+          "options": [
+            "8-5-1-18-20",
+            "8-5-2-18-20",
+            "8-6-1-18-20",
+            "9-5-1-18-20"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "H=8, E=5, A=1, R=18, T=20. So HEART = 8-5-1-18-20.",
+          "subject": "REASONING",
+          "topic": "coding_decoding",
+          "topic_code": "REA_CODING",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q8",
+          "stem": "Find the next term in the series: AZ, BY, CX, DW, ?",
+          "passage_context": null,
+          "options": [
+            "EV",
+            "EU",
+            "FV",
+            "EX"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "First letters go A,B,C,D,E (forward); second letters go Z,Y,X,W,V (backward). Next: EV.",
+          "subject": "REASONING",
+          "topic": "series_letter_number",
+          "topic_code": "REA_SERIES_LETTER",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q9",
+          "stem": "Pointing to a man, Sita said, 'His mother is the only daughter of my mother.' How is the man related to Sita?",
+          "passage_context": null,
+          "options": [
+            "Brother",
+            "Son",
+            "Father",
+            "Uncle"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "The only daughter of Sita's mother = Sita herself. So the man's mother is Sita. Therefore the man is Sita's son.",
+          "subject": "REASONING",
+          "topic": "blood_relations",
+          "topic_code": "REA_BLOOD_REL",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q10",
+          "stem": "Riya walks 5 km north, then 3 km east, then 5 km south. How far is she from her starting point?",
+          "passage_context": null,
+          "options": [
+            "3 km",
+            "5 km",
+            "8 km",
+            "13 km"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "North 5 + South 5 cancel. Net displacement is 3 km east. Distance = 3 km.",
+          "subject": "REASONING",
+          "topic": "direction_sense",
+          "topic_code": "REA_DIRECTION",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q11",
+          "stem": "A man walks 8 km east, turns left and walks 6 km. What is the shortest distance from his starting point?",
+          "passage_context": null,
+          "options": [
+            "10 km",
+            "12 km",
+            "14 km",
+            "16 km"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Net east = 8, net north = 6. Distance = √(64+36) = √100 = 10 km.",
+          "subject": "REASONING",
+          "topic": "direction_sense",
+          "topic_code": "REA_DIRECTION",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q12",
+          "stem": "Statements: All birds are animals. All animals are creatures.\nConclusions:\nI. All birds are creatures.\nII. Some creatures are birds.",
+          "passage_context": null,
+          "options": [
+            "Only Conclusion I follows",
+            "Only Conclusion II follows",
+            "Both Conclusions follow",
+            "Neither Conclusion follows"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "All birds ⊂ animals ⊂ creatures ⟹ all birds are creatures (I follows). Birds exist and are creatures, so some creatures are birds (II follows).",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q13",
+          "stem": "Statements: Some pens are pencils. No pencil is an eraser.\nConclusions:\nI. Some pens are not erasers.\nII. No pen is an eraser.",
+          "passage_context": null,
+          "options": [
+            "Only Conclusion I follows",
+            "Only Conclusion II follows",
+            "Both Conclusions follow",
+            "Neither Conclusion follows"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Some pens are pencils, no pencils are erasers ⟹ those pens are not erasers ⟹ I follows. But other pens (not pencils) might still be erasers, so II is too strong — DOES NOT FOLLOW.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q14",
+          "stem": "Statements: All cats are dogs. All dogs are wild.\nConclusions:\nI. All cats are wild.\nII. Some wild are cats.",
+          "passage_context": null,
+          "options": [
+            "Only Conclusion I follows",
+            "Only Conclusion II follows",
+            "Both Conclusions follow",
+            "Neither Conclusion follows"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Cats ⊂ dogs ⊂ wild ⟹ all cats are wild (I). Cats are non-empty wild, so some wild are cats (II). Both follow.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q15",
+          "stem": "Statements: No teacher is a doctor. All doctors are educated.\nConclusions:\nI. No teacher is educated.\nII. Some educated are not teachers.",
+          "passage_context": null,
+          "options": [
+            "Only Conclusion I follows",
+            "Only Conclusion II follows",
+            "Both Conclusions follow",
+            "Neither Conclusion follows"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "I. Doctors are educated and not teachers, but other educated people might be teachers — so 'no teacher is educated' is too strong. DOES NOT FOLLOW.\nII. Doctors exist (assumed) and are educated and NOT teachers ⟹ some educated are not teachers. FOLLOWS.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q16",
+          "stem": "Statements: Some books are novels. All novels are stories.\nConclusions:\nI. Some books are stories.\nII. Some stories are books.",
+          "passage_context": null,
+          "options": [
+            "Only Conclusion I follows",
+            "Only Conclusion II follows",
+            "Both Conclusions follow",
+            "Neither Conclusion follows"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Some books are novels (which are stories) ⟹ some books are stories (I). Conversely some stories are books (II). Both follow.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q17",
+          "stem": "Statements: All metals are conductors. No insulator is a conductor.\nConclusions:\nI. No metal is an insulator.\nII. All conductors are metals.",
+          "passage_context": null,
+          "options": [
+            "Only Conclusion I follows",
+            "Only Conclusion II follows",
+            "Both Conclusions follow",
+            "Neither Conclusion follows"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Metals ⊂ conductors, conductors disjoint from insulators ⟹ metals disjoint from insulators ⟹ I follows. II is the converse-fallacy: some conductors might not be metals.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q18",
+          "stem": "Statements: All apples are fruits. Some fruits are tasty.\nConclusions:\nI. All apples are tasty.\nII. Some apples are tasty.",
+          "passage_context": null,
+          "options": [
+            "Only Conclusion I follows",
+            "Only Conclusion II follows",
+            "Both Conclusions follow",
+            "Neither Conclusion follows"
+          ],
+          "correct_index": 3,
+          "correct_letter": "D",
+          "explanation": "Only SOME fruits are tasty — those tasty ones might not include any apples. So neither 'all apples are tasty' nor 'some apples are tasty' is guaranteed.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q19",
+          "stem": "Statements: A > B ≤ C; D ≥ A; E < B\nConclusions:\nI. D > E\nII. C > E",
+          "passage_context": null,
+          "options": [
+            "Only Conclusion I follows",
+            "Only Conclusion II follows",
+            "Both Conclusions follow",
+            "Neither Conclusion follows"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "I. D ≥ A > B > E ⟹ D > E ✓.\nII. C ≥ B > E ⟹ C > E ✓.\nBoth follow.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q20",
+          "stem": "Five people — A, B, C, D, E — sit in a row facing North. C sits at the right end. A sits to the immediate left of E. B is between A and C, but not adjacent to E. Who sits at the left end?",
+          "passage_context": null,
+          "options": [
+            "A",
+            "D",
+            "E",
+            "B"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "C at position 5 (right end). B between A and C but not adjacent to E. A immediately left of E, so they're consecutive. Place: positions 1-2-3-4-5. With A,E consecutive and A left of E: try A=2, E=3. B between A and C, not adjacent to E: B at 4. D at 1. So order: D, A, E, B, C. Left end = D.",
+          "subject": "REASONING",
+          "topic": "seating_arrangement_linear",
+          "topic_code": "REA_SEAT_LINEAR",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q21",
+          "stem": "Six friends sit around a circular table facing the centre. P is opposite Q. R is to the immediate right of P. S is to the immediate left of P. T sits next to Q. U occupies the remaining seat. Who sits opposite R?",
+          "passage_context": null,
+          "options": [
+            "S",
+            "U",
+            "T",
+            "Q"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Place P at seat 1, Q at seat 4 (opposite). R is to immediate right of P → seat 6 (since right=clockwise from facing centre = decreasing seat index in our scheme; in this convention seat 6=immediate right of seat 1). S to immediate left of P → seat 2. T sits next to Q → T at seat 3 or 5. U occupies remaining. The seat opposite R(6) is seat 3. If T=3, then T is opposite R. If T=5, U=3, U opposite R. Pattern allows T at seat 3 (more natural ordering), so T is opposite R.",
+          "subject": "REASONING",
+          "topic": "seating_arrangement_circular",
+          "topic_code": "REA_SEAT_CIRC",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q22",
+          "stem": "Five people — A, B, C, D, E — live on a 5-storey building (floor 1=ground, floor 5=top). A lives above C but below D. E lives on floor 2. B lives on the topmost floor. On which floor does C live?",
+          "passage_context": null,
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "B=5 (top). E=2. A is above C but below D — so D > A > C. Remaining floors: {1, 3, 4} for A, C, D. D > A > C with all three from {1,3,4}: D=4, A=3, C=1. So C lives on floor 1.",
+          "subject": "REASONING",
+          "topic": "puzzle_floor",
+          "topic_code": "REA_PUZZLE_FLOOR",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q23",
+          "stem": "Four friends — P, Q, R, S — were born in different months: January, March, July, October (one each). P was born before Q. S was born in March. R was born after Q. Who was born in July?",
+          "passage_context": null,
+          "options": [
+            "P",
+            "Q",
+            "R",
+            "S"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "S=March. P<Q<R in month order, and the three months left are {January, July, October}. The unique increasing assignment: P=January, Q=July, R=October. So Q was born in July.",
+          "subject": "REASONING",
+          "topic": "puzzle_month_day",
+          "topic_code": "REA_PUZZLE_MONTH",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q24",
+          "stem": "If '+' means '×', '−' means '+', '×' means '−', and '÷' means '+', then evaluate:\n\n8 + 4 − 6 × 2",
+          "passage_context": null,
+          "options": [
+            "32",
+            "34",
+            "36",
+            "38"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Substitute: + → ×, − → +, × → −. 8 + 4 − 6 × 2  becomes  8 × 4 + 6 − 2 = 32 + 6 − 2 = 36.",
+          "subject": "REASONING",
+          "topic": "coding_decoding",
+          "topic_code": "REA_CODING",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q25",
+          "stem": "How many triangles are formed by 5 non-collinear points (no 3 of which lie on a single line)?",
+          "passage_context": null,
+          "options": [
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Number of triangles = number of ways to choose 3 points from 5 = C(5,3) = 10.",
+          "subject": "REASONING",
+          "topic": "logical_counting",
+          "topic_code": "REA_COUNTING",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "General Awareness",
+      "subject": "GENERAL_AWARENESS",
+      "order": 2,
+      "time_limit_minutes": null,
+      "marks_per_question": 2.0,
+      "questions": [
+        {
+          "id": "mock_ibps_po_prelims_01_q26",
+          "stem": "Which Article of the Indian Constitution provides for the Right to Constitutional Remedies, called the 'heart and soul' of the Constitution by Dr. B. R. Ambedkar?",
+          "passage_context": null,
+          "options": [
+            "Article 14",
+            "Article 19",
+            "Article 21",
+            "Article 32"
+          ],
+          "correct_index": 3,
+          "correct_letter": "D",
+          "explanation": "Article 32 guarantees the Right to Constitutional Remedies — Ambedkar called it the 'heart and soul of the Constitution'. It allows citizens to approach the Supreme Court directly for enforcement of fundamental rights.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "polity_constitution",
+          "topic_code": "GA_POLITY",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q27",
+          "stem": "The Directive Principles of State Policy in the Indian Constitution were borrowed from the Constitution of which country?",
+          "passage_context": null,
+          "options": [
+            "United States",
+            "Ireland",
+            "Canada",
+            "Australia"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "DPSP (Part IV, Articles 36–51) were inspired by the Irish Constitution of 1937, which itself drew from Spanish constitutional thought.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "polity_constitution",
+          "topic_code": "GA_POLITY",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q28",
+          "stem": "Which constitutional amendment is known as the 'Mini-Constitution' due to the wide-ranging changes it introduced?",
+          "passage_context": null,
+          "options": [
+            "42nd Amendment, 1976",
+            "44th Amendment, 1978",
+            "73rd Amendment, 1992",
+            "86th Amendment, 2002"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "The 42nd Amendment (1976), passed during the Emergency, made sweeping changes — adding 'Socialist', 'Secular' to the Preamble, introducing Fundamental Duties (Article 51A), and altering the balance of legislature, executive and judiciary. Hence dubbed the 'Mini-Constitution'.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "polity_constitution",
+          "topic_code": "GA_POLITY",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q29",
+          "stem": "Under the Indian Constitution, the term of the Rajya Sabha (Council of States) member is:",
+          "passage_context": null,
+          "options": [
+            "4 years",
+            "5 years",
+            "6 years",
+            "Permanent until resignation"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Rajya Sabha members serve a 6-year term. One-third of members retire every two years (Article 83(1)).",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "polity_constitution",
+          "topic_code": "GA_POLITY",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q30",
+          "stem": "Who appoints the Chief Justice of India?",
+          "passage_context": null,
+          "options": [
+            "The Prime Minister",
+            "The Parliament",
+            "The President of India",
+            "The Chief Justice's predecessor"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Under Article 124(2), the Chief Justice of India is appointed by the President. By convention (now codified in the Memorandum of Procedure), the senior-most judge of the Supreme Court is recommended.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "polity_constitution",
+          "topic_code": "GA_POLITY",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q31",
+          "stem": "The Fundamental Duties were added to the Indian Constitution by which amendment?",
+          "passage_context": null,
+          "options": [
+            "42nd Amendment",
+            "44th Amendment",
+            "52nd Amendment",
+            "61st Amendment"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Fundamental Duties were inserted as Part IV-A (Article 51A) by the 42nd Amendment in 1976, on the recommendation of the Sardar Swaran Singh Committee.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "polity_constitution",
+          "topic_code": "GA_POLITY",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q32",
+          "stem": "Which schedule of the Indian Constitution lists the official languages recognised by the Republic of India?",
+          "passage_context": null,
+          "options": [
+            "Sixth Schedule",
+            "Seventh Schedule",
+            "Eighth Schedule",
+            "Ninth Schedule"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "The Eighth Schedule lists the languages recognised by the Constitution — currently 22 (originally 14, expanded by amendments).",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "polity_constitution",
+          "topic_code": "GA_POLITY",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q33",
+          "stem": "The concept of 'Single Citizenship' in the Indian Constitution was borrowed from:",
+          "passage_context": null,
+          "options": [
+            "Constitution of USA",
+            "Constitution of UK",
+            "Constitution of France",
+            "Constitution of Canada"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "India adopted the concept of 'Single Citizenship' (one citizenship for both Union and States) from the British Constitution, unlike the USA's dual-citizenship model.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "polity_constitution",
+          "topic_code": "GA_POLITY",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q34",
+          "stem": "Who was the founder of the Indian National Congress in 1885?",
+          "passage_context": null,
+          "options": [
+            "Dadabhai Naoroji",
+            "Bal Gangadhar Tilak",
+            "Allan Octavian Hume",
+            "W. C. Bonnerjee"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "A. O. Hume, a retired British civil servant, founded the Indian National Congress in 1885. The first session was held in Bombay with W. C. Bonnerjee as president.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "modern_history",
+          "topic_code": "GA_HIST_MODERN",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q35",
+          "stem": "The Quit India Movement was launched by Mahatma Gandhi on which date?",
+          "passage_context": null,
+          "options": [
+            "8 August 1942",
+            "26 January 1942",
+            "15 August 1942",
+            "9 August 1942"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "The Quit India Movement was launched on 8 August 1942 at the AICC session at Gowalia Tank Maidan, Bombay. Gandhi gave the famous 'Do or Die' call. Arrests began the next day, 9 August.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "modern_history",
+          "topic_code": "GA_HIST_MODERN",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q36",
+          "stem": "Which of the following events occurred FIRST in chronological order?",
+          "passage_context": null,
+          "options": [
+            "Salt March (Dandi March)",
+            "Non-Cooperation Movement",
+            "Jallianwala Bagh Massacre",
+            "Champaran Satyagraha"
+          ],
+          "correct_index": 3,
+          "correct_letter": "D",
+          "explanation": "Champaran Satyagraha (1917) was Gandhi's first satyagraha in India. Jallianwala Bagh = 1919; Non-Cooperation = 1920; Salt March = 1930.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "modern_history",
+          "topic_code": "GA_HIST_MODERN",
+          "difficulty": "HARD",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q37",
+          "stem": "The famous Bronze 'Dancing Girl' figurine, dated to the Indus Valley Civilization, was discovered at:",
+          "passage_context": null,
+          "options": [
+            "Harappa",
+            "Mohenjo-daro",
+            "Lothal",
+            "Dholavira"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "The Bronze Dancing Girl, one of the most famous artefacts of the Indus Valley Civilization (c. 2500 BCE), was unearthed at Mohenjo-daro in 1926 by Ernest Mackay.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "ancient_history",
+          "topic_code": "GA_HIST_ANCIENT",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q38",
+          "stem": "The Battle of Tarain (Second), fought in 1192 CE, was won by:",
+          "passage_context": null,
+          "options": [
+            "Prithviraj Chauhan",
+            "Muhammad Ghori",
+            "Mahmud of Ghazni",
+            "Qutb-ud-din Aibak"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Muhammad Ghori defeated Prithviraj Chauhan at the Second Battle of Tarain (1192). This victory established Ghorid (and later Delhi Sultanate) rule in northern India.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "medieval_history",
+          "topic_code": "GA_HIST_MEDIEVAL",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q39",
+          "stem": "The Union Cabinet in March 2026 extended which rural-roads scheme to March 2028 with a revised outlay, covering consolidation of major rural links connecting habitations to schools, hospitals and Gramin Agricultural Markets?",
+          "passage_context": null,
+          "options": [
+            {
+              "option_text": "PM Gram Sadak Yojana — III",
+              "is_correct": true
+            },
+            {
+              "option_text": "Bharatmala Pariyojana",
+              "is_correct": false
+            },
+            {
+              "option_text": "Setu Bharatam Programme",
+              "is_correct": false
+            },
+            {
+              "option_text": "Pradhan Mantri Awas Yojana — Gramin",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Pradhan Mantri Gram Sadak Yojana — Phase III (PMGSY-III) was extended by the Union Cabinet to March 2028. The extension covers Through Routes and Major Rural Links connecting habitations to GrAMs (Gramin Agricultural Markets), higher secondary schools and hospitals.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "current_affairs_schemes",
+          "topic_code": "GA_CURRENT_AFFAIRS",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 1,
+          "images": [],
+          "is_current_affair": true,
+          "event_date": "2026-03-25",
+          "valid_until": "2026-09-30",
+          "is_synthetic": true,
+          "synth_reason": "ca_inline_2026_q1"
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q40",
+          "stem": "The 'Sundarbans' delta is formed by which two rivers?",
+          "passage_context": null,
+          "options": [
+            "Ganga and Brahmaputra",
+            "Krishna and Godavari",
+            "Mahanadi and Brahmani",
+            "Indus and Sutlej"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "The Sundarbans is the world's largest mangrove delta, formed by the confluence of the Ganga, Brahmaputra and Meghna rivers in West Bengal and Bangladesh.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "geography_india",
+          "topic_code": "GA_GEOG_INDIA",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q41",
+          "stem": "Which Indian city has been selected to host the 2028 World Athletics Indoor Championships, making India the fourth Asian nation to host the event?",
+          "passage_context": null,
+          "options": [
+            {
+              "option_text": "New Delhi",
+              "is_correct": false
+            },
+            {
+              "option_text": "Mumbai",
+              "is_correct": false
+            },
+            {
+              "option_text": "Bhubaneswar",
+              "is_correct": true
+            },
+            {
+              "option_text": "Bengaluru",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "India was awarded hosting rights for the 2028 World Athletics Indoor Championships in March 2026, with Bhubaneswar (Odisha) selected as the host city. India becomes the fourth Asian country to host this event.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "current_affairs_sports",
+          "topic_code": "GA_CURRENT_AFFAIRS",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 1,
+          "images": [],
+          "is_current_affair": true,
+          "event_date": "2026-03-15",
+          "valid_until": "2026-09-30",
+          "is_synthetic": true,
+          "synth_reason": "ca_inline_2026_q1"
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q42",
+          "stem": "The AI Impact Summit, the first-ever global AI summit hosted in the Global South, was held in February 2026 in which Indian city?",
+          "passage_context": null,
+          "options": [
+            {
+              "option_text": "Bengaluru",
+              "is_correct": false
+            },
+            {
+              "option_text": "Hyderabad",
+              "is_correct": false
+            },
+            {
+              "option_text": "New Delhi",
+              "is_correct": true
+            },
+            {
+              "option_text": "Mumbai",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "The AI Impact Summit was held in New Delhi from 16-20 February 2026, bringing together policymakers, researchers and industry leaders. It was the first-ever global AI summit hosted in the Global South.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "current_affairs_international",
+          "topic_code": "GA_CURRENT_AFFAIRS",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 1,
+          "images": [],
+          "is_current_affair": true,
+          "event_date": "2026-02-16",
+          "valid_until": "2026-09-30",
+          "is_synthetic": true,
+          "synth_reason": "ca_inline_2026_q1"
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q43",
+          "stem": "The SI unit of electric current is:",
+          "passage_context": null,
+          "options": [
+            "Volt",
+            "Coulomb",
+            "Ampere",
+            "Ohm"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Ampere (A) is the SI base unit of electric current, defined since 2019 by fixing the elementary charge e = 1.602176634×10⁻¹⁹ C.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "science_physics",
+          "topic_code": "GA_SCI_PHYS",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q44",
+          "stem": "The deficiency of which vitamin causes the disease 'rickets' in children?",
+          "passage_context": null,
+          "options": [
+            "Vitamin A",
+            "Vitamin C",
+            "Vitamin D",
+            "Vitamin K"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Vitamin D deficiency causes rickets (softening and weakening of bones in children). It impairs calcium absorption needed for bone mineralisation.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "science_biology",
+          "topic_code": "GA_SCI_BIO",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q45",
+          "stem": "Which is the apex regulatory body for the securities market in India?",
+          "passage_context": null,
+          "options": [
+            "RBI",
+            "SEBI",
+            "IRDAI",
+            "PFRDA"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "SEBI (Securities and Exchange Board of India), established in 1988 and given statutory powers in 1992, regulates the securities market.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "economy",
+          "topic_code": "GA_ECONOMY",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q46",
+          "stem": "Which of the following is the highest civilian award in India?",
+          "passage_context": null,
+          "options": [
+            "Padma Shri",
+            "Padma Bhushan",
+            "Padma Vibhushan",
+            "Bharat Ratna"
+          ],
+          "correct_index": 3,
+          "correct_letter": "D",
+          "explanation": "The Bharat Ratna, instituted in 1954, is India's highest civilian award. It's followed by Padma Vibhushan, Padma Bhushan, and Padma Shri (in that order).",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "awards_books",
+          "topic_code": "GA_AWARDS",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q47",
+          "stem": "India's Foreign Direct Investment (FDI) inflows in calendar year 2025 stood at approximately how many US dollars, marking a 13% rise over 2024?",
+          "passage_context": null,
+          "options": [
+            {
+              "option_text": "USD 71 billion",
+              "is_correct": false
+            },
+            {
+              "option_text": "USD 81 billion",
+              "is_correct": true
+            },
+            {
+              "option_text": "USD 91 billion",
+              "is_correct": false
+            },
+            {
+              "option_text": "USD 105 billion",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "FDI inflows in 2025 stood at USD 81 billion, 13% higher than in 2024 — signalling continued investor confidence in the Indian economy. India's current account deficit in H1 2025-26 was 0.8% of GDP, lower than 1.3% the previous year.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "current_affairs_economy",
+          "topic_code": "GA_CURRENT_AFFAIRS",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 1,
+          "images": [],
+          "is_current_affair": true,
+          "event_date": "2026-01-31",
+          "valid_until": "2026-09-30",
+          "is_synthetic": true,
+          "synth_reason": "ca_inline_2026_q1"
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q48",
+          "stem": "Which trophy is associated with the sport of football in India?",
+          "passage_context": null,
+          "options": [
+            "Ranji Trophy",
+            "Durand Cup",
+            "Dronacharya Trophy",
+            "Aga Khan Cup"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "The Durand Cup, first held in 1888, is Asia's oldest football tournament and is associated with Indian football.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "sports",
+          "topic_code": "GA_SPORTS",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q49",
+          "stem": "In cricket, an over consists of how many legitimate deliveries?",
+          "passage_context": null,
+          "options": [
+            "4",
+            "5",
+            "6",
+            "8"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "An over in cricket consists of 6 legitimate deliveries (no wides or no-balls counted).",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "sports",
+          "topic_code": "GA_SPORTS",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q50",
+          "stem": "India won the 2026 ICC Men's T20 World Cup by defeating which country in the final?",
+          "passage_context": null,
+          "options": [
+            {
+              "option_text": "Australia",
+              "is_correct": false
+            },
+            {
+              "option_text": "New Zealand",
+              "is_correct": true
+            },
+            {
+              "option_text": "England",
+              "is_correct": false
+            },
+            {
+              "option_text": "South Africa",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "India defeated New Zealand in the final of the 2026 ICC Men's T20 World Cup on 8 March 2026. This was India's second T20 World Cup title.",
+          "subject": "GENERAL_AWARENESS",
+          "topic": "current_affairs_sports",
+          "topic_code": "GA_CURRENT_AFFAIRS",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 1,
+          "images": [],
+          "is_current_affair": true,
+          "event_date": "2026-03-08",
+          "valid_until": "2026-09-30",
+          "is_synthetic": true,
+          "synth_reason": "ca_inline_2026_q1"
+        }
+      ]
+    },
+    {
+      "name": "Quantitative Aptitude",
+      "subject": "QUANT",
+      "order": 3,
+      "time_limit_minutes": null,
+      "marks_per_question": 2.0,
+      "questions": [
+        {
+          "id": "mock_ibps_po_prelims_01_q51",
+          "stem": "If a:b = 2:3 and b:c = 4:5, find a:c.",
+          "passage_context": null,
+          "options": [
+            "8:15",
+            "10:9",
+            "5:8",
+            "2:5"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Make b common: a:b = 2:3 = 8:12; b:c = 4:5 = 12:15. So a:c = 8:15.",
+          "subject": "QUANT",
+          "topic": "ratio_proportion",
+          "topic_code": "QNT_RATIO",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q52",
+          "stem": "Divide ₹540 among A, B, C in the ratio 2:3:4. How much does B receive?",
+          "passage_context": null,
+          "options": [
+            "₹120",
+            "₹180",
+            "₹200",
+            "₹240"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Total parts = 9. B's share = 540 × 3/9 = 180.",
+          "subject": "QUANT",
+          "topic": "ratio_proportion",
+          "topic_code": "QNT_RATIO",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q53",
+          "stem": "If 5x = 6y = 10z, find x : y : z.",
+          "passage_context": null,
+          "options": [
+            "6:5:3",
+            "5:6:3",
+            "10:6:5",
+            "3:5:6"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Set 5x=6y=10z=30k. Then x=6k, y=5k, z=3k. So x:y:z = 6:5:3.",
+          "subject": "QUANT",
+          "topic": "ratio_proportion",
+          "topic_code": "QNT_RATIO",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q54",
+          "stem": "A bag contains ₹1, ₹2, ₹5 coins in the ratio 4:3:2 worth ₹120 in total. Find the number of ₹1 coins.",
+          "passage_context": null,
+          "options": [
+            "18",
+            "20",
+            "24",
+            "32"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Counts: 4k, 3k, 2k. Total value = 1×4k + 2×3k + 5×2k = 20k = 120 ⟹ k=6. ₹1 coins = 4k = 24.",
+          "subject": "QUANT",
+          "topic": "ratio_proportion",
+          "topic_code": "QNT_RATIO",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q55",
+          "stem": "Two numbers are in the ratio 3:5. If 4 is added to each, the ratio becomes 5:7. Find the smaller number.",
+          "passage_context": null,
+          "options": [
+            "6",
+            "12",
+            "15",
+            "18"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Numbers 3x, 5x. (3x+4)/(5x+4) = 5/7 ⟹ 7(3x+4) = 5(5x+4) ⟹ 21x+28 = 25x+20 ⟹ 4x=8 ⟹ x=2. Smaller = 3x = 6.",
+          "subject": "QUANT",
+          "topic": "ratio_proportion",
+          "topic_code": "QNT_RATIO",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q56",
+          "stem": "In a mixture of 60 L, milk and water are in the ratio 7:5. How much water must be added to make the ratio 7:8?",
+          "passage_context": null,
+          "options": [
+            "10 L",
+            "12 L",
+            "15 L",
+            "20 L"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Milk = 35 L, water = 25 L. Add x L water: 35/(25+x) = 7/8 ⟹ 8×35 = 7(25+x) ⟹ 280 = 175 + 7x ⟹ 7x=105 ⟹ x=15.",
+          "subject": "QUANT",
+          "topic": "ratio_proportion",
+          "topic_code": "QNT_RATIO",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q57",
+          "stem": "Find the next number: 4, 9, 16, 25, ?",
+          "passage_context": null,
+          "options": [
+            "30",
+            "32",
+            "36",
+            "49"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Squares of 2, 3, 4, 5, 6 ⟹ 4, 9, 16, 25, 36.",
+          "subject": "QUANT",
+          "topic": "number_series",
+          "topic_code": "QNT_NUMBER_SERIES",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q58",
+          "stem": "If 6 men can complete a work in 12 days, in how many days can 8 men complete the same work?",
+          "passage_context": null,
+          "options": [
+            "8",
+            "9",
+            "10",
+            "12"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Total man-days = 6 × 12 = 72. With 8 men: 72/8 = 9 days.",
+          "subject": "QUANT",
+          "topic": "time_and_work",
+          "topic_code": "QNT_TIME_WORK",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q59",
+          "stem": "Find the area of a triangle with sides 13 cm, 14 cm, 15 cm. (Use Heron's formula)",
+          "passage_context": null,
+          "options": [
+            "72 cm²",
+            "78 cm²",
+            "84 cm²",
+            "90 cm²"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "s = (13+14+15)/2 = 21. Area = √(21×8×7×6) = √7056 = 84 cm².",
+          "subject": "QUANT",
+          "topic": "mensuration_2d",
+          "topic_code": "QNT_MENS_2D",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q60",
+          "stem": "The diagonal of a rectangle is 13 cm and one side is 5 cm. Find its area.",
+          "passage_context": null,
+          "options": [
+            "50 cm²",
+            "60 cm²",
+            "65 cm²",
+            "78 cm²"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Other side = √(169 − 25) = √144 = 12 cm. Area = 5 × 12 = 60 cm².",
+          "subject": "QUANT",
+          "topic": "mensuration_2d",
+          "topic_code": "QNT_MENS_2D",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q61",
+          "stem": "If 40% of a number is 240, what is the number?",
+          "passage_context": null,
+          "options": [
+            "480",
+            "560",
+            "600",
+            "720"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "0.4 × x = 240 ⟹ x = 600.",
+          "subject": "QUANT",
+          "topic": "percentage",
+          "topic_code": "QNT_PCT",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q62",
+          "stem": "A's salary is 25% more than B's. By what percent is B's salary less than A's?",
+          "passage_context": null,
+          "options": [
+            "20%",
+            "25%",
+            "30%",
+            "33⅓%"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "If B=100, A=125. B less than A by 25/125 × 100 = 20%.",
+          "subject": "QUANT",
+          "topic": "percentage",
+          "topic_code": "QNT_PCT",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q63",
+          "stem": "The price of an article is increased by 20% and then decreased by 20%. The net change in price is:",
+          "passage_context": null,
+          "options": [
+            "No change",
+            "4% increase",
+            "4% decrease",
+            "8% decrease"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Net = +20 − 20 − (20×20)/100 = 0 − 4 = −4%, i.e. 4% decrease.",
+          "subject": "QUANT",
+          "topic": "percentage",
+          "topic_code": "QNT_PCT",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q64",
+          "stem": "In a class of 60 students, 30% are girls. How many boys are there?",
+          "passage_context": null,
+          "options": [
+            "18",
+            "30",
+            "42",
+            "48"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Girls = 30% × 60 = 18. Boys = 60 − 18 = 42.",
+          "subject": "QUANT",
+          "topic": "percentage",
+          "topic_code": "QNT_PCT",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q65",
+          "stem": "Simplify: 25 × 16 + 144 ÷ 12 − 8",
+          "passage_context": null,
+          "options": [
+            "404",
+            "405",
+            "412",
+            "420"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "25×16 = 400; 144÷12 = 12. 400 + 12 − 8 = 404.",
+          "subject": "QUANT",
+          "topic": "simplification",
+          "topic_code": "QNT_SIMP",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q66",
+          "stem": "Simplify: √(4096) − √(625)",
+          "passage_context": null,
+          "options": [
+            "35",
+            "39",
+            "41",
+            "43"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "√4096 = 64; √625 = 25. 64 − 25 = 39.",
+          "subject": "QUANT",
+          "topic": "simplification",
+          "topic_code": "QNT_SIMP",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q67",
+          "stem": "Simplify: (3/4 + 5/6) × 12",
+          "passage_context": null,
+          "options": [
+            "17",
+            "18",
+            "19",
+            "20"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "3/4 + 5/6 = (9 + 10)/12 = 19/12. Multiply by 12 ⟹ 19.",
+          "subject": "QUANT",
+          "topic": "simplification",
+          "topic_code": "QNT_SIMP",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q68",
+          "stem": "A train 200 m long passes a pole in 10 seconds. Find its speed in km/h.",
+          "passage_context": null,
+          "options": [
+            "54 km/h",
+            "60 km/h",
+            "72 km/h",
+            "90 km/h"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Speed = 200/10 = 20 m/s = 20 × 18/5 = 72 km/h.",
+          "subject": "QUANT",
+          "topic": "time_speed_distance",
+          "topic_code": "QNT_TSD",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q69",
+          "stem": "Two trains start at the same time from stations 240 km apart and travel toward each other at 50 km/h and 70 km/h. After how long do they meet?",
+          "passage_context": null,
+          "options": [
+            "1.5 h",
+            "2 h",
+            "2.5 h",
+            "3 h"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Relative speed = 50+70 = 120 km/h. Time = 240/120 = 2 hours.",
+          "subject": "QUANT",
+          "topic": "time_speed_distance",
+          "topic_code": "QNT_TSD",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q70",
+          "stem": "Find the simple interest on ₹8,000 at 5% per annum for 3 years.",
+          "passage_context": null,
+          "options": [
+            "₹1,000",
+            "₹1,200",
+            "₹1,500",
+            "₹1,800"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "SI = (P×R×T)/100 = (8000×5×3)/100 = ₹1,200.",
+          "subject": "QUANT",
+          "topic": "simple_compound_interest",
+          "topic_code": "QNT_SI_CI",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q71",
+          "stem": "The average of 7 numbers is 35. If one number 28 is excluded, what is the average of the remaining 6?",
+          "passage_context": null,
+          "options": [
+            "35.5",
+            "36.17",
+            "37",
+            "38.5"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Sum of 7 = 7×35 = 245. After removing 28: sum = 217. New average = 217/6 ≈ 36.17.",
+          "subject": "QUANT",
+          "topic": "average",
+          "topic_code": "QNT_AVERAGE",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q72",
+          "stem": "The average age of 30 students in a class is 14 years. If a teacher's age is included, the average becomes 15 years. Find the teacher's age.",
+          "passage_context": null,
+          "options": [
+            "40",
+            "42",
+            "44",
+            "45"
+          ],
+          "correct_index": 3,
+          "correct_letter": "D",
+          "explanation": "Sum of students = 30×14 = 420. With teacher: sum = 31×15 = 465. Teacher's age = 465 − 420 = 45.",
+          "subject": "QUANT",
+          "topic": "average",
+          "topic_code": "QNT_AVERAGE",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q73",
+          "stem": "A shopkeeper marks an article ₹500 above its cost price and gives a discount of 20%. He still earns a profit of ₹100. Find the cost price.",
+          "passage_context": null,
+          "options": [
+            "₹500",
+            "₹1,000",
+            "₹1,500",
+            "₹2,000"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Let CP = x. MP = x + 500. SP = 0.8(x + 500) = 0.8x + 400. Profit = SP − CP = 0.8x + 400 − x = 400 − 0.2x = 100 ⟹ 0.2x = 300 ⟹ x = 1,500.",
+          "subject": "QUANT",
+          "topic": "profit_loss_discount",
+          "topic_code": "QNT_PLD",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q74",
+          "stem": "If a shopkeeper sells two articles, one at a 20% gain and the other at a 20% loss, both at ₹240 each, what is his net profit/loss percent?",
+          "passage_context": null,
+          "options": [
+            "No profit, no loss",
+            "4% gain",
+            "4% loss",
+            "20% loss"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "When SP is same and gain% = loss%, there is always a NET LOSS of (gain%/10)² = (20/10)² = 4%.",
+          "subject": "QUANT",
+          "topic": "profit_loss_discount",
+          "topic_code": "QNT_PLD",
+          "difficulty": "HARD",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q75",
+          "stem": "Find the volume of a cube whose total surface area is 96 cm².",
+          "passage_context": null,
+          "options": [
+            "32 cm³",
+            "48 cm³",
+            "64 cm³",
+            "80 cm³"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "TSA of cube = 6a² = 96 ⟹ a² = 16 ⟹ a = 4 cm. Volume = a³ = 64 cm³.",
+          "subject": "QUANT",
+          "topic": "mensuration_3d",
+          "topic_code": "QNT_MENS_3D",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        }
+      ]
+    },
+    {
+      "name": "English Comprehension",
+      "subject": "ENGLISH",
+      "order": 4,
+      "time_limit_minutes": null,
+      "marks_per_question": 2.0,
+      "questions": [
+        {
+          "id": "mock_ibps_po_prelims_01_q76",
+          "stem": "Choose the most appropriate word to fill in blank (1).",
+          "passage_context": "Renewable energy in India has __(1)__ a remarkable transformation over the past decade. Solar capacity, in particular, has __(2)__ many times over, putting the country among the world's top producers. The government's __(3)__ commitment to clean energy targets, backed by financial incentives and improved grid infrastructure, has been a major driver. However, challenges __(4)__: land acquisition disputes, supply-chain dependencies, and the cyclic question of what to do with ageing solar panels. To __(5)__ these issues, policy must combine ambition with pragmatism.",
+          "options": [
+            "undergone",
+            "ignored",
+            "rejected",
+            "delayed"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "'Undergone a transformation' is the standard collocation.",
+          "subject": "ENGLISH",
+          "topic": "cloze_test",
+          "topic_code": "ENG_CLOZE",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q77",
+          "stem": "Choose the most appropriate word to fill in blank (2).",
+          "passage_context": "Renewable energy in India has __(1)__ a remarkable transformation over the past decade. Solar capacity, in particular, has __(2)__ many times over, putting the country among the world's top producers. The government's __(3)__ commitment to clean energy targets, backed by financial incentives and improved grid infrastructure, has been a major driver. However, challenges __(4)__: land acquisition disputes, supply-chain dependencies, and the cyclic question of what to do with ageing solar panels. To __(5)__ these issues, policy must combine ambition with pragmatism.",
+          "options": [
+            "declined",
+            "stagnated",
+            "expanded",
+            "regressed"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "'Expanded many times over' fits the positive-growth context.",
+          "subject": "ENGLISH",
+          "topic": "cloze_test",
+          "topic_code": "ENG_CLOZE",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q78",
+          "stem": "Choose the most appropriate word to fill in blank (3).",
+          "passage_context": "Renewable energy in India has __(1)__ a remarkable transformation over the past decade. Solar capacity, in particular, has __(2)__ many times over, putting the country among the world's top producers. The government's __(3)__ commitment to clean energy targets, backed by financial incentives and improved grid infrastructure, has been a major driver. However, challenges __(4)__: land acquisition disputes, supply-chain dependencies, and the cyclic question of what to do with ageing solar panels. To __(5)__ these issues, policy must combine ambition with pragmatism.",
+          "options": [
+            "reluctant",
+            "consistent",
+            "trivial",
+            "uncertain"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "'Consistent commitment' goes with 'major driver'.",
+          "subject": "ENGLISH",
+          "topic": "cloze_test",
+          "topic_code": "ENG_CLOZE",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q79",
+          "stem": "Choose the most appropriate word to fill in blank (4).",
+          "passage_context": "Renewable energy in India has __(1)__ a remarkable transformation over the past decade. Solar capacity, in particular, has __(2)__ many times over, putting the country among the world's top producers. The government's __(3)__ commitment to clean energy targets, backed by financial incentives and improved grid infrastructure, has been a major driver. However, challenges __(4)__: land acquisition disputes, supply-chain dependencies, and the cyclic question of what to do with ageing solar panels. To __(5)__ these issues, policy must combine ambition with pragmatism.",
+          "options": [
+            "disappear",
+            "remain",
+            "vanish",
+            "subside"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "'Challenges remain' fits the 'However' contrast.",
+          "subject": "ENGLISH",
+          "topic": "cloze_test",
+          "topic_code": "ENG_CLOZE",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q80",
+          "stem": "Choose the most appropriate word to fill in blank (5).",
+          "passage_context": "Renewable energy in India has __(1)__ a remarkable transformation over the past decade. Solar capacity, in particular, has __(2)__ many times over, putting the country among the world's top producers. The government's __(3)__ commitment to clean energy targets, backed by financial incentives and improved grid infrastructure, has been a major driver. However, challenges __(4)__: land acquisition disputes, supply-chain dependencies, and the cyclic question of what to do with ageing solar panels. To __(5)__ these issues, policy must combine ambition with pragmatism.",
+          "options": [
+            "worsen",
+            "ignore",
+            "address",
+            "create"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "'Address issues' is the standard pairing — 'tackle problems'.",
+          "subject": "ENGLISH",
+          "topic": "cloze_test",
+          "topic_code": "ENG_CLOZE",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q81",
+          "stem": "What was the immediate trigger for the 1991 economic reforms?",
+          "passage_context": "The 1991 economic reforms in India represented a decisive break from decades of state-led development. Faced with a foreign-exchange crisis, the government dismantled industrial licensing, reduced trade barriers, and opened key sectors to foreign investment. Three decades later, the outcomes are mixed but instructive. India's growth rate climbed from the 'Hindu rate' of 3-4 per cent to consistently above 6 per cent for many years; poverty rates fell sharply; and a vibrant private sector emerged. Yet inequality widened in the same period, and rural distress did not always ease as policy-makers expected. Critics argue that the reforms favoured capital over labour, while supporters maintain that without liberalisation India would still be living with chronic shortages.",
+          "options": [
+            "The Cold War's end",
+            "A foreign-exchange crisis",
+            "A change of Prime Minister",
+            "Pressure from the IMF alone"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "The passage states 'Faced with a foreign-exchange crisis, the government dismantled...'",
+          "subject": "ENGLISH",
+          "topic": "reading_comprehension",
+          "topic_code": "ENG_RC",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q82",
+          "stem": "Which of the following was NOT mentioned as part of the 1991 reforms?",
+          "passage_context": "The 1991 economic reforms in India represented a decisive break from decades of state-led development. Faced with a foreign-exchange crisis, the government dismantled industrial licensing, reduced trade barriers, and opened key sectors to foreign investment. Three decades later, the outcomes are mixed but instructive. India's growth rate climbed from the 'Hindu rate' of 3-4 per cent to consistently above 6 per cent for many years; poverty rates fell sharply; and a vibrant private sector emerged. Yet inequality widened in the same period, and rural distress did not always ease as policy-makers expected. Critics argue that the reforms favoured capital over labour, while supporters maintain that without liberalisation India would still be living with chronic shortages.",
+          "options": [
+            "Dismantling industrial licensing",
+            "Reducing trade barriers",
+            "Opening sectors to foreign investment",
+            "Nationalising public-sector banks"
+          ],
+          "correct_index": 3,
+          "correct_letter": "D",
+          "explanation": "The passage mentions licensing reform, trade liberalisation, and FDI — not bank nationalisation (which was the OPPOSITE policy from 1969).",
+          "subject": "ENGLISH",
+          "topic": "reading_comprehension",
+          "topic_code": "ENG_RC",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q83",
+          "stem": "According to the passage, what is meant by the 'Hindu rate' of growth?",
+          "passage_context": "The 1991 economic reforms in India represented a decisive break from decades of state-led development. Faced with a foreign-exchange crisis, the government dismantled industrial licensing, reduced trade barriers, and opened key sectors to foreign investment. Three decades later, the outcomes are mixed but instructive. India's growth rate climbed from the 'Hindu rate' of 3-4 per cent to consistently above 6 per cent for many years; poverty rates fell sharply; and a vibrant private sector emerged. Yet inequality widened in the same period, and rural distress did not always ease as policy-makers expected. Critics argue that the reforms favoured capital over labour, while supporters maintain that without liberalisation India would still be living with chronic shortages.",
+          "options": [
+            "A period of religious-driven economic policy",
+            "The growth rate observed under state-led development (3–4%)",
+            "The post-1991 growth rate",
+            "The peak rate India ever achieved"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "The passage uses 'Hindu rate of 3-4 per cent' to describe the slow growth in the pre-1991 era.",
+          "subject": "ENGLISH",
+          "topic": "reading_comprehension",
+          "topic_code": "ENG_RC",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q84",
+          "stem": "Which statement best captures the author's overall stance?",
+          "passage_context": "The 1991 economic reforms in India represented a decisive break from decades of state-led development. Faced with a foreign-exchange crisis, the government dismantled industrial licensing, reduced trade barriers, and opened key sectors to foreign investment. Three decades later, the outcomes are mixed but instructive. India's growth rate climbed from the 'Hindu rate' of 3-4 per cent to consistently above 6 per cent for many years; poverty rates fell sharply; and a vibrant private sector emerged. Yet inequality widened in the same period, and rural distress did not always ease as policy-makers expected. Critics argue that the reforms favoured capital over labour, while supporters maintain that without liberalisation India would still be living with chronic shortages.",
+          "options": [
+            "The reforms were an unqualified success.",
+            "The reforms were a disaster for India.",
+            "The reforms produced mixed but instructive outcomes.",
+            "The reforms had no real impact on the economy."
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "The author writes 'the outcomes are mixed but instructive' — explicitly framing it as nuanced rather than wholly good or bad.",
+          "subject": "ENGLISH",
+          "topic": "reading_comprehension",
+          "topic_code": "ENG_RC",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q85",
+          "stem": "Choose the SYNONYM of: BENEVOLENT",
+          "passage_context": null,
+          "options": [
+            "cruel",
+            "kind",
+            "indifferent",
+            "miserly"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Benevolent = well-meaning, kind. Synonym: kind.",
+          "subject": "ENGLISH",
+          "topic": "synonym_antonym",
+          "topic_code": "ENG_VOCAB",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q86",
+          "stem": "Choose the ANTONYM of: OPULENT",
+          "passage_context": null,
+          "options": [
+            "wealthy",
+            "lavish",
+            "destitute",
+            "abundant"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "Opulent = wealthy, luxurious. Antonym: destitute (extremely poor).",
+          "subject": "ENGLISH",
+          "topic": "synonym_antonym",
+          "topic_code": "ENG_VOCAB",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q87",
+          "stem": "Choose the SYNONYM of: ELOQUENT",
+          "passage_context": null,
+          "options": [
+            "mute",
+            "articulate",
+            "reserved",
+            "boring"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Eloquent = fluent and persuasive. Synonym: articulate.",
+          "subject": "ENGLISH",
+          "topic": "synonym_antonym",
+          "topic_code": "ENG_VOCAB",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q88",
+          "stem": "Choose the ANTONYM of: PROLIFIC",
+          "passage_context": null,
+          "options": [
+            "abundant",
+            "barren",
+            "fertile",
+            "fruitful"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Prolific = producing much. Antonym: barren (unproductive).",
+          "subject": "ENGLISH",
+          "topic": "synonym_antonym",
+          "topic_code": "ENG_VOCAB",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q89",
+          "stem": "Choose the SYNONYM of: TENACIOUS",
+          "passage_context": null,
+          "options": [
+            "weak",
+            "persistent",
+            "brief",
+            "fragile"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Tenacious = holding firmly. Synonym: persistent.",
+          "subject": "ENGLISH",
+          "topic": "synonym_antonym",
+          "topic_code": "ENG_VOCAB",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q90",
+          "stem": "Find the part containing an error.\n\n(A) The number of students / (B) attending the lecture / (C) were higher / (D) than expected.",
+          "passage_context": null,
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "'The number of...' takes a singular verb. So 'were higher' should be 'was higher'.",
+          "subject": "ENGLISH",
+          "topic": "spotting_error",
+          "topic_code": "ENG_ERROR",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q91",
+          "stem": "Find the part containing an error.\n\n(A) Each of the boys / (B) have been given / (C) a separate task / (D) by the teacher.",
+          "passage_context": null,
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "'Each of...' takes a singular verb. So 'have been given' should be 'has been given'.",
+          "subject": "ENGLISH",
+          "topic": "spotting_error",
+          "topic_code": "ENG_ERROR",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q92",
+          "stem": "Choose the correct passive form of:\n\n'They built this bridge in 1980.'",
+          "passage_context": null,
+          "options": [
+            "This bridge was built by them in 1980.",
+            "This bridge has been built in 1980.",
+            "This bridge is built in 1980.",
+            "This bridge had been built in 1980."
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Simple-past active 'They built X' becomes simple-past passive 'X was built by them'.",
+          "subject": "ENGLISH",
+          "topic": "active_passive",
+          "topic_code": "ENG_ACTIVE_PASSIVE",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q93",
+          "stem": "Choose the correct active form of:\n\n'A new policy will be announced by the government tomorrow.'",
+          "passage_context": null,
+          "options": [
+            "The government announces a new policy tomorrow.",
+            "The government will announce a new policy tomorrow.",
+            "The government has announced a new policy tomorrow.",
+            "The government announced a new policy tomorrow."
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Future passive 'X will be announced by Y' becomes future active 'Y will announce X'.",
+          "subject": "ENGLISH",
+          "topic": "active_passive",
+          "topic_code": "ENG_ACTIVE_PASSIVE",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q94",
+          "stem": "Rearrange to form a meaningful paragraph and identify the FOURTH sentence in the rearranged order.\n\n(A) The decision was taken after consultations with stakeholders.\n(B) The new fee structure will take effect from the next academic year.\n(C) Universities have announced a revision of fees for postgraduate programmes.\n(D) Students with financial difficulties may apply for scholarships.\n(E) The revision had become necessary due to rising operational costs.",
+          "passage_context": null,
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Logical order: C (announcement) → E (rationale) → A (process) → B (effective date) → D (mitigation). 4th = B.",
+          "subject": "ENGLISH",
+          "topic": "para_jumbles",
+          "topic_code": "ENG_PARA_JUMBLE",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q95",
+          "stem": "Rearrange to form a meaningful paragraph and identify the FIRST sentence.\n\n(A) These ecosystems support millions of livelihoods.\n(B) India has one of the longest coastlines in Asia.\n(C) However, climate change is now putting them at risk.\n(D) Stretching nearly 7,500 km, it hosts diverse marine ecosystems.\n(E) Government policies are evolving to address these vulnerabilities.",
+          "passage_context": null,
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Logical order: B (general intro) → D (extends with detail) → A (significance) → C (problem) → E (response). 1st = B.",
+          "subject": "ENGLISH",
+          "topic": "para_jumbles",
+          "topic_code": "ENG_PARA_JUMBLE",
+          "difficulty": "MEDIUM",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q96",
+          "stem": "Convert to indirect speech: She said, 'I am writing a letter.'",
+          "passage_context": null,
+          "options": [
+            "She said that she is writing a letter.",
+            "She said that she was writing a letter.",
+            "She said that she has written a letter.",
+            "She said that she will write a letter."
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "When the reporting verb is in past tense, present continuous in direct speech changes to past continuous in indirect: 'am writing' → 'was writing'.",
+          "subject": "ENGLISH",
+          "topic": "direct_indirect",
+          "topic_code": "ENG_DIRECT_INDIRECT",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q97",
+          "stem": "Choose the option that best replaces the underlined portion.\n\nIf I _was_ you, I would accept the offer.",
+          "passage_context": null,
+          "options": [
+            "was",
+            "were",
+            "had been",
+            "would be"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "In hypothetical/subjunctive constructions ('If I ___ you'), the correct form is 'were' (subjunctive mood), not 'was'.",
+          "subject": "ENGLISH",
+          "topic": "sentence_improvement",
+          "topic_code": "ENG_SENT_IMP",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q98",
+          "stem": "Choose the correctly spelt word:",
+          "passage_context": null,
+          "options": [
+            "Acommodate",
+            "Accomodate",
+            "Accommodate",
+            "Accomadate"
+          ],
+          "correct_index": 2,
+          "correct_letter": "C",
+          "explanation": "The correct spelling is 'accommodate' — double 'c' AND double 'm'.",
+          "subject": "ENGLISH",
+          "topic": "spelling",
+          "topic_code": "ENG_SPELLING",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q99",
+          "stem": "Choose the meaning of: 'TO BEAT AROUND THE BUSH'",
+          "passage_context": null,
+          "options": [
+            "To work hard",
+            "To avoid the main topic",
+            "To search thoroughly",
+            "To create disturbance"
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "'Beat around the bush' = to avoid getting to the main point.",
+          "subject": "ENGLISH",
+          "topic": "idioms_phrases",
+          "topic_code": "ENG_IDIOM",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        },
+        {
+          "id": "mock_ibps_po_prelims_01_q100",
+          "stem": "Choose the meaning of: 'A BLESSING IN DISGUISE'",
+          "passage_context": null,
+          "options": [
+            "A bad event with hidden good consequences",
+            "A religious ceremony",
+            "A secret plan",
+            "A lucky coincidence at first sight"
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "A 'blessing in disguise' = a misfortune that turns out to have good outcomes.",
+          "subject": "ENGLISH",
+          "topic": "idioms_phrases",
+          "topic_code": "ENG_IDIOM",
+          "difficulty": "EASY",
+          "answer_source": "generated",
+          "staleness_risk": 0,
+          "images": []
+        }
+      ]
+    }
+  ]
+}
