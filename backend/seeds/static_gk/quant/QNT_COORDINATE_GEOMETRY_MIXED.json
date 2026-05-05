@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "subject": "Quant",
+  "topic": "Coordinate Geometry — distance, midpoint, slope, section formula",
+  "topic_code": "QNT_COORDINATE_GEOMETRY_MIXED",
+  "description": "Distance formula, midpoint formula, slope of a line, collinearity, section formula — mixed difficulty.",
+  "questions": [
+    {
+      "stem": "The distance between points A(3, 4) and B(0, 0) is:",
+      "options": [
+        {
+          "option_text": "5 units",
+          "is_correct": true
+        },
+        {
+          "option_text": "7 units here",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 units here",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 units here",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "DISTANCE FORMULA: d = √[(x₂−x₁)² + (y₂−y₁)²]. Here A=(3,4), B=(0,0). d = √[(0−3)² + (0−4)²] = √[9 + 16] = √25 = 5. KEY: This is a classic Pythagorean triple — 3-4-5 triangle. PRACTICE EXAMPLES: (1) Distance between (6,0) and (0,8) = √(36+64) = √100 = 10. (2) Distance between (1,2) and (4,6) = √(9+16) = 5. (3) Distance between (−3,−4) and (0,0) = √(9+16) = 5. MEMORY AID: Distance = Hypotenuse of right triangle with legs |Δx| and |Δy|. COMMON PYTHAGOREAN TRIPLES in exams: (3,4,5), (5,12,13), (8,15,17), (7,24,25). PYQ FREQUENCY: distance formula appears in SSC CGL Tier 2, IBPS PO Quant 1-2× per cycle. EXAM TRAP: students forget to square before adding — don't calculate √(|Δx| + |Δy|) directly.",
+      "subject": "Quant",
+      "topic": "Coordinate Geometry — distance, midpoint, slope, section formula",
+      "topic_code": "QNT_COORDINATE_GEOMETRY_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_COORDINATE_GEOMETRY_MIXED_001"
+    },
+    {
+      "stem": "The midpoint of the line segment joining (−2, 6) and (4, −2) is:",
+      "options": [
+        {
+          "option_text": "(1, 2)",
+          "is_correct": true
+        },
+        {
+          "option_text": "(2, 4) here",
+          "is_correct": false
+        },
+        {
+          "option_text": "(3, 4) here",
+          "is_correct": false
+        },
+        {
+          "option_text": "(1, 4) here",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "MIDPOINT FORMULA: M = ((x₁+x₂)/2, (y₁+y₂)/2). Here: x = (−2+4)/2 = 2/2 = 1. y = (6+(−2))/2 = 4/2 = 2. Midpoint = (1, 2). STEP-BY-STEP: (1) Add x-coordinates: −2 + 4 = 2. (2) Divide by 2: 2÷2 = 1. (3) Add y-coordinates: 6 + (−2) = 4. (4) Divide by 2: 4÷2 = 2. PRACTICE: (1) Midpoint of (0,0) and (6,4) = (3, 2). (2) Midpoint of (−5, −3) and (3, 7) = (−1, 2). (3) Midpoint of (a, b) and (−a, −b) = (0, 0) — origin is midpoint of any two points symmetric about origin. APPLICATION: If midpoint is given and one endpoint is known, find the other: other = (2×midpoint − known endpoint). EXAM TIP: midpoint formula is same as average of the coordinates. COMMON ERRORS: (a) Students add instead of average (don't forget /2). (b) Sign errors with negatives — be careful: −2 + 4 = +2, not −2. PYQ FREQUENCY: SSC CGL Tier 2, CLAT Maths 1× per cycle.",
+      "subject": "Quant",
+      "topic": "Coordinate Geometry — distance, midpoint, slope, section formula",
+      "topic_code": "QNT_COORDINATE_GEOMETRY_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_COORDINATE_GEOMETRY_MIXED_002"
+    },
+    {
+      "stem": "The slope of the line passing through points (2, 3) and (5, 9) is:",
+      "options": [
+        {
+          "option_text": "2 (slope m = Δy/Δx)",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 (wrong Δ use)",
+          "is_correct": false
+        },
+        {
+          "option_text": "½ (inverted ratio)",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 (only numerator)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SLOPE FORMULA: m = (y₂−y₁)/(x₂−x₁). Here: m = (9−3)/(5−2) = 6/3 = 2. INTERPRETATIONS of slope: (1) m > 0 → line rises left-to-right (positive slope). (2) m < 0 → line falls left-to-right (negative slope). (3) m = 0 → horizontal line. (4) m undefined (∞) → vertical line (x₂ = x₁). SLOPE AND ANGLE: m = tan θ where θ is angle with positive x-axis. m=1 → 45°, m=√3 → 60°, m=1/√3 → 30°. COLLINEARITY CHECK: Three points (x₁,y₁), (x₂,y₂), (x₃,y₃) are collinear if slope of any two pairs is equal. PARALLEL LINES: same slope (m₁ = m₂). PERPENDICULAR LINES: product of slopes = −1 (m₁ × m₂ = −1). EXAM TRAPS: (a) m = Δy/Δx not Δx/Δy — students invert. (b) Order matters in subtraction but cancel: (y₂−y₁)/(x₂−x₁) = (y₁−y₂)/(x₁−x₂). (c) Slope 6 (only Δy) — classic distractor. PYQ FREQUENCY: slope and parallel/perpendicular conditions in SSC CGL Tier 2, IBPS PO Mains 1-2× per cycle.",
+      "subject": "Quant",
+      "topic": "Coordinate Geometry — distance, midpoint, slope, section formula",
+      "topic_code": "QNT_COORDINATE_GEOMETRY_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_COORDINATE_GEOMETRY_MIXED_003"
+    },
+    {
+      "stem": "Point P divides the line segment joining A(1, 3) and B(7, 9) internally in the ratio 1:2. The coordinates of P are:",
+      "options": [
+        {
+          "option_text": "(3, 5)",
+          "is_correct": true
+        },
+        {
+          "option_text": "(4, 6) here",
+          "is_correct": false
+        },
+        {
+          "option_text": "(5, 7) here",
+          "is_correct": false
+        },
+        {
+          "option_text": "(2, 4) here",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SECTION FORMULA (internal division): P = ((m×x₂ + n×x₁)/(m+n), (m×y₂ + n×y₁)/(m+n)) where ratio = m:n. Here m=1, n=2, A=(1,3), B=(7,9). x = (1×7 + 2×1)/(1+2) = (7+2)/3 = 9/3 = 3. y = (1×9 + 2×3)/(1+2) = (9+6)/3 = 15/3 = 5. P = (3, 5). VERIFY: Distance AP = √[(3−1)² + (5−3)²] = √[4+4] = √8. Distance PB = √[(7−3)² + (9−5)²] = √[16+16] = √32. Ratio AP:PB = √8:√32 = 1:2. ✓ EXTERNAL DIVISION: P = ((m×x₂ − n×x₁)/(m−n), (m×y₂ − n×y₁)/(m−n)). MIDPOINT is section formula with m=n=1. CENTROID of triangle: G = ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3). EXAM TRAP: confuse internal (+ formula) with external (− formula). MEMORY AID: 'INternal = IN + formulas; EXternal = with subtraction.' PYQ FREQUENCY: section formula in SSC CGL Tier 2, NDA Math 1-2× per paper.",
+      "subject": "Quant",
+      "topic": "Coordinate Geometry — distance, midpoint, slope, section formula",
+      "topic_code": "QNT_COORDINATE_GEOMETRY_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_COORDINATE_GEOMETRY_MIXED_004"
+    },
+    {
+      "stem": "If three points A(1, 2), B(3, 6), and C(5, k) are collinear, the value of k is:",
+      "options": [
+        {
+          "option_text": "10 (collinearity via slope equality)",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 (partial slope error) (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 (overshoot) (not this) instead",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 (same as B's y) (not this)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "COLLINEARITY CONDITION: For A, B, C collinear, slope AB = slope BC. Slope AB = (6−2)/(3−1) = 4/2 = 2. Slope BC = (k−6)/(5−3) = (k−6)/2. Setting equal: (k−6)/2 = 2 → k−6 = 4 → k = 10. VERIFY: A(1,2), B(3,6), C(5,10) — slope AB = (6-2)/(3-1) = 2; slope BC = (10-6)/(5-3) = 2. ✓ ALTERNATIVE METHOD (area = 0): Collinear iff area of triangle ABC = 0. Area = ½|x₁(y₂−y₃) + x₂(y₃−y₁) + x₃(y₁−y₂)| = 0. Here: ½|1(6−k) + 3(k−2) + 5(2−6)| = 0. → |6−k + 3k−6 + 5(−4)| = 0 → |2k−20| = 0 → k=10. ✓ MEMORY TIP: for collinearity, think of it as 'all three lie on same line' — any pair of slopes must be equal. COMMON ERRORS: (a) Using slope formula but forgetting to equate (just computing one slope). (b) Getting k=8 by stopping at slope AB = 2 and plugging in wrong formula. PYQ FREQUENCY: collinearity problems in SSC CGL, IBPS PO Mains, NDA Math 1× per cycle.",
+      "subject": "Quant",
+      "topic": "Coordinate Geometry — distance, midpoint, slope, section formula",
+      "topic_code": "QNT_COORDINATE_GEOMETRY_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_COORDINATE_GEOMETRY_MIXED_005"
+    },
+    {
+      "stem": "The area of a triangle with vertices A(0, 0), B(4, 0), and C(0, 3) using the coordinate formula is:",
+      "options": [
+        {
+          "option_text": "6 square units",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 square units (forgot /2)",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 square units (added sides)",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 square units (hypotenuse length)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "AREA OF TRIANGLE using coordinates: Area = ½|x₁(y₂−y₃) + x₂(y₃−y₁) + x₃(y₁−y₂)|. Plug in A=(0,0), B=(4,0), C=(0,3): Area = ½|0(0−3) + 4(3−0) + 0(0−0)| = ½|0 + 12 + 0| = ½ × 12 = 6 sq units. SHORTCUT for right-angled triangles: This is a right triangle with legs 4 and 3. Area = ½ × base × height = ½ × 4 × 3 = 6. ✓ GENERAL FORMULA (shoelace method): Area = ½|Σ(xᵢ × yᵢ₊₁ − xᵢ₊₁ × yᵢ)|. For polygon with n vertices, list them in order (clockwise or counter-clockwise), pair consecutive vertices. PRACTICE: Triangle with vertices (1,1), (5,1), (3,4) → Area = ½|1(1−4) + 5(4−1) + 3(1−1)| = ½|−3+15+0| = ½×12 = 6 sq units. EXAM TRAPS: (a) Forgetting the ½ → gets 12. (b) Calculating hypotenuse length (5 via Pythagoras) → gets 5. (c) Adding sides: 3+4+5=12, dividing by 2 gets 6 by coincidence but wrong method. PYQ FREQUENCY: area of triangle by coordinates in SSC CGL, CAT, IBPS PO Mains 1× per cycle.",
+      "subject": "Quant",
+      "topic": "Coordinate Geometry — distance, midpoint, slope, section formula",
+      "topic_code": "QNT_COORDINATE_GEOMETRY_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_COORDINATE_GEOMETRY_MIXED_006"
+    },
+    {
+      "stem": "The line joining A(2, 5) and B(8, 3) is trisected by two points P and Q. The coordinates of P (closer to A) are:",
+      "options": [
+        {
+          "option_text": "(4, 4⅓) — P divides AB in ratio 1:2",
+          "is_correct": true
+        },
+        {
+          "option_text": "(5, 4) — incorrect midpoint (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "(6, 3⅔) — ratio reversed (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "(3, 4½) — partial step error",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "TRISECTION: P divides AB in ratio 1:2 (P is 1/3 of the way from A to B). Q divides AB in ratio 2:1 (Q is 2/3 of the way). Using SECTION FORMULA for P (m:n = 1:2): x = (1×8 + 2×2)/(1+2) = (8+4)/3 = 12/3 = 4. y = (1×3 + 2×5)/(1+2) = (3+10)/3 = 13/3 = 4⅓. P = (4, 13/3) = (4, 4⅓). For Q (m:n = 2:1): x = (2×8 + 1×2)/3 = 18/3 = 6. y = (2×3 + 1×5)/3 = 11/3 = 3⅔. Q = (6, 11/3). VERIFY: AP:PQ:QB = 1:1:1 — total length divided into 3 equal parts. UPSC/CSAT ANGLE: Trisection questions combine section formula with the concept of dividing a segment into equal parts. KEY PATTERN: for n-section, the kth point from A divides AB in ratio k:(n−k). Midpoint = special case k=1, n=2 → ratio 1:1. EXAM TRAP: students confuse which point is P (1:2) vs Q (2:1). P closer to A has ratio where AP < PB → smaller:larger = 1:2. PYQ FREQUENCY: trisection and n-section problems in SSC CGL Tier 2, NDA Math 1× per cycle.",
+      "subject": "Quant",
+      "topic": "Coordinate Geometry — distance, midpoint, slope, section formula",
+      "topic_code": "QNT_COORDINATE_GEOMETRY_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "computed",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_COORDINATE_GEOMETRY_MIXED_007"
+    }
+  ]
+}
