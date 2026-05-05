@@ -171,6 +171,58 @@ This is the foundation of double-entry accounting. **Every** transaction maintai
 **Importance:** ⭐⭐⭐⭐ HIGH (≈5 Qs / paper)
 **Difficulty:** Easy. Pure conceptual + factual.
 
+## 1.0 — Understanding Accounting & GAAP from First Principles
+
+<div class="intuition">
+
+**Why does accounting exist — what problem does it solve?**
+
+Imagine you start a bakery with ₹50,000 of your own money. You buy flour, sugar, an oven. You bake and sell. Three months later, you have some cash, some raw material stock, and equipment. But is the business profitable? Have all suppliers been paid? How much tax do you owe? Can you repay the bank loan?
+
+Without a systematic record-keeping system, you cannot answer any of these reliably. **Accounting** is that system: the process of identifying, measuring, recording, classifying, summarising, interpreting, and communicating financial transactions so that all stakeholders — owner, bank, tax authority, investors — can make informed decisions.
+
+Accounting serves four audiences simultaneously:
+- **Owner/Management:** Am I profitable? Where is money leaking? Should I expand?
+- **Banks and creditors:** Can this business repay what it owes?
+- **Tax authorities:** How much tax is due?
+- **Investors:** Is this business worth investing in?
+
+</div>
+
+**The three core financial statements — what each answers:**
+
+```mermaid
+graph LR
+  A[Financial Statements] --> B[Trading Account<br/>Gross profit from<br/>buying and selling?]
+  A --> C[Profit & Loss Account<br/>Net profit after all<br/>costs and income?]
+  A --> D[Balance Sheet<br/>What do I own and<br/>owe at this date?]
+  B -->|Gross Profit transferred| C
+  C -->|Net Profit added to Capital| D
+```
+
+**GAAP — the 10 concepts that examiners test:**
+
+| Concept | One-liner | Common exam question |
+|---------|-----------|---------------------|
+| **Entity** | Business is legally separate from owner | Owner's personal holiday expense → NOT a business expense |
+| **Going concern** | Assume business will continue | Assets valued at cost, not liquidation price |
+| **Accrual** | Record when earned/incurred, not when cash moves | Unpaid salary still an expense this period |
+| **Consistency** | Same method every period | Cannot switch FIFO to LIFO year by year |
+| **Conservatism / Prudence** | Anticipate losses; never anticipate profits | Write down assets to NRV if NRV < cost |
+| **Materiality** | Only significant items need full disclosure | Trivial items can be approximated |
+| **Cost concept** | Record at original purchase cost | Cannot inflate assets to market value |
+| **Matching** | Match expenses to revenue they generate | Depreciation charged while asset earns revenue |
+| **Dual aspect** | Every transaction has two effects | Foundation of double entry |
+| **Disclosure** | All material facts must be disclosed | No hiding of liabilities or contingent losses |
+
+**Solved Example 1.A:** Owner uses company car for a personal holiday; fuel = ₹5,000. If charged as business expense, which concept is violated?
+
+> **Entity concept.** Business and owner are separate. Personal expense = Drawings (reduces Capital), not an operating expense.
+
+**Solved Example 1.B:** Factory values machinery at current market price ₹10 lakh; historical cost was ₹4 lakh. Concept violated?
+
+> **Cost concept.** Assets must be recorded at historical cost. Market-value revaluation inflates assets and distorts comparability.
+
 ## 1.1 Examiner mindset
 
 | Angle | Pet question |
@@ -330,6 +382,76 @@ GAAP = the umbrella of accounting concepts + conventions + accounting standards.
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈8 Qs / paper)
 **Difficulty:** Easy-Medium. Master the debit-credit rule and you score full.
+
+## 2.0 — Understanding Double Entry from First Principles
+
+<div class="intuition">
+
+**Why "double entry"? What duality does every transaction have?**
+
+Every financial transaction transfers value between two parties or accounts. When you pay ₹10,000 rent in cash: (1) your cash decreases by ₹10,000, and (2) you incur a rent expense of ₹10,000. When you sell goods worth ₹5,000 on credit: (1) your debtor's account increases by ₹5,000, and (2) your sales increase by ₹5,000. **Every transaction has exactly two economic effects.** Double entry records both — always.
+
+This is not arbitrary bookkeeping. It reflects a fundamental economic truth: value is never created or destroyed in a transaction, only transferred. The accounting equation $\text{Assets} = \text{Liabilities} + \text{Capital}$ must hold before and after every transaction. Double entry enforces this automatically — every debit has a corresponding credit, so the equation stays in balance.
+
+**Why this makes errors visible:** If a transaction is mis-recorded (one side wrong), the trial balance will not balance: total debits ≠ total credits. This is the built-in error detector. Any accountant who finds a mismatch in the trial balance knows immediately that at least one recording error exists.
+
+</div>
+
+**The accounting cycle — the flow from transaction to final accounts:**
+
+```mermaid
+graph LR
+  A[Source Document<br/>invoice, receipt, voucher] --> B[Journal<br/>Book of original entry<br/>chronological]
+  B --> C[Ledger<br/>Book of accounts<br/>organised by account]
+  C --> D[Trial Balance<br/>Total Dr = Total Cr?]
+  D --> E[Final Accounts<br/>Trading · P&L · Balance Sheet]
+```
+
+**Debit-Credit rules — two equivalent systems:**
+
+<div class="formula">
+
+**Traditional (English) system — by account type:**
+
+| Account type | Debit | Credit |
+|-------------|-------|--------|
+| **Personal** (persons, firms, banks) | The receiver | The giver |
+| **Real** (assets, stock, cash) | What comes in | What goes out |
+| **Nominal** (expenses, income) | All expenses and losses | All income and gains |
+
+**Modern (American) system — by account element:**
+
+| Element | Debit increases | Credit increases |
+|---------|-----------------|-----------------|
+| Asset | ✓ | (debit decreases) |
+| Expense / Loss / Drawing | ✓ | (debit decreases) |
+| Liability | (credit decreases) | ✓ |
+| Capital / Equity | (credit decreases) | ✓ |
+| Income / Revenue / Gain | (credit decreases) | ✓ |
+
+**Mnemonic — DEAD CLIC:** Debits = **E**xpenses + **A**ssets + **D**rawings; Credits = **L**iabilities + **I**ncome + **C**apital.
+
+</div>
+
+**Solved Example 2.A — Journal entries for 5 common transactions:**
+
+| # | Transaction | Journal Entry | Rule applied |
+|---|------------|---------------|-------------|
+| 1 | Cash ₹50,000 introduced as capital | Cash A/c Dr 50,000 / To Capital A/c 50,000 | Real (cash in) / Personal (owner = giver) |
+| 2 | Goods purchased on credit from Ram, ₹20,000 | Purchases A/c Dr 20,000 / To Ram's A/c 20,000 | Real (stock in) / Personal (Ram = giver) |
+| 3 | Cash sales ₹8,000 | Cash A/c Dr 8,000 / To Sales A/c 8,000 | Real (cash in) / Nominal (income = Cr) |
+| 4 | Salary paid ₹5,000 | Salary A/c Dr 5,000 / To Cash A/c 5,000 | Nominal (expense = Dr) / Real (cash out) |
+| 5 | Rent received ₹3,000 | Cash A/c Dr 3,000 / To Rent Received A/c 3,000 | Real (cash in) / Nominal (income = Cr) |
+
+**Solved Example 2.B — Trial Balance: which errors does it catch vs. miss?**
+
+| Error type | Trial Balance detects? | Why |
+|-----------|----------------------|-----|
+| Wrong amount on ONE side only | ✓ Yes | Dr ≠ Cr |
+| Error of omission (transaction not recorded at all) | ✗ No | Both sides missing equally |
+| Error of commission (wrong account, same amount) | ✗ No | Dr and Cr still equal |
+| Error of principle (capital treated as revenue) | ✗ No | Dr and Cr still equal |
+| Compensating errors (two errors cancel each other) | ✗ No | Net effect on balance = zero |
 
 ## 2.1 Examiner mindset
 
@@ -531,6 +653,68 @@ graph TD
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈6 Qs / paper)
 **Difficulty:** Medium. Mechanical once you know the direction of adjustment.
 
+## 3.0 — Understanding BRS, Rectification & Bills from First Principles
+
+<div class="intuition">
+
+**Why do cash book and pass book ever show different balances?**
+
+Your cash book records every cheque you write the moment you sign it. The bank (your pass book) only records it when the recipient deposits the cheque and the bank processes the clearance — which may take 2–5 days. In that window, your cash book shows a lower balance than the bank does (you've recorded the outgoing cheque; the bank hasn't processed it yet).
+
+Similarly: your bank may credit interest or debit charges to your account before you notice. Your cash book won't have these until you record them manually. Both books are *correct* — they just reflect different snapshots in time and knowledge.
+
+**Bank Reconciliation Statement (BRS)** is a systematic explanation of every difference between the two records. Its purpose is confirmation, not correction: if every difference can be accounted for logically, both records are correct.
+
+**Bills of Exchange** solve a different, older problem: how to formalise trade credit in a legally enforceable way. When a seller extends 90 days' credit to a buyer, the seller has an unsecured oral promise. A Bill of Exchange makes this a *written, signed, negotiable instrument* — the seller (drawer) orders the buyer (drawee) in writing to pay a specified amount on a specified date. Once the buyer signs it (acceptance), it becomes a legal obligation. The seller can then *discount* it at a bank — get cash immediately, at a small charge — rather than waiting 90 days.
+
+</div>
+
+**BRS — the direction rule (the one thing students always confuse):**
+
+Starting from the **Cash Book balance** and adjusting to reach the **Pass Book balance**:
+
+| Situation | Effect | Adjustment to Cash Book balance |
+|-----------|--------|--------------------------------|
+| Cheque issued, not yet presented to bank | Cash Book ↓, Pass Book not yet ↓ | **Add back** (cheque not yet cleared → PB still higher) |
+| Cheque deposited, not yet collected by bank | Cash Book ↑, Pass Book not yet ↑ | **Subtract** (credit in PB not yet reflected in CB) |
+| Bank interest credited (not in CB) | Pass Book ↑, Cash Book not yet ↑ | **Add** to CB balance |
+| Bank charges debited (not in CB) | Pass Book ↓, Cash Book not yet ↓ | **Subtract** from CB balance |
+| Direct payment by bank on customer's behalf | Pass Book ↓, CB not yet ↓ | **Subtract** from CB balance |
+
+**Bills of Exchange — parties and key terms:**
+
+```mermaid
+graph LR
+  D[Drawer = Seller / Creditor<br/>Creates the bill] --> A[Acceptor = Drawee = Buyer / Debtor<br/>Signs = accepts the obligation]
+  D --> P[Payee = who receives payment<br/>often = Drawer themselves]
+  A --> |On due date pays| P
+```
+
+| Term | Meaning |
+|------|---------|
+| Drawer | The person who creates and signs the bill (the seller / creditor) |
+| Drawee / Acceptor | The person ordered to pay; becomes the Acceptor after signing |
+| Payee | The person who receives payment (often the drawer) |
+| Date of maturity | Due date = date of bill + period of bill + 3 days of grace |
+| Discounting | Selling the bill to a bank before maturity for less than face value |
+| Endorsement | Transferring the bill to a third party by signing on the back |
+| Dishonour | Drawee refuses or fails to pay on the due date |
+| Noting | Official certification by a Notary Public that the bill was dishonoured |
+
+**Solved Example 3.A — BRS (starting from Cash Book balance):**
+
+Cash Book balance: ₹12,000 (Dr). Find Pass Book balance given:
+- Cheques issued but not yet presented: ₹3,000
+- Cheques deposited but not yet cleared: ₹2,000
+- Bank interest credited (not in CB): ₹500
+- Bank charges debited (not in CB): ₹200
+
+> Start with CB balance: 12,000
+> Add back uncashed cheques: +3,000 → 15,000
+> Less uncollected deposits: −2,000 → 13,000
+> Add bank interest: +500 → 13,500
+> Less bank charges: −200 → **Pass Book balance = ₹13,300**
+
 ## 3.1 Examiner mindset
 
 | Angle | Pet question |
@@ -710,6 +894,56 @@ Use **Profit & Loss Adjustment A/c** + Suspense.
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈9 Qs / paper)
 **Difficulty:** Medium. The most important chapter in Part A. Master adjustments and you score full.
+
+## 4.0 — Understanding Final Accounts from First Principles
+
+<div class="intuition">
+
+**What do the three financial statements actually tell different stakeholders?**
+
+Think of a business as having two questions: "How did we do this year?" and "Where do we stand today?" The three final accounts answer these in a specific sequence:
+
+**Step 1 — Trading Account:** "How much money did we make from our core trade?" Take all sales → subtract the direct cost of goods sold (opening stock + purchases − closing stock) → get **Gross Profit**. This is profit before any operating overhead. A bakery's trading account shows: Sales ₹5,00,000 − Cost of goods sold ₹3,00,000 = Gross Profit ₹2,00,000. The baker hasn't yet paid salaries, rent, or electricity — that comes next.
+
+**Step 2 — Profit & Loss Account:** "After all overheads and other income, what's our net profit?" Take Gross Profit → subtract indirect expenses (salaries, rent, depreciation, advertising) → add indirect income (commission received, interest received) → get **Net Profit**. Continuing the bakery: ₹2,00,000 − (Salaries ₹80,000 + Rent ₹40,000 + Misc ₹20,000) = Net Profit ₹60,000.
+
+**Step 3 — Balance Sheet:** "At the end of the year, what do we own and what do we owe?" Assets on one side, Liabilities + Capital on the other. Net Profit gets added to Capital on the Balance Sheet — this is how income statement and balance sheet are linked. The Balance Sheet must balance: Assets = Liabilities + Capital.
+
+</div>
+
+**The flow — adjustments are the examiner's tool:**
+
+Every adjustment must appear in **two places** (once in Trading/P&L and once in Balance Sheet). Missing the second entry is the single most common error.
+
+| Adjustment | Trading / P&L effect | Balance Sheet effect |
+|-----------|---------------------|---------------------|
+| Closing stock | Credit in Trading A/c (reduces cost of goods sold) | Current Asset |
+| Outstanding expense | Debit in P&L (add to the expense) | Current Liability |
+| Prepaid expense | Credit in P&L (deduct from the expense) | Current Asset |
+| Accrued income | Debit in P&L (add to the income) | Current Asset |
+| Income received in advance | Credit in P&L (deduct from income) | Current Liability |
+| Depreciation | Debit in P&L | Reduce fixed asset value |
+| Bad debts | Debit in P&L | Reduce debtors in BS |
+| Provision for bad debts | Debit in P&L | Reduce debtors in BS |
+
+**Direct vs indirect expenses — the line that separates Trading from P&L:**
+
+| Direct expenses (go to Trading A/c) | Indirect expenses (go to P&L) |
+|-------------------------------------|-------------------------------|
+| Purchases, carriage inward, wages (factory), customs duty, octroi, freight | Salaries, office rent, advertising, depreciation, bad debts, commission paid, bank charges |
+
+<div class="keypoint">
+
+**Key distinction:** "Wages" in a manufacturing context = direct (factory workers making the product). "Salaries" = indirect (office staff, management). Examiners frequently test this boundary.
+
+</div>
+
+**Solved Example 4.A:** Closing stock ₹15,000; outstanding wages ₹3,000; prepaid insurance ₹2,000; depreciation on machinery ₹10,000. Show where each appears.
+
+> - Closing stock: Credit in Trading A/c; Current Asset in BS (Asset side).
+> - Outstanding wages: Added to wages in Trading/P&L; Current Liability in BS.
+> - Prepaid insurance: Deducted from insurance in P&L; Current Asset in BS.
+> - Depreciation: Debit in P&L; Deducted from Machinery value in BS.
 
 ## 4.1 Examiner mindset
 
@@ -913,6 +1147,52 @@ graph LR
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈7 Qs / paper)
 **Difficulty:** Medium. Definition + small computation. Memorise depreciation methods and FIFO/LIFO.
 
+## 5.0 — Understanding Capital vs Revenue, Depreciation & Inventory
+
+<div class="intuition">
+
+**Why must we separate capital and revenue expenditure? What goes wrong if we don't?**
+
+A company buys a delivery truck for ₹8,00,000. This truck will serve for 8 years. If the full ₹8,00,000 is treated as an expense this year, profit is wiped out, making this year look terrible. Next 7 years the truck runs at zero "truck cost," making them look artificially profitable. Both pictures are wrong.
+
+The correct approach: **spread the cost** over 8 years — charge ₹1,00,000 as depreciation expense each year. Each year's profit now accurately reflects that year's portion of the truck's value consumed.
+
+**The classification rule:**
+- **Capital expenditure:** Acquires an asset with benefits lasting more than one accounting period. It appears on the Balance Sheet (as an asset, reduced by accumulated depreciation).
+- **Revenue expenditure:** Consumed in the current period. Charged fully to P&L in the current year.
+
+**Inventory valuation directly affects profit:** The value assigned to closing stock determines Cost of Goods Sold (COGS = Opening Stock + Purchases − Closing Stock). If you overvalue closing stock, COGS falls → Gross Profit rises → you report higher profit. This is why AS-2 mandates: value at **cost or net realisable value, whichever is lower** — the prudence principle. AS-2 allows **FIFO** and **Weighted Average**, but **prohibits LIFO**.
+
+</div>
+
+**SLM vs WDV — the intuition behind each method:**
+
+| Aspect | Straight Line Method (SLM) | Written Down Value (WDV) |
+|--------|---------------------------|--------------------------|
+| Depreciation amount | Same every year: $\frac{C - S}{n}$ | Decreasing: fixed % of book value |
+| Formula | $\text{Annual dep} = \frac{\text{Cost} - \text{Scrap}}{\text{Useful life}}$ | $\text{Rate} = 1 - \left(\frac{S}{C}\right)^{1/n}$ |
+| Asset type best suited | Assets that wear out uniformly | Assets more valuable when new (cars, computers) |
+| Book value at end | Zero (or scrap value) | Never reaches zero |
+| Exam trap | Sum of all depreciation = Cost − Scrap | Rate % is applied to opening book value each year |
+
+**Solved Example 5.A — SLM vs WDV on the same asset:**
+
+Machine: Cost ₹1,00,000. Scrap ₹10,000. Useful life = 9 years.
+
+> **SLM:** Annual depreciation = $(1,00,000 - 10,000)/9 = ₹10,000$ per year. Book value falls by ₹10,000 each year.
+>
+> **WDV at 25%:** Year 1: $1,00,000 \times 25\% = ₹25,000$. Book value = ₹75,000. Year 2: $75,000 \times 25\% = ₹18,750$. Book value = ₹56,250. WDV charges more in early years — gives a tax benefit sooner.
+
+**Solved Example 5.B — FIFO vs Weighted Average for inventory:**
+
+Opening stock: 100 units @ ₹10 = ₹1,000. Purchased: 200 units @ ₹12 = ₹2,400. Sold: 150 units.
+
+> **FIFO:** Sell 100 units @ ₹10 = ₹1,000; then 50 units @ ₹12 = ₹600. COGS = ₹1,600. Closing stock = 150 units @ ₹12 = ₹1,800.
+>
+> **Weighted Average:** Average cost = $(1,000 + 2,400)/(100+200) = 3,400/300 = ₹11.33$ per unit. COGS = $150 \times 11.33 = ₹1,700$. Closing stock = $150 \times 11.33 = ₹1,700$.
+>
+> *In rising prices: FIFO gives lower COGS → higher profit. Weighted average smooths fluctuations.*
+
 ## 5.1 Examiner mindset
 
 | Angle | Pet question |
@@ -1114,6 +1394,38 @@ NRV = Estimated selling price − cost to complete and sell.
 **Importance:** ⭐⭐⭐ MEDIUM (≈5 Qs / paper)
 **Difficulty:** Easy-Medium. Mechanical conversion + 2-3 facts about self-balancing ledgers.
 
+## 6.0 — Understanding Non-Profit Accounts from First Principles
+
+<div class="intuition">
+
+**How are NPO accounts different — and why?**
+
+A school, hospital trust, sports club, or temple trust exists to serve a purpose, not to earn profit for an owner. Its financial goal is to cover costs from subscriptions, donations, and grants. There is no "owner's profit" — but there is a surplus (income > expenditure) or deficit (expenditure > income for the period).
+
+Because the concept of profit is absent, NPOs cannot have a "Trading Account" or "Profit & Loss Account" in the ordinary sense. Instead, they prepare:
+
+1. **Receipts & Payments Account (R&P):** A real account summarising ALL cash received and ALL cash paid during the period — whether capital or revenue in nature, whether related to current year or previous/future years. It is essentially a summary of the Cash Book. Prepared on cash basis.
+
+2. **Income & Expenditure Account (I&E):** The NPO equivalent of a Profit & Loss Account. Only revenue (recurring) items; prepared on **accrual basis** — outstanding and prepaid items are adjusted. Shows **Surplus** (if income > expenditure) or **Deficit** (if expenditure > income).
+
+3. **Balance Sheet:** Same as for profit organisations, but "Capital" is replaced by **"Capital Fund"** (or "General Fund") — the accumulated surplus of past years.
+
+**Key conversion point:** Receipts & Payments is cash-based (includes capital items). Income & Expenditure is accrual-based (excludes capital items, includes outstanding/prepaid). Converting between them is a common exam question.
+
+</div>
+
+**Converting Subscription receipts (R&P) to Subscription income (I&E):**
+
+$$\text{Income from Subscriptions} = \text{Subscriptions received (R\&P)} + \text{Outstanding for current year} - \text{Advance received for next year} - \text{Outstanding from last year received this year} + \text{Last year's advance adjusted this year}$$
+
+**Solved Example 6.A:** A club received ₹60,000 as subscriptions in the year. Outstanding subs at year-end = ₹5,000. Advance subs received for next year = ₹3,000. Outstanding from last year still uncollected = ₹2,000 (received this year). Calculate subscription income for I&E.
+
+> Subscriptions received: ₹60,000
+> Add: outstanding at year-end: +₹5,000
+> Less: advance for next year: −₹3,000
+> Less: last year's outstanding collected this year: −₹2,000 (this was last year's income)
+> **Subscription income for I&E = ₹60,000**
+
 ## 6.1 Examiner mindset
 
 | Angle | Pet question |
@@ -1270,6 +1582,47 @@ Each sub-ledger has an **Adjustment Account** (also called **Control Account**) 
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈6 Qs / paper)
 **Difficulty:** Easy. Pure factual + constitutional. Score full marks here.
+
+## 7.0 — Understanding CAG & Finance Commission from First Principles
+
+<div class="intuition">
+
+**Who audits the government? Why must the auditor be independent?**
+
+In a private company, shareholders appoint an external auditor to verify that management hasn't misused funds. Citizens are the "shareholders" of a democracy — they need someone to audit the government's use of public money on their behalf. But citizens can't audit government accounts themselves. That agent is the **Comptroller and Auditor General of India (CAG)**.
+
+The CAG's independence is constitutionally guaranteed precisely because the government cannot be allowed to control its own auditor — that would make the audit meaningless. Three protection mechanisms: (1) appointed by the President (not by Cabinet), (2) can only be removed by impeachment (same as a Supreme Court judge), (3) salary and service conditions charged to the Consolidated Fund of India (so Parliament cannot reduce the salary as a threat).
+
+**The Finance Commission** solves a structural federal problem: India's Constitution gives the Centre the power to collect most taxes (income tax, corporate tax, GST). But States provide most public services (education, health, police, local infrastructure). Without a mechanism to share central taxes with States, the States would be permanently resource-starved. The Finance Commission (Article 280) is the constitutional referee — appointed every 5 years — that recommends how central taxes are divided vertically (Centre vs States collectively) and horizontally (among the 28 States).
+
+</div>
+
+**CAG — key constitutional facts:**
+
+| Fact | Detail |
+|------|--------|
+| Constitutional Article | **Article 148** |
+| Appointment | By the **President of India** |
+| Removal | By Parliament (same process as Supreme Court judge — address by both Houses) |
+| Term | **6 years** or until age **65**, whichever is earlier |
+| Re-appointment | **Not eligible** for re-appointment |
+| Salary charged to | **Consolidated Fund of India** (not voted by Parliament) |
+| Audits | Union accounts, State accounts, Central PSUs, aided bodies |
+| Reports submitted to | President (for Union) / Governor (for State) → laid before Parliament / Legislature |
+| India's CAG is | Only an **Auditor** (not a Comptroller — unlike UK); cannot stop government spending |
+
+**Finance Commission — key constitutional facts:**
+
+| Fact | Detail |
+|------|--------|
+| Constitutional Article | **Article 280** |
+| Appointment | By the **President of India** |
+| Frequency | Every **5 years** (or earlier if President deems fit) |
+| Composition | Chairman + 4 other members |
+| Recommends | (i) Vertical devolution — % of Central taxes to States; (ii) Horizontal devolution — share among States; (iii) Grants-in-aid to States |
+| 15th FC | Chair: N.K. Singh; Period: 2021-26; States get **41%** of divisible pool |
+| 16th FC | Chair: Arvind Panagariya; Period: 2026-31 |
+| Basis for horizontal distribution | Population, area, income distance, demographic performance, forest cover |
 
 ## 7.1 Examiner mindset
 
@@ -1452,6 +1805,61 @@ Each sub-ledger has an **Adjustment Account** (also called **Control Account**) 
 **Importance:** ⭐⭐⭐ MEDIUM (≈4 Qs / paper)
 **Difficulty:** Easy. Definitions + central problems.
 
+## 8.0 — Understanding Basic Economics from First Principles
+
+<div class="intuition">
+
+**What is economics? What fundamental problem does it study?**
+
+**Economics** is the study of how individuals, firms, and societies allocate **scarce resources** to satisfy **unlimited wants**. Resources — land, labour, capital, entrepreneurship — are finite. Human desires are not. This mismatch is the fundamental economic problem: **scarcity**. Every economic decision is a choice about what to do with limited resources, implying a **trade-off** and an **opportunity cost** (the value of the best alternative forgone).
+
+Lionel Robbins' classic definition (1932): *"The science which studies human behaviour as a relationship between ends and scarce means which have alternative uses."*
+
+**Three central economic questions every society must answer:**
+1. **What to produce?** Guns or butter? Schools or highways? (Allocation problem)
+2. **How to produce?** Labour-intensive or capital-intensive? (Efficiency problem)
+3. **For whom to produce?** Who gets how much of what is produced? (Distribution problem)
+
+**Micro vs Macro — two lenses on the same economy:**
+- **Microeconomics:** Examines individual units — a household choosing between rice and wheat, a firm deciding its output, a market setting a price. "Micro" = zoom in.
+- **Macroeconomics:** Examines the economy as a whole — national income, inflation, unemployment, exchange rates. "Macro" = zoom out.
+
+</div>
+
+**Production Possibility Frontier (PPF) — the opportunity cost diagram:**
+
+```
+Good Y (e.g., Healthcare)
+│
+│A ●
+│  \
+│   \     Points on curve: efficient
+│    \
+│     ●C (inside: inefficient, resources wasted)
+│      \
+│       ● D (outside: currently unattainable)
+│        \
+│         ●B
+└──────────────── Good X (e.g., Defence)
+```
+
+- **Movement along PPF (A→B):** More defence, less healthcare — opportunity cost of defence is healthcare forgone.
+- **Point inside PPF:** Resources wasted (unemployment, inefficiency).
+- **Point outside PPF:** Impossible with current resources — becomes possible only with economic growth (PPF shifts outward).
+- **Outward shift of PPF:** Caused by technological improvement, increase in resources, better education/skills.
+
+**Economic systems — three main types:**
+
+| System | Decision-maker | Example | Characteristic |
+|--------|---------------|---------|----------------|
+| Capitalist / Market | Private individuals via price mechanism | USA, UK | Efficient but can be unequal |
+| Socialist / Command | State central planning | Former USSR | Equality-focused but inefficient |
+| **Mixed** (India's system) | State + market together | **India**, France | Balance of efficiency and welfare |
+
+**Solved Example 8.A:** "Opportunity cost of going to college full-time for a student who was earning ₹3 lakh/year" — what is it?
+
+> ₹3 lakh per year in foregone salary (the income they gave up). Plus any tuition costs. **Opportunity cost = value of the best forgone alternative.**
+
 ## 8.1 Examiner mindset
 
 | Angle | Pet question |
@@ -1609,6 +2017,66 @@ In production: To produce 1 more unit of guns on the PPC, the economy must sacri
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈8 Qs / paper)
 **Difficulty:** Medium. Most-tested chapter in Part B.
+
+## 9.0 — Understanding Demand, Supply & Elasticity from First Principles
+
+<div class="intuition">
+
+**Why does the demand curve slope downward? It's two effects working together.**
+
+When the price of a good rises, people buy less of it — this is the **Law of Demand**. But why? Two reasons work simultaneously:
+
+1. **Substitution effect:** When the price of onions rises, onions become relatively more expensive compared to other vegetables. Consumers switch to tomatoes, capsicum, etc. — they substitute away from the now-costlier good.
+
+2. **Income effect:** When the price of onions rises, the consumer's real purchasing power falls (the same income buys less). They cut back on consumption across the board, including onions.
+
+Both effects push demand down when price rises — hence the downward-sloping demand curve.
+
+**Demand curve shifts vs movements along the curve — the most-tested distinction:**
+
+- A **change in price** causes movement *along* the existing demand curve (extension if price falls, contraction if price rises).
+- A **change in anything else** (income, tastes, price of related goods, expectations) causes the entire curve to *shift* left or right.
+
+**Why does the supply curve slope upward?** A higher price makes production more profitable → existing producers expand output → new producers enter → total quantity supplied rises. Hence the direct (positive) relationship between price and quantity supplied.
+
+**Equilibrium** is where supply meets demand. At the equilibrium price: quantity demanded = quantity supplied. No surplus (excess supply), no shortage (excess demand). Price adjusts automatically: surplus → price falls → demand rises, supply falls, until equilibrium restored; shortage → price rises → demand falls, supply rises, until restored.
+
+</div>
+
+**Elasticity — the measure of responsiveness:**
+
+<div class="formula">
+
+$$E_d = \frac{\%\Delta Q_d}{\%\Delta P} = \frac{\Delta Q}{\Delta P} \times \frac{P}{Q} \quad \text{(always negative for normal goods — we report |E_d|)}$$
+
+</div>
+
+**The five elasticity values and their revenue implications:**
+
+| $|E_d|$ | Type | Example | When price rises, total revenue… |
+|---------|------|---------|--------------------------------|
+| $> 1$ | Elastic | Luxury goods, many substitutes | **Falls** (demand falls more than price rises) |
+| $< 1$ | Inelastic | Necessities, few substitutes (salt, insulin) | **Rises** (demand falls less than price rises) |
+| $= 1$ | Unit elastic | — | Unchanged |
+| $= 0$ | Perfectly inelastic | Life-saving drug with no substitute | Rises proportionally (demand unchanged) |
+| $= \infty$ | Perfectly elastic | Perfect competition commodity | Falls to zero (any price rise → all demand lost) |
+
+**Solved Example 9.A — Calculating price elasticity:**
+
+Price rises from ₹10 to ₹12 (20% increase); quantity demanded falls from 100 to 80 (20% decrease).
+
+> $E_d = \dfrac{-20\%}{+20\%} = -1.0$ (unit elastic, $|E_d| = 1$)
+
+**Solved Example 9.B — Revenue implication:**
+
+A monopolist faces inelastic demand ($|E_d| = 0.5$). If it raises price by 10%, what happens to total revenue?
+
+> Inelastic demand: quantity falls by only $0.5 \times 10\% = 5\%$.
+> Revenue change = Price effect (+10%) − Quantity effect (−5%) → **Revenue rises by approximately 5%**.
+
+**Consumer surplus — the "benefit beyond the price paid":**
+
+Consumer surplus = the area below the demand curve and above the market price line. It represents the total value consumers get beyond what they pay. A fall in price increases consumer surplus. Monopoly reduces consumer surplus (charges higher price, produces less). This loss is the "deadweight loss of monopoly."
 
 ## 9.1 Examiner mindset
 
@@ -1880,6 +2348,55 @@ Same numerical types as demand: 0 (perfectly inelastic, vertical), < 1, = 1, > 1
 **Importance:** ⭐⭐⭐⭐ HIGH (≈6 Qs / paper)
 **Difficulty:** Medium. Memorise the 3 laws and the 7 cost concepts.
 
+## 10.0 — Understanding Production & Cost Theory from First Principles
+
+<div class="intuition">
+
+**How do firms decide how much to produce? What does "diminishing returns" really mean?**
+
+A firm uses inputs (labour, capital, raw materials) to produce outputs. The **production function** $Q = f(L, K)$ describes the maximum output achievable from given input combinations. It is a purely technical relationship — what is physically possible.
+
+**Short run vs long run:**
+- **Short run:** At least one input is **fixed** (usually capital — factory buildings, machinery take time to expand or contract). Only variable inputs (typically labour) can be changed.
+- **Long run:** ALL inputs are variable. The firm can build new factories, buy new machines, enter or exit the industry.
+
+**Law of Diminishing Returns (short run):** Add workers to a fixed factory. Initially, each extra worker adds a lot — they can specialise, divide tasks. But eventually the factory becomes crowded — extra workers get in each other's way, share tools, wait for machines. Each additional worker adds *less* extra output than the previous one. This is **diminishing marginal product**. This is a **short-run law** — it occurs only because capital is fixed.
+
+**Cost curves — why they are U-shaped:** Average Cost (AC) falls initially because fixed costs are spread over more units as output rises. AC eventually rises because of diminishing returns — each extra unit requires more and more variable input. The U-shape is the combination of these two forces. **The MC curve always cuts the AC curve at its minimum** — this is a mathematical identity, not a coincidence (when marginal cost < average cost, it pulls the average down; when MC > AC, it pulls the average up; so they must cross at the minimum).
+
+</div>
+
+**The seven cost concepts — relationships that examiners test:**
+
+<div class="formula">
+
+$$TC = FC + VC \quad;\quad AC = \frac{TC}{Q} = AFC + AVC \quad;\quad MC = \frac{\Delta TC}{\Delta Q}$$
+
+Key relationships:
+- $AFC = FC/Q$ — always falls as $Q$ rises (fixed cost spread over more units — "spreading overhead")
+- $AVC$ — U-shaped (first falls due to increasing returns, then rises due to diminishing returns)
+- $AC$ — U-shaped, lies above AVC; the vertical gap = AFC (which narrows as $Q$ rises)
+- **MC cuts both AVC and AC at their respective minimum points**
+
+</div>
+
+**Returns to scale (long run):**
+
+| Type | What happens | Example |
+|------|-------------|---------|
+| Increasing returns to scale | Double inputs → more than double output | Large factories with economies of scale |
+| Constant returns to scale | Double inputs → exactly double output | — |
+| Decreasing returns to scale | Double inputs → less than double output | Management becomes too complex |
+
+**Solved Example 10.A:**
+
+FC = ₹10,000. VC at Q=100 is ₹5,000. Find TC, AC, AFC, AVC at Q=100. Also, VC at Q=101 is ₹5,040. Find MC.
+
+> TC = 10,000 + 5,000 = ₹15,000
+> AC = 15,000/100 = ₹150; AFC = 10,000/100 = ₹100; AVC = 5,000/100 = ₹50
+> MC at Q=101: TC(101) = 10,000+5,040 = 15,040; MC = 15,040−15,000 = **₹40**
+> Note: MC (₹40) < AVC (₹50) → AVC is still falling at Q=100.
+
 ## 10.1 Examiner mindset
 
 | Angle | Pet question |
@@ -2104,6 +2621,42 @@ Causes of DRS: managerial limits, coordination problems.
 
 **Importance:** ⭐⭐⭐⭐ HIGH (≈6 Qs / paper)
 **Difficulty:** Medium. Master the four market structures and you score full.
+
+## 11.0 — Understanding Market Structures from First Principles
+
+<div class="intuition">
+
+**Why does a monopolist charge more than a competitive firm? And how much can it charge?**
+
+In **perfect competition**, there are many firms selling an identical product. No single firm can influence the price — if it charges even ₹1 more, all customers switch to competitors. The firm is a **price taker**. Its demand curve is perfectly horizontal (infinitely elastic). In the long run, profit = 0 (new entrants compete it away).
+
+In a **monopoly**, there is only one seller. The firm IS the market. To sell more units, it must lower the price (because it faces the downward-sloping market demand curve). This gives the monopolist **price-setting power (pricing power)**. But it is not unlimited power — it can only charge what the market demand curve allows.
+
+A monopolist maximises profit by producing where $MR = MC$ (same rule as any firm). But for a monopolist, the Marginal Revenue (MR) is always **below** the price — because to sell one more unit, the monopolist must lower the price on ALL units, not just the marginal one. So $P > MR$ for a monopolist. This means the monopolist produces LESS and charges MORE than a competitive market would → **deadweight loss** (society loses the triangle of welfare that neither producer nor consumer captures).
+
+**Oligopoly** (few firms) is the most common real-world structure (telecom, aviation, FMCG, banking). Its defining feature: **strategic interdependence** — each firm's output and pricing decision directly affects and is affected by rivals' decisions. This makes oligopoly analysis complex and creates incentives for both competition and collusion.
+
+</div>
+
+**Comparison of four market structures:**
+
+| Feature | Perfect Competition | Monopoly | Oligopoly | Monopolistic Competition |
+|---------|-------------------|---------|----------|------------------------|
+| Number of sellers | Very many | One | Few (2–10) | Many |
+| Product | Identical (homogeneous) | Unique, no substitute | Identical or differentiated | Differentiated |
+| Entry/exit | Perfectly free | Completely blocked | Restricted | Relatively free |
+| Price control | None (price taker) | Full | Partial (interdependent) | Some (product differentiation) |
+| Long-run profit | Zero (P = AC) | Can be positive | Can be positive | Zero (P = AC) |
+| $MR$ vs $P$ | MR = P (flat demand curve) | MR < P | MR < P | MR < P |
+| Examples | Agricultural markets (wheat, rice) | Railways, BSNL (historically) | Aviation, telecom | Restaurants, toothpaste brands |
+
+**Solved Example 11.A:** A monopolist has demand $P = 100 - Q$ and $MC = 20$. Find profit-maximising output, price, and the deadweight loss region.
+
+> MR = $100 - 2Q$ (for linear demand, MR has double the slope).
+> Set MR = MC: $100 - 2Q = 20$ → $Q^* = 40$.
+> Price: $P^* = 100 - 40 = ₹60$.
+> Competitive outcome: P = MC → $100 - Q = 20$ → $Q_c = 80$, $P_c = ₹20$.
+> Monopoly produces 40 (not 80) and charges ₹60 (not ₹20) — classic monopoly outcome.
 
 ## 11.1 Examiner mindset
 
@@ -2333,6 +2886,45 @@ The kink at the prevailing price → MR curve has a **discontinuity** → MC can
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈8 Qs / paper)
 **Difficulty:** Easy-Medium. Heavy on facts and current-affairs-adjacent data. Memorise the depth tables.
+
+## 12.0 — Understanding the Indian Economy from First Principles
+
+<div class="intuition">
+
+**How do we measure a whole economy's output — and why does it matter for policy?**
+
+GDP (Gross Domestic Product) is the total market value of all final goods and services produced within a country's borders in a year. "Final" goods exclude intermediate inputs — the steel that goes into a car is not counted separately (only the car is), to avoid double-counting.
+
+**Three approaches to measuring GDP (all give the same answer in theory):**
+1. **Production/Output approach:** Sum value added by each producer. Value added = Output value − Input value (avoids double-counting).
+2. **Income approach:** Sum all incomes earned: wages + profit + rent + interest. Every rupee spent on output becomes someone's income.
+3. **Expenditure approach:** $\text{GDP} = C + I + G + (X - M)$. Consumer spending + Investment + Government spending + Net exports.
+
+**Why the structural mismatch matters:** Agriculture contributes ≈15–17% of GDP but employs ≈40–45% of India's workforce. Industry contributes ≈28% with far fewer workers. Services contributes ≈55–57% with educated, urban workers. This mismatch — too many people competing for a small share of GDP in agriculture — is the structural cause of rural poverty and the urban-rural income gap.
+
+</div>
+
+**National income aggregates — the chain of adjustments:**
+
+$$\text{GNP} = \text{GDP} + \text{NFIA (Net Factor Income from Abroad)}$$
+$$\text{NNP}_{MP} = \text{GNP} - \text{Depreciation (CCA)}$$
+$$\text{NNP}_{FC} = \text{National Income} = \text{NNP}_{MP} - \text{Net Indirect Taxes} \text{ (Indirect taxes − Subsidies)}$$
+$$\text{Per Capita Income} = \frac{\text{National Income}}{\text{Population}}$$
+
+| Term | Concept |
+|------|---------|
+| GDP | Production within borders (includes output by foreigners in India; excludes Indians abroad) |
+| GNP | Production by nationals (includes Indians abroad; excludes foreigners in India) |
+| NNP | GNP minus depreciation of capital (Net = after accounting for capital wear-out) |
+| NI at FC | NNP at MP minus net indirect taxes (removes tax distortions; reflects factor incomes) |
+| Real vs Nominal | Real GDP adjusts for inflation; Nominal does not. Real GDP growth = true economic growth |
+| GDP Deflator | Nominal GDP ÷ Real GDP × 100 (measures overall price changes in the economy) |
+
+**Solved Example 12.A:** GNP at MP = ₹100 lakh crore. Depreciation = ₹8 lakh crore. Indirect taxes = ₹15 lakh crore. Subsidies = ₹5 lakh crore. Find National Income.
+
+> $\text{NNP}_{MP} = 100 - 8 = ₹92$ lakh crore.
+> Net indirect taxes = $15 - 5 = ₹10$ lakh crore.
+> $\text{NI} = \text{NNP}_{FC} = 92 - 10 = \mathbf{₹82 \text{ lakh crore}}$
 
 ## 12.1 Examiner mindset
 
@@ -2577,6 +3169,41 @@ India target: **500 GW non-fossil capacity by 2030** (Net-Zero by 2070, COP-26 c
 **Importance:** ⭐⭐⭐⭐ HIGH (≈4 Qs / paper)
 **Difficulty:** Easy. Pure factual.
 
+## 13.0 — Understanding the 1991 Reforms from First Principles
+
+<div class="intuition">
+
+**Why did India need economic reforms in 1991? What was the crisis?**
+
+By May–June 1991, India's foreign exchange reserves had fallen to barely $1 billion — enough for only 2 weeks of imports. India was forced to physically airlift 67 tonnes of gold to the Bank of England and 20 tonnes to the Bank of Japan as collateral for emergency loans. The government was on the brink of defaulting on its international payments — a sovereign default that would have shut India out of global capital markets.
+
+**The causes were structural and had been building for decades:**
+- **Licence Raj:** Every private investment required government approval ("industrial licence"). This created massive inefficiency, corruption, and protected incumbent firms from competition. An entrepreneur wanting to set up a factory often waited years for approvals.
+- **Public sector dominance:** Government-owned companies controlled most key industries — they were chronically loss-making, overstaffed, and insulated from competition.
+- **Fiscal profligacy:** Persistent large fiscal deficits, financed by borrowing from the RBI (printing money) and from abroad, built up unsustainable debt.
+- **External shock:** The Gulf War (1990–91) caused an oil price spike (India imported most of its oil) AND disrupted remittances from Indian workers in Gulf countries — a double hit to the balance of payments.
+
+**The response — the LPG reforms (1991):**
+- Architect: Finance Minister **Dr. Manmohan Singh**, under PM **P.V. Narasimha Rao**.
+- India negotiated a $2.2 billion loan from the IMF, conditioned on structural reform.
+
+</div>
+
+**LPG — what each pillar actually changed:**
+
+| Pillar | What changed | Key examples |
+|--------|-------------|-------------|
+| **Liberalisation** | Removed government controls; dismantled Licence Raj | Industrial Licensing Policy abolished (except 6 industries); import duties slashed; FDI opened |
+| **Privatisation / Disinvestment** | Reduced state role in industry; sold government stakes in PSUs | Disinvestment Commission set up; BALCO, Maruti stake sold |
+| **Globalisation** | Opened economy to foreign trade and capital | Rupee made convertible on current account; FII investment allowed in stock markets; WTO membership |
+
+**Results of 1991 reforms (asked frequently):**
+- GDP growth rate rose: 5-6% in 1980s → 6-8% in 1990s-2000s → 7-8%+ in 2000s
+- Foreign exchange reserves rose from near-zero (1991) to $700+ billion (2024)
+- IT and services sector boom (BPO, software exports) — enabled by telecom liberalisation
+- Poverty rate fell significantly (though debate continues on methods)
+- Inequality increased (Gini coefficient rose); urban-rural gap widened
+
 ## 13.1 Examiner mindset
 
 | Angle | Pet question |
@@ -2733,6 +3360,51 @@ India target: **500 GW non-fossil capacity by 2030** (Net-Zero by 2070, COP-26 c
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈7 Qs / paper)
 **Difficulty:** Medium. Heavy on facts (RBI tools, governors, dates).
+
+## 14.0 — Understanding Money & Banking from First Principles
+
+<div class="intuition">
+
+**What IS money — and how do banks create it from thin air?**
+
+Money is not just physical cash. Economists define it by its three functions:
+1. **Medium of exchange:** Eliminates the barter problem (you don't need someone who has what you want AND wants what you have).
+2. **Store of value:** You can earn money today and spend it next month. It holds value over time (subject to inflation eroding it).
+3. **Unit of account:** Prices are denominated in rupees — a common measuring stick for all goods.
+
+Historically: cowrie shells → gold coins → paper notes backed by gold → modern fiat money (backed by nothing except trust in the government and the central bank). India's rupee is **fiat money** — the RBI declares it legal tender; its value comes from government authority and public trust.
+
+**How commercial banks create money — the multiplier effect:** You deposit ₹1,000 in Bank A. The RBI requires Bank A to keep 4% as CRR (Cash Reserve Ratio) = ₹40. Bank A can lend ₹960 to someone. That person spends ₹960 → it gets deposited in Bank B. Bank B keeps ₹38.4 (4% CRR) and lends ₹921.6. This chain continues. Total money created = $\frac{₹1,000}{CRR} = \frac{1,000}{0.04} = ₹25,000$.
+
+**Money Multiplier = 1/CRR.** A higher CRR means a smaller multiplier — the RBI can contract money supply by raising CRR without printing or destroying any physical currency.
+
+</div>
+
+**RBI's monetary policy tools — how the central bank controls money:**
+
+| Tool | Mechanism | Raising it → | Lowering it → |
+|------|-----------|-------------|--------------|
+| **Repo Rate** | Rate at which RBI lends to commercial banks | Banks borrow less → less lending → money supply ↓ → inflation ↓ | Banks borrow more → more lending → money supply ↑ → growth ↑ |
+| **Reverse Repo Rate** | Rate at which RBI borrows from commercial banks | Banks park more with RBI → less lent to public → credit tightens | Banks prefer to lend to public → credit expands |
+| **CRR** (Cash Reserve Ratio) | % of deposits kept as cash with RBI | Money multiplier falls → money supply contracts | Money multiplier rises → money supply expands |
+| **SLR** (Statutory Liquidity Ratio) | % of deposits kept in liquid assets (Govt securities, gold) | Less funds for loans → credit contraction | More funds for loans → credit expansion |
+| **Bank Rate** | Rate at which RBI rediscounts bills of commercial banks | Signals tight policy; banks raise lending rates | Signals loose policy |
+| **OMO** (Open Market Operations) | RBI buys/sells govt securities in open market | Selling: absorbs liquidity from market | Buying: injects liquidity into market |
+| **MSF** (Marginal Standing Facility) | Emergency overnight borrowing window for banks | — | Banks can borrow up to 1% of NDTL above SLR |
+
+**Money supply aggregates (M0 to M4) — broader = less liquid:**
+
+| Aggregate | Components | Nickname |
+|-----------|-----------|---------|
+| M0 | Currency in circulation + Bankers' deposits with RBI + Other deposits with RBI | Reserve Money / High-powered money |
+| M1 | Currency with public + Demand deposits with banks | Narrow Money |
+| M2 | M1 + Savings deposits with Post Office (excluding NSC) | — |
+| M3 | M1 + Time deposits with banks | **Broad Money** (most used for policy) |
+| M4 | M3 + All Post Office deposits | Broadest measure |
+
+**Solved Example 14.A:** CRR = 4%. A bank receives a fresh deposit of ₹50,000. What is the maximum credit creation?
+
+> Credit creation = Deposit × Money Multiplier = ₹50,000 × (1/0.04) = ₹50,000 × 25 = **₹12,50,000**
 
 ## 14.1 Examiner mindset
 
@@ -3001,6 +3673,64 @@ If primary deposit = ₹1000 and CRR = 10 %, banks can create deposits up to ₹
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈7 Qs / paper)
 **Difficulty:** Medium. Definition + computation. Always 2 questions on deficits.
+
+## 15.0 — Understanding Fiscal Policy & Budget from First Principles
+
+<div class="intuition">
+
+**What is fiscal policy and why does the government's deficit matter?**
+
+While the RBI manages **monetary policy** (money supply and interest rates), the government manages **fiscal policy** — its decisions about spending and taxation. Fiscal policy affects the economy through the multiplier: when the government spends ₹100 on roads, road construction workers get income, they spend it on food and clothes, those sellers earn income, they spend it — each rupee circulates, creating more than ₹100 of total demand. This is the Keynesian fiscal multiplier.
+
+**When expenditure > revenue → the government must borrow.** The amount borrowed is the **fiscal deficit**. This is not automatically bad — borrowing to build productive infrastructure (roads, ports, power) can generate returns that exceed the interest cost. But borrowing to cover routine expenses (subsidies, salaries when revenue is insufficient) creates a debt spiral: interest on past debt consumes more and more of future revenue, leaving less for development.
+
+**The three deficit concepts you must distinguish:**
+- **Fiscal Deficit (FD):** Total government expenditure − (Revenue receipts + Non-debt capital receipts). This equals the government's total borrowing requirement for the year.
+- **Revenue Deficit (RD):** Revenue expenditure − Revenue receipts. Shows whether the government is borrowing just to cover current expenses (very bad) or for capital investment (less bad).
+- **Primary Deficit (PD):** Fiscal Deficit − Interest payments. Measures the "new" borrowing need, excluding debt servicing on past loans. If PD = 0, new borrowing only covers interest on old debt — the debt stock is stable.
+
+</div>
+
+<div class="formula">
+
+**The three deficit formulas (memorise all three):**
+
+$$\text{Fiscal Deficit} = \text{Total Expenditure} - (\text{Revenue Receipts} + \text{Non-debt Capital Receipts})$$
+
+$$\text{Revenue Deficit} = \text{Revenue Expenditure} - \text{Revenue Receipts}$$
+
+$$\text{Primary Deficit} = \text{Fiscal Deficit} - \text{Interest Payments}$$
+
+$$\text{Monetised Deficit (formerly)} = \text{amount borrowed from RBI (money printing)}$$
+
+</div>
+
+**Budget classification — the two-part budget:**
+
+| Budget | Receipts | Expenditure |
+|--------|---------|-------------|
+| **Revenue budget** | Tax + non-tax revenues; recurring, do NOT create assets | Salaries, subsidies, interest payments, grants; recurring, do NOT create assets |
+| **Capital budget** | Borrowings, disinvestment, recoveries of loans; create obligations | Infrastructure spending, loans to states, repayment of old loans; create assets |
+
+**FRBM Act (Fiscal Responsibility and Budget Management Act, 2003):**
+- Aims to eliminate **revenue deficit** and reduce **fiscal deficit** to 3% of GDP.
+- Requires the government to present a Fiscal Policy Strategy Statement with the budget.
+- Has been amended multiple times — targets relaxed post-COVID (India's FD was ≈ 6.4% in FY21). Currently converging back toward 4.9% (FY25 revised estimate).
+
+**Balance of Payments (BoP):**
+
+| Account | Records | Examples |
+|---------|---------|---------|
+| **Current Account** | Trade in goods + services + transfers | Exports, imports, remittances, interest payments |
+| **Capital Account** | Small capital transfers | Debt write-offs, sale of non-financial assets |
+| **Financial Account** | Investment flows | FDI, FII, external borrowings, forex reserve changes |
+
+BoP always balances to zero by definition (any current account deficit is financed by a capital/financial account surplus or a fall in reserves).
+
+**Solved Example 15.A:** FD = ₹16 lakh crore. Interest payments = ₹11 lakh crore. Revenue receipts = ₹26 lakh crore. Revenue expenditure = ₹37 lakh crore.
+
+> Revenue Deficit = 37 − 26 = **₹11 lakh crore**
+> Primary Deficit = FD − Interest = 16 − 11 = **₹5 lakh crore**
 
 ## 15.1 Examiner mindset
 
@@ -3282,6 +4012,44 @@ GST slabs: 0 %, 5 %, 12 %, 18 %, 28 % (+ cess on demerit goods).
 
 **Importance:** ⭐⭐⭐ MEDIUM (≈4 Qs / paper)
 **Difficulty:** Easy. Pure factual.
+
+## 16.0 — Understanding IT in Governance from First Principles
+
+<div class="intuition">
+
+**How does IT transform governance — from "licence-raj queues" to "click-through services"?**
+
+Traditional government service delivery: visit the office → stand in a queue → submit physical documents → wait weeks (sometimes months) → pay a bribe to speed things up → get a certificate. For rural citizens without access to government offices, many services were effectively inaccessible.
+
+**e-Governance** (electronic governance) replaces this with digital processes that are: faster (minutes instead of weeks), cheaper (no physical infrastructure per transaction), more transparent (automated systems reduce human discretion = less corruption), accessible (from any internet-connected device), and auditable (digital trail is harder to tamper with than paper).
+
+**The five interaction types of e-Governance:**
+1. **G2C (Government to Citizen):** DigiLocker for certificates, Umang app, CSCs for rural access, income/caste/birth certificates online.
+2. **G2B (Government to Business):** GST portal (tax filing), MCA21 (company registration), GeM (government procurement), DGFT portal (import-export).
+3. **G2G (Government to Government):** Police-court-prison data integration, central monitoring of scheme expenditures via PFMS.
+4. **G2E (Government to Employee):** HRMS for leave/payroll, NPS (National Pension System) online.
+5. **C2G (Citizen to Government):** MyGov portal for suggestions, CPGRAMS for grievances.
+
+</div>
+
+**Key e-Governance initiatives — what examiners test:**
+
+| Initiative | Full form / Purpose |
+|-----------|-------------------|
+| **Aadhaar** | 12-digit biometric identity; enables direct benefit transfer (DBT) |
+| **JAM Trinity** | Jan Dhan + Aadhaar + Mobile — eliminates middlemen in subsidy delivery |
+| **DigiLocker** | Cloud storage for digital documents; eliminates need to carry physical certificates |
+| **Umang** | Unified Mobile Application for New-age Governance — single app for 1,200+ government services |
+| **GeM** | Government e-Marketplace — transparent procurement for all government bodies |
+| **PFMS** | Public Financial Management System — real-time tracking of central scheme funds |
+| **GSTN** | GST Network — IT backbone for Goods and Services Tax compliance |
+| **MCA21** | Ministry of Corporate Affairs portal — company registration, filings |
+| **CPGRAMS** | Centralised Public Grievance Redress and Monitoring System |
+| **NeGP** | National e-Governance Plan — framework launched 2006; mandated 27 Mission Mode Projects |
+| **CSC** | Common Service Centre — village-level IT service delivery points (over 5 lakh centres) |
+| **NeSDA** | National e-Governance Service Delivery Assessment — ranks states on e-governance |
+
+**Digital India Programme (2015):** Three pillars — (1) Digital Infrastructure as a Core Utility; (2) Governance and Services on Demand; (3) Digital Empowerment of Citizens.
 
 ## 16.1 Examiner mindset
 

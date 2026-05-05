@@ -1,0 +1,5818 @@
+---
+title: "Statistics — The JSO Mastery Book"
+subtitle: "SSC CGL Tier-2 Paper II (Junior Statistical Officer / Statistical Investigator) — One-stop, examiner-mindset, drill-heavy, 95%+ targeted"
+author: "Pariksha365"
+date: "2026"
+---
+
+# How to use this book
+
+This is the **only** book a JSO aspirant should need.
+
+It is built around four hard rules:
+
+| Rule | What it means in practice |
+|------|---------------------------|
+| **Examiner mindset** | For every topic we state how SSC frames it, the 3-5 angles they recycle, and the trap option they always plant. |
+| **Formula → derivation → drill** | Every formula has a 1-line proof or intuition so you don't memorise blindly; then 8-15 worked PYQ-style questions per chapter. |
+| **Pedagogy first** | Tables, mind maps, pitfall boxes, mnemonic boxes, recall prompts — no English paragraphs. Information is laid out like a publisher's textbook, not a blog. |
+| **Self-check** | Every chapter ends with a mini-mock (10 Qs, fully solved) and active-recall prompts. Last chapter is a full 100-Q mock. |
+
+> **The promise.** Read this book end-to-end with two passes + the embedded recall prompts and you will solve >95 of the 100 questions on JSO Paper II.
+
+---
+
+\newpage
+
+# Paper map and importance dashboard
+
+**Paper:** SSC CGL Tier-2 Paper II (Statistics) — **Junior Statistical Officer / Statistical Investigator Grade-II**
+
+| Item | Spec |
+|------|------|
+| Total questions | 100 |
+| Total marks | 200 |
+| Marks per question | 2 |
+| Negative marking | **−0.5** per wrong attempt |
+| Time | 120 minutes (2 hours) |
+| Mode | Computer-Based (CBT) |
+| Calculator | **Yes — built-in calculator** allowed in this paper |
+| Medium | English / Hindi |
+
+## Chapter-wise importance (averaged across last 6 JSO papers)
+
+| Ch | Topic | Avg Qs / paper | Marks (out of 200) | Importance | Difficulty |
+|----|-------|----------------|--------------------|------------|------------|
+| 1  | Collection, Classification, Presentation | 8 | 16 | ⭐⭐⭐⭐ HIGH | Easy |
+| 2  | Measures of Central Tendency | 10 | 20 | ⭐⭐⭐⭐⭐ CRITICAL | Easy-Med |
+| 3  | Measures of Dispersion | 10 | 20 | ⭐⭐⭐⭐⭐ CRITICAL | Easy-Med |
+| 4  | Moments, Skewness, Kurtosis | 7 | 14 | ⭐⭐⭐⭐ HIGH | Med |
+| 5  | Correlation & Regression | 10 | 20 | ⭐⭐⭐⭐⭐ CRITICAL | Med |
+| 6  | Probability Theory | 8 | 16 | ⭐⭐⭐⭐⭐ CRITICAL | Med |
+| 7  | Random Variable & Distributions | 10 | 20 | ⭐⭐⭐⭐⭐ CRITICAL | Med-Hard |
+| 8  | Sampling Theory | 8 | 16 | ⭐⭐⭐⭐ HIGH | Easy-Med |
+| 9  | Statistical Inference (Estimation + Testing) | 12 | 24 | ⭐⭐⭐⭐⭐ CRITICAL | Med-Hard |
+| 10 | Analysis of Variance | 4 | 8 | ⭐⭐⭐ MEDIUM | Med |
+| 11 | Time Series Analysis | 7 | 14 | ⭐⭐⭐⭐ HIGH | Easy-Med |
+| 12 | Index Numbers | 6 | 12 | ⭐⭐⭐⭐ HIGH | Easy |
+|    | **TOTAL** | **100** | **200** | | |
+
+> **What this dashboard tells you.** The five **CRITICAL** chapters (2, 3, 5, 6, 7, 9) carry **120 / 200 marks** = 60%. Mastering them alone gets you to ≈108/120. With the four **HIGH** chapters added (1, 4, 8, 11, 12) you cover **88% of the paper**. ANOVA is the only area where you can afford ≤80% mastery if time is tight.
+
+## Cut-offs reality check
+
+| Year | UR cut-off (out of 200) | Ratio |
+|------|-------------------------|-------|
+| 2022 | 142–148 | ~73 % |
+| 2021 | 140–146 | ~71 % |
+| 2019 | 138–144 | ~70 % |
+
+A 95% target = **190/200**. That demands ≥96 correct out of 100 (with ≤2 wrongs). It is achievable **only** if you can recognise the type instantly and the formula is already in muscle memory.
+
+---
+
+\newpage
+
+# PART 0 — FOUNDATIONS YOU CANNOT SKIP
+
+Before any topic you must be fluent in these 5 micro-skills. None is hard. Skipping one will cost you 10–15 marks across the paper.
+
+## 0.1 Sigma (Σ) algebra — the 8 rules
+
+Let \( c \) be a constant, \( X, Y \) be variables, \( n \) the count of observations.
+
+| # | Rule | Example |
+|---|------|---------|
+| 1 | \( \sum c = nc \) | \( \sum_{i=1}^{4} 7 = 28 \) |
+| 2 | \( \sum c X_i = c \sum X_i \) | constant pulls out |
+| 3 | \( \sum (X_i + Y_i) = \sum X_i + \sum Y_i \) | sums distribute |
+| 4 | \( \sum (X_i - \bar X) = 0 \) | **always**, by definition of mean |
+| 5 | \( \sum (X_i - \bar X)^2 = \sum X_i^2 - n\bar X^2 \) | computational form of variance |
+| 6 | \( \sum X_i^2 \neq (\sum X_i)^2 \) | **trap** — examiners love this |
+| 7 | \( \sum X_i Y_i \neq (\sum X_i)(\sum Y_i) \) | another trap |
+| 8 | \( \overline{X+Y} = \bar X + \bar Y \) but \( \overline{XY} \neq \bar X \bar Y \) (in general) | |
+
+<div class="pitfall"><strong>Pitfall.</strong> Rule 4 is the single most-tested algebraic identity in JSO. Any "the sum of deviations from the mean is …" question — answer is <strong>0</strong>. No computation needed.</div>
+
+## 0.2 The 3 means — when each one is asked
+
+| Mean | Formula (raw) | Formula (frequency) | When examiner uses it |
+|------|--------------|--------------------|-----------------------|
+| Arithmetic (AM) | \( \bar X = \dfrac{\sum X_i}{n} \) | \( \dfrac{\sum f_i X_i}{\sum f_i} \) | Default. Anything with "average". |
+| Geometric (GM) | \( (X_1 \cdot X_2 \cdots X_n)^{1/n} \) | \( \exp\!\left(\dfrac{\sum f_i \log X_i}{\sum f_i}\right) \) | Ratios, growth rates, index numbers. |
+| Harmonic (HM) | \( \dfrac{n}{\sum (1/X_i)} \) | \( \dfrac{\sum f_i}{\sum f_i / X_i} \) | Speeds-over-equal-distances, rates. |
+
+**Inequality (always true for positive observations):** \( \text{AM} \ge \text{GM} \ge \text{HM} \) with equality iff all values are equal.
+
+**Cross-link:** \( \text{GM}^2 = \text{AM} \times \text{HM} \) **only for two positive numbers**.
+
+## 0.3 Logarithm, antilog, exponent micro-refresher
+
+| Identity | Use |
+|----------|-----|
+| \( \log(ab) = \log a + \log b \) | GM, splicing |
+| \( \log(a/b) = \log a - \log b \) | index deflation |
+| \( \log a^n = n \log a \) | compounded growth |
+| \( e^x \cdot e^y = e^{x+y} \) | Poisson, normal |
+
+Numerical anchors to memorise:
+
+| \(x\) | \(\log_{10} x\) |
+|------|------|
+| 2 | 0.3010 |
+| 3 | 0.4771 |
+| 5 | 0.6990 |
+| 7 | 0.8451 |
+| \(\pi\) | 0.4971 |
+| \(e\) | 0.4343 |
+
+## 0.4 Combinatorics — only what you'll need
+
+| Symbol | Meaning | Formula |
+|--------|---------|---------|
+| \( n! \) | factorial | \( n \cdot (n-1) \cdots 1 \), and \( 0! = 1 \) |
+| \( {}^n P_r \) | permutations | \( \dfrac{n!}{(n-r)!} \) |
+| \( {}^n C_r \) | combinations | \( \dfrac{n!}{r!(n-r)!} \) |
+
+Memorise the Pascal row up to \(n=10\) — it solves binomial probability and sampling questions in 5 seconds.
+
+## 0.5 Greek-letter cheat-sheet (population vs sample)
+
+| Quantity | Population (parameter) | Sample (statistic) |
+|----------|-----------------------|--------------------|
+| Mean | \( \mu \) | \( \bar X \) |
+| Variance | \( \sigma^2 \) | \( s^2 \) |
+| Std deviation | \( \sigma \) | \( s \) |
+| Proportion | \( P \) (or \( \pi \)) | \( p \) |
+| Correlation | \( \rho \) | \( r \) |
+| Size | \( N \) | \( n \) |
+
+> **Examiner trap.** Whenever a question swaps \( N \) and \( n \) inside a variance formula, one of the four options will be the wrong-divisor answer. Always read which formula is asked: **population variance** uses \( N \); **sample variance** uses \( n-1 \).
+
+---
+
+\newpage
+
+# CHAPTER 1 — Collection, Classification & Presentation of Data
+
+**Importance:** ⭐⭐⭐⭐ HIGH (≈8 Qs / paper)
+**Difficulty:** Easy. Don't lose marks here — it's free fuel for your 95% target.
+
+## 1.0 — Understanding Data Presentation from First Principles
+
+<div class="intuition">
+
+**Why does data presentation exist — and why does statistics start here?**
+
+Suppose a government officer hands you a printout listing the ages of 10,000 school children, in the order they were recorded. Can you tell — just from staring at that list — what the typical age is? Whether most children fall in a narrow band or are spread across a wide range? Whether there are unusual outliers? No. Raw data in that form is nearly useless for decision-making.
+
+**Data presentation** is the process of transforming raw data into an organised form that reveals its structure. The moment you group 10,000 ages into bins (5–7, 7–9, 9–11 years) and count how many fall in each bin, a pattern emerges. When you draw those counts as bars, the shape of the distribution becomes visible in seconds. An administrator can now see at a glance that most children are 8–10 years old, that there is a small cluster of over-age enrolments, and that the distribution is slightly skewed right.
+
+**The chain of chapters:** Every statistical measure you will compute in Chapters 2–12 — mean, variance, correlation coefficient, regression line, test statistic — is computed from an organised frequency distribution, not from raw lists. **This chapter is the entry gate to all of statistics.**
+
+</div>
+
+**Chapter roadmap — what you will learn:**
+
+```mermaid
+graph LR
+  A[Raw Data] --> B[Classification<br/>Qualitative / Quantitative<br/>Discrete / Continuous]
+  B --> C[Primary vs Secondary<br/>Collection methods]
+  C --> D[Frequency Distribution<br/>class limits · boundaries · marks · width]
+  D --> E[Graphs]
+  E --> E1[Histogram]
+  E --> E2[Frequency Polygon]
+  E --> E3[Ogive cumulative]
+  E --> E4[Bar / Pie chart]
+```
+
+**Why multiple graph types?** Each graph reveals a different property of the data:
+
+| Graph | What it reveals | When to use |
+|-------|----------------|-------------|
+| Histogram | Shape of distribution (symmetric, skewed, bimodal) | Grouped continuous data |
+| Frequency Polygon | Shape + easy to overlay two distributions | Same as histogram; comparison |
+| Less-than Ogive | Cumulative %: "what % below value X?" | Reading median, quartiles graphically |
+| More-than Ogive | Cumulative % from above | Crossing point of two ogives = median |
+| Bar chart | Comparison between discrete categories | Discrete or categorical data |
+| Pie chart | Part-of-whole (each slice = % of total) | Proportions add to 100% |
+| Frequency Curve | Smooth theoretical shape | Large datasets; theoretical models |
+
+<div class="keypoint">
+
+**The histogram trap — unequal class widths.**
+When class widths are different, you CANNOT draw bar heights proportional to frequency. You must use **frequency density** = $\text{frequency} \div \text{class width}$ on the Y-axis. Otherwise wider classes look artificially more frequent. This trap appears in at least one JSO question every two papers.
+
+</div>
+
+**Concept: Inclusive vs Exclusive class intervals**
+
+| Form | Example | Contains | How to convert |
+|------|---------|---------|----------------|
+| Exclusive | 10–20, 20–30 | $10 \leq X < 20$ | Ready to use directly |
+| Inclusive | 10–19, 20–29 | $10 \leq X \leq 19$ | Subtract 0.5 from lower, add 0.5 to upper boundary |
+
+So the class 10–19 (inclusive) has boundaries 9.5–19.5, class mark = $(9.5+19.5)/2 = 14.5$.
+
+**Solved Example 1.A:** The heights (cm) of 30 students are recorded. Classes used: 150–155, 155–160, 160–165, 165–170, 170–175 with frequencies 3, 7, 12, 6, 2. Find: (i) class mark of 160–165, (ii) class boundaries if data were in inclusive form 160–164.
+
+> (i) Class mark = $(160+165)/2 = \mathbf{162.5}$ cm.
+>
+> (ii) Boundaries: lower = $160 - 0.5 = 159.5$; upper = $164 + 0.5 = 164.5$. Class width = 5.
+
+**Solved Example 1.B:** From the ogive below (less-than type), find the median graphically.
+
+> Locate $N/2$ on the Y-axis (cumulative frequency). Draw a horizontal line to the ogive curve, then drop vertically to the X-axis. The value on the X-axis is the median. *(In an exam, this is always a reading exercise — examiners give you a scale and expect you to read off the value at N/2.)*
+
+## 1.1 Examiner mindset
+
+| Angle examiner uses | What you must know |
+|--------------------|--------------------|
+| Definition / type of data | Primary vs Secondary; Qualitative vs Quantitative; Discrete vs Continuous |
+| Methods of primary data collection | Direct, indirect, mailed questionnaire, schedule, observation |
+| Frequency-distribution mechanics | Class limits, class boundaries, class mark, width, inclusive vs exclusive |
+| Diagrammatic & graphical presentation | Histogram, freq polygon, ogive, pie, bar (simple/multiple/sub-divided) |
+| Which graph is best when | Histogram for grouped data; pie for parts-of-whole; bar for comparison; ogive to read median/quartiles |
+
+## 1.2 Data classification — the family tree
+
+```mermaid
+graph TD
+  A[Statistical Data] --> B[Primary]
+  A --> C[Secondary]
+  A --> D[Qualitative / Attribute]
+  A --> E[Quantitative / Variable]
+  E --> F[Discrete<br/>countable: 0,1,2,…]
+  E --> G[Continuous<br/>measurable: 1.7 m, 21.43 °C]
+```
+
+## 1.3 Primary vs Secondary — fact card
+
+| Aspect | Primary | Secondary |
+|--------|---------|-----------|
+| Origin | Collected first-hand by the investigator | Collected by someone else, used as-is |
+| Cost | High | Low |
+| Time | High | Low |
+| Reliability | Higher | Depends on source |
+| Examples | Census enumeration, your own field survey | RBI Bulletin, Economic Survey, NSS reports |
+
+## 1.4 Methods of primary data collection
+
+| Method | Used when | Pro | Con |
+|--------|-----------|-----|-----|
+| Direct personal interview | Small area, sensitive issue | High accuracy | Costly |
+| Indirect oral investigation | Witnesses, third parties | Good for crime/illness | Bias risk |
+| Local correspondents | Routine area-wise reporting | Low cost | Non-uniform |
+| Mailed questionnaire | Wide, literate population | Cheap, large scale | Low response |
+| Schedule sent through enumerator | Mixed-literacy population | Higher response than mail | Costlier than mail |
+| Observation method | Behaviour studies | Objective | Time-intensive |
+
+## 1.5 Frequency-distribution vocabulary
+
+Suppose a class is written **20–30**.
+
+| Term | Meaning | Value here |
+|------|---------|-----------|
+| Lower limit (\(L\)) | Smallest value the class includes | 20 |
+| Upper limit (\(U\)) | Largest value the class includes | 30 |
+| Class width (\(h\)) | \( U - L \) | 10 |
+| Class mark / mid-value (\(m\)) | \( (L+U)/2 \) | 25 |
+| Class boundaries (continuous form) | \( L - 0.5 \) to \( U + 0.5 \) (for inclusive series) | 19.5 – 30.5 |
+| Frequency (\(f\)) | Count of observations in the class | given |
+| Cumulative frequency | Running total of \(f\) | computed |
+| Relative frequency | \( f / \sum f \) | a proportion |
+
+**Inclusive vs exclusive class:**
+
+| Form | Looks like | Includes |
+|------|-----------|----------|
+| Exclusive | 20 – 30, 30 – 40 | 20 ≤ X < 30 |
+| Inclusive | 20 – 29, 30 – 39 | 20 ≤ X ≤ 29 |
+
+To convert inclusive → exclusive: subtract 0.5 from each lower limit and add 0.5 to each upper limit.
+
+## 1.6 Graphs — when to use which
+
+| Graph | Best use | Key construction note |
+|-------|---------|-----------------------|
+| **Histogram** | Continuous frequency data | Bars touch; height × width = frequency density when class widths differ |
+| **Frequency polygon** | Comparing distributions | Join class marks with straight lines; close to baseline at both ends |
+| **Frequency curve** | Smoothed shape of distribution | Smooth the polygon |
+| **Ogive (cumulative)** | Median, quartiles, percentiles | "Less-than" ogive rises; "more-than" ogive falls; intersection = median |
+| **Pie chart** | Composition / parts of whole | Angle = (class freq / total) × 360° |
+| **Bar chart (simple/multiple/sub-divided)** | Discrete categories, comparison | Bars do **not** touch |
+
+<div class="mnemonic"><strong>Mnemonic — "HOPe to Be a STAR".</strong><br/>
+<strong>H</strong>istogram = grouped freq.<br/>
+<strong>O</strong>give = cumulative freq → median.<br/>
+<strong>P</strong>ie = parts of whole.<br/>
+<strong>B</strong>ar = compare categories.</div>
+
+## 1.7 Histogram with unequal class widths — the only trap
+
+When class widths differ, you must plot **frequency density** (= \( f / h \)) on the y-axis, **not** raw frequency. Otherwise the visual impression lies.
+
+**Example.** Classes 0–10 (f=20), 10–20 (f=30), 20–40 (f=40).
+Density = 20/10 = 2, 30/10 = 3, 40/20 = **2** (not 4).
+
+## 1.8 Worked PYQ-style examples
+
+> **Q 1.1.** Class 30 – 40 has frequency 25. Its class mark is:
+> **(a) 30** **(b) 35** **(c) 40** **(d) 25**
+>
+> **Soln.** Class mark \( = (L+U)/2 = (30+40)/2 = 35 \). **Ans (b).**
+>
+> *Trap.* (a) lower limit, (c) upper limit, (d) the frequency itself.
+
+> **Q 1.2.** A pie chart shows education spending as 25 % of a state's outlay. The corresponding angle is:
+> **(a) 25°** **(b) 90°** **(c) 25/360 °** **(d) 100°**
+>
+> **Soln.** Angle = 25 % × 360° = **90°**. **Ans (b).**
+
+> **Q 1.3.** Convert inclusive class **40–49** to exclusive form.
+>
+> **Soln.** Lower boundary = 40 − 0.5 = 39.5. Upper boundary = 49 + 0.5 = **49.5**.
+> Exclusive: **39.5 – 49.5**. Class width = 10.
+
+> **Q 1.4.** Which graph is best for locating the median?
+> **(a) Pie** **(b) Histogram** **(c) Ogive** **(d) Bar**
+>
+> **Soln.** From a less-than ogive, drop a perpendicular at \( N/2 \) cumulative frequency to the x-axis → **median**. **Ans (c).**
+
+> **Q 1.5.** Below is a frequency table.
+>
+> | Class | 0–10 | 10–20 | 20–30 | 30–40 |
+> |-------|------|-------|-------|-------|
+> | f     | 5    | 8     | 12    | 5     |
+>
+> Find cumulative frequency of class 20–30 (less-than form).
+>
+> **Soln.** "Less than 30" = 5 + 8 + 12 = **25**.
+
+> **Q 1.6.** A study uses RBI Bulletin to compute inflation. The data is:
+> **(a) Primary** **(b) Secondary** **(c) Internal** **(d) Manual**
+>
+> **Soln.** Already published by RBI → secondary. **Ans (b).**
+
+> **Q 1.7.** Which is **NOT** a method of primary data collection?
+> **(a) Direct personal interview** **(b) Mailed questionnaire** **(c) NSS published reports** **(d) Schedule through enumerator**
+>
+> **Soln.** NSS published reports = secondary. **Ans (c).**
+
+> **Q 1.8.** A frequency distribution has class widths 5, 5, 10, 10. Frequencies 20, 25, 50, 30. To draw the histogram correctly, the bar heights should be (in same order):
+> **(a) 20, 25, 50, 30**  **(b) 4, 5, 5, 3**  **(c) 4, 5, 10, 6**  **(d) 20, 25, 25, 15**
+>
+> **Soln.** Use frequency density = f / h. Heights = 20/5, 25/5, 50/10, 30/10 = **4, 5, 5, 3**. **Ans (b).**
+
+> **Q 1.9.** A frequency polygon is constructed by joining:
+> **(a) Lower limits** **(b) Upper limits** **(c) Class marks** **(d) Class widths**
+>
+> **Soln.** Class marks (mid-points). **Ans (c).**
+
+> **Q 1.10.** In a "more-than" ogive, the curve generally:
+> **(a) Rises** **(b) Falls** **(c) Is flat** **(d) Is U-shaped**
+>
+> **Soln.** Cumulative frequencies decrease as the lower limit increases → **falls**. **Ans (b).**
+
+## 1.9 Trap-recognition card
+
+| Trap option you'll see | Why wrong | Tell |
+|-----------------------|-----------|------|
+| "Histogram bars don't touch" | False — histogram bars **touch**; only bar charts have gaps. | Don't confuse the two. |
+| "Pie angle = % directly" | Angle = % × 360° / 100, not the % itself. | Always multiply. |
+| "Use raw f for unequal widths" | Must use density. | Question will explicitly mention different widths. |
+| "Mailed questionnaire is secondary" | It's primary (you designed it). | Source-of-data ≠ medium. |
+
+## 1.10 Mini-mock (10 Qs, all solved)
+
+| # | Q | Ans |
+|---|----|-----|
+| 1 | Class mark of 50–60 = ? | 55 |
+| 2 | Total frequency = 200; sector for "Education" = 72°. % share? | 72/360 × 100 = **20%** |
+| 3 | Class 100–149 inclusive → exclusive lower boundary? | 99.5 |
+| 4 | The graph used to show parts of a whole is? | Pie |
+| 5 | Class width if classes are 0–4, 5–9, 10–14? | 5 |
+| 6 | Height of histogram bar when classes have unequal widths? | Frequency density |
+| 7 | "Less-than" ogive intersected with N/2 horizontal line gives? | Median |
+| 8 | A schedule is filled by? | The enumerator |
+| 9 | Census of India data when used in a study is? | Secondary |
+| 10 | A bar chart's bars are? | Separated (do not touch) |
+
+## 1.11 Active-recall prompts (cover the answers, then test)
+
+1. State the formula for class mark.
+2. List four methods of collecting primary data.
+3. Write the formula for the angle in a pie chart corresponding to a frequency \(f\) when total frequency is \(N\).
+4. Why do histogram bars touch but bar-chart bars don't?
+5. What is plotted on the y-axis of a histogram with unequal class widths?
+
+---
+
+\newpage
+
+# CHAPTER 2 — Measures of Central Tendency
+
+**Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈10 Qs / paper)
+**Difficulty:** Easy–Medium. This is your foundation for Dispersion, Moments, Skewness — every later chapter assumes you can find a mean in 5 seconds.
+
+## 2.0 — Understanding Central Tendency from First Principles
+
+<div class="intuition">
+
+**What is "central tendency" and why do we need more than one type of average?**
+
+Any dataset can be summarised along two dimensions: *where it is centred* and *how spread out it is*. Central tendency addresses the first: what single number best represents the "middle" or "typical" value of the data?
+
+The **arithmetic mean** is the most natural answer — add everything up and divide by count. But it has a fatal flaw: **it is sensitive to extreme values**. Consider 9 workers earning ₹20,000 each and 1 CEO earning ₹10,000,000. The mean salary is ≈ ₹1,018,000 — a number that describes nobody in the company. The **median** (the middle value when sorted: ₹20,000) is far more representative of what a typical employee earns.
+
+The **mode** (most frequent value) reveals a different truth: in a bimodal distribution with two peaks, the mean and median both land somewhere in the valley between the peaks — describing the least common outcome! The mode correctly identifies both peaks.
+
+**Why three averages exist:** Different types of phenomena need different summaries.
+- AM is best when the process is additive (total is meaningful — total marks, total production).
+- GM is best when the process is multiplicative (compound interest, growth rates, index ratios).
+- HM is best when the process involves rates and equal denominators (speeds over equal distances, costs per unit with equal budgets).
+
+</div>
+
+**Concept map — the family of averages:**
+
+```mermaid
+graph TD
+  A[Averages / Measures of Central Tendency] --> B[Mathematical Averages]
+  A --> C[Positional Averages]
+  B --> B1[Arithmetic Mean AM]
+  B --> B2[Geometric Mean GM]
+  B --> B3[Harmonic Mean HM]
+  C --> C1[Median = Q₂ = D₅ = P₅₀]
+  C --> C2[Mode]
+  C --> C3[Quartiles Q₁ Q₂ Q₃]
+  C --> C4[Deciles D₁…D₉]
+  C --> C5[Percentiles P₁…P₉₉]
+  B1 -.->|AM ≥ GM ≥ HM| B3
+  B1 -.->|AM × HM = GM² for 2 values| B3
+```
+
+**How AM, Median and Mode relate to distribution shape** — a visual you must be able to recall instantly:
+
+```
+SYMMETRIC:          Mode = Median = Mean
+                         ↑
+                    _____|_____
+                   /           \
+                  /             \
+─────────────────────────────────────
+
+POSITIVE SKEW       Mo  Md   Mn →
+(long right tail):   ↑   ↑    ↑
+                  __|___|_____|___
+                 /               \___
+─────────────────────────────────────
+
+NEGATIVE SKEW  ← Mn  Md   Mo
+(long left tail):  ↑   ↑    ↑
+               ___/____________|___
+              /               |
+─────────────────────────────────────
+```
+
+<div class="formula">
+
+**Key relationships (memorise all four):**
+
+$$\bar{X} = A + \frac{\sum f_i u_i}{\sum f_i} \times h \quad \text{(step-deviation method — fastest for grouped data)}$$
+
+$$\text{Median} = L + \frac{\frac{N}{2} - F}{f} \times h$$
+
+$$\text{Mode} = L + \frac{f_1 - f_0}{2f_1 - f_0 - f_2} \times h$$
+
+$$\boxed{\text{Mode} = 3\,\text{Median} - 2\,\text{Mean}} \quad \text{(empirical relation — used to find the third when two are known)}$$
+
+</div>
+
+**Solved Example 2.A — Combined mean (very frequent exam question):**
+
+A factory has two shifts. Morning shift: 40 workers, average wage ₹600. Evening shift: 60 workers, average wage ₹500. What is the overall average wage?
+
+> $\bar{X}_{combined} = \dfrac{n_1 \bar{X}_1 + n_2 \bar{X}_2}{n_1 + n_2} = \dfrac{40 \times 600 + 60 \times 500}{40 + 60} = \dfrac{24000 + 30000}{100} = \dfrac{54000}{100} = \mathbf{₹540}$
+
+**Solved Example 2.B — When to use HM (the most common trap):**
+
+A car travels 120 km at 60 km/h and returns 120 km at 40 km/h. What is the average speed for the whole journey?
+
+> Equal distances → use **HM**, not AM.
+>
+> $\text{HM} = \dfrac{2}{\frac{1}{60} + \frac{1}{40}} = \dfrac{2}{\frac{2}{120} + \frac{3}{120}} = \dfrac{2}{\frac{5}{120}} = \dfrac{240}{5} = \mathbf{48 \text{ km/h}}$
+>
+> *Why not AM?* AM gives $(60+40)/2 = 50$ km/h. Check: time taken = $120/60 + 120/40 = 2 + 3 = 5$ hours. Total distance = 240 km. Actual average speed = $240/5 = 48$ km/h ✓ HM is correct.
+
+**Solved Example 2.C — Median for grouped data (step by step):**
+
+| Class | 0–10 | 10–20 | 20–30 | 30–40 | 40–50 |
+|-------|------|-------|-------|-------|-------|
+| Frequency | 5 | 8 | 15 | 7 | 5 |
+
+Find the median.
+
+> Step 1: $N = 5+8+15+7+5 = 40$; so $N/2 = 20$.
+>
+> Step 2: Build cumulative frequencies: 5, 13, 28, 35, 40.
+>
+> Step 3: The first CF to reach or exceed 20 is 28 (in class 20–30). **Median class = 20–30.**
+>
+> Step 4: $L = 20$, $F = 13$ (CF before median class), $f = 15$, $h = 10$.
+>
+> $\text{Median} = 20 + \dfrac{20 - 13}{15} \times 10 = 20 + \dfrac{70}{15} = 20 + 4.67 = \mathbf{24.67}$
+
+**Solved Example 2.D — GM for growth rates:**
+
+A company's sales grew by 10% in Year 1 and 40% in Year 2. What is the average annual growth rate?
+
+> Growth rates as multipliers: 1.10 and 1.40.
+>
+> $\text{GM} = \sqrt{1.10 \times 1.40} = \sqrt{1.54} \approx 1.2410$
+>
+> Average annual growth rate ≈ **24.1% per year**.
+>
+> *Check:* Starting at ₹100: after Year 1 → ₹110; after Year 2 → ₹154. Two-year growth = 54%. Equivalent annual rate = $\sqrt{1.54} - 1 \approx 24.1\%$ ✓
+
+## 2.1 Examiner mindset
+
+| Angle | They ask it as | Marks-share |
+|-------|----------------|-------------|
+| Pure formula | "Find mean of … " (raw / discrete / grouped) | 3-4 Qs |
+| Properties of AM | "Sum of deviations from mean = ?" → 0; "If each value increased by k, mean = ?" → \(\bar X + k\) | 1-2 Qs |
+| Combined / weighted mean | Two groups with sizes \(n_1, n_2\) and means \(\bar X_1, \bar X_2\) | 1-2 Qs |
+| Median / Mode of grouped data | Direct formula with class containing the median / mode | 2-3 Qs |
+| Empirical mode | Mode = 3 Median − 2 Mean | 1 Q |
+| Partition values | Quartiles, deciles, percentiles from ogive or formula | 1-2 Qs |
+| AM-GM-HM relation | AM ≥ GM ≥ HM; \( GM^2 = AM \cdot HM \) (for two values) | 1 Q |
+
+## 2.2 Mind map
+
+```mermaid
+graph TD
+  A[Central Tendency] --> B[Mathematical]
+  A --> C[Positional]
+  B --> B1[Arithmetic Mean]
+  B --> B2[Geometric Mean]
+  B --> B3[Harmonic Mean]
+  C --> C1[Median]
+  C --> C2[Mode]
+  C --> C3[Partition values:<br/>Q1 Q2 Q3, D1..D9, P1..P99]
+```
+
+## 2.3 Arithmetic Mean — three computational forms
+
+### Direct method
+
+| Data type | Formula |
+|-----------|---------|
+| Raw / ungrouped | \( \bar X = \dfrac{\sum X_i}{n} \) |
+| Discrete frequency | \( \bar X = \dfrac{\sum f_i X_i}{\sum f_i} \) |
+| Continuous (grouped) | \( \bar X = \dfrac{\sum f_i m_i}{\sum f_i} \), \( m_i \) = class mark |
+
+### Assumed-mean (short-cut) method
+
+Pick any \(A\) (preferably a middle class mark). Let \(d_i = X_i - A\).
+
+\[
+\bar X = A + \dfrac{\sum f_i d_i}{\sum f_i}
+\]
+
+### Step-deviation method
+
+Pick \(A\), let \(u_i = (X_i - A)/h\) where \(h\) = common class width.
+
+\[
+\bar X = A + \dfrac{\sum f_i u_i}{\sum f_i} \times h
+\]
+
+This is the fastest for grouped data with equal class widths. **Memorise it.**
+
+## 2.4 Five key properties of AM (very high-yield)
+
+| # | Property | One-line proof / use |
+|---|----------|---------------------|
+| P1 | \( \sum (X_i - \bar X) = 0 \) | by definition of mean |
+| P2 | \( \sum (X_i - \bar X)^2 \) is **minimum** (less than for any other constant) | least-squares property |
+| P3 | If \( Y_i = X_i + k \) then \( \bar Y = \bar X + k \) | shift property |
+| P4 | If \( Y_i = c X_i \) then \( \bar Y = c \bar X \) | scale property |
+| P5 | Combined mean of two groups: \( \bar X_{12} = \dfrac{n_1 \bar X_1 + n_2 \bar X_2}{n_1 + n_2} \) | weighted by size |
+
+<div class="mnemonic"><strong>P1 is asked every alternate paper.</strong> If a question says "the algebraic sum of the deviations of values from their arithmetic mean is …", the answer is <strong>zero</strong>. Move on.</div>
+
+## 2.5 Geometric and Harmonic means — when each is correct
+
+| Setup | Use | Why |
+|-------|-----|-----|
+| Average growth rate over years (e.g., 10%, 20%, 30% in three years) | **GM** | Multiplicative process |
+| Average ratio (price relative, index numbers) | **GM** | Symmetric in ratios |
+| Avg speed when **equal distances** at different speeds | **HM** | Time = distance/speed; HM gives correct total-time average |
+| Avg cost per unit when fixed expenditure spent at different prices | **HM** | Same as above with money |
+| Average of measurements | **AM** | Default |
+
+**Two-value identity:** \( \text{AM} \times \text{HM} = \text{GM}^2 \) (only for two positive numbers).
+
+## 2.6 Median — formula for grouped data
+
+\[
+\text{Median} = L + \dfrac{(N/2) - F}{f} \times h
+\]
+
+| Symbol | Meaning |
+|--------|---------|
+| \(L\) | lower boundary of the **median class** |
+| \(N\) | total frequency, \(\sum f_i\) |
+| \(F\) | cumulative frequency **before** the median class |
+| \(f\) | frequency of the median class |
+| \(h\) | class width |
+
+**Median class** = the class where cumulative frequency first reaches \( N/2 \).
+
+## 2.7 Mode — formula for grouped data
+
+\[
+\text{Mode} = L + \dfrac{f_1 - f_0}{2 f_1 - f_0 - f_2} \times h
+\]
+
+| Symbol | Meaning |
+|--------|---------|
+| \(L\) | lower boundary of the **modal class** (the class with maximum freq) |
+| \(f_1\) | frequency of modal class |
+| \(f_0\) | frequency of class **just before** modal class |
+| \(f_2\) | frequency of class **just after** modal class |
+| \(h\) | class width |
+
+## 2.8 Empirical relation (memorise both forms)
+
+\[
+\boxed{\text{Mode} = 3\,\text{Median} - 2\,\text{Mean}}
+\quad \Longleftrightarrow \quad
+\text{Mean} - \text{Mode} = 3(\text{Mean} - \text{Median})
+\]
+
+Used when the question gives two of the three and asks the third.
+
+## 2.9 Partition values
+
+| Quantity | What it splits | Formula (grouped data) |
+|----------|---------------|------------------------|
+| Median (\(Q_2\)) | bottom 50% / top 50% | \( L + \dfrac{N/2 - F}{f} h \) |
+| Quartile \(Q_k\) (\(k=1,2,3\)) | quarters | replace \(N/2\) with \(kN/4\) |
+| Decile \(D_k\) (\(k=1\ldots9\)) | tenths | replace with \(kN/10\) |
+| Percentile \(P_k\) (\(k=1\ldots99\)) | hundredths | replace with \(kN/100\) |
+
+So \( Q_2 = D_5 = P_{50} = \) Median.
+
+## 2.10 Which average for which shape?
+
+| Distribution shape | Mean–Median–Mode order |
+|--------------------|-----------------------|
+| Symmetric | Mean = Median = Mode |
+| Positively skewed (long right tail) | **Mode < Median < Mean** |
+| Negatively skewed (long left tail) | **Mean < Median < Mode** |
+
+Visual:
+
+```
+positive skew (right-tailed):    Mo  Me  Mn  →
+negative skew (left-tailed):     ←  Mn  Me  Mo
+```
+
+## 2.11 Worked PYQ-style examples
+
+> **Q 2.1.** Mean of 5, 7, 9, 11, 13.
+>
+> \( \bar X = (5+7+9+11+13)/5 = 45/5 = \mathbf{9} \).
+
+> **Q 2.2.** A class has 30 students with mean weight 50 kg. Another has 20 with mean 60 kg. Combined mean?
+>
+> \( \bar X_{12} = \dfrac{30 \cdot 50 + 20 \cdot 60}{30 + 20} = \dfrac{1500 + 1200}{50} = \dfrac{2700}{50} = \mathbf{54\text{ kg}} \).
+
+> **Q 2.3.** The mean of 10 values is 25. If each value is multiplied by 4 and then 6 is subtracted, the new mean is:
+>
+> Apply P3 then P4: new mean \( = 4 \cdot 25 - 6 = \mathbf{94} \).
+
+> **Q 2.4.** A man travels 60 km at 30 km/h and another 60 km at 60 km/h. Average speed?
+>
+> Equal distances → use HM: \( \dfrac{2}{(1/30)+(1/60)} = \dfrac{2}{3/60} = \dfrac{120}{3} = \mathbf{40 \text{ km/h}} \).
+> *Trap.* AM gives 45 — wrong because times differ.
+
+> **Q 2.5.** GM of 4 and 16.
+>
+> \( \sqrt{4 \cdot 16} = \sqrt{64} = \mathbf{8} \).
+
+> **Q 2.6.** For the table below, find the median.
+>
+> | Class | 0–10 | 10–20 | 20–30 | 30–40 | 40–50 |
+> |-------|------|-------|-------|-------|-------|
+> | f     | 5    | 8     | 15    | 7     | 5     |
+>
+> N = 40, N/2 = 20. CF: 5, 13, 28, 35, 40 → median class = 20–30 (first to cross 20).
+> \( L = 20, F = 13, f = 15, h = 10 \).
+> Median = \( 20 + \dfrac{20 - 13}{15} \times 10 = 20 + 7/15 \cdot 10 = 20 + 4.67 = \mathbf{24.67} \).
+
+> **Q 2.7.** Same table, find mode.
+>
+> Modal class = 20–30 (highest f). \( L = 20, f_1 = 15, f_0 = 8, f_2 = 7, h = 10 \).
+> Mode = \( 20 + \dfrac{15 - 8}{2 \cdot 15 - 8 - 7} \times 10 = 20 + \dfrac{7}{15} \cdot 10 = 20 + 4.67 = \mathbf{24.67} \).
+>
+> Coincidence here; usually different.
+
+> **Q 2.8.** Mean = 36, Median = 32. Mode by empirical relation?
+>
+> Mode = 3 · 32 − 2 · 36 = 96 − 72 = **24**.
+
+> **Q 2.9.** AM and HM of two positive numbers are 9 and 4. Their GM?
+>
+> GM² = AM × HM = 36 → GM = **6**.
+
+> **Q 2.10.** The mean of 50 observations was 30. Later it was discovered that an item 80 had been wrongly read as 40. Correct mean?
+>
+> Correct sum = 50 · 30 + (80 − 40) = 1500 + 40 = 1540.
+> Correct mean = 1540 / 50 = **30.8**.
+
+> **Q 2.11.** For a positively skewed distribution, which is largest?
+>
+> Mean > Median > Mode → **Mean** is largest.
+
+> **Q 2.12.** \( D_5 \) of a distribution = ?
+>
+> \( D_5 = \) Median.
+
+> **Q 2.13.** Sum of deviations of 10 observations from 17 is 30; from 20 is 0. The mean is:
+>
+> Sum of deviations from \(c\) = 0 ⇔ \(c = \bar X\). So **mean = 20**.
+
+> **Q 2.14.** Which measure is **most affected by extreme values**?
+>
+> **Mean** (uses every value linearly). Median and mode aren't.
+
+> **Q 2.15.** GM of 2, 4, 8.
+>
+> \( (2 \cdot 4 \cdot 8)^{1/3} = 64^{1/3} = \mathbf{4} \).
+
+## 2.12 Trap-recognition card
+
+| Trap | Wrong answer it produces | Defence |
+|------|--------------------------|---------|
+| Equal distances, but candidate uses AM | Wrong faster-by-1 number | If "equal distance, different speeds" → HM. |
+| Step-deviation forgetting × \(h\) | Off by factor 10 (or whatever \(h\) is) | Always end with "× h". |
+| Median formula uses \(F\) of median class itself | Number is too low | \(F\) = CF **before** the median class. |
+| Mode formula sign flip | Negative answer | Numerator: \(f_1 - f_0\); denominator: \(2f_1 - f_0 - f_2\). |
+| Empirical relation memorised wrong | Mode = 2 Med − 3 Mean | Correct: Mode = 3 Med − 2 Mean. |
+
+## 2.13 Mini-mock (10 Qs, fully solved)
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | Mean of 12, 18, 24, 30. | 21 |
+| 2 | Combined mean: 40 boys (avg 60) + 60 girls (avg 50). | (40·60+60·50)/100 = 54 |
+| 3 | If mean of \(X\) is 50, mean of \(Y = 2X - 5\)? | 95 |
+| 4 | Sum of deviations from mean = ? | 0 |
+| 5 | AM = 12, GM = 6. HM? | GM² = AM·HM → HM = 36/12 = 3 |
+| 6 | A car covers 100 km @ 50 km/h, returns @ 25 km/h. Avg speed? | HM: 2/(1/50+1/25) = 2/(3/50) = 100/3 ≈ 33.33 km/h |
+| 7 | Mode = 30, Mean = 25. Median? | Mode = 3 Med − 2 Mean → 30 = 3 Med − 50 → Med = 80/3 ≈ 26.67 |
+| 8 | If each obs increased by 5, mean increases by? | 5 |
+| 9 | If each obs multiplied by 3, mean multiplied by? | 3 |
+| 10 | Median is the same as which decile? | \(D_5\) |
+
+## 2.14 Active-recall prompts
+
+1. Write the step-deviation formula for AM (with all symbols).
+2. State all 5 properties of AM.
+3. When does a problem demand HM, not AM?
+4. Write the median-from-grouped-data formula and label every symbol.
+5. State the order of Mean, Median, Mode for a negatively skewed distribution.
+6. State the empirical relation between Mean, Median, Mode.
+
+---
+
+\newpage
+
+# CHAPTER 3 — Measures of Dispersion
+
+**Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈10 Qs / paper)
+**Difficulty:** Easy–Medium. Pure formula. Once you nail the variance computational form, this entire chapter takes <5 min per question.
+
+## 3.0 — Understanding Dispersion from First Principles
+
+<div class="intuition">
+
+**Why isn't the mean enough? The essential need for a measure of spread.**
+
+Two cricket batsmen both average 50 runs per innings. Batsman A scores: 48, 51, 49, 52, 50 (very consistent). Batsman B scores: 10, 90, 5, 95, 50 (wildly erratic). If you need a reliable performer for the final of a tournament, you'd choose Batsman A — even though both have the same mean. **Dispersion** captures this difference in consistency.
+
+Dispersion measures how far the data points are scattered around the centre. Small dispersion = data bunched near the mean (consistent, predictable). Large dispersion = data spread far (variable, risky).
+
+**Why variance uses squared deviations:** The obvious measure of spread would be the average deviation from the mean: $\frac{1}{n}\sum(X_i - \bar{X})$. But this always equals **zero** (Property P1 of the mean — positive and negative deviations cancel). The fix: square each deviation before averaging. This makes all terms non-negative, giving a meaningful measure. The standard deviation (SD) is then the square root of variance — bringing us back to the original units.
+
+**Why CV is needed:** Is an SD of 5 large or small? Compared to a mean of 10, it's enormous (50% variation). Compared to a mean of 1000, it's negligible (0.5% variation). The **Coefficient of Variation** $= \frac{\text{SD}}{\text{Mean}} \times 100$ is unit-free and allows comparison across datasets with different scales or units.
+
+</div>
+
+**Five dispersion measures — when each is appropriate:**
+
+| Measure | Formula | Advantage | Limitation |
+|---------|---------|-----------|------------|
+| Range | $X_{max} - X_{min}$ | Simplest; easiest | Ignores all middle values; very sensitive to outliers |
+| Quartile Deviation (QD) | $\frac{Q_3 - Q_1}{2}$ | Not affected by extremes; works for open-ended classes | Ignores top and bottom 50% |
+| Mean Deviation (MD) | $\frac{\sum f|X_i - A|}{N}$ (A = mean or median) | Uses all values; intuitive | Not algebraically tractable; ignores signs |
+| Variance $(\sigma^2)$ | $\frac{\sum f(X_i-\bar{X})^2}{N}$ | Most powerful; algebraically tractable | Squared units; sensitive to outliers |
+| Standard Deviation $(\sigma)$ | $\sqrt{\text{Variance}}$ | Same units as data | Sensitive to outliers |
+| CV | $\frac{\sigma}{\bar{X}} \times 100$ | Unit-free; enables cross-dataset comparison | Meaningless when mean ≈ 0 |
+
+<div class="formula">
+
+**The computational formula for variance (faster than the definitional formula):**
+
+$$\sigma^2 = \frac{\sum f_i X_i^2}{N} - \left(\frac{\sum f_i X_i}{N}\right)^2 = \overline{X^2} - (\bar{X})^2$$
+
+This is always faster to compute than $\frac{\sum f_i(X_i - \bar{X})^2}{N}$ because you don't need $\bar{X}$ first.
+
+**Step-deviation form (for grouped data with equal class widths $h$):**
+
+$$\sigma^2 = h^2 \left[\frac{\sum f_i u_i^2}{N} - \left(\frac{\sum f_i u_i}{N}\right)^2\right], \quad u_i = \frac{X_i - A}{h}$$
+
+</div>
+
+**Solved Example 3.A — Variance and SD from raw data:**
+
+Find the variance and SD of: 4, 7, 13, 2, 6, 8, 10.
+
+> $N = 7$; $\sum X = 50$; $\bar{X} = 50/7 \approx 7.14$.
+>
+> Using computational formula: $\sum X^2 = 16 + 49 + 169 + 4 + 36 + 64 + 100 = 438$.
+>
+> $\sigma^2 = \dfrac{438}{7} - \left(\dfrac{50}{7}\right)^2 = 62.57 - 51.02 = 11.55$
+>
+> $\sigma = \sqrt{11.55} \approx \mathbf{3.40}$
+
+**Solved Example 3.B — Combined SD (the hard formula — appears 1-2 times per paper):**
+
+Group 1: $n_1 = 50$, $\bar{X}_1 = 113$, $\sigma_1 = 6$. Group 2: $n_2 = 100$, $\bar{X}_2 = 100$, $\sigma_2 = 7$. Find the combined SD.
+
+> Combined mean: $\bar{X}_{12} = \dfrac{50 \times 113 + 100 \times 100}{150} = \dfrac{5650 + 10000}{150} = \dfrac{15650}{150} = 104.33$
+>
+> $d_1 = \bar{X}_1 - \bar{X}_{12} = 113 - 104.33 = 8.67$; $d_2 = 100 - 104.33 = -4.33$
+>
+> $\sigma_{12}^2 = \dfrac{n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)}{n_1 + n_2}$
+>
+> $= \dfrac{50(36 + 75.17) + 100(49 + 18.75)}{150} = \dfrac{50 \times 111.17 + 100 \times 67.75}{150} = \dfrac{5558.5 + 6775}{150} = \dfrac{12333.5}{150} = 82.22$
+>
+> $\sigma_{12} = \sqrt{82.22} \approx \mathbf{9.07}$
+
+**Solved Example 3.C — Coefficient of Variation for comparison:**
+
+Company A: mean profit ₹60,000, SD ₹15,000. Company B: mean profit ₹80,000, SD ₹18,000. Which company is more consistent?
+
+> $\text{CV}_A = \dfrac{15000}{60000} \times 100 = 25\%$
+>
+> $\text{CV}_B = \dfrac{18000}{80000} \times 100 = 22.5\%$
+>
+> **Company B is more consistent** (lower CV) even though it has a larger absolute SD. CV accounts for scale.
+
+## 3.1 Examiner mindset
+
+| Angle | Their pet question |
+|-------|--------------------|
+| Range, QD, MD, SD basics | Direct formula |
+| Variance — computational form | Given \(\sum X, \sum X^2\), find \(\sigma^2\) |
+| Effect of change of origin / scale on SD | Origin doesn't change SD; scale scales it |
+| Combined SD (two groups) | One formula they expect verbatim |
+| Coefficient of variation (CV) | "Which series is more consistent / less variable?" → smaller CV |
+| Lorenz curve | Concept-only Q on inequality measurement |
+
+## 3.2 Five measures, one table
+
+| Measure | Formula (raw data, \(n\) obs) | Frequency / grouped |
+|---------|------------------------------|--------------------|
+| Range | \( \max - \min \) | upper limit of last class − lower limit of first class |
+| Quartile deviation (Semi-IQR) | \( (Q_3 - Q_1)/2 \) | same |
+| Mean deviation about \(\bar X\) | \( \dfrac{\sum |X_i - \bar X|}{n} \) | \( \dfrac{\sum f_i |X_i - \bar X|}{N} \) |
+| Variance \(\sigma^2\) | \( \dfrac{\sum (X_i - \bar X)^2}{n} \) | \( \dfrac{\sum f_i (X_i - \bar X)^2}{N} \) |
+| Std deviation \(\sigma\) | \( \sqrt{\sigma^2} \) | same |
+
+## 3.3 Computational form of variance — memorise this
+
+\[
+\boxed{\sigma^2 = \dfrac{\sum X^2}{n} - \bar X^2 = \dfrac{\sum X^2}{n} - \left( \dfrac{\sum X}{n} \right)^2}
+\]
+
+For frequency:
+
+\[
+\sigma^2 = \dfrac{\sum f X^2}{N} - \left( \dfrac{\sum f X}{N} \right)^2
+\]
+
+Step-deviation (when class widths equal \(h\), \(u = (X-A)/h\)):
+
+\[
+\sigma^2 = h^2 \left[ \dfrac{\sum f u^2}{N} - \left( \dfrac{\sum f u}{N} \right)^2 \right]
+\]
+
+This is the single most-used formula in the entire JSO paper — it appears directly or indirectly in **at least 6 questions per paper**.
+
+## 3.4 Properties of variance / SD (very high-yield)
+
+| Property | Result | Memory hook |
+|----------|--------|-------------|
+| **Origin-invariant**: if \(Y = X + k\) | \(\sigma_Y = \sigma_X\), \(\sigma_Y^2 = \sigma_X^2\) | shifting all values doesn't change spread |
+| **Scale-multiplied**: if \(Y = cX\) | \(\sigma_Y = |c| \sigma_X\), \(\sigma_Y^2 = c^2 \sigma_X^2\) | scale × |c| |
+| **Linear**: if \(Y = aX + b\) | \(\sigma_Y = |a| \sigma_X\) | only \(a\) matters |
+| Variance of constant | 0 | no spread |
+| **Sum of independent** \(X, Y\) | \(\sigma_{X+Y}^2 = \sigma_X^2 + \sigma_Y^2\) | only when independent |
+| **Difference of independent** \(X, Y\) | \(\sigma_{X-Y}^2 = \sigma_X^2 + \sigma_Y^2\) | yes, **plus** — variances always add |
+
+<div class="pitfall"><strong>Trap.</strong> Var(X − Y) = Var(X) + Var(Y) when independent. Many candidates write minus. Variance is non-negative, so subtraction would risk negatives — that's the giveaway.</div>
+
+## 3.5 Combined Standard Deviation
+
+Two groups, sizes \(n_1, n_2\), means \(\bar X_1, \bar X_2\), SDs \(\sigma_1, \sigma_2\). Let \(\bar X_{12}\) be the combined mean. Then:
+
+\[
+\boxed{\sigma_{12}^2 = \dfrac{n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)}{n_1 + n_2}}
+\]
+
+where \(d_1 = \bar X_1 - \bar X_{12}\), \(d_2 = \bar X_2 - \bar X_{12}\).
+
+Memory hook: each group contributes its own variance **plus** its squared deviation from the overall mean, weighted by size.
+
+## 3.6 Coefficient of Variation (CV)
+
+\[
+\text{CV} = \dfrac{\sigma}{\bar X} \times 100\%
+\]
+
+| Use | Why |
+|-----|-----|
+| Compare variability of two series with **different units** or different means | SD alone can mislead — a SD of 5 on a mean of 10 is huge; SD of 5 on mean of 1000 is tiny. |
+| **Smaller CV → more consistent / more uniform / less risky** | Lower spread relative to size. |
+
+Examiners ALWAYS phrase this as "which is more consistent / homogeneous / stable / uniform" — that's your trigger word for CV.
+
+## 3.7 Coefficients of dispersion (relative measures)
+
+| Measure | Coefficient |
+|---------|-------------|
+| Range | \( (X_{\max} - X_{\min})/(X_{\max} + X_{\min}) \) |
+| Quartile deviation | \( (Q_3 - Q_1)/(Q_3 + Q_1) \) |
+| Mean deviation | \( \text{MD}/\text{Mean} \) (or median, depending on which MD is taken) |
+| SD (CV) | \( \sigma / \bar X \times 100\% \) |
+
+## 3.8 Empirical relation between MD and SD (for normal-ish data)
+
+\[
+\text{QD} : \text{MD} : \text{SD} \;\approx\; \dfrac{2}{3} \sigma : \dfrac{4}{5} \sigma : \sigma \;\approx\; 10 : 12 : 15
+\]
+
+i.e., \( \text{QD} \approx 0.6745 \sigma \), \( \text{MD} \approx 0.7979 \sigma \). Asked as a one-mark fact question.
+
+## 3.9 Lorenz curve
+
+| What | Used for | Reading |
+|------|---------|---------|
+| Plot of cumulative % of population (x) vs cumulative % of variable (y) | Income / wealth inequality | Closer to 45° "line of equality" → less inequality. Bigger bow → more inequality. |
+
+The **Gini coefficient** = area between the Lorenz curve and the line of equality / total area below the line. \(0\) = perfect equality, \(1\) = perfect inequality.
+
+## 3.10 Worked PYQ-style examples
+
+> **Q 3.1.** Find variance of 4, 6, 8, 10, 12.
+>
+> \(\bar X = 40/5 = 8\). Deviations: −4, −2, 0, 2, 4. Squares: 16, 4, 0, 4, 16. Sum = 40.
+> \(\sigma^2 = 40/5 = \mathbf{8}\). \(\sigma = 2\sqrt{2} \approx 2.83\).
+
+> **Q 3.2.** \(\sum X = 50, \sum X^2 = 510\) for \(n = 10\). Find SD.
+>
+> \(\bar X = 5\). \(\sigma^2 = 510/10 - 25 = 51 - 25 = 26\). \(\sigma = \sqrt{26} \approx \mathbf{5.10}\).
+
+> **Q 3.3.** SD of \(X\) is 6. SD of \(Y = 3X + 7\)?
+>
+> \(|3| \cdot 6 = \mathbf{18}\). The +7 contributes nothing.
+
+> **Q 3.4.** Two series: A has mean 50, SD 10; B has mean 80, SD 12. More consistent?
+>
+> CV(A) = 10/50 = 20%. CV(B) = 12/80 = 15%. **B is more consistent** (lower CV).
+
+> **Q 3.5.** Variance of first \(n\) natural numbers is:
+>
+> Standard fact: \( \sigma^2 = \dfrac{n^2 - 1}{12} \). Memorise.
+>
+> *Proof sketch.* \( \sum k = n(n+1)/2, \sum k^2 = n(n+1)(2n+1)/6 \), substitute, simplify.
+
+> **Q 3.6.** \(Q_1 = 25, Q_3 = 45\). Quartile deviation? Coefficient?
+>
+> QD = (45 − 25)/2 = **10**. Coefficient = (45 − 25)/(45 + 25) = 20/70 = **2/7 ≈ 0.286**.
+
+> **Q 3.7.** Var(X) = 9, Var(Y) = 16, X and Y independent. Var(X − Y)?
+>
+> 9 + 16 = **25** (variances add even on subtraction).
+
+> **Q 3.8.** A group of 50 has mean 60, SD 5. A group of 30 has mean 60, SD 6. Combined SD?
+>
+> Means equal → \(d_1 = d_2 = 0\). Combined variance = (50·25 + 30·36)/80 = (1250 + 1080)/80 = 2330/80 = 29.125. SD = \(\sqrt{29.125} \approx \mathbf{5.40}\).
+
+> **Q 3.9.** A group has mean 50 SD 4 (n = 60); another mean 55 SD 5 (n = 40). Combined SD?
+>
+> Combined mean = (60·50 + 40·55)/100 = (3000 + 2200)/100 = 52.
+> \(d_1 = 50 − 52 = −2, d_2 = 55 − 52 = 3\).
+> Comb var = (60(16+4) + 40(25+9))/100 = (60·20 + 40·34)/100 = (1200 + 1360)/100 = 25.6. SD = \(\sqrt{25.6} \approx \mathbf{5.06}\).
+
+> **Q 3.10.** For a normal-ish distribution, MD/SD ≈ ?
+>
+> 4/5 (or ~0.7979). **Memorise.**
+
+> **Q 3.11.** Range of the series 12, 18, 25, 7, 30, 14.
+>
+> max − min = 30 − 7 = **23**.
+
+> **Q 3.12.** SD of 10 observations is 4. If each is increased by 5, SD becomes:
+>
+> Origin invariant → SD remains **4**.
+
+> **Q 3.13.** Variance of \(2X + 3Y\) where Var(X) = 4, Var(Y) = 9, X and Y independent?
+>
+> \(2^2 \cdot 4 + 3^2 \cdot 9 = 16 + 81 = \mathbf{97}\).
+
+> **Q 3.14.** The CV is used to compare:
+>
+> Variability across series with **different means or units**. Answer: variability between two distributions.
+
+> **Q 3.15.** A perfectly equal distribution gives a Lorenz curve that:
+>
+> Coincides with the **45° line of equality**.
+
+## 3.11 Trap-recognition card
+
+| Trap | Why students fall | Fix |
+|------|-------------------|-----|
+| "SD changes when origin changes" | They confuse with mean | SD is **origin-invariant**. |
+| "Var(X − Y) = Var(X) − Var(Y)" | Algebraic instinct | Variances **add** even on subtraction (independent case). |
+| Forgot the \(h^2\) in step-deviation | They put just \(h\) | Variance scales with **square** of factor. |
+| Compared raw SDs to claim consistency | When means differ | Use **CV**, not SD. |
+
+## 3.12 Mini-mock
+
+| # | Q | Ans |
+|---|----|-----|
+| 1 | Var(2X+5)? Var(X) = 9. | 36 |
+| 2 | SD of constant 7 = ? | 0 |
+| 3 | Combined mean of n₁=20 (X̄=15) and n₂=30 (X̄=25)? | 21 |
+| 4 | Series with smaller CV is …? | More consistent |
+| 5 | Variance of first 10 natural numbers? | (100−1)/12 = 99/12 = 8.25 |
+| 6 | If each obs is doubled, SD becomes? | doubled |
+| 7 | Sum of squared deviations from mean is …? | minimum |
+| 8 | QD ≈ ? × σ | 2/3 σ (≈ 0.6745 σ) |
+| 9 | Var(X) = 4, Var(Y) = 5, X & Y independent. Var(X+Y)? | 9 |
+| 10 | Coefficient of QD formula? | (Q₃−Q₁)/(Q₃+Q₁) |
+
+## 3.13 Active-recall prompts
+
+1. Write the computational form of variance. Why is it preferred?
+2. Effect on SD when (a) origin changes, (b) scale changes by factor \(c\).
+3. Write the combined SD formula in full.
+4. State the empirical ratio QD : MD : SD.
+5. Why use CV instead of SD when comparing two series?
+
+---
+
+\newpage
+
+# CHAPTER 4 — Moments, Skewness & Kurtosis
+
+**Importance:** ⭐⭐⭐⭐ HIGH (≈7 Qs / paper)
+**Difficulty:** Medium. Definitions are mechanical; the trap is in **central vs raw** moments and the **β₁, β₂ vs γ₁, γ₂** distinction.
+
+## 4.0 — Understanding Moments, Skewness & Kurtosis
+
+<div class="intuition">
+
+**Beyond mean and SD: describing the shape of a distribution.**
+
+The mean tells you *where* a distribution is centred. The standard deviation tells you *how wide* it is. But two distributions can have identical means and SDs and still look completely different. Moments, skewness, and kurtosis capture this shape information mathematically.
+
+**Moments** are a systematic way to compute higher-order summaries. The $r$-th central moment is $\mu_r = \frac{\sum f_i(X_i - \bar{X})^r}{N}$:
+- $\mu_1 = 0$ always (by definition of mean).
+- $\mu_2 = \sigma^2$ — the variance. Captures width/spread.
+- $\mu_3$ — if positive, the right tail is heavier (positive skew); if negative, left tail is heavier. Captures **lopsidedness**.
+- $\mu_4$ — captures **peakedness**: how concentrated values are near the mean vs how fat the tails are.
+
+**Skewness — why it matters:** Salary distributions at companies are positively skewed — most employees earn moderate amounts, a handful of executives earn millions, pulling the mean far above what most people earn. The key diagnostic: *in a positively skewed distribution, Mode < Median < Mean* — the mean is dragged toward the long tail.
+
+**Kurtosis — why it matters:** Two investment funds have the same mean return and the same SD. Fund A is leptokurtic ($\beta_2 > 3$): mostly gives small steady returns, but occasionally delivers extreme outcomes. Fund B is platykurtic ($\beta_2 < 3$): returns are spread more uniformly. Same mean and SD — but Fund A has "fat tails" (higher probability of extreme events). Kurtosis captures this tail-risk difference.
+
+</div>
+
+**Visual guide to skewness directions:**
+
+```
+POSITIVE SKEW (right-tailed):
+  Frequency
+     |
+     |  ████
+     | ██████
+     |████████
+     |██████████▓▓▓░░
+─────┼──────────────────── Value
+     Mode Median Mean →
+
+NEGATIVE SKEW (left-tailed):
+  Frequency
+     |
+     |          ████
+     |        ██████
+     |      ████████
+     |  ░░░▓▓██████████
+─────┼──────────────────── Value
+     ← Mean Median Mode
+```
+
+<div class="formula">
+
+**The four moment-based shape measures:**
+
+$$\beta_1 = \frac{\mu_3^2}{\mu_2^3} \quad \text{(measure of skewness squared; } \beta_1 = 0 \text{ for symmetric)}$$
+
+$$\gamma_1 = \frac{\mu_3}{\mu_2^{3/2}} = \pm\sqrt{\beta_1} \quad \text{(signed skewness; positive = right-skewed)}$$
+
+$$\beta_2 = \frac{\mu_4}{\mu_2^2} \quad \text{(kurtosis; normal distribution: } \beta_2 = 3\text{)}$$
+
+$$\gamma_2 = \beta_2 - 3 \quad \text{(excess kurtosis; leptokurtic: } \gamma_2 > 0\text{; platykurtic: } \gamma_2 < 0\text{)}$$
+
+</div>
+
+**The three Karl Pearson skewness coefficients (all used in exams):**
+
+| Formula | When to use |
+|---------|------------|
+| $\text{Sk} = \dfrac{\text{Mean} - \text{Mode}}{\sigma}$ | When mode is well-defined |
+| $\text{Sk} = \dfrac{3(\text{Mean} - \text{Median})}{\sigma}$ | When mode is ill-defined (uses empirical relation) |
+| $\text{Sk} = \dfrac{\mu_3}{\sigma^3} = \gamma_1$ | Moment-based (most rigorous) |
+
+**Solved Example 4.A:** For a distribution: Mean = 25, Median = 24, SD = 5. Find Karl Pearson's coefficient of skewness.
+
+> Using the second formula (mode ill-defined):
+>
+> $\text{Sk} = \dfrac{3(25 - 24)}{5} = \dfrac{3}{5} = \mathbf{0.6}$ (positive skew — right-tailed)
+
+**Solved Example 4.B:** $\mu_2 = 16$, $\mu_3 = 0$, $\mu_4 = 512$. Find $\beta_1$ and $\beta_2$.
+
+> $\beta_1 = \dfrac{\mu_3^2}{\mu_2^3} = \dfrac{0}{4096} = \mathbf{0}$ (symmetric distribution)
+>
+> $\beta_2 = \dfrac{\mu_4}{\mu_2^2} = \dfrac{512}{256} = \mathbf{2}$ (platykurtic since $\beta_2 < 3$)
+>
+> $\gamma_2 = 2 - 3 = -1$ (flatter than normal)
+
+## 4.1 Examiner mindset
+
+| Angle | Pet question |
+|-------|--------------|
+| Definition of \(r\)-th raw and central moment | "Which of these expressions is …?" |
+| Relationship between raw and central moments | Convert \(\mu_r'\) into \(\mu_r\) and back |
+| Karl Pearson's coefficient of skewness | Mean − Mode formula or Mean − Median ×3 / σ |
+| Bowley's coefficient of skewness | \( (Q_3 + Q_1 − 2 Q_2)/(Q_3 − Q_1) \) |
+| Range of \(\beta_1, \beta_2\) and what they signify | Symmetric, leptokurtic, etc. |
+
+## 4.2 Moments — definitions
+
+### Raw (about origin) moments \( \mu_r' \)
+
+\[
+\mu_r' = \dfrac{\sum f_i X_i^r}{N}
+\]
+
+So \( \mu_1' = \bar X \) (the mean), \( \mu_0' = 1 \), etc.
+
+### Central (about mean) moments \( \mu_r \)
+
+\[
+\mu_r = \dfrac{\sum f_i (X_i - \bar X)^r}{N}
+\]
+
+| \(r\) | Value of \(\mu_r\) |
+|------|-------------------|
+| 0 | 1 |
+| 1 | 0 (always) |
+| 2 | \( \sigma^2 \) (the variance) |
+| 3 | measures skewness numerator |
+| 4 | measures kurtosis numerator |
+
+### Conversion (raw → central)
+
+\[
+\mu_2 = \mu_2' - (\mu_1')^2
+\]
+\[
+\mu_3 = \mu_3' - 3\mu_1'\mu_2' + 2(\mu_1')^3
+\]
+\[
+\mu_4 = \mu_4' - 4\mu_1'\mu_3' + 6(\mu_1')^2\mu_2' - 3(\mu_1')^4
+\]
+
+### Moments about an arbitrary point \(A\)
+
+If \(d = X - A\), and \(M_r = \sum f d^r / N\), then:
+
+\[
+\mu_2 = M_2 - M_1^2, \quad \mu_3 = M_3 - 3 M_1 M_2 + 2 M_1^3, \quad \text{etc.}
+\]
+
+## 4.3 Skewness — five formulas (with when to use)
+
+| Formula | When examiner gives you |
+|---------|-------------------------|
+| \( \text{Sk}_p = \dfrac{\text{Mean} - \text{Mode}}{\sigma} \) | Mean, Mode, SD (Karl Pearson direct) |
+| \( \text{Sk}_p = \dfrac{3(\text{Mean} - \text{Median})}{\sigma} \) | Mean, Median, SD (when Mode is hard to find) |
+| Bowley's \( \text{Sk}_B = \dfrac{Q_3 + Q_1 - 2 Q_2}{Q_3 - Q_1} \) | Quartiles only |
+| Kelly's \( \text{Sk}_K = \dfrac{P_{90} + P_{10} - 2 P_{50}}{P_{90} - P_{10}} \) | Percentiles |
+| Coefficient \( \beta_1 = \dfrac{\mu_3^2}{\mu_2^3} \) ; \( \gamma_1 = \dfrac{\mu_3}{\sigma^3} \) | Moments based |
+
+**Range tells:**
+
+| Sign | Shape |
+|------|-------|
+| Sk = 0 | Symmetric |
+| Sk > 0 | Positively skewed (right tail) |
+| Sk < 0 | Negatively skewed (left tail) |
+
+Bowley's Sk lies in **[−1, 1]**. Karl Pearson's lies typically in **[−3, 3]** (theoretically).
+
+## 4.4 Kurtosis — peakedness
+
+\[
+\beta_2 = \dfrac{\mu_4}{\mu_2^2}, \quad \gamma_2 = \beta_2 - 3
+\]
+
+| \(\beta_2\) | \(\gamma_2\) | Curve | Name |
+|------|------|------|------|
+| = 3 | = 0 | normal-shaped | **Mesokurtic** |
+| > 3 | > 0 | thinner peak, fatter tails | **Leptokurtic** |
+| < 3 | < 0 | flatter peak | **Platykurtic** |
+
+<div class="mnemonic"><strong>Memory hook.</strong> "<strong>Lepto</strong> = <strong>L</strong>eaping high (sharper peak)." "<strong>Platy</strong> = <strong>P</strong>lateau (flat)." "<strong>Meso</strong> = middle = normal."</div>
+
+## 4.5 Sheppard's correction (rare but asked)
+
+When data is grouped, raw moments overstate variance slightly. Correction:
+
+\[
+\mu_2(\text{corrected}) = \mu_2 - \dfrac{h^2}{12}
+\]
+\[
+\mu_4(\text{corrected}) = \mu_4 - \dfrac{1}{2} h^2 \mu_2 + \dfrac{7}{240} h^4
+\]
+
+\(h\) = class width. The 2nd-moment correction is most commonly asked; the 4th rarely.
+
+## 4.6 Worked PYQ-style examples
+
+> **Q 4.1.** \( \mu_1' = 4, \mu_2' = 25 \). Find variance.
+>
+> \( \mu_2 = 25 - 16 = \mathbf{9} \).
+
+> **Q 4.2.** \( \mu_2 = 4, \mu_3 = 8 \). Coefficient of skewness \( \beta_1 \)?
+>
+> \( \beta_1 = \mu_3^2 / \mu_2^3 = 64/64 = \mathbf{1} \).
+
+> **Q 4.3.** Mean = 50, Mode = 47, SD = 10. Karl Pearson Sk?
+>
+> \( (50 - 47)/10 = \mathbf{0.3} \) → mildly positively skewed.
+
+> **Q 4.4.** \( Q_1 = 14, Q_2 = 21, Q_3 = 26 \). Bowley's Sk?
+>
+> \( (26 + 14 - 42)/(26 - 14) = -2/12 = -\mathbf{1/6} \approx -0.167\) → mildly negative.
+
+> **Q 4.5.** \( \beta_2 = 5 \). Curve is:
+>
+> \( \beta_2 > 3 \) → **leptokurtic**.
+
+> **Q 4.6.** First moment about origin is 5. Raw moments \( \mu_2', \mu_3' \) are 35 and 295 respectively. Find \( \mu_3 \).
+>
+> \( \mu_3 = 295 - 3 \cdot 5 \cdot 35 + 2 \cdot 125 = 295 - 525 + 250 = \mathbf{20} \).
+
+> **Q 4.7.** Sum of central moments of order 1 in any distribution is:
+>
+> Always **0** (definition of mean).
+
+> **Q 4.8.** A leptokurtic curve has \(\gamma_2\):
+>
+> \(\gamma_2 = \beta_2 - 3 > 0\). **Positive.**
+
+> **Q 4.9.** For a symmetric distribution, every odd-order central moment is:
+>
+> **Zero** (\(\mu_1 = \mu_3 = \mu_5 = \cdots = 0\)).
+
+> **Q 4.10.** Class width 5. \( \mu_2 \) = 35.5. Sheppard-corrected variance?
+>
+> \( 35.5 - 25/12 = 35.5 - 2.083 = \mathbf{33.42} \).
+
+## 4.7 Trap-recognition card
+
+| Trap | Defence |
+|------|---------|
+| \( \beta_2 = 3 \) marked as "leptokurtic" | It's mesokurtic; lepto needs \( \beta_2 > 3 \). |
+| Confusing \( \mu_r \) with \( \mu_r' \) | Central = about mean. Raw = about origin. \( \mu_1 = 0 \) but \( \mu_1' = \bar X \). |
+| Pearson Sk denominator without σ | The denominator is **σ** (SD), not variance. |
+| Bowley sign flipped | Numerator is \( Q_3 + Q_1 - 2Q_2 \). If positive → positive skew. |
+
+## 4.8 Mini-mock
+
+| # | Q | Ans |
+|---|----|-----|
+| 1 | \( \mu_1 \) for any distribution = ? | 0 |
+| 2 | \( \mu_2 \) is also called? | Variance |
+| 3 | If \( \beta_2 = 2.5 \), distribution is? | Platykurtic |
+| 4 | Pearson Sk if Mean = Mode? | 0 |
+| 5 | Bowley Sk range? | [−1, 1] |
+| 6 | A symmetric distribution: Mean − Mode = ? | 0 |
+| 7 | Mean = 60, Mode = 54, σ = 12. Pearson Sk? | 0.5 |
+| 8 | Sheppard's correction for variance? | subtract h²/12 |
+| 9 | \( \mu_3 = 0, \mu_2 = 4 \). Sk? | 0 (symmetric) |
+| 10 | "Lepto" peak shape? | Sharp / tall |
+
+## 4.9 Active-recall prompts
+
+1. Write \( \mu_2, \mu_3, \mu_4 \) in terms of raw moments.
+2. State all three Karl Pearson Sk formulas.
+3. State Bowley's range.
+4. Define mesokurtic, leptokurtic, platykurtic with their \(\beta_2\) cutoffs.
+5. State Sheppard's correction for the second central moment.
+
+---
+
+\newpage
+
+# CHAPTER 5 — Correlation & Regression
+
+**Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈10 Qs / paper)
+**Difficulty:** Medium. Half the questions are formula plug-ins; the rest test the famous **two regression lines** properties.
+
+## 5.0 — Understanding Correlation & Regression from First Principles
+
+<div class="intuition">
+
+**What is correlation? What does it actually measure — and what doesn't it measure?**
+
+Correlation answers: "Do two variables tend to move together?" Height and weight move together (taller people tend to be heavier) — **positive correlation**. Temperature and hot-drink sales move oppositely — **negative correlation**. Shoe size and exam score have no connection — **zero correlation**.
+
+Karl Pearson's $r$ quantifies this as a number between −1 and +1, measuring the *strength and direction of the linear relationship*:
+- $r = +1$: perfect positive straight-line relationship (all points lie exactly on an upward line)
+- $r = -1$: perfect negative straight-line relationship
+- $r = 0$: no *linear* relationship
+
+**Critical warning that every JSO student must remember:** $r = 0$ does NOT mean "no relationship." It means no *linear* relationship. The dataset $Y = X^2$ has $r = 0$ between $X$ and $Y$ — but $Y$ is perfectly determined by $X$ (it's a perfect parabola). Correlation only measures *linear* association.
+
+**From correlation to regression:** Correlation tells you *whether* two variables are related and how strongly. Regression tells you *the equation* to predict one from the other. If height and weight have $r = 0.85$, the regression line gives: predicted weight = $a + b \times \text{height}$.
+
+**Why two regression lines?** When you minimise errors in predicting $Y$ from $X$, you get the "Y on X" regression line (minimises vertical squared distances from points to line). When you minimise errors in predicting $X$ from $Y$, you get the "X on Y" line (minimises horizontal squared distances). These are *geometrically different lines* — the direction of error minimisation is different. They coincide only when $|r| = 1$ (perfect linear relationship). Both always pass through $(\bar{X}, \bar{Y})$.
+
+</div>
+
+**Geometric picture of the two regression lines:**
+
+```
+Y
+│             . .  .
+│          .  Byx (Y on X line — steep when r is high)
+│       . Bxy (X on Y line — less steep)
+│    .×.   ← both pass through (X̄, Ȳ)
+│  .
+│.
+└──────────────────── X
+   (angle between lines ↓ as |r| → 1; lines coincide at |r|=1)
+```
+
+<div class="formula">
+
+**The two regression coefficients and their link to $r$:**
+
+$$b_{yx} = r \cdot \frac{\sigma_y}{\sigma_x} \quad \text{(slope of Y on X line)}$$
+
+$$b_{xy} = r \cdot \frac{\sigma_x}{\sigma_y} \quad \text{(slope of X on Y line)}$$
+
+$$\boxed{r = \pm\sqrt{b_{yx} \times b_{xy}}} \quad \text{(sign = common sign of the two regression coefficients)}$$
+
+$$\text{Karl Pearson's } r = \frac{\sum(X_i - \bar{X})(Y_i - \bar{Y})}{N\,\sigma_x\,\sigma_y} = \frac{N\sum X_iY_i - (\sum X_i)(\sum Y_i)}{\sqrt{[N\sum X_i^2 - (\sum X_i)^2][N\sum Y_i^2 - (\sum Y_i)^2]}}$$
+
+</div>
+
+**Solved Example 5.A — Find $r$ from regression coefficients:**
+
+If $b_{yx} = 0.8$ and $b_{xy} = 0.2$, find $r$.
+
+> $r = \sqrt{b_{yx} \times b_{xy}} = \sqrt{0.8 \times 0.2} = \sqrt{0.16} = \mathbf{0.4}$
+>
+> *(Both positive → $r$ is positive.)*
+
+**Solved Example 5.B — Find missing regression coefficient:**
+
+$r = 0.6$, $\sigma_x = 4$, $\sigma_y = 3$. Find $b_{yx}$ and $b_{xy}$.
+
+> $b_{yx} = r \times \dfrac{\sigma_y}{\sigma_x} = 0.6 \times \dfrac{3}{4} = \mathbf{0.45}$
+>
+> $b_{xy} = r \times \dfrac{\sigma_x}{\sigma_y} = 0.6 \times \dfrac{4}{3} = \mathbf{0.8}$
+>
+> Verification: $r = \sqrt{0.45 \times 0.8} = \sqrt{0.36} = 0.6$ ✓
+
+**Solved Example 5.C — Spearman's rank correlation:**
+
+Two judges rank 5 students: Judge A gives ranks 1,2,3,4,5; Judge B gives ranks 2,1,4,3,5. Find Spearman's $\rho$.
+
+> $d$ (difference of ranks): $1-2=-1$, $2-1=1$, $3-4=-1$, $4-3=1$, $5-5=0$.
+>
+> $\sum d^2 = 1+1+1+1+0 = 4$.
+>
+> $\rho = 1 - \dfrac{6 \sum d^2}{n(n^2-1)} = 1 - \dfrac{6 \times 4}{5 \times 24} = 1 - \dfrac{24}{120} = 1 - 0.2 = \mathbf{0.8}$
+>
+> Strong positive agreement between the two judges.
+
+## 5.1 Examiner mindset
+
+| Angle | Pet question |
+|-------|--------------|
+| Range and meaning of \(r\) | "Range of correlation coefficient is …" → [−1, 1] |
+| Karl Pearson formula | direct plug-in given covariance and SDs |
+| Spearman rank correlation | with and without ties |
+| Properties of regression coefficients | product = \(r^2\), same sign, geometric mean = ±r |
+| Two regression lines, point of intersection | \( (\bar X, \bar Y) \) — always |
+| Angle between regression lines | when \(r = 0\) → 90°; \(r = ±1\) → 0° |
+| Multiple / partial correlation | basic 2-variable question |
+
+## 5.2 Mind map
+
+```mermaid
+graph TD
+  A[Bivariate analysis] --> B[Correlation<br/>strength + direction of relationship]
+  A --> C[Regression<br/>predict one variable from the other]
+  B --> B1[Karl Pearson r — quantitative]
+  B --> B2[Spearman ρ — ranks]
+  B --> B3[Scatter diagram — visual]
+  C --> C1[Y on X: byx]
+  C --> C2[X on Y: bxy]
+  C --> C3[r² = byx · bxy]
+```
+
+## 5.3 Correlation — Karl Pearson
+
+\[
+r = \dfrac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y} = \dfrac{\sum (X_i - \bar X)(Y_i - \bar Y)}{\sqrt{\sum (X_i - \bar X)^2 \cdot \sum (Y_i - \bar Y)^2}}
+\]
+
+Computational form (preferred for plug-in questions):
+
+\[
+\boxed{r = \dfrac{n \sum XY - \sum X \sum Y}{\sqrt{[n \sum X^2 - (\sum X)^2][n \sum Y^2 - (\sum Y)^2]}}}
+\]
+
+**Range:** \( -1 \le r \le +1 \).
+
+| \(r\) | Meaning |
+|------|---------|
+| +1 | perfect direct (positive) correlation |
+| 0 < r < 1 | partial direct |
+| 0 | no linear correlation |
+| −1 < r < 0 | partial inverse |
+| −1 | perfect inverse |
+
+**Properties of \(r\):**
+
+| Property | Note |
+|----------|------|
+| Symmetric | \( r_{XY} = r_{YX} \) |
+| Independent of origin | \( r \) of \( (X+a, Y+b) \) = \( r \) of \( (X, Y) \) |
+| Independent of scale (when both positive) | \( r \) of \( (cX, dY) \) with \(c, d > 0\) = \( r \) |
+| Sign flips when one scale flips | \( r \) of \( (-X, Y) \) = \( -r_{XY} \) |
+| Pure number | unitless |
+
+## 5.4 Spearman's rank correlation
+
+When data is ordinal or you only have ranks:
+
+\[
+\rho = 1 - \dfrac{6 \sum d_i^2}{n(n^2 - 1)}
+\]
+
+\(d_i\) = difference in ranks of the \(i\)-th pair, \(n\) = number of pairs.
+
+**With tied ranks**, add correction \( \dfrac{m(m^2 - 1)}{12} \) for each set of \(m\) tied ranks to \(\sum d^2\):
+
+\[
+\rho = 1 - \dfrac{6 \big[\sum d^2 + \sum \frac{m(m^2-1)}{12}\big]}{n(n^2 - 1)}
+\]
+
+## 5.5 Regression — the two lines
+
+**Y on X** (used to predict \(Y\) given \(X\)):
+
+\[
+Y - \bar Y = b_{YX} (X - \bar X), \qquad b_{YX} = r \dfrac{\sigma_Y}{\sigma_X} = \dfrac{\text{Cov}(X,Y)}{\sigma_X^2}
+\]
+
+**X on Y** (used to predict \(X\) given \(Y\)):
+
+\[
+X - \bar X = b_{XY} (Y - \bar Y), \qquad b_{XY} = r \dfrac{\sigma_X}{\sigma_Y} = \dfrac{\text{Cov}(X,Y)}{\sigma_Y^2}
+\]
+
+## 5.6 The 7 sacred properties of regression coefficients
+
+| # | Property | Why useful |
+|---|----------|-----------|
+| 1 | \( b_{YX} \cdot b_{XY} = r^2 \) | Lets you find \(r\) from the two slopes (sign from common sign of slopes). |
+| 2 | \( r = \pm \sqrt{b_{YX} \cdot b_{XY}} \) | Geometric mean of slopes. |
+| 3 | \( b_{YX} \) and \( b_{XY} \) have the **same sign** as \(r\). | If signs differ, you've made an error. |
+| 4 | If \( |b_{YX}| > 1 \) then \( |b_{XY}| < 1 \) (and vice-versa). | because \( r^2 \le 1 \) |
+| 5 | The two regression lines **intersect at \( (\bar X, \bar Y) \)**. | Always; never doubt. |
+| 6 | When \( r = \pm 1 \) the two lines **coincide**. | perfect correlation |
+| 7 | When \( r = 0 \) the two lines are **perpendicular** (one horizontal, one vertical). | no linear relationship |
+
+<div class="mnemonic"><strong>Memorise this picture:</strong> imagine two pencils crossing at the means (\bar X, \bar Y). When correlation is strong, they nearly stack on each other; when weak, they spread apart; at zero, they form a + sign.</div>
+
+## 5.7 Recovering \(r, \bar X, \bar Y\) from the two equations
+
+Given \( aX + bY + c = 0 \) and \( dX + eY + f = 0 \):
+
+1. **Solve simultaneously** for the intersection — that gives \( (\bar X, \bar Y) \).
+2. Decide which line is **Y on X**: the one with smaller \(|b_{YX}|\) is the Y-on-X line **if** \(|r| \le 1\); test by computing slopes.
+3. From the two coefficients, compute \(r = \pm\sqrt{b_{YX} \cdot b_{XY}}\), with sign = common sign of the two slopes.
+
+## 5.8 Multiple and partial correlation (3 variables)
+
+| Symbol | Meaning |
+|--------|---------|
+| \( r_{12.3} \) | partial correlation between \(X_1\) and \(X_2\) keeping \(X_3\) constant |
+| \( R_{1.23} \) | multiple correlation of \(X_1\) on \(X_2, X_3\) |
+
+\[
+r_{12.3} = \dfrac{r_{12} - r_{13} r_{23}}{\sqrt{(1 - r_{13}^2)(1 - r_{23}^2)}}
+\]
+
+\[
+R_{1.23}^2 = \dfrac{r_{12}^2 + r_{13}^2 - 2 r_{12} r_{13} r_{23}}{1 - r_{23}^2}
+\]
+
+| Range | Note |
+|-------|------|
+| Partial \( r_{12.3} \) | \( -1 \le r_{12.3} \le 1 \) |
+| Multiple \( R_{1.23} \) | \( 0 \le R_{1.23} \le 1 \) (never negative) |
+
+## 5.9 Coefficient of determination
+
+\[
+r^2 = \text{fraction of variance of } Y \text{ explained by } X.
+\]
+
+If \(r = 0.8\), \(r^2 = 0.64\) → 64% of Y's variation explained by X.
+
+## 5.10 Standard error of estimate
+
+\[
+S_{Y \cdot X} = \sigma_Y \sqrt{1 - r^2}, \qquad S_{X \cdot Y} = \sigma_X \sqrt{1 - r^2}
+\]
+
+When \(r = \pm 1\), SE = 0 (perfect prediction). When \(r = 0\), SE = \(\sigma\) (no improvement over mean).
+
+## 5.11 Worked PYQ-style examples
+
+> **Q 5.1.** \(b_{YX} = 0.8, b_{XY} = 0.5\). Find \(r\).
+>
+> \( r = +\sqrt{0.4} \approx \mathbf{0.632} \) (positive because both slopes positive).
+
+> **Q 5.2.** Two regression lines: \(2X + 3Y - 8 = 0\) and \(X + 4Y - 7 = 0\). Find \(\bar X, \bar Y\).
+>
+> Solve: from line 2, \(X = 7 - 4Y\). Sub: \(2(7 - 4Y) + 3Y = 8\) → \(14 - 8Y + 3Y = 8\) → \(-5Y = -6\) → \(Y = 1.2\). Then \(X = 7 - 4.8 = 2.2\).
+> \(\bar X = \mathbf{2.2}, \bar Y = \mathbf{1.2}\).
+
+> **Q 5.3.** \(r = 0.6, \sigma_X = 5, \sigma_Y = 10\). Find \(b_{YX}\) and \(b_{XY}\).
+>
+> \(b_{YX} = 0.6 \cdot 10/5 = \mathbf{1.2}\). \(b_{XY} = 0.6 \cdot 5/10 = \mathbf{0.3}\). Check: 1.2 × 0.3 = 0.36 = 0.6² ✓.
+
+> **Q 5.4.** Spearman: 5 students, ranks in two subjects: \(d^2\)-values 1, 0, 4, 1, 4. Sum = 10. Find ρ.
+>
+> \( \rho = 1 - 6(10)/(5 \cdot 24) = 1 - 60/120 = 1 - 0.5 = \mathbf{0.5} \).
+
+> **Q 5.5.** If \(r = 0\), the two regression lines are:
+>
+> **Perpendicular** (one horizontal, one vertical).
+
+> **Q 5.6.** \(r_{XY} = 0.8\). Then correlation of \(X' = X+5\) and \(Y' = 2Y - 3\) is:
+>
+> Origin doesn't matter; positive scale factor doesn't matter. \(r' = \mathbf{0.8}\).
+
+> **Q 5.7.** \(r = 0.5\). Coefficient of determination?
+>
+> \(0.25 = \mathbf{25\%}\) of variation explained.
+
+> **Q 5.8.** \(b_{YX} = 1.5, b_{XY} = 0.9\). Is this possible?
+>
+> \(r^2 = 1.35 > 1\) → impossible. Cannot both exceed product 1.
+
+> **Q 5.9.** A regression line passes through (5, 7) and the means are \(\bar X = 5, \bar Y = ?\).
+>
+> Both regression lines pass through \((\bar X, \bar Y)\). So **\(\bar Y = 7\)**.
+
+> **Q 5.10.** If \(\sigma_X = \sigma_Y\), then \(b_{YX} = \) ?
+>
+> \( r \cdot \sigma_Y/\sigma_X = r \). So \(b_{YX} = b_{XY} = r\).
+
+> **Q 5.11.** Karl Pearson \(r\) is independent of:
+>
+> **Origin and scale (with positive factors).**
+
+> **Q 5.12.** A scatter plot showing all points on a straight line with positive slope indicates:
+>
+> \(r = +1\), perfect direct correlation.
+
+> **Q 5.13.** \(n = 10, \sum X = 50, \sum Y = 100, \sum X^2 = 300, \sum Y^2 = 1100, \sum XY = 525\). Find \(r\).
+>
+> Numerator: \(10 \cdot 525 - 50 \cdot 100 = 5250 - 5000 = 250\).
+> Denom: \(\sqrt{(10 \cdot 300 - 2500)(10 \cdot 1100 - 10000)} = \sqrt{500 \cdot 1000} = \sqrt{500000} \approx 707.1\).
+> \(r \approx 250/707.1 \approx \mathbf{0.354}\).
+
+> **Q 5.14.** Two regression equations: \(3Y = 2X + 5\) and \(15X = 10Y + 8\). Find \(b_{YX}, b_{XY}, r\).
+>
+> First: \(Y = (2/3)X + 5/3\), so \(b_{YX} = 2/3\).
+> Second: \(X = (10/15)Y + 8/15 = (2/3)Y + 8/15\), so \(b_{XY} = 2/3\).
+> \(r = +\sqrt{(2/3)(2/3)} = 2/3 \approx \mathbf{0.667}\).
+
+> **Q 5.15.** Two regression coefficients are 0.5 and −0.4. Then \(r\) is:
+>
+> Signs differ → impossible. Such a pair cannot both be valid regression coefficients.
+
+> **Q 5.16.** Standard error of estimate of Y on X = ?
+>
+> \( S_{Y \cdot X} = \sigma_Y \sqrt{1 - r^2} \).
+
+> **Q 5.17.** When \(r = 1\), \(b_{YX} \cdot b_{XY} = ?\)
+>
+> \(r^2 = 1\). Both slopes equal reciprocals.
+
+> **Q 5.18.** Multiple correlation \(R_{1.23}\) is always:
+>
+> Non-negative, in [0, 1].
+
+## 5.12 Trap-recognition card
+
+| Trap | Why wrong | Defence |
+|------|-----------|---------|
+| Both slopes > 1 | impossible (\(r^2 > 1\)) | Test product. |
+| Slopes have different signs | impossible | They must agree with \(r\)'s sign. |
+| "Regression lines never meet" | They always meet at \( (\bar X, \bar Y)\). | Always. |
+| "Spearman uses raw values" | No, ranks. | Re-read formula. |
+| Scale flips and student keeps same \(r\) sign | Negative scale → sign flips. | Track sign of scale factor. |
+| Forgot \(r\) is unitless | They keep units. | It's a pure number. |
+
+## 5.13 Mini-mock
+
+| # | Q | Ans |
+|---|----|-----|
+| 1 | Range of \(r\)? | [−1, 1] |
+| 2 | \(b_{YX} = 0.4, b_{XY} = 0.9\). r? | √0.36 = 0.6 |
+| 3 | Two regression lines intersect at? | (X̄, Ȳ) |
+| 4 | r = 0 → angle between lines? | 90° |
+| 5 | r² is called? | Coefficient of determination |
+| 6 | Spearman with d² sum 30, n=10? | 1 − 6·30/(10·99) = 1 − 180/990 ≈ 0.818 |
+| 7 | If σx = 4, σy = 8, r = 0.5 → bYX? | 1 |
+| 8 | r between (X+5) and (Y−3) when r(X,Y)=0.7? | 0.7 (origin invariant) |
+| 9 | Multiple correlation R is in? | [0, 1] |
+| 10 | Standard error of estimate when r=1? | 0 |
+
+## 5.14 Active-recall prompts
+
+1. Write the computational formula for \(r\).
+2. State the 7 properties of regression coefficients.
+3. Where do the two regression lines meet?
+4. Write Spearman's formula and the tie correction.
+5. Write the formula for \(r_{12.3}\) and \(R_{1.23}^2\).
+
+---
+
+\newpage
+
+# CHAPTER 6 — Probability Theory
+
+**Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈8 Qs / paper)
+**Difficulty:** Medium. Almost every wrong answer here is from a single error: confusing **mutually exclusive** with **independent**. Pin that down and you score full.
+
+## 6.0 — Understanding Probability from First Principles
+
+<div class="intuition">
+
+**What is probability — and why did mathematicians need to formalise it?**
+
+Before the 17th century, gamblers relied on intuition and superstition to assess chances. Pascal and Fermat formalised probability in 1654 while solving a gambling problem. Today probability is the mathematical language of uncertainty — used in insurance, medicine, finance, quality control, and statistics (Chapters 8–9 depend entirely on it).
+
+**Three definitions — all useful, each for different situations:**
+
+1. **Classical (Laplace):** $P(A) = \dfrac{\text{number of favourable outcomes}}{\text{total number of equally likely outcomes}}$. Works for coins, dice, cards where outcomes are symmetric.
+
+2. **Frequentist:** $P(A) = \lim_{n \to \infty} \dfrac{f_A}{n}$ where $f_A$ is the number of times $A$ occurs in $n$ trials. Used when you can repeat experiments — "if we toss this biased coin 10,000 times, heads will appear about 60% of the time."
+
+3. **Axiomatic (Kolmogorov):** $P$ is a function satisfying: (i) $P(A) \geq 0$; (ii) $P(\Omega) = 1$; (iii) for mutually exclusive events, $P(A \cup B) = P(A) + P(B)$. This is the mathematically rigorous definition that makes all proofs watertight.
+
+**The most critical distinction in this chapter:** "Mutually exclusive" ≠ "Independent".
+
+- **Mutually exclusive:** $A$ and $B$ cannot both happen. $P(A \cap B) = 0$. Example: a single die roll showing 3 and showing 5 simultaneously.
+- **Independent:** Knowing $A$ happened gives no information about $B$. $P(A \cap B) = P(A) \times P(B)$. Example: coin flip 1 (Heads) and coin flip 2 (Heads) — these are independent.
+
+*Can two events be both mutually exclusive AND independent?* Only if at least one has probability 0. Otherwise, mutually exclusive events are actually *negatively dependent* — knowing one happened tells you the other definitely didn't.
+
+</div>
+
+**Concept map — probability rules:**
+
+```mermaid
+graph TD
+  A[Probability Rules] --> B[Addition Rule]
+  A --> C[Multiplication Rule]
+  A --> D[Complement Rule]
+  B --> B1["P(A∪B) = P(A)+P(B)−P(A∩B)<br/>(general)"]
+  B --> B2["P(A∪B) = P(A)+P(B)<br/>(mutually exclusive: P(A∩B)=0)"]
+  C --> C1["P(A∩B) = P(A)·P(B|A)<br/>(general: conditional)"]
+  C --> C2["P(A∩B) = P(A)·P(B)<br/>(independent events)"]
+  D --> D1["P(A') = 1 − P(A)"]
+```
+
+<div class="formula">
+
+**Bayes' Theorem (appears every paper):**
+
+$$\boxed{P(H_i | E) = \frac{P(H_i) \cdot P(E | H_i)}{\sum_{j} P(H_j) \cdot P(E | H_j)}}$$
+
+$H_i$ are mutually exclusive, exhaustive hypotheses (causes). $E$ is the observed evidence (effect). Bayes flips the conditioning: from $P(E|H_i)$ (known) to $P(H_i|E)$ (what you want to know).
+
+</div>
+
+**Solved Example 6.A — Bayes' Theorem (the classic medical test type):**
+
+A factory has 3 machines producing bolts: Machine A (30% of output), Machine B (50%), Machine C (20%). Defect rates: A gives 1% defective, B gives 2%, C gives 3%. A bolt is found defective. What is the probability it came from Machine B?
+
+> Prior probabilities: $P(A) = 0.3$, $P(B) = 0.5$, $P(C) = 0.2$.
+>
+> Likelihoods: $P(D|A) = 0.01$, $P(D|B) = 0.02$, $P(D|C) = 0.03$.
+>
+> Total probability of defect:
+> $P(D) = 0.3(0.01) + 0.5(0.02) + 0.2(0.03) = 0.003 + 0.010 + 0.006 = 0.019$
+>
+> $P(B|D) = \dfrac{P(B) \cdot P(D|B)}{P(D)} = \dfrac{0.5 \times 0.02}{0.019} = \dfrac{0.010}{0.019} \approx \mathbf{0.526}$
+
+**Solved Example 6.B — Independence vs mutual exclusivity:**
+
+$P(A) = 0.4$, $P(B) = 0.3$, $P(A \cap B) = 0.12$. Are $A$ and $B$ independent?
+
+> If independent: $P(A) \times P(B) = 0.4 \times 0.3 = 0.12 = P(A \cap B)$. **Yes, independent.**
+>
+> Are they mutually exclusive? No — $P(A \cap B) = 0.12 \neq 0$.
+
+## 6.1 Examiner mindset
+
+| Angle | Pet question |
+|-------|--------------|
+| Definitions (classical / empirical / axiomatic) | One-line MCQ |
+| Addition theorem (with / without ME) | "P(A ∪ B) = ?" |
+| Multiplication theorem (with / without independence) | "P(A ∩ B) = ?" |
+| Conditional probability | "P(A given B) = ?" |
+| Independence | Test \(P(A∩B) = P(A) P(B)\) |
+| Bayes' theorem | "If event already happened, find probability of cause" — exactly 1 Q every paper |
+
+## 6.2 Definitions
+
+| Type | Definition |
+|------|-----------|
+| **Classical** | \( P(A) = \dfrac{\text{favourable outcomes}}{\text{total equally likely outcomes}} \) |
+| **Empirical (frequentist)** | \( P(A) = \lim_{n \to \infty} \dfrac{\text{number of times A occurs}}{n} \) |
+| **Axiomatic (Kolmogorov)** | \( P \ge 0, \; P(\text{sample space}) = 1, \; P(\bigcup A_i) = \sum P(A_i) \) when \(A_i\) disjoint |
+
+## 6.3 Set-theory shortcuts
+
+For events \(A, B\) in a sample space:
+
+| Quantity | Formula |
+|----------|---------|
+| \( P(A^c) \) (complement) | \( 1 - P(A) \) |
+| \( P(A \cup B) \) | \( P(A) + P(B) - P(A \cap B) \) |
+| \( P(A \cup B \cup C) \) | \( \sum P - \sum P(\text{pair}) + P(\text{triple}) \) (inclusion-exclusion) |
+| \( P(A \cap B^c) \) | \( P(A) - P(A \cap B) \) |
+| \( P(\text{exactly one}) \) | \( P(A) + P(B) - 2 P(A \cap B) \) |
+
+## 6.4 Mutually exclusive vs Independent — the only confusion that matters
+
+| Property | Mutually exclusive | Independent |
+|----------|-------------------|-------------|
+| Definition | Cannot occur together: \( A \cap B = \emptyset \) | One does not affect the other: \( P(A \cap B) = P(A) P(B) \) |
+| \( P(A \cap B) \) | 0 | \(P(A) P(B)\) |
+| \( P(A \cup B) \) | \( P(A) + P(B) \) | \( P(A) + P(B) - P(A) P(B) \) |
+| Can both hold simultaneously? | Only if \( P(A) = 0 \) or \( P(B) = 0 \). Otherwise **never both**. |
+
+<div class="pitfall"><strong>Trap.</strong> "If A and B are mutually exclusive, are they independent?" — typically <strong>no</strong> (unless one has zero probability). Examiners ask this exactly to catch lazy candidates.</div>
+
+## 6.5 Conditional probability
+
+\[
+P(A | B) = \dfrac{P(A \cap B)}{P(B)}, \qquad P(B) > 0
+\]
+
+**Multiplication theorem:**
+
+\[
+P(A \cap B) = P(B) \cdot P(A | B) = P(A) \cdot P(B | A)
+\]
+
+For three events: \( P(A \cap B \cap C) = P(A) P(B|A) P(C | A \cap B) \).
+
+## 6.6 Bayes' theorem (high-yield — 1 Q every paper)
+
+If \( B_1, B_2, \ldots, B_k \) partition the sample space (mutually exclusive + exhaustive) and \(A\) is any event:
+
+\[
+\boxed{P(B_i | A) = \dfrac{P(B_i) \cdot P(A | B_i)}{\sum_{j=1}^{k} P(B_j) \cdot P(A | B_j)}}
+\]
+
+**Reading the formula in plain English:**
+- Numerator = (chance \(B_i\) was the cause) × (chance it produced effect \(A\)).
+- Denominator = total chance of \(A\) summed over all causes (this is the **theorem of total probability**).
+
+## 6.7 Quick reference: counting
+
+| Setup | Count |
+|-------|-------|
+| 1 die thrown | 6 outcomes |
+| 2 dice thrown | 36 outcomes |
+| 1 coin tossed n times | \(2^n\) outcomes |
+| Pack of cards | 52 cards (4 suits × 13 ranks; 26 red, 26 black; 12 face cards Q J K only — note: face cards exclude Ace) |
+| Selecting r from n | \( ^nC_r \) |
+| Arranging r from n | \( ^nP_r \) |
+
+## 6.8 Worked PYQ-style examples
+
+> **Q 6.1.** Two dice rolled. P(sum = 7)?
+>
+> Pairs giving 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) → 6 pairs out of 36. **P = 1/6**.
+
+> **Q 6.2.** A card is drawn. P(king or red)?
+>
+> P(king) = 4/52, P(red) = 26/52, P(king ∩ red) = 2/52.
+> P(king ∪ red) = 4/52 + 26/52 − 2/52 = **28/52 = 7/13**.
+
+> **Q 6.3.** P(A) = 0.3, P(B) = 0.4, P(A ∩ B) = 0.12. Are A, B independent?
+>
+> Test: P(A) P(B) = 0.12 = P(A ∩ B) ✓. **Yes, independent.**
+
+> **Q 6.4.** A bag has 5 white, 3 black balls. Two drawn without replacement. P(both white)?
+>
+> \( \dfrac{5}{8} \cdot \dfrac{4}{7} = \dfrac{20}{56} = \mathbf{5/14} \).
+
+> **Q 6.5.** P(A) = 0.4, P(B) = 0.3, P(A ∪ B) = 0.6. P(A ∩ B)?
+>
+> \(0.4 + 0.3 - 0.6 = \mathbf{0.1}\).
+
+> **Q 6.6.** Toss 3 coins. P(at least 2 heads)?
+>
+> Total = 8. ≥2H outcomes: HHH, HHT, HTH, THH = 4. **P = 1/2**.
+
+> **Q 6.7.** Two events with \(P(A) = 0.5, P(B) = 0.6\), \(A, B\) mutually exclusive. P(A ∩ B)?
+>
+> ME → 0.
+
+> **Q 6.8.** A box has 60% A-grade and 40% B-grade items. 5% of A and 8% of B are defective. An item picked at random is defective. Probability it was A-grade? (**Bayes'**)
+>
+> Numerator: 0.6 × 0.05 = 0.03.
+> Denominator: 0.6 × 0.05 + 0.4 × 0.08 = 0.03 + 0.032 = 0.062.
+> \(P(A|D) = 0.03/0.062 \approx \mathbf{0.484}\).
+
+> **Q 6.9.** P(A) = 0.6, P(B|A) = 0.4. P(A ∩ B)?
+>
+> 0.6 × 0.4 = **0.24**.
+
+> **Q 6.10.** Three independent events with probabilities 0.5, 0.4, 0.3. P(all happen)?
+>
+> 0.5 × 0.4 × 0.3 = **0.06**.
+
+> **Q 6.11.** Same as above, P(none happen)?
+>
+> (1−0.5)(1−0.4)(1−0.3) = 0.5 · 0.6 · 0.7 = **0.21**.
+
+> **Q 6.12.** Two cards drawn without replacement. P(both kings)?
+>
+> \(\dfrac{4}{52} \cdot \dfrac{3}{51} = \dfrac{12}{2652} = \mathbf{1/221}\).
+
+> **Q 6.13.** A fair die thrown. P(prime number)?
+>
+> Primes among {1,2,3,4,5,6}: 2, 3, 5 → P = **3/6 = 1/2**.
+
+> **Q 6.14.** Two events are exhaustive iff:
+>
+> \(A \cup B = S\) (sample space). i.e., P(A ∪ B) = 1.
+
+> **Q 6.15.** A box has 4 defective and 6 good bulbs. 3 drawn together. P(exactly 1 defective)?
+>
+> \( \dfrac{ {}^4C_1 \cdot {}^6C_2 }{ {}^{10}C_3 } = \dfrac{4 \cdot 15}{120} = \dfrac{60}{120} = \mathbf{1/2} \).
+
+## 6.9 Trap-recognition card
+
+| Trap | Defence |
+|------|---------|
+| "ME implies independent" | Almost never. They are usually opposite ideas. |
+| "P(A ∪ B) = P(A) + P(B) always" | Only if ME. Else subtract overlap. |
+| Replacement vs without replacement | Read carefully. Sample-without-replacement changes denominator. |
+| "Face cards include aces" | They don't. Face cards = J, Q, K only. |
+| Bayes' denominator missed | Don't divide by P(A|B_i) only — divide by total P(A). |
+| Confusing P(A|B) with P(B|A) | Direction matters; Bayes flips them. |
+
+## 6.10 Mini-mock
+
+| # | Q | Ans |
+|---|----|-----|
+| 1 | Sum of 2 dice = 8. P? | 5/36 |
+| 2 | Card = ace. P? | 4/52 = 1/13 |
+| 3 | P(A)=0.5, P(B)=0.5, indep. P(A∩B)? | 0.25 |
+| 4 | P(A)=0.5, P(B)=0.5, ME. P(A∪B)? | 1.0 |
+| 5 | One coin tossed twice. P(both H)? | 1/4 |
+| 6 | Box: 7 R, 3 G. 1 drawn. P(R)? | 7/10 |
+| 7 | Two indep events: P(A)=0.4, P(B)=0.6. P(A or B)? | 0.4+0.6−0.24 = 0.76 |
+| 8 | Bag has 3R, 4B. 2 drawn no rep. P(2R)? | 3/7·2/6 = 1/7 |
+| 9 | P(A∩B) = 0, P(A) > 0, P(B) > 0. Indep? | No (mutually exclusive) |
+| 10 | Three coins. P(at least 1 H)? | 1 − 1/8 = 7/8 |
+
+## 6.11 Active-recall prompts
+
+1. State the addition theorem for two events (with and without ME).
+2. State the multiplication theorem (with and without independence).
+3. Write Bayes' theorem with all symbols.
+4. Why are ME and independent typically incompatible?
+5. Write \(P(\text{exactly one of A or B})\).
+
+---
+
+\newpage
+
+# CHAPTER 7 — Random Variables & Probability Distributions
+
+**Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈10 Qs / paper)
+**Difficulty:** Medium-Hard. The 4 named distributions (Binomial, Poisson, Normal, Hypergeometric) cover every distribution Q. Memorise mean and variance for each.
+
+## 7.0 — Understanding Random Variables & Distributions
+
+<div class="intuition">
+
+**What is a "random variable" and why do we need distributions?**
+
+In probability, the sample space $\Omega$ can contain abstract outcomes — {Head, Tail}, {Red, Blue, Green}, {Defective, Good}. To do mathematics, we need numbers. A **random variable** $X$ is a function that maps each outcome to a real number. For a die roll: $X = $ "number shown" maps the outcome 3 to the number 3. Simple.
+
+But why stop at assigning numbers? Because once we have numbers, we can ask: "How probable is each value?" This is the **probability distribution** — the probability law governing which values $X$ takes and with what probability. For a fair die: $P(X=k) = 1/6$ for $k=1,\ldots,6$ — a uniform discrete distribution.
+
+**Why do specific named distributions arise?** Because many different real-world phenomena follow the same mathematical pattern:
+
+- **Binomial:** Whenever you repeat the same experiment (trial) $n$ times independently, each with probability $p$ of "success," the number of successes follows Binomial$(n,p)$. Tossing a coin 10 times and counting heads. Inspecting 100 items and counting defectives. Testing 20 patients and counting who respond to treatment.
+
+- **Poisson:** Whenever you count rare events in a fixed time or space interval — phone calls per minute to a helpdesk (mean $\lambda$ calls/minute), typographical errors per page, cars arriving at a toll booth per hour. The Poisson distribution is the limiting case of Binomial when $n \to \infty$, $p \to 0$, $np = \lambda$ stays fixed.
+
+- **Normal:** The bell curve. Its central role comes from the Central Limit Theorem: *no matter what distribution the original data follows, the distribution of the sample mean becomes approximately Normal for large enough sample sizes.* This is why the Normal distribution underpins all of Chapters 8–9.
+
+</div>
+
+**The four named distributions — at a glance:**
+
+| Distribution | Parameters | PMF / PDF | Mean | Variance | Key identifying feature |
+|-------------|-----------|-----------|------|----------|------------------------|
+| Binomial | $n, p$ | $\binom{n}{r}p^r(1-p)^{n-r}$ | $np$ | $np(1-p) = npq$ | Fixed $n$ trials, constant $p$, count successes |
+| Poisson | $\lambda$ | $\frac{e^{-\lambda}\lambda^r}{r!}$ | $\lambda$ | $\lambda$ | Rare events; mean = variance |
+| Normal | $\mu, \sigma^2$ | $\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | $\mu$ | $\sigma^2$ | Symmetric bell curve; 68-95-99.7 rule |
+| Hypergeometric | $N, K, n$ | $\frac{\binom{K}{r}\binom{N-K}{n-r}}{\binom{N}{n}}$ | $\frac{nK}{N}$ | $\frac{nK(N-K)(N-n)}{N^2(N-1)}$ | Sampling without replacement from finite population |
+
+**The Normal distribution — 68-95-99.7 rule (must know):**
+
+```
+            68.27%
+        ┌───────────┐
+   95.45%            
+ ┌─────────────────────┐
+99.73%                  
+┌───────────────────────────┐
+         │         │
+      μ−σ  μ  μ+σ
+```
+
+$P(\mu - \sigma < X < \mu + \sigma) = 0.6827$  
+$P(\mu - 2\sigma < X < \mu + 2\sigma) = 0.9545$  
+$P(\mu - 3\sigma < X < \mu + 3\sigma) = 0.9973$
+
+**Solved Example 7.A — Binomial probability:**
+
+A biased coin has $P(\text{Heads}) = 0.4$. It is tossed 5 times. Find $P(X = 3)$.
+
+> $P(X=3) = \binom{5}{3}(0.4)^3(0.6)^2 = 10 \times 0.064 \times 0.36 = 10 \times 0.02304 = \mathbf{0.2304}$
+
+**Solved Example 7.B — Poisson approximation to Binomial:**
+
+In a production run of 1000 items, each has $P(\text{defective}) = 0.003$. Find the probability that exactly 2 are defective.
+
+> $n = 1000$, $p = 0.003$, $np = \lambda = 3$. Use Poisson.
+>
+> $P(X=2) = \dfrac{e^{-3} \cdot 3^2}{2!} = \dfrac{0.0498 \times 9}{2} = \dfrac{0.4482}{2} = \mathbf{0.2241}$
+
+**Solved Example 7.C — Normal distribution (standardisation):**
+
+$X \sim N(50, 100)$ (mean = 50, variance = 100, so $\sigma = 10$). Find $P(X > 65)$.
+
+> Standardise: $Z = \dfrac{65 - 50}{10} = 1.5$.
+>
+> $P(X > 65) = P(Z > 1.5) = 1 - \Phi(1.5) = 1 - 0.9332 = \mathbf{0.0668}$
+>
+> *(Read $\Phi(1.5) = 0.9332$ from the standard normal table.)*
+
+## 7.1 Examiner mindset
+
+| Angle | Pet question |
+|-------|--------------|
+| Discrete vs continuous RV — pmf vs pdf | "Which is a valid pmf?" |
+| Expectation, variance | Plug-in |
+| Binomial: P(r successes) | direct |
+| Poisson: P(r events), Mean = Var = \(\lambda\) | direct, often as approximation to Binomial |
+| Normal: standardise via \(z\) | use the \(z\)-table fact base (68/95/99.7) |
+| Hypergeometric | sampling without replacement |
+| Properties of expectation, variance | linearity, independence |
+
+## 7.2 Random variable, pmf, pdf
+
+| Type | Defining function | Conditions |
+|------|-------------------|-----------|
+| Discrete | pmf \(p(x) = P(X = x)\) | \(p(x) \ge 0, \; \sum p(x) = 1\) |
+| Continuous | pdf \(f(x)\) | \(f(x) \ge 0, \; \int_{-\infty}^{\infty} f(x)\,dx = 1\) |
+| Either | CDF \(F(x) = P(X \le x)\) | non-decreasing, right-continuous, \(F(-\infty) = 0, F(\infty) = 1\) |
+
+## 7.3 Expectation and variance — formulas
+
+| Quantity | Discrete | Continuous |
+|----------|----------|-----------|
+| \(E[X]\) | \( \sum x \, p(x) \) | \( \int x f(x) dx \) |
+| \(E[g(X)]\) | \( \sum g(x) p(x) \) | \( \int g(x) f(x) dx \) |
+| \(\text{Var}(X)\) | \(E[X^2] - (E[X])^2\) | same |
+
+**Linearity:** \( E[aX + b] = a E[X] + b \). Always true (independence not required).
+
+**Variance scaling:** \( \text{Var}(aX + b) = a^2 \text{Var}(X) \).
+
+For independent \(X, Y\): \( E[XY] = E[X] E[Y] \) and \( \text{Var}(X + Y) = \text{Var}(X) + \text{Var}(Y) \).
+
+## 7.4 The four named distributions — master card
+
+### Binomial \( B(n, p) \)
+
+| Quantity | Formula |
+|----------|---------|
+| pmf | \( P(X = r) = {}^n C_r \, p^r (1-p)^{n-r}, \; r = 0, 1, \ldots, n \) |
+| Mean | \( np \) |
+| Variance | \( npq \), \(q = 1 - p\) |
+| SD | \( \sqrt{npq} \) |
+| Skewness | \( (1 - 2p)/\sqrt{npq} \) |
+| Kurtosis (\(\beta_2\)) | \( 3 + (1 - 6pq)/(npq) \) |
+
+**When to use:** \(n\) independent Bernoulli trials, fixed \(p\), count of successes.
+
+### Poisson \( P(\lambda) \)
+
+| Quantity | Formula |
+|----------|---------|
+| pmf | \( P(X = r) = \dfrac{e^{-\lambda} \lambda^r}{r!}, \; r = 0, 1, 2, \ldots \) |
+| Mean | \( \lambda \) |
+| Variance | \( \lambda \) |
+| SD | \( \sqrt{\lambda} \) |
+
+**When to use:** Rare events in a fixed interval (calls per minute, defects per metre). Also approximates \(B(n,p)\) when \(n \to \infty, p \to 0, np = \lambda\).
+
+### Normal \( N(\mu, \sigma^2) \)
+
+| Quantity | Formula |
+|----------|---------|
+| pdf | \( f(x) = \dfrac{1}{\sigma \sqrt{2\pi}} e^{-(x - \mu)^2 / (2 \sigma^2)} \) |
+| Mean / Median / Mode | all = \(\mu\) |
+| Variance | \(\sigma^2\) |
+| Skewness | 0 |
+| Kurtosis (\(\beta_2\)) | 3 (mesokurtic) |
+| Standardisation | \( Z = (X - \mu)/\sigma \sim N(0,1) \) |
+
+**The 68–95–99.7 rule:**
+
+| Range | Probability |
+|-------|-------------|
+| \( \mu \pm \sigma \) | 0.6826 (≈ 68 %) |
+| \( \mu \pm 2\sigma \) | 0.9544 (≈ 95 %) |
+| \( \mu \pm 3\sigma \) | 0.9974 (≈ 99.7 %) |
+
+Common z-values to memorise: \(z_{0.05} = 1.645\) (one-tail), \(z_{0.025} = 1.96\) (two-tail 95%), \(z_{0.005} = 2.58\) (two-tail 99%).
+
+### Hypergeometric \(H(N, K, n)\)
+
+Sampling \(n\) items **without replacement** from a population of \(N\) containing \(K\) successes.
+
+| Quantity | Formula |
+|----------|---------|
+| pmf | \( P(X = k) = \dfrac{ {}^K C_k \cdot {}^{N-K} C_{n-k} }{ {}^N C_n } \) |
+| Mean | \( n K/N \) |
+| Variance | \( n \dfrac{K}{N} \cdot \dfrac{N-K}{N} \cdot \dfrac{N-n}{N-1} \) (the last factor is the **finite-population correction**) |
+
+### Uniform (continuous) \(U(a, b)\)
+
+| Quantity | Formula |
+|----------|---------|
+| pdf | \(1/(b - a)\) on \([a, b]\), else 0 |
+| Mean | \((a + b)/2\) |
+| Variance | \((b - a)^2 / 12\) |
+
+## 7.5 Recognising which distribution to use
+
+| Wording cue | Distribution |
+|-------------|-------------|
+| "n trials, fixed probability \(p\) per trial" | Binomial |
+| "rate of \(\lambda\) per unit time/length" | Poisson |
+| "approximately normally distributed", "symmetric, bell-shaped" | Normal |
+| "without replacement, finite population" | Hypergeometric |
+| "equally likely over an interval" | Uniform |
+
+## 7.6 Worked PYQ-style examples
+
+> **Q 7.1.** Toss a fair coin 10 times. P(exactly 4 heads)?
+>
+> \( {}^{10}C_4 (0.5)^4 (0.5)^6 = 210 / 1024 \approx \mathbf{0.205}\).
+
+> **Q 7.2.** \(X \sim B(8, 1/4)\). Mean and variance?
+>
+> Mean = 8 · 1/4 = **2**. Var = 8 · 1/4 · 3/4 = **1.5**.
+
+> **Q 7.3.** Number of defects per page is Poisson with mean 2. P(no defects on a page)?
+>
+> \( e^{-2} \approx \mathbf{0.135} \).
+
+> **Q 7.4.** Calls arrive at rate 4/hour (Poisson). P(exactly 5 calls in 1 hour)?
+>
+> \( e^{-4} \cdot 4^5 / 5! = (0.0183)(1024)/120 \approx \mathbf{0.156}\).
+
+> **Q 7.5.** \(X \sim N(50, 100)\). P(40 < X < 60)?
+>
+> \(\sigma = 10\). \(z_1 = (40-50)/10 = -1, z_2 = +1\). Within ±1 σ → **0.6826** (68.26 %).
+
+> **Q 7.6.** \(X \sim N(20, 16)\). P(X > 28)?
+>
+> \(\sigma = 4\). \(z = (28 - 20)/4 = 2\). P(Z > 2) = (1 − 0.9544)/2 = **0.0228**.
+
+> **Q 7.7.** Binomial \(n = 100, p = 0.02\). Approximate by Poisson with mean?
+>
+> \(\lambda = np = \mathbf{2}\).
+
+> **Q 7.8.** Mean of \(X \sim P(\lambda)\) is 9. SD?
+>
+> \( \sqrt{9} = \mathbf{3} \).
+
+> **Q 7.9.** Lot of 20 has 5 defectives. 4 picked without replacement. P(exactly 2 defective)?
+>
+> \( \dfrac{ {}^5C_2 \cdot {}^{15}C_2 }{ {}^{20}C_4 } = \dfrac{10 \cdot 105}{4845} = \dfrac{1050}{4845} \approx \mathbf{0.217} \).
+
+> **Q 7.10.** \(X\) uniform on [0, 10]. P(X > 7)?
+>
+> Length 3 / total length 10 = **0.3**.
+
+> **Q 7.11.** For a Binomial with mean = 8 and variance = 4, find \(n\) and \(p\).
+>
+> \(np = 8, npq = 4 \Rightarrow q = 0.5, p = 0.5, n = 16\).
+
+> **Q 7.12.** Mode of normal distribution = ?
+>
+> \( \mu \) (= mean = median).
+
+> **Q 7.13.** \(E[X] = 5, \text{Var}(X) = 4\). \(E[2X+3]\) and \(\text{Var}(2X+3)\)?
+>
+> \(2 \cdot 5 + 3 = \mathbf{13}\). Var = \(4 \cdot 4 = \mathbf{16}\).
+
+> **Q 7.14.** Normal: 95% of data lies within how many σ?
+>
+> ±1.96σ (often approximated as ±2σ).
+
+> **Q 7.15.** A discrete RV X has pmf p(0) = 0.3, p(1) = 0.4, p(2) = 0.2, p(3) = c. Find c, mean, variance.
+>
+> \(c = 1 − 0.9 = 0.1\).
+> \(E[X] = 0(0.3) + 1(0.4) + 2(0.2) + 3(0.1) = 0 + 0.4 + 0.4 + 0.3 = 1.1\).
+> \(E[X^2] = 0 + 0.4 + 0.8 + 0.9 = 2.1\). Var = 2.1 − 1.21 = **0.89**.
+
+## 7.7 Trap-recognition card
+
+| Trap | Defence |
+|------|---------|
+| Binomial mean = npq (wrong) | Mean = np. Variance = npq. |
+| For Poisson, "mean ≠ variance" | They are equal: both = λ. That's the **identifying property**. |
+| Normal density value vs probability | The pdf height is not a probability; areas under it are. |
+| Forgot finite-population correction in hypergeometric | Multiply variance by (N − n)/(N − 1). |
+| Mixing up \(z\) for one-tail and two-tail at 5% | One-tail: 1.645. Two-tail: 1.96. |
+
+## 7.8 Mini-mock
+
+| # | Q | Ans |
+|---|----|-----|
+| 1 | Mean of Binomial(20, 0.3)? | 6 |
+| 2 | Var of Binomial(20, 0.3)? | 4.2 |
+| 3 | Mean of Poisson(λ=5)? | 5 |
+| 4 | SD of Poisson(λ=9)? | 3 |
+| 5 | Normal: P(|Z|<1.96) = ? | 0.95 |
+| 6 | If E[X]=10, E[2X−3]? | 17 |
+| 7 | Var(3X) when Var(X)=4? | 36 |
+| 8 | Mode of N(50,100)? | 50 |
+| 9 | A pmf must have Σ p(x) = ? | 1 |
+| 10 | Continuous uniform on [2,8]: variance? | (8−2)²/12 = 3 |
+
+## 7.9 Active-recall prompts
+
+1. State the pmf, mean, variance of Binomial.
+2. State the pmf, mean, variance of Poisson. Why mean = variance?
+3. Write the standardising transformation for normal.
+4. Write the 68/95/99.7 rule.
+5. State the hypergeometric pmf and where the finite-population correction sits.
+
+---
+
+\newpage
+
+# CHAPTER 8 — Sampling Theory
+
+**Importance:** ⭐⭐⭐⭐ HIGH (≈8 Qs / paper)
+**Difficulty:** Easy–Medium. Most questions are conceptual / identification; only a few demand a formula.
+
+## 8.0 — Understanding Sampling Theory from First Principles
+
+<div class="intuition">
+
+**Why sample? Why not just measure the whole population?**
+
+India has 1.4 billion people. To estimate average household income, a complete census would cost thousands of crores and take years to complete. Instead, the NSSO surveys about 100,000 households — and the result is almost as accurate as a census. How is this possible?
+
+Two fundamental theorems guarantee it:
+
+**Law of Large Numbers:** As sample size $n$ increases, the sample mean $\bar{X}$ converges (in probability) to the population mean $\mu$. The more people you survey, the closer your estimate is to the truth.
+
+**Central Limit Theorem (CLT):** For any population (normal or not), the distribution of $\bar{X}$ across all possible samples of size $n$ is approximately $N(\mu, \sigma^2/n)$ for large $n$. This is remarkable — no matter how weird the original population distribution is, sample means are bell-shaped. This is what makes confidence intervals and hypothesis tests work.
+
+**Standard Error (SE):** The SD of the sampling distribution of $\bar{X}$ is $\text{SE} = \sigma/\sqrt{n}$. Note: SE decreases as $\sqrt{n}$. To halve the SE, you need 4× the sample size. This is why going from $n=100$ to $n=400$ is worth it, but going from $n=10000$ to $n=40000$ gives diminishing returns.
+
+**Population parameter** (Greek letter: $\mu$, $\sigma$, $p$) = true value in the entire population — usually unknown.
+**Sample statistic** (Roman letter: $\bar{X}$, $s$, $\hat{p}$) = computed from the sample — our estimate of the parameter.
+
+</div>
+
+**Sampling methods — classification and when to use each:**
+
+```mermaid
+graph TD
+  A[Sampling Methods] --> B[Probability Sampling<br/>every unit has known ≠ 0 chance]
+  A --> C[Non-probability Sampling<br/>selection not random]
+  B --> B1[Simple Random Sampling SRS<br/>with or without replacement]
+  B --> B2[Stratified Sampling<br/>divide into strata; sample from each]
+  B --> B3[Systematic Sampling<br/>every k-th unit]
+  B --> B4[Cluster Sampling<br/>sample entire clusters]
+  B --> B5[Multi-stage Sampling]
+  C --> C1[Purposive / Judgement]
+  C --> C2[Convenience]
+  C --> C3[Quota]
+  C --> C4[Snowball]
+```
+
+| Method | Best when | Advantage | Disadvantage |
+|--------|-----------|-----------|-------------|
+| SRSWOR | Population is homogeneous, complete frame available | Simple; unbiased; theory clean | Expensive if spread geographically |
+| Stratified | Population has distinct subgroups (strata) | More precise than SRS; ensures all strata represented | Need to know stratum sizes |
+| Systematic | Ordered population, no periodic pattern | Simpler than SRS; good spread | Periodicity in population → biased |
+| Cluster | Population naturally grouped; no complete frame | Cheaper when clusters are geographic | Less precise than SRS |
+
+**Solved Example 8.A — SE calculation:**
+
+Population: $\mu = 80$, $\sigma = 20$. Random sample of $n = 100$. Find the SE of $\bar{X}$ and $P(78 < \bar{X} < 82)$.
+
+> $\text{SE} = \dfrac{\sigma}{\sqrt{n}} = \dfrac{20}{\sqrt{100}} = \dfrac{20}{10} = 2$
+>
+> $P(78 < \bar{X} < 82) = P\!\left(\dfrac{78-80}{2} < Z < \dfrac{82-80}{2}\right) = P(-1 < Z < 1) = 0.6827$
+
+## 8.1 Examiner mindset
+
+| Angle | Pet question |
+|-------|--------------|
+| Census vs sample | conceptual MCQ |
+| Probability vs non-probability sampling | name the technique |
+| Standard error, sampling distribution | formula plug-in |
+| When to use which sampling design | "If population is heterogeneous in groups, what to use?" → stratified |
+| Sample size determination | margin of error formula |
+| Sampling vs non-sampling errors | classify the error |
+
+## 8.2 Population, sample, parameter, statistic
+
+| Term | Symbol | Description |
+|------|--------|-------------|
+| Population | size \(N\) | Entire group of interest |
+| Sample | size \(n\) | Subset chosen for study |
+| Parameter | \(\mu, \sigma, P\) | Numerical value of population |
+| Statistic | \(\bar X, s, p\) | Numerical value of sample |
+| Sampling | | Process of drawing a sample |
+| Sampling frame | | List of all units in the population |
+
+> **Why sample?** Census is exhaustive but expensive, slow, often impossible (destructive testing, infinite/conceptual populations). A well-designed sample is fast, cheap, and provides quantifiable margin of error.
+
+## 8.3 Family tree of sampling techniques
+
+```mermaid
+graph TD
+  A[Sampling techniques] --> B[Probability]
+  A --> C[Non-probability]
+  B --> B1[Simple Random — SRSWOR / SRSWR]
+  B --> B2[Stratified]
+  B --> B3[Systematic]
+  B --> B4[Cluster]
+  B --> B5[Multi-stage]
+  C --> C1[Convenience]
+  C --> C2[Judgement / Purposive]
+  C --> C3[Quota]
+  C --> C4[Snowball]
+```
+
+## 8.4 Probability sampling — when to use what
+
+| Technique | Pick when … | Key feature |
+|-----------|-------------|-------------|
+| **Simple random (SRS)** | Population is homogeneous, complete frame available | Each unit has equal chance |
+| **Stratified** | Population has clear sub-groups (strata) with within-strata homogeneity | Sample drawn from each stratum; gains precision |
+| **Systematic** | Population is ordered, cheap implementation needed | Pick every \(k\)-th unit; \(k = N/n\) |
+| **Cluster** | Geographically dispersed population, no full frame | Population split into clusters; some clusters fully sampled |
+| **Multi-stage** | Very large populations | Cluster + further sampling within (e.g., state → district → block → village) |
+
+**Stratified vs cluster — examiners' favourite contrast:**
+
+| | Stratified | Cluster |
+|--|-----------|---------|
+| Purpose | Reduce sampling error | Reduce cost / handle no-frame |
+| Within-group | Homogeneous | Heterogeneous (mini-population) |
+| Between-group | Heterogeneous | Homogeneous |
+| Sample drawn from | Every stratum | Selected clusters only |
+
+## 8.5 Non-probability sampling
+
+| Technique | Description | Use case |
+|-----------|-------------|----------|
+| Convenience | Whoever's easiest to reach | Pilot studies |
+| Judgement / purposive | Researcher picks "typical" units | Expert opinion polls |
+| Quota | Fix counts per category, then pick conveniently | Market research |
+| Snowball | Existing subjects refer next subjects | Hidden populations (drug users, rare diseases) |
+
+> **Big disadvantage of non-probability:** No mathematical estimate of sampling error possible. Bias risk is high.
+
+## 8.6 Sampling distribution and standard error
+
+The **sampling distribution** of a statistic is the distribution of its values across all possible samples of the same size.
+
+### Standard error of the mean
+
+For a population with SD \( \sigma \), sample of size \(n\):
+
+\[
+\text{SE}(\bar X) = \dfrac{\sigma}{\sqrt{n}} \quad \text{(infinite population)}
+\]
+
+\[
+\text{SE}(\bar X) = \dfrac{\sigma}{\sqrt{n}} \sqrt{\dfrac{N - n}{N - 1}} \quad \text{(finite population, FPC)}
+\]
+
+### Standard error of a proportion
+
+\[
+\text{SE}(p) = \sqrt{\dfrac{P(1-P)}{n}}
+\]
+
+### Standard error of difference of means (independent samples)
+
+\[
+\text{SE}(\bar X_1 - \bar X_2) = \sqrt{\dfrac{\sigma_1^2}{n_1} + \dfrac{\sigma_2^2}{n_2}}
+\]
+
+## 8.7 Central Limit Theorem (CLT)
+
+> If \(X_1, X_2, \ldots, X_n\) are i.i.d. with mean \(\mu\) and finite variance \(\sigma^2\), then for large \(n\), \(\bar X\) is approximately \( N(\mu, \sigma^2 / n) \), **regardless of the original distribution**.
+
+Rule of thumb: \(n \ge 30\) is usually "large enough".
+
+This is the single most important theorem in sampling — it's why we can do Z-tests on means even when the underlying data is not normal.
+
+## 8.8 Sampling vs non-sampling errors
+
+| Type | Cause | How to control |
+|------|-------|---------------|
+| Sampling error | Random; you didn't see whole population | Larger \(n\), better design |
+| Non-sampling error | Frame errors, response errors, processing errors, non-response bias | Better questionnaire, training, follow-up |
+
+**Key fact:** Non-sampling error tends to **increase** with sample size (more data, more chances to mess up); sampling error **decreases**.
+
+## 8.9 Sample-size determination (mean)
+
+Required sample size for margin of error \(E\) at confidence level \(1 - \alpha\):
+
+\[
+n = \left( \dfrac{z_{\alpha/2} \cdot \sigma}{E} \right)^2
+\]
+
+For a proportion (worst-case \(P = 0.5\)):
+
+\[
+n = \left( \dfrac{z_{\alpha/2}}{E} \right)^2 \cdot 0.25
+\]
+
+## 8.10 Worked PYQ-style examples
+
+> **Q 8.1.** Σ = 16, sample size 64. SE of mean (infinite pop)?
+>
+> \( 16/\sqrt{64} = 16/8 = \mathbf{2} \).
+
+> **Q 8.2.** A frame of 1000 units, sample 100, σ = 20. SE with FPC?
+>
+> Without FPC: \(20/10 = 2\). FPC = \(\sqrt{(1000-100)/(1000-1)} = \sqrt{900/999} \approx 0.949\). SE ≈ \(2 \cdot 0.949 \approx \mathbf{1.90}\).
+
+> **Q 8.3.** Population is geographically scattered with no list of households. Best sampling?
+>
+> **Cluster sampling**.
+
+> **Q 8.4.** A factory has machine A producing 70% of items and B producing 30%. To estimate overall defect rate, you sample 70% of items from A's output and 30% from B. This is:
+>
+> **Stratified (proportional allocation)**.
+
+> **Q 8.5.** From a list of 1000 employees, every 10th is selected. Sampling type?
+>
+> **Systematic** (\(k = 10\)).
+
+> **Q 8.6.** As n increases, SE of mean:
+>
+> Decreases (proportional to \(1/\sqrt n\)).
+
+> **Q 8.7.** SE(p) when \(n = 100, P = 0.4\)?
+>
+> \( \sqrt{0.4 \cdot 0.6 / 100} = \sqrt{0.0024} \approx \mathbf{0.049}\).
+
+> **Q 8.8.** σ known to be 30. Want margin 5 at 95% confidence. Sample size?
+>
+> \(n = (1.96 \cdot 30 / 5)^2 = (11.76)^2 \approx \mathbf{138.3} \to 139\).
+
+> **Q 8.9.** A non-probability technique relying on existing respondents to refer new ones is:
+>
+> **Snowball sampling**.
+
+> **Q 8.10.** As sample size increases, non-sampling error generally:
+>
+> **Increases**.
+
+## 8.11 Trap-recognition card
+
+| Trap | Defence |
+|------|---------|
+| Quota called "probability" | It's non-probability — selection is by convenience within a quota. |
+| SRSWR vs SRSWOR formula confusion | Without replacement uses FPC; with replacement does not. |
+| "More sample size → no error" | Sampling error decreases; non-sampling error rises. Total can go either way. |
+| Stratified ≠ cluster | Read mini-population vs sub-group cue. |
+
+## 8.12 Mini-mock
+
+| # | Q | Ans |
+|---|----|-----|
+| 1 | A complete enumeration is called? | Census |
+| 2 | List of all units in population? | Sampling frame |
+| 3 | n=400, σ=20. SE of mean? | 1 |
+| 4 | Strata are: a) homogeneous b) heterogeneous? | a (within); heterogeneous between |
+| 5 | If P=0.5, n=400, SE(p)? | √(0.25/400)=0.025 |
+| 6 | Quota sampling is which type? | Non-probability |
+| 7 | CLT applies for n ≥ ? | usually 30 |
+| 8 | Population SD 12, n=144. SE? | 1 |
+| 9 | Method that picks every kth element? | Systematic |
+| 10 | Formula for sample size at margin E? | (z·σ/E)² |
+
+## 8.13 Active-recall prompts
+
+1. Difference between parameter and statistic.
+2. State the Central Limit Theorem.
+3. Write the SE formulas (mean, proportion, difference of means).
+4. When do we use stratified vs cluster sampling?
+5. Why does non-sampling error grow with n?
+
+---
+
+\newpage
+
+# CHAPTER 9 — Statistical Inference (Estimation + Testing of Hypotheses)
+
+**Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈12 Qs / paper)
+**Difficulty:** Medium-Hard. The biggest chapter in the paper. Master the **decision rule** template and you'll never lose marks here.
+
+## 9.0 — Understanding Statistical Inference from First Principles
+
+<div class="intuition">
+
+**What is "statistical inference" and what is a hypothesis test actually doing?**
+
+Inference uses sample data to draw conclusions about the unknown population. Two tasks:
+
+1. **Estimation:** "The sample mean is 75 kg. What is the population mean?" The answer is not just "75 kg" — it is a **confidence interval**: "We are 95% confident the population mean lies between 72.1 and 77.9 kg." This interval accounts for sampling variability.
+
+2. **Hypothesis Testing:** "Someone claims the population mean is 80 kg. My sample gives 75 kg. Could this 5-unit gap just be chance sampling variation, or is it strong evidence against the claim?"
+
+**The null hypothesis framework — how to think about it:**
+
+Hypothesis testing works like a court trial: the defendant (null hypothesis $H_0$) is presumed innocent (true) until proven guilty beyond reasonable doubt. The "evidence" is your sample statistic. The "beyond reasonable doubt" threshold is your significance level $\alpha$ (usually 5%).
+
+We compute: "If $H_0$ were true, how likely is it to observe a sample statistic this extreme or more extreme?" This probability is the **p-value**. If $p < \alpha$, the evidence against $H_0$ is strong enough to reject it.
+
+**What p-value IS and IS NOT:**
+- IS: $P(\text{data this extreme} \mid H_0 \text{ is true})$ — probability of the observed result assuming the null is true.
+- IS NOT: $P(H_0 \text{ is true})$ — the probability that the null hypothesis is true. This is a common misconception.
+
+**Type I vs Type II errors:**
+
+| Decision | $H_0$ is actually TRUE | $H_0$ is actually FALSE |
+|----------|----------------------|------------------------|
+| **Reject $H_0$** | Type I error ($\alpha$) — false alarm | Correct — detected real effect |
+| **Fail to reject $H_0$** | Correct — no false alarm | Type II error ($\beta$) — missed detection |
+
+Power of test = $1 - \beta$ = probability of correctly detecting a real effect. Increasing sample size increases power.
+
+</div>
+
+**Test-selection flowchart:**
+
+```mermaid
+graph TD
+  A[What are you testing?] --> B[Mean]
+  A --> C[Proportion]
+  A --> D[Variance]
+  A --> E[Two means]
+  A --> F[More than 2 means]
+  A --> G[Categorical association]
+  B --> B1{σ known?}
+  B1 -->|Yes| B2[z-test: z = X̄−μ₀ / σ/√n]
+  B1 -->|No| B3[t-test: t = X̄−μ₀ / s/√n, df=n−1]
+  C --> C1[z-test: z = p̂−p₀ / √p₀q₀/n]
+  D --> D1[χ² test: χ²=ns²/σ₀², df=n−1]
+  E --> E2[Two-sample t-test]
+  F --> F1[ANOVA: F-test]
+  G --> G1[χ² test of independence]
+```
+
+<div class="formula">
+
+**Critical value decision rule (works for every test):**
+
+$$\text{Reject } H_0 \text{ if } |\text{test statistic}| > \text{critical value at } \alpha$$
+
+For $z$-test at $\alpha = 5\%$: critical value = **1.96** (two-tail), **1.645** (one-tail).
+For $t$-test: read from $t$-table at $df = n-1$.
+For $\chi^2$ test: read from $\chi^2$ table at appropriate $df$.
+
+</div>
+
+**Solved Example 9.A — z-test for mean (σ known):**
+
+A company claims its bulbs last on average 1000 hours. A sample of 64 bulbs has $\bar{X} = 980$ hours. Population SD $\sigma = 80$ hours. Test at 5% significance (two-tail).
+
+> $H_0$: $\mu = 1000$; $H_1$: $\mu \neq 1000$.
+>
+> $z = \dfrac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} = \dfrac{980 - 1000}{80/\sqrt{64}} = \dfrac{-20}{10} = -2.0$
+>
+> Critical value at 5% two-tail: $\pm 1.96$.
+>
+> $|z| = 2.0 > 1.96$ → **Reject $H_0$**. Evidence suggests bulbs last less than 1000 hours.
+
+**Solved Example 9.B — χ² test of independence:**
+
+Survey data: 100 males (60 prefer product A, 40 prefer B), 80 females (30 prefer A, 50 prefer B). Test independence of gender and product preference at 5%.
+
+> Expected frequencies: $E = \dfrac{\text{Row total} \times \text{Column total}}{\text{Grand total}}$.
+>
+> Grand total = 180; Row totals: Males = 100, Females = 80; Column totals: A = 90, B = 90.
+>
+> $E(\text{Male, A}) = \dfrac{100 \times 90}{180} = 50$; $E(\text{Male, B}) = 50$; $E(\text{Female, A}) = 40$; $E(\text{Female, B}) = 40$.
+>
+> $\chi^2 = \sum \dfrac{(O-E)^2}{E} = \dfrac{(60-50)^2}{50} + \dfrac{(40-50)^2}{50} + \dfrac{(30-40)^2}{40} + \dfrac{(50-40)^2}{40}$
+> $= 2 + 2 + 2.5 + 2.5 = \mathbf{9.0}$
+>
+> $df = (r-1)(c-1) = 1 \times 1 = 1$. Critical value at 5%, 1 df: **3.84**.
+>
+> $9.0 > 3.84$ → **Reject $H_0$**. Gender and product preference are NOT independent.
+
+## 9.1 Examiner mindset
+
+| Angle | Pet question |
+|-------|--------------|
+| Properties of estimators | Unbiased, consistent, efficient, sufficient |
+| Methods of estimation | MLE, MoM, Least squares — definition |
+| Confidence intervals | Mean (σ known/unknown), proportion |
+| Type I vs Type II error | Definition + symbols α and β |
+| Z-test, t-test, χ²-test, F-test | Pick the right test, state critical region |
+| Power and OC curve | Concept |
+
+## 9.2 Estimation — point vs interval
+
+| Type | What you give | Example |
+|------|---------------|---------|
+| Point estimate | A single number | \( \hat \mu = \bar X = 50.2 \) |
+| Interval estimate | A range with confidence level | "We're 95% confident μ ∈ [48.3, 52.1]" |
+
+## 9.3 Properties of a good estimator
+
+| Property | Meaning | Symbolically |
+|----------|---------|--------------|
+| **Unbiasedness** | Expected value of estimator = parameter | \(E[\hat\theta] = \theta\) |
+| **Consistency** | Probability of being close to true value → 1 as n → ∞ | \(\hat\theta \xrightarrow{P} \theta\) |
+| **Efficiency** | Among unbiased estimators, smallest variance | min Var |
+| **Sufficiency** | Estimator captures all sample information about θ | factorisation theorem |
+
+**Unbiased estimators to memorise:**
+
+| Parameter | Unbiased estimator |
+|-----------|--------------------|
+| \( \mu \) | \( \bar X \) |
+| Population variance \( \sigma^2 \) | sample variance with **\(n - 1\)** in denominator: \( s^2 = \dfrac{\sum (X_i - \bar X)^2}{n - 1} \) |
+| Population proportion \(P\) | sample proportion \(p = X/n\) |
+
+**Watch out:** \(\bar X^2\) is **not** an unbiased estimator of \(\mu^2\). And \(s\) (the SD) is a slightly biased estimator of \(\sigma\) even though \(s^2\) is unbiased for \(\sigma^2\).
+
+## 9.4 Methods of estimation
+
+| Method | One-line description |
+|--------|---------------------|
+| **Maximum Likelihood (MLE)** | Pick θ that maximises the likelihood \(L(\theta) = \prod f(x_i; \theta)\). Often most efficient asymptotically. |
+| **Method of Moments (MoM)** | Equate sample moments to population moments and solve for θ. Easy but not always most efficient. |
+| **Least Squares (LS)** | Minimise \(\sum (X_i - \hat\mu)^2\). Used in regression and ANOVA. |
+
+## 9.5 Confidence interval for the mean
+
+| σ known | σ unknown, n large (≥30) | σ unknown, n small |
+|---------|---------------------------|--------------------|
+| \( \bar X \pm z_{\alpha/2} \dfrac{\sigma}{\sqrt n} \) | \( \bar X \pm z_{\alpha/2} \dfrac{s}{\sqrt n} \) | \( \bar X \pm t_{\alpha/2,\, n-1} \dfrac{s}{\sqrt n} \) |
+
+Common multipliers:
+
+| Confidence | \( z_{\alpha/2} \) |
+|-----------|---------|
+| 90 % | 1.645 |
+| 95 % | 1.960 |
+| 99 % | 2.576 |
+
+## 9.6 Hypothesis testing — the universal template
+
+> **Step 1.** State \(H_0\) (null) and \(H_1\) (alternative).
+>
+> **Step 2.** Pick test statistic (Z, t, χ², F) based on what's being tested and what's known.
+>
+> **Step 3.** Decide level of significance α (usually 5%).
+>
+> **Step 4.** Find critical region (one-tail or two-tail).
+>
+> **Step 5.** Compute test statistic from sample.
+>
+> **Step 6.** Reject \(H_0\) iff test stat falls in critical region. Otherwise fail to reject.
+
+## 9.7 Type I and Type II errors
+
+| Decision \ Reality | \(H_0\) true | \(H_0\) false |
+|--------------------|--------------|--------------|
+| Reject \(H_0\) | **Type I error**, prob = α | Correct (power = 1 − β) |
+| Fail to reject | Correct | **Type II error**, prob = β |
+
+**Memory hook:** "α: rejecting a true \(H_0\) (false alarm)." "β: keeping a false \(H_0\) (missed alarm)."
+
+## 9.8 The four big tests
+
+### (i) Z-test (large sample, σ known or n ≥ 30)
+
+| Hypothesis | Test stat |
+|-----------|-----------|
+| \(H_0: \mu = \mu_0\) | \( Z = \dfrac{\bar X - \mu_0}{\sigma/\sqrt n} \) |
+| Two means | \( Z = \dfrac{\bar X_1 - \bar X_2}{\sqrt{\sigma_1^2/n_1 + \sigma_2^2/n_2}} \) |
+| Proportion | \( Z = \dfrac{p - P_0}{\sqrt{P_0(1-P_0)/n}} \) |
+| Two proportions | \( Z = \dfrac{p_1 - p_2}{\sqrt{\hat P (1-\hat P)(1/n_1 + 1/n_2)}} \), \(\hat P = (X_1+X_2)/(n_1+n_2)\) |
+
+### (ii) t-test (small sample, σ unknown)
+
+| Hypothesis | Test stat | df |
+|-----------|-----------|----|
+| One mean, \(H_0: \mu = \mu_0\) | \( t = \dfrac{\bar X - \mu_0}{s/\sqrt n} \) | \(n - 1\) |
+| Two means (independent, equal variances) | \( t = \dfrac{\bar X_1 - \bar X_2}{s_p \sqrt{1/n_1 + 1/n_2}}, \; s_p^2 = \dfrac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2} \) | \(n_1 + n_2 - 2\) |
+| Paired | \( t = \dfrac{\bar d}{s_d/\sqrt n} \) | \(n - 1\) |
+
+### (iii) Chi-square test
+
+| Application | Test statistic |
+|------------|----------------|
+| **Goodness of fit** | \( \chi^2 = \sum \dfrac{(O - E)^2}{E} \), df = (categories − 1 − parameters estimated) |
+| **Independence (\(r \times c\) table)** | same formula, df = \((r-1)(c-1)\) |
+| **Test of variance**, \(H_0: \sigma^2 = \sigma_0^2\) | \( \chi^2 = (n-1) s^2 / \sigma_0^2 \), df = \(n-1\) |
+
+### (iv) F-test
+
+| Application | Test statistic |
+|------------|----------------|
+| Equality of two variances | \( F = s_1^2 / s_2^2 \) (larger over smaller), df \(= (n_1-1, n_2-1)\) |
+| ANOVA (Chapter 10) | \( F = MSB / MSW \) |
+
+## 9.9 Critical-region cheat sheet (5% significance)
+
+| Tail | Test | Reject \(H_0\) if … |
+|------|------|---------------------|
+| Two-tail | Z | \(|Z| > 1.96\) |
+| Right-tail | Z | \(Z > 1.645\) |
+| Left-tail | Z | \(Z < -1.645\) |
+| Two-tail | t | \(|t| > t_{0.025, df}\) — table |
+| Right-tail | χ² | \(\chi^2 > \chi^2_{0.05, df}\) — table |
+| F | upper tail | \(F > F_{0.05, df_1, df_2}\) — table |
+
+## 9.10 Power, level, OC curve
+
+| Quantity | Symbol | Meaning |
+|----------|--------|---------|
+| Level of significance | α | Max tolerable Type I error |
+| Power of test | 1 − β | Probability of rejecting a false \(H_0\) |
+| OC curve | β as a function of true parameter | shows test's discrimination |
+| Best test | Maximises power for given α | Neyman-Pearson lemma |
+
+A "more powerful test" = lower β for the same α. Powerful tests are usually **one-tailed** (when alternative direction is known).
+
+## 9.11 Worked PYQ-style examples
+
+> **Q 9.1.** Sample of n=64 from a population with σ=8 gave \(\bar X = 51\). Test \(H_0: \mu = 50\) at α = 5% (two-tail).
+>
+> \( Z = (51 - 50)/(8/8) = 1.0 \). |Z| = 1.0 < 1.96 → **fail to reject** \(H_0\).
+
+> **Q 9.2.** \(n = 25, \bar X = 102, s = 10\), test \(H_0: \mu = 100\) at α = 5% (two-tail).
+>
+> \( t = (102 - 100)/(10/5) = 1.0 \). \(t_{0.025, 24} ≈ 2.064\). 1.0 < 2.064 → **fail to reject** \(H_0\).
+
+> **Q 9.3.** \(n=100, p=0.45\). Test \(H_0: P = 0.5\) at α = 5% two-tail.
+>
+> \( Z = (0.45 - 0.5)/\sqrt{0.5 \cdot 0.5/100} = -0.05/0.05 = -1.0 \). |Z| < 1.96 → **fail to reject**.
+
+> **Q 9.4.** \(s_1^2 = 25, s_2^2 = 16, n_1 = n_2 = 11\). Test equality of variances at 5%.
+>
+> \(F = 25/16 = 1.5625\). df = (10, 10), \(F_{0.05, 10, 10} \approx 2.97\). 1.5625 < 2.97 → fail to reject.
+
+> **Q 9.5.** A goodness-of-fit χ² = 12.6 with df = 5. At α = 5% (\(\chi^2_{crit} = 11.07\)), decision?
+>
+> 12.6 > 11.07 → **reject** \(H_0\) (data does not fit the proposed distribution).
+
+> **Q 9.6.** Type I error is the probability of:
+>
+> Rejecting a TRUE \(H_0\). (= α)
+
+> **Q 9.7.** Power of a test = ?
+>
+> 1 − β.
+
+> **Q 9.8.** 95% CI for mean if \(\bar X = 50, s = 4, n = 64\):
+>
+> \( 50 \pm 1.96 \cdot 4/8 = 50 \pm 0.98 = \mathbf{[49.02, 50.98]} \).
+
+> **Q 9.9.** Why use \(n-1\) (not \(n\)) for sample variance?
+>
+> So that \(E[s^2] = \sigma^2\) (unbiasedness — Bessel's correction).
+
+> **Q 9.10.** A test for independence in a 4×3 table has df:
+>
+> \((4 - 1)(3 - 1) = \mathbf{6}\).
+
+> **Q 9.11.** \(\bar X_1 = 50, \bar X_2 = 47, \sigma_1 = \sigma_2 = 5, n_1 = n_2 = 100\). Test \(H_0: \mu_1 = \mu_2\) two-tail.
+>
+> \( Z = 3 / \sqrt{0.25 + 0.25} = 3/\sqrt{0.5} ≈ 4.24 \). > 1.96 → **reject**.
+
+> **Q 9.12.** MLE of \(p\) for Binomial sample \(X\) successes in \(n\) trials?
+>
+> \( \hat p = X/n \) (also the unbiased MoM estimator).
+
+> **Q 9.13.** \(\bar X^2\) is an unbiased estimator of \(\mu^2\)?
+>
+> No. \(E[\bar X^2] = \mu^2 + \sigma^2/n \ne \mu^2\).
+
+> **Q 9.14.** Best critical region is given by the:
+>
+> Neyman-Pearson lemma.
+
+> **Q 9.15.** Reduce α from 5% to 1%. β:
+>
+> Generally **increases** (strict tests miss more).
+
+## 9.12 Trap-recognition card
+
+| Trap | Defence |
+|------|---------|
+| Use Z when n is small AND σ unknown | Wrong — must use t. |
+| Use t with σ known | Use Z. |
+| Test of two variances using Z | No — use F. |
+| df for χ² independence as \(rc - 1\) | Correct: \((r-1)(c-1)\). |
+| α and power add to 1 | No: α + power is meaningless. β + power = 1. |
+| MLE always unbiased | False. MLEs are often biased but consistent. |
+
+## 9.13 Mini-mock
+
+| # | Q | Ans |
+|---|----|-----|
+| 1 | Type II error symbol? | β |
+| 2 | Power formula? | 1 − β |
+| 3 | df for one-sample t with n=20? | 19 |
+| 4 | Sample variance divisor for unbiasedness? | n−1 |
+| 5 | F-test compares? | two variances |
+| 6 | χ² goodness-of-fit formula? | Σ (O−E)²/E |
+| 7 | Test for two means, σ known, large n? | Z |
+| 8 | At 1% two-tail, |Z| critical? | 2.576 |
+| 9 | Sample mean is an unbiased estimator of? | μ |
+| 10 | MLE of μ for Normal sample? | X̄ |
+
+## 9.14 Active-recall prompts
+
+1. Define unbiased, consistent, efficient, sufficient.
+2. State Type I and Type II error symbolically.
+3. Write the test statistic for Z-test of one mean.
+4. Write the χ² formula for goodness-of-fit.
+5. State the Neyman-Pearson lemma in one line.
+6. Write the formula for pooled variance \(s_p^2\) in two-sample t.
+
+---
+
+\newpage
+
+# CHAPTER 10 — Analysis of Variance (ANOVA)
+
+**Importance:** ⭐⭐⭐ MEDIUM (≈4 Qs / paper)
+**Difficulty:** Medium. Mostly one or two conceptual questions plus an ANOVA-table fill-in. Don't over-invest, but never skip.
+
+## 10.0 — Understanding ANOVA from First Principles
+
+<div class="intuition">
+
+**Why ANOVA? Why not just do multiple t-tests?**
+
+Suppose you test four fertilisers (A, B, C, D) on crop yield, with 5 plots each. You want to know if any fertiliser makes a significant difference. You could run six pairwise t-tests (A vs B, A vs C, A vs D, B vs C, B vs D, C vs D). Each test has a 5% chance of a false alarm. With six tests, the probability of at least one false alarm = $1 - 0.95^6 \approx 26\%$. You'd be making false discoveries 1 in 4 times — useless science.
+
+**ANOVA** (Analysis of Variance) tests all groups simultaneously with a *single* F-test, keeping the overall false-alarm rate at exactly 5%.
+
+**The key insight — why "variance" tests "means":** If all group means are equal (null hypothesis is true), variation within each group (due to random noise) should be about the same as variation between group means. If one fertiliser is genuinely better, the between-group variation will be large relative to within-group variation. The **F-ratio** captures this:
+
+$$F = \frac{\text{Variance between groups (MSB)}}{\text{Variance within groups (MSW or MSE)}}$$
+
+When $H_0$ is true: $F \approx 1$. When $H_0$ is false: $F \gg 1$. We reject $H_0$ when $F$ exceeds the critical value from the F-table.
+
+</div>
+
+**One-way ANOVA table structure (fill-in-the-blank type in exams):**
+
+| Source | SS | df | MS = SS/df | F |
+|--------|----|----|------------|---|
+| Between groups (Treatment) | SSB | $k-1$ | MSB | MSB/MSW |
+| Within groups (Error) | SSW | $N-k$ | MSW | |
+| Total | SST | $N-1$ | | |
+
+Where $k$ = number of groups, $N$ = total observations, $\text{SST} = \text{SSB} + \text{SSW}$.
+
+**Solved Example 10.A — ANOVA computation:**
+
+Three teaching methods, 4 students each ($k=3$, $N=12$). SSB = 60, SST = 140.
+
+> SSW = SST − SSB = 140 − 60 = 80.
+>
+> $df_B = k-1 = 2$; $df_W = N-k = 9$; $df_T = N-1 = 11$.
+>
+> MSB = 60/2 = 30; MSW = 80/9 = 8.89.
+>
+> $F = 30/8.89 = \mathbf{3.37}$.
+>
+> Compare to $F_{0.05}(2, 9) = 4.26$ from table. Since $3.37 < 4.26$, **do not reject $H_0$** — no significant difference between methods.
+
+## 10.1 Examiner mindset
+
+| Angle | Pet question |
+|-------|--------------|
+| What ANOVA tests | "ANOVA tests equality of …?" → means |
+| Assumptions | normality, equal variance, independence |
+| One-way layout | TSS = SSB + SSW |
+| Two-way layout | TSS = SSR + SSC + SSE |
+| ANOVA table fill-in | df, MS, F |
+| Decision rule | F > F_crit → reject \(H_0\) |
+
+## 10.2 The big idea
+
+> **ANOVA tests whether several population means are equal**, by comparing the variance **between** groups to the variance **within** groups.
+>
+> If between-group variation dwarfs within-group variation, the means are unlikely to be equal.
+
+## 10.3 One-way ANOVA — formulas
+
+\(k\) treatments (groups), \(n_i\) observations in group \(i\), total \(N = \sum n_i\). Let \(T_i = \) total of group \(i\), \(G = \) grand total.
+
+| Source | SS | df | MS |
+|--------|----|----|-----|
+| Between treatments | \( \text{SSB} = \sum \dfrac{T_i^2}{n_i} - \dfrac{G^2}{N} \) | \( k - 1 \) | \( \text{MSB} = \text{SSB}/(k-1) \) |
+| Within (error) | \( \text{SSW} = \text{TSS} - \text{SSB} \) | \( N - k \) | \( \text{MSW} = \text{SSW}/(N-k) \) |
+| Total | \( \text{TSS} = \sum X^2 - \dfrac{G^2}{N} \) | \( N - 1 \) | |
+
+Test statistic: \( F = \dfrac{\text{MSB}}{\text{MSW}} \), df \(= (k - 1, \; N - k)\).
+
+## 10.4 Two-way ANOVA (without replication) — formulas
+
+\(r\) rows (treatments), \(c\) columns (blocks), \(N = rc\).
+
+| Source | SS | df |
+|--------|----|----|
+| Rows | \(\sum R_i^2 / c - G^2/N\) | \(r - 1\) |
+| Columns | \(\sum C_j^2 / r - G^2/N\) | \(c - 1\) |
+| Error | TSS − SSR − SSC | \((r-1)(c-1)\) |
+| Total | \(\sum X^2 - G^2/N\) | \(rc - 1\) |
+
+Two F-tests: \(F_R = \text{MSR}/\text{MSE}\) (rows), \(F_C = \text{MSC}/\text{MSE}\) (columns).
+
+## 10.5 Assumptions of ANOVA
+
+1. Observations independent across groups.
+2. Each group's observations are normally distributed.
+3. Variances are equal across groups (homoscedasticity).
+
+## 10.6 Worked PYQ-style examples
+
+> **Q 10.1.** ANOVA primarily tests:
+>
+> Equality of **means** of several populations.
+
+> **Q 10.2.** \(k = 4\) treatments, \(N = 24\). What is df for between and within?
+>
+> Between = 3, Within = 20.
+
+> **Q 10.3.** SSB = 60, SSW = 80, \(k = 4, N = 24\). F?
+>
+> MSB = 60/3 = 20. MSW = 80/20 = 4. F = 20/4 = **5.0**.
+
+> **Q 10.4.** Two-way layout 3 rows × 4 columns. df for error?
+>
+> \((3 - 1)(4 - 1) = \mathbf{6}\).
+
+> **Q 10.5.** TSS = 200, SSB = 50. SSW?
+>
+> 200 − 50 = **150**.
+
+> **Q 10.6.** ANOVA assumes homo-scedasticity, which means:
+>
+> Equal **variances** across groups.
+
+> **Q 10.7.** F is significant at 5% if F > F_table. The implication:
+>
+> At least one mean differs from the rest. (ANOVA is omnibus; doesn't say which.)
+
+> **Q 10.8.** A randomized block design corresponds to which ANOVA?
+>
+> **Two-way ANOVA** (one factor + blocks).
+
+## 10.7 Trap-recognition card
+
+| Trap | Defence |
+|------|---------|
+| ANOVA tests equality of variances | No — it tests equality of **means** (using the variance ratio as a tool). |
+| Significant F → all means differ | F only says "not all equal". Need post-hoc to find pairs. |
+| Within-error has \(N - 1\) df | No, \(N - k\). The \(N - 1\) belongs to total. |
+| df_total = N | No, \(N - 1\). |
+
+## 10.8 Mini-mock
+
+| # | Q | Ans |
+|---|----|-----|
+| 1 | ANOVA test stat? | F = MSB/MSW |
+| 2 | df for total in one-way? | N − 1 |
+| 3 | k=3, N=15. df between, within? | 2, 12 |
+| 4 | TSS partition (one-way)? | TSS = SSB + SSW |
+| 5 | TSS partition (two-way)? | TSS = SSR + SSC + SSE |
+| 6 | MSB units? | same as MSW (variance) |
+| 7 | If MSB = MSW exactly, F? | 1 |
+| 8 | A two-way layout 4×5. df error? | 12 |
+| 9 | Assumption: equal variances called? | Homoscedasticity |
+| 10 | One-way ANOVA with k = 2 reduces to? | Two-sample t-test |
+
+## 10.9 Active-recall prompts
+
+1. Write the one-way ANOVA decomposition of total sum of squares.
+2. State the three assumptions of ANOVA.
+3. Write df for between, within, total in one-way (with \(k\) groups, \(N\) observations).
+4. State the F-test decision rule.
+5. How does one-way ANOVA with k=2 relate to a two-sample t-test?
+
+---
+
+\newpage
+
+# CHAPTER 11 — Time Series Analysis
+
+**Importance:** ⭐⭐⭐⭐ HIGH (≈7 Qs / paper)
+**Difficulty:** Easy–Medium. Concept-heavy + a few computational Qs (moving average, semi-average).
+
+## 11.0 — Understanding Time Series from First Principles
+
+<div class="intuition">
+
+**What is a time series, and why do we need to decompose it?**
+
+A **time series** is a sequence of observations recorded at regular time intervals — annual GDP, monthly rainfall, daily stock prices, quarterly sales. Unlike cross-sectional data (all measured at one moment), time series has temporal order that carries information: past values influence future values.
+
+A time series is not random noise — it has structure. A JSO-level statistician decomposes it into four additive (or multiplicative) components:
+
+1. **Trend (T):** The long-term directional movement — rising (India's GDP for 30 years), falling (landline subscriptions since 2005), or flat. This is the "signal" through the noise.
+
+2. **Seasonal variation (S):** Regular, predictable within-year patterns that repeat every year. Ice cream sales peak in May–July every year. Woolen clothing sales peak in December every year. These are seasonal — and they are *expected*.
+
+3. **Cyclical variation (C):** Longer-term, irregular waves lasting 3–10 years, linked to economic cycles (expansion → peak → recession → trough). Unlike seasonal, cycles are not fixed-period.
+
+4. **Irregular variation (I):** Random, unpredictable shocks — a flood destroys a quarter's harvest, a pandemic shuts down an economy for two years, a factory fire disrupts supply.
+
+**Why decompose?** Because each component requires a different response: a rising trend in crime needs policy intervention; a seasonal spike needs inventory planning; an irregular shock cannot be predicted and should not distort long-term planning.
+
+</div>
+
+**Two models for decomposition:**
+
+| Model | Equation | When to use |
+|-------|----------|------------|
+| Additive | $Y = T + S + C + I$ | When seasonal variation is roughly constant in magnitude regardless of trend level |
+| Multiplicative | $Y = T \times S \times C \times I$ | When seasonal variation grows proportionally with trend (more common in business data) |
+
+**Moving averages — how they smooth out fluctuations:**
+
+A 4-point moving average of $Y_1, Y_2, Y_3, \ldots$ is:
+$M_1 = (Y_1+Y_2+Y_3+Y_4)/4$, $M_2 = (Y_2+Y_3+Y_4+Y_5)/4$, etc.
+
+Each moving average "irons out" the short-term fluctuations, leaving a smoother trend estimate. For quarterly data (period = 4), a 4-point MA removes the seasonal component. For monthly data (period = 12), use a 12-point MA.
+
+**Solved Example 11.A — 3-point moving average:**
+
+Annual sales (₹ lakh): 10, 14, 12, 16, 18, 15, 20.
+
+> $M_1 = (10+14+12)/3 = 12.0$
+> $M_2 = (14+12+16)/3 = 14.0$
+> $M_3 = (12+16+18)/3 = 15.33$
+> $M_4 = (16+18+15)/3 = 16.33$
+> $M_5 = (18+15+20)/3 = 17.67$
+
+The moving averages (12.0, 14.0, 15.33, 16.33, 17.67) show a clearer upward trend than the raw data.
+
+## 11.1 Examiner mindset
+
+| Angle | Pet question |
+|-------|--------------|
+| Components of time series | trend, seasonal, cyclical, irregular |
+| Mathematical models | Additive, Multiplicative |
+| Trend by free-hand / semi-average / moving average / least squares | Direct compute |
+| Seasonal indices | Method of simple averages, ratio-to-moving-average, ratio-to-trend |
+| Removing seasonality (deseasonalised series) | Concept |
+
+## 11.2 Four components
+
+| Component | Symbol | Description | Period |
+|-----------|--------|-------------|--------|
+| **Trend** | T | Long-term direction | years to decades |
+| **Seasonal** | S | Regular within-year pattern | quarters / months |
+| **Cyclical** | C | Wave-like, longer than a year | 2-10 years |
+| **Irregular / Random** | I (or R) | Unpredictable shocks | random |
+
+## 11.3 Two models
+
+| Model | Equation | Use |
+|-------|----------|-----|
+| Additive | \( Y = T + S + C + I \) | When seasonal swings are roughly constant in size |
+| Multiplicative | \( Y = T \cdot S \cdot C \cdot I \) | When seasonal swings scale with trend |
+
+## 11.4 Methods of measuring trend
+
+### (i) Free-hand (graphic) method
+
+Plot data, draw a smooth line by eye. Subjective.
+
+### (ii) Semi-average method
+
+| Step | What you do |
+|------|-------------|
+| 1 | Split the series into two equal halves. (If odd count, drop the middle observation.) |
+| 2 | Compute the mean of each half. |
+| 3 | Plot the two averages at the mid-period of each half. The line through them is the trend. |
+
+### (iii) Moving-average method
+
+For a 3-year MA, the trend value of year \(t\) is:
+
+\[
+M_t = \dfrac{Y_{t-1} + Y_t + Y_{t+1}}{3}
+\]
+
+For an even period (4-year), use **centred moving average** to align with original years.
+
+| Property | Note |
+|----------|------|
+| Smooths out short-term fluctuations | yes |
+| Loses observations at start and end | (n − 1)/2 each side for odd period |
+| Best when no clear mathematical trend | yes |
+
+### (iv) Least-squares (linear trend)
+
+Fit \( \hat Y = a + bX \) where \(X\) = coded time.
+
+\[
+b = \dfrac{\sum X Y}{\sum X^2}, \quad a = \bar Y - b \bar X
+\]
+
+(Choose origin so that \(\sum X = 0\) → simpler arithmetic.)
+
+## 11.5 Measuring seasonal variation — Method of Simple Averages
+
+| Step | What |
+|------|------|
+| 1 | Arrange data by month/quarter for each year |
+| 2 | Compute the average for each season across years |
+| 3 | Compute grand average |
+| 4 | Seasonal index for season \(j = (\text{average for season } j) / (\text{grand average}) \times 100\) |
+
+The 4 (or 12) indices average to 100. If they don't, **adjust** by multiplying each by 100 / their average.
+
+## 11.6 Worked PYQ-style examples
+
+> **Q 11.1.** A time-series component repeating every year is:
+>
+> **Seasonal**.
+
+> **Q 11.2.** Multiplicative model of time series?
+>
+> \(Y = T \cdot S \cdot C \cdot I\).
+
+> **Q 11.3.** Sales: 10, 12, 14, 13, 16, 18, 20. 3-year moving averages?
+>
+> Centered at 2nd year: (10+12+14)/3 = 12.
+> 3rd: (12+14+13)/3 = 13.
+> 4th: (14+13+16)/3 = 14.33.
+> 5th: (13+16+18)/3 = 15.67.
+> 6th: (16+18+20)/3 = 18.
+
+> **Q 11.4.** A company's quarterly sales: Q1=120, Q2=160, Q3=180, Q4=140 in year-1; year-2 same proportionally with grand average 160. Seasonal index Q3?
+>
+> = 180/150 × 100 = 120 (using year-1 average 150). Then re-base to grand average if needed.
+
+> **Q 11.5.** The semi-average method of fitting trend uses how many points to draw the line?
+>
+> **Two** points (one for each half).
+
+> **Q 11.6.** Removing trend from a time series gives the:
+>
+> Detrended series. (Removing seasonality → deseasonalised.)
+
+> **Q 11.7.** Cyclical component differs from seasonal in:
+>
+> **Period > 1 year** (cyclical) vs ≤ 1 year (seasonal).
+
+> **Q 11.8.** A 5-year moving average loses how many observations at each end?
+>
+> 2 at each end (so 4 total).
+
+> **Q 11.9.** Sum of seasonal indices over 4 quarters should equal:
+>
+> 400 (so each averages to 100).
+
+> **Q 11.10.** Trend by least squares with \(\sum X = 0\): \(b\) formula?
+>
+> \( b = \sum XY / \sum X^2 \).
+
+## 11.7 Trap-recognition card
+
+| Trap | Defence |
+|------|---------|
+| Confusing seasonal with cyclical | Seasonal = regular ≤ 1 year; cyclical = irregular wave > 1 year. |
+| Using a non-centred MA for even periods | Centre it (otherwise off by half a year). |
+| Forgetting to adjust seasonal indices to sum to 400 | Always verify. |
+| Free-hand method called "objective" | It's the most subjective method. |
+
+## 11.8 Mini-mock
+
+| # | Q | Ans |
+|---|----|-----|
+| 1 | Components of TS? | T, S, C, I |
+| 2 | Multiplicative model formula? | Y = T·S·C·I |
+| 3 | A 3-year MA at year t = ? | (Yt-1 + Yt + Yt+1)/3 |
+| 4 | Sum of 4 quarterly seasonal indices? | 400 |
+| 5 | Removing trend gives the …? | Detrended series |
+| 6 | Cyclical period typically? | 2–10 years |
+| 7 | Method of least squares minimises? | Σ(Y − Ŷ)² |
+| 8 | Semi-average method draws a line through how many points? | 2 |
+| 9 | The most subjective method of trend? | Free-hand |
+| 10 | Even-period MA needs? | Centring |
+
+## 11.9 Active-recall prompts
+
+1. List the four components of a time series.
+2. State the additive and multiplicative models.
+3. Compute a 3-year moving average for the sequence 10, 12, 14, 16.
+4. Describe the semi-average method in three steps.
+5. State why even-period moving averages need centring.
+
+---
+
+\newpage
+
+# CHAPTER 12 — Index Numbers
+
+**Importance:** ⭐⭐⭐⭐ HIGH (≈6 Qs / paper)
+**Difficulty:** Easy. Pure formulas. Three minutes per question.
+
+## 12.0 — Understanding Index Numbers from First Principles
+
+<div class="intuition">
+
+**What is an index number, and why do we need weighted indices?**
+
+An **index number** measures relative change from a base period. CPI = 180 means prices today are 80% higher than in the base year. Sensex at 75,000 is an index measuring the market value of 30 selected stocks relative to their values on 1 April 1979 (base = 100).
+
+**The aggregation problem:** A household buys rice, cooking oil, clothing, and electronics. You want to measure how "the cost of living" changed. You cannot just average the price changes — rice and oil dominate monthly spending; electronics are a small fraction. An unweighted average treats a 50% rise in electronics (minor expense) the same as a 50% rise in rice (major expense). This is misleading.
+
+**Solution — weighted price indices:**
+- **Laspeyres index:** Use base-period quantities as weights. $L = \frac{\sum p_1 q_0}{\sum p_0 q_0} \times 100$. Easier to compute (base-year quantities are fixed), but tends to overstate inflation because it doesn't account for consumers substituting cheaper goods.
+- **Paasche index:** Use current-period quantities as weights. $P = \frac{\sum p_1 q_1}{\sum p_0 q_1} \times 100$. More realistic (accounts for substitution), but requires current-year quantity data every period — expensive to collect. Tends to understate inflation.
+- **Fisher's Ideal Index:** $F = \sqrt{L \times P}$ — geometric mean of Laspeyres and Paasche. Satisfies both the Time Reversal Test and the Factor Reversal Test. Called "ideal" because it is the best compromise.
+
+</div>
+
+<div class="formula">
+
+**The six index formulas (all appear in JSO exams):**
+
+| Name | Formula | Weights |
+|------|---------|---------|
+| Laspeyres Price Index | $\dfrac{\sum p_1 q_0}{\sum p_0 q_0} \times 100$ | Base-year quantities |
+| Paasche Price Index | $\dfrac{\sum p_1 q_1}{\sum p_0 q_1} \times 100$ | Current-year quantities |
+| Fisher's Ideal | $\sqrt{L \times P}$ | Geometric mean of above |
+| Simple AM of Price Relatives | $\dfrac{\sum(p_1/p_0)}{n} \times 100$ | Equal weights |
+| Weighted AM of Price Relatives | $\dfrac{\sum w \cdot (p_1/p_0)}{\sum w} \times 100$ | Given weights |
+| Dorbish-Bowley | $\dfrac{L + P}{2}$ | AM of Laspeyres and Paasche |
+
+</div>
+
+**Tests for a good index number:**
+
+| Test | What it checks | Fisher's status |
+|------|---------------|----------------|
+| Time Reversal Test | $P_{01} \times P_{10} = 1$ | ✓ Satisfies |
+| Factor Reversal Test | Price index × Quantity index = Value index | ✓ Satisfies |
+| Circular Test | $P_{01} \times P_{12} \times P_{20} = 1$ | ✗ Does not satisfy |
+
+**Solved Example 12.A — Laspeyres and Paasche:**
+
+| Commodity | $p_0$ | $q_0$ | $p_1$ | $q_1$ |
+|-----------|------|------|------|------|
+| A | 10 | 5 | 12 | 6 |
+| B | 8 | 4 | 10 | 3 |
+
+> $\sum p_0 q_0 = 50 + 32 = 82$; $\sum p_1 q_0 = 60 + 40 = 100$.
+>
+> **Laspeyres** $= \dfrac{100}{82} \times 100 = \mathbf{121.95}$
+>
+> $\sum p_1 q_1 = 72 + 30 = 102$; $\sum p_0 q_1 = 60 + 24 = 84$.
+>
+> **Paasche** $= \dfrac{102}{84} \times 100 = \mathbf{121.43}$
+>
+> **Fisher's Ideal** $= \sqrt{121.95 \times 121.43} = \sqrt{14814.5} = \mathbf{121.72}$
+
+## 12.1 Examiner mindset
+
+| Angle | Pet question |
+|-------|--------------|
+| Definition of index number | conceptual MCQ |
+| Simple aggregate / simple average of price relatives | direct |
+| Laspeyres, Paasche, Fisher, Marshall-Edgeworth, Walsh | direct formula |
+| Tests: time-reversal, factor-reversal, circular | "Which formula satisfies … ?" |
+| Cost of living index | aggregate expenditure / family budget |
+| Base shifting, splicing, deflating | concept + tiny computation |
+
+## 12.2 Definition
+
+> An **index number** is a statistical measure designed to show changes in a variable or a group of related variables with respect to time, geographic location, or other characteristic.
+
+Notation: \( P_0, Q_0 \) for **base** period; \( P_1, Q_1 \) for **current** period.
+
+## 12.3 Types of index numbers
+
+| Type | Example |
+|------|---------|
+| Price index | Wholesale Price Index (WPI), Consumer Price Index (CPI) |
+| Quantity index | Index of Industrial Production (IIP) |
+| Value index | total value relative |
+| Special-purpose | sensex / nifty (financial), HDI, etc. |
+
+## 12.4 Unweighted indices
+
+| Method | Formula |
+|--------|---------|
+| Simple aggregate | \( P_{01} = \dfrac{\sum P_1}{\sum P_0} \times 100 \) |
+| Simple average of price relatives (AM) | \( P_{01} = \dfrac{1}{n} \sum \dfrac{P_1}{P_0} \times 100 \) |
+| Simple average of price relatives (GM) | \( P_{01} = \mathrm{antilog}\!\left(\dfrac{\sum \log(P_1/P_0)}{n}\right) \times 100 \) |
+
+## 12.5 Weighted aggregate indices — the big four
+
+| Index | Formula | Weights used |
+|-------|---------|--------------|
+| **Laspeyres** | \( L = \dfrac{\sum P_1 Q_0}{\sum P_0 Q_0} \times 100 \) | base-year quantities (Q₀) |
+| **Paasche** | \( P = \dfrac{\sum P_1 Q_1}{\sum P_0 Q_1} \times 100 \) | current-year quantities (Q₁) |
+| **Fisher's ideal** | \( F = \sqrt{L \cdot P} \) | geometric mean of L and P |
+| **Marshall-Edgeworth** | \( ME = \dfrac{\sum P_1 (Q_0 + Q_1)}{\sum P_0 (Q_0 + Q_1)} \times 100 \) | average of base and current quantities |
+| **Walsh** | \( W = \dfrac{\sum P_1 \sqrt{Q_0 Q_1}}{\sum P_0 \sqrt{Q_0 Q_1}} \times 100 \) | geometric mean of quantities |
+
+<div class="mnemonic"><strong>Memory hook for Laspeyres vs Paasche.</strong> "Laspeyres uses **L**ast-period (base) quantities. Paasche uses **P**resent-period (current) quantities."</div>
+
+## 12.6 The three "tests" — which index satisfies them
+
+| Test | Condition | Laspeyres | Paasche | Fisher | ME | Walsh |
+|------|-----------|-----------|---------|--------|----|----|
+| **Time reversal** \(P_{01} \cdot P_{10} = 1\) | Index of "1 → 0" should undo index of "0 → 1" | ✗ | ✗ | ✓ | ✓ | ✓ |
+| **Factor reversal** \(P_{01} \cdot Q_{01} = V_{01}\) | Price × Quantity index = Value index | ✗ | ✗ | ✓ | ✗ | ✗ |
+| **Circular** \(P_{01} \cdot P_{12} \cdot P_{20} = 1\) | Chain consistency | ✗ | ✗ | ✗ | ✗ | partly |
+
+**Hence Fisher's index is called "Ideal" — it satisfies both time and factor reversal.**
+
+## 12.7 Cost of Living Index (Consumer Price Index)
+
+Two main methods:
+
+| Method | Formula |
+|--------|---------|
+| Aggregate expenditure (≈ Laspeyres) | \( \dfrac{\sum P_1 Q_0}{\sum P_0 Q_0} \times 100 \) |
+| Family budget (weighted AM of price relatives) | \( \dfrac{\sum W \cdot (P_1/P_0) \times 100}{\sum W} \), where \(W = P_0 Q_0\) |
+
+Both methods are mathematically equivalent.
+
+## 12.8 Base shifting, splicing, deflating
+
+| Operation | Formula |
+|-----------|---------|
+| **Base shifting**: shift the base from year-X to year-Y | \(\text{New index}_t = \dfrac{\text{Old index}_t}{\text{Old index}_Y} \times 100\) |
+| **Splicing**: join two index series with overlapping period | Multiply older series by (new value at overlap / old value at overlap), or vice versa |
+| **Deflating**: convert money wages → real wages | \(\text{Real} = \dfrac{\text{Money value}}{\text{CPI}} \times 100\) |
+| **Purchasing power of money** | \(1/\text{CPI} \times 100\) |
+
+## 12.9 Worked PYQ-style examples
+
+> **Q 12.1.** Compute Laspeyres index given:
+>
+> | Item | P₀ | Q₀ | P₁ |
+> |------|----|----|----|
+> | A | 4 | 10 | 5 |
+> | B | 6 | 5 | 9 |
+>
+> Numerator = 5·10 + 9·5 = 50 + 45 = 95.
+> Denom = 4·10 + 6·5 = 40 + 30 = 70.
+> L = 95/70 × 100 = **135.71**.
+
+> **Q 12.2.** Same items + Q₁ = 12, 4. Compute Paasche.
+>
+> Num = 5·12 + 9·4 = 60 + 36 = 96.
+> Denom = 4·12 + 6·4 = 48 + 24 = 72.
+> P = 96/72 × 100 = **133.33**.
+
+> **Q 12.3.** Fisher's index for above?
+>
+> \( \sqrt{135.71 \times 133.33} = \sqrt{18093} \approx \mathbf{134.51} \).
+
+> **Q 12.4.** Which index satisfies factor reversal?
+>
+> **Fisher's** (the "Ideal" index).
+
+> **Q 12.5.** Money wage 6000, CPI = 150. Real wage?
+>
+> 6000/150 × 100 = **4000**.
+
+> **Q 12.6.** Purchasing power of money when CPI = 200?
+>
+> 1/200 × 100 = **0.50** (= 50% of base period).
+
+> **Q 12.7.** A series with base 2010 = 100 has values 110 (2011), 121 (2012), 133 (2013). Shift base to 2012.
+>
+> Divide by 121, multiply by 100. New values: 110/121×100 ≈ 90.91, 100, 109.92.
+
+> **Q 12.8.** \(L = 144, P = 121\). Fisher?
+>
+> \(\sqrt{144 \cdot 121} = \sqrt{17424} = 132\).
+
+> **Q 12.9.** Marshall-Edgeworth uses what weight?
+>
+> \(Q_0 + Q_1\) (sum of base and current quantities).
+
+> **Q 12.10.** A simple aggregate of prices index ignores:
+>
+> Quantities (it's unweighted).
+
+## 12.10 Trap-recognition card
+
+| Trap | Defence |
+|------|---------|
+| Laspeyres weights are Q₁ | No, **Q₀** (base year). |
+| Paasche always > Laspeyres | False (depends on substitution effect). |
+| Fisher satisfies circular | No, only time + factor reversal. |
+| "Real wage" formula uses raw money | No — divide by CPI and multiply by 100. |
+
+## 12.11 Mini-mock
+
+| # | Q | Ans |
+|---|----|-----|
+| 1 | Laspeyres uses which year's quantities? | Base year (Q₀) |
+| 2 | Paasche uses which year's quantities? | Current year (Q₁) |
+| 3 | Fisher = ? | √(L·P) |
+| 4 | "Ideal" index? | Fisher |
+| 5 | Real wage formula? | Money/CPI × 100 |
+| 6 | Test that L·P doesn't satisfy individually? | Time reversal & factor reversal |
+| 7 | If CPI rises, purchasing power of money? | Falls |
+| 8 | A price index of 120 means? | 20% rise from base |
+| 9 | Splicing two index series joins them at? | Overlap year |
+| 10 | Index used to convert money values into real values? | Price index (CPI/WPI) |
+
+## 12.12 Active-recall prompts
+
+1. Write Laspeyres, Paasche, Fisher formulas.
+2. Which index is "ideal" and why?
+3. Define base shifting in one line and write its formula.
+4. Write the formula for real wage.
+5. State the time-reversal and factor-reversal tests.
+
+---
+
+\newpage
+
+# APPENDIX A — Master Formula Sheet (one-page revision)
+
+## A.1 Central tendency
+
+| Concept | Formula |
+|---------|---------|
+| AM (raw / freq) | \(\bar X = \sum X/n = \sum fX / N\) |
+| Step-deviation AM | \( A + \dfrac{\sum f u}{N} \cdot h \), \(u = (X-A)/h\) |
+| Combined mean | \( \dfrac{n_1 \bar X_1 + n_2 \bar X_2}{n_1 + n_2} \) |
+| GM | \( (X_1 \cdots X_n)^{1/n} \); \(\log\)-AM form |
+| HM | \( n / \sum (1/X_i) \) |
+| AM·HM = GM² | (for two positive numbers only) |
+| Median (grouped) | \( L + \dfrac{N/2 - F}{f} h \) |
+| Mode (grouped) | \( L + \dfrac{f_1 - f_0}{2 f_1 - f_0 - f_2} h \) |
+| Empirical rel. | Mode = 3 Median − 2 Mean |
+
+## A.2 Dispersion
+
+| Concept | Formula |
+|---------|---------|
+| Range | max − min |
+| QD | (Q₃ − Q₁)/2 |
+| Coeff QD | (Q₃ − Q₁)/(Q₃ + Q₁) |
+| Variance (computational) | \( \dfrac{\sum X^2}{n} - \bar X^2 \) |
+| Step-deviation var | \( h^2 \big[\sum f u^2 / N - (\sum f u / N)^2\big] \) |
+| CV | \( \sigma / \bar X \times 100 \) |
+| Combined SD | \( \sigma_{12}^2 = \dfrac{n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)}{n_1 + n_2} \) |
+| Var(aX + b) | \(a^2 \cdot \text{Var}(X)\) |
+| Var(X+Y) (indep) | \(\text{Var}(X) + \text{Var}(Y)\) |
+| Var(X−Y) (indep) | \(\text{Var}(X) + \text{Var}(Y)\) |
+
+## A.3 Moments / Skewness / Kurtosis
+
+| Concept | Formula |
+|---------|---------|
+| Raw moment | \( \mu_r' = \sum f X^r / N \) |
+| Central moment | \( \mu_r = \sum f (X - \bar X)^r / N \) |
+| \(\mu_2\) | \(= \sigma^2\) |
+| \(\mu_2 \) from raw | \(\mu_2 = \mu_2' - (\mu_1')^2\) |
+| \(\mu_3 \) from raw | \(\mu_3 = \mu_3' - 3 \mu_1' \mu_2' + 2 (\mu_1')^3\) |
+| Karl Pearson Sk | \( (\bar X - \text{Mode})/\sigma \), or \( 3(\bar X - \text{Med})/\sigma \) |
+| Bowley Sk | \( (Q_3 + Q_1 - 2Q_2)/(Q_3 - Q_1) \) |
+| \(\beta_1\) | \(\mu_3^2 / \mu_2^3\) |
+| \(\beta_2\) | \(\mu_4 / \mu_2^2\); = 3 normal, > 3 lepto, < 3 platy |
+| Sheppard correction (\(\mu_2\)) | subtract \(h^2/12\) |
+
+## A.4 Correlation / Regression
+
+| Concept | Formula |
+|---------|---------|
+| Karl Pearson r | \( \dfrac{n \sum XY - \sum X \sum Y}{\sqrt{[n \sum X^2 - (\sum X)^2][n \sum Y^2 - (\sum Y)^2]}} \) |
+| Spearman ρ | \( 1 - 6 \sum d^2 / [n(n^2 - 1)] \) |
+| \(b_{YX}\) | \( r \sigma_Y / \sigma_X = \text{Cov}/\sigma_X^2 \) |
+| \(b_{XY}\) | \( r \sigma_X / \sigma_Y = \text{Cov}/\sigma_Y^2 \) |
+| \(r\) from slopes | \( \pm \sqrt{b_{YX} b_{XY}} \) |
+| Two regression lines meet at | \( (\bar X, \bar Y) \) |
+| SE of estimate | \( S_{Y\cdot X} = \sigma_Y \sqrt{1 - r^2} \) |
+| Coefficient of determination | \(r^2\) |
+| Partial \(r_{12.3}\) | \( (r_{12} - r_{13} r_{23})/\sqrt{(1-r_{13}^2)(1-r_{23}^2)} \) |
+| Multiple \(R_{1.23}^2\) | \( (r_{12}^2 + r_{13}^2 - 2 r_{12} r_{13} r_{23})/(1 - r_{23}^2) \) |
+
+## A.5 Probability
+
+| Concept | Formula |
+|---------|---------|
+| P(A ∪ B) | \(P(A) + P(B) - P(A \cap B)\) |
+| P(A | B) | \(P(A \cap B)/P(B)\) |
+| Multiplication | \(P(A \cap B) = P(A) P(B|A)\) |
+| Independence | \(P(A \cap B) = P(A) P(B)\) |
+| Bayes | \( P(B_i | A) = \dfrac{P(B_i) P(A|B_i)}{\sum_j P(B_j) P(A|B_j)} \) |
+
+## A.6 Distributions
+
+| Distribution | pmf / pdf | Mean | Variance |
+|--------------|-----------|------|----------|
+| Binomial(n,p) | \({}^nC_r p^r q^{n-r}\) | np | npq |
+| Poisson(λ) | \(e^{-\lambda} \lambda^r / r!\) | λ | λ |
+| Normal(μ,σ²) | \(\frac{1}{\sigma\sqrt{2\pi}} e^{-(x-\mu)^2/(2\sigma^2)}\) | μ | σ² |
+| Hypergeom(N,K,n) | \({}^KC_k {}^{N-K}C_{n-k}/{}^NC_n\) | nK/N | nK(N-K)(N-n)/[N²(N-1)] |
+| Uniform(a,b) | \(1/(b-a)\) | (a+b)/2 | (b-a)²/12 |
+
+## A.7 Sampling and inference
+
+| Concept | Formula |
+|---------|---------|
+| SE of mean (∞ pop) | \(\sigma/\sqrt n\) |
+| SE of mean (FPC) | \(\sigma/\sqrt n \cdot \sqrt{(N-n)/(N-1)}\) |
+| SE of proportion | \(\sqrt{P(1-P)/n}\) |
+| 95 % CI for μ (large) | \(\bar X \pm 1.96 \sigma / \sqrt n\) |
+| t-stat (one mean) | \((\bar X - \mu_0)/(s/\sqrt n)\), df = \(n-1\) |
+| Pooled variance | \(s_p^2 = [(n_1-1)s_1^2 + (n_2-1)s_2^2]/(n_1+n_2-2)\) |
+| χ² goodness | \(\sum (O - E)^2/E\) |
+| F (variances) | \(s_1^2 / s_2^2\) (larger over smaller) |
+| ANOVA F | MSB / MSW |
+| Sample size for E (mean) | \(n = (z_{\alpha/2} \sigma / E)^2\) |
+
+## A.8 Time series and index numbers
+
+| Concept | Formula |
+|---------|---------|
+| Additive TS | \(Y = T + S + C + I\) |
+| Multiplicative TS | \(Y = T \cdot S \cdot C \cdot I\) |
+| 3-yr MA | \((Y_{t-1} + Y_t + Y_{t+1})/3\) |
+| Linear trend (Σ X = 0) | \(b = \sum XY/\sum X^2\), \(a = \bar Y\) |
+| Laspeyres | \(\sum P_1 Q_0 / \sum P_0 Q_0 \times 100\) |
+| Paasche | \(\sum P_1 Q_1 / \sum P_0 Q_1 \times 100\) |
+| Fisher | \(\sqrt{L \cdot P}\) |
+| Real wage | Money wage / CPI × 100 |
+| Purchasing power | 1/CPI × 100 |
+
+---
+
+\newpage
+
+# APPENDIX B — ULTIMATE TABLES (rapid reference)
+
+## B.1 Common z-values and CI multipliers
+
+| Confidence level | Two-tail \(z_{\alpha/2}\) | Right-tail \(z_\alpha\) |
+|------------------|--------------------------|--------------------------|
+| 90 % | 1.645 | 1.282 |
+| 95 % | 1.960 | 1.645 |
+| 98 % | 2.326 | 2.054 |
+| 99 % | 2.576 | 2.326 |
+
+## B.2 Excerpt from standard normal table — \(P(0 \le Z \le z)\)
+
+| z | 0.0 | 0.5 | 1.0 | 1.5 | 1.96 | 2.0 | 2.5 | 2.58 | 3.0 |
+|---|-----|-----|-----|-----|------|-----|-----|------|-----|
+| Area | 0 | 0.1915 | 0.3413 | 0.4332 | 0.4750 | 0.4772 | 0.4938 | 0.4951 | 0.4987 |
+
+So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
+
+## B.3 t-table (two-tail 5 %) — common df
+
+| df | \(t_{0.025}\) | df | \(t_{0.025}\) |
+|----|--------------|----|--------------|
+| 5 | 2.571 | 20 | 2.086 |
+| 10 | 2.228 | 25 | 2.060 |
+| 15 | 2.131 | 30 | 2.042 |
+| ∞ | 1.960 (= z) | | |
+
+## B.4 χ²-table (5 % upper-tail)
+
+| df | \(\chi^2_{0.05}\) |
+|----|---------|
+| 1 | 3.84 |
+| 2 | 5.99 |
+| 3 | 7.81 |
+| 4 | 9.49 |
+| 5 | 11.07 |
+| 10 | 18.31 |
+
+## B.5 F-table (5 %, selected)
+
+| \(df_1, df_2\) | F |
+|----------------|---|
+| (5, 5) | 5.05 |
+| (5, 10) | 3.33 |
+| (10, 10) | 2.97 |
+| (10, 20) | 2.35 |
+| (20, 20) | 2.12 |
+| (∞, ∞) | 1.00 |
+
+## B.6 Distribution-recognition cheat sheet
+
+| Cue word in question | Distribution to use |
+|---------------------|--------------------|
+| "two outcomes per trial, n trials, fixed p" | Binomial |
+| "rate / per unit time / rare events" | Poisson |
+| "approximately normal", bell, ± σ | Normal |
+| "without replacement, finite N" | Hypergeometric |
+| "uniformly distributed over interval" | Continuous Uniform |
+
+## B.7 Test-recognition cheat sheet
+
+| Question type | Test |
+|--------------|------|
+| Test μ, σ known or n large | Z |
+| Test μ, σ unknown, n small | t |
+| Test μ₁ = μ₂, σ unknown | two-sample t (pooled) |
+| Test paired data | paired t |
+| Test variance / GoF / independence | χ² |
+| Test σ₁² = σ₂² | F |
+| Test μ₁ = μ₂ = μ₃ = … | ANOVA F |
+
+## B.8 Greek + acronym glossary
+
+| Symbol | Reads as | Used for |
+|--------|---------|---------|
+| μ, σ | mu, sigma | population mean, SD |
+| ρ | rho | population correlation |
+| α | alpha | level of significance / Type I error rate |
+| β | beta | Type II error rate; also regression slope |
+| λ | lambda | Poisson rate / eigenvalue |
+| Σ | sigma | summation |
+| χ² | chi-square | test statistic |
+| df / d.f. | degrees of freedom | for t, χ², F |
+| pmf / pdf / CDF | probability mass / density function / cumulative DF | discrete vs continuous |
+| MLE / MoM / LS | maximum-likelihood / method of moments / least squares | estimation |
+
+---
+
+\newpage
+
+# APPENDIX C — Full-length 100-Q Mock (with answer key)
+
+> **Instructions.** 120 minutes. 2 marks per Q. **−0.5** per wrong. Use the in-test calculator. Answer key at the end.
+
+### Section I — Collection / Central Tendency / Dispersion (Qs 1-25)
+
+1. Class mark of 80–90 = ?
+2. \(\bar X\) of 14, 18, 22, 26, 30 = ?
+3. Median of 11, 13, 7, 19, 9 = ?
+4. Mode of 4, 4, 8, 9, 4, 5, 8 = ?
+5. AM·HM of two positive numbers = 144. GM = ?
+6. Variance of 2, 4, 6, 8, 10 = ?
+7. SD of 5 numbers is 4. If each is multiplied by 3, new SD = ?
+8. Range of 12, 4, 18, 7, 25, 9 = ?
+9. CV definition = ?
+10. \(\sum X = 100, \sum X^2 = 1100, n = 10\). σ = ?
+11. Combined mean of n₁=20 (mean 25), n₂=30 (mean 35) = ?
+12. If each obs is increased by 10, mean becomes ____, SD becomes ____.
+13. The angle of a sector representing 30 % in a pie chart = ?
+14. \(Q_3 - Q_1 = 24\). QD = ?
+15. Mode = 25, Median = 28. Mean (empirical) = ?
+16. Best graph for cumulative frequency = ?
+17. AM ≥ GM ≥ HM (always for positive data). T/F?
+18. Var(2X − 3) where Var(X) = 9 = ?
+19. SD of constant 25 = ?
+20. Class boundaries of 10–19 (inclusive form) = ?
+21. \(\sum (X - \bar X) = ?\)
+22. Std dev that is unaffected by extreme values = ? (range / SD / MD / QD)
+23. Frequency density when widths differ = ?
+24. Var(X + Y), X & Y indep, Var(X)=4, Var(Y)=9 = ?
+25. Coefficient of variation when σ=12, mean=60 = ?
+
+### Section II — Moments / Skewness / Correlation / Regression (Qs 26-50)
+
+26. \(\mu_1\) for any distribution = ?
+27. β₁ when \(\mu_3 = 0\) = ?
+28. β₂ = 3 means curve is = ?
+29. Bowley's skewness when median = mean of Q₁ and Q₃ = ?
+30. Pearson Sk: mean=42, mode=36, σ=6. Sk = ?
+31. \(b_{YX} = 0.4, b_{XY} = 1.6\). \(r = ?\)
+32. Two regression lines intersect at = ?
+33. \(r = 0\) → angle between regression lines = ?
+34. Spearman ρ when \(\sum d^2 = 30, n = 10\) = ?
+35. r between (X+5) and (Y−7), original r = 0.6 = ?
+36. \(r = 0.7, \sigma_X = 4, \sigma_Y = 6\). \(b_{YX}\) = ?
+37. r² coefficient of = ?
+38. Karl Pearson r is independent of = ?
+39. Multiple correlation R lies in = ?
+40. Var(X)=16, Var(Y)=9, indep. Var(X − Y) = ?
+41. Two regression slopes 0.5 and 0.6. r = ?
+42. Coefficient of determination, r=0.4 = ?
+43. \(\beta_2 = 1.8\), curve = ?
+44. \(\mu_3 = 8, \mu_2 = 4\). β₁ = ?
+45. Pearson Sk symmetric → mean − mode = ?
+46. SE of estimate Y on X = ?
+47. r in [−1, +1]. T/F?
+48. Spearman with tie correction adds = ?
+49. r between scaled (cX, dY) where c, d > 0 = ?
+50. \(r_{12.3}\) lies in = ?
+
+### Section III — Probability / Distributions / Sampling (Qs 51-75)
+
+51. P(king or queen) from a standard pack = ?
+52. P(A∩B) when A, B mutually exclusive = ?
+53. P(A∩B) = 0.2, P(B) = 0.5. P(A|B) = ?
+54. P(A) = 0.4, P(B) = 0.5, indep. P(A∩B) = ?
+55. Box: 60 % A, 40 % B. Defective rate 5 % vs 8 %. P(item is from A | defective) = ?
+56. Toss 3 coins. P(exactly 2 H) = ?
+57. P(at least one H in 4 tosses) = ?
+58. Bag has 5R, 3B. Draw 2 wo rep. P(both R) = ?
+59. \(X \sim B(10, 0.3)\). Mean = ?
+60. \(X \sim B(10, 0.3)\). Var = ?
+61. Poisson with mean 4. P(X = 0) = ?
+62. \(X \sim N(50, 25)\). P(X > 60) = ?
+63. \(X \sim N(\mu, \sigma^2)\). \(P(\mu - 1.96 \sigma < X < \mu + 1.96 \sigma)\) = ?
+64. \(\lambda = 9\). SD = ?
+65. Mean = Var → distribution = ?
+66. Continuous uniform [0, 4]. Var = ?
+67. SE of mean if σ=12, n=144 = ?
+68. Sampling without replacement on a finite population uses correction factor = ?
+69. CLT applies for n ≥ ?
+70. Stratified sampling reduces error when within-strata variability = ?
+71. A snowball sampling is = ?
+72. SE of proportion when p=0.5, n=400 = ?
+73. n needed for margin 2 at 95 % CI when σ=10 = ?
+74. Type I error symbol = ?
+75. Power of a test = ?
+
+### Section IV — Inference / ANOVA / TS / Index (Qs 76-100)
+
+76. χ² formula for goodness of fit = ?
+77. df for χ² independence in 4 × 5 table = ?
+78. F-test compares two = ?
+79. Test for one mean, σ known, n=80, two-tail 5 %, |Z| critical = ?
+80. Pooled variance formula in two-sample t = ?
+81. Unbiased divisor for sample variance = ?
+82. Sample mean is what kind of estimator? (4 properties)
+83. Max-likelihood estimate of \(p\) for binomial = ?
+84. ANOVA tests equality of = ?
+85. df_total in one-way ANOVA with N obs = ?
+86. SSB = 90, SSW = 60, k = 4, N = 24. F = ?
+87. Two-way ANOVA 3 × 4. df_error = ?
+88. Components of a time series = ?
+89. 5-yr MA loses how many obs at each end? = ?
+90. Sum of seasonal indices over 4 quarters = ?
+91. Multiplicative model = ?
+92. Linear trend slope (Σ X = 0) = ?
+93. Laspeyres uses which year's quantities? = ?
+94. Paasche uses = ?
+95. Fisher's index = ?
+96. Test that Fisher satisfies = ?
+97. Real wage = money wage / CPI × ?
+98. Purchasing power of money = ?
+99. CPI rises → purchasing power of money = ?
+100. Marshall-Edgeworth weight = ?
+
+---
+
+## Answer key
+
+| # | Ans | # | Ans | # | Ans | # | Ans |
+|---|-----|---|-----|---|-----|---|-----|
+| 1 | 85 | 26 | 0 | 51 | 8/52=2/13 | 76 | Σ(O−E)²/E |
+| 2 | 22 | 27 | 0 | 52 | 0 | 77 | (4−1)(5−1)=12 |
+| 3 | 11 | 28 | mesokurtic | 53 | 0.4 | 78 | variances |
+| 4 | 4 | 29 | 0 | 54 | 0.20 | 79 | 1.96 |
+| 5 | 12 | 30 | 1 | 55 | 0.484 | 80 | [(n₁−1)s₁²+(n₂−1)s₂²]/(n₁+n₂−2) |
+| 6 | 8 | 31 | 0.8 | 56 | 3/8 | 81 | n−1 |
+| 7 | 12 | 32 | (X̄, Ȳ) | 57 | 1−1/16=15/16 | 82 | unbiased, consistent, efficient, sufficient |
+| 8 | 21 | 33 | 90° | 58 | 5/14 | 83 | X/n |
+| 9 | σ/X̄ × 100 | 34 | 1−6·30/(10·99)≈0.818 | 59 | 3 | 84 | means |
+| 10 | √(110−100)=√10≈3.16 | 35 | 0.6 | 60 | 2.1 | 85 | N − 1 |
+| 11 | 31 | 36 | 1.05 | 61 | e⁻⁴≈0.0183 | 86 | (90/3)/(60/20)=30/3=10 |
+| 12 | mean+10, SD same | 37 | determination | 62 | P(Z>2)=0.0228 | 87 | (3−1)(4−1)=6 |
+| 13 | 108° | 38 | origin & scale | 63 | 0.95 | 88 | T, S, C, I |
+| 14 | 12 | 39 | [0,1] | 64 | 3 | 89 | 2 |
+| 15 | 30 | 40 | 25 | 65 | Poisson | 90 | 400 |
+| 16 | ogive | 41 | √0.30≈0.548 | 66 | (4−0)²/12=16/12=4/3 | 91 | Y = T·S·C·I |
+| 17 | T | 42 | 0.16 | 67 | 1 | 92 | ΣXY/ΣX² |
+| 18 | 36 | 43 | platykurtic | 68 | √[(N−n)/(N−1)] | 93 | base year (Q₀) |
+| 19 | 0 | 44 | 1 | 69 | 30 | 94 | current year (Q₁) |
+| 20 | 9.5 – 19.5 | 45 | 0 | 70 | small | 95 | √(L·P) |
+| 21 | 0 | 46 | σY√(1−r²) | 71 | non-probability | 96 | time + factor reversal |
+| 22 | QD | 47 | T | 72 | √(0.25/400)=0.025 | 97 | 100 |
+| 23 | f / h | 48 | m(m²−1)/12 per tie | 73 | (1.96·10/2)²≈96.04→97 | 98 | 1/CPI × 100 |
+| 24 | 13 | 49 | same r | 74 | α | 99 | falls |
+| 25 | 20 % | 50 | [−1, 1] | 75 | 1 − β | 100 | Q₀ + Q₁ |
+
+---
+
+\newpage
+
+# APPENDIX D — 7-day final revision plan (for the last week)
+
+| Day | Morning (3 h) | Evening (3 h) | Recall pass |
+|-----|---------------|--------------|-------------|
+| **D-7** | Ch 1 + Ch 2 (re-read theory, do mini-mocks) | Ch 3 (re-read + mini-mock + 20 PYQ-style problems) | All "Active-recall prompts" of Ch 1–3 closed-book |
+| **D-6** | Ch 4 + Ch 5 | Ch 6 + Ch 7 | Recall prompts Ch 4–7 |
+| **D-5** | Ch 8 + Ch 9 | Ch 9 second pass (most marks here) | Recall prompts Ch 8–9 |
+| **D-4** | Ch 10 + Ch 11 + Ch 12 | Master Formula Sheet — write it from memory twice | All recall prompts in one sitting |
+| **D-3** | Full-length mock (Appendix C) under timed conditions (120 min, calculator) | Score the mock honestly. List every wrong/skipped Q. | Re-read the chapter for each error |
+| **D-2** | Re-read every "Trap recognition card" in the book | Master Formula Sheet — write it from memory once more | One past JSO PYQ paper |
+| **D-1** | Light read of Appendices A & B only — no new problems | Sleep early. Eat light. | Visualise the test flow. |
+| **D-0 (test day)** | Calm 30-min glance at Master Formula Sheet | Test! | — |
+
+> **Test-day strategy.**
+>
+> 1. **First sweep (40 min)** — knock out every direct-formula and definition Q. Skip anything that takes more than 90 seconds.
+> 2. **Second sweep (50 min)** — return to medium Qs (Ch 5, 6, 7, 9 numericals).
+> 3. **Final sweep (25 min)** — attempt the leftover hard ones; mark unsure ones for review.
+> 4. **Last 5 min** — recheck answer-button selections, do nothing risky.
+> 5. **Negative-marking rule.** If you can eliminate even 2 of 4 options, attempt — expected value > 0. If you cannot eliminate any, leave it.
+
+---
+
+\newpage
+
+# APPENDIX E — Extended Drill Pack (deep dive on the 6 CRITICAL chapters)
+
+> **Why this pack exists.** 60 % of the JSO paper comes from six chapters. The chapter mini-mocks give you a taste; this pack gives you mastery. Aim: cover **every PYQ-frame** an SSC examiner has used in the last 6 papers. Solve closed-book; re-read the chapter only on a wrong answer.
+
+---
+
+\newpage
+
+## E-2  Central Tendency — extended drill (25 worked Qs)
+
+> **E-2.1.** Mean of \(2, 4, 6, \ldots, 50\) (i.e., first 25 even numbers)?
+>
+> Even numbers: \(2, 4, \ldots, 50\) → AP with 25 terms, first 2, last 50. Mean of an AP = (first + last)/2 = (2 + 50)/2 = **26**.
+
+> **E-2.2.** Mean of first 100 natural numbers?
+>
+> \( \dfrac{1 + 2 + \ldots + 100}{100} = \dfrac{100 \cdot 101 / 2}{100} = \dfrac{101}{2} = \mathbf{50.5} \).
+
+> **E-2.3.** A series of 6 observations has mean 12. If a 7th observation is added and the new mean is 13, what is the new value?
+>
+> Old sum = 72. New sum = 7 × 13 = 91. New value = 91 − 72 = **19**.
+
+> **E-2.4.** Mean of 25 observations was 36. It was found that two observations 47 and 35 were misread as 27 and 53. Correct mean?
+>
+> Old sum = 25 × 36 = 900. Adjustment = (47 + 35) − (27 + 53) = 82 − 80 = +2. Correct sum = 902. Correct mean = 902/25 = **36.08**.
+
+> **E-2.5.** Two groups of size 50 and 100 have means 60 and 75 respectively. Combined mean?
+>
+> \( \dfrac{50 \cdot 60 + 100 \cdot 75}{150} = \dfrac{3000 + 7500}{150} = \dfrac{10500}{150} = \mathbf{70} \).
+
+> **E-2.6.** AM of 10 observations is 25. After adding two new observations the mean becomes 27. Sum of the two new values?
+>
+> Old sum = 250. New sum = 12 × 27 = 324. Two new = 324 − 250 = **74**.
+
+> **E-2.7.** A man covers three equal distances at 30, 40 and 60 km/h. Average speed?
+>
+> Equal distances → HM. \( \text{HM} = 3/(1/30 + 1/40 + 1/60) \). LCM 120: 4/120 + 3/120 + 2/120 = 9/120. HM = 3 · 120/9 = **40 km/h**.
+
+> **E-2.8.** GM of 1, 3, 9, 27, 81?
+>
+> Powers of 3: \(3^0, 3^1, 3^2, 3^3, 3^4\). Product = \(3^{0+1+2+3+4} = 3^{10}\). GM = \((3^{10})^{1/5} = 3^2 = \mathbf{9}\). (Or: middle term of GP = GM.)
+
+> **E-2.9.** AM of two numbers exceeds their GM by 2. AM exceeds HM by what?
+>
+> Use AM × HM = GM². Let AM = G + 2, where GM = G. Then HM = G²/(G + 2). AM − HM = (G + 2) − G²/(G + 2) = [(G+2)² − G²]/(G + 2) = (4G + 4)/(G + 2) = 4(G + 1)/(G + 2). Without specifics, students often plug small values (G = 4 → AM = 6, HM = 16/6 = 8/3; AM − HM = 6 − 8/3 = 10/3 ≈ 3.33). The general answer: **\(4(G+1)/(G+2)\)**.
+
+> **E-2.10.** Median of 7, 9, 12, 14, 18, 22, 25, 28, 31?
+>
+> 9 odd values, middle = 5th = **18**.
+
+> **E-2.11.** Median of 7, 9, 12, 14, 18, 22, 25, 28?
+>
+> 8 even values, median = (4th + 5th)/2 = (14 + 18)/2 = **16**.
+
+> **E-2.12.** Mode of: 4, 4, 5, 5, 5, 6, 7, 7, 8, 8, 8, 8, 9?
+>
+> 8 appears 4 times — most frequent. **Mode = 8**.
+
+> **E-2.13.** Compute the mean of the following grouped data using step deviation. Take \(A = 35, h = 10\).
+>
+> | Class | 0–10 | 10–20 | 20–30 | 30–40 | 40–50 | 50–60 |
+> |-------|------|-------|-------|-------|-------|-------|
+> | f     | 5    | 8     | 12    | 20    | 10    | 5     |
+>
+> Class marks: 5, 15, 25, 35, 45, 55. \(u = (m − 35)/10\): −3, −2, −1, 0, 1, 2.
+> \(fu\): −15, −16, −12, 0, 10, 10. Σfu = −23. Σf = 60.
+> Mean = 35 + (−23/60)(10) = 35 − 3.83 = **31.17**.
+
+> **E-2.14.** From E-2.13, find the median.
+>
+> N/2 = 30. CF: 5, 13, 25, 45, 55, 60. Median class first crossing 30 = 30–40 (CF jumps from 25 to 45).
+> L = 30, F = 25, f = 20, h = 10. Median = 30 + (30 − 25)/20 × 10 = 30 + 2.5 = **32.5**.
+
+> **E-2.15.** Mode of E-2.13?
+>
+> Modal class = 30–40 (highest f = 20). \(f_1 = 20, f_0 = 12, f_2 = 10, L = 30, h = 10\).
+> Mode = 30 + (20 − 12)/(40 − 12 − 10) × 10 = 30 + 8/18 × 10 = 30 + 4.44 = **34.44**.
+
+> **E-2.16.** Verify the empirical relation on E-2.13/14/15.
+>
+> 3 Med − 2 Mean = 3(32.5) − 2(31.17) = 97.5 − 62.34 = 35.16. Mode by formula = 34.44. Approx match (empirical relation works exactly only for moderately skewed unimodal data).
+
+> **E-2.17.** \(P_{25}, P_{50}, P_{75}\) of a distribution correspond to which quartiles?
+>
+> \(Q_1, Q_2, Q_3\) respectively.
+
+> **E-2.18.** The 7th decile equals which percentile?
+>
+> \(D_7 = P_{70}\).
+
+> **E-2.19.** Which average is best for ratios and growth rates?
+>
+> **GM**.
+
+> **E-2.20.** Which average is most affected by sampling fluctuations?
+>
+> **AM** uses every observation linearly, so it is affected; mode is least affected, median is intermediate. The conventional answer for "most affected by extreme values": **AM**.
+
+> **E-2.21.** A car runs the first 1/3rd of a journey at 30 km/h, the next 1/3rd at 60 km/h, and the last 1/3rd at 90 km/h. Average speed?
+>
+> Equal distances → HM. \( 3 / (1/30 + 1/60 + 1/90) \). LCM 180: 6 + 3 + 2 = 11. \(180 \cdot 3 / 11 = 540/11 ≈ \mathbf{49.09 \text{ km/h}}\).
+
+> **E-2.22.** GM of 8 and 18?
+>
+> \(\sqrt{144} = \mathbf{12}\).
+
+> **E-2.23.** A class mean of 60 girls is 50, the combined mean (boys + girls = 100 students) is 54. Mean of boys?
+>
+> \(54 \cdot 100 = 50 \cdot 60 + \bar X_B \cdot 40 \Rightarrow 5400 = 3000 + 40 \bar X_B \Rightarrow \bar X_B = 60\).
+
+> **E-2.24.** For data 5, 7, 9, 11, 13, the mean of \(2X + 3\)?
+>
+> Mean of X = 9. So mean of 2X + 3 = 21.
+
+> **E-2.25.** When data is positively skewed, which is the largest of the three central tendencies?
+>
+> **Mean** (Mean > Median > Mode).
+
+---
+
+\newpage
+
+## E-3  Dispersion — extended drill (25 Qs)
+
+> **E-3.1.** Variance of first \(n\) odd natural numbers?
+>
+> Odd numbers: 1, 3, 5, …, (2n − 1). Mean = \(n\). \(\sum X^2 = \dfrac{n(2n-1)(2n+1)}{3}\).
+> Variance = \(\sum X^2 / n - n^2 = \dfrac{(2n-1)(2n+1)}{3} - n^2 = \dfrac{4n^2 - 1}{3} - n^2 = \dfrac{n^2 - 1}{3}\).
+> So variance of odd natural numbers up to \(2n - 1\) is \(\dfrac{n^2 - 1}{3}\) (analogous to natural numbers' \( (n^2-1)/12\); note the 4× because step is 2).
+
+> **E-3.2.** SD of \(2, 4, 6, 8, 10\)?
+>
+> Mean = 6. Deviations: −4, −2, 0, 2, 4. Squared: 16, 4, 0, 4, 16 → sum 40. Variance = 8. SD = \(2\sqrt 2 \approx \mathbf{2.83}\).
+
+> **E-3.3.** Mean of 10 observations is 5 and SD is 4. Find \(\sum X\) and \(\sum X^2\).
+>
+> \(\sum X = 50\). Variance = 16 = \(\sum X^2/10 − 25\) → \(\sum X^2 = 410\).
+
+> **E-3.4.** Var(X) = 9, Var(Y) = 16, X and Y are independent. Var(\(2X − 3Y\))?
+>
+> \(4 \cdot 9 + 9 \cdot 16 = 36 + 144 = \mathbf{180}\).
+
+> **E-3.5.** SD of 10 observations is 6. If each observation is increased by 5 and then divided by 2, new SD?
+>
+> Origin-add doesn't change SD; scale by 1/2 → SD = **3**.
+
+> **E-3.6.** Two groups of equal size with means 50 and 60 and SDs 4 and 3 respectively. Combined SD?
+>
+> Combined mean = 55. \(d_1 = -5, d_2 = +5\).
+> Combined var = (1·(16 + 25) + 1·(9 + 25))/2 = (41 + 34)/2 = 37.5. SD = \(\sqrt{37.5} ≈ \mathbf{6.12}\).
+
+> **E-3.7.** Variance computational form: which of the following is the correct expression?  (i) \(\sum (X − \bar X)^2 / n\), (ii) \(\sum X^2 / n − \bar X^2\), (iii) both, (iv) neither.
+>
+> **(iii) both** — they are algebraically equal.
+
+> **E-3.8.** Which has greater dispersion: A (mean 100, SD 20) or B (mean 250, SD 30)?
+>
+> CV(A) = 20%, CV(B) = 12%. **A** has greater relative dispersion.
+
+> **E-3.9.** First 10 natural numbers: variance and SD?
+>
+> Var = (10² − 1)/12 = 99/12 = **8.25**. SD = \(\sqrt{8.25} \approx 2.87\).
+
+> **E-3.10.** Mean deviation about median for the data 4, 6, 8, 10, 12?
+>
+> Median = 8. |X − 8| = 4, 2, 0, 2, 4. Sum = 12. MD = 12/5 = **2.4**.
+
+> **E-3.11.** Coefficient of QD when \(Q_1 = 22, Q_3 = 38\)?
+>
+> (38 − 22)/(38 + 22) = 16/60 = **0.267**.
+
+> **E-3.12.** Variance of \(7\) added 4 times → 7, 7, 7, 7?
+>
+> All equal → variance = **0**.
+
+> **E-3.13.** A constant value c is added to each observation. Effect on Var?
+>
+> **No change** (origin invariant).
+
+> **E-3.14.** SD of \(X = 5\). SD of \(-3X + 7\)?
+>
+> \(|-3| \cdot 5 = \mathbf{15}\).
+
+> **E-3.15.** Which of these is unaffected by the change of origin? Range, MD, SD, all of these.
+>
+> **All of these** — every dispersion measure is origin-invariant.
+
+> **E-3.16.** Two series A and B have CV 25% and 20% respectively. Which is more consistent?
+>
+> **B** (lower CV).
+
+> **E-3.17.** SD of 50 observations is 10. If each observation is multiplied by 2, the new SD?
+>
+> 20.
+
+> **E-3.18.** Lorenz curve of perfect inequality lies along which axes?
+>
+> Along the **x-axis up to the last point, then jumps vertically**. (One person owns everything.)
+
+> **E-3.19.** Sum of squared deviations from mean is the smallest. T/F?
+>
+> **True** — it's the minimum across all c.
+
+> **E-3.20.** \(\sum X = 60, \sum X^2 = 400, n = 10\). Variance?
+>
+> \(\bar X = 6\). Var = 40 − 36 = **4**. SD = 2.
+
+> **E-3.21.** Variance of \(aX + bY\) with X and Y independent?
+>
+> \(a^2 \text{Var}(X) + b^2 \text{Var}(Y)\).
+
+> **E-3.22.** \(s = 5\) is sample SD with \(n = 25\). \(\sigma\) (population SD if computed with n divisor)?
+>
+> Sample variance with \(n-1\) divisor = 25. \(\sum (X − \bar X)^2 = 24 \cdot 25 = 600\). With \(n\) divisor: 600/25 = 24. \(\sigma\) (sample raw form) = \(\sqrt{24} \approx 4.90\).
+
+> **E-3.23.** A series has SD 5. SD of 100−X?
+>
+> \(|-1| \cdot 5 = \mathbf{5}\).
+
+> **E-3.24.** For two series with same SD, the one with smaller mean has:
+>
+> Higher CV → less consistent.
+
+> **E-3.25.** A distribution where SD is the largest measure of dispersion? (vs MD vs QD)
+>
+> SD ≥ MD ≥ QD typically (recall QD : MD : SD ≈ 10 : 12 : 15). So SD is the largest.
+
+---
+
+\newpage
+
+## E-5  Correlation & Regression — extended drill (25 Qs)
+
+> **E-5.1.** Cov(X, Y) = 12, σ_X = 3, σ_Y = 5. r?
+>
+> \(r = 12/(3·5) = 12/15 = \mathbf{0.8}\).
+
+> **E-5.2.** Two regression equations: \(8X − 10Y + 66 = 0\) and \(40X − 18Y = 214\). Find \(\bar X, \bar Y, b_{YX}, b_{XY}, r\).
+>
+> Solve simultaneously.
+> Eq1: \(8X − 10Y = −66\) → divide by 2: \(4X − 5Y = −33\).
+> Eq2: \(40X − 18Y = 214\) → divide by 2: \(20X − 9Y = 107\).
+> Multiply eq1 by 5: \(20X − 25Y = −165\). Subtract: \((20X − 25Y) − (20X − 9Y) = −165 − 107\) → \(−16Y = −272\) → \(Y = 17\).
+> Then \(4X = −33 + 85 = 52\) → X = 13. So \(\bar X = 13, \bar Y = 17\).
+> Now identify which is Y on X. From Eq1: \(Y = (8X + 66)/10 = 0.8X + 6.6\) → \(b_{YX} = 0.8\).
+> From Eq2: \(X = (18Y + 214)/40 = 0.45Y + 5.35\) → \(b_{XY} = 0.45\).
+> Check: \(b_{YX} \cdot b_{XY} = 0.36 ≤ 1\) ✓. r = +√0.36 = **0.6**.
+
+> **E-5.3.** \(b_{YX} = 1.6\). Possible \(b_{XY}\) values?
+>
+> Must satisfy \(b_{YX} \cdot b_{XY} \le 1\). So \(b_{XY} \le 1/1.6 = 0.625\). Both must have same sign (positive here).
+
+> **E-5.4.** \(r = 0.8, n = 10\). Coefficient of determination, in %?
+>
+> \(r^2 = 0.64 = \mathbf{64\%}\) of the variance of Y is explained by X.
+
+> **E-5.5.** Spearman without ties: 6 students, ranks differ as: \(d = 0, 1, −1, 2, −2, 0\). \(\sum d^2\)?
+>
+> 0 + 1 + 1 + 4 + 4 + 0 = **10**. \(\rho = 1 − 6 · 10 / (6 · 35) = 1 − 60/210 = 1 − 2/7 = \mathbf{5/7 ≈ 0.714}\).
+
+> **E-5.6.** Spearman with ties: \(\sum d^2 = 50\), n = 10, two pairs of ties of size 2 each in one variable. ρ?
+>
+> Tie correction = 2 · (2(4 − 1)/12) = 2 · 0.5 = 1. Adjusted \(\sum d^2 = 51\).
+> \(\rho = 1 − 6 · 51 / (10 · 99) = 1 − 306/990 = 1 − 0.309 = \mathbf{0.691}\).
+
+> **E-5.7.** A perfectly positive correlation has scatter:
+>
+> All points on a straight line of positive slope.
+
+> **E-5.8.** Two regression coefficients are −0.6 and −0.5. r?
+>
+> Both negative → \(r = −\sqrt{0.30} \approx \mathbf{−0.548}\).
+
+> **E-5.9.** \(b_{YX} = 0.5, b_{XY} = 0.8\). Mean of X = 5, Mean of Y = 7. Regression line of Y on X?
+>
+> \(Y − 7 = 0.5(X − 5) \Rightarrow Y = 0.5 X + 4.5\).
+
+> **E-5.10.** Mean of X = 6, mean of Y = 4. Predict Y when X = 10 if \(b_{YX} = 0.5\).
+>
+> \(Y − 4 = 0.5(10 − 6) \Rightarrow Y = 4 + 2 = \mathbf{6}\).
+
+> **E-5.11.** \(\sigma_X = 4, \sigma_Y = 6, r = 0.5\). Regression of X on Y?
+>
+> \(b_{XY} = 0.5 · 4/6 = 1/3 \approx 0.333\). Equation: \(X − \bar X = 0.333(Y − \bar Y)\).
+
+> **E-5.12.** Two regression lines coincide if and only if?
+>
+> \(r = \pm 1\) (perfect linear correlation).
+
+> **E-5.13.** \(r = 0.6, \sigma_X = 5, \sigma_Y = 10\). Find \(b_{YX} - b_{XY}\).
+>
+> \(b_{YX} = 1.2, b_{XY} = 0.3\). Difference = 0.9.
+
+> **E-5.14.** Karl Pearson \(r\) is symmetric, so \(r_{XY}\) and \(r_{YX}\)?
+>
+> Equal.
+
+> **E-5.15.** \(r_{12} = 0.6, r_{13} = 0.5, r_{23} = 0.4\). Partial \(r_{12.3}\)?
+>
+> Numerator = 0.6 − 0.5·0.4 = 0.6 − 0.2 = 0.4.
+> Denom = \(\sqrt{(1 − 0.25)(1 − 0.16)} = \sqrt{0.75 · 0.84} = \sqrt{0.63} ≈ 0.794\).
+> \(r_{12.3} ≈ 0.4 / 0.794 ≈ \mathbf{0.504}\).
+
+> **E-5.16.** Same data, \(R_{1.23}^2\)?
+>
+> \((0.36 + 0.25 − 2·0.6·0.5·0.4)/(1 − 0.16) = (0.61 − 0.24)/0.84 = 0.37/0.84 ≈ 0.440\). \(R \approx \mathbf{0.664}\).
+
+> **E-5.17.** A scatter diagram with points evenly spread shows:
+>
+> \(r ≈ 0\) → no linear correlation.
+
+> **E-5.18.** Sum of products of deviations \(\sum (X − \bar X)(Y − \bar Y) = 240\), n = 10, σ_X = 4, σ_Y = 8. r?
+>
+> Cov = 240/10 = 24. \(r = 24/(4·8) = \mathbf{0.75}\).
+
+> **E-5.19.** \(b_{YX} = 0.9\) and \(b_{XY} = 1.1\). Possible?
+>
+> Product = 0.99 < 1 ✓ — possible. r = +√0.99 ≈ 0.995.
+
+> **E-5.20.** Two lines pass through (10, 20). Are they regression lines?
+>
+> Only if the means are (10, 20). Both regression lines pass through \((\bar X, \bar Y)\).
+
+> **E-5.21.** A regression line has slope 0. r = ?
+>
+> 0 (no linear relationship between Y and X).
+
+> **E-5.22.** \(r = 0\) for paired data of (X, Y). Cov(X, Y) = ?
+>
+> 0 (since Cov = r σ_X σ_Y).
+
+> **E-5.23.** When σ_X = σ_Y, what is \(b_{YX}\) in terms of r?
+>
+> \(b_{YX} = r\) (and \(b_{XY} = r\) too).
+
+> **E-5.24.** A change in origin of both X and Y changes r by:
+>
+> No change (origin-invariant).
+
+> **E-5.25.** A change of scale that flips Y's sign changes \(b_{YX}\) by:
+>
+> Sign flips: new \(b_{YX} = -r \sigma_Y / \sigma_X\) so it flips sign.
+
+---
+
+\newpage
+
+## E-6  Probability — extended drill (25 Qs, with Bayes practice)
+
+> **E-6.1.** Two dice rolled. P(at least one 6)?
+>
+> P(no 6 on either) = (5/6)². P(at least one) = 1 − 25/36 = **11/36**.
+
+> **E-6.2.** A coin is biased: P(H) = 2/3. Three tosses. P(exactly 2 H)?
+>
+> \({}^3C_2 (2/3)^2 (1/3)^1 = 3 · 4/9 · 1/3 = 4/9\).
+
+> **E-6.3.** A bag has 5W, 4B, 3R. One drawn. P(W or R)?
+>
+> Mutually exclusive. P = 5/12 + 3/12 = **8/12 = 2/3**.
+
+> **E-6.4.** Two cards drawn from a pack without replacement. P(both aces)?
+>
+> 4/52 · 3/51 = 12/2652 = **1/221**.
+
+> **E-6.5.** P(A) = 0.6, P(B) = 0.5, P(A ∩ B) = 0.3. Are they independent?
+>
+> P(A) · P(B) = 0.30 = P(A ∩ B) ✓. **Yes**.
+
+> **E-6.6.** P(A) = 0.5, P(A | B) = 0.5. Are they independent?
+>
+> Yes (independence ⇔ P(A | B) = P(A)).
+
+> **E-6.7.** Three balls drawn from bag of 5R, 4G, 3W (no replacement). P(one of each colour)?
+>
+> Numerator = \({}^5C_1 \cdot {}^4C_1 \cdot {}^3C_1 = 60\). Denom = \({}^{12}C_3 = 220\). P = 60/220 = **3/11**.
+
+> **E-6.8.** A family has 3 children. P(at least 1 boy | first is boy)?
+>
+> Given first is boy, the at-least-one-boy condition is automatically satisfied. P = **1**.
+
+> **E-6.9.** Bayes: A test for a disease has sensitivity 95% (P(+ | disease) = 0.95) and specificity 90%. The disease prevalence is 1%. A randomly tested person tests positive. P(disease | +)?
+>
+> P(D) = 0.01, P(+ | D) = 0.95, P(+ | not D) = 0.10.
+> Numerator = 0.01 · 0.95 = 0.0095.
+> Denom = 0.0095 + 0.99 · 0.10 = 0.0095 + 0.099 = 0.1085.
+> P(D | +) = 0.0095 / 0.1085 ≈ **0.0876** (8.76 %).
+>
+> *Insight.* Even with a 95% accurate test, low prevalence makes the positive predictive value small. Classic Bayes counterintuitive answer.
+
+> **E-6.10.** Bayes: Three machines A, B, C produce 50%, 30%, 20% of items, with defect rates 1%, 2%, 3%. A defective item is found. P(it came from C)?
+>
+> Numerator = 0.20 · 0.03 = 0.006.
+> Denom = 0.50·0.01 + 0.30·0.02 + 0.20·0.03 = 0.005 + 0.006 + 0.006 = 0.017.
+> P(C | D) = 0.006/0.017 ≈ **0.353**.
+
+> **E-6.11.** P(A) = 0.5, P(B) = 0.4, P(A ∪ B) = 0.7. P(A ∩ B)?
+>
+> 0.5 + 0.4 − 0.7 = **0.2**.
+
+> **E-6.12.** Throw 2 dice. P(sum ≥ 10)?
+>
+> Sums 10, 11, 12 → (4,6),(5,5),(6,4) | (5,6),(6,5) | (6,6) = 3 + 2 + 1 = 6 outcomes / 36 = **1/6**.
+
+> **E-6.13.** A bag has 4 white and 6 black balls. Two drawn without replacement. P(at least one white)?
+>
+> P(none white) = (6/10)(5/9) = 30/90 = 1/3. P(at least one) = 1 − 1/3 = **2/3**.
+
+> **E-6.14.** P(A) = 0.4, P(B) = 0.5, A and B independent. P(neither)?
+>
+> P(A^c) · P(B^c) = 0.6 · 0.5 = **0.3**.
+
+> **E-6.15.** Probability of getting at least 1 head in 5 tosses?
+>
+> 1 − (1/2)^5 = 1 − 1/32 = **31/32**.
+
+> **E-6.16.** Two events A, B with P(A) = 0.3 and P(B) = 0.4 are mutually exclusive. P(A ∪ B)?
+>
+> 0.7 (since intersection is 0).
+
+> **E-6.17.** \(P(A) = 0.4, P(B|A) = 0.5\). P(A ∩ B)?
+>
+> 0.4 × 0.5 = **0.20**.
+
+> **E-6.18.** Pair of dice. P(odd sum)?
+>
+> Half of 36 = **18/36 = 1/2** (by parity argument: odd sum ⇔ exactly one of the two dice is odd).
+
+> **E-6.19.** A box has 3 fair coins and 2 biased coins (P(H) = 0.8 each). One coin drawn at random and tossed; result is H. P(it was a biased coin)?
+>
+> Numerator = (2/5)(0.8) = 0.32. Denom = 0.32 + (3/5)(0.5) = 0.32 + 0.30 = 0.62.
+> P(biased | H) = 0.32/0.62 ≈ **0.516**.
+
+> **E-6.20.** A fair coin is tossed until first head. P(first H on the 4th toss)?
+>
+> (1/2)³ · (1/2) = **1/16**.
+
+> **E-6.21.** Two events: \(P(A^c) = 0.7, P(B^c) = 0.6\), \(P(A \cup B) = 0.6\). \(P(A \cap B)\)?
+>
+> P(A) = 0.3, P(B) = 0.4. 0.3 + 0.4 − 0.6 = **0.1**.
+
+> **E-6.22.** Out of 5 letters, 3 are addressed correctly. Letters placed in envelopes randomly. P(none correctly placed)?
+>
+> Derangement \(D_5 = 44\). P = 44/120 = **11/30**.
+
+> **E-6.23.** A throws a die first, then B. P(A scores higher)?
+>
+> By symmetry P(A > B) = P(B > A) and P(equal) = 6/36 = 1/6. So P(A > B) = (1 − 1/6)/2 = **5/12**.
+
+> **E-6.24.** Two indep events have P(none happens) = 1/4 and P(both happen) = 1/4. Find P(A) and P(B).
+>
+> Let p = P(A), q = P(B). pq = 1/4 and (1−p)(1−q) = 1/4 → 1 − p − q + pq = 1/4 → 1 − (p+q) + 1/4 = 1/4 → p + q = 1. With pq = 1/4: p, q are roots of t² − t + 0.25 = 0 → t = 0.5, 0.5. So **P(A) = P(B) = 0.5**.
+
+> **E-6.25.** Conditional: P(A | B) = 0.5, P(B | A) = 0.4, P(A) = 0.3. P(B)?
+>
+> P(A ∩ B) = 0.3 · 0.4 = 0.12. P(B) = P(A ∩ B)/P(A | B) = 0.12 / 0.5 = **0.24**.
+
+---
+
+\newpage
+
+## E-7  Distributions — extended drill (25 Qs)
+
+> **E-7.1.** Binomial(20, 0.4). Mean and SD?
+>
+> Mean = 8. Var = 4.8. SD ≈ **2.19**.
+
+> **E-7.2.** Binomial(n, p) has mean 6, var 4. Find n, p.
+>
+> npq = 4, np = 6 → q = 2/3, p = 1/3, n = 18.
+
+> **E-7.3.** Binomial(5, 0.5). P(X ≥ 4)?
+>
+> \({}^5C_4(0.5)^5 + {}^5C_5(0.5)^5 = 5/32 + 1/32 = 6/32 = \mathbf{3/16}\).
+
+> **E-7.4.** Poisson(λ). \(P(X = 0) = 0.05\). Find λ.
+>
+> \(e^{-λ} = 0.05 \Rightarrow λ = \ln(20) ≈ \mathbf{3.0}\).
+
+> **E-7.5.** A radioactive source emits at average 10 particles per minute. P(exactly 12 in a minute)?
+>
+> \(e^{-10} 10^{12}/12! ≈ 0.0948\).
+
+> **E-7.6.** Poisson(2). P(X ≥ 1)?
+>
+> 1 − P(X = 0) = 1 − e^(−2) ≈ 1 − 0.135 = **0.865**.
+
+> **E-7.7.** \(X \sim N(\mu, \sigma^2)\) with mean 100, σ = 15. P(85 < X < 115)?
+>
+> Within ±1σ → 0.6826.
+
+> **E-7.8.** \(X \sim N(50, 16)\). P(X > 58)?
+>
+> z = (58 − 50)/4 = 2. P(Z > 2) = 0.0228.
+
+> **E-7.9.** \(X \sim N(0, 1)\). P(−1.96 < X < 1.96)?
+>
+> 0.95.
+
+> **E-7.10.** \(X \sim N(80, 100)\). The 90th percentile of X?
+>
+> \(z_{0.10} = 1.282\). \(X_{0.90} = 80 + 1.282 · 10 = \mathbf{92.82}\).
+
+> **E-7.11.** Binomial approximated by Normal. When?
+>
+> When n is large and p is not near 0 or 1; rule of thumb \(np > 5\) and \(nq > 5\).
+
+> **E-7.12.** Binomial approximated by Poisson. When?
+>
+> n large, p small, np = λ moderate.
+
+> **E-7.13.** Hypergeometric: lot of 50 has 10 defective. 5 picked without replacement. Mean number of defectives in the sample?
+>
+> Mean = nK/N = 5 · 10 / 50 = **1**.
+
+> **E-7.14.** Continuous uniform on [4, 16]. P(X ≤ 10)?
+>
+> (10 − 4)/(16 − 4) = 6/12 = **0.5**.
+
+> **E-7.15.** Continuous uniform on [4, 16]. Mean and variance?
+>
+> Mean = 10. Var = (16 − 4)²/12 = 144/12 = 12.
+
+> **E-7.16.** \(X \sim B(n, p)\). Skewness?
+>
+> \((1 − 2p)/\sqrt{npq}\). When p = 0.5, skewness = 0 (symmetric).
+
+> **E-7.17.** Z = (X − μ)/σ. Distribution of Z?
+>
+> Standard normal N(0, 1).
+
+> **E-7.18.** P(|Z| > 2.58)?
+>
+> ≈ 0.01 (1 % two-tail).
+
+> **E-7.19.** \(X \sim B(8, 0.5)\). P(X = 4)?
+>
+> \({}^8C_4 (0.5)^8 = 70/256 \approx 0.273\).
+
+> **E-7.20.** \(X \sim P(λ = 16)\). σ?
+>
+> \(\sqrt{16} = \mathbf{4}\).
+
+> **E-7.21.** Discrete RV with pmf: x: 0,1,2,3 ; p(x): 0.1, 0.3, 0.4, 0.2. E[X] and Var(X)?
+>
+> E[X] = 0 + 0.3 + 0.8 + 0.6 = 1.7. E[X²] = 0 + 0.3 + 1.6 + 1.8 = 3.7. Var = 3.7 − 2.89 = **0.81**.
+
+> **E-7.22.** A normal curve is:
+>
+> Symmetric, bell-shaped, mean = median = mode, asymptotic to x-axis.
+
+> **E-7.23.** \(X \sim N(\mu, \sigma^2)\). The MGF M_X(t) = ?
+>
+> \(\exp(\mu t + \sigma^2 t^2 / 2)\).
+
+> **E-7.24.** Sum of n independent Poisson(λ_i) is?
+>
+> Poisson(\(\sum \lambda_i\)). (Poisson is closed under addition.)
+
+> **E-7.25.** Sum of n independent Binomial(n_i, p) is?
+>
+> Binomial(\(\sum n_i, p\)) — only when same p.
+
+---
+
+\newpage
+
+## E-9  Statistical Inference — extended drill (30 Qs, the biggest chapter)
+
+> **E-9.1.** Sample mean is which kind of estimator of μ?
+>
+> Unbiased, consistent, efficient (under normality), sufficient (under normality with known σ).
+
+> **E-9.2.** Sample variance with divisor n is biased. Bias = ?
+>
+> \(E[\hat\sigma^2] = (n-1)\sigma^2/n\). Bias = \(-\sigma^2/n\).
+
+> **E-9.3.** MLE of σ² in Normal sample (mean known)?
+>
+> \(\hat\sigma^2 = \sum (X_i − μ)^2 / n\) — uses divisor n, not n−1.
+
+> **E-9.4.** Method of moments estimator of θ for Uniform(0, θ)?
+>
+> Sample mean = θ/2 → \(\hat \theta_{MoM} = 2 \bar X\).
+
+> **E-9.5.** A test rejects H₀ when X̄ > 52, with H₀: μ = 50, σ = 10, n = 25. Compute α.
+>
+> Z = (52 − 50)/(10/5) = 1.0. α = P(Z > 1.0) = **0.1587**.
+
+> **E-9.6.** Same test, true μ = 53. β?
+>
+> Reject when X̄ > 52. Under μ = 53: Z = (52 − 53)/2 = −0.5. β = P(X̄ ≤ 52 | μ = 53) = P(Z ≤ −0.5) = 0.3085.
+
+> **E-9.7.** Same test, power at μ = 53?
+>
+> 1 − β = 1 − 0.3085 = **0.6915**.
+
+> **E-9.8.** A two-sample Z-test with means 102, 98, σ_1 = σ_2 = 10, n_1 = n_2 = 100. Z?
+>
+> Z = (102 − 98)/√(100/100 + 100/100) = 4/√2 ≈ **2.828**. > 1.96 → reject.
+
+> **E-9.9.** Two sample t-test with pooled variance: n₁ = 12, n₂ = 16, s₁ = 5, s₂ = 6.
+>
+> \(s_p^2 = (11·25 + 15·36)/26 = (275 + 540)/26 = 815/26 ≈ 31.35\). \(s_p ≈ 5.6\).
+
+> **E-9.10.** χ² goodness-of-fit: O = (40, 35, 25), E = (30, 30, 40). χ²?
+>
+> (40−30)²/30 + (35−30)²/30 + (25−40)²/40 = 100/30 + 25/30 + 225/40 = 3.33 + 0.83 + 5.63 = **9.79**. df = 2; \(\chi^2_{0.05, 2} = 5.99\) → reject H₀.
+
+> **E-9.11.** Confidence interval (95 %): \(\bar X = 25, s = 4, n = 16\). σ unknown, n small.
+>
+> \(t_{0.025, 15} ≈ 2.131\). CI = 25 ± 2.131 · 4/4 = 25 ± 2.131 = **[22.87, 27.13]**.
+
+> **E-9.12.** Confidence interval (90 %) for proportion: p = 0.4, n = 200.
+>
+> SE = √(0.4 · 0.6 / 200) = √(0.0012) ≈ 0.0346. 90 % CI = 0.4 ± 1.645 · 0.0346 = 0.4 ± 0.057 = **[0.343, 0.457]**.
+
+> **E-9.13.** Power increases when?
+>
+> α increases (less strict), n increases (more data), |effect| increases.
+
+> **E-9.14.** Bayesian estimator of mean with prior N(μ₀, τ²) and data of n obs from N(μ, σ²)?
+>
+> Posterior mean is a weighted average: \(\hat\mu = \dfrac{(n/\sigma^2)\bar X + (1/\tau^2)\mu_0}{n/\sigma^2 + 1/\tau^2}\). (Beyond JSO direct ask but useful concept.)
+
+> **E-9.15.** F = s₁²/s₂² with s₁² = 9, s₂² = 4, df₁ = df₂ = 10. Decision at 5 %?
+>
+> F = 2.25. \(F_{0.05, 10, 10} ≈ 2.97\). 2.25 < 2.97 → fail to reject (variances equal).
+
+> **E-9.16.** χ² test of independence in a 2 × 2 table, sample size 100. df?
+>
+> (2 − 1)(2 − 1) = **1**.
+
+> **E-9.17.** A Type I error is committed when:
+>
+> H₀ is true but rejected.
+
+> **E-9.18.** A Type II error is:
+>
+> H₀ is false but not rejected.
+
+> **E-9.19.** \(s_1^2 = 12, s_2^2 = 16, n_1 = n_2 = 11\). Pooled variance?
+>
+> \(s_p^2 = (10 · 12 + 10 · 16)/20 = (120 + 160)/20 = 14\). \(s_p \approx 3.74\).
+
+> **E-9.20.** Critical t for two-tail 1 %, df = 20?
+>
+> ≈ **2.845** (standard table).
+
+> **E-9.21.** Sample mean is unbiased for μ but biased for μ²?
+>
+> True: \(E[\bar X^2] = \mu^2 + \sigma^2/n \neq \mu^2\).
+
+> **E-9.22.** Best critical region for testing simple null vs simple alternative is given by:
+>
+> Neyman-Pearson lemma → likelihood ratio test.
+
+> **E-9.23.** Sufficient statistic for Bernoulli(p) sample of size n?
+>
+> \(\sum X_i\) (the count of successes).
+
+> **E-9.24.** Cramér-Rao lower bound gives:
+>
+> The minimum variance any unbiased estimator can attain.
+
+> **E-9.25.** A 95 % CI's "95%" refers to:
+>
+> The frequentist procedure: 95 % of such intervals (built from random samples) will contain the true parameter — not "95% chance for this single interval."
+
+> **E-9.26.** \(\bar X = 75, σ = 12, n = 36\). 99 % CI for μ?
+>
+> SE = 2. 99 % CI = 75 ± 2.576 · 2 = 75 ± 5.15 = **[69.85, 80.15]**.
+
+> **E-9.27.** χ² test of variance: \(s^2 = 25, \sigma_0^2 = 16, n = 21\). Test at 5 % two-tail.
+>
+> \(\chi^2 = (n−1) s^2/\sigma_0^2 = 20 · 25 / 16 = 31.25\). df = 20. Critical: \(\chi^2_{0.025, 20} ≈ 34.17\), \(\chi^2_{0.975, 20} ≈ 9.59\). 9.59 < 31.25 < 34.17 → fail to reject H₀.
+
+> **E-9.28.** A two-sample paired t-test uses df:
+>
+> n − 1 (where n is number of pairs).
+
+> **E-9.29.** For testing H₀: μ = μ₀ when σ unknown but n very large, test stat reduces to:
+>
+> Z (because t with large df ≈ Z).
+
+> **E-9.30.** A goodness-of-fit χ² with k categories, m parameters estimated: df?
+>
+> k − 1 − m.
+
+---
+
+\newpage
+
+# APPENDIX F — Mock Test #2 (100 Qs, full coverage)
+
+> **Instructions.** 120 minutes, 2 marks each, **−0.5** per wrong. Calculator allowed. Answer key at the end.
+
+### Section I — Data presentation, central tendency, dispersion (Qs 1-25)
+
+1. Class width of classes 5–9, 10–14, 15–19?
+2. The histogram bar height when class widths are unequal is plotted as?
+3. Mean of 7, 9, 11, 13, 15, 17?
+4. Sum of deviations from mean is?
+5. AM, GM, HM order for positive observations?
+6. AM × HM = GM² for how many positive numbers?
+7. Median position in a sorted list of 50 observations?
+8. \(D_8\) corresponds to what percentile?
+9. Combined mean of n₁=40, X̄₁=30 and n₂=10, X̄₂=10?
+10. Mean is most affected by?
+11. Mode of 4, 5, 5, 6, 7, 8, 8, 8, 9?
+12. The empirical relation: Mode = ?
+13. Class boundary of 30–39 (inclusive)?
+14. Pie-chart angle for 45 % share?
+15. SD of 3, 5, 7, 9, 11?
+16. Var(X − Y) where Var(X)=10, Var(Y)=15, indep?
+17. CV = 10 % means?
+18. Coefficient of QD for Q₁=20, Q₃=60?
+19. SD of 2X+3 when SD(X)=4?
+20. Variance of first 8 natural numbers?
+21. Lorenz curve coinciding with line of equality means?
+22. Mean of N(50, 100)?
+23. Effect on Var when each value is increased by 10?
+24. Mean deviation about median for 1, 2, 3, 4, 5?
+25. Coefficient of dispersion for QD?
+
+### Section II — Moments / Skewness / Correlation (Qs 26-50)
+
+26. \(\mu_2\) is also called?
+27. \(\mu_3\) for symmetric distribution?
+28. Karl Pearson Sk: Mean=70, Median=65, σ=8?
+29. β₂ = 4 means?
+30. Sheppard's correction for variance?
+31. r is unitless. T/F?
+32. \(b_{YX} = -0.6\), \(b_{XY} = -0.4\). r?
+33. r = 0.7. Coefficient of determination = ?
+34. Two regression lines pass through?
+35. r = 0 → angle between regression lines?
+36. Spearman ρ when n=8, Σd² = 50?
+37. \(r = 0.5, \sigma_X = 4, \sigma_Y = 6\). \(b_{YX}\)?
+38. r when both regression slopes are negative?
+39. Multiple correlation R lies in?
+40. Partial correlation \(r_{12.3}\) lies in?
+41. r in (X+10, Y−5) when r(X,Y)=0.6?
+42. \(b_{YX} \cdot b_{XY} = 0.81\). r?
+43. Standard error of estimate Y on X?
+44. Bowley Sk lies in?
+45. \(\beta_1 = 0\). Skewness?
+46. r remains unchanged under?
+47. \(r = 1\). Two regression lines?
+48. Cov(X, Y) = 12, σ_X=3, σ_Y=4. r?
+49. A scatter plot shows linear band → r ≈?
+50. r when \(\sigma_X = 0\)?
+
+### Section III — Probability / Distributions / Sampling (Qs 51-75)
+
+51. P(prime number on a die)?
+52. Coin tossed 4 times. P(at least 3 H)?
+53. P(A) = 0.5, P(B|A) = 0.4. P(A ∩ B)?
+54. P(A) = 0.5, P(B) = 0.4 indep. P(at least one)?
+55. Bag has 4R, 6B. 2 drawn no rep. P(both R)?
+56. Bayes: prior 0.6, likelihood 0.5 vs prior 0.4 lik 0.8. P(first | observed)?
+57. \(B(20, 0.5)\). Mean and SD?
+58. \(B(n, p)\) with mean 4, var 3. n?
+59. Poisson(3). P(X = 0)?
+60. \(N(50, 25)\). P(X > 60)?
+61. Normal curve max at?
+62. Z-score for observation 80 in N(70, 25)?
+63. Hypergeom mean (N=20, K=8, n=5)?
+64. Continuous uniform [0, 12]. Var?
+65. SE of mean: σ=10, n=100?
+66. Stratified vs cluster: which uses sub-groups with within-homogeneity?
+67. CLT requires n ≥ ?
+68. SE of proportion: p=0.6, n=400?
+69. Sample size at 95 % for margin 5, σ=20?
+70. The sampling technique using a sampling interval k?
+71. Non-probability sampling cannot give?
+72. As n increases, sampling error?
+73. Quota sampling is which family?
+74. Type I error symbol?
+75. Power of test?
+
+### Section IV — Inference / ANOVA / TS / Index (Qs 76-100)
+
+76. Best estimator should be?
+77. MLE of p in B(n, p)?
+78. Sample variance divisor for unbiasedness?
+79. χ² goodness formula?
+80. Two-sample t df with n₁=15, n₂=12, equal variances?
+81. F-test compares?
+82. Decision rule in F-test?
+83. A 5 % CI is ____ wide than 1 % CI?
+84. Z critical for 99 % two-tail?
+85. ANOVA tests equality of?
+86. df for two-way ANOVA error in 4 × 3?
+87. SSB = 80, SSW = 60, k = 4, N = 24. F?
+88. ANOVA assumes?
+89. Time series: cyclical period typically?
+90. Multiplicative time series model?
+91. Sum of 12 monthly seasonal indices?
+92. Linear trend slope (Σ X = 0)?
+93. Laspeyres weights are?
+94. Paasche weights are?
+95. Fisher = ?
+96. Test Fisher satisfies?
+97. Real wage formula?
+98. Purchasing power of money?
+99. Index of Industrial Production is what kind of index?
+100. Marshall-Edgeworth weight?
+
+---
+
+## Mock #2 Answer key
+
+| # | Ans | # | Ans | # | Ans | # | Ans |
+|---|-----|---|-----|---|-----|---|-----|
+| 1 | 5 | 26 | variance | 51 | 1/2 | 76 | unbiased + min variance + consistent + sufficient |
+| 2 | f/h (frequency density) | 27 | 0 | 52 | 5/16 | 77 | X/n |
+| 3 | 12 | 28 | 3·(70−65)/8 = 1.875 | 53 | 0.20 | 78 | n − 1 |
+| 4 | 0 | 29 | leptokurtic | 54 | 0.7 | 79 | Σ(O−E)²/E |
+| 5 | AM ≥ GM ≥ HM | 30 | subtract h²/12 | 55 | 6/45 = 2/15 | 80 | 25 |
+| 6 | exactly two | 31 | T | 56 | (0.6·0.5)/(0.6·0.5 + 0.4·0.8) = 0.30/0.62 ≈ 0.484 | 81 | two variances |
+| 7 | 25.5th | 32 | −√0.24 ≈ −0.490 | 57 | μ=10, σ=√5 ≈ 2.24 | 82 | F > F_table → reject |
+| 8 | P₈₀ | 33 | 0.49 | 58 | 16 (since q = 3/4, p = 1/4, n = 16) | 83 | wider |
+| 9 | 26 | 34 | (X̄, Ȳ) | 59 | e^(−3) ≈ 0.0498 | 84 | 2.576 |
+| 10 | extreme values | 35 | 90° | 60 | P(Z > 2) = 0.0228 | 85 | means |
+| 11 | 8 | 36 | 1 − 6·50/(8·63) = 1 − 0.595 = 0.405 | 61 | mean μ | 86 | (4−1)(3−1) = 6 |
+| 12 | 3 Med − 2 Mean | 37 | 0.75 | 62 | (80 − 70)/5 = 2 | 87 | (80/3)/(60/20) = 26.67/3 = 8.89 |
+| 13 | 29.5 – 39.5 | 38 | negative | 63 | nK/N = 5·8/20 = 2 | 88 | normality, equal var, indep |
+| 14 | 162° | 39 | [0, 1] | 64 | 144/12 = 12 | 89 | 2–10 years |
+| 15 | √8 ≈ 2.83 | 40 | [−1, 1] | 65 | 1 | 90 | Y = T·S·C·I |
+| 16 | 25 | 41 | 0.6 | 66 | stratified | 91 | 1200 |
+| 17 | σ = 10 % of mean | 42 | ±0.9 | 67 | 30 | 92 | b = ΣXY/ΣX² |
+| 18 | 40/80 = 0.5 | 43 | σY√(1−r²) | 68 | √(0.6·0.4/400) = √0.0006 ≈ 0.0245 | 93 | base year (Q₀) |
+| 19 | 8 | 44 | [−1, 1] | 69 | (1.96·20/5)² ≈ 61.5 → 62 | 94 | current year (Q₁) |
+| 20 | (64−1)/12 = 5.25 | 45 | 0 (symmetric) | 70 | systematic | 95 | √(L · P) |
+| 21 | perfect equality | 46 | origin & positive scale | 71 | quantifiable error estimate | 96 | time + factor reversal |
+| 22 | 50 | 47 | coincide | 72 | decreases | 97 | money wage / CPI × 100 |
+| 23 | none | 48 | 1.0 (perfect; but cap at 1) | 73 | non-probability | 98 | 1 / CPI × 100 |
+| 24 | 1.2 | 49 | high (close to ±1) | 74 | α | 99 | quantity index |
+| 25 | (Q₃−Q₁)/(Q₃+Q₁) | 50 | undefined | 75 | 1 − β | 100 | Q₀ + Q₁ |
+
+---
+
+\newpage
+
+# APPENDIX G — JSO PYQ-Framing Bank (recognise the wording, lock the answer)
+
+> Examiners reuse phrasings. Once you have seen the framing, you can answer the Q in 10 seconds. This bank lists every "tell" the JSO has used in the last 6 papers.
+
+## G.1 Central tendency framings
+
+| Frame | What they actually want | Auto-answer cue |
+|-------|------------------------|-----------------|
+| "The algebraic sum of deviations from \(\bar X\) is …" | 0 | always |
+| "If each observation is multiplied by 4 …" | new mean = 4 × old mean; new SD = 4 × old SD | scale property |
+| "The combined mean of two groups …" | weighted-by-size mean | use Σ n X̄ / Σ n |
+| "The harmonic mean is appropriate for …" | rates / equal-distance speeds | not "averages" generally |
+| "Median is the …th item" | (n+1)/2 if n is odd; mean of n/2 and (n/2+1) if even | sorted list |
+| "Empirical relation between mean, median, mode" | Mode = 3 Med − 2 Mean | memorise |
+
+## G.2 Dispersion framings
+
+| Frame | Auto-answer cue |
+|-------|----------------|
+| "Most stable / consistent / homogeneous" | smaller CV |
+| "Var(X + Y) when X and Y are independent" | Var(X) + Var(Y) (NOT minus) |
+| "If each value is increased by k" | SD unchanged |
+| "If each value is multiplied by c" | SD multiplied by |c| |
+| "Variance of first n natural numbers" | (n² − 1)/12 |
+| "QD : MD : SD" | 10 : 12 : 15 |
+
+## G.3 Correlation / regression framings
+
+| Frame | Auto-answer cue |
+|-------|----------------|
+| "Range of correlation coefficient" | [−1, 1] |
+| "Two regression lines intersect at" | (X̄, Ȳ) |
+| "If r = 0, the lines are" | perpendicular |
+| "If r = ±1, the lines" | coincide |
+| "Correlation is independent of" | origin and (positive) scale |
+| "r in (cX, dY) with c, d > 0" | same r |
+| "r in (−X, Y) or (X, −Y)" | sign flips |
+| "If both regression slopes are negative, r is" | negative |
+
+## G.4 Probability framings
+
+| Frame | Auto-answer cue |
+|-------|----------------|
+| "ME → Independent?" | typically NO |
+| "P(A ∪ B) when ME" | P(A) + P(B) |
+| "P(A ∩ B) when independent" | P(A) P(B) |
+| "P(at least one of …)" | use complement: 1 − P(none) |
+| "P(exactly one of A or B)" | P(A) + P(B) − 2 P(A ∩ B) |
+| "Given a defective is from machine X, prior was Y …" | Bayes' theorem |
+| "Sensitivity, specificity, prevalence" | Bayes' clinical setup |
+
+## G.5 Distribution framings
+
+| Frame | Auto-answer cue |
+|-------|----------------|
+| "Mean and variance are equal" | Poisson |
+| "n trials, fixed p" | Binomial |
+| "Symmetric, bell-shaped" | Normal |
+| "Without replacement, finite population" | Hypergeometric |
+| "B(n, p) approximates Poisson when" | n large, p small, np = λ |
+| "B(n, p) approximates Normal when" | np > 5, nq > 5 |
+
+## G.6 Sampling and inference framings
+
+| Frame | Auto-answer cue |
+|-------|----------------|
+| "Each unit has equal chance" | SRS |
+| "Within-group homogeneous, between-group heterogeneous" | stratified |
+| "Within-group heterogeneous, between-group homogeneous" | cluster |
+| "Population ordered, every kth picked" | systematic |
+| "Existing subjects refer next ones" | snowball (non-probability) |
+| "Type I error" | rejecting a TRUE H₀ |
+| "Power of test" | 1 − β |
+| "Best critical region" | Neyman-Pearson lemma |
+| "Test of two variances" | F |
+| "Test of independence in r × c" | χ², df = (r−1)(c−1) |
+
+## G.7 Time series and index framings
+
+| Frame | Auto-answer cue |
+|-------|----------------|
+| "Regular within-year pattern" | seasonal |
+| "Irregular wave > 1 year" | cyclical |
+| "Even-period MA needs" | centring |
+| "Sum of 4 quarterly seasonal indices" | 400 |
+| "Laspeyres uses … year quantities" | base (Q₀) |
+| "Paasche uses … year quantities" | current (Q₁) |
+| "Ideal index" | Fisher |
+| "Index satisfying time + factor reversal" | Fisher |
+| "Real wage" | money / CPI × 100 |
+| "Purchasing power of money" | 1 / CPI × 100 |
+
+---
+
+\newpage
+
+# APPENDIX H — Common errors that cost JSO candidates the 95% mark
+
+| # | Error | Why it happens | Correct fix |
+|---|-------|----------------|-------------|
+| 1 | Used Z when n was small and σ unknown | Misread "n is large enough" | Use t (df = n−1). |
+| 2 | Variance subtraction sign | Algebraic instinct | Var(X − Y) = Var(X) + Var(Y) for indep. |
+| 3 | Mode = 2 Med − 3 Mean | Memory slip | Mode = 3 Med − 2 Mean. |
+| 4 | r > 1 or two slopes both > 1 | Didn't sanity-check | r² = product of slopes ≤ 1. |
+| 5 | Forgot finite-population correction | Skipped a hint | Multiply variance by (N−n)/(N−1). |
+| 6 | Two-tail α used as one-tail | Didn't check the alternative | Two-tail uses α/2 in each tail. |
+| 7 | Sample variance with n divisor used in t-test | Out of habit | t-test uses s² with (n−1) divisor. |
+| 8 | Bayes denominator incomplete | Forgot to add other branches | Sum P(B_j) P(A | B_j) over all j. |
+| 9 | Calculated angle in pie chart as % directly | Skipped × 360° | Angle = % × 360°/100. |
+| 10 | β₂ = 3 marked as leptokurtic | Misread cutoff | β₂ = 3 mesokurtic; > 3 lepto. |
+| 11 | Used arithmetic mean for equal-distance speeds | Default thinking | Use HM. |
+| 12 | Used HM for equal-time speeds | Confusion | If equal **times**, use AM, not HM. |
+| 13 | Forgot h² in step-deviation variance | Missed scaling | σ² scales by h². |
+| 14 | Confused stratified with cluster | Misread | Stratified: within homogeneous; cluster: within heterogeneous. |
+| 15 | Wrote Var(aX + b) = a² Var(X) + b² | Wrong | Var(aX + b) = a² Var(X). The constant b drops. |
+| 16 | Wrote E[XY] = E[X] E[Y] without independence | Lazy | Only true under independence. |
+| 17 | Applied Sheppard correction to grouped Mean | Wrong target | Sheppard corrects variance, not mean. |
+| 18 | Computed Bowley as (Q₃ − Q₁)/(Q₃ + Q₁) | That's the coefficient of QD, not Bowley Sk | Bowley = (Q₃ + Q₁ − 2Q₂)/(Q₃ − Q₁). |
+| 19 | Treated MLE as always unbiased | False | MLE is consistent but often biased (e.g., σ² with divisor n). |
+| 20 | Used r as Cov(X,Y) directly | Forgot normalisation | r = Cov / (σ_X σ_Y). |
+
+---
+
+\newpage
+
+# APPENDIX I — Memory tricks (mnemonics that actually stick)
+
+| Concept | Mnemonic |
+|---------|----------|
+| Order: Mode < Median < Mean for positive skew | "Mo-Me-Mn" alphabetical = "left to right" with **right tail** longer |
+| Skewness sign | Sign matches direction of the **tail**, not the bulk |
+| Kurtosis | **Lepto** = **L**eaping (tall peak); **Platy** = **P**lateau (flat); **Meso** = middle = normal |
+| Laspeyres vs Paasche | "Laspeyres = **L**ast period (base) Q's"; "Paasche = **P**resent Q's" |
+| Type I vs II | **α**lpha = "a t**a**lse alarm" (false alarm = rejecting true H₀); **β**eta = "missed **b**eat" (failing to reject false H₀) |
+| AM vs HM for travel | "**A**M when **A**ll equal times; **H**M when **H**ow-far is equal" |
+| AM ≥ GM ≥ HM | "Always Goes Higher → Mean order goes high to low" |
+| β₂ = 3 boundary | Normal curve is **3**-sigma standard, β₂ = 3 too |
+| Median from formula | "L + (N/2 − F)/f × h" — mnemonic: "L plus the gap-from-half over the middle-class freq, scaled" |
+| Spearman | "Six-d-squared over n times n-squared minus one" |
+| Bayes | "Posterior = (Prior × Likelihood) / Evidence" |
+| Empirical relation | "Three-Median minus Two-Mean = Mode" → **3M − 2M = M** |
+| Combined mean | weighted by **n**, not by mean |
+| Combined SD adds **\(d^2\)** | each group's variance + its squared distance from the combined mean |
+| Test stats | **Z**ig-large; **t**iny-σ-unknown; **χ²** for counts/variance; **F** for variance ratio |
+
+---
+
+\newpage
+
+# Final words
+
+This book is now your **complete** JSO reference — 6 critical chapters with 30+ worked problems each, a full topic primer, two 100-Q full-length mocks, an examiner's framing bank, an error catalogue, and a memory-tricks page. Re-read twice, drill the worked examples, time yourself on the two mocks, and the JSO paper becomes a routine.
+
+Read smart. Drill hard. Sleep well. **190+/200 is yours.**
+
+— Pariksha365
+
+---
+
+\newpage
+
+# APPENDIX J — Visual Reference Diagrams
+
+> Every diagram below encodes a concept that appears in 2–5 JSO questions per paper. Study the shape first, then the labels, then close the page and sketch it from memory.
+
+## J.1 The Normal (Bell) Curve — 68 / 95 / 99.7 rule
+
+<div style="text-align:center; margin: 16pt 0;">
+<svg width="560" height="220" viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="11">
+  <!-- axes -->
+  <line x1="30" y1="190" x2="540" y2="190" stroke="#555" stroke-width="1.5"/>
+  <line x1="280" y1="10" x2="280" y2="195" stroke="#aaa" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- bell curve path: parametric normal, μ=280, σ=60 -->
+  <path d="M 40,188
+    C 80,188 100,185 120,175
+    C 140,163 155,140 170,120
+    C 185,100 200,72 220,52
+    C 240,32 260,16 280,13
+    C 300,16 320,32 340,52
+    C 360,72 375,100 390,120
+    C 405,140 420,163 440,175
+    C 460,185 480,188 520,188"
+    fill="none" stroke="#0f4c75" stroke-width="2.5"/>
+
+  <!-- shaded regions: ±1σ = 220..340, ±2σ = 160..400, ±3σ = 100..460 -->
+  <!-- 99.7% region outer fill -->
+  <path d="M 100,188 C 105,186 115,178 130,165 C 145,150 158,128 175,107 C 195,82 215,55 235,35 C 255,18 268,13.5 280,13
+    C 292,13.5 305,18 325,35 C 345,55 365,82 385,107 C 402,128 415,150 430,165 C 445,178 455,186 460,188 Z"
+    fill="#dbeafe" opacity="0.7"/>
+  <!-- 95% region -->
+  <path d="M 160,188 C 165,186 175,178 190,160 C 205,142 220,112 240,83 C 255,62 268,35 280,28
+    C 292,35 305,62 320,83 C 340,112 355,142 370,160 C 385,178 395,186 400,188 Z"
+    fill="#bfdbfe" opacity="0.7"/>
+  <!-- 68% region -->
+  <path d="M 220,188 C 225,182 235,162 248,135 C 260,108 270,80 280,55
+    C 290,80 300,108 312,135 C 325,162 335,182 340,188 Z"
+    fill="#93c5fd" opacity="0.8"/>
+
+  <!-- σ tick marks on x-axis -->
+  <line x1="100" y1="188" x2="100" y2="196" stroke="#555" stroke-width="1"/>
+  <line x1="160" y1="188" x2="160" y2="196" stroke="#555" stroke-width="1"/>
+  <line x1="220" y1="188" x2="220" y2="196" stroke="#555" stroke-width="1"/>
+  <line x1="280" y1="188" x2="280" y2="196" stroke="#555" stroke-width="1"/>
+  <line x1="340" y1="188" x2="340" y2="196" stroke="#555" stroke-width="1"/>
+  <line x1="400" y1="188" x2="400" y2="196" stroke="#555" stroke-width="1"/>
+  <line x1="460" y1="188" x2="460" y2="196" stroke="#555" stroke-width="1"/>
+
+  <!-- x-axis labels -->
+  <text x="95"  y="210" text-anchor="middle" fill="#333">μ−3σ</text>
+  <text x="157" y="210" text-anchor="middle" fill="#333">μ−2σ</text>
+  <text x="218" y="210" text-anchor="middle" fill="#333">μ−σ</text>
+  <text x="280" y="210" text-anchor="middle" fill="#0f4c75" font-weight="bold">μ</text>
+  <text x="342" y="210" text-anchor="middle" fill="#333">μ+σ</text>
+  <text x="402" y="210" text-anchor="middle" fill="#333">μ+2σ</text>
+  <text x="462" y="210" text-anchor="middle" fill="#333">μ+3σ</text>
+
+  <!-- percentage labels inside shaded bands -->
+  <text x="280" y="175" text-anchor="middle" fill="#1e3a5f" font-weight="bold" font-size="12">68.26 %</text>
+  <text x="280" y="155" text-anchor="middle" fill="#1e3a5f" font-size="10">(±1σ)</text>
+
+  <!-- brace lines for 95% and 99.7% -->
+  <line x1="160" y1="140" x2="400" y2="140" stroke="#2563eb" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="290" y="137" text-anchor="middle" fill="#2563eb" font-size="10">95.44 % (±2σ)</text>
+
+  <line x1="100" y1="120" x2="460" y2="120" stroke="#6d28d9" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="295" y="117" text-anchor="middle" fill="#6d28d9" font-size="10">99.74 % (±3σ)</text>
+
+  <!-- title -->
+  <text x="280" y="22" text-anchor="middle" fill="#0f4c75" font-weight="bold" font-size="13">Standard Normal Distribution — the 68/95/99.7 rule</text>
+</svg>
+</div>
+
+> **Key reads off this diagram:**
+> - Within ±1σ → 68.26 % of data
+> - Within ±2σ → 95.44 % → P(|Z| < 1.96) ≈ 0.95 (note: 1.96, not exactly 2)
+> - Within ±3σ → 99.74 %
+> - The curve is **symmetric** around μ; mean = median = mode = μ
+
+---
+
+## J.2 Shapes of Skewness — visual pattern
+
+<div style="text-align:center; margin: 16pt 0;">
+<svg width="560" height="200" viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="11">
+
+  <!-- LEFT panel: Negative skew (left tail) -->
+  <text x="90" y="20" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="12">Negative skew</text>
+  <text x="90" y="34" text-anchor="middle" fill="#dc2626" font-size="10">(left-tailed)</text>
+  <line x1="10" y1="180" x2="175" y2="180" stroke="#aaa" stroke-width="1"/>
+  <path d="M 12,178 C 20,176 30,160 50,130 C 65,108 80,75 100,55 C 115,40 125,35 135,40
+    C 148,50 155,80 162,120 C 167,145 170,165 174,178"
+    fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <!-- order label -->
+  <text x="40"  y="168" text-anchor="middle" fill="#dc2626" font-size="10">Mn</text>
+  <text x="90"  y="168" text-anchor="middle" fill="#dc2626" font-size="10">Me</text>
+  <text x="135" y="168" text-anchor="middle" fill="#dc2626" font-size="10">Mo</text>
+  <text x="90" y="195" text-anchor="middle" fill="#dc2626" font-size="10">Mean &lt; Median &lt; Mode</text>
+
+  <!-- MIDDLE panel: Symmetric -->
+  <text x="280" y="20" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="12">Symmetric</text>
+  <text x="280" y="34" text-anchor="middle" fill="#15803d" font-size="10">(no skew)</text>
+  <line x1="195" y1="180" x2="365" y2="180" stroke="#aaa" stroke-width="1"/>
+  <path d="M 197,178 C 205,175 215,160 230,135 C 245,108 258,78 280,48
+    C 302,78 315,108 330,135 C 345,160 355,175 363,178"
+    fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="280" y="168" text-anchor="middle" fill="#15803d" font-size="10">Mn=Me=Mo</text>
+  <text x="280" y="195" text-anchor="middle" fill="#15803d" font-size="10">Mean = Median = Mode</text>
+
+  <!-- RIGHT panel: Positive skew (right tail) -->
+  <text x="465" y="20" text-anchor="middle" fill="#d97706" font-weight="bold" font-size="12">Positive skew</text>
+  <text x="465" y="34" text-anchor="middle" fill="#d97706" font-size="10">(right-tailed)</text>
+  <line x1="385" y1="180" x2="550" y2="180" stroke="#aaa" stroke-width="1"/>
+  <path d="M 387,178 C 393,165 400,140 412,115 C 422,92 430,65 445,48
+    C 455,38 462,36 470,45 C 482,60 490,90 500,120 C 510,148 520,165 535,175 C 542,178 547,179 549,179"
+    fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="420" y="168" text-anchor="middle" fill="#d97706" font-size="10">Mo</text>
+  <text x="455" y="168" text-anchor="middle" fill="#d97706" font-size="10">Me</text>
+  <text x="500" y="168" text-anchor="middle" fill="#d97706" font-size="10">Mn</text>
+  <text x="465" y="195" text-anchor="middle" fill="#d97706" font-size="10">Mode &lt; Median &lt; Mean</text>
+
+</svg>
+</div>
+
+> **Read:** The mean is always pulled toward the **tail**. The mode sits at the **peak**. Median lies between.
+
+---
+
+## J.3 Kurtosis shapes — three curves on one axis
+
+<div style="text-align:center; margin: 16pt 0;">
+<svg width="460" height="200" viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="11">
+  <line x1="20" y1="185" x2="440" y2="185" stroke="#aaa" stroke-width="1"/>
+  <line x1="230" y1="10" x2="230" y2="190" stroke="#ddd" stroke-width="1"/>
+
+  <!-- Platykurtic — flat: β₂ < 3 -->
+  <path d="M 60,184 C 90,182 120,170 150,155 C 170,143 190,128 210,115 C 222,107 228,103 230,102
+    C 232,103 238,107 250,115 C 270,128 290,143 310,155 C 340,170 370,182 400,184"
+    fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="400" y="178" fill="#22c55e" font-size="10">Platy (β₂&lt;3)</text>
+
+  <!-- Mesokurtic — normal: β₂ = 3 -->
+  <path d="M 80,184 C 100,182 120,172 145,150 C 165,132 185,105 205,78 C 215,62 225,42 230,30
+    C 235,42 245,62 255,78 C 275,105 295,132 315,150 C 340,172 360,182 380,184"
+    fill="none" stroke="#0f4c75" stroke-width="2.2"/>
+  <text x="365" y="148" fill="#0f4c75" font-size="10">Meso (β₂=3)</text>
+
+  <!-- Leptokurtic — sharp: β₂ > 3 -->
+  <path d="M 150,184 C 160,183 170,176 185,162 C 200,145 215,118 223,90 C 227,72 229,48 230,18
+    C 231,48 233,72 237,90 C 245,118 260,145 275,162 C 290,176 300,183 310,184"
+    fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="316" y="158" fill="#ef4444" font-size="10">Lepto (β₂&gt;3)</text>
+
+  <text x="230" y="200" text-anchor="middle" fill="#555" font-size="11" font-weight="bold">β₂ comparison — same μ and σ</text>
+</svg>
+</div>
+
+> **Read:** All three share the same mean and SD. Leptokurtic = sharper peak + fatter tails. Platykurtic = flatter peak. Mesokurtic = normal shape (β₂ = 3).
+
+---
+
+## J.4 Scatter-plot patterns — recognising r at a glance
+
+<div style="text-align:center; margin: 16pt 0;">
+<svg width="560" height="160" viewBox="0 0 560 160" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
+
+  <!-- Panel A: r ≈ +1 -->
+  <text x="68" y="14" text-anchor="middle" fill="#15803d" font-weight="bold">r ≈ +1</text>
+  <rect x="10" y="18" width="116" height="100" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <line x1="20" y1="108" x2="116" y2="28" stroke="#15803d" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <!-- dots along positive line -->
+  <circle cx="25"  cy="106" r="3" fill="#15803d"/><circle cx="35"  cy="96" r="3" fill="#15803d"/>
+  <circle cx="48"  cy="84" r="3" fill="#15803d"/><circle cx="60"  cy="73" r="3" fill="#15803d"/>
+  <circle cx="72"  cy="63" r="3" fill="#15803d"/><circle cx="84"  cy="53" r="3" fill="#15803d"/>
+  <circle cx="95"  cy="43" r="3" fill="#15803d"/><circle cx="108" cy="33" r="3" fill="#15803d"/>
+  <text x="68" y="132" text-anchor="middle" fill="#15803d">Perfect positive</text>
+
+  <!-- Panel B: moderate r ≈ +0.7 -->
+  <text x="208" y="14" text-anchor="middle" fill="#2563eb" font-weight="bold">r ≈ +0.7</text>
+  <rect x="150" y="18" width="116" height="100" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <line x1="160" y1="108" x2="256" y2="28" stroke="#2563eb" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- dots scattered around line -->
+  <circle cx="165" cy="98" r="3" fill="#2563eb"/><circle cx="175" cy="92" r="3" fill="#2563eb"/>
+  <circle cx="185" cy="80" r="3" fill="#2563eb"/><circle cx="192" cy="75" r="3" fill="#2563eb"/>
+  <circle cx="198" cy="65" r="3" fill="#2563eb"/><circle cx="215" cy="55" r="3" fill="#2563eb"/>
+  <circle cx="228" cy="60" r="3" fill="#2563eb"/><circle cx="238" cy="40" r="3" fill="#2563eb"/>
+  <circle cx="248" cy="32" r="3" fill="#2563eb"/>
+  <text x="208" y="132" text-anchor="middle" fill="#2563eb">Moderate positive</text>
+
+  <!-- Panel C: r ≈ 0 -->
+  <text x="348" y="14" text-anchor="middle" fill="#6b7280" font-weight="bold">r ≈ 0</text>
+  <rect x="290" y="18" width="116" height="100" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  <line x1="300" y1="68" x2="396" y2="68" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="300" cy="42"  r="3" fill="#6b7280"/><circle cx="315" cy="90"  r="3" fill="#6b7280"/>
+  <circle cx="325" cy="55"  r="3" fill="#6b7280"/><circle cx="338" cy="105" r="3" fill="#6b7280"/>
+  <circle cx="348" cy="30"  r="3" fill="#6b7280"/><circle cx="360" cy="80"  r="3" fill="#6b7280"/>
+  <circle cx="372" cy="48"  r="3" fill="#6b7280"/><circle cx="385" cy="95"  r="3" fill="#6b7280"/>
+  <text x="348" y="132" text-anchor="middle" fill="#6b7280">No linear relationship</text>
+
+  <!-- Panel D: r ≈ -0.8 -->
+  <text x="488" y="14" text-anchor="middle" fill="#dc2626" font-weight="bold">r ≈ −0.8</text>
+  <rect x="430" y="18" width="116" height="100" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+  <line x1="440" y1="28" x2="536" y2="108" stroke="#dc2626" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="442" cy="30" r="3" fill="#dc2626"/><circle cx="454" cy="38" r="3" fill="#dc2626"/>
+  <circle cx="462" cy="50" r="3" fill="#dc2626"/><circle cx="470" cy="60" r="3" fill="#dc2626"/>
+  <circle cx="482" cy="68" r="3" fill="#dc2626"/><circle cx="492" cy="80" r="3" fill="#dc2626"/>
+  <circle cx="502" cy="90" r="3" fill="#dc2626"/><circle cx="512" cy="98" r="3" fill="#dc2626"/>
+  <text x="488" y="132" text-anchor="middle" fill="#dc2626">Strong negative</text>
+
+</svg>
+</div>
+
+---
+
+## J.5 Two regression lines — how r controls the angle
+
+<div style="text-align:center; margin: 16pt 0;">
+<svg width="560" height="200" viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
+
+  <!-- Panel A: r = 0 — perpendicular lines -->
+  <text x="90" y="16" text-anchor="middle" fill="#6b7280" font-weight="bold" font-size="11">r = 0</text>
+  <rect x="10" y="20" width="160" height="155" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  <!-- Y on X: horizontal line through mean -->
+  <line x1="20" y1="97" x2="160" y2="97" stroke="#2563eb" stroke-width="2"/>
+  <!-- X on Y: vertical line through mean -->
+  <line x1="90" y1="30" x2="90" y2="167" stroke="#dc2626" stroke-width="2"/>
+  <!-- means dot -->
+  <circle cx="90" cy="97" r="4" fill="#111" stroke="#fff" stroke-width="1"/>
+  <text x="98" y="92" fill="#111" font-size="9">(X̄, Ȳ)</text>
+  <!-- labels -->
+  <text x="155" y="91" fill="#2563eb" font-size="9">Y on X</text>
+  <text x="94" y="35" fill="#dc2626" font-size="9">X on Y</text>
+  <text x="90" y="193" text-anchor="middle" fill="#555">Lines ⊥ when r = 0</text>
+
+  <!-- Panel B: 0 < r < 1 — two lines diverging slightly -->
+  <text x="285" y="16" text-anchor="middle" fill="#d97706" font-weight="bold" font-size="11">0 &lt; r &lt; 1</text>
+  <rect x="205" y="20" width="160" height="155" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
+  <!-- Y on X: steeper slope -->
+  <line x1="215" y1="150" x2="355" y2="38" stroke="#2563eb" stroke-width="2"/>
+  <!-- X on Y: shallower slope (through same point) -->
+  <line x1="215" y1="130" x2="355" y2="58" stroke="#dc2626" stroke-width="2"/>
+  <!-- means dot -->
+  <circle cx="285" cy="94" r="4" fill="#111" stroke="#fff" stroke-width="1"/>
+  <text x="293" y="89" fill="#111" font-size="9">(X̄, Ȳ)</text>
+  <text x="350" y="36" fill="#2563eb" font-size="9">Y/X</text>
+  <text x="350" y="56" fill="#dc2626" font-size="9">X/Y</text>
+  <text x="285" y="193" text-anchor="middle" fill="#555">Lines spread; angle = f(r)</text>
+
+  <!-- Panel C: r = 1 — coincident lines -->
+  <text x="480" y="16" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="11">r = ±1</text>
+  <rect x="400" y="20" width="160" height="155" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <!-- single line (both regression lines coincide) -->
+  <line x1="410" y1="155" x2="550" y2="35" stroke="#15803d" stroke-width="3"/>
+  <!-- means dot -->
+  <circle cx="480" cy="95" r="4" fill="#111" stroke="#fff" stroke-width="1"/>
+  <text x="488" y="90" fill="#111" font-size="9">(X̄, Ȳ)</text>
+  <text x="548" y="33" fill="#15803d" font-size="9">Y/X ≡ X/Y</text>
+  <text x="480" y="193" text-anchor="middle" fill="#555">Lines coincide when |r|=1</text>
+
+</svg>
+</div>
+
+> **Key:** Both lines always pass through \((\bar X, \bar Y)\). As \(|r| \to 1\) the lines collapse onto each other. When r = 0 they stand perpendicular.
+
+---
+
+## J.6 Less-than Ogive → median and quartiles
+
+<div style="text-align:center; margin: 16pt 0;">
+<svg width="460" height="220" viewBox="0 0 460 220" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
+  <!-- axes -->
+  <line x1="50" y1="10" x2="50" y2="195" stroke="#555" stroke-width="1.5"/>
+  <line x1="45" y1="195" x2="430" y2="195" stroke="#555" stroke-width="1.5"/>
+
+  <!-- y-axis labels: CF% -->
+  <text x="42" y="195" text-anchor="end" fill="#333">0</text>
+  <text x="42" y="148" text-anchor="end" fill="#555">25</text>
+  <text x="42" y="100" text-anchor="end" fill="#555">50</text>
+  <text x="42" y="52"  text-anchor="end" fill="#555">75</text>
+  <text x="42" y="14"  text-anchor="end" fill="#555">100</text>
+  <text x="16" y="110" text-anchor="middle" fill="#555" transform="rotate(-90,16,110)">Cumulative frequency %</text>
+
+  <!-- less-than ogive (S-curve) -->
+  <path d="M 80,193 C 100,192 130,185 165,170 C 200,152 220,130 250,100 C 278,72 300,48 330,28 C 355,14 380,12 410,11"
+    fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="415" y="11" fill="#2563eb" font-size="9" font-weight="bold">Less-than ogive</text>
+
+  <!-- Q1 guideline at 25% -->
+  <line x1="50" y1="148" x2="210" y2="148" stroke="#f97316" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="210" y1="148" x2="210" y2="195" stroke="#f97316" stroke-width="1" stroke-dasharray="4,3"/>
+  <circle cx="210" cy="148" r="4" fill="#f97316"/>
+  <text x="210" y="210" text-anchor="middle" fill="#f97316">Q₁</text>
+
+  <!-- Median guideline at 50% -->
+  <line x1="50"  y1="100" x2="250" y2="100" stroke="#15803d" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="250" y1="100" x2="250" y2="195" stroke="#15803d" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="250" cy="100" r="5" fill="#15803d"/>
+  <text x="250" y="210" text-anchor="middle" fill="#15803d" font-weight="bold">Median</text>
+
+  <!-- Q3 guideline at 75% -->
+  <line x1="50"  y1="52" x2="300" y2="52" stroke="#7c3aed" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="300" y1="52" x2="300" y2="195" stroke="#7c3aed" stroke-width="1" stroke-dasharray="4,3"/>
+  <circle cx="300" cy="52" r="4" fill="#7c3aed"/>
+  <text x="300" y="210" text-anchor="middle" fill="#7c3aed">Q₃</text>
+
+  <!-- axis label -->
+  <text x="240" y="218" text-anchor="middle" fill="#555">Class upper boundaries (x-axis)</text>
+</svg>
+</div>
+
+> **Read:** Draw a horizontal line from the y-axis at N/2 (50 %) to the ogive curve, then drop a vertical to the x-axis → **Median**. At N/4 → Q₁. At 3N/4 → Q₃.
+
+---
+
+## J.7 Lorenz Curve — inequality measurement
+
+<div style="text-align:center; margin: 16pt 0;">
+<svg width="350" height="300" viewBox="0 0 350 300" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
+  <!-- axes -->
+  <line x1="40" y1="10" x2="40" y2="260" stroke="#555" stroke-width="1.5"/>
+  <line x1="35" y1="260" x2="310" y2="260" stroke="#555" stroke-width="1.5"/>
+
+  <!-- axis labels -->
+  <text x="175" y="280" text-anchor="middle" fill="#555">Cumulative % of population</text>
+  <text x="15" y="140" text-anchor="middle" fill="#555" transform="rotate(-90,15,140)">Cumulative % of income</text>
+
+  <!-- Corner dots -->
+  <text x="35" y="275" fill="#333">0</text>
+  <text x="305" y="275" fill="#333">100</text>
+
+  <!-- Line of equality (diagonal) -->
+  <line x1="40" y1="260" x2="310" y2="10" stroke="#15803d" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="300" y="20" fill="#15803d" font-size="9">Line of equality</text>
+
+  <!-- Lorenz curve (bowed below) -->
+  <path d="M 40,260 C 80,258 120,250 160,228 C 200,202 230,165 260,120 C 280,92 300,48 310,10"
+    fill="#dbeafe" stroke="#2563eb" stroke-width="2" fill-opacity="0.4"/>
+  <text x="260" y="175" fill="#2563eb" font-size="9">Lorenz curve</text>
+
+  <!-- Gini label: area between -->
+  <text x="155" y="215" fill="#dc2626" font-size="11" font-weight="bold">A</text>
+  <text x="155" y="240" fill="#6b7280" font-size="9">(Gini = A / (A+B))</text>
+  <text x="260" y="240" fill="#6b7280" font-size="9">B</text>
+
+  <!-- tick marks -->
+  <line x1="40"  y1="260" x2="40"  y2="265" stroke="#555"/><text x="40"  y="274" text-anchor="middle" fill="#555">0</text>
+  <line x1="175" y1="260" x2="175" y2="265" stroke="#555"/><text x="175" y="274" text-anchor="middle" fill="#555">50</text>
+  <line x1="310" y1="260" x2="310" y2="265" stroke="#555"/><text x="310" y="274" text-anchor="middle" fill="#555">100</text>
+
+  <text x="175" y="295" text-anchor="middle" fill="#555" font-weight="bold">Lorenz Curve — income inequality</text>
+</svg>
+</div>
+
+> **Read:**
+> - Diagonal = perfect equality (everyone earns the same share).
+> - Bow = the actual Lorenz curve (reality is unequal).
+> - Gini coefficient = area A / (A + B). Ranges 0 (perfect equality) to 1 (perfect inequality).
+> - The greater the bow, the greater the inequality.
+
+---
+
+\newpage
+
+# APPENDIX K — Extended Drill for HIGH chapters (Ch 1, 4, 8, 11, 12)
+
+> 20 fresh worked problems per chapter. Pair with the mini-mock and the chapter worked examples for full coverage.
+
+---
+
+## K-1  Data presentation — 20 worked Qs
+
+> **K-1.1.** Census of India 2011 data used by a researcher is which type of data?
+>
+> **Secondary** (collected by someone else — Census, NSO, RBI publications are all secondary).
+
+> **K-1.2.** A student marks an observation in a class as 10–20. The class mark is 15, width is 10. The exclusive lower boundary is 10. T/F?
+>
+> **True** — the exclusive form's lower limit and lower boundary are the same.
+
+> **K-1.3.** The following frequency polygon will touch the x-axis at both ends because:
+>
+> The convention is to extend to the midpoint of the **imaginary classes** just before the first and just after the last actual class (with frequency 0). This closes the polygon to the x-axis.
+
+> **K-1.4.** In a cumulative frequency distribution, the last entry equals?
+>
+> The **total frequency** N (it's the "less than the upper boundary of the last class" count = all observations).
+
+> **K-1.5.** A distribution with classes 10–20, 20–30, 30–40 and frequencies 30, 50, 20. What percentage of observations lie below 30?
+>
+> (30 + 50)/100 = **80 %**.
+
+> **K-1.6.** The sum of all relative frequencies is?
+>
+> Always **1**.
+
+> **K-1.7.** Frequency polygon for comparing two distributions is preferred over histograms because:
+>
+> Two histograms overlap and obscure each other; two polygons on the same axis remain readable (lines can cross without filling confusion).
+
+> **K-1.8.** Ogive can be used to find which measures?
+>
+> Median, quartiles (Q₁, Q₃), deciles, percentiles — any **positional measure**.
+
+> **K-1.9.** NSS (National Sample Survey) data, when used by another researcher, is which type?
+>
+> **Secondary**.
+
+> **K-1.10.** A researcher visits each household in a district to collect income data. Method?
+>
+> **Direct personal interview** (investigator collects first-hand → primary data).
+
+> **K-1.11.** In a relative frequency distribution, each class frequency is divided by?
+>
+> The **total number of observations** (N).
+
+> **K-1.12.** A bar chart is preferred over a histogram when data is?
+>
+> **Discrete / categorical** (like states, departments, years as separate labels).
+
+> **K-1.13.** Convert inclusive class 55–64 to exclusive.
+>
+> Lower boundary = 54.5, upper boundary = 64.5. Exclusive: **54.5 – 64.5**.
+
+> **K-1.14.** "Less than" ogive at x = 40 reads as cumulative frequency 70 out of 100 total. "More than" ogive at x = 40 reads as?
+>
+> 100 − 70 = **30** (complement).
+
+> **K-1.15.** The intersection of "less-than" and "more-than" ogives gives the?
+>
+> **Median** (the point where cumulative from below and above are equal at N/2).
+
+> **K-1.16.** A pie chart is drawn for two quantities: 60 and 40. Angles?
+>
+> 60/(60+40) × 360 = **216°** and 40/100 × 360 = **144°**.
+
+> **K-1.17.** Data on the number of family members per household is which type?
+>
+> **Discrete** quantitative (count, must be whole number).
+
+> **K-1.18.** Data on the height of a person is which type?
+>
+> **Continuous** quantitative (takes any value in a range).
+
+> **K-1.19.** A questionnaire mailed to respondents without an enumerator is called?
+>
+> **Mailed questionnaire method** (used when population is literate and spread widely).
+
+> **K-1.20.** A sub-divided bar chart differs from a simple bar chart in that:
+>
+> Each bar is divided into parts representing component categories, so **both total and composition** are visible simultaneously.
+
+---
+
+\newpage
+
+## K-4  Moments, Skewness, Kurtosis — 20 worked Qs
+
+> **K-4.1.** The first raw moment equals?
+>
+> \(\mu_1' = \bar X\) (the arithmetic mean).
+
+> **K-4.2.** For any distribution, the first central moment is?
+>
+> \(\mu_1 = 0\) (by definition of mean).
+
+> **K-4.3.** \(\mu_0 = ?\)
+>
+> \(\mu_0 = 1\) (zeroth central moment is always 1, since \(\sum f/N = 1\)).
+
+> **K-4.4.** \(\mu_2 = 16\). SD = ?
+>
+> \(\sigma = \sqrt{16} = \mathbf{4}\).
+
+> **K-4.5.** \(\mu_3 = 0\). What does this tell us about skewness?
+>
+> \(\beta_1 = \mu_3^2/\mu_2^3 = 0\) → **zero skewness → symmetric distribution**.
+
+> **K-4.6.** \(\mu_2 = 9, \mu_4 = 243\). β₂?
+>
+> \(\beta_2 = 243/81 = \mathbf{3}\) → mesokurtic.
+
+> **K-4.7.** \(\mu_1' = 10, \mu_2' = 120\). Find variance.
+>
+> \(\mu_2 = 120 - 100 = \mathbf{20}\).
+
+> **K-4.8.** \(\mu_1' = 5, \mu_2' = 30, \mu_3' = 200\). Find \(\mu_3\).
+>
+> \(\mu_3 = 200 - 3(5)(30) + 2(125) = 200 - 450 + 250 = \mathbf{0}\).
+
+> **K-4.9.** Karl Pearson Sk = 0.5, mode = 40, σ = 6. Mean = ?
+>
+> \(0.5 = (\bar X - 40)/6 \Rightarrow \bar X = 43\).
+
+> **K-4.10.** Bowley Sk = 0.4, Q₁ = 20, Q₃ = 60. Median = ?
+>
+> \(0.4 = (60 + 20 - 2Q_2)/(60 - 20) = (80 - 2Q_2)/40\). \(80 - 2Q_2 = 16 \Rightarrow Q_2 = 32\).
+
+> **K-4.11.** If \(\beta_2 > 3\), the distribution is said to be?
+>
+> **Leptokurtic** (sharp peak, fat tails).
+
+> **K-4.12.** γ₂ = β₂ − 3 = −1.2. Distribution?
+>
+> \(\beta_2 = 1.8 < 3\) → **platykurtic**.
+
+> **K-4.13.** Moments from any origin \(A\) vs from the mean: which has \(\mu_1 = 0\)?
+>
+> Only from the **mean**. From any other origin the first moment equals \(\bar X - A \neq 0\).
+
+> **K-4.14.** A distribution has the same shape on both sides of the mean. Which odd moments are zero?
+>
+> All odd central moments: \(\mu_1 = \mu_3 = \mu_5 = \cdots = 0\).
+
+> **K-4.15.** Sheppard's correction is applied when:
+>
+> Data is **grouped** (continuous) and class widths are equal. It corrects the upward bias in grouped-data moments.
+
+> **K-4.16.** For Karl Pearson Sk, which formula is used when the distribution is bimodal?
+>
+> Use the **median-based formula**: \(\text{Sk} = 3(\bar X - \text{Med})/\sigma\) (mode is ambiguous for bimodal).
+
+> **K-4.17.** β₁ is always:
+>
+> **Non-negative** (\(\mu_3^2 \ge 0\)). The sign of skewness is determined by γ₁ = μ₃/σ³.
+
+> **K-4.18.** For a normal distribution, β₁ = ? and β₂ = ?
+>
+> β₁ = **0**, β₂ = **3**.
+
+> **K-4.19.** Bowley's skewness is based on which positional values?
+>
+> **Quartiles** (Q₁, Q₂, Q₃) — thus it is resistant to extreme values (unlike Pearson's which uses mean and SD).
+
+> **K-4.20.** If mode > median > mean, skewness is:
+>
+> **Negative** (left-skewed, long left tail).
+
+---
+
+\newpage
+
+## K-8  Sampling Theory — 20 worked Qs
+
+> **K-8.1.** A population of 10,000 students; a sample of 100 selected. The mean of the sample is a?
+>
+> **Statistic** (calculated from the sample, not the population).
+
+> **K-8.2.** A complete enumeration study is called a?
+>
+> **Census**.
+
+> **K-8.3.** If the population SD is 40 and the sample size is 64, what is the SE of the mean?
+>
+> \(40/\sqrt{64} = 40/8 = \mathbf{5}\).
+
+> **K-8.4.** If SE = 4 when n = 25, what is the SE when n = 100?
+>
+> SE scales with \(1/\sqrt n\): new SE = \(4 \cdot \sqrt{25}/\sqrt{100} = 4 \cdot 5/10 = \mathbf{2}\).
+
+> **K-8.5.** The sampling distribution of \(\bar X\) has mean = ?
+>
+> \(\mu\) (the population mean) — because \(\bar X\) is an unbiased estimator.
+
+> **K-8.6.** The CLT says that for any population with finite variance, the distribution of \(\bar X\) tends to be:
+>
+> **Normal** as n increases.
+
+> **K-8.7.** Frame errors are which type of error?
+>
+> **Non-sampling** error (the list of units is incomplete or outdated).
+
+> **K-8.8.** Which method is used when population units are naturally ordered and every kth unit is selected?
+>
+> **Systematic sampling**.
+
+> **K-8.9.** Cluster sampling is useful when:
+>
+> No complete frame exists and/or population is spread over a large area (geographic clusters).
+
+> **K-8.10.** A study of drug users reaches new respondents through existing ones. Technique?
+>
+> **Snowball sampling** (non-probability).
+
+> **K-8.11.** Which method gives a mathematical bound on sampling error?
+>
+> **Probability sampling** (because random selection allows computing variance of the estimator).
+
+> **K-8.12.** If SE of proportion = 0.025 and p = 0.5, what is n?
+>
+> \(0.025 = \sqrt{0.25/n} \Rightarrow n = 0.25/0.000625 = \mathbf{400}\).
+
+> **K-8.13.** To estimate a proportion within ±3 % at 95 % confidence (P unknown, use worst case):
+>
+> \(n = (1.96 / 0.03)^2 \times 0.25 = (65.33)^2 \times 0.25 \approx 4268 \times 0.25 = \mathbf{1067}\).
+
+> **K-8.14.** Purposive (judgement) sampling produces results that are:
+>
+> **Not statistically generalizable** (no probability selection → margin of error undefined).
+
+> **K-8.15.** Within a stratified sample, the stratum weight is proportional to its size in the population. This is called?
+>
+> **Proportional allocation**.
+
+> **K-8.16.** The finite population correction factor approaches 1 when:
+>
+> n is small relative to N (sampling fraction n/N → 0). In this case FPC ≈ 1 and is usually ignored.
+
+> **K-8.17.** The standard error of a statistic measures:
+>
+> The **variability of that statistic** across all possible samples of the same size — i.e., how precise the estimate is.
+
+> **K-8.18.** Non-sampling errors can occur even in a?
+>
+> **Census** (because non-sampling errors come from measurement, recording, and processing — they do not require sampling).
+
+> **K-8.19.** A respondent's refusal to answer creates which error?
+>
+> **Non-response bias** — a type of non-sampling error.
+
+> **K-8.20.** Stratification is most effective when:
+>
+> The strata are **internally homogeneous** (variance within each stratum is low), because then the within-stratum estimates are very precise.
+
+---
+
+\newpage
+
+## K-11  Time Series — 20 worked Qs
+
+> **K-11.1.** Monthly sales data for a company over 5 years is best classified as what kind of data?
+>
+> **Time series** (observations on a single variable recorded at successive points in time).
+
+> **K-11.2.** The seasonal component is best described as:
+>
+> A **regular, predictable** fluctuation within a calendar year (months/quarters) that repeats every year.
+
+> **K-11.3.** Long-term smooth movement in time series data is called?
+>
+> **Secular trend** (T).
+
+> **K-11.4.** A business cycle is part of which component?
+>
+> **Cyclical** (C) — wave-like movements lasting 2–10 years.
+
+> **K-11.5.** Which component covers events like floods, earthquakes, elections?
+>
+> **Irregular (I)** — unpredictable, no fixed pattern.
+
+> **K-11.6.** Sales (in units): 120, 130, 125, 135, 140. Compute the 3-year centred moving average for years 2, 3, 4.
+>
+> Year 2 MA = (120 + 130 + 125)/3 = **125**.
+> Year 3 MA = (130 + 125 + 135)/3 = **130**.
+> Year 4 MA = (125 + 135 + 140)/3 = **133.33**.
+
+> **K-11.7.** In the semi-average method with 8 years of data, the trend line uses?
+>
+> Mean of years 1–4 and mean of years 5–8. Place each average at the midpoint of its half (year 2.5 and year 6.5). Draw the line.
+
+> **K-11.8.** A 4-year moving average of data 10, 14, 18, 12, 20, 16, 24, 18 — first two 4-yr MA values?
+>
+> First: (10+14+18+12)/4 = **13.5**. Second: (14+18+12+20)/4 = **16**.
+>
+> Centred: (13.5 + 16)/2 = **14.75** (placed at year 3).
+
+> **K-11.9.** A trend line \(\hat Y = 50 + 3X\) with X coded such that X=0 is 2020 and unit X=1 is 1 year. Predicted value for 2024?
+>
+> X = 4. \(\hat Y = 50 + 12 = \mathbf{62}\).
+
+> **K-11.10.** Seasonal index = 112 for Q2. It means?
+>
+> Q2 values are **12 % above** the annual average in that quarter.
+
+> **K-11.11.** Seasonal index = 85 for a quarter. It means?
+>
+> That quarter is **15 % below** the overall trend/average.
+
+> **K-11.12.** The sum of seasonal indices over 4 quarters should equal 400. A set of indices is 95, 110, 105, 92. Their sum is 402. Adjusted index for Q1?
+>
+> Adjustment factor = 400/402. Q1 adjusted = 95 × 400/402 ≈ **94.5**.
+
+> **K-11.13.** To isolate the trend from a multiplicative model, you:
+>
+> Divide Y by the seasonal index: T × C × I = Y / S. Further smoothing removes C and I → pure trend.
+
+> **K-11.14.** The least-squares method of trend fitting minimises?
+>
+> \(\sum (Y - \hat Y)^2\) (sum of squared deviations between actual and estimated trend values).
+
+> **K-11.15.** A 3-point moving average of a series with 10 data points produces how many MA values?
+>
+> 10 − 3 + 1 = **8** MA values (the first and last points are lost).
+
+> **K-11.16.** Method of simple averages for seasonal indices: what does each "seasonal average" use?
+>
+> The average of observations for that particular season (e.g., all January values, then all February values, etc.) across all years.
+
+> **K-11.17.** Why is the multiplicative model more commonly used than the additive model?
+>
+> In most real-world series, seasonal **fluctuations grow proportionally** with the level (trend). Multiplicative correctly captures this; additive assumes constant seasonal swings.
+
+> **K-11.18.** A moving average with large period (e.g., 12-month) better smooths:
+>
+> Short-term fluctuations (seasonal and irregular), leaving only the long-term trend. The penalty: more observations lost at each end.
+
+> **K-11.19.** Moving average "loses" observations. For a 5-point MA on a 20-point series, how many points remain?
+>
+> 20 − (5 − 1) = **16** (2 lost at each end).
+
+> **K-11.20.** Why does a semi-average trend line use two points and not one?
+>
+> One point defines a value (not a direction). **Two points determine a line** (slope and intercept). The semi-average method needs at least two summary means to define the trend line.
+
+---
+
+\newpage
+
+## K-12  Index Numbers — 20 worked Qs
+
+> **K-12.1.** Compute Laspeyres price index from: P₀ = (10, 6), Q₀ = (4, 5), P₁ = (12, 8).
+>
+> Numerator: 12×4 + 8×5 = 48 + 40 = 88. Denom: 10×4 + 6×5 = 40 + 30 = 70.
+> L = 88/70 × 100 = **125.71**.
+
+> **K-12.2.** Add Q₁ = (5, 4) to K-12.1 and compute Paasche.
+>
+> Num: 12×5 + 8×4 = 60 + 32 = 92. Denom: 10×5 + 6×4 = 50 + 24 = 74.
+> P = 92/74 × 100 = **124.32**.
+
+> **K-12.3.** Fisher for K-12.1/2?
+>
+> √(125.71 × 124.32) = √(15634) ≈ **125.01**.
+
+> **K-12.4.** The time reversal test: P₀₁ × P₁₀ = ?
+>
+> **1** (or 100 if expressed as index number). Fisher satisfies this.
+
+> **K-12.5.** Factor reversal test: P₀₁ × Q₀₁ = ?
+>
+> \(V_{01}\) (the value index). Only Fisher satisfies both time and factor reversal simultaneously.
+
+> **K-12.6.** An index number of 140 means prices are now what % of base-year prices?
+>
+> **140 %** of base, i.e., a **40 % increase**.
+
+> **K-12.7.** Index in 2010 = 100 (base 2000). Index in 2015 = 150 (base 2000). Shift base to 2010.
+>
+> Index₂₀₁₅ (base 2010) = 150/100 × 100 = **150**.
+
+> **K-12.8.** An index series is 80 (2018), 100 (2020 = base), 110 (2022). Purchasing power of money in 2022?
+>
+> 1/110 × 100 = **90.9** paise per rupee of 2020 value.
+
+> **K-12.9.** A worker's money wage in 2023 is ₹20,000. CPI 2023 = 250 (base 2010 = 100). Real wage in 2010 rupees?
+>
+> Real wage = 20000/250 × 100 = **₹8,000**.
+
+> **K-12.10.** In the family budget method, the weight W for each item is?
+>
+> \(W = P_0 Q_0\) (base-year expenditure on that item).
+
+> **K-12.11.** The weighted AM of price relatives (family budget method) formula?
+>
+> \( \dfrac{\sum W (P_1/P_0) \times 100}{\sum W} \), where W = P₀ Q₀.
+
+> **K-12.12.** A simple aggregate price index ignores:
+>
+> **Quantities / weights** of items — items with high prices dominate regardless of importance.
+
+> **K-12.13.** Walsh index uses which weights?
+>
+> Geometric mean of quantities: \(\sqrt{Q_0 Q_1}\).
+
+> **K-12.14.** Splicing is done when:
+>
+> Two index series have a common **overlap year** and need to be joined into one continuous series.
+
+> **K-12.15.** A price index of 200 and a quantity index of 150 (both with the same formula). Value index approximately?
+>
+> Under factor-reversal, V₀₁ = P₀₁ × Q₀₁ = 200 × 150 / 100 (adjusting for base) = **300**. (Direct check: if both are Fisher, product = value index.)
+
+> **K-12.16.** The Consumer Price Index measures:
+>
+> The average change in prices paid by a **defined group of consumers** for a fixed basket of goods and services. (Not WPI, which is producer/trade prices.)
+
+> **K-12.17.** WPI differs from CPI primarily in:
+>
+> WPI measures price change at the **wholesale/manufacturer level**; CPI measures at the **retail / consumer level**. Their baskets differ; CPI includes services more heavily.
+
+> **K-12.18.** An index of 160 in period 1 and 200 in period 2 (same base). Relative change from period 1 to period 2?
+>
+> (200 − 160)/160 = 40/160 = **25 %** increase.
+
+> **K-12.19.** Deflating a nominal GDP series uses which index?
+>
+> A **price index** (like the GDP deflator or WPI). Real GDP = Nominal GDP / Price Index × 100.
+
+> **K-12.20.** A 3-item Laspeyres is 110. If ΣP₁Q₀ = 440 and ΣP₀Q₀ = 400. Verify.
+>
+> 440/400 × 100 = **110** ✓.
+
+---
+
+\newpage
+
+# APPENDIX L — Plain-English Concept Primers (for first-time readers)
+
+> If you have **never studied statistics before**, read the primer for each chapter before reading its main section. Each primer uses zero formulas — only plain language and intuition. After the primer, the formulas will land cleanly.
+
+---
+
+## L.1  What is "data presentation"? (Chapter 1 primer)
+
+Imagine you collect the ages of 200 people. You have a list of 200 numbers. In this raw form, the data tells you nothing useful at a glance.
+
+**What statisticians do:** They group the numbers into bins (e.g., 20–30, 30–40, 40–50) and count how many fall in each bin. This table is a **frequency distribution** — now you can see the shape of the data instantly.
+
+**Then they draw it.** A **histogram** is that table drawn as touching bars (width = one bin, height = count). A **frequency polygon** joins the midpoints of the bars with a line. An **ogive** is the running total (cumulative), which lets you answer "what % of people are younger than 35?".
+
+**The key insight:** The right graph makes the pattern visible instantly. That's why data presentation exists — not to decorate reports, but to reveal structure that raw numbers hide.
+
+---
+
+## L.2  What is "central tendency"? (Chapter 2 primer)
+
+Suppose two factories produce light bulbs. Factory A has lifetimes: 800, 900, 850, 950, 900 hours. Factory B: 200, 1500, 100, 1800, 400 hours. Both have the same **average** (= 880 hours), but Factory B is clearly worse.
+
+That average is a **measure of central tendency** — it picks one number to represent the centre of a dataset. The three main ones:
+
+- **Mean:** Add everything up, divide by count. Fair, uses all data. Pulled by outliers.
+- **Median:** The middle value when you line everyone up in order. Not affected by extremes.
+- **Mode:** The most common value. What occurs most often.
+
+**Why three?** Because different situations need different summaries. If 9 people earn ₹20,000 and 1 CEO earns ₹10,000,000, the mean salary is ₹1,018,000 — wildly misleading. The median (₹20,000) tells you what most people actually earn.
+
+---
+
+## L.3  What is "dispersion"? (Chapter 3 primer)
+
+The average tells you the centre. But two datasets can have the same average and be completely different.
+
+Class A scores: 70, 70, 70, 70, 70. Class B: 50, 60, 70, 80, 90. Both have mean 70. But Class A is uniform; Class B is spread out.
+
+**Dispersion** measures this spread. If dispersion is small, data is bunched near the mean (consistent, predictable). If large, data is scattered (variable, risky).
+
+The most important dispersion measure: **standard deviation (SD)**. Think of it as the "average distance from the mean". If SD = 0, all values are identical. The larger the SD, the more spread.
+
+**CV (coefficient of variation)** = SD ÷ Mean. It answers: "is a SD of 10 big or small?" — compared to a mean of 20, it's huge (50%); compared to a mean of 1000, it's tiny (1%). Use CV to compare variability between datasets with different scales.
+
+---
+
+## L.4  What are "moments"? (Chapter 4 primer)
+
+A **moment** is a formal way to summarise the shape of a distribution using powers of deviations from the mean.
+
+- 2nd moment = variance (captures width/spread).
+- 3rd moment = captures lopsidedness (**skewness**). If positive, the tail stretches right.
+- 4th moment = captures peakedness (**kurtosis**). High 4th moment = values are concentrated near the mean with heavy tails.
+
+**Skewness in plain English:** Imagine salary distributions at a company. Most employees earn ₹30,000–50,000 but a handful of executives earn ₹2 million. The bulk is on the left; the tail stretches right — **positive skew**. The mean gets pulled toward those high salaries, past the median, past the mode. That's the key diagnostic: position of mean vs median vs mode tells you skewness direction.
+
+**Kurtosis in plain English:** Compare two investments with the same average return. One is steady (low kurtosis = platykurtic — outcomes cluster near average). The other is mostly flat but occasionally swings wildly (high kurtosis = leptokurtic — fat tails). Same mean, same SD, but completely different risk profiles. Kurtosis captures this.
+
+---
+
+## L.5  What is "correlation"? (Chapter 5 primer)
+
+**Correlation** answers: "Do these two things move together?"
+
+Examples: Height and weight (taller people tend to weigh more — **positive correlation**). Ice cream sales and drowning incidents (both go up in summer, but **no causal link**). Unemployment rate and GDP growth (inversely related — **negative correlation**).
+
+Karl Pearson's r quantifies this: +1 means a perfect straight-line relationship going up. −1 means a perfect straight-line relationship going down. 0 means no linear relationship.
+
+**Regression** answers a follow-up: "If I know X, what is my best guess for Y?" A regression line is the "line of best fit" through the scatter of points. It minimises the total squared error between actual Y values and line-predicted Y values.
+
+**The two regression lines:** One predicts Y from X (Y on X line); the other predicts X from Y (X on Y line). They are different lines unless correlation is perfect (r = ±1), in which case they coincide. Both lines always cross at the point (mean of X, mean of Y).
+
+---
+
+## L.6  What is "probability"? (Chapter 6 primer)
+
+**Probability** is the science of quantifying uncertainty.
+
+When you flip a fair coin, there are 2 equally likely outcomes. Heads = 1 out of 2 → probability = 1/2. When you draw a card from a standard deck, there are 52 equally likely outcomes. Getting an ace = 4 out of 52 = 1/13.
+
+**Three definitions:**
+- Classical (equally likely outcomes, listed above).
+- Frequentist (toss the coin 1 million times; the fraction of heads converges to 0.5).
+- Axiomatic (a mathematical framework: probability is a function with 3 axioms).
+
+**Conditional probability:** P(A | B) = "probability of A given that B has already happened." If it rained today, the probability that the ground is wet is very high (the event "ground is wet" is conditional on rain).
+
+**Bayes' theorem** flips the conditioning: given the ground IS wet, what's the probability it rained? This "reverse conditioning" — from effect back to cause — appears in diagnostic testing, spam filtering, and at least one JSO question every paper.
+
+---
+
+## L.7  What is a "random variable"? (Chapter 7 primer)
+
+A **random variable** is a variable whose value is determined by a random experiment.
+
+When you roll a die, the outcome X can be 1, 2, 3, 4, 5, or 6. Each value has a probability (1/6). The list of values and their probabilities is the **probability distribution**.
+
+**Discrete vs Continuous:**
+- If X can only take countable values (number of heads, number of defects), it's discrete. Its distribution is described by a **probability mass function (pmf)**.
+- If X can take any value in an interval (someone's exact weight, time to failure of a machine), it's continuous. Its distribution is described by a **probability density function (pdf)**.
+
+**The four named distributions** you must know are just the most commonly occurring shapes in real problems:
+- **Binomial** → count of successes in n fixed independent trials.
+- **Poisson** → count of rare events in a fixed time/area.
+- **Normal** → the famous bell curve, appears naturally when many independent small factors combine (heights, measurement errors, exam scores).
+- **Hypergeometric** → like Binomial but without replacement (the probabilities change with each draw).
+
+---
+
+## L.8  What is "sampling"? (Chapter 8 primer)
+
+You want to know the average income of India's 1.4 billion people. Measuring every person is impossible. So you measure a sample — say 100,000 people — and estimate the population's income from it.
+
+**The core question:** How do you choose those 100,000 so the estimate is trustworthy?
+
+**Simple random sampling (SRS):** Every person has an equal chance. Like a lottery.
+
+**Stratified:** Divide population into groups (rural / urban; states; income brackets) and randomly sample within each group. More precise because you ensure representation of each group.
+
+**Cluster:** Geographic areas (districts, villages) are the sampling units. Sample some clusters, then study every person within those clusters. Cheaper than travelling everywhere.
+
+**Systematic:** Pick every kth person from an ordered list.
+
+**The standard error** of your estimate measures how much it would vary across different random samples. Larger sample → smaller SE → more precise estimate. This is the **mathematical guarantee** that probability sampling provides — which non-probability methods (quota, judgement, snowball) cannot give.
+
+---
+
+## L.9  What is "statistical inference"? (Chapter 9 primer)
+
+You measured a sample; now you want to say something about the whole population. That's inference.
+
+**Estimation:** Use the sample to pin down a population number. "Based on our sample of 200 voters, we estimate 58% will vote for Party A, with a margin of error of ±3%." The ±3% is the confidence interval — a range wide enough that you're 95% sure the true value lies inside.
+
+**Hypothesis testing:** You have a specific claim ("this medicine reduces fever by 2°C on average") and you test it against data. The null hypothesis (H₀) is the conservative position ("no effect"). The alternative (H₁) is the claim. You collect data and ask: "Is this data surprising if H₀ were true?" If yes, you reject H₀.
+
+**The risk table:**
+
+| | H₀ true | H₀ false |
+|--|---------|---------|
+| Reject H₀ | **Type I error (false alarm)** | Correct (Power) |
+| Don't reject | Correct | **Type II error (missed detection)** |
+
+Setting α = 5% means you'll accept a 5% chance of a false alarm. Power = 1 − β tells you how good the test is at catching a real effect.
+
+---
+
+## L.10  What is "ANOVA"? (Chapter 10 primer)
+
+Suppose you test three fertilisers on crops. Each fertiliser is applied to several plots, and you measure yield. Is there any real difference between fertilisers, or is the yield variation just random noise?
+
+You could run three t-tests (A vs B, A vs C, B vs C). But three tests at 5% significance gives a 14% chance of a false alarm across all three. ANOVA does all comparisons in one coherent test.
+
+**The idea:** If fertilisers matter, yields should vary more *between* fertiliser groups than *within* each group (within-group variation = random noise). ANOVA computes this ratio: F = (variance between groups) / (variance within groups). A large F → groups are genuinely different.
+
+**Partition of variation:** Total variation = variation between groups + variation within groups. This is the SST = SSB + SSW identity.
+
+---
+
+## L.11  What is "time series analysis"? (Chapter 11 primer)
+
+A **time series** is any variable measured repeatedly over time: monthly sales, daily stock prices, annual rainfall, quarterly GDP.
+
+The goal: understand and forecast the pattern.
+
+Every time series is a mixture of four components:
+1. **Trend** — the long-run direction (upward, downward, flat).
+2. **Seasonal** — the regular within-year cycle (ice cream sales spike in summer every year).
+3. **Cyclical** — the business cycle (boom-bust, 2–10 year waves).
+4. **Irregular** — random shocks (a pandemic, a flood).
+
+To analyse the series you need to **separate** these components. Once you have the trend alone, you can project it forward (forecasting). Once you have the seasonal index, you can "deseasonalise" data to see whether this month's sales are genuinely good or just good because it's festive season.
+
+---
+
+## L.12  What are "index numbers"? (Chapter 12 primer)
+
+Prices change over time. How do you express "prices overall went up by 20% since 2010"?
+
+An **index number** is that summary. It takes a baseline period (Base = 100) and expresses current levels as a ratio. A price index of 125 means prices are 25% higher than the base.
+
+Why not just use percentage change? Because there are many prices (rice, rent, petrol, medicine) and you need to **average** them in a sensible way — weighted by how much people actually spend on each item. That's where Laspeyres, Paasche, and Fisher come in: they differ in whether they use old quantities, new quantities, or a blend as weights.
+
+**Real-world examples:** The Consumer Price Index (CPI) measures inflation; it's used to adjust salaries ("dearness allowance" in government pay). The Wholesale Price Index (WPI) measures producer-level inflation. The Index of Industrial Production (IIP) is a quantity index.
+
+---
+
+\newpage
