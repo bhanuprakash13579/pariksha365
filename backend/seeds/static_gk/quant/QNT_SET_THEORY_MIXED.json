@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Set Theory — Venn diagrams, union, intersection, complement, De Morgan's laws",
+  "topic_code": "QNT_SET_THEORY_MIXED",
+  "description": "Set operations (union, intersection, complement), Venn diagram word problems (2-set and 3-set), De Morgan's laws, power sets, symmetric difference — standard SSC/IBPS/CAT format.",
+  "questions": [
+    {
+      "stem": "In a survey of 80 people, 45 like tea, 35 like coffee, and 15 like both. How many people like neither tea nor coffee?",
+      "options": [
+        {
+          "option_text": "15 people like neither tea nor coffee",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 people like neither tea nor coffee",
+          "is_correct": false
+        },
+        {
+          "option_text": "65 people like neither tea nor coffee",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 people like neither tea nor coffee",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "FORMULA: n(T∪C) = n(T) + n(C) − n(T∩C) = 45 + 35 − 15 = 65. People who like at least one = 65. NEITHER = Total − n(T∪C) = 80 − 65 = 15. STEP-BY-STEP: (1) Identify given: n(T)=45, n(C)=35, n(T∩C)=15, Total=80. (2) Apply inclusion-exclusion: 45+35−15=65 like at least one. (3) Neither = 80−65 = 15. PRACTICE EXAMPLES: If total=100, n(A)=60, n(B)=50, n(A∩B)=20 → n(A∪B)=90 → neither=10. COMMON MISTAKE: forgetting to subtract both-likers, getting 45+35=80 → neither=0 (wrong). EXAM TRAP: 'Neither' ≠ n(A') + n(B'). PYQ FREQUENCY: 2-set Venn diagram problems appear in EVERY IBPS PO/Clerk pre exam, SSC CGL, RRB NTPC — often in DI or GA. MEMORY AID: Union = A + B − Both (or you double-count 'both'); Neither = Total − Union.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Set Theory — Venn diagrams, union, intersection, complement, De Morgan's laws",
+      "topic_code": "QNT_SET_THEORY_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_SET_THEORY_MIXED_001"
+    },
+    {
+      "stem": "The number of subsets of the set A = {2, 4, 6, 8} is:",
+      "options": [
+        {
+          "option_text": "16 subsets (= 2⁴, since |A| = 4)",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 subsets (= 2³, this would be for a 3-element set)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 subsets (= |A|, confusing number of elements with subsets)",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 subsets (= 3|A|, no such formula exists for subsets)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "FORMULA: Number of subsets of a set with n elements = 2ⁿ. Here |A| = 4, so subsets = 2⁴ = 16. WHY 2ⁿ? Each element independently has 2 choices — 'include' or 'exclude'. For 4 elements: 2×2×2×2 = 16. LIST: {}, {2}, {4}, {6}, {8}, {2,4}, {2,6}, {2,8}, {4,6}, {4,8}, {6,8}, {2,4,6}, {2,4,8}, {2,6,8}, {4,6,8}, {2,4,6,8} = 16 subsets ✓. POWER SET P(A) = set of ALL subsets. |P(A)| = 16. PROPER SUBSETS = subsets excluding A itself = 2ⁿ − 1 = 15. EMPTY SET {} is always a subset. EXAM VARIANTS: (1) number of non-empty subsets = 2ⁿ−1=15. (2) number of proper subsets = 2ⁿ−1=15. (3) subsets containing a specific element = 2ⁿ⁻¹ = 8. PYQ FREQUENCY: subset counting in SSC CGL, IBPS PO Quant, CAT DILR — 1-2× per year.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Set Theory — Venn diagrams, union, intersection, complement, De Morgan's laws",
+      "topic_code": "QNT_SET_THEORY_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_SET_THEORY_MIXED_002"
+    },
+    {
+      "stem": "If A = {1,2,3,4,5} and B = {3,4,5,6,7} and the universal set U = {1,2,3,4,5,6,7,8,9}, then (A∪B)' equals:",
+      "options": [
+        {
+          "option_text": "{8, 9} — elements in U not in A or B",
+          "is_correct": true
+        },
+        {
+          "option_text": "{6, 7, 8, 9} — this is A' (elements not in A), not (A∪B)'",
+          "is_correct": false
+        },
+        {
+          "option_text": "{1, 2, 8, 9} — this is B' (elements not in B), not the complement of A∪B",
+          "is_correct": false
+        },
+        {
+          "option_text": "{3, 4, 5} — this is A∩B (elements common to both), not the complement",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "STEP-BY-STEP: (1) A∪B = {1,2,3,4,5} ∪ {3,4,5,6,7} = {1,2,3,4,5,6,7}. (2) (A∪B)' = U − (A∪B) = {1,...,9} − {1,...,7} = {8,9}. DE MORGAN'S VERIFICATION: (A∪B)' = A'∩B'. A' = U−A = {6,7,8,9}. B' = U−B = {1,2,8,9}. A'∩B' = {6,7,8,9} ∩ {1,2,8,9} = {8,9} ✓. DE MORGAN'S LAWS: (1) (A∪B)' = A'∩B'. (2) (A∩B)' = A'∪B'. COMMON MISTAKES: (a) (A∪B)' ≠ A'∪B' — that's wrong. (b) Complement of union ≠ union of complements. EXAM NICHE: De Morgan's laws tested in SSC CGL Tier-1, IBPS PO GA/Quant, CAT — often via Venn diagram identification questions. PYQ FREQUENCY: 1-2× per year in major competitive exams.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Set Theory — Venn diagrams, union, intersection, complement, De Morgan's laws",
+      "topic_code": "QNT_SET_THEORY_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_SET_THEORY_MIXED_003"
+    },
+    {
+      "stem": "In a class of 100 students: 50 study Mathematics, 40 study Physics, 35 study Chemistry. 15 study both Maths and Physics, 10 study both Physics and Chemistry, 12 study both Maths and Chemistry, and 5 study all three subjects. How many students study none of the three subjects?",
+      "options": [
+        {
+          "option_text": "7 students study none of the three subjects",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 students study none of the three subjects",
+          "is_correct": false
+        },
+        {
+          "option_text": "13 students study none of the three subjects",
+          "is_correct": false
+        },
+        {
+          "option_text": "0 students study none — all 100 study at least one subject",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "THREE-SET INCLUSION-EXCLUSION FORMULA: n(M∪P∪C) = n(M) + n(P) + n(C) − n(M∩P) − n(P∩C) − n(M∩C) + n(M∩P∩C). CALCULATION: = 50 + 40 + 35 − 15 − 10 − 12 + 5 = 125 − 37 + 5 = 93. NEITHER = Total − n(M∪P∪C) = 100 − 93 = 7. STEP-BY-STEP: (1) Sum all three = 50+40+35 = 125. (2) Subtract pairwise intersections = 15+10+12 = 37 → 125−37 = 88. (3) Add back triple intersection = 88+5 = 93. (4) Neither = 100−93 = 7. MEMORY AID: 'Add singles, subtract pairs, add triples.' EXAM TRAP: forgetting to add back the triple-intersection (students counted 3× in step 1, subtracted 3× in step 2 → subtracted once too many → must add back once). PYQ FREQUENCY: 3-set Venn problems appear in SSC CGL Tier-1, IBPS PO, CAT DILR regularly — 1× per 2 years in banking.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Set Theory — Venn diagrams, union, intersection, complement, De Morgan's laws",
+      "topic_code": "QNT_SET_THEORY_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_SET_THEORY_MIXED_004"
+    },
+    {
+      "stem": "If n(A) = 25, n(B) = 15, n(A∩B) = 5, and the universal set n(U) = 50, what is n(A∪B)'?",
+      "options": [
+        {
+          "option_text": "15 — the number of elements in neither A nor B (50 − 35 = 15)",
+          "is_correct": true
+        },
+        {
+          "option_text": "35 — this is n(A∪B), not its complement in U (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 — this equals n(A), not the complement of the union",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 — result of subtracting wrong values in the formula",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "STEP-BY-STEP: (1) n(A∪B) = n(A) + n(B) − n(A∩B) = 25 + 15 − 5 = 35. (2) n(A∪B)' = n(U) − n(A∪B) = 50 − 35 = 15. INTERPRETATION: 15 elements in U belong to neither A nor B. VERIFY USING COMPLEMENT: n(A') = 50−25 = 25. n(B') = 50−15 = 35. n(A'∩B') = n((A∪B)') = 15 ✓ (De Morgan's). RELATED FORMULAS: n(A only) = n(A) − n(A∩B) = 25−5 = 20. n(B only) = n(B) − n(A∩B) = 15−5 = 10. n(exactly one) = n(A only) + n(B only) = 20+10 = 30. n(at least one) = n(A∪B) = 35. PYQ FREQUENCY: complement-of-union problems in SSC CGL, IBPS PO, RRB NTPC 1× per sitting. EXAM ANGLE: questions often state 'how many are in neither' — that IS the complement of the union.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Set Theory — Venn diagrams, union, intersection, complement, De Morgan's laws",
+      "topic_code": "QNT_SET_THEORY_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_SET_THEORY_MIXED_005"
+    },
+    {
+      "stem": "Set A = {a, b, c, d, e}. The number of subsets of A that contain both elements 'a' and 'b' is:",
+      "options": [
+        {
+          "option_text": "8 subsets (fix a and b; remaining 3 elements can each be present or absent → 2³ = 8)",
+          "is_correct": true
+        },
+        {
+          "option_text": "16 subsets (= 2⁴, this overcounts by including subsets that miss a or b)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 subsets (= 2², correct formula applied to wrong number of free elements)",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 subsets (= C(5,2) + C(5,3) — counts combinations not containing a fixed pair)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "STRATEGY: Fix both 'a' and 'b' as compulsory members. The remaining elements {c, d, e} — 3 elements — each independently contribute 2 choices (in/out). So subsets = 2³ = 8. LISTING: {a,b}, {a,b,c}, {a,b,d}, {a,b,e}, {a,b,c,d}, {a,b,c,e}, {a,b,d,e}, {a,b,c,d,e} = 8 subsets ✓. GENERALISATION: subsets of an n-element set containing exactly k fixed elements = 2^(n−k). Here n=5, k=2 → 2^(5−2) = 2³ = 8. EXTENSION: subsets containing 'a' only (not necessarily 'b') = 2^(5−1) = 2⁴ = 16. Subsets containing 'a' OR 'b' = subsets with 'a' + subsets with 'b' − subsets with both = 16+16−8 = 24. EXAM TRAP: 'containing both a and b' ≠ 'containing a or b'. PYQ FREQUENCY: subset-with-conditions in CAT, XAT, SSC CGL 1-2× per year.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Set Theory — Venn diagrams, union, intersection, complement, De Morgan's laws",
+      "topic_code": "QNT_SET_THEORY_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_SET_THEORY_MIXED_006"
+    },
+    {
+      "stem": "If A = {1, 2, 3, 4, 5} and B = {3, 4, 5, 6, 7, 8}, the symmetric difference A△B has how many elements?",
+      "options": [
+        {
+          "option_text": "5 elements — A△B = {1,2,6,7,8}",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 elements — that is |A∩B| = |{3,4,5}|, not the symmetric difference",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 elements — that is |A∪B|, not the symmetric difference",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 elements — that is |A|+|B|, forgetting to remove elements in both sets",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SYMMETRIC DIFFERENCE A△B = (A−B) ∪ (B−A) = elements in EXACTLY ONE of A or B (not both). STEP-BY-STEP: (1) A−B = elements in A but not B = {1,2,3,4,5} − {3,4,5,6,7,8} = {1,2}. (2) B−A = elements in B but not A = {6,7,8}. (3) A△B = {1,2} ∪ {6,7,8} = {1,2,6,7,8} → |A△B| = 5. ALTERNATIVE FORMULA: |A△B| = |A∪B| − |A∩B| = 8 − 3 = 5 ✓. VERIFY: |A∪B| = 5+6−3=8; |A∩B| = 3 (elements 3,4,5); 8−3=5 ✓. ALSO: |A△B| = |A|+|B|−2|A∩B| = 5+6−6 = 5 ✓. USES: Symmetric difference is used in error detection codes, set difference analysis, logical XOR operations. EXAM NICHE: A△B is a less-asked concept, making it a HIGH-PAYOFF topic — if it appears, most unprepared students guess wrong. PYQ FREQUENCY: symmetric difference in CAT, UPSC CSAT, SSC CGL Tier-2 — occasional but high-discriminating question.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Set Theory — Venn diagrams, union, intersection, complement, De Morgan's laws",
+      "topic_code": "QNT_SET_THEORY_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_QNT_SET_THEORY_MIXED_007"
+    }
+  ]
+}

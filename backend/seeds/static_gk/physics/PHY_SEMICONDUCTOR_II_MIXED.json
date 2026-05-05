@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Semiconductors — p-n junction, Zener diode, LED, solar cell, transistor",
+  "topic_code": "PHY_SEMICONDUCTOR_II_MIXED",
+  "description": "Advanced semiconductor concepts: p-n junction biasing, Zener diode (voltage regulation), LED (electroluminescence, III-V semiconductors), solar cell (photovoltaic effect), transistor action, intrinsic vs extrinsic semiconductors.",
+  "questions": [
+    {
+      "stem": "When a p-n junction diode is forward biased, the depletion layer:",
+      "options": [
+        {
+          "option_text": "Decreases in width — the applied voltage reduces the barrier potential",
+          "is_correct": true
+        },
+        {
+          "option_text": "Increases in width — forward bias pushes majority carriers away from the junction",
+          "is_correct": false
+        },
+        {
+          "option_text": "Remains unchanged — the depletion layer is unaffected by the bias direction",
+          "is_correct": false
+        },
+        {
+          "option_text": "Disappears completely — forward bias eliminates all space charge at the junction",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "FORWARD BIAS: positive terminal connected to p-side, negative to n-side. The applied voltage OPPOSES the built-in potential (barrier potential ~0.7V for silicon, ~0.3V for germanium). DEPLETION LAYER: In forward bias, majority carriers (holes in p, electrons in n) are pushed TOWARD the junction → they fill the depletion region → depletion layer NARROWS. Resistance decreases, current flows (above threshold voltage). REVERSE BIAS: opposite polarity → majority carriers pulled AWAY from junction → depletion layer WIDENS → high resistance, tiny leakage current. WHY NOT DISAPPEAR? Complete disappearance would require an infinite current — practically the depletion layer narrows to allow conduction at ~0.7V but a thin space charge remains. KNEE VOLTAGE: ~0.7V Si, ~0.3V Ge, ~1.2V GaAs. UPSC/SSC ANGLE: diode as one-way valve — half-wave and full-wave rectifiers use this property. PYQ FREQUENCY: depletion layer behaviour in SSC CGL, IBPS PO GA Physics, CBSE XII 1-2× per cycle.",
+      "subject": "Physics",
+      "topic": "Semiconductors — p-n junction, Zener diode, LED, solar cell, transistor",
+      "topic_code": "PHY_SEMICONDUCTOR_II_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_SEMICONDUCTOR_II_MIXED_001"
+    },
+    {
+      "stem": "A Zener diode is specifically designed to operate in which region of its characteristic curve?",
+      "options": [
+        {
+          "option_text": "Reverse breakdown region — it maintains a constant voltage under varying current",
+          "is_correct": true
+        },
+        {
+          "option_text": "Forward bias region — like an ordinary diode, used as a forward-conducting switch",
+          "is_correct": false
+        },
+        {
+          "option_text": "Depletion region only — the device works without any current flowing through it",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both forward and reverse regions equally — the Zener works in both directions uniformly",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "ZENER DIODE is a specially doped p-n junction designed to operate SAFELY in the REVERSE BREAKDOWN region. ZENER BREAKDOWN: at the Zener voltage (V_Z), the reverse current increases sharply while the voltage across the diode stays essentially CONSTANT. This constant-voltage property makes it ideal for VOLTAGE REGULATION. HOW IT WORKS: heavy doping creates a very thin depletion layer → high electric field at small reverse voltages → valence electrons tunnel across the narrow barrier (quantum tunnelling = Zener effect). ZENER vs AVALANCHE BREAKDOWN: Zener effect dominates below ~5V; Avalanche breakdown (impact ionisation) dominates above ~8V. APPLICATION: voltage regulator circuit — placed in parallel with the load; as input voltage varies, Zener current adjusts to keep output constant. ORDINARY DIODE: would be destroyed if operated in reverse breakdown. Zener is constructed to HANDLE this. PYQ FREQUENCY: Zener diode application in SSC CGL, IBPS PO, RRB NTPC Physics 1× per cycle.",
+      "subject": "Physics",
+      "topic": "Semiconductors — p-n junction, Zener diode, LED, solar cell, transistor",
+      "topic_code": "PHY_SEMICONDUCTOR_II_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_SEMICONDUCTOR_II_MIXED_002"
+    },
+    {
+      "stem": "An LED (Light Emitting Diode) emits light because of the process of:",
+      "options": [
+        {
+          "option_text": "Electroluminescence — electron-hole recombination releases energy as photons",
+          "is_correct": true
+        },
+        {
+          "option_text": "Photoelectric effect — photons from a light source eject electrons from the surface",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thermionic emission — heat excites electrons which then emit light when they return",
+          "is_correct": false
+        },
+        {
+          "option_text": "Fluorescence — UV light absorbed and re-emitted as visible light via excited states",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "ELECTROLUMINESCENCE: when an LED is forward biased, electrons from the n-side and holes from the p-side move toward the junction and RECOMBINE. Energy released = E_g (band gap energy) = emitted as a photon. COLOUR depends on band gap: (1) GaAs (E_g ~1.4 eV) → infrared; (2) GaP (2.26 eV) → green/yellow; (3) GaN (3.4 eV) → blue/UV; (4) InGaN → blue/white LEDs (Nobel Prize 2014 — Akasaki, Amano, Nakamura). EFFICIENCY: LEDs convert ~80-90% electrical energy to light — far more efficient than incandescent bulbs (~5%). PHOTOELECTRIC EFFECT (option B) is the REVERSE process — photons EJECT electrons (used in solar cells, photodiodes). REVERSE OF LED = SOLAR CELL (photons create electron-hole pairs instead of pairs recombining to emit photons). UPSC ANGLE: Blue LEDs enabled white light LEDs → energy efficiency revolution → Ujala scheme (India, 2015) distributing 370 crore LED bulbs. PYQ FREQUENCY: LED working principle in SSC CGL, IBPS PO, UPSC Prelims GS-1 1-2× per cycle.",
+      "subject": "Physics",
+      "topic": "Semiconductors — p-n junction, Zener diode, LED, solar cell, transistor",
+      "topic_code": "PHY_SEMICONDUCTOR_II_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_SEMICONDUCTOR_II_MIXED_003"
+    },
+    {
+      "stem": "In an n-type semiconductor, the majority charge carriers are electrons. This is achieved by doping a pure semiconductor like silicon with:",
+      "options": [
+        {
+          "option_text": "A pentavalent (Group 15) element such as phosphorus, arsenic, or antimony",
+          "is_correct": true
+        },
+        {
+          "option_text": "A trivalent (Group 13) element such as boron, aluminium, or gallium",
+          "is_correct": false
+        },
+        {
+          "option_text": "A divalent (Group 2) element such as magnesium or calcium",
+          "is_correct": false
+        },
+        {
+          "option_text": "A hexavalent (Group 16) element such as oxygen or sulphur",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "DOPING LOGIC: Silicon has 4 valence electrons. Replacing a Si atom with a PENTAVALENT atom (5 valence electrons) means 4 electrons form covalent bonds with Si neighbours, and the 5th electron is FREE (donor electron) → n-type semiconductor. PENTAVALENT DOPANTS (Group 15): Phosphorus (P), Arsenic (As), Antimony (Sb). Called DONOR impurities (they donate free electrons). N-TYPE: majority carriers = electrons; minority carriers = holes. P-TYPE: dope with TRIVALENT (Group 13) element → only 3 bonds possible → one 'missing bond' = hole (electron acceptor). ACCEPTOR IMPURITIES: Boron (B), Aluminium (Al), Gallium (Ga), Indium (In). P-TYPE: majority = holes; minority = electrons. SILICON CHIP: pure Si is INTRINSIC semiconductor. Doping creates EXTRINSIC (n or p) semiconductors for transistors, diodes, ICs. PYQ FREQUENCY: n-type vs p-type doping in SSC CGL, RRB NTPC, CBSE XII Physics — very common 1-2× per cycle.",
+      "subject": "Physics",
+      "topic": "Semiconductors — p-n junction, Zener diode, LED, solar cell, transistor",
+      "topic_code": "PHY_SEMICONDUCTOR_II_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_SEMICONDUCTOR_II_MIXED_004"
+    },
+    {
+      "stem": "A solar cell converts sunlight into electricity using the photovoltaic effect. The underlying physics is most similar to which semiconductor device?",
+      "options": [
+        {
+          "option_text": "A photodiode — both use incoming photons to generate electron-hole pairs in a p-n junction",
+          "is_correct": true
+        },
+        {
+          "option_text": "An LED — the LED emits photons upon recombination, which is the reverse of the solar cell",
+          "is_correct": false
+        },
+        {
+          "option_text": "A Zener diode — both rely on reverse breakdown at a fixed voltage to produce electricity",
+          "is_correct": false
+        },
+        {
+          "option_text": "A thermistor — both convert thermal energy from the sun into an electrical signal",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "PHOTOVOLTAIC EFFECT: photons with energy ≥ E_g (band gap) are absorbed → electron-hole pairs generated → separated by the built-in electric field at the p-n junction → electrons to n-side, holes to p-side → EMF produced. SOLAR CELL vs PHOTODIODE: mechanically identical (p-n junction exposed to light). Difference is in application: photodiode = detects light (converts to current signal); solar cell = generates power (large area, higher efficiency). LED vs SOLAR CELL: they are INVERSE processes. LED: electrical energy → photons (electroluminescence). Solar cell: photons → electrical energy (photovoltaic). THERMISTOR: a RESISTOR whose resistance changes with temperature — completely different mechanism (no p-n junction, no photon absorption). UPSC ANGLE: National Solar Mission (Jawaharlal Nehru National Solar Mission, 2010) — 100 GW target by 2022; India's solar capacity crossed 80 GW by 2024. PYQ FREQUENCY: solar cell principle in SSC CGL, UPSC Prelims, IBPS PO GA 1× per 2 years.",
+      "subject": "Physics",
+      "topic": "Semiconductors — p-n junction, Zener diode, LED, solar cell, transistor",
+      "topic_code": "PHY_SEMICONDUCTOR_II_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_SEMICONDUCTOR_II_MIXED_005"
+    },
+    {
+      "stem": "In a common-emitter (CE) transistor configuration used as an amplifier, the current gain β (beta) is defined as:",
+      "options": [
+        {
+          "option_text": "β = I_C / I_B — the ratio of collector current to base current (typically 50-300)",
+          "is_correct": true
+        },
+        {
+          "option_text": "β = I_B / I_C — the reciprocal of the standard definition (this is 1/β, not β)",
+          "is_correct": false
+        },
+        {
+          "option_text": "β = I_C / I_E — this is alpha (α), the CE current gain is different from this",
+          "is_correct": false
+        },
+        {
+          "option_text": "β = I_E / I_B — total emitter current to base current, a non-standard and unused ratio",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "TRANSISTOR CURRENTS: I_E = I_B + I_C (Kirchhoff's current law at the transistor). CURRENT GAINS: (1) β (hFE) = I_C/I_B — common-emitter current gain (amplification). Typical range: 50 to 300. (2) α = I_C/I_E — common-base current gain. α < 1 always (e.g., 0.95-0.99). RELATIONSHIP: β = α/(1−α). If α = 0.99, β = 0.99/0.01 = 99. AMPLIFICATION: small base current I_B controls large collector current I_C → transistor amplifies. If β=100, base current of 1 mA gives collector current of 100 mA. TRANSISTOR AS SWITCH: in saturation → both junctions forward biased → full ON. In cutoff → both reverse biased → full OFF. DIGITAL LOGIC: transistor switches form NAND/NOR gates → all logic circuits. UPSC ANGLE: Transistor invented 1947 (Bardeen, Brattain, Shockley — Bell Labs; Nobel 1956). India's semiconductor policy 2022 — 3 chip fabs approved for semiconductor self-reliance. PYQ FREQUENCY: transistor β in CBSE XII, JEE, RRB NTPC Physics, SSC CGL 1× per 2-3 years.",
+      "subject": "Physics",
+      "topic": "Semiconductors — p-n junction, Zener diode, LED, solar cell, transistor",
+      "topic_code": "PHY_SEMICONDUCTOR_II_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_SEMICONDUCTOR_II_MIXED_006"
+    },
+    {
+      "stem": "Which statement correctly distinguishes intrinsic semiconductors from extrinsic semiconductors?",
+      "options": [
+        {
+          "option_text": "Intrinsic: pure; equal electrons and holes; conductivity depends only on temperature. Extrinsic: doped; unequal carrier concentrations; conductivity controlled by dopant type",
+          "is_correct": true
+        },
+        {
+          "option_text": "Intrinsic: doped with metals; good conductors. Extrinsic: pure crystals; poor conductors at all temperatures instead",
+          "is_correct": false
+        },
+        {
+          "option_text": "Intrinsic: better conductors at room temperature than extrinsic due to pure crystal structure however",
+          "is_correct": false
+        },
+        {
+          "option_text": "Intrinsic: only p-type behaviour; holes dominate. Extrinsic: only n-type; electrons always dominate alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "INTRINSIC SEMICONDUCTOR: pure semiconductor (Si or Ge). At absolute zero → perfect insulator. At room temperature → thermal energy breaks some covalent bonds → EQUAL numbers of electrons and holes (n_i = p_i = n_i). Conductivity increases with temperature (unlike metals). Conductivity equation: σ = n_i·e·(μ_e + μ_h) where μ = mobility. EXTRINSIC SEMICONDUCTOR: doped with Group 13 or Group 15 elements. n-TYPE: n >> p (electrons = majority, holes = minority). p-TYPE: p >> n (holes = majority, electrons = minority). Mass action law: n·p = n_i² (applies to both intrinsic and extrinsic at equilibrium). OPTION B is wrong — intrinsic semiconductors have NO metal doping; they are pure crystals with moderate conductivity (not good conductors). OPTION C is wrong — extrinsic semiconductors have HIGHER conductivity than intrinsic at room temperature (that's why we dope — to increase conductivity). OPTION D is wrong — intrinsic has BOTH n and p equally; extrinsic can be either type. PYQ FREQUENCY: intrinsic vs extrinsic in CBSE XII, JEE, UPSC CSAT, SSC CGL Physics — 1-2× per year.",
+      "subject": "Physics",
+      "topic": "Semiconductors — p-n junction, Zener diode, LED, solar cell, transistor",
+      "topic_code": "PHY_SEMICONDUCTOR_II_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_SEMICONDUCTOR_II_MIXED_007"
+    }
+  ]
+}
