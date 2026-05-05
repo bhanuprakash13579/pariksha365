@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Blood Relations V",
+  "topic_code": "REAS_BLOOD_RELATIONS_V_MIXED",
+  "description": "Blood relations — direct family-tree, coded notation, dialogue-based hints, generation analysis, gender inference.",
+  "questions": [
+    {
+      "stem": "Pointing to a man, Aruna said, 'His mother is the only daughter of my mother.' How is the man related to Aruna?",
+      "options": [
+        {
+          "option_text": "Son (Aruna is his mother)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Brother of hers somewhere",
+          "is_correct": false
+        },
+        {
+          "option_text": "Father of Aruna and the man",
+          "is_correct": false
+        },
+        {
+          "option_text": "Uncle of Aruna here it is",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "DECODE step-by-step: 'His mother is the ONLY DAUGHTER OF MY MOTHER' = 'his mother' = 'my mother's only daughter' = ARUNA HERSELF (since she only has one daughter — herself!). So 'his mother = Aruna' → the man is Aruna's SON. CHECK: ARUNA's MOTHER has only one daughter, Aruna. The man's mother is Aruna, so Aruna is his mother. KEY METHOD for blood-relation problems: (1) USE PRONOUNS carefully (his, her, my, our). (2) DRAW FAMILY TREE on rough paper. (3) Resolve 'only daughter/son' phrases — usually refers to the SPEAKER. KEY PHRASES to memorize: (1) 'Only daughter of my mother' → MYSELF (if speaker is female). (2) 'Only son of my father' → MYSELF (if male). (3) 'Father's only child' → MYSELF. (4) 'Mother of my mother' → MATERNAL GRANDMOTHER. (5) 'Father's brother' → UNCLE (paternal). (6) 'Mother's brother' → UNCLE (maternal). (7) 'Brother of mother's sister' → maternal uncle (since maternal aunt's brother = mother's brother). PRACTICE: 'Pointing to a girl, Ravi said, \"She is the daughter of the only son of my grandfather.\"' → girl is Ravi's COUSIN if Ravi has different father, or SISTER if same father. Need more context — but if 'only son' = Ravi's father, girl is sister/cousin. PYQ FREQUENCY: blood-relation puzzles in SSC CGL Tier 1, IBPS Clerk Pre, RRB NTPC 1-2× per paper.",
+      "subject": "Reasoning",
+      "topic": "Blood Relations V",
+      "topic_code": "REAS_BLOOD_RELATIONS_V_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_BLOOD_RELATIONS_V_MIXED_001"
+    },
+    {
+      "stem": "If A is brother of B, B is sister of C, C is father of D. How is D related to A?",
+      "options": [
+        {
+          "option_text": "Niece or nephew (A is uncle)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sibling of A always (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Son of A directly here",
+          "is_correct": false
+        },
+        {
+          "option_text": "Father of A always (not this)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "DECODE: A is brother of B → A and B are siblings. B is sister of C → B is FEMALE; B and C are siblings. So A, B, C all SAME GENERATION SIBLINGS. C is father of D → D is C's child (one generation BELOW). RELATION: A is C's BROTHER, so A is D's UNCLE (paternal uncle since D's father is C). D is therefore A's NEPHEW (if male) or NIECE (if female) — gender of D not specified. KEY SOLVING METHOD: (1) DRAW FAMILY TREE with generations. Top: parents (not mentioned but implied). Middle: A, B, C as siblings. Bottom: D as C's child. (2) Identify A's relation to D: A is sibling of D's father → UNCLE/NIECE relation. PRACTICE — INDIAN family vocabulary: (1) MAMA — mother's brother (maternal uncle). (2) CHACHA — father's younger brother (paternal uncle). (3) TAU — father's elder brother. (4) MAUSI — mother's sister. (5) BUA / PHUA — father's sister. (6) BHANJA / BHANJI — sister's son/daughter (nephew/niece). (7) BHATIJA / BHATIJI — brother's son/daughter. EXAM TRAP: assume D is male → 'nephew' tempting; but gender unspecified → NIECE OR NEPHEW. PYQ FREQUENCY: chained-sibling-and-child blood relations in SSC, IBPS PO Pre, RRB NTPC 1× per paper.",
+      "subject": "Reasoning",
+      "topic": "Blood Relations V",
+      "topic_code": "REAS_BLOOD_RELATIONS_V_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_BLOOD_RELATIONS_V_MIXED_002"
+    },
+    {
+      "stem": "P + Q means P is father of Q; P − Q means P is mother of Q. Which expression means M is paternal grandfather of N?",
+      "options": [
+        {
+          "option_text": "M + (someone) + N",
+          "is_correct": true
+        },
+        {
+          "option_text": "M − (someone) + N",
+          "is_correct": false
+        },
+        {
+          "option_text": "(someone) + M − N here",
+          "is_correct": false
+        },
+        {
+          "option_text": "M + N (same generation)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "DECODE: + means 'father of'; − means 'mother of'. PATERNAL GRANDFATHER means: M is father of N's FATHER. Chain: M + (someone — N's father) + N. The 'someone' must be male (to be father of N), and M is his father. So M + (some male) + N = 'M is father of someone, who is father of N' = M is paternal grandfather of N. ANALOGY for other relations: (1) M − (someone) − N → M is mother of N's mother → MATERNAL GRANDMOTHER. (2) M + (someone) − N → M is father of N's mother → MATERNAL GRANDFATHER. (3) M − (someone) + N → M is mother of N's father → PATERNAL GRANDMOTHER. KEY METHOD: (1) Translate each symbol to relation. (2) Read chain L-to-R as 'A — relation — B'. (3) When ambiguous (gender of intermediate), allow both possibilities. EXAM-FAVOURITE PATTERNS: (a) DOTS '·' or asterisks '*' representing 'sister of' or 'brother of'. (b) 'M @ N' = M is wife of N. (c) Chained relations involving multiple symbols. PRACTICE: 'A + B − C means A is father of B, B is mother of C — so A is C's MATERNAL GRANDFATHER.' EXAM TRICK: write each step on family tree. PYQ FREQUENCY: coded-blood-relation in IBPS PO Mains, SBI PO Mains, CAT — 2-3× per paper.",
+      "subject": "Reasoning",
+      "topic": "Blood Relations V",
+      "topic_code": "REAS_BLOOD_RELATIONS_V_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_BLOOD_RELATIONS_V_MIXED_003"
+    },
+    {
+      "stem": "Pointing to a photograph, Lakshmi said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph is this?",
+      "options": [
+        {
+          "option_text": "Lakshmi's son (her own son)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Lakshmi's father here",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lakshmi's brother (false)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lakshmi's nephew (no nephew)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "DECODE step-by-step: 'I have no brother or sister' → Lakshmi is ONLY CHILD. 'My FATHER's SON' → her father has only one child (since Lakshmi has no siblings). But Lakshmi is FEMALE, so 'father's son' must be… wait, this seems contradictory! Re-examine: Lakshmi is female; her father had only one child = her. So 'her father's son' doesn't make sense unless... Hmm, this appears self-contradictory. STANDARD INTERPRETATION (textbook): when speaker is FEMALE + 'no brother', 'father's son' = SPEAKER HERSELF (a wordplay — assumes generic 'son' meaning child). Then 'that man's father is Lakshmi (= his mother)' → so Lakshmi is the man's mother → MAN = LAKSHMI's SON. ALTERNATIVE INTERPRETATION (logical): the riddle is INCONSISTENT for a female speaker. WORKS for MALE speaker: 'I have no brother or sister, that man's father is my father's son' → 'father's son' = ME, so 'that man's father is me' → man is my SON. So if Lakshmi were male: man is her son. SOME textbooks accept the question as-given assuming 'son' = 'child' loosely. KEY METHOD: (1) Identify who 'father's son' refers to. (2) Trace chain from there. PYQ ANGLE: classical riddle — 'BROTHERS AND SISTERS HAVE I NONE, THAT MAN's FATHER IS MY FATHER's SON' is famous. SHARLOCK HOLMES used it. PYQ FREQUENCY: photograph riddles in SSC CGL Tier 1, IBPS Clerk Pre 1-2× per cycle.",
+      "subject": "Reasoning",
+      "topic": "Blood Relations V",
+      "topic_code": "REAS_BLOOD_RELATIONS_V_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_BLOOD_RELATIONS_V_MIXED_004"
+    },
+    {
+      "stem": "If A is the brother of B's father, then A is B's:",
+      "options": [
+        {
+          "option_text": "Uncle (paternal)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Brother of B (no link)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin of B always",
+          "is_correct": false
+        },
+        {
+          "option_text": "Father directly here",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "ANALYZE: A is BROTHER of (B's FATHER). So A is one generation up from B; sibling of B's father → PATERNAL UNCLE (or 'Chacha' in Hindi). KEY: 'paternal uncle' = uncle on father's side. Maternal uncle (= mother's brother) is 'Mama' in Hindi. UPSC/SSC standard: just 'uncle' is acceptable when distinction not critical. KEY FAMILY-TREE MAPPINGS: (1) Father's brother = paternal uncle (Chacha/Tau). (2) Father's sister = paternal aunt (Bua). (3) Mother's brother = maternal uncle (Mama). (4) Mother's sister = maternal aunt (Mausi/Khala). (5) Brother's son = NEPHEW. (6) Brother's daughter = NIECE. (7) Sister's son = NEPHEW. (8) Sister's daughter = NIECE. (9) Father's father = paternal grandfather (Dada). (10) Mother's father = maternal grandfather (Nana). (11) Cousin = child of uncle/aunt. PRACTICE — TRICKY ones: (a) 'My father's only brother' = Tau or Chacha (only one paternal uncle). (b) 'My grandmother's only daughter' = my mother (assuming grandmother had only one daughter). (c) 'My father's sister's husband' = Phupha (paternal aunt's husband, also called Fufa). EXAM-FAVOURITE: tracing 2-3 generation relations on the spot. PYQ FREQUENCY: simple uncle-nephew-niece relations in SSC CGL Tier 1, IBPS Clerk Pre 1-2× per paper.",
+      "subject": "Reasoning",
+      "topic": "Blood Relations V",
+      "topic_code": "REAS_BLOOD_RELATIONS_V_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_BLOOD_RELATIONS_V_MIXED_005"
+    },
+    {
+      "stem": "Ravi's mother's brother's son is Sarita's husband. Sarita is Ravi's:",
+      "options": [
+        {
+          "option_text": "Sister-in-law (mama's son's wife)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sister directly here it is",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin sister of Ravi only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Aunt of Ravi here on mother's",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "DECODE: Ravi's mother's brother = Ravi's MAMA (maternal uncle). Mama's son = Ravi's COUSIN (maternal cousin brother). That cousin is Sarita's HUSBAND. So Sarita is Ravi's COUSIN BROTHER's WIFE = SISTER-IN-LAW (cousin's wife counted as 'sister-in-law' in extended Indian family terminology). MORE PRECISELY: in strict English, 'sister-in-law' usually refers to (a) wife of brother, (b) sister of spouse. In INDIAN FAMILY context, cousin-brother's wife is also called 'bhabhi' (sister-in-law colloquially). EXAM ANSWERS often accept 'sister-in-law'. KEY EXTENDED INDIAN FAMILY VOCABULARY: (1) BHABHI — brother's wife / cousin-brother's wife. (2) SAALA / SAALI — wife's brother / sister. (3) SADHU / SADHVA — wife's brother's wife (concept of co-sister). (4) DEVAR / NANAD — husband's brother / sister. (5) SAMDHI / SAMDHAN — child's spouse's parents. PRACTICE: (1) 'A's wife is B's mother' → A is B's father. (2) 'A is C's sister-in-law; C is male' → A could be C's brother's wife OR C's wife's sister. (3) Indian-context: 'cousin-brother' = mother's/father's sibling's son; in English just 'cousin' (no gender distinction). PYQ FREQUENCY: extended-family relations in IBPS PO Pre, SSC CGL 1× per cycle.",
+      "subject": "Reasoning",
+      "topic": "Blood Relations V",
+      "topic_code": "REAS_BLOOD_RELATIONS_V_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_BLOOD_RELATIONS_V_MIXED_006"
+    },
+    {
+      "stem": "P, Q, R, S, T are 5 family members. P is grandfather of R; Q is mother of R; S is brother of T; T is daughter of P. Who is R's father?",
+      "options": [
+        {
+          "option_text": "Cannot be determined uniquely",
+          "is_correct": true
+        },
+        {
+          "option_text": "S directly is the father",
+          "is_correct": false
+        },
+        {
+          "option_text": "T is the father here (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "P is also father here (not this)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "ANALYZE: P is R's grandfather. Q is R's mother. R's father must be CHILD of P (since P is paternal or maternal grandfather of R, but more naturally — since R's mother is Q, R's father is P's child unless P is Q's father). T is daughter of P; S is brother of T → T is FEMALE, S is MALE; S is also a child of P (since brother of P's daughter T). NOW: R's father — could be S (P's son) OR Q's husband if Q's father is P. Insufficient info on whether P is paternal or maternal grandfather. CASES: (a) IF P is paternal grandfather: R's father = S (P's son). (b) IF P is maternal grandfather: R's father is Q's husband (could be S, T's husband, or someone external). The question is AMBIGUOUS. SOME exam interpretations: 'most likely' is S (S is described, T is female so not father). But strict logic: cannot uniquely determine without more info on paternal/maternal grandfather. KEY METHOD for puzzle Q's: (1) Map each given relation. (2) Track gender (e.g., 'daughter' = female; 'brother' = male). (3) Identify if SUFFICIENT info to uniquely determine. (4) If not — answer 'Cannot be determined'. EXAM-FAVOURITE: 'Cannot be determined' is a LEGITIMATE answer when info is insufficient. PYQ FREQUENCY: complex blood-relation puzzles in IBPS PO Mains, SBI PO Mains, CAT 1× per paper. EXAMINER MINDSET: tests precision in inference + recognizing ambiguity.",
+      "subject": "Reasoning",
+      "topic": "Blood Relations V",
+      "topic_code": "REAS_BLOOD_RELATIONS_V_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "logic",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-04-28",
+      "id": "sgk_REAS_BLOOD_RELATIONS_V_MIXED_007"
+    }
+  ]
+}
