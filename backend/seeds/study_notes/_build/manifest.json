@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "description": "Per-exam grouping for the study-notes PDFs. The same source markdown can be rebuilt under multiple exam-target labels (Banks vs SSC/RRB) with a focus appendix selected by `focus_for`.",
+  "last_revised_at": "2026-04-26",
+  "exam_families": {
+    "ssc": ["SSC CGL", "SSC CHSL", "SSC MTS", "SSC GD", "SSC Stenographer"],
+    "rrb": ["RRB NTPC", "RRB Group D", "RRB JE", "RRB ALP"],
+    "banks": ["IBPS PO", "IBPS Clerk", "IBPS RRB", "SBI PO", "SBI Clerk", "RBI Asst.", "RBI Grade B"],
+    "state_psc": ["TSPSC Group I/II/III/IV", "APPSC Group I/II/III/IV", "TNPSC", "MPSC", "BPSC"],
+    "psu": ["EPFO", "FCI", "DRDO", "ISRO assistant"]
+  },
+  "books": [
+    {
+      "id": "polity",
+      "src": "polity.md",
+      "out": "polity_ssc_rrb_banks_psc.pdf",
+      "title": "Polity & Constitution — Common Book",
+      "subtitle": "SSC, RRB, Banks (GA), State PSC — Indian Constitution + Governance",
+      "exams": ["ssc", "rrb", "banks", "state_psc", "psu"],
+      "shared": true
+    },
+    {
+      "id": "history",
+      "src": "history.md",
+      "out": "history_ssc_rrb_banks_psc.pdf",
+      "title": "History — Common Book",
+      "subtitle": "SSC, RRB, Banks (GA), State PSC — Ancient → Modern + World",
+      "exams": ["ssc", "rrb", "banks", "state_psc"],
+      "shared": true
+    },
+    {
+      "id": "geography",
+      "src": "geography.md",
+      "out": "geography_ssc_rrb_banks_psc.pdf",
+      "title": "Geography — Common Book",
+      "subtitle": "SSC, RRB, Banks (GA), State PSC — Physical, Indian, World, Human",
+      "exams": ["ssc", "rrb", "banks", "state_psc"],
+      "shared": true
+    },
+    {
+      "id": "economics",
+      "src": "economics.md",
+      "out": "economics_ssc_rrb_banks_psc.pdf",
+      "title": "Economics — Common Book",
+      "subtitle": "SSC, RRB, Banks (GA + Banking), State PSC — Indian Economy + Banking Awareness",
+      "exams": ["ssc", "rrb", "banks", "state_psc"],
+      "shared": true
+    },
+    {
+      "id": "physics",
+      "src": "physics.md",
+      "out": "physics_ssc_rrb_psc.pdf",
+      "title": "Physics — Common Book",
+      "subtitle": "SSC, RRB, State PSC, Banks (GA) — General Science",
+      "exams": ["ssc", "rrb", "banks", "state_psc"],
+      "shared": true
+    },
+    {
+      "id": "chemistry",
+      "src": "chemistry.md",
+      "out": "chemistry_ssc_rrb_psc.pdf",
+      "title": "Chemistry — Common Book",
+      "subtitle": "SSC, RRB, State PSC, Banks (GA) — General Science",
+      "exams": ["ssc", "rrb", "banks", "state_psc"],
+      "shared": true
+    },
+    {
+      "id": "biology",
+      "src": "biology.md",
+      "out": "biology_ssc_rrb_psc.pdf",
+      "title": "Biology — Common Book",
+      "subtitle": "SSC, RRB, State PSC, Banks (GA) — General Science + Health",
+      "exams": ["ssc", "rrb", "banks", "state_psc"],
+      "shared": true
+    },
+    {
+      "id": "environment",
+      "src": "environment.md",
+      "out": "environment_ssc_rrb_psc.pdf",
+      "title": "Environment & Ecology — Common Book",
+      "subtitle": "SSC, RRB, State PSC — Biomes, Climate, Acts, Protected Areas",
+      "exams": ["ssc", "rrb", "state_psc"],
+      "shared": true
+    },
+    {
+      "id": "sci_tech",
+      "src": "sci_tech.md",
+      "out": "sci_tech_ssc_rrb_banks_psc.pdf",
+      "title": "Science & Technology — Common Book",
+      "subtitle": "SSC, RRB, Banks (GA), State PSC — ISRO, DRDO, Computers, Defence Tech",
+      "exams": ["ssc", "rrb", "banks", "state_psc"],
+      "shared": true
+    },
+    {
+      "id": "general_knowledge",
+      "src": "general_knowledge.md",
+      "out": "general_knowledge_all_exams.pdf",
+      "title": "General Knowledge — Common Book",
+      "subtitle": "All exams — Awards, Sports, Days, People, Books, Culture",
+      "exams": ["ssc", "rrb", "banks", "state_psc", "psu"],
+      "shared": true
+    },
+    {
+      "id": "vocabulary",
+      "src": "vocabulary.md",
+      "out": "vocabulary_all_exams.pdf",
+      "title": "Vocabulary — Cluster-Based Book",
+      "subtitle": "All exams — Roots, Suffixes, Confusables, OWS, Idioms, Foreign phrases",
+      "exams": ["ssc", "rrb", "banks", "state_psc"],
+      "shared": true
+    },
+    {
+      "id": "arithmetic_ssc_rrb",
+      "src": "arithmetic.md",
+      "out": "arithmetic_ssc_rrb.pdf",
+      "title": "Arithmetic — for SSC & RRB",
+      "subtitle": "Tier-1/2 focus: arithmetic core + geometry + mensuration + DI; less DI-caselet",
+      "exams": ["ssc", "rrb"],
+      "focus_for": "ssc_rrb",
+      "shared": false
+    },
+    {
+      "id": "quant_banks",
+      "src": "arithmetic.md",
+      "out": "quantitative_aptitude_banks.pdf",
+      "title": "Quantitative Aptitude — for Banks",
+      "subtitle": "Banking focus: arithmetic + DI-caselets + data analysis + quadratic comparison + approximation",
+      "exams": ["banks"],
+      "focus_for": "banks",
+      "shared": false
+    },
+    {
+      "id": "reasoning_ssc_rrb",
+      "src": "reasoning.md",
+      "out": "reasoning_ssc_rrb.pdf",
+      "title": "Reasoning — for SSC & RRB",
+      "subtitle": "SSC/RRB focus: series, classification, analogy, blood-relations, direction, non-verbal, syllogism (basic), coding-decoding",
+      "exams": ["ssc", "rrb"],
+      "focus_for": "ssc_rrb",
+      "shared": false
+    },
+    {
+      "id": "reasoning_banks",
+      "src": "reasoning.md",
+      "out": "reasoning_banks.pdf",
+      "title": "Reasoning — for Banks",
+      "subtitle": "Banking focus: puzzles (linear, circular, floors, scheduling), input-output, syllogism (advanced), coded inequality, data sufficiency, machine I/O",
+      "exams": ["banks"],
+      "focus_for": "banks",
+      "shared": false
+    },
+    {
+      "id": "english_ssc_rrb",
+      "src": "english.md",
+      "out": "english_ssc_rrb.pdf",
+      "title": "English — for SSC & RRB",
+      "subtitle": "SSC/RRB focus: vocabulary (synonyms, antonyms, OWS, idioms, spelling), error spotting, fill-blanks, sentence improvement",
+      "exams": ["ssc", "rrb"],
+      "focus_for": "ssc_rrb",
+      "shared": false
+    },
+    {
+      "id": "english_banks",
+      "src": "english.md",
+      "out": "english_banks.pdf",
+      "title": "English — for Banks",
+      "subtitle": "Banking focus: reading comprehension, cloze test, para-jumbles, sentence rearrangement, error spotting (new pattern)",
+      "exams": ["banks"],
+      "focus_for": "banks",
+      "shared": false
+    },
+    {
+      "id": "statistics_jso",
+      "src": "statistics_jso.md",
+      "out": "statistics_jso_ssc_cgl_tier2.pdf",
+      "title": "Statistics — The JSO Mastery Book",
+      "subtitle": "SSC CGL Tier-2 Paper II (Junior Statistical Officer / Statistical Investigator) — 95%+ targeted",
+      "exams": ["ssc"],
+      "focus_for": "ssc_jso",
+      "shared": false
+    },
+    {
+      "id": "aao_paper3",
+      "src": "aao_paper3.md",
+      "out": "aao_paper3_ssc_cgl_tier2.pdf",
+      "title": "AAO — General Studies (Finance & Economics) Mastery Book",
+      "subtitle": "SSC CGL Tier-2 Paper III — Assistant Audit Officer / Assistant Accounts Officer — 95%+ targeted",
+      "exams": ["ssc"],
+      "focus_for": "ssc_aao",
+      "shared": false
+    }
+  ],
+  "naming_convention": "If a book is shared across exam families, name it 'subject_familyA_familyB.pdf' (e.g., polity_ssc_rrb_banks_psc.pdf). If a book is exam-specific (different syllabus weight), name it 'subject_family.pdf' (e.g., reasoning_banks.pdf). The PDF cover page always lists which exam families it serves."
+}
