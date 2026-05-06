@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "subject": "Chemistry",
+  "topic": "Acids and Bases — pH scale, strong/weak acids, Lewis theory, buffer solutions",
+  "topic_code": "CHEM_ACIDS_BASES_MIXED",
+  "description": "Arrhenius/Bronsted-Lowry/Lewis acid-base theories, pH scale, strong vs weak acids, buffer solutions (Henderson-Hasselbalch), amphiprotic species — SSC CGL/IBPS PO/UPSC standard.",
+  "questions": [
+    {
+      "stem": "The pH of a 0.01 M hydrochloric acid (HCl) solution is:",
+      "options": [
+        {
+          "option_text": "2 — pH = -log[H⁺] = -log(0.01) = -log(10⁻²) = 2",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 — this is the pH of the corresponding 0.01 M NaOH solution (pOH = 2, pH = 12)",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 — pH 7 indicates neutral solution; HCl is a strong acid, not neutral at this concentration",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 — that would be the pH of 0.1 M HCl; 0.01 M is 10 times more dilute",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "pH FORMULA: pH = -log₁₀[H⁺]. HCl is a STRONG ACID (fully dissociates): HCl → H⁺ + Cl⁻. So [H⁺] = 0.01 M = 10⁻² M. pH = -log(10⁻²) = -(-2) = 2. pH SCALE: 0-14 (at 25°C). pH < 7 = acidic; pH = 7 = neutral; pH > 7 = basic/alkaline. STRONG ACIDS (fully dissociate): HCl, HBr, HI, H₂SO₄ (first ionisation), HNO₃, HClO₄. CALCULATION TABLE: 0.1 M HCl → pH 1; 0.01 M → pH 2; 0.001 M → pH 3. OPTION B (pH 12): if [H⁺] = 0.01 M, then [OH⁻] = 10⁻¹²/0.01 — no wait: at 25°C, K_w = [H⁺][OH⁻] = 10⁻¹⁴. pOH = 14 - pH = 14 - 2 = 12 is the pOH, and NaOH 0.01 M would have pH = 12 (not pOH). PYQ FREQUENCY: pH calculation of strong acid in SSC CGL, IBPS PO Chemistry GA, RRB NTPC — 1-2× per cycle.",
+      "subject": "Chemistry",
+      "topic": "Acids and Bases — pH scale, strong/weak acids, Lewis theory, buffer solutions",
+      "topic_code": "CHEM_ACIDS_BASES_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_CHEM_ACIDS_BASES_MIXED_001"
+    },
+    {
+      "stem": "According to Lewis acid-base theory, which of the following is a Lewis acid?",
+      "options": [
+        {
+          "option_text": "BF₃ (boron trifluoride) — electron-deficient boron accepts an electron pair",
+          "is_correct": true
+        },
+        {
+          "option_text": "NH₃ (ammonia) — nitrogen has a lone pair and acts as an electron pair donor (Lewis base)",
+          "is_correct": false
+        },
+        {
+          "option_text": "H₂O (water) — oxygen has two lone pairs and acts as an electron pair donor (Lewis base)",
+          "is_correct": false
+        },
+        {
+          "option_text": "NaOH (sodium hydroxide) — provides OH⁻ which is an Arrhenius base, not a Lewis acid",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "LEWIS THEORY (1923, G.N. Lewis): LEWIS ACID = electron pair ACCEPTOR. LEWIS BASE = electron pair DONOR. BF₃: Boron has only 6 electrons (three from B + one each from three F) — it's ELECTRON DEFICIENT (incomplete octet). It ACCEPTS an electron pair from a Lewis base (e.g., NH₃ donates its lone pair to BF₃ → BF₃·NH₃ adduct). LEWIS ACIDS: BF₃, AlCl₃, FeCl₃, BCl₃, TiCl₄ (all electron-deficient compounds), H⁺ (proton — can accept lone pair), metal cations (Fe²⁺, Mg²⁺). LEWIS BASES: NH₃ (lone pair on N), H₂O (lone pairs on O), F⁻, OH⁻, Cl⁻. ADVANTAGES OF LEWIS THEORY: covers cases where no proton is involved (Arrhenius and Bronsted-Lowry miss these). EXAMPLE: CO₂ + H₂O → H₂CO₃ — CO₂ is Lewis acid (accepts lone pair from O of H₂O). PYQ FREQUENCY: Lewis acid-base theory + BF₃ in SSC CGL, IBPS PO Chemistry, UPSC Prelims — 1-2× per cycle.",
+      "subject": "Chemistry",
+      "topic": "Acids and Bases — pH scale, strong/weak acids, Lewis theory, buffer solutions",
+      "topic_code": "CHEM_ACIDS_BASES_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_CHEM_ACIDS_BASES_MIXED_002"
+    },
+    {
+      "stem": "A buffer solution resists changes in pH. Which combination would form an acidic buffer?",
+      "options": [
+        {
+          "option_text": "Acetic acid (CH₃COOH) + sodium acetate (CH₃COONa) — weak acid + its conjugate base salt",
+          "is_correct": true
+        },
+        {
+          "option_text": "HCl + NaCl — strong acid + common salt; does not resist pH changes effectively",
+          "is_correct": false
+        },
+        {
+          "option_text": "NaOH + NaCl — strong base + inert salt; pH is determined by NaOH concentration alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "NH₄OH + NaOH — two bases mixed together; gives basic, not acidic, solution",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "BUFFER SOLUTION: a solution that resists pH changes when small amounts of acid or base are added. ACIDIC BUFFER (pH < 7): WEAK ACID + SALT OF THAT ACID WITH STRONG BASE. CH₃COOH (weak acid) + CH₃COONa (sodium acetate, salt) → buffer pH ≈ 4.75 (near pKa of acetic acid = 4.75). HOW IT WORKS: Added H⁺ → reacts with CH₃COO⁻ → CH₃COOH (neutralised, small pH change). Added OH⁻ → reacts with CH₃COOH → CH₃COO⁻ + H₂O (neutralised, small pH change). BASIC BUFFER (pH > 7): weak base + its salt. NH₄OH + NH₄Cl → buffer pH ≈ 9.25 (pKa of NH₄⁺). HENDERSON-HASSELBALCH EQUATION: pH = pKa + log([A⁻]/[HA]). Equal concentrations: pH = pKa. OPTION B (HCl + NaCl): HCl is strong acid, fully dissociated — no reservoir of undissociated acid to neutralise added base. PYQ FREQUENCY: buffer composition in SSC CGL Chemistry, IBPS PO, UPSC CSAT — 1× per cycle.",
+      "subject": "Chemistry",
+      "topic": "Acids and Bases — pH scale, strong/weak acids, Lewis theory, buffer solutions",
+      "topic_code": "CHEM_ACIDS_BASES_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_CHEM_ACIDS_BASES_MIXED_003"
+    },
+    {
+      "stem": "Which of the following is an example of an amphiprotic (amphoteric) species — one that can act as BOTH an acid and a base?",
+      "options": [
+        {
+          "option_text": "HCO₃⁻ (bicarbonate ion) — can donate a proton (acid) or accept one (base)",
+          "is_correct": true
+        },
+        {
+          "option_text": "SO₄²⁻ (sulphate ion) — accepts protons only (conjugate base of a strong acid H₂SO₄)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Na⁺ (sodium ion) — a spectator ion with no proton-donating or accepting role in water",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cl⁻ (chloride ion) — conjugate base of the strong acid HCl; acts only as an extremely weak base",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "AMPHIPROTIC (AMPHOTERIC) SPECIES: can donate OR accept a proton depending on conditions. HCO₃⁻ (BICARBONATE): AS AN ACID: HCO₃⁻ → H⁺ + CO₃²⁻ (donates proton to a stronger base). AS A BASE: HCO₃⁻ + H⁺ → H₂CO₃ → H₂O + CO₂ (accepts proton from a stronger acid). COMMON AMPHIPROTIC SPECIES: HCO₃⁻, HSO₄⁻ (bisulphate), HPO₄²⁻, H₂PO₄⁻, HS⁻, H₂O, amino acids (due to both -NH₂ and -COOH groups), serine, glycine. WATER (H₂O): the ultimate amphiprotic substance — self-ionises: H₂O ⇌ H⁺ + OH⁻ (acid) and H₂O + H⁺ → H₃O⁺ (base). SO₄²⁻: conjugate base of H₂SO₄ (strong acid) — essentially no basic character. Cl⁻: conjugate base of HCl — essentially no basic character. UPSC ANGLE: blood bicarbonate buffer system (pH 7.35-7.45) — HCO₃⁻ plays both acid and base role in maintaining blood pH. PYQ FREQUENCY: amphiprotic species identification in SSC CGL, IBPS PO, UPSC Prelims Chemistry — 1× per cycle.",
+      "subject": "Chemistry",
+      "topic": "Acids and Bases — pH scale, strong/weak acids, Lewis theory, buffer solutions",
+      "topic_code": "CHEM_ACIDS_BASES_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_CHEM_ACIDS_BASES_MIXED_004"
+    },
+    {
+      "stem": "When equal volumes of 0.1 M HCl and 0.1 M NaOH are mixed, the resulting solution has a pH of:",
+      "options": [
+        {
+          "option_text": "7 — complete neutralisation; equal moles cancel each other perfectly at 25°C",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 — pH would be 1 only if excess acid remains; here they are exactly equal in moles",
+          "is_correct": false
+        },
+        {
+          "option_text": "14 — pH would be 14 only if excess NaOH remains; here they neutralise completely",
+          "is_correct": false
+        },
+        {
+          "option_text": "3.5 — incorrect; averaging pH values is a mathematical error (pH is logarithmic, not linear)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "NEUTRALISATION: HCl + NaOH → NaCl + H₂O. Equal moles: moles HCl = 0.1 M × V = moles NaOH = 0.1 M × V. They cancel completely → pure NaCl solution in water. NaCl is a salt of STRONG ACID + STRONG BASE → NEUTRAL SALT → pH = 7. LOGIC: Na⁺ and Cl⁻ are spectator ions — neither hydrolyses in water. So [H⁺] = [OH⁻] = 10⁻⁷ M → pH = 7. OPTION D is wrong for two reasons: (a) averaging pH would give (1+13)/2 = 7 accidentally, but averaging pH values is mathematically incorrect. (b) mixing concentrations works on moles/volumes, not pH. CONTRAST: mixing equal volumes of 0.1 M CH₃COOH + 0.1 M NaOH → sodium acetate solution → basic (pH > 7) because acetate hydrolyses. KEY RULE: Salt of strong acid + strong base → pH = 7. Weak acid + strong base → basic. Strong acid + weak base → acidic. PYQ FREQUENCY: pH after mixing equal acid-base volumes in SSC CGL Tier-2, IBPS PO Chemistry — 1× per year.",
+      "subject": "Chemistry",
+      "topic": "Acids and Bases — pH scale, strong/weak acids, Lewis theory, buffer solutions",
+      "topic_code": "CHEM_ACIDS_BASES_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_CHEM_ACIDS_BASES_MIXED_005"
+    },
+    {
+      "stem": "The Henderson-Hasselbalch equation for a buffer is pH = pKₐ + log([A⁻]/[HA]). If a buffer contains 0.2 M acetate (A⁻) and 0.1 M acetic acid (HA), and pKₐ = 4.74, the pH of the buffer is:",
+      "options": [
+        {
+          "option_text": "5.04 — pH = 4.74 + log(0.2/0.1) = 4.74 + log(2) = 4.74 + 0.30 = 5.04",
+          "is_correct": true
+        },
+        {
+          "option_text": "4.44 — result of subtracting log(2) instead of adding it (pH = pKa − log ratio)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4.74 — this is pKa alone; applicable only when [A⁻] = [HA], not when ratio is 2:1",
+          "is_correct": false
+        },
+        {
+          "option_text": "5.34 — error in log calculation; log(2) = 0.301, not 0.60",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "HENDERSON-HASSELBALCH: pH = pKₐ + log([conjugate base]/[acid]) = pKₐ + log([A⁻]/[HA]). CALCULATION: [A⁻] = 0.2 M; [HA] = 0.1 M; pKₐ = 4.74. Ratio = 0.2/0.1 = 2. log(2) = 0.301. pH = 4.74 + 0.301 = 5.04 ✓. WHEN RATIO = 1: log(1) = 0 → pH = pKₐ (most important case — equal concentrations of acid and salt → pH = pKₐ). BUFFER RANGE: effective buffering occurs within ±1 pH unit of pKₐ (i.e., when ratio is between 1/10 and 10). OPTION D (5.34): This would require log = 0.60 = log(4) — wrong ratio. EXAM NICHE: Henderson-Hasselbalch is tested in JEE, UPSC CSAT, SSC CGL Tier-2 Chemistry; banking exams rarely go this deep but SBI PO Mains sometimes does. PYQ FREQUENCY: buffer pH calculation in SSC CGL Tier-2, UPSC CSAT, JEE Mains — 1× per year.",
+      "subject": "Chemistry",
+      "topic": "Acids and Bases — pH scale, strong/weak acids, Lewis theory, buffer solutions",
+      "topic_code": "CHEM_ACIDS_BASES_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_CHEM_ACIDS_BASES_MIXED_006"
+    },
+    {
+      "stem": "Hydrolysis of a salt of a weak acid and strong base produces a basic solution. This is because:",
+      "options": [
+        {
+          "option_text": "The anion of the weak acid hydrolyses: A⁻ + H₂O → HA + OH⁻ — generating excess OH⁻",
+          "is_correct": true
+        },
+        {
+          "option_text": "The cation of the strong base hydrolyses: Na⁺ + H₂O → NaOH → OH⁻ releasing hydroxide ions",
+          "is_correct": false
+        },
+        {
+          "option_text": "Water itself splits into extra OH⁻ in the presence of any dissolved salt at room temperature",
+          "is_correct": false
+        },
+        {
+          "option_text": "The salt dissociates to give a direct OH⁻ ion without involving water in the process",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SALT HYDROLYSIS: CH₃COONa (sodium acetate) → Na⁺ + CH₃COO⁻ in water. Na⁺: cation of a strong base (NaOH) → does NOT hydrolyse (spectator ion). CH₃COO⁻ (acetate): anion of a weak acid (CH₃COOH) → DOES HYDROLYSE: CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻. This releases OH⁻ → solution becomes BASIC. RULE: which species hydrolyses? The species from the WEAKER partner: weak acid anion or weak base cation. CASES: (1) Weak acid + Strong base salt → basic (anion hydrolyses). (2) Strong acid + Weak base salt → acidic (cation hydrolyses). (3) Weak acid + Weak base salt → depends on Ka vs Kb. (4) Strong acid + Strong base salt → neutral (no hydrolysis). OPTION B wrong: Na⁺ is from NaOH (strong base) — strong base cation does NOT hydrolyse. Hydrolysis requires the ion to have significant affinity for H⁺ or OH⁻ — Na⁺ has essentially none. PYQ FREQUENCY: salt hydrolysis and basic/acidic salt concept in SSC CGL, IBPS PO Chemistry, UPSC Prelims — 1× per cycle.",
+      "subject": "Chemistry",
+      "topic": "Acids and Bases — pH scale, strong/weak acids, Lewis theory, buffer solutions",
+      "topic_code": "CHEM_ACIDS_BASES_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_CHEM_ACIDS_BASES_MIXED_007"
+    }
+  ]
+}

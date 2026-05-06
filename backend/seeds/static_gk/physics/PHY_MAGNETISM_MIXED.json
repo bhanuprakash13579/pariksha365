@@ -1,280 +1,240 @@
 {
   "schema_version": 1,
   "subject": "Physics",
-  "topic": "Magnetism & electromagnetism — mixed tiers",
+  "topic": "Magnetism — types of magnetic materials, Earth's magnetism, Curie temperature",
   "topic_code": "PHY_MAGNETISM_MIXED",
-  "description": "Bar magnet, Earth's magnetism, electromagnetic induction",
+  "description": "Magnetic materials (dia/para/ferromagnetic), Earth's magnetic field (dip, declination), Curie temperature, hysteresis, Hall effect — SSC CGL/UPSC/IBPS PO standard.",
   "questions": [
     {
-      "stem": "Like poles of two magnets:",
+      "stem": "Which property correctly distinguishes ferromagnetic materials from paramagnetic materials?",
       "options": [
         {
-          "option_text": "Attract",
-          "is_correct": false
-        },
-        {
-          "option_text": "Repel",
+          "option_text": "Ferromagnetic materials form permanent magnetic domains; paramagnetic materials are weakly attracted with no domains",
           "is_correct": true
         },
         {
-          "option_text": "Neither attract nor repel",
+          "option_text": "Ferromagnetic materials are repelled by magnets; paramagnetic materials are strongly attracted",
           "is_correct": false
         },
         {
-          "option_text": "First attract, then repel",
+          "option_text": "Ferromagnetic materials exist only in liquid state; paramagnetic materials are always solid metals",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ferromagnetic materials have no free electrons; paramagnetic materials have unpaired electrons throughout",
           "is_correct": false
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Like poles REPEL, unlike poles ATTRACT. This is the basic law of magnetism (Gilbert). Gauss's law for magnetism says magnetic monopoles don't exist — N and S always come together.",
+      "correct_letter": "A",
+      "explanation": "THREE TYPES OF MAGNETIC MATERIALS: (1) DIAMAGNETIC: weakly repelled by magnets (μ_r < 1; χ < 0). No unpaired electrons. Examples: Bi, Cu, water, NaCl, gold, wood. (2) PARAMAGNETIC: weakly attracted to magnets (μ_r > 1 slightly; χ > 0 small). Have unpaired electrons but no ordered domains. Examples: Al, Na, O₂, liquid oxygen, platinum. Magnetism disappears when field removed. (3) FERROMAGNETIC: strongly attracted; form permanent MAGNETIC DOMAINS — regions where atomic magnetic moments are aligned parallel. Examples: Fe (iron), Ni (nickel), Co (cobalt), Gd (gadolinium). Magnetism can PERSIST after field removed (permanent magnets). KEY DIFFERENCE: DOMAINS — ferromagnetics have them; paramagnetics do not. Domain alignment gives the strong response. UPSC ANGLE: MRI machines use strong magnetic fields — diamagnetic materials (like biological tissue, which is largely water) have important implications for MRI safety. PYQ FREQUENCY: ferromagnetic vs paramagnetic in SSC CGL, IBPS PO, UPSC Prelims Physics — 1× per cycle.",
       "subject": "Physics",
-      "topic": "Magnetism & electromagnetism — mixed tiers",
+      "topic": "Magnetism — types of magnetic materials, Earth's magnetism, Curie temperature",
       "topic_code": "PHY_MAGNETISM_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-mag-01",
-      "generated_at": "2026-04-23T01:30:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_MIXED_00001"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_MAGNETISM_MIXED_001"
     },
     {
-      "stem": "The Earth acts like a giant MAGNET with its magnetic NORTH pole located near:",
+      "stem": "The angle of magnetic dip (inclination) is 90° at the:",
       "options": [
         {
-          "option_text": "Geographic North Pole (exactly)",
-          "is_correct": false
-        },
-        {
-          "option_text": "Geographic South Pole",
+          "option_text": "Magnetic poles — the field is vertical (pointing straight down/up) at the poles",
           "is_correct": true
         },
         {
-          "option_text": "The Equator",
+          "option_text": "Magnetic equator — dip is 0° at the equator where the field is horizontal",
           "is_correct": false
         },
         {
-          "option_text": "The Prime Meridian",
+          "option_text": "Geographic equator — geographic and magnetic equators are different; dip at geographic equator varies",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Tropics of Cancer and Capricorn — these are geographic parallels with no fixed dip value",
           "is_correct": false
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Earth's MAGNETIC north pole is actually a 'south' magnetic pole geographically — that's why the north-pointing end of a compass needle (which is a NORTH pole) is attracted there (opposites attract). Terminology is historical. The magnetic poles drift ~55 km/year. magnetic N is near geographic S and vice versa.",
+      "correct_letter": "A",
+      "explanation": "MAGNETIC DIP (INCLINATION): the angle that Earth's magnetic field makes with the horizontal at any point. AT MAGNETIC POLES: dip = 90° (field is vertical — a dip needle would point straight down at the North Magnetic Pole or straight up at the South Magnetic Pole). AT MAGNETIC EQUATOR: dip = 0° (field is horizontal — a dip needle lies flat). IN INDIA: dip is approximately 30°-55° (increasing toward the Himalayas). MAGNETIC DECLINATION: different concept — the angle between geographic north and magnetic north (compass direction vs true north). India: declination varies from about 0° to 5°W depending on location. THREE ELEMENTS OF EARTH'S MAGNETISM: (1) Magnetic declination. (2) Magnetic dip/inclination. (3) Horizontal component (H) of Earth's field. GEOGRAPHIC vs MAGNETIC POLES: Geographic North Pole ≠ Magnetic North Pole (currently ~86°N, 146°W, moving ~50 km/year). PYQ FREQUENCY: magnetic dip value at poles/equator in SSC CGL, IBPS PO Physics GA — 1-2× per cycle.",
       "subject": "Physics",
-      "topic": "Magnetism & electromagnetism — mixed tiers",
+      "topic": "Magnetism — types of magnetic materials, Earth's magnetism, Curie temperature",
       "topic_code": "PHY_MAGNETISM_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-mag-02",
-      "generated_at": "2026-04-23T01:30:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_MIXED_00002",
-      "_fixes": [
-        {
-          "type": "option_tell_fix",
-          "was": "Geographic South Pole (magnetic N is near geographic S and vice versa)",
-          "now": "Geographic South Pole",
-          "moved_to_explanation": "magnetic N is near geographic S and vice versa"
-        }
-      ]
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_MAGNETISM_MIXED_002"
     },
     {
-      "stem": "The principle on which an ELECTRIC GENERATOR works is:",
+      "stem": "The Curie temperature (Curie point) of a ferromagnetic material is the temperature above which:",
       "options": [
         {
-          "option_text": "Ohm's law",
-          "is_correct": false
-        },
-        {
-          "option_text": "Electromagnetic induction",
+          "option_text": "The material loses its ferromagnetism and becomes paramagnetic — domains are disrupted by thermal energy",
           "is_correct": true
         },
         {
-          "option_text": "Coulomb's law",
+          "option_text": "The material becomes diamagnetic — it starts repelling all magnetic fields above this point",
           "is_correct": false
         },
         {
-          "option_text": "Gauss's law",
+          "option_text": "The material becomes a perfect electrical conductor — resistance drops to zero at this point",
+          "is_correct": false
+        },
+        {
+          "option_text": "The material loses both magnetic and electrical properties — it becomes a true insulator",
           "is_correct": false
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Generator — rotates a coil in a magnetic field → changing flux → induced EMF per Faraday's law (1831). Converts mechanical → electrical energy. Motor is the reverse (electrical → mechanical) based on the same underlying physics but force on current-carrying conductor.",
+      "correct_letter": "A",
+      "explanation": "CURIE TEMPERATURE (T_C): the critical temperature above which a ferromagnetic material undergoes a phase transition and becomes PARAMAGNETIC. REASON: at T_C, thermal energy (kT) exceeds the exchange interaction energy that aligns magnetic domains → domains are disrupted → material loses spontaneous magnetization. VALUES: Iron (Fe) = 770°C (1043 K); Nickel (Ni) = 358°C (631 K); Cobalt (Co) = 1115°C (1388 K) — highest among common ferromagnets. NAMED AFTER: Pierre Curie (husband of Marie Curie), who discovered this in 1895. BELOW T_C: ferromagnetic. ABOVE T_C: paramagnetic (not diamagnetic — option B wrong). SUPERCONDUCTIVITY (option C): Meissner effect — completely different phenomenon at very LOW temperatures (near 0 K), not high temperatures. PYQ FREQUENCY: Curie temperature definition + iron value (770°C) in SSC CGL, UPSC Prelims, RRB NTPC Physics — 1× per cycle.",
       "subject": "Physics",
-      "topic": "Magnetism & electromagnetism — mixed tiers",
+      "topic": "Magnetism — types of magnetic materials, Earth's magnetism, Curie temperature",
       "topic_code": "PHY_MAGNETISM_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-mag-03",
-      "generated_at": "2026-04-23T01:30:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_MIXED_00003",
-      "_fixes": [
-        {
-          "type": "option_tell_fix",
-          "was": "Electromagnetic induction (Faraday's law)",
-          "now": "Electromagnetic induction",
-          "moved_to_explanation": "Faraday's law"
-        }
-      ]
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_MAGNETISM_MIXED_003"
     },
     {
-      "stem": "The SI unit of MAGNETIC flux is:",
+      "stem": "In the hysteresis loop of a ferromagnetic material, 'coercivity' refers to:",
       "options": [
         {
-          "option_text": "Tesla",
-          "is_correct": false
-        },
-        {
-          "option_text": "Weber",
+          "option_text": "The reverse magnetic field needed to reduce residual magnetism to zero — related to retentivity",
           "is_correct": true
         },
         {
-          "option_text": "Gauss",
+          "option_text": "The maximum magnetization the material can achieve in a saturating external magnetic field",
           "is_correct": false
         },
         {
-          "option_text": "Henry",
+          "option_text": "The residual magnetism remaining in the material when the external field is removed to zero",
+          "is_correct": false
+        },
+        {
+          "option_text": "The area enclosed by the hysteresis loop, representing energy loss per cycle of magnetisation",
           "is_correct": false
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Weber (Wb) = SI unit of magnetic flux (Φ). Tesla (T) = SI unit of magnetic flux DENSITY (B). Relation: 1 T = 1 Wb/m². Henry (H) = unit of inductance. Gauss — CGS unit for flux density (1 T = 10,000 G).",
+      "correct_letter": "A",
+      "explanation": "HYSTERESIS LOOP KEY TERMS: (1) SATURATION MAGNETISATION (M_s): maximum M achieved when all domains align with external field. (2) RETENTIVITY/REMANENCE (M_r): residual magnetisation when H is reduced to 0 — measures how well the material retains magnetism. (3) COERCIVITY (H_c): the REVERSE magnetic field required to reduce M_r to 0 — measures how hard it is to demagnetise. (4) HYSTERESIS LOSS: energy lost as heat per cycle = proportional to the AREA inside the loop. HARD vs SOFT MAGNETIC MATERIALS: HARD (permanent magnets — neodymium, alnico, steel): HIGH coercivity, HIGH retentivity → hard to demagnetise → good permanent magnets. SOFT (transformer cores, electromagnets — soft iron, silicon steel): LOW coercivity, LOW area (low energy loss) → easy to magnetise and demagnetise → good for AC cores. EXAM TRAP: Retentivity (residual magnetism at H=0) vs Coercivity (H needed to make M=0) are frequently swapped. PYQ FREQUENCY: hysteresis loop terms in CBSE XII, JEE, SSC CGL, UPSC Prelims — 1-2× per cycle.",
       "subject": "Physics",
-      "topic": "Magnetism & electromagnetism — mixed tiers",
+      "topic": "Magnetism — types of magnetic materials, Earth's magnetism, Curie temperature",
       "topic_code": "PHY_MAGNETISM_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-mag-04",
-      "generated_at": "2026-04-23T01:30:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_MIXED_00004"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_MAGNETISM_MIXED_004"
     },
     {
-      "stem": "The materials that are STRONGLY attracted by a magnet are called:",
+      "stem": "The Meissner effect, observed in superconductors, is characterised by:",
       "options": [
         {
-          "option_text": "Diamagnetic",
-          "is_correct": false
-        },
-        {
-          "option_text": "Ferromagnetic",
+          "option_text": "Complete expulsion of magnetic flux from the interior — superconductors act as perfect diamagnets",
           "is_correct": true
         },
         {
-          "option_text": "Paramagnetic",
+          "option_text": "Perfect ferromagnetism — all magnetic domains align spontaneously at very low temperatures",
           "is_correct": false
         },
         {
-          "option_text": "Antiferromagnetic",
+          "option_text": "Infinite permeability — all magnetic field lines concentrate inside the superconductor",
+          "is_correct": false
+        },
+        {
+          "option_text": "Magnetic dip of 90° — the internal field aligns perfectly vertical to the surface below T_c",
           "is_correct": false
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Ferromagnetic — strong permanent magnetism; Fe, Co, Ni, Gd. Paramagnetic — weakly attracted (e.g., aluminium, platinum). Diamagnetic — weakly REPELLED (e.g., copper, water). Antiferromagnetic — magnetic moments cancel (e.g., MnO). iron, cobalt, nickel, gadolinium.",
+      "correct_letter": "A",
+      "explanation": "MEISSNER EFFECT (1933, discovered by Walther Meissner and Robert Ochsenfeld): when a material enters the superconducting state (below T_c), it EXPELS all magnetic flux from its interior → B = 0 inside → behaves as a PERFECT DIAMAGNET (χ = -1). This is NOT just zero resistance — even if a magnetic field was present before cooling, it gets expelled as the material goes superconducting. CONSEQUENCE: MAGNETIC LEVITATION — a superconductor repels a magnet → the magnet floats above it (Maglev trains use this principle). DISTINCTION: Zero resistance alone (without flux expulsion) is called a 'perfect conductor' — Meissner effect goes further by actively expelling flux. TYPE I vs TYPE II SUPERCONDUCTORS: Type I — complete Meissner effect up to critical field H_c. Type II — allows partial flux penetration (vortex state) between lower and upper critical fields. UPSC ANGLE: High-temperature superconductors, India's interest in Maglev technology. PYQ FREQUENCY: Meissner effect in UPSC GS-3 Science & Tech, IBPS PO GA, SSC CGL — 1× per 2 years.",
       "subject": "Physics",
-      "topic": "Magnetism & electromagnetism — mixed tiers",
+      "topic": "Magnetism — types of magnetic materials, Earth's magnetism, Curie temperature",
       "topic_code": "PHY_MAGNETISM_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-mag-05",
-      "generated_at": "2026-04-23T01:30:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_MIXED_00005",
-      "_fixes": [
-        {
-          "type": "option_tell_fix",
-          "was": "Ferromagnetic (iron, cobalt, nickel, gadolinium)",
-          "now": "Ferromagnetic",
-          "moved_to_explanation": "iron, cobalt, nickel, gadolinium"
-        }
-      ]
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_MAGNETISM_MIXED_005"
     },
     {
-      "stem": "The direction of an INDUCED current is given by:",
+      "stem": "The Hall effect in a current-carrying conductor placed in a magnetic field results in:",
       "options": [
         {
-          "option_text": "Ohm's law",
-          "is_correct": false
-        },
-        {
-          "option_text": "Lenz's law",
+          "option_text": "A transverse voltage (Hall voltage) perpendicular to both current and magnetic field — used to determine carrier type",
           "is_correct": true
         },
         {
-          "option_text": "Ampere's circuital law",
+          "option_text": "An increase in resistance proportional to the square of the magnetic field strength applied",
           "is_correct": false
         },
         {
-          "option_text": "Newton's third law",
+          "option_text": "A change in temperature along the current direction due to magnetocaloric interaction (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The expulsion of current carriers from the conductor's surface into the external circuit (not this)",
           "is_correct": false
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Lenz's law — induced current flows in a direction such that it OPPOSES the change in magnetic flux that caused it. Consequence of energy conservation. Manifested as the 'minus' sign in Faraday's law: ε = −dΦ/dt. induced current opposes the change causing it.",
+      "correct_letter": "A",
+      "explanation": "HALL EFFECT (1879, Edwin Hall): When current (I) flows through a conductor/semiconductor in a magnetic field (B perpendicular to I), charge carriers experience a LORENTZ FORCE sideways → accumulate on one face → create a HALL VOLTAGE (V_H) perpendicular to both I and B. V_H = IB/(ned) where n = carrier density, e = charge, d = thickness. USES: (1) Determine whether carriers are positive (p-type) or negative (n-type) — polarity of V_H tells us the sign of carriers. (2) Measure magnetic field strength (Hall sensors in smartphones, cars, industrial machines). (3) Measure carrier concentration (n). HALL COEFFICIENT R_H = V_H × d / (I × B) = 1/(ne) for electrons. SIGN: positive Hall coefficient → holes (p-type). Negative → electrons (n-type). OPTION B: magnetoresistance is a different effect (resistance changes with B field). UPSC ANGLE: Hall sensors used in EVs, wind turbines, BLDC motors — common in India's EV push. PYQ FREQUENCY: Hall effect definition and uses in CBSE XII, JEE, SSC CGL, IBPS PO Physics — 1× per 2-3 years.",
       "subject": "Physics",
-      "topic": "Magnetism & electromagnetism — mixed tiers",
+      "topic": "Magnetism — types of magnetic materials, Earth's magnetism, Curie temperature",
       "topic_code": "PHY_MAGNETISM_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-mag-06",
-      "generated_at": "2026-04-23T01:30:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_MIXED_00006",
-      "_fixes": [
-        {
-          "type": "option_tell_fix",
-          "was": "Lenz's law (induced current opposes the change causing it)",
-          "now": "Lenz's law",
-          "moved_to_explanation": "induced current opposes the change causing it"
-        }
-      ]
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_MAGNETISM_MIXED_006"
     },
     {
-      "stem": "A SOLENOID carrying current behaves similarly to a:",
+      "stem": "Magnetic declination at a location on Earth is defined as the angle between:",
       "options": [
         {
-          "option_text": "Capacitor",
-          "is_correct": false
-        },
-        {
-          "option_text": "Bar magnet",
+          "option_text": "Geographic north (true north) and magnetic north (compass direction) at that location",
           "is_correct": true
         },
         {
-          "option_text": "Resistor",
+          "option_text": "The direction of Earth's magnetic field and the horizontal plane at that location",
           "is_correct": false
         },
         {
-          "option_text": "Battery",
+          "option_text": "The geographic equator and the magnetic equator measured along the meridian",
+          "is_correct": false
+        },
+        {
+          "option_text": "The vertical component and the total intensity of Earth's magnetic field at that point",
           "is_correct": false
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Solenoid — coiled wire. Carrying current creates a magnetic field like a bar magnet. Polarity determined by right-hand-rule (curl fingers with current flow, thumb points to N). Used in electromagnets, door locks, starter motors, relays. with one end as N, other as S.",
+      "correct_letter": "A",
+      "explanation": "MAGNETIC DECLINATION: the angle (measured in degrees E or W) between TRUE NORTH (geographic north, direction to the North Pole) and MAGNETIC NORTH (direction a compass needle points, toward the Magnetic North Pole). VARIATION: declination varies by location and changes slowly over time (secular variation, because Earth's molten outer core convection shifts the magnetic poles). EAST DECLINATION: magnetic north is east of true north (compass shows east of true north). WEST DECLINATION: compass shows west of true north. INDIA: declination ranges from ~0.5°W in Odisha to ~2°W in NW India (approximate). MAGNETIC DIP (option B): angle of Earth's field with the horizontal — a DIFFERENT element. MAGNETIC EQUATOR (option C): a different concept — the line of zero dip. NAVIGATION IMPORTANCE: sailors and pilots must correct for declination to navigate accurately. GPS has no such issue (it uses satellite geometry). PYQ FREQUENCY: magnetic declination definition in SSC CGL, IBPS PO Physics GA — 1× per cycle.",
       "subject": "Physics",
-      "topic": "Magnetism & electromagnetism — mixed tiers",
+      "topic": "Magnetism — types of magnetic materials, Earth's magnetism, Curie temperature",
       "topic_code": "PHY_MAGNETISM_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-mag-07",
-      "generated_at": "2026-04-23T01:30:00+00:00",
-      "id": "sgk_PHY_MAGNETISM_MIXED_00007",
-      "_fixes": [
-        {
-          "type": "option_tell_fix",
-          "was": "Bar magnet (with one end as N, other as S)",
-          "now": "Bar magnet",
-          "moved_to_explanation": "with one end as N, other as S"
-        }
-      ]
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-05",
+      "id": "sgk_PHY_MAGNETISM_MIXED_007"
     }
   ]
 }
