@@ -75,7 +75,7 @@ HTML_TEMPLATE = """<!doctype html>
 
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script src="{mermaid_js_uri}"></script>
 <script>
   if (typeof renderMathInElement === 'function') {{
     renderMathInElement(document.body, {{
@@ -89,8 +89,16 @@ HTML_TEMPLATE = """<!doctype html>
   if (typeof mermaid !== 'undefined') {{
     mermaid.initialize({{ startOnLoad: true, theme: 'neutral' }});
   }}
-  // Signal Chrome that rendering is done.
-  setTimeout(() => {{ document.title = document.title + ' [READY]'; }}, 1500);
+  // Wait for Mermaid SVG rendering then signal Chrome ready.
+  function _waitReady() {{
+    var pending = document.querySelectorAll('.mermaid:not([data-processed])').length;
+    if (pending === 0) {{
+      document.title = document.title + ' [READY]';
+    }} else {{
+      setTimeout(_waitReady, 200);
+    }}
+  }}
+  setTimeout(_waitReady, 2000);
 </script>
 </body>
 </html>
@@ -364,8 +372,33 @@ def _convert_mermaid_blocks(html_text: str) -> str:
     return pattern.sub(_repl, html_text)
 
 
+def _protect_math(text: str) -> tuple[str, dict]:
+    """Stash $...$ and $$...$$ spans so markdown can't mangle underscores/asterisks inside them."""
+    placeholders: dict[str, str] = {}
+    counter = [0]
+
+    def _store(m: re.Match) -> str:
+        key = f"XMATHPH{counter[0]}X"
+        counter[0] += 1
+        placeholders[key] = m.group(0)
+        return key
+
+    # Display math first ($$...$$, possibly multi-line), then inline ($...$)
+    text = re.sub(r"\$\$.*?\$\$", _store, text, flags=re.DOTALL)
+    text = re.sub(r"\$[^\$\n]+?\$", _store, text)
+    return text, placeholders
+
+
+def _restore_math(html_text: str, placeholders: dict) -> str:
+    for key, value in placeholders.items():
+        html_text = html_text.replace(key, value)
+    return html_text
+
+
 def _render_html(md_text: str) -> str:
     md_text = _strip_pandoc_directives(md_text)
+    # Protect math spans before markdown processes emphasis/italic markers
+    md_text, placeholders = _protect_math(md_text)
     md = markdown.Markdown(
         extensions=[
             "tables",
@@ -380,6 +413,7 @@ def _render_html(md_text: str) -> str:
         extension_configs={"toc": {"permalink": False, "toc_depth": "2-3"}},
     )
     body = md.convert(md_text)
+    body = _restore_math(body, placeholders)
     body = _convert_mermaid_blocks(body)
     return body
 
@@ -403,6 +437,10 @@ def render_pdf(
         f'<span class="tag">{html.escape(t)}</span>' for t in exam_tags
     )
 
+    # Use local Mermaid.js (CDN may be unavailable in headless environment)
+    local_mermaid = SCRIPT_DIR / "lib" / "mermaid.min.js"
+    mermaid_uri = local_mermaid.as_uri() if local_mermaid.exists() else "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"
+
     full_html = HTML_TEMPLATE.format(
         title_html=html.escape(title),
         subtitle_html=html.escape(subtitle),
@@ -410,6 +448,7 @@ def render_pdf(
         version_html=html.escape(version),
         css=CSS,
         body_html=body_html,
+        mermaid_js_uri=mermaid_uri,
     )
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -423,7 +462,7 @@ def render_pdf(
             "--no-sandbox",
             "--disable-gpu",
             "--no-pdf-header-footer",
-            "--virtual-time-budget=20000",
+            "--virtual-time-budget=30000",
             f"--print-to-pdf={out}",
             tmp_html.as_uri(),
         ]

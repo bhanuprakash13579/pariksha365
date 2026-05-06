@@ -95,9 +95,9 @@ Before any topic you must master these 4 micro-skills. None is hard. Skipping on
 
 ## 0.1 Accounting equation — the master identity
 
-\[
+$$
 \boxed{\text{Assets} \;=\; \text{Liabilities} \;+\; \text{Capital (Owner's Equity)}}
-\]
+$$
 
 This is the foundation of double-entry accounting. **Every** transaction maintains this equality. If a question's options don't satisfy this, that option is wrong by definition.
 
@@ -108,9 +108,9 @@ This is the foundation of double-entry accounting. **Every** transaction maintai
 | Capital | What the business owes to **the owner** (initial capital + profits − drawings − losses) |
 
 **Expanded form:**
-\[
+$$
 \text{Assets} = \text{Liabilities} + \text{Capital} + \text{Revenues} - \text{Expenses} - \text{Drawings}
-\]
+$$
 
 ## 0.2 Debit-Credit golden rules (3 classes / 5 modern types)
 
@@ -978,12 +978,12 @@ graph LR
 | Gross Profit c/d *(if Dr < Cr)* | Gross Loss c/d *(if Dr > Cr)* |
 
 **Cost of Goods Sold (COGS) formula:**
-\[
+$$
 \text{COGS} = \text{Opening Stock} + \text{Net Purchases} + \text{Direct Expenses} - \text{Closing Stock}
-\]
-\[
+$$
+$$
 \text{Gross Profit} = \text{Net Sales} - \text{COGS}
-\]
+$$
 
 ## 4.4 Profit & Loss Account
 
@@ -1181,7 +1181,7 @@ Machine: Cost ₹1,00,000. Scrap ₹10,000. Useful life = 9 years.
 
 > **SLM:** Annual depreciation = $(1,00,000 - 10,000)/9 = ₹10,000$ per year. Book value falls by ₹10,000 each year.
 >
-> **WDV at 25%:** Year 1: $1,00,000 \times 25\% = ₹25,000$. Book value = ₹75,000. Year 2: $75,000 \times 25\% = ₹18,750$. Book value = ₹56,250. WDV charges more in early years — gives a tax benefit sooner.
+> **WDV at 25%:** Year 1: 1,00,000 × 25% = ₹25,000. Book value = ₹75,000. Year 2: 75,000 × 25% = ₹18,750. Book value = ₹56,250. WDV charges more in early years — gives a tax benefit sooner.
 
 **Solved Example 5.B — FIFO vs Weighted Average for inventory:**
 
@@ -1189,7 +1189,7 @@ Opening stock: 100 units @ ₹10 = ₹1,000. Purchased: 200 units @ ₹12 = ₹2
 
 > **FIFO:** Sell 100 units @ ₹10 = ₹1,000; then 50 units @ ₹12 = ₹600. COGS = ₹1,600. Closing stock = 150 units @ ₹12 = ₹1,800.
 >
-> **Weighted Average:** Average cost = $(1,000 + 2,400)/(100+200) = 3,400/300 = ₹11.33$ per unit. COGS = $150 \times 11.33 = ₹1,700$. Closing stock = $150 \times 11.33 = ₹1,700$.
+> **Weighted Average:** Average cost = $(1,000 + 2,400)/(100 + 200) = 3,400/300 = 11.33$ per unit. COGS = 150 × 11.33 = ₹1,700. Closing stock = 150 × 11.33 = ₹1,700.
 >
 > *In rising prices: FIFO gives lower COGS → higher profit. Weighted average smooths fluctuations.*
 
@@ -1265,9 +1265,9 @@ Opening stock: 100 units @ ₹10 = ₹1,000. Purchased: 200 units @ ₹12 = ₹2
 | Tax law in India | WDV is the income-tax method | (SLM allowed for some PSU) |
 
 ### WDV rate from useful life
-\[
+$$
 r = 1 - \left( \dfrac{S}{C} \right)^{1/n}
-\]
+$$
 where C = cost, S = salvage value, n = useful life. Asked as: "find rate to reduce ₹X to ₹Y in n years."
 
 ### Methods of recording depreciation
@@ -2047,7 +2047,9 @@ Both effects push demand down when price rises — hence the downward-sloping de
 
 <div class="formula">
 
-$$E_d = \frac{\%\Delta Q_d}{\%\Delta P} = \frac{\Delta Q}{\Delta P} \times \frac{P}{Q} \quad \text{(always negative for normal goods — we report |E_d|)}$$
+$$E_d = \frac{\%\Delta Q_d}{\%\Delta P} = \frac{\Delta Q}{\Delta P} \times \frac{P}{Q}$$
+
+(Always negative for normal goods — we conventionally report $|E_d|$)
 
 </div>
 
@@ -2124,9 +2126,9 @@ Consumer surplus = the area below the demand curve and above the market price li
 
 ### (i) Price Elasticity of Demand (Ed)
 
-\[
+$$
 E_d = \dfrac{\% \Delta Q}{\% \Delta P} = \dfrac{\Delta Q / Q}{\Delta P / P}
-\]
+$$
 
 By convention Ed is reported as **positive** (the inverse relationship is taken as given).
 
@@ -2147,9 +2149,9 @@ By convention Ed is reported as **positive** (the inverse relationship is taken 
 
 ### (ii) Income Elasticity of Demand (Ey)
 
-\[
+$$
 E_y = \dfrac{\% \Delta Q}{\% \Delta Y}
-\]
+$$
 
 | Ey | Good type |
 |----|-----------|
@@ -2161,9 +2163,9 @@ E_y = \dfrac{\% \Delta Q}{\% \Delta Y}
 
 ### (iii) Cross Elasticity of Demand (Exy)
 
-\[
+$$
 E_{xy} = \dfrac{\% \Delta Q_x}{\% \Delta P_y}
-\]
+$$
 
 | Exy | Goods relationship |
 |-----|-------------------|
@@ -2179,7 +2181,7 @@ E_{xy} = \dfrac{\% \Delta Q_x}{\% \Delta P_y}
 
 **Law of Diminishing Marginal Utility (DMU):** As consumption of a good increases, the marginal utility derived from each additional unit decreases.
 
-**Equilibrium condition:** \( \dfrac{MU_x}{P_x} = \dfrac{MU_y}{P_y} = \cdots = \dfrac{MU_m}{1} \) (Law of Equi-marginal Utility)
+**Equilibrium condition:** $ \dfrac{MU_x}{P_x} = \dfrac{MU_y}{P_y} = \cdots = \dfrac{MU_m}{1} $ (Law of Equi-marginal Utility)
 
 ### Indifference Curve (Ordinal Utility) approach
 
@@ -2196,17 +2198,17 @@ E_{xy} = \dfrac{\% \Delta Q_x}{\% \Delta P_y}
 | 5 | Doesn't touch axes |
 
 **Marginal Rate of Substitution (MRS):**
-\[
+$$
 MRS_{xy} = \dfrac{\Delta Y}{\Delta X} = \dfrac{MU_x}{MU_y}
-\]
+$$
 
 **Budget line:**
-\[
+$$
 P_x \cdot X + P_y \cdot Y = M
-\]
+$$
 
 **Equilibrium of consumer:** Highest IC tangent to budget line.
-**Tangency condition:** \(MRS_{xy} = P_x / P_y\) (slope of IC = slope of budget line).
+**Tangency condition:** $MRS_{xy} = P_x / P_y$ (slope of IC = slope of budget line).
 
 ## 9.6 Law of Supply
 
@@ -2224,9 +2226,9 @@ P_x \cdot X + P_y \cdot Y = M
 
 ### Elasticity of supply
 
-\[
+$$
 E_s = \dfrac{\% \Delta Q_s}{\% \Delta P}
-\]
+$$
 
 Same numerical types as demand: 0 (perfectly inelastic, vertical), < 1, = 1, > 1, ∞ (perfectly elastic, horizontal).
 
@@ -2423,7 +2425,7 @@ FC = ₹10,000. VC at Q=100 is ₹5,000. Find TC, AC, AFC, AVC at Q=100. Also, V
 ## 10.3 Production function
 
 > A **production function** shows the relationship between physical inputs and physical outputs of a firm:
-> \[ Q = f(L, K, N, E) \]
+> $Q = f(L, K, N, E)$
 
 ### Total, Average, Marginal Product
 
@@ -2908,7 +2910,9 @@ GDP (Gross Domestic Product) is the total market value of all final goods and se
 
 $$\text{GNP} = \text{GDP} + \text{NFIA (Net Factor Income from Abroad)}$$
 $$\text{NNP}_{MP} = \text{GNP} - \text{Depreciation (CCA)}$$
-$$\text{NNP}_{FC} = \text{National Income} = \text{NNP}_{MP} - \text{Net Indirect Taxes} \text{ (Indirect taxes − Subsidies)}$$
+$$\text{NNP}_{FC} = \text{National Income} = \text{NNP}_{MP} - \text{Net Indirect Taxes}$$
+
+(Net Indirect Taxes = Indirect Taxes − Subsidies)
 $$\text{Per Capita Income} = \frac{\text{National Income}}{\text{Population}}$$
 
 | Term | Concept |
@@ -2922,9 +2926,9 @@ $$\text{Per Capita Income} = \frac{\text{National Income}}{\text{Population}}$$
 
 **Solved Example 12.A:** GNP at MP = ₹100 lakh crore. Depreciation = ₹8 lakh crore. Indirect taxes = ₹15 lakh crore. Subsidies = ₹5 lakh crore. Find National Income.
 
-> $\text{NNP}_{MP} = 100 - 8 = ₹92$ lakh crore.
-> Net indirect taxes = $15 - 5 = ₹10$ lakh crore.
-> $\text{NI} = \text{NNP}_{FC} = 92 - 10 = \mathbf{₹82 \text{ lakh crore}}$
+> $\text{NNP}_{MP} = 100 - 8 = 92$ lakh crore.
+> Net indirect taxes = $15 - 5 = 10$ lakh crore.
+> $\text{NI} = \text{NNP}_{FC} = 92 - 10 = \mathbf{82}$ lakh crore. **Answer: ₹82 lakh crore.**
 
 ## 12.1 Examiner mindset
 
@@ -3175,7 +3179,7 @@ India target: **500 GW non-fossil capacity by 2030** (Net-Zero by 2070, COP-26 c
 
 **Why did India need economic reforms in 1991? What was the crisis?**
 
-By May–June 1991, India's foreign exchange reserves had fallen to barely $1 billion — enough for only 2 weeks of imports. India was forced to physically airlift 67 tonnes of gold to the Bank of England and 20 tonnes to the Bank of Japan as collateral for emergency loans. The government was on the brink of defaulting on its international payments — a sovereign default that would have shut India out of global capital markets.
+By May–June 1991, India's foreign exchange reserves had fallen to barely USD 1 billion — enough for only 2 weeks of imports. India was forced to physically airlift 67 tonnes of gold to the Bank of England and 20 tonnes to the Bank of Japan as collateral for emergency loans. The government was on the brink of defaulting on its international payments — a sovereign default that would have shut India out of global capital markets.
 
 **The causes were structural and had been building for decades:**
 - **Licence Raj:** Every private investment required government approval ("industrial licence"). This created massive inefficiency, corruption, and protected incumbent firms from competition. An entrepreneur wanting to set up a factory often waited years for approvals.
@@ -3185,7 +3189,7 @@ By May–June 1991, India's foreign exchange reserves had fallen to barely $1 bi
 
 **The response — the LPG reforms (1991):**
 - Architect: Finance Minister **Dr. Manmohan Singh**, under PM **P.V. Narasimha Rao**.
-- India negotiated a $2.2 billion loan from the IMF, conditioned on structural reform.
+- India negotiated a USD 2.2 billion loan from the IMF, conditioned on structural reform.
 
 </div>
 
@@ -3199,7 +3203,7 @@ By May–June 1991, India's foreign exchange reserves had fallen to barely $1 bi
 
 **Results of 1991 reforms (asked frequently):**
 - GDP growth rate rose: 5-6% in 1980s → 6-8% in 1990s-2000s → 7-8%+ in 2000s
-- Foreign exchange reserves rose from near-zero (1991) to $700+ billion (2024)
+- Foreign exchange reserves rose from near-zero (1991) to USD 700+ billion (2024)
 - IT and services sector boom (BPO, software exports) — enabled by telecom liberalisation
 - Poverty rate fell significantly (though debate continues on methods)
 - Inequality increased (Gini coefficient rose); urban-rural gap widened
@@ -3857,7 +3861,7 @@ graph TD
 | **Trade balance** = Exports − Imports of goods | India typically has **trade deficit** |
 | Services (software exports, tourism, etc.) | India has **services surplus** |
 | Income (interest received vs paid, profits abroad) | Usually deficit |
-| Transfers (remittances) | India is a large recipient (~$110 bn/year — top in world) |
+| Transfers (remittances) | India is a large recipient (~USD 110 bn/year — top in world) |
 | **Current Account Balance** | Trade balance + Services + Income + Transfers |
 
 ### Capital Account components
@@ -3992,7 +3996,7 @@ GST slabs: 0 %, 5 %, 12 %, 18 %, 28 % (+ cess on demerit goods).
 | 5 | Money Bill article | 110 |
 | 6 | Three funds in Constitution | CFI (266-1), PA (266-2), Contingency (267) |
 | 7 | GST CA Amendment | 101st (2016) |
-| 8 | Top remittance receiver country | India (~$110 bn) |
+| 8 | Top remittance receiver country | India (~USD 110 bn) |
 | 9 | India's main BoP weakness | Trade deficit (current account) |
 | 10 | RBI lends to govt under what arrangement? | Ways and Means Advances (WMA) |
 
