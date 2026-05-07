@@ -688,7 +688,6 @@ Single-blank, double-blank, triple-blank variants. Grammar- or vocab-driven.
 | Cat-and-dog life | quarrelsome existence |
 | Catch red-handed | caught in the act |
 | Chip off the old block | resembling parent |
-| Cock and bull story | absurd story |
 | Cold shoulder | deliberate snub |
 | Come to terms | reach agreement / accept |
 | Cross swords | quarrel |
@@ -818,6 +817,179 @@ accommodate, achievement, acquaintance, address, beautiful, beggar, beginning, b
 | tête-à-tête | private chat |
 | vice versa | the reverse |
 | vis-à-vis | with regard to |
+
+## 16.7 Top-50 PROVERBS with meanings (SSC CGL, CHSL — tested separately from idioms)
+
+<div class="keypoint">
+
+**Proverbs vs Idioms:** Proverbs are complete sentences giving advice or stating a truth. Idioms are fixed phrases slotted into a sentence. SSC often tests "what does the proverb mean?" directly.
+
+</div>
+
+| Proverb | Meaning |
+|---|---|
+| A bad workman blames his tools | incompetent people find excuses |
+| A bird in hand is worth two in the bush | certainty over possibility |
+| A chain is as strong as its weakest link | the weakest part determines overall strength |
+| A drowning man clutches at a straw | desperate people grab any help |
+| A fool and his money are soon parted | foolish people spend recklessly |
+| A friend in need is a friend indeed | real friends help in trouble |
+| A leopard cannot change its spots | character does not change |
+| A little knowledge is a dangerous thing | partial knowledge leads to errors |
+| A man is known by the company he keeps | judge by one's associates |
+| A penny saved is a penny earned | saving = earning |
+| A problem shared is a problem halved | sharing reduces burden |
+| A rolling stone gathers no moss | moving around = no stability/savings |
+| A stitch in time saves nine | timely action prevents bigger problems |
+| Actions speak louder than words | behaviour more important than promises |
+| All that glitters is not gold | appearances are deceptive |
+| An idle brain is the devil's workshop | idleness leads to mischief |
+| Barking dogs seldom bite | those who threaten rarely act |
+| Beggars cannot be choosers | those in need must accept what is given |
+| Better late than never | doing something late is better than not at all |
+| Birds of a feather flock together | similar people gather together |
+| Charity begins at home | help your own family first |
+| Cut your coat according to your cloth | live within your means |
+| Do not count your chickens before they hatch | do not assume success prematurely |
+| Do not judge a book by its cover | do not judge by appearance |
+| Empty vessels make the most noise | shallow people talk the most |
+| Every cloud has a silver lining | every bad situation has some good |
+| Fortune favours the brave | bold action is rewarded |
+| Give a dog a bad name and hang him | a bad reputation ruins a person |
+| God helps those who help themselves | self-effort attracts support |
+| Great minds think alike | intelligent people reach the same conclusions |
+| Haste makes waste | hurrying leads to mistakes |
+| Honesty is the best policy | being honest has best long-term results |
+| It takes two to tango | both parties share responsibility |
+| Jack of all trades, master of none | versatile but not excellent in any |
+| Look before you leap | think carefully before acting |
+| Make hay while the sun shines | use opportunity when available |
+| Necessity is the mother of invention | need drives creativity |
+| Never put off till tomorrow what you can do today | avoid procrastination |
+| No man can serve two masters | cannot be loyal to two opposing parties |
+| Once bitten, twice shy | learn caution from experience |
+| One man's meat is another man's poison | different things suit different people |
+| Out of sight, out of mind | we forget what we cannot see |
+| Prevention is better than cure | avoiding problems > fixing them |
+| Pride goes before a fall | arrogance leads to failure |
+| Rome was not built in a day | great things take time |
+| Slow and steady wins the race | consistency beats rash speed |
+| Strike while the iron is hot | act at the right moment |
+| The grass is always greener on the other side | others' lives seem better |
+| Too many cooks spoil the broth | too many people ruin an outcome |
+| United we stand, divided we fall | unity is strength |
+| When in Rome, do as the Romans do | follow local customs |
+
+## 16.8 60 Commonly CONFUSED word pairs (heavy in error-spotting + cloze)
+
+<div class="keypoint">
+
+These pairs sound alike or look alike but mean different things. Error-spotting questions frequently swap one for the other. Memorise the distinction, not just the meaning.
+
+</div>
+
+| Word A | Word B | How to tell apart |
+|---|---|---|
+| Affect (verb) | Effect (noun) | Affects → results in an Effect |
+| Assure | Ensure | Assure = remove doubt (person); Ensure = make certain (event) |
+| Averse | Adverse | Averse = unwilling; Adverse = harmful |
+| Avenge | Revenge | Avenge = just punishment (for another); Revenge = personal retaliation |
+| Beside | Besides | Beside = next to; Besides = in addition to |
+| Childlike | Childish | Childlike = innocently; Childish = immaturely (negative) |
+| Classic | Classical | Classic = of lasting value; Classical = belonging to ancient Greece/Rome |
+| Complement | Compliment | Complement = completes; Compliment = praise |
+| Continual | Continuous | Continual = repeated with breaks; Continuous = unbroken |
+| Council | Counsel | Council = advisory body (noun); Counsel = advise (verb) / lawyer (noun) |
+| Credible | Credulous | Credible = believable; Credulous = easily believes anything (gullible) |
+| Defuse | Diffuse | Defuse = make safe; Diffuse = spread widely |
+| Delusion | Illusion | Delusion = false belief (mental); Illusion = false perception (visual) |
+| Desert (n) | Dessert | Desert = sandy region; Dessert = sweet course |
+| Discreet | Discrete | Discreet = careful/tactful; Discrete = separate, distinct |
+| Disinterested | Uninterested | Disinterested = impartial; Uninterested = not interested |
+| Elude | Allude | Elude = escape; Allude = refer indirectly |
+| Eminent | Imminent | Eminent = distinguished; Imminent = about to happen |
+| Eruption | Irruption | Eruption = bursting out; Irruption = bursting in |
+| Flair | Flare | Flair = natural talent; Flare = burst of light / anger |
+| Flout | Flaunt | Flout = defy (rules); Flaunt = show off |
+| Forbid | Prohibit | Forbid = personal order; Prohibit = official rule |
+| Forego | Forgo | Forego = precede; Forgo = give up |
+| Historic | Historical | Historic = famous/important event; Historical = belonging to history |
+| Housework | Homework | Housework = domestic chores; Homework = school assignment |
+| Illicit | Elicit | Illicit = illegal; Elicit = draw out a response |
+| Imaginary | Imaginative | Imaginary = not real; Imaginative = creative |
+| Imply | Infer | Speaker implies; Listener infers |
+| Incredible | Incredulous | Incredible = unbelievable (thing); Incredulous = disbelieving (person) |
+| Intelligent | Intellectual | Intelligent = quick to understand; Intellectual = fond of ideas/theory |
+| Judicial | Judicious | Judicial = related to court; Judicious = showing good judgement |
+| Later | Latter | Later = after some time; Latter = the second of two |
+| Lay | Lie | Lay = place an object (transitive); Lie = recline (intransitive) |
+| Liable | Likely | Liable = legally responsible; Likely = probable |
+| Loose | Lose | Loose = not tight; Lose = fail to keep |
+| Luxurious | Luxuriant | Luxurious = comfortable, expensive; Luxuriant = abundant (vegetation) |
+| Moral | Morale | Moral = ethical lesson; Morale = group spirit/confidence |
+| Nauseated | Nauseous | Nauseated = feeling sick; Nauseous = causing sickness |
+| Notable | Notorious | Notable = worthy of note; Notorious = famous for wrong reasons |
+| Observance | Observation | Observance = following rules; Observation = watching / remark |
+| Official | Officious | Official = authorised; Officious = bossy, over-eager |
+| Oral | Verbal | Oral = spoken; Verbal = in words (spoken or written) |
+| Passed | Past | Passed = verb (moved past); Past = noun/adjective/preposition |
+| Persecute | Prosecute | Persecute = oppress; Prosecute = take to court |
+| Practical | Practicable | Practical = sensible; Practicable = capable of being done |
+| Precede | Proceed | Precede = come before; Proceed = go forward |
+| Principal | Principle | Principal = main/head person; Principle = rule/belief |
+| Prophecy | Prophesy | Prophecy (noun) = prediction; Prophesy (verb) = to predict |
+| Rational | Rationale | Rational = based on reason; Rationale = reason given for something |
+| Sensual | Sensuous | Sensual = of physical pleasure (often sexual); Sensuous = pleasing to senses |
+| Sight | Site | Sight = vision; Site = location |
+| Stationary | Stationery | Stationary = not moving; Stationery = writing materials |
+| Temporal | Temporary | Temporal = relating to time or worldly; Temporary = lasting short time |
+| Urban | Urbane | Urban = relating to city; Urbane = refined, polished |
+| Vocation | Vacation | Vocation = calling/career; Vacation = holiday |
+| Waive | Wave | Waive = give up a right; Wave = motion of hand/water |
+| Who | Whom | Who = subject; Whom = object (him/her → whom) |
+| Worthless | Priceless | Worthless = no value; Priceless = too valuable to price |
+| Zeal | Jealousy | Zeal = enthusiastic dedication; Jealousy = resentment of another's advantage |
+
+## 16.9 30 high-frequency COLLOCATIONS (cloze test staples)
+
+<div class="keypoint">
+
+Collocations = words that naturally go together. Cloze tests check whether you know *which* preposition, verb, or adjective pairs with a given noun. These 30 patterns cover 60-70% of cloze-test collocation traps.
+
+</div>
+
+| Verb/Adj | Noun | Fixed pair | Trap to avoid |
+|---|---|---|---|
+| Raise | concern | raise a concern | NOT "rise a concern" |
+| Address | issue | address an issue | NOT "discuss an issue" (generic) |
+| Pose | threat | pose a threat | NOT "give a threat" |
+| Make | decision | make a decision | NOT "take a decision" (BrE: take) |
+| Take | responsibility | take responsibility | NOT "bear responsibility" (different nuance) |
+| Launch | initiative | launch an initiative | NOT "start an initiative" (formal context) |
+| Pass | legislation | pass legislation | NOT "approve legislation" |
+| Implement | policy | implement a policy | NOT "apply a policy" |
+| Express | concern | express concern | NOT "show concern" (formal writing) |
+| Reach | consensus | reach a consensus | NOT "achieve consensus" |
+| Draw | attention | draw attention to | NOT "pull attention" |
+| Play | role | play a role | NOT "do a role" |
+| Pose | challenge | pose a challenge | NOT "create a challenge" |
+| Cast | doubt | cast doubt on | NOT "throw doubt" |
+| Bear | resemblance | bear resemblance | NOT "carry resemblance" |
+| Heave | sigh | heave a sigh | NOT "give a sigh" (informal OK) |
+| Pay | heed | pay heed to | NOT "give heed" |
+| Set | precedent | set a precedent | NOT "make a precedent" |
+| Break | ground | break new ground | NOT "pave new ground" |
+| Come | fruition | come to fruition | NOT "reach fruition" |
+| Run | risk | run the risk of | NOT "take the risk of" (both OK — run = fixed collocation) |
+| Shed | light | shed light on | NOT "throw light" (both acceptable) |
+| Stem | tide | stem the tide | NOT "stop the tide" |
+| Strike | balance | strike a balance | NOT "make a balance" |
+| Turn | blind eye | turn a blind eye | NOT "close a blind eye" |
+| Make | headway | make headway | NOT "achieve headway" |
+| Come | terms | come to terms with | NOT "reach terms with" |
+| Bear | brunt | bear the brunt | NOT "take the brunt" |
+| Give | wide berth | give a wide berth | NOT "keep a wide berth" |
+| Whet | appetite | whet one's appetite | NOT "wet one's appetite" |
 
 ---
 

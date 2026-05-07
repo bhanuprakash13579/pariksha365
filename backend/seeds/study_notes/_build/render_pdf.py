@@ -587,6 +587,10 @@ def _protect_math(text: str) -> tuple[str, dict]:
         placeholders[key] = m.group(0)
         return key
 
+    # Escape currency dollar signs ($123, $4.5B, $700 billion, etc.) BEFORE LaTeX detection
+    # so they are never mistaken for LaTeX delimiters.
+    text = re.sub(r"\$(?=[\d~])", "&#36;", text)
+
     # Display math first ($$...$$, possibly multi-line), then inline ($...$)
     text = re.sub(r"\$\$.*?\$\$", _store, text, flags=re.DOTALL)
     text = re.sub(r"\$[^\$\n]+?\$", _store, text)
