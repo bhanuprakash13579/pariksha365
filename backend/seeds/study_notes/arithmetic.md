@@ -839,7 +839,7 @@ Wages ∝ work done ∝ (1/time). If together for 12 days and A alone 20 d, B al
 
 \newpage
 
-# 🛒 PART 7 — MIXTURES & ALLIGATION
+# PART 7 — MIXTURES & ALLIGATION
 
 ## 7.0 Opener
 
@@ -954,7 +954,7 @@ Same formula — negatives. A fixed-interest partner earns even in loss years (p
 
 \newpage
 
-# 🎂 PART 10 — AGES
+# PART 10 — AGES
 
 Most age problems reduce to linear equations.
 
@@ -975,6 +975,144 @@ Combine averages + differences.
 
 \newpage
 
+# PART 10B — NUMBER SYSTEM (HCF, LCM, Divisibility, Remainders, Unit Digit)
+
+> SSC CGL Tier-1 gives 3–5 questions from this chapter. IBPS PO Pre gives 2–3. The types below cover >95% of what examiners ask.
+
+## 10B.0 Opener — types of numbers (memorise the definitions)
+
+| Type | Definition | Example |
+|---|---|---|
+| **Natural numbers** | 1, 2, 3, … | {1, 2, 3, …} |
+| **Whole numbers** | 0, 1, 2, 3, … | {0, 1, 2, …} |
+| **Integers** | …−2, −1, 0, 1, 2, … | All of ℤ |
+| **Prime** | Exactly 2 factors (1 and itself) | 2, 3, 5, 7, 11, 13, … |
+| **Composite** | More than 2 factors | 4, 6, 8, 9, 10, … |
+| **Co-prime (relative prime)** | HCF = 1 (not necessarily prime individually) | (8, 9), (4, 9) |
+| **Perfect square** | n = k² for integer k | 1, 4, 9, 16, 25, … |
+| **Perfect cube** | n = k³ | 1, 8, 27, 64, 125, … |
+
+<div class="keypoint">
+
+**Prime up to 100 (count = 25):** 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97. Examiners ask "how many primes between X and Y?" — count from this list.
+
+</div>
+
+## Type 1 — HCF (Highest Common Factor)
+
+**Two methods — both exam-valid:**
+
+**Method A — Prime factorisation:** HCF = product of common prime factors at their LOWEST powers.
+**Method B — Euclid's algorithm:** Divide larger by smaller, replace with remainder; repeat until remainder = 0; last non-zero divisor = HCF.
+
+**Example.** HCF of 48 and 36.
+- 48 = 2⁴ × 3; 36 = 2² × 3². Common: 2² and 3¹. HCF = 4 × 3 = **12**.
+- Euclid: 48 = 1 × 36 + 12; 36 = 3 × 12 + 0 → HCF = **12** ✓.
+
+**Self-check.** HCF of 84 and 126. → 84 = 2² × 3 × 7; 126 = 2 × 3² × 7. Common: 2¹ × 3¹ × 7¹ = **42**.
+
+## Type 2 — LCM (Least Common Multiple)
+
+**Method — prime factorisation:** LCM = product of all prime factors at their HIGHEST powers.
+
+**Example.** LCM of 48 and 36. All prime factors: 2⁴ and 3². LCM = 16 × 9 = **144**.
+
+**Key identity (for 2 numbers only):** HCF × LCM = N₁ × N₂.
+- Verify: 12 × 144 = 1,728 = 48 × 36 ✓.
+
+**Self-check.** LCM of 12, 18, 24.
+- 12 = 2² × 3; 18 = 2 × 3²; 24 = 2³ × 3. LCM = 2³ × 3² = 8 × 9 = **72**.
+
+## Type 3 — Word problems using HCF / LCM
+
+**HCF problems:** "Largest tile / rope / measure / group size" → HCF.
+**LCM problems:** "Smallest number divisible by all / when two events next coincide" → LCM.
+
+**Example (HCF).** Three ropes 36 m, 48 m, 60 m. Largest equal-length pieces with no waste?
+- HCF(36, 48, 60) = 12. Pieces = 3 + 4 + 5 = **12 pieces**, each **12 m**.
+
+**Example (LCM).** Traffic lights at intervals of 48 s and 72 s both turn green together. When next? LCM(48, 72) = 144 → **144 seconds (2 min 24 s)**.
+
+**Example (LCM trick).** Smallest number divisible by 4, 6, 9, 15?
+- LCM(4,6,9,15) = LCM(4,6) × adjust: 4=2², 6=2×3, 9=3², 15=3×5. LCM = 2² × 3² × 5 = **180**.
+
+## Type 4 — Divisibility rules (memorise all 13)
+
+| Divisor | Rule |
+|---|---|
+| 2 | Last digit even (0, 2, 4, 6, 8) |
+| 3 | Digit sum divisible by 3 |
+| 4 | Last 2 digits form a number divisible by 4 |
+| 5 | Last digit 0 or 5 |
+| 6 | Divisible by both 2 AND 3 |
+| 7 | Double the last digit; subtract from remaining number; repeat. If result divisible by 7, so is original. |
+| 8 | Last 3 digits divisible by 8 |
+| 9 | Digit sum divisible by 9 |
+| 10 | Last digit 0 |
+| 11 | Alternating digit sum (from right) divisible by 11 |
+| 12 | Divisible by both 3 AND 4 |
+| 13 | Triple the last digit; add to remaining number; repeat. If divisible by 13, so is original. |
+| 25 | Last 2 digits are 00, 25, 50, or 75 |
+
+**Example.** Is 1,729 divisible by 7?
+- Last digit = 9; double = 18. Remaining = 172. 172 − 18 = 154.
+- Repeat: last digit = 4; double = 8. 15 − 8 = 7. Divisible by 7 → **YES**.
+
+## Type 5 — Remainders
+
+**Basic remainders:** (a + b) mod n = [(a mod n) + (b mod n)] mod n. Same for products.
+
+**Example.** Remainder when 73 × 54 is divided by 6.
+- 73 mod 6 = 1; 54 mod 6 = 0. Product mod 6 = 0 × 1 = **0**.
+
+**Cyclicity-based remainders:** Find the pattern of r^n mod m.
+
+**Example.** Remainder when 2^100 is divided by 7.
+- 2¹ mod 7 = 2; 2² = 4; 2³ = 8 → 1; cycle length = 3 (2, 4, 1).
+- 100 mod 3 = 1 → take 1st element = **2**.
+
+## Type 6 — Unit digit / last digit of x^n
+
+**Memorise the unit-digit cycles:**
+
+| Unit digit of base | Cycle | Length |
+|---|---|---|
+| 0, 1, 5, 6 | 0, 1, 5, 6 (themselves) | 1 |
+| 4, 9 | 4/6, 9/1 | 2 |
+| 2 | 2, 4, 8, 6 | 4 |
+| 3 | 3, 9, 7, 1 | 4 |
+| 7 | 7, 9, 3, 1 | 4 |
+| 8 | 8, 4, 2, 6 | 4 |
+
+**Example.** Unit digit of 3^47.
+- Cycle {3, 9, 7, 1}, length 4. 47 mod 4 = 3 → 3rd position = **7**.
+
+**Example.** Unit digit of 4^31. Cycle {4, 6}, length 2. 31 mod 2 = 1 → 1st = **4**.
+
+## Type 7 — Number of factors (divisors)
+
+**Formula.** If N = p₁^a × p₂^b × p₃^c × …, number of factors = (a+1)(b+1)(c+1)…
+
+**Example.** Number of factors of 360. 360 = 2³ × 3² × 5¹. Factors = (3+1)(2+1)(1+1) = 4 × 3 × 2 = **24**.
+
+**Even vs odd factors:**
+- Even factors: reduce power of 2 by one choice (min power = 1, not 0). Even factors of 360 = 3 × 3 × 2 = **18**.
+- Odd factors: include only odd prime bases (2^0). Odd factors of 360 = (2+1)(1+1) = **6**.
+
+**Verify:** 18 + 6 = 24 ✓.
+
+## Type 8 — "Find the missing digit for divisibility" problems
+
+**Pattern:** "The number 3_6 is divisible by 9. Find the missing digit."
+
+**Method:** Digit sum must be divisible by 9. 3 + □ + 6 = 9 + □. For divisibility by 9: □ = **0** (sum = 9) or □ = **9** (sum = 18).
+
+**Example.** 5_2 is divisible by 6. Divisible by 6 = divisible by 2 AND 3. Already ends in 2 (even ✓). Digit sum = 5 + □ + 2 = 7 + □ must be divisible by 3 → □ = **2** (sum 9) or □ = **5** (sum 12). Both work; examiners usually expect the smallest: **□ = 2**.
+
+---
+
+\newpage
+
 # PART 11 — MENSURATION (2D & 3D)
 
 > **Diagram accuracy rule:** Geometric illustrations here must be to-scale SVG/TikZ, not hand-wave sketches. In the exam mode, every diagram is rendered from an exact coordinate spec. If a diagram cannot be made exact (e.g., specific irregular quadrilateral), the question is deferred to a visual-asset batch, not shipped with a crude ASCII box.
@@ -983,45 +1121,218 @@ Combine averages + differences.
 
 **Must memorise** — area & perimeter of square, rectangle, triangle (½·b·h), equilateral triangle (√3/4 · a²), circle (πr²), sector (½·r²·θ), trapezium (½·(a+b)·h), parallelogram (b·h), rhombus (½·d1·d2); volume + TSA + CSA of cube, cuboid, cylinder, cone, sphere, hemisphere, frustum.
 
-## Types list (covered with SVG figures in the rendered PDF):
+## Type 1 — Direct substitution (area / perimeter)
 
-1. Direct substitution (basic area/perimeter).
-2. Optimisation (largest square inscribed in a circle, etc.).
-3. Path/road around a rectangle or garden.
-4. Shaded-region problems (rectangle minus inner circle; overlapping circles).
-5. Combined solids (cone on hemisphere; cylinder with conical lid).
-6. Similar figures — ratio of areas is square of ratio of sides; volumes cube.
-7. Frustum of cone (bucket).
-8. Rolling / rotation — wheel covers πD per revolution.
-9. Effect of changing one dimension on area/volume (link to Percentage Type 14).
-10. Triangle-inside-triangle, midpoint theorem.
+**Recognition cue:** Straight shape given → find area or perimeter. No trick — just formula + arithmetic.
 
-*Each type has accurate diagrams authored as SVG; not rendered inline in this md file to avoid ASCII art that misleads the student. See `study_notes/_assets/mensuration/` for the figure set that the pandoc build pipeline embeds.*
+**Example.** A triangle has base 12 cm, height 9 cm. Area = ½ × 12 × 9 = **54 cm²**.
+
+**Example.** Rectangle 15 × 8. Perimeter = 2(15 + 8) = **46 cm**. Area = 15 × 8 = **120 cm²**.
+
+**Self-check.** Equilateral triangle side 6 cm. Area = (√3/4) × 36 = **9√3 cm²**. Perimeter = **18 cm**.
+
+## Type 2 — Optimisation (largest/smallest shape inscribed in another)
+
+**Recognition cue:** "Largest circle inscribed in a square," "largest square inscribed in a circle" — relate the dimensions.
+
+**Key rules:**
+- Largest circle in a square of side a → radius r = a/2.
+- Largest square inscribed in a circle of radius r → side = r√2; diagonal = 2r.
+- Largest equilateral triangle in a circle of radius r → side = r√3.
+
+**Example.** Largest circle carved from a square tile of side 14 cm. Radius = 7 cm. Area of circle = π × 49 = **154 cm²** (using π = 22/7).
+
+**Self-check.** Side of the largest square that fits in a circle of radius 5 cm → side = 5√2 ≈ **7.07 cm**.
+
+## Type 3 — Path / road around a rectangle or garden
+
+**Recognition cue:** "A path of width w surrounds a garden of l × b. Find area of path."
+
+**Method:** Outer rectangle dimensions = (l + 2w) × (b + 2w). Area of path = Outer − Inner.
+
+**Example.** Garden 40 × 30 m, path 2 m wide. Outer = 44 × 34 = 1,496. Inner = 40 × 30 = 1,200. Path area = **296 m²**.
+
+***Watch out:*** Width w is added on BOTH sides — total increase in each dimension = 2w, not w.
+
+## Type 4 — Shaded-region problems
+
+**Recognition cue:** A shape has something cut out (circle from rectangle, square from circle). Area = Large − Small.
+
+**Example.** Square of side 14 cm has the largest possible circle cut out. Shaded area = 14² − π(7²) = 196 − 154 = **42 cm²**.
+
+**Example.** Ring: outer radius 7 cm, inner radius 3.5 cm. Area = π(7² − 3.5²) = π(49 − 12.25) = 22/7 × 36.75 = **115.5 cm²**.
+
+## Type 5 — Combined solids (volume and surface area)
+
+**Recognition cue:** Two solids joined (cone + hemisphere = ice-cream cone; cylinder + cone = tent).
+
+**Volume:** Add volumes. **Surface area:** Add CSA only (not base of cone + flat circle of hemisphere when they share a face).
+
+**Example.** A toy is a cone (r = 3.5 cm, h = 4 cm) on a hemisphere (r = 3.5 cm). Volume = (1/3)πr²h + (2/3)πr³ = π × 12.25 × (4/3 + 7/3) = π × 12.25 × 11/3. Use π = 22/7: = 22/7 × 12.25 × 11/3 = **141.17 cm³** (approx). Total surface area = πrl (cone, l = slant) + 2πr² (hemisphere) — the flat circle is interior.
+
+*Slant height l = √(r² + h²) = √(12.25 + 16) = √28.25 ≈ 5.315 cm.*
+
+## Type 6 — Similar figures (ratio of sides → ratio of areas/volumes)
+
+**Rule.** If ratio of corresponding sides = k : 1, then ratio of areas = k² : 1, ratio of volumes = k³ : 1.
+
+**Example.** Two similar triangles with sides 4 cm and 6 cm. Ratio of areas = 4² : 6² = 16 : 36 = **4 : 9**.
+
+**Example.** Two spheres with radii 3 cm and 6 cm. Ratio of volumes = 3³ : 6³ = 27 : 216 = **1 : 8**.
+
+## Type 7 — Frustum of cone (truncated cone = bucket / flower pot shape)
+
+**Formulae.** R = bottom radius, r = top radius, h = height, l = slant height = √[h² + (R−r)²].
+- Volume = (πh/3)(R² + Rr + r²)
+- CSA = πl(R + r)
+- TSA = πl(R + r) + π(R² + r²)
+
+**Example.** Bucket: R = 21 cm, r = 14 cm, h = 24 cm. Slant l = √(576 + 49) = √625 = 25 cm. CSA = π × 25 × 35 = 22/7 × 875 = **2,750 cm²**.
+
+## Type 8 — Rolling / rotation (wheel, cylinder rolling)
+
+**Rule.** Distance covered in one revolution = circumference = πD = 2πr.
+
+**Example.** Wheel radius 35 cm makes 500 revolutions. Distance = 500 × 2π × 35 = 500 × 220/7 = 500 × 31.43 ≈ **110,000 cm = 1.1 km**.
+
+## Type 9 — Effect of changing one dimension on area / volume
+
+**Rule.** If radius increases by r%, area increases by [2r + r²/100]% (i.e., successive percentage of TWO sides). Volume has THREE dimensions.
+
+**Example.** Each side of a cube increases by 20%. New volume = 1.2³ = 1.728 times → volume increases by **72.8 %**.
+
+**Example.** Radius of cylinder +10%, height −10%. New volume = π(1.1r)²(0.9h) = 1.089πr²h → increases by **8.9 %**.
+
+## Type 10 — Triangle-inside-triangle, midpoint theorem
+
+**Midpoint theorem.** Line joining midpoints of two sides of a triangle is parallel to the third side and HALF its length.
+
+**Example.** In △ABC, D and E are midpoints of AB and AC. If BC = 24 cm, then DE = **12 cm**.
+
+**Medians and centroid.** Centroid divides each median in 2:1 from vertex. Area of each of the 6 sub-triangles formed by medians = total area / 6.
 
 ---
 
 \newpage
 
-# ∠ PART 12 — GEOMETRY
+# PART 12 — GEOMETRY
 
 > Same diagram-accuracy rule applies. Triangles, circles, quadrilaterals, tangents — every figure is to-scale SVG.
 
-## Types:
+## Type 1 — Triangle basics
 
-1. Triangle basics: angle sum, exterior angle, triangle inequality.
-2. Similarity & congruence criteria (AA, SAS, SSS, RHS).
-3. Midpoint theorem; basic proportionality theorem (Thales).
-4. Pythagorean theorem + triples (3-4-5, 5-12-13, 8-15-17, 7-24-25, 20-21-29).
-5. Centroid (2:1), circumcentre, incentre, orthocentre positions.
-6. Circle theorems: angle at centre = 2 × angle at circumference; angles in same segment; cyclic quadrilateral (opposite angles 180°).
-7. Tangent properties (tangent ⟂ radius; two tangents from external point equal).
-8. Length relations for intersecting chords / secants.
-9. Polygon angle sums: interior = (n−2)·180°; exterior sum = 360°.
-10. Coordinate geometry: distance, section, slope, collinearity.
+**Key rules to memorise:**
+- Angle sum = 180°. Exterior angle = sum of two non-adjacent interior angles.
+- Triangle inequality: each side < sum of other two sides.
+
+**Example.** In △ABC, ∠A = 65°, ∠B = 55°. Find the exterior angle at C.
+- ∠C = 180 − 65 − 55 = 60°. Exterior angle at C = 180 − 60 = 120°.
+- Or directly: exterior = ∠A + ∠B = 65 + 55 = **120°** ✓ (use this shortcut).
+
+## Type 2 — Similarity & congruence
+
+**Similarity criteria:** AA (two angles equal), SAS (ratio of two sides equal + included angle), SSS (all three side ratios equal).
+
+**Key property:** If △ABC ~ △DEF with ratio k:1, then:
+- Corresponding sides in ratio k:1.
+- Areas in ratio k²:1.
+
+**Example.** △ABC ~ △PQR. AB = 6 cm, PQ = 9 cm. Area of △ABC = 24 cm². Area of △PQR?
+- Ratio of sides = 6:9 = 2:3. Ratio of areas = 4:9.
+- 24/area(PQR) = 4/9 → area(PQR) = **54 cm²**.
+
+## Type 3 — Basic proportionality theorem (Thales) + Midpoint
+
+**BPT (Thales):** A line parallel to one side of a triangle divides the other two sides in equal ratios.
+
+**Example.** In △ABC, DE ∥ BC. AD = 4 cm, DB = 6 cm. AE = 5 cm. Find EC.
+- AD/DB = AE/EC → 4/6 = 5/EC → EC = 5 × 6/4 = **7.5 cm**.
+
+## Type 4 — Pythagorean theorem + Pythagorean triples
+
+**Theorem:** a² + b² = c² (where c = hypotenuse).
+
+**Triples to recognise on sight (saves computation):**
+
+| Triple | Multiples to watch |
+|---|---|
+| 3-4-5 | 6-8-10, 9-12-15, 15-20-25 |
+| 5-12-13 | 10-24-26 |
+| 8-15-17 | — |
+| 7-24-25 | — |
+| 20-21-29 | — |
+
+**Example.** Ladder 13 m leans against a wall; foot is 5 m from wall. How high does it reach?
+- 5-12-13 triple → height = **12 m** (no calculation needed).
+
+## Type 5 — Centroid, circumcentre, incentre, orthocentre
+
+| Point | Where | Key property |
+|---|---|---|
+| Centroid | Intersection of medians | Divides each median 2:1 from vertex |
+| Circumcentre | Perpendicular bisectors of sides | Equidistant from all 3 vertices |
+| Incentre | Angle bisectors | Equidistant from all 3 sides (= inradius) |
+| Orthocentre | Altitudes | Angle with circumcentre + centroid are collinear (Euler line) |
+
+**Example.** Centroid of triangle with vertices (0,0), (6,0), (3,9) = ((0+6+3)/3, (0+0+9)/3) = **(3, 3)**.
+
+## Type 6 — Circle theorems
+
+**Three theorems examiners test most:**
+
+1. Angle at centre = 2 × angle at circumference (subtended by same arc).
+2. Angles in the same segment are equal.
+3. Opposite angles of a cyclic quadrilateral sum to 180°.
+
+**Example.** Arc AB subtends ∠AOB = 140° at the centre. What angle does it subtend at the circumference (on the major arc)?
+- Angle at circumference = 140°/2 = **70°**.
+
+**Example.** In cyclic quadrilateral ABCD, ∠A = 95°. Find ∠C.
+- ∠A + ∠C = 180° → ∠C = **85°**.
+
+## Type 7 — Tangent properties
+
+**Rules:**
+- Tangent to a circle is perpendicular to the radius at the point of tangency.
+- Two tangents drawn from an external point are equal in length.
+- If PT and PS are tangents from P to circle centre O, then PT = PS; also ∠TPO = ∠SPO (tangent bisects the external angle).
+
+**Example.** From an external point P, two tangents PA and PB touch a circle at A and B. PA = 8 cm. What is PB? → PB = **8 cm** (tangents from external point are equal).
+
+**Example.** OP = 10 cm, radius OA = 6 cm. Length of tangent PA = √(OP² − OA²) = √(100 − 36) = √64 = **8 cm**.
+
+## Type 8 — Intersecting chords and secants
+
+**Chord intersection (inside circle):** If two chords PQ and RS intersect at T inside the circle, then PT × TQ = RT × TS.
+
+**Secant-secant from external point:** PA × PB = PC × PD (where A, B and C, D are the near and far intersection points on each secant).
+
+**Example.** Two chords intersect inside a circle. One chord is divided 4 and 6 (= 24). Other chord has one segment 3 cm. Find the other segment: 3 × x = 24 → x = **8 cm**.
+
+## Type 9 — Polygon angle sums
+
+**Interior angle sum = (n − 2) × 180°.** Exterior angle sum = always **360°** (for any convex polygon).
+
+**Regular polygon:** Each interior angle = (n−2)×180°/n. Each exterior angle = 360°/n.
+
+**Example.** How many sides does a regular polygon have if each interior angle = 150°?
+- Exterior = 180 − 150 = 30°. Number of sides = 360/30 = **12**.
+
+## Type 10 — Coordinate geometry
+
+**Distance formula:** d = √[(x₂−x₁)² + (y₂−y₁)²]
+
+**Mid-point:** ((x₁+x₂)/2, (y₁+y₂)/2)
+
+**Section formula** (internal division in m:n): ((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n))
+
+**Slope:** m = (y₂−y₁)/(x₂−x₁). Parallel lines: equal slope. Perpendicular lines: m₁ × m₂ = −1.
+
+**Example.** Slope of line joining (2, 5) and (6, 13) = (13−5)/(6−2) = 8/4 = **2**.
 
 ---
 
-# 📏 PART 13 — TRIGONOMETRY (for SSC-CGL / RRB NTPC level)
+# PART 13 — TRIGONOMETRY (for SSC-CGL / RRB NTPC level)
 
 ## 13.0 Opener
 
@@ -1038,13 +1349,46 @@ Combine averages + differences.
 - sin²θ + cos²θ = 1; 1 + tan²θ = sec²θ; 1 + cot²θ = cosec²θ.
 - Complementary: sin(90° − θ) = cos θ, etc.
 
-## Types:
+## Type 1 — Standard-angle substitution
 
-1. Standard-angle substitution.
-2. Complementary-angle simplifications.
-3. Identity-based simplifications.
-4. Height & distance (angle of elevation / depression) — triangle + tan.
-5. Two observers / two angles of observation.
+**Attack:** Replace θ with 30°/45°/60°/90° and evaluate using the table above.
+
+**Example.** Find: 2sin 60° − tan 45° + cos 30°.
+= 2(√3/2) − 1 + (√3/2) = √3 − 1 + √3/2 = **3√3/2 − 1 ≈ 1.598**.
+
+## Type 2 — Complementary-angle simplifications
+
+**Rule:** sin(90° − θ) = cos θ, cos(90° − θ) = sin θ, tan(90° − θ) = cot θ.
+
+**Example.** sin 35° / cos 55° = sin 35° / sin(90°−55°) = sin 35° / sin 35° = **1**.
+
+## Type 3 — Identity-based simplifications
+
+**Tip:** Convert all to sin/cos, or use: sin²θ + cos²θ = 1; 1 + tan²θ = sec²θ.
+
+**Example.** (sin θ + cos θ)² − 1 = sin²θ + cos²θ + 2sinθcosθ − 1 = 1 + 2sinθcosθ − 1 = **2sinθcosθ = sin 2θ**.
+
+## Type 4 — Height & Distance (angle of elevation / depression)
+
+**Method:** Draw the right triangle. Label the known angle (angle of elevation from ground, or depression from height). Use tan for opposite/adjacent.
+
+**Example.** A tower is observed at an angle of elevation of 60° from a point 20 m away (on the ground). Find the height of the tower.
+- tan 60° = height / 20 → height = 20 × √3 = **20√3 ≈ 34.64 m**.
+
+**Example.** From the top of a cliff 30 m high, the angle of depression of a boat is 30°. Find the horizontal distance of the boat from the cliff base.
+- angle of depression = angle from horizontal downward = 30°.
+- tan 30° = 30 / distance → distance = 30 / (1/√3) = 30√3 = **51.96 m**.
+
+***Watch out:*** "Angle of depression" is measured FROM the horizontal DOWNWARD. The angle inside the right triangle (from the horizontal to the line of sight) equals the angle of elevation seen from the boat.
+
+## Type 5 — Two observers / two angles
+
+**Setup:** Tower of height h. Points A and B on the ground on the same side, at distances d₁ and d₂. Angles of elevation α and β.
+
+**tan α = h/d₁ and tan β = h/d₂.** Eliminate h or d to find the unknown.
+
+**Example.** From A and B (100 m apart), angles of elevation of a tower are 60° and 30°. Find tower height.
+- tan 60° = h/d → d = h/√3. tan 30° = h/(d+100) → h/√3 + 100 = h√3 → 100 = h√3 − h/√3 = h(3−1)/√3 = 2h/√3 → h = **50√3 ≈ 86.6 m**.
 
 ---
 
@@ -2807,6 +3151,66 @@ Watch out: "−4 %" or "−10 %" — students forget the markup direction.
 
 ---
 
+**Q43.7 — Unit digit / last digit.** Find the unit digit of 7^93.
+
+**Why this matters:** SSC CGL, CHSL, RRB NTPC, and IBPS all ask "find the unit digit of x^n" as a standalone 1-mark question. The answer relies entirely on the cycle of the last digit.
+
+**Unit digit cycles (memorise this table):**
+
+| Last digit of base | Cycle of unit digits | Cycle length |
+|---|---|---|
+| 0 | 0 | 1 |
+| 1 | 1 | 1 |
+| 2 | 2, 4, 8, 6 | 4 |
+| 3 | 3, 9, 7, 1 | 4 |
+| 4 | 4, 6 | 2 |
+| 5 | 5 | 1 |
+| 6 | 6 | 1 |
+| 7 | 7, 9, 3, 1 | 4 |
+| 8 | 8, 4, 2, 6 | 4 |
+| 9 | 9, 1 | 2 |
+
+**Solving Q43.7.** 7 has cycle 7, 9, 3, 1 (length 4).
+- 93 ÷ 4 = 23 remainder **1**.
+- Position 1 in the cycle → unit digit = **7**.
+
+<div class="keypoint">
+
+**Rule:** Divide the power by the cycle length. Use the remainder to pick the position in the cycle. Remainder 0 means take the LAST element of the cycle.
+- 7^4 → remainder 0 → take last in cycle {7,9,3,1} = **1** ✓
+- 7^92 → 92 ÷ 4 = 23 r0 → **1**
+- 7^93 → 93 ÷ 4 = 23 r1 → **7** ✓
+
+</div>
+
+***Watch out:*** "7^93 — cycle of 4, so 93/4 = 23.25, unit digit is 3" — students confuse 23.25 with the 3rd position. Always use the INTEGER remainder (93 mod 4 = 1), not the decimal part.
+
+---
+
+**Q43.8 — Number of factors.** How many factors does 720 have?
+
+**Why this matters:** SSC CGL Tier-1 and Tier-2 ask this directly: "Find the number of divisors of N" or "How many numbers less than N divide N exactly?"
+
+**Solving it.**
+- Step 1 — prime factorisation: 720 = 72 × 10 = 8 × 9 × 10 = 2³ × 3² × 2 × 5 = **2⁴ × 3² × 5¹**
+- Step 2 — number of factors = (4+1) × (2+1) × (1+1) = 5 × 3 × 2 = **30**
+
+<div class="keypoint">
+
+**Formula:** If N = p₁^a × p₂^b × p₃^c × …, then number of factors = (a+1)(b+1)(c+1)…
+
+This works because each factor chooses 0 to a copies of p₁, 0 to b copies of p₂, etc.
+
+</div>
+
+**A similar question:** Number of even factors of 720. Even factors must include at least one 2. So keep 2^(1 to 4) → 4 choices for the power of 2 (not 5). Total even factors = 4 × 3 × 2 = **24**.
+
+**Another twist — number of odd factors.** Odd factors include no 2s → only 1 choice for 2's power (2^0). Total odd factors = 1 × 3 × 2 = **6** ✓ (6 + 24 = 30 total ✓).
+
+***Watch out:*** Students add 1 to the exponent of 2 for even-factor count. Wrong: even factors exclude 2^0, so the 2-power contributes 4 choices (2^1 to 2^4), not 5.
+
+---
+
 ## Section 12 — ALGEBRA + IDENTITIES (3 worked + variations)
 
 > **Notation expansion (used throughout this section):**
@@ -3598,6 +4002,14 @@ For nearby dates, count days forward/backward modulo 7.
 
 **Answer key:** 1-b, 2-a, 3-b, 4-a, 5-c, 6-a, 7-b (3:5), 8-a, 9-b, 10-b, 11-c, 12-a, 13-b, 14-a, 15-c, 16-b, 17-a, 18-c, 19-b, 20-d, 21-b, 22-a, 23-b, 24-b, 25-b.
 
+**Scoring:** 23–25 = Excellent | 18–22 = Good | Below 18 = revisit weak chapters before your mock series.
+
+<div class="examtip">
+
+**Error-log rule:** For every question you got wrong, write one sentence explaining what you missed. Retest yourself on only those questions 3 days later — without looking at the solution. This single habit doubles what the mock teaches you.
+
+</div>
+
 ---
 
 # PART F — TRAP-RECOGNITION CARDS
@@ -3934,3 +4346,68 @@ If digit sum is divisible by 9, the number is. Quotient by repeated subtraction.
 - (a + b + c) = 0 → a³ + b³ + c³ = 3abc.
 
 > Print this page and revise the morning before the exam. THIS is the 95%+ ammunition.
+
+---
+
+\newpage
+
+# PART K — 30-DAY SSC / RRB ARITHMETIC PLAN (1–1.5 hrs/day)
+
+> SSC (CGL, CHSL, MTS, GD) weights Percentage/Profit-Loss the heaviest, with significant Geometry and Mensuration. Follow this order — high-return topics first.
+
+| Days | Topics | Focus / key shortcut |
+|---|---|---|
+| 1–2 | Mental-math arsenal (PART 0) | Fraction↔% table, squares 1-30, cubes 1-15, tables 11-20 — memorise cold |
+| 3–5 | Percentage (PART 1) — all 15 types | Master reverse-% formula: *r / (100+r) × 100* |
+| 6–7 | Profit, Loss & Discount (PART 2) | False-weight + successive-discount chains |
+| 8–9 | Simple & Compound Interest (PART 3) | CI − SI formula + half-yearly variants |
+| 10–11 | Ratio, Proportion, Variation (PART 4) | Alligation shortcut handles any mixing problem |
+| 12–13 | Time, Work & Pipes (PART 5) | Unit-fraction method: 1 day's work = 1/n |
+| 14–15 | Speed, Distance & Time — Trains, Boats (PART 6) | Relative speed + harmonic mean for equal-distance trips |
+| 16–17 | Averages + Mixtures (PART 7) | Weighted average = sum of (value × weight) / sum of weights |
+| 18–19 | Number System: HCF, LCM, Divisibility, Remainders (PART 8) | Divisibility rules 2-13 and remainder theorems |
+| 20–21 | Algebra: identities, quadratic, surds, indices (PART 14) | (a+b+c)=0 → a³+b³+c³=3abc |
+| 22–24 | Geometry + Mensuration 2D (PART 11) | Triangle + circle + quadrilateral area/perimeter |
+| 25–26 | Mensuration 3D: Cylinder, Cone, Sphere | SA vs V pairs — hemisphere TSA = 3πr² |
+| 27 | Trigonometry + Heights & Distances | sin/cos/tan for 30°/45°/60° cold; elevation vs depression |
+| 28 | Partnership (PART 9) + Permutation, Probability (PART 14) | |
+| 29 | Timed Mini-Mock (PART E) + Trap Cards (PART F) | Target: 22+/25 in 25 min |
+| 30 | Return to weakest 2 topics; drill 10 questions per topic | Use the Practice Set (50 worked examples) |
+
+<div class="keypoint">
+
+**Spaced-review rule:** whatever you studied on Days 3-5, review once more on Day 15. Whatever you studied on Days 10-15, review on Day 25. Three exposures separated by a gap beats one long reading session.
+
+</div>
+
+---
+
+\newpage
+
+# PART L — 30-DAY BANKS ARITHMETIC PLAN (1–2 hrs/day)
+
+> Banks (IBPS PO/Clerk, SBI PO/Clerk, RBI) weight is completely different from SSC. Data Interpretation alone carries 15-20 questions in prelims. Quadratic Equations and Number Series are 5-question fixed blocks. Start with these — they give the fastest return.
+
+| Days | Topics | Banks weight |
+|---|---|---|
+| 1–3 | DI — Table format: read, compute, compare | 5–6 Qs in every pre paper |
+| 4–6 | DI — Bar chart + Line graph | 5–6 Qs |
+| 7–9 | DI — Pie chart + Mixed DI (two datasets combined) | 5–6 Qs in mains |
+| 10–11 | Number Series: missing term + wrong term | 5 Qs fixed in most pre papers |
+| 12–13 | Quadratic Equations: solve and compare Qty I vs Qty II | 5 Qs fixed in most pre papers |
+| 14–15 | Approximation: round numbers, estimate % | 5 Qs fixed in many pre papers |
+| 16–17 | Percentage + Profit-Loss + Discount | 3–4 Qs per paper |
+| 18–19 | SI/CI + Ratio + Partnership | 3–4 Qs |
+| 20–21 | Time-Work-Pipes + Speed-Distance-Time (incl. boats) | 3–5 Qs |
+| 22–23 | Average + Mixture-Alligation | 2–3 Qs |
+| 24–25 | Probability + Permutation-Combination | 1–2 Qs |
+| 26–27 | Advanced DI: caselet DI + arithmetic DI (Mains patterns) | Mains-level; 5-10 Qs in Mains |
+| 28 | Quantity comparison (Qty I vs II) — miscellaneous types | |
+| 29 | Timed Mini-Mock (PART E) + Trap Cards (PART F) | |
+| 30 | Return to weakest DI type + weakest arithmetic type | 2 hrs focused drill |
+
+<div class="keypoint">
+
+**If you only have 15 days:** combine each 2-day block into one longer session. Cut Days 24-25 (Probability) and skip Day 28. Do timed DI practice every day from Day 12 onward — DI is a skill that needs daily practice to build speed.
+
+</div>

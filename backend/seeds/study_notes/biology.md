@@ -898,3 +898,9 @@ Extinct (EX) → Extinct in Wild (EW) → Critically Endangered (CR) → Endange
 **Answer key:** 1-c | 2-b | 3-c | 4-c | 5-c | 6-b | 7-a | 8-c | 9-d | 10-c | 11-c | 12-d | 13-d | 14-b | 15-a | 16-b | 17-c | 18-c | 19-b | 20-c | 21-d | 22-b | 23-b | 24-b | 25-c
 
 **Scoring:** 23–25 = Excellent | 18–22 = Good | Below 18 = revise weak chapters before your mock series.
+
+<div class="examtip">
+
+**Error-log rule:** For every question you got wrong, write one sentence explaining what you missed. Retest yourself on only those questions 3 days later — without looking at the solution. This single habit doubles what the mock teaches you.
+
+</div>

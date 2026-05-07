@@ -1721,7 +1721,11 @@ Set a timer. No looking back. Mark your answers and check the key at the end.
 
 ---
 
-*Every wrong answer is a pointing arrow — go back to that chapter, read just that section, and come back tomorrow to answer it again.*
+<div class="examtip">
+
+**Error-log rule:** For every question you got wrong, write one sentence explaining what you missed. Retest yourself on only those questions 3 days later — without looking at the solution. Re-reading alone does not fix the gap; active recall does.
+
+</div>
 
 ---
 

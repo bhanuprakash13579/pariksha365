@@ -1629,6 +1629,12 @@ Set a timer. No looking back. Mark your answers and check the key at the end.
 
 **Score:** 23–25 = Excellent · 18–22 = Good · Below 18 = Re-read Part D (India: physical geography) and Part E (human/economic geography).
 
+<div class="examtip">
+
+**Error-log rule:** For every question you got wrong, write one sentence explaining what you missed. Retest yourself on only those questions 3 days later — without looking at the solution. This single habit doubles what the mock teaches you.
+
+</div>
+
 ---
 
 *Note for Q25: M.S. Swaminathan is the father of the Green Revolution in India; Norman Borlaug is the global father. Examiners ask both — do not confuse them.*

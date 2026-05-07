@@ -1403,6 +1403,12 @@ Set a timer. No looking back. Check the answer key at the end.
 
 **Score:** 23–25 = Excellent · 18–22 = Good · Below 18 = Re-read Parts A (Space), B (Defence), and T (Computer Awareness).
 
+<div class="examtip">
+
+**Error-log rule:** For every question you got wrong, write one sentence explaining what you missed. Retest yourself on only those questions 3 days later — without looking at the solution. Re-reading alone does not fix the gap; active recall does.
+
+</div>
+
 ---
 
 *Review the "What's New" section before every exam — ISRO and DRDO add new milestones regularly and Nobel laureates are announced each October.*

@@ -918,6 +918,31 @@ Negligible weight on: synonyms, antonyms, OWS, idiom-meaning (those are SSC heav
 - **Logical chain** — cause → effect → consequence; problem → response → outcome.
 - **Para-completion**: the missing sentence usually carries the **central claim** or the **transition** between two ideas. Reject options that introduce new topics.
 
+## 17.6 30-day Banks English plan (45–60 min/day)
+
+> Banks English (IBPS PO/Clerk, SBI PO/Clerk, RBI) is RC-and-cloze heavy. Vocabulary-heavy SSC question types (synonym, antonym, OWS) barely appear. Prioritise reading speed, inference, and phrase-sense.
+
+| Days | Focus | Why |
+|---|---|---|
+| 1–5 | RC method (17.2) + 5 long passages (350-500 words each) | 15–20 Qs per paper; this alone decides selection |
+| 6–8 | Cloze test: phrase-replacement + vocab-in-context (17.4) | 8–10 Qs per set |
+| 9–10 | Para-jumble + Para-completion (17.5) | 5–7 Qs |
+| 11–12 | Sentence rearrangement / odd-one-out sentence | 5–7 Qs |
+| 13–14 | Error spotting + Sentence improvement (Parts 9-10) | 5–8 Qs |
+| 15–16 | Fill in the blanks — double blank + phrase-matching | 5–8 Qs |
+| 17–20 | Vocabulary: phrasal verbs (17.3), idioms, collocations | Embedded in every RC, cloze, and error Q |
+| 21–23 | RC — advanced: inference Q + tone Q + primary-purpose Q | The 3 hardest Qs in each set |
+| 24–25 | New-pattern cloze (column matching, fill + rearrange) | Banks 2024-26 innovation |
+| 26–28 | 3 full Banks English sections under timed conditions | 30 Qs in 20 min (IBPS PO Pre pattern) |
+| 29 | Error analysis: list every Q you got wrong + why | Retest yourself on those Qs in 3 days |
+| 30 | Weakest-area drill + timed Mini-Mock (PART E) | |
+
+<div class="keypoint">
+
+**If you only have 15 days:** Days 1-5 → RC (2 passages/day). Days 6-10 → cloze + para-jumble. Days 11-13 → error spotting + fill-in-blanks. Days 14-15 → two timed practice sections. Skip advanced new-pattern cloze for now.
+
+</div>
+
 ---
 
 # PART 18 — SSC + RRB FOCUS DEEP DRILL
@@ -2387,6 +2412,14 @@ Replace the bold phrase with the best option:
 25. "He is junior __ me." (a) than (b) to (c) over (d) by
 
 **Answer key:** 1-a, 2-a, 3-b, 4-a, 5-a, 6-b, 7-b, 8-b, 9-a, 10-a, 11-b, 12-b, 13-b, 14-b, 15-(he was happy), 16-b, 17-b, 18-b, 19-c, 20-b, 21-b, 22-b, 23-c, 24-b, 25-b.
+
+**Scoring:** 23–25 = Excellent | 18–22 = Good | Below 18 = revisit weak grammar chapters before your mock series.
+
+<div class="examtip">
+
+**Error-log rule:** For every question you got wrong, write one sentence explaining what you missed. Retest yourself on only those questions 3 days later — without looking at the solution. This single habit doubles what the mock teaches you.
+
+</div>
 
 ---
 

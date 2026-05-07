@@ -2203,7 +2203,11 @@ Set a 25-minute timer. Do not look back at the book. Answer in your head or on p
 
 ---
 
-*Score yourself honestly. Every question you got wrong points to a specific section to revisit. Go back, re-read that one section, and redo just those questions tomorrow.*
+<div class="examtip">
+
+**Error-log rule:** For every question you got wrong, write one sentence explaining what you missed. Retest yourself on only those questions 3 days later — without looking at the solution. Re-reading alone does not fix the gap; active recall does.
+
+</div>
 
 ---
 

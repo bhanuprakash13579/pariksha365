@@ -2354,6 +2354,12 @@ This kind of multi-clue puzzle requires backtracking. Try B at col 2: A at col 3
 
 **Scoring:** 23–25 = Excellent | 18–22 = Good | Below 18 = revise weak topics before your mock series.
 
+<div class="examtip">
+
+**Error-log rule:** For every question you got wrong, write one sentence explaining what you missed. Retest yourself on only those questions 3 days later — without looking at the solution. This single habit doubles what the mock teaches you.
+
+</div>
+
 ---
 
 # PART F — TRAP-RECOGNITION CARDS

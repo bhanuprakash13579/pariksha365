@@ -1891,6 +1891,12 @@ Set a timer. No looking back. Check the answer key at the end.
 
 **Score:** 23–25 = Excellent · 18–22 = Good · Below 18 = Re-read sections on National Symbols, Awards, Classical Dances, and International Organisations.
 
+<div class="examtip">
+
+**Error-log rule:** For every question you got wrong, write one sentence explaining what you missed. Retest yourself on only those questions 3 days later — without looking at the solution. This single habit doubles what the mock teaches you.
+
+</div>
+
 ---
 
 *Note for Q22: Hockey is India's national game (although this is sometimes debated). Examiners consistently list hockey as the official answer.*
