@@ -177,6 +177,29 @@ flowchart TD
 | Cultural | Recreation, spiritual value, tourism, aesthetic |
 | Supporting | Nutrient cycling, soil formation, water purification |
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["BIODIVERSITY — LEVELS AND IMPORTANCE"]:::root
+    R --> LV["3 Levels of Biodiversity"]:::key
+    R --> VA["Value of Biodiversity"]:::key
+    R --> IN["India's Biodiversity Position"]:::key
+    LV --> LV1["Genetic diversity: variation in genes WITHIN a species<br>Allows adaptation + evolution<br>Example: different rice varieties (Basmati, IR8)"]:::key
+    LV --> LV2["Species diversity: count of different species in an area<br>Tropical regions: highest species richness<br>Measured by: Species richness + evenness"]:::key
+    LV --> LV3["Ecosystem diversity: variety of habitats + ecosystems<br>Forests, wetlands, grasslands, deserts, coral reefs<br>India has ALL major ecosystem types"]:::key
+    VA --> VA1["Direct values: food, timber, medicine, fibres, fuel<br>80% of global population uses plants for primary healthcare<br>25% of western medicines derived from tropical plants"]:::key
+    VA --> VA2["Indirect values (ecosystem services):<br>Pollination (USD 235 billion/year globally)<br>Water purification, climate regulation, soil formation"]:::key
+    VA --> VA3["Option value: future discoveries<br>Many compounds from biodiversity not yet discovered<br>Extinction = permanent loss of this option"]:::key
+    IN --> IN1["India: 17th megadiverse country globally<br>2.4% of Earth's area; contains 8.1% of global species<br>90,000 animal species; 47,000 plant species"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter B2 — Biodiversity Hotspots
 
 A biodiversity hotspot must meet two strict criteria: it must have **at least 1500 species of endemic vascular plants**, AND must have lost **at least 70% of its original primary vegetation**. Norman Myers proposed the concept in 1988. There are now **36 global hotspots**.
