@@ -1,156 +1,240 @@
 {
   "schema_version": 1,
-  "subject": "Quant",
-  "topic": "Profit-Loss advanced — mixed tiers",
+  "subject": "Quantitative Aptitude",
+  "topic": "Profit and Loss II — marked price, discount, successive discount, dishonest dealer",
   "topic_code": "QNT_PROFIT_LOSS_II_MIXED",
-  "description": "Marked price, discount, successive discount, equivalent %",
+  "description": "Profit & Loss advanced: marked price, discount %, successive discounts, false weight, profit on cost vs selling price, goods damaged in transit.",
   "questions": [
     {
-      "stem": "If CP = ₹100 and SP = ₹120, the PROFIT % is:",
+      "stem": "A shopkeeper marks an article 40% above cost price and offers a 20% discount. What is the profit percentage?",
       "options": [
-        {"option_text": "20%", "is_correct": true},
-        {"option_text": "25%", "is_correct": false},
-        {"option_text": "16.7%", "is_correct": false},
-        {"option_text": "30%", "is_correct": false}
+        {
+          "option_text": "12% profit",
+          "is_correct": true
+        },
+        {
+          "option_text": "20% profit — this ignores the discount effect on SP",
+          "is_correct": false
+        },
+        {
+          "option_text": "8% profit — incorrect calculation of successive effects",
+          "is_correct": false
+        },
+        {
+          "option_text": "No profit/loss — wrong; MP and discount are not equal offsets",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
-      "explanation": "Profit % = (Profit/CP) × 100 = (20/100) × 100 = 20%.",
-      "subject": "Quant",
-      "topic": "Profit-Loss advanced — mixed tiers",
+      "explanation": "SETUP: Let CP = 100. MP = 140 (40% above CP). After 20% discount: SP = 140 × 0.8 = 112. Profit = 112 − 100 = 12. Profit% = 12%. FORMULA SHORTCUT: Profit% = (1 + m/100)(1 − d/100) − 1 = 1.4 × 0.8 − 1 = 1.12 − 1 = 0.12 = 12%. TRAP: students add/subtract markup and discount directly (40 − 20 = 20% profit) — WRONG because they operate on different bases.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss II — marked price, discount, successive discount, dishonest dealer",
       "topic_code": "QNT_PROFIT_LOSS_II_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-qnt-pl2-01",
-      "generated_at": "2026-04-22T23:50:00+00:00",
-      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_00001"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_001"
     },
     {
-      "stem": "A shopkeeper gives a DISCOUNT of 20% on the marked price and still makes a profit of 25%. The marked price is what % ABOVE the cost price?",
+      "stem": "Two successive discounts of 30% and 20% are equivalent to a single discount of:",
       "options": [
-        {"option_text": "44%", "is_correct": false},
-        {"option_text": "56.25%", "is_correct": true},
-        {"option_text": "50%", "is_correct": false},
-        {"option_text": "62.5%", "is_correct": false}
+        {
+          "option_text": "44% single equivalent discount",
+          "is_correct": true
+        },
+        {
+          "option_text": "50% — this is simply adding 30+20, which overcounts",
+          "is_correct": false
+        },
+        {
+          "option_text": "42% — underestimates the compounding of successive discounts",
+          "is_correct": false
+        },
+        {
+          "option_text": "46% — overestimates the interaction between the two discounts",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Let CP = 100 → SP = 125 (25% profit). SP = MP × 0.80 (20% discount). So MP = 125 / 0.80 = 156.25. MP is 56.25% above CP.",
-      "subject": "Quant",
-      "topic": "Profit-Loss advanced — mixed tiers",
+      "correct_letter": "A",
+      "explanation": "FORMULA: Single equivalent discount = x + y − xy/100 = 30 + 20 − (30×20)/100 = 50 − 6 = 44%. VERIFICATION: MP = 100. After 30%: 70. After 20% on 70: 70 × 0.8 = 56. Single discount = 100 − 56 = 44%. RULE: successive discounts CANNOT be simply added because the second discount applies to a reduced price. PYQ ANGLE: 3-discount chains also possible; apply formula twice.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss II — marked price, discount, successive discount, dishonest dealer",
       "topic_code": "QNT_PROFIT_LOSS_II_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-qnt-pl2-02",
-      "generated_at": "2026-04-22T23:50:00+00:00",
-      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_00002"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_002"
     },
     {
-      "stem": "Two successive discounts of 10% and 20% are equivalent to a single discount of:",
+      "stem": "A dishonest dealer uses a 900 g weight while claiming to sell 1 kg. If he buys at ₹40/kg and sells at ₹40/kg (no markup), what is his actual profit percentage?",
       "options": [
-        {"option_text": "30%", "is_correct": false},
-        {"option_text": "28%", "is_correct": true},
-        {"option_text": "25%", "is_correct": false},
-        {"option_text": "32%", "is_correct": false}
+        {
+          "option_text": "11.11% profit — he gives less than claimed while receiving full payment",
+          "is_correct": true
+        },
+        {
+          "option_text": "10% profit — underestimates since 100g short out of 900g (not 1000g) basis",
+          "is_correct": false
+        },
+        {
+          "option_text": "No profit — same buy/sell price seems like break-even but ignores cheating",
+          "is_correct": false
+        },
+        {
+          "option_text": "9% profit — wrong denominator used in the profit fraction",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Successive-% formula: single% = a + b − ab/100 = 10 + 20 − (10·20)/100 = 30 − 2 = 28%. Verify: 100 → 90 → 72 → discount from 100 = 28%.",
-      "subject": "Quant",
-      "topic": "Profit-Loss advanced — mixed tiers",
+      "correct_letter": "A",
+      "explanation": "CHEATING PROFIT: He claims to sell 1000 g but actually gives 900 g. He collects ₹40 per 'kg'. COST: 900 g at ₹40/kg = ₹36. REVENUE: ₹40 (customer pays for 1000 g). PROFIT = 40 − 36 = ₹4. PROFIT% on cost = 4/36 × 100 = 11.11%. FORMULA: Profit% = (error / true weight − error) × 100 = (100/900) × 100 = 11.11%. ALTERNATIVE FORM: (claimed − actual) / actual × 100. PYQ: dishonest dealer problems are standard in IBPS PO/CGL quant; always compute profit on COST not on claimed weight.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss II — marked price, discount, successive discount, dishonest dealer",
       "topic_code": "QNT_PROFIT_LOSS_II_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-qnt-pl2-03",
-      "generated_at": "2026-04-22T23:50:00+00:00",
-      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_00003"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_003"
     },
     {
-      "stem": "By selling an article for ₹480, a man loses 20%. To GAIN 20%, he must sell it at:",
+      "stem": "A trader sells goods at a 25% profit on cost. What is the profit expressed as a percentage of the selling price?",
       "options": [
-        {"option_text": "₹600", "is_correct": false},
-        {"option_text": "₹720", "is_correct": true},
-        {"option_text": "₹800", "is_correct": false},
-        {"option_text": "₹576", "is_correct": false}
+        {
+          "option_text": "20% of selling price",
+          "is_correct": true
+        },
+        {
+          "option_text": "25% of selling price — same ratio applies only when CP=SP, which contradicts a profit",
+          "is_correct": false
+        },
+        {
+          "option_text": "33.33% of selling price — this is the ratio when profit = 1/3 of CP, not 1/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "16.67% of selling price — this corresponds to a ~20% profit on CP, not 25%",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "SP1 = 480 at 20% loss → CP = 480/0.80 = 600. To gain 20%: SP2 = 600 × 1.20 = 720.",
-      "subject": "Quant",
-      "topic": "Profit-Loss advanced — mixed tiers",
+      "correct_letter": "A",
+      "explanation": "CP = 100, SP = 125 (25% profit on CP). Profit as % of SP = (25/125) × 100 = 20%. CONVERSION FORMULA: If profit% on CP = x, then profit% on SP = x/(100+x) × 100. Here: 25/125 × 100 = 20%. REVERSE: profit% on SP = y → profit% on CP = y/(100−y) × 100. PYQ ANGLE: examiners frequently swap the base (CP vs SP); always check which base the question asks about.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss II — marked price, discount, successive discount, dishonest dealer",
       "topic_code": "QNT_PROFIT_LOSS_II_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-qnt-pl2-04",
-      "generated_at": "2026-04-22T23:50:00+00:00",
-      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_00004"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_004"
     },
     {
-      "stem": "If CP of 12 articles = SP of 10 articles, the GAIN % is:",
+      "stem": "A dealer buys 100 oranges for ₹120 and sells 80 oranges for ₹120 (the rest spoil). What is the overall profit or loss percentage?",
       "options": [
-        {"option_text": "10%", "is_correct": false},
-        {"option_text": "20%", "is_correct": true},
-        {"option_text": "16.67%", "is_correct": false},
-        {"option_text": "12%", "is_correct": false}
+        {
+          "option_text": "No profit/no loss — cost and revenue are both ₹120",
+          "is_correct": true
+        },
+        {
+          "option_text": "25% loss — mistakenly treats 20 spoilt as a cash loss",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% loss — incorrect calculation ignoring matching cost and revenue",
+          "is_correct": false
+        },
+        {
+          "option_text": "25% profit — reverses the comparison direction entirely",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Let CP of 1 article = ₹1 → CP of 12 = ₹12 = SP of 10. So SP of 1 = ₹1.2. Profit on 1 article = 0.2, profit % = 20%.",
-      "subject": "Quant",
-      "topic": "Profit-Loss advanced — mixed tiers",
+      "correct_letter": "A",
+      "explanation": "COST = ₹120 (for 100 oranges). REVENUE = ₹120 (selling 80 oranges). PROFIT/LOSS = 120 − 120 = 0. RESULT: exactly break-even (0% profit/loss). INSIGHT: The fact that 20 units spoilt is already accounted for in the lower revenue. The CP per sold unit is higher (₹120/80 = ₹1.50 vs ₹120/100 = ₹1.20 buy price) but total cash in = total cash out. TRAP: students try to compute per-unit profit when the question is about total cash flow.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss II — marked price, discount, successive discount, dishonest dealer",
       "topic_code": "QNT_PROFIT_LOSS_II_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-qnt-pl2-05",
-      "generated_at": "2026-04-22T23:50:00+00:00",
-      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_00005"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_005"
     },
     {
-      "stem": "By selling an article at 80% of its marked price, a merchant makes a loss of 12%. What is the profit % if he sells the article at the MARKED PRICE?",
+      "stem": "An article is sold at a 10% loss. Had it been sold for ₹90 more, there would have been a 20% profit. What is the cost price?",
       "options": [
-        {"option_text": "8%", "is_correct": false},
-        {"option_text": "10%", "is_correct": true},
-        {"option_text": "15%", "is_correct": false},
-        {"option_text": "20%", "is_correct": false}
+        {
+          "option_text": "₹300 — derived from the ₹90 gap spanning 30% of CP",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹450 — arithmetic error in computing the percentage gap",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹270 — confuses absolute difference with the loss amount only",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹360 — wrong base percentage used for the difference calculation",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "0.80 MP = CP × 0.88 (12% loss). So MP / CP = 0.88 / 0.80 = 1.10. Selling at MP gives 10% profit.",
-      "subject": "Quant",
-      "topic": "Profit-Loss advanced — mixed tiers",
+      "correct_letter": "A",
+      "explanation": "Let CP = x. SP at 10% loss = 0.9x. SP at 20% profit = 1.2x. Difference = 1.2x − 0.9x = 0.3x = ₹90. → x = 90/0.3 = ₹300. VERIFICATION: CP=300; Loss SP=270; Profit SP=360; 360−270=90 ✓. EXAM PATTERN: 'had it been sold for ₹Y more/less' questions always set up a linear equation on the CP — the difference in SPs equals the difference in profit/loss percentages × CP.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss II — marked price, discount, successive discount, dishonest dealer",
       "topic_code": "QNT_PROFIT_LOSS_II_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-qnt-pl2-06",
-      "generated_at": "2026-04-22T23:50:00+00:00",
-      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_00006"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_006"
     },
     {
-      "stem": "A man sells two articles for ₹600 each. On one he gains 20% and on the other loses 20%. His OVERALL profit/loss is:",
+      "stem": "A shopkeeper sells two articles each at ₹1,200. On one he gains 20% and on the other he loses 20%. What is the net result of the two transactions?",
       "options": [
-        {"option_text": "No gain / no loss", "is_correct": false},
-        {"option_text": "Loss of 4%", "is_correct": true},
-        {"option_text": "Gain of 4%", "is_correct": false},
-        {"option_text": "Loss of 10%", "is_correct": false}
+        {
+          "option_text": "Net loss of 4% — identical SP with equal % gain/loss always results in a loss equal to (x²/100)%",
+          "is_correct": true
+        },
+        {
+          "option_text": "No profit/no loss — the gains and losses appear symmetric but they are not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net gain of 4% — reverses the direction of the classic equal-% result (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net loss of 2% — underestimates the compounding of different CP bases (not this)",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Classic trap. Item 1 CP = 600/1.20 = 500. Item 2 CP = 600/0.80 = 750. Total CP = 1250. Total SP = 1200. Loss = 50 on CP 1250 = 4% loss. Shortcut: when SP is same and gain% = loss%, net = always a LOSS = (x/10)² = (20/10)² = 4%.",
-      "subject": "Quant",
-      "topic": "Profit-Loss advanced — mixed tiers",
+      "correct_letter": "A",
+      "explanation": "CLASSIC TRAP: When SAME SP, equal % gain and loss ALWAYS gives a net LOSS. FORMULA: Loss% = (x²/100)% where x = 20. Loss% = 400/100 = 4%. VERIFICATION: Gain article: SP=1200, profit=20% → CP₁=1200/1.2=1000. Loss article: SP=1200, loss=20% → CP₂=1200/0.8=1500. Total CP=2500, Total SP=2400. Loss=100. Loss%=100/2500×100=4% ✓. PYQ: this is one of the most frequently tested P&L traps across IBPS, SSC, and CAT; the asymmetry arises because the CPs are different even though SPs are equal.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss II — marked price, discount, successive discount, dishonest dealer",
       "topic_code": "QNT_PROFIT_LOSS_II_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-qnt-pl2-07",
-      "generated_at": "2026-04-22T23:50:00+00:00",
-      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_00007"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_PROFIT_LOSS_II_MIXED_007"
     }
   ]
 }

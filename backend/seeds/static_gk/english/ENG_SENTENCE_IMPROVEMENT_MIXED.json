@@ -1,156 +1,240 @@
 {
   "schema_version": 1,
   "subject": "English",
-  "topic": "Sentence improvement — mixed tiers",
+  "topic": "Sentence Improvement — substituting the underlined part with the best alternative",
   "topic_code": "ENG_SENTENCE_IMPROVEMENT_MIXED",
-  "description": "Identifying and correcting grammatical / idiomatic errors",
+  "description": "Sentence improvement: identify grammatically or stylistically incorrect underlined phrase, choose the best replacement — subject-verb agreement, tense consistency, idiom, word choice, redundancy.",
   "questions": [
     {
-      "stem": "Identify the best replacement for the underlined portion: 'Neither of the boys have completed their homework.'",
+      "stem": "He is one of those students who (works) hard every day. Choose the best improvement for the underlined word.",
       "options": [
-        {"option_text": "have completed", "is_correct": false},
-        {"option_text": "has completed", "is_correct": true},
-        {"option_text": "are completing", "is_correct": false},
-        {"option_text": "complete", "is_correct": false}
+        {
+          "option_text": "work — the antecedent of 'who' is 'students' (plural), so plural verb needed",
+          "is_correct": true
+        },
+        {
+          "option_text": "works — treats 'one' as the antecedent, a common but grammatically debated error",
+          "is_correct": false
+        },
+        {
+          "option_text": "has worked — unnecessary shift to present perfect without contextual support",
+          "is_correct": false
+        },
+        {
+          "option_text": "No improvement required — the original 'works' is incorrect here",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Neither / either / each / every — take SINGULAR verb. 'Neither of the boys has completed his homework.' The phrase 'of the boys' doesn't determine the verb; 'neither' does.",
+      "correct_letter": "A",
+      "explanation": "RULE: 'one of those + noun + who' — the relative clause 'who' refers to the PLURAL noun ('students'), not 'one'. Therefore the verb after 'who' must be PLURAL: 'work'. CORRECT: 'He is one of those students who WORK hard.' CONTRAST: 'He is the only one of those students who WORKS hard' — here 'the only one' makes the antecedent singular. This is a classic grammar trap in IBPS, SSC, and banking English sections.",
       "subject": "English",
-      "topic": "Sentence improvement — mixed tiers",
+      "topic": "Sentence Improvement — substituting the underlined part with the best alternative",
       "topic_code": "ENG_SENTENCE_IMPROVEMENT_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eng-si-01",
-      "generated_at": "2026-04-23T00:40:00+00:00",
-      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_00001"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_001"
     },
     {
-      "stem": "Correct the sentence: 'He is married with a doctor.'",
+      "stem": "The committee (have decided) to postpone the meeting. Choose the best improvement for the underlined phrase.",
       "options": [
-        {"option_text": "married with a doctor", "is_correct": false},
-        {"option_text": "married to a doctor", "is_correct": true},
-        {"option_text": "married for a doctor", "is_correct": false},
-        {"option_text": "married by a doctor", "is_correct": false}
+        {
+          "option_text": "has decided — collective nouns acting as a unit take singular verb in formal/Indian English",
+          "is_correct": true
+        },
+        {
+          "option_text": "have decided — this is acceptable in British English but marked wrong in Indian exam context",
+          "is_correct": false
+        },
+        {
+          "option_text": "had been deciding — unnecessary past perfect progressive for a simple decision",
+          "is_correct": false
+        },
+        {
+          "option_text": "No improvement needed — exams expect singular verb for collective noun in Indian English",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Formal usage: 'married TO' (someone). 'Married WITH' — means 'accompanied by' (children, etc.). 'Married BY' — refers to the officiant. Standard collocation: 'She is married to a doctor.'",
+      "correct_letter": "A",
+      "explanation": "RULE (Indian exam standard): collective nouns (committee, jury, team, class, family) acting as a SINGLE UNIT take a SINGULAR verb. 'The committee HAS decided' is the expected answer in IBPS PO, SSC, and state PSC exams. BRITISH ENGLISH NOTE: 'The committee have decided' is acceptable in BrE when members act individually, but Indian competitive exams consistently apply the singular rule. EXAM PATTERN: committee, jury, government, parliament, staff, crew — all singular in Indian English exam answers.",
       "subject": "English",
-      "topic": "Sentence improvement — mixed tiers",
+      "topic": "Sentence Improvement — substituting the underlined part with the best alternative",
       "topic_code": "ENG_SENTENCE_IMPROVEMENT_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eng-si-02",
-      "generated_at": "2026-04-23T00:40:00+00:00",
-      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_00002"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_002"
     },
     {
-      "stem": "Pick the improvement: 'The teacher asked me to did my homework.'",
+      "stem": "She told me that she (will finish) the report by Friday. Choose the best improvement.",
       "options": [
-        {"option_text": "to did my homework", "is_correct": false},
-        {"option_text": "to do my homework", "is_correct": true},
-        {"option_text": "doing my homework", "is_correct": false},
-        {"option_text": "do my homework", "is_correct": false}
+        {
+          "option_text": "would finish — reported speech shifts 'will' to 'would' (sequence of tenses)",
+          "is_correct": true
+        },
+        {
+          "option_text": "will finish — correct in direct speech but wrong after past reporting verb 'told'",
+          "is_correct": false
+        },
+        {
+          "option_text": "had finished — past perfect implies completion before another past event; not appropriate here",
+          "is_correct": false
+        },
+        {
+          "option_text": "should finish — 'should' introduces obligation/recommendation, changing the meaning entirely",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Infinitive after 'asked me' → 'to + V_base'. 'To do' (not 'to did'). 'The teacher asked me to do my homework.'",
+      "correct_letter": "A",
+      "explanation": "SEQUENCE OF TENSES: when the reporting verb is past ('told'), the reported clause must also shift to a past form. 'will' → 'would'. CORRECT: 'She told me that she WOULD FINISH the report by Friday.' FULL SHIFT TABLE: am/is→was; are→were; has/have→had; will→would; can→could; may→might; shall→should. EXCEPTION: universal truths and reported questions keep present tense ('He said that the Earth is round'). PYQ: sequence-of-tenses in indirect speech is heavily tested in IBPS PO/Clerk English.",
       "subject": "English",
-      "topic": "Sentence improvement — mixed tiers",
+      "topic": "Sentence Improvement — substituting the underlined part with the best alternative",
       "topic_code": "ENG_SENTENCE_IMPROVEMENT_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eng-si-03",
-      "generated_at": "2026-04-23T00:40:00+00:00",
-      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_00003"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_003"
     },
     {
-      "stem": "Improve: 'He runs very fastly.'",
+      "stem": "Neither the manager nor the employees (was) aware of the new policy. Choose the best improvement.",
       "options": [
-        {"option_text": "very fastly", "is_correct": false},
-        {"option_text": "very fast", "is_correct": true},
-        {"option_text": "very faster", "is_correct": false},
-        {"option_text": "much fastly", "is_correct": false}
+        {
+          "option_text": "were — with neither…nor, verb agrees with the nearer subject ('employees', plural)",
+          "is_correct": true
+        },
+        {
+          "option_text": "was — applies singular agreement to 'manager' (the farther subject) by mistake",
+          "is_correct": false
+        },
+        {
+          "option_text": "are — wrong tense; past context requires past verb form here (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "have been — present perfect is incompatible with the past-tense context of the sentence",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "'Fast' is both an adjective and an adverb — no '-ly' form. 'Fastly' is NOT a standard English word. Similar: 'hard' (adjective/adverb both), 'daily', 'early'.",
+      "correct_letter": "A",
+      "explanation": "NEITHER…NOR RULE: verb agrees with the subject CLOSEST (nearer) to the verb. Here: 'the manager' (singular) OR 'the employees' (plural) — 'employees' is nearer → WERE. CORRECT: 'Neither the manager nor the employees WERE aware.' EITHER…OR works the same way. MEMORY TRICK: 'ProxiMate rule' — agree with the proximate (nearest) subject. IBPS/SSC PATTERN: this is one of the top-tested neither/nor/either/or agreement rules.",
       "subject": "English",
-      "topic": "Sentence improvement — mixed tiers",
+      "topic": "Sentence Improvement — substituting the underlined part with the best alternative",
       "topic_code": "ENG_SENTENCE_IMPROVEMENT_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eng-si-04",
-      "generated_at": "2026-04-23T00:40:00+00:00",
-      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_00004"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_004"
     },
     {
-      "stem": "Improve: 'One of my friend is going abroad.'",
+      "stem": "The news (are) shocking to all of us. Choose the best improvement.",
       "options": [
-        {"option_text": "One of my friend", "is_correct": false},
-        {"option_text": "One of my friends", "is_correct": true},
-        {"option_text": "One of my friends are", "is_correct": false},
-        {"option_text": "One of my friend are", "is_correct": false}
+        {
+          "option_text": "is — 'news' is a singular uncountable noun in English despite ending in -s",
+          "is_correct": true
+        },
+        {
+          "option_text": "are — treats 'news' as plural due to the -s ending, which is incorrect",
+          "is_correct": false
+        },
+        {
+          "option_text": "were — past tense inappropriate when no past context is established in the sentence",
+          "is_correct": false
+        },
+        {
+          "option_text": "have been — present perfect progressive does not fit a state expressed by an adjective",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "'One of (the/my) + PLURAL noun' — 'one of my friends' (friends plural, but verb agrees with 'one' — singular). 'One of my friends IS going...' The noun after 'of' must be plural.",
+      "correct_letter": "A",
+      "explanation": "SINGULAR UNCOUNTABLE NOUNS ENDING IN -S: news, mathematics, physics, economics, athletics, billiards, measles, mumps — all take SINGULAR verbs. 'The news IS shocking.' Other examples: 'Mathematics IS difficult.' 'Physics IS my favourite subject.' PLURAL EXCEPTION: 'The goods ARE ready' (goods = countable plural). EXAM SHORTCUT: if the -s noun refers to a subject of study or a concept treated as a single entity, it's singular.",
       "subject": "English",
-      "topic": "Sentence improvement — mixed tiers",
+      "topic": "Sentence Improvement — substituting the underlined part with the best alternative",
       "topic_code": "ENG_SENTENCE_IMPROVEMENT_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eng-si-05",
-      "generated_at": "2026-04-23T00:40:00+00:00",
-      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_00005"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_005"
     },
     {
-      "stem": "Choose the correct form: 'Between you and ____ , I don't trust him.'",
+      "stem": "He is used to (work) late in the office. Choose the best improvement for the underlined word.",
       "options": [
-        {"option_text": "I", "is_correct": false},
-        {"option_text": "me", "is_correct": true},
-        {"option_text": "myself", "is_correct": false},
-        {"option_text": "mine", "is_correct": false}
+        {
+          "option_text": "working — 'used to + VERB-ing' means accustomed to; -ing form required after preposition 'to'",
+          "is_correct": true
+        },
+        {
+          "option_text": "work — confuses 'used to work' (past habit) with 'be used to working' (accustomed to)",
+          "is_correct": false
+        },
+        {
+          "option_text": "have worked — present perfect after 'to' is ungrammatical in this structure",
+          "is_correct": false
+        },
+        {
+          "option_text": "No improvement needed — 'work' after 'used to' is the past-habit form, not this structure",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "After a preposition ('between'), use the OBJECT pronoun. 'Between you and me' (not 'between you and I' — a common hyper-correct error). 'Myself' is reflexive/emphatic, needs a matching subject.",
+      "correct_letter": "A",
+      "explanation": "TWO DIFFERENT STRUCTURES: (1) USED TO + bare infinitive = past habit that no longer happens. 'He used to WORK late' (he no longer does). (2) BE/GET USED TO + V-ing = accustomed to (can be present or past). 'He IS USED TO WORKING late' (he is accustomed to it now). The sentence says 'He is used to...' so structure (2) applies → gerund 'working'. EXAM TRAP: this distinction between the two 'used to' structures is tested in nearly every IBPS PO/Clerk English paper.",
       "subject": "English",
-      "topic": "Sentence improvement — mixed tiers",
+      "topic": "Sentence Improvement — substituting the underlined part with the best alternative",
       "topic_code": "ENG_SENTENCE_IMPROVEMENT_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eng-si-06",
-      "generated_at": "2026-04-23T00:40:00+00:00",
-      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_00006"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_006"
     },
     {
-      "stem": "Improve: 'Each of the students were given a prize.'",
+      "stem": "The teacher, as well as her students, (are) attending the seminar. Choose the best improvement.",
       "options": [
-        {"option_text": "were given", "is_correct": false},
-        {"option_text": "was given", "is_correct": true},
-        {"option_text": "is given", "is_correct": false},
-        {"option_text": "are given", "is_correct": false}
+        {
+          "option_text": "is — 'as well as' is a parenthetical addition; the main subject 'the teacher' (singular) governs the verb",
+          "is_correct": true
+        },
+        {
+          "option_text": "are — treats 'the teacher + students' as a compound subject joined by 'and', which is incorrect",
+          "is_correct": false
+        },
+        {
+          "option_text": "were — tense change unjustified without past-time context in the sentence (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "have been — aspect change inappropriate for a simple ongoing state or action (not this)",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "'Each' → SINGULAR verb. 'Each of the students WAS given a prize.' Similarly: every/everyone/everybody/anyone/nobody/no one — all singular.",
+      "correct_letter": "A",
+      "explanation": "PARENTHETICAL ADDITION RULE: phrases like 'as well as', 'along with', 'together with', 'in addition to', 'besides', 'accompanied by' — when inserted between subject and verb — do NOT change the number of the verb. VERB AGREES with the MAIN (grammatical) subject alone. 'The teacher' = singular → IS. CONTRAST: 'The teacher AND her students are attending' — here 'and' creates a compound subject → plural verb. PYQ: 'as well as' agreement appears in virtually every IBPS PO/Clerk session-1 or session-2 English paper.",
       "subject": "English",
-      "topic": "Sentence improvement — mixed tiers",
+      "topic": "Sentence Improvement — substituting the underlined part with the best alternative",
       "topic_code": "ENG_SENTENCE_IMPROVEMENT_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eng-si-07",
-      "generated_at": "2026-04-23T00:40:00+00:00",
-      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_00007"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_ENG_SENTENCE_IMPROVEMENT_MIXED_007"
     }
   ]
 }

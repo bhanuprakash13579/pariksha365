@@ -1,156 +1,240 @@
 {
   "schema_version": 1,
   "subject": "Physics",
-  "topic": "Waves and sound — mixed tiers",
+  "topic": "Waves and Sound — longitudinal waves, resonance, Doppler effect, intensity, decibels",
   "topic_code": "PHY_WAVES_SOUND_MIXED",
-  "description": "Wave types, frequency, wavelength, speed of sound, Doppler, ultrasonic",
+  "description": "Waves and Sound: transverse vs longitudinal, speed of sound in media, resonance/standing waves, Doppler effect formula, intensity level (dB), ultrasound applications, musical note frequency.",
   "questions": [
     {
-      "stem": "Sound waves are best classified as:",
+      "stem": "Sound waves are classified as longitudinal waves because:",
       "options": [
-        {"option_text": "Transverse waves like the visible light waves", "is_correct": false},
-        {"option_text": "Longitudinal waves needing a material medium", "is_correct": true},
-        {"option_text": "Electromagnetic waves travelling through vacuum", "is_correct": false},
-        {"option_text": "Standing waves only inside organ pipes only", "is_correct": false}
+        {
+          "option_text": "The particles of the medium vibrate parallel to the direction of wave propagation",
+          "is_correct": true
+        },
+        {
+          "option_text": "The particles vibrate perpendicular to the direction of propagation — that is a transverse wave",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sound can travel through vacuum by oscillating its own field lines instead",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sound waves carry energy without displacing any medium particles at all",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Sound = LONGITUDINAL mechanical wave. Particles oscillate parallel to wave direction (compression-rarefaction pattern). Needs a MEDIUM (gas/liquid/solid) — cannot travel in vacuum. Light = TRANSVERSE electromagnetic wave (no medium needed). Distractor 1 confuses sound with light. Distractor 3 — sound is mechanical, not EM. Distractor 4 — standing waves are a special case, not the general nature.",
+      "correct_letter": "A",
+      "explanation": "LONGITUDINAL WAVE: particle displacement is PARALLEL to wave propagation direction. Creates compressions (high pressure) and rarefactions (low pressure). SOUND: a mechanical, longitudinal wave — requires a medium (solid, liquid, gas). TRANSVERSE WAVE: particle displacement is PERPENDICULAR. Examples: light (EM), water surface waves, waves on a string. SOUND IN MEDIA SPEED: solid > liquid > gas (molecules closer → faster). Speed of sound in air at 0°C ≈ 331 m/s; at 20°C ≈ 343 m/s. KEY: Sound CANNOT travel in vacuum (no medium); light CAN (EM wave, no medium needed). PYQ FREQUENCY: longitudinal vs transverse in SSC CGL, IBPS PO physics — standard 1-mark question.",
       "subject": "Physics",
-      "topic": "Waves and sound — mixed tiers",
+      "topic": "Waves and Sound — longitudinal waves, resonance, Doppler effect, intensity, decibels",
       "topic_code": "PHY_WAVES_SOUND_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-phy-ws-01",
-      "generated_at": "2026-04-26T18:35:00+00:00",
-      "id": "sgk_PHY_WAVES_SOUND_MIXED_00001"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_WAVES_SOUND_MIXED_001"
     },
     {
-      "stem": "The SPEED OF SOUND in dry air at 20 °C is approximately:",
+      "stem": "The Doppler effect states that when a sound source moves toward a stationary observer, the observed frequency:",
       "options": [
-        {"option_text": "300,000 km/s, the speed of light", "is_correct": false},
-        {"option_text": "343 m/s, slightly above 1200 km/h", "is_correct": true},
-        {"option_text": "1,500 m/s, the typical speed in water", "is_correct": false},
-        {"option_text": "5,000 m/s, the typical speed in steel", "is_correct": false}
+        {
+          "option_text": "Increases — the wavefronts are compressed, raising the perceived frequency (pitch)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Decreases — this is what happens when the source moves AWAY from the observer",
+          "is_correct": false
+        },
+        {
+          "option_text": "Remains unchanged — the frequency only changes if the observer moves, not the source",
+          "is_correct": false
+        },
+        {
+          "option_text": "Becomes zero — the Doppler effect never reduces frequency to zero for subsonic sources",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Sound speed in air: ~343 m/s at 20°C (≈1235 km/h). Increases ~0.6 m/s per °C rise. Faster in DENSER MEDIA — water ~1480 m/s; steel ~5000 m/s; diamond ~12000 m/s. Distractor 1 = speed of LIGHT (≈3 × 10⁸ m/s, vastly faster). Distractor 3 = water. Distractor 4 = steel. The 5-second rule for distance to lightning: 5 sec lag → ~1 km away.",
+      "correct_letter": "A",
+      "explanation": "DOPPLER EFFECT: apparent change in frequency due to relative motion of source and observer. SOURCE MOVES TOWARD OBSERVER: wavefronts pile up → shorter wavelength → higher frequency (higher pitch). SOURCE MOVES AWAY: wavefronts spread out → longer wavelength → lower frequency (lower pitch). FORMULA: f_obs = f_s × (v ± v_obs)/(v ∓ v_s). CLASSIC EXAMPLE: train horn pitch rises as it approaches, drops as it passes (the 'whoosh' effect). APPLICATIONS: (1) RADAR speed guns (police). (2) SONAR (submarines). (3) Echocardiogram (blood flow). (4) Astronomical redshift/blueshift (galaxies moving away/toward us). PYQ FREQUENCY: Doppler effect concept in UPSC, SSC CGL, IBPS PO — 1-2× per cycle.",
       "subject": "Physics",
-      "topic": "Waves and sound — mixed tiers",
+      "topic": "Waves and Sound — longitudinal waves, resonance, Doppler effect, intensity, decibels",
       "topic_code": "PHY_WAVES_SOUND_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-phy-ws-02",
-      "generated_at": "2026-04-26T18:35:00+00:00",
-      "id": "sgk_PHY_WAVES_SOUND_MIXED_00002"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_WAVES_SOUND_MIXED_002"
     },
     {
-      "stem": "The audible range of HUMAN HEARING is approximately:",
+      "stem": "The intensity level of a sound increases from 40 dB to 70 dB. By what factor does the actual intensity (in W/m²) increase?",
       "options": [
-        {"option_text": "1 Hz to 100 Hz frequency range", "is_correct": false},
-        {"option_text": "20 Hz to 20,000 Hz frequency range", "is_correct": true},
-        {"option_text": "100 kHz to 1 MHz frequency range", "is_correct": false},
-        {"option_text": "1 MHz to 100 MHz frequency range", "is_correct": false}
+        {
+          "option_text": "1000 times — every 10 dB corresponds to a factor of 10 in intensity; 30 dB = 10³",
+          "is_correct": true
+        },
+        {
+          "option_text": "30 times — incorrectly treats dB as a linear scale instead of logarithmic",
+          "is_correct": false
+        },
+        {
+          "option_text": "100 times — corresponds to only a 20 dB increase, not 30 dB (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 times — only a single 10 dB step; total increase here is 30 dB = three steps",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Human audible range: ~20 Hz (low rumble) to ~20,000 Hz (high pitch). Decreases with age — older adults often can't hear above 12-15 kHz. INFRASOUND < 20 Hz (elephants, whales communicate; earthquakes). ULTRASOUND > 20 kHz (bats, dolphins use; medical imaging, sonar). Dogs hear up to ~45 kHz; cats ~64 kHz; bats up to 200 kHz.",
+      "correct_letter": "A",
+      "explanation": "DECIBEL (dB): logarithmic scale. β = 10 log₁₀(I/I₀). Every 10 dB increase = 10× intensity. CHANGE: 70 − 40 = 30 dB. Number of 10-dB steps = 3. Intensity multiplier = 10³ = 1000. REFERENCE LEVEL: I₀ = 10⁻¹² W/m² (threshold of hearing). EXAMPLES: 0 dB = threshold of hearing; 30 dB = whisper; 60 dB = conversation; 90 dB = lawnmower; 120 dB = pain threshold. SOUND PERCEPTION: human ear perceives a 10 dB increase as approximately 2× LOUDER (not 10×) — loudness perception is also logarithmic but different from intensity. PYQ: dB calculation in SSC CGL/UPSC Prelims physics — 1× per 2 cycles.",
       "subject": "Physics",
-      "topic": "Waves and sound — mixed tiers",
+      "topic": "Waves and Sound — longitudinal waves, resonance, Doppler effect, intensity, decibels",
       "topic_code": "PHY_WAVES_SOUND_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-phy-ws-03",
-      "generated_at": "2026-04-26T18:35:00+00:00",
-      "id": "sgk_PHY_WAVES_SOUND_MIXED_00003"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_WAVES_SOUND_MIXED_003"
     },
     {
-      "stem": "The DOPPLER EFFECT is the change in observed frequency of a wave when:",
+      "stem": "A closed organ pipe of length L resonates at its fundamental frequency. An open organ pipe also resonates at the same fundamental frequency. What is the length of the open pipe?",
       "options": [
-        {"option_text": "The wave passes through different media", "is_correct": false},
-        {"option_text": "Source and observer move relative to each other", "is_correct": true},
-        {"option_text": "Two waves of similar frequency combine", "is_correct": false},
-        {"option_text": "A wave reflects off a hard surface", "is_correct": false}
+        {
+          "option_text": "2L — open pipe fundamental = v/2L; closed pipe fundamental = v/4L; equating gives open L = 2×closed L",
+          "is_correct": true
+        },
+        {
+          "option_text": "L — same length only works if both pipe types had the same boundary conditions",
+          "is_correct": false
+        },
+        {
+          "option_text": "L/2 — this is the closed pipe being half the open pipe, which inverts the relationship",
+          "is_correct": false
+        },
+        {
+          "option_text": "4L — this over-doubles the required length for matching the fundamental (not this)",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Doppler Effect (Christian Doppler, 1842) — apparent change in frequency due to RELATIVE MOTION between source + observer. Approaching → higher pitch (compressed waves). Receding → lower pitch (stretched waves). Examples: ambulance siren rises as it approaches, drops as it passes. Police RADAR guns. Astronomers' RED-SHIFT (galaxies receding) → expanding universe (Hubble). Doppler ULTRASOUND for blood-flow imaging. Distractor 1 = REFRACTION. Distractor 3 = INTERFERENCE / BEATS. Distractor 4 = ECHO.",
+      "correct_letter": "A",
+      "explanation": "OPEN PIPE: antinodes at both ends. Fundamental f = v/(2L). CLOSED PIPE: node at closed end, antinode at open end. Fundamental f = v/(4L). EQUATE: v/(4L_closed) = v/(2L_open) → L_open = 2 × L_closed = 2L. OVERTONES: open pipe produces all harmonics (n=1,2,3,...); closed pipe produces only ODD harmonics (n=1,3,5,...). MUSICAL APPLICATION: the fact that open pipes produce a richer tone (more harmonics) explains why open flutes sound fuller than stopped (closed) ones. PYQ: open vs closed pipe length comparison in IBPS PO physics section.",
       "subject": "Physics",
-      "topic": "Waves and sound — mixed tiers",
+      "topic": "Waves and Sound — longitudinal waves, resonance, Doppler effect, intensity, decibels",
       "topic_code": "PHY_WAVES_SOUND_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-phy-ws-04",
-      "generated_at": "2026-04-26T18:35:00+00:00",
-      "id": "sgk_PHY_WAVES_SOUND_MIXED_00004"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_WAVES_SOUND_MIXED_004"
     },
     {
-      "stem": "Sound CANNOT travel through:",
+      "stem": "Ultrasound frequencies are defined as those above the human audible range. What is the approximate upper limit of human hearing, and in which medical application is ultrasound most widely used?",
       "options": [
-        {"option_text": "Water and other dense liquids", "is_correct": false},
-        {"option_text": "Vacuum (no medium for it)", "is_correct": true},
-        {"option_text": "Air at low temperature near zero", "is_correct": false},
-        {"option_text": "Solids like steel or wood", "is_correct": false}
+        {
+          "option_text": "20,000 Hz (20 kHz); sonography (imaging internal organs, monitoring foetal development)",
+          "is_correct": true
+        },
+        {
+          "option_text": "2,000 Hz; X-ray imaging — X-rays are electromagnetic, not sound waves",
+          "is_correct": false
+        },
+        {
+          "option_text": "200,000 Hz; MRI scanning — MRI uses magnetic fields and radio waves, not sound",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 Hz; ECG monitoring — ECG records electrical heart activity, not acoustic waves",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Sound NEEDS a material medium (solid/liquid/gas). VACUUM has no particles → no compression-rarefaction → no sound transmission. 'In space, no one can hear you scream.' Famous demo: ringing bell in a glass jar; as air is pumped out, sound fades. Distractor 1 — sound DOES travel through water (4× faster than air). Distractor 3 — even cold air conducts sound. Distractor 4 — sound travels FASTEST in solids. Light, in contrast, travels best in vacuum.",
+      "correct_letter": "A",
+      "explanation": "AUDIBLE RANGE: 20 Hz to 20,000 Hz (20 kHz) for humans. INFRASOUND: below 20 Hz (elephants, earthquakes). ULTRASOUND: above 20 kHz. MEDICAL APPLICATIONS: (1) SONOGRAPHY/ULTRASONOGRAPHY: 1–20 MHz; images soft tissues, organs, foetus. (2) ECHOCARDIOGRAPHY: heart imaging. (3) Lithotripsy: breaking kidney stones. (4) Phacoemulsification: cataract surgery. INDUSTRIAL USE: ultrasonic cleaning, flaw detection in metals (NDT). BATS/DOLPHINS: 20–200 kHz echolocation. PYQ FREQUENCY: ultrasound frequency range + medical use in SSC CGL, IBPS PO, UPSC — 1-2× per cycle.",
       "subject": "Physics",
-      "topic": "Waves and sound — mixed tiers",
+      "topic": "Waves and Sound — longitudinal waves, resonance, Doppler effect, intensity, decibels",
       "topic_code": "PHY_WAVES_SOUND_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-phy-ws-05",
-      "generated_at": "2026-04-26T18:35:00+00:00",
-      "id": "sgk_PHY_WAVES_SOUND_MIXED_00005"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_WAVES_SOUND_MIXED_005"
     },
     {
-      "stem": "ULTRASOUND in medical imaging uses sound waves of frequency typically:",
+      "stem": "Beats are heard when two tuning forks vibrate simultaneously. The number of beats per second equals:",
       "options": [
-        {"option_text": "20 to 20,000 Hz, the audible range only", "is_correct": false},
-        {"option_text": "1 to 20 MHz, well above the audible limit", "is_correct": true},
-        {"option_text": "Below 20 Hz, in the infrasound range", "is_correct": false},
-        {"option_text": "Same as the radio waves used in FM band", "is_correct": false}
+        {
+          "option_text": "The difference between their frequencies — beats = |f₁ − f₂|",
+          "is_correct": true
+        },
+        {
+          "option_text": "The sum of their frequencies — the sum gives the carrier frequency, not the beat frequency",
+          "is_correct": false
+        },
+        {
+          "option_text": "The average of their two frequencies — the average is the mean pitch heard, not the beat rate",
+          "is_correct": false
+        },
+        {
+          "option_text": "The product divided by the sum — that formula applies to resistors in parallel, not to beats",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Medical ultrasound: typically 2-15 MHz (general); 1-3 MHz for deeper imaging; 7-15 MHz for superficial. ULTRASOUND = sound above 20 kHz. Used for: fetal ultrasound, abdominal scans, echocardiography, kidney/gallbladder stones, FAST scans (trauma). Non-ionising, safe (unlike X-rays/CT). Doppler ultrasound shows blood flow. Industrial uses: cleaning, welding, distance sensors. Bats + dolphins navigate using ultrasonic echolocation. Distractor 4 — radio waves are EM, different physical phenomenon.",
+      "correct_letter": "A",
+      "explanation": "BEATS: when two sound waves of slightly different frequencies f₁ and f₂ interfere, they alternately reinforce and cancel. BEAT FREQUENCY = |f₁ − f₂|. AUDIBLE BEATS: perceptible when |f₁ − f₂| ≤ ~10 Hz (above that, we hear two distinct tones). APPLICATION: musicians use beats to tune instruments — when beats disappear (frequency = 0), strings are in unison. PHYSICS LINK: beats are a form of amplitude modulation. PYQ: fork tuning/beat frequency calculation in IBPS PO quantitative/physics hybrid — 1× per 2 years.",
       "subject": "Physics",
-      "topic": "Waves and sound — mixed tiers",
+      "topic": "Waves and Sound — longitudinal waves, resonance, Doppler effect, intensity, decibels",
       "topic_code": "PHY_WAVES_SOUND_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-phy-ws-06",
-      "generated_at": "2026-04-26T18:35:00+00:00",
-      "id": "sgk_PHY_WAVES_SOUND_MIXED_00006"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_WAVES_SOUND_MIXED_006"
     },
     {
-      "stem": "If the WAVELENGTH of a sound wave is 0.5 m and its FREQUENCY is 686 Hz, the speed of sound in that medium is:",
+      "stem": "A bat emits a sound pulse at 50,000 Hz and the echo returns at 51,000 Hz. What does this tell us about the insect being hunted?",
       "options": [
-        {"option_text": "1372 m/s, twice the actual speed", "is_correct": false},
-        {"option_text": "343 m/s, matching speed in air at 20°C", "is_correct": true},
-        {"option_text": "171.5 m/s, half of the actual speed", "is_correct": false},
-        {"option_text": "686 m/s, equal to its frequency only", "is_correct": false}
+        {
+          "option_text": "The insect is moving toward the bat — returning echo at higher frequency indicates approach (Doppler blueshift)",
+          "is_correct": true
+        },
+        {
+          "option_text": "The insect is stationary — a stationary reflector would return exactly the same 50,000 Hz",
+          "is_correct": false
+        },
+        {
+          "option_text": "The insect is moving away — that would return a lower frequency (Doppler redshift) (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The echo indicates the insect has hard wings — wing hardness affects amplitude, not frequency",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Wave speed: v = f × λ = 686 × 0.5 = 343 m/s — matches the speed of sound in dry air at 20°C. Universal wave equation. Distractor 1 = frequency × 2 × wavelength. Distractor 3 = halved (used 0.25 m). Distractor 4 = frequency value alone. Useful: humans speaking ~100-3000 Hz, with wavelengths in air ~3.4 m to 11 cm.",
+      "correct_letter": "A",
+      "explanation": "DOPPLER ECHOLOCATION: bat emits 50 kHz; echo returns at 51 kHz (higher). Higher frequency echo = object APPROACHING the bat (or bat approaching object). DOUBLE DOPPLER: both bat moving and insect moving contribute to the frequency shift. FREQUENCY SHIFT DIRECTION: toward = higher (blueshift); away = lower (redshift). BATS' PRECISION: horseshoe bats can detect frequency shifts of 83 Hz at 83 kHz (0.1% change) — they can sense insect wing-beat frequency to identify prey species from echo modulation. UPSC/SSC ANGLE: Doppler + echolocation is a high-difficulty combination question linking two concepts.",
       "subject": "Physics",
-      "topic": "Waves and sound — mixed tiers",
+      "topic": "Waves and Sound — longitudinal waves, resonance, Doppler effect, intensity, decibels",
       "topic_code": "PHY_WAVES_SOUND_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-phy-ws-07",
-      "generated_at": "2026-04-26T18:35:00+00:00",
-      "id": "sgk_PHY_WAVES_SOUND_MIXED_00007"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_WAVES_SOUND_MIXED_007"
     }
   ]
 }

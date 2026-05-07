@@ -1,156 +1,240 @@
 {
   "schema_version": 1,
   "subject": "Chemistry",
-  "topic": "Electrochemistry — mixed tiers",
+  "topic": "Electrochemistry — galvanic cells, electrolysis, Faraday laws, standard electrode potential",
   "topic_code": "CHEM_ELECTROCHEMISTRY_MIXED",
-  "description": "Electrolysis, electrochemical cells, batteries, electroplating",
+  "description": "Electrochemistry: galvanic vs electrolytic cells, anode/cathode, standard electrode potential, EMF, Faraday laws, electroplating, electrolysis of water.",
   "questions": [
     {
-      "stem": "In electrolysis, positively charged ions (cations) move towards the:",
+      "stem": "In a galvanic (voltaic) cell, which electrode undergoes oxidation?",
       "options": [
-        {"option_text": "Anode", "is_correct": false},
-        {"option_text": "Cathode", "is_correct": true},
-        {"option_text": "Electrolyte surface", "is_correct": false},
-        {"option_text": "Battery's positive terminal", "is_correct": false}
+        {
+          "option_text": "The anode — oxidation occurs at the anode; it is the negative terminal in a galvanic cell",
+          "is_correct": true
+        },
+        {
+          "option_text": "The cathode — reduction occurs at the cathode; it is the positive terminal",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both electrodes oxidise simultaneously in a galvanic cell at once (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither electrode; oxidation only occurs in electrolytic cells, not galvanic",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "In electrolysis — cations (+) move to the cathode (negative electrode, hence 'cat' to 'cat-hode'). Anions (−) move to the anode (positive electrode). Opposite charges attract. Mnemonic — 'CATions go to the CAThode'. At the cathode, ions are reduced (gain electrons); at the anode, ions are oxidised (lose electrons).",
+      "correct_letter": "A",
+      "explanation": "GALVANIC CELL: ANODE = oxidation (OIL) = negative terminal; electrons flow OUT. CATHODE = reduction (RIG) = positive terminal; electrons flow IN. Mnemonic: AN OX / RED CAT. CONTRAST with ELECTROLYTIC CELL: anode is POSITIVE (connected to +ve terminal of battery). DANIELL CELL: Zn (anode) oxidised; Cu deposited at cathode. PYQ: anode/cathode + oxidation/reduction in IBPS PO, SSC CGL chemistry.",
       "subject": "Chemistry",
-      "topic": "Electrochemistry — mixed tiers",
+      "topic": "Electrochemistry — galvanic cells, electrolysis, Faraday laws, standard electrode potential",
       "topic_code": "CHEM_ELECTROCHEMISTRY_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-chem-ec-01",
-      "generated_at": "2026-04-24T04:10:00+00:00",
-      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_00001"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_001"
     },
     {
-      "stem": "A common dry-cell (torch) battery uses zinc as the:",
+      "stem": "According to Faraday's First Law of Electrolysis, the mass of substance deposited at an electrode is:",
       "options": [
-        {"option_text": "Cathode", "is_correct": false},
-        {"option_text": "Anode (negative terminal)", "is_correct": true},
-        {"option_text": "Electrolyte", "is_correct": false},
-        {"option_text": "Separator", "is_correct": false}
+        {
+          "option_text": "Directly proportional to the quantity of charge passed (m proportional to Q)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Inversely proportional to the charge — higher charge deposits less substance instead",
+          "is_correct": false
+        },
+        {
+          "option_text": "Proportional to the square of the current applied to the electrode only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Independent of charge; it depends only on electrode surface area alone",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Leclanché dry cell — the zinc CASE serves as the anode (gets oxidised: Zn → Zn²⁺ + 2e⁻). A carbon rod in the centre is the cathode (where MnO₂ is reduced). The electrolyte is a moist paste of ammonium chloride (NH₄Cl) + zinc chloride (ZnCl₂). As current is drawn, the zinc case slowly erodes from inside. EMF ~1.5 V. Modern alkaline cells (1.5 V) have a similar Zn/MnO₂ chemistry but a KOH electrolyte.",
+      "correct_letter": "A",
+      "explanation": "FARADAY FIRST LAW: m = Z x Q = Z x I x t; where Z = electrochemical equivalent, I = current (A), t = time (s). m is proportional to Q (charge). FARADAY SECOND LAW: for same charge, masses of different substances are proportional to their equivalent weights (M/n). FARADAY CONSTANT: F = 96,500 C/mol. ELECTROPLATING: silver plating — 107.9 g Ag deposited per 96,500 C. PYQ: Faraday first law in IBPS PO/SSC hybrid sections.",
       "subject": "Chemistry",
-      "topic": "Electrochemistry — mixed tiers",
+      "topic": "Electrochemistry — galvanic cells, electrolysis, Faraday laws, standard electrode potential",
       "topic_code": "CHEM_ELECTROCHEMISTRY_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-chem-ec-02",
-      "generated_at": "2026-04-24T04:10:00+00:00",
-      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_00002"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_002"
     },
     {
-      "stem": "A lead-acid battery, used in most cars, has an electrolyte of:",
+      "stem": "The standard hydrogen electrode (SHE) is assigned a standard reduction potential of:",
       "options": [
-        {"option_text": "Hydrochloric acid", "is_correct": false},
-        {"option_text": "Sulphuric acid (dilute)", "is_correct": true},
-        {"option_text": "Nitric acid", "is_correct": false},
-        {"option_text": "Phosphoric acid", "is_correct": false}
+        {
+          "option_text": "0.00 V — it is the reference electrode against which all other potentials are measured",
+          "is_correct": true
+        },
+        {
+          "option_text": "+1.00 V — this is approximately the reduction potential of oxygen, not SHE",
+          "is_correct": false
+        },
+        {
+          "option_text": "-1.00 V — a negative potential would mean SHE oxidises readily; it is defined as zero",
+          "is_correct": false
+        },
+        {
+          "option_text": "+0.76 V — this is the reduction potential of Zn2+/Zn couple, not SHE",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Lead-acid battery — Pb (anode) / PbO₂ (cathode) / ~30-40 % H₂SO₄ (electrolyte). On discharge both electrodes convert to PbSO₄; concentration of H₂SO₄ drops. Charging reverses the reaction — which is why car batteries can last many years with the engine's alternator recharging them. EMF 2 V per cell; 6 cells in series give the 12 V car battery.",
+      "correct_letter": "A",
+      "explanation": "SHE: H+(1M) + e- → 1/2 H2 at 25°C, 1 atm. E° = 0.00 V BY DEFINITION. All standard reduction potentials measured relative to SHE. ELECTROCHEMICAL SERIES: metals with E° < 0 (Zn = -0.76V, Fe = -0.44V) are stronger reducing agents. Metals with E° > 0 (Cu = +0.34V, Ag = +0.80V) are less reactive. CELL EMF = E°cathode - E°anode. Daniell cell: E° = 0.34 - (-0.76) = 1.10V. PYQ: SHE reference + cell EMF in CBSE/IBPS PO.",
       "subject": "Chemistry",
-      "topic": "Electrochemistry — mixed tiers",
+      "topic": "Electrochemistry — galvanic cells, electrolysis, Faraday laws, standard electrode potential",
       "topic_code": "CHEM_ELECTROCHEMISTRY_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-chem-ec-03",
-      "generated_at": "2026-04-24T04:10:00+00:00",
-      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_00003"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_003"
     },
     {
-      "stem": "Electroplating a metal object with silver involves making the object the:",
+      "stem": "During the electrolysis of dilute sulphuric acid using platinum electrodes, which gas is liberated at the cathode?",
       "options": [
-        {"option_text": "Anode in a silver-salt bath", "is_correct": false},
-        {"option_text": "Cathode in a silver-salt bath", "is_correct": true},
-        {"option_text": "Electrolyte itself", "is_correct": false},
-        {"option_text": "A separator layer", "is_correct": false}
+        {
+          "option_text": "Hydrogen (H2) — reduction of H+ ions at cathode: 2H+ + 2e- yields H2",
+          "is_correct": true
+        },
+        {
+          "option_text": "Oxygen (O2) — oxygen is liberated at the ANODE, not the cathode",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sulphur dioxide (SO2) — sulphate ions are not discharged under these conditions",
+          "is_correct": false
+        },
+        {
+          "option_text": "No gas; platinum electrodes absorb all products during electrolysis",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "The object to be plated is the CATHODE (attracts Ag⁺ cations from the silver-nitrate / silver-cyanide electrolyte; they get reduced to Ag and deposit on the surface). The anode is typically a slab of PURE silver — it gets oxidised, replenishing the Ag⁺ in the bath. Used in jewellery, decorative cutlery, printed circuit boards (gold plating).",
+      "correct_letter": "A",
+      "explanation": "ELECTROLYSIS OF DILUTE H2SO4: CATHODE (reduction): 2H+ + 2e- → H2. ANODE (oxidation): 2H2O → O2 + 4H+ + 4e-. GAS RATIO: H2:O2 = 2:1 by volume. NET: 2H2O → 2H2 + O2. HOFFMAN VOLTAMETER: lab apparatus; hydrogen at cathode is double the volume of oxygen at anode. ELECTROLYSIS OF BRINE: cathode = H2; anode = Cl2; NaOH in solution (chlor-alkali process). PYQ: electrode products in electrolysis — SSC CGL, IBPS PO 1-2x per cycle.",
       "subject": "Chemistry",
-      "topic": "Electrochemistry — mixed tiers",
+      "topic": "Electrochemistry — galvanic cells, electrolysis, Faraday laws, standard electrode potential",
       "topic_code": "CHEM_ELECTROCHEMISTRY_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-chem-ec-04",
-      "generated_at": "2026-04-24T04:10:00+00:00",
-      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_00004"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_004"
     },
     {
-      "stem": "Which battery technology is dominant in modern smartphones and electric vehicles?",
+      "stem": "Corrosion of iron (rusting) is an electrochemical process. Which condition MOST accelerates rusting?",
       "options": [
-        {"option_text": "Nickel-Cadmium", "is_correct": false},
-        {"option_text": "Lithium-ion", "is_correct": true},
-        {"option_text": "Lead-acid", "is_correct": false},
-        {"option_text": "Zinc-carbon", "is_correct": false}
+        {
+          "option_text": "Presence of both water and oxygen together — neither alone causes significant rusting",
+          "is_correct": true
+        },
+        {
+          "option_text": "Exposure to oxygen alone in completely dry conditions causes fastest rusting",
+          "is_correct": false
+        },
+        {
+          "option_text": "Immersion in pure distilled water with no dissolved oxygen or salts present",
+          "is_correct": false
+        },
+        {
+          "option_text": "Exposure to nitrogen gas, which reacts with iron to form iron nitride instead",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Lithium-ion (Li-ion) — high energy density, light, rechargeable thousands of times. Cathode typically LiCoO₂ or LFP (lithium-iron phosphate); anode graphite; electrolyte a non-aqueous lithium-salt solution. EMF ~3.6-3.7 V per cell. Nobel Prize in Chemistry 2019 went to Whittingham, Goodenough, Yoshino for Li-ion development. Ni-Cd is older technology (has toxic cadmium; being phased out). Lead-acid is still dominant in ICE cars. Zn-C is a non-rechargeable dry cell.",
+      "correct_letter": "A",
+      "explanation": "RUSTING: requires BOTH water AND oxygen. MECHANISM: Fe acts as anode (Fe → Fe2+ + 2e-); dissolved O2 in water acts as cathode. ACCELERATED BY: salt water (more electrolyte), acid rain, contact with dissimilar metals (galvanic corrosion). PREVENTION: painting, galvanising (Zn coating = sacrificial anode), cathodic protection, alloying (stainless steel = Fe+Cr+Ni). GALVANISING: Zn oxidises first even if coating scratches (more reactive than Fe). PYQ: rusting conditions + prevention in UPSC, SSC, IBPS GA.",
       "subject": "Chemistry",
-      "topic": "Electrochemistry — mixed tiers",
+      "topic": "Electrochemistry — galvanic cells, electrolysis, Faraday laws, standard electrode potential",
       "topic_code": "CHEM_ELECTROCHEMISTRY_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-chem-ec-05",
-      "generated_at": "2026-04-24T04:10:00+00:00",
-      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_00005"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_005"
     },
     {
-      "stem": "Galvanisation — to prevent iron from rusting — involves coating it with:",
+      "stem": "How much silver (atomic mass 108 g/mol) is deposited when 2A is passed through silver nitrate solution for 965 seconds? (F = 96,500 C/mol)",
       "options": [
-        {"option_text": "Tin", "is_correct": false},
-        {"option_text": "Zinc", "is_correct": true},
-        {"option_text": "Gold", "is_correct": false},
-        {"option_text": "Lead", "is_correct": false}
+        {
+          "option_text": "2.16 g — charge = 2 x 965 = 1930 C; moles e- = 1930/96500 = 0.02; mass = 0.02 x 108 = 2.16 g",
+          "is_correct": true
+        },
+        {
+          "option_text": "4.32 g — doubles the correct answer, likely from using charge = 2 x 965 x 2 incorrectly",
+          "is_correct": false
+        },
+        {
+          "option_text": "1.08 g — halves the correct answer; miscounts the charge or misapplies valency",
+          "is_correct": false
+        },
+        {
+          "option_text": "21.6 g — moves the decimal wrongly in the moles calculation step (not this)",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Galvanisation = coating iron or steel with zinc — either by hot-dipping or electroplating. Zinc protects iron by 'sacrificial' oxidation: even when the coating is scratched, the zinc corrodes before the iron. Tinning (tin coating — used on food cans) is different; tin merely blocks oxygen but does not give sacrificial protection. Applications — roofing sheets, wire buckets, pipes, rebar.",
+      "correct_letter": "A",
+      "explanation": "FARADAY FIRST LAW CALCULATION: Q = I x t = 2 x 965 = 1930 C. Moles of electrons = Q/F = 1930/96500 = 0.02 mol. Ag+ + e- → Ag (valency = 1). Moles Ag = 0.02 mol. Mass = 0.02 x 108 = 2.16 g. VERIFICATION: 96500 C deposits 108 g Ag. 1930 C deposits (1930/96500) x 108 = 2.16 g. Ratio: 1930/96500 = 1/50; 108/50 = 2.16 check complete.",
       "subject": "Chemistry",
-      "topic": "Electrochemistry — mixed tiers",
+      "topic": "Electrochemistry — galvanic cells, electrolysis, Faraday laws, standard electrode potential",
       "topic_code": "CHEM_ELECTROCHEMISTRY_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-chem-ec-06",
-      "generated_at": "2026-04-24T04:10:00+00:00",
-      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_00006"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_006"
     },
     {
-      "stem": "Faraday's first law of electrolysis states that the mass of a substance deposited at an electrode is directly proportional to:",
+      "stem": "The Nernst equation modifies the standard EMF of a cell to account for:",
       "options": [
-        {"option_text": "The resistance of the circuit", "is_correct": false},
-        {"option_text": "The quantity of charge passed", "is_correct": true},
-        {"option_text": "The time the current is applied squared", "is_correct": false},
-        {"option_text": "The temperature of the electrolyte", "is_correct": false}
+        {
+          "option_text": "The actual concentrations of ions in solution (non-standard conditions)",
+          "is_correct": true
+        },
+        {
+          "option_text": "The temperature of the electrodes, assuming ion concentrations are always standard",
+          "is_correct": false
+        },
+        {
+          "option_text": "The physical size of the electrodes and their surface area for reaction only",
+          "is_correct": false
+        },
+        {
+          "option_text": "The voltage loss due to internal resistance of the electrolyte in solution",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Faraday's 1st law — m = Z × Q = Z × I × t, where Z is the electrochemical equivalent, I current, t time. Q = charge passed = I × t. Faraday's 2nd law — when the same Q is passed through different electrolytes, masses deposited are in proportion to the equivalent masses. 1 Faraday (96,485 C) will deposit 1 mole-equivalent of any species. These laws are exam-favourite application questions.",
+      "correct_letter": "A",
+      "explanation": "NERNST EQUATION: E = E° - (0.0592/n) log Q at 25°C. Q = reaction quotient (actual concentrations). PURPOSE: calculates actual cell EMF when concentrations differ from 1M standard. CONCENTRATION CELL: two half-cells of same element at different concentrations → EMF from concentration gradient only (E° = 0). APPLICATION: pH meter works on Nernst principle. At EQUILIBRIUM: E = 0; then log K = nE°/0.0592 → links EMF to equilibrium constant. PYQ: Nernst equation concept in UPSC GS-1, IBPS PO advanced science.",
       "subject": "Chemistry",
-      "topic": "Electrochemistry — mixed tiers",
+      "topic": "Electrochemistry — galvanic cells, electrolysis, Faraday laws, standard electrode potential",
       "topic_code": "CHEM_ELECTROCHEMISTRY_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-chem-ec-07",
-      "generated_at": "2026-04-24T04:10:00+00:00",
-      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_00007"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ELECTROCHEMISTRY_MIXED_007"
     }
   ]
 }
