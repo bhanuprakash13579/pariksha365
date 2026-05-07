@@ -1,156 +1,240 @@
 {
   "schema_version": 1,
   "subject": "Chemistry",
-  "topic": "Organic chemistry basics — mixed tiers",
+  "topic": "Organic Chemistry Basics — hydrocarbons, functional groups, IUPAC naming, isomerism",
   "topic_code": "CHEM_ORGANIC_BASICS_MIXED",
-  "description": "Hydrocarbons, functional groups, biomolecules",
+  "description": "Organic chemistry fundamentals: homologous series, functional groups, IUPAC naming, structural/chain/positional isomerism, alcohols vs aldehydes vs ketones, addition vs substitution reactions.",
   "questions": [
     {
-      "stem": "The simplest hydrocarbon, found as the main component of natural gas, is:",
+      "stem": "The IUPAC name of the compound CH3-CH2-CH2-OH is:",
       "options": [
-        {"option_text": "Ethane", "is_correct": false},
-        {"option_text": "Methane", "is_correct": true},
-        {"option_text": "Propane", "is_correct": false},
-        {"option_text": "Butane", "is_correct": false}
+        {
+          "option_text": "Propan-1-ol — 3-carbon chain (prop), single bond (an), hydroxyl at position 1 (-1-ol)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Propanal — propanal has an aldehyde group (-CHO), not a hydroxyl group (-OH)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Propanone — propanone is the IUPAC name of acetone, which has a ketone group",
+          "is_correct": false
+        },
+        {
+          "option_text": "Propanoic acid — propanoic acid has a carboxyl group (-COOH), not a hydroxyl group",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Methane (CH₄) is the first member of the alkane series and makes up 70-95 % of natural gas and biogas. It is also a potent greenhouse gas — about 25 times more effective per molecule than CO₂ over 100 years. Ethane (C₂H₆), propane (C₃H₈), butane (C₄H₁₀) are the next members; LPG is mainly a mix of propane and butane.",
+      "correct_letter": "A",
+      "explanation": "IUPAC NAMING: (1) Find longest chain = 3 carbons = PROP. (2) All single bonds = -AN. (3) Functional group: -OH = -OL. (4) Position: OH at carbon 1 = -1-. FULL NAME: PROPAN-1-OL. COMMON NAME: n-propanol or 1-propanol. FUNCTIONAL GROUP TABLE: -OH = alcohol (-ol); -CHO = aldehyde (-al); C=O middle = ketone (-one); -COOH = carboxylic acid (-oic acid); -NH2 = amine (-amine). PYQ: IUPAC naming of simple organic compounds in SSC CGL, IBPS PO chemistry — 1x per cycle.",
       "subject": "Chemistry",
-      "topic": "Organic chemistry basics — mixed tiers",
+      "topic": "Organic Chemistry Basics — hydrocarbons, functional groups, IUPAC naming, isomerism",
       "topic_code": "CHEM_ORGANIC_BASICS_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-org-01",
-      "generated_at": "2026-04-23T11:30:00+00:00",
-      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_00001"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_001"
     },
     {
-      "stem": "The functional group —OH is characteristic of which class of organic compounds?",
+      "stem": "Alkanes, alkenes, and alkynes are all hydrocarbons. Which series contains a carbon-carbon triple bond?",
       "options": [
-        {"option_text": "Aldehydes", "is_correct": false},
-        {"option_text": "Alcohols", "is_correct": true},
-        {"option_text": "Carboxylic acids", "is_correct": false},
-        {"option_text": "Esters", "is_correct": false}
+        {
+          "option_text": "Alkynes — general formula CnH(2n-2); contain at least one C≡C triple bond",
+          "is_correct": true
+        },
+        {
+          "option_text": "Alkanes — saturated hydrocarbons; contain only C-C single bonds and no double or triple bonds",
+          "is_correct": false
+        },
+        {
+          "option_text": "Alkenes — contain one C=C double bond; general formula CnH(2n), not triple bond",
+          "is_correct": false
+        },
+        {
+          "option_text": "Arenes — aromatic hydrocarbons with delocalised pi electrons; benzene ring, not triple bond",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Alcohols carry the hydroxyl (—OH) group attached to a saturated carbon. Examples: methanol CH₃OH, ethanol CH₃CH₂OH. Aldehydes have —CHO (e.g., formaldehyde HCHO); carboxylic acids have —COOH (acetic acid CH₃COOH); esters have —COO-R (ethyl ethanoate). Phenols also have —OH but attached to an aromatic ring.",
+      "correct_letter": "A",
+      "explanation": "HYDROCARBON SERIES: ALKANE: C-C single bond only. Formula: CnH(2n+2). SATURATED. Examples: methane, ethane, propane. ALKENE: C=C double bond. Formula: CnH(2n). UNSATURATED. Examples: ethene, propene. ALKYNE: C≡C triple bond. Formula: CnH(2n-2). MOST UNSATURATED. Examples: ethyne (acetylene, C2H2). DEGREE OF UNSATURATION: 1 double bond = 1 degree; 1 triple bond = 2 degrees; 1 ring = 1 degree. INDUSTRIAL: acetylene (ethyne) used in welding (oxy-acetylene torch). PYQ: alkane/alkene/alkyne series — SSC CGL, IBPS PO chemistry standard 1-marker.",
       "subject": "Chemistry",
-      "topic": "Organic chemistry basics — mixed tiers",
+      "topic": "Organic Chemistry Basics — hydrocarbons, functional groups, IUPAC naming, isomerism",
       "topic_code": "CHEM_ORGANIC_BASICS_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-org-02",
-      "generated_at": "2026-04-23T11:30:00+00:00",
-      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_00002"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_002"
     },
     {
-      "stem": "The alcohol present in alcoholic beverages such as beer and wine is:",
+      "stem": "Which of the following pairs are structural isomers (same molecular formula, different structural arrangement)?",
       "options": [
-        {"option_text": "Methanol", "is_correct": false},
-        {"option_text": "Ethanol", "is_correct": true},
-        {"option_text": "Propanol", "is_correct": false},
-        {"option_text": "Glycerol", "is_correct": false}
+        {
+          "option_text": "Ethanol (CH3CH2OH) and dimethyl ether (CH3-O-CH3) — both have formula C2H6O",
+          "is_correct": true
+        },
+        {
+          "option_text": "Methane (CH4) and ethane (C2H6) — different molecular formulas; these are homologues, not isomers",
+          "is_correct": false
+        },
+        {
+          "option_text": "Butane (C4H10) and pentane (C5H12) — different molecular formulas; consecutive homologues",
+          "is_correct": false
+        },
+        {
+          "option_text": "Water (H2O) and hydrogen peroxide (H2O2) — different molecular formulas; not isomers of any type",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Ethanol (C₂H₅OH) — produced by the yeast fermentation of sugars (glucose, fructose) — is the drinkable alcohol in beer (4-8 %), wine (10-14 %) and spirits (40 %+). Methanol (CH₃OH) is highly toxic — causes blindness and death even in small doses; illicit 'hooch' poisoning cases are methanol contamination. Glycerol is a triol used as a sweetener and humectant.",
+      "correct_letter": "A",
+      "explanation": "STRUCTURAL ISOMERS: same molecular formula, different structural arrangements. Ethanol: C2H6O with -OH group (alcohol). Dimethyl ether: C2H6O with C-O-C linkage (ether). BOTH = C2H6O but completely different structures and properties. HOMOLOGUES: compounds in the same series that differ by CH2 (like methane/ethane). CHAIN ISOMERS: same formula, different carbon chain (butane vs isobutane = both C4H10). POSITIONAL ISOMERS: same formula, same chain, functional group at different position (propan-1-ol vs propan-2-ol = both C3H8O). PYQ: structural isomerism + ethanol/ether pair in SSC CGL, IBPS PO chemistry.",
       "subject": "Chemistry",
-      "topic": "Organic chemistry basics — mixed tiers",
+      "topic": "Organic Chemistry Basics — hydrocarbons, functional groups, IUPAC naming, isomerism",
       "topic_code": "CHEM_ORGANIC_BASICS_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-org-03",
-      "generated_at": "2026-04-23T11:30:00+00:00",
-      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_00003"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_003"
     },
     {
-      "stem": "Benzene, a common aromatic hydrocarbon, has the molecular formula:",
+      "stem": "The reaction of ethene (CH2=CH2) with HBr to form bromoethane (CH3CH2Br) is an example of:",
       "options": [
-        {"option_text": "C₆H₁₂", "is_correct": false},
-        {"option_text": "C₆H₆", "is_correct": true},
-        {"option_text": "C₆H₁₄", "is_correct": false},
-        {"option_text": "CH₄", "is_correct": false}
+        {
+          "option_text": "Addition reaction — a molecule (HBr) adds across the C=C double bond without removing any atoms",
+          "is_correct": true
+        },
+        {
+          "option_text": "Substitution reaction — substitution replaces one atom; but here nothing is removed from ethene",
+          "is_correct": false
+        },
+        {
+          "option_text": "Elimination reaction — elimination removes atoms to form a double bond; the opposite of addition",
+          "is_correct": false
+        },
+        {
+          "option_text": "Combustion reaction — combustion requires oxygen and produces CO2 and H2O only",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Benzene — C₆H₆ — is a flat hexagonal ring with alternating single and double bonds (or better, delocalised π-electrons over the ring). It was first proposed in this structure by Kekulé. C₆H₁₂ is cyclohexane (saturated); C₆H₁₄ is hexane (straight-chain saturated); CH₄ is methane. Benzene is a known carcinogen; exposure from petrol fumes is tightly regulated.",
+      "correct_letter": "A",
+      "explanation": "ADDITION REACTION: occurs across a double or triple bond. No atoms are lost; the molecule grows. CH2=CH2 + HBr → CH3CH2Br. The pi bond in C=C breaks; H adds to one carbon, Br adds to the other. MARKOVNIKOV'S RULE: H adds to the carbon with MORE H atoms (for asymmetric alkenes). SUBSTITUTION: one atom/group replaced by another (e.g., alkane + Cl2 → chloroalkane + HCl). ELIMINATION: removal of atoms from adjacent carbons to form C=C (reverse of addition). HYDROGENATION: addition of H2 across C=C (used to harden oils into fats). PYQ: addition vs substitution reaction distinction in SSC CGL, IBPS PO, UPSC chemistry.",
       "subject": "Chemistry",
-      "topic": "Organic chemistry basics — mixed tiers",
+      "topic": "Organic Chemistry Basics — hydrocarbons, functional groups, IUPAC naming, isomerism",
       "topic_code": "CHEM_ORGANIC_BASICS_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-org-04",
-      "generated_at": "2026-04-23T11:30:00+00:00",
-      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_00004"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_004"
     },
     {
-      "stem": "The polymer used to make plastic bottles, packaging films and beverage containers (known as PET) is:",
+      "stem": "Fermentation of glucose by yeast produces ethanol and carbon dioxide. The type of reaction occurring is:",
       "options": [
-        {"option_text": "Polyethylene", "is_correct": false},
-        {"option_text": "Polyethylene terephthalate", "is_correct": true},
-        {"option_text": "Polyvinyl chloride", "is_correct": false},
-        {"option_text": "Polystyrene", "is_correct": false}
+        {
+          "option_text": "Anaerobic respiration (biochemical reduction) — yeast breaks down glucose without oxygen",
+          "is_correct": true
+        },
+        {
+          "option_text": "Aerobic combustion — combustion requires oxygen and produces only CO2 and H2O; not ethanol",
+          "is_correct": false
+        },
+        {
+          "option_text": "Esterification — esterification combines an alcohol with an acid to form an ester and water",
+          "is_correct": false
+        },
+        {
+          "option_text": "Saponification — saponification is the hydrolysis of fats/oils with alkali to form soap",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "PET — polyethylene terephthalate — used in nearly all disposable water and cola bottles, carries the '1' recycling code. Polyethylene (PE — codes 2, 4) is used for plastic bags and HDPE containers. PVC (code 3) is used for pipes and window frames. Polystyrene (code 6) is used for thermocol and disposable cups.",
+      "correct_letter": "A",
+      "explanation": "FERMENTATION: C6H12O6 → 2C2H5OH + 2CO2. Catalysed by zymase enzyme in yeast. CONDITIONS: anaerobic (no oxygen), temperature 30-35°C. INDUSTRIAL USE: brewing beer, wine, spirits; bread making (CO2 causes dough to rise). BIOETHANOL: fermentation of sugarcane/corn for fuel. LIMITATIONS: maximum ethanol concentration ~15% (above this yeast dies). DISTILLATION: used to concentrate ethanol beyond 15%. VINEGAR: ethanol oxidised to acetic acid by Acetobacter bacteria. PYQ: fermentation reaction + products in SSC CGL, IBPS PO, UPSC science GK.",
       "subject": "Chemistry",
-      "topic": "Organic chemistry basics — mixed tiers",
+      "topic": "Organic Chemistry Basics — hydrocarbons, functional groups, IUPAC naming, isomerism",
       "topic_code": "CHEM_ORGANIC_BASICS_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-org-05",
-      "generated_at": "2026-04-23T11:30:00+00:00",
-      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_00005"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_005"
     },
     {
-      "stem": "The building blocks (monomers) of proteins are:",
+      "stem": "A compound with molecular formula C4H8O shows a carbonyl group (C=O) in the middle of the chain, not at the end. Its IUPAC name is:",
       "options": [
-        {"option_text": "Fatty acids", "is_correct": false},
-        {"option_text": "Amino acids", "is_correct": true},
-        {"option_text": "Nucleotides", "is_correct": false},
-        {"option_text": "Monosaccharides", "is_correct": false}
+        {
+          "option_text": "Butan-2-one (methyl ethyl ketone) — 4C chain, C=O at position 2, no H on carbonyl carbon",
+          "is_correct": true
+        },
+        {
+          "option_text": "Butanal — butanal has a -CHO (aldehyde) at the end of the chain, not the middle",
+          "is_correct": false
+        },
+        {
+          "option_text": "But-2-ene — but-2-ene has a C=C double bond, not a C=O carbonyl group",
+          "is_correct": false
+        },
+        {
+          "option_text": "Butanoic acid — butanoic acid has a -COOH carboxyl group, not a simple ketone C=O",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Proteins are long chains of amino acids joined by peptide bonds. Twenty amino acids make up almost all natural proteins. Nine are 'essential' — the body cannot synthesise them and must obtain them from food. Fatty acids build lipids; nucleotides build nucleic acids (DNA, RNA); monosaccharides like glucose and fructose build carbohydrates.",
+      "correct_letter": "A",
+      "explanation": "KETONE: C=O carbonyl group flanked by two carbon groups (not hydrogen). When C=O is in the MIDDLE of the chain, the compound is a KETONE (-one). BUTAN-2-ONE: CH3-CO-CH2-CH3. 4-carbon chain (but), C=O at position 2 (-2-), ketone suffix (-one). COMMON NAME: methyl ethyl ketone (MEK) — used as industrial solvent. DISTINCTION: ALDEHYDE has C=O at the END of the chain (-CHO); KETONE has C=O in the MIDDLE. Butan-2-one (C4H8O) is a positional isomer of butanal (C4H8O) — same formula, different position of C=O. PYQ: aldehyde vs ketone identification in SSC CGL, IBPS PO chemistry.",
       "subject": "Chemistry",
-      "topic": "Organic chemistry basics — mixed tiers",
+      "topic": "Organic Chemistry Basics — hydrocarbons, functional groups, IUPAC naming, isomerism",
       "topic_code": "CHEM_ORGANIC_BASICS_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-org-06",
-      "generated_at": "2026-04-23T11:30:00+00:00",
-      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_00006"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_006"
     },
     {
-      "stem": "Acetic acid, the main acid in vinegar, has the chemical formula:",
+      "stem": "Benzene (C6H6) undergoes substitution reactions rather than addition reactions, despite having three apparent double bonds. This is because:",
       "options": [
-        {"option_text": "HCOOH", "is_correct": false},
-        {"option_text": "CH₃COOH", "is_correct": true},
-        {"option_text": "C₂H₅OH", "is_correct": false},
-        {"option_text": "C₆H₈O₇", "is_correct": false}
+        {
+          "option_text": "Benzene's pi electrons are delocalised over all 6 carbons, giving it aromatic stability that addition would destroy",
+          "is_correct": true
+        },
+        {
+          "option_text": "Benzene has no double bonds; all C-C bonds in benzene are single bonds of equal length (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Benzene undergoes addition because it has double bonds; substitution is observed only occasionally",
+          "is_correct": false
+        },
+        {
+          "option_text": "Benzene is too unreactive to undergo any reactions under normal laboratory conditions (not this)",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Acetic acid (ethanoic acid) is CH₃COOH — a 2-carbon carboxylic acid. Vinegar is typically 4-8 % acetic acid. HCOOH is formic acid, found in ant stings. C₂H₅OH is ethanol. C₆H₈O₇ is citric acid, the main acid in lemons.",
+      "correct_letter": "A",
+      "explanation": "BENZENE AROMATICITY: the 6 pi electrons are delocalised in a ring above and below the carbon plane (resonance). ALL C-C BONDS ARE EQUAL LENGTH (1.40 Å — between single 1.54 Å and double 1.34 Å). HUCKEL'S RULE: 4n+2 pi electrons (n=1 → 6 electrons) = aromatic. AROMATIC STABILITY: the delocalisation energy (~150 kJ/mol) makes the ring extremely stable. ADDITION would break aromaticity (gain in energy = unfavourable). SUBSTITUTION retains the aromatic ring (one H replaced, ring intact). ELECTROPHILIC AROMATIC SUBSTITUTION (EAS): nitration, halogenation, sulphonation, Friedel-Crafts alkylation/acylation. PYQ: why benzene prefers substitution in UPSC GS-1, IBPS PO advanced chemistry.",
       "subject": "Chemistry",
-      "topic": "Organic chemistry basics — mixed tiers",
+      "topic": "Organic Chemistry Basics — hydrocarbons, functional groups, IUPAC naming, isomerism",
       "topic_code": "CHEM_ORGANIC_BASICS_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-org-07",
-      "generated_at": "2026-04-23T11:30:00+00:00",
-      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_00007"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_CHEM_ORGANIC_BASICS_MIXED_007"
     }
   ]
 }

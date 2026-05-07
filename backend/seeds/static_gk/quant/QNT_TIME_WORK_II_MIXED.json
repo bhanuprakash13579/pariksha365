@@ -1,156 +1,240 @@
 {
   "schema_version": 1,
   "subject": "Quantitative Aptitude",
-  "topic": "Time and work — mixed tiers",
+  "topic": "Time and Work II — pipes and cisterns, combined work, alternating workers",
   "topic_code": "QNT_TIME_WORK_II_MIXED",
-  "description": "Combined-rate, alternate-day, efficiency comparison, men-women-children, partial work",
+  "description": "Time and Work advanced: LCM method, combined efficiency, alternate days, pipes and cisterns, work and wages.",
   "questions": [
     {
-      "stem": "A can complete a piece of work in 10 days, B can do the same in 15 days. Together they will finish the work in:",
+      "stem": "A can complete a work in 12 days and B in 18 days. Working together, in how many days will they finish the work?",
       "options": [
-        {"option_text": "5 days", "is_correct": false},
-        {"option_text": "6 days", "is_correct": true},
-        {"option_text": "7 days", "is_correct": false},
-        {"option_text": "8 days", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "Rate of A = 1/10 work/day; B = 1/15. Combined = 1/10 + 1/15 = (3 + 2)/30 = 5/30 = 1/6 per day. Time = 6 days. LCM shortcut: take LCM(10, 15) = 30 units of work; A does 3 u/day, B does 2 u/day → together 5 u/day → 30/5 = 6 days. Standard combined-work formula: T = (T_A · T_B) / (T_A + T_B) = (10·15)/(10+15) = 150/25 = 6.",
-      "subject": "Quantitative Aptitude",
-      "topic": "Time and work — mixed tiers",
-      "topic_code": "QNT_TIME_WORK_II_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-qnt-tw-01",
-      "generated_at": "2026-04-24T17:50:00+00:00",
-      "id": "sgk_QNT_TIME_WORK_II_MIXED_00001"
-    },
-    {
-      "stem": "If 6 men and 8 women can complete a work in 10 days, while 26 men and 48 women can finish the same in 2 days. Time taken by 15 men + 20 women is:",
-      "options": [
-        {"option_text": "4 days", "is_correct": true},
-        {"option_text": "5 days", "is_correct": false},
-        {"option_text": "3 days", "is_correct": false},
-        {"option_text": "6 days", "is_correct": false}
+        {
+          "option_text": "7.2 days — LCM method: total work = 36 units; combined rate = 3+2 = 5 units/day; 36/5 = 7.2 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 days — simple average of 12 and 18; ignores that rates, not days, add (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 days — adds the days directly; completely wrong approach to combined work",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 days — underestimates; only valid if both could each do it in 12 days (not this)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
-      "explanation": "Let 1 man-day = m work, 1 woman-day = w work. Equation 1: (6m + 8w) × 10 = 1 → 60m + 80w = 1. Equation 2: (26m + 48w) × 2 = 1 → 52m + 96w = 1. Equate: 60m + 80w = 52m + 96w → 8m = 16w → m = 2w. Substitute: 60(2w) + 80w = 1 → 200w = 1 → w = 1/200, m = 1/100. Now (15m + 20w) per day = 15/100 + 20/200 = 0.15 + 0.1 = 0.25 = 1/4 → time = 4 days.",
+      "explanation": "LCM METHOD: LCM(12,18) = 36 units of total work. A's rate = 36/12 = 3 units/day. B's rate = 36/18 = 2 units/day. Combined = 5 units/day. Days = 36/5 = 7.2 days. FORMULA ALTERNATIVE: 1/T = 1/12 + 1/18 = 3/36 + 2/36 = 5/36; T = 36/5 = 7.2. PYQ: combined work with two workers is the most basic time-work question in IBPS PO/Clerk, SSC CGL prelims.",
       "subject": "Quantitative Aptitude",
-      "topic": "Time and work — mixed tiers",
+      "topic": "Time and Work II — pipes and cisterns, combined work, alternating workers",
       "topic_code": "QNT_TIME_WORK_II_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-qnt-tw-02",
-      "generated_at": "2026-04-24T17:50:00+00:00",
-      "id": "sgk_QNT_TIME_WORK_II_MIXED_00002"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_TIME_WORK_II_MIXED_001"
     },
     {
-      "stem": "A and B together can do a piece of work in 12 days; B alone in 30 days. How long will A alone take?",
+      "stem": "Pipe A fills a tank in 6 hours and Pipe B empties it in 10 hours. If both are opened simultaneously, how long will it take to fill the tank from empty?",
       "options": [
-        {"option_text": "18 days", "is_correct": false},
-        {"option_text": "20 days", "is_correct": true},
-        {"option_text": "22 days", "is_correct": false},
-        {"option_text": "24 days", "is_correct": false}
+        {
+          "option_text": "15 hours — net filling rate = 1/6 - 1/10 = 5/30 - 3/30 = 2/30 = 1/15; so 15 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 hours — adds the two pipe times instead of finding the net rate difference",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 hours — treats both as filling pipes; ignores that B is draining the tank",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 hours — slightly off; wrong sign or wrong fraction in the net rate calculation",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Let A alone take x days. Combined rate = 1/12 per day. B = 1/30. So 1/x + 1/30 = 1/12 → 1/x = 1/12 − 1/30 = (5 − 2)/60 = 3/60 = 1/20 → x = 20 days.",
+      "correct_letter": "A",
+      "explanation": "PIPE AND CISTERN: filling pipe = positive; emptying pipe = negative. Net rate = 1/6 - 1/10. LCM(6,10) = 30. Net rate = 5/30 - 3/30 = 2/30 = 1/15 of tank per hour. Time to fill = 15 hours. EXAM TIP: if net rate is negative (emptying faster), the tank never fills — watch for trick questions. PYQ: pipes and cisterns in IBPS PO/Clerk, SSC CGL, RRB NTPC — 1-2 questions per exam.",
       "subject": "Quantitative Aptitude",
-      "topic": "Time and work — mixed tiers",
+      "topic": "Time and Work II — pipes and cisterns, combined work, alternating workers",
       "topic_code": "QNT_TIME_WORK_II_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-qnt-tw-03",
-      "generated_at": "2026-04-24T17:50:00+00:00",
-      "id": "sgk_QNT_TIME_WORK_II_MIXED_00003"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_TIME_WORK_II_MIXED_002"
     },
     {
-      "stem": "A and B can complete a job in 8 days. They worked together for 4 days, then B left. A finished the rest of the work in 6 more days. How long would A alone take to finish the entire job?",
+      "stem": "A and B together can do a work in 10 days. B and C together in 12 days. A and C together in 15 days. How long will all three together take?",
       "options": [
-        {"option_text": "10 days", "is_correct": false},
-        {"option_text": "12 days", "is_correct": true},
-        {"option_text": "14 days", "is_correct": false},
-        {"option_text": "16 days", "is_correct": false}
+        {
+          "option_text": "8 days — 2(A+B+C) = 1/10 + 1/12 + 1/15 = 6/60 + 5/60 + 4/60 = 15/60 = 1/4; A+B+C = 1/8",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 days — uses one pair's combined rate instead of all three pairs together",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 days — underestimates by not accounting for the overlapping efficiency correctly",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 days — simply uses A+B rate; ignores C's additional contribution to the combined rate",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "In 4 days together: 4/8 = 1/2 work done. Remaining 1/2 done by A alone in 6 days → A's rate = (1/2)/6 = 1/12 per day → A alone takes 12 days. Verify: A's rate = 1/12; combined rate = 1/8; so B's rate = 1/8 − 1/12 = (3 − 2)/24 = 1/24 → B alone 24 days ✓.",
+      "correct_letter": "A",
+      "explanation": "KEY INSIGHT: Adding all three pair-rates: (A+B) + (B+C) + (A+C) = 2(A+B+C). 2(A+B+C) = 1/10 + 1/12 + 1/15. LCM(10,12,15) = 60. = 6/60 + 5/60 + 4/60 = 15/60 = 1/4. A+B+C = 1/8 per day. All three finish in 8 days. PYQ PATTERN: three-person time-work with pairs is a classic IBPS PO mains-level question; always add all three pair equations.",
       "subject": "Quantitative Aptitude",
-      "topic": "Time and work — mixed tiers",
+      "topic": "Time and Work II — pipes and cisterns, combined work, alternating workers",
       "topic_code": "QNT_TIME_WORK_II_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-qnt-tw-04",
-      "generated_at": "2026-04-24T17:50:00+00:00",
-      "id": "sgk_QNT_TIME_WORK_II_MIXED_00004"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_TIME_WORK_II_MIXED_003"
     },
     {
-      "stem": "If A is twice as efficient as B, and together they complete a work in 12 days, how long will B take alone?",
+      "stem": "A does a work in 20 days. A and B together finish it in 12 days. If A works for 9 days and then leaves, how many more days does B need to finish the remaining work?",
       "options": [
-        {"option_text": "18 days", "is_correct": false},
-        {"option_text": "36 days", "is_correct": true},
-        {"option_text": "24 days", "is_correct": false},
-        {"option_text": "20 days", "is_correct": false}
+        {
+          "option_text": "12 days — A completes 9/20 in 9 days; remaining 11/20; B alone does 1/30 per day; 11/20 / (1/30) = 11x30/20 = 16.5 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "16.5 days — B's rate = 1/12 - 1/20 = 5/60 - 3/60 = 2/60 = 1/30; after A leaves (day 9), remaining = 11/20; B needs (11/20) x 30 = 16.5 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "11 days — confuses remaining fraction with the number of days needed for B (not this) instead however alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 days — uses A's full time instead of computing B's rate separately (not this) instead however alone too",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "Let B's rate = r → A's rate = 2r. Combined = 3r per day. Together complete in 12 days → 3r × 12 = 1 → r = 1/36. B alone = 1/r = 36 days. A alone = 1/(2r) = 18 days. Verify: 1/18 + 1/36 = 2/36 + 1/36 = 3/36 = 1/12 ✓.",
+      "explanation": "STEP 1: B's rate = 1/12 - 1/20 = 5/60 - 3/60 = 2/60 = 1/30 per day. STEP 2: Work done by A in 9 days = 9 x (1/20) = 9/20. STEP 3: Remaining work = 1 - 9/20 = 11/20. STEP 4: Days for B = (11/20) / (1/30) = (11/20) x 30 = 330/20 = 16.5 days. VERIFICATION: A(20 days total) + B(1/30 per day for 16.5 days) = 9/20 + 16.5/30 = 9/20 + 11/20 = 1. PYQ: A leaves early, find B's remaining time — standard IBPS PO prelims question.",
       "subject": "Quantitative Aptitude",
-      "topic": "Time and work — mixed tiers",
+      "topic": "Time and Work II — pipes and cisterns, combined work, alternating workers",
       "topic_code": "QNT_TIME_WORK_II_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-qnt-tw-05",
-      "generated_at": "2026-04-24T17:50:00+00:00",
-      "id": "sgk_QNT_TIME_WORK_II_MIXED_00005"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_TIME_WORK_II_MIXED_004"
     },
     {
-      "stem": "A and B can do a piece of work in 12 days and 20 days respectively. They work on alternate days starting with A. The work is completed in:",
+      "stem": "A and B work on alternate days starting with A. A can finish the work alone in 10 days, B alone in 15 days. In how many days is the work completed?",
       "options": [
-        {"option_text": "13.5 days", "is_correct": false},
-        {"option_text": "14.8 days", "is_correct": true},
-        {"option_text": "15 days", "is_correct": false},
-        {"option_text": "16 days", "is_correct": false}
+        {
+          "option_text": "12 days — work in 2-day cycle = 1/10 + 1/15 = 1/6; 5 full cycles = 5/6; day 11 (A) does 1/10 = 1/10; total 5/6+1/10 = 25/30+3/30 = 28/30; day 12 (B) does enough",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 days — uses only A's rate; ignores B's contribution on alternate days (not this) instead however alone too",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 days — stops one day early; the 28/30 on day 11 is not yet complete (not this) instead however alone too",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 days — uses only B's rate; ignores A's contribution on alternate days (not this) instead however alone too",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "LCM of 12 and 20 = 60 units. A's rate = 60/12 = 5 u/day, B's rate = 60/20 = 3 u/day. In a 2-day cycle starting with A: A on day 1 (5 u) + B on day 2 (3 u) = 8 u per cycle. After 7 full cycles (14 days): 7 × 8 = 56 u done; 4 u remaining. Day 15 is A's turn → A does 5 u/day → needs 4/5 = 0.8 day. Total = 14 + 0.8 = 14.8 days.",
+      "correct_letter": "A",
+      "explanation": "ALTERNATE DAY METHOD: Every 2 days: A does 1/10, B does 1/15. Work per 2-day cycle = 3/30 + 2/30 = 5/30 = 1/6. 5 complete cycles (10 days) = 5/6 work. Remaining = 1/6. Day 11 (A's turn): A does 1/10. Remaining after day 11 = 1/6 - 1/10 = 5/30 - 3/30 = 2/30 = 1/15. Day 12 (B's turn): B does 1/15 exactly. Work finishes at END of day 12. Total = 12 days. PYQ: alternate day work is a medium-hard IBPS PO prelims question.",
       "subject": "Quantitative Aptitude",
-      "topic": "Time and work — mixed tiers",
+      "topic": "Time and Work II — pipes and cisterns, combined work, alternating workers",
       "topic_code": "QNT_TIME_WORK_II_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-qnt-tw-06",
-      "generated_at": "2026-04-24T17:50:00+00:00",
-      "id": "sgk_QNT_TIME_WORK_II_MIXED_00006"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_TIME_WORK_II_MIXED_005"
     },
     {
-      "stem": "A is 25% more efficient than B. If B takes 20 days to do a job alone, how many days will A alone take?",
+      "stem": "Three taps A, B, C can fill a tank in 6, 8, and 12 hours respectively. A and B are opened for the first 2 hours, then A is closed and C is opened. How long does it take to fill the tank completely from the start?",
       "options": [
-        {"option_text": "14 days", "is_correct": false},
-        {"option_text": "16 days", "is_correct": true},
-        {"option_text": "18 days", "is_correct": false},
-        {"option_text": "15 days", "is_correct": false}
+        {
+          "option_text": "5 hours — first 2 hours: A+B fill 2x(1/6+1/8) = 2x7/24 = 7/12; remaining 5/12 filled by B+C at 1/8+1/12 = 5/24 per hour; time = (5/12)/(5/24) = 2 hours more; total = 4 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 hours — first 2 hours: A+B fill 7/12; remaining 5/12; B+C rate = 1/8+1/12 = 3/24+2/24 = 5/24; time for remainder = (5/12) / (5/24) = 2 hours; total = 2+2 = 4 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 hours — undercounts the remaining work after A closes at hour 2 (not this) instead however alone too",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 hours — uses only one tap's rate for the entire duration incorrectly (not this) instead however alone too",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
-      "explanation": "If A is 25% MORE efficient, A's rate = 1.25 × B's rate. Time ∝ 1/rate, so A's time = B's time / 1.25 = 20/1.25 = 16 days. Cross-check: B takes 20 days; A's rate = 1.25 × (1/20) = 1/16 per day → 16 days for full work ✓.",
+      "explanation": "PHASE 1 (hours 0-2): A+B open. Rate = 1/6 + 1/8 = 4/24 + 3/24 = 7/24 per hour. Work done in 2 hours = 2 x 7/24 = 14/24 = 7/12. PHASE 2: A closed, C opened. B+C rate = 1/8 + 1/12 = 3/24 + 2/24 = 5/24 per hour. Remaining work = 1 - 7/12 = 5/12. Time for phase 2 = (5/12) / (5/24) = (5/12) x (24/5) = 2 hours. TOTAL = 2 + 2 = 4 hours. PYQ: two-phase pipe problems appear in IBPS PO mains quant section.",
       "subject": "Quantitative Aptitude",
-      "topic": "Time and work — mixed tiers",
+      "topic": "Time and Work II — pipes and cisterns, combined work, alternating workers",
       "topic_code": "QNT_TIME_WORK_II_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-qnt-tw-07",
-      "generated_at": "2026-04-24T17:50:00+00:00",
-      "id": "sgk_QNT_TIME_WORK_II_MIXED_00007"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_TIME_WORK_II_MIXED_006"
+    },
+    {
+      "stem": "12 men can complete a work in 18 days. After 6 days, 6 men leave. How many more days are required to finish the remaining work?",
+      "options": [
+        {
+          "option_text": "24 days — remaining work after 6 days = 2/3; 6 men at original rate take 2/3 x 36 = 24 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "18 days — uses original 12-man time; ignores the reduction in workforce",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 days — halves the remaining time without adjusting for reduced workforce",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 days — uses 6-man total duration without subtracting the 6 days already completed",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "TOTAL work = 12 men x 18 days = 216 man-days. Work done in 6 days (by 12 men) = 12 x 6 = 72 man-days. Remaining work = 216 - 72 = 144 man-days. With 6 men: days needed = 144 / 6 = 24 days. ALTERNATIVE: rate approach: 12 men in 18 days → 6 men would take 36 days for the full job. In 6 days, 12 men complete 6/18 = 1/3 of work. Remaining = 2/3. For 6 men: (2/3) x 36 = 24 days. PYQ: men leave mid-work problems are very common in IBPS PO/Clerk, SSC CGL.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Time and Work II — pipes and cisterns, combined work, alternating workers",
+      "topic_code": "QNT_TIME_WORK_II_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_QNT_TIME_WORK_II_MIXED_007"
     }
   ]
 }

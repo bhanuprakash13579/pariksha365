@@ -1,156 +1,240 @@
 {
   "schema_version": 1,
   "subject": "Physics",
-  "topic": "Nuclear physics — mixed tiers",
+  "topic": "Nuclear Physics — radioactivity, half-life, fission, fusion, binding energy",
   "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
-  "description": "Nucleus, isotopes, half-life, fission vs fusion, mass defect E=mc², chain reaction, reactors",
+  "description": "Nuclear Physics: alpha/beta/gamma decay, half-life calculation, nuclear fission vs fusion, binding energy per nucleon, nuclear reactors, chain reaction, critical mass.",
   "questions": [
     {
-      "stem": "The nucleus of an atom contains:",
+      "stem": "A radioactive substance has a half-life of 5 years. What fraction of the original sample remains after 20 years?",
       "options": [
-        {"option_text": "Electrons and protons", "is_correct": false},
-        {"option_text": "Protons (positive charge) and neutrons (neutral) — collectively called nucleons", "is_correct": true},
-        {"option_text": "Neutrons and electrons", "is_correct": false},
-        {"option_text": "Only protons", "is_correct": false}
+        {
+          "option_text": "1/16 — 20 years = 4 half-lives; fraction remaining = (1/2)^4 = 1/16",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/4 — this corresponds to only 2 half-lives (10 years), not 20 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/8 — this corresponds to 3 half-lives (15 years), not 20 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/20 — divides by 20 linearly; radioactive decay is exponential, not linear",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Atomic structure: NUCLEUS (protons + neutrons; ~10⁻¹⁵ m, 99.9% of atomic mass); ELECTRONS orbit nucleus (~10⁻¹⁰ m). Atomic number Z = number of protons. Mass number A = protons + neutrons. ISOTOPES — same Z, different A (e.g., ¹H, ²H/D, ³H/T; ²³⁵U, ²³⁸U). Strong nuclear force binds nucleons (~100x electromagnetic; very short range, ~1 fm). Discoveries — Rutherford 1911 (nucleus, α-scattering); Chadwick 1932 (neutron); Anderson 1932 (positron, antimatter); Pauli 1930 / Reines-Cowan 1956 (neutrino).",
+      "correct_letter": "A",
+      "explanation": "HALF-LIFE: time for half the radioactive atoms to decay. FORMULA: N = N0 x (1/2)^n where n = number of half-lives. n = 20/5 = 4 half-lives. Fraction remaining = (1/2)^4 = 1/16. DECAY TABLE: 1 half-life → 1/2; 2 → 1/4; 3 → 1/8; 4 → 1/16; 5 → 1/32. CARBON-14 DATING: half-life 5,730 years; used to date organic material up to ~50,000 years. URANIUM-238: half-life 4.5 billion years; used for geological dating. PYQ: half-life calculation in SSC CGL, IBPS PO physics — 1-2x per cycle.",
       "subject": "Physics",
-      "topic": "Nuclear physics — mixed tiers",
+      "topic": "Nuclear Physics — radioactivity, half-life, fission, fusion, binding energy",
       "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-25-phy-np-01",
-      "generated_at": "2026-04-25T05:40:00+00:00",
-      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00001"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_001"
     },
     {
-      "stem": "The half-life of a radioactive substance is:",
+      "stem": "In nuclear fission, a heavy nucleus (like U-235) splits into smaller nuclei. This process releases energy because:",
       "options": [
-        {"option_text": "The total lifetime of the substance", "is_correct": false},
-        {"option_text": "The time taken for HALF of the original radioactive nuclei to decay (a constant for each isotope)", "is_correct": true},
-        {"option_text": "The time it takes to be detected", "is_correct": false},
-        {"option_text": "Half the time of one full radioactive cycle", "is_correct": false}
+        {
+          "option_text": "The products have greater binding energy per nucleon than the original nucleus, releasing the difference as energy",
+          "is_correct": true
+        },
+        {
+          "option_text": "The total mass of products is greater than the original nucleus, and extra mass converts to energy",
+          "is_correct": false
+        },
+        {
+          "option_text": "Fission creates new protons and neutrons; the energy comes from creating these new particles",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chemical bonds between uranium atoms break releasing stored chemical energy in the nucleus",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Half-life (T½) — time for half the original nuclei to decay. Constant for a given isotope (independent of physical/chemical conditions). After n half-lives, the surviving fraction = (1/2)ⁿ. Examples: ³H tritium 12.3 yr; ¹⁴C 5,730 yr (used in carbon-dating); ¹³¹I 8 days (used in thyroid imaging + therapy); ²³⁵U 704 million years; ²³⁸U 4.5 billion years; ⁴⁰K 1.3 billion years (used to date rocks); ¹³⁷Cs 30 years (post-Chernobyl/Fukushima fallout). Decay constant λ = ln 2 / T½. Activity A = λN; measured in becquerel (Bq, 1 decay/s) or curie (Ci = 3.7 × 10¹⁰ Bq).",
+      "correct_letter": "A",
+      "explanation": "BINDING ENERGY: energy needed to disassemble a nucleus into protons and neutrons. BINDING ENERGY PER NUCLEON: peaks at iron-56 (Fe-56). FISSION: heavy nuclei (U-235, Pu-239) have LOWER binding energy per nucleon than mid-sized nuclei (like Kr, Ba). When U-235 splits → products have HIGHER binding energy per nucleon. The DIFFERENCE in binding energy is released (E = mc² — mass defect). FUSION: light nuclei (H-1, H-2) also have lower binding energy per nucleon → fusing them toward iron releases energy. MASS DEFECT: products are LIGHTER than reactants (not heavier) — the lost mass converts to energy. PYQ: why fission releases energy in UPSC GS-3, SSC CGL, IBPS PO.",
       "subject": "Physics",
-      "topic": "Nuclear physics — mixed tiers",
+      "topic": "Nuclear Physics — radioactivity, half-life, fission, fusion, binding energy",
       "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-25-phy-np-02",
-      "generated_at": "2026-04-25T05:40:00+00:00",
-      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00002"
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_002"
     },
     {
-      "stem": "In nuclear FISSION (used in nuclear reactors and atom bombs):",
+      "stem": "Alpha particles emitted during radioactive decay consist of:",
       "options": [
-        {"option_text": "Two light nuclei fuse to form a heavier nucleus", "is_correct": false},
-        {"option_text": "A heavy nucleus (e.g., U-235) splits into two lighter nuclei + neutrons + energy", "is_correct": true},
-        {"option_text": "An electron is emitted from the nucleus", "is_correct": false},
-        {"option_text": "Atoms simply rearrange chemically", "is_correct": false}
+        {
+          "option_text": "Two protons and two neutrons (helium-4 nucleus) — identical to a He-4 nucleus with charge +2",
+          "is_correct": true
+        },
+        {
+          "option_text": "High-energy electrons emitted from the nucleus during beta decay — that is a beta particle",
+          "is_correct": false
+        },
+        {
+          "option_text": "High-energy electromagnetic radiation with no charge or mass — that is gamma radiation",
+          "is_correct": false
+        },
+        {
+          "option_text": "A single proton ejected from the nucleus under high nuclear pressure (not this)",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "FISSION — heavy nucleus splits. Discovered 1938 by Otto Hahn + Lise Meitner + Fritz Strassmann. Example: ²³⁵U + n → ¹⁴¹Ba + ⁹²Kr + 3n + ~200 MeV energy. Released neutrons can trigger further fissions → CHAIN REACTION. Critical mass — minimum mass for sustained chain reaction (uranium-235 ~52 kg sphere; can be smaller with reflector). Atom bomb (uncontrolled chain reaction); nuclear reactor (controlled, with moderator + control rods). Hiroshima 'Little Boy' (Aug 6, 1945) — U-235 gun-type. Nagasaki 'Fat Man' (Aug 9, 1945) — Pu-239 implosion-type. FUSION (opposite) — light nuclei combine; powers stars, hydrogen bomb, tokamak research (ITER). E = mc² governs both.",
+      "correct_letter": "A",
+      "explanation": "THREE TYPES OF RADIOACTIVE DECAY: ALPHA (α): 2 protons + 2 neutrons = He-4 nucleus. Charge = +2. LEAST penetrating (stopped by paper or skin). Most ionising. BETA (β): electron (β-) or positron (β+) emitted from nucleus. Moderately penetrating (stopped by aluminium sheet). GAMMA (γ): high-energy electromagnetic radiation (photons). Most penetrating (needs thick lead/concrete). No charge, no mass. DECAY EQUATIONS: Alpha decay → atomic number decreases by 2, mass number decreases by 4. Beta- decay → atomic number increases by 1 (neutron → proton + electron + antineutrino). PYQ: alpha/beta/gamma properties in SSC CGL, IBPS PO, UPSC physics.",
       "subject": "Physics",
-      "topic": "Nuclear physics — mixed tiers",
+      "topic": "Nuclear Physics — radioactivity, half-life, fission, fusion, binding energy",
       "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-25-phy-np-03",
-      "generated_at": "2026-04-25T05:40:00+00:00",
-      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00003"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_003"
     },
     {
-      "stem": "Einstein's famous equation E = mc² describes:",
+      "stem": "In a nuclear reactor, control rods made of boron or cadmium are used to:",
       "options": [
-        {"option_text": "Speed of sound", "is_correct": false},
-        {"option_text": "Mass-energy equivalence — even tiny mass converts to enormous energy (since c² is huge)", "is_correct": true},
-        {"option_text": "Newton's second law", "is_correct": false},
-        {"option_text": "Wave equation", "is_correct": false}
+        {
+          "option_text": "Absorb excess neutrons and control the rate of the chain reaction",
+          "is_correct": true
+        },
+        {
+          "option_text": "Slow down neutrons to thermal energies (that is the moderator's role, not the control rods)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Reflect neutrons back into the reactor core to increase efficiency",
+          "is_correct": false
+        },
+        {
+          "option_text": "Convert nuclear energy into electrical energy through direct electromagnetic induction",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "E = mc² (c = 3 × 10⁸ m/s). 1 g of matter converted entirely to energy = (10⁻³)(3×10⁸)² = 9 × 10¹³ J ≈ 21,500 tons of TNT (= about Hiroshima yield). In nuclear reactions, only a small fraction (~0.1%) of mass converts. MASS DEFECT — the mass of a nucleus is slightly less than the sum of its individual nucleons; the missing mass appears as binding energy. Iron-56 has the highest binding energy per nucleon — fusion + fission both move toward Fe-56 → release energy. Stars: hydrogen → helium fusion (proton-proton chain in sun, CNO cycle in heavier stars); supernovae produce elements heavier than iron via r-process.",
+      "correct_letter": "A",
+      "explanation": "NUCLEAR REACTOR COMPONENTS: (1) FUEL: enriched U-235 or Pu-239. (2) MODERATOR: heavy water (D2O) or graphite — slows neutrons to thermal energies to sustain chain reaction. (3) CONTROL RODS: boron, cadmium, hafnium — absorb neutrons to CONTROL the reaction rate. Inserted = fewer neutrons available = slower reaction. Withdrawn = more neutrons = faster reaction. (4) COOLANT: water or CO2 — carries heat away. (5) REFLECTOR: reflects neutrons back into core. MODERATOR vs CONTROL RODS: moderator slows neutrons; control rods absorb them. India's RAPS, TAPS use CANDU-type heavy water reactors. PYQ: nuclear reactor components in UPSC GS-3, IBPS PO, SSC CGL.",
       "subject": "Physics",
-      "topic": "Nuclear physics — mixed tiers",
+      "topic": "Nuclear Physics — radioactivity, half-life, fission, fusion, binding energy",
       "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-25-phy-np-04",
-      "generated_at": "2026-04-25T05:40:00+00:00",
-      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00004"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_004"
     },
     {
-      "stem": "The MOST common moderator used in Indian PHWR (Pressurised Heavy Water Reactor) nuclear reactors is:",
+      "stem": "Nuclear fusion powers the Sun. The primary fusion reaction in the Sun combines:",
       "options": [
-        {"option_text": "Graphite", "is_correct": false},
-        {"option_text": "Heavy water (D₂O)", "is_correct": true},
-        {"option_text": "Light water (H₂O)", "is_correct": false},
-        {"option_text": "Liquid sodium", "is_correct": false}
+        {
+          "option_text": "Hydrogen nuclei (protons) to form helium-4, releasing enormous energy (proton-proton chain)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Uranium atoms to release energy via fission — the Sun uses fusion, not fission",
+          "is_correct": false
+        },
+        {
+          "option_text": "Carbon and oxygen nuclei to form iron at the Sun's core temperature (not this)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Helium nuclei to form hydrogen, which is the reverse of the actual fusion process",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "MODERATOR — slows down neutrons (fast neutrons → thermal neutrons, more likely to cause fission of U-235). Common moderators: HEAVY WATER (D₂O — used in PHWRs / CANDU; expensive but allows use of natural uranium without enrichment). LIGHT WATER (H₂O — used in PWR/BWR; cheaper but absorbs more neutrons → requires enriched U-235); GRAPHITE (used in earlier UK Magnox + Soviet RBMK; Chernobyl was graphite-moderated). India's nuclear programme — 3-stage: Stage 1 PHWR with natural U; Stage 2 fast breeder with Pu + thorium; Stage 3 thorium-based reactors. Tarapur was the first nuclear power plant (1969, BWR design from US). India has 23 operational reactors (~7,500 MWe, ~3% of grid). Kudankulam (TN) — VVER design with Russia.",
+      "correct_letter": "A",
+      "explanation": "SOLAR FUSION: proton-proton chain reaction. NET REACTION: 4 H-1 → He-4 + 2 positrons + 2 neutrinos + energy. TEMPERATURE NEEDED: ~15 million K (Sun's core temperature). FUSION vs FISSION: fusion = light nuclei combine; fission = heavy nuclei split. BOTH release energy. H-BOMB (thermonuclear bomb): uncontrolled fusion (D-T: deuterium + tritium). ITER/TOKAMAK: experimental controlled fusion reactors (plasma at 150 million K). ADVANTAGE of fusion: fuel is deuterium (from seawater), no long-lived radioactive waste. CHALLENGE: achieving and maintaining the required plasma temperature and pressure. PYQ: solar fusion fuel and reaction in UPSC, SSC CGL, IBPS PO science.",
       "subject": "Physics",
-      "topic": "Nuclear physics — mixed tiers",
+      "topic": "Nuclear Physics — radioactivity, half-life, fission, fusion, binding energy",
       "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-25-phy-np-05",
-      "generated_at": "2026-04-25T05:40:00+00:00",
-      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00005"
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_005"
     },
     {
-      "stem": "When a radioactive nucleus emits an ALPHA particle, the resulting nucleus has:",
+      "stem": "The 'critical mass' of a fissile material is defined as:",
       "options": [
-        {"option_text": "Same atomic number, same mass number", "is_correct": false},
-        {"option_text": "Atomic number reduced by 2; mass number reduced by 4", "is_correct": true},
-        {"option_text": "Atomic number increased by 1; mass number unchanged", "is_correct": false},
-        {"option_text": "Atomic number reduced by 1; mass number unchanged", "is_correct": false}
+        {
+          "option_text": "The minimum mass required for a self-sustaining nuclear chain reaction to occur",
+          "is_correct": true
+        },
+        {
+          "option_text": "The maximum mass of uranium that can be safely stored in a single container",
+          "is_correct": false
+        },
+        {
+          "option_text": "The mass of fuel consumed per unit energy produced in a nuclear reactor",
+          "is_correct": false
+        },
+        {
+          "option_text": "The mass of control rods needed to completely stop a reactor's chain reaction",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Alpha (α) particle = helium nucleus (2 protons + 2 neutrons; ⁴₂He). Alpha decay: ᴬ₂X → ᴬ⁻⁴₂₋₂Y + ⁴₂He. Example: ²³⁸U → ²³⁴Th + α. BETA-MINUS (β⁻) decay: a neutron in the nucleus becomes a proton + electron + antineutrino → atomic number INCREASES by 1; mass number unchanged. Example: ¹⁴C → ¹⁴N + e⁻ + ν̄. BETA-PLUS (β⁺): proton → neutron + positron + neutrino → atomic number decreases by 1. GAMMA (γ) decay: high-energy photon emitted; no change in atomic or mass number — nucleus drops from excited to ground state. Penetrating power: α (stopped by paper) < β (stopped by aluminium foil) < γ (needs lead/concrete).",
+      "correct_letter": "A",
+      "explanation": "CRITICAL MASS: the minimum amount of fissile material (U-235, Pu-239) in which a self-sustaining chain reaction can occur. Below critical mass: too many neutrons escape before causing another fission. At critical mass: exactly one neutron from each fission causes another fission (k = 1; steady state). Above critical mass (supercritical): chain reaction accelerates exponentially → explosion (nuclear bomb). CRITICAL MASS OF U-235: ~52 kg (spherical, no reflector). With a neutron reflector: can be reduced to ~15 kg. IMPLOSION DESIGN: Fat Man (Hiroshima used gun-type; Nagasaki used implosion) — rapidly compresses sub-critical Pu to supercritical. PYQ: critical mass definition in UPSC GS-3, defence current affairs, SSC CGL.",
       "subject": "Physics",
-      "topic": "Nuclear physics — mixed tiers",
+      "topic": "Nuclear Physics — radioactivity, half-life, fission, fusion, binding energy",
       "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-25-phy-np-06",
-      "generated_at": "2026-04-25T05:40:00+00:00",
-      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00006"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_006"
     },
     {
-      "stem": "If 8 g of a radioactive substance has a half-life of 4 days, how much will remain after 16 days?",
+      "stem": "Radioactive iodine-131 (I-131) with a half-life of 8 days is used in thyroid cancer treatment. If a patient receives 160 mg of I-131, how much remains after 32 days?",
       "options": [
-        {"option_text": "1 g", "is_correct": false},
-        {"option_text": "0.5 g", "is_correct": true},
-        {"option_text": "2 g", "is_correct": false},
-        {"option_text": "4 g", "is_correct": false}
+        {
+          "option_text": "10 mg — 32/8 = 4 half-lives; 160 x (1/2)^4 = 160/16 = 10 mg",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 mg — corresponds to 3 half-lives (24 days); 160 x (1/2)^3 = 20 mg — wrong number of half-lives",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 mg — corresponds to 2 half-lives (16 days); 160 x (1/2)^2 = 40 mg — wrong count",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 mg — corresponds to 5 half-lives (40 days); 160 x (1/2)^5 = 5 mg — wrong time period",
+          "is_correct": false
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "16 days = 4 half-lives (16 / 4 = 4). After n half-lives, the remaining fraction = (1/2)ⁿ = (1/2)⁴ = 1/16. Remaining = 8 × 1/16 = 0.5 g. Step-wise: Day 0 → 8 g; Day 4 → 4 g; Day 8 → 2 g; Day 12 → 1 g; Day 16 → 0.5 g. Note — the decay is exponential, not linear; after 4 half-lives, ~93.75% has decayed.",
+      "correct_letter": "A",
+      "explanation": "CALCULATION: n = 32/8 = 4 half-lives. Remaining = 160 x (1/2)^4 = 160 x 1/16 = 10 mg. MEDICAL USE: I-131 (radioiodine) concentrates in thyroid tissue → treats hyperthyroidism and differentiated thyroid cancer. EMISSION: beta and gamma rays — kills thyroid cells locally. HALF-LIFE SIGNIFICANCE: 8-day half-life means the dose is mostly gone within 40 days (5 half-lives = ~3% remaining). After 32 days (4 half-lives), only 10/160 = 6.25% remains. PYQ: I-131 half-life calculation in IBPS PO quantitative science or UPSC GS-3 nuclear medicine context.",
       "subject": "Physics",
-      "topic": "Nuclear physics — mixed tiers",
+      "topic": "Nuclear Physics — radioactivity, half-life, fission, fusion, binding energy",
       "topic_code": "PHY_NUCLEAR_PHYSICS_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-25-phy-np-07",
-      "generated_at": "2026-04-25T05:40:00+00:00",
-      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_00007"
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-06",
+      "id": "sgk_PHY_NUCLEAR_PHYSICS_MIXED_007"
     }
   ]
 }
