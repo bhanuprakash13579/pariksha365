@@ -132,7 +132,330 @@ If you still compute 17 × 14 by column multiplication, you are losing 15 second
 
 \newpage
 
-# 📈 PART 1 — PERCENTAGE
+# PART 0B — THE SPEED TOOLKIT: SOLVE WITHOUT SOLVING
+
+> In a 60-minute exam with 25 arithmetic questions, you have **144 seconds per question** on average — but some questions will take 3 minutes and others should take 10 seconds. This chapter teaches you how to find the 10-second path first, every time, before committing to the 3-minute path.
+
+The examiner designs questions that have a long route and a short route. The student who scores 90%+ is not faster at arithmetic — they have trained themselves to see the short route in 3 seconds.
+
+---
+
+## THE 3-SECOND PRE-SCAN (do this before writing a single digit)
+
+When you see a new question, your pencil should be **still** for 3 seconds while you:
+
+1. **Glance at the options.** Are unit digits all different? Are they widely spaced or close? Is one a multiple of 11 when others aren't? Can one be eliminated by sign or magnitude?
+2. **Glance at the formula structure.** Does it involve π? A square root? A power? Does the question ask for "unit digit" or "remainder" — if yes, full computation is never needed.
+3. **Ask: Can I plug options backward?** If the answer is a simple number, plugging it into the condition is often faster than solving.
+
+**Only after this 3-second scan, choose your path.** The ten techniques below give you the path options.
+
+---
+
+## TECHNIQUE 1 — Unit Digit Elimination
+
+**What it is:** The last digit (unit digit) of a product or power depends ONLY on the unit digits of the inputs. You can find the unit digit of 3^78 × 7^43 without computing anything beyond the last-digit cycles.
+
+**When to use:** Any question whose answer involves large powers, large products, or repeated multiplication — and where you can narrow down to one option by unit digit alone.
+
+**When NOT to use:** When multiple options share the same unit digit. Also when the question asks for the full value (not just unit digit) — the technique gives you unit digit only.
+
+<div class="keypoint">
+
+**Unit digit cycles (memorise this):**
+- Ends in 0, 1, 5, 6 → unit digit is always that same digit regardless of power.
+- Ends in 4 → cycle: 4, 6, 4, 6 … (even power → 6; odd power → 4).
+- Ends in 9 → cycle: 9, 1, 9, 1 … (odd power → 9; even power → 1).
+- Ends in 2, 3, 7, 8 → cycle of length 4 (2→2,4,8,6; 3→3,9,7,1; 7→7,9,3,1; 8→8,4,2,6).
+
+</div>
+
+**Worked example.** Find the unit digit of 2^84 + 3^65.
+- 2^84: cycle {2,4,8,6} length 4. 84 mod 4 = 0 → take last in cycle = **6**.
+- 3^65: cycle {3,9,7,1} length 4. 65 mod 4 = 1 → take 1st = **3**.
+- Sum unit digit: 6 + 3 = 9. Options with unit digit ≠ 9 are eliminated immediately.
+
+*If options were 109, 213, 249, 409 → only 249 ends in 9 → answer without computing.*
+
+---
+
+## TECHNIQUE 2 — Divisibility Elimination (including the π = 22/7 trick)
+
+**What it is:** The answer to many geometry problems must be divisible by specific numbers because of the formula structure. You can eliminate options before computing.
+
+**When to use:**
+- **Formula involves π = 22/7:** The answer will contain 22 in the numerator → divisible by both **2 and 11**. If options include only one number divisible by 11 and it also passes the magnitude check, it is almost certainly the answer.
+- **Formula involves 3 in denominator** (cone, pyramid): answer divisible by specific factors after cancellation.
+- **Formula involves √3**: answer is irrational. If options are all integers except one (which has √3), that one is correct.
+
+<div class="keypoint">
+
+**The π = 22/7 rule:**
+- Cylinder/Cone/Sphere volumes and surface areas use π = 22/7 in exams.
+- Volume of cone = (1/3)(22/7)r²h = **22r²h / 21**. The 22 in the numerator guarantees the answer is divisible by **11** (and 2) when the dimensions give an integer answer.
+- Hemisphere TSA = 3πr² = 3(22/7)r² = **66r²/7**. Again, 66 = 6×11.
+- Before computing: look at options, eliminate any not divisible by 11.
+
+</div>
+
+**Worked example.** A cone has r = 7 cm, h = 6 cm. Volume = ?
+Options: (a) 280 cm³ (b) 308 cm³ (c) 294 cm³ (d) 315 cm³
+
+*Fast path:* Formula = (22/21) × r²h = (22/21) × 49 × 6 = 22 × 14 = **308**.
+*Even faster:* 308 ÷ 11 = 28 ✓. 280 ÷ 11 = 25.45 ✗. 294 ÷ 11 = 26.7 ✗. 315 ÷ 11 = 28.6 ✗. Only (b) is divisible by 11 → answer = **(b) 308** in 5 seconds.
+
+**When NOT to use:** When r or h are given as decimals or fractions that don't simplify cleanly. Also when multiple options are divisible by 11 — you'll need to compute the magnitude too.
+
+---
+
+## TECHNIQUE 3 — Magnitude Estimation (the "ballpark" method)
+
+**What it is:** Round every number to 1 significant figure, compute the rough answer in your head, and eliminate options that are clearly too large or too small.
+
+**When to use:** Options are spread across different orders of magnitude (e.g., 200, 2000, 20000). One rough calculation kills 3 of 4 options.
+
+**When NOT to use:** Options are clustered close together (e.g., 1218, 1224, 1230, 1236). A rough calculation will not distinguish them — compute exactly.
+
+**Worked example.** 3.97 % of 2498 + 7.04 × 39.6 = ?
+Options: (a) 178 (b) 378 (c) 578 (d) 778
+
+*Rough:* ≈ 4% of 2500 + 7 × 40 = 100 + 280 = 380. Closest = **(b) 378**.
+
+*The exam calls this type "Approximation" and always gives options far enough apart that rounding to 1-2% is safe.*
+
+---
+
+## TECHNIQUE 4 — Backward Substitution (plug options in)
+
+**What it is:** Instead of solving the equation algebraically, plug each option into the condition and check which one satisfies it.
+
+**When to use:**
+- Quadratic equations (especially when factorisation is hard).
+- Age problems, profit-loss problems where the unknowns are one of the options.
+- "Find the number such that..." questions.
+
+**When NOT to use:**
+- Options are expressions (like "2x + 3"), not numbers.
+- The "check" itself takes longer than solving the equation.
+- The question has infinite solutions — "which of these satisfies" needs every option tested, costing time.
+
+**Worked example.** x² − 7x + 12 = 0. Find x.
+Options: (a) 2 (b) 3 (c) 5 (d) 6
+
+*Traditional:* Factorise → (x−3)(x−4) = 0 → x = 3 or 4. Since 4 is not in options, **x = 3**.
+*Faster:* Plug (b): 9 − 21 + 12 = 0 ✓ → **(b) 3** in 4 seconds.
+
+**Worked example (profit/loss).** A shopkeeper sells an item at 20% profit. If he had sold it for ₹12 more, profit would be 30%. Find the cost price.
+Options: (a) ₹60 (b) ₹80 (c) ₹100 (d) ₹120
+
+*Backward sub with (d):* SP at 20% = 120 + 24 = 144. SP at 30% = 120 + 36 = 156. Difference = 12 ✓ → **CP = ₹120 = (d)**.
+*Try (c):* SP at 20% = 120, SP at 30% = 130. Difference = 10 ≠ 12. ✗.
+
+---
+
+## TECHNIQUE 5 — Assume Base = 100 (for percentages and ratios)
+
+**What it is:** In any percentage or profit-loss problem, assume the reference quantity = 100 (or any convenient round number). This turns "express as percentage of original" into pure arithmetic, no variables.
+
+**When to use:** Percentage change, ratio comparisons, successive change problems, profit/loss/discount chains. Almost always faster than using variables.
+
+**When NOT to use:** The problem has a specific absolute value that must be preserved (e.g., "find the actual CP if SP = ₹240 and profit = 20%") — base is already fixed by the numbers given.
+
+**Worked example.** A's salary is 25% more than B's. By what % is B's salary less than A's?
+
+*Variable method:* Let B = x, A = 1.25x. % less = (A−B)/A × 100 = 0.25x/1.25x × 100 = 20%.
+*Base 100 method:* Let B = 100. Then A = 125. B is less than A by (125−100)/125 × 100 = 25/125 × 100 = **20%**. No algebra needed.
+
+**Worked example.** A price rises 20%, then falls 20%. Net effect?
+
+*Base 100:* Start = 100. After +20%: 120. After −20%: 120 × 0.8 = 96. Net = **−4%**.
+*Formula:* 20 − 20 + (20)(−20)/100 = 0 − 4 = −4% ✓. Both fast, but base-100 is more intuitive.
+
+---
+
+## TECHNIQUE 6 — LCM = Total Work (for Time-Work and Pipes)
+
+**What it is:** Instead of using fractions (A does 1/a of work per day), set total work = LCM of all time values. Then each person's rate per day is an integer. No fractions, no cross-multiplication.
+
+**When to use:** Every single time-work or pipes problem. This is a universal substitution for this topic — not a special trick.
+
+**When NOT to use:** Basically always use it. The only exception: if the problem gives fractional portions done ("A completes 2/5 of a job in 4 days") — then work directly with the fraction.
+
+**Worked example.** A completes a job in 12 days, B in 18 days. Together, how long?
+
+*Fraction method:* 1/12 + 1/18 = 3/36 + 2/36 = 5/36. Together = 36/5 = **7.2 days**.
+*LCM method:* Total work = LCM(12, 18) = 36 units. A's rate = 36/12 = 3 units/day. B's rate = 36/18 = 2 units/day. Together: 5 units/day → 36/5 = **7.2 days**. Same answer, no fraction arithmetic.
+
+**When it saves the most time:** Three people, one joins midway. LCM turns 1/a + 1/b + 1/c into integer rates; the partial-work calculation becomes subtraction of integers.
+
+---
+
+## TECHNIQUE 7 — The Alligation Cross (the most powerful 2-line shortcut in arithmetic)
+
+**What it is:** A visual shortcut that finds the ratio in which two components (of known values) must be mixed to achieve a desired average value. Works for: mixture prices, concentrations, average speeds, ratio blending, dilution problems.
+
+<div class="keypoint">
+
+**The Cross:**
+```
+ Value A              Value B
+    \                   /
+     \  (B−Mean)      /
+      ×         ×
+     /  (Mean−A)      \
+    /                   \
+         Mean value
+```
+**Ratio A : B = (B − Mean) : (Mean − A)**
+
+</div>
+
+**When to use:** Any problem mixing two things where you know the individual values and the target mixture value. Average speed problems are a hidden alligation (two speeds → find ratio of distances OR times).
+
+**When NOT to use:** Three-component mixing (solve in two passes: fix one pair first). When components are not mixed in unknown ratio (ratio is given; you're solving for something else).
+
+**Worked example (mixture).** A 20-litre solution of 40% alcohol is mixed with a 50-litre solution of 80% alcohol. Find the alcohol % in the mixture.
+
+*Standard:* Total alcohol = 0.4×20 + 0.8×50 = 8 + 40 = 48. Total solution = 70. % = 48/70 × 100 = **68.57 %**.
+
+*Alligation (to check):* Mean = 68.57, A = 40, B = 80. Ratio = (80−68.57):(68.57−40) = 11.43:28.57 = 2:5. Check: 20:50 = 2:5 ✓.
+
+**Worked example (find the ratio to achieve a target).** Pure acid (100%) is mixed with water (0%) to make 60% acid. Ratio acid:water?
+
+*Alligation:* Ratio = (60−0):(100−60) = 60:40 = **3:2**. Done in 3 seconds.
+
+**Worked example (average speed, the hidden alligation).** A car travels 60 km at 40 km/h and 90 km at 60 km/h. Average speed?
+
+*Traditional:* Time₁ = 60/40 = 1.5 h. Time₂ = 90/60 = 1.5 h. Total = 150 km in 3 h → **50 km/h**.
+*Alligation (only works for equal-distance legs — different formula for equal-time legs):* Equal time here → average speed = (40 + 60)/2 = 50 km/h. But unequal distance — must use time-based alligation: ratio of times = 1.5:1.5 = 1:1. Weighted average speed = (40×1 + 60×1)/(1+1) = **50 km/h** ✓.
+
+---
+
+## TECHNIQUE 8 — Trigonometric Substitution (θ = 45°, 30°, or 60°)
+
+**What it is:** Exam questions often give a trigonometric expression and ask "which of these equals it?" or "simplify this." Substituting θ = 45° makes sin θ = cos θ = 1/√2 and tan θ = 1 — this simplifies the expression to a number. Match to whichever option also gives that number.
+
+**When to use:** Identity verification questions ("which option equals sinθ / (1+cosθ)?"). Expression comparison ("which is equivalent to...?"). Choosing the correct simplification.
+
+**When NOT to use:**
+1. When the question asks you to PROVE an identity (substitution checks a specific case, not a universal proof — a wrong identity can still hold at θ = 45°). Use algebraic steps for proofs.
+2. When two or more options give the same value at θ = 45° → also try θ = 30° or 60° to separate them.
+3. When the expression is undefined at θ = 45° (e.g., involves tan 90° or sec 90°) — choose a different angle.
+
+**Worked example.** Which expression equals sin θ / (1 − cos θ)?
+Options: (a) cosec θ + cot θ (b) cosec θ − cot θ (c) sec θ + 1 (d) cot θ + cos θ
+
+*Substituting θ = 45°:* LHS = (1/√2)/(1 − 1/√2) = (1/√2)/((√2−1)/√2) = 1/(√2−1) = √2+1 (rationalised).
+- (a): cosec 45° + cot 45° = √2 + 1 ✓ → matches.
+- No need to check others once one matches. Answer = **(a)**.
+
+*Algebraic verification (when you have time):* Multiply numerator and denominator by (1 + cos θ): sinθ(1+cosθ)/(1−cos²θ) = sinθ(1+cosθ)/sin²θ = (1+cosθ)/sinθ = 1/sinθ + cosθ/sinθ = cosecθ + cotθ ✓.
+
+<div class="pitfall">
+
+**Common trap:** A question says "simplify (sin θ + cos θ)²." At θ = 45°, this = (1/√2 + 1/√2)² = (√2)² = 2. Options: (a) 1 + 2sinθcosθ (b) 1 + sin2θ (c) sin2θ + 1 (d) both (a) and (b). At θ = 45°: (a) = 1 + 2(1/2) = 2 ✓; (b) = 1 + 1 = 2 ✓. Both match → you cannot distinguish by substitution alone. **The answer is (d)**. Lesson: when multiple options match at one angle, try a second angle, or use algebra.
+
+</div>
+
+---
+
+## TECHNIQUE 9 — Euler's Totient φ(n) (co-prime counting)
+
+**What it is:** φ(n) = count of integers from 1 to n that are co-prime to n (HCF = 1).
+
+**Formula:** φ(n) = n × (1 − 1/p₁) × (1 − 1/p₂) × … for each distinct prime factor p of n.
+
+**When to use:** Questions that ask "how many numbers from 1 to n are co-prime to n?" or "how many reduced fractions with denominator n exist?" SSC CGL Tier-2, Mathematics optional papers.
+
+**When NOT to use:** If the question asks "how many are NOT co-prime" — compute n − 1 − φ(n) (excluding 1 which is always co-prime, and n itself which shares factor n).
+
+**Worked example.** How many numbers from 1 to 36 are co-prime to 36?
+- 36 = 2² × 3². Distinct primes: 2 and 3.
+- φ(36) = 36 × (1 − 1/2) × (1 − 1/3) = 36 × 1/2 × 2/3 = **12**.
+- Those 12 numbers are: 1, 5, 7, 11, 13, 17, 19, 23, 25, 29, 31, 35.
+
+**Worked example.** For n = 30 = 2 × 3 × 5: φ(30) = 30 × (1/2) × (2/3) × (4/5) = **8**.
+
+---
+
+## TECHNIQUE 10 — Casting Out Nines (verify your answer instantly)
+
+**What it is:** The digital root of a correct calculation must be consistent. The digital root (sum digits until 1 digit) of A + B must equal the digital root of the answer. Catches arithmetic errors in 2 seconds.
+
+**When to use:** After you compute a long multiplication or addition to verify you haven't made an error.
+
+**When NOT to use:** Subtraction checks are trickier. Catches only errors that change the digital root — a mistake that moves units digit from 6 to 9 (same digital root mod 9) would pass.
+
+**Worked example.** 237 × 43 = 10,191. Verify.
+- Digital root of 237 = 2+3+7 = 12 → 1+2 = 3.
+- Digital root of 43 = 4+3 = 7.
+- Product digital root = 3 × 7 = 21 → 2+1 = **3**.
+- Digital root of 10,191 = 1+0+1+9+1 = 12 → 1+2 = **3** ✓. Consistent → almost certainly correct.
+
+---
+
+## THE MASTER DECISION TREE
+
+```
+Question arrives
+│
+├── Does it ask for UNIT DIGIT or REMAINDER?
+│    → Use Technique 1 (unit digit) or remainder cyclicity
+│
+├── Does it involve π = 22/7? (circle, cone, cylinder, sphere)
+│    → Check options: eliminate those not divisible by 11
+│    → Technique 2
+│
+├── Are options far apart (10×+ ratio between smallest and largest)?
+│    → Rough estimate + Technique 3
+│
+├── Are options small numbers and question has one unknown?
+│    → Try plugging options backwards (Technique 4)
+│
+├── Does it say "x% of something" or "profit/loss/discount"?
+│    → Assume base = 100 (Technique 5)
+│
+├── Does it say "A does job in m days, B in n days"?
+│    → LCM = total work (Technique 6)
+│
+├── Does it mix two things to get an average/target value?
+│    → Alligation cross (Technique 7)
+│
+├── Does it involve a trig expression with θ unspecified?
+│    → Try θ = 45° (Technique 8)
+│
+├── Does it ask "how many from 1 to n are co-prime to n"?
+│    → Euler's Totient φ(n) (Technique 9)
+│
+└── None of the above → Solve normally, but use mental math
+     from PART 0 to speed up computation
+```
+
+---
+
+<div class="pitfall">
+
+**WHEN SHORTCUTS BACKFIRE — THE PAPER-SETTER'S TRAP**
+
+The examiner knows you know the shortcuts. Here is how they defeat them:
+
+1. **Twisted % problem:** "A's salary is 20% more than B's. B's salary is 20% more than C's. A's salary is what % more than C's?" — students use "20+20=40%" (wrong). Answer: 44% (use base-100 twice, not add). **The shortcut of adding percentages only works for ONE step of change from a FIXED base.**
+
+2. **Alligation with 3 components:** "Milk costing ₹16, ₹20, and ₹24 per litre mixed in some ratio to get ₹19 per litre." Alligation on 3 components simultaneously is ambiguous (infinite valid ratios). The examiner always specifies additional constraints. **Do not force alligation on 3-component mixes.**
+
+3. **Trig substitution gives 2 matching options:** As shown above, θ = 45° sometimes doesn't separate options. **Always try a second angle before finalising.**
+
+4. **Backward sub when options are large:** If options are 1200, 1400, 1600, 1800 and plugging 1600 takes as long as solving — just solve. Backward sub saves time only when plugging is genuinely faster.
+
+5. **Unit digit when options share it:** If options are 12, 32, 52, 72 — all unit digit 2 — unit digit elimination achieves nothing. **Move directly to magnitude or exact computation.**
+
+</div>
+
+---
+
+\newpage
+
+# PART 1 — PERCENTAGE
 
 ## 1.0 Opener
 
