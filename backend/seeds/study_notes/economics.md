@@ -90,6 +90,27 @@ The informal (unorganised) sector employs about **85% of India's workforce** but
 
 # PART B — NATIONAL INCOME
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["ECONOMIC SYSTEMS AND SECTORS"]:::root
+    R --> SE["3 Sectors of Economy"]:::key
+    R --> SY["Types of Economic Systems"]:::key
+    R --> IN["India's Economic Profile"]:::key
+    SE --> SE1["Primary sector: agriculture, mining, fishing<br>Secondary: manufacturing, construction<br>Tertiary (Services): banking, IT, trade, transport"]:::key
+    SE --> SE2["India GDP share (approx 2024):<br>Services: ~55% (largest)<br>Industry: ~29%; Agriculture: ~16%"]:::key
+    SE --> SE3["Agriculture employs ~46% of workforce<br>IT + services = largest GDP contributor<br>TRAP: employment share NOT same as GDP share"]:::trap
+    SY --> SY1["Market economy: prices by supply-demand; USA<br>Planned (Socialist) economy: state controls; USSR<br>Mixed economy: both public + private; India"]:::key
+    IN --> IN1["India: Mixed economy since 1947<br>LPG reforms 1991: Liberalisation, Privatisation, Globalisation<br>PM Narasimha Rao + FM Manmohan Singh"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 2 — GDP, GNP, and National Income
 
 Simon Kuznets (Nobel 1971) developed the modern framework of national income accounting in the 1930s. In India, V.K.R.V. Rao produced the first national income estimate in 1931 (for 1925–29). The National Income Committee under P.C. Mahalanobis (1949) set up the official measurement system.
@@ -135,6 +156,29 @@ India's GDP by PPP (Purchasing Power Parity) makes it the **3rd largest economy 
 
 # PART C — MONEY AND BANKING
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["GDP, GNP AND NATIONAL INCOME"]:::root
+    R --> DE["Key Definitions"]:::key
+    R --> CA["Calculation Chain"]:::proc
+    R --> IN["India Specifics"]:::key
+    R --> TR["TRAP: Real vs Nominal GDP"]:::trap
+    DE --> DE1["GDP: market value of all FINAL goods + services<br>produced WITHIN a country in a year<br>Includes output of foreigners in India"]:::key
+    DE --> DE2["GNP: GDP + Net Factor Income from Abroad<br>Income of all nationals (wherever located)<br>Excludes output of foreigners in India"]:::key
+    CA --> CA1["GNP - Depreciation = NNP at market price<br>NNP at market price - indirect taxes + subsidies<br>= NNP at factor cost = National Income"]:::proc
+    CA --> CA2["Per Capita Income = NNP / population<br>Real GDP: constant prices (removes inflation effect)<br>Nominal GDP: current prices (includes inflation)"]:::proc
+    IN --> IN1["India's GDP base year: 2011-12<br>GDP measured by: CSO (Central Statistics Office)<br>4 quarterly estimates per year"]:::key
+    TR --> TR1["TRAP: Real GDP growth removes inflation<br>If inflation = 10% and nominal GDP grows 12%<br>Real GDP growth = only 2%"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 3 — The Reserve Bank of India (RBI)
 
 **Founded:** 1 April 1935 under the RBI Act, 1934, based on recommendations of the **Hilton Young Commission (1926)**.
@@ -175,6 +219,30 @@ The difference between CRR and SLR: **CRR = kept with RBI as cash, no interest e
 - **Mandate**: Keep CPI inflation at **4% ± 2%** (i.e., 2–6% band) for 5-year blocks.
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["RESERVE BANK OF INDIA (RBI)"]:::root
+    R --> FO["Foundation + HQ"]:::date
+    R --> FN["Functions"]:::key
+    R --> MT["Monetary Policy Tools"]:::key
+    R --> TR["TRAP: CRR vs SLR"]:::trap
+    FO --> FO1["Founded: April 1, 1935 (under RBI Act 1934)<br>Nationalised: January 1, 1949<br>HQ: Mumbai; Governor: Sanjay Malhotra (from Dec 2024)"]:::date
+    FN --> FN1["Issues currency notes (except Re 1 coin — Govt)<br>Banker to Government (central + state)<br>Banker to banks (lender of last resort)"]:::key
+    FN --> FN2["Manages foreign exchange reserves<br>Regulates credit + money supply<br>Supervises commercial banks (CRR, SLR, repo)"]:::key
+    MT --> MT1["Repo Rate: rate at which RBI lends to banks<br>Reverse Repo: rate at which RBI borrows from banks<br>Raise Repo Rate = credit expensive = control inflation"]:::key
+    MT --> MT2["CRR (Cash Reserve Ratio): % of deposits<br>banks must keep with RBI as cash<br>SLR (Statutory Liquidity Ratio): % kept as liquid assets"]:::key
+    MT --> MT3["MPC (Monetary Policy Committee): 6 members<br>RBI Governor chairs; meets every 2 months<br>Inflation target: 4% (±2%)"]:::key
+    TR --> TR1["TRAP: CRR = kept with RBI (cash only)<br>SLR = kept by bank (cash+gold+govt securities)<br>Raising both reduces money banks can lend"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 4 — Banking in India
 
@@ -224,6 +292,29 @@ Reduced public sector banks from 27 to **12**:
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["BANKING IN INDIA"]:::root
+    R --> HI["History"]:::date
+    R --> TY["Types of Banks"]:::key
+    R --> IN["Key Institutions"]:::key
+    R --> SC["Key Schemes"]:::key
+    HI --> HI1["Imperial Bank (1921) converted to SBI in 1955<br>Bank Nationalisation: 14 banks July 1969<br>6 more nationalised in 1980 (PM Indira Gandhi)"]:::date
+    TY --> TY1["Public sector: SBI + 11 other nationalised banks<br>Private sector: HDFC, ICICI, Axis, Kotak<br>Foreign banks: Citibank, HSBC, Standard Chartered"]:::key
+    TY --> TY2["RRBs: Regional Rural Banks (1975)<br>Co-operative banks: agriculture credit<br>Small Finance Banks + Payment Banks (2015)"]:::key
+    IN --> IN1["NABARD: 1982; agriculture + rural credit<br>SIDBI: small industry development<br>NHB: National Housing Bank; EXIM Bank: trade"]:::key
+    SC --> SC1["PMJDY (Jan Dhan Yojana): zero-balance accounts<br>Financial inclusion for unbanked population<br>Launched Aug 28, 2014"]:::date
+    SC --> SC2["NPA: Non-Performing Asset<br>Loan overdue for more than 90 days<br>Insolvency + Bankruptcy Code 2016: resolution"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 5 — Inflation
 
 ### Types of Inflation
@@ -255,6 +346,29 @@ RBI targets **CPI inflation** at 4% ± 2% (the 2–6% band). RBI does NOT target
 
 # PART D — FISCAL POLICY
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["INFLATION"]:::root
+    R --> DE["Definition + Measurement"]:::key
+    R --> TY["Types of Inflation"]:::key
+    R --> EF["Effects"]:::key
+    R --> TR["TRAP: CPI vs WPI"]:::trap
+    DE --> DE1["Inflation: sustained rise in general price level<br>Purchasing power of money falls<br>India measures: CPI (Consumer Price Index)"]:::key
+    DE --> DE2["CPI: based on retail prices; basket of goods/services<br>WPI: Wholesale Price Index; producer prices<br>CPI = official inflation measure (since 2014)"]:::key
+    TY --> TY1["Demand-pull: excess money chasing same goods<br>Cost-push: input cost rises (oil shock)<br>Built-in: workers demand higher wages as prices rise"]:::key
+    TY --> TY2["Hyperinflation: very high (Germany 1923, Zimbabwe 2008)<br>Stagflation: inflation + stagnation together<br>Deflation: falling prices (reduces spending)"]:::key
+    EF --> EF1["Debtors gain: pay back less in real terms<br>Creditors lose: receive less in real terms<br>Fixed income earners lose most purchasing power"]:::key
+    TR --> TR1["TRAP: WPI is NOT official inflation measure now<br>CPI replaced WPI as headline inflation in 2014<br>RBI's MPC targets CPI inflation of 4% ± 2%"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 6 — Union Budget
 
 The Union Budget is presented by the Finance Minister in the Lok Sabha under **Article 112** (Annual Financial Statement) of the Constitution.
@@ -278,6 +392,29 @@ Since **2017**, the Budget is presented on **1 February** every year (previously
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["UNION BUDGET"]:::root
+    R --> PR["Presentation"]:::key
+    R --> ST["Budget Structure"]:::proc
+    R --> DE["Key Deficits"]:::key
+    R --> TR["TRAP: Revenue vs Capital"]:::trap
+    PR --> PR1["Presented by Finance Minister on February 1<br>(Earlier: last working day of February)<br>Interim budget in election year"]:::key
+    ST --> ST1["Revenue Budget: recurring in nature<br>Revenue Receipts (taxes, dividends)<br>Revenue Expenditure (salaries, interest, subsidies)"]:::proc
+    ST --> ST2["Capital Budget: long-term / asset-building<br>Capital Receipts (loans, disinvestment)<br>Capital Expenditure (infrastructure, repayment of loans)"]:::proc
+    DE --> DE1["Fiscal Deficit: Total expenditure minus<br>total receipts EXCLUDING borrowings<br>Shows how much government needs to borrow"]:::key
+    DE --> DE2["Revenue Deficit: Revenue exp - Revenue receipts<br>Primary Deficit: Fiscal deficit - Interest payments<br>FRBM Act 2003: targets to reduce fiscal deficit"]:::key
+    TR --> TR1["TRAP: Revenue expenditure = no asset creation<br>Capital expenditure = asset creation<br>Interest payment = Revenue expenditure NOT capital"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 7 — GST
 
 **GST launched: 1 July 2017** via the **101st Constitutional Amendment, 2016**. Slogan: "One Nation, One Tax."
@@ -297,6 +434,30 @@ Since **2017**, the Budget is presented on **1 February** every year (previously
 
 Petroleum and alcohol are the biggest revenues kept outside GST — states collect their own taxes on these. This is why petrol prices vary across states. These items generate the most state VAT revenue, so states were unwilling to bring them under GST.
 
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["GOODS AND SERVICES TAX (GST)"]:::root
+    R --> IN["Introduction"]:::date
+    R --> SL["GST Slabs"]:::key
+    R --> ST["Structure"]:::key
+    R --> TR["TRAP: Exempted goods"]:::trap
+    IN --> IN1["Introduced: July 1, 2017<br>101st Constitutional Amendment Act<br>One Nation One Tax — replaced 17 indirect taxes"]:::date
+    IN --> IN2["Replaced: VAT, Service Tax, Excise Duty<br>Central Sales Tax, Entertainment Tax, etc.<br>Destination-based tax (tax goes to where consumed)"]:::key
+    SL --> SL1["0%: Essential items — milk, salt, fresh vegetables<br>grains, fresh meat, books, newspapers<br>5%: Packaged food, coal, medicines, transport"]:::key
+    SL --> SL2["12%: Processed food, computers, mobile phones<br>18%: Capital goods, electronics, most services<br>28%: Luxury + sin goods (AC, premium cars, tobacco)"]:::key
+    ST --> ST1["CGST: Central GST (goes to Centre)<br>SGST: State GST (goes to state)<br>IGST: Integrated GST (interstate trade; goes to Centre)"]:::key
+    ST --> ST2["GST Council: Finance Minister chairs<br>1/3 vote weightage to Centre; 2/3 to States<br>Decisions by 3/4 majority"]:::key
+    TR --> TR1["TRAP: Petrol, diesel, alcohol NOT under GST<br>Real estate partially under GST<br>Electricity NOT under GST — biggest exclusions"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>
 
 ## Chapter 8 — Finance Commissions
@@ -322,6 +483,28 @@ The 14th Finance Commission under Y.V. Reddy is historically significant for jum
 \newpage
 
 # PART E — PLANNING AND DEVELOPMENT
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["FINANCE COMMISSIONS"]:::root
+    R --> BA["Basic Facts"]:::key
+    R --> KE["Key Finance Commissions"]:::date
+    R --> CR["Criteria for Devolution"]:::key
+    BA --> BA1["Constitutional body under Article 280<br>Constituted every 5 years by President<br>Recommends Centre-State revenue sharing"]:::key
+    BA --> BA2["Two types of distribution:<br>Vertical: how much to all states combined<br>Horizontal: how to divide among individual states"]:::key
+    KE --> KE1["1st Finance Commission: 1951 — K.C. Niyogi<br>13th FC: 2010-15 — Vijay Kelkar<br>14th FC: 2015-20 — Y.V. Reddy (raised state share to 42%)"]:::date
+    KE --> KE2["15th FC: 2020-25 — N.K. Singh<br>Recommended 41% to states (minus J&K as UT)<br>16th FC: 2026-31 — Arvind Panagariya (constituted 2023)"]:::date
+    CR --> CR1["Criteria include: Population (2011 census)<br>Income distance from richest state<br>Area, forest cover, demographic performance (fertility)"]:::key
+    CR --> CR2["TRAP: 14th FC raised state share from 32% to 42%<br>15th FC gave 41% (J&K bifurcation reduced it by 1%)<br>Richer states get less; poorer states get more (horizontal)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 9 — Five-Year Plans and NITI Aayog
 
@@ -367,6 +550,30 @@ NITI Aayog is **not** a constitutional or statutory body — it is formed by Cab
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["FIVE-YEAR PLANS AND NITI AAYOG"]:::root
+    R --> PC["Planning Commission"]:::date
+    R --> NA["NITI Aayog"]:::date
+    R --> KP["Key Plans"]:::key
+    R --> TR["TRAP: Last Five-Year Plan"]:::trap
+    PC --> PC1["Planning Commission: established 1950<br>PM = ex-officio Chairman<br>First Chairman: Jawaharlal Nehru"]:::date
+    PC --> PC2["Based on Soviet model of central planning<br>Nehru-Mahalanobis model: heavy industry emphasis<br>12 Five-Year Plans: 1951 to 2017"]:::key
+    NA --> NA1["NITI Aayog: replaced Planning Commission<br>January 1, 2015<br>Full form: National Institution for Transforming India"]:::date
+    NA --> NA2["PM = Chairperson; no voting powers<br>Think tank; not funding body (unlike Planning Commission)<br>Atal Innovation Mission, Aspirational Districts Programme"]:::key
+    KP --> KP1["1st Plan (1951-56): agriculture + irrigation<br>2nd Plan (1956-61): heavy industry (Mahalanobis)<br>5th Plan (1974-79): poverty eradication (Garibi Hatao)"]:::key
+    KP --> KP2["7th Plan (1985-90): food, work, productivity<br>8th Plan (1992-97): LPG reforms context<br>12th Plan (2012-17): Faster More Inclusive Sustainable Growth"]:::key
+    TR --> TR1["TRAP: 12th Plan (2012-17) = LAST Five-Year Plan<br>After that: 3-year Action Agenda + Vision 2022/2047<br>No 13th Five-Year Plan was ever made"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 10 — Poverty, Unemployment, and Human Development
 
 ### Poverty Measurement
@@ -404,6 +611,29 @@ HDI was conceived by **Mahbub ul Haq** and **Amartya Sen** (1990). It has three 
 
 # PART F — EXTERNAL SECTOR
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["POVERTY, UNEMPLOYMENT AND HDI"]:::root
+    R --> PO["Poverty Line"]:::key
+    R --> UN["Types of Unemployment"]:::key
+    R --> HD["Human Development Index"]:::key
+    R --> SC["Key Schemes"]:::key
+    PO --> PO1["Tendulkar Committee (2009): Rural Rs 816/month<br>Urban Rs 1000/month (2011-12 prices)<br>Based on: caloric intake + other needs"]:::key
+    PO --> PO2["Rangarajan Committee (2014): higher estimates<br>Rural Rs 972/month; Urban Rs 1407/month<br>India poverty declined from 55% (1970s) to ~22%"]:::key
+    UN --> UN1["Structural: industry shift (e.g. farmers to factories)<br>Frictional: between jobs (short-term)<br>Seasonal: farming off-season idle workers"]:::key
+    UN --> UN2["Disguised unemployment: more workers than needed<br>Classic example: Indian agriculture<br>Remove worker, no drop in output"]:::key
+    HD --> HD1["HDI: UNDP since 1990<br>3 dimensions: Long life, Education, GNI per capita<br>Scale 0-1; India ~0.644 (Medium HDI)"]:::key
+    SC --> SC1["MGNREGS (NREGA 2005): 100 days guaranteed employment<br>Demand-driven; Rs 207/day wage (avg)<br>Focus: rural household; Rs 1 lakh crore+ annual budget"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 11 — Balance of Payments and Forex
 
 ### Balance of Payments Structure
@@ -432,6 +662,29 @@ PM Narasimha Rao took over in June 1991. Finance Minister **Manmohan Singh** (a 
 
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["BALANCE OF PAYMENTS AND FOREX"]:::root
+    R --> BO["Balance of Payments (BOP)"]:::proc
+    R --> CA["Current Account"]:::key
+    R --> FX["Forex Reserves"]:::key
+    R --> TR["TRAP: Trade deficit vs Current Account deficit"]:::trap
+    BO --> BO1["BOP: record of all economic transactions<br>between residents of a country and the rest<br>BOP = Current Account + Capital Account"]:::proc
+    BO --> BO2["Current Account Deficit (CAD): most common<br>India usually runs a CAD<br>Financed by capital account surpluses (FDI, FII)"]:::key
+    CA --> CA1["Current Account = Trade balance (goods)<br>+ Trade in services + Income + Transfers<br>Trade deficit: imports > exports (India typical)"]:::key
+    CA --> CA2["India: largest remittance recipient globally<br>NRI remittances ~$120 billion/year<br>Helps offset trade deficit partially"]:::key
+    FX --> FX1["India's Forex Reserves: ~$620 billion (2024)<br>4th largest in the world<br>Held by RBI; includes gold + SDRs"]:::key
+    TR --> TR1["TRAP: Trade deficit = only goods imbalance<br>Current Account deficit = goods + services + income<br>India can have CA surplus even with trade deficit"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 12 — International Economic Institutions
 
 | Institution | Founded | HQ | Key Role |
@@ -448,6 +701,30 @@ PM Narasimha Rao took over in June 1991. Finance Minister **Manmohan Singh** (a 
 \newpage
 
 # PART G — AGRICULTURE AND KEY SCHEMES
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["INTERNATIONAL ECONOMIC INSTITUTIONS"]:::root
+    R --> IM["IMF"]:::date
+    R --> WB["World Bank Group"]:::date
+    R --> WT["WTO"]:::date
+    R --> OT["Others"]:::key
+    IM --> IM1["IMF: International Monetary Fund<br>Founded: 1944 Bretton Woods; 190 members<br>HQ: Washington DC; helps BOP crisis countries"]:::date
+    IM --> IM2["IMF creates SDR (Special Drawing Rights)<br>Surveillance of member economies<br>Conditionality on loans: austerity measures"]:::key
+    WB --> WB1["World Bank: founded 1944 Bretton Woods<br>HQ: Washington DC<br>IBRD (middle income) + IDA (poor countries)"]:::date
+    WB --> WB2["IFC: private sector; MIGA: investment guarantees<br>Focus: poverty reduction + sustainable development<br>Funds infrastructure in developing nations"]:::key
+    WT --> WT1["WTO: World Trade Organization<br>Replaced GATT in 1995; HQ Geneva<br>164 members; settles trade disputes"]:::date
+    WT --> WT2["Doha Development Agenda: 2001 (still incomplete)<br>Most Favoured Nation (MFN) principle<br>India: active in agriculture protection debates"]:::key
+    OT --> OT1["ADB: Asian Development Bank; HQ Manila; 1966<br>AIIB: HQ Beijing; 2016; China-led; 106 members<br>NDB: New Development Bank (BRICS); HQ Shanghai"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 13 — Agriculture
 
@@ -481,6 +758,30 @@ Examiners often ask "Father of Green Revolution in India" — the answer is **M.
 - **Rabi** (October–March): wheat, barley, gram (chickpea), mustard.
 - **Zaid** (March–June): watermelon, cucumber, summer vegetables.
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["AGRICULTURE IN ECONOMICS"]:::root
+    R --> SC["India's Scale"]:::key
+    R --> KP["Key Products + Rank"]:::key
+    R --> RE["Reforms"]:::key
+    R --> TR["TRAP: Largest vs 2nd Largest"]:::trap
+    SC --> SC1["India: 2nd largest agricultural land globally<br>After USA (by area under cultivation)<br>Agriculture employs ~46% of workforce"]:::key
+    SC --> SC2["Contributes ~16% of GDP<br>~13% of total exports<br>Allied sectors: Animal Husbandry, Fisheries, Forestry"]:::key
+    KP --> KP1["LARGEST PRODUCER in world:<br>Milk, Spices, Jute, Banana, Mango<br>Chickpea, Buffalo, Freshwater fish"]:::key
+    KP --> KP2["2ND LARGEST PRODUCER:<br>Rice, Wheat, Sugar, Cotton<br>Vegetables, Fruits, Oilseeds, Tea"]:::key
+    RE --> RE1["MSP (Minimum Support Price): guaranteed price<br>Announced by CCEA; CACP recommends<br>23 crops covered under MSP"]:::key
+    RE --> RE2["e-NAM: electronic National Agriculture Market<br>APMC reform: direct farm-to-buyer linkage<br>PM-KISAN: Rs 6000/year (3 installments) to farmers"]:::key
+    TR --> TR1["TRAP: India = LARGEST milk producer globally<br>India = 2ND largest rice producer (after China)<br>India = 2ND largest wheat producer (after China)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 14 — Key Government Schemes
 
 | Scheme | Year | What It Does |
@@ -510,6 +811,29 @@ Examiners often ask "Father of Green Revolution in India" — the answer is **M.
 \newpage
 
 # PART X — BANKING AWARENESS (For IBPS/SBI Candidates)
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart LR
+    R["KEY GOVERNMENT SCHEMES"]:::root
+    R --> HE["Health + Social"]:::key
+    R --> AG["Agriculture"]:::key
+    R --> EN["Energy + Environment"]:::key
+    R --> IN["Infrastructure + Finance"]:::key
+    HE --> H1["Ayushman Bharat PM-JAY: Rs 5 lakh/year<br>health cover; 50 crore beneficiaries (poorest 40%)"]:::key
+    HE --> H2["PMJAY: world's largest health insurance<br>Ujjwala Yojana: free LPG to BPL households<br>PM Awas Yojana: housing for all (rural + urban)"]:::key
+    AG --> A1["PM-KISAN: Rs 6000/year direct cash to farmers<br>MGNREGS: 100 days employment rural<br>PMFBY: crop insurance"]:::key
+    EN --> E1["PM Surya Ghar Muft Bijli: rooftop solar<br>1 crore households; 300 units free/month<br>National Solar Mission: 500 GW renewable by 2030"]:::key
+    IN --> I1["PMJDY: zero-balance bank accounts<br>PM Gati Shakti: multimodal infrastructure<br>Make in India (2014): boost manufacturing"]:::key
+    IN --> I2["Start-Up India (2016): ease of doing business<br>Digital India: internet + governance<br>Swachh Bharat Mission (2014): ODF + cleanliness"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Monetary Aggregates
 

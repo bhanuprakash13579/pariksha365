@@ -72,6 +72,30 @@ Binomial name of humans → <strong>Homo sapiens</strong>
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["CLASSIFICATION OF LIFE"]:::root
+    R --> K["5 Kingdoms — Whittaker 1969"]:::key
+    R --> T["Taxonomic Ranks"]:::proc
+    R --> BN["Binomial Nomenclature<br>Linnaeus 1735"]:::date
+    R --> TR["TRAP: Virus not in any kingdom<br>Prions = proteins only — no DNA"]:::trap
+    K --> K1["Monera: Bacteria + Cyanobacteria<br>Prokaryotes — no nucleus"]:::key
+    K --> K2["Protista: Amoeba, Paramecium<br>Unicellular eukaryotes"]:::key
+    K --> K3["Fungi: Chitin cell wall<br>Decomposers — Mushroom, Yeast"]:::key
+    K --> K4["Plantae: Cellulose cell wall<br>Multicellular, photosynthetic"]:::key
+    K --> K5["Animalia: No cell wall<br>Heterotrophic multicellular"]:::key
+    T --> T1["Kingdom-Phylum-Class-Order<br>-Family-Genus-Species<br>King Philip Came Over For Great Supper"]:::proc
+    BN --> BN1["Homo sapiens = Human<br>Mangifera indica = Mango<br>Panthera tigris = Tiger"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter A2 — The Cell
 
 In 1665, Robert Hooke sliced cork with a primitive microscope and saw small boxy chambers. He called them cells — from the Latin *cellula* meaning "small room". Two centuries later, Schleiden (1838, plants) and Schwann (1839, animals) formalised the cell theory that every living thing is made of cells.
@@ -149,6 +173,34 @@ In 1665, Robert Hooke sliced cork with a primitive microscope and saw small boxy
 
 # PART B — GENETICS & EVOLUTION
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["THE CELL"]:::root
+    R --> P["Prokaryote<br>No nucleus — Bacteria, Archaea"]:::key
+    R --> E["Eukaryote<br>True nucleus — Plants, Animals, Fungi"]:::key
+    R --> O["KEY ORGANELLES"]:::proc
+    R --> W["CELL WALL MATERIAL"]:::proc
+    R --> D["CELL DIVISION"]:::proc
+    O --> O1["Mitochondria: Powerhouse — ATP<br>Has own DNA"]:::key
+    O --> O2["Ribosome: Protein factory<br>Present even in prokaryotes"]:::key
+    O --> O3["Lysosome: Suicide bags<br>Digestive enzymes — cleanup"]:::trap
+    O --> O4["Chloroplast: Photosynthesis<br>Plants only — has own DNA"]:::key
+    O --> O5["Nucleus: Control centre<br>Contains DNA blueprint"]:::key
+    W --> W1["Plant: Cellulose"]:::key
+    W --> W2["Fungi: Chitin"]:::key
+    W --> W3["Bacteria: Peptidoglycan"]:::key
+    D --> D1["Mitosis: 2 daughter cells<br>Same chromosomes — growth/repair"]:::key
+    D --> D2["Meiosis: 4 daughter cells<br>Half chromosomes — gametes only"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter B1 — Mendelian Genetics
 
 Between 1856 and 1863, Gregor Mendel — an Augustinian friar in Brno, Moravia — grew 28,000 pea plants and discovered that inheritance is particulate, not blended. His paper was published in 1866 and ignored for 34 years. When rediscovered simultaneously by De Vries, Correns, and von Tschermak in 1900, it became the foundation of modern genetics.
@@ -169,6 +221,29 @@ Genotypic ratio → **1 TT : 2 Tt : 1 tt**
 "Father of genetics?" → <strong>Gregor Mendel</strong><br>
 "Mendel used which plant?" → <strong>Pea plant (Pisum sativum)</strong><br>
 "Classic monohybrid ratio?" → <strong>3:1</strong> (phenotypic) and <strong>1:2:1</strong> (genotypic)
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["MENDELIAN GENETICS"]:::root
+    R --> L["Mendel's Two Laws"]:::proc
+    R --> P["Pea Plant Traits"]:::key
+    R --> C["Cross Ratios"]:::key
+    R --> BL["Blood Groups: Co-dominance"]:::key
+    L --> L1["Law of Segregation<br>Allele pairs separate during gamete formation"]:::key
+    L --> L2["Law of Independent Assortment<br>Genes on diff. chromosomes sort independently"]:::key
+    P --> P1["Dominant: Tall, Round, Yellow<br>Recessive: Dwarf, Wrinkled, Green"]:::key
+    C --> C1["Monohybrid cross: 3:1 phenotype<br>Genotype ratio: 1:2:1"]:::key
+    C --> C2["Dihybrid cross: 9:3:3:1<br>Two traits simultaneously"]:::key
+    BL --> BL1["A + B = co-dominant<br>O = recessive; AB = universal recipient<br>O = universal donor"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>
 
 ## Chapter B2 — DNA & Molecular Genetics
@@ -224,6 +299,29 @@ CRISPR-Cas9 Nobel → Doudna + Charpentier (2020)
 Sex of the baby is determined by the <strong>father's sperm</strong>, not the mother. The mother always contributes X. Father contributes X → daughter; Y → son. Questions asking "who determines sex?" — the answer is the father.
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["DNA and MOLECULAR GENETICS"]:::root
+    R --> S["DNA Structure"]:::key
+    R --> C["Central Dogma"]:::proc
+    R --> D["DNA vs RNA"]:::key
+    R --> T["TRAP: Mismatched base pairs"]:::trap
+    S --> S1["Double Helix: Watson and Crick 1953<br>Nobel Prize 1962"]:::date
+    S --> S2["A-T: 2 hydrogen bonds<br>G-C: 3 hydrogen bonds"]:::key
+    S --> S3["Semi-conservative replication<br>Meselson-Stahl experiment proved it"]:::key
+    C --> C1["DNA --transcription-- RNA<br>RNA --translation-- Protein"]:::proc
+    D --> D1["RNA: single-strand, ribose, Uracil instead of Thymine<br>3 types: mRNA, tRNA, rRNA"]:::key
+    T --> T1["A pairs with T not G<br>G pairs with C not A<br>Swapping = mutation"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter B3 — Evolution
 
 Charles Darwin sailed on HMS Beagle (1831–36), observed Galápagos finches with differently shaped beaks for different food sources, and published *On the Origin of Species* in 1859, proposing **natural selection** as the mechanism of evolution.
@@ -254,6 +352,31 @@ Lamarck's theory → inheritance of acquired characters (giraffe neck story) —
 
 # PART C — PLANT BIOLOGY
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["EVOLUTION"]:::root
+    R --> D["Darwin 1859"]:::date
+    R --> E["Evidence for Evolution"]:::proc
+    R --> CM["Chromosomal Disorders"]:::key
+    R --> L["Lamarck: WRONG theory"]:::trap
+    D --> D1["Origin of Species 1859<br>Natural Selection: fit survive and reproduce"]:::date
+    D --> D2["Miller-Urey 1953<br>Amino acids from primordial soup"]:::date
+    E --> E1["Fossil record: past life forms preserved"]:::key
+    E --> E2["Homologous organs: same structure<br>different function — common ancestor<br>e.g. human arm = whale flipper = bat wing"]:::key
+    E --> E3["Analogous organs: different structure<br>same function — convergent evolution<br>e.g. bat wing vs butterfly wing"]:::key
+    CM --> CM1["Down Syndrome: Trisomy 21<br>47 chromosomes (extra chr 21)"]:::key
+    CM --> CM2["Turner Syndrome: 45, X0 (female)<br>Klinefelter: 47, XXY (male)"]:::key
+    L --> L1["Lamarck: acquired traits inherited<br>e.g. giraffe neck stretched longer<br>DISPROVED — not heritable"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter C1 — Plant Kingdom Overview
 
 Plants are classified by complexity of structure and reproductive strategy:
@@ -278,6 +401,30 @@ Plants are classified by complexity of structure and reproductive strategy:
 
 <div class="mnemonic">
 <strong>"One for monocots, two for dicots."</strong> All the world's staple grains (wheat, rice, maize, barley) are monocots. All the world's trees and most garden flowers are dicots. This pattern is an easy reality check.
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["PLANT KINGDOM OVERVIEW"]:::root
+    R --> D["5 Plant Divisions"]:::proc
+    R --> MC["Monocot vs Dicot Angiosperms"]:::key
+    R --> TR["TRAP: Gymnosperms vs Angiosperms"]:::trap
+    D --> D1["Thallophyta: Algae — in water<br>no roots/stems/leaves"]:::key
+    D --> D2["Bryophyta: Mosses, Liverworts<br>First land plants — no vascular tissue"]:::key
+    D --> D3["Pteridophyta: Ferns<br>Vascular — no seeds"]:::key
+    D --> D4["Gymnosperms: Pine, Cycas<br>Naked seeds — no fruit"]:::key
+    D --> D5["Angiosperms: LARGEST group<br>Enclosed seeds in fruit — flowers present"]:::key
+    MC --> MC1["Monocot: 1 cotyledon<br>parallel veins — Rice, Wheat, Maize, Grass"]:::key
+    MC --> MC2["Dicot: 2 cotyledons<br>reticulate veins — Pea, Mango, Mustard"]:::key
+    TR --> TR1["Gymnosperms: seeds exposed on cone<br>Angiosperms: seeds inside fruit<br>TRAP — both have seeds"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>
 
 ## Chapter C2 — Photosynthesis
@@ -308,6 +455,31 @@ Photosynthesis is how plants manufacture food from air and water using sunlight.
 "CAM plants open stomata when?" → <strong>Night</strong> (to reduce water loss in desert conditions)
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["PHOTOSYNTHESIS"]:::root
+    R --> EQ["Core Equation"]:::key
+    R --> PH["Two Phases"]:::proc
+    R --> PG["Chlorophyll Pigments"]:::key
+    R --> CT["C3 / C4 / CAM Plants"]:::key
+    EQ --> EQ1["6CO2 + 6H2O + sunlight<br>--chlorophyll-- C6H12O6 + 6O2<br>Glucose + Oxygen released"]:::key
+    PH --> PH1["Light Reactions: in THYLAKOID<br>Water split; O2 released; ATP + NADPH formed"]:::proc
+    PH --> PH2["Dark Reactions (Calvin Cycle): in STROMA<br>CO2 fixed using ATP + NADPH — glucose made"]:::proc
+    PG --> PG1["Chlorophyll a: primary pigment<br>Absorbs red + blue; reflects GREEN"]:::key
+    PG --> PG2["Chlorophyll b, carotenoids: accessory<br>Expand light absorption range"]:::key
+    CT --> CT1["C3 plants: first product = 3-PGA (3C)<br>Rice, Wheat, Oat — less efficient in heat"]:::key
+    CT --> CT2["C4 plants: first product = 4C (OAA)<br>Sugarcane, Maize, Jowar — more efficient"]:::key
+    CT --> CT3["CAM plants: open stomata at NIGHT<br>Cacti, Pineapple — desert adaptation"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter C3 — Plant Hormones
 
 | Hormone | Main function | Exam clue |
@@ -321,6 +493,29 @@ Photosynthesis is how plants manufacture food from air and water using sunlight.
 <div class="keypoint">
 "Which hormone ripens fruit?" → <strong>Ethylene</strong> — it is a gas. Commercially, ethylene is used to ripen bananas and mangoes during transport.<br>
 "Hormone responsible for apical dominance?" → <strong>Auxin</strong> — suppresses lateral buds; pruning removes the apex and removes auxin dominance, causing bushy growth.
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["PLANT HORMONES"]:::root
+    R --> H1["Auxin (IAA)"]:::key
+    R --> H2["Gibberellin (GA)"]:::key
+    R --> H3["Cytokinin"]:::key
+    R --> H4["Abscisic Acid (ABA)"]:::key
+    R --> H5["Ethylene"]:::key
+    H1 --> H1a["Cell elongation — phototropism<br>Apical dominance (tip suppresses buds)<br>Unequal distribution causes bending toward light"]:::key
+    H2 --> H2a["Stem elongation — bolting<br>Seed germination; fruit enlargement<br>Dwarfism reversed by GA treatment"]:::key
+    H3 --> H3a["Cell division — delays leaf aging<br>Promotes lateral bud growth"]:::key
+    H4 --> H4a["Stress hormone — closes stomata<br>Promotes dormancy of seeds/buds<br>Called abscisic = causes abscission"]:::key
+    H5 --> H5a["ONLY GASEOUS plant hormone<br>Fruit ripening — used commercially<br>Promotes leaf + fruit fall"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>
 
 ## Chapter C4 — Plant Reproduction
@@ -344,6 +539,30 @@ Pollination agents: wind (anemophily), water (hydrophily), insects (entomophily)
 \newpage
 
 # PART D — HUMAN BODY SYSTEMS
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["PLANT REPRODUCTION"]:::root
+    R --> PO["Pollination Agents"]:::proc
+    R --> DF["Double Fertilization<br>Unique to Angiosperms"]:::key
+    R --> FR["Fruit Types"]:::key
+    R --> TR["TRAP: True vs False Fruit"]:::trap
+    PO --> PO1["Anemophily: Wind<br>Light pollen — Grass, Maize, Pine"]:::key
+    PO --> PO2["Entomophily: Insects<br>Colourful + fragrant flowers — Sunflower, Rose"]:::key
+    PO --> PO3["Hydrophily: Water<br>Aquatic plants — Vallisneria"]:::key
+    DF --> DF1["Sperm 1 + Egg = Zygote (2n) -- embryo<br>Sperm 2 + 2 Polar nuclei = Endosperm (3n)"]:::key
+    DF --> DF2["Only in flowering plants (Angiosperms)<br>Gymnosperms: single fertilization"]:::key
+    FR --> FR1["True fruit: from OVARY only<br>Mango, Tomato, Grape"]:::key
+    TR --> TR1["False fruit: from Receptacle + Ovary<br>Apple, Strawberry, Cashew<br>TRAP: Apple = false fruit!"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter D1 — Digestive System
 
@@ -371,6 +590,30 @@ The digestive tract runs about 9 metres from mouth to anus. Each section special
 "Stomach acid pH?" → <strong>1.5–3.5</strong>
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["DIGESTIVE SYSTEM"]:::root
+    R --> PT["Digestive Path"]:::proc
+    R --> EN["Key Enzymes + Sites"]:::key
+    R --> AB["Absorption Sites"]:::key
+    R --> TR["TRAP: Bile has NO enzyme"]:::trap
+    PT --> PT1["Mouth-Oesophagus-Stomach<br>Small Intestine-Large Intestine<br>Rectum-Anus"]:::proc
+    EN --> EN1["Salivary amylase: Mouth<br>Starch -- maltose"]:::key
+    EN --> EN2["Pepsin: Stomach (pH 1.5-2.5)<br>Protein -- peptides; activated by HCl"]:::key
+    EN --> EN3["Trypsin: Small Intestine<br>Protein -- amino acids (from pancreas)"]:::key
+    EN --> EN4["Lipase: Small Intestine<br>Fat -- fatty acids + glycerol"]:::key
+    AB --> AB1["Small Intestine: nutrients via villi<br>Large Intestine: water + salts"]:::key
+    TR --> TR1["Bile: liver produces, gallbladder stores<br>Emulsifies fat — NO digestive enzyme<br>TRAP: students think bile digests fat"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter D2 — Respiratory System
 
 **Pathway**: Nose → Pharynx → Larynx → Trachea → Bronchi → Bronchioles → Alveoli.
@@ -379,6 +622,29 @@ The digestive tract runs about 9 metres from mouth to anus. Each section special
 - Diaphragm and intercostal muscles drive breathing.
 - Normal adult breathing rate: **12–18 per minute**; tidal volume ~500 mL.
 - O₂ transported mainly by **haemoglobin** (Hb); CO₂ transported mainly as **bicarbonate (HCO₃⁻)** (~70%).
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["RESPIRATORY SYSTEM"]:::root
+    R --> AP["Air Path"]:::proc
+    R --> LV["Lung Volumes"]:::key
+    R --> GE["Gas Exchange"]:::key
+    R --> MO["Mechanism of Breathing"]:::proc
+    AP --> AP1["Nasal cavity-Pharynx-Larynx<br>Trachea-Bronchi<br>Bronchioles-Alveoli"]:::proc
+    LV --> LV1["Tidal Volume: 500 mL (normal breath)<br>Vital Capacity: 4500 mL<br>Total Lung Capacity: 6000 mL"]:::key
+    GE --> GE1["Alveoli: ~700 million; area = 70 sq m<br>Single-cell thick; maximum diffusion"]:::key
+    GE --> GE2["O2 carried by Haemoglobin (97%)<br>CO2 as bicarbonate ion (70%) in plasma"]:::key
+    MO --> MO1["Inspiration: Diaphragm contracts + flattens<br>Ribs move up + out; volume increases; air enters"]:::proc
+    MO --> MO2["Expiration: Diaphragm relaxes + domes<br>Ribs move down + in; air pushed out"]:::proc
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter D3 — Circulatory System
 
@@ -421,6 +687,29 @@ The digestive tract runs about 9 metres from mouth to anus. Each section special
 Examiners trick students with: "Biggest WBC?" → <strong>Monocyte</strong>. "Smallest WBC?" → <strong>Lymphocyte</strong>. Many students confuse this with platelets, which are not WBCs at all.
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["CIRCULATORY SYSTEM"]:::root
+    R --> DC["Double Circulation"]:::proc
+    R --> HT["Heart Facts"]:::key
+    R --> BG["Blood Groups"]:::date
+    R --> BC["Blood Cell Lifespans"]:::key
+    DC --> DC1["Pulmonary: Heart-Lungs-Heart<br>Deoxygenated blood gets oxygenated"]:::proc
+    DC --> DC2["Systemic: Heart-Body-Heart<br>Oxygenated blood delivered to all organs"]:::proc
+    HT --> HT1["4 chambers: RA, RV, LA, LV<br>SA Node = natural pacemaker (60-100 bpm)<br>Blood pressure: 120/80 mmHg"]:::key
+    BG --> BG1["Landsteiner discovered 1901 — Nobel 1930<br>A, B, AB, O groups; Rh factor positive/negative"]:::date
+    BG --> BG2["O negative: Universal DONOR<br>AB positive: Universal RECIPIENT"]:::key
+    BC --> BC1["RBC: 120 days; no nucleus<br>WBC: days to years (variable)<br>Platelets: 10 days — clotting"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter D4 — Nervous System
 
 ### Divisions
@@ -450,6 +739,30 @@ Examiners trick students with: "Biggest WBC?" → <strong>Monocyte</strong>. "Sm
 Key neurotransmitters: acetylcholine, dopamine, serotonin, GABA, noradrenaline
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["NERVOUS SYSTEM"]:::root
+    R --> DIV["Divisions"]:::proc
+    R --> BR["Brain Parts + Functions"]:::key
+    R --> REF["Reflex Arc"]:::proc
+    R --> NT["Key Neurotransmitters"]:::key
+    DIV --> DIV1["CNS: Brain + Spinal Cord"]:::key
+    DIV --> DIV2["PNS: Somatic (voluntary)<br>+ Autonomic (involuntary)"]:::key
+    BR --> BR1["Cerebrum: Thinking, memory<br>voluntary movement, speech"]:::key
+    BR --> BR2["Cerebellum: Balance + coordination<br>posture; damaged = staggering gait"]:::key
+    BR --> BR3["Medulla Oblongata: Involuntary actions<br>breathing, heart rate, swallowing"]:::key
+    REF --> REF1["Receptor-Sensory neuron-Spinal cord<br>Motor neuron-Effector<br>No brain involvement — faster response"]:::proc
+    NT --> NT1["Acetylcholine: muscle contraction<br>Dopamine: reward, pleasure<br>Serotonin: mood; Adrenaline: fight-or-flight"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter D5 — Endocrine System
 
 | Gland | Hormone(s) | Function | Disorder |
@@ -475,6 +788,30 @@ Key neurotransmitters: acetylcholine, dopamine, serotonin, GABA, noradrenaline
 "Love hormone / milk ejection?" → <strong>Oxytocin</strong>
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["ENDOCRINE SYSTEM"]:::root
+    R --> PG["Pituitary — Master Gland"]:::key
+    R --> TH["Thyroid Gland"]:::key
+    R --> PN["Pancreas"]:::key
+    R --> AD["Adrenal Gland"]:::key
+    R --> OT["Other Glands"]:::key
+    PG --> PG1["Anterior: GH, TSH, FSH, LH, ACTH, PRL<br>Posterior: ADH (water reabsorption), Oxytocin"]:::key
+    TH --> TH1["Hormones T3, T4 — control BMR<br>Deficiency: Goitre (iodine deficiency)<br>Cretinism (childhood hypothyroidism)"]:::key
+    TH --> TH2["Excess: Exophthalmic Goitre<br>Largest endocrine gland in body"]:::trap
+    PN --> PN1["Insulin: lowers blood glucose<br>Glucagon: raises blood glucose<br>Deficiency of insulin: Diabetes Mellitus"]:::key
+    AD --> AD1["Cortex: Cortisol (stress), Aldosterone (Na+)<br>Medulla: Adrenaline (fight-or-flight)"]:::key
+    OT --> OT1["Pineal: Melatonin (sleep-wake cycle)<br>Testes: Testosterone; Ovaries: Estrogen"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter D6 — Excretory System
 
 - **Kidneys** (2): each contains ~1 million nephrons.
@@ -482,6 +819,28 @@ Key neurotransmitters: acetylcholine, dopamine, serotonin, GABA, noradrenaline
 - Urine: ~96% water + urea + uric acid + creatinine + salts. Yellow colour from **urochrome**.
 - Normal output: ~1.5 L/day.
 - Other excretory organs: lungs (CO₂), skin (salts + water via sweat), liver (bile pigments).
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["EXCRETORY SYSTEM"]:::root
+    R --> OR["Organs"]:::proc
+    R --> NP["Nephron — functional unit"]:::key
+    R --> UR["Urine Composition"]:::key
+    R --> HO["Hormonal Control"]:::key
+    OR --> OR1["2 Kidneys-2 Ureters<br>1 Urinary Bladder-1 Urethra"]:::proc
+    NP --> NP1["Bowman's capsule: filtration<br>Glomerulus: blood filtered here<br>PCT: selective reabsorption"]:::key
+    NP --> NP2["Loop of Henle: water + salt reabsorption<br>DCT: fine-tuning; Collecting duct: final urine<br>1 million nephrons per kidney"]:::key
+    UR --> UR1["95% water; 2.5% urea<br>Uric acid, creatinine, salts<br>pH 6 (slightly acidic)"]:::key
+    HO --> HO1["ADH (Vasopressin): increases water reabsorption<br>Aldosterone: increases Na+ reabsorption<br>Both increase urine concentration"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter D7 — Skeletal & Muscular System
 
@@ -521,6 +880,29 @@ Key neurotransmitters: acetylcholine, dopamine, serotonin, GABA, noradrenaline
 
 # PART E — NUTRITION: VITAMINS & MINERALS
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["SKELETAL AND MUSCULAR SYSTEM"]:::root
+    R --> BN["Bone Facts"]:::key
+    R --> JT["Types of Joints"]:::key
+    R --> MS["Muscle Types"]:::key
+    R --> TR["TRAP: Smallest vs Largest bone"]:::trap
+    BN --> BN1["Adult: 206 bones<br>Infant: 270-300 (fuse over time)<br>Longest + largest: FEMUR (thigh bone)"]:::key
+    BN --> BN2["Bone composition: Calcium phosphate<br>Vitamin D needed for Ca absorption<br>Rickets = Vitamin D deficiency in children"]:::key
+    JT --> JT1["Hinge joint: Elbow, Knee (one direction)<br>Ball-socket: Shoulder, Hip (all directions)<br>Pivot: Atlas-Axis in neck (rotation)"]:::key
+    JT --> JT2["Gliding: Wrist/Ankle carpals<br>Immovable: Skull sutures (fixed)"]:::key
+    MS --> MS1["Striated (Skeletal): Voluntary<br>Smooth (Visceral): Involuntary (gut, blood vessels)<br>Cardiac: Involuntary + striated (heart only)"]:::key
+    TR --> TR1["Smallest bone: STAPES (middle ear)<br>Longest bone: FEMUR<br>TRAP: do not confuse smallest with lightest"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter E1 — Vitamins (Complete Table)
 
 | Vitamin | Chemical name | Sources | Deficiency disease |
@@ -549,6 +931,29 @@ Blood clotting vitamin → <strong>K</strong><br>
 Scurvy → <strong>C</strong> | Night blindness → <strong>A</strong> | Rickets → <strong>D</strong> | Beri-beri → <strong>B₁</strong>
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["VITAMINS"]:::root
+    R --> FS["Fat-Soluble: A D E K<br>Stored in liver + fatty tissue"]:::key
+    R --> WS["Water-Soluble: B complex + C<br>Not stored — must eat daily"]:::key
+    FS --> A["Vitamin A (Retinol)<br>Deficiency: Night blindness<br>+ Xerophthalmia (dry eyes)"]:::key
+    FS --> D["Vitamin D (Calciferol)<br>Deficiency: Rickets (children)<br>+ Osteomalacia (adults)"]:::key
+    FS --> E["Vitamin E (Tocopherol)<br>Antioxidant; fertility<br>Deficiency: rare"]:::key
+    FS --> K["Vitamin K (Phylloquinone)<br>Blood clotting<br>Deficiency: excessive bleeding"]:::key
+    WS --> B1["Vitamin B1 (Thiamine)<br>Deficiency: BERIBERI<br>Affects nervous system + heart"]:::key
+    WS --> B3["Vitamin B3 (Niacin)<br>Deficiency: PELLAGRA (3Ds:<br>Dermatitis, Diarrhoea, Dementia)"]:::key
+    WS --> B12["Vitamin B12 (Cobalamin)<br>Deficiency: Pernicious Anaemia<br>Only in animal sources"]:::key
+    WS --> C["Vitamin C (Ascorbic Acid)<br>Deficiency: SCURVY<br>Bleeding gums, loose teeth"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter E2 — Essential Minerals
 
 | Mineral | Function | Deficiency |
@@ -567,6 +972,30 @@ Scurvy → <strong>C</strong> | Night blindness → <strong>A</strong> | Rickets
 \newpage
 
 # PART F — DISEASES & IMMUNITY
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["ESSENTIAL MINERALS"]:::root
+    R --> MC["Macro-minerals"]:::key
+    R --> TR["Trace minerals"]:::key
+    R --> TP["TRAP: Deficiency diseases"]:::trap
+    MC --> Ca["Calcium (Ca)<br>Bones + teeth; blood clotting<br>Nerve + muscle function"]:::key
+    MC --> Fe["Iron (Fe)<br>Haemoglobin synthesis<br>Deficiency: Iron-deficiency ANAEMIA"]:::key
+    MC --> P["Phosphorus (P)<br>Bones, ATP, DNA backbone<br>Energy transfer"]:::key
+    MC --> Na["Sodium (Na)<br>Fluid balance; nerve impulse<br>Excess causes hypertension"]:::key
+    TR --> I["Iodine (I)<br>Thyroid hormones T3 + T4<br>Deficiency: GOITRE"]:::key
+    TR --> F["Fluoride (F)<br>Tooth enamel strength<br>Excess: FLUOROSIS (mottled teeth)"]:::key
+    TR --> Zn["Zinc (Zn)<br>Enzyme co-factor; immune function<br>Stores insulin in pancreas"]:::key
+    TP --> TP1["Fe deficiency = Anaemia<br>I deficiency = Goitre<br>Ca deficiency = Rickets/Osteoporosis<br>F excess = Fluorosis"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter F1 — Disease Classification
 
@@ -619,6 +1048,30 @@ Plague → <strong>Rat flea</strong><br>
 Sleeping sickness → <strong>Tsetse fly</strong>
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["DISEASE CLASSIFICATION<br>and CAUSATIVE AGENTS"]:::root
+    R --> BA["Bacterial Diseases"]:::key
+    R --> VI["Viral Diseases"]:::key
+    R --> PR["Protozoan Diseases"]:::key
+    R --> VE["VECTORS — must know"]:::trap
+    BA --> BA1["TB: Mycobacterium tuberculosis<br>Typhoid: Salmonella typhi<br>Cholera: Vibrio cholerae"]:::key
+    BA --> BA2["Plague: Yersinia pestis (rat flea)<br>Leprosy: Mycobacterium leprae<br>Tetanus: Clostridium tetani"]:::key
+    VI --> VI1["AIDS: HIV (retrovirus)<br>Dengue: Flavivirus (Aedes aegypti)<br>Rabies: Rhabdovirus (dog bite)"]:::key
+    VI --> VI2["Smallpox: Variola — ERADICATED 1980<br>Polio: Enterovirus<br>Hepatitis B: via blood/body fluids"]:::key
+    PR --> PR1["Malaria: Plasmodium<br>Vector: Anopheles FEMALE mosquito<br>4 species; P. falciparum deadliest"]:::key
+    PR --> PR2["Sleeping sickness: Trypanosoma<br>Vector: Tsetse fly<br>Amoebic dysentery: Entamoeba histolytica"]:::key
+    VE --> VE1["Malaria: Anopheles female<br>Dengue/Chikungunya/Zika: Aedes aegypti<br>Filaria: Culex; Plague: Rat flea<br>TRAP: Dengue vector is AEDES not Anopheles"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter F2 — Immunity
 
 The immune system has two arms. **Innate immunity** is the rapid, non-specific response: skin as a barrier, mucus, and phagocytes that eat any invader without needing prior exposure. **Adaptive immunity** is specific and has memory: B lymphocytes produce antibodies; T lymphocytes kill infected cells directly.
@@ -659,6 +1112,31 @@ India's UIP (Universal Immunisation Programme) started → <strong>1985</strong>
 
 # PART G — ECOLOGY & ENVIRONMENT
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["IMMUNITY"]:::root
+    R --> IN["Innate (Non-specific)"]:::key
+    R --> AC["Acquired (Specific)"]:::key
+    R --> VA["Vaccine Types"]:::key
+    R --> PA["Active vs Passive"]:::key
+    IN --> IN1["First line: Skin, mucus membranes<br>Tears (lysozyme), saliva, HCl in stomach"]:::key
+    IN --> IN2["Second line: Fever, inflammation<br>Phagocytes (neutrophils, macrophages)<br>NK cells — kill infected cells"]:::key
+    AC --> AC1["B lymphocytes: HUMORAL immunity<br>Produce antibodies (immunoglobulins)<br>Memory B cells for faster 2nd response"]:::key
+    AC --> AC2["T lymphocytes: CELL-MEDIATED immunity<br>T-helper, T-killer, T-suppressor<br>HIV destroys T-helper (CD4) cells"]:::trap
+    VA --> VA1["Live attenuated: BCG (TB), MMR, OPV (oral polio)<br>Killed/inactivated: Salk polio, Covaxin<br>Subunit/recombinant: Hepatitis B"]:::key
+    VA --> VA2["Toxoid: Tetanus, Diphtheria<br>mRNA vaccine: Pfizer/Moderna COVID-19"]:::key
+    PA --> PA1["Active: Body makes own antibodies<br>Long-lasting — via infection or vaccine"]:::key
+    PA --> PA2["Passive: Borrowed antibodies<br>Short-lived — mother's milk, antivenom<br>Immediate effect but no memory"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter G1 — Ecosystem & Energy Flow
 
 An **ecosystem** is a community of living organisms (biotic) interacting with the non-living environment (abiotic) in a defined area. It can be a pond, a forest, or the entire Earth (biosphere).
@@ -681,6 +1159,29 @@ An **ecosystem** is a community of living organisms (biotic) interacting with th
 The pyramid of <strong>energy</strong> is ALWAYS upright — this is the most tested ecological fact. The pyramids of numbers and biomass can invert (inverted pyramids are possible). If the question says "which pyramid is always upright?" — the answer is Energy.
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["ECOSYSTEM and ENERGY FLOW"]:::root
+    R --> TL["Trophic Levels"]:::proc
+    R --> TR["10% Rule — Lindeman's Law"]:::key
+    R --> EP["Ecological Pyramids"]:::key
+    R --> DC["Decomposers"]:::key
+    TL --> TL1["Producers (autotrophs: plants, algae)<br>-Primary consumers (herbivores)<br>-Secondary consumers (small carnivores)<br>-Tertiary consumers (top predators)"]:::proc
+    TR --> TR1["Only 10% energy passes to next level<br>90% lost as heat at every step<br>Shorter food chain = more energy available"]:::key
+    TR --> TR2["TRAP: Biomass pyramid can be INVERTED<br>in aquatic ecosystems<br>Energy pyramid is ALWAYS upright"]:::trap
+    EP --> EP1["Pyramid of Energy: always upright<br>Pyramid of Number: can be inverted<br>e.g. 1 tree supports 1000s of insects"]:::key
+    EP --> EP2["Pyramid of Biomass: inverted in ocean<br>phytoplankton (small mass) support<br>large zooplankton biomass at any time"]:::key
+    DC --> DC1["Decomposers: Bacteria + Fungi<br>Break down dead organic matter<br>Return minerals to soil — nutrient cycling"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter G2 — Biodiversity
 
 **Three levels of biodiversity**: Genetic diversity, Species diversity, Ecosystem diversity.
@@ -695,6 +1196,29 @@ India has **4 hotspots**:
 
 **IUCN Red List categories** (most to least threatened):
 Extinct (EX) → Extinct in Wild (EW) → Critically Endangered (CR) → Endangered (EN) → Vulnerable (VU) → Near Threatened (NT) → Least Concern (LC)
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["BIODIVERSITY"]:::root
+    R --> HS["Hotspots — Global + India"]:::key
+    R --> IU["IUCN Red List Categories"]:::key
+    R --> IN["India Facts"]:::key
+    R --> TR["TRAP: Hotspot criteria"]:::trap
+    HS --> HS1["36 hotspots globally (2024)<br>Must have 1500+ endemic plant sp.<br>AND lost over 70% original habitat"]:::date
+    HS --> HS2["India's 4 hotspots:<br>1. Eastern Himalayas<br>2. Western Ghats + Sri Lanka<br>3. Indo-Burma (NE India)<br>4. Sundaland (Andaman-Nicobar)"]:::key
+    IU --> IU1["EX-Extinct; EW-Extinct in Wild<br>CR-Critically Endangered<br>EN-Endangered; VU-Vulnerable<br>NT-Near Threatened; LC-Least Concern"]:::key
+    IU --> IU2["Indian examples: CR=Great Indian Bustard<br>EN=Bengal Tiger, Asiatic Lion<br>VU=Indian Rhinoceros"]:::key
+    IN --> IN1["India: 17th megadiverse country globally<br>8.1% of global species in 2.4% of area<br>2nd in Asia for biodiversity"]:::key
+    TR --> TR1["TRAP: Megadiverse vs Hotspot are different<br>17th megadiverse — top 17 countries<br>4 hotspots — within those 17"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter G3 — Indian Wildlife & Conservation
 
@@ -903,4 +1427,30 @@ Extinct (EX) → Extinct in Wild (EW) → Critically Endangered (CR) → Endange
 
 **Error-log rule:** For every question you got wrong, write one sentence explaining what you missed. Retest yourself on only those questions 3 days later — without looking at the solution. This single habit doubles what the mock teaches you.
 
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["INDIAN WILDLIFE and CONSERVATION"]:::root
+    R --> NP["First + Key National Parks"]:::key
+    R --> PR["Conservation Projects"]:::date
+    R --> PA["Protected Area Network"]:::key
+    R --> WP["Wildlife Protection Act 1972"]:::key
+    NP --> NP1["First NP in India: Corbett NP 1936<br>(Uttarakhand; Jim Corbett established it)"]:::date
+    NP --> NP2["Kaziranga NP: Assam — UNESCO WHS<br>70% of world's Indian rhinoceros"]:::key
+    NP --> NP3["Gir Forest NP: Gujarat<br>ONLY wild habitat of Asiatic Lion"]:::key
+    NP --> NP4["Sundarbans NP: West Bengal — UNESCO WHS<br>Largest mangrove; Bengal Tiger"]:::key
+    PR --> PR1["Project Tiger: 1973 — PM Indira Gandhi<br>53 Tiger Reserves (2024); tigers: 3167"]:::date
+    PR --> PR2["Project Elephant: 1992<br>32 Elephant Reserves in India"]:::date
+    PA --> PA1["18 Biosphere Reserves; 12 UNESCO listed<br>First BR: Nilgiri 1986<br>Largest BR: Pachmarhi (MP)"]:::key
+    PA --> PA2["106 National Parks; 565 Sanctuaries<br>Total PAs cover 5% of India's area"]:::key
+    WP --> WP1["Schedule I: highest protection<br>Tiger, Elephant, Rhino, Lion, Snow Leopard<br>Hunting = up to 7 years imprisonment"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>

@@ -128,6 +128,28 @@ wheat + barley + goat + sheep; mud-brick houses; dentistry evidence!
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["PREHISTORY AND STONE AGES"]:::root
+    R --> ST["Stone Age Divisions"]:::key
+    R --> SN["Key Sites in India"]:::date
+    R --> TR["TRAP: Which age did farming begin?"]:::trap
+    ST --> ST1["Palaeolithic (Old Stone Age): 2.5 mya - 10,000 BCE<br>Hunter-gatherers; hand axes (Acheulian culture)<br>Cave art; no farming; Homo erectus + Homo sapiens"]:::date
+    ST --> ST2["Mesolithic (Middle Stone Age): 10,000-6000 BCE<br>Microliths (tiny stone tools)<br>Semi-nomadic; fishing + gathering; dogs domesticated"]:::date
+    ST --> ST3["Neolithic (New Stone Age): 6000-4000 BCE<br>FARMING BEGINS; animals domesticated<br>Polished stone tools; pottery; permanent settlements"]:::date
+    ST --> ST4["Chalcolithic (Copper-Stone Age): 4000-1500 BCE<br>First use of copper (+ stone)<br>Harappan Civ starts in Chalcolithic period"]:::date
+    SN --> SN1["Bhimbetka caves: Raisen, Madhya Pradesh<br>UNESCO World Heritage Site<br>Cave paintings from 30,000 years ago; Palaeolithic-Mesolithic"]:::date
+    TR --> TR1["TRAP: Farming begins in NEOLITHIC age<br>NOT in Palaeolithic (hunting only)<br>NOT in Mesolithic (semi-nomadic, beginning of farming)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 2 — Indus Valley / Harappan Civilisation (c. 3300 – 1300 BCE)
 
 > Where ancient India's **urbanism** was born — 1,000 years before the Vedic
@@ -389,6 +411,30 @@ into **Cemetery H** (Punjab), **Jhukar** (Sindh), **Rangpur IIB/C** (Gujarat),
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["HARAPPAN CIVILISATION<br>3300-1300 BCE"]:::root
+    R --> SI["Major Sites"]:::key
+    R --> FE["Key Features"]:::key
+    R --> EX["Excavators + Dates"]:::date
+    R --> TR["TRAP: What was absent at Harappa"]:::trap
+    SI --> SI1["Mohenjo-daro: Sindh (Pakistan)<br>Harappa: Punjab (Pakistan)<br>Dholavira: Gujarat — water management"]:::key
+    SI --> SI2["Lothal: Gujarat — India's ONLY ancient dockyard<br>Kalibangan: Rajasthan — fire altars found<br>Rakhigarhi: Haryana — largest Harappan site in India"]:::key
+    FE --> FE1["Grid-pattern town planning; covered drains<br>Great Bath at Mohenjo-daro (12m x 7m)<br>Granaries for surplus storage"]:::key
+    FE --> FE2["Script: Undeciphered (written right to left)<br>No iron tools; bronze weapons<br>Trade with Mesopotamia (Iraq)"]:::key
+    EX --> EX1["Harappa discovered: Daya Ram Sahni 1921<br>Mohenjo-daro: R.D. Banerji 1922<br>John Marshall: first to use term 'Indus Civilization'"]:::date
+    EX --> EX2["Dholavira: R.S. Bisht (modern excavation)<br>Civilisation DECLINED c.1900 BCE<br>Reason: climate change + Saraswati river drying"]:::date
+    TR --> TR1["TRAP: NO iron tools (bronze age)<br>NO clear temples or priest-king<br>NO signs of warfare or army<br>NO horses in early phase (came in late)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 3 — The Vedic Age (c. 1500 – 600 BCE)
 
 ### 3.1 Hook — what the Rig Veda records
@@ -482,6 +528,30 @@ Originally **functional**. Became **hereditary** in the later Vedic period
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["THE VEDIC AGE<br>1500-600 BCE"]:::root
+    R --> EV["Early vs Later Vedic"]:::key
+    R --> VE["4 Vedas"]:::key
+    R --> SC["Social Structure"]:::key
+    R --> TR["TRAP: Which Veda is oldest?"]:::trap
+    EV --> EV1["Early Vedic (1500-1000 BCE): Rig Veda period<br>Pastoral + semi-nomadic Aryans<br>Relatively equal status of women; cattle wealth"]:::key
+    EV --> EV2["Later Vedic (1000-600 BCE): Settled agriculture<br>Rigid caste system hardened<br>Kings more powerful; ritual sacrifices grew"]:::key
+    VE --> VE1["RIG VEDA: oldest text (1500 BCE+)<br>10 mandalas; 1028 hymns; Gayatri Mantra<br>Knowledge of hymns to gods"]:::key
+    VE --> VE2["SAMA VEDA: melodies + chants<br>YAJUR VEDA: rituals + sacrificial formulae<br>ATHARVA VEDA: magic, spells, everyday life"]:::key
+    SC --> SC1["4 Varnas: Brahmin (priest), Kshatriya (warrior)<br>Vaishya (merchant), Shudra (servant)<br>NOT birth-based originally; became rigid later"]:::key
+    SC --> SC2["Political units: Jana (tribe), Rashtra (kingdom)<br>Sabba + Samiti: tribal assemblies (early democracy)<br>Raja: chief selected by sabha"]:::key
+    TR --> TR1["TRAP: RIG VEDA is oldest of the 4 Vedas<br>NOT Sama or Atharva<br>Vedanta = end of Vedas = Upanishads (philosophy)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 4 — The 16 Mahajanapadas + the Rise of Magadha
 
 ### 4.1 Hook
@@ -542,6 +612,30 @@ graph LR
   **Dhana Nanda** (322 BCE) with Chanakya's help.
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["16 MAHAJANAPADAS<br>600-300 BCE"]:::root
+    R --> MJ["Key Mahajanapadas"]:::key
+    R --> MG["Rise of Magadha"]:::key
+    R --> DY["Magadha Dynasties"]:::date
+    R --> TR["TRAP: Pataliputra location"]:::trap
+    MJ --> MJ1["16 Mahajanapadas (600-300 BCE)<br>Republics (Ganas): Vajji (Licchavi), Malla, Shakya<br>Kingdoms: Magadha, Kosala, Vatsa, Avanti"]:::key
+    MJ --> MJ2["4 most powerful: Magadha, Kosala, Vatsa, Avanti<br>Magadha finally conquered all others<br>Capital of Magadha: Rajagriha then Pataliputra"]:::key
+    MG --> MG1["Magadha's advantages:<br>Iron ore deposits nearby<br>Ganga + Son rivers for agriculture + trade<br>Strategic central location"]:::key
+    DY --> DY1["Haryanka: Bimbisara (founder; contemporary of Buddha)<br>Killed by son Ajatashatru<br>Moved capital to Pataliputra (Patna)"]:::date
+    DY --> DY2["Shishunaga dynasty: overthrew Haryanka<br>Nanda dynasty: Dhana Nanda (last Nanda)<br>Wealthy but cruel; Alexander reached Punjab (326 BCE)"]:::date
+    DY --> DY3["Maurya dynasty: Chandragupta Maurya (322 BCE)<br>Overthrew Dhana Nanda with Chanakya's help<br>First pan-Indian empire"]:::date
+    TR --> TR1["TRAP: Pataliputra = modern Patna, Bihar<br>Rajagriha = capital BEFORE Pataliputra<br>Ajatashatru moved capital to Pataliputra"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 5 — Buddhism
 
@@ -650,6 +744,31 @@ B.R. Ambedkar's Navayana movement** (conversion of ~5 lakh Dalits at
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["BUDDHISM"]:::root
+    R --> LI["Life of the Buddha"]:::date
+    R --> TE["Core Teachings"]:::key
+    R --> CO["Buddhist Councils"]:::date
+    R --> TR["TRAP: Four sites must memorise"]:::trap
+    LI --> LI1["Born: c.563 BCE at Lumbini, Nepal<br>Clan: Shakya; Family: Kshatriya Gautama<br>Father: Suddhodana; Wife: Yashodhara"]:::date
+    LI --> LI2["Enlightenment: Bodh Gaya (under Peepal/Bodhi tree)<br>First Sermon: Sarnath (Deer Park) — Dhammachakka<br>Death/Parinirvana: Kushinagar; c.483 BCE"]:::date
+    TE --> TE1["4 Noble Truths:<br>1. Dukkha (suffering exists)<br>2. Samudaya (craving is cause)<br>3. Nirodha (end of craving = nirvana)<br>4. Magga (follow the 8-fold path)"]:::key
+    TE --> TE2["8-fold Path: Right View, Intention, Speech<br>Action, Livelihood, Effort, Mindfulness, Concentration<br>Middle Path: avoid extreme asceticism + luxury"]:::key
+    TE --> TE3["Tripitaka: 3 baskets of Buddhist scripture<br>Vinaya Pitaka (rules for monks)<br>Sutta Pitaka, Abhidhamma Pitaka"]:::key
+    CO --> CO1["1st Council: Rajagriha (Ajatashatru's reign)<br>2nd Council: Vaishali (schism began)<br>3rd Council: Pataliputra (Ashoka; Theravada vs Mahayana)"]:::date
+    CO --> CO2["4th Council: Kashmir (Kanishka; Mahayana codified)<br>Hinayana vs Mahayana split<br>Buddhism spread to SE Asia by Ashoka's son Mahendra"]:::date
+    TR --> TR1["TRAP: 4 holy sites —<br>Lumbini (birth), Bodh Gaya (enlightenment)<br>Sarnath (first sermon), Kushinagar (death)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 6 — Jainism
 
 ### 6.1 Hook — 24 Tirthankaras + the historical ones
@@ -740,6 +859,30 @@ while **Sthulabhadra** stayed in Magadha:
 - **Chandragupta Maurya** reputedly died via **sallekhana** at **Shravanabelagola**.
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["JAINISM"]:::root
+    R --> MV["Mahavira's Life"]:::date
+    R --> TE["Core Teachings"]:::key
+    R --> SC["Sects"]:::key
+    R --> TR["TRAP: Tirthankaras"]:::trap
+    MV --> MV1["Vardhamana Mahavira: 24th and LAST Tirthankara<br>Born: c.599 BCE Vaishali, Bihar<br>Clan: Kshatriya; Father: Siddhartha"]:::date
+    MV --> MV2["Enlightenment: near river Rijupalika<br>After 12 years of asceticism<br>Death: Pawapuri, Bihar; c.527 BCE"]:::date
+    TE --> TE1["5 Great Vows (Panchamahavratas):<br>Ahimsa (non-violence — most important)<br>Satya, Asteya, Brahmacharya, Aparigraha"]:::key
+    TE --> TE2["3 Jewels (Triratna):<br>Right Faith, Right Knowledge, Right Conduct<br>All life is sacred — wear mask (Digambara monks)"]:::key
+    TE --> TE3["Anekantavada: reality is multifaceted<br>Syadvada: conditional predication<br>Jainism rejected Vedic authority + caste"]:::key
+    SC --> SC1["Digambara: sky-clad (naked) monks<br>Believe women cannot attain moksha<br>Shvetambara: white-clad monks; allow nuns"]:::key
+    TR --> TR1["TRAP: 24 Tirthankaras total<br>1st Tirthankara: Rishabhanatha<br>23rd: Parshvanatha; 24th: Mahavira<br>Mahavira did NOT found Jainism — he was 24th"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 7 — Mauryan Empire (322 – 185 BCE)
 
@@ -839,6 +982,30 @@ in **185 BCE**, founding the **Sunga dynasty**.
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["MAURYAN EMPIRE<br>322-185 BCE"]:::root
+    R --> FO["Foundation"]:::date
+    R --> AS["Ashoka the Great"]:::date
+    R --> AD["Ashoka's Edicts + Legacy"]:::key
+    R --> TR["TRAP: Kalinga War — what changed"]:::trap
+    FO --> FO1["Founded: 322 BCE by Chandragupta Maurya<br>Overthrew Dhana Nanda with Chanakya's help<br>Chanakya wrote Arthashastra — first political economy book"]:::date
+    FO --> FO2["Chandragupta defeated Seleucus Nicator (325 BCE)<br>Got NW India including Pakistan + Afghanistan<br>Bindusara (son): expanded to Deccan"]:::date
+    AS --> AS1["Ashoka: 268-232 BCE; son of Bindusara<br>Kalinga War: 261 BCE — massive bloodshed<br>Converted to Buddhism after witnessing destruction"]:::date
+    AS --> AS2["Ashoka spread Buddhism: sent missions to<br>Sri Lanka (son Mahendra + daughter Sanghamitra)<br>SE Asia, Central Asia, West Asia"]:::date
+    AD --> AD1["Ashoka's pillars: Lion Capital at Sarnath<br>= India's NATIONAL EMBLEM<br>Dharma Chakra = 24-spoked wheel on national flag"]:::key
+    AD --> AD2["Rock edicts: carved on rocks + pillars<br>Brahmi script (decoded by James Prinsep 1837)<br>Message: dhamma, non-violence, religious tolerance"]:::key
+    TR --> TR1["TRAP: Kalinga = modern Odisha<br>Kalinga War (261 BCE) transformed Ashoka<br>Result: Dhammavijaya (moral conquest) replaced Digvijaya"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 8 — Gupta Age (320 – 550 CE) — India's Classical Golden Age
 
 ### 8.1 Hook — the age of Sanskrit classics + decimal mathematics
@@ -901,6 +1068,30 @@ the finest ever struck. Tag: "**Golden Age of Classical India**".
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["GUPTA AGE<br>320-550 CE - Golden Age"]:::root
+    R --> RU["Key Rulers"]:::date
+    R --> AC["Achievements in Arts + Science"]:::key
+    R --> SC["Scholars at Court"]:::key
+    R --> TR["TRAP: Vikramaditya identity"]:::trap
+    RU --> RU1["Chandragupta I: 320 CE; founded Gupta Era<br>Married Lichchhavi princess Kumaradevi<br>Title: Maharajadhiraja (king of kings)"]:::date
+    RU --> RU2["Samudragupta (335-375 CE):<br>'Napoleon of India' (V.A. Smith)<br>Allahabad Pillar Inscription by Harishena"]:::date
+    RU --> RU3["Chandragupta II Vikramaditya (375-415 CE):<br>Defeated Shakas of W India<br>Chinese pilgrim Fa-hien visited during his reign"]:::date
+    AC --> AC1["Aryabhata (499 CE): Aryabhatiya<br>Pi value (3.14), Earth rotates on axis<br>Decimal system; value of zero"]:::key
+    AC --> AC2["Kalidasa: greatest Sanskrit poet-playwright<br>Works: Shakuntala, Meghaduta, Kumarasambhava<br>Nine Gems (Navaratnas) in Vikramaditya's court"]:::key
+    SC --> SC1["Varahamihira: astronomy + astrology (Brihatsamhita)<br>Brahmagupta: mathematics<br>Dhanvantari: medicine (Ayurveda)"]:::key
+    TR --> TR1["TRAP: Vikramaditya = TITLE not a name<br>Chandragupta II had this title<br>Vikram Samvat calendar: attributed to legendary Vikramaditya"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 9 — Harsha + Chalukyas + Rashtrakutas + Pallavas
 
 ### 9.1 Harshavardhana (606 – 647 CE)
@@ -953,6 +1144,30 @@ the finest ever struck. Tag: "**Golden Age of Classical India**".
 - **Aihole inscription** (634 CE, by Ravikirti) praises Pulakesin II.
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["POST-GUPTA DYNASTIES<br>600-900 CE"]:::root
+    R --> HR["Harsha of Kanauj"]:::date
+    R --> CH["Chalukyas of Vatapi"]:::date
+    R --> PA["Pallavas of Kanchi"]:::key
+    R --> RT["Rashtrakutas"]:::key
+    HR --> HR1["Harsha (606-647 CE): Pushyabhuti dynasty<br>Capital: Kanauj (UP)<br>Chinese visitor Xuanzang (Hiuen Tsang) wrote about him"]:::date
+    HR --> HR2["Battle of Narmada: Harsha defeated by<br>Pulakeshin II (Chalukya) c.618 CE<br>Could NOT expand into South India"]:::key
+    CH --> CH1["Pulakeshin II: greatest Chalukya king<br>Capital: Vatapi (Badami, Karnataka)<br>Aihole inscription praises his victories"]:::date
+    CH --> CH2["Chalukyas: patrons of cave temples<br>Pattadakal, Aihole, Badami cave temples<br>UNESCO World Heritage Sites"]:::key
+    PA --> PA1["Pallavas: Kanchi (Kanchipuram), Tamil Nadu<br>Narasimhavarman I: built Mahabalipuram Shore Temple<br>Rajasimha: built Kailasanatha temple"]:::key
+    PA --> PA2["Rathas (monolithic chariots) at Mahabalipuram<br>Carved from single rock<br>Important for Dravidian architecture origin"]:::key
+    RT --> RT1["Rashtrakutas: Deccan; founded 753 CE by Dantidurga<br>Ellora caves patron (Kailasa temple = largest monolithic)<br>Literary tradition in Sanskrit + Kannada"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 10 — Chola Empire + South Indian Kingdoms
 
@@ -1083,6 +1298,30 @@ Russian + Chinese Revolutions, Cold War + Decolonisation.
 ---
 
 # Appendices
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["CHOLA EMPIRE<br>9th-13th Century CE"]:::root
+    R --> FO["Foundation"]:::date
+    R --> RJ["Rajaraja I and Rajendra I"]:::date
+    R --> AD["Administration"]:::key
+    R --> AR["Architecture"]:::key
+    FO --> FO1["Imperial Cholas: founded by Vijayalaya (9th century)<br>Capital: Thanjavur (Tanjore), Tamil Nadu<br>Arose from earlier Sangam age Cholas"]:::date
+    RJ --> RJ1["Rajaraja I (985-1014 CE):<br>Built Brihadeeshwara Temple (Tanjore)<br>Conquered Sri Lanka; extended to Malabar"]:::date
+    RJ --> RJ2["Rajendra I (1014-1044 CE): greatest Chola<br>'Gangaikonda Chola' — brought Ganga water<br>Naval expedition to Sumatra + Malaysia"]:::date
+    RJ --> RJ3["Chola NAVY: strongest in Indian history<br>Reached Malaysia, Indonesia, Cambodia<br>Spread Hindu culture + Tamil language to SE Asia"]:::key
+    AD --> AD1["Local self-government: unique feature<br>Ur (hamlet), Nadu (district), Mandalam (province)<br>Inscriptions show elections in villages (Uttaramerur)"]:::key
+    AR --> AR1["Brihadeeshwara Temple: UNESCO World Heritage<br>61-meter vimana (tower); entirely of granite<br>Rajendra I built Gangaikondacholapuram"]:::key
+    AR --> AR2["TRAP: Brihadeeshwara = Tanjore; Rajaraja I<br>Gangaikondacholapuram = Rajendra I<br>Do NOT confuse the two temples + builders"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Appendix A — Ancient India timeline (condensed)
 

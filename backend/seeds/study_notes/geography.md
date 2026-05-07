@@ -147,6 +147,29 @@ of long-period comets.
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["UNIVERSE AND SOLAR SYSTEM"]:::root
+    R --> U["Universe Facts"]:::date
+    R --> P["Planets — 8 in order"]:::key
+    R --> EX["Extremes"]:::key
+    R --> TR["TRAP: Hottest planet"]:::trap
+    U --> U1["Big Bang: 13.8 billion years ago<br>Solar System: 4.6 billion years old<br>Milky Way: spiral galaxy; 100,000 light years wide"]:::date
+    U --> U2["Sun: G-type main-sequence star<br>Distance from Earth: 150 million km = 1 AU<br>Light travel: 8 min 20 sec"]:::key
+    P --> P1["Mercury-Venus-Earth-Mars (inner)<br>Jupiter-Saturn-Uranus-Neptune (outer)<br>Largest: Jupiter; Smallest: Mercury"]:::key
+    P --> P2["Brightest in sky: Venus<br>Red planet: Mars (iron oxide)<br>Blue planet: Earth (water)"]:::key
+    EX --> EX1["Nearest star: Proxima Centauri (4.2 light-years)<br>Moon distance: 384,400 km; light: 1.28 sec<br>Earth's satellite: Moon"]:::key
+    TR --> TR1["TRAP: Hottest planet = VENUS not Mercury<br>Reason: Venus has thick CO2 atmosphere<br>greenhouse effect traps heat (460 degrees C)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 2 — Earth's Interior + Rocks
 
 ### 2.1 The 4 layers
@@ -212,6 +235,31 @@ graph LR
 - **Diamond** = metamorphosed coal (carbon, highest-grade).
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["EARTH'S INTERIOR AND ROCKS"]:::root
+    R --> L["3 Layers"]:::proc
+    R --> D["Discontinuities"]:::key
+    R --> RK["Rock Types"]:::key
+    R --> TR["TRAP: Which rock has fossils?"]:::trap
+    L --> L1["Crust: 5-70 km thick<br>Oceanic = basalt (SIMA)<br>Continental = granite (SIAL)"]:::key
+    L --> L2["Mantle: 2900 km thick<br>Asthenosphere: semi-molten; tectonic plates ride on it<br>Lithosphere = Crust + upper Mantle"]:::key
+    L --> L3["Core: Outer core = liquid iron-nickel<br>Inner core = solid iron-nickel<br>Source of Earth's magnetic field"]:::key
+    D --> D1["Mohorovicic (Moho): Crust-Mantle boundary<br>Gutenberg: Mantle-Outer Core<br>Lehmann: Outer-Inner Core"]:::key
+    RK --> RK1["Igneous: from magma<br>Intrusive: granite (slow-cool, coarse)<br>Extrusive: basalt (fast-cool, fine)"]:::key
+    RK --> RK2["Sedimentary: layers of sediment<br>Limestone, sandstone, shale<br>FOSSILS found ONLY here"]:::key
+    RK --> RK3["Metamorphic: heat + pressure transform existing rock<br>Limestone-Marble; Shale-Slate<br>Coal-Graphite; Graphite-Diamond"]:::key
+    TR --> TR1["TRAP: Fossils in SEDIMENTARY rocks ONLY<br>Not in igneous (formed from magma)<br>Not in metamorphic (heat destroys fossils)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 3 — Plate Tectonics, Earthquakes, Volcanoes
 
@@ -308,6 +356,31 @@ dinosaurs.
 - **Krakatoa** eruption 1883 → one of the loudest sounds in history.
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["PLATE TECTONICS"]:::root
+    R --> CT["Continental Drift Theory"]:::date
+    R --> PB["Plate Boundaries"]:::proc
+    R --> EQ["Earthquakes"]:::key
+    R --> VO["Volcanoes"]:::key
+    CT --> CT1["Alfred Wegener 1915: 'Continental Drift'<br>Evidence: Jigsaw fit of continents<br>Glossopteris fossil on S. America + Africa"]:::date
+    PB --> PB1["Divergent: plates move apart<br>Mid-Atlantic Ridge; new crust formed<br>Rift valleys + undersea mountains"]:::proc
+    PB --> PB2["Convergent: plates collide<br>Ocean-ocean: island arc + trench<br>Ocean-continent: subduction + trench (deepest)"]:::proc
+    PB --> PB3["Transform: plates slide past each other<br>San Andreas Fault, California<br>Earthquakes — no volcanic activity"]:::proc
+    EQ --> EQ1["Richter scale: logarithmic (1-9+)<br>Moment Magnitude Scale (MMS): modern standard<br>Focus = underground point; Epicentre = surface above"]:::key
+    EQ --> EQ2["Seismograph measures earthquake waves<br>P-waves (primary), S-waves (secondary), Surface waves<br>S-waves cannot pass through liquid outer core"]:::key
+    VO --> VO1["Pacific Ring of Fire: 75% of world's volcanoes<br>+ 90% of world's earthquakes<br>Surrounds Pacific Ocean"]:::key
+    VO --> VO2["Mariana Trench: deepest point on Earth<br>11,034 m in Pacific Ocean<br>Formed by subduction zone"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 4 — Atmosphere + Climate
 
@@ -426,6 +499,30 @@ also coastal AP + Rayalaseema + Karaikal + S. Kerala. Rest of India is dry.
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["ATMOSPHERE AND CLIMATE"]:::root
+    R --> L["5 Atmospheric Layers"]:::key
+    R --> TR["TRAP: Temperature changes per layer"]:::trap
+    R --> OZ["Ozone Layer"]:::key
+    L --> L1["Troposphere: 0-16 km<br>Weather occurs here<br>Temp DECREASES with altitude (-6.5 C per km)"]:::key
+    L --> L2["Stratosphere: 16-50 km<br>Ozone layer (15-35 km) absorbs UV<br>Temp INCREASES with altitude — stable, no weather"]:::key
+    L --> L3["Mesosphere: 50-80 km<br>Meteors burn here<br>Temp DECREASES — coldest layer"]:::key
+    L --> L4["Thermosphere: 80-600 km<br>Aurora borealis and aurora australis<br>ISS orbits here (400 km); very hot but low density"]:::key
+    L --> L5["Exosphere: 600+ km<br>Satellites; merges into outer space<br>Mostly hydrogen + helium"]:::key
+    OZ --> OZ1["Ozone = O3; protects from UV-B radiation<br>CFC (chlorofluorocarbon) destroys ozone<br>Montreal Protocol 1987: phase out CFCs"]:::key
+    OZ --> OZ2["Ozone hole: over Antarctica<br>Discovered 1985; still healing<br>Freon (CFC-12) was main culprit"]:::key
+    TR --> TR1["TRAP: Remember alternating temp pattern<br>Troposphere: decreases; Stratosphere: increases<br>Mesosphere: decreases; Thermosphere: increases"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 5 — Oceans + Currents + Tides
 
 ### 5.1 Five oceans
@@ -479,6 +576,31 @@ India, ~7 m); Okha, Mumbai, Haldia, Paradip, Chennai, Vizag, Cochin, Tuticorin.
 
 # Part D — India, Physical
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["OCEANS, CURRENTS, TIDES"]:::root
+    R --> OC["5 Oceans"]:::key
+    R --> CU["Ocean Currents"]:::key
+    R --> TI["Tides"]:::key
+    R --> TR["TRAP: Spring vs Neap tides"]:::trap
+    OC --> OC1["Pacific: largest + deepest<br>Atlantic: 2nd largest; S-shaped<br>Indian: 3rd; surrounds India"]:::key
+    OC --> OC2["Deepest point: Mariana Trench 11,034 m<br>Challenger Deep — Pacific Ocean"]:::date
+    CU --> CU1["WARM currents: move toward poles<br>Gulf Stream: N Atlantic; warms W Europe<br>Kuroshio: N Pacific"]:::key
+    CU --> CU2["COLD currents: move toward equator<br>Labrador: N Atlantic (cold fog on Newfoundland)<br>Peru/Humboldt: S Pacific (makes Chile coast dry)"]:::key
+    CU --> CU3["TRAP: California current = COLD<br>Gulf Stream = WARM<br>Benguela current (off W Africa) = COLD"]:::trap
+    TI --> TI1["Caused by: Moon's gravity (mainly) + Sun<br>Spring tides: Sun-Earth-Moon aligned<br>Full Moon or New Moon — HIGHEST tides"]:::key
+    TI --> TI2["Neap tides: Moon at right angle to Sun-Earth<br>Quarter Moon phase — LOWEST tidal range<br>2 high tides + 2 low tides per day (semidiurnal)"]:::key
+    TR --> TR1["TRAP: Spring tide = NOT spring season<br>Spring = Latin 'springing up' (bigger tides)<br>Neap = Old English 'scanty' (smaller)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 6 — India: Location + Extent + Borders
 
 ### 6.1 Key location facts
@@ -527,6 +649,30 @@ Maritime: Sri Lanka (**Palk Strait**), Maldives.
   (overall); Kanyakumari = southernmost on mainland.
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["INDIA: LOCATION AND BORDERS"]:::root
+    R --> LL["Latitudes + Longitudes"]:::key
+    R --> BO["Neighbouring Countries"]:::key
+    R --> EX["Extremes of India"]:::key
+    R --> TR["TRAP: Standard Time Meridian"]:::trap
+    LL --> LL1["Latitude: 8 degree 4N to 37 degree 6N<br>Longitude: 68 degree 7E to 97 degree 25E<br>Tropic of Cancer (23.5N) through 8 states"]:::key
+    LL --> LL2["States on Tropic of Cancer:<br>Raj, Gujarat, MP, Chhattisgarh, Jharkhand<br>WB, Tripura, Mizoram (8 states)"]:::key
+    BO --> BO1["Land borders (7 countries):<br>Pakistan, Afghanistan, China, Nepal<br>Bhutan, Bangladesh, Myanmar"]:::key
+    BO --> BO2["Total land border: 15,106 km<br>Total coastline: 7,516 km<br>Maritime border: Sri Lanka + Maldives"]:::key
+    EX --> EX1["Northernmost: Indira Col (Ladakh)<br>Southernmost: Indira Point (Great Nicobar)<br>Easternmost: Kibithu (Arunachal Pradesh)"]:::key
+    EX --> EX2["Westernmost: Ghuar Mota (Gujarat)<br>India-Pakistan sea boundary: Sir Creek<br>India-China boundary: McMahon Line (NE) + LAC"]:::key
+    TR --> TR1["India's Standard Time: IST = UTC+5:30<br>Based on 82.5 degree E longitude (through Mirzapur, UP)<br>TRAP: IST is 30 min offset — not a full hour"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 7 — Physiography of India
 
@@ -634,6 +780,30 @@ Karnataka + Kerala (**Doddabetta** = Nilgiri's highest, 2,637 m).
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["PHYSIOGRAPHY OF INDIA"]:::root
+    R --> HM["Himalayas"]:::key
+    R --> NP["Northern Plains"]:::key
+    R --> PP["Peninsular Plateau"]:::key
+    R --> CG["Coastal Plains + Ghats"]:::key
+    HM --> HM1["3 parallel ranges:<br>Himadri (Great Himalaya) — highest peaks<br>Himachal (Middle) — hill stations<br>Shiwaliks (Outer) — newest; terai"]:::key
+    HM --> HM2["Highest peak in India: K2 (8611 m, PoK)<br>Mt Everest (8848 m) in Nepal<br>Youngest fold mountains — still rising"]:::key
+    NP --> NP1["Formed by alluvial deposits of Himalayan rivers<br>Most fertile plain in world<br>Bhangar (old alluvium) vs Khadar (new flood plain)"]:::key
+    PP --> PP1["Ancient (1.5 billion years old)<br>Deccan Trap: basalt rock from volcanic eruptions<br>Average height 600-900 m"]:::key
+    PP --> PP2["Highest peak on Deccan: Anamudi 2695 m<br>(Western Ghats, Kerala)<br>Highest in Eastern Ghats: Mahendragiri"]:::key
+    CG --> CG1["Western Ghats (Sahyadri): continuous range<br>Biodiversity hotspot; rainfall interceptor<br>Palghat Gap: only major break"]:::key
+    CG --> CG2["Eastern Ghats: discontinuous hills<br>Coromandel Coast (E): smooth + straight<br>Malabar Coast (W): lagoons + backwaters (Kerala)"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 8 — Rivers of India
 
 ### 8.1 The 2 river systems
@@ -721,6 +891,30 @@ Most resilient cross-border water treaty — survived 3 wars.
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["RIVERS OF INDIA"]:::root
+    R --> HS["2 River Systems"]:::proc
+    R --> GN["Ganga + Brahmaputra"]:::key
+    R --> PN["Peninsular Rivers"]:::key
+    R --> TR["TRAP: West-flowing peninsular rivers"]:::trap
+    HS --> HS1["Himalayan rivers: PERENNIAL<br>Fed by snow melt + monsoon rain<br>Deep gorges; young; still cutting"]:::key
+    HS --> HS2["Peninsular rivers: SEASONAL<br>Depend only on monsoon<br>Old; shallow; can only flow in rainy season"]:::key
+    GN --> GN1["Ganga: longest in India (2525 km)<br>Source: Gangotri glacier<br>Flows: E into Bay of Bengal"]:::key
+    GN --> GN2["Brahmaputra: originates in Tibet as Tsangpo<br>Enters India through Arunachal<br>Largest river island: Majuli (Assam)"]:::key
+    PN --> PN1["East-flowing into Bay of Bengal:<br>Mahanadi, Godavari (Dakshin Ganga)<br>Krishna, Kaveri (Dakshina Ganga)"]:::key
+    PN --> PN2["Longest peninsular river: Godavari (1465 km)<br>Kaveri dispute: Karnataka vs Tamil Nadu<br>Sacred rivers: Ganga, Yamuna, Godavari, Kaveri"]:::key
+    TR --> TR1["TRAP: Narmada + Tapi flow WESTWARD<br>Both flow through rift valleys (structural faults)<br>Drain into Arabian Sea not Bay of Bengal"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 9 — Indian Climate + Monsoon
 
 ### 9.1 4 seasons
@@ -763,6 +957,30 @@ graph LR
 - **Western Disturbances** = cold-season rain in N India.
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["INDIAN CLIMATE AND MONSOON"]:::root
+    R --> SE["4 Seasons"]:::proc
+    R --> MO["Monsoon Mechanism"]:::key
+    R --> RF["Rainfall Extremes"]:::key
+    R --> EL["El Nino and La Nina"]:::key
+    SE --> SE1["Winter: Dec-Feb (NE trade winds blow offshore)<br>Summer/Pre-monsoon: Mar-May (hot dry)<br>SW Monsoon: Jun-Sep (wet)<br>Retreating Monsoon: Oct-Nov (NE monsoon)"]:::proc
+    MO --> MO1["SW Monsoon arrives Kerala by June 1<br>2 branches: Arabian Sea + Bay of Bengal<br>Low pressure over Thar Desert pulls monsoon in"]:::key
+    MO --> MO2["Bay of Bengal branch: hits NE India first<br>Arabian Sea branch: hits Kerala coast first<br>Both branches meet over North India"]:::key
+    RF --> RF1["Highest rainfall: Mawsynram, Meghalaya<br>11,000+ mm/year; also Cherrapunji nearby<br>Orographic rainfall — Khasi hills face monsoon"]:::key
+    RF --> RF2["Lowest rainfall: Jaisalmer, Rajasthan<br>Less than 100 mm/year<br>Rain shadow zone + far from sea"]:::key
+    EL --> EL1["El Nino: warm water in E Pacific<br>Weakens Indian Ocean temp gradient<br>Result: WEAK or LATE Indian monsoon"]:::key
+    EL --> EL2["La Nina: cool water in E Pacific<br>Strengthens monsoon circulation<br>Result: STRONG above-normal monsoon"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 10 — Soils of India
 
@@ -808,6 +1026,32 @@ Khadar = new alluvium (lighter, sandy, near river banks) · Bhangar = old alluvi
 
 # Part E — India: Human + Economic
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["SOILS OF INDIA"]:::root
+    R --> A["Alluvial Soil"]:::key
+    R --> B["Black Soil (Regur)"]:::key
+    R --> C["Red Soil"]:::key
+    R --> D["Laterite Soil"]:::key
+    R --> TR["TRAP: Soil-crop associations"]:::trap
+    A --> A1["Most widespread: Indo-Gangetic plains<br>Khadar (new alluvium, fertile)<br>Bhangar (old alluvium, less fertile)"]:::key
+    A --> A2["Rich in potash; poor in nitrogen<br>Best for: Rice, Wheat, Sugarcane<br>Found in: Punjab, UP, Bihar, WB, Coastal deltas"]:::key
+    B --> B1["Black cotton soil = Regur = Tropical Chernozem<br>Formed from Deccan Trap basalt<br>High clay content — swells with moisture"]:::key
+    B --> B2["BEST for: Cotton (Maharashtra, MP, Gujarat)<br>Also: sugarcane, wheat, linseed<br>Black colour from titanite iron compound"]:::key
+    C --> C1["Formed from weathering of old crystalline rocks<br>Red due to presence of iron oxide<br>Deficient in: nitrogen, phosphorus, humus"]:::key
+    C --> C2["Found in: Telangana, Andhra, TN, Odisha, Jharkhand<br>Best for: groundnut, millets, cotton"]:::key
+    D --> D1["Formed by intense leaching (heavy rainfall)<br>Iron + aluminium oxides remain; silica leached out<br>Hard when dry; found in WG, Karnataka, Kerala"]:::key
+    TR --> TR1["TRAP: Cotton = Black soil (NOT red soil)<br>Rice = Alluvial soil (NOT black)<br>Tea/Coffee = Laterite + Red soil (hill areas)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 11 — Population
 
 - **India overtook China in April 2023** — most populous country, ~144 crore
@@ -823,6 +1067,30 @@ Khadar = new alluvium (lighter, sandy, near river banks) · Bhangar = old alluvi
   China 65%).
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["POPULATION OF INDIA"]:::root
+    R --> C["Census 2011 Key Figures"]:::date
+    R --> ST["State Rankings"]:::key
+    R --> LI["Literacy"]:::key
+    R --> TR["TRAP: Density — state vs UT"]:::trap
+    C --> C1["Total population: 121.1 crore (2011)<br>2nd most populous after China<br>Population density: 382 per sq km"]:::date
+    C --> C2["Sex ratio: 943 females per 1000 males<br>Decadal growth rate: 17.7% (2001-2011)<br>Urban population: 31.2%"]:::key
+    ST --> ST1["Most populous state: Uttar Pradesh<br>Least populous state: Sikkim<br>Highest density: Bihar (1106/sq km)"]:::key
+    ST --> ST2["Lowest density state: Arunachal Pradesh (17/sq km)<br>TRAP: Highest density UT = Delhi<br>Highest density overall: Delhi (11,320/sq km)"]:::trap
+    LI --> LI1["Overall literacy rate: 74.04% (2011)<br>Male: 82.14%; Female: 65.46%<br>Highest literacy state: Kerala (93.9%)"]:::key
+    LI --> LI2["Lowest literacy state: Bihar (61.8%)<br>Highest female literacy: Kerala<br>Lowest female literacy: Rajasthan"]:::key
+    TR --> TR1["TRAP: Most dense state = Bihar<br>Most dense overall = Delhi (UT)<br>Smallest state = Goa; Smallest UT = Lakshadweep"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 12 — Agriculture
 
@@ -878,6 +1146,31 @@ Khadar = new alluvium (lighter, sandy, near river banks) · Bhangar = old alluvi
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["AGRICULTURE IN INDIA"]:::root
+    R --> KH["Kharif vs Rabi"]:::key
+    R --> CR["Key Crops + States"]:::key
+    R --> RE["Agricultural Revolutions"]:::date
+    R --> TR["TRAP: India's top productions"]:::trap
+    KH --> KH1["Kharif: sown in June, harvested Oct<br>Monsoon crops: Rice, Jute, Cotton<br>Groundnut, Soyabean, Bajra, Maize"]:::key
+    KH --> KH2["Rabi: sown in Nov, harvested Mar-Apr<br>Winter crops: Wheat, Barley, Mustard<br>Gram (chickpea), Peas, Linseed"]:::key
+    KH --> KH3["Zaid: summer between rabi and kharif<br>Vegetables: cucumber, melon, watermelon<br>Short duration, needs irrigation"]:::key
+    CR --> CR1["Rice: WB, UP, Andhra, Punjab (paddy belt)<br>Wheat: Punjab, Haryana, UP (bread basket)<br>Sugarcane: UP (largest), Maharashtra, Karnataka"]:::key
+    CR --> CR2["Cotton: Maharashtra, Gujarat, Andhra<br>Jute: WB (90% of India's jute); tea: Assam<br>Coffee: Karnataka (70%); Rubber: Kerala"]:::key
+    RE --> RE1["Green Revolution: 1960s; Norman Borlaug (Father)<br>M.S. Swaminathan (India); HYV seeds<br>Punjab + Haryana = wheat bowl of India"]:::date
+    RE --> RE2["White Revolution (Milk): Operation Flood<br>Verghese Kurien: father of White Revolution<br>AMUL co-operative model; India = world's top milk producer"]:::date
+    TR --> TR1["TRAP: India LARGEST producer of:<br>Milk, Spices, Jute, Ginger, Chickpea, Banana<br>2ND largest: Rice, Wheat, Sugarcane, Fruits, Vegetables"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 13 — Minerals + Energy
 
 ### 13.1 Minerals — state-wise leaders
@@ -915,6 +1208,29 @@ Khadar = new alluvium (lighter, sandy, near river banks) · Bhangar = old alluvi
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["MINERALS AND ENERGY"]:::root
+    R --> CO["Coal"]:::key
+    R --> IR["Iron + Steel Metals"]:::key
+    R --> NU["Nuclear Minerals"]:::key
+    R --> OT["Other Key Minerals"]:::key
+    CO --> CO1["India: 4th largest coal reserves globally<br>Types: Anthracite (best) > Bituminous > Lignite > Peat<br>95% coal in Gondwana rock formations"]:::key
+    CO --> CO2["Major coal states: Jharkhand (largest reserves)<br>Chhattisgarh, Odisha, WB, Madhya Pradesh<br>Singrauli, Raniganj, Jharia = major coalfields"]:::key
+    IR --> IR1["Iron ore: Jharkhand, Odisha, Chhattisgarh<br>Hematite (Fe2O3) = best grade<br>India exports iron ore to Japan + Korea"]:::key
+    IR --> IR2["Bauxite (aluminium ore): Odisha (Kalahandi)<br>Manganese: Odisha, Maharashtra<br>Copper: Rajasthan (Khetri = copper city)"]:::key
+    NU --> NU1["Uranium: Jaduguda, Jharkhand (only mine)<br>Thorium: Monazite sands, Kerala-Tamil Nadu coast<br>India = world's largest thorium reserves"]:::key
+    OT --> OT1["Mica: Jharkhand (Kodarma = mica capital)<br>India was world's largest mica exporter<br>Petroleum: Mumbai High offshore (largest)"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 14 — Transport + Communication
 
 ### 14.1 Road + rail
@@ -951,6 +1267,29 @@ Khadar = new alluvium (lighter, sandy, near river banks) · Bhangar = old alluvi
 
 # Part F — World
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["TRANSPORT AND COMMUNICATION"]:::root
+    R --> RD["Roads"]:::key
+    R --> RL["Railways"]:::key
+    R --> WW["Waterways"]:::key
+    R --> PT["Ports"]:::key
+    RD --> RD1["Longest NH: NH-44 Srinagar to Kanyakumari<br>3,745 km; passes through 11 states<br>Old name: NH-7 (Varanasi-Kanyakumari)"]:::key
+    RD --> RD2["Golden Quadrilateral: NH connecting<br>Delhi-Mumbai-Chennai-Kolkata (5846 km)<br>NHDP: National Highway Development Project"]:::key
+    RL --> RL1["Indian Railways: 4th largest network globally<br>After USA, Russia, China<br>HQ: Rail Bhavan, New Delhi"]:::key
+    RL --> RL2["Broadest gauge (1676 mm): Broad gauge<br>Meter gauge (1000 mm); Narrow gauge (762/610 mm)<br>First railway: 1853 (Mumbai to Thane, 34 km)"]:::date
+    WW --> WW1["NW-1: Ganga (Allahabad to Haldia, 1620 km)<br>NW-2: Brahmaputra (Sadiya to Dhubri, 891 km)<br>NW-3: West Coast (Kottapuram to Kollam, 205 km)"]:::key
+    PT --> PT1["Major ports (12 major + 200 minor)<br>Busiest: Mumbai (JNPT = Jawaharlal Nehru Port)<br>Oldest: Kolkata (Syama Prasad Mookerjee)"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 15 — Continents + Countries + Oceans (key facts)
 
 - **7 continents** — Asia, Africa, N America, S America, Antarctica, Europe,
@@ -969,6 +1308,29 @@ Khadar = new alluvium (lighter, sandy, near river banks) · Bhangar = old alluvi
 - **Deepest point** — Challenger Deep, Mariana Trench, 10,984 m.
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["CONTINENTS, COUNTRIES, OCEANS"]:::root
+    R --> CT["7 Continents by Size"]:::key
+    R --> CO["Countries — Superlatives"]:::key
+    R --> RV["Rivers + Mountains"]:::key
+    R --> LK["Lakes"]:::key
+    CT --> CT1["Asia (largest: 44.6M km2)<br>Africa (2nd: 30.3M km2)<br>North America (3rd), South America (4th)"]:::key
+    CT --> CT2["Antarctica (5th: 14M km2; covered in ice)<br>Europe (6th), Australia (smallest: 7.7M km2)<br>TRAP: Australia = smallest continent not country"]:::trap
+    CO --> CO1["Largest country: Russia (17.1M km2)<br>2nd: Canada; 3rd: USA; 4th: China; 5th: Brazil<br>India: 7th largest country"]:::key
+    CO --> CO2["Smallest country: Vatican City (0.44 sq km)<br>Most populous: China then India<br>Densest: Monaco; then Singapore"]:::key
+    RV --> RV1["Longest river: Nile (6650 km, Africa)<br>2nd: Amazon (6400 km, S America)<br>Highest mountain: Mt Everest (8848.86 m)"]:::key
+    LK --> LK1["Largest lake: Caspian Sea (saline)<br>Largest freshwater: Lake Superior (N America)<br>Deepest lake: Baikal (Russia, 1642 m)"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 16 — Biomes (Natural Vegetation)
 
@@ -994,6 +1356,30 @@ graph TD
 ---
 
 # Appendices
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["BIOMES AND NATURAL VEGETATION"]:::root
+    R --> TR["Tropical Forests"]:::key
+    R --> GR["Grasslands"]:::key
+    R --> TA["Taiga and Tundra"]:::key
+    R --> DE["Deserts"]:::key
+    TR --> TR1["Tropical Rainforest: near equator<br>Amazon (lungs of Earth), Congo, SE Asia<br>Highest biodiversity; evergreen; > 2000 mm rain"]:::key
+    TR --> TR2["Tropical Deciduous (Monsoon): India's main forest<br>Sal, teak, bamboo trees; shed leaves in dry season<br>India = major teak exporter"]:::key
+    GR --> GR1["Tropical savanna: Africa (Serengeti)<br>Scattered trees + grassland; seasonal rainfall<br>Wildlife: lions, elephants, wildebeest"]:::key
+    GR --> GR2["Temperate grasslands:<br>Prairies (N America), Steppes (Eurasia)<br>Pampas (S America), Veld (S Africa), Downs (Australia)"]:::key
+    TA --> TA1["Taiga/Boreal: largest terrestrial biome<br>Coniferous: pine, spruce, fir<br>Russia + Canada; cold; acidic soil"]:::key
+    TA --> TA2["Tundra: Arctic zone; permafrost (frozen soil)<br>No trees; only mosses, lichens, sedges<br>Brief summer; reindeer, polar bear"]:::key
+    DE --> DE1["Hot desert: Sahara = largest hot desert<br>Cold desert: Antarctica = largest cold desert<br>Thar = Great Indian Desert (Rajasthan)"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Appendix A — India's 28 states + 8 UTs (capital shortcut)
 

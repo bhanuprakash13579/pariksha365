@@ -87,7 +87,12 @@ HTML_TEMPLATE = """<!doctype html>
     }});
   }}
   if (typeof mermaid !== 'undefined') {{
-    mermaid.initialize({{ startOnLoad: true, theme: 'neutral' }});
+    mermaid.initialize({{
+      startOnLoad: true,
+      theme: 'neutral',
+      flowchart: {{ htmlLabels: true, nodeSpacing: 28, rankSpacing: 38, curve: 'basis' }},
+      fontSize: 13
+    }});
   }}
   // Wait for Mermaid SVG rendering then signal Chrome ready.
   function _waitReady() {{
@@ -509,6 +514,31 @@ CSS = textwrap.dedent("""
   img, svg { max-width: 100%; height: auto; }
   .mermaid { text-align: center; margin: 12pt 0; }
 
+  /* ── Chapter Summary tree wrapper ── */
+  .chapter-summary {
+    border: 1.5pt solid #7c3aed;
+    border-radius: 5pt;
+    overflow: hidden;
+    margin: 14pt 0 6pt 0;
+    page-break-inside: avoid;
+  }
+  .chapter-summary::before {
+    content: "\\25CE  Chapter Summary \\2014  Everything in One View";
+    display: block;
+    background: #7c3aed;
+    color: #ffffff;
+    padding: 4pt 12pt;
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .chapter-summary .mermaid {
+    padding: 6pt 4pt;
+    background: #faf5ff;
+    margin: 0;
+  }
+
   /* ── Page break controls ── */
   h1 { page-break-before: always; }
   h1:first-of-type { page-break-before: avoid; }
@@ -569,8 +599,26 @@ def _restore_math(html_text: str, placeholders: dict) -> str:
     return html_text
 
 
+_MD_DIV_CLASSES = (
+    "steps", "method-a", "method-b", "worked", "examtip", "keypoint",
+    "mnemonic", "pitfall", "pyq", "intuition", "definition", "formula",
+    "chapter-summary", "part-divider",
+)
+
+def _inject_markdown_attr(text: str) -> str:
+    """Add markdown="block" to our custom callout divs so Python-Markdown
+    processes **bold** / *italic* / tables inside them correctly."""
+    pattern = re.compile(
+        r'(<div\s+class="('
+        + "|".join(re.escape(c) for c in _MD_DIV_CLASSES)
+        + r')")',
+    )
+    return pattern.sub(r'\1 markdown="block"', text)
+
+
 def _render_html(md_text: str) -> str:
     md_text = _strip_pandoc_directives(md_text)
+    md_text = _inject_markdown_attr(md_text)
     # Protect math spans before markdown processes emphasis/italic markers
     md_text, placeholders = _protect_math(md_text)
     md = markdown.Markdown(
@@ -583,6 +631,7 @@ def _render_html(md_text: str) -> str:
             "sane_lists",
             "abbr",
             "footnotes",
+            "md_in_html",
         ],
         extension_configs={"toc": {"permalink": False, "toc_depth": "2-3"}},
     )

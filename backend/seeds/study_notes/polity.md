@@ -273,6 +273,30 @@ answer sheet in mains.
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["MAKING OF THE CONSTITUTION"]:::root
+    R --> CA["Constituent Assembly"]:::date
+    R --> DC["Drafting + Adoption"]:::date
+    R --> SR["Sources of the Constitution"]:::key
+    R --> TR["TRAP: Dates to know exactly"]:::trap
+    CA --> CA1["Formed: December 1946<br>Members: 299 (final)<br>Chaired by: Dr Rajendra Prasad"]:::date
+    CA --> CA2["Drafting Committee Chair:<br>Dr B.R. Ambedkar<br>'Father of the Constitution'"]:::date
+    DC --> DC1["Adopted: 26 November 1949<br>'Constitution Day' / Law Day<br>Enforced: 26 January 1950 (Republic Day)"]:::date
+    DC --> DC2["Original: 395 articles, 8 Schedules<br>Currently: ~470+ articles, 12 Schedules<br>Longest written constitution in the world"]:::key
+    SR --> SR1["USA: Fundamental Rights, Judicial Review<br>UK: Westminster model, Parliamentary system<br>Ireland: Directive Principles (DPSP)"]:::key
+    SR --> SR2["Australia: Concurrent List, joint sitting<br>Canada: Federation, residuary with Centre<br>USSR: Fundamental Duties"]:::key
+    TR --> TR1["TRAP: 26 Nov = adoption, NOT enforcement<br>26 Jan = Republic Day = enforcement date<br>Constituent Assembly: 2 yrs 11 months 18 days"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 2 — The Preamble
 
 ### 2.1 Why spend a chapter on 85 words?
@@ -384,6 +408,30 @@ Three words added by 42nd Amendment 1976: **Socialist, Secular, Integrity.** Two
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["THE PREAMBLE"]:::root
+    R --> KW["Key Words"]:::key
+    R --> AM["Words added by 42nd Amendment 1976"]:::date
+    R --> JU["Judicial Status"]:::key
+    R --> OB["Four Objectives"]:::proc
+    KW --> KW1["WE THE PEOPLE OF INDIA<br>Sovereign: supreme authority<br>Democratic: elected government<br>Republic: elected head of state"]:::key
+    AM --> AM1["'Socialist' added by 42nd Amendment 1976<br>'Secular' added by 42nd Amendment 1976<br>PM Indira Gandhi during Emergency"]:::date
+    JU --> JU1["NOT justiciable: cannot be enforced in court<br>Berubari Case 1960: not part of Constitution<br>Kesavananda Bharati 1973: CAN be amended<br>BUT basic structure cannot be destroyed"]:::key
+    OB --> OB1["JUSTICE: Social, Economic, Political"]:::proc
+    OB --> OB2["LIBERTY: Expression, belief, faith, worship"]:::proc
+    OB --> OB3["EQUALITY: Status and opportunity"]:::proc
+    OB --> OB4["FRATERNITY: Dignity of individual<br>Unity and integrity of the Nation"]:::proc
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 3 — Salient Features of the Indian Constitution
 
 A catalogue of the **defining characteristics**. Memorise them as a mental
@@ -459,6 +507,30 @@ The lengthiest written constitution in the world. One country across 28 states w
 </div>
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["SALIENT FEATURES"]:::root
+    R --> S1["Structural Features"]:::key
+    R --> S2["Political Features"]:::key
+    R --> S3["Judicial Features"]:::key
+    R --> TR["TRAP: Federal vs Unitary"]:::trap
+    S1 --> S1a["Longest written constitution globally<br>Originally 395 Art; 8 Sch; 22 Parts<br>Drawn from many world constitutions"]:::key
+    S1 --> S1b["Federal with UNITARY BIAS<br>Strong centre in emergencies<br>Single citizenship for all"]:::key
+    S1 --> S1c["Universal Adult Franchise<br>Age 18+ (lowered from 21 by 61st Amendment 1989)"]:::date
+    S2 --> S2a["Parliamentary government (Westminster)<br>PM is real executive; President = nominal<br>Cabinet collectively responsible to Lok Sabha"]:::key
+    S2 --> S2b["Fundamental Rights (Part III)<br>+ Directive Principles (Part IV)<br>+ Fundamental Duties (Part IVA, Art 51A)"]:::key
+    S3 --> S3a["Single integrated judiciary<br>Supreme Court at apex<br>Judicial Review: can strike down laws"]:::key
+    TR --> TR1["India is QUASI-FEDERAL not fully federal<br>No dual citizenship (unlike USA)<br>Centre can override states in emergency"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 4 — The Schedules + the Parts (the map of the Constitution)
 
@@ -596,6 +668,31 @@ they can demand from the state, and what the state asks back.
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart LR
+    R["12 SCHEDULES"]:::root
+    R --> S1["1st: 28 States + 8 UTs names"]:::key
+    R --> S2["2nd: Salaries of constitutional posts"]:::key
+    R --> S3["3rd: Forms of Oaths and Affirmations"]:::key
+    R --> S4["4th: Seats in Rajya Sabha per state"]:::key
+    R --> S5["5th: Admin of Scheduled Tribe areas"]:::key
+    R --> S6["6th: Admin of NE tribal areas<br>Assam, Meghalaya, Tripura, Mizoram"]:::key
+    R --> S7["7th: 3 Lists<br>Union (100), State (61), Concurrent (52)"]:::key
+    R --> S8["8th: 22 Official Languages"]:::key
+    R --> S9["9th: Land reform laws<br>Added by 1st Amendment 1951"]:::date
+    R --> S10["10th: Anti-defection law<br>Added by 52nd Amendment 1985"]:::date
+    R --> S11["11th: Panchayati Raj subjects (29)<br>Added by 73rd Amendment 1992"]:::date
+    R --> S12["12th: Municipality subjects (18)<br>Added by 74th Amendment 1992"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 5 — Citizenship (Part II, Articles 5–11)
 
 ### 5.1 Hook — the Partition problem
@@ -705,6 +802,28 @@ Indian citizenship is single and regulated by Parliament under Article 11. Five 
 </div>
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["CITIZENSHIP (Art 5-11)"]:::root
+    R --> AC["Acquisition of Citizenship"]:::proc
+    R --> LO["Loss of Citizenship"]:::key
+    R --> OV["Overseas Indians"]:::key
+    R --> TR["TRAP: No Dual Citizenship"]:::trap
+    AC --> AC1["By BIRTH: born in India before 26 Jan 1950<br>OR at least one parent a citizen + born after 1987"]:::key
+    AC --> AC2["By DESCENT: parent citizen + born abroad<br>By REGISTRATION: living in India 7+ years<br>By NATURALISATION: 11+ years residence"]:::key
+    LO --> LO1["Renunciation: voluntary giving up (Form)<br>Termination: obtaining foreign citizenship<br>Deprivation: Govt cancels — fraud/disloyalty"]:::key
+    OV --> OV1["NRI: Non-Resident Indian (Indian citizen abroad)<br>PIO: Person of Indian Origin (foreign citizen)<br>OCI: Overseas Citizen of India — dual citizenship-like<br>but no political rights (can't vote/hold office)"]:::key
+    TR --> TR1["India has SINGLE citizenship only<br>No dual citizenship allowed<br>OCI is NOT citizenship — it is a status"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter 6 — Fundamental Rights (Articles 12–35)
 
@@ -1255,6 +1374,30 @@ Six shields: equality (14–18), freedom (19–22), against exploitation (23–2
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["FUNDAMENTAL RIGHTS<br>Part III, Art 12-35"]:::root
+    R --> SX["6 Fundamental Rights"]:::key
+    R --> WR["5 Writs — Art 32 and Art 226"]:::key
+    R --> AM["Key Amendments"]:::date
+    R --> TR["TRAP: 7th FR removed"]:::trap
+    SX --> SX1["Art 14: Equality before law<br>Art 15: No discrimination (religion/race/caste/sex)<br>Art 17: Untouchability abolished"]:::key
+    SX --> SX2["Art 19: 6 freedoms (speech, assemble, move...)<br>Art 21: Right to Life + Personal Liberty<br>Art 21A: Right to Education (86th Amend 2002)"]:::key
+    SX --> SX3["Art 25-28: Freedom of Religion<br>Art 29-30: Cultural + Educational Rights<br>Art 32: Right to Constitutional Remedies"]:::key
+    WR --> WR1["Habeas Corpus: produce the body (illegal detention)<br>Mandamus: command to perform duty<br>Prohibition: stop lower court overstepping"]:::key
+    WR --> WR2["Certiorari: quash lower court order<br>Quo Warranto: by what authority (challenge post)<br>SC issues all 5; HC issues all 5 + extra"]:::key
+    AM --> AM1["Art 32: 'Heart and Soul' — Dr Ambedkar<br>Art 21: expanded by courts to include privacy,<br>livelihood, dignity, education"]:::key
+    TR --> TR1["7th FR = Right to Property (Art 31)<br>Removed by 44th Amendment 1978<br>Now legal right under Art 300A only"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 7 — Directive Principles of State Policy (Articles 36–51)
 
 ### 7.1 Hook — the promises the courts can't enforce
@@ -1401,6 +1544,29 @@ Key Article numbers: village panchayats = **Art 40**, UCC = **Art 44**, environm
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["DIRECTIVE PRINCIPLES<br>Part IV, Art 36-51"]:::root
+    R --> BA["Basic Nature"]:::key
+    R --> KA["Key Articles to Know"]:::key
+    R --> TR["TRAP: DPSP vs FR conflict"]:::trap
+    R --> SO["Source"]:::date
+    BA --> BA1["NOT justiciable: courts cannot enforce them<br>Moral obligations on the state<br>But have constitutional importance"]:::key
+    BA --> BA2["Cannot be struck down for violating FRs<br>Art 31C (42nd Amend): laws for Art 39(b)(c)<br>cannot be challenged on FR grounds"]:::key
+    KA --> KA1["Art 39: Equal pay for equal work<br>Art 40: Panchayati Raj — village panchayats<br>Art 44: Uniform Civil Code (UCC)"]:::key
+    KA --> KA2["Art 45: Early childhood care (0-6 yrs)<br>Art 48A: Protect environment + wildlife<br>Art 50: Separate judiciary from executive"]:::key
+    TR --> TR1["TRAP: DPSP 'supplements' FRs, doesn't override<br>Kesavananda 1973: Both FRs + DPSP have equal value<br>Minerva Mills 1980: Balance is basic structure"]:::trap
+    SO --> SO1["Inspired by: Irish Constitution<br>Spanish Constitution also similar<br>Both influenced by socialist + welfare principles"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 8 — Fundamental Duties (Article 51-A, Part IV-A)
 
 ### 8.1 Hook — where FRs face the mirror
@@ -1476,6 +1642,29 @@ Eleven duties, all in one Article — 51-A. Added during the Emergency by the 42
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["FUNDAMENTAL DUTIES<br>Art 51A, Part IV-A"]:::root
+    R --> AD["Addition History"]:::date
+    R --> DU["Key Duties (11 total)"]:::key
+    R --> NA["Nature of Duties"]:::key
+    R --> TR["TRAP: Not justiciable"]:::trap
+    AD --> AD1["Added by 42nd Amendment 1976<br>Swaran Singh Committee recommended<br>Based on: USSR Constitution"]:::date
+    AD --> AD2["Originally 10 duties (1976)<br>11th added by 86th Amendment 2002:<br>Duty of parents to provide education<br>to children aged 6-14 years"]:::date
+    DU --> DU1["Abide by Constitution + respect ideals<br>Defend country if called upon<br>Promote harmony and brotherhood"]:::key
+    DU --> DU2["Protect environment, forests, wildlife<br>Develop scientific temper<br>Safeguard public property"]:::key
+    NA --> NA1["Moral obligations — NOT enforceable<br>No penalty for non-compliance<br>Guide citizens in their conduct"]:::key
+    TR --> TR1["TRAP: FRs are justiciable; FDs are NOT<br>DPSPs are NOT justiciable; FDs are NOT<br>Only Fundamental RIGHTS are enforceable in court"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter 9 — FRs + DPSPs + FDs — The Big Picture
 
 You've just met the three sides of the citizen-state compact. Before moving
@@ -1536,6 +1725,30 @@ If you got 8+ right, move on. If less, re-read chapters 1 + 6 + 7.
 ---
 
 # Appendices
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["FRs + DPSPs + FDs<br>THE BIG PICTURE"]:::root
+    R --> CM["Comparison Matrix"]:::key
+    R --> LC["Landmark Cases"]:::date
+    R --> AM["Constitutional Amendments"]:::date
+    R --> TR["TRAP: Justiciability"]:::trap
+    CM --> CM1["Fundamental Rights: JUSTICIABLE<br>Directive Principles: NOT justiciable<br>Fundamental Duties: NOT justiciable"]:::key
+    CM --> CM2["FRs: protect individuals from state<br>DPSPs: guide state towards welfare<br>FDs: obligations of citizens"]:::key
+    LC --> LC1["Kesavananda Bharati 1973: 13-judge bench<br>Parliament cannot destroy BASIC STRUCTURE<br>Established 'basic structure doctrine'"]:::date
+    LC --> LC2["Minerva Mills 1980: Balance of FRs + DPSPs<br>is itself part of basic structure<br>Cannot prioritise one completely over other"]:::date
+    LC --> LC3["Maneka Gandhi 1978: Art 21 expanded<br>Procedure must be 'just fair and reasonable'<br>Not just 'procedure established by law'"]:::date
+    AM --> AM1["42nd Amendment 1976 (Mini Constitution):<br>Added Socialist + Secular to Preamble<br>+ 10 FDs + expanded DPSPs"]:::date
+    TR --> TR1["TRAP: Preamble is NOT justiciable<br>TRAP: Right to Property moved from FR to<br>legal right (Art 300A) by 44th Amendment"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Appendix A — Timeline (so far)
 

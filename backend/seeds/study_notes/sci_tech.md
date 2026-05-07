@@ -212,6 +212,31 @@ Explain to a class 10 student: **PSLV** is India's workhorse rocket — it launc
 
 \newpage
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["ISRO — INDIA'S SPACE PROGRAMME"]:::root
+    R --> FO["Foundation + Milestones"]:::date
+    R --> VE["Key Launch Vehicles"]:::key
+    R --> MI["Major Missions"]:::date
+    R --> TR["TRAP: First satellite vs first rocket"]:::trap
+    FO --> FO1["ISRO founded: 1969 by Dr Vikram Sarabhai<br>HQ: Bengaluru (Space Commission + DOS)<br>First rocket launch: 1963 from Thumba (Thiruvananthapuram)"]:::date
+    FO --> FO2["First satellite: Aryabhata (April 19, 1975)<br>Launched by Soviet Kosmos-3M rocket<br>Name: after Indian mathematician Aryabhata"]:::date
+    VE --> VE1["PSLV (Polar Satellite Launch Vehicle):<br>Workhorse; 4-stage alternating solid+liquid fuel<br>58+ successful missions; most reliable"]:::key
+    VE --> VE2["GSLV Mk III / LVM3 (Launch Vehicle Mark 3):<br>Heavy-lift; 4 tonnes to GTO<br>Launched Chandrayaan-3, OneWeb satellites"]:::key
+    MI --> MI1["Chandrayaan-3: landed August 23, 2023<br>SOUTH POLE lunar landing (world FIRST)<br>Vikram lander + Pragyan rover; 14 days on Moon"]:::date
+    MI --> MI2["Mangalyaan (MOM 2013-14):<br>1st Asian country to reach Mars<br>1st country to succeed in FIRST attempt"]:::date
+    MI --> MI3["Gaganyaan: India's crewed space mission<br>Target: 2025-2026; 3 astronauts; 400 km orbit<br>Crew: Prasanth Balakrishnan + 3 others (Vyommitras)"]:::date
+    TR --> TR1["TRAP: First ROCKET = 1963 (American Nike-Apache)<br>First INDIAN SATELLITE = Aryabhata 1975<br>First ISRO rocket = SLV-3 1980 (Rohini into orbit)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter A2 — Private Space & Global Context
 
 ### 🏭 Private Space Sector Reforms
@@ -240,6 +265,28 @@ Explain to a class 10 student: **PSLV** is India's workhorse rocket — it launc
 \newpage
 
 # PART B — DEFENCE TECHNOLOGY: GUARDING THE NATION
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["PRIVATE SPACE AND GLOBAL CONTEXT"]:::root
+    R --> IS["IN-SPACe + Indian Private Sector"]:::date
+    R --> GL["Global Space Players"]:::key
+    R --> ST["Space Stations + Telescopes"]:::key
+    IS --> IS1["IN-SPACe: Indian National Space Promotion and<br>Authorization Centre; established 2020<br>Regulates private space companies in India"]:::date
+    IS --> IS2["NSIL: NewSpace India Limited (ISRO commercial arm)<br>Agnikul Cosmos + Skyroot Aerospace (Indian startups)<br>Pixxel: Indian earth observation satellite startup"]:::key
+    GL --> GL1["SpaceX (Elon Musk): Falcon 9 (reusable)<br>Starship (largest rocket ever); Crew Dragon (ISS)<br>Starlink: global internet via 5000+ LEO satellites"]:::key
+    GL --> GL2["NASA: US; Artemis mission (Moon return)<br>ESA: European Space Agency; HQ Paris<br>JAXA: Japan; Roscosmos: Russia; CNSA: China"]:::key
+    ST --> ST1["ISS: International Space Station<br>Since 1998; 400 km altitude<br>Partners: USA, Russia, Japan, ESA, Canada"]:::key
+    ST --> ST2["James Webb Space Telescope (JWST): 2021<br>L2 point; 1.5M km from Earth<br>Infrared; 100x more powerful than Hubble"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter B1 — DRDO and the Missile Story
 
@@ -347,6 +394,29 @@ Imagine India has three shields: **Prithvi** for neighbours up close, **Agni** f
 
 # PART C — NUCLEAR PROGRAMME
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["DRDO AND MISSILES"]:::root
+    R --> DR["DRDO Overview"]:::date
+    R --> IG["IGMDP Missiles"]:::key
+    R --> OT["Other Key Weapons Systems"]:::key
+    R --> TR["TRAP: BrahMos is NOT DRDO alone"]:::trap
+    DR --> DR1["DRDO: Defence Research and Development Organisation<br>Founded 1958; HQ New Delhi<br>52 labs; 30,000+ scientists + staff"]:::date
+    DR --> DR2["APJ Abdul Kalam: Missile Man of India<br>Led IGMDP (Integrated Guided Missile Development Programme)<br>Later became 11th President of India (2002-2007)"]:::date
+    IG --> IG1["IGMDP launched 1983; five missiles:<br>P — Prithvi (surface-to-surface; 150-500 km)<br>A — Agni (ballistic; Agni-V = 5000+ km; ICBM range)"]:::key
+    IG --> IG2["T — Trishul (short-range naval air defense)<br>A — Akash (air defense; Mach 2.5; 25 km range)<br>N — Nag (anti-tank guided missile; third generation)"]:::key
+    OT --> OT1["Astra: beyond-visual-range air-to-air; 100+ km<br>Tejas: light combat aircraft (HAL + DRDO)<br>Arjun: main battle tank"]:::key
+    TR --> TR1["TRAP: BrahMos = India-Russia JOINT venture<br>DRDO (India) + NPO Mashinostroyenia (Russia)<br>World's fastest operational cruise missile: Mach 2.8"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter C1 — Bhabha's Three-Stage Plan
 
 ### Background
@@ -405,6 +475,29 @@ flowchart LR
 \newpage
 
 # PART D — COMPUTING, AI, AND DIGITAL INDIA
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["INDIA'S NUCLEAR PROGRAMME"]:::root
+    R --> HB["Homi J. Bhabha"]:::date
+    R --> TS["Three-Stage Plan"]:::proc
+    R --> FA["Key Facilities"]:::key
+    R --> PO["Pokhran Tests"]:::date
+    HB --> HB1["Homi J. Bhabha: Father of India's nuclear programme<br>Founded TIFR (1945) and BARC (1954)<br>Died 1966 in Air India crash near Mont Blanc"]:::date
+    TS --> TS1["Stage 1: PHWRs (Pressurised Heavy Water Reactors)<br>Fuel: natural uranium-238; Moderator: heavy water<br>Produces plutonium-239 as byproduct"]:::proc
+    TS --> TS2["Stage 2: Fast Breeder Reactors (FBRs)<br>Fuel: Pu-239 from Stage 1; breeds more Pu<br>India's first FBR: Kalpakkam, Tamil Nadu"]:::proc
+    TS --> TS3["Stage 3: Advanced reactors using Thorium-232<br>India has world's LARGEST thorium reserves<br>Thorium -> U-233 (fissile material for reactor)"]:::proc
+    FA --> FA1["BARC: Bhabha Atomic Research Centre, Mumbai<br>NPCIL: Nuclear Power Corporation of India Limited<br>Operating plants: Tarapur, Rawatbhata, Kalpakkam, Kaiga, Kudankulam"]:::key
+    PO --> PO1["Pokhran-I (Smiling Buddha): May 18, 1974<br>PM Indira Gandhi; first nuclear test<br>Pokhran-II (Operation Shakti): May 11-13, 1998<br>PM Vajpayee; India declared nuclear weapon state"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter D1 — Computer Fundamentals
 
@@ -466,6 +559,29 @@ flowchart TD
 ---
 
 \newpage
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["COMPUTER FUNDAMENTALS"]:::root
+    R --> GE["Computer Generations"]:::date
+    R --> BN["Binary System + Storage"]:::key
+    R --> CO["Key Components"]:::key
+    R --> IN["Internet Basics"]:::key
+    GE --> GE1["1st Gen (1940-55): Vacuum tubes; ENIAC, UNIVAC<br>2nd Gen (1955-65): Transistors; smaller + faster<br>3rd Gen (1965-75): Integrated Circuits (ICs)"]:::date
+    GE --> GE2["4th Gen (1975-): Microprocessors (VLSI); PCs<br>5th Gen (now): AI, quantum, neuromorphic<br>Each gen: smaller, faster, cheaper, less power"]:::date
+    BN --> BN1["Binary: base-2 number system (0 and 1)<br>1 bit = smallest unit (0 or 1)<br>8 bits = 1 Byte; 1024 Bytes = 1 KB"]:::key
+    BN --> BN2["1 MB = 1024 KB; 1 GB = 1024 MB<br>1 TB = 1024 GB; 1 PB = 1024 TB<br>RAM: volatile; ROM: non-volatile"]:::key
+    CO --> CO1["CPU: ALU (arithmetic) + CU (control) + Registers<br>RAM: Random Access Memory (temporary, fast)<br>HDD/SSD: permanent storage"]:::key
+    IN --> IN1["ARPANET (1969): predecessor of internet<br>TCP/IP: fundamental protocol of the internet<br>HTTP/HTTPS: web browsing protocol; SMTP: email"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter D2 — Artificial Intelligence & Emerging Tech
 
@@ -535,6 +651,29 @@ AI today is basically **pattern-matching on steroids**. Feed a machine millions 
 
 # PART E — BIOTECHNOLOGY & HEALTH TECH
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["AI AND EMERGING TECHNOLOGIES"]:::root
+    R --> AI["Artificial Intelligence"]:::key
+    R --> BC["Blockchain"]:::key
+    R --> QC["Quantum Computing"]:::key
+    R --> OT["Other Tech"]:::key
+    AI --> AI1["AI: machines simulating human intelligence<br>ML: machine learns from data patterns<br>DL (Deep Learning): neural networks; multiple layers"]:::key
+    AI --> AI2["Generative AI: creates text/image/audio<br>LLM (Large Language Model): ChatGPT, Gemini, Claude<br>Computer Vision: image recognition; face unlock"]:::key
+    BC --> BC1["Blockchain: distributed ledger technology<br>Immutable (cannot alter past records)<br>Decentralised: no single controlling authority"]:::key
+    BC --> BC2["Bitcoin: first cryptocurrency (Satoshi Nakamoto 2008)<br>Smart contracts: self-executing code on blockchain<br>Web3: decentralised internet vision"]:::key
+    QC --> QC1["Qubits: quantum bits (superposition: 0 AND 1 simultaneously)<br>Quantum supremacy: Google Sycamore 2019<br>Exponentially faster for certain problems"]:::key
+    OT --> OT1["5G: sub-1ms latency; 20 Gbps peak; IoT backbone<br>IoT: Internet of Things; smart devices connected<br>AR/VR: Augmented Reality (overlay) / Virtual Reality (immersive)"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter E1 — Genetic Engineering Primer
 
 ### 🧬 Core Vocabulary
@@ -600,6 +739,29 @@ AI today is basically **pattern-matching on steroids**. Feed a machine millions 
 
 # PART F — ENERGY & ENVIRONMENT TECH
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["GENETIC ENGINEERING"]:::root
+    R --> RT["Recombinant DNA Technology"]:::proc
+    R --> GM["GMOs in India"]:::key
+    R --> CR["CRISPR"]:::date
+    R --> PC["PCR"]:::date
+    RT --> RT1["Restriction enzymes: cut DNA at specific sequences<br>Ligase: join DNA fragments (molecular glue)<br>Vector (plasmid): carries foreign DNA into host cell"]:::proc
+    RT --> RT2["Steps: Extract DNA -> Cut with restriction enzyme<br>Insert into vector -> Transform into host (bacteria)<br>Select + grow -> harvest product"]:::proc
+    GM --> GM1["Bt Cotton: Bacillus thuringiensis toxin gene<br>Makes cotton resistant to bollworm pests<br>Only approved GM crop in India (2002)"]:::key
+    GM --> GM2["Bt Brinjal: approved then suspended (moratorium 2010)<br>Golden Rice: beta-carotene (Vitamin A); not approved<br>GM Mustard (HT Mustard): approved 2022 by GEAC"]:::key
+    CR --> CR1["CRISPR-Cas9: gene editing tool; 2012<br>Jennifer Doudna + Emmanuelle Charpentier<br>Nobel Prize Chemistry 2020"]:::date
+    PC --> PC1["PCR: Polymerase Chain Reaction<br>Amplifies tiny DNA sample millions of times<br>Kary Mullis (Nobel 1993); used in COVID testing + forensics"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter F1 — India's Energy Transition
 
 ### 🌞 Renewable Milestones (Apr 2026)
@@ -652,6 +814,29 @@ AI today is basically **pattern-matching on steroids**. Feed a machine millions 
 
 # PART G — HEALTH & MEDICAL TECH
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["INDIA'S ENERGY TRANSITION"]:::root
+    R --> CO["Coal (Current Reality)"]:::key
+    R --> RE["Renewables (Target)"]:::key
+    R --> NE["Nuclear Energy"]:::key
+    R --> TR["TRAP: India is 3rd largest emitter"]:::trap
+    CO --> CO1["Coal: 55% of India's electricity (2024)<br>India: 2nd largest coal consumer globally<br>Largest reserves: Jharkhand, Chhattisgarh, Odisha"]:::key
+    CO --> CO2["Just Transition challenge: 300,000+ coal workers<br>Coal India Limited (CIL): world's largest coal producer<br>India NOT committed to phasing OUT coal (only phase down)"]:::key
+    RE --> RE1["Renewable target: 500 GW by 2030<br>Solar: 300 GW; Wind: 60 GW<br>India: 3rd largest solar capacity globally (2024)"]:::key
+    RE --> RE2["ISA (International Solar Alliance): co-founded India + France<br>HQ: Gurugram (near Delhi)<br>Green Hydrogen Mission: 5 million tonnes by 2030"]:::key
+    NE --> NE1["Nuclear: 22 reactors; 7,480 MW capacity<br>NPCIL operates all nuclear power plants<br>Kudankulam (Russia collaboration) = largest plant"]:::key
+    TR --> TR1["TRAP: India = 3rd largest emitter (absolute)<br>But India has VERY LOW per capita emissions<br>Per capita: India 40th percentile globally"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter G1 — Medical Missions & Innovations
 
 ### 🩺 Key Programmes
@@ -686,6 +871,30 @@ AI today is basically **pattern-matching on steroids**. Feed a machine millions 
 
 > *Physics, Chemistry, and Biology each have dedicated full-length books in this series. This part provides a rapid-revision layer for the general-awareness flavour of questions that appear in SSC and Banking exams.*
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["MEDICAL MISSIONS AND INNOVATIONS"]:::root
+    R --> AI["AIIMS + ICMR"]:::date
+    R --> VA["COVID-19 Vaccines (India)"]:::date
+    R --> DI["Digital Health"]:::key
+    R --> TR["TRAP: Covaxin vs Covishield"]:::trap
+    AI --> AI1["AIIMS: All India Institute of Medical Sciences<br>First AIIMS: New Delhi 1956<br>Now 23 AIIMS across India (expansion 2003+)"]:::date
+    AI --> AI2["ICMR: Indian Council of Medical Research<br>Founded 1911 (oldest medical research body in India)<br>Co-developed Covaxin with Bharat Biotech"]:::date
+    VA --> VA1["Covaxin: Bharat Biotech + ICMR<br>Inactivated virus vaccine (whole virus killed)<br>100% indigenous; WHO EUL approved Nov 2021"]:::date
+    VA --> VA2["Covishield: Serum Institute + AstraZeneca (Oxford)<br>Viral vector vaccine (chimpanzee adenovirus)<br>Largest single manufacturer in world (SII Pune)"]:::date
+    DI --> DI1["e-Sanjeevani: world's largest telemedicine platform<br>200+ million consultations (as of 2023)<br>MoHFW initiative; connects doctors + patients remotely"]:::key
+    DI --> DI2["Ayushman Bharat: health ID + PM-JAY insurance<br>ABHA (Ayushman Bharat Health Account): health ID<br>DigiLocker: store + share health documents"]:::key
+    TR --> TR1["TRAP: Covaxin = INDIAN vaccine; inactivated virus<br>Covishield = SERUM INSTITUTE + AstraZeneca; viral vector<br>Both approved for use in India in 2021"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter H1 — Physics Essentials (General Awareness flavour)
 
 - **SI units** — 7 base: m, kg, s, A, K, mol, cd.
@@ -697,6 +906,27 @@ AI today is basically **pattern-matching on steroids**. Feed a machine millions 
 - **Sound** — longitudinal, ~343 m/s in air, ~1500 m/s in water, faster in solids.
 - **LASER** — Light Amplification by Stimulated Emission of Radiation.
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["PHYSICS FOR GA SECTION"]:::root
+    R --> SP["Speed Values"]:::key
+    R --> TE["Technologies based on Physics"]:::key
+    R --> DI["Discoveries to Know"]:::date
+    SP --> SP1["Speed of sound in air: 343 m/s at 20 C<br>Speed of light in vacuum: 3 x 10^8 m/s<br>Sound in water: 1480 m/s; in steel: 5100 m/s"]:::key
+    TE --> TE1["SONAR: uses ultrasound; naval + depth measurement<br>RADAR: radio waves; detect aircraft + weather<br>Laser: coherent monochromatic light; cutting, surgery, CD/DVD"]:::key
+    TE --> TE2["Optical fibre: total internal reflection; internet<br>MRI: magnetic resonance imaging; strong magnetic field<br>X-rays: discovered Roentgen 1895; electromagnetic radiation"]:::date
+    DI --> DI1["Roentgen 1895: X-rays (Nobel 1901)<br>Curie 1898: Polonium + Radium; radioactivity<br>Fleming 1928: Penicillin (Alexander Fleming)"]:::date
+    DI --> DI2["Newton 1687: Laws of Motion + Gravitation<br>Einstein 1905: Special Relativity; E=mc2<br>Planck 1900: Quantum theory"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter H2 — Chemistry Essentials
 
 - **Periodic Table** — 118 elements; **Mendeleev** (1869) → modern by Moseley (atomic number).
@@ -705,6 +935,27 @@ AI today is basically **pattern-matching on steroids**. Feed a machine millions 
 - **Acids/Bases** — Arrhenius, Brønsted-Lowry, Lewis.
 - **pH** — 0-14; < 7 acid, > 7 base.
 - **Key gases & uses:** O₂ (respiration), CO₂ (photosynthesis/fire-ext), N₂ (fertiliser, inert), H₂ (fuel of future), He (balloons), Ne (sign lights), Ar (bulb filling).
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["CHEMISTRY ESSENTIALS FOR GA"]:::root
+    R --> CS["Common Salts + Formulae"]:::key
+    R --> US["Common Uses"]:::key
+    R --> TR["TRAP: Baking Soda vs Washing Soda"]:::trap
+    CS --> CS1["NaCl: common salt (table salt); neutral pH<br>NaHCO3: baking soda; slightly alkaline<br>Na2CO3.10H2O: washing soda; alkaline"]:::key
+    CS --> CS2["CaO: quicklime; CaSO4.0.5H2O: Plaster of Paris<br>Ca(OH)2: slaked lime; CaCO3: limestone<br>KAl(SO4)2.12H2O: alum; water purification"]:::key
+    US --> US1["Baking soda: leavening in bread; antacid; fire extinguisher<br>Washing soda: remove stains; water softening<br>Bleaching powder: water treatment; textile bleaching"]:::key
+    US --> US2["Plaster of Paris: bone casts; moulds; wall plaster<br>Alum: flocculation (water treatment) + styptic pencil<br>Chlorine: water disinfection + PVC manufacture"]:::key
+    TR --> TR1["TRAP: Baking Soda = NaHCO3 (sodium BICARBONATE)<br>Washing Soda = Na2CO3.10H2O (sodium CARBONATE)<br>Baking soda for cooking; Washing soda for cleaning"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter H3 — Biology Essentials
 
@@ -722,6 +973,29 @@ AI today is basically **pattern-matching on steroids**. Feed a machine millions 
 \newpage
 
 # APPENDICES
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["BIOLOGY ESSENTIALS FOR GA"]:::root
+    R --> HB["Human Body Key Numbers"]:::key
+    R --> BL["Blood Facts"]:::key
+    R --> DI["Disease Vectors — Quick Reference"]:::key
+    R --> VT["Vitamins — Quick Reference"]:::key
+    HB --> HB1["Bones in adult: 206; Bones in infant: 270-300<br>Smallest bone: Stapes (ear); Largest: Femur<br>Normal pulse: 72 bpm; BP: 120/80 mmHg"]:::key
+    HB --> HB2["Body temperature: 37 C; pH of blood: 7.35-7.45<br>RBC lifespan: 120 days; WBC: days-years<br>Platelet lifespan: 10 days"]:::key
+    BL --> BL1["Universal donor: O negative (O-)<br>Universal recipient: AB positive (AB+)<br>Landsteiner discovered ABO system 1901 (Nobel 1930)"]:::key
+    DI --> DI1["Malaria: Plasmodium via Anopheles female mosquito<br>Dengue: Flavivirus via Aedes aegypti mosquito<br>Filariasis: Wuchereria bancrofti via Culex mosquito"]:::key
+    DI --> DI2["Sleeping sickness: Trypanosoma via Tsetse fly<br>Plague: Yersinia pestis via rat flea<br>Kala-azar: Leishmania via sandfly"]:::key
+    VT --> VT1["A: Night blindness; B1: Beriberi; B3: Pellagra<br>B12: Pernicious anaemia; C: Scurvy<br>D: Rickets; K: Poor clotting"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Appendix 1 — One-page cheatsheet
 

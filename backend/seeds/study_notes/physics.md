@@ -87,6 +87,27 @@ The commercial unit of electrical energy is 1 kilowatt-hour (kWh) = 1 unit on yo
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["SI UNITS"]:::root
+    R --> B["7 Base SI Units"]:::key
+    R --> D["Key Derived Units"]:::key
+    R --> P["Prefixes"]:::key
+    B --> B1["Metre (m): length<br>Kilogram (kg): mass<br>Second (s): time"]:::key
+    B --> B2["Ampere (A): electric current<br>Kelvin (K): temperature<br>Mole (mol): amount of substance<br>Candela (cd): luminous intensity"]:::key
+    D --> D1["Newton (N) = kg m/s2 (force)<br>Joule (J) = N m (energy/work)<br>Watt (W) = J/s (power)"]:::key
+    D --> D2["Pascal (Pa) = N/m2 (pressure)<br>Hertz (Hz) = 1/s (frequency)<br>Coulomb (C) = A s (charge)"]:::key
+    P --> P1["micro (mu) = 10^-6; milli (m) = 10^-3<br>centi (c) = 10^-2; kilo (k) = 10^3<br>mega (M) = 10^6; giga (G) = 10^9"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter A2 — Newton's Laws of Motion
 
 Isaac Newton formulated these three laws in 1687 in his Principia Mathematica. They governed everything from cricket balls to rockets until Einstein refined them for extreme speeds and masses.
@@ -133,6 +154,27 @@ Where: u = initial velocity, v = final velocity, a = acceleration, t = time, s =
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["NEWTON'S LAWS OF MOTION"]:::root
+    R --> L1["1st Law: Inertia"]:::key
+    R --> L2["2nd Law: F = ma"]:::key
+    R --> L3["3rd Law: Action-Reaction"]:::key
+    R --> MO["Momentum"]:::key
+    L1 --> L1a["Object at rest stays at rest<br>Object in motion stays in motion<br>UNLESS external force acts on it<br>Seatbelts, coin-on-card demo"]:::key
+    L2 --> L2a["F = ma (Force = mass x acceleration)<br>1 Newton: accelerates 1 kg by 1 m/s2<br>Net force proportional to acceleration"]:::key
+    L3 --> L3a["Every action has equal + opposite reaction<br>Rocket thrust: gases pushed down; rocket goes up<br>Swimming: push water back; body moves forward"]:::key
+    MO --> MO1["Momentum p = mv (mass x velocity)<br>Law of Conservation of Momentum: no external force<br>Impulse = Force x time = change in momentum"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter A3 — Gravitation
 
 ### Newton's Universal Law
@@ -170,6 +212,28 @@ Escape velocity from Earth = **11.2 km/s** (~40,300 km/h). This is the minimum s
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["GRAVITATION"]:::root
+    R --> UG["Universal Gravitation"]:::key
+    R --> EG["Earth's Gravity (g)"]:::key
+    R --> ES["Escape and Orbital Velocity"]:::key
+    R --> TR["TRAP: g variation"]:::trap
+    UG --> UG1["F = G m1 m2 / r2<br>G = 6.67 x 10^-11 N m2 / kg2<br>Newton's law — universal gravitational constant"]:::key
+    EG --> EG1["g = 9.8 m/s2 at Earth's surface<br>g decreases with altitude (away from centre)<br>g slightly more at poles than equator"]:::key
+    EG --> EG2["Weightlessness: g = 0 in free fall<br>Astronauts in orbit = free fall around Earth<br>Weight = mg; mass never changes"]:::key
+    ES --> ES1["Escape velocity (Earth): 11.2 km/s<br>Orbital velocity (LEO ~300 km): 8 km/s<br>Moon escape velocity: 2.4 km/s (no atmosphere)"]:::key
+    TR --> TR1["TRAP: g at poles GREATER than at equator<br>Earth is slightly flattened at poles<br>Poles closer to centre, equator bulges out"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter A4 — Work, Energy, Power
 
 - **Work** = Force × displacement × cos(θ). Work is done only when displacement occurs in the direction of force. Unit: joule (J).
@@ -188,6 +252,28 @@ Classic example: A pendulum at its highest point has maximum PE and zero KE. At 
 \newpage
 
 # PART B — PROPERTIES OF MATTER
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["WORK, ENERGY, POWER"]:::root
+    R --> WK["Work"]:::key
+    R --> EN["Energy Types"]:::key
+    R --> PW["Power"]:::key
+    R --> CE["Conservation"]:::key
+    WK --> WK1["Work W = F x d x cos(theta)<br>Unit: Joule (J)<br>Work done = 0 if force perpendicular to motion"]:::key
+    EN --> EN1["Kinetic Energy (KE) = 0.5 mv2<br>Potential Energy (PE) = mgh<br>Elastic PE: compressed spring"]:::key
+    PW --> PW1["Power = Work / time = F x v<br>Unit: Watt (W); 1 W = 1 J/s<br>1 horsepower (hp) = 746 W"]:::key
+    CE --> CE1["Conservation of Energy: KE + PE = constant<br>Energy cannot be created or destroyed<br>Only converted from one form to another"]:::key
+    CE --> CE2["Efficiency = useful output / total input x 100%<br>No machine is 100% efficient<br>Losses due to friction + heat"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter B1 — Pressure, Fluids, Buoyancy
 
@@ -211,6 +297,28 @@ Ice floats on water — this is anomalous expansion. Water expands on freezing (
 
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["PRESSURE, FLUIDS, BUOYANCY"]:::root
+    R --> PR["Pressure"]:::key
+    R --> AR["Archimedes Principle"]:::key
+    R --> PA["Pascal's Law"]:::key
+    R --> TR["TRAP: Ice density vs water"]:::trap
+    PR --> PR1["Pressure = Force / Area; unit: Pascal (Pa)<br>1 atmosphere = 101,325 Pa = 760 mm Hg<br>Pressure in fluid increases with depth"]:::key
+    AR --> AR1["Buoyant force = weight of fluid displaced<br>Object floats if buoyant force >= weight<br>Density of object < density of fluid = floats"]:::key
+    AR --> AR2["Density of water = 1000 kg/m3<br>Ship: large hull displaces massive water volume<br>Steel can float if hollow enough"]:::key
+    PA --> PA1["Pressure in enclosed fluid transmitted equally<br>Hydraulic press: small force -> large force<br>Hydraulic brakes in cars use Pascal's Law"]:::key
+    TR --> TR1["TRAP: Ice is LESS dense than liquid water<br>Ice floats: 9/10 below surface; 1/10 above<br>Water expands on freezing (unusual property)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter B2 — Surface Tension, Viscosity, Capillarity
 
 - **Surface tension** — why water forms droplets (spherical = minimum surface area for a given volume), why insects can walk on water, why a needle can float on still water. Detergent reduces surface tension — the soap molecule disrupts the surface layer.
@@ -222,6 +330,28 @@ Ice floats on water — this is anomalous expansion. Water expands on freezing (
 \newpage
 
 # PART C — HEAT AND THERMODYNAMICS
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["SURFACE TENSION, VISCOSITY, CAPILLARITY"]:::root
+    R --> ST["Surface Tension"]:::key
+    R --> VI["Viscosity"]:::key
+    R --> CA["Capillarity"]:::key
+    ST --> ST1["Liquid surface acts like elastic membrane<br>Due to cohesive forces between molecules<br>Examples: water strider walking on water"]:::key
+    ST --> ST2["Soap reduces surface tension (surfactant effect)<br>Hot water has lower surface tension than cold<br>Surface tension: Nm (Newtons per metre)"]:::key
+    VI --> VI1["Viscosity: resistance to flow<br>Honey > oil > water > air<br>Viscosity of LIQUIDS decreases with temperature rise"]:::key
+    VI --> VI2["Viscosity of GASES increases with temperature<br>Newton's law of viscosity: shear stress proportional to velocity gradient<br>Stokes' Law: drag force on sphere in viscous fluid"]:::key
+    CA --> CA1["Capillarity: liquid rise/fall in narrow tubes<br>Water rises in glass (wetting liquid)<br>Mercury falls in glass (non-wetting)"]:::key
+    CA --> CA2["Plants use capillarity: water rises in xylem<br>Towel absorbs water: capillary action<br>Height of rise inversely proportional to tube radius"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter C1 — Temperature Scales
 
@@ -235,6 +365,26 @@ Conversion: °F = (9/5 × °C) + 32. Kelvin = Celsius + 273.15.
 
 Absolute zero (0 K = −273.15 °C) — theoretically the coldest possible temperature; particles have minimum possible energy.
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["TEMPERATURE SCALES"]:::root
+    R --> SC["3 Main Scales"]:::key
+    R --> CO["Conversions"]:::proc
+    R --> KV["Key Values"]:::key
+    SC --> SC1["Celsius: 0 C = ice point; 100 C = steam point<br>Fahrenheit: 32 F = ice; 212 F = steam<br>Kelvin: absolute scale; 0 K = absolute zero"]:::key
+    CO --> CO1["F = (9/5) x C + 32<br>K = C + 273.15<br>-40 degrees: Celsius = Fahrenheit (they cross)"]:::proc
+    KV --> KV1["Absolute zero: 0 K = -273.15 C<br>Body temperature: 37 C = 98.6 F = 310 K<br>Boiling point of water at sea level: 100 C = 212 F = 373 K"]:::key
+    KV --> KV2["Freezing point of water: 0 C = 32 F = 273 K<br>Liquid nitrogen: -196 C = 77 K<br>Surface of Sun: ~5500 C"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter C2 — Heat Transfer
 
 | Mode | Medium needed | Mechanism | Examples |
@@ -247,6 +397,29 @@ Absolute zero (0 K = −273.15 °C) — theoretically the coldest possible tempe
 
 The Sun's heat reaches Earth through the vacuum of space — this is radiation (electromagnetic waves). Only radiation requires no medium. This is why a thermos (vacuum flask) has a silvered interior — it prevents heat loss by all three mechanisms: vacuum stops conduction and convection, silvering reflects radiation.
 
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["HEAT TRANSFER"]:::root
+    R --> CO["Conduction"]:::key
+    R --> CV["Convection"]:::key
+    R --> RA["Radiation"]:::key
+    R --> TR["TRAP: Which needs no medium?"]:::trap
+    CO --> CO1["Conduction: heat transfer through solid<br>Molecule-to-molecule vibration<br>Best conductors: Silver > Copper > Gold > Aluminium"]:::key
+    CO --> CO2["Poor conductors (insulators): wood, glass, rubber<br>Thermos flask: vacuum prevents conduction<br>Air is a poor conductor (used in double glazing)"]:::key
+    CV --> CV1["Convection: heat transfer through fluid (liquid/gas)<br>Hot fluid rises (less dense); cold fluid sinks<br>Sea breeze + land breeze; monsoon mechanism"]:::key
+    CV --> CV2["Convection currents drive plate tectonics<br>Mantle convection moves tectonic plates<br>Thermostat works on convection"]:::key
+    RA --> RA1["Radiation: heat transfer without any medium<br>Electromagnetic waves (infrared)<br>Sun's energy reaches Earth through space via radiation"]:::key
+    TR --> TR1["TRAP: Only RADIATION needs no medium<br>Conduction needs solid contact<br>Convection needs fluid (liquid or gas)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>
 
 ## Chapter C3 — Specific Heat and Latent Heat
@@ -265,6 +438,29 @@ Steam burns are worse than boiling water burns at the same 100 °C — because s
 
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["SPECIFIC HEAT AND LATENT HEAT"]:::root
+    R --> SH["Specific Heat Capacity"]:::key
+    R --> LH["Latent Heat"]:::key
+    R --> AP["Applications"]:::key
+    R --> TR["TRAP: Phase change temperature"]:::trap
+    SH --> SH1["Specific heat: energy to raise 1 kg by 1 C<br>Water = 4186 J/kg/C (highest of common substances)<br>This is why coastal areas have mild climate"]:::key
+    SH --> SH2["Metals have LOW specific heat (heat up fast)<br>Iron = 450 J/kg/C; Copper = 385<br>Aluminium = 900; Lead = 128"]:::key
+    LH --> LH1["Latent heat: energy for phase change<br>Temperature does NOT change during phase change<br>Added energy breaks or forms molecular bonds"]:::key
+    LH --> LH2["Latent heat of fusion (ice to water): 334,000 J/kg<br>Latent heat of vaporisation (water to steam): 2,260,000 J/kg<br>Vaporisation needs MUCH more energy than melting"]:::key
+    AP --> AP1["Sweating: evaporation absorbs body heat (cooling)<br>Steam burns worse than boiling water (releases latent heat)<br>Refrigerator: refrigerant evaporates + condenses in cycle"]:::key
+    TR --> TR1["TRAP: During melting or boiling temperature is CONSTANT<br>Despite adding heat — energy breaks bonds<br>Only after all material changes phase does temp rise"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter C4 — Laws of Thermodynamics
 
 1. **Zeroth Law** — If system A is in thermal equilibrium with system B, and B with C, then A and C are also in equilibrium. This defines temperature.
@@ -279,6 +475,28 @@ A refrigerator moves heat from cold to hot — but only by consuming electricity
 \newpage
 
 # PART D — WAVES, SOUND, AND LIGHT
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["LAWS OF THERMODYNAMICS"]:::root
+    R --> Z["Zeroth Law"]:::key
+    R --> F["First Law"]:::key
+    R --> S["Second Law"]:::key
+    R --> T["Third Law"]:::key
+    Z --> Z1["Zeroth Law: basis of thermometry<br>If A=B and B=C in temp then A=C<br>Thermal equilibrium = same temperature"]:::key
+    F --> F1["First Law: Energy conservation<br>Q = delta_U + W<br>Heat added = internal energy rise + work done by system"]:::key
+    S --> S1["Second Law: Entropy always increases<br>Heat flows naturally from hot to cold ONLY<br>No heat engine is 100% efficient"]:::key
+    S --> S2["Carnot Engine: maximum possible efficiency<br>Efficiency = 1 - (T_cold / T_hot) [in Kelvin]<br>TRAP: Carnot efficiency is THEORETICAL maximum"]:::trap
+    T --> T1["Third Law: Entropy = 0 at absolute zero<br>Absolute zero (0 K) is unattainable<br>Temperature approaches but cannot reach 0 K"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter D1 — Sound
 
@@ -318,6 +536,29 @@ The apparent frequency of a sound changes when the source and observer are in re
 Sound Navigation and Ranging — uses ultrasonic pulses to detect underwater objects and map the ocean floor. The time for the echo to return, multiplied by the speed of sound in water, gives twice the distance to the object.
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["SOUND"]:::root
+    R --> NA["Nature of Sound"]:::key
+    R --> SP["Speed in Different Media"]:::key
+    R --> FR["Frequency Ranges"]:::key
+    R --> DO["Doppler Effect and Echo"]:::key
+    NA --> NA1["Longitudinal wave: compressions + rarefactions<br>Needs a MEDIUM (cannot travel in vacuum)<br>Moon: no sound because no atmosphere"]:::key
+    SP --> SP1["Speed in air at 20 C: 343 m/s<br>Speed in water: 1480 m/s<br>Speed in steel: 5100 m/s<br>Sound faster in denser and more elastic media"]:::key
+    FR --> FR1["Audible range: 20 Hz to 20,000 Hz<br>Infrasound: below 20 Hz (elephant, whale communication)<br>Ultrasound: above 20,000 Hz"]:::key
+    FR --> FR2["Ultrasound uses: SONAR (depth/submarine detection)<br>Medical ultrasound (imaging body organs)<br>Cleaning delicate instruments; breaking kidney stones"]:::key
+    DO --> DO1["Doppler Effect: source moving toward observer<br>--> higher frequency (higher pitch heard)<br>Source moving away --> lower frequency"]:::key
+    DO --> DO2["Echo: minimum distance 17 m from reflecting wall<br>(at 20 C) to distinguish echo from original sound<br>Echo used in SONAR; bat navigation"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter D2 — Light and Optics
 
@@ -415,6 +656,31 @@ Radio → Microwaves → Infrared → Visible light → Ultraviolet → X-rays �
 
 # PART E — ELECTRICITY AND MAGNETISM
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["LIGHT AND OPTICS"]:::root
+    R --> NA["Nature of Light"]:::key
+    R --> RE["Reflection + Refraction"]:::key
+    R --> LN["Lenses"]:::key
+    R --> TI["Total Internal Reflection"]:::key
+    R --> CO["Colour and Spectrum"]:::key
+    NA --> NA1["Speed of light in vacuum: 3 x 10^8 m/s<br>Light year: distance light travels in 1 year<br>Light is electromagnetic wave; no medium needed"]:::key
+    RE --> RE1["Reflection: angle of incidence = angle of reflection<br>Laws of reflection — both angles w.r.t. normal<br>Mirrors: plane (virtual/erect), concave (focus), convex (diverge)"]:::key
+    RE --> RE2["Refraction: light bends entering different medium<br>Refractive index n = c/v (speed in vacuum / speed in medium)<br>Diamond high refractive index (2.42) = sparkle"]:::key
+    LN --> LN1["Convex (converging) lens: focuses light<br>Uses: camera, eye (cornea+lens), magnifying glass, projector<br>Corrects hypermetropia (far-sightedness)"]:::key
+    LN --> LN2["Concave (diverging) lens: spreads light<br>Uses: corrects myopia (near-sightedness)<br>Combined with convex in binoculars, telescopes"]:::key
+    TI --> TI1["TIR: light goes dense-to-rare medium beyond critical angle<br>Uses: optical fibres (internet backbone), diamonds, mirages<br>Diamond critical angle: 24.4 degrees"]:::key
+    CO --> CO1["White light splits into 7 colours in prism: VIBGYOR<br>Violet: shortest wavelength; Red: longest<br>Rainbow: water droplets = natural prisms"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter E1 — Current Electricity
 
 - **Charge (q)** — unit: coulomb (C).
@@ -451,6 +717,29 @@ Why is AC preferred for power transmission? Transformers can step up voltage for
 - **Earthing** — safety connection to the ground. Any leakage current flows harmlessly into the ground instead of through a person.
 
 ---
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["CURRENT ELECTRICITY"]:::root
+    R --> OH["Ohm's Law"]:::key
+    R --> CI["Circuits"]:::key
+    R --> EF["Heating Effect"]:::key
+    R --> AC["AC vs DC"]:::key
+    OH --> OH1["Ohm's Law: V = IR<br>Voltage = Current x Resistance<br>Unit: V=Volt, I=Ampere, R=Ohm"]:::key
+    OH --> OH2["Power P = VI = I2 R = V2/R<br>Unit: Watt (W)<br>1 kWh = 1 unit of electricity = 3.6 MJ"]:::key
+    CI --> CI1["Series circuit: R_total = R1 + R2 + R3<br>Same current through all; voltages add<br>Failure of one: whole circuit fails"]:::key
+    CI --> CI2["Parallel circuit: 1/R_total = 1/R1 + 1/R2<br>Same voltage across all; currents add<br>Home wiring = parallel (each device independent)"]:::key
+    EF --> EF1["Heating effect (Joule's Law): H = I2 R t<br>Used in: electric iron, heater, toaster, incandescent bulb<br>Fuse: low melting point alloy (Sn-Pb) protects circuit"]:::key
+    AC --> AC1["AC: alternating current; direction changes<br>India: frequency 50 Hz; voltage 220-240 V<br>DC: direct current; constant direction (battery)"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter E2 — Magnetism and Electromagnetic Induction
 
@@ -504,6 +793,29 @@ Works on mutual induction — the changing current in the primary coil creates a
 
 # PART F — MODERN PHYSICS
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["MAGNETISM AND EMI"]:::root
+    R --> MA["Magnetism Basics"]:::key
+    R --> EL["Electromagnetism"]:::key
+    R --> FA["Faraday's Law + Lenz's Law"]:::key
+    R --> TR["Transformer"]:::key
+    MA --> MA1["Magnetic poles: N and S — always in pairs<br>Like poles repel; unlike poles attract<br>Earth: geographic North = magnetic South pole"]:::key
+    MA --> MA2["Magnetic field: created by moving charges (current)<br>Right-hand thumb rule: current direction -> field direction<br>Magnetic materials: Fe, Ni, Co (ferromagnetic)"]:::key
+    EL --> EL1["Electromagnet: current-carrying coil + iron core<br>Magnetism disappears when current stops<br>Uses: electric bell, speaker, MRI machine, cranes"]:::key
+    FA --> FA1["Faraday's Law: changing magnetic flux induces EMF<br>More flux change per second = larger EMF<br>Basis of all electric generators"]:::key
+    FA --> FA2["Lenz's Law: induced current opposes the change causing it<br>Conservation of energy principle<br>TRAP: opposing does not mean cancelling"]:::trap
+    TR --> TR1["Step-up transformer: increases voltage, decreases current<br>Step-down: decreases voltage, increases current<br>Power = VI constant (ideal transformer)<br>AC transmission at high voltage reduces energy loss"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter F1 — Atomic Models
 
 | Model | Year | Proposer | Key idea |
@@ -514,6 +826,29 @@ Works on mutual induction — the changing current in the primary coil creates a
 | Quantum mechanical | 1926 | Schrödinger / Heisenberg | Electrons exist as probability clouds (orbitals) |
 
 Rutherford used the famous gold-foil (alpha-scattering) experiment — firing alpha particles at gold foil. Most passed through (empty space), some deflected slightly (electrons), and a few bounced straight back (nucleus). He concluded the atom is mostly empty with a tiny, dense, positive nucleus.
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["ATOMIC MODELS"]:::root
+    R --> TH["Thomson 1897"]:::date
+    R --> RU["Rutherford 1911"]:::date
+    R --> BO["Bohr 1913"]:::date
+    R --> QM["Quantum Model"]:::key
+    TH --> TH1["Plum pudding model<br>Electrons embedded in positive sphere<br>Like raisins in a pudding"]:::date
+    RU --> RU1["Gold foil experiment (Geiger-Marsden)<br>Alpha particles: most pass through; few deflect<br>Conclusion: dense positive nucleus; electrons orbit"]:::date
+    RU --> RU2["Rutherford's nuclear model flaws:<br>Accelerating electrons should emit radiation + spiral in<br>Couldn't explain atomic emission spectra"]:::key
+    BO --> BO1["Bohr model: electrons in FIXED circular orbits<br>Each orbit has fixed energy — no radiation while in orbit<br>Emission/absorption when electron changes orbit"]:::date
+    BO --> BO2["Explained hydrogen spectrum perfectly<br>Postulated by Niels Bohr (1913) — Nobel Prize 1922<br>Failed for multi-electron atoms"]:::date
+    QM --> QM1["Modern quantum model: probability clouds (orbitals)<br>Heisenberg's Uncertainty Principle<br>Schrodinger wave equation describes electron position"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter F2 — Subatomic Particles
 
@@ -527,6 +862,27 @@ Rutherford used the famous gold-foil (alpha-scattering) experiment — firing al
 
 The heaviest sub-atomic particle is the **neutron** (just slightly heavier than the proton). Three quick-recall facts: electron → Thomson 1897, proton → Rutherford 1919, neutron → Chadwick 1932. The first Nobel Prize in Physics (1901) went to Röntgen for X-rays.
 
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["SUBATOMIC PARTICLES"]:::root
+    R --> PA["Basic Particles"]:::key
+    R --> IS["Isotopes, Isobars, Isotones"]:::key
+    R --> TR["TRAP: Atomic number vs Mass number"]:::trap
+    PA --> PA1["Proton: +1 charge; 1 amu; in nucleus<br>Neutron: 0 charge; 1 amu; in nucleus<br>Discovered by Chadwick 1932"]:::date
+    PA --> PA2["Electron: -1 charge; 1/1836 amu; outside nucleus<br>Discovered by J.J. Thomson 1897<br>Atomic number Z = proton count = electron count (neutral atom)"]:::date
+    IS --> IS1["Isotopes: same Z (protons), different A (mass number)<br>Same element, different neutrons<br>H-1 (protium), H-2 (deuterium), H-3 (tritium)"]:::key
+    IS --> IS2["Isobars: same A, different Z (different elements)<br>Example: Argon-40 and Calcium-40<br>Isotones: same number of neutrons, different Z"]:::key
+    TR --> TR1["TRAP: Atomic number Z = protons = identity of element<br>Mass number A = protons + neutrons<br>Neutrons = A - Z; can vary (isotopes)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>
 
 ## Chapter F3 — Radioactivity
@@ -545,6 +901,29 @@ Henri Becquerel discovered radioactivity in 1896 (from uranium). Marie and Pierr
 
 Penetrating power order: **α < β < γ** (alphabetical = weakest to strongest). What stops them: **Paper, Aluminium, Lead** — think PAL. Alpha needs a PAL to stop it (paper stops alpha). Aluminium stops beta. Lead stops gamma.
 
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["RADIOACTIVITY"]:::root
+    R --> DI["Discovery"]:::date
+    R --> RA["Radiation Types"]:::key
+    R --> HL["Half-Life"]:::key
+    R --> US["Uses"]:::key
+    DI --> DI1["Henri Becquerel: discovered 1896 (uranium salts)<br>Marie Curie: coined 'radioactivity'; discovered Po + Ra<br>Nobel Prize in Physics (1903) + Chemistry (1911)"]:::date
+    RA --> RA1["Alpha (alpha): 2 protons + 2 neutrons (helium nucleus)<br>Charge: +2; mass: 4 amu; LOW penetration<br>Stopped by: paper or 5 cm air"]:::key
+    RA --> RA2["Beta (beta): electron or positron<br>Charge: -1 or +1; medium penetration<br>Stopped by: 3 mm aluminium sheet"]:::key
+    RA --> RA3["Gamma (gamma): electromagnetic radiation<br>No charge; no mass; HIGHEST penetration<br>Stopped by: thick lead or concrete"]:::key
+    HL --> HL1["Half-life: time for half of radioactive atoms to decay<br>Independent of temperature, pressure, chemical state<br>Carbon-14 half-life = 5,730 years (used in dating)"]:::key
+    US --> US1["Carbon-14 dating: archaeology (organic matter up to 50,000 yrs)<br>Uranium-238: age of rocks (billions of years)<br>Technetium-99m: medical imaging (gamma cameras)"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>
 
 ## Chapter F4 — Nuclear Reactions
@@ -574,6 +953,29 @@ Einstein's mass-energy equivalence. Even a tiny mass (m) holds an enormous amoun
 ### Radiocarbon Dating
 
 Carbon-14 (¹⁴C) is a radioactive isotope of carbon with half-life of **5730 years**. Living organisms maintain a constant ¹⁴C/¹²C ratio by continuously taking in carbon. When they die, ¹⁴C decays without being replenished. Measuring the remaining ¹⁴C ratio tells us the age of the organism. Used in archaeology (up to ~50,000 years back).
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["NUCLEAR REACTIONS"]:::root
+    R --> FI["Nuclear Fission"]:::key
+    R --> FU["Nuclear Fusion"]:::key
+    R --> CR["Chain Reaction"]:::key
+    R --> TR["TRAP: Fission vs Fusion - which produces more energy per kg"]:::trap
+    FI --> FI1["Fission: heavy nucleus splits into smaller nuclei + energy<br>U-235 + neutron -> Ba + Kr + 3 neutrons + energy<br>Controlled fission = nuclear power plant"]:::key
+    FI --> FI2["Uncontrolled fission = atomic bomb (Little Boy used U-235)<br>Critical mass: minimum mass for self-sustaining chain reaction<br>Moderator (water/graphite) slows neutrons in reactor"]:::key
+    FU --> FU1["Fusion: light nuclei combine into heavier nucleus + energy<br>H + H -> He + energy; happens in the SUN<br>Fusion releases MORE energy per kg than fission"]:::key
+    FU --> FU2["Hydrogen bomb: fusion (much more powerful than atomic bomb)<br>Temperature needed: millions of degrees Celsius<br>ITER project (France): experimental fusion reactor"]:::key
+    CR --> CR1["Chain reaction: each fission releases 2-3 neutrons<br>Neutrons trigger more fissions -- self-sustaining<br>Controlled: nuclear power; uncontrolled: nuclear bomb"]:::proc
+    TR --> TR1["TRAP: Fusion produces MORE energy than fission per unit mass<br>But fusion is much harder to achieve in a controlled way<br>Fission: done in commercial reactors since 1950s"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter F5 — Semiconductors
 
@@ -729,6 +1131,28 @@ Examiners love this section. One to two questions on everyday physics phenomena 
 \newpage
 
 # PART AA — KEY CONSTANTS AND FORMULAS
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["SEMICONDUCTORS"]:::root
+    R --> CO["Conductors vs Insulators vs SC"]:::key
+    R --> TY["Types of Semiconductors"]:::key
+    R --> DE["Semiconductor Devices"]:::key
+    CO --> CO1["Conductors: very low resistance; metals<br>Silver (best), Copper, Gold, Aluminium<br>Free electrons carry current easily"]:::key
+    CO --> CO2["Insulators: very high resistance; no free electrons<br>Glass, rubber, wood, plastic, porcelain<br>Semiconductors: resistance between these two"]:::key
+    TY --> TY1["Intrinsic SC: pure silicon or germanium<br>p-type: doped with boron (positive holes dominant)<br>n-type: doped with phosphorus (electrons dominant)"]:::key
+    DE --> DE1["p-n junction diode: allows current one way only<br>Rectification: converts AC to DC<br>LED: emits light when forward biased"]:::key
+    DE --> DE2["Transistor: p-n-p or n-p-n layers<br>Amplifies weak signals; acts as switch<br>Basis of ALL modern electronics + computers"]:::key
+    DE --> DE3["Solar cell: photoelectric effect generates EMF<br>IC (Integrated Circuit): millions of transistors on chip<br>Moore's Law: IC transistor count doubles every 2 years"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Physical Constants
 

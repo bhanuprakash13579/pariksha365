@@ -77,6 +77,29 @@ Sublimation is a high-frequency topic. Substances that sublime directly from sol
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["STATES OF MATTER"]:::root
+    R --> S["Solid"]:::key
+    R --> L["Liquid"]:::key
+    R --> G["Gas"]:::key
+    R --> CH["Phase Changes"]:::proc
+    S --> S1["Fixed shape + volume<br>Particles vibrate in fixed positions<br>Highest density; incompressible"]:::key
+    L --> L1["Fixed volume; fluid shape<br>Particles slide past each other<br>Less dense than solid (except water-ice)"]:::key
+    G --> G1["No fixed shape or volume<br>Particles move randomly; far apart<br>Highly compressible; lowest density"]:::key
+    G --> G2["Plasma: 4th state — ionised gas<br>Present in Sun, lightning, neon signs<br>Electrons separated from nuclei"]:::key
+    CH --> CH1["Solid--heat-->Liquid: MELTING<br>Liquid--cool-->Solid: FREEZING<br>Liquid--heat-->Gas: VAPORISATION"]:::proc
+    CH --> CH2["Gas--cool-->Liquid: CONDENSATION<br>Solid--heat-->Gas (no liquid): SUBLIMATION<br>Sublimation examples: iodine, camphor, dry ice (CO2)"]:::proc
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter A2 — Atomic Structure
 
 ### The Atomic Model: A History Worth Knowing
@@ -118,6 +141,29 @@ To remember isotopes vs isobars: **"Same Z = IsoTopes (T = Top = atomic number o
 \newpage
 
 # PART B — THE PERIODIC TABLE
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["ATOMIC STRUCTURE"]:::root
+    R --> BA["Basic Definitions"]:::key
+    R --> EC["Electronic Configuration"]:::key
+    R --> IS["Isotopes"]:::key
+    R --> TR["TRAP: Valence electrons"]:::trap
+    BA --> BA1["Atomic number (Z): number of protons<br>Mass number (A): protons + neutrons<br>Neutrons = A - Z"]:::key
+    BA --> BA2["Neutral atom: protons = electrons<br>Ion: gained or lost electrons<br>Cation: lost e- (+); Anion: gained e- (-)"]:::key
+    EC --> EC1["Shells: K(2) L(8) M(18) N(32)<br>Max electrons per shell = 2n2<br>Fill from innermost shell first (Aufbau principle)"]:::key
+    EC --> EC2["Valence electrons: outermost shell electrons<br>Determine chemical reactivity<br>Noble gas: 8 valence electrons (octet) = stable"]:::key
+    IS --> IS1["Isotopes: same Z (element), different A (mass)<br>H isotopes: protium (1), deuterium (2), tritium (3)<br>Carbon isotopes: C-12 (stable), C-14 (radioactive, dating)"]:::key
+    TR --> TR1["TRAP: Valence electrons determine bonding ability<br>Group 1 = 1 valence e- (very reactive)<br>Group 18 = 8 valence e- (inert/noble gases)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter B1 — From Mendeleev to Moseley
 
@@ -186,6 +232,29 @@ Electronegativity decreasing order: **F > O > N > Cl > Br > I**. Memory: **"Fren
 
 # PART C — CHEMICAL BONDING AND REACTIONS
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["THE PERIODIC TABLE"]:::root
+    R --> ME["Mendeleev 1869"]:::date
+    R --> MO["Moseley 1913"]:::date
+    R --> ST["Structure"]:::key
+    R --> TR["TRAP: Metals vs Non-metals position"]:::trap
+    ME --> ME1["Arranged elements by ATOMIC MASS<br>Predicted missing elements (Eka-boron = Scandium)<br>Left gaps for undiscovered elements"]:::date
+    ME --> ME2["Mendeleev's periodic law: properties are periodic<br>function of atomic mass<br>Anomalies: Ar-K, Co-Ni, Te-I reversed"]:::key
+    MO --> MO1["Modern periodic law: properties periodic function<br>of ATOMIC NUMBER (not mass)<br>Fixed Mendeleev's anomalies"]:::date
+    ST --> ST1["118 elements; 7 periods; 18 groups<br>Periods 1-3: short (2,8,8 elements)<br>Periods 4-7: long (18-32 elements)"]:::key
+    ST --> ST2["s-block: Groups 1-2 (alkali + alkaline earth metals)<br>p-block: Groups 13-18 (includes non-metals, metalloids)<br>d-block: Groups 3-12 (transition metals)<br>f-block: Lanthanides + Actinides (bottom two rows)"]:::key
+    TR --> TR1["TRAP: Metals on LEFT; non-metals on RIGHT<br>Metalloids (staircase): B, Si, Ge, As, Sb, Te, At<br>Noble gases: Group 18 (all inert)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter C1 — How Atoms Bond Together
 
 There are three main types of chemical bond. Understanding which type forms tells you almost everything about a compound's properties.
@@ -224,6 +293,29 @@ Hydrogen bonding explains why water is liquid at room temperature (small molecul
 
 ---
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["CHEMICAL BONDING"]:::root
+    R --> IO["Ionic Bond"]:::key
+    R --> CO["Covalent Bond"]:::key
+    R --> ME["Metallic Bond"]:::key
+    R --> TR["TRAP: Properties differ by bond type"]:::trap
+    IO --> IO1["Ionic bond: metal GIVES electrons to non-metal<br>Forms cations (+) and anions (-)<br>Example: NaCl (Na gives e- to Cl)"]:::key
+    IO --> IO2["Properties: crystalline solid; high melting point<br>Conducts electricity ONLY when dissolved or molten<br>Soluble in water; insoluble in organic solvents"]:::key
+    CO --> CO1["Covalent bond: both atoms SHARE electrons<br>Non-metal + non-metal<br>Example: H2O, CO2, NH3, CH4"]:::key
+    CO --> CO2["Single bond: 1 shared pair (H-H)<br>Double bond: 2 shared pairs (O=O)<br>Triple bond: 3 shared pairs (N=N)"]:::key
+    ME --> ME1["Metallic bond: metal cations in sea of free electrons<br>Explains: conductivity, lustre, ductility, malleability<br>No directional bond: metals can be bent/drawn"]:::key
+    TR --> TR1["TRAP: Ionic conducts only when melted or dissolved<br>Covalent compounds generally don't conduct electricity<br>Graphite is COVALENT but conducts (exception)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter C2 — Types of Chemical Reactions
 
 Every chemical change in a competitive exam question falls into one of these categories. Know them by name and example.
@@ -257,6 +349,30 @@ Students confuse "oxidation" with "gaining oxygen" — that is only the old, inc
 
 # PART D — ACIDS, BASES, SALTS
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["TYPES OF CHEMICAL REACTIONS"]:::root
+    R --> CO["Combination"]:::key
+    R --> DE["Decomposition"]:::key
+    R --> SD["Single Displacement"]:::key
+    R --> DD["Double Displacement"]:::key
+    R --> OX["Oxidation-Reduction"]:::key
+    CO --> CO1["A + B -> AB<br>Example: CaO + H2O -> Ca(OH)2<br>Also: C + O2 -> CO2 (combustion is also combination)"]:::key
+    DE --> DE1["AB -> A + B (breaks compound)<br>Thermal: CaCO3 -> CaO + CO2 (heating)<br>Electrolytic: 2H2O -> 2H2 + O2 (electrolysis)"]:::key
+    SD --> SD1["A + BC -> AC + B (more reactive replaces less reactive)<br>Fe + CuSO4 -> FeSO4 + Cu<br>Zn + 2HCl -> ZnCl2 + H2"]:::key
+    DD --> DD1["AB + CD -> AD + CB (ions exchange)<br>NaCl + AgNO3 -> AgCl(precipitate) + NaNO3<br>Neutralisation: acid + base -> salt + water"]:::key
+    OX --> OX1["OIL RIG mnemonic:<br>OIL: Oxidation Is Loss (of electrons)<br>RIG: Reduction Is Gain (of electrons)"]:::key
+    OX --> OX2["Oxidising agent: accepts electrons (gets reduced)<br>Reducing agent: donates electrons (gets oxidised)<br>Redox always occur together in one reaction"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter D1 — Three Theories of Acids and Bases
 
 | Theory | Acid | Base | Limitation |
@@ -266,6 +382,28 @@ Students confuse "oxidation" with "gaining oxygen" — that is only the old, inc
 | Lewis (1923) | Electron-pair acceptor | Electron-pair donor | Most general; covers all |
 
 Lewis theory is the broadest. AlCl₃ is a Lewis acid (accepts electrons) even though it has no H⁺ to give.
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["THEORIES OF ACIDS AND BASES"]:::root
+    R --> AR["Arrhenius Theory"]:::key
+    R --> BL["Bronsted-Lowry Theory"]:::key
+    R --> LW["Lewis Theory"]:::key
+    AR --> AR1["Arrhenius acid: gives H+ ions in water<br>Arrhenius base: gives OH- ions in water<br>Example: HCl -> H+ + Cl-; NaOH -> Na+ + OH-"]:::key
+    AR --> AR2["Limitation: only aqueous solutions<br>Cannot explain NH3 acting as base (no OH-)"]:::key
+    BL --> BL1["Bronsted-Lowry acid: PROTON DONOR (H+)<br>Bronsted-Lowry base: PROTON ACCEPTOR<br>More general than Arrhenius"]:::key
+    BL --> BL2["NH3 + H2O -> NH4+ + OH-<br>NH3 = base (accepts H+); H2O = acid (donates H+)<br>Conjugate acid-base pairs"]:::key
+    LW --> LW1["Lewis acid: electron pair ACCEPTOR<br>Lewis base: electron pair DONOR<br>Most general theory — includes non-proton reactions"]:::key
+    LW --> LW2["BF3 = Lewis acid (empty orbital accepts e- pair)<br>NH3 = Lewis base (lone pair to donate)<br>BF3 + NH3 -> BF3-NH3 complex"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter D2 — The pH Scale
 
@@ -295,6 +433,27 @@ Blood pH is 7.35–7.45 — slightly alkaline. A drop below 7.35 causes acidosis
 
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["THE pH SCALE"]:::root
+    R --> DE["Definition"]:::key
+    R --> VA["pH Values to Know"]:::key
+    R --> BL["Blood pH — Critical"]:::trap
+    DE --> DE1["pH = -log of hydrogen ion concentration H+<br>pH scale: 0 to 14<br>pH < 7 = acidic; pH 7 = neutral; pH > 7 = basic (alkaline)"]:::key
+    VA --> VA1["Stomach acid (HCl): pH 1-2<br>Lemon juice: pH 2-3; Vinegar: pH 3<br>Pure water: pH 7; Milk: pH 6.5-7"]:::key
+    VA --> VA2["Baking soda (NaHCO3): pH 8-9<br>Soap: pH 9-10; Bleach: pH 11-12<br>NaOH solution: pH 13-14"]:::key
+    BL --> BL1["Blood pH: 7.35-7.45 (slightly ALKALINE)<br>Fall below 7.35 = Acidosis (dangerous)<br>Rise above 7.45 = Alkalosis (dangerous)"]:::trap
+    BL --> BL2["TRAP: Students often say blood is neutral (7)<br>Blood is slightly ALKALINE (7.4)<br>Maintained by bicarbonate buffer system"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter D3 — Indicators (Learn the Colour Changes)
 
 | Indicator | In Acid | In Neutral | In Base |
@@ -311,6 +470,28 @@ Blood pH is 7.35–7.45 — slightly alkaline. A drop below 7.35 causes acidosis
 
 Litmus: **A-Red, B-Blue** — Acids turn litmus Red, Bases turn it Blue. Phenolphthalein: **colourless in acid, PiNk in base** — the P is for Pink in base.
 
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["pH INDICATORS"]:::root
+    R --> LI["Litmus — universal in exams"]:::key
+    R --> OT["Other Common Indicators"]:::key
+    R --> UN["Universal Indicator"]:::key
+    LI --> LI1["Litmus: natural dye from lichens<br>RED in ACID (pH < 7)<br>BLUE in BASE (pH > 7)"]:::key
+    LI --> LI2["Litmus paper: most common test in labs<br>Blue litmus turns red = acid<br>Red litmus turns blue = base"]:::key
+    OT --> OT1["Phenolphthalein:<br>COLOURLESS in acid<br>PINK/MAGENTA in base (pH > 8.2)"]:::key
+    OT --> OT2["Methyl orange:<br>RED in strong acid<br>ORANGE in neutral<br>YELLOW in base"]:::key
+    OT --> OT3["Turmeric (natural indicator):<br>YELLOW in neutral/acid<br>RED/BROWN in base<br>TRAP: not standard lab indicator"]:::trap
+    UN --> UN1["Universal indicator: mixture of several indicators<br>Shows rainbow of colours across pH 0-14<br>Red=0-1, Orange=2-3, Yellow=4-5, Green=6-7<br>Blue=8-9, Violet=10-11, Magenta=12-14"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>
 
 ## Chapter D4 — Common Acids and Their Uses
@@ -333,6 +514,27 @@ Aqua regia = 3 parts HCl + 1 part HNO₃ (by volume). It dissolves gold and plat
 
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart LR
+    R["COMMON ACIDS AND USES"]:::root
+    R --> A1["Hydrochloric Acid (HCl)"]:::key
+    R --> A2["Sulphuric Acid (H2SO4)"]:::key
+    R --> A3["Nitric Acid (HNO3)"]:::key
+    R --> A4["Other Acids"]:::key
+    A1 --> A1a["Gastric juice (stomach acid): digestion<br>pH 1-2; kills bacteria in food<br>Industrial: cleaning metals (pickling), PVC"]:::key
+    A2 --> A2a["King of Acids: most widely used industrial acid<br>Car batteries (lead-acid); fertilizers (superphosphate)<br>Manufacture of explosives (TNT); paper, paints"]:::key
+    A3 --> A3a["Fertilizers (ammonium nitrate)<br>Explosives (TNT, nitroglycerine with H2SO4)<br>Gold and platinum dissolved by Aqua Regia (HNO3 + HCl)"]:::key
+    A4 --> A4a["Acetic acid CH3COOH: vinegar (5% solution)<br>Carbonic acid H2CO3: fizzy drinks; blood pH buffering<br>Citric acid: lemons, oranges; food preservative"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter D5 — Common Bases and Their Uses
 
 | Base | Formula | Common name / use |
@@ -342,6 +544,27 @@ Aqua regia = 3 parts HCl + 1 part HNO₃ (by volume). It dissolves gold and plat
 | Calcium hydroxide | Ca(OH)₂ | Slaked lime; whitewash, mortar |
 | Magnesium hydroxide | Mg(OH)₂ | Milk of magnesia; antacid |
 | Ammonium hydroxide | NH₄OH | Household cleaner |
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart LR
+    R["COMMON BASES AND USES"]:::root
+    R --> B1["NaOH — Caustic Soda"]:::key
+    R --> B2["Ca(OH)2 — Slaked Lime"]:::key
+    R --> B3["Mg(OH)2 — Milk of Magnesia"]:::key
+    R --> B4["Others"]:::key
+    B1 --> B1a["NaOH: manufacture of soap + detergents<br>Paper + textile industry<br>Drain cleaners (reacts with fat)"]:::key
+    B2 --> B2a["Ca(OH)2: plaster + whitewash (walls)<br>Water treatment (soften hard water)<br>Mortar in construction"]:::key
+    B3 --> B3a["Mg(OH)2: antacid (neutralises stomach acid)<br>Treats heartburn + indigestion<br>Mild base; safe to consume"]:::key
+    B4 --> B4a["NH4OH (ammonia solution): fertilizer; cleaning agent<br>Bleaching powder Ca(OCl)Cl: water treatment + bleaching<br>Baking soda NaHCO3: leavening in baking + fire extinguisher"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter D6 — Salts and Their pH
 
@@ -364,6 +587,27 @@ Baking soda is NaHCO₃ (sodium bicarbonate). It is mildly basic (pH ~8.3). When
 
 # PART E — METALS AND THE ACTIVITY SERIES
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["SALTS AND THEIR pH"]:::root
+    R --> FO["Formation"]:::proc
+    R --> TY["Salt Types by pH"]:::key
+    R --> KS["Key Salts to Know"]:::key
+    FO --> FO1["Salt = acid + base neutralisation<br>Strong acid + Strong base -> neutral salt<br>Weak acid + Strong base -> basic salt"]:::proc
+    TY --> TY1["Strong acid + Strong base: neutral (pH 7)<br>Example: NaCl (table salt)<br>HCl + NaOH -> NaCl + H2O"]:::key
+    TY --> TY2["Weak acid + Strong base: ALKALINE salt<br>Example: Na2CO3 (washing soda), pH ~11<br>Strong acid + Weak base: ACIDIC salt (NH4Cl, pH ~5)"]:::key
+    KS --> KS1["NaCl (common salt): table salt; neutral<br>Na2CO3.10H2O (washing soda): water softening; alkaline<br>NaHCO3 (baking soda): leavening; slightly alkaline"]:::key
+    KS --> KS2["CaSO4.0.5H2O (Plaster of Paris): moulds + casts<br>KAl(SO4)2.12H2O (Alum): water purification (flocculation)<br>CaCO3 (limestone): building material; chalk"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter E1 — Properties of Metals
 
 **General properties:** Lustrous, malleable, ductile, good conductors of heat and electricity, typically solid at room temperature with high melting points.
@@ -377,6 +621,28 @@ Baking soda is NaHCO₃ (sodium bicarbonate). It is mildly basic (pH ~8.3). When
 - **Tungsten (W)** — highest melting point among all metals (3422 °C). Used in light bulb filaments.
 - **Lithium (Li)** — lightest metal (density 0.534 g/cm³).
 - **Osmium (Os)** — densest naturally occurring metal.
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["PROPERTIES OF METALS"]:::root
+    R --> PH["Physical Properties"]:::key
+    R --> EX["Extremes — Exam Favourites"]:::key
+    R --> TR["TRAP: Hardest substance"]:::trap
+    PH --> PH1["Good conductors of heat + electricity<br>Lustrous (shiny) appearance<br>Malleable (can be hammered flat); ductile (drawn into wires)"]:::key
+    PH --> PH2["High melting point (generally)<br>Exception: Mercury (only liquid metal at room temp)<br>Gallium: melts at 30 C (melts in hand)"]:::key
+    EX --> EX1["Best conductor of electricity: SILVER<br>2nd: Copper (used in wiring — cheaper)<br>Best conductor of heat: also Silver"]:::key
+    EX --> EX2["Most malleable + ductile metal: GOLD<br>Lightest metal: LITHIUM<br>Heaviest metal: OSMIUM<br>Hardest metal: CHROMIUM"]:::key
+    EX --> EX3["Most abundant metal in Earth's crust: ALUMINIUM<br>2nd most abundant element overall: Silicon<br>Most reactive metal: Caesium (or Francium)"]:::key
+    TR --> TR1["TRAP: Hardest NATURAL substance = Diamond (not a metal)<br>Hardest METAL = Chromium<br>Diamond is carbon (non-metal) in cubic lattice structure"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter E2 — Activity Series (Reactivity Series)
 
@@ -406,6 +672,27 @@ P = Potassium (K), S = Sodium (Na), C = Calcium (Ca), M = Magnesium (Mg), A = Al
 
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["ACTIVITY SERIES OF METALS"]:::root
+    R --> OR["Order of Reactivity"]:::key
+    R --> RU["Rules for Reactions"]:::key
+    R --> TR["TRAP: Thermite reaction"]:::trap
+    OR --> OR1["K > Na > Ca > Mg > Al > Zn > Fe<br>> Pb > H > Cu > Hg > Ag > Au > Pt<br>Decreasing reactivity left to right"]:::key
+    OR --> OR2["Above H: displace H2 from dilute acid<br>Above Ca: even displace H2 from cold water<br>Below H (Cu, Hg, Ag, Au): do NOT react with dilute acids"]:::key
+    RU --> RU1["More reactive metal displaces less reactive from salt solution<br>Fe + CuSO4 -> FeSO4 + Cu (Fe more reactive than Cu)<br>Cu + FeSO4 -> NO REACTION (Cu less reactive than Fe)"]:::key
+    RU --> RU2["Gold + Platinum: most stable; no tarnishing<br>Noble metals; very hard to react<br>Used in jewellery and electrical contacts"]:::key
+    TR --> TR1["Thermite reaction: Al + Fe2O3 -> Al2O3 + Fe + heat<br>Al is more reactive than Fe (displaces it)<br>Used in WELDING of railway tracks (exothermic)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter E3 — Extraction of Metals
 
 | Metal | Ore (common) | Extraction method |
@@ -425,6 +712,29 @@ P = Potassium (K), S = Sodium (Na), C = Calcium (Ca), M = Magnesium (Mg), A = Al
 
 Hall-Héroult process (1886): Electrolysis of alumina (Al₂O₃) dissolved in molten cryolite (Na₃AlF₆). This is how all commercial aluminium is made. Cryolite is the solvent that lowers the melting point from 2050 °C to around 950 °C, making the process practical.
 
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["EXTRACTION OF METALS"]:::root
+    R --> ME["Method depends on reactivity"]:::proc
+    R --> IR["Iron: Blast Furnace"]:::key
+    R --> AL["Aluminium: Electrolysis"]:::key
+    R --> TR["TRAP: Ore names"]:::trap
+    ME --> ME1["Low reactivity (Cu, Hg, Ag): simple heating or<br>reduction with CO/carbon<br>High reactivity (Al, Na, K, Mg): electrolysis required"]:::proc
+    IR --> IR1["Iron ore: Hematite (Fe2O3) or Magnetite (Fe3O4)<br>Blast furnace: iron ore + coke + limestone + hot air<br>Pig iron -> cast iron -> wrought iron -> steel"]:::key
+    IR --> IR2["Coke: reduces Fe2O3 (C + O2 -> CO2; CO2 + C -> CO)<br>CO reduces iron: Fe2O3 + 3CO -> 2Fe + 3CO2<br>Limestone: removes impurities as slag (CaSiO3)"]:::key
+    AL --> AL1["Bauxite (Al2O3.2H2O): aluminium ore<br>Purified to alumina (Al2O3) by Bayer process<br>Electrolysis of molten alumina (Hall-Heroult)"]:::key
+    AL --> AL2["Electrolysis: Al deposited at cathode<br>Carbon anode burns off (oxygen attacks it)<br>High energy process (expensive)"]:::key
+    TR --> TR1["TRAP: Iron ore = Hematite (Fe2O3)<br>Aluminium ore = Bauxite<br>Copper ore = Chalcopyrite (CuFeS2)<br>Zinc ore = Zinc blende (ZnS)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>
 
 ## Chapter E4 — Corrosion and Prevention
@@ -452,9 +762,54 @@ Galvanising uses zinc as a protective coat. Zinc is above iron in the activity s
 
 # PART F — ORGANIC CHEMISTRY
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["CORROSION AND PREVENTION"]:::root
+    R --> RU["Rusting of Iron"]:::key
+    R --> CO["Conditions for Rusting"]:::key
+    R --> PR["Prevention Methods"]:::key
+    R --> TR["TRAP: Galvanising metal"]:::trap
+    RU --> RU1["Rust = hydrated iron oxide: Fe2O3.xH2O<br>Reddish-brown; flaky; weaker than iron<br>A slow REDOX reaction (iron oxidises)"]:::key
+    CO --> CO1["Rusting requires BOTH oxygen AND water (moisture)<br>Salt water speeds rusting (electrolyte)<br>NO rust in completely dry air OR oxygen-free water"]:::key
+    PR --> PR1["Painting: barrier between iron and air/water<br>Oiling/greasing: lubricant barrier<br>Electroplating: coat with less reactive metal (Sn, Cr, Ni)"]:::key
+    PR --> PR2["Galvanising: coat iron with ZINC<br>Zinc oxidises first (sacrificial anode protection)<br>Even if Zn coating scratched, iron still protected"]:::key
+    PR --> PR3["Alloying: stainless steel = Fe + Cr + Ni<br>Cr forms protective oxide layer on surface<br>Most effective long-term solution"]:::key
+    TR --> TR1["TRAP: Galvanising uses ZINC not tin<br>Zinc is sacrificial (more reactive than iron)<br>Tin plating (food cans): once scratched, iron rusts fast"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter F1 — Why Carbon Is Special
 
 Carbon forms 4 bonds (tetravalent), chains indefinitely with itself (catenation), and forms stable double and triple bonds. Result: over 10 million known organic compounds versus about 500,000 for all other elements combined. No other element comes close.
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["WHY CARBON IS SPECIAL"]:::root
+    R --> TE["Tetravalency"]:::key
+    R --> CA["Catenation"]:::key
+    R --> AL["Allotropes of Carbon"]:::key
+    TE --> TE1["Carbon has 4 valence electrons<br>Can form 4 bonds (single, double, triple)<br>Most versatile bonding capability of any element"]:::key
+    CA --> CA1["Catenation: C-C bonds form long chains<br>No other element chains so extensively<br>Basis of millions of organic compounds"]:::key
+    CA --> CA2["Organic chemistry: ~10 million carbon compounds<br>vs only ~100,000 non-carbon compounds<br>Life is carbon-based: proteins, DNA, carbs, fats"]:::key
+    AL --> AL1["Diamond: all sp3 bonds; 3D tetrahedral lattice<br>Hardest natural substance; transparent; insulator<br>Used in cutting tools, jewellery"]:::key
+    AL --> AL2["Graphite: sp2 bonds; layered hexagonal sheets<br>Slippery lubricant (layers slide); dark grey<br>Conducts electricity (free electrons between layers)"]:::key
+    AL --> AL3["Fullerene (C60 Buckminsterfullerene): soccer ball shape<br>60 carbon atoms; discovered 1985 (Nobel 1996)<br>Carbon nanotubes: strongest material per unit weight"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter F2 — Hydrocarbons — The Three Series
 
@@ -478,6 +833,29 @@ Ethene (ethylene) is the plant hormone that triggers fruit ripening. This is why
 
 Ethyne (acetylene, C₂H₂) is the most important. It burns at over 3000 °C with oxygen — used in welding (oxyacetylene torch).
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["HYDROCARBONS"]:::root
+    R --> AK["Alkanes (Saturated)"]:::key
+    R --> AE["Alkenes (Unsaturated)"]:::key
+    R --> AY["Alkynes (Unsaturated)"]:::key
+    R --> TR["TRAP: -ane vs -ene vs -yne"]:::trap
+    AK --> AK1["General formula: CnH(2n+2)<br>Single bonds only (SATURATED)<br>Methane CH4, Ethane C2H6, Propane C3H8, Butane C4H10"]:::key
+    AK --> AK2["Properties: least reactive; stable<br>Fuels: natural gas (CH4), LPG (C3-C4), petrol (C5-C8)<br>Undergo substitution reactions (not addition)"]:::key
+    AE --> AE1["General formula: CnH2n<br>One DOUBLE bond (UNSATURATED)<br>Ethene C2H4 = ethylene (fruit ripening hormone)"]:::key
+    AE --> AE2["Properties: more reactive than alkanes<br>Undergo ADDITION reactions (double bond opens)<br>Ethylene used to ripen bananas commercially"]:::key
+    AY --> AY1["General formula: CnH(2n-2)<br>One TRIPLE bond (UNSATURATED)<br>Ethyne C2H2 = acetylene (welding + cutting)"]:::key
+    TR --> TR1["TRAP: -ane = alkane (saturated, single bonds)<br>-ene = alkene (one double bond)<br>-yne = alkyne (one triple bond)<br>Saturated = more H; Unsaturated = fewer H"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter F3 — Functional Groups
 
 | Group | Formula | Class | Key Example |
@@ -489,6 +867,29 @@ Ethyne (acetylene, C₂H₂) is the most important. It burns at over 3000 °C wi
 | Ester | −COO− | Ester | Ethyl acetate — nail polish remover solvent |
 | Amine | −NH₂ | Amine | Methylamine |
 | Halide | −X | Haloalkane | Chloroform (CHCl₃) |
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart LR
+    R["FUNCTIONAL GROUPS IN ORGANIC CHEMISTRY"]:::root
+    R --> OH["Alcohol (-OH)"]:::key
+    R --> CH["Aldehyde (-CHO)"]:::key
+    R --> CO["Ketone (-CO-)"]:::key
+    R --> CA["Carboxylic Acid (-COOH)"]:::key
+    R --> ES["Ester (-COO-)"]:::key
+    OH --> OH1["Ethanol C2H5OH: drinking alcohol<br>Antiseptic; solvent; fuel additive<br>Fermentation: glucose -> ethanol + CO2 (yeast)"]:::key
+    CH --> CH1["Formaldehyde HCHO: preservative (formalin)<br>Acetaldehyde CH3CHO: oxidation product of ethanol<br>Pungent smell; reducing agent"]:::key
+    CO --> CO1["Acetone CH3COCH3: nail polish remover; solvent<br>Propanone = simplest ketone<br>Distinctive fruity smell"]:::key
+    CA --> CA1["Acetic acid CH3COOH: vinegar (5% solution)<br>Formic acid HCOOH: ant sting (formic = ant)<br>Citric acid: lemons"]:::key
+    ES --> ES1["Formed by alcohol + carboxylic acid (condensation)<br>Pleasant fruity smell; artificial flavours<br>Ethyl acetate: nail polish remover; solvent"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter F4 — Fuels
 
@@ -542,6 +943,30 @@ Hydrogen has by far the highest calorific value — nearly 3× petrol. This is w
 
 # PART G — POLYMERS AND FIBRES
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["FUELS"]:::root
+    R --> CO["Coal Types"]:::key
+    R --> PE["Petroleum Products"]:::key
+    R --> GA["LPG and CNG"]:::key
+    R --> CV["Calorific Values"]:::key
+    CO --> CO1["Peat -> Lignite -> Bituminous -> Anthracite<br>Carbon content INCREASES left to right<br>Anthracite: best; 90%+ carbon; least smoke"]:::key
+    CO --> CO2["Bituminous: most common; coke made from it<br>Lignite (brown coal): low carbon; high moisture<br>Peat: barely compacted; lowest carbon"]:::key
+    PE --> PE1["Petroleum = crude oil: mixture of hydrocarbons<br>Refinery: fractional distillation by boiling point<br>LPG -> petrol -> naphtha -> kerosene -> diesel -> fuel oil -> bitumen"]:::key
+    PE --> PE2["Petrol (gasoline): C5-C8; vehicles<br>Kerosene: C10-C16; jet fuel, lamps<br>Diesel: C14-C20; trucks, buses, trains"]:::key
+    GA --> GA1["LPG: mainly propane + butane<br>Mercaptan (thioethanol) added for smell (LPG is odourless)<br>Used: cooking gas in India"]:::key
+    GA --> GA2["CNG: mainly methane (CH4)<br>Cleaner than petrol/diesel (less pollutants)<br>Used in Delhi buses, auto-rickshaws"]:::key
+    CV --> CV1["Calorific value: heat produced per kg of fuel<br>Hydrogen: 142 MJ/kg (highest)<br>LPG: ~47 MJ/kg; Petrol: 45; Diesel: 45; Coal: 25-35"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter G1 — Key Concepts
 
 - **Monomer** — small repeating unit.
@@ -550,6 +975,27 @@ Hydrogen has by far the highest calorific value — nearly 3× petrol. This is w
 - **Condensation polymerisation** — monomers join with release of a small molecule like water or HCl (e.g., nylon, polyester, bakelite).
 - **Thermoplastic** — softens on heating, can be remoulded. (PVC, polythene, polypropylene)
 - **Thermosetting** — once set, cannot be melted again. (Bakelite, melamine, epoxy resin)
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["KEY CHEMISTRY CONCEPTS FOR GA"]:::root
+    R --> CF["Common Chemical Formulae"]:::key
+    R --> LA["Lab Tests and Observations"]:::key
+    R --> CO["Corrosion and Combustion Summary"]:::key
+    CF --> CF1["Water H2O; Common salt NaCl<br>Baking soda NaHCO3; Washing soda Na2CO3<br>Vinegar CH3COOH; Bleaching powder Ca(OCl)Cl"]:::key
+    CF --> CF2["Limestone CaCO3; Slaked lime Ca(OH)2<br>Quicklime CaO; Plaster of Paris CaSO4.0.5H2O<br>Alum KAl(SO4)2.12H2O; Marble = CaCO3"]:::key
+    LA --> LA1["Blue litmus turns red = ACID present<br>Red litmus turns blue = BASE present<br>Limewater turns milky = CO2 present"]:::key
+    LA --> LA2["Glowing splint relights = OXYGEN<br>Burning splint makes pop sound = HYDROGEN<br>Turmeric turns red-brown = BASE present"]:::key
+    CO --> CO1["Complete combustion: fuel + excess O2 -> CO2 + H2O<br>Incomplete combustion: insufficient O2 -> CO (toxic)<br>CO: colourless + odourless + poisonous gas"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter G2 — The Important Polymers Table
 

@@ -88,6 +88,28 @@ The **10% Rule (Lindeman, 1942)** — only about 10% of the energy at one trophi
 
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["THE ECOSYSTEM"]:::root
+    R --> CO["Components"]:::proc
+    R --> TR["Trophic Levels + 10% Rule"]:::key
+    R --> PY["Ecological Pyramids"]:::key
+    CO --> CO1["Abiotic: temperature, light, water, soil, wind<br>Biotic: producers, consumers, decomposers<br>Ecosystem = abiotic + biotic together"]:::proc
+    CO --> CO2["Producers: autotrophs (plants, algae, phytoplankton)<br>Consumers: heterotrophs (primary, secondary, tertiary)<br>Decomposers: bacteria + fungi (break dead matter)"]:::proc
+    TR --> TR1["Lindeman's 10% Law (1942):<br>Only 10% of energy transfers to next trophic level<br>90% lost as heat, respiration, etc."]:::key
+    TR --> TR2["Implication: shorter food chains = more energy<br>Vegetarians extract more energy from ecosystem<br>Top carnivores get only 0.1% of primary production"]:::key
+    PY --> PY1["Pyramid of Energy: ALWAYS UPRIGHT<br>Cannot be inverted (energy always lost at each level)<br>Most reliable ecological pyramid"]:::key
+    PY --> PY2["Pyramid of Biomass: can be inverted in aquatic<br>Phytoplankton (small mass) supports zooplankton (larger)<br>Pyramid of Number: can be inverted (1 tree, 1000 insects)"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter A2 — Biogeochemical Cycles
 
 ### Water Cycle
@@ -117,6 +139,28 @@ Atmosphere is 78% N₂, but plants cannot use it directly. The cycle works throu
 \newpage
 
 # PART B — BIODIVERSITY
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["BIOGEOCHEMICAL CYCLES"]:::root
+    R --> CA["Carbon Cycle"]:::proc
+    R --> NI["Nitrogen Cycle"]:::proc
+    R --> WA["Water Cycle"]:::proc
+    CA --> CA1["CO2 removed from air: photosynthesis<br>CO2 returned to air: respiration + combustion + decomposition<br>Deforestation + fossil fuels: excess CO2 -> climate change"]:::proc
+    CA --> CA2["Carbon sinks: forests, oceans, soil<br>Carbon sources: fossil fuels, deforestation<br>Ocean: largest carbon reservoir"]:::key
+    NI --> NI1["N2 (78% of air) cannot be used directly<br>Nitrogen fixation: Rhizobium (legume roots) + Azotobacter<br>NH3 -> NO2 -> NO3 (nitrification by Nitrosomonas, Nitrobacter)"]:::proc
+    NI --> NI2["Plants absorb NO3-; animals eat plants<br>Decomposers: return N to soil as NH3<br>Denitrification: Pseudomonas converts NO3 back to N2"]:::proc
+    WA --> WA1["Evaporation (water -> water vapour)<br>Transpiration: water vapour from plants (also contributes)<br>Condensation -> clouds -> Precipitation"]:::proc
+    WA --> WA2["Surface runoff -> rivers -> ocean<br>Infiltration: ground water recharge<br>Transpiration contributes ~10% of water cycle"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter B1 — Levels and Importance
 
@@ -152,6 +196,27 @@ India's 4 hotspots: **"Himalayas, Indo-Burma, Western Ghats, Sundaland"** — **
 
 India is also one of the **17 megadiverse countries** that together hold approximately 70% of global biodiversity. The others include Brazil, Colombia, Indonesia, Mexico, Australia, China, DRC, and more.
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["BIODIVERSITY HOTSPOTS"]:::root
+    R --> CR["Criteria to Qualify"]:::key
+    R --> GL["Global Hotspots"]:::key
+    R --> IN["India's 4 Hotspots"]:::key
+    CR --> CR1["Must have 1500+ endemic plant species<br>AND must have lost more than 70% of original habitat<br>Endemic: found ONLY in that region, nowhere else"]:::key
+    GL --> GL1["36 biodiversity hotspots globally (as of 2024)<br>Cover only 2.4% of Earth's land area<br>But contain 60%+ of world's plant, animal, fungi species"]:::key
+    IN --> IN1["1. Eastern Himalayas (includes NE India)<br>2. Western Ghats + Sri Lanka (Sahyadri)<br>3. Indo-Burma (NE India + Myanmar border)"]:::key
+    IN --> IN2["4. Sundaland (Andaman-Nicobar Islands segment)<br>Western Ghats: biodiversity richest area in India<br>Anamudi (2695m) = highest peak in Western Ghats"]:::key
+    IN --> IN3["TRAP: India's hotspots are parts of GLOBAL hotspots<br>Western Ghats is 1 of 36 globally<br>Not independent of the global classification"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter B3 — IUCN Red List Categories
 
 **EX** (Extinct) → **EW** (Extinct in Wild) → **CR** (Critically Endangered) → **EN** (Endangered) → **VU** (Vulnerable) → **NT** (Near Threatened) → **LC** (Least Concern) → **DD** (Data Deficient) → **NE** (Not Evaluated)
@@ -163,6 +228,28 @@ India is also one of the **17 megadiverse countries** that together hold approxi
 </div>
 
 IUCN (International Union for Conservation of Nature) was established in **1948** and maintains the Red List. The Great Indian Bustard is **Critically Endangered**. The Gangetic Dolphin is **Endangered**.
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["IUCN RED LIST CATEGORIES"]:::root
+    R --> OR["Order from Most to Least Threatened"]:::key
+    R --> IN["Indian Examples"]:::key
+    R --> TR["TRAP: EW vs EX"]:::trap
+    OR --> OR1["EX — Extinct: no living individuals known<br>EW — Extinct in Wild: only in captivity/cultivation<br>CR — Critically Endangered: extremely high risk"]:::key
+    OR --> OR2["EN — Endangered: very high risk<br>VU — Vulnerable: high risk<br>NT — Near Threatened: close to qualifying VU"]:::key
+    OR --> OR3["LC — Least Concern: widespread + abundant<br>DD — Data Deficient: insufficient data<br>NE — Not Evaluated: not yet assessed"]:::key
+    IN --> IN1["CR examples: Great Indian Bustard, Gharial<br>EN examples: Bengal Tiger, Asiatic Lion, Snow Leopard<br>VU examples: Indian Rhinoceros, Sloth Bear, Dhole"]:::key
+    IN --> IN2["National Animal: Bengal Tiger (EN)<br>National Bird: Indian Peafowl (Peacock) — LC<br>National Aquatic Animal: Gangetic Dolphin (EN)"]:::key
+    TR --> TR1["TRAP: EX = completely gone from Earth<br>EW = extinct in WILD; survives in zoo/captive<br>Example EW: Red List has very few; Scimitar Oryx was EW"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter B4 — Key Endangered Species in India
 
@@ -187,6 +274,28 @@ IUCN (International Union for Conservation of Nature) was established in **1948*
 
 # PART C — PROTECTED AREAS AND INDIA'S WILDLIFE
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart LR
+    R["KEY ENDANGERED SPECIES IN INDIA"]:::root
+    R --> MA["Mammals"]:::key
+    R --> BI["Birds"]:::key
+    R --> RE["Reptiles"]:::key
+    MA --> MA1["Bengal Tiger (EN): 3167 tigers (2022 census)<br>53 Tiger Reserves; Corbett, Ranthambore, Sundarbans<br>Project Tiger since 1973"]:::key
+    MA --> MA2["Asiatic Lion (EN): ONLY in Gir Forest, Gujarat<br>Population: ~600+ (2022 census)<br>Project Lion: reintroduction to Kuno NP (Madhya Pradesh)"]:::key
+    MA --> MA3["Indian Rhinoceros (VU): 70% at Kaziranga, Assam<br>Population: ~4000+; horn poaching biggest threat<br>Project Rhinoceros; UNESCO WHS"]:::key
+    MA --> MA4["Snow Leopard (VU): Himalayas; very elusive<br>Project Snow Leopard: 2009<br>Red Panda (EN): NE Himalayas; bamboo forest"]:::key
+    BI --> BI1["Great Indian Bustard (CR): Rajasthan + Gujarat<br>Fewer than 150 remaining; power lines threat<br>Project Great Indian Bustard 2015"]:::key
+    RE --> RE1["Gharial (CR): Chambal River, Girwa River<br>Narrow snout; fish-eater; critically endangered<br>Mugger crocodile: VU; Indian Cobra: LC"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter C1 — Types of Protected Areas
 
 Under the **Wildlife (Protection) Act 1972**:
@@ -201,6 +310,29 @@ Under the **Wildlife (Protection) Act 1972**:
 **Biosphere Reserves** — UNESCO MAB (Man and Biosphere) programme. India has **18 BRs, of which 12 are on the UNESCO MAB World Network**.
 
 **Elephant Reserves** — under Project Elephant. India has **33 Elephant Reserves**.
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["PROTECTED AREAS IN INDIA"]:::root
+    R --> NP["National Parks"]:::key
+    R --> WS["Wildlife Sanctuaries"]:::key
+    R --> BR["Biosphere Reserves"]:::key
+    R --> TR["TRAP: Which allows what activity?"]:::trap
+    NP --> NP1["National Parks: complete protection<br>NO human activity (no grazing, logging, cultivation)<br>106 National Parks in India; cover 1.23% of area"]:::key
+    NP --> NP2["First NP in India: Corbett (1936, Uttarakhand)<br>Smallest NP: South Button Island (Andaman Nicobar)<br>Largest NP: Hemis (Ladakh, high altitude)"]:::key
+    WS --> WS1["Wildlife Sanctuaries: some human activities allowed<br>Grazing + forestry may be permitted<br>565+ Wildlife Sanctuaries in India"]:::key
+    WS --> WS2["Difference from NP: human settlement may exist<br>Less strict protection than National Parks<br>Private ownership of land may continue"]:::key
+    BR --> BR1["Biosphere Reserves: 3 zones<br>Core zone: no human activity (most protected)<br>Buffer zone: limited research/tourism<br>Transition zone: settlements, farming allowed"]:::key
+    TR --> TR1["TRAP: National Park = strictest (no human use)<br>Wildlife Sanctuary = moderate (some human use)<br>Biosphere Reserve = largest; has human zones"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter C2 — Key National Parks — Must-Know Facts
 
@@ -228,6 +360,31 @@ The most-tested NP facts: **India's first NP = Jim Corbett (originally Hailey NP
 | Himachal Pradesh | Great Himalayan NP (UNESCO), Pin Valley |
 | Odisha | Simlipal (Biosphere Reserve + Tiger Reserve), Bhitarkanika (saltwater crocodile) |
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart LR
+    R["KEY NATIONAL PARKS — EXAM FACTS"]:::root
+    R --> N1["Corbett NP"]:::date
+    R --> N2["Kaziranga NP"]:::key
+    R --> N3["Gir Forest NP"]:::key
+    R --> N4["Sundarbans NP"]:::key
+    R --> N5["Manas NP"]:::key
+    R --> N6["Ranthambore NP"]:::key
+    N1 --> N1a["Established 1936 (first NP in India)<br>Uttarakhand; Jim Corbett (British hunter-naturalist)<br>Bengal Tiger; Elephant; Gharial"]:::date
+    N2 --> N2a["Assam; UNESCO World Heritage Site 1985<br>70% of world's Indian One-horned Rhinoceros<br>Also: elephants, wild buffalo, Bengal Tiger"]:::key
+    N3 --> N3a["Gujarat; only home of Asiatic Lion (600+)<br>UNESCO WHS 2023 (Gir Forest)<br>Proposed second home: Kuno NP, Madhya Pradesh"]:::key
+    N4 --> N4a["West Bengal; UNESCO WHS 1987<br>Largest mangrove forest in the world<br>Bengal Tiger; Gangetic Dolphin; Irrawaddy Dolphin"]:::key
+    N5 --> N5a["Assam; UNESCO WHS; Project Tiger Reserve<br>Golden Langur (EN) + Pygmy Hog (CR) found here<br>Red Panda; Hispid Hare; Bengal Florican"]:::key
+    N6 --> N6a["Rajasthan; famous for Tiger sightings<br>Sariska also a Tiger Reserve in Rajasthan<br>Historical Ranthambore Fort inside the park"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter C3 — Biosphere Reserves (India's 18)
 
 India's 18 BRs (12 are on UNESCO MAB World Network list, marked with *):
@@ -238,6 +395,28 @@ Nilgiri* (1st, 1986), Nanda Devi*, Nokrek*, Gulf of Mannar*, Sundarbans*, Manas,
 
 India's first Biosphere Reserve = **Nilgiri (1986)**. Largest BR = **Kachchh, Gujarat**. Latest BR to be added to UNESCO MAB list = **Panna (2020)**. Total: 18 BRs, 12 on UNESCO list.
 
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["BIOSPHERE RESERVES OF INDIA"]:::root
+    R --> ST["Statistics"]:::key
+    R --> FI["First Established"]:::date
+    R --> UN["UNESCO Recognised (12)"]:::key
+    R --> TR["TRAP: BR vs National Park"]:::trap
+    ST --> ST1["Total: 18 Biosphere Reserves in India<br>12 recognised under UNESCO MAB Programme<br>Cover 5.33% of India's total geographical area"]:::key
+    FI --> FI1["First BR: Nilgiri Biosphere Reserve 1986<br>(Tamil Nadu + Kerala + Karnataka)<br>Largest BR: Pachmarhi (Satpura range, MP)"]:::date
+    UN --> UN1["UNESCO recognised 12 (out of 18):<br>Nilgiri, Gulf of Mannar, Sundarbans<br>Nanda Devi, Nokrek, Pachmarhi"]:::key
+    UN --> UN2["Simlipal, Achanakmar-Amarkantak<br>Great Nicobar, Agasthyamalai<br>Khangchendzonga, Panna (most recently)"]:::key
+    TR --> TR1["TRAP: Biosphere Reserve is largest category<br>Can include National Parks and Sanctuaries within it<br>Example: Nilgiri BR includes Mudumalai + Wayanad + Bandipur"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>
 
 ## Chapter C4 — Ramsar Sites (Wetlands)
@@ -253,6 +432,28 @@ India's first Biosphere Reserve = **Nilgiri (1986)**. Largest BR = **Kachchh, Gu
 \newpage
 
 # PART D — POLLUTION
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["RAMSAR WETLAND SITES"]:::root
+    R --> CO["Convention Background"]:::date
+    R --> IN["India's Ramsar Sites"]:::key
+    R --> KS["Key Sites to Know"]:::key
+    CO --> CO1["Ramsar Convention: signed 1971 in Ramsar, Iran<br>HQ: Gland, Switzerland<br>Focuses on conservation of wetland ecosystems"]:::date
+    CO --> CO2["Ramsar = 'Wetland of International Importance'<br>Criteria: rare ecosystem; supports waterfowl; unique biodiversity<br>World: 2400+ sites; 169 countries"]:::key
+    IN --> IN1["India: 75 Ramsar sites (2023) — most in South Asia<br>First 2 Ramsar sites in India (1981):<br>Chilika Lake (Odisha) + Keoladeo NP (Rajasthan)"]:::date
+    IN --> IN2["Largest Ramsar site: Sundarbans (WB)<br>Smallest Ramsar site: Renuka Lake (HP)<br>Most Ramsar sites in one state: Uttar Pradesh (10+)"]:::key
+    KS --> KS1["Chilika Lake: Asia's largest brackish water lagoon<br>Irrawaddy dolphins + migratory birds<br>Flamingo Festival held here"]:::key
+    KS --> KS2["Sambhar Lake (Rajasthan): largest inland saline lake<br>Flamingo sightings; near Jaipur<br>Wular Lake (J&K): largest freshwater lake in India"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter D1 — Air Pollution
 
@@ -284,6 +485,30 @@ India's first Biosphere Reserve = **Nilgiri (1986)**. Largest BR = **Kachchh, Gu
 
 AQI is maintained by CPCB (Central Pollution Control Board) and monitored for PM₂.₅, PM₁₀, NO₂, SO₂, CO, O₃, NH₃, and Pb.
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["AIR POLLUTION"]:::root
+    R --> PO["Pollutants"]:::key
+    R --> AQ["AQI Scale"]:::key
+    R --> SM["Smog Types"]:::key
+    R --> TR["TRAP: Primary vs Secondary pollutants"]:::trap
+    PO --> PO1["Primary pollutants: directly from source<br>CO (incomplete combustion), SO2 (coal/industry)<br>NOx (vehicles), PM2.5/PM10, hydrocarbons"]:::key
+    PO --> PO2["Secondary pollutants: formed in atmosphere<br>Tropospheric ozone (O3): photochemical<br>PAN (peroxyacetyl nitrate): eye irritant"]:::key
+    AQ --> AQ1["AQI scale: 0-500<br>0-50: GOOD (green); 51-100: Satisfactory<br>101-200: Moderate; 201-300: Poor"]:::key
+    AQ --> AQ2["301-400: Very Poor; 401-500: Severe<br>India uses AQI for 8 pollutants<br>PM2.5 (fine particles) most dangerous"]:::key
+    SM --> SM1["London smog (Classic smog): SO2 + fog + soot<br>Cold; humid; during winter inversions<br>London 1952: 4000 deaths in 4 days"]:::date
+    SM --> SM2["Photochemical smog (Los Angeles type): NOx + VOC + sunlight<br>-> ozone + PAN; warm + sunny climates<br>Delhi winter: mix of both types"]:::key
+    TR --> TR1["TRAP: Ground-level ozone = POLLUTANT (bad)<br>Stratospheric ozone = PROTECTS (good)<br>Same molecule, different location = opposite effect"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter D2 — Water Pollution
 
 - **BOD (Biological Oxygen Demand)** — the amount of oxygen bacteria need to decompose organic matter in water. High BOD = more organic pollution, less oxygen for fish.
@@ -302,6 +527,29 @@ AQI is maintained by CPCB (Central Pollution Control Board) and monitored for PM
 | Fluorosis | Fluoride >1.5 ppm → mottled teeth, skeletal damage |
 | Arsenicosis | Arsenic in groundwater — severe in West Bengal and Bangladesh |
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["WATER POLLUTION"]:::root
+    R --> SO["Major Sources"]:::key
+    R --> BO["BOD and DO"]:::key
+    R --> EU["Eutrophication"]:::key
+    R --> TR["TRAP: Ganga pollution"]:::trap
+    SO --> SO1["Sewage: pathogens, BOD, nutrients<br>Industrial effluents: heavy metals (Hg, Pb, Cd, Cr)<br>Agricultural runoff: pesticides (DDT), fertilizers (nitrates)"]:::key
+    SO --> SO2["Thermal pollution: hot water from power plants<br>Reduces DO (dissolved oxygen) in water<br>Oil spills: film prevents sunlight, kills marine life"]:::key
+    BO --> BO1["BOD (Biochemical Oxygen Demand):<br>More organic waste = more BOD = more polluted<br>Clean water: BOD < 1 mg/L; Polluted: BOD > 5 mg/L"]:::key
+    BO --> BO2["DO (Dissolved Oxygen): measure of water health<br>Fish need DO > 6 mg/L<br>DO decreases when BOD increases"]:::key
+    EU --> EU1["Eutrophication: excess nutrients (N, P) in water<br>Causes: algal bloom -> oxygen depletion -> fish die<br>Agricultural runoff main cause in India"]:::key
+    TR --> TR1["TRAP: Ganga pollution sources:<br>Industrial (leather tanneries Kanpur + paper mills)<br>Domestic sewage + religious practices + cremation"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter D3 — Solid Waste, Noise, Soil
 
 - **E-waste**: India generates ~3.2 million tonnes/year. E-Waste Management Rules 2022 introduced EPR.
@@ -315,6 +563,28 @@ AQI is maintained by CPCB (Central Pollution Control Board) and monitored for PM
 \newpage
 
 # PART E — CLIMATE CHANGE
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["SOLID WASTE, NOISE AND SOIL POLLUTION"]:::root
+    R --> SW["Solid Waste Types"]:::key
+    R --> NO["Noise Pollution"]:::key
+    R --> SP["Soil Pollution"]:::key
+    R --> BM["Biomagnification"]:::key
+    SW --> SW1["E-waste: fastest growing; cadmium, lead, mercury<br>Biomedical waste: colour-coded bags<br>Yellow=infectious, Red=recyclable, Blue=glassware"]:::key
+    SW --> SW2["Plastic: persistent; microplastics now in ocean + food chain<br>Municipal Solid Waste: 62 million tonnes/year in India<br>Less than 60% collected; less than 15% processed"]:::key
+    NO --> NO1["Sound measured in decibels (dB)<br>Industrial limit: 75 dB; Residential: 45 dB (day); 35 dB (night)<br>Above 85 dB: hearing damage over time"]:::key
+    SP --> SP1["Pesticides: DDT persists in soil decades<br>Heavy metals: cadmium, lead from industries<br>Plastic bags: prevent water + air movement in soil"]:::key
+    BM --> BM1["Biomagnification: concentration INCREASES up food chain<br>DDT: algae 0.003 ppb -> fish 2 ppb -> eagle 25 ppb<br>Top predators most affected"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter E1 — Greenhouse Gases
 
@@ -333,6 +603,28 @@ The natural greenhouse effect keeps Earth ~15 °C warmer than it would otherwise
 
 **The main greenhouse gas by quantity = CO₂**. **The most potent greenhouse gas by GWP = SF₆** (sulphur hexafluoride, 23,500× CO₂). Examiners test both. Also: "Most abundant greenhouse gas in the atmosphere" = water vapour — but in exam context, CO₂ is the standard answer for the climate-forcing one.
 
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["GREENHOUSE GASES"]:::root
+    R --> GE["Greenhouse Effect — Natural vs Enhanced"]:::key
+    R --> GH["Main Greenhouse Gases + GWP"]:::key
+    R --> IM["Impacts of Climate Change"]:::key
+    GE --> GE1["Natural greenhouse effect: ESSENTIAL for life<br>Without it: Earth would be -18 C (too cold)<br>GHGs trap outgoing infrared radiation"]:::key
+    GE --> GE2["Enhanced greenhouse effect: human-caused<br>Excess CO2, CH4, N2O from industries + agriculture<br>Global average temp has risen 1.2 C since 1850"]:::date
+    GH --> GH1["CO2 (carbon dioxide): baseline GWP = 1<br>Main source: fossil fuels, deforestation<br>Remains in atmosphere 100-300 years"]:::key
+    GH --> GH2["CH4 (methane): GWP = 25 (25x more powerful than CO2)<br>Sources: cattle, rice paddy, landfill, natural gas leaks<br>N2O (nitrous oxide): GWP = 298; fertilizers + fossil fuels"]:::key
+    GH --> GH3["CFCs: GWP = thousands; now banned under Montreal Protocol<br>Water vapour: most abundant GHG (natural)<br>HFCs: replacements for CFCs; GWP = 1000s"]:::key
+    IM --> IM1["Rising sea levels (melting ice + thermal expansion)<br>Extreme weather: floods, droughts, cyclones more intense<br>Coral bleaching; species extinction; food insecurity"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>
 
 ## Chapter E2 — Climate Treaties Timeline
@@ -359,6 +651,29 @@ The natural greenhouse effect keeps Earth ~15 °C warmer than it would otherwise
 
 Common traps: Vienna Convention (1985) vs Montreal Protocol (1987) — Vienna is the framework, Montreal is the actual action. Kyoto Protocol (1997) — binding only on developed countries. Paris Agreement (2015) — voluntary NDCs for all. Stockholm Convention (2001, about POPs) is separate from Stockholm Conference (1972, about human environment). These are four different things that examiners deliberately mix up.
 
+</div>
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["CLIMATE TREATIES TIMELINE"]:::root
+    R --> S1["1970s-80s"]:::date
+    R --> S2["1990s"]:::date
+    R --> S3["2000s-2010s"]:::date
+    R --> S4["2020s"]:::date
+    S1 --> S1a["Stockholm Conference 1972: first global env. conference<br>UNEP (UN Environment Programme) established<br>World Environment Day: June 5"]:::date
+    S1 --> S1b["Montreal Protocol 1987: phase out CFCs<br>Most successful global env. treaty<br>Ozone hole slowly healing"]:::date
+    S2 --> S2a["Rio Earth Summit 1992 (UNCED):<br>3 conventions: UNFCCC, CBD, UNCCD<br>Brundtland definition of Sustainable Development"]:::date
+    S2 --> S2b["Kyoto Protocol 1997: binding targets for developed nations<br>37 industrialised countries; 2 commitment periods<br>USA did NOT ratify; Canada withdrew"]:::date
+    S3 --> S3a["Copenhagen COP15 (2009): failed to get binding agreement<br>Cancun COP16 (2010): Green Climate Fund established<br>Paris Agreement COP21 (2015): all countries; 1.5 C target"]:::date
+    S4 --> S4a["Glasgow COP26 (2021): phase DOWN coal (not phase out)<br>Kunming-Montreal GBF 2022: 30x30 (protect 30% land by 2030)<br>Dubai COP28 (2023): transition away from fossil fuels"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
 </div>
 
 ## Chapter E3 — India's Climate Action
@@ -408,6 +723,28 @@ NAPCC has exactly **8 missions**. Examiners often ask the count. The Solar Missi
 
 # PART F — INDIAN ENVIRONMENTAL LAWS AND INSTITUTIONS
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["INDIA'S CLIMATE ACTION"]:::root
+    R --> ND["NDC Targets"]:::key
+    R --> RE["Renewable Energy"]:::key
+    R --> PA["Policy + Agreements"]:::key
+    ND --> ND1["India's NDC (2022 update) targets:<br>50% electricity from non-fossil fuels by 2030<br>Reduce carbon intensity by 45% vs 2005 level"]:::key
+    ND --> ND2["Create additional 1 billion tonne carbon sink<br>(through forests + tree cover) by 2030<br>Net Zero target: 2070"]:::key
+    RE --> RE1["Solar: India 3rd largest solar capacity globally<br>Target: 500 GW renewable by 2030 (300 GW solar)<br>International Solar Alliance (ISA): co-founded by India"]:::key
+    RE --> RE2["Green Hydrogen Mission: 5 million tonnes by 2030<br>PM Surya Ghar Muft Bijli: 1 crore households<br>PLI scheme: production-linked incentive for solar"]:::key
+    PA --> PA1["NAPCC: National Action Plan on Climate Change<br>8 national missions incl. solar, water, Himalayan ecosystem<br>State Action Plans on Climate Change (SAPCCs)"]:::key
+    PA --> PA2["India stance: common but differentiated responsibilities<br>Developed nations must take lead + provide finance<br>India: low per capita emissions; development right"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter F1 — Key Environmental Acts (Chronological)
 
 | Act | Year | What it does |
@@ -432,6 +769,27 @@ The **Environment Protection Act is from 1986**, NOT 1984 (the year of the Bhopa
 
 </div>
 
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["KEY ENVIRONMENTAL ACTS"]:::root
+    R --> A1["Pre-1980 Acts"]:::date
+    R --> A2["1980s Acts"]:::date
+    R --> A3["Post-1990 Acts"]:::date
+    A1 --> A1a["Wildlife Protection Act 1972: 6 schedules<br>Schedule I: highest protection (tigers, rhinos)<br>Hunting of Schedule I species: up to 7 years"]:::date
+    A1 --> A1b["Water (Prevention + Control of Pollution) Act 1974<br>Established Central + State Pollution Control Boards<br>Forest Conservation Act 1980: no diversion without approval"]:::date
+    A2 --> A2a["Air (Prevention + Control of Pollution) Act 1981<br>Environment (Protection) Act 1986: umbrella legislation<br>After Bhopal gas disaster December 1984"]:::date
+    A2 --> A2b["Bhopal gas tragedy: MIC (methyl isocyanate) leak<br>Union Carbide plant; 3 December 1984<br>Worst industrial disaster; 15,000+ deaths"]:::date
+    A3 --> A3a["Biological Diversity Act 2002: access + benefit sharing<br>National Green Tribunal (NGT) Act 2010<br>E-waste Management Rules 2016"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
 ## Chapter F2 — Wildlife Protection Act 1972 — Schedules
 
 After the 2022 Amendment, WLPA has **4 schedules** (reduced from the original 6):
@@ -440,6 +798,28 @@ After the 2022 Amendment, WLPA has **4 schedules** (reduced from the original 6)
 - **Schedule II** — protected species with lower penalties.
 - **Schedule III** — protected plants.
 - **Schedule IV** — CITES-listed species (invasive alien species also included after 2022).
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["WILDLIFE PROTECTION ACT 1972 — SCHEDULES"]:::root
+    R --> S1["Schedule I"]:::key
+    R --> S2S3["Schedules II and III"]:::key
+    R --> S5S6["Schedules V and VI"]:::key
+    R --> AM["2022 Amendment"]:::date
+    S1 --> S1a["HIGHEST protection: no hunting at all<br>Tiger, Elephant, Lion, Rhino, Snow Leopard<br>Gharial, Gangetic Dolphin, Golden Langur, Great Indian Bustard"]:::key
+    S1 --> S1b["Punishment: minimum 3 years; up to 7 years<br>Fine up to Rs 25,000 (amended amounts vary)<br>Repeat offenders: minimum 7 years"]:::key
+    S2S3 --> S2S3a["Schedule II: high protection; lesser penalty than I<br>Schedule III: specified animals; hunting allowed with license<br>Schedule IV: lesser protection; license required"]:::key
+    S5S6 --> S5S6a["Schedule V: vermin (can be hunted)<br>Common crow, fruit bat, common rat, mice<br>Schedule VI: protected plants (6 species originally)"]:::key
+    AM --> AM1["WPA Amendment 2022 consolidated to 4 schedules<br>Also incorporated CITES (Convention on Int'l Trade<br>in Endangered Species) into Indian law"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Chapter F3 — Key Institutions
 
@@ -471,6 +851,29 @@ After the 2022 Amendment, WLPA has **4 schedules** (reduced from the original 6)
 \newpage
 
 # PART X — CONSERVATION PROJECTS AND NATIONAL SYMBOLS
+
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["KEY ENVIRONMENTAL INSTITUTIONS"]:::root
+    R --> CP["CPCB"]:::key
+    R --> NG["NGT"]:::key
+    R --> MO["MoEFCC"]:::key
+    R --> IN["International Bodies"]:::key
+    CP --> CP1["CPCB: Central Pollution Control Board<br>Established 1974 under Water Act<br>HQ: Delhi; Under MoEFCC; sets standards"]:::key
+    CP --> CP2["SPCB: State Pollution Control Boards<br>Implement CPCB standards at state level<br>Issue consents (No Objection Certificates) to industry"]:::key
+    NG --> NG1["NGT: National Green Tribunal<br>Established under NGT Act 2010<br>HQ: Delhi; handles environmental cases"]:::key
+    NG --> NG2["Faster than regular courts for env. cases<br>Chairperson: retired SC or HC judge<br>Expert members + judicial members"]:::key
+    MO --> MO1["MoEFCC: Ministry of Environment, Forest and Climate Change<br>Controls Wildlife Protection Act, Forest Conservation Act<br>Environment (Protection) Act 1986"]:::key
+    IN --> IN1["UNEP: UN Environment Programme; HQ Nairobi, Kenya<br>IUCN: HQ Gland, Switzerland; Red List<br>WWF: World Wide Fund for Nature; HQ Gland"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
 
 ## Conservation Projects
 
