@@ -394,6 +394,45 @@ Options: (a) cosec θ + cot θ (b) cosec θ − cot θ (c) sec θ + 1 (d) cot θ
 
 ---
 
+## ROUGH WORK DISCIPLINE — what to write and what to skip
+
+In a real exam hall, candidates who score 90%+ write **less** rough work than average scorers — not more. They write *decisions*, not computations. Here is the rule:
+
+<div class="keypoint">
+
+**Write on rough paper only:** ✔ The LCM you chose. ✔ The base-100 assumption. ✔ The alligation cross. ✔ Final step arithmetic.
+
+**Never write on rough paper:** ✘ Intermediate digit-by-digit multiplications when the unit digit technique can eliminate 3 options first. ✘ Full CI calculation when the 2-year shortcut applies. ✘ Long division when magnitude estimation already narrows to 1 option.
+
+</div>
+
+**The unit digit pre-check (1 second before any big multiplication):**
+
+When a question has four options with *different* unit digits, and your computation involves a multiplication, do the unit digit check FIRST:
+
+<div class="steps">
+
+**Example.** Find the value of 123 × 47.
+Options: (a) 5,741  (b) 5,781  (c) 5,841  (d) 5,921
+
+**Unit digit check:** 3 × 7 = 21 → unit digit = **1**.
+Only option (a) ends in 1 → **answer is (a) 5,741** without any further computation.
+
+</div>
+
+<div class="examtip">
+
+**Three-step rough-work protocol (do this every question):**
+1. **Unit digit check** — can I kill 3 options in 2 seconds? If yes, done.
+2. **Magnitude estimate** — are remaining options spread apart? If yes, rough calculation kills another.
+3. **Exact computation** — only if needed; write the minimum steps to reach the answer.
+
+Most exam candidates skip steps 1 and 2 and go straight to step 3 every time — then run out of time. Train steps 1 and 2 as reflexes.
+
+</div>
+
+---
+
 ## THE MASTER DECISION TREE
 
 ```
@@ -557,39 +596,57 @@ The examiner knows you know the shortcuts. Here is how they defeat them:
 
 **Cue:** "A salary is increased by 20 %, then decreased by 10 %. Net change?"
 
-**Formula:** Net % change = a + b + (a × b)/100 — where a, b are signed (+ for increase, − for decrease).
+**Formula:** Net % = $a + b + \dfrac{a \times b}{100}$ — where a, b are **signed** (decrease = negative).
 
 <div class="worked">
 
 **Example.** Salary +20%, then −10%. Net?
 
-**Shortcut method:**
+<div class="method-a">
 
 <div class="steps">
 
 **Step 1:** a = +20, b = −10
-**Step 2:** Net = 20 + (−10) + (20 × −10)/100
-**Step 3:** Net = 20 − 10 − 2 = **+8%**
+*← decrease always enters as negative; treating both as positive is the #1 sign error*
+
+**Step 2:** Net = 20 + (−10) + $\dfrac{20 \times (−10)}{100}$
+*← the third term (ab/100) is where most marks are lost — never skip it*
+
+**Step 3:** = 10 + (−2) = **+8%**
+*← 20 × (−10) = −200; divided by 100 = −2, which subtracts from the +10*
 
 </div>
 
-**Traditional (base-100) method:**
+**Use when:** You want a single-line answer without computing a base.
+
+</div>
+
+<div class="method-b">
+
+**Use when:** Numbers feel unfamiliar or you want to double-check your shortcut answer.
 
 <div class="steps">
 
-**Start:** ₹100
-**After +20%:** 100 × 1.20 = ₹120
-**After −10%:** 120 × 0.90 = ₹108
-**Net change:** (108 − 100)/100 × 100 = **+8%**
+**Start:** base = ₹100
+
+**After +20%:** 100 × **1.20** = ₹120
+*← write the multiplier (1.20), not the addition "100+20" — saves one arithmetic step*
+
+**After −10%:** 120 × **0.90** = ₹108
+*← 0.90 = 10% off MP; do NOT subtract flat 10 from 120*
+
+**Net:** $\dfrac{108 − 100}{100}$ × 100 = **+8%** ✓
+
+</div>
 
 </div>
 </div>
 
 **Variations:**
-- Equal-and-opposite: +r% then −r% → net = −r²/100 (**always a loss**). Classic exam trap.
-- Discount-on-discount: 10% + 20% successive = single equivalent of 10 + 20 − 2 = **28%**, NOT 30%.
+- Equal-and-opposite: +r% then −r% → net = $-\dfrac{r^2}{100}$ (**always a loss**). Classic trap.
+- Discount-on-discount: 10% + 20% successive = 10 + 20 − 2 = **28%**, NOT 30%.
 
-**Self-check:** Price +30%, then −20%. Net? → 30 − 20 − 6 = **+4%**.
+**Self-check:** Price +30%, then −20%. Net? → 30 − 20 − 6 = **+4%**. Verify: 100 → 130 → 104. ✓
 
 ---
 
@@ -945,17 +1002,43 @@ The shortcut saves the whole CP derivation.
 
 <div class="worked">
 
+<div class="method-a">
+
 <div class="steps">
 
 **Set CP = 100**
-**MP:** 100 + 25% = 125
-**SP (after 10% discount on MP):** 125 × 0.90 = 112.5
-**Profit %:** $\frac{112.5 - 100}{100}$ × 100 = **12.5%**
+*← always anchor on CP = 100; the whole chain flows from this single assumption*
+
+**MP:** 100 × 1.25 = 125
+*← mark-up % is always ON CP*
+
+**SP:** 125 × **0.90** = 112.5
+*← discount is ON MP, not CP; write the multiplier 0.90 — do NOT subtract flat 10 from 125*
+
+**Profit %:** $\dfrac{112.5 − 100}{100}$ × 100 = **12.5%**
 
 </div>
 
-**Shortcut:** Net = +25 − 10 + (25 × −10)/100 = 25 − 10 − 2.5 = **+12.5%** (same result, no base-100 needed).
+**Use when:** Exact values are needed, or MP is given as a direct number, not a %.
 
+</div>
+
+<div class="method-b">
+
+**Use when:** Both mark-up % and discount % are given — treat as two successive % changes from CP.
+
+<div class="steps">
+
+Net = $a + b + \dfrac{a \times b}{100}$, where a = +25 (mark-up), b = −10 (discount)
+*← discount enters as negative — this is the same formula as successive %*
+
+= 25 − 10 + $\dfrac{25 \times (−10)}{100}$ = 15 − 2.5 = **+12.5%**
+
+</div>
+
+**Skip when:** MP is given as a direct number (not "x% above CP") — shortcut won't apply then.
+
+</div>
 </div>
 
 ---
@@ -1137,20 +1220,47 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 
 ## Type 4 — CI minus SI difference (2-year shortcut)
 
-**Formula:** $\text{Difference} = P \times \left(\dfrac{R}{100}\right)^2$
+**Formula:** $\text{CI} - \text{SI} = P \times \left(\dfrac{R}{100}\right)^2$
 
 <div class="worked">
 
-**Example.** P = ₹5000, R = 8%, 2 years. Find (CI − SI).
+**Example.** P = ₹5000, R = 8%, T = 2 years. Find (CI − SI).
+
+<div class="method-a">
 
 <div class="steps">
 
-**Step 1:** $= 5000 \times \left(\dfrac{8}{100}\right)^2 = 5000 \times \dfrac{64}{10000}$
+**Step 1:** $= 5000 \times \left(\dfrac{8}{100}\right)^2$
+*← this formula works ONLY when T = 2 years; for T = 3, use Method B*
+
+**Step 2:** $= 5000 \times \dfrac{64}{10000}$
+*← (8/100)² = 64/10000, not 8² = 64 over 100; squaring the full fraction is the critical step*
+
 **Answer:** $= \dfrac{320000}{10000}$ = **₹32**
 
 </div>
 
-**Why this works:** SI uses simple rate each year. CI earns interest on the first year's interest — that extra interest = $P \times (\frac{R}{100})^2$.
+**Use when:** T = 2 years exactly.
+
+</div>
+
+<div class="method-b">
+
+**Use when:** You want to verify, or T ≠ 2 years.
+
+<div class="steps">
+
+**SI:** $\dfrac{5000 \times 8 \times 2}{100}$ = ₹800
+
+**CI:** $5000 \times (1.08)^2 − 5000$ = 5832 − 5000 = ₹832
+
+**Difference:** 832 − 800 = **₹32** ✓
+
+</div>
+
+</div>
+
+**Why it works:** CI earns interest on the first year's interest. That extra = $P \times \left(\dfrac{R}{100}\right)^2$.
 
 </div>
 
@@ -1557,18 +1667,38 @@ Drop of 1 across 12 students = 12 units total drop. New member caused this by be
 
 **Example.** A alone: 12 days. B alone: 18 days. Together?
 
+<div class="method-a">
+
 <div class="steps">
 
-**Step 1:** Total work = LCM(12, 18) = 36 units
-**Step 2:** A's rate = 36 ÷ 12 = 3 units/day
-**Step 3:** B's rate = 36 ÷ 18 = 2 units/day
-**Step 4:** Combined rate = 3 + 2 = 5 units/day
-**Answer:** Time = 36 ÷ 5 = **7.2 days**
+**Step 1:** LCM(12, 18) = 36 → set as total work
+*← LCM converts all rates to whole numbers; you never deal with fractions like 1/12 or 1/18*
+
+**Step 2:** A's rate = 36 ÷ **12** = 3 units/day
+**Step 3:** B's rate = 36 ÷ **18** = 2 units/day
+*← divide by each person's OWN solo time; swapping (÷18 for A, ÷12 for B) is the most common error*
+
+**Step 4:** Combined = 3 + 2 = 5 units/day
+**Answer:** 36 ÷ 5 = **7.2 days**
 
 </div>
 
-**Formula shortcut:** ab/(a+b) = 12×18/(12+18) = 216/30 = 7.2. Same answer. Use LCM method when a third person joins.
+**Use when:** Three or more workers, or someone leaves midway — LCM handles both cleanly.
 
+</div>
+
+<div class="method-b">
+
+**Use when:** Exactly two workers, no interruptions, and you want the fastest single-line answer.
+
+<div class="steps">
+
+$\dfrac{ab}{a+b} = \dfrac{12 \times 18}{12 + 18} = \dfrac{216}{30}$ = **7.2 days**
+*← works ONLY for two workers; if a third joins, use Method A*
+
+</div>
+
+</div>
 </div>
 
 ---
@@ -1862,18 +1992,45 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 
 <div class="worked">
 
+<div class="method-a">
+
 <div class="steps">
 
-**Step 1:** Equal distances → use $\dfrac{2uv}{u+v}$
-**Step 2:** $= \dfrac{2 \times 40 \times 60}{40 + 60} = \dfrac{4800}{100}$
-**Answer:** = **48 km/h** (not 50 — always less than arithmetic mean)
+**Step 1:** Equal distances on both legs → formula: $\dfrac{2uv}{u+v}$
+*← "equal distance" is the trigger word; "equal time" is a different case (arithmetic mean applies there)*
+
+**Step 2:** $= \dfrac{2 \times 40 \times 60}{40 + 60} = \dfrac{4800}{100}$ = **48 km/h**
+
+**Self-check:** Answer must be less than (40+60)/2 = 50.
+*← if your answer is ≥ 50, you used the wrong formula*
+
+</div>
+
+**Use when:** Both legs cover the same distance (typical exam phrasing: "goes and returns").
+
+</div>
+
+<div class="method-b">
+
+**Use when:** You forget the formula or want to verify. Takes ~30 extra seconds.
+
+<div class="steps">
+
+**Assume distance each way = 120 km** (LCM of 40 and 60 — gives whole-number times)
+
+**Time going:** 120 ÷ 40 = 3 hours
+**Time returning:** 120 ÷ 60 = 2 hours
+
+**Average speed:** $\dfrac{120 + 120}{3 + 2} = \dfrac{240}{5}$ = **48 km/h** ✓
+
+</div>
 
 </div>
 </div>
 
 <div class="pitfall">
 
-**Classic exam trap:** "Average speed = (40 + 60)/2 = 50 km/h" is WRONG whenever the distances are equal. The correct formula is the harmonic mean. The arithmetic mean applies only when TIME is equal on both legs.
+**Arithmetic mean trap:** (40 + 60) ÷ 2 = 50 is WRONG when distances are equal. The harmonic mean always gives a value **less** than the arithmetic mean. If your answer is ≥ 50, you fell into the trap.
 
 </div>
 

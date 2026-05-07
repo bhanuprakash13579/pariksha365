@@ -285,6 +285,28 @@ CSS = textwrap.dedent("""
   .steps p { margin: 1pt 0; }
   .steps strong { color: #0369a1; }
   .steps code { background: none; padding: 0; font-size: 9.5pt; }
+  /* Inline annotation inside step blocks — subtle grey italic */
+  .steps em { color: #6b7280; font-style: italic; font-size: 8.5pt; }
+
+  /* ── Method A / Method B sub-boxes (inside .worked) ── */
+  .method-a, .method-b {
+    padding: 6pt 10pt;
+    margin: 6pt 0 4pt 0;
+    border-radius: 0 3pt 3pt 0;
+    page-break-inside: avoid;
+  }
+  .method-a { border-left: 3.5pt solid #16a34a; background: #f0fdf4; }
+  .method-b { border-left: 3.5pt solid #ea580c; background: #fff7ed; }
+  .method-a::before {
+    content: "\\25B6  METHOD A \\2014  Standard (safe every time)";
+    display: block; font-size: 7.8pt; font-weight: 700;
+    letter-spacing: 0.05em; color: #15803d; margin-bottom: 3pt;
+  }
+  .method-b::before {
+    content: "\\26A1  METHOD B \\2014  Exam Shortcut";
+    display: block; font-size: 7.8pt; font-weight: 700;
+    letter-spacing: 0.05em; color: #c2410c; margin-bottom: 3pt;
+  }
 
   /* ── Tables ── */
   table {
