@@ -1,134 +1,147 @@
 ---
-title: "Biology — The Pariksha365 Complete Book"
-subtitle: "A pedagogy-driven, exam-ready study guide"
-author: "Pariksha365 Study Notes"
+title: "Biology — The Complete Study Book"
+subtitle: "General Science for SSC, RRB, Banks & State PSC — Examiner-aligned, memory-first"
+author: "Pariksha365"
 date: "2026"
 ---
 
-# 📘 How To Use This Book
+# Before You Begin
 
-The 15 pedagogy techniques are explained in `polity.md`. Biology-specific pointers:
+Forget memorising isolated facts. Every exam question in biology comes from one of four buckets: **names & discoverers**, **cause & effect** (disease-vector, hormone-disorder), **numbers & extremes** (206 bones, 120-day RBC life), and **comparisons** (prokaryote vs eukaryote, mitosis vs meiosis). This book is structured to hit all four buckets hard, in the order examiners love.
 
-- **Story = life itself.** Every chapter is scaffolded as a story: cell → tissue → organ → system → organism → ecosystem.
-- **Dual coding is lifesaving** in biology — many terms only make sense when paired with a diagram. Wherever a Mermaid diagram appears, redraw it by hand once.
-- **Memory palaces = anatomical walks.** Walk through your own body, top to bottom, attaching systems to body parts.
-- **Interleave with chemistry** (biochemistry) and physics (medical instruments).
+Read end-to-end once for context. Then on your second pass, cover the right column of every table and test yourself. The 25-question mini-mock at the end tells you what you've missed.
 
-Paired quiz topics: **BIO_CELL, BIO_GENETICS, BIO_EVOLUTION, BIO_PLANT, BIO_NERVOUS, BIO_ENDOCRINE, BIO_IMMUNE_SYSTEM, BIO_SKELETAL_MUSCULAR, BIO_EXCRETION, BIO_DIGESTION, BIO_RESPIRATION, BIO_CARDIO, BIO_REPRODUCTION, BIO_HUMAN_DISEASES, BIO_ECOLOGY, BIO_VITAMINS**.
+---
+
+# Examiner Blueprint — What Actually Appears on Papers
+
+<div class="examtip">
+<strong>High-yield order (SSC CGL/CHSL, RRB NTPC, IBPS PO GA section):</strong>
+<ol>
+<li><strong>Vitamins &amp; deficiency diseases</strong> — 2-4 questions per paper, reliably. Know every row of the vitamin table cold.</li>
+<li><strong>Disease-vector mapping</strong> — Malaria/Dengue/Filaria vectors are tested in every single exam.</li>
+<li><strong>Human body extremes</strong> — Smallest/largest bone, organ, gland, cell. Examiners love these.</li>
+<li><strong>Hormones &amp; glands</strong> — "Master gland", "fight-or-flight", goitre cause — all predictable.</li>
+<li><strong>Cell organelles</strong> — "Powerhouse", "suicide bags", "protein factory".</li>
+<li><strong>Blood groups</strong> — Universal donor, universal recipient, discoverer.</li>
+<li><strong>Plant biology</strong> — Photosynthesis equation, C3 vs C4, fruit-ripening hormone.</li>
+<li><strong>Ecology</strong> — 10% rule, biodiversity hotspots, pyramid of energy (always upright).</li>
+</ol>
+<strong>Topics examiners rarely test:</strong> detailed embryology, molecular biology mechanisms, specific enzyme kinetics. Don't over-invest here.
+</div>
 
 ---
 
 \newpage
 
-# PART A — FOUNDATIONS OF LIFE
+# PART A — FOUNDATIONS: CLASSIFICATION & THE CELL
 
-## Chapter A1 — What Is Life?
+## Chapter A1 — Classification of Life
 
-### 🎬 The Hook
+In 1735, a Swedish botanist named Carl Linnaeus decided that humanity needed a universal filing system for every creature on Earth. He invented binomial nomenclature — two-part Latin names — and the hierarchical rank system we still use today.
 
-A virus crystal sits in a lab. Inert, motionless. Put it on a cell — it **hijacks** the cell to make millions of copies. Is the virus alive? Biology's answer: life is defined not by a single property but by a **cluster of seven** — the MRS GREN test.
+### The seven taxonomic ranks
 
-### 🔑 Seven characteristics of life (MRS GREN)
+Kingdom → Phylum → Class → Order → Family → Genus → Species
 
-- **M**ovement
-- **R**espiration
-- **S**ensitivity (response)
-- **G**rowth
-- **R**eproduction
-- **E**xcretion
-- **N**utrition
+<div class="mnemonic">
+<strong>King Philip Came Over For Great Supper</strong> — Kingdom, Phylum, Class, Order, Family, Genus, Species. This mnemonic appears in textbooks from Class 6 to postgraduate level; it is absolutely exam-safe.
+</div>
 
-### 🔬 Taxonomic Levels (Linnaeus, 1735)
+### Whittaker's Five Kingdoms (1969)
 
-Kingdom → Phylum → Class → Order → Family → Genus → Species.
-Mnemonic: **K**ing **P**hilip **C**ame **O**ver **F**or **G**reat **S**upper.
+| Kingdom | Members | Key feature |
+|---------|---------|-------------|
+| **Monera** | Bacteria, cyanobacteria | Prokaryotes — no nucleus |
+| **Protista** | Amoeba, Paramecium, Euglena | Unicellular eukaryotes |
+| **Fungi** | Mushrooms, yeasts, moulds | Chitin cell wall; decomposers |
+| **Plantae** | Mosses, ferns, flowering plants | Photosynthetic multicellular |
+| **Animalia** | Insects, fish, mammals | Heterotrophic multicellular |
 
-### 🌐 Whittaker's Five Kingdoms (1969)
+Later models added Archaea → six kingdoms. Carl Woese proposed three domains: Bacteria, Archaea, Eukarya.
 
-1. **Monera** — prokaryotes (bacteria, cyanobacteria).
-2. **Protista** — single-celled eukaryotes (amoeba, paramecium).
-3. **Fungi** — decomposers (mushrooms, yeasts).
-4. **Plantae** — photosynthetic multi-cellular.
-5. **Animalia** — heterotrophic multi-cellular.
-
-(Later models add kingdom Archaea → Six kingdoms or 3 domains: Bacteria, Archaea, Eukarya.)
-
-### 🎯 Exam hooks
-
-- "Father of taxonomy?" → **Carl Linnaeus.**
-- "Binomial name of humans?" → **Homo sapiens.**
-- "Father of modern biology?" → **Aristotle.**
-- "Father of modern genetics?" → **Gregor Mendel.**
+<div class="keypoint">
+<strong>Exam-critical "Fathers" — memorise all five:</strong><br>
+Father of taxonomy → <strong>Carl Linnaeus</strong><br>
+Father of modern biology → <strong>Aristotle</strong><br>
+Father of genetics → <strong>Gregor Mendel</strong><br>
+Father of botany → <strong>Theophrastus</strong><br>
+Father of zoology → <strong>Aristotle</strong> (same person)<br>
+Binomial name of humans → <strong>Homo sapiens</strong>
+</div>
 
 ---
-
-\newpage
 
 ## Chapter A2 — The Cell
 
-### 🏠 The story
+In 1665, Robert Hooke sliced cork with a primitive microscope and saw small boxy chambers. He called them cells — from the Latin *cellula* meaning "small room". Two centuries later, Schleiden (1838, plants) and Schwann (1839, animals) formalised the cell theory that every living thing is made of cells.
 
-1665: Robert Hooke slices cork under a microscope and sees boxy compartments. He names them **cells** (Latin *cellula* = small room). 170 years later, Schleiden (plants) and Schwann (animals) declare: **all living things are made of cells**.
+### Three tenets of Cell Theory
 
-### 🧬 Cell Theory
+1. All living organisms are made of one or more cells.
+2. The cell is the basic structural and functional unit of life.
+3. New cells arise only from pre-existing cells. *(Virchow, 1855)*
 
-1. All organisms are made of one or more cells.
-2. Cell is the basic unit of life.
-3. New cells arise from pre-existing cells (Virchow).
-
-### 🔬 Prokaryote vs Eukaryote
+### Prokaryote vs Eukaryote — the fundamental split
 
 | Feature | Prokaryote | Eukaryote |
 |---------|-----------|-----------|
-| Nucleus | Absent (nucleoid) | Present |
-| Size | 1-10 μm | 10-100 μm |
-| Organelles | None membrane-bound | Many |
-| Examples | Bacteria, archaea | Plants, animals, fungi |
-| DNA | Circular | Linear chromosomes |
+| True nucleus | Absent (DNA in nucleoid) | Present |
+| Size | 1–10 µm | 10–100 µm |
+| Membrane-bound organelles | None | Many |
+| Ribosomes | 70S | 80S (cytoplasm); 70S in mitochondria/chloroplast |
+| Cell division | Binary fission | Mitosis / Meiosis |
+| Examples | Bacteria, cyanobacteria | Plants, animals, fungi |
 
-### 🏭 Organelles — the cell's departments
+### Cell organelles — the factory analogy
 
-| Organelle | Function | "The analogy" |
-|-----------|----------|---------------|
-| Nucleus | Info HQ, contains DNA | CEO office |
-| Mitochondria | ATP (energy) factory | Power plant |
-| Ribosome | Protein synthesis | 3-D printer |
-| ER (smooth) | Lipid synthesis, detox | Pipeline |
-| ER (rough) | Protein synthesis + transport | Manufacturing line |
-| Golgi | Package & dispatch | Post office |
-| Lysosome | Waste digestion | Recycling centre |
-| Peroxisome | Oxidative reactions | Detox unit |
-| Chloroplast (plant) | Photosynthesis | Solar panel |
-| Vacuole (large in plants) | Storage + turgor | Warehouse |
-| Cell wall (plant, fungi, bacteria) | Rigidity | Building walls |
-| Cytoskeleton | Shape + transport | Skeleton + roads |
+| Organelle | Function | Memory hook |
+|-----------|----------|-------------|
+| **Nucleus** | DNA storage; controls cell | CEO's office |
+| **Mitochondria** | ATP (energy) via respiration | **Power plant** |
+| **Ribosome** | Protein synthesis | 3-D printer |
+| **ER (rough)** | Protein folding + transport | Assembly line |
+| **ER (smooth)** | Lipid synthesis, detox | Pipeline |
+| **Golgi apparatus** | Packages + dispatches proteins | Post office |
+| **Lysosome** | Digests waste + worn-out parts | Recycling centre |
+| **Chloroplast** | Photosynthesis (plants only) | Solar panel |
+| **Vacuole** | Storage; turgor in plants | Warehouse |
+| **Cell wall** | Rigidity; protection | Building walls |
+| **Centrosome** | Spindle formation (animal cells) | Foreman |
+| **Peroxisome** | Breaks H₂O₂ via catalase | Detox unit |
 
-### 🏠 Memory palace — **"The Cell Factory"**
+<div class="examtip">
+<strong>Four organelle questions examiners love:</strong><br>
+"Powerhouse of the cell?" → <strong>Mitochondria</strong><br>
+"Suicide bags?" → <strong>Lysosomes</strong> (contain hydrolytic enzymes; self-digest when cell dies)<br>
+"Site of protein synthesis?" → <strong>Ribosomes</strong><br>
+"Which organelle has its own DNA?" → <strong>Mitochondria AND Chloroplast</strong> (both have own circular DNA)
+</div>
 
-Imagine you're CEO of a factory:
-- **Boss's office (nucleus)** — has the blueprint book (DNA).
-- **Power plant (mitochondria)** — gives electricity (ATP).
-- **3-D printers (ribosomes)** — churn out products (proteins).
-- **Conveyor belts (ER)** — move products.
-- **Post office (Golgi)** — packages & ships.
-- **Recycling centre (lysosome)** — breaks down waste.
-- **Solar panels (chloroplast)** — only in plant factory.
-- **Walls + guards (membrane, cell wall)** — perimeter security.
+### Cell division — Mitosis vs Meiosis
 
-### 🎯 Exam hooks
+| Aspect | Mitosis | Meiosis |
+|--------|---------|---------|
+| Location | Somatic (body) cells | Germ (reproductive) cells |
+| Daughter cells | 2 | 4 |
+| Chromosome count | Stays diploid (2n) | Halved to haploid (n) |
+| Genetic variation | None — clones | High (crossing over) |
+| Purpose | Growth, repair | Making gametes |
+| Phases | PMAT × 1 | PMAT × 2 (I + II) |
 
-- "Powerhouse of cell?" → **Mitochondria.**
-- "Suicide bags?" → **Lysosomes.**
-- "Site of protein synthesis?" → **Ribosomes.**
-- "Largest cell?" → **Ostrich egg (single cell, ~1.5 kg).**
-- "Smallest cell?" → **Mycoplasma.**
-- "Longest cell?" → **Nerve cell (axon up to 1 m).**
+<div class="mnemonic">
+<strong>Phases of mitosis: PMAT</strong> — Prophase, Metaphase, Anaphase, Telophase. In meiosis, the same phases happen twice (Meiosis I and Meiosis II), but Prophase I has the special event of crossing over (chiasmata formation), which creates genetic variation.
+</div>
 
-### 📝 Pause + recall
+### Body extremes — memorise cold
 
-1. Three tenets of cell theory.
-2. Five differences between prokaryotic and eukaryotic cells.
-3. Analogy-match five organelles to factory departments.
+| Fact | Answer |
+|------|--------|
+| Largest cell (single cell) | Ostrich egg |
+| Smallest cell | *Mycoplasma* |
+| Longest cell | Neuron (axon up to ~1 m) |
+| First to see cells | Robert Hooke (1665) |
+| Discovered nucleus | Robert Brown (1831) |
 
 ---
 
@@ -138,81 +151,102 @@ Imagine you're CEO of a factory:
 
 ## Chapter B1 — Mendelian Genetics
 
-### 🌱 The story
+Between 1856 and 1863, Gregor Mendel — an Augustinian friar in Brno, Moravia — grew 28,000 pea plants and discovered that inheritance is particulate, not blended. His paper was published in 1866 and ignored for 34 years. When rediscovered simultaneously by De Vries, Correns, and von Tschermak in 1900, it became the foundation of modern genetics.
 
-1856-1863, Moravia: **Gregor Mendel**, an Augustinian friar, crosses 28,000 pea plants and discovers **two laws** of inheritance. His paper (1866) is ignored for 34 years until rediscovered in 1900. Mendel shows that heredity is particulate, not blended.
+### Mendel's Three Laws
 
-### 📐 Mendel's Laws
+1. **Law of Dominance** — In a heterozygote (Tt), the dominant allele (T) masks the recessive allele (t). Only TT and Tt look tall; tt looks short.
+2. **Law of Segregation** — Alleles separate during gamete formation. Each gamete gets only one allele from each pair.
+3. **Law of Independent Assortment** — Alleles for different traits sort into gametes independently (provided genes are on different chromosomes).
 
-1. **Law of Segregation** — two alleles separate during gamete formation.
-2. **Law of Independent Assortment** — different traits inherited independently.
-3. **Law of Dominance** — one allele can mask the other.
+### Monohybrid cross: Tt × Tt
 
-### 🧮 Monohybrid cross (Aa × Aa) → 3:1 phenotype, 1:2:1 genotype.
+Phenotypic ratio → **3 : 1** (dominant : recessive)
+Genotypic ratio → **1 TT : 2 Tt : 1 tt**
 
-### 🧬 DNA — The Double Helix
+<div class="examtip">
+<strong>Three questions that appear constantly:</strong><br>
+"Father of genetics?" → <strong>Gregor Mendel</strong><br>
+"Mendel used which plant?" → <strong>Pea plant (Pisum sativum)</strong><br>
+"Classic monohybrid ratio?" → <strong>3:1</strong> (phenotypic) and <strong>1:2:1</strong> (genotypic)
+</div>
 
-- 1953 — Watson & Crick (with Franklin's X-ray data) publish double helix model. Nobel 1962.
-- DNA strands run anti-parallel (5'→3' and 3'→5').
-- Pairing: **A-T** (2 H-bonds), **G-C** (3 H-bonds).
-- Sugar = deoxyribose; RNA has ribose.
-- RNA types: mRNA (messenger), tRNA (transfer), rRNA (ribosomal).
+## Chapter B2 — DNA & Molecular Genetics
 
-### 🧪 Central Dogma
+### The Double Helix
 
-**DNA → (transcription) → RNA → (translation) → Protein.**
-Reverse transcription (RNA → DNA) in retroviruses (HIV).
+In 1953, James Watson and Francis Crick (using X-ray diffraction data from Rosalind Franklin) published the structure of DNA: a double helix with anti-parallel strands. They received the Nobel Prize in 1962.
 
-### 🌀 Gene expression
+Key structural facts:
+- Two strands run anti-parallel (5'→3' and 3'→5').
+- Base pairing: **Adenine–Thymine** (2 hydrogen bonds), **Guanine–Cytosine** (3 hydrogen bonds).
+- Sugar in DNA = **deoxyribose**; in RNA = **ribose**.
+- Uracil (U) replaces Thymine (T) in RNA.
 
-- **Gene** = DNA segment coding a functional product.
-- **Codon** = 3 nucleotides → 1 amino acid (64 codons, 20 amino acids; degeneracy).
-- **Start codon** = AUG (methionine); **stop codons** = UAA, UAG, UGA.
+### Central Dogma
 
-### 🎯 Exam hooks
+**DNA → (Transcription) → mRNA → (Translation) → Protein**
 
-- "Father of genetics?" → **Mendel.**
-- "Double helix Nobel year?" → **1962.**
-- "Start codon?" → **AUG.**
-- "How many chromosomes in humans?" → **46 (23 pairs).**
-- "Sex chromosomes?" → **XX female, XY male.**
-- "Genetic disease examples?" → **Sickle cell, cystic fibrosis, haemophilia, colour blindness, Huntington's.**
+Reverse transcription (RNA → DNA) occurs in retroviruses like HIV, via the enzyme reverse transcriptase.
 
-## Chapter B2 — Evolution
+### Three types of RNA
 
-### 🦖 Darwin's journey
+| RNA Type | Function |
+|----------|----------|
+| mRNA (messenger) | Carries genetic code from nucleus to ribosome |
+| tRNA (transfer) | Brings amino acids to ribosome during translation |
+| rRNA (ribosomal) | Structural component of ribosomes |
 
-1831-36 HMS Beagle voyage. Observations on Galápagos finches. 1859: *On the Origin of Species* — **natural selection**.
+<div class="keypoint">
+<strong>Genetic code essentials:</strong><br>
+Start codon → <strong>AUG</strong> (codes for methionine)<br>
+Stop codons → <strong>UAA, UAG, UGA</strong><br>
+Total codons → 64 (for 20 amino acids — degeneracy means multiple codons map to same amino acid)<br>
+Human chromosomes → <strong>46 (23 pairs)</strong>; 22 autosome pairs + 1 sex pair (XX female, XY male)<br>
+Human Genome Project → 1990–2003<br>
+CRISPR-Cas9 Nobel → Doudna + Charpentier (2020)
+</div>
 
-### 🧬 Modern synthesis
+### Genetic disorders
 
-Darwin's natural selection + Mendelian genetics + population genetics = Neo-Darwinism (1930s-40s).
+| Disorder | Type | Key fact |
+|----------|------|----------|
+| Sickle cell anaemia | Autosomal recessive | Single mutation in haemoglobin β-chain |
+| Thalassemia | Autosomal recessive | Reduced globin chain production |
+| Haemophilia | X-linked recessive | Defective clotting factor (mainly males) |
+| Colour blindness | X-linked recessive | X-linked; mostly males affected |
+| Down syndrome | Trisomy 21 | Extra chromosome 21 |
+| Turner syndrome | XO | Female with single X chromosome |
+| Klinefelter syndrome | XXY | Male with extra X |
+| Huntington's disease | Autosomal dominant | CAG repeat expansion; late onset |
 
-### 📜 Evidence
+<div class="pitfall">
+Sex of the baby is determined by the <strong>father's sperm</strong>, not the mother. The mother always contributes X. Father contributes X → daughter; Y → son. Questions asking "who determines sex?" — the answer is the father.
+</div>
 
-- **Fossils** — chronological record (Archaeopteryx = bird-reptile link).
-- **Homologous organs** — same origin, different function (forelimb: human arm, whale flipper, bat wing).
-- **Analogous organs** — different origin, same function (insect wing vs bird wing).
-- **Vestigial** — appendix, wisdom teeth, coccyx, ear muscles.
-- **Comparative embryology** — embryos of vertebrates similar.
-- **Molecular biology** — DNA similarities across species.
+## Chapter B3 — Evolution
 
-### 🧍 Human evolution timeline
+Charles Darwin sailed on HMS Beagle (1831–36), observed Galápagos finches with differently shaped beaks for different food sources, and published *On the Origin of Species* in 1859, proposing **natural selection** as the mechanism of evolution.
 
-Australopithecus → Homo habilis → Homo erectus → Homo neanderthalensis → Homo sapiens (~300,000 years ago, Africa).
+### Evidence for evolution
 
-### 🎯 Exam hooks
+| Evidence type | Example |
+|--------------|---------|
+| Fossils | Archaeopteryx — link between birds and reptiles |
+| Homologous organs | Human arm, whale flipper, bat wing — same structure, different function |
+| Analogous organs | Insect wing, bird wing — same function, different origin |
+| Vestigial organs | Appendix, coccyx, wisdom teeth |
+| Molecular biology | DNA similarity across species |
+| Comparative embryology | Vertebrate embryos look similar in early stages |
 
-- "Origin of Species year?" → **1859.**
-- "Natural selection?" → **Survival of fittest; differential reproduction.**
-- "Lamarck's theory?" → **Inheritance of acquired characters (giraffe neck); disproved.**
-- "Most recent common ancestor of humans and chimps?" → **~6-7 million years ago.**
+Human evolution: Australopithecus → Homo habilis → Homo erectus → Homo sapiens (~300,000 years ago, Africa).
 
-### 📝 Pause + recall
-
-1. Mendel's three laws in one line each.
-2. Difference between homologous and analogous organs with examples.
-3. Define vestigial; name three in humans.
+<div class="keypoint">
+<strong>Key distinctions examiners test:</strong><br>
+Homologous organs → same <em>origin</em>, different function (evolution divergence)<br>
+Analogous organs → same <em>function</em>, different origin (convergent evolution)<br>
+Lamarck's theory → inheritance of acquired characters (giraffe neck story) — <strong>disproved</strong>
+</div>
 
 ---
 
@@ -220,631 +254,591 @@ Australopithecus → Homo habilis → Homo erectus → Homo neanderthalensis →
 
 # PART C — PLANT BIOLOGY
 
-## Chapter C1 — Plant Anatomy
+## Chapter C1 — Plant Kingdom Overview
 
-### 🌿 Plant Groups
+Plants are classified by complexity of structure and reproductive strategy:
 
-- **Thallophyta** — algae.
-- **Bryophyta** — mosses, liverworts. "Amphibians of plant kingdom."
-- **Pteridophyta** — ferns; first vascular plants.
-- **Gymnosperms** — naked seeds (conifers, cycads).
-- **Angiosperms** — flowering plants. Dicot vs Monocot.
+| Division | Examples | Key feature |
+|----------|---------|-------------|
+| **Thallophyta** | Spirogyra, Chara, Algae | No roots/stems/leaves |
+| **Bryophyta** | Mosses, Marchantia, Riccia | "Amphibians of plant kingdom"; no vascular tissue |
+| **Pteridophyta** | Ferns, Equisetum, Selaginella | First vascular plants; no seeds |
+| **Gymnosperms** | Pinus, Cycas, Cedrus | Naked seeds (no fruit) |
+| **Angiosperms** | All flowering plants | Seeds enclosed in fruit |
 
-### 🌱 Dicot vs Monocot
+### Dicot vs Monocot — always tested
 
 | Feature | Dicot | Monocot |
 |---------|-------|---------|
-| Cotyledons | 2 | 1 |
-| Leaf venation | Reticulate | Parallel |
-| Flower parts | 4 or 5 | 3 |
-| Root | Tap | Fibrous |
-| Examples | Bean, mango, rose | Wheat, rice, onion |
+| Seed leaves (cotyledons) | 2 | 1 |
+| Leaf venation | Reticulate (net-like) | Parallel |
+| Flower parts | In 4s or 5s | In 3s |
+| Root type | Tap root | Fibrous |
+| Examples | Bean, mango, rose, pea | Wheat, rice, maize, onion, grass |
 
-### 🌾 Tissues
-
-- **Meristematic** — growth (apical, lateral, intercalary).
-- **Permanent** — parenchyma, collenchyma, sclerenchyma; xylem (water); phloem (food).
+<div class="mnemonic">
+<strong>"One for monocots, two for dicots."</strong> All the world's staple grains (wheat, rice, maize, barley) are monocots. All the world's trees and most garden flowers are dicots. This pattern is an easy reality check.
+</div>
 
 ## Chapter C2 — Photosynthesis
 
-### ☀️ The equation
+Photosynthesis is how plants manufacture food from air and water using sunlight. The overall equation:
 
-$$6CO_2 + 6H_2O \xrightarrow{chlorophyll, light} C_6H_{12}O_6 + 6O_2$$
+**6 CO₂ + 6 H₂O + light energy → C₆H₁₂O₆ + 6 O₂** *(chloroplast)*
 
-### 🔄 Two Phases
+### Two phases
 
-- **Light reaction** (thylakoid) — water split, O₂ released, ATP + NADPH made.
-- **Dark reaction / Calvin cycle** (stroma) — CO₂ fixed, sugar made.
+**Light reaction** (in thylakoids): Water is split (photolysis), O₂ is released, and ATP + NADPH are produced.
 
-### 🌾 C3, C4, CAM
+**Dark reaction / Calvin cycle** (in stroma): ATP + NADPH are used to fix CO₂ into glucose. No light is directly needed, but the products of the light reaction are consumed.
 
-- **C3** — most plants (wheat, rice); inefficient at high T.
-- **C4** — tropical (sugarcane, maize); efficient in heat/light.
-- **CAM** — succulents (cactus); open stomata at night.
+### C3, C4, and CAM plants
 
-### 🎯 Exam hooks
+| Type | Plants | Advantage |
+|------|--------|-----------|
+| C3 | Wheat, rice, soybean | Most common; less efficient in heat |
+| C4 | Sugarcane, maize, sorghum | Efficient in tropical heat and high light |
+| CAM | Cactus, pineapple, succulents | Open stomata at night; minimise water loss |
 
-- "Site of photosynthesis?" → **Chloroplast.**
-- "Green pigment?" → **Chlorophyll-a (main) + Chlorophyll-b.**
-- "Calvin cycle happens in?" → **Stroma.**
-- "CAM plants open stomata when?" → **Night.**
+<div class="examtip">
+<strong>Top four photosynthesis questions:</strong><br>
+"Site of photosynthesis?" → <strong>Chloroplast</strong><br>
+"Main photosynthetic pigment?" → <strong>Chlorophyll-a</strong><br>
+"Where does the Calvin cycle occur?" → <strong>Stroma</strong><br>
+"CAM plants open stomata when?" → <strong>Night</strong> (to reduce water loss in desert conditions)
+</div>
 
 ## Chapter C3 — Plant Hormones
 
-| Hormone | Role |
-|---------|------|
-| **Auxin** | Cell elongation, phototropism, apical dominance |
-| **Gibberellin** | Stem elongation, seed germination |
-| **Cytokinin** | Cell division |
-| **Abscisic acid (ABA)** | Stress, stomatal closure, dormancy |
-| **Ethylene** | Fruit ripening, senescence |
-| **Florigen** | Flowering |
+| Hormone | Main function | Exam clue |
+|---------|--------------|-----------|
+| **Auxin (IAA)** | Cell elongation, phototropism, apical dominance | Bends towards light |
+| **Gibberellin** | Stem elongation, seed germination, breaks dormancy | Makes dwarf plants tall |
+| **Cytokinin** | Cell division, delays leaf senescence | "Stay young" hormone |
+| **Abscisic acid (ABA)** | Stress response, stomatal closure, seed dormancy | "Stress hormone" |
+| **Ethylene** | Fruit ripening, leaf fall | The only gaseous plant hormone |
 
-Mnemonic: **A-GAC-E-F** (Auxin, Gibberellin, Abscisic, Cytokinin, Ethylene, Florigen).
-
-### 🎯 Exam hooks
-
-- "Fruit ripening hormone?" → **Ethylene (gas).**
-- "Hormone causing apical dominance?" → **Auxin.**
-- "Stress hormone?" → **Abscisic acid.**
+<div class="keypoint">
+"Which hormone ripens fruit?" → <strong>Ethylene</strong> — it is a gas. Commercially, ethylene is used to ripen bananas and mangoes during transport.<br>
+"Hormone responsible for apical dominance?" → <strong>Auxin</strong> — suppresses lateral buds; pruning removes the apex and removes auxin dominance, causing bushy growth.
+</div>
 
 ## Chapter C4 — Plant Reproduction
 
-- **Asexual** — cuttings, grafting, tissue culture, micropropagation, spore formation.
-- **Sexual** — pollination → fertilisation → seed.
-- **Pollination types:** Self (autogamy) vs Cross. Agents: wind (anemophily), water (hydrophily), insects (entomophily), birds (ornithophily), bats (chiropterophily).
-- **Double fertilisation** (unique to angiosperms): one sperm fuses with egg → zygote; another fuses with polar nuclei → endosperm.
+**Asexual**: vegetative propagation (cutting, grafting, layering), spores, micropropagation (tissue culture).
 
-### 📝 Pause + recall
+**Sexual**: pollination → fertilisation → seed.
 
-1. What's the difference between C3 and C4 plants?
-2. Which hormone ripens fruit (and which gas)?
-3. Define double fertilisation.
+Pollination agents: wind (anemophily), water (hydrophily), insects (entomophily), birds (ornithophily), bats (chiropterophily).
+
+**Double fertilisation** — unique to angiosperms: one sperm fertilises the egg (→ embryo/zygote); a second sperm fertilises the polar nuclei (→ endosperm, the food reserve for the embryo).
+
+### Famous Indian botanists
+
+- **M.S. Swaminathan** — Father of the Indian Green Revolution (high-yield wheat varieties).
+- **Birbal Sahni** — pioneer of palaeobotany in India.
+- **J.C. Bose** — proved that plants respond to stimuli.
 
 ---
 
 \newpage
 
-# PART D — ANIMAL & HUMAN BIOLOGY (SYSTEMS)
+# PART D — HUMAN BODY SYSTEMS
 
-## Chapter D1 — Tissues (Animal)
+## Chapter D1 — Digestive System
 
-Four types:
-- **Epithelial** — linings & coverings.
-- **Connective** — blood, bone, cartilage, adipose.
-- **Muscular** — skeletal (striated, voluntary), smooth (non-striated, involuntary), cardiac (striated, involuntary).
-- **Nervous** — neurons + glia.
+The digestive tract runs about 9 metres from mouth to anus. Each section specialises.
 
-## Chapter D2 — Digestive System
+**Pathway**: Mouth → Pharynx → Oesophagus → Stomach → Small intestine (Duodenum → Jejunum → Ileum) → Large intestine (Caecum → Colon → Rectum) → Anus.
 
-### 🍽️ Pathway
+### Key enzymes
 
-Mouth → pharynx → oesophagus → stomach → small intestine (duodenum, jejunum, ileum) → large intestine (caecum, colon, rectum) → anus.
+| Source | Enzyme | Substrate → Product |
+|--------|--------|---------------------|
+| Saliva | Amylase (Ptyalin) | Starch → Maltose |
+| Stomach | Pepsin (+ HCl) | Proteins → Peptones |
+| Pancreas | Amylase | Starch → Maltose |
+| Pancreas | Lipase | Fats → Fatty acids + Glycerol |
+| Pancreas | Trypsin, Chymotrypsin | Proteins → Peptides |
+| Liver (via bile) | — | Emulsifies fats |
+| Small intestine | Maltase, Lactase, Sucrase | Disaccharides → Monosaccharides |
 
-### 🧪 Enzymes
+<div class="keypoint">
+<strong>Three digestive anatomy questions examiners love:</strong><br>
+"Largest gland in the body?" → <strong>Liver</strong><br>
+"Bile is stored in?" → <strong>Gall bladder</strong><br>
+"Main site of nutrient absorption?" → <strong>Small intestine</strong> (villi and microvilli maximise surface area to ~250 m²)<br>
+"Stomach acid pH?" → <strong>1.5–3.5</strong>
+</div>
 
-- **Saliva** — amylase (ptyalin) → starch → maltose.
-- **Stomach** — HCl + pepsin (protein digestion).
-- **Pancreas** — amylase, lipase, trypsin.
-- **Liver** — bile (emulsifies fats).
-- **Small intestine** — final digestion + absorption (~7 m long; villi increase surface area).
-- **Large intestine** — water absorption.
+## Chapter D2 — Respiratory System
 
-### 🎯 Exam hooks
-
-- "Largest gland?" → **Liver.**
-- "Bile stored in?" → **Gall bladder.**
-- "Enzyme in saliva?" → **Amylase (ptyalin).**
-- "Stomach acid pH?" → **1.5-3.5.**
-- "Length of small intestine?" → **~7 m.**
-- "Vit B12 absorbed in?" → **Terminal ileum (via intrinsic factor).**
-
-## Chapter D3 — Respiratory System
-
-### 🫁 Pathway
-
-Nose → pharynx → larynx → trachea → bronchi → bronchioles → alveoli.
+**Pathway**: Nose → Pharynx → Larynx → Trachea → Bronchi → Bronchioles → Alveoli.
 
 - ~300 million alveoli; surface area ~70 m².
-- **Diaphragm** + intercostal muscles drive breathing.
-- Normal adult: **12-20 breaths/min**; tidal volume ~500 ml.
-- O₂ carried by haemoglobin (4 sub-units, 4 O₂ each).
+- Diaphragm and intercostal muscles drive breathing.
+- Normal adult breathing rate: **12–18 per minute**; tidal volume ~500 mL.
+- O₂ transported mainly by **haemoglobin** (Hb); CO₂ transported mainly as **bicarbonate (HCO₃⁻)** (~70%).
 
-### 🎯 Exam hooks
+## Chapter D3 — Circulatory System
 
-- "Gaseous exchange site?" → **Alveoli.**
-- "CO₂ % in exhaled air?" → **~4% (vs 0.04% inhaled).**
-- "Oxygen carrier?" → **Haemoglobin.**
-- "CO₂ transport chief form?" → **Bicarbonate (~70%).**
+### The heart
 
-## Chapter D4 — Circulatory System
+- 4 chambers: 2 atria (upper) + 2 ventricles (lower).
+- Right heart: receives deoxygenated blood → pumps to lungs.
+- Left heart: receives oxygenated blood from lungs → pumps to body.
+- **Natural pacemaker**: SA node (sinoatrial node), located in right atrium.
+- Normal heart rate: 60–100 bpm; normal blood pressure: **120/80 mmHg**.
 
-### 🩸 Heart basics
+### Blood composition
 
-- 4 chambers: 2 atria + 2 ventricles.
-- **Right heart** → pulmonary (deoxygenated → lungs).
-- **Left heart** → systemic (oxygenated → body).
-- Normal pulse: 60-100 bpm (adults).
-- Normal BP: 120/80 mmHg.
-- Cardiac cycle ~0.8 sec.
+| Component | Amount | Function |
+|-----------|--------|----------|
+| **Plasma** | ~55% of blood | Transport medium; contains proteins, hormones |
+| **RBCs** | ~45%; 4–6 million/µL | O₂ transport via haemoglobin; no nucleus; lifespan 120 days |
+| **WBCs** | 4,000–11,000/µL | Immune defence |
+| **Platelets** | 150,000–450,000/µL | Clotting |
 
-### 🔴 Blood
+<div class="examtip">
+<strong>Blood group questions — 100% exam reliable:</strong><br>
+"Universal donor?" → <strong>O negative (O−)</strong> — no antigens on RBCs, no Rh factor<br>
+"Universal recipient?" → <strong>AB positive (AB+)</strong> — no anti-A or anti-B antibodies in plasma<br>
+"Who discovered blood groups?" → <strong>Karl Landsteiner</strong> (Nobel Prize 1930)<br>
+"Normal Hb: male/female?" → <strong>13–17 / 12–15.5 g/dL</strong>
+</div>
 
-- **55% plasma + 45% cells** (haematocrit).
-- **RBCs** — 4-6 million/μL; lifespan 120 days; no nucleus (in mammals); carry O₂.
-- **WBCs** — 4,000-11,000/μL; immunity.
-- **Platelets** — 150k-450k/μL; clotting.
-- **Blood groups** — ABO + Rh. **AB+** universal recipient; **O−** universal donor.
-- **Haemoglobin** normal: Male 13-17 g/dL; Female 12-15.5 g/dL.
+### WBC types (granulocytes + agranulocytes)
 
-### 🧬 WBC types
+| WBC | % | Function |
+|-----|---|----------|
+| Neutrophils | 60–70% | First responders to bacterial infection |
+| Lymphocytes | 20–40% | T cells (cellular immunity) + B cells (antibodies) |
+| Monocytes | 3–8% | Largest WBC; become macrophages |
+| Eosinophils | 1–4% | Parasites and allergic reactions |
+| Basophils | <1% | Histamine; smallest % |
 
-- **Neutrophils** (60-70%) — bacterial.
-- **Lymphocytes** (20-40%) — T/B cells.
-- **Monocytes** (3-8%) — macrophages.
-- **Eosinophils** (1-4%) — parasites/allergy.
-- **Basophils** (< 1%) — histamine.
+<div class="pitfall">
+Examiners trick students with: "Biggest WBC?" → <strong>Monocyte</strong>. "Smallest WBC?" → <strong>Lymphocyte</strong>. Many students confuse this with platelets, which are not WBCs at all.
+</div>
 
-### 🎯 Exam hooks
+## Chapter D4 — Nervous System
 
-- "Normal BP?" → **120/80 mmHg.**
-- "Universal donor?" → **O negative.**
-- "Biggest WBC?" → **Monocyte.**
-- "Smallest WBC?" → **Lymphocyte.**
-- "Heart's own pacemaker?" → **SA node (right atrium).**
-- "Blood cells made in?" → **Bone marrow.**
+### Divisions
 
-## Chapter D5 — Nervous System
+- **Central Nervous System (CNS)**: Brain + Spinal cord.
+- **Peripheral Nervous System (PNS)**: All nerves outside CNS.
+  - Somatic: voluntary muscles.
+  - Autonomic: involuntary (sympathetic = fight/flight; parasympathetic = rest/digest).
 
-### 🧠 Divisions
+### Brain regions
 
-```mermaid
-flowchart TD
-    NS[Nervous System]
-    CNS[Central NS<br/>Brain + Spinal cord]
-    PNS[Peripheral NS]
-    SOM[Somatic<br/>Voluntary]
-    ANS[Autonomic<br/>Involuntary]
-    SYM[Sympathetic<br/>Fight/Flight]
-    PSY[Parasympathetic<br/>Rest/Digest]
-    NS --> CNS
-    NS --> PNS
-    PNS --> SOM
-    PNS --> ANS
-    ANS --> SYM
-    ANS --> PSY
-```
+| Region | Function |
+|--------|----------|
+| **Cerebrum** | Largest part; thinking, memory, voluntary action, speech |
+| **Cerebellum** | Balance, coordination, posture |
+| **Medulla oblongata** | Controls breathing, heart rate, blood pressure |
+| **Hypothalamus** | Hunger, thirst, temperature regulation, sleep |
+| **Thalamus** | Sensory relay station |
 
-### 🧠 Brain parts
+<div class="keypoint">
+<strong>Nervous system exam essentials:</strong><br>
+"Largest part of brain?" → <strong>Cerebrum</strong><br>
+"Balance centre?" → <strong>Cerebellum</strong><br>
+"Hunger and thirst centre?" → <strong>Hypothalamus</strong><br>
+"Longest cell in the human body?" → <strong>Neuron</strong><br>
+"Speed of nerve impulse in myelinated fibre?" → <strong>~120 m/s</strong><br>
+Key neurotransmitters: acetylcholine, dopamine, serotonin, GABA, noradrenaline
+</div>
 
-- **Cerebrum** — thinking, memory, voluntary action (largest).
-- **Cerebellum** — balance, coordination.
-- **Medulla oblongata** — breathing, heart rate, BP.
-- **Hypothalamus** — thirst, hunger, temperature, sleep.
-- **Thalamus** — sensory relay.
+## Chapter D5 — Endocrine System
 
-### ⚡ Neuron
+| Gland | Hormone(s) | Function | Disorder |
+|-------|-----------|----------|----------|
+| **Pituitary** (anterior) | GH, TSH, ACTH, FSH, LH, Prolactin | "Master gland" — controls other glands | GH excess → Gigantism (child), Acromegaly (adult) |
+| **Pituitary** (posterior) | ADH (Vasopressin), Oxytocin | Water balance; uterine contraction | ADH deficiency → Diabetes insipidus |
+| **Thyroid** | T3, T4, Calcitonin | Metabolism; Ca regulation | Goitre (iodine deficiency); Grave's (hyper); Cretinism (hypo, child) |
+| **Parathyroid** | PTH | Raises blood calcium | Tetany (deficiency) |
+| **Adrenal medulla** | Adrenaline, Noradrenaline | Fight-or-flight response | — |
+| **Adrenal cortex** | Cortisol, Aldosterone | Stress; Na+/K+ balance | Cushing's (excess); Addison's (deficiency) |
+| **Pancreas (β-cells)** | Insulin | Lowers blood glucose | Diabetes mellitus Type 1 and 2 |
+| **Pancreas (α-cells)** | Glucagon | Raises blood glucose | — |
+| **Pineal** | Melatonin | Sleep-wake cycle | — |
+| **Thymus** | Thymosin | T-cell maturation | — |
 
-Dendrite → cell body → axon → synapse. **Myelin sheath** speeds conduction. **Schwann cells** produce myelin in PNS. **Neurotransmitters** (acetylcholine, dopamine, serotonin, GABA) cross synapse.
+<div class="examtip">
+<strong>Top endocrine exam questions:</strong><br>
+"Master gland?" → <strong>Pituitary</strong><br>
+"Goitre caused by?" → <strong>Iodine deficiency → enlarged thyroid</strong><br>
+"Largest endocrine gland?" → <strong>Thyroid</strong><br>
+"Fight-or-flight hormone?" → <strong>Adrenaline (Epinephrine)</strong><br>
+"Insulin deficiency → ?" → <strong>Diabetes mellitus</strong><br>
+"Love hormone / milk ejection?" → <strong>Oxytocin</strong>
+</div>
 
-### 🎯 Exam hooks
+## Chapter D6 — Excretory System
 
-- "Largest part of brain?" → **Cerebrum.**
-- "Balance centre?" → **Cerebellum.**
-- "Hunger/thirst centre?" → **Hypothalamus.**
-- "Longest cell in body?" → **Neuron.**
-- "Fastest signals in body travel via?" → **Myelinated axons (~120 m/s).**
+- **Kidneys** (2): each contains ~1 million nephrons.
+- **Nephron**: functional unit — glomerulus filters blood; Bowman's capsule collects filtrate; tubules reabsorb glucose, water, salts; Loop of Henle concentrates urine.
+- Urine: ~96% water + urea + uric acid + creatinine + salts. Yellow colour from **urochrome**.
+- Normal output: ~1.5 L/day.
+- Other excretory organs: lungs (CO₂), skin (salts + water via sweat), liver (bile pigments).
 
-## Chapter D6 — Endocrine System
+## Chapter D7 — Skeletal & Muscular System
 
-| Gland | Key hormones | Role |
-|-------|--------------|------|
-| Pituitary | GH, TSH, ACTH, FSH, LH, Oxytocin, ADH | "Master gland" |
-| Thyroid | T3, T4 (thyroxine), Calcitonin | Metabolism; needs iodine |
-| Parathyroid | PTH | Calcium |
-| Adrenal medulla | Adrenaline, noradrenaline | Fight/flight |
-| Adrenal cortex | Cortisol, Aldosterone | Stress, Na balance |
-| Pancreas (islets) | Insulin (β) / Glucagon (α) | Blood sugar |
-| Ovaries | Estrogen, Progesterone | Female reproduction |
-| Testes | Testosterone | Male |
-| Pineal | Melatonin | Sleep-wake |
-| Thymus | Thymosin | T-cell maturation |
+### Skeleton
 
-### 🎯 Exam hooks
+- Adult human: **206 bones** (infant has ~270; many fuse during development).
+- **Largest bone**: Femur (thigh).
+- **Smallest bone**: Stapes (middle ear).
+- **Hardest substance in body**: Tooth enamel.
+- Vertebral column: 33 vertebrae → fused to 26 in adults (7 cervical + 12 thoracic + 5 lumbar + sacrum + coccyx).
 
-- "Master gland?" → **Pituitary.**
-- "Goitre caused by?" → **Iodine deficiency → enlarged thyroid.**
-- "Diabetes type 1 = ?" → **Insulin deficiency (autoimmune).**
-- "Fight-or-flight hormone?" → **Adrenaline (epinephrine).**
-- "Largest endocrine gland?" → **Thyroid.**
+### Joints
 
-## Chapter D7 — Excretory System
+- Ball-and-socket: hip, shoulder (360° movement).
+- Hinge: knee, elbow (one plane).
+- Pivot: atlas–axis joint (rotation of head).
 
-- **Kidneys** (2) — ~1 million nephrons each. Produce urine.
-- **Urine** = 95% water + urea + salts + pigments.
-- Glomerulus filters; tubules reabsorb/secrete; loop of Henle concentrates.
-- Normal urine output: ~1.5 L/day.
-- **Dialysis** — artificial kidney (haemo / peritoneal).
-- Other excretory aids: lungs (CO₂), skin (sweat), liver (bile pigments).
+### Muscles
 
-### 🎯 Exam hooks
+| Type | Control | Structure | Example |
+|------|---------|-----------|---------|
+| Skeletal | Voluntary | Striated | Biceps, quadriceps |
+| Smooth | Involuntary | Non-striated | Walls of gut, blood vessels |
+| Cardiac | Involuntary | Striated | Heart wall — unique combination |
 
-- "Functional unit of kidney?" → **Nephron.**
-- "Urine yellow colour due to?" → **Urochrome.**
-- "Protein breakdown end product?" → **Urea.**
-
-## Chapter D8 — Skeletal & Muscular System
-
-- **Adult human bones:** **206** (infants ~270; some fuse).
-- **Largest bone:** femur.
-- **Smallest bone:** stapes (ear).
-- **Longest bone:** femur.
-- **Strongest bone:** femur (also jaw's enamel is hardest substance).
-- **Skull bones:** 22.
-- **Vertebrae:** 33 (fused to 26 in adult) — 7 cervical, 12 thoracic, 5 lumbar, sacrum (5 fused), coccyx (4 fused).
-- **Types of joints:** ball-and-socket (hip, shoulder), hinge (knee, elbow), pivot (atlas-axis), gliding, saddle.
-- **Types of muscles:** skeletal (voluntary, striated), smooth (involuntary, non-striated), cardiac.
-
-### 🎯 Exam hooks
-
-- "How many bones in adult?" → **206.**
-- "Smallest bone?" → **Stapes.**
-- "Biggest muscle?" → **Gluteus maximus.**
-- "Heart muscle type?" → **Cardiac (striated, involuntary).**
-
-## Chapter D9 — Immune System
-
-- **Innate immunity** — skin, mucous, phagocytes (fast, non-specific).
-- **Adaptive immunity** — T cells (cellular) + B cells (antibodies, humoral).
-- **Antibodies** = immunoglobulins: IgG (most abundant), IgM (first responder), IgA (mucosal), IgE (allergy), IgD.
-- **Vaccines** train adaptive immunity. Types: live attenuated, inactivated, subunit, toxoid, mRNA, DNA, vector, nasal.
-- **Herd immunity** — when enough of population is immune, pathogen can't spread.
-- **Autoimmune** — body attacks self (rheumatoid arthritis, lupus, type 1 diabetes, MS).
-
-### 🎯 Exam hooks
-
-- "First-responder antibody?" → **IgM.**
-- "Most abundant antibody?" → **IgG.**
-- "Allergy antibody?" → **IgE.**
-- "Vaccine concept pioneer?" → **Edward Jenner (smallpox, 1796).**
-- "BCG vaccine against?" → **Tuberculosis.**
-
-### 📝 Pause + recall
-
-1. List the 5 major WBC types and one job each.
-2. Name 3 master-gland hormones and what they trigger.
-3. How many bones in adult, and which are the smallest/largest?
+<div class="keypoint">
+<strong>Key muscle and bone facts:</strong><br>
+"Largest muscle?" → <strong>Gluteus maximus</strong><br>
+"Smallest muscle?" → <strong>Stapedius</strong> (controls stapes in ear)<br>
+"Strongest muscle (force/area)?" → <strong>Masseter</strong> (jaw)<br>
+"Cardiac muscle is unique because?" → It is <strong>involuntary AND striated</strong> — no other muscle is both.
+</div>
 
 ---
 
 \newpage
 
-# PART E — REPRODUCTION & DEVELOPMENT
+# PART E — NUTRITION: VITAMINS & MINERALS
 
-## Chapter E1 — Human Reproduction
+## Chapter E1 — Vitamins (Complete Table)
 
-### ♂️♀️ Organs
+| Vitamin | Chemical name | Sources | Deficiency disease |
+|---------|-------------|---------|-------------------|
+| **A** | Retinol / β-carotene | Carrot, liver, milk | **Night blindness**, xerophthalmia |
+| **B₁** | Thiamine | Whole grains, pulses | **Beri-beri** |
+| **B₂** | Riboflavin | Milk, eggs | Cheilosis, ariboflavinosis |
+| **B₃** | Niacin | Meat, peanuts | **Pellagra** (3 Ds: Dermatitis, Diarrhoea, Dementia) |
+| **B₅** | Pantothenic acid | Widely present | Burning feet syndrome |
+| **B₆** | Pyridoxine | Fish, poultry, banana | Anaemia |
+| **B₇** | Biotin | Egg yolk, nuts | Hair loss, skin rash |
+| **B₉** | Folic acid | Leafy greens | **Megaloblastic anaemia**; neural tube defects in foetus |
+| **B₁₂** | Cyanocobalamin | Meat, fish, dairy (animal sources only) | **Pernicious anaemia** |
+| **C** | Ascorbic acid | Amla, citrus, guava | **Scurvy** (bleeding gums, weak capillaries) |
+| **D** | Calciferol | Sunlight, fish liver oil | **Rickets** (children), **Osteomalacia** (adults) |
+| **E** | Tocopherol | Wheat germ, vegetable oils | Sterility |
+| **K** | Phylloquinone | Leafy greens, gut bacteria | **Excessive bleeding** (clotting failure) |
 
-- **Male:** testes (sperm + testosterone), epididymis, vas deferens, seminal vesicle, prostate, penis.
-- **Female:** ovaries (egg + estrogen/progesterone), fallopian tubes, uterus, cervix, vagina.
+<div class="examtip">
+<strong>The vitamin exam cheat sheet — learn these cold:</strong><br>
+Fat-soluble → <strong>A, D, E, K</strong> (stored in body fat; can accumulate to toxic levels)<br>
+Water-soluble → <strong>B-complex + C</strong> (excreted in urine; need daily intake)<br>
+Only vitamin NOT found in plants → <strong>B₁₂</strong> (vegans must supplement)<br>
+Vitamin made by skin + sunlight → <strong>D</strong><br>
+Blood clotting vitamin → <strong>K</strong><br>
+Scurvy → <strong>C</strong> | Night blindness → <strong>A</strong> | Rickets → <strong>D</strong> | Beri-beri → <strong>B₁</strong>
+</div>
 
-### 🥚 Menstrual Cycle (~28 days)
+## Chapter E2 — Essential Minerals
 
-1. **Menstrual phase** (days 1-5) — shedding.
-2. **Follicular phase** (1-13) — FSH → follicle matures; estrogen rises.
-3. **Ovulation** (~day 14) — LH surge releases egg.
-4. **Luteal phase** (15-28) — corpus luteum → progesterone.
-
-### 🤰 Pregnancy
-
-- ~**280 days (40 weeks)** from LMP.
-- Trimesters: T1 (1-12 wk), T2 (13-27), T3 (28-40).
-- Placenta = fetus-mother exchange.
-- Chromosomes: fetal karyotype 46, XX / XY.
-
-### 🎯 Exam hooks
-
-- "Human gestation?" → **~280 days.**
-- "Fertilisation site?" → **Fallopian tube (ampulla).**
-- "Implantation site?" → **Uterus.**
-- "Sex of baby determined by?" → **Father's sperm (X → girl, Y → boy).**
-
----
-
-\newpage
-
-# PART F — NUTRITION & VITAMINS
-
-## Chapter F1 — Macro & Micro Nutrients
-
-- **Carbohydrates** — 4 kcal/g (main fuel).
-- **Proteins** — 4 kcal/g (building).
-- **Fats** — 9 kcal/g (stored fuel).
-- **Water** — 60% body weight.
-
-### 🧪 Vitamins (full table)
-
-| Vitamin | Name | Deficiency | Source |
-|---------|------|-----------|--------|
-| A | Retinol | Night blindness, xerophthalmia | Carrot, liver |
-| B1 | Thiamine | Beriberi | Whole grains |
-| B2 | Riboflavin | Cheilosis | Milk, egg |
-| B3 | Niacin | Pellagra | Peanut, meat |
-| B5 | Pantothenic | Rare | Widely |
-| B6 | Pyridoxine | Anaemia | Fish, poultry |
-| B7 | Biotin | Hair/skin | Egg yolk |
-| B9 | Folic acid | Anaemia, neural tube defects | Leafy veg |
-| B12 | Cyanocobalamin | Pernicious anaemia | Animal only |
-| C | Ascorbic acid | Scurvy | Citrus, amla |
-| D | Calciferol | Rickets (child), osteomalacia (adult) | Sunlight |
-| E | Tocopherol | Rare (sterility?) | Veg oils |
-| K | Phylloquinone | Bleeding | Leafy greens |
-
-- **Fat-soluble:** A, D, E, K.
-- **Water-soluble:** B-complex & C.
-
-### 🎯 Exam hooks
-
-- "Vitamin made by skin + sunlight?" → **D (cholecalciferol).**
-- "Only vitamin not found in plants?" → **B12.**
-- "Scurvy → ?" → **Vitamin C (ascorbic acid).**
-- "Blood clotting vitamin?" → **K.**
-- "Night blindness?" → **Vitamin A.**
-
-## Chapter F2 — Minerals Quick
-
-- **Iron** → haemoglobin; deficiency → anaemia.
-- **Iodine** → thyroid; deficiency → goitre.
-- **Calcium** → bones, teeth; deficiency → rickets/osteoporosis.
-- **Phosphorus** → bones, ATP.
-- **Sodium** → fluid balance.
-- **Potassium** → nerve/muscle.
-- **Fluorine** → teeth (excess → fluorosis).
-- **Zinc** → enzymes; deficiency → immune issues.
-- **Magnesium** → muscle, enzyme cofactor.
-
-### 📝 Pause + recall
-
-1. All fat-soluble vitamins and one deficiency disease each.
-2. Why is B12 deficiency common in vegans?
-3. Iodised salt's public-health purpose.
+| Mineral | Function | Deficiency |
+|---------|----------|-----------|
+| **Iron** | Haemoglobin synthesis | **Anaemia** |
+| **Iodine** | Thyroid hormone synthesis | **Goitre** |
+| **Calcium** | Bones, teeth, muscle contraction | Rickets, osteoporosis |
+| **Phosphorus** | Bones, ATP, DNA | Rare |
+| **Sodium** | Fluid balance, nerve impulse | Hyponatraemia |
+| **Potassium** | Nerve and muscle function | Hypokalaemia |
+| **Fluorine** | Dental enamel hardening | Dental caries (deficiency); Fluorosis (excess) |
+| **Zinc** | Enzyme cofactor, immunity | Poor wound healing, immune deficiency |
 
 ---
 
 \newpage
 
-# PART G — DISEASES
+# PART F — DISEASES & IMMUNITY
 
-## Chapter G1 — Pathogens & Diseases
+## Chapter F1 — Disease Classification
 
-| Disease | Pathogen type | Agent |
-|---------|--------------|-------|
-| Malaria | Protozoan | *Plasmodium* (female Anopheles mosquito) |
-| Dengue | Virus | Aedes aegypti mosquito |
-| Chikungunya | Virus | Aedes mosquito |
-| Filariasis | Worm | Culex mosquito |
-| Kala-azar | Protozoan | Sand fly (Leishmania) |
-| Plague | Bacterium | Rat flea (Yersinia pestis) |
-| TB | Bacterium | Mycobacterium tuberculosis |
-| Leprosy | Bacterium | Mycobacterium leprae |
-| Cholera | Bacterium | Vibrio cholerae |
-| Typhoid | Bacterium | Salmonella typhi |
-| Diphtheria | Bacterium | Corynebacterium |
-| Tetanus | Bacterium | Clostridium tetani |
-| Polio | Virus | Poliovirus |
-| Measles | Virus | Measles virus |
-| Mumps | Virus | Mumps virus |
-| Rabies | Virus | Rabies (dog bite) |
-| HIV/AIDS | Retrovirus | HIV |
-| Hepatitis B | Virus | HBV |
-| COVID-19 | Virus | SARS-CoV-2 |
-| Ringworm | Fungus | Tinea |
-| Sickle-cell anaemia | Genetic | β-globin mutation |
-| Haemophilia | Genetic | Factor VIII/IX |
-| Colour blindness | Genetic | X-linked |
-| Down syndrome | Genetic | Trisomy 21 |
-| Diabetes | Metabolic | Insulin issue |
-| Scurvy | Deficiency | Vitamin C |
-| Rickets | Deficiency | Vitamin D |
+Every exam question about diseases falls into one of four categories: pathogen type, vector, vaccine, or elimination status.
 
-### 🎯 Exam hooks
+### Bacterial diseases
 
-- "Vector of malaria?" → **Female Anopheles mosquito.**
-- "Vector of dengue?" → **Aedes aegypti (day-biter).**
-- "TB caused by?" → **Mycobacterium tuberculosis.**
-- "AIDS virus type?" → **Retrovirus (RNA → DNA via reverse transcriptase).**
-- "Polio route of spread?" → **Oral-faecal; pulse polio = OPV.**
-- "First disease eradicated by vaccination?" → **Smallpox (1980 WHO declaration).**
+| Disease | Causative agent | Vaccine/treatment |
+|---------|----------------|------------------|
+| Tuberculosis (TB) | *Mycobacterium tuberculosis* | **BCG** vaccine |
+| Cholera | *Vibrio cholerae* | ORS; vaccine |
+| Typhoid | *Salmonella typhi* | TAB vaccine |
+| Plague | *Yersinia pestis* | Antibiotics; rat-flea vector |
+| Tetanus | *Clostridium tetani* | **DPT** vaccine |
+| Diphtheria | *Corynebacterium diphtheriae* | **DPT** vaccine |
+| Whooping cough | *Bordetella pertussis* | **DPT** vaccine |
+| Leprosy | *Mycobacterium leprae* | MDT (multi-drug therapy) |
 
-### 📝 Pause + recall
+### Viral diseases
 
-1. List 5 mosquito-borne diseases and the specific mosquito.
-2. Match 5 bacterial diseases to their organisms.
-3. Which diseases are now "eradicated" or "eliminated"?
+| Disease | Virus | Notes |
+|---------|-------|-------|
+| **Smallpox** | Variola | **Eradicated 1980** — first human disease ever eradicated |
+| **Polio** | Poliovirus | India polio-free since **27 March 2014**; OPV (Sabin) + IPV (Salk) |
+| Measles | Paramyxovirus | MMR vaccine |
+| AIDS | HIV (retrovirus) | First reported 1981; reverse transcriptase |
+| Dengue | DENV 1–4 | Vector: **female Aedes aegypti** (day-biter) |
+| Rabies | Rabies lyssavirus | Post-exposure vaccine; dog/bat bite |
+| COVID-19 | SARS-CoV-2 | Pandemic declared 11 March 2020 |
+| Hepatitis B | HBV | Blood/sexual transmission; vaccine available |
+
+### Protozoal & parasitic diseases
+
+| Disease | Pathogen | Vector |
+|---------|---------|--------|
+| **Malaria** | *Plasmodium* spp. | **Female Anopheles** mosquito |
+| Kala-azar | *Leishmania donovani* | Sand fly |
+| Sleeping sickness | *Trypanosoma* | Tsetse fly |
+| **Filariasis** | *Wuchereria bancrofti* | **Culex** mosquito |
+| Amoebiasis | *Entamoeba histolytica* | Faecal-oral |
+| Tapeworm | *Taenia* spp. | Undercooked pork/beef |
+
+<div class="examtip">
+<strong>Vector mapping — tested in EVERY paper:</strong><br>
+Malaria → Female <strong>Anopheles</strong><br>
+Dengue → Female <strong>Aedes aegypti</strong> (also Zika, Chikungunya)<br>
+Filariasis → <strong>Culex</strong><br>
+Kala-azar → <strong>Sand fly</strong><br>
+Plague → <strong>Rat flea</strong><br>
+Sleeping sickness → <strong>Tsetse fly</strong>
+</div>
+
+## Chapter F2 — Immunity
+
+The immune system has two arms. **Innate immunity** is the rapid, non-specific response: skin as a barrier, mucus, and phagocytes that eat any invader without needing prior exposure. **Adaptive immunity** is specific and has memory: B lymphocytes produce antibodies; T lymphocytes kill infected cells directly.
+
+### Antibodies (Immunoglobulins)
+
+| Class | Key fact |
+|-------|---------|
+| **IgG** | Most abundant; crosses placenta; main antibody of secondary response |
+| **IgM** | **First responder** — appears first after infection |
+| **IgA** | Found in saliva, tears, breast milk (mucosal immunity) |
+| **IgE** | Allergic reactions; parasites |
+| **IgD** | B-cell activation |
+
+### Vaccines
+
+| Vaccine | Disease |
+|---------|---------|
+| BCG | Tuberculosis |
+| OPV (Sabin) / IPV (Salk) | Polio |
+| MMR | Measles, Mumps, Rubella |
+| DPT | Diphtheria, Pertussis, Tetanus |
+| Hepatitis B | HBV |
+| HPV | Human papillomavirus (prevents cervical cancer) |
+
+<div class="keypoint">
+<strong>Vaccine history points examiners test:</strong><br>
+Concept of vaccination pioneered by → <strong>Edward Jenner</strong> (smallpox, 1796, using cowpox)<br>
+"First-responder antibody?" → <strong>IgM</strong><br>
+"Most abundant antibody?" → <strong>IgG</strong><br>
+"BCG stands for?" → Bacillus Calmette-Guérin<br>
+India's UIP (Universal Immunisation Programme) started → <strong>1985</strong>
+</div>
 
 ---
 
 \newpage
 
-# PART H — ECOLOGY & ENVIRONMENT
+# PART G — ECOLOGY & ENVIRONMENT
 
-## Chapter H1 — Ecology Basics
+## Chapter G1 — Ecosystem & Energy Flow
 
-- **Ecosystem** = community + non-living environment.
-- **Biotic** (living) + **abiotic** (non-living).
-- **Food chain** → **food web** → **trophic levels** (producer → primary consumer → secondary → tertiary → decomposer).
-- **10% rule** (Lindeman) — only 10% energy transferred to next level.
-- **Ecological pyramids** — number, biomass, energy. Energy pyramid always upright; number/biomass can invert.
+An **ecosystem** is a community of living organisms (biotic) interacting with the non-living environment (abiotic) in a defined area. It can be a pond, a forest, or the entire Earth (biosphere).
 
-### 🌿 Biodiversity
+### Energy flow rules
 
-- **Species diversity**, **genetic diversity**, **ecosystem diversity.**
-- **Hotspots** (globally 36); India has **4**: Western Ghats, Eastern Himalaya, Indo-Burma, Sundaland (Nicobar).
-- **IUCN categories:** Extinct → EW → CR → EN → VU → NT → LC.
-- **CITES** — international trade in endangered species treaty.
-- **Biodiversity Convention 1992** (Rio) → India's Biological Diversity Act 2002.
+- Flow is **one-directional**: Sun → Producers → Consumers → Decomposers. Energy cannot flow backwards.
+- **10% rule (Lindeman's law)**: Only 10% of energy at one trophic level transfers to the next. 90% is lost as heat. This limits food chains to 4–5 links.
+- **Trophic levels**: T1 = Producers (plants); T2 = Herbivores; T3 = Carnivores; T4 = Top predators. Decomposers operate at all levels.
 
-## Chapter H2 — Indian Wildlife & Conservation
+### Ecological pyramids
 
-### 🐅 National programmes
+| Pyramid type | Always upright? | Why can it invert? |
+|-------------|-----------------|-------------------|
+| Numbers | No | One tree supports millions of insects |
+| Biomass | No | Ocean: tiny phytoplankton support large fish biomass above |
+| **Energy** | **YES — always** | Energy always decreases at each level; never inverts |
 
-- **Project Tiger** (1973) — 55+ tiger reserves now.
-- **Project Elephant** (1992).
-- **Project Rhino, Dolphin, Lion** (Gir specific).
-- **Cheetah reintroduction** — Namibian + South African cheetahs to Kuno National Park (2022-23).
-- **Vulture Action Plan** (ban on diclofenac).
-- **Crocodile Conservation Project.**
+<div class="keypoint">
+The pyramid of <strong>energy</strong> is ALWAYS upright — this is the most tested ecological fact. The pyramids of numbers and biomass can invert (inverted pyramids are possible). If the question says "which pyramid is always upright?" — the answer is Energy.
+</div>
 
-### 🦁 National animals / symbols
+## Chapter G2 — Biodiversity
+
+**Three levels of biodiversity**: Genetic diversity, Species diversity, Ecosystem diversity.
+
+**Biodiversity hotspots** (globally 36; defined by >1,500 endemic plants AND >70% habitat lost):
+
+India has **4 hotspots**:
+1. Western Ghats (+ Sri Lanka)
+2. Eastern Himalayas (Indo-Burma)
+3. Indo-Burma (part overlapping NE India)
+4. Sundaland (Andaman & Nicobar Islands)
+
+**IUCN Red List categories** (most to least threatened):
+Extinct (EX) → Extinct in Wild (EW) → Critically Endangered (CR) → Endangered (EN) → Vulnerable (VU) → Near Threatened (NT) → Least Concern (LC)
+
+## Chapter G3 — Indian Wildlife & Conservation
+
+### Major conservation projects
+
+| Project | Year | Target |
+|---------|------|--------|
+| **Project Tiger** | 1973 | Bengal tiger; 55+ reserves |
+| **Project Elephant** | 1992 | Asian elephant |
+| **Project Crocodile** | 1975 | Mugger, saltwater, gharial |
+| **Cheetah reintroduction** | 2022 | Kuno National Park (Namibian + South African cheetahs) |
+| **Sea Turtle Project** | 1976 | Olive ridley turtles |
+
+### National symbols
 
 - National animal: **Bengal tiger** (since 1973).
-- National bird: **Indian peacock.**
+- National bird: **Indian peacock** (*Pavo cristatus*).
 - National aquatic animal: **Ganges river dolphin** (since 2009).
 - National heritage animal: **Elephant** (since 2010).
-- National tree: **Banyan.**
-- National flower: **Lotus.**
+- National tree: **Indian banyan** (*Ficus benghalensis*).
+- National flower: **Lotus** (*Nelumbo nucifera*).
 
-### 🏞️ Protected Area types
+### Protected areas in India
 
-- **National Park** (106, Apr 2026).
-- **Wildlife Sanctuary** (~570).
-- **Conservation Reserve.**
-- **Community Reserve.**
-- **Biosphere Reserve** (18; 12 in UNESCO's MAB).
-- **Tiger Reserve** under Project Tiger.
+- **National Parks**: ~106 (Jim Corbett was first, established 1936 as Hailey NP).
+- **Wildlife Sanctuaries**: ~570.
+- **Biosphere Reserves**: 18 (12 under UNESCO MAB programme).
+- **Largest National Park**: Hemis (Ladakh).
+- **Ramsar Sites** (wetlands): ~85 as of 2026.
 
-### 🎯 Exam hooks
-
-- "India's 1st National Park?" → **Hailey (now Jim Corbett), 1936.**
-- "Largest National Park?" → **Hemis (Ladakh).**
-- "Biosphere Reserves in India?" → **18 (12 under UNESCO MAB).**
-- "National aquatic animal?" → **Ganges river dolphin.**
-- "Ramsar Sites in India?" → **~85 as of 2026.**
-
-## Chapter H3 — Pollution & Climate
-
-(Cross-reference `chemistry.md` Part H & `sci_tech.md` Part F for details.)
-
-Key exam-ready nuggets:
-- **Greenhouse gases** in order of abundance in atmosphere: CO₂ > CH₄ > N₂O.
-- **In order of GWP**: SF₆ > N₂O > CH₄ > CO₂.
-- **Ozone hole** — over Antarctica; CFCs culprit; **Montreal Protocol 1987**.
-- **Kigali Amendment 2016** — HFCs.
-- **Acid rain** — SO₂ + NOₓ.
-- **Eutrophication** — nutrient runoff → algal bloom.
-- **Bio-magnification** — DDT, Hg in food chain.
-
-### 📝 Pause + recall
-
-1. 10% rule with a simple numerical example.
-2. India's 4 biodiversity hotspots.
-3. Order: Ext → EW → CR → EN → VU → NT → LC.
+<div class="examtip">
+<strong>Conservation questions — high hit rate:</strong><br>
+"India's first National Park?" → <strong>Jim Corbett</strong> (established 1936 as Hailey NP)<br>
+"Largest NP in India?" → <strong>Hemis (Ladakh)</strong><br>
+"CITES regulates?" → International trade in endangered species<br>
+"Biodiversity Act in India?" → <strong>2002</strong> (follows CBD 1992 Rio)
+</div>
 
 ---
 
 \newpage
 
-# APPENDICES
-
-## Appendix 1 — Human body trivia (memorise cold)
+# APPENDIX A — Human Body Trivia (Memorise Cold)
 
 | Fact | Value |
 |------|-------|
-| Bones (adult) | 206 |
+| Bones (adult) | **206** |
+| Bones (infant) | ~270 |
 | Muscles | ~640 |
 | Teeth (adult) | 32 |
-| Teeth (child) | 20 |
-| Organs | ~78 |
-| Cells | ~37 trillion |
-| Longest bone | Femur |
-| Smallest bone | Stapes |
+| Teeth (milk/deciduous) | 20 |
+| Largest bone | Femur |
+| Smallest bone | Stapes (middle ear) |
 | Largest organ | Skin |
 | Largest internal organ | Liver |
 | Largest gland | Liver |
 | Master gland | Pituitary |
 | Hardest substance | Tooth enamel |
-| Strongest muscle | Masseter (by force) / Glute (by size) |
-| Blood volume | 5-6 L |
-| Heart beats/day | ~1,00,000 |
-| Heartbeats/lifetime | ~2.5 billion |
-| Breaths/day | ~20,000 |
-| Body water | ~60% |
-| pH of blood | 7.35-7.45 |
-| Normal body temp | 37°C / 98.6°F |
+| Largest muscle | Gluteus maximus |
+| Smallest muscle | Stapedius |
+| Blood volume (adult) | 5–6 litres |
+| Heart beats per day | ~1,00,000 |
+| Normal body temperature | 37°C (98.6°F) |
 | Brain weight | ~1.4 kg |
-| Neurons | ~86 billion |
+| Neurons in brain | ~86 billion |
 | RBC lifespan | 120 days |
-| Platelet lifespan | 7-10 days |
-| WBC lifespan | 12-20 days |
-
-## Appendix 2 — Doctor / branch quick card
-
-| Branch | Study of |
-|--------|----------|
-| Cardiology | Heart |
-| Nephrology | Kidneys |
-| Hepatology | Liver |
-| Pulmonology | Lungs |
-| Neurology | Nervous system |
-| Oncology | Cancer |
-| Haematology | Blood |
-| Gastroenterology | Stomach/intestines |
-| Dermatology | Skin |
-| Ophthalmology | Eyes |
-| Otorhinolaryngology | ENT |
-| Orthopaedics | Bones/joints |
-| Pediatrics | Children |
-| Gerontology | Elderly |
-| Psychiatry | Mental health |
-| Pathology | Disease (general) |
-| Endocrinology | Hormones |
-| Rheumatology | Joints/autoimmune |
-| Urology | Urinary tract |
-
-## Appendix 3 — Mnemonics quick list
-
-- **MRS GREN** — life characteristics.
-- **KPCOFGS** — taxonomy (King Philip Came Over For Great Supper).
-- **AGAC-E-F** — plant hormones.
-- **ABO** — universal donor O−, universal recipient AB+.
-- **SCAM** (skeletal, cardiac, smooth... and autonomic) — muscle types.
-
-## Appendix 4 — Mind map
-
-```mermaid
-mindmap
-  root((Biology))
-    Foundations
-      Life(MRS GREN)
-      Taxonomy
-      Cell
-    Genetics
-      Mendel
-      DNA
-      Evolution
-    Plant
-      Photosynthesis
-      Hormones
-      Reproduction
-    Animal/Human
-      Digestion
-      Respiration
-      Circulation
-      Nervous
-      Endocrine
-      Excretion
-      Immunity
-      Musculoskeletal
-    Health
-      Vitamins
-      Diseases
-      Pathogens
-    Ecology
-      Biodiversity
-      Wildlife
-      Pollution
-```
+| Platelet lifespan | 7–10 days |
+| WBC lifespan | Hours to years (type-dependent) |
+| pH of blood | 7.35–7.45 |
 
 ---
 
-*For chemistry context, see `chemistry.md`. For instruments, see `physics.md`. For wildlife policy, see `environment.md`. Quiz pairings under `BIO_*`.*
+# APPENDIX B — Scientific Names (Examiner Favourites)
+
+| Common name | Scientific name |
+|-------------|----------------|
+| Human | *Homo sapiens* |
+| Tiger | *Panthera tigris* |
+| Lion | *Panthera leo* |
+| Leopard | *Panthera pardus* |
+| Cheetah | *Acinonyx jubatus* |
+| Indian elephant | *Elephas maximus* |
+| African elephant | *Loxodonta africana* |
+| Peacock | *Pavo cristatus* |
+| King cobra | *Ophiophagus hannah* |
+| Mango | *Mangifera indica* |
+| Rice | *Oryza sativa* |
+| Wheat | *Triticum aestivum* |
+| Maize | *Zea mays* |
+| Sugarcane | *Saccharum officinarum* |
+| Tea | *Camellia sinensis* |
+| Lotus | *Nelumbo nucifera* |
+| Banyan | *Ficus benghalensis* |
+| Neem | *Azadirachta indica* |
+| Tulsi | *Ocimum tenuiflorum* |
+| Onion | *Allium cepa* |
+
+---
+
+# APPENDIX C — Trap-Recognition Card
+
+| The Trap | The Truth |
+|----------|-----------|
+| Universal donor = O+ | NO → **O−** (the minus/Rh− is essential) |
+| Largest cell = neuron | NO → Ostrich egg is largest; neuron is longest |
+| Anopheles = dengue | NO → Anopheles = **malaria**; Aedes = dengue |
+| Insulin from α-cells | NO → **β-cells** (Islets of Langerhans) produce insulin |
+| Cardiac muscle is voluntary | NO → involuntary AND striated (unique) |
+| Vitamin D deficiency = rickets only | Also **osteomalacia** in adults |
+| Father of genetics = Darwin | NO → **Mendel**; Darwin = natural selection |
+| Bile produced by gall bladder | NO → bile PRODUCED by liver; STORED in gall bladder |
+| Largest endocrine gland = pituitary | NO → **Thyroid** is largest; pituitary is "master" |
+| Smallpox eradicated by DDT | NO → **vaccination** (Edward Jenner's principle) |
+
+---
+
+# APPENDIX D — 25-Question Mini-Mock
+
+Answer without looking. Check at the end.
+
+1. Powerhouse of the cell?
+2. Suicide bags?
+3. Father of genetics?
+4. Start codon?
+5. Universal blood donor group?
+6. Largest bone in body?
+7. Smallest bone?
+8. Largest gland?
+9. Master gland?
+10. Fight-or-flight hormone?
+11. Goitre caused by deficiency of?
+12. Vitamin for blood clotting?
+13. Vitamin that sunlight helps make?
+14. Only animal-source vitamin?
+15. Beri-beri vitamin?
+16. Vector of malaria?
+17. Vector of dengue?
+18. Vector of filaria?
+19. First disease eradicated by vaccination?
+20. India declared polio-free in?
+21. Balance centre of brain?
+22. Largest part of brain?
+23. Pyramid of energy — always upright?
+24. 10% rule in ecology means?
+25. India's biodiversity hotspots (how many)?
+
+**Answers**: 1. Mitochondria 2. Lysosomes 3. Mendel 4. AUG 5. O− 6. Femur 7. Stapes 8. Liver 9. Pituitary 10. Adrenaline 11. Iodine 12. K 13. D 14. B₁₂ 15. B₁ 16. Female Anopheles 17. Female Aedes aegypti 18. Culex 19. Smallpox (1980) 20. 2014 21. Cerebellum 22. Cerebrum 23. Yes — always 24. Only 10% energy passes to next trophic level 25. Four

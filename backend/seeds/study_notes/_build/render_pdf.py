@@ -105,17 +105,18 @@ HTML_TEMPLATE = """<!doctype html>
 """
 
 CSS = textwrap.dedent("""
-  @page { size: A4; margin: 18mm 16mm 18mm 16mm; }
+  @page { size: A4; margin: 18mm 16mm 22mm 16mm; }
 
   html, body {
     font-family: "DejaVu Sans", "Noto Sans", system-ui, sans-serif;
-    line-height: 1.5;
+    line-height: 1.55;
     color: #1f2937;
     font-size: 10.5pt;
   }
 
   body { margin: 0; }
 
+  /* ── Cover page ── */
   .cover {
     page-break-after: always;
     height: 100vh;
@@ -125,7 +126,6 @@ CSS = textwrap.dedent("""
     background: linear-gradient(135deg, #6c1d5f 0%, #1e3a8a 100%);
     color: #fff !important;
   }
-  /* Force ALL text on cover page to be white (overrides global h1/h2 colors) */
   .cover, .cover *,
   .cover h1, .cover h2, .cover h3, .cover h4,
   .cover .cover-title, .cover .cover-subtitle,
@@ -134,7 +134,6 @@ CSS = textwrap.dedent("""
     color: #ffffff !important;
     border-color: rgba(255,255,255,0.5) !important;
   }
-  /* Remove the dark border-bottom that h1 inherits from global rule */
   .cover h1, .cover .cover-title {
     border-bottom: none !important;
     padding-bottom: 0 !important;
@@ -163,24 +162,60 @@ CSS = textwrap.dedent("""
     text-align: left;
   }
 
+  /* ── PART divider pages ── */
+  .part-divider {
+    page-break-before: always;
+    page-break-after: always;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(150deg, #1e3a5f 0%, #0f2540 100%);
+    color: #fff;
+    text-align: center;
+  }
+  .part-divider-inner { max-width: 75%; }
+  .part-label {
+    font-size: 10pt;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 16pt;
+  }
+  .part-title {
+    font-size: 30pt;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 16pt 0;
+    color: #fff;
+    border: none;
+  }
+  .part-subtitle {
+    font-size: 13pt;
+    font-weight: 400;
+    opacity: 0.85;
+    font-style: italic;
+    color: #e0e7ff;
+  }
+
   .content { padding: 0; }
 
+  /* ── Headings ── */
   h1 {
     color: #6c1d5f;
     border-bottom: 2px solid #6c1d5f;
     padding-bottom: 4pt;
     margin-top: 8pt;
-    page-break-before: auto;
     page-break-after: avoid;
     font-size: 18pt;
   }
-  h2 { color: #0f4c75; margin-top: 10pt; margin-bottom: 4pt; font-size: 14pt; page-break-after: avoid; }
-  h3 { color: #1d4ed8; font-size: 12pt; margin-top: 8pt; margin-bottom: 3pt; page-break-after: avoid; }
+  h2 { color: #0f4c75; margin-top: 12pt; margin-bottom: 4pt; font-size: 14pt; page-break-after: avoid; }
+  h3 { color: #1d4ed8; font-size: 12pt; margin-top: 9pt; margin-bottom: 3pt; page-break-after: avoid; }
   h4 { color: #2563eb; font-size: 11pt; margin-top: 6pt; margin-bottom: 2pt; page-break-after: avoid; }
   p, li { orphans: 2; widows: 2; }
-  /* Keep heading + at least first paragraph together */
   h1 + *, h2 + *, h3 + *, h4 + * { page-break-before: avoid; }
 
+  /* ── Plain blockquote (narrative / italic aside) ── */
   blockquote {
     background: #fff7ed;
     border-left: 3px solid #f97316;
@@ -204,145 +239,208 @@ CSS = textwrap.dedent("""
   }
   pre code { background: none; padding: 0; }
 
+  /* ── Tables ── */
   table {
     border-collapse: collapse;
-    margin: 6pt 0;
+    margin: 8pt 0;
     width: 100%;
     font-size: 9.5pt;
-    /* Allow long tables to break across pages */
     page-break-inside: auto;
   }
-  /* Keep individual rows together (don't split a row across pages) */
-  table tr {
-    page-break-inside: avoid;
-    page-break-after: auto;
-  }
-  /* Repeat header row on each page when table breaks */
-  table thead {
-    display: table-header-group;
-  }
+  table tr { page-break-inside: avoid; page-break-after: auto; }
+  table thead { display: table-header-group; }
   table th, table td {
     border: 1px solid #94a3b8;
     padding: 4pt 7pt;
     text-align: left;
     vertical-align: top;
   }
-  table th { background: #e2e8f0; }
+  table th { background: #e2e8f0; font-weight: 600; }
+  /* Alternating row tint */
+  table tbody tr:nth-child(even) td { background: #f8fafc; }
 
   hr { border: 0; border-top: 1px dashed #94a3b8; margin: 14pt 0; }
 
-  /* ── Callout boxes ── */
+  /* ── Callout boxes — EPFO-style with labeled color header bars ── */
+  /* Shared rules for all labeled callout boxes */
+  .intuition, .definition, .formula, .worked, .examtip,
+  .keypoint, .mnemonic, .pitfall, .pyq {
+    border-radius: 4pt;
+    margin: 12pt 0;
+    overflow: hidden;
+    page-break-inside: avoid;
+  }
+  /* Shared ::before label bar */
+  .intuition::before, .definition::before, .formula::before,
+  .worked::before, .examtip::before, .keypoint::before,
+  .mnemonic::before, .pitfall::before, .pyq::before {
+    display: block;
+    padding: 4pt 12pt;
+    font-weight: 700;
+    font-size: 8pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 
-  /* Intuition / plain-English explanation (teal) */
+  /* Quick Recall (teal) */
   .intuition {
     background: #e6f7f5;
-    border-left: 4px solid #0d9488;
-    padding: 10pt 14pt;
-    margin: 12pt 0;
+    border: 1px solid #0d9488;
+    padding: 8pt 12pt;
     color: #134e4a;
-    border-radius: 0 4pt 4pt 0;
+  }
+  .intuition::before {
+    content: "\\2714  Quick Recall";
+    background: #0d9488;
+    margin: -8pt -12pt 8pt -12pt;
   }
   .intuition strong { color: #0f766e; }
 
-  /* Formal definition (indigo) */
+  /* Definition (indigo) */
   .definition {
     background: #eef2ff;
-    border-left: 4px solid #4f46e5;
-    padding: 10pt 14pt;
-    margin: 10pt 0;
+    border: 1px solid #4f46e5;
+    padding: 8pt 12pt;
     color: #1e1b4b;
-    border-radius: 0 4pt 4pt 0;
+  }
+  .definition::before {
+    content: "\\25B6  Definition";
+    background: #4f46e5;
+    margin: -8pt -12pt 8pt -12pt;
   }
   .definition strong { color: #3730a3; }
 
-  /* Key formula / theorem (purple) */
+  /* Formula / Key Points (purple) */
   .formula {
     background: #faf5ff;
-    border-left: 4px solid #7c3aed;
-    padding: 10pt 14pt;
-    margin: 10pt 0;
+    border: 1px solid #7c3aed;
+    padding: 8pt 12pt;
     color: #3b0764;
-    border-radius: 0 4pt 4pt 0;
+  }
+  .formula::before {
+    content: "\\25C6  Formula / Key Points";
+    background: #7c3aed;
+    margin: -8pt -12pt 8pt -12pt;
   }
   .formula strong { color: #6d28d9; }
 
-  /* Worked example (green) */
+  /* Worked Example (forest green) */
   .worked {
     background: #f0fdf4;
-    border-left: 4px solid #16a34a;
-    padding: 10pt 14pt;
-    margin: 10pt 0;
+    border: 1px solid #16a34a;
+    padding: 8pt 12pt;
     color: #14532d;
-    border-radius: 0 4pt 4pt 0;
+  }
+  .worked::before {
+    content: "\\270E  Worked Example";
+    background: #16a34a;
+    margin: -8pt -12pt 8pt -12pt;
   }
   .worked strong { color: #15803d; }
 
-  /* Exam tip (amber) */
+  /* Exam Alert (amber) */
   .examtip {
     background: #fffbeb;
-    border-left: 4px solid #d97706;
-    padding: 10pt 14pt;
-    margin: 10pt 0;
+    border: 1px solid #b45309;
+    padding: 8pt 12pt;
     color: #78350f;
-    border-radius: 0 4pt 4pt 0;
   }
-  .examtip strong { color: #b45309; }
+  .examtip::before {
+    content: "\\26A0  Exam Alert";
+    background: #b45309;
+    margin: -8pt -12pt 8pt -12pt;
+  }
+  .examtip strong { color: #92400e; }
 
-  /* Key insight / remember (sky blue) */
+  /* Key Fact (sky blue) */
   .keypoint {
     background: #f0f9ff;
-    border-left: 4px solid #0284c7;
-    padding: 10pt 14pt;
-    margin: 10pt 0;
+    border: 1px solid #0284c7;
+    padding: 8pt 12pt;
     color: #0c4a6e;
-    border-radius: 0 4pt 4pt 0;
+  }
+  .keypoint::before {
+    content: "\\2714  Key Fact";
+    background: #0284c7;
+    margin: -8pt -12pt 8pt -12pt;
   }
   .keypoint strong { color: #0369a1; }
 
-  /* Mnemonic / memory aid (green — kept) */
+  /* Mnemonic (medium green) */
   .mnemonic, blockquote.mnemonic {
     background: #f0fdf4;
-    border-left: 3px solid #22c55e;
+    border: 1px solid #16a34a;
     padding: 8pt 12pt;
-    margin: 10pt 0;
+    margin: 12pt 0;
     color: #14532d;
     font-style: normal;
+    overflow: hidden;
+    border-radius: 4pt;
+  }
+  .mnemonic::before, blockquote.mnemonic::before {
+    content: "\\25CE  Mnemonic";
+    display: block;
+    background: #16a34a;
+    color: #fff;
+    padding: 4pt 12pt;
+    margin: -8pt -12pt 8pt -12pt;
+    font-weight: 700;
+    font-size: 8pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
-  /* Common pitfall / trap (red — kept) */
+  /* Common Trap (red) */
   .pitfall, blockquote.pitfall {
     background: #fef2f2;
-    border-left: 4px solid #ef4444;
-    padding: 10pt 14pt;
-    margin: 10pt 0;
+    border: 1px solid #dc2626;
+    padding: 8pt 12pt;
+    margin: 12pt 0;
     color: #7f1d1d;
     font-style: normal;
-    border-radius: 0 4pt 4pt 0;
+    overflow: hidden;
+    border-radius: 4pt;
   }
-  .pitfall strong { color: #b91c1c; }
+  .pitfall::before, blockquote.pitfall::before {
+    content: "\\2715  Common Trap";
+    display: block;
+    background: #dc2626;
+    color: #fff;
+    padding: 4pt 12pt;
+    margin: -8pt -12pt 8pt -12pt;
+    font-weight: 700;
+    font-size: 8pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .pitfall strong, blockquote.pitfall strong { color: #b91c1c; }
 
-  /* PYQ / exam-style question (blue — kept) */
+  /* PYQ / Exam Question (blue) */
   .pyq {
     background: #eff6ff;
-    border-left: 3px solid #3b82f6;
+    border: 1px solid #3b82f6;
     padding: 6pt 10pt;
-    margin: 10pt 0;
-    font-size: 10pt;
     color: #1e3a8a;
+    font-size: 10pt;
+  }
+  .pyq::before {
+    content: "\\25C7  Exam-Style Question";
+    background: #3b82f6;
+    margin: -6pt -10pt 6pt -10pt;
   }
 
   img, svg { max-width: 100%; height: auto; }
   .mermaid { text-align: center; margin: 12pt 0; }
 
-  /* page break controls */
+  /* ── Page break controls ── */
   h1 { page-break-before: always; }
   h1:first-of-type { page-break-before: avoid; }
-  /* Tables — allow break inside long tables; only avoid for short tables (controlled inline) */
-  pre, blockquote, .mermaid { page-break-inside: avoid; }
+  pre, .mermaid { page-break-inside: avoid; }
+  blockquote { page-break-inside: avoid; }
   table { page-break-inside: auto; }
   table tr { page-break-inside: avoid; page-break-after: auto; }
   table thead { display: table-header-group; }
-  /* Prevent orphan headings */
   h1 + h2, h2 + h3, h3 + h4 { page-break-before: avoid; margin-top: 8pt; }
 """)
 
@@ -437,6 +535,24 @@ def render_pdf(
         f'<span class="tag">{html.escape(t)}</span>' for t in exam_tags
     )
 
+    # Dynamic per-book page footer (title + page number + verification year)
+    footer_title = title.replace('"', '\\"').replace("\\", "\\\\")
+    footer_css = (
+        f"@page {{\n"
+        f"  @bottom-center {{\n"
+        f"    content: \"{footer_title}  ·  Page \" counter(page) \"  ·  Verified 2026\";\n"
+        f"    font-size: 7.5pt;\n"
+        f"    color: #6b7280;\n"
+        f"    font-family: 'DejaVu Sans', sans-serif;\n"
+        f"    border-top: 0.5pt solid #e5e7eb;\n"
+        f"    padding-top: 3pt;\n"
+        f"  }}\n"
+        f"}}\n"
+        f"@page:first {{\n"
+        f"  @bottom-center {{ content: \"\"; }}\n"
+        f"}}\n"
+    )
+
     # Use local Mermaid.js (CDN may be unavailable in headless environment)
     local_mermaid = SCRIPT_DIR / "lib" / "mermaid.min.js"
     mermaid_uri = local_mermaid.as_uri() if local_mermaid.exists() else "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"
@@ -446,7 +562,7 @@ def render_pdf(
         subtitle_html=html.escape(subtitle),
         exam_tags_html=tag_html,
         version_html=html.escape(version),
-        css=CSS,
+        css=CSS + footer_css,
         body_html=body_html,
         mermaid_js_uri=mermaid_uri,
     )

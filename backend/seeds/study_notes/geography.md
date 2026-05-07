@@ -6,15 +6,47 @@ version: "2026-04"
 documentclass: book
 ---
 
+# EXAMINER BLUEPRINT — What Gets Tested Most
+
+Geography in competitive exams splits into two zones: **physical geography** (earth's structure, atmosphere, rivers, climate, soils) and **Indian geography** (states, rivers, national parks, minerals, ports, passes). Examiners lean heavily on Indian geography, where factual precision matters most.
+
+<div class="examtip">
+
+**Top 8 geography exam hotspots**
+
+1. **India's rivers** — which rivers flow east vs west, which originate in which mountain range, which drain into which sea, important dams. Appears in every SSC, RRB, and Banking exam.
+2. **States: superlatives** — largest/smallest by area and population, longest coastline, wettest/driest, highest peak. Classic 1-mark questions.
+3. **National Parks and Wildlife Sanctuaries** — first NP, only floating NP, Project Tiger reserves, UNESCO sites. Examiners love these.
+4. **Climate and Monsoon** — types of monsoon, winter rain (NE monsoon vs Western disturbances), Cherrapunji vs Mawsynram.
+5. **Soils of India** — black soil (cotton), red soil, laterite soil (not fertile), alluvial soil (most fertile, most extensive).
+6. **Minerals and their states** — coal (Jharkhand, Odisha, WB), iron ore (Odisha, Jharkhand, Karnataka), mica (Rajasthan), bauxite (Odisha), petroleum (Assam, Gujarat, Rajasthan, Mumbai High).
+7. **Passes** — Khyber, Bolan, Zoji La, Nathu La, Shipki La — which connects which.
+8. **World geography superlatives** — longest river, highest peak, largest desert, deepest lake, largest ocean. Guaranteed 2–3 marks.
+
+</div>
+
+<div class="keypoint">
+
+**Study priority for time-poor students**
+
+1. India's rivers — east vs west flowing, origins, dams
+2. State superlatives (area, population, coastline)
+3. Soils of India — 4 types + which crop grows in which
+4. National Parks — first, largest, only floating, biosphere reserves
+5. Minerals — where each major mineral is found
+6. Monsoon — branches, onset dates, withdrawal dates
+7. World superlatives — 10 key facts
+8. Passes — 5–6 key ones connecting India to neighbours
+
+</div>
+
+---
+
 # How To Use This Book
 
-The same 15 pedagogy techniques used in the Polity + History books apply
-here (see the Polity book's opening chapter for the full description). In
-particular, **Geography rewards visual memory**. You cannot remember the
-monsoon without a picture of the Bay of Bengal branch curving up into
-Assam; you cannot remember the southern peninsula's rivers without a map
-in your head with Godavari flowing east and Narmada flowing west. Build
-that map — the rest follows.
+Geography rewards **visual memory** above all. You cannot remember the monsoon without a mental picture of the Bay of Bengal branch curving up into Assam; you cannot remember the southern peninsula's rivers without a map in your head with Godavari flowing east and Narmada flowing west. Build that mental map — the rest follows.
+
+Keep a physical map of India visible while reading this book. Trace each river, each state border, each mountain range with your finger as you read about it. The physical act of tracing locks location into memory far better than reading alone.
 
 This book moves **outward → inward**:
 
@@ -104,7 +136,7 @@ of long-period comets.
 - **Lunar eclipse** — full moon passes into earth's shadow (Moon reddens —
   "blood moon" via Rayleigh scattering).
 
-### 1.5 🎯 Exam hooks
+### 1.5 Exam hooks
 
 - Order of planets — MVEMJSUN mnemonic.
 - **Mercury** smallest; **Jupiter** largest; **Venus** hottest (runaway
@@ -170,7 +202,7 @@ graph LR
 - **Coal → Graphite → Diamond**
 - **Basalt → Amphibolite**
 
-### 2.3 🎯 Exam hooks
+### 2.3 Exam hooks
 
 - Moho = crust/mantle; Gutenberg = mantle/outer core; Lehmann = outer/inner
   core.
@@ -262,7 +294,7 @@ spewed ~500,000 km² of basalt; possibly contributed (alongside Chicxulub
 asteroid) to the **K-Pg mass extinction** that killed the non-avian
 dinosaurs.
 
-### 3.5 🎯 Exam hooks
+### 3.5 Exam hooks
 
 - Wegener (1912) — Continental Drift.
 - Plate Tectonics formalised 1968.
@@ -378,7 +410,7 @@ also coastal AP + Rayalaseema + Karaikal + S. Kerala. Rest of India is dry.
   strengthens monsoon; negative phase weakens.
 - **MJO** (Madden-Julian Oscillation) — eastward-moving tropical convection.
 
-### 4.4 🎯 Exam hooks
+### 4.4 Exam hooks
 
 - Troposphere has 75% of atmosphere's mass.
 - **Ozone layer** is in **stratosphere**, 20–35 km.
@@ -434,7 +466,7 @@ current off Peru drives fisheries + rainfall patterns.
 **India's tidal stations**: Kandla (Gulf of Kutch — highest tidal range in
 India, ~7 m); Okha, Mumbai, Haldia, Paradip, Chennai, Vizag, Cochin, Tuticorin.
 
-### 5.4 🎯 Exam hooks
+### 5.4 Exam hooks
 
 - Deepest = Challenger Deep (Mariana, Pacific), 10,984 m.
 - Largest = Pacific.
@@ -482,7 +514,7 @@ Starting clockwise from W:
 
 Maritime: Sri Lanka (**Palk Strait**), Maldives.
 
-### 6.3 🎯 Exam hooks
+### 6.3 Exam hooks
 
 - IST longitude = **82°30'E** (Mirzapur).
 - Tropic of Cancer crosses **8 states**.
@@ -590,7 +622,7 @@ Karnataka + Kerala (**Doddabetta** = Nilgiri's highest, 2,637 m).
 - Indira Gandhi Canal (from Sutlej + Beas at Harike barrage) greening parts
   of Thar.
 
-### 7.7 🎯 Exam hooks
+### 7.7 Exam hooks
 
 - **Kanchenjunga** (8,586 m, Sikkim) = India's highest peak.
 - **Anamudi** (Kerala, 2,695 m) = highest peak of peninsular India.
@@ -640,6 +672,16 @@ graph TD
 
 ### 8.3 Peninsular rivers
 
+<div class="pitfall">
+
+**East-flowing vs West-flowing rivers — the classic trap**
+
+The vast majority of peninsular rivers flow EAST into the Bay of Bengal (Godavari, Krishna, Cauvery, Mahanadi). Only a few flow WEST into the Arabian Sea. Remember the **west-flowing exceptions**: Narmada, Tapi, Sabarmati, Mahi, Luni, Periyar. These flow through rift valleys between the Vindhyas and Satpuras (Narmada, Tapi) or through Gujarat (Sabarmati, Mahi). Since they flow through rift valleys (not normal river valleys), they form estuaries — not deltas.
+
+Mnemonic: **"NTSML"** = Narmada, Tapi, Sabarmati, Mahi, Luni — the five main west-flowing peninsular rivers.
+
+</div>
+
 **East-flowing (to Bay of Bengal; deltas)**:
 - **Godavari** — 1,465 km, **longest Peninsular river + longest entirely within
   India**. Source: **Trimbak, Nashik** (MH). "Dakshina Ganga."
@@ -666,7 +708,7 @@ Allocates:
 
 Most resilient cross-border water treaty — survived 3 wars.
 
-### 8.5 🎯 Exam hooks
+### 8.5 Exam hooks
 
 - Ganga source = **Gangotri / Devprayag**.
 - Yamuna source = **Yamunotri**.
@@ -712,7 +754,7 @@ graph LR
 5. **Bsh** — Semi-arid (Rajasthan + parts of peninsular rain-shadow).
 6. **ET / H** — Tundra / alpine (Himalayas).
 
-### 9.3 🎯 Exam hooks
+### 9.3 Exam hooks
 
 - SW monsoon = **75% of annual rain**.
 - NE monsoon = most rain for **Tamil Nadu** + coastal AP.
@@ -738,7 +780,22 @@ graph LR
 **Also**: Saline / Alkaline (Reh — Punjab, Haryana); Peaty + Marshy (Kerala
 Kuttanad, Sundarbans).
 
-### 10.1 🎯 Exam hooks
+### 10.1 Exam hooks
+
+<div class="examtip">
+
+**Soils of India — the 4-type table every exam asks about**
+
+| Soil | Where found | Key crop | Special feature |
+|---|---|---|---|
+| **Alluvial** | Indo-Gangetic plains, river deltas, coastal plains | Wheat, rice, sugarcane | Most extensive + most fertile |
+| **Black (Regur)** | Deccan Plateau, Maharashtra, MP, Karnataka | **Cotton** | Self-ploughing (cracks in summer); derived from Deccan basalt; retains moisture |
+| **Red and Yellow** | Odisha, Chhattisgarh, Eastern MP, South India | Millets, groundnut | Iron oxide = red colour; porous, less fertile |
+| **Laterite** | Western Ghats slopes, NE India, Tamil Nadu hills | Tea, coffee, cashew | Heavy rainfall leaches nutrients; poor fertility; good for plantation crops |
+
+Khadar = new alluvium (lighter, sandy, near river banks) · Bhangar = old alluvium (darker, calcareous nodules, farther from river)
+
+</div>
 
 - **Alluvial** = most widespread + most fertile.
 - **Black soil** = best for **cotton**; self-ploughing (cracks in summer);
@@ -809,7 +866,7 @@ Kuttanad, Sundarbans).
 - **Silver Revolution** — eggs.
 - **Rainbow Revolution** — holistic agri growth.
 
-### 12.4 🎯 Exam hooks
+### 12.4 Exam hooks
 
 - India is world's **#1 in MILK, PULSES, JUTE, COTTON, SPICES, BANANA,
   MANGO**.
@@ -882,7 +939,7 @@ Kuttanad, Sundarbans).
 - **Ports** — 13 major + 200+ minor. **JNPT Mumbai** (container) + **Mundra**
   (private, Adani) + **Paradip** (Odisha) + **Kandla** (Gujarat).
 
-### 14.3 🎯 Exam hooks
+### 14.3 Exam hooks
 
 - First railway = **1853, Bombay-Thane**.
 - **Indian Railways** = world's 4th largest, Asia's largest network.
@@ -928,7 +985,7 @@ graph TD
     B --> D[Deserts — Sahara, Thar, Arabian, Kalahari, Atacama, Gobi, Australian]
 ```
 
-### 16.1 🎯 Exam hooks
+### 16.1 Exam hooks
 
 - **Prairies** = N America grasslands; **Pampas** = Argentina; **Steppes** =
   Russia; **Veld** = S Africa; **Downs** = Australia; **Llanos** = Venezuela
@@ -998,3 +1055,820 @@ Islands, Lakshadweep, Dadra-Nagar-Haveli+Daman-Diu, Ladakh (5 without).
 
 *Parts C (oceans in detail), world countries' capitals, world cities +
 resources will be added in subsequent revisions of this file.*
+
+---
+
+\newpage
+
+# PART X — STATES OF INDIA — COMPLETE TABLE
+
+| State | Capital | Formed | Lok Sabha seats | Rajya Sabha | Notable |
+|---|---|---|---|---|---|
+| Andhra Pradesh | Amaravati (de facto Vizag/Kurnool tri-capital) | 1 Nov 1956 (re-org 2 Jun 2014) | 25 | 11 | Telugu speaking |
+| Arunachal Pradesh | Itanagar | 20 Feb 1987 (UT 1972) | 2 | 1 | "Land of the rising sun" |
+| Assam | Dispur | 26 Jan 1950 | 14 | 7 | Brahmaputra valley |
+| Bihar | Patna | 26 Jan 1950 | 40 | 16 | Magadha heritage |
+| Chhattisgarh | Raipur | 1 Nov 2000 | 11 | 5 | Carved out of MP |
+| Goa | Panaji | 30 May 1987 | 2 | 1 | Smallest state by area |
+| Gujarat | Gandhinagar | 1 May 1960 | 26 | 11 | Coastline 1,600 km (longest of any state) |
+| Haryana | Chandigarh (shared with Punjab) | 1 Nov 1966 | 10 | 5 | Carved out of Punjab |
+| Himachal Pradesh | Shimla (winter Dharamshala) | 25 Jan 1971 | 4 | 3 | Hill state |
+| Jharkhand | Ranchi | 15 Nov 2000 | 14 | 6 | Mineral rich |
+| Karnataka | Bengaluru | 1 Nov 1956 | 28 | 12 | IT capital |
+| Kerala | Thiruvananthapuram | 1 Nov 1956 | 20 | 9 | Highest literacy |
+| Madhya Pradesh | Bhopal | 1 Nov 1956 | 29 | 11 | Largest state (after split) |
+| Maharashtra | Mumbai (winter Nagpur) | 1 May 1960 | 48 | 19 | Largest LS share |
+| Manipur | Imphal | 21 Jan 1972 | 2 | 1 | Loktak Lake |
+| Meghalaya | Shillong | 21 Jan 1972 | 2 | 1 | "Abode of clouds"; Mawsynram wettest |
+| Mizoram | Aizawl | 20 Feb 1987 | 1 | 1 | Highest literacy in NE |
+| Nagaland | Kohima | 1 Dec 1963 | 1 | 1 | 16+ tribes |
+| Odisha | Bhubaneswar | 1 Apr 1936 | 21 | 10 | Cyclone-prone |
+| Punjab | Chandigarh (shared) | 1 Nov 1966 | 13 | 7 | 5-river land |
+| Rajasthan | Jaipur | 30 Mar 1949 | 25 | 10 | Largest state by area |
+| Sikkim | Gangtok | 16 May 1975 (22nd state) | 1 | 1 | Khangchendzonga |
+| Tamil Nadu | Chennai | 26 Jan 1950 | 39 | 18 | Coromandel coast |
+| Telangana | Hyderabad | 2 Jun 2014 (29th state) | 17 | 7 | Carved from AP |
+| Tripura | Agartala | 21 Jan 1972 | 2 | 1 | 3rd smallest |
+| Uttar Pradesh | Lucknow | 26 Jan 1950 | 80 | 31 | **Most populous; max LS + RS seats** |
+| Uttarakhand | Dehradun (winter); Gairsain (summer 2020) | 9 Nov 2000 | 5 | 3 | Devbhoomi |
+| West Bengal | Kolkata | 26 Jan 1950 | 42 | 16 | Sundarbans |
+
+## 8 Union Territories
+
+| UT | Capital | Special |
+|---|---|---|
+| Delhi (NCT) | New Delhi | LS 7, RS 3; Art 239AA; LG + CM |
+| J&K | Srinagar (summer) / Jammu (winter) | LS 5, RS 4; UT since 31 Oct 2019; LG + CM |
+| Ladakh | Leh + Kargil | LS 1; UT since 31 Oct 2019; LG only |
+| Puducherry | Puducherry | LS 1, RS 1; LG + CM |
+| Chandigarh | Chandigarh | shared capital Punjab+Haryana |
+| Andaman & Nicobar | Port Blair (renamed Sri Vijaya Puram, 2024) | LS 1; LG only |
+| Dadra & Nagar Haveli + Daman & Diu | Daman | merged 26 Jan 2020 |
+| Lakshadweep | Kavaratti | smallest UT; LS 1 |
+
+> **Memory peg.** UP = max LS (80) + RS (31). Sikkim, Mizoram, Nagaland = 1 LS each. Goa & Sikkim = smallest by area (Goa) / 2nd-smallest (Sikkim).
+
+---
+
+\newpage
+
+# 🏔️ PART Y — MOUNTAINS, RIVERS, LAKES, SOILS
+
+## Major Indian mountains + peaks
+
+| Range | Highest peak | State | Notes |
+|---|---|---|---|
+| Greater Himalayas (Himadri) | **Kanchenjunga** 8,586 m | Sikkim | Highest in India; 3rd in world |
+| Trans-Himalaya (Karakoram) | **K2 (Godwin Austen)** 8,611 m | PoK / Gilgit | World's 2nd; not in present India |
+| Greater Himalayas | Nanda Devi 7,816 m | Uttarakhand | 2nd in India proper |
+| Lesser Himalayas (Himachal) | Nag Tibba | UP/HP | Pir Panjal, Dhauladhar, Mahabharat |
+| Outer Himalayas (Shivaliks) | — | foothills | Bhabar, Terai zone |
+| Eastern Himalayas | Namcha Barwa 7,782 m | Arunachal | |
+| Aravalli | **Guru Shikhar** 1,722 m | Mt. Abu, Rajasthan | Oldest fold mountains in world |
+| Vindhyas | Kalumar 752 m | MP | |
+| Satpura | Dhupgarh 1,350 m | Pachmarhi, MP | |
+| Western Ghats (Sahyadri) | **Anamudi** 2,695 m | Kerala | UNESCO; biodiversity hotspot |
+| Eastern Ghats | **Arma Konda** 1,680 m | AP | discontinuous |
+| Nilgiris | Doddabetta 2,637 m | TN | meeting of Western & Eastern Ghats |
+| Annamalai Hills | Anamudi | Kerala/TN | |
+| Cardamom Hills | Agastya Mala | Kerala | |
+| Garo-Khasi-Jaintia | Shillong Peak 1,961 m | Meghalaya | Mawsynram + Cherrapunji |
+| Patkai-Bum | — | Nagaland-Manipur-Mizoram-Arunachal | NE border |
+
+## Major Indian rivers
+
+| River | Length (km) | Origin | Mouth | Tributaries (key) |
+|---|---|---|---|---|
+| **Indus (Sindhu)** | 3,180 (320 in India) | Mansarovar (Tibet) | Arabian Sea (Pakistan) | Jhelum, Chenab, Ravi, Beas, Sutlej |
+| **Ganga** | 2,525 | Gangotri (Bhagirathi + Alaknanda meet at Devprayag) | Bay of Bengal (Sundarbans) | Yamuna, Son, Ramganga, Gomti, Ghaghra, Gandak, Kosi, Damodar (RHS = right-hand-side: Yamuna, Son; LHS: rest) |
+| Yamuna | 1,376 | Yamunotri | Allahabad (joins Ganga) | Chambal, Sind, Betwa, Ken |
+| Brahmaputra | 2,900 (916 in India) | Mansarovar (Tibet — "Tsangpo") | Bay of Bengal (Bangladesh — joins Ganga as Padma) | Subansiri, Manas, Lohit, Dhansiri, Teesta |
+| **Godavari** | 1,465 | Triambak (MH) | Bay of Bengal (AP) | Penganga, Wardha, Indravati, Sabari — **largest peninsular river** |
+| **Krishna** | 1,400 | Mahabaleshwar (MH) | Bay of Bengal (AP) | Bhima, Tungabhadra, Koyna, Musi, Malaprabha, Ghatprabha |
+| Cauvery | 800 | Talakaveri (KA, Brahmagiri) | Bay of Bengal (Poompuhar, TN) | Hemavati, Kabini, Bhavani, Amaravati |
+| Mahanadi | 858 | Sihawa (Chhattisgarh) | Bay of Bengal (Odisha) | Hirakud Dam (longest dam) |
+| Narmada | 1,312 | Amarkantak (MP) | **Arabian Sea** (Bharuch, GJ) | flows through rift valley |
+| Tapi (Tapti) | 724 | Multai (MP) | Arabian Sea (Surat, GJ) | flows in rift valley |
+| Sabarmati | 371 | Aravalli (Rajasthan) | Gulf of Khambat | Ahmedabad |
+| Mahi | 583 | Vindhyas (MP) | Gulf of Khambat | crosses Tropic of Cancer twice |
+| Subarnarekha | 395 | Chota Nagpur (Jharkhand) | Bay of Bengal | small but significant |
+| Periyar | 244 | Sivagiri (Kerala) | Arabian Sea | longest river of Kerala |
+| Luni | 495 | Aravalli | Rann of Kachchh | only river of Thar; ends in marsh |
+| Damodar | 592 | Chota Nagpur | Hooghly (WB) | "Sorrow of Bengal" earlier |
+| Teesta | 414 | Sikkim | joins Brahmaputra (Bangladesh) | |
+
+> **Peninsular rivers flowing west to Arabian Sea:** Narmada, Tapi, Sabarmati, Mahi, Periyar, Luni — REST flow east.
+
+## Lakes (largest / famous)
+
+| Lake | State | Type / note |
+|---|---|---|
+| **Wular** | J&K | Largest freshwater lake in India |
+| Dal | J&K | Famous tourist lake |
+| **Chilika** | Odisha | **Largest brackish/saltwater lake in India**; Ramsar |
+| Pulicat | AP/TN | 2nd largest brackish |
+| **Vembanad** | Kerala | Longest lake in India (96 km); Ramsar |
+| Sambhar | Rajasthan | Largest inland salt lake |
+| Lonar | MH | Crater lake (meteoric) |
+| Loktak | Manipur | Floating phumdis; Keibul Lamjao only floating NP |
+| Hussain Sagar | Telangana | Buddha statue, Hyderabad |
+| Pangong Tso | Ladakh | High-altitude saline lake; partially in China |
+| Tso Moriri | Ladakh | High altitude (4,522 m) |
+| Kolleru | AP | Largest freshwater lake in AP |
+| Bhopal Upper Lake (Bada Talab) | MP | Built by Raja Bhoj (11c) |
+| Nakki | Mt. Abu, Rajasthan | Hill lake |
+| Naini | Uttarakhand | Crescent-shaped |
+| Roopkund | Uttarakhand | "Skeleton lake" |
+| Khecheopalri | Sikkim | Sacred to Buddhists + Hindus |
+
+## Indian soils (8 types)
+
+| Soil | Region | Crops | Note |
+|---|---|---|---|
+| **Alluvial** | Indo-Gangetic plain | rice, wheat, sugarcane | Most widespread (~40% land); fertile |
+| **Black (Regur)** | Deccan trap (MH, MP, GJ, KA) | **cotton**, sugarcane, jowar | Self-ploughing, retains moisture; basaltic origin |
+| **Red & Yellow** | Eastern + S. Deccan | groundnut, millets | Iron oxide |
+| **Laterite** | Western Ghats, NE, Odisha | tea, coffee, cashew | Heavy rainfall + alternate wet-dry |
+| **Arid (Desert)** | Rajasthan | barley, millets, gram | Saline; needs irrigation |
+| **Saline & Alkaline** | Punjab, Haryana, Rann of Kachchh | tolerant crops | Excess salts |
+| **Peaty & Marshy** | Kerala backwaters, Sundarbans | rice | High organic matter |
+| **Forest & Mountain** | Himalayas, Western Ghats | apples, fruits | Variable depth |
+
+---
+
+\newpage
+
+# 🌳 PART Z — NATIONAL PARKS, TIGER + BIOSPHERE RESERVES
+
+## Tiger reserves (major — 50+ in India)
+
+| Reserve | State | Notes |
+|---|---|---|
+| **Jim Corbett** | Uttarakhand | India's first NP (1936); first Tiger Project (1973) |
+| **Bandhavgarh** | MP | Highest tiger density |
+| **Kanha** | MP | Inspired Kipling's Jungle Book; barasingha |
+| Pench | MP/Maharashtra | Mowgli land |
+| Satpura | MP | |
+| Panna | MP | River Ken |
+| Tadoba-Andhari | Maharashtra | Largest in MH |
+| Melghat | Maharashtra | First tiger reserve in MH |
+| Sariska | Rajasthan | Aravallis |
+| Ranthambore | Rajasthan | Famous Machhli tigress |
+| Mukundra Hills | Rajasthan | |
+| Ramgarh Vishdhari | Rajasthan | 52nd, 2022 |
+| Sundarbans | West Bengal | UNESCO; mangrove tigers |
+| Buxa | West Bengal | |
+| Manas | Assam | UNESCO; Indo-Bhutan |
+| Nameri | Assam | |
+| Kaziranga | Assam | UNESCO; one-horned rhino |
+| Pakke | Arunachal | Hornbill |
+| Namdapha | Arunachal | |
+| Dampa | Mizoram | |
+| Bhadra | Karnataka | |
+| Bandipur | Karnataka | First "Project Tiger" |
+| Nagarhole (Rajiv Gandhi) | Karnataka | Kabini |
+| Anshi | Karnataka | |
+| BRT (Biligiri) | Karnataka | Recent |
+| Periyar | Kerala | Boating |
+| Parambikulam | Kerala | |
+| Mudumalai | TN | Nilgiris |
+| Kalakkad-Mundanthurai | TN | Southernmost |
+| Sathyamangalam | TN | Veerappan land |
+| Anamalai (Indira Gandhi) | TN | |
+| Mukurthi | TN | Nilgiri tahr |
+| Nagarjunasagar-Srisailem | AP-TG | Largest tiger reserve in India by area |
+| Amrabad | Telangana | |
+| Achanakmar | Chhattisgarh | |
+| Indravati | Chhattisgarh | |
+| Udanti-Sitanadi | Chhattisgarh | |
+| Palamau | Jharkhand | One of the first 9 (1973) |
+| Similipal | Odisha | |
+| Satkosia | Odisha | |
+| Dudhwa | UP | Bardia border |
+| Pilibhit | UP | UNESCO |
+| Amangarh | UP | |
+| Valmiki | Bihar | |
+| Kamlang | Arunachal | |
+| Orang | Assam | Smallest |
+| **Veerangana Durgavati** | MP | 54th (2023) |
+| **Dholpur-Karauli** | Rajasthan | 55th (2024) |
+| **Rani Durgavati / Madhav** | MP | proposed 2025 |
+
+## All Biosphere reserves (18, with UNESCO MAB status flagged)
+
+| # | Reserve | State | Year | UNESCO MAB |
+|---|---|---|---|---|
+| 1 | Nilgiri | TN/KE/KA | 1986 | ✓ (2000) |
+| 2 | Nanda Devi | UK | 1988 | ✓ (2004) |
+| 3 | Nokrek | Meghalaya | 1988 | ✓ (2009) |
+| 4 | Manas | Assam | 1989 | — |
+| 5 | Sundarbans | WB | 1989 | ✓ (2001) |
+| 6 | Gulf of Mannar | TN | 1989 | ✓ (2001) |
+| 7 | Great Nicobar | A&N | 1989 | ✓ (2013) |
+| 8 | Similipal | Odisha | 1994 | ✓ (2009) |
+| 9 | Dibru-Saikhowa | Assam | 1997 | — |
+| 10 | Dehang-Debang | Arunachal | 1998 | — |
+| 11 | Pachmarhi | MP | 1999 | ✓ (2009) |
+| 12 | Khangchendzonga | Sikkim | 2000 | ✓ (2018) |
+| 13 | Agasthyamalai | KE/TN | 2001 | ✓ (2016) |
+| 14 | Achanakmar-Amarkantak | CG/MP | 2005 | ✓ (2012) |
+| 15 | Kachchh | Gujarat | 2008 | — |
+| 16 | Cold Desert | HP | 2009 | — |
+| 17 | Seshachalam | AP | 2010 | — |
+| 18 | Panna | MP | 2011 | ✓ (2020) |
+
+## Ramsar sites — selected key (India had 80+ as of 2024)
+
+- **Chilika Lake** (Odisha) — first Ramsar site of India (1981); largest brackish water lake.
+- **Keoladeo NP / Bharatpur** (Rajasthan) — UNESCO + Ramsar; Siberian crane.
+- **Wular Lake** (J&K) — largest freshwater.
+- **Loktak Lake** (Manipur) — Keibul Lamjao floating NP.
+- **Sundarban Wetland** (WB) — largest in India.
+- **Vembanad-Kol Wetland** (Kerala) — longest lake of India.
+- **Sambhar Lake** (Rajasthan) — largest salt lake.
+- **Bhitarkanika Mangroves** (Odisha) — saltwater crocodile.
+- **Hokera Wetland** (J&K).
+- **Renuka Wetland** (HP).
+- **Surinsar-Mansar** (J&K).
+- **Asan Conservation Reserve** (UK).
+- **Sandi Bird Sanctuary, Saman, Samaspur** (UP).
+- **Bhoj Wetland** (MP) — Bhopal lakes.
+- **Deepor Beel** (Assam).
+- **Point Calimere** (TN).
+
+---
+
+\newpage
+
+# PART AA — WORLD GEOGRAPHY (high-yield)
+
+## Continents — quick facts
+
+| Continent | Area rank | Population rank | Largest country | Smallest |
+|---|---|---|---|---|
+| Asia | 1 | 1 | Russia (Asia + Europe) / China | Maldives |
+| Africa | 2 | 2 | Algeria | Seychelles |
+| North America | 3 | 4 | Canada | St. Kitts & Nevis |
+| South America | 4 | 5 | Brazil | Suriname |
+| Antarctica | 5 | — | (no permanent pop) | — |
+| Europe | 6 | 3 | Russia (Europe) | Vatican |
+| Australia / Oceania | 7 | 6 | Australia | Nauru |
+
+## World — longest / highest / largest (memorise)
+
+| Record | Holder |
+|---|---|
+| **Highest mountain** | Mt. Everest (Sagarmatha / Chomolungma) — 8,848.86 m, Nepal-China |
+| 2nd highest | K2 (Godwin Austen) — 8,611 m |
+| **Longest river** | Nile (Africa) — 6,650 km |
+| 2nd longest | Amazon (S. America) — 6,400 km |
+| Longest in Asia | Yangtze (China) — 6,300 km |
+| **Largest desert (overall)** | Antarctica (cold desert) |
+| Largest hot desert | Sahara (Africa) — 9.2 M km² |
+| **Largest ocean** | Pacific |
+| Smallest ocean | Arctic |
+| Deepest point | Mariana Trench (Challenger Deep) — 11,034 m |
+| **Largest country (area)** | Russia — 17.1 M km² |
+| 2nd | Canada |
+| 3rd | USA |
+| 4th | China |
+| 7th | India — 3.28 M km² |
+| **Most populous country** | **India** (~144 cr, since Apr 2023); China 2nd |
+| Smallest country (area + pop) | Vatican City |
+| **Largest lake (area)** | Caspian Sea (saline) |
+| Largest freshwater lake (area) | Lake Superior (USA-Canada) |
+| Deepest lake | Lake Baikal (Russia) — 1,642 m |
+| Largest island | Greenland |
+| Largest archipelago | Indonesia (17,500+ islands) |
+| Largest peninsula | Arabian Peninsula |
+| Largest bay | Bay of Bengal |
+| Largest river basin | Amazon |
+| Largest delta | Sundarbans (Ganga-Brahmaputra) |
+| Largest waterfall (height) | Angel Falls (Venezuela) — 979 m |
+| Largest by volume | Inga Falls (DRC) |
+| Niagara | USA-Canada border |
+| Highest plateau | Tibetan Plateau ("roof of the world") |
+| Largest plateau | Tibetan Plateau |
+| Highest active volcano | Ojos del Salado (Chile) |
+| Largest hot desert (single) | Sahara |
+| Largest cold desert | Antarctica; (in Asia: Gobi) |
+
+## Important world deserts
+
+| Desert | Location |
+|---|---|
+| Sahara | N. Africa |
+| Arabian | Middle East |
+| Gobi | Mongolia + China |
+| Kalahari | Southern Africa |
+| Patagonian | Argentina |
+| Great Victoria | Australia |
+| Atacama | Chile (driest non-polar) |
+| Thar | India + Pakistan |
+| Karakum | Turkmenistan |
+| Mojave | USA |
+
+## Important rivers (world)
+
+| River | Continent | Empties into |
+|---|---|---|
+| Nile | Africa | Mediterranean |
+| Amazon | S. America | Atlantic |
+| Yangtze | Asia | E. China Sea |
+| Mississippi-Missouri | N. America | Gulf of Mexico |
+| Yenisei-Angara | Asia | Arctic Ocean |
+| Yellow (Huang He) | China | Bohai Sea |
+| Ob | Russia | Arctic |
+| Parana | S. America | Atlantic |
+| Congo | Africa | Atlantic |
+| Volga | Russia | Caspian (longest in Europe) |
+| Danube | Europe | Black Sea (passes most countries — 10) |
+| Rhine | Europe | North Sea |
+| Mekong | SE Asia | South China Sea |
+| Murray-Darling | Australia | Indian Ocean |
+
+## Mountain ranges (world)
+
+| Range | Continent | Highest peak |
+|---|---|---|
+| Andes | S. America | Aconcagua (Argentina) — 6,961 m; longest range |
+| Rockies | N. America | Mt. Elbert (USA) — 4,401 m |
+| Himalayas | Asia | Everest 8,848 |
+| Alps | Europe | Mont Blanc 4,810 |
+| Atlas | Africa | Toubkal (Morocco) |
+| Ural | Russia | divides Europe + Asia |
+| Caucasus | Europe-Asia | Mt. Elbrus (highest in Europe) |
+| Great Dividing Range | Australia | Kosciuszko |
+
+## Straits (key)
+
+- Bering Strait — Russia + Alaska (Pacific-Arctic)
+- Strait of Gibraltar — Spain + Morocco (Atlantic-Mediterranean)
+- Strait of Hormuz — Iran + Oman (Persian Gulf-Arabian Sea)
+- Bab-el-Mandeb — Yemen + Djibouti (Red Sea-Gulf of Aden)
+- Strait of Malacca — Indonesia + Malaysia (busiest)
+- Palk Strait — India + Sri Lanka
+- Adam's Bridge — chain of shoals India-SL
+- 9° + 10° + 8° channels — Lakshadweep islands; 8° = between Minicoy + Maldives
+- Cook Strait — North + South islands of NZ
+- Bering Strait — international date line near here
+
+## Continents to know longitude/latitude:
+
+- **Tropic of Cancer** (23.5° N) passes through India: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, WB, Tripura, Mizoram (8 states).
+- **Equator** (0°) passes through 13 countries (Ecuador, Colombia, Brazil, Gabon, Congo, DRC, Uganda, Kenya, Somalia, Indonesia, etc.).
+- **IST** = +5:30 GMT, based on **82.5° E** (passes through Mirzapur, UP).
+- **Indian Standard Meridian** = 82.5° E (Allahabad meridian).
+- India lies between 8°4' N to 37°6' N latitude, 68°7' E to 97°25' E longitude.
+
+---
+
+\newpage
+
+# 🌡️ PART AB — INDIAN CLIMATE + AGRICULTURE
+
+## Climate types (Köppen for India)
+
+- **Aw** (Tropical Savanna) — most of peninsular India
+- **As** (Tropical) — TN coast (winter rain, retreating monsoon)
+- **Amw** (Monsoon — short dry season) — SW coast
+- **Bshw** (Semi-arid steppe) — Rajasthan, MP, AP plateau
+- **Bwhw** (Arid hot desert) — Thar (Rajasthan, Kachchh)
+- **Cwg** (Humid subtropical, dry winter) — North India plain
+- **Dfc** (Subarctic) — Himalayan high altitudes
+- **E** (Polar/Tundra) — high Himalayas
+
+## Monsoon
+
+- **SW Monsoon** (Jun-Sep) — 75% of annual rainfall; Arabian Sea + Bay of Bengal branches.
+- **NE / Retreating Monsoon** (Oct-Dec) — TN, parts of AP coast.
+- **Mawsynram** (Meghalaya) — wettest place (~11,872 mm/yr); Cherrapunji 2nd.
+- **Rain-shadow regions** — leeward Western Ghats (eastern slope dry).
+
+## Agricultural revolutions
+
+| Revolution | About | Key person |
+|---|---|---|
+| Green | Wheat + rice (HYV) | M.S. Swaminathan ("father") |
+| White | Milk (Operation Flood, AMUL) | Verghese Kurien |
+| Blue | Fish + aquaculture | Hiralal Chaudhuri / Arun Krishnan |
+| Yellow | Oilseeds | Sam Pitroda (Yellow rev tech) |
+| Pink | Onions + prawns | Durgesh Patel |
+| Brown | Cocoa, coffee, leather | — |
+| Golden | Fruits + horticulture | Nirpakh Tutaj |
+| Silver | Eggs + poultry | Indira Gandhi era |
+| Black | Petroleum | — |
+| Grey | Wool / fertiliser | — |
+| Red | Tomato + meat | — |
+| Round | Potato | — |
+| Evergreen | Sustainable agriculture | M.S. Swaminathan |
+
+## Cropping seasons
+
+- **Kharif** — Jun-Oct; rice, maize, jowar, bajra, cotton, soybean, groundnut.
+- **Rabi** — Oct-Mar; wheat, barley, gram, mustard.
+- **Zaid** — Mar-Jun; watermelon, cucumber, vegetables.
+
+## Largest producer (India — 2024)
+
+| Crop | State |
+|---|---|
+| Rice | West Bengal |
+| Wheat | Uttar Pradesh |
+| Sugarcane | UP |
+| Cotton | Gujarat |
+| Jute | West Bengal |
+| Tea | Assam |
+| Coffee | Karnataka |
+| Coconut | Kerala |
+| Spices | Kerala |
+| Tobacco | AP |
+| Pulses | MP |
+| Oilseeds | Rajasthan |
+| Maize | Karnataka |
+| Bajra | Rajasthan |
+| Jowar | Maharashtra |
+| Banana | TN |
+| Mango | UP |
+| Apple | J&K → HP (post-2019) |
+
+---
+
+# PART AC — GEOGRAPHY TRAP-RECOGNITION CARDS
+
+| Trap | Where | How to spot |
+|---|---|---|
+| Largest state by area vs population | India | Area = Rajasthan; Population = UP |
+| Coastline longest | India | Gujarat (1,600 km), then AP, TN |
+| Tropic of Cancer states (8) | India | Gu-Ra-MP-CG-JH-WB-TR-MZ ("GRMP-CJ-WT-MZ") |
+| Indus tributaries (5) | Punjab rivers | Jhelum, Chenab, Ravi, Beas, Sutlej |
+| West-flowing peninsular rivers | Geography | Narmada, Tapi, Sabarmati, Mahi, Periyar, Luni — REST flow east |
+| Largest brackish lake vs freshwater | Lakes | Brackish = Chilika; freshwater = Wular |
+| Longest river of India | India | Ganga (2,525 km within India); Brahmaputra is longer overall but only 916 km in India |
+| First NP of India | NP | Jim Corbett (1936) |
+| First Tiger reserve | Project Tiger | Bandipur (1973), simultaneous Project Tiger |
+| Highest peak in India proper | Peaks | Kanchenjunga 8,586 m (K2 in PoK) |
+| Mawsynram vs Cherrapunji | Wettest | Mawsynram > Cherrapunji (both Meghalaya) |
+| Smallest state | India | Goa (area); Sikkim (2nd); UTs not counted |
+| Largest UT | UTs | Ladakh (since 2019) |
+| Wettest desert? | World | Antarctica is largest desert (cold); Sahara largest hot |
+
+---
+
+# PART AD — GEOGRAPHY MINI-MOCK (25 Questions · 25 Minutes)
+
+Set a timer. No looking back. Mark your answers and check the key at the end.
+
+---
+
+**1.** Which is the largest state of India by area?
+
+(a) Madhya Pradesh  (b) Maharashtra  (c) Rajasthan  (d) Uttar Pradesh
+
+**2.** The wettest place in India is:
+
+(a) Cherrapunji  (b) Mawsynram  (c) Agumbe  (d) Munnar
+
+**3.** Which river flows westward into the Arabian Sea?
+
+(a) Godavari  (b) Krishna  (c) Narmada  (d) Cauvery
+
+**4.** The Standard Meridian of India (82.5°E) passes through:
+
+(a) Allahabad  (b) Mirzapur  (c) Varanasi  (d) Lucknow
+
+**5.** India's first National Park was:
+
+(a) Bandipur  (b) Kanha  (c) Jim Corbett  (d) Gir
+
+**6.** Which is the only floating National Park in India?
+
+(a) Dibru-Saikhowa  (b) Keibul Lamjao  (c) Kaziranga  (d) Manas
+
+**7.** Black soil (Regur) is ideal for growing which crop?
+
+(a) Wheat  (b) Rice  (c) Cotton  (d) Jute
+
+**8.** The Tropic of Cancer passes through how many Indian states?
+
+(a) 6  (b) 7  (c) 8  (d) 9
+
+**9.** Which state has the longest coastline in India?
+
+(a) Andhra Pradesh  (b) Maharashtra  (c) Tamil Nadu  (d) Gujarat
+
+**10.** India shares its longest international border with:
+
+(a) China  (b) Pakistan  (c) Bangladesh  (d) Nepal
+
+**11.** The highest peak in India is:
+
+(a) K2  (b) Kanchenjunga  (c) Nanda Devi  (d) Mt. Everest
+
+**12.** Laterite soil is characterised by:
+
+(a) High fertility and calcium  (b) Leaching of nutrients in heavy rain  (c) High nitrogen content  (d) Found mainly in Indo-Gangetic plains
+
+**13.** The Zoji La pass connects:
+
+(a) Ladakh to Tibet  (b) Srinagar to Leh  (c) Manali to Leh  (d) Sikkim to Tibet
+
+**14.** Which among the following is a brackish water lake?
+
+(a) Wular  (b) Dal  (c) Chilika  (d) Bhimtal
+
+**15.** The Deccan Plateau is bounded on which side by the Eastern Ghats?
+
+(a) West  (b) North  (c) East  (d) South
+
+**16.** The monsoon enters India first from which direction?
+
+(a) Bay of Bengal, hitting Odisha coast first  (b) Arabian Sea, hitting Kerala coast first  (c) Bay of Bengal, hitting West Bengal first  (d) Arabian Sea, hitting Gujarat first
+
+**17.** The soil found in the Indo-Gangetic plains is:
+
+(a) Black soil  (b) Red and yellow soil  (c) Laterite soil  (d) Alluvial soil
+
+**18.** India's largest freshwater lake is:
+
+(a) Dal  (b) Wular  (c) Chilika  (d) Loktak
+
+**19.** Mica, the mineral used in electronics, is most abundantly found in:
+
+(a) Rajasthan  (b) Jharkhand  (c) Chhattisgarh  (d) Odisha
+
+**20.** The Western Disturbances bring winter rain to:
+
+(a) Kerala and Tamil Nadu  (b) Punjab, Haryana, and Rajasthan  (c) Odisha and Andhra Pradesh  (d) Bihar and West Bengal
+
+**21.** India's first Ramsar Wetland Site was:
+
+(a) Keoladeo Ghana  (b) Loktak  (c) Wular  (d) Chilika
+
+**22.** The Sundarbans mangrove forest is shared between India and:
+
+(a) Sri Lanka  (b) Myanmar  (c) Bangladesh  (d) Bhutan
+
+**23.** The Palk Strait separates India from:
+
+(a) Sri Lanka  (b) Maldives  (c) Bangladesh  (d) Indonesia
+
+**24.** The Brahmaputra river is known as "Tsangpo" in:
+
+(a) Bhutan  (b) Bangladesh  (c) Nepal  (d) Tibet (China)
+
+**25.** The Father of the Green Revolution in India is:
+
+(a) Norman Borlaug  (b) Verghese Kurien  (c) M.S. Swaminathan  (d) C. Subramaniam
+
+---
+
+**Answer Key**
+
+1-c | 2-b | 3-c | 4-b | 5-c | 6-b | 7-c | 8-c | 9-d | 10-c | 11-b | 12-b | 13-b | 14-c | 15-c | 16-b | 17-d | 18-b | 19-a | 20-b | 21-d | 22-c | 23-a | 24-d | 25-c
+
+**Score:** 23–25 = Excellent · 18–22 = Good · Below 18 = Re-read Part D (India: physical geography) and Part E (human/economic geography).
+
+---
+
+*Note for Q25: M.S. Swaminathan is the father of the Green Revolution in India; Norman Borlaug is the global father. Examiners ask both — do not confuse them.*
+
+---
+
+*Drill these tables. Geography past-paper patterns repeat year-over-year — these tables are 90%+ Geography mastery.*
+
+---
+
+\newpage
+
+# PART AE — INDIA "LONGEST / LARGEST / HIGHEST" MASTER LIST
+
+> Examiners ask one of these every paper. Memorise this entire list cold.
+
+## Largest / longest / highest — INDIA
+
+### Geography
+
+| Record | Holder |
+|---|---|
+| Largest state (area) | Rajasthan (3.42 lakh km²) |
+| Smallest state (area) | Goa (3,702 km²) |
+| Largest UT (area) | Ladakh (since 2019) |
+| Smallest UT (area) | Lakshadweep (32 km²) |
+| Most populous state | Uttar Pradesh (~24 cr) |
+| Least populous state | Sikkim (~7 lakh) |
+| Most populous UT | Delhi (~3 cr) |
+| Highest population density | Bihar (1,106/km²) |
+| Lowest population density | Arunachal Pradesh (17/km²) |
+| Highest sex ratio (state) | Kerala (1,084 women / 1,000 men) |
+| Lowest sex ratio (state) | Haryana (879) |
+| Highest literacy state | Kerala (94%) |
+| Lowest literacy state | Bihar (62%) |
+| Longest coastline (state) | Gujarat (~1,600 km) |
+| 2nd longest coastline | Andhra Pradesh |
+| Largest delta in India (also world) | Sundarbans (Ganga-Brahmaputra) |
+| Highest peak in India | **Kanchenjunga** (8,586 m, Sikkim) |
+| Highest peak in India proper (entirely Indian) | Nanda Devi (7,816 m, Uttarakhand) |
+| Highest peak in S. India | Anamudi (2,695 m, Kerala) |
+| Highest mountain pass | Marsimik La (Ladakh, 5,582 m) |
+| Highest battlefield in world | Siachen Glacier (~5,400 m) |
+| Highest waterfall in India | Kunchikal Falls (Karnataka, 455 m) |
+| 2nd highest waterfall | Barehipani Falls (Odisha, 399 m) |
+| Famous Jog Falls (Sharavathi) | Karnataka, 253 m |
+| Highest motorable road | Umling La Pass (Ladakh, 19,300 ft) |
+| Highest village | Komik (Spiti, HP) |
+| Highest cricket ground | Chail (HP, 2,144 m) |
+| Largest desert | Thar (Rajasthan) |
+| Largest river island | Majuli (Assam, on Brahmaputra) — 2nd largest after Marajó (Brazil) |
+| Largest fresh-water lake | Wular (J&K) |
+| Largest brackish/salt water lake | Chilika (Odisha) |
+| Largest inland salt lake | Sambhar (Rajasthan) |
+| Longest lake | Vembanad (Kerala, 96 km) |
+| Largest dam | Hirakud (Mahanadi, Odisha) — also longest earthen dam |
+| Highest dam | Tehri Dam (Uttarakhand, 260.5 m) |
+| Highest gravity dam | Bhakra Dam (Sutlej, HP-Punjab, 226 m) |
+| Longest river within India | Ganga (~2,525 km in India) |
+| Largest river by water volume | Brahmaputra |
+| Longest tributary of Ganga | Yamuna |
+| Largest river of South India | Godavari ("Dakshin Ganga", 1,465 km) |
+| Largest river island (above ref) | Majuli |
+| Highest plateau | Tibetan Plateau extension; Ladakh plateau within India |
+| Largest plateau (India) | Deccan Plateau |
+| Northernmost point | Indira Col (Siachen) |
+| Southernmost point | Indira Point (Great Nicobar) |
+| Easternmost point | Kibithu (Arunachal) |
+| Westernmost point | Guhar Moti (Gujarat) |
+| Tropic of Cancer states (8) | Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, WB, Tripura, Mizoram |
+
+### Wildlife / Environment
+
+| Record | Holder |
+|---|---|
+| First National Park | Jim Corbett (Uttarakhand, 1936) |
+| First Tiger Reserve | Bandipur (Karnataka, 1973) |
+| Largest National Park (area) | Hemis NP (Ladakh, 4,400 km²) |
+| Largest Tiger Reserve | Nagarjunasagar-Srisailam (AP+TG, 3,728 km²) |
+| Smallest National Park | South Button Island NP (Andamans, 0.03 km²) |
+| First Biosphere Reserve | Nilgiri (1986) |
+| First Ramsar site | Chilika (Odisha, 1981) |
+| Largest Biosphere Reserve | Gulf of Mannar |
+| Largest mangrove forest | Sundarbans (West Bengal) |
+| Wettest place | Mawsynram (Meghalaya, ~11,872 mm/yr) |
+| 2nd wettest | Cherrapunji (Sohra, Meghalaya) |
+| Driest place | Jaisalmer (Rajasthan, ~150 mm/yr) |
+| Hottest place recorded | Phalodi (Rajasthan, 51 °C, 2016) |
+| Coldest inhabited place | Drass (Ladakh, −45 °C recorded) |
+| Most polluted city (recurrent) | Delhi (NCR) |
+
+### Infrastructure
+
+| Record | Holder |
+|---|---|
+| Largest port (cargo handled) | JNPT/Mumbai (Nhava Sheva) |
+| Longest natural port | Vishakhapatnam |
+| Busiest port | Mundra (private, Adani, GJ) |
+| Longest river bridge | Bhupen Hazarika Setu (Lohit, Assam-Arunachal, 9.15 km) |
+| Longest sea bridge | **Atal Setu** (MTHL, Mumbai, 22 km, opened Jan 2024) |
+| Longest road bridge over water | Atal Setu |
+| Longest cable-stayed bridge | Sudarshan Setu / Gulf of Khambhat (in development) |
+| Longest railway bridge | **New Pamban Bridge** (TN, **inaugurated 6 Apr 2025 by PM Modi on Ram Navami**; **India's first vertical-lift railway sea bridge**; 2.07 km, 99 spans, 72.5 m vertical-lift span; replaces Pamban Bridge 1914) |
+| Highest railway bridge (world) | Chenab Rail Bridge (J&K, 359 m above river, Aug 2022 commissioned 2024) |
+| Longest highway tunnel | Atal Tunnel (Rohtang, HP, 9.02 km, opened Oct 2020) |
+| Longest railway platform | Hubballi (1,507 m, Karnataka — record since 2023) |
+| Longest national highway | NH 44 (Srinagar to Kanyakumari, 4,112 km) |
+| Densest road network | Kerala |
+| Largest railway zone | Northern Railway |
+| Smallest railway zone | North Eastern Railway |
+| Highest railway station | Ghum (West Bengal, Darjeeling Himalayan Railway, 2,258 m) |
+| Highest broad-gauge railway station | Chenab area, Reasi-Banihal section (J&K) |
+| Largest stadium (capacity) | **Narendra Modi Stadium** (Motera, Ahmedabad, 1.32 lakh) |
+| Largest cricket ground (older) | Eden Gardens (Kolkata) |
+| Tallest statue | **Statue of Unity** (Kevadia, Gujarat, 182 m, Sardar Patel, 2018) — world's tallest |
+| Largest religious structure (under construction) | Ram Mandir, Ayodhya (consecrated Jan 2024) |
+| Largest temple (area) | Sri Ranganathaswamy Temple (Srirangam, TN, 156 acres) |
+| Tallest temple gopuram | Murudeshwara (Karnataka) |
+| Highest tower | Statue of Unity (182 m); next Kolkata Tower of Joy planned |
+| Tallest bridge tower (cable-stayed) | Signature Bridge (Delhi, 154 m, Yamuna) |
+| Largest dome | Lotus Temple (Delhi, Bahai) |
+| Largest church | Sé Cathedral (Goa) |
+| Largest mosque | Jama Masjid (Delhi, Shah Jahan) |
+| Oldest mountain range | Aravallis (Rajasthan) |
+| Largest cave | Krem Liat Prah (Meghalaya, longest cave in India) |
+
+### People / Government
+
+| Record | Holder |
+|---|---|
+| First President | Dr. Rajendra Prasad |
+| First PM | Jawaharlal Nehru |
+| First woman PM | Indira Gandhi |
+| First woman President | Pratibha Patil (2007-12) |
+| First tribal President | Droupadi Murmu (2022-) |
+| First Dalit President | K.R. Narayanan (1997-2002) |
+| First woman Speaker | Meira Kumar (2009-14) |
+| First Indian to space | Rakesh Sharma (1984, Soyuz T-11) |
+| First woman in space (Indian-origin) | Kalpana Chawla (1997) |
+| First Indian to win Nobel | Rabindranath Tagore (1913, Literature) |
+| First Indian woman Nobel | (Indian-origin) Mother Teresa (1979 Peace) |
+| First Indian to summit Everest | Tenzing Norgay (with Hillary, 29 May 1953); first Indian citizen Avtar Singh Cheema (1965) |
+| First Indian woman to summit Everest | Bachendri Pal (23 May 1984) |
+| First Indian Olympic gold | Norman Pritchard (1900 Paris, 2 silver) — actually colonial; First independent Indian gold = Hockey 1948 (team) |
+| First individual Olympic gold | Abhinav Bindra (2008 Beijing, shooting) |
+| First individual track Olympic gold | Neeraj Chopra (2020 Tokyo, javelin) |
+| First chess World Champion (Indian) | Viswanathan Anand (2000-12) |
+| Youngest chess World Champion | D Gukesh (Dec 2024, age 18) |
+
+### Misc
+
+| Record | Holder |
+|---|---|
+| Largest postal network in world | India Post (1.55 lakh post offices) |
+| Largest film industry | India (multiple — Bollywood + Tollywood + others) |
+| Largest railway network in Asia (4th in world) | Indian Railways |
+| Largest road network (3rd world) | India |
+| Largest electricity-generating state | Maharashtra |
+| Largest installed renewable capacity state | Rajasthan (solar + wind) |
+| Largest milk producer state | Uttar Pradesh |
+| Largest banana producer | Tamil Nadu |
+| Largest mango producer | Uttar Pradesh |
+| Largest tea producer | Assam |
+| Largest coffee producer | Karnataka |
+| Largest coconut producer | Kerala |
+| Largest cotton producer | Gujarat |
+| Largest sugarcane producer | Uttar Pradesh |
+| Largest rice producer | West Bengal |
+| Largest wheat producer | Uttar Pradesh |
+| Largest jute producer | West Bengal |
+| Largest oil refinery | Jamnagar (Gujarat — Reliance, world's largest single-location refinery) |
+| Largest port (container) | Mundra |
+| Largest dam reservoir (capacity) | Indira Sagar (MP, Narmada) |
+| Largest temple complex | Angkor Wat — Cambodia (NOT India); India's largest = Srirangam (TN) |
+| Highest cricket strike rate ever | Sehwag / Rohit / Surya |
+| First aircraft carrier | INS Vikramaditya (Russian-origin); first indigenous = INS Vikrant (2022) |
+
+---
+
+\newpage
+
+# PART AF — WORLD "LONGEST / LARGEST" QUICK-RECALL
+
+| Record | Holder |
+|---|---|
+| Tallest building | Burj Khalifa (Dubai, 828 m) |
+| 2nd tallest | Merdeka 118 (KL, 678 m) |
+| Longest bridge | Danyang-Kunshan Grand Bridge (China, 164 km, rail) |
+| Longest road bridge | Hong Kong–Zhuhai–Macau Bridge (55 km, sea-crossing) |
+| Longest tunnel | Gotthard Base Tunnel (Switzerland, 57 km, rail) |
+| Largest hotel | First World Hotel (Malaysia, 7,351 rooms) |
+| Largest religious building | Angkor Wat (Cambodia, 162.6 ha) |
+| Tallest statue | Statue of Unity (India, 182 m) |
+| Tallest tower (free-standing) | Tokyo Skytree (634 m) |
+| Largest stadium (capacity) | Narendra Modi Stadium (132,000); Rungrado May Day (Pyongyang, ~114,000) |
+| Largest park | Northeast Greenland NP (972,000 km²) |
+| Largest reef system | Great Barrier Reef (Australia, 2,300 km) |
+| Largest glacier (non-polar) | Siachen Glacier (India-Pak); Lambert Glacier (Antarctica) world's largest |
+| Largest active volcano | Mauna Loa (Hawaii) |
+| Largest crater | Vredefort (S. Africa, 300 km diameter); Chicxulub (Mexico, dinosaur extinction) |
+| Largest delta | Sundarbans (India-Bangladesh) |
+| Largest island | Greenland (2.16 M km²) |
+| Largest archipelago | Indonesia (17,500+ islands) |
+| Largest peninsula | Arabian Peninsula |
+| Highest mountain | Mt. Everest (8,848 m) |
+| 2nd | K2 (8,611 m) |
+| Highest active volcano | Ojos del Salado (Chile) |
+| Highest waterfall (single drop) | Angel Falls (Venezuela, 979 m) |
+| Largest waterfall (volume) | Inga Falls (DRC) |
+| Largest river basin | Amazon |
+| Longest river | Nile (Africa, 6,650 km) |
+| 2nd longest | Amazon (6,400 km) |
+| Largest river by discharge | Amazon |
+| Largest lake (area) | Caspian Sea (saline) |
+| Largest freshwater lake | Lake Superior (USA-Canada) |
+| Deepest lake | Baikal (Russia, 1,642 m) |
+| Highest lake (navigable) | Titicaca (Bolivia-Peru, 3,812 m) |
+| Largest desert | Antarctica (cold, 14 M km²) |
+| Largest hot desert | Sahara (9.2 M km²) |
+| Driest desert | Atacama (Chile) |
+| Highest plateau | Tibetan Plateau ("Roof of the World") |
+| Largest country (area) | Russia (17.1 M km²) |
+| 2nd | Canada |
+| 3rd | USA |
+| 4th | China |
+| 7th | India |
+| Smallest country | Vatican City (0.49 km²) |
+| Most populous country | **India** (~144 cr, since Apr 2023) |
+| 2nd | China |
+| Most spoken language (native) | Mandarin Chinese |
+| 2nd | Spanish |
+| 3rd | English (most spoken total speakers) |
+| Most spoken language in India | Hindi |
+| Largest tropical rainforest | Amazon (Brazil) |
+| Largest coral reef | Great Barrier Reef |
+| Largest hot desert | Sahara |
+| Smallest ocean | Arctic |
+| Largest ocean | Pacific |
+| Deepest ocean point | Mariana Trench (Challenger Deep, 11,034 m) |
+
+---
+
+*Drill these "longest/largest/highest" lists till instant-recall. They alone account for 5-7 marks per paper.*

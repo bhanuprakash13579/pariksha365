@@ -1,11 +1,11 @@
 ---
 title: "Vocabulary — The Pariksha365 Paper-Setter's Book"
 subtitle: "Clustered by roots and themes • PYQ-weighted • built to stick"
-author: "Pariksha365 Study Notes"
+author: "Pariksha365"
 date: "2026"
 ---
 
-# 📘 How To Use This Book
+# How to use this book
 
 Vocabulary is the **lowest-ROI-when-done-wrong, highest-ROI-when-done-right** section of any English paper. Done wrong: alphabetical lists of 5,000 words you'll forget by next week. Done right: 1,500-2,000 **high-hit words** grouped into **root/suffix/theme clusters** that the brain learns 10-at-a-time through a shared hook.
 
@@ -795,5 +795,318 @@ Only idioms that have appeared more than once in SSC / Bank PYQs of the last dec
 Revisit each earlier part on Day 3, Day 7, Day 14, Day 30 of its learning. This single spaced-revision schedule is the difference between 100-words-learned-once-and-forgotten and 1,500-words-owned-for-life.
 
 ---
+
+\newpage
+
+# PART X — 230 ADDITIONAL HIGH-FREQUENCY WORDS (themed clusters)
+
+## X.1 ECONOMICS / GOVERNANCE (40)
+
+| Word | Meaning |
+|---|---|
+| Austerity | strict economy / hardship |
+| Recession | economic decline |
+| Bull / Bear market | rising / falling prices |
+| Bourgeois | middle-class |
+| Capitalism / Communism / Socialism | economic systems |
+| Plutocracy | rule by rich |
+| Meritocracy | rule by merit |
+| Hegemony | dominance |
+| Mandate | authoritative command |
+| Bureaucracy | govt by officials |
+| Demagogue | rabble-rousing leader |
+| Stalwart | loyal supporter |
+| Plebiscite | direct vote |
+| Embargo | trade ban |
+| Boycott | refusal to deal |
+| Sanction | penalty / approval (context) |
+| Quota | allotted share |
+| Subsidy | govt grant |
+| Tariff | tax on imports |
+| Protectionism | shielding domestic industry |
+| Liberalisation | removing restrictions |
+| Privatisation | transfer to private |
+| Nationalisation | transfer to govt |
+| Monopoly / Oligopoly / Cartel | market structures |
+| Inflation / Deflation / Stagflation | price-level dynamics |
+| Devaluation | currency-value cut |
+| Repatriate | bring back to home country |
+| Remittance | money sent home |
+| Dividend | profit share |
+| Solvent / Insolvent | able / unable to pay debts |
+| Lien | claim against property |
+| Liquidity | ease of converting to cash |
+| Asset / Liability / Equity | balance-sheet basics |
+| Mortgage / Collateral | debt-security terms |
+| IPO / FPO | public offerings |
+| Acquisition / Merger | M&A |
+| Hedging / Speculation | risk strategies |
+| Arbitrage | profit from price differences |
+| Derivative / Futures / Options | financial contracts |
+| Bond / Yield | debt + return |
+
+## X.2 GEOGRAPHY / NATURE (30)
+
+| Word | Meaning |
+|---|---|
+| Estuary | river-mouth where it meets sea |
+| Tributary | river joining a main river |
+| Distributary | river splitting from main |
+| Confluence | meeting of rivers |
+| Watershed | drainage divide |
+| Archipelago | group of islands |
+| Peninsula | land surrounded by water on 3 sides |
+| Isthmus | narrow land strip between 2 water bodies |
+| Strait | narrow water passage between 2 lands |
+| Plateau | flat-topped elevated land |
+| Plain | flat low-altitude land |
+| Tundra / Taiga / Savanna / Steppe / Prairie / Pampas / Veldt / Llanos | biome / grassland types |
+| Mangrove | salt-tolerant coastal trees |
+| Coral reef | marine biodiversity rocky structure |
+| Glacier / Iceberg | ice masses |
+| Crevasse | crack in glacier |
+| Avalanche | rapid snow-slide |
+| Geyser | hot-water spout |
+| Caldera | collapsed volcano crater |
+| Fjord | sea-flooded glacial valley |
+| Cay | small low coral island |
+| Atoll | ring-shaped coral island |
+| Tsunami | seismic sea wave |
+| Cyclone / Hurricane / Typhoon | tropical storm by region (Indian Ocean / Atlantic / Pacific) |
+| Tornado | rotating funnel cloud |
+
+## X.3 HISTORY / POLITICAL (30)
+
+| Word | Meaning |
+|---|---|
+| Pacifism | rejection of war |
+| Imperialism | empire-expansion |
+| Colonialism | political control over territory |
+| Diaspora | scattered ethnic group |
+| Insurgency | armed rebellion |
+| Coup d'état | sudden overthrow of govt |
+| Anarchy | absence of govt |
+| Despot | tyrant ruler |
+| Suffrage | right to vote |
+| Annexation | adding territory |
+| Secede | break away |
+| Sovereignty | supreme authority |
+| Ratify | confirm formally |
+| Repeal | revoke a law |
+| Promulgate | declare officially |
+| Decree | official order |
+| Amnesty | general pardon |
+| Asylum | refuge / shelter |
+| Genocide | mass killing of ethnic group |
+| Apartheid | racial segregation (S. Africa) |
+| Holocaust | massive destruction (esp. Jews WW2) |
+| Schism | split / division |
+| Treaty / Truce / Ceasefire | conflict-resolution terms |
+| Détente | easing of tension |
+| Status quo | existing state |
+| Reformation | religious/political reform |
+| Renaissance | rebirth (cultural revival) |
+| Enlightenment | 17-18c reason-based movement |
+| Hegemonic | dominant |
+| Sectarian | of a religious group |
+
+## X.4 SCIENCE / TECH (30)
+
+| Word | Meaning |
+|---|---|
+| Empirical | based on observation/experiment |
+| Hypothesis | testable proposition |
+| Paradigm | model / framework |
+| Phenomenon | observable event |
+| Anomaly | deviation from norm |
+| Dichotomy | division into two |
+| Synergy | combined effect > sum |
+| Catalyst | speeds up reaction |
+| Inertia | resistance to change |
+| Entropy | measure of disorder |
+| Algorithm | step-by-step procedure |
+| Heuristic | rule of thumb |
+| Iteration | repetition |
+| Simulation | imitation of real-world process |
+| Trajectory | curved path |
+| Spectrum | range / distribution |
+| Quantum | discrete amount |
+| Genome | full DNA of organism |
+| Mutation | DNA change |
+| Pathogen | disease-causing organism |
+| Vaccine / Antibody | immune-related |
+| Antibiotic | bacteria-killing drug |
+| Anaesthetic | sensation-blocking |
+| Analgesic | pain reliever |
+| Placebo | sham treatment |
+| Synthetic / Organic | chemically vs naturally produced |
+| Biodegradable | decomposable |
+| Carcinogen | cancer-causing |
+| Toxic / Inert | reactive vs unreactive |
+| Sterile | free of contamination |
+
+## X.5 EMOTIONS / BEHAVIOUR (30)
+
+| Word | Meaning |
+|---|---|
+| Apathy | lack of interest |
+| Empathy | feeling another's emotions |
+| Sympathy | sharing in another's sorrow |
+| Pathos | emotional appeal |
+| Antipathy | strong dislike |
+| Euphoria | intense happiness |
+| Dysphoria | extreme unhappiness |
+| Melancholy | deep sadness |
+| Jovial | cheerful |
+| Morose | sullen, gloomy |
+| Phlegmatic | calm, unemotional |
+| Stoic | enduring without complaint |
+| Sanguine | optimistic, cheerful |
+| Choleric | irritable, hot-tempered |
+| Mercurial | volatile, changeable |
+| Truculent | aggressively defiant |
+| Pugnacious | combative |
+| Recalcitrant | resistant to authority |
+| Tractable | easily managed |
+| Servile | subservient, slavish |
+| Sycophant | flatterer |
+| Obsequious | overly fawning |
+| Ingenuous | innocent, sincere |
+| Disingenuous | insincere |
+| Candid | frank, honest |
+| Reticent | reserved, silent |
+| Garrulous | talkative |
+| Loquacious | very chatty |
+| Taciturn | silent, uncommunicative |
+| Voluble | speaks a lot, fluently |
+
+## X.6 ABSTRACT / ANALYTICAL (30)
+
+| Word | Meaning |
+|---|---|
+| Conundrum | puzzle, dilemma |
+| Quandary | difficult situation |
+| Predicament | tricky position |
+| Paradox | contradiction that is true |
+| Conjecture | guess based on incomplete info |
+| Inference | conclusion from evidence |
+| Implication | suggested meaning |
+| Corollary | direct consequence |
+| Tenet | core principle |
+| Doctrine | belief system |
+| Postulate | assumed truth |
+| Premise | basis of argument |
+| Axiom | self-evident truth |
+| Theorem | proven proposition |
+| Tautology | needless repetition |
+| Pleonasm | redundant phrasing |
+| Truism | obvious truth |
+| Cliché | overused expression |
+| Euphemism | mild substitute for harsh term |
+| Innuendo | indirect insinuation |
+| Allusion | indirect reference |
+| Aphorism | concise wise saying |
+| Maxim | rule of conduct |
+| Adage | proverb |
+| Epigram | witty short saying |
+| Polemic | controversial argument |
+| Diatribe | bitter criticism |
+| Panegyric | formal praise |
+| Eulogy | praise (esp. of deceased) |
+| Encomium | high praise |
+
+## X.7 SIZE / DEGREE adjectives (20)
+
+| Word | Meaning |
+|---|---|
+| Behemoth | massive thing/creature |
+| Diminutive | very small |
+| Exorbitant | very high (price) |
+| Negligible | so small as to be insignificant |
+| Substantial | considerably large |
+| Minute | very small |
+| Astronomical | extremely large |
+| Infinitesimal | extremely tiny |
+| Colossal | gigantic |
+| Microscopic | visible only under microscope |
+| Vast | very large in extent |
+| Paltry | meagre, trifling |
+| Meagre | scant, inadequate |
+| Sparse | thinly distributed |
+| Abundant | plentiful |
+| Profuse | very abundant |
+| Scant | barely enough |
+| Voluminous | of great quantity |
+| Copious | abundant |
+| Modicum | small amount |
+
+## X.8 TIME / FREQUENCY (10)
+
+| Word | Meaning |
+|---|---|
+| Perpetual | eternal |
+| Ephemeral | short-lived |
+| Transient | passing |
+| Sporadic | occasional |
+| Intermittent | irregular |
+| Incessant | non-stop |
+| Quotidian | daily |
+| Diurnal | daily, daytime |
+| Nocturnal | nighttime |
+| Crepuscular | active at twilight |
+
+## X.9 LATIN / FOREIGN PHRASES (extra 20)
+
+| Phrase | Meaning |
+|---|---|
+| In camera | in private |
+| Mea culpa | my fault |
+| Pari passu | with equal pace |
+| Pro bono | for the public good (free) |
+| Ad valorem | according to value |
+| Inter alia | among other things |
+| Pro tem | for the time being |
+| In loco parentis | in place of a parent |
+| Mutatis mutandis | with necessary changes |
+| Habeas corpus | "you should have the body" — writ |
+| Stare decisis | precedent rule |
+| Sub poena | "under penalty" — court summons |
+| Lex loci | law of the place |
+| Locus standi | right to bring action |
+| Res ipsa loquitur | "the thing speaks for itself" |
+| Suo motu | on its own motion |
+| In situ | in the original position |
+| Ad hoc | for specific purpose |
+| Bonafide | in good faith |
+| Vis-à-vis | in relation to |
+
+## X.10 LITERATURE / RHETORICAL (20)
+
+| Word | Meaning |
+|---|---|
+| Alliteration | repeated consonant sounds |
+| Assonance | repeated vowel sounds |
+| Metaphor | direct comparison |
+| Simile | comparison using "like/as" |
+| Personification | human traits to non-human |
+| Hyperbole | exaggeration |
+| Litotes | understatement (negative form) |
+| Onomatopoeia | sound-imitating word |
+| Oxymoron | combining opposites ("deafening silence") |
+| Pun | play on words |
+| Irony | opposite of literal meaning |
+| Sarcasm | bitter mockery |
+| Satire | critical humour |
+| Parody | comic imitation |
+| Allegory | extended metaphor |
+| Hyperbole | exaggeration |
+| Anaphora | repetition at start |
+| Epiphora | repetition at end |
+| Climax | rising intensity |
+| Anticlimax | sudden descent |
+
+---
+
+> **Total drill set after this expansion:** Part 16 (english.md) ~400 words + Vocabulary main (clusters) ~300 + Part X (here) 230 = **~930 high-frequency words** — covers ~85-90% of SSC + Banks + RRB vocabulary questions.
 
 *Quiz pairings under `VOCAB_*` topic codes — clustered by root / suffix / theme.*

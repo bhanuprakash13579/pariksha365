@@ -79,18 +79,18 @@ Before any topic you must be fluent in these 5 micro-skills. None is hard. Skipp
 
 ## 0.1 Sigma (Σ) algebra — the 8 rules
 
-Let \( c \) be a constant, \( X, Y \) be variables, \( n \) the count of observations.
+Let $ c $ be a constant, $ X, Y $ be variables, $ n $ the count of observations.
 
 | # | Rule | Example |
 |---|------|---------|
-| 1 | \( \sum c = nc \) | \( \sum_{i=1}^{4} 7 = 28 \) |
-| 2 | \( \sum c X_i = c \sum X_i \) | constant pulls out |
-| 3 | \( \sum (X_i + Y_i) = \sum X_i + \sum Y_i \) | sums distribute |
-| 4 | \( \sum (X_i - \bar X) = 0 \) | **always**, by definition of mean |
-| 5 | \( \sum (X_i - \bar X)^2 = \sum X_i^2 - n\bar X^2 \) | computational form of variance |
-| 6 | \( \sum X_i^2 \neq (\sum X_i)^2 \) | **trap** — examiners love this |
-| 7 | \( \sum X_i Y_i \neq (\sum X_i)(\sum Y_i) \) | another trap |
-| 8 | \( \overline{X+Y} = \bar X + \bar Y \) but \( \overline{XY} \neq \bar X \bar Y \) (in general) | |
+| 1 | $ \sum c = nc $ | $ \sum_{i=1}^{4} 7 = 28 $ |
+| 2 | $ \sum c X_i = c \sum X_i $ | constant pulls out |
+| 3 | $ \sum (X_i + Y_i) = \sum X_i + \sum Y_i $ | sums distribute |
+| 4 | $ \sum (X_i - \bar X) = 0 $ | **always**, by definition of mean |
+| 5 | $ \sum (X_i - \bar X)^2 = \sum X_i^2 - n\bar X^2 $ | computational form of variance |
+| 6 | $ \sum X_i^2 \neq (\sum X_i)^2 $ | **trap** — examiners love this |
+| 7 | $ \sum X_i Y_i \neq (\sum X_i)(\sum Y_i) $ | another trap |
+| 8 | $ \overline{X+Y} = \bar X + \bar Y $ but $ \overline{XY} \neq \bar X \bar Y $ (in general) | |
 
 <div class="pitfall"><strong>Pitfall.</strong> Rule 4 is the single most-tested algebraic identity in JSO. Any "the sum of deviations from the mean is …" question — answer is <strong>0</strong>. No computation needed.</div>
 
@@ -98,56 +98,56 @@ Let \( c \) be a constant, \( X, Y \) be variables, \( n \) the count of observa
 
 | Mean | Formula (raw) | Formula (frequency) | When examiner uses it |
 |------|--------------|--------------------|-----------------------|
-| Arithmetic (AM) | \( \bar X = \dfrac{\sum X_i}{n} \) | \( \dfrac{\sum f_i X_i}{\sum f_i} \) | Default. Anything with "average". |
-| Geometric (GM) | \( (X_1 \cdot X_2 \cdots X_n)^{1/n} \) | \( \exp\!\left(\dfrac{\sum f_i \log X_i}{\sum f_i}\right) \) | Ratios, growth rates, index numbers. |
-| Harmonic (HM) | \( \dfrac{n}{\sum (1/X_i)} \) | \( \dfrac{\sum f_i}{\sum f_i / X_i} \) | Speeds-over-equal-distances, rates. |
+| Arithmetic (AM) | $ \bar X = \dfrac{\sum X_i}{n} $ | $ \dfrac{\sum f_i X_i}{\sum f_i} $ | Default. Anything with "average". |
+| Geometric (GM) | $ (X_1 \cdot X_2 \cdots X_n)^{1/n} $ | $ \exp\!\left(\dfrac{\sum f_i \log X_i}{\sum f_i}\right) $ | Ratios, growth rates, index numbers. |
+| Harmonic (HM) | $ \dfrac{n}{\sum (1/X_i)} $ | $ \dfrac{\sum f_i}{\sum f_i / X_i} $ | Speeds-over-equal-distances, rates. |
 
-**Inequality (always true for positive observations):** \( \text{AM} \ge \text{GM} \ge \text{HM} \) with equality iff all values are equal.
+**Inequality (always true for positive observations):** $ \text{AM} \ge \text{GM} \ge \text{HM} $ with equality iff all values are equal.
 
-**Cross-link:** \( \text{GM}^2 = \text{AM} \times \text{HM} \) **only for two positive numbers**.
+**Cross-link:** $ \text{GM}^2 = \text{AM} \times \text{HM} $ **only for two positive numbers**.
 
 ## 0.3 Logarithm, antilog, exponent micro-refresher
 
 | Identity | Use |
 |----------|-----|
-| \( \log(ab) = \log a + \log b \) | GM, splicing |
-| \( \log(a/b) = \log a - \log b \) | index deflation |
-| \( \log a^n = n \log a \) | compounded growth |
-| \( e^x \cdot e^y = e^{x+y} \) | Poisson, normal |
+| $ \log(ab) = \log a + \log b $ | GM, splicing |
+| $ \log(a/b) = \log a - \log b $ | index deflation |
+| $ \log a^n = n \log a $ | compounded growth |
+| $ e^x \cdot e^y = e^{x+y} $ | Poisson, normal |
 
 Numerical anchors to memorise:
 
-| \(x\) | \(\log_{10} x\) |
+| $x$ | $\log_{10} x$ |
 |------|------|
 | 2 | 0.3010 |
 | 3 | 0.4771 |
 | 5 | 0.6990 |
 | 7 | 0.8451 |
-| \(\pi\) | 0.4971 |
-| \(e\) | 0.4343 |
+| $\pi$ | 0.4971 |
+| $e$ | 0.4343 |
 
 ## 0.4 Combinatorics — only what you'll need
 
 | Symbol | Meaning | Formula |
 |--------|---------|---------|
-| \( n! \) | factorial | \( n \cdot (n-1) \cdots 1 \), and \( 0! = 1 \) |
-| \( {}^n P_r \) | permutations | \( \dfrac{n!}{(n-r)!} \) |
-| \( {}^n C_r \) | combinations | \( \dfrac{n!}{r!(n-r)!} \) |
+| $ n! $ | factorial | $ n \cdot (n-1) \cdots 1 $, and $ 0! = 1 $ |
+| $ {}^n P_r $ | permutations | $ \dfrac{n!}{(n-r)!} $ |
+| $ {}^n C_r $ | combinations | $ \dfrac{n!}{r!(n-r)!} $ |
 
-Memorise the Pascal row up to \(n=10\) — it solves binomial probability and sampling questions in 5 seconds.
+Memorise the Pascal row up to $n=10$ — it solves binomial probability and sampling questions in 5 seconds.
 
 ## 0.5 Greek-letter cheat-sheet (population vs sample)
 
 | Quantity | Population (parameter) | Sample (statistic) |
 |----------|-----------------------|--------------------|
-| Mean | \( \mu \) | \( \bar X \) |
-| Variance | \( \sigma^2 \) | \( s^2 \) |
-| Std deviation | \( \sigma \) | \( s \) |
-| Proportion | \( P \) (or \( \pi \)) | \( p \) |
-| Correlation | \( \rho \) | \( r \) |
-| Size | \( N \) | \( n \) |
+| Mean | $ \mu $ | $ \bar X $ |
+| Variance | $ \sigma^2 $ | $ s^2 $ |
+| Std deviation | $ \sigma $ | $ s $ |
+| Proportion | $ P $ (or $ \pi $) | $ p $ |
+| Correlation | $ \rho $ | $ r $ |
+| Size | $ N $ | $ n $ |
 
-> **Examiner trap.** Whenever a question swaps \( N \) and \( n \) inside a variance formula, one of the four options will be the wrong-divisor answer. Always read which formula is asked: **population variance** uses \( N \); **sample variance** uses \( n-1 \).
+> **Examiner trap.** Whenever a question swaps $ N $ and $ n $ inside a variance formula, one of the four options will be the wrong-divisor answer. Always read which formula is asked: **population variance** uses $ N $; **sample variance** uses $ n-1 $.
 
 ---
 
@@ -273,14 +273,14 @@ Suppose a class is written **20–30**.
 
 | Term | Meaning | Value here |
 |------|---------|-----------|
-| Lower limit (\(L\)) | Smallest value the class includes | 20 |
-| Upper limit (\(U\)) | Largest value the class includes | 30 |
-| Class width (\(h\)) | \( U - L \) | 10 |
-| Class mark / mid-value (\(m\)) | \( (L+U)/2 \) | 25 |
-| Class boundaries (continuous form) | \( L - 0.5 \) to \( U + 0.5 \) (for inclusive series) | 19.5 – 30.5 |
-| Frequency (\(f\)) | Count of observations in the class | given |
-| Cumulative frequency | Running total of \(f\) | computed |
-| Relative frequency | \( f / \sum f \) | a proportion |
+| Lower limit ($L$) | Smallest value the class includes | 20 |
+| Upper limit ($U$) | Largest value the class includes | 30 |
+| Class width ($h$) | $ U - L $ | 10 |
+| Class mark / mid-value ($m$) | $ (L+U)/2 $ | 25 |
+| Class boundaries (continuous form) | $ L - 0.5 $ to $ U + 0.5 $ (for inclusive series) | 19.5 – 30.5 |
+| Frequency ($f$) | Count of observations in the class | given |
+| Cumulative frequency | Running total of $f$ | computed |
+| Relative frequency | $ f / \sum f $ | a proportion |
 
 **Inclusive vs exclusive class:**
 
@@ -310,7 +310,7 @@ To convert inclusive → exclusive: subtract 0.5 from each lower limit and add 0
 
 ## 1.7 Histogram with unequal class widths — the only trap
 
-When class widths differ, you must plot **frequency density** (= \( f / h \)) on the y-axis, **not** raw frequency. Otherwise the visual impression lies.
+When class widths differ, you must plot **frequency density** (= $ f / h $) on the y-axis, **not** raw frequency. Otherwise the visual impression lies.
 
 **Example.** Classes 0–10 (f=20), 10–20 (f=30), 20–40 (f=40).
 Density = 20/10 = 2, 30/10 = 3, 40/20 = **2** (not 4).
@@ -320,7 +320,7 @@ Density = 20/10 = 2, 30/10 = 3, 40/20 = **2** (not 4).
 > **Q 1.1.** Class 30 – 40 has frequency 25. Its class mark is:
 > **(a) 30** **(b) 35** **(c) 40** **(d) 25**
 >
-> **Soln.** Class mark \( = (L+U)/2 = (30+40)/2 = 35 \). **Ans (b).**
+> **Soln.** Class mark $ = (L+U)/2 = (30+40)/2 = 35 $. **Ans (b).**
 >
 > *Trap.* (a) lower limit, (c) upper limit, (d) the frequency itself.
 
@@ -337,7 +337,7 @@ Density = 20/10 = 2, 30/10 = 3, 40/20 = **2** (not 4).
 > **Q 1.4.** Which graph is best for locating the median?
 > **(a) Pie** **(b) Histogram** **(c) Ogive** **(d) Bar**
 >
-> **Soln.** From a less-than ogive, drop a perpendicular at \( N/2 \) cumulative frequency to the x-axis → **median**. **Ans (c).**
+> **Soln.** From a less-than ogive, drop a perpendicular at $ N/2 $ cumulative frequency to the x-axis → **median**. **Ans (c).**
 
 > **Q 1.5.** Below is a frequency table.
 >
@@ -402,7 +402,7 @@ Density = 20/10 = 2, 30/10 = 3, 40/20 = **2** (not 4).
 
 1. State the formula for class mark.
 2. List four methods of collecting primary data.
-3. Write the formula for the angle in a pie chart corresponding to a frequency \(f\) when total frequency is \(N\).
+3. Write the formula for the angle in a pie chart corresponding to a frequency $f$ when total frequency is $N$.
 4. Why do histogram bars touch but bar-chart bars don't?
 5. What is plotted on the y-axis of a histogram with unequal class widths?
 
@@ -540,12 +540,12 @@ A company's sales grew by 10% in Year 1 and 40% in Year 2. What is the average a
 | Angle | They ask it as | Marks-share |
 |-------|----------------|-------------|
 | Pure formula | "Find mean of … " (raw / discrete / grouped) | 3-4 Qs |
-| Properties of AM | "Sum of deviations from mean = ?" → 0; "If each value increased by k, mean = ?" → \(\bar X + k\) | 1-2 Qs |
-| Combined / weighted mean | Two groups with sizes \(n_1, n_2\) and means \(\bar X_1, \bar X_2\) | 1-2 Qs |
+| Properties of AM | "Sum of deviations from mean = ?" → 0; "If each value increased by k, mean = ?" → $\bar X + k$ | 1-2 Qs |
+| Combined / weighted mean | Two groups with sizes $n_1, n_2$ and means $\bar X_1, \bar X_2$ | 1-2 Qs |
 | Median / Mode of grouped data | Direct formula with class containing the median / mode | 2-3 Qs |
 | Empirical mode | Mode = 3 Median − 2 Mean | 1 Q |
 | Partition values | Quartiles, deciles, percentiles from ogive or formula | 1-2 Qs |
-| AM-GM-HM relation | AM ≥ GM ≥ HM; \( GM^2 = AM \cdot HM \) (for two values) | 1 Q |
+| AM-GM-HM relation | AM ≥ GM ≥ HM; $ GM^2 = AM \cdot HM $ (for two values) | 1 Q |
 
 ## 2.2 Mind map
 
@@ -567,25 +567,25 @@ graph TD
 
 | Data type | Formula |
 |-----------|---------|
-| Raw / ungrouped | \( \bar X = \dfrac{\sum X_i}{n} \) |
-| Discrete frequency | \( \bar X = \dfrac{\sum f_i X_i}{\sum f_i} \) |
-| Continuous (grouped) | \( \bar X = \dfrac{\sum f_i m_i}{\sum f_i} \), \( m_i \) = class mark |
+| Raw / ungrouped | $ \bar X = \dfrac{\sum X_i}{n} $ |
+| Discrete frequency | $ \bar X = \dfrac{\sum f_i X_i}{\sum f_i} $ |
+| Continuous (grouped) | $ \bar X = \dfrac{\sum f_i m_i}{\sum f_i} $, $ m_i $ = class mark |
 
 ### Assumed-mean (short-cut) method
 
-Pick any \(A\) (preferably a middle class mark). Let \(d_i = X_i - A\).
+Pick any $A$ (preferably a middle class mark). Let $d_i = X_i - A$.
 
-\[
+$$
 \bar X = A + \dfrac{\sum f_i d_i}{\sum f_i}
-\]
+$$
 
 ### Step-deviation method
 
-Pick \(A\), let \(u_i = (X_i - A)/h\) where \(h\) = common class width.
+Pick $A$, let $u_i = (X_i - A)/h$ where $h$ = common class width.
 
-\[
+$$
 \bar X = A + \dfrac{\sum f_i u_i}{\sum f_i} \times h
-\]
+$$
 
 This is the fastest for grouped data with equal class widths. **Memorise it.**
 
@@ -593,11 +593,11 @@ This is the fastest for grouped data with equal class widths. **Memorise it.**
 
 | # | Property | One-line proof / use |
 |---|----------|---------------------|
-| P1 | \( \sum (X_i - \bar X) = 0 \) | by definition of mean |
-| P2 | \( \sum (X_i - \bar X)^2 \) is **minimum** (less than for any other constant) | least-squares property |
-| P3 | If \( Y_i = X_i + k \) then \( \bar Y = \bar X + k \) | shift property |
-| P4 | If \( Y_i = c X_i \) then \( \bar Y = c \bar X \) | scale property |
-| P5 | Combined mean of two groups: \( \bar X_{12} = \dfrac{n_1 \bar X_1 + n_2 \bar X_2}{n_1 + n_2} \) | weighted by size |
+| P1 | $ \sum (X_i - \bar X) = 0 $ | by definition of mean |
+| P2 | $ \sum (X_i - \bar X)^2 $ is **minimum** (less than for any other constant) | least-squares property |
+| P3 | If $ Y_i = X_i + k $ then $ \bar Y = \bar X + k $ | shift property |
+| P4 | If $ Y_i = c X_i $ then $ \bar Y = c \bar X $ | scale property |
+| P5 | Combined mean of two groups: $ \bar X_{12} = \dfrac{n_1 \bar X_1 + n_2 \bar X_2}{n_1 + n_2} $ | weighted by size |
 
 <div class="mnemonic"><strong>P1 is asked every alternate paper.</strong> If a question says "the algebraic sum of the deviations of values from their arithmetic mean is …", the answer is <strong>zero</strong>. Move on.</div>
 
@@ -611,45 +611,45 @@ This is the fastest for grouped data with equal class widths. **Memorise it.**
 | Avg cost per unit when fixed expenditure spent at different prices | **HM** | Same as above with money |
 | Average of measurements | **AM** | Default |
 
-**Two-value identity:** \( \text{AM} \times \text{HM} = \text{GM}^2 \) (only for two positive numbers).
+**Two-value identity:** $ \text{AM} \times \text{HM} = \text{GM}^2 $ (only for two positive numbers).
 
 ## 2.6 Median — formula for grouped data
 
-\[
+$$
 \text{Median} = L + \dfrac{(N/2) - F}{f} \times h
-\]
+$$
 
 | Symbol | Meaning |
 |--------|---------|
-| \(L\) | lower boundary of the **median class** |
-| \(N\) | total frequency, \(\sum f_i\) |
-| \(F\) | cumulative frequency **before** the median class |
-| \(f\) | frequency of the median class |
-| \(h\) | class width |
+| $L$ | lower boundary of the **median class** |
+| $N$ | total frequency, $\sum f_i$ |
+| $F$ | cumulative frequency **before** the median class |
+| $f$ | frequency of the median class |
+| $h$ | class width |
 
-**Median class** = the class where cumulative frequency first reaches \( N/2 \).
+**Median class** = the class where cumulative frequency first reaches $ N/2 $.
 
 ## 2.7 Mode — formula for grouped data
 
-\[
+$$
 \text{Mode} = L + \dfrac{f_1 - f_0}{2 f_1 - f_0 - f_2} \times h
-\]
+$$
 
 | Symbol | Meaning |
 |--------|---------|
-| \(L\) | lower boundary of the **modal class** (the class with maximum freq) |
-| \(f_1\) | frequency of modal class |
-| \(f_0\) | frequency of class **just before** modal class |
-| \(f_2\) | frequency of class **just after** modal class |
-| \(h\) | class width |
+| $L$ | lower boundary of the **modal class** (the class with maximum freq) |
+| $f_1$ | frequency of modal class |
+| $f_0$ | frequency of class **just before** modal class |
+| $f_2$ | frequency of class **just after** modal class |
+| $h$ | class width |
 
 ## 2.8 Empirical relation (memorise both forms)
 
-\[
+$$
 \boxed{\text{Mode} = 3\,\text{Median} - 2\,\text{Mean}}
 \quad \Longleftrightarrow \quad
 \text{Mean} - \text{Mode} = 3(\text{Mean} - \text{Median})
-\]
+$$
 
 Used when the question gives two of the three and asks the third.
 
@@ -657,12 +657,12 @@ Used when the question gives two of the three and asks the third.
 
 | Quantity | What it splits | Formula (grouped data) |
 |----------|---------------|------------------------|
-| Median (\(Q_2\)) | bottom 50% / top 50% | \( L + \dfrac{N/2 - F}{f} h \) |
-| Quartile \(Q_k\) (\(k=1,2,3\)) | quarters | replace \(N/2\) with \(kN/4\) |
-| Decile \(D_k\) (\(k=1\ldots9\)) | tenths | replace with \(kN/10\) |
-| Percentile \(P_k\) (\(k=1\ldots99\)) | hundredths | replace with \(kN/100\) |
+| Median ($Q_2$) | bottom 50% / top 50% | $ L + \dfrac{N/2 - F}{f} h $ |
+| Quartile $Q_k$ ($k=1,2,3$) | quarters | replace $N/2$ with $kN/4$ |
+| Decile $D_k$ ($k=1\ldots9$) | tenths | replace with $kN/10$ |
+| Percentile $P_k$ ($k=1\ldots99$) | hundredths | replace with $kN/100$ |
 
-So \( Q_2 = D_5 = P_{50} = \) Median.
+So $ Q_2 = D_5 = P_{50} = $ Median.
 
 ## 2.10 Which average for which shape?
 
@@ -683,24 +683,24 @@ negative skew (left-tailed):     ←  Mn  Me  Mo
 
 > **Q 2.1.** Mean of 5, 7, 9, 11, 13.
 >
-> \( \bar X = (5+7+9+11+13)/5 = 45/5 = \mathbf{9} \).
+> $ \bar X = (5+7+9+11+13)/5 = 45/5 = \mathbf{9} $.
 
 > **Q 2.2.** A class has 30 students with mean weight 50 kg. Another has 20 with mean 60 kg. Combined mean?
 >
-> \( \bar X_{12} = \dfrac{30 \cdot 50 + 20 \cdot 60}{30 + 20} = \dfrac{1500 + 1200}{50} = \dfrac{2700}{50} = \mathbf{54\text{ kg}} \).
+> $ \bar X_{12} = \dfrac{30 \cdot 50 + 20 \cdot 60}{30 + 20} = \dfrac{1500 + 1200}{50} = \dfrac{2700}{50} = \mathbf{54\text{ kg}} $.
 
 > **Q 2.3.** The mean of 10 values is 25. If each value is multiplied by 4 and then 6 is subtracted, the new mean is:
 >
-> Apply P3 then P4: new mean \( = 4 \cdot 25 - 6 = \mathbf{94} \).
+> Apply P3 then P4: new mean $ = 4 \cdot 25 - 6 = \mathbf{94} $.
 
 > **Q 2.4.** A man travels 60 km at 30 km/h and another 60 km at 60 km/h. Average speed?
 >
-> Equal distances → use HM: \( \dfrac{2}{(1/30)+(1/60)} = \dfrac{2}{3/60} = \dfrac{120}{3} = \mathbf{40 \text{ km/h}} \).
+> Equal distances → use HM: $ \dfrac{2}{(1/30)+(1/60)} = \dfrac{2}{3/60} = \dfrac{120}{3} = \mathbf{40 \text{ km/h}} $.
 > *Trap.* AM gives 45 — wrong because times differ.
 
 > **Q 2.5.** GM of 4 and 16.
 >
-> \( \sqrt{4 \cdot 16} = \sqrt{64} = \mathbf{8} \).
+> $ \sqrt{4 \cdot 16} = \sqrt{64} = \mathbf{8} $.
 
 > **Q 2.6.** For the table below, find the median.
 >
@@ -709,13 +709,13 @@ negative skew (left-tailed):     ←  Mn  Me  Mo
 > | f     | 5    | 8     | 15    | 7     | 5     |
 >
 > N = 40, N/2 = 20. CF: 5, 13, 28, 35, 40 → median class = 20–30 (first to cross 20).
-> \( L = 20, F = 13, f = 15, h = 10 \).
-> Median = \( 20 + \dfrac{20 - 13}{15} \times 10 = 20 + 7/15 \cdot 10 = 20 + 4.67 = \mathbf{24.67} \).
+> $ L = 20, F = 13, f = 15, h = 10 $.
+> Median = $ 20 + \dfrac{20 - 13}{15} \times 10 = 20 + 7/15 \cdot 10 = 20 + 4.67 = \mathbf{24.67} $.
 
 > **Q 2.7.** Same table, find mode.
 >
-> Modal class = 20–30 (highest f). \( L = 20, f_1 = 15, f_0 = 8, f_2 = 7, h = 10 \).
-> Mode = \( 20 + \dfrac{15 - 8}{2 \cdot 15 - 8 - 7} \times 10 = 20 + \dfrac{7}{15} \cdot 10 = 20 + 4.67 = \mathbf{24.67} \).
+> Modal class = 20–30 (highest f). $ L = 20, f_1 = 15, f_0 = 8, f_2 = 7, h = 10 $.
+> Mode = $ 20 + \dfrac{15 - 8}{2 \cdot 15 - 8 - 7} \times 10 = 20 + \dfrac{7}{15} \cdot 10 = 20 + 4.67 = \mathbf{24.67} $.
 >
 > Coincidence here; usually different.
 
@@ -736,13 +736,13 @@ negative skew (left-tailed):     ←  Mn  Me  Mo
 >
 > Mean > Median > Mode → **Mean** is largest.
 
-> **Q 2.12.** \( D_5 \) of a distribution = ?
+> **Q 2.12.** $ D_5 $ of a distribution = ?
 >
-> \( D_5 = \) Median.
+> $ D_5 = $ Median.
 
 > **Q 2.13.** Sum of deviations of 10 observations from 17 is 30; from 20 is 0. The mean is:
 >
-> Sum of deviations from \(c\) = 0 ⇔ \(c = \bar X\). So **mean = 20**.
+> Sum of deviations from $c$ = 0 ⇔ $c = \bar X$. So **mean = 20**.
 
 > **Q 2.14.** Which measure is **most affected by extreme values**?
 >
@@ -750,16 +750,16 @@ negative skew (left-tailed):     ←  Mn  Me  Mo
 
 > **Q 2.15.** GM of 2, 4, 8.
 >
-> \( (2 \cdot 4 \cdot 8)^{1/3} = 64^{1/3} = \mathbf{4} \).
+> $ (2 \cdot 4 \cdot 8)^{1/3} = 64^{1/3} = \mathbf{4} $.
 
 ## 2.12 Trap-recognition card
 
 | Trap | Wrong answer it produces | Defence |
 |------|--------------------------|---------|
 | Equal distances, but candidate uses AM | Wrong faster-by-1 number | If "equal distance, different speeds" → HM. |
-| Step-deviation forgetting × \(h\) | Off by factor 10 (or whatever \(h\) is) | Always end with "× h". |
-| Median formula uses \(F\) of median class itself | Number is too low | \(F\) = CF **before** the median class. |
-| Mode formula sign flip | Negative answer | Numerator: \(f_1 - f_0\); denominator: \(2f_1 - f_0 - f_2\). |
+| Step-deviation forgetting × $h$ | Off by factor 10 (or whatever $h$ is) | Always end with "× h". |
+| Median formula uses $F$ of median class itself | Number is too low | $F$ = CF **before** the median class. |
+| Mode formula sign flip | Negative answer | Numerator: $f_1 - f_0$; denominator: $2f_1 - f_0 - f_2$. |
 | Empirical relation memorised wrong | Mode = 2 Med − 3 Mean | Correct: Mode = 3 Med − 2 Mean. |
 
 ## 2.13 Mini-mock (10 Qs, fully solved)
@@ -768,14 +768,14 @@ negative skew (left-tailed):     ←  Mn  Me  Mo
 |---|----------|--------|
 | 1 | Mean of 12, 18, 24, 30. | 21 |
 | 2 | Combined mean: 40 boys (avg 60) + 60 girls (avg 50). | (40·60+60·50)/100 = 54 |
-| 3 | If mean of \(X\) is 50, mean of \(Y = 2X - 5\)? | 95 |
+| 3 | If mean of $X$ is 50, mean of $Y = 2X - 5$? | 95 |
 | 4 | Sum of deviations from mean = ? | 0 |
 | 5 | AM = 12, GM = 6. HM? | GM² = AM·HM → HM = 36/12 = 3 |
 | 6 | A car covers 100 km @ 50 km/h, returns @ 25 km/h. Avg speed? | HM: 2/(1/50+1/25) = 2/(3/50) = 100/3 ≈ 33.33 km/h |
 | 7 | Mode = 30, Mean = 25. Median? | Mode = 3 Med − 2 Mean → 30 = 3 Med − 50 → Med = 80/3 ≈ 26.67 |
 | 8 | If each obs increased by 5, mean increases by? | 5 |
 | 9 | If each obs multiplied by 3, mean multiplied by? | 3 |
-| 10 | Median is the same as which decile? | \(D_5\) |
+| 10 | Median is the same as which decile? | $D_5$ |
 
 ## 2.14 Active-recall prompts
 
@@ -877,7 +877,7 @@ Company A: mean profit ₹60,000, SD ₹15,000. Company B: mean profit ₹80,000
 | Angle | Their pet question |
 |-------|--------------------|
 | Range, QD, MD, SD basics | Direct formula |
-| Variance — computational form | Given \(\sum X, \sum X^2\), find \(\sigma^2\) |
+| Variance — computational form | Given $\sum X, \sum X^2$, find $\sigma^2$ |
 | Effect of change of origin / scale on SD | Origin doesn't change SD; scale scales it |
 | Combined SD (two groups) | One formula they expect verbatim |
 | Coefficient of variation (CV) | "Which series is more consistent / less variable?" → smaller CV |
@@ -885,31 +885,31 @@ Company A: mean profit ₹60,000, SD ₹15,000. Company B: mean profit ₹80,000
 
 ## 3.2 Five measures, one table
 
-| Measure | Formula (raw data, \(n\) obs) | Frequency / grouped |
+| Measure | Formula (raw data, $n$ obs) | Frequency / grouped |
 |---------|------------------------------|--------------------|
-| Range | \( \max - \min \) | upper limit of last class − lower limit of first class |
-| Quartile deviation (Semi-IQR) | \( (Q_3 - Q_1)/2 \) | same |
-| Mean deviation about \(\bar X\) | \( \dfrac{\sum |X_i - \bar X|}{n} \) | \( \dfrac{\sum f_i |X_i - \bar X|}{N} \) |
-| Variance \(\sigma^2\) | \( \dfrac{\sum (X_i - \bar X)^2}{n} \) | \( \dfrac{\sum f_i (X_i - \bar X)^2}{N} \) |
-| Std deviation \(\sigma\) | \( \sqrt{\sigma^2} \) | same |
+| Range | $ \max - \min $ | upper limit of last class − lower limit of first class |
+| Quartile deviation (Semi-IQR) | $ (Q_3 - Q_1)/2 $ | same |
+| Mean deviation about $\bar X$ | $ \dfrac{\sum \lvert X_i - \bar X \rvert}{n} $ | $ \dfrac{\sum f_i \lvert X_i - \bar X \rvert}{N} $ |
+| Variance $\sigma^2$ | $ \dfrac{\sum (X_i - \bar X)^2}{n} $ | $ \dfrac{\sum f_i (X_i - \bar X)^2}{N} $ |
+| Std deviation $\sigma$ | $ \sqrt{\sigma^2} $ | same |
 
 ## 3.3 Computational form of variance — memorise this
 
-\[
+$$
 \boxed{\sigma^2 = \dfrac{\sum X^2}{n} - \bar X^2 = \dfrac{\sum X^2}{n} - \left( \dfrac{\sum X}{n} \right)^2}
-\]
+$$
 
 For frequency:
 
-\[
+$$
 \sigma^2 = \dfrac{\sum f X^2}{N} - \left( \dfrac{\sum f X}{N} \right)^2
-\]
+$$
 
-Step-deviation (when class widths equal \(h\), \(u = (X-A)/h\)):
+Step-deviation (when class widths equal $h$, $u = (X-A)/h$):
 
-\[
+$$
 \sigma^2 = h^2 \left[ \dfrac{\sum f u^2}{N} - \left( \dfrac{\sum f u}{N} \right)^2 \right]
-\]
+$$
 
 This is the single most-used formula in the entire JSO paper — it appears directly or indirectly in **at least 6 questions per paper**.
 
@@ -917,32 +917,32 @@ This is the single most-used formula in the entire JSO paper — it appears dire
 
 | Property | Result | Memory hook |
 |----------|--------|-------------|
-| **Origin-invariant**: if \(Y = X + k\) | \(\sigma_Y = \sigma_X\), \(\sigma_Y^2 = \sigma_X^2\) | shifting all values doesn't change spread |
-| **Scale-multiplied**: if \(Y = cX\) | \(\sigma_Y = |c| \sigma_X\), \(\sigma_Y^2 = c^2 \sigma_X^2\) | scale × |c| |
-| **Linear**: if \(Y = aX + b\) | \(\sigma_Y = |a| \sigma_X\) | only \(a\) matters |
+| **Origin-invariant**: if $Y = X + k$ | $\sigma_Y = \sigma_X$, $\sigma_Y^2 = \sigma_X^2$ | shifting all values doesn't change spread |
+| **Scale-multiplied**: if $Y = cX$ | $\sigma_Y = \lvert c \rvert \sigma_X$, $\sigma_Y^2 = c^2 \sigma_X^2$ | scale × &#124;c&#124; |
+| **Linear**: if $Y = aX + b$ | $\sigma_Y = \lvert a \rvert \sigma_X$ | only $a$ matters |
 | Variance of constant | 0 | no spread |
-| **Sum of independent** \(X, Y\) | \(\sigma_{X+Y}^2 = \sigma_X^2 + \sigma_Y^2\) | only when independent |
-| **Difference of independent** \(X, Y\) | \(\sigma_{X-Y}^2 = \sigma_X^2 + \sigma_Y^2\) | yes, **plus** — variances always add |
+| **Sum of independent** $X, Y$ | $\sigma_{X+Y}^2 = \sigma_X^2 + \sigma_Y^2$ | only when independent |
+| **Difference of independent** $X, Y$ | $\sigma_{X-Y}^2 = \sigma_X^2 + \sigma_Y^2$ | yes, **plus** — variances always add |
 
 <div class="pitfall"><strong>Trap.</strong> Var(X − Y) = Var(X) + Var(Y) when independent. Many candidates write minus. Variance is non-negative, so subtraction would risk negatives — that's the giveaway.</div>
 
 ## 3.5 Combined Standard Deviation
 
-Two groups, sizes \(n_1, n_2\), means \(\bar X_1, \bar X_2\), SDs \(\sigma_1, \sigma_2\). Let \(\bar X_{12}\) be the combined mean. Then:
+Two groups, sizes $n_1, n_2$, means $\bar X_1, \bar X_2$, SDs $\sigma_1, \sigma_2$. Let $\bar X_{12}$ be the combined mean. Then:
 
-\[
+$$
 \boxed{\sigma_{12}^2 = \dfrac{n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)}{n_1 + n_2}}
-\]
+$$
 
-where \(d_1 = \bar X_1 - \bar X_{12}\), \(d_2 = \bar X_2 - \bar X_{12}\).
+where $d_1 = \bar X_1 - \bar X_{12}$, $d_2 = \bar X_2 - \bar X_{12}$.
 
 Memory hook: each group contributes its own variance **plus** its squared deviation from the overall mean, weighted by size.
 
 ## 3.6 Coefficient of Variation (CV)
 
-\[
+$$
 \text{CV} = \dfrac{\sigma}{\bar X} \times 100\%
-\]
+$$
 
 | Use | Why |
 |-----|-----|
@@ -955,18 +955,18 @@ Examiners ALWAYS phrase this as "which is more consistent / homogeneous / stable
 
 | Measure | Coefficient |
 |---------|-------------|
-| Range | \( (X_{\max} - X_{\min})/(X_{\max} + X_{\min}) \) |
-| Quartile deviation | \( (Q_3 - Q_1)/(Q_3 + Q_1) \) |
-| Mean deviation | \( \text{MD}/\text{Mean} \) (or median, depending on which MD is taken) |
-| SD (CV) | \( \sigma / \bar X \times 100\% \) |
+| Range | $ (X_{\max} - X_{\min})/(X_{\max} + X_{\min}) $ |
+| Quartile deviation | $ (Q_3 - Q_1)/(Q_3 + Q_1) $ |
+| Mean deviation | $ \text{MD}/\text{Mean} $ (or median, depending on which MD is taken) |
+| SD (CV) | $ \sigma / \bar X \times 100\% $ |
 
 ## 3.8 Empirical relation between MD and SD (for normal-ish data)
 
-\[
+$$
 \text{QD} : \text{MD} : \text{SD} \;\approx\; \dfrac{2}{3} \sigma : \dfrac{4}{5} \sigma : \sigma \;\approx\; 10 : 12 : 15
-\]
+$$
 
-i.e., \( \text{QD} \approx 0.6745 \sigma \), \( \text{MD} \approx 0.7979 \sigma \). Asked as a one-mark fact question.
+i.e., $ \text{QD} \approx 0.6745 \sigma $, $ \text{MD} \approx 0.7979 \sigma $. Asked as a one-mark fact question.
 
 ## 3.9 Lorenz curve
 
@@ -974,34 +974,34 @@ i.e., \( \text{QD} \approx 0.6745 \sigma \), \( \text{MD} \approx 0.7979 \sigma 
 |------|---------|---------|
 | Plot of cumulative % of population (x) vs cumulative % of variable (y) | Income / wealth inequality | Closer to 45° "line of equality" → less inequality. Bigger bow → more inequality. |
 
-The **Gini coefficient** = area between the Lorenz curve and the line of equality / total area below the line. \(0\) = perfect equality, \(1\) = perfect inequality.
+The **Gini coefficient** = area between the Lorenz curve and the line of equality / total area below the line. $0$ = perfect equality, $1$ = perfect inequality.
 
 ## 3.10 Worked PYQ-style examples
 
 > **Q 3.1.** Find variance of 4, 6, 8, 10, 12.
 >
-> \(\bar X = 40/5 = 8\). Deviations: −4, −2, 0, 2, 4. Squares: 16, 4, 0, 4, 16. Sum = 40.
-> \(\sigma^2 = 40/5 = \mathbf{8}\). \(\sigma = 2\sqrt{2} \approx 2.83\).
+> $\bar X = 40/5 = 8$. Deviations: −4, −2, 0, 2, 4. Squares: 16, 4, 0, 4, 16. Sum = 40.
+> $\sigma^2 = 40/5 = \mathbf{8}$. $\sigma = 2\sqrt{2} \approx 2.83$.
 
-> **Q 3.2.** \(\sum X = 50, \sum X^2 = 510\) for \(n = 10\). Find SD.
+> **Q 3.2.** $\sum X = 50, \sum X^2 = 510$ for $n = 10$. Find SD.
 >
-> \(\bar X = 5\). \(\sigma^2 = 510/10 - 25 = 51 - 25 = 26\). \(\sigma = \sqrt{26} \approx \mathbf{5.10}\).
+> $\bar X = 5$. $\sigma^2 = 510/10 - 25 = 51 - 25 = 26$. $\sigma = \sqrt{26} \approx \mathbf{5.10}$.
 
-> **Q 3.3.** SD of \(X\) is 6. SD of \(Y = 3X + 7\)?
+> **Q 3.3.** SD of $X$ is 6. SD of $Y = 3X + 7$?
 >
-> \(|3| \cdot 6 = \mathbf{18}\). The +7 contributes nothing.
+> $|3| \cdot 6 = \mathbf{18}$. The +7 contributes nothing.
 
 > **Q 3.4.** Two series: A has mean 50, SD 10; B has mean 80, SD 12. More consistent?
 >
 > CV(A) = 10/50 = 20%. CV(B) = 12/80 = 15%. **B is more consistent** (lower CV).
 
-> **Q 3.5.** Variance of first \(n\) natural numbers is:
+> **Q 3.5.** Variance of first $n$ natural numbers is:
 >
-> Standard fact: \( \sigma^2 = \dfrac{n^2 - 1}{12} \). Memorise.
+> Standard fact: $ \sigma^2 = \dfrac{n^2 - 1}{12} $. Memorise.
 >
-> *Proof sketch.* \( \sum k = n(n+1)/2, \sum k^2 = n(n+1)(2n+1)/6 \), substitute, simplify.
+> *Proof sketch.* $ \sum k = n(n+1)/2, \sum k^2 = n(n+1)(2n+1)/6 $, substitute, simplify.
 
-> **Q 3.6.** \(Q_1 = 25, Q_3 = 45\). Quartile deviation? Coefficient?
+> **Q 3.6.** $Q_1 = 25, Q_3 = 45$. Quartile deviation? Coefficient?
 >
 > QD = (45 − 25)/2 = **10**. Coefficient = (45 − 25)/(45 + 25) = 20/70 = **2/7 ≈ 0.286**.
 
@@ -1011,13 +1011,13 @@ The **Gini coefficient** = area between the Lorenz curve and the line of equalit
 
 > **Q 3.8.** A group of 50 has mean 60, SD 5. A group of 30 has mean 60, SD 6. Combined SD?
 >
-> Means equal → \(d_1 = d_2 = 0\). Combined variance = (50·25 + 30·36)/80 = (1250 + 1080)/80 = 2330/80 = 29.125. SD = \(\sqrt{29.125} \approx \mathbf{5.40}\).
+> Means equal → $d_1 = d_2 = 0$. Combined variance = (50·25 + 30·36)/80 = (1250 + 1080)/80 = 2330/80 = 29.125. SD = $\sqrt{29.125} \approx \mathbf{5.40}$.
 
 > **Q 3.9.** A group has mean 50 SD 4 (n = 60); another mean 55 SD 5 (n = 40). Combined SD?
 >
 > Combined mean = (60·50 + 40·55)/100 = (3000 + 2200)/100 = 52.
-> \(d_1 = 50 − 52 = −2, d_2 = 55 − 52 = 3\).
-> Comb var = (60(16+4) + 40(25+9))/100 = (60·20 + 40·34)/100 = (1200 + 1360)/100 = 25.6. SD = \(\sqrt{25.6} \approx \mathbf{5.06}\).
+> $d_1 = 50 − 52 = −2, d_2 = 55 − 52 = 3$.
+> Comb var = (60(16+4) + 40(25+9))/100 = (60·20 + 40·34)/100 = (1200 + 1360)/100 = 25.6. SD = $\sqrt{25.6} \approx \mathbf{5.06}$.
 
 > **Q 3.10.** For a normal-ish distribution, MD/SD ≈ ?
 >
@@ -1031,9 +1031,9 @@ The **Gini coefficient** = area between the Lorenz curve and the line of equalit
 >
 > Origin invariant → SD remains **4**.
 
-> **Q 3.13.** Variance of \(2X + 3Y\) where Var(X) = 4, Var(Y) = 9, X and Y independent?
+> **Q 3.13.** Variance of $2X + 3Y$ where Var(X) = 4, Var(Y) = 9, X and Y independent?
 >
-> \(2^2 \cdot 4 + 3^2 \cdot 9 = 16 + 81 = \mathbf{97}\).
+> $2^2 \cdot 4 + 3^2 \cdot 9 = 16 + 81 = \mathbf{97}$.
 
 > **Q 3.14.** The CV is used to compare:
 >
@@ -1049,7 +1049,7 @@ The **Gini coefficient** = area between the Lorenz curve and the line of equalit
 |------|-------------------|-----|
 | "SD changes when origin changes" | They confuse with mean | SD is **origin-invariant**. |
 | "Var(X − Y) = Var(X) − Var(Y)" | Algebraic instinct | Variances **add** even on subtraction (independent case). |
-| Forgot the \(h^2\) in step-deviation | They put just \(h\) | Variance scales with **square** of factor. |
+| Forgot the $h^2$ in step-deviation | They put just $h$ | Variance scales with **square** of factor. |
 | Compared raw SDs to claim consistency | When means differ | Use **CV**, not SD. |
 
 ## 3.12 Mini-mock
@@ -1070,7 +1070,7 @@ The **Gini coefficient** = area between the Lorenz curve and the line of equalit
 ## 3.13 Active-recall prompts
 
 1. Write the computational form of variance. Why is it preferred?
-2. Effect on SD when (a) origin changes, (b) scale changes by factor \(c\).
+2. Effect on SD when (a) origin changes, (b) scale changes by factor $c$.
 3. Write the combined SD formula in full.
 4. State the empirical ratio QD : MD : SD.
 5. Why use CV instead of SD when comparing two series?
@@ -1168,65 +1168,65 @@ $$\gamma_2 = \beta_2 - 3 \quad \text{(excess kurtosis; leptokurtic: } \gamma_2 >
 
 | Angle | Pet question |
 |-------|--------------|
-| Definition of \(r\)-th raw and central moment | "Which of these expressions is …?" |
-| Relationship between raw and central moments | Convert \(\mu_r'\) into \(\mu_r\) and back |
+| Definition of $r$-th raw and central moment | "Which of these expressions is …?" |
+| Relationship between raw and central moments | Convert $\mu_r'$ into $\mu_r$ and back |
 | Karl Pearson's coefficient of skewness | Mean − Mode formula or Mean − Median ×3 / σ |
-| Bowley's coefficient of skewness | \( (Q_3 + Q_1 − 2 Q_2)/(Q_3 − Q_1) \) |
-| Range of \(\beta_1, \beta_2\) and what they signify | Symmetric, leptokurtic, etc. |
+| Bowley's coefficient of skewness | $ (Q_3 + Q_1 − 2 Q_2)/(Q_3 − Q_1) $ |
+| Range of $\beta_1, \beta_2$ and what they signify | Symmetric, leptokurtic, etc. |
 
 ## 4.2 Moments — definitions
 
-### Raw (about origin) moments \( \mu_r' \)
+### Raw (about origin) moments $ \mu_r' $
 
-\[
+$$
 \mu_r' = \dfrac{\sum f_i X_i^r}{N}
-\]
+$$
 
-So \( \mu_1' = \bar X \) (the mean), \( \mu_0' = 1 \), etc.
+So $ \mu_1' = \bar X $ (the mean), $ \mu_0' = 1 $, etc.
 
-### Central (about mean) moments \( \mu_r \)
+### Central (about mean) moments $ \mu_r $
 
-\[
+$$
 \mu_r = \dfrac{\sum f_i (X_i - \bar X)^r}{N}
-\]
+$$
 
-| \(r\) | Value of \(\mu_r\) |
+| $r$ | Value of $\mu_r$ |
 |------|-------------------|
 | 0 | 1 |
 | 1 | 0 (always) |
-| 2 | \( \sigma^2 \) (the variance) |
+| 2 | $ \sigma^2 $ (the variance) |
 | 3 | measures skewness numerator |
 | 4 | measures kurtosis numerator |
 
 ### Conversion (raw → central)
 
-\[
+$$
 \mu_2 = \mu_2' - (\mu_1')^2
-\]
-\[
+$$
+$$
 \mu_3 = \mu_3' - 3\mu_1'\mu_2' + 2(\mu_1')^3
-\]
-\[
+$$
+$$
 \mu_4 = \mu_4' - 4\mu_1'\mu_3' + 6(\mu_1')^2\mu_2' - 3(\mu_1')^4
-\]
+$$
 
-### Moments about an arbitrary point \(A\)
+### Moments about an arbitrary point $A$
 
-If \(d = X - A\), and \(M_r = \sum f d^r / N\), then:
+If $d = X - A$, and $M_r = \sum f d^r / N$, then:
 
-\[
+$$
 \mu_2 = M_2 - M_1^2, \quad \mu_3 = M_3 - 3 M_1 M_2 + 2 M_1^3, \quad \text{etc.}
-\]
+$$
 
 ## 4.3 Skewness — five formulas (with when to use)
 
 | Formula | When examiner gives you |
 |---------|-------------------------|
-| \( \text{Sk}_p = \dfrac{\text{Mean} - \text{Mode}}{\sigma} \) | Mean, Mode, SD (Karl Pearson direct) |
-| \( \text{Sk}_p = \dfrac{3(\text{Mean} - \text{Median})}{\sigma} \) | Mean, Median, SD (when Mode is hard to find) |
-| Bowley's \( \text{Sk}_B = \dfrac{Q_3 + Q_1 - 2 Q_2}{Q_3 - Q_1} \) | Quartiles only |
-| Kelly's \( \text{Sk}_K = \dfrac{P_{90} + P_{10} - 2 P_{50}}{P_{90} - P_{10}} \) | Percentiles |
-| Coefficient \( \beta_1 = \dfrac{\mu_3^2}{\mu_2^3} \) ; \( \gamma_1 = \dfrac{\mu_3}{\sigma^3} \) | Moments based |
+| $ \text{Sk}_p = \dfrac{\text{Mean} - \text{Mode}}{\sigma} $ | Mean, Mode, SD (Karl Pearson direct) |
+| $ \text{Sk}_p = \dfrac{3(\text{Mean} - \text{Median})}{\sigma} $ | Mean, Median, SD (when Mode is hard to find) |
+| Bowley's $ \text{Sk}_B = \dfrac{Q_3 + Q_1 - 2 Q_2}{Q_3 - Q_1} $ | Quartiles only |
+| Kelly's $ \text{Sk}_K = \dfrac{P_{90} + P_{10} - 2 P_{50}}{P_{90} - P_{10}} $ | Percentiles |
+| Coefficient $ \beta_1 = \dfrac{\mu_3^2}{\mu_2^3} $ ; $ \gamma_1 = \dfrac{\mu_3}{\sigma^3} $ | Moments based |
 
 **Range tells:**
 
@@ -1240,11 +1240,11 @@ Bowley's Sk lies in **[−1, 1]**. Karl Pearson's lies typically in **[−3, 3]*
 
 ## 4.4 Kurtosis — peakedness
 
-\[
+$$
 \beta_2 = \dfrac{\mu_4}{\mu_2^2}, \quad \gamma_2 = \beta_2 - 3
-\]
+$$
 
-| \(\beta_2\) | \(\gamma_2\) | Curve | Name |
+| $\beta_2$ | $\gamma_2$ | Curve | Name |
 |------|------|------|------|
 | = 3 | = 0 | normal-shaped | **Mesokurtic** |
 | > 3 | > 0 | thinner peak, fatter tails | **Leptokurtic** |
@@ -1256,87 +1256,87 @@ Bowley's Sk lies in **[−1, 1]**. Karl Pearson's lies typically in **[−3, 3]*
 
 When data is grouped, raw moments overstate variance slightly. Correction:
 
-\[
+$$
 \mu_2(\text{corrected}) = \mu_2 - \dfrac{h^2}{12}
-\]
-\[
+$$
+$$
 \mu_4(\text{corrected}) = \mu_4 - \dfrac{1}{2} h^2 \mu_2 + \dfrac{7}{240} h^4
-\]
+$$
 
-\(h\) = class width. The 2nd-moment correction is most commonly asked; the 4th rarely.
+$h$ = class width. The 2nd-moment correction is most commonly asked; the 4th rarely.
 
 ## 4.6 Worked PYQ-style examples
 
-> **Q 4.1.** \( \mu_1' = 4, \mu_2' = 25 \). Find variance.
+> **Q 4.1.** $ \mu_1' = 4, \mu_2' = 25 $. Find variance.
 >
-> \( \mu_2 = 25 - 16 = \mathbf{9} \).
+> $ \mu_2 = 25 - 16 = \mathbf{9} $.
 
-> **Q 4.2.** \( \mu_2 = 4, \mu_3 = 8 \). Coefficient of skewness \( \beta_1 \)?
+> **Q 4.2.** $ \mu_2 = 4, \mu_3 = 8 $. Coefficient of skewness $ \beta_1 $?
 >
-> \( \beta_1 = \mu_3^2 / \mu_2^3 = 64/64 = \mathbf{1} \).
+> $ \beta_1 = \mu_3^2 / \mu_2^3 = 64/64 = \mathbf{1} $.
 
 > **Q 4.3.** Mean = 50, Mode = 47, SD = 10. Karl Pearson Sk?
 >
-> \( (50 - 47)/10 = \mathbf{0.3} \) → mildly positively skewed.
+> $ (50 - 47)/10 = \mathbf{0.3} $ → mildly positively skewed.
 
-> **Q 4.4.** \( Q_1 = 14, Q_2 = 21, Q_3 = 26 \). Bowley's Sk?
+> **Q 4.4.** $ Q_1 = 14, Q_2 = 21, Q_3 = 26 $. Bowley's Sk?
 >
-> \( (26 + 14 - 42)/(26 - 14) = -2/12 = -\mathbf{1/6} \approx -0.167\) → mildly negative.
+> $ (26 + 14 - 42)/(26 - 14) = -2/12 = -\mathbf{1/6} \approx -0.167$ → mildly negative.
 
-> **Q 4.5.** \( \beta_2 = 5 \). Curve is:
+> **Q 4.5.** $ \beta_2 = 5 $. Curve is:
 >
-> \( \beta_2 > 3 \) → **leptokurtic**.
+> $ \beta_2 > 3 $ → **leptokurtic**.
 
-> **Q 4.6.** First moment about origin is 5. Raw moments \( \mu_2', \mu_3' \) are 35 and 295 respectively. Find \( \mu_3 \).
+> **Q 4.6.** First moment about origin is 5. Raw moments $ \mu_2', \mu_3' $ are 35 and 295 respectively. Find $ \mu_3 $.
 >
-> \( \mu_3 = 295 - 3 \cdot 5 \cdot 35 + 2 \cdot 125 = 295 - 525 + 250 = \mathbf{20} \).
+> $ \mu_3 = 295 - 3 \cdot 5 \cdot 35 + 2 \cdot 125 = 295 - 525 + 250 = \mathbf{20} $.
 
 > **Q 4.7.** Sum of central moments of order 1 in any distribution is:
 >
 > Always **0** (definition of mean).
 
-> **Q 4.8.** A leptokurtic curve has \(\gamma_2\):
+> **Q 4.8.** A leptokurtic curve has $\gamma_2$:
 >
-> \(\gamma_2 = \beta_2 - 3 > 0\). **Positive.**
+> $\gamma_2 = \beta_2 - 3 > 0$. **Positive.**
 
 > **Q 4.9.** For a symmetric distribution, every odd-order central moment is:
 >
-> **Zero** (\(\mu_1 = \mu_3 = \mu_5 = \cdots = 0\)).
+> **Zero** ($\mu_1 = \mu_3 = \mu_5 = \cdots = 0$).
 
-> **Q 4.10.** Class width 5. \( \mu_2 \) = 35.5. Sheppard-corrected variance?
+> **Q 4.10.** Class width 5. $ \mu_2 $ = 35.5. Sheppard-corrected variance?
 >
-> \( 35.5 - 25/12 = 35.5 - 2.083 = \mathbf{33.42} \).
+> $ 35.5 - 25/12 = 35.5 - 2.083 = \mathbf{33.42} $.
 
 ## 4.7 Trap-recognition card
 
 | Trap | Defence |
 |------|---------|
-| \( \beta_2 = 3 \) marked as "leptokurtic" | It's mesokurtic; lepto needs \( \beta_2 > 3 \). |
-| Confusing \( \mu_r \) with \( \mu_r' \) | Central = about mean. Raw = about origin. \( \mu_1 = 0 \) but \( \mu_1' = \bar X \). |
+| $ \beta_2 = 3 $ marked as "leptokurtic" | It's mesokurtic; lepto needs $ \beta_2 > 3 $. |
+| Confusing $ \mu_r $ with $ \mu_r' $ | Central = about mean. Raw = about origin. $ \mu_1 = 0 $ but $ \mu_1' = \bar X $. |
 | Pearson Sk denominator without σ | The denominator is **σ** (SD), not variance. |
-| Bowley sign flipped | Numerator is \( Q_3 + Q_1 - 2Q_2 \). If positive → positive skew. |
+| Bowley sign flipped | Numerator is $ Q_3 + Q_1 - 2Q_2 $. If positive → positive skew. |
 
 ## 4.8 Mini-mock
 
 | # | Q | Ans |
 |---|----|-----|
-| 1 | \( \mu_1 \) for any distribution = ? | 0 |
-| 2 | \( \mu_2 \) is also called? | Variance |
-| 3 | If \( \beta_2 = 2.5 \), distribution is? | Platykurtic |
+| 1 | $ \mu_1 $ for any distribution = ? | 0 |
+| 2 | $ \mu_2 $ is also called? | Variance |
+| 3 | If $ \beta_2 = 2.5 $, distribution is? | Platykurtic |
 | 4 | Pearson Sk if Mean = Mode? | 0 |
 | 5 | Bowley Sk range? | [−1, 1] |
 | 6 | A symmetric distribution: Mean − Mode = ? | 0 |
 | 7 | Mean = 60, Mode = 54, σ = 12. Pearson Sk? | 0.5 |
 | 8 | Sheppard's correction for variance? | subtract h²/12 |
-| 9 | \( \mu_3 = 0, \mu_2 = 4 \). Sk? | 0 (symmetric) |
+| 9 | $ \mu_3 = 0, \mu_2 = 4 $. Sk? | 0 (symmetric) |
 | 10 | "Lepto" peak shape? | Sharp / tall |
 
 ## 4.9 Active-recall prompts
 
-1. Write \( \mu_2, \mu_3, \mu_4 \) in terms of raw moments.
+1. Write $ \mu_2, \mu_3, \mu_4 $ in terms of raw moments.
 2. State all three Karl Pearson Sk formulas.
 3. State Bowley's range.
-4. Define mesokurtic, leptokurtic, platykurtic with their \(\beta_2\) cutoffs.
+4. Define mesokurtic, leptokurtic, platykurtic with their $\beta_2$ cutoffs.
 5. State Sheppard's correction for the second central moment.
 
 ---
@@ -1431,12 +1431,12 @@ Two judges rank 5 students: Judge A gives ranks 1,2,3,4,5; Judge B gives ranks 2
 
 | Angle | Pet question |
 |-------|--------------|
-| Range and meaning of \(r\) | "Range of correlation coefficient is …" → [−1, 1] |
+| Range and meaning of $r$ | "Range of correlation coefficient is …" → [−1, 1] |
 | Karl Pearson formula | direct plug-in given covariance and SDs |
 | Spearman rank correlation | with and without ties |
-| Properties of regression coefficients | product = \(r^2\), same sign, geometric mean = ±r |
-| Two regression lines, point of intersection | \( (\bar X, \bar Y) \) — always |
-| Angle between regression lines | when \(r = 0\) → 90°; \(r = ±1\) → 0° |
+| Properties of regression coefficients | product = $r^2$, same sign, geometric mean = ±r |
+| Two regression lines, point of intersection | $ (\bar X, \bar Y) $ — always |
+| Angle between regression lines | when $r = 0$ → 90°; $r = ±1$ → 0° |
 | Multiple / partial correlation | basic 2-variable question |
 
 ## 5.2 Mind map
@@ -1455,19 +1455,19 @@ graph TD
 
 ## 5.3 Correlation — Karl Pearson
 
-\[
+$$
 r = \dfrac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y} = \dfrac{\sum (X_i - \bar X)(Y_i - \bar Y)}{\sqrt{\sum (X_i - \bar X)^2 \cdot \sum (Y_i - \bar Y)^2}}
-\]
+$$
 
 Computational form (preferred for plug-in questions):
 
-\[
+$$
 \boxed{r = \dfrac{n \sum XY - \sum X \sum Y}{\sqrt{[n \sum X^2 - (\sum X)^2][n \sum Y^2 - (\sum Y)^2]}}}
-\]
+$$
 
-**Range:** \( -1 \le r \le +1 \).
+**Range:** $ -1 \le r \le +1 $.
 
-| \(r\) | Meaning |
+| $r$ | Meaning |
 |------|---------|
 | +1 | perfect direct (positive) correlation |
 | 0 < r < 1 | partial direct |
@@ -1475,180 +1475,180 @@ Computational form (preferred for plug-in questions):
 | −1 < r < 0 | partial inverse |
 | −1 | perfect inverse |
 
-**Properties of \(r\):**
+**Properties of $r$:**
 
 | Property | Note |
 |----------|------|
-| Symmetric | \( r_{XY} = r_{YX} \) |
-| Independent of origin | \( r \) of \( (X+a, Y+b) \) = \( r \) of \( (X, Y) \) |
-| Independent of scale (when both positive) | \( r \) of \( (cX, dY) \) with \(c, d > 0\) = \( r \) |
-| Sign flips when one scale flips | \( r \) of \( (-X, Y) \) = \( -r_{XY} \) |
+| Symmetric | $ r_{XY} = r_{YX} $ |
+| Independent of origin | $ r $ of $ (X+a, Y+b) $ = $ r $ of $ (X, Y) $ |
+| Independent of scale (when both positive) | $ r $ of $ (cX, dY) $ with $c, d > 0$ = $ r $ |
+| Sign flips when one scale flips | $ r $ of $ (-X, Y) $ = $ -r_{XY} $ |
 | Pure number | unitless |
 
 ## 5.4 Spearman's rank correlation
 
 When data is ordinal or you only have ranks:
 
-\[
+$$
 \rho = 1 - \dfrac{6 \sum d_i^2}{n(n^2 - 1)}
-\]
+$$
 
-\(d_i\) = difference in ranks of the \(i\)-th pair, \(n\) = number of pairs.
+$d_i$ = difference in ranks of the $i$-th pair, $n$ = number of pairs.
 
-**With tied ranks**, add correction \( \dfrac{m(m^2 - 1)}{12} \) for each set of \(m\) tied ranks to \(\sum d^2\):
+**With tied ranks**, add correction $ \dfrac{m(m^2 - 1)}{12} $ for each set of $m$ tied ranks to $\sum d^2$:
 
-\[
+$$
 \rho = 1 - \dfrac{6 \big[\sum d^2 + \sum \frac{m(m^2-1)}{12}\big]}{n(n^2 - 1)}
-\]
+$$
 
 ## 5.5 Regression — the two lines
 
-**Y on X** (used to predict \(Y\) given \(X\)):
+**Y on X** (used to predict $Y$ given $X$):
 
-\[
+$$
 Y - \bar Y = b_{YX} (X - \bar X), \qquad b_{YX} = r \dfrac{\sigma_Y}{\sigma_X} = \dfrac{\text{Cov}(X,Y)}{\sigma_X^2}
-\]
+$$
 
-**X on Y** (used to predict \(X\) given \(Y\)):
+**X on Y** (used to predict $X$ given $Y$):
 
-\[
+$$
 X - \bar X = b_{XY} (Y - \bar Y), \qquad b_{XY} = r \dfrac{\sigma_X}{\sigma_Y} = \dfrac{\text{Cov}(X,Y)}{\sigma_Y^2}
-\]
+$$
 
 ## 5.6 The 7 sacred properties of regression coefficients
 
 | # | Property | Why useful |
 |---|----------|-----------|
-| 1 | \( b_{YX} \cdot b_{XY} = r^2 \) | Lets you find \(r\) from the two slopes (sign from common sign of slopes). |
-| 2 | \( r = \pm \sqrt{b_{YX} \cdot b_{XY}} \) | Geometric mean of slopes. |
-| 3 | \( b_{YX} \) and \( b_{XY} \) have the **same sign** as \(r\). | If signs differ, you've made an error. |
-| 4 | If \( |b_{YX}| > 1 \) then \( |b_{XY}| < 1 \) (and vice-versa). | because \( r^2 \le 1 \) |
-| 5 | The two regression lines **intersect at \( (\bar X, \bar Y) \)**. | Always; never doubt. |
-| 6 | When \( r = \pm 1 \) the two lines **coincide**. | perfect correlation |
-| 7 | When \( r = 0 \) the two lines are **perpendicular** (one horizontal, one vertical). | no linear relationship |
+| 1 | $ b_{YX} \cdot b_{XY} = r^2 $ | Lets you find $r$ from the two slopes (sign from common sign of slopes). |
+| 2 | $ r = \pm \sqrt{b_{YX} \cdot b_{XY}} $ | Geometric mean of slopes. |
+| 3 | $ b_{YX} $ and $ b_{XY} $ have the **same sign** as $r$. | If signs differ, you've made an error. |
+| 4 | If $ |b_{YX}| > 1 $ then $ |b_{XY}| < 1 $ (and vice-versa). | because $ r^2 \le 1 $ |
+| 5 | The two regression lines **intersect at $ (\bar X, \bar Y) $**. | Always; never doubt. |
+| 6 | When $ r = \pm 1 $ the two lines **coincide**. | perfect correlation |
+| 7 | When $ r = 0 $ the two lines are **perpendicular** (one horizontal, one vertical). | no linear relationship |
 
 <div class="mnemonic"><strong>Memorise this picture:</strong> imagine two pencils crossing at the means (\bar X, \bar Y). When correlation is strong, they nearly stack on each other; when weak, they spread apart; at zero, they form a + sign.</div>
 
-## 5.7 Recovering \(r, \bar X, \bar Y\) from the two equations
+## 5.7 Recovering $r, \bar X, \bar Y$ from the two equations
 
-Given \( aX + bY + c = 0 \) and \( dX + eY + f = 0 \):
+Given $ aX + bY + c = 0 $ and $ dX + eY + f = 0 $:
 
-1. **Solve simultaneously** for the intersection — that gives \( (\bar X, \bar Y) \).
-2. Decide which line is **Y on X**: the one with smaller \(|b_{YX}|\) is the Y-on-X line **if** \(|r| \le 1\); test by computing slopes.
-3. From the two coefficients, compute \(r = \pm\sqrt{b_{YX} \cdot b_{XY}}\), with sign = common sign of the two slopes.
+1. **Solve simultaneously** for the intersection — that gives $ (\bar X, \bar Y) $.
+2. Decide which line is **Y on X**: the one with smaller $|b_{YX}|$ is the Y-on-X line **if** $|r| \le 1$; test by computing slopes.
+3. From the two coefficients, compute $r = \pm\sqrt{b_{YX} \cdot b_{XY}}$, with sign = common sign of the two slopes.
 
 ## 5.8 Multiple and partial correlation (3 variables)
 
 | Symbol | Meaning |
 |--------|---------|
-| \( r_{12.3} \) | partial correlation between \(X_1\) and \(X_2\) keeping \(X_3\) constant |
-| \( R_{1.23} \) | multiple correlation of \(X_1\) on \(X_2, X_3\) |
+| $ r_{12.3} $ | partial correlation between $X_1$ and $X_2$ keeping $X_3$ constant |
+| $ R_{1.23} $ | multiple correlation of $X_1$ on $X_2, X_3$ |
 
-\[
+$$
 r_{12.3} = \dfrac{r_{12} - r_{13} r_{23}}{\sqrt{(1 - r_{13}^2)(1 - r_{23}^2)}}
-\]
+$$
 
-\[
+$$
 R_{1.23}^2 = \dfrac{r_{12}^2 + r_{13}^2 - 2 r_{12} r_{13} r_{23}}{1 - r_{23}^2}
-\]
+$$
 
 | Range | Note |
 |-------|------|
-| Partial \( r_{12.3} \) | \( -1 \le r_{12.3} \le 1 \) |
-| Multiple \( R_{1.23} \) | \( 0 \le R_{1.23} \le 1 \) (never negative) |
+| Partial $ r_{12.3} $ | $ -1 \le r_{12.3} \le 1 $ |
+| Multiple $ R_{1.23} $ | $ 0 \le R_{1.23} \le 1 $ (never negative) |
 
 ## 5.9 Coefficient of determination
 
-\[
+$$
 r^2 = \text{fraction of variance of } Y \text{ explained by } X.
-\]
+$$
 
-If \(r = 0.8\), \(r^2 = 0.64\) → 64% of Y's variation explained by X.
+If $r = 0.8$, $r^2 = 0.64$ → 64% of Y's variation explained by X.
 
 ## 5.10 Standard error of estimate
 
-\[
+$$
 S_{Y \cdot X} = \sigma_Y \sqrt{1 - r^2}, \qquad S_{X \cdot Y} = \sigma_X \sqrt{1 - r^2}
-\]
+$$
 
-When \(r = \pm 1\), SE = 0 (perfect prediction). When \(r = 0\), SE = \(\sigma\) (no improvement over mean).
+When $r = \pm 1$, SE = 0 (perfect prediction). When $r = 0$, SE = $\sigma$ (no improvement over mean).
 
 ## 5.11 Worked PYQ-style examples
 
-> **Q 5.1.** \(b_{YX} = 0.8, b_{XY} = 0.5\). Find \(r\).
+> **Q 5.1.** $b_{YX} = 0.8, b_{XY} = 0.5$. Find $r$.
 >
-> \( r = +\sqrt{0.4} \approx \mathbf{0.632} \) (positive because both slopes positive).
+> $ r = +\sqrt{0.4} \approx \mathbf{0.632} $ (positive because both slopes positive).
 
-> **Q 5.2.** Two regression lines: \(2X + 3Y - 8 = 0\) and \(X + 4Y - 7 = 0\). Find \(\bar X, \bar Y\).
+> **Q 5.2.** Two regression lines: $2X + 3Y - 8 = 0$ and $X + 4Y - 7 = 0$. Find $\bar X, \bar Y$.
 >
-> Solve: from line 2, \(X = 7 - 4Y\). Sub: \(2(7 - 4Y) + 3Y = 8\) → \(14 - 8Y + 3Y = 8\) → \(-5Y = -6\) → \(Y = 1.2\). Then \(X = 7 - 4.8 = 2.2\).
-> \(\bar X = \mathbf{2.2}, \bar Y = \mathbf{1.2}\).
+> Solve: from line 2, $X = 7 - 4Y$. Sub: $2(7 - 4Y) + 3Y = 8$ → $14 - 8Y + 3Y = 8$ → $-5Y = -6$ → $Y = 1.2$. Then $X = 7 - 4.8 = 2.2$.
+> $\bar X = \mathbf{2.2}, \bar Y = \mathbf{1.2}$.
 
-> **Q 5.3.** \(r = 0.6, \sigma_X = 5, \sigma_Y = 10\). Find \(b_{YX}\) and \(b_{XY}\).
+> **Q 5.3.** $r = 0.6, \sigma_X = 5, \sigma_Y = 10$. Find $b_{YX}$ and $b_{XY}$.
 >
-> \(b_{YX} = 0.6 \cdot 10/5 = \mathbf{1.2}\). \(b_{XY} = 0.6 \cdot 5/10 = \mathbf{0.3}\). Check: 1.2 × 0.3 = 0.36 = 0.6² ✓.
+> $b_{YX} = 0.6 \cdot 10/5 = \mathbf{1.2}$. $b_{XY} = 0.6 \cdot 5/10 = \mathbf{0.3}$. Check: 1.2 × 0.3 = 0.36 = 0.6² ✓.
 
-> **Q 5.4.** Spearman: 5 students, ranks in two subjects: \(d^2\)-values 1, 0, 4, 1, 4. Sum = 10. Find ρ.
+> **Q 5.4.** Spearman: 5 students, ranks in two subjects: $d^2$-values 1, 0, 4, 1, 4. Sum = 10. Find ρ.
 >
-> \( \rho = 1 - 6(10)/(5 \cdot 24) = 1 - 60/120 = 1 - 0.5 = \mathbf{0.5} \).
+> $ \rho = 1 - 6(10)/(5 \cdot 24) = 1 - 60/120 = 1 - 0.5 = \mathbf{0.5} $.
 
-> **Q 5.5.** If \(r = 0\), the two regression lines are:
+> **Q 5.5.** If $r = 0$, the two regression lines are:
 >
 > **Perpendicular** (one horizontal, one vertical).
 
-> **Q 5.6.** \(r_{XY} = 0.8\). Then correlation of \(X' = X+5\) and \(Y' = 2Y - 3\) is:
+> **Q 5.6.** $r_{XY} = 0.8$. Then correlation of $X' = X+5$ and $Y' = 2Y - 3$ is:
 >
-> Origin doesn't matter; positive scale factor doesn't matter. \(r' = \mathbf{0.8}\).
+> Origin doesn't matter; positive scale factor doesn't matter. $r' = \mathbf{0.8}$.
 
-> **Q 5.7.** \(r = 0.5\). Coefficient of determination?
+> **Q 5.7.** $r = 0.5$. Coefficient of determination?
 >
-> \(0.25 = \mathbf{25\%}\) of variation explained.
+> $0.25 = \mathbf{25\%}$ of variation explained.
 
-> **Q 5.8.** \(b_{YX} = 1.5, b_{XY} = 0.9\). Is this possible?
+> **Q 5.8.** $b_{YX} = 1.5, b_{XY} = 0.9$. Is this possible?
 >
-> \(r^2 = 1.35 > 1\) → impossible. Cannot both exceed product 1.
+> $r^2 = 1.35 > 1$ → impossible. Cannot both exceed product 1.
 
-> **Q 5.9.** A regression line passes through (5, 7) and the means are \(\bar X = 5, \bar Y = ?\).
+> **Q 5.9.** A regression line passes through (5, 7) and the means are $\bar X = 5, \bar Y = ?$.
 >
-> Both regression lines pass through \((\bar X, \bar Y)\). So **\(\bar Y = 7\)**.
+> Both regression lines pass through $(\bar X, \bar Y)$. So **$\bar Y = 7$**.
 
-> **Q 5.10.** If \(\sigma_X = \sigma_Y\), then \(b_{YX} = \) ?
+> **Q 5.10.** If $\sigma_X = \sigma_Y$, then $b_{YX} = $ ?
 >
-> \( r \cdot \sigma_Y/\sigma_X = r \). So \(b_{YX} = b_{XY} = r\).
+> $ r \cdot \sigma_Y/\sigma_X = r $. So $b_{YX} = b_{XY} = r$.
 
-> **Q 5.11.** Karl Pearson \(r\) is independent of:
+> **Q 5.11.** Karl Pearson $r$ is independent of:
 >
 > **Origin and scale (with positive factors).**
 
 > **Q 5.12.** A scatter plot showing all points on a straight line with positive slope indicates:
 >
-> \(r = +1\), perfect direct correlation.
+> $r = +1$, perfect direct correlation.
 
-> **Q 5.13.** \(n = 10, \sum X = 50, \sum Y = 100, \sum X^2 = 300, \sum Y^2 = 1100, \sum XY = 525\). Find \(r\).
+> **Q 5.13.** $n = 10, \sum X = 50, \sum Y = 100, \sum X^2 = 300, \sum Y^2 = 1100, \sum XY = 525$. Find $r$.
 >
-> Numerator: \(10 \cdot 525 - 50 \cdot 100 = 5250 - 5000 = 250\).
-> Denom: \(\sqrt{(10 \cdot 300 - 2500)(10 \cdot 1100 - 10000)} = \sqrt{500 \cdot 1000} = \sqrt{500000} \approx 707.1\).
-> \(r \approx 250/707.1 \approx \mathbf{0.354}\).
+> Numerator: $10 \cdot 525 - 50 \cdot 100 = 5250 - 5000 = 250$.
+> Denom: $\sqrt{(10 \cdot 300 - 2500)(10 \cdot 1100 - 10000)} = \sqrt{500 \cdot 1000} = \sqrt{500000} \approx 707.1$.
+> $r \approx 250/707.1 \approx \mathbf{0.354}$.
 
-> **Q 5.14.** Two regression equations: \(3Y = 2X + 5\) and \(15X = 10Y + 8\). Find \(b_{YX}, b_{XY}, r\).
+> **Q 5.14.** Two regression equations: $3Y = 2X + 5$ and $15X = 10Y + 8$. Find $b_{YX}, b_{XY}, r$.
 >
-> First: \(Y = (2/3)X + 5/3\), so \(b_{YX} = 2/3\).
-> Second: \(X = (10/15)Y + 8/15 = (2/3)Y + 8/15\), so \(b_{XY} = 2/3\).
-> \(r = +\sqrt{(2/3)(2/3)} = 2/3 \approx \mathbf{0.667}\).
+> First: $Y = (2/3)X + 5/3$, so $b_{YX} = 2/3$.
+> Second: $X = (10/15)Y + 8/15 = (2/3)Y + 8/15$, so $b_{XY} = 2/3$.
+> $r = +\sqrt{(2/3)(2/3)} = 2/3 \approx \mathbf{0.667}$.
 
-> **Q 5.15.** Two regression coefficients are 0.5 and −0.4. Then \(r\) is:
+> **Q 5.15.** Two regression coefficients are 0.5 and −0.4. Then $r$ is:
 >
 > Signs differ → impossible. Such a pair cannot both be valid regression coefficients.
 
 > **Q 5.16.** Standard error of estimate of Y on X = ?
 >
-> \( S_{Y \cdot X} = \sigma_Y \sqrt{1 - r^2} \).
+> $ S_{Y \cdot X} = \sigma_Y \sqrt{1 - r^2} $.
 
-> **Q 5.17.** When \(r = 1\), \(b_{YX} \cdot b_{XY} = ?\)
+> **Q 5.17.** When $r = 1$, $b_{YX} \cdot b_{XY} = ?$
 >
-> \(r^2 = 1\). Both slopes equal reciprocals.
+> $r^2 = 1$. Both slopes equal reciprocals.
 
-> **Q 5.18.** Multiple correlation \(R_{1.23}\) is always:
+> **Q 5.18.** Multiple correlation $R_{1.23}$ is always:
 >
 > Non-negative, in [0, 1].
 
@@ -1656,19 +1656,19 @@ When \(r = \pm 1\), SE = 0 (perfect prediction). When \(r = 0\), SE = \(\sigma\)
 
 | Trap | Why wrong | Defence |
 |------|-----------|---------|
-| Both slopes > 1 | impossible (\(r^2 > 1\)) | Test product. |
-| Slopes have different signs | impossible | They must agree with \(r\)'s sign. |
-| "Regression lines never meet" | They always meet at \( (\bar X, \bar Y)\). | Always. |
+| Both slopes > 1 | impossible ($r^2 > 1$) | Test product. |
+| Slopes have different signs | impossible | They must agree with $r$'s sign. |
+| "Regression lines never meet" | They always meet at $ (\bar X, \bar Y)$. | Always. |
 | "Spearman uses raw values" | No, ranks. | Re-read formula. |
-| Scale flips and student keeps same \(r\) sign | Negative scale → sign flips. | Track sign of scale factor. |
-| Forgot \(r\) is unitless | They keep units. | It's a pure number. |
+| Scale flips and student keeps same $r$ sign | Negative scale → sign flips. | Track sign of scale factor. |
+| Forgot $r$ is unitless | They keep units. | It's a pure number. |
 
 ## 5.13 Mini-mock
 
 | # | Q | Ans |
 |---|----|-----|
-| 1 | Range of \(r\)? | [−1, 1] |
-| 2 | \(b_{YX} = 0.4, b_{XY} = 0.9\). r? | √0.36 = 0.6 |
+| 1 | Range of $r$? | [−1, 1] |
+| 2 | $b_{YX} = 0.4, b_{XY} = 0.9$. r? | √0.36 = 0.6 |
 | 3 | Two regression lines intersect at? | (X̄, Ȳ) |
 | 4 | r = 0 → angle between lines? | 90° |
 | 5 | r² is called? | Coefficient of determination |
@@ -1680,11 +1680,11 @@ When \(r = \pm 1\), SE = 0 (perfect prediction). When \(r = 0\), SE = \(\sigma\)
 
 ## 5.14 Active-recall prompts
 
-1. Write the computational formula for \(r\).
+1. Write the computational formula for $r$.
 2. State the 7 properties of regression coefficients.
 3. Where do the two regression lines meet?
 4. Write Spearman's formula and the tie correction.
-5. Write the formula for \(r_{12.3}\) and \(R_{1.23}^2\).
+5. Write the formula for $r_{12.3}$ and $R_{1.23}^2$.
 
 ---
 
@@ -1773,65 +1773,65 @@ $P(A) = 0.4$, $P(B) = 0.3$, $P(A \cap B) = 0.12$. Are $A$ and $B$ independent?
 | Addition theorem (with / without ME) | "P(A ∪ B) = ?" |
 | Multiplication theorem (with / without independence) | "P(A ∩ B) = ?" |
 | Conditional probability | "P(A given B) = ?" |
-| Independence | Test \(P(A∩B) = P(A) P(B)\) |
+| Independence | Test $P(A∩B) = P(A) P(B)$ |
 | Bayes' theorem | "If event already happened, find probability of cause" — exactly 1 Q every paper |
 
 ## 6.2 Definitions
 
 | Type | Definition |
 |------|-----------|
-| **Classical** | \( P(A) = \dfrac{\text{favourable outcomes}}{\text{total equally likely outcomes}} \) |
-| **Empirical (frequentist)** | \( P(A) = \lim_{n \to \infty} \dfrac{\text{number of times A occurs}}{n} \) |
-| **Axiomatic (Kolmogorov)** | \( P \ge 0, \; P(\text{sample space}) = 1, \; P(\bigcup A_i) = \sum P(A_i) \) when \(A_i\) disjoint |
+| **Classical** | $ P(A) = \dfrac{\text{favourable outcomes}}{\text{total equally likely outcomes}} $ |
+| **Empirical (frequentist)** | $ P(A) = \lim_{n \to \infty} \dfrac{\text{number of times A occurs}}{n} $ |
+| **Axiomatic (Kolmogorov)** | $ P \ge 0, \; P(\text{sample space}) = 1, \; P(\bigcup A_i) = \sum P(A_i) $ when $A_i$ disjoint |
 
 ## 6.3 Set-theory shortcuts
 
-For events \(A, B\) in a sample space:
+For events $A, B$ in a sample space:
 
 | Quantity | Formula |
 |----------|---------|
-| \( P(A^c) \) (complement) | \( 1 - P(A) \) |
-| \( P(A \cup B) \) | \( P(A) + P(B) - P(A \cap B) \) |
-| \( P(A \cup B \cup C) \) | \( \sum P - \sum P(\text{pair}) + P(\text{triple}) \) (inclusion-exclusion) |
-| \( P(A \cap B^c) \) | \( P(A) - P(A \cap B) \) |
-| \( P(\text{exactly one}) \) | \( P(A) + P(B) - 2 P(A \cap B) \) |
+| $ P(A^c) $ (complement) | $ 1 - P(A) $ |
+| $ P(A \cup B) $ | $ P(A) + P(B) - P(A \cap B) $ |
+| $ P(A \cup B \cup C) $ | $ \sum P - \sum P(\text{pair}) + P(\text{triple}) $ (inclusion-exclusion) |
+| $ P(A \cap B^c) $ | $ P(A) - P(A \cap B) $ |
+| $ P(\text{exactly one}) $ | $ P(A) + P(B) - 2 P(A \cap B) $ |
 
 ## 6.4 Mutually exclusive vs Independent — the only confusion that matters
 
 | Property | Mutually exclusive | Independent |
 |----------|-------------------|-------------|
-| Definition | Cannot occur together: \( A \cap B = \emptyset \) | One does not affect the other: \( P(A \cap B) = P(A) P(B) \) |
-| \( P(A \cap B) \) | 0 | \(P(A) P(B)\) |
-| \( P(A \cup B) \) | \( P(A) + P(B) \) | \( P(A) + P(B) - P(A) P(B) \) |
-| Can both hold simultaneously? | Only if \( P(A) = 0 \) or \( P(B) = 0 \). Otherwise **never both**. |
+| Definition | Cannot occur together: $ A \cap B = \emptyset $ | One does not affect the other: $ P(A \cap B) = P(A) P(B) $ |
+| $ P(A \cap B) $ | 0 | $P(A) P(B)$ |
+| $ P(A \cup B) $ | $ P(A) + P(B) $ | $ P(A) + P(B) - P(A) P(B) $ |
+| Can both hold simultaneously? | Only if $ P(A) = 0 $ or $ P(B) = 0 $. Otherwise **never both**. |
 
 <div class="pitfall"><strong>Trap.</strong> "If A and B are mutually exclusive, are they independent?" — typically <strong>no</strong> (unless one has zero probability). Examiners ask this exactly to catch lazy candidates.</div>
 
 ## 6.5 Conditional probability
 
-\[
+$$
 P(A | B) = \dfrac{P(A \cap B)}{P(B)}, \qquad P(B) > 0
-\]
+$$
 
 **Multiplication theorem:**
 
-\[
+$$
 P(A \cap B) = P(B) \cdot P(A | B) = P(A) \cdot P(B | A)
-\]
+$$
 
-For three events: \( P(A \cap B \cap C) = P(A) P(B|A) P(C | A \cap B) \).
+For three events: $ P(A \cap B \cap C) = P(A) P(B|A) P(C | A \cap B) $.
 
 ## 6.6 Bayes' theorem (high-yield — 1 Q every paper)
 
-If \( B_1, B_2, \ldots, B_k \) partition the sample space (mutually exclusive + exhaustive) and \(A\) is any event:
+If $ B_1, B_2, \ldots, B_k $ partition the sample space (mutually exclusive + exhaustive) and $A$ is any event:
 
-\[
+$$
 \boxed{P(B_i | A) = \dfrac{P(B_i) \cdot P(A | B_i)}{\sum_{j=1}^{k} P(B_j) \cdot P(A | B_j)}}
-\]
+$$
 
 **Reading the formula in plain English:**
-- Numerator = (chance \(B_i\) was the cause) × (chance it produced effect \(A\)).
-- Denominator = total chance of \(A\) summed over all causes (this is the **theorem of total probability**).
+- Numerator = (chance $B_i$ was the cause) × (chance it produced effect $A$).
+- Denominator = total chance of $A$ summed over all causes (this is the **theorem of total probability**).
 
 ## 6.7 Quick reference: counting
 
@@ -1839,10 +1839,10 @@ If \( B_1, B_2, \ldots, B_k \) partition the sample space (mutually exclusive + 
 |-------|-------|
 | 1 die thrown | 6 outcomes |
 | 2 dice thrown | 36 outcomes |
-| 1 coin tossed n times | \(2^n\) outcomes |
+| 1 coin tossed n times | $2^n$ outcomes |
 | Pack of cards | 52 cards (4 suits × 13 ranks; 26 red, 26 black; 12 face cards Q J K only — note: face cards exclude Ace) |
-| Selecting r from n | \( ^nC_r \) |
-| Arranging r from n | \( ^nP_r \) |
+| Selecting r from n | $ ^nC_r $ |
+| Arranging r from n | $ ^nP_r $ |
 
 ## 6.8 Worked PYQ-style examples
 
@@ -1861,17 +1861,17 @@ If \( B_1, B_2, \ldots, B_k \) partition the sample space (mutually exclusive + 
 
 > **Q 6.4.** A bag has 5 white, 3 black balls. Two drawn without replacement. P(both white)?
 >
-> \( \dfrac{5}{8} \cdot \dfrac{4}{7} = \dfrac{20}{56} = \mathbf{5/14} \).
+> $ \dfrac{5}{8} \cdot \dfrac{4}{7} = \dfrac{20}{56} = \mathbf{5/14} $.
 
 > **Q 6.5.** P(A) = 0.4, P(B) = 0.3, P(A ∪ B) = 0.6. P(A ∩ B)?
 >
-> \(0.4 + 0.3 - 0.6 = \mathbf{0.1}\).
+> $0.4 + 0.3 - 0.6 = \mathbf{0.1}$.
 
 > **Q 6.6.** Toss 3 coins. P(at least 2 heads)?
 >
 > Total = 8. ≥2H outcomes: HHH, HHT, HTH, THH = 4. **P = 1/2**.
 
-> **Q 6.7.** Two events with \(P(A) = 0.5, P(B) = 0.6\), \(A, B\) mutually exclusive. P(A ∩ B)?
+> **Q 6.7.** Two events with $P(A) = 0.5, P(B) = 0.6$, $A, B$ mutually exclusive. P(A ∩ B)?
 >
 > ME → 0.
 
@@ -1879,7 +1879,7 @@ If \( B_1, B_2, \ldots, B_k \) partition the sample space (mutually exclusive + 
 >
 > Numerator: 0.6 × 0.05 = 0.03.
 > Denominator: 0.6 × 0.05 + 0.4 × 0.08 = 0.03 + 0.032 = 0.062.
-> \(P(A|D) = 0.03/0.062 \approx \mathbf{0.484}\).
+> $P(A|D) = 0.03/0.062 \approx \mathbf{0.484}$.
 
 > **Q 6.9.** P(A) = 0.6, P(B|A) = 0.4. P(A ∩ B)?
 >
@@ -1895,7 +1895,7 @@ If \( B_1, B_2, \ldots, B_k \) partition the sample space (mutually exclusive + 
 
 > **Q 6.12.** Two cards drawn without replacement. P(both kings)?
 >
-> \(\dfrac{4}{52} \cdot \dfrac{3}{51} = \dfrac{12}{2652} = \mathbf{1/221}\).
+> $\dfrac{4}{52} \cdot \dfrac{3}{51} = \dfrac{12}{2652} = \mathbf{1/221}$.
 
 > **Q 6.13.** A fair die thrown. P(prime number)?
 >
@@ -1903,11 +1903,11 @@ If \( B_1, B_2, \ldots, B_k \) partition the sample space (mutually exclusive + 
 
 > **Q 6.14.** Two events are exhaustive iff:
 >
-> \(A \cup B = S\) (sample space). i.e., P(A ∪ B) = 1.
+> $A \cup B = S$ (sample space). i.e., P(A ∪ B) = 1.
 
 > **Q 6.15.** A box has 4 defective and 6 good bulbs. 3 drawn together. P(exactly 1 defective)?
 >
-> \( \dfrac{ {}^4C_1 \cdot {}^6C_2 }{ {}^{10}C_3 } = \dfrac{4 \cdot 15}{120} = \dfrac{60}{120} = \mathbf{1/2} \).
+> $ \dfrac{ {}^4C_1 \cdot {}^6C_2 }{ {}^{10}C_3 } = \dfrac{4 \cdot 15}{120} = \dfrac{60}{120} = \mathbf{1/2} $.
 
 ## 6.9 Trap-recognition card
 
@@ -1941,7 +1941,7 @@ If \( B_1, B_2, \ldots, B_k \) partition the sample space (mutually exclusive + 
 2. State the multiplication theorem (with and without independence).
 3. Write Bayes' theorem with all symbols.
 4. Why are ME and independent typically incompatible?
-5. Write \(P(\text{exactly one of A or B})\).
+5. Write $P(\text{exactly one of A or B})$.
 
 ---
 
@@ -2029,8 +2029,8 @@ $X \sim N(50, 100)$ (mean = 50, variance = 100, so $\sigma = 10$). Find $P(X > 6
 | Discrete vs continuous RV — pmf vs pdf | "Which is a valid pmf?" |
 | Expectation, variance | Plug-in |
 | Binomial: P(r successes) | direct |
-| Poisson: P(r events), Mean = Var = \(\lambda\) | direct, often as approximation to Binomial |
-| Normal: standardise via \(z\) | use the \(z\)-table fact base (68/95/99.7) |
+| Poisson: P(r events), Mean = Var = $\lambda$ | direct, often as approximation to Binomial |
+| Normal: standardise via $z$ | use the $z$-table fact base (68/95/99.7) |
 | Hypergeometric | sampling without replacement |
 | Properties of expectation, variance | linearity, independence |
 
@@ -2038,95 +2038,95 @@ $X \sim N(50, 100)$ (mean = 50, variance = 100, so $\sigma = 10$). Find $P(X > 6
 
 | Type | Defining function | Conditions |
 |------|-------------------|-----------|
-| Discrete | pmf \(p(x) = P(X = x)\) | \(p(x) \ge 0, \; \sum p(x) = 1\) |
-| Continuous | pdf \(f(x)\) | \(f(x) \ge 0, \; \int_{-\infty}^{\infty} f(x)\,dx = 1\) |
-| Either | CDF \(F(x) = P(X \le x)\) | non-decreasing, right-continuous, \(F(-\infty) = 0, F(\infty) = 1\) |
+| Discrete | pmf $p(x) = P(X = x)$ | $p(x) \ge 0, \; \sum p(x) = 1$ |
+| Continuous | pdf $f(x)$ | $f(x) \ge 0, \; \int_{-\infty}^{\infty} f(x)\,dx = 1$ |
+| Either | CDF $F(x) = P(X \le x)$ | non-decreasing, right-continuous, $F(-\infty) = 0, F(\infty) = 1$ |
 
 ## 7.3 Expectation and variance — formulas
 
 | Quantity | Discrete | Continuous |
 |----------|----------|-----------|
-| \(E[X]\) | \( \sum x \, p(x) \) | \( \int x f(x) dx \) |
-| \(E[g(X)]\) | \( \sum g(x) p(x) \) | \( \int g(x) f(x) dx \) |
-| \(\text{Var}(X)\) | \(E[X^2] - (E[X])^2\) | same |
+| $E[X]$ | $ \sum x \, p(x) $ | $ \int x f(x) dx $ |
+| $E[g(X)]$ | $ \sum g(x) p(x) $ | $ \int g(x) f(x) dx $ |
+| $\text{Var}(X)$ | $E[X^2] - (E[X])^2$ | same |
 
-**Linearity:** \( E[aX + b] = a E[X] + b \). Always true (independence not required).
+**Linearity:** $ E[aX + b] = a E[X] + b $. Always true (independence not required).
 
-**Variance scaling:** \( \text{Var}(aX + b) = a^2 \text{Var}(X) \).
+**Variance scaling:** $ \text{Var}(aX + b) = a^2 \text{Var}(X) $.
 
-For independent \(X, Y\): \( E[XY] = E[X] E[Y] \) and \( \text{Var}(X + Y) = \text{Var}(X) + \text{Var}(Y) \).
+For independent $X, Y$: $ E[XY] = E[X] E[Y] $ and $ \text{Var}(X + Y) = \text{Var}(X) + \text{Var}(Y) $.
 
 ## 7.4 The four named distributions — master card
 
-### Binomial \( B(n, p) \)
+### Binomial $ B(n, p) $
 
 | Quantity | Formula |
 |----------|---------|
-| pmf | \( P(X = r) = {}^n C_r \, p^r (1-p)^{n-r}, \; r = 0, 1, \ldots, n \) |
-| Mean | \( np \) |
-| Variance | \( npq \), \(q = 1 - p\) |
-| SD | \( \sqrt{npq} \) |
-| Skewness | \( (1 - 2p)/\sqrt{npq} \) |
-| Kurtosis (\(\beta_2\)) | \( 3 + (1 - 6pq)/(npq) \) |
+| pmf | $ P(X = r) = {}^n C_r \, p^r (1-p)^{n-r}, \; r = 0, 1, \ldots, n $ |
+| Mean | $ np $ |
+| Variance | $ npq $, $q = 1 - p$ |
+| SD | $ \sqrt{npq} $ |
+| Skewness | $ (1 - 2p)/\sqrt{npq} $ |
+| Kurtosis ($\beta_2$) | $ 3 + (1 - 6pq)/(npq) $ |
 
-**When to use:** \(n\) independent Bernoulli trials, fixed \(p\), count of successes.
+**When to use:** $n$ independent Bernoulli trials, fixed $p$, count of successes.
 
-### Poisson \( P(\lambda) \)
-
-| Quantity | Formula |
-|----------|---------|
-| pmf | \( P(X = r) = \dfrac{e^{-\lambda} \lambda^r}{r!}, \; r = 0, 1, 2, \ldots \) |
-| Mean | \( \lambda \) |
-| Variance | \( \lambda \) |
-| SD | \( \sqrt{\lambda} \) |
-
-**When to use:** Rare events in a fixed interval (calls per minute, defects per metre). Also approximates \(B(n,p)\) when \(n \to \infty, p \to 0, np = \lambda\).
-
-### Normal \( N(\mu, \sigma^2) \)
+### Poisson $ P(\lambda) $
 
 | Quantity | Formula |
 |----------|---------|
-| pdf | \( f(x) = \dfrac{1}{\sigma \sqrt{2\pi}} e^{-(x - \mu)^2 / (2 \sigma^2)} \) |
-| Mean / Median / Mode | all = \(\mu\) |
-| Variance | \(\sigma^2\) |
+| pmf | $ P(X = r) = \dfrac{e^{-\lambda} \lambda^r}{r!}, \; r = 0, 1, 2, \ldots $ |
+| Mean | $ \lambda $ |
+| Variance | $ \lambda $ |
+| SD | $ \sqrt{\lambda} $ |
+
+**When to use:** Rare events in a fixed interval (calls per minute, defects per metre). Also approximates $B(n,p)$ when $n \to \infty, p \to 0, np = \lambda$.
+
+### Normal $ N(\mu, \sigma^2) $
+
+| Quantity | Formula |
+|----------|---------|
+| pdf | $ f(x) = \dfrac{1}{\sigma \sqrt{2\pi}} e^{-(x - \mu)^2 / (2 \sigma^2)} $ |
+| Mean / Median / Mode | all = $\mu$ |
+| Variance | $\sigma^2$ |
 | Skewness | 0 |
-| Kurtosis (\(\beta_2\)) | 3 (mesokurtic) |
-| Standardisation | \( Z = (X - \mu)/\sigma \sim N(0,1) \) |
+| Kurtosis ($\beta_2$) | 3 (mesokurtic) |
+| Standardisation | $ Z = (X - \mu)/\sigma \sim N(0,1) $ |
 
 **The 68–95–99.7 rule:**
 
 | Range | Probability |
 |-------|-------------|
-| \( \mu \pm \sigma \) | 0.6826 (≈ 68 %) |
-| \( \mu \pm 2\sigma \) | 0.9544 (≈ 95 %) |
-| \( \mu \pm 3\sigma \) | 0.9974 (≈ 99.7 %) |
+| $ \mu \pm \sigma $ | 0.6826 (≈ 68 %) |
+| $ \mu \pm 2\sigma $ | 0.9544 (≈ 95 %) |
+| $ \mu \pm 3\sigma $ | 0.9974 (≈ 99.7 %) |
 
-Common z-values to memorise: \(z_{0.05} = 1.645\) (one-tail), \(z_{0.025} = 1.96\) (two-tail 95%), \(z_{0.005} = 2.58\) (two-tail 99%).
+Common z-values to memorise: $z_{0.05} = 1.645$ (one-tail), $z_{0.025} = 1.96$ (two-tail 95%), $z_{0.005} = 2.58$ (two-tail 99%).
 
-### Hypergeometric \(H(N, K, n)\)
+### Hypergeometric $H(N, K, n)$
 
-Sampling \(n\) items **without replacement** from a population of \(N\) containing \(K\) successes.
-
-| Quantity | Formula |
-|----------|---------|
-| pmf | \( P(X = k) = \dfrac{ {}^K C_k \cdot {}^{N-K} C_{n-k} }{ {}^N C_n } \) |
-| Mean | \( n K/N \) |
-| Variance | \( n \dfrac{K}{N} \cdot \dfrac{N-K}{N} \cdot \dfrac{N-n}{N-1} \) (the last factor is the **finite-population correction**) |
-
-### Uniform (continuous) \(U(a, b)\)
+Sampling $n$ items **without replacement** from a population of $N$ containing $K$ successes.
 
 | Quantity | Formula |
 |----------|---------|
-| pdf | \(1/(b - a)\) on \([a, b]\), else 0 |
-| Mean | \((a + b)/2\) |
-| Variance | \((b - a)^2 / 12\) |
+| pmf | $ P(X = k) = \dfrac{ {}^K C_k \cdot {}^{N-K} C_{n-k} }{ {}^N C_n } $ |
+| Mean | $ n K/N $ |
+| Variance | $ n \dfrac{K}{N} \cdot \dfrac{N-K}{N} \cdot \dfrac{N-n}{N-1} $ (the last factor is the **finite-population correction**) |
+
+### Uniform (continuous) $U(a, b)$
+
+| Quantity | Formula |
+|----------|---------|
+| pdf | $1/(b - a)$ on $[a, b]$, else 0 |
+| Mean | $(a + b)/2$ |
+| Variance | $(b - a)^2 / 12$ |
 
 ## 7.5 Recognising which distribution to use
 
 | Wording cue | Distribution |
 |-------------|-------------|
-| "n trials, fixed probability \(p\) per trial" | Binomial |
-| "rate of \(\lambda\) per unit time/length" | Poisson |
+| "n trials, fixed probability $p$ per trial" | Binomial |
+| "rate of $\lambda$ per unit time/length" | Poisson |
 | "approximately normally distributed", "symmetric, bell-shaped" | Normal |
 | "without replacement, finite population" | Hypergeometric |
 | "equally likely over an interval" | Uniform |
@@ -2135,55 +2135,55 @@ Sampling \(n\) items **without replacement** from a population of \(N\) containi
 
 > **Q 7.1.** Toss a fair coin 10 times. P(exactly 4 heads)?
 >
-> \( {}^{10}C_4 (0.5)^4 (0.5)^6 = 210 / 1024 \approx \mathbf{0.205}\).
+> $ {}^{10}C_4 (0.5)^4 (0.5)^6 = 210 / 1024 \approx \mathbf{0.205}$.
 
-> **Q 7.2.** \(X \sim B(8, 1/4)\). Mean and variance?
+> **Q 7.2.** $X \sim B(8, 1/4)$. Mean and variance?
 >
 > Mean = 8 · 1/4 = **2**. Var = 8 · 1/4 · 3/4 = **1.5**.
 
 > **Q 7.3.** Number of defects per page is Poisson with mean 2. P(no defects on a page)?
 >
-> \( e^{-2} \approx \mathbf{0.135} \).
+> $ e^{-2} \approx \mathbf{0.135} $.
 
 > **Q 7.4.** Calls arrive at rate 4/hour (Poisson). P(exactly 5 calls in 1 hour)?
 >
-> \( e^{-4} \cdot 4^5 / 5! = (0.0183)(1024)/120 \approx \mathbf{0.156}\).
+> $ e^{-4} \cdot 4^5 / 5! = (0.0183)(1024)/120 \approx \mathbf{0.156}$.
 
-> **Q 7.5.** \(X \sim N(50, 100)\). P(40 < X < 60)?
+> **Q 7.5.** $X \sim N(50, 100)$. P(40 < X < 60)?
 >
-> \(\sigma = 10\). \(z_1 = (40-50)/10 = -1, z_2 = +1\). Within ±1 σ → **0.6826** (68.26 %).
+> $\sigma = 10$. $z_1 = (40-50)/10 = -1, z_2 = +1$. Within ±1 σ → **0.6826** (68.26 %).
 
-> **Q 7.6.** \(X \sim N(20, 16)\). P(X > 28)?
+> **Q 7.6.** $X \sim N(20, 16)$. P(X > 28)?
 >
-> \(\sigma = 4\). \(z = (28 - 20)/4 = 2\). P(Z > 2) = (1 − 0.9544)/2 = **0.0228**.
+> $\sigma = 4$. $z = (28 - 20)/4 = 2$. P(Z > 2) = (1 − 0.9544)/2 = **0.0228**.
 
-> **Q 7.7.** Binomial \(n = 100, p = 0.02\). Approximate by Poisson with mean?
+> **Q 7.7.** Binomial $n = 100, p = 0.02$. Approximate by Poisson with mean?
 >
-> \(\lambda = np = \mathbf{2}\).
+> $\lambda = np = \mathbf{2}$.
 
-> **Q 7.8.** Mean of \(X \sim P(\lambda)\) is 9. SD?
+> **Q 7.8.** Mean of $X \sim P(\lambda)$ is 9. SD?
 >
-> \( \sqrt{9} = \mathbf{3} \).
+> $ \sqrt{9} = \mathbf{3} $.
 
 > **Q 7.9.** Lot of 20 has 5 defectives. 4 picked without replacement. P(exactly 2 defective)?
 >
-> \( \dfrac{ {}^5C_2 \cdot {}^{15}C_2 }{ {}^{20}C_4 } = \dfrac{10 \cdot 105}{4845} = \dfrac{1050}{4845} \approx \mathbf{0.217} \).
+> $ \dfrac{ {}^5C_2 \cdot {}^{15}C_2 }{ {}^{20}C_4 } = \dfrac{10 \cdot 105}{4845} = \dfrac{1050}{4845} \approx \mathbf{0.217} $.
 
-> **Q 7.10.** \(X\) uniform on [0, 10]. P(X > 7)?
+> **Q 7.10.** $X$ uniform on [0, 10]. P(X > 7)?
 >
 > Length 3 / total length 10 = **0.3**.
 
-> **Q 7.11.** For a Binomial with mean = 8 and variance = 4, find \(n\) and \(p\).
+> **Q 7.11.** For a Binomial with mean = 8 and variance = 4, find $n$ and $p$.
 >
-> \(np = 8, npq = 4 \Rightarrow q = 0.5, p = 0.5, n = 16\).
+> $np = 8, npq = 4 \Rightarrow q = 0.5, p = 0.5, n = 16$.
 
 > **Q 7.12.** Mode of normal distribution = ?
 >
-> \( \mu \) (= mean = median).
+> $ \mu $ (= mean = median).
 
-> **Q 7.13.** \(E[X] = 5, \text{Var}(X) = 4\). \(E[2X+3]\) and \(\text{Var}(2X+3)\)?
+> **Q 7.13.** $E[X] = 5, \text{Var}(X) = 4$. $E[2X+3]$ and $\text{Var}(2X+3)$?
 >
-> \(2 \cdot 5 + 3 = \mathbf{13}\). Var = \(4 \cdot 4 = \mathbf{16}\).
+> $2 \cdot 5 + 3 = \mathbf{13}$. Var = $4 \cdot 4 = \mathbf{16}$.
 
 > **Q 7.14.** Normal: 95% of data lies within how many σ?
 >
@@ -2191,9 +2191,9 @@ Sampling \(n\) items **without replacement** from a population of \(N\) containi
 
 > **Q 7.15.** A discrete RV X has pmf p(0) = 0.3, p(1) = 0.4, p(2) = 0.2, p(3) = c. Find c, mean, variance.
 >
-> \(c = 1 − 0.9 = 0.1\).
-> \(E[X] = 0(0.3) + 1(0.4) + 2(0.2) + 3(0.1) = 0 + 0.4 + 0.4 + 0.3 = 1.1\).
-> \(E[X^2] = 0 + 0.4 + 0.8 + 0.9 = 2.1\). Var = 2.1 − 1.21 = **0.89**.
+> $c = 1 − 0.9 = 0.1$.
+> $E[X] = 0(0.3) + 1(0.4) + 2(0.2) + 3(0.1) = 0 + 0.4 + 0.4 + 0.3 = 1.1$.
+> $E[X^2] = 0 + 0.4 + 0.8 + 0.9 = 2.1$. Var = 2.1 − 1.21 = **0.89**.
 
 ## 7.7 Trap-recognition card
 
@@ -2203,7 +2203,7 @@ Sampling \(n\) items **without replacement** from a population of \(N\) containi
 | For Poisson, "mean ≠ variance" | They are equal: both = λ. That's the **identifying property**. |
 | Normal density value vs probability | The pdf height is not a probability; areas under it are. |
 | Forgot finite-population correction in hypergeometric | Multiply variance by (N − n)/(N − 1). |
-| Mixing up \(z\) for one-tail and two-tail at 5% | One-tail: 1.645. Two-tail: 1.96. |
+| Mixing up $z$ for one-tail and two-tail at 5% | One-tail: 1.645. Two-tail: 1.96. |
 
 ## 7.8 Mini-mock
 
@@ -2305,10 +2305,10 @@ Population: $\mu = 80$, $\sigma = 20$. Random sample of $n = 100$. Find the SE o
 
 | Term | Symbol | Description |
 |------|--------|-------------|
-| Population | size \(N\) | Entire group of interest |
-| Sample | size \(n\) | Subset chosen for study |
-| Parameter | \(\mu, \sigma, P\) | Numerical value of population |
-| Statistic | \(\bar X, s, p\) | Numerical value of sample |
+| Population | size $N$ | Entire group of interest |
+| Sample | size $n$ | Subset chosen for study |
+| Parameter | $\mu, \sigma, P$ | Numerical value of population |
+| Statistic | $\bar X, s, p$ | Numerical value of sample |
 | Sampling | | Process of drawing a sample |
 | Sampling frame | | List of all units in the population |
 
@@ -2337,7 +2337,7 @@ graph TD
 |-----------|-------------|-------------|
 | **Simple random (SRS)** | Population is homogeneous, complete frame available | Each unit has equal chance |
 | **Stratified** | Population has clear sub-groups (strata) with within-strata homogeneity | Sample drawn from each stratum; gains precision |
-| **Systematic** | Population is ordered, cheap implementation needed | Pick every \(k\)-th unit; \(k = N/n\) |
+| **Systematic** | Population is ordered, cheap implementation needed | Pick every $k$-th unit; $k = N/n$ |
 | **Cluster** | Geographically dispersed population, no full frame | Population split into clusters; some clusters fully sampled |
 | **Multi-stage** | Very large populations | Cluster + further sampling within (e.g., state → district → block → village) |
 
@@ -2367,33 +2367,33 @@ The **sampling distribution** of a statistic is the distribution of its values a
 
 ### Standard error of the mean
 
-For a population with SD \( \sigma \), sample of size \(n\):
+For a population with SD $ \sigma $, sample of size $n$:
 
-\[
+$$
 \text{SE}(\bar X) = \dfrac{\sigma}{\sqrt{n}} \quad \text{(infinite population)}
-\]
+$$
 
-\[
+$$
 \text{SE}(\bar X) = \dfrac{\sigma}{\sqrt{n}} \sqrt{\dfrac{N - n}{N - 1}} \quad \text{(finite population, FPC)}
-\]
+$$
 
 ### Standard error of a proportion
 
-\[
+$$
 \text{SE}(p) = \sqrt{\dfrac{P(1-P)}{n}}
-\]
+$$
 
 ### Standard error of difference of means (independent samples)
 
-\[
+$$
 \text{SE}(\bar X_1 - \bar X_2) = \sqrt{\dfrac{\sigma_1^2}{n_1} + \dfrac{\sigma_2^2}{n_2}}
-\]
+$$
 
 ## 8.7 Central Limit Theorem (CLT)
 
-> If \(X_1, X_2, \ldots, X_n\) are i.i.d. with mean \(\mu\) and finite variance \(\sigma^2\), then for large \(n\), \(\bar X\) is approximately \( N(\mu, \sigma^2 / n) \), **regardless of the original distribution**.
+> If $X_1, X_2, \ldots, X_n$ are i.i.d. with mean $\mu$ and finite variance $\sigma^2$, then for large $n$, $\bar X$ is approximately $ N(\mu, \sigma^2 / n) $, **regardless of the original distribution**.
 
-Rule of thumb: \(n \ge 30\) is usually "large enough".
+Rule of thumb: $n \ge 30$ is usually "large enough".
 
 This is the single most important theorem in sampling — it's why we can do Z-tests on means even when the underlying data is not normal.
 
@@ -2401,34 +2401,34 @@ This is the single most important theorem in sampling — it's why we can do Z-t
 
 | Type | Cause | How to control |
 |------|-------|---------------|
-| Sampling error | Random; you didn't see whole population | Larger \(n\), better design |
+| Sampling error | Random; you didn't see whole population | Larger $n$, better design |
 | Non-sampling error | Frame errors, response errors, processing errors, non-response bias | Better questionnaire, training, follow-up |
 
 **Key fact:** Non-sampling error tends to **increase** with sample size (more data, more chances to mess up); sampling error **decreases**.
 
 ## 8.9 Sample-size determination (mean)
 
-Required sample size for margin of error \(E\) at confidence level \(1 - \alpha\):
+Required sample size for margin of error $E$ at confidence level $1 - \alpha$:
 
-\[
+$$
 n = \left( \dfrac{z_{\alpha/2} \cdot \sigma}{E} \right)^2
-\]
+$$
 
-For a proportion (worst-case \(P = 0.5\)):
+For a proportion (worst-case $P = 0.5$):
 
-\[
+$$
 n = \left( \dfrac{z_{\alpha/2}}{E} \right)^2 \cdot 0.25
-\]
+$$
 
 ## 8.10 Worked PYQ-style examples
 
 > **Q 8.1.** Σ = 16, sample size 64. SE of mean (infinite pop)?
 >
-> \( 16/\sqrt{64} = 16/8 = \mathbf{2} \).
+> $ 16/\sqrt{64} = 16/8 = \mathbf{2} $.
 
 > **Q 8.2.** A frame of 1000 units, sample 100, σ = 20. SE with FPC?
 >
-> Without FPC: \(20/10 = 2\). FPC = \(\sqrt{(1000-100)/(1000-1)} = \sqrt{900/999} \approx 0.949\). SE ≈ \(2 \cdot 0.949 \approx \mathbf{1.90}\).
+> Without FPC: $20/10 = 2$. FPC = $\sqrt{(1000-100)/(1000-1)} = \sqrt{900/999} \approx 0.949$. SE ≈ $2 \cdot 0.949 \approx \mathbf{1.90}$.
 
 > **Q 8.3.** Population is geographically scattered with no list of households. Best sampling?
 >
@@ -2440,19 +2440,19 @@ n = \left( \dfrac{z_{\alpha/2}}{E} \right)^2 \cdot 0.25
 
 > **Q 8.5.** From a list of 1000 employees, every 10th is selected. Sampling type?
 >
-> **Systematic** (\(k = 10\)).
+> **Systematic** ($k = 10$).
 
 > **Q 8.6.** As n increases, SE of mean:
 >
-> Decreases (proportional to \(1/\sqrt n\)).
+> Decreases (proportional to $1/\sqrt n$).
 
-> **Q 8.7.** SE(p) when \(n = 100, P = 0.4\)?
+> **Q 8.7.** SE(p) when $n = 100, P = 0.4$?
 >
-> \( \sqrt{0.4 \cdot 0.6 / 100} = \sqrt{0.0024} \approx \mathbf{0.049}\).
+> $ \sqrt{0.4 \cdot 0.6 / 100} = \sqrt{0.0024} \approx \mathbf{0.049}$.
 
 > **Q 8.8.** σ known to be 30. Want margin 5 at 95% confidence. Sample size?
 >
-> \(n = (1.96 \cdot 30 / 5)^2 = (11.76)^2 \approx \mathbf{138.3} \to 139\).
+> $n = (1.96 \cdot 30 / 5)^2 = (11.76)^2 \approx \mathbf{138.3} \to 139$.
 
 > **Q 8.9.** A non-probability technique relying on existing respondents to refer new ones is:
 >
@@ -2612,15 +2612,15 @@ Survey data: 100 males (60 prefer product A, 40 prefer B), 80 females (30 prefer
 
 | Type | What you give | Example |
 |------|---------------|---------|
-| Point estimate | A single number | \( \hat \mu = \bar X = 50.2 \) |
+| Point estimate | A single number | $ \hat \mu = \bar X = 50.2 $ |
 | Interval estimate | A range with confidence level | "We're 95% confident μ ∈ [48.3, 52.1]" |
 
 ## 9.3 Properties of a good estimator
 
 | Property | Meaning | Symbolically |
 |----------|---------|--------------|
-| **Unbiasedness** | Expected value of estimator = parameter | \(E[\hat\theta] = \theta\) |
-| **Consistency** | Probability of being close to true value → 1 as n → ∞ | \(\hat\theta \xrightarrow{P} \theta\) |
+| **Unbiasedness** | Expected value of estimator = parameter | $E[\hat\theta] = \theta$ |
+| **Consistency** | Probability of being close to true value → 1 as n → ∞ | $\hat\theta \xrightarrow{P} \theta$ |
 | **Efficiency** | Among unbiased estimators, smallest variance | min Var |
 | **Sufficiency** | Estimator captures all sample information about θ | factorisation theorem |
 
@@ -2628,29 +2628,29 @@ Survey data: 100 males (60 prefer product A, 40 prefer B), 80 females (30 prefer
 
 | Parameter | Unbiased estimator |
 |-----------|--------------------|
-| \( \mu \) | \( \bar X \) |
-| Population variance \( \sigma^2 \) | sample variance with **\(n - 1\)** in denominator: \( s^2 = \dfrac{\sum (X_i - \bar X)^2}{n - 1} \) |
-| Population proportion \(P\) | sample proportion \(p = X/n\) |
+| $ \mu $ | $ \bar X $ |
+| Population variance $ \sigma^2 $ | sample variance with **$n - 1$** in denominator: $ s^2 = \dfrac{\sum (X_i - \bar X)^2}{n - 1} $ |
+| Population proportion $P$ | sample proportion $p = X/n$ |
 
-**Watch out:** \(\bar X^2\) is **not** an unbiased estimator of \(\mu^2\). And \(s\) (the SD) is a slightly biased estimator of \(\sigma\) even though \(s^2\) is unbiased for \(\sigma^2\).
+**Watch out:** $\bar X^2$ is **not** an unbiased estimator of $\mu^2$. And $s$ (the SD) is a slightly biased estimator of $\sigma$ even though $s^2$ is unbiased for $\sigma^2$.
 
 ## 9.4 Methods of estimation
 
 | Method | One-line description |
 |--------|---------------------|
-| **Maximum Likelihood (MLE)** | Pick θ that maximises the likelihood \(L(\theta) = \prod f(x_i; \theta)\). Often most efficient asymptotically. |
+| **Maximum Likelihood (MLE)** | Pick θ that maximises the likelihood $L(\theta) = \prod f(x_i; \theta)$. Often most efficient asymptotically. |
 | **Method of Moments (MoM)** | Equate sample moments to population moments and solve for θ. Easy but not always most efficient. |
-| **Least Squares (LS)** | Minimise \(\sum (X_i - \hat\mu)^2\). Used in regression and ANOVA. |
+| **Least Squares (LS)** | Minimise $\sum (X_i - \hat\mu)^2$. Used in regression and ANOVA. |
 
 ## 9.5 Confidence interval for the mean
 
 | σ known | σ unknown, n large (≥30) | σ unknown, n small |
 |---------|---------------------------|--------------------|
-| \( \bar X \pm z_{\alpha/2} \dfrac{\sigma}{\sqrt n} \) | \( \bar X \pm z_{\alpha/2} \dfrac{s}{\sqrt n} \) | \( \bar X \pm t_{\alpha/2,\, n-1} \dfrac{s}{\sqrt n} \) |
+| $ \bar X \pm z_{\alpha/2} \dfrac{\sigma}{\sqrt n} $ | $ \bar X \pm z_{\alpha/2} \dfrac{s}{\sqrt n} $ | $ \bar X \pm t_{\alpha/2,\, n-1} \dfrac{s}{\sqrt n} $ |
 
 Common multipliers:
 
-| Confidence | \( z_{\alpha/2} \) |
+| Confidence | $ z_{\alpha/2} $ |
 |-----------|---------|
 | 90 % | 1.645 |
 | 95 % | 1.960 |
@@ -2658,7 +2658,7 @@ Common multipliers:
 
 ## 9.6 Hypothesis testing — the universal template
 
-> **Step 1.** State \(H_0\) (null) and \(H_1\) (alternative).
+> **Step 1.** State $H_0$ (null) and $H_1$ (alternative).
 >
 > **Step 2.** Pick test statistic (Z, t, χ², F) based on what's being tested and what's known.
 >
@@ -2668,16 +2668,16 @@ Common multipliers:
 >
 > **Step 5.** Compute test statistic from sample.
 >
-> **Step 6.** Reject \(H_0\) iff test stat falls in critical region. Otherwise fail to reject.
+> **Step 6.** Reject $H_0$ iff test stat falls in critical region. Otherwise fail to reject.
 
 ## 9.7 Type I and Type II errors
 
-| Decision \ Reality | \(H_0\) true | \(H_0\) false |
+| Decision \ Reality | $H_0$ true | $H_0$ false |
 |--------------------|--------------|--------------|
-| Reject \(H_0\) | **Type I error**, prob = α | Correct (power = 1 − β) |
+| Reject $H_0$ | **Type I error**, prob = α | Correct (power = 1 − β) |
 | Fail to reject | Correct | **Type II error**, prob = β |
 
-**Memory hook:** "α: rejecting a true \(H_0\) (false alarm)." "β: keeping a false \(H_0\) (missed alarm)."
+**Memory hook:** "α: rejecting a true $H_0$ (false alarm)." "β: keeping a false $H_0$ (missed alarm)."
 
 ## 9.8 The four big tests
 
@@ -2685,51 +2685,51 @@ Common multipliers:
 
 | Hypothesis | Test stat |
 |-----------|-----------|
-| \(H_0: \mu = \mu_0\) | \( Z = \dfrac{\bar X - \mu_0}{\sigma/\sqrt n} \) |
-| Two means | \( Z = \dfrac{\bar X_1 - \bar X_2}{\sqrt{\sigma_1^2/n_1 + \sigma_2^2/n_2}} \) |
-| Proportion | \( Z = \dfrac{p - P_0}{\sqrt{P_0(1-P_0)/n}} \) |
-| Two proportions | \( Z = \dfrac{p_1 - p_2}{\sqrt{\hat P (1-\hat P)(1/n_1 + 1/n_2)}} \), \(\hat P = (X_1+X_2)/(n_1+n_2)\) |
+| $H_0: \mu = \mu_0$ | $ Z = \dfrac{\bar X - \mu_0}{\sigma/\sqrt n} $ |
+| Two means | $ Z = \dfrac{\bar X_1 - \bar X_2}{\sqrt{\sigma_1^2/n_1 + \sigma_2^2/n_2}} $ |
+| Proportion | $ Z = \dfrac{p - P_0}{\sqrt{P_0(1-P_0)/n}} $ |
+| Two proportions | $ Z = \dfrac{p_1 - p_2}{\sqrt{\hat P (1-\hat P)(1/n_1 + 1/n_2)}} $, $\hat P = (X_1+X_2)/(n_1+n_2)$ |
 
 ### (ii) t-test (small sample, σ unknown)
 
 | Hypothesis | Test stat | df |
 |-----------|-----------|----|
-| One mean, \(H_0: \mu = \mu_0\) | \( t = \dfrac{\bar X - \mu_0}{s/\sqrt n} \) | \(n - 1\) |
-| Two means (independent, equal variances) | \( t = \dfrac{\bar X_1 - \bar X_2}{s_p \sqrt{1/n_1 + 1/n_2}}, \; s_p^2 = \dfrac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2} \) | \(n_1 + n_2 - 2\) |
-| Paired | \( t = \dfrac{\bar d}{s_d/\sqrt n} \) | \(n - 1\) |
+| One mean, $H_0: \mu = \mu_0$ | $ t = \dfrac{\bar X - \mu_0}{s/\sqrt n} $ | $n - 1$ |
+| Two means (independent, equal variances) | $ t = \dfrac{\bar X_1 - \bar X_2}{s_p \sqrt{1/n_1 + 1/n_2}}, \; s_p^2 = \dfrac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2} $ | $n_1 + n_2 - 2$ |
+| Paired | $ t = \dfrac{\bar d}{s_d/\sqrt n} $ | $n - 1$ |
 
 ### (iii) Chi-square test
 
 | Application | Test statistic |
 |------------|----------------|
-| **Goodness of fit** | \( \chi^2 = \sum \dfrac{(O - E)^2}{E} \), df = (categories − 1 − parameters estimated) |
-| **Independence (\(r \times c\) table)** | same formula, df = \((r-1)(c-1)\) |
-| **Test of variance**, \(H_0: \sigma^2 = \sigma_0^2\) | \( \chi^2 = (n-1) s^2 / \sigma_0^2 \), df = \(n-1\) |
+| **Goodness of fit** | $ \chi^2 = \sum \dfrac{(O - E)^2}{E} $, df = (categories − 1 − parameters estimated) |
+| **Independence ($r \times c$ table)** | same formula, df = $(r-1)(c-1)$ |
+| **Test of variance**, $H_0: \sigma^2 = \sigma_0^2$ | $ \chi^2 = (n-1) s^2 / \sigma_0^2 $, df = $n-1$ |
 
 ### (iv) F-test
 
 | Application | Test statistic |
 |------------|----------------|
-| Equality of two variances | \( F = s_1^2 / s_2^2 \) (larger over smaller), df \(= (n_1-1, n_2-1)\) |
-| ANOVA (Chapter 10) | \( F = MSB / MSW \) |
+| Equality of two variances | $ F = s_1^2 / s_2^2 $ (larger over smaller), df $= (n_1-1, n_2-1)$ |
+| ANOVA (Chapter 10) | $ F = MSB / MSW $ |
 
 ## 9.9 Critical-region cheat sheet (5% significance)
 
-| Tail | Test | Reject \(H_0\) if … |
+| Tail | Test | Reject $H_0$ if … |
 |------|------|---------------------|
-| Two-tail | Z | \(|Z| > 1.96\) |
-| Right-tail | Z | \(Z > 1.645\) |
-| Left-tail | Z | \(Z < -1.645\) |
-| Two-tail | t | \(|t| > t_{0.025, df}\) — table |
-| Right-tail | χ² | \(\chi^2 > \chi^2_{0.05, df}\) — table |
-| F | upper tail | \(F > F_{0.05, df_1, df_2}\) — table |
+| Two-tail | Z | $|Z| > 1.96$ |
+| Right-tail | Z | $Z > 1.645$ |
+| Left-tail | Z | $Z < -1.645$ |
+| Two-tail | t | $|t| > t_{0.025, df}$ — table |
+| Right-tail | χ² | $\chi^2 > \chi^2_{0.05, df}$ — table |
+| F | upper tail | $F > F_{0.05, df_1, df_2}$ — table |
 
 ## 9.10 Power, level, OC curve
 
 | Quantity | Symbol | Meaning |
 |----------|--------|---------|
 | Level of significance | α | Max tolerable Type I error |
-| Power of test | 1 − β | Probability of rejecting a false \(H_0\) |
+| Power of test | 1 − β | Probability of rejecting a false $H_0$ |
 | OC curve | β as a function of true parameter | shows test's discrimination |
 | Best test | Maximises power for given α | Neyman-Pearson lemma |
 
@@ -2737,57 +2737,57 @@ A "more powerful test" = lower β for the same α. Powerful tests are usually **
 
 ## 9.11 Worked PYQ-style examples
 
-> **Q 9.1.** Sample of n=64 from a population with σ=8 gave \(\bar X = 51\). Test \(H_0: \mu = 50\) at α = 5% (two-tail).
+> **Q 9.1.** Sample of n=64 from a population with σ=8 gave $\bar X = 51$. Test $H_0: \mu = 50$ at α = 5% (two-tail).
 >
-> \( Z = (51 - 50)/(8/8) = 1.0 \). |Z| = 1.0 < 1.96 → **fail to reject** \(H_0\).
+> $ Z = (51 - 50)/(8/8) = 1.0 $. |Z| = 1.0 < 1.96 → **fail to reject** $H_0$.
 
-> **Q 9.2.** \(n = 25, \bar X = 102, s = 10\), test \(H_0: \mu = 100\) at α = 5% (two-tail).
+> **Q 9.2.** $n = 25, \bar X = 102, s = 10$, test $H_0: \mu = 100$ at α = 5% (two-tail).
 >
-> \( t = (102 - 100)/(10/5) = 1.0 \). \(t_{0.025, 24} ≈ 2.064\). 1.0 < 2.064 → **fail to reject** \(H_0\).
+> $ t = (102 - 100)/(10/5) = 1.0 $. $t_{0.025, 24} ≈ 2.064$. 1.0 < 2.064 → **fail to reject** $H_0$.
 
-> **Q 9.3.** \(n=100, p=0.45\). Test \(H_0: P = 0.5\) at α = 5% two-tail.
+> **Q 9.3.** $n=100, p=0.45$. Test $H_0: P = 0.5$ at α = 5% two-tail.
 >
-> \( Z = (0.45 - 0.5)/\sqrt{0.5 \cdot 0.5/100} = -0.05/0.05 = -1.0 \). |Z| < 1.96 → **fail to reject**.
+> $ Z = (0.45 - 0.5)/\sqrt{0.5 \cdot 0.5/100} = -0.05/0.05 = -1.0 $. |Z| < 1.96 → **fail to reject**.
 
-> **Q 9.4.** \(s_1^2 = 25, s_2^2 = 16, n_1 = n_2 = 11\). Test equality of variances at 5%.
+> **Q 9.4.** $s_1^2 = 25, s_2^2 = 16, n_1 = n_2 = 11$. Test equality of variances at 5%.
 >
-> \(F = 25/16 = 1.5625\). df = (10, 10), \(F_{0.05, 10, 10} \approx 2.97\). 1.5625 < 2.97 → fail to reject.
+> $F = 25/16 = 1.5625$. df = (10, 10), $F_{0.05, 10, 10} \approx 2.97$. 1.5625 < 2.97 → fail to reject.
 
-> **Q 9.5.** A goodness-of-fit χ² = 12.6 with df = 5. At α = 5% (\(\chi^2_{crit} = 11.07\)), decision?
+> **Q 9.5.** A goodness-of-fit χ² = 12.6 with df = 5. At α = 5% ($\chi^2_{crit} = 11.07$), decision?
 >
-> 12.6 > 11.07 → **reject** \(H_0\) (data does not fit the proposed distribution).
+> 12.6 > 11.07 → **reject** $H_0$ (data does not fit the proposed distribution).
 
 > **Q 9.6.** Type I error is the probability of:
 >
-> Rejecting a TRUE \(H_0\). (= α)
+> Rejecting a TRUE $H_0$. (= α)
 
 > **Q 9.7.** Power of a test = ?
 >
 > 1 − β.
 
-> **Q 9.8.** 95% CI for mean if \(\bar X = 50, s = 4, n = 64\):
+> **Q 9.8.** 95% CI for mean if $\bar X = 50, s = 4, n = 64$:
 >
-> \( 50 \pm 1.96 \cdot 4/8 = 50 \pm 0.98 = \mathbf{[49.02, 50.98]} \).
+> $ 50 \pm 1.96 \cdot 4/8 = 50 \pm 0.98 = \mathbf{[49.02, 50.98]} $.
 
-> **Q 9.9.** Why use \(n-1\) (not \(n\)) for sample variance?
+> **Q 9.9.** Why use $n-1$ (not $n$) for sample variance?
 >
-> So that \(E[s^2] = \sigma^2\) (unbiasedness — Bessel's correction).
+> So that $E[s^2] = \sigma^2$ (unbiasedness — Bessel's correction).
 
 > **Q 9.10.** A test for independence in a 4×3 table has df:
 >
-> \((4 - 1)(3 - 1) = \mathbf{6}\).
+> $(4 - 1)(3 - 1) = \mathbf{6}$.
 
-> **Q 9.11.** \(\bar X_1 = 50, \bar X_2 = 47, \sigma_1 = \sigma_2 = 5, n_1 = n_2 = 100\). Test \(H_0: \mu_1 = \mu_2\) two-tail.
+> **Q 9.11.** $\bar X_1 = 50, \bar X_2 = 47, \sigma_1 = \sigma_2 = 5, n_1 = n_2 = 100$. Test $H_0: \mu_1 = \mu_2$ two-tail.
 >
-> \( Z = 3 / \sqrt{0.25 + 0.25} = 3/\sqrt{0.5} ≈ 4.24 \). > 1.96 → **reject**.
+> $ Z = 3 / \sqrt{0.25 + 0.25} = 3/\sqrt{0.5} ≈ 4.24 $. > 1.96 → **reject**.
 
-> **Q 9.12.** MLE of \(p\) for Binomial sample \(X\) successes in \(n\) trials?
+> **Q 9.12.** MLE of $p$ for Binomial sample $X$ successes in $n$ trials?
 >
-> \( \hat p = X/n \) (also the unbiased MoM estimator).
+> $ \hat p = X/n $ (also the unbiased MoM estimator).
 
-> **Q 9.13.** \(\bar X^2\) is an unbiased estimator of \(\mu^2\)?
+> **Q 9.13.** $\bar X^2$ is an unbiased estimator of $\mu^2$?
 >
-> No. \(E[\bar X^2] = \mu^2 + \sigma^2/n \ne \mu^2\).
+> No. $E[\bar X^2] = \mu^2 + \sigma^2/n \ne \mu^2$.
 
 > **Q 9.14.** Best critical region is given by the:
 >
@@ -2804,7 +2804,7 @@ A "more powerful test" = lower β for the same α. Powerful tests are usually **
 | Use Z when n is small AND σ unknown | Wrong — must use t. |
 | Use t with σ known | Use Z. |
 | Test of two variances using Z | No — use F. |
-| df for χ² independence as \(rc - 1\) | Correct: \((r-1)(c-1)\). |
+| df for χ² independence as $rc - 1$ | Correct: $(r-1)(c-1)$. |
 | α and power add to 1 | No: α + power is meaningless. β + power = 1. |
 | MLE always unbiased | False. MLEs are often biased but consistent. |
 
@@ -2830,7 +2830,7 @@ A "more powerful test" = lower β for the same α. Powerful tests are usually **
 3. Write the test statistic for Z-test of one mean.
 4. Write the χ² formula for goodness-of-fit.
 5. State the Neyman-Pearson lemma in one line.
-6. Write the formula for pooled variance \(s_p^2\) in two-sample t.
+6. Write the formula for pooled variance $s_p^2$ in two-sample t.
 
 ---
 
@@ -2892,7 +2892,7 @@ Three teaching methods, 4 students each ($k=3$, $N=12$). SSB = 60, SST = 140.
 | One-way layout | TSS = SSB + SSW |
 | Two-way layout | TSS = SSR + SSC + SSE |
 | ANOVA table fill-in | df, MS, F |
-| Decision rule | F > F_crit → reject \(H_0\) |
+| Decision rule | F > F_crit → reject $H_0$ |
 
 ## 10.2 The big idea
 
@@ -2902,28 +2902,28 @@ Three teaching methods, 4 students each ($k=3$, $N=12$). SSB = 60, SST = 140.
 
 ## 10.3 One-way ANOVA — formulas
 
-\(k\) treatments (groups), \(n_i\) observations in group \(i\), total \(N = \sum n_i\). Let \(T_i = \) total of group \(i\), \(G = \) grand total.
+$k$ treatments (groups), $n_i$ observations in group $i$, total $N = \sum n_i$. Let $T_i = $ total of group $i$, $G = $ grand total.
 
 | Source | SS | df | MS |
 |--------|----|----|-----|
-| Between treatments | \( \text{SSB} = \sum \dfrac{T_i^2}{n_i} - \dfrac{G^2}{N} \) | \( k - 1 \) | \( \text{MSB} = \text{SSB}/(k-1) \) |
-| Within (error) | \( \text{SSW} = \text{TSS} - \text{SSB} \) | \( N - k \) | \( \text{MSW} = \text{SSW}/(N-k) \) |
-| Total | \( \text{TSS} = \sum X^2 - \dfrac{G^2}{N} \) | \( N - 1 \) | |
+| Between treatments | $ \text{SSB} = \sum \dfrac{T_i^2}{n_i} - \dfrac{G^2}{N} $ | $ k - 1 $ | $ \text{MSB} = \text{SSB}/(k-1) $ |
+| Within (error) | $ \text{SSW} = \text{TSS} - \text{SSB} $ | $ N - k $ | $ \text{MSW} = \text{SSW}/(N-k) $ |
+| Total | $ \text{TSS} = \sum X^2 - \dfrac{G^2}{N} $ | $ N - 1 $ | |
 
-Test statistic: \( F = \dfrac{\text{MSB}}{\text{MSW}} \), df \(= (k - 1, \; N - k)\).
+Test statistic: $ F = \dfrac{\text{MSB}}{\text{MSW}} $, df $= (k - 1, \; N - k)$.
 
 ## 10.4 Two-way ANOVA (without replication) — formulas
 
-\(r\) rows (treatments), \(c\) columns (blocks), \(N = rc\).
+$r$ rows (treatments), $c$ columns (blocks), $N = rc$.
 
 | Source | SS | df |
 |--------|----|----|
-| Rows | \(\sum R_i^2 / c - G^2/N\) | \(r - 1\) |
-| Columns | \(\sum C_j^2 / r - G^2/N\) | \(c - 1\) |
-| Error | TSS − SSR − SSC | \((r-1)(c-1)\) |
-| Total | \(\sum X^2 - G^2/N\) | \(rc - 1\) |
+| Rows | $\sum R_i^2 / c - G^2/N$ | $r - 1$ |
+| Columns | $\sum C_j^2 / r - G^2/N$ | $c - 1$ |
+| Error | TSS − SSR − SSC | $(r-1)(c-1)$ |
+| Total | $\sum X^2 - G^2/N$ | $rc - 1$ |
 
-Two F-tests: \(F_R = \text{MSR}/\text{MSE}\) (rows), \(F_C = \text{MSC}/\text{MSE}\) (columns).
+Two F-tests: $F_R = \text{MSR}/\text{MSE}$ (rows), $F_C = \text{MSC}/\text{MSE}$ (columns).
 
 ## 10.5 Assumptions of ANOVA
 
@@ -2937,17 +2937,17 @@ Two F-tests: \(F_R = \text{MSR}/\text{MSE}\) (rows), \(F_C = \text{MSC}/\text{MS
 >
 > Equality of **means** of several populations.
 
-> **Q 10.2.** \(k = 4\) treatments, \(N = 24\). What is df for between and within?
+> **Q 10.2.** $k = 4$ treatments, $N = 24$. What is df for between and within?
 >
 > Between = 3, Within = 20.
 
-> **Q 10.3.** SSB = 60, SSW = 80, \(k = 4, N = 24\). F?
+> **Q 10.3.** SSB = 60, SSW = 80, $k = 4, N = 24$. F?
 >
 > MSB = 60/3 = 20. MSW = 80/20 = 4. F = 20/4 = **5.0**.
 
 > **Q 10.4.** Two-way layout 3 rows × 4 columns. df for error?
 >
-> \((3 - 1)(4 - 1) = \mathbf{6}\).
+> $(3 - 1)(4 - 1) = \mathbf{6}$.
 
 > **Q 10.5.** TSS = 200, SSB = 50. SSW?
 >
@@ -2971,8 +2971,8 @@ Two F-tests: \(F_R = \text{MSR}/\text{MSE}\) (rows), \(F_C = \text{MSC}/\text{MS
 |------|---------|
 | ANOVA tests equality of variances | No — it tests equality of **means** (using the variance ratio as a tool). |
 | Significant F → all means differ | F only says "not all equal". Need post-hoc to find pairs. |
-| Within-error has \(N - 1\) df | No, \(N - k\). The \(N - 1\) belongs to total. |
-| df_total = N | No, \(N - 1\). |
+| Within-error has $N - 1$ df | No, $N - k$. The $N - 1$ belongs to total. |
+| df_total = N | No, $N - 1$. |
 
 ## 10.8 Mini-mock
 
@@ -2993,7 +2993,7 @@ Two F-tests: \(F_R = \text{MSR}/\text{MSE}\) (rows), \(F_C = \text{MSC}/\text{MS
 
 1. Write the one-way ANOVA decomposition of total sum of squares.
 2. State the three assumptions of ANOVA.
-3. Write df for between, within, total in one-way (with \(k\) groups, \(N\) observations).
+3. Write df for between, within, total in one-way (with $k$ groups, $N$ observations).
 4. State the F-test decision rule.
 5. How does one-way ANOVA with k=2 relate to a two-sample t-test?
 
@@ -3077,8 +3077,8 @@ The moving averages (12.0, 14.0, 15.33, 16.33, 17.67) show a clearer upward tren
 
 | Model | Equation | Use |
 |-------|----------|-----|
-| Additive | \( Y = T + S + C + I \) | When seasonal swings are roughly constant in size |
-| Multiplicative | \( Y = T \cdot S \cdot C \cdot I \) | When seasonal swings scale with trend |
+| Additive | $ Y = T + S + C + I $ | When seasonal swings are roughly constant in size |
+| Multiplicative | $ Y = T \cdot S \cdot C \cdot I $ | When seasonal swings scale with trend |
 
 ## 11.4 Methods of measuring trend
 
@@ -3096,11 +3096,11 @@ Plot data, draw a smooth line by eye. Subjective.
 
 ### (iii) Moving-average method
 
-For a 3-year MA, the trend value of year \(t\) is:
+For a 3-year MA, the trend value of year $t$ is:
 
-\[
+$$
 M_t = \dfrac{Y_{t-1} + Y_t + Y_{t+1}}{3}
-\]
+$$
 
 For an even period (4-year), use **centred moving average** to align with original years.
 
@@ -3112,13 +3112,13 @@ For an even period (4-year), use **centred moving average** to align with origin
 
 ### (iv) Least-squares (linear trend)
 
-Fit \( \hat Y = a + bX \) where \(X\) = coded time.
+Fit $ \hat Y = a + bX $ where $X$ = coded time.
 
-\[
+$$
 b = \dfrac{\sum X Y}{\sum X^2}, \quad a = \bar Y - b \bar X
-\]
+$$
 
-(Choose origin so that \(\sum X = 0\) → simpler arithmetic.)
+(Choose origin so that $\sum X = 0$ → simpler arithmetic.)
 
 ## 11.5 Measuring seasonal variation — Method of Simple Averages
 
@@ -3127,7 +3127,7 @@ b = \dfrac{\sum X Y}{\sum X^2}, \quad a = \bar Y - b \bar X
 | 1 | Arrange data by month/quarter for each year |
 | 2 | Compute the average for each season across years |
 | 3 | Compute grand average |
-| 4 | Seasonal index for season \(j = (\text{average for season } j) / (\text{grand average}) \times 100\) |
+| 4 | Seasonal index for season $j = (\text{average for season } j) / (\text{grand average}) \times 100$ |
 
 The 4 (or 12) indices average to 100. If they don't, **adjust** by multiplying each by 100 / their average.
 
@@ -3139,7 +3139,7 @@ The 4 (or 12) indices average to 100. If they don't, **adjust** by multiplying e
 
 > **Q 11.2.** Multiplicative model of time series?
 >
-> \(Y = T \cdot S \cdot C \cdot I\).
+> $Y = T \cdot S \cdot C \cdot I$.
 
 > **Q 11.3.** Sales: 10, 12, 14, 13, 16, 18, 20. 3-year moving averages?
 >
@@ -3173,9 +3173,9 @@ The 4 (or 12) indices average to 100. If they don't, **adjust** by multiplying e
 >
 > 400 (so each averages to 100).
 
-> **Q 11.10.** Trend by least squares with \(\sum X = 0\): \(b\) formula?
+> **Q 11.10.** Trend by least squares with $\sum X = 0$: $b$ formula?
 >
-> \( b = \sum XY / \sum X^2 \).
+> $ b = \sum XY / \sum X^2 $.
 
 ## 11.7 Trap-recognition card
 
@@ -3290,7 +3290,7 @@ An **index number** measures relative change from a base period. CPI = 180 means
 
 > An **index number** is a statistical measure designed to show changes in a variable or a group of related variables with respect to time, geographic location, or other characteristic.
 
-Notation: \( P_0, Q_0 \) for **base** period; \( P_1, Q_1 \) for **current** period.
+Notation: $ P_0, Q_0 $ for **base** period; $ P_1, Q_1 $ for **current** period.
 
 ## 12.3 Types of index numbers
 
@@ -3305,19 +3305,19 @@ Notation: \( P_0, Q_0 \) for **base** period; \( P_1, Q_1 \) for **current** per
 
 | Method | Formula |
 |--------|---------|
-| Simple aggregate | \( P_{01} = \dfrac{\sum P_1}{\sum P_0} \times 100 \) |
-| Simple average of price relatives (AM) | \( P_{01} = \dfrac{1}{n} \sum \dfrac{P_1}{P_0} \times 100 \) |
-| Simple average of price relatives (GM) | \( P_{01} = \mathrm{antilog}\!\left(\dfrac{\sum \log(P_1/P_0)}{n}\right) \times 100 \) |
+| Simple aggregate | $ P_{01} = \dfrac{\sum P_1}{\sum P_0} \times 100 $ |
+| Simple average of price relatives (AM) | $ P_{01} = \dfrac{1}{n} \sum \dfrac{P_1}{P_0} \times 100 $ |
+| Simple average of price relatives (GM) | $ P_{01} = \mathrm{antilog}\!\left(\dfrac{\sum \log(P_1/P_0)}{n}\right) \times 100 $ |
 
 ## 12.5 Weighted aggregate indices — the big four
 
 | Index | Formula | Weights used |
 |-------|---------|--------------|
-| **Laspeyres** | \( L = \dfrac{\sum P_1 Q_0}{\sum P_0 Q_0} \times 100 \) | base-year quantities (Q₀) |
-| **Paasche** | \( P = \dfrac{\sum P_1 Q_1}{\sum P_0 Q_1} \times 100 \) | current-year quantities (Q₁) |
-| **Fisher's ideal** | \( F = \sqrt{L \cdot P} \) | geometric mean of L and P |
-| **Marshall-Edgeworth** | \( ME = \dfrac{\sum P_1 (Q_0 + Q_1)}{\sum P_0 (Q_0 + Q_1)} \times 100 \) | average of base and current quantities |
-| **Walsh** | \( W = \dfrac{\sum P_1 \sqrt{Q_0 Q_1}}{\sum P_0 \sqrt{Q_0 Q_1}} \times 100 \) | geometric mean of quantities |
+| **Laspeyres** | $ L = \dfrac{\sum P_1 Q_0}{\sum P_0 Q_0} \times 100 $ | base-year quantities (Q₀) |
+| **Paasche** | $ P = \dfrac{\sum P_1 Q_1}{\sum P_0 Q_1} \times 100 $ | current-year quantities (Q₁) |
+| **Fisher's ideal** | $ F = \sqrt{L \cdot P} $ | geometric mean of L and P |
+| **Marshall-Edgeworth** | $ ME = \dfrac{\sum P_1 (Q_0 + Q_1)}{\sum P_0 (Q_0 + Q_1)} \times 100 $ | average of base and current quantities |
+| **Walsh** | $ W = \dfrac{\sum P_1 \sqrt{Q_0 Q_1}}{\sum P_0 \sqrt{Q_0 Q_1}} \times 100 $ | geometric mean of quantities |
 
 <div class="mnemonic"><strong>Memory hook for Laspeyres vs Paasche.</strong> "Laspeyres uses **L**ast-period (base) quantities. Paasche uses **P**resent-period (current) quantities."</div>
 
@@ -3325,9 +3325,9 @@ Notation: \( P_0, Q_0 \) for **base** period; \( P_1, Q_1 \) for **current** per
 
 | Test | Condition | Laspeyres | Paasche | Fisher | ME | Walsh |
 |------|-----------|-----------|---------|--------|----|----|
-| **Time reversal** \(P_{01} \cdot P_{10} = 1\) | Index of "1 → 0" should undo index of "0 → 1" | ✗ | ✗ | ✓ | ✓ | ✓ |
-| **Factor reversal** \(P_{01} \cdot Q_{01} = V_{01}\) | Price × Quantity index = Value index | ✗ | ✗ | ✓ | ✗ | ✗ |
-| **Circular** \(P_{01} \cdot P_{12} \cdot P_{20} = 1\) | Chain consistency | ✗ | ✗ | ✗ | ✗ | partly |
+| **Time reversal** $P_{01} \cdot P_{10} = 1$ | Index of "1 → 0" should undo index of "0 → 1" | ✗ | ✗ | ✓ | ✓ | ✓ |
+| **Factor reversal** $P_{01} \cdot Q_{01} = V_{01}$ | Price × Quantity index = Value index | ✗ | ✗ | ✓ | ✗ | ✗ |
+| **Circular** $P_{01} \cdot P_{12} \cdot P_{20} = 1$ | Chain consistency | ✗ | ✗ | ✗ | ✗ | partly |
 
 **Hence Fisher's index is called "Ideal" — it satisfies both time and factor reversal.**
 
@@ -3337,8 +3337,8 @@ Two main methods:
 
 | Method | Formula |
 |--------|---------|
-| Aggregate expenditure (≈ Laspeyres) | \( \dfrac{\sum P_1 Q_0}{\sum P_0 Q_0} \times 100 \) |
-| Family budget (weighted AM of price relatives) | \( \dfrac{\sum W \cdot (P_1/P_0) \times 100}{\sum W} \), where \(W = P_0 Q_0\) |
+| Aggregate expenditure (≈ Laspeyres) | $ \dfrac{\sum P_1 Q_0}{\sum P_0 Q_0} \times 100 $ |
+| Family budget (weighted AM of price relatives) | $ \dfrac{\sum W \cdot (P_1/P_0) \times 100}{\sum W} $, where $W = P_0 Q_0$ |
 
 Both methods are mathematically equivalent.
 
@@ -3346,10 +3346,10 @@ Both methods are mathematically equivalent.
 
 | Operation | Formula |
 |-----------|---------|
-| **Base shifting**: shift the base from year-X to year-Y | \(\text{New index}_t = \dfrac{\text{Old index}_t}{\text{Old index}_Y} \times 100\) |
+| **Base shifting**: shift the base from year-X to year-Y | $\text{New index}_t = \dfrac{\text{Old index}_t}{\text{Old index}_Y} \times 100$ |
 | **Splicing**: join two index series with overlapping period | Multiply older series by (new value at overlap / old value at overlap), or vice versa |
-| **Deflating**: convert money wages → real wages | \(\text{Real} = \dfrac{\text{Money value}}{\text{CPI}} \times 100\) |
-| **Purchasing power of money** | \(1/\text{CPI} \times 100\) |
+| **Deflating**: convert money wages → real wages | $\text{Real} = \dfrac{\text{Money value}}{\text{CPI}} \times 100$ |
+| **Purchasing power of money** | $1/\text{CPI} \times 100$ |
 
 ## 12.9 Worked PYQ-style examples
 
@@ -3372,7 +3372,7 @@ Both methods are mathematically equivalent.
 
 > **Q 12.3.** Fisher's index for above?
 >
-> \( \sqrt{135.71 \times 133.33} = \sqrt{18093} \approx \mathbf{134.51} \).
+> $ \sqrt{135.71 \times 133.33} = \sqrt{18093} \approx \mathbf{134.51} $.
 
 > **Q 12.4.** Which index satisfies factor reversal?
 >
@@ -3390,13 +3390,13 @@ Both methods are mathematically equivalent.
 >
 > Divide by 121, multiply by 100. New values: 110/121×100 ≈ 90.91, 100, 109.92.
 
-> **Q 12.8.** \(L = 144, P = 121\). Fisher?
+> **Q 12.8.** $L = 144, P = 121$. Fisher?
 >
-> \(\sqrt{144 \cdot 121} = \sqrt{17424} = 132\).
+> $\sqrt{144 \cdot 121} = \sqrt{17424} = 132$.
 
 > **Q 12.9.** Marshall-Edgeworth uses what weight?
 >
-> \(Q_0 + Q_1\) (sum of base and current quantities).
+> $Q_0 + Q_1$ (sum of base and current quantities).
 
 > **Q 12.10.** A simple aggregate of prices index ignores:
 >
@@ -3444,14 +3444,14 @@ Both methods are mathematically equivalent.
 
 | Concept | Formula |
 |---------|---------|
-| AM (raw / freq) | \(\bar X = \sum X/n = \sum fX / N\) |
-| Step-deviation AM | \( A + \dfrac{\sum f u}{N} \cdot h \), \(u = (X-A)/h\) |
-| Combined mean | \( \dfrac{n_1 \bar X_1 + n_2 \bar X_2}{n_1 + n_2} \) |
-| GM | \( (X_1 \cdots X_n)^{1/n} \); \(\log\)-AM form |
-| HM | \( n / \sum (1/X_i) \) |
+| AM (raw / freq) | $\bar X = \sum X/n = \sum fX / N$ |
+| Step-deviation AM | $ A + \dfrac{\sum f u}{N} \cdot h $, $u = (X-A)/h$ |
+| Combined mean | $ \dfrac{n_1 \bar X_1 + n_2 \bar X_2}{n_1 + n_2} $ |
+| GM | $ (X_1 \cdots X_n)^{1/n} $; $\log$-AM form |
+| HM | $ n / \sum (1/X_i) $ |
 | AM·HM = GM² | (for two positive numbers only) |
-| Median (grouped) | \( L + \dfrac{N/2 - F}{f} h \) |
-| Mode (grouped) | \( L + \dfrac{f_1 - f_0}{2 f_1 - f_0 - f_2} h \) |
+| Median (grouped) | $ L + \dfrac{N/2 - F}{f} h $ |
+| Mode (grouped) | $ L + \dfrac{f_1 - f_0}{2 f_1 - f_0 - f_2} h $ |
 | Empirical rel. | Mode = 3 Median − 2 Mean |
 
 ## A.2 Dispersion
@@ -3461,90 +3461,90 @@ Both methods are mathematically equivalent.
 | Range | max − min |
 | QD | (Q₃ − Q₁)/2 |
 | Coeff QD | (Q₃ − Q₁)/(Q₃ + Q₁) |
-| Variance (computational) | \( \dfrac{\sum X^2}{n} - \bar X^2 \) |
-| Step-deviation var | \( h^2 \big[\sum f u^2 / N - (\sum f u / N)^2\big] \) |
-| CV | \( \sigma / \bar X \times 100 \) |
-| Combined SD | \( \sigma_{12}^2 = \dfrac{n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)}{n_1 + n_2} \) |
-| Var(aX + b) | \(a^2 \cdot \text{Var}(X)\) |
-| Var(X+Y) (indep) | \(\text{Var}(X) + \text{Var}(Y)\) |
-| Var(X−Y) (indep) | \(\text{Var}(X) + \text{Var}(Y)\) |
+| Variance (computational) | $ \dfrac{\sum X^2}{n} - \bar X^2 $ |
+| Step-deviation var | $ h^2 \big[\sum f u^2 / N - (\sum f u / N)^2\big] $ |
+| CV | $ \sigma / \bar X \times 100 $ |
+| Combined SD | $ \sigma_{12}^2 = \dfrac{n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)}{n_1 + n_2} $ |
+| Var(aX + b) | $a^2 \cdot \text{Var}(X)$ |
+| Var(X+Y) (indep) | $\text{Var}(X) + \text{Var}(Y)$ |
+| Var(X−Y) (indep) | $\text{Var}(X) + \text{Var}(Y)$ |
 
 ## A.3 Moments / Skewness / Kurtosis
 
 | Concept | Formula |
 |---------|---------|
-| Raw moment | \( \mu_r' = \sum f X^r / N \) |
-| Central moment | \( \mu_r = \sum f (X - \bar X)^r / N \) |
-| \(\mu_2\) | \(= \sigma^2\) |
-| \(\mu_2 \) from raw | \(\mu_2 = \mu_2' - (\mu_1')^2\) |
-| \(\mu_3 \) from raw | \(\mu_3 = \mu_3' - 3 \mu_1' \mu_2' + 2 (\mu_1')^3\) |
-| Karl Pearson Sk | \( (\bar X - \text{Mode})/\sigma \), or \( 3(\bar X - \text{Med})/\sigma \) |
-| Bowley Sk | \( (Q_3 + Q_1 - 2Q_2)/(Q_3 - Q_1) \) |
-| \(\beta_1\) | \(\mu_3^2 / \mu_2^3\) |
-| \(\beta_2\) | \(\mu_4 / \mu_2^2\); = 3 normal, > 3 lepto, < 3 platy |
-| Sheppard correction (\(\mu_2\)) | subtract \(h^2/12\) |
+| Raw moment | $ \mu_r' = \sum f X^r / N $ |
+| Central moment | $ \mu_r = \sum f (X - \bar X)^r / N $ |
+| $\mu_2$ | $= \sigma^2$ |
+| $\mu_2 $ from raw | $\mu_2 = \mu_2' - (\mu_1')^2$ |
+| $\mu_3 $ from raw | $\mu_3 = \mu_3' - 3 \mu_1' \mu_2' + 2 (\mu_1')^3$ |
+| Karl Pearson Sk | $ (\bar X - \text{Mode})/\sigma $, or $ 3(\bar X - \text{Med})/\sigma $ |
+| Bowley Sk | $ (Q_3 + Q_1 - 2Q_2)/(Q_3 - Q_1) $ |
+| $\beta_1$ | $\mu_3^2 / \mu_2^3$ |
+| $\beta_2$ | $\mu_4 / \mu_2^2$; = 3 normal, > 3 lepto, < 3 platy |
+| Sheppard correction ($\mu_2$) | subtract $h^2/12$ |
 
 ## A.4 Correlation / Regression
 
 | Concept | Formula |
 |---------|---------|
-| Karl Pearson r | \( \dfrac{n \sum XY - \sum X \sum Y}{\sqrt{[n \sum X^2 - (\sum X)^2][n \sum Y^2 - (\sum Y)^2]}} \) |
-| Spearman ρ | \( 1 - 6 \sum d^2 / [n(n^2 - 1)] \) |
-| \(b_{YX}\) | \( r \sigma_Y / \sigma_X = \text{Cov}/\sigma_X^2 \) |
-| \(b_{XY}\) | \( r \sigma_X / \sigma_Y = \text{Cov}/\sigma_Y^2 \) |
-| \(r\) from slopes | \( \pm \sqrt{b_{YX} b_{XY}} \) |
-| Two regression lines meet at | \( (\bar X, \bar Y) \) |
-| SE of estimate | \( S_{Y\cdot X} = \sigma_Y \sqrt{1 - r^2} \) |
-| Coefficient of determination | \(r^2\) |
-| Partial \(r_{12.3}\) | \( (r_{12} - r_{13} r_{23})/\sqrt{(1-r_{13}^2)(1-r_{23}^2)} \) |
-| Multiple \(R_{1.23}^2\) | \( (r_{12}^2 + r_{13}^2 - 2 r_{12} r_{13} r_{23})/(1 - r_{23}^2) \) |
+| Karl Pearson r | $ \dfrac{n \sum XY - \sum X \sum Y}{\sqrt{[n \sum X^2 - (\sum X)^2][n \sum Y^2 - (\sum Y)^2]}} $ |
+| Spearman ρ | $ 1 - 6 \sum d^2 / [n(n^2 - 1)] $ |
+| $b_{YX}$ | $ r \sigma_Y / \sigma_X = \text{Cov}/\sigma_X^2 $ |
+| $b_{XY}$ | $ r \sigma_X / \sigma_Y = \text{Cov}/\sigma_Y^2 $ |
+| $r$ from slopes | $ \pm \sqrt{b_{YX} b_{XY}} $ |
+| Two regression lines meet at | $ (\bar X, \bar Y) $ |
+| SE of estimate | $ S_{Y\cdot X} = \sigma_Y \sqrt{1 - r^2} $ |
+| Coefficient of determination | $r^2$ |
+| Partial $r_{12.3}$ | $ (r_{12} - r_{13} r_{23})/\sqrt{(1-r_{13}^2)(1-r_{23}^2)} $ |
+| Multiple $R_{1.23}^2$ | $ (r_{12}^2 + r_{13}^2 - 2 r_{12} r_{13} r_{23})/(1 - r_{23}^2) $ |
 
 ## A.5 Probability
 
 | Concept | Formula |
 |---------|---------|
-| P(A ∪ B) | \(P(A) + P(B) - P(A \cap B)\) |
-| P(A | B) | \(P(A \cap B)/P(B)\) |
-| Multiplication | \(P(A \cap B) = P(A) P(B|A)\) |
-| Independence | \(P(A \cap B) = P(A) P(B)\) |
-| Bayes | \( P(B_i | A) = \dfrac{P(B_i) P(A|B_i)}{\sum_j P(B_j) P(A|B_j)} \) |
+| P(A ∪ B) | $P(A) + P(B) - P(A \cap B)$ |
+| P(A | B) | $P(A \cap B)/P(B)$ |
+| Multiplication | $P(A \cap B) = P(A) P(B|A)$ |
+| Independence | $P(A \cap B) = P(A) P(B)$ |
+| Bayes | $ P(B_i | A) = \dfrac{P(B_i) P(A|B_i)}{\sum_j P(B_j) P(A|B_j)} $ |
 
 ## A.6 Distributions
 
 | Distribution | pmf / pdf | Mean | Variance |
 |--------------|-----------|------|----------|
-| Binomial(n,p) | \({}^nC_r p^r q^{n-r}\) | np | npq |
-| Poisson(λ) | \(e^{-\lambda} \lambda^r / r!\) | λ | λ |
-| Normal(μ,σ²) | \(\frac{1}{\sigma\sqrt{2\pi}} e^{-(x-\mu)^2/(2\sigma^2)}\) | μ | σ² |
-| Hypergeom(N,K,n) | \({}^KC_k {}^{N-K}C_{n-k}/{}^NC_n\) | nK/N | nK(N-K)(N-n)/[N²(N-1)] |
-| Uniform(a,b) | \(1/(b-a)\) | (a+b)/2 | (b-a)²/12 |
+| Binomial(n,p) | ${}^nC_r p^r q^{n-r}$ | np | npq |
+| Poisson(λ) | $e^{-\lambda} \lambda^r / r!$ | λ | λ |
+| Normal(μ,σ²) | $\frac{1}{\sigma\sqrt{2\pi}} e^{-(x-\mu)^2/(2\sigma^2)}$ | μ | σ² |
+| Hypergeom(N,K,n) | ${}^KC_k {}^{N-K}C_{n-k}/{}^NC_n$ | nK/N | nK(N-K)(N-n)/[N²(N-1)] |
+| Uniform(a,b) | $1/(b-a)$ | (a+b)/2 | (b-a)²/12 |
 
 ## A.7 Sampling and inference
 
 | Concept | Formula |
 |---------|---------|
-| SE of mean (∞ pop) | \(\sigma/\sqrt n\) |
-| SE of mean (FPC) | \(\sigma/\sqrt n \cdot \sqrt{(N-n)/(N-1)}\) |
-| SE of proportion | \(\sqrt{P(1-P)/n}\) |
-| 95 % CI for μ (large) | \(\bar X \pm 1.96 \sigma / \sqrt n\) |
-| t-stat (one mean) | \((\bar X - \mu_0)/(s/\sqrt n)\), df = \(n-1\) |
-| Pooled variance | \(s_p^2 = [(n_1-1)s_1^2 + (n_2-1)s_2^2]/(n_1+n_2-2)\) |
-| χ² goodness | \(\sum (O - E)^2/E\) |
-| F (variances) | \(s_1^2 / s_2^2\) (larger over smaller) |
+| SE of mean (∞ pop) | $\sigma/\sqrt n$ |
+| SE of mean (FPC) | $\sigma/\sqrt n \cdot \sqrt{(N-n)/(N-1)}$ |
+| SE of proportion | $\sqrt{P(1-P)/n}$ |
+| 95 % CI for μ (large) | $\bar X \pm 1.96 \sigma / \sqrt n$ |
+| t-stat (one mean) | $(\bar X - \mu_0)/(s/\sqrt n)$, df = $n-1$ |
+| Pooled variance | $s_p^2 = [(n_1-1)s_1^2 + (n_2-1)s_2^2]/(n_1+n_2-2)$ |
+| χ² goodness | $\sum (O - E)^2/E$ |
+| F (variances) | $s_1^2 / s_2^2$ (larger over smaller) |
 | ANOVA F | MSB / MSW |
-| Sample size for E (mean) | \(n = (z_{\alpha/2} \sigma / E)^2\) |
+| Sample size for E (mean) | $n = (z_{\alpha/2} \sigma / E)^2$ |
 
 ## A.8 Time series and index numbers
 
 | Concept | Formula |
 |---------|---------|
-| Additive TS | \(Y = T + S + C + I\) |
-| Multiplicative TS | \(Y = T \cdot S \cdot C \cdot I\) |
-| 3-yr MA | \((Y_{t-1} + Y_t + Y_{t+1})/3\) |
-| Linear trend (Σ X = 0) | \(b = \sum XY/\sum X^2\), \(a = \bar Y\) |
-| Laspeyres | \(\sum P_1 Q_0 / \sum P_0 Q_0 \times 100\) |
-| Paasche | \(\sum P_1 Q_1 / \sum P_0 Q_1 \times 100\) |
-| Fisher | \(\sqrt{L \cdot P}\) |
+| Additive TS | $Y = T + S + C + I$ |
+| Multiplicative TS | $Y = T \cdot S \cdot C \cdot I$ |
+| 3-yr MA | $(Y_{t-1} + Y_t + Y_{t+1})/3$ |
+| Linear trend (Σ X = 0) | $b = \sum XY/\sum X^2$, $a = \bar Y$ |
+| Laspeyres | $\sum P_1 Q_0 / \sum P_0 Q_0 \times 100$ |
+| Paasche | $\sum P_1 Q_1 / \sum P_0 Q_1 \times 100$ |
+| Fisher | $\sqrt{L \cdot P}$ |
 | Real wage | Money wage / CPI × 100 |
 | Purchasing power | 1/CPI × 100 |
 
@@ -3556,24 +3556,24 @@ Both methods are mathematically equivalent.
 
 ## B.1 Common z-values and CI multipliers
 
-| Confidence level | Two-tail \(z_{\alpha/2}\) | Right-tail \(z_\alpha\) |
+| Confidence level | Two-tail $z_{\alpha/2}$ | Right-tail $z_\alpha$ |
 |------------------|--------------------------|--------------------------|
 | 90 % | 1.645 | 1.282 |
 | 95 % | 1.960 | 1.645 |
 | 98 % | 2.326 | 2.054 |
 | 99 % | 2.576 | 2.326 |
 
-## B.2 Excerpt from standard normal table — \(P(0 \le Z \le z)\)
+## B.2 Excerpt from standard normal table — $P(0 \le Z \le z)$
 
 | z | 0.0 | 0.5 | 1.0 | 1.5 | 1.96 | 2.0 | 2.5 | 2.58 | 3.0 |
 |---|-----|-----|-----|-----|------|-----|-----|------|-----|
 | Area | 0 | 0.1915 | 0.3413 | 0.4332 | 0.4750 | 0.4772 | 0.4938 | 0.4951 | 0.4987 |
 
-So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
+So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 ## B.3 t-table (two-tail 5 %) — common df
 
-| df | \(t_{0.025}\) | df | \(t_{0.025}\) |
+| df | $t_{0.025}$ | df | $t_{0.025}$ |
 |----|--------------|----|--------------|
 | 5 | 2.571 | 20 | 2.086 |
 | 10 | 2.228 | 25 | 2.060 |
@@ -3582,7 +3582,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 ## B.4 χ²-table (5 % upper-tail)
 
-| df | \(\chi^2_{0.05}\) |
+| df | $\chi^2_{0.05}$ |
 |----|---------|
 | 1 | 3.84 |
 | 2 | 5.99 |
@@ -3593,7 +3593,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 ## B.5 F-table (5 %, selected)
 
-| \(df_1, df_2\) | F |
+| $df_1, df_2$ | F |
 |----------------|---|
 | (5, 5) | 5.05 |
 | (5, 10) | 3.33 |
@@ -3650,7 +3650,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 ### Section I — Collection / Central Tendency / Dispersion (Qs 1-25)
 
 1. Class mark of 80–90 = ?
-2. \(\bar X\) of 14, 18, 22, 26, 30 = ?
+2. $\bar X$ of 14, 18, 22, 26, 30 = ?
 3. Median of 11, 13, 7, 19, 9 = ?
 4. Mode of 4, 4, 8, 9, 4, 5, 8 = ?
 5. AM·HM of two positive numbers = 144. GM = ?
@@ -3658,18 +3658,18 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 7. SD of 5 numbers is 4. If each is multiplied by 3, new SD = ?
 8. Range of 12, 4, 18, 7, 25, 9 = ?
 9. CV definition = ?
-10. \(\sum X = 100, \sum X^2 = 1100, n = 10\). σ = ?
+10. $\sum X = 100, \sum X^2 = 1100, n = 10$. σ = ?
 11. Combined mean of n₁=20 (mean 25), n₂=30 (mean 35) = ?
 12. If each obs is increased by 10, mean becomes ____, SD becomes ____.
 13. The angle of a sector representing 30 % in a pie chart = ?
-14. \(Q_3 - Q_1 = 24\). QD = ?
+14. $Q_3 - Q_1 = 24$. QD = ?
 15. Mode = 25, Median = 28. Mean (empirical) = ?
 16. Best graph for cumulative frequency = ?
 17. AM ≥ GM ≥ HM (always for positive data). T/F?
 18. Var(2X − 3) where Var(X) = 9 = ?
 19. SD of constant 25 = ?
 20. Class boundaries of 10–19 (inclusive form) = ?
-21. \(\sum (X - \bar X) = ?\)
+21. $\sum (X - \bar X) = ?$
 22. Std dev that is unaffected by extreme values = ? (range / SD / MD / QD)
 23. Frequency density when widths differ = ?
 24. Var(X + Y), X & Y indep, Var(X)=4, Var(Y)=9 = ?
@@ -3677,31 +3677,31 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 ### Section II — Moments / Skewness / Correlation / Regression (Qs 26-50)
 
-26. \(\mu_1\) for any distribution = ?
-27. β₁ when \(\mu_3 = 0\) = ?
+26. $\mu_1$ for any distribution = ?
+27. β₁ when $\mu_3 = 0$ = ?
 28. β₂ = 3 means curve is = ?
 29. Bowley's skewness when median = mean of Q₁ and Q₃ = ?
 30. Pearson Sk: mean=42, mode=36, σ=6. Sk = ?
-31. \(b_{YX} = 0.4, b_{XY} = 1.6\). \(r = ?\)
+31. $b_{YX} = 0.4, b_{XY} = 1.6$. $r = ?$
 32. Two regression lines intersect at = ?
-33. \(r = 0\) → angle between regression lines = ?
-34. Spearman ρ when \(\sum d^2 = 30, n = 10\) = ?
+33. $r = 0$ → angle between regression lines = ?
+34. Spearman ρ when $\sum d^2 = 30, n = 10$ = ?
 35. r between (X+5) and (Y−7), original r = 0.6 = ?
-36. \(r = 0.7, \sigma_X = 4, \sigma_Y = 6\). \(b_{YX}\) = ?
+36. $r = 0.7, \sigma_X = 4, \sigma_Y = 6$. $b_{YX}$ = ?
 37. r² coefficient of = ?
 38. Karl Pearson r is independent of = ?
 39. Multiple correlation R lies in = ?
 40. Var(X)=16, Var(Y)=9, indep. Var(X − Y) = ?
 41. Two regression slopes 0.5 and 0.6. r = ?
 42. Coefficient of determination, r=0.4 = ?
-43. \(\beta_2 = 1.8\), curve = ?
-44. \(\mu_3 = 8, \mu_2 = 4\). β₁ = ?
+43. $\beta_2 = 1.8$, curve = ?
+44. $\mu_3 = 8, \mu_2 = 4$. β₁ = ?
 45. Pearson Sk symmetric → mean − mode = ?
 46. SE of estimate Y on X = ?
 47. r in [−1, +1]. T/F?
 48. Spearman with tie correction adds = ?
 49. r between scaled (cX, dY) where c, d > 0 = ?
-50. \(r_{12.3}\) lies in = ?
+50. $r_{12.3}$ lies in = ?
 
 ### Section III — Probability / Distributions / Sampling (Qs 51-75)
 
@@ -3713,12 +3713,12 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 56. Toss 3 coins. P(exactly 2 H) = ?
 57. P(at least one H in 4 tosses) = ?
 58. Bag has 5R, 3B. Draw 2 wo rep. P(both R) = ?
-59. \(X \sim B(10, 0.3)\). Mean = ?
-60. \(X \sim B(10, 0.3)\). Var = ?
+59. $X \sim B(10, 0.3)$. Mean = ?
+60. $X \sim B(10, 0.3)$. Var = ?
 61. Poisson with mean 4. P(X = 0) = ?
-62. \(X \sim N(50, 25)\). P(X > 60) = ?
-63. \(X \sim N(\mu, \sigma^2)\). \(P(\mu - 1.96 \sigma < X < \mu + 1.96 \sigma)\) = ?
-64. \(\lambda = 9\). SD = ?
+62. $X \sim N(50, 25)$. P(X > 60) = ?
+63. $X \sim N(\mu, \sigma^2)$. $P(\mu - 1.96 \sigma < X < \mu + 1.96 \sigma)$ = ?
+64. $\lambda = 9$. SD = ?
 65. Mean = Var → distribution = ?
 66. Continuous uniform [0, 4]. Var = ?
 67. SE of mean if σ=12, n=144 = ?
@@ -3740,7 +3740,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 80. Pooled variance formula in two-sample t = ?
 81. Unbiased divisor for sample variance = ?
 82. Sample mean is what kind of estimator? (4 properties)
-83. Max-likelihood estimate of \(p\) for binomial = ?
+83. Max-likelihood estimate of $p$ for binomial = ?
 84. ANOVA tests equality of = ?
 85. df_total in one-way ANOVA with N obs = ?
 86. SSB = 90, SSW = 60, k = 4, N = 24. F = ?
@@ -3830,13 +3830,13 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 ## E-2  Central Tendency — extended drill (25 worked Qs)
 
-> **E-2.1.** Mean of \(2, 4, 6, \ldots, 50\) (i.e., first 25 even numbers)?
+> **E-2.1.** Mean of $2, 4, 6, \ldots, 50$ (i.e., first 25 even numbers)?
 >
-> Even numbers: \(2, 4, \ldots, 50\) → AP with 25 terms, first 2, last 50. Mean of an AP = (first + last)/2 = (2 + 50)/2 = **26**.
+> Even numbers: $2, 4, \ldots, 50$ → AP with 25 terms, first 2, last 50. Mean of an AP = (first + last)/2 = (2 + 50)/2 = **26**.
 
 > **E-2.2.** Mean of first 100 natural numbers?
 >
-> \( \dfrac{1 + 2 + \ldots + 100}{100} = \dfrac{100 \cdot 101 / 2}{100} = \dfrac{101}{2} = \mathbf{50.5} \).
+> $ \dfrac{1 + 2 + \ldots + 100}{100} = \dfrac{100 \cdot 101 / 2}{100} = \dfrac{101}{2} = \mathbf{50.5} $.
 
 > **E-2.3.** A series of 6 observations has mean 12. If a 7th observation is added and the new mean is 13, what is the new value?
 >
@@ -3848,7 +3848,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-2.5.** Two groups of size 50 and 100 have means 60 and 75 respectively. Combined mean?
 >
-> \( \dfrac{50 \cdot 60 + 100 \cdot 75}{150} = \dfrac{3000 + 7500}{150} = \dfrac{10500}{150} = \mathbf{70} \).
+> $ \dfrac{50 \cdot 60 + 100 \cdot 75}{150} = \dfrac{3000 + 7500}{150} = \dfrac{10500}{150} = \mathbf{70} $.
 
 > **E-2.6.** AM of 10 observations is 25. After adding two new observations the mean becomes 27. Sum of the two new values?
 >
@@ -3856,15 +3856,15 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-2.7.** A man covers three equal distances at 30, 40 and 60 km/h. Average speed?
 >
-> Equal distances → HM. \( \text{HM} = 3/(1/30 + 1/40 + 1/60) \). LCM 120: 4/120 + 3/120 + 2/120 = 9/120. HM = 3 · 120/9 = **40 km/h**.
+> Equal distances → HM. $ \text{HM} = 3/(1/30 + 1/40 + 1/60) $. LCM 120: 4/120 + 3/120 + 2/120 = 9/120. HM = 3 · 120/9 = **40 km/h**.
 
 > **E-2.8.** GM of 1, 3, 9, 27, 81?
 >
-> Powers of 3: \(3^0, 3^1, 3^2, 3^3, 3^4\). Product = \(3^{0+1+2+3+4} = 3^{10}\). GM = \((3^{10})^{1/5} = 3^2 = \mathbf{9}\). (Or: middle term of GP = GM.)
+> Powers of 3: $3^0, 3^1, 3^2, 3^3, 3^4$. Product = $3^{0+1+2+3+4} = 3^{10}$. GM = $(3^{10})^{1/5} = 3^2 = \mathbf{9}$. (Or: middle term of GP = GM.)
 
 > **E-2.9.** AM of two numbers exceeds their GM by 2. AM exceeds HM by what?
 >
-> Use AM × HM = GM². Let AM = G + 2, where GM = G. Then HM = G²/(G + 2). AM − HM = (G + 2) − G²/(G + 2) = [(G+2)² − G²]/(G + 2) = (4G + 4)/(G + 2) = 4(G + 1)/(G + 2). Without specifics, students often plug small values (G = 4 → AM = 6, HM = 16/6 = 8/3; AM − HM = 6 − 8/3 = 10/3 ≈ 3.33). The general answer: **\(4(G+1)/(G+2)\)**.
+> Use AM × HM = GM². Let AM = G + 2, where GM = G. Then HM = G²/(G + 2). AM − HM = (G + 2) − G²/(G + 2) = [(G+2)² − G²]/(G + 2) = (4G + 4)/(G + 2) = 4(G + 1)/(G + 2). Without specifics, students often plug small values (G = 4 → AM = 6, HM = 16/6 = 8/3; AM − HM = 6 − 8/3 = 10/3 ≈ 3.33). The general answer: **$4(G+1)/(G+2)$**.
 
 > **E-2.10.** Median of 7, 9, 12, 14, 18, 22, 25, 28, 31?
 >
@@ -3878,14 +3878,14 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 >
 > 8 appears 4 times — most frequent. **Mode = 8**.
 
-> **E-2.13.** Compute the mean of the following grouped data using step deviation. Take \(A = 35, h = 10\).
+> **E-2.13.** Compute the mean of the following grouped data using step deviation. Take $A = 35, h = 10$.
 >
 > | Class | 0–10 | 10–20 | 20–30 | 30–40 | 40–50 | 50–60 |
 > |-------|------|-------|-------|-------|-------|-------|
 > | f     | 5    | 8     | 12    | 20    | 10    | 5     |
 >
-> Class marks: 5, 15, 25, 35, 45, 55. \(u = (m − 35)/10\): −3, −2, −1, 0, 1, 2.
-> \(fu\): −15, −16, −12, 0, 10, 10. Σfu = −23. Σf = 60.
+> Class marks: 5, 15, 25, 35, 45, 55. $u = (m − 35)/10$: −3, −2, −1, 0, 1, 2.
+> $fu$: −15, −16, −12, 0, 10, 10. Σfu = −23. Σf = 60.
 > Mean = 35 + (−23/60)(10) = 35 − 3.83 = **31.17**.
 
 > **E-2.14.** From E-2.13, find the median.
@@ -3895,20 +3895,20 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-2.15.** Mode of E-2.13?
 >
-> Modal class = 30–40 (highest f = 20). \(f_1 = 20, f_0 = 12, f_2 = 10, L = 30, h = 10\).
+> Modal class = 30–40 (highest f = 20). $f_1 = 20, f_0 = 12, f_2 = 10, L = 30, h = 10$.
 > Mode = 30 + (20 − 12)/(40 − 12 − 10) × 10 = 30 + 8/18 × 10 = 30 + 4.44 = **34.44**.
 
 > **E-2.16.** Verify the empirical relation on E-2.13/14/15.
 >
 > 3 Med − 2 Mean = 3(32.5) − 2(31.17) = 97.5 − 62.34 = 35.16. Mode by formula = 34.44. Approx match (empirical relation works exactly only for moderately skewed unimodal data).
 
-> **E-2.17.** \(P_{25}, P_{50}, P_{75}\) of a distribution correspond to which quartiles?
+> **E-2.17.** $P_{25}, P_{50}, P_{75}$ of a distribution correspond to which quartiles?
 >
-> \(Q_1, Q_2, Q_3\) respectively.
+> $Q_1, Q_2, Q_3$ respectively.
 
 > **E-2.18.** The 7th decile equals which percentile?
 >
-> \(D_7 = P_{70}\).
+> $D_7 = P_{70}$.
 
 > **E-2.19.** Which average is best for ratios and growth rates?
 >
@@ -3920,17 +3920,17 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-2.21.** A car runs the first 1/3rd of a journey at 30 km/h, the next 1/3rd at 60 km/h, and the last 1/3rd at 90 km/h. Average speed?
 >
-> Equal distances → HM. \( 3 / (1/30 + 1/60 + 1/90) \). LCM 180: 6 + 3 + 2 = 11. \(180 \cdot 3 / 11 = 540/11 ≈ \mathbf{49.09 \text{ km/h}}\).
+> Equal distances → HM. $ 3 / (1/30 + 1/60 + 1/90) $. LCM 180: 6 + 3 + 2 = 11. $180 \cdot 3 / 11 = 540/11 ≈ \mathbf{49.09 \text{ km/h}}$.
 
 > **E-2.22.** GM of 8 and 18?
 >
-> \(\sqrt{144} = \mathbf{12}\).
+> $\sqrt{144} = \mathbf{12}$.
 
 > **E-2.23.** A class mean of 60 girls is 50, the combined mean (boys + girls = 100 students) is 54. Mean of boys?
 >
-> \(54 \cdot 100 = 50 \cdot 60 + \bar X_B \cdot 40 \Rightarrow 5400 = 3000 + 40 \bar X_B \Rightarrow \bar X_B = 60\).
+> $54 \cdot 100 = 50 \cdot 60 + \bar X_B \cdot 40 \Rightarrow 5400 = 3000 + 40 \bar X_B \Rightarrow \bar X_B = 60$.
 
-> **E-2.24.** For data 5, 7, 9, 11, 13, the mean of \(2X + 3\)?
+> **E-2.24.** For data 5, 7, 9, 11, 13, the mean of $2X + 3$?
 >
 > Mean of X = 9. So mean of 2X + 3 = 21.
 
@@ -3944,23 +3944,23 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 ## E-3  Dispersion — extended drill (25 Qs)
 
-> **E-3.1.** Variance of first \(n\) odd natural numbers?
+> **E-3.1.** Variance of first $n$ odd natural numbers?
 >
-> Odd numbers: 1, 3, 5, …, (2n − 1). Mean = \(n\). \(\sum X^2 = \dfrac{n(2n-1)(2n+1)}{3}\).
-> Variance = \(\sum X^2 / n - n^2 = \dfrac{(2n-1)(2n+1)}{3} - n^2 = \dfrac{4n^2 - 1}{3} - n^2 = \dfrac{n^2 - 1}{3}\).
-> So variance of odd natural numbers up to \(2n - 1\) is \(\dfrac{n^2 - 1}{3}\) (analogous to natural numbers' \( (n^2-1)/12\); note the 4× because step is 2).
+> Odd numbers: 1, 3, 5, …, (2n − 1). Mean = $n$. $\sum X^2 = \dfrac{n(2n-1)(2n+1)}{3}$.
+> Variance = $\sum X^2 / n - n^2 = \dfrac{(2n-1)(2n+1)}{3} - n^2 = \dfrac{4n^2 - 1}{3} - n^2 = \dfrac{n^2 - 1}{3}$.
+> So variance of odd natural numbers up to $2n - 1$ is $\dfrac{n^2 - 1}{3}$ (analogous to natural numbers' $ (n^2-1)/12$; note the 4× because step is 2).
 
-> **E-3.2.** SD of \(2, 4, 6, 8, 10\)?
+> **E-3.2.** SD of $2, 4, 6, 8, 10$?
 >
-> Mean = 6. Deviations: −4, −2, 0, 2, 4. Squared: 16, 4, 0, 4, 16 → sum 40. Variance = 8. SD = \(2\sqrt 2 \approx \mathbf{2.83}\).
+> Mean = 6. Deviations: −4, −2, 0, 2, 4. Squared: 16, 4, 0, 4, 16 → sum 40. Variance = 8. SD = $2\sqrt 2 \approx \mathbf{2.83}$.
 
-> **E-3.3.** Mean of 10 observations is 5 and SD is 4. Find \(\sum X\) and \(\sum X^2\).
+> **E-3.3.** Mean of 10 observations is 5 and SD is 4. Find $\sum X$ and $\sum X^2$.
 >
-> \(\sum X = 50\). Variance = 16 = \(\sum X^2/10 − 25\) → \(\sum X^2 = 410\).
+> $\sum X = 50$. Variance = 16 = $\sum X^2/10 − 25$ → $\sum X^2 = 410$.
 
-> **E-3.4.** Var(X) = 9, Var(Y) = 16, X and Y are independent. Var(\(2X − 3Y\))?
+> **E-3.4.** Var(X) = 9, Var(Y) = 16, X and Y are independent. Var($2X − 3Y$)?
 >
-> \(4 \cdot 9 + 9 \cdot 16 = 36 + 144 = \mathbf{180}\).
+> $4 \cdot 9 + 9 \cdot 16 = 36 + 144 = \mathbf{180}$.
 
 > **E-3.5.** SD of 10 observations is 6. If each observation is increased by 5 and then divided by 2, new SD?
 >
@@ -3968,10 +3968,10 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-3.6.** Two groups of equal size with means 50 and 60 and SDs 4 and 3 respectively. Combined SD?
 >
-> Combined mean = 55. \(d_1 = -5, d_2 = +5\).
-> Combined var = (1·(16 + 25) + 1·(9 + 25))/2 = (41 + 34)/2 = 37.5. SD = \(\sqrt{37.5} ≈ \mathbf{6.12}\).
+> Combined mean = 55. $d_1 = -5, d_2 = +5$.
+> Combined var = (1·(16 + 25) + 1·(9 + 25))/2 = (41 + 34)/2 = 37.5. SD = $\sqrt{37.5} ≈ \mathbf{6.12}$.
 
-> **E-3.7.** Variance computational form: which of the following is the correct expression?  (i) \(\sum (X − \bar X)^2 / n\), (ii) \(\sum X^2 / n − \bar X^2\), (iii) both, (iv) neither.
+> **E-3.7.** Variance computational form: which of the following is the correct expression?  (i) $\sum (X − \bar X)^2 / n$, (ii) $\sum X^2 / n − \bar X^2$, (iii) both, (iv) neither.
 >
 > **(iii) both** — they are algebraically equal.
 
@@ -3981,17 +3981,17 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-3.9.** First 10 natural numbers: variance and SD?
 >
-> Var = (10² − 1)/12 = 99/12 = **8.25**. SD = \(\sqrt{8.25} \approx 2.87\).
+> Var = (10² − 1)/12 = 99/12 = **8.25**. SD = $\sqrt{8.25} \approx 2.87$.
 
 > **E-3.10.** Mean deviation about median for the data 4, 6, 8, 10, 12?
 >
 > Median = 8. |X − 8| = 4, 2, 0, 2, 4. Sum = 12. MD = 12/5 = **2.4**.
 
-> **E-3.11.** Coefficient of QD when \(Q_1 = 22, Q_3 = 38\)?
+> **E-3.11.** Coefficient of QD when $Q_1 = 22, Q_3 = 38$?
 >
 > (38 − 22)/(38 + 22) = 16/60 = **0.267**.
 
-> **E-3.12.** Variance of \(7\) added 4 times → 7, 7, 7, 7?
+> **E-3.12.** Variance of $7$ added 4 times → 7, 7, 7, 7?
 >
 > All equal → variance = **0**.
 
@@ -3999,9 +3999,9 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 >
 > **No change** (origin invariant).
 
-> **E-3.14.** SD of \(X = 5\). SD of \(-3X + 7\)?
+> **E-3.14.** SD of $X = 5$. SD of $-3X + 7$?
 >
-> \(|-3| \cdot 5 = \mathbf{15}\).
+> $|-3| \cdot 5 = \mathbf{15}$.
 
 > **E-3.15.** Which of these is unaffected by the change of origin? Range, MD, SD, all of these.
 >
@@ -4023,21 +4023,21 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 >
 > **True** — it's the minimum across all c.
 
-> **E-3.20.** \(\sum X = 60, \sum X^2 = 400, n = 10\). Variance?
+> **E-3.20.** $\sum X = 60, \sum X^2 = 400, n = 10$. Variance?
 >
-> \(\bar X = 6\). Var = 40 − 36 = **4**. SD = 2.
+> $\bar X = 6$. Var = 40 − 36 = **4**. SD = 2.
 
-> **E-3.21.** Variance of \(aX + bY\) with X and Y independent?
+> **E-3.21.** Variance of $aX + bY$ with X and Y independent?
 >
-> \(a^2 \text{Var}(X) + b^2 \text{Var}(Y)\).
+> $a^2 \text{Var}(X) + b^2 \text{Var}(Y)$.
 
-> **E-3.22.** \(s = 5\) is sample SD with \(n = 25\). \(\sigma\) (population SD if computed with n divisor)?
+> **E-3.22.** $s = 5$ is sample SD with $n = 25$. $\sigma$ (population SD if computed with n divisor)?
 >
-> Sample variance with \(n-1\) divisor = 25. \(\sum (X − \bar X)^2 = 24 \cdot 25 = 600\). With \(n\) divisor: 600/25 = 24. \(\sigma\) (sample raw form) = \(\sqrt{24} \approx 4.90\).
+> Sample variance with $n-1$ divisor = 25. $\sum (X − \bar X)^2 = 24 \cdot 25 = 600$. With $n$ divisor: 600/25 = 24. $\sigma$ (sample raw form) = $\sqrt{24} \approx 4.90$.
 
 > **E-3.23.** A series has SD 5. SD of 100−X?
 >
-> \(|-1| \cdot 5 = \mathbf{5}\).
+> $|-1| \cdot 5 = \mathbf{5}$.
 
 > **E-3.24.** For two series with same SD, the one with smaller mean has:
 >
@@ -4055,35 +4055,35 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-5.1.** Cov(X, Y) = 12, σ_X = 3, σ_Y = 5. r?
 >
-> \(r = 12/(3·5) = 12/15 = \mathbf{0.8}\).
+> $r = 12/(3·5) = 12/15 = \mathbf{0.8}$.
 
-> **E-5.2.** Two regression equations: \(8X − 10Y + 66 = 0\) and \(40X − 18Y = 214\). Find \(\bar X, \bar Y, b_{YX}, b_{XY}, r\).
+> **E-5.2.** Two regression equations: $8X − 10Y + 66 = 0$ and $40X − 18Y = 214$. Find $\bar X, \bar Y, b_{YX}, b_{XY}, r$.
 >
 > Solve simultaneously.
-> Eq1: \(8X − 10Y = −66\) → divide by 2: \(4X − 5Y = −33\).
-> Eq2: \(40X − 18Y = 214\) → divide by 2: \(20X − 9Y = 107\).
-> Multiply eq1 by 5: \(20X − 25Y = −165\). Subtract: \((20X − 25Y) − (20X − 9Y) = −165 − 107\) → \(−16Y = −272\) → \(Y = 17\).
-> Then \(4X = −33 + 85 = 52\) → X = 13. So \(\bar X = 13, \bar Y = 17\).
-> Now identify which is Y on X. From Eq1: \(Y = (8X + 66)/10 = 0.8X + 6.6\) → \(b_{YX} = 0.8\).
-> From Eq2: \(X = (18Y + 214)/40 = 0.45Y + 5.35\) → \(b_{XY} = 0.45\).
-> Check: \(b_{YX} \cdot b_{XY} = 0.36 ≤ 1\) ✓. r = +√0.36 = **0.6**.
+> Eq1: $8X − 10Y = −66$ → divide by 2: $4X − 5Y = −33$.
+> Eq2: $40X − 18Y = 214$ → divide by 2: $20X − 9Y = 107$.
+> Multiply eq1 by 5: $20X − 25Y = −165$. Subtract: $(20X − 25Y) − (20X − 9Y) = −165 − 107$ → $−16Y = −272$ → $Y = 17$.
+> Then $4X = −33 + 85 = 52$ → X = 13. So $\bar X = 13, \bar Y = 17$.
+> Now identify which is Y on X. From Eq1: $Y = (8X + 66)/10 = 0.8X + 6.6$ → $b_{YX} = 0.8$.
+> From Eq2: $X = (18Y + 214)/40 = 0.45Y + 5.35$ → $b_{XY} = 0.45$.
+> Check: $b_{YX} \cdot b_{XY} = 0.36 ≤ 1$ ✓. r = +√0.36 = **0.6**.
 
-> **E-5.3.** \(b_{YX} = 1.6\). Possible \(b_{XY}\) values?
+> **E-5.3.** $b_{YX} = 1.6$. Possible $b_{XY}$ values?
 >
-> Must satisfy \(b_{YX} \cdot b_{XY} \le 1\). So \(b_{XY} \le 1/1.6 = 0.625\). Both must have same sign (positive here).
+> Must satisfy $b_{YX} \cdot b_{XY} \le 1$. So $b_{XY} \le 1/1.6 = 0.625$. Both must have same sign (positive here).
 
-> **E-5.4.** \(r = 0.8, n = 10\). Coefficient of determination, in %?
+> **E-5.4.** $r = 0.8, n = 10$. Coefficient of determination, in %?
 >
-> \(r^2 = 0.64 = \mathbf{64\%}\) of the variance of Y is explained by X.
+> $r^2 = 0.64 = \mathbf{64\%}$ of the variance of Y is explained by X.
 
-> **E-5.5.** Spearman without ties: 6 students, ranks differ as: \(d = 0, 1, −1, 2, −2, 0\). \(\sum d^2\)?
+> **E-5.5.** Spearman without ties: 6 students, ranks differ as: $d = 0, 1, −1, 2, −2, 0$. $\sum d^2$?
 >
-> 0 + 1 + 1 + 4 + 4 + 0 = **10**. \(\rho = 1 − 6 · 10 / (6 · 35) = 1 − 60/210 = 1 − 2/7 = \mathbf{5/7 ≈ 0.714}\).
+> 0 + 1 + 1 + 4 + 4 + 0 = **10**. $\rho = 1 − 6 · 10 / (6 · 35) = 1 − 60/210 = 1 − 2/7 = \mathbf{5/7 ≈ 0.714}$.
 
-> **E-5.6.** Spearman with ties: \(\sum d^2 = 50\), n = 10, two pairs of ties of size 2 each in one variable. ρ?
+> **E-5.6.** Spearman with ties: $\sum d^2 = 50$, n = 10, two pairs of ties of size 2 each in one variable. ρ?
 >
-> Tie correction = 2 · (2(4 − 1)/12) = 2 · 0.5 = 1. Adjusted \(\sum d^2 = 51\).
-> \(\rho = 1 − 6 · 51 / (10 · 99) = 1 − 306/990 = 1 − 0.309 = \mathbf{0.691}\).
+> Tie correction = 2 · (2(4 − 1)/12) = 2 · 0.5 = 1. Adjusted $\sum d^2 = 51$.
+> $\rho = 1 − 6 · 51 / (10 · 99) = 1 − 306/990 = 1 − 0.309 = \mathbf{0.691}$.
 
 > **E-5.7.** A perfectly positive correlation has scatter:
 >
@@ -4091,77 +4091,77 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-5.8.** Two regression coefficients are −0.6 and −0.5. r?
 >
-> Both negative → \(r = −\sqrt{0.30} \approx \mathbf{−0.548}\).
+> Both negative → $r = −\sqrt{0.30} \approx \mathbf{−0.548}$.
 
-> **E-5.9.** \(b_{YX} = 0.5, b_{XY} = 0.8\). Mean of X = 5, Mean of Y = 7. Regression line of Y on X?
+> **E-5.9.** $b_{YX} = 0.5, b_{XY} = 0.8$. Mean of X = 5, Mean of Y = 7. Regression line of Y on X?
 >
-> \(Y − 7 = 0.5(X − 5) \Rightarrow Y = 0.5 X + 4.5\).
+> $Y − 7 = 0.5(X − 5) \Rightarrow Y = 0.5 X + 4.5$.
 
-> **E-5.10.** Mean of X = 6, mean of Y = 4. Predict Y when X = 10 if \(b_{YX} = 0.5\).
+> **E-5.10.** Mean of X = 6, mean of Y = 4. Predict Y when X = 10 if $b_{YX} = 0.5$.
 >
-> \(Y − 4 = 0.5(10 − 6) \Rightarrow Y = 4 + 2 = \mathbf{6}\).
+> $Y − 4 = 0.5(10 − 6) \Rightarrow Y = 4 + 2 = \mathbf{6}$.
 
-> **E-5.11.** \(\sigma_X = 4, \sigma_Y = 6, r = 0.5\). Regression of X on Y?
+> **E-5.11.** $\sigma_X = 4, \sigma_Y = 6, r = 0.5$. Regression of X on Y?
 >
-> \(b_{XY} = 0.5 · 4/6 = 1/3 \approx 0.333\). Equation: \(X − \bar X = 0.333(Y − \bar Y)\).
+> $b_{XY} = 0.5 · 4/6 = 1/3 \approx 0.333$. Equation: $X − \bar X = 0.333(Y − \bar Y)$.
 
 > **E-5.12.** Two regression lines coincide if and only if?
 >
-> \(r = \pm 1\) (perfect linear correlation).
+> $r = \pm 1$ (perfect linear correlation).
 
-> **E-5.13.** \(r = 0.6, \sigma_X = 5, \sigma_Y = 10\). Find \(b_{YX} - b_{XY}\).
+> **E-5.13.** $r = 0.6, \sigma_X = 5, \sigma_Y = 10$. Find $b_{YX} - b_{XY}$.
 >
-> \(b_{YX} = 1.2, b_{XY} = 0.3\). Difference = 0.9.
+> $b_{YX} = 1.2, b_{XY} = 0.3$. Difference = 0.9.
 
-> **E-5.14.** Karl Pearson \(r\) is symmetric, so \(r_{XY}\) and \(r_{YX}\)?
+> **E-5.14.** Karl Pearson $r$ is symmetric, so $r_{XY}$ and $r_{YX}$?
 >
 > Equal.
 
-> **E-5.15.** \(r_{12} = 0.6, r_{13} = 0.5, r_{23} = 0.4\). Partial \(r_{12.3}\)?
+> **E-5.15.** $r_{12} = 0.6, r_{13} = 0.5, r_{23} = 0.4$. Partial $r_{12.3}$?
 >
 > Numerator = 0.6 − 0.5·0.4 = 0.6 − 0.2 = 0.4.
-> Denom = \(\sqrt{(1 − 0.25)(1 − 0.16)} = \sqrt{0.75 · 0.84} = \sqrt{0.63} ≈ 0.794\).
-> \(r_{12.3} ≈ 0.4 / 0.794 ≈ \mathbf{0.504}\).
+> Denom = $\sqrt{(1 − 0.25)(1 − 0.16)} = \sqrt{0.75 · 0.84} = \sqrt{0.63} ≈ 0.794$.
+> $r_{12.3} ≈ 0.4 / 0.794 ≈ \mathbf{0.504}$.
 
-> **E-5.16.** Same data, \(R_{1.23}^2\)?
+> **E-5.16.** Same data, $R_{1.23}^2$?
 >
-> \((0.36 + 0.25 − 2·0.6·0.5·0.4)/(1 − 0.16) = (0.61 − 0.24)/0.84 = 0.37/0.84 ≈ 0.440\). \(R \approx \mathbf{0.664}\).
+> $(0.36 + 0.25 − 2·0.6·0.5·0.4)/(1 − 0.16) = (0.61 − 0.24)/0.84 = 0.37/0.84 ≈ 0.440$. $R \approx \mathbf{0.664}$.
 
 > **E-5.17.** A scatter diagram with points evenly spread shows:
 >
-> \(r ≈ 0\) → no linear correlation.
+> $r ≈ 0$ → no linear correlation.
 
-> **E-5.18.** Sum of products of deviations \(\sum (X − \bar X)(Y − \bar Y) = 240\), n = 10, σ_X = 4, σ_Y = 8. r?
+> **E-5.18.** Sum of products of deviations $\sum (X − \bar X)(Y − \bar Y) = 240$, n = 10, σ_X = 4, σ_Y = 8. r?
 >
-> Cov = 240/10 = 24. \(r = 24/(4·8) = \mathbf{0.75}\).
+> Cov = 240/10 = 24. $r = 24/(4·8) = \mathbf{0.75}$.
 
-> **E-5.19.** \(b_{YX} = 0.9\) and \(b_{XY} = 1.1\). Possible?
+> **E-5.19.** $b_{YX} = 0.9$ and $b_{XY} = 1.1$. Possible?
 >
 > Product = 0.99 < 1 ✓ — possible. r = +√0.99 ≈ 0.995.
 
 > **E-5.20.** Two lines pass through (10, 20). Are they regression lines?
 >
-> Only if the means are (10, 20). Both regression lines pass through \((\bar X, \bar Y)\).
+> Only if the means are (10, 20). Both regression lines pass through $(\bar X, \bar Y)$.
 
 > **E-5.21.** A regression line has slope 0. r = ?
 >
 > 0 (no linear relationship between Y and X).
 
-> **E-5.22.** \(r = 0\) for paired data of (X, Y). Cov(X, Y) = ?
+> **E-5.22.** $r = 0$ for paired data of (X, Y). Cov(X, Y) = ?
 >
 > 0 (since Cov = r σ_X σ_Y).
 
-> **E-5.23.** When σ_X = σ_Y, what is \(b_{YX}\) in terms of r?
+> **E-5.23.** When σ_X = σ_Y, what is $b_{YX}$ in terms of r?
 >
-> \(b_{YX} = r\) (and \(b_{XY} = r\) too).
+> $b_{YX} = r$ (and $b_{XY} = r$ too).
 
 > **E-5.24.** A change in origin of both X and Y changes r by:
 >
 > No change (origin-invariant).
 
-> **E-5.25.** A change of scale that flips Y's sign changes \(b_{YX}\) by:
+> **E-5.25.** A change of scale that flips Y's sign changes $b_{YX}$ by:
 >
-> Sign flips: new \(b_{YX} = -r \sigma_Y / \sigma_X\) so it flips sign.
+> Sign flips: new $b_{YX} = -r \sigma_Y / \sigma_X$ so it flips sign.
 
 ---
 
@@ -4175,7 +4175,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-6.2.** A coin is biased: P(H) = 2/3. Three tosses. P(exactly 2 H)?
 >
-> \({}^3C_2 (2/3)^2 (1/3)^1 = 3 · 4/9 · 1/3 = 4/9\).
+> ${}^3C_2 (2/3)^2 (1/3)^1 = 3 · 4/9 · 1/3 = 4/9$.
 
 > **E-6.3.** A bag has 5W, 4B, 3R. One drawn. P(W or R)?
 >
@@ -4195,7 +4195,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-6.7.** Three balls drawn from bag of 5R, 4G, 3W (no replacement). P(one of each colour)?
 >
-> Numerator = \({}^5C_1 \cdot {}^4C_1 \cdot {}^3C_1 = 60\). Denom = \({}^{12}C_3 = 220\). P = 60/220 = **3/11**.
+> Numerator = ${}^5C_1 \cdot {}^4C_1 \cdot {}^3C_1 = 60$. Denom = ${}^{12}C_3 = 220$. P = 60/220 = **3/11**.
 
 > **E-6.8.** A family has 3 children. P(at least 1 boy | first is boy)?
 >
@@ -4240,7 +4240,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 >
 > 0.7 (since intersection is 0).
 
-> **E-6.17.** \(P(A) = 0.4, P(B|A) = 0.5\). P(A ∩ B)?
+> **E-6.17.** $P(A) = 0.4, P(B|A) = 0.5$. P(A ∩ B)?
 >
 > 0.4 × 0.5 = **0.20**.
 
@@ -4257,13 +4257,13 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 >
 > (1/2)³ · (1/2) = **1/16**.
 
-> **E-6.21.** Two events: \(P(A^c) = 0.7, P(B^c) = 0.6\), \(P(A \cup B) = 0.6\). \(P(A \cap B)\)?
+> **E-6.21.** Two events: $P(A^c) = 0.7, P(B^c) = 0.6$, $P(A \cup B) = 0.6$. $P(A \cap B)$?
 >
 > P(A) = 0.3, P(B) = 0.4. 0.3 + 0.4 − 0.6 = **0.1**.
 
 > **E-6.22.** Out of 5 letters, 3 are addressed correctly. Letters placed in envelopes randomly. P(none correctly placed)?
 >
-> Derangement \(D_5 = 44\). P = 44/120 = **11/30**.
+> Derangement $D_5 = 44$. P = 44/120 = **11/30**.
 
 > **E-6.23.** A throws a die first, then B. P(A scores higher)?
 >
@@ -4293,39 +4293,39 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-7.3.** Binomial(5, 0.5). P(X ≥ 4)?
 >
-> \({}^5C_4(0.5)^5 + {}^5C_5(0.5)^5 = 5/32 + 1/32 = 6/32 = \mathbf{3/16}\).
+> ${}^5C_4(0.5)^5 + {}^5C_5(0.5)^5 = 5/32 + 1/32 = 6/32 = \mathbf{3/16}$.
 
-> **E-7.4.** Poisson(λ). \(P(X = 0) = 0.05\). Find λ.
+> **E-7.4.** Poisson(λ). $P(X = 0) = 0.05$. Find λ.
 >
-> \(e^{-λ} = 0.05 \Rightarrow λ = \ln(20) ≈ \mathbf{3.0}\).
+> $e^{-λ} = 0.05 \Rightarrow λ = \ln(20) ≈ \mathbf{3.0}$.
 
 > **E-7.5.** A radioactive source emits at average 10 particles per minute. P(exactly 12 in a minute)?
 >
-> \(e^{-10} 10^{12}/12! ≈ 0.0948\).
+> $e^{-10} 10^{12}/12! ≈ 0.0948$.
 
 > **E-7.6.** Poisson(2). P(X ≥ 1)?
 >
 > 1 − P(X = 0) = 1 − e^(−2) ≈ 1 − 0.135 = **0.865**.
 
-> **E-7.7.** \(X \sim N(\mu, \sigma^2)\) with mean 100, σ = 15. P(85 < X < 115)?
+> **E-7.7.** $X \sim N(\mu, \sigma^2)$ with mean 100, σ = 15. P(85 < X < 115)?
 >
 > Within ±1σ → 0.6826.
 
-> **E-7.8.** \(X \sim N(50, 16)\). P(X > 58)?
+> **E-7.8.** $X \sim N(50, 16)$. P(X > 58)?
 >
 > z = (58 − 50)/4 = 2. P(Z > 2) = 0.0228.
 
-> **E-7.9.** \(X \sim N(0, 1)\). P(−1.96 < X < 1.96)?
+> **E-7.9.** $X \sim N(0, 1)$. P(−1.96 < X < 1.96)?
 >
 > 0.95.
 
-> **E-7.10.** \(X \sim N(80, 100)\). The 90th percentile of X?
+> **E-7.10.** $X \sim N(80, 100)$. The 90th percentile of X?
 >
-> \(z_{0.10} = 1.282\). \(X_{0.90} = 80 + 1.282 · 10 = \mathbf{92.82}\).
+> $z_{0.10} = 1.282$. $X_{0.90} = 80 + 1.282 · 10 = \mathbf{92.82}$.
 
 > **E-7.11.** Binomial approximated by Normal. When?
 >
-> When n is large and p is not near 0 or 1; rule of thumb \(np > 5\) and \(nq > 5\).
+> When n is large and p is not near 0 or 1; rule of thumb $np > 5$ and $nq > 5$.
 
 > **E-7.12.** Binomial approximated by Poisson. When?
 >
@@ -4343,9 +4343,9 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 >
 > Mean = 10. Var = (16 − 4)²/12 = 144/12 = 12.
 
-> **E-7.16.** \(X \sim B(n, p)\). Skewness?
+> **E-7.16.** $X \sim B(n, p)$. Skewness?
 >
-> \((1 − 2p)/\sqrt{npq}\). When p = 0.5, skewness = 0 (symmetric).
+> $(1 − 2p)/\sqrt{npq}$. When p = 0.5, skewness = 0 (symmetric).
 
 > **E-7.17.** Z = (X − μ)/σ. Distribution of Z?
 >
@@ -4355,13 +4355,13 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 >
 > ≈ 0.01 (1 % two-tail).
 
-> **E-7.19.** \(X \sim B(8, 0.5)\). P(X = 4)?
+> **E-7.19.** $X \sim B(8, 0.5)$. P(X = 4)?
 >
-> \({}^8C_4 (0.5)^8 = 70/256 \approx 0.273\).
+> ${}^8C_4 (0.5)^8 = 70/256 \approx 0.273$.
 
-> **E-7.20.** \(X \sim P(λ = 16)\). σ?
+> **E-7.20.** $X \sim P(λ = 16)$. σ?
 >
-> \(\sqrt{16} = \mathbf{4}\).
+> $\sqrt{16} = \mathbf{4}$.
 
 > **E-7.21.** Discrete RV with pmf: x: 0,1,2,3 ; p(x): 0.1, 0.3, 0.4, 0.2. E[X] and Var(X)?
 >
@@ -4371,17 +4371,17 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 >
 > Symmetric, bell-shaped, mean = median = mode, asymptotic to x-axis.
 
-> **E-7.23.** \(X \sim N(\mu, \sigma^2)\). The MGF M_X(t) = ?
+> **E-7.23.** $X \sim N(\mu, \sigma^2)$. The MGF M_X(t) = ?
 >
-> \(\exp(\mu t + \sigma^2 t^2 / 2)\).
+> $\exp(\mu t + \sigma^2 t^2 / 2)$.
 
 > **E-7.24.** Sum of n independent Poisson(λ_i) is?
 >
-> Poisson(\(\sum \lambda_i\)). (Poisson is closed under addition.)
+> Poisson($\sum \lambda_i$). (Poisson is closed under addition.)
 
 > **E-7.25.** Sum of n independent Binomial(n_i, p) is?
 >
-> Binomial(\(\sum n_i, p\)) — only when same p.
+> Binomial($\sum n_i, p$) — only when same p.
 
 ---
 
@@ -4395,15 +4395,15 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-9.2.** Sample variance with divisor n is biased. Bias = ?
 >
-> \(E[\hat\sigma^2] = (n-1)\sigma^2/n\). Bias = \(-\sigma^2/n\).
+> $E[\hat\sigma^2] = (n-1)\sigma^2/n$. Bias = $-\sigma^2/n$.
 
 > **E-9.3.** MLE of σ² in Normal sample (mean known)?
 >
-> \(\hat\sigma^2 = \sum (X_i − μ)^2 / n\) — uses divisor n, not n−1.
+> $\hat\sigma^2 = \sum (X_i − μ)^2 / n$ — uses divisor n, not n−1.
 
 > **E-9.4.** Method of moments estimator of θ for Uniform(0, θ)?
 >
-> Sample mean = θ/2 → \(\hat \theta_{MoM} = 2 \bar X\).
+> Sample mean = θ/2 → $\hat \theta_{MoM} = 2 \bar X$.
 
 > **E-9.5.** A test rejects H₀ when X̄ > 52, with H₀: μ = 50, σ = 10, n = 25. Compute α.
 >
@@ -4423,15 +4423,15 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-9.9.** Two sample t-test with pooled variance: n₁ = 12, n₂ = 16, s₁ = 5, s₂ = 6.
 >
-> \(s_p^2 = (11·25 + 15·36)/26 = (275 + 540)/26 = 815/26 ≈ 31.35\). \(s_p ≈ 5.6\).
+> $s_p^2 = (11·25 + 15·36)/26 = (275 + 540)/26 = 815/26 ≈ 31.35$. $s_p ≈ 5.6$.
 
 > **E-9.10.** χ² goodness-of-fit: O = (40, 35, 25), E = (30, 30, 40). χ²?
 >
-> (40−30)²/30 + (35−30)²/30 + (25−40)²/40 = 100/30 + 25/30 + 225/40 = 3.33 + 0.83 + 5.63 = **9.79**. df = 2; \(\chi^2_{0.05, 2} = 5.99\) → reject H₀.
+> (40−30)²/30 + (35−30)²/30 + (25−40)²/40 = 100/30 + 25/30 + 225/40 = 3.33 + 0.83 + 5.63 = **9.79**. df = 2; $\chi^2_{0.05, 2} = 5.99$ → reject H₀.
 
-> **E-9.11.** Confidence interval (95 %): \(\bar X = 25, s = 4, n = 16\). σ unknown, n small.
+> **E-9.11.** Confidence interval (95 %): $\bar X = 25, s = 4, n = 16$. σ unknown, n small.
 >
-> \(t_{0.025, 15} ≈ 2.131\). CI = 25 ± 2.131 · 4/4 = 25 ± 2.131 = **[22.87, 27.13]**.
+> $t_{0.025, 15} ≈ 2.131$. CI = 25 ± 2.131 · 4/4 = 25 ± 2.131 = **[22.87, 27.13]**.
 
 > **E-9.12.** Confidence interval (90 %) for proportion: p = 0.4, n = 200.
 >
@@ -4443,11 +4443,11 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-9.14.** Bayesian estimator of mean with prior N(μ₀, τ²) and data of n obs from N(μ, σ²)?
 >
-> Posterior mean is a weighted average: \(\hat\mu = \dfrac{(n/\sigma^2)\bar X + (1/\tau^2)\mu_0}{n/\sigma^2 + 1/\tau^2}\). (Beyond JSO direct ask but useful concept.)
+> Posterior mean is a weighted average: $\hat\mu = \dfrac{(n/\sigma^2)\bar X + (1/\tau^2)\mu_0}{n/\sigma^2 + 1/\tau^2}$. (Beyond JSO direct ask but useful concept.)
 
 > **E-9.15.** F = s₁²/s₂² with s₁² = 9, s₂² = 4, df₁ = df₂ = 10. Decision at 5 %?
 >
-> F = 2.25. \(F_{0.05, 10, 10} ≈ 2.97\). 2.25 < 2.97 → fail to reject (variances equal).
+> F = 2.25. $F_{0.05, 10, 10} ≈ 2.97$. 2.25 < 2.97 → fail to reject (variances equal).
 
 > **E-9.16.** χ² test of independence in a 2 × 2 table, sample size 100. df?
 >
@@ -4461,9 +4461,9 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 >
 > H₀ is false but not rejected.
 
-> **E-9.19.** \(s_1^2 = 12, s_2^2 = 16, n_1 = n_2 = 11\). Pooled variance?
+> **E-9.19.** $s_1^2 = 12, s_2^2 = 16, n_1 = n_2 = 11$. Pooled variance?
 >
-> \(s_p^2 = (10 · 12 + 10 · 16)/20 = (120 + 160)/20 = 14\). \(s_p \approx 3.74\).
+> $s_p^2 = (10 · 12 + 10 · 16)/20 = (120 + 160)/20 = 14$. $s_p \approx 3.74$.
 
 > **E-9.20.** Critical t for two-tail 1 %, df = 20?
 >
@@ -4471,7 +4471,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-9.21.** Sample mean is unbiased for μ but biased for μ²?
 >
-> True: \(E[\bar X^2] = \mu^2 + \sigma^2/n \neq \mu^2\).
+> True: $E[\bar X^2] = \mu^2 + \sigma^2/n \neq \mu^2$.
 
 > **E-9.22.** Best critical region for testing simple null vs simple alternative is given by:
 >
@@ -4479,7 +4479,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 > **E-9.23.** Sufficient statistic for Bernoulli(p) sample of size n?
 >
-> \(\sum X_i\) (the count of successes).
+> $\sum X_i$ (the count of successes).
 
 > **E-9.24.** Cramér-Rao lower bound gives:
 >
@@ -4489,13 +4489,13 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 >
 > The frequentist procedure: 95 % of such intervals (built from random samples) will contain the true parameter — not "95% chance for this single interval."
 
-> **E-9.26.** \(\bar X = 75, σ = 12, n = 36\). 99 % CI for μ?
+> **E-9.26.** $\bar X = 75, σ = 12, n = 36$. 99 % CI for μ?
 >
 > SE = 2. 99 % CI = 75 ± 2.576 · 2 = 75 ± 5.15 = **[69.85, 80.15]**.
 
-> **E-9.27.** χ² test of variance: \(s^2 = 25, \sigma_0^2 = 16, n = 21\). Test at 5 % two-tail.
+> **E-9.27.** χ² test of variance: $s^2 = 25, \sigma_0^2 = 16, n = 21$. Test at 5 % two-tail.
 >
-> \(\chi^2 = (n−1) s^2/\sigma_0^2 = 20 · 25 / 16 = 31.25\). df = 20. Critical: \(\chi^2_{0.025, 20} ≈ 34.17\), \(\chi^2_{0.975, 20} ≈ 9.59\). 9.59 < 31.25 < 34.17 → fail to reject H₀.
+> $\chi^2 = (n−1) s^2/\sigma_0^2 = 20 · 25 / 16 = 31.25$. df = 20. Critical: $\chi^2_{0.025, 20} ≈ 34.17$, $\chi^2_{0.975, 20} ≈ 9.59$. 9.59 < 31.25 < 34.17 → fail to reject H₀.
 
 > **E-9.28.** A two-sample paired t-test uses df:
 >
@@ -4526,7 +4526,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 5. AM, GM, HM order for positive observations?
 6. AM × HM = GM² for how many positive numbers?
 7. Median position in a sorted list of 50 observations?
-8. \(D_8\) corresponds to what percentile?
+8. $D_8$ corresponds to what percentile?
 9. Combined mean of n₁=40, X̄₁=30 and n₂=10, X̄₂=10?
 10. Mean is most affected by?
 11. Mode of 4, 5, 5, 6, 7, 8, 8, 8, 9?
@@ -4547,31 +4547,31 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 ### Section II — Moments / Skewness / Correlation (Qs 26-50)
 
-26. \(\mu_2\) is also called?
-27. \(\mu_3\) for symmetric distribution?
+26. $\mu_2$ is also called?
+27. $\mu_3$ for symmetric distribution?
 28. Karl Pearson Sk: Mean=70, Median=65, σ=8?
 29. β₂ = 4 means?
 30. Sheppard's correction for variance?
 31. r is unitless. T/F?
-32. \(b_{YX} = -0.6\), \(b_{XY} = -0.4\). r?
+32. $b_{YX} = -0.6$, $b_{XY} = -0.4$. r?
 33. r = 0.7. Coefficient of determination = ?
 34. Two regression lines pass through?
 35. r = 0 → angle between regression lines?
 36. Spearman ρ when n=8, Σd² = 50?
-37. \(r = 0.5, \sigma_X = 4, \sigma_Y = 6\). \(b_{YX}\)?
+37. $r = 0.5, \sigma_X = 4, \sigma_Y = 6$. $b_{YX}$?
 38. r when both regression slopes are negative?
 39. Multiple correlation R lies in?
-40. Partial correlation \(r_{12.3}\) lies in?
+40. Partial correlation $r_{12.3}$ lies in?
 41. r in (X+10, Y−5) when r(X,Y)=0.6?
-42. \(b_{YX} \cdot b_{XY} = 0.81\). r?
+42. $b_{YX} \cdot b_{XY} = 0.81$. r?
 43. Standard error of estimate Y on X?
 44. Bowley Sk lies in?
-45. \(\beta_1 = 0\). Skewness?
+45. $\beta_1 = 0$. Skewness?
 46. r remains unchanged under?
-47. \(r = 1\). Two regression lines?
+47. $r = 1$. Two regression lines?
 48. Cov(X, Y) = 12, σ_X=3, σ_Y=4. r?
 49. A scatter plot shows linear band → r ≈?
-50. r when \(\sigma_X = 0\)?
+50. r when $\sigma_X = 0$?
 
 ### Section III — Probability / Distributions / Sampling (Qs 51-75)
 
@@ -4581,10 +4581,10 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 54. P(A) = 0.5, P(B) = 0.4 indep. P(at least one)?
 55. Bag has 4R, 6B. 2 drawn no rep. P(both R)?
 56. Bayes: prior 0.6, likelihood 0.5 vs prior 0.4 lik 0.8. P(first | observed)?
-57. \(B(20, 0.5)\). Mean and SD?
-58. \(B(n, p)\) with mean 4, var 3. n?
+57. $B(20, 0.5)$. Mean and SD?
+58. $B(n, p)$ with mean 4, var 3. n?
 59. Poisson(3). P(X = 0)?
-60. \(N(50, 25)\). P(X > 60)?
+60. $N(50, 25)$. P(X > 60)?
 61. Normal curve max at?
 62. Z-score for observation 80 in N(70, 25)?
 63. Hypergeom mean (N=20, K=8, n=5)?
@@ -4673,7 +4673,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 
 | Frame | What they actually want | Auto-answer cue |
 |-------|------------------------|-----------------|
-| "The algebraic sum of deviations from \(\bar X\) is …" | 0 | always |
+| "The algebraic sum of deviations from $\bar X$ is …" | 0 | always |
 | "If each observation is multiplied by 4 …" | new mean = 4 × old mean; new SD = 4 × old SD | scale property |
 | "The combined mean of two groups …" | weighted-by-size mean | use Σ n X̄ / Σ n |
 | "The harmonic mean is appropriate for …" | rates / equal-distance speeds | not "averages" generally |
@@ -4807,7 +4807,7 @@ So \(P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95\). Memorise these 9 anchors.
 | Bayes | "Posterior = (Prior × Likelihood) / Evidence" |
 | Empirical relation | "Three-Median minus Two-Mean = Mode" → **3M − 2M = M** |
 | Combined mean | weighted by **n**, not by mean |
-| Combined SD adds **\(d^2\)** | each group's variance + its squared distance from the combined mean |
+| Combined SD adds **$d^2$** | each group's variance + its squared distance from the combined mean |
 | Test stats | **Z**ig-large; **t**iny-σ-unknown; **χ²** for counts/variance; **F** for variance ratio |
 
 ---
@@ -5086,7 +5086,7 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 </svg>
 </div>
 
-> **Key:** Both lines always pass through \((\bar X, \bar Y)\). As \(|r| \to 1\) the lines collapse onto each other. When r = 0 they stand perpendicular.
+> **Key:** Both lines always pass through $(\bar X, \bar Y)$. As $|r| \to 1$ the lines collapse onto each other. When r = 0 they stand perpendicular.
 
 ---
 
@@ -5283,59 +5283,59 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-4.1.** The first raw moment equals?
 >
-> \(\mu_1' = \bar X\) (the arithmetic mean).
+> $\mu_1' = \bar X$ (the arithmetic mean).
 
 > **K-4.2.** For any distribution, the first central moment is?
 >
-> \(\mu_1 = 0\) (by definition of mean).
+> $\mu_1 = 0$ (by definition of mean).
 
-> **K-4.3.** \(\mu_0 = ?\)
+> **K-4.3.** $\mu_0 = ?$
 >
-> \(\mu_0 = 1\) (zeroth central moment is always 1, since \(\sum f/N = 1\)).
+> $\mu_0 = 1$ (zeroth central moment is always 1, since $\sum f/N = 1$).
 
-> **K-4.4.** \(\mu_2 = 16\). SD = ?
+> **K-4.4.** $\mu_2 = 16$. SD = ?
 >
-> \(\sigma = \sqrt{16} = \mathbf{4}\).
+> $\sigma = \sqrt{16} = \mathbf{4}$.
 
-> **K-4.5.** \(\mu_3 = 0\). What does this tell us about skewness?
+> **K-4.5.** $\mu_3 = 0$. What does this tell us about skewness?
 >
-> \(\beta_1 = \mu_3^2/\mu_2^3 = 0\) → **zero skewness → symmetric distribution**.
+> $\beta_1 = \mu_3^2/\mu_2^3 = 0$ → **zero skewness → symmetric distribution**.
 
-> **K-4.6.** \(\mu_2 = 9, \mu_4 = 243\). β₂?
+> **K-4.6.** $\mu_2 = 9, \mu_4 = 243$. β₂?
 >
-> \(\beta_2 = 243/81 = \mathbf{3}\) → mesokurtic.
+> $\beta_2 = 243/81 = \mathbf{3}$ → mesokurtic.
 
-> **K-4.7.** \(\mu_1' = 10, \mu_2' = 120\). Find variance.
+> **K-4.7.** $\mu_1' = 10, \mu_2' = 120$. Find variance.
 >
-> \(\mu_2 = 120 - 100 = \mathbf{20}\).
+> $\mu_2 = 120 - 100 = \mathbf{20}$.
 
-> **K-4.8.** \(\mu_1' = 5, \mu_2' = 30, \mu_3' = 200\). Find \(\mu_3\).
+> **K-4.8.** $\mu_1' = 5, \mu_2' = 30, \mu_3' = 200$. Find $\mu_3$.
 >
-> \(\mu_3 = 200 - 3(5)(30) + 2(125) = 200 - 450 + 250 = \mathbf{0}\).
+> $\mu_3 = 200 - 3(5)(30) + 2(125) = 200 - 450 + 250 = \mathbf{0}$.
 
 > **K-4.9.** Karl Pearson Sk = 0.5, mode = 40, σ = 6. Mean = ?
 >
-> \(0.5 = (\bar X - 40)/6 \Rightarrow \bar X = 43\).
+> $0.5 = (\bar X - 40)/6 \Rightarrow \bar X = 43$.
 
 > **K-4.10.** Bowley Sk = 0.4, Q₁ = 20, Q₃ = 60. Median = ?
 >
-> \(0.4 = (60 + 20 - 2Q_2)/(60 - 20) = (80 - 2Q_2)/40\). \(80 - 2Q_2 = 16 \Rightarrow Q_2 = 32\).
+> $0.4 = (60 + 20 - 2Q_2)/(60 - 20) = (80 - 2Q_2)/40$. $80 - 2Q_2 = 16 \Rightarrow Q_2 = 32$.
 
-> **K-4.11.** If \(\beta_2 > 3\), the distribution is said to be?
+> **K-4.11.** If $\beta_2 > 3$, the distribution is said to be?
 >
 > **Leptokurtic** (sharp peak, fat tails).
 
 > **K-4.12.** γ₂ = β₂ − 3 = −1.2. Distribution?
 >
-> \(\beta_2 = 1.8 < 3\) → **platykurtic**.
+> $\beta_2 = 1.8 < 3$ → **platykurtic**.
 
-> **K-4.13.** Moments from any origin \(A\) vs from the mean: which has \(\mu_1 = 0\)?
+> **K-4.13.** Moments from any origin $A$ vs from the mean: which has $\mu_1 = 0$?
 >
-> Only from the **mean**. From any other origin the first moment equals \(\bar X - A \neq 0\).
+> Only from the **mean**. From any other origin the first moment equals $\bar X - A \neq 0$.
 
 > **K-4.14.** A distribution has the same shape on both sides of the mean. Which odd moments are zero?
 >
-> All odd central moments: \(\mu_1 = \mu_3 = \mu_5 = \cdots = 0\).
+> All odd central moments: $\mu_1 = \mu_3 = \mu_5 = \cdots = 0$.
 
 > **K-4.15.** Sheppard's correction is applied when:
 >
@@ -5343,11 +5343,11 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-4.16.** For Karl Pearson Sk, which formula is used when the distribution is bimodal?
 >
-> Use the **median-based formula**: \(\text{Sk} = 3(\bar X - \text{Med})/\sigma\) (mode is ambiguous for bimodal).
+> Use the **median-based formula**: $\text{Sk} = 3(\bar X - \text{Med})/\sigma$ (mode is ambiguous for bimodal).
 
 > **K-4.17.** β₁ is always:
 >
-> **Non-negative** (\(\mu_3^2 \ge 0\)). The sign of skewness is determined by γ₁ = μ₃/σ³.
+> **Non-negative** ($\mu_3^2 \ge 0$). The sign of skewness is determined by γ₁ = μ₃/σ³.
 
 > **K-4.18.** For a normal distribution, β₁ = ? and β₂ = ?
 >
@@ -5377,17 +5377,17 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-8.3.** If the population SD is 40 and the sample size is 64, what is the SE of the mean?
 >
-> \(40/\sqrt{64} = 40/8 = \mathbf{5}\).
+> $40/\sqrt{64} = 40/8 = \mathbf{5}$.
 
 > **K-8.4.** If SE = 4 when n = 25, what is the SE when n = 100?
 >
-> SE scales with \(1/\sqrt n\): new SE = \(4 \cdot \sqrt{25}/\sqrt{100} = 4 \cdot 5/10 = \mathbf{2}\).
+> SE scales with $1/\sqrt n$: new SE = $4 \cdot \sqrt{25}/\sqrt{100} = 4 \cdot 5/10 = \mathbf{2}$.
 
-> **K-8.5.** The sampling distribution of \(\bar X\) has mean = ?
+> **K-8.5.** The sampling distribution of $\bar X$ has mean = ?
 >
-> \(\mu\) (the population mean) — because \(\bar X\) is an unbiased estimator.
+> $\mu$ (the population mean) — because $\bar X$ is an unbiased estimator.
 
-> **K-8.6.** The CLT says that for any population with finite variance, the distribution of \(\bar X\) tends to be:
+> **K-8.6.** The CLT says that for any population with finite variance, the distribution of $\bar X$ tends to be:
 >
 > **Normal** as n increases.
 
@@ -5413,11 +5413,11 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-8.12.** If SE of proportion = 0.025 and p = 0.5, what is n?
 >
-> \(0.025 = \sqrt{0.25/n} \Rightarrow n = 0.25/0.000625 = \mathbf{400}\).
+> $0.025 = \sqrt{0.25/n} \Rightarrow n = 0.25/0.000625 = \mathbf{400}$.
 
 > **K-8.13.** To estimate a proportion within ±3 % at 95 % confidence (P unknown, use worst case):
 >
-> \(n = (1.96 / 0.03)^2 \times 0.25 = (65.33)^2 \times 0.25 \approx 4268 \times 0.25 = \mathbf{1067}\).
+> $n = (1.96 / 0.03)^2 \times 0.25 = (65.33)^2 \times 0.25 \approx 4268 \times 0.25 = \mathbf{1067}$.
 
 > **K-8.14.** Purposive (judgement) sampling produces results that are:
 >
@@ -5489,9 +5489,9 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 >
 > Centred: (13.5 + 16)/2 = **14.75** (placed at year 3).
 
-> **K-11.9.** A trend line \(\hat Y = 50 + 3X\) with X coded such that X=0 is 2020 and unit X=1 is 1 year. Predicted value for 2024?
+> **K-11.9.** A trend line $\hat Y = 50 + 3X$ with X coded such that X=0 is 2020 and unit X=1 is 1 year. Predicted value for 2024?
 >
-> X = 4. \(\hat Y = 50 + 12 = \mathbf{62}\).
+> X = 4. $\hat Y = 50 + 12 = \mathbf{62}$.
 
 > **K-11.10.** Seasonal index = 112 for Q2. It means?
 >
@@ -5511,7 +5511,7 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-11.14.** The least-squares method of trend fitting minimises?
 >
-> \(\sum (Y - \hat Y)^2\) (sum of squared deviations between actual and estimated trend values).
+> $\sum (Y - \hat Y)^2$ (sum of squared deviations between actual and estimated trend values).
 
 > **K-11.15.** A 3-point moving average of a series with 10 data points produces how many MA values?
 >
@@ -5563,7 +5563,7 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-12.5.** Factor reversal test: P₀₁ × Q₀₁ = ?
 >
-> \(V_{01}\) (the value index). Only Fisher satisfies both time and factor reversal simultaneously.
+> $V_{01}$ (the value index). Only Fisher satisfies both time and factor reversal simultaneously.
 
 > **K-12.6.** An index number of 140 means prices are now what % of base-year prices?
 >
@@ -5583,11 +5583,11 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-12.10.** In the family budget method, the weight W for each item is?
 >
-> \(W = P_0 Q_0\) (base-year expenditure on that item).
+> $W = P_0 Q_0$ (base-year expenditure on that item).
 
 > **K-12.11.** The weighted AM of price relatives (family budget method) formula?
 >
-> \( \dfrac{\sum W (P_1/P_0) \times 100}{\sum W} \), where W = P₀ Q₀.
+> $ \dfrac{\sum W (P_1/P_0) \times 100}{\sum W} $, where W = P₀ Q₀.
 
 > **K-12.12.** A simple aggregate price index ignores:
 >
@@ -5595,7 +5595,7 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-12.13.** Walsh index uses which weights?
 >
-> Geometric mean of quantities: \(\sqrt{Q_0 Q_1}\).
+> Geometric mean of quantities: $\sqrt{Q_0 Q_1}$.
 
 > **K-12.14.** Splicing is done when:
 >
