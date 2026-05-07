@@ -5,6 +5,44 @@ author: "Pariksha365"
 date: "2026"
 ---
 
+<div class="examtip">
+
+**Examiner Blueprint — Arithmetic / Quantitative Aptitude**
+
+**Top 8 most-tested topics (question share across SSC + Banks):**
+
+| Rank | Topic | SSC CGL T-1 | IBPS PO Pre | IBPS PO Mains |
+|---|---|---|---|---|
+| 1 | Percentage, Profit & Loss, Discount | 5–8 | 3–5 | 5–8 |
+| 2 | Ratio, Proportion & Partnership | 3–5 | 2–4 | 3–5 |
+| 3 | Time, Work & Pipes | 3–5 | 2–4 | 3–5 |
+| 4 | Simple & Compound Interest | 3–5 | 3–5 | 3–5 |
+| 5 | Data Interpretation (Tables, Bar, Line, Pie) | 2–3 | 5–10 | 15–20 |
+| 6 | Speed-Distance-Time (Trains, Boats) | 3–5 | 2–4 | 3–5 |
+| 7 | Number System (HCF/LCM, Divisibility, Remainders) | 3–5 | 2–3 | 2–3 |
+| 8 | Quadratic Equations | 0–1 | 5 | 5 |
+
+</div>
+
+<div class="keypoint">
+
+**Study Priority Order** (return-on-study-time, highest first)
+
+1. **Percentage** — every other topic feeds into it. Master this first; it unlocks Profit-Loss, SI/CI, and DI simultaneously.
+2. **Ratio & Proportion** — 2 hours → feeds directly into Partnership, Mixture-Alligation, and speed problems.
+3. **SI & CI** — formulas are short; 2 hours of drill makes these 3–5 marks nearly automatic.
+4. **Profit-Loss-Discount** — 2 hours once Percentage is solid; examiners love multi-step marked-price chains.
+5. **Time-Work-Pipes** — unit-fraction method handles all variants in 10 seconds.
+6. **Speed-Distance-Time** — trains, boats, and relative-speed variants all use one framework.
+7. **Data Interpretation** — non-negotiable for Banks; 5 hours to master table + bar + pie + line combinations.
+8. **Number System** — HCF/LCM + divisibility rules + remainder theorems; mandatory for SSC CGL Tier-1.
+
+</div>
+
+---
+
+\newpage
+
 # How to use this book
 
 This book is different from the static-GK books. Here **every topic is broken into a focused set of TYPES**. Most topics settle at 8-15 types; some (Geometry, Input-Output, Puzzles) go higher — **there is no artificial cap**. What matters is that each type unlocks a *distinct* pattern or method. Almost every quantitative question you will ever see in SSC / Banking / RRB / PSU / State-PSC exams is a **tweak of one of these types**. If you can recognise the type in 5 seconds, you are already halfway to the answer.
@@ -1090,16 +1128,11 @@ This is the discipline. **Classify → shortcut → verify**. Every time.
 
 # APPENDIX B — Image / Diagram Pipeline
 
-This book intentionally does **not** embed ASCII diagrams (they mislead). Instead, the pandoc build (`_build/build_pdfs.sh`) consumes two folders:
-
-- `_build/figures/` — hand-authored SVG/TikZ for geometry, mensuration, reasoning visuals.
-- `_build/mermaid/` — Mermaid source for flowcharts and type-trees.
-
-Each diagram is **verified to-scale** before commit. No question is shipped with a sketch that misrepresents angle / ratio. For reasoning visuals (dice, mirror, water, paper-fold) the pipeline requires an accurate net / coordinate spec per item. Text-only questions that cannot be diagrammed faithfully are deferred rather than shipped with a rough approximation.
+This book intentionally does **not** embed ASCII diagrams (they mislead). All geometry, mensuration, and reasoning figures are hand-authored SVG, verified to-scale before publication. No question is shipped with a sketch that misrepresents angle or ratio. Text-only questions that cannot be diagrammed faithfully are deferred rather than shipped with a rough approximation.
 
 ---
 
-*Companion books: `reasoning.md` (types-first), `english.md` (rules + traps). Quiz pairings live under topic codes `QNT_*`, `REAS_*`, `ENG_*`.*
+*Use this book alongside the Reasoning and English books for complete skill coverage.*
 
 ---
 
@@ -1316,7 +1349,7 @@ Total ≈ 50 min for 25 questions, leaving 10 min buffer.
 
 ---
 
-*Use the same source `arithmetic.md` to build BOTH `arithmetic_ssc_rrb.pdf` and `quantitative_aptitude_banks.pdf` — the manifest in `_build/manifest.json` selects the title + cover; the appendix above tells the candidate which chapters to drill harder.*
+*The exam-stage appendix above tells you exactly which chapters to drill harder depending on whether you are targeting SSC/RRB or Banking exams — use it to weight your preparation accordingly.*
 
 ---
 

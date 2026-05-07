@@ -5,6 +5,44 @@ author: "Pariksha365"
 date: "2026"
 ---
 
+<div class="examtip">
+
+**Examiner Blueprint — English Language**
+
+**Top 8 most-tested topics (question share across SSC + Banks):**
+
+| Rank | Topic | SSC CGL T-1 | IBPS PO Pre | IBPS PO Mains |
+|---|---|---|---|---|
+| 1 | Reading Comprehension | 5–10 | 10–15 | 15–20 |
+| 2 | Error Spotting / Sentence Correction | 5–10 | 5–8 | 5–8 |
+| 3 | Fill in the Blanks (Single / Double) | 5–8 | 5–8 | 3–5 |
+| 4 | Vocabulary (Synonyms, Antonyms, One-word) | 3–5 | 3–5 | 3–5 |
+| 5 | Para-Jumble / Sentence Rearrangement | 3–5 | 3–5 | 5–8 |
+| 6 | Cloze Test | 5 | 5–10 | 5–10 |
+| 7 | Idioms & Phrases | 3–5 | 2–3 | 2–3 |
+| 8 | Spelling / Odd One Out | 2–3 | 0–1 | 0–1 |
+
+</div>
+
+<div class="keypoint">
+
+**Study Priority Order** (return-on-study-time, highest first)
+
+1. **Reading Comprehension** — the single biggest question block in every exam. The 4-question pre-reading method in this book converts RC from guesswork to systematic scoring.
+2. **Error Spotting** — 3 hours on Subject-Verb Agreement, Tense Sequence, and Pronoun Errors covers 80% of what examiners test.
+3. **Cloze Test** — closely tied to RC skill; once RC is solid, cloze tests come almost free.
+4. **Fill in the Blanks** — double-blank questions reward collocations and tone-matching over pure grammar.
+5. **Para-Jumble** — 2 hours on pivot-sentence identification and mandatory pairs; examiners recycle a narrow set of logical connectors.
+6. **Vocabulary** — learn from the dedicated Vocabulary book (root-cluster method + PYQ-weighted words); use this chapter for usage-in-context drill only.
+7. **Idioms & Phrases** — 200 high-frequency idioms cover virtually every SSC/Banks question in this category.
+8. **Spelling** — 30 minutes on commonly misspelled words (accommodation, necessary, occurrence, etc.) clears this section reliably.
+
+</div>
+
+---
+
+\newpage
+
 # How to use this book
 
 English in competitive exams is **not** literature. It is **pattern recognition on a fixed set of grammar rules and a fixed vocabulary of trap-words**. Memorise the rules, drill the traps, you score.
@@ -952,7 +990,7 @@ So drill Parts 1-9 and Part 16 (vocab tables + idioms) the hardest. RC is shorte
 
 ---
 
-*Companions: `arithmetic.md`, `reasoning.md`, `vocabulary.md`. Quiz pairings under `ENG_*` and `VOCAB_*`.*
+*Use this book alongside the Arithmetic, Reasoning, and Vocabulary books for complete skill coverage.*
 
 ---
 

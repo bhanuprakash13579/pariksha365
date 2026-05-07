@@ -5,11 +5,49 @@ author: "Pariksha365"
 date: "2026"
 ---
 
+<div class="examtip">
+
+**Examiner Blueprint — Reasoning**
+
+**Top 8 most-tested topics (question share across SSC + Banks):**
+
+| Rank | Topic | SSC CGL T-1 | IBPS PO Pre | IBPS PO Mains |
+|---|---|---|---|---|
+| 1 | Puzzles & Seating Arrangement | 3–5 | 3–5 | 15–20 |
+| 2 | Syllogism | 3–5 | 3–5 | 3–5 |
+| 3 | Inequalities / Coded Inequalities | 2–3 | 3–5 | 3–5 |
+| 4 | Number & Letter Series | 3–5 | 3–5 | 2–3 |
+| 5 | Blood Relations | 2–3 | 2–3 | 3–5 |
+| 6 | Direction & Distance | 2–3 | 2–3 | 2–3 |
+| 7 | Coding-Decoding | 3–5 | 2–3 | 2–3 |
+| 8 | Input-Output | 0–1 | 0–1 | 4–6 |
+
+</div>
+
+<div class="keypoint">
+
+**Study Priority Order** (return-on-study-time, highest first)
+
+1. **Syllogism** — 2 focused hours → 3–5 nearly free marks in every paper.
+2. **Inequalities** — 1 hour coded + 1 hour direct → 3–5 marks in every Banks paper.
+3. **Series** — 3 hours drilling squares/cubes/primes + pattern types → 3–5 marks in every prelim.
+4. **Blood Relations** — 2 hours; draw a family tree for every question and you will never go wrong.
+5. **Direction & Distance** — 2 hours; coordinate method (X-Y axes) turns every question mechanical.
+6. **Coding-Decoding** — 3 hours; always test the rule on both given examples before applying.
+7. **Seating & Linear Arrangement** — 8–10 hours; the single topic that decides whether you clear prelims comfortably.
+8. **Floor / Box / Calendar Puzzles** — 6–8 hours; mandatory for Banks Mains selection.
+
+</div>
+
+---
+
+\newpage
+
 # How to use this book
 
 Reasoning is not a single topic — it is a **cluster of pattern families**. Once you can see the pattern in 5 seconds, the rest is bookkeeping.
 
-Same type-first discipline as `arithmetic.md`. For every topic:
+The same type-first discipline applies throughout. For every topic:
 
 - **Opener** — why it appears, what you must memorise cold, universal attack plan.
 - **Types** — a focused set. Many topics settle around 8-15 types; complex topics (Puzzles, Input-Output, Non-verbal) may need 20-25. **There is no upper cap** — a type is included if it unlocks a distinct pattern that will earn marks; never padded just for a round number.
@@ -20,8 +58,8 @@ Same type-first discipline as `arithmetic.md`. For every topic:
 Reasoning questions whose answer depends on a visual (mirror-image, water-image, dice, paper-fold, cube-counting, embedded figures, mirror-Line-of-symmetry, figure-completion) can only be taught with **precise, to-scale illustrations** — not rough ASCII or hand-wave sketches. Wrong visuals confuse worse than no visuals.
 
 - This text book teaches the **method** for each visual type (how a mirror flips about a vertical line, how dice opposite-face rule works, how a folded paper unfolds, how to rotate a 3-D cube in your head).
-- **Figures live in `_build/figures/reasoning/`** as exact SVG. The pandoc build embeds them. No figure is shipped until a human has verified the mirror / rotation / unfold is physically correct.
-- If a specific question cannot be diagrammed faithfully at ship-time, it is deferred — never replaced with a crude approximation.
+- Figures are exact SVG, physically verified before publication. No figure is shipped until a human has confirmed the mirror / rotation / unfold is physically correct.
+- If a specific question cannot be diagrammed faithfully, it is deferred — never replaced with a crude approximation.
 
 ---
 
@@ -389,7 +427,7 @@ No reasoning figure is shipped unless it is:
 2. Physically verified — a mirror is an actual horizontal reflection, not a lazy sketch.
 3. Reviewed once against the answer — if the figure does not uniquely admit the "correct" option, it is rejected.
 
-Crude ASCII-art diagrams are banned from this book and from shipped questions. If a figure asset is not ready, the corresponding question is held back in a **visual-queue** (`_build/figures/reasoning/_todo.md`) until the asset is authored.
+Crude ASCII-art diagrams are banned from this book and from shipped questions. If a figure asset is not ready, the corresponding question is held back until the asset is authored and verified.
 
 ---
 
@@ -772,11 +810,11 @@ No reasoning figure is shipped unless it is:
 2. Physically verified — a mirror is an actual horizontal reflection, not a lazy sketch.
 3. Reviewed once against the answer — if the figure does not uniquely admit the "correct" option, it is rejected.
 
-Crude ASCII-art diagrams are banned from this book and from shipped questions. If a figure asset is not ready, the corresponding question is held back in a **visual-queue** (`_build/figures/reasoning/_todo.md`) until the asset is authored.
+Crude ASCII-art diagrams are banned from this book and from shipped questions. If a figure asset is not ready, the corresponding question is held back until the asset is authored and verified.
 
 ---
 
-*Companion: `arithmetic.md` for quant, `english.md` for verbal, `vocabulary.md` for vocab. Quiz pairings live under `REAS_*`.*
+*Use this book alongside the Arithmetic and English books for complete skill coverage.*
 
 ---
 
@@ -2219,35 +2257,102 @@ This kind of multi-clue puzzle requires backtracking. Try B at col 2: A at col 3
 
 # PART E — TIMED MINI-MOCK (25 Q · 25 min)
 
-1. 5, 11, 23, 47, ? → (a) 91 (b) 95 (c) 99 (d) 103
-2. If A=1, B=2, ..., what is value of CAR? (a) 22 (b) 24 (c) 25 (d) 26
-3. Pointing to a woman, a man said, "Her son's father is my father." How is the woman related? (a) mother (b) sister (c) wife (d) daughter
-4. A walks 5 km E, 5 km N, 5 km W. Distance from start? (a) 5 km (b) 10 km (c) 15 km (d) 0
-5. 5 people sit in a row. A is 3rd from left, B is at end. If C is between A and B, position of C? (a) 4 (b) 5 (c) 1 (d) 2
-6. All cats are mice. No mouse is rat. Concl: (I) No cat is rat. (II) Some cats are not rats.
-7. P > Q ≤ R = S. Concl: (I) P > S (II) P > R. Which?
-8. Mirror image of "DELHI" along vertical axis: ?
-9. Cube side 5 painted, cut into 1cm³. # 0-painted? (a) 9 (b) 27 (c) 64 (d) 125
-10. Day after tomorrow is Friday. What day was day before yesterday? (a) Sun (b) Mon (c) Tue (d) Sat
-11. Arrange: BANANA, APPLE, CHERRY, BERRY → alphabetically.
-12. Code: APPLE = 50, ORANGE = 60. MANGO = ?
-13. A man rows 12 km downstream and back in 6 h. If stream = 2 km/h, find still water speed.
-14. P is uncle of Q. R is sister of P. How is R related to Q? (a) aunt (b) sister (c) niece (d) cousin
-15. Number of squares on a 8×8 chessboard? (a) 64 (b) 65 (c) 84 (d) 204
-16. Series: 8, 27, 64, 125, ? → (a) 196 (b) 216 (c) 169 (d) 256
-17. If "+" means ×, "−" means +, "×" means ÷, "÷" means −, then 6 + 4 ÷ 2 × 1 − 5 = ? (a) 26 (b) 25 (c) 27 (d) 24
-18. Odd one out: 16, 36, 64, 81, 100. (a) 16 (b) 36 (c) 64 (d) 81
-19. Find next: ZAY, XBW, VCU, TDS, ?
-20. Sum of first 100 natural numbers? (a) 5050 (b) 5000 (c) 5500 (d) 5100
-21. A says "B is my father's brother's son". How is B related to A? (a) brother (b) cousin (c) uncle (d) father
-22. Direction: A walks 5 km S, 12 km E. Distance from start? (a) 13 km (b) 17 km (c) 7 km (d) 60 km
-23. If 7 days ago was Tuesday, today is? (a) Mon (b) Tue (c) Wed (d) Sun
-24. Letter series: A, C, F, J, O, ? → (a) T (b) U (c) V (d) S
-25. In a circle, A sits opposite B. C is to left of A. Position of C wrt B?
+**Instructions:** One mark per question, no negative marking in this self-test. Attempt all 25 within 25 minutes.
 
-**Answer key:** 1-b (2x+1), 2-d (3+1+18=22? actually 3+1+18=22, so a), 3-c (her son's father=her husband=speaker's father→speaker is brother-in-law? mom of speaker), 4-a, 5-a, 6-both, 7-neither, 8-IHLED (mirrored each glyph), 9-b, 10-d (DBY=Friday-3=Tue→DBY=Sat? ), 11-APPLE, BANANA, BERRY, CHERRY; 12-50; 13-(rows 12 down + 12 up)/6 = need eqn; 14-a (aunt); 15-d (204=∑n²); 16-b (cubes); 17-? compute; 18-d (others perfect-square-of-even); 19-RES (skip-1 forward, skip-1 backward); 20-a; 21-b; 22-a; 23-b; 24-b; 25-right.
+1. Number series: 5, 11, 23, 47, __ ?
+   (a) 91  (b) 95  (c) 99  (d) 103
 
-> *Note: where the answer is ambiguous, try all options against the given rule. The exam is closed-form; with the rule fixed, only one option fits.*
+2. If A = 1, B = 2, … Z = 26, the letter-value of CAR is:
+   (a) 22  (b) 24  (c) 25  (d) 26
+
+3. Pointing to a woman, a man says: "Her son's father is my father." How is the woman related to the man?
+   (a) Mother  (b) Sister  (c) Wife  (d) Daughter
+
+4. A walks 5 km East, then 5 km North, then 5 km West. His straight-line distance from the starting point is:
+   (a) 5 km  (b) 10 km  (c) 7 km  (d) 0 km
+
+5. Five persons P, Q, R, S, T sit in a row. P sits at the left end. T sits at the right end. R sits between S and T. Q is adjacent to P. Which position (from left) does S occupy?
+   (a) 2nd  (b) 3rd  (c) 4th  (d) 5th
+
+6. All doctors are engineers. All engineers are scientists. Which conclusion(s) definitely follow?
+   I — All doctors are scientists.   II — Some scientists are engineers.
+   (a) Only I  (b) Only II  (c) Both I and II  (d) Neither
+
+7. P > Q > R ≤ S. Which conclusion definitely follows?
+   I — P > R.   II — S > P.
+   (a) Only I  (b) Only II  (c) Both  (d) Neither
+
+8. Letter series: A, E, I, M, Q, __ ?
+   (a) S  (b) T  (c) U  (d) V
+
+9. A cube of side 4 cm is painted red on all faces and then cut into 1 cm³ small cubes. How many small cubes have exactly 2 faces painted?
+   (a) 8  (b) 16  (c) 24  (d) 32
+
+10. The day before yesterday was Thursday. What day is tomorrow?
+    (a) Saturday  (b) Sunday  (c) Monday  (d) Friday
+
+11. Five words arranged in alphabetical order: ORANGE, MANGO, APPLE, BANANA, CHERRY. Which word comes third?
+    (a) CHERRY  (b) MANGO  (c) BANANA  (d) ORANGE
+
+12. In a code, BIRD = 33 and FISH = 42 (sum of letter positions, A = 1). What is the value of CODE?
+    (a) 25  (b) 27  (c) 29  (d) 32
+
+13. A boat covers 24 km downstream in 3 hours and 24 km upstream in 6 hours. What is the speed of the boat in still water?
+    (a) 4 km/h  (b) 5 km/h  (c) 6 km/h  (d) 8 km/h
+
+14. P is the uncle of Q. R is the sister of P. How is R related to Q?
+    (a) Aunt  (b) Sister  (c) Niece  (d) Cousin
+
+15. Total number of squares of all sizes on a standard 8 × 8 chessboard:
+    (a) 64  (b) 128  (c) 196  (d) 204
+
+16. Number series: 8, 27, 64, 125, __ ?
+    (a) 196  (b) 216  (c) 169  (d) 256
+
+17. If '+' means '×', '−' means '+', '×' means '÷', '÷' means '−', then: 6 + 4 ÷ 2 × 1 − 5 = ?
+    (a) 26  (b) 25  (c) 27  (d) 24
+
+18. Odd one out: 16, 36, 64, 81, 100
+    (a) 16  (b) 36  (c) 64  (d) 81
+
+19. Letter-pair series: AZ, BY, CX, DW, __ ?
+    (a) EV  (b) EU  (c) FV  (d) EW
+
+20. Sum of all natural numbers from 1 to 100:
+    (a) 5050  (b) 5000  (c) 5500  (d) 5100
+
+21. A tells B: "Your mother's husband's sister is my mother." How is A related to B?
+    (a) Brother  (b) Cousin  (c) Uncle  (d) Nephew
+
+22. A man walks 5 km South, then 12 km East. His straight-line distance from the starting point is:
+    (a) 13 km  (b) 17 km  (c) 7 km  (d) 60 km
+
+23. If 7 days ago was Tuesday, what day is today?
+    (a) Monday  (b) Tuesday  (c) Wednesday  (d) Thursday
+
+24. Letter series: A, C, F, J, O, __ ?
+    (a) T  (b) U  (c) V  (d) S
+
+25. In a class, Rohan's rank from the top is 15th and his rank from the bottom is 21st. How many students are in the class?
+    (a) 34  (b) 35  (c) 36  (d) 37
+
+---
+
+**Answer key:** 1-b | 2-a | 3-a | 4-a | 5-b | 6-c | 7-a | 8-c | 9-c | 10-b | 11-a | 12-b | 13-c | 14-a | 15-d | 16-b | 17-c | 18-d | 19-a | 20-a | 21-b | 22-a | 23-b | 24-b | 25-b
+
+**Quick working for tricky questions:**
+- Q2: C=3, A=1, R=18 → 3+1+18 = **22** → (a)
+- Q3: "Her son's father" = her husband = speaker's father → she is the speaker's **mother** → (a)
+- Q7: P > Q > R means P > R is definite. S ≥ R but S vs P is unknown → only I follows → (a)
+- Q9: 2-face cubes = 12(n−2) = 12 × 2 = **24** → (c)
+- Q10: DBY = Thu → yesterday = Fri → today = Sat → tomorrow = **Sun** → (b)
+- Q12: BIRD = 2+9+18+4 = 33 ✓. CODE = 3+15+4+5 = **27** → (b)
+- Q13: Downstream = 24÷3 = 8 km/h. Upstream = 24÷6 = 4 km/h. Still water = (8+4)÷2 = **6** → (c)
+- Q17: Substitute ops: 6×4 − 2÷1 + 5. BODMAS: 24 − 2 + 5 = **27** → (c)
+- Q21: "Your mother's husband" = B's father. B's father's sister = B's aunt = A's mother → A is B's **cousin** → (b)
+- Q25: Total = 15 + 21 − 1 = **35** → (b)
+
+**Scoring:** 23–25 = Excellent | 18–22 = Good | Below 18 = revise weak topics before your mock series.
 
 ---
 

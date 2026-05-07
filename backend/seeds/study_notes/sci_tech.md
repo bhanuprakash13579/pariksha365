@@ -684,7 +684,7 @@ AI today is basically **pattern-matching on steroids**. Feed a machine millions 
 
 # PART H — PHYSICS, CHEMISTRY, BIOLOGY ESSENTIALS
 
-> *These domains have their own dedicated books (`physics.md`, `chemistry.md`, `biology.md`). This part provides a rapid-revision layer.*
+> *Physics, Chemistry, and Biology each have dedicated full-length books in this series. This part provides a rapid-revision layer for the general-awareness flavour of questions that appear in SSC and Banking exams.*
 
 ## Chapter H1 — Physics Essentials (General Awareness flavour)
 
@@ -1113,7 +1113,7 @@ mindmap
 
 ---
 
-*This expansion brings sci_tech.md to a depth comparable with chemistry / biology. PART X-W are particularly current (2024-26) and should be reviewed annually as ISRO/DRDO add new operational systems.*
+*Parts X–W are particularly current (2024–26) and should be reviewed annually as ISRO/DRDO add new operational systems.*
 
 ---
 

@@ -5,6 +5,44 @@ author: "Pariksha365"
 date: "2026"
 ---
 
+<div class="examtip">
+
+**Examiner Blueprint — Vocabulary**
+
+**Top 8 most-tested vocabulary areas (question share across SSC + Banks):**
+
+| Rank | Area | SSC CGL T-1 | IBPS PO Pre | IBPS PO Mains |
+|---|---|---|---|---|
+| 1 | Synonyms | 3–5 | 3–5 | 3–5 |
+| 2 | Antonyms | 3–5 | 2–4 | 2–4 |
+| 3 | Idioms & Phrases (meaning + usage) | 3–5 | 2–3 | 3–5 |
+| 4 | One-word Substitution | 3–5 | 1–2 | 2–3 |
+| 5 | Fill in the Blanks (confusable pairs) | 3–5 | 3–5 | 3–5 |
+| 6 | Cloze Test (vocabulary in context) | 2–3 | 5–10 | 5–10 |
+| 7 | Spelling (identify correctly spelled word) | 2–3 | 0–1 | 0–1 |
+| 8 | Suffix definitions (–phobia, –cide, –cracy, –ology) | 1–2 | 0–1 | 1–2 |
+
+</div>
+
+<div class="keypoint">
+
+**Study Priority Order** (return-on-study-time, highest first)
+
+1. **Root families** — 50 high-yield roots unlock 2,000+ words. Start here; it is the only vocabulary investment that compounds.
+2. **Confusable pairs** — affect/effect, principal/principle, eminent/imminent, etc. These appear across synonyms, fill-in-the-blanks, and cloze tests simultaneously.
+3. **Idioms & Phrases** — 200 PYQ-weighted idioms cover virtually every question in this category across SSC, Banks, and RRB.
+4. **One-word Substitution** — 150 high-frequency set; examiners recycle the same 80 words heavily across papers.
+5. **Suffix clusters** (–phobia, –cide, –cracy, –ology) — 30 minutes per cluster locks in direct definition questions permanently.
+6. **Synonyms & Antonyms** — drill from the PYQ-weighted word list in Part B onward; focus on words that have appeared at least twice across papers.
+7. **Spelling** — 1 hour on the 60 most commonly misspelled exam words; reliably clears this sub-section.
+8. **Cloze Test** — reading-pace + vocabulary-in-context; improves naturally as the rest of the vocabulary builds.
+
+</div>
+
+---
+
+\newpage
+
 # How to use this book
 
 Vocabulary is the **lowest-ROI-when-done-wrong, highest-ROI-when-done-right** section of any English paper. Done wrong: alphabetical lists of 5,000 words you'll forget by next week. Done right: 1,500-2,000 **high-hit words** grouped into **root/suffix/theme clusters** that the brain learns 10-at-a-time through a shared hook.
@@ -23,16 +61,14 @@ This book is deliberately built on two rules:
 - **Close synonyms & antonyms** (only ones that actually appear in exams).
 - **Typical exam framing** — how examiners usually test this word.
 
-### Pedagogy techniques in use
+### How each cluster is structured
 
-- **Dual coding** — cluster tree diagrams (Mermaid) for each root family.
-- **Spaced revisits** — each cluster mapped to a revision slot (Day 1, Day 3, Day 7, Day 14, Day 30).
-- **Feynman box** after every cluster — say all 8-12 words in a sentence.
-- **Retrieval practice** — at the end of each part, 20 rapid-fire match-the-meaning prompts.
-- **Interleaving** — mixing roots with themes prevents list-fatigue.
-- **Paper-setter's trap** — at the end of each cluster, one or two distractor-twin words the setter loves to slip in (`affect / effect`, `eminent / imminent / immanent`).
-
-Quiz pairings live under `VOCAB_*` topic codes.
+- **Cluster tree** — a diagram for each root family shows all derived words at a glance.
+- **Revise on Day 1, Day 3, Day 7** — three short revisits per cluster beat one long session.
+- **Say it aloud** after every cluster — use each word in a sentence before moving on.
+- **Rapid-fire prompts** — at the end of each part, match-the-meaning drills force active recall.
+- **Roots mixed with themes** — prevents list-fatigue and trains you to guess unfamiliar words.
+- **Paper-setter's trap** — every cluster ends with the distractor-twin pairs the examiner loves (`affect / effect`, `eminent / imminent / immanent`).
 
 ---
 
@@ -206,7 +242,7 @@ mindmap
 
 **Memory hook:** Greek `phobos` = fear / dread. Attach the Greek root of the feared thing to `-phobia`.
 
-**Spaced revisits:** Day 1, Day 3, Day 7.
+**Revision slots:** Day 1, Day 3, Day 7.
 
 | Word | Fear of | Hook / Etymology |
 |------|---------|-------------------|
@@ -1107,6 +1143,4 @@ Revisit each earlier part on Day 3, Day 7, Day 14, Day 30 of its learning. This 
 
 ---
 
-> **Total drill set after this expansion:** Part 16 (english.md) ~400 words + Vocabulary main (clusters) ~300 + Part X (here) 230 = **~930 high-frequency words** — covers ~85-90% of SSC + Banks + RRB vocabulary questions.
-
-*Quiz pairings under `VOCAB_*` topic codes — clustered by root / suffix / theme.*
+> **Total drill set after this expansion:** English book (Part 16) ~400 words + Vocabulary main clusters ~300 + Part X ~230 = **~930 high-frequency words** — covers ~85–90% of SSC + Banks + RRB vocabulary questions.

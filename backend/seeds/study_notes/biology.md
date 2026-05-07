@@ -813,32 +813,88 @@ Extinct (EX) → Extinct in Wild (EW) → Critically Endangered (CR) → Endange
 
 # APPENDIX D — 25-Question Mini-Mock
 
-Answer without looking. Check at the end.
+**Instructions:** 25 questions, 25 minutes. No negative marking in this self-test.
 
-1. Powerhouse of the cell?
-2. Suicide bags?
-3. Father of genetics?
-4. Start codon?
-5. Universal blood donor group?
-6. Largest bone in body?
-7. Smallest bone?
-8. Largest gland?
-9. Master gland?
-10. Fight-or-flight hormone?
-11. Goitre caused by deficiency of?
-12. Vitamin for blood clotting?
-13. Vitamin that sunlight helps make?
-14. Only animal-source vitamin?
-15. Beri-beri vitamin?
-16. Vector of malaria?
-17. Vector of dengue?
-18. Vector of filaria?
-19. First disease eradicated by vaccination?
-20. India declared polio-free in?
-21. Balance centre of brain?
-22. Largest part of brain?
-23. Pyramid of energy — always upright?
-24. 10% rule in ecology means?
-25. India's biodiversity hotspots (how many)?
+1. Which organelle is called the "powerhouse of the cell"?
+   (a) Nucleus  (b) Ribosome  (c) Mitochondria  (d) Lysosome
 
-**Answers**: 1. Mitochondria 2. Lysosomes 3. Mendel 4. AUG 5. O− 6. Femur 7. Stapes 8. Liver 9. Pituitary 10. Adrenaline 11. Iodine 12. K 13. D 14. B₁₂ 15. B₁ 16. Female Anopheles 17. Female Aedes aegypti 18. Culex 19. Smallpox (1980) 20. 2014 21. Cerebellum 22. Cerebrum 23. Yes — always 24. Only 10% energy passes to next trophic level 25. Four
+2. Which organelle is called "suicide bags" due to its autolytic function?
+   (a) Mitochondria  (b) Lysosomes  (c) Golgi body  (d) Endoplasmic reticulum
+
+3. Who is called the "Father of Genetics"?
+   (a) Darwin  (b) Watson  (c) Mendel  (d) Lamarck
+
+4. The start codon in mRNA translation is:
+   (a) UAA  (b) UAG  (c) AUG  (d) UGA
+
+5. Which blood group is the universal donor?
+   (a) A+  (b) B−  (c) O−  (d) AB+
+
+6. The largest bone in the human body is:
+   (a) Tibia  (b) Femur  (c) Humerus  (d) Radius
+
+7. The smallest bone in the human body is:
+   (a) Stapes  (b) Malleus  (c) Incus  (d) Clavicle
+
+8. The largest gland in the human body is:
+   (a) Pancreas  (b) Thyroid  (c) Liver  (d) Adrenal
+
+9. Which gland is called the "master gland"?
+   (a) Thyroid  (b) Pineal  (c) Adrenal  (d) Pituitary
+
+10. The "fight-or-flight" hormone is:
+    (a) Insulin  (b) Thyroxine  (c) Adrenaline  (d) Glucagon
+
+11. Goitre is caused by a deficiency of:
+    (a) Iron  (b) Calcium  (c) Iodine  (d) Zinc
+
+12. Which vitamin is essential for blood clotting?
+    (a) Vitamin A  (b) Vitamin C  (c) Vitamin D  (d) Vitamin K
+
+13. Which vitamin is synthesised by the human body on exposure to sunlight?
+    (a) Vitamin A  (b) Vitamin B₁₂  (c) Vitamin C  (d) Vitamin D
+
+14. Which vitamin is found exclusively in animal-source foods?
+    (a) Vitamin C  (b) Vitamin B₁₂  (c) Vitamin D  (d) Vitamin K
+
+15. Beri-beri is caused by deficiency of:
+    (a) Vitamin B₁ (Thiamine)  (b) Vitamin B₂  (c) Vitamin B₆  (d) Vitamin B₁₂
+
+16. The vector of malaria is:
+    (a) Male Anopheles mosquito  (b) Female Anopheles mosquito  (c) Female Aedes aegypti  (d) Culex mosquito
+
+17. The vector of dengue fever is:
+    (a) Male Anopheles mosquito  (b) Culex mosquito  (c) Female Aedes aegypti  (d) Female Anopheles mosquito
+
+18. The vector of filariasis is:
+    (a) Aedes aegypti  (b) Anopheles  (c) Culex  (d) Sandfly
+
+19. The first disease to be eradicated globally through vaccination was:
+    (a) Polio  (b) Smallpox  (c) Tuberculosis  (d) Measles
+
+20. India was officially declared polio-free in:
+    (a) 2012  (b) 2013  (c) 2014  (d) 2015
+
+21. The balance and coordination centre of the brain is:
+    (a) Cerebrum  (b) Medulla oblongata  (c) Hypothalamus  (d) Cerebellum
+
+22. The largest part of the human brain is:
+    (a) Cerebellum  (b) Cerebrum  (c) Medulla  (d) Thalamus
+
+23. The pyramid of energy in an ecosystem is:
+    (a) Always inverted  (b) Always upright  (c) Upright only in aquatic ecosystems  (d) Varies by season
+
+24. The 10% energy rule in ecology means:
+    (a) 10% of energy is lost to respiration; 90% passes on
+    (b) Only 10% of energy at one trophic level transfers to the next
+    (c) 10% of energy is stored as biomass permanently
+    (d) 10% of producers are consumed by primary consumers
+
+25. How many biodiversity hotspots does India have?
+    (a) Two  (b) Three  (c) Four  (d) Five
+
+---
+
+**Answer key:** 1-c | 2-b | 3-c | 4-c | 5-c | 6-b | 7-a | 8-c | 9-d | 10-c | 11-c | 12-d | 13-d | 14-b | 15-a | 16-b | 17-c | 18-c | 19-b | 20-c | 21-d | 22-b | 23-b | 24-b | 25-c
+
+**Scoring:** 23–25 = Excellent | 18–22 = Good | Below 18 = revise weak chapters before your mock series.
