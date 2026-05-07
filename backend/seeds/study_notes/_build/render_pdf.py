@@ -105,12 +105,14 @@ HTML_TEMPLATE = """<!doctype html>
 """
 
 CSS = textwrap.dedent("""
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
   @page { size: A4; margin: 18mm 16mm 22mm 16mm; }
 
   html, body {
-    font-family: "DejaVu Sans", "Noto Sans", system-ui, sans-serif;
-    line-height: 1.55;
-    color: #1f2937;
+    font-family: "Inter", "DejaVu Sans", "Noto Sans", system-ui, sans-serif;
+    line-height: 1.62;
+    color: #1a202c;
     font-size: 10.5pt;
   }
 
@@ -203,15 +205,43 @@ CSS = textwrap.dedent("""
   /* ── Headings ── */
   h1 {
     color: #6c1d5f;
-    border-bottom: 2px solid #6c1d5f;
-    padding-bottom: 4pt;
+    border-bottom: 2.5px solid #6c1d5f;
+    padding-bottom: 5pt;
     margin-top: 8pt;
     page-break-after: avoid;
-    font-size: 18pt;
+    font-size: 19pt;
+    font-weight: 700;
+    letter-spacing: -0.01em;
   }
-  h2 { color: #0f4c75; margin-top: 12pt; margin-bottom: 4pt; font-size: 14pt; page-break-after: avoid; }
-  h3 { color: #1d4ed8; font-size: 12pt; margin-top: 9pt; margin-bottom: 3pt; page-break-after: avoid; }
-  h4 { color: #2563eb; font-size: 11pt; margin-top: 6pt; margin-bottom: 2pt; page-break-after: avoid; }
+  h2 {
+    color: #0f4c75;
+    margin-top: 14pt;
+    margin-bottom: 3pt;
+    font-size: 13.5pt;
+    font-weight: 600;
+    page-break-after: avoid;
+    border-left: 3.5pt solid #0f4c75;
+    padding-left: 7pt;
+  }
+  h3 {
+    color: #1d4ed8;
+    font-size: 11.5pt;
+    font-weight: 600;
+    margin-top: 9pt;
+    margin-bottom: 2pt;
+    page-break-after: avoid;
+  }
+  h4 {
+    color: #374151;
+    font-size: 10.5pt;
+    font-weight: 600;
+    margin-top: 6pt;
+    margin-bottom: 2pt;
+    page-break-after: avoid;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 9pt;
+  }
   p, li { orphans: 2; widows: 2; }
   h1 + *, h2 + *, h3 + *, h4 + * { page-break-before: avoid; }
 
@@ -226,8 +256,8 @@ CSS = textwrap.dedent("""
   }
 
   pre, code {
-    font-family: "DejaVu Sans Mono", "Menlo", monospace;
-    font-size: 9.5pt;
+    font-family: "JetBrains Mono", "DejaVu Sans Mono", "Menlo", monospace;
+    font-size: 9.2pt;
   }
   code { background: #f1f5f9; padding: 1pt 4pt; border-radius: 3pt; }
   pre {
@@ -239,6 +269,23 @@ CSS = textwrap.dedent("""
   }
   pre code { background: none; padding: 0; }
 
+  /* ── Step-by-step computation box ── */
+  .steps {
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    border-left: 4pt solid #0369a1;
+    border-radius: 4pt;
+    padding: 8pt 14pt;
+    margin: 7pt 0;
+    font-family: "JetBrains Mono", "DejaVu Sans Mono", monospace;
+    font-size: 9.5pt;
+    line-height: 1.80;
+    page-break-inside: avoid;
+  }
+  .steps p { margin: 1pt 0; }
+  .steps strong { color: #0369a1; }
+  .steps code { background: none; padding: 0; font-size: 9.5pt; }
+
   /* ── Tables ── */
   table {
     border-collapse: collapse;
@@ -246,16 +293,23 @@ CSS = textwrap.dedent("""
     width: 100%;
     font-size: 9.5pt;
     page-break-inside: auto;
+    font-variant-numeric: tabular-nums;
   }
   table tr { page-break-inside: avoid; page-break-after: auto; }
   table thead { display: table-header-group; }
   table th, table td {
     border: 1px solid #94a3b8;
-    padding: 4pt 7pt;
+    padding: 4.5pt 8pt;
     text-align: left;
     vertical-align: top;
   }
-  table th { background: #e2e8f0; font-weight: 600; }
+  table th {
+    background: #dbeafe;
+    font-weight: 600;
+    color: #1e3a8a;
+    letter-spacing: 0.02em;
+    font-size: 9pt;
+  }
   /* Alternating row tint */
   table tbody tr:nth-child(even) td { background: #f8fafc; }
 

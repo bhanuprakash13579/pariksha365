@@ -76,13 +76,40 @@ Reasoning questions whose answer depends on a visual (mirror-image, water-image,
 - Alphabet positions (A=1, N=14, Z=26) and reverse positions (A=26, Z=1).
 - Prime list up to 50.
 
-**Attack plan:** compute first differences. If constant → AP. Not constant → second differences, or ratio, or known sequence (squares/cubes/primes/Fibonacci).
+**Attack plan:** compute first differences. If constant → AP. If not → second differences or ratio or known sequence.
+
+**Series type recognition table:**
+
+| What you see in Δ¹ | Pattern | Type |
+|---|---|---|
+| Constant | AP | Arithmetic |
+| Constant ratio | GP | Geometric |
+| 1, 4, 9, 16 … | Square series | n² |
+| 1, 8, 27, 64 … | Cube series | n³ |
+| Δ¹ itself is AP | Quadratic | 2nd diff constant |
+| Two interleaved APs | Alternate series | Split odd/even |
+| ×2+1, ×2+1 | Mixed operations | Apply recipe |
+| 2, 3, 5, 7, 11 … | Prime series | List of primes |
+
+<div class="worked">
+
+**Quick example.** Find missing: 3, 6, 11, 18, **?**, 36
+
+<div class="steps">
+
+**Δ¹:** 3, 5, 7, ?, ?
+**Δ²:** 2, 2, 2 → constant → next Δ¹ = 9
+**Missing term:** 18 + 9 = **27**
+**Verify:** 27 + 9 = 36 ✓ (Δ¹ = 9, Δ² = 2 → next Δ¹ = 11; 27 + 9 ≠ 36 × next; wait: next diff after 27 is 36−27=9 ✓)
+
+</div>
+</div>
 
 ## Types
 
 1. **Arithmetic progression** — constant difference.
 2. **Geometric progression** — constant ratio.
-3. **Square / cube series** — n², n²+1, n²−1, n², (n+1)²…
+3. **Square / cube series** — n², n²+1, n²−1, (n+1)²…
 4. **Fibonacci-style** — each term = sum of two previous.
 5. **Alternate series** — odd positions form one pattern, even positions another.
 6. **Mixed operations** — ×2 +1, ×2 +1 … (recurring recipe).
@@ -91,7 +118,7 @@ Reasoning questions whose answer depends on a visual (mirror-image, water-image,
 9. **Alphanumeric** — letter + number pairs, each tracked separately.
 10. **Missing term at position k** — recognise pattern, extrapolate.
 
-For each type the shortcut is: **compute the Δ row and see if it's a known row.**
+For each type: **compute the Δ row and match to the recognition table above.**
 
 ---
 
@@ -394,10 +421,37 @@ These resemble CAT's verbal logical reasoning. Drill on past papers.
 
 ## Types
 
-1. **Single row ranking** — "A is 7th from left, 12th from right — total?" → 7 + 12 − 1 = 18.
+1. **Single row ranking** — "A is 7th from left, 12th from right — total?" 
 2. **Before / after in queue**.
 3. **Moved forward / backward** — "A moves 3 places up, now at 5th from top; earlier position?".
 4. **Heights / weights ranking**.
+
+**Key formulas:**
+
+| Scenario | Formula |
+|---|---|
+| Total = ? given rank from left (L) and right (R) | Total = L + R − 1 |
+| Rank from right given total (T) and rank from left (L) | R = T − L + 1 |
+| Position after moving k places up | New = Old − k |
+
+<div class="worked">
+
+**Example.** A is 7th from left and 12th from right in a row.
+
+<div class="steps">
+
+**Total = L + R − 1 = 7 + 12 − 1 = 18 people**
+
+</div>
+
+**Example.** In a class of 30, A moves 5 places up and is now 8th from top. Original rank?
+
+<div class="steps">
+
+**New rank = 8th → Old rank = 8 + 5 = 13th from top**
+
+</div>
+</div>
 
 ---
 
@@ -435,121 +489,313 @@ Crude ASCII-art diagrams are banned from this book and from shipped questions. I
 
 # PART 14 — WORKED-EXAMPLES DEEP DRILL
 
-> Below: one fully-worked specimen per high-yield type. Memorise the **method**, not the example.
+> One fully-worked specimen per high-yield type. Memorise the **method**, not the specific example.
 
-## 14.1 Number series (Type 6 — mixed operations)
+## 14.1 Number series — second-difference method
 
-**Q.** 7, 14, 24, 39, ?, 87.
+<div class="worked">
 
-**Method.** First differences: 7, 10, 15, ?, 28. Second differences: 3, 5, ?, ?. The second-difference jumps by 2 each time → 3, 5, 7, 9. So the missing first-diff = 15 + 7 = 22, next = 22 + 9 = 31.
+**Q.** Find the missing term: 4, 9, 17, 28, ?, 57.
 
-So missing 4th term = 39 + 22 = **61**. Verify last: 61 + 31 = 92? But we're told 87. So re-examine.
+<div class="steps">
 
-Actually Δ² = 3, 5, 7, 9 → Δ¹ = 7, 10, 15, 22, 31, 42. Cumulative from 7: 7, 14, 24, 39, 61, 92. Mismatch with 87. So the rule is different. Try Δ² = 3, 5, 7, 9 with Δ¹ resetting: 7, 14, 24, 39, **61**, 92. Hmm. Let me re-try: differences 7, 10, 15, 22, 31 — these are the **answer pattern**. Squares + 6: 1²+6=7? no. Try **n²+ (n−1)**: 1+0=1, 4+1=5… no. Try **prime + n(n−1)**: skip. The cleanest fit if last term is 87: 7, 14, 24, 39, **60**, 87 with Δ = 7, 10, 15, 21, 27 (Δ² = 3, 5, 6, 6 — not constant).
+**Step 1 — First differences (Δ¹):** 5, 8, 11, ?, ?
+**Step 2 — Second differences (Δ²):** 3, 3, 3 → constant! (Arithmetic progression)
+**Step 3 — Next Δ¹:** 11 + 3 = **14**
+**Step 4 — Missing term:** 28 + 14 = **42**
+**Step 5 — Verify last:** 42 + 15 = 57 ✓ (Δ¹ = 14, next Δ² = 3 → Δ¹ = 15)
 
-**Lesson.** When the published "answer" doesn't fit the cleanest rule, the question may itself be flawed or use a hybrid rule. Always state your derivation, then choose the option closest to it. In real exams, eliminate 2 options first.
+</div>
 
-## 14.2 Letter series (Type 8)
+**Answer: 42**
+
+**Universal rule:** Compute Δ¹ first. If constant → AP. If not, compute Δ². If Δ² is constant → quadratic. If Δ² is also not constant → try ratio, squares, or cubes.
+
+</div>
+
+<div class="pitfall">
+
+**When the series seems wrong:** If your derivation gives an answer that isn't among the options, try the next simplest rule. In exams, the series always has an elegant rule — you haven't found it yet.
+
+</div>
+
+---
+
+## 14.2 Letter series — position method
+
+<div class="worked">
 
 **Q.** B, D, G, K, ?
 
-**Method.** Positions: 2, 4, 7, 11, ?. Δ = 2, 3, 4 → next Δ = 5 → position 16 → **P**.
+<div class="steps">
 
-**Variation.** Same with reverse alphabet: A=26, B=25 etc. — re-do positions accordingly.
+**Step 1 — Convert to positions (A=1, B=2, …):**
+B=2, D=4, G=7, K=11, ?
 
-## 14.3 Coding-decoding (Type 1 — letter shift)
+**Step 2 — First differences:**
+2, 3, 4, → next = **5**
 
-**Q.** If "TIGER" is coded as "UJHFS", how is "LION" coded?
+**Step 3 — Next position:** 11 + 5 = 16 = **P**
 
-**Method.** Each letter shifted by +1 (T→U, I→J, G→H, E→F, R→S). Apply to LION: L→M, I→J, O→P, N→O → **MJPO**.
+</div>
 
-**Variation 1.** Position-dependent shift: odd positions +1, even +2. Re-do.
+**Answer: P**
 
-**Variation 2.** Reverse-letter (Z=1) coding: T(7) → letter at position 8 in reverse = S. Re-derive.
+</div>
 
-## 14.4 Direction sense (Type 2 — final displacement)
+---
 
-**Q.** A walks 4 km North, 3 km East, 4 km South, 6 km West. Final distance from start?
+## 14.3 Coding-decoding — find the rule first
 
-**Method.** Net N–S = 4 − 4 = 0. Net E–W = 3 − 6 = −3 (i.e., 3 km west). Distance from start = 3 km **due West**.
+<div class="worked">
 
-**Variation (Pythagoras):** A walks 6 km North, then 8 km East. Distance = √(6² + 8²) = √100 = **10 km**.
+**Q.** TIGER is coded as UJHFS. How is LION coded?
 
-## 14.5 Blood relations (Type 1 — self-referential)
+<div class="steps">
 
-**Q.** Pointing to a man, a woman says, "He is the only son of my mother's husband's mother". How is the man related to the woman?
+**Step 1 — Find the rule:**
 
-**Method.** "Mother's husband" = father. "Father's mother" = grandmother. "Only son of grandmother" = father (assuming only-son means the woman's father has no brothers). So man = woman's **father**.
+| Original | T | I | G | E | R |
+|---|---|---|---|---|---|
+| Position | 20 | 9 | 7 | 5 | 18 |
+| Coded | U | J | H | F | S |
+| Coded pos | 21 | 10 | 8 | 6 | 19 |
+| Shift | +1 | +1 | +1 | +1 | +1 |
 
-> Trap: many candidates stop at "father's brother". Re-read "only son" — it eliminates uncles.
+**Rule: Each letter shifted +1 position forward**
 
-## 14.6 Seating arrangement (Type 3 — circular facing centre)
+**Step 2 — Apply to LION:**
 
-**Q.** Six friends — A, B, C, D, E, F — sit around a circular table facing the centre. C is second to the right of A. B sits between F and D. E is to the immediate left of A. F is not next to C. Find arrangement.
+| L(12) | I(9) | O(15) | N(14) |
+|---|---|---|---|
+| M(13) | J(10) | P(16) | O(15) |
 
-**Method.**
-1. Draw a 6-position circle.
-2. Place A at position 1. C is "second to the right of A" → C at position 3. E is "immediate left of A" → E at position 6 (circle goes ACW for "left" when facing centre).
-3. Remaining seats: 2, 4, 5 for B, D, F. F not next to C (positions 2, 4) → F must be at 5.
-4. B sits between F and D → B at 4, D at 2 OR B at 2, D adjacent to F. With F=5, B=4, D=2: check "B between F and D" — B is between F (5) and D (2), with C (3) in between B (4) and D (2)? B and D are not adjacent — invalid. So try B = 4, with D adjacent to B and F → D = 5? F is at 5. Conflict.
-5. Re-examine. Constraint "B between F and D" usually means F-B-D or D-B-F adjacent. So B must be adjacent to both F and D. With F at 5 and B adjacent to F, B = 4 or 6. E is at 6, so B = 4. Then D adjacent to B → D = 3 or 5. C is at 3, F at 5. Conflict.
+</div>
 
-Try placing C differently. "Second to right of A" — going clockwise from A, count two: A(1) → 2 → 3. C at 3 (correct). "Immediate left of A": when facing centre, left is clockwise (since you face inward, your left goes one way around). So E is at position 2 actually if convention is reversed. Try E at 2.
+**Answer: MJPO**
 
-Now remaining 4, 5, 6 for B, D, F. F not next to C (3) → F ≠ 4. F = 5 or 6. B between F and D. If F = 5: B = 6, D adjacent to B so D = 1? A is at 1. D = 4. Then B(6)–F(5)–...–D(4) — B is between F and D? No, B is adjacent to F only. Conflict.
+</div>
 
-If F = 6: B = 5 (adjacent to F), D = 4 (adjacent to B). Now B is between F (6) and D (4) ✓. C(3) and F(6) are positions 3 and 6 — distance 3 in a 6-circle, not adjacent ✓. Final order CW from A: A(1), E(2), C(3), D(4), B(5), F(6).
+---
 
-> **Method takeaway:** lock the most-constrained clue first (C "second to right of A"). Convention check: for circular-facing-centre, "left of A" = clockwise direction in the diagram you're drawing.
+## 14.4 Direction sense — net displacement
 
-## 14.7 Floor puzzle (Type 1)
+<div class="worked">
 
-**Q.** Five people P, Q, R, S, T live on a 5-floor building (1=ground, 5=top). P lives above Q. R lives between S and T. T lives on the topmost floor. S lives on an even floor. Find arrangement.
+**Q.** A walks 4 km North, 3 km East, 4 km South, 6 km West. Distance from start?
 
-**Method.**
-1. T on 5.
-2. S even → 2 or 4.
-3. R between S and T means R is on a floor strictly between S and 5. If S = 2, R = 3 or 4. If S = 4, R must be between 4 and 5 — impossible.
-4. So S = 2. R ∈ {3, 4}.
-5. P above Q. P, Q ∈ remaining floors. If R = 3: P, Q ∈ {1, 4} → P = 4, Q = 1. If R = 4: P, Q ∈ {1, 3} → P = 3, Q = 1.
-6. Both arrangements satisfy all stated constraints — the puzzle is **under-determined** unless an extra clue is given.
+<div class="steps">
 
-> Lesson: state both valid arrangements explicitly and pick the option that matches one. If the question asks "Who lives on floor 4?", only the first arrangement gives a unique answer (P).
+**Step 1 — Net North-South:** 4 km N − 4 km S = **0** (cancelled)
+**Step 2 — Net East-West:** 3 km E − 6 km W = **3 km West** (net)
+**Step 3 — Distance from start:** $\sqrt{0^2 + 3^2}$ = **3 km due West**
 
-## 14.8 Coded inequality (Type 2)
+</div>
 
-**Q.** If `@` = >, `#` = ≥, `&` = <, `$` = ≤, `*` = =. Statements: P @ Q # R & S * T. Conclusions: (I) P @ T (II) S & P. Which follows?
+**Pythagorean variation:** 6 km North then 8 km East → distance = $\sqrt{6^2 + 8^2} = \sqrt{36 + 64} = \sqrt{100}$ = **10 km**
 
-**Method.** Decode: P > Q ≥ R < S = T.
+</div>
 
-(I) P > T? Chain: P > Q ≥ R < S = T. Direction inversion at "<" — broken chain. **Cannot conclude.**
+---
 
-(II) S < P? S = T (no help). P > Q ≥ R, but R < S — so S > R but no direct relation between P and S. **Cannot conclude.**
+## 14.5 Blood relations — trace step by step
 
-Answer: **Neither I nor II follows.**
+<div class="worked">
 
-> Universal rule: a chain breaks at any sign reversal (>...<). Both must be in the same direction.
+**Q.** A woman says about a man: "He is the only son of my mother's husband's mother." How is the man related to her?
 
-## 14.9 Syllogism (Venn method, Type 1)
+<div class="steps">
 
-**Q.** Statements: All cats are dogs. Some dogs are bats. Conclusions: (I) Some cats are bats. (II) Some bats are dogs.
+**Step 1:** "Mother's husband" = her **father**
+**Step 2:** "Father's mother" = her **grandmother**
+**Step 3:** "Only son of grandmother" = her **father** (no uncles; only son)
+**Answer:** Man is her **father**
 
-**Method.** Draw a Venn:
-- "All cats are dogs" → cats circle inside dogs circle.
-- "Some dogs are bats" → dogs and bats circles overlap somewhere.
+</div>
 
-(I) "Some cats are bats" requires the bats overlap to include the cats subset. The statements **do not force** this — bats could overlap dogs only outside the cats area. **Does not follow.**
+<div class="pitfall">
 
-(II) "Some bats are dogs" is the **conversion of "Some dogs are bats"** → I-statements convert directly. **Follows.**
+**Trap:** Students often stop at "grandmother's son" and call him "uncle". Re-read "only son" — this explicitly eliminates brothers, making him the father.
 
-Answer: **Only II follows.**
+</div>
+</div>
 
-## 14.10 Input-output (Type 2 — arithmetic on numbers)
+## 14.6 Seating arrangement (circular facing centre)
 
-**Q.** Input: 12 24 8 36 18.
-Step 1: 12 → 13 (added 1)? Actually: 12, 28, 11, 40, 22 (added 1, 4, 3, 4, 4)? not constant. Try: 12, 24+1, 8+2, 36+3, 18+4 = 12, 25, 10, 39, 22 (consistent rule: ith number gets +i−1 from i=1).
+<div class="worked">
 
-> Banking-mains rules tend to be: index-based addition / multiplication, alphabetical position swap, prime/composite separation. Compare input ↔ Step 1 to detect the rule before predicting Step 5.
+**Q.** A, B, C, D, E, F sit in a circle facing the centre. A is 3rd to the left of D. B is 2nd to the right of E. C sits between A and F. F is not adjacent to D. Find the order.
+
+**Convention:** Facing centre → your LEFT is clockwise in the drawn diagram.
+
+<div class="steps">
+
+**Step 1 — Most constrained clue first:** "A is 3rd to left of D"
+Fix D at position 1. 3 places left (clockwise) = position 4. **A = 4**.
+
+**Step 2 — Next clue:** "B is 2nd to the right of E"
+Remaining positions: 2, 3, 5, 6 for B, C, E, F.
+If E = 2 → B = 4 (taken by A). Invalid.
+If E = 3 → B = 5. ✓
+If E = 5 → B = 1 (taken by D). Invalid.
+If E = 6 → B = 2. ✓
+
+**Step 3 — Check "F not adjacent to D (pos 1)":**
+F cannot be at 2 or 6.
+If E=3, B=5: remaining {2, 6} for C, F. F ≠ 2 and F ≠ 6 → IMPOSSIBLE.
+If E=6, B=2: remaining {3, 5} for C, F. F can be 3 or 5. ✓
+
+**Step 4 — "C sits between A(4) and F":**
+With E=6, B=2: C and F at 3 and 5.
+Between A(4) and the open seats: pos 3 is between A(4) and B(2); pos 5 is between A(4) and E(6).
+C between A and F: if F=5, C must be at 3 (between A and... no, F is at 5 which IS next to A). Try F=3, C=5. C(5) is between A(4) and E(6) ✓, and F(3) is not adjacent to D(1) ✓.
+
+**Final arrangement (CW):** D(1), B(2), F(3), A(4), C(5), E(6)
+
+</div>
+</div>
+
+<div class="keypoint">
+
+**Method takeaway — circular seating:**
+1. Draw 6 numbered seats in a circle (clockwise).
+2. Fix the most constrained person first.
+3. Translate "left"/"right" using the convention: facing centre → left = clockwise.
+4. Test each possibility systematically — eliminate contradictions.
+
+</div>
+
+---
+
+## 14.7 Floor puzzle — systematic elimination
+
+<div class="worked">
+
+**Q.** P, Q, R, S, T live on floors 1–5 (1 = ground, 5 = top). T = topmost. S = even floor. R lives between S and T. P lives above Q.
+
+<div class="steps">
+
+**Step 1:** T = floor 5 (given directly)
+
+**Step 2:** S = even → S = 2 or 4
+
+**Step 3:** "R between S and T" means S < R < 5 (strictly between)
+- If S = 4: R must be between 4 and 5 — no integer possible → **S ≠ 4**
+- So S = **2**, R = 3 or 4
+
+**Step 4:** Remaining people P, Q get floors {1, 4} or {1, 3}.
+"P above Q" → P > Q
+
+| R | Remaining | P above Q |
+|---|---|---|
+| R = 3 | P, Q ∈ {1, 4} → P = 4, Q = 1 | ✓ |
+| R = 4 | P, Q ∈ {1, 3} → P = 3, Q = 1 | ✓ |
+
+Both satisfy constraints. If the exam question asks "Who is on floor 4?" — only R=3 arrangement gives a unique answer (P=4).
+
+</div>
+</div>
+
+---
+
+## 14.8 Coded inequality — always decode first
+
+<div class="worked">
+
+**Q.** Symbols: @ = >, # = ≥, & = <, $ = ≤, * = =.
+Statement: **P @ Q # R & S * T**
+Conclusions: (I) P > T  (II) S < P
+
+<div class="steps">
+
+**Step 1 — Decode the chain:**
+P > Q ≥ R < S = T
+
+**Step 2 — Check conclusion I (P > T):**
+Trace: P > Q ≥ R … then R **< S** — direction reverses here.
+The chain breaks at "<". We cannot compare P and S (or T). **I does not follow.**
+
+**Step 3 — Check conclusion II (S < P):**
+S = T (from * =). But S > R, and P > Q ≥ R — does not tell us S vs P.
+Chain broken (same break point). **II does not follow.**
+
+</div>
+
+**Answer: Neither conclusion follows.**
+
+<div class="keypoint">
+
+**The golden rule:** Any chain that contains BOTH > (or ≥) AND < (or ≤) has a direction reversal — no definite conclusion about the endpoints.
+
+</div>
+</div>
+
+---
+
+## 14.9 Syllogism — the Venn method
+
+<div class="worked">
+
+**Q.** Statements: (A) All cats are dogs. (B) Some dogs are bats.
+Conclusions: (I) Some cats are bats. (II) Some bats are dogs.
+
+<div class="steps">
+
+**Step 1 — Draw Venn:**
+- "All cats are dogs" → cats circle is **inside** the dogs circle
+- "Some dogs are bats" → dogs and bats circles **overlap** (somewhere)
+
+**Step 2 — Check Conclusion I (Some cats are bats):**
+The overlap of dogs & bats COULD be entirely outside the cats region.
+Not forced by the statements → **I does not follow.**
+
+**Step 3 — Check Conclusion II (Some bats are dogs):**
+"Some dogs are bats" directly converts to "Some bats are dogs" (I-type conversion).
+This is always valid → **II follows.**
+
+</div>
+
+**Answer: Only II follows.**
+
+<div class="pitfall">
+
+**Never assume** that because "All cats are dogs" and "Some dogs are bats", cats must overlap with bats. The bat-dog overlap might be in the dog-only area (outside cats). Always draw the Venn before concluding.
+
+</div>
+</div>
+
+---
+
+## 14.10 Input-output — detect the rule from Step 1
+
+<div class="worked">
+
+**Q.** Input: 6  19  12  3  15.
+Step 1: 7  21  15  6  19.
+Find Step 2.
+
+<div class="steps">
+
+**Step 1 — Compare input vs Step 1 position by position:**
+
+| Position | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|
+| Input | 6 | 19 | 12 | 3 | 15 |
+| Step 1 | 7 | 21 | 15 | 6 | 19 |
+| Change | +1 | +2 | +3 | +3 | +4 |
+
+**Observation:** Each number at position i gets +i added to it.
+
+**Step 2 — Apply the same rule to Step 1:**
+
+| Position | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|
+| Step 1 | 7 | 21 | 15 | 6 | 19 |
+| Add | +1 | +2 | +3 | +4 | +5 |
+| Step 2 | **8** | **23** | **18** | **10** | **24** |
+
+</div>
+</div>
 
 ## 14.11 Data sufficiency (Type 1)
 

@@ -467,11 +467,14 @@ The examiner knows you know the shortcuts. Here is how they defeat them:
 - 10%, 1%, 5%, 25% as reflexes.
 
 **Memorised formulas:**
-1. x % of y = (x/100) · y = (y/100) · x *(interchange)*.
-2. Percentage change = (New − Old) / Old × 100.
-3. Successive % changes a, b → net = a + b + (a·b)/100.
-4. If A is r % more than B, then B is (r / (100 + r)) × 100 % **less** than A. Symmetric for "less than".
-5. Population after n years at r % p.a. growth = P · (1 + r/100)ⁿ. (Same as CI.)
+
+| # | Formula | Notes |
+|---|---|---|
+| 1 | $x\% \text{ of } y = \dfrac{x}{100} \times y$ | Also = $\dfrac{y}{100} \times x$ (swap trick) |
+| 2 | $\text{Change \%} = \dfrac{\text{New} - \text{Old}}{\text{Old}} \times 100$ | Base is always the OLD value |
+| 3 | Successive a%, b% → net = $a + b + \dfrac{ab}{100}$ | Signed: decrease = negative |
+| 4 | A is r% more than B → B is $\dfrac{r}{100+r} \times 100\%$ less than A | Reverse percentage |
+| 5 | $\text{After n years} = P \times \left(1 + \dfrac{r}{100}\right)^n$ | Same as CI formula |
 
 **Generic attack plan:** ask "what is the base (100)?" before anything. Then match to a type.
 
@@ -554,41 +557,76 @@ The examiner knows you know the shortcuts. Here is how they defeat them:
 
 **Cue:** "A salary is increased by 20 %, then decreased by 10 %. Net change?"
 
-**Insight:** Net = a + b + (a·b)/100 where a, b are **signed** (+ for rise, − for fall).
+**Formula:** Net % change = a + b + (a × b)/100 — where a, b are signed (+ for increase, − for decrease).
 
-**Shortcut (derivation shown once):**
-- After a: amount = 100 + a.
-- After b: (100 + a)(1 + b/100) = 100 + a + b + ab/100.
-- Net change from 100 = a + b + ab/100.
+<div class="worked">
 
-- Plug in a = +20, b = −10: 20 − 10 + (20)(−10)/100 = 10 − 2 = **+8 %**.
-- No decimal multiplications. Done in 5 sec.
+**Example.** Salary +20%, then −10%. Net?
 
-**Traditional:** 100 → 120 → 120 × 0.9 = 108 → 8 % net. Same answer, slower.
+**Shortcut method:**
+
+<div class="steps">
+
+**Step 1:** a = +20, b = −10
+**Step 2:** Net = 20 + (−10) + (20 × −10)/100
+**Step 3:** Net = 20 − 10 − 2 = **+8%**
+
+</div>
+
+**Traditional (base-100) method:**
+
+<div class="steps">
+
+**Start:** ₹100
+**After +20%:** 100 × 1.20 = ₹120
+**After −10%:** 120 × 0.90 = ₹108
+**Net change:** (108 − 100)/100 × 100 = **+8%**
+
+</div>
+</div>
 
 **Variations:**
-- Three successive: apply pairwise. a, b combined → c. Then c, x combined.
-- Equal-and-opposite: +r % then −r % gives net = −r²/100 (**always a loss**). Classic trap.
-- Discount-on-discount: two successive discounts of 10 % and 20 % are equivalent to a single discount of **28 %**, not 30 %.
+- Equal-and-opposite: +r% then −r% → net = −r²/100 (**always a loss**). Classic exam trap.
+- Discount-on-discount: 10% + 20% successive = single equivalent of 10 + 20 − 2 = **28%**, NOT 30%.
 
-**Self-check:** Price up 30 %, then down 20 %. Net? → 30 − 20 − 6 = **+4 %**.
+**Self-check:** Price +30%, then −20%. Net? → 30 − 20 − 6 = **+4%**.
 
 ---
 
 ## Type 6 — Population / value after n years (compound growth)
 
-**Cue:** "Population 50,000; grows at 10 % annually; population after 3 years?"
+**Cue:** "Population 50,000 grows at 10% annually. Population after 3 years?"
 
-**Insight:** P · (1 + r/100)ⁿ. This IS compound interest — memorise once, apply twice.
+**Formula:** Final = P × (1 + r/100)ⁿ
 
-**Shortcut:** Multiply (1.1)³ = 1.331. So answer = 50,000 × 1.331 = **66,550**.
+<div class="worked">
 
-**Traditional:** Year 1 → 55,000; Year 2 → 60,500; Year 3 → 66,550. Same number, slower.
+**Example.** P = 50,000, r = 10%, n = 3.
+
+**Shortcut:**
+
+<div class="steps">
+
+**Step 1:** (1.1)³ = 1.331
+**Step 2:** Final = 50,000 × 1.331 = **66,550**
+
+</div>
+
+**Year-by-year (Traditional):**
+
+<div class="steps">
+
+**Year 1:** 50,000 × 1.10 = 55,000
+**Year 2:** 55,000 × 1.10 = 60,500
+**Year 3:** 60,500 × 1.10 = **66,550** ✓
+
+</div>
+</div>
 
 **Variations:**
-- **Declining** population: 50,000 × (0.9)³ = 50,000 × 0.729 = 36,450.
-- **Mixed** rates (Year 1: +10 %, Year 2: +5 %, Year 3: −8 %): chain-multiply.
-- **Find the original**: given final, divide instead of multiply. "Population is 66,550 after 3 years at 10 % — original?" → 66,550 / 1.331 = 50,000.
+- **Declining:** 50,000 × (0.9)³ = 50,000 × 0.729 = **36,450**.
+- **Mixed rates:** Year 1 +10%, Year 2 +5%, Year 3 −8% → 50,000 × 1.10 × 1.05 × 0.92 = 52,878.
+- **Find original:** 66,550 after 3 years at 10% → 66,550 / 1.331 = **50,000**.
 
 **Self-check:** ₹8000 at 25 % p.a. CI for 2 years → 8000 × (5/4)² = 8000 × 25/16 = **₹12,500**.
 
@@ -596,131 +634,197 @@ The examiner knows you know the shortcuts. Here is how they defeat them:
 
 ## Type 7 — Forward vs reverse percentage relationship
 
-**Cue:** "If A's salary is 25 % more than B's, by what % is B's salary less than A's?"
+**Cue:** "A's salary is 25% more than B's. By what % is B's salary less than A's?"
 
-**Insight:** Forward r → reverse is **r / (100 + r) × 100 %**. Signs flip: "more" becomes "less".
+**Formula:** If A is r% more than B, then B is $\dfrac{r}{100+r} \times 100\%$ less than A.
 
-**Shortcut:** r = 25 → 25 / 125 × 100 = **20 %** less.
+<div class="worked">
 
-**Traditional:** Let B = 100 → A = 125 → (A − B)/A = 25/125 = 20 %. Same.
+<div class="steps">
 
-**Variations:**
-- "25 % less" → other one is 25/75 × 100 = **33.33 %** more.
-- Remember the pair table: 20 %↔25 %, 25 %↔33.33 %, 10 %↔11.11 %, 50 %↔100 %, 9.09 %↔10 %, 14.28 %↔16.67 %. These sit inside 80 % of exam problems.
+**Base-100 method:**
+Let B = 100 → A = 125
+B is less than A by: $\dfrac{125 - 100}{125} \times 100 = \dfrac{25}{125} \times 100$ = **20%**
 
-**Self-check:** A is 50 % more than B → B is how much less than A? → 50/150 = **33.33 %**.
+**Formula shortcut:** $\dfrac{25}{100 + 25} \times 100 = \dfrac{25}{125} \times 100$ = **20%** (same)
+
+</div>
+
+**Pair table (cache for exam speed):**
+
+| A is r% MORE than B | B is ___% LESS than A |
+|---|---|
+| 20% more | 16.67% less |
+| 25% more | 20% less |
+| 33.33% more | 25% less |
+| 50% more | 33.33% less |
+| 100% more | 50% less |
+
+</div>
 
 ---
 
 ## Type 8 — Income → Expenditure → Savings
 
-**Cue:** "Raj spends 75 % of his income. If income rises 20 % and expenditure rises 10 %, find % change in savings."
+**Cue:** "Raj spends 75% of income. Income +20%, expenditure +10%. % change in savings?"
 
-**Insight:** Savings = Income − Expenditure. Fix Income = 100 (because we only want percentages), let Expense = 75, Savings = 25. Apply changes to both, recompute savings.
+**Method:** Fix income = 100. Compute old and new savings. Find % change.
 
-**Shortcut:** New income = 120. New exp = 75 × 1.1 = 82.5. New savings = 37.5. Change = 37.5 − 25 = 12.5. Percent = 12.5/25 × 100 = **+50 %**.
+<div class="worked">
 
-**Traditional:** Same algebra — no faster long route here.
+<div class="steps">
 
-**Variations:**
-- Given the % change in savings, find the unknown % change in expenditure.
-- "Saved 40 % of income" — base moves to "savings" side.
+**Given:** Income = 100, Expenditure = 75, Savings = 25
+**New income:** 100 × 1.20 = 120
+**New expenditure:** 75 × 1.10 = 82.5
+**New savings:** 120 − 82.5 = 37.5
+**Change in savings:** 37.5 − 25 = 12.5
+**% change:** $\dfrac{12.5}{25} \times 100$ = **+50%**
 
-**Self-check:** Income +10 %, Expense +20 %, Expense was 80 % of income. New savings? → 110 − 96 = 14 vs old 20 → Δ = −6 → **−30 %**.
+</div>
+</div>
+
+**Self-check.** Income +10%, Expense +20%, old expense = 80% of income.
+
+<div class="steps">
+
+**Old:** Income = 100, Expense = 80, Savings = 20
+**New:** Income = 110, Expense = 80 × 1.20 = 96, Savings = 14
+**Change:** $\dfrac{14 - 20}{20} \times 100$ = **−30%**
+
+</div>
 
 ---
 
 ## Type 9 — Pass / fail marks
 
-**Cue:** "Pass mark is 40 %. A scored 220 and failed by 20 marks. Find max marks."
+**Cue:** "Pass mark is 40%. A scored 220 and failed by 20 marks. Find max marks."
 
-**Insight:** Pass mark = A's marks + his deficit. 220 + 20 = 240. And 240 = 40 % of max → max = 240 × 100 / 40 = **600**.
+<div class="worked">
 
-**Shortcut:** 240 → ÷4 × 10 = 600. Mental.
+<div class="steps">
 
-**Traditional:** Same, just written out.
+**Step 1:** Pass mark = Score + Deficit = 220 + 20 = 240
+**Step 2:** Pass mark = 40% of Max → $240 = \dfrac{40}{100} \times M$
+**Step 3:** $M = \dfrac{240 \times 100}{40} = 240 \times 2.5$
+**Answer:** Max marks = **600**
+
+</div>
 
 **Variations:**
-- Two students, one passes, the other fails — two-equation system. Subtract to eliminate max.
-- "Exceeds pass by" vs "short of pass by" — sign matters.
+- Two students, one passes, one fails: set up two equations, subtract to cancel Max.
+- "Exceeds pass mark by x" vs "falls short by x" — sign flips.
 
-**Self-check:** Pass mark = 33 %. Scored 152, failed by 19 → 171 = 33 % of max → max = **~518.18** (actually a good example that not all exams give round answers — watch the exam's intent).
+</div>
 
 ---
 
 ## Type 10 — Elections (valid vs invalid votes)
 
-**Cue:** "In an election 10 % of votes are invalid. Winner got 60 % of valid votes, which was 1800 more than loser. Total votes?"
+**Cue:** "10% votes invalid. Winner got 60% of valid votes, exceeding loser by 1800. Total votes?"
 
-**Insight:** Two stages: total → valid → winner/loser.
+<div class="worked">
 
-**Shortcut:**
-- Valid votes = 90 % of total = 0.9T.
-- Winner − Loser = 60 % − 40 % = 20 % of valid = 0.2 × 0.9T = 0.18T.
-- 0.18T = 1800 → T = **10,000**.
+<div class="steps">
 
-**Traditional:** Same equation, just set up step by step.
+**Step 1:** Let Total votes = T
+**Step 2:** Valid votes = 90% of T = 0.9T (10% invalid)
+**Step 3:** Winner = 60% of valid; Loser = 40% of valid (two candidates → sum = 100%)
+**Step 4:** Difference = (60% − 40%) of valid = 20% × 0.9T = 0.18T
+**Step 5:** 0.18T = 1800 → $T = \dfrac{1800}{0.18}$ = **10,000**
 
-**Variations:**
-- Only two candidates → 60 % and 40 % split, difference = 20 % of valid.
-- Three candidates → different vote shares; sum to 100 % of valid.
+</div>
+</div>
 
 ---
 
 ## Type 11 — Mixture-style percentage (alcohol, salt, milk)
 
-**Cue:** "30 L of a mixture has 20 % alcohol. How much water to add to reduce alcohol to 15 %?"
+**Cue:** "30 L of a mixture has 20% alcohol. How much water to add to reduce alcohol to 15%?"
 
-**Insight:** **Quantity of pure alcohol stays the same** (we only add water). Set up on alcohol.
+**Key principle:** The PURE SOLUTE (alcohol, milk, acid) quantity stays constant when you add solvent.
 
-**Shortcut:**
-- Pure alcohol = 20 % of 30 = 6 L.
-- After adding x L water, total = (30 + x) and alcohol still 6 L.
-- 6 / (30 + x) = 15/100 = 3/20 → 30 + x = 40 → x = **10 L**.
+<div class="worked">
 
-**Traditional:** Same, equation written longer.
+<div class="steps">
 
-**Variations:**
-- Evaporation / remove → removing water CONCENTRATES alcohol %. Same invariant (alcohol qty).
-- Replacing a part of the mixture with water repeatedly → falls under Successive replacement formula: Final pure = Initial · (1 − x/V)ⁿ, where x is removed each time, V is total.
+**Step 1:** Pure alcohol = 20% × 30 = 6 L
+**Step 2:** After adding x L water: total = (30 + x) L; alcohol still = 6 L
+**Step 3:** New concentration = $\dfrac{6}{30 + x} = \dfrac{15}{100}$
+**Step 4:** $6 \times 100 = 15 \times (30 + x)$ → $600 = 450 + 15x$
+**Step 5:** $15x = 150$ → **x = 10 L**
 
-**Self-check:** 40 L of 25 % milk. Water added to make 20 % milk → milk qty 10 L stays → 10/(40+x) = 1/5 → x = **10 L**.
+</div>
+
+**Self-check.** 40 L of 25% milk; add water to make 20% milk.
+
+<div class="steps">
+
+Pure milk = 25% × 40 = 10 L (stays fixed)
+$\dfrac{10}{40 + x} = \dfrac{20}{100}$ → $40 + x = 50$ → **x = 10 L** ✓
+
+</div>
+</div>
 
 ---
 
-## Type 12 — Price ↔ Quantity inverse (consumption) problems
+## Type 12 — Price ↔ Quantity inverse (expenditure unchanged)
 
-**Cue:** "Price of sugar rises 25 %. By what % must consumption drop to keep expenditure unchanged?"
+**Cue:** "Price of sugar rises 25%. By what % must consumption drop to keep expenditure unchanged?"
 
-**Insight:** Expenditure = Price × Quantity. If Expenditure is fixed, Price and Quantity are inversely proportional.
+**Principle:** Expenditure = Price × Quantity = constant. So Price ↑ means Quantity must ↓ proportionally.
 
-**Shortcut:** Reverse-percent trick (Type 7). Price up r → quantity down r/(100+r) × 100. r = 25 → 25/125 = **20 %**.
+<div class="worked">
 
-**Traditional:** Let price 100 → 125. Quantity 100 → 100/1.25 = 80. So 20 % drop. Same number, slower.
+<div class="steps">
 
-**Variations:**
-- Price FALLS r % → consumption can rise by r/(100−r) × 100 %.
-- Two-step: price change followed by budget change.
+**Base 100 method:**
+Old: Price = 100, Quantity = 100, Expenditure = 10,000
+New: Price = 125, Quantity = ?; Expenditure stays at 10,000
+New Quantity = $\dfrac{10000}{125}$ = 80
+Drop in quantity = $\dfrac{100 - 80}{100} \times 100$ = **20%**
 
-**Self-check:** Price up 10 % → consumption must drop by 10/110 = **9.09 %**.
+</div>
+
+**Shortcut:** Price ↑ r% → consumption ↓ by $\dfrac{r}{100+r} \times 100\%$
+→ $\dfrac{25}{125} \times 100$ = **20%** (same answer, faster)
+
+**Self-check.** Price up 10% → consumption must drop by $\dfrac{10}{110} \times 100$ = **9.09%**.
+
+</div>
 
 ---
 
 ## Type 13 — Successive discounts (at shop)
 
-**Cue:** "Listed ₹2000. Two successive discounts of 20 % and 10 %. Selling price?"
+**Cue:** "Listed ₹2000. Two successive discounts of 20% and 10%. Final selling price?"
 
-**Insight:** Successive % changes (Type 5), both negative.
+<div class="worked">
 
-**Shortcut:** −20 −10 + (20·10)/100 = −30 + 2 = **−28 %**. So SP = 72 % of 2000 = **₹1440**.
+**Shortcut (successive % formula):**
 
-**Traditional:** 2000 → 1600 (after 20 % off) → 1440 (after 10 % off). Identical answer.
+<div class="steps">
 
-**Variations:**
-- Single equivalent discount of 20 % and 10 % = 28 % (NOT 30 %).
-- Three discounts: chain pairwise.
+Net discount = $-20 - 10 + \dfrac{(-20)(-10)}{100}$ = $-30 + 2$ = **−28%**
+SP = 72% of 2000 = **₹1440**
 
-**Self-check:** 20 % + 25 % discount → equivalent single? → −20 − 25 + 5 = **−40 %**.
+</div>
+
+**Step-by-step (Traditional):**
+
+<div class="steps">
+
+**After 20% discount:** 2000 − 20% of 2000 = 2000 − 400 = ₹1600
+**After 10% discount:** 1600 − 10% of 1600 = 1600 − 160 = **₹1440** ✓
+
+</div>
+</div>
+
+<div class="pitfall">
+
+**Classic trap:** 20% + 10% = 30% discount is WRONG. Two successive discounts of 20% and 10% give only 28% effective discount. The second discount applies to the already-reduced price, not the original.
+
+</div>
 
 ---
 
@@ -837,21 +941,41 @@ The shortcut saves the whole CP derivation.
 
 ## Type 5 — Marked price, discount, and profit combined
 
-**Cue:** "Marked at 25 % above CP. Discount 10 %. Find profit %."
+**Cue:** "Marked at 25% above CP. Discount 10%. Find profit %."
 
-**Shortcut:** Successive % (Type 5 of percent): +25 then −10. Net = 15 − 2.5 = **+12.5 %** profit.
+<div class="worked">
 
-**Traditional:** CP 100 → MP 125 → SP 125 × 0.9 = 112.5 → profit 12.5.
+<div class="steps">
+
+**Set CP = 100**
+**MP:** 100 + 25% = 125
+**SP (after 10% discount on MP):** 125 × 0.90 = 112.5
+**Profit %:** $\frac{112.5 - 100}{100}$ × 100 = **12.5%**
+
+</div>
+
+**Shortcut:** Net = +25 − 10 + (25 × −10)/100 = 25 − 10 − 2.5 = **+12.5%** (same result, no base-100 needed).
+
+</div>
 
 ---
 
-## Type 6 — Discount % required to clear stock at desired profit
+## Type 6 — Find discount % to achieve a desired profit
 
-**Cue:** "Shopkeeper marks goods 40 % above CP. Wants 12 % profit. Discount %?"
+**Cue:** "Goods marked 40% above CP. Wants 12% profit. Discount %?"
 
-**Shortcut:** MP/CP ratio = 1.4. Desired SP/CP = 1.12. Discount = 1 − (SP/MP) = 1 − 1.12/1.40 = 1 − 0.8 = **20 %**.
+<div class="worked">
 
-**Traditional:** CP 100 → MP 140 → SP 112 → Discount = 28 on 140 = 20 %.
+<div class="steps">
+
+**Set CP = 100**
+**MP:** 100 + 40% = 140
+**Desired SP:** 100 + 12% = 112
+**Discount on MP:** 140 − 112 = 28
+**Discount %:** $\frac{28}{140}$ × 100 = **20%**
+
+</div>
+</div>
 
 ---
 
@@ -880,11 +1004,18 @@ The shortcut saves the whole CP derivation.
 
 ## Type 9 — Cost-price-unknown combined puzzles
 
-**Cue:** "By selling at ₹810, a man loses 10 %. At what price should he sell to gain 10 %?"
+**Cue:** "By selling at ₹810, a man loses 10%. At what price should he sell to gain 10%?"
 
-**Shortcut:** 810 is 90 % of CP → CP = 900 → desired SP = 110 % = **₹990**.
+<div class="worked">
 
-**Traditional:** Step-by-step CP recovery.
+<div class="steps">
+
+**Step 1:** SP = ₹810 represents 90% of CP (because loss = 10%)
+**Step 2:** CP = $\frac{810 \times 100}{90}$ = **₹900**
+**Step 3:** Desired SP at 10% gain = $\frac{900 \times 110}{100}$ = **₹990**
+
+</div>
+</div>
 
 ---
 
@@ -914,106 +1045,186 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 
 \newpage
 
-# 💵 PART 3 — SIMPLE & COMPOUND INTEREST
+# PART 3 — SIMPLE & COMPOUND INTEREST
 
 ## 3.0 Opener
 
-**Why:** Banking exams always carry 1-3 Qs of SI/CI, often combined with % and ratios.
+**Formulas — memorise all 6:**
 
-**Mental-math arsenal:** (1 + r/100)ⁿ values for r = 5, 10, 12.5, 15, 20, 25 at n = 2, 3, 4.
+| Formula | Expression | Notes |
+|---|---|---|
+| Simple Interest | $SI = \dfrac{P \times R \times T}{100}$ | Base formula |
+| Amount (SI) | $A = P\left(1 + \dfrac{RT}{100}\right)$ | — |
+| Compound Interest | $CI = P\left(1 + \dfrac{R}{100}\right)^n - P$ | Any n |
+| CI − SI (2 years) | $P \times \left(\dfrac{R}{100}\right)^2$ | Very common shortcut |
+| Half-yearly | Rate = R/2, n doubles | $A = P\left(1+\dfrac{R}{200}\right)^{2n}$ |
+| Quarterly | Rate = R/4, n × 4 | $A = P\left(1+\dfrac{R}{400}\right)^{4n}$ |
 
-**Memorised formulas:**
-1. SI = PRT/100.
-2. Amount (SI) = P(1 + RT/100).
-3. CI = P·(1 + R/100)ⁿ − P.
-4. **CI − SI for 2 years = P·(R/100)²** (very important shortcut).
-5. **CI − SI for 3 years = P·(R/100)² · (3 + R/100)** (slightly less used).
-6. When compounded half-yearly: rate becomes R/2 %, time 2n periods. Quarterly: R/4 %, 4n.
-7. CI rate ≡ successive % growth → use successive-% formula for 2-3 years.
-
----
-
-## Type 1 — Straight SI
-
-**Cue:** P, R, T given. SI or Amount.
-
-**Shortcut:** PRT/100. Keep everything as a fraction; cancel early.
-
-**Variation:** Find R or T given SI. Same formula, solve for the unknown.
+**CI = successive % growth:** +R% applied n times → use the successive-% formula from Part 1.
 
 ---
 
-## Type 2 — Principal doubling / tripling (SI)
+## Type 1 — Straight SI calculation
 
-**Cue:** "At what rate will a sum double in 8 years (SI)?"
+**Cue:** P, R, T given; find SI.
 
-**Insight:** Doubling means SI = P → PRT/100 = P → RT = 100. So R × 8 = 100 → R = **12.5 %**.
+<div class="worked">
 
-**Shortcut:** For SI, RT = 100 × (multiplier − 1). Tripling → RT = 200.
+**Example.** P = ₹6000, R = 8% p.a., T = 3 years.
 
----
+<div class="steps">
 
-## Type 3 — Compound interest for 2 / 3 years
+**Step 1:** $SI = \dfrac{P \times R \times T}{100} = \dfrac{6000 \times 8 \times 3}{100}$
+**Step 2:** $= \dfrac{144000}{100}$
+**Answer:** **₹1440**
 
-**Cue:** "P = 10,000, R = 10 %, n = 2. CI?"
+</div>
 
-**Shortcut:** Successive % growth: +10 %, +10 % → net +21 %. CI = 21 % of 10,000 = **₹2100**.
+**Reverse (find R):** Given SI = ₹1440, P = 6000, T = 3 → $R = \dfrac{SI \times 100}{P \times T} = \dfrac{1440 \times 100}{18000}$ = **8%**.
 
-**Traditional:** A = 10000 × 1.1² = 12100 → CI = 2100.
-
-**Variation (3 years, 10 %):** successive of +10, +10, +10 → first pair = +21, then with 10 = +33.1. CI = 33.1 % of P.
-
----
-
-## Type 4 — CI − SI difference
-
-**Cue:** "Difference of CI and SI on ₹5000 at 8 % for 2 years."
-
-**Shortcut:** P · (R/100)² = 5000 × (8/100)² = 5000 × 64/10000 = **₹32**.
-
-**Traditional:** Compute SI = 800. CI = 5000 × 1.08² − 5000 = 5832 − 5000 = 832. Difference = 32. Same.
+</div>
 
 ---
 
-## Type 5 — Compound frequency (half-yearly / quarterly)
+## Type 2 — Principal doubling/tripling (SI)
 
-**Cue:** "P = 8000, R = 10 % p.a., compounded half-yearly, for 1 year."
+**Cue:** "At what rate will a sum DOUBLE in 8 years (SI)?"
 
-**Shortcut:** New rate = 5 %, periods = 2. A = 8000 × 1.05² = 8000 × 1.1025 = **₹8820**. CI = 820.
+**Key identity:** For SI, when Amount = k × P → RT = 100(k − 1).
 
-**Variation:** Quarterly at 12 % p.a. for 1 year → rate 3 %, n = 4 → A = P × 1.03⁴ = P × 1.1255.
+<div class="worked">
 
----
+<div class="steps">
 
-## Type 6 — Instalment-style loan repayment
+**Doubling:** Amount = 2P → SI = P → $\dfrac{P \times R \times T}{100} = P$
+**So:** R × T = 100 → R × 8 = 100 → **R = 12.5% p.a.**
 
-**Cue:** "Loan ₹2500 at 4 % p.a. CI, repaid in 2 equal annual instalments. Find instalment."
+**Tripling:** R × T = 200 → R × 8 = 200 → R = **25% p.a.**
 
-**Shortcut:** Each instalment's present value discounts by (1 + R/100)ᵏ.
-- x/(1.04) + x/(1.04)² = 2500.
-- x · [1/1.04 + 1/1.0816] = 2500.
-- x · (1.0816 + 1.04)/(1.04 × 1.0816) = 2500.
-- x = 2500 × 1.04 × 1.0816 / (1.0816 + 1.04) ≈ **₹1325.03**.
-
-**Traditional:** Same algebra.
+</div>
+</div>
 
 ---
 
-## Type 7 — Find rate when CI for 2 years is given
+## Type 3 — Compound Interest for 2 or 3 years
 
-**Cue:** "CI for 2 years on ₹6000 = ₹1260. Rate?"
+**Cue:** "P = ₹10,000, R = 10%, n = 2. Find CI."
 
-**Shortcut:** 1260 = 6000 × ((1 + r)² − 1) where r = R/100. → (1 + r)² = 1.21 → r = 0.1 → **R = 10 %**.
+<div class="worked">
+
+**Shortcut (successive %):**
+
+<div class="steps">
+
+**Step 1:** First year growth: 10% → Amount = 11,000
+**Step 2:** Second year growth: 10% on 11,000 → Amount = 12,100
+**OR:** Net % = 10 + 10 + $\dfrac{10 \times 10}{100}$ = 21%
+**CI = 21% of 10,000 = ₹2100**
+
+</div>
+
+**Formula method:**
+
+<div class="steps">
+
+**Step 1:** $A = 10000 \times (1.10)^2 = 10000 \times 1.21 = 12100$
+**Step 2:** CI = 12100 − 10000 = **₹2100** ✓
+
+</div>
+</div>
 
 ---
 
-## Type 8 — Ratios that recur
+## Type 4 — CI minus SI difference (2-year shortcut)
 
-**Cue:** "A sum becomes ₹4840 in 2 years and ₹5324 in 3 years (CI). Rate and sum."
+**Formula:** $\text{Difference} = P \times \left(\dfrac{R}{100}\right)^2$
 
-**Insight:** In CI, ratio of consecutive amounts is (1 + R/100).
+<div class="worked">
 
-**Shortcut:** 5324 / 4840 = 1.1 → R = 10 %. Then P = 4840 / 1.21 = **₹4000**.
+**Example.** P = ₹5000, R = 8%, 2 years. Find (CI − SI).
+
+<div class="steps">
+
+**Step 1:** $= 5000 \times \left(\dfrac{8}{100}\right)^2 = 5000 \times \dfrac{64}{10000}$
+**Answer:** $= \dfrac{320000}{10000}$ = **₹32**
+
+</div>
+
+**Why this works:** SI uses simple rate each year. CI earns interest on the first year's interest — that extra interest = $P \times (\frac{R}{100})^2$.
+
+</div>
+
+---
+
+## Type 5 — Half-yearly / quarterly compounding
+
+**Cue:** "P = ₹8000, R = 10% p.a., compounded half-yearly, T = 1 year."
+
+<div class="worked">
+
+<div class="steps">
+
+**Step 1:** Half-yearly rate = 10/2 = 5%; Number of periods = 2
+**Step 2:** $A = 8000 \times (1.05)^2 = 8000 \times 1.1025 = 8820$
+**Answer:** CI = 8820 − 8000 = **₹820**
+
+</div>
+</div>
+
+<div class="pitfall">
+
+**Common error:** Using the full annual rate for half-yearly compounding. Always halve the rate and double the periods. A 10% annual rate compounded half-yearly gives MORE than 10% effective annual rate (it gives 10.25%).
+
+</div>
+
+---
+
+## Type 6 — Equal instalment loan repayment (CI)
+
+**Cue:** "Loan ₹2500 at 4% CI, repaid in 2 equal annual instalments x. Find x."
+
+<div class="worked">
+
+<div class="steps">
+
+**Step 1:** Present value of instalment 1 = $\dfrac{x}{1.04}$
+**Step 2:** Present value of instalment 2 = $\dfrac{x}{(1.04)^2} = \dfrac{x}{1.0816}$
+**Step 3:** Sum = 2500 → $\dfrac{x}{1.04} + \dfrac{x}{1.0816} = 2500$
+**Step 4:** $x \left(\dfrac{1.0816 + 1.04}{1.04 \times 1.0816}\right) = 2500$
+**Step 5:** $x = \dfrac{2500 \times 1.04 \times 1.0816}{2.1216} \approx$ **₹1325**
+
+</div>
+</div>
+
+---
+
+## Type 7 — Find rate given CI for 2 years
+
+**Cue:** "CI on ₹6000 for 2 years = ₹1260. Find rate."
+
+<div class="steps">
+
+**Step 1:** $6000 \times \left[(1 + r)^2 - 1\right] = 1260$ where r = R/100
+**Step 2:** $(1 + r)^2 = \dfrac{1260}{6000} + 1 = 0.21 + 1 = 1.21$
+**Step 3:** $1 + r = \sqrt{1.21} = 1.1$
+**Answer:** r = 0.1 → **R = 10%**
+
+</div>
+
+---
+
+## Type 8 — Find rate from ratio of two CI amounts
+
+**Cue:** "A sum becomes ₹4840 in 2 years and ₹5324 in 3 years (CI)."
+
+**Key insight:** In CI, ratio of consecutive year amounts = (1 + R/100).
+
+<div class="steps">
+
+**Step 1:** $\dfrac{A_3}{A_2} = 1 + \dfrac{R}{100}$ → $\dfrac{5324}{4840} = 1.1$ → **R = 10%**
+**Step 2:** $P = \dfrac{4840}{(1.1)^2} = \dfrac{4840}{1.21}$ = **₹4000**
+
+</div>
 
 ---
 
@@ -1023,140 +1234,469 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 
 ## 4.0 Opener
 
-**Memorised:**
-1. a : b = c : d ↔ ad = bc.
-2. a/b = c/d = e/f = (a + c + e)/(b + d + f) — *addendo* rule.
-3. Direct variation: y = kx. Inverse: y = k/x. Joint: y = kxz / w.
-4. Compound ratio: (a:b) × (c:d) = ac : bd.
+**Key formulas — memorise:**
 
-**Attack plan:** convert every word problem into "per unit of ratio" (let ratio constant = k).
+| Formula | What it means |
+|---|---|
+| a : b = c : d  →  ad = bc | Cross-multiplication law |
+| a/b = c/d = e/f = (a+c+e)/(b+d+f) | Addendo rule (all equal ratios share a common value) |
+| Compound ratio: (a:b)×(c:d) = ac:bd | Multiply numerators, multiply denominators |
+| Direct variation: y = kx | More x → more y |
+| Inverse variation: y = k/x | More x → less y |
+
+**Attack plan:** Let the ratio constant = k. Numbers are always 3k, 5k etc. Find k from the constraint, then the actual numbers.
 
 ---
 
-## Type 1 — Split a quantity in ratio a:b:c
+## Type 1 — Split a quantity in given ratio
 
-"Divide ₹2400 in 3:5:4 → parts = 600, 1000, 800."
+**Cue:** "Divide ₹2400 among A, B, C in ratio 3 : 5 : 4."
 
-## Type 2 — Age/quantity ratio change after some years
+**Method:** Total parts = 3 + 5 + 4 = 12. Each part = 2400 ÷ 12 = 200.
 
-"A:B = 3:5 now. After 6 years, 4:6. Find present ages."
+<div class="worked">
 
-Solve algebraically — set 3k and 5k, translate "+6" condition.
+**Example.** Divide ₹2400 in 3 : 5 : 4.
 
-## Type 3 — Mixture ratio change
+<div class="steps">
 
-Detailed under Mixtures (Part 7).
+**Step 1:** Total parts = 3 + 5 + 4 = 12
+**Step 2:** Value of 1 part = 2400 ÷ 12 = ₹200
+**Step 3:** A = 3 × 200 = **₹600**
+**Step 4:** B = 5 × 200 = **₹1000**
+**Step 5:** C = 4 × 200 = **₹800**
+**Check:** 600 + 1000 + 800 = 2400 ✓
 
-## Type 4 — Proportion (fourth proportional, mean, third)
+</div>
+</div>
 
-- Fourth proportional of a, b, c → x = bc/a.
-- Mean proportional of a, c → x = √(ac).
-- Third proportional of a, b → x = b²/a.
+---
 
-## Type 5 — Direct/Inverse variation problems
+## Type 2 — Ratio changes after adding/subtracting years (ages)
 
-"12 men finish a job in 8 days. How long will 16 men take?" → inverse: 12×8 = 16×t → t = 6.
+**Cue:** "A : B = 3 : 5 now. After 6 years, ratio becomes 2 : 3. Find present ages."
 
-## Type 6 — "Two numbers in ratio 3:5, their HCF is 4. Find numbers."
+**Method:** Let present ages = 3k and 5k. Write the future-ratio equation and solve for k.
 
-Numbers = 3k, 5k where k = HCF → 12, 20.
+<div class="worked">
 
-## Type 7 — Partners' investment ratio across different durations
+**Example.** Ratio of A's to B's age = 3 : 5. After 6 years, ratio = 4 : 6 = 2 : 3. Find ages.
 
-"A invests 4000 for 6 months, B invests 5000 for 8 months" → ratio = 4000×6 : 5000×8 = 3:5.
+<div class="steps">
 
-## Type 8 — Alligation-linked ratio (bridge to Part 7)
+**Step 1:** Let present ages: A = 3k, B = 5k
+**Step 2:** After 6 years: (3k + 6) / (5k + 6) = 2/3
+**Step 3:** Cross-multiply: 3(3k + 6) = 2(5k + 6)
+**Step 4:** 9k + 18 = 10k + 12
+**Step 5:** k = 6
+**Answer:** A = 3 × 6 = **18 years**, B = 5 × 6 = **30 years**
+
+</div>
+</div>
+
+<div class="pitfall">
+
+**Common trap:** When the ratio is "after 6 years", you add 6 to BOTH the numerator and denominator separately — do NOT multiply the ratio by some factor.
+
+</div>
+
+---
+
+## Type 3 — Proportion types
+
+**Three sub-types — one table:**
+
+| Sub-type | Formula | Example |
+|---|---|---|
+| Fourth proportional of a, b, c | $x = \dfrac{bc}{a}$ | 3rd prop of 3, 5, 9 → x = 5×9/3 = 15 |
+| Mean proportional of a, b | $x = \sqrt{ab}$ | Mean prop of 4 and 9 → x = √36 = 6 |
+| Third proportional of a, b | $x = \dfrac{b^2}{a}$ | Third prop of 2, 6 → x = 36/2 = 18 |
+
+<div class="keypoint">
+
+**Quick memory:** Fourth prop → three numbers given, find the fourth to keep a:b = c:x. Mean prop → x is the geometric mean. Third prop → x comes after a, b in a:b = b:x pattern.
+
+</div>
+
+---
+
+## Type 4 — Direct / Inverse variation word problems
+
+**Cue:** "12 men complete a job in 8 days. How many days will 16 men take?"
+
+**Method:** More men → less time → INVERSE variation. Product stays constant: men × days = constant.
+
+<div class="worked">
+
+**Example.** 12 men, 8 days → 16 men, ? days.
+
+<div class="steps">
+
+**Step 1:** Identify: more men = less days → inverse variation
+**Step 2:** 12 × 8 = 16 × t
+**Step 3:** t = 96 / 16 = **6 days**
+
+</div>
+
+**Example.** A machine packs 120 boxes in 4 hours. How many hours for 300 boxes?
+
+<div class="steps">
+
+**Step 1:** More boxes → more time → DIRECT variation
+**Step 2:** 120/4 = 300/t → t = 300 × 4 / 120 = **10 hours**
+
+</div>
+</div>
+
+---
+
+## Type 5 — HCF + ratio to find actual numbers
+
+**Cue:** "Two numbers in ratio 3 : 5 and HCF = 4. Find the numbers."
+
+**Insight:** If HCF = k and ratio = a : b, then numbers = ak and bk.
+
+<div class="worked">
+
+**Example.** Ratio 3 : 5, HCF = 4.
+
+<div class="steps">
+
+**Step 1:** Numbers = 3k and 5k where k = HCF
+**Step 2:** k = 4
+**Answer:** Numbers = 3 × 4 = **12** and 5 × 4 = **20**
+**Verify:** HCF(12, 20) = 4 ✓
+
+</div>
+</div>
+
+---
+
+## Type 6 — Investment ratio (bridge to Partnership)
+
+**Cue:** "A invests ₹4000 for 6 months, B invests ₹5000 for 8 months. Profit ratio?"
+
+**Method:** Profit ratio = (Capital × Time) for each.
+
+<div class="steps">
+
+**A's weight:** 4000 × 6 = 24,000
+**B's weight:** 5000 × 8 = 40,000
+**Ratio:** 24,000 : 40,000 = **3 : 5**
+
+</div>
 
 ---
 
 \newpage
 
-# 📊 PART 5 — AVERAGES
+# PART 5 — AVERAGES
 
 ## 5.0 Opener
 
-**Memorised:** Average = Sum / Count. Sum = Average × Count. If one value changes, new sum shifts by the change — new average = old + change/count.
+**Two core identities — everything else follows from these:**
 
-## Type 1 — Plain arithmetic mean.
+| Identity | Use |
+|---|---|
+| Average = Sum ÷ Count | Find average |
+| Sum = Average × Count | Find sum (the KEY step in almost every problem) |
+| New avg = Old avg ± (change ÷ count) | When one value changes |
 
-## Type 2 — New member joins / leaves, average changes.
-"11 students' avg = 60. 12th student joins, avg drops by 1. 12th student's marks?"
-- New sum = 59 × 12 = 708. Old sum = 660. 12th = 48.
+**Attack plan:** Never work with averages directly. Convert to SUMS immediately, then operate on sums.
 
-## Type 3 — Replacement of a member.
-"A class of 10 had avg 75. A student of 50 is replaced by new one; avg rises by 2." → new student − 50 = 2 × 10 = 20 → new student scored **70**.
+---
 
-## Type 4 — Weighted average / mixture of groups.
-Used heavily in DI.
+## Type 1 — New member joins; average changes
 
-## Type 5 — Bowling/batting averages (cricket-style).
-"Batsman avg 30 in 20 innings. Scores 50 in 21st. New avg?"
-- New avg = (30×20 + 50)/21 = 650/21 ≈ 30.95.
+**Cue:** "A group of n members has average A. A new member joins; average becomes A'. Find the new member's value."
 
-## Type 6 — Average speed (harmonic mean trap).
-**Not** the arithmetic mean of two speeds. If two equal distances at speeds u, v → avg speed = 2uv/(u+v). See Part 8.
+**Method:** New sum − old sum = new member's value.
 
-## Type 7 — Consecutive integers.
-Avg of n consecutive integers = middle term (for odd n) or average of two middles (even n).
+<div class="worked">
 
-## Type 8 — Missing value from known average.
+**Example.** 11 students' average = 60. A 12th student joins; average drops by 1 (to 59). Find 12th student's marks.
+
+<div class="steps">
+
+**Step 1:** Old sum = 60 × 11 = 660
+**Step 2:** New sum = 59 × 12 = 708
+**Step 3:** 12th student's marks = 708 − 660 = **48**
+
+</div>
+
+**Shortcut:** Change in average × new count = difference caused by the new member.
+Drop of 1 across 12 students = 12 units total drop. New member caused this by being 12 below the new average of 59: 59 − 12 = **47?** No — shortcut: new member = new average − (drop × new count / 1) — just use sum method, it's faster.
+
+</div>
+
+---
+
+## Type 2 — Replacement of a member
+
+**Cue:** "One person leaves, another joins. Average changes by x. Find the new person's value."
+
+**Method:** Change in average × count = change in sum = (new value − old value).
+
+<div class="worked">
+
+**Example.** Class of 10, average = 75. Student scoring 50 is replaced. Average rises by 2. Find the new student's score.
+
+<div class="steps">
+
+**Step 1:** Rise in average = 2. Count = 10.
+**Step 2:** Rise in sum = 2 × 10 = 20
+**Step 3:** New score − Old score = 20
+**Step 4:** New score = 50 + 20 = **70**
+
+</div>
+</div>
+
+<div class="keypoint">
+
+**Universal rule:** (New value − Old value) = Change in average × Count. Works for joins, leaves, and replacements.
+
+</div>
+
+---
+
+## Type 3 — Weighted average (combining two groups)
+
+**Cue:** "Group 1 of n₁ people has average A₁; Group 2 of n₂ has average A₂. Combined average?"
+
+**Method:** Combined avg = (n₁ × A₁ + n₂ × A₂) / (n₁ + n₂).
+
+<div class="worked">
+
+**Example.** 30 students average 60 marks; 20 students average 75 marks. Overall average?
+
+<div class="steps">
+
+**Step 1:** Group 1 sum = 30 × 60 = 1800
+**Step 2:** Group 2 sum = 20 × 75 = 1500
+**Step 3:** Total sum = 1800 + 1500 = 3300
+**Step 4:** Total count = 30 + 20 = 50
+**Answer:** Average = 3300 / 50 = **66 marks**
+
+</div>
+
+**Alligation check:** Mean 66, A₁ = 60, A₂ = 75. Ratio = (75−66):(66−60) = 9:6 = 3:2. Groups are 30 and 20 = 3:2 ✓.
+
+</div>
+
+---
+
+## Type 4 — Cricket / batting average
+
+**Cue:** "Batsman averaged 30 in 20 innings. Scores 50 in 21st. New average?"
+
+<div class="worked">
+
+<div class="steps">
+
+**Step 1:** Old sum = 30 × 20 = 600
+**Step 2:** New sum = 600 + 50 = 650
+**Step 3:** New average = 650 / 21 = **30.95** (≈ 31)
+
+</div>
+
+**Variation:** "He scores 0 in the 21st innings." → New avg = 600/21 = **28.57**. Averages fall when you score below your average; rise when you score above.
+
+</div>
+
+---
+
+## Type 5 — Consecutive integers average
+
+**Rule:** Average of n consecutive integers = (First + Last) / 2 = middle term.
+
+| Set | Average |
+|---|---|
+| 1, 2, 3, 4, 5 | 3 (middle of 5) |
+| 10, 11, 12, 13 | 11.5 (avg of 11 and 12) |
+| 21 to 50 | (21 + 50)/2 = 35.5 |
+
+**Example.** Average of all integers from 15 to 35?
+- (15 + 35)/2 = **25**. Count = 21 numbers.
+
+---
+
+## Type 6 — Missing value from known average
+
+**Cue:** "Average of 5 numbers is 40. Four are 32, 38, 45, 50. Find the fifth."
+
+<div class="steps">
+
+**Step 1:** Total sum = 40 × 5 = 200
+**Step 2:** Sum of four known = 32 + 38 + 45 + 50 = 165
+**Step 3:** Fifth = 200 − 165 = **35**
+
+</div>
 
 ---
 
 \newpage
 
-# ⏱️ PART 6 — TIME & WORK, PIPES & CISTERNS
+# PART 6 — TIME & WORK, PIPES & CISTERNS
 
 ## 6.0 Opener
 
-**Memorised:**
-1. Work = Rate × Time. Rate is "fraction of job per unit time".
-2. If A alone = a days, rate = 1/a per day.
-3. Combined rate = sum of individual rates.
-4. For pipes: inflow rates positive, outflow negative.
+**The LCM method — use it every time:**
+- Set total work = LCM of all given time values.
+- Each person's rate = total work ÷ their solo time = an integer.
+- Add/subtract rates, then divide total work by combined rate.
 
-**Attack plan:** use LCM as total "units of work". Avoid fractions until the last step.
+**Why LCM?** It kills fractions. 1/12 + 1/18 becomes 3 + 2 = 5 (integers). Faster, fewer errors.
 
-## Type 1 — A alone a days, B alone b days → A+B together.
+---
 
-"A: 12 days, B: 18 days. Together?" → LCM 36 units; A 3/day, B 2/day; together 5/day → 36/5 = **7.2 days**.
+## Type 1 — Two people working together
 
-## Type 2 — Three persons, one joins/leaves midway.
+**Cue:** "A finishes in a days, B in b days. Together?"
 
-"A and B together 12 days. After 4 days, B leaves; A finishes in another 10 days. A alone?"
-- Work done by A+B in 4 days = 4/12 = 1/3.
-- Remaining 2/3 done by A alone in 10 days → A alone = 15 days.
+<div class="worked">
 
-## Type 3 — Efficiency ratio given.
+**Example.** A alone: 12 days. B alone: 18 days. Together?
 
-"A is twice as efficient as B. Together in 10 days. A alone?"
-- Rates A:B = 2:1 → sum 3. Together 10 days → total work = 30 units. A alone = 30/2 = 15 days.
+<div class="steps">
 
-## Type 4 — Men-days / women-days work.
+**Step 1:** Total work = LCM(12, 18) = 36 units
+**Step 2:** A's rate = 36 ÷ 12 = 3 units/day
+**Step 3:** B's rate = 36 ÷ 18 = 2 units/day
+**Step 4:** Combined rate = 3 + 2 = 5 units/day
+**Answer:** Time = 36 ÷ 5 = **7.2 days**
 
-"15 men build in 20 days. How many men for 10 days?" → 15×20 = n×10 → n = 30.
+</div>
 
-## Type 5 — Mixed workforce.
+**Formula shortcut:** ab/(a+b) = 12×18/(12+18) = 216/30 = 7.2. Same answer. Use LCM method when a third person joins.
 
-"3 men or 5 women build in 20 days. 2 men + 3 women in ?"
-- M:W rates = 1/3 : 1/5 (job per day per person), normalised.
-- Build the per-day team rate, then days.
+</div>
 
-## Type 6 — Pipes filling with outflow (leak).
+---
 
-"Pipe A fills in 10 h, leak empties in 15 h. With leak, time to fill?"
-- Rates: +1/10 − 1/15 = 1/30 → 30 hours.
+## Type 2 — B leaves midway; find A's solo time
 
-## Type 7 — Alternate / shift work.
+**Cue:** "A and B together take 12 days. After 4 days B leaves; A finishes in 10 more days."
 
-"A works 1st day, B 2nd day alternately. A alone 8 d, B alone 12 d. Total?"
-- Per 2 days, work done = 1/8 + 1/12 = 5/24.
-- After 4 such pairs (8 days), work = 20/24. Remaining 4/24 = 1/6.
-- Day 9 is A's, A does 1/8 in a day, needs 8×(1/6)/(1/8) — careful! (1/6)/(1/8) = 8/6 = 4/3 days > 1 → use day 9 (A) fully → 1/8 more; still left 4/24 − 3/24 = 1/24. Day 10 is B's → 1/12 per day = 2/24. Takes half a day. Total = **9.5 days**.
+<div class="worked">
 
-## Type 8 — Wages split when A and B worked together.
+<div class="steps">
 
-Wages ∝ work done ∝ (1/time). If together for 12 days and A alone 20 d, B alone 30 d, split 1800 wages →A:B = 30:20 = 3:2 → 1080:720.
+**Step 1:** Let total work = LCM approach; use fraction for this type.
+**Step 2:** Work done in first 4 days (A+B together) = 4/12 = 1/3
+**Step 3:** Remaining work = 1 − 1/3 = 2/3
+**Step 4:** A alone does 2/3 of work in 10 days
+**Step 5:** A alone does full work in 10 ÷ (2/3) = 10 × 3/2 = **15 days**
+
+</div>
+</div>
+
+---
+
+## Type 3 — Efficiency ratio given
+
+**Cue:** "A is twice as efficient as B. Together they finish in 10 days. How long for A alone?"
+
+<div class="worked">
+
+<div class="steps">
+
+**Step 1:** Efficiency ratio A : B = 2 : 1
+**Step 2:** Set total work = 30 units (choose LCM-friendly number)
+**Step 3:** Together: (2 + 1) = 3 units/day; total time = 30/3 = 10 days ✓ (confirms our setup)
+**Step 4:** A alone: 30 ÷ 2 = **15 days**
+
+</div>
+</div>
+
+---
+
+## Type 4 — Men × Days = constant (manpower scaling)
+
+**Cue:** "15 men finish in 20 days. How many men for 10 days?"
+
+**Rule:** Men × Days = constant (for the same total work).
+
+<div class="steps">
+
+**Step 1:** Total man-days = 15 × 20 = 300
+**Step 2:** n × 10 = 300
+**Answer:** n = **30 men**
+
+</div>
+
+**Extension:** 15 men, 20 days, 8 hours/day. How many men to finish in 12 days, 10 hours/day?
+Man × Day × Hour = 15×20×8 = 2400. New: n × 12 × 10 = 2400 → n = **20 men**.
+
+---
+
+## Type 5 — Mixed workforce (men vs women)
+
+**Cue:** "3 men OR 5 women can finish in 20 days. 2 men + 3 women finish in?"
+
+<div class="worked">
+
+<div class="steps">
+
+**Step 1:** 3 men = 5 women (same output) → 1 man = 5/3 women
+**Step 2:** 2 men + 3 women = 2 × (5/3) + 3 = 10/3 + 3 = 19/3 women
+**Step 3:** 5 women → 20 days; 19/3 women → 20 × 5 ÷ (19/3) = 20 × 15/19 = **300/19 ≈ 15.8 days**
+
+</div>
+</div>
+
+---
+
+## Type 6 — Pipes and leaks
+
+**Cue:** "Pipe A fills tank in 10 hours. A leak empties it in 15 hours. With both, how long to fill?"
+
+**Rule:** Fill rate = positive; leak rate = negative. Net rate = sum.
+
+<div class="steps">
+
+**Step 1:** Total capacity = LCM(10, 15) = 30 units
+**Step 2:** A fills: 30/10 = 3 units/hour
+**Step 3:** Leak empties: 30/15 = 2 units/hour
+**Step 4:** Net rate = 3 − 2 = 1 unit/hour
+**Answer:** Time = 30/1 = **30 hours**
+
+</div>
+
+---
+
+## Type 7 — Alternate day work
+
+**Cue:** "A works on Day 1, B on Day 2, alternating. A alone 8 days, B alone 12 days."
+
+<div class="worked">
+
+<div class="steps">
+
+**Step 1:** Total work = LCM(8, 12) = 24 units
+**Step 2:** A's rate = 24/8 = 3 units/day; B's rate = 24/12 = 2 units/day
+**Step 3:** Every 2-day cycle: 3 + 2 = 5 units completed
+**Step 4:** After 4 cycles (8 days): 4 × 5 = 20 units done; remaining = 24 − 20 = 4 units
+**Step 5:** Day 9 is A's turn: A does 3 units → remaining = 4 − 3 = 1 unit
+**Step 6:** Day 10 is B's turn: B needs 1 unit at 2 units/day → takes 1/2 day
+**Answer:** Total = 9 + 0.5 = **9.5 days**
+
+</div>
+</div>
+
+---
+
+## Type 8 — Wages split proportional to work done
+
+**Cue:** "A alone: 20 days, B alone: 30 days. Both work together; split ₹1800."
+
+<div class="steps">
+
+**Step 1:** Total work = LCM(20, 30) = 60 units
+**Step 2:** A's rate = 3 units/day; B's rate = 2 units/day
+**Step 3:** Ratio of work = 3 : 2
+**Step 4:** A's share = (3/5) × 1800 = **₹1080**; B's share = (2/5) × 1800 = **₹720**
+
+</div>
 
 ---
 
@@ -1166,87 +1706,292 @@ Wages ∝ work done ∝ (1/time). If together for 12 days and A alone 20 d, B al
 
 ## 7.0 Opener
 
-**Memorised (alligation rule):**
-For mixing two substances of cost / concentration C1 and C2 to get mean M:
+**The Alligation Cross — the only tool you need:**
 
 ```
-            (M − C2)
-Ratio of C1 : C2  =  ────────
-            (C1 − M)
+   Value A (lower)          Value B (higher)
+         \                       /
+          \    (B − Mean)        /
+           \          :         /
+            \  (Mean − A)      /
+               Mean value
 ```
 
-(Cheaper is on the C1 slot if C1 < C2; the differences are ALWAYS taken as positive.)
+**Ratio A : B = (B − Mean) : (Mean − A)**
 
-## Type 1 — Two-component price mixing.
-"Rice @ ₹30/kg and ₹45/kg mixed to sell at ₹36/kg. Ratio?"
-- (45 − 36) : (36 − 30) = 9 : 6 = **3 : 2**.
+All differences are taken as positive. Works for price, concentration, percentage, speed, or any "average-of-two" scenario.
 
-## Type 2 — Milk–water composition.
-"Vessel has 40 L milk. Replace 10 L with water. Do it twice. Final milk %?"
-- Each time milk becomes 30/40 = 3/4 of before. After 2 times: (3/4)² = 9/16 of pure milk. Final milk qty = 40 × 9/16 = 22.5 L → **56.25 %**.
-- Formula: Final pure = Initial · (1 − x/V)ⁿ.
+---
 
-## Type 3 — Mixing three substances.
-Apply alligation pairwise twice.
+## Type 1 — Two components mixed to achieve a target price
 
-## Type 4 — Gain % via mixing (link to P&L).
-"CP 20/kg mixed with water (free) to sell at 25/kg." → Profit % based on CP of actual content.
+**Cue:** "Grains at ₹30/kg and ₹45/kg mixed to sell at ₹36/kg. What ratio?"
 
-## Type 5 — Fraction of pure liquid after repeated replacement.
+<div class="worked">
 
-## Type 6 — "How much water to add" / evaporate.
+<div class="steps">
 
-Already in Part 1 Type 11.
+**Step 1:** A = 30, B = 45, Mean = 36
+**Step 2:** (B − Mean) = 45 − 36 = 9  →  quantity of A
+**Step 3:** (Mean − A) = 36 − 30 = 6  →  quantity of B
+**Answer:** Ratio A : B = 9 : 6 = **3 : 2**
+
+</div>
+
+*Interpretation: For every 3 kg of the cheaper grain, mix 2 kg of the costlier grain.*
+
+</div>
+
+---
+
+## Type 2 — Concentration mixing (milk, alcohol, acid)
+
+**Cue:** "Solution X has 20% alcohol, solution Y has 50% alcohol. Mix to get 30% alcohol. Ratio X : Y?"
+
+<div class="worked">
+
+<div class="steps">
+
+**Step 1:** A = 20%, B = 50%, Mean = 30%
+**Step 2:** (B − Mean) = 50 − 30 = 20  →  quantity of A
+**Step 3:** (Mean − A) = 30 − 20 = 10  →  quantity of B
+**Answer:** Ratio X : Y = 20 : 10 = **2 : 1**
+
+</div>
+</div>
+
+---
+
+## Type 3 — Repeated replacement (milk-water problem)
+
+**Cue:** "Vessel has 40 L pure milk. Remove 10 L, add 10 L water. Repeat twice. Final milk?"
+
+**Formula:** Final pure = Initial × (1 − x/V)ⁿ
+
+where x = quantity replaced each time, V = total volume, n = number of replacements.
+
+<div class="worked">
+
+<div class="steps">
+
+**Step 1:** x = 10 L, V = 40 L, n = 2
+**Step 2:** Fraction of milk remaining per step = (40 − 10)/40 = 30/40 = 3/4
+**Step 3:** After 2 replacements: milk fraction = (3/4)² = 9/16
+**Step 4:** Final milk = 40 × 9/16 = 22.5 L
+**Answer:** Milk % = 22.5/40 × 100 = **56.25%**
+
+</div>
+</div>
+
+<div class="pitfall">
+
+**Common mistake:** Students compute (1 − 10/40)² = (3/4)² but then forget to multiply by the original volume. The formula gives the *fraction* remaining; multiply by initial volume to get litres.
+
+</div>
+
+---
+
+## Type 4 — Profit via adulteration (mixing free component)
+
+**Cue:** "Grocer buys wheat at ₹20/kg, mixes pebbles (cost ₹0) and sells mixture at ₹20/kg. Find profit %."
+
+<div class="worked">
+
+**Example.** Mixes 1 kg pebbles with 4 kg wheat; sells at ₹20/kg.
+
+<div class="steps">
+
+**Step 1:** CP = cost of 4 kg wheat = 4 × 20 = ₹80 (pebbles are free)
+**Step 2:** SP = 5 kg × ₹20 = ₹100
+**Step 3:** Profit = 100 − 80 = ₹20
+**Answer:** Profit % = 20/80 × 100 = **25%**
+
+</div>
+
+**Alligation shortcut:** Ratio wheat:pebbles = 4:1. Mean price = ₹20 = cost of wheat → "gain" = 20/16 = ... use the direct approach above; it's faster.
+
+</div>
+
+---
+
+## Type 5 — "How much water to add / remove" to achieve target concentration
+
+**Cue:** "30 L of 40% alcohol solution. Add water to make it 25%. How much water?"
+
+<div class="worked">
+
+<div class="steps">
+
+**Step 1:** Pure alcohol = 40% × 30 = 12 L (stays constant — we only add water)
+**Step 2:** Let water added = x L
+**Step 3:** New concentration: 12 / (30 + x) = 25/100 = 1/4
+**Step 4:** 30 + x = 12 × 4 = 48
+**Answer:** x = **18 L of water to add**
+
+</div>
+
+**Key insight:** The pure alcohol (or whatever the solute is) does NOT change when you add solvent. Set up the equation on the solute.
+
+</div>
 
 ---
 
 \newpage
 
-# 🚉 PART 8 — TIME, SPEED, DISTANCE (TSD)
+# PART 8 — TIME, SPEED, DISTANCE (TSD)
 
 ## 8.0 Opener
 
-**Memorised:**
-1. D = S × T. Units alert: km/h ↔ m/s conversion: **× 5/18** (km/h→m/s), **× 18/5** (m/s→km/h).
-2. Avg speed for equal DISTANCES at u, v → **2uv/(u + v)** (harmonic mean).
-3. Avg speed for equal TIMES at u, v → (u + v)/2 (arithmetic mean).
-4. Relative speed: same direction → |u − v|; opposite direction → u + v.
-5. Train passing: length of train / relative speed = time.
+**Core formulas — memorise these cold:**
 
-## Type 1 — Direct D=ST lookups.
+| Formula | Notes |
+|---|---|
+| D = S × T | The master equation |
+| km/h → m/s: multiply by 5/18 | 72 km/h = 72 × 5/18 = 20 m/s |
+| m/s → km/h: multiply by 18/5 | 15 m/s = 15 × 18/5 = 54 km/h |
+| Avg speed (equal distances): 2uv/(u+v) | Harmonic mean — NOT (u+v)/2 |
+| Avg speed (equal times): (u+v)/2 | Arithmetic mean |
+| Relative speed (opposite): u + v | Approaching each other |
+| Relative speed (same direction): \|u − v\| | Chasing |
 
-## Type 2 — Avg speed (equal distance).
-"Goes at 40 km/h, returns at 60 km/h. Avg speed?" → 2·40·60/(100) = **48 km/h**. *Not* 50.
+---
 
-## Type 3 — Relative speed (same/opposite direction).
-"Two trains 100 km apart approach each other at 40 and 60 km/h. Time to meet?" → 100/100 = 1 h.
+## Type 1 — Average speed (equal distance, different speeds)
 
-## Type 4 — Train passing a man / pole / platform / another train.
-- Passing a man/pole: length / speed.
-- Passing a platform: (length_train + length_platform) / speed.
-- Passing another train (same direction): (L1 + L2) / |u − v|.
+**Cue:** "A goes from X to Y at 40 km/h and returns at 60 km/h. Average speed?"
 
-## Type 5 — Boats and streams.
-- Downstream speed = boat + stream. Upstream = boat − stream.
-- If u = downstream, v = upstream → boat = (u + v)/2, stream = (u − v)/2.
+<div class="worked">
 
-## Type 6 — Circular track problems.
-- First meet at starting point: LCM of individual laps.
-- First meet anywhere: track / |relative speed|.
+<div class="steps">
 
-## Type 7 — Variable speed / broken journey.
-"Walks at 4 km/h — 15 min late. Walks at 5 km/h — 15 min early. Distance?"
-- Let distance = d. d/4 − d/5 = 30 min = 0.5 h → d/20 = 0.5 → d = **10 km**.
+**Step 1:** Equal distances → use $\dfrac{2uv}{u+v}$
+**Step 2:** $= \dfrac{2 \times 40 \times 60}{40 + 60} = \dfrac{4800}{100}$
+**Answer:** = **48 km/h** (not 50 — always less than arithmetic mean)
 
-## Type 8 — Race / head-start.
-"A beats B by 100 m in a 500 m race." → in the same TIME, A runs 500, B runs 400. Ratio of speeds = 5:4.
+</div>
+</div>
 
-## Type 9 — Escalator problems.
-"Man takes 50 steps down a moving up escalator; 125 steps up a moving up escalator (stationary escalator) when escalator is moving up." Treat escalator as a stream; steps visible = escalator + man (or − for opposing).
+<div class="pitfall">
 
-## Type 10 — Clock problems (minute vs hour hand angle).
-- Minute hand 6°/min; hour hand 0.5°/min; relative 5.5°/min.
-- Overlap every 65 5/11 minutes.
+**Classic exam trap:** "Average speed = (40 + 60)/2 = 50 km/h" is WRONG whenever the distances are equal. The correct formula is the harmonic mean. The arithmetic mean applies only when TIME is equal on both legs.
+
+</div>
+
+---
+
+## Type 2 — Trains passing (the "effective length" method)
+
+**Rules:**
+
+| Scenario | Distance covered | Time |
+|---|---|---|
+| Train passes a pole or man | Length of train | L / S |
+| Train passes a platform | L(train) + L(platform) | Sum / S |
+| Two trains cross (opposite) | L₁ + L₂ | Sum / (S₁ + S₂) |
+| Two trains cross (same direction) | L₁ + L₂ | Sum / \|S₁ − S₂\| |
+
+<div class="worked">
+
+**Example.** A 150 m train passes a 250 m platform in 20 seconds. Find the train's speed.
+
+<div class="steps">
+
+**Step 1:** Distance = train + platform = 150 + 250 = 400 m
+**Step 2:** Time = 20 s
+**Step 3:** Speed = 400/20 = 20 m/s
+**Answer:** = 20 × 18/5 = **72 km/h**
+
+</div>
+</div>
+
+---
+
+## Type 3 — Boats and streams
+
+**Key identities:**
+
+<div class="keypoint">
+
+- Downstream speed (D) = Boat speed + Stream speed = b + s
+- Upstream speed (U) = Boat speed − Stream speed = b − s
+- Boat speed = (D + U) / 2
+- Stream speed = (D − U) / 2
+
+</div>
+
+<div class="worked">
+
+**Example.** Downstream: 18 km in 2 hours. Upstream: 12 km in 3 hours. Find boat speed and stream speed.
+
+<div class="steps">
+
+**Step 1:** Downstream speed = 18/2 = 9 km/h
+**Step 2:** Upstream speed = 12/3 = 4 km/h
+**Step 3:** Boat speed = (9 + 4)/2 = **6.5 km/h**
+**Step 4:** Stream speed = (9 − 4)/2 = **2.5 km/h**
+
+</div>
+</div>
+
+---
+
+## Type 4 — Variable speed; arrive late/early
+
+**Cue:** "At 4 km/h: 15 min late. At 5 km/h: 15 min early. Find the distance."
+
+<div class="worked">
+
+<div class="steps">
+
+**Step 1:** Let distance = d km
+**Step 2:** Time at 4 km/h − time at 5 km/h = total time difference = 15 + 15 = 30 min = 0.5 h
+**Step 3:** d/4 − d/5 = 0.5
+**Step 4:** (5d − 4d)/20 = 0.5  →  d/20 = 0.5
+**Answer:** d = **10 km**
+
+</div>
+</div>
+
+---
+
+## Type 5 — Races and head-starts
+
+**Cue:** "In a 500 m race, A beats B by 100 m." = In the time A runs 500 m, B runs only 400 m.
+
+<div class="steps">
+
+**Speed ratio A : B = 500 : 400 = 5 : 4**
+
+</div>
+
+**Variation — head-start:** "A gives B a 50 m head-start in a 500 m race. A wins by 2 s. Find A's speed." → B runs 450 m in same time A runs 500 m, or use the time difference.
+
+---
+
+## Type 6 — Clock angle problems
+
+**Formulas:**
+
+| Quantity | Rate |
+|---|---|
+| Minute hand | 6° per minute |
+| Hour hand | 0.5° per minute |
+| Relative speed | 5.5° per minute |
+
+**Angle between hands at H hours M minutes:** |30H − 5.5M|°
+
+<div class="worked">
+
+**Example.** Angle between clock hands at 3:20?
+
+<div class="steps">
+
+**Step 1:** H = 3, M = 20
+**Step 2:** Angle = |30 × 3 − 5.5 × 20| = |90 − 110| = 20°
+**Answer:** **20°**
+
+</div>
+</div>
 
 ---
 
@@ -1256,22 +2001,68 @@ Already in Part 1 Type 11.
 
 ## 9.0 Opener
 
-Profit share ∝ (Capital × Time).
+**Master rule:** Profit share ∝ (Capital × Time invested). Compute a weighted "investment-months" for each partner; split profit in that ratio.
 
-## Type 1 — Equal time, different capital.
-Ratio of profit = ratio of capital.
+---
 
-## Type 2 — Different times (someone joins late / leaves early).
-Weight each capital by the months it stayed.
+## Type 1 — Equal time, different capital
 
-## Type 3 — Capital changed midway.
-Break into sub-periods, sum C·T for each.
+**Example.** A invests ₹5000, B invests ₹8000. Both for 1 year. Profit = ₹6500. Find each share.
 
-## Type 4 — Working vs sleeping partner.
-Working partner gets a flat salary first; remainder split by capital × time.
+<div class="steps">
 
-## Type 5 — Loss sharing.
-Same formula — negatives. A fixed-interest partner earns even in loss years (per contract).
+**Step 1:** Ratio = 5000 : 8000 = 5 : 8
+**Step 2:** Total parts = 5 + 8 = 13
+**Step 3:** A's share = (5/13) × 6500 = **₹2500**
+**Step 4:** B's share = (8/13) × 6500 = **₹4000**
+
+</div>
+
+---
+
+## Type 2 — Different durations (B joins late)
+
+**Example.** A invests ₹6000 from January. B invests ₹9000 from April. Profit at year-end = ₹7500. Find shares.
+
+<div class="steps">
+
+**Step 1:** A's investment period = 12 months; B's = 12 − 3 = 9 months
+**Step 2:** A's weight = 6000 × 12 = 72,000
+**Step 3:** B's weight = 9000 × 9 = 81,000
+**Step 4:** Ratio = 72,000 : 81,000 = 8 : 9
+**Step 5:** A's share = $\dfrac{8}{17} \times 7500$ = **₹3529**; B's = $\dfrac{9}{17} \times 7500$ = **₹3971**
+
+</div>
+
+---
+
+## Type 3 — Capital changed midway
+
+**Example.** A invests ₹4000 for 6 months, then adds ₹2000 more for next 6 months.
+
+<div class="steps">
+
+**Step 1:** Period 1: 4000 × 6 = 24,000
+**Step 2:** Period 2: 6000 × 6 = 36,000
+**Step 3:** A's effective investment = 24,000 + 36,000 = 60,000 investment-months
+
+</div>
+
+---
+
+## Type 4 — Working partner gets salary first
+
+**Example.** A (working) and B (sleeping) invest ₹5000 each. A gets ₹500/month salary. Annual profit = ₹8400. Find A's total.
+
+<div class="steps">
+
+**Step 1:** A's annual salary = 500 × 12 = ₹6000
+**Step 2:** Remaining profit = 8400 − 6000 = ₹2400
+**Step 3:** Capital ratio = 5000 : 5000 = 1 : 1
+**Step 4:** A's share from remaining = ₹1200; B's share = ₹1200
+**Answer:** A's total = 6000 + 1200 = **₹7200**; B gets **₹1200**
+
+</div>
 
 ---
 
@@ -1279,20 +2070,81 @@ Same formula — negatives. A fixed-interest partner earns even in loss years (p
 
 # PART 10 — AGES
 
-Most age problems reduce to linear equations.
+**Attack plan for every age problem:**
+1. Let present ages = variables (one unknown usually, two if both unknown).
+2. Write the given ratio/sum as an equation.
+3. Write the future/past condition as a second equation.
+4. Solve. Age can NEVER be negative — check your answer.
 
-## Type 1 — "Present age ratio" + "future/past age ratio" → solve simultaneously.
+---
 
-## Type 2 — Sum/Difference of ages.
+## Type 1 — Ratio now + ratio later (two-equation system)
 
-## Type 3 — Average age of a group; one member replaced.
-*Same as Part 5 Type 3.*
+**Cue:** "Ratio of A's age to B's age = 3 : 5. After 8 years, ratio = 5 : 7. Find present ages."
 
-## Type 4 — Parents-children age problems.
-"Father is 3× son's age. 10 years hence, 2×."
+<div class="worked">
 
-## Type 5 — Multi-sibling + parent problems.
-Combine averages + differences.
+<div class="steps">
+
+**Step 1:** Let present ages: A = 3k, B = 5k
+**Step 2:** After 8 years: (3k + 8)/(5k + 8) = 5/7
+**Step 3:** Cross-multiply: 7(3k + 8) = 5(5k + 8)
+**Step 4:** 21k + 56 = 25k + 40
+**Step 5:** 4k = 16  →  k = 4
+**Answer:** A = 3 × 4 = **12 years**, B = 5 × 4 = **20 years**
+
+</div>
+</div>
+
+---
+
+## Type 2 — Sum and difference of ages
+
+**Example.** The sum of father's and son's ages = 50. Father is 4× the son's age. Find their ages.
+
+<div class="steps">
+
+**Step 1:** Let son = x, father = 4x
+**Step 2:** x + 4x = 50  →  5x = 50  →  x = 10
+**Answer:** Son = **10 years**, Father = **40 years**
+
+</div>
+
+---
+
+## Type 3 — Father-son, n years ago / hence
+
+**Example.** Father is 3× son's age now. 10 years later, father is 2× son's age.
+
+<div class="steps">
+
+**Step 1:** Let son's present age = s; father's = 3s
+**Step 2:** After 10 years: 3s + 10 = 2(s + 10)
+**Step 3:** 3s + 10 = 2s + 20
+**Step 4:** s = 10
+**Answer:** Son = **10 years**, Father = **30 years**
+
+</div>
+
+---
+
+## Type 4 — Average age of group changes
+
+**Example.** Average age of 4 people = 24. A new person joins; average becomes 22. Find new person's age.
+
+<div class="steps">
+
+**Step 1:** Old sum = 24 × 4 = 96
+**Step 2:** New sum = 22 × 5 = 110
+**Step 3:** New person's age = 110 − 96 = **14 years**
+
+</div>
+
+<div class="pitfall">
+
+**Watch:** Average DROPPED when the new person joined. That means the new person is YOUNGER than the current average. Check your answer: 14 < 22 (new avg) ✓.
+
+</div>
 
 ---
 
