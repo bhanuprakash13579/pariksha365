@@ -1353,8 +1353,8 @@ Find code for: "black cat".
 ## Section 3 — BLOOD RELATIONS (5 worked + variations)
 
 > **Notation expansion:**
-> Drawing a family tree on rough paper saves 80 % of errors. Use **M** for male, **F** for female; **−** for spouse; **|** for parent-child link.
-> Generation count: parent → child = 1 step down; sibling = same generation; grandparent → grandchild = 2 steps down.
+> - Draw a family tree on rough paper before solving. Use **M** for male, **F** for female; **−** for spouse link; **|** for parent-child link.
+> - Generation count: parent → child = 1 step down; siblings = same generation; grandparent → grandchild = 2 steps down.
 
 ---
 
@@ -1493,9 +1493,9 @@ Find code for: "black cat".
 ## Section 4 — DIRECTION SENSE (5 worked + variations)
 
 > **Notation expansion (used throughout):**
-> 8-direction compass: N, NE, E, SE, S, SW, W, NW (each 45° apart). Always draw a cross (N up, E right) on rough paper before plotting.
-> **Net displacement** = vector sum of all moves; final distance from start = √[(net N-S)² + (net E-W)²].
-> **Shadow rule:** at sunrise (sun in east), shadows point west. At sunset (sun in west), shadows point east. At noon, no shadow (sun overhead) — equator only; in India shadows point N or S based on season.
+> - 8-direction compass: N, NE, E, SE, S, SW, W, NW (each 45° apart). Draw a cross on rough paper before every problem.
+> - **Net displacement** = vector sum of all moves; final distance = √[(net N-S)² + (net E-W)²]
+> - **Shadow rule:** at sunrise (sun in east) shadows point west; at sunset (sun in west) shadows point east.
 
 ---
 
@@ -1528,9 +1528,21 @@ Find code for: "black cat".
 - Turn LEFT from North → now facing West. Walk 10 km W → position (0, 5).
 - Distance from origin = √(0² + 5²) = **5 km** (due north of start).
 
-**Worth knowing:** "Left turn" rules.
-- Facing N → left = W; Facing E → left = N; Facing S → left = E; Facing W → left = S.
-- "Right turn" rules: Facing N → right = E; Facing E → right = S; Facing S → right = W; Facing W → right = N.
+**Worth knowing:** Turn rules — commit to memory.
+
+Left turns (rotate 90° anticlockwise):
+
+- Facing N → now facing **W**
+- Facing E → now facing **N**
+- Facing S → now facing **E**
+- Facing W → now facing **S**
+
+Right turns (rotate 90° clockwise):
+
+- Facing N → now facing **E**
+- Facing E → now facing **S**
+- Facing S → now facing **W**
+- Facing W → now facing **N**
 
 ***Watch out:*** "25 km" — students sum all distances (10 + 5 + 10).
 
@@ -2094,13 +2106,34 @@ Conclusions: (I) All pens being erasers is a possibility. (II) Some erasers are 
 **Q41.** Input: 5 9 3 7 11. Step 1: 5 9 3 7 121. Step 2: 5 9 3 49 121. Find the next steps.
 
 **Solving it.** Step-by-step.
-- Step 1: position 5 (which was 11) → 121 = 11². Other positions unchanged.
-- Step 2: position 4 (which was 7) → 49 = 7². Position 5 stays at 121.
-- **Rule:** In each step, square the rightmost-not-yet-squared number.
-- Step 3: position 3 (3) → 9. Step 3 result: 5 9 9 49 121.
-- Step 4: position 2 (9) → 81. Step 4 result: 5 81 9 49 121.
-- Step 5: position 1 (5) → 25. Step 5 result: 25 81 9 49 121.
-- After step 5, all positions squared.
+
+**Rule:** In each step, square the rightmost number not yet squared (working right to left).
+
+<div class="steps">
+
+**Step 1** — Position 5 (was 11): 11² = 121.
+
+Result: 5 9 3 7 **121**
+
+**Step 2** — Position 4 (was 7): 7² = 49.
+
+Result: 5 9 3 **49** 121
+
+**Step 3** — Position 3 (was 3): 3² = 9.
+
+Result: 5 9 **9** 49 121
+
+**Step 4** — Position 2 (was 9): 9² = 81.
+
+Result: 5 **81** 9 49 121
+
+**Step 5** — Position 1 (was 5): 5² = 25.
+
+Result: **25** 81 9 49 121
+
+All five positions are now squared.
+
+</div>
 
 ---
 
@@ -2206,9 +2239,14 @@ Statement II: Area = 30 cm².
 ## Section 11 — NON-VERBAL (3 worked + variations)
 
 > **Notation expansion (used throughout):**
-> **Mirror image (vertical axis)** = reflection across a vertical line; left-right swap. Reverse the order of letters AND mirror each letter glyph.
-> **Water image (horizontal axis)** = reflection across a horizontal line; top-bottom swap.
-> **Painted cube (n × n × n cut into 1 cm³ small cubes):** Corners = 8 (3 faces painted); Edges = 12(n−2) (2 faces painted); Face-centres = 6(n−2)² (1 face painted); Interior = (n−2)³ (0 faces painted).
+> - **Mirror image (vertical axis)** = reflection across a vertical line; left-right swap.
+>   - Reverse the order of letters, then mirror each letter glyph.
+> - **Water image (horizontal axis)** = reflection across a horizontal line; top-bottom swap.
+> - **Painted cube** (n × n × n cut into 1 cm³ small cubes):
+>   - Corners = 8 pieces (3 faces painted)
+>   - Edges = 12(n − 2) pieces (2 faces painted)
+>   - Face-centres = 6(n − 2)² pieces (1 face painted)
+>   - Interior = (n − 2)³ pieces (0 faces painted)
 
 ---
 

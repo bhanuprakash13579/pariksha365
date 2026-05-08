@@ -164,9 +164,17 @@ When you see a new question, your pencil should be **still** for 3 seconds while
 
 **Unit digit cycles (memorise this):**
 - Ends in 0, 1, 5, 6 → unit digit is always that same digit regardless of power.
-- Ends in 4 → cycle: 4, 6, 4, 6 … (even power → 6; odd power → 4).
-- Ends in 9 → cycle: 9, 1, 9, 1 … (odd power → 9; even power → 1).
-- Ends in 2, 3, 7, 8 → cycle of length 4 (2→2,4,8,6; 3→3,9,7,1; 7→7,9,3,1; 8→8,4,2,6).
+- Ends in 4 → cycle: 4, 6, 4, 6 …
+  - Even power → last digit = **6**
+  - Odd power → last digit = **4**
+- Ends in 9 → cycle: 9, 1, 9, 1 …
+  - Odd power → last digit = **9**
+  - Even power → last digit = **1**
+- Ends in 2, 3, 7, 8 → cycle of length 4:
+  - 2 → cycles 2, 4, 8, 6
+  - 3 → cycles 3, 9, 7, 1
+  - 7 → cycles 7, 9, 3, 1
+  - 8 → cycles 8, 4, 2, 6
 
 </div>
 
@@ -184,9 +192,11 @@ When you see a new question, your pencil should be **still** for 3 seconds while
 **What it is:** The answer to many geometry problems must be divisible by specific numbers because of the formula structure. You can eliminate options before computing.
 
 **When to use:**
-- **Formula involves π = 22/7:** The answer will contain 22 in the numerator → divisible by both **2 and 11**. If options include only one number divisible by 11 and it also passes the magnitude check, it is almost certainly the answer.
+- **Formula involves π = 22/7:** The answer will contain 22 in the numerator → divisible by both **2 and 11**.
+  - If only one option is divisible by 11 and it passes the magnitude check, that option is almost certainly correct.
 - **Formula involves 3 in denominator** (cone, pyramid): answer divisible by specific factors after cancellation.
-- **Formula involves √3**: answer is irrational. If options are all integers except one (which has √3), that one is correct.
+- **Formula involves √3:** Answer is irrational.
+  - If all options are integers except one that contains √3, that one is correct.
 
 <div class="keypoint">
 
@@ -413,10 +423,10 @@ When a question has four options with *different* unit digits, and your computat
 <div class="steps">
 
 **Example.** Find the value of 123 × 47.
-Options: (a) 5,741  (b) 5,781  (c) 5,841  (d) 5,921
+Options: (a) 5,733  (b) 5,781  (c) 5,846  (d) 5,922
 
 **Unit digit check:** 3 × 7 = 21 → unit digit = **1**.
-Only option (a) ends in 1 → **answer is (a) 5,741** without any further computation.
+Only option (b) ends in 1 → **answer is (b) 5,781** without any further computation.
 
 </div>
 
@@ -541,10 +551,10 @@ The examiner knows you know the shortcuts. Here is how they defeat them:
 
 **Insight:** Decompose x into multiples of 10, 5, 1.
 
-**Shortcut:**
-- 23 % of 850 = 20 % + 3 %.
-- 20 % of 850 = 170. 1 % of 850 = 8.5. 3 % = 25.5. Total = 195.5.
-- Took < 10 sec mentally.
+**Shortcut:** Break 23 % into parts.
+- 20 % of 850 = **170**
+- 1 % of 850 = 8.5; so 3 % = 3 × 8.5 = **25.5**
+- Total = 170 + 25.5 = **195.5** (done in < 10 seconds mentally)
 
 **Traditional:** 23/100 × 850 = 19,550/100 = 195.5.
 
@@ -646,7 +656,8 @@ The examiner knows you know the shortcuts. Here is how they defeat them:
 - Equal-and-opposite: +r% then −r% → net = $-\dfrac{r^2}{100}$ (**always a loss**). Classic trap.
 - Discount-on-discount: 10% + 20% successive = 10 + 20 − 2 = **28%**, NOT 30%.
 
-**Self-check:** Price +30%, then −20%. Net? → 30 − 20 − 6 = **+4%**. Verify: 100 → 130 → 104. ✓
+**Self-check:** Price +30%, then −20%. Net change = 30 − 20 − (30 × 20)/100 = 30 − 20 − 6 = **+4%**.
+- Verify with numbers: 100 → ×1.30 → 130 → ×0.80 → **104**. Net gain = 4%. ✓
 
 ---
 
@@ -1206,10 +1217,17 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 
 <div class="steps">
 
-**Doubling:** Amount = 2P → SI = P → $\dfrac{P \times R \times T}{100} = P$
-**So:** R × T = 100 → R × 8 = 100 → **R = 12.5% p.a.**
+**Doubling (Amount = 2P):**
 
-**Tripling:** R × T = 200 → R × 8 = 200 → R = **25% p.a.**
+- SI = P (the interest earned equals the principal)
+- $\dfrac{P \times R \times T}{100} = P$
+- Cancel P: R × T = 100
+- With T = 8: R = 100 / 8 = **12.5% p.a.**
+
+**Tripling (Amount = 3P):**
+
+- SI = 2P → R × T = 200
+- With T = 8: R = 200 / 8 = **25% p.a.**
 
 </div>
 </div>
@@ -1370,9 +1388,13 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 
 <div class="steps">
 
-**Step 1:** $\dfrac{A_3}{A_2} = 1 + \dfrac{R}{100}$ → $\dfrac{5324}{4840} = 1.1$ → **R = 10%**
+**Step 1:** Set up the ratio: $\dfrac{A_3}{A_2} = 1 + \dfrac{R}{100}$
 
-**Step 2:** $P = \dfrac{4840}{(1.1)^2} = \dfrac{4840}{1.21}$ = **₹4000**
+**Step 2:** Substitute values: $\dfrac{5324}{4840} = 1.1$
+
+So **R = 10%**
+
+**Step 3:** Find principal: $P = \dfrac{4840}{(1.1)^2} = \dfrac{4840}{1.21}$ = **₹4000**
 
 </div>
 
@@ -1592,8 +1614,9 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 
 </div>
 
-**Shortcut:** Change in average × new count = difference caused by the new member.
-Drop of 1 across 12 students = 12 units total drop. New member caused this by being 12 below the new average of 59: 59 − 12 = **47?** No — shortcut: new member = new average − (drop × new count / 1) — just use sum method, it's faster.
+**Shortcut:** New member's score = Old average − (change in average × new count).
+- Drop = 1; New count = 12
+- Score = 60 − (1 × 12) = 60 − 12 = **48** ✓
 
 </div>
 
@@ -1835,7 +1858,9 @@ $\dfrac{ab}{a+b} = \dfrac{12 \times 18}{12 + 18} = \dfrac{216}{30}$ = **7.2 days
 </div>
 
 **Extension:** 15 men, 20 days, 8 hours/day. How many men to finish in 12 days, 10 hours/day?
-Man × Day × Hour = 15×20×8 = 2400. New: n × 12 × 10 = 2400 → n = **20 men**.
+- Total man-day-hours = 15 × 20 × 8 = **2,400**
+- New scenario: n × 12 × 10 = 2,400
+- n = 2,400 ÷ 120 = **20 men**
 
 ---
 
@@ -1851,7 +1876,9 @@ Man × Day × Hour = 15×20×8 = 2400. New: n × 12 × 10 = 2400 → n = **20 me
 
 **Step 2:** 2 men + 3 women = 2 × (5/3) + 3 = 10/3 + 3 = 19/3 women
 
-**Step 3:** 5 women → 20 days; 19/3 women → 20 × 5 ÷ (19/3) = 20 × 15/19 = **300/19 ≈ 15.8 days**
+**Step 3:** 5 women take 20 days → total work = 5 × 20 = 100 woman-days
+
+**Step 4:** Rate of 19/3 women → time = 100 ÷ (19/3) = 100 × 3/19 = **300/19 ≈ 15.8 days**
 
 </div>
 </div>
@@ -2318,7 +2345,9 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 
 **Step 4:** Ratio = 72,000 : 81,000 = 8 : 9
 
-**Step 5:** A's share = $\dfrac{8}{17} \times 7500$ = **₹3529**; B's = $\dfrac{9}{17} \times 7500$ = **₹3971**
+**Step 5:** A's share = $\dfrac{8}{17} \times 7500$ = **₹3529**
+
+**Step 6:** B's share = $\dfrac{9}{17} \times 7500$ = **₹3971**
 
 </div>
 
@@ -2405,7 +2434,9 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 
 **Step 1:** Let son = x, father = 4x
 
-**Step 2:** x + 4x = 50  →  5x = 50  →  x = 10
+**Step 2:** x + 4x = 50  →  5x = 50
+
+**Step 3:** x = 10
 
 **Answer:** Son = **10 years**, Father = **40 years**
 
@@ -2488,8 +2519,17 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 **Method B — Euclid's algorithm:** Divide larger by smaller, replace with remainder; repeat until remainder = 0; last non-zero divisor = HCF.
 
 **Example.** HCF of 48 and 36.
-- 48 = 2⁴ × 3; 36 = 2² × 3². Common: 2² and 3¹. HCF = 4 × 3 = **12**.
-- Euclid: 48 = 1 × 36 + 12; 36 = 3 × 12 + 0 → HCF = **12** ✓.
+
+*Method A — Prime factorisation:*
+- 48 = 2⁴ × 3
+- 36 = 2² × 3²
+- Common factors at lowest powers: 2² and 3¹
+- HCF = 4 × 3 = **12**
+
+*Method B — Euclid's algorithm:*
+- 48 ÷ 36 = 1 remainder **12**
+- 36 ÷ 12 = 3 remainder **0**
+- Last non-zero remainder = HCF = **12** ✓
 
 **Self-check.** HCF of 84 and 126. → 84 = 2² × 3 × 7; 126 = 2 × 3² × 7. Common: 2¹ × 3¹ × 7¹ = **42**.
 
@@ -2537,8 +2577,10 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 | 25 | Last 2 digits are 00, 25, 50, or 75 |
 
 **Example.** Is 1,729 divisible by 7?
-- Last digit = 9; double = 18. Remaining = 172. 172 − 18 = 154.
-- Repeat: last digit = 4; double = 8. 15 − 8 = 7. Divisible by 7 → **YES**.
+- Last digit = 9; double it = 18
+- Remaining number = 172; subtract: 172 − 18 = **154**
+- Repeat: last digit = 4; double = 8; remaining = 15; subtract: 15 − 8 = **7**
+- 7 is divisible by 7 → **YES**
 
 ## Type 5 — Remainders
 
@@ -2550,8 +2592,11 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 **Cyclicity-based remainders:** Find the pattern of r^n mod m.
 
 **Example.** Remainder when 2^100 is divided by 7.
-- 2¹ mod 7 = 2; 2² = 4; 2³ = 8 → 1; cycle length = 3 (2, 4, 1).
-- 100 mod 3 = 1 → take 1st element = **2**.
+- 2¹ mod 7 = 2
+- 2² mod 7 = 4
+- 2³ mod 7 = 8 mod 7 = 1 → cycle restarts
+- Cycle: {2, 4, 1}, length = 3
+- 100 mod 3 = 1 → take 1st element of cycle = **2**
 
 ## Type 6 — Unit digit / last digit of x^n
 
@@ -2683,9 +2728,31 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 
 **Volume:** Add volumes. **Surface area:** Add CSA only (not base of cone + flat circle of hemisphere when they share a face).
 
-**Example.** A toy is a cone (r = 3.5 cm, h = 4 cm) on a hemisphere (r = 3.5 cm). Volume = (1/3)πr²h + (2/3)πr³ = π × 12.25 × (4/3 + 7/3) = π × 12.25 × 11/3. Use π = 22/7: = 22/7 × 12.25 × 11/3 = **141.17 cm³** (approx). Total surface area = πrl (cone, l = slant) + 2πr² (hemisphere) — the flat circle is interior.
+**Example.** A toy is a cone (r = 3.5 cm, h = 4 cm) placed on top of a hemisphere (same r = 3.5 cm).
 
-*Slant height l = √(r² + h²) = √(12.25 + 16) = √28.25 ≈ 5.315 cm.*
+<div class="steps">
+
+**Step 1 — Find slant height of cone.**
+
+l = √(r² + h²) = √(3.5² + 4²) = √(12.25 + 16) = √28.25 ≈ **5.315 cm**
+
+**Step 2 — Volume of cone.**
+
+V₁ = (1/3) × π × r² × h = (1/3) × (22/7) × 12.25 × 4 = **51.33 cm³**
+
+**Step 3 — Volume of hemisphere.**
+
+V₂ = (2/3) × π × r³ = (2/3) × (22/7) × 3.5³ = (2/3) × (22/7) × 42.875 = **89.83 cm³**
+
+**Step 4 — Total volume.**
+
+V = V₁ + V₂ = 51.33 + 89.83 = **141.16 cm³**
+
+**Step 5 — Total surface area** (CSA of cone + curved surface of hemisphere; shared flat circle is interior).
+
+TSA = πrl + 2πr² = (22/7) × 3.5 × 5.315 + 2 × (22/7) × 3.5² ≈ 58.47 + 77 = **135.47 cm²**
+
+</div>
 
 ## Type 6 — Similar figures (ratio of sides → ratio of areas/volumes)
 
@@ -2702,7 +2769,10 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 - CSA = πl(R + r)
 - TSA = πl(R + r) + π(R² + r²)
 
-**Example.** Bucket: R = 21 cm, r = 14 cm, h = 24 cm. Slant l = √(576 + 49) = √625 = 25 cm. CSA = π × 25 × 35 = 22/7 × 875 = **2,750 cm²**.
+**Example.** Bucket: R = 21 cm, r = 14 cm, h = 24 cm.
+- Slant height: l = √[h² + (R − r)²] = √(576 + 49) = √625 = **25 cm**
+- R + r = 21 + 14 = **35 cm**
+- CSA = π × l × (R + r) = (22/7) × 25 × 35 = 22 × 25 × 5 = **2,750 cm²**
 
 ## Type 8 — Rolling / rotation (wheel, cylinder rolling)
 
@@ -2741,8 +2811,9 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 - Triangle inequality: each side < sum of other two sides.
 
 **Example.** In △ABC, ∠A = 65°, ∠B = 55°. Find the exterior angle at C.
-- ∠C = 180 − 65 − 55 = 60°. Exterior angle at C = 180 − 60 = 120°.
-- Or directly: exterior = ∠A + ∠B = 65 + 55 = **120°** ✓ (use this shortcut).
+- ∠C = 180° − 65° − 55° = **60°**
+- Exterior angle at C = 180° − 60° = **120°**
+- **Shortcut:** Exterior angle = sum of the two non-adjacent interior angles = 65° + 55° = **120°** ✓
 
 ## Type 2 — Similarity & congruence
 
@@ -2753,15 +2824,19 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 - Areas in ratio k²:1.
 
 **Example.** △ABC ~ △PQR. AB = 6 cm, PQ = 9 cm. Area of △ABC = 24 cm². Area of △PQR?
-- Ratio of sides = 6:9 = 2:3. Ratio of areas = 4:9.
-- 24/area(PQR) = 4/9 → area(PQR) = **54 cm²**.
+- Ratio of sides = 6 : 9 = **2 : 3**
+- Ratio of areas = 2² : 3² = **4 : 9**
+- 24 / area(PQR) = 4/9
+- area(PQR) = 24 × 9/4 = **54 cm²**
 
 ## Type 3 — Basic proportionality theorem (Thales) + Midpoint
 
 **BPT (Thales):** A line parallel to one side of a triangle divides the other two sides in equal ratios.
 
 **Example.** In △ABC, DE ∥ BC. AD = 4 cm, DB = 6 cm. AE = 5 cm. Find EC.
-- AD/DB = AE/EC → 4/6 = 5/EC → EC = 5 × 6/4 = **7.5 cm**.
+- By BPT: AD/DB = AE/EC
+- Substitute: 4/6 = 5/EC
+- Cross-multiply: EC = 5 × 6/4 = **7.5 cm**
 
 ## Type 4 — Pythagorean theorem + Pythagorean triples
 
@@ -2810,7 +2885,8 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 **Rules:**
 - Tangent to a circle is perpendicular to the radius at the point of tangency.
 - Two tangents drawn from an external point are equal in length.
-- If PT and PS are tangents from P to circle centre O, then PT = PS; also ∠TPO = ∠SPO (tangent bisects the external angle).
+- If PT and PS are tangents from P to circle centre O, then PT = PS.
+- ∠TPO = ∠SPO (the external point lies on the angle bisector of the two radii).
 
 **Example.** From an external point P, two tangents PA and PB touch a circle at A and B. PA = 8 cm. What is PB? → PB = **8 cm** (tangents from external point are equal).
 
@@ -2831,7 +2907,8 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 **Regular polygon:** Each interior angle = (n−2)×180°/n. Each exterior angle = 360°/n.
 
 **Example.** How many sides does a regular polygon have if each interior angle = 150°?
-- Exterior = 180 − 150 = 30°. Number of sides = 360/30 = **12**.
+- Each exterior angle = 180° − 150° = **30°**
+- Number of sides = 360° ÷ 30° = **12**
 
 ## Type 10 — Coordinate geometry
 
@@ -2861,8 +2938,10 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 | 60° | √3/2 | 1/2 | √3 |
 | 90° | 1 | 0 | ∞ |
 
-- sin²θ + cos²θ = 1; 1 + tan²θ = sec²θ; 1 + cot²θ = cosec²θ.
-- Complementary: sin(90° − θ) = cos θ, etc.
+- sin²θ + cos²θ = 1
+- 1 + tan²θ = sec²θ
+- 1 + cot²θ = cosec²θ
+- Complementary: sin(90° − θ) = cos θ, and similarly for all ratios.
 
 ## Type 1 — Standard-angle substitution
 
@@ -2888,11 +2967,15 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 **Method:** Draw the right triangle. Label the known angle (angle of elevation from ground, or depression from height). Use tan for opposite/adjacent.
 
 **Example.** A tower is observed at an angle of elevation of 60° from a point 20 m away (on the ground). Find the height of the tower.
-- tan 60° = height / 20 → height = 20 × √3 = **20√3 ≈ 34.64 m**.
+- tan 60° = height / 20
+- √3 = height / 20
+- height = 20 × √3 = **20√3 ≈ 34.64 m**
 
 **Example.** From the top of a cliff 30 m high, the angle of depression of a boat is 30°. Find the horizontal distance of the boat from the cliff base.
-- angle of depression = angle from horizontal downward = 30°.
-- tan 30° = 30 / distance → distance = 30 / (1/√3) = 30√3 = **51.96 m**.
+- Angle of depression = 30° (measured from the horizontal downward)
+- tan 30° = 30 / distance
+- 1/√3 = 30 / distance
+- distance = 30 × √3 = **30√3 ≈ 51.96 m**
 
 ***Watch out:*** "Angle of depression" is measured FROM the horizontal DOWNWARD. The angle inside the right triangle (from the horizontal to the line of sight) equals the angle of elevation seen from the boat.
 
@@ -3173,11 +3256,14 @@ Banks DI types reorder:
 - sin²θ + cos²θ = 1
 - 1 + tan²θ = sec²θ
 - 1 + cot²θ = cosec²θ
-- sin(90 − θ) = cos θ ; cos(90 − θ) = sin θ ; tan(90 − θ) = cot θ
+- sin(90 − θ) = cos θ
+- cos(90 − θ) = sin θ
+- tan(90 − θ) = cot θ
 - sin(A + B) = sin A cos B + cos A sin B
 - cos(A + B) = cos A cos B − sin A sin B
 - tan(A + B) = (tan A + tan B) / (1 − tan A · tan B)
-- sin 2θ = 2 sin θ cos θ ; cos 2θ = cos²θ − sin²θ = 1 − 2 sin²θ = 2 cos²θ − 1
+- sin 2θ = 2 sin θ cos θ
+- cos 2θ = cos²θ − sin²θ = 1 − 2 sin²θ = 2 cos²θ − 1
 - standard angles: sin 0 = 0, sin 30 = ½, sin 45 = 1/√2, sin 60 = √3/2, sin 90 = 1
 - height & distance: tan(angle of elevation) = opposite/adjacent
 
@@ -3280,9 +3366,15 @@ Total ≈ 50 min for 25 questions, leaving 10 min buffer.
 
 **What kind of problem is this?** Same base-shift formula as Q1. "Price up by r % → consumption must drop by r/(100+r) × 100 % for expenditure to stay constant."
 
-**Solving it.** Why the formula works (derivation in 1 line).** Expenditure = Price × Quantity. If Price becomes 1.25P, then new Quantity must satisfy 1.25P × Q' = P × Q ⇒ Q' = Q × 1/1.25 = Q × 0.80 ⇒ a 20 % drop.
+**Solving it.** Why the formula works.
 
-**Quick way:** Apply.** r = 25 → 25 / 125 × 100 = **20 %**.
+- Expenditure = Price × Quantity (constant)
+- If Price becomes 1.25P, new Quantity Q' must satisfy: 1.25P × Q' = P × Q
+- Divide both sides by 1.25P: Q' = Q / 1.25 = Q × 0.80
+- So Quantity must drop by 20 %.
+
+**Quick way:** Apply the formula directly.
+- r = 25 → drop % = 25 / (100 + 25) × 100 = 25 / 125 × 100 = **20 %**
 
 *Watch out:* "25 %" — students assume "if price up by r %, cut consumption by r %". That UNDER-shoots — would result in 1.25 × 0.75 = 0.9375 × original expenditure (still down 6.25 %).
 
@@ -3301,9 +3393,16 @@ Total ≈ 50 min for 25 questions, leaving 10 min buffer.
 - Here a = +20, b = −20.
 - Net = +20 + (−20) + (20 × −20)/100 = 0 + (−400/100) = **−4 %**
 
-**Quick way:** Verify with concrete number.** Take 100 → +20 % → 120 → −20 % → 96. Final 96, original 100, net change = **−4 %** ✓.
+**Quick way:** Verify with a concrete number.
+- Start with 100.
+- After +20 %: 100 × 1.20 = **120**
+- After −20 %: 120 × 0.80 = **96**
+- Net change: (96 − 100)/100 × 100 = **−4 %** ✓
 
-**Worth knowing:** Memorise the universal pattern.** Whenever you do "+r % then −r %" (any equal r), net is ALWAYS a loss = **(r/10)²**. For r = 20: (20/10)² = 4 % loss. For r = 30: 9 % loss. For r = 10: 1 % loss.
+**Worth knowing:** Universal pattern: "+r % then −r %" always results in a loss of **(r/10)²**.
+- r = 20 → loss = (20/10)² = **4 %**
+- r = 30 → loss = (30/10)² = **9 %**
+- r = 10 → loss = (10/10)² = **1 %**
 
 *Watch out:* "0 %" — students assume +20 % and −20 % cancel. They DO NOT, because the second 20 % is taken on a larger base (120, not 100).
 
@@ -3585,9 +3684,11 @@ Watch out: "−4 %" or "−10 %" — students forget the markup direction.
 ## Section 3 — SIMPLE INTEREST (SI) & COMPOUND INTEREST (CI) — 5 worked + variations
 
 > **Notation expansion (used throughout this section):**
-> **SI** = Simple Interest. **CI** = Compound Interest. **P** = Principal (original amount).
-> **R** or **r** = annual rate of interest in percent. **T** or **n** = time in years.
-> **A** = Amount = Principal + Interest.
+> - **SI** = Simple Interest; **CI** = Compound Interest
+> - **P** = Principal (original amount)
+> - **R** or **r** = annual rate of interest in percent
+> - **T** or **n** = time in years
+> - **A** = Amount = Principal + Interest
 
 ---
 
@@ -3632,7 +3733,11 @@ Watch out: "−4 %" or "−10 %" — students forget the markup direction.
 
 **A similar question — 3-year version.** CI − SI for 3 yrs at r % = P × r² (300 + r) / 100³. If diff = ₹76, r = 10, find P. → 76 = P × 100 × 310 / 10⁶ = P × 0.031 → P = 76 / 0.031 = **₹2,451.61** (or ~₹2,452).
 
-**Another twist — Find r.** P = ₹10,000, 2-year diff = ₹100. → 100 = 10,000 × (r/100)² → (r/100)² = 0.01 → r = **10 %**.
+**Another twist — Find r.** P = ₹10,000, 2-year diff = ₹100.
+
+- Substitute into formula: 100 = 10,000 × (r/100)²
+- Simplify: (r/100)² = 100/10,000 = 0.01
+- Take square root: r/100 = 0.1 → r = **10 %**
 
 ---
 
@@ -3641,10 +3746,14 @@ Watch out: "−4 %" or "−10 %" — students forget the markup direction.
 **What kind of problem is this?** SI doubling/tripling problems. Use the principle that for SI, "Interest = P × R × T / 100" and "doubles" means SI = P; "triples" means SI = 2P.
 
 **Solving it.** Find the rate from the doubling condition.
-- Doubles in 5 years → SI = P → P × R × 5 / 100 = P → R = **20 % p.a.**
+- Doubles in 5 years → SI = P
+- Substitute into SI formula: P × R × 5 / 100 = P
+- Cancel P both sides: R × 5 / 100 = 1 → R = **20 % p.a.**
 
-**Quick way:** Apply same rate to triple.
-- Triples → SI = 2P → P × 20 × T / 100 = 2P → T = **10 years**.
+**Apply same rate to triple.**
+- Triples → SI = 2P
+- Substitute: P × 20 × T / 100 = 2P
+- Cancel P both sides: 20T / 100 = 2 → T = **10 years**
 
 **Worth knowing:** Memorise the universal rule.** At simple interest, if a sum becomes n times in T years, then it becomes m times in **T × (m − 1) / (n − 1)** years (same rate).
 - Verify: doubles in 5 (n=2), tripling (m=3): T × (3−1)/(2−1) = 5 × 2 = 10 ✓.
@@ -3653,7 +3762,15 @@ Watch out: "−4 %" or "−10 %" — students forget the markup direction.
 
 **A similar question:** Doubles in 8 years. When will it become 4 times? Use rule: 8 × (4−1)/(2−1) = 8 × 3 = **24 years**.
 
-**Another twist — Compound interest version.** If money doubles at CI in 5 years, when does it triple? Use **(1 + r/100)ⁿ = m**. Doubling: (1.r)⁵ = 2 → log(1.r) = log(2)/5. Tripling: (1.r)ᵗ = 3 → t = log(3)/log(1.r) = log(3) × 5/log(2) = 5 × 1.585 = **7.92 years**. Note: ratio is log(m)/log(n) for CI, NOT (m-1)/(n-1) like SI.
+**Another twist — Compound interest version.** If money doubles at CI in 5 years, when does it triple?
+
+Use the CI growth equation: **(1 + r/100)ⁿ = m**
+
+- Doubling: (1 + r/100)⁵ = 2 → log(1 + r/100) = log(2)/5
+- Tripling: (1 + r/100)ᵗ = 3 → t = log(3)/log(1 + r/100)
+- Substitute: t = log(3) × 5/log(2) = 5 × 1.585 = **7.92 years**
+
+**Key contrast:** For CI the multiplier is log(m)/log(n), NOT (m − 1)/(n − 1) as in SI.
 
 ---
 
@@ -3742,10 +3859,7 @@ Watch out: "−4 %" or "−10 %" — students forget the markup direction.
 - **Step 4:** Solve:
   x = 2,210 / 1.7355 ≈ **₹1,273**
 
-**Quick way (memorise the 2-instalment shortcut).** For loan L at rate r %, 2 equal annual instalments: each = L × r × (1+r)² / [(1+r)² + (1+r)] = L × r × (1+r) / (2+r) where r in decimal.
-- Here L = 2,210, r = 0.10: each = 2210 × 0.10 × 1.10 / 2.10 = 243.10 / 2.10 = **₹115.76**? Doesn't match.
-
-(Note: instalment problems require careful PV setup; quick shortcuts are tricky. Always use the PV-equation method.)
+*Note: Instalment problems have no reliable one-liner shortcut. Always use the PV-equation method shown above.*
 
 ---
 
@@ -3846,7 +3960,13 @@ Watch out: "−4 %" or "−10 %" — students forget the markup direction.
 
 **A similar question:** 6 men finish in 8 days. 1 man = 4 women. How long for 12 women? 6 men × 8 days = 48 man-days. 12 women = 3 men → 48/3 = **16 days**.
 
-**Another twist — Mixed crew.** A work takes 8 men 10 days, OR 16 women 10 days. So 1 man = 2 women. How long will 4 men + 4 women take? 4 men + 4 women = 4×2 + 4 = 12 woman-units. Total work = 16 women × 10 = 160 woman-days. Time = 160/12 ≈ **13.33 days**.
+**Another twist — Mixed crew.** A work takes 8 men 10 days, OR 16 women 10 days. How long for 4 men + 4 women?
+
+- Equivalence: 8 men = 16 women → 1 man = 2 women
+- Convert 4 men to women-units: 4 × 2 = 8 woman-units
+- Total crew in woman-units: 8 + 4 = **12 woman-units**
+- Total work = 16 women × 10 days = 160 woman-days
+- Time = 160 ÷ 12 ≈ **13.33 days**
 
 ---
 
@@ -3916,8 +4036,26 @@ x = 10
 **Q20.5 (Advanced) — Continued ratio with 4 terms.** A : B = 2 : 3, B : C = 4 : 5, C : D = 6 : 7. Find A : B : C : D.
 
 **Solving it.** Stitch ratios pairwise.
-- A : B : C: align B (LCM of 3 and 4 = 12). A : B becomes 8 : 12; B : C becomes 12 : 15. So A : B : C = **8 : 12 : 15**.
-- Now extend with C : D = 6 : 7. Align C (LCM of 15 and 6 = 30). A : B : C becomes 16 : 24 : 30; C : D becomes 30 : 35. So A : B : C : D = **16 : 24 : 30 : 35**.
+
+<div class="steps">
+
+**Step 1 — Find A : B : C by aligning B.**
+
+LCM(3, 4) = 12.
+
+- A : B = 2 : 3 → multiply both by 4 → **8 : 12**
+- B : C = 4 : 5 → multiply both by 3 → **12 : 15**
+- Combined: A : B : C = **8 : 12 : 15**
+
+**Step 2 — Extend to A : B : C : D by aligning C.**
+
+LCM(15, 6) = 30.
+
+- A : B : C = 8 : 12 : 15 → multiply by 2 → **16 : 24 : 30**
+- C : D = 6 : 7 → multiply by 5 → **30 : 35**
+- Combined: A : B : C : D = **16 : 24 : 30 : 35**
+
+</div>
 
 ---
 
@@ -3946,9 +4084,11 @@ x = 10
 ## Section 5 — TIME, SPEED, DISTANCE + BOATS + TRAINS (5 worked + variations)
 
 > **Notation expansion (used throughout this section):**
-> **TSD** = Time-Speed-Distance. **km/h** = kilometres per hour. **m/s** = metres per second.
-> **Conversion:** 1 km/h = 5/18 m/s; 1 m/s = 18/5 km/h. Memorise this — it appears in nearly every TSD problem.
-> **Boat:** speed in still water = b; stream/current speed = s; downstream speed = b + s; upstream speed = b − s.
+> - **TSD** = Time-Speed-Distance; **km/h** = kilometres per hour; **m/s** = metres per second
+> - **Conversion:** 1 km/h = 5/18 m/s; 1 m/s = 18/5 km/h (appears in nearly every TSD problem)
+> - **Boat:** speed in still water = b; stream speed = s
+>   - Downstream speed = b + s (going with current)
+>   - Upstream speed = b − s (going against current)
 
 ---
 
@@ -4053,12 +4193,13 @@ Upstream speed = 12 − s
 
 **What kind of problem is this?** Equal-distance two-leg average speed. Use harmonic mean (NOT arithmetic mean).
 
-**Solving it.** Step-by-step. Let total distance = 2d (so each half = d).
+**Solving it.** Let total distance = 2d (so each half = d).
 - Time for first half = d / 60
 - Time for second half = d / 40
-- Total time = d/60 + d/40 = (2d + 3d) / 120 = 5d / 120 = d/24
+- Total time = d/60 + d/40
+- Find common denominator (LCM = 120): = 2d/120 + 3d/120 = 5d/120 = **d/24**
 - Total distance = 2d
-- Average speed = total dist / total time = 2d / (d/24) = 2 × 24 = **48 km/h**
+- Average speed = 2d ÷ (d/24) = 2d × 24/d = **48 km/h**
 
 **Quick way:** Direct formula for equal-distance two legs.
 - Average = **2ab / (a + b)** = 2 × 60 × 40 / 100 = 4800/100 = **48 km/h**
@@ -4111,19 +4252,22 @@ Upstream speed = 12 − s
 **Q25.6 (Advanced) — Train chasing train.** Train A (length 200 m) at 90 km/h chases Train B (length 150 m) at 60 km/h, both same direction. How long does A take to fully cross B?
 
 **Solving it.**
-- Relative speed = 90 − 60 = 30 km/h = 30 × 5/18 = **25/3 m/s ≈ 8.33 m/s**.
-- Total distance to cover = sum of lengths = 200 + 150 = **350 m**.
-- Time = 350 / (25/3) = 350 × 3/25 = 1050/25 = **42 seconds**.
+- Relative speed = 90 − 60 = **30 km/h**
+- Convert to m/s: 30 × 5/18 = **25/3 m/s ≈ 8.33 m/s**
+- Total distance to cover = sum of lengths = 200 + 150 = **350 m**
+- Time = 350 ÷ (25/3) = 350 × 3/25 = **42 seconds**
 
 ---
 
 **Q25.7 (Advanced) — Boat with current changing.** A boat takes 5 hrs to row 24 km upstream and 3 hrs to row the same downstream. Find boat's speed in still water and current speed.
 
 **Solving it.**
-- Upstream speed = 24/5 = **4.8 km/h** (= b − c, where b = boat in still water, c = current).
-- Downstream speed = 24/3 = **8 km/h** (= b + c).
-- Add: 2b = 4.8 + 8 = 12.8 → b = **6.4 km/h**.
-- Subtract: 2c = 8 − 4.8 = 3.2 → c = **1.6 km/h**.
+- Upstream speed = 24 ÷ 5 = **4.8 km/h** (= b − c, where b = still-water speed, c = current)
+- Downstream speed = 24 ÷ 3 = **8 km/h** (= b + c)
+- Add both equations: 2b = 4.8 + 8 = 12.8
+- Boat speed b = 12.8 ÷ 2 = **6.4 km/h**
+- Subtract: 2c = 8 − 4.8 = 3.2
+- Current speed c = 3.2 ÷ 2 = **1.6 km/h**
 
 ---
 
@@ -4243,7 +4387,14 @@ Upstream speed = 12 − s
 
 **A similar question — A is 3 times as efficient as B; together 9 days.** A = 9 × 4/3 = **12 days**; B = 9 × 4 = **36 days**.
 
-**Another twist — Three workers in efficiency ratio.** A : B : C efficiencies = 6 : 4 : 3. Together they finish in 6 days. Combined rate = 1/6. Sum of efficiency parts = 13. Each part rate = 1/(6×13) = 1/78. So A = 78/6 = **13 days**, B = 78/4 = **19.5 days**, C = 78/3 = **26 days**.
+**Another twist — Three workers in efficiency ratio.** A : B : C efficiencies = 6 : 4 : 3. Together they finish in 6 days.
+
+- Combined rate = 1/6 per day
+- Sum of efficiency parts = 6 + 4 + 3 = 13
+- Each "1-part" rate = 1/(6 × 13) = 1/78 per day
+- A alone (6 parts): time = 78/6 = **13 days**
+- B alone (4 parts): time = 78/4 = **19.5 days**
+- C alone (3 parts): time = 78/3 = **26 days**
 
 ---
 
@@ -4263,7 +4414,12 @@ Upstream speed = 12 − s
 
 **A similar question — Find men needed.** A work needs 20 men working 8 h/day for 12 days. How many men needed to finish in 10 days at 6 h/day? 20×8×12 = 1920. New = m × 6 × 10 = 60m → m = **32 men**.
 
-**Another twist — Add a fourth variable: efficiency.** 6 men can build a wall in 8 days. 4 women can build same wall in 12 days. How long for 3 men + 4 women? 1 man = 1/(6×8) = 1/48 wall/day. 1 woman = 1/(4×12) = 1/48 wall/day. So 1 man = 1 woman in efficiency. 3 men + 4 women = 7 units. Time = 1 / (7/48) = 48/7 ≈ **6.86 days**.
+**Another twist — Add a fourth variable: efficiency.** 6 men can build a wall in 8 days. 4 women can build same wall in 12 days. How long for 3 men + 4 women?
+
+- 1 man's rate = 1/(6 × 8) = **1/48** wall/day
+- 1 woman's rate = 1/(4 × 12) = **1/48** wall/day → so 1 man = 1 woman in efficiency
+- Combined rate of 3 men + 4 women = 7 × (1/48) = 7/48 wall/day
+- Time = 1 ÷ (7/48) = 48/7 ≈ **6.86 days**
 
 ### Section 6A — ADVANCED TIME & WORK (exam-level variations)
 
@@ -4274,8 +4430,10 @@ Upstream speed = 12 − s
 **Solving it.**
 - A's 1-day work = 1/12; B's 1-day work = 1/18.
 - 2-day cycle (A on day 1, B on day 2) = 1/12 + 1/18 = (3+2)/36 = **5/36** of total work.
-- Number of 2-day cycles to complete (or near-complete) the work: 36/5 = 7.2 → after **7 full cycles (14 days)**, work done = 7 × 5/36 = 35/36; remaining = 1/36.
-- On day 15 (A's turn), A does 1/12 = 3/36 in 1 full day, but only 1/36 needed. Time taken on day 15 = (1/36) / (1/12) = 12/36 = **1/3 day** (about 8 hours assuming 24-hr day, or ~2.67 hrs of an 8-hr workday).
+- Number of complete 2-day cycles to finish: 36/5 = 7.2 → use **7 full cycles = 14 days**
+- Work done after 14 days = 7 × 5/36 = 35/36; remaining = 1/36
+- Day 15 is A's turn. A's rate = 1/12 = 3/36 per day, but only 1/36 remains.
+- Time needed on day 15 = (1/36) ÷ (1/12) = 12/36 = **1/3 day**.
 - Total time = 14 + 1/3 = **14⅓ days**.
 
 ---
@@ -4354,12 +4512,14 @@ Upstream speed = 12 − s
 **What kind of problem is this?** Combine two mixtures of differing ratios → use FRACTIONS, not ratios directly.
 
 **Solving it.** Step-by-step.
-- Jar A: milk : water = 4 : 3 → milk fraction = 4/(4+3) = **4/7**
-- Jar B: milk : water = 5 : 2 → milk fraction = 5/(5+2) = **5/7**
+- Jar A: milk fraction = 4/(4+3) = **4/7**
+- Jar B: milk fraction = 5/(5+2) = **5/7**
 - Take 1 unit from each jar.
-  - Milk from A = 4/7; milk from B = 5/7. Total milk = 4/7 + 5/7 = **9/7**.
-  - Total volume taken = 1 + 1 = 2 units. So water = 2 − 9/7 = (14 − 9)/7 = **5/7**.
-- Final ratio milk : water = (9/7) : (5/7) = **9 : 5**
+- Milk from A = **4/7**; milk from B = **5/7**
+- Total milk = 4/7 + 5/7 = **9/7**
+- Total volume = 1 + 1 = **2 units**
+- Water = 2 − 9/7 = 14/7 − 9/7 = **5/7**
+- Final ratio milk : water = 9/7 : 5/7 = **9 : 5**
 
 **Worth knowing:** When you pool equal volumes, the new fraction = average of the two milk-fractions. Average of 4/7 and 5/7 = 9/14 = milk/total. Water/total = 5/14. Ratio = 9 : 5 ✓.
 
@@ -4377,12 +4537,36 @@ Upstream speed = 12 − s
 
 **Q33.5 (Advanced) — 3-component alligation.** Three types of rice cost ₹40, ₹60 and ₹80 per kg respectively. In what ratio should they be mixed to give a mixture of ₹55/kg?
 
-**Solving it.** With 3 components, fix 2 of them in a workable pair, then alligate that pair with the third.
-- Pair Type 1 (₹40) and Type 3 (₹80) at any easy ratio. Average of these two if mixed equally = ₹60. Now alligate ₹60 (mix) with ₹60 (Type 2) → degenerate.
-- Try: 1 part Type 1 + 1 part Type 3 = mean ₹60. Combine with Type 2 (₹60) at any ratio still gives ₹60 — too high vs target ₹55.
-- Take more Type 1: 2:1 of Type 1:Type 3 = (2×40 + 1×80)/3 = ₹53.33. Combine 53.33 with Type 2 (60) by alligation: ratio = (60−55):(55−53.33) = 5 : 1.67 = 3 : 1.
-- So 3 parts of (2:1 of Type 1 + Type 3) mixed with 1 part of Type 2 → final ratio Type 1 : Type 2 : Type 3 = (3×2/3) : 1 : (3×1/3) = **2 : 1 : 1**.
-- Verify: (2×40 + 1×60 + 1×80) / 4 = 220/4 = **₹55** ✓.
+**Solving it.** With 3 components, fix 2 in a workable pair, then alligate that pair with the third.
+
+<div class="steps">
+
+**Step 1 — Test equal mix of Type 1 (₹40) + Type 3 (₹80).**
+
+- Weighted mean = (40 + 80)/2 = **₹60**
+- Now alligate ₹60 (sub-mix) with Type 2 (₹60): same price → degenerate, any ratio works. Dead end.
+
+**Step 2 — Shift to 2:1 mix of Type 1 : Type 3.**
+
+- Weighted mean = (2 × 40 + 1 × 80)/3 = 160/3 = **₹53.33**
+
+**Step 3 — Alligate the ₹53.33 sub-mix with Type 2 (₹60) at target ₹55.**
+
+- Alligation ratio = (60 − 55) : (55 − 53.33) = 5 : 1.67 ≈ **3 : 1**
+- So: 3 parts sub-mix (2:1 of Type 1:Type 3) to 1 part Type 2.
+
+**Step 4 — Unpack sub-mix into individual types.**
+
+- Type 1 from sub-mix = 3 × 2/3 = **2 parts**
+- Type 3 from sub-mix = 3 × 1/3 = **1 part**
+- Type 2 = **1 part**
+- Final ratio: **Type 1 : Type 2 : Type 3 = 2 : 1 : 1**
+
+**Step 5 — Verify.**
+
+- (2 × 40 + 1 × 60 + 1 × 80) / 4 = 220/4 = **₹55** ✓
+
+</div>
 
 **Worth knowing:** With 3 components, infinite ratios satisfy the equation. The alligation pairing trick fixes one ratio first.
 
@@ -4412,8 +4596,9 @@ Upstream speed = 12 − s
 **What kind of problem is this?** Triangle area when 3 sides given. Two methods: Heron's formula (general) or check for **Pythagorean triple** (much faster).
 
 **Solving it.** Step-by-step.
-- Check Pythagoras: 5² + 12² = 25 + 144 = 169 = 13² → YES, this is a right-angled triangle (5-12-13).
-- For a right triangle, two legs ARE the base and height.
+- Check Pythagoras: 5² + 12² = 25 + 144 = **169**
+- 13² = **169** → matches! So this is a right-angled triangle (5-12-13 triple).
+- In a right triangle, the two legs are the base and height.
 - Area = ½ × base × height = ½ × 5 × 12 = **30 sq units**
 
 **Quick way:** Heron's formula (slower but works for any triangle).
@@ -4480,26 +4665,33 @@ Upstream speed = 12 − s
 **Q36.5 (Advanced) — Hollow cylinder volume.** A pipe has external radius 10 cm, internal radius 8 cm, and length 50 cm. Find the volume of metal used.
 
 **Solving it.**
-- Volume of metal = π × (R² − r²) × h = π × (100 − 64) × 50 = π × 36 × 50 = π × 1,800.
-- Using π = 22/7: 22/7 × 1,800 = **5,657.14 cm³**.
+- R² − r² = 10² − 8² = 100 − 64 = **36**
+- Volume of metal = π × (R² − r²) × h = π × 36 × 50 = 1,800π
+- Using π = 22/7: 22/7 × 1,800 = **5,657.14 cm³**
 
 ---
 
 **Q36.6 (Advanced) — Frustum volume + slant.** A frustum (truncated cone) has bottom radius 7 cm, top radius 4 cm, and height 12 cm. Find volume and slant height.
 
-**Solving it.**
-- Volume = (1/3) × π × h × (R² + r² + R×r) = (1/3) × (22/7) × 12 × (49 + 16 + 28) = (1/3) × (22/7) × 12 × 93 = (88/7) × 93 = 8184/7 ≈ **1,169 cm³**.
-- Slant l = √[h² + (R − r)²] = √[144 + 9] = √153 ≈ **12.37 cm**.
+**Solving it — Volume.**
+- R² + r² + R × r = 49 + 16 + 28 = **93**
+- Volume = (1/3) × π × h × 93 = (1/3) × (22/7) × 12 × 93
+- = (22/7) × 4 × 93 = (22 × 372)/7 = 8,184/7 ≈ **1,169 cm³**
+
+**Solving it — Slant height.**
+- (R − r)² = (7 − 4)² = 9
+- l = √[h² + (R − r)²] = √(144 + 9) = √153 ≈ **12.37 cm**
 
 ---
 
 **Q36.7 (Advanced) — Sphere inscribed in cube.** A sphere is inscribed in a cube of side 10 cm. Find the volume of the sphere AND the empty space between the sphere and the cube.
 
 **Solving it.**
-- Sphere radius r = side/2 = **5 cm** (sphere touches all 6 faces).
-- Sphere volume = (4/3) π r³ = (4/3) × (22/7) × 125 = (88/21) × 125 = 11000/21 ≈ **523.81 cm³**.
-- Cube volume = 10³ = **1,000 cm³**.
-- Empty space = 1,000 − 523.81 = **476.19 cm³**.
+- Sphere radius r = side ÷ 2 = 10 ÷ 2 = **5 cm** (sphere touches all 6 faces)
+- Sphere volume = (4/3) × π × r³ = (4/3) × (22/7) × 125
+- = (4 × 22 × 125) / (3 × 7) = 11,000 / 21 ≈ **523.81 cm³**
+- Cube volume = 10³ = **1,000 cm³**
+- Empty space = 1,000 − 523.81 = **476.19 cm³**
 
 ---
 
@@ -4562,8 +4754,8 @@ Upstream speed = 12 − s
 **What kind of problem is this?** Direct application of polygon-interior-angle formula.
 
 **Solving it.** Step-by-step.
-- Formula: **Sum of interior angles of an n-gon = (n − 2) × 180°**
-- For n = 9: Sum = (9 − 2) × 180 = 7 × 180 = **1,260°**
+- Formula: Sum of interior angles = (n − 2) × 180°
+- Substitute n = 9: (9 − 2) × 180 = 7 × 180 = **1,260°**
 
 **Worth knowing:** Two related formulas.
 - **Sum of EXTERIOR angles of any polygon = always 360°** (regardless of n).
@@ -4574,7 +4766,10 @@ Upstream speed = 12 − s
 
 ***Watch out:*** "1,440°" — students use (n − 1) × 180 (wrong; it's n − 2). Or "1,620°" using n × 180.
 
-**A similar question — Find n given interior sum.** Sum = 1,800°. Solve (n − 2) × 180 = 1800 → n − 2 = 10 → n = **12 sides** (dodecagon).
+**A similar question — Find n given interior sum.** Sum = 1,800°.
+- Set up: (n − 2) × 180 = 1,800
+- n − 2 = 1,800 / 180 = 10
+- n = **12 sides** (dodecagon)
 
 **Another twist — Find interior of regular polygon, given exterior.** Each exterior of regular polygon is 24°. Number of sides = 360/24 = **15 sides**. Each interior = 180 − 24 = **156°**.
 
@@ -4598,7 +4793,9 @@ Upstream speed = 12 − s
 **Solving it.**
 - Tangent ⊥ radius at point of contact → right triangle (radius, tangent, distance).
 - By Pythagoras: tangent² + radius² = distance²
-- tangent² + 25 = 169 → tangent² = 144 → **tangent = 12 cm**.
+- tangent² + 25 = 169
+- tangent² = 169 − 25 = 144
+- tangent = √144 = **12 cm**
 
 ---
 
@@ -4613,8 +4810,11 @@ Upstream speed = 12 − s
 ## Section 10 — TRIGONOMETRY + HEIGHTS AND DISTANCES (2 worked + variations)
 
 > **Notation expansion (used throughout this section):**
-> **sin θ, cos θ, tan θ** = trigonometric ratios in a right triangle. **sin = opp/hyp; cos = adj/hyp; tan = opp/adj**.
-> **Angle of elevation** = angle from observer's eye to top of object (looking up). **Angle of depression** = angle looking down.
+> - **sin θ** = opposite ÷ hypotenuse
+> - **cos θ** = adjacent ÷ hypotenuse
+> - **tan θ** = opposite ÷ adjacent
+> - **Angle of elevation** = angle from observer's eye to the top of an object (looking up)
+> - **Angle of depression** = angle from observer's eye to an object below (looking down)
 
 ---
 
@@ -4675,20 +4875,35 @@ Upstream speed = 12 − s
 **Q41.5 (Advanced) — Two observers + same object.** A tower stands on level ground. From a point P, the angle of elevation to the top is 30°. From another point Q, 50 m closer to the tower, the angle is 45°. Find the height of the tower.
 
 **Solving it.**
-- Let height = h, distance from foot to Q = x. Then distance from foot to P = x + 50.
-- From Q: tan 45° = h/x = 1 → h = x.
-- From P: tan 30° = h/(x+50) = 1/√3 → h × √3 = x + 50.
-- Substitute h = x: x√3 = x + 50 → x(√3 − 1) = 50 → x = 50/(√3 − 1) = 50(√3 + 1)/2 = 25(√3 + 1).
-- h = x = 25(√3 + 1) ≈ 25 × 2.732 ≈ **68.30 m**.
+- Let height = h; distance from tower foot to Q = x
+- Distance from tower foot to P = x + 50
+
+**From Q (angle = 45°):**
+- tan 45° = h/x = 1
+- Therefore h = x
+
+**From P (angle = 30°):**
+- tan 30° = h/(x + 50) = 1/√3
+- Cross-multiply: h√3 = x + 50
+
+**Substitute h = x:**
+- x√3 = x + 50
+- x√3 − x = 50
+- x(√3 − 1) = 50
+- x = 50 / (√3 − 1)
+- Rationalise: x = 50(√3 + 1) / [(√3 − 1)(√3 + 1)] = 50(√3 + 1) / 2 = 25(√3 + 1)
+
+**Answer:** h = x = 25(√3 + 1) ≈ 25 × 2.732 ≈ **68.30 m**
 
 ---
 
 **Q41.6 (Advanced) — Angle of depression.** From the top of a 100 m cliff, the angle of depression to a boat is 30°. Find the boat's distance from the foot of the cliff.
 
 **Solving it.**
-- Angle of depression from top = angle of elevation from boat (alternate angles).
-- tan 30° = 100 / d (height/distance)
-- 1/√3 = 100/d → d = 100√3 ≈ **173.21 m**.
+- Angle of depression from top = angle of elevation from boat (alternate interior angles)
+- tan 30° = height / horizontal distance = 100 / d
+- 1/√3 = 100 / d
+- d = 100 × √3 = **100√3 ≈ 173.21 m**
 
 ---
 
@@ -4934,35 +5149,35 @@ This works because each factor chooses 0 to a copies of p₁, 0 to b copies of p
 **Q46.5 (Advanced) — Quadratic equation by formula.** Solve 2x² − 7x + 3 = 0.
 
 **Solving it.** Use the quadratic formula: x = (−b ± √(b² − 4ac)) / 2a.
-- a = 2, b = −7, c = 3.
-- Discriminant = b² − 4ac = 49 − 24 = 25 → √25 = 5.
-- x = (7 ± 5) / 4 → x = 12/4 = **3** OR x = 2/4 = **1/2**.
+- a = 2, b = −7, c = 3
+- Discriminant = b² − 4ac = (−7)² − 4 × 2 × 3 = 49 − 24 = **25**
+- √discriminant = √25 = **5**
+- x = (−(−7) ± 5) / (2 × 2) = (7 ± 5) / 4
+- x = 12/4 = **3** or x = 2/4 = **1/2**
 
 **Quick check via factorisation.** 2x² − 7x + 3 = 2x² − 6x − x + 3 = 2x(x − 3) − (x − 3) = (2x − 1)(x − 3) = 0 → x = 1/2 or 3 ✓.
 
 ---
 
-**Q46.6 (Advanced) — Simultaneous linear equations.** Solve: 3x + 2y = 16; 5x − 3y = −1.
+**Q46.6 (Advanced) — Simultaneous linear equations.** Solve: 3x + 2y = 16; 5x − 3y = 14.
 
 **Solving it.** Use elimination.
-- Multiply Eq1 by 3: 9x + 6y = 48.
-- Multiply Eq2 by 2: 10x − 6y = −2.
-- Add: 19x = 46 → x = **46/19 ≈ 2.42**.
-- (Numbers slightly awkward — usually the exam gives integers. Let me adjust.)
-
-Actually, try Eq1 = 3x + 2y = 16 and Eq2 = 5x − 3y = 14 (more typical).
-- Mult Eq1 × 3: 9x + 6y = 48.
-- Mult Eq2 × 2: 10x − 6y = 28.
-- Add: 19x = 76 → x = **4**.
-- Plug into Eq1: 12 + 2y = 16 → y = **2**.
+- Multiply Eq1 by 3: 9x + 6y = 48
+- Multiply Eq2 by 2: 10x − 6y = 28
+- Add both equations: 19x = 76
+- x = 76 / 19 = **4**
+- Substitute x = 4 into Eq1: 3(4) + 2y = 16 → 12 + 2y = 16
+- 2y = 4 → y = **2**
 
 ---
 
 **Q46.7 (Advanced) — Roots and coefficients.** If α and β are roots of x² − 5x + 6 = 0, find α² + β² without computing the individual roots.
 
 **Solving it.** Use Vieta's formulas.
-- Sum α + β = −b/a = 5; product αβ = c/a = 6.
-- Identity: α² + β² = (α + β)² − 2αβ = 25 − 12 = **13**.
+- Sum: α + β = −b/a = 5
+- Product: αβ = c/a = 6
+- Identity: α² + β² = (α + β)² − 2αβ
+- = 5² − 2 × 6 = 25 − 12 = **13**
 
 (Verify: roots are 2 and 3. 2² + 3² = 4 + 9 = 13 ✓.)
 
@@ -5459,7 +5674,9 @@ k − 2 = ±4
 
 **Solving it.** Step-by-step.
 - Slope m = (11 − 3) / (6 − 2) = 8 / 4 = **2**
-- Equation (using point-slope form with (2, 3)): y − 3 = 2(x − 2) → y = 2x − 4 + 3 → **y = 2x − 1**
+- Point-slope form with (2, 3): y − 3 = 2(x − 2)
+- Expand right side: y − 3 = 2x − 4
+- Add 3 to both sides: **y = 2x − 1**
 
 **Worth knowing:** Quick line-properties recap.
 - **Parallel lines** have the same slope.
