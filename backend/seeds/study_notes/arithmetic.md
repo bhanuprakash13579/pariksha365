@@ -665,6 +665,7 @@ The examiner knows you know the shortcuts. Here is how they defeat them:
 <div class="steps">
 
 **Step 1:** (1.1)³ = 1.331
+
 **Step 2:** Final = 50,000 × 1.331 = **66,550**
 
 </div>
@@ -762,8 +763,11 @@ B is less than A by: $\dfrac{125 - 100}{125} \times 100 = \dfrac{25}{125} \times
 <div class="steps">
 
 **Step 1:** Pass mark = Score + Deficit = 220 + 20 = 240
+
 **Step 2:** Pass mark = 40% of Max → $240 = \dfrac{40}{100} \times M$
+
 **Step 3:** $M = \dfrac{240 \times 100}{40} = 240 \times 2.5$
+
 **Answer:** Max marks = **600**
 
 </div>
@@ -785,9 +789,13 @@ B is less than A by: $\dfrac{125 - 100}{125} \times 100 = \dfrac{25}{125} \times
 <div class="steps">
 
 **Step 1:** Let Total votes = T
+
 **Step 2:** Valid votes = 90% of T = 0.9T (10% invalid)
+
 **Step 3:** Winner = 60% of valid; Loser = 40% of valid (two candidates → sum = 100%)
+
 **Step 4:** Difference = (60% − 40%) of valid = 20% × 0.9T = 0.18T
+
 **Step 5:** 0.18T = 1800 → $T = \dfrac{1800}{0.18}$ = **10,000**
 
 </div>
@@ -806,9 +814,13 @@ B is less than A by: $\dfrac{125 - 100}{125} \times 100 = \dfrac{25}{125} \times
 <div class="steps">
 
 **Step 1:** Pure alcohol = 20% × 30 = 6 L
+
 **Step 2:** After adding x L water: total = (30 + x) L; alcohol still = 6 L
+
 **Step 3:** New concentration = $\dfrac{6}{30 + x} = \dfrac{15}{100}$
+
 **Step 4:** $6 \times 100 = 15 \times (30 + x)$ → $600 = 450 + 15x$
+
 **Step 5:** $15x = 150$ → **x = 10 L**
 
 </div>
@@ -1094,7 +1106,9 @@ Net = $a + b + \dfrac{a \times b}{100}$, where a = +25 (mark-up), b = −10 (dis
 <div class="steps">
 
 **Step 1:** SP = ₹810 represents 90% of CP (because loss = 10%)
+
 **Step 2:** CP = $\frac{810 \times 100}{90}$ = **₹900**
+
 **Step 3:** Desired SP at 10% gain = $\frac{900 \times 110}{100}$ = **₹990**
 
 </div>
@@ -1158,7 +1172,9 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** $SI = \dfrac{P \times R \times T}{100} = \dfrac{6000 \times 8 \times 3}{100}$
+
 **Step 2:** $= \dfrac{144000}{100}$
+
 **Answer:** **₹1440**
 
 </div>
@@ -1200,7 +1216,9 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** First year growth: 10% → Amount = 11,000
+
 **Step 2:** Second year growth: 10% on 11,000 → Amount = 12,100
+
 **OR:** Net % = 10 + 10 + $\dfrac{10 \times 10}{100}$ = 21%
 **CI = 21% of 10,000 = ₹2100**
 
@@ -1211,6 +1229,7 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** $A = 10000 \times (1.10)^2 = 10000 \times 1.21 = 12100$
+
 **Step 2:** CI = 12100 − 10000 = **₹2100** ✓
 
 </div>
@@ -1275,7 +1294,9 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** Half-yearly rate = 10/2 = 5%; Number of periods = 2
+
 **Step 2:** $A = 8000 \times (1.05)^2 = 8000 \times 1.1025 = 8820$
+
 **Answer:** CI = 8820 − 8000 = **₹820**
 
 </div>
@@ -1298,9 +1319,13 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** Present value of instalment 1 = $\dfrac{x}{1.04}$
+
 **Step 2:** Present value of instalment 2 = $\dfrac{x}{(1.04)^2} = \dfrac{x}{1.0816}$
+
 **Step 3:** Sum = 2500 → $\dfrac{x}{1.04} + \dfrac{x}{1.0816} = 2500$
+
 **Step 4:** $x \left(\dfrac{1.0816 + 1.04}{1.04 \times 1.0816}\right) = 2500$
+
 **Step 5:** $x = \dfrac{2500 \times 1.04 \times 1.0816}{2.1216} \approx$ **₹1325**
 
 </div>
@@ -1315,8 +1340,11 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** $6000 \times \left[(1 + r)^2 - 1\right] = 1260$ where r = R/100
+
 **Step 2:** $(1 + r)^2 = \dfrac{1260}{6000} + 1 = 0.21 + 1 = 1.21$
+
 **Step 3:** $1 + r = \sqrt{1.21} = 1.1$
+
 **Answer:** r = 0.1 → **R = 10%**
 
 </div>
@@ -1332,6 +1360,7 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** $\dfrac{A_3}{A_2} = 1 + \dfrac{R}{100}$ → $\dfrac{5324}{4840} = 1.1$ → **R = 10%**
+
 **Step 2:** $P = \dfrac{4840}{(1.1)^2} = \dfrac{4840}{1.21}$ = **₹4000**
 
 </div>
@@ -1371,10 +1400,15 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** Total parts = 3 + 5 + 4 = 12
+
 **Step 2:** Value of 1 part = 2400 ÷ 12 = ₹200
+
 **Step 3:** A = 3 × 200 = **₹600**
+
 **Step 4:** B = 5 × 200 = **₹1000**
+
 **Step 5:** C = 4 × 200 = **₹800**
+
 **Check:** 600 + 1000 + 800 = 2400 ✓
 
 </div>
@@ -1395,10 +1429,15 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** Let present ages: A = 3k, B = 5k
+
 **Step 2:** After 6 years: (3k + 6) / (5k + 6) = 2/3
+
 **Step 3:** Cross-multiply: 3(3k + 6) = 2(5k + 6)
+
 **Step 4:** 9k + 18 = 10k + 12
+
 **Step 5:** k = 6
+
 **Answer:** A = 3 × 6 = **18 years**, B = 5 × 6 = **30 years**
 
 </div>
@@ -1443,7 +1482,9 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** Identify: more men = less days → inverse variation
+
 **Step 2:** 12 × 8 = 16 × t
+
 **Step 3:** t = 96 / 16 = **6 days**
 
 </div>
@@ -1453,6 +1494,7 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** More boxes → more time → DIRECT variation
+
 **Step 2:** 120/4 = 300/t → t = 300 × 4 / 120 = **10 hours**
 
 </div>
@@ -1473,8 +1515,11 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** Numbers = 3k and 5k where k = HCF
+
 **Step 2:** k = 4
+
 **Answer:** Numbers = 3 × 4 = **12** and 5 × 4 = **20**
+
 **Verify:** HCF(12, 20) = 4 ✓
 
 </div>
@@ -1529,7 +1574,9 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 <div class="steps">
 
 **Step 1:** Old sum = 60 × 11 = 660
+
 **Step 2:** New sum = 59 × 12 = 708
+
 **Step 3:** 12th student's marks = 708 − 660 = **48**
 
 </div>
@@ -1554,8 +1601,11 @@ Drop of 1 across 12 students = 12 units total drop. New member caused this by be
 <div class="steps">
 
 **Step 1:** Rise in average = 2. Count = 10.
+
 **Step 2:** Rise in sum = 2 × 10 = 20
+
 **Step 3:** New score − Old score = 20
+
 **Step 4:** New score = 50 + 20 = **70**
 
 </div>
@@ -1582,9 +1632,13 @@ Drop of 1 across 12 students = 12 units total drop. New member caused this by be
 <div class="steps">
 
 **Step 1:** Group 1 sum = 30 × 60 = 1800
+
 **Step 2:** Group 2 sum = 20 × 75 = 1500
+
 **Step 3:** Total sum = 1800 + 1500 = 3300
+
 **Step 4:** Total count = 30 + 20 = 50
+
 **Answer:** Average = 3300 / 50 = **66 marks**
 
 </div>
@@ -1604,7 +1658,9 @@ Drop of 1 across 12 students = 12 units total drop. New member caused this by be
 <div class="steps">
 
 **Step 1:** Old sum = 30 × 20 = 600
+
 **Step 2:** New sum = 600 + 50 = 650
+
 **Step 3:** New average = 650 / 21 = **30.95** (≈ 31)
 
 </div>
@@ -1637,7 +1693,9 @@ Drop of 1 across 12 students = 12 units total drop. New member caused this by be
 <div class="steps">
 
 **Step 1:** Total sum = 40 × 5 = 200
+
 **Step 2:** Sum of four known = 32 + 38 + 45 + 50 = 165
+
 **Step 3:** Fifth = 200 − 165 = **35**
 
 </div>
@@ -1675,10 +1733,12 @@ Drop of 1 across 12 students = 12 units total drop. New member caused this by be
 *← LCM converts all rates to whole numbers; you never deal with fractions like 1/12 or 1/18*
 
 **Step 2:** A's rate = 36 ÷ **12** = 3 units/day
+
 **Step 3:** B's rate = 36 ÷ **18** = 2 units/day
 *← divide by each person's OWN solo time; swapping (÷18 for A, ÷12 for B) is the most common error*
 
 **Step 4:** Combined = 3 + 2 = 5 units/day
+
 **Answer:** 36 ÷ 5 = **7.2 days**
 
 </div>
@@ -1712,9 +1772,13 @@ $\dfrac{ab}{a+b} = \dfrac{12 \times 18}{12 + 18} = \dfrac{216}{30}$ = **7.2 days
 <div class="steps">
 
 **Step 1:** Let total work = LCM approach; use fraction for this type.
+
 **Step 2:** Work done in first 4 days (A+B together) = 4/12 = 1/3
+
 **Step 3:** Remaining work = 1 − 1/3 = 2/3
+
 **Step 4:** A alone does 2/3 of work in 10 days
+
 **Step 5:** A alone does full work in 10 ÷ (2/3) = 10 × 3/2 = **15 days**
 
 </div>
@@ -1731,8 +1795,11 @@ $\dfrac{ab}{a+b} = \dfrac{12 \times 18}{12 + 18} = \dfrac{216}{30}$ = **7.2 days
 <div class="steps">
 
 **Step 1:** Efficiency ratio A : B = 2 : 1
+
 **Step 2:** Set total work = 30 units (choose LCM-friendly number)
+
 **Step 3:** Together: (2 + 1) = 3 units/day; total time = 30/3 = 10 days ✓ (confirms our setup)
+
 **Step 4:** A alone: 30 ÷ 2 = **15 days**
 
 </div>
@@ -1749,7 +1816,9 @@ $\dfrac{ab}{a+b} = \dfrac{12 \times 18}{12 + 18} = \dfrac{216}{30}$ = **7.2 days
 <div class="steps">
 
 **Step 1:** Total man-days = 15 × 20 = 300
+
 **Step 2:** n × 10 = 300
+
 **Answer:** n = **30 men**
 
 </div>
@@ -1768,7 +1837,9 @@ Man × Day × Hour = 15×20×8 = 2400. New: n × 12 × 10 = 2400 → n = **20 me
 <div class="steps">
 
 **Step 1:** 3 men = 5 women (same output) → 1 man = 5/3 women
+
 **Step 2:** 2 men + 3 women = 2 × (5/3) + 3 = 10/3 + 3 = 19/3 women
+
 **Step 3:** 5 women → 20 days; 19/3 women → 20 × 5 ÷ (19/3) = 20 × 15/19 = **300/19 ≈ 15.8 days**
 
 </div>
@@ -1785,9 +1856,13 @@ Man × Day × Hour = 15×20×8 = 2400. New: n × 12 × 10 = 2400 → n = **20 me
 <div class="steps">
 
 **Step 1:** Total capacity = LCM(10, 15) = 30 units
+
 **Step 2:** A fills: 30/10 = 3 units/hour
+
 **Step 3:** Leak empties: 30/15 = 2 units/hour
+
 **Step 4:** Net rate = 3 − 2 = 1 unit/hour
+
 **Answer:** Time = 30/1 = **30 hours**
 
 </div>
@@ -1803,11 +1878,17 @@ Man × Day × Hour = 15×20×8 = 2400. New: n × 12 × 10 = 2400 → n = **20 me
 <div class="steps">
 
 **Step 1:** Total work = LCM(8, 12) = 24 units
+
 **Step 2:** A's rate = 24/8 = 3 units/day; B's rate = 24/12 = 2 units/day
+
 **Step 3:** Every 2-day cycle: 3 + 2 = 5 units completed
+
 **Step 4:** After 4 cycles (8 days): 4 × 5 = 20 units done; remaining = 24 − 20 = 4 units
+
 **Step 5:** Day 9 is A's turn: A does 3 units → remaining = 4 − 3 = 1 unit
+
 **Step 6:** Day 10 is B's turn: B needs 1 unit at 2 units/day → takes 1/2 day
+
 **Answer:** Total = 9 + 0.5 = **9.5 days**
 
 </div>
@@ -1822,8 +1903,11 @@ Man × Day × Hour = 15×20×8 = 2400. New: n × 12 × 10 = 2400 → n = **20 me
 <div class="steps">
 
 **Step 1:** Total work = LCM(20, 30) = 60 units
+
 **Step 2:** A's rate = 3 units/day; B's rate = 2 units/day
+
 **Step 3:** Ratio of work = 3 : 2
+
 **Step 4:** A's share = (3/5) × 1800 = **₹1080**; B's share = (2/5) × 1800 = **₹720**
 
 </div>
@@ -1862,8 +1946,11 @@ All differences are taken as positive. Works for price, concentration, percentag
 <div class="steps">
 
 **Step 1:** A = 30, B = 45, Mean = 36
+
 **Step 2:** (B − Mean) = 45 − 36 = 9  →  quantity of A
+
 **Step 3:** (Mean − A) = 36 − 30 = 6  →  quantity of B
+
 **Answer:** Ratio A : B = 9 : 6 = **3 : 2**
 
 </div>
@@ -1883,8 +1970,11 @@ All differences are taken as positive. Works for price, concentration, percentag
 <div class="steps">
 
 **Step 1:** A = 20%, B = 50%, Mean = 30%
+
 **Step 2:** (B − Mean) = 50 − 30 = 20  →  quantity of A
+
 **Step 3:** (Mean − A) = 30 − 20 = 10  →  quantity of B
+
 **Answer:** Ratio X : Y = 20 : 10 = **2 : 1**
 
 </div>
@@ -1905,9 +1995,13 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** x = 10 L, V = 40 L, n = 2
+
 **Step 2:** Fraction of milk remaining per step = (40 − 10)/40 = 30/40 = 3/4
+
 **Step 3:** After 2 replacements: milk fraction = (3/4)² = 9/16
+
 **Step 4:** Final milk = 40 × 9/16 = 22.5 L
+
 **Answer:** Milk % = 22.5/40 × 100 = **56.25%**
 
 </div>
@@ -1932,8 +2026,11 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** CP = cost of 4 kg wheat = 4 × 20 = ₹80 (pebbles are free)
+
 **Step 2:** SP = 5 kg × ₹20 = ₹100
+
 **Step 3:** Profit = 100 − 80 = ₹20
+
 **Answer:** Profit % = 20/80 × 100 = **25%**
 
 </div>
@@ -1953,9 +2050,13 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** Pure alcohol = 40% × 30 = 12 L (stays constant — we only add water)
+
 **Step 2:** Let water added = x L
+
 **Step 3:** New concentration: 12 / (30 + x) = 25/100 = 1/4
+
 **Step 4:** 30 + x = 12 × 4 = 48
+
 **Answer:** x = **18 L of water to add**
 
 </div>
@@ -2054,8 +2155,11 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** Distance = train + platform = 150 + 250 = 400 m
+
 **Step 2:** Time = 20 s
+
 **Step 3:** Speed = 400/20 = 20 m/s
+
 **Answer:** = 20 × 18/5 = **72 km/h**
 
 </div>
@@ -2083,8 +2187,11 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** Downstream speed = 18/2 = 9 km/h
+
 **Step 2:** Upstream speed = 12/3 = 4 km/h
+
 **Step 3:** Boat speed = (9 + 4)/2 = **6.5 km/h**
+
 **Step 4:** Stream speed = (9 − 4)/2 = **2.5 km/h**
 
 </div>
@@ -2101,9 +2208,13 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** Let distance = d km
+
 **Step 2:** Time at 4 km/h − time at 5 km/h = total time difference = 15 + 15 = 30 min = 0.5 h
+
 **Step 3:** d/4 − d/5 = 0.5
+
 **Step 4:** (5d − 4d)/20 = 0.5  →  d/20 = 0.5
+
 **Answer:** d = **10 km**
 
 </div>
@@ -2144,7 +2255,9 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** H = 3, M = 20
+
 **Step 2:** Angle = |30 × 3 − 5.5 × 20| = |90 − 110| = 20°
+
 **Answer:** **20°**
 
 </div>
@@ -2169,8 +2282,11 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** Ratio = 5000 : 8000 = 5 : 8
+
 **Step 2:** Total parts = 5 + 8 = 13
+
 **Step 3:** A's share = (5/13) × 6500 = **₹2500**
+
 **Step 4:** B's share = (8/13) × 6500 = **₹4000**
 
 </div>
@@ -2184,9 +2300,13 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** A's investment period = 12 months; B's = 12 − 3 = 9 months
+
 **Step 2:** A's weight = 6000 × 12 = 72,000
+
 **Step 3:** B's weight = 9000 × 9 = 81,000
+
 **Step 4:** Ratio = 72,000 : 81,000 = 8 : 9
+
 **Step 5:** A's share = $\dfrac{8}{17} \times 7500$ = **₹3529**; B's = $\dfrac{9}{17} \times 7500$ = **₹3971**
 
 </div>
@@ -2200,7 +2320,9 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** Period 1: 4000 × 6 = 24,000
+
 **Step 2:** Period 2: 6000 × 6 = 36,000
+
 **Step 3:** A's effective investment = 24,000 + 36,000 = 60,000 investment-months
 
 </div>
@@ -2214,9 +2336,13 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** A's annual salary = 500 × 12 = ₹6000
+
 **Step 2:** Remaining profit = 8400 − 6000 = ₹2400
+
 **Step 3:** Capital ratio = 5000 : 5000 = 1 : 1
+
 **Step 4:** A's share from remaining = ₹1200; B's share = ₹1200
+
 **Answer:** A's total = 6000 + 1200 = **₹7200**; B gets **₹1200**
 
 </div>
@@ -2244,10 +2370,15 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** Let present ages: A = 3k, B = 5k
+
 **Step 2:** After 8 years: (3k + 8)/(5k + 8) = 5/7
+
 **Step 3:** Cross-multiply: 7(3k + 8) = 5(5k + 8)
+
 **Step 4:** 21k + 56 = 25k + 40
+
 **Step 5:** 4k = 16  →  k = 4
+
 **Answer:** A = 3 × 4 = **12 years**, B = 5 × 4 = **20 years**
 
 </div>
@@ -2262,7 +2393,9 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** Let son = x, father = 4x
+
 **Step 2:** x + 4x = 50  →  5x = 50  →  x = 10
+
 **Answer:** Son = **10 years**, Father = **40 years**
 
 </div>
@@ -2276,9 +2409,13 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** Let son's present age = s; father's = 3s
+
 **Step 2:** After 10 years: 3s + 10 = 2(s + 10)
+
 **Step 3:** 3s + 10 = 2s + 20
+
 **Step 4:** s = 10
+
 **Answer:** Son = **10 years**, Father = **30 years**
 
 </div>
@@ -2292,7 +2429,9 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 <div class="steps">
 
 **Step 1:** Old sum = 24 × 4 = 96
+
 **Step 2:** New sum = 22 × 5 = 110
+
 **Step 3:** New person's age = 110 − 96 = **14 years**
 
 </div>
@@ -2472,7 +2611,23 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 - Largest square inscribed in a circle of radius r → side = r√2; diagonal = 2r.
 - Largest equilateral triangle in a circle of radius r → side = r√3.
 
-**Example.** Largest circle carved from a square tile of side 14 cm. Radius = 7 cm. Area of circle = π × 49 = **154 cm²** (using π = 22/7).
+**Example.** Largest circle carved from a square tile of side 14 cm. Find its area.
+
+<div class="steps">
+
+**Given:** Side of square = 14 cm
+
+**Step 1:** Largest inscribed circle has radius = side ÷ 2
+= 14 ÷ 2 = **7 cm**
+
+**Step 2:** Area = π × r²
+= (22/7) × 7²
+= (22/7) × 49
+= 22 × 7
+
+**Answer:** Area = **154 cm²**
+
+</div>
 
 **Self-check.** Side of the largest square that fits in a circle of radius 5 cm → side = 5√2 ≈ **7.07 cm**.
 
@@ -2492,7 +2647,24 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 
 **Example.** Square of side 14 cm has the largest possible circle cut out. Shaded area = 14² − π(7²) = 196 − 154 = **42 cm²**.
 
-**Example.** Ring: outer radius 7 cm, inner radius 3.5 cm. Area = π(7² − 3.5²) = π(49 − 12.25) = 22/7 × 36.75 = **115.5 cm²**.
+**Example.** Ring: outer radius 7 cm, inner radius 3.5 cm. Find its area.
+
+<div class="steps">
+
+**Given:** R (outer) = 7 cm, r (inner) = 3.5 cm
+
+**Step 1:** Area of ring = π(R² − r²)
+= π × (7² − 3.5²)
+= π × (49 − 12.25)
+= π × 36.75
+
+**Step 2:** Substitute π = 22/7
+= (22/7) × 36.75
+= 22 × 5.25
+
+**Answer:** Area = **115.5 cm²**
+
+</div>
 
 ## Type 5 — Combined solids (volume and surface area)
 
@@ -2720,7 +2892,35 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 **tan α = h/d₁ and tan β = h/d₂.** Eliminate h or d to find the unknown.
 
 **Example.** From A and B (100 m apart), angles of elevation of a tower are 60° and 30°. Find tower height.
-- tan 60° = h/d → d = h/√3. tan 30° = h/(d+100) → h/√3 + 100 = h√3 → 100 = h√3 − h/√3 = h(3−1)/√3 = 2h/√3 → h = **50√3 ≈ 86.6 m**.
+
+<div class="steps">
+
+**Let:** h = height of tower, d = distance from A (nearer point) to base of tower
+
+**Step 1:** From point A (angle = 60°):
+tan 60° = h / d
+√3 = h / d
+∴ d = h / √3
+
+**Step 2:** From point B (angle = 30°, which is 100 m behind A):
+tan 30° = h / (d + 100)
+1/√3 = h / (d + 100)
+∴ d + 100 = h√3
+
+**Step 3:** Substitute d = h/√3 into Step 2:
+h/√3 + 100 = h√3
+100 = h√3 − h/√3
+100 = h (√3 − 1/√3)
+100 = h × (3 − 1)/√3
+100 = 2h/√3
+
+**Step 4:** Solve for h:
+h = 100√3 / 2
+h = 50√3
+
+**Answer:** h = 50√3 ≈ **86.6 m**
+
+</div>
 
 ---
 
@@ -3509,7 +3709,14 @@ Watch out: "−4 %" or "−10 %" — students forget the markup direction.
 - Instalment paid end of year 1, present value = x / 1.10.
 - Instalment paid end of year 2, present value = x / (1.10)² = x / 1.21.
 - Sum of present values = loan amount: x/1.10 + x/1.21 = 2,210.
-- LCD = 1.21: (1.21x + 1.10x) / 1.21 / 1.10 = 2,210. Actually: x(1/1.10 + 1/1.21) = 2,210 → x × (1.21 + 1.10)/(1.10 × 1.21) = 2,210 → x × (2.31/1.331) = 2,210 → x × 1.7355 = 2,210 → **x ≈ ₹1,273**.
+- **Step 1:** Set up the equation:
+  x/1.10 + x/1.21 = 2,210
+- **Step 2:** Factor out x:
+  x × (1/1.10 + 1/1.21) = 2,210
+- **Step 3:** Compute the bracket:
+  (1.21 + 1.10) / (1.10 × 1.21) = 2.31 / 1.331 ≈ 1.7355
+- **Step 4:** Solve:
+  x = 2,210 / 1.7355 ≈ **₹1,273**
 
 **Quick way (memorise the 2-instalment shortcut).** For loan L at rate r %, 2 equal annual instalments: each = L × r × (1+r)² / [(1+r)² + (1+r)] = L × r × (1+r) / (2+r) where r in decimal.
 - Here L = 2,210, r = 0.10: each = 2210 × 0.10 × 1.10 / 2.10 = 243.10 / 2.10 = **₹115.76**? Doesn't match.
@@ -3636,9 +3843,47 @@ Watch out: "−4 %" or "−10 %" — students forget the markup direction.
 
 ***Watch out:*** Students set up (5x+8)/(3x+8) = 5/7, swapping numerator and denominator.
 
-**A similar question:** Two numbers in ratio 2 : 3. After subtracting 4 from each, ratio = 1 : 2. Set up (2x−4)/(3x−4) = 1/2 → 2(2x−4) = 3x−4 → 4x−8 = 3x−4 → x = 4. Numbers = **8 and 12**.
+**A similar question:** Two numbers in ratio 2 : 3. After subtracting 4 from each, ratio = 1 : 2. Find the numbers.
 
-**Another twist — Multiplied modification.** Two numbers in ratio 4 : 5. If both are doubled and 10 added to each, the new ratio = 9 : 11. Set up (8x+10)/(10x+10) = 9/11 → 11(8x+10) = 9(10x+10) → 88x + 110 = 90x + 90 → 2x = 20 → x = 10. Numbers = **40 and 50**.
+<div class="steps">
+
+**Let:** numbers = 2x and 3x
+
+**Step 1:** Set up equation after modification:
+(2x − 4) / (3x − 4) = 1/2
+
+**Step 2:** Cross-multiply:
+2(2x − 4) = 1(3x − 4)
+4x − 8 = 3x − 4
+
+**Step 3:** Solve:
+x = 4
+
+**Answer:** Numbers = 2(4) = **8** and 3(4) = **12**
+
+</div>
+
+**Another twist — Multiplied modification.** Two numbers in ratio 4 : 5. Both are doubled and 10 added to each; new ratio = 9 : 11. Find the numbers.
+
+<div class="steps">
+
+**Let:** numbers = 4x and 5x
+
+**Step 1:** After doubling and adding 10:
+New numbers = (2 × 4x + 10) = 8x + 10 and (2 × 5x + 10) = 10x + 10
+
+**Step 2:** Set up equation:
+(8x + 10) / (10x + 10) = 9/11
+
+**Step 3:** Cross-multiply:
+11(8x + 10) = 9(10x + 10)
+88x + 110 = 90x + 90
+20 = 2x
+x = 10
+
+**Answer:** Numbers = 4(10) = **40** and 5(10) = **50**
+
+</div>
 
 ### Section 4A — ADVANCED RATIO + AVERAGE (exam-level variations)
 
@@ -3742,9 +3987,41 @@ Watch out: "−4 %" or "−10 %" — students forget the markup direction.
 
 **Worth knowing:** Round-trip average speed (when distance same in both directions) = 2(d₁s₁s₂)/(s₁+s₂)·(1/d) → simplified: **harmonic mean = 2 × down × up / (down + up)**. Here = 2 × 12 × 6 / 18 = 144/18 = **8 km/h**. Total distance 48 km / 8 km/h = 6 hours ✓.
 
-**A similar question — Find boat speed.** Boat takes 4 h downstream and 6 h upstream for 24 km each way. Down = 24/4 = 6 km/h; Up = 24/6 = 4 km/h. Boat in still water = (down + up)/2 = (6+4)/2 = **5 km/h**. Stream = (down − up)/2 = (6−4)/2 = **1 km/h**.
+**A similar question — Find boat speed.** Boat takes 4 h downstream and 6 h upstream for 24 km each way.
 
-**Another twist — Stream effect on time.** A boat takes twice as long upstream as downstream. If boat in still water = 12 km/h, find stream speed. Let stream = s. Down = 12 + s, up = 12 − s. Time ratio = up/down = (12+s)/(12−s) = 2/1 (since up takes twice). Solve: 12+s = 2(12−s) → 12+s = 24−2s → 3s = 12 → s = **4 km/h**.
+<div class="steps">
+
+**Step 1:** Downstream speed = 24 ÷ 4 = 6 km/h
+
+**Step 2:** Upstream speed = 24 ÷ 6 = 4 km/h
+
+**Step 3:** Boat speed in still water = (6 + 4) ÷ 2 = **5 km/h**
+
+**Step 4:** Stream speed = (6 − 4) ÷ 2 = **1 km/h**
+
+</div>
+
+**Another twist — Stream effect on time.** A boat takes twice as long upstream as downstream. Boat in still water = 12 km/h. Find stream speed.
+
+<div class="steps">
+
+**Let:** stream speed = s km/h
+
+**Step 1:** Downstream speed = 12 + s
+Upstream speed = 12 − s
+
+**Step 2:** Upstream takes twice as long → time ratio = 2 : 1
+∴ (12 + s) / (12 − s) = 2/1
+*(same distance, so faster speed = shorter time → speed ratio is inverted)*
+
+**Step 3:** Cross-multiply:
+12 + s = 2(12 − s)
+12 + s = 24 − 2s
+3s = 12
+
+**Answer:** s = **4 km/h**
+
+</div>
 
 ---
 
@@ -5133,7 +5410,24 @@ In 2025, Unit A's production increased by 25 %, Unit B's increased by 20 %, and 
 
 **A similar question.** Distance between (0, 0) and (5, 12) = √(25 + 144) = √169 = **13** (a 5-12-13 triple).
 
-**Another twist — Find a missing coordinate.** Distance between (1, 2) and (4, k) = 5. Solve √(9 + (k−2)²) = 5 → 9 + (k−2)² = 25 → (k−2)² = 16 → k − 2 = ±4 → **k = 6 or k = −2**.
+**Another twist — Find a missing coordinate.** Distance between (1, 2) and (4, k) = 5. Find k.
+
+<div class="steps">
+
+**Step 1:** Apply distance formula:
+√[(4 − 1)² + (k − 2)²] = 5
+√[9 + (k − 2)²] = 5
+
+**Step 2:** Square both sides:
+9 + (k − 2)² = 25
+(k − 2)² = 16
+
+**Step 3:** Take square root:
+k − 2 = ±4
+
+**Answer:** k = 2 + 4 = **6** or k = 2 − 4 = **−2**
+
+</div>
 
 ---
 

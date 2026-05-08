@@ -500,9 +500,13 @@ Crude ASCII-art diagrams are banned from this book and from shipped questions. I
 <div class="steps">
 
 **Step 1 — First differences (Δ¹):** 5, 8, 11, ?, ?
+
 **Step 2 — Second differences (Δ²):** 3, 3, 3 → constant! (Arithmetic progression)
+
 **Step 3 — Next Δ¹:** 11 + 3 = **14**
+
 **Step 4 — Missing term:** 28 + 14 = **42**
+
 **Step 5 — Verify last:** 42 + 15 = 57 ✓ (Δ¹ = 14, next Δ² = 3 → Δ¹ = 15)
 
 </div>
@@ -587,7 +591,9 @@ B=2, D=4, G=7, K=11, ?
 <div class="steps">
 
 **Step 1 — Net North-South:** 4 km N − 4 km S = **0** (cancelled)
+
 **Step 2 — Net East-West:** 3 km E − 6 km W = **3 km West** (net)
+
 **Step 3 — Distance from start:** $\sqrt{0^2 + 3^2}$ = **3 km due West**
 
 </div>
@@ -607,8 +613,11 @@ B=2, D=4, G=7, K=11, ?
 <div class="steps">
 
 **Step 1:** "Mother's husband" = her **father**
+
 **Step 2:** "Father's mother" = her **grandmother**
+
 **Step 3:** "Only son of grandmother" = her **father** (no uncles; only son)
+
 **Answer:** Man is her **father**
 
 </div>
