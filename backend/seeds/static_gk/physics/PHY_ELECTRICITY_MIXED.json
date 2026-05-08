@@ -1,248 +1,191 @@
 {
   "schema_version": 1,
   "subject": "Physics",
-  "topic": "Electricity & magnetism — mixed tiers",
+  "topic": "Current Electricity — Ohm's Law, Resistance, Circuits",
   "topic_code": "PHY_ELECTRICITY_MIXED",
-  "description": "Ohm's law, circuits, electromagnetism, practical devices",
+  "generated_at": "2026-05-08",
   "questions": [
     {
-      "stem": "OHM'S LAW states that the current through a conductor (at constant temperature) is:",
+      "id": "sgk_PHY_ELECTRICITY_MIXED_001",
+      "text": "Ohm's Law states that the current through a conductor is directly proportional to the voltage across it. If the voltage is 12 V and the resistance is 4 Ω, the current is ____.",
       "options": [
         {
-          "option_text": "Proportional to the resistance",
-          "is_correct": false
+          "key": "A",
+          "text": "3 A"
         },
         {
-          "option_text": "Proportional to the voltage applied",
-          "is_correct": true
+          "key": "B",
+          "text": "4 A"
         },
         {
-          "option_text": "Inversely proportional to voltage",
-          "is_correct": false
+          "key": "C",
+          "text": "48 A"
         },
         {
-          "option_text": "Independent of voltage",
-          "is_correct": false
+          "key": "D",
+          "text": "2 A"
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Ohm's law: V = IR → I ∝ V (when R constant). Metal conductors are 'ohmic' — diodes, filaments above threshold are non-ohmic. Georg Simon Ohm (German physicist, 1827).",
-      "subject": "Physics",
-      "topic": "Electricity & magnetism — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-phy-elec-01",
-      "generated_at": "2026-04-22T14:10:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_MIXED_00001"
+      "correct": "A",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "explanation": "I = V/R = 12/4 = 3 A. Ohm's Law: V = IR. Common errors: multiplying instead of dividing (12×4=48), or inverting incorrectly (4/12)."
     },
     {
-      "stem": "The SI unit of ELECTRIC CURRENT is:",
+      "id": "sgk_PHY_ELECTRICITY_MIXED_002",
+      "text": "The SI unit of electrical resistance is the Ohm (Ω), named after Georg Ohm. One Ohm is defined as ____.",
       "options": [
         {
-          "option_text": "Volt",
-          "is_correct": false
+          "key": "A",
+          "text": "1 Volt per Ampere (V/A)"
         },
         {
-          "option_text": "Ampere",
-          "is_correct": true
+          "key": "B",
+          "text": "1 Ampere per Volt (A/V)"
         },
         {
-          "option_text": "Ohm",
-          "is_correct": false
+          "key": "C",
+          "text": "1 Watt per Volt (W/V)"
         },
         {
-          "option_text": "Coulomb",
-          "is_correct": false
+          "key": "D",
+          "text": "1 Joule per Coulomb (J/C)"
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Ampere (A) — SI base unit for electric current. Volt — potential difference. Ohm — resistance. Coulomb — electric charge (1 C = 1 A × 1 s). Watt — power (V × A).",
-      "subject": "Physics",
-      "topic": "Electricity & magnetism — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-phy-elec-02",
-      "generated_at": "2026-04-22T14:10:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_MIXED_00002"
+      "correct": "A",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "explanation": "From Ohm's Law: R = V/I. So 1 Ω = 1 V/A (one volt per ampere). Option B is conductance (Siemens, S = A/V). Option D defines 1 Volt (J/C), not Ohm."
     },
     {
-      "stem": "An electric bulb is marked '100 W, 220 V'. The resistance of the filament (at operating temperature) is:",
+      "id": "sgk_PHY_ELECTRICITY_MIXED_003",
+      "text": "Three resistors of 2 Ω, 3 Ω, and 6 Ω are connected in parallel. What is the equivalent resistance of the combination?",
       "options": [
         {
-          "option_text": "220 Ω",
-          "is_correct": false
+          "key": "A",
+          "text": "1 Ω"
         },
         {
-          "option_text": "484 Ω",
-          "is_correct": true
+          "key": "B",
+          "text": "11 Ω"
         },
         {
-          "option_text": "100 Ω",
-          "is_correct": false
+          "key": "C",
+          "text": "2 Ω"
         },
         {
-          "option_text": "22 Ω",
-          "is_correct": false
+          "key": "D",
+          "text": "0.5 Ω"
         }
       ],
-      "correct_letter": "B",
-      "explanation": "P = V²/R → R = V²/P = 220²/100 = 48400/100 = 484 Ω.",
-      "subject": "Physics",
-      "topic": "Electricity & magnetism — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-phy-elec-03",
-      "generated_at": "2026-04-22T14:10:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_MIXED_00003"
+      "correct": "A",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "Parallel: 1/R = 1/2 + 1/3 + 1/6 = 3/6 + 2/6 + 1/6 = 6/6 = 1. So R = 1 Ω. In parallel, total resistance is always less than the smallest individual resistance (less than 2 Ω). Option B (11 Ω) is the series sum — a common error."
     },
     {
-      "stem": "FLEMING'S LEFT-HAND RULE is used to find the direction of:",
+      "id": "sgk_PHY_ELECTRICITY_MIXED_004",
+      "text": "Resistivity (ρ) of a conductor depends on ____.",
       "options": [
         {
-          "option_text": "Induced current in a generator",
-          "is_correct": false
+          "key": "A",
+          "text": "Material of the conductor and its temperature only"
         },
         {
-          "option_text": "Force on a current-carrying conductor in a magnetic field (motor)",
-          "is_correct": true
+          "key": "B",
+          "text": "Length, cross-section, material, and temperature combined"
         },
         {
-          "option_text": "Induced EMF in a transformer",
-          "is_correct": false
+          "key": "C",
+          "text": "Cross-sectional area and length of the conductor only"
         },
         {
-          "option_text": "Magnetic field around a straight wire",
-          "is_correct": false
+          "key": "D",
+          "text": "Only temperature, regardless of material composition"
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Fleming's LEFT-hand rule (Motor): thumb = Force, index = magnetic Field, middle = Current. Fleming's RIGHT-hand rule (Generator): thumb = motion, index = field, middle = induced current. Right-hand thumb rule: direction of magnetic field around a current-carrying conductor.",
-      "subject": "Physics",
-      "topic": "Electricity & magnetism — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-phy-elec-04",
-      "generated_at": "2026-04-22T14:10:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_MIXED_00004"
+      "correct": "A",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "Resistivity (ρ) is an intrinsic material property that depends on: (1) the material itself and (2) temperature. It does NOT depend on the conductor's shape or size. Resistance (R = ρL/A) depends on length and cross-section, but resistivity does not. This is a classic exam trap: confusing resistance with resistivity."
     },
     {
-      "stem": "A FUSE is a device that:",
+      "id": "sgk_PHY_ELECTRICITY_MIXED_005",
+      "text": "A 60 W bulb and a 100 W bulb are connected in series to a 220 V supply. Which bulb glows brighter?",
       "options": [
         {
-          "option_text": "Stores electrical energy",
-          "is_correct": false
+          "key": "A",
+          "text": "60 W bulb — higher resistance in series means more voltage drop"
         },
         {
-          "option_text": "Breaks the circuit when current exceeds a safe limit (melts)",
-          "is_correct": true
+          "key": "B",
+          "text": "100 W bulb — higher rated wattage always means more brightness"
         },
         {
-          "option_text": "Converts AC to DC",
-          "is_correct": false
+          "key": "C",
+          "text": "Both glow equally — series connection equalises current only"
         },
         {
-          "option_text": "Measures voltage",
-          "is_correct": false
+          "key": "D",
+          "text": "Neither glows — series connection prevents current flow entirely"
         }
       ],
-      "correct_letter": "B",
-      "explanation": "A fuse is typically a thin wire of low melting point (tin-lead alloy) placed in series. When current exceeds the rated value (e.g., 5 A), the wire heats up and melts, breaking the circuit and protecting appliances. MCBs are modern resettable alternatives.",
-      "subject": "Physics",
-      "topic": "Electricity & magnetism — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-phy-elec-05",
-      "generated_at": "2026-04-22T14:10:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_MIXED_00005"
+      "correct": "A",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "Resistance of bulb = V²/P. 60 W bulb has R = 220²/60 ≈ 807 Ω; 100 W bulb has R = 220²/100 = 484 Ω. In series, same current flows, but P = I²R: higher resistance = more power dissipation. So the 60 W (higher resistance) bulb glows brighter in series — counterintuitively the lower-rated bulb wins."
     },
     {
-      "stem": "In an AC transmission system, the MAIN reason for using HIGH VOLTAGE for long-distance transmission is:",
+      "id": "sgk_PHY_ELECTRICITY_MIXED_006",
+      "text": "A household electric iron is rated 1000 W at 220 V. What is the current drawn by the iron during normal operation?",
       "options": [
         {
-          "option_text": "Higher voltage carries more power",
-          "is_correct": false
+          "key": "A",
+          "text": "4.55 A (approximately 1000/220)"
         },
         {
-          "option_text": "To reduce transmission power losses (I²R)",
-          "is_correct": true
+          "key": "B",
+          "text": "2.20 A (approximately 1000/440)"
         },
         {
-          "option_text": "To avoid electrical shock hazards",
-          "is_correct": false
+          "key": "C",
+          "text": "10.0 A (exactly 1000/100)"
         },
         {
-          "option_text": "Indian regulations require it",
-          "is_correct": false
+          "key": "D",
+          "text": "220 A (extremely and dangerously high)"
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Power P = VI. To transmit same P at higher V, need lower I → power loss P_loss = I²R reduces quadratically. Hence transmission uses 220/400/765 kV lines. Step-up transformer at generation, step-down at distribution (down to 240 V AC in homes).",
-      "subject": "Physics",
-      "topic": "Electricity & magnetism — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-phy-elec-06",
-      "generated_at": "2026-04-22T14:10:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_MIXED_00006"
+      "correct": "A",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "explanation": "P = V × I → I = P/V = 1000/220 = 4.545... ≈ 4.55 A. Resistance = V/I = 220/4.55 ≈ 48.4 Ω, or equivalently R = V²/P = 220²/1000 = 48,400/1000 = 48.4 Ω. The current drawn (~4.55 A) is why household circuits use 5 A fuses for such appliances."
     },
     {
-      "stem": "A TRANSFORMER works on the principle of:",
+      "id": "sgk_PHY_ELECTRICITY_MIXED_007",
+      "text": "Two identical cells, each of EMF 1.5 V and internal resistance 0.5 Ω, are connected in series to a 2 Ω external resistor. What current flows through the circuit?",
       "options": [
         {
-          "option_text": "Ohm's law",
-          "is_correct": false
+          "key": "A",
+          "text": "1.0 A"
         },
         {
-          "option_text": "Mutual electromagnetic induction",
-          "is_correct": true
+          "key": "B",
+          "text": "1.5 A"
         },
         {
-          "option_text": "Coulomb's law",
-          "is_correct": false
+          "key": "C",
+          "text": "0.75 A"
         },
         {
-          "option_text": "Photoelectric effect",
-          "is_correct": false
+          "key": "D",
+          "text": "2.0 A"
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Transformer: alternating current in primary coil → changing magnetic flux → induces EMF in secondary coil (Faraday 1831). Works only with AC. Step-up (more secondary turns) / step-down (fewer secondary turns). Efficient power conversion without moving parts. Faraday's law.",
-      "subject": "Physics",
-      "topic": "Electricity & magnetism — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-phy-elec-07",
-      "generated_at": "2026-04-22T14:10:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_MIXED_00007",
-      "_fixes": [
-        {
-          "type": "option_tell_fix",
-          "was": "Mutual electromagnetic induction (Faraday's law)",
-          "now": "Mutual electromagnetic induction",
-          "moved_to_explanation": "Faraday's law"
-        }
-      ]
+      "correct": "A",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "explanation": "Series cells: Total EMF = 1.5+1.5 = 3 V. Total internal resistance = 0.5+0.5 = 1 Ω. Total resistance = 1+2 = 3 Ω. I = EMF/Total R = 3/3 = 1.0 A. If cells were in parallel: EMF=1.5V, r=0.25Ω, I=1.5/2.25=0.67A. Series gives higher current when external resistance is larger than internal."
     }
   ]
 }

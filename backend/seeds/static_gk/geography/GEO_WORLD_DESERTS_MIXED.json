@@ -1,156 +1,191 @@
 {
   "schema_version": 1,
   "subject": "Geography",
-  "topic": "World deserts — mixed tiers",
+  "topic": "World Deserts — Types, Locations, Features",
   "topic_code": "GEO_WORLD_DESERTS_MIXED",
-  "description": "Sahara, Gobi, Atacama, Thar — hot and cold deserts",
+  "generated_at": "2026-05-08",
   "questions": [
     {
-      "stem": "The largest hot desert in the world is the:",
+      "id": "sgk_GEO_WORLD_DESERTS_MIXED_001",
+      "text": "The Sahara is the world's largest hot desert, covering approximately 9.2 million sq km. It is located primarily in ____.",
       "options": [
-        {"option_text": "Gobi desert", "is_correct": false},
-        {"option_text": "Sahara desert", "is_correct": true},
-        {"option_text": "Kalahari desert", "is_correct": false},
-        {"option_text": "Arabian desert", "is_correct": false}
+        {
+          "key": "A",
+          "text": "North Africa — spanning 11 countries from Atlantic to Red Sea"
+        },
+        {
+          "key": "B",
+          "text": "Central Africa — covering the Congo Basin and surrounding region"
+        },
+        {
+          "key": "C",
+          "text": "West Asia — covering the Arabian Peninsula and Iran"
+        },
+        {
+          "key": "D",
+          "text": "Central Asia — covering Kazakhstan and surrounding countries"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "The Sahara — about 9 million km² — is the largest hot desert in the world, stretching across 10+ North African countries. If 'largest desert overall' is meant, Antarctica is larger (it is classified as a cold desert, ~14 million km²). The Gobi (cold desert — Mongolia and China) is about 1.3 million km²; Kalahari (southern Africa) ~0.9 million km²; Arabian ~2.3 million km².",
-      "subject": "Geography",
-      "topic": "World deserts — mixed tiers",
-      "topic_code": "GEO_WORLD_DESERTS_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-geo-de-01",
-      "generated_at": "2026-04-23T18:00:00+00:00",
-      "id": "sgk_GEO_WORLD_DESERTS_MIXED_00001"
+      "correct": "A",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "explanation": "The Sahara spans 11 North African countries from Mauritania/Morocco (Atlantic coast) to Sudan/Egypt (Red Sea). It is the world's largest HOT desert (note: Antarctica and Arctic are larger cold deserts). About 25% of the Sahara is sandy (erg); the rest is rocky plateau (hammada) and gravel plains (reg)."
     },
     {
-      "stem": "The Thar desert, also known as the Great Indian Desert, lies chiefly in:",
+      "id": "sgk_GEO_WORLD_DESERTS_MIXED_002",
+      "text": "Cold deserts form when ____.",
       "options": [
-        {"option_text": "Gujarat", "is_correct": false},
-        {"option_text": "Rajasthan", "is_correct": true},
-        {"option_text": "Punjab", "is_correct": false},
-        {"option_text": "Haryana", "is_correct": false}
+        {
+          "key": "A",
+          "text": "Cold, dry air descends in polar regions or rain-shadow zones at high altitude"
+        },
+        {
+          "key": "B",
+          "text": "Low solar radiation prevents evaporation, creating arid conditions naturally"
+        },
+        {
+          "key": "C",
+          "text": "Extremely cold temperatures freeze all available moisture into permafrost"
+        },
+        {
+          "key": "D",
+          "text": "Ocean currents cool the coastal air and prevent rainfall along coastlines"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "The Thar desert covers ~200,000 km² across western Rajasthan (largest share), Gujarat (Kachchh), Punjab and Haryana, and extends into Pakistan's Sindh and Cholistan. Rajasthan accounts for ~60 %. The Indira Gandhi Canal (completed in stages since 1986) has brought canal irrigation to parts of the desert, making some crop farming possible.",
-      "subject": "Geography",
-      "topic": "World deserts — mixed tiers",
-      "topic_code": "GEO_WORLD_DESERTS_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-geo-de-02",
-      "generated_at": "2026-04-23T18:00:00+00:00",
-      "id": "sgk_GEO_WORLD_DESERTS_MIXED_00002"
+      "correct": "A",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "explanation": "Cold deserts form through: (1) Polar high-pressure systems (descending cold dry air in Arctic/Antarctic); (2) Rain-shadow effect at high altitudes (e.g., Gobi behind Himalayas, Atacama behind Andes); (3) Continentality (distance from moisture sources). Examples: Gobi (Asia), Patagonian Desert (S. America), Arctic/Antarctic. Option D describes coastal fog deserts (like Namib), not cold deserts generally."
     },
     {
-      "stem": "The Atacama desert, often called the driest (non-polar) place on Earth, lies in:",
+      "id": "sgk_GEO_WORLD_DESERTS_MIXED_003",
+      "text": "The Atacama Desert in South America is one of the driest places on Earth. What makes it so hyperarid?",
       "options": [
-        {"option_text": "Peru", "is_correct": false},
-        {"option_text": "Chile", "is_correct": true},
-        {"option_text": "Argentina", "is_correct": false},
-        {"option_text": "Bolivia", "is_correct": false}
+        {
+          "key": "A",
+          "text": "Rain-shadow from the Andes + cold Humboldt Current preventing Pacific moisture"
+        },
+        {
+          "key": "B",
+          "text": "Proximity to the Amazon Basin creating a moisture diversion effect"
+        },
+        {
+          "key": "C",
+          "text": "The ITCZ permanently stalls over the Atacama preventing any rainfall"
+        },
+        {
+          "key": "D",
+          "text": "High altitude plateau prevents warm moist air from Pacific reaching it"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "The Atacama lies in northern Chile and is the driest non-polar desert — some weather stations have recorded essentially no rainfall for decades. Cold Humboldt current offshore + rain shadow of the Andes create the aridity. It is a major site for astronomical observatories (ALMA, VLT, Cerro Tololo) because of the clear dark skies, and produces most of the world's lithium (for EV batteries) and copper.",
-      "subject": "Geography",
-      "topic": "World deserts — mixed tiers",
-      "topic_code": "GEO_WORLD_DESERTS_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-geo-de-03",
-      "generated_at": "2026-04-23T18:00:00+00:00",
-      "id": "sgk_GEO_WORLD_DESERTS_MIXED_00003"
+      "correct": "A",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "Atacama's hyperaridity has two causes: (1) The Andes create a massive rain-shadow effect from the east (blocking Amazon moisture); (2) The cold Humboldt (Peru) Current along the Pacific coast cools the air, promoting coastal fog but preventing the condensation and uplift needed for rain. Some Atacama stations have never recorded rainfall. Annual rainfall: <1 mm."
     },
     {
-      "stem": "The Gobi desert, a cold desert of Central Asia, lies mainly in:",
+      "id": "sgk_GEO_WORLD_DESERTS_MIXED_004",
+      "text": "The Thar Desert, India's only major desert, is located primarily in ____.",
       "options": [
-        {"option_text": "Russia and Kazakhstan", "is_correct": false},
-        {"option_text": "Mongolia and China", "is_correct": true},
-        {"option_text": "Iran and Afghanistan", "is_correct": false},
-        {"option_text": "India and Pakistan", "is_correct": false}
+        {
+          "key": "A",
+          "text": "Rajasthan (and partly Gujarat/Haryana/Punjab)"
+        },
+        {
+          "key": "B",
+          "text": "Gujarat only, along the Rann of Kutch region"
+        },
+        {
+          "key": "C",
+          "text": "Madhya Pradesh and Chhattisgarh in central India"
+        },
+        {
+          "key": "D",
+          "text": "Jammu and Kashmir's cold desert beyond the Indus River"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "The Gobi — 'waterless place' in Mongolian — covers southern Mongolia and the Inner Mongolia region of northern China. It is a cold desert — summers are hot, winters freezing, and snow is possible. Not a sand desert mostly — largely rocky / gravelly terrain. Dinosaur fossils at the Flaming Cliffs (including the first Velociraptor) are from the Gobi.",
-      "subject": "Geography",
-      "topic": "World deserts — mixed tiers",
-      "topic_code": "GEO_WORLD_DESERTS_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-geo-de-04",
-      "generated_at": "2026-04-23T18:00:00+00:00",
-      "id": "sgk_GEO_WORLD_DESERTS_MIXED_00004"
+      "correct": "A",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "The Thar (Great Indian Desert) lies mainly in Rajasthan (~90%) and partly in Gujarat, southern Haryana, and southwestern Punjab. It extends into Pakistan (Sindh/Punjab provinces). Its aridity results from: distance from the ocean, rain-shadow of the Aravalli (which parallel rather than perpendicular to SW monsoon), and hot dry air. The cold desert of Ladakh/Spiti is a separate region."
     },
     {
-      "stem": "Match the desert with its continent. A. Patagonian. B. Kalahari. C. Great Victoria. D. Mojave. List-II: 1. South America, 2. Africa, 3. Australia, 4. North America.",
+      "id": "sgk_GEO_WORLD_DESERTS_MIXED_005",
+      "text": "The Namib Desert along the Atlantic coast of southern Africa is notable for ____.",
       "options": [
-        {"option_text": "A-1, B-2, C-3, D-4", "is_correct": true},
-        {"option_text": "A-2, B-1, C-3, D-4", "is_correct": false},
-        {"option_text": "A-1, B-3, C-2, D-4", "is_correct": false},
-        {"option_text": "A-4, B-2, C-3, D-1", "is_correct": false}
+        {
+          "key": "A",
+          "text": "Being one of the oldest and driest deserts sustained by the cold Benguela Current"
+        },
+        {
+          "key": "B",
+          "text": "Being the world's largest desert by area and highest sand dunes"
+        },
+        {
+          "key": "C",
+          "text": "Receiving seasonal rainfall from the Atlantic making it semi-arid"
+        },
+        {
+          "key": "D",
+          "text": "Its unique hot-spring ecosystem that supports diverse large mammals"
+        }
       ],
-      "correct_letter": "A",
-      "explanation": "Patagonian — Argentina (South America), cold semi-arid. Kalahari — Botswana, Namibia, South Africa. Great Victoria — largest desert of Australia. Mojave — south-western USA (Death Valley is in the Mojave). Other world deserts worth knowing — Sonoran (USA/Mexico), Karakum (Turkmenistan), Namib (Namibia — oldest desert in the world).",
-      "subject": "Geography",
-      "topic": "World deserts — mixed tiers",
-      "topic_code": "GEO_WORLD_DESERTS_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-geo-de-05",
-      "generated_at": "2026-04-23T18:00:00+00:00",
-      "id": "sgk_GEO_WORLD_DESERTS_MIXED_00005"
+      "correct": "A",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "The Namib (meaning 'vast place' in the Nama language) is one of the world's oldest deserts (~80 million years) along Namibia-Angola's Atlantic coast. Its aridity is sustained by the cold Benguela Current that cools coastal air, creating coastal fog but preventing rainfall. It is home to the world's tallest sand dunes (Sossusvlei, ~300 m). It is NOT the world's largest desert — that is Antarctica."
     },
     {
-      "stem": "Antarctica is technically classified as a:",
+      "id": "sgk_GEO_WORLD_DESERTS_MIXED_006",
+      "text": "Desert pavement (also called reg or serir) forms through a process called ____.",
       "options": [
-        {"option_text": "Polar forest", "is_correct": false},
-        {"option_text": "Cold desert", "is_correct": true},
-        {"option_text": "Tundra wetland", "is_correct": false},
-        {"option_text": "Icecap grassland", "is_correct": false}
+        {
+          "key": "A",
+          "text": "Deflation — wind removes fine sand and dust, leaving behind a coarse gravel surface"
+        },
+        {
+          "key": "B",
+          "text": "Deposition — wind deposits coarse particles that accumulate on the surface"
+        },
+        {
+          "key": "C",
+          "text": "Chemical weathering — acids dissolve fine material leaving rocky outcrops"
+        },
+        {
+          "key": "D",
+          "text": "Fluvial erosion — seasonal floods wash away topsoil exposing bedrock"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Antarctica receives less than 200 mm of precipitation a year on average (most as snow), which qualifies it as a desert. It is by that measure the largest desert on Earth (~14 million km²). Very low humidity and extreme cold mean plant life is essentially limited to mosses and lichens near the coast. The interior is among the driest places on the planet.",
-      "subject": "Geography",
-      "topic": "World deserts — mixed tiers",
-      "topic_code": "GEO_WORLD_DESERTS_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-geo-de-06",
-      "generated_at": "2026-04-23T18:00:00+00:00",
-      "id": "sgk_GEO_WORLD_DESERTS_MIXED_00006"
+      "correct": "A",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "explanation": "Desert pavement forms primarily by deflation: wind selectively removes fine particles (sand, silt, dust), concentrating coarser pebbles and gravels on the surface. The remaining stone layer then protects the underlying sediment from further erosion. This pavements covers ~70% of the Sahara (contrary to the popular image of endless sand dunes)."
     },
     {
-      "stem": "The term 'wadi', often used in discussions of desert landforms, refers to a:",
+      "id": "sgk_GEO_WORLD_DESERTS_MIXED_007",
+      "text": "The Gobi Desert, spanning China and Mongolia, is a cold desert. Which statement about the Gobi is INCORRECT?",
       "options": [
-        {"option_text": "Sand dune", "is_correct": false},
-        {"option_text": "Dry valley or stream bed", "is_correct": true},
-        {"option_text": "Desert oasis", "is_correct": false},
-        {"option_text": "Salt pan", "is_correct": false}
+        {
+          "key": "A",
+          "text": "It lies in the rain-shadow of the Himalayas and Tibetan Plateau"
+        },
+        {
+          "key": "B",
+          "text": "It consists mostly of bare rock and gravel rather than sandy dunes"
+        },
+        {
+          "key": "C",
+          "text": "It experiences extreme temperature ranges: hot summers and cold winters"
+        },
+        {
+          "key": "D",
+          "text": "It is expanding northward due to desertification, threatening the Aral Sea basin"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "A wadi (Arabic) is a valley or dry stream bed that carries water only during rare rainstorms. Flash floods in wadis are a serious hazard in Middle-Eastern / North African deserts. Sand dunes — ergs (big sand seas), barchans (crescent-shaped dunes); an oasis — green patch with natural water; salt pans (sabkhas) are flat evaporite surfaces, e.g., Rann of Kachchh.",
-      "subject": "Geography",
-      "topic": "World deserts — mixed tiers",
-      "topic_code": "GEO_WORLD_DESERTS_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-geo-de-07",
-      "generated_at": "2026-04-23T18:00:00+00:00",
-      "id": "sgk_GEO_WORLD_DESERTS_MIXED_00007"
+      "correct": "D",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "explanation": "The Gobi is expanding SOUTHWARD into China (threatening the North China Plain and Yellow River basin) due to overgrazing, deforestation, and climate change — not northward toward the Aral Sea. Options A, B, and C are all correct: Gobi lies in the Himalayan rain-shadow; only ~5% is sandy; temperatures range from +40°C summer to −40°C winter. The Aral Sea crisis is in Central Asia (Kazakhstan/Uzbekistan), separate from the Gobi."
     }
   ]
 }

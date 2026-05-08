@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Coding-Decoding — Letter Shift and Pattern",
+  "topic_code": "REAS_CODING_DECODING_II_MIXED",
+  "generated_at": "2026-05-08",
+  "questions": [
+    {
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_001",
+      "text": "In a code, each letter is shifted +3 (A→D, B→E...). 'CAT' is coded as 'FDW'. How is 'BIRD' coded?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ELUG"
+        },
+        {
+          "key": "B",
+          "text": "EKVG"
+        },
+        {
+          "key": "C",
+          "text": "DLUG"
+        },
+        {
+          "key": "D",
+          "text": "ELMG"
+        }
+      ],
+      "correct": "A",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "explanation": "Each letter +3: B(2)+3=E(5), I(9)+3=L(12), R(18)+3=U(21), D(4)+3=G(7) → ELUG. Verify with given: C(3)+3=F, A(1)+3=D, T(20)+3=W → FDW ✓."
+    },
+    {
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_002",
+      "text": "In a code, each letter is replaced by its mirror in the alphabet (A↔Z, B↔Y, C↔X... so position n → position 27−n). 'COLD' is coded as 'XLWO'. How is 'HEAT' coded?",
+      "options": [
+        {
+          "key": "A",
+          "text": "SVZG"
+        },
+        {
+          "key": "B",
+          "text": "WSZA"
+        },
+        {
+          "key": "C",
+          "text": "SVYG"
+        },
+        {
+          "key": "D",
+          "text": "TVZG"
+        }
+      ],
+      "correct": "A",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "explanation": "Mirror rule: each position n maps to (27−n). H(8)→S(19), E(5)→V(22), A(1)→Z(26), T(20)→G(7) → SVZG. Verify: C(3)→X(24), O(15)→L(12), L(12)→O(15), D(4)→W(23) → XLWO ✓."
+    },
+    {
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_003",
+      "text": "In a code, each letter is shifted by its position in the word (+1 for 1st letter, +2 for 2nd, +3 for 3rd, +4 for 4th). 'WORD' is coded as 'XQUH'. How is 'STAR' coded?",
+      "options": [
+        {
+          "key": "A",
+          "text": "TVDV"
+        },
+        {
+          "key": "B",
+          "text": "TUDT"
+        },
+        {
+          "key": "C",
+          "text": "TVCU"
+        },
+        {
+          "key": "D",
+          "text": "TVCV"
+        }
+      ],
+      "correct": "A",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "S(19)+1=T(20), T(20)+2=V(22), A(1)+3=D(4), R(18)+4=V(22) → TVDV. Verify: W(23)+1=X(24), O(15)+2=Q(17), R(18)+3=U(21), D(4)+4=H(8) → XQUH ✓."
+    },
+    {
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_004",
+      "text": "In a code, the word is reversed and then each letter is shifted +1. 'CODE' is coded as 'FEPD'. How is 'LOVE' coded?",
+      "options": [
+        {
+          "key": "A",
+          "text": "FWPM"
+        },
+        {
+          "key": "B",
+          "text": "EWPM"
+        },
+        {
+          "key": "C",
+          "text": "FVPM"
+        },
+        {
+          "key": "D",
+          "text": "FWPN"
+        }
+      ],
+      "correct": "A",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "Reverse LOVE = EVOL. E+1=F, V+1=W, O+1=P, L+1=M → FWPM. Verify: CODE reversed = EDOC. E+1=F, D+1=E, O+1=P, C+1=D → FEPD ✓."
+    },
+    {
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_005",
+      "text": "In a code where each letter is shifted +1 (A→B, B→C...), what does the coded word 'GPPE' decode to?",
+      "options": [
+        {
+          "key": "A",
+          "text": "FOOD"
+        },
+        {
+          "key": "B",
+          "text": "FOND"
+        },
+        {
+          "key": "C",
+          "text": "FOLK"
+        },
+        {
+          "key": "D",
+          "text": "FOOT"
+        }
+      ],
+      "correct": "A",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "Decoding means reversing the +1 shift (apply −1): G(7)−1=F(6), P(16)−1=O(15), P(16)−1=O(15), E(5)−1=D(4) → FOOD. FOND would encode to GPOE (not GPPE); FOOT would encode to GPPE — wait, F+1=G, O+1=P, O+1=P, T+1=U → GPPU ≠ GPPE. FOOD: F+1=G, O+1=P, O+1=P, D+1=E → GPPE ✓."
+    },
+    {
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_006",
+      "text": "In a code, consonants are shifted −1 and vowels are shifted +2. 'FIRE' is coded as 'EKQG'. How is 'CALM' coded?",
+      "options": [
+        {
+          "key": "A",
+          "text": "BCKL"
+        },
+        {
+          "key": "B",
+          "text": "BCJL"
+        },
+        {
+          "key": "C",
+          "text": "BDKL"
+        },
+        {
+          "key": "D",
+          "text": "BCKM"
+        }
+      ],
+      "correct": "A",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "explanation": "C(cons, 3)−1=B(2), A(vowel, 1)+2=C(3), L(cons, 12)−1=K(11), M(cons, 13)−1=L(12) → BCKL. Verify FIRE: F(cons)−1=E, I(vowel)+2=K, R(cons)−1=Q, E(vowel)+2=G → EKQG ✓."
+    },
+    {
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_007",
+      "text": "In a code, each letter is first replaced by its mirror (A↔Z, n↔27−n) and then the entire word is reversed. 'CODE' is coded as 'VWLX'. How is 'STAR' coded?",
+      "options": [
+        {
+          "key": "A",
+          "text": "IZGH"
+        },
+        {
+          "key": "B",
+          "text": "HZGI"
+        },
+        {
+          "key": "C",
+          "text": "IZGJ"
+        },
+        {
+          "key": "D",
+          "text": "IYGH"
+        }
+      ],
+      "correct": "A",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "explanation": "Step 1 — mirror STAR: S(19)→H(8), T(20)→G(7), A(1)→Z(26), R(18)→I(9) → HGZI. Step 2 — reverse HGZI → IZGH. Verify CODE: C(3)→X(24), O(15)→L(12), D(4)→W(23), E(5)→V(22) → XLWV → reversed → VWLX ✓."
+    }
+  ]
+}
