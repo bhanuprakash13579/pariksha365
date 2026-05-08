@@ -9,7 +9,7 @@ date: "2026"
 
 <div class="examtip">
 
-Walk into any SSC CGL, IBPS PO or RRB exam and chemistry questions follow a brutal pattern: they are almost never about deep understanding. They are about recall — specific, well-targeted recall. Examiners love three things above all:
+Walk into any SSC CGL, IBPS PO or RRB exam and chemistry questions follow a brutal pattern: they are almost never about deep understanding. They are about recall — specific, well-targeted recall. Three categories account for 80% of chemistry questions:
 
 **1. Everyday names vs chemical names** ("What is the chemical name of baking soda?") — this appears in almost every paper.
 
@@ -77,7 +77,6 @@ Sublimation is a high-frequency topic. Substances that sublime directly from sol
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -104,7 +103,7 @@ flowchart TD
 
 ### The Atomic Model: A History Worth Knowing
 
-Examiners love "who discovered what?" questions in atomic structure. Learn this sequence cold.
+"Who discovered what?" questions on atomic structure are a fixture — appears 1–2 times per paper. Learn this sequence cold.
 
 | Scientist | Year | Contribution |
 |-----------|------|--------------|
@@ -141,7 +140,6 @@ To remember isotopes vs isobars: **"Same Z = IsoTopes (T = Top = atomic number o
 \newpage
 
 # PART B — THE PERIODIC TABLE
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -232,7 +230,6 @@ Electronegativity decreasing order: **F > O > N > Cl > Br > I**. Memory: **"Fren
 
 # PART C — CHEMICAL BONDING AND REACTIONS
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -293,7 +290,6 @@ Hydrogen bonding explains why water is liquid at room temperature (small molecul
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -349,7 +345,6 @@ Students confuse "oxidation" with "gaining oxygen" — that is only the old, inc
 
 # PART D — ACIDS, BASES, SALTS
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -382,7 +377,6 @@ flowchart TD
 | Lewis (1923) | Electron-pair acceptor | Electron-pair donor | Most general; covers all |
 
 Lewis theory is the broadest. AlCl₃ is a Lewis acid (accepts electrons) even though it has no H⁺ to give.
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -433,7 +427,6 @@ Blood pH is 7.35–7.45 — slightly alkaline. A drop below 7.35 causes acidosis
 
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -471,7 +464,6 @@ flowchart TD
 Litmus: **A-Red, B-Blue** — Acids turn litmus Red, Bases turn it Blue. Phenolphthalein: **colourless in acid, PiNk in base** — the P is for Pink in base.
 
 </div>
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -514,7 +506,6 @@ Aqua regia = 3 parts HCl + 1 part HNO₃ (by volume). It dissolves gold and plat
 
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart LR
@@ -544,7 +535,6 @@ flowchart LR
 | Calcium hydroxide | Ca(OH)₂ | Slaked lime; whitewash, mortar |
 | Magnesium hydroxide | Mg(OH)₂ | Milk of magnesia; antacid |
 | Ammonium hydroxide | NH₄OH | Household cleaner |
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -587,7 +577,6 @@ Baking soda is NaHCO₃ (sodium bicarbonate). It is mildly basic (pH ~8.3). When
 
 # PART E — METALS AND THE ACTIVITY SERIES
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -621,7 +610,6 @@ flowchart TD
 - **Tungsten (W)** — highest melting point among all metals (3422 °C). Used in light bulb filaments.
 - **Lithium (Li)** — lightest metal (density 0.534 g/cm³).
 - **Osmium (Os)** — densest naturally occurring metal.
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -672,7 +660,6 @@ P = Potassium (K), S = Sodium (Na), C = Calcium (Ca), M = Magnesium (Mg), A = Al
 
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -713,7 +700,6 @@ flowchart TD
 Hall-Héroult process (1886): Electrolysis of alumina (Al₂O₃) dissolved in molten cryolite (Na₃AlF₆). This is how all commercial aluminium is made. Cryolite is the solvent that lowers the melting point from 2050 °C to around 950 °C, making the process practical.
 
 </div>
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -762,7 +748,6 @@ Galvanising uses zinc as a protective coat. Zinc is above iron in the activity s
 
 # PART F — ORGANIC CHEMISTRY
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -788,7 +773,6 @@ flowchart TD
 ## Chapter F1 — Why Carbon Is Special
 
 Carbon forms 4 bonds (tetravalent), chains indefinitely with itself (catenation), and forms stable double and triple bonds. Result: over 10 million known organic compounds versus about 500,000 for all other elements combined. No other element comes close.
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -833,7 +817,6 @@ Ethene (ethylene) is the plant hormone that triggers fruit ripening. This is why
 
 Ethyne (acetylene, C₂H₂) is the most important. It burns at over 3000 °C with oxygen — used in welding (oxyacetylene torch).
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -867,7 +850,6 @@ flowchart TD
 | Ester | −COO− | Ester | Ethyl acetate — nail polish remover solvent |
 | Amine | −NH₂ | Amine | Methylamine |
 | Halide | −X | Haloalkane | Chloroform (CHCl₃) |
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -943,7 +925,6 @@ Hydrogen has by far the highest calorific value — nearly 3× petrol. This is w
 
 # PART G — POLYMERS AND FIBRES
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -975,7 +956,6 @@ flowchart TD
 - **Condensation polymerisation** — monomers join with release of a small molecule like water or HCl (e.g., nylon, polyester, bakelite).
 - **Thermoplastic** — softens on heating, can be remoulded. (PVC, polythene, polypropylene)
 - **Thermosetting** — once set, cannot be melted again. (Bakelite, melamine, epoxy resin)
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1026,7 +1006,6 @@ Three "first" questions that appear repeatedly: **First synthetic plastic = Bake
 
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1057,7 +1036,6 @@ Natural rubber (polyisoprene) is sticky, weak, and melts in summer heat. In 1839
 \newpage
 
 # PART H — EVERYDAY CHEMISTRY
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1099,7 +1077,6 @@ flowchart TD
 | Mustard oil | Argemone oil | HNO₃ turns yellow (sanguinarine test) |
 | Pepper | Papaya seeds | Water — papaya seeds are lighter, float |
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1138,7 +1115,6 @@ Synthetic detergents (alkyl benzene sulphonates) work in hard water because thei
 
 - **Temporary hardness** — caused by dissolved Ca(HCO₃)₂ and Mg(HCO₃)₂. Removed by boiling (bicarbonates decompose to insoluble carbonates that precipitate).
 - **Permanent hardness** — caused by CaSO₄, MgSO₄, CaCl₂. Not removed by boiling. Removed by ion-exchange resins (zeolite) or adding Na₂CO₃ (washing soda).
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1188,7 +1164,6 @@ Penicillin — discovered by Alexander Fleming in **1928** when he noticed the m
 \newpage
 
 # PART I — ENVIRONMENTAL CHEMISTRY
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1240,7 +1215,6 @@ The main greenhouse gas by volume is CO₂. But the strongest greenhouse gas by 
 
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1271,7 +1245,6 @@ flowchart TD
 - The ozone hole over Antarctica was discovered in 1985.
 - **Montreal Protocol (1987)** — international treaty phasing out CFCs. Most successful environmental treaty.
 - **Kigali Amendment (2016)** — extends Montreal Protocol to phase out HFCs (hydrofluorocarbons), which replaced CFCs but are potent greenhouse gases.
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1318,7 +1291,7 @@ flowchart TD
 
 # PART T — DISCOVERIES AND INVENTORS IN CHEMISTRY
 
-This section is pure exam gold — learn the discoverer and year for each entry.
+Discovery + year questions appear in every SSC and banking paper — learn each entry here.
 
 | Discovery / Invention | Person | Year |
 |----------------------|--------|------|
@@ -1421,7 +1394,6 @@ Plaster of Paris vs Gypsum — a classic trap: Gypsum is CaSO₄·2H₂O (two wa
 
 # PART V — ALLOYS AND METALLURGY
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1491,7 +1463,6 @@ Brass = copper + zinc. Bronze = copper + tin. These two are confused in nearly e
 | Phosphorus | P | Root growth, flower and fruit development | Purple/reddish leaves, poor root system |
 | Potassium | K | Water regulation, disease resistance, stem strength | Leaf-edge scorching (marginal necrosis) |
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1523,7 +1494,6 @@ flowchart TD
 | Ammonium nitrate | NH₄NO₃ | 33–34% | Also explosive |
 | Calcium ammonium nitrate (CAN) | NH₄NO₃ + CaCO₃ | 25–26% | Safer form |
 | Sodium nitrate (Chile saltpetre) | NaNO₃ | 16% | Natural source |
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1567,7 +1537,6 @@ Rhizobium bacteria live in root nodules of legumes (pulses — peas, beans, lent
 \newpage
 
 # PART AA — INDUSTRIAL PROCESSES
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1641,7 +1610,6 @@ For the three big acid/base industrial processes: **"Haber makes ammonia (H for 
 | Alkyne (C≡C) | -yne | Ethyne (acetylene) |
 | Alkane (no double bond) | -ane | Methane, ethane |
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1678,7 +1646,6 @@ flowchart TD
 | **Aldol condensation** | 2 aldehydes (with α-H) → β-hydroxy aldehyde | C-C bond formation |
 | **Friedel-Crafts** | Benzene + R-Cl (AlCl₃) → alkylbenzene | Aromatic alkylation |
 | **Sandmeyer** | Aryl-N₂⁺ + CuX → aryl-X | Aryl halide synthesis |
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1722,7 +1689,6 @@ flowchart LR
 \newpage
 
 # PART AC — BIOMOLECULES
-
 
 <div class="chapter-summary">
 <div class="mermaid">

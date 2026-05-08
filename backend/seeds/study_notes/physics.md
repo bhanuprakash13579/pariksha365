@@ -87,7 +87,6 @@ The commercial unit of electrical energy is 1 kilowatt-hour (kWh) = 1 unit on yo
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -154,7 +153,6 @@ Where: u = initial velocity, v = final velocity, a = acceleration, t = time, s =
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -212,7 +210,6 @@ Escape velocity from Earth = **11.2 km/s** (~40,300 km/h). This is the minimum s
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -252,7 +249,6 @@ Classic example: A pendulum at its highest point has maximum PE and zero KE. At 
 \newpage
 
 # PART B — PROPERTIES OF MATTER
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -297,7 +293,6 @@ Ice floats on water — this is anomalous expansion. Water expands on freezing (
 
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -330,7 +325,6 @@ flowchart TD
 \newpage
 
 # PART C — HEAT AND THERMODYNAMICS
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -365,7 +359,6 @@ Conversion: °F = (9/5 × °C) + 32. Kelvin = Celsius + 273.15.
 
 Absolute zero (0 K = −273.15 °C) — theoretically the coldest possible temperature; particles have minimum possible energy.
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -398,7 +391,6 @@ flowchart TD
 The Sun's heat reaches Earth through the vacuum of space — this is radiation (electromagnetic waves). Only radiation requires no medium. This is why a thermos (vacuum flask) has a silvered interior — it prevents heat loss by all three mechanisms: vacuum stops conduction and convection, silvering reflects radiation.
 
 </div>
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -438,7 +430,6 @@ Steam burns are worse than boiling water burns at the same 100 °C — because s
 
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -475,7 +466,6 @@ A refrigerator moves heat from cold to hot — but only by consuming electricity
 \newpage
 
 # PART D — WAVES, SOUND, AND LIGHT
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -536,7 +526,6 @@ The apparent frequency of a sound changes when the source and observer are in re
 Sound Navigation and Ranging — uses ultrasonic pulses to detect underwater objects and map the ocean floor. The time for the echo to return, multiplied by the speed of sound in water, gives twice the distance to the object.
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -656,7 +645,6 @@ Radio → Microwaves → Infrared → Visible light → Ultraviolet → X-rays �
 
 # PART E — ELECTRICITY AND MAGNETISM
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -717,7 +705,6 @@ Why is AC preferred for power transmission? Transformers can step up voltage for
 - **Earthing** — safety connection to the ground. Any leakage current flows harmlessly into the ground instead of through a person.
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -793,7 +780,6 @@ Works on mutual induction — the changing current in the primary coil creates a
 
 # PART F — MODERN PHYSICS
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -826,7 +812,6 @@ flowchart TD
 | Quantum mechanical | 1926 | Schrödinger / Heisenberg | Electrons exist as probability clouds (orbitals) |
 
 Rutherford used the famous gold-foil (alpha-scattering) experiment — firing alpha particles at gold foil. Most passed through (empty space), some deflected slightly (electrons), and a few bounced straight back (nucleus). He concluded the atom is mostly empty with a tiny, dense, positive nucleus.
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -863,7 +848,6 @@ flowchart TD
 The heaviest sub-atomic particle is the **neutron** (just slightly heavier than the proton). Three quick-recall facts: electron → Thomson 1897, proton → Rutherford 1919, neutron → Chadwick 1932. The first Nobel Prize in Physics (1901) went to Röntgen for X-rays.
 
 </div>
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -902,7 +886,6 @@ Henri Becquerel discovered radioactivity in 1896 (from uranium). Marie and Pierr
 Penetrating power order: **α < β < γ** (alphabetical = weakest to strongest). What stops them: **Paper, Aluminium, Lead** — think PAL. Alpha needs a PAL to stop it (paper stops alpha). Aluminium stops beta. Lead stops gamma.
 
 </div>
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -953,7 +936,6 @@ Einstein's mass-energy equivalence. Even a tiny mass (m) holds an enormous amoun
 ### Radiocarbon Dating
 
 Carbon-14 (¹⁴C) is a radioactive isotope of carbon with half-life of **5730 years**. Living organisms maintain a constant ¹⁴C/¹²C ratio by continuously taking in carbon. When they die, ¹⁴C decays without being replenished. Measuring the remaining ¹⁴C ratio tells us the age of the organism. Used in archaeology (up to ~50,000 years back).
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1094,7 +1076,7 @@ Indian scientists to remember for physics: **C.V. Raman** (Raman Effect, Nobel P
 
 # PART X — DAILY-LIFE PHYSICS ("WHY" QUESTIONS)
 
-Examiners love this section. One to two questions on everyday physics phenomena appear in almost every competitive exam. Learn the explanation for each.
+1–2 questions on everyday physics phenomena appear in almost every competitive exam. For each phenomenon below, know both the fact and the reason behind it.
 
 | Phenomenon | Explanation |
 |-----------|------------|
@@ -1131,7 +1113,6 @@ Examiners love this section. One to two questions on everyday physics phenomena 
 \newpage
 
 # PART AA — KEY CONSTANTS AND FORMULAS
-
 
 <div class="chapter-summary">
 <div class="mermaid">

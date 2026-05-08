@@ -152,7 +152,7 @@ Walk this path in your head three times — you will never forget the launcher h
 | 2024 | **XPoSat** | X-ray polarimetry satellite (New Year's Day) |
 | 2025 | **SpaDeX** | Space Docking Experiment — docking capability demo |
 
-### 🌓 Chandrayaan-3 Deep Dive
+### Chandrayaan-3 — Mission Details
 
 - **Launch:** 14 July 2023, LVM3-M4, Sriharikota.
 - **Arrival:** Lunar orbit 5 Aug; landing 23 Aug 2023, 6:04 PM IST.
@@ -212,7 +212,6 @@ Explain to a class 10 student: **PSLV** is India's workhorse rocket — it launc
 
 \newpage
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -265,7 +264,6 @@ flowchart TD
 \newpage
 
 # PART B — DEFENCE TECHNOLOGY: GUARDING THE NATION
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -394,7 +392,6 @@ Imagine India has three shields: **Prithvi** for neighbours up close, **Agni** f
 
 # PART C — NUCLEAR PROGRAMME
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -475,7 +472,6 @@ flowchart LR
 \newpage
 
 # PART D — COMPUTING, AI, AND DIGITAL INDIA
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -559,7 +555,6 @@ flowchart TD
 ---
 
 \newpage
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -651,7 +646,6 @@ AI today is basically **pattern-matching on steroids**. Feed a machine millions 
 
 # PART E — BIOTECHNOLOGY & HEALTH TECH
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -739,7 +733,6 @@ flowchart TD
 
 # PART F — ENERGY & ENVIRONMENT TECH
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -814,7 +807,6 @@ flowchart TD
 
 # PART G — HEALTH & MEDICAL TECH
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -871,7 +863,6 @@ flowchart TD
 
 > *Physics, Chemistry, and Biology each have dedicated full-length books in this series. This part provides a rapid-revision layer for the general-awareness flavour of questions that appear in SSC and Banking exams.*
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -906,7 +897,6 @@ flowchart TD
 - **Sound** — longitudinal, ~343 m/s in air, ~1500 m/s in water, faster in solids.
 - **LASER** — Light Amplification by Stimulated Emission of Radiation.
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -935,7 +925,6 @@ flowchart TD
 - **Acids/Bases** — Arrhenius, Brønsted-Lowry, Lewis.
 - **pH** — 0-14; < 7 acid, > 7 base.
 - **Key gases & uses:** O₂ (respiration), CO₂ (photosynthesis/fire-ext), N₂ (fertiliser, inert), H₂ (fuel of future), He (balloons), Ne (sign lights), Ar (bulb filling).
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -973,7 +962,6 @@ flowchart TD
 \newpage
 
 # APPENDICES
-
 
 <div class="chapter-summary">
 <div class="mermaid">

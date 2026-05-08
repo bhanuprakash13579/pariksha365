@@ -273,7 +273,6 @@ answer sheet in mains.
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -408,7 +407,6 @@ Three words added by 42nd Amendment 1976: **Socialist, Secular, Integrity.** Two
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -507,7 +505,6 @@ The lengthiest written constitution in the world. One country across 28 states w
 </div>
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -668,7 +665,6 @@ they can demand from the state, and what the state asks back.
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart LR
@@ -704,7 +700,7 @@ people and their descendants, is an Indian citizen?"*
 
 The answer lived in Articles 5 to 11 — deliberately short. Parliament was
 instructed to fill in details by statute. It did so through the
-**Citizenship Act, 1955**, which we'll unpack.
+**Citizenship Act, 1955**, examined below.
 
 ### 5.2 Articles 5 – 11 — a one-line gist of each
 
@@ -802,7 +798,6 @@ Indian citizenship is single and regulated by Parliament under Article 11. Five 
 </div>
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1374,7 +1369,6 @@ Six shields: equality (14–18), freedom (19–22), against exploitation (23–2
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1544,7 +1538,6 @@ Key Article numbers: village panchayats = **Art 40**, UCC = **Art 44**, environm
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1642,7 +1635,6 @@ Eleven duties, all in one Article — 51-A. Added during the Emergency by the 42
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1725,7 +1717,6 @@ If you got 8+ right, move on. If less, re-read chapters 1 + 6 + 7.
 ---
 
 # Appendices
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -2038,6 +2029,31 @@ timeline
 | 352 | **National Emergency** (war/external aggression/armed rebellion) |
 | 356 | **President's Rule** in state (failure of constitutional machinery) |
 | 360 | **Financial Emergency** (never declared) |
+
+### Emergency Types — Side-by-Side Comparison
+
+| Feature | Art 352 — National Emergency | Art 356 — President's Rule | Art 360 — Financial Emergency |
+|---|---|---|---|
+| **Ground** | War / external aggression / armed rebellion | Failure of constitutional machinery in state | Threat to financial stability of India |
+| **Proclaimed by** | President on Cabinet's written recommendation | President on Governor's report (or suo motu) | President |
+| **Parliament approval** | Special majority of each House within 1 month | Simple majority within 2 months | Simple majority within 2 months |
+| **Duration** | 6 months; renewed every 6 months (no cap) | 6 months; max 3 years with extensions | Indefinite (until revoked by President) |
+| **Extension approval** | Special majority each time | Parliament approval every 6 months after 1 year | Parliament approval every 6 months |
+| **Effect on FRs** | Art 19 suspended; Art 20 + 21 cannot be suspended (44th CAA) | No direct suspension of FRs | No suspension of FRs |
+| **Centre–State** | State becomes subordinate to Centre; Parliament can legislate on State List | Centre takes over state's executive + legislative functions | Centre can give directions on financial matters to states |
+| **Lok Sabha can revoke** | Yes — simple majority of total membership (44th CAA) | No special revocation provision | No special provision |
+| **Times invoked** | 3 times: **1962** (China war), **1971** (Pakistan war), **1975** (internal disturbance — Indira Gandhi) | ~135 times (most used: UP, Bihar, Punjab) | **Never invoked** |
+| **Revocation** | President's proclamation / Lok Sabha resolution | President's proclamation | President's proclamation |
+
+<div class="pitfall">
+
+**Trap 1:** Art 19 is suspended under Art 352 — but Art 20 (protection against double jeopardy) and Art 21 (right to life) cannot be suspended even during National Emergency. This was inserted by the 44th Amendment 1978 after the 1975 Emergency abuse.
+
+**Trap 2:** President's Rule (Art 356) needs Parliament approval within 2 months, but National Emergency (Art 352) needs approval within 1 month.
+
+**Trap 3:** Financial Emergency (Art 360) has never been declared. When asked "Which emergency has never been declared?" — Art 360.
+
+</div>
 
 ## Part XX — Amendment
 

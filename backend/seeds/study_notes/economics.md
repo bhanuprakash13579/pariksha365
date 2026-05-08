@@ -90,7 +90,6 @@ The informal (unorganised) sector employs about **85% of India's workforce** but
 
 # PART B — NATIONAL INCOME
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -156,7 +155,6 @@ India's GDP by PPP (Purchasing Power Parity) makes it the **3rd largest economy 
 
 # PART C — MONEY AND BANKING
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -219,7 +217,6 @@ The difference between CRR and SLR: **CRR = kept with RBI as cash, no interest e
 - **Mandate**: Keep CPI inflation at **4% ± 2%** (i.e., 2–6% band) for 5-year blocks.
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -292,7 +289,6 @@ Reduced public sector banks from 27 to **12**:
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -346,7 +342,6 @@ RBI targets **CPI inflation** at 4% ± 2% (the 2–6% band). RBI does NOT target
 
 # PART D — FISCAL POLICY
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -392,7 +387,6 @@ Since **2017**, the Budget is presented on **1 February** every year (previously
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -435,7 +429,6 @@ flowchart TD
 Petroleum and alcohol are the biggest revenues kept outside GST — states collect their own taxes on these. This is why petrol prices vary across states. These items generate the most state VAT revenue, so states were unwilling to bring them under GST.
 
 </div>
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -483,7 +476,6 @@ The 14th Finance Commission under Y.V. Reddy is historically significant for jum
 \newpage
 
 # PART E — PLANNING AND DEVELOPMENT
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -550,7 +542,6 @@ NITI Aayog is **not** a constitutional or statutory body — it is formed by Cab
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -611,7 +602,6 @@ HDI was conceived by **Mahbub ul Haq** and **Amartya Sen** (1990). It has three 
 
 # PART F — EXTERNAL SECTOR
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -662,7 +652,6 @@ PM Narasimha Rao took over in June 1991. Finance Minister **Manmohan Singh** (a 
 
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -701,7 +690,6 @@ flowchart TD
 \newpage
 
 # PART G — AGRICULTURE AND KEY SCHEMES
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -758,7 +746,6 @@ Examiners often ask "Father of Green Revolution in India" — the answer is **M.
 - **Rabi** (October–March): wheat, barley, gram (chickpea), mustard.
 - **Zaid** (March–June): watermelon, cucumber, summer vegetables.
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -811,7 +798,6 @@ flowchart TD
 \newpage
 
 # PART X — BANKING AWARENESS (For IBPS/SBI Candidates)
-
 
 <div class="chapter-summary">
 <div class="mermaid">

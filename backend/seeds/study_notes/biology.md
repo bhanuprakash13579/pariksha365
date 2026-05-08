@@ -20,7 +20,7 @@ Read end-to-end once for context. Then on your second pass, cover the right colu
 <ol>
 <li><strong>Vitamins &amp; deficiency diseases</strong> — 2-4 questions per paper, reliably. Know every row of the vitamin table cold.</li>
 <li><strong>Disease-vector mapping</strong> — Malaria/Dengue/Filaria vectors are tested in every single exam.</li>
-<li><strong>Human body extremes</strong> — Smallest/largest bone, organ, gland, cell. Examiners love these.</li>
+<li><strong>Human body extremes</strong> — Smallest/largest bone, organ, gland, cell. Appears in every paper.</li>
 <li><strong>Hormones &amp; glands</strong> — "Master gland", "fight-or-flight", goitre cause — all predictable.</li>
 <li><strong>Cell organelles</strong> — "Powerhouse", "suicide bags", "protein factory".</li>
 <li><strong>Blood groups</strong> — Universal donor, universal recipient, discoverer.</li>
@@ -71,7 +71,6 @@ Binomial name of humans → <strong>Homo sapiens</strong>
 </div>
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -173,7 +172,6 @@ In 1665, Robert Hooke sliced cork with a primitive microscope and saw small boxy
 
 # PART B — GENETICS & EVOLUTION
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -222,7 +220,6 @@ Genotypic ratio → **1 TT : 2 Tt : 1 tt**
 "Mendel used which plant?" → <strong>Pea plant (Pisum sativum)</strong><br>
 "Classic monohybrid ratio?" → <strong>3:1</strong> (phenotypic) and <strong>1:2:1</strong> (genotypic)
 </div>
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -299,7 +296,6 @@ CRISPR-Cas9 Nobel → Doudna + Charpentier (2020)
 Sex of the baby is determined by the <strong>father's sperm</strong>, not the mother. The mother always contributes X. Father contributes X → daughter; Y → son. Questions asking "who determines sex?" — the answer is the father.
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -352,7 +348,6 @@ Lamarck's theory → inheritance of acquired characters (giraffe neck story) —
 
 # PART C — PLANT BIOLOGY
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -402,7 +397,6 @@ Plants are classified by complexity of structure and reproductive strategy:
 <div class="mnemonic">
 <strong>"One for monocots, two for dicots."</strong> All the world's staple grains (wheat, rice, maize, barley) are monocots. All the world's trees and most garden flowers are dicots. This pattern is an easy reality check.
 </div>
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -455,7 +449,6 @@ Photosynthesis is how plants manufacture food from air and water using sunlight.
 "CAM plants open stomata when?" → <strong>Night</strong> (to reduce water loss in desert conditions)
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -494,7 +487,6 @@ flowchart TD
 "Which hormone ripens fruit?" → <strong>Ethylene</strong> — it is a gas. Commercially, ethylene is used to ripen bananas and mangoes during transport.<br>
 "Hormone responsible for apical dominance?" → <strong>Auxin</strong> — suppresses lateral buds; pruning removes the apex and removes auxin dominance, causing bushy growth.
 </div>
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -539,7 +531,6 @@ Pollination agents: wind (anemophily), water (hydrophily), insects (entomophily)
 \newpage
 
 # PART D — HUMAN BODY SYSTEMS
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -590,7 +581,6 @@ The digestive tract runs about 9 metres from mouth to anus. Each section special
 "Stomach acid pH?" → <strong>1.5–3.5</strong>
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -622,7 +612,6 @@ flowchart TD
 - Diaphragm and intercostal muscles drive breathing.
 - Normal adult breathing rate: **12–18 per minute**; tidal volume ~500 mL.
 - O₂ transported mainly by **haemoglobin** (Hb); CO₂ transported mainly as **bicarbonate (HCO₃⁻)** (~70%).
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -687,7 +676,6 @@ flowchart TD
 Examiners trick students with: "Biggest WBC?" → <strong>Monocyte</strong>. "Smallest WBC?" → <strong>Lymphocyte</strong>. Many students confuse this with platelets, which are not WBCs at all.
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -739,7 +727,6 @@ flowchart TD
 Key neurotransmitters: acetylcholine, dopamine, serotonin, GABA, noradrenaline
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -788,7 +775,6 @@ flowchart TD
 "Love hormone / milk ejection?" → <strong>Oxytocin</strong>
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -819,7 +805,6 @@ flowchart TD
 - Urine: ~96% water + urea + uric acid + creatinine + salts. Yellow colour from **urochrome**.
 - Normal output: ~1.5 L/day.
 - Other excretory organs: lungs (CO₂), skin (salts + water via sweat), liver (bile pigments).
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -880,7 +865,6 @@ flowchart TD
 
 # PART E — NUTRITION: VITAMINS & MINERALS
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -931,7 +915,6 @@ Blood clotting vitamin → <strong>K</strong><br>
 Scurvy → <strong>C</strong> | Night blindness → <strong>A</strong> | Rickets → <strong>D</strong> | Beri-beri → <strong>B₁</strong>
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -972,7 +955,6 @@ flowchart TD
 \newpage
 
 # PART F — DISEASES & IMMUNITY
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1048,7 +1030,6 @@ Plague → <strong>Rat flea</strong><br>
 Sleeping sickness → <strong>Tsetse fly</strong>
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1112,7 +1093,6 @@ India's UIP (Universal Immunisation Programme) started → <strong>1985</strong>
 
 # PART G — ECOLOGY & ENVIRONMENT
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1159,7 +1139,6 @@ An **ecosystem** is a community of living organisms (biotic) interacting with th
 The pyramid of <strong>energy</strong> is ALWAYS upright — this is the most tested ecological fact. The pyramids of numbers and biomass can invert (inverted pyramids are possible). If the question says "which pyramid is always upright?" — the answer is Energy.
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1196,7 +1175,6 @@ India has **4 hotspots**:
 
 **IUCN Red List categories** (most to least threatened):
 Extinct (EX) → Extinct in Wild (EW) → Critically Endangered (CR) → Endangered (EN) → Vulnerable (VU) → Near Threatened (NT) → Least Concern (LC)
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1428,7 +1406,6 @@ flowchart TD
 **Error-log rule:** For every question you got wrong, write one sentence explaining what you missed. Retest yourself on only those questions 3 days later — without looking at the solution. This single habit doubles what the mock teaches you.
 
 </div>
-
 
 <div class="chapter-summary">
 <div class="mermaid">

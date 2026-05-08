@@ -16,7 +16,7 @@ General Knowledge is the section where well-prepared students lose marks to poor
 1. **National symbols** — national animal, bird, flower, tree, sport, anthem, song, calendar, currency, emblem, fruit. Appears in every exam, every year — guaranteed marks.
 2. **Important days and dates** — World Environment Day (5 June), World AIDS Day (1 Dec), Gandhi Jayanti (2 Oct), Republic Day (26 Jan). 2–3 questions every exam.
 3. **Awards** — Bharat Ratna, Padma Vibhushan, Nobel Prize (most recent years), Sahitya Akademi, Khel Ratna. Each award's latest recipients + all-time firsts.
-4. **Classical dances** — all 8 classical forms with their states. Examiners love these; so do national-talent boards and PSC papers.
+4. **Classical dances** — all 8 classical forms with their states. These appear in every State PSC, SSC CGL, and UPSC Prelims.
 5. **Folk dances by state** — Garba (Gujarat), Bihu (Assam), Ghoomar (Rajasthan), Lavani (Maharashtra). Examiners especially love Northeast and tribal dances.
 6. **First in India/world** — first woman PM, first woman President, first Indian in space, first Nobel laureate from India. Classic one-mark questions.
 7. **International organisations** — UN organs (6), World Bank, IMF, WTO headquarters and founding years, current heads. Matching questions are very common.
@@ -71,7 +71,7 @@ General Knowledge is the section where well-prepared students lose marks to poor
 
 GK is a graveyard of rote learning for most aspirants — they try to memorise unconnected facts and forget them under pressure. This book beats that by grouping facts by category (awards, dances, sports, international organisations) and anchoring each cluster to a story or a memorable hook.
 
-**The most important thing:** Examiners love niche topics. Folk dances of Northeast India, tribal art forms, martial arts of specific states, musical instruments and their categories — these are the questions that separate 70% students from 85% students. Most people skip them because they seem obscure. That is exactly why they appear in exams. This book gives extra depth to all of them.
+**Where marks are lost:** Folk dances of Northeast India, tribal art forms, martial arts of specific states, musical instruments — these are the questions most candidates skip because they seem obscure. The result: 1–2 questions every paper go to whoever bothered to read this section.
 
 **How to study GK:** Work one section at a time. Read a table, close the book, and try to produce it from memory. If you can't name 7 of 8 items, re-read and try again. The spaced repetition cycle (today, then 3 days later, then 7 days later) gives you the best results for this type of material.
 
@@ -985,7 +985,7 @@ mindmap
 
 # PART X — EXAM-FAVOURITE NICHE TOPICS (paper-setter darlings)
 
-> Examiners love these topics — high probability + easy to construct distractors. Candidates routinely under-prepare them. Drill until you can answer in <5 s.
+> High probability, easy to frame distractors, and most candidates skip them. Drill until you can answer in <5 s.
 
 ## X.1 Classical Dances — the 8 (origin state, exponent, deity, costume cue)
 

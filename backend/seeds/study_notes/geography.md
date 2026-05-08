@@ -16,7 +16,7 @@ Geography in competitive exams splits into two zones: **physical geography** (ea
 
 1. **India's rivers** — which rivers flow east vs west, which originate in which mountain range, which drain into which sea, important dams. Appears in every SSC, RRB, and Banking exam.
 2. **States: superlatives** — largest/smallest by area and population, longest coastline, wettest/driest, highest peak. Classic 1-mark questions.
-3. **National Parks and Wildlife Sanctuaries** — first NP, only floating NP, Project Tiger reserves, UNESCO sites. Examiners love these.
+3. **National Parks and Wildlife Sanctuaries** — first NP, only floating NP, Project Tiger reserves, UNESCO sites. Appears every paper.
 4. **Climate and Monsoon** — types of monsoon, winter rain (NE monsoon vs Western disturbances), Cherrapunji vs Mawsynram.
 5. **Soils of India** — black soil (cotton), red soil, laterite soil (not fertile), alluvial soil (most fertile, most extensive).
 6. **Minerals and their states** — coal (Jharkhand, Odisha, WB), iron ore (Odisha, Jharkhand, Karnataka), mica (Rajasthan), bauxite (Odisha), petroleum (Assam, Gujarat, Rajasthan, Mumbai High).
@@ -147,7 +147,6 @@ of long-period comets.
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -235,7 +234,6 @@ graph LR
 - **Diamond** = metamorphosed coal (carbon, highest-grade).
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -356,7 +354,6 @@ dinosaurs.
 - **Krakatoa** eruption 1883 → one of the loudest sounds in history.
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -499,7 +496,6 @@ also coastal AP + Rayalaseema + Karaikal + S. Kerala. Rest of India is dry.
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -576,7 +572,6 @@ India, ~7 m); Okha, Mumbai, Haldia, Paradip, Chennai, Vizag, Cochin, Tuticorin.
 
 # Part D — India, Physical
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -649,7 +644,6 @@ Maritime: Sri Lanka (**Palk Strait**), Maldives.
   (overall); Kanyakumari = southernmost on mainland.
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -778,8 +772,36 @@ Karnataka + Kerala (**Doddabetta** = Nilgiri's highest, 2,637 m).
 - Doddabetta = Nilgiri's highest (2,637 m).
 - Port Blair renamed **Shri Vijaya Puram** (2024).
 
----
+### Mountain Passes of India — Quick Reference
 
+Passes appear in every SSC CGL, CDS, and State PSC paper. Know the location, state, and what each connects.
+
+| Pass | State / Region | Connects | Altitude | Significance |
+|------|---------------|----------|----------|-------------|
+| **Zoji La** | J&K (Zanskar range) | Srinagar ↔ Leh (Ladakh) | 3,528 m | Only road link to Ladakh in winter; NH-1 |
+| **Banihal** | J&K | Jammu ↔ Srinagar (Kashmir Valley) | 2,832 m | Jawahar Tunnel beneath it |
+| **Bara Lacha La** | Himachal Pradesh | Lahaul ↔ Ladakh | 4,890 m | Manali-Leh highway |
+| **Rohtang Pass** | Himachal Pradesh | Kullu ↔ Lahaul-Spiti | 3,978 m | Atal Tunnel (9.02 km) built below it |
+| **Shipki La** | Himachal Pradesh | India ↔ China (Tibet); Sutlej enters India here | 4,430 m | Trade route; Sutlej river crossing |
+| **Nathu La** | Sikkim | India ↔ China (Tibet) | 4,310 m | Reopened 2006 for trade; silk route link |
+| **Jelep La** | Sikkim | Sikkim ↔ Chumbi Valley (Tibet/China) | 4,390 m | Historical British India-Tibet route |
+| **Bomdi La** | Arunachal Pradesh | India ↔ China (Tibet) | 2,217 m | Scene of 1962 Indo-China war fighting |
+| **Sela Pass** | Arunachal Pradesh | Tawang ↔ rest of Arunachal | 4,170 m | Sela tunnel (2024) built for all-weather access |
+| **Khyber Pass** | Pakistan (PoK border) | Pakistan ↔ Afghanistan | 1,070 m | Historic invasion route into Indian subcontinent |
+| **Bolan Pass** | Pakistan (Balochistan) | Pakistan ↔ Afghanistan | 1,800 m | Gateway used by IVC-era traders |
+| **Khardung La** | Ladakh | Leh ↔ Nubra Valley | 5,359 m | One of world's highest motorable passes |
+
+<div class="pitfall">
+
+**Nathu La vs Jelep La**: Both are in Sikkim on the India-China border. Nathu La is the active trade route (reopened 2006). Jelep La is the older British-era route. Questions often swap these.
+
+**Zoji La vs Banihal**: Zoji La = Srinagar-Leh (Kashmir to Ladakh). Banihal = Jammu-Srinagar (across the Pir Panjal). They are in different ranges and serve different routes.
+
+**Khyber and Bolan**: Both are in present-day Pakistan, not India. They are historically significant as invasion routes into the subcontinent.
+
+</div>
+
+---
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -802,6 +824,100 @@ flowchart TD
     classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
     classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
 </div>
+</div>
+
+<div class="part-divider">
+
+### India — Physiographic Zones (Schematic Map)
+
+<svg viewBox="0 0 520 600" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:520px;display:block;margin:0 auto;font-family:Georgia,serif;">
+  <rect width="520" height="600" fill="#f0f4ff" rx="10"/>
+  <text x="260" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a5f">Physiographic Divisions of India (N to S)</text>
+  <!-- Himalayas -->
+  <rect x="60" y="42" width="380" height="65" rx="8" fill="#c8b89a" stroke="#8b6914" stroke-width="1.5"/>
+  <text x="250" y="64" text-anchor="middle" font-size="12" font-weight="bold" fill="#3b1f00">THE HIMALAYAS</text>
+  <text x="250" y="80" text-anchor="middle" font-size="10" fill="#3b1f00">Himadri (Great) · Himachal (Middle) · Shiwaliks (Outer)</text>
+  <text x="250" y="96" text-anchor="middle" font-size="9" fill="#5c3200">K2 8611 m (PoK) · Everest 8849 m (Nepal) · youngest fold mountains</text>
+  <!-- Pass markers -->
+  <circle cx="105" cy="58" r="5" fill="#dc2626"/>
+  <text x="107" y="53" font-size="8" fill="#7f1d1d">Zoji La</text>
+  <circle cx="185" cy="58" r="5" fill="#dc2626"/>
+  <text x="187" y="53" font-size="8" fill="#7f1d1d">Rohtang</text>
+  <circle cx="285" cy="58" r="5" fill="#dc2626"/>
+  <text x="287" y="53" font-size="8" fill="#7f1d1d">Shipki La</text>
+  <circle cx="370" cy="58" r="5" fill="#dc2626"/>
+  <text x="372" y="53" font-size="8" fill="#7f1d1d">Nathu La</text>
+  <!-- Northern Plains -->
+  <rect x="60" y="117" width="380" height="68" rx="8" fill="#d4edda" stroke="#2d6a4f" stroke-width="1.5"/>
+  <text x="250" y="140" text-anchor="middle" font-size="12" font-weight="bold" fill="#1b4332">NORTHERN PLAINS</text>
+  <text x="250" y="157" text-anchor="middle" font-size="10" fill="#1b4332">Indo-Gangetic-Brahmaputra · world&#39;s most fertile alluvial plain</text>
+  <text x="250" y="173" text-anchor="middle" font-size="9" fill="#2d6a4f">Bhangar (old alluvium) · Khadar (new flood plain) · Bhaber · Terai</text>
+  <!-- River lines in plains -->
+  <line x1="105" y1="122" x2="105" y2="180" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="86" y="152" font-size="8" fill="#1565c0">Indus</text>
+  <line x1="210" y1="122" x2="210" y2="180" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="195" y="148" font-size="8" fill="#1565c0">Yamuna</text>
+  <line x1="270" y1="122" x2="270" y2="180" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="274" y="148" font-size="8" fill="#1565c0">Ganga</text>
+  <line x1="395" y1="122" x2="395" y2="180" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="397" y="148" font-size="8" fill="#1565c0">Brahmaputra</text>
+  <!-- Central Highlands -->
+  <rect x="60" y="196" width="240" height="58" rx="8" fill="#ffe0b2" stroke="#e65100" stroke-width="1.5"/>
+  <text x="180" y="218" text-anchor="middle" font-size="11" font-weight="bold" fill="#bf360c">CENTRAL HIGHLANDS</text>
+  <text x="180" y="234" text-anchor="middle" font-size="9" fill="#bf360c">Vindhya · Satpura · Aravalli ranges</text>
+  <text x="180" y="248" text-anchor="middle" font-size="9" fill="#bf360c">Barrier between N plains and Deccan</text>
+  <!-- Thar Desert -->
+  <rect x="310" y="196" width="130" height="58" rx="8" fill="#fff9c4" stroke="#f57f17" stroke-width="1.5"/>
+  <text x="375" y="218" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">THAR DESERT</text>
+  <text x="375" y="234" text-anchor="middle" font-size="9" fill="#e65100">Rajasthan · Gujarat</text>
+  <text x="375" y="248" text-anchor="middle" font-size="9" fill="#e65100">India&#39;s hot arid region</text>
+  <!-- Western Ghats strip -->
+  <rect x="44" y="264" width="30" height="185" rx="6" fill="#bbdefb" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="59" y="340" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#0d47a1" transform="rotate(-90,59,355)">W. Ghats (Sahyadri)</text>
+  <!-- Deccan Plateau -->
+  <rect x="80" y="264" width="330" height="120" rx="8" fill="#ffe4bc" stroke="#a0522d" stroke-width="1.5"/>
+  <text x="245" y="288" text-anchor="middle" font-size="12" font-weight="bold" fill="#5d1f00">DECCAN PLATEAU</text>
+  <text x="245" y="305" text-anchor="middle" font-size="10" fill="#5d1f00">1500 million years old · avg 600–900 m</text>
+  <text x="245" y="320" text-anchor="middle" font-size="9" fill="#7b3f00">Deccan Trap (NW basalt) · Anamudi 2695 m highest</text>
+  <text x="245" y="336" text-anchor="middle" font-size="9" fill="#7b3f00">E-flowing: Godavari · Krishna · Cauvery → Bay of Bengal</text>
+  <text x="245" y="352" text-anchor="middle" font-size="9" fill="#7b3f00">W-flowing: Narmada · Tapi → Arabian Sea (in rift valleys)</text>
+  <!-- Eastern Ghats strip -->
+  <rect x="416" y="264" width="30" height="185" rx="6" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="431" y="340" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#1b5e20" transform="rotate(90,431,355)">E. Ghats (Discontinuous)</text>
+  <!-- Coastal Plains row -->
+  <rect x="44" y="394" width="66" height="55" rx="6" fill="#b2ebf2" stroke="#00838f" stroke-width="1.5"/>
+  <text x="77" y="412" text-anchor="middle" font-size="8" font-weight="bold" fill="#004d40">Malabar Coast</text>
+  <text x="77" y="426" text-anchor="middle" font-size="7.5" fill="#004d40">Lagoons</text>
+  <text x="77" y="439" text-anchor="middle" font-size="7.5" fill="#004d40">Backwaters</text>
+  <rect x="376" y="394" width="70" height="55" rx="6" fill="#b2dfdb" stroke="#00695c" stroke-width="1.5"/>
+  <text x="411" y="412" text-anchor="middle" font-size="8" font-weight="bold" fill="#004d40">Coromandel</text>
+  <text x="411" y="426" text-anchor="middle" font-size="7.5" fill="#004d40">Smooth coast</text>
+  <text x="411" y="439" text-anchor="middle" font-size="7.5" fill="#004d40">Bay of Bengal</text>
+  <!-- South tip -->
+  <polygon points="180,460 320,460 250,530" fill="#e0f7fa" stroke="#0077b6" stroke-width="1.5"/>
+  <text x="250" y="492" text-anchor="middle" font-size="9" fill="#0077b6">Kanyakumari</text>
+  <text x="250" y="507" text-anchor="middle" font-size="8" fill="#0077b6">3 seas converge</text>
+  <!-- Sea labels -->
+  <text x="14" y="370" font-size="9" fill="#1565c0" transform="rotate(-90,14,380)">Arabian Sea</text>
+  <text x="504" y="370" font-size="9" fill="#1565c0" transform="rotate(90,504,380)">Bay of Bengal</text>
+  <!-- Compass -->
+  <g transform="translate(470,55)">
+    <text x="0" y="-14" text-anchor="middle" font-size="10" fill="#374151">N</text>
+    <text x="0" y="22" text-anchor="middle" font-size="10" fill="#374151">S</text>
+    <text x="-16" y="6" text-anchor="middle" font-size="10" fill="#374151">W</text>
+    <text x="16" y="6" text-anchor="middle" font-size="10" fill="#374151">E</text>
+    <line x1="0" y1="-10" x2="0" y2="16" stroke="#374151" stroke-width="1"/>
+    <line x1="-12" y1="3" x2="12" y2="3" stroke="#374151" stroke-width="1"/>
+  </g>
+  <!-- Legend -->
+  <rect x="60" y="540" width="155" height="50" rx="5" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="70" y="555" font-size="9" font-weight="bold" fill="#374151">Key</text>
+  <circle cx="72" cy="566" r="4" fill="#dc2626"/>
+  <text x="80" y="569" font-size="8" fill="#374151">Mountain Pass</text>
+  <line x1="70" y1="579" x2="84" y2="579" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="88" y="582" font-size="8" fill="#374151">River (schematic)</text>
+</svg>
+
 </div>
 
 ## Chapter 8 — Rivers of India
@@ -891,7 +1007,6 @@ Most resilient cross-border water treaty — survived 3 wars.
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -913,6 +1028,122 @@ flowchart TD
     classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
     classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
 </div>
+</div>
+
+<div class="part-divider">
+
+### India — River Systems (Himalayan vs Peninsular)
+
+<svg viewBox="0 0 540 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:540px;display:block;margin:0 auto;font-family:Georgia,serif;">
+  <rect width="540" height="420" fill="#f0f8ff" rx="10"/>
+  <text x="270" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e3a5f">India — River Systems at a Glance</text>
+
+  <!-- LEFT HALF: Himalayan Rivers -->
+  <rect x="10" y="35" width="250" height="370" rx="8" fill="#e8f4fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="135" y="56" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">HIMALAYAN RIVERS</text>
+  <text x="135" y="70" text-anchor="middle" font-size="8.5" fill="#1565c0">Perennial · snow-fed · long · navigable</text>
+
+  <!-- Indus system -->
+  <rect x="20" y="78" width="110" height="105" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+  <text x="75" y="94" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e3a5f">Indus System</text>
+  <text x="75" y="108" text-anchor="middle" font-size="8.5" fill="#1e3a5f">Origin: Mansarovar</text>
+  <text x="75" y="120" text-anchor="middle" font-size="8.5" fill="#1e3a5f">(Tibet, near Kailash)</text>
+  <text x="75" y="133" text-anchor="middle" font-size="8" fill="#374151">Tributaries in India:</text>
+  <text x="75" y="145" text-anchor="middle" font-size="8" fill="#374151">Jhelum · Chenab</text>
+  <text x="75" y="157" text-anchor="middle" font-size="8" fill="#374151">Ravi · Beas · Sutlej</text>
+  <text x="75" y="170" text-anchor="middle" font-size="8" fill="#dc2626">→ Arabian Sea (Pak)</text>
+
+  <!-- Ganga system -->
+  <rect x="140" y="78" width="110" height="150" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+  <text x="195" y="94" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e3a5f">Ganga System</text>
+  <text x="195" y="108" text-anchor="middle" font-size="8.5" fill="#1e3a5f">Origin: Gangotri glacier</text>
+  <text x="195" y="120" text-anchor="middle" font-size="8.5" fill="#1e3a5f">Length: 2525 km</text>
+  <text x="195" y="133" text-anchor="middle" font-size="8" fill="#374151">Left tributaries:</text>
+  <text x="195" y="145" text-anchor="middle" font-size="8" fill="#374151">Gomti · Ghaghra</text>
+  <text x="195" y="157" text-anchor="middle" font-size="8" fill="#374151">Gandak · Kosi</text>
+  <text x="195" y="170" text-anchor="middle" font-size="8" fill="#374151">Right tributaries:</text>
+  <text x="195" y="182" text-anchor="middle" font-size="8" fill="#374151">Yamuna · Son</text>
+  <text x="195" y="194" text-anchor="middle" font-size="8" fill="#374151">Chambal · Betwa</text>
+  <text x="195" y="208" text-anchor="middle" font-size="8" fill="#1565c0">→ Bay of Bengal</text>
+  <text x="195" y="220" text-anchor="middle" font-size="8" fill="#374151">(via Bangladesh)</text>
+
+  <!-- Brahmaputra -->
+  <rect x="20" y="194" width="110" height="105" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+  <text x="75" y="210" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e3a5f">Brahmaputra</text>
+  <text x="75" y="224" text-anchor="middle" font-size="8.5" fill="#1e3a5f">Origin: Chemayungdung</text>
+  <text x="75" y="237" text-anchor="middle" font-size="8.5" fill="#1e3a5f">glacier (Tibet)</text>
+  <text x="75" y="250" text-anchor="middle" font-size="8" fill="#374151">Tsangpo in Tibet</text>
+  <text x="75" y="262" text-anchor="middle" font-size="8" fill="#374151">Dihang enters India</text>
+  <text x="75" y="274" text-anchor="middle" font-size="8" fill="#374151">Majuli: world&#39;s largest</text>
+  <text x="75" y="286" text-anchor="middle" font-size="8" fill="#374151">river island (Assam)</text>
+  <text x="75" y="299" text-anchor="middle" font-size="8" fill="#1565c0">→ Bay of Bengal</text>
+
+  <!-- Himalayan key facts -->
+  <rect x="20" y="308" width="230" height="85" rx="5" fill="#fff3cd" stroke="#d97706" stroke-width="1"/>
+  <text x="135" y="323" text-anchor="middle" font-size="9" font-weight="bold" fill="#78350f">Key Facts (Himalayan)</text>
+  <text x="135" y="337" text-anchor="middle" font-size="8.5" fill="#78350f">Longest Indian river: Ganga (2525 km)</text>
+  <text x="135" y="350" text-anchor="middle" font-size="8.5" fill="#78350f">Largest basin: Ganga basin</text>
+  <text x="135" y="363" text-anchor="middle" font-size="8.5" fill="#78350f">Indus Waters Treaty: 1960 (India-Pakistan)</text>
+  <text x="135" y="376" text-anchor="middle" font-size="8.5" fill="#78350f">Kosi = "Sorrow of Bihar" (floods)</text>
+  <text x="135" y="389" text-anchor="middle" font-size="8.5" fill="#78350f">Chambal: only river with ravines</text>
+
+  <!-- RIGHT HALF: Peninsular Rivers -->
+  <rect x="278" y="35" width="252" height="370" rx="8" fill="#f0fff4" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="404" y="56" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">PENINSULAR RIVERS</text>
+  <text x="404" y="70" text-anchor="middle" font-size="8.5" fill="#2e7d32">Seasonal · rain-fed · shorter · non-navigable</text>
+
+  <!-- W-flowing peninsular -->
+  <rect x="287" y="78" width="105" height="115" rx="5" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1"/>
+  <text x="339" y="94" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#1b5e20">West-flowing</text>
+  <text x="339" y="108" text-anchor="middle" font-size="8.5" fill="#1b5e20">→ Arabian Sea</text>
+  <text x="339" y="122" text-anchor="middle" font-size="8" fill="#374151">Narmada</text>
+  <text x="339" y="134" text-anchor="middle" font-size="7.5" fill="#374151">(rift valley, no delta)</text>
+  <text x="339" y="146" text-anchor="middle" font-size="8" fill="#374151">Tapi (Tapti)</text>
+  <text x="339" y="158" text-anchor="middle" font-size="7.5" fill="#374151">(rift valley, no delta)</text>
+  <text x="339" y="170" text-anchor="middle" font-size="8" fill="#374151">Mahi · Sabarmati</text>
+  <text x="339" y="183" text-anchor="middle" font-size="7.5" fill="#dc2626">Form estuaries, not deltas</text>
+
+  <!-- E-flowing peninsular -->
+  <rect x="402" y="78" width="118" height="220" rx="5" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1"/>
+  <text x="461" y="94" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#1b5e20">East-flowing</text>
+  <text x="461" y="108" text-anchor="middle" font-size="8.5" fill="#1b5e20">→ Bay of Bengal</text>
+  <text x="461" y="124" text-anchor="middle" font-size="8" fill="#374151">Godavari</text>
+  <text x="461" y="136" text-anchor="middle" font-size="7.5" fill="#374151">"Dakshin Ganga"</text>
+  <text x="461" y="148" text-anchor="middle" font-size="7.5" fill="#374151">Longest peninsular</text>
+  <text x="461" y="162" text-anchor="middle" font-size="8" fill="#374151">Krishna</text>
+  <text x="461" y="174" text-anchor="middle" font-size="7.5" fill="#374151">2nd longest</text>
+  <text x="461" y="188" text-anchor="middle" font-size="8" fill="#374151">Cauvery</text>
+  <text x="461" y="200" text-anchor="middle" font-size="7.5" fill="#374151">"Dakshin Ganga"</text>
+  <text x="461" y="212" text-anchor="middle" font-size="7.5" fill="#374151">Karnataka-TN dispute</text>
+  <text x="461" y="226" text-anchor="middle" font-size="8" fill="#374151">Mahanadi</text>
+  <text x="461" y="238" text-anchor="middle" font-size="7.5" fill="#374151">Odisha · Hirakud dam</text>
+  <text x="461" y="252" text-anchor="middle" font-size="8" fill="#374151">Damodar</text>
+  <text x="461" y="264" text-anchor="middle" font-size="7.5" fill="#374151">"Sorrow of Bengal"</text>
+  <text x="461" y="278" text-anchor="middle" font-size="7.5" fill="#374151">Jharkhand-WB</text>
+  <text x="461" y="292" text-anchor="middle" font-size="8" fill="#374151">Form large deltas</text>
+
+  <!-- Peninsular key facts -->
+  <rect x="287" y="203" width="108" height="90" rx="5" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="341" y="217" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#14532d">Origin of Peninsular</text>
+  <text x="341" y="230" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#14532d">Rivers</text>
+  <text x="341" y="244" text-anchor="middle" font-size="8" fill="#374151">Western Ghats</text>
+  <text x="341" y="256" text-anchor="middle" font-size="8" fill="#374151">(except Chambal,</text>
+  <text x="341" y="268" text-anchor="middle" font-size="8" fill="#374151">Betwa from Vindhya)</text>
+  <text x="341" y="282" text-anchor="middle" font-size="8" fill="#374151">Rain-fed → seasonal</text>
+
+  <!-- Peninsular trap box -->
+  <rect x="287" y="303" width="232" height="90" rx="5" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+  <text x="403" y="318" text-anchor="middle" font-size="9" font-weight="bold" fill="#7f1d1d">TRAP — Must Know</text>
+  <text x="403" y="332" text-anchor="middle" font-size="8.5" fill="#7f1d1d">Narmada + Tapi flow WEST (not east)</text>
+  <text x="403" y="345" text-anchor="middle" font-size="8.5" fill="#7f1d1d">both flow through rift valleys</text>
+  <text x="403" y="358" text-anchor="middle" font-size="8.5" fill="#7f1d1d">Godavari = longest peninsular river</text>
+  <text x="403" y="371" text-anchor="middle" font-size="8.5" fill="#7f1d1d">Luni = only river flowing into Rann of Kutch</text>
+  <text x="403" y="384" text-anchor="middle" font-size="8.5" fill="#7f1d1d">Kaveri dispute = Karnataka vs Tamil Nadu</text>
+
+  <!-- Divider -->
+  <line x1="265" y1="35" x2="265" y2="395" stroke="#9ca3af" stroke-width="1" stroke-dasharray="6,3"/>
+</svg>
+
 </div>
 
 ## Chapter 9 — Indian Climate + Monsoon
@@ -957,7 +1188,6 @@ graph LR
 - **Western Disturbances** = cold-season rain in N India.
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1026,7 +1256,6 @@ Khadar = new alluvium (lighter, sandy, near river banks) · Bhangar = old alluvi
 
 # Part E — India: Human + Economic
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1067,7 +1296,6 @@ flowchart TD
   China 65%).
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1146,7 +1374,6 @@ flowchart TD
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1208,7 +1435,6 @@ flowchart TD
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1267,7 +1493,6 @@ flowchart TD
 
 # Part F — World
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1308,7 +1533,6 @@ flowchart TD
 - **Deepest point** — Challenger Deep, Mariana Trench, 10,984 m.
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1356,7 +1580,6 @@ graph TD
 ---
 
 # Appendices
-
 
 <div class="chapter-summary">
 <div class="mermaid">

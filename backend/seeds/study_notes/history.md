@@ -18,7 +18,7 @@ History questions in competitive exams are almost entirely about **dates, names,
 2. **Mauryan Empire** — Chandragupta Maurya, Ashoka's Dhamma, pillar edicts, Battle of Kalinga 261 BCE. 2–3 questions every SSC exam.
 3. **Delhi Sultanate** — five dynasties with founder and last ruler, Qutub Minar, Ibn Battuta, Timur's invasion. Frequently tested.
 4. **Mughal Empire** — all 6 rulers with years, battles (Panipat I/II/III), architectural works, revenue systems. Rich source of questions.
-5. **Bhakti and Sufi movements** — saints, their traditions, associated states. Examiners love these.
+5. **Bhakti and Sufi movements** — saints, their traditions, associated states. 1–2 questions per paper.
 6. **Freedom struggle chronology** — 1857 revolt, INC sessions with presidents, Gandhi's movements (Khilafat, Non-Cooperation, Civil Disobedience, Quit India), and their years. Among the most-asked history topics.
 7. **Governors-General and Viceroys** — who introduced which reform, which act was passed under whom. Matching questions are common.
 8. **Post-Independence India** — Five-Year Plans, major policies, language reorganisation, integration of princely states, wars (1947, 1962, 1965, 1971).
@@ -127,7 +127,6 @@ wheat + barley + goat + sheep; mud-brick houses; dentistry evidence!
 </div>
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -411,7 +410,6 @@ into **Cemetery H** (Punjab), **Jhukar** (Sindh), **Rangpur IIB/C** (Gujarat),
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -528,7 +526,6 @@ Originally **functional**. Became **hereditary** in the later Vedic period
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -612,7 +609,6 @@ graph LR
   **Dhana Nanda** (322 BCE) with Chanakya's help.
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -744,7 +740,6 @@ B.R. Ambedkar's Navayana movement** (conversion of ~5 lakh Dalits at
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -859,7 +854,6 @@ while **Sthulabhadra** stayed in Magadha:
 - **Chandragupta Maurya** reputedly died via **sallekhana** at **Shravanabelagola**.
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -982,7 +976,6 @@ in **185 BCE**, founding the **Sunga dynasty**.
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1068,7 +1061,6 @@ the finest ever struck. Tag: "**Golden Age of Classical India**".
 
 ---
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -1144,7 +1136,6 @@ flowchart TD
 - **Aihole inscription** (634 CE, by Ravikirti) praises Pulakesin II.
 
 ---
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1298,7 +1289,6 @@ Russian + Chinese Revolutions, Cold War + Decolonisation.
 ---
 
 # Appendices
-
 
 <div class="chapter-summary">
 <div class="mermaid">

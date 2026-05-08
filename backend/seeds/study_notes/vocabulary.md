@@ -28,7 +28,7 @@ date: "2026"
 
 **Study Priority Order** (return-on-study-time, highest first)
 
-1. **Root families** — 50 high-yield roots unlock 2,000+ words. Start here; it is the only vocabulary investment that compounds.
+1. **Root families** — 50 high-yield roots unlock 2,000+ words. Start here; it is the highest-return vocabulary habit — one root unlocks a family of words.
 2. **Confusable pairs** — affect/effect, principal/principle, eminent/imminent, etc. These appear across synonyms, fill-in-the-blanks, and cloze tests simultaneously.
 3. **Idioms & Phrases** — 200 PYQ-weighted idioms cover virtually every question in this category across SSC, Banks, and RRB.
 4. **One-word Substitution** — 150 high-frequency set; examiners recycle the same 80 words heavily across papers.
@@ -76,7 +76,7 @@ This book is deliberately built on two rules:
 
 # PART A — ROOTS, PREFIXES, SUFFIXES (the force multipliers)
 
-**Why start here:** if you know **50 high-yield roots + 30 prefixes + 20 suffixes**, you can decode the meaning of ~2,000 English words you have never seen before. This is the single highest-return investment in English prep.
+**Why start here:** if you know **50 high-yield roots + 30 prefixes + 20 suffixes**, you can decode the meaning of ~2,000 English words you have never seen before. Knowing 50 roots + 30 prefixes + 20 suffixes lets you decode ~2,000 words you have never seen before.
 
 ## A.1 The 50 high-yield ROOTS
 
@@ -281,7 +281,7 @@ mindmap
 **Paper-setter's traps in this cluster:**
 
 - *Hydrophobia* has TWO meanings: (i) fear of water, (ii) a symptom of rabies where the patient avoids water. Both are tested.
-- *Xenophobia* vs *xenophile* — hater vs lover of foreigners. Examiners love antonym pairs.
+- *Xenophobia* vs *xenophile* — hater vs lover of foreigners. Antonym pairs appear frequently — examiners treat them as a reliable trap.
 - *Claustrophobia* vs *agoraphobia* — confined vs open. Opposite pair, same fear engine.
 
 **Retrieval check:** Without looking back, give the meaning of: *triskaidekaphobia, ailurophobia, glossophobia, ophidiophobia, thanatophobia.*

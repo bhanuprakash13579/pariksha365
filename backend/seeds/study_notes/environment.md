@@ -13,7 +13,7 @@ Environment & Ecology is one of the most rewarding GA topics if you study it sys
 
 **1. Conventions and treaties with years** — "Ramsar Convention year?", "When was the Montreal Protocol?", "What is COP-28 known for?" — these appear in every SSC CGL paper.
 
-**2. Protected areas — the "first" and "only" facts** — India's first National Park, the only floating NP, the only Asiatic lion habitat, the latest tiger reserve. Examiners love these landmarks.
+**2. Protected areas — the "first" and "only" facts** — India's first National Park, the only floating NP, the only Asiatic lion habitat, the latest tiger reserve. These appear in every paper.
 
 **3. National symbols and conservation projects** — National animal, aquatic animal, heritage animal; Project Tiger vs Project Elephant vs Project Cheetah. Clean 1-2 marks every paper.
 
@@ -88,7 +88,6 @@ The **10% Rule (Lindeman, 1942)** — only about 10% of the energy at one trophi
 
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -140,7 +139,6 @@ Atmosphere is 78% N₂, but plants cannot use it directly. The cycle works throu
 
 # PART B — BIODIVERSITY
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -176,7 +174,6 @@ flowchart TD
 | Regulating | Climate regulation, pollination, flood control, disease control |
 | Cultural | Recreation, spiritual value, tourism, aesthetic |
 | Supporting | Nutrient cycling, soil formation, water purification |
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -219,7 +216,6 @@ India's 4 hotspots: **"Himalayas, Indo-Burma, Western Ghats, Sundaland"** — **
 
 India is also one of the **17 megadiverse countries** that together hold approximately 70% of global biodiversity. The others include Brazil, Colombia, Indonesia, Mexico, Australia, China, DRC, and more.
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -251,7 +247,6 @@ flowchart TD
 </div>
 
 IUCN (International Union for Conservation of Nature) was established in **1948** and maintains the Red List. The Great Indian Bustard is **Critically Endangered**. The Gangetic Dolphin is **Endangered**.
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -297,7 +292,6 @@ flowchart TD
 
 # PART C — PROTECTED AREAS AND INDIA'S WILDLIFE
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart LR
@@ -333,7 +327,6 @@ Under the **Wildlife (Protection) Act 1972**:
 **Biosphere Reserves** — UNESCO MAB (Man and Biosphere) programme. India has **18 BRs, of which 12 are on the UNESCO MAB World Network**.
 
 **Elephant Reserves** — under Project Elephant. India has **33 Elephant Reserves**.
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -383,7 +376,6 @@ The most-tested NP facts: **India's first NP = Jim Corbett (originally Hailey NP
 | Himachal Pradesh | Great Himalayan NP (UNESCO), Pin Valley |
 | Odisha | Simlipal (Biosphere Reserve + Tiger Reserve), Bhitarkanika (saltwater crocodile) |
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart LR
@@ -420,7 +412,6 @@ India's first Biosphere Reserve = **Nilgiri (1986)**. Largest BR = **Kachchh, Gu
 
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -455,7 +446,6 @@ flowchart TD
 \newpage
 
 # PART D — POLLUTION
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -508,7 +498,6 @@ flowchart TD
 
 AQI is maintained by CPCB (Central Pollution Control Board) and monitored for PM₂.₅, PM₁₀, NO₂, SO₂, CO, O₃, NH₃, and Pb.
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -550,7 +539,6 @@ flowchart TD
 | Fluorosis | Fluoride >1.5 ppm → mottled teeth, skeletal damage |
 | Arsenicosis | Arsenic in groundwater — severe in West Bengal and Bangladesh |
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -586,7 +574,6 @@ flowchart TD
 \newpage
 
 # PART E — CLIMATE CHANGE
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -627,7 +614,6 @@ The natural greenhouse effect keeps Earth ~15 °C warmer than it would otherwise
 **The main greenhouse gas by quantity = CO₂**. **The most potent greenhouse gas by GWP = SF₆** (sulphur hexafluoride, 23,500× CO₂). Examiners test both. Also: "Most abundant greenhouse gas in the atmosphere" = water vapour — but in exam context, CO₂ is the standard answer for the climate-forcing one.
 
 </div>
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -675,7 +661,6 @@ flowchart TD
 Common traps: Vienna Convention (1985) vs Montreal Protocol (1987) — Vienna is the framework, Montreal is the actual action. Kyoto Protocol (1997) — binding only on developed countries. Paris Agreement (2015) — voluntary NDCs for all. Stockholm Convention (2001, about POPs) is separate from Stockholm Conference (1972, about human environment). These are four different things that examiners deliberately mix up.
 
 </div>
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -746,7 +731,6 @@ NAPCC has exactly **8 missions**. Examiners often ask the count. The Solar Missi
 
 # PART F — INDIAN ENVIRONMENTAL LAWS AND INSTITUTIONS
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -792,7 +776,6 @@ The **Environment Protection Act is from 1986**, NOT 1984 (the year of the Bhopa
 
 </div>
 
-
 <div class="chapter-summary">
 <div class="mermaid">
 flowchart TD
@@ -821,7 +804,6 @@ After the 2022 Amendment, WLPA has **4 schedules** (reduced from the original 6)
 - **Schedule II** — protected species with lower penalties.
 - **Schedule III** — protected plants.
 - **Schedule IV** — CITES-listed species (invasive alien species also included after 2022).
-
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -874,7 +856,6 @@ flowchart TD
 \newpage
 
 # PART X — CONSERVATION PROJECTS AND NATIONAL SYMBOLS
-
 
 <div class="chapter-summary">
 <div class="mermaid">
