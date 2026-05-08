@@ -945,13 +945,24 @@ SP = 72% of 2000 = **₹1440**
 **Mental-math arsenal:** percent-fraction table + "CP-SP-MP" vocabulary.
 
 **Memorised formulas:**
-1. Profit = SP − CP (both on the same currency).
-2. Profit % = Profit/CP × 100 — **base is always CP** unless explicitly said.
-3. Loss % = Loss/CP × 100.
-4. SP = CP × (100 + P%)/100. SP = CP × (100 − L%)/100.
-5. Discount = MP − SP. Discount % = Discount/MP × 100 — **base is MP**.
-6. MP = CP × (100 + markup%)/100.
-7. When two articles sold at same SP, one at +x % and the other at −x % → **always a net loss** of x²/100 %.
+
+1. Profit = SP − CP
+
+2. Profit % = (Profit / CP) × 100 — **base is always CP** unless explicitly stated
+
+3. Loss % = (Loss / CP) × 100
+
+4. SP when profit: SP = CP × (100 + P%) / 100
+
+5. SP when loss: SP = CP × (100 − L%) / 100
+
+6. Discount = MP − SP
+
+7. Discount % = (Discount / MP) × 100 — **base is MP, not CP**
+
+8. MP = CP × (100 + markup%) / 100
+
+9. Two articles at same SP, one at +x% profit and other at −x% loss → **always a net loss** = x² / 100 %
 
 **Generic attack plan:** read "gain/profit/loss" in terms of **CP**; read "discount" in terms of **MP**. Never confuse the bases. If both percentages appear, translate to a common number (set CP = 100).
 
@@ -3078,7 +3089,10 @@ Round: 40 % of 1900 = 760. 24 × 18 = 432. Sum ≈ 1192. Pick option closest to 
 1. Factor or use formula on each.
 2. Get all 4 roots: x₁, x₂, y₁, y₂.
 3. Compare the **smallest x** with the **largest y**, and **largest x** with the **smallest y**.
-4. If smallest_x ≥ largest_y → x ≥ y. If largest_x ≤ smallest_y → x ≤ y. Else → no relation.
+4. Decision rules:
+   - If smallest_x ≥ largest_y → **x ≥ y**
+   - If largest_x ≤ smallest_y → **x ≤ y**
+   - Otherwise → **No relation**
 
 **Worked example.** x² − 7x + 12 = 0 ⇒ x ∈ {3, 4}. y² − 9y + 20 = 0 ⇒ y ∈ {4, 5}.
 
@@ -3296,7 +3310,17 @@ Total ≈ 50 min for 25 questions, leaving 10 min buffer.
 **A similar question:** Increased by 30 %, then decreased by 20 %. Net = 30 − 20 + (30)(−20)/100 = 10 − 6 = **+4 %** gain.
 
 **Another twist:** Three successive changes (a, b, c). Apply the formula stepwise: combine a + b first, then combine result with c.
-- Example: +10 %, +20 %, −10 %. Step 1: 10 + 20 + 2 = +32 %. Step 2: 32 + (−10) + (32 × −10)/100 = 22 − 3.2 = **+18.8 %**.
+**Example.** Three successive changes: +10%, +20%, −10%.
+
+<div class="steps">
+
+**Step 1:** Combine first two → 10 + 20 + (10 × 20)/100 = 10 + 20 + 2 = **+32%**
+
+**Step 2:** Combine result with third → 32 + (−10) + (32 × −10)/100 = 22 − 3.2 = **+18.8%**
+
+**Answer:** Net change = **+18.8%**
+
+</div>
 
 ---
 

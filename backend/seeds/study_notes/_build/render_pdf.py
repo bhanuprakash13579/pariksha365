@@ -247,7 +247,13 @@ CSS = textwrap.dedent("""
     letter-spacing: 0.04em;
     font-size: 9pt;
   }
-  p, li { orphans: 2; widows: 2; }
+  p { margin: 0 0 7pt 0; orphans: 2; widows: 2; }
+  li { margin-bottom: 7pt; line-height: 1.68; orphans: 2; widows: 2; }
+  ol, ul { padding-left: 22pt; margin: 5pt 0 10pt 0; }
+  ol > li { margin-bottom: 9pt; }
+  /* Nested lists — slightly tighter */
+  li > ul, li > ol { margin-top: 4pt; margin-bottom: 2pt; }
+  li > ul > li, li > ol > li { margin-bottom: 4pt; }
   h1 + *, h2 + *, h3 + *, h4 + * { page-break-before: avoid; }
 
   /* ── Plain blockquote (narrative / italic aside) ── */
@@ -287,7 +293,9 @@ CSS = textwrap.dedent("""
     line-height: 1.80;
     page-break-inside: avoid;
   }
-  .steps p { margin: 1pt 0; }
+  .steps p { margin: 0 0 8pt 0; }
+  .steps ol, .steps ul { margin: 4pt 0 8pt 0; }
+  .steps li { margin-bottom: 6pt; }
   .steps strong { color: #0369a1; }
   .steps code { background: none; padding: 0; font-size: 9.5pt; }
   /* Inline annotation inside step blocks — subtle grey italic */
