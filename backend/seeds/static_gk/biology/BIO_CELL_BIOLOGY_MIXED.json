@@ -1,158 +1,191 @@
 {
   "schema_version": 1,
   "subject": "Biology",
-  "topic": "Cell biology — mixed tiers",
+  "topic": "Cell Biology — Organelles and Division",
   "topic_code": "BIO_CELL_BIOLOGY_MIXED",
-  "description": "Prokaryotes vs eukaryotes, organelle functions, cell theory, cell division",
+  "generated_at": "2026-05-07",
   "questions": [
     {
-      "stem": "The cell theory was first formulated in 1838-39 by:",
+      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_001",
+      "text": "Which organelle is called the 'powerhouse of the cell' and produces most of the cell's ATP?",
       "options": [
-        {"option_text": "Robert Hooke alone", "is_correct": false},
-        {"option_text": "Mathias Schleiden (botany) and Theodor Schwann (zoology)", "is_correct": true},
-        {"option_text": "Antonie van Leeuwenhoek alone", "is_correct": false},
-        {"option_text": "Charles Darwin", "is_correct": false}
+        {
+          "key": "A",
+          "text": "Nucleus — stores genetic information as DNA"
+        },
+        {
+          "key": "B",
+          "text": "Ribosome — assembles proteins from amino acids"
+        },
+        {
+          "key": "C",
+          "text": "Mitochondrion — carries out cellular respiration"
+        },
+        {
+          "key": "D",
+          "text": "Lysosome — digests worn-out cellular components"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Cell theory — original tenets: (1) all living organisms are composed of cells; (2) cell is the basic unit of life. Schleiden (1838, plants) + Schwann (1839, animals) jointly formulated. Rudolf Virchow (1855) added the THIRD postulate: 'Omnis cellula e cellula' — every cell arises from a pre-existing cell. Robert Hooke first SAW and named 'cells' in 1665 (cork sections). Leeuwenhoek (1670s) described single-celled organisms ('animalcules') in pond water.",
-      "subject": "Biology",
-      "topic": "Cell biology — mixed tiers",
-      "topic_code": "BIO_CELL_BIOLOGY_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-bio-cell-01",
-      "generated_at": "2026-04-24T22:40:00+00:00",
-      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_00001"
+      "correct": "C",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "explanation": "Mitochondria carry out aerobic respiration (oxidative phosphorylation), generating the bulk of a cell's ATP via the electron transport chain. They have their own circular DNA, double membrane (outer + inner with cristae), and are thought to have evolved from symbiotic bacteria (endosymbiont theory)."
     },
     {
-      "stem": "The MAJOR difference between prokaryotic and eukaryotic cells is that prokaryotes:",
+      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_002",
+      "text": "Ribosomes are primarily responsible for ____.",
       "options": [
-        {"option_text": "Are larger in size", "is_correct": false},
-        {"option_text": "Lack a true membrane-bound nucleus and other membrane-bound organelles", "is_correct": true},
-        {"option_text": "Have many chromosomes", "is_correct": false},
-        {"option_text": "Reproduce sexually", "is_correct": false}
+        {
+          "key": "A",
+          "text": "producing energy via the citric acid cycle"
+        },
+        {
+          "key": "B",
+          "text": "synthesising proteins by translating mRNA sequences"
+        },
+        {
+          "key": "C",
+          "text": "digesting pathogens using hydrolytic enzymes"
+        },
+        {
+          "key": "D",
+          "text": "packaging proteins into vesicles for secretion"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Prokaryotes (bacteria, archaea) — DNA is in a 'nucleoid region', no true nucleus. NO mitochondria, no ER, no Golgi, no chloroplasts. Have ribosomes (smaller — 70S type) and a cell wall (peptidoglycan in bacteria, varied in archaea). Single circular chromosome + plasmids. ~1-10 µm size. Eukaryotes (animals, plants, fungi, protists) — true nucleus + organelles. ~10-100 µm. 80S ribosomes. Multiple linear chromosomes. Reproduction usually involves mitosis / meiosis. Note: mitochondrial + chloroplast ribosomes are 70S — endosymbiotic theory (Margulis).",
-      "subject": "Biology",
-      "topic": "Cell biology — mixed tiers",
-      "topic_code": "BIO_CELL_BIOLOGY_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-bio-cell-02",
-      "generated_at": "2026-04-24T22:40:00+00:00",
-      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_00002"
+      "correct": "B",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "explanation": "Ribosomes read mRNA sequences and assemble amino acids into polypeptide chains — the process of translation. They can be free in the cytoplasm (making cytoplasmic proteins) or attached to the rough endoplasmic reticulum (making secretory/membrane proteins). They are not membrane-bound organelles."
     },
     {
-      "stem": "The 'powerhouse' of the cell is the:",
+      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_003",
+      "text": "Which organelle–function pairing is CORRECTLY matched?",
       "options": [
-        {"option_text": "Nucleus", "is_correct": false},
-        {"option_text": "Mitochondrion (site of cellular respiration → ATP)", "is_correct": true},
-        {"option_text": "Ribosome", "is_correct": false},
-        {"option_text": "Lysosome", "is_correct": false}
+        {
+          "key": "A",
+          "text": "Golgi apparatus — primary site of ATP production"
+        },
+        {
+          "key": "B",
+          "text": "Lysosome — performs photosynthesis using chlorophyll"
+        },
+        {
+          "key": "C",
+          "text": "Vacuole — stores water, sap, and metabolic waste"
+        },
+        {
+          "key": "D",
+          "text": "Chloroplast — digests foreign particles by hydrolysis"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Mitochondria — site of aerobic respiration. Glucose + O₂ → CO₂ + H₂O + ~36-38 ATP (Krebs cycle in matrix; oxidative phosphorylation in inner membrane via electron transport chain). Have own DNA (mtDNA — circular, like bacteria), 70S ribosomes — endosymbiotic theory: ancestor was a free-living α-proteobacterium engulfed ~1.5 billion years ago. Inherited maternally (egg's mitochondria; sperm's are degraded post-fertilisation). Mitochondrial Eve = MRCA of all living humans via mtDNA.",
-      "needs_diagram": true,
-      "diagram_hint": "Eukaryotic animal cell with labelled organelles — nucleus, nucleolus, mitochondria, ribosomes, ER (rough/smooth), Golgi, lysosomes, cytoskeleton, cell membrane.",
-      "subject": "Biology",
-      "topic": "Cell biology — mixed tiers",
-      "topic_code": "BIO_CELL_BIOLOGY_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-bio-cell-03",
-      "generated_at": "2026-04-24T22:40:00+00:00",
-      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_00003"
+      "correct": "C",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "Vacuoles (especially the large central vacuole in plant cells) store water, cell sap, pigments, and metabolic waste; they also maintain turgor pressure. Golgi apparatus modifies and packages proteins/lipids; Lysosome performs intracellular digestion; Chloroplast carries out photosynthesis."
     },
     {
-      "stem": "Lysosomes — termed 'suicide bags of the cell' — function in:",
+      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_004",
+      "text": "During mitosis, chromosomes align at the cell's equatorial plate during which phase?",
       "options": [
-        {"option_text": "Energy production", "is_correct": false},
-        {"option_text": "Intracellular digestion using hydrolytic enzymes", "is_correct": true},
-        {"option_text": "Photosynthesis", "is_correct": false},
-        {"option_text": "Protein synthesis", "is_correct": false}
+        {
+          "key": "A",
+          "text": "Prophase — chromosomes condense and become visible"
+        },
+        {
+          "key": "B",
+          "text": "Metaphase — chromosomes line up at the cell equator"
+        },
+        {
+          "key": "C",
+          "text": "Anaphase — sister chromatids separate toward poles"
+        },
+        {
+          "key": "D",
+          "text": "Telophase — nuclear envelopes reform around chromosomes"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Lysosomes — small membrane-bound vesicles containing ~50 hydrolytic enzymes (acid hydrolases active at pH ~4.5, achieved by H⁺ pumps). Digest waste materials, worn-out organelles (autophagy), foreign matter (after phagocytosis). When the cell is damaged, lysosomes can rupture → digest the entire cell → 'suicide' cell death (autolysis). Lysosomal storage diseases (Tay-Sachs, Pompe) result from missing enzymes. Christian de Duve discovered lysosomes (Nobel 1974).",
-      "subject": "Biology",
-      "topic": "Cell biology — mixed tiers",
-      "topic_code": "BIO_CELL_BIOLOGY_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-bio-cell-04",
-      "generated_at": "2026-04-24T22:40:00+00:00",
-      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_00004"
+      "correct": "B",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "In metaphase, maximally condensed chromosomes align along the metaphase plate (cell equator), attached to spindle fibres at their centromeres. This ensures equal distribution to daughter cells. Metaphase provides the clearest view of chromosome number and morphology, making it ideal for karyotyping."
     },
     {
-      "stem": "Plant cells differ from animal cells primarily in possessing:",
+      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_005",
+      "text": "The cell membrane is called 'selectively permeable' because ____.",
       "options": [
-        {"option_text": "Mitochondria only", "is_correct": false},
-        {"option_text": "A cell wall (cellulose) + chloroplasts + a large central vacuole", "is_correct": true},
-        {"option_text": "Lysosomes only", "is_correct": false},
-        {"option_text": "Ribosomes only", "is_correct": false}
+        {
+          "key": "A",
+          "text": "it lets all molecules pass freely without any restriction"
+        },
+        {
+          "key": "B",
+          "text": "it permits only pure water molecules to cross at all times"
+        },
+        {
+          "key": "C",
+          "text": "it controls which substances can enter or exit the cell"
+        },
+        {
+          "key": "D",
+          "text": "it blocks all ionic and large molecular movement completely"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Three plant-specific organelles: (1) CELL WALL — rigid, cellulose-based outer layer (animal cells lack); (2) CHLOROPLASTS — site of photosynthesis (chlorophyll a, b); 70S ribosomes; own DNA — endosymbiotic ancestor was a cyanobacterium; (3) LARGE CENTRAL VACUOLE — stores water, ions, sugars; provides turgor pressure (when full → cell becomes 'turgid'; loss → wilting). Animal cells have NO chloroplasts; small/multiple vacuoles; no cell wall — flexible. Both have plasma membrane, nucleus, mitochondria, ER, Golgi, ribosomes.",
-      "subject": "Biology",
-      "topic": "Cell biology — mixed tiers",
-      "topic_code": "BIO_CELL_BIOLOGY_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-bio-cell-05",
-      "generated_at": "2026-04-24T22:40:00+00:00",
-      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_00005"
+      "correct": "C",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "Selective permeability means the membrane allows small nonpolar molecules and water to pass freely, while regulating ions and polar/large molecules through protein channels, carriers, and pumps. This selective control maintains the cell's internal environment (homeostasis). Neither completely open nor completely closed."
     },
     {
-      "stem": "MEIOSIS — the special cell division that produces gametes — differs from mitosis in:",
+      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_006",
+      "text": "A plant cell is placed in a hypertonic solution. Which sequence correctly describes the outcome?",
       "options": [
-        {"option_text": "Producing identical diploid cells", "is_correct": false},
-        {"option_text": "Producing 4 haploid daughter cells with halved chromosome number; involves crossing over", "is_correct": true},
-        {"option_text": "Occurring in all body cells", "is_correct": false},
-        {"option_text": "Skipping DNA replication", "is_correct": false}
+        {
+          "key": "A",
+          "text": "Water enters → vacuole enlarges → turgor builds → cell bursts (lysis)"
+        },
+        {
+          "key": "B",
+          "text": "Water exits → cytoplasm shrinks → membrane pulls from wall → plasmolysis"
+        },
+        {
+          "key": "C",
+          "text": "Water enters → membrane ruptures → cell wall collapses inward"
+        },
+        {
+          "key": "D",
+          "text": "Water exits → vacuole fills with solutes → osmotic pressure equalises quickly"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "MITOSIS — somatic (body) cells; produces 2 identical diploid daughter cells (2n → 2n + 2n). MEIOSIS — gamete formation (germ cells); produces 4 haploid (n) daughter cells. Two divisions: Meiosis I (reductional, n) — homologous chromosomes pair (synapsis), CROSSING OVER occurs (genetic recombination), then separate to opposite poles. Meiosis II (equational, no halving further) — sister chromatids separate. Meiosis ensures genetic diversity (crossing over + independent assortment of homologues). Mitosis = normal growth/repair; meiosis = sexual reproduction.",
-      "subject": "Biology",
-      "topic": "Cell biology — mixed tiers",
-      "topic_code": "BIO_CELL_BIOLOGY_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-bio-cell-06",
-      "generated_at": "2026-04-24T22:40:00+00:00",
-      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_00006"
+      "correct": "B",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "explanation": "In a hypertonic solution (higher solute outside), water exits the cell by osmosis. The vacuole shrinks, the cytoplasm contracts, and the plasma membrane pulls away from the rigid cell wall — this is plasmolysis. Cell lysis (bursting) occurs in hypotonic solutions when water enters. The plant cell wall prevents physical bursting."
     },
     {
-      "stem": "The 'protein factories' of the cell are:",
+      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_007",
+      "text": "Which statement about the endoplasmic reticulum (ER) is INCORRECT?",
       "options": [
-        {"option_text": "Mitochondria", "is_correct": false},
-        {"option_text": "Ribosomes — site of translation (mRNA → protein)", "is_correct": true},
-        {"option_text": "Vacuoles", "is_correct": false},
-        {"option_text": "Centrosomes", "is_correct": false}
+        {
+          "key": "A",
+          "text": "Rough ER bears ribosomes and is involved in protein synthesis"
+        },
+        {
+          "key": "B",
+          "text": "Smooth ER lacks ribosomes and handles lipid synthesis and detoxification"
+        },
+        {
+          "key": "C",
+          "text": "Both rough and smooth ER are physically connected to the nuclear envelope"
+        },
+        {
+          "key": "D",
+          "text": "Rough ER is the primary site for ATP synthesis via oxidative phosphorylation"
+        }
       ],
-      "correct_letter": "B",
-      "explanation": "Ribosomes — small (~20 nm), no membrane. Two subunits (large + small) made of rRNA + proteins. Site of TRANSLATION — read mRNA, synthesise polypeptide chain. Free in cytoplasm (proteins for cell's own use) OR attached to rough ER (proteins for secretion / membranes). Eukaryotic ribosomes — 80S (60S + 40S subunits). Prokaryotic, mitochondrial, chloroplast — 70S (50S + 30S). Many antibiotics (streptomycin, tetracycline, erythromycin) target bacterial 70S ribosomes selectively. rRNA is functionally crucial — Nobel 2009 (Ramakrishnan, Steitz, Yonath) for ribosome structure.",
-      "subject": "Biology",
-      "topic": "Cell biology — mixed tiers",
-      "topic_code": "BIO_CELL_BIOLOGY_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-24-bio-cell-07",
-      "generated_at": "2026-04-24T22:40:00+00:00",
-      "id": "sgk_BIO_CELL_BIOLOGY_MIXED_00007"
+      "correct": "D",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "explanation": "ATP synthesis via oxidative phosphorylation occurs on the INNER MITOCHONDRIAL MEMBRANE (via ATP synthase), not the rough ER. The rough ER handles co-translational protein synthesis and folding. All other options are correct: rough ER has ribosomes, smooth ER handles lipids/detox, and both are continuous with the nuclear envelope."
     }
   ]
 }

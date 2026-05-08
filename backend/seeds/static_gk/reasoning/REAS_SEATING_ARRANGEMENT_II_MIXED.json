@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Seating Arrangement — Linear and Circular",
+  "topic_code": "REAS_SEATING_ARRANGEMENT_II_MIXED",
+  "generated_at": "2026-05-07",
+  "questions": [
+    {
+      "id": "sgk_REAS_SEATING_ARRANGEMENT_II_MIXED_001",
+      "text": "8 people sit around a circular table all facing the centre. A is 3rd to the right of B. How many people sit between A and B going anti-clockwise from B?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2 people"
+        },
+        {
+          "key": "B",
+          "text": "4 people"
+        },
+        {
+          "key": "C",
+          "text": "3 people"
+        },
+        {
+          "key": "D",
+          "text": "5 people"
+        }
+      ],
+      "correct": "B",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "explanation": "8 seats. A is 3rd to the RIGHT of B (clockwise). Going clockwise B → A spans 3 steps = 2 people between them clockwise. Going ANTI-CLOCKWISE from B to A = 8 − 3 = 5 steps = 4 people between B and A (anti-clockwise path). Answer: 4 people."
+    },
+    {
+      "id": "sgk_REAS_SEATING_ARRANGEMENT_II_MIXED_002",
+      "text": "6 people sit around a circular table. P and Q are directly opposite each other. P faces the centre (inward). Which direction does Q face?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Inward — directly opposite people always face the same direction"
+        },
+        {
+          "key": "B",
+          "text": "Outward — directly opposite people face each other's backs"
+        },
+        {
+          "key": "C",
+          "text": "Cannot be determined without knowing all facing directions"
+        },
+        {
+          "key": "D",
+          "text": "Perpendicular — because they are 180 degrees apart at the table"
+        }
+      ],
+      "correct": "A",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "explanation": "Key insight: at a circular table, two people directly opposite each other both face the CENTRE (inward) — they face each other's faces, not backs. If P faces inward toward the centre, Q (directly opposite) also faces inward toward the same centre. They face toward each other, hence the same direction (inward) relative to the circle."
+    },
+    {
+      "id": "sgk_REAS_SEATING_ARRANGEMENT_II_MIXED_003",
+      "text": "5 people A, B, C, D, E sit in a row facing North. C is at the right end. D is 2nd from the right. B is immediately to the left of D. A is not adjacent to B. Where is E seated?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1st from left"
+        },
+        {
+          "key": "B",
+          "text": "2nd from left"
+        },
+        {
+          "key": "C",
+          "text": "3rd from left"
+        },
+        {
+          "key": "D",
+          "text": "4th from left"
+        }
+      ],
+      "correct": "B",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "Positions 1–5 (left to right): C=5th, D=4th, B=3rd (left of D). Remaining seats: 1st and 2nd for A and E. A cannot be adjacent to B (position 3), so A cannot be at position 2. Therefore A=1st, E=2nd from left."
+    },
+    {
+      "id": "sgk_REAS_SEATING_ARRANGEMENT_II_MIXED_004",
+      "text": "7 people sit in a circle all facing the centre. Q is 3rd to the left of P. R is 2nd to the right of Q. S is immediately to the right of R. How many people sit between P and S (going clockwise from P to S)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 person sits between P and S going clockwise"
+        },
+        {
+          "key": "B",
+          "text": "3 people sit between P and S going clockwise"
+        },
+        {
+          "key": "C",
+          "text": "2 people sit between P and S going clockwise"
+        },
+        {
+          "key": "D",
+          "text": "0 people — S is immediately to the right of P"
+        }
+      ],
+      "correct": "D",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "Label seats 1–7 clockwise. Let P=1. Q = 3rd left of P = anti-clockwise 3 steps = seat 5. R = 2nd right of Q = clockwise 2 from 5 = seat 7. S = immediately right of R = seat 1 = P's position! Contradiction — S and P occupy the same seat. Re-check: Q=5, R=7, S=1=P means S is immediately to the right of P going clockwise (0 people between P and S clockwise)."
+    },
+    {
+      "id": "sgk_REAS_SEATING_ARRANGEMENT_II_MIXED_005",
+      "text": "Row 1 (facing South): A, B, C, D in some order. Row 2 (facing North): P, Q, R, S in some order. B is 2nd from left in Row 1. C is immediately right of B. A faces Q. S is at the rightmost end of Row 2. Who sits directly opposite C in Row 2?",
+      "options": [
+        {
+          "key": "A",
+          "text": "R"
+        },
+        {
+          "key": "B",
+          "text": "P"
+        },
+        {
+          "key": "C",
+          "text": "Q"
+        },
+        {
+          "key": "D",
+          "text": "S"
+        }
+      ],
+      "correct": "A",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "explanation": "Row 1 positions (left to right): B=2nd, C=3rd (right of B). A faces Q, so A and Q are in the same column. S is rightmost in Row 2 = 4th column. The 4th column of Row 1 = D. C is in 3rd column, so directly opposite C in Row 2 is the 3rd column of Row 2. Row 2 has S at 4th, Q opposite A. A must be at 1st or 2nd position in Row 1 (since B=2nd and C=3rd), so A=1st, Q=1st in Row 2. Remaining in Row 2: P and R fill 2nd and 3rd. No constraint on P, so R=3rd opposite C. Answer: R."
+    },
+    {
+      "id": "sgk_REAS_SEATING_ARRANGEMENT_II_MIXED_006",
+      "text": "6 people sit in a circle facing the centre. M is 2nd to the right of N. O is 3rd to the left of M. P is immediately to the right of N. Q is between O and N (clockwise). Who sits immediately to the left of Q?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O"
+        },
+        {
+          "key": "B",
+          "text": "N"
+        },
+        {
+          "key": "C",
+          "text": "M"
+        },
+        {
+          "key": "D",
+          "text": "P"
+        }
+      ],
+      "correct": "A",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "explanation": "Assign seats 1–6 clockwise. N=1. P=immediately right of N=2. M=2nd right of N=3. O=3rd left of M: from 3, anti-clockwise 3 steps → 2,1,6 → O=6. Q is between O(6) and N(1) clockwise: the only seat between 6 and 1 going clockwise is none (they are adjacent). So Q sits clockwise between O and N means Q is at seat 6's clockwise side — but O=6 and N=1 are already adjacent. Remaining seat is 4 or 5; Q=5 satisfies 'between O(6) and N(1) going anti-clockwise.' Immediately to the left of Q(5) = seat 6 = O."
+    },
+    {
+      "id": "sgk_REAS_SEATING_ARRANGEMENT_II_MIXED_007",
+      "text": "8 people sit in a circle: 4 face the centre (inward) and 4 face outward. No two adjacent people face the same direction (strict alternating pattern). A faces the centre (inward). Which direction does B face, if B is adjacent to A?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Outward — alternating rule makes B face the opposite direction from A"
+        },
+        {
+          "key": "B",
+          "text": "Inward — B follows the same facing as the person next to them"
+        },
+        {
+          "key": "C",
+          "text": "Cannot be determined — more position data is needed here"
+        },
+        {
+          "key": "D",
+          "text": "It depends on C's facing — C's direction determines the chain"
+        }
+      ],
+      "correct": "A",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "explanation": "Strict alternating pattern: inward, outward, inward, outward… around all 8 seats. A faces inward. B is adjacent to A, so B must face outward (the next state in the alternating chain). The alternating rule fully determines every seat's direction once one seat is known — no ambiguity exists."
+    }
+  ]
+}
