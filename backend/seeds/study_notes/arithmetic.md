@@ -202,17 +202,29 @@ When you see a new question, your pencil should be **still** for 3 seconds while
 
 **The π = 22/7 rule:**
 - Cylinder/Cone/Sphere volumes and surface areas use π = 22/7 in exams.
-- Volume of cone = (1/3)(22/7)r²h = **22r²h / 21**. The 22 in the numerator guarantees the answer is divisible by **11** (and 2) when the dimensions give an integer answer.
-- Hemisphere TSA = 3πr² = 3(22/7)r² = **66r²/7**. Again, 66 = 6×11.
+- Volume of cone = (1/3)(22/7)r²h = **22r²h / 21**.
+  - The 22 in the numerator guarantees the answer is divisible by **11** (and 2) when dimensions give an integer answer.
+- Hemisphere TSA = 3πr² = 3(22/7)r² = **66r²/7**.
+  - 66 = 6 × 11, so the answer is again divisible by 11.
 - Before computing: look at options, eliminate any not divisible by 11.
 
 </div>
 
 **Worked example.** A cone has r = 7 cm, h = 6 cm. Volume = ?
-Options: (a) 280 cm³ (b) 308 cm³ (c) 294 cm³ (d) 315 cm³
 
-*Fast path:* Formula = (22/21) × r²h = (22/21) × 49 × 6 = 22 × 14 = **308**.
-*Even faster:* 308 ÷ 11 = 28 ✓. 280 ÷ 11 = 25.45 ✗. 294 ÷ 11 = 26.7 ✗. 315 ÷ 11 = 28.6 ✗. Only (b) is divisible by 11 → answer = **(b) 308** in 5 seconds.
+Options: (a) 280 cm³ &nbsp; (b) 308 cm³ &nbsp; (c) 294 cm³ &nbsp; (d) 315 cm³
+
+*Fast path:*
+- Formula = (22/21) × r²h
+- = (22/21) × 49 × 6
+- = 22 × 14 = **308**
+
+*Even faster — divisibility by 11 check:*
+- 308 ÷ 11 = 28 ✓ → option (b) passes
+- 280 ÷ 11 = 25.45 ✗
+- 294 ÷ 11 = 26.7 ✗
+- 315 ÷ 11 = 28.6 ✗
+- Only (b) is divisible by 11 → answer = **(b) 308** in 5 seconds
 
 **When NOT to use:** When r or h are given as decimals or fractions that don't simplify cleanly. Also when multiple options are divisible by 11 — you'll need to compute the magnitude too.
 
@@ -227,9 +239,15 @@ Options: (a) 280 cm³ (b) 308 cm³ (c) 294 cm³ (d) 315 cm³
 **When NOT to use:** Options are clustered close together (e.g., 1218, 1224, 1230, 1236). A rough calculation will not distinguish them — compute exactly.
 
 **Worked example.** 3.97 % of 2498 + 7.04 × 39.6 = ?
-Options: (a) 178 (b) 378 (c) 578 (d) 778
 
-*Rough:* ≈ 4% of 2500 + 7 × 40 = 100 + 280 = 380. Closest = **(b) 378**.
+Options: (a) 178 &nbsp; (b) 378 &nbsp; (c) 578 &nbsp; (d) 778
+
+*Rough estimate:*
+- 3.97 % ≈ 4 %; 2498 ≈ 2500
+- 4 % of 2500 = **100**
+- 7.04 ≈ 7; 39.6 ≈ 40
+- 7 × 40 = **280**
+- Total ≈ 100 + 280 = 380 → closest option = **(b) 378**
 
 *The exam calls this type "Approximation" and always gives options far enough apart that rounding to 1-2% is safe.*
 
@@ -252,14 +270,26 @@ Options: (a) 178 (b) 378 (c) 578 (d) 778
 **Worked example.** x² − 7x + 12 = 0. Find x.
 Options: (a) 2 (b) 3 (c) 5 (d) 6
 
-*Traditional:* Factorise → (x−3)(x−4) = 0 → x = 3 or 4. Since 4 is not in options, **x = 3**.
-*Faster:* Plug (b): 9 − 21 + 12 = 0 ✓ → **(b) 3** in 4 seconds.
+*Traditional:*
+- Factorise: (x−3)(x−4) = 0
+- Roots: x = 3 or x = 4
+- 4 is not in the options → **x = 3**
+
+*Faster — backward substitution:*
+- Plug (b) x = 3: 9 − 21 + 12 = 0 ✓ → **(b) 3** in 4 seconds
 
 **Worked example (profit/loss).** A shopkeeper sells an item at 20% profit. If he had sold it for ₹12 more, profit would be 30%. Find the cost price.
-Options: (a) ₹60 (b) ₹80 (c) ₹100 (d) ₹120
 
-*Backward sub with (d):* SP at 20% = 120 + 24 = 144. SP at 30% = 120 + 36 = 156. Difference = 12 ✓ → **CP = ₹120 = (d)**.
-*Try (c):* SP at 20% = 120, SP at 30% = 130. Difference = 10 ≠ 12. ✗.
+Options: (a) ₹60 &nbsp; (b) ₹80 &nbsp; (c) ₹100 &nbsp; (d) ₹120
+
+*Try (d) CP = ₹120:*
+- SP at 20% profit = 120 + 24 = **144**
+- SP at 30% profit = 120 + 36 = **156**
+- Difference = 156 − 144 = 12 ✓ → **CP = ₹120 = (d)**
+
+*Try (c) CP = ₹100 (to confirm it fails):*
+- SP at 20% = 120; SP at 30% = 130
+- Difference = 10 ≠ 12 ✗
 
 ---
 
@@ -273,13 +303,23 @@ Options: (a) ₹60 (b) ₹80 (c) ₹100 (d) ₹120
 
 **Worked example.** A's salary is 25% more than B's. By what % is B's salary less than A's?
 
-*Variable method:* Let B = x, A = 1.25x. % less = (A−B)/A × 100 = 0.25x/1.25x × 100 = 20%.
-*Base 100 method:* Let B = 100. Then A = 125. B is less than A by (125−100)/125 × 100 = 25/125 × 100 = **20%**. No algebra needed.
+*Variable method:*
+- Let B = x, then A = 1.25x
+- % less = (A − B) / A × 100 = 0.25x / 1.25x × 100 = **20 %**
+
+*Base 100 method (faster):*
+- Let B = 100, then A = 125
+- B is less than A by (125 − 100) / 125 × 100 = 25 / 125 × 100 = **20 %**
 
 **Worked example.** A price rises 20%, then falls 20%. Net effect?
 
-*Base 100:* Start = 100. After +20%: 120. After −20%: 120 × 0.8 = 96. Net = **−4%**.
-*Formula:* 20 − 20 + (20)(−20)/100 = 0 − 4 = −4% ✓. Both fast, but base-100 is more intuitive.
+*Base 100:*
+- Start = 100
+- After +20 %: 100 × 1.20 = **120**
+- After −20 %: 120 × 0.80 = **96**
+- Net change = (96 − 100) / 100 × 100 = **−4 %**
+
+*Formula verification:* a + b + ab/100 = 20 + (−20) + (20)(−20)/100 = 0 − 4 = **−4 %** ✓
 
 ---
 
@@ -293,8 +333,17 @@ Options: (a) ₹60 (b) ₹80 (c) ₹100 (d) ₹120
 
 **Worked example.** A completes a job in 12 days, B in 18 days. Together, how long?
 
-*Fraction method:* 1/12 + 1/18 = 3/36 + 2/36 = 5/36. Together = 36/5 = **7.2 days**.
-*LCM method:* Total work = LCM(12, 18) = 36 units. A's rate = 36/12 = 3 units/day. B's rate = 36/18 = 2 units/day. Together: 5 units/day → 36/5 = **7.2 days**. Same answer, no fraction arithmetic.
+*Fraction method:*
+- A's rate = 1/12; B's rate = 1/18
+- Combined = 1/12 + 1/18 = 3/36 + 2/36 = 5/36
+- Together = 36/5 = **7.2 days**
+
+*LCM method (no fractions):*
+- Total work = LCM(12, 18) = **36 units**
+- A's rate = 36/12 = **3 units/day**
+- B's rate = 36/18 = **2 units/day**
+- Combined rate = 5 units/day
+- Time = 36/5 = **7.2 days**
 
 **When it saves the most time:** Three people, one joins midway. LCM turns 1/a + 1/b + 1/c into integer rates; the partial-work calculation becomes subtraction of integers.
 
@@ -326,18 +375,33 @@ Options: (a) ₹60 (b) ₹80 (c) ₹100 (d) ₹120
 
 **Worked example (mixture).** A 20-litre solution of 40% alcohol is mixed with a 50-litre solution of 80% alcohol. Find the alcohol % in the mixture.
 
-*Standard:* Total alcohol = 0.4×20 + 0.8×50 = 8 + 40 = 48. Total solution = 70. % = 48/70 × 100 = **68.57 %**.
+*Standard:*
+- Alcohol from solution 1 = 0.4 × 20 = **8 litres**
+- Alcohol from solution 2 = 0.8 × 50 = **40 litres**
+- Total alcohol = 8 + 40 = **48 litres**
+- Total solution = 20 + 50 = **70 litres**
+- % = 48 / 70 × 100 = **68.57 %**
 
-*Alligation (to check):* Mean = 68.57, A = 40, B = 80. Ratio = (80−68.57):(68.57−40) = 11.43:28.57 = 2:5. Check: 20:50 = 2:5 ✓.
+*Alligation check:*
+- Mean = 68.57, A = 40, B = 80
+- Ratio = (80 − 68.57) : (68.57 − 40) = 11.43 : 28.57 = **2 : 5**
+- Verify: 20 : 50 = 2 : 5 ✓
 
 **Worked example (find the ratio to achieve a target).** Pure acid (100%) is mixed with water (0%) to make 60% acid. Ratio acid:water?
 
-*Alligation:* Ratio = (60−0):(100−60) = 60:40 = **3:2**. Done in 3 seconds.
+*Alligation:*
+- Ratio = (60 − 0) : (100 − 60) = 60 : 40 = **3 : 2**
 
 **Worked example (average speed, the hidden alligation).** A car travels 60 km at 40 km/h and 90 km at 60 km/h. Average speed?
 
-*Traditional:* Time₁ = 60/40 = 1.5 h. Time₂ = 90/60 = 1.5 h. Total = 150 km in 3 h → **50 km/h**.
-*Alligation (only works for equal-distance legs — different formula for equal-time legs):* Equal time here → average speed = (40 + 60)/2 = 50 km/h. But unequal distance — must use time-based alligation: ratio of times = 1.5:1.5 = 1:1. Weighted average speed = (40×1 + 60×1)/(1+1) = **50 km/h** ✓.
+*Traditional:*
+- Time₁ = 60 / 40 = **1.5 h**
+- Time₂ = 90 / 60 = **1.5 h**
+- Total distance = 150 km; total time = 3 h
+- Average speed = 150 / 3 = **50 km/h**
+
+*Weighted average (equal times, so simple average applies):*
+- Average speed = (40 × 1.5 + 60 × 1.5) / (1.5 + 1.5) = (60 + 90) / 3 = **50 km/h** ✓
 
 ---
 
@@ -355,11 +419,20 @@ Options: (a) ₹60 (b) ₹80 (c) ₹100 (d) ₹120
 **Worked example.** Which expression equals sin θ / (1 − cos θ)?
 Options: (a) cosec θ + cot θ (b) cosec θ − cot θ (c) sec θ + 1 (d) cot θ + cos θ
 
-*Substituting θ = 45°:* LHS = (1/√2)/(1 − 1/√2) = (1/√2)/((√2−1)/√2) = 1/(√2−1) = √2+1 (rationalised).
-- (a): cosec 45° + cot 45° = √2 + 1 ✓ → matches.
-- No need to check others once one matches. Answer = **(a)**.
+*Substituting θ = 45°:*
+- LHS = (1/√2) / (1 − 1/√2)
+- Rewrite denominator: 1 − 1/√2 = (√2 − 1)/√2
+- LHS = (1/√2) ÷ ((√2 − 1)/√2) = 1 / (√2 − 1)
+- Rationalise: × (√2 + 1)/(√2 + 1) = (√2 + 1) / (2 − 1) = **√2 + 1**
+- Check (a): cosec 45° + cot 45° = √2 + 1 ✓ → matches
+- No need to check others. Answer = **(a)**
 
-*Algebraic verification (when you have time):* Multiply numerator and denominator by (1 + cos θ): sinθ(1+cosθ)/(1−cos²θ) = sinθ(1+cosθ)/sin²θ = (1+cosθ)/sinθ = 1/sinθ + cosθ/sinθ = cosecθ + cotθ ✓.
+*Algebraic verification (when you have time):*
+- Multiply numerator and denominator by (1 + cos θ)
+- = sin θ(1 + cos θ) / (1 − cos²θ)
+- = sin θ(1 + cos θ) / sin²θ
+- = (1 + cos θ) / sin θ
+- = 1/sin θ + cos θ/sin θ = cosec θ + cot θ ✓
 
 <div class="pitfall">
 
@@ -380,11 +453,17 @@ Options: (a) cosec θ + cot θ (b) cosec θ − cot θ (c) sec θ + 1 (d) cot θ
 **When NOT to use:** If the question asks "how many are NOT co-prime" — compute n − 1 − φ(n) (excluding 1 which is always co-prime, and n itself which shares factor n).
 
 **Worked example.** How many numbers from 1 to 36 are co-prime to 36?
-- 36 = 2² × 3². Distinct primes: 2 and 3.
-- φ(36) = 36 × (1 − 1/2) × (1 − 1/3) = 36 × 1/2 × 2/3 = **12**.
-- Those 12 numbers are: 1, 5, 7, 11, 13, 17, 19, 23, 25, 29, 31, 35.
+- 36 = 2² × 3²; distinct prime factors: 2 and 3
+- φ(36) = 36 × (1 − 1/2) × (1 − 1/3)
+- = 36 × 1/2 × 2/3
+- = 18 × 2/3 = **12**
+- Those 12 numbers: 1, 5, 7, 11, 13, 17, 19, 23, 25, 29, 31, 35
 
-**Worked example.** For n = 30 = 2 × 3 × 5: φ(30) = 30 × (1/2) × (2/3) × (4/5) = **8**.
+**Worked example.** n = 30 = 2 × 3 × 5. Find φ(30).
+- φ(30) = 30 × (1 − 1/2) × (1 − 1/3) × (1 − 1/5)
+- = 30 × 1/2 × 2/3 × 4/5
+- = 15 × 2/3 × 4/5
+- = 10 × 4/5 = **8**
 
 ---
 
@@ -397,10 +476,11 @@ Options: (a) cosec θ + cot θ (b) cosec θ − cot θ (c) sec θ + 1 (d) cot θ
 **When NOT to use:** Subtraction checks are trickier. Catches only errors that change the digital root — a mistake that moves units digit from 6 to 9 (same digital root mod 9) would pass.
 
 **Worked example.** 237 × 43 = 10,191. Verify.
-- Digital root of 237 = 2+3+7 = 12 → 1+2 = 3.
-- Digital root of 43 = 4+3 = 7.
-- Product digital root = 3 × 7 = 21 → 2+1 = **3**.
-- Digital root of 10,191 = 1+0+1+9+1 = 12 → 1+2 = **3** ✓. Consistent → almost certainly correct.
+- Digital root of 237: 2 + 3 + 7 = 12; 1 + 2 = **3**
+- Digital root of 43: 4 + 3 = **7**
+- Product digital root: 3 × 7 = 21; 2 + 1 = **3**
+- Digital root of 10,191: 1 + 0 + 1 + 9 + 1 = 12; 1 + 2 = **3** ✓
+- Both sides give 3 → calculation is consistent
 
 ---
 
@@ -894,8 +974,13 @@ SP = 72% of 2000 = **₹1440**
 
 <div class="steps">
 
-**After 20% discount:** 2000 − 20% of 2000 = 2000 − 400 = ₹1600
-**After 10% discount:** 1600 − 10% of 1600 = 1600 − 160 = **₹1440** ✓
+**After 20% discount:**
+- 20% of 2000 = **400**
+- Price after 1st discount = 2000 − 400 = **₹1600**
+
+**After 10% discount:**
+- 10% of 1600 = **160**
+- Final price = 1600 − 160 = **₹1440** ✓
 
 </div>
 </div>
@@ -1322,11 +1407,15 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 
 <div class="steps">
 
-**Step 1:** Half-yearly rate = 10/2 = 5%; Number of periods = 2
+**Step 1:** Half-yearly rate = 10 / 2 = **5 %**
 
-**Step 2:** $A = 8000 \times (1.05)^2 = 8000 \times 1.1025 = 8820$
+**Step 2:** Number of half-yearly periods = 2 × 1 = **2**
 
-**Answer:** CI = 8820 − 8000 = **₹820**
+**Step 3:** A = 8000 × (1.05)²
+- (1.05)² = **1.1025**
+- A = 8000 × 1.1025 = **₹8,820**
+
+**Answer:** CI = 8,820 − 8,000 = **₹820**
 
 </div>
 </div>
@@ -1528,7 +1617,9 @@ So **R = 10%**
 
 **Step 1:** More boxes → more time → DIRECT variation
 
-**Step 2:** 120/4 = 300/t → t = 300 × 4 / 120 = **10 hours**
+**Step 2:** Set up proportion: 120/4 = 300/t
+
+**Step 3:** t = 300 × 4 / 120 = **10 hours**
 
 </div>
 </div>
@@ -1946,7 +2037,9 @@ $\dfrac{ab}{a+b} = \dfrac{12 \times 18}{12 + 18} = \dfrac{216}{30}$ = **7.2 days
 
 **Step 3:** Ratio of work = 3 : 2
 
-**Step 4:** A's share = (3/5) × 1800 = **₹1080**; B's share = (2/5) × 1800 = **₹720**
+**Step 4:** A's share = (3/5) × 1800 = **₹1080**
+
+**Step 5:** B's share = (2/5) × 1800 = **₹720**
 
 </div>
 
@@ -2383,7 +2476,9 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 
 **Step 4:** A's share from remaining = ₹1200; B's share = ₹1200
 
-**Answer:** A's total = 6000 + 1200 = **₹7200**; B gets **₹1200**
+**Answer:** A's total = 6000 + 1200 = **₹7200**
+
+**Answer:** B gets = **₹1200**
 
 </div>
 
@@ -2417,9 +2512,11 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 
 **Step 4:** 21k + 56 = 25k + 40
 
-**Step 5:** 4k = 16  →  k = 4
+**Step 5:** 4k = 16
 
-**Answer:** A = 3 × 4 = **12 years**, B = 5 × 4 = **20 years**
+**Step 6:** k = 4
+
+**Answer:** A = 3 × 4 = **12 years**; B = 5 × 4 = **20 years**
 
 </div>
 </div>
@@ -2434,9 +2531,11 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 
 **Step 1:** Let son = x, father = 4x
 
-**Step 2:** x + 4x = 50  →  5x = 50
+**Step 2:** x + 4x = 50
 
-**Step 3:** x = 10
+**Step 3:** 5x = 50
+
+**Step 4:** x = 10
 
 **Answer:** Son = **10 years**, Father = **40 years**
 
@@ -5155,7 +5254,11 @@ This works because each factor chooses 0 to a copies of p₁, 0 to b copies of p
 - x = (−(−7) ± 5) / (2 × 2) = (7 ± 5) / 4
 - x = 12/4 = **3** or x = 2/4 = **1/2**
 
-**Quick check via factorisation.** 2x² − 7x + 3 = 2x² − 6x − x + 3 = 2x(x − 3) − (x − 3) = (2x − 1)(x − 3) = 0 → x = 1/2 or 3 ✓.
+**Quick check via factorisation.**
+- 2x² − 7x + 3 = 2x² − 6x − x + 3
+- = 2x(x − 3) − (x − 3)
+- = (2x − 1)(x − 3) = 0
+- x = 1/2 or x = 3 ✓
 
 ---
 
@@ -5446,11 +5549,15 @@ Watch out: Students use 5/12 × 5/12 (with replacement, wrong here).
 **Solving it.** Step-by-step.
 
 **Equation I:** x² − 7x + 10 = 0
-- Factorise: x² − 5x − 2x + 10 = 0 → x(x − 5) − 2(x − 5) = 0 → (x − 5)(x − 2) = 0
+- Split middle term: x² − 5x − 2x + 10 = 0
+- Group: x(x − 5) − 2(x − 5) = 0
+- Factor: (x − 5)(x − 2) = 0
 - Roots: **x = 2** or **x = 5**
 
 **Equation II:** y² − 6y + 8 = 0
-- Factorise: y² − 4y − 2y + 8 = 0 → y(y − 4) − 2(y − 4) = 0 → (y − 4)(y − 2) = 0
+- Split middle term: y² − 4y − 2y + 8 = 0
+- Group: y(y − 4) − 2(y − 4) = 0
+- Factor: (y − 4)(y − 2) = 0
 - Roots: **y = 2** or **y = 4**
 
 **Comparing roots (the systematic way).**
@@ -5685,7 +5792,12 @@ k − 2 = ±4
 
 **A similar question — Midpoint.** Midpoint of (2, 3) and (6, 11) = ((2+6)/2, (3+11)/2) = (4, 7).
 
-**Another twist — Perpendicular line.** Find equation of line perpendicular to y = 2x − 1, passing through (1, 5). New slope m' = −1/2 (since 2 × −0.5 = −1). Equation: y − 5 = −0.5(x − 1) → y = −0.5x + 5.5 → **2y + x = 11**.
+**Another twist — Perpendicular line.** Find equation of line perpendicular to y = 2x − 1, passing through (1, 5).
+- Perpendicular slope m' = −1/2 (since 2 × (−1/2) = −1)
+- Point-slope: y − 5 = −0.5(x − 1)
+- Expand: y − 5 = −0.5x + 0.5
+- y = −0.5x + 5.5
+- Multiply by 2: **2y + x = 11**
 
 ---
 
@@ -5735,7 +5847,9 @@ k − 2 = ±4
 **Q60.** Find the value of log 8 + log 125 (base 10).
 
 **Solving it.** Step-by-step.
-- log 8 + log 125 = log (8 × 125) = log 1,000 = **3** (since 10³ = 1,000).
+- log 8 + log 125 = log (8 × 125) [product rule]
+- = log 1,000
+- = **3** (since 10³ = 1,000)
 
 **Quick way:** Recognise that 8 × 125 = 1,000 (a power of 10) — log 10ⁿ = n.
 
@@ -5747,7 +5861,10 @@ k − 2 = ±4
 
 ***Watch out:*** Students try to compute log 8 = 3 × log 2 (= 0.903) and log 125 = 3 × log 5 (= 2.097) separately. Both are right but slower. Sum-then-multiply is faster.
 
-**A similar question — Solve for x.** If log x = 2.5, find x. → x = 10^2.5 = 10² × 10^0.5 = 100 × √10 ≈ **316.23**.
+**A similar question — Solve for x.** If log x = 2.5, find x.
+- x = 10^2.5
+- = 10² × 10^0.5
+- = 100 × √10 ≈ **316.23**
 
 **Another twist — Change of base.** log_2(16) = log 16 / log 2 = (4 × log 2) / log 2 = **4**.
 
@@ -5763,17 +5880,27 @@ k − 2 = ±4
 **Q61.** A solid is formed by mounting a cone on top of a cylinder. The cylinder has radius 7 cm and height 10 cm. The cone has the same base radius (7 cm) and height 4 cm. Find the total volume.
 
 **Solving it.** Step-by-step.
-- Volume of cylinder = πr²h = (22/7) × 49 × 10 = 22 × 70 = **1,540 cm³**
-- Volume of cone = (1/3)πr²h = (1/3) × (22/7) × 49 × 4 = (1/3) × 22 × 28 = **205.33 cm³**
+- Volume of cylinder = πr²h = (22/7) × 49 × 10
+  - = 22 × 10 × 7 = **1,540 cm³**
+- Volume of cone = (1/3)πr²h = (1/3) × (22/7) × 49 × 4
+  - = (1/3) × 22 × 28 = **205.33 cm³**
 - Total volume = 1,540 + 205.33 = **1,745.33 cm³**
 
 **Worth knowing:** When solids share a base, volumes ADD (no overlap). Surface area adds only EXTERIOR — the joining circular face is hidden, so subtract one πr² from each side's TSA when computing total surface.
 
 ***Watch out:*** Students compute TSA of each solid separately and add — wrong because the shared circular face counts twice.
 
-**A similar question — Hemisphere on cylinder.** Cylinder r = 7, h = 10; hemisphere r = 7 on top. Volume = πr²h + (2/3)πr³ = 1,540 + (2/3) × (22/7) × 343 = 1,540 + 718.67 = **2,258.67 cm³**.
+**A similar question — Hemisphere on cylinder.** Cylinder r = 7, h = 10; hemisphere r = 7 on top.
+- Volume of cylinder = **1,540 cm³** (from above)
+- Volume of hemisphere = (2/3)πr³ = (2/3) × (22/7) × 343
+  - = (2/3) × 22 × 49 = **718.67 cm³**
+- Total = 1,540 + 718.67 = **2,258.67 cm³**
 
-**Another twist — Frustum (cone with top cut off).** Frustum has R = 6 (bottom radius), r = 3 (top radius), h = 8. Volume = (1/3)πh(R² + r² + Rr) = (1/3) × (22/7) × 8 × (36 + 9 + 18) = (1/3) × (22/7) × 8 × 63 = **528 cm³**.
+**Another twist — Frustum (cone with top cut off).** Frustum has R = 6 (bottom radius), r = 3 (top radius), h = 8.
+- Volume = (1/3)πh(R² + r² + Rr)
+- = (1/3) × (22/7) × 8 × (36 + 9 + 18)
+- = (1/3) × (22/7) × 8 × 63
+- = (1/3) × 22 × 8 × 9 = **528 cm³**
 
 ---
 

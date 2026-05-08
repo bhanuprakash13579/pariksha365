@@ -814,16 +814,22 @@ Use **Profit & Loss Adjustment A/c** + Suspense.
 
 > **Q 3.1.** Cash book balance ₹5,000 (Dr). Cheques issued not presented ₹1,200; cheques deposited not cleared ₹800. Pass book balance?
 >
-> 5000 + 1200 − 800 = **₹5,400 (Cr / favourable)**.
+> - Start: Cash Book balance = ₹5,000
+> - Add cheques issued not presented = +₹1,200 → ₹6,200
+> - Less cheques deposited not cleared = −₹800
+> - Pass Book balance = **₹5,400** (favourable)
 
 > **Q 3.2.** Pass book balance ₹3,000 (Cr). Bank charges ₹50; interest credited ₹150. Find cash book balance.
 >
-> Reverse logic: starting from pass book, to find cash book, do the **opposite** signs.
-> Cash book balance = 3000 − 150 + 50 = **₹2,900**.
+> Reverse logic: starting from pass book, to find cash book, apply **opposite** signs.
+> - Less: interest credited (add to PB but not to CB) = −150
+> - Add: bank charges (deducted from PB but not from CB) = +50
+> - Cash book balance = 3,000 − 150 + 50 = **₹2,900**
 
 > **Q 3.3.** A bill of ₹10,000 drawn on 5 April for 3 months. Maturity date?
 >
-> 5 April + 3 months = 5 July + 3 days of grace = **8 July**.
+> - Date of drawing + tenure = 5 April + 3 months = 5 July
+> - Add 3 days of grace = **8 July**
 
 > **Q 3.4.** Cheque deposited but not yet cleared by bank. In BRS starting from cash book balance, this is:
 >
@@ -839,7 +845,10 @@ Use **Profit & Loss Adjustment A/c** + Suspense.
 
 > **Q 3.7.** Bill discounted with bank ₹10,000 at 6 % for 3 months. Discount?
 >
-> 10,000 × 6/100 × 3/12 = **₹150**. Bank credits ₹9,850.
+> - = 10,000 × 6/100 × 3/12
+> - = 10,000 × 0.015
+> - = **₹150**
+> - Bank credits = 10,000 − 150 = ₹9,850
 
 > **Q 3.8.** A cheque of ₹1,000 issued to Ram was wrongly recorded as ₹100 in cash book. In BRS (starting from cash book balance):
 >
@@ -1050,7 +1059,8 @@ $$
 
 > **Q 4.2.** Opening stock ₹5,000; Purchases ₹40,000; Closing stock ₹3,000. COGS?
 >
-> 5000 + 40000 − 3000 = **₹42,000**.
+> - = 5,000 + 40,000 − 3,000
+> - = **₹42,000**
 
 > **Q 4.3.** Salaries ₹10,000; Outstanding salary ₹2,000. Salary expense in P&L?
 >
@@ -1062,7 +1072,8 @@ $$
 
 > **Q 4.5.** Depreciation 10 % p.a. on plant ₹50,000. Depreciation expense?
 >
-> 50,000 × 0.10 = **₹5,000**. Plant in B/S = 50,000 − 5,000 = ₹45,000.
+> - Depreciation = 50,000 × 0.10 = **₹5,000**
+> - Plant in B/S = 50,000 − 5,000 = **₹45,000**
 
 > **Q 4.6.** Carriage inward goes in:
 >
@@ -1082,8 +1093,10 @@ $$
 
 > **Q 4.10.** Bad debts ₹500 (already in TB). Further bad debts ₹200 to write off and a provision @ 5 % on net debtors needed; debtors ₹20,000.
 >
-> P&L Dr: 500 (already) + 200 (extra) + Provision on (20,000 − 200) × 5 % = 990. Total Dr = 500 + 200 + 990 = **₹1,690**.
-> Balance Sheet: Debtors = 20,000 − 200 − 990 = ₹18,810.
+> - Net debtors after further bad debts = 20,000 − 200 = ₹19,800
+> - Provision @ 5% = 19,800 × 5/100 = ₹990
+> - Total P&L Dr = 500 (existing) + 200 (further) + 990 (provision) = **₹1,690**
+> - Balance Sheet Debtors = 20,000 − 200 − 990 = **₹18,810**
 
 > **Q 4.11.** Interest on capital is debited to:
 >
@@ -1103,7 +1116,8 @@ $$
 
 > **Q 4.15.** Sales ₹1,00,000; Opening stock ₹15,000; Purchases ₹70,000; Closing stock ₹10,000; Wages ₹5,000. Gross profit?
 >
-> COGS = 15 + 70 + 5 − 10 = ₹80,000. GP = 100 − 80 = **₹20,000**.
+> - COGS = 15,000 + 70,000 + 5,000 − 10,000 = **₹80,000**
+> - GP = 1,00,000 − 80,000 = **₹20,000**
 
 ## 4.9 Trap-recognition card
 
@@ -1181,15 +1195,29 @@ Machine: Cost ₹1,00,000. Scrap ₹10,000. Useful life = 9 years.
 
 > **SLM:** Annual depreciation = $(1,00,000 - 10,000)/9 = ₹10,000$ per year. Book value falls by ₹10,000 each year.
 >
-> **WDV at 25%:** Year 1: 1,00,000 × 25% = ₹25,000. Book value = ₹75,000. Year 2: 75,000 × 25% = ₹18,750. Book value = ₹56,250. WDV charges more in early years — gives a tax benefit sooner.
+> **WDV at 25%:**
+> - Year 1 depreciation = 1,00,000 × 25% = **₹25,000**
+> - Book value end of Year 1 = 1,00,000 − 25,000 = **₹75,000**
+> - Year 2 depreciation = 75,000 × 25% = **₹18,750**
+> - Book value end of Year 2 = 75,000 − 18,750 = **₹56,250**
+> - WDV charges more in early years — gives a tax benefit sooner.
 
 **Solved Example 5.B — FIFO vs Weighted Average for inventory:**
 
 Opening stock: 100 units @ ₹10 = ₹1,000. Purchased: 200 units @ ₹12 = ₹2,400. Sold: 150 units.
 
-> **FIFO:** Sell 100 units @ ₹10 = ₹1,000; then 50 units @ ₹12 = ₹600. COGS = ₹1,600. Closing stock = 150 units @ ₹12 = ₹1,800.
+> **FIFO:**
+> - Sell 100 units (opening stock) @ ₹10 = ₹1,000
+> - Sell 50 more units (from purchase batch) @ ₹12 = ₹600
+> - COGS = 1,000 + 600 = **₹1,600**
+> - Closing stock = 150 units @ ₹12 = **₹1,800**
 >
-> **Weighted Average:** Average cost = $(1,000 + 2,400)/(100 + 200) = 3,400/300 = 11.33$ per unit. COGS = 150 × 11.33 = ₹1,700. Closing stock = 150 × 11.33 = ₹1,700.
+> **Weighted Average:**
+> - Total cost = 1,000 + 2,400 = **₹3,400**
+> - Total units = 100 + 200 = **300**
+> - Average cost per unit = 3,400 / 300 = **₹11.33**
+> - COGS = 150 × 11.33 = **₹1,700**
+> - Closing stock = 150 × 11.33 = **₹1,700**
 >
 > *In rising prices: FIFO gives lower COGS → higher profit. Weighted average smooths fluctuations.*
 
@@ -1308,8 +1336,10 @@ NRV = Estimated selling price − cost to complete and sell.
 
 > **Q 5.4.** WDV depreciation @ 20 % p.a. on plant ₹100,000. Year 1 and Year 2 depreciation?
 >
-> Year 1 = 100,000 × 0.20 = **₹20,000**. WDV at start of Year 2 = 80,000.
-> Year 2 = 80,000 × 0.20 = **₹16,000**. WDV at end = 64,000.
+> - Year 1 depreciation = 100,000 × 0.20 = **₹20,000**
+> - WDV at start of Year 2 = 100,000 − 20,000 = **₹80,000**
+> - Year 2 depreciation = 80,000 × 0.20 = **₹16,000**
+> - WDV at end of Year 2 = 80,000 − 16,000 = **₹64,000**
 
 > **Q 5.5.** A heavy advertising campaign of ₹3,00,000 whose benefit lasts 3 years. P&L charge per year?
 >
@@ -1325,7 +1355,9 @@ NRV = Estimated selling price − cost to complete and sell.
 
 > **Q 5.8.** A machinery costing ₹50,000 was sold for ₹40,000 after 2 years. SLM was 10 % p.a. WDV at sale?
 >
-> 50,000 − 2 × 5,000 = ₹40,000. Sold at ₹40,000 → **No profit, no loss**.
+> - Annual SLM depreciation = 50,000 × 10% = ₹5,000
+> - WDV after 2 years = 50,000 − 2 × 5,000 = **₹40,000**
+> - Sold at ₹40,000 = WDV → **No profit, no loss**
 
 > **Q 5.9.** Method of depreciation prescribed by Income Tax Act in India?
 >
@@ -1349,7 +1381,9 @@ NRV = Estimated selling price − cost to complete and sell.
 
 > **Q 5.14.** Plant cost ₹100,000; SLM @ 10 % for 3 years; sold at ₹80,000. Profit / loss?
 >
-> WDV after 3 years = 70,000. Sale 80,000 → **profit ₹10,000** (capital profit on sale of fixed asset).
+> - Annual SLM depreciation = 100,000 × 10% = ₹10,000
+> - WDV after 3 years = 100,000 − 3 × 10,000 = **₹70,000**
+> - Profit on sale = 80,000 − 70,000 = **₹10,000** (capital profit on sale of fixed asset)
 
 ## 5.7 Trap-recognition card
 
@@ -1503,7 +1537,8 @@ Each sub-ledger has an **Adjustment Account** (also called **Control Account**) 
 
 > **Q 6.2.** Subscription received ₹10,000; outstanding at year-start ₹500; outstanding at year-end ₹800. Subscription for I&E?
 >
-> 10,000 + 800 − 500 = **₹10,300**.
+> - = 10,000 + 800 (closing OS) − 500 (opening OS)
+> - = **₹10,300**
 
 > **Q 6.3.** Subscription received ₹15,000 (includes ₹1,000 received in advance for next year). Subscription for I&E?
 >
@@ -2395,8 +2430,11 @@ Key relationships:
 FC = ₹10,000. VC at Q=100 is ₹5,000. Find TC, AC, AFC, AVC at Q=100. Also, VC at Q=101 is ₹5,040. Find MC.
 
 > TC = 10,000 + 5,000 = ₹15,000
-> AC = 15,000/100 = ₹150; AFC = 10,000/100 = ₹100; AVC = 5,000/100 = ₹50
-> MC at Q=101: TC(101) = 10,000+5,040 = 15,040; MC = 15,040−15,000 = **₹40**
+> - AC = 15,000/100 = **₹150**
+> - AFC = 10,000/100 = **₹100**
+> - AVC = 5,000/100 = **₹50**
+> - TC(101) = 10,000 + 5,040 = ₹15,040
+> - MC = 15,040 − 15,000 = **₹40**
 > Note: MC (₹40) < AVC (₹50) → AVC is still falling at Q=100.
 
 ## 10.1 Examiner mindset
@@ -2552,7 +2590,8 @@ Causes of DRS: managerial limits, coordination problems.
 
 > **Q 10.8.** TFC = 100, TVC = 200 at Q = 50. AC = ?
 >
-> TC = 300; AC = 300/50 = **6**.
+> - TC = 100 + 200 = **300**
+> - AC = 300/50 = **6**
 
 > **Q 10.9.** When MP > AP:
 >
@@ -2657,7 +2696,9 @@ A monopolist maximises profit by producing where $MR = MC$ (same rule as any fir
 > MR = $100 - 2Q$ (for linear demand, MR has double the slope).
 > Set MR = MC: $100 - 2Q = 20$ → $Q^* = 40$.
 > Price: $P^* = 100 - 40 = ₹60$.
-> Competitive outcome: P = MC → $100 - Q = 20$ → $Q_c = 80$, $P_c = ₹20$.
+> Competitive outcome: Set P = MC: $100 - Q = 20$
+> - Solving: $Q_c = 80$
+> - $P_c = 100 - 80 = ₹20$
 > Monopoly produces 40 (not 80) and charges ₹60 (not ₹20) — classic monopoly outcome.
 
 ## 11.1 Examiner mindset
@@ -2833,7 +2874,7 @@ The kink at the prevailing price → MR curve has a **discontinuity** → MC can
 
 > **Q 11.12.** Selling cost / advertisement is most prominent in:
 >
-| Monopolistic competition and oligopoly.
+> **Monopolistic competition** and **oligopoly**.
 
 > **Q 11.13.** Which market form has the most elastic demand curve?
 >
@@ -3408,7 +3449,8 @@ Historically: cowrie shells → gold coins → paper notes backed by gold → mo
 
 **Solved Example 14.A:** CRR = 4%. A bank receives a fresh deposit of ₹50,000. What is the maximum credit creation?
 
-> Credit creation = Deposit × Money Multiplier = ₹50,000 × (1/0.04) = ₹50,000 × 25 = **₹12,50,000**
+> - Money Multiplier = 1/CRR = 1/0.04 = **25**
+> - Credit creation = Deposit × Money Multiplier = ₹50,000 × 25 = **₹12,50,000**
 
 ## 14.1 Examiner mindset
 
@@ -3621,7 +3663,7 @@ If primary deposit = ₹1000 and CRR = 10 %, banks can create deposits up to ₹
 
 > **Q 14.12.** Payment banks were introduced based on:
 >
-| Nachiket Mor Committee.
+> **Nachiket Mor Committee**.
 
 > **Q 14.13.** Bank rate vs Repo rate — which is collateralised?
 >
