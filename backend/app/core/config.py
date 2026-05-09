@@ -21,9 +21,18 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7  # 7 days
     REFRESH_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 30  # 30 days
     
-    # STRIPE
+    # STRIPE (legacy — unused, kept so old env vars don't cause startup errors)
     STRIPE_API_KEY: str = ""
     STRIPE_WEBHOOK_SECRET: str = ""
+
+    # CASHFREE
+    CASHFREE_APP_ID: str = ""
+    CASHFREE_SECRET_KEY: str = ""
+    CASHFREE_WEBHOOK_SECRET: str = ""
+    CASHFREE_ENV: str = "TEST"  # "TEST" or "PROD"
+
+    # Backend public URL (used for Cashfree webhook notify_url)
+    BACKEND_URL: str = "http://localhost:8000"
     
     # AI MODELS / THIRD PARTY
     GEMINI_API_KEY: str = ""

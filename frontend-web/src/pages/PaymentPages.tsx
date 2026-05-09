@@ -1,4 +1,6 @@
+import { useEffect, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
+import { PaymentAPI } from '../services/api';
 
 export const PaymentSuccess = () => {
     const navigate = useNavigate();
@@ -52,6 +54,111 @@ export const PaymentCancelled = () => {
                         Back to Dashboard
                     </button>
                     <button onClick={() => navigate(-1)}
+                        className="flex-1 bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-xl transition-colors shadow-lg shadow-orange-200">
+                        Try Again
+                    </button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+// Cashfree return page — reads order_id from URL, verifies with backend,
+// shows success (with download link for notes) or failure.
+export const CashfreeReturn = () => {
+    const navigate = useNavigate();
+    const [searchParams] = useSearchParams();
+    const [status, setStatus] = useState<'loading' | 'success' | 'failed' | 'pending'>('loading');
+    const [paymentType, setPaymentType] = useState<string | null>(null);
+
+    useEffect(() => {
+        const orderId = searchParams.get('order_id');
+        if (!orderId) { setStatus('failed'); return; }
+
+        let attempts = 0;
+        const check = () => {
+            PaymentAPI.verifyOrder(orderId)
+                .then((res) => {
+                    const s = res.data.status;
+                    if (s === 'success') {
+                        setPaymentType(res.data.payment_type || null);
+                        setStatus('success');
+                    } else if (s === 'pending' && attempts < 4) {
+                        // Webhook may be a few seconds behind; retry up to 4 times
+                        attempts++;
+                        setTimeout(check, 2000);
+                    } else {
+                        setStatus(s === 'pending' ? 'pending' : 'failed');
+                    }
+                })
+                .catch(() => setStatus('failed'));
+        };
+        check();
+    }, [searchParams]);
+
+    if (status === 'loading' || status === 'pending') {
+        return (
+            <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+                <div className="max-w-md w-full bg-white rounded-2xl p-10 text-center border border-gray-100 shadow-lg">
+                    <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-orange-600 mx-auto mb-6" />
+                    <h1 className="text-xl font-bold text-gray-900 mb-2">Confirming your payment…</h1>
+                    <p className="text-gray-500 text-sm">This usually takes 2–5 seconds. Please don't close this tab.</p>
+                </div>
+            </div>
+        );
+    }
+
+    if (status === 'success') {
+        const isNotes = paymentType === 'NOTES_BUNDLE';
+        return (
+            <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+                <div className="max-w-md w-full bg-white rounded-2xl p-10 text-center border border-gray-100 shadow-lg">
+                    <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h1 className="text-2xl font-bold text-gray-900 mb-2">Payment Successful!</h1>
+                    <p className="text-gray-500 mb-6">
+                        {isNotes
+                            ? 'Your notes bundle is now unlocked. Head to the Notes page to download your PDFs.'
+                            : 'Access unlocked. You can now start mock tests for this exam stage.'}
+                    </p>
+                    <div className="flex flex-col gap-3">
+                        {isNotes && (
+                            <button onClick={() => navigate('/notes')}
+                                className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-xl transition-colors shadow-lg shadow-orange-200">
+                                Download my notes →
+                            </button>
+                        )}
+                        <button onClick={() => navigate('/dashboard')}
+                            className={`w-full font-bold py-3 rounded-xl transition-colors ${isNotes ? 'bg-gray-100 hover:bg-gray-200 text-gray-700' : 'bg-orange-600 hover:bg-orange-700 text-white shadow-lg shadow-orange-200'}`}>
+                            Go to Dashboard
+                        </button>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+    return (
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+            <div className="max-w-md w-full bg-white rounded-2xl p-10 text-center border border-gray-100 shadow-lg">
+                <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg className="w-10 h-10 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <h1 className="text-2xl font-bold text-gray-900 mb-2">Payment Failed</h1>
+                <p className="text-gray-500 mb-6">
+                    Something went wrong. No money has been charged. Please try again or contact us if the issue persists.
+                </p>
+                <div className="flex gap-3">
+                    <button onClick={() => navigate('/dashboard')}
+                        className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-3 rounded-xl transition-colors">
+                        Dashboard
+                    </button>
+                    <button onClick={() => navigate('/notes')}
                         className="flex-1 bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-xl transition-colors shadow-lg shadow-orange-200">
                         Try Again
                     </button>

@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { GoogleLogin } from '@react-oauth/google';
 import { loginUser, signupUser, googleLogin } from '../store/slices/authSlice';
 import { UserAPI } from '../services/api';
+import { LegalFooter } from '../components/common/LegalFooter';
 
 export const Auth = () => {
     const [isLogin, setIsLogin] = useState(true);
@@ -87,6 +88,7 @@ export const Auth = () => {
     };
 
     return (
+        <>
         <div className="min-h-screen bg-gray-50 flex">
             {/* Left Desktop Pane - Premium Gradient & Messaging */}
             <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-orange-500 via-orange-600 to-red-600 p-12 text-white justify-center items-center relative overflow-hidden">
@@ -237,5 +239,7 @@ export const Auth = () => {
                 </div>
             </div>
         </div>
+        <LegalFooter />
+        </>
     );
 };

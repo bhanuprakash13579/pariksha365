@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from app.core.config import settings
 from app.core.database import engine, Base
-from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router, category_router, analytics_router, search_router, quiz_router, exam_structure_router, private_module_router
+from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router, category_router, analytics_router, search_router, quiz_router, exam_structure_router, private_module_router, config_router
 import app.models
 
 import os
@@ -128,6 +128,79 @@ async def lifespan(app: FastAPI):
                     db.add(SubCategory(category_id=cat_db.id, name=sub, order=j, is_enabled=True))
             await db.commit()
 
+        # SELF-HEAL: ensure new test_series timing columns exist on prod
+        # Postgres. ``Base.metadata.create_all`` only creates *new* tables —
+        # it does not ALTER existing ones. Without this block, the new
+        # ``total_duration_minutes`` / ``has_sectional_timing`` columns added
+        # in this release would silently be missing on a long-running
+        # database and every TestSeries query would crash with UndefinedColumn.
+        try:
+            from sqlalchemy import text as _sql_text
+            if engine.dialect.name == "postgresql":
+                await db.execute(_sql_text(
+                    "ALTER TABLE test_series "
+                    "ADD COLUMN IF NOT EXISTS total_duration_minutes INTEGER;"
+                ))
+                await db.execute(_sql_text(
+                    "ALTER TABLE test_series "
+                    "ADD COLUMN IF NOT EXISTS has_sectional_timing BOOLEAN "
+                    "NOT NULL DEFAULT FALSE;"
+                ))
+                # Current-Affairs lifecycle columns on quiz_questions. Admin
+                # uses these to filter and refresh the CA pool from the
+                # admin panel without touching the static-GK rows.
+                await db.execute(_sql_text(
+                    "ALTER TABLE quiz_questions "
+                    "ADD COLUMN IF NOT EXISTS is_current_affair BOOLEAN "
+                    "NOT NULL DEFAULT FALSE;"
+                ))
+                await db.execute(_sql_text(
+                    "ALTER TABLE quiz_questions "
+                    "ADD COLUMN IF NOT EXISTS event_date DATE;"
+                ))
+                await db.execute(_sql_text(
+                    "ALTER TABLE quiz_questions "
+                    "ADD COLUMN IF NOT EXISTS valid_until DATE;"
+                ))
+                await db.execute(_sql_text(
+                    "ALTER TABLE quiz_questions "
+                    "ADD COLUMN IF NOT EXISTS last_reviewed_at TIMESTAMPTZ;"
+                ))
+                await db.execute(_sql_text(
+                    "ALTER TABLE quiz_questions "
+                    "ADD COLUMN IF NOT EXISTS is_published BOOLEAN "
+                    "NOT NULL DEFAULT TRUE;"
+                ))
+                await db.commit()
+        except Exception as alter_err:
+            # Don't block startup — log and continue. A failed ALTER usually
+            # means the column already exists with an incompatible type, which
+            # admin can fix by hand; in the worst case the app keeps running on
+            # the old schema and student attempts use the legacy section-sum
+            # timer fallback.
+            print(f"STARTUP: timing-column ALTER skipped due to: {alter_err!r}")
+
+        # SELF-HEAL: Cashfree payment integration — new columns on the
+        # existing payments table and a new enum value for the provider.
+        try:
+            # Add CASHFREE value to the paymentprovider enum (IF NOT EXISTS
+            # was added in Postgres 9.3 — all modern versions support it).
+            await db.execute(_sql_text(
+                "ALTER TYPE paymentprovider ADD VALUE IF NOT EXISTS 'CASHFREE';"
+            ))
+            # New columns on payments (safe to run repeatedly via IF NOT EXISTS)
+            await db.execute(_sql_text(
+                "ALTER TABLE payments ADD COLUMN IF NOT EXISTS "
+                "payment_type VARCHAR DEFAULT 'COURSE';"
+            ))
+            await db.execute(_sql_text(
+                "ALTER TABLE payments ADD COLUMN IF NOT EXISTS "
+                "exam_stage_id UUID REFERENCES exam_stages(id) ON DELETE SET NULL;"
+            ))
+            await db.commit()
+        except Exception as cf_alter_err:
+            print(f"STARTUP: Cashfree schema self-heal skipped: {cf_alter_err!r}")
+
         # SELF-HEAL: If EVERY category in the DB is currently is_enabled=False,
         # that almost certainly means a migration or an accidental toggle hid
         # them all, which cripples the admin UI. Flip them all back to True.
@@ -206,6 +279,7 @@ app.include_router(quiz_router.router, prefix=f"{settings.API_V1_STR}/quiz", tag
 app.include_router(exam_structure_router.public_router, prefix=f"{settings.API_V1_STR}/exam-structure", tags=["exam-structure"])
 app.include_router(exam_structure_router.admin_router, prefix=f"{settings.API_V1_STR}/admin/exam-structure", tags=["admin-exam-structure"])
 app.include_router(private_module_router.router, prefix=f"{settings.API_V1_STR}/private", tags=["private-modules"])
+app.include_router(config_router.router, prefix=f"{settings.API_V1_STR}/config", tags=["config"])
 
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse

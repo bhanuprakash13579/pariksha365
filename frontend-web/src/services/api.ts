@@ -128,6 +128,103 @@ export const QuizAPI = {
     adminUpdateTaxonomy: (id: string, data: any) => api.put(`/quiz/admin/taxonomy/${id}`, data),
     adminDeleteTaxonomy: (id: string) => api.delete(`/quiz/admin/taxonomy/${id}`),
     adminSeedTaxonomy: () => api.post('/quiz/admin/taxonomy/seed'),
+
+    // Current Affairs management
+    adminListCA: (params?: { status?: 'active' | 'expired' | 'unreviewed' | 'all'; search?: string; page?: number; per_page?: number }) =>
+        api.get('/quiz/admin/current-affairs', { params }),
+    adminCreateCA: (data: any) => api.post('/quiz/admin/current-affairs', data),
+    adminUpdateCA: (id: string, data: any) => api.put(`/quiz/admin/current-affairs/${id}`, data),
+    adminMarkCAReviewed: (id: string) => api.post(`/quiz/admin/current-affairs/${id}/mark-reviewed`),
+    adminDeleteCA: (id: string) => api.delete(`/quiz/admin/current-affairs/${id}`),
+};
+
+export interface NotesMaterial {
+    id: string;
+    title: string;
+    subtitle: string | null;
+    exams: string[];
+}
+
+export interface NotesOfferConfig {
+    enabled: boolean;
+    price_inr: number;
+    upi_id: string;
+    payee_name: string;
+    contact_email: string;
+    bundle_title: string;
+    page_count: number;
+    subject_count: number;
+    materials: NotesMaterial[];
+    sample_available: boolean;
+    sample_title: string;
+    sample_pdf_url: string | null;
+    cashfree_enabled: boolean;
+}
+
+export interface NotesFileInfo {
+    id: string;
+    title: string;
+    filename: string;
+    download_url: string;
+}
+
+export interface NotesAccessResponse {
+    has_access: boolean;
+    files: NotesFileInfo[];
+}
+
+export const ConfigAPI = {
+    getNotesOffer: () => api.get<NotesOfferConfig>('/config/notes'),
+    notesSampleUrl: () => `${API_URL}/config/notes/sample`,
+};
+
+export const PaymentAPI = {
+    createNotesOrder: () => api.post<{ checkout_url: string; cf_order_id: string }>('/payments/cashfree/notes/create-order'),
+    createStageOrder: (stageId: string) => api.post<{ checkout_url: string; cf_order_id: string }>(`/payments/cashfree/stage/${stageId}/create-order`),
+    verifyOrder: (cfOrderId: string) => api.get<{ status: string; payment_type?: string; amount_paid?: number; exam_stage_id?: string }>(`/payments/cashfree/verify/${cfOrderId}`),
+    getNotesAccess: () => api.get<NotesAccessResponse>('/payments/notes/access'),
+    notesFileUrl: (bookId: string) => `${API_URL}/payments/notes/file/${bookId}`,
+};
+
+export interface CoverageRow {
+    id: string;
+    title: string;
+    test_type: string;
+    actual: number;
+    sanctioned: number | null;
+    coverage_pct: number | null;
+    status: 'complete' | 'near_complete' | 'partial' | 'fragment' | 'no_pattern';
+    is_published: boolean;
+    category: string | null;
+    subcategory: string | null;
+    stage: string | null;
+    stage_id: string | null;
+    total_duration_minutes: number | null;
+    has_sectional_timing: boolean;
+    negative_marking: number;
+    paper_date: string | null;
+}
+
+export interface CoverageResponse {
+    summary: {
+        total: number;
+        published: number;
+        complete: number;
+        near_complete: number;
+        partial: number;
+        fragment: number;
+        no_pattern: number;
+    };
+    papers: CoverageRow[];
+}
+
+export const AdminTestSeriesAPI = {
+    getCoverage: (testType?: 'PYQ' | 'MOCK') =>
+        api.get<CoverageResponse>('/admin/test-series/coverage', {
+            params: testType ? { test_type: testType } : {},
+        }),
+    togglePublish: (id: string, is_published: boolean) =>
+        api.put(`/admin/test-series/${id}/publish-toggle`, { is_published }),
 };
 
 // Private modules (e.g. EPFO APFC) — email-whitelisted question banks

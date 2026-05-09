@@ -221,6 +221,20 @@ const ProfileScreen = ({ navigation, route }: any) => {
         </View>
 
         <View style={styles.settingsGroup}>
+          <Text style={styles.settingsGroupTitle}>Notes Bundle</Text>
+          <TouchableOpacity
+            style={[styles.settingItem, { backgroundColor: '#fff7ed' }]}
+            onPress={() => WebBrowser.openBrowserAsync('https://pariksha365.in/notes')}
+          >
+            <View style={styles.settingItemLeft}>
+              <Ionicons name="document-text" size={20} color="#f97316" style={styles.iconSpaced} />
+              <Text style={[styles.settingText, { color: '#c2410c', fontWeight: '700' }]}>Buy Study Notes</Text>
+            </View>
+            <Ionicons name="chevron-forward" size={20} color="#f97316" />
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.settingsGroup}>
           <Text style={styles.settingsGroupTitle}>Account & Settings</Text>
           <TouchableOpacity style={styles.settingItem} onPress={() => navigation.navigate('ChangeExam')}>
             <View style={styles.settingItemLeft}><Ionicons name="aperture" size={20} color="#6b7280" style={styles.iconSpaced} /><Text style={styles.settingText}>Change Exam Goal</Text></View>
