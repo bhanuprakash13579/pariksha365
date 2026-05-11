@@ -162,19 +162,22 @@ When you see a new question, your pencil should be **still** for 3 seconds while
 
 <div class="keypoint">
 
-**Unit digit cycles (memorise this):**
-- Ends in 0, 1, 5, 6 → unit digit is always that same digit regardless of power.
-- Ends in 4 → cycle: 4, 6, 4, 6 …
-  - Even power → last digit = **6**
-  - Odd power → last digit = **4**
-- Ends in 9 → cycle: 9, 1, 9, 1 …
-  - Odd power → last digit = **9**
-  - Even power → last digit = **1**
-- Ends in 2, 3, 7, 8 → cycle of length 4:
-  - 2 → cycles 2, 4, 8, 6
-  - 3 → cycles 3, 9, 7, 1
-  - 7 → cycles 7, 9, 3, 1
-  - 8 → cycles 8, 4, 2, 6
+**Unit digit cycles — memorise cold:**
+
+| Last digit of base | Cycle of unit digits | Rule |
+|---|---|---|
+| 0 | 0 | Always 0 |
+| 1 | 1 | Always 1 |
+| 5 | 5 | Always 5 |
+| 6 | 6 | Always 6 |
+| 4 | 4, 6, 4, 6 … | Even power → **6**; Odd power → **4** |
+| 9 | 9, 1, 9, 1 … | Odd power → **9**; Even power → **1** |
+| 2 | 2, 4, 8, **6** | Cycle length 4; use (power mod 4) as position |
+| 3 | 3, 9, 7, **1** | Cycle length 4; use (power mod 4) as position |
+| 7 | 7, 9, 3, **1** | Cycle length 4; use (power mod 4) as position |
+| 8 | 8, 4, 2, **6** | Cycle length 4; use (power mod 4) as position |
+
+**Remainder → position:** remainder 1 → 1st element, 2 → 2nd, 3 → 3rd, 0 → 4th (last).
 
 </div>
 
@@ -183,7 +186,7 @@ When you see a new question, your pencil should be **still** for 3 seconds while
 - 3^65: cycle {3,9,7,1} length 4. 65 mod 4 = 1 → take 1st = **3**.
 - Sum unit digit: 6 + 3 = 9. Options with unit digit ≠ 9 are eliminated immediately.
 
-*If options were 109, 213, 249, 409 → only 249 ends in 9 → answer without computing.*
+*If options were 156, 213, 249, 284 → only 249 ends in 9 → answer without computing.*
 
 ---
 
@@ -201,12 +204,11 @@ When you see a new question, your pencil should be **still** for 3 seconds while
 <div class="keypoint">
 
 **The π = 22/7 rule:**
+
 - Cylinder/Cone/Sphere volumes and surface areas use π = 22/7 in exams.
-- Volume of cone = (1/3)(22/7)r²h = **22r²h / 21**.
-  - The 22 in the numerator guarantees the answer is divisible by **11** (and 2) when dimensions give an integer answer.
-- Hemisphere TSA = 3πr² = 3(22/7)r² = **66r²/7**.
-  - 66 = 6 × 11, so the answer is again divisible by 11.
-- Before computing: look at options, eliminate any not divisible by 11.
+- Volume of cone = (1/3)(22/7)r²h = **22r²h / 21** — the 22 in the numerator means the answer is always divisible by **11** (and by 2) when dimensions are integers.
+- Hemisphere TSA = 3πr² = 3(22/7)r² = **66r²/7** — since 66 = 6 × 11, the answer is again divisible by 11.
+- **Before computing:** scan the options and eliminate any not divisible by 11. Often only one option remains.
 
 </div>
 
@@ -6906,7 +6908,7 @@ For nearby dates, count days forward/backward modulo 7.
 24. Compound ratio 2:3 and 4:5 = ?  (a) 4:5 (b) 8:15 (c) 6:8 (d) 1:1
 25. Tank A fills in 10 h, B empties in 15 h. Both open?  (a) 25 h (b) 30 h (c) 35 h (d) 40 h
 
-**Answer key:** 1-b, 2-a, 3-b, 4-a, 5-c, 6-a, 7-b (3:5), 8-a, 9-b, 10-b, 11-c, 12-a, 13-b, 14-a, 15-c, 16-b, 17-a, 18-c, 19-b, 20-d, 21-b, 22-a, 23-b, 24-b, 25-b.
+**Answer key:** 1-b, 2-a, 3-b, 4-a, 5-c, 6-a, 7-a, 8-a, 9-b, 10-b, 11-c, 12-a, 13-b, 14-a, 15-c, 16-b, 17-a, 18-c, 19-b, 20-d, 21-b, 22-a, 23-b, 24-b, 25-b.
 
 **Scoring:** 23–25 = Excellent | 18–22 = Good | Below 18 = revisit weak chapters before your mock series.
 
