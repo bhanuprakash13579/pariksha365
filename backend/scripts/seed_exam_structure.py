@@ -337,51 +337,49 @@ EXAM_STRUCTURE: list[dict] = [
                             negative_mark_per_wrong=1.0,
                             has_sectional_timing=True,
                             notes=(
-                                "Paper 1 only (mandatory for all posts). Paper 2 (Stats) "
-                                "and Paper 3 (GS Finance) are post-specific and not "
-                                "modelled. Negative marking 1 mark for Section I/II, "
-                                "0.5 for the Computer Knowledge module."
+                                "Paper 1 only (mandatory for all posts). Paper 2 (Statistics) "
+                                "and Paper 3 (Gen Studies — Finance & Economics) are "
+                                "post-specific and not modelled. Real-exam timing: "
+                                "Section I 60 min (Math + Reasoning, free flow), "
+                                "Section II 60 min (English + GA, free flow), "
+                                "Section III 15 min (Computer Knowledge, qualifying). "
+                                "Per official notification negative marking is 1 mark "
+                                "for Section I/II and 0.5 for Section III; we apply a "
+                                "uniform 1 mark since the data model carries one rate."
                             ),
                             section_patterns=[
+                                # Real exam: Section I is a single 60-min envelope
+                                # where the candidate freely allocates time between
+                                # Mathematical Abilities (30 Q) and Reasoning (30 Q).
+                                # We model it as one section so the sectional timer
+                                # behaves like the real paper.
                                 SectionPatternCreate(
-                                    name="Section I — Mathematical Abilities",
-                                    subject="QUANT",
-                                    question_count=30,
-                                    duration_minutes=30,  # half of Section I's 60 min
+                                    name="Section I — Math + Reasoning",
+                                    subject="MATH_AND_REASONING",
+                                    question_count=60,
+                                    duration_minutes=60,
                                     marks_per_question=3.0,
                                     order=1,
                                 ),
+                                # Section II is similarly a single 60-min envelope —
+                                # English (45 Q) and General Awareness (25 Q) share
+                                # the same timer.
                                 SectionPatternCreate(
-                                    name="Section I — Reasoning & General Intelligence",
-                                    subject="REASONING",
-                                    question_count=30,
-                                    duration_minutes=30,
+                                    name="Section II — English + General Awareness",
+                                    subject="ENGLISH_AND_GA",
+                                    question_count=70,
+                                    duration_minutes=60,
                                     marks_per_question=3.0,
                                     order=2,
                                 ),
+                                # Section III is its own 15-min qualifying module.
                                 SectionPatternCreate(
-                                    name="Section II — English Language & Comprehension",
-                                    subject="ENGLISH",
-                                    question_count=45,
-                                    duration_minutes=40,
-                                    marks_per_question=3.0,
-                                    order=3,
-                                ),
-                                SectionPatternCreate(
-                                    name="Section II — General Awareness",
-                                    subject="GENERAL_AWARENESS",
-                                    question_count=25,
-                                    duration_minutes=20,
-                                    marks_per_question=3.0,
-                                    order=4,
-                                ),
-                                SectionPatternCreate(
-                                    name="Section III — Computer Knowledge Module",
+                                    name="Section III — Computer Knowledge",
                                     subject="COMPUTER",
                                     question_count=20,
                                     duration_minutes=15,
                                     marks_per_question=3.0,
-                                    order=5,
+                                    order=3,
                                 ),
                             ],
                         ),
@@ -448,42 +446,31 @@ EXAM_STRUCTURE: list[dict] = [
                             negative_mark_per_wrong=1.0,
                             has_sectional_timing=True,
                             notes=(
-                                "Section I Maths 30 + Reasoning 30 (60 min). "
-                                "Section II English 40 + GK 20 (60 min). "
-                                "Section III Computer Knowledge 15 (15 min)."
+                                "Real-exam timing: Section I 60 min (Math + Reasoning, "
+                                "free flow), Section II 60 min (English + GA, free flow), "
+                                "Section III 15 min (Computer Knowledge, qualifying). "
+                                "Section III is qualifying-only and uses 0.5 negative "
+                                "marking per wrong; the data model carries a single rate "
+                                "so we apply a uniform 1.0."
                             ),
                             section_patterns=[
+                                # Single 60-min envelope. Math 30 + Reasoning 30 share
+                                # the same timer so the candidate can flow freely.
                                 SectionPatternCreate(
-                                    name="Section I — Mathematical Abilities",
-                                    subject="QUANT",
-                                    question_count=30,
-                                    duration_minutes=30,
+                                    name="Section I — Math + Reasoning",
+                                    subject="MATH_AND_REASONING",
+                                    question_count=60,
+                                    duration_minutes=60,
                                     marks_per_question=3.0,
                                     order=1,
                                 ),
                                 SectionPatternCreate(
-                                    name="Section I — Reasoning & General Intelligence",
-                                    subject="REASONING",
-                                    question_count=30,
-                                    duration_minutes=30,
+                                    name="Section II — English + General Awareness",
+                                    subject="ENGLISH_AND_GA",
+                                    question_count=60,
+                                    duration_minutes=60,
                                     marks_per_question=3.0,
                                     order=2,
-                                ),
-                                SectionPatternCreate(
-                                    name="Section II — English Language & Comprehension",
-                                    subject="ENGLISH",
-                                    question_count=40,
-                                    duration_minutes=40,
-                                    marks_per_question=3.0,
-                                    order=3,
-                                ),
-                                SectionPatternCreate(
-                                    name="Section II — General Awareness",
-                                    subject="GENERAL_AWARENESS",
-                                    question_count=20,
-                                    duration_minutes=20,
-                                    marks_per_question=3.0,
-                                    order=4,
                                 ),
                                 SectionPatternCreate(
                                     name="Section III — Computer Knowledge",
@@ -491,7 +478,7 @@ EXAM_STRUCTURE: list[dict] = [
                                     question_count=15,
                                     duration_minutes=15,
                                     marks_per_question=3.0,
-                                    order=5,
+                                    order=3,
                                 ),
                             ],
                         ),
@@ -584,6 +571,97 @@ EXAM_STRUCTURE: list[dict] = [
                                     subject="REASONING",
                                     question_count=35,
                                     order=3,
+                                ),
+                            ],
+                        ),
+                    },
+                ],
+            },
+        ],
+    },
+    # ------------------------------- UPSC (EPFO) -------------------------
+    {
+        "category": {
+            "name": "UPSC",
+            "order": 40,
+            "description": (
+                "Union Public Service Commission — EPFO APFC, EO/AO and other "
+                "central services recruitment tests."
+            ),
+        },
+        "subcategories": [
+            {
+                "name": "EPFO APFC",
+                "slug": "epfo-apfc",
+                "order": 1,
+                "description": (
+                    "Employees' Provident Fund Organisation — Assistant Provident "
+                    "Fund Commissioner recruitment test."
+                ),
+                "stages": [
+                    {
+                        "name": "Recruitment Test",
+                        "slug": "recruitment-test",
+                        "order": 1,
+                        "pattern": ExamPatternCreate(
+                            total_duration_minutes=120,
+                            total_questions=120,
+                            total_marks=300.0,
+                            negative_mark_per_wrong=0.8333,
+                            has_sectional_timing=False,
+                            notes=(
+                                "Single paper, 120 MCQs, 2 hours. Marks: +2.5 per "
+                                "correct, -0.833 per wrong (1/3 negative marking). "
+                                "No sectional timing. Covers English, General Studies, "
+                                "Labour Laws, Social Security, Accounting, Polity, "
+                                "History, Science, Mathematics, and Current Affairs."
+                            ),
+                            section_patterns=[
+                                SectionPatternCreate(
+                                    name="General Studies & Social Security",
+                                    subject="GENERAL_STUDIES",
+                                    question_count=120,
+                                    duration_minutes=120,
+                                    marks_per_question=2.5,
+                                    order=1,
+                                ),
+                            ],
+                        ),
+                    },
+                ],
+            },
+            {
+                "name": "EPFO EO/AO",
+                "slug": "epfo-eo-ao",
+                "order": 2,
+                "description": (
+                    "Employees' Provident Fund Organisation — Enforcement Officer / "
+                    "Accounts Officer recruitment test."
+                ),
+                "stages": [
+                    {
+                        "name": "Recruitment Test",
+                        "slug": "recruitment-test",
+                        "order": 1,
+                        "pattern": ExamPatternCreate(
+                            total_duration_minutes=120,
+                            total_questions=120,
+                            total_marks=300.0,
+                            negative_mark_per_wrong=0.8333,
+                            has_sectional_timing=False,
+                            notes=(
+                                "Single paper, 120 MCQs, 2 hours. Same pattern as APFC. "
+                                "Marks: +2.5 per correct, -0.833 per wrong. "
+                                "2025 onwards APFC and EO/AO share the same paper."
+                            ),
+                            section_patterns=[
+                                SectionPatternCreate(
+                                    name="General Studies & Social Security",
+                                    subject="GENERAL_STUDIES",
+                                    question_count=120,
+                                    duration_minutes=120,
+                                    marks_per_question=2.5,
+                                    order=1,
                                 ),
                             ],
                         ),
