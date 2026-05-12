@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FileText, Activity, FilePlus, Folder, Trash2, Edit, BarChart2, Download, HelpCircle, Layers, Menu, X, Lock } from 'lucide-react';
+import { FileText, Activity, FilePlus, Folder, Trash2, Edit, BarChart2, Download, HelpCircle, Layers, Menu, X, Lock, ListChecks } from 'lucide-react';
 import { api, UserAPI } from '../services/api';
 import { ScrapeReviewWorkspace } from './ScrapeReviewWorkspace';
 import { FileExplorerCourseManager } from './FileExplorerCourseManager';
@@ -7,6 +7,8 @@ import { AdminAnalytics } from '../components/dashboard/AdminAnalytics';
 import { AdminQuizPoolManager } from '../components/dashboard/AdminQuizPoolManager';
 import { AdminExamStructureManager } from '../components/dashboard/AdminExamStructureManager';
 import { AdminPrivateModuleManager } from '../components/dashboard/AdminPrivateModuleManager';
+import { AdminTestCoverage } from '../components/dashboard/AdminTestCoverage';
+import { AdminCurrentAffairs } from '../components/dashboard/AdminCurrentAffairs';
 import { useNavigate } from 'react-router-dom';
 
 export const AdminDashboard = () => {
@@ -91,6 +93,8 @@ export const AdminDashboard = () => {
         { id: 'drafts', label: 'Drafts Vault', icon: <Folder className="w-5 h-5 mr-3" /> },
         { id: 'quizpool', label: 'Quiz Pool', icon: <HelpCircle className="w-5 h-5 mr-3" /> },
         { id: 'exam-structure', label: 'Exam Structure', icon: <Layers className="w-5 h-5 mr-3" /> },
+        { id: 'test-coverage', label: 'Test Coverage', icon: <ListChecks className="w-5 h-5 mr-3" /> },
+        { id: 'current-affairs', label: 'Current Affairs', icon: <FilePlus className="w-5 h-5 mr-3" /> },
         { id: 'private-modules', label: 'Private Modules', icon: <Lock className="w-5 h-5 mr-3" /> },
     ];
 
@@ -230,8 +234,9 @@ export const AdminDashboard = () => {
                                                 const res = await api.get(`/tests/${draft.id}`);
                                                 setDraftToEdit(res.data);
                                                 setActiveTab('scraper');
-                                            } catch (e) {
-                                                alert("Failed to fetch full draft details.");
+                                            } catch (e: any) {
+                                                const msg = e?.response?.data?.detail || e?.message || 'Unknown error';
+                                                alert(`Failed to fetch full draft details.\n\nError: ${msg}`);
                                             }
                                         }} className="p-2.5 bg-blue-50 hover:bg-blue-100 text-blue-500 rounded transition-colors" title="Edit Draft">
                                             <Edit className="w-5 h-5" />
@@ -259,8 +264,9 @@ export const AdminDashboard = () => {
                                                 document.body.appendChild(a);
                                                 a.click();
                                                 a.remove();
-                                            } catch (e) {
-                                                alert("Failed to download test.");
+                                            } catch (e: any) {
+                                                const msg = e?.response?.data?.detail || e?.message || 'Unknown error';
+                                                alert(`Failed to download test.\n\nError: ${msg}`);
                                             }
                                         }} className="p-2.5 bg-purple-50 hover:bg-purple-100 text-purple-600 rounded transition-colors" title="Download JSON">
                                             <Download className="w-5 h-5" />
@@ -294,6 +300,10 @@ export const AdminDashboard = () => {
                 {activeTab === 'quizpool' && <AdminQuizPoolManager />}
 
                 {activeTab === 'exam-structure' && <AdminExamStructureManager />}
+
+                {activeTab === 'test-coverage' && <AdminTestCoverage />}
+
+                {activeTab === 'current-affairs' && <AdminCurrentAffairs />}
 
                 {activeTab === 'private-modules' && <AdminPrivateModuleManager />}
                 </main>
