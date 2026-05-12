@@ -1796,16 +1796,37 @@
         },
         {
           "id": "pyq_db30eb2b373365d1_p59",
-          "stem": "I: x2 – 20x + 91 = 0 II: y2 – 28y + 195 = 0",
+          "stem": "Solve the equations and choose the correct relation between x and y.\n\nI. x² – 22x + 117 = 0\nII. y² – 26y + 169 = 0",
           "passage_context": "In each of these questions, two equation (I) and (II) are given. You have to solve both the equations and give answer. (a) If x>y (b) If x≥y (c) If x<y (d) If x≤y (e) If x = y or no relation can be established between x and y",
-          "options": [],
-          "correct_index": null,
+          "options": [
+            {
+              "option_text": "x > y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x < y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x ≥ y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x ≤ y",
+              "is_correct": true
+            },
+            {
+              "option_text": "x = y or no relation",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 3,
           "correct_letter": "D",
-          "explanation": "(I): x2 – 20x + 91 = 0 x2 – 7x - 13x + 91= 0 x(x – 7) - 13(x – 7) = 0 (x – 7)(x – 13) = 0 x = 7, 13 (II): y2 – 28y + 195 = 0 y2 – 13y – 15y + 195 = 0 y(y-13)-15(y-13) = 0 (y – 13)(y-15) = 0 y = 13, 15 x≤y",
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
-          "difficulty": "HARD",
+          "explanation": "I. x² – 22x + 117 = 0 ⟹ (x − 9)(x − 13) = 0 ⟹ x ∈ {9, 13}.\nII. y² – 26y + 169 = 0 ⟹ (y − 13)² = 0 ⟹ y = 13 (double root).\nx is at most 13 and y = 13, so x ≤ y in every case (with equality when x = 13).",
+          "subject": "QUANT",
+          "topic": "quadratic_equations",
+          "topic_code": "QNT_QUADRATIC",
+          "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
           "images": [],
@@ -1818,20 +1839,43 @@
           "parse_issues": [
             "answer-key letter 'd' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_db30eb2b373365d1_p60",
-          "stem": "I: x2 – 24x +143 = 0 II: y2 – 13y + 22 = 0",
+          "stem": "Solve the equations and choose the correct relation between x and y.\n\nI. x² – 21x + 110 = 0\nII. y² – 13y + 42 = 0",
           "passage_context": "In each of these questions, two equation (I) and (II) are given. You have to solve both the equations and give answer. (a) If x>y (b) If x≥y (c) If x<y (d) If x≤y (e) If x = y or no relation can be established between x and y",
-          "options": [],
-          "correct_index": null,
-          "correct_letter": "B",
-          "explanation": "(I): x2 – 24x +143 = 0 x2 – 11x – 13x + 143 = 0 x(x- 11) – 13(x – 11) = 0 (x – 11)(x – 13) = 0 x = 11, 13 (II): y2 – 13y + 22 = 0 y2 – 11y - 2y + 22 = 0 y(y – 11) – 2(y – 11) = 0 (y – 11)(y – 2) = 0 y = 11, 2 x≥y",
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
-          "difficulty": "HARD",
+          "options": [
+            {
+              "option_text": "x > y",
+              "is_correct": true
+            },
+            {
+              "option_text": "x < y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x ≥ y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x ≤ y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x = y or no relation",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "I. x² – 21x + 110 = 0 ⟹ (x − 10)(x − 11) = 0 ⟹ x ∈ {10, 11}.\nII. y² – 13y + 42 = 0 ⟹ (y − 6)(y − 7) = 0 ⟹ y ∈ {6, 7}.\nmin(x) = 10 > 7 = max(y), so x > y for every pair.",
+          "subject": "QUANT",
+          "topic": "quadratic_equations",
+          "topic_code": "QNT_QUADRATIC",
+          "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
           "images": [],
@@ -1844,19 +1888,42 @@
           "parse_issues": [
             "answer-key letter 'b' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_db30eb2b373365d1_p61",
-          "stem": "I. 3𝑥2 −15𝑥+ 18 = 0 II. 𝑦2 −𝑦−6 = 0",
+          "stem": "Solve the equations and choose the correct relation between x and y.\n\nI. x² – 7x + 12 = 0\nII. y² – 12y + 35 = 0",
           "passage_context": "In each of these questions, two equation (I) and (II) are given. You have to solve both the equations and give answer. (a) If x>y (b) If x≥y (c) If x<y (d) If x≤y (e) If x = y or no relation can be established between x and y",
-          "options": [],
-          "correct_index": null,
-          "correct_letter": "E",
-          "explanation": "I. 3𝑥2 −15𝑥+ 18 = 0 3𝑥2 −9𝑥−6𝑥+ 18 = 0 3𝑥(𝑥−3) −6(𝑥−3) = 0 (3𝑥−6)(𝑥−3) = 0 𝑥= 2, 3 II. 𝑦2 −𝑦−6 = 0 𝑦2 −3𝑦+ 2𝑦−6 = 0 𝑦(𝑦−3) + 2(𝑦−3) = 0 (𝑦−3)(𝑦+ 2) = 0 𝑦= 3, −2 So, no relation can be established",
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "options": [
+            {
+              "option_text": "x > y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x < y",
+              "is_correct": true
+            },
+            {
+              "option_text": "x ≥ y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x ≤ y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x = y or no relation",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "I. x² – 7x + 12 = 0 ⟹ (x − 3)(x − 4) = 0 ⟹ x ∈ {3, 4}.\nII. y² – 12y + 35 = 0 ⟹ (y − 5)(y − 7) = 0 ⟹ y ∈ {5, 7}.\nmax(x) = 4 < 5 = min(y), so x < y for every pair.",
+          "subject": "QUANT",
+          "topic": "quadratic_equations",
+          "topic_code": "QNT_QUADRATIC",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -1870,7 +1937,9 @@
           "parse_issues": [
             "answer-key letter 'e' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_db30eb2b373365d1_p62",
@@ -2286,15 +2355,36 @@
         },
         {
           "id": "pyq_db30eb2b373365d1_p76",
-          "stem": "Statements: Only a few publish is rolls Some rolls is account Some account is demand Conclusions: I. No rolls is demand II. Some publish being demand is a possibility",
+          "stem": "Decide which of the conclusions logically follow.\n\nStatements: Only a few publishers are rolls. Some rolls are accounts. Some accounts are demands.\nConclusions:\nI. No rolls is demand.\nII. Some publishers being demand is a possibility.",
           "passage_context": "In each question below, some statements are given followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements, disregarding commonly known facts. Give answer - (a) If only conclusion I follows (b) If only conclusion II follows (c) If either conclusion I or II follows (d) If neither conclusion I nor II follows (e) If both conclusions I and II follow",
-          "options": [],
-          "correct_index": null,
+          "options": [
+            {
+              "option_text": "Only Conclusion I follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Only Conclusion II follows",
+              "is_correct": true
+            },
+            {
+              "option_text": "Either Conclusion I or II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Neither Conclusion I nor II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Both Conclusions I and II follow",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 1,
           "correct_letter": "B",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "explanation": "I. The statements DO NOT forbid rolls from being demands. Some rolls are accounts, some accounts are demands — those subsets may overlap so some rolls could be demands. DOES NOT FOLLOW.\nII. No rule forbids any publisher from being a demand, and 'only a few' allows the publisher subset to overlap with demand. Possibility holds. FOLLOWS.\nOnly Conclusion II follows.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -2308,19 +2398,42 @@
           "parse_issues": [
             "answer-key letter 'b' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_db30eb2b373365d1_p77",
-          "stem": "Statements: Only a few asset is revenue Some revenue is equity No equity is fiscal Conclusions: I. Some revenue is not fiscal II. All asset being fiscal is a possibility",
+          "stem": "Decide which of the conclusions logically follow.\n\nStatements: All assets are revenues. Some revenues are equity. No equity is fiscal.\nConclusions:\nI. Some revenue is not fiscal.\nII. No asset is fiscal.",
           "passage_context": "In each question below, some statements are given followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements, disregarding commonly known facts. Give answer - (a) If only conclusion I follows (b) If only conclusion II follows (c) If either conclusion I or II follows (d) If neither conclusion I nor II follows (e) If both conclusions I and II follow",
-          "options": [],
-          "correct_index": null,
-          "correct_letter": "E",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "options": [
+            {
+              "option_text": "Only Conclusion I follows",
+              "is_correct": true
+            },
+            {
+              "option_text": "Only Conclusion II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Either Conclusion I or II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Neither Conclusion I nor II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Both Conclusions I and II follow",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "I. From 'Some revenues are equity' and 'No equity is fiscal', those revenues that are equity cannot be fiscal ⟹ some revenues are not fiscal. FOLLOWS.\nII. All assets are revenues, but only SOME revenues are equity — meaning some revenues (and therefore possibly some assets) are non-equity. Non-equity revenues are not constrained by 'no equity is fiscal' and could be fiscal. So we cannot guarantee 'no asset is fiscal'. DOES NOT FOLLOW.\nOnly Conclusion I follows.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -2334,19 +2447,42 @@
           "parse_issues": [
             "answer-key letter 'e' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_db30eb2b373365d1_p78",
-          "stem": "Statements: Only a few profit is notice Some notice is expenditure All expenditure is subsidy Conclusions: I. Some notice is subsidy II. No profit is expenditure",
+          "stem": "Decide which of the conclusions logically follow.\n\nStatements: Only a few profits are notices. Some notices are expenditure. All expenditure is subsidy.\nConclusions:\nI. Some notice is subsidy.\nII. No profit is expenditure.",
           "passage_context": "In each question below, some statements are given followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements, disregarding commonly known facts. Give answer - (a) If only conclusion I follows (b) If only conclusion II follows (c) If either conclusion I or II follows (d) If neither conclusion I nor II follows (e) If both conclusions I and II follow",
-          "options": [],
-          "correct_index": null,
+          "options": [
+            {
+              "option_text": "Only Conclusion I follows",
+              "is_correct": true
+            },
+            {
+              "option_text": "Only Conclusion II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Either Conclusion I or II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Neither Conclusion I nor II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Both Conclusions I and II follow",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 0,
           "correct_letter": "A",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "explanation": "I. Some notices are expenditure and all expenditure is subsidy ⟹ those notices that are expenditure are also subsidy ⟹ some notice is subsidy. FOLLOWS.\nII. There is no statement preventing the profit-notice overlap from being inside the notice-expenditure overlap, so some profits COULD be expenditure. We cannot conclude 'no profit is expenditure'. DOES NOT FOLLOW.\nOnly Conclusion I follows.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -2360,7 +2496,9 @@
           "parse_issues": [
             "answer-key letter 'a' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_db30eb2b373365d1_p79",

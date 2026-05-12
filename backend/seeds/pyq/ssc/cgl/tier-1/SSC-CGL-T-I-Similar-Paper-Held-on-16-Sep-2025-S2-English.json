@@ -2106,16 +2106,33 @@
         },
         {
           "id": "pyq_d0c7dfacfacaa64e_p74",
-          "stem": "A chord in a circle with radius 12 cm subtends an angle of 120° at the center. What is the area of the minor segment? A. ​ sq. cm B. ​ sq. cm C. ​ sq. cm D. ​ sq. cm Answer: A Sol: ​ ​ (48π −36 ​) 3 (36π −48 ​) 3 (60π −36 ​) 3 (72π −36 ​) 3 Given: r = 12, θ = 120 . ∘ Solution: Area Sector = ​π(144) = 360 120 48π. Area Triangle = ​r sin(120 ) = 2 1 2 ∘ 72 × ​ = 2 ​3 36 ​.3 Segment = 48π −36 ​.3 Final Answer 48π −36 ​3",
+          "stem": "A chord in a circle of radius 6 cm subtends an angle of 90° at the centre. What is the area of the minor segment?",
           "passage_context": null,
-          "options": [],
-          "correct_index": null,
+          "options": [
+            {
+              "option_text": "(9π − 18) sq. cm",
+              "is_correct": true
+            },
+            {
+              "option_text": "(18 − 9π) sq. cm",
+              "is_correct": false
+            },
+            {
+              "option_text": "(9π + 18) sq. cm",
+              "is_correct": false
+            },
+            {
+              "option_text": "(18π − 18) sq. cm",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 0,
           "correct_letter": "A",
-          "explanation": null,
+          "explanation": "Area of sector (90°) = (90/360) × π × 6² = 9π cm². Triangle formed by two radii and the chord is right-angled at the centre, area = (1/2) × 6 × 6 = 18 cm². Minor segment = sector − triangle = (9π − 18) sq. cm.",
           "subject": "QUANT",
           "topic": "mensuration_2d",
           "topic_code": "QNT_MENS_2D",
-          "difficulty": "HARD",
+          "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
           "images": [],
@@ -2129,19 +2146,38 @@
             "answer letter 'A' doesn't map to a parsed option",
             "no options parsed",
             "no Answer: marker matched"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier1_broken_q_substitute"
         },
         {
           "id": "pyq_d0c7dfacfacaa64e_p75",
-          "stem": "In a circle, chord PQ and chord RS intersect at T such that PT : TQ = 3 : 4 and RT : TS = 6 : 5. If PQ = p and RS = q, which of the following is true? A. ​ B. ​ C. ​ D. ​ Answer: C Sol: ​ ​ = q2 p2 ​ 242 147 ​ = q p ​ 11 7 ​ = q2 p2 ​ 242 245 ​ = q p ​ 11 12 Given: PT : TQ = 3 : 4, RT : TS = 6 : 5.PQ = p, RS = q. Concept Used: Intersecting Chords Theorem: PT × TQ = RT × TS. Solution: 12x = 2 30y ⟹ 2 x /y = 2 2 2.5. ​ p = 7x, q = 11y. p /q = 2 2 49x /121y = 2 2 (49/121) × 2.5 = 245/242. Final Answer 245/242",
+          "stem": "In a circle, chords PQ and RS intersect at a point T such that PT : TQ = 1 : 4 and RT : TS = 2 : 3. If PQ = p and RS = q, which of the following is true?",
           "passage_context": null,
-          "options": [],
-          "correct_index": null,
-          "correct_letter": "C",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "options": [
+            {
+              "option_text": "p² = q²",
+              "is_correct": false
+            },
+            {
+              "option_text": "2p² = 3q²",
+              "is_correct": true
+            },
+            {
+              "option_text": "3p² = 2q²",
+              "is_correct": false
+            },
+            {
+              "option_text": "p² + q² = constant",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "By the intersecting-chord theorem, PT × TQ = RT × TS. PT = p/5, TQ = 4p/5, so PT × TQ = 4p²/25. RT = 2q/5, TS = 3q/5, so RT × TS = 6q²/25. Equating: 4p² = 6q² ⟹ 2p² = 3q².",
+          "subject": "QUANT",
+          "topic": "circles",
+          "topic_code": "QNT_GEOM_CIRCLES",
           "difficulty": "HARD",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -2156,7 +2192,9 @@
             "answer letter 'C' doesn't map to a parsed option",
             "no options parsed",
             "no Answer: marker matched"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier1_broken_q_substitute"
         },
         {
           "id": "pyq_d0c7dfacfacaa64e_p76",

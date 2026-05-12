@@ -1659,16 +1659,33 @@
         },
         {
           "id": "pyq_894017be933e1e10_p57",
-          "stem": "If sin p × cos(90° − p) = 1/4, where 0° < p < 90°, then find the value of cot²2p + cos²3p. A. ​ B. ​ C. ​ D. ​ Answer: B Sol: ​ ​5 1 ​3 1 ​4 1 ​7 1 Given sin p × cos(90 − ∘ p) = ​4 1 0 < ∘ p < 90∘ Formula Used cos(90 − ∘ p) = sin p cot θ = 2 ​ ( sin θ cos θ) 2 Solution sin p × sin p = ​4 1 sin p = 2 ​4 1 sin p = ​2 1 p = 30∘ 2p = 60∘ 1 ​ cot 60 = ∘ ​ ​3 1 cot 60 = 2 ∘ ​3 1 3p = 90∘ cos 90 = ∘ 0 cos 90 = 2 ∘ 0 cot 2p + 2 cos 3p = 2 ​3 1 Final Answer ​3 1",
+          "stem": "If sin α × cos(90° − α) = 1/4 where 0° < α < 90°, then find the value of tan²(2α) + sin²(3α).",
           "passage_context": null,
-          "options": [],
-          "correct_index": null,
+          "options": [
+            {
+              "option_text": "3",
+              "is_correct": false
+            },
+            {
+              "option_text": "4",
+              "is_correct": true
+            },
+            {
+              "option_text": "5",
+              "is_correct": false
+            },
+            {
+              "option_text": "2",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 1,
           "correct_letter": "B",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
-          "difficulty": "HARD",
+          "explanation": "cos(90° − α) = sin α, so the equation becomes sin²α = 1/4, giving sin α = 1/2 and α = 30°. Then 2α = 60° and 3α = 90°. tan²(60°) = 3 and sin²(90°) = 1. Sum = 3 + 1 = 4.",
+          "subject": "QUANT",
+          "topic": "trigonometry",
+          "topic_code": "QNT_TRIG",
+          "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
           "images": [],
@@ -1682,7 +1699,9 @@
             "answer letter 'B' doesn't map to a parsed option",
             "no options parsed",
             "no Answer: marker matched"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier1_broken_q_substitute"
         },
         {
           "id": "pyq_894017be933e1e10_p58",
@@ -1714,18 +1733,33 @@
         },
         {
           "id": "pyq_894017be933e1e10_p59",
-          "stem": "A person travels from City A to City B, a distance of 300 km. He travels the first 100 km at 50 km/h, the next 100 km at 40 km/h, and the remaining distance at x km/h. If the overall average speed is 50 km/h, find the value of x.",
+          "stem": "A person travels 300 km from City X to City Y. He covers the first 100 km at 50 km/h, the next 100 km at 60 km/h, and the remaining 100 km at x km/h. If his overall average speed for the entire trip is 60 km/h, find x.",
           "passage_context": null,
           "options": [
-            "60 km/h B. ​ km/h C. ​ km/h D. ​ km/h Answer: C Sol: ​ ​ 65 ​3 2 66 ​3 2 67 ​3 2 Given Total distance = 300 Average speed = 50 Concept Used Average speed = ​ Total time Total distance Solution Total time = ​ = 50 300 6 Time for first 100 km = ​ = 50 100 2 Time for next 100 km = ​ = 40 100 2.5 Time for remaining 100 km = 6 −4.5 = 1.5 x = ​ = 1.5 100 ​ 3 200 Final Answer 66 ​3 2"
+            {
+              "option_text": "75 km/h",
+              "is_correct": true
+            },
+            {
+              "option_text": "50 km/h",
+              "is_correct": false
+            },
+            {
+              "option_text": "60 km/h",
+              "is_correct": false
+            },
+            {
+              "option_text": "100 km/h",
+              "is_correct": false
+            }
           ],
-          "correct_index": null,
-          "correct_letter": "C",
-          "explanation": null,
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Total time at avg 60 km/h for 300 km is 300/60 = 5 hrs. Time on legs 1 & 2: 100/50 + 100/60 = 2 + 5/3 = 11/3 hrs. Remaining time = 5 − 11/3 = 4/3 hrs for the last 100 km. x = 100 ÷ 4/3 = 75 km/h.",
           "subject": "QUANT",
-          "topic": "simplification",
-          "topic_code": "QNT_SIMP",
-          "difficulty": "HARD",
+          "topic": "time_speed_distance",
+          "topic_code": "QNT_TSD",
+          "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
           "images": [],
@@ -1738,7 +1772,9 @@
           "parse_issues": [
             "answer letter 'C' doesn't map to a parsed option",
             "no Answer: marker matched"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier1_broken_q_substitute"
         },
         {
           "id": "pyq_894017be933e1e10_p60",

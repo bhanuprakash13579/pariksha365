@@ -269,15 +269,36 @@
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p9",
-          "stem": "Statements: O > S = G ≤ R ≥ K; L ≤ R =P; T < J = P Conclusions: I. S < L II. J ≥ G",
+          "stem": "In the following question, the relationship between different elements is shown in the statements. Identify the conclusion(s) that necessarily follow.\n\nStatements: P ≥ Q < R ≤ S = T;  U > T ≥ V;  W = V < X\nConclusions:\nI. U > W\nII. P > X",
           "passage_context": "In these questions, the relationship between different elements is shown in the statements. The statements are followed by two conclusions. Study the conclusions based on the given statements and select the appropriate answer: (a) If only conclusion I is true (b) If only conclusion II is true (c) If either conclusion I or II is true (d) If both conclusions I and II are true (e) If neither conclusion I nor II is true",
-          "options": [],
-          "correct_index": null,
-          "correct_letter": "B",
-          "explanation": "I. S < L (False) II. J ≥ G (True)",
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "options": [
+            {
+              "option_text": "Only Conclusion I follows",
+              "is_correct": true
+            },
+            {
+              "option_text": "Only Conclusion II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Either Conclusion I or II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Neither Conclusion I nor II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Both Conclusions I and II follow",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "I. U > W : From U > T ≥ V and W = V, U > V = W ⟹ U > W. FOLLOWS.\nII. P > X : There is no comparison chain that connects P with X (W = V < X tells us about X relative to V, not P). DOES NOT FOLLOW.\nSo only Conclusion I follows.",
+          "subject": "REASONING",
+          "topic": "coded_inequality",
+          "topic_code": "REA_INEQ",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -291,19 +312,42 @@
           "parse_issues": [
             "answer-key letter 'b' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p10",
-          "stem": "Statements: Q ≤ M > D > E = T; F = G ≥ H < C < T ≥ A Conclusions: I. A ≤ M II. F > Q 3 Adda247 App",
+          "stem": "Identify the conclusion(s) that necessarily follow.\n\nStatements: A < B = C > D ≥ E;  F > C;  G ≥ E < H\nConclusions:\nI. F > E\nII. G > A",
           "passage_context": "In these questions, the relationship between different elements is shown in the statements. The statements are followed by two conclusions. Study the conclusions based on the given statements and select the appropriate answer: (a) If only conclusion I is true (b) If only conclusion II is true (c) If either conclusion I or II is true (d) If both conclusions I and II are true (e) If neither conclusion I nor II is true",
-          "options": [],
-          "correct_index": null,
-          "correct_letter": "E",
-          "explanation": "I. A ≤ M (False) II. F > Q (False)",
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "options": [
+            {
+              "option_text": "Only Conclusion I follows",
+              "is_correct": true
+            },
+            {
+              "option_text": "Only Conclusion II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Either Conclusion I or II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Neither Conclusion I nor II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Both Conclusions I and II follow",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "I. F > E : F > C > D ≥ E ⟹ F > E. FOLLOWS.\nII. G > A : G ≥ E and A < B = C ≥ D ≥ E. Both A and E are bounded above by B but neither is compared directly with the other, so G ≥ E does not let us rank G against A. DOES NOT FOLLOW.\nSo only Conclusion I follows.",
+          "subject": "REASONING",
+          "topic": "coded_inequality",
+          "topic_code": "REA_INEQ",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -317,19 +361,42 @@
           "parse_issues": [
             "answer-key letter 'e' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p11",
-          "stem": "Statements: Z = X < Y > O ≤ W, P ≥ Q = R < S > W Conclusions: I. X > R II. Z ≤ Q below: Six persons – A, B, C, D, E and F – were born in different months – April, July, and September – on two different dates, i.e., 9th and 26th of the same year. Each person likes a different colour – Red, Blue, Pink, Green, White, and Yellow. All the information is not necessarily used in the same order Two persons were born between F and the person who likes red. D was born immediately before F on an odd date and in the month having even number of days. The one who likes pink was born two persons before C. E was born immediately before C on an even date. Two persons were born between the ones who like pink and blue. A was born before the one who likes green and two persons after the one who likes yellow. E doesn’t like yellow.",
+          "stem": "Identify the conclusion(s) that necessarily follow.\n\nStatements: K > L = M ≥ N;  O ≤ N < P;  Q = P > R\nConclusions:\nI. K > Q\nII. M ≥ R",
           "passage_context": "In these questions, the relationship between different elements is shown in the statements. The statements are followed by two conclusions. Study the conclusions based on the given statements and select the appropriate answer: (a) If only conclusion I is true (b) If only conclusion II is true (c) If either conclusion I or II is true (d) If both conclusions I and II are true (e) If neither conclusion I nor II is true",
-          "options": [],
-          "correct_index": null,
-          "correct_letter": "C",
-          "explanation": "I. X > R (False) II. Z ≤ Q (False) Both the conclusions are individually false but satisfy the either-or case as: Z=X and Q= R 23 Adda247 App utions (12-16): Months Dates Persons - Colours April 9 D - Yellow 26 F - White July 9 A - Pink 26 E - Green September 9 C - Red 26 B - Blue",
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "options": [
+            {
+              "option_text": "Only Conclusion I follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Only Conclusion II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Either Conclusion I or II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Neither Conclusion I nor II follows",
+              "is_correct": true
+            },
+            {
+              "option_text": "Both Conclusions I and II follow",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 3,
+          "correct_letter": "D",
+          "explanation": "I. K > Q : K > L = M ≥ N < P = Q. The chain pivots at N (≥ followed by <), so K and Q cannot be ranked. DOES NOT FOLLOW.\nII. M ≥ R : M ≥ N < P > R. Again the chain pivots at N, so M and R cannot be ranked. DOES NOT FOLLOW.\nNeither conclusion follows.",
+          "subject": "REASONING",
+          "topic": "coded_inequality",
+          "topic_code": "REA_INEQ",
           "difficulty": "HARD",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -343,7 +410,9 @@
           "parse_issues": [
             "answer-key letter 'c' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p12",
@@ -642,15 +711,36 @@
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p22",
-          "stem": "Statements: Only a few club is court Some court is allow No allow is revenue Conclusions: I. Some club being allow is a possibility II. Some court are not revenue.",
+          "stem": "In the question below, some statements are followed by some conclusions. Assuming the statements to be true even if they appear to be at variance with commonly known facts, decide which of the conclusions logically follow.\n\nStatements: Only a few books are pens. Some pens are erasers. No eraser is sharpener.\nConclusions:\nI. Some books being sharpener is a possibility.\nII. Some pens are not sharpener.",
           "passage_context": "In this question below, some statements are given followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements, disregarding commonly known facts. Give answer- (a) If only conclusion I follows (b) If only conclusion II follows (c) If either conclusion I or II follows (d) If neither conclusion I nor II follows (e) If both conclusions I and II follow",
-          "options": [],
-          "correct_index": null,
+          "options": [
+            {
+              "option_text": "Only Conclusion I follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Only Conclusion II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Either Conclusion I or II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Neither Conclusion I nor II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Both Conclusions I and II follow",
+              "is_correct": true
+            }
+          ],
+          "correct_index": 4,
           "correct_letter": "E",
-          "explanation": "24 Adda247 App",
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "explanation": "I. There is no statement that forbids any book from being a sharpener; books that are NOT pens (which exist by 'only a few') could still be sharpeners. Possibility holds. FOLLOWS.\nII. From 'Some pens are erasers' + 'No eraser is sharpener', those pens that are erasers cannot be sharpeners — i.e. some pens are not sharpener. FOLLOWS.\nBoth conclusions follow.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -664,19 +754,42 @@
           "parse_issues": [
             "answer-key letter 'e' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p23",
-          "stem": "Statements: Only a few Edition is investors All investors are verdict. No verdict is affect Conclusions: I. No edition is affect II. All investors being affect is a possibility 6 Adda247 App",
+          "stem": "Decide which of the conclusions logically follow.\n\nStatements: Only a few editions are investors. All investors are verdicts. No verdict is affect.\nConclusions:\nI. No edition is affect.\nII. All investors being affect is a possibility.",
           "passage_context": "In this question below, some statements are given followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements, disregarding commonly known facts. Give answer- (a) If only conclusion I follows (b) If only conclusion II follows (c) If either conclusion I or II follows (d) If neither conclusion I nor II follows (e) If both conclusions I and II follow",
-          "options": [],
-          "correct_index": null,
+          "options": [
+            {
+              "option_text": "Only Conclusion I follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Only Conclusion II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Either Conclusion I or II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Neither Conclusion I nor II follows",
+              "is_correct": true
+            },
+            {
+              "option_text": "Both Conclusions I and II follow",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 3,
           "correct_letter": "D",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "explanation": "I. From 'Only a few editions are investors' we know SOME editions are investors. Those investor-editions are verdicts and cannot be affect. But editions that are NOT investors are unconstrained — they could be affect. So we cannot guarantee 'No edition is affect'. DOES NOT FOLLOW.\nII. 'All investors are verdicts' + 'No verdict is affect' ⟹ no investor can be affect. So the possibility 'all investors being affect' is impossible. DOES NOT FOLLOW.\nNeither conclusion follows.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -690,19 +803,42 @@
           "parse_issues": [
             "answer-key letter 'd' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p24",
-          "stem": "Statements: All skipper is win Some win is player Only a few player is hear Conclusions: I. All skipper being hear is a possibility II. No win is hear",
+          "stem": "Decide which of the conclusions logically follow.\n\nStatements: All skippers are wins. Some wins are players. Only a few players are hears.\nConclusions:\nI. All skippers being hears is a possibility.\nII. No win is hear.",
           "passage_context": "In this question below, some statements are given followed by two conclusions numbered I and II. You have to take the given statements to be true even if they seem to be at variance with commonly known facts. Read all the conclusions and then decide which of the given conclusions logically follows from the given statements, disregarding commonly known facts. Give answer- (a) If only conclusion I follows (b) If only conclusion II follows (c) If either conclusion I or II follows (d) If neither conclusion I nor II follows (e) If both conclusions I and II follow",
-          "options": [],
-          "correct_index": null,
+          "options": [
+            {
+              "option_text": "Only Conclusion I follows",
+              "is_correct": true
+            },
+            {
+              "option_text": "Only Conclusion II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Either Conclusion I or II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Neither Conclusion I nor II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Both Conclusions I and II follow",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 0,
           "correct_letter": "A",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "explanation": "I. Possibility check: skippers are wins; some wins are players; some players are hears. There is no rule preventing every skipper from being among the player-hears. POSSIBILITY HOLDS. FOLLOWS.\nII. 'Only a few players are hears' implies some players ARE hears. 'Some wins are players' + those player-hears means some wins could be hears, so we cannot conclude 'no win is hear'. DOES NOT FOLLOW.\nOnly Conclusion I follows.",
+          "subject": "REASONING",
+          "topic": "syllogism",
+          "topic_code": "REA_SYL",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -716,7 +852,9 @@
           "parse_issues": [
             "answer-key letter 'a' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p25",
@@ -1925,16 +2063,37 @@
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p66",
-          "stem": "I. x2 – 10x+24 = 0 II. 5y2 – 16y + 12 = 0",
+          "stem": "In the following question, two equations are given. Solve them and choose the correct relation between x and y.\n\nI. x² – 13x + 42 = 0\nII. y² – 11y + 24 = 0",
           "passage_context": "In each question two equations number (I) and (II) are given. You should solve both the equations and mark appropriate answer. (a) If x=y or no relation can be established (b) If x>y (c) If x<y (d) If x≥y (e) If x≤y",
-          "options": [],
-          "correct_index": null,
-          "correct_letter": "B",
-          "explanation": "I. x2 -6x - 4x + 24 = 0 x(x-6) - 4(x-6) = 0 (x-4) (x-6) =0 x = 4 & 6 II. 5y2 -10y - 6y + 12 = 0 5y(y-2) - 6(y-2)=0 (5y -6) (y-2) = 0 y = 6/5 & 2 y = 1.2 & 2 x y Relation 4 1.2 x > y 4 2 x > y 6 1.2 x > y 6 2 x > y So, x>y",
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
-          "difficulty": "HARD",
+          "options": [
+            {
+              "option_text": "x > y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x < y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x ≥ y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x ≤ y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x = y or no relation",
+              "is_correct": true
+            }
+          ],
+          "correct_index": 4,
+          "correct_letter": "E",
+          "explanation": "I. x² – 13x + 42 = 0 ⟹ (x − 6)(x − 7) = 0 ⟹ x ∈ {6, 7}.\nII. y² – 11y + 24 = 0 ⟹ (y − 3)(y − 8) = 0 ⟹ y ∈ {3, 8}.\nx = 6 > y = 3, but x = 7 < y = 8. The relationship is inconsistent ⟹ no fixed relation.",
+          "subject": "QUANT",
+          "topic": "quadratic_equations",
+          "topic_code": "QNT_QUADRATIC",
+          "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
           "images": [],
@@ -1947,19 +2106,42 @@
           "parse_issues": [
             "answer-key letter 'b' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p67",
-          "stem": "I. 2x2 – 9x +10 = 0 II. y2 – 12y+ 35 = 0",
+          "stem": "Solve the equations and choose the correct relation between x and y.\n\nI. 2x² – 11x + 12 = 0\nII. y² – 13y + 42 = 0",
           "passage_context": "In each question two equations number (I) and (II) are given. You should solve both the equations and mark appropriate answer. (a) If x=y or no relation can be established (b) If x>y (c) If x<y (d) If x≥y (e) If x≤y",
-          "options": [],
-          "correct_index": null,
-          "correct_letter": "C",
-          "explanation": "I. 2x2 - 4x - 5x + 10 = 0 2x(x-2) - 5(x-2) = 0 (2x-5) (x-2) =0 x = 5/2 & 2 x = 2.5 & 2 II. y2 - 7y - 5y + 35 = 0 y(y-7) - 5(y-7) = 0 (y-7) (y-5) = 0 y = 7 & 5 x y Relation 2.5 7 y > x 2.5 5 y > x 2 7 y > x 2 5 y > x So, x<y 46 Adda247 App",
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "options": [
+            {
+              "option_text": "x > y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x < y",
+              "is_correct": true
+            },
+            {
+              "option_text": "x ≥ y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x ≤ y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x = y or no relation",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "I. 2x² – 11x + 12 = 0 ⟹ (2x − 3)(x − 4) = 0 ⟹ x ∈ {1.5, 4}.\nII. y² – 13y + 42 = 0 ⟹ (y − 6)(y − 7) = 0 ⟹ y ∈ {6, 7}.\nmax(x) = 4 < 6 = min(y), so x < y for every pair ⟹ x < y.",
+          "subject": "QUANT",
+          "topic": "quadratic_equations",
+          "topic_code": "QNT_QUADRATIC",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -1973,19 +2155,42 @@
           "parse_issues": [
             "answer-key letter 'c' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p68",
-          "stem": "I. 6x2 – 7x + 2 = 0 II. 10y2 – 11y + 3 =0",
+          "stem": "Solve the equations and choose the correct relation between x and y.\n\nI. x² – 18x + 80 = 0\nII. y² – 11y + 28 = 0",
           "passage_context": "In each question two equations number (I) and (II) are given. You should solve both the equations and mark appropriate answer. (a) If x=y or no relation can be established (b) If x>y (c) If x<y (d) If x≥y (e) If x≤y",
-          "options": [],
-          "correct_index": null,
+          "options": [
+            {
+              "option_text": "x > y",
+              "is_correct": true
+            },
+            {
+              "option_text": "x < y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x ≥ y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x ≤ y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x = y or no relation",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 0,
           "correct_letter": "A",
-          "explanation": "I. 6x2 – 4x – 3x + 2 = 0 2x(3x-2) – 1(3x -2) = 0 (2x -1) (3x -2) = 0 x = 1 2 & 2 3 x = 0.5 & 0.66 II. 10y2 – 6y – 5y + 3 = 0 2y(5y -3) – 1(5y -3) = 0 (2y – 1) (5y-3) = 0 y = 1 2 & 3 5 y = 0.5 & 0.60 x y Relation 0.5 0.5 y = x 0.5 0.60 y > x 0.66 0.5 x > y 0.66 0.6 x > y So, no relation can be established",
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "explanation": "I. x² – 18x + 80 = 0 ⟹ (x − 8)(x − 10) = 0 ⟹ x ∈ {8, 10}.\nII. y² – 11y + 28 = 0 ⟹ (y − 4)(y − 7) = 0 ⟹ y ∈ {4, 7}.\nmin(x) = 8 > 7 = max(y), so x > y for every pair ⟹ x > y.",
+          "subject": "QUANT",
+          "topic": "quadratic_equations",
+          "topic_code": "QNT_QUADRATIC",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -1999,19 +2204,42 @@
           "parse_issues": [
             "answer-key letter 'a' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p69",
-          "stem": "I. 2x2 + 19x + 42 = 0 II. 2y2 + 7y + 5 = 0",
+          "stem": "Solve the equations and choose the correct relation between x and y.\n\nI. x² – 9x + 20 = 0\nII. y² – 7y + 12 = 0",
           "passage_context": "In each question two equations number (I) and (II) are given. You should solve both the equations and mark appropriate answer. (a) If x=y or no relation can be established (b) If x>y (c) If x<y (d) If x≥y (e) If x≤y",
-          "options": [],
-          "correct_index": null,
+          "options": [
+            {
+              "option_text": "x > y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x < y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x ≥ y",
+              "is_correct": true
+            },
+            {
+              "option_text": "x ≤ y",
+              "is_correct": false
+            },
+            {
+              "option_text": "x = y or no relation",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 2,
           "correct_letter": "C",
-          "explanation": "I. 2x2 + 12y + 7y + 42 = 0 2x(x+6) + 7(y+6) = 0 (2x+7) (y+6) = 0 x = - 7 2 & - 6 x = - 3.5 & - 6 II. 2y2 + 2y + 5y + 5 = 0 2y(y+1) +5(y+1) = 0 (2y+5) + (y+1) =0 y =- 5 2 & -1 y = - 2.5 & - 1 x y Relation -3.5 -2.5 y > x -3.5 - 1 y > x -6 -2.5 y > x -6 -1 y > x So, x<y",
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "explanation": "I. x² – 9x + 20 = 0 ⟹ (x − 4)(x − 5) = 0 ⟹ x ∈ {4, 5}.\nII. y² – 7y + 12 = 0 ⟹ (y − 3)(y − 4) = 0 ⟹ y ∈ {3, 4}.\nmin(x) = 4 = max(y), so for every pair (xᵢ, yⱼ): xᵢ ≥ yⱼ (equality at (4, 4)) ⟹ x ≥ y.",
+          "subject": "QUANT",
+          "topic": "quadratic_equations",
+          "topic_code": "QNT_QUADRATIC",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -2025,7 +2253,9 @@
           "parse_issues": [
             "answer-key letter 'c' can't map to option index",
             "no options parsed"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier2_broken_q_substitute"
         },
         {
           "id": "pyq_d8693cff8c17f1f1_p70",

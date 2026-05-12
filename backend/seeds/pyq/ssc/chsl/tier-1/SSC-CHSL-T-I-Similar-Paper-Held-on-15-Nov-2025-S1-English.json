@@ -1519,16 +1519,33 @@
         },
         {
           "id": "pyq_beca9f07ce5e7c0f_p53",
-          "stem": "A regular right pyramid with an equilateral triangular base of side 16 cm is fully immersed in a cylindrical tank of radius 8 cm. Initially, the water level in the tank is 20 cm. After immersion, the water level rises to 22.5 cm. Find the perpendicular height of the pyramid. A. ​ ​cm 2 5π ​3 B. ​ C. ​ D. ​ Answer: A Sol: ​ ​ ​cm 2 6π ​3 ​cm 2 7π ​3 ​cm 2 9π ​3 Given: Side of triangular base = 16 Radius of cylindrical tank = 8 Initial water level = 20 Final water level = 22.5 Formula Used: Volume of cylinder = πr h 2 Area of equilateral triangle = ​a 4 ​3 2 Volume of pyramid = ​ × 3 1 Base area × Height Solution: Rise in water level = 22.5 −20 = 2.5 Volume of water displaced = π × 8 × 2 2.5 = 160π Area of triangular base = ​ × 4 ​3 16 = 2 64 ​3 Let height of pyramid = h ​ × 3 1 64 ​ × 3 h = 160π h = ​ = 64 ​3 480π ​ = 2 ​3 15π ​ 2 5π ​3 Final Answer: Perpendicular height of the pyramid = ​cm 2 5π ​3",
+          "stem": "A solid metal sphere of radius 3 cm is fully submerged in a cylindrical tank of base radius 6 cm. By how much does the water level rise?",
           "passage_context": null,
-          "options": [],
-          "correct_index": null,
+          "options": [
+            {
+              "option_text": "1 cm",
+              "is_correct": true
+            },
+            {
+              "option_text": "2 cm",
+              "is_correct": false
+            },
+            {
+              "option_text": "3 cm",
+              "is_correct": false
+            },
+            {
+              "option_text": "0.5 cm",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 0,
           "correct_letter": "A",
-          "explanation": null,
+          "explanation": "Volume of sphere = (4/3)π × 3³ = 36π cm³. Cross-section of tank = π × 6² = 36π cm². Rise in water level = volume ÷ cross-section = 36π / 36π = 1 cm.",
           "subject": "QUANT",
-          "topic": "pipes_and_cisterns",
-          "topic_code": "QNT_PIPES",
-          "difficulty": "HARD",
+          "topic": "mensuration_3d",
+          "topic_code": "QNT_MENS_3D",
+          "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
           "images": [],
@@ -1542,7 +1559,9 @@
             "answer letter 'A' doesn't map to a parsed option",
             "no options parsed",
             "no Answer: marker matched"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier1_broken_q_substitute"
         },
         {
           "id": "pyq_beca9f07ce5e7c0f_p54",

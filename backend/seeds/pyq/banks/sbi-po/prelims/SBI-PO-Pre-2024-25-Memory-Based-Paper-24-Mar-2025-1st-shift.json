@@ -1705,21 +1705,36 @@
         },
         {
           "id": "pyq_f2995a9efc27157d_p57",
-          "stem": "",
+          "stem": "A train 240 m long crosses a platform of length 360 m in 30 seconds. Find the speed of the train in km/h.",
           "passage_context": "What approximate value will come in place of question mark (?) in the following questions? (You are not expected to calculate the exact value)",
           "options": [
-            "98",
-            "127",
-            "123",
-            "130",
-            "112"
+            {
+              "option_text": "72 km/h",
+              "is_correct": true
+            },
+            {
+              "option_text": "60 km/h",
+              "is_correct": false
+            },
+            {
+              "option_text": "80 km/h",
+              "is_correct": false
+            },
+            {
+              "option_text": "90 km/h",
+              "is_correct": false
+            },
+            {
+              "option_text": "None of these",
+              "is_correct": false
+            }
           ],
-          "correct_index": 4,
-          "correct_letter": "E",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "Total distance covered by the train = train length + platform length = 240 + 360 = 600 m.\nSpeed = 600 / 30 = 20 m/s. Convert: 20 × (18/5) = 72 km/h.",
+          "subject": "QUANT",
+          "topic": "time_speed_distance",
+          "topic_code": "QNT_TSD",
           "difficulty": "EASY",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -1737,26 +1752,43 @@
             15
           ],
           "printed_number": 57,
-          "parse_issues": []
+          "parse_issues": [],
+          "is_synthetic": true,
+          "synth_reason": "tier3_broken_q_substitute"
         },
         {
           "id": "pyq_f2995a9efc27157d_p58",
-          "stem": "",
+          "stem": "What number replaces the question mark in the series?\n\n7, 12, 22, 42, 82, ?",
           "passage_context": "What approximate value will come in place of question mark (?) in the following questions? (You are not expected to calculate the exact value)",
           "options": [
-            "534",
-            "450",
-            "239",
-            "670",
-            "809"
+            {
+              "option_text": "162",
+              "is_correct": true
+            },
+            {
+              "option_text": "164",
+              "is_correct": false
+            },
+            {
+              "option_text": "122",
+              "is_correct": false
+            },
+            {
+              "option_text": "192",
+              "is_correct": false
+            },
+            {
+              "option_text": "142",
+              "is_correct": false
+            }
           ],
           "correct_index": 0,
           "correct_letter": "A",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
-          "difficulty": "EASY",
+          "explanation": "Pattern: each term = previous × 2 − 2.\n  7 × 2 − 2 = 12 ✓; 12 × 2 − 2 = 22 ✓; 22 × 2 − 2 = 42 ✓; 42 × 2 − 2 = 82 ✓.\nNext: 82 × 2 − 2 = 162.",
+          "subject": "QUANT",
+          "topic": "number_series",
+          "topic_code": "QNT_NUMBER_SERIES",
+          "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
           "images": [],
@@ -1766,7 +1798,9 @@
             15
           ],
           "printed_number": 58,
-          "parse_issues": []
+          "parse_issues": [],
+          "is_synthetic": true,
+          "synth_reason": "tier3_broken_q_substitute"
         },
         {
           "id": "pyq_f2995a9efc27157d_p59",

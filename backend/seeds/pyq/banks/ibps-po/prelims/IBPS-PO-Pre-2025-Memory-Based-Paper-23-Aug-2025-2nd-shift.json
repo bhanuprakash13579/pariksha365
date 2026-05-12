@@ -2538,22 +2538,37 @@
         },
         {
           "id": "pyq_87a51c78ccbc0348_p85",
-          "stem": "",
+          "stem": "Identify the conclusion(s) that necessarily follow.\n\nStatements: M ≥ N > O = P;  Q < N ≤ R;  S = R > T\nConclusions:\nI. M > Q\nII. S > P",
           "passage_context": "What approximate value should come in place of (?) in the following questions.",
           "options": [
-            "662",
-            "735",
-            "679",
-            "701",
-            "726"
+            {
+              "option_text": "Only Conclusion I follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Only Conclusion II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Either Conclusion I or II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Neither Conclusion I nor II follows",
+              "is_correct": false
+            },
+            {
+              "option_text": "Both Conclusions I and II follow",
+              "is_correct": true
+            }
           ],
-          "correct_index": 0,
-          "correct_letter": "A",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
-          "difficulty": "EASY",
+          "correct_index": 4,
+          "correct_letter": "E",
+          "explanation": "I. M ≥ N and N > Q ⟹ M > Q. FOLLOWS.\nII. S = R ≥ N > O = P ⟹ S > P. FOLLOWS.\nBoth follow.",
+          "subject": "REASONING",
+          "topic": "coded_inequality",
+          "topic_code": "REA_INEQ",
+          "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
           "images": [],
@@ -2563,7 +2578,9 @@
             20
           ],
           "printed_number": 85,
-          "parse_issues": []
+          "parse_issues": [],
+          "is_synthetic": true,
+          "synth_reason": "tier3_broken_q_substitute"
         },
         {
           "id": "pyq_87a51c78ccbc0348_p86",
@@ -2683,17 +2700,36 @@
         },
         {
           "id": "pyq_87a51c78ccbc0348_p90",
-          "stem": "A can complete 40% of a work in 8 days, while B takes four more days than that of A to complete the same work. Find the time taken by A and B together to complete the same work (in days)? (a) (b) (c)",
+          "stem": "A can complete 40% of a work in 8 days, while B takes four more days than A to complete the same work. Find the time taken by A and B together to complete the same work (in days).",
           "passage_context": null,
           "options": [
-            "10 (e)"
+            {
+              "option_text": "120/11 days",
+              "is_correct": true
+            },
+            {
+              "option_text": "11 days",
+              "is_correct": false
+            },
+            {
+              "option_text": "12 days",
+              "is_correct": false
+            },
+            {
+              "option_text": "110/11 days",
+              "is_correct": false
+            },
+            {
+              "option_text": "None of these",
+              "is_correct": false
+            }
           ],
-          "correct_index": null,
-          "correct_letter": "E",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "A finishes 40% in 8 days ⟹ A completes the whole job in 8 × 100/40 = 20 days.\nB = 20 + 4 = 24 days.\nCombined rate = 1/20 + 1/24 = 11/120.\nTime together = 120/11 days.",
+          "subject": "QUANT",
+          "topic": "time_and_work",
+          "topic_code": "QNT_TIME_WORK",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -2706,7 +2742,9 @@
           "printed_number": 90,
           "parse_issues": [
             "answer-key letter 'e' can't map to option index"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier3_broken_q_substitute"
         },
         {
           "id": "pyq_87a51c78ccbc0348_p91",

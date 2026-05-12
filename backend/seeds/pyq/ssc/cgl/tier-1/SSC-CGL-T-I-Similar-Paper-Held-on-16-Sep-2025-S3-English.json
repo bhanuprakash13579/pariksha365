@@ -1577,18 +1577,33 @@
         },
         {
           "id": "pyq_356b3ed0545732c3_p54",
-          "stem": "A container holds ​ litres of oil. If 1.125 litres are removed three times, how much oil is left? A. ​ B. ​ C. ​",
+          "stem": "A container holds 8 litres of oil. If 1.5 litres are removed three times in succession, how much oil is left in the container?",
           "passage_context": null,
           "options": [
-            "5 Answer: A Sol: Given: Total = 8.5 L. Removed = 3 \\times 1.125. Solution: Total Removed: ​ ​ Remaining: 8.500 - 3.375 = 5.125 8 ​2 1 5 ​8 1 4 ​4 3 5 ​4 1 1.125 × 3 = 3.375 Convert to Fraction: 0.125 = 1/8. So ​ So the correct answer is (a) 5 ​. 8 1"
+            {
+              "option_text": "3.5 litres",
+              "is_correct": true
+            },
+            {
+              "option_text": "4.5 litres",
+              "is_correct": false
+            },
+            {
+              "option_text": "5.5 litres",
+              "is_correct": false
+            },
+            {
+              "option_text": "2.5 litres",
+              "is_correct": false
+            }
           ],
           "correct_index": 0,
           "correct_letter": "A",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
-          "difficulty": "MEDIUM",
+          "explanation": "Total removed = 1.5 × 3 = 4.5 litres. Remaining = 8 − 4.5 = 3.5 litres.",
+          "subject": "QUANT",
+          "topic": "simplification",
+          "topic_code": "QNT_SIMP",
+          "difficulty": "EASY",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
           "images": [],
@@ -1598,7 +1613,9 @@
             22
           ],
           "printed_number": 54,
-          "parse_issues": []
+          "parse_issues": [],
+          "is_synthetic": true,
+          "synth_reason": "tier1_broken_q_substitute"
         },
         {
           "id": "pyq_356b3ed0545732c3_p55",

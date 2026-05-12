@@ -1909,17 +1909,32 @@
         },
         {
           "id": "pyq_7fc28b23e579cd43_p64",
-          "stem": "P and Q can complete a work in 16 days and 24 days, respectively. They begin the work together, but Q leaves after 6 days. How many more days will P take to finish the remaining work? A. ​ days B. ​ days",
+          "stem": "A and B can complete a piece of work in 18 days and 27 days, respectively. They begin the work together, but B leaves after 6 days. How many more days will A take to finish the remaining work?",
           "passage_context": null,
           "options": [
-            "6 days D. ​ days Answer: C Sol: ​ 7 ​4 1 8 ​2 1 10 ​3 1 Given: P = 16 days, Q = 24 days. Solution: Total Work = LCM(16, 24) = 48 units. Efficiency: P = 3, Q = 2. Work in first 6 days (P+Q): (3 + 2) × 6 = 30 units. ​ Remaining Work = 48 −30 = 18 units. Time for P to finish: ​ = 3 18 6 days. Final Answer 6 days"
+            {
+              "option_text": "8 days",
+              "is_correct": true
+            },
+            {
+              "option_text": "6 days",
+              "is_correct": false
+            },
+            {
+              "option_text": "12 days",
+              "is_correct": false
+            },
+            {
+              "option_text": "18 days",
+              "is_correct": false
+            }
           ],
-          "correct_index": null,
-          "correct_letter": "C",
-          "explanation": null,
-          "subject": "UNCLASSIFIED",
-          "topic": null,
-          "topic_code": "GEN_UNC",
+          "correct_index": 0,
+          "correct_letter": "A",
+          "explanation": "LCM(18, 27) = 54 work units. A's rate = 54/18 = 3 units/day; B's rate = 54/27 = 2 units/day; together = 5 units/day. In 6 days together they finish 30 units; remaining = 24 units. A alone takes 24/3 = 8 more days.",
+          "subject": "QUANT",
+          "topic": "time_and_work",
+          "topic_code": "QNT_TIME_WORK",
           "difficulty": "MEDIUM",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
@@ -1933,7 +1948,9 @@
           "parse_issues": [
             "answer letter 'C' doesn't map to a parsed option",
             "no Answer: marker matched"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "tier1_broken_q_substitute"
         },
         {
           "id": "pyq_7fc28b23e579cd43_p65",

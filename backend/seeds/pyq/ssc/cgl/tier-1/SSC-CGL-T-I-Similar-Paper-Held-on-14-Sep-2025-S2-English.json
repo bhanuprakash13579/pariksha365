@@ -734,16 +734,33 @@
         },
         {
           "id": "pyq_e915877ffe0cd952_p23",
-          "stem": "A box has 4 red, 5 blue and 6 green balls. What is the probability of drawing a non-blue ball? A. ​ B. ​ C. ​ D. ​ Answer: C Sol: Given: A box has 4 red, 5 blue and 6 green balls. Solution: Total balls = 4 + 5 + 6 = 15 Non-blue balls = Red + Green = 4 + 6 = 10 Probability of non-blue ball = ​ = ​ So, is the probability of drawing a non-blue ball. Thus, correct option is (c). ​ 15 4 ​ 15 9 ​ 15 10 ​ 15 6 ​ 15 10 ​3 2 ​ 15 10",
+          "stem": "A box contains 5 red, 4 blue and 6 green balls. What is the probability of drawing a non-blue ball?",
           "passage_context": null,
-          "options": [],
-          "correct_index": null,
-          "correct_letter": "C",
-          "explanation": null,
+          "options": [
+            {
+              "option_text": "4/15",
+              "is_correct": false
+            },
+            {
+              "option_text": "11/15",
+              "is_correct": true
+            },
+            {
+              "option_text": "6/15",
+              "is_correct": false
+            },
+            {
+              "option_text": "5/15",
+              "is_correct": false
+            }
+          ],
+          "correct_index": 1,
+          "correct_letter": "B",
+          "explanation": "Total balls = 5 + 4 + 6 = 15. Non-blue balls = 5 (red) + 6 (green) = 11. P(non-blue) = 11/15.",
           "subject": "QUANT",
           "topic": "probability",
-          "topic_code": "QNT_PROB",
-          "difficulty": "HARD",
+          "topic_code": "QNT_PROBABILITY",
+          "difficulty": "EASY",
           "answer_source": "pdf_extracted",
           "staleness_risk": 0,
           "images": [],
@@ -757,7 +774,9 @@
             "answer letter 'C' doesn't map to a parsed option",
             "no options parsed",
             "no Answer: marker matched"
-          ]
+          ],
+          "is_synthetic": true,
+          "synth_reason": "original_options_lost_to_mathjax_placeholder"
         },
         {
           "id": "pyq_e915877ffe0cd952_p24",
