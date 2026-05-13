@@ -2060,7 +2060,150 @@ $h$ = class width. The 2nd-moment correction is most commonly asked; the 4th rar
 
 </div>
 
-## 4.7 Trap-recognition card
+## 4.7 Computation drills — the 8 problem types the exam sets
+
+These 8 types cover every numerical question on Chapter 4 in the last 6 JSO papers. Solve each before reading the solution.
+
+<div class="worked" markdown="block">
+
+**CD-4.1.  Karl Pearson Sk — mode based.**
+Mean = 45, Mode = 38, SD = 7. Find Pearson's coefficient of skewness.
+
+**Step 1 — Apply formula: $\text{Sk} = (\bar X - \text{Mo}) / \sigma$.**
+
+- = $(45 - 38) / 7$
+- = $7 / 7$
+- = **+1.0** (moderate positive skew — mode is below mean)
+
+*Trap.* Divide by SD, never by variance. Sk = 1 means "one standard deviation" of skew — purely a ratio, not a probability.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-4.2.  Karl Pearson Sk — median based (mode ill-defined).**
+Mean = 62, Median = 60, SD = 6. Find skewness.
+
+**Step 1 — Apply: $\text{Sk} = 3(\bar X - \text{Md}) / \sigma$.**
+
+- = $3 \times (62 - 60) / 6$
+- = $3 \times 2 / 6$
+- = $6 / 6$
+- = **+1.0**
+
+*Note.* Both forms give the same number here by design. Median-based uses factor 3 because the empirical relation Mode ≈ 3·Median − 2·Mean was substituted.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-4.3.  Bowley's coefficient of skewness.**
+Q₁ = 28, Q₂ (median) = 40, Q₃ = 58. Find Bowley's Sk.
+
+**Step 1 — Apply formula: $S_B = (Q_1 + Q_3 - 2Q_2) / (Q_3 - Q_1)$.**
+
+- Numerator: $28 + 58 - 2 \times 40 = 86 - 80 = 6$
+- Denominator: $58 - 28 = 30$
+
+**Step 2 — Divide.**
+
+- $S_B = 6 / 30 = \mathbf{+0.2}$
+
+*Interpretation.* Slight positive skew. Range: $-1 \le S_B \le +1$.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-4.4.  Compute β₁ (skewness measure) and γ₁ (signed skewness).**
+$\mu_2 = 9$, $\mu_3 = -54$.
+
+**Step 1 — Compute $\beta_1 = \mu_3^2 / \mu_2^3$.**
+
+- $= (-54)^2 / 9^3$
+- $= 2916 / 729$
+- $= \mathbf{4.0}$
+
+**Step 2 — Compute $\gamma_1 = \mu_3 / \mu_2^{3/2}$ (signed version).**
+
+- $\mu_2^{3/2} = 9^{3/2} = 27$
+- $\gamma_1 = -54 / 27 = \mathbf{-2.0}$ (negative skew — long left tail)
+
+*Trap.* $\beta_1$ is always ≥ 0 (it's squared). The sign of skewness lives in γ₁.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-4.5.  Compute β₂ (kurtosis) and γ₂ (excess kurtosis).**
+$\mu_2 = 16$, $\mu_4 = 1024$.
+
+**Step 1 — Compute $\beta_2 = \mu_4 / \mu_2^2$.**
+
+- $= 1024 / 16^2$
+- $= 1024 / 256$
+- $= \mathbf{4.0}$
+
+**Step 2 — Compute $\gamma_2 = \beta_2 - 3$.**
+
+- $= 4.0 - 3 = \mathbf{+1.0}$ → **leptokurtic** (sharper peak than normal)
+
+*Check.* Normal distribution has $\beta_2 = 3$, $\gamma_2 = 0$. Any positive γ₂ → leptokurtic.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-4.6.  Convert raw moments to central moments.**
+Raw moments about origin: $\mu_1' = 4$, $\mu_2' = 22$, $\mu_3' = 140$.
+
+**Step 1 — Compute $\mu_2$ (central moment).**
+
+- $\mu_2 = \mu_2' - (\mu_1')^2 = 22 - 16 = \mathbf{6}$
+
+**Step 2 — Compute $\mu_3$.**
+
+- $\mu_3 = \mu_3' - 3\mu_2'\mu_1' + 2(\mu_1')^3$
+- $= 140 - 3 \times 22 \times 4 + 2 \times 64$
+- $= 140 - 264 + 128$
+- $= \mathbf{4}$
+
+**Step 3 — Determine skewness direction.**
+
+- $\gamma_1 = \mu_3 / \mu_2^{3/2} = 4 / 6^{1.5} = 4 / 14.70 \approx +0.27$ → slight positive skew.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-4.7.  Back-calculate SD from skewness.**
+Karl Pearson's Sk = +0.6, Mean = 50, Mode = 44. Find SD.
+
+**Step 1 — Rearrange formula: $\sigma = (\bar X - \text{Mo}) / \text{Sk}$.**
+
+- $= (50 - 44) / 0.6$
+- $= 6 / 0.6$
+- $= \mathbf{10}$
+
+*Exam note.* Examiners give Sk and two of {Mean, Mode, SD} and ask for the third. Always identify which is unknown, rearrange, plug in.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-4.8.  Identify curve type from β₁ and β₂.**
+
+| $\mu_2$ | $\mu_3$ | $\mu_4$ | What is it? |
+|---------|---------|---------|-------------|
+| 4 | 0 | 48 | β₁ = 0²/4³ = 0; β₂ = 48/16 = 3 → **Symmetric mesokurtic** |
+| 9 | 27 | 324 | β₁ = 729/729 = 1; β₂ = 324/81 = 4 → **Positive skew, leptokurtic** |
+| 25 | 0 | 1250 | β₁ = 0; β₂ = 1250/625 = 2 → **Symmetric, platykurtic** |
+
+*Pattern.* β₁ = 0 → symmetric. β₂ = 3 → mesokurtic. β₂ > 3 → lepto. β₂ < 3 → platy.
+
+</div>
+
+## 4.8 Trap-recognition card
 
 | Trap | Defence |
 |------|---------|
@@ -4048,7 +4191,126 @@ $$
 
 </div>
 
-## 8.11 Trap-recognition card
+## 8.11 Computation drills — the 7 problem types the exam sets
+
+<div class="worked" markdown="block">
+
+**CD-8.1.  Standard error of the mean.**
+Population SD σ = 12. Sample size n = 36. Find SE($\bar X$).
+
+**Step 1 — Apply $\text{SE}(\bar X) = \sigma / \sqrt{n}$.**
+
+- $= 12 / \sqrt{36}$
+- $= 12 / 6$
+- = **2**
+
+*Interpretation.* The sample mean will fluctuate ± 2 units around the true mean on average.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-8.2.  Standard error of proportion.**
+n = 400, sample proportion $\hat p = 0.35$. Find SE($\hat p$).
+
+**Step 1 — Apply $\text{SE}(\hat p) = \sqrt{\hat p(1-\hat p)/n}$.**
+
+- $= \sqrt{0.35 \times 0.65 / 400}$
+- $= \sqrt{0.2275 / 400}$
+- $= \sqrt{0.00056875}$
+- $\approx \mathbf{0.0239}$
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-8.3.  95 % confidence interval for the mean.**
+$\bar X = 82$, σ = 10, n = 100. Construct 95% CI.
+
+**Step 1 — Compute SE.**
+
+- $\text{SE} = 10 / \sqrt{100} = 10 / 10 = 1$
+
+**Step 2 — Apply CI formula: $\bar X \pm Z_{0.025} \cdot \text{SE}$.**
+
+- $Z_{0.025} = 1.96$ (memorise)
+- Lower: $82 - 1.96 \times 1 = 82 - 1.96 = \mathbf{80.04}$
+- Upper: $82 + 1.96 \times 1 = 82 + 1.96 = \mathbf{83.96}$
+
+**Ans:** 95% CI = **(80.04, 83.96)**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-8.4.  Sample size for estimating the mean.**
+Margin of error e = 3, σ = 15, 95% confidence (Z = 1.96). Find n.
+
+**Step 1 — Apply $n = \left(\dfrac{Z \sigma}{e}\right)^2$.**
+
+- $= \left(\dfrac{1.96 \times 15}{3}\right)^2$
+- $= (9.8)^2$
+- $= \mathbf{96.04}$
+
+**Round up → n = 97** (always round UP for sample size).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-8.5.  Sample size for estimating a proportion.**
+Desired margin ±0.04 at 95% confidence. P unknown (worst case). Find n.
+
+**Step 1 — Use worst-case P = 0.5 (maximises PQ = 0.25).**
+
+**Step 2 — Apply $n = Z^2 PQ / e^2$.**
+
+- $= (1.96)^2 \times 0.5 \times 0.5 / (0.04)^2$
+- $= 3.8416 \times 0.25 / 0.0016$
+- $= 0.9604 / 0.0016$
+- = **600.25 → n = 601**
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-8.6.  Finite population correction (FPC).**
+Population N = 500, sample n = 100, σ = 20. Find corrected SE($\bar X$).
+
+**Step 1 — Compute the infinite-population SE.**
+
+- $\text{SE}_\infty = \sigma/\sqrt{n} = 20/\sqrt{100} = 2$
+
+**Step 2 — Apply FPC factor: $\text{SE} = \text{SE}_\infty \times \sqrt{(N-n)/(N-1)}$.**
+
+- $= 2 \times \sqrt{(500-100)/(500-1)}$
+- $= 2 \times \sqrt{400/499}$
+- $= 2 \times \sqrt{0.8016}$
+- $= 2 \times 0.8953$
+- $\approx \mathbf{1.79}$ (smaller than uncorrected 2 — sampling 20% of pop gains precision)
+
+*Rule of thumb.* Apply FPC when sample fraction $n/N > 0.05$ (sampling > 5% of population).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-8.7.  Stratified sampling — proportional allocation.**
+Population: Stratum 1 (N₁ = 600), Stratum 2 (N₂ = 300), Stratum 3 (N₃ = 100). Total n = 200. Find n per stratum.
+
+**Step 1 — Total population N = 600 + 300 + 100 = 1000.**
+
+**Step 2 — Proportional allocation: $n_i = n \times (N_i / N)$.**
+
+- $n_1 = 200 \times (600/1000) = \mathbf{120}$
+- $n_2 = 200 \times (300/1000) = \mathbf{60}$
+- $n_3 = 200 \times (100/1000) = \mathbf{20}$
+
+**Check:** 120 + 60 + 20 = 200 ✓
+
+</div>
+
+## 8.12 Trap-recognition card
 
 | Trap | Defence |
 |------|---------|
@@ -4879,7 +5141,109 @@ Two F-tests: $F_R = \text{MSR}/\text{MSE}$ (rows), $F_C = \text{MSC}/\text{MSE}$
 
 </div>
 
-## 10.7 Trap-recognition card
+## 10.7 Computation drills — the full ANOVA table from scratch
+
+**The single most-tested ANOVA skill:** build the table from raw data. Every number you write should be derivable from this template. Practise until you can fill any ANOVA table in under 3 minutes.
+
+<div class="worked" markdown="block">
+
+**CD-10.1.  One-way ANOVA — complete worked example.**
+
+Three fertilisers (treatments) tested on 4 plots each. Yield data (kg):
+
+| Fertiliser A | 6 | 8 | 7 | 9 |
+|---|---|---|---|---|
+| Fertiliser B | 10 | 12 | 11 | 13 |
+| Fertiliser C | 5 | 4 | 6 | 5 |
+
+**Step 1 — Compute group totals and grand total.**
+
+- $T_A = 6+8+7+9 = 30$ → $\bar A = 7.5$
+- $T_B = 10+12+11+13 = 46$ → $\bar B = 11.5$
+- $T_C = 5+4+6+5 = 20$ → $\bar C = 5.0$
+- Grand total $T = 30+46+20 = 96$, $n = 12$, $\bar{\bar{X}} = 96/12 = 8.0$
+
+**Step 2 — Compute Correction Factor (CF).**
+
+- $\text{CF} = T^2 / n = 96^2 / 12 = 9216 / 12 = 768$
+
+**Step 3 — Compute Total SS (SST).**
+
+- $\text{SST} = \sum x_{ij}^2 - \text{CF}$
+- $= (6^2+8^2+7^2+9^2 + 10^2+12^2+11^2+13^2 + 5^2+4^2+6^2+5^2) - 768$
+- $= (36+64+49+81 + 100+144+121+169 + 25+16+36+25) - 768$
+- $= 866 - 768 = \mathbf{98}$
+
+**Step 4 — Compute Between-group SS (SSB).**
+
+- $\text{SSB} = \sum_j T_j^2 / n_j - \text{CF}$
+- $= 30^2/4 + 46^2/4 + 20^2/4 - 768$
+- $= 225 + 529 + 100 - 768$
+- $= 854 - 768 = \mathbf{86}$
+
+**Step 5 — Compute Within-group SS (SSW = SST − SSB).**
+
+- $\text{SSW} = 98 - 86 = \mathbf{12}$
+
+**Step 6 — Compute degrees of freedom.**
+
+- Between: $df_B = k - 1 = 3 - 1 = 2$
+- Within: $df_W = n - k = 12 - 3 = 9$
+- Total: $df_T = n - 1 = 11$
+
+**Step 7 — Compute Mean Squares and F.**
+
+- $\text{MSB} = 86 / 2 = \mathbf{43}$
+- $\text{MSW} = 12 / 9 = \mathbf{1.33}$
+- $F = \text{MSB} / \text{MSW} = 43 / 1.33 = \mathbf{32.3}$
+
+**Step 8 — ANOVA table and conclusion.**
+
+| Source | SS | df | MS | F |
+|--------|----|----|-----|------|
+| Between | 86 | 2 | 43 | **32.3** |
+| Within | 12 | 9 | 1.33 | |
+| Total | 98 | 11 | | |
+
+$F_{0.05}(2, 9) \approx 4.26$. Computed F = 32.3 >> 4.26 → **Reject H₀** — the three fertilisers differ significantly.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-10.2.  Reading an ANOVA table — fill in the blanks.**
+
+| Source | SS | df | MS | F |
+|--------|----|----|-----|------|
+| Between | 120 | 3 | ? | ? |
+| Within | ? | 16 | 5 | |
+| Total | ? | 19 | | |
+
+**Step 1 — Fill Within SS = MS × df = 5 × 16 = 80.**
+
+**Step 2 — Fill Total SS = 120 + 80 = 200; Total df = 3 + 16 = 19 ✓.**
+
+**Step 3 — MSB = 120 / 3 = 40.**
+
+**Step 4 — F = MSB / MSW = 40 / 5 = 8.0.**
+
+**Ans:** MS Between = **40**, F = **8.0**, SSW = **80**, SST = **200**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-10.3.  Back-calculate number of groups and observations from ANOVA table.**
+
+Between df = 4, Within df = 20. How many groups (k) and total observations (n)?
+
+- $k - 1 = 4 \Rightarrow k = \mathbf{5}$ groups
+- $n - k = 20 \Rightarrow n = 20 + 5 = \mathbf{25}$ total observations
+- Equal group size: $n_j = 25/5 = \mathbf{5}$ per group
+
+</div>
+
+## 10.8 Trap-recognition card
 
 | Trap | Defence |
 |------|---------|
@@ -5185,7 +5549,130 @@ The 4 (or 12) indices average to 100. If they don't, **adjust** by multiplying e
 
 </div>
 
-## 11.7 Trap-recognition card
+## 11.7 Computation drills — the 5 problem types the exam sets
+
+<div class="worked" markdown="block">
+
+**CD-11.1.  3-year moving average.**
+
+Year: 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+Values: 42, 45, 48, 44, 50, 53, 55.
+
+**Step 1 — Each MA₃ is the average of 3 consecutive values; it centres on the middle year.**
+
+- 2019: $(42 + 45 + 48)/3 = 135/3 = \mathbf{45.0}$
+- 2020: $(45 + 48 + 44)/3 = 137/3 \approx \mathbf{45.67}$
+- 2021: $(48 + 44 + 50)/3 = 142/3 \approx \mathbf{47.33}$
+- 2022: $(44 + 50 + 53)/3 = 147/3 = \mathbf{49.0}$
+- 2023: $(50 + 53 + 55)/3 = 158/3 \approx \mathbf{52.67}$
+
+*We lose 1 value at each end — 2018 and 2024 get no MA.*
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-11.2.  4-year centred moving average (the tricky even-period case).**
+
+Year: 1, 2, 3, 4, 5, 6.  Values: 10, 12, 16, 14, 18, 20.
+
+**Step 1 — Compute 4-year totals (moving sums).**
+
+- Years 1–4: $10+12+16+14 = 52$
+- Years 2–5: $12+16+14+18 = 60$
+- Years 3–6: $16+14+18+20 = 68$
+
+**Step 2 — Divide by 4 to get 4-year MA (lands between years).**
+
+- Between yr 2 & 3: $52/4 = 13.0$
+- Between yr 3 & 4: $60/4 = 15.0$
+- Between yr 4 & 5: $68/4 = 17.0$
+
+**Step 3 — Centre by averaging consecutive 4-year MAs (landing ON a year).**
+
+- Year 3: $(13.0 + 15.0)/2 = \mathbf{14.0}$
+- Year 4: $(15.0 + 17.0)/2 = \mathbf{16.0}$
+
+*We lose 2 values at each end. The centring step is the one examiners trip candidates on.*
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-11.3.  Least-squares trend line: $Y = a + bt$.**
+
+Code the years t = −2, −1, 0, 1, 2 (centred at midpoint so $\sum t = 0$):
+
+| Year | t | Y | tY | t² |
+|------|---|---|----|----|
+| 2020 | −2 | 20 | −40 | 4 |
+| 2021 | −1 | 24 | −24 | 1 |
+| 2022 | 0 | 28 | 0 | 0 |
+| 2023 | 1 | 32 | 32 | 1 |
+| 2024 | 2 | 38 | 76 | 4 |
+| **Σ** | 0 | 142 | 44 | 10 |
+
+**Step 1 — Compute a and b (simplified when $\sum t = 0$).**
+
+- $a = \bar Y = 142 / 5 = \mathbf{28.4}$
+- $b = \sum tY / \sum t^2 = 44 / 10 = \mathbf{4.4}$
+
+**Trend line: $Y = 28.4 + 4.4t$.**
+
+**Step 2 — Forecast for 2025 (t = 3).**
+
+- $Y = 28.4 + 4.4 \times 3 = 28.4 + 13.2 = \mathbf{41.6}$
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-11.4.  Seasonal index — method of simple averages.**
+
+Quarterly sales (₹ lakh):
+
+| Year | Q1 | Q2 | Q3 | Q4 |
+|------|----|----|----|----|
+| 2022 | 30 | 40 | 60 | 50 |
+| 2023 | 33 | 44 | 66 | 55 |
+
+**Step 1 — Average each quarter across years.**
+
+- $\bar{Q1} = (30+33)/2 = 31.5$
+- $\bar{Q2} = (40+44)/2 = 42.0$
+- $\bar{Q3} = (60+66)/2 = 63.0$
+- $\bar{Q4} = (50+55)/2 = 52.5$
+
+**Step 2 — Grand average $= (31.5+42+63+52.5)/4 = 189/4 = 47.25$.**
+
+**Step 3 — Seasonal index = (quarter average / grand average) × 100.**
+
+- SI(Q1) $= 31.5/47.25 \times 100 = \mathbf{66.67}$
+- SI(Q2) $= 42.0/47.25 \times 100 = \mathbf{88.89}$
+- SI(Q3) $= 63.0/47.25 \times 100 = \mathbf{133.33}$
+- SI(Q4) $= 52.5/47.25 \times 100 = \mathbf{111.11}$
+
+**Check:** Sum of 4 indices = 400 ✓ (they average to 100 each).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**CD-11.5.  Deseasonalise a value.**
+
+Q3 actual value = 63, Seasonal index Q3 = 133.33. What is the deseasonalised value?
+
+**Step 1 — Apply: Deseasonalised = (Actual / SI) × 100.**
+
+- $= (63 / 133.33) \times 100$
+- $= 0.4725 \times 100$
+- $= \mathbf{47.25}$
+
+*This removes the seasonal effect — what remains is T × C × I.*
+
+</div>
+
+## 11.8 Trap-recognition card
 
 | Trap | Defence |
 |------|---------|
@@ -8263,85 +8750,165 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 ## K-1  Data presentation — 20 worked Qs
 
-> **K-1.1.** Census of India 2011 data used by a researcher is which type of data?
->
-> **Secondary** (collected by someone else — Census, NSO, RBI publications are all secondary).
+<div class="worked" markdown="block">
 
-> **K-1.2.** A student marks an observation in a class as 10–20. The class mark is 15, width is 10. The exclusive lower boundary is 10. T/F?
->
-> **True** — the exclusive form's lower limit and lower boundary are the same.
+**K-1.1.** Census of India 2011 data used by a researcher is which type of data?
 
-> **K-1.3.** The following frequency polygon will touch the x-axis at both ends because:
->
-> The convention is to extend to the midpoint of the **imaginary classes** just before the first and just after the last actual class (with frequency 0). This closes the polygon to the x-axis.
+**Secondary** (collected by someone else — Census, NSO, RBI publications are all secondary).
 
-> **K-1.4.** In a cumulative frequency distribution, the last entry equals?
->
-> The **total frequency** N (it's the "less than the upper boundary of the last class" count = all observations).
+</div>
 
-> **K-1.5.** A distribution with classes 10–20, 20–30, 30–40 and frequencies 30, 50, 20. What percentage of observations lie below 30?
->
-> (30 + 50)/100 = **80 %**.
+<div class="worked" markdown="block">
 
-> **K-1.6.** The sum of all relative frequencies is?
->
-> Always **1**.
+**K-1.2.** A student marks an observation in a class as 10–20. The class mark is 15, width is 10. The exclusive lower boundary is 10. T/F?
 
-> **K-1.7.** Frequency polygon for comparing two distributions is preferred over histograms because:
->
-> Two histograms overlap and obscure each other; two polygons on the same axis remain readable (lines can cross without filling confusion).
+**True** — the exclusive form's lower limit and lower boundary are the same.
 
-> **K-1.8.** Ogive can be used to find which measures?
->
-> Median, quartiles (Q₁, Q₃), deciles, percentiles — any **positional measure**.
+</div>
 
-> **K-1.9.** NSS (National Sample Survey) data, when used by another researcher, is which type?
->
-> **Secondary**.
+<div class="worked" markdown="block">
 
-> **K-1.10.** A researcher visits each household in a district to collect income data. Method?
->
-> **Direct personal interview** (investigator collects first-hand → primary data).
+**K-1.3.** The following frequency polygon will touch the x-axis at both ends because:
 
-> **K-1.11.** In a relative frequency distribution, each class frequency is divided by?
->
-> The **total number of observations** (N).
+The convention is to extend to the midpoint of the **imaginary classes** just before the first and just after the last actual class (with frequency 0). This closes the polygon to the x-axis.
 
-> **K-1.12.** A bar chart is preferred over a histogram when data is?
->
-> **Discrete / categorical** (like states, departments, years as separate labels).
+</div>
 
-> **K-1.13.** Convert inclusive class 55–64 to exclusive.
->
-> Lower boundary = 54.5, upper boundary = 64.5. Exclusive: **54.5 – 64.5**.
+<div class="worked" markdown="block">
 
-> **K-1.14.** "Less than" ogive at x = 40 reads as cumulative frequency 70 out of 100 total. "More than" ogive at x = 40 reads as?
->
-> 100 − 70 = **30** (complement).
+**K-1.4.** In a cumulative frequency distribution, the last entry equals?
 
-> **K-1.15.** The intersection of "less-than" and "more-than" ogives gives the?
->
-> **Median** (the point where cumulative from below and above are equal at N/2).
+The **total frequency** N (it's the "less than the upper boundary of the last class" count = all observations).
 
-> **K-1.16.** A pie chart is drawn for two quantities: 60 and 40. Angles?
->
-> 60/(60+40) × 360 = **216°** and 40/100 × 360 = **144°**.
+</div>
 
-> **K-1.17.** Data on the number of family members per household is which type?
->
-> **Discrete** quantitative (count, must be whole number).
+<div class="worked" markdown="block">
 
-> **K-1.18.** Data on the height of a person is which type?
->
-> **Continuous** quantitative (takes any value in a range).
+**K-1.5.** A distribution with classes 10–20, 20–30, 30–40 and frequencies 30, 50, 20. What percentage of observations lie below 30?
 
-> **K-1.19.** A questionnaire mailed to respondents without an enumerator is called?
->
-> **Mailed questionnaire method** (used when population is literate and spread widely).
+(30 + 50)/100 = **80 %**.
 
-> **K-1.20.** A sub-divided bar chart differs from a simple bar chart in that:
->
-> Each bar is divided into parts representing component categories, so **both total and composition** are visible simultaneously.
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.6.** The sum of all relative frequencies is?
+
+Always **1**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.7.** Frequency polygon for comparing two distributions is preferred over histograms because:
+
+Two histograms overlap and obscure each other; two polygons on the same axis remain readable (lines can cross without filling confusion).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.8.** Ogive can be used to find which measures?
+
+Median, quartiles (Q₁, Q₃), deciles, percentiles — any **positional measure**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.9.** NSS (National Sample Survey) data, when used by another researcher, is which type?
+
+**Secondary**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.10.** A researcher visits each household in a district to collect income data. Method?
+
+**Direct personal interview** (investigator collects first-hand → primary data).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.11.** In a relative frequency distribution, each class frequency is divided by?
+
+The **total number of observations** (N).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.12.** A bar chart is preferred over a histogram when data is?
+
+**Discrete / categorical** (like states, departments, years as separate labels).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.13.** Convert inclusive class 55–64 to exclusive.
+
+Lower boundary = 54.5, upper boundary = 64.5. Exclusive: **54.5 – 64.5**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.14.** "Less than" ogive at x = 40 reads as cumulative frequency 70 out of 100 total. "More than" ogive at x = 40 reads as?
+
+100 − 70 = **30** (complement).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.15.** The intersection of "less-than" and "more-than" ogives gives the?
+
+**Median** (the point where cumulative from below and above are equal at N/2).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.16.** A pie chart is drawn for two quantities: 60 and 40. Angles?
+
+60/(60+40) × 360 = **216°** and 40/100 × 360 = **144°**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.17.** Data on the number of family members per household is which type?
+
+**Discrete** quantitative (count, must be whole number).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.18.** Data on the height of a person is which type?
+
+**Continuous** quantitative (takes any value in a range).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.19.** A questionnaire mailed to respondents without an enumerator is called?
+
+**Mailed questionnaire method** (used when population is literate and spread widely).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-1.20.** A sub-divided bar chart differs from a simple bar chart in that:
+
+Each bar is divided into parts representing component categories, so **both total and composition** are visible simultaneously.
+
+</div>
 
 ---
 
@@ -8349,91 +8916,171 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 ## K-4  Moments, Skewness, Kurtosis — 20 worked Qs
 
-> **K-4.1.** The first raw moment equals?
->
-> $\mu_1' = \bar X$ (the arithmetic mean).
+<div class="worked" markdown="block">
 
-> **K-4.2.** For any distribution, the first central moment is?
->
-> $\mu_1 = 0$ (by definition of mean).
+**K-4.1.** The first raw moment equals?
 
-> **K-4.3.** $\mu_0 = ?$
->
-> $\mu_0 = 1$ (zeroth central moment is always 1, since $\sum f/N = 1$).
+$\mu_1' = \bar X$ (the arithmetic mean).
 
-> **K-4.4.** $\mu_2 = 16$. SD = ?
->
-> $\sigma = \sqrt{16} = \mathbf{4}$.
+</div>
 
-> **K-4.5.** $\mu_3 = 0$. What does this tell us about skewness?
->
-> $\beta_1 = \mu_3^2/\mu_2^3 = 0$ → **zero skewness → symmetric distribution**.
+<div class="worked" markdown="block">
 
-> **K-4.6.** $\mu_2 = 9, \mu_4 = 243$. β₂?
->
-> $\beta_2 = 243/81 = \mathbf{3}$ → mesokurtic.
+**K-4.2.** For any distribution, the first central moment is?
 
-> **K-4.7.** $\mu_1' = 10, \mu_2' = 120$. Find variance.
->
-> $\mu_2 = 120 - 100 = \mathbf{20}$.
+$\mu_1 = 0$ (by definition of mean).
 
-> **K-4.8.** $\mu_1' = 5, \mu_2' = 30, \mu_3' = 200$. Find $\mu_3$.
->
-> $\mu_3 = 200 - 3(5)(30) + 2(125)$
->
-> $= 200 - 450 + 250 = \mathbf{0}$.
+</div>
 
-> **K-4.9.** Karl Pearson Sk = 0.5, mode = 40, σ = 6. Mean = ?
->
-> $0.5 = (\bar X - 40)/6 \Rightarrow \bar X = 43$.
+<div class="worked" markdown="block">
 
-> **K-4.10.** Bowley Sk = 0.4, Q₁ = 20, Q₃ = 60. Median = ?
->
-> $0.4 = \dfrac{60 + 20 - 2Q_2}{60 - 20} = \dfrac{80 - 2Q_2}{40}$
->
-> $80 - 2Q_2 = 0.4 \times 40 = 16$
->
-> $Q_2 = \mathbf{32}$.
+**K-4.3.** $\mu_0 = ?$
 
-> **K-4.11.** If $\beta_2 > 3$, the distribution is said to be?
->
-> **Leptokurtic** (sharp peak, fat tails).
+$\mu_0 = 1$ (zeroth central moment is always 1, since $\sum f/N = 1$).
 
-> **K-4.12.** γ₂ = β₂ − 3 = −1.2. Distribution?
->
-> $\beta_2 = 1.8 < 3$ → **platykurtic**.
+</div>
 
-> **K-4.13.** Moments from any origin $A$ vs from the mean: which has $\mu_1 = 0$?
->
-> Only from the **mean**. From any other origin the first moment equals $\bar X - A \neq 0$.
+<div class="worked" markdown="block">
 
-> **K-4.14.** A distribution has the same shape on both sides of the mean. Which odd moments are zero?
->
-> All odd central moments: $\mu_1 = \mu_3 = \mu_5 = \cdots = 0$.
+**K-4.4.** $\mu_2 = 16$. SD = ?
 
-> **K-4.15.** Sheppard's correction is applied when:
->
-> Data is **grouped** (continuous) and class widths are equal. It corrects the upward bias in grouped-data moments.
+$\sigma = \sqrt{16} = \mathbf{4}$.
 
-> **K-4.16.** For Karl Pearson Sk, which formula is used when the distribution is bimodal?
->
-> Use the **median-based formula**: $\text{Sk} = 3(\bar X - \text{Med})/\sigma$ (mode is ambiguous for bimodal).
+</div>
 
-> **K-4.17.** β₁ is always:
->
-> **Non-negative** ($\mu_3^2 \ge 0$). The sign of skewness is determined by γ₁ = μ₃/σ³.
+<div class="worked" markdown="block">
 
-> **K-4.18.** For a normal distribution, β₁ = ? and β₂ = ?
->
-> β₁ = **0**, β₂ = **3**.
+**K-4.5.** $\mu_3 = 0$. What does this tell us about skewness?
 
-> **K-4.19.** Bowley's skewness is based on which positional values?
->
-> **Quartiles** (Q₁, Q₂, Q₃) — thus it is resistant to extreme values (unlike Pearson's which uses mean and SD).
+$\beta_1 = \mu_3^2/\mu_2^3 = 0$ → **zero skewness → symmetric distribution**.
 
-> **K-4.20.** If mode > median > mean, skewness is:
->
-> **Negative** (left-skewed, long left tail).
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.6.** $\mu_2 = 9, \mu_4 = 243$. β₂?
+
+$\beta_2 = 243/81 = \mathbf{3}$ → mesokurtic.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.7.** $\mu_1' = 10, \mu_2' = 120$. Find variance.
+
+$\mu_2 = 120 - 100 = \mathbf{20}$.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.8.** $\mu_1' = 5, \mu_2' = 30, \mu_3' = 200$. Find $\mu_3$.
+
+$\mu_3 = 200 - 3(5)(30) + 2(125)$
+
+$= 200 - 450 + 250 = \mathbf{0}$.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.9.** Karl Pearson Sk = 0.5, mode = 40, σ = 6. Mean = ?
+
+$0.5 = (\bar X - 40)/6 \Rightarrow \bar X = 43$.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.10.** Bowley Sk = 0.4, Q₁ = 20, Q₃ = 60. Median = ?
+
+$0.4 = \dfrac{60 + 20 - 2Q_2}{60 - 20} = \dfrac{80 - 2Q_2}{40}$
+
+$80 - 2Q_2 = 0.4 \times 40 = 16$
+
+$Q_2 = \mathbf{32}$.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.11.** If $\beta_2 > 3$, the distribution is said to be?
+
+**Leptokurtic** (sharp peak, fat tails).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.12.** γ₂ = β₂ − 3 = −1.2. Distribution?
+
+$\beta_2 = 1.8 < 3$ → **platykurtic**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.13.** Moments from any origin $A$ vs from the mean: which has $\mu_1 = 0$?
+
+Only from the **mean**. From any other origin the first moment equals $\bar X - A \neq 0$.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.14.** A distribution has the same shape on both sides of the mean. Which odd moments are zero?
+
+All odd central moments: $\mu_1 = \mu_3 = \mu_5 = \cdots = 0$.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.15.** Sheppard's correction is applied when:
+
+Data is **grouped** (continuous) and class widths are equal. It corrects the upward bias in grouped-data moments.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.16.** For Karl Pearson Sk, which formula is used when the distribution is bimodal?
+
+Use the **median-based formula**: $\text{Sk} = 3(\bar X - \text{Med})/\sigma$ (mode is ambiguous for bimodal).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.17.** β₁ is always:
+
+**Non-negative** ($\mu_3^2 \ge 0$). The sign of skewness is determined by γ₁ = μ₃/σ³.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.18.** For a normal distribution, β₁ = ? and β₂ = ?
+
+β₁ = **0**, β₂ = **3**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.19.** Bowley's skewness is based on which positional values?
+
+**Quartiles** (Q₁, Q₂, Q₃) — thus it is resistant to extreme values (unlike Pearson's which uses mean and SD).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-4.20.** If mode > median > mean, skewness is:
+
+**Negative** (left-skewed, long left tail).
+
+</div>
 
 ---
 
@@ -8441,93 +9088,173 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 ## K-8  Sampling Theory — 20 worked Qs
 
-> **K-8.1.** A population of 10,000 students; a sample of 100 selected. The mean of the sample is a?
->
-> **Statistic** (calculated from the sample, not the population).
+<div class="worked" markdown="block">
 
-> **K-8.2.** A complete enumeration study is called a?
->
-> **Census**.
+**K-8.1.** A population of 10,000 students; a sample of 100 selected. The mean of the sample is a?
 
-> **K-8.3.** If the population SD is 40 and the sample size is 64, what is the SE of the mean?
->
-> $40/\sqrt{64} = 40/8 = \mathbf{5}$.
+**Statistic** (calculated from the sample, not the population).
 
-> **K-8.4.** If SE = 4 when n = 25, what is the SE when n = 100?
->
-> SE scales with $1/\sqrt{n}$:
->
-> $\text{new SE} = 4 \cdot \dfrac{\sqrt{25}}{\sqrt{100}}$
->
-> $= 4 \cdot \dfrac{5}{10} = \mathbf{2}$.
+</div>
 
-> **K-8.5.** The sampling distribution of $\bar X$ has mean = ?
->
-> $\mu$ (the population mean) — because $\bar X$ is an unbiased estimator.
+<div class="worked" markdown="block">
 
-> **K-8.6.** The CLT says that for any population with finite variance, the distribution of $\bar X$ tends to be:
->
-> **Normal** as n increases.
+**K-8.2.** A complete enumeration study is called a?
 
-> **K-8.7.** Frame errors are which type of error?
->
-> **Non-sampling** error (the list of units is incomplete or outdated).
+**Census**.
 
-> **K-8.8.** Which method is used when population units are naturally ordered and every kth unit is selected?
->
-> **Systematic sampling**.
+</div>
 
-> **K-8.9.** Cluster sampling is useful when:
->
-> No complete frame exists and/or population is spread over a large area (geographic clusters).
+<div class="worked" markdown="block">
 
-> **K-8.10.** A study of drug users reaches new respondents through existing ones. Technique?
->
-> **Snowball sampling** (non-probability).
+**K-8.3.** If the population SD is 40 and the sample size is 64, what is the SE of the mean?
 
-> **K-8.11.** Which method gives a mathematical bound on sampling error?
->
-> **Probability sampling** (because random selection allows computing variance of the estimator).
+$40/\sqrt{64} = 40/8 = \mathbf{5}$.
 
-> **K-8.12.** If SE of proportion = 0.025 and p = 0.5, what is n?
->
-> $0.025 = \sqrt{0.25/n} \Rightarrow n = 0.25/0.000625 = \mathbf{400}$.
+</div>
 
-> **K-8.13.** To estimate a proportion within ±3 % at 95 % confidence (P unknown, use worst case):
->
-> $n = \left(\dfrac{1.96}{0.03}\right)^2 \times 0.25$
->
-> $= (65.33)^2 \times 0.25$
->
-> $\approx 4268 \times 0.25 = \mathbf{1067}$.
+<div class="worked" markdown="block">
 
-> **K-8.14.** Purposive (judgement) sampling produces results that are:
->
-> **Not statistically generalizable** (no probability selection → margin of error undefined).
+**K-8.4.** If SE = 4 when n = 25, what is the SE when n = 100?
 
-> **K-8.15.** Within a stratified sample, the stratum weight is proportional to its size in the population. This is called?
->
-> **Proportional allocation**.
+SE scales with $1/\sqrt{n}$:
 
-> **K-8.16.** The finite population correction factor approaches 1 when:
->
-> n is small relative to N (sampling fraction n/N → 0). In this case FPC ≈ 1 and is usually ignored.
+$\text{new SE} = 4 \cdot \dfrac{\sqrt{25}}{\sqrt{100}}$
 
-> **K-8.17.** The standard error of a statistic measures:
->
-> The **variability of that statistic** across all possible samples of the same size — i.e., how precise the estimate is.
+$= 4 \cdot \dfrac{5}{10} = \mathbf{2}$.
 
-> **K-8.18.** Non-sampling errors can occur even in a?
->
-> **Census** (because non-sampling errors come from measurement, recording, and processing — they do not require sampling).
+</div>
 
-> **K-8.19.** A respondent's refusal to answer creates which error?
->
-> **Non-response bias** — a type of non-sampling error.
+<div class="worked" markdown="block">
 
-> **K-8.20.** Stratification is most effective when:
->
-> The strata are **internally homogeneous** (variance within each stratum is low), because then the within-stratum estimates are very precise.
+**K-8.5.** The sampling distribution of $\bar X$ has mean = ?
+
+$\mu$ (the population mean) — because $\bar X$ is an unbiased estimator.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.6.** The CLT says that for any population with finite variance, the distribution of $\bar X$ tends to be:
+
+**Normal** as n increases.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.7.** Frame errors are which type of error?
+
+**Non-sampling** error (the list of units is incomplete or outdated).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.8.** Which method is used when population units are naturally ordered and every kth unit is selected?
+
+**Systematic sampling**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.9.** Cluster sampling is useful when:
+
+No complete frame exists and/or population is spread over a large area (geographic clusters).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.10.** A study of drug users reaches new respondents through existing ones. Technique?
+
+**Snowball sampling** (non-probability).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.11.** Which method gives a mathematical bound on sampling error?
+
+**Probability sampling** (because random selection allows computing variance of the estimator).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.12.** If SE of proportion = 0.025 and p = 0.5, what is n?
+
+$0.025 = \sqrt{0.25/n} \Rightarrow n = 0.25/0.000625 = \mathbf{400}$.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.13.** To estimate a proportion within ±3 % at 95 % confidence (P unknown, use worst case):
+
+$n = \left(\dfrac{1.96}{0.03}\right)^2 \times 0.25$
+
+$= (65.33)^2 \times 0.25$
+
+$\approx 4268 \times 0.25 = \mathbf{1067}$.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.14.** Purposive (judgement) sampling produces results that are:
+
+**Not statistically generalizable** (no probability selection → margin of error undefined).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.15.** Within a stratified sample, the stratum weight is proportional to its size in the population. This is called?
+
+**Proportional allocation**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.16.** The finite population correction factor approaches 1 when:
+
+n is small relative to N (sampling fraction n/N → 0). In this case FPC ≈ 1 and is usually ignored.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.17.** The standard error of a statistic measures:
+
+The **variability of that statistic** across all possible samples of the same size — i.e., how precise the estimate is.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.18.** Non-sampling errors can occur even in a?
+
+**Census** (because non-sampling errors come from measurement, recording, and processing — they do not require sampling).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.19.** A respondent's refusal to answer creates which error?
+
+**Non-response bias** — a type of non-sampling error.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-8.20.** Stratification is most effective when:
+
+The strata are **internally homogeneous** (variance within each stratum is low), because then the within-stratum estimates are very precise.
+
+</div>
 
 ---
 
@@ -8535,89 +9262,169 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 ## K-11  Time Series — 20 worked Qs
 
-> **K-11.1.** Monthly sales data for a company over 5 years is best classified as what kind of data?
->
-> **Time series** (observations on a single variable recorded at successive points in time).
+<div class="worked" markdown="block">
 
-> **K-11.2.** The seasonal component is best described as:
->
-> A **regular, predictable** fluctuation within a calendar year (months/quarters) that repeats every year.
+**K-11.1.** Monthly sales data for a company over 5 years is best classified as what kind of data?
 
-> **K-11.3.** Long-term smooth movement in time series data is called?
->
-> **Secular trend** (T).
+**Time series** (observations on a single variable recorded at successive points in time).
 
-> **K-11.4.** A business cycle is part of which component?
->
-> **Cyclical** (C) — wave-like movements lasting 2–10 years.
+</div>
 
-> **K-11.5.** Which component covers events like floods, earthquakes, elections?
->
-> **Irregular (I)** — unpredictable, no fixed pattern.
+<div class="worked" markdown="block">
 
-> **K-11.6.** Sales (in units): 120, 130, 125, 135, 140. Compute the 3-year centred moving average for years 2, 3, 4.
->
-> Year 2 MA = (120 + 130 + 125)/3 = **125**.
-> Year 3 MA = (130 + 125 + 135)/3 = **130**.
-> Year 4 MA = (125 + 135 + 140)/3 = **133.33**.
+**K-11.2.** The seasonal component is best described as:
 
-> **K-11.7.** In the semi-average method with 8 years of data, the trend line uses?
->
-> Mean of years 1–4 and mean of years 5–8. Place each average at the midpoint of its half (year 2.5 and year 6.5). Draw the line.
+A **regular, predictable** fluctuation within a calendar year (months/quarters) that repeats every year.
 
-> **K-11.8.** A 4-year moving average of data 10, 14, 18, 12, 20, 16, 24, 18 — first two 4-yr MA values?
->
-> First: (10+14+18+12)/4 = **13.5**. Second: (14+18+12+20)/4 = **16**.
->
-> Centred: (13.5 + 16)/2 = **14.75** (placed at year 3).
+</div>
 
-> **K-11.9.** A trend line $\hat Y = 50 + 3X$ with X coded such that X=0 is 2020 and unit X=1 is 1 year. Predicted value for 2024?
->
-> X = 4. $\hat Y = 50 + 12 = \mathbf{62}$.
+<div class="worked" markdown="block">
 
-> **K-11.10.** Seasonal index = 112 for Q2. It means?
->
-> Q2 values are **12 % above** the annual average in that quarter.
+**K-11.3.** Long-term smooth movement in time series data is called?
 
-> **K-11.11.** Seasonal index = 85 for a quarter. It means?
->
-> That quarter is **15 % below** the overall trend/average.
+**Secular trend** (T).
 
-> **K-11.12.** The sum of seasonal indices over 4 quarters should equal 400. A set of indices is 95, 110, 105, 92. Their sum is 402. Adjusted index for Q1?
->
-> Adjustment factor = 400/402. Q1 adjusted = 95 × 400/402 ≈ **94.5**.
+</div>
 
-> **K-11.13.** To isolate the trend from a multiplicative model, you:
->
-> Divide Y by the seasonal index: T × C × I = Y / S. Further smoothing removes C and I → pure trend.
+<div class="worked" markdown="block">
 
-> **K-11.14.** The least-squares method of trend fitting minimises?
->
-> $\sum (Y - \hat Y)^2$ (sum of squared deviations between actual and estimated trend values).
+**K-11.4.** A business cycle is part of which component?
 
-> **K-11.15.** A 3-point moving average of a series with 10 data points produces how many MA values?
->
-> 10 − 3 + 1 = **8** MA values (the first and last points are lost).
+**Cyclical** (C) — wave-like movements lasting 2–10 years.
 
-> **K-11.16.** Method of simple averages for seasonal indices: what does each "seasonal average" use?
->
-> The average of observations for that particular season (e.g., all January values, then all February values, etc.) across all years.
+</div>
 
-> **K-11.17.** Why is the multiplicative model more commonly used than the additive model?
->
-> In most real-world series, seasonal **fluctuations grow proportionally** with the level (trend). Multiplicative correctly captures this; additive assumes constant seasonal swings.
+<div class="worked" markdown="block">
 
-> **K-11.18.** A moving average with large period (e.g., 12-month) better smooths:
->
-> Short-term fluctuations (seasonal and irregular), leaving only the long-term trend. The penalty: more observations lost at each end.
+**K-11.5.** Which component covers events like floods, earthquakes, elections?
 
-> **K-11.19.** Moving average "loses" observations. For a 5-point MA on a 20-point series, how many points remain?
->
-> 20 − (5 − 1) = **16** (2 lost at each end).
+**Irregular (I)** — unpredictable, no fixed pattern.
 
-> **K-11.20.** Why does a semi-average trend line use two points and not one?
->
-> One point defines a value (not a direction). **Two points determine a line** (slope and intercept). The semi-average method needs at least two summary means to define the trend line.
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.6.** Sales (in units): 120, 130, 125, 135, 140. Compute the 3-year centred moving average for years 2, 3, 4.
+
+Year 2 MA = (120 + 130 + 125)/3 = **125**.
+Year 3 MA = (130 + 125 + 135)/3 = **130**.
+Year 4 MA = (125 + 135 + 140)/3 = **133.33**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.7.** In the semi-average method with 8 years of data, the trend line uses?
+
+Mean of years 1–4 and mean of years 5–8. Place each average at the midpoint of its half (year 2.5 and year 6.5). Draw the line.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.8.** A 4-year moving average of data 10, 14, 18, 12, 20, 16, 24, 18 — first two 4-yr MA values?
+
+First: (10+14+18+12)/4 = **13.5**. Second: (14+18+12+20)/4 = **16**.
+
+Centred: (13.5 + 16)/2 = **14.75** (placed at year 3).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.9.** A trend line $\hat Y = 50 + 3X$ with X coded such that X=0 is 2020 and unit X=1 is 1 year. Predicted value for 2024?
+
+X = 4. $\hat Y = 50 + 12 = \mathbf{62}$.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.10.** Seasonal index = 112 for Q2. It means?
+
+Q2 values are **12 % above** the annual average in that quarter.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.11.** Seasonal index = 85 for a quarter. It means?
+
+That quarter is **15 % below** the overall trend/average.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.12.** The sum of seasonal indices over 4 quarters should equal 400. A set of indices is 95, 110, 105, 92. Their sum is 402. Adjusted index for Q1?
+
+Adjustment factor = 400/402. Q1 adjusted = 95 × 400/402 ≈ **94.5**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.13.** To isolate the trend from a multiplicative model, you:
+
+Divide Y by the seasonal index: T × C × I = Y / S. Further smoothing removes C and I → pure trend.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.14.** The least-squares method of trend fitting minimises?
+
+$\sum (Y - \hat Y)^2$ (sum of squared deviations between actual and estimated trend values).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.15.** A 3-point moving average of a series with 10 data points produces how many MA values?
+
+10 − 3 + 1 = **8** MA values (the first and last points are lost).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.16.** Method of simple averages for seasonal indices: what does each "seasonal average" use?
+
+The average of observations for that particular season (e.g., all January values, then all February values, etc.) across all years.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.17.** Why is the multiplicative model more commonly used than the additive model?
+
+In most real-world series, seasonal **fluctuations grow proportionally** with the level (trend). Multiplicative correctly captures this; additive assumes constant seasonal swings.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.18.** A moving average with large period (e.g., 12-month) better smooths:
+
+Short-term fluctuations (seasonal and irregular), leaving only the long-term trend. The penalty: more observations lost at each end.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.19.** Moving average "loses" observations. For a 5-point MA on a 20-point series, how many points remain?
+
+20 − (5 − 1) = **16** (2 lost at each end).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-11.20.** Why does a semi-average trend line use two points and not one?
+
+One point defines a value (not a direction). **Two points determine a line** (slope and intercept). The semi-average method needs at least two summary means to define the trend line.
+
+</div>
 
 ---
 
@@ -8625,93 +9432,173 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 ## K-12  Index Numbers — 20 worked Qs
 
-> **K-12.1.** Compute Laspeyres price index from: P₀ = (10, 6), Q₀ = (4, 5), P₁ = (12, 8).
->
-> Numerator: $12 \times 4 + 8 \times 5 = 48 + 40 = 88$
->
-> Denominator: $10 \times 4 + 6 \times 5 = 40 + 30 = 70$
->
-> $L = 88/70 \times 100 = \mathbf{125.71}$.
+<div class="worked" markdown="block">
 
-> **K-12.2.** Add Q₁ = (5, 4) to K-12.1 and compute Paasche.
->
-> Numerator: $12 \times 5 + 8 \times 4 = 60 + 32 = 92$
->
-> Denominator: $10 \times 5 + 6 \times 4 = 50 + 24 = 74$
->
-> $P = 92/74 \times 100 = \mathbf{124.32}$.
+**K-12.1.** Compute Laspeyres price index from: P₀ = (10, 6), Q₀ = (4, 5), P₁ = (12, 8).
 
-> **K-12.3.** Fisher for K-12.1/2?
->
-> √(125.71 × 124.32) = √(15634) ≈ **125.01**.
+Numerator: $12 \times 4 + 8 \times 5 = 48 + 40 = 88$
 
-> **K-12.4.** The time reversal test: P₀₁ × P₁₀ = ?
->
-> **1** (or 100 if expressed as index number). Fisher satisfies this.
+Denominator: $10 \times 4 + 6 \times 5 = 40 + 30 = 70$
 
-> **K-12.5.** Factor reversal test: P₀₁ × Q₀₁ = ?
->
-> $V_{01}$ (the value index). Only Fisher satisfies both time and factor reversal simultaneously.
+$L = 88/70 \times 100 = \mathbf{125.71}$.
 
-> **K-12.6.** An index number of 140 means prices are now what % of base-year prices?
->
-> **140 %** of base, i.e., a **40 % increase**.
+</div>
 
-> **K-12.7.** Index in 2010 = 100 (base 2000). Index in 2015 = 150 (base 2000). Shift base to 2010.
->
-> Index₂₀₁₅ (base 2010) = 150/100 × 100 = **150**.
+<div class="worked" markdown="block">
 
-> **K-12.8.** An index series is 80 (2018), 100 (2020 = base), 110 (2022). Purchasing power of money in 2022?
->
-> 1/110 × 100 = **90.9** paise per rupee of 2020 value.
+**K-12.2.** Add Q₁ = (5, 4) to K-12.1 and compute Paasche.
 
-> **K-12.9.** A worker's money wage in 2023 is ₹20,000. CPI 2023 = 250 (base 2010 = 100). Real wage in 2010 rupees?
->
-> Real wage = 20000/250 × 100 = **₹8,000**.
+Numerator: $12 \times 5 + 8 \times 4 = 60 + 32 = 92$
 
-> **K-12.10.** In the family budget method, the weight W for each item is?
->
-> $W = P_0 Q_0$ (base-year expenditure on that item).
+Denominator: $10 \times 5 + 6 \times 4 = 50 + 24 = 74$
 
-> **K-12.11.** The weighted AM of price relatives (family budget method) formula?
->
-> $ \dfrac{\sum W (P_1/P_0) \times 100}{\sum W} $, where W = P₀ Q₀.
+$P = 92/74 \times 100 = \mathbf{124.32}$.
 
-> **K-12.12.** A simple aggregate price index ignores:
->
-> **Quantities / weights** of items — items with high prices dominate regardless of importance.
+</div>
 
-> **K-12.13.** Walsh index uses which weights?
->
-> Geometric mean of quantities: $\sqrt{Q_0 Q_1}$.
+<div class="worked" markdown="block">
 
-> **K-12.14.** Splicing is done when:
->
-> Two index series have a common **overlap year** and need to be joined into one continuous series.
+**K-12.3.** Fisher for K-12.1/2?
 
-> **K-12.15.** A price index of 200 and a quantity index of 150 (both with the same formula). Value index approximately?
->
-> Under factor-reversal, V₀₁ = P₀₁ × Q₀₁ = 200 × 150 / 100 (adjusting for base) = **300**. (Direct check: if both are Fisher, product = value index.)
+√(125.71 × 124.32) = √(15634) ≈ **125.01**.
 
-> **K-12.16.** The Consumer Price Index measures:
->
-> The average change in prices paid by a **defined group of consumers** for a fixed basket of goods and services. (Not WPI, which is producer/trade prices.)
+</div>
 
-> **K-12.17.** WPI differs from CPI primarily in:
->
-> WPI measures price change at the **wholesale/manufacturer level**; CPI measures at the **retail / consumer level**. Their baskets differ; CPI includes services more heavily.
+<div class="worked" markdown="block">
 
-> **K-12.18.** An index of 160 in period 1 and 200 in period 2 (same base). Relative change from period 1 to period 2?
->
-> (200 − 160)/160 = 40/160 = **25 %** increase.
+**K-12.4.** The time reversal test: P₀₁ × P₁₀ = ?
 
-> **K-12.19.** Deflating a nominal GDP series uses which index?
->
-> A **price index** (like the GDP deflator or WPI). Real GDP = Nominal GDP / Price Index × 100.
+**1** (or 100 if expressed as index number). Fisher satisfies this.
 
-> **K-12.20.** A 3-item Laspeyres is 110. If ΣP₁Q₀ = 440 and ΣP₀Q₀ = 400. Verify.
->
-> 440/400 × 100 = **110** ✓.
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.5.** Factor reversal test: P₀₁ × Q₀₁ = ?
+
+$V_{01}$ (the value index). Only Fisher satisfies both time and factor reversal simultaneously.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.6.** An index number of 140 means prices are now what % of base-year prices?
+
+**140 %** of base, i.e., a **40 % increase**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.7.** Index in 2010 = 100 (base 2000). Index in 2015 = 150 (base 2000). Shift base to 2010.
+
+Index₂₀₁₅ (base 2010) = 150/100 × 100 = **150**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.8.** An index series is 80 (2018), 100 (2020 = base), 110 (2022). Purchasing power of money in 2022?
+
+1/110 × 100 = **90.9** paise per rupee of 2020 value.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.9.** A worker's money wage in 2023 is ₹20,000. CPI 2023 = 250 (base 2010 = 100). Real wage in 2010 rupees?
+
+Real wage = 20000/250 × 100 = **₹8,000**.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.10.** In the family budget method, the weight W for each item is?
+
+$W = P_0 Q_0$ (base-year expenditure on that item).
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.11.** The weighted AM of price relatives (family budget method) formula?
+
+$ \dfrac{\sum W (P_1/P_0) \times 100}{\sum W} $, where W = P₀ Q₀.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.12.** A simple aggregate price index ignores:
+
+**Quantities / weights** of items — items with high prices dominate regardless of importance.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.13.** Walsh index uses which weights?
+
+Geometric mean of quantities: $\sqrt{Q_0 Q_1}$.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.14.** Splicing is done when:
+
+Two index series have a common **overlap year** and need to be joined into one continuous series.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.15.** A price index of 200 and a quantity index of 150 (both with the same formula). Value index approximately?
+
+Under factor-reversal, V₀₁ = P₀₁ × Q₀₁ = 200 × 150 / 100 (adjusting for base) = **300**. (Direct check: if both are Fisher, product = value index.)
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.16.** The Consumer Price Index measures:
+
+The average change in prices paid by a **defined group of consumers** for a fixed basket of goods and services. (Not WPI, which is producer/trade prices.)
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.17.** WPI differs from CPI primarily in:
+
+WPI measures price change at the **wholesale/manufacturer level**; CPI measures at the **retail / consumer level**. Their baskets differ; CPI includes services more heavily.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.18.** An index of 160 in period 1 and 200 in period 2 (same base). Relative change from period 1 to period 2?
+
+(200 − 160)/160 = 40/160 = **25 %** increase.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.19.** Deflating a nominal GDP series uses which index?
+
+A **price index** (like the GDP deflator or WPI). Real GDP = Nominal GDP / Price Index × 100.
+
+</div>
+
+<div class="worked" markdown="block">
+
+**K-12.20.** A 3-item Laspeyres is 110. If ΣP₁Q₀ = 440 and ΣP₀Q₀ = 400. Verify.
+
+440/400 × 100 = **110** ✓.
+
+</div>
 
 ---
 
