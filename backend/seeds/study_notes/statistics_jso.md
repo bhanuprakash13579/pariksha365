@@ -194,6 +194,154 @@ graph LR
 | Pie chart | Part-of-whole (each slice = % of total) | Proportions add to 100% |
 | Frequency Curve | Smooth theoretical shape | Large datasets; theoretical models |
 
+**What each graph looks like — visual gallery:**
+
+<div style="margin: 14pt 0;">
+<svg width="530" height="390" viewBox="0 0 530 390" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="8.5">
+
+  <!-- ══════════════════════════════════════════════════════════
+       ROW 1 — Histogram | Frequency Polygon | Frequency Curve
+       ══════════════════════════════════════════════════════════ -->
+
+  <!-- ─── 1. HISTOGRAM ─── -->
+  <rect x="5" y="5" width="155" height="115" rx="3" fill="#f0f9ff" stroke="#0284c7" stroke-width="1"/>
+  <text x="82" y="17" text-anchor="middle" fill="#0284c7" font-weight="bold">1. Histogram</text>
+  <!-- axes -->
+  <line x1="20" y1="108" x2="150" y2="108" stroke="#374151" stroke-width="1.2"/>
+  <line x1="20" y1="22"  x2="20"  y2="108" stroke="#374151" stroke-width="1.2"/>
+  <!-- bars — touching! -->
+  <rect x="20" y="90" width="22" height="18" fill="#93c5fd" stroke="#2563eb" stroke-width="0.8"/>
+  <rect x="42" y="68" width="22" height="40" fill="#60a5fa" stroke="#2563eb" stroke-width="0.8"/>
+  <rect x="64" y="38" width="22" height="70" fill="#3b82f6" stroke="#2563eb" stroke-width="0.8"/>
+  <rect x="86" y="55" width="22" height="53" fill="#60a5fa" stroke="#2563eb" stroke-width="0.8"/>
+  <rect x="108" y="80" width="22" height="28" fill="#93c5fd" stroke="#2563eb" stroke-width="0.8"/>
+  <text x="82" y="120" text-anchor="middle" fill="#374151" font-size="7.5">Bars TOUCH · freq on y-axis</text>
+
+  <!-- ─── 2. FREQUENCY POLYGON ─── -->
+  <rect x="185" y="5" width="155" height="115" rx="3" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <text x="262" y="17" text-anchor="middle" fill="#16a34a" font-weight="bold">2. Frequency Polygon</text>
+  <!-- axes -->
+  <line x1="200" y1="108" x2="330" y2="108" stroke="#374151" stroke-width="1.2"/>
+  <line x1="200" y1="22"  x2="200" y2="108" stroke="#374151" stroke-width="1.2"/>
+  <!-- ghost histogram bars (light) -->
+  <rect x="200" y="90" width="22" height="18" fill="#bbf7d0" stroke="none"/>
+  <rect x="222" y="68" width="22" height="40" fill="#bbf7d0" stroke="none"/>
+  <rect x="244" y="38" width="22" height="70" fill="#bbf7d0" stroke="none"/>
+  <rect x="266" y="55" width="22" height="53" fill="#bbf7d0" stroke="none"/>
+  <rect x="288" y="80" width="22" height="28" fill="#bbf7d0" stroke="none"/>
+  <!-- polygon joining class marks (centres of bars) -->
+  <polyline points="189,108 211,99 233,77 255,47 277,64 299,93 321,108"
+            fill="none" stroke="#16a34a" stroke-width="2" stroke-linejoin="round"/>
+  <!-- dots at class marks -->
+  <circle cx="211" cy="99" r="2.5" fill="#15803d"/>
+  <circle cx="233" cy="77" r="2.5" fill="#15803d"/>
+  <circle cx="255" cy="47" r="2.5" fill="#15803d"/>
+  <circle cx="277" cy="64" r="2.5" fill="#15803d"/>
+  <circle cx="299" cy="93" r="2.5" fill="#15803d"/>
+  <text x="262" y="120" text-anchor="middle" fill="#374151" font-size="7.5">Join class MARKS with lines</text>
+
+  <!-- ─── 3. FREQUENCY CURVE ─── -->
+  <rect x="365" y="5" width="155" height="115" rx="3" fill="#faf5ff" stroke="#7c3aed" stroke-width="1"/>
+  <text x="442" y="17" text-anchor="middle" fill="#7c3aed" font-weight="bold">3. Frequency Curve</text>
+  <!-- axes -->
+  <line x1="380" y1="108" x2="510" y2="108" stroke="#374151" stroke-width="1.2"/>
+  <line x1="380" y1="22"  x2="380" y2="108" stroke="#374151" stroke-width="1.2"/>
+  <!-- smooth bell curve -->
+  <path d="M 383,106 C 395,106 408,100 420,86 C 432,70 438,50 442,32 C 446,50 452,70 464,86 C 476,100 490,106 500,106"
+        fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="442" y="120" text-anchor="middle" fill="#374151" font-size="7.5">Smooth polygon → theoretical shape</text>
+
+  <!-- ══════════════════════════════════════════════════════════
+       ROW 2 — Less-than Ogive | More-than Ogive | Crossed
+       ══════════════════════════════════════════════════════════ -->
+
+  <!-- ─── 4. LESS-THAN OGIVE ─── -->
+  <rect x="5" y="135" width="155" height="115" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+  <text x="82" y="147" text-anchor="middle" fill="#2563eb" font-weight="bold">4. Less-than Ogive</text>
+  <!-- axes -->
+  <line x1="20" y1="238" x2="150" y2="238" stroke="#374151" stroke-width="1.2"/>
+  <line x1="20" y1="152" x2="20"  y2="238" stroke="#374151" stroke-width="1.2"/>
+  <!-- rising S-curve -->
+  <polyline points="20,238 45,235 70,225 95,200 120,170 140,152 150,148"
+            fill="none" stroke="#2563eb" stroke-width="2" stroke-linejoin="round"/>
+  <!-- y-label -->
+  <text x="17" y="156" text-anchor="end" fill="#374151" font-size="7">N</text>
+  <text x="17" y="238" text-anchor="end" fill="#374151" font-size="7">0</text>
+  <text x="82" y="250" text-anchor="middle" fill="#374151" font-size="7.5">Cumulative freq RISES →</text>
+
+  <!-- ─── 5. MORE-THAN OGIVE ─── -->
+  <rect x="185" y="135" width="155" height="115" rx="3" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+  <text x="262" y="147" text-anchor="middle" fill="#dc2626" font-weight="bold">5. More-than Ogive</text>
+  <!-- axes -->
+  <line x1="200" y1="238" x2="330" y2="238" stroke="#374151" stroke-width="1.2"/>
+  <line x1="200" y1="152" x2="200" y2="238" stroke="#374151" stroke-width="1.2"/>
+  <!-- falling S-curve -->
+  <polyline points="200,148 210,152 230,170 255,200 280,225 305,235 330,238"
+            fill="none" stroke="#dc2626" stroke-width="2" stroke-linejoin="round"/>
+  <text x="197" y="156" text-anchor="end" fill="#374151" font-size="7">N</text>
+  <text x="197" y="238" text-anchor="end" fill="#374151" font-size="7">0</text>
+  <text x="262" y="250" text-anchor="middle" fill="#374151" font-size="7.5">Cumulative freq FALLS →</text>
+
+  <!-- ─── 6. BOTH OGIVES CROSSED (median) ─── -->
+  <rect x="365" y="135" width="155" height="115" rx="3" fill="#f0fdf4" stroke="#15803d" stroke-width="1"/>
+  <text x="442" y="147" text-anchor="middle" fill="#15803d" font-weight="bold">6. Ogives crossed</text>
+  <!-- axes -->
+  <line x1="380" y1="238" x2="510" y2="238" stroke="#374151" stroke-width="1.2"/>
+  <line x1="380" y1="152" x2="380" y2="238" stroke="#374151" stroke-width="1.2"/>
+  <!-- less-than (blue) -->
+  <polyline points="380,238 405,235 430,220 455,200 480,175 500,160 510,155"
+            fill="none" stroke="#2563eb" stroke-width="1.8"/>
+  <!-- more-than (red) -->
+  <polyline points="380,155 390,160 410,175 435,200 460,220 485,235 510,238"
+            fill="none" stroke="#dc2626" stroke-width="1.8"/>
+  <!-- intersection = median -->
+  <circle cx="445" cy="196" r="3.5" fill="#15803d"/>
+  <line x1="445" y1="196" x2="445" y2="238" stroke="#15803d" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <text x="447" y="236" fill="#15803d" font-size="7">Median</text>
+  <text x="442" y="250" text-anchor="middle" fill="#374151" font-size="7.5">Intersection = Median</text>
+
+  <!-- ══════════════════════════════════════════════════════════
+       ROW 3 — Bar Chart | Pie Chart
+       ══════════════════════════════════════════════════════════ -->
+
+  <!-- ─── 7. BAR CHART ─── -->
+  <rect x="85" y="265" width="155" height="115" rx="3" fill="#fffbeb" stroke="#b45309" stroke-width="1"/>
+  <text x="162" y="277" text-anchor="middle" fill="#b45309" font-weight="bold">7. Bar Chart</text>
+  <!-- axes -->
+  <line x1="100" y1="368" x2="230" y2="368" stroke="#374151" stroke-width="1.2"/>
+  <line x1="100" y1="282" x2="100" y2="368" stroke="#374151" stroke-width="1.2"/>
+  <!-- bars with GAPS between them -->
+  <rect x="107" y="318" width="25" height="50" fill="#fbbf24" stroke="#b45309" stroke-width="0.8"/>
+  <rect x="142" y="295" width="25" height="73" fill="#f59e0b" stroke="#b45309" stroke-width="0.8"/>
+  <rect x="177" y="335" width="25" height="33" fill="#fbbf24" stroke="#b45309" stroke-width="0.8"/>
+  <!-- x labels -->
+  <text x="120" y="380" text-anchor="middle" fill="#374151" font-size="7">A</text>
+  <text x="155" y="380" text-anchor="middle" fill="#374151" font-size="7">B</text>
+  <text x="190" y="380" text-anchor="middle" fill="#374151" font-size="7">C</text>
+  <text x="162" y="390" text-anchor="middle" fill="#374151" font-size="7.5">Bars DON'T touch · discrete data</text>
+
+  <!-- ─── 8. PIE CHART ─── -->
+  <rect x="280" y="265" width="155" height="115" rx="3" fill="#fff7ed" stroke="#ea580c" stroke-width="1"/>
+  <text x="357" y="277" text-anchor="middle" fill="#ea580c" font-weight="bold">8. Pie Chart</text>
+  <!-- pie slices centred at 357, 325, radius 40 -->
+  <!-- Slice 1: 40% = 144° (0° to 144°) -->
+  <path d="M 357,325 L 397,325 A 40,40 0 0 1 326,362 Z" fill="#fb923c" stroke="white" stroke-width="1.5"/>
+  <!-- Slice 2: 30% = 108° (144° to 252°) -->
+  <path d="M 357,325 L 326,362 A 40,40 0 0 1 317,285 Z" fill="#fbbf24" stroke="white" stroke-width="1.5"/>
+  <!-- Slice 3: 20% = 72° (252° to 324°) -->
+  <path d="M 357,325 L 317,285 A 40,40 0 0 1 357,285 Z" fill="#34d399" stroke="white" stroke-width="1.5"/>
+  <!-- Slice 4: 10% = 36° (324° to 360°) -->
+  <path d="M 357,325 L 357,285 A 40,40 0 0 1 397,325 Z" fill="#818cf8" stroke="white" stroke-width="1.5"/>
+  <!-- labels -->
+  <text x="375" y="348" fill="white" font-size="7" font-weight="bold">40%</text>
+  <text x="326" y="355" fill="white" font-size="7" font-weight="bold">30%</text>
+  <text x="324" y="305" fill="white" font-size="7" font-weight="bold">20%</text>
+  <text x="358" y="298" fill="white" font-size="7" font-weight="bold">10%</text>
+  <text x="357" y="390" text-anchor="middle" fill="#374151" font-size="7.5">Each slice = % of whole (sum = 100%)</text>
+
+</svg>
+</div>
+
 <div class="keypoint">
 
 **The histogram trap — unequal class widths.**
