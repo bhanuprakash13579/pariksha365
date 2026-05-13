@@ -212,8 +212,8 @@ CSS = textwrap.dedent("""
     color: #6c1d5f;
     border-bottom: 2px solid #6c1d5f;
     padding-bottom: 3pt;
-    margin-top: 6pt;
-    margin-bottom: 6pt;
+    margin-top: 2pt;
+    margin-bottom: 5pt;
     page-break-after: avoid;
     font-size: 17pt;
     font-weight: 700;
@@ -548,8 +548,7 @@ CSS = textwrap.dedent("""
   }
 
   /* ── Page break controls ── */
-  h1 { page-break-before: always; }
-  h1:first-of-type { page-break-before: avoid; }
+  /* h1 page breaks are driven by explicit \newpage tags in the markdown, not CSS */
   pre, .mermaid { page-break-inside: avoid; }
   blockquote { page-break-inside: avoid; }
   table { page-break-inside: auto; }

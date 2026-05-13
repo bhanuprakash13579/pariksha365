@@ -6262,11 +6262,7 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 # APPENDIX E — Extended Drill Pack (deep dive on the 6 CRITICAL chapters)
 
-> **Why this pack exists.** 60 % of the JSO paper comes from six chapters. The chapter mini-mocks give you a taste; this pack gives you mastery. Aim: cover **every PYQ-frame** an SSC examiner has used in the last 6 papers. Solve closed-book; re-read the chapter only on a wrong answer.
-
----
-
-\newpage
+**60 % of the JSO paper comes from six chapters.** The mini-mocks give you a taste; this pack gives mastery. Solve closed-book; re-read the chapter only on a wrong answer.
 
 ## E-2  Central Tendency — extended drill (25 worked Qs)
 
