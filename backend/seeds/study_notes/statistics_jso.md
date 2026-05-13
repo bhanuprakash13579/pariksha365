@@ -1897,6 +1897,41 @@ $$
 | > 3 | > 0 | thinner peak, fatter tails | **Leptokurtic** |
 | < 3 | < 0 | flatter peak | **Platykurtic** |
 
+<div style="text-align:center; margin:12pt 0;">
+<svg width="420" height="180" viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
+  <!-- axis -->
+  <line x1="20" y1="155" x2="405" y2="155" stroke="#374151" stroke-width="1.5"/>
+  <line x1="210" y1="10" x2="210" y2="158" stroke="#d1d5db" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- Platykurtic (flat) — blue -->
+  <path d="M 60,150 C 100,148 140,130 170,95 C 185,78 198,65 210,62
+           C 222,65 235,78 250,95 C 280,130 320,148 360,150"
+        fill="none" stroke="#2563eb" stroke-width="1.8" stroke-dasharray="6,3"/>
+
+  <!-- Mesokurtic (normal) — green -->
+  <path d="M 90,150 C 120,148 150,130 175,100 C 192,78 204,52 210,38
+           C 216,52 228,78 245,100 C 270,130 300,148 330,150"
+        fill="none" stroke="#16a34a" stroke-width="2.2"/>
+
+  <!-- Leptokurtic (tall/sharp) — red -->
+  <path d="M 140,150 C 160,148 178,130 193,105 C 202,88 207,60 210,18
+           C 213,60 218,88 227,105 C 242,130 260,148 280,150"
+        fill="none" stroke="#dc2626" stroke-width="1.8"/>
+
+  <!-- labels -->
+  <text x="55"  y="143" fill="#2563eb" font-size="9">Platykurtic</text>
+  <text x="55"  y="154" fill="#2563eb" font-size="9">(β₂ &lt; 3, flat)</text>
+  <text x="175" y="172" fill="#16a34a" font-size="9" text-anchor="middle">Mesokurtic</text>
+  <text x="175" y="181" fill="#16a34a" font-size="9" text-anchor="middle">(β₂ = 3, normal)</text>
+  <text x="310" y="143" fill="#dc2626" font-size="9" text-anchor="end">Leptokurtic</text>
+  <text x="310" y="154" fill="#dc2626" font-size="9" text-anchor="end">(β₂ &gt; 3, sharp)</text>
+
+  <!-- shared mean marker -->
+  <line x1="210" y1="150" x2="210" y2="158" stroke="#374151" stroke-width="1.5"/>
+  <text x="210" y="168" text-anchor="middle" fill="#374151">μ (same for all three)</text>
+</svg>
+</div>
+
 <div class="mnemonic"><strong>Memory hook.</strong> "<strong>Lepto</strong> = <strong>L</strong>eaping high (sharper peak)." "<strong>Platy</strong> = <strong>P</strong>lateau (flat)." "<strong>Meso</strong> = middle = normal."</div>
 
 ## 4.5 Sheppard's correction (rare but asked)
@@ -3284,6 +3319,37 @@ For independent $X, Y$: $ E[XY] = E[X] E[Y] $ and $ \text{Var}(X + Y) = \text{Va
 
 **When to use:** $n$ independent Bernoulli trials, fixed $p$, count of successes.
 
+**Binomial B(10, 0.3) — shape (right-skewed when p < 0.5):**
+
+<div style="text-align:center; margin:10pt 0;">
+<svg width="380" height="130" viewBox="0 0 380 130" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="9">
+  <!-- axis -->
+  <line x1="30" y1="105" x2="365" y2="105" stroke="#374151" stroke-width="1.5"/>
+  <!-- bars for B(10,0.3): r=0..6 meaningful; heights proportional to pmf -->
+  <!-- P values approx: 0=.028,1=.121,2=.233,3=.267,4=.200,5=.103,6=.037 scaled to 95 max -->
+  <rect x="38"  y="95"  width="22" height="10"  fill="#93c5fd" stroke="#2563eb" stroke-width="0.8"/>
+  <rect x="68"  y="62"  width="22" height="43"  fill="#60a5fa" stroke="#2563eb" stroke-width="0.8"/>
+  <rect x="98"  y="23"  width="22" height="82"  fill="#3b82f6" stroke="#2563eb" stroke-width="0.8"/>
+  <rect x="128" y="11"  width="22" height="94"  fill="#2563eb" stroke="#1d4ed8" stroke-width="0.8"/>
+  <rect x="158" y="34"  width="22" height="71"  fill="#3b82f6" stroke="#2563eb" stroke-width="0.8"/>
+  <rect x="188" y="68"  width="22" height="37"  fill="#60a5fa" stroke="#2563eb" stroke-width="0.8"/>
+  <rect x="218" y="92"  width="22" height="13"  fill="#93c5fd" stroke="#2563eb" stroke-width="0.8"/>
+  <!-- x labels -->
+  <text x="49"  y="118" text-anchor="middle" fill="#374151">0</text>
+  <text x="79"  y="118" text-anchor="middle" fill="#374151">1</text>
+  <text x="109" y="118" text-anchor="middle" fill="#374151">2</text>
+  <text x="139" y="118" text-anchor="middle" fill="#374151">3</text>
+  <text x="169" y="118" text-anchor="middle" fill="#374151">4</text>
+  <text x="199" y="118" text-anchor="middle" fill="#374151">5</text>
+  <text x="229" y="118" text-anchor="middle" fill="#374151">6</text>
+  <text x="190" y="128" text-anchor="middle" fill="#1d4ed8">r (number of successes)</text>
+  <text x="300" y="40"  fill="#1d4ed8" font-size="9" font-weight="bold">B(10, 0.3)</text>
+  <text x="300" y="52"  fill="#374151" font-size="8">Mean = np = 3</text>
+  <text x="300" y="63"  fill="#374151" font-size="8">Right-skewed (p &lt; 0.5)</text>
+  <text x="28"  y="60"  text-anchor="end" fill="#374151" font-size="8">P(r)</text>
+</svg>
+</div>
+
 ### Poisson $ P(\lambda) $
 
 | Quantity | Formula |
@@ -3294,6 +3360,37 @@ For independent $X, Y$: $ E[XY] = E[X] E[Y] $ and $ \text{Var}(X + Y) = \text{Va
 | SD | $ \sqrt{\lambda} $ |
 
 **When to use:** Rare events in a fixed interval (calls per minute, defects per metre). Also approximates $B(n,p)$ when $n \to \infty, p \to 0, np = \lambda$.
+
+**Poisson P(λ = 3) — shape (right-skewed for small λ):**
+
+<div style="text-align:center; margin:10pt 0;">
+<svg width="380" height="130" viewBox="0 0 380 130" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="9">
+  <line x1="30" y1="105" x2="365" y2="105" stroke="#374151" stroke-width="1.5"/>
+  <!-- Poisson(3): r=0..7; P≈ 0=.050,1=.149,2=.224,3=.224,4=.168,5=.101,6=.050,7=.022 scaled to 95 -->
+  <rect x="38"  y="87"  width="22" height="18"  fill="#a7f3d0" stroke="#059669" stroke-width="0.8"/>
+  <rect x="68"  y="63"  width="22" height="42"  fill="#6ee7b7" stroke="#059669" stroke-width="0.8"/>
+  <rect x="98"  y="42"  width="22" height="63"  fill="#34d399" stroke="#059669" stroke-width="0.8"/>
+  <rect x="128" y="42"  width="22" height="63"  fill="#10b981" stroke="#059669" stroke-width="0.8"/>
+  <rect x="158" y="58"  width="22" height="47"  fill="#34d399" stroke="#059669" stroke-width="0.8"/>
+  <rect x="188" y="77"  width="22" height="28"  fill="#6ee7b7" stroke="#059669" stroke-width="0.8"/>
+  <rect x="218" y="91"  width="22" height="14"  fill="#a7f3d0" stroke="#059669" stroke-width="0.8"/>
+  <rect x="248" y="99"  width="22" height="6"   fill="#d1fae5" stroke="#059669" stroke-width="0.8"/>
+  <!-- x labels -->
+  <text x="49"  y="118" text-anchor="middle" fill="#374151">0</text>
+  <text x="79"  y="118" text-anchor="middle" fill="#374151">1</text>
+  <text x="109" y="118" text-anchor="middle" fill="#374151">2</text>
+  <text x="139" y="118" text-anchor="middle" fill="#374151">3</text>
+  <text x="169" y="118" text-anchor="middle" fill="#374151">4</text>
+  <text x="199" y="118" text-anchor="middle" fill="#374151">5</text>
+  <text x="229" y="118" text-anchor="middle" fill="#374151">6</text>
+  <text x="259" y="118" text-anchor="middle" fill="#374151">7</text>
+  <text x="190" y="128" text-anchor="middle" fill="#059669">r (count of events)</text>
+  <text x="300" y="40"  fill="#059669" font-weight="bold">P(λ = 3)</text>
+  <text x="300" y="52"  fill="#374151" font-size="8">Mean = Var = λ = 3</text>
+  <text x="300" y="63"  fill="#374151" font-size="8">Mode = 2 or 3 (floor(λ))</text>
+  <text x="28"  y="60"  text-anchor="end" fill="#374151" font-size="8">P(r)</text>
+</svg>
+</div>
 
 ### Normal $ N(\mu, \sigma^2) $
 
@@ -4260,6 +4357,65 @@ Common multipliers:
 | Right-tail | χ² | $\chi^2 > \chi^2_{0.05, df}$ — table |
 | F | upper tail | $F > F_{0.05, df_1, df_2}$ — table |
 
+**Rejection zones — where to shade:**
+
+<div style="text-align:center; margin:12pt 0;">
+<svg width="480" height="230" viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="9">
+
+  <!-- === Panel A: Two-tail === -->
+  <text x="80" y="12" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="10">Two-tail (α = 5 %)</text>
+  <line x1="10" y1="85" x2="155" y2="85" stroke="#374151" stroke-width="1.2"/>
+  <!-- bell -->
+  <path d="M 12,84 C 25,84 35,81 45,73 C 55,63 65,46 80,34 C 90,26 95,22 80,34 C 82,28 80,22 80,20 C 80,22 78,28 80,34 C 65,46 75,63 85,73 C 95,81 105,84 118,84 C 132,84 145,84 155,84" fill="none" stroke="#374151" stroke-width="1.2"/>
+  <path d="M 12,84 C 20,84 28,82 35,76 C 42,68 50,54 57,40 C 62,30 69,20 80,16 C 91,20 98,30 103,40 C 110,54 118,68 125,76 C 132,82 140,84 148,84" fill="none" stroke="#374151" stroke-width="1.5"/>
+  <!-- left rejection zone -->
+  <path d="M 12,84 C 18,84 24,82 30,76 C 36,68 42,57 48,47 L 48,84 Z" fill="#fecaca" opacity="0.8"/>
+  <!-- right rejection zone -->
+  <path d="M 112,47 C 118,57 124,68 130,76 C 136,82 142,84 148,84 L 148,84 L 112,84 Z" fill="#fecaca" opacity="0.8"/>
+  <!-- critical value lines -->
+  <line x1="48"  y1="47" x2="48"  y2="84" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <line x1="112" y1="47" x2="112" y2="84" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <text x="48"  y="97" text-anchor="middle" fill="#dc2626">−1.96</text>
+  <text x="112" y="97" text-anchor="middle" fill="#dc2626">+1.96</text>
+  <text x="32"  y="75" text-anchor="middle" fill="#dc2626" font-size="8">Reject</text>
+  <text x="128" y="75" text-anchor="middle" fill="#dc2626" font-size="8">Reject</text>
+  <text x="80"  y="60" text-anchor="middle" fill="#15803d" font-size="8">Accept</text>
+  <text x="80"  y="108" text-anchor="middle" fill="#374151" font-size="8">2.5 % each tail</text>
+
+  <!-- === Panel B: Right-tail === -->
+  <text x="240" y="12" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="10">Right-tail (α = 5 %)</text>
+  <line x1="170" y1="85" x2="315" y2="85" stroke="#374151" stroke-width="1.2"/>
+  <path d="M 172,84 C 185,84 198,82 210,75 C 220,66 228,50 238,36 C 243,27 248,20 240,16 C 232,20 237,27 242,36 C 252,50 260,66 270,75 C 280,82 292,84 305,84 C 310,84 315,84 315,84" fill="none" stroke="#374151" stroke-width="1.5"/>
+  <!-- right rejection -->
+  <path d="M 272,47 C 280,58 288,70 295,77 C 302,82 308,84 315,84 L 315,84 L 272,84 Z" fill="#fecaca" opacity="0.8"/>
+  <line x1="272" y1="47" x2="272" y2="84" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <text x="272" y="97" text-anchor="middle" fill="#dc2626">+1.645</text>
+  <text x="297" y="72" fill="#dc2626" font-size="8">Reject</text>
+  <text x="215" y="60" text-anchor="middle" fill="#15803d" font-size="8">Accept</text>
+  <text x="240" y="108" text-anchor="middle" fill="#374151" font-size="8">5 % right tail</text>
+
+  <!-- === Panel C: Left-tail === -->
+  <text x="400" y="12" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="10">Left-tail (α = 5 %)</text>
+  <line x1="330" y1="85" x2="475" y2="85" stroke="#374151" stroke-width="1.2"/>
+  <path d="M 332,84 C 345,84 358,82 368,75 C 378,66 386,50 396,36 C 401,27 406,20 400,16 C 394,20 399,27 404,36 C 414,50 422,66 432,75 C 442,82 452,84 465,84 C 470,84 475,84 475,84" fill="none" stroke="#374151" stroke-width="1.5"/>
+  <!-- left rejection -->
+  <path d="M 332,84 C 338,84 344,82 350,77 C 357,70 363,58 368,47 L 368,84 Z" fill="#fecaca" opacity="0.8"/>
+  <line x1="368" y1="47" x2="368" y2="84" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <text x="368" y="97" text-anchor="middle" fill="#dc2626">−1.645</text>
+  <text x="345" y="72" text-anchor="middle" fill="#dc2626" font-size="8">Reject</text>
+  <text x="415" y="60" text-anchor="middle" fill="#15803d" font-size="8">Accept</text>
+  <text x="400" y="108" text-anchor="middle" fill="#374151" font-size="8">5 % left tail</text>
+
+  <!-- === Legend / key values === -->
+  <rect x="10" y="120" width="460" height="100" rx="3" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="240" y="137" text-anchor="middle" fill="#1e3a8a" font-weight="bold" font-size="10">Critical values to memorise</text>
+  <text x="30" y="155" fill="#374151">α = 5 %:  Two-tail Z = ±1.96     One-tail Z = ±1.645</text>
+  <text x="30" y="170" fill="#374151">α = 1 %:  Two-tail Z = ±2.576    One-tail Z = ±2.326</text>
+  <text x="30" y="185" fill="#374151">α = 10%:  Two-tail Z = ±1.645    One-tail Z = ±1.282</text>
+  <text x="30" y="200" fill="#b45309" font-style="italic">Rule: for α=5%, always check ±1.96 (two-tail) or ±1.645 (one-tail) first.</text>
+</svg>
+</div>
+
 ## 9.10 Power, level, OC curve
 
 | Quantity | Symbol | Meaning |
@@ -4836,6 +4992,41 @@ The moving averages (12.0, 14.0, 15.33, 16.33, 17.67) show a clearer upward tren
 | **Seasonal** | S | Regular within-year pattern | quarters / months |
 | **Cyclical** | C | Wave-like, longer than a year | 2-10 years |
 | **Irregular / Random** | I (or R) | Unpredictable shocks | random |
+
+**How the four components combine to form an observed series:**
+
+<div style="text-align:center; margin:12pt 0;">
+<svg width="480" height="260" viewBox="0 0 480 260" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="9">
+  <!-- === Row 1: Observed series (combined) === -->
+  <text x="12" y="18" fill="#1d4ed8" font-weight="bold" font-size="10">Observed series Y (= T + S + C + I combined)</text>
+  <line x1="10" y1="55" x2="470" y2="55" stroke="#d1d5db" stroke-width="0.8"/>
+  <polyline points="10,50 35,35 60,25 85,42 110,30 135,18 160,35 185,20 210,32 235,22 260,38 285,25 310,42 335,30 360,48 385,36 410,52 435,40 460,55"
+            fill="none" stroke="#2563eb" stroke-width="2"/>
+
+  <!-- === Row 2: Trend (rising line) === -->
+  <text x="12" y="80" fill="#15803d" font-weight="bold" font-size="10">Trend (T) — long-term rise or fall</text>
+  <line x1="10" y1="115" x2="470" y2="115" stroke="#d1d5db" stroke-width="0.8"/>
+  <line x1="10" y1="112" x2="460" y2="82" stroke="#15803d" stroke-width="2"/>
+
+  <!-- === Row 3: Seasonal (regular repeated waves) === -->
+  <text x="12" y="138" fill="#d97706" font-weight="bold" font-size="10">Seasonal (S) — repeats every fixed period</text>
+  <line x1="10" y1="172" x2="470" y2="172" stroke="#d1d5db" stroke-width="0.8"/>
+  <polyline points="10,172 35,155 60,172 85,155 110,172 135,155 160,172 185,155 210,172 235,155 260,172 285,155 310,172 335,155 360,172 385,155 410,172 435,155 460,172"
+            fill="none" stroke="#d97706" stroke-width="2"/>
+
+  <!-- === Row 4: Irregular (jagged noise) === -->
+  <text x="12" y="195" fill="#dc2626" font-weight="bold" font-size="10">Irregular (I) — unpredictable noise</text>
+  <line x1="10" y1="230" x2="470" y2="230" stroke="#d1d5db" stroke-width="0.8"/>
+  <polyline points="10,230 35,225 60,233 85,227 110,231 135,224 160,228 185,235 210,229 235,233 260,226 285,231 310,228 335,234 360,230 385,226 410,232 435,229 460,228"
+            fill="none" stroke="#dc2626" stroke-width="1.5"/>
+
+  <!-- right-side labels -->
+  <text x="465" y="37"  fill="#2563eb"  font-size="8">Y</text>
+  <text x="465" y="98"  fill="#15803d"  font-size="8">T</text>
+  <text x="465" y="163" fill="#d97706"  font-size="8">S</text>
+  <text x="465" y="228" fill="#dc2626"  font-size="8">I</text>
+</svg>
+</div>
 
 ## 11.3 Two models
 
