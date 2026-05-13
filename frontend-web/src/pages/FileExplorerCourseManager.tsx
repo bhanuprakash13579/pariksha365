@@ -114,10 +114,14 @@ export const FileExplorerCourseManager: React.FC<Props> = ({
     const handleDelete = async (itemId: string, itemName: string) => {
         if (!confirm(`Delete "${itemName}"?`)) return;
         try {
-            if (currentLevel === 2) await api.delete(`/courses/${itemId}`);
+            if (currentLevel === 1) await api.delete(`/categories/subcategories/${itemId}`);
+            else if (currentLevel === 2) await api.delete(`/courses/${itemId}`);
             else if (currentLevel === 3) await api.delete(`/courses/folders/${itemId}`);
             fetchData();
-        } catch { alert(`Failed to delete "${itemName}"`); }
+        } catch (err: any) {
+            const msg = err?.response?.data?.detail ?? `Failed to delete "${itemName}"`;
+            alert(msg);
+        }
     };
 
     const allLinkedTestIds = new Set<string>();

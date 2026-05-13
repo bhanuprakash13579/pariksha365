@@ -1,3 +1,6 @@
+import uuid
+from fastapi import HTTPException
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from sqlalchemy.orm import selectinload
@@ -46,3 +49,18 @@ async def create_subcategory(db: AsyncSession, subcategory: category_schema.SubC
     await db.commit()
     await db.refresh(db_subcategory)
     return db_subcategory
+
+
+async def delete_subcategory(db: AsyncSession, subcategory_id: uuid.UUID) -> None:
+    row = await db.get(SubCategory, subcategory_id)
+    if row is None:
+        raise HTTPException(status_code=404, detail="Subcategory not found")
+    try:
+        await db.delete(row)
+        await db.commit()
+    except IntegrityError:
+        await db.rollback()
+        raise HTTPException(
+            status_code=409,
+            detail="Cannot delete: this subcategory still has courses linked to it. Remove all courses first.",
+        )

@@ -1,3 +1,4 @@
+import uuid
 from fastapi import APIRouter, Depends
 from sqlalchemy import update as _sql_update
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -69,3 +70,12 @@ async def create_subcategory(subcategory: category_schema.SubCategoryCreate, db:
     Create a new subcategory (e.g. CGL, CHSL) under a specific top-level category.
     """
     return await category_service.create_subcategory(db, subcategory)
+
+
+@router.delete("/subcategories/{subcategory_id}", status_code=204)
+async def delete_subcategory(
+    subcategory_id: uuid.UUID,
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
+):
+    await category_service.delete_subcategory(db, subcategory_id)
