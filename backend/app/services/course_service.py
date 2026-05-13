@@ -142,6 +142,26 @@ async def delete_folder(db: AsyncSession, folder_id: uuid.UUID) -> dict:
     await db.commit()
     return {"message": f"Folder '{folder.title}' deleted successfully"}
 
+async def rename_course(db: AsyncSession, course_id: uuid.UUID, title: str) -> Course:
+    course = (await db.execute(select(Course).where(Course.id == course_id))).scalars().first()
+    if not course:
+        raise HTTPException(status_code=404, detail="Course not found")
+    course.title = title.strip()
+    await db.commit()
+    await db.refresh(course)
+    return course
+
+
+async def rename_folder(db: AsyncSession, folder_id: uuid.UUID, title: str) -> CourseFolder:
+    folder = (await db.execute(select(CourseFolder).where(CourseFolder.id == folder_id))).scalars().first()
+    if not folder:
+        raise HTTPException(status_code=404, detail="Folder not found")
+    folder.title = title.strip()
+    await db.commit()
+    await db.refresh(folder)
+    return folder
+
+
 async def unlink_test_from_folder(db: AsyncSession, folder_id: uuid.UUID, test_id: uuid.UUID) -> dict:
     """Unlink a test from a folder."""
     link = (await db.execute(

@@ -1,5 +1,5 @@
 from typing import Any, List, Optional
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Body, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from pydantic import BaseModel
 import uuid
@@ -144,7 +144,22 @@ async def unlink_test_from_folder(
     test_id: uuid.UUID,
     db: AsyncSession = Depends(get_db)
 ) -> Any:
-    """
-    Unlink a test from a folder.
-    """
     return await course_service.unlink_test_from_folder(db, folder_id, test_id)
+
+
+@router.patch("/{course_id}")
+async def rename_course(
+    course_id: uuid.UUID,
+    title: str = Body(..., embed=True),
+    db: AsyncSession = Depends(get_db),
+) -> Any:
+    return await course_service.rename_course(db, course_id, title)
+
+
+@router.patch("/folders/{folder_id}")
+async def rename_folder(
+    folder_id: uuid.UUID,
+    title: str = Body(..., embed=True),
+    db: AsyncSession = Depends(get_db),
+) -> Any:
+    return await course_service.rename_folder(db, folder_id, title)

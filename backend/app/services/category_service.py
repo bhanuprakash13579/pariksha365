@@ -51,6 +51,31 @@ async def create_subcategory(db: AsyncSession, subcategory: category_schema.SubC
     return db_subcategory
 
 
+async def delete_category(db: AsyncSession, category_id: uuid.UUID) -> None:
+    row = await db.get(Category, category_id)
+    if row is None:
+        raise HTTPException(status_code=404, detail="Category not found")
+    try:
+        await db.delete(row)
+        await db.commit()
+    except IntegrityError:
+        await db.rollback()
+        raise HTTPException(
+            status_code=409,
+            detail="Cannot delete: this category has subcategories with courses linked. Remove all courses first.",
+        )
+
+
+async def rename_category(db: AsyncSession, category_id: uuid.UUID, name: str) -> Category:
+    row = await db.get(Category, category_id)
+    if row is None:
+        raise HTTPException(status_code=404, detail="Category not found")
+    row.name = name.strip()
+    await db.commit()
+    await db.refresh(row)
+    return row
+
+
 async def delete_subcategory(db: AsyncSession, subcategory_id: uuid.UUID) -> None:
     row = await db.get(SubCategory, subcategory_id)
     if row is None:
@@ -64,3 +89,13 @@ async def delete_subcategory(db: AsyncSession, subcategory_id: uuid.UUID) -> Non
             status_code=409,
             detail="Cannot delete: this subcategory still has courses linked to it. Remove all courses first.",
         )
+
+
+async def rename_subcategory(db: AsyncSession, subcategory_id: uuid.UUID, name: str) -> SubCategory:
+    row = await db.get(SubCategory, subcategory_id)
+    if row is None:
+        raise HTTPException(status_code=404, detail="Subcategory not found")
+    row.name = name.strip()
+    await db.commit()
+    await db.refresh(row)
+    return row

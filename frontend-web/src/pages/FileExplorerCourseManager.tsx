@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Folder, FolderOpen, Plus, Trash2, FileText, ChevronRight, Home, ArrowLeft, Clock, Download } from 'lucide-react';
+import { Folder, FolderOpen, Plus, Trash2, Pencil, Check, X, FileText, ChevronRight, Home, ArrowLeft, Clock, Download } from 'lucide-react';
 
 interface Props {
     dbCategories: any[];
@@ -114,13 +114,39 @@ export const FileExplorerCourseManager: React.FC<Props> = ({
     const handleDelete = async (itemId: string, itemName: string) => {
         if (!confirm(`Delete "${itemName}"?`)) return;
         try {
-            if (currentLevel === 1) await api.delete(`/categories/subcategories/${itemId}`);
+            if (currentLevel === 0) await api.delete(`/categories/${itemId}`);
+            else if (currentLevel === 1) await api.delete(`/categories/subcategories/${itemId}`);
             else if (currentLevel === 2) await api.delete(`/courses/${itemId}`);
             else if (currentLevel === 3) await api.delete(`/courses/folders/${itemId}`);
             fetchData();
         } catch (err: any) {
             const msg = err?.response?.data?.detail ?? `Failed to delete "${itemName}"`;
             alert(msg);
+        }
+    };
+
+    const [editingId, setEditingId] = useState<string | null>(null);
+    const [editingName, setEditingName] = useState('');
+
+    const startEdit = (id: string, currentName: string) => {
+        setEditingId(id);
+        setEditingName(currentName);
+    };
+
+    const cancelEdit = () => { setEditingId(null); setEditingName(''); };
+
+    const commitEdit = async (itemId: string) => {
+        const name = editingName.trim();
+        if (!name) { cancelEdit(); return; }
+        try {
+            if (currentLevel === 0) await api.patch(`/categories/${itemId}`, { name });
+            else if (currentLevel === 1) await api.patch(`/categories/subcategories/${itemId}`, { name });
+            else if (currentLevel === 2) await api.patch(`/courses/${itemId}`, { title: name });
+            else if (currentLevel === 3) await api.patch(`/courses/folders/${itemId}`, { title: name });
+            cancelEdit();
+            fetchData();
+        } catch (err: any) {
+            alert(err?.response?.data?.detail ?? 'Failed to rename');
         }
     };
 
@@ -252,21 +278,42 @@ export const FileExplorerCourseManager: React.FC<Props> = ({
                             total + (c.folders || []).reduce((fTotal: number, f: any) =>
                                 fTotal + (f.tests || []).length, 0), 0);
 
+                        const isEditingThis = editingId === cat.id;
                         return (
-                            <button
+                            <div
                                 key={cat.id}
-                                onClick={() => navigateTo(cat.name, cat.id, 1)}
-                                className={`relative group text-left border-l-4 ${cfg.border} ${cfg.bg} border border-gray-100 rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 hover:scale-[1.02]`}
+                                className={`relative group text-left border-l-4 ${cfg.border} ${cfg.bg} border border-gray-100 rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200`}
                             >
+                                {/* action buttons */}
+                                <div className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <button onClick={e => { e.stopPropagation(); startEdit(cat.id, cat.name); }}
+                                        className="p-1.5 text-gray-400 hover:text-blue-500 hover:bg-blue-50 rounded-lg transition-all" title="Rename">
+                                        <Pencil className="w-3.5 h-3.5" />
+                                    </button>
+                                    <button onClick={e => { e.stopPropagation(); handleDelete(cat.id, cat.name); }}
+                                        className="p-1.5 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all" title="Delete">
+                                        <Trash2 className="w-3.5 h-3.5" />
+                                    </button>
+                                </div>
                                 <div className="text-2xl mb-2">{cfg.emoji}</div>
-                                <h3 className={`text-base font-black ${cfg.color} mb-2`}>{cat.name}</h3>
-                                <div className="flex gap-3 text-xs text-gray-500">
+                                {isEditingThis ? (
+                                    <div className="flex items-center gap-1 mb-2" onClick={e => e.stopPropagation()}>
+                                        <input autoFocus value={editingName} onChange={e => setEditingName(e.target.value)}
+                                            onKeyDown={e => { if (e.key === 'Enter') commitEdit(cat.id); if (e.key === 'Escape') cancelEdit(); }}
+                                            className="flex-1 border border-blue-300 rounded px-2 py-0.5 text-sm font-bold focus:ring-1 focus:ring-blue-400 outline-none" />
+                                        <button onClick={() => commitEdit(cat.id)} className="p-1 text-green-500 hover:bg-green-50 rounded"><Check className="w-3.5 h-3.5" /></button>
+                                        <button onClick={cancelEdit} className="p-1 text-gray-400 hover:bg-gray-50 rounded"><X className="w-3.5 h-3.5" /></button>
+                                    </div>
+                                ) : (
+                                    <h3 className={`text-base font-black ${cfg.color} mb-2 cursor-pointer`}
+                                        onClick={() => navigateTo(cat.name, cat.id, 1)}>{cat.name}</h3>
+                                )}
+                                <div className="flex gap-3 text-xs text-gray-500 cursor-pointer" onClick={() => !isEditingThis && navigateTo(cat.name, cat.id, 1)}>
                                     <span>{testCount} tests</span>
                                     <span>·</span>
                                     <span>{courseCount} courses</span>
                                 </div>
-                                <ChevronRight className="absolute bottom-4 right-4 w-4 h-4 text-gray-300 group-hover:text-gray-500 transition-colors" />
-                            </button>
+                            </div>
                         );
                     })}
 
@@ -370,25 +417,41 @@ export const FileExplorerCourseManager: React.FC<Props> = ({
                                         onDragOver={isDraggable ? (e) => handleDragOver(e, child.id) : undefined}
                                         onDrop={isDraggable ? (e) => handleDrop(e, child.id) : undefined}
                                         onDragEnd={isDraggable ? handleDragEnd : undefined}
-                                        className={`relative group border-l-4 ${cfg.border} bg-white border border-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md transition-all cursor-pointer hover:scale-[1.02] ${dragOverItemId === child.id ? 'border-orange-500 bg-orange-50/50 scale-[1.03] z-10' : ''
-                                            }`}
-                                        onClick={() => navigateTo(child.name, child.id, currentLevel + 1)}
+                                        className={`relative group border-l-4 ${cfg.border} bg-white border border-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md transition-all ${dragOverItemId === child.id ? 'border-orange-500 bg-orange-50/50 scale-[1.03] z-10' : ''}`}
+                                        onClick={() => editingId !== child.id && navigateTo(child.name, child.id, currentLevel + 1)}
                                     >
                                         <div className="flex items-center justify-between mb-3">
                                             <div className="flex items-center gap-2">
                                                 {isDraggable && <div className="text-gray-300 group-hover:text-gray-400 cursor-grab px-1">⋮⋮</div>}
                                                 <FolderOpen className={`w-7 h-7 ${cfg.color} opacity-80`} />
                                             </div>
-                                            <button
-                                                onClick={e => { e.stopPropagation(); handleDelete(child.id, child.name); }}
-                                                className="opacity-0 group-hover:opacity-100 p-1.5 text-red-400 hover:bg-red-50 rounded-lg transition-all"
-                                            >
-                                                <Trash2 className="w-3.5 h-3.5" />
-                                            </button>
+                                            <div className="flex gap-1 opacity-0 group-hover:opacity-100 transition-all">
+                                                <button
+                                                    onClick={e => { e.stopPropagation(); startEdit(child.id, child.name); }}
+                                                    className="p-1.5 text-gray-400 hover:text-blue-500 hover:bg-blue-50 rounded-lg transition-all"
+                                                >
+                                                    <Pencil className="w-3.5 h-3.5" />
+                                                </button>
+                                                <button
+                                                    onClick={e => { e.stopPropagation(); handleDelete(child.id, child.name); }}
+                                                    className="p-1.5 text-red-400 hover:bg-red-50 rounded-lg transition-all"
+                                                >
+                                                    <Trash2 className="w-3.5 h-3.5" />
+                                                </button>
+                                            </div>
                                         </div>
-                                        <h3 className="font-bold text-gray-800 text-sm leading-tight mb-1">{child.name}</h3>
+                                        {editingId === child.id ? (
+                                            <div className="flex items-center gap-1 mb-1" onClick={e => e.stopPropagation()}>
+                                                <input autoFocus value={editingName} onChange={e => setEditingName(e.target.value)}
+                                                    onKeyDown={e => { if (e.key === 'Enter') commitEdit(child.id); if (e.key === 'Escape') cancelEdit(); }}
+                                                    className="flex-1 border border-blue-300 rounded px-2 py-0.5 text-sm font-bold focus:ring-1 focus:ring-blue-400 outline-none" />
+                                                <button onClick={e => { e.stopPropagation(); commitEdit(child.id); }} className="p-1 text-green-500 hover:bg-green-50 rounded"><Check className="w-3.5 h-3.5" /></button>
+                                                <button onClick={e => { e.stopPropagation(); cancelEdit(); }} className="p-1 text-gray-400 hover:bg-gray-50 rounded"><X className="w-3.5 h-3.5" /></button>
+                                            </div>
+                                        ) : (
+                                            <h3 className="font-bold text-gray-800 text-sm leading-tight mb-1">{child.name}</h3>
+                                        )}
                                         <p className="text-xs text-gray-400">{child.count} {['', 'courses', 'folders', 'tests', ''][currentLevel]} inside</p>
-                                        {/* Urgency nudge if empty */}
                                         {child.count === 0 && (
                                             <p className="text-[10px] text-amber-500 font-semibold mt-1.5">⚠️ Empty — students can't access this</p>
                                         )}
