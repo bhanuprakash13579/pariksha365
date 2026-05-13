@@ -686,26 +686,64 @@ graph TD
 
 **How AM, Median and Mode relate to distribution shape** — a visual you must be able to recall instantly:
 
-```
-SYMMETRIC:          Mode = Median = Mean
-                         ↑
-                    _____|_____
-                   /           \
-                  /             \
-─────────────────────────────────────
+<div style="text-align:center; margin:10pt 0;">
+<svg width="500" height="285" viewBox="0 0 500 285" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="9">
 
-POSITIVE SKEW       Mo  Md   Mn →
-(long right tail):   ↑   ↑    ↑
-                  __|___|_____|___
-                 /               \___
-─────────────────────────────────────
+  <!-- ══ PANEL 1: SYMMETRIC ══ -->
+  <rect x="6" y="3" width="488" height="88" rx="3" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="13" y="15" fill="#1d4ed8" font-weight="bold" font-size="10">SYMMETRIC</text>
+  <text x="492" y="15" text-anchor="end" fill="#1d4ed8" font-size="8.5" font-style="italic">Mo = Md = Mean — all equal, all at the peak</text>
+  <line x1="18" y1="70" x2="482" y2="70" stroke="#6b7280" stroke-width="1.2"/>
+  <path d="M 58,70 C 100,70 135,64 165,50 C 196,36 228,20 250,19 C 272,20 304,36 335,50 C 365,64 400,70 442,70"
+        fill="#bfdbfe" fill-opacity="0.45" stroke="#2563eb" stroke-width="1.8"/>
+  <!-- single shared marker -->
+  <line x1="250" y1="19" x2="250" y2="70" stroke="#7c3aed" stroke-width="1.6" stroke-dasharray="4,3"/>
+  <line x1="250" y1="70" x2="250" y2="77" stroke="#7c3aed" stroke-width="2"/>
+  <text x="254" y="33" fill="#7c3aed" font-size="8.5" font-weight="bold">Mo = Md = Mean</text>
+  <text x="250" y="86" text-anchor="middle" fill="#7c3aed" font-size="8.5" font-weight="bold">↑ all three coincide</text>
 
-NEGATIVE SKEW  ← Mn  Md   Mo
-(long left tail):  ↑   ↑    ↑
-               ___/____________|___
-              /               |
-─────────────────────────────────────
-```
+  <!-- ══ PANEL 2: POSITIVE SKEW ══ -->
+  <rect x="6" y="96" width="488" height="88" rx="3" fill="#fff7ed" stroke="#ea580c" stroke-width="1"/>
+  <text x="13" y="108" fill="#c2410c" font-weight="bold" font-size="10">POSITIVE SKEW  (long right tail)</text>
+  <text x="492" y="108" text-anchor="end" fill="#c2410c" font-size="8.5" font-style="italic">Mo &lt; Md &lt; Mean  →</text>
+  <line x1="18" y1="163" x2="482" y2="163" stroke="#6b7280" stroke-width="1.2"/>
+  <!-- right-skewed: steep left rise, long right tail -->
+  <path d="M 48,163 C 80,163 108,156 132,141 C 150,127 158,116 163,111 C 168,116 180,136 210,152 C 252,164 360,164 455,163"
+        fill="#fed7aa" fill-opacity="0.5" stroke="#ea580c" stroke-width="1.8"/>
+  <text x="390" y="153" fill="#c2410c" font-size="8" font-style="italic">tail →</text>
+  <!-- Mode: dashed line up to peak -->
+  <line x1="163" y1="111" x2="163" y2="163" stroke="#7c3aed" stroke-width="1.6" stroke-dasharray="4,3"/>
+  <line x1="163" y1="163" x2="163" y2="170" stroke="#7c3aed" stroke-width="2"/>
+  <!-- Median tick -->
+  <line x1="245" y1="163" x2="245" y2="170" stroke="#15803d" stroke-width="2"/>
+  <!-- Mean tick (pulled toward tail) -->
+  <line x1="320" y1="163" x2="320" y2="170" stroke="#dc2626" stroke-width="2"/>
+  <text x="163" y="180" text-anchor="middle" fill="#7c3aed" font-weight="bold">Mo</text>
+  <text x="245" y="180" text-anchor="middle" fill="#15803d" font-weight="bold">Md</text>
+  <text x="320" y="180" text-anchor="middle" fill="#dc2626" font-weight="bold">Mean</text>
+
+  <!-- ══ PANEL 3: NEGATIVE SKEW ══ -->
+  <rect x="6" y="189" width="488" height="88" rx="3" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <text x="13" y="201" fill="#15803d" font-weight="bold" font-size="10">NEGATIVE SKEW  (long left tail)</text>
+  <text x="492" y="201" text-anchor="end" fill="#15803d" font-size="8.5" font-style="italic">←  Mean &lt; Md &lt; Mo</text>
+  <line x1="18" y1="256" x2="482" y2="256" stroke="#6b7280" stroke-width="1.2"/>
+  <!-- left-skewed: long left tail, steep right rise -->
+  <path d="M 45,256 C 140,256 220,255 258,251 C 290,244 308,232 337,204 C 342,212 352,232 378,248 C 408,260 445,257 468,256"
+        fill="#bbf7d0" fill-opacity="0.5" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="110" y="246" fill="#15803d" font-size="8" font-style="italic">← tail</text>
+  <!-- Mean tick (in left tail) -->
+  <line x1="180" y1="256" x2="180" y2="263" stroke="#dc2626" stroke-width="2"/>
+  <!-- Median tick -->
+  <line x1="258" y1="256" x2="258" y2="263" stroke="#15803d" stroke-width="2"/>
+  <!-- Mode: dashed line up to peak -->
+  <line x1="337" y1="204" x2="337" y2="256" stroke="#7c3aed" stroke-width="1.6" stroke-dasharray="4,3"/>
+  <line x1="337" y1="256" x2="337" y2="263" stroke="#7c3aed" stroke-width="2"/>
+  <text x="180" y="273" text-anchor="middle" fill="#dc2626" font-weight="bold">Mean</text>
+  <text x="258" y="273" text-anchor="middle" fill="#15803d" font-weight="bold">Md</text>
+  <text x="337" y="273" text-anchor="middle" fill="#7c3aed" font-weight="bold">Mo</text>
+
+</svg>
+</div>
 
 <div class="formula">
 
@@ -1783,27 +1821,65 @@ The mean tells you *where* a distribution is centred. The standard deviation tel
 
 **Visual guide to skewness directions:**
 
-```
-POSITIVE SKEW (right-tailed):
-  Frequency
-     |
-     |  ████
-     | ██████
-     |████████
-     |██████████▓▓▓░░
-─────┼──────────────────── Value
-     Mode Median Mean →
+<div style="text-align:center; margin:10pt 0;">
+<svg width="480" height="175" viewBox="0 0 480 175" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="9">
 
-NEGATIVE SKEW (left-tailed):
-  Frequency
-     |
-     |          ████
-     |        ██████
-     |      ████████
-     |  ░░░▓▓██████████
-─────┼──────────────────── Value
-     ← Mean Median Mode
-```
+  <!-- ── Left panel: POSITIVE SKEW ── -->
+  <rect x="4" y="3" width="230" height="168" rx="3" fill="#fff7ed" stroke="#ea580c" stroke-width="1"/>
+  <text x="119" y="15" text-anchor="middle" fill="#c2410c" font-weight="bold" font-size="9.5">POSITIVE SKEW</text>
+  <text x="119" y="25" text-anchor="middle" fill="#c2410c" font-size="8">(right-tailed)  Mo &lt; Md &lt; Mean →</text>
+  <!-- y-axis -->
+  <line x1="28" y1="30" x2="28" y2="128" stroke="#374151" stroke-width="1.2"/>
+  <!-- x-axis -->
+  <line x1="28" y1="128" x2="228" y2="128" stroke="#374151" stroke-width="1.2"/>
+  <text x="16" y="84" text-anchor="middle" fill="#374151" transform="rotate(-90,16,84)" font-size="8">Frequency</text>
+  <!-- right-skewed curve -->
+  <path d="M 28,128 C 45,128 62,120 78,105 C 90,93 98,80 104,72 C 110,80 120,100 145,116 C 178,127 220,128 228,128"
+        fill="#fed7aa" fill-opacity="0.6" stroke="#ea580c" stroke-width="1.8"/>
+  <text x="185" y="118" fill="#c2410c" font-size="7.5" font-style="italic">tail →</text>
+  <!-- Mode at x=104 -->
+  <line x1="104" y1="72" x2="104" y2="128" stroke="#7c3aed" stroke-width="1.4" stroke-dasharray="3,2"/>
+  <line x1="104" y1="128" x2="104" y2="134" stroke="#7c3aed" stroke-width="1.8"/>
+  <!-- Median at x=140 -->
+  <line x1="140" y1="128" x2="140" y2="134" stroke="#15803d" stroke-width="1.8"/>
+  <!-- Mean at x=165 -->
+  <line x1="165" y1="128" x2="165" y2="134" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="104" y="145" text-anchor="middle" fill="#7c3aed" font-weight="bold">Mo</text>
+  <text x="140" y="145" text-anchor="middle" fill="#15803d" font-weight="bold">Md</text>
+  <text x="165" y="145" text-anchor="middle" fill="#dc2626" font-weight="bold">Mean</text>
+  <!-- rule box -->
+  <rect x="18" y="150" width="208" height="17" rx="2" fill="#fff3e0" stroke="#ea580c" stroke-width="0.8"/>
+  <text x="122" y="161" text-anchor="middle" fill="#c2410c" font-size="8">β₁ &gt; 0 · Mean &gt; Median &gt; Mode</text>
+
+  <!-- ── Right panel: NEGATIVE SKEW ── -->
+  <rect x="246" y="3" width="230" height="168" rx="3" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+  <text x="361" y="15" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="9.5">NEGATIVE SKEW</text>
+  <text x="361" y="25" text-anchor="middle" fill="#15803d" font-size="8">(left-tailed)  ← Mean &lt; Md &lt; Mo</text>
+  <!-- y-axis -->
+  <line x1="270" y1="30" x2="270" y2="128" stroke="#374151" stroke-width="1.2"/>
+  <!-- x-axis -->
+  <line x1="270" y1="128" x2="470" y2="128" stroke="#374151" stroke-width="1.2"/>
+  <text x="258" y="84" text-anchor="middle" fill="#374151" transform="rotate(-90,258,84)" font-size="8">Frequency</text>
+  <!-- left-skewed: long left tail, steep rise to peak on right -->
+  <path d="M 270,128 C 290,128 318,127 342,123 C 362,116 374,100 377,78 C 383,100 393,116 415,124 C 440,129 462,128 470,128"
+        fill="#bbf7d0" fill-opacity="0.6" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="295" y="118" fill="#15803d" font-size="7.5" font-style="italic">← tail</text>
+  <!-- Mean at x=315 (in left tail) -->
+  <line x1="315" y1="128" x2="315" y2="134" stroke="#dc2626" stroke-width="1.8"/>
+  <!-- Median at x=350 -->
+  <line x1="350" y1="128" x2="350" y2="134" stroke="#15803d" stroke-width="1.8"/>
+  <!-- Mode at x=377 (peak) -->
+  <line x1="377" y1="78" x2="377" y2="128" stroke="#7c3aed" stroke-width="1.4" stroke-dasharray="3,2"/>
+  <line x1="377" y1="128" x2="377" y2="134" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="315" y="145" text-anchor="middle" fill="#dc2626" font-weight="bold">Mean</text>
+  <text x="350" y="145" text-anchor="middle" fill="#15803d" font-weight="bold">Md</text>
+  <text x="377" y="145" text-anchor="middle" fill="#7c3aed" font-weight="bold">Mo</text>
+  <!-- rule box -->
+  <rect x="260" y="150" width="208" height="17" rx="2" fill="#e6fdf0" stroke="#16a34a" stroke-width="0.8"/>
+  <text x="364" y="161" text-anchor="middle" fill="#15803d" font-size="8">β₁ &lt; 0 · Mean &lt; Median &lt; Mode</text>
+
+</svg>
+</div>
 
 <div class="formula">
 
