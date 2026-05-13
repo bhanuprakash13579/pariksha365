@@ -293,20 +293,22 @@ Suppose a government officer hands you a printout listing the ages of 10,000 sch
   <!-- ─── 8. PIE CHART ─── -->
   <rect x="280" y="265" width="155" height="115" rx="3" fill="#fff7ed" stroke="#ea580c" stroke-width="1"/>
   <text x="357" y="277" text-anchor="middle" fill="#ea580c" font-weight="bold">8. Pie Chart</text>
-  <!-- pie slices centred at 357, 325, radius 40 -->
-  <!-- Slice 1: 40% = 144° (0° to 144°) -->
-  <path d="M 357,325 L 397,325 A 40,40 0 0 1 326,362 Z" fill="#fb923c" stroke="white" stroke-width="1.5"/>
-  <!-- Slice 2: 30% = 108° (144° to 252°) -->
-  <path d="M 357,325 L 326,362 A 40,40 0 0 1 317,285 Z" fill="#fbbf24" stroke="white" stroke-width="1.5"/>
-  <!-- Slice 3: 20% = 72° (252° to 324°) -->
-  <path d="M 357,325 L 317,285 A 40,40 0 0 1 357,285 Z" fill="#34d399" stroke="white" stroke-width="1.5"/>
-  <!-- Slice 4: 10% = 36° (324° to 360°) -->
-  <path d="M 357,325 L 357,285 A 40,40 0 0 1 397,325 Z" fill="#818cf8" stroke="white" stroke-width="1.5"/>
-  <!-- labels -->
-  <text x="375" y="348" fill="white" font-size="7" font-weight="bold">40%</text>
-  <text x="326" y="355" fill="white" font-size="7" font-weight="bold">30%</text>
-  <text x="324" y="305" fill="white" font-size="7" font-weight="bold">20%</text>
-  <text x="358" y="298" fill="white" font-size="7" font-weight="bold">10%</text>
+  <!-- pie slices centred at 357,325, radius 40 -->
+  <!-- angles clockwise from 3-o'clock: 40%=144°, 30%=108°, 20%=72°, 10%=36° -->
+  <!-- endpoints: 0°=(397,325)  144°=(325,349)  252°=(345,287)  324°=(389,301) -->
+  <!-- Slice 1: 40% — 0° to 144° -->
+  <path d="M 357,325 L 397,325 A 40,40 0 0 1 325,349 Z" fill="#fb923c" stroke="white" stroke-width="1.5"/>
+  <!-- Slice 2: 30% — 144° to 252° -->
+  <path d="M 357,325 L 325,349 A 40,40 0 0 1 345,287 Z" fill="#fbbf24" stroke="white" stroke-width="1.5"/>
+  <!-- Slice 3: 20% — 252° to 324° -->
+  <path d="M 357,325 L 345,287 A 40,40 0 0 1 389,301 Z" fill="#34d399" stroke="white" stroke-width="1.5"/>
+  <!-- Slice 4: 10% — 324° to 360° -->
+  <path d="M 357,325 L 389,301 A 40,40 0 0 1 397,325 Z" fill="#818cf8" stroke="white" stroke-width="1.5"/>
+  <!-- labels at midpoint angle, r=22 from centre -->
+  <text x="364" y="349" text-anchor="middle" fill="white" font-size="7" font-weight="bold">40%</text>
+  <text x="336" y="321" text-anchor="middle" fill="white" font-size="7" font-weight="bold">30%</text>
+  <text x="364" y="307" text-anchor="middle" fill="white" font-size="7" font-weight="bold">20%</text>
+  <text x="378" y="321" text-anchor="middle" fill="white" font-size="7" font-weight="bold">10%</text>
   <text x="357" y="390" text-anchor="middle" fill="#374151" font-size="7.5">Each slice = % of whole (sum = 100%)</text>
 
 </svg>
@@ -1970,8 +1972,7 @@ $$
   <!-- labels -->
   <text x="55"  y="143" fill="#2563eb" font-size="9">Platykurtic</text>
   <text x="55"  y="154" fill="#2563eb" font-size="9">(β₂ &lt; 3, flat)</text>
-  <text x="175" y="172" fill="#16a34a" font-size="9" text-anchor="middle">Mesokurtic</text>
-  <text x="175" y="181" fill="#16a34a" font-size="9" text-anchor="middle">(β₂ = 3, normal)</text>
+  <text x="210" y="168" fill="#16a34a" font-size="9" text-anchor="middle">Mesokurtic (β₂ = 3, normal)</text>
   <text x="310" y="143" fill="#dc2626" font-size="9" text-anchor="end">Leptokurtic</text>
   <text x="310" y="154" fill="#dc2626" font-size="9" text-anchor="end">(β₂ &gt; 3, sharp)</text>
 
@@ -3480,7 +3481,7 @@ For independent $X, Y$: $ E[XY] = E[X] E[Y] $ and $ \text{Var}(X + Y) = \text{Va
 <svg width="380" height="130" viewBox="0 0 380 130" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="9">
   <line x1="30" y1="105" x2="365" y2="105" stroke="#374151" stroke-width="1.5"/>
   <!-- Poisson(3): r=0..7; P≈ 0=.050,1=.149,2=.224,3=.224,4=.168,5=.101,6=.050,7=.022 scaled to 95 -->
-  <rect x="38"  y="87"  width="22" height="18"  fill="#a7f3d0" stroke="#059669" stroke-width="0.8"/>
+  <rect x="38"  y="91"  width="22" height="14"  fill="#a7f3d0" stroke="#059669" stroke-width="0.8"/>
   <rect x="68"  y="63"  width="22" height="42"  fill="#6ee7b7" stroke="#059669" stroke-width="0.8"/>
   <rect x="98"  y="42"  width="22" height="63"  fill="#34d399" stroke="#059669" stroke-width="0.8"/>
   <rect x="128" y="42"  width="22" height="63"  fill="#10b981" stroke="#059669" stroke-width="0.8"/>
