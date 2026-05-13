@@ -7,18 +7,7 @@ date: "2026"
 
 # How to use this book
 
-This is the **only** book a JSO aspirant should need.
-
-It is built around four hard rules:
-
-| Rule | What it means in practice |
-|------|---------------------------|
-| **Examiner mindset** | For every topic we state how SSC frames it, the 3-5 angles they recycle, and the trap option they always plant. |
-| **Formula → derivation → drill** | Every formula has a 1-line proof or intuition so you don't memorise blindly; then 8-15 worked PYQ-style questions per chapter. |
-| **Pedagogy first** | Tables, mind maps, pitfall boxes, mnemonic boxes, recall prompts — no English paragraphs. Information is laid out like a publisher's textbook, not a blog. |
-| **Self-check** | Every chapter ends with a mini-mock (10 Qs, fully solved) and active-recall prompts. Last chapter is a full 100-Q mock. |
-
-> **The promise.** Read this book end-to-end with two passes + the embedded recall prompts and you will solve >95 of the 100 questions on JSO Paper II.
+Work through each chapter in order. Read the concept, study the worked examples step by step, then attempt the mini-mock at the end before moving on. The formula sheet (Appendix A) and statistical tables (Appendix B) are your quick-reference during revision. The two full mocks (Appendices C & F) simulate exam conditions — do them timed.
 
 ---
 
@@ -151,10 +140,8 @@ Memorise the Pascal row up to $n=10$ — it solves binomial probability and samp
 
 # CHAPTER 1 — Collection, Classification & Presentation of Data
 
-**Importance:** ⭐⭐⭐⭐ HIGH (≈8 Qs / paper)
-**Difficulty:** Easy. Don't lose marks here — it's free fuel for your 95% target.
 
-## 1.0 — Understanding Data Presentation from First Principles
+## 1.0 The big picture
 
 <div class="intuition">
 
@@ -162,25 +149,8 @@ Memorise the Pascal row up to $n=10$ — it solves binomial probability and samp
 
 Suppose a government officer hands you a printout listing the ages of 10,000 school children, in the order they were recorded. Can you tell — just from staring at that list — what the typical age is? Whether most children fall in a narrow band or are spread across a wide range? Whether there are unusual outliers? No. Raw data in that form is nearly useless for decision-making.
 
-**Data presentation** is the process of transforming raw data into an organised form that reveals its structure. The moment you group 10,000 ages into bins (5–7, 7–9, 9–11 years) and count how many fall in each bin, a pattern emerges. When you draw those counts as bars, the shape of the distribution becomes visible in seconds. An administrator can now see at a glance that most children are 8–10 years old, that there is a small cluster of over-age enrolments, and that the distribution is slightly skewed right.
-
-**The chain of chapters:** Every statistical measure you will compute in Chapters 2–12 — mean, variance, correlation coefficient, regression line, test statistic — is computed from an organised frequency distribution, not from raw lists. **This chapter is the entry gate to all of statistics.**
-
 </div>
 
-**Chapter roadmap — what you will learn:**
-
-```mermaid
-graph LR
-  A[Raw Data] --> B[Classification<br/>Qualitative / Quantitative<br/>Discrete / Continuous]
-  B --> C[Primary vs Secondary<br/>Collection methods]
-  C --> D[Frequency Distribution<br/>class limits · boundaries · marks · width]
-  D --> E[Graphs]
-  E --> E1[Histogram]
-  E --> E2[Frequency Polygon]
-  E --> E3[Ogive cumulative]
-  E --> E4[Bar / Pie chart]
-```
 
 **Why multiple graph types?** Each graph reveals a different property of the data:
 
@@ -677,39 +647,20 @@ Heights = **4, 5, 5, 3**.  **Ans (b).**
 | 9 | Census of India data when used in a study is? | Secondary |
 | 10 | A bar chart's bars are? | Separated (do not touch) |
 
-## 1.11 Active-recall prompts (cover the answers, then test)
-
-1. State the formula for class mark.
-2. List four methods of collecting primary data.
-3. Write the formula for the angle in a pie chart corresponding to a frequency $f$ when total frequency is $N$.
-4. Why do histogram bars touch but bar-chart bars don't?
-5. What is plotted on the y-axis of a histogram with unequal class widths?
-
 ---
 
 \newpage
 
 # CHAPTER 2 — Measures of Central Tendency
 
-**Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈10 Qs / paper)
-**Difficulty:** Easy–Medium. This is your foundation for Dispersion, Moments, Skewness — every later chapter assumes you can find a mean in 5 seconds.
 
-## 2.0 — Understanding Central Tendency from First Principles
+## 2.0 The big picture
 
 <div class="intuition">
 
 **What is "central tendency" and why do we need more than one type of average?**
 
 Any dataset can be summarised along two dimensions: *where it is centred* and *how spread out it is*. Central tendency addresses the first: what single number best represents the "middle" or "typical" value of the data?
-
-The **arithmetic mean** is the most natural answer — add everything up and divide by count. But it has a fatal flaw: **it is sensitive to extreme values**. Consider 9 workers earning ₹20,000 each and 1 CEO earning ₹10,000,000. The mean salary is ≈ ₹1,018,000 — a number that describes nobody in the company. The **median** (the middle value when sorted: ₹20,000) is far more representative of what a typical employee earns.
-
-The **mode** (most frequent value) reveals a different truth: in a bimodal distribution with two peaks, the mean and median both land somewhere in the valley between the peaks — describing the least common outcome! The mode correctly identifies both peaks.
-
-**Why three averages exist:** Different types of phenomena need different summaries.
-- AM is best when the process is additive (total is meaningful — total marks, total production).
-- GM is best when the process is multiplicative (compound interest, growth rates, index ratios).
-- HM is best when the process involves rates and equal denominators (speeds over equal distances, costs per unit with equal budgets).
 
 </div>
 
@@ -892,19 +843,6 @@ A company's sales grew by 10% in Year 1 and 40% in Year 2. What is the average a
 | Partition values | Quartiles, deciles, percentiles from ogive or formula | 1-2 Qs |
 | AM-GM-HM relation | AM ≥ GM ≥ HM; $ GM^2 = AM \cdot HM $ (for two values) | 1 Q |
 
-## 2.2 Mind map
-
-```mermaid
-graph TD
-  A[Central Tendency] --> B[Mathematical]
-  A --> C[Positional]
-  B --> B1[Arithmetic Mean]
-  B --> B2[Geometric Mean]
-  B --> B3[Harmonic Mean]
-  C --> C1[Median]
-  C --> C2[Mode]
-  C --> C3[Partition values:<br/>Q1 Q2 Q3, D1..D9, P1..P99]
-```
 
 ## 2.3 Arithmetic Mean — three computational forms
 
@@ -1294,37 +1232,20 @@ Coincidence here; usually Mode and Median differ.
 | 9 | If each obs multiplied by 3, mean multiplied by? | 3 |
 | 10 | Median is the same as which decile? | $D_5$ |
 
-## 2.14 Active-recall prompts
-
-1. Write the step-deviation formula for AM (with all symbols).
-2. State all 5 properties of AM.
-3. When does a problem demand HM, not AM?
-4. Write the median-from-grouped-data formula and label every symbol.
-5. State the order of Mean, Median, Mode for a negatively skewed distribution.
-6. State the empirical relation between Mean, Median, Mode.
-
 ---
 
 \newpage
 
 # CHAPTER 3 — Measures of Dispersion
 
-**Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈10 Qs / paper)
-**Difficulty:** Easy–Medium. Pure formula. Once you nail the variance computational form, this entire chapter takes <5 min per question.
 
-## 3.0 — Understanding Dispersion from First Principles
+## 3.0 The big picture
 
 <div class="intuition">
 
 **Why isn't the mean enough? The essential need for a measure of spread.**
 
 Two cricket batsmen both average 50 runs per innings. Batsman A scores: 48, 51, 49, 52, 50 (very consistent). Batsman B scores: 10, 90, 5, 95, 50 (wildly erratic). If you need a reliable performer for the final of a tournament, you'd choose Batsman A — even though both have the same mean. **Dispersion** captures this difference in consistency.
-
-Dispersion measures how far the data points are scattered around the centre. Small dispersion = data bunched near the mean (consistent, predictable). Large dispersion = data spread far (variable, risky).
-
-**Why variance uses squared deviations:** The obvious measure of spread would be the average deviation from the mean: $\frac{1}{n}\sum(X_i - \bar{X})$. But this always equals **zero** (Property P1 of the mean — positive and negative deviations cancel). The fix: square each deviation before averaging. This makes all terms non-negative, giving a meaningful measure. The standard deviation (SD) is then the square root of variance — bringing us back to the original units.
-
-**Why CV is needed:** Is an SD of 5 large or small? Compared to a mean of 10, it's enormous (50% variation). Compared to a mean of 1000, it's negligible (0.5% variation). The **Coefficient of Variation** $= \frac{\text{SD}}{\text{Mean}} \times 100$ is unit-free and allows comparison across datasets with different scales or units.
 
 </div>
 
@@ -1841,40 +1762,20 @@ The **Gini coefficient** = area between the Lorenz curve and the line of equalit
 | 9 | Var(X) = 4, Var(Y) = 5, X & Y independent. Var(X+Y)? | 9 |
 | 10 | Coefficient of QD formula? | (Q₃−Q₁)/(Q₃+Q₁) |
 
-## 3.13 Active-recall prompts
-
-1. Write the computational form of variance. Why is it preferred?
-2. Effect on SD when (a) origin changes, (b) scale changes by factor $c$.
-3. Write the combined SD formula in full.
-4. State the empirical ratio QD : MD : SD.
-5. Why use CV instead of SD when comparing two series?
-
 ---
 
 \newpage
 
 # CHAPTER 4 — Moments, Skewness & Kurtosis
 
-**Importance:** ⭐⭐⭐⭐ HIGH (≈7 Qs / paper)
-**Difficulty:** Medium. Definitions are mechanical; the trap is in **central vs raw** moments and the **β₁, β₂ vs γ₁, γ₂** distinction.
 
-## 4.0 — Understanding Moments, Skewness & Kurtosis
+## 4.0 The big picture
 
 <div class="intuition">
 
 **Beyond mean and SD: describing the shape of a distribution.**
 
 The mean tells you *where* a distribution is centred. The standard deviation tells you *how wide* it is. But two distributions can have identical means and SDs and still look completely different. Moments, skewness, and kurtosis capture this shape information mathematically.
-
-**Moments** are a systematic way to compute higher-order summaries. The $r$-th central moment is $\mu_r = \frac{\sum f_i(X_i - \bar{X})^r}{N}$:
-- $\mu_1 = 0$ always (by definition of mean).
-- $\mu_2 = \sigma^2$ — the variance. Captures width/spread.
-- $\mu_3$ — if positive, the right tail is heavier (positive skew); if negative, left tail is heavier. Captures **lopsidedness**.
-- $\mu_4$ — captures **peakedness**: how concentrated values are near the mean vs how fat the tails are.
-
-**Skewness — why it matters:** Salary distributions at companies are positively skewed — most employees earn moderate amounts, a handful of executives earn millions, pulling the mean far above what most people earn. The key diagnostic: *in a positively skewed distribution, Mode < Median < Mean* — the mean is dragged toward the long tail.
-
-**Kurtosis — why it matters:** Two investment funds have the same mean return and the same SD. Fund A is leptokurtic ($\beta_2 > 3$): mostly gives small steady returns, but occasionally delivers extreme outcomes. Fund B is platykurtic ($\beta_2 < 3$): returns are spread more uniformly. Same mean and SD — but Fund A has "fat tails" (higher probability of extreme events). Kurtosis captures this tail-risk difference.
 
 </div>
 
@@ -2360,7 +2261,7 @@ Karl Pearson's Sk = +0.6, Mean = 50, Mode = 44. Find SD.
 | Pearson Sk denominator without σ | The denominator is **σ** (SD), not variance. |
 | Bowley sign flipped | Numerator is $ Q_3 + Q_1 - 2Q_2 $. If positive → positive skew. |
 
-## 4.8 Mini-mock
+## 4.9 Mini-mock
 
 | # | Q | Ans |
 |---|----|-----|
@@ -2375,41 +2276,20 @@ Karl Pearson's Sk = +0.6, Mean = 50, Mode = 44. Find SD.
 | 9 | $ \mu_3 = 0, \mu_2 = 4 $. Sk? | 0 (symmetric) |
 | 10 | "Lepto" peak shape? | Sharp / tall |
 
-## 4.9 Active-recall prompts
-
-1. Write $ \mu_2, \mu_3, \mu_4 $ in terms of raw moments.
-2. State all three Karl Pearson Sk formulas.
-3. State Bowley's range.
-4. Define mesokurtic, leptokurtic, platykurtic with their $\beta_2$ cutoffs.
-5. State Sheppard's correction for the second central moment.
-
 ---
 
 \newpage
 
 # CHAPTER 5 — Correlation & Regression
 
-**Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈10 Qs / paper)
-**Difficulty:** Medium. Half the questions are formula plug-ins; the rest test the famous **two regression lines** properties.
 
-## 5.0 — Understanding Correlation & Regression from First Principles
+## 5.0 The big picture
 
 <div class="intuition">
 
 **What is correlation? What does it actually measure — and what doesn't it measure?**
 
 Correlation answers: "Do two variables tend to move together?" Height and weight move together (taller people tend to be heavier) — **positive correlation**. Temperature and hot-drink sales move oppositely — **negative correlation**. Shoe size and exam score have no connection — **zero correlation**.
-
-Karl Pearson's $r$ quantifies this as a number between −1 and +1, measuring the *strength and direction of the linear relationship*:
-- $r = +1$: perfect positive straight-line relationship (all points lie exactly on an upward line)
-- $r = -1$: perfect negative straight-line relationship
-- $r = 0$: no *linear* relationship
-
-**Critical warning that every JSO student must remember:** $r = 0$ does NOT mean "no relationship." It means no *linear* relationship. The dataset $Y = X^2$ has $r = 0$ between $X$ and $Y$ — but $Y$ is perfectly determined by $X$ (it's a perfect parabola). Correlation only measures *linear* association.
-
-**From correlation to regression:** Correlation tells you *whether* two variables are related and how strongly. Regression tells you *the equation* to predict one from the other. If height and weight have $r = 0.85$, the regression line gives: predicted weight = $a + b \times \text{height}$.
-
-**Why two regression lines?** When you minimise errors in predicting $Y$ from $X$, you get the "Y on X" regression line (minimises vertical squared distances from points to line). When you minimise errors in predicting $X$ from $Y$, you get the "X on Y" line (minimises horizontal squared distances). These are *geometrically different lines* — the direction of error minimisation is different. They coincide only when $|r| = 1$ (perfect linear relationship). Both always pass through $(\bar{X}, \bar{Y})$.
 
 </div>
 
@@ -2521,19 +2401,6 @@ Strong positive agreement between the two judges.
 | Angle between regression lines | when $r = 0$ → 90°; $r = ±1$ → 0° |
 | Multiple / partial correlation | basic 2-variable question |
 
-## 5.2 Mind map
-
-```mermaid
-graph TD
-  A[Bivariate analysis] --> B[Correlation<br/>strength + direction of relationship]
-  A --> C[Regression<br/>predict one variable from the other]
-  B --> B1[Karl Pearson r — quantitative]
-  B --> B2[Spearman ρ — ranks]
-  B --> B3[Scatter diagram — visual]
-  C --> C1[Y on X: byx]
-  C --> C2[X on Y: bxy]
-  C --> C3[r² = byx · bxy]
-```
 
 ## 5.3 Correlation — Karl Pearson
 
@@ -2976,45 +2843,20 @@ Check: $b_{YX} \times b_{XY} = 1.2 \times 0.3 = 0.36 = 0.6^2$ ✓
 | 9 | Multiple correlation R is in? | [0, 1] |
 | 10 | Standard error of estimate when r=1? | 0 |
 
-## 5.14 Active-recall prompts
-
-1. Write the computational formula for $r$.
-2. State the 7 properties of regression coefficients.
-3. Where do the two regression lines meet?
-4. Write Spearman's formula and the tie correction.
-5. Write the formula for $r_{12.3}$ and $R_{1.23}^2$.
-
 ---
 
 \newpage
 
 # CHAPTER 6 — Probability Theory
 
-**Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈8 Qs / paper)
-**Difficulty:** Medium. Almost every wrong answer here is from a single error: confusing **mutually exclusive** with **independent**. Pin that down and you score full.
 
-## 6.0 — Understanding Probability from First Principles
+## 6.0 The big picture
 
 <div class="intuition">
 
 **What is probability — and why did mathematicians need to formalise it?**
 
 Before the 17th century, gamblers relied on intuition and superstition to assess chances. Pascal and Fermat formalised probability in 1654 while solving a gambling problem. Today probability is the mathematical language of uncertainty — used in insurance, medicine, finance, quality control, and statistics (Chapters 8–9 depend entirely on it).
-
-**Three definitions — all useful, each for different situations:**
-
-1. **Classical (Laplace):** $P(A) = \dfrac{\text{number of favourable outcomes}}{\text{total number of equally likely outcomes}}$. Works for coins, dice, cards where outcomes are symmetric.
-
-2. **Frequentist:** $P(A) = \lim_{n \to \infty} \dfrac{f_A}{n}$ where $f_A$ is the number of times $A$ occurs in $n$ trials. Used when you can repeat experiments — "if we toss this biased coin 10,000 times, heads will appear about 60% of the time."
-
-3. **Axiomatic (Kolmogorov):** $P$ is a function satisfying: (i) $P(A) \geq 0$; (ii) $P(\Omega) = 1$; (iii) for mutually exclusive events, $P(A \cup B) = P(A) + P(B)$. This is the mathematically rigorous definition that makes all proofs watertight.
-
-**The most critical distinction in this chapter:** "Mutually exclusive" ≠ "Independent".
-
-- **Mutually exclusive:** $A$ and $B$ cannot both happen. $P(A \cap B) = 0$. Example: a single die roll showing 3 and showing 5 simultaneously.
-- **Independent:** Knowing $A$ happened gives no information about $B$. $P(A \cap B) = P(A) \times P(B)$. Example: coin flip 1 (Heads) and coin flip 2 (Heads) — these are independent.
-
-*Can two events be both mutually exclusive AND independent?* Only if at least one has probability 0. Otherwise, mutually exclusive events are actually *negatively dependent* — knowing one happened tells you the other definitely didn't.
 
 </div>
 
@@ -3395,40 +3237,20 @@ $$
 | 9 | P(A∩B) = 0, P(A) > 0, P(B) > 0. Indep? | No (mutually exclusive) |
 | 10 | Three coins. P(at least 1 H)? | 1 − 1/8 = 7/8 |
 
-## 6.11 Active-recall prompts
-
-1. State the addition theorem for two events (with and without ME).
-2. State the multiplication theorem (with and without independence).
-3. Write Bayes' theorem with all symbols.
-4. Why are ME and independent typically incompatible?
-5. Write $P(\text{exactly one of A or B})$.
-
 ---
 
 \newpage
 
 # CHAPTER 7 — Random Variables & Probability Distributions
 
-**Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈10 Qs / paper)
-**Difficulty:** Medium-Hard. The 4 named distributions (Binomial, Poisson, Normal, Hypergeometric) cover every distribution Q. Memorise mean and variance for each.
 
-## 7.0 — Understanding Random Variables & Distributions
+## 7.0 The big picture
 
 <div class="intuition">
 
 **What is a "random variable" and why do we need distributions?**
 
 In probability, the sample space $\Omega$ can contain abstract outcomes — {Head, Tail}, {Red, Blue, Green}, {Defective, Good}. To do mathematics, we need numbers. A **random variable** $X$ is a function that maps each outcome to a real number. For a die roll: $X = $ "number shown" maps the outcome 3 to the number 3. Simple.
-
-But why stop at assigning numbers? Because once we have numbers, we can ask: "How probable is each value?" This is the **probability distribution** — the probability law governing which values $X$ takes and with what probability. For a fair die: $P(X=k) = 1/6$ for $k=1,\ldots,6$ — a uniform discrete distribution.
-
-**Why do specific named distributions arise?** Because many different real-world phenomena follow the same mathematical pattern:
-
-- **Binomial:** Whenever you repeat the same experiment (trial) $n$ times independently, each with probability $p$ of "success," the number of successes follows Binomial$(n,p)$. Tossing a coin 10 times and counting heads. Inspecting 100 items and counting defectives. Testing 20 patients and counting who respond to treatment.
-
-- **Poisson:** Whenever you count rare events in a fixed time or space interval — phone calls per minute to a helpdesk (mean $\lambda$ calls/minute), typographical errors per page, cars arriving at a toll booth per hour. The Poisson distribution is the limiting case of Binomial when $n \to \infty$, $p \to 0$, $np = \lambda$ stays fixed.
-
-- **Normal:** The bell curve. Its central role comes from the Central Limit Theorem: *no matter what distribution the original data follows, the distribution of the sample mean becomes approximately Normal for large enough sample sizes.* This is why the Normal distribution underpins all of Chapters 8–9.
 
 </div>
 
@@ -4001,41 +3823,20 @@ Sampling $n$ items **without replacement** from a population of $N$ containing $
 | 9 | A pmf must have Σ p(x) = ? | 1 |
 | 10 | Continuous uniform on [2,8]: variance? | (8−2)²/12 = 3 |
 
-## 7.9 Active-recall prompts
-
-1. State the pmf, mean, variance of Binomial.
-2. State the pmf, mean, variance of Poisson. Why mean = variance?
-3. Write the standardising transformation for normal.
-4. Write the 68/95/99.7 rule.
-5. State the hypergeometric pmf and where the finite-population correction sits.
-
 ---
 
 \newpage
 
 # CHAPTER 8 — Sampling Theory
 
-**Importance:** ⭐⭐⭐⭐ HIGH (≈8 Qs / paper)
-**Difficulty:** Easy–Medium. Most questions are conceptual / identification; only a few demand a formula.
 
-## 8.0 — Understanding Sampling Theory from First Principles
+## 8.0 The big picture
 
 <div class="intuition">
 
 **Why sample? Why not just measure the whole population?**
 
 India has 1.4 billion people. To estimate average household income, a complete census would cost thousands of crores and take years to complete. Instead, the NSSO surveys about 100,000 households — and the result is almost as accurate as a census. How is this possible?
-
-Two fundamental theorems guarantee it:
-
-**Law of Large Numbers:** As sample size $n$ increases, the sample mean $\bar{X}$ converges (in probability) to the population mean $\mu$. The more people you survey, the closer your estimate is to the truth.
-
-**Central Limit Theorem (CLT):** For any population (normal or not), the distribution of $\bar{X}$ across all possible samples of size $n$ is approximately $N(\mu, \sigma^2/n)$ for large $n$. This is remarkable — no matter how weird the original population distribution is, sample means are bell-shaped. This is what makes confidence intervals and hypothesis tests work.
-
-**Standard Error (SE):** The SD of the sampling distribution of $\bar{X}$ is $\text{SE} = \sigma/\sqrt{n}$. Note: SE decreases as $\sqrt{n}$. To halve the SE, you need 4× the sample size. This is why going from $n=100$ to $n=400$ is worth it, but going from $n=10000$ to $n=40000$ gives diminishing returns.
-
-**Population parameter** (Greek letter: $\mu$, $\sigma$, $p$) = true value in the entire population — usually unknown.
-**Sample statistic** (Roman letter: $\bar{X}$, $s$, $\hat{p}$) = computed from the sample — our estimate of the parameter.
 
 </div>
 
@@ -4467,7 +4268,7 @@ Population: Stratum 1 (N₁ = 600), Stratum 2 (N₂ = 300), Stratum 3 (N₃ = 10
 | "More sample size → no error" | Sampling error decreases; non-sampling error rises. Total can go either way. |
 | Stratified ≠ cluster | Read mini-population vs sub-group cue. |
 
-## 8.12 Mini-mock
+## 8.13 Mini-mock
 
 | # | Q | Ans |
 |---|----|-----|
@@ -4482,53 +4283,20 @@ Population: Stratum 1 (N₁ = 600), Stratum 2 (N₂ = 300), Stratum 3 (N₃ = 10
 | 9 | Method that picks every kth element? | Systematic |
 | 10 | Formula for sample size at margin E? | (z·σ/E)² |
 
-## 8.13 Active-recall prompts
-
-1. Difference between parameter and statistic.
-2. State the Central Limit Theorem.
-3. Write the SE formulas (mean, proportion, difference of means).
-4. When do we use stratified vs cluster sampling?
-5. Why does non-sampling error grow with n?
-
 ---
 
 \newpage
 
 # CHAPTER 9 — Statistical Inference (Estimation + Testing of Hypotheses)
 
-**Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈12 Qs / paper)
-**Difficulty:** Medium-Hard. The biggest chapter in the paper. Master the **decision rule** template and you'll never lose marks here.
 
-## 9.0 — Understanding Statistical Inference from First Principles
+## 9.0 The big picture
 
 <div class="intuition">
 
 **What is "statistical inference" and what is a hypothesis test actually doing?**
 
 Inference uses sample data to draw conclusions about the unknown population. Two tasks:
-
-1. **Estimation:** "The sample mean is 75 kg. What is the population mean?" The answer is not just "75 kg" — it is a **confidence interval**: "We are 95% confident the population mean lies between 72.1 and 77.9 kg." This interval accounts for sampling variability.
-
-2. **Hypothesis Testing:** "Someone claims the population mean is 80 kg. My sample gives 75 kg. Could this 5-unit gap just be chance sampling variation, or is it strong evidence against the claim?"
-
-**The null hypothesis framework — how to think about it:**
-
-Hypothesis testing works like a court trial: the defendant (null hypothesis $H_0$) is presumed innocent (true) until proven guilty beyond reasonable doubt. The "evidence" is your sample statistic. The "beyond reasonable doubt" threshold is your significance level $\alpha$ (usually 5%).
-
-We compute: "If $H_0$ were true, how likely is it to observe a sample statistic this extreme or more extreme?" This probability is the **p-value**. If $p < \alpha$, the evidence against $H_0$ is strong enough to reject it.
-
-**What p-value IS and IS NOT:**
-- IS: $P(\text{data this extreme} \mid H_0 \text{ is true})$ — probability of the observed result assuming the null is true.
-- IS NOT: $P(H_0 \text{ is true})$ — the probability that the null hypothesis is true. This is a common misconception.
-
-**Type I vs Type II errors:**
-
-| Decision | $H_0$ is actually TRUE | $H_0$ is actually FALSE |
-|----------|----------------------|------------------------|
-| **Reject $H_0$** | Type I error ($\alpha$) — false alarm | Correct — detected real effect |
-| **Fail to reject $H_0$** | Correct — no false alarm | Type II error ($\beta$) — missed detection |
-
-Power of test = $1 - \beta$ = probability of correctly detecting a real effect. Increasing sample size increases power.
 
 </div>
 
@@ -5078,39 +4846,20 @@ A "more powerful test" = lower β for the same α. Powerful tests are usually **
 | 9 | Sample mean is an unbiased estimator of? | μ |
 | 10 | MLE of μ for Normal sample? | X̄ |
 
-## 9.14 Active-recall prompts
-
-1. Define unbiased, consistent, efficient, sufficient.
-2. State Type I and Type II error symbolically.
-3. Write the test statistic for Z-test of one mean.
-4. Write the χ² formula for goodness-of-fit.
-5. State the Neyman-Pearson lemma in one line.
-6. Write the formula for pooled variance $s_p^2$ in two-sample t.
-
 ---
 
 \newpage
 
 # CHAPTER 10 — Analysis of Variance (ANOVA)
 
-**Importance:** ⭐⭐⭐ MEDIUM (≈4 Qs / paper)
-**Difficulty:** Medium. Mostly one or two conceptual questions plus an ANOVA-table fill-in. Don't over-invest, but never skip.
 
-## 10.0 — Understanding ANOVA from First Principles
+## 10.0 The big picture
 
 <div class="intuition">
 
 **Why ANOVA? Why not just do multiple t-tests?**
 
 Suppose you test four fertilisers (A, B, C, D) on crop yield, with 5 plots each. You want to know if any fertiliser makes a significant difference. You could run six pairwise t-tests (A vs B, A vs C, A vs D, B vs C, B vs D, C vs D). Each test has a 5% chance of a false alarm. With six tests, the probability of at least one false alarm = $1 - 0.95^6 \approx 26\%$. You'd be making false discoveries 1 in 4 times — useless science.
-
-**ANOVA** (Analysis of Variance) tests all groups simultaneously with a *single* F-test, keeping the overall false-alarm rate at exactly 5%.
-
-**The key insight — why "variance" tests "means":** If all group means are equal (null hypothesis is true), variation within each group (due to random noise) should be about the same as variation between group means. If one fertiliser is genuinely better, the between-group variation will be large relative to within-group variation. The **F-ratio** captures this:
-
-$$F = \frac{\text{Variance between groups (MSB)}}{\text{Variance within groups (MSW or MSE)}}$$
-
-When $H_0$ is true: $F \approx 1$. When $H_0$ is false: $F \gg 1$. We reject $H_0$ when $F$ exceeds the critical value from the F-table.
 
 </div>
 
@@ -5400,7 +5149,7 @@ Between df = 4, Within df = 20. How many groups (k) and total observations (n)?
 | Within-error has $N - 1$ df | No, $N - k$. The $N - 1$ belongs to total. |
 | df_total = N | No, $N - 1$. |
 
-## 10.8 Mini-mock
+## 10.9 Mini-mock
 
 | # | Q | Ans |
 |---|----|-----|
@@ -5415,42 +5164,20 @@ Between df = 4, Within df = 20. How many groups (k) and total observations (n)?
 | 9 | Assumption: equal variances called? | Homoscedasticity |
 | 10 | One-way ANOVA with k = 2 reduces to? | Two-sample t-test |
 
-## 10.9 Active-recall prompts
-
-1. Write the one-way ANOVA decomposition of total sum of squares.
-2. State the three assumptions of ANOVA.
-3. Write df for between, within, total in one-way (with $k$ groups, $N$ observations).
-4. State the F-test decision rule.
-5. How does one-way ANOVA with k=2 relate to a two-sample t-test?
-
 ---
 
 \newpage
 
 # CHAPTER 11 — Time Series Analysis
 
-**Importance:** ⭐⭐⭐⭐ HIGH (≈7 Qs / paper)
-**Difficulty:** Easy–Medium. Concept-heavy + a few computational Qs (moving average, semi-average).
 
-## 11.0 — Understanding Time Series from First Principles
+## 11.0 The big picture
 
 <div class="intuition">
 
 **What is a time series, and why do we need to decompose it?**
 
 A **time series** is a sequence of observations recorded at regular time intervals — annual GDP, monthly rainfall, daily stock prices, quarterly sales. Unlike cross-sectional data (all measured at one moment), time series has temporal order that carries information: past values influence future values.
-
-A time series is not random noise — it has structure. A JSO-level statistician decomposes it into four additive (or multiplicative) components:
-
-1. **Trend (T):** The long-term directional movement — rising (India's GDP for 30 years), falling (landline subscriptions since 2005), or flat. This is the "signal" through the noise.
-
-2. **Seasonal variation (S):** Regular, predictable within-year patterns that repeat every year. Ice cream sales peak in May–July every year. Woolen clothing sales peak in December every year. These are seasonal — and they are *expected*.
-
-3. **Cyclical variation (C):** Longer-term, irregular waves lasting 3–10 years, linked to economic cycles (expansion → peak → recession → trough). Unlike seasonal, cycles are not fixed-period.
-
-4. **Irregular variation (I):** Random, unpredictable shocks — a flood destroys a quarter's harvest, a pandemic shuts down an economy for two years, a factory fire disrupts supply.
-
-**Why decompose?** Because each component requires a different response: a rising trend in crime needs policy intervention; a seasonal spike needs inventory planning; an irregular shock cannot be predicted and should not distort long-term planning.
 
 </div>
 
@@ -5829,7 +5556,7 @@ Q3 actual value = 63, Seasonal index Q3 = 133.33. What is the deseasonalised val
 | Forgetting to adjust seasonal indices to sum to 400 | Always verify. |
 | Free-hand method called "objective" | It's the most subjective method. |
 
-## 11.8 Mini-mock
+## 11.9 Mini-mock
 
 | # | Q | Ans |
 |---|----|-----|
@@ -5844,37 +5571,20 @@ Q3 actual value = 63, Seasonal index Q3 = 133.33. What is the deseasonalised val
 | 9 | The most subjective method of trend? | Free-hand |
 | 10 | Even-period MA needs? | Centring |
 
-## 11.9 Active-recall prompts
-
-1. List the four components of a time series.
-2. State the additive and multiplicative models.
-3. Compute a 3-year moving average for the sequence 10, 12, 14, 16.
-4. Describe the semi-average method in three steps.
-5. State why even-period moving averages need centring.
-
 ---
 
 \newpage
 
 # CHAPTER 12 — Index Numbers
 
-**Importance:** ⭐⭐⭐⭐ HIGH (≈6 Qs / paper)
-**Difficulty:** Easy. Pure formulas. Three minutes per question.
 
-## 12.0 — Understanding Index Numbers from First Principles
+## 12.0 The big picture
 
 <div class="intuition">
 
 **What is an index number, and why do we need weighted indices?**
 
 An **index number** measures relative change from a base period. CPI = 180 means prices today are 80% higher than in the base year. Sensex at 75,000 is an index measuring the market value of 30 selected stocks relative to their values on 1 April 1979 (base = 100).
-
-**The aggregation problem:** A household buys rice, cooking oil, clothing, and electronics. You want to measure how "the cost of living" changed. You cannot just average the price changes — rice and oil dominate monthly spending; electronics are a small fraction. An unweighted average treats a 50% rise in electronics (minor expense) the same as a 50% rise in rice (major expense). This is misleading.
-
-**Solution — weighted price indices:**
-- **Laspeyres index:** Use base-period quantities as weights. $L = \frac{\sum p_1 q_0}{\sum p_0 q_0} \times 100$. Easier to compute (base-year quantities are fixed), but tends to overstate inflation because it doesn't account for consumers substituting cheaper goods.
-- **Paasche index:** Use current-period quantities as weights. $P = \frac{\sum p_1 q_1}{\sum p_0 q_1} \times 100$. More realistic (accounts for substitution), but requires current-year quantity data every period — expensive to collect. Tends to understate inflation.
-- **Fisher's Ideal Index:** $F = \sqrt{L \times P}$ — geometric mean of Laspeyres and Paasche. Satisfies both the Time Reversal Test and the Factor Reversal Test. Called "ideal" because it is the best compromise.
 
 </div>
 
@@ -6163,14 +5873,6 @@ Both methods are mathematically equivalent.
 | 8 | A price index of 120 means? | 20% rise from base |
 | 9 | Splicing two index series joins them at? | Overlap year |
 | 10 | Index used to convert money values into real values? | Price index (CPI/WPI) |
-
-## 12.12 Active-recall prompts
-
-1. Write Laspeyres, Paasche, Fisher formulas.
-2. Which index is "ideal" and why?
-3. Define base shifting in one line and write its formula.
-4. Write the formula for real wage.
-5. State the time-reversal and factor-reversal tests.
 
 ---
 
@@ -8513,378 +8215,6 @@ k − 1 − m.
 | Combined SD adds **$d^2$** | each group's variance + its squared distance from the combined mean |
 | Test stats | **Z**ig-large; **t**iny-σ-unknown; **χ²** for counts/variance; **F** for variance ratio |
 
----
-
-\newpage
-
-# Final words
-
-This book is now your **complete** JSO reference — 6 critical chapters with 30+ worked problems each, a full topic primer, two 100-Q full-length mocks, an examiner's framing bank, an error catalogue, and a memory-tricks page. Re-read twice, drill the worked examples, time yourself on the two mocks, and the JSO paper becomes a routine.
-
-Read smart. Drill hard. Sleep well. **190+/200 is yours.**
-
-— Pariksha365
-
----
-
-\newpage
-
-# APPENDIX J — Visual Reference Diagrams
-
-> Every diagram below encodes a concept that appears in 2–5 JSO questions per paper. Study the shape first, then the labels, then close the page and sketch it from memory.
-
-## J.1 The Normal (Bell) Curve — 68 / 95 / 99.7 rule
-
-<div style="text-align:center; margin: 16pt 0;">
-<svg width="560" height="220" viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="11">
-  <!-- axes -->
-  <line x1="30" y1="190" x2="540" y2="190" stroke="#555" stroke-width="1.5"/>
-  <line x1="280" y1="10" x2="280" y2="195" stroke="#aaa" stroke-width="1" stroke-dasharray="4,3"/>
-  <!-- bell curve path: parametric normal, μ=280, σ=60 -->
-  <path d="M 40,188
-    C 80,188 100,185 120,175
-    C 140,163 155,140 170,120
-    C 185,100 200,72 220,52
-    C 240,32 260,16 280,13
-    C 300,16 320,32 340,52
-    C 360,72 375,100 390,120
-    C 405,140 420,163 440,175
-    C 460,185 480,188 520,188"
-    fill="none" stroke="#0f4c75" stroke-width="2.5"/>
-
-  <!-- shaded regions: ±1σ = 220..340, ±2σ = 160..400, ±3σ = 100..460 -->
-  <!-- 99.7% region outer fill -->
-  <path d="M 100,188 C 105,186 115,178 130,165 C 145,150 158,128 175,107 C 195,82 215,55 235,35 C 255,18 268,13.5 280,13
-    C 292,13.5 305,18 325,35 C 345,55 365,82 385,107 C 402,128 415,150 430,165 C 445,178 455,186 460,188 Z"
-    fill="#dbeafe" opacity="0.7"/>
-  <!-- 95% region -->
-  <path d="M 160,188 C 165,186 175,178 190,160 C 205,142 220,112 240,83 C 255,62 268,35 280,28
-    C 292,35 305,62 320,83 C 340,112 355,142 370,160 C 385,178 395,186 400,188 Z"
-    fill="#bfdbfe" opacity="0.7"/>
-  <!-- 68% region -->
-  <path d="M 220,188 C 225,182 235,162 248,135 C 260,108 270,80 280,55
-    C 290,80 300,108 312,135 C 325,162 335,182 340,188 Z"
-    fill="#93c5fd" opacity="0.8"/>
-
-  <!-- σ tick marks on x-axis -->
-  <line x1="100" y1="188" x2="100" y2="196" stroke="#555" stroke-width="1"/>
-  <line x1="160" y1="188" x2="160" y2="196" stroke="#555" stroke-width="1"/>
-  <line x1="220" y1="188" x2="220" y2="196" stroke="#555" stroke-width="1"/>
-  <line x1="280" y1="188" x2="280" y2="196" stroke="#555" stroke-width="1"/>
-  <line x1="340" y1="188" x2="340" y2="196" stroke="#555" stroke-width="1"/>
-  <line x1="400" y1="188" x2="400" y2="196" stroke="#555" stroke-width="1"/>
-  <line x1="460" y1="188" x2="460" y2="196" stroke="#555" stroke-width="1"/>
-
-  <!-- x-axis labels -->
-  <text x="95"  y="210" text-anchor="middle" fill="#333">μ−3σ</text>
-  <text x="157" y="210" text-anchor="middle" fill="#333">μ−2σ</text>
-  <text x="218" y="210" text-anchor="middle" fill="#333">μ−σ</text>
-  <text x="280" y="210" text-anchor="middle" fill="#0f4c75" font-weight="bold">μ</text>
-  <text x="342" y="210" text-anchor="middle" fill="#333">μ+σ</text>
-  <text x="402" y="210" text-anchor="middle" fill="#333">μ+2σ</text>
-  <text x="462" y="210" text-anchor="middle" fill="#333">μ+3σ</text>
-
-  <!-- percentage labels inside shaded bands -->
-  <text x="280" y="175" text-anchor="middle" fill="#1e3a5f" font-weight="bold" font-size="12">68.26 %</text>
-  <text x="280" y="155" text-anchor="middle" fill="#1e3a5f" font-size="10">(±1σ)</text>
-
-  <!-- brace lines for 95% and 99.7% -->
-  <line x1="160" y1="140" x2="400" y2="140" stroke="#2563eb" stroke-width="1" stroke-dasharray="3,3"/>
-  <text x="290" y="137" text-anchor="middle" fill="#2563eb" font-size="10">95.44 % (±2σ)</text>
-
-  <line x1="100" y1="120" x2="460" y2="120" stroke="#6d28d9" stroke-width="1" stroke-dasharray="3,3"/>
-  <text x="295" y="117" text-anchor="middle" fill="#6d28d9" font-size="10">99.74 % (±3σ)</text>
-
-  <!-- title -->
-  <text x="280" y="22" text-anchor="middle" fill="#0f4c75" font-weight="bold" font-size="13">Standard Normal Distribution — the 68/95/99.7 rule</text>
-</svg>
-</div>
-
-> **Key reads off this diagram:**
-> - Within ±1σ → 68.26 % of data
-> - Within ±2σ → 95.44 % → P(|Z| < 1.96) ≈ 0.95 (note: 1.96, not exactly 2)
-> - Within ±3σ → 99.74 %
-> - The curve is **symmetric** around μ; mean = median = mode = μ
-
----
-
-## J.2 Shapes of Skewness — visual pattern
-
-<div style="text-align:center; margin: 16pt 0;">
-<svg width="560" height="200" viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="11">
-
-  <!-- LEFT panel: Negative skew (left tail) -->
-  <text x="90" y="20" text-anchor="middle" fill="#dc2626" font-weight="bold" font-size="12">Negative skew</text>
-  <text x="90" y="34" text-anchor="middle" fill="#dc2626" font-size="10">(left-tailed)</text>
-  <line x1="10" y1="180" x2="175" y2="180" stroke="#aaa" stroke-width="1"/>
-  <path d="M 12,178 C 20,176 30,160 50,130 C 65,108 80,75 100,55 C 115,40 125,35 135,40
-    C 148,50 155,80 162,120 C 167,145 170,165 174,178"
-    fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
-  <!-- order label -->
-  <text x="40"  y="168" text-anchor="middle" fill="#dc2626" font-size="10">Mn</text>
-  <text x="90"  y="168" text-anchor="middle" fill="#dc2626" font-size="10">Me</text>
-  <text x="135" y="168" text-anchor="middle" fill="#dc2626" font-size="10">Mo</text>
-  <text x="90" y="195" text-anchor="middle" fill="#dc2626" font-size="10">Mean &lt; Median &lt; Mode</text>
-
-  <!-- MIDDLE panel: Symmetric -->
-  <text x="280" y="20" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="12">Symmetric</text>
-  <text x="280" y="34" text-anchor="middle" fill="#15803d" font-size="10">(no skew)</text>
-  <line x1="195" y1="180" x2="365" y2="180" stroke="#aaa" stroke-width="1"/>
-  <path d="M 197,178 C 205,175 215,160 230,135 C 245,108 258,78 280,48
-    C 302,78 315,108 330,135 C 345,160 355,175 363,178"
-    fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
-  <text x="280" y="168" text-anchor="middle" fill="#15803d" font-size="10">Mn=Me=Mo</text>
-  <text x="280" y="195" text-anchor="middle" fill="#15803d" font-size="10">Mean = Median = Mode</text>
-
-  <!-- RIGHT panel: Positive skew (right tail) -->
-  <text x="465" y="20" text-anchor="middle" fill="#d97706" font-weight="bold" font-size="12">Positive skew</text>
-  <text x="465" y="34" text-anchor="middle" fill="#d97706" font-size="10">(right-tailed)</text>
-  <line x1="385" y1="180" x2="550" y2="180" stroke="#aaa" stroke-width="1"/>
-  <path d="M 387,178 C 393,165 400,140 412,115 C 422,92 430,65 445,48
-    C 455,38 462,36 470,45 C 482,60 490,90 500,120 C 510,148 520,165 535,175 C 542,178 547,179 549,179"
-    fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
-  <text x="420" y="168" text-anchor="middle" fill="#d97706" font-size="10">Mo</text>
-  <text x="455" y="168" text-anchor="middle" fill="#d97706" font-size="10">Me</text>
-  <text x="500" y="168" text-anchor="middle" fill="#d97706" font-size="10">Mn</text>
-  <text x="465" y="195" text-anchor="middle" fill="#d97706" font-size="10">Mode &lt; Median &lt; Mean</text>
-
-</svg>
-</div>
-
-> **Read:** The mean is always pulled toward the **tail**. The mode sits at the **peak**. Median lies between.
-
----
-
-## J.3 Kurtosis shapes — three curves on one axis
-
-<div style="text-align:center; margin: 16pt 0;">
-<svg width="460" height="200" viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="11">
-  <line x1="20" y1="185" x2="440" y2="185" stroke="#aaa" stroke-width="1"/>
-  <line x1="230" y1="10" x2="230" y2="190" stroke="#ddd" stroke-width="1"/>
-
-  <!-- Platykurtic — flat: β₂ < 3 -->
-  <path d="M 60,184 C 90,182 120,170 150,155 C 170,143 190,128 210,115 C 222,107 228,103 230,102
-    C 232,103 238,107 250,115 C 270,128 290,143 310,155 C 340,170 370,182 400,184"
-    fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="6,3"/>
-  <text x="400" y="178" fill="#22c55e" font-size="10">Platy (β₂&lt;3)</text>
-
-  <!-- Mesokurtic — normal: β₂ = 3 -->
-  <path d="M 80,184 C 100,182 120,172 145,150 C 165,132 185,105 205,78 C 215,62 225,42 230,30
-    C 235,42 245,62 255,78 C 275,105 295,132 315,150 C 340,172 360,182 380,184"
-    fill="none" stroke="#0f4c75" stroke-width="2.2"/>
-  <text x="365" y="148" fill="#0f4c75" font-size="10">Meso (β₂=3)</text>
-
-  <!-- Leptokurtic — sharp: β₂ > 3 -->
-  <path d="M 150,184 C 160,183 170,176 185,162 C 200,145 215,118 223,90 C 227,72 229,48 230,18
-    C 231,48 233,72 237,90 C 245,118 260,145 275,162 C 290,176 300,183 310,184"
-    fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="3,2"/>
-  <text x="316" y="158" fill="#ef4444" font-size="10">Lepto (β₂&gt;3)</text>
-
-  <text x="230" y="200" text-anchor="middle" fill="#555" font-size="11" font-weight="bold">β₂ comparison — same μ and σ</text>
-</svg>
-</div>
-
-> **Read:** All three share the same mean and SD. Leptokurtic = sharper peak + fatter tails. Platykurtic = flatter peak. Mesokurtic = normal shape (β₂ = 3).
-
----
-
-## J.4 Scatter-plot patterns — recognising r at a glance
-
-<div style="text-align:center; margin: 16pt 0;">
-<svg width="560" height="160" viewBox="0 0 560 160" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
-
-  <!-- Panel A: r ≈ +1 -->
-  <text x="68" y="14" text-anchor="middle" fill="#15803d" font-weight="bold">r ≈ +1</text>
-  <rect x="10" y="18" width="116" height="100" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
-  <line x1="20" y1="108" x2="116" y2="28" stroke="#15803d" stroke-width="1.2" stroke-dasharray="3,2"/>
-  <!-- dots along positive line -->
-  <circle cx="25"  cy="106" r="3" fill="#15803d"/><circle cx="35"  cy="96" r="3" fill="#15803d"/>
-  <circle cx="48"  cy="84" r="3" fill="#15803d"/><circle cx="60"  cy="73" r="3" fill="#15803d"/>
-  <circle cx="72"  cy="63" r="3" fill="#15803d"/><circle cx="84"  cy="53" r="3" fill="#15803d"/>
-  <circle cx="95"  cy="43" r="3" fill="#15803d"/><circle cx="108" cy="33" r="3" fill="#15803d"/>
-  <text x="68" y="132" text-anchor="middle" fill="#15803d">Perfect positive</text>
-
-  <!-- Panel B: moderate r ≈ +0.7 -->
-  <text x="208" y="14" text-anchor="middle" fill="#2563eb" font-weight="bold">r ≈ +0.7</text>
-  <rect x="150" y="18" width="116" height="100" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
-  <line x1="160" y1="108" x2="256" y2="28" stroke="#2563eb" stroke-width="1" stroke-dasharray="3,2"/>
-  <!-- dots scattered around line -->
-  <circle cx="165" cy="98" r="3" fill="#2563eb"/><circle cx="175" cy="92" r="3" fill="#2563eb"/>
-  <circle cx="185" cy="80" r="3" fill="#2563eb"/><circle cx="192" cy="75" r="3" fill="#2563eb"/>
-  <circle cx="198" cy="65" r="3" fill="#2563eb"/><circle cx="215" cy="55" r="3" fill="#2563eb"/>
-  <circle cx="228" cy="60" r="3" fill="#2563eb"/><circle cx="238" cy="40" r="3" fill="#2563eb"/>
-  <circle cx="248" cy="32" r="3" fill="#2563eb"/>
-  <text x="208" y="132" text-anchor="middle" fill="#2563eb">Moderate positive</text>
-
-  <!-- Panel C: r ≈ 0 -->
-  <text x="348" y="14" text-anchor="middle" fill="#6b7280" font-weight="bold">r ≈ 0</text>
-  <rect x="290" y="18" width="116" height="100" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
-  <line x1="300" y1="68" x2="396" y2="68" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3,2"/>
-  <circle cx="300" cy="42"  r="3" fill="#6b7280"/><circle cx="315" cy="90"  r="3" fill="#6b7280"/>
-  <circle cx="325" cy="55"  r="3" fill="#6b7280"/><circle cx="338" cy="105" r="3" fill="#6b7280"/>
-  <circle cx="348" cy="30"  r="3" fill="#6b7280"/><circle cx="360" cy="80"  r="3" fill="#6b7280"/>
-  <circle cx="372" cy="48"  r="3" fill="#6b7280"/><circle cx="385" cy="95"  r="3" fill="#6b7280"/>
-  <text x="348" y="132" text-anchor="middle" fill="#6b7280">No linear relationship</text>
-
-  <!-- Panel D: r ≈ -0.8 -->
-  <text x="488" y="14" text-anchor="middle" fill="#dc2626" font-weight="bold">r ≈ −0.8</text>
-  <rect x="430" y="18" width="116" height="100" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
-  <line x1="440" y1="28" x2="536" y2="108" stroke="#dc2626" stroke-width="1" stroke-dasharray="3,2"/>
-  <circle cx="442" cy="30" r="3" fill="#dc2626"/><circle cx="454" cy="38" r="3" fill="#dc2626"/>
-  <circle cx="462" cy="50" r="3" fill="#dc2626"/><circle cx="470" cy="60" r="3" fill="#dc2626"/>
-  <circle cx="482" cy="68" r="3" fill="#dc2626"/><circle cx="492" cy="80" r="3" fill="#dc2626"/>
-  <circle cx="502" cy="90" r="3" fill="#dc2626"/><circle cx="512" cy="98" r="3" fill="#dc2626"/>
-  <text x="488" y="132" text-anchor="middle" fill="#dc2626">Strong negative</text>
-
-</svg>
-</div>
-
----
-
-## J.5 Two regression lines — how r controls the angle
-
-<div style="text-align:center; margin: 16pt 0;">
-<svg width="560" height="200" viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
-
-  <!-- Panel A: r = 0 — perpendicular lines -->
-  <text x="90" y="16" text-anchor="middle" fill="#6b7280" font-weight="bold" font-size="11">r = 0</text>
-  <rect x="10" y="20" width="160" height="155" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
-  <!-- Y on X: horizontal line through mean -->
-  <line x1="20" y1="97" x2="160" y2="97" stroke="#2563eb" stroke-width="2"/>
-  <!-- X on Y: vertical line through mean -->
-  <line x1="90" y1="30" x2="90" y2="167" stroke="#dc2626" stroke-width="2"/>
-  <!-- means dot -->
-  <circle cx="90" cy="97" r="4" fill="#111" stroke="#fff" stroke-width="1"/>
-  <text x="98" y="92" fill="#111" font-size="9">(X̄, Ȳ)</text>
-  <!-- labels -->
-  <text x="155" y="91" fill="#2563eb" font-size="9">Y on X</text>
-  <text x="94" y="35" fill="#dc2626" font-size="9">X on Y</text>
-  <text x="90" y="193" text-anchor="middle" fill="#555">Lines ⊥ when r = 0</text>
-
-  <!-- Panel B: 0 < r < 1 — two lines diverging slightly -->
-  <text x="285" y="16" text-anchor="middle" fill="#d97706" font-weight="bold" font-size="11">0 &lt; r &lt; 1</text>
-  <rect x="205" y="20" width="160" height="155" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
-  <!-- Y on X: steeper slope -->
-  <line x1="215" y1="150" x2="355" y2="38" stroke="#2563eb" stroke-width="2"/>
-  <!-- X on Y: shallower slope (through same point) -->
-  <line x1="215" y1="130" x2="355" y2="58" stroke="#dc2626" stroke-width="2"/>
-  <!-- means dot -->
-  <circle cx="285" cy="94" r="4" fill="#111" stroke="#fff" stroke-width="1"/>
-  <text x="293" y="89" fill="#111" font-size="9">(X̄, Ȳ)</text>
-  <text x="350" y="36" fill="#2563eb" font-size="9">Y/X</text>
-  <text x="350" y="56" fill="#dc2626" font-size="9">X/Y</text>
-  <text x="285" y="193" text-anchor="middle" fill="#555">Lines spread; angle = f(r)</text>
-
-  <!-- Panel C: r = 1 — coincident lines -->
-  <text x="480" y="16" text-anchor="middle" fill="#15803d" font-weight="bold" font-size="11">r = ±1</text>
-  <rect x="400" y="20" width="160" height="155" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
-  <!-- single line (both regression lines coincide) -->
-  <line x1="410" y1="155" x2="550" y2="35" stroke="#15803d" stroke-width="3"/>
-  <!-- means dot -->
-  <circle cx="480" cy="95" r="4" fill="#111" stroke="#fff" stroke-width="1"/>
-  <text x="488" y="90" fill="#111" font-size="9">(X̄, Ȳ)</text>
-  <text x="548" y="33" fill="#15803d" font-size="9">Y/X ≡ X/Y</text>
-  <text x="480" y="193" text-anchor="middle" fill="#555">Lines coincide when |r|=1</text>
-
-</svg>
-</div>
-
-> **Key:** Both lines always pass through $(\bar X, \bar Y)$. As $|r| \to 1$ the lines collapse onto each other. When r = 0 they stand perpendicular.
-
----
-
-## J.6 Less-than Ogive → median and quartiles
-
-<div style="text-align:center; margin: 16pt 0;">
-<svg width="460" height="220" viewBox="0 0 460 220" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
-  <!-- axes -->
-  <line x1="50" y1="10" x2="50" y2="195" stroke="#555" stroke-width="1.5"/>
-  <line x1="45" y1="195" x2="430" y2="195" stroke="#555" stroke-width="1.5"/>
-
-  <!-- y-axis labels: CF% -->
-  <text x="42" y="195" text-anchor="end" fill="#333">0</text>
-  <text x="42" y="148" text-anchor="end" fill="#555">25</text>
-  <text x="42" y="100" text-anchor="end" fill="#555">50</text>
-  <text x="42" y="52"  text-anchor="end" fill="#555">75</text>
-  <text x="42" y="14"  text-anchor="end" fill="#555">100</text>
-  <text x="16" y="110" text-anchor="middle" fill="#555" transform="rotate(-90,16,110)">Cumulative frequency %</text>
-
-  <!-- less-than ogive (S-curve) -->
-  <path d="M 80,193 C 100,192 130,185 165,170 C 200,152 220,130 250,100 C 278,72 300,48 330,28 C 355,14 380,12 410,11"
-    fill="none" stroke="#2563eb" stroke-width="2.5"/>
-  <text x="415" y="11" fill="#2563eb" font-size="9" font-weight="bold">Less-than ogive</text>
-
-  <!-- Q1 guideline at 25% -->
-  <line x1="50" y1="148" x2="210" y2="148" stroke="#f97316" stroke-width="1" stroke-dasharray="4,3"/>
-  <line x1="210" y1="148" x2="210" y2="195" stroke="#f97316" stroke-width="1" stroke-dasharray="4,3"/>
-  <circle cx="210" cy="148" r="4" fill="#f97316"/>
-  <text x="210" y="210" text-anchor="middle" fill="#f97316">Q₁</text>
-
-  <!-- Median guideline at 50% -->
-  <line x1="50"  y1="100" x2="250" y2="100" stroke="#15803d" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <line x1="250" y1="100" x2="250" y2="195" stroke="#15803d" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <circle cx="250" cy="100" r="5" fill="#15803d"/>
-  <text x="250" y="210" text-anchor="middle" fill="#15803d" font-weight="bold">Median</text>
-
-  <!-- Q3 guideline at 75% -->
-  <line x1="50"  y1="52" x2="300" y2="52" stroke="#7c3aed" stroke-width="1" stroke-dasharray="4,3"/>
-  <line x1="300" y1="52" x2="300" y2="195" stroke="#7c3aed" stroke-width="1" stroke-dasharray="4,3"/>
-  <circle cx="300" cy="52" r="4" fill="#7c3aed"/>
-  <text x="300" y="210" text-anchor="middle" fill="#7c3aed">Q₃</text>
-
-  <!-- axis label -->
-  <text x="240" y="218" text-anchor="middle" fill="#555">Class upper boundaries (x-axis)</text>
-</svg>
-</div>
-
-> **Read:** Draw a horizontal line from the y-axis at N/2 (50 %) to the ogive curve, then drop a vertical to the x-axis → **Median**. At N/4 → Q₁. At 3N/4 → Q₃.
-
----
-
-## J.7 Lorenz Curve — inequality measurement
-
-<div style="text-align:center; margin: 16pt 0;">
-<svg width="350" height="300" viewBox="0 0 350 300" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
-  <!-- axes -->
-  <line x1="40" y1="10" x2="40" y2="260" stroke="#555" stroke-width="1.5"/>
-  <line x1="35" y1="260" x2="310" y2="260" stroke="#555" stroke-width="1.5"/>
-
-  <!-- axis labels -->
-  <text x="175" y="280" text-anchor="middle" fill="#555">Cumulative % of population</text>
-  <text x="15" y="140" text-anchor="middle" fill="#555" transform="rotate(-90,15,140)">Cumulative % of income</text>
-
-  <!-- Corner dots -->
-  <text x="35" y="275" fill="#333">0</text>
-  <text x="305" y="275" fill="#333">100</text>
-
-  <!-- Line of equality (diagonal) -->
-  <line x1="40" y1="260" x2="310" y2="10" stroke="#15803d" stroke-width="1.5" stroke-dasharray="6,3"/>
-  <text x="300" y="20" fill="#15803d" font-size="9">Line of equality</text>
-
-  <!-- Lorenz curve (bowed below) -->
-  <path d="M 40,260 C 80,258 120,250 160,228 C 200,202 230,165 260,120 C 280,92 300,48 310,10"
-    fill="#dbeafe" stroke="#2563eb" stroke-width="2" fill-opacity="0.4"/>
-  <text x="260" y="175" fill="#2563eb" font-size="9">Lorenz curve</text>
-
-  <!-- Gini label: area between -->
-  <text x="155" y="215" fill="#dc2626" font-size="11" font-weight="bold">A</text>
-  <text x="155" y="240" fill="#6b7280" font-size="9">(Gini = A / (A+B))</text>
-  <text x="260" y="240" fill="#6b7280" font-size="9">B</text>
-
-  <!-- tick marks -->
-  <line x1="40"  y1="260" x2="40"  y2="265" stroke="#555"/><text x="40"  y="274" text-anchor="middle" fill="#555">0</text>
-  <line x1="175" y1="260" x2="175" y2="265" stroke="#555"/><text x="175" y="274" text-anchor="middle" fill="#555">50</text>
-  <line x1="310" y1="260" x2="310" y2="265" stroke="#555"/><text x="310" y="274" text-anchor="middle" fill="#555">100</text>
-
-  <text x="175" y="295" text-anchor="middle" fill="#555" font-weight="bold">Lorenz Curve — income inequality</text>
-</svg>
-</div>
-
-> **Read:**
-> - Diagonal = perfect equality (everyone earns the same share).
-> - Bow = the actual Lorenz curve (reality is unequal).
-> - Gini coefficient = area A / (A + B). Ranges 0 (perfect equality) to 1 (perfect inequality).
-> - The greater the bow, the greater the inequality.
 
 ---
 
@@ -9747,194 +9077,6 @@ A **price index** (like the GDP deflator or WPI). Real GDP = Nominal GDP / Price
 440/400 × 100 = **110** ✓.
 
 </div>
-
----
-
-\newpage
-
-# APPENDIX L — Plain-English Concept Primers (for first-time readers)
-
-> If you have **never studied statistics before**, read the primer for each chapter before reading its main section. Each primer uses zero formulas — only plain language and intuition. After the primer, the formulas will land cleanly.
-
----
-
-## L.1  What is "data presentation"? (Chapter 1 primer)
-
-Imagine you collect the ages of 200 people. You have a list of 200 numbers. In this raw form, the data tells you nothing useful at a glance.
-
-**What statisticians do:** They group the numbers into bins (e.g., 20–30, 30–40, 40–50) and count how many fall in each bin. This table is a **frequency distribution** — now you can see the shape of the data instantly.
-
-**Then they draw it.** A **histogram** is that table drawn as touching bars (width = one bin, height = count). A **frequency polygon** joins the midpoints of the bars with a line. An **ogive** is the running total (cumulative), which lets you answer "what % of people are younger than 35?".
-
-**The key insight:** The right graph makes the pattern visible instantly. That's why data presentation exists — not to decorate reports, but to reveal structure that raw numbers hide.
-
----
-
-## L.2  What is "central tendency"? (Chapter 2 primer)
-
-Suppose two factories produce light bulbs. Factory A has lifetimes: 800, 900, 850, 950, 900 hours. Factory B: 200, 1500, 100, 1800, 400 hours. Both have the same **average** (= 880 hours), but Factory B is clearly worse.
-
-That average is a **measure of central tendency** — it picks one number to represent the centre of a dataset. The three main ones:
-
-- **Mean:** Add everything up, divide by count. Fair, uses all data. Pulled by outliers.
-- **Median:** The middle value when you line everyone up in order. Not affected by extremes.
-- **Mode:** The most common value. What occurs most often.
-
-**Why three?** Because different situations need different summaries. If 9 people earn ₹20,000 and 1 CEO earns ₹10,000,000, the mean salary is ₹1,018,000 — wildly misleading. The median (₹20,000) tells you what most people actually earn.
-
----
-
-## L.3  What is "dispersion"? (Chapter 3 primer)
-
-The average tells you the centre. But two datasets can have the same average and be completely different.
-
-Class A scores: 70, 70, 70, 70, 70. Class B: 50, 60, 70, 80, 90. Both have mean 70. But Class A is uniform; Class B is spread out.
-
-**Dispersion** measures this spread. If dispersion is small, data is bunched near the mean (consistent, predictable). If large, data is scattered (variable, risky).
-
-The most important dispersion measure: **standard deviation (SD)**. Think of it as the "average distance from the mean". If SD = 0, all values are identical. The larger the SD, the more spread.
-
-**CV (coefficient of variation)** = SD ÷ Mean. It answers: "is a SD of 10 big or small?" — compared to a mean of 20, it's huge (50%); compared to a mean of 1000, it's tiny (1%). Use CV to compare variability between datasets with different scales.
-
----
-
-## L.4  What are "moments"? (Chapter 4 primer)
-
-A **moment** is a formal way to summarise the shape of a distribution using powers of deviations from the mean.
-
-- 2nd moment = variance (captures width/spread).
-- 3rd moment = captures lopsidedness (**skewness**). If positive, the tail stretches right.
-- 4th moment = captures peakedness (**kurtosis**). High 4th moment = values are concentrated near the mean with heavy tails.
-
-**Skewness in plain English:** Imagine salary distributions at a company. Most employees earn ₹30,000–50,000 but a handful of executives earn ₹2 million. The bulk is on the left; the tail stretches right — **positive skew**. The mean gets pulled toward those high salaries, past the median, past the mode. That's the key diagnostic: position of mean vs median vs mode tells you skewness direction.
-
-**Kurtosis in plain English:** Compare two investments with the same average return. One is steady (low kurtosis = platykurtic — outcomes cluster near average). The other is mostly flat but occasionally swings wildly (high kurtosis = leptokurtic — fat tails). Same mean, same SD, but completely different risk profiles. Kurtosis captures this.
-
----
-
-## L.5  What is "correlation"? (Chapter 5 primer)
-
-**Correlation** answers: "Do these two things move together?"
-
-Examples: Height and weight (taller people tend to weigh more — **positive correlation**). Ice cream sales and drowning incidents (both go up in summer, but **no causal link**). Unemployment rate and GDP growth (inversely related — **negative correlation**).
-
-Karl Pearson's r quantifies this: +1 means a perfect straight-line relationship going up. −1 means a perfect straight-line relationship going down. 0 means no linear relationship.
-
-**Regression** answers a follow-up: "If I know X, what is my best guess for Y?" A regression line is the "line of best fit" through the scatter of points. It minimises the total squared error between actual Y values and line-predicted Y values.
-
-**The two regression lines:** One predicts Y from X (Y on X line); the other predicts X from Y (X on Y line). They are different lines unless correlation is perfect (r = ±1), in which case they coincide. Both lines always cross at the point (mean of X, mean of Y).
-
----
-
-## L.6  What is "probability"? (Chapter 6 primer)
-
-**Probability** is the science of quantifying uncertainty.
-
-When you flip a fair coin, there are 2 equally likely outcomes. Heads = 1 out of 2 → probability = 1/2. When you draw a card from a standard deck, there are 52 equally likely outcomes. Getting an ace = 4 out of 52 = 1/13.
-
-**Three definitions:**
-- Classical (equally likely outcomes, listed above).
-- Frequentist (toss the coin 1 million times; the fraction of heads converges to 0.5).
-- Axiomatic (a mathematical framework: probability is a function with 3 axioms).
-
-**Conditional probability:** P(A | B) = "probability of A given that B has already happened." If it rained today, the probability that the ground is wet is very high (the event "ground is wet" is conditional on rain).
-
-**Bayes' theorem** flips the conditioning: given the ground IS wet, what's the probability it rained? This "reverse conditioning" — from effect back to cause — appears in diagnostic testing, spam filtering, and at least one JSO question every paper.
-
----
-
-## L.7  What is a "random variable"? (Chapter 7 primer)
-
-A **random variable** is a variable whose value is determined by a random experiment.
-
-When you roll a die, the outcome X can be 1, 2, 3, 4, 5, or 6. Each value has a probability (1/6). The list of values and their probabilities is the **probability distribution**.
-
-**Discrete vs Continuous:**
-- If X can only take countable values (number of heads, number of defects), it's discrete. Its distribution is described by a **probability mass function (pmf)**.
-- If X can take any value in an interval (someone's exact weight, time to failure of a machine), it's continuous. Its distribution is described by a **probability density function (pdf)**.
-
-**The four named distributions** you must know are just the most commonly occurring shapes in real problems:
-- **Binomial** → count of successes in n fixed independent trials.
-- **Poisson** → count of rare events in a fixed time/area.
-- **Normal** → the famous bell curve, appears naturally when many independent small factors combine (heights, measurement errors, exam scores).
-- **Hypergeometric** → like Binomial but without replacement (the probabilities change with each draw).
-
----
-
-## L.8  What is "sampling"? (Chapter 8 primer)
-
-You want to know the average income of India's 1.4 billion people. Measuring every person is impossible. So you measure a sample — say 100,000 people — and estimate the population's income from it.
-
-**The core question:** How do you choose those 100,000 so the estimate is trustworthy?
-
-**Simple random sampling (SRS):** Every person has an equal chance. Like a lottery.
-
-**Stratified:** Divide population into groups (rural / urban; states; income brackets) and randomly sample within each group. More precise because you ensure representation of each group.
-
-**Cluster:** Geographic areas (districts, villages) are the sampling units. Sample some clusters, then study every person within those clusters. Cheaper than travelling everywhere.
-
-**Systematic:** Pick every kth person from an ordered list.
-
-**The standard error** of your estimate measures how much it would vary across different random samples. Larger sample → smaller SE → more precise estimate. This is the **mathematical guarantee** that probability sampling provides — which non-probability methods (quota, judgement, snowball) cannot give.
-
----
-
-## L.9  What is "statistical inference"? (Chapter 9 primer)
-
-You measured a sample; now you want to say something about the whole population. That's inference.
-
-**Estimation:** Use the sample to pin down a population number. "Based on our sample of 200 voters, we estimate 58% will vote for Party A, with a margin of error of ±3%." The ±3% is the confidence interval — a range wide enough that you're 95% sure the true value lies inside.
-
-**Hypothesis testing:** You have a specific claim ("this medicine reduces fever by 2°C on average") and you test it against data. The null hypothesis (H₀) is the conservative position ("no effect"). The alternative (H₁) is the claim. You collect data and ask: "Is this data surprising if H₀ were true?" If yes, you reject H₀.
-
-**The risk table:**
-
-| | H₀ true | H₀ false |
-|--|---------|---------|
-| Reject H₀ | **Type I error (false alarm)** | Correct (Power) |
-| Don't reject | Correct | **Type II error (missed detection)** |
-
-Setting α = 5% means you'll accept a 5% chance of a false alarm. Power = 1 − β tells you how good the test is at catching a real effect.
-
----
-
-## L.10  What is "ANOVA"? (Chapter 10 primer)
-
-Suppose you test three fertilisers on crops. Each fertiliser is applied to several plots, and you measure yield. Is there any real difference between fertilisers, or is the yield variation just random noise?
-
-You could run three t-tests (A vs B, A vs C, B vs C). But three tests at 5% significance gives a 14% chance of a false alarm across all three. ANOVA does all comparisons in one coherent test.
-
-**The idea:** If fertilisers matter, yields should vary more *between* fertiliser groups than *within* each group (within-group variation = random noise). ANOVA computes this ratio: F = (variance between groups) / (variance within groups). A large F → groups are genuinely different.
-
-**Partition of variation:** Total variation = variation between groups + variation within groups. This is the SST = SSB + SSW identity.
-
----
-
-## L.11  What is "time series analysis"? (Chapter 11 primer)
-
-A **time series** is any variable measured repeatedly over time: monthly sales, daily stock prices, annual rainfall, quarterly GDP.
-
-The goal: understand and forecast the pattern.
-
-Every time series is a mixture of four components:
-1. **Trend** — the long-run direction (upward, downward, flat).
-2. **Seasonal** — the regular within-year cycle (ice cream sales spike in summer every year).
-3. **Cyclical** — the business cycle (boom-bust, 2–10 year waves).
-4. **Irregular** — random shocks (a pandemic, a flood).
-
-To analyse the series you need to **separate** these components. Once you have the trend alone, you can project it forward (forecasting). Once you have the seasonal index, you can "deseasonalise" data to see whether this month's sales are genuinely good or just good because it's festive season.
-
----
-
-## L.12  What are "index numbers"? (Chapter 12 primer)
-
-Prices change over time. How do you express "prices overall went up by 20% since 2010"?
-
-An **index number** is that summary. It takes a baseline period (Base = 100) and expresses current levels as a ratio. A price index of 125 means prices are 25% higher than the base.
-
-Why not just use percentage change? Because there are many prices (rice, rent, petrol, medicine) and you need to **average** them in a sensible way — weighted by how much people actually spend on each item. That's where Laspeyres, Paasche, and Fisher come in: they differ in whether they use old quantities, new quantities, or a blend as weights.
-
-**Real-world examples:** The Consumer Price Index (CPI) measures inflation; it's used to adjust salaries ("dearness allowance" in government pay). The Wholesale Price Index (WPI) measures producer-level inflation. The Index of Industrial Production (IIP) is a quantity index.
 
 ---
 

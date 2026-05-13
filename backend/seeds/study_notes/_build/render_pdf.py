@@ -112,13 +112,13 @@ HTML_TEMPLATE = """<!doctype html>
 CSS = textwrap.dedent("""
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-  @page { size: A4; margin: 18mm 16mm 22mm 16mm; }
+  @page { size: A4; margin: 15mm 14mm 18mm 14mm; }
 
   html, body {
     font-family: "Inter", "DejaVu Sans", "Noto Sans", system-ui, sans-serif;
-    line-height: 1.62;
+    line-height: 1.55;
     color: #1a202c;
-    font-size: 10.5pt;
+    font-size: 10pt;
   }
 
   body { margin: 0; }
@@ -210,50 +210,50 @@ CSS = textwrap.dedent("""
   /* ── Headings ── */
   h1 {
     color: #6c1d5f;
-    border-bottom: 2.5px solid #6c1d5f;
-    padding-bottom: 5pt;
-    margin-top: 8pt;
+    border-bottom: 2px solid #6c1d5f;
+    padding-bottom: 3pt;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
     page-break-after: avoid;
-    font-size: 19pt;
+    font-size: 17pt;
     font-weight: 700;
     letter-spacing: -0.01em;
   }
   h2 {
     color: #0f4c75;
-    margin-top: 14pt;
-    margin-bottom: 3pt;
-    font-size: 13.5pt;
+    margin-top: 10pt;
+    margin-bottom: 2pt;
+    font-size: 12pt;
     font-weight: 600;
     page-break-after: avoid;
-    border-left: 3.5pt solid #0f4c75;
-    padding-left: 7pt;
+    border-left: 3pt solid #0f4c75;
+    padding-left: 6pt;
   }
   h3 {
     color: #1d4ed8;
-    font-size: 11.5pt;
+    font-size: 10.5pt;
     font-weight: 600;
-    margin-top: 9pt;
-    margin-bottom: 2pt;
+    margin-top: 7pt;
+    margin-bottom: 1pt;
     page-break-after: avoid;
   }
   h4 {
     color: #374151;
-    font-size: 10.5pt;
     font-weight: 600;
-    margin-top: 6pt;
-    margin-bottom: 2pt;
+    margin-top: 5pt;
+    margin-bottom: 1pt;
     page-break-after: avoid;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    font-size: 9pt;
+    font-size: 8.5pt;
   }
-  p { margin: 0 0 7pt 0; orphans: 2; widows: 2; }
-  li { margin-bottom: 7pt; line-height: 1.68; orphans: 2; widows: 2; }
-  ol, ul { padding-left: 22pt; margin: 5pt 0 10pt 0; }
-  ol > li { margin-bottom: 9pt; }
+  p { margin: 0 0 5pt 0; orphans: 2; widows: 2; }
+  li { margin-bottom: 4pt; line-height: 1.55; orphans: 2; widows: 2; }
+  ol, ul { padding-left: 18pt; margin: 3pt 0 7pt 0; }
+  ol > li { margin-bottom: 5pt; }
   /* Nested lists — slightly tighter */
-  li > ul, li > ol { margin-top: 4pt; margin-bottom: 2pt; }
-  li > ul > li, li > ol > li { margin-bottom: 4pt; }
+  li > ul, li > ol { margin-top: 2pt; margin-bottom: 1pt; }
+  li > ul > li, li > ol > li { margin-bottom: 2pt; }
   h1 + *, h2 + *, h3 + *, h4 + * { page-break-before: avoid; }
 
   /* ── Plain blockquote (narrative / italic aside) ── */
@@ -284,21 +284,19 @@ CSS = textwrap.dedent("""
   .steps {
     background: #f0f9ff;
     border: 1px solid #bae6fd;
-    border-left: 4pt solid #0369a1;
-    border-radius: 4pt;
-    padding: 8pt 14pt;
-    margin: 7pt 0;
-    font-family: "JetBrains Mono", "DejaVu Sans Mono", monospace;
+    border-left: 3pt solid #0369a1;
+    border-radius: 3pt;
+    padding: 5pt 10pt;
+    margin: 5pt 0;
     font-size: 9.5pt;
-    line-height: 1.80;
+    line-height: 1.65;
     page-break-inside: avoid;
   }
-  .steps p { margin: 0 0 8pt 0; }
-  .steps ol, .steps ul { margin: 4pt 0 8pt 0; }
-  .steps li { margin-bottom: 6pt; }
+  .steps p { margin: 0 0 4pt 0; }
+  .steps ol, .steps ul { margin: 2pt 0 5pt 0; }
+  .steps li { margin-bottom: 3pt; }
   .steps strong { color: #0369a1; }
   .steps code { background: none; padding: 0; font-size: 9.5pt; }
-  /* Inline annotation inside step blocks — subtle grey italic */
   .steps em { color: #6b7280; font-style: italic; font-size: 8.5pt; }
 
   /* ── Method A / Method B sub-boxes (inside .worked) ── */
@@ -350,24 +348,23 @@ CSS = textwrap.dedent("""
 
   hr { border: 0; border-top: 1px dashed #94a3b8; margin: 14pt 0; }
 
-  /* ── Callout boxes — EPFO-style with labeled color header bars ── */
-  /* Shared rules for all labeled callout boxes */
-  .intuition, .definition, .formula, .worked, .examtip,
+  /* ── Callout boxes ── */
+  .intuition, .definition, .formula, .examtip,
   .keypoint, .mnemonic, .pitfall, .pyq {
-    border-radius: 4pt;
-    margin: 12pt 0;
+    border-radius: 3pt;
+    margin: 8pt 0;
     overflow: hidden;
     page-break-inside: avoid;
   }
   /* Shared ::before label bar */
   .intuition::before, .definition::before, .formula::before,
-  .worked::before, .examtip::before, .keypoint::before,
+  .examtip::before, .keypoint::before,
   .mnemonic::before, .pitfall::before, .pyq::before {
     display: block;
-    padding: 4pt 12pt;
+    padding: 3pt 10pt;
     font-weight: 700;
-    font-size: 8pt;
-    letter-spacing: 0.08em;
+    font-size: 7.5pt;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
   }
@@ -376,13 +373,13 @@ CSS = textwrap.dedent("""
   .intuition {
     background: #e6f7f5;
     border: 1px solid #0d9488;
-    padding: 8pt 12pt;
+    padding: 6pt 10pt;
     color: #134e4a;
   }
   .intuition::before {
-    content: "\\2714  Quick Recall";
+    content: "Quick Recall";
     background: #0d9488;
-    margin: -8pt -12pt 8pt -12pt;
+    margin: -6pt -10pt 6pt -10pt;
   }
   .intuition strong { color: #0f766e; }
 
@@ -390,13 +387,13 @@ CSS = textwrap.dedent("""
   .definition {
     background: #eef2ff;
     border: 1px solid #4f46e5;
-    padding: 8pt 12pt;
+    padding: 6pt 10pt;
     color: #1e1b4b;
   }
   .definition::before {
-    content: "\\25B6  Definition";
+    content: "Definition";
     background: #4f46e5;
-    margin: -8pt -12pt 8pt -12pt;
+    margin: -6pt -10pt 6pt -10pt;
   }
   .definition strong { color: #3730a3; }
 
@@ -404,41 +401,44 @@ CSS = textwrap.dedent("""
   .formula {
     background: #faf5ff;
     border: 1px solid #7c3aed;
-    padding: 8pt 12pt;
+    padding: 6pt 10pt;
     color: #3b0764;
   }
   .formula::before {
-    content: "\\25C6  Formula / Key Points";
+    content: "Formula";
     background: #7c3aed;
-    margin: -8pt -12pt 8pt -12pt;
+    margin: -6pt -10pt 6pt -10pt;
   }
   .formula strong { color: #6d28d9; }
 
-  /* Worked Example (forest green) */
+  /* Worked Example — clean left-border style, no heavy banner */
   .worked {
-    background: #f0fdf4;
-    border: 1px solid #16a34a;
-    padding: 8pt 12pt;
+    background: #f9fefb;
+    border: none;
+    border-left: 3pt solid #16a34a;
+    border-radius: 0 3pt 3pt 0;
+    padding: 5pt 10pt;
     color: #14532d;
+    margin: 6pt 0;
+    page-break-inside: avoid;
   }
-  .worked::before {
-    content: "\\270E  Worked Example";
-    background: #16a34a;
-    margin: -8pt -12pt 8pt -12pt;
-  }
+  .worked::before { content: none; }
   .worked strong { color: #15803d; }
+  .worked p { margin: 0 0 3pt 0; }
+  .worked ul, .worked ol { margin: 2pt 0 4pt 0; }
+  .worked li { margin-bottom: 2pt; }
 
   /* Exam Alert (amber) */
   .examtip {
     background: #fffbeb;
     border: 1px solid #b45309;
-    padding: 8pt 12pt;
+    padding: 6pt 10pt;
     color: #78350f;
   }
   .examtip::before {
-    content: "\\26A0  Exam Alert";
+    content: "Exam Alert";
     background: #b45309;
-    margin: -8pt -12pt 8pt -12pt;
+    margin: -6pt -10pt 6pt -10pt;
   }
   .examtip strong { color: #92400e; }
 
@@ -446,13 +446,13 @@ CSS = textwrap.dedent("""
   .keypoint {
     background: #f0f9ff;
     border: 1px solid #0284c7;
-    padding: 8pt 12pt;
+    padding: 6pt 10pt;
     color: #0c4a6e;
   }
   .keypoint::before {
-    content: "\\2714  Key Fact";
+    content: "Key Fact";
     background: #0284c7;
-    margin: -8pt -12pt 8pt -12pt;
+    margin: -6pt -10pt 6pt -10pt;
   }
   .keypoint strong { color: #0369a1; }
 
@@ -460,23 +460,23 @@ CSS = textwrap.dedent("""
   .mnemonic, blockquote.mnemonic {
     background: #f0fdf4;
     border: 1px solid #16a34a;
-    padding: 8pt 12pt;
-    margin: 12pt 0;
+    padding: 6pt 10pt;
+    margin: 7pt 0;
     color: #14532d;
     font-style: normal;
     overflow: hidden;
-    border-radius: 4pt;
+    border-radius: 3pt;
   }
   .mnemonic::before, blockquote.mnemonic::before {
-    content: "\\25CE  Mnemonic";
+    content: "Remember";
     display: block;
     background: #16a34a;
     color: #fff;
-    padding: 4pt 12pt;
-    margin: -8pt -12pt 8pt -12pt;
+    padding: 3pt 10pt;
+    margin: -6pt -10pt 6pt -10pt;
     font-weight: 700;
-    font-size: 8pt;
-    letter-spacing: 0.08em;
+    font-size: 7.5pt;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
   }
 
@@ -484,23 +484,23 @@ CSS = textwrap.dedent("""
   .pitfall, blockquote.pitfall {
     background: #fef2f2;
     border: 1px solid #dc2626;
-    padding: 8pt 12pt;
-    margin: 12pt 0;
+    padding: 6pt 10pt;
+    margin: 7pt 0;
     color: #7f1d1d;
     font-style: normal;
     overflow: hidden;
-    border-radius: 4pt;
+    border-radius: 3pt;
   }
   .pitfall::before, blockquote.pitfall::before {
-    content: "\\2715  Common Trap";
+    content: "Common Trap";
     display: block;
     background: #dc2626;
     color: #fff;
-    padding: 4pt 12pt;
-    margin: -8pt -12pt 8pt -12pt;
+    padding: 3pt 10pt;
+    margin: -6pt -10pt 6pt -10pt;
     font-weight: 700;
-    font-size: 8pt;
-    letter-spacing: 0.08em;
+    font-size: 7.5pt;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
   }
   .pitfall strong, blockquote.pitfall strong { color: #b91c1c; }
@@ -509,14 +509,14 @@ CSS = textwrap.dedent("""
   .pyq {
     background: #eff6ff;
     border: 1px solid #3b82f6;
-    padding: 6pt 10pt;
+    padding: 5pt 9pt;
     color: #1e3a8a;
-    font-size: 10pt;
+    font-size: 9.5pt;
   }
   .pyq::before {
-    content: "\\25C7  Exam-Style Question";
+    content: "Exam Question";
     background: #3b82f6;
-    margin: -6pt -10pt 6pt -10pt;
+    margin: -5pt -9pt 5pt -9pt;
   }
 
   img, svg { max-width: 100%; height: auto; }
