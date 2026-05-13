@@ -320,14 +320,25 @@ Density = 20/10 = 2, 30/10 = 3, 40/20 = **2** (not 4).
 > **Q 1.1.** Class 30 – 40 has frequency 25. Its class mark is:
 > **(a) 30** **(b) 35** **(c) 40** **(d) 25**
 >
-> **Soln.** Class mark $ = (L+U)/2 = (30+40)/2 = 35 $. **Ans (b).**
+> **Step 1 — Apply the class mark formula.**
+> - Class mark = $(L + U) / 2$
+> - = $(30 + 40) / 2$
+> - = $70 / 2$
+> - = **35**
+>
+> **Ans (b).**
 >
 > *Trap.* (a) lower limit, (c) upper limit, (d) the frequency itself.
 
 > **Q 1.2.** A pie chart shows education spending as 25 % of a state's outlay. The corresponding angle is:
 > **(a) 25°** **(b) 90°** **(c) 25/360 °** **(d) 100°**
 >
-> **Soln.** Angle = 25 % × 360° = **90°**. **Ans (b).**
+> **Step 1 — Apply the pie-chart angle formula.**
+> - Angle = share (%) × 360° / 100
+> - = 25 × 360° / 100
+> - = **90°**
+>
+> **Ans (b).**
 
 > **Q 1.3.** Convert inclusive class **40–49** to exclusive form.
 >
@@ -362,7 +373,13 @@ Density = 20/10 = 2, 30/10 = 3, 40/20 = **2** (not 4).
 > **Q 1.8.** A frequency distribution has class widths 5, 5, 10, 10. Frequencies 20, 25, 50, 30. To draw the histogram correctly, the bar heights should be (in same order):
 > **(a) 20, 25, 50, 30**  **(b) 4, 5, 5, 3**  **(c) 4, 5, 10, 6**  **(d) 20, 25, 25, 15**
 >
-> **Soln.** Use frequency density = f / h. Heights = 20/5, 25/5, 50/10, 30/10 = **4, 5, 5, 3**. **Ans (b).**
+> **Step 1 — Compute frequency density = f / h for each class.**
+> - Class 1 (width 5): 20 / 5 = 4
+> - Class 2 (width 5): 25 / 5 = 5
+> - Class 3 (width 10): 50 / 10 = 5
+> - Class 4 (width 10): 30 / 10 = 3
+>
+> Heights = **4, 5, 5, 3**.  **Ans (b).**
 
 > **Q 1.9.** A frequency polygon is constructed by joining:
 > **(a) Lower limits** **(b) Upper limits** **(c) Class marks** **(d) Class widths**
@@ -493,17 +510,36 @@ $$\boxed{\text{Mode} = 3\,\text{Median} - 2\,\text{Mean}} \quad \text{(empirical
 
 A factory has two shifts. Morning shift: 40 workers, average wage ₹600. Evening shift: 60 workers, average wage ₹500. What is the overall average wage?
 
-> $\bar{X}_{combined} = \dfrac{n_1 \bar{X}_1 + n_2 \bar{X}_2}{n_1 + n_2} = \dfrac{40 \times 600 + 60 \times 500}{40 + 60} = \dfrac{24000 + 30000}{100} = \dfrac{54000}{100} = \mathbf{₹540}$
+> **Step 1 — Apply the combined-mean formula.**
+> - $\bar{X}_{12} = \dfrac{n_1 \bar{X}_1 + n_2 \bar{X}_2}{n_1 + n_2}$
+>
+> **Step 2 — Substitute the two shift sizes and averages.**
+> - = $\dfrac{40 \times 600 + 60 \times 500}{40 + 60}$
+> - = $\dfrac{24000 + 30000}{100}$
+>
+> **Step 3 — Simplify to the final answer.**
+> - = $\dfrac{54000}{100}$
+> - = **₹540**
 
 **Solved Example 2.B — When to use HM (the most common trap):**
 
 A car travels 120 km at 60 km/h and returns 120 km at 40 km/h. What is the average speed for the whole journey?
 
-> Equal distances → use **HM**, not AM.
+> **Step 1 — Identify the correct mean.** Equal distances at different speeds ⇒ use **HM**, not AM.
 >
-> $\text{HM} = \dfrac{2}{\frac{1}{60} + \frac{1}{40}} = \dfrac{2}{\frac{2}{120} + \frac{3}{120}} = \dfrac{2}{\frac{5}{120}} = \dfrac{240}{5} = \mathbf{48 \text{ km/h}}$
+> **Step 2 — Apply the HM formula for two values: HM = 2 / (1/a + 1/b).**
+> - HM = $\dfrac{2}{\frac{1}{60} + \frac{1}{40}}$
 >
-> *Why not AM?* AM gives $(60+40)/2 = 50$ km/h. Check: time taken = $120/60 + 120/40 = 2 + 3 = 5$ hours. Total distance = 240 km. Actual average speed = $240/5 = 48$ km/h ✓ HM is correct.
+> **Step 3 — Combine the reciprocals using a common denominator (LCM = 120).**
+> - $\dfrac{1}{60} + \dfrac{1}{40} = \dfrac{2}{120} + \dfrac{3}{120} = \dfrac{5}{120}$
+>
+> **Step 4 — Compute the HM.**
+> - HM = $\dfrac{2}{5/120}$
+> - = $\dfrac{2 \times 120}{5}$
+> - = $\dfrac{240}{5}$
+> - = **48 km/h**
+>
+> *Why not AM?* AM gives $(60+40)/2 = 50$ km/h. Verify: time = $120/60 + 120/40 = 2 + 3 = 5$ h; total distance = 240 km; average speed = $240/5 = 48$ km/h ✓ HM is correct.
 
 **Solved Example 2.C — Median for grouped data (step by step):**
 
@@ -513,27 +549,44 @@ A car travels 120 km at 60 km/h and returns 120 km at 40 km/h. What is the avera
 
 Find the median.
 
-> Step 1: $N = 5+8+15+7+5 = 40$; so $N/2 = 20$.
+> **Step 1 — Compute total frequency N and N/2.**
+> - $N = 5 + 8 + 15 + 7 + 5 = 40$
+> - $N/2 = 20$
 >
-> Step 2: Build cumulative frequencies: 5, 13, 28, 35, 40.
+> **Step 2 — Build the cumulative-frequency column.**
+> - CF: 5, 13, 28, 35, 40
 >
-> Step 3: The first CF to reach or exceed 20 is 28 (in class 20–30). **Median class = 20–30.**
+> **Step 3 — Locate the median class — first class whose CF ≥ N/2.**
+> - 28 ≥ 20 → **median class = 20–30**
 >
-> Step 4: $L = 20$, $F = 13$ (CF before median class), $f = 15$, $h = 10$.
+> **Step 4 — Identify the formula symbols.**
+> - $L = 20$ (lower boundary), $F = 13$ (CF before median class), $f = 15$ (freq of median class), $h = 10$
 >
-> $\text{Median} = 20 + \dfrac{20 - 13}{15} \times 10 = 20 + \dfrac{70}{15} = 20 + 4.67 = \mathbf{24.67}$
+> **Step 5 — Apply the median formula.**
+> - $\text{Median} = L + \dfrac{(N/2) - F}{f} \times h$
+> - = $20 + \dfrac{20 - 13}{15} \times 10$
+> - = $20 + \dfrac{70}{15}$
+> - = $20 + 4.67$
+> - = **24.67**
 
 **Solved Example 2.D — GM for growth rates:**
 
 A company's sales grew by 10% in Year 1 and 40% in Year 2. What is the average annual growth rate?
 
-> Growth rates as multipliers: 1.10 and 1.40.
+> **Step 1 — Convert growth rates to multipliers.**
+> - Year 1: $1 + 10/100 = 1.10$
+> - Year 2: $1 + 40/100 = 1.40$
 >
-> $\text{GM} = \sqrt{1.10 \times 1.40} = \sqrt{1.54} \approx 1.2410$
+> **Step 2 — Apply the GM formula for two values: GM = √(a × b).**
+> - GM = $\sqrt{1.10 \times 1.40}$
+> - = $\sqrt{1.54}$
+> - ≈ **1.2410**
 >
-> Average annual growth rate ≈ **24.1% per year**.
+> **Step 3 — Convert back to a percentage growth rate.**
+> - Average annual growth $= 1.2410 - 1 = 0.2410$
+> - ≈ **24.1% per year**
 >
-> *Check:* Starting at ₹100: after Year 1 → ₹110; after Year 2 → ₹154. Two-year growth = 54%. Equivalent annual rate = $\sqrt{1.54} - 1 \approx 24.1\%$ ✓
+> *Check:* ₹100 → ₹110 (Year 1) → ₹154 (Year 2). Two-year growth = 54%. Annual rate $= \sqrt{1.54} - 1 \approx 24.1\%$ ✓
 
 ## 2.1 Examiner mindset
 
@@ -683,24 +736,58 @@ negative skew (left-tailed):     ←  Mn  Me  Mo
 
 > **Q 2.1.** Mean of 5, 7, 9, 11, 13.
 >
-> $ \bar X = (5+7+9+11+13)/5 = 45/5 = \mathbf{9} $.
+> **Step 1 — Apply the AM formula: $\bar X = \sum X_i / n$.**
+> - $\bar X = (5 + 7 + 9 + 11 + 13) / 5$
+>
+> **Step 2 — Add the values and divide.**
+> - = $45 / 5$
+> - = **9**
 
 > **Q 2.2.** A class has 30 students with mean weight 50 kg. Another has 20 with mean 60 kg. Combined mean?
 >
-> $ \bar X_{12} = \dfrac{30 \cdot 50 + 20 \cdot 60}{30 + 20} = \dfrac{1500 + 1200}{50} = \dfrac{2700}{50} = \mathbf{54\text{ kg}} $.
+> **Step 1 — Apply the combined-mean (weighted) formula.**
+> - $\bar X_{12} = \dfrac{n_1 \bar X_1 + n_2 \bar X_2}{n_1 + n_2}$
+>
+> **Step 2 — Substitute the two group sizes and means.**
+> - = $\dfrac{30 \cdot 50 + 20 \cdot 60}{30 + 20}$
+> - = $\dfrac{1500 + 1200}{50}$
+>
+> **Step 3 — Simplify.**
+> - = $\dfrac{2700}{50}$
+> - = **54 kg**
 
 > **Q 2.3.** The mean of 10 values is 25. If each value is multiplied by 4 and then 6 is subtracted, the new mean is:
 >
-> Apply P3 then P4: new mean $ = 4 \cdot 25 - 6 = \mathbf{94} $.
+> **Step 1 — Apply scale property P4: $\overline{cX} = c \bar X$.**
+> - New mean after × 4 = $4 \cdot 25$
+> - = **100**
+>
+> **Step 2 — Apply shift property P3: $\overline{X - k} = \bar X - k$.**
+> - New mean after − 6 = $100 - 6$
+> - = **94**
 
 > **Q 2.4.** A man travels 60 km at 30 km/h and another 60 km at 60 km/h. Average speed?
 >
-> Equal distances → use HM: $ \dfrac{2}{(1/30)+(1/60)} = \dfrac{2}{3/60} = \dfrac{120}{3} = \mathbf{40 \text{ km/h}} $.
-> *Trap.* AM gives 45 — wrong because times differ.
+> **Step 1 — Identify the correct mean.** Equal distances at different speeds ⇒ use **HM**, not AM.
+>
+> **Step 2 — Apply HM formula for two values: HM = 2 / (1/a + 1/b).**
+> - HM = $\dfrac{2}{(1/30) + (1/60)}$
+>
+> **Step 3 — Combine the reciprocals (LCM = 60).**
+> - $\dfrac{1}{30} + \dfrac{1}{60} = \dfrac{2}{60} + \dfrac{1}{60} = \dfrac{3}{60}$
+>
+> **Step 4 — Compute the HM.**
+> - HM = $\dfrac{2}{3/60} = \dfrac{2 \times 60}{3} = \dfrac{120}{3}$
+> - = **40 km/h**
+>
+> *Trap.* AM gives 45 — wrong because the two trips take different times.
 
 > **Q 2.5.** GM of 4 and 16.
 >
-> $ \sqrt{4 \cdot 16} = \sqrt{64} = \mathbf{8} $.
+> **Step 1 — Apply the two-value GM formula: GM = √(a · b).**
+> - GM = $\sqrt{4 \cdot 16}$
+> - = $\sqrt{64}$
+> - = **8**
 
 > **Q 2.6.** For the table below, find the median.
 >
@@ -708,49 +795,99 @@ negative skew (left-tailed):     ←  Mn  Me  Mo
 > |-------|------|-------|-------|-------|-------|
 > | f     | 5    | 8     | 15    | 7     | 5     |
 >
-> N = 40, N/2 = 20. CF: 5, 13, 28, 35, 40 → median class = 20–30 (first to cross 20).
-> $ L = 20, F = 13, f = 15, h = 10 $.
-> Median = $ 20 + \dfrac{20 - 13}{15} \times 10 = 20 + 7/15 \cdot 10 = 20 + 4.67 = \mathbf{24.67} $.
+> **Step 1 — Compute N and N/2.**
+> - $N = 5 + 8 + 15 + 7 + 5 = 40$
+> - $N/2 = 20$
+>
+> **Step 2 — Build the cumulative-frequency column.**
+> - CF: 5, 13, 28, 35, 40
+>
+> **Step 3 — Locate the median class — first CF that reaches or crosses N/2 = 20.**
+> - 28 ≥ 20 → **median class = 20–30**
+>
+> **Step 4 — Identify the formula symbols.**
+> - $L = 20$, $F = 13$, $f = 15$, $h = 10$
+>
+> **Step 5 — Apply the median formula.**
+> - $\text{Median} = L + \dfrac{(N/2) - F}{f} \times h$
+> - = $20 + \dfrac{20 - 13}{15} \times 10$
+> - = $20 + \dfrac{70}{15}$
+> - = $20 + 4.67$
+> - = **24.67**
 
 > **Q 2.7.** Same table, find mode.
 >
-> Modal class = 20–30 (highest f). $ L = 20, f_1 = 15, f_0 = 8, f_2 = 7, h = 10 $.
-> Mode = $ 20 + \dfrac{15 - 8}{2 \cdot 15 - 8 - 7} \times 10 = 20 + \dfrac{7}{15} \cdot 10 = 20 + 4.67 = \mathbf{24.67} $.
+> **Step 1 — Locate the modal class (class with the highest frequency).**
+> - Highest $f = 15$ → **modal class = 20–30**
 >
-> Coincidence here; usually different.
+> **Step 2 — Identify the formula symbols.**
+> - $L = 20$, $f_1 = 15$, $f_0 = 8$, $f_2 = 7$, $h = 10$
+>
+> **Step 3 — Apply the mode formula.**
+> - $\text{Mode} = L + \dfrac{f_1 - f_0}{2 f_1 - f_0 - f_2} \times h$
+> - = $20 + \dfrac{15 - 8}{2 \cdot 15 - 8 - 7} \times 10$
+> - = $20 + \dfrac{7}{15} \times 10$
+> - = $20 + 4.67$
+> - = **24.67**
+>
+> Coincidence here; usually Mode and Median differ.
 
 > **Q 2.8.** Mean = 36, Median = 32. Mode by empirical relation?
 >
-> Mode = 3 · 32 − 2 · 36 = 96 − 72 = **24**.
+> **Step 1 — Apply the empirical relation: Mode = 3 Median − 2 Mean.**
+> - Mode = $3 \times 32 - 2 \times 36$
+>
+> **Step 2 — Simplify.**
+> - = $96 - 72$
+> - = **24**
 
 > **Q 2.9.** AM and HM of two positive numbers are 9 and 4. Their GM?
 >
-> GM² = AM × HM = 36 → GM = **6**.
+> **Step 1 — Apply the AM–GM–HM relation: GM² = AM × HM.**
+> - GM² = $9 \times 4 = 36$
+> - GM = $\sqrt{36} = \mathbf{6}$
 
 > **Q 2.10.** The mean of 50 observations was 30. Later it was discovered that an item 80 had been wrongly read as 40. Correct mean?
 >
-> Correct sum = 50 · 30 + (80 − 40) = 1500 + 40 = 1540.
-> Correct mean = 1540 / 50 = **30.8**.
+> **Step 1 — Find the original (incorrect) sum.**
+> - Original sum = $n \times \bar X = 50 \times 30$
+> - = **1500**
+>
+> **Step 2 — Adjust the sum: add the correct value, remove the wrong one.**
+> - Correct sum = $1500 + 80 - 40$
+> - = **1540**
+>
+> **Step 3 — Compute the correct mean.**
+> - Correct mean = $1540 / 50$
+> - = **30.8**
 
 > **Q 2.11.** For a positively skewed distribution, which is largest?
 >
-> Mean > Median > Mode → **Mean** is largest.
+> **Soln.** Order in positive skew: Mode < Median < Mean. **Mean** is largest. **Ans: Mean.**
 
 > **Q 2.12.** $ D_5 $ of a distribution = ?
 >
-> $ D_5 = $ Median.
+> **Soln.** $D_5$ splits the bottom 5/10 from the top 5/10, which is exactly the median. **Ans: Median ($Q_2 = D_5 = P_{50}$).**
 
 > **Q 2.13.** Sum of deviations of 10 observations from 17 is 30; from 20 is 0. The mean is:
 >
-> Sum of deviations from $c$ = 0 ⇔ $c = \bar X$. So **mean = 20**.
+> **Step 1 — Recall property P1: $\sum (X_i - c) = 0 \iff c = \bar X$.**
+> - Sum of deviations from 20 = 0
+> - So the mean equals the constant that zeroes the deviation-sum
+> - **Mean = 20**
 
 > **Q 2.14.** Which measure is **most affected by extreme values**?
 >
-> **Mean** (uses every value linearly). Median and mode aren't.
+> **Soln.** The mean uses every value linearly, so a single outlier shifts it noticeably. Median and mode are positional and largely unaffected. **Ans: Mean.**
 
 > **Q 2.15.** GM of 2, 4, 8.
 >
-> $ (2 \cdot 4 \cdot 8)^{1/3} = 64^{1/3} = \mathbf{4} $.
+> **Step 1 — Apply the n-value GM formula: GM = (X₁ · X₂ ⋯ Xₙ)^(1/n) with n = 3.**
+> - GM = $(2 \cdot 4 \cdot 8)^{1/3}$
+> - = $64^{1/3}$
+>
+> **Step 2 — Compute the cube root.**
+> - $4^3 = 64$, so $64^{1/3} = $ **4**
 
 ## 2.12 Trap-recognition card
 
@@ -840,37 +977,67 @@ $$\sigma^2 = h^2 \left[\frac{\sum f_i u_i^2}{N} - \left(\frac{\sum f_i u_i}{N}\r
 
 Find the variance and SD of: 4, 7, 13, 2, 6, 8, 10.
 
-> $N = 7$; $\sum X = 50$; $\bar{X} = 50/7 \approx 7.14$.
+> **Step 1 — Compute N, $\sum X$ and $\bar X$.**
+> - $N = 7$
+> - $\sum X = 4 + 7 + 13 + 2 + 6 + 8 + 10 = 50$
+> - $\bar X = 50 / 7 \approx 7.14$
 >
-> Using computational formula: $\sum X^2 = 16 + 49 + 169 + 4 + 36 + 64 + 100 = 438$.
+> **Step 2 — Compute $\sum X^2$.**
+> - $\sum X^2 = 16 + 49 + 169 + 4 + 36 + 64 + 100$
+> - = **438**
 >
-> $\sigma^2 = \dfrac{438}{7} - \left(\dfrac{50}{7}\right)^2 = 62.57 - 51.02 = 11.55$
+> **Step 3 — Apply the computational formula: $\sigma^2 = \sum X^2 / N - \bar X^2$.**
+> - $\sigma^2 = \dfrac{438}{7} - \left(\dfrac{50}{7}\right)^2$
+> - = $62.57 - 51.02$
+> - = **11.55**
 >
-> $\sigma = \sqrt{11.55} \approx \mathbf{3.40}$
+> **Step 4 — Take the square root for SD.**
+> - $\sigma = \sqrt{11.55}$
+> - ≈ **3.40**
 
 **Solved Example 3.B — Combined SD (the hard formula — appears 1-2 times per paper):**
 
 Group 1: $n_1 = 50$, $\bar{X}_1 = 113$, $\sigma_1 = 6$. Group 2: $n_2 = 100$, $\bar{X}_2 = 100$, $\sigma_2 = 7$. Find the combined SD.
 
-> Combined mean: $\bar{X}_{12} = \dfrac{50 \times 113 + 100 \times 100}{150} = \dfrac{5650 + 10000}{150} = \dfrac{15650}{150} = 104.33$
+> **Step 1 — Compute the combined mean.**
+> - $\bar X_{12} = \dfrac{n_1 \bar X_1 + n_2 \bar X_2}{n_1 + n_2}$
+> - = $\dfrac{50 \times 113 + 100 \times 100}{150}$
+> - = $\dfrac{5650 + 10000}{150}$
+> - = $\dfrac{15650}{150}$
+> - = **104.33**
 >
-> $d_1 = \bar{X}_1 - \bar{X}_{12} = 113 - 104.33 = 8.67$; $d_2 = 100 - 104.33 = -4.33$
+> **Step 2 — Compute the deviations of each group mean from the combined mean.**
+> - $d_1 = \bar X_1 - \bar X_{12} = 113 - 104.33 = 8.67$
+> - $d_2 = \bar X_2 - \bar X_{12} = 100 - 104.33 = -4.33$
 >
-> $\sigma_{12}^2 = \dfrac{n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)}{n_1 + n_2}$
+> **Step 3 — Apply the combined-variance formula.**
+> - $\sigma_{12}^2 = \dfrac{n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)}{n_1 + n_2}$
+> - = $\dfrac{50(36 + 75.17) + 100(49 + 18.75)}{150}$
+> - = $\dfrac{50 \times 111.17 + 100 \times 67.75}{150}$
+> - = $\dfrac{5558.5 + 6775}{150}$
+> - = $\dfrac{12333.5}{150}$
+> - = **82.22**
 >
-> $= \dfrac{50(36 + 75.17) + 100(49 + 18.75)}{150} = \dfrac{50 \times 111.17 + 100 \times 67.75}{150} = \dfrac{5558.5 + 6775}{150} = \dfrac{12333.5}{150} = 82.22$
->
-> $\sigma_{12} = \sqrt{82.22} \approx \mathbf{9.07}$
+> **Step 4 — Take the square root for combined SD.**
+> - $\sigma_{12} = \sqrt{82.22}$
+> - ≈ **9.07**
 
 **Solved Example 3.C — Coefficient of Variation for comparison:**
 
 Company A: mean profit ₹60,000, SD ₹15,000. Company B: mean profit ₹80,000, SD ₹18,000. Which company is more consistent?
 
-> $\text{CV}_A = \dfrac{15000}{60000} \times 100 = 25\%$
+> **Step 1 — Compute CV for Company A.**
+> - $\text{CV}_A = \dfrac{\sigma_A}{\bar X_A} \times 100$
+> - = $\dfrac{15000}{60000} \times 100$
+> - = **25 %**
 >
-> $\text{CV}_B = \dfrac{18000}{80000} \times 100 = 22.5\%$
+> **Step 2 — Compute CV for Company B.**
+> - $\text{CV}_B = \dfrac{\sigma_B}{\bar X_B} \times 100$
+> - = $\dfrac{18000}{80000} \times 100$
+> - = **22.5 %**
 >
-> **Company B is more consistent** (lower CV) even though it has a larger absolute SD. CV accounts for scale.
+> **Step 3 — Compare: smaller CV ⇒ more consistent.**
+> - 22.5 % < 25 % → **Company B is more consistent**, despite its larger absolute SD. CV strips out the scale.
 
 ## 3.1 Examiner mindset
 
@@ -980,68 +1147,152 @@ The **Gini coefficient** = area between the Lorenz curve and the line of equalit
 
 > **Q 3.1.** Find variance of 4, 6, 8, 10, 12.
 >
-> $\bar X = 40/5 = 8$. Deviations: −4, −2, 0, 2, 4. Squares: 16, 4, 0, 4, 16. Sum = 40.
-> $\sigma^2 = 40/5 = \mathbf{8}$. $\sigma = 2\sqrt{2} \approx 2.83$.
+> **Step 1 — Compute the mean.**
+> - $\bar X = (4 + 6 + 8 + 10 + 12) / 5$
+> - = $40 / 5$
+> - = **8**
+>
+> **Step 2 — Compute squared deviations $(X_i - \bar X)^2$.**
+> - Deviations: $-4, -2, 0, +2, +4$
+> - Squared: $16, 4, 0, 4, 16$
+> - Sum of squared deviations = **40**
+>
+> **Step 3 — Compute the variance.**
+> - $\sigma^2 = \sum(X_i - \bar X)^2 / n = 40 / 5$
+> - = **8**
+>
+> **Step 4 — Compute the standard deviation.**
+> - $\sigma = \sqrt{8} = 2\sqrt{2} \approx \mathbf{2.83}$
 
 > **Q 3.2.** $\sum X = 50, \sum X^2 = 510$ for $n = 10$. Find SD.
 >
-> $\bar X = 5$. $\sigma^2 = 510/10 - 25 = 51 - 25 = 26$. $\sigma = \sqrt{26} \approx \mathbf{5.10}$.
+> **Step 1 — Compute the mean.**
+> - $\bar X = \sum X / n = 50 / 10$
+> - = **5**
+>
+> **Step 2 — Apply the computational form of variance.**
+> - $\sigma^2 = \dfrac{\sum X^2}{n} - \bar X^2$
+> - = $510 / 10 - 5^2$
+> - = $51 - 25$
+> - = **26**
+>
+> **Step 3 — Compute the standard deviation.**
+> - $\sigma = \sqrt{26} \approx \mathbf{5.10}$
 
 > **Q 3.3.** SD of $X$ is 6. SD of $Y = 3X + 7$?
 >
-> $|3| \cdot 6 = \mathbf{18}$. The +7 contributes nothing.
+> **Step 1 — Apply scaling property: SD$(aX + b) = |a| \cdot$ SD$(X)$.** The constant +7 (shift) contributes nothing.
+> - SD$(Y) = |3| \cdot 6$
+> - = **18**
 
 > **Q 3.4.** Two series: A has mean 50, SD 10; B has mean 80, SD 12. More consistent?
 >
-> CV(A) = 10/50 = 20%. CV(B) = 12/80 = 15%. **B is more consistent** (lower CV).
+> **Step 1 — Compute the Coefficient of Variation (CV) for each series.**
+> - $\text{CV}_A = \sigma_A / \bar X_A \times 100 = 10 / 50 \times 100$
+> - = **20 %**
+>
+> - $\text{CV}_B = \sigma_B / \bar X_B \times 100 = 12 / 80 \times 100$
+> - = **15 %**
+>
+> **Step 2 — Compare: smaller CV means more consistent.**
+> - CV of B (15 %) < CV of A (20 %)  →  **Series B is more consistent.**
 
 > **Q 3.5.** Variance of first $n$ natural numbers is:
 >
-> Standard fact: $ \sigma^2 = \dfrac{n^2 - 1}{12} $. Memorise.
+> **Step 1 — Recall the standard result.**
+> - $\sigma^2 = \dfrac{n^2 - 1}{12}$ — **memorise.**
 >
-> *Proof sketch.* $ \sum k = n(n+1)/2, \sum k^2 = n(n+1)(2n+1)/6 $, substitute, simplify.
+> *Proof sketch.* $\sum k = n(n+1)/2$, $\sum k^2 = n(n+1)(2n+1)/6$; substitute into $\sigma^2 = \sum k^2/n - (\sum k / n)^2$ and simplify.
 
 > **Q 3.6.** $Q_1 = 25, Q_3 = 45$. Quartile deviation? Coefficient?
 >
-> QD = (45 − 25)/2 = **10**. Coefficient = (45 − 25)/(45 + 25) = 20/70 = **2/7 ≈ 0.286**.
+> **Step 1 — Compute the Quartile Deviation (QD).**
+> - $\text{QD} = (Q_3 - Q_1) / 2$
+> - = $(45 - 25) / 2$
+> - = $20 / 2$
+> - = **10**
+>
+> **Step 2 — Compute the Coefficient of Quartile Deviation.**
+> - Coefficient = $(Q_3 - Q_1) / (Q_3 + Q_1)$
+> - = $(45 - 25) / (45 + 25)$
+> - = $20 / 70$
+> - = **2/7 ≈ 0.286**
 
 > **Q 3.7.** Var(X) = 9, Var(Y) = 16, X and Y independent. Var(X − Y)?
 >
-> 9 + 16 = **25** (variances add even on subtraction).
+> **Step 1 — Apply the independent-sum rule: Var(aX + bY) = a²Var(X) + b²Var(Y).** With a = 1, b = −1, both squares are 1.
+> - Var(X − Y) = $1 \cdot 9 + 1 \cdot 16$
+> - = **25** (variances add even on subtraction)
 
 > **Q 3.8.** A group of 50 has mean 60, SD 5. A group of 30 has mean 60, SD 6. Combined SD?
 >
-> Means equal → $d_1 = d_2 = 0$. Combined variance = (50·25 + 30·36)/80 = (1250 + 1080)/80 = 2330/80 = 29.125. SD = $\sqrt{29.125} \approx \mathbf{5.40}$.
+> **Step 1 — Note that the two group means are equal.**
+> - $\bar X_1 = \bar X_2 = 60$ → $d_1 = d_2 = 0$
+>
+> **Step 2 — Apply the combined-variance formula (with d-terms zero).**
+> - $\sigma_{12}^2 = \dfrac{n_1 \sigma_1^2 + n_2 \sigma_2^2}{n_1 + n_2}$
+> - = $\dfrac{50 \times 25 + 30 \times 36}{80}$
+> - = $\dfrac{1250 + 1080}{80}$
+> - = $\dfrac{2330}{80}$
+> - = **29.125**
+>
+> **Step 3 — Take the square root for combined SD.**
+> - SD = $\sqrt{29.125}$
+> - ≈ **5.40**
 
 > **Q 3.9.** A group has mean 50 SD 4 (n = 60); another mean 55 SD 5 (n = 40). Combined SD?
 >
-> Combined mean = (60·50 + 40·55)/100 = (3000 + 2200)/100 = 52.
-> $d_1 = 50 − 52 = −2, d_2 = 55 − 52 = 3$.
-> Comb var = (60(16+4) + 40(25+9))/100 = (60·20 + 40·34)/100 = (1200 + 1360)/100 = 25.6. SD = $\sqrt{25.6} \approx \mathbf{5.06}$.
+> **Step 1 — Compute the combined mean.**
+> - $\bar X_{12} = (60 \cdot 50 + 40 \cdot 55)/100$
+> - = $(3000 + 2200)/100$
+> - = **52**
+>
+> **Step 2 — Compute the deviations of each group mean from the combined mean.**
+> - $d_1 = 50 - 52 = -2$
+> - $d_2 = 55 - 52 = 3$
+>
+> **Step 3 — Apply the combined-variance formula.**
+> - $\sigma_{12}^2 = \dfrac{n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)}{n_1 + n_2}$
+> - = $\dfrac{60(16 + 4) + 40(25 + 9)}{100}$
+> - = $\dfrac{60 \cdot 20 + 40 \cdot 34}{100}$
+> - = $\dfrac{1200 + 1360}{100}$
+> - = **25.6**
+>
+> **Step 4 — Take the square root for combined SD.**
+> - SD = $\sqrt{25.6}$
+> - ≈ **5.06**
 
 > **Q 3.10.** For a normal-ish distribution, MD/SD ≈ ?
 >
-> 4/5 (or ~0.7979). **Memorise.**
+> **Soln.** Empirical ratio for normal data: MD ≈ 0.7979 σ ≈ **4/5 σ**. So MD/SD ≈ **4/5** (memorise).
 
 > **Q 3.11.** Range of the series 12, 18, 25, 7, 30, 14.
 >
-> max − min = 30 − 7 = **23**.
+> **Step 1 — Identify max and min.**
+> - max = 30, min = 7
+>
+> **Step 2 — Apply Range = max − min.**
+> - Range = 30 − 7
+> - = **23**
 
 > **Q 3.12.** SD of 10 observations is 4. If each is increased by 5, SD becomes:
 >
-> Origin invariant → SD remains **4**.
+> **Soln.** SD is **origin-invariant** — adding a constant to every observation shifts the mean but leaves spread unchanged. SD remains **4**.
 
 > **Q 3.13.** Variance of $2X + 3Y$ where Var(X) = 4, Var(Y) = 9, X and Y independent?
 >
-> $2^2 \cdot 4 + 3^2 \cdot 9 = 16 + 81 = \mathbf{97}$.
+> **Step 1 — Apply Var(aX + bY) = a²Var(X) + b²Var(Y) (independent X, Y).**
+> - Var$(2X + 3Y) = 2^2 \cdot 4 + 3^2 \cdot 9$
+> - = $16 + 81$
+> - = **97**
 
 > **Q 3.14.** The CV is used to compare:
 >
-> Variability across series with **different means or units**. Answer: variability between two distributions.
+> **Soln.** CV is unit-free, so it lets you compare **variability across series with different means or different units**.
 
 > **Q 3.15.** A perfectly equal distribution gives a Lorenz curve that:
 >
-> Coincides with the **45° line of equality**.
+> **Soln.** Coincides with the **45° line of equality** (Gini coefficient = 0).
 
 ## 3.11 Trap-recognition card
 
@@ -1152,15 +1403,25 @@ $$\gamma_2 = \beta_2 - 3 \quad \text{(excess kurtosis; leptokurtic: } \gamma_2 >
 
 **Solved Example 4.A:** For a distribution: Mean = 25, Median = 24, SD = 5. Find Karl Pearson's coefficient of skewness.
 
-> Using the second formula (mode ill-defined):
->
-> $\text{Sk} = \dfrac{3(25 - 24)}{5} = \dfrac{3}{5} = \mathbf{0.6}$ (positive skew — right-tailed)
+> **Step 1 — Apply the median-based Karl Pearson skewness formula.**
+> - $\text{Sk} = 3(\bar X - \text{Median}) / \sigma$
+> - = $3(25 - 24) / 5$
+> - = $3/5$
+> - = **0.6** (positive skew — right-tailed)
 
 **Solved Example 4.B:** $\mu_2 = 16$, $\mu_3 = 0$, $\mu_4 = 512$. Find $\beta_1$ and $\beta_2$.
 
-> $\beta_1 = \dfrac{\mu_3^2}{\mu_2^3} = \dfrac{0}{4096} = \mathbf{0}$ (symmetric distribution)
+> **Step 1 — Compute β₁ (skewness).**
+> - $\beta_1 = \mu_3^2 / \mu_2^3$
+> - = $0^2 / 16^3$
+> - = $0 / 4096$
+> - = **0** (symmetric distribution)
 >
-> $\beta_2 = \dfrac{\mu_4}{\mu_2^2} = \dfrac{512}{256} = \mathbf{2}$ (platykurtic since $\beta_2 < 3$)
+> **Step 2 — Compute β₂ (kurtosis).**
+> - $\beta_2 = \mu_4 / \mu_2^2$
+> - = $512 / 16^2$
+> - = $512 / 256$
+> - = **2** (platykurtic since β₂ < 3)
 >
 > $\gamma_2 = 2 - 3 = -1$ (flatter than normal)
 
@@ -1269,43 +1530,68 @@ $h$ = class width. The 2nd-moment correction is most commonly asked; the 4th rar
 
 > **Q 4.1.** $ \mu_1' = 4, \mu_2' = 25 $. Find variance.
 >
-> $ \mu_2 = 25 - 16 = \mathbf{9} $.
+> **Step 1 — Apply the raw→central conversion: $\mu_2 = \mu_2' - (\mu_1')^2$.**
+> - $\mu_2 = 25 - 4^2$
+> - = $25 - 16$
+> - = **9**
 
 > **Q 4.2.** $ \mu_2 = 4, \mu_3 = 8 $. Coefficient of skewness $ \beta_1 $?
 >
-> $ \beta_1 = \mu_3^2 / \mu_2^3 = 64/64 = \mathbf{1} $.
+> **Step 1 — Apply the β₁ formula.**
+> - $\beta_1 = \mu_3^2 / \mu_2^3$
+> - = $8^2 / 4^3$
+> - = $64 / 64$
+> - = **1**
 
 > **Q 4.3.** Mean = 50, Mode = 47, SD = 10. Karl Pearson Sk?
 >
-> $ (50 - 47)/10 = \mathbf{0.3} $ → mildly positively skewed.
+> **Step 1 — Apply the mode-based Karl Pearson formula.**
+> - $\text{Sk} = (\bar X - \text{Mode}) / \sigma$
+> - = $(50 - 47) / 10$
+> - = $3 / 10$
+> - = **0.3** → mildly positively skewed
 
 > **Q 4.4.** $ Q_1 = 14, Q_2 = 21, Q_3 = 26 $. Bowley's Sk?
 >
-> $ (26 + 14 - 42)/(26 - 14) = -2/12 = -\mathbf{1/6} \approx -0.167$ → mildly negative.
+> **Step 1 — Apply Bowley's skewness formula.**
+> - $\text{Sk} = (Q_3 + Q_1 - 2Q_2) / (Q_3 - Q_1)$
+> - = $(26 + 14 - 2 \times 21) / (26 - 14)$
+> - = $(40 - 42) / 12$
+> - = $-2 / 12$
+> - = $-\mathbf{1/6} \approx -0.167$ → mildly negative skew
 
 > **Q 4.5.** $ \beta_2 = 5 $. Curve is:
 >
-> $ \beta_2 > 3 $ → **leptokurtic**.
+> **Soln.** $\beta_2 > 3$ → **leptokurtic** (sharper peak, fatter tails than normal).
 
 > **Q 4.6.** First moment about origin is 5. Raw moments $ \mu_2', \mu_3' $ are 35 and 295 respectively. Find $ \mu_3 $.
 >
-> $ \mu_3 = 295 - 3 \cdot 5 \cdot 35 + 2 \cdot 125 = 295 - 525 + 250 = \mathbf{20} $.
+> **Step 1 — Recall the raw→central conversion: $\mu_3 = \mu_3' - 3\mu_1'\mu_2' + 2(\mu_1')^3$.**
+>
+> **Step 2 — Substitute the given raw moments.**
+> - $\mu_3 = 295 - 3 \times 5 \times 35 + 2 \times 5^3$
+> - = $295 - 525 + 250$
+> - = **20**
 
 > **Q 4.7.** Sum of central moments of order 1 in any distribution is:
 >
-> Always **0** (definition of mean).
+> **Soln.** $\mu_1 = \sum f(X - \bar X)/N = 0$ — by the very definition of the mean. Always **0**.
 
 > **Q 4.8.** A leptokurtic curve has $\gamma_2$:
 >
-> $\gamma_2 = \beta_2 - 3 > 0$. **Positive.**
+> **Soln.** Leptokurtic ⇒ $\beta_2 > 3$ ⇒ $\gamma_2 = \beta_2 - 3 > 0$. Hence **positive**.
 
 > **Q 4.9.** For a symmetric distribution, every odd-order central moment is:
 >
-> **Zero** ($\mu_1 = \mu_3 = \mu_5 = \cdots = 0$).
+> **Soln.** Positive and negative deviations cancel pairwise in any odd power. So $\mu_1 = \mu_3 = \mu_5 = \cdots = $ **0**.
 
 > **Q 4.10.** Class width 5. $ \mu_2 $ = 35.5. Sheppard-corrected variance?
 >
-> $ 35.5 - 25/12 = 35.5 - 2.083 = \mathbf{33.42} $.
+> **Step 1 — Apply Sheppard's correction: $\mu_2^{\text{corr}} = \mu_2 - h^2/12$.**
+> - $\mu_2^{\text{corr}} = 35.5 - 5^2/12$
+> - = $35.5 - 25/12$
+> - = $35.5 - 2.083$
+> - = **33.42**
 
 ## 4.7 Trap-recognition card
 
@@ -1401,29 +1687,48 @@ $$\text{Karl Pearson's } r = \frac{\sum(X_i - \bar{X})(Y_i - \bar{Y})}{N\,\sigma
 
 If $b_{yx} = 0.8$ and $b_{xy} = 0.2$, find $r$.
 
-> $r = \sqrt{b_{yx} \times b_{xy}} = \sqrt{0.8 \times 0.2} = \sqrt{0.16} = \mathbf{0.4}$
+> **Step 1 — Apply the regression-slope identity: $r = \pm\sqrt{b_{yx} \cdot b_{xy}}$.**
+> - $r = \sqrt{0.8 \times 0.2}$
+> - = $\sqrt{0.16}$
+> - = **0.4**
 >
-> *(Both positive → $r$ is positive.)*
+> **Step 2 — Fix the sign.** Both regression coefficients are positive ⇒ $r$ is positive ⇒ $r = +0.4$.
 
 **Solved Example 5.B — Find missing regression coefficient:**
 
 $r = 0.6$, $\sigma_x = 4$, $\sigma_y = 3$. Find $b_{yx}$ and $b_{xy}$.
 
-> $b_{yx} = r \times \dfrac{\sigma_y}{\sigma_x} = 0.6 \times \dfrac{3}{4} = \mathbf{0.45}$
+> **Step 1 — Compute the regression coefficient of Y on X.**
+> - $b_{yx} = r \times (\sigma_y / \sigma_x)$
+> - = $0.6 \times (3 / 4)$
+> - = **0.45**
 >
-> $b_{xy} = r \times \dfrac{\sigma_x}{\sigma_y} = 0.6 \times \dfrac{4}{3} = \mathbf{0.8}$
+> **Step 2 — Compute the regression coefficient of X on Y.**
+> - $b_{xy} = r \times (\sigma_x / \sigma_y)$
+> - = $0.6 \times (4 / 3)$
+> - = **0.8**
 >
-> Verification: $r = \sqrt{0.45 \times 0.8} = \sqrt{0.36} = 0.6$ ✓
+> **Step 3 — Verify using $r = \sqrt{b_{yx} \times b_{xy}}$.**
+> - $r = \sqrt{0.45 \times 0.8} = \sqrt{0.36} = 0.6$ ✓
 
 **Solved Example 5.C — Spearman's rank correlation:**
 
 Two judges rank 5 students: Judge A gives ranks 1,2,3,4,5; Judge B gives ranks 2,1,4,3,5. Find Spearman's $\rho$.
 
-> $d$ (difference of ranks): $1-2=-1$, $2-1=1$, $3-4=-1$, $4-3=1$, $5-5=0$.
+> **Step 1 — Compute the rank differences $d_i = R_A - R_B$ for each student.**
+> - $d$: $1-2=-1$, $2-1=1$, $3-4=-1$, $4-3=1$, $5-5=0$
 >
-> $\sum d^2 = 1+1+1+1+0 = 4$.
+> **Step 2 — Square the differences and sum.**
+> - $d^2$: $1, 1, 1, 1, 0$
+> - $\sum d^2 = 4$
 >
-> $\rho = 1 - \dfrac{6 \sum d^2}{n(n^2-1)} = 1 - \dfrac{6 \times 4}{5 \times 24} = 1 - \dfrac{24}{120} = 1 - 0.2 = \mathbf{0.8}$
+> **Step 3 — Apply Spearman's rank-correlation formula.**
+> - $\rho = 1 - \dfrac{6 \sum d^2}{n(n^2 - 1)}$
+> - = $1 - \dfrac{6 \times 4}{5 \times (25 - 1)}$
+> - = $1 - \dfrac{24}{5 \times 24}$
+> - = $1 - \dfrac{24}{120}$
+> - = $1 - 0.2$
+> - = **0.8**
 >
 > Strong positive agreement between the two judges.
 
@@ -1577,80 +1882,140 @@ When $r = \pm 1$, SE = 0 (perfect prediction). When $r = 0$, SE = $\sigma$ (no i
 
 > **Q 5.1.** $b_{YX} = 0.8, b_{XY} = 0.5$. Find $r$.
 >
-> $ r = +\sqrt{0.4} \approx \mathbf{0.632} $ (positive because both slopes positive).
+> **Step 1 — Apply $r = \pm\sqrt{b_{YX} \cdot b_{XY}}$.**
+> - $r = \sqrt{0.8 \times 0.5}$
+> - = $\sqrt{0.4}$
+> - ≈ **0.632**
+>
+> **Step 2 — Fix the sign.** Both slopes positive ⇒ $r$ positive ⇒ $r = +0.632$.
 
 > **Q 5.2.** Two regression lines: $2X + 3Y - 8 = 0$ and $X + 4Y - 7 = 0$. Find $\bar X, \bar Y$.
 >
-> Solve: from line 2, $X = 7 - 4Y$. Sub: $2(7 - 4Y) + 3Y = 8$ → $14 - 8Y + 3Y = 8$ → $-5Y = -6$ → $Y = 1.2$. Then $X = 7 - 4.8 = 2.2$.
-> $\bar X = \mathbf{2.2}, \bar Y = \mathbf{1.2}$.
+> **Step 1 — Use the fact that both regression lines pass through $(\bar X, \bar Y)$.** So solve the two equations simultaneously.
+>
+> **Step 2 — Express $X$ from line 2.**
+> - $X = 7 - 4Y$
+>
+> **Step 3 — Substitute into line 1 and solve for $Y$.**
+> - $2(7 - 4Y) + 3Y = 8$
+> - $14 - 8Y + 3Y = 8$
+> - $-5Y = -6$
+> - $Y = 1.2$
+>
+> **Step 4 — Back-substitute to find $X$.**
+> - $X = 7 - 4(1.2)$
+> - = $7 - 4.8$
+> - = **2.2**
+>
+> **Final:** $\bar X = 2.2$, $\bar Y = 1.2$.
 
 > **Q 5.3.** $r = 0.6, \sigma_X = 5, \sigma_Y = 10$. Find $b_{YX}$ and $b_{XY}$.
 >
-> $b_{YX} = 0.6 \cdot 10/5 = \mathbf{1.2}$. $b_{XY} = 0.6 \cdot 5/10 = \mathbf{0.3}$. Check: 1.2 × 0.3 = 0.36 = 0.6² ✓.
+> **Step 1 — Compute the regression coefficient of Y on X.**
+> - $b_{YX} = r \times \sigma_Y / \sigma_X$
+> - = $0.6 \times 10 / 5$
+> - = **1.2**
+>
+> **Step 2 — Compute the regression coefficient of X on Y.**
+> - $b_{XY} = r \times \sigma_X / \sigma_Y$
+> - = $0.6 \times 5 / 10$
+> - = **0.3**
+>
+> Check: $b_{YX} \times b_{XY} = 1.2 \times 0.3 = 0.36 = 0.6^2$ ✓
 
 > **Q 5.4.** Spearman: 5 students, ranks in two subjects: $d^2$-values 1, 0, 4, 1, 4. Sum = 10. Find ρ.
 >
-> $ \rho = 1 - 6(10)/(5 \cdot 24) = 1 - 60/120 = 1 - 0.5 = \mathbf{0.5} $.
+> **Step 1 — Apply Spearman's formula: $\rho = 1 - 6\sum d^2 / (n(n^2 - 1))$.** Here $n = 5$, $\sum d^2 = 10$.
+> - $\rho = 1 - \dfrac{6 \times 10}{5 \times (25 - 1)}$
+> - = $1 - \dfrac{60}{5 \times 24}$
+> - = $1 - \dfrac{60}{120}$
+> - = $1 - 0.5$
+> - = **0.5**
 
 > **Q 5.5.** If $r = 0$, the two regression lines are:
 >
-> **Perpendicular** (one horizontal, one vertical).
+> **Soln.** Property: $r = 0$ ⇒ the two regression lines are **perpendicular** (one horizontal, one vertical).
 
 > **Q 5.6.** $r_{XY} = 0.8$. Then correlation of $X' = X+5$ and $Y' = 2Y - 3$ is:
 >
-> Origin doesn't matter; positive scale factor doesn't matter. $r' = \mathbf{0.8}$.
+> **Soln.** Karl Pearson $r$ is invariant under shift (origin change) and unaffected by a positive scale factor. So $r' = $ **0.8**.
 
 > **Q 5.7.** $r = 0.5$. Coefficient of determination?
 >
-> $0.25 = \mathbf{25\%}$ of variation explained.
+> **Step 1 — Coefficient of determination = $r^2$.**
+> - $r^2 = 0.5^2 = 0.25$
+> - = **25 %** of Y's variation explained by X
 
 > **Q 5.8.** $b_{YX} = 1.5, b_{XY} = 0.9$. Is this possible?
 >
-> $r^2 = 1.35 > 1$ → impossible. Cannot both exceed product 1.
+> **Step 1 — Use the identity $b_{YX} \cdot b_{XY} = r^2$ with the constraint $r^2 \le 1$.**
+> - Product = $1.5 \times 0.9 = 1.35 > 1$
+> - $r^2 > 1$ is impossible → **No, this configuration cannot occur.**
 
 > **Q 5.9.** A regression line passes through (5, 7) and the means are $\bar X = 5, \bar Y = ?$.
 >
-> Both regression lines pass through $(\bar X, \bar Y)$. So **$\bar Y = 7$**.
+> **Soln.** Property: **every** regression line passes through $(\bar X, \bar Y)$. Given $\bar X = 5$ and the line passes through $(5, 7)$, the means are $(5, 7)$, so **$\bar Y = 7$**.
 
 > **Q 5.10.** If $\sigma_X = \sigma_Y$, then $b_{YX} = $ ?
 >
-> $ r \cdot \sigma_Y/\sigma_X = r $. So $b_{YX} = b_{XY} = r$.
+> **Step 1 — Substitute into $b_{YX} = r \cdot \sigma_Y / \sigma_X$.**
+> - With $\sigma_X = \sigma_Y$, the ratio = 1
+> - $b_{YX} = r$ (and similarly $b_{XY} = r$)
 
 > **Q 5.11.** Karl Pearson $r$ is independent of:
 >
-> **Origin and scale (with positive factors).**
+> **Soln.** Karl Pearson $r$ is independent of the **origin** (shift) and of the **positive scale** of measurement. It is a pure (unitless) number.
 
 > **Q 5.12.** A scatter plot showing all points on a straight line with positive slope indicates:
 >
-> $r = +1$, perfect direct correlation.
+> **Soln.** All points exactly on an upward line ⇒ perfect direct linear association ⇒ $r = +1$.
 
 > **Q 5.13.** $n = 10, \sum X = 50, \sum Y = 100, \sum X^2 = 300, \sum Y^2 = 1100, \sum XY = 525$. Find $r$.
 >
-> Numerator: $10 \cdot 525 - 50 \cdot 100 = 5250 - 5000 = 250$.
-> Denom: $\sqrt{(10 \cdot 300 - 2500)(10 \cdot 1100 - 10000)} = \sqrt{500 \cdot 1000} = \sqrt{500000} \approx 707.1$.
-> $r \approx 250/707.1 \approx \mathbf{0.354}$.
+> **Step 1 — Compute the numerator of Karl Pearson's r.**
+> - Numerator = $n\sum XY - (\sum X)(\sum Y)$
+> - = $10 \times 525 - 50 \times 100$
+> - = $5250 - 5000$
+> - = **250**
+>
+> **Step 2 — Compute the denominator.**
+> - Factor 1 = $n\sum X^2 - (\sum X)^2 = 10 \times 300 - 2500 = 3000 - 2500 = 500$
+> - Factor 2 = $n\sum Y^2 - (\sum Y)^2 = 10 \times 1100 - 10000 = 11000 - 10000 = 1000$
+> - Denominator = $\sqrt{500 \times 1000} = \sqrt{500000} \approx 707.1$
+>
+> **Step 3 — Compute r.**
+> - $r = 250 / 707.1 \approx \mathbf{0.354}$
 
 > **Q 5.14.** Two regression equations: $3Y = 2X + 5$ and $15X = 10Y + 8$. Find $b_{YX}, b_{XY}, r$.
 >
-> First: $Y = (2/3)X + 5/3$, so $b_{YX} = 2/3$.
-> Second: $X = (10/15)Y + 8/15 = (2/3)Y + 8/15$, so $b_{XY} = 2/3$.
-> $r = +\sqrt{(2/3)(2/3)} = 2/3 \approx \mathbf{0.667}$.
+> **Step 1 — Extract the slope $b_{YX}$ from the Y-on-X line.**
+> - Rearrange: $Y = (2/3)X + 5/3$
+> - $b_{YX} = \mathbf{2/3}$
+>
+> **Step 2 — Extract the slope $b_{XY}$ from the X-on-Y line.**
+> - Rearrange: $X = (10/15)Y + 8/15 = (2/3)Y + 8/15$
+> - $b_{XY} = \mathbf{2/3}$
+>
+> **Step 3 — Compute r from the two regression slopes.**
+> - $r = +\sqrt{b_{YX} \times b_{XY}} = +\sqrt{(2/3)(2/3)} = 2/3 \approx \mathbf{0.667}$
 
 > **Q 5.15.** Two regression coefficients are 0.5 and −0.4. Then $r$ is:
 >
-> Signs differ → impossible. Such a pair cannot both be valid regression coefficients.
+> **Soln.** Property: $b_{YX}$ and $b_{XY}$ must share the **same sign** (the sign of $r$). One positive and one negative ⇒ impossible. Such a pair cannot both be valid regression coefficients.
 
 > **Q 5.16.** Standard error of estimate of Y on X = ?
 >
-> $ S_{Y \cdot X} = \sigma_Y \sqrt{1 - r^2} $.
+> **Soln.** Standard formula: $S_{Y \cdot X} = \sigma_Y \sqrt{1 - r^2}$. (When $r = \pm 1$ ⇒ SE = 0; when $r = 0$ ⇒ SE = $\sigma_Y$.)
 
 > **Q 5.17.** When $r = 1$, $b_{YX} \cdot b_{XY} = ?$
 >
-> $r^2 = 1$. Both slopes equal reciprocals.
+> **Step 1 — Apply $b_{YX} \cdot b_{XY} = r^2$.**
+> - With $r = 1$: product = $1^2 = $ **1**
+> - The two slopes are reciprocals of each other.
 
 > **Q 5.18.** Multiple correlation $R_{1.23}$ is always:
 >
-> Non-negative, in [0, 1].
+> **Soln.** $R_{1.23} \in [0, 1]$ — **non-negative** by definition (it is a square root of a squared-correlation quantity).
 
 ## 5.12 Trap-recognition card
 
@@ -1748,22 +2113,34 @@ $H_i$ are mutually exclusive, exhaustive hypotheses (causes). $E$ is the observe
 
 A factory has 3 machines producing bolts: Machine A (30% of output), Machine B (50%), Machine C (20%). Defect rates: A gives 1% defective, B gives 2%, C gives 3%. A bolt is found defective. What is the probability it came from Machine B?
 
-> Prior probabilities: $P(A) = 0.3$, $P(B) = 0.5$, $P(C) = 0.2$.
+> **Step 1 — List the prior probabilities for the three machines.**
+> - $P(A) = 0.3$, $P(B) = 0.5$, $P(C) = 0.2$
 >
-> Likelihoods: $P(D|A) = 0.01$, $P(D|B) = 0.02$, $P(D|C) = 0.03$.
+> **Step 2 — List the likelihoods (defect rate given each machine).**
+> - $P(D|A) = 0.01$, $P(D|B) = 0.02$, $P(D|C) = 0.03$
 >
-> Total probability of defect:
-> $P(D) = 0.3(0.01) + 0.5(0.02) + 0.2(0.03) = 0.003 + 0.010 + 0.006 = 0.019$
+> **Step 3 — Compute the total probability of a defective bolt (denominator).**
+> - $P(D) = 0.3 \times 0.01 + 0.5 \times 0.02 + 0.2 \times 0.03$
+> - = $0.003 + 0.010 + 0.006$
+> - = **0.019**
 >
-> $P(B|D) = \dfrac{P(B) \cdot P(D|B)}{P(D)} = \dfrac{0.5 \times 0.02}{0.019} = \dfrac{0.010}{0.019} \approx \mathbf{0.526}$
+> **Step 4 — Apply Bayes' theorem to find $P(B|D)$.**
+> - $P(B|D) = \dfrac{P(B) \cdot P(D|B)}{P(D)}$
+> - = $\dfrac{0.5 \times 0.02}{0.019}$
+> - = $\dfrac{0.010}{0.019}$
+> - ≈ **0.526**
 
 **Solved Example 6.B — Independence vs mutual exclusivity:**
 
 $P(A) = 0.4$, $P(B) = 0.3$, $P(A \cap B) = 0.12$. Are $A$ and $B$ independent?
 
-> If independent: $P(A) \times P(B) = 0.4 \times 0.3 = 0.12 = P(A \cap B)$. **Yes, independent.**
+> **Step 1 — Test the independence criterion $P(A) \cdot P(B) \stackrel{?}{=} P(A \cap B)$.**
+> - $P(A) \cdot P(B) = 0.4 \times 0.3 = 0.12$
+> - $P(A \cap B) = 0.12$ ✓
+> - **Yes — A and B are independent.**
 >
-> Are they mutually exclusive? No — $P(A \cap B) = 0.12 \neq 0$.
+> **Step 2 — Check mutual exclusivity.**
+> - $P(A \cap B) = 0.12 \neq 0$ ⇒ **not mutually exclusive.**
 
 ## 6.1 Examiner mindset
 
@@ -1848,66 +2225,122 @@ $$
 
 > **Q 6.1.** Two dice rolled. P(sum = 7)?
 >
-> Pairs giving 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) → 6 pairs out of 36. **P = 1/6**.
+> **Step 1 — Count favourable ordered pairs that sum to 7.**
+> - (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) → **6 pairs**
+>
+> **Step 2 — Total sample space = 6 × 6 = 36.**
+>
+> **Step 3 — Compute P.**
+> - $P = 6/36 = $ **1/6**
 
 > **Q 6.2.** A card is drawn. P(king or red)?
 >
-> P(king) = 4/52, P(red) = 26/52, P(king ∩ red) = 2/52.
-> P(king ∪ red) = 4/52 + 26/52 − 2/52 = **28/52 = 7/13**.
+> **Step 1 — Identify the individual probabilities.**
+> - P(king) = 4/52; P(red) = 26/52; P(king ∩ red) = 2/52
+>
+> **Step 2 — Apply the addition rule.**
+> - P(king ∪ red) = 4/52 + 26/52 − 2/52
+> - = 28/52
+> - = **7/13**
 
 > **Q 6.3.** P(A) = 0.3, P(B) = 0.4, P(A ∩ B) = 0.12. Are A, B independent?
 >
-> Test: P(A) P(B) = 0.12 = P(A ∩ B) ✓. **Yes, independent.**
+> **Step 1 — Test the independence criterion $P(A) \cdot P(B) \stackrel{?}{=} P(A \cap B)$.**
+> - $0.3 \times 0.4 = 0.12 = P(A \cap B)$ ✓
+> - **Yes — independent.**
 
 > **Q 6.4.** A bag has 5 white, 3 black balls. Two drawn without replacement. P(both white)?
 >
-> $ \dfrac{5}{8} \cdot \dfrac{4}{7} = \dfrac{20}{56} = \mathbf{5/14} $.
+> **Step 1 — P(1st white) = 5/8** (5 white out of 8 total).
+>
+> **Step 2 — P(2nd white | 1st white) = 4/7** (after removing one white).
+>
+> **Step 3 — Multiply (chain rule).**
+> - $P = \dfrac{5}{8} \cdot \dfrac{4}{7} = \dfrac{20}{56} = $ **5/14**
 
 > **Q 6.5.** P(A) = 0.4, P(B) = 0.3, P(A ∪ B) = 0.6. P(A ∩ B)?
 >
-> $0.4 + 0.3 - 0.6 = \mathbf{0.1}$.
+> **Step 1 — Rearrange the addition rule: $P(A \cap B) = P(A) + P(B) - P(A \cup B)$.**
+> - $= 0.4 + 0.3 - 0.6$
+> - = **0.1**
 
 > **Q 6.6.** Toss 3 coins. P(at least 2 heads)?
 >
-> Total = 8. ≥2H outcomes: HHH, HHT, HTH, THH = 4. **P = 1/2**.
+> **Step 1 — Total outcomes = $2^3 = 8$.**
+>
+> **Step 2 — Count outcomes with ≥ 2 heads.**
+> - HHH, HHT, HTH, THH → **4 favourable**
+>
+> **Step 3 — Compute P.**
+> - $P = 4/8 = $ **1/2**
 
 > **Q 6.7.** Two events with $P(A) = 0.5, P(B) = 0.6$, $A, B$ mutually exclusive. P(A ∩ B)?
 >
-> ME → 0.
+> **Soln.** Definition of mutually exclusive: $A$ and $B$ cannot both happen ⇒ $P(A \cap B) = $ **0**. (Note: the values of $P(A), P(B)$ are irrelevant once we know they are ME.)
 
 > **Q 6.8.** A box has 60% A-grade and 40% B-grade items. 5% of A and 8% of B are defective. An item picked at random is defective. Probability it was A-grade? (**Bayes'**)
 >
-> Numerator: 0.6 × 0.05 = 0.03.
-> Denominator: 0.6 × 0.05 + 0.4 × 0.08 = 0.03 + 0.032 = 0.062.
-> $P(A|D) = 0.03/0.062 \approx \mathbf{0.484}$.
+> **Step 1 — Compute the numerator: $P(A) \cdot P(D|A)$.**
+> - $= 0.6 \times 0.05 = 0.03$
+>
+> **Step 2 — Compute the total-probability denominator $P(D)$.**
+> - $P(D) = 0.6 \times 0.05 + 0.4 \times 0.08$
+> - = $0.03 + 0.032$
+> - = **0.062**
+>
+> **Step 3 — Apply Bayes': $P(A|D) = \text{numerator}/P(D)$.**
+> - = $0.03 / 0.062$
+> - ≈ **0.484**
 
 > **Q 6.9.** P(A) = 0.6, P(B|A) = 0.4. P(A ∩ B)?
 >
-> 0.6 × 0.4 = **0.24**.
+> **Step 1 — Apply the multiplication theorem: $P(A \cap B) = P(A) \cdot P(B|A)$.**
+> - = $0.6 \times 0.4$
+> - = **0.24**
 
 > **Q 6.10.** Three independent events with probabilities 0.5, 0.4, 0.3. P(all happen)?
 >
-> 0.5 × 0.4 × 0.3 = **0.06**.
+> **Step 1 — For independent events, P(all) = product of individual probabilities.**
+> - $P = 0.5 \times 0.4 \times 0.3$
+> - = **0.06**
 
 > **Q 6.11.** Same as above, P(none happen)?
 >
-> (1−0.5)(1−0.4)(1−0.3) = 0.5 · 0.6 · 0.7 = **0.21**.
+> **Step 1 — P(none) = product of (1 − pᵢ) for independent events.**
+> - $P = (1 - 0.5)(1 - 0.4)(1 - 0.3)$
+> - = $0.5 \times 0.6 \times 0.7$
+> - = **0.21**
 
 > **Q 6.12.** Two cards drawn without replacement. P(both kings)?
 >
-> $\dfrac{4}{52} \cdot \dfrac{3}{51} = \dfrac{12}{2652} = \mathbf{1/221}$.
+> **Step 1 — P(1st king) = 4/52** (4 kings in 52 cards).
+>
+> **Step 2 — P(2nd king | 1st king) = 3/51** (after removing one king).
+>
+> **Step 3 — Multiply.**
+> - $P = \dfrac{4}{52} \cdot \dfrac{3}{51} = \dfrac{12}{2652} = $ **1/221**
 
 > **Q 6.13.** A fair die thrown. P(prime number)?
 >
-> Primes among {1,2,3,4,5,6}: 2, 3, 5 → P = **3/6 = 1/2**.
+> **Step 1 — Identify primes in {1,…,6}: {2, 3, 5} → 3 favourable outcomes.**
+>
+> **Step 2 — Compute P.**
+> - $P = 3/6 = $ **1/2**
 
 > **Q 6.14.** Two events are exhaustive iff:
 >
-> $A \cup B = S$ (sample space). i.e., P(A ∪ B) = 1.
+> **Soln.** Exhaustive ⇔ their union covers the entire sample space: $A \cup B = S$, i.e., $P(A \cup B) = 1$.
 
 > **Q 6.15.** A box has 4 defective and 6 good bulbs. 3 drawn together. P(exactly 1 defective)?
 >
-> $ \dfrac{ {}^4C_1 \cdot {}^6C_2 }{ {}^{10}C_3 } = \dfrac{4 \cdot 15}{120} = \dfrac{60}{120} = \mathbf{1/2} $.
+> **Step 1 — Count favourable outcomes (1 defective, 2 good).**
+> - Favourable = ${}^4C_1 \times {}^6C_2 = 4 \times 15 = 60$
+>
+> **Step 2 — Count total outcomes.**
+> - Total = ${}^{10}C_3 = 120$
+>
+> **Step 3 — Compute the probability.**
+> - $P = 60 / 120 = \mathbf{1/2}$
 
 ## 6.9 Trap-recognition card
 
@@ -2002,25 +2435,57 @@ $P(\mu - 3\sigma < X < \mu + 3\sigma) = 0.9973$
 
 A biased coin has $P(\text{Heads}) = 0.4$. It is tossed 5 times. Find $P(X = 3)$.
 
-> $P(X=3) = \binom{5}{3}(0.4)^3(0.6)^2 = 10 \times 0.064 \times 0.36 = 10 \times 0.02304 = \mathbf{0.2304}$
+> **Step 1 — Identify the parameters: $n = 5$, $p = 0.4$, $q = 0.6$, $r = 3$.**
+>
+> **Step 2 — Apply the Binomial pmf: $P(X = r) = {}^nC_r \cdot p^r \cdot q^{n-r}$.**
+> - $P(X = 3) = \binom{5}{3}(0.4)^3 (0.6)^2$
+>
+> **Step 3 — Compute each factor.**
+> - $\binom{5}{3} = 10$
+> - $(0.4)^3 = 0.064$
+> - $(0.6)^2 = 0.36$
+>
+> **Step 4 — Multiply.**
+> - = $10 \times 0.064 \times 0.36$
+> - = $10 \times 0.02304$
+> - = **0.2304**
 
 **Solved Example 7.B — Poisson approximation to Binomial:**
 
 In a production run of 1000 items, each has $P(\text{defective}) = 0.003$. Find the probability that exactly 2 are defective.
 
-> $n = 1000$, $p = 0.003$, $np = \lambda = 3$. Use Poisson.
+> **Step 1 — Check the Poisson-approximation conditions: $n$ large, $p$ small.**
+> - $n = 1000$ (large), $p = 0.003$ (small) ⇒ approximation valid.
 >
-> $P(X=2) = \dfrac{e^{-3} \cdot 3^2}{2!} = \dfrac{0.0498 \times 9}{2} = \dfrac{0.4482}{2} = \mathbf{0.2241}$
+> **Step 2 — Compute $\lambda = np$.**
+> - $\lambda = 1000 \times 0.003 = 3$
+>
+> **Step 3 — Apply the Poisson pmf: $P(X = r) = e^{-\lambda} \lambda^r / r!$ with $r = 2$.**
+> - $P(X = 2) = \dfrac{e^{-3} \cdot 3^2}{2!}$
+>
+> **Step 4 — Substitute $e^{-3} \approx 0.0498$, $3^2 = 9$, $2! = 2$.**
+> - = $\dfrac{0.0498 \times 9}{2}$
+> - = $\dfrac{0.4482}{2}$
+> - = **0.2241**
 
 **Solved Example 7.C — Normal distribution (standardisation):**
 
 $X \sim N(50, 100)$ (mean = 50, variance = 100, so $\sigma = 10$). Find $P(X > 65)$.
 
-> Standardise: $Z = \dfrac{65 - 50}{10} = 1.5$.
+> **Step 1 — Identify the SD.**
+> - $\sigma = \sqrt{100} = 10$
 >
-> $P(X > 65) = P(Z > 1.5) = 1 - \Phi(1.5) = 1 - 0.9332 = \mathbf{0.0668}$
+> **Step 2 — Standardise: $Z = (X - \mu)/\sigma$.**
+> - $Z = (65 - 50)/10$
+> - = **1.5**
 >
-> *(Read $\Phi(1.5) = 0.9332$ from the standard normal table.)*
+> **Step 3 — Look up $\Phi(1.5)$ from the standard normal table.**
+> - $\Phi(1.5) = 0.9332$
+>
+> **Step 4 — Compute the right-tail probability.**
+> - $P(X > 65) = P(Z > 1.5) = 1 - \Phi(1.5)$
+> - = $1 - 0.9332$
+> - = **0.0668**
 
 ## 7.1 Examiner mindset
 
@@ -2135,65 +2600,156 @@ Sampling $n$ items **without replacement** from a population of $N$ containing $
 
 > **Q 7.1.** Toss a fair coin 10 times. P(exactly 4 heads)?
 >
-> $ {}^{10}C_4 (0.5)^4 (0.5)^6 = 210 / 1024 \approx \mathbf{0.205}$.
+> **Step 1 — Identify Binomial parameters: $n = 10$, $p = 0.5$, $r = 4$.**
+>
+> **Step 2 — Apply pmf $P(X = r) = {}^nC_r \, p^r (1-p)^{n-r}$.**
+> - $P(X = 4) = {}^{10}C_4 (0.5)^4 (0.5)^6$
+> - = $210 \times (0.5)^{10}$
+> - = $210 / 1024$
+> - ≈ **0.205**
 
 > **Q 7.2.** $X \sim B(8, 1/4)$. Mean and variance?
 >
-> Mean = 8 · 1/4 = **2**. Var = 8 · 1/4 · 3/4 = **1.5**.
+> **Step 1 — Compute the mean.**
+> - Mean = $np = 8 \times 1/4$
+> - = **2**
+>
+> **Step 2 — Compute the variance.**
+> - Var = $npq = 8 \times (1/4) \times (3/4)$
+> - = $8 \times 3/16$
+> - = **1.5**
 
 > **Q 7.3.** Number of defects per page is Poisson with mean 2. P(no defects on a page)?
 >
-> $ e^{-2} \approx \mathbf{0.135} $.
+> **Step 1 — Apply Poisson pmf with $\lambda = 2$, $r = 0$.**
+> - $P(X = 0) = \dfrac{e^{-2} \cdot 2^0}{0!} = e^{-2}$
+>
+> **Step 2 — Numerical value.**
+> - $e^{-2}$ ≈ **0.135**
 
 > **Q 7.4.** Calls arrive at rate 4/hour (Poisson). P(exactly 5 calls in 1 hour)?
 >
-> $ e^{-4} \cdot 4^5 / 5! = (0.0183)(1024)/120 \approx \mathbf{0.156}$.
+> **Step 1 — Identify Poisson parameters: $\lambda = 4$, $r = 5$.**
+>
+> **Step 2 — Apply pmf $P(X = r) = e^{-\lambda} \lambda^r / r!$.**
+> - $P(X = 5) = \dfrac{e^{-4} \cdot 4^5}{5!}$
+>
+> **Step 3 — Substitute $e^{-4} \approx 0.0183$, $4^5 = 1024$, $5! = 120$.**
+> - = $\dfrac{0.0183 \times 1024}{120}$
+> - ≈ **0.156**
 
 > **Q 7.5.** $X \sim N(50, 100)$. P(40 < X < 60)?
 >
-> $\sigma = 10$. $z_1 = (40-50)/10 = -1, z_2 = +1$. Within ±1 σ → **0.6826** (68.26 %).
+> **Step 1 — Identify the standard deviation.**
+> - Variance = 100, so $\sigma = \sqrt{100} = 10$
+>
+> **Step 2 — Standardise the bounds.**
+> - $z_1 = (40 - 50) / 10 = -1$
+> - $z_2 = (60 - 50) / 10 = +1$
+>
+> **Step 3 — Apply the 68/95/99.7 rule.**
+> - $P(-1 < Z < 1)$ = within ±1σ
+> - = **0.6826 (68.26 %)**
 
 > **Q 7.6.** $X \sim N(20, 16)$. P(X > 28)?
 >
-> $\sigma = 4$. $z = (28 - 20)/4 = 2$. P(Z > 2) = (1 − 0.9544)/2 = **0.0228**.
+> **Step 1 — Identify the standard deviation.**
+> - Variance = 16, so $\sigma = \sqrt{16} = 4$
+>
+> **Step 2 — Standardise 28.**
+> - $z = (28 - 20) / 4 = 8 / 4$
+> - = **2**
+>
+> **Step 3 — Compute the tail probability.**
+> - $P(X > 28) = P(Z > 2)$
+> - = $(1 - 0.9544) / 2$
+> - = $0.0456 / 2$
+> - = **0.0228**
 
 > **Q 7.7.** Binomial $n = 100, p = 0.02$. Approximate by Poisson with mean?
 >
-> $\lambda = np = \mathbf{2}$.
+> **Step 1 — Poisson approximation uses $\lambda = np$.**
+> - $\lambda = 100 \times 0.02 = $ **2**
 
 > **Q 7.8.** Mean of $X \sim P(\lambda)$ is 9. SD?
 >
-> $ \sqrt{9} = \mathbf{3} $.
+> **Step 1 — For Poisson, Mean = Variance = $\lambda$.**
+> - $\lambda = 9$ ⇒ Variance = 9
+>
+> **Step 2 — Take the square root for SD.**
+> - $\sigma = \sqrt{9} = $ **3**
 
 > **Q 7.9.** Lot of 20 has 5 defectives. 4 picked without replacement. P(exactly 2 defective)?
 >
-> $ \dfrac{ {}^5C_2 \cdot {}^{15}C_2 }{ {}^{20}C_4 } = \dfrac{10 \cdot 105}{4845} = \dfrac{1050}{4845} \approx \mathbf{0.217} $.
+> **Step 1 — Identify Hypergeometric parameters.**
+> - $N = 20$ (lot size), $K = 5$ (defectives), $n = 4$ (drawn), $k = 2$
+>
+> **Step 2 — Apply Hypergeometric pmf: $P(X = k) = \dfrac{{}^K C_k \cdot {}^{N-K} C_{n-k}}{{}^N C_n}$.**
+> - $P(X = 2) = \dfrac{{}^5C_2 \cdot {}^{15}C_2}{{}^{20}C_4}$
+>
+> **Step 3 — Compute each combination.**
+> - ${}^5C_2 = 10$
+> - ${}^{15}C_2 = 105$
+> - ${}^{20}C_4 = 4845$
+>
+> **Step 4 — Substitute and simplify.**
+> - $P = \dfrac{10 \times 105}{4845} = \dfrac{1050}{4845}$
+> - ≈ **0.217**
 
 > **Q 7.10.** $X$ uniform on [0, 10]. P(X > 7)?
 >
-> Length 3 / total length 10 = **0.3**.
+> **Step 1 — For Uniform on [a, b], $P(X > x_0) = (b - x_0)/(b - a)$.**
+> - $P(X > 7) = (10 - 7) / (10 - 0)$
+> - = $3 / 10$
+> - = **0.3**
 
 > **Q 7.11.** For a Binomial with mean = 8 and variance = 4, find $n$ and $p$.
 >
-> $np = 8, npq = 4 \Rightarrow q = 0.5, p = 0.5, n = 16$.
+> **Step 1 — Set up the system of equations.**
+> - Mean: $np = 8$
+> - Variance: $npq = 4$
+>
+> **Step 2 — Divide variance by mean to find q.**
+> - $q = npq / np = 4 / 8$
+> - = **0.5**
+>
+> **Step 3 — Find p and n.**
+> - $p = 1 - q = 1 - 0.5 = \mathbf{0.5}$
+> - $n = 8 / p = 8 / 0.5 = \mathbf{16}$
 
 > **Q 7.12.** Mode of normal distribution = ?
 >
-> $ \mu $ (= mean = median).
+> **Soln.** The Normal pdf peaks at $x = \mu$, and by symmetry Mean = Median = Mode = $\mu$.
 
 > **Q 7.13.** $E[X] = 5, \text{Var}(X) = 4$. $E[2X+3]$ and $\text{Var}(2X+3)$?
 >
-> $2 \cdot 5 + 3 = \mathbf{13}$. Var = $4 \cdot 4 = \mathbf{16}$.
+> **Step 1 — Compute E[2X+3] using linearity of expectation.**
+> - $E[2X+3] = 2 \cdot E[X] + 3$
+> - = $2 \times 5 + 3$
+> - = **13**
+>
+> **Step 2 — Compute Var(2X+3) using the scaling rule.**
+> - $\text{Var}(2X+3) = 2^2 \cdot \text{Var}(X)$
+> - = $4 \times 4$
+> - = **16**
 
 > **Q 7.14.** Normal: 95% of data lies within how many σ?
 >
-> ±1.96σ (often approximated as ±2σ).
+> **Soln.** The standard normal critical value for a two-tail 95 % region is **±1.96σ** (often rounded to ±2σ via the 68/95/99.7 rule).
 
 > **Q 7.15.** A discrete RV X has pmf p(0) = 0.3, p(1) = 0.4, p(2) = 0.2, p(3) = c. Find c, mean, variance.
 >
-> $c = 1 − 0.9 = 0.1$.
-> $E[X] = 0(0.3) + 1(0.4) + 2(0.2) + 3(0.1) = 0 + 0.4 + 0.4 + 0.3 = 1.1$.
-> $E[X^2] = 0 + 0.4 + 0.8 + 0.9 = 2.1$. Var = 2.1 − 1.21 = **0.89**.
+> **Step 1 — Find c (probabilities must sum to 1).**
+> - $c = 1 - (0.3 + 0.4 + 0.2) = 1 - 0.9 = \mathbf{0.1}$
+>
+> **Step 2 — Compute E[X].**
+> - $E[X] = 0(0.3) + 1(0.4) + 2(0.2) + 3(0.1)$
+> - = $0 + 0.4 + 0.4 + 0.3 = \mathbf{1.1}$
+>
+> **Step 3 — Compute Var(X) via E[X²] − (E[X])².**
+> - $E[X^2] = 0^2(0.3) + 1^2(0.4) + 2^2(0.2) + 3^2(0.1)$
+> - = $0 + 0.4 + 0.8 + 0.9 = 2.1$
+> - Var = $E[X^2] - (E[X])^2 = 2.1 - 1.1^2 = 2.1 - 1.21 = \mathbf{0.89}$
 
 ## 7.7 Trap-recognition card
 
@@ -2286,9 +2842,19 @@ graph TD
 
 Population: $\mu = 80$, $\sigma = 20$. Random sample of $n = 100$. Find the SE of $\bar{X}$ and $P(78 < \bar{X} < 82)$.
 
-> $\text{SE} = \dfrac{\sigma}{\sqrt{n}} = \dfrac{20}{\sqrt{100}} = \dfrac{20}{10} = 2$
+> **Step 1 — Compute the Standard Error of the mean.**
+> - $\text{SE} = \dfrac{\sigma}{\sqrt{n}}$
+> - = $\dfrac{20}{\sqrt{100}}$
+> - = $\dfrac{20}{10}$
+> - = **2**
 >
-> $P(78 < \bar{X} < 82) = P\!\left(\dfrac{78-80}{2} < Z < \dfrac{82-80}{2}\right) = P(-1 < Z < 1) = 0.6827$
+> **Step 2 — Standardise the probability bounds.**
+> - Lower $z = (78 - 80) / 2 = -1$
+> - Upper $z = (82 - 80) / 2 = +1$
+>
+> **Step 3 — Use the 68/95/99.7 rule.**
+> - $P(78 < \bar{X} < 82) = P(-1 < Z < 1)$
+> - = **0.6827**
 
 ## 8.1 Examiner mindset
 
@@ -2424,43 +2990,74 @@ $$
 
 > **Q 8.1.** Σ = 16, sample size 64. SE of mean (infinite pop)?
 >
-> $ 16/\sqrt{64} = 16/8 = \mathbf{2} $.
+> **Step 1 — Apply the SE formula.**
+> - $\text{SE} = \sigma / \sqrt{n}$
+> - = $16 / \sqrt{64}$
+> - = $16 / 8$
+> - = **2**
 
 > **Q 8.2.** A frame of 1000 units, sample 100, σ = 20. SE with FPC?
 >
-> Without FPC: $20/10 = 2$. FPC = $\sqrt{(1000-100)/(1000-1)} = \sqrt{900/999} \approx 0.949$. SE ≈ $2 \cdot 0.949 \approx \mathbf{1.90}$.
+> **Step 1 — Compute SE without FPC.**
+> - $\text{SE} = \sigma / \sqrt{n} = 20 / \sqrt{100}$
+> - = $20 / 10$
+> - = **2**
+>
+> **Step 2 — Compute the Finite Population Correction (FPC) factor.**
+> - $\text{FPC} = \sqrt{(N - n) / (N - 1)}$
+> - = $\sqrt{(1000 - 100) / (1000 - 1)}$
+> - = $\sqrt{900 / 999}$
+> - $\approx 0.949$
+>
+> **Step 3 — Apply the FPC to get the corrected SE.**
+> - $\text{SE with FPC} = 2 \times 0.949 \approx \mathbf{1.90}$
 
 > **Q 8.3.** Population is geographically scattered with no list of households. Best sampling?
 >
-> **Cluster sampling**.
+> **Soln.** With no full frame and geographic dispersion, build clusters (e.g., villages/blocks) and sample within selected clusters → **Cluster sampling**.
 
 > **Q 8.4.** A factory has machine A producing 70% of items and B producing 30%. To estimate overall defect rate, you sample 70% of items from A's output and 30% from B. This is:
 >
-> **Stratified (proportional allocation)**.
+> **Soln.** Dividing into homogeneous sub-groups (machine A, machine B) and sampling each in proportion to size = **Stratified sampling, proportional allocation**.
 
 > **Q 8.5.** From a list of 1000 employees, every 10th is selected. Sampling type?
 >
-> **Systematic** ($k = 10$).
+> **Soln.** Picking every $k$-th element from an ordered list is **systematic sampling** with $k = N/n = 1000/100 = 10$.
 
 > **Q 8.6.** As n increases, SE of mean:
 >
-> Decreases (proportional to $1/\sqrt n$).
+> **Soln.** $\text{SE} = \sigma / \sqrt{n}$ — proportional to $1/\sqrt{n}$. So SE **decreases** as $n$ rises. (To halve SE you need 4× the sample.)
 
 > **Q 8.7.** SE(p) when $n = 100, P = 0.4$?
 >
-> $ \sqrt{0.4 \cdot 0.6 / 100} = \sqrt{0.0024} \approx \mathbf{0.049}$.
+> **Step 1 — Apply the SE formula for a proportion: $\text{SE}(p) = \sqrt{P(1-P)/n}$.**
+> - $\text{SE}(p) = \sqrt{0.4 \times 0.6 / 100}$
+>
+> **Step 2 — Simplify.**
+> - = $\sqrt{0.24 / 100}$
+> - = $\sqrt{0.0024}$
+> - ≈ **0.049**
 
 > **Q 8.8.** σ known to be 30. Want margin 5 at 95% confidence. Sample size?
 >
-> $n = (1.96 \cdot 30 / 5)^2 = (11.76)^2 \approx \mathbf{138.3} \to 139$.
+> **Step 1 — Use the sample-size formula: $n = (z_{\alpha/2} \cdot \sigma / E)^2$.**
+>
+> **Step 2 — Substitute $z_{0.025} = 1.96$, $\sigma = 30$, $E = 5$.**
+> - $n = (1.96 \times 30 / 5)^2$
+> - = $(58.8 / 5)^2$
+> - = $(11.76)^2$
+> - ≈ **138.3**
+>
+> **Step 3 — Round up to a whole number (always round up for sample size).**
+> - $n = $ **139**
 
 > **Q 8.9.** A non-probability technique relying on existing respondents to refer new ones is:
 >
-> **Snowball sampling**.
+> **Soln.** Existing subjects refer new subjects → **Snowball sampling**. Used for hidden / hard-to-reach populations.
 
 > **Q 8.10.** As sample size increases, non-sampling error generally:
 >
-> **Increases**.
+> **Soln.** More data ⇒ more measurement/processing/non-response opportunities ⇒ **non-sampling error tends to increase**. (In contrast, sampling error falls as $1/\sqrt{n}$.)
 
 ## 8.11 Trap-recognition card
 
@@ -2574,28 +3171,54 @@ A company claims its bulbs last on average 1000 hours. A sample of 64 bulbs has 
 
 > $H_0$: $\mu = 1000$; $H_1$: $\mu \neq 1000$.
 >
-> $z = \dfrac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} = \dfrac{980 - 1000}{80/\sqrt{64}} = \dfrac{-20}{10} = -2.0$
+> **Step 1 — Compute the standard error of the mean.**
+> - $\text{SE} = \sigma / \sqrt{n}$
+> - = $80 / \sqrt{64}$
+> - = $80 / 8$
+> - = **10**
 >
-> Critical value at 5% two-tail: $\pm 1.96$.
+> **Step 2 — Compute the z-statistic.**
+> - $z = (\bar{X} - \mu_0) / \text{SE}$
+> - = $(980 - 1000) / 10$
+> - = $-20 / 10$
+> - = **−2.0**
 >
-> $|z| = 2.0 > 1.96$ → **Reject $H_0$**. Evidence suggests bulbs last less than 1000 hours.
+> **Step 3 — Compare to critical value and decide.**
+> - Critical value at 5% two-tail: $\pm 1.96$
+> - $|z| = 2.0 > 1.96$ → **Reject $H_0$**. Evidence suggests bulbs last less than 1000 hours.
 
 **Solved Example 9.B — χ² test of independence:**
 
 Survey data: 100 males (60 prefer product A, 40 prefer B), 80 females (30 prefer A, 50 prefer B). Test independence of gender and product preference at 5%.
 
-> Expected frequencies: $E = \dfrac{\text{Row total} \times \text{Column total}}{\text{Grand total}}$.
+> **Step 1 — State the hypotheses.**
+> - $H_0$: gender and preference are **independent**
+> - $H_1$: they are **not independent**
 >
-> Grand total = 180; Row totals: Males = 100, Females = 80; Column totals: A = 90, B = 90.
+> **Step 2 — Compute row, column and grand totals.**
+> - Row totals: Males = 100, Females = 80
+> - Column totals: A = 90, B = 90
+> - Grand total $N$ = 180
 >
-> $E(\text{Male, A}) = \dfrac{100 \times 90}{180} = 50$; $E(\text{Male, B}) = 50$; $E(\text{Female, A}) = 40$; $E(\text{Female, B}) = 40$.
+> **Step 3 — Compute expected frequencies: $E_{ij} = (\text{Row}_i \times \text{Col}_j) / N$.**
+> - $E(\text{Male, A}) = 100 \times 90 / 180 = 50$
+> - $E(\text{Male, B}) = 100 \times 90 / 180 = 50$
+> - $E(\text{Female, A}) = 80 \times 90 / 180 = 40$
+> - $E(\text{Female, B}) = 80 \times 90 / 180 = 40$
 >
-> $\chi^2 = \sum \dfrac{(O-E)^2}{E} = \dfrac{(60-50)^2}{50} + \dfrac{(40-50)^2}{50} + \dfrac{(30-40)^2}{40} + \dfrac{(50-40)^2}{40}$
-> $= 2 + 2 + 2.5 + 2.5 = \mathbf{9.0}$
+> **Step 4 — Compute $\chi^2 = \sum (O - E)^2 / E$ over the four cells.**
+> - $(60 - 50)^2 / 50 = 100/50 = 2$
+> - $(40 - 50)^2 / 50 = 100/50 = 2$
+> - $(30 - 40)^2 / 40 = 100/40 = 2.5$
+> - $(50 - 40)^2 / 40 = 100/40 = 2.5$
+> - $\chi^2 = 2 + 2 + 2.5 + 2.5 = $ **9.0**
 >
-> $df = (r-1)(c-1) = 1 \times 1 = 1$. Critical value at 5%, 1 df: **3.84**.
+> **Step 5 — Find df and the critical value.**
+> - $df = (r - 1)(c - 1) = 1 \times 1 = 1$
+> - $\chi^2_{0.05, 1} = $ **3.84**
 >
-> $9.0 > 3.84$ → **Reject $H_0$**. Gender and product preference are NOT independent.
+> **Step 6 — Decide.**
+> - $9.0 > 3.84$ → **Reject $H_0$**. Gender and product preference are NOT independent.
 
 ## 9.1 Examiner mindset
 
@@ -2739,63 +3362,137 @@ A "more powerful test" = lower β for the same α. Powerful tests are usually **
 
 > **Q 9.1.** Sample of n=64 from a population with σ=8 gave $\bar X = 51$. Test $H_0: \mu = 50$ at α = 5% (two-tail).
 >
-> $ Z = (51 - 50)/(8/8) = 1.0 $. |Z| = 1.0 < 1.96 → **fail to reject** $H_0$.
+> **Step 1 — Compute the standard error.**
+> - $\text{SE} = \sigma / \sqrt{n}$
+> - = $8 / \sqrt{64}$
+> - = $8 / 8$
+> - = **1**
+>
+> **Step 2 — Compute the Z-statistic.**
+> - $Z = (\bar{X} - \mu_0) / \text{SE}$
+> - = $(51 - 50) / 1$
+> - = $1 / 1$
+> - = **1.0**
+>
+> **Step 3 — Compare to critical value.**
+> - $|Z| = 1.0 < 1.96$ → **fail to reject** $H_0$.
 
 > **Q 9.2.** $n = 25, \bar X = 102, s = 10$, test $H_0: \mu = 100$ at α = 5% (two-tail).
 >
-> $ t = (102 - 100)/(10/5) = 1.0 $. $t_{0.025, 24} ≈ 2.064$. 1.0 < 2.064 → **fail to reject** $H_0$.
+> **Step 1 — Compute the standard error.**
+> - $\text{SE} = s / \sqrt{n}$
+> - = $10 / \sqrt{25}$
+> - = $10 / 5$
+> - = **2**
+>
+> **Step 2 — Compute the t-statistic.**
+> - $t = (\bar{X} - \mu_0) / \text{SE}$
+> - = $(102 - 100) / 2$
+> - = $2 / 2$
+> - = **1.0**
+>
+> **Step 3 — Compare to critical value (df = n − 1 = 24).**
+> - $t_{0.025,\, 24} \approx 2.064$
+> - $1.0 < 2.064$ → **fail to reject** $H_0$.
 
 > **Q 9.3.** $n=100, p=0.45$. Test $H_0: P = 0.5$ at α = 5% two-tail.
 >
-> $ Z = (0.45 - 0.5)/\sqrt{0.5 \cdot 0.5/100} = -0.05/0.05 = -1.0 $. |Z| < 1.96 → **fail to reject**.
+> **Step 1 — Compute the SE under $H_0$: $\sqrt{P_0(1 - P_0)/n}$.**
+> - $\text{SE} = \sqrt{0.5 \times 0.5 / 100}$
+> - = $\sqrt{0.0025}$
+> - = **0.05**
+>
+> **Step 2 — Compute the Z-statistic.**
+> - $Z = (p - P_0) / \text{SE}$
+> - = $(0.45 - 0.5) / 0.05$
+> - = $-0.05 / 0.05$
+> - = **−1.0**
+>
+> **Step 3 — Compare to critical value.**
+> - $|Z| = 1.0 < 1.96$ → **fail to reject $H_0$** (no significant departure from $P = 0.5$).
 
 > **Q 9.4.** $s_1^2 = 25, s_2^2 = 16, n_1 = n_2 = 11$. Test equality of variances at 5%.
 >
-> $F = 25/16 = 1.5625$. df = (10, 10), $F_{0.05, 10, 10} \approx 2.97$. 1.5625 < 2.97 → fail to reject.
+> **Step 1 — Compute the F-statistic (larger variance over smaller).**
+> - $F = s_1^2 / s_2^2$
+> - = $25 / 16$
+> - = **1.5625**
+>
+> **Step 2 — Compare to critical value (df = 10, 10).**
+> - $F_{0.05,\, 10,\, 10} \approx 2.97$
+> - $1.5625 < 2.97$ → **fail to reject** $H_0$ (variances not significantly different).
 
 > **Q 9.5.** A goodness-of-fit χ² = 12.6 with df = 5. At α = 5% ($\chi^2_{crit} = 11.07$), decision?
 >
-> 12.6 > 11.07 → **reject** $H_0$ (data does not fit the proposed distribution).
+> **Step 1 — Compare test statistic to critical value.**
+> - $\chi^2 = 12.6 > 11.07 = \chi^2_{0.05, 5}$
+>
+> **Step 2 — Decision.** → **Reject $H_0$** (data does not fit the proposed distribution).
 
 > **Q 9.6.** Type I error is the probability of:
 >
-> Rejecting a TRUE $H_0$. (= α)
+> **Soln.** **Rejecting a true $H_0$** (false alarm). Symbol: α. Distinguish from Type II (β = failing to reject a false $H_0$).
 
 > **Q 9.7.** Power of a test = ?
 >
-> 1 − β.
+> **Soln.** Power = $P(\text{reject } H_0 \mid H_0 \text{ false}) = $ **1 − β**.
 
 > **Q 9.8.** 95% CI for mean if $\bar X = 50, s = 4, n = 64$:
 >
-> $ 50 \pm 1.96 \cdot 4/8 = 50 \pm 0.98 = \mathbf{[49.02, 50.98]} $.
+> **Step 1 — Apply the CI formula: $\bar X \pm z_{\alpha/2} \cdot s / \sqrt{n}$.** With $n = 64$ large, use $z_{0.025} = 1.96$.
+> - $\text{CI} = 50 \pm 1.96 \times \dfrac{4}{\sqrt{64}}$
+>
+> **Step 2 — Compute the SE.**
+> - $s / \sqrt{n} = 4 / 8 = 0.5$
+>
+> **Step 3 — Compute the margin and the interval.**
+> - Margin = $1.96 \times 0.5 = 0.98$
+> - CI = $50 \pm 0.98$
+> - = **[49.02, 50.98]**
 
 > **Q 9.9.** Why use $n-1$ (not $n$) for sample variance?
 >
-> So that $E[s^2] = \sigma^2$ (unbiasedness — Bessel's correction).
+> **Soln.** Bessel's correction: using $n - 1$ in the denominator makes $E[s^2] = \sigma^2$ ⇒ $s^2$ becomes an **unbiased estimator** of population variance.
 
 > **Q 9.10.** A test for independence in a 4×3 table has df:
 >
-> $(4 - 1)(3 - 1) = \mathbf{6}$.
+> **Step 1 — For an $r \times c$ contingency table, df = $(r - 1)(c - 1)$.**
+> - df = $(4 - 1)(3 - 1) = 3 \times 2$
+> - = **6**
 
 > **Q 9.11.** $\bar X_1 = 50, \bar X_2 = 47, \sigma_1 = \sigma_2 = 5, n_1 = n_2 = 100$. Test $H_0: \mu_1 = \mu_2$ two-tail.
 >
-> $ Z = 3 / \sqrt{0.25 + 0.25} = 3/\sqrt{0.5} ≈ 4.24 $. > 1.96 → **reject**.
+> **Step 1 — Compute the SE of the difference of means.**
+> - $\text{SE} = \sqrt{\sigma_1^2/n_1 + \sigma_2^2/n_2}$
+> - = $\sqrt{25/100 + 25/100}$
+> - = $\sqrt{0.25 + 0.25}$
+> - = $\sqrt{0.5}$
+> - $\approx 0.707$
+>
+> **Step 2 — Compute the Z-statistic.**
+> - $Z = (\bar{X}_1 - \bar{X}_2) / \text{SE}$
+> - = $(50 - 47) / 0.707$
+> - = $3 / 0.707$
+> - $\approx \mathbf{4.24}$
+>
+> **Step 3 — Compare to critical value.**
+> - $4.24 > 1.96$ → **reject** $H_0$ (means are significantly different).
 
 > **Q 9.12.** MLE of $p$ for Binomial sample $X$ successes in $n$ trials?
 >
-> $ \hat p = X/n $ (also the unbiased MoM estimator).
+> **Soln.** Maximising the Binomial likelihood gives $\hat p = X/n$ — the sample proportion. (Same answer also arises from Method of Moments and is unbiased.)
 
 > **Q 9.13.** $\bar X^2$ is an unbiased estimator of $\mu^2$?
 >
-> No. $E[\bar X^2] = \mu^2 + \sigma^2/n \ne \mu^2$.
+> **Soln.** No. $E[\bar X^2] = (E[\bar X])^2 + \text{Var}(\bar X) = \mu^2 + \sigma^2/n \neq \mu^2$. The bias = $\sigma^2/n$ → 0 as $n \to \infty$, so it is **consistent but not unbiased**.
 
 > **Q 9.14.** Best critical region is given by the:
 >
-> Neyman-Pearson lemma.
+> **Soln.** The **Neyman–Pearson lemma**: among all tests of size α, the likelihood-ratio test maximises power.
 
 > **Q 9.15.** Reduce α from 5% to 1%. β:
 >
-> Generally **increases** (strict tests miss more).
+> **Soln.** Tightening α (harder to reject) ⇒ more failures to reject false $H_0$ ⇒ **β increases**. (There's an α–β trade-off; for fixed $n$, you can lower one only by raising the other.)
 
 ## 9.12 Trap-recognition card
 
@@ -2873,15 +3570,22 @@ Where $k$ = number of groups, $N$ = total observations, $\text{SST} = \text{SSB}
 
 Three teaching methods, 4 students each ($k=3$, $N=12$). SSB = 60, SST = 140.
 
-> SSW = SST − SSB = 140 − 60 = 80.
+> **Step 1 — Find SSW by subtraction.**
+> - SSW = SST − SSB = 140 − 60 = **80**
 >
-> $df_B = k-1 = 2$; $df_W = N-k = 9$; $df_T = N-1 = 11$.
+> **Step 2 — Compute degrees of freedom.**
+> - $df_B = k - 1 = 3 - 1 = 2$
+> - $df_W = N - k = 12 - 3 = 9$
+> - $df_T = N - 1 = 12 - 1 = 11$
 >
-> MSB = 60/2 = 30; MSW = 80/9 = 8.89.
+> **Step 3 — Compute mean squares.**
+> - $\text{MSB} = \text{SSB} / df_B = 60 / 2 = \mathbf{30}$
+> - $\text{MSW} = \text{SSW} / df_W = 80 / 9 \approx \mathbf{8.89}$
 >
-> $F = 30/8.89 = \mathbf{3.37}$.
->
-> Compare to $F_{0.05}(2, 9) = 4.26$ from table. Since $3.37 < 4.26$, **do not reject $H_0$** — no significant difference between methods.
+> **Step 4 — Compute F and compare to critical value.**
+> - $F = \text{MSB} / \text{MSW} = 30 / 8.89 \approx \mathbf{3.37}$
+> - $F_{0.05}(2, 9) = 4.26$ from table
+> - $3.37 < 4.26$ → **do not reject $H_0$** — no significant difference between methods
 
 ## 10.1 Examiner mindset
 
@@ -2935,35 +3639,51 @@ Two F-tests: $F_R = \text{MSR}/\text{MSE}$ (rows), $F_C = \text{MSC}/\text{MSE}$
 
 > **Q 10.1.** ANOVA primarily tests:
 >
-> Equality of **means** of several populations.
+> **Soln.** ANOVA tests **equality of means** across several populations. (It uses the variance ratio F as the tool, but the hypothesis is about means.)
 
 > **Q 10.2.** $k = 4$ treatments, $N = 24$. What is df for between and within?
 >
-> Between = 3, Within = 20.
+> **Step 1 — Apply the df rules: $df_B = k - 1$, $df_W = N - k$.**
+> - $df_B = 4 - 1 = $ **3**
+> - $df_W = 24 - 4 = $ **20**
 
 > **Q 10.3.** SSB = 60, SSW = 80, $k = 4, N = 24$. F?
 >
-> MSB = 60/3 = 20. MSW = 80/20 = 4. F = 20/4 = **5.0**.
+> **Step 1 — Compute MSB (Mean Square Between).**
+> - $df_B = k - 1 = 4 - 1 = 3$
+> - $\text{MSB} = \text{SSB} / df_B = 60 / 3 = \mathbf{20}$
+>
+> **Step 2 — Compute MSW (Mean Square Within).**
+> - $df_W = N - k = 24 - 4 = 20$
+> - $\text{MSW} = \text{SSW} / df_W = 80 / 20 = \mathbf{4}$
+>
+> **Step 3 — Compute the F-statistic.**
+> - $F = \text{MSB} / \text{MSW} = 20 / 4 = \mathbf{5.0}$
 
 > **Q 10.4.** Two-way layout 3 rows × 4 columns. df for error?
 >
-> $(3 - 1)(4 - 1) = \mathbf{6}$.
+> **Step 1 — In two-way (no replication), df_error = $(r - 1)(c - 1)$.**
+> - $df_E = (3 - 1)(4 - 1) = 2 \times 3$
+> - = **6**
 
 > **Q 10.5.** TSS = 200, SSB = 50. SSW?
 >
-> 200 − 50 = **150**.
+> **Step 1 — Use the SS decomposition: TSS = SSB + SSW.**
+> - SSW = TSS − SSB
+> - = $200 - 50$
+> - = **150**
 
 > **Q 10.6.** ANOVA assumes homo-scedasticity, which means:
 >
-> Equal **variances** across groups.
+> **Soln.** Homoscedasticity = **equal variances** across all groups. (The other two ANOVA assumptions: independence and within-group normality.)
 
 > **Q 10.7.** F is significant at 5% if F > F_table. The implication:
 >
-> At least one mean differs from the rest. (ANOVA is omnibus; doesn't say which.)
+> **Soln.** A significant F says **at least one** group mean differs from the rest — but ANOVA is omnibus and **doesn't tell which** pair. Need post-hoc tests (Tukey, Scheffé) to pinpoint the differing pair(s).
 
 > **Q 10.8.** A randomized block design corresponds to which ANOVA?
 >
-> **Two-way ANOVA** (one factor + blocks).
+> **Soln.** RBD has one treatment factor + one blocking factor, modelled as **two-way ANOVA** (without replication).
 
 ## 10.7 Trap-recognition card
 
@@ -3046,11 +3766,13 @@ Each moving average "irons out" the short-term fluctuations, leaving a smoother 
 
 Annual sales (₹ lakh): 10, 14, 12, 16, 18, 15, 20.
 
-> $M_1 = (10+14+12)/3 = 12.0$
-> $M_2 = (14+12+16)/3 = 14.0$
-> $M_3 = (12+16+18)/3 = 15.33$
-> $M_4 = (16+18+15)/3 = 16.33$
-> $M_5 = (18+15+20)/3 = 17.67$
+> **Step 1 — Apply the 3-year MA formula: $M_t = (Y_{t-1} + Y_t + Y_{t+1}) / 3$.**
+>
+> - $M_1 = (10 + 14 + 12) / 3 = 36 / 3 = \mathbf{12.0}$
+> - $M_2 = (14 + 12 + 16) / 3 = 42 / 3 = \mathbf{14.0}$
+> - $M_3 = (12 + 16 + 18) / 3 = 46 / 3 \approx \mathbf{15.33}$
+> - $M_4 = (16 + 18 + 15) / 3 = 49 / 3 \approx \mathbf{16.33}$
+> - $M_5 = (18 + 15 + 20) / 3 = 53 / 3 \approx \mathbf{17.67}$
 
 The moving averages (12.0, 14.0, 15.33, 16.33, 17.67) show a clearer upward trend than the raw data.
 
@@ -3135,47 +3857,57 @@ The 4 (or 12) indices average to 100. If they don't, **adjust** by multiplying e
 
 > **Q 11.1.** A time-series component repeating every year is:
 >
-> **Seasonal**.
+> **Soln.** A within-year, regular, repeating pattern is the **Seasonal** component (S). Cyclical waves are longer than a year; irregular shocks are random; trend is monotonic.
 
 > **Q 11.2.** Multiplicative model of time series?
 >
-> $Y = T \cdot S \cdot C \cdot I$.
+> **Soln.** The multiplicative decomposition: **$Y = T \cdot S \cdot C \cdot I$** — used when the seasonal amplitude grows proportionally with the trend level (common in business data).
 
 > **Q 11.3.** Sales: 10, 12, 14, 13, 16, 18, 20. 3-year moving averages?
 >
-> Centered at 2nd year: (10+12+14)/3 = 12.
-> 3rd: (12+14+13)/3 = 13.
-> 4th: (14+13+16)/3 = 14.33.
-> 5th: (13+16+18)/3 = 15.67.
-> 6th: (16+18+20)/3 = 18.
+> **Step 1 — Apply 3-year MA formula: $M_t = (Y_{t-1} + Y_t + Y_{t+1}) / 3$.**
+>
+> - Year 2 (centred): $(10 + 12 + 14) / 3 = 36 / 3 = \mathbf{12.00}$
+> - Year 3: $(12 + 14 + 13) / 3 = 39 / 3 = \mathbf{13.00}$
+> - Year 4: $(14 + 13 + 16) / 3 = 43 / 3 = \mathbf{14.33}$
+> - Year 5: $(13 + 16 + 18) / 3 = 47 / 3 = \mathbf{15.67}$
+> - Year 6: $(16 + 18 + 20) / 3 = 54 / 3 = \mathbf{18.00}$
 
 > **Q 11.4.** A company's quarterly sales: Q1=120, Q2=160, Q3=180, Q4=140 in year-1; year-2 same proportionally with grand average 160. Seasonal index Q3?
 >
-> = 180/150 × 100 = 120 (using year-1 average 150). Then re-base to grand average if needed.
+> **Step 1 — Compute the year-1 quarterly average.**
+> - Average = $(120 + 160 + 180 + 140) / 4 = 600/4 = 150$
+>
+> **Step 2 — Seasonal index for Q3 = (Q3 value / year average) × 100.**
+> - Index = $180 / 150 \times 100$
+> - = **120**
+>
+> (If the question demands rebasing so the four indices sum to 400, normalise accordingly.)
 
 > **Q 11.5.** The semi-average method of fitting trend uses how many points to draw the line?
 >
-> **Two** points (one for each half).
+> **Soln.** Split the series into two halves, compute the mean of each half, plot the two means against the midpoints of their halves and join. That's **two** points.
 
 > **Q 11.6.** Removing trend from a time series gives the:
 >
-> Detrended series. (Removing seasonality → deseasonalised.)
+> **Soln.** Detrending leaves the **detrended series** (= S + C + I components). (Compare: removing seasonality → deseasonalised series.)
 
 > **Q 11.7.** Cyclical component differs from seasonal in:
 >
-> **Period > 1 year** (cyclical) vs ≤ 1 year (seasonal).
+> **Soln.** Seasonal pattern has period **≤ 1 year** and is regular (same shape every year). Cyclical waves have period **> 1 year** (typically 2–10 years) and are irregular — driven by macro-economic cycles.
 
 > **Q 11.8.** A 5-year moving average loses how many observations at each end?
 >
-> 2 at each end (so 4 total).
+> **Step 1 — For a $(2k+1)$-period centred MA, we lose $k$ observations at each end.**
+> - With period = 5, $k = 2$ ⇒ **2 at each end** (4 total).
 
 > **Q 11.9.** Sum of seasonal indices over 4 quarters should equal:
 >
-> 400 (so each averages to 100).
+> **Soln.** Indices average to 100 by construction, so over 4 quarters the **sum = 400**. (Over 12 months: 1200.)
 
 > **Q 11.10.** Trend by least squares with $\sum X = 0$: $b$ formula?
 >
-> $ b = \sum XY / \sum X^2 $.
+> **Soln.** With $\sum X = 0$, the normal equations simplify to **$b = \sum XY / \sum X^2$** (and $a = \bar Y$).
 
 ## 11.7 Trap-recognition card
 
@@ -3265,15 +3997,18 @@ An **index number** measures relative change from a base period. CPI = 180 means
 | A | 10 | 5 | 12 | 6 |
 | B | 8 | 4 | 10 | 3 |
 
-> $\sum p_0 q_0 = 50 + 32 = 82$; $\sum p_1 q_0 = 60 + 40 = 100$.
+> **Step 1 — Compute Laspeyres index (base-year quantities as weights).**
+> - $\sum p_0 q_0 = (10 \times 5) + (8 \times 4) = 50 + 32 = 82$
+> - $\sum p_1 q_0 = (12 \times 5) + (10 \times 4) = 60 + 40 = 100$
+> - $L = (100 / 82) \times 100 = \mathbf{121.95}$
 >
-> **Laspeyres** $= \dfrac{100}{82} \times 100 = \mathbf{121.95}$
+> **Step 2 — Compute Paasche index (current-year quantities as weights).**
+> - $\sum p_1 q_1 = (12 \times 6) + (10 \times 3) = 72 + 30 = 102$
+> - $\sum p_0 q_1 = (10 \times 6) + (8 \times 3) = 60 + 24 = 84$
+> - $P = (102 / 84) \times 100 = \mathbf{121.43}$
 >
-> $\sum p_1 q_1 = 72 + 30 = 102$; $\sum p_0 q_1 = 60 + 24 = 84$.
->
-> **Paasche** $= \dfrac{102}{84} \times 100 = \mathbf{121.43}$
->
-> **Fisher's Ideal** $= \sqrt{121.95 \times 121.43} = \sqrt{14814.5} = \mathbf{121.72}$
+> **Step 3 — Compute Fisher's Ideal index (geometric mean of L and P).**
+> - $F = \sqrt{L \times P} = \sqrt{121.95 \times 121.43} = \sqrt{14814.5} = \mathbf{121.72}$
 
 ## 12.1 Examiner mindset
 
@@ -3360,47 +4095,81 @@ Both methods are mathematically equivalent.
 > | A | 4 | 10 | 5 |
 > | B | 6 | 5 | 9 |
 >
-> Numerator = 5·10 + 9·5 = 50 + 45 = 95.
-> Denom = 4·10 + 6·5 = 40 + 30 = 70.
-> L = 95/70 × 100 = **135.71**.
+> **Step 1 — Compute numerator $\sum P_1 Q_0$ (current-year prices × base-year quantities).**
+> - $= 5 \times 10 + 9 \times 5$
+> - $= 50 + 45$
+> - = **95**
+>
+> **Step 2 — Compute denominator $\sum P_0 Q_0$ (base-year prices × base-year quantities).**
+> - $= 4 \times 10 + 6 \times 5$
+> - $= 40 + 30$
+> - = **70**
+>
+> **Step 3 — Apply $L = (\text{num}/\text{den}) \times 100$.**
+> - $L = (95/70) \times 100$
+> - ≈ **135.71**
 
 > **Q 12.2.** Same items + Q₁ = 12, 4. Compute Paasche.
 >
-> Num = 5·12 + 9·4 = 60 + 36 = 96.
-> Denom = 4·12 + 6·4 = 48 + 24 = 72.
-> P = 96/72 × 100 = **133.33**.
+> **Step 1 — Compute numerator $\sum P_1 Q_1$.**
+> - $= 5 \times 12 + 9 \times 4$
+> - $= 60 + 36$
+> - = **96**
+>
+> **Step 2 — Compute denominator $\sum P_0 Q_1$.**
+> - $= 4 \times 12 + 6 \times 4$
+> - $= 48 + 24$
+> - = **72**
+>
+> **Step 3 — Apply $P = (\text{num}/\text{den}) \times 100$.**
+> - $P = (96/72) \times 100$
+> - ≈ **133.33**
 
 > **Q 12.3.** Fisher's index for above?
 >
-> $ \sqrt{135.71 \times 133.33} = \sqrt{18093} \approx \mathbf{134.51} $.
+> **Step 1 — Apply $F = \sqrt{L \cdot P}$.**
+> - $F = \sqrt{135.71 \times 133.33}$
+> - = $\sqrt{18093}$
+> - ≈ **134.51**
 
 > **Q 12.4.** Which index satisfies factor reversal?
 >
-> **Fisher's** (the "Ideal" index).
+> **Soln.** Only **Fisher's Ideal Index** satisfies both Time Reversal and Factor Reversal tests — that's why it is called "Ideal".
 
 > **Q 12.5.** Money wage 6000, CPI = 150. Real wage?
 >
-> 6000/150 × 100 = **4000**.
+> **Step 1 — Apply Real Wage = (Money wage / CPI) × 100.**
+> - Real wage = $(6000 / 150) \times 100$
+> - = $40 \times 100$
+> - = **₹4000**
 
 > **Q 12.6.** Purchasing power of money when CPI = 200?
 >
-> 1/200 × 100 = **0.50** (= 50% of base period).
+> **Step 1 — Apply Purchasing Power = (1 / CPI) × 100 (relative to base = ₹1).**
+> - $= (1 / 200) \times 100$
+> - = **0.50** (= 50 % of base-period purchasing power)
 
 > **Q 12.7.** A series with base 2010 = 100 has values 110 (2011), 121 (2012), 133 (2013). Shift base to 2012.
 >
-> Divide by 121, multiply by 100. New values: 110/121×100 ≈ 90.91, 100, 109.92.
+> **Step 1 — Base shifting: divide each value by the new-base value (121) and multiply by 100.**
+> - 2011: $110 / 121 \times 100 ≈ $ **90.91**
+> - 2012: $121 / 121 \times 100 = $ **100**
+> - 2013: $133 / 121 \times 100 ≈ $ **109.92**
 
 > **Q 12.8.** $L = 144, P = 121$. Fisher?
 >
-> $\sqrt{144 \cdot 121} = \sqrt{17424} = 132$.
+> **Step 1 — Apply $F = \sqrt{L \cdot P}$.**
+> - $F = \sqrt{144 \times 121}$
+> - = $\sqrt{17424}$
+> - = **132**
 
 > **Q 12.9.** Marshall-Edgeworth uses what weight?
 >
-> $Q_0 + Q_1$ (sum of base and current quantities).
+> **Soln.** Marshall-Edgeworth uses **$(Q_0 + Q_1)$** — the sum of base-year and current-year quantities — as the weight in both numerator and denominator.
 
 > **Q 12.10.** A simple aggregate of prices index ignores:
 >
-> Quantities (it's unweighted).
+> **Soln.** Simple aggregate uses only $\sum P_1 / \sum P_0$; it **ignores quantities** (and therefore relative importance of items).
 
 ## 12.10 Trap-recognition card
 
@@ -3779,7 +4548,7 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 | 12 | mean+10, SD same | 37 | determination | 62 | P(Z>2)=0.0228 | 87 | (3−1)(4−1)=6 |
 | 13 | 108° | 38 | origin & scale | 63 | 0.95 | 88 | T, S, C, I |
 | 14 | 12 | 39 | [0,1] | 64 | 3 | 89 | 2 |
-| 15 | 30 | 40 | 25 | 65 | Poisson | 90 | 400 |
+| 15 | 29.5 | 40 | 25 | 65 | Poisson | 90 | 400 |
 | 16 | ogive | 41 | √0.30≈0.548 | 66 | (4−0)²/12=16/12=4/3 | 91 | Y = T·S·C·I |
 | 17 | T | 42 | 0.16 | 67 | 1 | 92 | ΣXY/ΣX² |
 | 18 | 36 | 43 | platykurtic | 68 | √[(N−n)/(N−1)] | 93 | base year (Q₀) |
@@ -3836,31 +4605,78 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-2.2.** Mean of first 100 natural numbers?
 >
-> $ \dfrac{1 + 2 + \ldots + 100}{100} = \dfrac{100 \cdot 101 / 2}{100} = \dfrac{101}{2} = \mathbf{50.5} $.
+> $\dfrac{1 + 2 + \ldots + 100}{100}$
+>
+> $= \dfrac{100 \cdot 101 / 2}{100}$
+>
+> $= \dfrac{101}{2} = \mathbf{50.5}$.
 
 > **E-2.3.** A series of 6 observations has mean 12. If a 7th observation is added and the new mean is 13, what is the new value?
 >
-> Old sum = 72. New sum = 7 × 13 = 91. New value = 91 − 72 = **19**.
+> **Step 1 — Old sum = $n \times \bar X = 6 \times 12 = 72$.**
+>
+> **Step 2 — New sum = $7 \times 13 = 91$.**
+>
+> **Step 3 — New value = new sum − old sum.**
+> - $= 91 - 72$
+> - = **19**
 
 > **E-2.4.** Mean of 25 observations was 36. It was found that two observations 47 and 35 were misread as 27 and 53. Correct mean?
 >
-> Old sum = 25 × 36 = 900. Adjustment = (47 + 35) − (27 + 53) = 82 − 80 = +2. Correct sum = 902. Correct mean = 902/25 = **36.08**.
+> **Step 1 — Old sum = $25 \times 36 = 900$.**
+>
+> **Step 2 — Adjustment = (correct values) − (wrong values).**
+> - $= (47 + 35) - (27 + 53)$
+> - $= 82 - 80$
+> - = **+2**
+>
+> **Step 3 — Correct sum = old sum + adjustment.**
+> - $= 900 + 2 = 902$
+>
+> **Step 4 — Correct mean = correct sum / n.**
+> - $= 902 / 25$
+> - = **36.08**
 
 > **E-2.5.** Two groups of size 50 and 100 have means 60 and 75 respectively. Combined mean?
 >
-> $ \dfrac{50 \cdot 60 + 100 \cdot 75}{150} = \dfrac{3000 + 7500}{150} = \dfrac{10500}{150} = \mathbf{70} $.
+> **Step 1 — Apply the combined-mean formula.**
+> - $\bar X_{12} = \dfrac{n_1 \bar X_1 + n_2 \bar X_2}{n_1 + n_2}$
+> - = $\dfrac{50 \cdot 60 + 100 \cdot 75}{150}$
+> - = $\dfrac{3000 + 7500}{150}$
+> - = $\dfrac{10500}{150}$
+> - = **70**
 
 > **E-2.6.** AM of 10 observations is 25. After adding two new observations the mean becomes 27. Sum of the two new values?
 >
-> Old sum = 250. New sum = 12 × 27 = 324. Two new = 324 − 250 = **74**.
+> **Step 1 — Old sum = $10 \times 25 = 250$.**
+>
+> **Step 2 — New sum after adding 2 observations = $12 \times 27 = 324$.**
+>
+> **Step 3 — Two new values = new sum − old sum.**
+> - $= 324 - 250$
+> - = **74**
 
 > **E-2.7.** A man covers three equal distances at 30, 40 and 60 km/h. Average speed?
 >
-> Equal distances → HM. $ \text{HM} = 3/(1/30 + 1/40 + 1/60) $. LCM 120: 4/120 + 3/120 + 2/120 = 9/120. HM = 3 · 120/9 = **40 km/h**.
+> **Step 1 — Equal distances at different speeds ⇒ use HM, not AM.**
+>
+> **Step 2 — Apply n-value HM formula: $\text{HM} = n / \sum (1/v_i)$ with $n = 3$.**
+> - HM = $\dfrac{3}{1/30 + 1/40 + 1/60}$
+>
+> **Step 3 — Combine reciprocals (LCM = 120).**
+> - $1/30 + 1/40 + 1/60 = 4/120 + 3/120 + 2/120 = 9/120$
+>
+> **Step 4 — Compute the HM.**
+> - HM = $\dfrac{3}{9/120} = \dfrac{3 \times 120}{9} = \dfrac{360}{9}$
+> - = **40 km/h**
 
 > **E-2.8.** GM of 1, 3, 9, 27, 81?
 >
-> Powers of 3: $3^0, 3^1, 3^2, 3^3, 3^4$. Product = $3^{0+1+2+3+4} = 3^{10}$. GM = $(3^{10})^{1/5} = 3^2 = \mathbf{9}$. (Or: middle term of GP = GM.)
+> Powers of 3: $3^0, 3^1, 3^2, 3^3, 3^4$.
+>
+> Product $= 3^{0+1+2+3+4} = 3^{10}$
+>
+> $\text{GM} = (3^{10})^{1/5} = 3^2 = \mathbf{9}$. (Or: middle term of GP = GM.)
 
 > **E-2.9.** AM of two numbers exceeds their GM by 2. AM exceeds HM by what?
 >
@@ -3884,19 +4700,50 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 > |-------|------|-------|-------|-------|-------|-------|
 > | f     | 5    | 8     | 12    | 20    | 10    | 5     |
 >
-> Class marks: 5, 15, 25, 35, 45, 55. $u = (m − 35)/10$: −3, −2, −1, 0, 1, 2.
-> $fu$: −15, −16, −12, 0, 10, 10. Σfu = −23. Σf = 60.
-> Mean = 35 + (−23/60)(10) = 35 − 3.83 = **31.17**.
+> **Step 1 — Write the class marks $m$ and compute $u = (m - A)/h$ for each class.**
+> - Class marks: 5, 15, 25, 35, 45, 55
+> - $u$: −3, −2, −1, 0, 1, 2
+>
+> **Step 2 — Compute $fu$ for each class and the totals.**
+> - $fu$: $-15, -16, -12, 0, 10, 10$
+> - $\Sigma fu = -23$, $\Sigma f = 60$
+>
+> **Step 3 — Apply the step-deviation formula.**
+> - Mean = $A + (\Sigma fu / N) \cdot h$
+> - = $35 + (-23/60)(10)$
+> - = $35 - 3.83$
+> - = **31.17**
 
 > **E-2.14.** From E-2.13, find the median.
 >
-> N/2 = 30. CF: 5, 13, 25, 45, 55, 60. Median class first crossing 30 = 30–40 (CF jumps from 25 to 45).
-> L = 30, F = 25, f = 20, h = 10. Median = 30 + (30 − 25)/20 × 10 = 30 + 2.5 = **32.5**.
+> **Step 1 — Compute N/2.**
+> - $N = 60$, $N/2 = 30$
+>
+> **Step 2 — Build the CF column.**
+> - CF: 5, 13, 25, 45, 55, 60
+>
+> **Step 3 — Locate the median class (first CF to cross N/2 = 30).**
+> - 45 ≥ 30 → median class = **30–40**
+>
+> **Step 4 — Identify symbols and apply the median formula.**
+> - $L = 30$, $F = 25$, $f = 20$, $h = 10$
+> - Median $= 30 + \dfrac{30 - 25}{20} \times 10$
+> - $= 30 + 2.5$
+> - $= $ **32.5**
 
 > **E-2.15.** Mode of E-2.13?
 >
-> Modal class = 30–40 (highest f = 20). $f_1 = 20, f_0 = 12, f_2 = 10, L = 30, h = 10$.
-> Mode = 30 + (20 − 12)/(40 − 12 − 10) × 10 = 30 + 8/18 × 10 = 30 + 4.44 = **34.44**.
+> **Step 1 — Locate the modal class (highest frequency).**
+> - Max $f = 20$ → modal class = **30–40**
+>
+> **Step 2 — Identify symbols.**
+> - $L = 30$, $f_1 = 20$, $f_0 = 12$, $f_2 = 10$, $h = 10$
+>
+> **Step 3 — Apply the mode formula: Mode $= L + \dfrac{f_1 - f_0}{2 f_1 - f_0 - f_2} \times h$.**
+> - $= 30 + \dfrac{20 - 12}{(2 \times 20) - 12 - 10} \times 10$
+> - $= 30 + \dfrac{8}{18} \times 10$
+> - $= 30 + 4.44$
+> - = **34.44**
 
 > **E-2.16.** Verify the empirical relation on E-2.13/14/15.
 >
@@ -3920,7 +4767,15 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-2.21.** A car runs the first 1/3rd of a journey at 30 km/h, the next 1/3rd at 60 km/h, and the last 1/3rd at 90 km/h. Average speed?
 >
-> Equal distances → HM. $ 3 / (1/30 + 1/60 + 1/90) $. LCM 180: 6 + 3 + 2 = 11. $180 \cdot 3 / 11 = 540/11 ≈ \mathbf{49.09 \text{ km/h}}$.
+> **Step 1 — Equal distances at different speeds ⇒ use HM (n = 3).**
+> - HM = $\dfrac{3}{1/30 + 1/60 + 1/90}$
+>
+> **Step 2 — Combine reciprocals (LCM = 180).**
+> - $1/30 + 1/60 + 1/90 = 6/180 + 3/180 + 2/180 = 11/180$
+>
+> **Step 3 — Compute HM.**
+> - HM = $\dfrac{3}{11/180} = \dfrac{3 \times 180}{11} = \dfrac{540}{11}$
+> - ≈ **49.09 km/h**
 
 > **E-2.22.** GM of 8 and 18?
 >
@@ -3928,11 +4783,20 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-2.23.** A class mean of 60 girls is 50, the combined mean (boys + girls = 100 students) is 54. Mean of boys?
 >
-> $54 \cdot 100 = 50 \cdot 60 + \bar X_B \cdot 40 \Rightarrow 5400 = 3000 + 40 \bar X_B \Rightarrow \bar X_B = 60$.
+> **Step 1 — Set up the combined-mean equation.**
+> - $\bar X_{12} \cdot N = n_G \bar X_G + n_B \bar X_B$
+> - $54 \times 100 = 50 \times 60 + \bar X_B \times 40$
+>
+> **Step 2 — Solve for $\bar X_B$.**
+> - $5400 = 3000 + 40 \bar X_B$
+> - $40 \bar X_B = 2400$
+> - $\bar X_B = $ **60**
 
 > **E-2.24.** For data 5, 7, 9, 11, 13, the mean of $2X + 3$?
 >
-> Mean of X = 9. So mean of 2X + 3 = 21.
+> Mean of $X = 9$.
+>
+> Mean of $2X + 3 = 2 \times 9 + 3 = \mathbf{21}$.
 
 > **E-2.25.** When data is positively skewed, which is the largest of the three central tendencies?
 >
@@ -3947,16 +4811,40 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 > **E-3.1.** Variance of first $n$ odd natural numbers?
 >
 > Odd numbers: 1, 3, 5, …, (2n − 1). Mean = $n$. $\sum X^2 = \dfrac{n(2n-1)(2n+1)}{3}$.
-> Variance = $\sum X^2 / n - n^2 = \dfrac{(2n-1)(2n+1)}{3} - n^2 = \dfrac{4n^2 - 1}{3} - n^2 = \dfrac{n^2 - 1}{3}$.
+>
+> Variance $= \dfrac{\sum X^2}{n} - n^2$
+>
+> $= \dfrac{(2n-1)(2n+1)}{3} - n^2$
+>
+> $= \dfrac{4n^2 - 1}{3} - n^2$
+>
+> $= \dfrac{4n^2 - 1 - 3n^2}{3} = \dfrac{n^2 - 1}{3}$.
 > So variance of odd natural numbers up to $2n - 1$ is $\dfrac{n^2 - 1}{3}$ (analogous to natural numbers' $ (n^2-1)/12$; note the 4× because step is 2).
 
 > **E-3.2.** SD of $2, 4, 6, 8, 10$?
 >
-> Mean = 6. Deviations: −4, −2, 0, 2, 4. Squared: 16, 4, 0, 4, 16 → sum 40. Variance = 8. SD = $2\sqrt 2 \approx \mathbf{2.83}$.
+> **Step 1 — Compute the mean.**
+> - Mean = $(2 + 4 + 6 + 8 + 10) / 5 = 30 / 5 = \mathbf{6}$
+>
+> **Step 2 — Compute squared deviations and their sum.**
+> - Deviations from 6: $-4, -2, 0, 2, 4$
+> - Squared: $16, 4, 0, 4, 16$ → Sum $= 40$
+>
+> **Step 3 — Compute variance and SD.**
+> - Variance $= 40 / 5 = \mathbf{8}$
+> - SD $= \sqrt{8} = 2\sqrt{2} \approx \mathbf{2.83}$
 
 > **E-3.3.** Mean of 10 observations is 5 and SD is 4. Find $\sum X$ and $\sum X^2$.
 >
-> $\sum X = 50$. Variance = 16 = $\sum X^2/10 − 25$ → $\sum X^2 = 410$.
+> **Step 1 — Compute $\sum X = n \bar X$.**
+> - $\sum X = 10 \times 5 = $ **50**
+>
+> **Step 2 — Use the computational form of variance: $\sigma^2 = \sum X^2/n - \bar X^2$.**
+> - $16 = \sum X^2 / 10 - 25$
+>
+> **Step 3 — Solve for $\sum X^2$.**
+> - $\sum X^2 = (16 + 25) \times 10 = 41 \times 10$
+> - = **410**
 
 > **E-3.4.** Var(X) = 9, Var(Y) = 16, X and Y are independent. Var($2X − 3Y$)?
 >
@@ -3968,8 +4856,21 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-3.6.** Two groups of equal size with means 50 and 60 and SDs 4 and 3 respectively. Combined SD?
 >
-> Combined mean = 55. $d_1 = -5, d_2 = +5$.
-> Combined var = (1·(16 + 25) + 1·(9 + 25))/2 = (41 + 34)/2 = 37.5. SD = $\sqrt{37.5} ≈ \mathbf{6.12}$.
+> **Step 1 — Compute the combined mean (equal sizes ⇒ simple average).**
+> - $\bar X_{12} = (50 + 60)/2 = $ **55**
+>
+> **Step 2 — Compute deviations.**
+> - $d_1 = 50 - 55 = -5$, $d_2 = 60 - 55 = +5$
+>
+> **Step 3 — Apply the combined-variance formula (equal weights of 1).**
+> - $\sigma_{12}^2 = \dfrac{(σ_1^2 + d_1^2) + (σ_2^2 + d_2^2)}{2}$
+> - $= \dfrac{(16 + 25) + (9 + 25)}{2}$
+> - $= \dfrac{41 + 34}{2}$
+> - $= $ **37.5**
+>
+> **Step 4 — Take square root.**
+> - SD = $\sqrt{37.5}$
+> - ≈ **6.12**
 
 > **E-3.7.** Variance computational form: which of the following is the correct expression?  (i) $\sum (X − \bar X)^2 / n$, (ii) $\sum X^2 / n − \bar X^2$, (iii) both, (iv) neither.
 >
@@ -3977,19 +4878,38 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-3.8.** Which has greater dispersion: A (mean 100, SD 20) or B (mean 250, SD 30)?
 >
-> CV(A) = 20%, CV(B) = 12%. **A** has greater relative dispersion.
+> **Step 1 — Compute CV for each series.**
+> - CV(A) = $(20 / 100) \times 100 = \mathbf{20\%}$
+> - CV(B) = $(30 / 250) \times 100 = \mathbf{12\%}$
+>
+> **Step 2 — Compare.** Higher CV = greater relative dispersion → **A** is more dispersed.
 
 > **E-3.9.** First 10 natural numbers: variance and SD?
 >
-> Var = (10² − 1)/12 = 99/12 = **8.25**. SD = $\sqrt{8.25} \approx 2.87$.
+> **Step 1 — Apply the variance formula for first n natural numbers: $\text{Var} = (n^2 - 1)/12$.**
+> - Var = $(10^2 - 1) / 12 = 99 / 12 = \mathbf{8.25}$
+>
+> **Step 2 — Compute SD.**
+> - SD = $\sqrt{8.25} \approx \mathbf{2.87}$
 
 > **E-3.10.** Mean deviation about median for the data 4, 6, 8, 10, 12?
 >
-> Median = 8. |X − 8| = 4, 2, 0, 2, 4. Sum = 12. MD = 12/5 = **2.4**.
+> **Step 1 — Find the median.**
+> - 5 values; middle = 3rd = **8**
+>
+> **Step 2 — Compute absolute deviations from the median.**
+> - $|4 - 8|, |6 - 8|, |8 - 8|, |10 - 8|, |12 - 8| = 4, 2, 0, 2, 4$; Sum = **12**
+>
+> **Step 3 — Compute MD.**
+> - MD = $12 / 5 = \mathbf{2.4}$
 
 > **E-3.11.** Coefficient of QD when $Q_1 = 22, Q_3 = 38$?
 >
-> (38 − 22)/(38 + 22) = 16/60 = **0.267**.
+> **Step 1 — Apply the coefficient of QD formula.**
+> - Coefficient of QD = $(Q_3 - Q_1) / (Q_3 + Q_1)$
+> - = $(38 - 22) / (38 + 22)$
+> - = $16 / 60$
+> - = **0.267**
 
 > **E-3.12.** Variance of $7$ added 4 times → 7, 7, 7, 7?
 >
@@ -4025,7 +4945,16 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-3.20.** $\sum X = 60, \sum X^2 = 400, n = 10$. Variance?
 >
-> $\bar X = 6$. Var = 40 − 36 = **4**. SD = 2.
+> **Step 1 — Compute the mean.**
+> - $\bar X = 60 / 10 = $ **6**
+>
+> **Step 2 — Apply the computational form of variance.**
+> - $\text{Var} = \sum X^2 / n - \bar X^2$
+> - $= 400 / 10 - 6^2$
+> - $= 40 - 36$
+> - = **4**
+>
+> **Step 3 — SD = $\sqrt{4} = $ 2.**
 
 > **E-3.21.** Variance of $aX + bY$ with X and Y independent?
 >
@@ -4060,10 +4989,21 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 > **E-5.2.** Two regression equations: $8X − 10Y + 66 = 0$ and $40X − 18Y = 214$. Find $\bar X, \bar Y, b_{YX}, b_{XY}, r$.
 >
 > Solve simultaneously.
-> Eq1: $8X − 10Y = −66$ → divide by 2: $4X − 5Y = −33$.
-> Eq2: $40X − 18Y = 214$ → divide by 2: $20X − 9Y = 107$.
-> Multiply eq1 by 5: $20X − 25Y = −165$. Subtract: $(20X − 25Y) − (20X − 9Y) = −165 − 107$ → $−16Y = −272$ → $Y = 17$.
-> Then $4X = −33 + 85 = 52$ → X = 13. So $\bar X = 13, \bar Y = 17$.
+> Eq1: $8X - 10Y = -66$ → divide by 2: $4X - 5Y = -33$.
+>
+> Eq2: $40X - 18Y = 214$ → divide by 2: $20X - 9Y = 107$.
+>
+> Multiply Eq1 by 5: $20X - 25Y = -165$.
+>
+> Subtract: $(20X - 25Y) - (20X - 9Y) = -165 - 107$
+>
+> $-16Y = -272$
+>
+> $Y = 17$
+>
+> Then $4X = -33 + 5(17) = -33 + 85 = 52$
+>
+> $X = 13$. So $\bar X = 13$, $\bar Y = 17$.
 > Now identify which is Y on X. From Eq1: $Y = (8X + 66)/10 = 0.8X + 6.6$ → $b_{YX} = 0.8$.
 > From Eq2: $X = (18Y + 214)/40 = 0.45Y + 5.35$ → $b_{XY} = 0.45$.
 > Check: $b_{YX} \cdot b_{XY} = 0.36 ≤ 1$ ✓. r = +√0.36 = **0.6**.
@@ -4082,8 +5022,13 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-5.6.** Spearman with ties: $\sum d^2 = 50$, n = 10, two pairs of ties of size 2 each in one variable. ρ?
 >
-> Tie correction = 2 · (2(4 − 1)/12) = 2 · 0.5 = 1. Adjusted $\sum d^2 = 51$.
-> $\rho = 1 − 6 · 51 / (10 · 99) = 1 − 306/990 = 1 − 0.309 = \mathbf{0.691}$.
+> Tie correction $= 2 \times \dfrac{2(4-1)}{12} = 2 \times 0.5 = 1$. Adjusted $\sum d^2 = 51$.
+>
+> $\rho = 1 - \dfrac{6 \times 51}{10 \times 99}$
+>
+> $= 1 - \dfrac{306}{990}$
+>
+> $= 1 - 0.309 = \mathbf{0.691}$.
 
 > **E-5.7.** A perfectly positive correlation has scatter:
 >
@@ -4119,13 +5064,25 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-5.15.** $r_{12} = 0.6, r_{13} = 0.5, r_{23} = 0.4$. Partial $r_{12.3}$?
 >
-> Numerator = 0.6 − 0.5·0.4 = 0.6 − 0.2 = 0.4.
-> Denom = $\sqrt{(1 − 0.25)(1 − 0.16)} = \sqrt{0.75 · 0.84} = \sqrt{0.63} ≈ 0.794$.
-> $r_{12.3} ≈ 0.4 / 0.794 ≈ \mathbf{0.504}$.
+> Numerator $= 0.6 - 0.5 \times 0.4 = 0.6 - 0.2 = 0.4$
+>
+> Denominator $= \sqrt{(1 - 0.25)(1 - 0.16)}$
+>
+> $= \sqrt{0.75 \times 0.84}$
+>
+> $= \sqrt{0.63} \approx 0.794$
+>
+> $r_{12.3} \approx 0.4 / 0.794 \approx \mathbf{0.504}$.
 
 > **E-5.16.** Same data, $R_{1.23}^2$?
 >
-> $(0.36 + 0.25 − 2·0.6·0.5·0.4)/(1 − 0.16) = (0.61 − 0.24)/0.84 = 0.37/0.84 ≈ 0.440$. $R \approx \mathbf{0.664}$.
+> $R_{1.23}^2 = (0.36 + 0.25 - 2 \times 0.6 \times 0.5 \times 0.4)/(1 - 0.16)$
+>
+> $= (0.61 - 0.24)/0.84$
+>
+> $= 0.37/0.84 \approx 0.440$
+>
+> $R \approx \mathbf{0.664}$.
 
 > **E-5.17.** A scatter diagram with points evenly spread shows:
 >
@@ -4204,17 +5161,25 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 > **E-6.9.** Bayes: A test for a disease has sensitivity 95% (P(+ | disease) = 0.95) and specificity 90%. The disease prevalence is 1%. A randomly tested person tests positive. P(disease | +)?
 >
 > P(D) = 0.01, P(+ | D) = 0.95, P(+ | not D) = 0.10.
-> Numerator = 0.01 · 0.95 = 0.0095.
-> Denom = 0.0095 + 0.99 · 0.10 = 0.0095 + 0.099 = 0.1085.
-> P(D | +) = 0.0095 / 0.1085 ≈ **0.0876** (8.76 %).
+> Numerator $= 0.01 \times 0.95 = 0.0095$
+>
+> Denominator $= 0.0095 + 0.99 \times 0.10$
+>
+> $= 0.0095 + 0.099 = 0.1085$
+>
+> $P(D|+) = 0.0095 / 0.1085 \approx \mathbf{0.0876}$ (8.76 %).
 >
 > *Insight.* Even with a 95% accurate test, low prevalence makes the positive predictive value small. Classic Bayes counterintuitive answer.
 
 > **E-6.10.** Bayes: Three machines A, B, C produce 50%, 30%, 20% of items, with defect rates 1%, 2%, 3%. A defective item is found. P(it came from C)?
 >
-> Numerator = 0.20 · 0.03 = 0.006.
-> Denom = 0.50·0.01 + 0.30·0.02 + 0.20·0.03 = 0.005 + 0.006 + 0.006 = 0.017.
-> P(C | D) = 0.006/0.017 ≈ **0.353**.
+> Numerator $= 0.20 \times 0.03 = 0.006$
+>
+> Denominator $= 0.50 \times 0.01 + 0.30 \times 0.02 + 0.20 \times 0.03$
+>
+> $= 0.005 + 0.006 + 0.006 = 0.017$
+>
+> $P(C|D) = 0.006/0.017 \approx \mathbf{0.353}$.
 
 > **E-6.11.** P(A) = 0.5, P(B) = 0.4, P(A ∪ B) = 0.7. P(A ∩ B)?
 >
@@ -4250,8 +5215,13 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-6.19.** A box has 3 fair coins and 2 biased coins (P(H) = 0.8 each). One coin drawn at random and tossed; result is H. P(it was a biased coin)?
 >
-> Numerator = (2/5)(0.8) = 0.32. Denom = 0.32 + (3/5)(0.5) = 0.32 + 0.30 = 0.62.
-> P(biased | H) = 0.32/0.62 ≈ **0.516**.
+> Numerator $= (2/5)(0.8) = 0.32$
+>
+> Denominator $= 0.32 + (3/5)(0.5)$
+>
+> $= 0.32 + 0.30 = 0.62$
+>
+> $P(\text{biased}|H) = 0.32/0.62 \approx \mathbf{0.516}$.
 
 > **E-6.20.** A fair coin is tossed until first head. P(first H on the 4th toss)?
 >
@@ -4259,7 +5229,11 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-6.21.** Two events: $P(A^c) = 0.7, P(B^c) = 0.6$, $P(A \cup B) = 0.6$. $P(A \cap B)$?
 >
-> P(A) = 0.3, P(B) = 0.4. 0.3 + 0.4 − 0.6 = **0.1**.
+> $P(A) = 0.3$, $P(B) = 0.4$.
+>
+> $P(A \cap B) = P(A) + P(B) - P(A \cup B)$
+>
+> $= 0.3 + 0.4 - 0.6 = \mathbf{0.1}$.
 
 > **E-6.22.** Out of 5 letters, 3 are addressed correctly. Letters placed in envelopes randomly. P(none correctly placed)?
 >
@@ -4285,15 +5259,31 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-7.1.** Binomial(20, 0.4). Mean and SD?
 >
-> Mean = 8. Var = 4.8. SD ≈ **2.19**.
+> **Step 1 — Compute the mean.**
+> - Mean = $np = 20 \times 0.4 = \mathbf{8}$
+>
+> **Step 2 — Compute the variance and SD.**
+> - Variance = $npq = 20 \times 0.4 \times 0.6 = \mathbf{4.8}$
+> - SD $= \sqrt{4.8} \approx \mathbf{2.19}$
 
 > **E-7.2.** Binomial(n, p) has mean 6, var 4. Find n, p.
 >
-> npq = 4, np = 6 → q = 2/3, p = 1/3, n = 18.
+> **Step 1 — Set up equations from mean and variance.**
+> - Mean: $np = 6$
+> - Variance: $npq = 4$
+>
+> **Step 2 — Solve for q and p.**
+> - Divide: $q = npq / np = 4 / 6 = 2/3$
+> - Therefore: $p = 1 - q = 1 - 2/3 = \mathbf{1/3}$
+>
+> **Step 3 — Solve for n.**
+> - $n = 6 / p = 6 / (1/3) = \mathbf{18}$
 
 > **E-7.3.** Binomial(5, 0.5). P(X ≥ 4)?
 >
-> ${}^5C_4(0.5)^5 + {}^5C_5(0.5)^5 = 5/32 + 1/32 = 6/32 = \mathbf{3/16}$.
+> $P(X \ge 4) = {}^5C_4(0.5)^5 + {}^5C_5(0.5)^5$
+>
+> $= \dfrac{5}{32} + \dfrac{1}{32} = \dfrac{6}{32} = \mathbf{\dfrac{3}{16}}$.
 
 > **E-7.4.** Poisson(λ). $P(X = 0) = 0.05$. Find λ.
 >
@@ -4341,7 +5331,9 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-7.15.** Continuous uniform on [4, 16]. Mean and variance?
 >
-> Mean = 10. Var = (16 − 4)²/12 = 144/12 = 12.
+> Mean = 10.
+>
+> $\text{Var} = \dfrac{(16 - 4)^2}{12} = \dfrac{144}{12} = \mathbf{12}$.
 
 > **E-7.16.** $X \sim B(n, p)$. Skewness?
 >
@@ -4365,7 +5357,16 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-7.21.** Discrete RV with pmf: x: 0,1,2,3 ; p(x): 0.1, 0.3, 0.4, 0.2. E[X] and Var(X)?
 >
-> E[X] = 0 + 0.3 + 0.8 + 0.6 = 1.7. E[X²] = 0 + 0.3 + 1.6 + 1.8 = 3.7. Var = 3.7 − 2.89 = **0.81**.
+> **Step 1 — Compute E[X] = Σ x · p(x).**
+> - $E[X] = 0(0.1) + 1(0.3) + 2(0.4) + 3(0.2)$
+> - = $0 + 0.3 + 0.8 + 0.6 = \mathbf{1.7}$
+>
+> **Step 2 — Compute E[X²] = Σ x² · p(x).**
+> - $E[X^2] = 0^2(0.1) + 1^2(0.3) + 2^2(0.4) + 3^2(0.2)$
+> - = $0 + 0.3 + 1.6 + 1.8 = 3.7$
+>
+> **Step 3 — Compute Var(X) = E[X²] − (E[X])².**
+> - Var = $3.7 - 1.7^2 = 3.7 - 2.89 = \mathbf{0.81}$
 
 > **E-7.22.** A normal curve is:
 >
@@ -4407,11 +5408,20 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-9.5.** A test rejects H₀ when X̄ > 52, with H₀: μ = 50, σ = 10, n = 25. Compute α.
 >
-> Z = (52 − 50)/(10/5) = 1.0. α = P(Z > 1.0) = **0.1587**.
+> **Step 1 — Compute the SE and standardise the critical value.**
+> - $\text{SE} = \sigma / \sqrt{n} = 10 / \sqrt{25} = 10 / 5 = 2$
+> - $Z_{\text{crit}} = (52 - 50) / 2 = 2 / 2 = \mathbf{1.0}$
+>
+> **Step 2 — Find α (probability of rejecting H₀ when it is true).**
+> - $\alpha = P(Z > 1.0) = \mathbf{0.1587}$
 
 > **E-9.6.** Same test, true μ = 53. β?
 >
-> Reject when X̄ > 52. Under μ = 53: Z = (52 − 53)/2 = −0.5. β = P(X̄ ≤ 52 | μ = 53) = P(Z ≤ −0.5) = 0.3085.
+> Reject when $\bar X > 52$. Under $\mu = 53$:
+>
+> $Z = \dfrac{52 - 53}{2} = -0.5$
+>
+> $\beta = P(\bar X \le 52 \mid \mu = 53) = P(Z \le -0.5) = \mathbf{0.3085}$.
 
 > **E-9.7.** Same test, power at μ = 53?
 >
@@ -4419,23 +5429,49 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-9.8.** A two-sample Z-test with means 102, 98, σ_1 = σ_2 = 10, n_1 = n_2 = 100. Z?
 >
-> Z = (102 − 98)/√(100/100 + 100/100) = 4/√2 ≈ **2.828**. > 1.96 → reject.
+> $Z = \dfrac{102 - 98}{\sqrt{\dfrac{100}{100} + \dfrac{100}{100}}}$
+>
+> $= \dfrac{4}{\sqrt{2}} \approx \mathbf{2.828}$
+>
+> $2.828 > 1.96$ → reject $H_0$.
 
 > **E-9.9.** Two sample t-test with pooled variance: n₁ = 12, n₂ = 16, s₁ = 5, s₂ = 6.
 >
-> $s_p^2 = (11·25 + 15·36)/26 = (275 + 540)/26 = 815/26 ≈ 31.35$. $s_p ≈ 5.6$.
+> $s_p^2 = \dfrac{11 \times 25 + 15 \times 36}{26}$
+>
+> $= \dfrac{275 + 540}{26}$
+>
+> $= 815/26 \approx 31.35$
+>
+> $s_p \approx 5.6$.
 
 > **E-9.10.** χ² goodness-of-fit: O = (40, 35, 25), E = (30, 30, 40). χ²?
 >
-> (40−30)²/30 + (35−30)²/30 + (25−40)²/40 = 100/30 + 25/30 + 225/40 = 3.33 + 0.83 + 5.63 = **9.79**. df = 2; $\chi^2_{0.05, 2} = 5.99$ → reject H₀.
+> $\chi^2 = \dfrac{(40-30)^2}{30} + \dfrac{(35-30)^2}{30} + \dfrac{(25-40)^2}{40}$
+>
+> $= 100/30 + 25/30 + 225/40$
+>
+> $= 3.33 + 0.83 + 5.63 = \mathbf{9.79}$
+>
+> df = 2; $\chi^2_{0.05, 2} = 5.99$ → reject $H_0$.
 
 > **E-9.11.** Confidence interval (95 %): $\bar X = 25, s = 4, n = 16$. σ unknown, n small.
 >
-> $t_{0.025, 15} ≈ 2.131$. CI = 25 ± 2.131 · 4/4 = 25 ± 2.131 = **[22.87, 27.13]**.
+> $t_{0.025, 15} \approx 2.131$
+>
+> $\text{CI} = 25 \pm 2.131 \times \dfrac{4}{\sqrt{16}}$
+>
+> $= 25 \pm 2.131 \times 1$
+>
+> $= 25 \pm 2.131 = \mathbf{[22.87, 27.13]}$.
 
 > **E-9.12.** Confidence interval (90 %) for proportion: p = 0.4, n = 200.
 >
-> SE = √(0.4 · 0.6 / 200) = √(0.0012) ≈ 0.0346. 90 % CI = 0.4 ± 1.645 · 0.0346 = 0.4 ± 0.057 = **[0.343, 0.457]**.
+> $\text{SE} = \sqrt{0.4 \times 0.6 / 200} = \sqrt{0.0012} \approx 0.0346$
+>
+> 90 % CI $= 0.4 \pm 1.645 \times 0.0346$
+>
+> $= 0.4 \pm 0.057 = \mathbf{[0.343, 0.457]}$.
 
 > **E-9.13.** Power increases when?
 >
@@ -4447,7 +5483,12 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-9.15.** F = s₁²/s₂² with s₁² = 9, s₂² = 4, df₁ = df₂ = 10. Decision at 5 %?
 >
-> F = 2.25. $F_{0.05, 10, 10} ≈ 2.97$. 2.25 < 2.97 → fail to reject (variances equal).
+> **Step 1 — Compute the F-statistic (larger over smaller).**
+> - $F = s_1^2 / s_2^2 = 9 / 4 = \mathbf{2.25}$
+>
+> **Step 2 — Compare to the critical value.**
+> - $F_{0.05,\, 10,\, 10} \approx 2.97$
+> - $2.25 < 2.97$ → **fail to reject** $H_0$ (variances equal)
 
 > **E-9.16.** χ² test of independence in a 2 × 2 table, sample size 100. df?
 >
@@ -4463,7 +5504,11 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-9.19.** $s_1^2 = 12, s_2^2 = 16, n_1 = n_2 = 11$. Pooled variance?
 >
-> $s_p^2 = (10 · 12 + 10 · 16)/20 = (120 + 160)/20 = 14$. $s_p \approx 3.74$.
+> $s_p^2 = \dfrac{10 \times 12 + 10 \times 16}{20}$
+>
+> $= \dfrac{120 + 160}{20} = 14$
+>
+> $s_p \approx 3.74$.
 
 > **E-9.20.** Critical t for two-tail 1 %, df = 20?
 >
@@ -4491,11 +5536,25 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 > **E-9.26.** $\bar X = 75, σ = 12, n = 36$. 99 % CI for μ?
 >
-> SE = 2. 99 % CI = 75 ± 2.576 · 2 = 75 ± 5.15 = **[69.85, 80.15]**.
+> $\text{SE} = \dfrac{\sigma}{\sqrt{n}}$
+>
+> $= \dfrac{12}{\sqrt{36}} = \dfrac{12}{6} = 2$
+>
+> 99 % CI $= 75 \pm 2.576 \times 2$
+>
+> $= 75 \pm 5.15 = \mathbf{[69.85, 80.15]}$.
 
 > **E-9.27.** χ² test of variance: $s^2 = 25, \sigma_0^2 = 16, n = 21$. Test at 5 % two-tail.
 >
-> $\chi^2 = (n−1) s^2/\sigma_0^2 = 20 · 25 / 16 = 31.25$. df = 20. Critical: $\chi^2_{0.025, 20} ≈ 34.17$, $\chi^2_{0.975, 20} ≈ 9.59$. 9.59 < 31.25 < 34.17 → fail to reject H₀.
+> $\chi^2 = (n-1) s^2/\sigma_0^2$
+>
+> $= 20 \times 25 / 16$
+>
+> $= 31.25$
+>
+> df = 20. Critical: $\chi^2_{0.025, 20} \approx 34.17$, $\chi^2_{0.975, 20} \approx 9.59$.
+>
+> Since $9.59 < 31.25 < 34.17$ → fail to reject $H_0$.
 
 > **E-9.28.** A two-sample paired t-test uses df:
 >
@@ -5311,7 +6370,9 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-4.8.** $\mu_1' = 5, \mu_2' = 30, \mu_3' = 200$. Find $\mu_3$.
 >
-> $\mu_3 = 200 - 3(5)(30) + 2(125) = 200 - 450 + 250 = \mathbf{0}$.
+> $\mu_3 = 200 - 3(5)(30) + 2(125)$
+>
+> $= 200 - 450 + 250 = \mathbf{0}$.
 
 > **K-4.9.** Karl Pearson Sk = 0.5, mode = 40, σ = 6. Mean = ?
 >
@@ -5319,7 +6380,11 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-4.10.** Bowley Sk = 0.4, Q₁ = 20, Q₃ = 60. Median = ?
 >
-> $0.4 = (60 + 20 - 2Q_2)/(60 - 20) = (80 - 2Q_2)/40$. $80 - 2Q_2 = 16 \Rightarrow Q_2 = 32$.
+> $0.4 = \dfrac{60 + 20 - 2Q_2}{60 - 20} = \dfrac{80 - 2Q_2}{40}$
+>
+> $80 - 2Q_2 = 0.4 \times 40 = 16$
+>
+> $Q_2 = \mathbf{32}$.
 
 > **K-4.11.** If $\beta_2 > 3$, the distribution is said to be?
 >
@@ -5381,7 +6446,11 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-8.4.** If SE = 4 when n = 25, what is the SE when n = 100?
 >
-> SE scales with $1/\sqrt n$: new SE = $4 \cdot \sqrt{25}/\sqrt{100} = 4 \cdot 5/10 = \mathbf{2}$.
+> SE scales with $1/\sqrt{n}$:
+>
+> $\text{new SE} = 4 \cdot \dfrac{\sqrt{25}}{\sqrt{100}}$
+>
+> $= 4 \cdot \dfrac{5}{10} = \mathbf{2}$.
 
 > **K-8.5.** The sampling distribution of $\bar X$ has mean = ?
 >
@@ -5417,7 +6486,11 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-8.13.** To estimate a proportion within ±3 % at 95 % confidence (P unknown, use worst case):
 >
-> $n = (1.96 / 0.03)^2 \times 0.25 = (65.33)^2 \times 0.25 \approx 4268 \times 0.25 = \mathbf{1067}$.
+> $n = \left(\dfrac{1.96}{0.03}\right)^2 \times 0.25$
+>
+> $= (65.33)^2 \times 0.25$
+>
+> $\approx 4268 \times 0.25 = \mathbf{1067}$.
 
 > **K-8.14.** Purposive (judgement) sampling produces results that are:
 >
@@ -5545,13 +6618,19 @@ Read smart. Drill hard. Sleep well. **190+/200 is yours.**
 
 > **K-12.1.** Compute Laspeyres price index from: P₀ = (10, 6), Q₀ = (4, 5), P₁ = (12, 8).
 >
-> Numerator: 12×4 + 8×5 = 48 + 40 = 88. Denom: 10×4 + 6×5 = 40 + 30 = 70.
-> L = 88/70 × 100 = **125.71**.
+> Numerator: $12 \times 4 + 8 \times 5 = 48 + 40 = 88$
+>
+> Denominator: $10 \times 4 + 6 \times 5 = 40 + 30 = 70$
+>
+> $L = 88/70 \times 100 = \mathbf{125.71}$.
 
 > **K-12.2.** Add Q₁ = (5, 4) to K-12.1 and compute Paasche.
 >
-> Num: 12×5 + 8×4 = 60 + 32 = 92. Denom: 10×5 + 6×4 = 50 + 24 = 74.
-> P = 92/74 × 100 = **124.32**.
+> Numerator: $12 \times 5 + 8 \times 4 = 60 + 32 = 92$
+>
+> Denominator: $10 \times 5 + 6 \times 4 = 50 + 24 = 74$
+>
+> $P = 92/74 \times 100 = \mathbf{124.32}$.
 
 > **K-12.3.** Fisher for K-12.1/2?
 >
