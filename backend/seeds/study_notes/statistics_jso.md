@@ -9074,7 +9074,3 @@ A **price index** (like the GDP deflator or WPI). Real GDP = Nominal GDP / Price
 440/400 × 100 = **110** ✓.
 
 </div>
-
----
-
-\newpage
