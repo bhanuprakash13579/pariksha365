@@ -32,7 +32,8 @@ async def get_course(
 @router.post("", response_model=CourseResponse)
 async def create_course(
     course_in: CourseCreate,
-    db: AsyncSession = Depends(get_db)
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
 ) -> Any:
     """
     Create a new course. (Admin only ideally, omitting auth for brevity)
@@ -43,7 +44,8 @@ async def create_course(
 async def create_course_folder(
     course_id: uuid.UUID,
     folder_in: CourseFolderCreate,
-    db: AsyncSession = Depends(get_db)
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
 ) -> Any:
     """
     Add a folder (segment) to a course.
@@ -54,7 +56,8 @@ async def create_course_folder(
 async def link_test_to_folder(
     folder_id: uuid.UUID,
     test_in: FolderTestCreate,
-    db: AsyncSession = Depends(get_db)
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
 ) -> Any:
     """
     Link a TestSeries mock test to a CourseFolder.
@@ -68,7 +71,8 @@ class OrderUpdateRequest(BaseModel):
 async def update_folder_tests_order(
     folder_id: uuid.UUID,
     request: OrderUpdateRequest,
-    db: AsyncSession = Depends(get_db)
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
 ):
     """Bulk update the order of tests within a folder"""
     from sqlalchemy import update
@@ -88,7 +92,8 @@ async def update_folder_tests_order(
 async def update_course_folders_order(
     course_id: uuid.UUID,
     request: OrderUpdateRequest,
-    db: AsyncSession = Depends(get_db)
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
 ):
     """Bulk update the order of folders within a course"""
     from sqlalchemy import update
@@ -121,7 +126,8 @@ async def enroll_in_course(
 @router.delete("/{course_id}")
 async def delete_course(
     course_id: uuid.UUID,
-    db: AsyncSession = Depends(get_db)
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
 ) -> Any:
     """
     Delete a course and all its nested folders/tests.
@@ -131,7 +137,8 @@ async def delete_course(
 @router.delete("/folders/{folder_id}")
 async def delete_folder(
     folder_id: uuid.UUID,
-    db: AsyncSession = Depends(get_db)
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
 ) -> Any:
     """
     Delete a folder from a course.
@@ -142,7 +149,8 @@ async def delete_folder(
 async def unlink_test_from_folder(
     folder_id: uuid.UUID,
     test_id: uuid.UUID,
-    db: AsyncSession = Depends(get_db)
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
 ) -> Any:
     return await course_service.unlink_test_from_folder(db, folder_id, test_id)
 
@@ -152,6 +160,7 @@ async def rename_course(
     course_id: uuid.UUID,
     title: str = Body(..., embed=True),
     db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
 ) -> Any:
     return await course_service.rename_course(db, course_id, title)
 
@@ -161,5 +170,6 @@ async def rename_folder(
     folder_id: uuid.UUID,
     title: str = Body(..., embed=True),
     db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
 ) -> Any:
     return await course_service.rename_folder(db, folder_id, title)
