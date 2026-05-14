@@ -43,8 +43,13 @@ async def create_category(db: AsyncSession, category: category_schema.CategoryCr
     await db.refresh(db_category)
     return db_category
 
+import re
+
 async def create_subcategory(db: AsyncSession, subcategory: category_schema.SubCategoryCreate):
-    db_subcategory = SubCategory(**subcategory.model_dump())
+    dumped = subcategory.model_dump()
+    if not dumped.get("slug"):
+        dumped["slug"] = re.sub(r'[^a-zA-Z0-9]+', '-', dumped["name"].lower()).strip('-')
+    db_subcategory = SubCategory(**dumped)
     db.add(db_subcategory)
     await db.commit()
     await db.refresh(db_subcategory)

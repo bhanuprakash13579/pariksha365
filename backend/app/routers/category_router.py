@@ -44,7 +44,11 @@ async def restore_admin_visibility(
 
 
 @router.post("", response_model=category_schema.Category)
-async def create_category(category: category_schema.CategoryCreate, db: AsyncSession = Depends(get_db)):
+async def create_category(
+    category: category_schema.CategoryCreate,
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
+):
     return await category_service.create_category(db, category)
 
 
@@ -69,7 +73,11 @@ async def rename_category(
 
 
 @router.post("/subcategories", response_model=category_schema.SubCategory)
-async def create_subcategory(subcategory: category_schema.SubCategoryCreate, db: AsyncSession = Depends(get_db)):
+async def create_subcategory(
+    subcategory: category_schema.SubCategoryCreate,
+    db: AsyncSession = Depends(get_db),
+    _admin: User = Depends(get_current_admin_user),
+):
     return await category_service.create_subcategory(db, subcategory)
 
 
