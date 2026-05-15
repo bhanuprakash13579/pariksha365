@@ -168,15 +168,13 @@ async def _background_schema_selfheal() -> None:
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # ── BLOCKING (≤ 20s, hard timeout): admin bootstrap so login works on
-    #    the very first request after deploy. Everything else is moved to a
-    #    background task that runs AFTER the app starts serving traffic.
-    #    Rationale: Railway healthchecks kill containers that don't respond
-    #    within their startup window. If schema migrations or self-heal
-    #    queries hang on a DB lock (e.g. after a long load_seeds run), the
-    #    container thrashes and login never works — that was this app's
-    #    recurring "CORS error after deploy" symptom.
-    await _admin_bootstrap_with_timeout(timeout_seconds=20)
+    # ZERO blocking before yield — Uvicorn starts accepting connections
+    # (including Railway's /health check) within milliseconds of container
+    # boot. Previously _admin_bootstrap blocked for up to 20s which caused
+    # Railway to mark the service unhealthy on every deploy, detach the
+    # custom domain, and break login until the domain was manually
+    # re-attached. Now both tasks run entirely in the background.
+    asyncio.create_task(_admin_bootstrap_with_timeout(timeout_seconds=60))
     asyncio.create_task(_background_schema_selfheal())
     yield
 

@@ -6,6 +6,17 @@ SQLALCHEMY_DATABASE_URL = settings.DATABASE_URL
 if SQLALCHEMY_DATABASE_URL.startswith("postgresql://"):
     SQLALCHEMY_DATABASE_URL = SQLALCHEMY_DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://", 1)
 
+import os as _os
+
+# Safe pool sizing for Railway's hobby PostgreSQL (max 25 connections).
+# Formula: (pool_size + max_overflow) × WEB_CONCURRENCY ≤ 25
+# With defaults: (3 + 7) × 2 workers = 20 connections — leaves 5 spare for
+# seed scripts, admin tools, or pgAdmin. Raise DB_POOL_SIZE via Railway env
+# vars if you're on a plan with a higher connection cap.
+_DB_POOL_SIZE = int(_os.getenv("DB_POOL_SIZE", "3"))
+_DB_MAX_OVERFLOW = int(_os.getenv("DB_MAX_OVERFLOW", "7"))
+_DB_POOL_TIMEOUT = int(_os.getenv("DB_POOL_TIMEOUT", "30"))
+
 engine = create_async_engine(
     SQLALCHEMY_DATABASE_URL,
     echo=False,
@@ -16,10 +27,9 @@ engine = create_async_engine(
     # this as the app being "frozen" or returning Network Error on login.
     pool_pre_ping=True,
     pool_recycle=1500,
-    # Keep pool sizing at SQLAlchemy defaults (pool_size=5, max_overflow=10)
-    # to stay well under Railway's per-instance connection cap. Bumping these
-    # previously made multi-worker deployments exhaust the DB connection limit
-    # so every request queued indefinitely — manifesting as login hangs.
+    pool_size=_DB_POOL_SIZE,
+    max_overflow=_DB_MAX_OVERFLOW,
+    pool_timeout=_DB_POOL_TIMEOUT,
 )
 
 async_session_maker = async_sessionmaker(
