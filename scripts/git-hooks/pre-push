@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+# Pre-push hook: validate that the backend can actually import.
+#
+# Without this, a typo / missing import (NameError at module load) sneaks
+# into production, Railway tries to spin up the container, every uvicorn
+# worker crashes at import time, the service is marked unhealthy, the
+# custom domain detaches, and the site is dead for ~30 minutes while
+# Railway gives up and the DNS settles back.
+#
+# This catches those errors locally in ~3 seconds so they never ship.
+
+set -e
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+BACKEND="$REPO_ROOT/backend"
+VENV="$BACKEND/.venv"
+
+if [ ! -d "$VENV" ]; then
+    echo "pre-push: no .venv at $VENV — skipping backend import check."
+    exit 0
+fi
+
+echo "pre-push: validating backend imports..."
+
+cd "$BACKEND"
+
+# Stub every env var the import path touches: DB URL, secret key, Google
+# OAuth ID, R2 storage creds. We do NOT execute the app — we just need
+# module-level code (decorator-time Depends() calls especially) to evaluate
+# without NameError / ImportError / SyntaxError.
+if ! "$VENV/bin/python" -c "
+import os
+os.environ.setdefault('DATABASE_URL', 'postgresql+asyncpg://x:y@localhost/z')
+os.environ.setdefault('SECRET_KEY', 'x')
+os.environ.setdefault('GOOGLE_CLIENT_ID', 'x')
+os.environ.setdefault('R2_ENDPOINT_URL', 'https://stub.r2.cloudflarestorage.com')
+os.environ.setdefault('R2_ACCESS_KEY_ID', 'stub')
+os.environ.setdefault('R2_SECRET_ACCESS_KEY', 'stub')
+os.environ.setdefault('R2_BUCKET_NAME', 'stub')
+os.environ.setdefault('R2_PUBLIC_URL', 'https://stub.example.com')
+
+import importlib
+
+routers = [
+    'auth_router', 'user_router', 'admin_router', 'test_series_router',
+    'attempt_router', 'payment_router', 'course_router', 'category_router',
+    'analytics_router', 'search_router', 'quiz_router',
+    'exam_structure_router', 'private_module_router', 'config_router',
+]
+failed = []
+for r in routers:
+    try:
+        importlib.import_module(f'app.routers.{r}')
+    except Exception as e:
+        failed.append((r, type(e).__name__, str(e)[:300]))
+
+if failed:
+    print('')
+    print('  ERROR: backend has import-time errors that will break production:')
+    for r, t, m in failed:
+        print(f'    {r}:  {t}: {m}')
+    print('')
+    print('  Push aborted. Fix these locally and commit again.')
+    print('  (Bypass with --no-verify if you are absolutely sure.)')
+    raise SystemExit(1)
+
+print('  all 14 routers import OK')
+"; then
+    exit 1
+fi
+
+echo "pre-push: backend imports OK — pushing."
+exit 0
