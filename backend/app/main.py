@@ -7,224 +7,177 @@ from app.core.database import engine, Base
 from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router, category_router, analytics_router, search_router, quiz_router, exam_structure_router, private_module_router, config_router
 import app.models
 
+import asyncio
 import os
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    # Automatically drop and create database tables on startup (WIPES DATA!)
-    try:
-        async with engine.begin() as conn:
-            if os.getenv("WIPE_DB_ON_STARTUP") == "True":
-                print("WIPE_DB_ON_STARTUP flag is enabled. Dropping all tables...")
-                if engine.dialect.name == "postgresql":
-                    from sqlalchemy import text
-                    print("Postgres dialect detected. Dropping old dependent tables via CASCADE...")
-                    await conn.execute(text("DROP TABLE IF EXISTS options CASCADE;"))
-                await conn.run_sync(Base.metadata.drop_all)
-            await conn.run_sync(Base.metadata.create_all)
-        print("STARTUP: Base.metadata.create_all completed")
-    except Exception as create_err:
-        # Don't let a schema-creation problem block the rest of startup —
-        # in particular, the admin bootstrap MUST run so the user can always
-        # log in with the env-var password even if a new model has a
-        # migration-style problem.
-        print(f"STARTUP: create_all failed (continuing anyway): {create_err!r}")
 
+async def _admin_bootstrap_with_timeout(timeout_seconds: int = 20) -> None:
+    """Re-hash the env-var admin password into the DB.
+
+    Wrapped in asyncio.wait_for so a slow/locked Railway DB can NEVER block
+    the app from starting. On timeout we log and move on — admin login will
+    keep working with whatever hash is already in the DB.
+    """
+    from app.core.database import SessionLocal
+    from sqlalchemy.future import select
+
+    admin_boot_pw = os.getenv("ADMIN_BOOTSTRAP_PASSWORD", "").strip()
+    if not admin_boot_pw:
+        print("ADMIN BOOTSTRAP: ADMIN_BOOTSTRAP_PASSWORD env var is EMPTY — skipping.")
+        return
+
+    async def _run() -> None:
+        from app.models.role import Role
+        from app.models.user import User
+        from app.core.security import get_password_hash
+        admin_email = (os.getenv("ADMIN_BOOTSTRAP_EMAIL", "").strip()
+                       or "admin@pariksha365.in")
+        admin_name = os.getenv("ADMIN_BOOTSTRAP_NAME", "Admin").strip() or "Admin"
+        async with SessionLocal() as db:
+            role_res = await db.execute(select(Role).where(Role.name == "Admin"))
+            admin_role = role_res.scalars().first()
+            if admin_role is None:
+                admin_role = Role(name="Admin")
+                db.add(admin_role)
+                await db.commit()
+                await db.refresh(admin_role)
+                print(f"ADMIN BOOTSTRAP: created 'Admin' role id={admin_role.id}")
+            new_hash = get_password_hash(admin_boot_pw)
+            user_res = await db.execute(select(User).where(User.email == admin_email))
+            admin_user = user_res.scalars().first()
+            if admin_user is None:
+                admin_user = User(name=admin_name, email=admin_email,
+                                  password_hash=new_hash, role_id=admin_role.id,
+                                  is_active=True)
+                db.add(admin_user)
+                await db.commit()
+                print(f"ADMIN BOOTSTRAP_SUCCESS: created admin user {admin_email}")
+            else:
+                admin_user.role_id = admin_role.id
+                admin_user.password_hash = new_hash
+                admin_user.is_active = True
+                await db.commit()
+                print(f"ADMIN BOOTSTRAP_SUCCESS: rehashed password for {admin_email}")
+
+    try:
+        await asyncio.wait_for(_run(), timeout=timeout_seconds)
+    except asyncio.TimeoutError:
+        print(f"ADMIN BOOTSTRAP_TIMEOUT: exceeded {timeout_seconds}s — continuing without rehash.")
+    except Exception as e:
+        print(f"ADMIN BOOTSTRAP_FAILED: {type(e).__name__}: {e!r}")
+
+
+async def _background_schema_selfheal() -> None:
+    """All the slow stuff: create_all, ALTER TABLEs, category seeding, visibility flip.
+
+    Runs AFTER the app starts serving requests so a slow/locked DB never
+    blocks login. Each block is independent and never raises out — failures
+    just print and move on.
+    """
     from app.core.database import SessionLocal
     from app.models.category import Category
     from app.models.subcategory import SubCategory
+    from sqlalchemy import text as _sql_text, func as _sql_func, update as _sql_update
     from sqlalchemy.future import select
 
-    # ADMIN BOOTSTRAP — runs BEFORE other startup work so a problem in
-    # category seeding or self-heal can never block the admin from logging in.
-    # Wrapped in its own session so failures here don't poison later work.
-    async with SessionLocal() as db:
-        admin_boot_pw = os.getenv("ADMIN_BOOTSTRAP_PASSWORD", "").strip()
-        if not admin_boot_pw:
-            print(
-                "ADMIN BOOTSTRAP: ADMIN_BOOTSTRAP_PASSWORD env var is EMPTY — "
-                "skipping. Set it on Railway to enable env-driven admin password."
-            )
-        else:
-            try:
-                from app.models.role import Role
-                from app.models.user import User
-                from app.core.security import get_password_hash
-                admin_email = (
-                    os.getenv("ADMIN_BOOTSTRAP_EMAIL", "").strip()
-                    or "admin@pariksha365.in"
-                )
-                admin_name = os.getenv("ADMIN_BOOTSTRAP_NAME", "Admin").strip() or "Admin"
-
-                role_res = await db.execute(select(Role).where(Role.name == "Admin"))
-                admin_role = role_res.scalars().first()
-                if admin_role is None:
-                    admin_role = Role(name="Admin")
-                    db.add(admin_role)
-                    await db.commit()
-                    await db.refresh(admin_role)
-                    print(f"ADMIN BOOTSTRAP: created 'Admin' role id={admin_role.id}")
-
-                new_hash = get_password_hash(admin_boot_pw)
-                user_res = await db.execute(select(User).where(User.email == admin_email))
-                admin_user = user_res.scalars().first()
-                if admin_user is None:
-                    admin_user = User(
-                        name=admin_name,
-                        email=admin_email,
-                        password_hash=new_hash,
-                        role_id=admin_role.id,
-                        is_active=True,
-                    )
-                    db.add(admin_user)
-                    await db.commit()
-                    print(
-                        f"ADMIN BOOTSTRAP_SUCCESS: created admin user "
-                        f"email={admin_email} hash_prefix={new_hash[:7]}... "
-                        f"hash_len={len(new_hash)} env_pw_len={len(admin_boot_pw)}"
-                    )
-                else:
-                    admin_user.role_id = admin_role.id
-                    admin_user.password_hash = new_hash
-                    admin_user.is_active = True
-                    await db.commit()
-                    print(
-                        f"ADMIN BOOTSTRAP_SUCCESS: rehashed admin password "
-                        f"email={admin_email} hash_prefix={new_hash[:7]}... "
-                        f"hash_len={len(new_hash)} env_pw_len={len(admin_boot_pw)} "
-                        f"is_active={admin_user.is_active}"
-                    )
-            except Exception as e:
-                # Loud failure — visible in Railway logs.
-                print(f"ADMIN BOOTSTRAP_FAILED: {type(e).__name__}: {e!r}")
-
-    async with SessionLocal() as db:
-        result = await db.execute(select(Category).limit(1))
-        if not result.scalars().first():
-            print("Seeding default Exam Categories...")
-            defaults = [
-                {"name": "Bank", "icon": "library-outline", "subs": []},
-                {"name": "Judicial", "icon": "hammer-outline", "subs": []},
-                {"name": "ESIC", "icon": "medkit-outline", "subs": []},
-                {"name": "Railway", "icon": "train-outline", "subs": []},
-                {"name": "Defence", "icon": "shield-checkmark-outline", "subs": []},
-                {"name": "PSUs", "icon": "business-outline", "subs": []},
-                {"name": "UPSC", "icon": "ribbon-outline", "subs": []},
-                {"name": "SSC", "icon": "clipboard-outline", "subs": []},
-                {"name": "Police", "icon": "shield-half-outline", "subs": []},
-                {"name": "PSCs", "icon": "newspaper-outline", "subs": []},
-                {"name": "Post-Office", "icon": "mail-outline", "subs": []}
-            ]
-            # Note: is_enabled=True explicitly — default-False on the column
-            # once hid all 11 pre-seeded categories from the admin UI, making
-            # it look as if the admin login was broken. See memory:
-            # feedback_migration_preserve_visibility for the original incident.
-            for i, c in enumerate(defaults):
-                cat_db = Category(name=c["name"], icon_name=c["icon"], order=i, is_enabled=True)
-                db.add(cat_db)
-                await db.commit()
-                await db.refresh(cat_db)
-                for j, sub in enumerate(c["subs"]):
-                    db.add(SubCategory(category_id=cat_db.id, name=sub, order=j, is_enabled=True))
-            await db.commit()
-
-        # SELF-HEAL: ensure new test_series timing columns exist on prod
-        # Postgres. ``Base.metadata.create_all`` only creates *new* tables —
-        # it does not ALTER existing ones. Without this block, the new
-        # ``total_duration_minutes`` / ``has_sectional_timing`` columns added
-        # in this release would silently be missing on a long-running
-        # database and every TestSeries query would crash with UndefinedColumn.
+    # 1. metadata.create_all — only run if explicitly requested. Once tables
+    #    exist this is a no-op but the table-introspection round-trips still
+    #    add 5-15s per startup on a busy DB. Set RUN_CREATE_ALL=1 on first
+    #    deploy or after model additions.
+    if os.getenv("RUN_CREATE_ALL") == "1":
         try:
-            from sqlalchemy import text as _sql_text
+            async with engine.begin() as conn:
+                if os.getenv("WIPE_DB_ON_STARTUP") == "True":
+                    print("WIPE_DB_ON_STARTUP: dropping all tables.")
+                    if engine.dialect.name == "postgresql":
+                        await conn.execute(_sql_text("DROP TABLE IF EXISTS options CASCADE;"))
+                    await conn.run_sync(Base.metadata.drop_all)
+                await conn.run_sync(Base.metadata.create_all)
+            print("BG: create_all completed")
+        except Exception as e:
+            print(f"BG: create_all failed: {e!r}")
+
+    # 2. ALTER TABLE self-heal (timing + CA columns). Idempotent via IF NOT EXISTS.
+    try:
+        async with SessionLocal() as db:
             if engine.dialect.name == "postgresql":
-                await db.execute(_sql_text(
-                    "ALTER TABLE test_series "
-                    "ADD COLUMN IF NOT EXISTS total_duration_minutes INTEGER;"
-                ))
-                await db.execute(_sql_text(
-                    "ALTER TABLE test_series "
-                    "ADD COLUMN IF NOT EXISTS has_sectional_timing BOOLEAN "
-                    "NOT NULL DEFAULT FALSE;"
-                ))
-                # Current-Affairs lifecycle columns on quiz_questions. Admin
-                # uses these to filter and refresh the CA pool from the
-                # admin panel without touching the static-GK rows.
-                await db.execute(_sql_text(
-                    "ALTER TABLE quiz_questions "
-                    "ADD COLUMN IF NOT EXISTS is_current_affair BOOLEAN "
-                    "NOT NULL DEFAULT FALSE;"
-                ))
-                await db.execute(_sql_text(
-                    "ALTER TABLE quiz_questions "
-                    "ADD COLUMN IF NOT EXISTS event_date DATE;"
-                ))
-                await db.execute(_sql_text(
-                    "ALTER TABLE quiz_questions "
-                    "ADD COLUMN IF NOT EXISTS valid_until DATE;"
-                ))
-                await db.execute(_sql_text(
-                    "ALTER TABLE quiz_questions "
-                    "ADD COLUMN IF NOT EXISTS last_reviewed_at TIMESTAMPTZ;"
-                ))
-                await db.execute(_sql_text(
-                    "ALTER TABLE quiz_questions "
-                    "ADD COLUMN IF NOT EXISTS is_published BOOLEAN "
-                    "NOT NULL DEFAULT TRUE;"
-                ))
+                for stmt in (
+                    "ALTER TABLE test_series ADD COLUMN IF NOT EXISTS total_duration_minutes INTEGER;",
+                    "ALTER TABLE test_series ADD COLUMN IF NOT EXISTS has_sectional_timing BOOLEAN NOT NULL DEFAULT FALSE;",
+                    "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS is_current_affair BOOLEAN NOT NULL DEFAULT FALSE;",
+                    "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS event_date DATE;",
+                    "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS valid_until DATE;",
+                    "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS last_reviewed_at TIMESTAMPTZ;",
+                    "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS is_published BOOLEAN NOT NULL DEFAULT TRUE;",
+                ):
+                    await db.execute(_sql_text(stmt))
                 await db.commit()
-        except Exception as alter_err:
-            # Don't block startup — log and continue. A failed ALTER usually
-            # means the column already exists with an incompatible type, which
-            # admin can fix by hand; in the worst case the app keeps running on
-            # the old schema and student attempts use the legacy section-sum
-            # timer fallback.
-            print(f"STARTUP: timing-column ALTER skipped due to: {alter_err!r}")
+                print("BG: timing/CA ALTER TABLE self-heal completed")
+    except Exception as e:
+        print(f"BG: timing-column ALTER skipped: {e!r}")
 
-        # SELF-HEAL: Cashfree payment integration — new columns on the
-        # existing payments table and a new enum value for the provider.
-        try:
-            # Add CASHFREE value to the paymentprovider enum (IF NOT EXISTS
-            # was added in Postgres 9.3 — all modern versions support it).
-            await db.execute(_sql_text(
-                "ALTER TYPE paymentprovider ADD VALUE IF NOT EXISTS 'CASHFREE';"
-            ))
-            # New columns on payments (safe to run repeatedly via IF NOT EXISTS)
-            await db.execute(_sql_text(
-                "ALTER TABLE payments ADD COLUMN IF NOT EXISTS "
-                "payment_type VARCHAR DEFAULT 'COURSE';"
-            ))
-            await db.execute(_sql_text(
-                "ALTER TABLE payments ADD COLUMN IF NOT EXISTS "
-                "exam_stage_id UUID REFERENCES exam_stages(id) ON DELETE SET NULL;"
-            ))
+    # 3. Cashfree enum + payment columns. Idempotent.
+    try:
+        async with SessionLocal() as db:
+            await db.execute(_sql_text("ALTER TYPE paymentprovider ADD VALUE IF NOT EXISTS 'CASHFREE';"))
+            await db.execute(_sql_text("ALTER TABLE payments ADD COLUMN IF NOT EXISTS payment_type VARCHAR DEFAULT 'COURSE';"))
+            await db.execute(_sql_text("ALTER TABLE payments ADD COLUMN IF NOT EXISTS exam_stage_id UUID REFERENCES exam_stages(id) ON DELETE SET NULL;"))
             await db.commit()
-        except Exception as cf_alter_err:
-            print(f"STARTUP: Cashfree schema self-heal skipped: {cf_alter_err!r}")
+            print("BG: Cashfree schema self-heal completed")
+    except Exception as e:
+        print(f"BG: Cashfree schema self-heal skipped: {e!r}")
 
-        # SELF-HEAL: If EVERY category in the DB is currently is_enabled=False,
-        # that almost certainly means a migration or an accidental toggle hid
-        # them all, which cripples the admin UI. Flip them all back to True.
-        # This runs on every startup but is a no-op when any category is
-        # already visible. This is the same one-liner we manually applied
-        # after the original 2026-04-19 admin-login incident.
-        try:
-            from sqlalchemy import func as _sql_func, update as _sql_update
+    # 4. Category seeding — only if the table is empty.
+    try:
+        async with SessionLocal() as db:
+            result = await db.execute(select(Category).limit(1))
+            if not result.scalars().first():
+                print("BG: seeding default exam categories")
+                defaults = [
+                    {"name": "Bank", "icon": "library-outline"},
+                    {"name": "Judicial", "icon": "hammer-outline"},
+                    {"name": "ESIC", "icon": "medkit-outline"},
+                    {"name": "Railway", "icon": "train-outline"},
+                    {"name": "Defence", "icon": "shield-checkmark-outline"},
+                    {"name": "PSUs", "icon": "business-outline"},
+                    {"name": "UPSC", "icon": "ribbon-outline"},
+                    {"name": "SSC", "icon": "clipboard-outline"},
+                    {"name": "Police", "icon": "shield-half-outline"},
+                    {"name": "PSCs", "icon": "newspaper-outline"},
+                    {"name": "Post-Office", "icon": "mail-outline"},
+                ]
+                for i, c in enumerate(defaults):
+                    db.add(Category(name=c["name"], icon_name=c["icon"], order=i, is_enabled=True))
+                await db.commit()
+    except Exception as e:
+        print(f"BG: category seeding skipped: {e!r}")
+
+    # 5. Visibility self-heal — flip is_enabled back to True if every row is False.
+    try:
+        async with SessionLocal() as db:
             total = (await db.execute(select(_sql_func.count()).select_from(Category))).scalar_one()
-            enabled = (
-                await db.execute(
-                    select(_sql_func.count()).select_from(Category).where(Category.is_enabled.is_(True))
-                )
-            ).scalar_one()
+            enabled = (await db.execute(select(_sql_func.count()).select_from(Category).where(Category.is_enabled.is_(True)))).scalar_one()
             if total > 0 and enabled == 0:
-                print(
-                    f"SELF-HEAL: {total} categories all disabled — restoring "
-                    "is_enabled=True to prevent admin-panel-looks-broken state."
-                )
+                print(f"BG SELF-HEAL: {total} categories all disabled — restoring.")
                 await db.execute(_sql_update(Category).values(is_enabled=True))
                 await db.execute(_sql_update(SubCategory).values(is_enabled=True))
                 await db.commit()
-        except Exception as e:  # defensive — never block startup
-            print(f"SELF-HEAL check skipped due to: {e!r}")
+    except Exception as e:
+        print(f"BG: visibility self-heal skipped: {e!r}")
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # ── BLOCKING (≤ 20s, hard timeout): admin bootstrap so login works on
+    #    the very first request after deploy. Everything else is moved to a
+    #    background task that runs AFTER the app starts serving traffic.
+    #    Rationale: Railway healthchecks kill containers that don't respond
+    #    within their startup window. If schema migrations or self-heal
+    #    queries hang on a DB lock (e.g. after a long load_seeds run), the
+    #    container thrashes and login never works — that was this app's
+    #    recurring "CORS error after deploy" symptom.
+    await _admin_bootstrap_with_timeout(timeout_seconds=20)
+    asyncio.create_task(_background_schema_selfheal())
     yield
 
 app = FastAPI(
