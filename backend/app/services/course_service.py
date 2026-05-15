@@ -14,11 +14,9 @@ async def create_course(db: AsyncSession, course_in: CourseCreate) -> Course:
     db_course = Course(**course_in.model_dump())
     db.add(db_course)
     await db.commit()
-    
-    # Re-fetch with relationships eagerly loaded to prevent MissingGreenlet
-    stmt = select(Course).options(selectinload(Course.folders)).where(Course.id == db_course.id)
-    result = await db.execute(stmt)
-    return result.scalars().first()
+    await db.refresh(db_course)
+    db_course.folders = []
+    return db_course
 
 async def get_courses(db: AsyncSession, subcategory_id: Optional[uuid.UUID] = None, is_published: Optional[bool] = None) -> List[Course]:
     """Course list — returns folders + folder-test links + test_series metadata,
@@ -76,24 +74,21 @@ async def create_course_folder(db: AsyncSession, course_id: uuid.UUID, folder_in
     db_folder = CourseFolder(course_id=course_id, **folder_in.model_dump())
     db.add(db_folder)
     await db.commit()
-    # Eagerly load the .tests relationship to prevent MissingGreenlet during serialization
-    from sqlalchemy.orm import selectinload
-    result = await db.execute(
-        select(CourseFolder).where(CourseFolder.id == db_folder.id).options(selectinload(CourseFolder.tests))
-    )
-    return result.scalars().first()
+    await db.refresh(db_folder)
+    db_folder.tests = []
+    return db_folder
 
 async def link_test_to_folder(db: AsyncSession, folder_id: uuid.UUID, test_in: FolderTestCreate) -> FolderTest:
     db_link = FolderTest(folder_id=folder_id, **test_in.model_dump())
     db.add(db_link)
     await db.commit()
+    await db.refresh(db_link)
     # Eagerly load the .test_series and its .sections relationship to prevent MissingGreenlet during serialization
     from sqlalchemy.orm import selectinload
-    result = await db.execute(
-        select(FolderTest).where(FolderTest.id == db_link.id).options(
-            selectinload(FolderTest.test_series).selectinload(TestSeries.sections)
-        )
-    )
+    stmt = select(FolderTest).where(FolderTest.id == db_link.id).options(
+        selectinload(FolderTest.test_series).selectinload(TestSeries.sections)
+    ).execution_options(populate_existing=True)
+    result = await db.execute(stmt)
     return result.scalars().first()
 
 from app.models.enrollment import Enrollment
