@@ -4,6 +4,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from pydantic import BaseModel
 import uuid
 from app.core.database import get_db
+from app.core.dependencies import get_current_active_user, get_current_admin_user
+from app.models.user import User
 from app.schemas.course_schema import CourseResponse, CourseCreate, CourseFolderResponse, CourseFolderCreate, FolderTestResponse, FolderTestCreate
 from app.services import course_service
 
@@ -109,8 +111,6 @@ async def update_course_folders_order(
     await db.commit()
     return {"message": "Order updated successfully"}
 
-from app.core.dependencies import get_current_active_user
-from app.models.user import User
 
 @router.post("/{course_id}/enroll")
 async def enroll_in_course(
