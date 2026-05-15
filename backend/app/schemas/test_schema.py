@@ -32,6 +32,13 @@ class TestSeriesBase(BaseModel):
     is_daily_quiz: bool = False
     quiz_date: Optional[datetime] = None
     cdn_url: Optional[str] = None
+    # Real-exam timing carried over from the linked ExamPattern. The student
+    # player honours these so PYQ + mock attempts mirror the actual paper:
+    # `total_duration_minutes` is the wall-clock cap; `has_sectional_timing`
+    # tells the UI whether each section also has its own timer (Bank PO style)
+    # or whether the candidate can move freely between sections (SSC style).
+    total_duration_minutes: Optional[int] = None
+    has_sectional_timing: bool = False
 
 class TestSeriesCreate(TestSeriesBase):
     pass
@@ -39,13 +46,15 @@ class TestSeriesCreate(TestSeriesBase):
 class TestSeriesUpdate(TestSeriesBase):
     title: Optional[str] = None
 
-class TestSeriesResponse(TestSeriesBase):
+class TestSeriesSummaryResponse(TestSeriesBase):
     id: uuid.UUID
     created_at: datetime
-    sections: List[SectionResponse] = []
 
     class Config:
         from_attributes = True
+
+class TestSeriesResponse(TestSeriesSummaryResponse):
+    sections: List[SectionResponse] = []
 
 # Bulk Upload Schemas
 from app.models.question import DifficultyLevel

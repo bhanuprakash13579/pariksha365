@@ -10,12 +10,12 @@ class FolderTestBase(BaseModel):
 class FolderTestCreate(FolderTestBase):
     pass
 
-from app.schemas.test_schema import TestSeriesResponse
+from app.schemas.test_schema import TestSeriesSummaryResponse
 
 class FolderTestResponse(FolderTestBase):
     id: uuid.UUID
     folder_id: uuid.UUID
-    test_series: Optional[TestSeriesResponse] = None
+    test_series: Optional[TestSeriesSummaryResponse] = None
     
     class Config:
         from_attributes = True
