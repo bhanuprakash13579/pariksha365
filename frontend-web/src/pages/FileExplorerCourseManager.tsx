@@ -102,8 +102,12 @@ export const FileExplorerCourseManager: React.FC<Props> = ({
             if (currentLevel === 1) await api.post('/categories/subcategories', { category_id: currentId, name: newItemName.trim() });
             else if (currentLevel === 2) await api.post('/courses', { title: newItemName.trim(), subcategory_id: currentId, price: newCoursePrice, is_published: true });
             else if (currentLevel === 3) await api.post(`/courses/${currentId}/folders`, { title: newItemName.trim(), is_free: true });
-            setNewItemName(''); setNewCoursePrice(0); setIsAdding(false); fetchData();
-        } catch { alert(`Failed to create ${levelLabel}`); }
+            setNewItemName(''); setNewCoursePrice(0); setIsAdding(false);
+            await fetchData();
+        } catch (err: any) {
+            const detail = err?.response?.data?.detail ?? err?.message ?? 'Unknown error';
+            alert(`Failed to create ${levelLabel}: ${detail}`);
+        }
     };
 
     const handleLinkTest = async (testId: string) => {
