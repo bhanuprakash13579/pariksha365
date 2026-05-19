@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Probability: Basics",
+  "topic_code": "QNT_PROBABILITY_BASICS_MIXED",
+  "questions": [
+    {
+      "stem": "In a single, completely random throw of a fair six-sided die, what is the exact probability of getting a number strictly greater than 4?",
+      "options": [
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": true
+        },
+        {
+          "option_text": "2/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The total possible outcomes on a die are {1, 2, 3, 4, 5, 6}, which means 6 outcomes. Numbers greater than 4 are {5, 6}, meaning 2 favorable outcomes. Probability = (Favorable) / (Total) = 2 / 6 = 1 / 3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_BASICS_MIXED_00001"
+    },
+    {
+      "stem": "A standard, fair coin is tossed independently exactly twice. What is the absolute probability of getting exactly two heads?",
+      "options": [
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/4",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The sample space when tossing a coin twice is {HH, HT, TH, TT}, resulting in 4 possible outcomes. There is only 1 outcome that has exactly two heads (HH). Therefore, the probability is 1 / 4.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_BASICS_MIXED_00002"
+    },
+    {
+      "stem": "A single card is drawn completely at random from a well-shuffled standard pack of 52 playing cards. What is the precise probability that the drawn card is either a King or a Queen?",
+      "options": [
+        {
+          "option_text": "1/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "4/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/13",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "A standard deck of 52 cards contains exactly 4 Kings and exactly 4 Queens. Since a card cannot be both a King and a Queen, the events are mutually exclusive. Total favorable outcomes = 4 + 4 = 8. Probability = 8 / 52 = 2 / 13.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_BASICS_MIXED_00003"
+    },
+    {
+      "stem": "A closed bag contains exactly 5 red, 4 green, and 3 blue balls. If a single ball is drawn purely at random from the bag, what is the exact probability that it is distinctly NOT green?",
+      "options": [
+        {
+          "option_text": "2/3",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Total number of balls = 5 + 4 + 3 = 12. The balls that are NOT green are either red or blue. Number of favorable balls = 5 (red) + 3 (blue) = 8. Probability = 8 / 12 = 2 / 3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_BASICS_MIXED_00004"
+    },
+    {
+      "stem": "Two fair six-sided dice are thrown completely simultaneously. What is the exact probability of getting a total sum of exactly 9 on the two upward-facing numbers?",
+      "options": [
+        {
+          "option_text": "1/6",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/12",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/9",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Total possible outcomes when two dice are thrown = 6 × 6 = 36. The combinations that result in a sum of exactly 9 are: (3, 6), (4, 5), (5, 4), and (6, 3). So, there are 4 favorable outcomes. Probability = 4 / 36 = 1 / 9.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_BASICS_MIXED_00005"
+    },
+    {
+      "stem": "A closed bag contains exactly 4 white, 5 red, and 6 blue identical balls. Exactly three balls are drawn completely at random from the bag at the same time. The exact probability that all three of them are red is:",
+      "options": [
+        {
+          "option_text": "3/91",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/91",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/91",
+          "is_correct": false
+        },
+        {
+          "option_text": "4/91",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Total number of balls = 4 + 5 + 6 = 15. The total number of ways to draw 3 balls from 15 is 15C3 = (15×14×13) / (3×2×1) = 455. The number of ways to draw 3 red balls purely from the 5 red balls is 5C3 = (5×4×3) / (3×2×1) = 10. Probability = 10 / 455 = 2 / 91.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_BASICS_MIXED_00006"
+    },
+    {
+      "stem": "What is the exact mathematical probability that a leap year randomly selected from the Gregorian calendar will contain exactly 53 Sundays?",
+      "options": [
+        {
+          "option_text": "1/7",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/7",
+          "is_correct": false
+        },
+        {
+          "option_text": "4/7",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/7",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "A leap year has exactly 366 days, which consists of 52 complete weeks (364 days) and exactly 2 extra 'odd' days. These 2 extra days can be any two consecutive days: (Sun-Mon), (Mon-Tue), (Tue-Wed), (Wed-Thu), (Thu-Fri), (Fri-Sat), or (Sat-Sun). There are 7 total combinations. Out of these 7, exactly 2 combinations contain a Sunday (Sun-Mon and Sat-Sun). Probability = 2 / 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_BASICS_MIXED_00007"
+    }
+  ]
+}

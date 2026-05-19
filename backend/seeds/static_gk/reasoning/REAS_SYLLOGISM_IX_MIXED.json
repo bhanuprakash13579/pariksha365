@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Syllogisms: 9th batch",
+  "topic_code": "REAS_SYLLOGISM_IX_MIXED",
+  "questions": [
+    {
+      "stem": "Carefully read the statements and determine which of the conclusions logically follows.\nStatements:\n1. All tables are chairs.\n2. No chair is a bed.\nConclusions:\nI. No table is a bed.\nII. Some chairs are tables.",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Since all tables are chairs, and no chair is a bed, the entire set of tables is excluded from the set of beds. Thus, 'No table is a bed' is true. Also, since all tables are chairs, the converse 'Some chairs are tables' is inherently logically true. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_IX_MIXED_00001"
+    },
+    {
+      "stem": "Carefully read the statements and determine which of the conclusions logically follows.\nStatements:\n1. Some papers are pens.\n2. All pens are markers.\nConclusions:\nI. Some markers are papers.\nII. Some pens are papers.",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Statement 1 'Some papers are pens' means the intersection of papers and pens is not empty. Since 'All pens are markers' (Statement 2), the pens that are papers are also markers. Therefore, 'Some markers are papers' is true. 'Some pens are papers' is just the valid converse of Statement 1. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_IX_MIXED_00002"
+    },
+    {
+      "stem": "Carefully read the statements and determine which of the conclusions logically follows.\nStatements:\n1. All cats are dogs.\n2. Some dogs are rats.\n3. No rat is a pig.\nConclusions:\nI. Some cats are rats.\nII. No dog is a pig.",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "While cats are completely inside dogs, the intersection of dogs and rats does not necessarily include any cats. So, Conclusion I is not definite. Some dogs are rats, and rats cannot be pigs, meaning SOME dogs are not pigs. But we cannot definitively say NO dog is a pig, because the dogs that aren't rats might be pigs. Neither follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_IX_MIXED_00003"
+    },
+    {
+      "stem": "Carefully read the statements and determine which of the conclusions logically follows.\nStatements:\n1. Some buses are cars.\n2. No car is a truck.\n3. All trucks are bikes.\nConclusions:\nI. Some bikes are cars.\nII. No bus is a truck.",
+      "options": [
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "No car is a truck, and all trucks are inside bikes. This doesn't prevent cars from intersecting with the part of bikes outside of trucks. So Conclusion I is a possibility, not a certainty. Some buses are cars, and no car is a truck, meaning SOME buses are not trucks. But we cannot definitively conclude that NO bus is a truck. Neither follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_IX_MIXED_00004"
+    },
+    {
+      "stem": "Carefully read the logical statements and firmly determine exactly which of the strict conclusions confidently logically follows.\nStatements:\n1. All A are B.\n2. All B are C.\n3. Some C are D.\nConclusions:\nI. Some A are D.\nII. All A are C.",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "All A are B, and All B are C, which strictly implies All A are completely inside C. Thus, Conclusion II strictly follows. However, Some C are D only guarantees an intersection between C and D; it does not guarantee that D intersects with the inner A circle. Conclusion I is not a certainty.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_IX_MIXED_00005"
+    },
+    {
+      "stem": "Carefully read the statements and strictly determine exactly which of the formal conclusions clearly logically follows.\nStatements:\n1. Only a few books are notebooks.\n2. All notebooks are diaries.\n3. No diary is a novel.\nConclusions:\nI. All books being diaries is a possibility.\nII. Some notebooks are definitely not novels.",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "'Only a few books are notebooks' means SOME books are notebooks and SOME books are NOT notebooks. It is entirely possible for the entire 'books' circle to sit inside the 'diaries' circle, as long as it doesn't entirely sit inside the 'notebooks' circle. Thus, I follows. Since all notebooks are diaries, and no diary is a novel, no notebook is a novel. Thus, II ('Some are not') is also true. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_IX_MIXED_00006"
+    },
+    {
+      "stem": "Carefully read the strict logical statements and completely accurately determine exactly which of the formal conclusions securely follows.\nStatements:\n1. Only a few waters are liquids.\n2. Only a few liquids are solids.\n3. All solids are gases.\nConclusions:\nI. All liquids being completely gases is a distinct possibility.\nII. Some waters are definitely not liquids.",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "'Only a few liquids are solids' implies some liquids are solids and some liquids are not solids. However, the entire 'liquids' set can still comfortably sit entirely within the 'gases' set without violating the 'only a few' restriction with 'solids'. Thus, I is possible. 'Only a few waters are liquids' explicitly means some waters are liquids and SOME waters are definitely NOT liquids. Thus, II follows. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_IX_MIXED_00007"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Direction & Distance — compass directions, distance tracking, relative positions",
+  "topic_code": "REAS_DIRECTION_DISTANCE_VII_MIXED",
+  "questions": [
+    {
+      "stem": "Ram starts from point A, walks 10 km north, then 5 km east, then 10 km south. How far is he from point A?",
+      "options": [
+        {
+          "option_text": "5 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Net displacement: North 10, South 10 → net vertical = 0. East 5 → net horizontal = 5. Straight-line distance from A = 5 km. Answer: A. Trap: adding distances (25 km) instead of net displacement.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_VII_MIXED_00001"
+    },
+    {
+      "stem": "From point X, A walks 3 km west, then 4 km north. B walks 4 km east, then 3 km north. After their walks, in which direction is B from A?",
+      "options": [
+        {
+          "option_text": "East",
+          "is_correct": true
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        },
+        {
+          "option_text": "Northeast",
+          "is_correct": false
+        },
+        {
+          "option_text": "Southeast",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "A's position: 3 km west, 4 km north. B's position: 4 km east, 4 km north. Relative: B is (4 - (-3)) = 7 km east and (4 - 4) = 0 km north of A. Direction: East. Answer: A. Trap: confusing coordinate system or directions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_VII_MIXED_00002"
+    },
+    {
+      "stem": "Priya walks 5 km south, then 3 km west, then 5 km north. In which direction is she from her starting point?",
+      "options": [
+        {
+          "option_text": "West",
+          "is_correct": true
+        },
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Net: South 5, North 5 → vertical = 0. West 3 → horizontal = 3 west. Direction: West. Answer: A. Trap: confusing directions or miscalculating net.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_VII_MIXED_00003"
+    },
+    {
+      "stem": "If you travel 7 km north, then turn right (east) and travel 24 km. How far are you from the starting point (straight-line distance)?",
+      "options": [
+        {
+          "option_text": "17 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "31 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Position: 7 km north, 24 km east. Distance = √(7² + 24²) = √(49 + 576) = √625 = 25 km. Answer: C. Trap: adding distances or miscalculating Pythagorean theorem.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_VII_MIXED_00004"
+    },
+    {
+      "stem": "A man walks 5 km north, then turns left (west) and walks 5 km. What is his final direction from the starting point?",
+      "options": [
+        {
+          "option_text": "Northwest at 45°",
+          "is_correct": true
+        },
+        {
+          "option_text": "North (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "West (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Southwest (alternative interpretation)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Position: 5 km north, 5 km west. Distance ratio N:W = 1:1 → 45° angle northwest. Direction: Northwest. Answer: A. Trap: assuming pure north or west instead of diagonal.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_VII_MIXED_00005"
+    },
+    {
+      "stem": "From point O, P goes 6 km east, then 8 km north. Q goes 8 km west, then 6 km south. What is the distance between P and Q?",
+      "options": [
+        {
+          "option_text": "14 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "√260 ≈ 16.1 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "28 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "P: 6 km east, 8 km north. Q: 8 km west, 6 km south. Difference: (6-(-8), 8-(-6)) = (14, 14). Distance = √(14² + 14²) = √(196+196) = √392 ≈ 19.8 ≈ 20 km. Answer: B. Trap: miscalculating vector differences or using wrong formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_VII_MIXED_00006"
+    },
+    {
+      "stem": "A runner starts facing north. He turns 90° clockwise, then 45° counterclockwise. In which direction is he facing?",
+      "options": [
+        {
+          "option_text": "North (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "East (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Southeast",
+          "is_correct": true
+        },
+        {
+          "option_text": "South (alternative interpretation)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Initial: North (0°). Turn 90° clockwise: East (90°). Turn 45° counterclockwise: 90° - 45° = 45° from north (northeast or southeast?). At 45° from north moving clockwise is Southeast. Answer: C. Trap: confusing clockwise/counterclockwise or angle directions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_VII_MIXED_00007"
+    }
+  ]
+}

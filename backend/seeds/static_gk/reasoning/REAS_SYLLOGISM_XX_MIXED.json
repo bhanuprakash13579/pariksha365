@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Syllogisms: 20th batch",
+  "topic_code": "REAS_SYLLOGISM_XX_MIXED",
+  "questions": [
+    {
+      "stem": "Statements: 1. All A are B. 2. All B are C.\nConclusions: I. All A are C. II. Some C are A.",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Since A is fully inside B, and B is fully inside C, A is entirely inside C (All A are C). Consequently, the part of C that contains A means Some C are A. Both strictly follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_XX_MIXED_00001"
+    },
+    {
+      "stem": "Statements: 1. Some cats are dogs. 2. No dog is a cow.\nConclusions: I. Some cats are not cows. II. No cat is a cow.",
+      "options": [
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Since some cats are dogs, and NO dog is a cow, those specific cats that are dogs can never be cows. Therefore, 'Some cats are not cows' is definitely true. We cannot say NO cat is a cow, because the cats that aren't dogs might be cows. Only I follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_XX_MIXED_00002"
+    },
+    {
+      "stem": "Statements: 1. All birds are trees. 2. Some trees are hens.\nConclusions: I. Some birds are hens. II. All hens are birds.",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "While all birds are within the tree circle, the 'hens' circle only intersects 'trees'. It is not guaranteed that the 'hens' intersection touches the inner 'birds' circle. Thus, no definite relation between birds and hens can be drawn. Neither follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_XX_MIXED_00003"
+    },
+    {
+      "stem": "Statements: 1. No paper is a pen. 2. No pen is a marker.\nConclusions: I. No paper is a marker. II. Some papers are markers.",
+      "options": [
+        {
+          "option_text": "Either I or II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Because both premises are negative, no direct definitive conclusion can be drawn between paper and marker. They might intersect, or they might not. Therefore, either some papers are markers, or no paper is a marker. This forms a complementary pair, leading to an 'Either or' condition.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_XX_MIXED_00004"
+    },
+    {
+      "stem": "Statements: 1. Some tables are chairs. 2. Some chairs are beds.\nConclusions: I. Some tables are beds. II. All beds are chairs.",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "From 'Some A are B' and 'Some B are C', no definite connection between A (tables) and C (beds) can be established logically. They may or may not overlap. Conclusion II is also false because only SOME beds are chairs. Neither follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_XX_MIXED_00005"
+    },
+    {
+      "stem": "Statements: 1. Only a few men are boys. 2. All boys are kids.\nConclusions: I. All men being kids is a possibility. II. Some men are definitely not boys.",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "'Only a few men are boys' means Some men are boys and SOME MEN ARE NOT BOYS (II follows). Even though some men cannot be boys, the entire 'men' circle can easily sit completely inside the 'kids' circle without entering the 'boys' restricted area. So I is a valid possibility. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_XX_MIXED_00006"
+    },
+    {
+      "stem": "Statements: 1. Only A are B. 2. Some A are C.\nConclusions: I. Some B being C is a possibility. II. No B is C.",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "The statement 'Only A are B' technically means 'All B are A' WITH the exclusive condition that B cannot intersect or interact with any other element except A. Therefore, B can NEVER touch C. The possibility in conclusion I is invalid. Conclusion II 'No B is C' is absolutely true. Only II follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_XX_MIXED_00007"
+    }
+  ]
+}

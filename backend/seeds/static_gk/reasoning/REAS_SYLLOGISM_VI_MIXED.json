@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Syllogism: 6th batch",
+  "topic_code": "REAS_SYLLOGISM_VI_MIXED",
+  "questions": [
+    {
+      "stem": "Statements: Some dogs are cats. All cats are rats.\nConclusions:\nI. Some dogs are rats.\nII. All dogs are rats.",
+      "options": [
+        {
+          "option_text": "Only conclusion II clearly follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion I clearly follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "If some dogs are cats, and all cats are rats, the dogs that are cats must also be rats. Therefore, some dogs are rats (Conclusion I). We cannot say all dogs are rats, as the remaining dogs might not be cats. Thus, only conclusion I follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_VI_MIXED_00001"
+    },
+    {
+      "stem": "Statements: All pens are pencils. No pencil is a marker.\nConclusions:\nI. No pen is a marker.\nII. Some pencils are pens.",
+      "options": [
+        {
+          "option_text": "Only conclusion I clearly follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion II clearly follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusions I and II clearly follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Since all pens fall entirely within the circle of pencils, and the entire circle of pencils is completely separate from markers, no pen can be a marker (I follows). Because all pens are pencils, naturally some part of the pencil group consists of pens (II follows). Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_VI_MIXED_00002"
+    },
+    {
+      "stem": "Statements: Some tables are chairs. Some chairs are beds.\nConclusions:\nI. Some tables are beds.\nII. No table is a bed.",
+      "options": [
+        {
+          "option_text": "Only conclusion I clearly follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion II clearly follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither conclusion I nor II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either conclusion I or II clearly follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "The relationship between tables and beds is entirely undefined by the statements. They could overlap, or they could not overlap. Because conclusions I and II cover the only two logical possibilities (they either overlap or they don't) and share the exact same subjects, they form a complementary pair. Either I or II must be true.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_VI_MIXED_00003"
+    },
+    {
+      "stem": "Statements: All men are women. All women are children. No child is young.\nConclusions:\nI. Some children are men.\nII. No man is young.",
+      "options": [
+        {
+          "option_text": "Both conclusions I and II clearly follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only conclusion I clearly follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion II clearly follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Since all men are women and all women are children, it implies all men are children. If all men are children, then some children must definitely be men (I follows). Since all men are children, and no child is young, it logically follows that no man can be young (II follows). Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_VI_MIXED_00004"
+    },
+    {
+      "stem": "Statements: Some birds are trees. Some trees are leaves. All leaves are green.\nConclusions:\nI. Some birds are green.\nII. Some trees are green.",
+      "options": [
+        {
+          "option_text": "Only conclusion I clearly follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusions I and II clearly follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion II clearly follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Since some trees are leaves, and all leaves are green, the trees that are leaves must also be green. Therefore, some trees are green (II follows). The connection between birds and leaves/green is entirely unestablished. Therefore, I does not follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_VI_MIXED_00005"
+    },
+    {
+      "stem": "Statements: All flowers are roots. Some roots are stems. No stem is a seed.\nConclusions:\nI. Some flowers are stems.\nII. No flower is a seed.\nIII. Some roots are not seeds.",
+      "options": [
+        {
+          "option_text": "Only conclusion I clearly follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion III clearly follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only conclusion II clearly follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "None of the given conclusions follow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Flowers and stems have no established connection, so I doesn't follow. Flowers and seeds have no established connection, so II doesn't follow. However, we know some roots are stems. Since no stem is a seed, those specific roots that are stems can NEVER be seeds. Therefore, some roots are definitely not seeds (III follows).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_VI_MIXED_00006"
+    },
+    {
+      "stem": "Statements: Some logic is magic. All magic is science. No science is art.\nConclusions:\nI. Some logic is not art.\nII. No magic is art.\nIII. Some science is magic.",
+      "options": [
+        {
+          "option_text": "Only conclusions I and II clearly follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusions II and III clearly follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "None of the given conclusions follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "All the conclusions I, II and III follow",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "If all magic is science and no science is art, then no magic can be art (II follows). If some logic is magic, and all magic is science, then some logic is science. Since no science is art, that specific logic which is science can never be art (I follows). If all magic is science, then inherently some science must be magic (III follows). All follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_VI_MIXED_00007"
+    }
+  ]
+}

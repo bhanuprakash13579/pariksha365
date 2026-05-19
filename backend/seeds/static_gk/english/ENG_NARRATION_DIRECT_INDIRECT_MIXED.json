@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "English",
+  "topic": "Direct & Indirect Speech",
+  "topic_code": "ENG_NARRATION_DIRECT_INDIRECT_MIXED",
+  "questions": [
+    {
+      "stem": "Select the exact correct indirect form of the given direct sentence.\n\nHe said, \"I am reading a book.\"",
+      "options": [
+        {
+          "option_text": "He clearly said that he is reading a book.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He said that he was reading a book.",
+          "is_correct": true
+        },
+        {
+          "option_text": "He said that I was actually reading a book.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He said he has been reading a great book.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The reporting verb 'said' is in the past tense, so the present continuous tense inside the quotes ('am reading') must change to the past continuous tense ('was reading'). The pronoun 'I' changes to 'he'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:09+00:00",
+      "id": "sgk_ENG_NARRATION_DIRECT_INDIRECT_MIXED_00001"
+    },
+    {
+      "stem": "Select the exact correct indirect form of the given direct sentence.\n\nShe said to me, \"I will call you tomorrow.\"",
+      "options": [
+        {
+          "option_text": "She told me that she will eagerly call me tomorrow.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She told me that I would definitely call her the next day.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She told me that she would call me the next day.",
+          "is_correct": true
+        },
+        {
+          "option_text": "She said to me she would excitedly call me tomorrow.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "'Said to' changes to 'told'. The pronoun 'I' changes to 'she', and 'you' changes to 'me'. The modal 'will' changes to its past equivalent 'would'. The time word 'tomorrow' must change to 'the next day' in indirect speech.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:09+00:00",
+      "id": "sgk_ENG_NARRATION_DIRECT_INDIRECT_MIXED_00002"
+    },
+    {
+      "stem": "Select the exact correct indirect form of the given direct interrogative sentence.\n\nHe said, \"Has anyone seen my keys?\"",
+      "options": [
+        {
+          "option_text": "He asked if anyone has seen his keys.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He asked that if anyone had seen his keys.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He asked whether anyone saw his keys.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He asked if anyone had seen his keys.",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "For yes/no questions, the reporting verb changes to 'asked' and we use 'if' or 'whether' to connect. The present perfect tense ('has seen') changes to the past perfect tense ('had seen'). We do not use 'that' before 'if'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:09+00:00",
+      "id": "sgk_ENG_NARRATION_DIRECT_INDIRECT_MIXED_00003"
+    },
+    {
+      "stem": "Select the exact correct indirect form of the given direct imperative sentence.\n\nThe teacher said to the boys, \"Do not make a noise.\"",
+      "options": [
+        {
+          "option_text": "The teacher ordered the boys not to make a noise.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The teacher ordered the boys to not make a noise.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The teacher ordered the boys that do not make a noise.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The teacher strongly forbade the boys not to make a noise.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "In imperative sentences, 'said to' changes to 'ordered', 'requested', etc. The negative imperative 'Do not' changes to 'not to' before the infinitive verb. 'Forbade' implies a negative already, so 'forbade... not to' is grammatically incorrect due to the double negative.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:09+00:00",
+      "id": "sgk_ENG_NARRATION_DIRECT_INDIRECT_MIXED_00004"
+    },
+    {
+      "stem": "Select the exact correct indirect form of the given direct imperative sentence.\n\n\"Please bring me a glass of water,\" she said to him.",
+      "options": [
+        {
+          "option_text": "She ordered him to bring her a glass of water.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She requested him that bring me a glass of water.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She requested him to bring her a glass of water.",
+          "is_correct": true
+        },
+        {
+          "option_text": "She told him to completely bring me a glass of water.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "The word 'Please' indicates a request, so the reporting verb 'said to' changes to 'requested'. The imperative verb 'bring' connects using the infinitive marker 'to'. The pronoun 'me' changes to 'her'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:09+00:00",
+      "id": "sgk_ENG_NARRATION_DIRECT_INDIRECT_MIXED_00005"
+    },
+    {
+      "stem": "Select the exact correct indirect form of the given direct exclamatory sentence.\n\nHe said, \"Alas! I am ruined.\"",
+      "options": [
+        {
+          "option_text": "He exclaimed with joy that he was ruined.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He exclaimed with sorrow that he was ruined.",
+          "is_correct": true
+        },
+        {
+          "option_text": "He exclaimed with sorrow that I am ruined.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He exclaimed sadly that he is heavily ruined.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "The interjection 'Alas!' expresses sorrow, so the reporting verb changes to 'exclaimed with sorrow'. The conjunction 'that' is used, and the present tense 'am ruined' changes to the past tense 'was ruined'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:09+00:00",
+      "id": "sgk_ENG_NARRATION_DIRECT_INDIRECT_MIXED_00006"
+    },
+    {
+      "stem": "Select the exact correct indirect form of the given direct exclamatory sentence.\n\nThe captain said, \"Bravo! You have played well.\"",
+      "options": [
+        {
+          "option_text": "The captain applauded him, saying that you had played well.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The captain exclaimed with joy that he has played well.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The captain praised him, saying that he has played well.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The captain applauded him, saying that he had played well.",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "The interjection 'Bravo!' indicates applause or praise. The standard transformation is 'applauded [object], saying that...'. The present perfect tense 'have played' must change to the past perfect tense 'had played'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:09+00:00",
+      "id": "sgk_ENG_NARRATION_DIRECT_INDIRECT_MIXED_00007"
+    }
+  ]
+}

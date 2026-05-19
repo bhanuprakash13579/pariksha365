@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Boats & Streams: complex current + distance combos",
+  "topic_code": "QNT_BOATS_STREAMS_ADVANCED_MIXED",
+  "questions": [
+    {
+      "stem": "The speed of a boat in still water is 15 km/h and the speed of the stream is 3 km/h. How much time will the boat take to travel a distance of 72 km downstream?",
+      "options": [
+        {
+          "option_text": "4 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "6 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 hours",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Speed of the boat in still water (B) = 15 km/h.\nSpeed of the stream (S) = 3 km/h.\nDownstream speed = B + S = 15 + 3 = 18 km/h.\nTime taken = Distance ÷ Downstream speed = 72 ÷ 18 = 4 hours.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_BOATS_STREAMS_ADVANCED_MIXED_00001"
+    },
+    {
+      "stem": "A boat covers 40 km upstream in 8 hours and 36 km downstream in 6 hours. What is the speed of the boat in still water?",
+      "options": [
+        {
+          "option_text": "5.5 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "6.5 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "4.5 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "7.5 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Upstream speed (U) = Distance ÷ Time = 40 ÷ 8 = 5 km/h.\nDownstream speed (D) = Distance ÷ Time = 36 ÷ 6 = 6 km/h.\nSpeed of the boat in still water = (D + U) ÷ 2 = (6 + 5) ÷ 2 = 11 ÷ 2 = 5.5 km/h.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_BOATS_STREAMS_ADVANCED_MIXED_00002"
+    },
+    {
+      "stem": "A man can row at a speed of 8 km/h in still water. If the velocity of the current is 2 km/h and it takes him exactly 3 hours to row to a certain place and come back to the starting point, how far is the place?",
+      "options": [
+        {
+          "option_text": "12.50 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "11.25 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "10.75 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "15.00 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Downstream speed = 8 + 2 = 10 km/h.\nUpstream speed = 8 − 2 = 6 km/h.\nLet the one-way distance be d.\nTotal time = d/10 + d/6 = 3.\nTaking LCM of 10 and 6 (which is 30):\n(3d + 5d) / 30 = 3\n8d = 90\nd = 90 ÷ 8 = 11.25 km.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_BOATS_STREAMS_ADVANCED_MIXED_00003"
+    },
+    {
+      "stem": "A boat takes 90 minutes less to travel 36 km downstream than it does to travel the same distance upstream. If the speed of the boat in still water is 10 km/h, what is the speed of the stream?",
+      "options": [
+        {
+          "option_text": "3 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Let the speed of the stream be v.\nTime upstream = 36 / (10 − v)\nTime downstream = 36 / (10 + v)\nDifference in time = 90 minutes = 1.5 hours.\n36 / (10 − v) − 36 / (10 + v) = 1.5\n36 × [(10 + v) − (10 − v)] / (100 − v²) = 1.5\n36 × 2v = 1.5 × (100 − v²)\n72v = 150 − 1.5v²\n1.5v² + 72v − 150 = 0\nDividing by 1.5:\nv² + 48v − 100 = 0\n(v + 50)(v − 2) = 0. Since speed cannot be negative, v = 2 km/h.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_BOATS_STREAMS_ADVANCED_MIXED_00004"
+    },
+    {
+      "stem": "The ratio of the speed of a motorboat in still water to the speed of the stream is 5:1. If the boat takes 3 hours to travel to a certain point upstream, what is the time taken to travel the exact same distance downstream?",
+      "options": [
+        {
+          "option_text": "1 hour 30 mins",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 hours 00 mins",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 hours 15 mins",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 hours 30 mins",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Let the boat's speed be 5x and the stream's speed be x.\nUpstream speed = 5x − x = 4x.\nDownstream speed = 5x + x = 6x.\nDistance = Upstream speed × Time = 4x × 3 = 12x.\nTime taken downstream = Distance ÷ Downstream speed = 12x ÷ 6x = 2 hours.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_BOATS_STREAMS_ADVANCED_MIXED_00005"
+    },
+    {
+      "stem": "A boat covers 24 km upstream and 36 km downstream in exactly 6 hours. It also covers 36 km upstream and 24 km downstream in 6 hours and 30 minutes. What is the speed of the current?",
+      "options": [
+        {
+          "option_text": "2 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Let 1/U = x (where U is upstream speed) and 1/D = y (where D is downstream speed).\nEq 1: 24x + 36y = 6  => 4x + 6y = 1\nEq 2: 36x + 24y = 6.5 => 72x + 48y = 13\nMultiply the simplified Eq 1 by 18: 72x + 108y = 18\nSubtract Eq 2 from this: (108y − 48y) = 18 − 13 => 60y = 5 => y = 1/12.\nSo, D = 12 km/h.\nSubstitute y in Eq 1: 4x + 6(1/12) = 1 => 4x + 0.5 = 1 => 4x = 0.5 => x = 1/8.\nSo, U = 8 km/h.\nSpeed of the current = (D − U) ÷ 2 = (12 − 8) ÷ 2 = 2 km/h.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_BOATS_STREAMS_ADVANCED_MIXED_00006"
+    },
+    {
+      "stem": "A motorboat travelling in still water takes 15 hours to travel 100 km downstream and return 100 km upstream. If the speed of the stream were to be doubled, the same two-way journey would take 24 hours. What is the original speed of the stream?",
+      "options": [
+        {
+          "option_text": "5 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Let the boat's speed be B and original stream's speed be S.\nScenario 1: 100/(B+S) + 100/(B−S) = 15\nScenario 2 (doubled stream speed = 2S): 100/(B+2S) + 100/(B−2S) = 24\nTesting Option A (S = 5):\nIf S = 5, then from Scenario 1: 100/(B+5) + 100/(B−5) = 15. Solving gives B = 15 km/h.\nVerify with Scenario 2 using B = 15 and 2S = 10:\nTime = 100/(15+10) + 100/(15−10) = 100/25 + 100/5 = 4 + 20 = 24 hours.\nThis perfectly satisfies both conditions. Therefore, the original speed of the stream is 5 km/h.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_BOATS_STREAMS_ADVANCED_MIXED_00007"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Venn Diagram: 3rd batch",
+  "topic_code": "REAS_VENN_DIAGRAM_III_MIXED",
+  "questions": [
+    {
+      "stem": "Which of the following Venn diagram descriptions correctly represents the logical relationship between the classes: Animals, Dogs, and Cats?",
+      "options": [
+        {
+          "option_text": "Three intersecting circles overlapping each other in the exact middle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two small disjoint circles entirely within a larger enclosing circle",
+          "is_correct": true
+        },
+        {
+          "option_text": "Three completely separate, disjoint circles representing distinct sets",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two concentric circles that are both entirely inside a massive circle",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Both Dogs and Cats belong to the overarching class of Animals, so they must be contained within a larger circle (Animals). However, no Dog is a Cat, and no Cat is a Dog, so their individual circles must be disjoint (separate) inside the larger circle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:45+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAM_III_MIXED_00001"
+    },
+    {
+      "stem": "Which of the following Venn diagram descriptions correctly represents the logical relationship between the classes: Days, Weeks, and Months?",
+      "options": [
+        {
+          "option_text": "Three intersecting circles overlapping each other completely",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two small intersecting circles entirely within a third circle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Three concentric circles completely enclosing one another",
+          "is_correct": true
+        },
+        {
+          "option_text": "Three completely separate disjoint circles with no connection",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "A group of Days makes a Week, and a group of Weeks makes a Month. Therefore, Days are entirely contained within Weeks, and Weeks are entirely contained within Months, forming three concentric circles like a bullseye.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:45+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAM_III_MIXED_00002"
+    },
+    {
+      "stem": "Which of the following Venn diagram descriptions correctly represents the logical relationship between the classes: Women, Mothers, and Doctors?",
+      "options": [
+        {
+          "option_text": "Three intersecting circles overlapping each other in the exact middle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two small disjoint circles entirely within a larger enclosing circle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Three completely separate, disjoint circles representing distinct sets",
+          "is_correct": false
+        },
+        {
+          "option_text": "One circle entirely within a second, with a third overlapping both",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "All Mothers are definitively Women, so the 'Mothers' circle must be entirely within the 'Women' circle. 'Doctors' can be Women, and they can be Mothers, but some Doctors are men. Thus, the 'Doctors' circle must partially overlap both 'Mothers' and 'Women', while extending outside the 'Women' circle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:45+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAM_III_MIXED_00003"
+    },
+    {
+      "stem": "Which of the following Venn diagram descriptions correctly represents the logical relationship between the classes: Authors, Teachers, and Men?",
+      "options": [
+        {
+          "option_text": "Three intersecting circles overlapping each other in the middle",
+          "is_correct": true
+        },
+        {
+          "option_text": "One circle entirely within a second, with a third overlapping both",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two small disjoint circles entirely within a larger enclosing circle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Three completely separate, disjoint circles representing distinct sets",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Some Authors are Teachers, some Teachers are Men, and some Men are Authors. Furthermore, it is perfectly logically possible for a person to be a male author who is also a teacher. Therefore, all three categories partially intersect, forming a central overlap.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:45+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAM_III_MIXED_00004"
+    },
+    {
+      "stem": "Which of the following Venn diagram descriptions correctly represents the logical relationship between the classes: Earth, Sea, and Sun?",
+      "options": [
+        {
+          "option_text": "One circle entirely within a second, with a third overlapping both",
+          "is_correct": false
+        },
+        {
+          "option_text": "Three intersecting circles overlapping each other in the middle",
+          "is_correct": false
+        },
+        {
+          "option_text": "One circle inside a second circle, with a third completely separate",
+          "is_correct": true
+        },
+        {
+          "option_text": "Three completely separate, disjoint circles representing distinct sets",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "The Sea is physically located entirely within the Earth, so the 'Sea' circle is entirely inside the 'Earth' circle. The Sun is an entirely different celestial body with no intersection, so its circle is completely separate.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:45+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAM_III_MIXED_00005"
+    },
+    {
+      "stem": "In a specific group of exactly 50 high school students, 30 study Math, 25 study Science, and 10 study neither subject. How many students study both Math and Science simultaneously?",
+      "options": [
+        {
+          "option_text": "10 students",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 students",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 students",
+          "is_correct": false
+        },
+        {
+          "option_text": "05 students",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Total students = 50. Neither = 10. The number of students studying at least one subject = Total - Neither = 50 - 10 = 40. Using set theory: n(M u S) = n(M) + n(S) - n(M ∩ S). So, 40 = 30 + 25 - Both. 40 = 55 - Both. Both = 55 - 40 = 15.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:45+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAM_III_MIXED_00006"
+    },
+    {
+      "stem": "In an extensive survey of exactly 100 random people, 60 say they like tea, 40 say they like coffee, and 20 say they like both beverages. How many people like exactly one of the two drinks?",
+      "options": [
+        {
+          "option_text": "50 people",
+          "is_correct": false
+        },
+        {
+          "option_text": "80 people",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 people",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 people",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Those who like ONLY tea = Total tea likers - Both = 60 - 20 = 40. Those who like ONLY coffee = Total coffee likers - Both = 40 - 20 = 20. The people who like 'exactly one' drink are those who like ONLY tea plus those who like ONLY coffee = 40 + 20 = 60 people.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:45+00:00",
+      "id": "sgk_REAS_VENN_DIAGRAM_III_MIXED_00007"
+    }
+  ]
+}

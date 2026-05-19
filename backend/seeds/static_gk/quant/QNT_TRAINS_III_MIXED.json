@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Trains: 3rd batch",
+  "topic_code": "QNT_TRAINS_III_MIXED",
+  "questions": [
+    {
+      "stem": "A fast passenger train exactly 120 meters long is running at a uniform speed of 90 km/hr. How much exact time will it take to completely cross a stationary signal pole?",
+      "options": [
+        {
+          "option_text": "5.2 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "4.8 seconds",
+          "is_correct": true
+        },
+        {
+          "option_text": "4.5 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "5.4 seconds",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "First, convert speed from km/hr to m/s: 90 * (5/18) = 25 m/s. The distance to cross a pole is the length of the train itself (120m). Time = Distance / Speed = 120 / 25 = 4.8 seconds.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_TRAINS_III_MIXED_00001"
+    },
+    {
+      "stem": "A heavy cargo train exactly 150 meters long is running at a speed of 72 km/hr. How much time will it firmly take to cross a stationary platform that is exactly 250 meters long?",
+      "options": [
+        {
+          "option_text": "25 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 seconds",
+          "is_correct": true
+        },
+        {
+          "option_text": "22 seconds",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Convert speed to m/s: 72 * (5/18) = 20 m/s. Total distance to cover = Length of train + Length of platform = 150 + 250 = 400 meters. Time = Distance / Speed = 400 / 20 = 20 seconds.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_TRAINS_III_MIXED_00002"
+    },
+    {
+      "stem": "Two distinct trains, 140m and 160m long, seamlessly run at speeds of 60 km/hr and 40 km/hr respectively in opposite directions on parallel tracks. What is the exact time they take to completely cross each other?",
+      "options": [
+        {
+          "option_text": "12.5 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "11.2 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "9.6 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "10.8 seconds",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Since they run in opposite directions, their relative speed is the sum of their speeds: 60 + 40 = 100 km/hr. In m/s: 100 * (5/18) = 250/9 m/s. Total distance to cover = sum of their lengths = 140 + 160 = 300m. Time = 300 / (250/9) = (300 * 9) / 250 = 2700 / 250 = 10.8 seconds.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_TRAINS_III_MIXED_00003"
+    },
+    {
+      "stem": "A speeding train running at exactly 54 km/hr crosses a man running at exactly 9 km/hr in the exact same direction in exactly 12 seconds. What is the total length of the train?",
+      "options": [
+        {
+          "option_text": "150 meters",
+          "is_correct": true
+        },
+        {
+          "option_text": "120 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "180 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "160 meters",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Since the man and train move in the same direction, relative speed = 54 - 9 = 45 km/hr. In m/s: 45 * (5/18) = 12.5 m/s. The distance covered to cross the man is the length of the train itself. Length = Relative Speed * Time = 12.5 m/s * 12 seconds = 150 meters.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_TRAINS_III_MIXED_00004"
+    },
+    {
+      "stem": "A train fully passes a station platform in 36 seconds and a man standing safely on the platform in 20 seconds. If the speed of the train is exactly 54 km/hr, what is the exact length of the platform?",
+      "options": [
+        {
+          "option_text": "250 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "260 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "240 meters",
+          "is_correct": true
+        },
+        {
+          "option_text": "280 meters",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Speed = 54 km/hr = 15 m/s. The train crosses the man (a point object) in 20 seconds. So, Train Length = 15 * 20 = 300m. It crosses the platform in 36 seconds. Total distance = Train Length + Platform Length (P). So, (300 + P) = 15 * 36 = 540. P = 540 - 300 = 240 meters.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_TRAINS_III_MIXED_00005"
+    },
+    {
+      "stem": "Two individual trains are running precisely in the same direction at 65 km/hr and 45 km/hr. The significantly faster train crosses a man sitting in the slower train in exactly 18 seconds. What is the exact length of the faster train?",
+      "options": [
+        {
+          "option_text": "120 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "100 meters",
+          "is_correct": true
+        },
+        {
+          "option_text": "150 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "180 meters",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Since they move in the same direction, relative speed = 65 - 45 = 20 km/hr = 20 * (5/18) = 50/9 m/s. Since the faster train crosses a 'man' (a point) sitting in the slower train, the distance covered is only the length of the faster train. Length = Speed * Time = (50/9) * 18 = 100 meters.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_TRAINS_III_MIXED_00006"
+    },
+    {
+      "stem": "A moving train travelling at 48 km/hr fully crosses another train, having exactly half its length and travelling in the opposite direction at 42 km/hr, in exactly 12 seconds. It also safely passes a railway platform in 45 seconds. The total length of the railway platform is:",
+      "options": [
+        {
+          "option_text": "500 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "300 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "600 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "400 meters",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Relative speed = 48 + 42 = 90 km/hr = 25 m/s. Let the lengths of the trains be L and L/2. Total distance = 3L/2. 3L/2 = 25 m/s * 12s = 300m. So, 3L = 600m, and L = 200m. The first train's speed = 48 km/hr = 48 * (5/18) = 40/3 m/s. Let platform length be P. (200 + P) / (40/3) = 45. (200 + P) = 45 * 40 / 3 = 15 * 40 = 600m. P = 600 - 200 = 400 meters.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_TRAINS_III_MIXED_00007"
+    }
+  ]
+}

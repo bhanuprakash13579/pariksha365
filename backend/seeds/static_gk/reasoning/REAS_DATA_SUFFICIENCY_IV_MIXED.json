@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Data Sufficiency: 4th batch",
+  "topic_code": "REAS_DATA_SUFFICIENCY_IV_MIXED",
+  "questions": [
+    {
+      "stem": "Question: What is the exact current age of Rohan?\nStatements:\nI. Rohan is exactly 5 years older than his brother Amit.\nII. Amit is currently exactly 10 years old.",
+      "options": [
+        {
+          "option_text": "Only statement I alone is completely sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statement I and II together are sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only statement II alone is completely sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statement I and II together are not sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Statement I only gives a relative age (Rohan = Amit + 5). Statement II only gives Amit's age (Amit = 10). Neither is sufficient alone. By combining both, we get Rohan = 10 + 5 = 15 years old. Thus, both statements together are necessary and sufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_IV_MIXED_00001"
+    },
+    {
+      "stem": "Question: Is the integer number 'x' an even number?\nStatements:\nI. The number 'x' is a perfect multiple of 4.\nII. The number 'x' is a positive integer.",
+      "options": [
+        {
+          "option_text": "Only statement II alone is completely sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statement I and II together are sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only statement I alone is completely sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both statement I and II together are not sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Statement I says x is a multiple of 4. Since all multiples of 4 are even numbers by definition, statement I alone is completely sufficient to answer 'Yes'. Statement II only says x is positive, which could be odd or even, so it is insufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_IV_MIXED_00002"
+    },
+    {
+      "stem": "Question: Who is definitively the tallest among A, B, C, and D?\nStatements:\nI. A is definitely taller than B and C, but shorter than D.\nII. D is definitely taller than A.",
+      "options": [
+        {
+          "option_text": "Only statement II alone is completely sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statement I and II together are sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statement I and II together are not sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only statement I alone is completely sufficient",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Statement I gives the relationship: D > A > B, and D > A > C. This clearly establishes that D is taller than everyone else. Thus, I alone is sufficient. Statement II only tells us D > A, giving no information about B and C. Thus, II alone is not sufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_IV_MIXED_00003"
+    },
+    {
+      "stem": "Question: What is the exact specific two-digit number?\nStatements:\nI. The sum of the two digits of the number is exactly 8.\nII. The unit digit is exactly 3 times the tens digit.",
+      "options": [
+        {
+          "option_text": "Both statement I and II together are sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only statement I alone is completely sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only statement II alone is completely sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statement I and II together are not sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Let the tens digit be x and units digit be y. From I: x + y = 8. Many numbers fit (17, 26, 35, 44, etc.), so I alone is insufficient. From II: y = 3x. Many pairs fit (1 and 3, 2 and 6, 3 and 9), so II alone is insufficient. Combining them: x + 3x = 8 => 4x = 8 => x = 2. Then y = 6. The number is 26. Both are required.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_IV_MIXED_00004"
+    },
+    {
+      "stem": "Question: On which exact day of the week did Mohan arrive home?\nStatements:\nI. His sister correctly remembers he arrived after Tuesday but strictly before Friday.\nII. His mother correctly remembers he arrived after Wednesday but strictly before Saturday.",
+      "options": [
+        {
+          "option_text": "Only statement I alone is completely sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only statement II alone is completely sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statement I and II together are sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both statement I and II together are not sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Statement I narrows the day down to Wednesday or Thursday. Statement II narrows it down to Thursday or Friday. Neither is sufficient alone. By combining the two statements, the only overlapping common day is Thursday. Thus, both statements are required.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_IV_MIXED_00005"
+    },
+    {
+      "stem": "Question: How is person P biologically related to person Q?\nStatements:\nI. M is the biological brother of P and the son of T.\nII. Q is the biological daughter of T and the sister of M.",
+      "options": [
+        {
+          "option_text": "Both statement I and II together are sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statement I and II together are not sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only statement I alone is completely sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only statement II alone is completely sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "From statement I: M and P are siblings, and T is their parent. From statement II: Q and M are siblings, and T is their parent. Combining both, P, M, and Q are all siblings sharing the parent T. However, nowhere in the statements is the gender of P defined. P could be the brother of Q or the sister of Q. Because the exact relationship cannot be determined, both together are not sufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_IV_MIXED_00006"
+    },
+    {
+      "stem": "Question: What is the exact running speed of the train?\nStatements:\nI. The train completely crosses a 200m long stationary platform in exactly 20 seconds.\nII. The train completely crosses a stationary vertical pole in exactly 10 seconds.",
+      "options": [
+        {
+          "option_text": "Only statement I alone is completely sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only statement II alone is completely sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statement I and II together are not sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statement I and II together are sufficient",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Let the length of the train be L and its speed be v. From I: (L + 200) / v = 20 (Two variables, insufficient). From II: L / v = 10 (Two variables, insufficient). Combining both: From II, L = 10v. Substituting this into I gives: (10v + 200) / v = 20 => 10v + 200 = 20v => 10v = 200 => v = 20 m/s. Both statements together are required to find the speed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_IV_MIXED_00007"
+    }
+  ]
+}

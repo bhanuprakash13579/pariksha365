@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Calendar: day-of-week, odd days method",
+  "topic_code": "QNT_CALENDAR_BASICS_MIXED",
+  "questions": [
+    {
+      "stem": "If today is Monday, what day of the week will it be exactly 61 days from today?",
+      "options": [
+        {
+          "option_text": "Thursday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Saturday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Tuesday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wednesday",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Every week has 7 days, so the day of the week repeats every 7 days. Divide 61 by 7: 61 ÷ 7 = 8 weeks with a remainder of 5 odd days. Counting 5 days forward from Monday gives Saturday.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_CALENDAR_BASICS_MIXED_00001"
+    },
+    {
+      "stem": "If the 1st of January 2001 was a Monday, what day of the week was the 1st of January 2002?",
+      "options": [
+        {
+          "option_text": "Monday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sunday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tuesday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Friday",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The year 2001 is an ordinary year (not a leap year), which has 365 days. 365 divided by 7 leaves a remainder of 1 odd day. Therefore, the day of the week advances by exactly 1 day. Monday + 1 = Tuesday.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_CALENDAR_BASICS_MIXED_00002"
+    },
+    {
+      "stem": "How many total weekend days (Saturdays and Sundays combined) are there in a standard non-leap year that begins on a Friday?",
+      "options": [
+        {
+          "option_text": "105 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "103 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "106 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "104 days",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "A standard non-leap year has 365 days, which is exactly 52 weeks plus 1 extra day. This means there are 52 Saturdays and 52 Sundays. The 1 extra day will be the same as the starting day, which is a Friday. So, the number of weekend days remains exactly 52 + 52 = 104.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_CALENDAR_BASICS_MIXED_00003"
+    },
+    {
+      "stem": "If the 3rd day of a particular month falls on a Tuesday, which of the following days will be the 6th day after the 21st of that same month?",
+      "options": [
+        {
+          "option_text": "Friday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Monday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sunday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thursday",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "The 6th day after the 21st is the 27th of the month. The difference between the 27th and the 3rd is 24 days. Dividing 24 by 7 gives a remainder of 3 odd days. Tuesday + 3 days = Friday.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_CALENDAR_BASICS_MIXED_00004"
+    },
+    {
+      "stem": "The calendar for the year 2007 will be identical to the calendar for which of the following years?",
+      "options": [
+        {
+          "option_text": "2017",
+          "is_correct": false
+        },
+        {
+          "option_text": "2016",
+          "is_correct": false
+        },
+        {
+          "option_text": "2018",
+          "is_correct": true
+        },
+        {
+          "option_text": "2014",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "To find the repeating year, check the remainder of the given year divided by 4. 2007 ÷ 4 leaves a remainder of 3. Years that are 3 years after a leap year generally repeat after 11 years. 2007 + 11 = 2018. Let's verify odd days from 2007 to 2017: 2007(1), 2008(2), 2009(1), 2010(1), 2011(1), 2012(2), 2013(1), 2014(1), 2015(1), 2016(2), 2017(1). Sum = 14 odd days, which is exactly 2 weeks. So 2018 will start on the same day as 2007.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_CALENDAR_BASICS_MIXED_00005"
+    },
+    {
+      "stem": "If the 10th of August, 2001 was a Friday, what was the day of the week on the 10th of August, 1991?",
+      "options": [
+        {
+          "option_text": "Thursday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Saturday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Tuesday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wednesday",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "We are moving backwards by 10 years (from 2001 to 1991). Between these dates, the leap years are 1992, 1996, and 2000 (total 3 leap years). Total odd days going backwards = 10 years + 3 leap year extras = 13 days. 13 ÷ 7 leaves a remainder of 6 odd days backward. Friday minus 6 days (or Friday plus 1 day) gives Saturday.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_CALENDAR_BASICS_MIXED_00006"
+    },
+    {
+      "stem": "What was the exact day of the week on the 28th of May, 2006?",
+      "options": [
+        {
+          "option_text": "Monday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Friday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wednesday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sunday",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "We calculate odd days from the year 0001 to May 28, 2006.\nYears up to 2000 = 0 odd days.\nYears 2001 to 2005 = 5 years = 1 leap year (2004) + 4 ordinary years = (1×2) + (4×1) = 6 odd days.\nFor 2006 (up to May 28):\nJan = 3, Feb (2006 is ordinary) = 0, Mar = 3, Apr = 2, May = 28.\nTotal odd days in 2006 = 3 + 0 + 3 + 2 + 28 = 36 days. 36 ÷ 7 leaves remainder 1.\nTotal odd days overall = 0 (for 2000) + 6 (for 2001-2005) + 1 (for 2006) = 7 odd days.\n7 ÷ 7 leaves remainder 0. 0 corresponds to Sunday.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:27+00:00",
+      "id": "sgk_QNT_CALENDAR_BASICS_MIXED_00007"
+    }
+  ]
+}

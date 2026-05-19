@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Dice & Cubes: 2nd batch",
+  "topic_code": "REAS_DICE_CUBES_II_MIXED",
+  "questions": [
+    {
+      "stem": "A standard six-sided dice is rolled on a table. By the universal rules of standard dice, what is always the exact mathematical sum of the numbers on any two opposite faces?",
+      "options": [
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": true
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "In a standard dice, the sum of the numbers on opposite faces is always exactly 7 (1 is opposite 6, 2 is opposite 5, and 3 is opposite 4).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DICE_CUBES_II_MIXED_00001"
+    },
+    {
+      "stem": "If a single dice is thrown twice and the numbers 1, 2, 3, and 4 are definitively shown to appear on faces directly adjacent to the face containing the number 5, which number is exactly opposite to 5?",
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "A dice has 6 faces. If 1, 2, 3, and 4 are all adjacent to 5, then the only face remaining that cannot be adjacent (and must therefore be opposite) is 6.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DICE_CUBES_II_MIXED_00002"
+    },
+    {
+      "stem": "Two distinct positions of a single dice are shown. In position 1, top is 3, front is 1, and right is 2. In position 2, top is 5, front is 1, and right is 6. Based on these views, what specific number is opposite to 1?",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "The number 1 is visible in both positions. From the two positions, we can see that the numbers 2, 3, 5, and 6 are all adjacent to 1. The only number left that is not adjacent to 1 is 4. Therefore, 4 is opposite to 1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DICE_CUBES_II_MIXED_00003"
+    },
+    {
+      "stem": "Two distinct positions of a single dice are shown. In position 1, top is 4, front is 6, and right is 5. In position 2, top is 1, front is 6, and right is 3. Which specific number is situated completely opposite to 6?",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "The number 6 is the common face in both views. The numbers appearing adjacent to 6 across both views are 4, 5, 1, and 3. The only number not adjacent to 6 is 2, meaning 2 must be strictly on the opposite face.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DICE_CUBES_II_MIXED_00004"
+    },
+    {
+      "stem": "A larger solid cube is painted completely red on all outer faces and then mathematically cut into 27 smaller equal cubes. Exactly how many of these smaller cubes will have exactly three of their faces painted red?",
+      "options": [
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "No matter the size of the larger cube (as long as it's cut into a 3x3x3 grid or larger), the only smaller cubes that have exactly three faces painted are the ones forming the extreme corners of the larger cube. Every cube has exactly 8 corners, so the answer is always 8.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DICE_CUBES_II_MIXED_00005"
+    },
+    {
+      "stem": "A larger solid cube is painted entirely blue on all outer faces and then cleanly cut into 64 smaller equal cubes. Exactly how many of these smaller cubes will have absolutely no faces painted blue?",
+      "options": [
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "A larger cube cut into 64 pieces means it is a 4x4x4 grid (since 4³ = 64). The unpainted cubes are those completely inside the structure, forming a smaller inner core. The formula for unpainted cubes is (n-2)³, where n is the grid size. Here, (4-2)³ = 2³ = 8 cubes.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DICE_CUBES_II_MIXED_00006"
+    },
+    {
+      "stem": "A larger cube measuring 5x5x5 is painted entirely green on all outer faces and then sliced down into 125 smaller cubes of 1x1x1. Exactly how many of these smaller cubes will have strictly and exactly one single face painted green?",
+      "options": [
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "option_text": "54",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "The smaller cubes with exactly one face painted are located strictly in the center flat portions of each of the 6 main faces of the larger cube. The formula is 6 × (n-2)², where n is the grid size (5). So, 6 × (5-2)² = 6 × 3² = 6 × 9 = 54 cubes.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DICE_CUBES_II_MIXED_00007"
+    }
+  ]
+}

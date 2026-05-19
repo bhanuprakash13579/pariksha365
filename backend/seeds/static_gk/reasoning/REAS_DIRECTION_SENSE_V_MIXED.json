@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Direction Sense: 5th batch",
+  "topic_code": "REAS_DIRECTION_SENSE_V_MIXED",
+  "questions": [
+    {
+      "stem": "A man walks 5 km towards the North, then turns to his right and walks 3 km. He turns to his right again and walks exactly 5 km. In which direction is he now with respect to his original starting point?",
+      "options": [
+        {
+          "option_text": "West",
+          "is_correct": false
+        },
+        {
+          "option_text": "East",
+          "is_correct": true
+        },
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The man starts and goes North 5 km. Turning right (East) he goes 3 km. Turning right again (South) he goes 5 km. His final position is exactly 3 km East of his starting point.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_V_MIXED_00001"
+    },
+    {
+      "stem": "Ramesh is facing North. He turns 135 degrees in the clockwise direction and then turns 45 degrees in the anticlockwise direction. Which direction is he facing now?",
+      "options": [
+        {
+          "option_text": "West",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "East",
+          "is_correct": true
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Net rotation = 135° (clockwise) - 45° (anticlockwise) = 90° clockwise. Since he was facing North, a 90° clockwise turn means he is now facing East.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_V_MIXED_00002"
+    },
+    {
+      "stem": "Point P is exactly 5 meters to the West of Point Q. Point R is exactly 12 meters to the South of Point P. What is the shortest straight-line distance between Point Q and Point R?",
+      "options": [
+        {
+          "option_text": "17 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "13 meters",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Points P, Q, and R form a right-angled triangle where PQ is the base (5m) and PR is the perpendicular (12m). The shortest distance QR is the hypotenuse. QR = √(5² + 12²) = √(25 + 144) = √169 = 13 meters.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_V_MIXED_00003"
+    },
+    {
+      "stem": "A person starts from Point A, walks 10m South, turns left and walks 15m. He turns right and walks 5m, then turns right again and walks 15m to reach Point B. How far and in which direction is Point B from Point A?",
+      "options": [
+        {
+          "option_text": "15m South",
+          "is_correct": true
+        },
+        {
+          "option_text": "15m North",
+          "is_correct": false
+        },
+        {
+          "option_text": "10m South",
+          "is_correct": false
+        },
+        {
+          "option_text": "25m South",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Path: South 10m. Left turn = East for 15m. Right turn = South for 5m. Right turn = West for 15m. His East 15m and West 15m cancel out. Total vertical displacement = 10m (South) + 5m (South) = 15m South.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_V_MIXED_00004"
+    },
+    {
+      "stem": "An analogue clock reads exactly 4:30. If the minute hand is pointing towards the East, in which direction does the hour hand point?",
+      "options": [
+        {
+          "option_text": "South-West",
+          "is_correct": false
+        },
+        {
+          "option_text": "North-West",
+          "is_correct": false
+        },
+        {
+          "option_text": "North-East",
+          "is_correct": true
+        },
+        {
+          "option_text": "South-East",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "At 4:30, the minute hand is at 6 (normally South), and the hour hand is exactly halfway between 4 and 5 (normally South-East). If the minute hand (South) is given as East, it means the whole coordinate system is rotated 90° counter-clockwise. Rotating South-East by 90° counter-clockwise gives North-East.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_V_MIXED_00005"
+    },
+    {
+      "stem": "One morning soon after sunrise, Vimal started walking. During this walk he met Stephen, who was coming from the opposite direction. Vimal observed that the shadow of Stephen fell exactly to Vimal's right. Which direction was Vimal facing?",
+      "options": [
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": true
+        },
+        {
+          "option_text": "East_",
+          "is_correct": false
+        },
+        {
+          "option_text": "West_",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "In the morning, the sun rises in the East, so all shadows fall strictly towards the West. Stephen's shadow falls to Vimal's right. This means Vimal's right side points West. If a person's right hand points West, they must be facing South.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_V_MIXED_00006"
+    },
+    {
+      "stem": "Point A is 6 meters West of Point B. Point C is 8 meters North of Point B. Point D is 12 meters West of Point C. Point E is 16 meters South of Point D. What is the shortest straight-line distance between Point A and Point E?",
+      "options": [
+        {
+          "option_text": "12 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "14 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 meters",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Let's use a coordinate system. Let B = (6, 0). Then A is 6m West of B => A = (0, 0). C is 8m North of B => C = (6, 8). D is 12m West of C => D = (-6, 8). E is 16m South of D => E = (-6, 8 - 16) = (-6, -8). The shortest distance from A(0,0) to E(-6,-8) is √((-6 - 0)² + (-8 - 0)²) = √(36 + 64) = √100 = 10 meters.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_V_MIXED_00007"
+    }
+  ]
+}

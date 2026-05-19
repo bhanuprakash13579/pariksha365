@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Analogy — Word, Number and Letter Pairs",
+  "topic_code": "REAS_ANALOGY_II_MIXED",
+  "questions": [
+    {
+      "stem": "CAT : FDW :: DOG : ____  (each letter shifted +3)",
+      "options": [
+        {
+          "option_text": "GQJ",
+          "is_correct": false
+        },
+        {
+          "option_text": "GRJ",
+          "is_correct": true
+        },
+        {
+          "option_text": "GRK",
+          "is_correct": false
+        },
+        {
+          "option_text": "HRJ",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Pattern: C+3=F, A+3=D, T+3=W → FDW. Apply to DOG: D+3=G, O+3=R, G+3=J → GRJ.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:38+00:00",
+      "id": "sgk_REAS_ANALOGY_II_MIXED_00001"
+    },
+    {
+      "stem": "16 : 4 :: 81 : ____  (square root of the first number gives the second)",
+      "options": [
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "√16 = 4. Same relationship: √81 = 9. Trap: 3 = √9 (not √81); 27 = cube root of 27 (not 81).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:38+00:00",
+      "id": "sgk_REAS_ANALOGY_II_MIXED_00002"
+    },
+    {
+      "stem": "BOOK : CHAPTER :: HOUSE : ____",
+      "options": [
+        {
+          "option_text": "Floor — a floor is the physical base layer of the house structure",
+          "is_correct": false
+        },
+        {
+          "option_text": "Garden — gardens are exterior features surrounding the main structure",
+          "is_correct": false
+        },
+        {
+          "option_text": "Street — a street contains houses as a library contains books",
+          "is_correct": false
+        },
+        {
+          "option_text": "Room — a house is divided into rooms like a book into chapters",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "BOOK → CHAPTER (a book is made up of chapters as its primary sub-units). HOUSE → ROOM (a house is made up of rooms as its primary sub-units). The relationship is whole → main constituent part.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:38+00:00",
+      "id": "sgk_REAS_ANALOGY_II_MIXED_00003"
+    },
+    {
+      "stem": "ACEG : CEGI :: MOQS : ____  (each letter in the word shifted +2)",
+      "options": [
+        {
+          "option_text": "OQSU",
+          "is_correct": true
+        },
+        {
+          "option_text": "NQRT",
+          "is_correct": false
+        },
+        {
+          "option_text": "OQTU",
+          "is_correct": false
+        },
+        {
+          "option_text": "PQSU",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Verify: A+2=C, C+2=E, E+2=G, G+2=I → CEGI ✓. Apply to MOQS: M+2=O, O+2=Q, Q+2=S, S+2=U → OQSU.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:38+00:00",
+      "id": "sgk_REAS_ANALOGY_II_MIXED_00004"
+    },
+    {
+      "stem": "3 : 12 :: 7 : ____  (relationship: n → n × (n+1))",
+      "options": [
+        {
+          "option_text": "42",
+          "is_correct": false
+        },
+        {
+          "option_text": "49",
+          "is_correct": false
+        },
+        {
+          "option_text": "56",
+          "is_correct": true
+        },
+        {
+          "option_text": "14",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "3 × (3+1) = 3 × 4 = 12. Apply same: 7 × (7+1) = 7 × 8 = 56. Trap: 49 = 7², not 7×8; 42 = 6×7 (wrong factor); 14 = 2×7 (not n×(n+1)).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:38+00:00",
+      "id": "sgk_REAS_ANALOGY_II_MIXED_00005"
+    },
+    {
+      "stem": "KILOMETRE : DISTANCE :: KILOGRAM : ____",
+      "options": [
+        {
+          "option_text": "Weight — kilogram measures weight not mass in SI",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mass — kilogram is the SI unit for measuring mass",
+          "is_correct": true
+        },
+        {
+          "option_text": "Volume — kilogram measures the volume of a substance",
+          "is_correct": false
+        },
+        {
+          "option_text": "Density — kilogram per cubic metre is the density unit",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "KILOMETRE measures DISTANCE (length). KILOGRAM measures MASS. The relationship is unit → physical quantity it measures. Trap: kilogram is often confused with weight, but weight is a force (measured in Newtons); kilogram is strictly a unit of MASS in SI. The exam usually tests this distinction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:38+00:00",
+      "id": "sgk_REAS_ANALOGY_II_MIXED_00006"
+    },
+    {
+      "stem": "ABDC : CDFE :: EFHG : ____  (each letter in the word shifted +2 to get the next pair)",
+      "options": [
+        {
+          "option_text": "GHIJ",
+          "is_correct": false
+        },
+        {
+          "option_text": "GHJK",
+          "is_correct": false
+        },
+        {
+          "option_text": "FHJI",
+          "is_correct": false
+        },
+        {
+          "option_text": "GHJI",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Pattern: each letter +2. A+2=C, B+2=D, D+2=F, C+2=E → CDFE ✓. Apply to EFHG: E+2=G, F+2=H, H+2=J, G+2=I → GHJI. Note: option B (GHIJ) looks sequential but breaks the pattern at position 3 (J vs J, fine) and position 4 (I vs J — GHIJ has J at pos 4, GHJI has I at pos 4). The correct answer is GHJI.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:38+00:00",
+      "id": "sgk_REAS_ANALOGY_II_MIXED_00007"
+    }
+  ]
+}

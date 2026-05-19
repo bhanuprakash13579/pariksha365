@@ -1,63 +1,59 @@
 {
-  "scanned_at": "2026-05-15T11:00:26+00:00",
-  "total_questions": 9594,
-  "total_topics": 1297,
+  "scanned_at": "2026-05-19T08:48:52+00:00",
+  "total_questions": 9225,
+  "total_topics": 1245,
   "by_subject": {
     "Quantitative Aptitude": {
-      "codes": 161,
-      "questions": 1155
+      "codes": 145,
+      "questions": 1043
     },
     "History": {
-      "codes": 126,
-      "questions": 941
+      "codes": 124,
+      "questions": 927
     },
     "Polity": {
-      "codes": 114,
-      "questions": 885
-    },
-    "Reasoning": {
-      "codes": 124,
+      "codes": 110,
       "questions": 857
     },
+    "Reasoning": {
+      "codes": 118,
+      "questions": 815
+    },
     "English": {
-      "codes": 116,
-      "questions": 826
+      "codes": 106,
+      "questions": 756
     },
     "General Knowledge": {
-      "codes": 95,
-      "questions": 768
+      "codes": 93,
+      "questions": 749
     },
     "Biology": {
-      "codes": 101,
-      "questions": 760
+      "codes": 99,
+      "questions": 746
     },
     "Vocabulary": {
-      "codes": 97,
-      "questions": 729
-    },
-    "Chemistry": {
-      "codes": 90,
-      "questions": 647
-    },
-    "Geography": {
-      "codes": 88,
-      "questions": 646
+      "codes": 95,
+      "questions": 715
     },
     "Physics": {
       "codes": 87,
       "questions": 646
     },
+    "Geography": {
+      "codes": 86,
+      "questions": 632
+    },
+    "Chemistry": {
+      "codes": 87,
+      "questions": 626
+    },
     "Economics": {
-      "codes": 59,
-      "questions": 448
+      "codes": 57,
+      "questions": 434
     },
     "Environment": {
       "codes": 38,
       "questions": 279
-    },
-    "Computer Science": {
-      "codes": 1,
-      "questions": 7
     }
   },
   "topics": [
@@ -409,14 +405,14 @@
       "topic": "Digestive Enzymes and Functions",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/biology/BIO_DIGESTIVE_ENZYMES_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 4,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -428,12 +424,12 @@
       "topic": "Human Digestive System",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/biology/BIO_DIGESTIVE_SYSTEM_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -534,25 +530,6 @@
       "diff_easy": 1,
       "diff_medium": 2,
       "diff_hard": 4,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "BIO_ECOLOGICAL_PYRAMIDS_MIXED",
-      "subject": "Biology",
-      "topic": "Ecological Pyramids — energy flow, biomass, population structure",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/biology/BIO_ECOLOGICAL_PYRAMIDS_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 4,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 3,
       "diff_unknown": 0
     },
     {
@@ -732,14 +709,14 @@
       "topic": "Excretion and Kidney Functions",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/biology/BIO_EXCRETION_KIDNEY_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -922,12 +899,12 @@
       "topic": "Human Blood and Circulation",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/biology/BIO_HUMAN_BLOOD_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -998,14 +975,14 @@
       "topic": "Human Diseases and Immunology",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/biology/BIO_HUMAN_DISEASES_V_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -1036,14 +1013,14 @@
       "topic": "The Human Eye and its Defects",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/biology/BIO_HUMAN_EYE_DEFECTS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 2,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -1055,14 +1032,14 @@
       "topic": "Human Heart: Cardiac Cycle & ECG",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/biology/BIO_HUMAN_HEART_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 2,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -1620,25 +1597,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "BIO_PLANT_PHYSIOLOGY_VII_MIXED",
-      "subject": "Biology",
-      "topic": "Plant Physiology — photosynthesis, transpiration, respiration",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/biology/BIO_PLANT_PHYSIOLOGY_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 4,
-      "diff_easy": 4,
-      "diff_medium": 2,
-      "diff_hard": 1,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "BIO_PLANT_REPRODUCTION_II_MIXED",
       "subject": "Biology",
       "topic": "Plant Reproduction II",
@@ -1853,14 +1811,14 @@
       "topic": "Human Skeletal System",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/biology/BIO_SKELETAL_SYSTEM_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 2,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -1986,12 +1944,12 @@
       "topic": "Acids, Bases, and Salts",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/chemistry/CHEM_ACIDS_BASES_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -2057,36 +2015,17 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "CHEM_ACIDS_BASES_VII_MIXED",
-      "subject": "Chemistry",
-      "topic": "Acids & Bases — pH, neutralization, buffer solutions, titration",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/chemistry/CHEM_ACIDS_BASES_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 2,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "CHEM_ACIDS_BASES_VI_MIXED",
       "subject": "Chemistry",
       "topic": "Acids, Bases and Salts",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/chemistry/CHEM_ACIDS_BASES_VI_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -2228,25 +2167,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "CHEM_BONDING_ADVANCED_MIXED",
-      "subject": "Chemistry",
-      "topic": "Chemical Bonding — covalent, ionic, metallic bonds; Lewis structures",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/chemistry/CHEM_BONDING_ADVANCED_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 3,
-      "diff_easy": 3,
-      "diff_medium": 2,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "CHEM_CATALYSIS_MIXED",
       "subject": "Chemistry",
       "topic": "Catalysis",
@@ -2290,12 +2210,12 @@
       "topic": "Chemical Bonds",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/chemistry/CHEM_CHEMICAL_BONDS_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -2385,14 +2305,14 @@
       "topic": "Environmental Chemistry: Pollution & Smog",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/chemistry/CHEM_ENVIRONMENTAL_CHEMISTRY_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -2651,14 +2571,14 @@
       "topic": "Metals and Non-Metals",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/chemistry/CHEM_METALS_NONMETALS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 2,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -2879,12 +2799,12 @@
       "topic": "Periodic Table of Elements",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/chemistry/CHEM_PERIODIC_TABLE_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -2909,25 +2829,6 @@
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "CHEM_PERIODIC_TABLE_VII_MIXED",
-      "subject": "Chemistry",
-      "topic": "Periodic Table — groups, periods, elements classification",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/chemistry/CHEM_PERIODIC_TABLE_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 3,
-      "diff_easy": 4,
-      "diff_medium": 2,
-      "diff_hard": 1,
       "diff_unknown": 0
     },
     {
@@ -3183,14 +3084,14 @@
       "topic": "States of Matter: Gas Laws",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/chemistry/CHEM_STATES_OF_MATTER_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 3,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -3202,14 +3103,14 @@
       "topic": "States of Matter",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/chemistry/CHEM_STATES_OF_MATTER_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -3221,14 +3122,14 @@
       "topic": "Surface Chemistry",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/chemistry/CHEM_SURFACE_CHEMISTRY_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -3691,63 +3592,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "CS_DATA_STRUCTURES_VII_MIXED",
-      "subject": "Computer Science",
-      "topic": "Data Structures — arrays, linked lists, stacks, queues",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/cs/CS_DATA_STRUCTURES_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 2,
-      "diff_easy": 3,
-      "diff_medium": 3,
-      "diff_hard": 1,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "ECON_MACROECONOMICS_VII_MIXED",
-      "subject": "Economics",
-      "topic": "Macroeconomics — inflation, unemployment, fiscal policy",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/economics/ECON_MACROECONOMICS_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 6,
-      "diff_easy": 3,
-      "diff_medium": 3,
-      "diff_hard": 1,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "ECON_MICROECONOMICS_VII_MIXED",
-      "subject": "Economics",
-      "topic": "Microeconomics — demand, supply, price elasticity, market equilibrium",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/economics/ECON_MICROECONOMICS_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 5,
-      "diff_easy": 2,
-      "diff_medium": 4,
-      "diff_hard": 1,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "ECO_AGRICULTURE_MIXED",
       "subject": "Economics",
       "topic": "Agriculture & rural economy — mixed tiers",
@@ -3925,12 +3769,12 @@
       "topic": "Demand & Supply Basics",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/economics/ECO_DEMAND_SUPPLY_BASICS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -3963,12 +3807,12 @@
       "topic": "Price Elasticity of Demand",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/economics/ECO_ELASTICITY_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -4096,14 +3940,14 @@
       "topic": "Index Numbers: CPI, WPI, IIP",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/economics/ECO_INDEX_NUMBERS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -4267,12 +4111,12 @@
       "topic": "Inflation and Macroeconomics",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/economics/ECO_INFLATION_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -4343,14 +4187,14 @@
       "topic": "Banking & Monetary Policy",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/economics/ECO_MONETARY_POLICY_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -4438,14 +4282,14 @@
       "topic": "National Income & GDP",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/economics/ECO_NATIONAL_INCOME_III_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -4495,12 +4339,12 @@
       "topic": "National Income and GDP",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/economics/ECO_NATIONAL_INCOME_VI_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -4742,12 +4586,12 @@
       "topic": "Taxation System in India",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/economics/ECO_TAXATION_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -4894,33 +4738,14 @@
       "topic": "Antonyms: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_ANTONYMS_IV_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "ENG_ANTONYMS_V_MIXED",
-      "subject": "English",
-      "topic": "Antonyms: 5th batch",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/english/ENG_ANTONYMS_V_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 3,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -4932,14 +4757,14 @@
       "topic": "Antonyms: 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_ANTONYMS_XX_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 2,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -5008,14 +4833,14 @@
       "topic": "Articles: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_ARTICLES_IV_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 6,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -5065,12 +4890,12 @@
       "topic": "Cloze Test — contextual vocabulary, grammar, idiomatic expressions",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_CLOZE_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -5141,13 +4966,13 @@
       "topic": "Cloze Test: 6th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_CLOZE_VI_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -5160,13 +4985,13 @@
       "topic": "Cloze Test: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_CLOZE_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -5350,14 +5175,14 @@
       "topic": "Error Spotting: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_ERROR_SPOTTING_IV_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 5,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -5383,38 +5208,19 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "ENG_ERROR_SPOTTING_VII_MIXED",
-      "subject": "English",
-      "topic": "Error Spotting — grammatical errors, subject-verb agreement, verb tenses",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/english/ENG_ERROR_SPOTTING_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 7,
-      "diff_easy": 1,
-      "diff_medium": 4,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "ENG_ERROR_SPOTTING_V_MIXED",
       "subject": "English",
       "topic": "Error Spotting: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_ERROR_SPOTTING_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 4,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -5445,13 +5251,13 @@
       "topic": "Fill in the Blanks: 3rd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_FILL_BLANKS_III_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -5464,13 +5270,13 @@
       "topic": "Fill in the Blanks: 2nd batch, contextual vocab",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_FILL_BLANKS_II_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -5559,12 +5365,12 @@
       "topic": "Idioms and Phrases",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_IDIOMS_PHRASES_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -5578,32 +5384,13 @@
       "topic": "Idioms & Phrases: 6th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_IDIOMS_PHRASES_VI_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 0,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "ENG_IDIOMS_PHRASES_V_MIXED",
-      "subject": "English",
-      "topic": "Idioms & Phrases: 5th batch",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/english/ENG_IDIOMS_PHRASES_V_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -5616,14 +5403,14 @@
       "topic": "Idioms & Phrases: 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_IDIOMS_PHRASES_XX_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 4,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -5673,13 +5460,13 @@
       "topic": "Direct & Indirect Speech",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_NARRATION_DIRECT_INDIRECT_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -5787,14 +5574,14 @@
       "topic": "One Word Substitution: 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_ONE_WORD_SUBSTITUTION_XX_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 2,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -5806,13 +5593,13 @@
       "topic": "One-Word Substitution: 3rd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_ONE_WORD_SUBS_III_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -5844,13 +5631,13 @@
       "topic": "One Word Substitution: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_ONE_WORD_SUBS_IV_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -5863,13 +5650,13 @@
       "topic": "Para Jumbles: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_PARAJUMBLES_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -5958,13 +5745,13 @@
       "topic": "Para Jumble: 4th batch, 5-sentence paragraphs",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_PARA_JUMBLE_IV_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -6072,13 +5859,13 @@
       "topic": "Phrasal Verbs: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_PHRASAL_VERBS_IV_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -6186,36 +5973,17 @@
       "topic": "Prepositions: 8th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_PREPOSITIONS_VIII_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 2,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "ENG_PREPOSITIONS_VII_MIXED",
-      "subject": "English",
-      "topic": "Prepositions — position, direction, time relationships",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/english/ENG_PREPOSITIONS_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 1,
-      "diff_easy": 4,
-      "diff_medium": 3,
-      "diff_hard": 0,
       "diff_unknown": 0
     },
     {
@@ -6352,44 +6120,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "ENG_READING_COMPREHENSION_VIII_MIXED",
-      "subject": "English",
-      "topic": "Reading Comprehension: 8th batch",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/english/ENG_READING_COMPREHENSION_VIII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 0,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "ENG_READING_COMPREHENSION_VII_MIXED",
-      "subject": "English",
-      "topic": "Reading Comprehension — passage analysis, inference, main idea identification",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/english/ENG_READING_COMPREHENSION_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 7,
-      "diff_easy": 1,
-      "diff_medium": 5,
-      "diff_hard": 1,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "ENG_REPORTED_SPEECH_III_MIXED",
       "subject": "English",
       "topic": "Reported Speech III",
@@ -6452,14 +6182,14 @@
       "topic": "Sentence Improvement: 2nd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_SENTENCE_IMPROVEMENT_II_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 1,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -6500,44 +6230,6 @@
       "parity_fails": 6,
       "diff_easy": 0,
       "diff_medium": 5,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "ENG_SPELLING_III_MIXED",
-      "subject": "English",
-      "topic": "Spelling: 3rd batch",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/english/ENG_SPELLING_III_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 0,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "ENG_SPELLING_II_MIXED",
-      "subject": "English",
-      "topic": "Spelling Correction: 2nd batch",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/english/ENG_SPELLING_II_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 0,
-      "diff_easy": 2,
-      "diff_medium": 3,
       "diff_hard": 2,
       "diff_unknown": 0
     },
@@ -6599,25 +6291,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "ENG_SYNONYMS_ANTONYMS_VII_MIXED",
-      "subject": "English",
-      "topic": "Synonyms & Antonyms — vocabulary, meaning relationships",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/english/ENG_SYNONYMS_ANTONYMS_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 3,
-      "diff_easy": 1,
-      "diff_medium": 4,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "ENG_SYNONYMS_HIGH_HIT_MIXED",
       "subject": "English",
       "topic": "High-hit synonyms — mixed tiers",
@@ -6642,13 +6315,13 @@
       "topic": "Synonyms: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_SYNONYMS_IV_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -6661,14 +6334,14 @@
       "topic": "Synonyms: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_SYNONYMS_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 3,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -6680,14 +6353,14 @@
       "topic": "Synonyms: 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_SYNONYMS_XX_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 6,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -6813,14 +6486,14 @@
       "topic": "Tenses: 8th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_TENSES_VIII_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 4,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -6832,14 +6505,14 @@
       "topic": "Tenses — past, present, future forms and usage",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_TENSES_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 5,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -6851,14 +6524,14 @@
       "topic": "Tenses: 5th batch, mixed perfect tenses",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_TENSES_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 7,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -6922,25 +6595,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "ENG_VOICE_II_MIXED",
-      "subject": "English",
-      "topic": "Active/Passive Voice: 2nd batch",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/english/ENG_VOICE_II_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 0,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 3,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "ENG_VOICE_IV_MIXED",
       "subject": "English",
       "topic": "Voice (active/passive) IV — mixed tiers",
@@ -6984,13 +6638,13 @@
       "topic": "Active Passive Voice: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_VOICE_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -7060,13 +6714,13 @@
       "topic": "Biodiversity & Conservation Hotspots",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/environment/ENV_BIODIVERSITY_HOTSPOTS_II_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -7136,13 +6790,13 @@
       "topic": "The Carbon Cycle",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/environment/ENV_CARBON_CYCLE_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -7288,14 +6942,14 @@
       "topic": "Ecosystems — biotic, abiotic factors, food chains, succession",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/environment/ENV_ECOSYSTEMS_VII_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 6,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 4,
       "diff_hard": 1,
@@ -7497,13 +7151,13 @@
       "topic": "The Nitrogen Cycle",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/environment/ENV_NITROGEN_CYCLE_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -7758,25 +7412,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "GA_CURRENT_AFFAIRS",
-      "subject": "General Knowledge",
-      "topic": "Current Affairs",
-      "questions": 12,
-      "schema_versions": [
-        "A"
-      ],
-      "paths": [
-        "seeds/static_gk/_current_affairs/2026_q1.json"
-      ],
-      "needs_transcode": false,
-      "needs_subject_canon": true,
-      "parity_fails": 4,
-      "diff_easy": 2,
-      "diff_medium": 8,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "GK_AIRPORTS_PORTS_MIXED",
       "subject": "General Knowledge",
       "topic": "Airports, ports & transport — mixed tiers",
@@ -7820,14 +7455,14 @@
       "topic": "Awards & Honors — major international and national awards",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/general_knowledge/GK_AWARDS_HONORS_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 5,
+      "parity_fails": 0,
       "diff_easy": 3,
       "diff_medium": 3,
       "diff_hard": 1,
@@ -8048,14 +7683,14 @@
       "topic": "Classical Dances of India",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/general_knowledge/GK_CLASSICAL_DANCES_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 3,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -8428,14 +8063,14 @@
       "topic": "Folk Dances of North-East States",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/general_knowledge/GK_FOLK_DANCES_NE_STATES_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 3,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -8732,14 +8367,14 @@
       "topic": "International Organizations and Headquarters",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/general_knowledge/GK_INTERNATIONAL_ORG_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -9511,16 +9146,15 @@
       "topic": "UNESCO World Heritage Sites of India — mixed tiers",
       "questions": 14,
       "schema_versions": [
-        "A",
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/general-knowledge/GK_UNESCO_SITES_MIXED.json",
         "seeds/static_gk/general_knowledge/GK_UNESCO_SITES_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 6,
+      "parity_fails": 4,
       "diff_easy": 2,
       "diff_medium": 7,
       "diff_hard": 5,
@@ -9543,25 +9177,6 @@
       "diff_easy": 4,
       "diff_medium": 0,
       "diff_hard": 3,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "GK_WORLD_GEOGRAPHY_VII_MIXED",
-      "subject": "General Knowledge",
-      "topic": "World Geography — capitals, landmarks, continents, climate zones",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/gk/GK_WORLD_GEOGRAPHY_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 3,
-      "diff_easy": 6,
-      "diff_medium": 0,
-      "diff_hard": 1,
       "diff_unknown": 0
     },
     {
@@ -9589,14 +9204,14 @@
       "topic": "Agriculture: Major Food & Cash Crops",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/geography/GEO_AGRICULTURE_CROPS_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 2,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -9627,12 +9242,12 @@
       "topic": "Agriculture in India",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/geography/GEO_AGRICULTURE_INDIA_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -9646,12 +9261,12 @@
       "topic": "Layers of the Atmosphere",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/geography/GEO_ATMOSPHERE_LAYERS_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -9717,36 +9332,17 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "GEO_CLIMATE_ZONES_VII_MIXED",
-      "subject": "Geography",
-      "topic": "Climate Zones — tropical, temperate, polar, desert regions",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/geography/GEO_CLIMATE_ZONES_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 5,
-      "diff_easy": 1,
-      "diff_medium": 5,
-      "diff_hard": 1,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "GEO_CLIMATOLOGY_II_MIXED",
       "subject": "Geography",
       "topic": "Climatology and Weather Systems",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/geography/GEO_CLIMATOLOGY_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -9760,12 +9356,12 @@
       "topic": "Earthquakes and Volcanoes",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/geography/GEO_EARTHQUAKES_VOLCANOES_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -9798,14 +9394,14 @@
       "topic": "Himalayan Ranges: Passes, Glaciers, and Valleys",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/geography/GEO_HIMALAYAN_RANGES_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -10553,25 +10149,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "GEO_MONSOON_SYSTEMS_VII_MIXED",
-      "subject": "Geography",
-      "topic": "Indian Monsoon — patterns, mechanisms, impact on agriculture",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/geography/GEO_MONSOON_SYSTEMS_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 7,
-      "diff_easy": 2,
-      "diff_medium": 4,
-      "diff_hard": 1,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "GEO_NATIONAL_PARKS_INDIA_MIXED",
       "subject": "Geography",
       "topic": "Indian National Parks",
@@ -10634,12 +10211,12 @@
       "topic": "Ocean Currents",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/geography/GEO_OCEAN_CURRENTS_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -10691,12 +10268,12 @@
       "topic": "Oceanography and Tides",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/geography/GEO_OCEAN_TIDES_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -10786,14 +10363,14 @@
       "topic": "River Systems of India",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/geography/GEO_RIVERS_INDIA_V_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -10862,14 +10439,14 @@
       "topic": "Soils of India",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/geography/GEO_SOILS_INDIA_VI_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -10976,12 +10553,12 @@
       "topic": "The Western Ghats: Physiography & Ecology",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/geography/GEO_WESTERN_GHATS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -11432,14 +11009,14 @@
       "topic": "Babur's Military Campaigns in India",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_BABUR_CAMPAIGNS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -11660,12 +11237,12 @@
       "topic": "Buddhism and Jainism",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_BUDDHISM_JAINISM_VI_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -11755,14 +11332,14 @@
       "topic": "Colonial Press and Media",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_COLONIAL_PRESS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -11812,14 +11389,14 @@
       "topic": "The Delhi Sultanate",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_DELHI_SULTANATE_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -11945,12 +11522,12 @@
       "topic": "The Gandhian Era",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_GANDHIAN_ERA_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -12040,12 +11617,12 @@
       "topic": "The Gupta Empire",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_GUPTA_EMPIRE_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -12092,25 +11669,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "HIS_GUPTA_II_MIXED",
-      "subject": "History",
-      "topic": "Gupta Empire — administration, culture, decline, and legacy",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/history/HIS_GUPTA_II_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 3,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 3,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "HIS_HARAPPA_II_MIXED",
       "subject": "History",
       "topic": "Harappan civilisation II — mixed tiers",
@@ -12154,14 +11712,14 @@
       "topic": "Haryanka and Nanda Dynasties",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_HARYANKA_NANDA_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 3,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -12230,14 +11788,14 @@
       "topic": "Independence Movement — key leaders, events, civil disobedience",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_INDEPENDENCE_MOVEMENT_VII_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 3,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 3,
       "diff_medium": 3,
       "diff_hard": 1,
@@ -12325,12 +11883,12 @@
       "topic": "Indus Valley Civilization",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_INDUS_VALLEY_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -12572,14 +12130,14 @@
       "topic": "The Mauryan Empire",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_MAURYAN_EMPIRE_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -12781,12 +12339,12 @@
       "topic": "The Mughal Empire",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_MUGHAL_EMPIRE_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -12811,25 +12369,6 @@
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "HIS_MUGHAL_EMPIRE_VII_MIXED",
-      "subject": "History",
-      "topic": "Mughal Empire — administration, culture, emperors, decline",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/history/HIS_MUGHAL_EMPIRE_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 5,
-      "diff_easy": 4,
-      "diff_medium": 3,
-      "diff_hard": 0,
       "diff_unknown": 0
     },
     {
@@ -13047,12 +12586,12 @@
       "topic": "Prehistoric India: Stone Age Cultures",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_PREHISTORIC_INDIA_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -13465,12 +13004,12 @@
       "topic": "The Vedic Age",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/history/HIS_VEDIC_AGE_V_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -13731,12 +13270,12 @@
       "topic": "Electricity & Circuits — series, parallel, resistance, Ohm's law",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/physics/PHY_ELECTRICITY_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -14054,12 +13593,12 @@
       "topic": "Gravitation and Satellites",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/physics/PHY_GRAVITATION_V_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -14282,12 +13821,12 @@
       "topic": "Light and Optics",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/physics/PHY_LIGHT_OPTICS_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -14567,12 +14106,12 @@
       "topic": "Motion — kinematics, acceleration, equations of motion",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/physics/PHY_MOTION_KINEMATICS_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -14624,14 +14163,14 @@
       "topic": "Newton's Laws of Motion: Constraints",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/physics/PHY_NEWTON_LAWS_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -14776,14 +14315,14 @@
       "topic": "Optics: Dispersion and Spectrum",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/physics/PHY_OPTICS_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -15023,12 +14562,12 @@
       "topic": "Sound: Waves, Resonance & Interference",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/physics/PHY_SOUND_III_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -15080,12 +14619,12 @@
       "topic": "Thermodynamics and Heat",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/physics/PHY_THERMODYNAMICS_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -15118,12 +14657,12 @@
       "topic": "Heat and Thermodynamics",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/physics/PHY_THERMODYNAMICS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -15550,25 +15089,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "POL_CONSTITUTIONAL_HISTORY_MIXED",
-      "subject": "Polity",
-      "topic": "Constitutional History: Regulating Act to 1935",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/polity/POL_CONSTITUTIONAL_HISTORY_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 0,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "POL_CONSTITUTIONAL_OFFICES_MIXED",
       "subject": "Polity",
       "topic": "Constitutional offices — mixed tiers",
@@ -15631,14 +15151,14 @@
       "topic": "Indian Constitution — Preamble, fundamental rights, amendments",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/polity/POL_CONSTITUTION_PREAMBLE_VII_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 4,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 4,
       "diff_hard": 1,
@@ -15650,14 +15170,14 @@
       "topic": "The Union Council of Ministers",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/polity/POL_COUNCIL_OF_MINISTERS_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 1,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -15669,13 +15189,13 @@
       "topic": "Directive Principles of State Policy",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/polity/POL_DIRECTIVE_PRINCIPLES_II_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -16044,25 +15564,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "POL_FR_EXPANDED_MIXED",
-      "subject": "Polity",
-      "topic": "Fundamental Rights — Article 19, 21, and protections of individuals",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/polity/POL_FR_EXPANDED_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 3,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 3,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "POL_FR_FREEDOMS",
       "subject": "Polity",
       "topic": "Fundamental Rights — Freedoms, Life & Liberty (Arts 19-22)",
@@ -16125,13 +15626,13 @@
       "topic": "Fundamental Duties",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/polity/POL_FUNDAMENTAL_DUTIES_IV_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -16163,14 +15664,14 @@
       "topic": "Fundamental Rights: Articles 12-35",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/polity/POL_FUNDAMENTAL_RIGHTS_III_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 2,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -16638,14 +16139,14 @@
       "topic": "Official Language Policy",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/polity/POL_OFFICIAL_LANGUAGE_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 2,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -16676,13 +16177,13 @@
       "topic": "Panchayati Raj System",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/polity/POL_PANCHAYATI_RAJ_II_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -16744,25 +16245,6 @@
       "diff_easy": 1,
       "diff_medium": 3,
       "diff_hard": 3,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "POL_PARLIAMENT_II_MIXED",
-      "subject": "Polity",
-      "topic": "The Parliament of India",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/polity/POL_PARLIAMENT_II_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 0,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
       "diff_unknown": 0
     },
     {
@@ -17108,25 +16590,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "POL_RIGHTS_DUTIES_VII_MIXED",
-      "subject": "Polity",
-      "topic": "Rights & Duties — fundamental rights, constitutional responsibilities",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/polity/POL_RIGHTS_DUTIES_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 3,
-      "diff_easy": 1,
-      "diff_medium": 5,
-      "diff_hard": 1,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "POL_RTI_ACT_MIXED",
       "subject": "Polity",
       "topic": "Right to Information Act, 2005 — mixed tiers",
@@ -17227,13 +16690,13 @@
       "topic": "The State Executive and Legislature",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/polity/POL_STATE_LEGISLATURE_VI_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -17246,13 +16709,13 @@
       "topic": "The Supreme Court of India",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/polity/POL_SUPREME_COURT_III_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -17303,13 +16766,13 @@
       "topic": "The Supreme Court and Judiciary",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/polity/POL_SUPREME_COURT_VII_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -17322,13 +16785,13 @@
       "topic": "The Union Executive",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/polity/POL_UNION_EXECUTIVE_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -17531,12 +16994,12 @@
       "topic": "Algebra: linear equations in 2 variables",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_ALGEBRA_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -17550,33 +17013,14 @@
       "topic": "Algebra: 8th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_ALGEBRA_VIII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "QNT_ALGEBRA_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Algebra — equations, identities, word problems",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_ALGEBRA_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 1,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -17702,14 +17146,14 @@
       "topic": "Averages — arithmetic mean, weighted average, deviation from average",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_AVERAGES_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 4,
       "diff_hard": 1,
@@ -17740,12 +17184,12 @@
       "topic": "Averages: 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_AVERAGES_XX_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -17759,12 +17203,12 @@
       "topic": "Average Age Problems: 1st batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_AVERAGE_AGE_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -17797,12 +17241,12 @@
       "topic": "Boats & Streams: complex current + distance combos",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_BOATS_STREAMS_ADVANCED_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -17854,12 +17298,12 @@
       "topic": "Boats & Streams: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_BOATS_STREAMS_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -17873,14 +17317,14 @@
       "topic": "Boats & Streams — upstream, downstream, still water velocity",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_BOATS_STREAMS_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 3,
       "diff_medium": 3,
       "diff_hard": 1,
@@ -17911,36 +17355,17 @@
       "topic": "Calendar: day-of-week, odd days method",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_CALENDAR_BASICS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "QNT_CALENDAR_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Calendar — odd days, leap years, day calculation",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_CALENDAR_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 1,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 3,
       "diff_unknown": 0
     },
     {
@@ -17949,12 +17374,12 @@
       "topic": "Clocks: angle between hands, meeting times",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_CLOCK_BASICS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -17963,36 +17388,17 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "QNT_CLOCK_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Clock — angle problems, time calculation, overlaps",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_CLOCK_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 3,
-      "diff_easy": 1,
-      "diff_medium": 3,
-      "diff_hard": 3,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "QNT_COMPOUND_INTEREST_III_MIXED",
       "subject": "Quantitative Aptitude",
       "topic": "Compound Interest: 3rd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_COMPOUND_INTEREST_III_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -18101,12 +17507,12 @@
       "topic": "Divisibility & Remainders — rules, modular arithmetic, word problems",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_DIVISIBILITY_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -18139,14 +17545,14 @@
       "topic": "Data Interpretation — tables, bar charts, pie charts analysis",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_DI_COMPREHENSIVE_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 2,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -18215,14 +17621,14 @@
       "topic": "Geometry — triangles, circles, coordinate geometry with visual problems",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_GEOMETRY_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 3,
       "diff_medium": 3,
       "diff_hard": 1,
@@ -18253,12 +17659,12 @@
       "topic": "Geometry: Triangles (Part 2)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_GEOMETRY_TRIANGLES_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -18310,14 +17716,14 @@
       "topic": "HCF & LCM — divisibility, multiples, word problems",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_HCF_LCM_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 4,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -18438,25 +17844,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "QNT_LOGARITHMS_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Logarithms — properties, calculations, applications",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_LOGARITHMS_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 2,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "QNT_MENSURATION_2D",
       "subject": "Quantitative Aptitude",
       "topic": "Mensuration — 2D (plane figures)",
@@ -18481,12 +17868,12 @@
       "topic": "Mensuration 2D: 1st batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_MENSURATION_2D_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -18500,35 +17887,16 @@
       "topic": "Mensuration 2D: 8th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_MENSURATION_2D_VIII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "QNT_MENSURATION_2D_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Mensuration 2D — area, perimeter, circles, triangles, quadrilaterals",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_MENSURATION_2D_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 0,
-      "diff_easy": 3,
-      "diff_medium": 2,
       "diff_hard": 2,
       "diff_unknown": 0
     },
@@ -18549,25 +17917,6 @@
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "QNT_MENSURATION_3D_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Mensuration 3D — volume, surface area, cubes, cylinders, spheres",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_MENSURATION_3D_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 1,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 3,
       "diff_unknown": 0
     },
     {
@@ -18652,12 +18001,12 @@
       "topic": "Mixtures & Alligation — mixture problems, concentration, replacement",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_MIXTURES_ALLIGATION_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -18690,12 +18039,12 @@
       "topic": "Mixtures & Alligation: 3rd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_MIXTURE_ALLIGATION_III_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -18723,25 +18072,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "QNT_MODULAR_ARITHMETIC_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Modular Arithmetic — congruence, applications, remainders",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_MODULAR_ARITHMETIC_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 0,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 3,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "QNT_NUMBER_SERIES_III_MIXED",
       "subject": "Quantitative Aptitude",
       "topic": "Number series III — mixed tiers",
@@ -18758,25 +18088,6 @@
       "diff_easy": 3,
       "diff_medium": 3,
       "diff_hard": 1,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "QNT_NUMBER_SERIES_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Number Series — pattern recognition, logic-based sequences",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_NUMBER_SERIES_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 0,
-      "diff_easy": 4,
-      "diff_medium": 3,
-      "diff_hard": 0,
       "diff_unknown": 0
     },
     {
@@ -18842,14 +18153,14 @@
       "topic": "Number System: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_NUMBER_SYSTEM_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -18880,12 +18191,12 @@
       "topic": "Number System: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_NUMBER_SYSTEM_V_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -18918,12 +18229,12 @@
       "topic": "Partnerships — profit sharing, capital ratios, time involvement",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_PARTNERSHIPS_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -19070,36 +18381,17 @@
       "topic": "Percentage: 7th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_PERCENTAGE_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "QNT_PERCENTAGE_VI_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Percentage — successive changes, population growth, price-quantity tradeoff",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_PERCENTAGE_VI_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 2,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 3,
       "diff_unknown": 0
     },
     {
@@ -19146,14 +18438,14 @@
       "topic": "Permutation & Combination — selections, arrangements, circular permutations",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_PERMUTATION_COMBINATION_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 6,
+      "parity_fails": 0,
       "diff_easy": 3,
       "diff_medium": 3,
       "diff_hard": 1,
@@ -19222,12 +18514,12 @@
       "topic": "Pipes and Cisterns",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_PIPES_CISTERNS_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -19241,12 +18533,12 @@
       "topic": "Pipes and Cisterns",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_PIPES_CISTERNS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -19260,12 +18552,12 @@
       "topic": "Pipes & Cisterns: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_PIPES_CISTERNS_V_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -19279,12 +18571,12 @@
       "topic": "Prime Numbers — properties, identification, word problems",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_PRIME_NUMBERS_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -19317,12 +18609,12 @@
       "topic": "Probability: Basics",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_PROBABILITY_BASICS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -19393,14 +18685,14 @@
       "topic": "Probability — basic probability, coins, dice, cards",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_PROBABILITY_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 3,
       "diff_medium": 3,
       "diff_hard": 1,
@@ -19431,12 +18723,12 @@
       "topic": "Profit & Loss: 1st batch, basics",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_PROFIT_LOSS_BASICS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -19526,36 +18818,17 @@
       "topic": "Profit & Loss: 8th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_PROFIT_LOSS_VIII_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 2,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "QNT_PROFIT_LOSS_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Profit & Loss — cost price, selling price, markup, discount scenarios",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_PROFIT_LOSS_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 3,
+      "diff_medium": 3,
+      "diff_hard": 2,
       "diff_unknown": 0
     },
     {
@@ -19602,14 +18875,14 @@
       "topic": "Profit & Loss: 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_PROFIT_LOSS_XX_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -19735,35 +19008,16 @@
       "topic": "Ratio & Proportion: 8th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_RATIO_PROPORTION_VIII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "QNT_RATIO_PROPORTION_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Ratio & Proportion — part-to-part, part-to-whole, distribution scenarios",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_RATIO_PROPORTION_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 2,
-      "diff_easy": 3,
-      "diff_medium": 2,
       "diff_hard": 2,
       "diff_unknown": 0
     },
@@ -19830,14 +19084,14 @@
       "topic": "Simple Interest: 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_SIMPLE_INTEREST_XX_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 3,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -19882,25 +19136,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "QNT_SIMPLIFICATION_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Simplification — BODMAS, fractions, decimals, surds",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_SIMPLIFICATION_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 2,
-      "diff_easy": 3,
-      "diff_medium": 2,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "QNT_SI_CI",
       "subject": "Quantitative Aptitude",
       "topic": "Simple and Compound Interest",
@@ -19925,12 +19160,12 @@
       "topic": "Simple and Compound Interest",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_SI_CI_ADVANCED_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -19963,14 +19198,14 @@
       "topic": "Simple & Compound Interest — principal, rate, time calculations",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_SI_CI_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -20015,25 +19250,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "QNT_SPEED_DISTANCE_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Speed, Distance & Time — relative speed, average speed, multiple entities",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_SPEED_DISTANCE_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 1,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 3,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "QNT_STATISTICS_BASICS_MIXED",
       "subject": "Quantitative Aptitude",
       "topic": "Statistics basics — mixed tiers",
@@ -20072,25 +19288,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "QNT_SURDS_INDICES_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Surds & Indices — simplification, rationalization, laws of indices",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_SURDS_INDICES_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 4,
-      "diff_easy": 3,
-      "diff_medium": 2,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "QNT_TIME_DISTANCE_II_MIXED",
       "subject": "Quantitative Aptitude",
       "topic": "Time, speed and distance II — mixed tiers",
@@ -20115,14 +19312,14 @@
       "topic": "Time & Distance — trains, relative speed, average speed",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_TIME_DISTANCE_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 3,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -20153,12 +19350,12 @@
       "topic": "Time, Speed & Distance: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_TIME_SPEED_DISTANCE_IV_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -20172,12 +19369,12 @@
       "topic": "Time Speed Distance: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_TIME_SPEED_DISTANCE_V_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -20210,12 +19407,12 @@
       "topic": "Time & Work: Advanced",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_TIME_WORK_ADVANCED_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -20300,36 +19497,17 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "QNT_TIME_WORK_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Time & Work — work completion, combined efforts, efficiency ratios",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_TIME_WORK_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 3,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 3,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "QNT_TIME_WORK_V_MIXED",
       "subject": "Quantitative Aptitude",
       "topic": "Time & Work: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_TIME_WORK_V_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -20343,14 +19521,14 @@
       "topic": "Time & Work: 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_TIME_WORK_XX_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -20362,12 +19540,12 @@
       "topic": "Trains: 3rd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_TRAINS_III_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -20452,25 +19630,6 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "QNT_TRIGONOMETRY_VII_MIXED",
-      "subject": "Quantitative Aptitude",
-      "topic": "Trigonometry — ratios, identities, heights & distances",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/quant/QNT_TRIGONOMETRY_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 3,
-      "diff_easy": 3,
-      "diff_medium": 2,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "QNT_TSD",
       "subject": "Quantitative Aptitude",
       "topic": "Time, Speed and Distance",
@@ -20495,12 +19654,12 @@
       "topic": "Upstream/downstream: time and speed variants",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/quant/QNT_UPSTREAM_DOWNSTREAM_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -20571,13 +19730,13 @@
       "topic": "Analogy: 3rd batch, mixed letter-number-word",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_ANALOGY_III_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -20590,12 +19749,12 @@
       "topic": "Analogy — Word, Number and Letter Pairs",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_ANALOGY_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -20620,25 +19779,6 @@
       "diff_easy": 4,
       "diff_medium": 1,
       "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "REAS_ANALOGY_VII_MIXED",
-      "subject": "Reasoning",
-      "topic": "Analogy — word relationships, semantic connections",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/reasoning/REAS_ANALOGY_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 2,
-      "diff_easy": 4,
-      "diff_medium": 3,
-      "diff_hard": 0,
       "diff_unknown": 0
     },
     {
@@ -20718,79 +19858,22 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "REAS_BLOOD_RELATIONS_IX_MIXED",
-      "subject": "Reasoning",
-      "topic": "Blood Relations: 9th batch, complex 4-level trees",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/reasoning/REAS_BLOOD_RELATIONS_IX_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 2,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "REAS_BLOOD_RELATIONS_VIII_MIXED",
       "subject": "Reasoning",
       "topic": "Blood Relations: 8th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_BLOOD_RELATIONS_VIII_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 2,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "REAS_BLOOD_RELATIONS_VII_MIXED",
-      "subject": "Reasoning",
-      "topic": "Blood Relations — family hierarchy, genealogy, relationship deduction",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/reasoning/REAS_BLOOD_RELATIONS_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 4,
-      "diff_easy": 3,
-      "diff_medium": 2,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "REAS_BLOOD_RELATIONS_VI_MIXED",
-      "subject": "Reasoning",
-      "topic": "Blood Relations — complex family structures, multiple generations",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/reasoning/REAS_BLOOD_RELATIONS_VI_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 4,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 3,
       "diff_unknown": 0
     },
     {
@@ -20818,14 +19901,14 @@
       "topic": "Blood Relations: 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_BLOOD_RELATIONS_XX_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 3,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -20951,13 +20034,13 @@
       "topic": "Classification: 3rd batch, number sets",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_CLASSIFICATION_III_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -21122,13 +20205,13 @@
       "topic": "Coding & Decoding: 9th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_CODING_DECODING_IX_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -21160,36 +20243,17 @@
       "topic": "Coding Decoding: 8th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_CODING_DECODING_VIII_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "REAS_CODING_DECODING_VII_MIXED",
-      "subject": "Reasoning",
-      "topic": "Coding-Decoding — letter shifts, substitution ciphers, pattern-based encoding",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/reasoning/REAS_CODING_DECODING_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 2,
-      "diff_easy": 3,
-      "diff_medium": 3,
-      "diff_hard": 1,
       "diff_unknown": 0
     },
     {
@@ -21198,13 +20262,13 @@
       "topic": "Coding/Decoding: 5th batch, position shift",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_CODING_DECODING_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -21312,13 +20376,13 @@
       "topic": "Data Sufficiency: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_DATA_SUFFICIENCY_IV_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -21350,14 +20414,14 @@
       "topic": "Data Sufficiency: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_DATA_SUFFICIENCY_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 1,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -21388,13 +20452,13 @@
       "topic": "Dice & Cubes: 2nd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_DICE_CUBES_II_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -21464,14 +20528,14 @@
       "topic": "Direction & Distance — compass directions, distance tracking, relative positions",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_DIRECTION_DISTANCE_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 2,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -21578,13 +20642,13 @@
       "topic": "Direction Sense: 7th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_DIRECTION_SENSE_VII_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -21597,13 +20661,13 @@
       "topic": "Direction & Distance: 6th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_DIRECTION_SENSE_VI_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -21616,13 +20680,13 @@
       "topic": "Direction Sense: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_DIRECTION_SENSE_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -21654,13 +20718,13 @@
       "topic": "Inequalities: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_INEQUALITIES_IV_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -21692,14 +20756,14 @@
       "topic": "Inequalities: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_INEQUALITIES_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 4,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -21863,14 +20927,14 @@
       "topic": "Logical Deduction — premises, conclusions, validity testing",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_LOGICAL_DEDUCTION_VII_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 4,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -21901,13 +20965,13 @@
       "topic": "Missing Term: 3rd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_MISSING_TERM_III_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -21920,13 +20984,13 @@
       "topic": "Missing Term: 2nd batch, number series",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_MISSING_TERM_II_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -21939,14 +21003,14 @@
       "topic": "Missing Term: 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_MISSING_TERM_XX_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 1,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -22072,13 +21136,13 @@
       "topic": "Number Series: 5th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_NUMBER_SERIES_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -22129,13 +21193,13 @@
       "topic": "Order & Ranking: 3rd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_ORDER_RANKING_III_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -22167,13 +21231,13 @@
       "topic": "Order & Ranking: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_ORDER_RANKING_IV_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -22186,13 +21250,13 @@
       "topic": "Order & Ranking: 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_ORDER_RANKING_XX_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -22300,13 +21364,13 @@
       "topic": "Floor Puzzles",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_PUZZLE_FLOOR_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -22330,25 +21394,6 @@
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "REAS_SEATING_ARRANGEMENT_VII_MIXED",
-      "subject": "Reasoning",
-      "topic": "Seating Arrangement — linear, circular arrangements, constraints",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/reasoning/REAS_SEATING_ARRANGEMENT_VII_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 1,
-      "diff_easy": 1,
-      "diff_medium": 2,
-      "diff_hard": 4,
       "diff_unknown": 0
     },
     {
@@ -22376,13 +21421,13 @@
       "topic": "Circular Seating: 4th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_SEATING_CIRCULAR_IV_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -22490,13 +21535,13 @@
       "topic": "Statement & Arguments: 2nd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_STATEMENT_ARGUMENTS_II_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -22528,13 +21573,13 @@
       "topic": "Statement & Assumption: Mixed",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_STATEMENT_ASSUMPTION_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -22642,14 +21687,14 @@
       "topic": "Syllogisms: 9th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_SYLLOGISM_IX_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 6,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -22680,13 +21725,13 @@
       "topic": "Syllogism: 6th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_SYLLOGISM_VI_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -22699,13 +21744,13 @@
       "topic": "Syllogism: 5th batch, possibility cases",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_SYLLOGISM_V_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -22718,14 +21763,14 @@
       "topic": "Syllogisms: 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_SYLLOGISM_XX_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
-      "parity_fails": 5,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -22832,13 +21877,13 @@
       "topic": "Venn Diagram: 3rd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_VENN_DIAGRAM_III_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": true,
+      "needs_transcode": false,
+      "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
@@ -23763,12 +22808,12 @@
       "topic": "Roots BIO & GRAPH: 2nd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_BIO_GRAPH_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -23820,12 +22865,12 @@
       "topic": "Roots CHRON & LOG: 2nd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_CHRON_LOG_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -23839,14 +22884,14 @@
       "topic": "Root CHRON (time)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_CHRON_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -23858,14 +22903,14 @@
       "topic": "Root CHRON (time): 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_CHRON_XX_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 3,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -23877,12 +22922,12 @@
       "topic": "Root CIDE/CIS (to kill/cut)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_CIDE_CIS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -23915,12 +22960,12 @@
       "topic": "Root CRED (believe): 3rd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_CRED_III_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -23934,12 +22979,12 @@
       "topic": "Root CRED (to believe/trust) Part 2",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_CRED_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -23953,12 +22998,12 @@
       "topic": "Word Roots — CRED (to believe/trust)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_CRED_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -23986,36 +23031,17 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "VOCAB_ROOTS_DICT_III_MIXED",
-      "subject": "Vocabulary",
-      "topic": "Root DICT (say/speak): 3rd batch",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/vocabulary/VOCAB_ROOTS_DICT_III_MIXED.json"
-      ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 1,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
       "topic_code": "VOCAB_ROOTS_DICT_II_MIXED",
       "subject": "Vocabulary",
       "topic": "Root DICT (to speak/say) Part 2",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_DICT_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -24048,12 +23074,12 @@
       "topic": "Root DUC/DUCT (to lead)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_DUC_DUCT_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -24067,12 +23093,12 @@
       "topic": "Root FAC/FEC (to do/make)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_FAC_FEC_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -24086,12 +23112,12 @@
       "topic": "Roots GEO & TERR: 2nd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_GEO_TERR_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -24124,12 +23150,12 @@
       "topic": "Root GRAD/GRESS (to step)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_GRAD_GRESS_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -24162,14 +23188,14 @@
       "topic": "Root LOGY (study of): 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_LOGY_XX_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 3,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -24200,31 +23226,12 @@
       "topic": "Root MAND (to order/entrust)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_MAND_MEND_MIXED.json"
       ],
-      "needs_transcode": true,
-      "needs_subject_canon": false,
-      "parity_fails": 0,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 2,
-      "diff_unknown": 0
-    },
-    {
-      "topic_code": "VOCAB_ROOTS_OMNI_MIXED",
-      "subject": "Vocabulary",
-      "topic": "Root OMNI (all)",
-      "questions": 7,
-      "schema_versions": [
-        "B"
-      ],
-      "paths": [
-        "seeds/static_gk/vocabulary/VOCAB_ROOTS_OMNI_MIXED.json"
-      ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -24238,12 +23245,12 @@
       "topic": "Root PATH/PAT (feeling/suffering)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_PATH_PAT_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -24257,12 +23264,12 @@
       "topic": "Root PATH (feeling/disease): 20th batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_PATH_XX_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -24276,14 +23283,14 @@
       "topic": "Root PEL/PUL (to drive/push)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_PEL_PUL_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -24295,12 +23302,12 @@
       "topic": "Root PHIL (love): 2nd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_PHIL_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -24333,12 +23340,12 @@
       "topic": "Root PHOBIA (fear): 2nd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_PHOBIA_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -24352,14 +23359,14 @@
       "topic": "Root PORT (carry): 2nd batch",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_PORT_II_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 4,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -24504,14 +23511,14 @@
       "topic": "Root TRACT (to pull/drag)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_TRACT_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 2,
+      "parity_fails": 0,
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
@@ -24523,12 +23530,12 @@
       "topic": "Root VEN/VENT (to come)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_VEN_VENT_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,
@@ -24561,12 +23568,12 @@
       "topic": "Root VOC/VOX (voice/call)",
       "questions": 7,
       "schema_versions": [
-        "B"
+        "A"
       ],
       "paths": [
         "seeds/static_gk/vocabulary/VOCAB_ROOTS_VOC_VOX_MIXED.json"
       ],
-      "needs_transcode": true,
+      "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
       "diff_easy": 2,

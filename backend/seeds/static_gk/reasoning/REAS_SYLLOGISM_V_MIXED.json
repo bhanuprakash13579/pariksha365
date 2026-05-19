@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Syllogism: 5th batch, possibility cases",
+  "topic_code": "REAS_SYLLOGISM_V_MIXED",
+  "questions": [
+    {
+      "stem": "Statements:\n1. All cats are dogs.\n2. No dog is a rat.\nConclusions:\nI. No cat is a rat.\nII. Some dogs are cats.",
+      "options": [
+        {
+          "option_text": "Only conclusion I definitely follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusion I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only conclusion II clearly follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The circle for 'cats' is entirely inside the circle for 'dogs'. The circle for 'dogs' has no intersection with the circle for 'rats'. Therefore, the inner circle (cats) also has no intersection with 'rats'. Conclusion I (No cat is a rat) follows. Since cats are inside dogs, the area of dogs overlapping with cats implies some dogs are indeed cats. Conclusion II follows. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_V_MIXED_00001"
+    },
+    {
+      "stem": "Statements:\n1. Some tables are chairs.\n2. All chairs are desks.\nConclusions:\nI. Some tables are desks.\nII. All tables are desks.",
+      "options": [
+        {
+          "option_text": "Only conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusions follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither conclusion follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Because some tables overlap with chairs, and the entire circle of chairs is inside desks, the intersecting part of tables and chairs is automatically inside desks. Thus, 'Some tables are desks' is true. We cannot conclude that 'All tables are desks' because the non-overlapping part of tables may lie outside desks. So, only conclusion I follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_V_MIXED_00002"
+    },
+    {
+      "stem": "Statements:\n1. Some apples are bananas.\n2. No banana is a cherry.\nConclusions:\nI. Some apples are definitely not cherries.\nII. All apples being cherries is a possibility.",
+      "options": [
+        {
+          "option_text": "Only conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusions follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither conclusion follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion I follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Since some apples overlap with bananas, and no banana can touch the cherry circle, those specific apples that are bananas can never be cherries. Therefore, 'Some apples are not cherries' is definitively true (Conclusion I). Because of this restriction, it is impossible for all apples to be cherries. Therefore, Conclusion II is false.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_V_MIXED_00003"
+    },
+    {
+      "stem": "Statements:\n1. All pens are pencils.\n2. Some pencils are markers.\nConclusions:\nI. All pens being markers is a possibility.\nII. Some markers are definitely pens.",
+      "options": [
+        {
+          "option_text": "Only conclusion I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusions follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither conclusion follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Pens are entirely inside pencils. Markers intersect with pencils. It is logically possible to draw the markers circle such that it completely envelopes the pens circle while still intersecting pencils. So Conclusion I is a valid possibility. However, because markers only need to touch pencils, they don't have to touch pens. Thus, 'Some markers are pens' (Conclusion II) is not definitively true.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_V_MIXED_00004"
+    },
+    {
+      "stem": "Statements:\n1. No blue is red.\n2. Some red is green.\nConclusions:\nI. Some green is definitely not blue.\nII. All green being blue is a possibility.",
+      "options": [
+        {
+          "option_text": "Only conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusions follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither conclusion follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Since some part of green overlaps with red, and no part of red can touch blue, that specific overlapping part of green can never touch blue. Therefore, 'Some green is not blue' is a definite conclusion (I follows). Because at least this part of green cannot be blue, it is impossible for 'All green' to be blue. Thus, II does not follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_V_MIXED_00005"
+    },
+    {
+      "stem": "Statements:\n1. All roads are streets.\n2. No street is a highway.\n3. Some highways are tracks.\nConclusions:\nI. No road is a highway.\nII. Some tracks are definitely not streets.\nIII. All streets being tracks is a possibility.",
+      "options": [
+        {
+          "option_text": "Only I and II clearly follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "All I, II and III follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II and III simply follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I and III strictly follow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "I: Roads are inside streets, and streets do not touch highways. Therefore, roads cannot touch highways. Conclusion I is true. \nII: The part of tracks that overlaps with highways cannot touch streets, because no highway is a street. Conclusion II is true. \nIII: There is no negative restriction from tracks towards streets (only from highways). It is entirely possible to draw the 'tracks' circle large enough to completely encompass the 'streets' circle. Conclusion III is true as a possibility.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_V_MIXED_00006"
+    },
+    {
+      "stem": "Statements:\n1. Only a few lions are tigers.\n2. All tigers are leopards.\n3. No leopard is a cheetah.\nConclusions:\nI. Some lions are definitely not cheetahs.\nII. All lions being leopards is a possibility.\nIII. Some tigers are cheetahs.",
+      "options": [
+        {
+          "option_text": "Only II and III follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I and III follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "All I, II and III follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I and II follow",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "'Only a few lions are tigers' means 'Some lions are tigers' AND 'Some lions are not tigers'. \nI: The lions that are tigers are also leopards. Since no leopard is a cheetah, these lions can never be cheetahs. Thus, 'Some lions are not cheetahs' is true.\nII: The restriction 'Some lions are not tigers' prevents lions from being entirely inside tigers. However, it does not prevent lions from being entirely inside leopards. So this possibility is true.\nIII: Tigers are entirely inside leopards. Leopards never touch cheetahs. Thus, tigers can never be cheetahs. Conclusion III is false.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:44+00:00",
+      "id": "sgk_REAS_SYLLOGISM_V_MIXED_00007"
+    }
+  ]
+}

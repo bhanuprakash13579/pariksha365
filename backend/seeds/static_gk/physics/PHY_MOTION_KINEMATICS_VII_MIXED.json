@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Motion — kinematics, acceleration, equations of motion",
+  "topic_code": "PHY_MOTION_KINEMATICS_VII_MIXED",
+  "questions": [
+    {
+      "stem": "A car accelerates uniformly from rest with acceleration 2 m/s². What is its velocity after 5 seconds?",
+      "options": [
+        {
+          "option_text": "5 m/s",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 m/s",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 m/s",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 m/s",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "v = u + at. u = 0 (rest), a = 2 m/s², t = 5 s. v = 0 + 2×5 = 10 m/s. Answer: B. Trap: confusing with distance or other formulas.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:21+00:00",
+      "id": "sgk_PHY_MOTION_KINEMATICS_VII_MIXED_00001"
+    },
+    {
+      "stem": "An object is thrown upward with initial velocity 20 m/s. What is the maximum height reached? (g = 10 m/s²)",
+      "options": [
+        {
+          "option_text": "10 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "25 m",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "At max height, v = 0. v² = u² - 2gh (upward, g opposes). 0 = 400 - 2×10×h. h = 400/20 = 20 m. Answer: C. Trap: forgetting negative acceleration or misapplying formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:21+00:00",
+      "id": "sgk_PHY_MOTION_KINEMATICS_VII_MIXED_00002"
+    },
+    {
+      "stem": "A particle moves with constant acceleration. If it travels 15 m in the first second and 25 m in the next second, what is the acceleration?",
+      "options": [
+        {
+          "option_text": "5 m/s²",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 m/s²",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 m/s²",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 m/s²",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Distance in successive seconds differs by acceleration. 25 - 15 = 10 m (represents acceleration effect). For constant acceleration, a = Δ(distance in consecutive intervals). a = 10 m/s². Answer: B. Trap: confusing displacement with velocity.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:21+00:00",
+      "id": "sgk_PHY_MOTION_KINEMATICS_VII_MIXED_00003"
+    },
+    {
+      "stem": "An object falls freely from rest for 2 seconds. What is the distance fallen? (g = 10 m/s²)",
+      "options": [
+        {
+          "option_text": "10 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "30 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 m",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "s = ut + ½gt² (u = 0, g = 10, t = 2). s = 0 + ½×10×4 = 20 m. Answer: B. Trap: using g×t instead of ½g×t².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:21+00:00",
+      "id": "sgk_PHY_MOTION_KINEMATICS_VII_MIXED_00004"
+    },
+    {
+      "stem": "If an object has velocity-time graph as a straight line, what can be concluded?",
+      "options": [
+        {
+          "option_text": "Acceleration is zero",
+          "is_correct": false
+        },
+        {
+          "option_text": "Acceleration is constant",
+          "is_correct": true
+        },
+        {
+          "option_text": "Velocity is constant and acceleration is zero",
+          "is_correct": false
+        },
+        {
+          "option_text": "The object is at rest",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "v-t straight line: slope = constant acceleration. If slope = 0 (horizontal), a = 0 (uniform motion). If sloped, a is constant. Answer: B (general case). Trap: confusing with A (only if horizontal line).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:21+00:00",
+      "id": "sgk_PHY_MOTION_KINEMATICS_VII_MIXED_00005"
+    },
+    {
+      "stem": "Two objects A and B start from the same point. A moves with constant velocity 5 m/s. B accelerates from rest at 2 m/s². After how many seconds will B catch up to A?",
+      "options": [
+        {
+          "option_text": "2 s",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 s",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 s",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 s",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "A: s = 5t. B: s = ½×2×t² = t². When B catches A: t² = 5t. t² - 5t = 0. t(t - 5) = 0. t = 5 s (t = 0 is start). Answer: C. Trap: confusing displacement vs. velocity formulas.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:21+00:00",
+      "id": "sgk_PHY_MOTION_KINEMATICS_VII_MIXED_00006"
+    },
+    {
+      "stem": "A ball is thrown horizontally from a height of 20 m with initial velocity 10 m/s. What is the horizontal distance traveled before hitting the ground? (g = 10 m/s²)",
+      "options": [
+        {
+          "option_text": "10 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "25 m",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Vertical: h = ½gt². 20 = ½×10×t². t² = 4. t = 2 s. Horizontal: x = u×t = 10×2 = 20 m. Answer: C. Trap: mixing vertical and horizontal motions or forgetting to calculate time first.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:21+00:00",
+      "id": "sgk_PHY_MOTION_KINEMATICS_VII_MIXED_00007"
+    }
+  ]
+}

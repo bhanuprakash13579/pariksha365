@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Order & Ranking: 3rd batch",
+  "topic_code": "REAS_ORDER_RANKING_III_MIXED",
+  "questions": [
+    {
+      "stem": "In a competitive class of exactly 40 students, Rohan's rank is mathematically 15th from the top. What exactly is his rank when counted from the bottom?",
+      "options": [
+        {
+          "option_text": "25th",
+          "is_correct": false
+        },
+        {
+          "option_text": "26th",
+          "is_correct": true
+        },
+        {
+          "option_text": "27th",
+          "is_correct": false
+        },
+        {
+          "option_text": "24th",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The formula for finding the rank from the bottom is: Total Students - Rank from top + 1. Therefore, Rohan's rank from the bottom = 40 - 15 + 1 = 25 + 1 = 26th.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:42+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_III_MIXED_00001"
+    },
+    {
+      "stem": "In a long straight row of boys all facing North, A is standing 16th from the left end and 21st from the right end. How many total boys are there in the row?",
+      "options": [
+        {
+          "option_text": "37 boys",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 boys",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 boys",
+          "is_correct": true
+        },
+        {
+          "option_text": "38 boys",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Total number of people in a row = (Position from left) + (Position from right) - 1. Here, Total = 16 + 21 - 1 = 37 - 1 = 36 boys. We subtract 1 because A is counted twice (once from the left and once from the right).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:42+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_III_MIXED_00002"
+    },
+    {
+      "stem": "In a class of students, Sneha's rank is exactly 12th from the top and 28th from the bottom strictly among those who passed the exam. If exactly 6 students failed, what is the total number of students in the class?",
+      "options": [
+        {
+          "option_text": "44",
+          "is_correct": false
+        },
+        {
+          "option_text": "46",
+          "is_correct": false
+        },
+        {
+          "option_text": "47",
+          "is_correct": false
+        },
+        {
+          "option_text": "45",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "First, find the total number of students who passed. Total passed = Sneha's rank from top + Sneha's rank from bottom - 1 = 12 + 28 - 1 = 39. Total students in the class = Total passed + Total failed = 39 + 6 = 45.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:42+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_III_MIXED_00003"
+    },
+    {
+      "stem": "In a row of girls, Kamla is 9th from the left and Veena is 16th from the right. If they completely interchange their positions, Kamla becomes 25th from the left. How many girls are there in the row?",
+      "options": [
+        {
+          "option_text": "40",
+          "is_correct": true
+        },
+        {
+          "option_text": "39",
+          "is_correct": false
+        },
+        {
+          "option_text": "41",
+          "is_correct": false
+        },
+        {
+          "option_text": "42",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "After interchanging, Kamla occupies Veena's old position. This specific position is now 25th from the left (Kamla's new position) and is already known to be 16th from the right (Veena's original position). Total girls = (Position from left + Position from right) - 1 = 25 + 16 - 1 = 40.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:42+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_III_MIXED_00004"
+    },
+    {
+      "stem": "Among five friends A, B, C, D, and E, A is taller than B but shorter than C. B is explicitly taller than only E. C is definitively not the tallest. Who is the tallest among them?",
+      "options": [
+        {
+          "option_text": "C",
+          "is_correct": false
+        },
+        {
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "option_text": "D",
+          "is_correct": true
+        },
+        {
+          "option_text": "E",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Statement 'B is taller than only E' means B is the second shortest (4th position) and E is the shortest (5th position). 'A is taller than B but shorter than C' gives the order C > A > B > E. Since C is not the tallest (1st position), C must be 2nd, making the remaining person, D, the tallest. The full order is D > C > A > B > E.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:42+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_III_MIXED_00005"
+    },
+    {
+      "stem": "In a queue of children, Kashish is mathematically fifth from the left and Mona is exactly sixth from the right. When they interchange their places among themselves, Kashish becomes thirteenth from the left. Then, what will be Mona's exact position from the right?",
+      "options": [
+        {
+          "option_text": "15th",
+          "is_correct": false
+        },
+        {
+          "option_text": "14th",
+          "is_correct": true
+        },
+        {
+          "option_text": "13th",
+          "is_correct": false
+        },
+        {
+          "option_text": "12th",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Kashish's new position (13th from left) is Mona's old position (6th from right). Total children = 13 + 6 - 1 = 18. After the interchange, Mona occupies Kashish's old position, which is 5th from the left. Mona's position from the right = Total - (Position from left) + 1 = 18 - 5 + 1 = 14th.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:42+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_III_MIXED_00006"
+    },
+    {
+      "stem": "In a class of exactly 60 students, where the number of girls is twice that of boys, Kamal ranked precisely seventeenth from the top. If there are exactly 9 girls ahead of Kamal, how many boys are strictly after him in rank?",
+      "options": [
+        {
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Total students = 60. Let boys = x, girls = 2x. 3x = 60 => x = 20. So, 20 boys and 40 girls. Kamal is 17th from the top, meaning there are 16 students ahead of him. Out of these 16, 9 are girls. Therefore, the number of boys ahead of Kamal = 16 - 9 = 7. Assuming Kamal is a boy, he is the 8th boy from the top. Total boys after Kamal = Total boys - Boys up to Kamal = 20 - 8 = 12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:42+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_III_MIXED_00007"
+    }
+  ]
+}

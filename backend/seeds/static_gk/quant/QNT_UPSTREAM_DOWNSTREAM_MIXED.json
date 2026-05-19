@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Upstream/downstream: time and speed variants",
+  "topic_code": "QNT_UPSTREAM_DOWNSTREAM_MIXED",
+  "questions": [
+    {
+      "stem": "The speed of a boat in perfectly still water is 10 km/h, and the speed of the water stream is 2 km/h. What total distance will the boat cover if it travels downstream for 3 hours?",
+      "options": [
+        {
+          "option_text": "30 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "24 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Downstream speed is the sum of the boat's speed in still water and the stream's speed. Downstream speed = 10 + 2 = 12 km/h. Distance covered = Speed × Time = 12 × 3 = 36 km.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_UPSTREAM_DOWNSTREAM_MIXED_00001"
+    },
+    {
+      "stem": "A motorboat goes 24 km downstream in 2 hours and 16 km upstream in 2 hours. What is the speed of the stream?",
+      "options": [
+        {
+          "option_text": "4 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Downstream speed (D) = Distance / Time = 24 / 2 = 12 km/h. Upstream speed (U) = Distance / Time = 16 / 2 = 8 km/h. Speed of the stream = (D - U) / 2 = (12 - 8) / 2 = 4 / 2 = 2 km/h.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_UPSTREAM_DOWNSTREAM_MIXED_00002"
+    },
+    {
+      "stem": "A man can row downstream 30 km in exactly 2 hours, and upstream 15 km in 5 hours. How long will it take him to row a distance of 27 km in still water?",
+      "options": [
+        {
+          "option_text": "4 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 hours",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Downstream speed (D) = 30 / 2 = 15 km/h. Upstream speed (U) = 15 / 5 = 3 km/h. Speed of the man in still water = (D + U) / 2 = (15 + 3) / 2 = 9 km/h. Time taken to row 27 km in still water = Distance / Speed = 27 / 9 = 3 hours.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_UPSTREAM_DOWNSTREAM_MIXED_00003"
+    },
+    {
+      "stem": "A boat covers a certain distance downstream in 4 hours and returns the same distance upstream in 6 hours. If the speed of the stream is 3 km/h, what is the speed of the boat in still water?",
+      "options": [
+        {
+          "option_text": "15 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "21 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Let the boat's speed in still water be B. Downstream speed = B + 3. Upstream speed = B - 3. Since distance is constant: Time_down × Speed_down = Time_up × Speed_up. 4(B + 3) = 6(B - 3). 4B + 12 = 6B - 18. 2B = 30. B = 15 km/h.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_UPSTREAM_DOWNSTREAM_MIXED_00004"
+    },
+    {
+      "stem": "A boat takes exactly half the time to travel a certain distance downstream than it takes to travel the exact same distance upstream. What is the ratio of the speed of the boat in still water to the speed of the current?",
+      "options": [
+        {
+          "option_text": "2:1",
+          "is_correct": false
+        },
+        {
+          "option_text": "4:1",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:1",
+          "is_correct": true
+        },
+        {
+          "option_text": "5:1",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Let time taken downstream be 1 unit and upstream be 2 units. Since speed is inversely proportional to time for a constant distance, Downstream speed (D) = 2x and Upstream speed (U) = 1x. Boat's speed (B) = (D+U)/2 = 1.5x. Current's speed (S) = (D-U)/2 = 0.5x. Ratio B:S = 1.5x : 0.5x = 3:1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_UPSTREAM_DOWNSTREAM_MIXED_00005"
+    },
+    {
+      "stem": "A person can row a certain distance downstream in 6 hours and return the same distance upstream in 9 hours. If the speed of the stream is strictly 2 km/h, find the total distance of the two-way journey.",
+      "options": [
+        {
+          "option_text": "072 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "144 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "120 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "108 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Let the boat's speed be B. Distance is constant, so 6(B + 2) = 9(B - 2). 6B + 12 = 9B - 18. 3B = 30 => B = 10 km/h. Downstream speed = 12 km/h. One-way distance = 12 km/h × 6 hours = 72 km. Total two-way distance = 72 × 2 = 144 km.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_UPSTREAM_DOWNSTREAM_MIXED_00006"
+    },
+    {
+      "stem": "A man rows 40 km upstream and 55 km downstream in 13 hours. He also rows 30 km upstream and 44 km downstream in 10 hours. Find the speed of the boat in still water.",
+      "options": [
+        {
+          "option_text": "6 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 km/h",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Let 1/U = x and 1/D = y, where U is upstream speed and D is downstream speed.\nEq1: 40x + 55y = 13\nEq2: 30x + 44y = 10. Multiply Eq2 by 4/3 to match x: 40x + (176/3)y = 40/3.\nSubtracting Eq1 from this: (176/3)y - (165/3)y = 40/3 - 39/3 => (11/3)y = 1/3 => y = 1/11. Thus, D = 11 km/h.\nSubstitute y in Eq1: 40x + 55(1/11) = 13 => 40x + 5 = 13 => 40x = 8 => x = 1/5. Thus, U = 5 km/h.\nSpeed of boat in still water = (11 + 5) / 2 = 8 km/h.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:37+00:00",
+      "id": "sgk_QNT_UPSTREAM_DOWNSTREAM_MIXED_00007"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Logical Deduction — premises, conclusions, validity testing",
+  "topic_code": "REAS_LOGICAL_DEDUCTION_VII_MIXED",
+  "questions": [
+    {
+      "stem": "Statement: All doctors are professionals. Some professionals are engineers. Conclusion: Some doctors are engineers. Is this conclusion valid?",
+      "options": [
+        {
+          "option_text": "Valid (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Invalid",
+          "is_correct": true
+        },
+        {
+          "option_text": "Uncertain",
+          "is_correct": false
+        },
+        {
+          "option_text": "Partially valid",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Venn diagram: Doctors ⊂ Professionals. Engineers ⊂ Professionals (partial overlap). But we cannot conclude that doctors and engineers overlap. The statement only tells us that some professionals are engineers, not specifically doctors. Conclusion is INVALID. Trap: confusing 'all' and 'some' with overlapping categories.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_VII_MIXED_00001"
+    },
+    {
+      "stem": "Premise 1: No bird is a fish. Premise 2: All eagles are birds. Conclusion: No eagle is a fish. Valid or invalid?",
+      "options": [
+        {
+          "option_text": "Valid",
+          "is_correct": true
+        },
+        {
+          "option_text": "Invalid",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot determine",
+          "is_correct": false
+        },
+        {
+          "option_text": "Contradictory",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Categorical syllogism: No birds are fish. Eagles are birds. Therefore, no eagles are fish. Valid reasoning by transitivity. If A ⊂ B, and B ∩ C = ∅, then A ∩ C = ∅. Trap: confusing negative premises or incorrect variable assignment.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_VII_MIXED_00002"
+    },
+    {
+      "stem": "All athletes are strong. Ram is strong. Conclusion: Ram is an athlete. Valid or invalid?",
+      "options": [
+        {
+          "option_text": "Valid (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Invalid",
+          "is_correct": true
+        },
+        {
+          "option_text": "Partially valid",
+          "is_correct": false
+        },
+        {
+          "option_text": "Undetermined",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "This is the fallacy of converse. All athletes are strong (Athletes ⊂ Strong), but not all strong people are athletes. Ram being strong doesn't make him an athlete. Conclusion INVALID. Trap: assuming biconditional when only one direction is given.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_VII_MIXED_00003"
+    },
+    {
+      "stem": "Statement: All fruits are sweet or sour. Mangoes are fruits. Conclusion: Mangoes are sweet or sour. Valid?",
+      "options": [
+        {
+          "option_text": "Valid",
+          "is_correct": true
+        },
+        {
+          "option_text": "Invalid",
+          "is_correct": false
+        },
+        {
+          "option_text": "Uncertain",
+          "is_correct": false
+        },
+        {
+          "option_text": "Questionable",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Valid syllogism: All fruits have property (sweet OR sour). Mangoes are fruits. Therefore, mangoes have property (sweet OR sour). Follows logically. Trap: doubting disjunctive conclusions or property inheritance.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_VII_MIXED_00004"
+    },
+    {
+      "stem": "If it rains, the ground is wet. The ground is wet. Conclusion: It rained. Valid or invalid?",
+      "options": [
+        {
+          "option_text": "Valid (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Invalid",
+          "is_correct": true
+        },
+        {
+          "option_text": "Possibly valid",
+          "is_correct": false
+        },
+        {
+          "option_text": "Contradictory",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Fallacy of converse/affirming the consequent. Rains → Wet, but Wet doesn't imply Rains (could be wet from sprinkler, etc.). Conclusion INVALID. Logic error: confusing conditional direction. Trap: assuming reverse of implication.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_VII_MIXED_00005"
+    },
+    {
+      "stem": "All roses are flowers. No flowers are artificial. Conclusion: No roses are artificial. Valid?",
+      "options": [
+        {
+          "option_text": "Valid",
+          "is_correct": true
+        },
+        {
+          "option_text": "Invalid",
+          "is_correct": false
+        },
+        {
+          "option_text": "Depends on context",
+          "is_correct": false
+        },
+        {
+          "option_text": "Contradictory",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Roses ⊂ Flowers. Flowers ∩ Artificial = ∅. Therefore, Roses ∩ Artificial = ∅. Valid by transitivity. If A ⊂ B and B ∩ C = ∅, then A ∩ C = ∅. Trap: confusing negations or incorrect class relationships.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_VII_MIXED_00006"
+    },
+    {
+      "stem": "Some students are intelligent. Some intelligent people are not hardworking. Conclusion: Some students are not hardworking. Valid or invalid?",
+      "options": [
+        {
+          "option_text": "Valid (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Invalid",
+          "is_correct": true
+        },
+        {
+          "option_text": "Uncertain",
+          "is_correct": false
+        },
+        {
+          "option_text": "Partially valid",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Some students ∩ intelligent. Some intelligent ∩ ¬hardworking. But we don't know if the overlapping 'some intelligent' includes students or not. Conclusion cannot be drawn. INVALID. Trap: assuming 'some' relationships chain together without common elements verified.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_LOGICAL_DEDUCTION_VII_MIXED_00007"
+    }
+  ]
+}

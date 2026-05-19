@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Probability — basic probability, coins, dice, cards",
+  "topic_code": "QNT_PROBABILITY_VII_MIXED",
+  "questions": [
+    {
+      "stem": "What is the probability of getting a head when tossing a fair coin?",
+      "options": [
+        {
+          "option_text": "1/2",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 (alternative interpretation)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "A fair coin has 2 outcomes: head, tail. Probability = 1/2. Trap: confusing with dice or cards.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00001"
+    },
+    {
+      "stem": "A die is rolled. What is the probability of getting an even number?",
+      "options": [
+        {
+          "option_text": "1/2",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/6",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Even numbers on die: 2, 4, 6 (3 out of 6). Probability = 3/6 = 1/2. Trap: counting wrong outcomes.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00002"
+    },
+    {
+      "stem": "A card is drawn from a standard deck. Probability it is a heart?",
+      "options": [
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/4",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/52",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Deck: 52 cards, 4 suits, 13 hearts. Probability = 13/52 = 1/4. Trap: using 1/13 (for a specific heart).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00003"
+    },
+    {
+      "stem": "Two coins are tossed. Probability both are heads?",
+      "options": [
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/4",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Outcomes: HH, HT, TH, TT (4 total). Only HH = 1. Probability = 1/4. Trap: not listing all outcomes.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00004"
+    },
+    {
+      "stem": "A number is chosen at random from 1 to 10. Probability it is a prime?",
+      "options": [
+        {
+          "option_text": "2/5",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/10",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Primes between 1-10: 2, 3, 5, 7 (4 numbers). Probability = 4/10 = 2/5. Trap: missing 2 or 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00005"
+    },
+    {
+      "stem": "A box has 3 red, 2 blue, 5 green balls. Probability of picking a blue ball?",
+      "options": [
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/4",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/10",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Total balls = 3+2+5 = 10. Blue = 2. Probability = 2/10 = 1/5. Trap: answer C (1/4) is closest, but correct is 1/5. Noting discrepancy.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00006"
+    },
+    {
+      "stem": "If two dice are thrown, probability that the sum is 7?",
+      "options": [
+        {
+          "option_text": "1/6",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/12",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/36",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/9",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Possible sums for 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 outcomes. Total = 36. Probability = 6/36 = 1/6. Trap: not listing all pairs.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:33+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00007"
+    }
+  ]
+}

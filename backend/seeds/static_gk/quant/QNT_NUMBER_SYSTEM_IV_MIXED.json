@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Number System: 4th batch",
+  "topic_code": "QNT_NUMBER_SYSTEM_IV_MIXED",
+  "questions": [
+    {
+      "stem": "What is the exact mathematical place value of the digit '5' in the number 345678?",
+      "options": [
+        {
+          "option_text": "500 (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "5000",
+          "is_correct": true
+        },
+        {
+          "option_text": "50000",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 (alternative interpretation)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "In the number 345,678, the digit 8 is in the ones place, 7 is in the tens place, 6 is in the hundreds place, and 5 is in the thousands place. Therefore, the place value of 5 is 5 × 1000 = 5000.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:31+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_IV_MIXED_00001"
+    },
+    {
+      "stem": "Which of the following given numbers is mathematically a prime number?",
+      "options": [
+        {
+          "option_text": "91",
+          "is_correct": false
+        },
+        {
+          "option_text": "87",
+          "is_correct": false
+        },
+        {
+          "option_text": "97",
+          "is_correct": true
+        },
+        {
+          "option_text": "93",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "A prime number is only divisible by 1 and itself. 91 is divisible by 7 (13×7). 87 is divisible by 3 (29×3). 93 is divisible by 3 (31×3). 97 has no divisors other than 1 and 97, so it is prime.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:31+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_IV_MIXED_00002"
+    },
+    {
+      "stem": "Find the exact unit digit in the mathematical product of (2467)^153 × (341)^72.",
+      "options": [
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "For (2467)^153, the unit digit depends only on 7^153. The cyclicity of 7 is 4 (7, 9, 3, 1). 153 divided by 4 leaves a remainder of 1. So, 7^153 ends in 7^1 = 7. For (341)^72, any power of a number ending in 1 will always end in 1. Product of unit digits = 7 × 1 = 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:31+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_IV_MIXED_00003"
+    },
+    {
+      "stem": "If a certain whole number is perfectly divisible by both 11 and 13, then it must necessarily be:",
+      "options": [
+        {
+          "option_text": "Divisible by 143",
+          "is_correct": true
+        },
+        {
+          "option_text": "Divisible by 11+13",
+          "is_correct": false
+        },
+        {
+          "option_text": "Divisible by 13-11",
+          "is_correct": false
+        },
+        {
+          "option_text": "A multiple of 100",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "If a number is divisible by two co-prime numbers (numbers with no common factors other than 1), it must also be divisible by their product. Since 11 and 13 are prime and therefore co-prime, the number must be divisible by 11 × 13 = 143.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:31+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_IV_MIXED_00004"
+    },
+    {
+      "stem": "A number when divided by 899 gives a remainder of exactly 63. If the exact same number is divided by 29, the remainder will logically be:",
+      "options": [
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Let the number be N. Then N = 899k + 63. Since 899 is perfectly divisible by 29 (29 × 31 = 899), the term 899k is fully divisible by 29 leaving no remainder. The overall remainder simply depends on dividing 63 by 29. 63 ÷ 29 = 2 with a remainder of 5. Thus, the new remainder is 5.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:31+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_IV_MIXED_00005"
+    },
+    {
+      "stem": "Exactly how many positive 3-digit numbers are completely and perfectly divisible by 6?",
+      "options": [
+        {
+          "option_text": "149",
+          "is_correct": false
+        },
+        {
+          "option_text": "150",
+          "is_correct": true
+        },
+        {
+          "option_text": "151",
+          "is_correct": false
+        },
+        {
+          "option_text": "166",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "The smallest 3-digit number divisible by 6 is 102 (17 × 6). The largest is 996 (166 × 6). These form an Arithmetic Progression (AP) with first term a=102, last term L=996, and common difference d=6. The formula for the nth term is L = a + (n-1)d. 996 = 102 + (n-1)6. 894 = 6(n-1). n-1 = 149. n = 150.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:31+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_IV_MIXED_00006"
+    },
+    {
+      "stem": "The mathematical sum of any three consecutive odd numbers is strictly and always perfectly divisible by which number?",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Let the three consecutive odd numbers be x, x+2, and x+4. Their sum is x + x+2 + x+4 = 3x + 6 = 3(x + 2). Since 3 is a multiplier in the simplified expression 3(x+2), the sum will absolutely always be a multiple of 3, meaning it is perfectly divisible by 3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:31+00:00",
+      "id": "sgk_QNT_NUMBER_SYSTEM_IV_MIXED_00007"
+    }
+  ]
+}

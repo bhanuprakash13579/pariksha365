@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Simple and Compound Interest",
+  "topic_code": "QNT_SI_CI_ADVANCED_MIXED",
+  "questions": [
+    {
+      "stem": "Find the exact Simple Interest (SI) earned on a principal amount of Rs. 1000 for a duration of 2 years at an interest rate of 10% per annum.",
+      "options": [
+        {
+          "option_text": "Rs. 210",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 200",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rs. 100",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 150",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The formula for Simple Interest is SI = (Principal × Rate × Time) / 100. Substituting the given values: SI = (1000 × 10 × 2) / 100 = 20000 / 100 = Rs. 200.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:35+00:00",
+      "id": "sgk_QNT_SI_CI_ADVANCED_MIXED_00001"
+    },
+    {
+      "stem": "What is the exact Compound Interest (CI) earned on Rs. 1000 for 2 years at 10% per annum, if the interest is compounded annually?",
+      "options": [
+        {
+          "option_text": "Rs. 200",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 220",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 210",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rs. 190",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Amount (A) = P(1 + R/100)^T. A = 1000(1 + 10/100)² = 1000(1.1)² = 1000(1.21) = 1210. Compound Interest = Amount - Principal = 1210 - 1000 = Rs. 210.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:35+00:00",
+      "id": "sgk_QNT_SI_CI_ADVANCED_MIXED_00002"
+    },
+    {
+      "stem": "The absolute mathematical difference between Compound Interest and Simple Interest on a certain sum of money for exactly 2 years at 5% per annum is Rs. 15. Find the original sum.",
+      "options": [
+        {
+          "option_text": "Rs. 5000",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 7000",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 4000",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 6000",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "For 2 years, the difference between CI and SI is given by the formula: Diff = P(R/100)². So, 15 = P(5/100)² = P(1/20)² = P(1/400). Multiplying both sides by 400 gives P = 15 × 400 = Rs. 6000.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:35+00:00",
+      "id": "sgk_QNT_SI_CI_ADVANCED_MIXED_00003"
+    },
+    {
+      "stem": "A sum of money smoothly amounts to exactly Rs. 5200 in 5 years and exactly Rs. 5680 in 7 years strictly at simple interest. What is the precise rate of interest per annum?",
+      "options": [
+        {
+          "option_text": "6%",
+          "is_correct": true
+        },
+        {
+          "option_text": "5%",
+          "is_correct": false
+        },
+        {
+          "option_text": "4%",
+          "is_correct": false
+        },
+        {
+          "option_text": "8%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "SI for 2 years (from year 5 to year 7) = 5680 - 5200 = Rs. 480. SI for 1 year = 480 / 2 = Rs. 240. SI for 5 years = 240 × 5 = Rs. 1200. Principal = Amount after 5 years - SI for 5 years = 5200 - 1200 = Rs. 4000. Rate = (100 × SI for 1 year) / (Principal × 1) = (100 × 240) / (4000) = 24000 / 4000 = 6%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:35+00:00",
+      "id": "sgk_QNT_SI_CI_ADVANCED_MIXED_00004"
+    },
+    {
+      "stem": "A specific sum of money placed securely at compound interest completely doubles itself in exactly 4 years. In how many total years will it amount to exactly eight times itself?",
+      "options": [
+        {
+          "option_text": "16 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 years",
+          "is_correct": true
+        },
+        {
+          "option_text": "08 years",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "In compound interest, if a sum becomes x times in T years, it will become x^n times in (n × T) years. Here, the sum becomes 2 times in 4 years. We want it to become 8 times, which is 2³. Here, x=2 and n=3. Required time = n × T = 3 × 4 = 12 years.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:35+00:00",
+      "id": "sgk_QNT_SI_CI_ADVANCED_MIXED_00005"
+    },
+    {
+      "stem": "The accumulated compound interest on a certain sum for exactly 2 years is Rs. 410, whereas the simple interest on the same sum at the same rate is Rs. 400. What is the rate of interest per annum?",
+      "options": [
+        {
+          "option_text": "4%",
+          "is_correct": false
+        },
+        {
+          "option_text": "5%",
+          "is_correct": true
+        },
+        {
+          "option_text": "6%",
+          "is_correct": false
+        },
+        {
+          "option_text": "8%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "SI for 2 years is Rs. 400, so SI for 1 year is Rs. 200. The difference between CI and SI for 2 years is 410 - 400 = Rs. 10. In CI, this extra Rs. 10 is the interest earned in the second year strictly on the interest of the first year (which was Rs. 200). Rate = (10 / 200) × 100 = 5%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:35+00:00",
+      "id": "sgk_QNT_SI_CI_ADVANCED_MIXED_00006"
+    },
+    {
+      "stem": "A total sum of Rs. 2600 is divided between A and B such that the simple interest on A's part at 10% for 5 years is exactly equal to the simple interest on B's part at 9% for 6 years. Find the exact amount given to A.",
+      "options": [
+        {
+          "option_text": "Rs. 1250",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 1450",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 1150",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 1350",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Let A's share be A and B's share be B. A × 10 × 5 / 100 = B × 9 × 6 / 100. So, 50A = 54B. Simplifying the ratio, A/B = 54/50 = 27/25. The total ratio parts = 27 + 25 = 52 parts. 52 parts = Rs. 2600. 1 part = 2600 / 52 = Rs. 50. A's share = 27 parts = 27 × 50 = Rs. 1350.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:35+00:00",
+      "id": "sgk_QNT_SI_CI_ADVANCED_MIXED_00007"
+    }
+  ]
+}

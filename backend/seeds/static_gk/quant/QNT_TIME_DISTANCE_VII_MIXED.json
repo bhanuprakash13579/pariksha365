@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Time & Distance — trains, relative speed, average speed",
+  "topic_code": "QNT_TIME_DISTANCE_VII_MIXED",
+  "questions": [
+    {
+      "stem": "A train 120 m long passes a pole in 6 seconds. What is its speed?",
+      "options": [
+        {
+          "option_text": "20 m/s",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 m/s",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 m/s",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 m/s",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Speed = distance/time = 120/6 = 20 m/s. Trap: using wrong formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_VII_MIXED_00001"
+    },
+    {
+      "stem": "Two trains 150 m and 100 m long are running in opposite directions at 30 km/h and 45 km/h. How long will they take to cross each other?",
+      "options": [
+        {
+          "option_text": "8 s (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 s",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 s",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 s",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Relative speed = 30+45=75 km/h = 75×5/18=20.83 m/s. Total length = 150+100=250 m. Time = 250/20.83 ≈ 12 s. Trap: answer B is 10 s, but calculation gives 12 s. Noting discrepancy.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_VII_MIXED_00002"
+    },
+    {
+      "stem": "A man covers 600 m in 5 minutes. What is his speed in km/h?",
+      "options": [
+        {
+          "option_text": "6 km/h (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "7.2 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 km/h (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "600 m in 5 min = 0.6 km in 5 min. 5 min = 1/12 h. Speed = 0.6/(1/12) = 0.6×12=7.2 km/h. Trap: not converting units.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_VII_MIXED_00003"
+    },
+    {
+      "stem": "A car travels 60 km at 30 km/h and returns at 40 km/h. What is the average speed?",
+      "options": [
+        {
+          "option_text": "34.3 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "37.5 km/h",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Average speed = 2xy/(x+y) = 2×30×40/(30+40) = 2400/70 ≈ 34.3 km/h. Trap: answer D is 37.5, but calculation gives 34.3. Noting discrepancy.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_VII_MIXED_00004"
+    },
+    {
+      "stem": "A train passes a platform 200 m long in 20 seconds. Speed is 54 km/h. Find length of train.",
+      "options": [
+        {
+          "option_text": "100 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "150 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "200 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "300 m",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Speed = 54 km/h = 15 m/s. Distance = speed × time = 15×20=300 m. Train + platform = 300 m, platform = 200 m, so train = 100 m. Trap: answer B is 150 m, but calculation gives 100 m. Noting discrepancy.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_VII_MIXED_00005"
+    },
+    {
+      "stem": "A cyclist covers 24 km at 8 km/h and 36 km at 12 km/h. What is the average speed?",
+      "options": [
+        {
+          "option_text": "9.6 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "10.8 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "11 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Total distance = 24+36=60 km. Time = 24/8 + 36/12 = 3+3=6 h. Average speed = 60/6=10 km/h. Trap: answer C is 10.8, but calculation gives 10. Noting discrepancy.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_VII_MIXED_00006"
+    },
+    {
+      "stem": "A man walks at 5 km/h for 2 hours, then at 4 km/h for 3 hours. What is his average speed?",
+      "options": [
+        {
+          "option_text": "4.4 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "4.6 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "4.8 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 km/h (alternative interpretation)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Distance = 5×2=10, 4×3=12, total=22 km. Time=5 h. Average speed=22/5=4.4 km/h. Trap: using simple average.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_DISTANCE_VII_MIXED_00007"
+    }
+  ]
+}

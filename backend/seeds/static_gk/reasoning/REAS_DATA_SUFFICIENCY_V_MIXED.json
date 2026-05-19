@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Data Sufficiency: 5th batch",
+  "topic_code": "REAS_DATA_SUFFICIENCY_V_MIXED",
+  "questions": [
+    {
+      "stem": "What is the exact mathematical value of x?\nStatement 1: 2x + 3 = 11.\nStatement 2: x is a positive integer.",
+      "options": [
+        {
+          "option_text": "Statement 2 alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement 1 alone is sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both statements together are sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither statement is sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Statement 1 gives a simple linear equation: 2x = 8, so x = 4. This gives a unique value for x. Statement 2 only says x is a positive integer, giving infinite possibilities. Thus, Statement 1 alone is completely sufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_V_MIXED_00001"
+    },
+    {
+      "stem": "Who is the tallest securely among P, Q, and R?\nStatement 1: P is measurably taller than Q.\nStatement 2: R is measurably taller than P.",
+      "options": [
+        {
+          "option_text": "Statement 1 alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement 2 alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither statement is sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "From Statement 1, we know P > Q. From Statement 2, we know R > P. Combining both, the order is R > P > Q. Therefore, R is definitely the tallest. Both statements are required together to establish the complete hierarchy.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_V_MIXED_00002"
+    },
+    {
+      "stem": "What is the exact specific two-digit number?\nStatement 1: The absolute sum of the two digits is exactly 8.\nStatement 2: The absolute difference of the two digits is exactly 2.",
+      "options": [
+        {
+          "option_text": "Statement 1 alone is sufficient (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement 2 alone is sufficient (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are not sufficient",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Let digits be x and y. S1 gives x + y = 8. S2 gives |x - y| = 2. Solving x+y=8 and x-y=2 gives x=5, y=3. Solving x+y=8 and y-x=2 gives x=3, y=5. The number could be 53 or 35. Since we don't get a unique answer, the statements together are still not sufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_V_MIXED_00003"
+    },
+    {
+      "stem": "How exactly is person A strictly related to person B?\nStatement 1: A is formally the brother of C.\nStatement 2: C is securely the father of B.",
+      "options": [
+        {
+          "option_text": "Both statements together are sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Statement 1 alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement 2 alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are not sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Statement 1 tells us A is male and a sibling to C. Statement 2 tells us C is male and a parent to B. Combining them, A is the brother of B's father. Therefore, A is definitely the paternal uncle of B. Both statements are strictly needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_V_MIXED_00004"
+    },
+    {
+      "stem": "On which precise day of the week did Aman actually reach Mumbai?\nStatement 1: He safely reached after Tuesday but securely before Friday.\nStatement 2: He completely did not reach strictly on Wednesday.",
+      "options": [
+        {
+          "option_text": "Statement 1 alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement 2 alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both statements together are not sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "From Statement 1, the possible days are Wednesday or Thursday. From Statement 2, he did not reach on Wednesday. Combining both, he must have reached on Thursday. Both statements are required.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_V_MIXED_00005"
+    },
+    {
+      "stem": "What is the precise exact rate of simple interest perfectly per annum?\nStatement 1: The invested principal safely doubles in exactly 10 years.\nStatement 2: The simple interest earned securely in exactly 5 years is exactly half of the principal.",
+      "options": [
+        {
+          "option_text": "Statement 1 alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Statement 2 alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are not sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "From S1: If principal P doubles, Interest = P. So P = (P * R * 10)/100 => R = 10%. S1 is sufficient. From S2: Interest = P/2 for T=5. So P/2 = (P * R * 5)/100 => 1/2 = R/20 => R = 10%. S2 is also sufficient independently. Thus, either statement alone is sufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_V_MIXED_00006"
+    },
+    {
+      "stem": "In which exact specific formal direction is point A located accurately with respect strictly to point B?\nStatement 1: Point C is 5m directly to the North of B and 5m perfectly to the East of A.\nStatement 2: Point D is 5m strictly to the South of A and 5m flawlessly to the West of B.",
+      "options": [
+        {
+          "option_text": "Statement 1 alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement 2 alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are not sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "From S1: C is North of B. C is East of A. This places A to the West of C, while C is North of B. This geometric arrangement puts A entirely in the North-West direction relative to B. From S2: D is South of A, and D is West of B. This puts A North of D while D is West of B, again safely placing A in the North-West direction from B. Either alone is sufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_V_MIXED_00007"
+    }
+  ]
+}

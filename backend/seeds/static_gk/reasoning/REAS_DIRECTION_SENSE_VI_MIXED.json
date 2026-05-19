@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Direction & Distance: 6th batch",
+  "topic_code": "REAS_DIRECTION_SENSE_VI_MIXED",
+  "questions": [
+    {
+      "stem": "A man walks exactly 5 km towards South, then safely turns right and walks precisely 3 km. Then he sharply turns right and walks exactly 5 km. In which exact direction is he currently from the initial starting point?",
+      "options": [
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "West",
+          "is_correct": true
+        },
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "He goes South 5 km, then turning right means he goes West 3 km. Then turning right again means he goes North 5 km. Since he went 5 km South and 5 km North, he is on the same latitude as his start. He is purely 3 km West of his starting point.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_VI_MIXED_00001"
+    },
+    {
+      "stem": "Reena calmly walked exactly 10m towards East, quickly turned left and walked exactly 15m. She then sharply turned left and securely walked exactly 10m. How far is she exactly from her initial starting point?",
+      "options": [
+        {
+          "option_text": "10 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 meters",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 meters",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "She walked 10m East. Turning left means she walked 15m North. Turning left again means she walked 10m West. Her East and West movements cancel out. She is simply 15 meters directly North of her starting point.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_VI_MIXED_00002"
+    },
+    {
+      "stem": "A boy rides his bicycle Northwards, then swiftly turns left and safely rides exactly 1 km and again turns left and securely rides precisely 2 km. He found himself exactly 1 km West of his initial starting point. How far did he ride Northwards initially?",
+      "options": [
+        {
+          "option_text": "1 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 km",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Let him ride 'y' km North. Turning left means he rides 1 km West. Turning left again means he rides 2 km South. His final position is 1 km West of start, which means his North and South displacements must exactly cancel out. So, 'y' km North must equal 2 km South. Therefore, y = 2 km.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_VI_MIXED_00003"
+    },
+    {
+      "stem": "A man is firmly facing North-West. He safely turns exactly 90 degrees in the direct clockwise direction and then exactly 135 degrees completely in the anti-clockwise direction. Which precise direction is he facing now?",
+      "options": [
+        {
+          "option_text": "West",
+          "is_correct": true
+        },
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Net movement = 90 degrees clockwise - 135 degrees anti-clockwise = -45 degrees (which is 45 degrees anti-clockwise). Facing North-West, turning 45 degrees anti-clockwise leaves him facing directly West.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_VI_MIXED_00004"
+    },
+    {
+      "stem": "Rahul walks exactly 20m towards North. He then quickly turns right and safely walks exactly 30m. Then he turns right and strictly walks exactly 35m. Then he sharply turns left and confidently walks exactly 15m. Finally, he turns left and safely walks exactly 15m. In which exact direction and how many total meters is he from the starting position?",
+      "options": [
+        {
+          "option_text": "30 meters, East",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 meters, West",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 meters, East",
+          "is_correct": true
+        },
+        {
+          "option_text": "30 meters, West",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Assume starting at (0,0). North 20m -> (0, 20). Right (East) 30m -> (30, 20). Right (South) 35m -> (30, -15). Left (East) 15m -> (45, -15). Left (North) 15m -> (45, 0). Final coordinate is (45, 0), which is exactly 45 meters East of the starting point.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_VI_MIXED_00005"
+    },
+    {
+      "stem": "One early morning exactly after sunrise, Vimal slowly started to safely walk. During this walking he unexpectedly met Stephen who was rapidly coming from the complete opposite direction. Vimal carefully watched that the distinct shadow of Stephen fell exactly to his (Vimal's) right side. To which exact direction was Vimal logically facing?",
+      "options": [
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": true
+        },
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "In the morning, the Sun is entirely in the East, so all shadows securely fall strictly to the West. Stephen's shadow fell to Vimal's right. Therefore, Vimal's right side is the West. If a person's right hand points West, they must be securely facing North.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_VI_MIXED_00006"
+    },
+    {
+      "stem": "Point A is exactly 10m perfectly West of Point B. Point C is exactly 10m strictly South of Point B. Point D is precisely 15m entirely East of Point C. Point E is exactly 10m strictly North of Point D. What is the absolute exact distance between Point A and Point E?",
+      "options": [
+        {
+          "option_text": "15 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 meters",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 meters",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Let B be (0,0). A is 10m West -> A = (-10, 0). C is 10m South of B -> C = (0, -10). D is 15m East of C -> D = (15, -10). E is 10m North of D -> E = (15, 0). Distance from A(-10, 0) to E(15, 0) is precisely 15 - (-10) = 25 meters exactly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_DIRECTION_SENSE_VI_MIXED_00007"
+    }
+  ]
+}

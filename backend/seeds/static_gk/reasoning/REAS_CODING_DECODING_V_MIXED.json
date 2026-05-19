@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Coding/Decoding: 5th batch, position shift",
+  "topic_code": "REAS_CODING_DECODING_V_MIXED",
+  "questions": [
+    {
+      "stem": "In a certain code language, the word ROAD is written as URDG. How will the word SWAN be written in that same code language?",
+      "options": [
+        {
+          "option_text": "VZCQ",
+          "is_correct": false
+        },
+        {
+          "option_text": "VZDQ",
+          "is_correct": true
+        },
+        {
+          "option_text": "UXDQ",
+          "is_correct": false
+        },
+        {
+          "option_text": "UYCP",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The pattern is a uniform forward shift. Each letter is shifted forward by 3 positions in the English alphabet. R(+3)=U, O(+3)=R, A(+3)=D, D(+3)=G. Applying this to SWAN: S(+3)=V, W(+3)=Z, A(+3)=D, N(+3)=Q. The resulting code is VZDQ.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_CODING_DECODING_V_MIXED_00001"
+    },
+    {
+      "stem": "If in a certain code, the word APPLE is coded as BRSPJ, what will be the correct code for the word MANGO?",
+      "options": [
+        {
+          "option_text": "NBPJS",
+          "is_correct": false
+        },
+        {
+          "option_text": "OBRLT",
+          "is_correct": false
+        },
+        {
+          "option_text": "NCQKT",
+          "is_correct": true
+        },
+        {
+          "option_text": "MDQJS",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The shift increases incrementally. The letters are shifted by +1, +2, +3, +4, +5. A(+1)=B, P(+2)=R, P(+3)=S, L(+4)=P, E(+5)=J. Applying this to MANGO: M(+1)=N, A(+2)=C, N(+3)=Q, G(+4)=K, O(+5)=T. The code is NCQKT.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_CODING_DECODING_V_MIXED_00002"
+    },
+    {
+      "stem": "In a secret code language, the word SOLID is written as EKOSX. Following the exact same logic, what will be the code for the word LIQUID?",
+      "options": [
+        {
+          "option_text": "EKWUMR",
+          "is_correct": false
+        },
+        {
+          "option_text": "FKXUOR",
+          "is_correct": false
+        },
+        {
+          "option_text": "EKXUMS",
+          "is_correct": false
+        },
+        {
+          "option_text": "EKXUNR",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "First, the letters of the word are reversed (SOLID -> DILOS). Then an incremental shift of +1, +2, +3, +4, +5 is applied. D(+1)=E, I(+2)=K, L(+3)=O, O(+4)=S, S(+5)=X. For LIQUID, reverse it (DIUQIL). D(+1)=E, I(+2)=K, U(+3)=X, Q(+4)=U, I(+5)=N, L(+6)=R. Result: EKXUNR.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_CODING_DECODING_V_MIXED_00003"
+    },
+    {
+      "stem": "If the word TEACHER is coded as VGCEJGT, how would the word STUDENT be coded in that same specific language?",
+      "options": [
+        {
+          "option_text": "UVWFGPV",
+          "is_correct": true
+        },
+        {
+          "option_text": "UVWEGPV",
+          "is_correct": false
+        },
+        {
+          "option_text": "TUWEGPV",
+          "is_correct": false
+        },
+        {
+          "option_text": "UVWFFOU",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Every single letter in the word is shifted forward by exactly 2 positions. T(+2)=V, E(+2)=G, A(+2)=C, C(+2)=E, H(+2)=J, E(+2)=G, R(+2)=T. Applying this rule to STUDENT: S(+2)=U, T(+2)=V, U(+2)=W, D(+2)=F, E(+2)=G, N(+2)=P, T(+2)=V. Result is UVWFGPV.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_CODING_DECODING_V_MIXED_00004"
+    },
+    {
+      "stem": "In a certain code language, FLOWER is written as UOLDVI. How will the word GARDEN be written in that code?",
+      "options": [
+        {
+          "option_text": "SYHVUN",
+          "is_correct": false
+        },
+        {
+          "option_text": "UZJWWM",
+          "is_correct": false
+        },
+        {
+          "option_text": "TZIWVM",
+          "is_correct": true
+        },
+        {
+          "option_text": "TZIVWN",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "The pattern uses the exact reverse alphabetical pairs (A=Z, B=Y, C=X, etc.). F pairs with U, L with O, O with L, W with D, E with V, R with I. Applying this to GARDEN: G pairs with T, A with Z, R with I, D with W, E with V, N with M. The code is TZIWVM.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_CODING_DECODING_V_MIXED_00005"
+    },
+    {
+      "stem": "If the word WATER is coded as XYWAW and the word FIRE is coded as GKUI, what will be the code for the word EARTH?",
+      "options": [
+        {
+          "option_text": "FZVQN",
+          "is_correct": false
+        },
+        {
+          "option_text": "FYUPM",
+          "is_correct": true
+        },
+        {
+          "option_text": "EXUOL",
+          "is_correct": false
+        },
+        {
+          "option_text": "GZVQN",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "The shift pattern alternates and incrementally increases: +1, -2, +3, -4, +5. For WATER: W(+1)=X, A(-2)=Y, T(+3)=W, E(-4)=A, R(+5)=W. For FIRE: F(+1)=G, I(-2)=G... wait, FIRE has 4 letters. The pattern is consistent. For EARTH: E(+1)=F, A(-2)=Y (wrapping around), R(+3)=U, T(-4)=P, H(+5)=M. Code is FYUPM.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_CODING_DECODING_V_MIXED_00006"
+    },
+    {
+      "stem": "If SYSTEM is written as SYSMET and NEARER is written as AENRER, then how will FRACTION be written?",
+      "options": [
+        {
+          "option_text": "CARFNOJT",
+          "is_correct": false
+        },
+        {
+          "option_text": "ARFCNOIT",
+          "is_correct": false
+        },
+        {
+          "option_text": "CRAFNOIT",
+          "is_correct": false
+        },
+        {
+          "option_text": "CARFNOIT",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "The word is divided into two equal halves, and the letters within each half are reversed. SYSTEM (6 letters): SYS | TEM -> reversed -> SYS | MET = SYSMET. NEARER: NEA | RER -> reversed -> AEN | RER = AENRER. FRACTION (8 letters): FRAC | TION -> reversed -> CARF | NOIT = CARFNOIT.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:40+00:00",
+      "id": "sgk_REAS_CODING_DECODING_V_MIXED_00007"
+    }
+  ]
+}

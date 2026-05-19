@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Geometry — triangles, circles, coordinate geometry with visual problems",
+  "topic_code": "QNT_GEOMETRY_IV_MIXED",
+  "questions": [
+    {
+      "stem": "A right-angled triangle ABC has a right angle at C. The sides are: AC = 6 cm, BC = 8 cm. What is the length of the hypotenuse AB?",
+      "options": [
+        {
+          "option_text": "10 cm",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "14 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 cm",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Using Pythagorean theorem: AB² = AC² + BC² = 6² + 8² = 36 + 64 = 100. AB = √100 = 10 cm. This is the classic 6-8-10 Pythagorean triple (multiple of 3-4-5). ASCII aid:\n     C\n    /|\n   / | 8 cm\n  /  |\n A---B\n  6 cm",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_GEOMETRY_IV_MIXED_00001"
+    },
+    {
+      "stem": "A circle has a radius of 7 cm. What is the area of the circle? (Use π ≈ 22/7)",
+      "options": [
+        {
+          "option_text": "154 cm²",
+          "is_correct": true
+        },
+        {
+          "option_text": "308 cm²",
+          "is_correct": false
+        },
+        {
+          "option_text": "49 cm²",
+          "is_correct": false
+        },
+        {
+          "option_text": "77 cm²",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Area of circle = πr² = (22/7) × 7² = (22/7) × 49 = 22 × 7 = 154 cm². This is a direct formula application. Trap: students using π ≈ 3.14 but then forgetting to multiply by full r², or confusing with circumference (2πr).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_GEOMETRY_IV_MIXED_00002"
+    },
+    {
+      "stem": "In a triangle ABC, angle A = 60°, angle B = 50°. What is angle C?",
+      "options": [
+        {
+          "option_text": "70°",
+          "is_correct": true
+        },
+        {
+          "option_text": "110°",
+          "is_correct": false
+        },
+        {
+          "option_text": "50°",
+          "is_correct": false
+        },
+        {
+          "option_text": "30°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Sum of angles in a triangle = 180°. A + B + C = 180°. 60° + 50° + C = 180°. C = 180° - 110° = 70°. Fundamental geometry rule. Trap: students might forget the 180° rule or miscalculate the sum.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_GEOMETRY_IV_MIXED_00003"
+    },
+    {
+      "stem": "Two parallel lines are cut by a transversal. If one of the corresponding angles is 75°, what is the measure of the other corresponding angle?",
+      "options": [
+        {
+          "option_text": "75°",
+          "is_correct": true
+        },
+        {
+          "option_text": "105°",
+          "is_correct": false
+        },
+        {
+          "option_text": "150°",
+          "is_correct": false
+        },
+        {
+          "option_text": "15°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "When a transversal cuts two parallel lines, corresponding angles are equal. If one angle is 75°, the corresponding angle is also 75°. ASCII aid:\n     Line 1 ———————\n            \\\n             \\ 75°\n              \\\n     Line 2 ———————\n\nCorresponding angles are equal. Trap: confusing with alternate interior angles (also equal) or co-interior angles (supplementary, sum to 180°).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_GEOMETRY_IV_MIXED_00004"
+    },
+    {
+      "stem": "A rectangle has length 12 cm and width 5 cm. What is its perimeter?",
+      "options": [
+        {
+          "option_text": "34 cm",
+          "is_correct": true
+        },
+        {
+          "option_text": "60 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "17 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 cm",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Perimeter of rectangle = 2(length + width) = 2(12 + 5) = 2 × 17 = 34 cm. ASCII aid:\n┌─────────────────┐\n│    12 cm        │\n│                 │ 5 cm\n└─────────────────┘\nPerimeter = 34 cm. Trap: confusing perimeter with area (12 × 5 = 60).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_GEOMETRY_IV_MIXED_00005"
+    },
+    {
+      "stem": "A regular hexagon has a side length of 4 cm. What is its perimeter?",
+      "options": [
+        {
+          "option_text": "24 cm",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "48 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 cm",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "A regular hexagon has 6 equal sides. Perimeter = 6 × side length = 6 × 4 = 24 cm. ASCII representation:\n     ___\n    /   \\\n   /     \\\n  |       |\n   \\     /\n    \\___/\nEach side = 4 cm, so total = 24 cm. Trap: students might confuse with triangle (3 sides) or octagon (8 sides).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_GEOMETRY_IV_MIXED_00006"
+    },
+    {
+      "stem": "In triangle ABC, the sides are AB = 5 cm, BC = 12 cm, AC = 13 cm. What type of triangle is this?",
+      "options": [
+        {
+          "option_text": "Acute triangle (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Right-angled triangle (right angle at B)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Obtuse triangle (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Equilateral triangle (alternative interpretation)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Check Pythagorean theorem: 5² + 12² = 25 + 144 = 169 = 13². Since AB² + BC² = AC², triangle ABC is right-angled at B. This is the famous 5-12-13 Pythagorean triple. ASCII aid:\n     C\n    /|\n   / | 12 cm\n  /  |\n A---B\n  5 cm\n     13 cm (hypotenuse)\nTrap: confusing which angle is 90°, or not recognizing the Pythagorean triple.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_GEOMETRY_IV_MIXED_00007"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Floor Puzzles",
+  "topic_code": "REAS_PUZZLE_FLOOR_MIXED",
+  "questions": [
+    {
+      "stem": "Directions for next 7 questions:\nSeven persons A, B, C, D, E, F, and G live on seven different floors of a building (numbered 1 to 7, bottom to top).\n- A lives on an odd-numbered floor but not on floor 3.\n- Two people live between A and B.\n- C lives immediately above B.\n- D lives on an even-numbered floor above C.\n- Only three people live between D and E.\n- F lives above G but not immediately above.\n\nWho among the following lives on floor number 5?",
+      "options": [
+        {
+          "option_text": "D",
+          "is_correct": false
+        },
+        {
+          "option_text": "C",
+          "is_correct": true
+        },
+        {
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "option_text": "G",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Let's arrange them: D is even above C. 3 people between D & E. If D=6, E=2. Then C must be 5, 4, 3, or 1. If C=5, B=4 (C is immediately above B). Two people between A and B means A is 1 or 7. A is odd but not 3, so A=1 fits perfectly. Remaining floors 7 and 3 are for F and G. F is above G but not immediately, so F=7, G=3. Arrangement from top (7) to bottom (1) is: F, D, C, B, G, E, A. Thus, C lives on floor 5.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:43+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_MIXED_00001"
+    },
+    {
+      "stem": "Based on the given floor puzzle arrangement, on which exact floor does E live?",
+      "options": [
+        {
+          "option_text": "3rd floor",
+          "is_correct": false
+        },
+        {
+          "option_text": "4th floor",
+          "is_correct": false
+        },
+        {
+          "option_text": "2nd floor",
+          "is_correct": true
+        },
+        {
+          "option_text": "1st floor",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Based on the solved arrangement (7-F, 6-D, 5-C, 4-B, 3-G, 2-E, 1-A), person E strictly lives on the 2nd floor, leaving exactly three people between E (floor 2) and D (floor 6).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:43+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_MIXED_00002"
+    },
+    {
+      "stem": "Based on the given floor puzzle arrangement, how many persons live exactly between F and B?",
+      "options": [
+        {
+          "option_text": "Three",
+          "is_correct": false
+        },
+        {
+          "option_text": "One",
+          "is_correct": false
+        },
+        {
+          "option_text": "Four",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "F lives on floor 7 and B lives on floor 4. The floors exactly between them are floor 6 and floor 5, occupied by D and C respectively. Therefore, exactly two persons live between F and B.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:43+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_MIXED_00003"
+    },
+    {
+      "stem": "Based on the given floor puzzle arrangement, who lives immediately below E?",
+      "options": [
+        {
+          "option_text": "A",
+          "is_correct": true
+        },
+        {
+          "option_text": "G",
+          "is_correct": false
+        },
+        {
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "option_text": "C",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "E lives on the 2nd floor. The floor immediately below the 2nd floor is the 1st floor. Based on the arrangement, A lives on the 1st floor. Therefore, A lives immediately below E.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:43+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_MIXED_00004"
+    },
+    {
+      "stem": "Four of the following five are alike in a certain way based on their positions in the given arrangement and so form a group. Which one does not belong to that group? (A, G, C, D)",
+      "options": [
+        {
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "option_text": "G",
+          "is_correct": false
+        },
+        {
+          "option_text": "D",
+          "is_correct": true
+        },
+        {
+          "option_text": "C",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Looking at their floor numbers: A lives on floor 1 (odd), G lives on floor 3 (odd), C lives on floor 5 (odd), but D lives on floor 6 (even). Because D is the only one living on an even-numbered floor, D does not belong to the group.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:43+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_MIXED_00005"
+    },
+    {
+      "stem": "Based on the given floor puzzle arrangement, which of the following statements is definitively true regarding G?",
+      "options": [
+        {
+          "option_text": "G lives on an even-numbered floor immediately below B.",
+          "is_correct": false
+        },
+        {
+          "option_text": "G lives on an odd-numbered floor immediately above E.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only one single person lives securely between G and A.",
+          "is_correct": false
+        },
+        {
+          "option_text": "G lives quietly on the absolute top-most floor (7).",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "G lives on floor 3, which is an odd-numbered floor. E lives on floor 2. Therefore, G lives immediately above E. The other statements are false (G is not even, G is separated from A by E, G is not on top).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:43+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_MIXED_00006"
+    },
+    {
+      "stem": "If all the seven persons are arranged in strict alphabetical order from top to bottom, the position of how many persons will absolutely remain unchanged?",
+      "options": [
+        {
+          "option_text": "None",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two",
+          "is_correct": false
+        },
+        {
+          "option_text": "Three",
+          "is_correct": false
+        },
+        {
+          "option_text": "One",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Original order from top (7) to bottom (1) is: F, D, C, B, G, E, A. Alphabetical order from top to bottom is: A, B, C, D, E, F, G. Comparing the positions: Floor 5 original is C, and floor 5 alphabetical is C. All other positions change. Therefore, only one person's position remains completely unchanged.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:43+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_MIXED_00007"
+    }
+  ]
+}

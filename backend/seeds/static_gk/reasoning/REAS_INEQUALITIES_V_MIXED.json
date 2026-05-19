@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Inequalities: 5th batch",
+  "topic_code": "REAS_INEQUALITIES_V_MIXED",
+  "questions": [
+    {
+      "stem": "Given the strict mathematical statement: A > B = C < D. Which of the following clear conclusions rigidly logically follows?\nConclusions:\nI. A > C\nII. B < D",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "From the statement: A > B = C. Therefore, replacing B with C gives A > C. So, I follows. From B = C < D, replacing C with B gives B < D. So, II follows. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_V_MIXED_00001"
+    },
+    {
+      "stem": "Given the strict mathematical statement: P ≤ Q < R = S. Which of the following clear conclusions rigidly logically follows?\nConclusions:\nI. P < S\nII. Q < S",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "From the statement: P ≤ Q < R = S. The relationship between P and S involves a '<' sign, which overrides the '≤'. So, P < S. Thus, I follows. Also, Q < R = S means Q < S. Thus, II follows. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_V_MIXED_00002"
+    },
+    {
+      "stem": "Given the strict mathematical statement: M ≥ N = O > P ≤ Q. Which of the following clear conclusions rigidly logically follows?\nConclusions:\nI. M > P\nII. N < Q",
+      "options": [
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "For I: M ≥ N = O > P. The signs are aligned (≥, =, >). The dominant sign is '>'. So, M > P. Thus, I follows. For II: N = O > P ≤ Q. The signs between N and Q are opposing (>, ≤). No definite relationship can be established between N and Q. Thus, II does not follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_V_MIXED_00003"
+    },
+    {
+      "stem": "Given the strict mathematical statement: X < Y ≤ Z = W ≥ V. Which of the following clear conclusions rigidly logically follows?\nConclusions:\nI. X < W\nII. Y ≥ V",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "For I: X < Y ≤ Z = W. The signs are aligned and the dominant sign is '<'. So, X < W. Thus, I follows. For II: Y ≤ Z = W ≥ V. The signs between Y and V are opposing (≤, ≥). No definite relationship can be established. Thus, II does not follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_V_MIXED_00004"
+    },
+    {
+      "stem": "Given the strict mathematical statements: D = E > F ≥ G; F < H. Which of the following clear conclusions rigidly logically follows?\nConclusions:\nI. D > G\nII. E < H",
+      "options": [
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "For I: D = E > F ≥ G. The dominant sign is '>'. Therefore, D > G. I follows. For II: combining statements, E > F < H. The signs between E and H are opposing (>, <). Therefore, no relationship can be determined between E and H. II does not follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_V_MIXED_00005"
+    },
+    {
+      "stem": "Given the strict mathematical statements: J ≥ K > L = M < N; O ≤ L. Which of the following clear conclusions rigidly logically follows?\nConclusions:\nI. J > O\nII. N > O",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "For I: We know J ≥ K > L. From the second statement, O ≤ L, which is the same as L ≥ O. Combining: J ≥ K > L ≥ O. The dominant sign is '>'. So, J > O. I follows. For II: We know N > M. Since M = L, N > L. From L ≥ O, combining gives N > L ≥ O. Dominant sign is '>'. So, N > O. II follows. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_V_MIXED_00006"
+    },
+    {
+      "stem": "Given the strict mathematical statements: S ≤ T = U < V ≥ W; U > X. Which of the following clear conclusions rigidly logically follows?\nConclusions:\nI. V > X\nII. S < V",
+      "options": [
+        {
+          "option_text": "Only I follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II follow",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "For I: We know V > U. From the second statement, U > X. Combining gives V > U > X. So, V > X. I follows. For II: From the main statement, S ≤ T = U < V. The dominant sign here is '<'. Therefore, S < V. II follows. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_V_MIXED_00007"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Inequalities: 4th batch",
+  "topic_code": "REAS_INEQUALITIES_IV_MIXED",
+  "questions": [
+    {
+      "stem": "Statements: A > B ≥ C = D < E\nConclusions:\nI. A > C\nII. B ≥ D",
+      "options": [
+        {
+          "option_text": "Only conclusion I definitively follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusion I and II definitively follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only conclusion II definitively follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither conclusion I nor II definitively follow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "From the statements, A > B and B ≥ C. Combining these, A > C (Conclusion I follows). Also, since B ≥ C and C = D, substituting D for C gives B ≥ D (Conclusion II follows). Therefore, both conclusions are logically true.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_IV_MIXED_00001"
+    },
+    {
+      "stem": "Statements: P < Q ≤ R = S > T\nConclusions:\nI. P < S\nII. R > T",
+      "options": [
+        {
+          "option_text": "Only conclusion I definitively follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion II definitively follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusion I and II definitively follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither conclusion I nor II definitively follow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "From the statements, P < Q ≤ R = S. Comparing P and S across the chain gives P < S (Conclusion I follows). Also, since R = S and S > T, substituting R for S gives R > T (Conclusion II follows). Both are true.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_IV_MIXED_00002"
+    },
+    {
+      "stem": "Statements: M ≥ N > O = P ≤ Q\nConclusions:\nI. M > P\nII. N > Q",
+      "options": [
+        {
+          "option_text": "Only conclusion II definitively follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusion I and II definitively follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither conclusion I nor II definitively follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion I definitively follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "For I: M ≥ N > O = P. Tracing M to P involves a strict '>' sign, making M > P true. For II: N > O = P ≤ Q. Between N and Q, the signs face opposite directions (>, ≤), establishing no definite relationship. So II does not follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_IV_MIXED_00003"
+    },
+    {
+      "stem": "Statements: W = X ≤ Y > Z; X ≥ U\nConclusions:\nI. Y ≥ U\nII. W > Z",
+      "options": [
+        {
+          "option_text": "Only conclusion I definitively follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only conclusion II definitively follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusion I and II definitively follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither conclusion I nor II definitively follow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "From the statements, U ≤ X ≤ Y. Combining these gives U ≤ Y or Y ≥ U (Conclusion I follows). For II, trace W to Z: W = X ≤ Y > Z. The signs face opposite directions (≤, >) between W and Z, meaning no definite relationship exists. Conclusion II does not follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_IV_MIXED_00004"
+    },
+    {
+      "stem": "Statements: E < F = G ≥ H; G < I\nConclusions:\nI. I > H\nII. E < G",
+      "options": [
+        {
+          "option_text": "Only conclusion I definitively follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion II definitively follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusion I and II definitively follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither conclusion I nor II definitively follow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "For I: G ≥ H and I > G. Combining gives I > G ≥ H, so I > H (Conclusion I follows). For II: E < F and F = G. Substituting G for F gives E < G (Conclusion II follows). Both are completely true.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_IV_MIXED_00005"
+    },
+    {
+      "stem": "In a coded language:\nA @ B means A ≥ B\nA # B means A > B\nA $ B means A = B\nA * B means A ≤ B\nA % B means A < B\nStatements: P @ Q, Q $ R, R # S\nConclusions: I. P # S  II. P @ R",
+      "options": [
+        {
+          "option_text": "Only conclusion I definitively follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusion I and II definitively follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only conclusion II definitively follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither conclusion I nor II definitively follow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Decoding the statements gives: P ≥ Q, Q = R, R > S. Combined: P ≥ Q = R > S. For Conclusion I: P # S means P > S. Tracing P to S shows P > S is indeed true. For Conclusion II: P @ R means P ≥ R. Since P ≥ Q and Q = R, P ≥ R is also true. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_IV_MIXED_00006"
+    },
+    {
+      "stem": "Using the same code as above:\nStatements: M * N, N % O, O $ P, P @ Q\nConclusions: I. M % P  II. N % Q",
+      "options": [
+        {
+          "option_text": "Only conclusion II definitively follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both conclusion I and II definitively follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither conclusion I nor II definitively follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only conclusion I definitively follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Decoding gives: M ≤ N, N < O, O = P, P ≥ Q. Combined: M ≤ N < O = P ≥ Q. For Conclusion I: M % P means M < P. Tracing M to P shows M < P is true. For Conclusion II: N % Q means N < Q. Tracing N to Q shows N < O = P ≥ Q. The opposite signs (<, ≥) mean no definite relation exists between N and Q. So II does not follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:41+00:00",
+      "id": "sgk_REAS_INEQUALITIES_IV_MIXED_00007"
+    }
+  ]
+}

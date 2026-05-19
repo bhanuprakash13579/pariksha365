@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Time & Work: Advanced",
+  "topic_code": "QNT_TIME_WORK_ADVANCED_MIXED",
+  "questions": [
+    {
+      "stem": "A can do a piece of work in 10 days and B can do it in 15 days. How long will they definitively take if both work together?",
+      "options": [
+        {
+          "option_text": "5 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 days",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "If A takes 'x' days and B takes 'y' days, they together take (x*y)/(x+y) days. Here, (10*15)/(10+15) = 150/25 = 6 days.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_WORK_ADVANCED_MIXED_00001"
+    },
+    {
+      "stem": "If 10 men can completely finish a work in exactly 12 days, in how many days can 15 men complete the same amount of work?",
+      "options": [
+        {
+          "option_text": "6 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "9 days",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Using the formula M1*D1 = M2*D2 (where M is men and D is days). 10 * 12 = 15 * D2. So, 120 = 15 * D2, which means D2 = 120 / 15 = 8 days.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_WORK_ADVANCED_MIXED_00002"
+    },
+    {
+      "stem": "A, B and C can do a piece of work in 20, 30 and 60 days respectively. In how many days can A do the work if he is mathematically assisted by B and C on every third day?",
+      "options": [
+        {
+          "option_text": "12 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 days",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "A works alone on day 1 and 2. On day 3, A, B, and C work together. Work done in 3 days = A's 3 days work + B's 1 day work + C's 1 day work = (3/20) + (1/30) + (1/60) = (9+2+1)/60 = 12/60 = 1/5. Since 1/5th work is done in 3 days, total work is done in 5 * 3 = 15 days.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_WORK_ADVANCED_MIXED_00003"
+    },
+    {
+      "stem": "A is exactly twice as good a workman as B and together they strictly finish a piece of work in exactly 14 days. The precise number of days taken by A alone to finish the work is:",
+      "options": [
+        {
+          "option_text": "21 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "14 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "28 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "42 days",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Ratio of efficiency of A to B is 2:1. So, A does 2 units/day and B does 1 unit/day. Together they do 3 units/day. Total work = 3 units/day * 14 days = 42 units. A alone will take 42 / 2 = 21 days.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_WORK_ADVANCED_MIXED_00004"
+    },
+    {
+      "stem": "4 men and 6 women can complete a work in 8 days, while 3 men and 7 women can complete it in 10 days. In how many days will exactly 10 women complete the entire work alone?",
+      "options": [
+        {
+          "option_text": "35 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "50 days",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Let 1 man's 1 day work be 'm' and 1 woman's be 'w'. 8(4m + 6w) = 1 (total work) => 32m + 48w = 1. Also 10(3m + 7w) = 1 => 30m + 70w = 1. Equating them: 32m + 48w = 30m + 70w => 2m = 22w => 1m = 11w. Substitute 1m=11w into the first equation: 4(11w) + 6w = 50w. So 50 women can do it in 8 days. 1 woman takes 50*8 = 400 days. 10 women take 400/10 = 40 days.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_WORK_ADVANCED_MIXED_00005"
+    },
+    {
+      "stem": "A, B, and C can complete a work separately in exactly 24, 36 and 48 days respectively. They started entirely together but C left exactly 4 days after the start and A left exactly 3 days before the completion of the work. In how many days will the work be totally completed?",
+      "options": [
+        {
+          "option_text": "12 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "16 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 days",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "LCM of 24, 36, 48 is 144 units (total work). Efficiencies: A=6, B=4, C=3. Let total time be T days. B worked for all T days. A worked for (T - 3) days. C worked for 4 days. Work done = 6(T - 3) + 4(T) + 3(4) = 144. 6T - 18 + 4T + 12 = 144 => 10T - 6 = 144 => 10T = 150 => T = 15 days.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_WORK_ADVANCED_MIXED_00006"
+    },
+    {
+      "stem": "Two workers A and B are engaged to do a heavy work. A working alone takes exactly 8 hours more to complete the job than if both worked strictly together. If B worked alone, he would firmly need 4.5 hours more to complete the job than they both working together. What exact time would they take to do the work together?",
+      "options": [
+        {
+          "option_text": "5 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 hours",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "If A alone takes 'x + a' days and B alone takes 'x + b' days, and together they take 'x' days, the formula is x = √(a × b). Here, a = 8 and b = 4.5. x = √(8 × 4.5) = √36 = 6 hours.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:36+00:00",
+      "id": "sgk_QNT_TIME_WORK_ADVANCED_MIXED_00007"
+    }
+  ]
+}

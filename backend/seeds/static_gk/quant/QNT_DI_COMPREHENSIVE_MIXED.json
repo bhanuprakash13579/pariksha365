@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Data Interpretation — tables, bar charts, pie charts analysis",
+  "topic_code": "QNT_DI_COMPREHENSIVE_MIXED",
+  "questions": [
+    {
+      "stem": "The following table shows the monthly sales (in thousands) of a company across 3 quarters:\n\n┌─────────┬──────────┬──────────┬──────────┐\n│ Quarter │ Product A│ Product B│ Product C│\n├─────────┼──────────┼──────────┼──────────┤\n│ Q1      │    50    │    30    │    20    │\n│ Q2      │    60    │    35    │    25    │\n│ Q3      │    70    │    40    │    30    │\n└─────────┴──────────┴──────────┴──────────┘\n\nWhat is the total sales for Product A across all three quarters (in thousands)?",
+      "options": [
+        {
+          "option_text": "180",
+          "is_correct": true
+        },
+        {
+          "option_text": "150",
+          "is_correct": false
+        },
+        {
+          "option_text": "200",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "From the table, Product A sales: Q1 = 50, Q2 = 60, Q3 = 70. Total = 50 + 60 + 70 = 180 thousand. Direct table reading. Trap: students might confuse products or add wrong quarters.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_DI_COMPREHENSIVE_MIXED_00001"
+    },
+    {
+      "stem": "Using the sales table from Q1, which product had the lowest total sales across all three quarters?",
+      "options": [
+        {
+          "option_text": "Product A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Product B",
+          "is_correct": false
+        },
+        {
+          "option_text": "Product C",
+          "is_correct": true
+        },
+        {
+          "option_text": "All equal",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "Product totals: A = 180, B = 30+35+40 = 105, C = 20+25+30 = 75. Product C has the lowest total at 75 thousand. Trap: confusing totals or not reading all rows carefully.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_DI_COMPREHENSIVE_MIXED_00002"
+    },
+    {
+      "stem": "A pie chart shows the distribution of students across 4 departments: Engineering (45%), Commerce (25%), Science (20%), Arts (10%). If total students = 2000, how many students are in the Commerce department?",
+      "options": [
+        {
+          "option_text": "500",
+          "is_correct": true
+        },
+        {
+          "option_text": "400",
+          "is_correct": false
+        },
+        {
+          "option_text": "300",
+          "is_correct": false
+        },
+        {
+          "option_text": "450",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Commerce students = 25% of 2000 = 0.25 × 2000 = 500. Pie chart interpretation: multiply percentage by total. Trap: students might use wrong percentage or forget to convert percentage to decimal.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_DI_COMPREHENSIVE_MIXED_00003"
+    },
+    {
+      "stem": "A bar chart shows quarterly revenue (in millions) for a company:\n\nQ1: 150M, Q2: 180M, Q3: 200M, Q4: 160M\n\nWhat is the average quarterly revenue?",
+      "options": [
+        {
+          "option_text": "172.5M",
+          "is_correct": true
+        },
+        {
+          "option_text": "175M (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "180M (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "165M (alternative interpretation)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Total revenue = 150 + 180 + 200 + 160 = 690M. Average = 690 / 4 = 172.5M. Bar chart reading + averaging. Trap: students might pick the highest or a single quarter value instead of averaging.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_DI_COMPREHENSIVE_MIXED_00004"
+    },
+    {
+      "stem": "In a company's workforce distribution:\n- Management: 10% of workforce\n- Sales: 30% of workforce\n- Operations: 40% of workforce\n- Administration: 20% of workforce\n\nIf the company has 5000 employees, how many are in Operations?",
+      "options": [
+        {
+          "option_text": "1500",
+          "is_correct": false
+        },
+        {
+          "option_text": "2000",
+          "is_correct": true
+        },
+        {
+          "option_text": "1000",
+          "is_correct": false
+        },
+        {
+          "option_text": "2500",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Operations = 40% of 5000 = 0.40 × 5000 = 2000 employees. Pie chart or percentage table calculation. Trap: confusing percentages or picking wrong category.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_DI_COMPREHENSIVE_MIXED_00005"
+    },
+    {
+      "stem": "A line graph shows website traffic (in thousands of visits) over 5 months:\nJan: 100k, Feb: 120k, Mar: 140k, Apr: 130k, May: 150k\n\nWhat is the percentage increase from January to May?",
+      "options": [
+        {
+          "option_text": "40%",
+          "is_correct": false
+        },
+        {
+          "option_text": "50%",
+          "is_correct": true
+        },
+        {
+          "option_text": "35%",
+          "is_correct": false
+        },
+        {
+          "option_text": "45%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Jan = 100k, May = 150k. Percentage increase = (150 - 100) / 100 × 100% = 50 / 100 × 100% = 50%. Line graph reading + percentage formula. Trap: students might confuse absolute change (50k) with percentage, or not use the correct base (Jan, not average).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_DI_COMPREHENSIVE_MIXED_00006"
+    },
+    {
+      "stem": "A stacked bar chart shows expense distribution (in rupees) for a household across 4 categories for 2 months:\n\nMonth 1: Rent 30,000 | Food 15,000 | Utilities 5,000 | Other 10,000\nMonth 2: Rent 30,000 | Food 18,000 | Utilities 6,000 | Other 12,000\n\nWhat is the percentage increase in total household expenses from Month 1 to Month 2?",
+      "options": [
+        {
+          "option_text": "8% (alternative interpretation)",
+          "is_correct": false
+        },
+        {
+          "option_text": "10%",
+          "is_correct": true
+        },
+        {
+          "option_text": "12%",
+          "is_correct": false
+        },
+        {
+          "option_text": "15%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "Month 1 total = 30000 + 15000 + 5000 + 10000 = 60000. Month 2 total = 30000 + 18000 + 6000 + 12000 = 66000. Percentage increase = (66000 - 60000) / 60000 × 100% = 6000 / 60000 × 100% = 10%. Stacked bar reading + multi-step calculation. Trap: miscalculating totals or using Month 1 instead of Month 2 as base in some formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:29+00:00",
+      "id": "sgk_QNT_DI_COMPREHENSIVE_MIXED_00007"
+    }
+  ]
+}

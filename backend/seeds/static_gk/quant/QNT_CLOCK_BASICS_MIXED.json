@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Clocks: angle between hands, meeting times",
+  "topic_code": "QNT_CLOCK_BASICS_MIXED",
+  "questions": [
+    {
+      "stem": "What is the exact angle between the hour hand and the minute hand of a clock when the time is exactly 3:00?",
+      "options": [
+        {
+          "option_text": "60 degrees",
+          "is_correct": false
+        },
+        {
+          "option_text": "90 degrees",
+          "is_correct": true
+        },
+        {
+          "option_text": "45 degrees",
+          "is_correct": false
+        },
+        {
+          "option_text": "180 degrees",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "At exactly 3:00, the minute hand points precisely at 12 and the hour hand points precisely at 3. The clock face is divided into 12 hours, representing 360 degrees. Each hour gap represents 30 degrees. The distance between 12 and 3 is 3 hour gaps, so 3 × 30 = 90 degrees.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:28+00:00",
+      "id": "sgk_QNT_CLOCK_BASICS_MIXED_00001"
+    },
+    {
+      "stem": "How many times do the hands of a clock completely coincide (overlap exactly) in a continuous 12-hour period?",
+      "options": [
+        {
+          "option_text": "12 times",
+          "is_correct": false
+        },
+        {
+          "option_text": "22 times",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 times",
+          "is_correct": true
+        },
+        {
+          "option_text": "24 times",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The hands of a clock coincide once every hour. However, between 11:00 and 1:00, they coincide only once, which is exactly at 12:00. Therefore, in 12 hours, they coincide exactly 11 times (not 12).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:28+00:00",
+      "id": "sgk_QNT_CLOCK_BASICS_MIXED_00002"
+    },
+    {
+      "stem": "What is the angle between the minute hand and the hour hand of a clock when the time is 8:20?",
+      "options": [
+        {
+          "option_text": "120 degrees",
+          "is_correct": false
+        },
+        {
+          "option_text": "110 degrees",
+          "is_correct": false
+        },
+        {
+          "option_text": "140 degrees",
+          "is_correct": false
+        },
+        {
+          "option_text": "130 degrees",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "The formula for the angle between hands is |30H - 5.5M|. Here H = 8 and M = 20. Angle = |30(8) - 5.5(20)| = |240 - 110| = 130 degrees.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:28+00:00",
+      "id": "sgk_QNT_CLOCK_BASICS_MIXED_00003"
+    },
+    {
+      "stem": "Calculate the exact angle between the minute hand and the hour hand when a clock shows the time as 4:40.",
+      "options": [
+        {
+          "option_text": "100 degrees",
+          "is_correct": true
+        },
+        {
+          "option_text": "110 degrees",
+          "is_correct": false
+        },
+        {
+          "option_text": "120 degrees",
+          "is_correct": false
+        },
+        {
+          "option_text": "130 degrees",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "Using the standard angle formula: Angle = |30H - 5.5M|. Here H = 4 and M = 40. Angle = |30(4) - 5.5(40)| = |120 - 220| = |-100| = 100 degrees.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:28+00:00",
+      "id": "sgk_QNT_CLOCK_BASICS_MIXED_00004"
+    },
+    {
+      "stem": "At what exact time between 4 o'clock and 5 o'clock will the hands of a clock be perfectly coincident (overlapping)?",
+      "options": [
+        {
+          "option_text": "22 and 8/11 minutes past 4",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 and 5/11 minutes past 4",
+          "is_correct": false
+        },
+        {
+          "option_text": "21 and 9/11 minutes past 4",
+          "is_correct": true
+        },
+        {
+          "option_text": "23 and 7/11 minutes past 4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "The formula to find the minute when hands coincide is M = (60/11) × H. Here H = 4. M = (60/11) × 4 = 240/11. Dividing 240 by 11 gives exactly 21 with a remainder of 9. Therefore, it is 21 and 9/11 minutes past 4.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:28+00:00",
+      "id": "sgk_QNT_CLOCK_BASICS_MIXED_00005"
+    },
+    {
+      "stem": "At what precise time between 7 o'clock and 8 o'clock are the hands of a clock in the same straight line, but not perfectly together (i.e., pointing in exactly opposite directions)?",
+      "options": [
+        {
+          "option_text": "6 and 4/11 minutes past 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 and 5/11 minutes past 7",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 and 6/11 minutes past 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 and 3/11 minutes past 7",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "For hands to be in opposite directions (180 degrees apart), the formula is M = (60/11) × (H ± 6). Since H = 7 (which is > 6), we subtract 6. M = (60/11) × (7 - 6) = 60/11. Dividing 60 by 11 gives exactly 5 with a remainder of 5. Thus, 5 and 5/11 minutes past 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:28+00:00",
+      "id": "sgk_QNT_CLOCK_BASICS_MIXED_00006"
+    },
+    {
+      "stem": "A highly precise clock is started at exactly noon. By the time it is exactly 10 minutes past 5 on the same day, the hour hand has turned through how many total degrees?",
+      "options": [
+        {
+          "option_text": "145 degrees",
+          "is_correct": false
+        },
+        {
+          "option_text": "160 degrees",
+          "is_correct": false
+        },
+        {
+          "option_text": "150 degrees",
+          "is_correct": false
+        },
+        {
+          "option_text": "155 degrees",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "First, calculate the total elapsed minutes from noon (12:00) to 5:10. Total hours = 5, which is 5 × 60 = 300 minutes. Plus 10 extra minutes = 310 total minutes. The hour hand moves at a constant speed of exactly 0.5 degrees per minute. Total angle = 310 × 0.5 = 155 degrees.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:28+00:00",
+      "id": "sgk_QNT_CLOCK_BASICS_MIXED_00007"
+    }
+  ]
+}

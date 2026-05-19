@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Coding & Decoding: 9th batch",
+  "topic_code": "REAS_CODING_DECODING_IX_MIXED",
+  "questions": [
+    {
+      "stem": "If the word CAR is numerically coded perfectly as 3118, how exactly is the word DOG confidently numerically coded?",
+      "options": [
+        {
+          "option_text": "4167",
+          "is_correct": false
+        },
+        {
+          "option_text": "4157",
+          "is_correct": true
+        },
+        {
+          "option_text": "4147",
+          "is_correct": false
+        },
+        {
+          "option_text": "3157",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The mathematical coding logic is simply placing the exact alphabetical position value of each letter sequentially. C=3, A=1, R=18 -> 3118. Therefore, D=4, O=15, G=7 -> 4157.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:39+00:00",
+      "id": "sgk_REAS_CODING_DECODING_IX_MIXED_00001"
+    },
+    {
+      "stem": "If the short word CAT is alphabetically formally written as DBU, how explicitly is the word DOG safely formally written?",
+      "options": [
+        {
+          "option_text": "FQI",
+          "is_correct": false
+        },
+        {
+          "option_text": "EPI",
+          "is_correct": false
+        },
+        {
+          "option_text": "EPH",
+          "is_correct": true
+        },
+        {
+          "option_text": "FPH",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "explanation": "The logical pattern replaces every single letter strictly with the immediate next alphabetical letter (+1 shift). C -> D, A -> B, T -> U. Applying this safely to DOG: D -> E, O -> P, G -> H. Result is EPH.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:39+00:00",
+      "id": "sgk_REAS_CODING_DECODING_IX_MIXED_00002"
+    },
+    {
+      "stem": "In a certain secret code, '786' means 'study very hard', '958' completely means 'hard work pays', and '645' safely means 'study and work'. Which exact numerical digit uniquely stands for 'very'?",
+      "options": [
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "From the first and second statements ('786' and '958'), the common digit is '8', and the common word is 'hard'. So, 'hard' = 8. From the first and third statements ('786' and '645'), the common digit is '6', and the common word is 'study'. So, 'study' = 6. Now, in '786', 8 is 'hard', 6 is 'study', leaving 7 precisely for the word 'very'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:39+00:00",
+      "id": "sgk_REAS_CODING_DECODING_IX_MIXED_00003"
+    },
+    {
+      "stem": "If BAT is mathematically perfectly coded securely as 23 and CAT is firmly identically coded as 24, how exactly will you securely completely code the word BALL?",
+      "options": [
+        {
+          "option_text": "27",
+          "is_correct": true
+        },
+        {
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "26",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "The code is the simple sum of the alphabetical positions of the letters. B(2) + A(1) + T(20) = 23. C(3) + A(1) + T(20) = 24. For BALL: B(2) + A(1) + L(12) + L(12) = 27.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:39+00:00",
+      "id": "sgk_REAS_CODING_DECODING_IX_MIXED_00004"
+    },
+    {
+      "stem": "If the word RED is uniquely coded exactly as 6720, how is the word GREEN securely logically coded?",
+      "options": [
+        {
+          "option_text": "1677199",
+          "is_correct": false
+        },
+        {
+          "option_text": "9207716",
+          "is_correct": false
+        },
+        {
+          "option_text": "1677209",
+          "is_correct": true
+        },
+        {
+          "option_text": "1671209",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "explanation": "The logic is: take the alphabetical position of each letter, perfectly add 2 to it, and strictly reverse the entire final sequence. R(18+2=20), E(5+2=7), D(4+2=6) -> reversed is 6,7,20. For GREEN: G(7+2=9), R(18+2=20), E(5+2=7), E(5+2=7), N(14+2=16). Sequence is 9, 20, 7, 7, 16. Reversing it gives 1677209.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:39+00:00",
+      "id": "sgk_REAS_CODING_DECODING_IX_MIXED_00005"
+    },
+    {
+      "stem": "If the long word MACHINE is heavily and securely coded as exactly 19-7-9-14-15-20-11, how precisely is the word DANGER correctly accurately completely explicitly formally mathematically coded?",
+      "options": [
+        {
+          "option_text": "10-7-20-14-11-24",
+          "is_correct": false
+        },
+        {
+          "option_text": "10-7-20-13-11-24",
+          "is_correct": true
+        },
+        {
+          "option_text": "11-7-20-13-11-24",
+          "is_correct": false
+        },
+        {
+          "option_text": "10-8-20-13-11-24",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "The logic simply adds a constant exactly 6 to the regular alphabetical order position of every single letter. M(13)+6=19, A(1)+6=7, C(3)+6=9, H(8)+6=14, I(9)+6=15, N(14)+6=20, E(5)+6=11. Applying securely strictly to DANGER: D(4)+6=10, A(1)+6=7, N(14)+6=20, G(7)+6=13, E(5)+6=11, R(18)+6=24. Result: 10-7-20-13-11-24.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:39+00:00",
+      "id": "sgk_REAS_CODING_DECODING_IX_MIXED_00006"
+    },
+    {
+      "stem": "If the English word SPECIAL is perfectly flawlessly mathematically cleanly accurately completely coded specifically precisely exactly securely accurately cleanly actively formally directly safely accurately as explicitly numerically precisely confidently purely cleanly exactly precisely securely confidently accurately 65, how is the exact strict specific word CONNECT logically strictly completely appropriately properly mathematically securely coded?",
+      "options": [
+        {
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "option_text": "75",
+          "is_correct": false
+        },
+        {
+          "option_text": "78",
+          "is_correct": false
+        },
+        {
+          "option_text": "74",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "explanation": "The logic adds the standard position numbers of the alphabets. SPECIAL: S(19) + P(16) + E(5) + C(3) + I(9) + A(1) + L(12) = 65. For CONNECT: C(3) + O(15) + N(14) + N(14) + E(5) + C(3) + T(20) = 74.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "gemini-batch-fix-2026-05-15",
+      "generated_at": "2026-05-19T08:44:39+00:00",
+      "id": "sgk_REAS_CODING_DECODING_IX_MIXED_00007"
+    }
+  ]
+}
