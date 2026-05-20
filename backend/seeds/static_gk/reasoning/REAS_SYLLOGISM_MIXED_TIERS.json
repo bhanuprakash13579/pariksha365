@@ -177,6 +177,1260 @@
       "generator_tag": "claude-opus-2026-04-21-reas-sym-05",
       "generated_at": "2026-04-21T18:40:00+00:00",
       "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00005"
+    },
+    {
+      "stem": "Statements: All pens are books. All books are stationery.\nConclusions: I. All pens are stationery. II. Some stationery are pens.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "All P→B→S ⟹ All P are S. Particular conversion: Some S are P. Both follow.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721128+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00006"
+    },
+    {
+      "stem": "Statements: No dog is a cat. All cats are animals.\nConclusions: I. No dog is an animal. II. Some animals are not dogs.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "No D is C, All C are A. Dogs and cats are disjoint. Conc I is wrong (dogs can be animals via other paths). Conc II follows: cats are animals and no cat is a dog, so some animals are not dogs.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721152+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00007"
+    },
+    {
+      "stem": "Statements: Some chairs are tables. All tables are furniture.\nConclusions: I. Some chairs are furniture. II. All furniture are chairs.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Some C are T, All T→F ⟹ Some C are F (Darii). Conc II reverses universal — invalid. Only I.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721158+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00008"
+    },
+    {
+      "stem": "Statements: All mangoes are fruits. No fruit is a vegetable.\nConclusions: I. No mango is a vegetable. II. Some vegetables are mangoes.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "All M→F, No F is V ⟹ No M is V. Conc I follows. Conc II contradicts Conc I.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721164+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00009"
+    },
+    {
+      "stem": "Statements: Some birds are parrots. No parrot is a crow.\nConclusions: I. Some birds are not crows. II. All crows are birds.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Some B are P, No P is C ⟹ Some B (the parrots) are not C. Conc I follows. Conc II has no support.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721171+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00010"
+    },
+    {
+      "stem": "Statements: All apples are red. All red things are beautiful.\nConclusions: I. All apples are beautiful. II. Some beautiful things are apples.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "All A→R→B. Both Barbara chain and particular conversion hold. Both follow.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721175+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00011"
+    },
+    {
+      "stem": "Statements: All cats are mammals. All dogs are mammals.\nConclusions: I. All cats are dogs. II. Some cats are dogs.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "explanation": "Both are subsets of mammals but no direct C-D link exists. Neither follows.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721179+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00012"
+    },
+    {
+      "stem": "Statements: All roses are flowers. All flowers are plants. All plants are living things.\nConclusions: I. All roses are living things. II. Some living things are roses.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "Triple chain R→F→P→L. Both Conc I and its particular conversion follow.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721184+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00013"
+    },
+    {
+      "stem": "Statements: Some teachers are writers. All writers are intelligent.\nConclusions: I. Some teachers are intelligent. II. Some intelligent people are teachers.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "Some T→W, All W→I ⟹ Some T are I (Darii). Particular conversion: Some I are T. Both follow.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721188+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00014"
+    },
+    {
+      "stem": "Statements: No star is a planet. All planets are celestial bodies.\nConclusions: I. No star is a celestial body. II. Some celestial bodies are not stars.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Stars and planets are disjoint, but stars may independently be celestial bodies. Conc I too strong. Conc II: planets are celestial bodies and no planet is a star → some celestial bodies are not stars.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721194+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00015"
+    },
+    {
+      "stem": "Statements: Some balls are red. All red things are circles.\nConclusions: I. Some balls are circles. II. All circles are red.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Some B→R, All R→C ⟹ Some B are C (Darii). Conc II reverses universal — invalid. Only I.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721197+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00016"
+    },
+    {
+      "stem": "Statements: No stone is gold. All gold is metal.\nConclusions: I. No stone is metal. II. Some metals are not stones.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Stones and gold are disjoint, but stones may independently be metals (like iron). Conc I invalid. Conc II: gold is metal and no gold is stone → some metals are not stones.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721203+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00017"
+    },
+    {
+      "stem": "Statements: Some files are folders. No folder is a drive.\nConclusions: I. Some files are drives. II. No file is a drive.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either I or II follows (complementary)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "explanation": "Some F are Fd, No Fd is Dr. Files that are folders are not drives. Other files may or may not be drives — neither conclusion is certain.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721207+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00018"
+    },
+    {
+      "stem": "Statements: All books are novels. No novel is a poem. Some poems are songs.\nConclusions: I. No book is a poem. II. Some songs are not novels.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "All B→N, No N is P ⟹ No B is P (I). Some P are S, No N is P ⟹ Some S are not N (II). Both follow.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721212+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00019"
+    },
+    {
+      "stem": "Statements: Some cars are buses. Some buses are trucks.\nConclusions: I. Some cars are trucks. II. No car is a truck.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either I or II follows (complementary pair)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "explanation": "Two 'Some' premises yield no definite conclusion. Either I or II must be true (complementary pair).",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721215+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00020"
+    },
+    {
+      "stem": "Statements: All phones are gadgets. Some gadgets are expensive.\nConclusions: I. Some phones are expensive. II. Some expensive things are gadgets.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "All P→G, Some G are E. Expensive gadgets may not be phones → Conc I invalid. Some G are E → Some E are G by conversion. Only II.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721220+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00021"
+    },
+    {
+      "stem": "Statements: No tree is a shrub. No shrub is a herb.\nConclusions: I. No tree is a herb. II. Some herbs are trees.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "explanation": "Two negative premises → no valid conclusion. Rule: at least one premise must be affirmative.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721224+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00022"
+    },
+    {
+      "stem": "Statements: All rivers are water bodies. All water bodies are natural resources. Some natural resources are renewable.\nConclusions: I. All rivers are natural resources. II. Some renewable resources are rivers.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "All R→WB→NR → Conc I follows. Renewable NRs may not be rivers → Conc II doesn't follow.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721230+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00023"
+    },
+    {
+      "stem": "Statements: All politicians are speakers. Some teachers are speakers.\nConclusions: I. Some teachers are politicians. II. All speakers are politicians.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "explanation": "Undistributed middle (speakers not distributed in either premise). No valid conclusion.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721234+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00024"
+    },
+    {
+      "stem": "Statements: All doctors are graduates. No graduate is uneducated.\nConclusions: I. No doctor is uneducated. II. All uneducated people are non-graduates.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "All D→G, No G is U ⟹ No D is U (I). No G is U ↔ All G are non-U; contrapositive: All U are non-G = all uneducated are non-graduates (II). Both follow.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721245+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00025"
+    },
+    {
+      "stem": "Statements: Some students are not hardworking. All hardworking people succeed.\nConclusions: I. Some students do not succeed. II. All students succeed.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "explanation": "Some S not H. All H→Succeed. Non-hardworking students: premises don't say they fail. Conc II contradicts first premise possibility. Neither definite.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721250+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00026"
+    },
+    {
+      "stem": "Statements: All squares are rectangles. All rectangles are quadrilaterals. No quadrilateral is a circle.\nConclusions: I. No square is a circle. II. All squares are quadrilaterals.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "All Sq→Rect→Quad, No Quad is Circle ⟹ No Sq is Circle (I). All Sq→Quad from chain (II). Both follow.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721254+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00027"
+    },
+    {
+      "stem": "Statements: Some politicians are honest. No honest person is corrupt.\nConclusions: I. Some politicians are not corrupt. II. All corrupt people are politicians.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Some P are H, No H is C ⟹ Some P are not C (Festino). Only I.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721259+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00028"
+    },
+    {
+      "stem": "Statements: Some scientists are poets. Some poets are musicians.\nConclusions: I. Some scientists are musicians. II. No scientist is a musician.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "explanation": "Two particular premises → no definite conclusion. Neither follows.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721262+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00029"
+    },
+    {
+      "stem": "Statements: No doctor is a lawyer. Some lawyers are engineers.\nConclusions: I. Some engineers are not doctors. II. No engineer is a doctor.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "No D is L. Some L are E → Some E are L; No D is L → Some E (those = lawyers) are not D. Only I.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721266+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00030"
+    },
+    {
+      "stem": "Statements: All keys open locks. Some locks are antique.\nConclusions: I. Some antique things are keys. II. All antique things are keys.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "explanation": "All K→L, Some L are A. Antique locks needn't be keys (keys are locks but not all locks are keys). Neither follows.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721273+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00031"
+    },
+    {
+      "stem": "Statements: All tigers are animals. Some animals are wild. All wild things are dangerous.\nConclusions: I. Some animals are dangerous. II. Some tigers are dangerous.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Some A are W, All W→D ⟹ Some A are D (I). For II: All T are A but dangerous animals may not overlap with tigers. Only I.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721278+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00032"
+    },
+    {
+      "stem": "Statement: No examiner is lenient.\nConclusions: I. All examiners are strict. II. Some lenient people are not examiners.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "No E is L → No L is E (conversion) → All L are non-E → Some L are not E (II). 'Strict' ≠ 'non-lenient' without extra premise → I invalid.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721283+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00033"
+    },
+    {
+      "stem": "Statements: All artists are creative. All creative people are productive.\nConclusions: I. All productive people are artists. II. Some productive people are artists.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "All A→C→P. Conc I reverses universal (invalid). Conc II: Some P are A by particular conversion. Only II.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721287+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00034"
+    },
+    {
+      "stem": "Statements: Some hills are mountains. All mountains are snow-capped.\nConclusions: I. Some hills are snow-capped. II. All snow-capped things are mountains.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Some H→M, All M→SC ⟹ Some H are SC (Darii). Conc II reverses universal. Only I.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721292+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00035"
+    },
+    {
+      "stem": "Statements: No farmer is illiterate. Some illiterate people are poor.\nConclusions: I. Some poor people are not farmers. II. All farmers are literate.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "No F is I → Some P (who are I) are not F (I). No F is I ↔ All F are non-illiterate = literate (II). Both follow.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721297+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00036"
+    },
+    {
+      "stem": "Statements: All A are B. All B are C. No C is D.\nConclusions: I. No A is D. II. Some D are not B.\nWhich conclusion(s) follow?",
+      "options": [
+        {
+          "option_text": "Only Conclusion I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Conclusion II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both Conclusions I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither Conclusion I nor II follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "All A→B→C, No C is D ⟹ No A is D (I). No C is D → No D is C; All B→C so All D are non-B ⟹ Some D are not B (II). Both follow.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721301+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00037"
+    },
+    {
+      "stem": "Statements: All judges are lawyers. Some lawyers are professors. No professor is a businessman.\nConclusions: I. Some judges are not businessmen. II. Some professors are judges.\nWhich follow?",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "All J→L. Some L are P: judges may or may not be the professor-lawyers. Conc II not guaranteed. Conc I: all judges are lawyers, and no path makes judges businessmen → no judge is a businessman → some judges are not businessmen. Only I.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721305+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00038"
+    },
+    {
+      "stem": "Statements: Some books are pens. All pens are erasers. Some erasers are sharpeners. No sharpener is a ruler.\nConclusions: I. Some books are erasers. II. No pen is a ruler. III. Some sharpeners are books.\nWhich follow?",
+      "options": [
+        {
+          "option_text": "Only I and II follow",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II and III follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "All three follow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Some Bk→P, All P→E ⟹ Some Bk are E (I ✓). All P→E, Some E are Sh, No Sh is R → no pen is ruler (II ✓). Some Bk are E, Some E are Sh: two 'some' chains don't guarantee overlap (III ✗). I and II.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721309+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00039"
+    },
+    {
+      "stem": "Statements: All students who study hard pass. Ram did not pass.\nConclusions: I. Ram did not study hard. II. Ram is not a student.\nWhich follow?",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither follows",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Study hard → Pass. Contrapositive: Not Pass → Not Study Hard. Ram didn't pass → Ram didn't study hard (I). Ram could be a student who didn't study hard → II invalid.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721312+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00040"
+    },
+    {
+      "stem": "Statements: No lazy person is successful. All successful people are happy.\nConclusions: I. No lazy person is happy. II. Some unhappy people are lazy.\nWhich follow?",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "explanation": "No Lazy is Successful. All Successful→Happy. Lazy people could independently be happy via other means. Conc I too strong. Conc II: unhappy people include failed hardworking people too. Neither definite.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721318+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00041"
+    },
+    {
+      "stem": "Statements: All lions are brave. Some brave animals are tigers.\nConclusions: I. Some tigers are lions. II. All lions are tigers.\nWhich follow?",
+      "options": [
+        {
+          "option_text": "Only I follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither follows",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "explanation": "All L→B, Some B are T. The brave tigers may not be lions. No L-T link guaranteed. Neither follows.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721321+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00042"
+    },
+    {
+      "stem": "Statements: All pens are keys. All keys are locks. Some locks are heavy.\nConclusions: I. Some pens are heavy (definite). II. All pens being heavy is a possibility.\nWhich is/are correct?",
+      "options": [
+        {
+          "option_text": "Only I (definite) follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II (possibility) follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both correct",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither correct",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "All P→K→L. Some L are H — the heavy locks may not be pens. Conc I (definite) invalid. All pens are locks; it is possible all locks are heavy → Conc II (possibility) holds.",
+      "subject": "Reasoning",
+      "topic": "Syllogism — mixed tiers",
+      "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-syl-01",
+      "generated_at": "2026-05-20T07:26:40.721326+00:00",
+      "id": "sgk_REAS_SYLLOGISM_MIXED_TIERS_00043"
     }
   ]
 }

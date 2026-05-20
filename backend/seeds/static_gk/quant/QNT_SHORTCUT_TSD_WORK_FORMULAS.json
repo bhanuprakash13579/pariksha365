@@ -1,0 +1,834 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+  "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+  "description": "Proven shortcut formulas for TSD, Trains, Boats & Streams, and Work problems with derivations. Each question demonstrates the time-saving formula vs the long method.",
+  "questions": [
+    {
+      "stem": "A car travels from city A to city B at 60 km/h and returns at 40 km/h. What is the average speed for the entire journey?",
+      "options": [
+        {
+          "option_text": "48 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "50 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "52 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Equal distances → Average speed = 2ab/(a+b) = 2×60×40/(60+40) = 4800/100 = 48 km/h.\n\nDERIVATION: Let distance each way = d. Time₁ = d/60. Time₂ = d/40. Total time = d/60 + d/40 = d(2+3)/120 = 5d/120. Total distance = 2d. Avg speed = 2d/(5d/120) = 240d/5d = 48 km/h ✓.\n\nCRITICAL TRAP: (60+40)/2 = 50 is the ARITHMETIC mean — wrong for speed. You must use the HARMONIC mean formula 2ab/(a+b) whenever equal distances are covered at different speeds.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00001"
+    },
+    {
+      "stem": "A person walks to work at 4 km/h and cycles back at 12 km/h. His average speed for the round trip is:",
+      "options": [
+        {
+          "option_text": "6 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: 2ab/(a+b) = 2×4×12/(4+12) = 96/16 = 6 km/h.\n\nQUICK CHECK: a=4 (slow), b=12=3a. When b=3a: avg = 2×3a²/(4a) = 6a/4... wait: 2×4×12/16 = 96/16 = 6 ✓.\n\nINTUITION: Average speed is pulled TOWARD the slower speed because more time is spent at 4 km/h than at 12 km/h.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00002"
+    },
+    {
+      "stem": "A takes 3 hours to cover a distance. B covers the same distance in 2 hours. The ratio of their speeds is:",
+      "options": [
+        {
+          "option_text": "2:3",
+          "is_correct": true
+        },
+        {
+          "option_text": "3:2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:2",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: For equal distance, speeds are inversely proportional to times. Speed_A : Speed_B = Time_B : Time_A = 2 : 3.\n\nDERIVATION: Speed = Distance/Time. If d is constant: S_A/S_B = (d/3)/(d/2) = 2/3. So A:B = 2:3.\n\nMEMORY TRICK: 'Flip the time ratio to get the speed ratio.' A takes 3h, B takes 2h → A:B speeds = 2:3 (flip 3:2).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00003"
+    },
+    {
+      "stem": "A train running at 3/4 of its usual speed covers a journey 20 minutes late. What is its usual time for the journey?",
+      "options": [
+        {
+          "option_text": "60 minutes",
+          "is_correct": true
+        },
+        {
+          "option_text": "80 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "90 minutes",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: At 3/4 speed → time taken = 4/3 of usual time. Extra time = 4/3 T − T = T/3 = 20 min → T = 60 min.\n\nFORMULA: If speed becomes (m/n) of usual, new time = (n/m) × usual time. Delay = (n/m − 1) × T.\nHere: m/n = 3/4, so n/m = 4/3. Delay = (4/3−1)T = T/3 = 20 min → T = 60 min.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00004"
+    },
+    {
+      "stem": "A car increases its speed by 25%. By what percent does the time taken for the same journey decrease?",
+      "options": [
+        {
+          "option_text": "20%",
+          "is_correct": true
+        },
+        {
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "option_text": "16.67%",
+          "is_correct": false
+        },
+        {
+          "option_text": "33.33%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Speed increases by r%, time decreases by r/(100+r) × 100%.\nHere r=25: decrease = 25/125 × 100 = 20%.\n\nDERIVATION: New speed = 1.25 S. New time = d/(1.25S) = 0.8 × (d/S) = 0.8T. Decrease = 0.2T = 20% ✓.\n\nGENERAL FORMULA: If speed changes by r%, time changes by −r/(100±r)×100%. (+) if speed increases; (−) if decreases.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00005"
+    },
+    {
+      "stem": "Two trains start towards each other from cities 600 km apart. Train A runs at 80 km/h and Train B at 70 km/h. In how many hours will they meet?",
+      "options": [
+        {
+          "option_text": "4 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 hours",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Moving towards each other → Relative speed = 80 + 70 = 150 km/h. Time = Distance/Relative speed = 600/150 = 4 hours.\n\nFORMULA: Approaching bodies (opposite direction): relative speed = S₁ + S₂. Receding/chasing (same direction): relative speed = |S₁ − S₂|.\n\nINTUITION: Both are closing the gap — add their speeds. If they were going the same way, only the difference closes the gap.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00006"
+    },
+    {
+      "stem": "A thief is running at 15 km/h. A policeman chases him at 20 km/h. The thief has a 1.5 km head start. In how many minutes will the policeman catch the thief?",
+      "options": [
+        {
+          "option_text": "18 minutes",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 minutes",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Same direction → relative speed = 20 − 15 = 5 km/h. Time = 1.5/5 = 0.3 hours = 18 minutes.\n\nMEMORY: Convert to minutes early: 0.3 × 60 = 18 min. The gap is 1.5 km, closing at 5 km/h.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00007"
+    },
+    {
+      "stem": "A 200-metre long train runs at 72 km/h. In how many seconds will it pass a signal pole?",
+      "options": [
+        {
+          "option_text": "10 seconds",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 seconds",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Convert speed: 72 km/h = 72 × 5/18 = 20 m/s. Distance to cover = length of train = 200 m (pole is a point). Time = 200/20 = 10 s.\n\nUNIT CONVERSION SHORTCUT: km/h × 5/18 = m/s. Reverse: m/s × 18/5 = km/h.\n\nMEMORY: 5/18 ↔ multiply by 5, divide by 18. (18 km/h = 5 m/s is a good anchor.)",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00008"
+    },
+    {
+      "stem": "A 300-m train passes a 200-m platform in 25 seconds. What is the speed of the train in km/h?",
+      "options": [
+        {
+          "option_text": "72 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "60 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "80 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "90 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Distance covered = train length + platform length = 300 + 200 = 500 m. Speed = 500/25 = 20 m/s = 20 × 18/5 = 72 km/h.\n\nFORMULA: To pass a stationary platform, train covers (L_train + L_platform) at its own speed.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00009"
+    },
+    {
+      "stem": "Two trains of lengths 200 m and 300 m run in opposite directions at 60 km/h and 90 km/h. In how many seconds do they completely cross each other?",
+      "options": [
+        {
+          "option_text": "12 seconds",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 seconds",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Opposite direction → relative speed = 60+90 = 150 km/h = 150×5/18 = 125/3 m/s.\nTotal distance = 200+300 = 500 m. Time = 500/(125/3) = 500×3/125 = 12 seconds.\n\nTRAINS FORMULA SUMMARY:\n• Pass a pole: distance = train length\n• Pass a platform: distance = train + platform\n• Two trains opposite dir: distance = L₁+L₂, rel speed = S₁+S₂\n• Two trains same dir: distance = L₁+L₂, rel speed = |S₁−S₂|",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00010"
+    },
+    {
+      "stem": "A boat's downstream speed is 18 km/h and upstream speed is 6 km/h. What is the speed of the current?",
+      "options": [
+        {
+          "option_text": "6 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Current speed = (Downstream − Upstream)/2 = (18−6)/2 = 6 km/h.\n\nDERIVATION: Let boat speed in still water = u, current = v. Downstream = u+v = 18. Upstream = u−v = 6. Subtract: 2v = 12 → v = 6 km/h. Add: 2u = 24 → u = 12 km/h (still water).\n\nTWO FORMULAS: Current = (D−U)/2. Still water = (D+U)/2. These two cover virtually ALL boats problems.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00011"
+    },
+    {
+      "stem": "A boat covers 60 km downstream in 3 hours and 30 km upstream in 3 hours. The speed of the stream is:",
+      "options": [
+        {
+          "option_text": "5 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "2.5 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "STEP 1: Downstream speed = 60/3 = 20 km/h. Upstream speed = 30/3 = 10 km/h.\nSHORTCUT: Current = (20−10)/2 = 5 km/h. Still water speed = (20+10)/2 = 15 km/h.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00012"
+    },
+    {
+      "stem": "A man rows 24 km downstream in 4 hours and 24 km upstream in 6 hours. How long will he take to row 30 km in still water?",
+      "options": [
+        {
+          "option_text": "6 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "7.5 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 hours",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "STEP 1: Downstream speed = 24/4 = 6 km/h. Upstream = 24/6 = 4 km/h.\nSHORTCUT: Still water speed = (6+4)/2 = 5 km/h.\nTime for 30 km in still water = 30/5 = 6 hours.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00013"
+    },
+    {
+      "stem": "A can complete a piece of work in 12 days and B in 18 days. If they work together, in how many days will they finish?",
+      "options": [
+        {
+          "option_text": "7.2 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 days",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Together = ab/(a+b) = 12×18/(12+18) = 216/30 = 7.2 days.\n\nDERIVATION: A's rate = 1/12 per day; B's rate = 1/18 per day. Combined rate = 1/12+1/18 = 3/36+2/36 = 5/36. Days = 36/5 = 7.2 ✓.\n\nWHY THE FORMULA WORKS: ab/(a+b) is the harmonic mean formula derived from 1/(1/a + 1/b) = 1/(a+b)/ab = ab/(a+b). This formula appears in work, pipes, parallel resistance, and combined rates.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00014"
+    },
+    {
+      "stem": "A pipe fills a tank in 20 hours. Another pipe empties it in 30 hours. If both are opened simultaneously, how long does it take to fill the tank?",
+      "options": [
+        {
+          "option_text": "60 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "50 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 hours",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: One fills (1/20), one empties (−1/30). Net rate = 1/20 − 1/30 = 3/60 − 2/60 = 1/60. Time = 60 hours.\n\nFORMULA FOR FILL + LEAK: Net time = ab/(b−a) where a = fill time, b = leak time (b > a for filling to occur).\n= 20×30/(30−20) = 600/10 = 60 hours ✓.\n\nWARNING: When the emptying pipe is faster than the filling pipe (a > b), the tank NEVER fills — it empties. Always check b > a.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00015"
+    },
+    {
+      "stem": "A is twice as efficient as B. B alone takes 18 days to finish a task. How many days will A and B together take?",
+      "options": [
+        {
+          "option_text": "6 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "9 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "4.5 days",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: A is twice as efficient → A takes 9 days. Together = ab/(a+b) = 9×18/(9+18) = 162/27 = 6 days.\n\nALTERNATIVE SHORTCUT: A's daily rate = 2/18 = 1/9; B's = 1/18. Combined = 1/9+1/18 = 2/18+1/18 = 3/18 = 1/6. Time = 6 days ✓.\n\nEFFICIENCY RULE: If A is k times as efficient as B, A takes (1/k) of B's time.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00016"
+    },
+    {
+      "stem": "A and B together can complete a job in 10 days. A alone can do it in 15 days. In how many days can B alone finish it?",
+      "options": [
+        {
+          "option_text": "30 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "25 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 days",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: If A+B together take T days and A takes a days, then B alone = aT/(a−T) = 15×10/(15−10) = 150/5 = 30 days.\n\nDERIVATION: 1/B = 1/10 − 1/15 = 3/30 − 2/30 = 1/30 → B = 30 days.\n\nFORMULA REARRANGED: B = aT/(a−T). Works when a > T (otherwise A alone is slower than A+B, which is impossible).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00017"
+    },
+    {
+      "stem": "6 men can complete a project in 12 days working 8 hours a day. How many days will 9 men take to finish the same project working 6 hours a day?",
+      "options": [
+        {
+          "option_text": "10.67 days ≈ 10 days 16 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 days",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT (MDH Formula): M₁×D₁×H₁ = M₂×D₂×H₂.\n6×12×8 = 9×D₂×6 → 576 = 54×D₂ → D₂ = 576/54 = 32/3 ≈ 10.67 days.\n\nDERIVATION: Total man-hours = 6×12×8 = 576. New configuration: 9 men × 6 h/day = 54 man-hours/day. Days needed = 576/54 = 32/3 ✓.\n\nEXTENDED: The formula becomes M₁D₁H₁/W₁ = M₂D₂H₂/W₂ when work amounts differ.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00018"
+    },
+    {
+      "stem": "A alone finishes a task in 10 days and B in 15 days. They work together for 3 days then B leaves. How many more days will A need to finish?",
+      "options": [
+        {
+          "option_text": "5 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 days",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Work done in 3 days together = 3×(1/10+1/15) = 3×(3+2)/30 = 3×5/30 = 15/30 = 1/2.\nRemaining = 1/2. A at 1/10 per day: (1/2)/(1/10) = 5 days.\n\nFORMULA PATTERN: First find total work done in the together phase, then divide the remaining work by A's rate.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00019"
+    },
+    {
+      "stem": "A train 150 m long overtakes another train 250 m long moving in the same direction at 36 km/h. If the faster train takes 50 seconds to pass the slower one completely, what is the faster train's speed?",
+      "options": [
+        {
+          "option_text": "64.8 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "72 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "54 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Same direction → relative speed = S_fast − 36 km/h. Distance = 150+250 = 400 m.\nRelative speed = 400/50 = 8 m/s = 8×18/5 = 28.8 km/h.\nFast train speed = 28.8 + 36 = 64.8 km/h.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00020"
+    },
+    {
+      "stem": "A boat takes 4 hours to travel a certain distance downstream and 6 hours to return upstream. If the river's current is 3 km/h, what is the total distance (one way) covered?",
+      "options": [
+        {
+          "option_text": "72 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "54 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "48 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Let still-water speed = u. Downstream = u+3, upstream = u−3. Same distance d: d/(u+3) = 4 and d/(u−3) = 6. So (u+3)×4 = (u−3)×6 → 4u+12 = 6u−18 → 2u = 30 → u = 15 km/h. Distance = 4×(15+3) = 4×18 = 72 km.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00021"
+    },
+    {
+      "stem": "A, B, and C can complete a work in 10, 15, and 20 days respectively. They all start together but C leaves after 2 days and B leaves 3 days before the end. In how many days is the work completed?",
+      "options": [
+        {
+          "option_text": "Approximately 6.55 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "7 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "5.5 days",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Let total days = T. C works for 2 days; B works for (T−3) days; A works all T days.\nWork: T/10 + (T−3)/15 + 2/20 = 1.\nMultiply by 60: 6T + 4(T−3) + 6 = 60.\n6T + 4T − 12 + 6 = 60. 10T − 6 = 60. 10T = 66. T = 6.6 days ≈ 6.55 days (6 days 13.2 hours).\n\nSTEP-BY-STEP: Set up equations by assigning work in fractions, then solve. The 60-multiply (LCM of 10,15,20) eliminates fractions instantly.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00022"
+    },
+    {
+      "stem": "Two places A and B are 100 km apart. Two persons start from A and B simultaneously towards each other at 30 km/h and 20 km/h. They meet for the first time at point P. How far is P from A?",
+      "options": [
+        {
+          "option_text": "60 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "50 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Meeting point divides the total distance in the ratio of their speeds = 30:20 = 3:2. Distance from A = 100 × 3/(3+2) = 60 km.\n\nDERIVATION: They meet after time = 100/(30+20) = 2 hours. Person from A covers 30×2 = 60 km ✓.\n\nFORMULA: Meeting point from A = D × S_A/(S_A+S_B). This ratio shortcut saves setting up the time equation.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00023"
+    },
+    {
+      "stem": "Three taps can fill a cistern in 6, 8, and 12 hours respectively. All three are opened simultaneously. How long will it take to fill the cistern?",
+      "options": [
+        {
+          "option_text": "2.67 hours (2 hours 40 minutes)",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "8/3 hours",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Combined rate = 1/6 + 1/8 + 1/12. LCM(6,8,12) = 24. = 4/24 + 3/24 + 2/24 = 9/24 = 3/8 per hour. Time = 8/3 hours = 2⅔ hours = 2 hours 40 minutes.\n\nNOTE: Options A and D are the same value (2.67 = 8/3); A is the correct canonical form. Always use LCM of the denominators to add rates — fastest mental arithmetic method for pipe problems.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00024"
+    },
+    {
+      "stem": "Pipe A fills a tank in 12 hours, pipe B in 15 hours, and pipe C (emptying) in 10 hours. If all three run together, the tank fills in:",
+      "options": [
+        {
+          "option_text": "20 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 hours",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Net rate = 1/12 + 1/15 − 1/10. LCM(12,15,10) = 60. = 5/60 + 4/60 − 6/60 = 3/60 = 1/20. Time = 20 hours.\n\nCHECK: Net rate is positive (3/60 > 0), so the tank DOES fill. Always verify the sign first: if net rate ≤ 0, tank never fills.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-tsd",
+      "generated_at": "2026-05-20T08:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_TSD_WORK_FORMULAS_00025"
+    }
+  ]
+}

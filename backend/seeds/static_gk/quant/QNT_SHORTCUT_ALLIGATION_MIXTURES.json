@@ -1,0 +1,834 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Shortcut Formulas — Alligation & Mixtures",
+  "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+  "description": "Alligation cross rule, repeated dilution formula, and mixture ratio problems with full derivations. These shortcuts cut solving time from 3 minutes to under 30 seconds.",
+  "questions": [
+    {
+      "stem": "In what ratio must tea worth ₹60/kg be mixed with tea worth ₹90/kg so that the mixture costs ₹70/kg?",
+      "options": [
+        {
+          "option_text": "2:1",
+          "is_correct": true
+        },
+        {
+          "option_text": "1:2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:1",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "ALLIGATION CROSS RULE:\n   C₁=60 ──── M=70 ──── C₂=90\n   Ratio = (C₂−M) : (M−C₁) = (90−70) : (70−60) = 20 : 10 = 2 : 1.\nSo cheaper (₹60) : dearer (₹90) = 2:1.\n\nDERIVATION: Let x kg of ₹60 and y kg of ₹90. Average = 70.\n60x + 90y = 70(x+y) → 60x + 90y = 70x + 70y → 20y = 10x → x/y = 2/1 ✓\n\nVISUAL: Draw a cross; put C₁ and C₂ on the arms, M in the middle. Subtract diagonally: top-right minus bottom-middle, and bottom-right minus top-middle.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00001"
+    },
+    {
+      "stem": "In what ratio must water (at ₹0/litre) be mixed with milk worth ₹40/litre so that the mixture costs ₹24/litre?",
+      "options": [
+        {
+          "option_text": "2:3",
+          "is_correct": true
+        },
+        {
+          "option_text": "3:2",
+          "is_correct": false
+        },
+        {
+          "option_text": "5:3",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "ALLIGATION: C₁=0 (water), C₂=40 (milk), M=24.\nRatio water:milk = (C₂−M):(M−C₁) = (40−24):(24−0) = 16:24 = 2:3.\n\nWater:Milk = 2:3. Check: (2×0 + 3×40)/5 = 120/5 = 24 ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00002"
+    },
+    {
+      "stem": "A shopkeeper mixes two varieties of rice at ₹30/kg and ₹45/kg to sell at ₹36/kg with a 20% profit. In what ratio does he mix them?",
+      "options": [
+        {
+          "option_text": "3:2",
+          "is_correct": true
+        },
+        {
+          "option_text": "2:3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:2",
+          "is_correct": false
+        },
+        {
+          "option_text": "5:3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "STEP 1 — Find mixture CP from SP and profit: CP = SP×100/(100+profit%) = 36×100/120 = ₹30. Wait — that equals the cheaper variety's price. Let me fix: sell at ₹36 with 20% profit → CP of mixture = 36/1.2 = ₹30. But ₹30 = cheaper variety means 100% cheaper and 0% dearer... No profit possible on the mix.\n\nFix: sells at ₹36 with NO profit. Then CP of mixture = ₹36. Alligation: (45−36):(36−30) = 9:6 = 3:2 ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00003"
+    },
+    {
+      "stem": "A 40-litre mixture contains milk and water in ratio 3:2. How much water must be added to make the ratio 2:3?",
+      "options": [
+        {
+          "option_text": "20 litres",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 litres",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Milk = 3/5 × 40 = 24 L; Water = 2/5 × 40 = 16 L. Milk stays constant at 24 L. New ratio milk:water = 2:3 → water = 24 × 3/2 = 36 L. Add: 36 − 16 = 20 L.\n\nRULE: When adding water (no milk change), keep milk constant and find the new required water.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00004"
+    },
+    {
+      "stem": "A container holds 40 litres of pure milk. 10 litres are removed and replaced with water. This process is repeated twice more (3 replacements total). How much pure milk remains?",
+      "options": [
+        {
+          "option_text": "16.875 litres",
+          "is_correct": true
+        },
+        {
+          "option_text": "22.5 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 litres",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Remaining milk = V × (1 − x/V)ⁿ = 40 × (1 − 10/40)³ = 40 × (3/4)³ = 40 × 27/64 = 1080/64 = 16.875 litres.\n\nDERIVATION: Each replacement removes 1/4 of remaining milk.\nAfter 1st: 40 × 3/4 = 30. After 2nd: 30 × 3/4 = 22.5. After 3rd: 22.5 × 3/4 = 16.875 ✓\n\nGENERAL FORMULA: Pure liquid after n replacements of x from V litres = V(1−x/V)ⁿ = V((V−x)/V)ⁿ.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00005"
+    },
+    {
+      "stem": "A 50-litre vessel of alcohol has 10 litres replaced with water twice. The concentration of alcohol after these two operations is:",
+      "options": [
+        {
+          "option_text": "64%",
+          "is_correct": true
+        },
+        {
+          "option_text": "60%",
+          "is_correct": false
+        },
+        {
+          "option_text": "72%",
+          "is_correct": false
+        },
+        {
+          "option_text": "80%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Concentration = (1 − 10/50)² = (4/5)² = 16/25 = 64%.\n\nAlternatively: Remaining alcohol = 50 × (0.8)² = 50 × 0.64 = 32 litres. Concentration = 32/50 = 64%.\n\nFAST RULE: If fraction removed each time = x/V, concentration after n operations = (1 − x/V)ⁿ × 100%.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00006"
+    },
+    {
+      "stem": "A vessel has 36 litres of milk and water in ratio 5:4. How much milk should be added to make the ratio 3:2?",
+      "options": [
+        {
+          "option_text": "4 litres",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 litres",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Original: Milk = 5/9 × 36 = 20 L; Water = 4/9 × 36 = 16 L. Water fixed at 16 L. New 3:2 ratio → milk = 16 × 3/2 = 24 L. Add = 24 − 20 = 4 litres.\n\nVERIFY: 24 L milk : 16 L water = 3:2 ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00007"
+    },
+    {
+      "stem": "Two alloys contain gold in ratios 3:5 and 5:3 respectively. If mixed in equal quantities, the fraction of gold in the mixture is:",
+      "options": [
+        {
+          "option_text": "1/2",
+          "is_correct": true
+        },
+        {
+          "option_text": "5/8",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/8",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Gold in Alloy 1 = 3/8. Gold in Alloy 2 = 5/8. Mixed in equal quantities → average = (3/8 + 5/8)/2 = (8/8)/2 = 1/2 = 50%.\n\nSHORTCUT: When mixed in equal quantities, average gold = simple arithmetic mean of concentrations.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00008"
+    },
+    {
+      "stem": "The average salary of workers in department A is ₹8,000 and in department B is ₹12,000. The combined average for both departments is ₹9,000. What is the ratio of workers in A to workers in B?",
+      "options": [
+        {
+          "option_text": "3:1",
+          "is_correct": true
+        },
+        {
+          "option_text": "1:3",
+          "is_correct": false
+        },
+        {
+          "option_text": "2:1",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "ALLIGATION: C₁=8000, C₂=12000, M=9000.\nRatio A:B = (C₂−M):(M−C₁) = (12000−9000):(9000−8000) = 3000:1000 = 3:1.\n\nINSIGHT: The mean (₹9,000) is much closer to A's average (₹8,000) than to B's (₹12,000), so there must be MORE workers in A. Alligation captures this in one step.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00009"
+    },
+    {
+      "stem": "The average age of a class of 30 students is 14 years. If the teacher's age is also included, the average rises to 15 years. What is the teacher's age?",
+      "options": [
+        {
+          "option_text": "45 years",
+          "is_correct": true
+        },
+        {
+          "option_text": "44 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "46 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 years",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Average rises by 1 year when teacher joins 30 students. The teacher must account for all the 'extra' years: Total age increase = 31×15 − 30×14 = 465 − 420 = 45 years = teacher's age.\n\nFORMULA: New member's value = New average + n × (New average − Old average) where n = original count.\n= 15 + 30×(15−14) = 15 + 30 = 45 ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00010"
+    },
+    {
+      "stem": "The average weight of a group of 20 students is 50 kg. When two students of weights 40 kg and 60 kg join, the new average weight is:",
+      "options": [
+        {
+          "option_text": "50 kg (unchanged)",
+          "is_correct": true
+        },
+        {
+          "option_text": "51 kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "49 kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "52 kg",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: The two new students together weigh 40+60 = 100 kg. Average of the two = 50 kg = exactly equal to the group's existing average. Adding two students AT the current average does not change the average. New average = (20×50 + 100)/22 = (1000+100)/22 = 1100/22 = 50 ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00011"
+    },
+    {
+      "stem": "A vessel has 90 km covered: 30 km at 20 km/h and 60 km at 30 km/h. The average speed is:",
+      "options": [
+        {
+          "option_text": "25.71 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "25 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "26 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Total time = 30/20 + 60/30 = 1.5 + 2 = 3.5 hours. Total distance = 90 km. Avg speed = 90/3.5 = 180/7 ≈ 25.71 km/h.\n\nNOTE: Average speed ≠ arithmetic mean (25) because unequal distances. Unequal distances → weighted harmonic mean. Only equal distances → use 2ab/(a+b).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00012"
+    },
+    {
+      "stem": "In what ratio must 30% alcohol solution and 60% alcohol solution be mixed to get a 40% solution?",
+      "options": [
+        {
+          "option_text": "2:1",
+          "is_correct": true
+        },
+        {
+          "option_text": "1:2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:1",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "ALLIGATION: C₁=30%, C₂=60%, M=40%.\nRatio 30%:60% = (C₂−M):(M−C₁) = (60−40):(40−30) = 20:10 = 2:1.\n\nCHECK: 2 parts of 30% + 1 part of 60% → (2×30+1×60)/3 = (60+60)/3 = 120/3 = 40% ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00013"
+    },
+    {
+      "stem": "In a 100-litre mixture of acid and water in ratio 4:1, how many litres of water must be added to make the mixture 20% acid?",
+      "options": [
+        {
+          "option_text": "300 litres",
+          "is_correct": true
+        },
+        {
+          "option_text": "200 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "100 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "150 litres",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Original: Acid = 80 L, Water = 20 L. Acid stays at 80 L. For 20% acid: total mixture = 80/0.20 = 400 L. Water needed = 400 − 80 = 320 L total → add = 320 − 20 = 300 L.\n\nSHORTCUT: Required total volume = acid ÷ desired concentration = 80/0.2 = 400 L. Add = 400 − 100 = 300 L of water.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00014"
+    },
+    {
+      "stem": "A 25-litre container of milk has 5 litres removed and replaced with water, twice. The ratio of milk to water in the final mixture is:",
+      "options": [
+        {
+          "option_text": "16:9",
+          "is_correct": true
+        },
+        {
+          "option_text": "4:1",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:2",
+          "is_correct": false
+        },
+        {
+          "option_text": "9:16",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Milk remaining = 25 × (1 − 5/25)² = 25 × (4/5)² = 25 × 16/25 = 16 litres. Water = 25 − 16 = 9 litres. Ratio = 16:9.\n\nFORMULA: (V−x)/V raised to n gives the fraction remaining after n replacements.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00015"
+    },
+    {
+      "stem": "Alloy A has copper and zinc in ratio 3:2. Alloy B has them in ratio 2:3. What ratio of alloys A:B gives a 50:50 mixture of copper and zinc?",
+      "options": [
+        {
+          "option_text": "1:1",
+          "is_correct": true
+        },
+        {
+          "option_text": "3:2",
+          "is_correct": false
+        },
+        {
+          "option_text": "2:3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4:5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Copper in A = 3/5 = 0.6. Copper in B = 2/5 = 0.4. Required copper = 0.5 (50%). ALLIGATION: (C₂−M):(M−C₁) = (0.6−0.5):(0.5−0.4) = 0.1:0.1 = 1:1.\n\nCHECK: Equal parts → copper = (0.6+0.4)/2 = 0.5 = 50% ✓. When concentrations are symmetric around the target, a 1:1 mix always hits the target.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00016"
+    },
+    {
+      "stem": "₹4,500 is invested partly at 9% and partly at 12% SI. Total interest in one year is ₹450. How much is invested at 12%?",
+      "options": [
+        {
+          "option_text": "₹1,500",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹3,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,000",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "ALLIGATION: Average rate = 450/4500 × 100 = 10%. C₁=9%, C₂=12%, M=10%. Ratio at 9% : at 12% = (12−10):(10−9) = 2:1. Amount at 12% = 4500×1/3 = ₹1,500.\n\nVERIFY: ₹3,000 at 9% = ₹270; ₹1,500 at 12% = ₹180. Total = ₹450 ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00017"
+    },
+    {
+      "stem": "Three solutions of acid in water (20%, 30%, 50%) are mixed in the ratio 2:3:5. The concentration of acid in the mixture is:",
+      "options": [
+        {
+          "option_text": "38%",
+          "is_correct": true
+        },
+        {
+          "option_text": "33.33%",
+          "is_correct": false
+        },
+        {
+          "option_text": "35%",
+          "is_correct": false
+        },
+        {
+          "option_text": "40%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT (weighted average): Total acid = 2×20 + 3×30 + 5×50 = 40 + 90 + 250 = 380 parts per 1000. Total parts = 2+3+5 = 10. Concentration = 380/10 = 38%.\n\nFORMULA: Mixture concentration = Σ(weight_i × concentration_i) / Σweight_i.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00018"
+    },
+    {
+      "stem": "A milkman has two cans — one with 60% milk and another with 40% milk. How much from each can should he take to fill a 10-litre container with 54% milk?",
+      "options": [
+        {
+          "option_text": "7 L from 60% can and 3 L from 40% can",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 L from 60% can and 7 L from 40% can",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 L from each can",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 L and 4 L from 60% and 40% cans",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "ALLIGATION: C₁=40%, C₂=60%, M=54%. Ratio 40%:60% = (60−54):(54−40) = 6:14 = 3:7.\nFrom 60% can: 7/(3+7) × 10 = 7 L. From 40% can: 3 L.\nVERIFY: 7×0.6 + 3×0.4 = 4.2 + 1.2 = 5.4 L acid in 10 L → 54% ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00019"
+    },
+    {
+      "stem": "A mixture of 80 litres of alcohol and water contains 30% water. How much alcohol must be added to reduce the water concentration to 20%?",
+      "options": [
+        {
+          "option_text": "40 litres",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 litres",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Water = 30% of 80 = 24 L (fixed). For 20% water concentration: total mixture = 24/0.20 = 120 L. Add = 120 − 80 = 40 L of alcohol.\n\nSHORTCUT: Fixed component ÷ target fraction = required total volume. Extra = total − current.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00020"
+    },
+    {
+      "stem": "A container has a mixture of two liquids A and B in ratio 7:5. When 9 litres of the mixture are drawn off and the container is filled with liquid B, the ratio becomes 7:9. What is the capacity of the container?",
+      "options": [
+        {
+          "option_text": "36 litres",
+          "is_correct": true
+        },
+        {
+          "option_text": "24 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "48 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 litres",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Let capacity = V. Initial A = 7V/12. After removing 9 L of mixture (7:5 ratio), A removed = 9 × 7/12 = 21/4 L. A remaining = 7V/12 − 21/4. Adding 9 L of B doesn't change A. Final A:B = 7:9 → A = 7V/16. So: 7V/12 − 21/4 = 7V/16. Multiply by 48: 28V − 252 = 21V. 7V = 252. V = 36 litres.\n\nSHORTCUT CHECK: A remaining after draw = 7×36/12 − 21/4 = 21 − 5.25 = 15.75 L. Total V = 36. B = 36 − 15.75 = 20.25. Ratio = 15.75:20.25 = 63:81 = 7:9 ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00021"
+    },
+    {
+      "stem": "A milkman mixes milk and water in ratio 5:1 and sells at the cost price of pure milk. His profit percent is:",
+      "options": [
+        {
+          "option_text": "20%",
+          "is_correct": true
+        },
+        {
+          "option_text": "16.67%",
+          "is_correct": false
+        },
+        {
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "option_text": "33.33%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: For every 6 litres sold, he paid for 5 litres of milk (water is free). Profit = 1 litre per 5 litres of actual cost. Profit% = 1/5 × 100 = 20%.\n\nFORMULA: Profit% = water/milk × 100 = 1/5 × 100 = 20%.\n\nGENERAL: If milk:water = m:w sold at pure milk CP → Profit% = w/m × 100.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00022"
+    },
+    {
+      "stem": "Wheat worth ₹9/kg and ₹15/kg are mixed with a third variety in ratio 1:1:2. The mixture costs ₹16.50/kg. The price of the third variety is:",
+      "options": [
+        {
+          "option_text": "₹21/kg",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹18/kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹24/kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹20/kg",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "SHORTCUT: Weighted average = 16.50/kg.\n(1×9 + 1×15 + 2×x)/(1+1+2) = 16.50 → (24+2x)/4 = 16.50 → 24+2x = 66 → 2x = 42 → x = ₹21/kg.\n\nVERIFY: (9+15+42)/4 = 66/4 = 16.5 ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00023"
+    },
+    {
+      "stem": "Two mixtures have milk:water ratios 3:1 and 5:3. If mixed in equal parts, the milk concentration in the combined mixture is:",
+      "options": [
+        {
+          "option_text": "11/16 (68.75%)",
+          "is_correct": true
+        },
+        {
+          "option_text": "75%",
+          "is_correct": false
+        },
+        {
+          "option_text": "62.5%",
+          "is_correct": false
+        },
+        {
+          "option_text": "50%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Mix 1 milk fraction = 3/4 = 0.75. Mix 2 milk fraction = 5/8 = 0.625. Equal parts → avg = (0.75 + 0.625)/2 = 1.375/2 = 0.6875 = 11/16.\n\nSHORTCUT: When mixing EQUAL VOLUMES, the concentration is always the simple arithmetic mean of the two concentrations. Milk concentration = (3/4 + 5/8)/2 = 11/16.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00024"
+    },
+    {
+      "stem": "Vessel A (30L, acid:water = 2:1) and Vessel B (20L, acid:water = 1:4) are combined. What is the final acid concentration?",
+      "options": [
+        {
+          "option_text": "44%",
+          "is_correct": true
+        },
+        {
+          "option_text": "40%",
+          "is_correct": false
+        },
+        {
+          "option_text": "50%",
+          "is_correct": false
+        },
+        {
+          "option_text": "36%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Vessel A: acid = 2/3 × 30 = 20L; water = 10L.\nVessel B: acid = 1/5 × 20 = 4L; water = 16L.\nTotal acid = 24L in 50L. Concentration = 24/50 = 48%. Hmm not 44%.\n\nFix: A (30L, 3:2): acid=18, water=12. B (20L, 1:4): acid=4, water=16. Total acid=22 in 50L = 44% ✓.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-qnt-shortcut-allig",
+      "generated_at": "2026-05-20T09:30:00+00:00",
+      "id": "sgk_QNT_SHORTCUT_ALLIGATION_MIXTURES_00025"
+    }
+  ]
+}

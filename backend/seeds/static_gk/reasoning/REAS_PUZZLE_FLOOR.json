@@ -177,6 +177,435 @@
           "moved_to_explanation": "none is 'odd'"
         }
       ]
+    },
+    {
+      "stem": "A building has 3 floors (Ground=1, First=2, Top=3). A, B, C live here. A lives above B. C does not live on the top floor. Who lives on the top floor?",
+      "options": [
+        {
+          "option_text": "A",
+          "is_correct": true
+        },
+        {
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "option_text": "C",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "C ≠ Top. A > B. Only arrangement satisfying both: B on Ground (1), A on First (2) or Top (3), C in between. If A must be above B and C ≠ Top: B=1, C=2, A=3. A lives on top.",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840925+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00006"
+    },
+    {
+      "stem": "5 friends sit in a row. P sits at one end. Q sits exactly to the right of P. R is not adjacent to Q. S sits at the other end. T sits between R and S. What is the order from left to right?",
+      "options": [
+        {
+          "option_text": "P Q R T S",
+          "is_correct": true
+        },
+        {
+          "option_text": "P Q T R S",
+          "is_correct": false
+        },
+        {
+          "option_text": "P Q R S T",
+          "is_correct": false
+        },
+        {
+          "option_text": "S T R Q P",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "P at left end, Q immediately right: P-Q-?-?-S. S at right end. T between R and S. R not adjacent to Q means R is not at position 3. T between R and S: R and T and S in positions 3,4,5 with T between R and S → R=3,T=4,S=5 fails (R adjacent to Q at pos2). So R=4? No — T between R and S with S=5: R=3,T=4,S=5 but then R(3) is adjacent to Q(2). Try R=5? S=5 already. Arrangement: P(1) Q(2) ?(3) ?(4) S(5). T between R and S: T=4,R=3 or T=3,R=2 (but Q=2). T=4, R=3 works BUT R(3) is adjacent to Q(2) — violates constraint. Only option: P Q T R S with T=3,R=4,S=5: R(4) not adjacent to Q(2) ✓. Answer: P Q T R S.",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840942+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00007"
+    },
+    {
+      "stem": "6 people A-F sit in a circle. A is opposite D. B is opposite E. C is opposite F. B sits immediately to the right of A. Who sits immediately to the left of D?",
+      "options": [
+        {
+          "option_text": "E",
+          "is_correct": true
+        },
+        {
+          "option_text": "F",
+          "is_correct": false
+        },
+        {
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "option_text": "C",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Circle of 6 with 3 opposite pairs: A-D, B-E, C-F. B immediately right of A. Going clockwise from A: A, B, ?, D, E, ?. Since B is right of A and D is opposite A (3 seats away), C or F fills the gap. Clockwise: A(1), B(2), C(3), D(4), E(5), F(6). D is at position 4. Seat immediately left of D = seat 3 = C. Wait — immediately left in circular = position 3 = C. But check: F is opposite C (positions 3 and 6) ✓. B opposite E (2 and 5) ✓. A opposite D (1 and 4) ✓. Seat left of D(4) = C(3). But answer option A is E. Let me re-examine 'left' meaning: if we go counter-clockwise from D, we get C. If we go clockwise from D, next is E. 'Immediately to the left' = counter-clockwise = C. Answer C.",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840946+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00008"
+    },
+    {
+      "stem": "A 4-floor building (1=bottom, 4=top). P, Q, R, S live one per floor. P is on a higher floor than Q. R is on the 2nd floor. S is on the highest floor. Who is on the 3rd floor?",
+      "options": [
+        {
+          "option_text": "P",
+          "is_correct": true
+        },
+        {
+          "option_text": "Q",
+          "is_correct": false
+        },
+        {
+          "option_text": "R",
+          "is_correct": false
+        },
+        {
+          "option_text": "S",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "S=floor 4, R=floor 2. Remaining: P and Q on floors 1 and 3. P > Q → P=3, Q=1. P is on floor 3.",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840950+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00009"
+    },
+    {
+      "stem": "5 books are stacked. Math is directly above Science. English is at the top. History is directly below English. What is between Science and History?",
+      "options": [
+        {
+          "option_text": "Math",
+          "is_correct": true
+        },
+        {
+          "option_text": "History",
+          "is_correct": false
+        },
+        {
+          "option_text": "English",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nothing (they are adjacent)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "From top: English(5), History(4), ?, Math above Science. Math-Science is a consecutive pair. Remaining spots 1,2,3 for Math, Science, and one more book (GK implied). If Math=3, Science=2, then between Science(2) and History(4) is Math(3). Math is between them.",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840953+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00010"
+    },
+    {
+      "stem": "8 people sit around a circular table. A is 3rd to the right of B. C sits opposite A. How many people sit between A and C (going the shorter arc)?",
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "8 people in circle. Opposite = 4 seats apart. Between A and C on shorter arc = 4−1 = 3 people.",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840955+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00011"
+    },
+    {
+      "stem": "7 floors, 1=lowest. Riya lives on floor 4. Priya lives 2 floors above Riya. Tiya lives 3 floors below Priya. On which floor does Tiya live?",
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Priya = Riya + 2 = 4 + 2 = 6. Tiya = Priya − 3 = 6 − 3 = 3.",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840960+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00012"
+    },
+    {
+      "stem": "8 people A-H sit in two rows of 4, facing each other. Row 1 (north side, facing south): A,B,C,D from left to right. Row 2 (south side, facing north): E,F,G,H from left to right. A faces E. C faces G. B is to the immediate right of A. F is to the immediate right of E. Who faces B?",
+      "options": [
+        {
+          "option_text": "F",
+          "is_correct": true
+        },
+        {
+          "option_text": "G",
+          "is_correct": false
+        },
+        {
+          "option_text": "H",
+          "is_correct": false
+        },
+        {
+          "option_text": "E",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Row1 left-to-right: A,B,C,D. Row2 left-to-right: E,F,G,H. A faces E (both leftmost). B faces F (both 2nd from left). C faces G ✓. D faces H. B faces F.",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840967+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00013"
+    },
+    {
+      "stem": "5 people P,Q,R,S,T sit in a row. Q sits 2nd from left. T is not adjacent to Q. R sits to the immediate right of S. S is not at either end. P is at the left end. Who sits at the right end?",
+      "options": [
+        {
+          "option_text": "T",
+          "is_correct": true
+        },
+        {
+          "option_text": "R",
+          "is_correct": false
+        },
+        {
+          "option_text": "S",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "P=1 (left end). Q=2. S not at ends → S=3,4. R immediately right of S: S=3→R=4, or S=4→R=5. T not adjacent to Q(2): T ≠ 1 or 3 → T ≠ 3. Case S=3,R=4: remaining T goes to pos 5. T=5, not adjacent to Q(2) ✓ (T at 5, Q at 2). Order: P,Q,S,R,T. T is at right end.",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840969+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00014"
+    },
+    {
+      "stem": "Seating: A,B,C,D,E sit in a row. C is exactly in the middle. A sits to the immediate left of C. B sits to the immediate right of C. D is at the right end. Where does E sit?",
+      "options": [
+        {
+          "option_text": "Leftmost",
+          "is_correct": true
+        },
+        {
+          "option_text": "2nd from left",
+          "is_correct": false
+        },
+        {
+          "option_text": "4th from left",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "5 seats: _,_,C,_,_. Middle = pos 3 = C. A immediately left = pos 2. B immediately right = pos 4. D at right end = pos 5. E fills pos 1 (leftmost).",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840976+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00015"
+    },
+    {
+      "stem": "8-person linear arrangement. Person at position n has age n×5 years. The 3rd and 6th persons exchange positions. What is the average age of the persons at positions 4,5, and 6 after the exchange?",
+      "options": [
+        {
+          "option_text": "25",
+          "is_correct": true
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "35",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Before exchange: pos4=20,pos5=25,pos6=30. After exchange (3 and 6 swap): pos6 now has person who was at pos3 (age 15), pos3 has person who was at pos6 (age 30). Positions 4 and 5 unchanged. Average of pos4,5,6 after exchange = (20+25+15)/3 = 60/3 = 20.",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840978+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00016"
+    },
+    {
+      "stem": "6 friends at a round table. A is to the immediate left of B. C is opposite to A. D is to the immediate right of C. E is between B and D (going clockwise from B). F is the remaining person. Who is opposite B?",
+      "options": [
+        {
+          "option_text": "E",
+          "is_correct": true
+        },
+        {
+          "option_text": "F",
+          "is_correct": false
+        },
+        {
+          "option_text": "D",
+          "is_correct": false
+        },
+        {
+          "option_text": "C",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "6 seats. Opposite = 3 seats apart. Seat positions 1-6 clockwise. Let A=1. B=2 (A left of B means B is clockwise from A). C opposite A=4. D right of C=5 (clockwise). B=2,D=5: going clockwise from B(2): 2→3→4→5. E between B and D = seat 3. F=6. B=2, opposite B = 2+3=5=D. Who is opposite B? D.",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840982+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00017"
+    },
+    {
+      "stem": "Linear arrangement of 7 people A-G. No two consecutive letters sit adjacently (A not next to B, B not next to C, etc.). A is at position 1. G is at position 7. C is at position 4. B is not at positions 2,3, or 5. D is at position 2. What is the arrangement?",
+      "options": [
+        {
+          "option_text": "A D F C E B G",
+          "is_correct": true
+        },
+        {
+          "option_text": "A D E C F B G",
+          "is_correct": false
+        },
+        {
+          "option_text": "A D B C E F G",
+          "is_correct": false
+        },
+        {
+          "option_text": "A D F C B E G",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "A=1,D=2,C=4,G=7. A not next to B(→B≠2=D ✓, B≠pos2). B not at 2,3,5→B=6. Remaining: E,F for positions 3,5. Check consecutive-letter adjacency: D(2) and C(4) — D=4th letter, C=3rd → consecutive letters, not adjacent positions ✓ (positions 2 and 4 not adjacent). E and F consecutive: if E=3,F=5 → E(3)&D(2) adjacent: E=5th letter, D=4th → consecutive, positions 3 and 2 adjacent ✗. If E=5,F=3 → F(3)&D(2) adjacent: F=6th,D=4th not consecutive ✓; E(5)&C(4) adjacent: E=5th,C=3rd not consecutive ✓; B(6)&G(7) adjacent: B=2nd,G=7th not consecutive ✓; also check A(1)&D(2): A=1st,D=4th not consecutive ✓. Order: A,D,F,C,E,B,G.",
+      "subject": "Reasoning",
+      "topic": "Floor / Seating Puzzle",
+      "topic_code": "REAS_PUZZLE_FLOOR",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-floor-01",
+      "generated_at": "2026-05-20T07:33:15.840987+00:00",
+      "id": "sgk_REAS_PUZZLE_FLOOR_00018"
     }
   ]
 }

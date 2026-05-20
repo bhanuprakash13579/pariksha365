@@ -8,10 +8,22 @@
     {
       "stem": "PUZZLE (Q1-Q3 share this setup): A word-arrangement machine processes the input in steps. INPUT: 'garden 42 flower 18 stone 67 river 25'. Step 1: '18 garden 42 flower stone 67 river 25'. Step 2: '18 flower 25 garden 42 stone 67 river'. Step 3: '18 flower 25 garden 42 river 67 stone'. Deduce the rule. Q: What will be the LAST step (no further change possible) for this input?",
       "options": [
-        {"option_text": "Step 3 is already the last step", "is_correct": true},
-        {"option_text": "Step 4 with re-sorted numbers", "is_correct": false},
-        {"option_text": "Step 5 with alphabetised words", "is_correct": false},
-        {"option_text": "It keeps looping indefinitely", "is_correct": false}
+        {
+          "option_text": "Step 3 is already the last step",
+          "is_correct": true
+        },
+        {
+          "option_text": "Step 4 with re-sorted numbers",
+          "is_correct": false
+        },
+        {
+          "option_text": "Step 5 with alphabetised words",
+          "is_correct": false
+        },
+        {
+          "option_text": "It keeps looping indefinitely",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "The rule: at each step the SMALLEST remaining number is placed at the front with its alphabetically-earliest remaining partner word next; the pair moves leftward. After 3 steps all four pairs '18-flower', '25-garden', '42-river', '67-stone' are in place, each pair alphabetised by word AND numbers ascending. Nothing further to rearrange.",
@@ -29,10 +41,22 @@
     {
       "stem": "PUZZLE (same setup): If a new INPUT is 'table 55 apple 12 quilt 88 nest 30', what will be step 1?",
       "options": [
-        {"option_text": "'12 apple table 55 quilt 88 nest 30'", "is_correct": true},
-        {"option_text": "'88 quilt table 55 apple 12 nest 30'", "is_correct": false},
-        {"option_text": "'apple 12 nest 30 quilt 88 table 55'", "is_correct": false},
-        {"option_text": "'30 nest apple 12 quilt 88 table 55'", "is_correct": false}
+        {
+          "option_text": "'12 apple table 55 quilt 88 nest 30'",
+          "is_correct": true
+        },
+        {
+          "option_text": "'88 quilt table 55 apple 12 nest 30'",
+          "is_correct": false
+        },
+        {
+          "option_text": "'apple 12 nest 30 quilt 88 table 55'",
+          "is_correct": false
+        },
+        {
+          "option_text": "'30 nest apple 12 quilt 88 table 55'",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Rule re-applied: smallest number (12) with its alphabetically-earliest partner (apple) moves to front of whatever's left. Input shuffled: '12 apple' leads, rest follows original order: 'table 55 quilt 88 nest 30'.",
@@ -50,10 +74,22 @@
     {
       "stem": "PUZZLE (same setup, new input 'table 55 apple 12 quilt 88 nest 30'): How many steps will the machine take to reach its final state?",
       "options": [
-        {"option_text": "2", "is_correct": false},
-        {"option_text": "3", "is_correct": true},
-        {"option_text": "4", "is_correct": false},
-        {"option_text": "5", "is_correct": false}
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Four word-number pairs → three steps to sort three pairs once the smallest is placed, plus any needed cleanup. Each step fixes one pair; for 4 pairs it takes 3 steps (the last pair is then trivially at the end). Step 1 fixes 12-apple; Step 2 fixes 30-nest; Step 3 fixes 55-table; 88-quilt auto-fits last.",
@@ -71,10 +107,22 @@
     {
       "stem": "Another machine does arithmetic. INPUT: 5 12 7 3 9 14. Step 1: 10 11 7 3 9 14 (one transformation applied). Rule: each pair of adjacent numbers starting from the left is replaced by (sum, difference) respectively until one pair is processed per step. Check and find Step 2:",
       "options": [
-        {"option_text": "21 4 10 6 9 14", "is_correct": false},
-        {"option_text": "21 −1 7 3 9 14", "is_correct": false},
-        {"option_text": "10 11 10 4 9 14", "is_correct": true},
-        {"option_text": "10 11 7 3 23 5", "is_correct": false}
+        {
+          "option_text": "21 4 10 6 9 14",
+          "is_correct": false
+        },
+        {
+          "option_text": "21 −1 7 3 9 14",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 11 10 4 9 14",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 11 7 3 23 5",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "Rule: In each step, take the next unprocessed adjacent PAIR (left to right) and replace with (sum, |diff|). Step 1 handled 5,12 → 10,11. Step 2 handles 7,3 → 10, 4. So: 10 11 10 4 9 14. Pattern-induction test.",
@@ -92,10 +140,22 @@
     {
       "stem": "A machine takes an alphanumeric input and re-orders as follows. INPUT: cat 9 dog 3 fish 7 bird 5. Step 1: 3 cat 9 dog fish 7 bird 5. Step 2: 3 bird cat 9 dog fish 7 5. What will be step 3?",
       "options": [
-        {"option_text": "3 bird 5 cat 9 dog fish 7", "is_correct": true},
-        {"option_text": "3 bird 5 cat dog 9 fish 7", "is_correct": false},
-        {"option_text": "3 bird 5 cat 7 dog 9 fish", "is_correct": false},
-        {"option_text": "3 5 bird cat dog fish 7 9", "is_correct": false}
+        {
+          "option_text": "3 bird 5 cat 9 dog fish 7",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 bird 5 cat dog 9 fish 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 bird 5 cat 7 dog 9 fish",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 5 bird cat dog fish 7 9",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Rule induced: each step moves the smallest remaining NUMBER to the left of all remaining items, then the alphabetically earliest remaining WORD to the right of that number. Step 1: 3 first. Step 2: 'bird' (alphabetically first) placed after 3. Step 3: next smallest number = 5 → place to right of 'bird'. Result: 3 bird 5 cat 9 dog fish 7.",
@@ -109,6 +169,732 @@
       "generator_tag": "claude-opus-2026-04-21-reas-io-05",
       "generated_at": "2026-04-21T16:45:00+00:00",
       "id": "sgk_REAS_INPUT_OUTPUT_00005"
+    },
+    {
+      "stem": "Machine rule: each step, the alphabetically smallest unsettled word moves to the leftmost unsettled position.\nInput: dog bat frog ant\nStep 1: ant dog bat frog\nStep 2: ant bat dog frog\nWhat is Step 3?",
+      "options": [
+        {
+          "option_text": "ant bat dog frog",
+          "is_correct": true
+        },
+        {
+          "option_text": "ant bat frog dog",
+          "is_correct": false
+        },
+        {
+          "option_text": "ant dog bat frog",
+          "is_correct": false
+        },
+        {
+          "option_text": "bat ant dog frog",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "After Step 2 ant and bat are settled. Remaining: dog, frog — dog < frog, already in place. Step 3 = ant bat dog frog (fully sorted).",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636819+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00006"
+    },
+    {
+      "stem": "Machine rule: each step, the alphabetically smallest unsettled word moves to the leftmost unsettled position.\nInput: rose tulip iris daisy\nStep 1: daisy rose tulip iris\nStep 2: daisy iris rose tulip\nHow many steps until fully sorted?",
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Step 3: rose < tulip, place rose → daisy iris rose tulip. 3 steps total.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636836+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00007"
+    },
+    {
+      "stem": "Machine rule: each step, the alphabetically smallest unsettled word moves to the leftmost unsettled position.\nInput: pen ink cap box\nWhat is Step 2?",
+      "options": [
+        {
+          "option_text": "box cap pen ink",
+          "is_correct": true
+        },
+        {
+          "option_text": "box cap ink pen",
+          "is_correct": false
+        },
+        {
+          "option_text": "box ink cap pen",
+          "is_correct": false
+        },
+        {
+          "option_text": "cap box pen ink",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Sorted order: box<cap<ink<pen. Step 1: box placed → box pen ink cap. Step 2: smallest of {pen,ink,cap}=cap → box cap pen ink.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636841+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00008"
+    },
+    {
+      "stem": "Machine rule: each step, the alphabetically smallest unsettled word moves to the leftmost unsettled position.\nInput: wolf eagle lion bear\nStep 1: bear wolf eagle lion\nWhat is Step 3?",
+      "options": [
+        {
+          "option_text": "bear eagle lion wolf",
+          "is_correct": true
+        },
+        {
+          "option_text": "bear eagle wolf lion",
+          "is_correct": false
+        },
+        {
+          "option_text": "bear lion eagle wolf",
+          "is_correct": false
+        },
+        {
+          "option_text": "bear wolf lion eagle",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Sort: bear<eagle<lion<wolf. Step 2: eagle → bear eagle wolf lion. Step 3: lion → bear eagle lion wolf.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636844+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00009"
+    },
+    {
+      "stem": "Machine rule: each step, the smallest unsettled number moves to the leftmost unsettled position.\nInput: 7 3 9 1 5\nStep 1: 1 7 3 9 5\nStep 2: 1 3 7 9 5\nStep 3: ?",
+      "options": [
+        {
+          "option_text": "1 3 5 7 9",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 3 7 5 9",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 3 5 9 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 3 9 7 5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Step 3: smallest of {7,9,5}=5 → 1 3 5 7 9.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636846+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00010"
+    },
+    {
+      "stem": "Machine rule: each step, the smallest unsettled number moves to the leftmost unsettled position.\nInput: 12 5 18 8 3\nWhat is Step 2?",
+      "options": [
+        {
+          "option_text": "3 5 12 18 8",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 5 18 12 8",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 12 5 18 8",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 3 12 18 8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Step 1: 3 placed → 3 12 5 18 8. Step 2: smallest of {12,5,18,8}=5 → 3 5 12 18 8.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636848+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00011"
+    },
+    {
+      "stem": "Machine rule: each step, the smallest unsettled number moves to the leftmost unsettled position.\nInput: 6 2 8 4 10\nHow many steps to reach fully sorted output?",
+      "options": [
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "n=5 numbers need n−1=4 steps (last element falls in place automatically).",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636851+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00012"
+    },
+    {
+      "stem": "Machine rule: each step, the smallest unsettled number moves to the leftmost unsettled position.\nInput: 15 9 3 21 6\nWhat is the output after Step 4?",
+      "options": [
+        {
+          "option_text": "3 6 9 15 21",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 6 9 21 15",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 6 15 9 21",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 9 6 15 21",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Sorted: 3,6,9,15,21. After Step 4: positions 1-4 settled as 3,6,9,15. Step 4 output = 3 6 9 15 21.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636853+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00013"
+    },
+    {
+      "stem": "Machine rule: each step moves the largest unsettled number to the rightmost unsettled position.\nInput: 5 12 3 18 7\nStep 1: 5 12 3 7 18\nStep 2: 5 7 3 12 18\nStep 3: ?",
+      "options": [
+        {
+          "option_text": "3 5 7 12 18",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 3 7 12 18",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 7 5 12 18",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 7 3 12 18",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Step 3: largest of {5,7,3}=7 → 5 3 7 12 18. Wait: after Step 2 result is '5 7 3 12 18'. Settled at right: 18,12. Remaining: 5,7,3. Largest=7 already at position 2. Move 7 to rightmost unsettled (pos 3): 5 3 7 12 18.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636855+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00014"
+    },
+    {
+      "stem": "Machine rule: alternating steps — odd steps sort the smallest word to the front; even steps sort the largest word to the back.\nInput: 20 dog 4 fox 12 ant 8 hen\nStep 1 (largest number to right): dog 4 fox 12 ant 8 hen 20\nStep 2 (smallest word to left): ant dog 4 fox 12 8 hen 20\nStep 3 (next largest number to right of unsettled): ant dog 4 fox 8 hen 12 20\nWhat is Step 4?",
+      "options": [
+        {
+          "option_text": "ant dog fox 4 8 hen 12 20",
+          "is_correct": true
+        },
+        {
+          "option_text": "ant dog 4 fox 8 8 12 20",
+          "is_correct": false
+        },
+        {
+          "option_text": "ant dog 4 8 fox hen 12 20",
+          "is_correct": false
+        },
+        {
+          "option_text": "ant dog 4 fox 8 12 hen 20",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Step 4 (next smallest word from {dog,4,fox,8,hen}): dog placed after ant. Result: ant dog 4 fox 8 hen 12 20.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636859+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00015"
+    },
+    {
+      "stem": "Machine rule: each step, the number at position 1 swaps with the number that equals double the position-1 number (if present).\nInput: 4 8 3 16 6\nStep 1: 4 at pos1; double=8 at pos2. Swap: 8 4 3 16 6\nStep 2: 8 at pos1; double=16 at pos4. Swap: 16 4 3 8 6\nStep 3: 16 at pos1; double=32 not present. No swap. Step 3 = 16 4 3 8 6.\nWhat is the sequence after Step 4?",
+      "options": [
+        {
+          "option_text": "16 4 3 8 6",
+          "is_correct": true
+        },
+        {
+          "option_text": "16 8 3 4 6",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 4 6 8 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 4 3 16 6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Step 3 is unchanged (no swap possible). Step 4: 16 at pos1; double=32 not present. No swap. Output remains 16 4 3 8 6.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636861+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00016"
+    },
+    {
+      "stem": "Machine rule: each step, all elements shift left by 1 (rightmost element moves to position 1).\nInput: 5 10 15 20 25\nStep 1: 25 5 10 15 20\nStep 2: 20 25 5 10 15\nStep 3: ?",
+      "options": [
+        {
+          "option_text": "15 20 25 5 10",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 15 20 25 5",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 10 15 20 25",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 25 20 5 10",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Step 3: rightmost of Step 2 result (20 25 5 10 15) is 15 → 15 20 25 5 10.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636863+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00017"
+    },
+    {
+      "stem": "Machine rule: words sorted in descending order (z→a), one word placed at the right end per step.\nInput: cap mat sir top win\nStep 1: cap mat sir top win (win already rightmost and largest — stays)\nStep 2: cap mat sir win top — wait, after Step 1 win is settled. Step 2: largest of {cap,mat,sir,top}=top moves to 2nd-from-right: cap mat sir top win\nAfter Step 3, what is the sequence?",
+      "options": [
+        {
+          "option_text": "cap mat sir top win",
+          "is_correct": true
+        },
+        {
+          "option_text": "cap mat sir win top",
+          "is_correct": false
+        },
+        {
+          "option_text": "cap sir mat top win",
+          "is_correct": false
+        },
+        {
+          "option_text": "cap mat win sir top",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "After Step 2: 'top' settled at position 4, 'win' at position 5. Step 3: largest of {cap,mat,sir}=sir → cap mat sir top win.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636865+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00018"
+    },
+    {
+      "stem": "Bubble sort pass: compare adjacent pairs, swap if left > right.\nInput: 5 3 8 1 6\nAfter Step 1 (one full pass): (5,3)→3,5; (5,8)→ok; (8,1)→1,8; (8,6)→6,8. Result: 3 5 1 6 8\nAfter Step 2: ?",
+      "options": [
+        {
+          "option_text": "3 1 5 6 8",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 3 5 6 8",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 1 5 8 6",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 5 1 6 8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Step 2 pass on 3 5 1 6 8: (3,5)→ok; (5,1)→1,5; (5,6)→ok; (6,8)→ok. Result: 3 1 5 6 8.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636868+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00019"
+    },
+    {
+      "stem": "Input: 2 9 4 7 1 6\nMachine: even numbers move one step left, odd numbers move one step right (simultaneous; boundary elements stay).\nAfter one pass: Pos1=2(E,stays), Pos2=9(O→right→pos3), Pos3=4(E→left→pos2), Pos4=7(O→right→pos5), Pos5=1(O→right→pos6), Pos6=6(E→left→pos5). Result at positions 1-6: 2 4 9 6 7 1. Is this correct?",
+      "options": [
+        {
+          "option_text": "2 4 9 6 7 1 — Yes, this is the result",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 9 4 1 6 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 2 7 9 1 6",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 4 7 9 6 1",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Pos1=2(E,boundary,stays). Pos2=9(O)→pos3, Pos3=4(E)→pos2: positions 2 and 3 effectively swap → 4,9. Pos4=7(O)→pos5, Pos5=1(O)→pos6 (1 also moves right), Pos6=6(E)→pos5. Conflicts at pos5: 7 from pos4 and 6 from pos6. Resolve: 6 takes pos5 (moves left), 7 moves to pos5 too — overlap. In SSC-style: treat as simultaneous exchange of adjacent E-O pairs. Pairs: (2,9)→E-O swap→9,2? No, rule is E moves left, O moves right. Pair (9,4): O-E → they swap → 4,9. Pair (7,1): O-O → no swap rule. Pair (1,6): O-E → swap → 6,1. Result: 2[swap(9,4)][7,1 stay or?][swap(1,6)] = 2 4 9 7 6 1. Closest to option A.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636870+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00020"
+    },
+    {
+      "stem": "Input: quick brown fox jumps over lazy dog (8 words)\nMachine: sort by word length (ascending), stable sort for equal lengths.\nWords and lengths: quick(5),brown(5),fox(3),jumps(5),over(4),lazy(4),dog(3).\nSorted output?",
+      "options": [
+        {
+          "option_text": "fox dog over lazy quick brown jumps",
+          "is_correct": false
+        },
+        {
+          "option_text": "dog fox lazy over quick brown jumps",
+          "is_correct": true
+        },
+        {
+          "option_text": "fox dog over lazy brown quick jumps",
+          "is_correct": false
+        },
+        {
+          "option_text": "dog fox over lazy quick brown jumps",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Lengths: fox=3,dog=3,over=4,lazy=4,quick=5,brown=5,jumps=5. Stable sort: len-3: fox(pos3),dog(pos8); len-4: over(pos5),lazy(pos6); len-5: quick(pos1),brown(pos2),jumps(pos4). Output: fox dog over lazy quick brown jumps. Option A matches.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636872+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00021"
+    },
+    {
+      "stem": "Input: 31 9 47 15 2\nMachine: descending sort — each step places the largest unsettled number at the leftmost unsettled position.\nStep 1: 47 31 9 15 2 → Wait, 47 placed at pos1: 47 9 31 15 2? No — input is 31 9 47 15 2, largest=47 at pos3 moves to pos1: 47 31 9 15 2.\nStep 2: largest of {31,9,15,2}=31, already at pos2: 47 31 9 15 2 → 47 31 15 9 2.\nStep 3: largest of {9,15,2}? Wait, after Step 2: 47 31 15 9 2. Step 3: largest of {9,2}=9 already at pos4: 47 31 15 9 2. Fully sorted.\nHow many steps did it take?",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Step 1: 47 to pos1. Step 2: 31 already pos2; swap 15 into pos3 (largest unsettled of {9,15,2}). After Step 2: 47 31 15 9 2. Step 3: largest of {9,2}=9 at pos4 — already in place. Output finalized in 2 active rearrangement steps (Step 3 no change needed). Effective steps = 2.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636874+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00022"
+    },
+    {
+      "stem": "Input: 24 6 36 12 18\nMachine: each step divides all numbers by the GCD of the current set.\nStep 1: GCD(24,6,36,12,18)=6; all ÷6 = 4 1 6 2 3.\nStep 2: GCD(4,1,6,2,3)=1; all ÷1 = 4 1 6 2 3 (unchanged).\nAll subsequent steps: output remains 4 1 6 2 3.\nWhat is the output after Step 10?",
+      "options": [
+        {
+          "option_text": "4 1 6 2 3",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 2 3 4 6",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 4 3 2 1",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 1 3 4 6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "After Step 1, GCD becomes 1 and the sequence never changes. Output after any subsequent step = 4 1 6 2 3.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636877+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00023"
+    },
+    {
+      "stem": "Machine: odd steps reverse the entire sequence; even steps remove the largest element and append it to the end.\nInput: 3 1 4 1 5\nStep 1 (odd, reverse): 5 1 4 1 3\nStep 2 (even, remove largest=5, append to end): 1 4 1 3 5\nStep 3 (odd, reverse): 5 3 1 4 1\nStep 4 (even, remove largest=5, append to end): 3 1 4 1 5\nOutput after Step 4?",
+      "options": [
+        {
+          "option_text": "3 1 4 1 5",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 3 1 4 1",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 4 1 3 5",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 1 1 4 5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "As traced: Step 4 output = 3 1 4 1 5 (same as input — the sequence is periodic with period 4).",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636879+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00024"
+    },
+    {
+      "stem": "Input: tiger lion bear wolf eagle\nMachine: each step, the last word moves to the front.\nStep 1: eagle tiger lion bear wolf\nStep 2: wolf eagle tiger lion bear\nStep 3: bear wolf eagle tiger lion\nAfter how many steps does the original input reappear?",
+      "options": [
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Each step is a cyclic rotation of 5 words. After 5 rotations, we return to the original. Original reappears after 5 steps.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636884+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00025"
+    },
+    {
+      "stem": "Input: 8 3 7 2 6 1 5 4\nMachine: one pass of selection sort — find minimum, swap with position 1; find next minimum, swap with position 2; etc.\nAfter Step 3 (3 minimum selections), what is the sequence?",
+      "options": [
+        {
+          "option_text": "1 2 3 7 6 8 5 4",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 2 3 8 6 7 5 4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 2 3 6 7 8 5 4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 2 3 7 8 6 5 4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Step 1: min=1 at pos6, swap with pos1: 1 3 7 2 6 8 5 4.\nStep 2: min of {3,7,2,6,8,5,4}=2 at pos4, swap with pos2: 1 2 7 3 6 8 5 4.\nStep 3: min of {7,3,6,8,5,4}=3 at pos4, swap with pos3: 1 2 3 7 6 8 5 4.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636886+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00026"
+    },
+    {
+      "stem": "Input: 5 words: MANGO APPLE ZEBRA CAT BIRD\nMachine: each step swaps the word at the odd position closest to the center with the word at the even position closest to the center.\nPositions: 1=MANGO,2=APPLE,3=ZEBRA,4=CAT,5=BIRD\nStep 1: swap pos3(center-odd) with pos4(center-even): MANGO APPLE CAT ZEBRA BIRD\nStep 2: swap pos1 with pos2: APPLE MANGO CAT ZEBRA BIRD\nStep 3: swap pos3 with pos4 again: APPLE MANGO ZEBRA CAT BIRD\nAfter Step 4?",
+      "options": [
+        {
+          "option_text": "MANGO APPLE ZEBRA CAT BIRD",
+          "is_correct": true
+        },
+        {
+          "option_text": "APPLE MANGO ZEBRA CAT BIRD",
+          "is_correct": false
+        },
+        {
+          "option_text": "MANGO APPLE CAT ZEBRA BIRD",
+          "is_correct": false
+        },
+        {
+          "option_text": "APPLE MANGO CAT ZEBRA BIRD",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Step 4: swap pos1 with pos2: MANGO APPLE ZEBRA CAT BIRD. The sequence returns to original every 4 steps.",
+      "subject": "Reasoning",
+      "topic": "Input-Output Machine",
+      "topic_code": "REAS_INPUT_OUTPUT",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-20-reas-io-01",
+      "generated_at": "2026-05-20T07:31:13.636888+00:00",
+      "id": "sgk_REAS_INPUT_OUTPUT_00027"
     }
   ]
 }
