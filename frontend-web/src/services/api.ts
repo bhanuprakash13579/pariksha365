@@ -39,6 +39,27 @@ api.interceptors.request.use((config) => {
     return config;
 });
 
+// Retry transient network failures once after a short delay.
+// Catches ERR_INTERNET_DISCONNECTED / ERR_NETWORK_CHANGED caused by brief
+// WiFi blips where Chrome drops new connections but existing ones survive.
+// Only retries on network errors or 5xx — never on 4xx (those are real errors).
+api.interceptors.response.use(
+    (response) => response,
+    async (error) => {
+        const config = error.config;
+        if (config?._retried) return Promise.reject(error);
+
+        const isNetworkError = !error.response; // no response = network/DNS failure
+        const is5xx = error.response?.status >= 500;
+        if (isNetworkError || is5xx) {
+            config._retried = true;
+            await new Promise((r) => setTimeout(r, 1200));
+            return api(config);
+        }
+        return Promise.reject(error);
+    }
+);
+
 export const UserAPI = {
     getMe: () => api.get('/users/me'),
     updateMe: (data: { name?: string; phone?: string }) => api.put('/users/me', data),
