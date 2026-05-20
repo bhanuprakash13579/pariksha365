@@ -69,7 +69,7 @@ export const Auth = () => {
         }
     };
 
-    const handleGoogleSuccess = async (credentialResponse: any) => {
+    const handleGoogleSuccess = async (credentialResponse: any, attempt = 0) => {
         setError('');
         setLoading(true);
         try {
@@ -80,8 +80,15 @@ export const Auth = () => {
             } else {
                 setError((resultAction.payload as any)?.detail || 'Google Sign-In failed.');
             }
-        } catch (err) {
-            setError('An unexpected error occurred during Google Sign-In.');
+        } catch (err: any) {
+            // Network errors (e.g. CORS preflight during a brief backend deploy)
+            // are transient — retry once after 2 s before surfacing to the user.
+            const isNetwork = !err?.response;
+            if (isNetwork && attempt === 0) {
+                await new Promise(r => setTimeout(r, 2000));
+                return handleGoogleSuccess(credentialResponse, 1);
+            }
+            setError('Google Sign-In failed. Please try again in a moment.');
         } finally {
             setLoading(false);
         }

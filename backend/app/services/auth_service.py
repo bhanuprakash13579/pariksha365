@@ -12,7 +12,13 @@ from app.services import oauth_service
 import secrets
 
 async def authenticate_google_user(db: AsyncSession, token: str) -> Token:
-    idinfo = oauth_service.verify_google_token(token)
+    # verify_google_token calls google-auth's sync HTTP client to fetch Google's
+    # public certs. Running it in a thread avoids blocking the event loop for
+    # the full network round-trip (~50-300 ms), which would otherwise stall every
+    # other in-flight request — including Railway's /health check — and could
+    # cause spurious 502s with missing CORS headers on concurrent requests.
+    import asyncio
+    idinfo = await asyncio.to_thread(oauth_service.verify_google_token, token)
     email = idinfo.get("email")
     name = idinfo.get("name")
     
