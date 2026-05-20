@@ -2,24 +2,27 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { styles, COLORS } from '../../styles/theme';
-import { QuizAPI } from '../../services/api';
+import { QuizAPI, PrivateModuleAPI } from '../../services/api';
 
 export default function DailyQuizScreen({ navigation }: any) {
     const [categories, setCategories] = useState<any[]>([]);
     const [streak, setStreak] = useState<any>(null);
     const [weakQuiz, setWeakQuiz] = useState<any>(null);
+    const [privateModules, setPrivateModules] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const [catRes, weakRes] = await Promise.all([
+                const [catRes, weakRes, privateRes] = await Promise.all([
                     QuizAPI.getCategories(),
-                    QuizAPI.getWeakTopicQuiz()
+                    QuizAPI.getWeakTopicQuiz(),
+                    PrivateModuleAPI.listMine().catch(() => ({ data: { modules: [] } })),
                 ]);
                 setCategories(catRes.data.categories || []);
                 setStreak(catRes.data.streak || null);
                 setWeakQuiz(weakRes.data || null);
+                setPrivateModules(privateRes.data?.modules || []);
             } catch (err) {
                 console.error("Failed to fetch quiz data:", err);
             } finally {
@@ -183,6 +186,39 @@ export default function DailyQuizScreen({ navigation }: any) {
                         <Text style={{ fontSize: 13, color: '#6b7280', textAlign: 'center', lineHeight: 20 }}>
                             Once you attempt a mock test, we'll create a personalized quiz targeting your weak areas.
                         </Text>
+                    </View>
+                )}
+
+                {/* Private Modules (e.g. EPFO APFC) — only shown when user has access */}
+                {privateModules.length > 0 && (
+                    <View style={{ marginTop: 8 }}>
+                        <Text style={[styles.sectionTitle, { marginTop: 20 }]}>Special Practice</Text>
+                        <Text style={{ color: '#6b7280', fontSize: 13, marginBottom: 12, marginTop: -8 }}>
+                            Exclusive question banks you have been granted access to.
+                        </Text>
+                        {privateModules.map((mod: any, idx: number) => (
+                            <TouchableOpacity
+                                key={idx}
+                                onPress={() => navigation.navigate('PrivateModule', { slug: mod.slug, moduleName: mod.name })}
+                                activeOpacity={0.85}
+                                style={{
+                                    backgroundColor: '#111827', borderRadius: 16, padding: 16, marginBottom: 10,
+                                    flexDirection: 'row', alignItems: 'center',
+                                    shadowColor: '#000', shadowOpacity: 0.12, shadowRadius: 8, shadowOffset: { width: 0, height: 3 }, elevation: 4,
+                                }}
+                            >
+                                <View style={{ backgroundColor: '#f97316', borderRadius: 10, padding: 8, marginRight: 12 }}>
+                                    <Ionicons name="briefcase" size={20} color="#fff" />
+                                </View>
+                                <View style={{ flex: 1 }}>
+                                    <Text style={{ fontSize: 15, fontWeight: '700', color: '#fff' }}>{mod.name}</Text>
+                                    {mod.description ? (
+                                        <Text style={{ fontSize: 12, color: '#9ca3af', marginTop: 2 }} numberOfLines={1}>{mod.description}</Text>
+                                    ) : null}
+                                </View>
+                                <Ionicons name="chevron-forward" size={18} color="#9ca3af" />
+                            </TouchableOpacity>
+                        ))}
                     </View>
                 )}
             </View>

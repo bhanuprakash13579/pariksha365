@@ -8,7 +8,15 @@ documentclass: book
 
 # EXAMINER BLUEPRINT — What Gets Tested Most
 
-Polity is a high-yield subject. In SSC CGL, CHSL, and RRB exams, Polity gives you 5–10 questions per paper. In IBPS PO/Clerk and SBI PO papers, Polity is part of General Awareness and appears regularly. In state PSC exams, it can be 25–40 questions. Here is what examiners actually ask, in order of frequency.
+**Polity is a high-yield subject. Question share by exam:**
+
+- **SSC CGL / CHSL / RRB** — 5–10 questions per paper.
+
+- **IBPS PO / Clerk / SBI PO** — part of General Awareness; appears regularly.
+
+- **State PSC exams** — 25–40 questions per paper.
+
+Here is what examiners actually ask, in order of frequency.
 
 <div class="examtip">
 
@@ -64,23 +72,94 @@ Polity is a high-yield subject. In SSC CGL, CHSL, and RRB exams, Polity gives yo
 
 # How To Use This Book
 
-Polity rewards students who understand the logic of the Constitution, not just its numbers. This book is written for first-time readers and experienced aspirants alike. Here is how to get the most from it.
+**Polity rewards students who understand the logic of the Constitution, not just its numbers.**
 
-**Read actively, not passively.** When you encounter an Article number, say it aloud. When you read a landmark case, try to recall what it changed. When you hit an "Exam hooks" section, test yourself before reading the answers. Passive reading feels productive but scores zero marks.
+This book is written for first-time readers and experienced aspirants alike.
 
-**Story first, facts second.** Every chapter opens with the context — why this Article was written, what crisis triggered it, which debate shaped it. Once you understand the *why*, the facts stick on their own. Constitutions are not written in vacuum; they are written by frightened, brilliant, exhausted people under extraordinary pressure. This book tries to show you those people.
+### Read actively, not passively
 
-**Use the memory aids.** The mnemonics, the house-walk palaces, the "FEAR-CC" acronyms — these look silly on paper and work beautifully in the exam hall. Use them.
+- When you encounter an Article number, say it aloud.
 
-**The "Quick-recall" sections** at the end of each chapter are the most important pages. After reading a chapter, close the book and try to answer those points cold. If you can't, re-read just the section you struggled with. One pass through the material is reading; your exam performance depends on what you can *recall under pressure*.
+- When you read a landmark case, try to recall what it changed.
 
-**How long this takes:** A focused aspirant covering this book end-to-end takes about 15–18 hours. Three quick revision sweeps (one per week in the weeks before the exam) take another 6 hours. That is 24 hours total for a subject that can deliver 25–40 marks in any PSC exam or 5–10 marks in SSC/Banking exams. The return on investment is exceptional.
+- When you hit an "Exam hooks" section, **self-test before reading the answers**.
 
-> **The one rule of this book:** if you are reading a page and thinking "I'll come back to memorise this later" — stop. Come back to it now. There is no later in exam prep. Do it once, do it right.
+- Passive reading feels productive but scores zero marks.
+
+### Story first, facts second
+
+- Every chapter opens with the **context** — why the Article was written, what crisis triggered it.
+
+- Understand the **why** first; the facts stick on their own.
+
+- Constitutions are written by frightened, brilliant, exhausted people under extraordinary pressure.
+
+### Use the memory aids
+
+- Mnemonics, house-walk palaces, "FEAR-CC" acronyms.
+
+- They look silly on paper and **work beautifully in the exam hall**.
+
+### Quick-recall sections at the end of each chapter
+
+- The most important pages in the book.
+
+- After reading a chapter, **close the book** and answer those points cold.
+
+- If you can't, re-read **only the section you struggled with**.
+
+### How long this takes
+
+- Full end-to-end pass — **15–18 hours**.
+
+- Three weekly revision sweeps — another **6 hours**.
+
+- **Total ≈ 24 hours** for a subject that delivers 25–40 marks in PSC or 5–10 in SSC/Banking.
+
+> **The one rule:** if you're thinking "I'll come back to memorise this later" — stop. Come back to it **now**. There is no later in exam prep.
 
 ---
 
-# Part A — The Foundation
+---
+
+# How to read this book — your real study load
+
+**Total pages: 70.** Don't let the page count scare you.
+
+### Mandatory reading — pages 1 to 40 (57% of the book)
+
+That's the full syllabus. Master those 40 pages and you've covered every concept an examiner can fairly ask.
+
+### Bonus material — pages 41 to 70 (43% of the book)
+
+Reference tables, compilations, and self-test material — useful in your last week of revision OR if you're aiming for a top rank.
+
+### Two study tracks
+
+- **Just want to pass?** Read pages 1–40. Skim the appendices once before the exam.
+
+- **Want to top your batch?** Read the appendices too — they're how 70% becomes 90%.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p5–14** | [Part A](#part-a) | The Foundation |
+| **p15–40** | [Part B](#part-b) | The Citizen-State Compact |
+| **p41–49** | [PART X](#part-x) | ULTIMATE INDEX OF ARTICLES (compressed) — *Ultimate Index of Articles 1–395 — search-and-recall reference.* |
+| **p50** | [PART Y](#part-y) | ALL 12 SCHEDULES — *All 12 Schedules — what each contains, which Amendment added it.* |
+| **p51–52** | [PART Z](#part-z) | KEY CONSTITUTIONAL AMENDMENTS (must memorise) — *Key Constitutional Amendments — 42nd, 44th, 73rd, 74th, 86th, 101st, 103rd, 106th.* |
+| **p53–55** | [PART AA](#part-aa) | LANDMARK SUPREME COURT CASES (40+) — *Landmark Supreme Court Cases (40+) — Kesavananda, Maneka, Indra Sawhney, Puttaswamy.* |
+| **p56–57** | [PART AB](#part-ab) | PRESIDENTS, PMs, CJIs, SPEAKERS — *Presidents, PMs, CJIs, Speakers — chronological lists.* |
+| **p58** | [PART AC](#part-ac) | POLITY TRAP-RECOGNITION CARDS — *Trap-Recognition Cards — common examiner traps in 1 page.* |
+| **p59–61** | [PART AD](#part-ad) | POLITY MINI-MOCK (25 Questions · 25 Minutes) — *25-Question Mini-Mock — timed self-test.* |
+| **p62–67** | [PART AE](#part-ae) | CONSTITUTIONAL vs STATUTORY vs EXECUTIVE BODIES — *Constitutional vs Statutory vs Executive Bodies — guaranteed 1–2 marks.* |
+| **p68–70** | [PART AG](#part-ag) | UNION + STATE GOVERNMENT BODIES (compressed) — *Union + State Govt Bodies — quick reference on every commission.* |
+
+---
+# Part A — The Foundation {#part-a}
 
 The first four chapters give you the **mental map of the Constitution**. Once
 this map is in your head, every later chapter lands in a pre-allocated slot.
@@ -657,7 +736,7 @@ Mark this page. Before every revision session, read this map for 90 seconds — 
 
 ---
 
-# Part B — The Citizen-State Compact
+# Part B — The Citizen-State Compact {#part-b}
 
 You now know how the Constitution was written + how it's laid out. Part B
 is about the **deal** between citizen and state: who counts as Indian, what
@@ -1530,9 +1609,33 @@ Know these by heart:
 
 **Quick-recall: DPSPs**
 
-Sixteen articles in Part IV (Arts 36–51) that tell the state to build a just, caring, and peaceful India. They cannot be enforced in court but they guide every law. When the court has to harmonise them with FRs, it treats both as equally basic — Minerva Mills 1980. Socialist articles on welfare, Gandhian articles on village life and prohibition, Liberal articles on UCC, separation of powers, and the environment.
+- Sixteen articles in **Part IV (Arts 36–51)**.
 
-Key Article numbers: village panchayats = **Art 40**, UCC = **Art 44**, environment + forests = **Art 48A**, legal aid = **Art 39A**, judiciary's separation from executive = **Art 50**.
+- Tell the state to build a **just, caring, peaceful India**.
+
+- **Cannot be enforced in court** — but they guide every law.
+
+- When courts harmonise DPSPs with FRs, **both are treated as equally basic** — *Minerva Mills 1980*.
+
+**Three philosophical strands:**
+
+- **Socialist** — welfare, equal pay, living wage.
+
+- **Gandhian** — village panchayats, prohibition, cottage industries.
+
+- **Liberal-intellectual** — UCC, separation of powers, environment.
+
+**Key Article numbers to memorise:**
+
+- **Art 40** — village panchayats.
+
+- **Art 44** — Uniform Civil Code (UCC).
+
+- **Art 48A** — protect environment + forests.
+
+- **Art 39A** — free legal aid.
+
+- **Art 50** — separate the judiciary from the executive.
 
 </div>
 
@@ -1819,7 +1922,7 @@ timeline
 
 \newpage
 
-# PART X — ULTIMATE INDEX OF ARTICLES (compressed)
+# PART X — ULTIMATE INDEX OF ARTICLES (compressed) {#part-x}
 
 > Memorise these like phone numbers. Examiners ask "Article 32 deals with?" or "Which Article enables emergency over states?" — you must pick the correct option in <5 s.
 
@@ -1896,9 +1999,116 @@ timeline
 
 ## Part IVA — Fundamental Duties (Art 51A) — 11 duties (added 42nd CAA 1976; 11th by 86th CAA 2002)
 
-(a) abide by Constitution (b) cherish freedom-struggle ideals (c) sovereignty + integrity (d) defend country (e) promote harmony (f) value composite culture (g) protect environment (h) develop scientific temper (i) safeguard public property (j) strive for excellence (k) parents to educate children 6-14.
+| Clause | Duty |
+|--------|------|
+| (a) | Abide by the Constitution + respect ideals, institutions, National Flag + Anthem |
+| (b) | Cherish + follow noble ideals of national freedom struggle |
+| (c) | Uphold sovereignty, unity + integrity of India |
+| (d) | Defend the country + render national service when called |
+| (e) | Promote harmony + common brotherhood; renounce practices derogatory to women's dignity |
+| (f) | Value + preserve rich heritage of our composite culture |
+| (g) | Protect + improve natural environment — forests, lakes, rivers, wildlife |
+| (h) | Develop scientific temper, humanism + spirit of inquiry + reform |
+| (i) | Safeguard public property + abjure violence |
+| (j) | Strive towards excellence in all spheres of individual + collective activity |
+| (k) | *(added 2002, 86th CAA)* Parent / guardian to provide education to child aged 6–14 |
 
 ## Part V — UNION (Art 52-151)
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 380" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="290" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a237e">The 3 Branches of the Union Government</text>
+
+<!-- Top node: Constitution -->
+<rect x="220" y="35" width="140" height="38" rx="6" fill="#fff59d" stroke="#f57f17" stroke-width="2"/>
+<text x="290" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">THE CONSTITUTION</text>
+<text x="290" y="65" text-anchor="middle" font-size="9" fill="#e65100">(Supreme law)</text>
+
+<!-- Lines to 3 branches -->
+<line x1="290" y1="73" x2="100" y2="100" stroke="#1a237e" stroke-width="1.5"/>
+<line x1="290" y1="73" x2="290" y2="100" stroke="#1a237e" stroke-width="1.5"/>
+<line x1="290" y1="73" x2="490" y2="100" stroke="#1a237e" stroke-width="1.5"/>
+
+<!-- LEGISLATURE -->
+<rect x="20" y="105" width="170" height="240" rx="8" fill="#bbdefb" stroke="#0d47a1" stroke-width="2"/>
+<text x="105" y="125" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d47a1">LEGISLATURE</text>
+<text x="105" y="140" text-anchor="middle" font-size="9" fill="#0d47a1">(Art 79–122)</text>
+<text x="105" y="155" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">Makes laws</text>
+
+<!-- Sub-boxes -->
+<rect x="30" y="170" width="150" height="35" rx="4" fill="white" stroke="#0d47a1" stroke-width="1"/>
+<text x="105" y="184" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">Lok Sabha</text>
+<text x="105" y="197" text-anchor="middle" font-size="9" fill="#0d47a1">543 elected; 5 yrs</text>
+
+<rect x="30" y="210" width="150" height="35" rx="4" fill="white" stroke="#0d47a1" stroke-width="1"/>
+<text x="105" y="224" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">Rajya Sabha</text>
+<text x="105" y="237" text-anchor="middle" font-size="9" fill="#0d47a1">250 max; permanent</text>
+
+<rect x="30" y="250" width="150" height="35" rx="4" fill="white" stroke="#0d47a1" stroke-width="1"/>
+<text x="105" y="264" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">President</text>
+<text x="105" y="277" text-anchor="middle" font-size="9" fill="#0d47a1">(part of Parliament)</text>
+
+<text x="105" y="305" text-anchor="middle" font-size="9" font-style="italic" fill="#0d47a1">Key powers:</text>
+<text x="30" y="320" font-size="9" fill="#0d47a1">• Pass laws (bills)</text>
+<text x="30" y="332" font-size="9" fill="#0d47a1">• Vote budget</text>
+<text x="30" y="344" font-size="9" fill="#0d47a1">• No-confidence motion</text>
+
+<!-- EXECUTIVE -->
+<rect x="205" y="105" width="170" height="240" rx="8" fill="#c8e6c9" stroke="#1b5e20" stroke-width="2"/>
+<text x="290" y="125" text-anchor="middle" font-size="12" font-weight="bold" fill="#1b5e20">EXECUTIVE</text>
+<text x="290" y="140" text-anchor="middle" font-size="9" fill="#1b5e20">(Art 52–78)</text>
+<text x="290" y="155" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">Implements laws</text>
+
+<rect x="215" y="170" width="150" height="35" rx="4" fill="white" stroke="#1b5e20" stroke-width="1"/>
+<text x="290" y="184" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">President (Art 52)</text>
+<text x="290" y="197" text-anchor="middle" font-size="9" fill="#1b5e20">Head of State</text>
+
+<rect x="215" y="210" width="150" height="35" rx="4" fill="white" stroke="#1b5e20" stroke-width="1"/>
+<text x="290" y="224" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">Prime Minister</text>
+<text x="290" y="237" text-anchor="middle" font-size="9" fill="#1b5e20">Head of Government</text>
+
+<rect x="215" y="250" width="150" height="35" rx="4" fill="white" stroke="#1b5e20" stroke-width="1"/>
+<text x="290" y="264" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">Council of Ministers</text>
+<text x="290" y="277" text-anchor="middle" font-size="9" fill="#1b5e20">(Art 74 — binding advice)</text>
+
+<text x="290" y="305" text-anchor="middle" font-size="9" font-style="italic" fill="#1b5e20">Key powers:</text>
+<text x="215" y="320" font-size="9" fill="#1b5e20">• Run ministries</text>
+<text x="215" y="332" font-size="9" fill="#1b5e20">• Foreign policy</text>
+<text x="215" y="344" font-size="9" fill="#1b5e20">• Ordinances (Art 123)</text>
+
+<!-- JUDICIARY -->
+<rect x="390" y="105" width="170" height="240" rx="8" fill="#fce4ec" stroke="#880e4f" stroke-width="2"/>
+<text x="475" y="125" text-anchor="middle" font-size="12" font-weight="bold" fill="#880e4f">JUDICIARY</text>
+<text x="475" y="140" text-anchor="middle" font-size="9" fill="#880e4f">(Art 124–147)</text>
+<text x="475" y="155" text-anchor="middle" font-size="10" font-weight="bold" fill="#880e4f">Interprets laws</text>
+
+<rect x="400" y="170" width="150" height="35" rx="4" fill="white" stroke="#880e4f" stroke-width="1"/>
+<text x="475" y="184" text-anchor="middle" font-size="10" font-weight="bold" fill="#880e4f">Supreme Court</text>
+<text x="475" y="197" text-anchor="middle" font-size="9" fill="#880e4f">CJI + 33 judges (Art 124)</text>
+
+<rect x="400" y="210" width="150" height="35" rx="4" fill="white" stroke="#880e4f" stroke-width="1"/>
+<text x="475" y="224" text-anchor="middle" font-size="10" font-weight="bold" fill="#880e4f">High Courts</text>
+<text x="475" y="237" text-anchor="middle" font-size="9" fill="#880e4f">25 HCs across India</text>
+
+<rect x="400" y="250" width="150" height="35" rx="4" fill="white" stroke="#880e4f" stroke-width="1"/>
+<text x="475" y="264" text-anchor="middle" font-size="10" font-weight="bold" fill="#880e4f">Subordinate Courts</text>
+<text x="475" y="277" text-anchor="middle" font-size="9" fill="#880e4f">District + sessions</text>
+
+<text x="475" y="305" text-anchor="middle" font-size="9" font-style="italic" fill="#880e4f">Key powers:</text>
+<text x="400" y="320" font-size="9" fill="#880e4f">• Strike down laws</text>
+<text x="400" y="332" font-size="9" fill="#880e4f">• Issue writs (Art 32, 226)</text>
+<text x="400" y="344" font-size="9" fill="#880e4f">• Judicial review</text>
+
+<!-- Bottom checks-and-balances note -->
+<rect x="20" y="358" width="540" height="20" rx="3" fill="#fffde7" stroke="#f9a825" stroke-width="1"/>
+<text x="290" y="371" text-anchor="middle" font-size="10" fill="#e65100">⇄ Checks &amp; balances: each branch limits the others (e.g. SC strikes down unconstitutional laws; Parliament can impeach judges)</text>
+
+</svg>
+
+</div>
 
 **Executive (Art 52-78)**
 
@@ -2073,7 +2283,7 @@ timeline
 
 \newpage
 
-# PART Y — ALL 12 SCHEDULES
+# PART Y — ALL 12 SCHEDULES {#part-y}
 
 | # | Subject | Memory peg |
 |---|---|---|
@@ -2101,7 +2311,7 @@ timeline
 
 \newpage
 
-# PART Z — KEY CONSTITUTIONAL AMENDMENTS (must memorise)
+# PART Z — KEY CONSTITUTIONAL AMENDMENTS (must memorise) {#part-z}
 
 | Amendment | Year | Subject |
 |---|---|---|
@@ -2145,7 +2355,7 @@ timeline
 
 \newpage
 
-# PART AA — LANDMARK SUPREME COURT CASES (40+)
+# PART AA — LANDMARK SUPREME COURT CASES (40+) {#part-aa}
 
 | Case | Year | Significance |
 |---|---|---|
@@ -2202,7 +2412,7 @@ timeline
 
 \newpage
 
-# PART AB — PRESIDENTS, PMs, CJIs, SPEAKERS
+# PART AB — PRESIDENTS, PMs, CJIs, SPEAKERS {#part-ab}
 
 ## All Presidents of India (15)
 
@@ -2292,7 +2502,7 @@ timeline
 
 ---
 
-# PART AC — POLITY TRAP-RECOGNITION CARDS
+# PART AC — POLITY TRAP-RECOGNITION CARDS {#part-ac}
 
 These are the wrong answers that are designed to look right. Know them cold.
 
@@ -2316,7 +2526,7 @@ These are the wrong answers that are designed to look right. Know them cold.
 
 ---
 
-# PART AD — POLITY MINI-MOCK (25 Questions · 25 Minutes)
+# PART AD — POLITY MINI-MOCK (25 Questions · 25 Minutes) {#part-ad}
 
 Set a 25-minute timer. Do not look back at the book. Answer in your head or on paper. Check the answer key at the end.
 
@@ -2442,7 +2652,7 @@ Set a 25-minute timer. Do not look back at the book. Answer in your head or on p
 
 \newpage
 
-# PART AE — CONSTITUTIONAL vs STATUTORY vs EXECUTIVE BODIES
+# PART AE — CONSTITUTIONAL vs STATUTORY vs EXECUTIVE BODIES {#part-ae}
 
 > Examiners ask "Is X a constitutional body?" 1-2 marks per Polity section. Memorise.
 
@@ -2554,7 +2764,7 @@ Set a 25-minute timer. Do not look back at the book. Answer in your head or on p
 
 \newpage
 
-# PART AF — PARLIAMENTARY DEVICES + PROCEDURES (high-PYQ)
+# PART AF — PARLIAMENTARY DEVICES + PROCEDURES (high-PYQ) {#part-af}
 
 ## Parliamentary motions
 
@@ -2618,7 +2828,7 @@ Decided by: Speaker/Chairman (subject to judicial review per Kihoto Hollohan 199
 
 ---
 
-# PART AG — UNION + STATE GOVERNMENT BODIES (compressed)
+# PART AG — UNION + STATE GOVERNMENT BODIES (compressed) {#part-ag}
 
 ## Major Indian commissions / committees (recurring PYQ)
 

@@ -8,6 +8,7 @@ from app.models.user import User
 from app.schemas.test_schema import TestSeriesCreate, TestSeriesResponse, SectionCreate, SectionResponse
 from app.schemas.question_schema import QuestionCreate, QuestionResponse
 from app.services import test_series_service, pdf_scraper_service, gemini_service, admin_analytics_service
+from pydantic import BaseModel
 
 router = APIRouter()
 
@@ -21,6 +22,146 @@ async def get_admin_analytics(
     Results are cached for 5 minutes — zero performance overhead.
     """
     return await admin_analytics_service.get_overview(db)
+
+@router.get("/test-series/coverage")
+async def admin_test_series_coverage(
+    test_type: str = Query(None, description="Filter by 'PYQ' or 'MOCK'. Omit for both."),
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    """Per-paper coverage report for the admin panel.
+
+    For every TestSeries returns the actual loaded question count vs the
+    sanctioned count from the linked ExamPattern, plus the current
+    is_published state and a stable test_id so the admin UI can render a
+    publish-toggle next to each row.
+
+    Use this to decide which gated papers to publish manually (e.g. paper
+    that's 99/100 but the missing Q is non-critical) or which currently-
+    published papers to pull (e.g. an outlier with a wrong answer key
+    flagged by users).
+    """
+    from sqlalchemy import select, func
+    from sqlalchemy.orm import selectinload
+    from app.models.test_series import TestSeries
+    from app.models.section import Section
+    from app.models.question import Question
+    from app.models.exam_stage import ExamStage
+    from app.models.exam_pattern import ExamPattern
+    from app.models.subcategory import SubCategory
+    from app.models.category import Category
+
+    stmt = (
+        select(TestSeries)
+        .options(
+            selectinload(TestSeries.exam_stage)
+            .selectinload(ExamStage.exam_pattern),
+            selectinload(TestSeries.exam_stage)
+            .selectinload(ExamStage.subcategory)
+            .selectinload(SubCategory.category),
+        )
+        .order_by(TestSeries.title)
+    )
+    if test_type:
+        stmt = stmt.where(TestSeries.test_type == test_type.upper())
+    test_series = (await db.execute(stmt)).scalars().all()
+
+    # Fetch actual counts in one round-trip — never N+1 even with hundreds of papers.
+    counts_stmt = (
+        select(Section.test_series_id, func.count(Question.id))
+        .join(Question, Question.section_id == Section.id)
+        .group_by(Section.test_series_id)
+    )
+    counts = {row[0]: row[1] for row in (await db.execute(counts_stmt)).all()}
+
+    out = []
+    for ts in test_series:
+        stage = ts.exam_stage
+        pattern = stage.exam_pattern if stage else None
+        sanctioned = pattern.total_questions if pattern else None
+        actual = counts.get(ts.id, 0)
+
+        # Coverage percentage and a status flag for UI badging.
+        if sanctioned and sanctioned > 0:
+            coverage_pct = round(actual / sanctioned * 100, 1)
+        else:
+            coverage_pct = None
+        if sanctioned is None:
+            status = "no_pattern"
+        elif actual == sanctioned:
+            status = "complete"
+        elif actual >= sanctioned * 0.95:
+            status = "near_complete"
+        elif actual >= sanctioned * 0.5:
+            status = "partial"
+        else:
+            status = "fragment"
+
+        sub = stage.subcategory if stage else None
+        cat = sub.category if sub else None
+        out.append({
+            "id": str(ts.id),
+            "title": ts.title,
+            "test_type": ts.test_type.value if hasattr(ts.test_type, "value") else ts.test_type,
+            "actual": actual,
+            "sanctioned": sanctioned,
+            "coverage_pct": coverage_pct,
+            "status": status,
+            "is_published": ts.is_published,
+            "category": cat.name if cat else None,
+            "subcategory": sub.name if sub else None,
+            "stage": stage.name if stage else None,
+            "stage_id": str(stage.id) if stage else None,
+            "total_duration_minutes": ts.total_duration_minutes,
+            "has_sectional_timing": bool(ts.has_sectional_timing),
+            "negative_marking": ts.negative_marking,
+            "paper_date": ts.paper_date.isoformat() if ts.paper_date else None,
+        })
+
+    # Aggregate stats for the header strip in the admin UI.
+    summary = {
+        "total": len(out),
+        "published": sum(1 for r in out if r["is_published"]),
+        "complete": sum(1 for r in out if r["status"] == "complete"),
+        "near_complete": sum(1 for r in out if r["status"] == "near_complete"),
+        "partial": sum(1 for r in out if r["status"] == "partial"),
+        "fragment": sum(1 for r in out if r["status"] == "fragment"),
+        "no_pattern": sum(1 for r in out if r["status"] == "no_pattern"),
+    }
+    return {"summary": summary, "papers": out}
+
+
+class PublishToggleIn(BaseModel):
+    is_published: bool
+
+
+@router.put("/test-series/{test_id}/publish-toggle")
+async def admin_toggle_test_series_publish(
+    test_id: uuid.UUID,
+    payload: PublishToggleIn,
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    """Manually flip a TestSeries's is_published flag from the admin panel.
+
+    The loader's 100% gate is the default policy; this endpoint is the
+    override an admin uses when they want to publish a slightly-incomplete
+    paper (e.g. a 98/100 with the missing Qs being trivially low-stakes)
+    or unpublish a paper students complain about.
+    """
+    from sqlalchemy import select
+    from app.models.test_series import TestSeries
+    from fastapi import HTTPException
+
+    ts = (await db.execute(
+        select(TestSeries).where(TestSeries.id == test_id)
+    )).scalar_one_or_none()
+    if ts is None:
+        raise HTTPException(status_code=404, detail="Test series not found")
+    ts.is_published = bool(payload.is_published)
+    await db.commit()
+    return {"id": str(ts.id), "is_published": ts.is_published}
+
 
 @router.post("/test-series", response_model=TestSeriesResponse)
 async def create_test(

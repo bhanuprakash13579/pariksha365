@@ -3,7 +3,7 @@ QuizPool — Stores questions for the daily quiz classification system.
 Questions are organized by subject tag and served randomly to users daily.
 """
 import uuid
-from sqlalchemy import Column, String, Text, ForeignKey, DateTime, Integer, Boolean, Float, JSON
+from sqlalchemy import Column, String, Text, ForeignKey, DateTime, Integer, Boolean, Float, JSON, Date
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
@@ -24,6 +24,18 @@ class QuizQuestion(Base):
     topic_code = Column(String, index=True, nullable=True)  # e.g., "POL_FR" — deterministic matching key
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     options = Column(JSON, nullable=False, default=list)
+
+    # Current-Affairs lifecycle fields. When `is_current_affair=True`, the
+    # admin panel exposes the Q in a dedicated CA dashboard that:
+    #   • shows freshness / staleness based on `valid_until` and `last_reviewed_at`
+    #   • supports a "mark reviewed" action that bumps `last_reviewed_at` to now
+    #   • flags Qs whose `valid_until` has passed for the admin to refresh / unpublish
+    # These fields default to NULL/false so existing static-GK Qs are unaffected.
+    is_current_affair = Column(Boolean, default=False, nullable=False, server_default="false", index=True)
+    event_date = Column(Date, nullable=True)               # date the news event happened
+    valid_until = Column(Date, nullable=True)              # auto-stale boundary; null = no expiry yet set
+    last_reviewed_at = Column(DateTime(timezone=True), nullable=True)
+    is_published = Column(Boolean, default=True, nullable=False, server_default="true", index=True)
 
 class QuizAttempt(Base):
     """Tracks which quiz questions a user has attempted (for spaced repetition)."""

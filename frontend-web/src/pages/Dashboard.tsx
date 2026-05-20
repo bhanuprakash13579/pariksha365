@@ -8,6 +8,7 @@ import { MyLearning } from '../components/dashboard/MyLearning';
 import { DailyQuizzes } from '../components/dashboard/DailyQuizzes';
 import { Analytics } from '../components/dashboard/Analytics';
 import { Profile } from '../components/dashboard/Profile';
+import { NotesBrochureModal } from '../components/dashboard/NotesBrochureModal';
 import { Lock, PlayCircle, CheckCircle } from 'lucide-react';
 
 // Star thresholds (must match backend practice_service.py)
@@ -204,6 +205,11 @@ export const StudentDashboard = () => {
 
     return (
         <div className="min-h-screen bg-gray-50 flex">
+            {/* Optional notes-bundle promo. Self-throttles via session +
+                cooldown storage; never appears more than once per session and
+                respects a 14-day dismiss cooldown. */}
+            <NotesBrochureModal />
+
             {/* Desktop Sidebar (Left) */}
             <aside className="w-64 bg-gradient-to-b from-gray-900 via-gray-900 to-gray-950 hidden md:flex flex-col shadow-2xl relative z-10">
                 <div className="py-6 flex flex-col items-center border-b border-white/10">

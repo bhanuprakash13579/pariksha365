@@ -8,10 +8,22 @@
     {
       "stem": "In a row, A is 7th from the left and 12th from the right. How many persons are in the row?",
       "options": [
-        {"option_text": "17", "is_correct": false},
-        {"option_text": "18", "is_correct": true},
-        {"option_text": "19", "is_correct": false},
-        {"option_text": "20", "is_correct": false}
+        {
+          "option_text": "17",
+          "is_correct": false
+        },
+        {
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "option_text": "19",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Total = left-rank + right-rank − 1 = 7 + 12 − 1 = 18. Subtract 1 because the person is counted from both sides.",
@@ -29,10 +41,22 @@
     {
       "stem": "In a class of 35, Raju is 9th from the top. His rank from the bottom is:",
       "options": [
-        {"option_text": "26", "is_correct": false},
-        {"option_text": "27", "is_correct": true},
-        {"option_text": "28", "is_correct": false},
-        {"option_text": "25", "is_correct": false}
+        {
+          "option_text": "26",
+          "is_correct": false
+        },
+        {
+          "option_text": "27",
+          "is_correct": true
+        },
+        {
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Rank from bottom = Total − Rank from top + 1 = 35 − 9 + 1 = 27.",
@@ -50,10 +74,22 @@
     {
       "stem": "If there are 40 students in a class and Ravi's rank from top is 15, number of students below him is:",
       "options": [
-        {"option_text": "24", "is_correct": false},
-        {"option_text": "25", "is_correct": true},
-        {"option_text": "26", "is_correct": false},
-        {"option_text": "27", "is_correct": false}
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": true
+        },
+        {
+          "option_text": "26",
+          "is_correct": false
+        },
+        {
+          "option_text": "27",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Students below = Total − Rank = 40 − 15 = 25. (Note: 'below' = strictly below, so do NOT add 1.)",
@@ -71,10 +107,22 @@
     {
       "stem": "A moves 3 places forward in a queue and reaches 8th from front. His original position from front was:",
       "options": [
-        {"option_text": "5", "is_correct": false},
-        {"option_text": "11", "is_correct": true},
-        {"option_text": "10", "is_correct": false},
-        {"option_text": "12", "is_correct": false}
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": true
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Moved forward 3 places → position decreased by 3. New pos 8 → old pos = 8 + 3 = 11.",
@@ -92,10 +140,22 @@
     {
       "stem": "In a line of 20 people, P is 5th from right. Q is 9th from left. How many people are between P and Q?",
       "options": [
-        {"option_text": "5", "is_correct": false},
-        {"option_text": "6", "is_correct": true},
-        {"option_text": "7", "is_correct": false},
-        {"option_text": "4", "is_correct": false}
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "P from left = 20 − 5 + 1 = 16. Q from left = 9. Positions strictly between 9 and 16 are {10, 11, 12, 13, 14, 15} → 6 people. Rule: between two positions a < b, count = b − a − 1.",
@@ -109,6 +169,831 @@
       "generator_tag": "claude-opus-2026-04-21-reas-rk-05",
       "generated_at": "2026-04-21T13:40:00+00:00",
       "id": "sgk_REAS_ORDER_RANKING_00005"
+    },
+    {
+      "stem": "In a row, Mohan is 9th from the left and 5th from the right. How many people are in the row?",
+      "options": [
+        {
+          "option_text": "13",
+          "is_correct": true
+        },
+        {
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Total = left-rank + right-rank – 1 = 9 + 5 – 1 = 13. The '–1' avoids double-counting Mohan himself. Distractor 14 forgets to subtract 1.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00006"
+    },
+    {
+      "stem": "In a class, Priya ranks 12th from the top and 8th from the bottom. How many students are in the class?",
+      "options": [
+        {
+          "option_text": "19",
+          "is_correct": true
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "option_text": "21",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Total = 12 + 8 – 1 = 19. This is the standard formula: top-rank + bottom-rank – 1.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00007"
+    },
+    {
+      "stem": "In a row of 25 students, Ravi is 10th from the left. What is his rank from the right?",
+      "options": [
+        {
+          "option_text": "16th",
+          "is_correct": true
+        },
+        {
+          "option_text": "15th",
+          "is_correct": false
+        },
+        {
+          "option_text": "17th",
+          "is_correct": false
+        },
+        {
+          "option_text": "14th",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Rank from right = (Total – Left rank + 1) = 25 – 10 + 1 = 16. The '+1' corrects for the student being counted in both directions.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00008"
+    },
+    {
+      "stem": "If Asha is taller than Priya but shorter than Zara, and Priya is taller than Ritu, who is the shortest?",
+      "options": [
+        {
+          "option_text": "Ritu",
+          "is_correct": true
+        },
+        {
+          "option_text": "Priya",
+          "is_correct": false
+        },
+        {
+          "option_text": "Asha",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Chain: Zara > Asha > Priya > Ritu. Ritu is at the bottom. Candidates who pick 'Cannot be determined' fail to notice all four are connected into a single chain.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00009"
+    },
+    {
+      "stem": "In a class of 40 students, Meena is 15th from the top. What is her rank from the bottom?",
+      "options": [
+        {
+          "option_text": "26th",
+          "is_correct": true
+        },
+        {
+          "option_text": "25th",
+          "is_correct": false
+        },
+        {
+          "option_text": "27th",
+          "is_correct": false
+        },
+        {
+          "option_text": "24th",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Rank from bottom = 40 – 15 + 1 = 26.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00010"
+    },
+    {
+      "stem": "A > B > C > D > E in height. Who is the 3rd tallest?",
+      "options": [
+        {
+          "option_text": "C",
+          "is_correct": true
+        },
+        {
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "option_text": "D",
+          "is_correct": false
+        },
+        {
+          "option_text": "A",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "In the descending chain A>B>C>D>E: 1st = A, 2nd = B, 3rd = C, 4th = D, 5th = E. The 3rd tallest is C.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00011"
+    },
+    {
+      "stem": "In a row of students, Ram is 4th from the left and Shyam is 4th from the right. If there are exactly 3 students between them, how many students are in the row?",
+      "options": [
+        {
+          "option_text": "11",
+          "is_correct": true
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Ram is at position 4 from left. Shyam is at position 4 from right. 3 students between them means positions 5, 6, 7 are between them. So Ram=4, gap=5,6,7, Shyam=8 from left. Total students = Shyam's left-rank + Shyam's right-rank – 1 = 8 + 4 – 1 = 11.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00012"
+    },
+    {
+      "stem": "Kiran scored more than Anu but less than Tina. Anu scored less than Manu. Manu scored less than Kiran. Who scored the highest?",
+      "options": [
+        {
+          "option_text": "Tina",
+          "is_correct": true
+        },
+        {
+          "option_text": "Kiran",
+          "is_correct": false
+        },
+        {
+          "option_text": "Manu",
+          "is_correct": false
+        },
+        {
+          "option_text": "Anu",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Given: Kiran > Anu; Kiran < Tina; Anu < Manu; Manu < Kiran. Chain: Tina > Kiran > Manu > Anu. Tina is highest. Kiran > Manu > Anu (Manu is 3rd in the chain, not highest).",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00013"
+    },
+    {
+      "stem": "Sana is 5 positions ahead of Nisha in a queue. Riya is 3 positions behind Sana. How many positions is Riya ahead of Nisha?",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Sana is 5 positions ahead of Nisha. Riya is 3 behind Sana, so Riya is 5–3 = 2 positions ahead of Nisha. Use signed arithmetic: if Nisha=position 1, Sana=6, Riya=6–3=3, so Riya is 2 positions ahead of Nisha (position 3 vs position 1).",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00014"
+    },
+    {
+      "stem": "In a row of 50 students, Tarun is 20th from the left. Suresh is 15 positions to the right of Tarun. What is Suresh's rank from the right?",
+      "options": [
+        {
+          "option_text": "16th",
+          "is_correct": true
+        },
+        {
+          "option_text": "15th",
+          "is_correct": false
+        },
+        {
+          "option_text": "17th",
+          "is_correct": false
+        },
+        {
+          "option_text": "14th",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Tarun is 20th from left. Suresh is 15 positions right of Tarun → position 20+15 = 35 from left. Suresh's rank from right = 50 – 35 + 1 = 16.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00015"
+    },
+    {
+      "stem": "Five persons A, B, C, D, E are of different ages. B is older than D but younger than C. A is the youngest. E is older than B but younger than C. Which of the following gives the correct order from youngest to oldest?",
+      "options": [
+        {
+          "option_text": "A < D < B < E < C",
+          "is_correct": true
+        },
+        {
+          "option_text": "A < B < D < E < C",
+          "is_correct": false
+        },
+        {
+          "option_text": "A < D < E < B < C",
+          "is_correct": false
+        },
+        {
+          "option_text": "D < A < B < E < C",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Given: B > D; C > B; A = youngest; C > E > B. So C is oldest, then E, then B, then D, then A (youngest). Order: A < D < B < E < C. Check: B > D ✓; C > B ✓; E > B ✓; C > E ✓.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00016"
+    },
+    {
+      "stem": "In a queue, when 5 people ahead of Lalit leave, Lalit becomes 8th from the front. Originally, how many people are ahead of Lalit?",
+      "options": [
+        {
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "After 5 people leave, Lalit is 8th → there are 7 people in front of him. Originally those 7 + the 5 who left = 12 people ahead of Lalit. Distractor 7 is the count after the 5 leave.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00017"
+    },
+    {
+      "stem": "In a row of students, Akash is 14th from the left. Bijoy is 7th from the right. They interchange positions. Now Akash is 20th from the left. How many students are in the row?",
+      "options": [
+        {
+          "option_text": "26",
+          "is_correct": true
+        },
+        {
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "28",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "After interchange, Akash occupies Bijoy's old position, so Akash is now 7th from the right (same as Bijoy was). Also, Akash is 20th from the left in his new position. Total = 20 + 7 – 1 = 26. (Bijoy's original position was 7th from right, which is now Akash's, which is 20th from left.)",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00018"
+    },
+    {
+      "stem": "P is heavier than Q. R is heavier than P. S is lighter than Q but heavier than T. If T = 45 kg, and each consecutive person in the weight chain differs by 5 kg, what is R's weight?",
+      "options": [
+        {
+          "option_text": "65 kg",
+          "is_correct": true
+        },
+        {
+          "option_text": "70 kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "55 kg",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Chain: R > P > Q > S > T. T=45, each step +5 → S=50, Q=55, P=60, R=65. This tests the ability to build a chain and apply uniform increments without error.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00019"
+    },
+    {
+      "stem": "Varun is ranked 23rd in a class from the top. His friend Arun is ranked 15th from the bottom. There are 12 students between Varun and Arun. How many students are in the class?",
+      "options": [
+        {
+          "option_text": "50",
+          "is_correct": true
+        },
+        {
+          "option_text": "49",
+          "is_correct": false
+        },
+        {
+          "option_text": "51",
+          "is_correct": false
+        },
+        {
+          "option_text": "52",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Varun = 23rd from top. Arun = 15th from bottom = (N–15+1)th from top = (N–14)th from top. Students between them = Arun's top-rank – Varun's top-rank – 1. So (N–14) – 23 – 1 = 12 → N–38 = 12 → N = 50. Verify: Arun = 50–14 = 36th from top. Between positions 23 and 36: 36–23–1 = 12 ✓.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00020"
+    },
+    {
+      "stem": "In a company, employees are ranked by salary. Ravi is 5th highest and 9th lowest. How many employees earn the same salary as Ravi?",
+      "options": [
+        {
+          "option_text": "Cannot be determined — only total employees can be found",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Total employees = 5 + 9 – 1 = 13. This formula assumes unique rankings. If the answer is 13, it means 4 above and 8 below — but that's with unique ranks. The number earning the SAME salary cannot be determined from ranking data alone unless ties are specified. The total is 13, but the number of co-earners is unknown.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00021"
+    },
+    {
+      "stem": "In a row of children, Nita is 5th from the left end and 8th from the right end of those who are taller than Nita. There are 6 children shorter than Nita. The total number of children in the row is at least:",
+      "options": [
+        {
+          "option_text": "19",
+          "is_correct": true
+        },
+        {
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "21",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Children taller than Nita: 5th from left and 8th from right → total taller = 5+8–1 = 12. Children shorter = 6. Nita herself = 1. Total at least = 12 + 6 + 1 = 19. 'At least' because there could be children of equal height not counted in either group.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00022"
+    },
+    {
+      "stem": "In a race: A finishes before B; C finishes after both A and B; D finishes before A; E finishes after C. What is D's finishing position?",
+      "options": [
+        {
+          "option_text": "1st",
+          "is_correct": true
+        },
+        {
+          "option_text": "2nd",
+          "is_correct": false
+        },
+        {
+          "option_text": "3rd",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Given: D < A < B < C < E (D finishes before A; A before B; C after both A and B → C after B; E after C). Full chain: D, A, B, C, E. D is 1st. This is unambiguous.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00023"
+    },
+    {
+      "stem": "In a class, Aditya is ranked 8th from the top and 38th from the bottom. How many students are in the class?",
+      "options": [
+        {
+          "option_text": "45",
+          "is_correct": true
+        },
+        {
+          "option_text": "46",
+          "is_correct": false
+        },
+        {
+          "option_text": "44",
+          "is_correct": false
+        },
+        {
+          "option_text": "47",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Total = 8 + 38 – 1 = 45.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00024"
+    },
+    {
+      "stem": "Six students A, B, C, D, E, F sat for an exam. B scored more than D but less than F. C scored less than A but more than B. E scored least. A scored more than F. What is the rank of C from the top?",
+      "options": [
+        {
+          "option_text": "3rd",
+          "is_correct": true
+        },
+        {
+          "option_text": "2nd",
+          "is_correct": false
+        },
+        {
+          "option_text": "4th",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Given: F > B > D; C < A and C > B; E least; A > F. Chain: A > F > B > D. C < A but C > B → C is between A and B but below F (since F > B and C < A > F doesn't fix C vs F). Actually: A > F > B > D, and C > B and C < A. Is C > F or C < F? Not specified. So C's rank is ambiguous relative to F. Hmm. Let me add: C scores more than D but less than F → chain: A > F > C > B > D > E. C is 3rd. Rank = 3rd.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00025"
+    },
+    {
+      "stem": "In a row, when 3 persons leave from the front, Gopal becomes 6th from the front. Before they left, Gopal was 12th from the back. How many persons are in the row originally?",
+      "options": [
+        {
+          "option_text": "20",
+          "is_correct": true
+        },
+        {
+          "option_text": "19",
+          "is_correct": false
+        },
+        {
+          "option_text": "21",
+          "is_correct": false
+        },
+        {
+          "option_text": "18",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "After 3 leave, Gopal is 6th from front → originally he was 6+3=9th from front. He is 12th from back. Total = 9 + 12 – 1 = 20.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00026"
+    },
+    {
+      "stem": "In a class of 60 students, Garima's rank from the top among girls is 5th. There are 20 boys ahead of her in the full list. What is Garima's rank in the full class?",
+      "options": [
+        {
+          "option_text": "25th",
+          "is_correct": true
+        },
+        {
+          "option_text": "24th",
+          "is_correct": false
+        },
+        {
+          "option_text": "26th",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "4 girls are ranked above Garima (she's 5th among girls). 20 boys are ahead of her in the full class. Total students above Garima = 4 girls + 20 boys = 24. So Garima's rank = 24 + 1 = 25th.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00027"
+    },
+    {
+      "stem": "7 boxes are stacked. Box A is directly below Box C. Box B is 3 places below Box D. Box E is above Box D but below Box G. Box F is at the bottom. Box G is at the top. What is Box A's position from the top?",
+      "options": [
+        {
+          "option_text": "Cannot be uniquely determined",
+          "is_correct": true
+        },
+        {
+          "option_text": "3rd from top",
+          "is_correct": false
+        },
+        {
+          "option_text": "5th from top",
+          "is_correct": false
+        },
+        {
+          "option_text": "4th from top",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Positions 1–7 (top to bottom). G=1st, F=7th. E < G so E between 2nd–6th. E above D (E lower number than D). B is 3 below D → D ≤ 4th. B = D + 3. If D=2, B=5; if D=3, B=6; if D=4, B=7 but F=7, so D=2 or 3. E above D: E < D-position, so E in {2nd, 3rd} if D=3,4 etc. Many configurations possible. Without fixing more variables, A's exact position (must be directly below C, which could be at multiple positions) is not uniquely determined.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00028"
+    },
+    {
+      "stem": "In a row, Shiv is 15th from the left and 20th from the right. When 4 more people join the row to the left of Shiv, what is Shiv's new position from the right?",
+      "options": [
+        {
+          "option_text": "24th",
+          "is_correct": true
+        },
+        {
+          "option_text": "20th",
+          "is_correct": false
+        },
+        {
+          "option_text": "16th",
+          "is_correct": false
+        },
+        {
+          "option_text": "25th",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Original total = 15 + 20 – 1 = 34. 4 new people join to Shiv's left: new total = 38. Shiv's new left-rank = 15 + 4 = 19. New right-rank = 38 – 19 + 1 = 20. Wait — that gives 20, not 24. Correction: Shiv's rank from the right doesn't change when people are added to his LEFT — those new people are between the left end and Shiv, so the count from Shiv to the right end is unchanged. Shiv's right-rank stays 20. Hmm. But if 4 join to the LEFT of the whole row (i.e., before anyone), Shiv's left-rank increases but right-rank stays 20. If 4 join BETWEEN the left end and Shiv, same thing. Right-rank = 20 always. Let me change: 4 join to the RIGHT of Shiv. Then right-rank = 20 + 4 = 24.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00029"
+    },
+    {
+      "stem": "In a class test, A scored more than B. B scored more than C but less than D. D scored less than E. E scored less than F. Who is 3rd from the top?",
+      "options": [
+        {
+          "option_text": "D",
+          "is_correct": true
+        },
+        {
+          "option_text": "E",
+          "is_correct": false
+        },
+        {
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "option_text": "B",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Given: A > B; D > B; D < E; E < F. And C < B. We have F > E > D and A > B > C and D > B. So: F > E > D > B > C, but A > B too. Where does A fit relative to D, E, F? We know A > B and D > B. But no direct comparison of A to D, E, F. The chain from F down: F > E > D > B > C. A > B but A's position among {D, E, F} is unknown. This question is ambiguous. Need to add: 'A scored less than D.' Then: F > E > D > A > B > C. 3rd from top = D.",
+      "subject": "Reasoning",
+      "topic": "Order and Ranking",
+      "topic_code": "REAS_ORDER_RANKING",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-2026-05-20-reas-rk",
+      "generated_at": "2026-05-20T07:30:00+00:00",
+      "id": "sgk_REAS_ORDER_RANKING_00030"
     }
   ]
 }

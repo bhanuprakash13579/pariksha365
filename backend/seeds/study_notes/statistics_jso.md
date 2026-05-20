@@ -7,7 +7,23 @@ date: "2026"
 
 # How to use this book
 
-Work through each chapter in order. Read the concept, study the worked examples step by step, then attempt the mini-mock at the end before moving on. The formula sheet (Appendix A) and statistical tables (Appendix B) are your quick-reference during revision. The two full mocks (Appendices C & F) simulate exam conditions — do them timed.
+**Work through each chapter in order:**
+
+- Read the concept.
+
+- Study the worked examples step by step.
+
+- Attempt the mini-mock at the end before moving on.
+
+**Quick-reference during revision:**
+
+- **Formula sheet** — Appendix A.
+
+- **Statistical tables** — Appendix B.
+
+**Full mocks** for exam conditions:
+
+- **Appendix C and F** — do them timed.
 
 ---
 
@@ -50,17 +66,62 @@ Work through each chapter in order. Read the concept, study the worked examples 
 
 ## Cut-offs reality check
 
-Historically, the General (UR) cut-off for JSO/Statistical Investigator Gr-II has hovered in the **70–75 % band**, i.e., roughly **140–150 out of 200 marks**. Securing **≥ 90 %** (≥ 180 / 200) practically guarantees a final selection in most recruitment cycles and is the aspirational target. The exact cut-off shifts cycle to cycle based on vacancy count and competition intensity — treat 75 % as your floor, not your ceiling.
+**Cut-off bands — historically:**
 
-A 95% target = **190/200**. That demands ≥96 correct out of 100 (with ≤2 wrongs). It is achievable **only** if you can recognise the type instantly and the formula is already in muscle memory.
+- **General (UR) cut-off** — 70–75% band → roughly **140–150 / 200 marks**.
+
+- **≥ 90% (≥ 180 / 200)** — practically guarantees final selection in most cycles.
+
+- Cut-offs shift by vacancy count + competition; **treat 75% as your floor, not your ceiling**.
+
+**The 95% target = 190 / 200:**
+
+- Demands **≥ 96 correct** out of 100, with ≤ 2 wrongs.
+
+- Achievable **only** if you can recognise the type instantly + the formula is already in muscle memory.
 
 ---
 
 \newpage
 
-# PART 0 — FOUNDATIONS YOU CANNOT SKIP
+---
 
-Before any topic you must be fluent in these 5 micro-skills. None is hard. Skipping one will cost you 10–15 marks across the paper.
+# How to read this book — your real study load
+
+**Total pages: 134.**
+
+This is a specialised exam-prep book. **Every page is essential** — including the worked-example drills, mini-mock and trap-cards near the end. Skipping any section costs you marks.
+
+Read end-to-end in order without skipping.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p4–6** | [PART 0](#part-0) | FOUNDATIONS YOU CANNOT SKIP |
+| **p7–12** | [Chapter 1](#chapter-1) | Collection, Classification & Presentation of Data |
+| **p13–21** | [Chapter 2](#chapter-2) | Measures of Central Tendency |
+| **p22–29** | [Chapter 3](#chapter-3) | Measures of Dispersion |
+| **p30–36** | [Chapter 4](#chapter-4) | Moments, Skewness & Kurtosis |
+| **p37–44** | [Chapter 5](#chapter-5) | Correlation & Regression |
+| **p45–50** | [Chapter 6](#chapter-6) | Probability Theory |
+| **p51–58** | [Chapter 7](#chapter-7) | Random Variables & Probability Distributions |
+| **p59–65** | [Chapter 8](#chapter-8) | Sampling Theory |
+| **p66–73** | [Chapter 9](#chapter-9) | Statistical Inference (Estimation + Testing of Hypotheses) |
+| **p74–78** | [Chapter 10](#chapter-10) | Analysis of Variance (ANOVA) |
+| **p79–84** | [Chapter 11](#chapter-11) | Time Series Analysis |
+| **p85–134** | [Chapter 12](#chapter-12) | Index Numbers |
+
+---
+# PART 0 — FOUNDATIONS YOU CANNOT SKIP {#part-0}
+
+**Before any topic you must be fluent in these 5 micro-skills:**
+
+- None is hard.
+
+- Skipping one will cost you **10–15 marks across the paper**.
 
 ## 0.1 Sigma (Σ) algebra — the 8 rules
 
@@ -138,7 +199,7 @@ Memorise the Pascal row up to $n=10$ — it solves binomial probability and samp
 
 \newpage
 
-# CHAPTER 1 — Collection, Classification & Presentation of Data
+# CHAPTER 1 — Collection, Classification & Presentation of Data {#chapter-1}
 
 
 ## 1.0 The big picture
@@ -653,7 +714,7 @@ Heights = **4, 5, 5, 3**.  **Ans (b).**
 
 \newpage
 
-# CHAPTER 2 — Measures of Central Tendency
+# CHAPTER 2 — Measures of Central Tendency {#chapter-2}
 
 
 ## 2.0 The big picture
@@ -995,12 +1056,34 @@ So $ Q_2 = D_5 = P_{50} = $ Median.
 | Positively skewed (long right tail) | **Mode < Median < Mean** |
 | Negatively skewed (long left tail) | **Mean < Median < Mode** |
 
-Visual:
+Visual — position of Mode, Median, Mean along the number line:
 
-```
-positive skew (right-tailed):    Mo  Me  Mn  →
-negative skew (left-tailed):     ←  Mn  Me  Mo
-```
+<div style="text-align:center; margin:8pt 0;">
+<svg width="440" height="80" viewBox="0 0 440 80" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="9">
+  <!-- Row 1: Positive skew -->
+  <text x="5" y="14" fill="#c2410c" font-weight="bold" font-size="9">Positive skew (right-tailed):</text>
+  <line x1="155" y1="10" x2="430" y2="10" stroke="#374151" stroke-width="1.2"/>
+  <polygon points="427,6 437,10 427,14" fill="#374151"/>
+  <!-- Mo < Md < Mean (further right = larger) -->
+  <line x1="210" y1="7" x2="210" y2="13" stroke="#7c3aed" stroke-width="1.8"/>
+  <line x1="285" y1="7" x2="285" y2="13" stroke="#15803d" stroke-width="1.8"/>
+  <line x1="355" y1="7" x2="355" y2="13" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="210" y="24" text-anchor="middle" fill="#7c3aed" font-weight="bold">Mo</text>
+  <text x="285" y="24" text-anchor="middle" fill="#15803d" font-weight="bold">Md</text>
+  <text x="355" y="24" text-anchor="middle" fill="#dc2626" font-weight="bold">Mean</text>
+  <!-- Row 2: Negative skew -->
+  <text x="5" y="52" fill="#15803d" font-weight="bold" font-size="9">Negative skew (left-tailed):</text>
+  <line x1="155" y1="48" x2="430" y2="48" stroke="#374151" stroke-width="1.2"/>
+  <polygon points="427,44 437,48 427,52" fill="#374151"/>
+  <!-- Mean < Md < Mo -->
+  <line x1="210" y1="45" x2="210" y2="51" stroke="#dc2626" stroke-width="1.8"/>
+  <line x1="285" y1="45" x2="285" y2="51" stroke="#15803d" stroke-width="1.8"/>
+  <line x1="355" y1="45" x2="355" y2="51" stroke="#7c3aed" stroke-width="1.8"/>
+  <text x="210" y="62" text-anchor="middle" fill="#dc2626" font-weight="bold">Mean</text>
+  <text x="285" y="62" text-anchor="middle" fill="#15803d" font-weight="bold">Md</text>
+  <text x="355" y="62" text-anchor="middle" fill="#7c3aed" font-weight="bold">Mo</text>
+</svg>
+</div>
 
 ## 2.11 Worked PYQ-style examples
 
@@ -1276,7 +1359,7 @@ Coincidence here; usually Mode and Median differ.
 
 \newpage
 
-# CHAPTER 3 — Measures of Dispersion
+# CHAPTER 3 — Measures of Dispersion {#chapter-3}
 
 
 ## 3.0 The big picture
@@ -1806,7 +1889,7 @@ The **Gini coefficient** = area between the Lorenz curve and the line of equalit
 
 \newpage
 
-# CHAPTER 4 — Moments, Skewness & Kurtosis
+# CHAPTER 4 — Moments, Skewness & Kurtosis {#chapter-4}
 
 
 ## 4.0 The big picture
@@ -2025,36 +2108,42 @@ $$
 | < 3 | < 0 | flatter peak | **Platykurtic** |
 
 <div style="text-align:center; margin:12pt 0;">
-<svg width="420" height="180" viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
+<svg width="420" height="215" viewBox="0 0 420 215" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
   <!-- axis -->
   <line x1="20" y1="155" x2="405" y2="155" stroke="#374151" stroke-width="1.5"/>
-  <line x1="210" y1="10" x2="210" y2="158" stroke="#d1d5db" stroke-width="1" stroke-dasharray="3,3"/>
+  <!-- centre dashed line -->
+  <line x1="210" y1="10" x2="210" y2="160" stroke="#d1d5db" stroke-width="1" stroke-dasharray="3,3"/>
 
-  <!-- Platykurtic (flat) — blue -->
+  <!-- Platykurtic (flat) — blue dashed -->
   <path d="M 60,150 C 100,148 140,130 170,95 C 185,78 198,65 210,62
            C 222,65 235,78 250,95 C 280,130 320,148 360,150"
         fill="none" stroke="#2563eb" stroke-width="1.8" stroke-dasharray="6,3"/>
 
-  <!-- Mesokurtic (normal) — green -->
+  <!-- Mesokurtic (normal) — green solid -->
   <path d="M 90,150 C 120,148 150,130 175,100 C 192,78 204,52 210,38
            C 216,52 228,78 245,100 C 270,130 300,148 330,150"
         fill="none" stroke="#16a34a" stroke-width="2.2"/>
 
-  <!-- Leptokurtic (tall/sharp) — red -->
+  <!-- Leptokurtic (tall/sharp) — red solid -->
   <path d="M 140,150 C 160,148 178,130 193,105 C 202,88 207,60 210,18
            C 213,60 218,88 227,105 C 242,130 260,148 280,150"
         fill="none" stroke="#dc2626" stroke-width="1.8"/>
 
-  <!-- labels -->
-  <text x="55"  y="143" fill="#2563eb" font-size="9">Platykurtic</text>
-  <text x="55"  y="154" fill="#2563eb" font-size="9">(β₂ &lt; 3, flat)</text>
-  <text x="210" y="168" fill="#16a34a" font-size="9" text-anchor="middle">Mesokurtic (β₂ = 3, normal)</text>
-  <text x="310" y="143" fill="#dc2626" font-size="9" text-anchor="end">Leptokurtic</text>
-  <text x="310" y="154" fill="#dc2626" font-size="9" text-anchor="end">(β₂ &gt; 3, sharp)</text>
+  <!-- shared mean marker (μ tick) -->
+  <line x1="210" y1="150" x2="210" y2="162" stroke="#374151" stroke-width="1.5"/>
 
-  <!-- shared mean marker -->
-  <line x1="210" y1="150" x2="210" y2="158" stroke="#374151" stroke-width="1.5"/>
-  <text x="210" y="168" text-anchor="middle" fill="#374151">μ (same for all three)</text>
+  <!-- labels — row 1: curve names -->
+  <text x="5"   y="174" fill="#2563eb" font-size="9" font-weight="bold">Platykurtic</text>
+  <text x="210" y="174" fill="#16a34a" font-size="9" font-weight="bold" text-anchor="middle">Mesokurtic</text>
+  <text x="415" y="174" fill="#dc2626" font-size="9" font-weight="bold" text-anchor="end">Leptokurtic</text>
+
+  <!-- labels — row 2: β₂ descriptors -->
+  <text x="5"   y="187" fill="#2563eb" font-size="8.5">β₂ &lt; 3  (flat)</text>
+  <text x="210" y="187" fill="#16a34a" font-size="8.5" text-anchor="middle">β₂ = 3  (normal)</text>
+  <text x="415" y="187" fill="#dc2626" font-size="8.5" text-anchor="end">β₂ &gt; 3  (sharp peak)</text>
+
+  <!-- μ note -->
+  <text x="210" y="207" fill="#374151" font-size="8.5" text-anchor="middle">μ — all three curves share the same mean</text>
 </svg>
 </div>
 
@@ -2357,7 +2446,7 @@ Karl Pearson's Sk = +0.6, Mean = 50, Mode = 44. Find SD.
 
 \newpage
 
-# CHAPTER 5 — Correlation & Regression
+# CHAPTER 5 — Correlation & Regression {#chapter-5}
 
 
 ## 5.0 The big picture
@@ -2372,17 +2461,65 @@ Correlation answers: "Do two variables tend to move together?" Height and weight
 
 **Geometric picture of the two regression lines:**
 
-```
-Y
-│             . .  .
-│          .  Byx (Y on X line — steep when r is high)
-│       . Bxy (X on Y line — less steep)
-│    .×.   ← both pass through (X̄, Ȳ)
-│  .
-│.
-└──────────────────── X
-   (angle between lines ↓ as |r| → 1; lines coincide at |r|=1)
-```
+<div style="text-align:center; margin:10pt 0;">
+<svg width="445" height="258" viewBox="0 0 445 258" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="9">
+
+  <!-- axes -->
+  <line x1="35" y1="230" x2="422" y2="230" stroke="#374151" stroke-width="1.5"/>
+  <line x1="35" y1="230" x2="35"  y2="12"  stroke="#374151" stroke-width="1.5"/>
+  <polygon points="418,226 428,230 418,234" fill="#374151"/>
+  <polygon points="31,12 35,3 39,12" fill="#374151"/>
+  <text x="432" y="233" fill="#374151" font-weight="bold" font-size="10">X</text>
+  <text x="28"  y="9"  text-anchor="middle" fill="#374151" font-weight="bold" font-size="10">Y</text>
+
+  <!-- scatter cloud (grey dots — positive correlation) -->
+  <circle cx="72"  cy="198" r="3.5" fill="#9ca3af"/>
+  <circle cx="98"  cy="178" r="3.5" fill="#9ca3af"/>
+  <circle cx="122" cy="185" r="3.5" fill="#9ca3af"/>
+  <circle cx="148" cy="157" r="3.5" fill="#9ca3af"/>
+  <circle cx="172" cy="150" r="3.5" fill="#9ca3af"/>
+  <circle cx="196" cy="136" r="3.5" fill="#9ca3af"/>
+  <circle cx="240" cy="108" r="3.5" fill="#9ca3af"/>
+  <circle cx="268" cy="93"  r="3.5" fill="#9ca3af"/>
+  <circle cx="298" cy="86"  r="3.5" fill="#9ca3af"/>
+  <circle cx="330" cy="63"  r="3.5" fill="#9ca3af"/>
+  <circle cx="362" cy="52"  r="3.5" fill="#9ca3af"/>
+
+  <!-- Y-on-X regression line (blue) — less steep, slope −0.5 in SVG coords, through (215,122) -->
+  <!-- at x=50: y=205  at x=400: y=30 -->
+  <line x1="50" y1="205" x2="400" y2="30" stroke="#2563eb" stroke-width="2.2"/>
+
+  <!-- X-on-Y regression line (green) — steeper, slope −1.74 in SVG coords, through (215,122) -->
+  <!-- at x=163: y=214  at x=270: y=28 -->
+  <line x1="163" y1="214" x2="270" y2="28" stroke="#15803d" stroke-width="2.2"/>
+
+  <!-- angle sector between the two lines at the mean point -->
+  <!-- Y-on-X direction at r=30: (242,109).  X-on-Y direction at r=30: (229,97) -->
+  <path d="M 215,122 L 242,109 Q 237,100 229,97 L 215,122 Z"
+        fill="#ede9fe" fill-opacity="0.7" stroke="#7c3aed" stroke-width="1"/>
+  <text x="241" y="104" fill="#7c3aed" font-size="8.5" font-style="italic">θ</text>
+
+  <!-- mean point (X̄, Ȳ) — both lines pass through this -->
+  <circle cx="215" cy="122" r="5.5" fill="#dc2626" stroke="white" stroke-width="1.5"/>
+  <text x="220" y="117" fill="#dc2626" font-size="8.5" font-weight="bold">(X̄, Ȳ)</text>
+  <text x="220" y="138" fill="#dc2626" font-size="7.5" font-style="italic">both lines pass through here</text>
+
+  <!-- Y-on-X label (top-right, near line endpoint) -->
+  <text x="398" y="43"  text-anchor="end" fill="#2563eb" font-size="9"  font-weight="bold">Y on X  (b_yx)</text>
+  <text x="398" y="54"  text-anchor="end" fill="#2563eb" font-size="8">slope = r · σ_y/σ_x</text>
+
+  <!-- X-on-Y label (top-centre, near its endpoint) -->
+  <text x="275" y="26" fill="#15803d" font-size="9"  font-weight="bold">X on Y  (b_xy)</text>
+  <text x="275" y="37" fill="#15803d" font-size="8">slope = σ_y / (r · σ_x)  [steeper]</text>
+
+  <!-- key facts bar -->
+  <rect x="35" y="238" width="392" height="18" rx="2" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="0.8"/>
+  <text x="231" y="249" text-anchor="middle" fill="#374151" font-size="8">
+    θ → 0 as |r| → 1 · lines coincide at |r| = 1 · perpendicular at r = 0 · b_yx × b_xy = r²
+  </text>
+
+</svg>
+</div>
 
 <div class="formula">
 
@@ -2924,7 +3061,7 @@ Check: $b_{YX} \times b_{XY} = 1.2 \times 0.3 = 0.36 = 0.6^2$ ✓
 
 \newpage
 
-# CHAPTER 6 — Probability Theory
+# CHAPTER 6 — Probability Theory {#chapter-6}
 
 
 ## 6.0 The big picture
@@ -3318,7 +3455,7 @@ $$
 
 \newpage
 
-# CHAPTER 7 — Random Variables & Probability Distributions
+# CHAPTER 7 — Random Variables & Probability Distributions {#chapter-7}
 
 
 ## 7.0 The big picture
@@ -3904,7 +4041,7 @@ Sampling $n$ items **without replacement** from a population of $N$ containing $
 
 \newpage
 
-# CHAPTER 8 — Sampling Theory
+# CHAPTER 8 — Sampling Theory {#chapter-8}
 
 
 ## 8.0 The big picture
@@ -4364,7 +4501,7 @@ Population: Stratum 1 (N₁ = 600), Stratum 2 (N₂ = 300), Stratum 3 (N₃ = 10
 
 \newpage
 
-# CHAPTER 9 — Statistical Inference (Estimation + Testing of Hypotheses)
+# CHAPTER 9 — Statistical Inference (Estimation + Testing of Hypotheses) {#chapter-9}
 
 
 ## 9.0 The big picture
@@ -4620,8 +4757,7 @@ Common multipliers:
   <!-- === Panel A: Two-tail === -->
   <text x="80" y="12" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="10">Two-tail (α = 5 %)</text>
   <line x1="10" y1="85" x2="155" y2="85" stroke="#374151" stroke-width="1.2"/>
-  <!-- bell -->
-  <path d="M 12,84 C 25,84 35,81 45,73 C 55,63 65,46 80,34 C 90,26 95,22 80,34 C 82,28 80,22 80,20 C 80,22 78,28 80,34 C 65,46 75,63 85,73 C 95,81 105,84 118,84 C 132,84 145,84 155,84" fill="none" stroke="#374151" stroke-width="1.2"/>
+  <!-- bell — Panel A, centre x=80, peak y=16 -->
   <path d="M 12,84 C 20,84 28,82 35,76 C 42,68 50,54 57,40 C 62,30 69,20 80,16 C 91,20 98,30 103,40 C 110,54 118,68 125,76 C 132,82 140,84 148,84" fill="none" stroke="#374151" stroke-width="1.5"/>
   <!-- left rejection zone -->
   <path d="M 12,84 C 18,84 24,82 30,76 C 36,68 42,57 48,47 L 48,84 Z" fill="#fecaca" opacity="0.8"/>
@@ -4640,7 +4776,8 @@ Common multipliers:
   <!-- === Panel B: Right-tail === -->
   <text x="240" y="12" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="10">Right-tail (α = 5 %)</text>
   <line x1="170" y1="85" x2="315" y2="85" stroke="#374151" stroke-width="1.2"/>
-  <path d="M 172,84 C 185,84 198,82 210,75 C 220,66 228,50 238,36 C 243,27 248,20 240,16 C 232,20 237,27 242,36 C 252,50 260,66 270,75 C 280,82 292,84 305,84 C 310,84 315,84 315,84" fill="none" stroke="#374151" stroke-width="1.5"/>
+  <!-- bell — Panel B, centre x=243, peak y=16 -->
+  <path d="M 172,84 C 188,84 204,82 216,74 C 226,66 233,52 237,40 C 239,32 241,25 243,16 C 245,25 247,32 249,40 C 253,52 260,66 270,74 C 282,82 298,84 315,84" fill="none" stroke="#374151" stroke-width="1.5"/>
   <!-- right rejection -->
   <path d="M 272,47 C 280,58 288,70 295,77 C 302,82 308,84 315,84 L 315,84 L 272,84 Z" fill="#fecaca" opacity="0.8"/>
   <line x1="272" y1="47" x2="272" y2="84" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3,2"/>
@@ -4652,7 +4789,8 @@ Common multipliers:
   <!-- === Panel C: Left-tail === -->
   <text x="400" y="12" text-anchor="middle" fill="#1d4ed8" font-weight="bold" font-size="10">Left-tail (α = 5 %)</text>
   <line x1="330" y1="85" x2="475" y2="85" stroke="#374151" stroke-width="1.2"/>
-  <path d="M 332,84 C 345,84 358,82 368,75 C 378,66 386,50 396,36 C 401,27 406,20 400,16 C 394,20 399,27 404,36 C 414,50 422,66 432,75 C 442,82 452,84 465,84 C 470,84 475,84 475,84" fill="none" stroke="#374151" stroke-width="1.5"/>
+  <!-- bell — Panel C, centre x=400, peak y=16 -->
+  <path d="M 332,84 C 348,84 364,82 376,74 C 386,66 393,52 397,40 C 399,32 400,25 400,16 C 401,25 403,32 405,40 C 409,52 416,66 426,74 C 438,82 454,84 470,84" fill="none" stroke="#374151" stroke-width="1.5"/>
   <!-- left rejection -->
   <path d="M 332,84 C 338,84 344,82 350,77 C 357,70 363,58 368,47 L 368,84 Z" fill="#fecaca" opacity="0.8"/>
   <line x1="368" y1="47" x2="368" y2="84" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3,2"/>
@@ -4927,7 +5065,7 @@ A "more powerful test" = lower β for the same α. Powerful tests are usually **
 
 \newpage
 
-# CHAPTER 10 — Analysis of Variance (ANOVA)
+# CHAPTER 10 — Analysis of Variance (ANOVA) {#chapter-10}
 
 
 ## 10.0 The big picture
@@ -5245,7 +5383,7 @@ Between df = 4, Within df = 20. How many groups (k) and total observations (n)?
 
 \newpage
 
-# CHAPTER 11 — Time Series Analysis
+# CHAPTER 11 — Time Series Analysis {#chapter-11}
 
 
 ## 11.0 The big picture
@@ -5652,7 +5790,7 @@ Q3 actual value = 63, Seasonal index Q3 = 133.33. What is the deseasonalised val
 
 \newpage
 
-# CHAPTER 12 — Index Numbers
+# CHAPTER 12 — Index Numbers {#chapter-12}
 
 
 ## 12.0 The big picture

@@ -112,7 +112,7 @@ HTML_TEMPLATE = """<!doctype html>
 CSS = textwrap.dedent("""
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-  @page { size: A4; margin: 15mm 14mm 18mm 14mm; }
+  @page { size: A4; margin: 15mm 14mm 22mm 14mm; }
 
   html, body {
     font-family: "Inter", "DejaVu Sans", "Noto Sans", system-ui, sans-serif;
@@ -348,38 +348,42 @@ CSS = textwrap.dedent("""
 
   hr { border: 0; border-top: 1px dashed #94a3b8; margin: 14pt 0; }
 
+  /* Page-break marker — break-before avoids phantom blank pages */
+  .pb { break-before: page; height: 0; margin: 0; padding: 0; overflow: hidden; font-size: 0; line-height: 0; }
+
   /* ── Callout boxes ── */
   .intuition, .definition, .formula, .examtip,
   .keypoint, .mnemonic, .pitfall, .pyq {
     border-radius: 3pt;
     margin: 8pt 0;
-    overflow: hidden;
-    page-break-inside: avoid;
+    position: relative;
   }
-  /* Shared ::before label bar */
+  /* Shared ::before label bar — absolutely positioned so no overflow:hidden needed */
   .intuition::before, .definition::before, .formula::before,
   .examtip::before, .keypoint::before,
   .mnemonic::before, .pitfall::before, .pyq::before {
     display: block;
+    position: absolute;
+    top: -1px; left: -1px; right: -1px;
     padding: 3pt 10pt;
     font-weight: 700;
     font-size: 7.5pt;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
+    border-radius: 2pt 2pt 0 0;
   }
 
   /* Quick Recall (teal) */
   .intuition {
     background: #e6f7f5;
     border: 1px solid #0d9488;
-    padding: 6pt 10pt;
+    padding: 22pt 10pt 6pt 10pt;
     color: #134e4a;
   }
   .intuition::before {
     content: "Quick Recall";
     background: #0d9488;
-    margin: -6pt -10pt 6pt -10pt;
   }
   .intuition strong { color: #0f766e; }
 
@@ -387,13 +391,12 @@ CSS = textwrap.dedent("""
   .definition {
     background: #eef2ff;
     border: 1px solid #4f46e5;
-    padding: 6pt 10pt;
+    padding: 22pt 10pt 6pt 10pt;
     color: #1e1b4b;
   }
   .definition::before {
     content: "Definition";
     background: #4f46e5;
-    margin: -6pt -10pt 6pt -10pt;
   }
   .definition strong { color: #3730a3; }
 
@@ -401,13 +404,13 @@ CSS = textwrap.dedent("""
   .formula {
     background: #faf5ff;
     border: 1px solid #7c3aed;
-    padding: 6pt 10pt;
+    padding: 22pt 10pt 6pt 10pt;
     color: #3b0764;
+    page-break-inside: avoid;
   }
   .formula::before {
     content: "Formula";
     background: #7c3aed;
-    margin: -6pt -10pt 6pt -10pt;
   }
   .formula strong { color: #6d28d9; }
 
@@ -432,13 +435,12 @@ CSS = textwrap.dedent("""
   .examtip {
     background: #fffbeb;
     border: 1px solid #b45309;
-    padding: 6pt 10pt;
+    padding: 22pt 10pt 6pt 10pt;
     color: #78350f;
   }
   .examtip::before {
     content: "Exam Alert";
     background: #b45309;
-    margin: -6pt -10pt 6pt -10pt;
   }
   .examtip strong { color: #92400e; }
 
@@ -446,13 +448,12 @@ CSS = textwrap.dedent("""
   .keypoint {
     background: #f0f9ff;
     border: 1px solid #0284c7;
-    padding: 6pt 10pt;
+    padding: 22pt 10pt 6pt 10pt;
     color: #0c4a6e;
   }
   .keypoint::before {
     content: "Key Fact";
     background: #0284c7;
-    margin: -6pt -10pt 6pt -10pt;
   }
   .keypoint strong { color: #0369a1; }
 
@@ -460,48 +461,52 @@ CSS = textwrap.dedent("""
   .mnemonic, blockquote.mnemonic {
     background: #f0fdf4;
     border: 1px solid #16a34a;
-    padding: 6pt 10pt;
+    padding: 22pt 10pt 6pt 10pt;
     margin: 7pt 0;
     color: #14532d;
     font-style: normal;
-    overflow: hidden;
     border-radius: 3pt;
+    page-break-inside: avoid;
   }
   .mnemonic::before, blockquote.mnemonic::before {
     content: "Remember";
     display: block;
+    position: absolute;
+    top: -1px; left: -1px; right: -1px;
     background: #16a34a;
     color: #fff;
     padding: 3pt 10pt;
-    margin: -6pt -10pt 6pt -10pt;
     font-weight: 700;
     font-size: 7.5pt;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    border-radius: 2pt 2pt 0 0;
   }
 
   /* Common Trap (red) */
   .pitfall, blockquote.pitfall {
     background: #fef2f2;
     border: 1px solid #dc2626;
-    padding: 6pt 10pt;
+    padding: 22pt 10pt 6pt 10pt;
     margin: 7pt 0;
     color: #7f1d1d;
     font-style: normal;
-    overflow: hidden;
     border-radius: 3pt;
+    page-break-inside: avoid;
   }
   .pitfall::before, blockquote.pitfall::before {
     content: "Common Trap";
     display: block;
+    position: absolute;
+    top: -1px; left: -1px; right: -1px;
     background: #dc2626;
     color: #fff;
     padding: 3pt 10pt;
-    margin: -6pt -10pt 6pt -10pt;
     font-weight: 700;
     font-size: 7.5pt;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    border-radius: 2pt 2pt 0 0;
   }
   .pitfall strong, blockquote.pitfall strong { color: #b91c1c; }
 
@@ -509,14 +514,13 @@ CSS = textwrap.dedent("""
   .pyq {
     background: #eff6ff;
     border: 1px solid #3b82f6;
-    padding: 5pt 9pt;
+    padding: 22pt 9pt 5pt 9pt;
     color: #1e3a8a;
     font-size: 9.5pt;
   }
   .pyq::before {
     content: "Exam Question";
     background: #3b82f6;
-    margin: -5pt -9pt 5pt -9pt;
   }
 
   img, svg { max-width: 100%; height: auto; }
@@ -526,7 +530,6 @@ CSS = textwrap.dedent("""
   .chapter-summary {
     border: 1.5pt solid #7c3aed;
     border-radius: 5pt;
-    overflow: hidden;
     margin: 14pt 0 6pt 0;
     page-break-inside: avoid;
   }
@@ -540,7 +543,44 @@ CSS = textwrap.dedent("""
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    border-radius: 4pt 4pt 0 0;
+    margin-bottom: 6pt;
   }
+
+  /* ── MCQ Options — each choice on its own line ── */
+  .options { margin: 3pt 0 5pt 0; }
+  .options ol, .options ul { list-style: none; padding: 0; margin: 2pt 0; }
+  .options li {
+    display: block;
+    padding: 2pt 8pt;
+    margin: 2pt 0;
+    background: #f8fafc;
+    border-left: 2pt solid #94a3b8;
+    border-radius: 0 2pt 2pt 0;
+    font-size: 9.5pt;
+  }
+
+  /* ── Answer section inside PYQ / Exam Question boxes ── */
+  .pyq-answer {
+    margin-top: 6pt;
+    padding-top: 5pt;
+    border-top: 1.5px dashed #3b82f6;
+    color: #1d4ed8;
+    font-weight: 600;
+    font-size: 9pt;
+  }
+
+  /* ── Numbered answer key (chemistry/econ mini-quiz style) ── */
+  .answer-key {
+    margin: 6pt 0 4pt 0;
+    padding: 4pt 10pt;
+    background: #f0f9ff;
+    border-left: 2.5pt solid #0284c7;
+    border-radius: 0 2pt 2pt 0;
+    font-size: 9pt;
+  }
+  .answer-key ol { margin: 2pt 0; padding-left: 14pt; columns: 2; column-gap: 12pt; }
+  .answer-key li { margin-bottom: 2pt; }
   .chapter-summary .mermaid {
     padding: 6pt 4pt;
     background: #faf5ff;
@@ -559,8 +599,10 @@ CSS = textwrap.dedent("""
 
 
 def _strip_pandoc_directives(text: str) -> str:
-    # \newpage from pandoc -> CSS page break
-    text = re.sub(r"\\newpage", '\n<div style="page-break-after: always;"></div>\n', text)
+    # \newpage from pandoc -> CSS page break (break-before avoids phantom blank pages)
+    # Also strip a preceding --- separator to avoid double page breaks
+    text = re.sub(r"---\s*\n\s*\\newpage", '\n<div class="pb"></div>\n', text)
+    text = re.sub(r"\\newpage", '\n<div class="pb"></div>\n', text)
     # YAML front-matter
     if text.startswith("---"):
         end = text.find("\n---", 3)
@@ -613,7 +655,7 @@ def _restore_math(html_text: str, placeholders: dict) -> str:
 _MD_DIV_CLASSES = (
     "steps", "method-a", "method-b", "worked", "examtip", "keypoint",
     "mnemonic", "pitfall", "pyq", "intuition", "definition", "formula",
-    "chapter-summary", "part-divider",
+    "chapter-summary", "part-divider", "options", "pyq-answer", "answer-key",
 )
 
 def _inject_markdown_attr(text: str) -> str:
@@ -627,8 +669,66 @@ def _inject_markdown_attr(text: str) -> str:
     return pattern.sub(r'\1 markdown="block"', text)
 
 
+def _preprocess_content(text: str) -> str:
+    """Pre-markdown transforms: split MCQ options and crammed answer lists."""
+
+    # ── MCQ options crammed on one line ──────────────────────────────────────
+    # e.g. "(a) Inflation (b) Deflation (c) Stagflation (d) Recession"
+    _OPT_LINE = re.compile(
+        r'^([^\n]*)\(a\)([^\n]*)\(b\)([^\n]*)\(c\)([^\n]*)',
+        re.MULTILINE | re.IGNORECASE,
+    )
+
+    def _split_opts(m: re.Match) -> str:
+        prefix = m.group(1).strip()
+        rest = m.group(0)[len(m.group(1)):]  # from "(a)" onward
+        parts = re.split(r'\s*\(([a-dA-D])\)\s*', rest)
+        # parts: ['', 'a', 'text_a', 'b', 'text_b', ...]
+        lines = []
+        if prefix:
+            lines.append(prefix)
+        i = 1
+        while i + 1 < len(parts):
+            label = parts[i].lower()
+            content = re.sub(r'&nbsp;|\xa0', ' ', parts[i + 1]).strip()
+            if content:
+                lines.append(f"({label}) {content}")
+            i += 2
+        return "\n".join(lines)
+
+    text = _OPT_LINE.sub(_split_opts, text)
+
+    # ── Crammed numbered answer lists ────────────────────────────────────────
+    # e.g. "Answers: 1. Calcium hypochlorite 2. 3 parts HCl 3. Silver"
+    _ANS_LINE = re.compile(
+        r'(?m)^(Answers?:)\s+((?:\d+\.\s+[^\n]+?)(?:\s+\d+\.\s+[^\n]+?){2,})\s*$',
+    )
+
+    def _split_ans(m: re.Match) -> str:
+        label = m.group(1)
+        body = m.group(2)
+        items = re.split(r'\s+(?=\d+\.\s)', body)
+        return f"**{label}**\n\n" + "\n\n".join(item.strip() for item in items if item.strip())
+
+    text = _ANS_LINE.sub(_split_ans, text)
+
+    # ── Wrap "Ans:" / "Sol:" lines in pyq-answer divs ────────────────────────
+    # Creates visual Q-vs-A separation inside Exam Question boxes.
+    _ANS_LABEL = re.compile(
+        r'^(\*\*(?:Ans|Answer|Sol|Solution|Correct answer)[.:*]?\*\*[^\n]*)',
+        re.MULTILINE | re.IGNORECASE,
+    )
+    text = _ANS_LABEL.sub(
+        r'<div class="pyq-answer">\n\1\n</div>',
+        text,
+    )
+
+    return text
+
+
 def _render_html(md_text: str) -> str:
     md_text = _strip_pandoc_directives(md_text)
+    md_text = _preprocess_content(md_text)
     md_text = _inject_markdown_attr(md_text)
     # Protect math spans before markdown processes emphasis/italic markers
     md_text, placeholders = _protect_math(md_text)

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, SafeAreaView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { QuizAPI } from '../../services/api';
+import { QuizAPI, PrivateModuleAPI } from '../../services/api';
 import { COLORS } from '../../styles/theme';
 
 interface QuizQuestion {
@@ -13,7 +13,7 @@ interface QuizQuestion {
 }
 
 export default function QuizSessionScreen({ navigation, route }: any) {
-    const { subject, limit = 10, title = 'Daily Quiz' } = route.params || {};
+    const { subject, limit = 10, title = 'Daily Quiz', moduleSlug } = route.params || {};
 
     const [questions, setQuestions] = useState<QuizQuestion[]>([]);
     const [currentIdx, setCurrentIdx] = useState(0);
@@ -24,9 +24,21 @@ export default function QuizSessionScreen({ navigation, route }: any) {
     const [submitting, setSubmitting] = useState(false);
 
     useEffect(() => {
+        // Reset state whenever subject/module/limit changes (catches re-navigate with same params)
+        setCurrentIdx(0);
+        setSelectedAnswers({});
+        setSubmitted(false);
+        setScorecard(null);
+        setLoading(true);
+
         const fetchQuiz = async () => {
             try {
-                const res = await QuizAPI.getDailyQuiz(subject, limit);
+                let res;
+                if (moduleSlug) {
+                    res = await PrivateModuleAPI.getQuiz(moduleSlug, subject, limit);
+                } else {
+                    res = await QuizAPI.getDailyQuiz(subject, limit);
+                }
                 setQuestions(res.data?.questions || res.data || []);
             } catch (err) {
                 console.error("Failed to fetch quiz:", err);
@@ -35,7 +47,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
             }
         };
         fetchQuiz();
-    }, [subject, limit]);
+    }, [subject, limit, moduleSlug]);
 
     const selectOption = (optionIndex: number) => {
         if (submitted) return;
@@ -57,12 +69,17 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                 question_id: q.id,
                 selected_option_index: selectedAnswers[idx] ?? null,
             }));
-            const res = await QuizAPI.submitQuiz(answersPayload);
+            let res;
+            if (moduleSlug) {
+                res = await PrivateModuleAPI.submitQuiz(moduleSlug, answersPayload);
+            } else {
+                res = await QuizAPI.submitQuiz(answersPayload);
+            }
             setScorecard(res.data);
             setSubmitted(true);
         } catch (err) {
             console.error("Failed to submit quiz:", err);
-            // Compute locally as fallback
+            // Scorecard from server failed — show basic local tally so user still sees a result
             let correct = 0, wrong = 0, skipped = 0;
             questions.forEach((q, idx) => {
                 const sel = selectedAnswers[idx];
@@ -72,7 +89,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
             setScorecard({
                 correct, wrong, skipped,
                 total: questions.length,
-                score_percentage: Math.round((correct / questions.length) * 100),
+                score_percentage: questions.length > 0 ? Math.round((correct / questions.length) * 100) : 0,
             });
             setSubmitted(true);
         } finally {

@@ -58,8 +58,11 @@ async def start_attempt(db: AsyncSession, user_id: uuid.UUID, test_id: uuid.UUID
             "status": existing.status,
             "test_title": existing.test_series.title if existing.test_series else None,
             "test_series": {
-                "cdn_url": existing.test_series.cdn_url if existing.test_series else None
-            }
+                "cdn_url": existing.test_series.cdn_url if existing.test_series else None,
+                "total_duration_minutes": existing.test_series.total_duration_minutes if existing.test_series else None,
+                "has_sectional_timing": bool(existing.test_series.has_sectional_timing) if existing.test_series else False,
+                "negative_marking": existing.test_series.negative_marking if existing.test_series else 0.25,
+            },
         }
         
     # VALIDATION: two gates run in order.
@@ -93,7 +96,12 @@ async def start_attempt(db: AsyncSession, user_id: uuid.UUID, test_id: uuid.UUID
             "ended_at": attempt_full.ended_at,
             "status": attempt_full.status,
             "test_title": attempt_full.test_series.title if attempt_full.test_series else None,
-            "test_series": {"cdn_url": attempt_full.test_series.cdn_url if attempt_full.test_series else None},
+            "test_series": {
+                "cdn_url": attempt_full.test_series.cdn_url if attempt_full.test_series else None,
+                "total_duration_minutes": attempt_full.test_series.total_duration_minutes if attempt_full.test_series else None,
+                "has_sectional_timing": bool(attempt_full.test_series.has_sectional_timing) if attempt_full.test_series else False,
+                "negative_marking": attempt_full.test_series.negative_marking if attempt_full.test_series else 0.25,
+            },
         }
 
     if test_series.exam_stage_id is not None:
@@ -111,7 +119,12 @@ async def start_attempt(db: AsyncSession, user_id: uuid.UUID, test_id: uuid.UUID
             "ended_at": attempt_full.ended_at,
             "status": attempt_full.status,
             "test_title": attempt_full.test_series.title if attempt_full.test_series else None,
-            "test_series": {"cdn_url": attempt_full.test_series.cdn_url if attempt_full.test_series else None},
+            "test_series": {
+                "cdn_url": attempt_full.test_series.cdn_url if attempt_full.test_series else None,
+                "total_duration_minutes": attempt_full.test_series.total_duration_minutes if attempt_full.test_series else None,
+                "has_sectional_timing": bool(attempt_full.test_series.has_sectional_timing) if attempt_full.test_series else False,
+                "negative_marking": attempt_full.test_series.negative_marking if attempt_full.test_series else 0.25,
+            },
         }
 
     # Gate B — legacy folder/enrollment path for old course-linked tests.
@@ -170,8 +183,11 @@ async def start_attempt(db: AsyncSession, user_id: uuid.UUID, test_id: uuid.UUID
         "status": attempt_full.status,
         "test_title": attempt_full.test_series.title if attempt_full.test_series else None,
         "test_series": {
-            "cdn_url": attempt_full.test_series.cdn_url if attempt_full.test_series else None
-        }
+            "cdn_url": attempt_full.test_series.cdn_url if attempt_full.test_series else None,
+            "total_duration_minutes": attempt_full.test_series.total_duration_minutes if attempt_full.test_series else None,
+            "has_sectional_timing": bool(attempt_full.test_series.has_sectional_timing) if attempt_full.test_series else False,
+            "negative_marking": attempt_full.test_series.negative_marking if attempt_full.test_series else 0.25,
+        },
     }
 
 async def get_attempt_answers(db: AsyncSession, attempt_id: uuid.UUID, user_id: uuid.UUID) -> List[UserAnswer]:
@@ -211,12 +227,13 @@ async def save_answer(db: AsyncSession, attempt_id: uuid.UUID, answer_in: UserAn
     return new_answer
 
 async def submit_attempt(db: AsyncSession, attempt_id: uuid.UUID) -> Result:
-    # Eager-load test_series (for negative marking) and user_answers with question+options+section
+    # Eager-load test_series only (for negative_marking). Sections are no
+    # longer pulled here — the per-Q marks come from each answer's
+    # question.section join below, so loading every section unnecessarily
+    # padded the response and slowed submit on long papers.
     attempt = (await db.execute(
         select(Attempt)
-        .options(
-            selectinload(Attempt.test_series).selectinload(TestSeries.sections),
-        )
+        .options(selectinload(Attempt.test_series))
         .where(Attempt.id == attempt_id)
     )).scalars().first()
     if not attempt or attempt.status == AttemptStatus.SUBMITTED:
@@ -272,19 +289,26 @@ async def submit_attempt(db: AsyncSession, attempt_id: uuid.UUID) -> Result:
     db.add(result)
     await db.flush()  # flush to assign an ID and evaluate
 
-    # Calculate rank and percentile
-    other_results_stmt = select(Result).join(Attempt).where(
+    # Rank/percentile via SQL aggregates — never load every Result row into
+    # memory. With thousands of attempts on a popular PYQ that scan dominated
+    # submit latency.
+    from sqlalchemy import func as _sql_func
+    base_filter = (
         Attempt.test_series_id == attempt.test_series_id,
-        Attempt.status == AttemptStatus.SUBMITTED
+        Attempt.status == AttemptStatus.SUBMITTED,
     )
-    other_results_q = await db.execute(other_results_stmt)
-    all_results = other_results_q.scalars().all()
-    
-    # rank = 1 + number of people with strictly higher score
-    higher_scores = sum(1 for r in all_results if r.total_score > total_score)
+    higher_scores = (await db.execute(
+        select(_sql_func.count(Result.id))
+        .join(Attempt, Attempt.id == Result.attempt_id)
+        .where(*base_filter, Result.total_score > total_score)
+    )).scalar_one()
+    total_candidates = (await db.execute(
+        select(_sql_func.count(Result.id))
+        .join(Attempt, Attempt.id == Result.attempt_id)
+        .where(*base_filter)
+    )).scalar_one()
+
     rank = higher_scores + 1
-    
-    total_candidates = len(all_results)
     if total_candidates > 1:
         percentile = ((total_candidates - rank) / total_candidates) * 100
     else:

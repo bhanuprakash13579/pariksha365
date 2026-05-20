@@ -7,7 +7,9 @@ date: "2026"
 
 # EXAMINER BLUEPRINT — What Gets Tested Most
 
-General Knowledge is the section where well-prepared students lose marks to poorly-prepared students who happened to remember the right niche fact. This book is built to close that gap.
+**General Knowledge is the section where well-prepared students lose marks** to poorly-prepared ones who happened to remember the right niche fact.
+
+This book is built to close that gap.
 
 <div class="examtip">
 
@@ -69,19 +71,96 @@ General Knowledge is the section where well-prepared students lose marks to poor
 
 # How to use this book
 
-GK is a graveyard of rote learning for most aspirants — they try to memorise unconnected facts and forget them under pressure. This book beats that by grouping facts by category (awards, dances, sports, international organisations) and anchoring each cluster to a story or a memorable hook.
+**GK is a graveyard of rote learning** for most aspirants.
 
-**Where marks are lost:** Folk dances of Northeast India, tribal art forms, martial arts of specific states, musical instruments — these are the questions most candidates skip because they seem obscure. The result: 1–2 questions every paper go to whoever bothered to read this section.
+- They try to memorise unconnected facts.
 
-**How to study GK:** Work one section at a time. Read a table, close the book, and try to produce it from memory. If you can't name 7 of 8 items, re-read and try again. The spaced repetition cycle (today, then 3 days later, then 7 days later) gives you the best results for this type of material.
+- Then forget them under exam pressure.
 
-**The "What's New" section** at the top changes every year — re-read it one week before any exam. Everything else in this book (national symbols, classical dances, Bhakti saints, important days, historical firsts) is static and does not change.
+**This book beats that by:**
+
+- **Grouping facts by category** — awards, dances, sports, international organisations.
+
+- **Anchoring each cluster** to a story or a memorable hook.
+
+### Where marks are most often lost
+
+- Folk dances of **Northeast India**.
+
+- **Tribal art forms** and martial arts of specific states.
+
+- **Musical instruments**.
+
+These are the questions most candidates skip because they seem obscure.
+
+**Result:** 1–2 marks every paper go to whoever bothered to read this section.
+
+### How to study GK
+
+- Work **one section at a time**.
+
+- Read a table, close the book, **produce it from memory**.
+
+- If you can't name 7 of 8 items → re-read and try again.
+
+- **Spaced repetition** (today, +3 days, +7 days) gives the best results.
+
+### The "What's New" section
+
+- Changes every year — **re-read one week before any exam**.
+
+- Everything else in this book (national symbols, classical dances, Bhakti saints, important days, historical firsts) is **static and does not change**.
 
 ---
 
 \newpage
 
-# PART A — INDIAN CULTURE & HERITAGE
+---
+
+# How to read this book — your real study load
+
+**Total pages: 77.** Don't let the page count scare you.
+
+### Mandatory reading — pages 1 to 35 (45% of the book)
+
+That's the full syllabus. Master those 35 pages and you've covered every concept an examiner can fairly ask.
+
+### Bonus material — pages 36 to 77 (55% of the book)
+
+Reference tables, compilations, and self-test material — useful in your last week of revision OR if you're aiming for a top rank.
+
+### Two study tracks
+
+- **Just want to pass?** Read pages 1–35. Skim the appendices once before the exam.
+
+- **Want to top your batch?** Read the appendices too — they're how 70% becomes 90%.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p6–15** | [PART A](#part-a) | INDIAN CULTURE & HERITAGE |
+| **p16–17** | [PART B](#part-b) | AWARDS AND HONOURS |
+| **p18–19** | [PART C](#part-c) | SPORTS |
+| **p20–21** | [PART D](#part-d) | BOOKS AND AUTHORS |
+| **p22–25** | [PART E](#part-e) | IMPORTANT DAYS (chronological) |
+| **p26–27** | [PART F](#part-f) | INSTITUTIONS & ORGANISATIONS |
+| **p28–30** | [PART G](#part-g) | COUNTRIES AND CAPITALS (select) |
+| **p31–35** | [PART H](#part-h) | MISCELLANEOUS NUGGETS |
+| **p36–46** | [PART X](#part-x) | EXAM-FAVOURITE NICHE TOPICS (paper-setter darlings) — *Examiner-favourite niche topics — folk dances, festivals, tribes, paintings.* |
+| **p47–49** | [PART Y](#part-y) | AWARDS + HONOURS — COMPREHENSIVE TABLES — *Awards & Honours — Bharat Ratna full list, Padma 2026, Nobel.* |
+| **p50–51** | [PART Z](#part-z) | INTERNATIONAL AWARDS — *International Awards — Nobel, Booker, Pulitzer, Magsaysay.* |
+| **p52–54** | [PART AA](#part-aa) | SPORTS — COMPREHENSIVE — *Sports Comprehensive — Olympic milestones, Asian Games.* |
+| **p55–60** | [PART AB](#part-ab) | IMPORTANT DAYS — COMPLETE CALENDAR — *Important Days — complete year calendar.* |
+| **p61–63** | [PART AD](#part-ad) | GK MINI-MOCK (25 Questions · 25 Minutes) — *25-Question Mini-Mock — timed self-test.* |
+| **p64–65** | [PART AE-2](#part-ae-2) | MAJOR CINEMA + JOURNALISM AWARDS 2025 — *Cinema & Journalism Awards 2025 — Oscars, Grammys, Cannes.* |
+| **p66–71** | [PART AE](#part-ae) | WORLD COUNTRIES — CAPITALS + CURRENCIES — *World Countries — Capitals + Currencies.* |
+| **p72–77** | [PART AF](#part-af) | FAMOUS "FIRSTS" IN INDIA — *Famous 'Firsts' in India.* |
+
+---
+# PART A — INDIAN CULTURE & HERITAGE {#part-a}
 
 ## Chapter A1 — Classical Dances of India
 
@@ -336,7 +415,7 @@ Agra, Gwalior (oldest khyal), Kirana, Patiala, Jaipur-Atrauli, Banaras, Mewati, 
 
 \newpage
 
-# PART B — AWARDS AND HONOURS
+# PART B — AWARDS AND HONOURS {#part-b}
 
 ## Chapter B1 — Indian Civilian Awards (hierarchy)
 
@@ -405,7 +484,7 @@ Agra, Gwalior (oldest khyal), Kirana, Patiala, Jaipur-Atrauli, Banaras, Mewati, 
 
 \newpage
 
-# PART C — SPORTS
+# PART C — SPORTS {#part-c}
 
 ## Chapter C1 — Olympics
 
@@ -463,7 +542,7 @@ Agra, Gwalior (oldest khyal), Kirana, Patiala, Jaipur-Atrauli, Banaras, Mewati, 
 
 \newpage
 
-# PART D — BOOKS AND AUTHORS
+# PART D — BOOKS AND AUTHORS {#part-d}
 
 ## Chapter D1 — Key historical / modern
 
@@ -517,7 +596,7 @@ Agra, Gwalior (oldest khyal), Kirana, Patiala, Jaipur-Atrauli, Banaras, Mewati, 
 
 \newpage
 
-# PART E — IMPORTANT DAYS (chronological)
+# PART E — IMPORTANT DAYS (chronological) {#part-e}
 
 ### January
 
@@ -674,7 +753,7 @@ Agra, Gwalior (oldest khyal), Kirana, Patiala, Jaipur-Atrauli, Banaras, Mewati, 
 
 \newpage
 
-# PART F — INSTITUTIONS & ORGANISATIONS
+# PART F — INSTITUTIONS & ORGANISATIONS {#part-f}
 
 ## Chapter F1 — UN Bodies (HQ + focus)
 
@@ -736,7 +815,7 @@ Agra, Gwalior (oldest khyal), Kirana, Patiala, Jaipur-Atrauli, Banaras, Mewati, 
 
 \newpage
 
-# PART G — COUNTRIES AND CAPITALS (select)
+# PART G — COUNTRIES AND CAPITALS (select) {#part-g}
 
 ## World's unusual/boundary capitals
 
@@ -809,7 +888,7 @@ Agra, Gwalior (oldest khyal), Kirana, Patiala, Jaipur-Atrauli, Banaras, Mewati, 
 
 \newpage
 
-# PART H — MISCELLANEOUS NUGGETS
+# PART H — MISCELLANEOUS NUGGETS {#part-h}
 
 ## Chapter H1 — "Firsts" (Indian women)
 
@@ -983,7 +1062,7 @@ mindmap
 
 \newpage
 
-# PART X — EXAM-FAVOURITE NICHE TOPICS (paper-setter darlings)
+# PART X — EXAM-FAVOURITE NICHE TOPICS (paper-setter darlings) {#part-x}
 
 > High probability, easy to frame distractors, and most candidates skip them. Drill until you can answer in <5 s.
 
@@ -1318,7 +1397,7 @@ Drill this 8-line list daily — guarantees 1-2 marks every paper.
 
 \newpage
 
-# PART Y — AWARDS + HONOURS — COMPREHENSIVE TABLES
+# PART Y — AWARDS + HONOURS — COMPREHENSIVE TABLES {#part-y}
 
 ## Civilian awards of India (in order of precedence)
 
@@ -1408,7 +1487,7 @@ Drill this 8-line list daily — guarantees 1-2 marks every paper.
 
 \newpage
 
-# PART Z — INTERNATIONAL AWARDS
+# PART Z — INTERNATIONAL AWARDS {#part-z}
 
 ## Nobel — Indian / Indian-origin laureates
 
@@ -1452,7 +1531,7 @@ Drill this 8-line list daily — guarantees 1-2 marks every paper.
 
 \newpage
 
-# PART AA — SPORTS — COMPREHENSIVE
+# PART AA — SPORTS — COMPREHENSIVE {#part-aa}
 
 ## ICC ODI Cricket WC
 
@@ -1555,7 +1634,7 @@ Drill this 8-line list daily — guarantees 1-2 marks every paper.
 
 \newpage
 
-# PART AB — IMPORTANT DAYS — COMPLETE CALENDAR
+# PART AB — IMPORTANT DAYS — COMPLETE CALENDAR {#part-ab}
 
 ## January
 
@@ -1777,7 +1856,7 @@ Drill this 8-line list daily — guarantees 1-2 marks every paper.
 
 ---
 
-# PART AD — GK MINI-MOCK (25 Questions · 25 Minutes)
+# PART AD — GK MINI-MOCK (25 Questions · 25 Minutes) {#part-ad}
 
 Set a timer. No looking back. Check the answer key at the end.
 
@@ -1905,7 +1984,7 @@ Set a timer. No looking back. Check the answer key at the end.
 
 \newpage
 
-# PART AE-2 — MAJOR CINEMA + JOURNALISM AWARDS 2025
+# PART AE-2 — MAJOR CINEMA + JOURNALISM AWARDS 2025 {#part-ae}
 
 ## Oscar (97th Academy Awards) — held 2 Mar 2025 at Dolby Theatre
 
@@ -2156,7 +2235,7 @@ Set a timer. No looking back. Check the answer key at the end.
 
 \newpage
 
-# PART AF — FAMOUS "FIRSTS" IN INDIA
+# PART AF — FAMOUS "FIRSTS" IN INDIA {#part-af}
 
 ## Government / Politics
 
@@ -2268,7 +2347,7 @@ Set a timer. No looking back. Check the answer key at the end.
 
 \newpage
 
-# PART AG — INDIAN MOST IMPORTANT CITIES + MEGA-PROJECTS
+# PART AG — INDIAN MOST IMPORTANT CITIES + MEGA-PROJECTS {#part-ag}
 
 ## Capital cities of states (refresher — high PYQ)
 

@@ -7,9 +7,25 @@ date: "2026"
 
 # Before You Begin
 
-Forget memorising isolated facts. Every exam question in biology comes from one of four buckets: **names & discoverers**, **cause & effect** (disease-vector, hormone-disorder), **numbers & extremes** (206 bones, 120-day RBC life), and **comparisons** (prokaryote vs eukaryote, mitosis vs meiosis). This book is structured to hit all four buckets hard, in the order examiners love.
+**Forget memorising isolated facts.** Every biology question in SSC / Banks / RRB / PSC comes from one of four buckets:
 
-Read end-to-end once for context. Then on your second pass, cover the right column of every table and test yourself. The 25-question mini-mock at the end tells you what you've missed.
+- **Names & discoverers** — who discovered the cell, the laws of heredity, blood groups.
+
+- **Cause & effect** — disease ↔ vector, hormone ↔ disorder, vitamin ↔ deficiency.
+
+- **Numbers & extremes** — 206 bones, 120-day RBC life, 4-chamber heart, 23 pairs of chromosomes.
+
+- **Comparisons** — prokaryote vs eukaryote, mitosis vs meiosis, monocot vs dicot.
+
+This book hits all four buckets hard, in the order examiners love.
+
+**How to read this book:**
+
+- **First pass** — read end-to-end for context.
+
+- **Second pass** — cover the right column of every table and self-test.
+
+- **Final pass** — the 25-question mini-mock at the end tells you what you've missed.
 
 ---
 
@@ -34,15 +50,93 @@ Read end-to-end once for context. Then on your second pass, cover the right colu
 
 \newpage
 
-# PART A — FOUNDATIONS: CLASSIFICATION & THE CELL
+---
+
+# How to read this book — your real study load
+
+**Total pages: 37.** Don't let the page count scare you.
+
+### Mandatory reading — pages 1 to 37 (100% of the book)
+
+That's the full syllabus. Master those 37 pages and you've covered every concept an examiner can fairly ask.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p3–8** | [PART A](#part-a) | FOUNDATIONS: CLASSIFICATION & THE CELL |
+| **p9–13** | [PART B](#part-b) | GENETICS & EVOLUTION |
+| **p14–17** | [PART C](#part-c) | PLANT BIOLOGY |
+| **p18–25** | [PART D](#part-d) | HUMAN BODY SYSTEMS |
+| **p26–27** | [PART E](#part-e) | NUTRITION: VITAMINS & MINERALS |
+| **p28–30** | [PART F](#part-f) | DISEASES & IMMUNITY |
+| **p31–37** | [PART G](#part-g) | ECOLOGY & ENVIRONMENT |
+
+---
+# PART A — FOUNDATIONS: CLASSIFICATION & THE CELL {#part-a}
 
 ## Chapter A1 — Classification of Life
 
-In 1735, a Swedish botanist named Carl Linnaeus decided that humanity needed a universal filing system for every creature on Earth. He invented binomial nomenclature — two-part Latin names — and the hierarchical rank system we still use today.
+**The founder — Carl Linnaeus (1735)**
+
+- Swedish botanist; needed a universal filing system for every creature on Earth.
+
+- Invented **binomial nomenclature** — two-part Latin names like *Homo sapiens*.
+
+- Invented the **seven-rank hierarchy** still used today.
+
+- **Exam tag:** "Father of Taxonomy" = Carl Linnaeus.
 
 ### The seven taxonomic ranks
 
 Kingdom → Phylum → Class → Order → Family → Genus → Species
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Pyramid bands, top to bottom = broadest to narrowest -->
+<polygon points="50,30 470,30 440,65 80,65" fill="#ef9a9a" stroke="#c62828" stroke-width="1.5"/>
+<text x="260" y="53" text-anchor="middle" font-size="13" font-weight="bold" fill="#b71c1c">KINGDOM</text>
+<text x="485" y="50" font-size="10" fill="#b71c1c">Animalia</text>
+
+<polygon points="80,65 440,65 420,100 100,100" fill="#ffcc80" stroke="#e65100" stroke-width="1.5"/>
+<text x="260" y="88" text-anchor="middle" font-size="13" font-weight="bold" fill="#bf360c">PHYLUM</text>
+<text x="455" y="85" font-size="10" fill="#bf360c">Chordata</text>
+
+<polygon points="100,100 420,100 400,135 120,135" fill="#fff59d" stroke="#f9a825" stroke-width="1.5"/>
+<text x="260" y="123" text-anchor="middle" font-size="13" font-weight="bold" fill="#f57f17">CLASS</text>
+<text x="425" y="120" font-size="10" fill="#f57f17">Mammalia</text>
+
+<polygon points="120,135 400,135 380,170 140,170" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+<text x="260" y="158" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">ORDER</text>
+<text x="405" y="155" font-size="10" fill="#1b5e20">Primates</text>
+
+<polygon points="140,170 380,170 360,205 160,205" fill="#b3e5fc" stroke="#1565c0" stroke-width="1.5"/>
+<text x="260" y="193" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">FAMILY</text>
+<text x="385" y="190" font-size="10" fill="#0d47a1">Hominidae</text>
+
+<polygon points="160,205 360,205 340,240 180,240" fill="#d1c4e9" stroke="#4527a0" stroke-width="1.5"/>
+<text x="260" y="228" text-anchor="middle" font-size="13" font-weight="bold" fill="#311b92">GENUS</text>
+<text x="365" y="225" font-size="10" fill="#311b92" font-style="italic">Homo</text>
+
+<polygon points="180,240 340,240 320,275 200,275" fill="#f8bbd0" stroke="#ad1457" stroke-width="1.5"/>
+<text x="260" y="263" text-anchor="middle" font-size="13" font-weight="bold" fill="#880e4f">SPECIES</text>
+<text x="345" y="260" font-size="10" fill="#880e4f" font-style="italic">sapiens</text>
+
+<!-- Mnemonic -->
+<rect x="10" y="285" width="500" height="30" rx="4" fill="#fffde7" stroke="#f9a825"/>
+<text x="260" y="304" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Mnemonic: King Philip Came Over For Great Supper</text>
+
+<!-- Left direction arrow -->
+<text x="20" y="50" font-size="10" fill="#555">Broad</text>
+<text x="20" y="270" font-size="10" fill="#555">Narrow</text>
+
+</svg>
+
+</div>
 
 <div class="mnemonic">
 <strong>King Philip Came Over For Great Supper</strong> — Kingdom, Phylum, Class, Order, Family, Genus, Species. This mnemonic appears in textbooks from Class 6 to postgraduate level; it is absolutely exam-safe.
@@ -97,7 +191,17 @@ flowchart TD
 
 ## Chapter A2 — The Cell
 
-In 1665, Robert Hooke sliced cork with a primitive microscope and saw small boxy chambers. He called them cells — from the Latin *cellula* meaning "small room". Two centuries later, Schleiden (1838, plants) and Schwann (1839, animals) formalised the cell theory that every living thing is made of cells.
+**The discovery**
+
+- **1665** — Robert Hooke sliced cork under a primitive microscope.
+
+- Saw small boxy chambers; called them **cells** (Latin *cellula* = "small room").
+
+- **1838** — Schleiden formalised cell theory for plants.
+
+- **1839** — Schwann formalised cell theory for animals.
+
+- **1855** — Virchow added: "all cells arise from pre-existing cells."
 
 ### Three tenets of Cell Theory
 
@@ -141,6 +245,80 @@ In 1665, Robert Hooke sliced cork with a primitive microscope and saw small boxy
 "Which organelle has its own DNA?" → <strong>Mitochondria AND Chloroplast</strong> (both have own circular DNA)
 </div>
 
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Cell outline -->
+<ellipse cx="280" cy="190" rx="245" ry="170" fill="#e3f2fd" stroke="#0d47a1" stroke-width="2.5"/>
+<text x="20" y="375" font-size="10" fill="#0d47a1" font-style="italic">Animal cell — typical eukaryote</text>
+
+<!-- Nucleus -->
+<ellipse cx="290" cy="180" rx="65" ry="50" fill="#ce93d8" stroke="#6a1b9a" stroke-width="2"/>
+<ellipse cx="290" cy="180" rx="60" ry="45" fill="#e1bee7"/>
+<circle cx="290" cy="180" r="22" fill="#ab47bc"/>
+<text x="290" y="184" text-anchor="middle" font-size="10" font-weight="bold" fill="white">Nucleolus</text>
+<text x="290" y="160" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a148c">Nucleus</text>
+
+<!-- Mitochondria -->
+<ellipse cx="160" cy="120" rx="35" ry="18" fill="#ef9a9a" stroke="#c62828" stroke-width="1.5"/>
+<path d="M 130,120 Q 145,108 160,120 Q 175,132 190,120" stroke="#b71c1c" stroke-width="1" fill="none"/>
+<path d="M 130,120 Q 145,132 160,120 Q 175,108 190,120" stroke="#b71c1c" stroke-width="1" fill="none"/>
+<text x="160" y="100" text-anchor="middle" font-size="9" font-weight="bold" fill="#b71c1c">Mitochondria</text>
+<text x="160" y="148" text-anchor="middle" font-size="8" fill="#b71c1c">(Powerhouse)</text>
+
+<!-- Rough ER with ribosomes -->
+<path d="M 200,250 Q 220,255 230,245 Q 240,260 260,255 Q 280,255 290,250" stroke="#f57f17" stroke-width="3" fill="none"/>
+<circle cx="205" cy="251" r="2" fill="#3e2723"/>
+<circle cx="220" cy="253" r="2" fill="#3e2723"/>
+<circle cx="235" cy="247" r="2" fill="#3e2723"/>
+<circle cx="250" cy="256" r="2" fill="#3e2723"/>
+<circle cx="265" cy="253" r="2" fill="#3e2723"/>
+<text x="245" y="280" text-anchor="middle" font-size="9" font-weight="bold" fill="#e65100">Rough ER (with Ribosomes)</text>
+
+<!-- Smooth ER -->
+<path d="M 380,210 Q 405,205 420,220 Q 430,235 410,245 Q 395,255 415,265" stroke="#f57f17" stroke-width="2.5" fill="none"/>
+<text x="430" y="225" font-size="9" font-weight="bold" fill="#e65100">Smooth ER</text>
+
+<!-- Golgi -->
+<path d="M 380,140 Q 400,135 420,140" stroke="#1976d2" stroke-width="2.5" fill="none"/>
+<path d="M 378,148 Q 400,143 422,148" stroke="#1976d2" stroke-width="2.5" fill="none"/>
+<path d="M 376,156 Q 400,151 424,156" stroke="#1976d2" stroke-width="2.5" fill="none"/>
+<path d="M 374,164 Q 400,159 426,164" stroke="#1976d2" stroke-width="2.5" fill="none"/>
+<text x="400" y="125" text-anchor="middle" font-size="9" font-weight="bold" fill="#0d47a1">Golgi</text>
+<text x="400" y="180" text-anchor="middle" font-size="8" fill="#0d47a1">(Post office)</text>
+
+<!-- Lysosome -->
+<circle cx="140" cy="220" r="14" fill="#fff59d" stroke="#f9a825" stroke-width="1.5"/>
+<text x="140" y="223" text-anchor="middle" font-size="8" fill="#f57f17" font-weight="bold">Lyso</text>
+<text x="138" y="252" text-anchor="middle" font-size="9" font-weight="bold" fill="#f57f17">Lysosome</text>
+<text x="138" y="263" text-anchor="middle" font-size="8" fill="#f57f17">(Suicide bag)</text>
+
+<!-- Free ribosomes -->
+<circle cx="105" cy="170" r="3" fill="#3e2723"/>
+<circle cx="115" cy="180" r="3" fill="#3e2723"/>
+<circle cx="95" cy="195" r="3" fill="#3e2723"/>
+<text x="60" y="180" font-size="9" font-weight="bold" fill="#3e2723">Free</text>
+<text x="60" y="192" font-size="9" font-weight="bold" fill="#3e2723">Ribosomes</text>
+
+<!-- Centrosome -->
+<rect x="420" y="290" width="20" height="6" fill="#37474f"/>
+<rect x="437" y="295" width="6" height="20" fill="#37474f"/>
+<text x="395" y="320" font-size="9" font-weight="bold" fill="#37474f">Centrosome</text>
+
+<!-- Cytoplasm label -->
+<text x="55" y="320" font-size="10" font-style="italic" fill="#0d47a1">Cytoplasm</text>
+<text x="55" y="333" font-size="9" font-style="italic" fill="#0d47a1">(jelly matrix)</text>
+
+<!-- Cell membrane label -->
+<line x1="500" y1="40" x2="525" y2="20" stroke="#0d47a1" stroke-width="1"/>
+<text x="478" y="15" font-size="9" font-weight="bold" fill="#0d47a1">Cell membrane</text>
+<text x="488" y="27" font-size="8" fill="#0d47a1">(phospholipid bilayer)</text>
+
+</svg>
+
+</div>
+
 ### Cell division — Mitosis vs Meiosis
 
 | Aspect | Mitosis | Meiosis |
@@ -170,7 +348,7 @@ In 1665, Robert Hooke sliced cork with a primitive microscope and saw small boxy
 
 \newpage
 
-# PART B — GENETICS & EVOLUTION
+# PART B — GENETICS & EVOLUTION {#part-b}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -201,7 +379,19 @@ flowchart TD
 
 ## Chapter B1 — Mendelian Genetics
 
-Between 1856 and 1863, Gregor Mendel — an Augustinian friar in Brno, Moravia — grew 28,000 pea plants and discovered that inheritance is particulate, not blended. His paper was published in 1866 and ignored for 34 years. When rediscovered simultaneously by De Vries, Correns, and von Tschermak in 1900, it became the foundation of modern genetics.
+**The founder — Gregor Mendel (1856–63)**
+
+- Augustinian friar in **Brno, Moravia**.
+
+- Grew **28,000 pea plants** (*Pisum sativum*).
+
+- Discovery: inheritance is **particulate**, not blended.
+
+- Paper published **1866** — ignored for 34 years.
+
+- **Rediscovered 1900** by De Vries, Correns, von Tschermak.
+
+- **Exam tag:** "Father of Genetics."
 
 ### Mendel's Three Laws
 
@@ -211,8 +401,59 @@ Between 1856 and 1863, Gregor Mendel — an Augustinian friar in Brno, Moravia �
 
 ### Monohybrid cross: Tt × Tt
 
-Phenotypic ratio → **3 : 1** (dominant : recessive)
-Genotypic ratio → **1 TT : 2 Tt : 1 tt**
+- **Phenotypic ratio** → **3 : 1** (dominant : recessive)
+
+- **Genotypic ratio** → **1 TT : 2 Tt : 1 tt**
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="210" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">Punnett Square — Monohybrid Cross (Tt × Tt)</text>
+
+<!-- Parent gametes labels -->
+<text x="120" y="55" font-size="14" font-weight="bold" fill="#2e7d32">T</text>
+<text x="200" y="55" font-size="14" font-weight="bold" fill="#2e7d32">t</text>
+<text x="60" y="105" font-size="14" font-weight="bold" fill="#2e7d32">T</text>
+<text x="60" y="185" font-size="14" font-weight="bold" fill="#2e7d32">t</text>
+
+<!-- Punnett grid -->
+<rect x="85" y="65" width="80" height="80" fill="#c8e6c9" stroke="#1b5e20" stroke-width="2"/>
+<text x="125" y="110" text-anchor="middle" font-size="22" font-weight="bold" fill="#1b5e20">TT</text>
+<text x="125" y="130" text-anchor="middle" font-size="9" fill="#1b5e20">Tall (pure)</text>
+
+<rect x="165" y="65" width="80" height="80" fill="#dcedc8" stroke="#1b5e20" stroke-width="2"/>
+<text x="205" y="110" text-anchor="middle" font-size="22" font-weight="bold" fill="#33691e">Tt</text>
+<text x="205" y="130" text-anchor="middle" font-size="9" fill="#33691e">Tall (hybrid)</text>
+
+<rect x="85" y="145" width="80" height="80" fill="#dcedc8" stroke="#1b5e20" stroke-width="2"/>
+<text x="125" y="190" text-anchor="middle" font-size="22" font-weight="bold" fill="#33691e">Tt</text>
+<text x="125" y="210" text-anchor="middle" font-size="9" fill="#33691e">Tall (hybrid)</text>
+
+<rect x="165" y="145" width="80" height="80" fill="#fff59d" stroke="#f57f17" stroke-width="2"/>
+<text x="205" y="190" text-anchor="middle" font-size="22" font-weight="bold" fill="#e65100">tt</text>
+<text x="205" y="210" text-anchor="middle" font-size="9" fill="#e65100">Dwarf</text>
+
+<!-- Result summary -->
+<rect x="265" y="65" width="145" height="80" rx="4" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+<text x="337" y="84" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">Phenotype</text>
+<text x="275" y="100" font-size="10" fill="#1b5e20">3 Tall : 1 Dwarf</text>
+<text x="337" y="120" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">Genotype</text>
+<text x="275" y="138" font-size="10" fill="#1b5e20">1 TT : 2 Tt : 1 tt</text>
+
+<rect x="265" y="155" width="145" height="70" rx="4" fill="#fff9c4" stroke="#f9a825" stroke-width="1.5"/>
+<text x="337" y="173" text-anchor="middle" font-size="10" font-weight="bold" fill="#e65100">Dihybrid (TtYy × TtYy)</text>
+<text x="275" y="190" font-size="10" fill="#e65100">→ 9 : 3 : 3 : 1</text>
+<text x="275" y="206" font-size="9" fill="#e65100">(2 traits at once)</text>
+<text x="275" y="220" font-size="9" fill="#e65100">Tested every paper.</text>
+
+<!-- Father / Mother labels -->
+<text x="210" y="265" text-anchor="middle" font-size="10" fill="#555">Father gametes ↑  •  Mother gametes ←</text>
+
+</svg>
+
+</div>
 
 <div class="examtip">
 <strong>Three questions that appear constantly:</strong><br>
@@ -247,7 +488,110 @@ flowchart TD
 
 ### The Double Helix
 
-In 1953, James Watson and Francis Crick (using X-ray diffraction data from Rosalind Franklin) published the structure of DNA: a double helix with anti-parallel strands. They received the Nobel Prize in 1962.
+**Discovery — 1953**
+
+- **James Watson + Francis Crick** built the model.
+
+- Used X-ray diffraction data from **Rosalind Franklin** (Photo 51).
+
+- **Maurice Wilkins** also contributed; shared the **Nobel Prize 1962**.
+
+- Franklin had died (1958) and was not eligible posthumously.
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="240" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">DNA — Double Helix Structure</text>
+
+<!-- Helix backbone: two sine curves -->
+<!-- left backbone -->
+<path d="M 150,40 C 100,80 200,120 150,160 C 100,200 200,240 150,280 C 100,320 200,340 150,340" stroke="#1565c0" stroke-width="4" fill="none"/>
+<!-- right backbone -->
+<path d="M 230,40 C 280,80 180,120 230,160 C 280,200 180,240 230,280 C 280,320 180,340 230,340" stroke="#c62828" stroke-width="4" fill="none"/>
+
+<!-- Base pair rungs (color-coded) -->
+<!-- A-T (2 bonds) -->
+<line x1="155" y1="55" x2="225" y2="55" stroke="#7b1fa2" stroke-width="2" stroke-dasharray="3,2"/>
+<text x="190" y="52" text-anchor="middle" font-size="9" fill="#4a148c">A · · T</text>
+
+<line x1="158" y1="80" x2="225" y2="80" stroke="#2e7d32" stroke-width="2" stroke-dasharray="3,3"/>
+<text x="190" y="77" text-anchor="middle" font-size="9" fill="#1b5e20">G · · · C</text>
+
+<line x1="170" y1="105" x2="210" y2="105" stroke="#7b1fa2" stroke-width="2" stroke-dasharray="3,2"/>
+<text x="190" y="102" text-anchor="middle" font-size="9" fill="#4a148c">T · · A</text>
+
+<line x1="155" y1="130" x2="222" y2="130" stroke="#2e7d32" stroke-width="2" stroke-dasharray="3,3"/>
+<text x="190" y="127" text-anchor="middle" font-size="9" fill="#1b5e20">C · · · G</text>
+
+<line x1="172" y1="155" x2="208" y2="155" stroke="#7b1fa2" stroke-width="2" stroke-dasharray="3,2"/>
+<text x="190" y="152" text-anchor="middle" font-size="9" fill="#4a148c">A · · T</text>
+
+<line x1="155" y1="180" x2="222" y2="180" stroke="#2e7d32" stroke-width="2" stroke-dasharray="3,3"/>
+<text x="190" y="177" text-anchor="middle" font-size="9" fill="#1b5e20">G · · · C</text>
+
+<line x1="172" y1="205" x2="208" y2="205" stroke="#7b1fa2" stroke-width="2" stroke-dasharray="3,2"/>
+<text x="190" y="202" text-anchor="middle" font-size="9" fill="#4a148c">T · · A</text>
+
+<line x1="155" y1="230" x2="222" y2="230" stroke="#2e7d32" stroke-width="2" stroke-dasharray="3,3"/>
+<text x="190" y="227" text-anchor="middle" font-size="9" fill="#1b5e20">C · · · G</text>
+
+<line x1="172" y1="255" x2="208" y2="255" stroke="#7b1fa2" stroke-width="2" stroke-dasharray="3,2"/>
+<text x="190" y="252" text-anchor="middle" font-size="9" fill="#4a148c">A · · T</text>
+
+<line x1="158" y1="280" x2="222" y2="280" stroke="#2e7d32" stroke-width="2" stroke-dasharray="3,3"/>
+<text x="190" y="277" text-anchor="middle" font-size="9" fill="#1b5e20">G · · · C</text>
+
+<line x1="170" y1="305" x2="210" y2="305" stroke="#7b1fa2" stroke-width="2" stroke-dasharray="3,2"/>
+<text x="190" y="302" text-anchor="middle" font-size="9" fill="#4a148c">T · · A</text>
+
+<!-- 5' / 3' labels -->
+<text x="130" y="40" font-size="11" font-weight="bold" fill="#0d47a1">5'</text>
+<text x="245" y="40" font-size="11" font-weight="bold" fill="#b71c1c">3'</text>
+<text x="130" y="350" font-size="11" font-weight="bold" fill="#0d47a1">3'</text>
+<text x="245" y="350" font-size="11" font-weight="bold" fill="#b71c1c">5'</text>
+
+<!-- Anti-parallel arrows -->
+<line x1="140" y1="60" x2="140" y2="320" stroke="#0d47a1" stroke-width="1.5" marker-end="url(#down)"/>
+<line x1="262" y1="320" x2="262" y2="60" stroke="#b71c1c" stroke-width="1.5" marker-end="url(#up)"/>
+<defs>
+  <marker id="down" markerWidth="6" markerHeight="6" refX="3" refY="6" orient="auto">
+    <path d="M0,0 L6,0 L3,6 Z" fill="#0d47a1"/>
+  </marker>
+  <marker id="up" markerWidth="6" markerHeight="6" refX="3" refY="0" orient="auto">
+    <path d="M0,6 L6,6 L3,0 Z" fill="#b71c1c"/>
+  </marker>
+</defs>
+<text x="105" y="190" font-size="9" fill="#0d47a1" transform="rotate(-90,105,190)">5' → 3'</text>
+<text x="290" y="190" font-size="9" fill="#b71c1c" transform="rotate(90,290,190)">3' → 5'</text>
+
+<!-- Key facts box -->
+<rect x="305" y="50" width="160" height="160" rx="6" fill="#fff9c4" stroke="#f9a825" stroke-width="1.5"/>
+<text x="385" y="68" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Key Facts</text>
+<text x="312" y="85" font-size="9" fill="#333">• A pairs with T (2 H-bonds)</text>
+<text x="312" y="99" font-size="9" fill="#333">• G pairs with C (3 H-bonds)</text>
+<text x="312" y="113" font-size="9" fill="#333">• Sugar in DNA = deoxyribose</text>
+<text x="312" y="127" font-size="9" fill="#333">• Sugar in RNA = ribose</text>
+<text x="312" y="141" font-size="9" fill="#333">• In RNA: U replaces T</text>
+<text x="312" y="155" font-size="9" fill="#333">• Strands are anti-parallel</text>
+<text x="312" y="169" font-size="9" fill="#333">• One turn = 10 base pairs</text>
+<text x="312" y="183" font-size="9" fill="#333">• Pitch = 34 Å (3.4 nm)</text>
+<text x="312" y="197" font-size="9" fill="#333">• Diameter = 20 Å (2 nm)</text>
+
+<!-- Central Dogma -->
+<rect x="305" y="220" width="160" height="120" rx="6" fill="#e3f2fd" stroke="#0d47a1" stroke-width="1.5"/>
+<text x="385" y="238" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">Central Dogma</text>
+<text x="385" y="258" text-anchor="middle" font-size="10" fill="#0d47a1">DNA</text>
+<text x="385" y="271" text-anchor="middle" font-size="9" fill="#0d47a1">↓ transcription</text>
+<text x="385" y="285" text-anchor="middle" font-size="10" fill="#0d47a1">mRNA</text>
+<text x="385" y="298" text-anchor="middle" font-size="9" fill="#0d47a1">↓ translation</text>
+<text x="385" y="312" text-anchor="middle" font-size="10" fill="#0d47a1">Protein</text>
+<text x="385" y="332" text-anchor="middle" font-size="8" fill="#0d47a1">(Reverse only in retroviruses — HIV)</text>
+
+</svg>
+
+</div>
 
 Key structural facts:
 - Two strands run anti-parallel (5'→3' and 3'→5').
@@ -320,7 +664,17 @@ flowchart TD
 
 ## Chapter B3 — Evolution
 
-Charles Darwin sailed on HMS Beagle (1831–36), observed Galápagos finches with differently shaped beaks for different food sources, and published *On the Origin of Species* in 1859, proposing **natural selection** as the mechanism of evolution.
+**Charles Darwin — the foundation**
+
+- **1831–36** — sailed on HMS Beagle around the world.
+
+- Observed **Galápagos finches** with different beak shapes for different foods.
+
+- **1859** — published *On the Origin of Species*.
+
+- Proposed **natural selection** as the mechanism of evolution.
+
+- Co-discovered independently by **Alfred Russel Wallace**.
 
 ### Evidence for evolution
 
@@ -346,7 +700,7 @@ Lamarck's theory → inheritance of acquired characters (giraffe neck story) —
 
 \newpage
 
-# PART C — PLANT BIOLOGY
+# PART C — PLANT BIOLOGY {#part-c}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -374,7 +728,11 @@ flowchart TD
 
 ## Chapter C1 — Plant Kingdom Overview
 
-Plants are classified by complexity of structure and reproductive strategy:
+**Plants are classified by:**
+
+- **Complexity of structure** — single cell → vascular tissue → flowering.
+
+- **Reproductive strategy** — spores → naked seeds → enclosed seeds.
 
 | Division | Examples | Key feature |
 |----------|---------|-------------|
@@ -423,15 +781,111 @@ flowchart TD
 
 ## Chapter C2 — Photosynthesis
 
-Photosynthesis is how plants manufacture food from air and water using sunlight. The overall equation:
+**The big idea**
 
-**6 CO₂ + 6 H₂O + light energy → C₆H₁₂O₆ + 6 O₂** *(chloroplast)*
+- Plants manufacture food from **air + water** using **sunlight**.
+
+- Site of action: **chloroplast** (specifically the thylakoid + stroma).
+
+- Pigment that captures light: **chlorophyll-a** (primary).
+
+**The overall equation:**
+
+**6 CO₂ + 6 H₂O + light → C₆H₁₂O₆ + 6 O₂**
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="280" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">Photosynthesis — Inputs, Process, Outputs</text>
+
+<!-- Sun -->
+<circle cx="60" cy="65" r="28" fill="#fff176" stroke="#f9a825" stroke-width="2.5"/>
+<text x="60" y="69" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">SUN</text>
+<line x1="60" y1="93" x2="60" y2="115" stroke="#f9a825" stroke-width="2"/>
+<text x="35" y="120" font-size="9" fill="#e65100">Light energy</text>
+
+<!-- CO2 input -->
+<rect x="20" y="155" width="90" height="35" rx="6" fill="#bbdefb" stroke="#1565c0" stroke-width="1.5"/>
+<text x="65" y="170" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">6 CO₂</text>
+<text x="65" y="184" text-anchor="middle" font-size="9" fill="#0d47a1">(from air)</text>
+
+<!-- H2O input -->
+<rect x="20" y="220" width="90" height="35" rx="6" fill="#b3e5fc" stroke="#0277bd" stroke-width="1.5"/>
+<text x="65" y="235" text-anchor="middle" font-size="11" font-weight="bold" fill="#01579b">6 H₂O</text>
+<text x="65" y="249" text-anchor="middle" font-size="9" fill="#01579b">(from roots)</text>
+
+<!-- Arrows in -->
+<line x1="110" y1="172" x2="155" y2="172" stroke="#0d47a1" stroke-width="2" marker-end="url(#pa)"/>
+<line x1="110" y1="237" x2="155" y2="237" stroke="#01579b" stroke-width="2" marker-end="url(#pa)"/>
+<line x1="60" y1="95" x2="160" y2="155" stroke="#f9a825" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#pa)"/>
+<defs>
+  <marker id="pa" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L7,3.5 Z" fill="#333"/>
+  </marker>
+</defs>
+
+<!-- Chloroplast (big oval) -->
+<ellipse cx="280" cy="200" rx="120" ry="75" fill="#a5d6a7" stroke="#1b5e20" stroke-width="2.5"/>
+<text x="280" y="135" text-anchor="middle" font-size="12" font-weight="bold" fill="#1b5e20">CHLOROPLAST</text>
+
+<!-- Thylakoid stacks (grana) -->
+<rect x="220" y="155" width="35" height="6" fill="#2e7d32"/>
+<rect x="220" y="164" width="35" height="6" fill="#2e7d32"/>
+<rect x="220" y="173" width="35" height="6" fill="#2e7d32"/>
+<rect x="220" y="182" width="35" height="6" fill="#2e7d32"/>
+<text x="237" y="200" text-anchor="middle" font-size="9" font-weight="bold" fill="#1b5e20">Thylakoid</text>
+<text x="237" y="212" text-anchor="middle" font-size="9" fill="#1b5e20">(grana)</text>
+<text x="237" y="226" text-anchor="middle" font-size="9" font-weight="bold" fill="#1b5e20">LIGHT</text>
+<text x="237" y="238" text-anchor="middle" font-size="9" font-weight="bold" fill="#1b5e20">reactions</text>
+
+<!-- Stroma label -->
+<text x="335" y="180" font-size="10" font-weight="bold" fill="#1b5e20">Stroma</text>
+<text x="335" y="195" font-size="9" fill="#1b5e20">(jelly fluid)</text>
+<text x="335" y="215" font-size="10" font-weight="bold" fill="#1b5e20">CALVIN</text>
+<text x="335" y="228" font-size="10" font-weight="bold" fill="#1b5e20">cycle</text>
+<text x="335" y="244" font-size="9" fill="#1b5e20">(dark rxn)</text>
+
+<!-- Glucose output -->
+<rect x="430" y="155" width="110" height="40" rx="6" fill="#fce4ec" stroke="#c2185b" stroke-width="1.5"/>
+<text x="485" y="172" text-anchor="middle" font-size="11" font-weight="bold" fill="#880e4f">C₆H₁₂O₆</text>
+<text x="485" y="187" text-anchor="middle" font-size="9" fill="#880e4f">(glucose — food)</text>
+
+<!-- Oxygen output -->
+<rect x="430" y="220" width="110" height="40" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+<text x="485" y="237" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">6 O₂</text>
+<text x="485" y="252" text-anchor="middle" font-size="9" fill="#1b5e20">(released to air)</text>
+
+<!-- Output arrows -->
+<line x1="400" y1="172" x2="425" y2="172" stroke="#880e4f" stroke-width="2" marker-end="url(#pa)"/>
+<line x1="400" y1="237" x2="425" y2="237" stroke="#1b5e20" stroke-width="2" marker-end="url(#pa)"/>
+
+<!-- Bottom note -->
+<rect x="20" y="285" width="520" height="25" rx="4" fill="#fffde7" stroke="#f9a825"/>
+<text x="280" y="302" text-anchor="middle" font-size="10" fill="#e65100">Site of light reactions = thylakoid (grana) | Site of Calvin cycle = stroma | Chlorophyll-a is the primary pigment</text>
+
+</svg>
+
+</div>
 
 ### Two phases
 
-**Light reaction** (in thylakoids): Water is split (photolysis), O₂ is released, and ATP + NADPH are produced.
+**Light reaction** (in thylakoids):
 
-**Dark reaction / Calvin cycle** (in stroma): ATP + NADPH are used to fix CO₂ into glucose. No light is directly needed, but the products of the light reaction are consumed.
+- Water is split (**photolysis**).
+
+- **O₂** released as by-product.
+
+- **ATP** and **NADPH** are produced.
+
+**Dark reaction / Calvin cycle** (in stroma):
+
+- ATP + NADPH consumed.
+
+- **CO₂ fixed** into glucose.
+
+- Called "dark" but actually runs during day too — uses products of the light reaction.
 
 ### C3, C4, and CAM plants
 
@@ -512,13 +966,35 @@ flowchart TD
 
 ## Chapter C4 — Plant Reproduction
 
-**Asexual**: vegetative propagation (cutting, grafting, layering), spores, micropropagation (tissue culture).
+**Asexual reproduction:**
 
-**Sexual**: pollination → fertilisation → seed.
+- Vegetative propagation — cutting, grafting, layering.
 
-Pollination agents: wind (anemophily), water (hydrophily), insects (entomophily), birds (ornithophily), bats (chiropterophily).
+- Spore formation.
 
-**Double fertilisation** — unique to angiosperms: one sperm fertilises the egg (→ embryo/zygote); a second sperm fertilises the polar nuclei (→ endosperm, the food reserve for the embryo).
+- Micropropagation (tissue culture).
+
+**Sexual reproduction:**
+
+- Pollination → Fertilisation → Seed.
+
+**Pollination agents (memorise the names):**
+
+| Agent | Name | Example |
+|-------|------|---------|
+| Wind | Anemophily | Grass, maize, pine |
+| Water | Hydrophily | Vallisneria |
+| Insects | Entomophily | Rose, sunflower |
+| Birds | Ornithophily | Hibiscus |
+| Bats | Chiropterophily | Kigelia, baobab |
+
+**Double fertilisation — unique to angiosperms:**
+
+- **Sperm 1 + Egg** → Zygote (2n) → **embryo**.
+
+- **Sperm 2 + 2 polar nuclei** → Endosperm (3n) → **food for embryo**.
+
+- Only happens in flowering plants — gymnosperms have single fertilisation.
 
 ### Famous Indian botanists
 
@@ -530,7 +1006,7 @@ Pollination agents: wind (anemophily), water (hydrophily), insects (entomophily)
 
 \newpage
 
-# PART D — HUMAN BODY SYSTEMS
+# PART D — HUMAN BODY SYSTEMS {#part-d}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -557,9 +1033,86 @@ flowchart TD
 
 ## Chapter D1 — Digestive System
 
-The digestive tract runs about 9 metres from mouth to anus. Each section specialises.
+- The digestive tract runs about **9 metres** from mouth to anus.
 
-**Pathway**: Mouth → Pharynx → Oesophagus → Stomach → Small intestine (Duodenum → Jejunum → Ileum) → Large intestine (Caecum → Colon → Rectum) → Anus.
+- Each section specialises in a different stage of breakdown.
+
+**Pathway:** Mouth → Pharynx → Oesophagus → Stomach → Small intestine (Duodenum → Jejunum → Ileum) → Large intestine (Caecum → Colon → Rectum) → Anus.
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 440" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="250" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a148c">Digestive System — Pathway &amp; Key Organs</text>
+
+<!-- Mouth -->
+<ellipse cx="180" cy="55" rx="35" ry="14" fill="#ffccbc" stroke="#bf360c" stroke-width="1.5"/>
+<text x="180" y="59" text-anchor="middle" font-size="10" font-weight="bold" fill="#bf360c">Mouth</text>
+<text x="225" y="55" font-size="9" fill="#bf360c">+ Salivary glands</text>
+<text x="225" y="67" font-size="8" fill="#bf360c">(amylase: starch → maltose)</text>
+
+<!-- Oesophagus -->
+<rect x="170" y="70" width="20" height="55" fill="#ffab91" stroke="#bf360c" stroke-width="1.5"/>
+<text x="200" y="100" font-size="10" font-weight="bold" fill="#bf360c">Oesophagus</text>
+
+<!-- Stomach -->
+<path d="M 130,130 Q 110,145 115,180 Q 120,215 160,225 Q 200,225 215,200 Q 220,165 200,140 Q 180,125 165,130 Z" fill="#ef9a9a" stroke="#c62828" stroke-width="2"/>
+<text x="165" y="185" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">Stomach</text>
+<text x="230" y="170" font-size="9" fill="#b71c1c">Pepsin + HCl</text>
+<text x="230" y="183" font-size="9" fill="#b71c1c">(protein → peptones)</text>
+<text x="230" y="196" font-size="9" fill="#b71c1c">pH 1.5–3.5</text>
+
+<!-- Liver -->
+<path d="M 280,135 Q 320,130 350,150 Q 365,170 340,180 Q 305,185 280,170 Z" fill="#8d6e63" stroke="#3e2723" stroke-width="2"/>
+<text x="315" y="160" text-anchor="middle" font-size="10" font-weight="bold" fill="white">Liver</text>
+<text x="370" y="155" font-size="9" fill="#3e2723">Largest gland</text>
+<text x="370" y="167" font-size="9" fill="#3e2723">Produces bile</text>
+
+<!-- Gall bladder -->
+<ellipse cx="305" cy="190" rx="10" ry="7" fill="#aed581" stroke="#33691e" stroke-width="1.5"/>
+<text x="320" y="195" font-size="9" fill="#33691e">Gall bladder</text>
+<text x="320" y="206" font-size="8" fill="#33691e">(stores bile)</text>
+
+<!-- Pancreas -->
+<path d="M 230,225 Q 270,228 305,225 Q 330,230 315,238 Q 280,242 230,238 Z" fill="#ffd54f" stroke="#f57f17" stroke-width="2"/>
+<text x="270" y="237" text-anchor="middle" font-size="10" font-weight="bold" fill="#e65100">Pancreas</text>
+<text x="335" y="232" font-size="9" fill="#e65100">Trypsin + Lipase</text>
+<text x="335" y="244" font-size="9" fill="#e65100">+ Insulin (β-cells)</text>
+
+<!-- Small intestine (coiled) -->
+<path d="M 140,250 Q 100,270 130,290 Q 170,310 130,330 Q 100,350 150,360 Q 200,365 180,335 Q 160,310 200,295 Q 240,280 200,260 Q 170,250 140,250 Z"
+  fill="#fff59d" stroke="#f57f17" stroke-width="2"/>
+<text x="160" y="310" text-anchor="middle" font-size="10" font-weight="bold" fill="#e65100">Small Intestine</text>
+<text x="240" y="295" font-size="9" fill="#e65100">Duodenum → Jejunum → Ileum</text>
+<text x="240" y="307" font-size="9" fill="#e65100">Main absorption site</text>
+<text x="240" y="319" font-size="9" fill="#e65100">(villi → 250 m² surface)</text>
+
+<!-- Large intestine (frame around small) -->
+<path d="M 85,250 L 85,380 L 240,380 L 240,250" stroke="#a1887f" stroke-width="12" fill="none"/>
+<text x="305" y="380" font-size="10" font-weight="bold" fill="#5d4037">Large Intestine</text>
+<text x="305" y="394" font-size="9" fill="#5d4037">(Colon — water reabsorption)</text>
+
+<!-- Rectum -->
+<rect x="225" y="395" width="30" height="22" rx="3" fill="#a1887f" stroke="#5d4037" stroke-width="1.5"/>
+<text x="240" y="411" text-anchor="middle" font-size="9" font-weight="bold" fill="white">Rectum</text>
+
+<!-- Legend / Key facts -->
+<rect x="370" y="270" width="120" height="160" rx="4" fill="#f3e5f5" stroke="#4a148c" stroke-width="1"/>
+<text x="430" y="288" text-anchor="middle" font-size="10" font-weight="bold" fill="#4a148c">Exam Quick-Hits</text>
+<text x="377" y="305" font-size="9" fill="#333">• Largest gland: Liver</text>
+<text x="377" y="319" font-size="9" fill="#333">• Bile stored: gall bladder</text>
+<text x="377" y="333" font-size="9" fill="#333">• Bile = NO enzyme</text>
+<text x="377" y="347" font-size="9" fill="#333">  (just emulsifies fat)</text>
+<text x="377" y="361" font-size="9" fill="#333">• Absorption: small intestine</text>
+<text x="377" y="375" font-size="9" fill="#333">• Water: large intestine</text>
+<text x="377" y="389" font-size="9" fill="#333">• Stomach pH: 1.5–3.5</text>
+<text x="377" y="403" font-size="9" fill="#333">• Total length: ~9 m</text>
+<text x="377" y="417" font-size="9" fill="#333">• Vitamin K made by gut bact.</text>
+
+</svg>
+
+</div>
 
 ### Key enzymes
 
@@ -639,11 +1192,113 @@ flowchart TD
 
 ### The heart
 
-- 4 chambers: 2 atria (upper) + 2 ventricles (lower).
-- Right heart: receives deoxygenated blood → pumps to lungs.
-- Left heart: receives oxygenated blood from lungs → pumps to body.
-- **Natural pacemaker**: SA node (sinoatrial node), located in right atrium.
-- Normal heart rate: 60–100 bpm; normal blood pressure: **120/80 mmHg**.
+- **4 chambers** — 2 atria (upper) + 2 ventricles (lower).
+
+- **Right heart** — receives deoxygenated blood → pumps to lungs.
+
+- **Left heart** — receives oxygenated blood from lungs → pumps to body.
+
+- **Natural pacemaker** — SA node (sinoatrial node) in right atrium.
+
+- **Normal heart rate** — 60–100 bpm.
+
+- **Normal blood pressure** — **120 / 80 mmHg** (systolic / diastolic).
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="270" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#b71c1c">Human Heart — 4 Chambers + Blood Flow</text>
+
+<!-- Heart outline -->
+<path d="M 150,55 Q 130,55 130,90 L 130,200 Q 130,250 200,290 L 270,330 L 340,290 Q 410,250 410,200 L 410,90 Q 410,55 390,55 L 280,55 Z" fill="#fce4ec" stroke="#880e4f" stroke-width="2.5"/>
+
+<!-- Septum (divides left/right) -->
+<line x1="270" y1="55" x2="270" y2="320" stroke="#880e4f" stroke-width="2.5"/>
+
+<!-- Horizontal split atria/ventricles -->
+<line x1="130" y1="155" x2="410" y2="155" stroke="#880e4f" stroke-width="2.5"/>
+
+<!-- Right Atrium (DEOXY blue) -->
+<rect x="135" y="60" width="130" height="90" fill="#90caf9"/>
+<text x="200" y="100" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">RIGHT</text>
+<text x="200" y="115" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">ATRIUM (RA)</text>
+<text x="200" y="135" text-anchor="middle" font-size="9" fill="#0d47a1">From body (SVC + IVC)</text>
+
+<!-- Left Atrium (OXY red) -->
+<rect x="275" y="60" width="130" height="90" fill="#ef9a9a"/>
+<text x="340" y="100" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">LEFT</text>
+<text x="340" y="115" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">ATRIUM (LA)</text>
+<text x="340" y="135" text-anchor="middle" font-size="9" fill="#b71c1c">From lungs (pulm. vein)</text>
+
+<!-- Right Ventricle -->
+<path d="M 135,160 L 265,160 L 265,310 L 200,290 Q 140,250 135,200 Z" fill="#42a5f5"/>
+<text x="195" y="220" text-anchor="middle" font-size="11" font-weight="bold" fill="white">RIGHT</text>
+<text x="195" y="236" text-anchor="middle" font-size="11" font-weight="bold" fill="white">VENTRICLE</text>
+<text x="195" y="256" text-anchor="middle" font-size="9" fill="white">→ to lungs</text>
+
+<!-- Left Ventricle (thicker wall) -->
+<path d="M 275,160 L 405,160 Q 410,250 340,290 L 275,310 Z" fill="#e53935"/>
+<text x="345" y="220" text-anchor="middle" font-size="11" font-weight="bold" fill="white">LEFT</text>
+<text x="345" y="236" text-anchor="middle" font-size="11" font-weight="bold" fill="white">VENTRICLE</text>
+<text x="345" y="256" text-anchor="middle" font-size="9" fill="white">→ to body</text>
+<text x="345" y="270" text-anchor="middle" font-size="8" fill="white">(thicker wall)</text>
+
+<!-- SA Node marker -->
+<circle cx="240" cy="80" r="6" fill="#fff176" stroke="#f57f17" stroke-width="2"/>
+<text x="252" y="83" font-size="9" font-weight="bold" fill="#e65100">SA node</text>
+<text x="252" y="95" font-size="8" fill="#e65100">(pacemaker)</text>
+
+<!-- AV Node marker -->
+<circle cx="270" cy="155" r="5" fill="#fff176" stroke="#f57f17" stroke-width="2"/>
+<text x="278" y="170" font-size="9" font-weight="bold" fill="#e65100">AV node</text>
+
+<!-- Aorta -->
+<rect x="290" y="20" width="14" height="40" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<text x="310" y="30" font-size="10" font-weight="bold" fill="#b71c1c">Aorta</text>
+<text x="310" y="42" font-size="8" fill="#b71c1c">(to body)</text>
+
+<!-- Pulmonary artery (right side, blue) -->
+<rect x="240" y="20" width="14" height="40" fill="#42a5f5" stroke="#0d47a1" stroke-width="1.5"/>
+<text x="200" y="30" font-size="10" font-weight="bold" fill="#0d47a1">Pulmonary artery</text>
+<text x="215" y="42" font-size="8" fill="#0d47a1">(to lungs)</text>
+
+<!-- SVC -->
+<line x1="180" y1="30" x2="180" y2="60" stroke="#0d47a1" stroke-width="6"/>
+<text x="100" y="40" font-size="9" font-weight="bold" fill="#0d47a1">SVC / IVC</text>
+<text x="100" y="52" font-size="8" fill="#0d47a1">(from body)</text>
+
+<!-- Pulmonary vein -->
+<line x1="395" y1="30" x2="395" y2="60" stroke="#b71c1c" stroke-width="6"/>
+<text x="410" y="40" font-size="9" font-weight="bold" fill="#b71c1c">Pulm. vein</text>
+<text x="410" y="52" font-size="8" fill="#b71c1c">(from lungs)</text>
+
+<!-- Key Facts box -->
+<rect x="430" y="100" width="100" height="240" rx="6" fill="#fff9c4" stroke="#f9a825" stroke-width="1.5"/>
+<text x="480" y="118" text-anchor="middle" font-size="10" font-weight="bold" fill="#e65100">Key Facts</text>
+<text x="436" y="135" font-size="9" fill="#333">• 4 chambers</text>
+<text x="436" y="149" font-size="9" fill="#333">  (2 atria + 2 ventr.)</text>
+<text x="436" y="163" font-size="9" fill="#333">• SA node = pacemaker</text>
+<text x="436" y="177" font-size="9" fill="#333">• HR: 60–100 bpm</text>
+<text x="436" y="191" font-size="9" fill="#333">• BP: 120/80 mmHg</text>
+<text x="436" y="205" font-size="9" fill="#333">• Right = deoxy (BLUE)</text>
+<text x="436" y="219" font-size="9" fill="#333">• Left = oxy (RED)</text>
+<text x="436" y="233" font-size="9" fill="#333">• LV wall thicker</text>
+<text x="436" y="247" font-size="9" fill="#333">  (pumps to whole body)</text>
+<text x="436" y="261" font-size="9" fill="#333">• Pulmonary artery</text>
+<text x="436" y="275" font-size="9" fill="#333">  = ONLY artery</text>
+<text x="436" y="289" font-size="9" fill="#333">  carrying deoxy blood</text>
+<text x="436" y="303" font-size="9" fill="#333">• Pulmonary vein</text>
+<text x="436" y="317" font-size="9" fill="#333">  = ONLY vein</text>
+<text x="436" y="331" font-size="9" fill="#333">  carrying oxy blood</text>
+
+<!-- Bottom flow arrows -->
+<text x="20" y="365" font-size="10" fill="#0d47a1">→ Body → RA → RV → Lungs → LA → LV → Body (double circulation, Harvey 1628)</text>
+
+</svg>
+
+</div>
 
 ### Blood composition
 
@@ -863,7 +1518,7 @@ flowchart TD
 
 \newpage
 
-# PART E — NUTRITION: VITAMINS & MINERALS
+# PART E — NUTRITION: VITAMINS & MINERALS {#part-e}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -954,7 +1609,7 @@ flowchart TD
 
 \newpage
 
-# PART F — DISEASES & IMMUNITY
+# PART F — DISEASES & IMMUNITY {#part-f}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -981,7 +1636,15 @@ flowchart TD
 
 ## Chapter F1 — Disease Classification
 
-Every exam question about diseases falls into one of four categories: pathogen type, vector, vaccine, or elimination status.
+**Every exam disease question falls into one of four buckets:**
+
+- **Pathogen type** — bacterial / viral / protozoal / fungal.
+
+- **Vector** — Anopheles (malaria), Aedes (dengue), Culex (filaria).
+
+- **Vaccine** — BCG (TB), DPT, MMR, OPV / IPV, COVID vaccines.
+
+- **Elimination status** — smallpox (1980), polio in India (2014).
 
 ### Bacterial diseases
 
@@ -1091,7 +1754,7 @@ India's UIP (Universal Immunisation Programme) started → <strong>1985</strong>
 
 \newpage
 
-# PART G — ECOLOGY & ENVIRONMENT
+# PART G — ECOLOGY & ENVIRONMENT {#part-g}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1119,7 +1782,13 @@ flowchart TD
 
 ## Chapter G1 — Ecosystem & Energy Flow
 
-An **ecosystem** is a community of living organisms (biotic) interacting with the non-living environment (abiotic) in a defined area. It can be a pond, a forest, or the entire Earth (biosphere).
+**What is an ecosystem?**
+
+- A community of **living organisms (biotic)** interacting with the **non-living environment (abiotic)**.
+
+- Operates in a defined area.
+
+- Can be tiny (a pond, a tree) or huge (a forest, the entire **biosphere**).
 
 ### Energy flow rules
 

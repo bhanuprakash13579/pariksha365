@@ -76,3 +76,13 @@ export const QuizAPI = {
     getWeakTopicsList: () => api.get('/quiz/weak-topics/list'),
 };
 
+export const PrivateModuleAPI = {
+    listMine: () => api.get('/private/modules'),
+    getModule: (slug: string) => api.get(`/private/modules/${slug}`),
+    getQuiz: (slug: string, subject: string, limit?: number) =>
+        api.get(`/private/modules/${slug}/quiz/${encodeURIComponent(subject)}`, { params: limit ? { limit } : {} }),
+    getWeakTopics: (slug: string, limit?: number) =>
+        api.get(`/private/modules/${slug}/weak-topics`, { params: limit ? { limit } : {} }),
+    submitQuiz: (slug: string, answers: { question_id: string; selected_option_index: number | null }[]) =>
+        api.post(`/private/modules/${slug}/submit`, { answers }),
+};

@@ -45,23 +45,133 @@ date: "2026"
 
 # How to use this book
 
-English in competitive exams is **not** literature. It is **pattern recognition on a fixed set of grammar rules and a fixed vocabulary of trap-words**. Memorise the rules, drill the traps, you score.
+**English in competitive exams is NOT literature.**
 
-Same type-first discipline:
+- It is **pattern recognition** on a fixed set of grammar rules.
 
-- **Opener** — why this topic matters, minimum-rule list you must internalise.
+- And a **fixed vocabulary of trap-words**.
+
+- Memorise the rules, drill the traps, you score.
+
+**Same type-first discipline:**
+
+- **Opener** — why the topic matters, minimum-rule list you must internalise.
+
 - **Types** — the error patterns / question patterns examiners recycle.
+
 - **For each type** — trigger phrase → rule → example → common trap → self-check.
 
 ---
 
 \newpage
 
-# PART 1 — PARTS OF SPEECH & SENTENCE STRUCTURE
+---
+
+# How to read this book — your real study load
+
+**Total pages: 85.**
+
+This is a specialised exam-prep book. **Every page is essential** — including the worked-example drills, mini-mock and trap-cards near the end. Skipping any section costs you marks.
+
+Read end-to-end in order without skipping.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p5** | [PART 1](#part-1) | PARTS OF SPEECH & SENTENCE STRUCTURE |
+| **p6–15** | [PART 2](#part-2) | TENSES (the Big Engine) |
+| **p16** | [PART 3](#part-3) | SUBJECT-VERB AGREEMENT |
+| **p16** | [PART 4](#part-4) | ARTICLES (a / an / the) |
+| **p17** | [PART 5](#part-5) | PREPOSITIONS (memorise the pairs) |
+| **p17** | [PART 6](#part-6) | CONJUNCTIONS |
+| **p18–23** | [PART 7](#part-7) | VOICE (ACTIVE ↔ PASSIVE) |
+| **p24–31** | [PART 8](#part-8) | DIRECT ↔ INDIRECT SPEECH (NARRATION) |
+| **p32** | [PART 9](#part-9) | ERROR SPOTTING |
+| **p32** | [PART 10](#part-10) | SENTENCE IMPROVEMENT / PHRASE REPLACEMENT |
+| **p33** | [PART 11](#part-11) | CLOZE TEST |
+| **p33** | [PART 12](#part-12) | READING COMPREHENSION (RC) |
+| **p33** | [PART 13](#part-13) | PARA-JUMBLES (SENTENCE REARRANGEMENT) |
+| **p34** | [PART 14](#part-14) | FILL IN THE BLANKS |
+| **p35–53** | [PART 16](#part-16) | DEEP-DRILL VOCABULARY ESSENTIALS (high-yield list) |
+| **p54–57** | [PART 17](#part-17) | BANKS-FOCUS DEEP DRILL (PO/Clerk/RRB Bank, IBPS+SBI+RBI) |
+| **p58–83** | [PART 18](#part-18) | SSC + RRB FOCUS DEEP DRILL |
+| **p84** | [PART E](#part-e) | TIMED MINI-MOCK (25 Q · 25 min) |
+| **p85** | [PART F](#part-f) | TRAP-RECOGNITION CARDS (English) |
+
+---
+# PART 1 — PARTS OF SPEECH & SENTENCE STRUCTURE {#part-1}
 
 ## 1.0 Opener
 
-English questions test one of 8 parts of speech (noun, pronoun, verb, adjective, adverb, preposition, conjunction, interjection). 95 % of error-spotting targets **verbs (tense/agreement), prepositions, pronouns, conjunctions**.
+**English questions test one of 8 parts of speech:**
+
+- Noun, Pronoun, Verb, Adjective, Adverb, Preposition, Conjunction, Interjection.
+
+**95% of error-spotting targets just 4 of these:**
+
+- **Verbs** — tense, agreement.
+
+- **Prepositions** — fixed pairs.
+
+- **Pronouns** — case, agreement.
+
+- **Conjunctions** — pair traps (either/or, neither/nor, not only/but also).
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 280" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="270" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">The 8 Parts of Speech</text>
+
+<!-- Top node -->
+<rect x="220" y="35" width="100" height="32" rx="6" fill="#fff59d" stroke="#f57f17" stroke-width="2"/>
+<text x="270" y="55" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Parts of Speech</text>
+
+<!-- 8 children -->
+<rect x="10" y="100" width="100" height="35" rx="4" fill="#bbdefb" stroke="#0d47a1" stroke-width="1.5"/>
+<text x="60" y="118" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">Noun</text>
+<text x="60" y="130" text-anchor="middle" font-size="9" fill="#0d47a1">(thing/person)</text>
+
+<rect x="120" y="100" width="100" height="35" rx="4" fill="#bbdefb" stroke="#0d47a1" stroke-width="1.5"/>
+<text x="170" y="118" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">Pronoun</text>
+<text x="170" y="130" text-anchor="middle" font-size="9" fill="#0d47a1">(I, you, he…)</text>
+
+<rect x="230" y="100" width="100" height="35" rx="4" fill="#ef9a9a" stroke="#c62828" stroke-width="2"/>
+<text x="280" y="118" text-anchor="middle" font-size="10" font-weight="bold" fill="#b71c1c">VERB ★</text>
+<text x="280" y="130" text-anchor="middle" font-size="9" fill="#b71c1c">(action/being)</text>
+
+<rect x="340" y="100" width="100" height="35" rx="4" fill="#c8e6c9" stroke="#1b5e20" stroke-width="1.5"/>
+<text x="390" y="118" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">Adjective</text>
+<text x="390" y="130" text-anchor="middle" font-size="9" fill="#1b5e20">(describes noun)</text>
+
+<rect x="450" y="100" width="90" height="35" rx="4" fill="#c8e6c9" stroke="#1b5e20" stroke-width="1.5"/>
+<text x="495" y="118" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">Adverb</text>
+<text x="495" y="130" text-anchor="middle" font-size="9" fill="#1b5e20">(modifies verb)</text>
+
+<rect x="65" y="170" width="110" height="35" rx="4" fill="#ef9a9a" stroke="#c62828" stroke-width="2"/>
+<text x="120" y="188" text-anchor="middle" font-size="10" font-weight="bold" fill="#b71c1c">PREPOSITION ★</text>
+<text x="120" y="200" text-anchor="middle" font-size="9" fill="#b71c1c">(in, on, at, of)</text>
+
+<rect x="195" y="170" width="110" height="35" rx="4" fill="#ef9a9a" stroke="#c62828" stroke-width="2"/>
+<text x="250" y="188" text-anchor="middle" font-size="10" font-weight="bold" fill="#b71c1c">CONJUNCTION ★</text>
+<text x="250" y="200" text-anchor="middle" font-size="9" fill="#b71c1c">(and, but, or)</text>
+
+<rect x="325" y="170" width="110" height="35" rx="4" fill="#ffe0b2" stroke="#e65100" stroke-width="1.5"/>
+<text x="380" y="188" text-anchor="middle" font-size="10" font-weight="bold" fill="#bf360c">Interjection</text>
+<text x="380" y="200" text-anchor="middle" font-size="9" fill="#bf360c">(Oh! Wow! Ah!)</text>
+
+<!-- Legend -->
+<rect x="40" y="225" width="460" height="42" rx="4" fill="#fffde7" stroke="#f9a825" stroke-width="1.5"/>
+<text x="270" y="241" text-anchor="middle" font-size="10" font-weight="bold" fill="#e65100">★ = High-yield error-spotting target (95% of marks come from these 4)</text>
+<text x="270" y="257" text-anchor="middle" font-size="10" fill="#e65100">Focus your prep here. Pronouns also trap students often.</text>
+
+</svg>
+
+</div>
 
 ## Types
 
@@ -75,84 +185,568 @@ English questions test one of 8 parts of speech (noun, pronoun, verb, adjective,
 
 ---
 
-# PART 2 — TENSES (the Big Engine)
+# PART 2 — TENSES (the Big Engine) {#part-2}
 
 ## 2.0 Opener
 
-**12 tenses** = 4 forms × 3 times.
+**12 tenses = 4 aspects × 3 times.** Master the *structural formula* for each cell of the grid and 70% of every Error-Spotting, Cloze, and Sentence-Improvement question becomes mechanical.
 
-| | Simple | Continuous | Perfect | Perfect Continuous |
-|---|---|---|---|---|
-| Past | went | was going | had gone | had been going |
-| Present | go / goes | is/are going | has/have gone | has/have been going |
-| Future | will go | will be going | will have gone | will have been going |
+| Aspect ↓ / Time → | Past | Present | Future |
+|---|---|---|---|
+| **Simple** | wrote | write / writes | will write |
+| **Continuous** | was/were writing | am/is/are writing | will be writing |
+| **Perfect** | had written | has/have written | will have written |
+| **Perfect Continuous** | had been writing | has/have been writing | will have been writing |
 
-## Types
-
-1. **Time-phrase cues** — each cue locks a specific tense:
-
-   - **Yesterday, last year, ago, in 2010** → **simple past** (definite past time)
-     *I went to Delhi last year.*
-
-   - **Since + point in time (since Monday, since 2010)** → **present perfect** or **present perfect continuous**
-     *I have lived here since 2015.*
-
-   - **For + duration (for 2 hours, for 5 years)** → **present perfect (continuous)**
-     *She has been working here for three years.*
-
-   - **While + ___ing / when + … was/were ___ing** → **past continuous**
-     *While I was reading, the phone rang.*
-
-   - **By + future time (by next year)** → **future perfect**
-     *By 2030, India will have become the third largest economy.*
-
-   - **Just, already, yet, ever, never, recently, lately** → **present perfect**
-     *I have just finished my homework.*
-
-   - **Always, often, usually, rarely, every day** → **simple present**
-     *He always wakes up at 6 AM.*
-2. **If-clause (conditionals)** — three types, each on its own line:
-
-   **Type 0 (general truth / habit)** — both halves use present simple
-   - Form: **If + present simple, present simple**
-   - Example: *If you heat ice, it melts.*
-
-   **Type 1 (likely future / real condition)** — talks about a real possibility
-   - Form: **If + present simple, will + base verb (V1)**
-   - Example: *If it rains tomorrow, we will cancel the picnic.*
-
-   **Type 2 (unlikely / hypothetical present)** — talks about something improbable now
-   - Form: **If + past simple, would + base verb (V1)**
-   - Example: *If I won the lottery, I would buy a house.*
-   - Note: with "be", use **were** for all subjects (subjunctive) — *If I were you, I would apologise.*
-
-   **Type 3 (impossible past / contrary to fact)** — talks about something that did NOT happen
-   - Form: **If + had + past participle (V3), would have + past participle (V3)**
-   - Example: *If I had studied harder, I would have passed the exam.*
-
-   **Mixed conditional (past condition → present result)** — combines Type 3 if-clause with Type 2 result
-   - Form: **If + had + V3, would + V1**
-   - Example: *If I had taken that job in 2020, I would be a manager today.*
-3. **Subjunctive** — "I wish / if only I **were** …" (not "was").
-4. **Reported speech** — back-shift of tense after "said that".
-5. **"As soon as / no sooner … than / hardly … when / scarcely … when"** — formal inversion patterns. Each on its own line:
-
-   - **No sooner had + S + V3 … than + S + V (past simple)**
-     *No sooner had I sat down than the bell rang.*
-
-   - **Hardly had + S + V3 … when + S + V (past simple)**
-     *Hardly had we left when it started raining.*
-
-   - **Scarcely had + S + V3 … when + S + V (past simple)**
-     *Scarcely had he spoken when she interrupted him.*
-
-   - **As soon as + S + V (past) , S + V (past)** — no inversion needed
-     *As soon as the train arrived, passengers rushed in.*
-6. **Future perfect** — "by next year I **will have** finished" (completion before a future time).
+> **V1 = base verb** (write), **V2 = past simple** (wrote), **V3 = past participle** (written), **V-ing = present participle** (writing).
 
 ---
 
-# PART 3 — SUBJECT-VERB AGREEMENT
+## 2.1 The 12-Tense Master Table — structure, signal words, use
+
+<div class="formula">
+
+**General skeleton for every tense:** Subject + Auxiliary(es) + Main Verb form (+ Object/Complement)
+
+- **Auxiliary chain** carries time + aspect.
+- **Main verb form** is fixed by the aspect (V1, V-ing, V3, been V-ing).
+- **Question form** = invert first auxiliary with subject.
+- **Negative form** = `not` after first auxiliary.
+
+</div>
+
+### 2.1.1 Present Tenses
+
+<div class="formula">
+
+**Simple Present** — S + V1/V-s/es + O
+
+- Positive: *She **writes** a letter.*
+- Negative: *She **does not write** a letter.*
+- Question: ***Does** she **write** a letter?*
+- Signal words: always, often, usually, generally, every day, rarely, never, sometimes.
+- Use: habit, universal truth, fixed schedule, headlines.
+
+</div>
+
+<div class="formula">
+
+**Present Continuous** — S + am/is/are + V-ing + O
+
+- Positive: *She **is writing** a letter.*
+- Negative: *She **is not writing** a letter.*
+- Question: ***Is** she **writing** a letter?*
+- Signal words: now, right now, at present, at the moment, currently, these days, look! listen!
+- Use: action in progress now, temporary action, planned near future ("I am meeting him tomorrow").
+
+</div>
+
+<div class="formula">
+
+**Present Perfect** — S + has/have + V3 + O
+
+- Positive: *She **has written** a letter.*
+- Negative: *She **has not written** a letter.*
+- Question: ***Has** she **written** a letter?*
+- Signal words: just, already, yet, ever, never, recently, lately, so far, up to now, since + point, for + duration.
+- Use: past action with a present consequence; "completed in unfinished time".
+
+</div>
+
+<div class="formula">
+
+**Present Perfect Continuous** — S + has/have + been + V-ing + O
+
+- Positive: *She **has been writing** the letter for two hours.*
+- Negative: *She **has not been writing** the letter.*
+- Question: ***Has** she **been writing** the letter?*
+- Signal words: for + duration, since + point, all day, the whole morning, lately, recently.
+- Use: action started in the past, still continuing OR just stopped with visible result.
+
+</div>
+
+### 2.1.2 Past Tenses
+
+<div class="formula">
+
+**Simple Past** — S + V2 + O
+
+- Positive: *She **wrote** a letter.*
+- Negative: *She **did not write** a letter.*
+- Question: ***Did** she **write** a letter?*
+- Signal words: yesterday, ago, last week/month/year, in 2010, once, then.
+- Use: completed action at a definite past time; sequence of past events; reported speech back-shift.
+
+</div>
+
+<div class="formula">
+
+**Past Continuous** — S + was/were + V-ing + O
+
+- Positive: *She **was writing** a letter.*
+- Negative: *She **was not writing** a letter.*
+- Question: ***Was** she **writing** a letter?*
+- Signal words: while, as, when, at 5 pm yesterday, all day yesterday.
+- Use: action in progress at a past moment; background to a sudden past event ("While I was reading, the phone rang").
+
+</div>
+
+<div class="formula">
+
+**Past Perfect** — S + had + V3 + O
+
+- Positive: *She **had written** the letter before he arrived.*
+- Negative: *She **had not written** the letter.*
+- Question: ***Had** she **written** the letter?*
+- Signal words: before, after, by the time, already, just, no sooner … than, hardly … when.
+- Use: the earlier of two past actions ("past-in-past"); contrary-to-fact past wish.
+
+</div>
+
+<div class="formula">
+
+**Past Perfect Continuous** — S + had + been + V-ing + O
+
+- Positive: *She **had been writing** the letter for an hour when he came.*
+- Negative: *She **had not been writing** the letter.*
+- Question: ***Had** she **been writing** the letter?*
+- Signal words: for + duration + before/when (past), since + point + before/when (past).
+- Use: duration of an action up to a past reference point.
+
+</div>
+
+### 2.1.3 Future Tenses
+
+<div class="formula">
+
+**Simple Future** — S + will/shall + V1 + O
+
+- Positive: *She **will write** a letter.*
+- Negative: *She **will not (won't) write** a letter.*
+- Question: ***Will** she **write** a letter?*
+- Signal words: tomorrow, next week/month/year, soon, in 2030, in the future.
+- Use: spontaneous decision; prediction; promise; offer.
+- "going to" form: planned/intended future or evidence-based prediction ("It **is going to** rain — look at those clouds").
+
+</div>
+
+<div class="formula">
+
+**Future Continuous** — S + will be + V-ing + O
+
+- Positive: *She **will be writing** the letter at 5 pm.*
+- Negative: *She **will not be writing** the letter.*
+- Question: ***Will** she **be writing** the letter?*
+- Signal words: at this time tomorrow, at 8 pm next Monday, in the coming weeks.
+- Use: action in progress at a future moment; polite enquiry about plans.
+
+</div>
+
+<div class="formula">
+
+**Future Perfect** — S + will have + V3 + O
+
+- Positive: *She **will have written** the letter by 6 pm.*
+- Negative: *She **will not have written** the letter.*
+- Question: ***Will** she **have written** the letter?*
+- Signal words: by + future time, by then, by the time + clause, before + future point.
+- Use: action that will be completed before a specified future time.
+
+</div>
+
+<div class="formula">
+
+**Future Perfect Continuous** — S + will have been + V-ing + O
+
+- Positive: *By June 2027, she **will have been writing** her novel for three years.*
+- Negative: *She **will not have been writing** her novel for three years.*
+- Question: ***Will** she **have been writing** her novel for three years by June?*
+- Signal words: for + duration + by + future time.
+- Use: duration of an action up to a future reference point.
+
+</div>
+
+---
+
+## 2.2 Tense forms at a glance — positive / negative / question
+
+| Tense | Positive | Negative | Question |
+|---|---|---|---|
+| Simple Present | S + V1/Vs | S + do/does + not + V1 | Do/Does + S + V1? |
+| Present Continuous | S + am/is/are + V-ing | S + am/is/are + not + V-ing | Am/Is/Are + S + V-ing? |
+| Present Perfect | S + has/have + V3 | S + has/have + not + V3 | Has/Have + S + V3? |
+| Present Perfect Continuous | S + has/have + been + V-ing | S + has/have + not + been + V-ing | Has/Have + S + been + V-ing? |
+| Simple Past | S + V2 | S + did + not + V1 | Did + S + V1? |
+| Past Continuous | S + was/were + V-ing | S + was/were + not + V-ing | Was/Were + S + V-ing? |
+| Past Perfect | S + had + V3 | S + had + not + V3 | Had + S + V3? |
+| Past Perfect Continuous | S + had + been + V-ing | S + had + not + been + V-ing | Had + S + been + V-ing? |
+| Simple Future | S + will + V1 | S + will + not + V1 | Will + S + V1? |
+| Future Continuous | S + will + be + V-ing | S + will + not + be + V-ing | Will + S + be + V-ing? |
+| Future Perfect | S + will + have + V3 | S + will + not + have + V3 | Will + S + have + V3? |
+| Future Perfect Continuous | S + will + have + been + V-ing | S + will + not + have + been + V-ing | Will + S + have + been + V-ing? |
+
+---
+
+## 2.3 Worked examples — two per tense
+
+<div class="steps">
+
+**Simple Present**
+
+*Build:* "He / read / the newspaper / every morning."
+1. Subject = "He" (3rd person singular) → verb takes **-s**.
+2. Read + s = **reads**.
+3. Sentence: *He **reads** the newspaper every morning.*
+
+*Build:* Negative & question of "They play cricket on Sundays."
+1. Auxiliary for present simple plural = **do**.
+2. Negative: *They **do not play** cricket on Sundays.*
+3. Question: ***Do** they **play** cricket on Sundays?*
+
+</div>
+
+<div class="steps">
+
+**Present Continuous**
+
+*Spot the error:* "She is write a letter now."
+1. Continuous needs V-ing, not V1. "write" → "writing".
+2. Correct: *She **is writing** a letter now.*
+
+*Future use:* "We meet the principal tomorrow at 10."
+1. Pre-arranged plan → use present continuous for future.
+2. Correct: *We **are meeting** the principal tomorrow at 10.*
+
+</div>
+
+<div class="steps">
+
+**Present Perfect**
+
+*Choose tense:* "I __ (live) in Mumbai since 2018."
+1. "Since 2018" = action started in past, continues. Trigger → present perfect.
+2. Answer: *I **have lived** in Mumbai since 2018.*
+
+*Spot the error:* "He has gone to Delhi yesterday."
+1. "yesterday" = finished past time → cannot pair with present perfect.
+2. Correct: *He **went** to Delhi yesterday.* (simple past)
+
+</div>
+
+<div class="steps">
+
+**Present Perfect Continuous**
+
+*Build:* "She / wait / for the bus / for thirty minutes."
+1. "for thirty minutes" = duration up to now → present perfect continuous.
+2. Form: has/have + been + V-ing. Subject "she" → **has been waiting**.
+3. *She **has been waiting** for the bus for thirty minutes.*
+
+*Choose tense:* "I'm tired because I __ (run)."
+1. Visible present result of recent ongoing action → present perfect continuous.
+2. *I'm tired because I **have been running**.*
+
+</div>
+
+<div class="steps">
+
+**Simple Past**
+
+*Spot the error:* "I have visited Goa last December."
+1. "last December" = definite past time → simple past, not present perfect.
+2. Correct: *I **visited** Goa last December.*
+
+*Build interrogative:* "She danced at the party."
+1. Auxiliary for past simple = **did**; main verb returns to V1.
+2. ***Did** she **dance** at the party?*
+
+</div>
+
+<div class="steps">
+
+**Past Continuous**
+
+*Choose tense:* "While I __ (read), the phone __ (ring)."
+1. "While" + longer background action → past continuous. Interrupting action → simple past.
+2. *While I **was reading**, the phone **rang**.*
+
+*Spot the error:* "They were play football at 5 pm yesterday."
+1. Continuous needs V-ing. "play" → "playing".
+2. Correct: *They **were playing** football at 5 pm yesterday.*
+
+</div>
+
+<div class="steps">
+
+**Past Perfect**
+
+*Choose tense:* "The train __ (leave) before we reached the station."
+1. Two past actions; the earlier one → past perfect, the later one → simple past.
+2. *The train **had left** before we reached the station.*
+
+*Spot the error:* "After he finished dinner, he went to bed."
+1. Acceptable, but if we need to stress that dinner came before bed, use past perfect for the earlier action.
+2. Preferred: *After he **had finished** dinner, he **went** to bed.*
+
+</div>
+
+<div class="steps">
+
+**Past Perfect Continuous**
+
+*Build:* "We / wait / for two hours / before the doctor arrived."
+1. Duration up to a past point → had + been + V-ing.
+2. *We **had been waiting** for two hours before the doctor arrived.*
+
+*Choose tense:* "Her eyes were red because she __ (cry)."
+1. Past visible result of ongoing past action → past perfect continuous.
+2. *Her eyes were red because she **had been crying**.*
+
+</div>
+
+<div class="steps">
+
+**Simple Future**
+
+*Choose form:* "I __ (help) you with your homework — don't worry."
+1. Spontaneous offer/decision → "will".
+2. *I **will help** you with your homework.*
+
+*Pre-planned future:* "We __ (visit) Jaipur next weekend; tickets are booked."
+1. Pre-arranged plan → "going to" or present continuous; "will" is weaker.
+2. *We **are going to visit / are visiting** Jaipur next weekend.*
+
+</div>
+
+<div class="steps">
+
+**Future Continuous**
+
+*Build:* "This time tomorrow, I / fly / to London."
+1. Action in progress at a future moment → will be + V-ing.
+2. *This time tomorrow, I **will be flying** to London.*
+
+*Polite enquiry:* "__ you __ (use) the car this evening?"
+1. Future continuous softens the question (no implied request).
+2. ***Will** you **be using** the car this evening?*
+
+</div>
+
+<div class="steps">
+
+**Future Perfect**
+
+*Build:* "By 2030, India / become / a $5-trillion economy."
+1. Action completed before a future time → will have + V3.
+2. *By 2030, India **will have become** a $5-trillion economy.*
+
+*Spot the error:* "He will complete the project by next Friday."
+1. To highlight prior completion, use future perfect.
+2. Sharper: *He **will have completed** the project by next Friday.*
+
+</div>
+
+<div class="steps">
+
+**Future Perfect Continuous**
+
+*Build:* "By next December, I / work / here / for ten years."
+1. Duration up to a future point → will have been + V-ing.
+2. *By next December, I **will have been working** here for ten years.*
+
+*Choose tense:* "In May, they __ (live) abroad for five years."
+1. Duration ending in future → future perfect continuous.
+2. *In May, they **will have been living** abroad for five years.*
+
+</div>
+
+---
+
+## 2.4 Time-phrase cue table
+
+| Signal phrase | Locked tense | Example |
+|---|---|---|
+| yesterday, ago, last week, in 2010, then | Simple Past | *He left **yesterday**.* |
+| since + point in time | Present Perfect / PP-Continuous | *I have lived here **since** 2015.* |
+| for + duration (action continues) | Present Perfect / PP-Continuous | *She has worked here **for** five years.* |
+| for + duration (finished action) | Simple Past | *He worked there **for** five years* (and left). |
+| just, already, yet, ever, never, so far, recently | Present Perfect | *I have **just** finished.* |
+| while + (was/were) V-ing | Past Continuous | ***While** I was reading, the bell rang.* |
+| by + future time | Future Perfect | ***By** 2030, India will have become…* |
+| at + future clock time | Future Continuous | *I will be flying **at** 8 pm tomorrow.* |
+| always, often, usually, every day, never (habit) | Simple Present | *He **always** wakes up at 6 am.* |
+| now, right now, at the moment, currently | Present Continuous | *She **is currently** writing.* |
+| when + simple past | Simple Past + Past Cont. | *I was sleeping **when** he called.* |
+
+---
+
+## 2.5 Conditionals (if-clauses)
+
+<div class="formula">
+
+**Five conditional patterns:**
+
+| Type | Use | If-clause | Main clause | Example |
+|---|---|---|---|---|
+| Type 0 | universal truth | If + present simple | present simple | *If you heat ice, it **melts**.* |
+| Type 1 | likely future | If + present simple | will + V1 | *If it rains, we **will cancel** the picnic.* |
+| Type 2 | unreal present | If + past simple | would + V1 | *If I **were** you, I **would apologise**.* |
+| Type 3 | unreal past | If + had + V3 | would have + V3 | *If I **had studied**, I **would have passed**.* |
+| Mixed | past cause → present result | If + had + V3 | would + V1 | *If I had taken that job, I **would be** rich now.* |
+
+</div>
+
+<div class="pitfall">
+
+**Common conditional traps**
+
+- **"If I was you"** — wrong. Subjunctive needs **"If I were you"** for Type 2 (unreal present).
+- Never write "**will**" inside an if-clause itself: *If it **will rain** …* ✗ → *If it **rains** …* ✓
+- Type 3 needs **TWO** past participles: *If I **had known**, I **would have come**.* ✓ (not "would come").
+- "**Unless**" already means "if not" — don't add another "not": *Unless you don't study* ✗ → *Unless you study* ✓.
+
+</div>
+
+---
+
+## 2.6 Inversion patterns (formal, very high-frequency)
+
+<div class="formula">
+
+**Negative-front inversion — structure:**
+
+- **No sooner had + S + V3 … than + S + V2.**
+  *No sooner had I sat down than the bell rang.*
+
+- **Hardly / Scarcely had + S + V3 … when + S + V2.**
+  *Hardly had we left when it started raining.*
+
+- **Seldom / Rarely / Never + had + S + V3 …**
+  *Never had I seen such chaos.*
+
+- **Not only … but also …** with inversion: *Not only **does he sing**, but he also plays guitar.*
+
+- **As soon as + S + V2, S + V2** — no inversion needed.
+  *As soon as the train arrived, passengers rushed in.*
+
+</div>
+
+<div class="pitfall">
+
+**Inversion traps to remember**
+
+- After **no sooner**, always **than** (never "when"). After **hardly/scarcely**, always **when** (never "than").
+- The subordinate clause carries **had + V3**; the main clause uses **simple past**.
+- "Sooner I had reached than it began" ✗ — inversion requires **had** before the subject.
+
+</div>
+
+---
+
+## 2.7 Subjunctive (high-frequency in error spotting)
+
+<div class="formula">
+
+**Subjunctive markers** — verb stays in base form (V1) or uses **were** for all subjects.
+
+- After **wish / if only / as if / as though** (unreal present): *I wish I **were** taller.*
+- After **demand / insist / suggest / recommend / propose / request that …**: *He insisted that she **be** present.*
+- After **It is essential / important / necessary that …**: *It is essential that he **submit** the form today.*
+- After **lest** (= for fear that): *Run fast **lest** you **should miss** the bus.*
+
+</div>
+
+---
+
+## 2.8 Mini-PYQ drill — Tenses
+
+<div class="pyq">
+
+**Q1 (SSC CGL pattern).** Choose the correct option to fill the blank:
+"By the time we reached the hall, the speaker __ his lecture."
+(a) finished  (b) has finished  (c) had finished  (d) was finishing
+
+</div>
+<div class="pyq-answer">**Ans:** (c) had finished. Two past actions; the earlier (speaker finishing) takes **past perfect**.</div>
+
+<div class="pyq">
+
+**Q2 (IBPS PO pattern).** Identify the error: "She **has been working** here / **since** five years / and refuses to leave."
+(a) She has been working here  (b) since five years  (c) and refuses to leave  (d) no error
+
+</div>
+<div class="pyq-answer">**Ans:** (b). "Five years" is a duration → use **for**, not **since**. Correct: *for five years*.</div>
+
+<div class="pyq">
+
+**Q3 (SSC CHSL pattern).** Fill in the blank: "If he __ harder, he would have qualified."
+(a) studied  (b) had studied  (c) studies  (d) has studied
+
+</div>
+<div class="pyq-answer">**Ans:** (b) had studied. Type-3 conditional → **If + had + V3, would have + V3**.</div>
+
+<div class="pyq">
+
+**Q4 (CGL Tier-1).** Choose the grammatically correct sentence:
+(a) No sooner I reached the station than the train left.
+(b) No sooner had I reached the station than the train left.
+(c) No sooner did I reach the station when the train left.
+(d) No sooner I had reached than the train was left.
+
+</div>
+<div class="pyq-answer">**Ans:** (b). Inversion: **No sooner had + S + V3 … than + S + V2**.</div>
+
+<div class="pyq">
+
+**Q5 (IBPS Clerk pattern).** Pick the correct tense: "Look! The bus __."
+(a) leaves  (b) is leaving  (c) has left  (d) leaved
+
+</div>
+<div class="pyq-answer">**Ans:** (b) is leaving. "Look!" signals an action happening *now* → **present continuous**.</div>
+
+<div class="pyq">
+
+**Q6 (CGL Tier-2 pattern).** Choose the correct form:
+"By next April, I __ in this company for twenty years."
+(a) will work  (b) have worked  (c) will have been working  (d) am working
+
+</div>
+<div class="pyq-answer">**Ans:** (c) will have been working. Duration ending at a future point → **future perfect continuous**.</div>
+
+<div class="pyq">
+
+**Q7 (SBI PO pattern).** Identify the error: "He **suggested** / that the proposal / **was discussed** / immediately."
+(a) He suggested  (b) that the proposal  (c) was discussed  (d) immediately
+
+</div>
+<div class="pyq-answer">**Ans:** (c). After "suggested that", use the **subjunctive base form**. Correct: *that the proposal **be discussed***.</div>
+
+<div class="pyq">
+
+**Q8 (SSC MTS pattern).** Fill in the blank: "She __ to the temple every Friday."
+(a) is going  (b) goes  (c) has gone  (d) is gone
+
+</div>
+<div class="pyq-answer">**Ans:** (b) goes. "Every Friday" = habit → **simple present**.</div>
+
+<div class="keypoint">
+
+**Tenses — exam recall card**
+
+1. **Past markers** (yesterday, ago, last, in 2010) ⇒ **simple past**, never present perfect.
+2. **Since** + point, **for** + duration ⇒ **present perfect (continuous)**.
+3. **By + future time** ⇒ **future perfect**.
+4. **While / when** + V-ing ⇒ **past continuous** (with an interrupting simple past).
+5. **If + were** for unreal present ("If I **were** you").
+6. **No sooner had … than**; **Hardly had … when** — fixed inversion.
+7. After **wish / suggest / insist that** ⇒ subjunctive base form.
+8. **Two past actions** ⇒ earlier one in **past perfect (had + V3)**.
+
+</div>
+
+---
+
+# PART 3 — SUBJECT-VERB AGREEMENT {#part-3}
 
 ## 3.0 Opener
 
@@ -173,7 +767,7 @@ Most common error class. Memorise these rules cold.
 
 ---
 
-# PART 4 — ARTICLES (a / an / the)
+# PART 4 — ARTICLES (a / an / the) {#part-4}
 
 ## 4.0 Opener
 
@@ -190,7 +784,7 @@ Most common error class. Memorise these rules cold.
 
 ---
 
-# PART 5 — PREPOSITIONS (memorise the pairs)
+# PART 5 — PREPOSITIONS (memorise the pairs) {#part-5}
 
 ## 5.0 Opener
 
@@ -222,7 +816,7 @@ Prepositions in English are largely idiomatic — there is no rule; you must mem
 
 ---
 
-# PART 6 — CONJUNCTIONS
+# PART 6 — CONJUNCTIONS {#part-6}
 
 ## Types
 
@@ -236,46 +830,702 @@ Prepositions in English are largely idiomatic — there is no rule; you must mem
 
 ---
 
-# PART 7 — VOICE (ACTIVE ↔ PASSIVE)
+# PART 7 — VOICE (ACTIVE ↔ PASSIVE) {#part-7}
 
 ## 7.0 Opener
 
-Passive = be + V3. The **object** of active becomes subject of passive; active subject becomes "by + agent" (or dropped).
+**Voice** tells us whether the **subject acts** (active) or **is acted upon** (passive). All passive constructions share one universal skeleton — once you internalise it, every "transform from active to passive" question becomes a 10-second mechanical exercise.
 
-## Types
+<div class="formula">
 
-1. **Simple conversion** — "Ram writes a letter" → "A letter is written by Ram."
-2. **Continuous tense** — "is writing" → "is being written".
-3. **Perfect tense** — "has written" → "has been written".
-4. **Modals** — "can write" → "can be written"; "must write" → "must be written".
-5. **Imperatives** — "Open the door" → "Let the door be opened."
-6. **"Let"-construction** — "Let him do it" → "Let it be done by him."
-7. **Interrogatives** — "Is Ram writing?" → "Is a letter being written by Ram?"
-8. **Double object** — "She gave him a gift" → "A gift was given to him" or "He was given a gift."
+**Universal active → passive rule:**
+
+1. **Object of active** → **subject of passive**.
+2. **Verb** becomes **be + V3 (past participle)** — *be* must match the tense of the original verb.
+3. **Subject of active** → **"by + agent"** at the end (or omitted when obvious / unknown).
+4. **Pronouns** shift case: I → me, he → him, she → her, we → us, they → them.
+
+</div>
+
+> **Tense check:** the form of *be* is the only thing that changes by tense; the main verb is always **V3**. Memorise the 12 *be*-forms below and you have memorised the entire passive system.
 
 ---
 
-# PART 8 — DIRECT ↔ INDIRECT SPEECH (NARRATION)
+## 7.1 The 12-tense active → passive transformation table
+
+| # | Tense | Active form | Passive form | Worked pair |
+|---|---|---|---|---|
+| 1 | Simple Present | S + V1/Vs + O | S + is/am/are + V3 | *He **writes** a letter.* → *A letter **is written** by him.* |
+| 2 | Present Continuous | S + is/am/are + V-ing + O | S + is/am/are + **being** + V3 | *She **is writing** a letter.* → *A letter **is being written** by her.* |
+| 3 | Present Perfect | S + has/have + V3 + O | S + has/have + **been** + V3 | *They **have written** a letter.* → *A letter **has been written** by them.* |
+| 4 | Present Perfect Cont. | — | **No passive form** (rephrase if needed) | — |
+| 5 | Simple Past | S + V2 + O | S + was/were + V3 | *He **wrote** a letter.* → *A letter **was written** by him.* |
+| 6 | Past Continuous | S + was/were + V-ing + O | S + was/were + **being** + V3 | *She **was writing** a letter.* → *A letter **was being written** by her.* |
+| 7 | Past Perfect | S + had + V3 + O | S + had + **been** + V3 | *They **had written** a letter.* → *A letter **had been written** by them.* |
+| 8 | Past Perfect Cont. | — | **No passive form** | — |
+| 9 | Simple Future | S + will + V1 + O | S + will + **be** + V3 | *He **will write** a letter.* → *A letter **will be written** by him.* |
+| 10 | Future Continuous | — | **No passive form** | — |
+| 11 | Future Perfect | S + will + have + V3 + O | S + will + have + **been** + V3 | *They **will have written** the letter.* → *The letter **will have been written** by them.* |
+| 12 | Future Perfect Cont. | — | **No passive form** | — |
+
+<div class="keypoint">
+
+**The four passive-only "be" forms to memorise**
+
+| Aspect | Passive auxiliary stack | Memory peg |
+|---|---|---|
+| Simple | **be + V3** | "be done" |
+| Continuous | **be + being + V3** | "is being done" |
+| Perfect | **have + been + V3** | "has been done" |
+| Modal | **modal + be + V3** | "can be done", "must be done", "should be done" |
+
+</div>
+
+---
+
+## 7.2 Special structures
+
+<div class="formula">
+
+**Modal verbs** — S + modal + **be** + V3.
+
+| Active | Passive |
+|---|---|
+| can write | can be written |
+| could write | could be written |
+| may write | may be written |
+| might write | might be written |
+| must write | must be written |
+| should / ought to write | should / ought to be written |
+| have to write | have to be written |
+| used to write | used to be written |
+
+</div>
+
+<div class="formula">
+
+**Imperatives**
+
+- **Order:** *Open the door.* → *Let the door **be opened**.*
+- **Negative order:** *Do not shut the gate.* → *Let the gate **not be shut**.* / *The gate must not be shut.*
+- **Request:** *Please help me.* → *You **are requested to** help me.*
+- **Advice:** *Always speak the truth.* → *The truth **should always be spoken**.* / *You are advised to speak the truth.*
+
+</div>
+
+<div class="formula">
+
+**Interrogatives — invert the auxiliary**
+
+- **Yes/No (present):** *Is she writing the letter?* → *Is the letter **being written** by her?*
+- **Yes/No (past):** *Did he break the cup?* → *Was the cup **broken** by him?*
+- **Wh-(who as subject):** *Who broke the cup?* → ***By whom** was the cup broken?*
+- **Wh-(who as object):** *Whom did he meet?* → *Who **was met** by him?*
+- **Wh-(what / when / where / why / how):** keep the question word at the front; rest follows the standard rule.
+  *What did she say?* → *What **was said** by her?*
+
+</div>
+
+<div class="formula">
+
+**Verbs with two objects (di-transitive: give, send, offer, tell, pay, lend, teach, show)**
+
+Either object can become the passive subject; the preferred form puts the **person** first.
+
+- Active: *She **gave him** a gift.*
+- Passive (person-as-subject — usual): *He **was given** a gift by her.*
+- Passive (thing-as-subject — formal): *A gift **was given to him** by her.* (note the added **to**)
+
+</div>
+
+<div class="formula">
+
+**Quasi-passive / stative passives** — verbs of perception with a bare infinitive in active take **to-infinitive** in passive.
+
+- *She saw him **leave**.* → *He **was seen to leave** by her.*
+- *They made him **work**.* → *He **was made to work** by them.*
+- *People believe him **to be honest**.* → *He **is believed to be honest**.*
+
+</div>
+
+<div class="formula">
+
+**Sentences with no direct object (intransitive verbs)** cannot be made passive.
+
+- *He runs.* — no object → **no passive**.
+- *They arrived.* — no object → **no passive**.
+
+</div>
+
+---
+
+## 7.3 Worked examples — 5 full transformations
+
+<div class="steps">
+
+**Example 1 — Simple Past (yes/no question)**
+
+*Active:* "Did the chef prepare the dinner?"
+
+1. Identify object → "the dinner" → becomes passive subject.
+2. Tense = simple past + question → start with **Was/Were** + new subject.
+3. Verb "prepare" → past participle = **prepared**.
+4. Original subject "the chef" → "by the chef".
+5. **Passive:** *Was the dinner **prepared** by the chef?*
+
+</div>
+
+<div class="steps">
+
+**Example 2 — Modal of obligation**
+
+*Active:* "Students must submit the assignments by Friday."
+
+1. Object → "the assignments" → passive subject.
+2. Modal "must" + active verb → passive form = **must be + V3**.
+3. "submit" → past participle = **submitted**.
+4. Agent "Students" — often omitted because audience is obvious.
+5. **Passive:** *The assignments **must be submitted** by Friday (by students).*
+
+</div>
+
+<div class="steps">
+
+**Example 3 — Imperative (negative command)**
+
+*Active:* "Don't park your vehicle here."
+
+1. Negative imperative → use **Let … not be + V3** OR **must not be + V3**.
+2. Object "your vehicle" → passive subject.
+3. **Passive:** *Let your vehicle **not be parked** here.* / *Your vehicle **must not be parked** here.*
+
+</div>
+
+<div class="steps">
+
+**Example 4 — Present Perfect with di-transitive verb**
+
+*Active:* "The principal has awarded Riya a scholarship."
+
+1. Two objects: "Riya" (indirect / person) and "a scholarship" (direct / thing).
+2. Tense = present perfect → **has/have been + V3**.
+3. **Passive (person as subject):** *Riya **has been awarded** a scholarship by the principal.*
+4. **Passive (thing as subject):** *A scholarship **has been awarded to Riya** by the principal.*
+
+</div>
+
+<div class="steps">
+
+**Example 5 — Wh-question (Future Simple)**
+
+*Active:* "Who will deliver the keynote address?"
+
+1. "Who" = subject of active; object = "the keynote address" → passive subject.
+2. Future passive form → **will be + V3**.
+3. "deliver" → past participle = **delivered**.
+4. **Passive:** ***By whom** will the keynote address **be delivered**?*
+
+</div>
+
+---
+
+## 7.4 Common pitfalls
+
+<div class="pitfall">
+
+**Voice-conversion trap list**
+
+- **Continuous + Perfect mix** is wrong. Active "has been writing" has **no passive form**; rephrase as *The letter has been (being) written for an hour* → use simple perfect passive: *The letter **has been written***.
+- **By + agent** is dropped when the agent is unknown or obvious: *English is spoken in Singapore* (no "by people"). Don't add "by people / by everybody".
+- **"Let me do it"** — the let-construction passive is *Let it **be done** by me* (not "Let it do by me").
+- **Verbs with no object** (intransitive: arrive, fall, sleep, die, run, come, go) → cannot be made passive. A sentence like "He was died" is **wrong** — die is intransitive.
+- **Cognate objects** (sang a song, ran a race) — usually keep voice in active; the forced passive sounds unnatural.
+- **Pronoun case** must change: *I → me, we → us, he → him, she → her, they → them*. "It was painted by **he**" ✗ → "by **him**" ✓.
+
+</div>
+
+---
+
+## 7.5 Mini-PYQ drill — Voice
+
+<div class="pyq">
+
+**Q1 (SSC CGL).** Choose the correct passive form of: "They are repairing the road near the school."
+(a) The road near the school is repaired by them.
+(b) The road near the school is being repaired.
+(c) The road near the school was being repaired.
+(d) The road near the school has been repaired.
+
+</div>
+<div class="pyq-answer">**Ans:** (b). Present continuous active → **is/are being + V3**.</div>
+
+<div class="pyq">
+
+**Q2 (IBPS PO).** Convert to passive: "Somebody has stolen my purse."
+(a) My purse has stolen.
+(b) My purse was stolen by somebody.
+(c) My purse has been stolen.
+(d) My purse is being stolen.
+
+</div>
+<div class="pyq-answer">**Ans:** (c). Present perfect passive → **has been + V3**; "by somebody" is dropped because agent is unknown.</div>
+
+<div class="pyq">
+
+**Q3 (SSC CHSL).** Choose the active form of: "By whom was this novel written?"
+(a) Who wrote this novel?
+(b) Who has written this novel?
+(c) Who is writing this novel?
+(d) Whom did this novel write?
+
+</div>
+<div class="pyq-answer">**Ans:** (a). Passive "was written" = simple past passive → active is **simple past with who as subject**.</div>
+
+<div class="pyq">
+
+**Q4 (SBI Clerk).** Choose the correct passive form: "Please open the door."
+(a) The door is opened please.
+(b) Let the door be opened please.
+(c) You are requested to open the door.
+(d) Both (b) and (c) are correct.
+
+</div>
+<div class="pyq-answer">**Ans:** (d). Both forms are accepted — Let-construction for imperatives and "You are requested to …" for polite requests.</div>
+
+<div class="pyq">
+
+**Q5 (RRB NTPC).** Convert to passive: "The committee will announce the results tomorrow."
+(a) The results are announced by the committee tomorrow.
+(b) The results will announce by the committee tomorrow.
+(c) The results will be announced by the committee tomorrow.
+(d) The results have been announced by the committee.
+
+</div>
+<div class="pyq-answer">**Ans:** (c). Simple future passive → **will be + V3**.</div>
+
+<div class="keypoint">
+
+**Voice — exam recall card**
+
+1. Universal rule: **Object → Subject; Verb → be + V3; Subject → by + agent**.
+2. Match the **be-form** to the original tense: is/are, was/were, has/have been, will be, can be …
+3. **Continuous passives** add a single **being** (is being written, was being written).
+4. **Perfect passives** add a single **been** (has been written, had been written, will have been written).
+5. **Modals** always insert **be** between modal and V3 (can be written, must be written).
+6. **Imperatives** → "Let … be + V3" or "You are requested/advised to …".
+7. **Di-transitive verbs** allow two passive forms; prefer the **person-first** version.
+8. **Continuous-perfect tenses and intransitive verbs** have **no passive**.
+
+</div>
+
+---
+
+# PART 8 — DIRECT ↔ INDIRECT SPEECH (NARRATION) {#part-8}
 
 ## 8.0 Opener
 
-Rules:
-- Reporting verb past → back-shift tenses in reported clause.
-- "Today/yesterday/tomorrow" → "that day / previous day / next day".
-- "This/these/here/now" → "that/those/there/then".
-- Pronouns shift to match speaker perspective.
+**Direct speech** quotes the exact words inside inverted commas; **indirect (reported) speech** reframes those words through the speaker's voice. Every narration question tests four mechanical shifts in sequence — once you drill them in this fixed order, the answer falls out:
 
-## Types
+<div class="formula">
 
-1. **Statements** — "He said, 'I am ill'" → "He said that he was ill."
-2. **Questions** — reporting verb becomes "asked / enquired"; that-clause uses statement order.
-3. **Yes/No questions** — use "if" or "whether".
-4. **Imperatives** — reporting verb becomes "ordered / requested / advised / told"; reported clause uses infinitive: "Don't make noise" → "He asked them not to make noise."
-5. **Exclamations** — "How beautiful!" → "He exclaimed that it was very beautiful."
+**The four-step narration conversion (memorise the sequence):**
+
+1. **Reporting verb** — choose the right verb for the sentence type (said / asked / ordered / requested / exclaimed / advised).
+2. **Linker** — pick the correct linker after the reporting verb (**that**, **if/whether**, **to + V1**, **not to + V1**, **wh-word**).
+3. **Tense back-shift** — if the reporting verb is in the **past**, shift the reported tense one step further back.
+4. **Time / place / pronoun shift** — convert proximal words (this, here, now) to distal (that, there, then) and adjust pronouns to the reporter's perspective.
+
+</div>
+
+> **Golden exception — universal-truth rule:** if the reported clause states a permanent fact, a habit, or a universal truth, **do NOT back-shift the tense** even when the reporting verb is past.
+> *He said, "The earth revolves around the sun."* → *He said that the earth **revolves** around the sun.* (not "revolved")
 
 ---
 
-# PART 9 — ERROR SPOTTING
+## 8.1 Reporting-verb selection by sentence type
+
+| Sentence type in direct speech | Reporting verb in indirect | Linker |
+|---|---|---|
+| Statement (assertive) | said / told / replied / remarked / declared | **that** |
+| Yes/No question | asked / enquired / wanted to know | **if / whether** |
+| Wh-question | asked / enquired / wondered | **the same wh-word** (what, when, why, …) |
+| Order / command | ordered / commanded / told | **to + V1** |
+| Negative order | forbade / told … not to | **not to + V1** |
+| Request | requested / begged | **to + V1** |
+| Advice | advised / urged / counselled | **to + V1** |
+| Suggestion | suggested / proposed | **that + S + should + V1** OR **V-ing** |
+| Warning | warned / cautioned | **not to + V1** / **that** |
+| Exclamation (joy) | exclaimed with joy | **that** |
+| Exclamation (sorrow) | exclaimed with sorrow | **that** |
+| Exclamation (surprise) | exclaimed with surprise / wonder | **that** |
+| Salutation / greeting | wished / greeted / bade | **that** / **a good morning, etc.** |
+
+<div class="pitfall">
+
+**said vs told — non-negotiable rule**
+
+- **said** is followed by **that** (or nothing), with **no listener**: *He **said that** he was tired.*
+- **told** always takes a **direct listener (me, him, her, them)**: *He **told me that** he was tired.*
+- ✗ *He said me that …* and ✗ *He told that …* are both wrong.
+
+</div>
+
+---
+
+## 8.2 Tense back-shift table — direct → indirect (when reporting verb is past)
+
+| Direct (inside quotes) | Indirect (in reported clause) |
+|---|---|
+| Simple Present — *writes* | Simple Past — *wrote* |
+| Present Continuous — *is writing* | Past Continuous — *was writing* |
+| Present Perfect — *has/have written* | Past Perfect — *had written* |
+| Present Perfect Continuous — *has/have been writing* | Past Perfect Continuous — *had been writing* |
+| Simple Past — *wrote* | Past Perfect — *had written* |
+| Past Continuous — *was writing* | Past Perfect Continuous — *had been writing* |
+| Past Perfect — *had written* | Past Perfect — *had written* (no further change) |
+| **will / shall** | **would / should** |
+| **can** | **could** |
+| **may** | **might** |
+| **must** (obligation) | **had to** |
+| **must** (deduction / universal) | **must** (no change) |
+| **shall** (advice) | **should** |
+| **ought to / used to / could / would / might / should** | **no change** |
+
+<div class="keypoint">
+
+**When NOT to back-shift the tense**
+
+- The reported clause states a **universal truth** or **scientific fact**.
+- The reported clause states a **habitual / still-true action**: *She said that she **lives** in Delhi* (and still lives there).
+- The reported clause refers to a **historical date / fixed past event**: *He said that India **became** independent in 1947.*
+- The **reporting verb is in present or future** (says / will say / has said) — the reported tense **stays unchanged**.
+  *He says, "I am tired."* → *He says (that) he **is** tired.*
+
+</div>
+
+---
+
+## 8.3 Pronoun shift table
+
+| Direct pronoun | Indirect — depends on subject of reporting verb |
+|---|---|
+| **I / my / me / mine** | shifts to match the **subject** of the reporting verb (he/his/him, she/her, etc.) |
+| **we / our / us / ours** | shifts to match the **subject** (they/their/them) |
+| **you / your / yours** | shifts to match the **object** (listener) of the reporting verb (he/she/they) |
+| **he / she / it / they / their** | **no change** — already third person |
+
+**Easy mnemonic — SON rule:**
+
+- **S**ubject of reporting verb tells you what to do with **I / we**.
+- **O**bject of reporting verb tells you what to do with **you**.
+- **N**o change for the rest (third-person pronouns and proper nouns).
+
+> **Example:** Ram said to Sita, "I will help you." → Ram = subject → "I" → "he". Sita = object → "you" → "her". Result: *Ram told Sita that **he** would help **her**.*
+
+---
+
+## 8.4 Time and place expression changes
+
+| Direct word | Indirect word |
+|---|---|
+| now | then |
+| today | that day |
+| tonight | that night |
+| yesterday | the previous day / the day before |
+| tomorrow | the next day / the following day |
+| last week / month / year | the previous week / month / year |
+| next week / month / year | the following week / month / year |
+| this (adjective) | that |
+| these | those |
+| here | there |
+| hither | thither |
+| hence | thence |
+| ago | before |
+| just now | at that moment |
+| thus | so / in that way |
+
+<div class="pitfall">
+
+**Don't blindly mechanise** — if "here" still refers to the place where the reporter is speaking, keep "here". *He told me here that he was leaving* — fine if both speakers are still in the same place.
+
+</div>
+
+---
+
+## 8.5 Sentence-type templates with full conversions
+
+<div class="formula">
+
+**(a) Statement (assertive)**
+
+- **Pattern:** said/told (someone) + **that** + back-shifted reported clause.
+- *Direct:* *He said, "I am writing a novel."*
+- *Indirect:* *He said **that he was writing** a novel.*
+
+</div>
+
+<div class="formula">
+
+**(b) Yes/No question**
+
+- **Pattern:** asked/enquired + (object) + **if / whether** + S + V (statement order, no question mark).
+- *Direct:* *She said to me, "Are you coming with us?"*
+- *Indirect:* *She asked me **whether I was coming** with them.*
+
+</div>
+
+<div class="formula">
+
+**(c) Wh-question**
+
+- **Pattern:** asked/enquired + (object) + **wh-word** + S + V (statement order).
+- *Direct:* *He said to her, "Where do you live?"*
+- *Indirect:* *He asked her **where she lived**.*
+
+</div>
+
+<div class="formula">
+
+**(d) Imperative — order**
+
+- **Pattern:** ordered / told (object) + **to + V1**.
+- *Direct:* *The officer said to the constable, "Arrest the thief."*
+- *Indirect:* *The officer ordered the constable **to arrest** the thief.*
+
+</div>
+
+<div class="formula">
+
+**(e) Imperative — negative order**
+
+- **Pattern:** told (object) + **not to + V1** / forbade (object) **to + V1**.
+- *Direct:* *Mother said to the child, "Don't play in the rain."*
+- *Indirect:* *Mother told the child **not to play** in the rain.* / *Mother forbade the child **to play** in the rain.*
+
+</div>
+
+<div class="formula">
+
+**(f) Imperative — request / advice**
+
+- *Direct:* *He said to me, "Please pass the salt."*
+- *Indirect:* *He requested me **to pass** the salt.*
+- *Direct:* *The doctor said to him, "Quit smoking."*
+- *Indirect:* *The doctor advised him **to quit** smoking.*
+
+</div>
+
+<div class="formula">
+
+**(g) Suggestion (with "Let us")**
+
+- *Direct:* *He said, "Let us go for a walk."*
+- *Indirect:* *He suggested (to me) **that we should go** for a walk.* / *He proposed **going** for a walk.*
+
+</div>
+
+<div class="formula">
+
+**(h) Exclamation**
+
+- *Direct:* *She said, "How beautiful the sunset is!"*
+- *Indirect:* *She exclaimed (with joy) **that the sunset was very beautiful**.*
+- *Direct:* *He said, "Alas! I have lost my wallet."*
+- *Indirect:* *He exclaimed (with sorrow) **that he had lost his wallet**.*
+
+</div>
+
+<div class="formula">
+
+**(i) Greeting / wish**
+
+- *Direct:* *He said to me, "Good morning."*
+- *Indirect:* *He wished me **a good morning**.*
+- *Direct:* *She said, "May you live long!"*
+- *Indirect:* *She prayed **that I might live long**.*
+
+</div>
+
+---
+
+## 8.6 Worked examples — 5 full conversions
+
+<div class="steps">
+
+**Example 1 — Statement (multi-clause)**
+
+*Direct:* "Ravi said to his brother, 'I have completed my homework and I am going out to play now.'"
+
+1. Reporting verb "said to" → with an explicit listener → use **told**.
+2. Linker → **that** (statement).
+3. Tense shift: "have completed" → "had completed"; "am going" → "was going". Modal-free.
+4. Time/place: "now" → "then". Pronoun: "I" (= Ravi, subject) → "he"; "my" → "his".
+5. **Indirect:** *Ravi told his brother **that he had completed his homework and was going out to play then**.*
+
+</div>
+
+<div class="steps">
+
+**Example 2 — Yes/No question**
+
+*Direct:* "The teacher said to Aman, 'Have you understood the lesson?'"
+
+1. Reporting verb → **asked** (with object Aman).
+2. Linker → **if / whether**.
+3. Tense: "Have you understood" (present perfect) → "had understood" (past perfect).
+4. Word order → switch from interrogative to declarative; drop the question mark.
+5. Pronoun "you" → matches object Aman → "he".
+6. **Indirect:** *The teacher asked Aman **whether he had understood the lesson**.*
+
+</div>
+
+<div class="steps">
+
+**Example 3 — Wh-question with universal-truth exception**
+
+*Direct:* "The teacher said, 'Why does the sun rise in the east?'"
+
+1. Reporting verb → **asked / enquired**.
+2. Linker → wh-word **why**.
+3. Universal-truth exception → tense stays **present simple**.
+4. Word order → declarative.
+5. **Indirect:** *The teacher asked **why the sun rises in the east**.*
+
+</div>
+
+<div class="steps">
+
+**Example 4 — Imperative chain (positive + negative)**
+
+*Direct:* "The captain said to the players, 'Pass the ball quickly and don't lose your concentration.'"
+
+1. Reporting verb → **told / ordered** (two parallel imperatives → may also use **asked them to … and not to …**).
+2. Linker for the first imperative → **to + V1**; for the second → **not to + V1**.
+3. **Indirect:** *The captain told the players **to pass the ball quickly and not to lose their concentration**.*
+
+</div>
+
+<div class="steps">
+
+**Example 5 — Exclamation with pronoun + time shift**
+
+*Direct:* "Riya said, 'Wow! What a lovely surprise this is for me today!'"
+
+1. Reporting verb for joy → **exclaimed with joy / exclaimed in delight**.
+2. Linker → **that**; reframe "Wow!" → "with joy".
+3. Tense: "is" → "was".
+4. Pronoun shift: "me" → "her". Time: "today" → "that day". "This" → "that".
+5. **Indirect:** *Riya exclaimed with joy **that that was a very lovely surprise for her that day**.*
+
+</div>
+
+---
+
+## 8.7 Pitfalls
+
+<div class="pitfall">
+
+**Top narration mistakes that cost easy marks**
+
+- **Forgetting back-shift after a past reporting verb.** *He said that he **is** tired* ✗ → *He said that he **was** tired* ✓.
+- **Mechanical back-shift of a universal truth.** *He said that the earth **revolved** around the sun* ✗ → keep **revolves**.
+- **Using "that" with a question.** Indirect questions take **if / whether / wh-word**, never "that".
+- **Keeping inverted (interrogative) word order in indirect questions.** *He asked where **was she going*** ✗ → *He asked where **she was going*** ✓.
+- **Said / told confusion.** Said + that, told + (object) + that.
+- **Imperatives with "that"** instead of "to + V1". *He told me **that** open the door* ✗ → *He told me **to open** the door* ✓.
+- **Not changing modals.** "will → would", "can → could", "may → might", "must (obligation) → had to". "Must" stays only for logical deductions or universal truths.
+- **Dropping the listener in imperatives.** Imperatives **must** have an explicit listener (told **him**, ordered **them**, requested **me**).
+
+</div>
+
+---
+
+## 8.8 Mini-PYQ drill — Direct / Indirect speech
+
+<div class="pyq">
+
+**Q1 (SSC CGL).** Choose the correct indirect form of: "He said to me, 'I have been waiting for you for an hour.'"
+(a) He told me that he has been waiting for me for an hour.
+(b) He told me that he had been waiting for me for an hour.
+(c) He said me that he was waiting for me for an hour.
+(d) He told that he had been waiting for me for an hour.
+
+</div>
+<div class="pyq-answer">**Ans:** (b). Present perfect continuous → past perfect continuous; "said to me" → "told me"; "you" (= me, the listener) stays as "me".</div>
+
+<div class="pyq">
+
+**Q2 (IBPS PO).** Convert into indirect speech: "The teacher said, 'Honesty is the best policy.'"
+(a) The teacher said that honesty was the best policy.
+(b) The teacher said that honesty had been the best policy.
+(c) The teacher said that honesty is the best policy.
+(d) The teacher told that honesty is the best policy.
+
+</div>
+<div class="pyq-answer">**Ans:** (c). Universal truth / proverb → tense remains **present simple**. (Some grammar books also accept (a); the strictly correct answer in competitive exams is the unchanged form.)</div>
+
+<div class="pyq">
+
+**Q3 (SSC CHSL).** Choose the indirect form: "She said to him, 'Where did you go yesterday?'"
+(a) She asked him where he went yesterday.
+(b) She asked him where he had gone the previous day.
+(c) She told him where had he gone the day before.
+(d) She enquired him that where he had gone yesterday.
+
+</div>
+<div class="pyq-answer">**Ans:** (b). Wh-question → asked + wh-word; simple past → past perfect; "yesterday" → "the previous day"; statement word order.</div>
+
+<div class="pyq">
+
+**Q4 (RRB NTPC).** Choose the indirect form: "Mother said to the child, 'Don't go near the fire.'"
+(a) Mother told the child don't go near the fire.
+(b) Mother told the child not to go near the fire.
+(c) Mother said the child to not going near the fire.
+(d) Mother forbade the child go near the fire.
+
+</div>
+<div class="pyq-answer">**Ans:** (b). Negative imperative → told + (object) + **not to + V1**.</div>
+
+<div class="pyq">
+
+**Q5 (SBI Clerk Mains).** Choose the indirect form: "He said, 'Alas! I have failed in the exam.'"
+(a) He said that he has failed in the exam.
+(b) He cried that he failed in the exam.
+(c) He exclaimed with sorrow that he had failed in the exam.
+(d) He exclaimed that alas he had failed.
+
+</div>
+<div class="pyq-answer">**Ans:** (c). Exclamation expressing sorrow → "exclaimed with sorrow / regret that"; present perfect → past perfect.</div>
+
+<div class="pyq">
+
+**Q6 (SSC MTS).** Choose the indirect form: "He said to me, 'Will you help me with my project?'"
+(a) He asked me would I help him with his project.
+(b) He asked me if I would help him with his project.
+(c) He told me whether I will help him with his project.
+(d) He requested that I would help him with my project.
+
+</div>
+<div class="pyq-answer">**Ans:** (b). Yes/No question → asked + **if/whether**; "will" → "would"; "you" → "I"; "me/my" → "him/his".</div>
+
+<div class="keypoint">
+
+**Narration — exam recall card**
+
+1. **Four-step routine:** reporting verb → linker → tense back-shift → time/place/pronoun shift.
+2. **Said vs Told:** said + that; told + (object) + that.
+3. **Linkers:** statement → that; Yes/No → if/whether; Wh- → wh-word; imperative → to/not-to + V1.
+4. **Tense:** back-shift one step further into the past when reporting verb is past.
+5. **No back-shift** for universal truths, habitual still-true facts, and historical dates.
+6. **Modal map:** will→would, can→could, may→might, shall→should, must (obligation)→had to.
+7. **Pronouns:** SON rule — Subject pronoun (I/we) matches reporting subject; Object pronoun (you) matches reporting object; No change for the rest.
+8. **Indirect questions** use declarative word order — no question mark, no "do/does/did".
+
+</div>
+
+---
+
+# PART 9 — ERROR SPOTTING {#part-9}
 
 ## 9.0 Opener
 
@@ -307,7 +1557,7 @@ The highest-frequency MCQ format. Sentence split into 4 parts (A, B, C, D); cand
 
 ---
 
-# PART 10 — SENTENCE IMPROVEMENT / PHRASE REPLACEMENT
+# PART 10 — SENTENCE IMPROVEMENT / PHRASE REPLACEMENT {#part-10}
 
 Similar to error spotting, but the candidate is given 4 replacements for an underlined phrase.
 
@@ -315,7 +1565,7 @@ Similar to error spotting, but the candidate is given 4 replacements for an unde
 
 ---
 
-# PART 11 — CLOZE TEST
+# PART 11 — CLOZE TEST {#part-11}
 
 ## 11.0 Opener
 
@@ -335,7 +1585,7 @@ Passage with 5-10 blanks. Options per blank.
 
 ---
 
-# PART 12 — READING COMPREHENSION (RC)
+# PART 12 — READING COMPREHENSION (RC) {#part-12}
 
 ## 12.0 Opener
 
@@ -359,7 +1609,7 @@ Passage with 5-10 blanks. Options per blank.
 
 ---
 
-# PART 13 — PARA-JUMBLES (SENTENCE REARRANGEMENT)
+# PART 13 — PARA-JUMBLES (SENTENCE REARRANGEMENT) {#part-13}
 
 ## 13.0 Opener
 
@@ -375,7 +1625,7 @@ Common traps: a pronoun in Sentence B must follow its antecedent in Sentence A.
 
 ---
 
-# PART 14 — FILL IN THE BLANKS
+# PART 14 — FILL IN THE BLANKS {#part-14}
 
 Single-blank, double-blank, triple-blank variants. Grammar- or vocab-driven.
 
@@ -383,7 +1633,7 @@ Single-blank, double-blank, triple-blank variants. Grammar- or vocab-driven.
 
 ---
 
-# PART 15 — VOCABULARY (Synonyms, Antonyms, Idioms, One-word Substitutions, Spellings)
+# PART 15 — VOCABULARY (Synonyms, Antonyms, Idioms, One-word Substitutions, Spellings) {#part-15}
 
 ## 15.0 Opener
 
@@ -435,7 +1685,7 @@ Single-blank, double-blank, triple-blank variants. Grammar- or vocab-driven.
 
 ---
 
-# PART 16 — DEEP-DRILL VOCABULARY ESSENTIALS (high-yield list)
+# PART 16 — DEEP-DRILL VOCABULARY ESSENTIALS (high-yield list) {#part-16}
 
 ## 16.1 Top-100 SSC + Banking SYNONYMS to drill (with one-line meaning)
 
@@ -993,7 +2243,7 @@ Collocations = words that naturally go together. Cloze tests check whether you k
 
 ---
 
-# PART 17 — BANKS-FOCUS DEEP DRILL (PO/Clerk/RRB Bank, IBPS+SBI+RBI)
+# PART 17 — BANKS-FOCUS DEEP DRILL (PO/Clerk/RRB Bank, IBPS+SBI+RBI) {#part-17}
 
 ## 17.1 What's different in Banking English
 
@@ -1117,7 +2367,7 @@ Negligible weight on: synonyms, antonyms, OWS, idiom-meaning (those are SSC heav
 
 ---
 
-# PART 18 — SSC + RRB FOCUS DEEP DRILL
+# PART 18 — SSC + RRB FOCUS DEEP DRILL {#part-18}
 
 ## 18.1 What's different
 
@@ -2030,7 +3280,7 @@ Options: (a) literally planted (b) initiated (c) cancelled (d) prevented.
 
 # Section 12 — NEW ADVANCED EXAM-PATTERN TYPES (2024-26)
 
-> **Why this section exists.** Modern Banks PO Mains (IBPS/SBI), SSC CGL Tier-2, and SBI Clerk Mains use NEW question patterns that did NOT exist 5 years ago. This section covers each new type with full step-by-step + variations.
+**Banks Mains / CGL Tier-2 pattern:** Long RC (350-500 words, 7-10 Qs), sentence rearrangement (PBCQA), paragraph completion, word-pair bridges, error spotting in longer sentences. Each type is drilled below with full step-by-step solutions.
 
 ---
 
@@ -2555,7 +3805,7 @@ Replace the bold phrase with the best option:
 
 \newpage
 
-# PART E — TIMED MINI-MOCK (25 Q · 25 min)
+# PART E — TIMED MINI-MOCK (25 Q · 25 min) {#part-e}
 
 1. Synonym of **CANDID**: (a) honest (b) hidden (c) careful (d) subtle
 2. Antonym of **OBSOLETE**: (a) modern (b) outdated (c) rare (d) ancient
@@ -2595,7 +3845,7 @@ Replace the bold phrase with the best option:
 
 ---
 
-# PART F — TRAP-RECOGNITION CARDS (English)
+# PART F — TRAP-RECOGNITION CARDS (English) {#part-f}
 
 | Trap | Where | How to spot |
 |---|---|---|

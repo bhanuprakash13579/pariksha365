@@ -7,7 +7,9 @@ date: "2026"
 
 # How to use this book
 
-This is the **only** book an AAO/AAO aspirant should need.
+**This is the only book an AAO / AAO aspirant should need.**
+
+The four rules below run through every chapter:
 
 | Rule | What it means in practice |
 |------|---------------------------|
@@ -89,7 +91,42 @@ A 95% target = **190/200** demands ≥96 correct out of 100 (with ≤2 wrongs). 
 
 \newpage
 
-# PART 0 — FOUNDATIONS YOU CANNOT SKIP
+---
+
+# How to read this book — your real study load
+
+**Total pages: 91.**
+
+This is a specialised exam-prep book. **Every page is essential** — including the worked-example drills, mini-mock and trap-cards near the end. Skipping any section costs you marks.
+
+Read end-to-end in order without skipping.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p5–6** | [PART 0](#part-0) | FOUNDATIONS YOU CANNOT SKIP |
+| **p7–9** | [Chapter 1](#chapter-1) | Fundamentals of Accounting & GAAP |
+| **p10–14** | [Chapter 2](#chapter-2) | Double Entry, Journal, Ledger & Trial Balance |
+| **p15–19** | [Chapter 3](#chapter-3) | Bank Reconciliation, Rectification of Errors & Bills of Exchange |
+| **p20–24** | [Chapter 4](#chapter-4) | Final Accounts: Trading, P&L, P&L Appropriation & Balance Sheet |
+| **p25–28** | [Chapter 5](#chapter-5) | Capital vs Revenue, Depreciation & Inventory Valuation |
+| **p29–32** | [Chapter 6](#chapter-6) | Non-Profit Organisations & Self-Balancing Ledgers |
+| **p33–36** | [Chapter 7](#chapter-7) | CAG of India + Finance Commission |
+| **p37–39** | [Chapter 8](#chapter-8) | Basic Concepts of Economics & Introduction to Microeconomics |
+| **p40–45** | [Chapter 9](#chapter-9) | Theory of Demand & Supply (incl. Elasticity, Consumer Behaviour) |
+| **p46–50** | [Chapter 10](#chapter-10) | Theory of Production & Cost |
+| **p51–55** | [Chapter 11](#chapter-11) | Forms of Market & Price Determination |
+| **p56–60** | [Chapter 12](#chapter-12) | Indian Economy |
+| **p61–63** | [Chapter 13](#chapter-13) | Economic Reforms in India (1991 onwards) |
+| **p64–69** | [Chapter 14](#chapter-14) | Money & Banking (RBI, Commercial Banks, Monetary Policy) |
+| **p70–75** | [Chapter 15](#chapter-15) | Fiscal Policy, Budget, FRBM Act & Balance of Payments |
+| **p76–91** | [Chapter 16](#chapter-16) | Role of Information Technology in Governance |
+
+---
+# PART 0 — FOUNDATIONS YOU CANNOT SKIP {#part-0}
 
 Before any topic you must master these 4 micro-skills. None is hard. Skipping one will cost you 8–12 marks.
 
@@ -166,7 +203,7 @@ $$
 
 \newpage
 
-# CHAPTER 1 — Fundamentals of Accounting & GAAP
+# CHAPTER 1 — Fundamentals of Accounting & GAAP {#chapter-1}
 
 **Importance:** ⭐⭐⭐⭐ HIGH (≈5 Qs / paper)
 **Difficulty:** Easy. Pure conceptual + factual.
@@ -378,7 +415,7 @@ GAAP = the umbrella of accounting concepts + conventions + accounting standards.
 
 \newpage
 
-# CHAPTER 2 — Double Entry, Journal, Ledger & Trial Balance
+# CHAPTER 2 — Double Entry, Journal, Ledger & Trial Balance {#chapter-2}
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈8 Qs / paper)
 **Difficulty:** Easy-Medium. Master the debit-credit rule and you score full.
@@ -520,8 +557,11 @@ graph TD
 |------|-------------|------|-------------|------|-------------|------|-------------|
 
 **Balancing rule:**
-- If Dr side total > Cr side → "By Balance c/d" on Cr side; balance is **Debit balance**.
-- If Cr side total > Dr side → "To Balance c/d" on Dr side; balance is **Credit balance**.
+
+If Dr side total > Cr side → "By Balance c/d" on Cr side; balance is **Debit balance**.
+
+If Cr side total > Dr side → "To Balance c/d" on Dr side; balance is **Credit balance**.
+
 
 | Account | Normal balance |
 |---------|---------------|
@@ -648,7 +688,7 @@ graph TD
 
 \newpage
 
-# CHAPTER 3 — Bank Reconciliation, Rectification of Errors & Bills of Exchange
+# CHAPTER 3 — Bank Reconciliation, Rectification of Errors & Bills of Exchange {#chapter-3}
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈6 Qs / paper)
 **Difficulty:** Medium. Mechanical once you know the direction of adjustment.
@@ -744,9 +784,13 @@ When starting from **Cash Book balance (Dr / favourable)** and reaching **Pass B
 | Cheque dishonoured (already credited in cash book) | Pass book lower | **Subtract** |
 
 **Rule of thumb:**
-- **Add** items that **increase pass book balance** vs cash book.
-- **Subtract** items that **decrease pass book balance** vs cash book.
-- (Reverse all signs if starting from pass book balance.)
+
+**Add** items that **increase pass book balance** vs cash book.
+
+**Subtract** items that **decrease pass book balance** vs cash book.
+
+(Reverse all signs if starting from pass book balance.)
+
 
 ### Format
 
@@ -899,7 +943,7 @@ Use **Profit & Loss Adjustment A/c** + Suspense.
 
 \newpage
 
-# CHAPTER 4 — Final Accounts: Trading, P&L, P&L Appropriation & Balance Sheet
+# CHAPTER 4 — Final Accounts: Trading, P&L, P&L Appropriation & Balance Sheet {#chapter-4}
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈9 Qs / paper)
 **Difficulty:** Medium. The most important chapter in Part A. Master adjustments and you score full.
@@ -1156,7 +1200,7 @@ $$
 
 \newpage
 
-# CHAPTER 5 — Capital vs Revenue, Depreciation & Inventory Valuation
+# CHAPTER 5 — Capital vs Revenue, Depreciation & Inventory Valuation {#chapter-5}
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈7 Qs / paper)
 **Difficulty:** Medium. Definition + small computation. Memorise depreciation methods and FIFO/LIFO.
@@ -1423,7 +1467,7 @@ NRV = Estimated selling price − cost to complete and sell.
 
 \newpage
 
-# CHAPTER 6 — Non-Profit Organisations & Self-Balancing Ledgers
+# CHAPTER 6 — Non-Profit Organisations & Self-Balancing Ledgers {#chapter-6}
 
 **Importance:** ⭐⭐⭐ MEDIUM (≈5 Qs / paper)
 **Difficulty:** Easy-Medium. Mechanical conversion + 2-3 facts about self-balancing ledgers.
@@ -1613,7 +1657,7 @@ Each sub-ledger has an **Adjustment Account** (also called **Control Account**) 
 
 \newpage
 
-# CHAPTER 7 — CAG of India + Finance Commission
+# CHAPTER 7 — CAG of India + Finance Commission {#chapter-7}
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈6 Qs / paper)
 **Difficulty:** Easy. Pure factual + constitutional. Score full marks here.
@@ -1835,7 +1879,7 @@ The CAG's independence is constitutionally guaranteed precisely because the gove
 
 \newpage
 
-# CHAPTER 8 — Basic Concepts of Economics & Introduction to Microeconomics
+# CHAPTER 8 — Basic Concepts of Economics & Introduction to Microeconomics {#chapter-8}
 
 **Importance:** ⭐⭐⭐ MEDIUM (≈4 Qs / paper)
 **Difficulty:** Easy. Definitions + central problems.
@@ -1863,25 +1907,59 @@ Lionel Robbins' classic definition (1932): *"The science which studies human beh
 
 **Production Possibility Frontier (PPF) — the opportunity cost diagram:**
 
-```
-Good Y (e.g., Healthcare)
-│
-│A ●
-│  \
-│   \     Points on curve: efficient
-│    \
-│     ●C (inside: inefficient, resources wasted)
-│      \
-│       ● D (outside: currently unattainable)
-│        \
-│         ●B
-└──────────────── Good X (e.g., Defence)
-```
+<div style="text-align:center; margin:12pt 0;">
+<svg width="340" height="300" viewBox="0 0 340 300" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
+
+  <!-- axes -->
+  <line x1="50" y1="20" x2="50"  y2="255" stroke="#374151" stroke-width="1.5"/>
+  <line x1="50" y1="255" x2="305" y2="255" stroke="#374151" stroke-width="1.5"/>
+  <!-- arrowheads -->
+  <polygon points="46,20 50,10 54,20" fill="#374151"/>
+  <polygon points="295,251 305,255 295,259" fill="#374151"/>
+  <!-- axis labels -->
+  <text x="44" y="140" text-anchor="middle" fill="#374151" font-weight="bold" transform="rotate(-90,44,140)">Good Y (Healthcare)</text>
+  <text x="177" y="278" text-anchor="middle" fill="#374151" font-weight="bold">Good X (Defence)</text>
+
+  <!-- PPF curve: concave-to-origin arc from A(top) to B(right) -->
+  <path d="M 50,35 C 52,80 70,140 130,195 C 170,228 215,248 295,255"
+        fill="none" stroke="#2563eb" stroke-width="2.5"/>
+
+  <!-- Shaded interior region (unattainable side not shaded; attainable interior shaded lightly) -->
+  <path d="M 50,35 C 52,80 70,140 130,195 C 170,228 215,248 295,255 L 295,255 L 50,255 Z"
+        fill="#dbeafe" opacity="0.25"/>
+
+  <!-- Point A — on curve, top (efficient) -->
+  <circle cx="50" cy="70" r="5" fill="#2563eb"/>
+  <text x="58" y="68" fill="#2563eb" font-weight="bold">A</text>
+  <text x="58" y="80" fill="#2563eb" font-size="8">(efficient, on curve)</text>
+
+  <!-- Point B — on curve, right (efficient) -->
+  <circle cx="256" cy="252" r="5" fill="#2563eb"/>
+  <text x="262" y="248" fill="#2563eb" font-weight="bold">B</text>
+
+  <!-- Point C — inside curve (inefficient) -->
+  <circle cx="140" cy="210" r="5" fill="#d97706"/>
+  <text x="148" y="208" fill="#d97706" font-weight="bold">C</text>
+  <text x="148" y="220" fill="#d97706" font-size="8">inefficient</text>
+  <text x="148" y="231" fill="#d97706" font-size="8">(resources wasted)</text>
+
+  <!-- Point D — outside curve (unattainable) -->
+  <circle cx="200" cy="130" r="5" fill="#dc2626"/>
+  <text x="208" y="128" fill="#dc2626" font-weight="bold">D</text>
+  <text x="208" y="140" fill="#dc2626" font-size="8">unattainable</text>
+  <text x="208" y="151" fill="#dc2626" font-size="8">(needs growth)</text>
+
+</svg>
+</div>
 
 - **Movement along PPF (A→B):** More defence, less healthcare — opportunity cost of defence is healthcare forgone.
-- **Point inside PPF:** Resources wasted (unemployment, inefficiency).
-- **Point outside PPF:** Impossible with current resources — becomes possible only with economic growth (PPF shifts outward).
-- **Outward shift of PPF:** Caused by technological improvement, increase in resources, better education/skills.
+
+**Point inside PPF:** Resources wasted (unemployment, inefficiency).
+
+**Point outside PPF:** Impossible with current resources — becomes possible only with economic growth (PPF shifts outward).
+
+**Outward shift of PPF:** Caused by technological improvement, increase in resources, better education/skills.
+
 
 **Economic systems — three main types:**
 
@@ -2048,7 +2126,7 @@ In production: To produce 1 more unit of guns on the PPC, the economy must sacri
 
 \newpage
 
-# CHAPTER 9 — Theory of Demand & Supply (incl. Elasticity, Consumer Behaviour)
+# CHAPTER 9 — Theory of Demand & Supply (incl. Elasticity, Consumer Behaviour) {#chapter-9}
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈8 Qs / paper)
 **Difficulty:** Medium. Most-tested chapter in Part B.
@@ -2075,6 +2153,35 @@ Both effects push demand down when price rises — hence the downward-sloping de
 **Why does the supply curve slope upward?** A higher price makes production more profitable → existing producers expand output → new producers enter → total quantity supplied rises. Hence the direct (positive) relationship between price and quantity supplied.
 
 **Equilibrium** is where supply meets demand. At the equilibrium price: quantity demanded = quantity supplied. No surplus (excess supply), no shortage (excess demand). Price adjusts automatically: surplus → price falls → demand rises, supply falls, until equilibrium restored; shortage → price rises → demand falls, supply rises, until restored.
+
+<div style="text-align:center; margin:12pt 0;">
+<svg width="380" height="280" viewBox="0 0 380 280" xmlns="http://www.w3.org/2000/svg" font-family="DejaVu Sans, sans-serif" font-size="10">
+  <line x1="55" y1="15"  x2="55"  y2="240" stroke="#374151" stroke-width="1.5"/>
+  <line x1="55" y1="240" x2="350" y2="240" stroke="#374151" stroke-width="1.5"/>
+  <polygon points="51,15 55,5 59,15" fill="#374151"/>
+  <polygon points="340,236 350,240 340,244" fill="#374151"/>
+  <text x="48"  y="130" text-anchor="middle" fill="#374151" font-weight="bold" transform="rotate(-90,48,130)">Price (P)</text>
+  <text x="200" y="258" text-anchor="middle" fill="#374151" font-weight="bold">Quantity (Q)</text>
+  <!-- Demand curve — downward sloping -->
+  <path d="M 75,40 C 100,60 150,120 200,165 C 240,200 290,228 330,238"
+        fill="none" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="335" y="240" fill="#dc2626" font-weight="bold">D</text>
+  <!-- Supply curve — upward sloping -->
+  <path d="M 75,238 C 100,210 150,160 200,120 C 240,88 290,55 330,35"
+        fill="none" stroke="#15803d" stroke-width="2.5"/>
+  <text x="335" y="35" fill="#15803d" font-weight="bold">S</text>
+  <!-- Equilibrium E -->
+  <circle cx="200" cy="163" r="5" fill="#1d4ed8" stroke="white" stroke-width="1.5"/>
+  <text x="210" y="158" fill="#1d4ed8" font-weight="bold">E</text>
+  <line x1="55"  y1="163" x2="200" y2="163" stroke="#1d4ed8" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="200" y1="163" x2="200" y2="240" stroke="#1d4ed8" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="50"  y="167" text-anchor="end"    fill="#1d4ed8" font-weight="bold">P*</text>
+  <text x="200" y="255" text-anchor="middle" fill="#1d4ed8" font-weight="bold">Q*</text>
+  <rect x="55" y="5" width="145" height="32" rx="3" fill="#f0f9ff" stroke="#0284c7" stroke-width="1"/>
+  <text x="127" y="19" text-anchor="middle" fill="#0369a1" font-size="9">D slopes down: ↓P → ↑Q demanded</text>
+  <text x="127" y="31" text-anchor="middle" fill="#0369a1" font-size="9">S slopes up: ↑P → ↑Q supplied</text>
+</svg>
+</div>
 
 </div>
 
@@ -2380,7 +2487,7 @@ Same numerical types as demand: 0 (perfectly inelastic, vertical), < 1, = 1, > 1
 
 \newpage
 
-# CHAPTER 10 — Theory of Production & Cost
+# CHAPTER 10 — Theory of Production & Cost {#chapter-10}
 
 **Importance:** ⭐⭐⭐⭐ HIGH (≈6 Qs / paper)
 **Difficulty:** Medium. Memorise the 3 laws and the 7 cost concepts.
@@ -2496,9 +2603,13 @@ FC = ₹10,000. VC at Q=100 is ₹5,000. Find TC, AC, AFC, AVC at Q=100. Also, V
 | **III — Negative returns** | TP falls | MP becomes negative | Avoid — adding input reduces output |
 
 The producer always operates in **Stage II** because:
-- Stage I → variable factor is underused (could add more)
-- Stage III → variable factor is overused (causes loss)
-- Stage II → optimal balance
+
+Stage I → variable factor is underused (could add more)
+
+Stage III → variable factor is overused (causes loss)
+
+Stage II → optimal balance
+
 
 ## 10.5 Returns to Scale (Long-run, all inputs vary)
 
@@ -2658,7 +2769,7 @@ Causes of DRS: managerial limits, coordination problems.
 
 \newpage
 
-# CHAPTER 11 — Forms of Market & Price Determination
+# CHAPTER 11 — Forms of Market & Price Determination {#chapter-11}
 
 **Importance:** ⭐⭐⭐⭐ HIGH (≈6 Qs / paper)
 **Difficulty:** Medium. Master the four market structures and you score full.
@@ -2821,10 +2932,15 @@ The kink at the prevailing price → MR curve has a **discontinuity** → MC can
 ### Other oligopoly models
 
 - **Cournot** (quantity competition)
-- **Bertrand** (price competition)
-- **Stackelberg** (leader-follower)
-- **Cartel** (joint profit max — like OPEC)
-- **Price leadership** (dominant firm sets price; others follow)
+
+**Bertrand** (price competition)
+
+**Stackelberg** (leader-follower)
+
+**Cartel** (joint profit max — like OPEC)
+
+**Price leadership** (dominant firm sets price; others follow)
+
 
 ## 11.7 Worked PYQ-style examples
 
@@ -2925,7 +3041,7 @@ The kink at the prevailing price → MR curve has a **discontinuity** → MC can
 
 \newpage
 
-# CHAPTER 12 — Indian Economy
+# CHAPTER 12 — Indian Economy {#chapter-12}
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈8 Qs / paper)
 **Difficulty:** Easy-Medium. Heavy on facts and current-affairs-adjacent data. Memorise the depth tables.
@@ -3209,7 +3325,7 @@ India target: **500 GW non-fossil capacity by 2030** (Net-Zero by 2070, COP-26 c
 
 \newpage
 
-# CHAPTER 13 — Economic Reforms in India (1991 onwards)
+# CHAPTER 13 — Economic Reforms in India (1991 onwards) {#chapter-13}
 
 **Importance:** ⭐⭐⭐⭐ HIGH (≈4 Qs / paper)
 **Difficulty:** Easy. Pure factual.
@@ -3243,11 +3359,17 @@ By May–June 1991, India's foreign exchange reserves had fallen to barely USD 1
 | **Globalisation** | Opened economy to foreign trade and capital | Rupee made convertible on current account; FII investment allowed in stock markets; WTO membership |
 
 **Results of 1991 reforms (asked frequently):**
-- GDP growth rate rose: 5-6% in 1980s → 6-8% in 1990s-2000s → 7-8%+ in 2000s
-- Foreign exchange reserves rose from near-zero (1991) to USD 700+ billion (2024)
-- IT and services sector boom (BPO, software exports) — enabled by telecom liberalisation
-- Poverty rate fell significantly (though debate continues on methods)
-- Inequality increased (Gini coefficient rose); urban-rural gap widened
+
+GDP growth rate rose: 5-6% in 1980s → 6-8% in 1990s-2000s → 7-8%+ in 2000s
+
+Foreign exchange reserves rose from near-zero (1991) to USD 700+ billion (2024)
+
+IT and services sector boom (BPO, software exports) — enabled by telecom liberalisation
+
+Poverty rate fell significantly (though debate continues on methods)
+
+Inequality increased (Gini coefficient rose); urban-rural gap widened
+
 
 ## 13.1 Examiner mindset
 
@@ -3401,7 +3523,7 @@ By May–June 1991, India's foreign exchange reserves had fallen to barely USD 1
 
 \newpage
 
-# CHAPTER 14 — Money & Banking (RBI, Commercial Banks, Monetary Policy)
+# CHAPTER 14 — Money & Banking (RBI, Commercial Banks, Monetary Policy) {#chapter-14}
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈7 Qs / paper)
 **Difficulty:** Medium. Heavy on facts (RBI tools, governors, dates).
@@ -3715,7 +3837,7 @@ If primary deposit = ₹1000 and CRR = 10 %, banks can create deposits up to ₹
 
 \newpage
 
-# CHAPTER 15 — Fiscal Policy, Budget, FRBM Act & Balance of Payments
+# CHAPTER 15 — Fiscal Policy, Budget, FRBM Act & Balance of Payments {#chapter-15}
 
 **Importance:** ⭐⭐⭐⭐⭐ CRITICAL (≈7 Qs / paper)
 **Difficulty:** Medium. Definition + computation. Always 2 questions on deficits.
@@ -3759,9 +3881,13 @@ $$\text{Monetised Deficit (formerly)} = \text{amount borrowed from RBI (money pr
 | **Capital budget** | Borrowings, disinvestment, recoveries of loans; create obligations | Infrastructure spending, loans to states, repayment of old loans; create assets |
 
 **FRBM Act (Fiscal Responsibility and Budget Management Act, 2003):**
-- Aims to eliminate **revenue deficit** and reduce **fiscal deficit** to 3% of GDP.
-- Requires the government to present a Fiscal Policy Strategy Statement with the budget.
-- Has been amended multiple times — targets relaxed post-COVID (India's FD was ≈ 6.4% in FY21). Currently converging back toward 4.9% (FY25 revised estimate).
+
+Aims to eliminate **revenue deficit** and reduce **fiscal deficit** to 3% of GDP.
+
+Requires the government to present a Fiscal Policy Strategy Statement with the budget.
+
+Has been amended multiple times — targets relaxed post-COVID (India's FD was ≈ 6.4% in FY21). Currently converging back toward 4.9% (FY25 revised estimate).
+
 
 **Balance of Payments (BoP):**
 
@@ -4054,7 +4180,7 @@ GST slabs: 0 %, 5 %, 12 %, 18 %, 28 % (+ cess on demerit goods).
 
 \newpage
 
-# CHAPTER 16 — Role of Information Technology in Governance
+# CHAPTER 16 — Role of Information Technology in Governance {#chapter-16}
 
 **Importance:** ⭐⭐⭐ MEDIUM (≈4 Qs / paper)
 **Difficulty:** Easy. Pure factual.

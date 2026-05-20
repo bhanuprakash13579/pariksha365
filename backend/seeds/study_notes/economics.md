@@ -9,23 +9,25 @@ date: "2026"
 
 <div class="examtip">
 
-Economics questions in competitive exams are almost never conceptual — they are factual. Examiners test whether you know specific years, numbers, chairpersons, and institutional details. Here is what they repeatedly test:
+**Economics in competitive exams is almost never conceptual — it is factual.**
 
-**1. Five-Year Plans** — which plan had the Mahalanobis model? Which was the last? What year did NITI Aayog replace the Planning Commission?
+Examiners test specific years, numbers, chairpersons, institutional details. Here is what they repeatedly test:
 
-**2. RBI facts** — founding year, nationalisation year, first Indian governor, current repo rate.
+- **1. Five-Year Plans** — Mahalanobis model in which plan? Which was the last? When did NITI Aayog replace the Planning Commission?
 
-**3. Finance Commissions** — which FC gave states 42%? Who chaired the 16th FC?
+- **2. RBI facts** — founding year, nationalisation year, first Indian governor, current repo rate.
 
-**4. GST** — launch date, number of slabs, constitutional amendment number, what's outside GST.
+- **3. Finance Commissions** — which FC gave states 42%? Who chairs the 16th FC?
 
-**5. Bank nationalisation** — how many banks in 1969, how many in 1980.
+- **4. GST** — launch date, number of slabs, constitutional amendment number, what's outside GST.
 
-**6. Key schemes** — PM-KISAN, PMJDY, Ayushman Bharat: year launched and what they do.
+- **5. Bank nationalisation** — how many banks in 1969? How many in 1980?
 
-**7. Economic indices** — India's HDI rank, GII rank, forex reserves rank.
+- **6. Key schemes** — PM-KISAN, PMJDY, Ayushman Bharat: year launched and what they do.
 
-Do not spend excessive time on theory. Know these specific numbers and dates.
+- **7. Economic indices** — India's HDI rank, GII rank, forex reserves rank.
+
+**Do NOT spend time on theory.** Know these specific numbers and dates.
 
 </div>
 
@@ -49,15 +51,61 @@ Do not spend excessive time on theory. Know these specific numbers and dates.
 
 \newpage
 
-# PART A — BASICS
+---
+
+# How to read this book — your real study load
+
+**Total pages: 29.** Don't let the page count scare you.
+
+### Mandatory reading — pages 1 to 22 (76% of the book)
+
+That's the full syllabus. Master those 22 pages and you've covered every concept an examiner can fairly ask.
+
+### Bonus material — pages 23 to 29 (24% of the book)
+
+Reference tables, compilations, and self-test material — useful in your last week of revision OR if you're aiming for a top rank.
+
+### Two study tracks
+
+- **Just want to pass?** Read pages 1–22. Skim the appendices once before the exam.
+
+- **Want to top your batch?** Read the appendices too — they're how 70% becomes 90%.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p4–5** | [PART A](#part-a) | BASICS |
+| **p6–7** | [PART B](#part-b) | NATIONAL INCOME |
+| **p8–11** | [PART C](#part-c) | MONEY AND BANKING |
+| **p12–14** | [PART D](#part-d) | FISCAL POLICY |
+| **p15–17** | [PART E](#part-e) | PLANNING AND DEVELOPMENT |
+| **p18–19** | [PART F](#part-f) | EXTERNAL SECTOR |
+| **p20–22** | [PART G](#part-g) | AGRICULTURE AND KEY SCHEMES |
+| **p23–24** | [PART X](#part-x) | BANKING AWARENESS (For IBPS/SBI Candidates) — *Banking Awareness — for IBPS/SBI/RBI Banks aspirants.* |
+| **p25** | [PART AA](#part-aa) | ALL FIVE-YEAR PLANS (Summary Table) — *All Five-Year Plans — focus + outcome for each plan.* |
+| **p26** | [PART AB](#part-ab) | POVERTY, EMPLOYMENT, INDICES (Detailed) — *Poverty, Employment, Indices — HDI, GII, MPI committees.* |
+| **p27–29** | [PART AC](#part-ac) | KEY ECONOMIC TERMS — *Key Economic Terms — quick-reference glossary.* |
+
+---
+# PART A — BASICS {#part-a}
 
 ## Chapter 1 — Economic Systems and Sectors
 
-Economics is the study of how societies allocate **scarce resources** for **unlimited wants**. Defined by Lionel Robbins (1932): "the science which studies human behaviour as a relationship between ends and scarce means which have alternative uses."
+**What is economics?**
 
-Three fundamental questions every economy must answer:
+- The study of how societies allocate **scarce resources** for **unlimited wants**.
+
+- **Lionel Robbins (1932)** — "the science which studies human behaviour as a relationship between ends and scarce means which have alternative uses."
+
+**Three fundamental questions every economy must answer:**
+
 1. **What** to produce?
+
 2. **How** to produce?
+
 3. **For whom** to produce?
 
 ### Economic Systems
@@ -68,15 +116,84 @@ Three fundamental questions every economy must answer:
 | Command / Socialist | State central planning | Former USSR, North Korea | Equality; public goods; inefficient |
 | **Mixed** | State + market together | **India**, France | Balance of both; complex |
 
-India is a **mixed economy** — post-1991 LPG reforms increased the market share but the state remains crucial in infrastructure, social welfare, and defence.
+**India is a mixed economy:**
+
+- Post-**1991 LPG reforms** increased the market share.
+
+- The state remains crucial in **infrastructure, social welfare, defence**.
 
 ### Three Sectors by Nature of Activity
 
 - **Primary** — agriculture, fishing, mining, forestry (extraction from nature).
+
 - **Secondary** — manufacturing, industry, construction.
+
 - **Tertiary** — services: IT, banking, health, education, transport, trade.
 
-India's GDP composition: Primary ~17%, Secondary ~27%, Tertiary ~56%. But the primary sector still employs ~46% of the workforce — a massive productivity gap.
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 300" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="270" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">India — 3-Sector Economy (GDP vs Workforce)</text>
+
+<!-- GDP Pie chart (left) -->
+<text x="135" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">GDP Share (~2024)</text>
+
+<!-- Tertiary 56% slice (0° to 201.6°), clockwise from top — large-arc=1 -->
+<path d="M 135,160 L 135,75 A 85,85 0 1,1 103.7,239.0 Z" fill="#42a5f5" stroke="white" stroke-width="2"/>
+<!-- Secondary 27% slice (201.6° to 298.8°) -->
+<path d="M 135,160 L 103.7,239.0 A 85,85 0 0,1 60.5,119.1 Z" fill="#ef9a9a" stroke="white" stroke-width="2"/>
+<!-- Primary 17% slice (298.8° to 360°) -->
+<path d="M 135,160 L 60.5,119.1 A 85,85 0 0,1 135,75 Z" fill="#a5d6a7" stroke="white" stroke-width="2"/>
+
+<!-- Pie labels (positioned at slice centroids) -->
+<text x="180" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Tertiary</text>
+<text x="180" y="170" text-anchor="middle" font-size="11" font-weight="bold" fill="white">56%</text>
+<text x="85" y="200" text-anchor="middle" font-size="10" font-weight="bold" fill="white">Sec.</text>
+<text x="85" y="215" text-anchor="middle" font-size="10" font-weight="bold" fill="white">27%</text>
+<text x="105" y="110" text-anchor="middle" font-size="10" font-weight="bold" fill="white">Pri.</text>
+<text x="105" y="124" text-anchor="middle" font-size="10" font-weight="bold" fill="white">17%</text>
+
+<!-- Workforce Pie (right) -->
+<text x="405" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Workforce Share</text>
+
+<!-- Primary 46% slice (0° to 165.6°) -->
+<path d="M 405,160 L 405,75 A 85,85 0 0,1 426.1,242.3 Z" fill="#a5d6a7" stroke="white" stroke-width="2"/>
+<!-- Secondary 25% slice (165.6° to 255.6°) -->
+<path d="M 405,160 L 426.1,242.3 A 85,85 0 0,1 322.7,181.1 Z" fill="#ef9a9a" stroke="white" stroke-width="2"/>
+<!-- Tertiary 29% slice (255.6° to 360°) -->
+<path d="M 405,160 L 322.7,181.1 A 85,85 0 0,1 405,75 Z" fill="#42a5f5" stroke="white" stroke-width="2"/>
+
+<text x="450" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="white">Primary</text>
+<text x="455" y="170" text-anchor="middle" font-size="11" font-weight="bold" fill="white">46%</text>
+<text x="380" y="218" text-anchor="middle" font-size="10" font-weight="bold" fill="white">Sec.</text>
+<text x="380" y="232" text-anchor="middle" font-size="10" font-weight="bold" fill="white">25%</text>
+<text x="358" y="135" text-anchor="middle" font-size="10" font-weight="bold" fill="white">Tert.</text>
+<text x="358" y="148" text-anchor="middle" font-size="10" font-weight="bold" fill="white">29%</text>
+
+<!-- Legend -->
+<rect x="20" y="260" width="500" height="32" rx="4" fill="#fffde7" stroke="#f9a825"/>
+<rect x="30" y="269" width="14" height="14" fill="#a5d6a7"/>
+<text x="48" y="280" font-size="10" fill="#333">Primary (agriculture, mining)</text>
+<rect x="200" y="269" width="14" height="14" fill="#ef9a9a"/>
+<text x="218" y="280" font-size="10" fill="#333">Secondary (mfg, construction)</text>
+<rect x="370" y="269" width="14" height="14" fill="#42a5f5"/>
+<text x="388" y="280" font-size="10" fill="#333">Tertiary (services, IT)</text>
+
+</svg>
+
+</div>
+
+**The productivity gap (very high-yield exam fact):**
+
+- Primary sector employs **~46% of the workforce**.
+
+- But it produces only **~17% of GDP**.
+
+- Services produce **~56% of GDP** with just **~29% of workers**.
+
+- This gap = India's **disguised unemployment** problem.
 
 <div class="keypoint">
 
@@ -88,7 +205,7 @@ The informal (unorganised) sector employs about **85% of India's workforce** but
 
 \newpage
 
-# PART B — NATIONAL INCOME
+# PART B — NATIONAL INCOME {#part-b}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -112,7 +229,13 @@ flowchart TD
 
 ## Chapter 2 — GDP, GNP, and National Income
 
-Simon Kuznets (Nobel 1971) developed the modern framework of national income accounting in the 1930s. In India, V.K.R.V. Rao produced the first national income estimate in 1931 (for 1925–29). The National Income Committee under P.C. Mahalanobis (1949) set up the official measurement system.
+**The founders of national-income accounting:**
+
+- **Simon Kuznets** (Nobel 1971) — built the modern framework in the **1930s**.
+
+- **V.K.R.V. Rao** — produced India's first national-income estimate in **1931** (for 1925–29).
+
+- **National Income Committee** under **P.C. Mahalanobis (1949)** set up India's official system.
 
 ### The Key Concepts
 
@@ -153,7 +276,7 @@ India's GDP by PPP (Purchasing Power Parity) makes it the **3rd largest economy 
 
 \newpage
 
-# PART C — MONEY AND BANKING
+# PART C — MONEY AND BANKING {#part-c}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -340,7 +463,7 @@ RBI targets **CPI inflation** at 4% ± 2% (the 2–6% band). RBI does NOT target
 
 \newpage
 
-# PART D — FISCAL POLICY
+# PART D — FISCAL POLICY {#part-d}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -475,7 +598,7 @@ The 14th Finance Commission under Y.V. Reddy is historically significant for jum
 
 \newpage
 
-# PART E — PLANNING AND DEVELOPMENT
+# PART E — PLANNING AND DEVELOPMENT {#part-e}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -600,7 +723,7 @@ HDI was conceived by **Mahbub ul Haq** and **Amartya Sen** (1990). It has three 
 
 \newpage
 
-# PART F — EXTERNAL SECTOR
+# PART F — EXTERNAL SECTOR {#part-f}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -689,7 +812,7 @@ flowchart TD
 
 \newpage
 
-# PART G — AGRICULTURE AND KEY SCHEMES
+# PART G — AGRICULTURE AND KEY SCHEMES {#part-g}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -797,28 +920,19 @@ flowchart TD
 
 \newpage
 
-# PART X — BANKING AWARENESS (For IBPS/SBI Candidates)
+# PART X — BANKING AWARENESS (For IBPS/SBI Candidates) {#part-x}
 
-<div class="chapter-summary">
-<div class="mermaid">
-flowchart LR
-    R["KEY GOVERNMENT SCHEMES"]:::root
-    R --> HE["Health + Social"]:::key
-    R --> AG["Agriculture"]:::key
-    R --> EN["Energy + Environment"]:::key
-    R --> IN["Infrastructure + Finance"]:::key
-    HE --> H1["Ayushman Bharat PM-JAY: Rs 5 lakh/year<br>health cover; 50 crore beneficiaries (poorest 40%)"]:::key
-    HE --> H2["PMJAY: world's largest health insurance<br>Ujjwala Yojana: free LPG to BPL households<br>PM Awas Yojana: housing for all (rural + urban)"]:::key
-    AG --> A1["PM-KISAN: Rs 6000/year direct cash to farmers<br>MGNREGS: 100 days employment rural<br>PMFBY: crop insurance"]:::key
-    EN --> E1["PM Surya Ghar Muft Bijli: rooftop solar<br>1 crore households; 300 units free/month<br>National Solar Mission: 500 GW renewable by 2030"]:::key
-    IN --> I1["PMJDY: zero-balance bank accounts<br>PM Gati Shakti: multimodal infrastructure<br>Make in India (2014): boost manufacturing"]:::key
-    IN --> I2["Start-Up India (2016): ease of doing business<br>Digital India: internet + governance<br>Swachh Bharat Mission (2014): ODF + cleanliness"]:::key
-    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
-    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
-    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
-</div>
+Banking Awareness is tested in **IBPS PO / Clerk, SBI PO / Clerk, RRB PO / Office Assistant** and carries 30–50 marks in Mains. This part covers the RBI, commercial banks, payment systems, financial regulators, and key schemes — the complete set needed to clear any Banking Awareness section.
+
+<div class="keypoint">
+
+**Five must-know clusters for Banking Awareness:**
+1. **RBI** — functions, monetary policy tools, repo rate, SLR, CRR, OMO
+2. **Banking structure** — PSBs, SFBs, Payment Banks, Co-operative banks
+3. **Payment systems** — NEFT, RTGS, IMPS, UPI, NACH, BBPS
+4. **Financial regulators** — SEBI, IRDAI, PFRDA, NaBFID, FSDC
+5. **Government schemes** — PM-JDY, PM-KISAN, PM Mudra, Atal Pension Yojana
+
 </div>
 
 ## Monetary Aggregates
@@ -876,7 +990,7 @@ BHEL, BPCL, Coal India, GAIL, **HAL** (14th, added October 2024), HPCL, IOCL, NT
 
 \newpage
 
-# PART AA — ALL FIVE-YEAR PLANS (Summary Table)
+# PART AA — ALL FIVE-YEAR PLANS (Summary Table) {#part-aa}
 
 | Plan | Period | Model/Theme | Target | Achieved | Key Fact |
 |------|--------|------------|--------|---------|---------|
@@ -900,7 +1014,7 @@ BHEL, BPCL, Coal India, GAIL, **HAL** (14th, added October 2024), HPCL, IOCL, NT
 
 \newpage
 
-# PART AB — POVERTY, EMPLOYMENT, INDICES (Detailed)
+# PART AB — POVERTY, EMPLOYMENT, INDICES (Detailed) {#part-ab}
 
 ## Poverty Lines — Evolution
 
@@ -923,7 +1037,7 @@ BHEL, BPCL, Coal India, GAIL, **HAL** (14th, added October 2024), HPCL, IOCL, NT
 
 \newpage
 
-# PART AC — KEY ECONOMIC TERMS
+# PART AC — KEY ECONOMIC TERMS {#part-ac}
 
 - **Sensex** — Bombay Stock Exchange's benchmark index of 30 stocks; BSE founded 1875 (Asia's oldest stock exchange).
 - **Nifty 50** — NSE's benchmark index of 50 stocks; NSE founded 1992.

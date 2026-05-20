@@ -15,6 +15,7 @@ interface Section {
     id: string;
     name: string;
     marks_per_question: number;
+    time_limit_minutes?: number | null;
     questions: Question[];
 }
 
@@ -59,6 +60,19 @@ export const MockTestInterface = () => {
     const [isPaused, setIsPaused] = useState(false);
     const [showMobilePalette, setShowMobilePalette] = useState(false);
 
+    // Sectional timing — when true, the candidate is locked into the current
+    // section for that section's full duration (Bank PO style). When false,
+    // a single global timer runs and they can move freely (SSC style).
+    const [hasSectionalTiming, setHasSectionalTiming] = useState(false);
+    // Per-section remaining seconds. Index aligns with `sections`. Only used
+    // when `hasSectionalTiming` is true.
+    const [sectionTimeLeft, setSectionTimeLeft] = useState<number[]>([]);
+    const sectionTimeLeftRef = useRef<number[]>([]);
+    // Set of section indices whose timer has hit zero. Used to lock those
+    // sections in the palette and auto-advance away from them.
+    const [lockedSections, setLockedSections] = useState<Set<number>>(new Set());
+    const SECTION_TIMER_KEY = 'pariksha365_section_timer';
+
     const pausedAtRef = useRef<number>(0);
     const timerStartRef = useRef<number>(Date.now());
 
@@ -99,6 +113,7 @@ export const MockTestInterface = () => {
             clearTimerState();
             localStorage.removeItem(VISITED_KEY);
             localStorage.removeItem(TIME_MAP_KEY);
+            localStorage.removeItem(SECTION_TIMER_KEY);
             navigate(`/results/${attemptId}`);
         } catch (err) {
             console.error("Failed to submit:", err);
@@ -139,9 +154,68 @@ export const MockTestInterface = () => {
                 }
 
                 setTestTitle(testData.title || 'Mock Test');
-                setNegMarking(testData.negative_marking || 0.25);
-                const durationSecs = (testData.sections?.reduce((sum: number, s: any) => sum + (s.time_limit_minutes || 0), 0) || 60) * 60;
+                setNegMarking(
+                    attemptRes.data.test_series?.negative_marking
+                    ?? testData.negative_marking
+                    ?? 0.25
+                );
+
+                // Real-exam timing precedence:
+                //   1. testData.total_duration_minutes (set by the loader from
+                //      the linked ExamPattern — most authoritative).
+                //   2. attempt.test_series.total_duration_minutes (echoed
+                //      back by the backend in case the CDN JSON is stale).
+                //   3. Sum of section.time_limit_minutes (legacy fallback for
+                //      tests created before the pattern wiring).
+                //   4. 60 minutes — last-resort default so the timer never
+                //      starts at zero on a misconfigured test.
+                const sectionSumMinutes = (testData.sections || []).reduce(
+                    (sum: number, s: any) => sum + (Number(s.time_limit_minutes) || 0),
+                    0
+                );
+                const totalDurationMinutes =
+                    Number(testData.total_duration_minutes)
+                    || Number(attemptRes.data.test_series?.total_duration_minutes)
+                    || sectionSumMinutes
+                    || 60;
+                const durationSecs = totalDurationMinutes * 60;
+
+                const sectional = Boolean(
+                    testData.has_sectional_timing
+                    ?? attemptRes.data.test_series?.has_sectional_timing
+                    ?? false
+                );
+                setHasSectionalTiming(sectional);
                 setSections(testData.sections || []);
+
+                // Initialise per-section remaining seconds when sectional
+                // timing applies. Restore from localStorage if the user is
+                // resuming the same attempt (refresh / brief disconnect).
+                if (sectional) {
+                    const sects = testData.sections || [];
+                    let restored: number[] | null = null;
+                    try {
+                        const raw = localStorage.getItem(SECTION_TIMER_KEY);
+                        if (raw) {
+                            const parsed = JSON.parse(raw);
+                            if (parsed.attemptId === aid && Array.isArray(parsed.remaining)
+                                && parsed.remaining.length === sects.length) {
+                                restored = parsed.remaining;
+                            }
+                        }
+                    } catch (e) { console.error(e); }
+                    const fresh: number[] = sects.map((s: any) => Math.max(0, Number(s.time_limit_minutes || 0) * 60));
+                    const initial: number[] = restored ?? fresh;
+                    setSectionTimeLeft(initial);
+                    sectionTimeLeftRef.current = initial.slice();
+                    // Pre-mark zero-time sections as locked (e.g. if the user
+                    // returned after the timer had already elapsed).
+                    setLockedSections(new Set(
+                        initial
+                            .map((sec: number, i: number) => sec <= 0 ? i : -1)
+                            .filter((i: number) => i >= 0)
+                    ));
+                }
 
                 try {
                     const answersRes = await AttemptAPI.getAnswers(aid);
@@ -223,13 +297,64 @@ export const MockTestInterface = () => {
                     timerContainerRef.current.className = 'flex items-center gap-2 px-4 py-2 rounded-lg font-mono text-lg font-black tracking-wider bg-red-600/80 text-red-100 animate-pulse';
                 }
             }
+
+            // Sectional timing — also tick down the active section's clock.
+            // When it hits zero we lock that section, persist progress, and
+            // jump the user to the next unlocked section. The global timer
+            // continues independently (real Bank PO behaviour: section A's
+            // unused time does NOT roll over to section B).
+            if (hasSectionalTiming) {
+                const arr = sectionTimeLeftRef.current;
+                if (arr[currentSectionIdx] !== undefined && arr[currentSectionIdx] > 0) {
+                    arr[currentSectionIdx] = arr[currentSectionIdx] - 1;
+                    // Persist every 5s so refresh keeps state without burning IO.
+                    if (arr[currentSectionIdx] % 5 === 0) {
+                        try {
+                            localStorage.setItem(SECTION_TIMER_KEY, JSON.stringify({
+                                attemptId, remaining: arr,
+                            }));
+                        } catch { /* ignore */ }
+                    }
+                    if (arr[currentSectionIdx] <= 0) {
+                        // Persist immediately on lock — don't lose the moment.
+                        try {
+                            localStorage.setItem(SECTION_TIMER_KEY, JSON.stringify({
+                                attemptId, remaining: arr,
+                            }));
+                        } catch { /* ignore */ }
+                        const lockedIdx = currentSectionIdx;
+                        // Reflect into React state so the palette + section
+                        // tabs re-render as locked.
+                        setSectionTimeLeft(arr.slice());
+                        setLockedSections(prev => {
+                            const next = new Set(prev);
+                            next.add(lockedIdx);
+                            return next;
+                        });
+                        // Find the next unlocked section and jump there.
+                        let nextIdx = -1;
+                        for (let i = 0; i < arr.length; i++) {
+                            if (i !== lockedIdx && arr[i] > 0) { nextIdx = i; break; }
+                        }
+                        if (nextIdx >= 0) {
+                            setCurrentSectionIdx(nextIdx);
+                            setCurrentQuestionIdx(0);
+                        }
+                        // If every section is locked, end the test.
+                        if (nextIdx < 0) {
+                            timeLeftRef.current = 0;
+                        }
+                    }
+                }
+            }
+
             if (timeLeftRef.current <= 0) {
                 clearInterval(timer);
                 handleSubmit(true);
             }
         }, 1000);
         return () => clearInterval(timer);
-    }, [attemptId, isPaused, handleSubmit]);
+    }, [attemptId, isPaused, handleSubmit, hasSectionalTiming, currentSectionIdx]);
 
     // Auto-pause on tab switch or minimize to enforce exam integrity
     useEffect(() => {
@@ -378,6 +503,12 @@ export const MockTestInterface = () => {
 
 
     const jumpToQuestion = async (sIdx: number, qIdx: number) => {
+        // With sectional timing on, the candidate cannot jump out of the
+        // active section until its timer expires (matches Bank PO / SBI PO
+        // exam behaviour). Locked sections can never be revisited even
+        // without sectional-timing rules.
+        if (lockedSections.has(sIdx)) return;
+        if (hasSectionalTiming && sIdx !== currentSectionIdx) return;
         await flushTimeForCurrentQuestion();
         setCurrentSectionIdx(sIdx);
         setCurrentQuestionIdx(qIdx);
@@ -510,14 +641,40 @@ export const MockTestInterface = () => {
                     </div>
                 </div>
 
-                {/* Section tabs */}
+                {/* Section tabs. With sectional timing the user is locked to
+                    the current section until its timer expires, so clicks on
+                    other (unlocked-but-different) sections are blocked too —
+                    matching real exam behaviour where you cannot freely jump. */}
                 <div className="flex overflow-x-auto border-t border-slate-700 scrollbar-hide">
-                    {sections.map((section, idx) => (
-                        <button key={section.id} onClick={() => { setCurrentSectionIdx(idx); setCurrentQuestionIdx(0); }}
-                            className={`flex-none px-5 py-2.5 text-xs font-bold uppercase tracking-wide border-b-2 transition-colors ${idx === currentSectionIdx ? 'border-orange-500 text-orange-400 bg-slate-700/50' : 'border-transparent text-gray-400 hover:text-gray-300'}`}>
-                            {section.name}
-                        </button>
-                    ))}
+                    {sections.map((section, idx) => {
+                        const locked = lockedSections.has(idx);
+                        const sectionalLocked = hasSectionalTiming && idx !== currentSectionIdx;
+                        const remainingSecs = hasSectionalTiming ? (sectionTimeLeft[idx] ?? 0) : null;
+                        return (
+                            <button
+                                key={section.id}
+                                onClick={() => {
+                                    if (locked || sectionalLocked) return;
+                                    setCurrentSectionIdx(idx);
+                                    setCurrentQuestionIdx(0);
+                                }}
+                                disabled={locked || sectionalLocked}
+                                title={locked ? 'Section time expired — locked' : (sectionalLocked ? 'Sectional timing — finish current section first' : '')}
+                                className={`flex-none px-5 py-2.5 text-xs font-bold uppercase tracking-wide border-b-2 transition-colors flex items-center gap-2
+                                    ${idx === currentSectionIdx ? 'border-orange-500 text-orange-400 bg-slate-700/50' : 'border-transparent text-gray-400'}
+                                    ${(locked || sectionalLocked) ? 'opacity-40 cursor-not-allowed' : 'hover:text-gray-300'}
+                                `}
+                            >
+                                {locked && <span aria-hidden>🔒</span>}
+                                {section.name}
+                                {hasSectionalTiming && remainingSecs !== null && (
+                                    <span className={`ml-1 px-1.5 py-0.5 rounded text-[10px] font-mono ${remainingSecs < 60 ? 'bg-red-600/30 text-red-200' : 'bg-slate-900/60 text-gray-300'}`}>
+                                        {formatTime(remainingSecs)}
+                                    </span>
+                                )}
+                            </button>
+                        );
+                    })}
                 </div>
             </header>
 
@@ -525,6 +682,15 @@ export const MockTestInterface = () => {
             <div className="flex-1 flex overflow-hidden">
                 {/* Question Area */}
                 <main className="flex-1 overflow-y-auto pb-24 md:pb-4">
+                    {/* Sectional-timing notice. Surfaces the rule at the top of
+                        the question area so the student understands why
+                        switching sections is locked. */}
+                    {hasSectionalTiming && currentQuestion && (
+                        <div className="bg-amber-50 border-b border-amber-200 px-5 py-2 text-xs text-amber-800 flex items-center gap-2">
+                            <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" /></svg>
+                            <span><b>Sectional timing in effect.</b> Each section has its own timer — you can&apos;t switch sections until the current one expires.</span>
+                        </div>
+                    )}
                     {currentQuestion && (
                         <>
                             {/* Question meta bar */}

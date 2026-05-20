@@ -273,6 +273,64 @@ async def ensure_exam_stage_with_pattern(
     return stage
 
 
+async def replace_exam_pattern(
+    db: AsyncSession, *, stage_id: UUID, pattern: schema.ExamPatternCreate
+) -> ExamStage:
+    """Admin-facing replace-in-place for a stage's ExamPattern.
+
+    Validates the section sums first (raises 400 on inconsistency), then
+    drops any existing pattern for the stage and writes the new one with its
+    section_patterns. The stage's ``is_enabled`` and pricing are untouched —
+    timing is the only thing changing here. Returns the refreshed ExamStage
+    with its pattern eager-loaded so the response payload is complete.
+    """
+    validate_pattern_sums(pattern)
+
+    stmt = (
+        select(ExamStage)
+        .options(
+            selectinload(ExamStage.exam_pattern).selectinload(ExamPattern.section_patterns)
+        )
+        .where(ExamStage.id == stage_id)
+    )
+    stage = (await db.execute(stmt)).scalar_one_or_none()
+    if stage is None:
+        raise HTTPException(status_code=404, detail="Exam stage not found")
+
+    if stage.exam_pattern is not None:
+        await db.delete(stage.exam_pattern)
+        await db.flush()
+
+    ep = ExamPattern(
+        exam_stage_id=stage.id,
+        total_duration_minutes=pattern.total_duration_minutes,
+        total_questions=pattern.total_questions,
+        total_marks=pattern.total_marks,
+        negative_mark_per_wrong=pattern.negative_mark_per_wrong,
+        has_sectional_timing=pattern.has_sectional_timing,
+        notes=pattern.notes,
+    )
+    db.add(ep)
+    await db.flush()
+    for sp in pattern.section_patterns:
+        db.add(
+            SectionPattern(
+                exam_pattern_id=ep.id,
+                name=sp.name,
+                subject=sp.subject,
+                question_count=sp.question_count,
+                duration_minutes=sp.duration_minutes,
+                marks_per_question=sp.marks_per_question,
+                order=sp.order,
+            )
+        )
+    await db.commit()
+
+    # Re-load with eager pattern + sections for the response.
+    refreshed = (await db.execute(stmt)).scalar_one()
+    return refreshed
+
+
 def validate_pattern_sums(pattern: schema.ExamPatternCreate) -> None:
     """Guard against internally inconsistent patterns: ensure section Qs sum to
     ``total_questions``, and — when sectional timing is on — section durations

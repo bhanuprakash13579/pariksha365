@@ -9,19 +9,21 @@ date: "2026"
 
 <div class="examtip">
 
-Environment & Ecology is one of the most rewarding GA topics if you study it systematically — because examiners repeat the same themes year after year. Here is how they think:
+**Environment & Ecology is one of the most rewarding GA topics** — examiners repeat the same themes year after year.
 
-**1. Conventions and treaties with years** — "Ramsar Convention year?", "When was the Montreal Protocol?", "What is COP-28 known for?" — these appear in every SSC CGL paper.
+**Here's how they think:**
 
-**2. Protected areas — the "first" and "only" facts** — India's first National Park, the only floating NP, the only Asiatic lion habitat, the latest tiger reserve. These appear in every paper.
+- **1. Conventions and treaties with years** — "Ramsar Convention year?", "Montreal Protocol?", "COP-28?" Every SSC CGL paper.
 
-**3. National symbols and conservation projects** — National animal, aquatic animal, heritage animal; Project Tiger vs Project Elephant vs Project Cheetah. Clean 1-2 marks every paper.
+- **2. Protected areas — "first" and "only" facts** — India's first NP, only floating NP, only Asiatic lion habitat, latest tiger reserve. Every paper.
 
-**4. Laws and Acts with years** — EPA 1986, Wildlife Protection Act 1972, Forest Rights Act 2006, NGT Act 2010. The year is almost always part of the question.
+- **3. National symbols + conservation projects** — National animal, aquatic animal, heritage animal; Project Tiger vs Elephant vs Cheetah. 1–2 marks every paper.
 
-**5. India's climate commitments** — Net-zero year (2070), non-fossil target (50% by 2030), PANCHAMRIT (5 points from Glasgow 2021).
+- **4. Laws + Acts with years** — EPA 1986, WLPA 1972, Forest Rights Act 2006, NGT Act 2010. Year is almost always part of the question.
 
-Everything else — biogeochemical cycles, IUCN categories, biodiversity hotspots, pollution parameters — appears occasionally. This book covers all of them, but focus your revision in the order listed above.
+- **5. India's climate commitments** — Net-zero by 2070, 50% non-fossil by 2030, PANCHAMRIT (5 points from Glasgow 2021).
+
+**Everything else** — biogeochemical cycles, IUCN categories, biodiversity hotspots, pollution parameters — appears occasionally. Covered here in depth; revise in the order above.
 
 </div>
 
@@ -55,18 +57,66 @@ Everything else — biogeochemical cycles, IUCN categories, biodiversity hotspot
 
 \newpage
 
-# PART A — ECOLOGY FUNDAMENTALS
+---
+
+# How to read this book — your real study load
+
+**Total pages: 40.** Don't let the page count scare you.
+
+### Mandatory reading — pages 1 to 31 (78% of the book)
+
+That's the full syllabus. Master those 31 pages and you've covered every concept an examiner can fairly ask.
+
+### Bonus material — pages 32 to 40 (22% of the book)
+
+Reference tables, compilations, and self-test material — useful in your last week of revision OR if you're aiming for a top rank.
+
+### Two study tracks
+
+- **Just want to pass?** Read pages 1–31. Skim the appendices once before the exam.
+
+- **Want to top your batch?** Read the appendices too — they're how 70% becomes 90%.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p5–8** | [PART A](#part-a) | ECOLOGY FUNDAMENTALS |
+| **p9–11** | [PART B](#part-b) | BIODIVERSITY |
+| **p12–21** | [PART C](#part-c) | PROTECTED AREAS AND INDIA'S WILDLIFE |
+| **p22–24** | [PART D](#part-d) | POLLUTION |
+| **p25–28** | [PART E](#part-e) | CLIMATE CHANGE |
+| **p29–31** | [PART F](#part-f) | INDIAN ENVIRONMENTAL LAWS AND INSTITUTIONS |
+| **p32–33** | [PART X](#part-x) | CONSERVATION PROJECTS AND NATIONAL SYMBOLS — *Conservation Projects + National Symbols — Tiger, Elephant, Cheetah.* |
+| **p34–35** | [PART Y](#part-y) | INTERNATIONAL CONVENTIONS (COMPLETE TABLE) — *International Conventions — Ramsar, Montreal, Kyoto, Paris (with years).* |
+| **p36–40** | [PART Z](#part-z) | BIODIVERSITY (DETAILED) — *Biodiversity Detailed — IUCN categories, hotspots, endemic species.* |
+
+---
+# PART A — ECOLOGY FUNDAMENTALS {#part-a}
 
 ## Chapter A1 — The Ecosystem
 
-Every ecosystem, whether a pond or a rainforest, has the same basic structure: things that make energy, things that consume it, and things that recycle the leftovers.
+**Every ecosystem — pond, forest, ocean — has the same basic structure:**
 
-- **Abiotic components** — the non-living environment: sunlight, temperature, water, air, soil, minerals.
-- **Biotic components** — the living world: producers, consumers, decomposers.
+- Things that **make** energy (producers).
+
+- Things that **consume** it (consumers).
+
+- Things that **recycle** the leftovers (decomposers).
+
+**Two components:**
+
+- **Abiotic** — non-living: sunlight, temperature, water, air, soil, minerals.
+
+- **Biotic** — living: producers, consumers, decomposers.
 
 ### Energy Flow in Food Chains
 
-Sunlight → Producers (green plants, phytoplankton) → Primary consumers (herbivores) → Secondary consumers (carnivores) → Tertiary consumers → Decomposers (bacteria, fungi) → nutrient return.
+**The chain:**
+
+Sunlight → **Producers** (green plants, phytoplankton) → **Primary consumers** (herbivores) → **Secondary consumers** (carnivores) → **Tertiary consumers** → **Decomposers** (bacteria, fungi) → nutrient return.
 
 <div class="keypoint">
 
@@ -81,6 +131,57 @@ The **10% Rule (Lindeman, 1942)** — only about 10% of the energy at one trophi
 | Pyramid of numbers | Yes | One tree can support thousands of insects |
 | Pyramid of biomass | Yes | In oceans, phytoplankton biomass can be less than zooplankton at any instant |
 | Pyramid of energy | Never — always upright | Second law of thermodynamics — energy always decreases as it flows up |
+
+<svg viewBox="0 0 530 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:530px;display:block;margin:8pt auto;font-family:Georgia,serif;">
+  <rect width="530" height="220" fill="#f8faff" rx="6"/>
+  <text x="265" y="18" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e3a5f">Ecological Pyramids — Three Types</text>
+
+  <!-- PYRAMID 1: Energy (always upright) -->
+  <text x="85" y="38" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#15803d">Energy Pyramid</text>
+  <text x="85" y="50" text-anchor="middle" font-size="8" fill="#166534">(always upright)</text>
+  <!-- trophic levels as trapezoids -->
+  <polygon points="60,195 110,195 100,170 70,170" fill="#bbf7d0" stroke="#16a34a" stroke-width="1"/>
+  <text x="85" y="185" text-anchor="middle" font-size="7.5" fill="#14532d">T4 Carnivore</text>
+  <polygon points="50,168 120,168 106,143 64,143" fill="#86efac" stroke="#16a34a" stroke-width="1"/>
+  <text x="85" y="158" text-anchor="middle" font-size="7.5" fill="#14532d">T3 Carnivore</text>
+  <polygon points="36,141 134,141 118,116 52,116" fill="#4ade80" stroke="#16a34a" stroke-width="1"/>
+  <text x="85" y="131" text-anchor="middle" font-size="7.5" fill="#14532d">T2 Herbivore</text>
+  <polygon points="20,114 150,114 134,89 36,89" fill="#22c55e" stroke="#16a34a" stroke-width="1"/>
+  <text x="85" y="104" text-anchor="middle" font-size="7.5" fill="#ffffff">T1 Producer</text>
+  <text x="85" y="80" text-anchor="middle" font-size="7.5" font-style="italic" fill="#15803d">→ 10% rule</text>
+
+  <!-- PYRAMID 2: Numbers (can invert) -->
+  <text x="265" y="38" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#1565c0">Numbers Pyramid</text>
+  <text x="265" y="50" text-anchor="middle" font-size="8" fill="#1565c0">(can invert)</text>
+  <!-- upright version -->
+  <polygon points="240,195 290,195 280,170 250,170" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="265" y="185" text-anchor="middle" font-size="7.5" fill="#1e3a5f">few carnivores</text>
+  <polygon points="228,168 302,168 290,143 240,143" fill="#93c5fd" stroke="#3b82f6" stroke-width="1"/>
+  <text x="265" y="158" text-anchor="middle" font-size="7.5" fill="#1e3a5f">herbivores</text>
+  <polygon points="210,141 320,141 302,116 228,116" fill="#60a5fa" stroke="#3b82f6" stroke-width="1"/>
+  <text x="265" y="131" text-anchor="middle" font-size="7.5" fill="#1e3a8a">many plants</text>
+  <!-- inverted example label -->
+  <text x="265" y="108" text-anchor="middle" font-size="7" fill="#1d4ed8">Inverted: 1 tree</text>
+  <text x="265" y="118" text-anchor="middle" font-size="7" fill="#1d4ed8">→ 1000s of insects</text>
+
+  <!-- PYRAMID 3: Biomass (aquatic inverted) -->
+  <text x="445" y="38" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9333ea">Biomass Pyramid</text>
+  <text x="445" y="50" text-anchor="middle" font-size="8" fill="#9333ea">(aquatic = inverted)</text>
+  <!-- inverted trapezoids (wide at top, narrow at bottom) -->
+  <polygon points="410,100 480,100 468,75 422,75" fill="#d8b4fe" stroke="#9333ea" stroke-width="1"/>
+  <text x="445" y="90" text-anchor="middle" font-size="7.5" fill="#581c87">zooplankton</text>
+  <text x="445" y="68" text-anchor="middle" font-size="7" fill="#6b21a8">(large biomass)</text>
+  <polygon points="422,126 468,126 455,101 435,101" fill="#e9d5ff" stroke="#9333ea" stroke-width="1"/>
+  <text x="445" y="116" text-anchor="middle" font-size="7.5" fill="#581c87">phytoplankton</text>
+  <text x="445" y="139" text-anchor="middle" font-size="7" fill="#6b21a8">(small biomass)</text>
+  <text x="445" y="158" text-anchor="middle" font-size="7.5" font-style="italic" fill="#9333ea">aquatic inversion:</text>
+  <text x="445" y="170" text-anchor="middle" font-size="7.5" font-style="italic" fill="#9333ea">producers reproduce</text>
+  <text x="445" y="182" text-anchor="middle" font-size="7.5" font-style="italic" fill="#9333ea">faster than consumed</text>
+
+  <!-- dividers -->
+  <line x1="175" y1="55" x2="175" y2="210" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="355" y1="55" x2="355" y2="210" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3"/>
+</svg>
 
 <div class="examtip">
 
@@ -115,6 +216,85 @@ flowchart TD
 
 Evaporation from oceans → condensation into clouds → precipitation (rain/snow) → runoff into rivers → infiltration into groundwater → back to ocean. About 97% of Earth's water is in the oceans (saline). Only ~2.5% is freshwater, and most of that is locked in ice caps and glaciers.
 
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<defs>
+  <marker id="wa" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <path d="M0,0 L0,8 L8,4 Z" fill="#1565c0"/>
+  </marker>
+</defs>
+
+<!-- Sky -->
+<rect x="0" y="0" width="560" height="200" rx="0" fill="#e3f2fd"/>
+<!-- Ground -->
+<rect x="0" y="200" width="560" height="80" fill="#c8e6c9"/>
+<!-- Ocean -->
+<ellipse cx="80" cy="235" rx="65" ry="28" fill="#1e88e5" opacity="0.8"/>
+<text x="80" y="239" text-anchor="middle" font-size="11" font-weight="bold" fill="white">OCEAN</text>
+
+<!-- Sun -->
+<circle cx="510" cy="45" r="32" fill="#fff176" stroke="#f9a825" stroke-width="3"/>
+<text x="510" y="49" text-anchor="middle" font-size="12" font-weight="bold" fill="#f57f17">SUN</text>
+
+<!-- Cloud 1 -->
+<ellipse cx="230" cy="75" rx="55" ry="25" fill="white" stroke="#90a4ae" stroke-width="2"/>
+<ellipse cx="200" cy="80" rx="35" ry="20" fill="white" stroke="#90a4ae" stroke-width="2"/>
+<ellipse cx="265" cy="82" rx="38" ry="18" fill="white" stroke="#90a4ae" stroke-width="2"/>
+<text x="230" y="79" text-anchor="middle" font-size="11" font-weight="bold" fill="#37474f">CLOUD</text>
+
+<!-- Cloud 2 -->
+<ellipse cx="430" cy="85" rx="45" ry="22" fill="white" stroke="#90a4ae" stroke-width="2"/>
+<ellipse cx="405" cy="90" rx="30" ry="17" fill="white" stroke="#90a4ae" stroke-width="2"/>
+<ellipse cx="458" cy="92" rx="32" ry="16" fill="white" stroke="#90a4ae" stroke-width="2"/>
+
+<!-- Mountain -->
+<polygon points="370,200 410,130 450,200" fill="#78909c"/>
+<polygon points="400,200 445,120 490,200" fill="#607d8b"/>
+<text x="440" y="195" text-anchor="middle" font-size="10" fill="white">Mountains</text>
+
+<!-- River -->
+<path d="M 395,195 Q 360,210 330,220 Q 290,230 250,232 Q 200,234 150,240" stroke="#42a5f5" stroke-width="5" fill="none"/>
+<text x="310" y="225" font-size="10" fill="#1565c0">River run-off</text>
+
+<!-- Evaporation from ocean to cloud -->
+<path d="M 100,215 Q 120,130 185,90" stroke="#1565c0" stroke-width="2" fill="none" marker-end="url(#wa)"/>
+<text x="112" y="150" font-size="10" fill="#1565c0" transform="rotate(-70,112,150)">Evaporation</text>
+
+<!-- Transpiration -->
+<line x1="290" y1="200" x2="270" y2="110" stroke="#4caf50" stroke-width="2" marker-end="url(#wa)" stroke-dasharray="4,3"/>
+<text x="262" y="165" font-size="10" fill="#388e3c" transform="rotate(-80,262,165)">Transpiration</text>
+
+<!-- Wind transport -->
+<line x1="290" y1="73" x2="390" y2="83" stroke="#90a4ae" stroke-width="2" marker-end="url(#wa)" stroke-dasharray="5,3"/>
+<text x="335" y="68" font-size="10" fill="#607d8b" text-anchor="middle">Wind</text>
+
+<!-- Precipitation -->
+<line x1="430" y1="107" x2="430" y2="128" stroke="#1565c0" stroke-width="2" marker-end="url(#wa)"/>
+<line x1="415" y1="107" x2="410" y2="128" stroke="#1565c0" stroke-width="2" marker-end="url(#wa)"/>
+<line x1="445" y1="107" x2="448" y2="128" stroke="#1565c0" stroke-width="2" marker-end="url(#wa)"/>
+<text x="460" y="125" font-size="10" fill="#1565c0">Precipitation</text>
+
+<!-- Infiltration -->
+<line x1="280" y1="232" x2="280" y2="268" stroke="#795548" stroke-width="2" marker-end="url(#wa)" stroke-dasharray="4,3"/>
+<text x="285" y="260" font-size="10" fill="#795548">Infiltration</text>
+<line x1="260" y1="275" x2="125" y2="255" stroke="#795548" stroke-width="2" marker-end="url(#wa)" stroke-dasharray="4,3"/>
+<text x="185" y="275" font-size="10" fill="#795548" text-anchor="middle">Groundwater flow</text>
+
+<!-- Condensation label -->
+<text x="230" y="55" text-anchor="middle" font-size="10" fill="#37474f">Condensation</text>
+<line x1="230" y1="58" x2="230" y2="65" stroke="#37474f" stroke-width="1"/>
+
+<!-- Key bar -->
+<rect x="0" y="290" width="560" height="40" fill="#e8f5e9"/>
+<text x="10" y="306" font-size="10" fill="#333">Key facts: ~97% water in oceans | Hydrological cycle driven by solar energy | Transpiration + Evaporation = Evapotranspiration</text>
+<text x="10" y="322" font-size="10" fill="#333">Infiltration → aquifers (groundwater). Condensation nuclei = dust particles. India: SW monsoon = 75% of annual rainfall.</text>
+
+</svg>
+
+</div>
+
 ### Carbon Cycle
 
 Plants absorb CO₂ through photosynthesis and convert it into biomass. Animals eat plants and release CO₂ through respiration. Decomposers break down dead matter, releasing CO₂. Fossil fuels are ancient biomass — burning them releases carbon that had been locked underground for millions of years, short-circuiting the natural cycle.
@@ -127,6 +307,84 @@ Atmosphere is 78% N₂, but plants cannot use it directly. The cycle works throu
 - **Nitrification** — bacteria convert NH₃ → NO₂⁻ → NO₃⁻ (usable by plants).
 - **Denitrification** — bacteria return NO₃⁻ to atmospheric N₂.
 
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<defs>
+  <marker id="a1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <path d="M0,0 L0,8 L8,4 Z" fill="#2e7d32"/>
+  </marker>
+  <marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <path d="M0,0 L0,8 L8,4 Z" fill="#1565c0"/>
+  </marker>
+  <marker id="a3" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <path d="M0,0 L0,8 L8,4 Z" fill="#6a1b9a"/>
+  </marker>
+</defs>
+
+<!-- Atmosphere box -->
+<rect x="160" y="10" width="240" height="50" rx="8" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+<text x="280" y="31" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565c0">ATMOSPHERE (N₂ — 78%)</text>
+<text x="280" y="50" text-anchor="middle" font-size="11" fill="#1565c0">Unreactive dinitrogen gas</text>
+
+<!-- Soil/Plant box -->
+<rect x="30" y="160" width="160" height="55" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+<text x="110" y="181" text-anchor="middle" font-size="13" font-weight="bold" fill="#2e7d32">SOIL (NH₄⁺)</text>
+<text x="110" y="197" text-anchor="middle" font-size="11" fill="#2e7d32">Ammonium ions</text>
+<text x="110" y="212" text-anchor="middle" font-size="10" fill="#2e7d32">(Plants absorb directly)</text>
+
+<!-- Nitrite box -->
+<rect x="200" y="160" width="160" height="55" rx="8" fill="#fff9c4" stroke="#f9a825" stroke-width="2"/>
+<text x="280" y="181" text-anchor="middle" font-size="13" font-weight="bold" fill="#f57f17">NITRITE (NO₂⁻)</text>
+<text x="280" y="197" text-anchor="middle" font-size="11" fill="#f57f17">Nitrosomonas bacteria</text>
+<text x="280" y="212" text-anchor="middle" font-size="10" fill="#f57f17">(1st nitrification step)</text>
+
+<!-- Nitrate box -->
+<rect x="370" y="160" width="160" height="55" rx="8" fill="#fce4ec" stroke="#c62828" stroke-width="2"/>
+<text x="450" y="181" text-anchor="middle" font-size="13" font-weight="bold" fill="#c62828">NITRATE (NO₃⁻)</text>
+<text x="450" y="197" text-anchor="middle" font-size="11" fill="#c62828">Nitrobacter bacteria</text>
+<text x="450" y="212" text-anchor="middle" font-size="10" fill="#c62828">(2nd nitrification step)</text>
+
+<!-- Plants/Animals box -->
+<rect x="160" y="290" width="240" height="55" rx="8" fill="#f3e5f5" stroke="#6a1b9a" stroke-width="2"/>
+<text x="280" y="311" text-anchor="middle" font-size="13" font-weight="bold" fill="#6a1b9a">PLANTS &amp; ANIMALS</text>
+<text x="280" y="327" text-anchor="middle" font-size="11" fill="#6a1b9a">Organic nitrogen (proteins)</text>
+<text x="280" y="342" text-anchor="middle" font-size="10" fill="#6a1b9a">Death → decomposers → NH₃</text>
+
+<!-- N-fixation arrow: Atm → Soil -->
+<line x1="210" y1="60" x2="145" y2="158" stroke="#2e7d32" stroke-width="2" marker-end="url(#a1)"/>
+<text x="155" y="108" font-size="10" fill="#2e7d32" transform="rotate(-32,155,108)">N-fixation</text>
+<text x="138" y="120" font-size="9" fill="#2e7d32" transform="rotate(-32,138,120)">(Rhizobium/lightning)</text>
+
+<!-- Soil → Nitrite -->
+<line x1="192" y1="187" x2="198" y2="187" stroke="#f9a825" stroke-width="2" marker-end="url(#a2)"/>
+
+<!-- Nitrite → Nitrate -->
+<line x1="362" y1="187" x2="368" y2="187" stroke="#f9a825" stroke-width="2" marker-end="url(#a2)"/>
+
+<!-- Nitrate → Plants -->
+<line x1="420" y1="215" x2="360" y2="288" stroke="#6a1b9a" stroke-width="2" marker-end="url(#a3)"/>
+<text x="400" y="256" font-size="10" fill="#6a1b9a" transform="rotate(40,400,256)">Plant uptake</text>
+
+<!-- Plants → Soil (decomposition) -->
+<line x1="235" y1="290" x2="158" y2="218" stroke="#2e7d32" stroke-width="2" marker-end="url(#a1)"/>
+<text x="176" y="262" font-size="10" fill="#2e7d32" transform="rotate(-48,176,262)">Decomposition</text>
+
+<!-- Denitrification: Nitrate → Atmosphere -->
+<path d="M 530,158 Q 530,80 352,48" stroke="#1565c0" stroke-width="2" fill="none" marker-end="url(#a2)" stroke-dasharray="5,3"/>
+<text x="490" y="105" font-size="10" fill="#1565c0" transform="rotate(-72,490,105)">Denitrification</text>
+<text x="470" y="117" font-size="9" fill="#1565c0" transform="rotate(-72,470,117)">(Pseudomonas)</text>
+
+<!-- Key bar -->
+<rect x="5" y="340" width="550" height="34" rx="4" fill="#fffde7"/>
+<text x="10" y="355" font-size="10" fill="#555">Key bacteria: Rhizobium (fix) | Nitrosomonas (NH₄→NO₂) | Nitrobacter (NO₂→NO₃) | Pseudomonas (denitrify)</text>
+<text x="10" y="369" font-size="10" fill="#555">Lightning also fixes N₂. Haber–Bosch process = industrial fixation. Legumes host Rhizobium in root nodules.</text>
+
+</svg>
+
+</div>
+
 <div class="examtip">
 
 "Which element's cycle has no gaseous phase?" — **Phosphorus**. Unlike carbon, nitrogen, and sulphur, phosphorus does not enter the gaseous phase. It cycles only through rock → soil → plants → animals → decomposers → back to soil. Phosphorus is often the limiting nutrient in lakes (which is why phosphate-rich fertiliser runoff causes algal blooms).
@@ -137,7 +395,7 @@ Atmosphere is 78% N₂, but plants cannot use it directly. The cycle works throu
 
 \newpage
 
-# PART B — BIODIVERSITY
+# PART B — BIODIVERSITY {#part-b}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -290,7 +548,9 @@ flowchart TD
 
 \newpage
 
-# PART C — PROTECTED AREAS AND INDIA'S WILDLIFE
+# PART C — PROTECTED AREAS AND INDIA'S WILDLIFE {#part-c}
+
+India has the world's largest tiger population (3,167 — 2022 census) and hosts biodiversity hotspots in the Western Ghats, Eastern Himalayas, Indo-Burma region, and the Sundaland cluster in Andaman. Protected areas are classified under the **Wildlife (Protection) Act 1972** into National Parks, Wildlife Sanctuaries, Conservation Reserves, and Community Reserves. Additionally, UNESCO MAB-recognised Biosphere Reserves and NTCA-governed Tiger Reserves form the conservation backbone. Examiners test the names, states, and legal classification of these areas heavily — especially first/largest/smallest NPs, the UNESCO World Network Biosphere Reserves, and which animals belong to which conservation project.
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -445,7 +705,7 @@ flowchart TD
 
 \newpage
 
-# PART D — POLLUTION
+# PART D — POLLUTION {#part-d}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -573,7 +833,7 @@ flowchart TD
 
 \newpage
 
-# PART E — CLIMATE CHANGE
+# PART E — CLIMATE CHANGE {#part-e}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -729,7 +989,7 @@ NAPCC has exactly **8 missions**. Examiners often ask the count. The Solar Missi
 
 \newpage
 
-# PART F — INDIAN ENVIRONMENTAL LAWS AND INSTITUTIONS
+# PART F — INDIAN ENVIRONMENTAL LAWS AND INSTITUTIONS {#part-f}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -855,7 +1115,7 @@ flowchart TD
 
 \newpage
 
-# PART X — CONSERVATION PROJECTS AND NATIONAL SYMBOLS
+# PART X — CONSERVATION PROJECTS AND NATIONAL SYMBOLS {#part-x}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -917,7 +1177,7 @@ Project Tiger (1973) — India's oldest and most famous conservation project. Fi
 
 \newpage
 
-# PART Y — INTERNATIONAL CONVENTIONS (COMPLETE TABLE)
+# PART Y — INTERNATIONAL CONVENTIONS (COMPLETE TABLE) {#part-y}
 
 | Year | Convention | Key outcome |
 |------|-----------|------------|
@@ -951,7 +1211,7 @@ Project Tiger (1973) — India's oldest and most famous conservation project. Fi
 
 \newpage
 
-# PART Z — BIODIVERSITY (DETAILED)
+# PART Z — BIODIVERSITY (DETAILED) {#part-z}
 
 ## Famous Environmental Movements
 

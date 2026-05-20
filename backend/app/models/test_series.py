@@ -41,6 +41,14 @@ class TestSeries(Base):
     is_daily_quiz = Column(Boolean, default=False, index=True)
     quiz_date = Column(DateTime(timezone=True), nullable=True, index=True)
     cdn_url = Column(String, nullable=True)  # Cloudflare R2 Global CDN URL
+    # Real-exam timing snapshot taken at load/publish time from the linked
+    # ExamPattern. We denormalise these onto TestSeries so the student player
+    # doesn't have to walk the pattern relationship at attempt-time and so a
+    # later admin pattern edit doesn't retroactively change the timer for
+    # an already-running attempt. Both are NULL on legacy rows; the player
+    # falls back to the section-sum behaviour in that case.
+    total_duration_minutes = Column(Integer, nullable=True)
+    has_sectional_timing = Column(Boolean, default=False, nullable=False, server_default="false")
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
     # Exam-structure linkage (nullable for backward compat with legacy test series)

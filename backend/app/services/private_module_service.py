@@ -410,7 +410,7 @@ async def revoke_access(db: AsyncSession, module_id: uuid.UUID, access_id: uuid.
     )).scalars().first()
     if not row:
         raise HTTPException(status_code=404, detail="Access entry not found")
-    await db.delete(row)
+    db.delete(row)
     await db.commit()
     return {"status": "revoked", "id": str(access_id)}
 

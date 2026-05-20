@@ -210,6 +210,222 @@ class QuizQuestionUpdate(BaseModel):
     image_url: Optional[str] = None
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Current Affairs admin surface
+# ─────────────────────────────────────────────────────────────────────────────
+# CA Qs live in the same `quiz_questions` table as static-GK Qs but carry
+# `is_current_affair=True` plus `event_date` / `valid_until` / `last_reviewed_at`
+# fields so the admin can refresh them on a cadence. The endpoints below are
+# CA-filtered convenience wrappers around the existing quiz CRUD — same
+# underlying CRUD machinery, just narrower scope.
+
+class CurrentAffairCreate(BaseModel):
+    question_text: str
+    options: List[dict]
+    explanation: str = ""
+    subject: str = "General Awareness"
+    topic: Optional[str] = "Current Affairs"
+    topic_code: Optional[str] = "GA_CURRENT_AFFAIRS"
+    difficulty: str = "MEDIUM"
+    event_date: Optional[str] = None  # ISO date e.g. "2026-03-08"
+    valid_until: Optional[str] = None
+    is_published: bool = True
+
+
+class CurrentAffairUpdate(BaseModel):
+    question_text: Optional[str] = None
+    options: Optional[List[dict]] = None
+    explanation: Optional[str] = None
+    subject: Optional[str] = None
+    topic: Optional[str] = None
+    topic_code: Optional[str] = None
+    difficulty: Optional[str] = None
+    event_date: Optional[str] = None
+    valid_until: Optional[str] = None
+    is_published: Optional[bool] = None
+
+
+def _serialize_ca(q) -> dict:
+    """Like _serialize_quiz_question but includes the CA lifecycle fields."""
+    base = practice_service._serialize_quiz_question(q)
+    base.update({
+        "is_current_affair": bool(q.is_current_affair),
+        "event_date": q.event_date.isoformat() if q.event_date else None,
+        "valid_until": q.valid_until.isoformat() if q.valid_until else None,
+        "last_reviewed_at": q.last_reviewed_at.isoformat() if q.last_reviewed_at else None,
+        "is_published": bool(q.is_published),
+    })
+    return base
+
+
+@router.get("/admin/current-affairs")
+async def list_current_affairs(
+    status: Optional[str] = Query(None, description="active | expired | unreviewed | all"),
+    search: Optional[str] = Query(None),
+    page: int = Query(1, ge=1),
+    per_page: int = Query(50, ge=1, le=200),
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    """List CA questions with status filtering and freshness info.
+
+    `status` values:
+      • `active`   — `valid_until` is in the future (or null) AND `is_published=True`
+      • `expired`  — `valid_until` is in the past
+      • `unreviewed`— `last_reviewed_at` is older than 30 days (or null)
+      • `all`      — every CA Q regardless of status (default)
+    """
+    from app.models.quiz_pool import QuizQuestion
+    from sqlalchemy.future import select
+    from sqlalchemy import func as sqlfunc, or_, and_
+    from datetime import date, datetime, timedelta, timezone
+
+    today = date.today()
+    cutoff_30d = datetime.now(timezone.utc) - timedelta(days=30)
+
+    conditions = [QuizQuestion.is_current_affair.is_(True)]
+    if status == "active":
+        conditions.append(QuizQuestion.is_published.is_(True))
+        conditions.append(or_(QuizQuestion.valid_until.is_(None), QuizQuestion.valid_until >= today))
+    elif status == "expired":
+        conditions.append(and_(QuizQuestion.valid_until.is_not(None), QuizQuestion.valid_until < today))
+    elif status == "unreviewed":
+        conditions.append(or_(QuizQuestion.last_reviewed_at.is_(None), QuizQuestion.last_reviewed_at < cutoff_30d))
+    if search:
+        conditions.append(QuizQuestion.question_text.ilike(f"%{search}%"))
+
+    count_stmt = select(sqlfunc.count(QuizQuestion.id)).where(*conditions)
+    total = (await db.execute(count_stmt)).scalar() or 0
+
+    stmt = (select(QuizQuestion).where(*conditions)
+            .order_by(QuizQuestion.event_date.desc().nullslast(), QuizQuestion.created_at.desc())
+            .offset((page - 1) * per_page).limit(per_page))
+    rows = (await db.execute(stmt)).scalars().all()
+
+    # Bucket counts so the admin sees the totals across statuses at a glance.
+    base = [QuizQuestion.is_current_affair.is_(True)]
+    active_n = (await db.execute(
+        select(sqlfunc.count(QuizQuestion.id)).where(
+            *base, QuizQuestion.is_published.is_(True),
+            or_(QuizQuestion.valid_until.is_(None), QuizQuestion.valid_until >= today),
+        )
+    )).scalar() or 0
+    expired_n = (await db.execute(
+        select(sqlfunc.count(QuizQuestion.id)).where(
+            *base,
+            QuizQuestion.valid_until.is_not(None), QuizQuestion.valid_until < today,
+        )
+    )).scalar() or 0
+    unreviewed_n = (await db.execute(
+        select(sqlfunc.count(QuizQuestion.id)).where(
+            *base,
+            or_(QuizQuestion.last_reviewed_at.is_(None), QuizQuestion.last_reviewed_at < cutoff_30d),
+        )
+    )).scalar() or 0
+    all_n = (await db.execute(select(sqlfunc.count(QuizQuestion.id)).where(*base))).scalar() or 0
+
+    return {
+        "questions": [_serialize_ca(q) for q in rows],
+        "total": total,
+        "page": page,
+        "per_page": per_page,
+        "total_pages": (total + per_page - 1) // per_page,
+        "summary": {"all": all_n, "active": active_n, "expired": expired_n, "unreviewed": unreviewed_n},
+    }
+
+
+@router.post("/admin/current-affairs")
+async def create_current_affair(
+    data: CurrentAffairCreate,
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    from app.models.quiz_pool import QuizQuestion
+    from datetime import date as _date, datetime as _dt
+    q = QuizQuestion(
+        question_text=data.question_text,
+        options=[{"option_text": o.get("option_text", ""), "is_correct": o.get("is_correct", False)} for o in data.options],
+        explanation=data.explanation, subject=data.subject,
+        topic=data.topic, topic_code=data.topic_code, difficulty=data.difficulty,
+        is_current_affair=True, is_published=data.is_published,
+        event_date=_date.fromisoformat(data.event_date) if data.event_date else None,
+        valid_until=_date.fromisoformat(data.valid_until) if data.valid_until else None,
+    )
+    db.add(q)
+    await db.commit()
+    await db.refresh(q)
+    return _serialize_ca(q)
+
+
+@router.put("/admin/current-affairs/{question_id}")
+async def update_current_affair(
+    question_id: uuid.UUID,
+    data: CurrentAffairUpdate,
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    from app.models.quiz_pool import QuizQuestion
+    from sqlalchemy.future import select
+    from datetime import date as _date
+    from fastapi import HTTPException
+    q = (await db.execute(select(QuizQuestion).where(QuizQuestion.id == question_id))).scalars().first()
+    if not q: raise HTTPException(status_code=404, detail="Not found")
+    if not q.is_current_affair:
+        raise HTTPException(status_code=400, detail="This question is not a Current Affair. Use the regular quiz-question endpoint instead.")
+    if data.question_text is not None: q.question_text = data.question_text
+    if data.options is not None:
+        q.options = [{"option_text": o.get("option_text", ""), "is_correct": o.get("is_correct", False)} for o in data.options]
+    if data.explanation is not None: q.explanation = data.explanation
+    if data.subject is not None: q.subject = data.subject
+    if data.topic is not None: q.topic = data.topic
+    if data.topic_code is not None: q.topic_code = data.topic_code
+    if data.difficulty is not None: q.difficulty = data.difficulty
+    if data.event_date is not None: q.event_date = _date.fromisoformat(data.event_date) if data.event_date else None
+    if data.valid_until is not None: q.valid_until = _date.fromisoformat(data.valid_until) if data.valid_until else None
+    if data.is_published is not None: q.is_published = data.is_published
+    db.add(q)
+    await db.commit()
+    await db.refresh(q)
+    return _serialize_ca(q)
+
+
+@router.post("/admin/current-affairs/{question_id}/mark-reviewed")
+async def mark_ca_reviewed(
+    question_id: uuid.UUID,
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    """Bump `last_reviewed_at` to NOW. Use this after eyeballing a CA Q to
+    extend its 'recently reviewed' window — keeps the admin dashboard from
+    flagging the same Q as stale repeatedly."""
+    from app.models.quiz_pool import QuizQuestion
+    from sqlalchemy.future import select
+    from datetime import datetime as _dt, timezone
+    from fastapi import HTTPException
+    q = (await db.execute(select(QuizQuestion).where(QuizQuestion.id == question_id))).scalars().first()
+    if not q: raise HTTPException(status_code=404, detail="Not found")
+    q.last_reviewed_at = _dt.now(timezone.utc)
+    db.add(q)
+    await db.commit()
+    return {"id": str(q.id), "last_reviewed_at": q.last_reviewed_at.isoformat()}
+
+
+@router.delete("/admin/current-affairs/{question_id}")
+async def delete_current_affair(
+    question_id: uuid.UUID,
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    from app.models.quiz_pool import QuizQuestion
+    from sqlalchemy.future import select
+    from fastapi import HTTPException
+    q = (await db.execute(select(QuizQuestion).where(QuizQuestion.id == question_id))).scalars().first()
+    if not q: raise HTTPException(status_code=404, detail="Not found")
+    await db.delete(q)
+    await db.commit()
+    return {"status": "deleted", "id": str(question_id)}
+
+
 @router.get("/admin/questions")
 async def list_quiz_questions(
     subject: Optional[str] = Query(None),

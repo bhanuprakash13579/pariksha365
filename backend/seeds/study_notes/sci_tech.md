@@ -7,7 +7,15 @@ date: "2026"
 
 # EXAMINER BLUEPRINT — What Gets Tested Most
 
-Science & Technology is one of the most scoring sections because the questions are almost entirely factual. There is no derivation, no calculation — just "Which mission did what" or "Which organisation developed X." Knowing the right list gets you full marks.
+**Science & Technology is one of the most scoring sections.**
+
+- Questions are almost entirely **factual**.
+
+- No derivation, no calculation.
+
+- Just "Which mission did what" or "Which organisation developed X."
+
+- Knowing the right list gets you full marks.
 
 <div class="examtip">
 
@@ -62,11 +70,33 @@ Science & Technology is one of the most scoring sections because the questions a
 
 # How to use this book
 
-Science and Technology questions in exams are almost entirely about names, years, organisations, and one-line descriptions. No calculation is required. This makes it the easiest scoring section if you commit the right tables to memory.
+**Sci-Tech questions are almost entirely about four things:**
 
-Each chapter in this book opens with the story behind the technology — not for dramatic effect, but because understanding *why* a system was built makes the specific facts (the missile's range, the mission's year, the vaccine's mechanism) stick far better than raw memorisation. Read the story, then drill the table at the end.
+- **Names** — ISRO, DRDO, BARC, BrahMos, INS Vikrant.
 
-**The "Exam hooks" section at the end of every chapter is your most important page.** It is the compressed list of exactly what examiners have asked in previous years. After reading the chapter, close the book and try to answer those points from memory. If you can, move on. If you cannot, re-read only that specific section and try again.
+- **Years** — when launched / commissioned.
+
+- **Organisations** — who developed it.
+
+- **One-line description** — range, payload, purpose.
+
+**No calculation required.** This makes Sci-Tech the easiest scoring section — IF you commit the right tables to memory.
+
+**Why each chapter starts with a story:**
+
+- Understanding **why** a system was built makes the specific facts (range, year, mechanism) **stick far better** than raw memorisation.
+
+- Read the story → drill the table at the end.
+
+**The "Exam hooks" section is your most important page in every chapter:**
+
+- It is the **compressed list** of exactly what examiners have asked.
+
+- After reading, **close the book**, answer those points from memory.
+
+- If you can → move on.
+
+- If you cannot → re-read only the section you struggled with, and try again.
 
 > **The truth about Sci-Tech:** Students who can recall "BrahMos: 290 km range, Mach 2.8, surface-surface-air-sea, Indo-Russian joint venture" in 5 seconds beat students who "understood" it perfectly but can't retrieve it under pressure. This book is built to get you to that 5-second recall speed.
 
@@ -74,17 +104,85 @@ Each chapter in this book opens with the story behind the technology — not for
 
 \newpage
 
-# PART A — SPACE TECHNOLOGY: INDIA'S JOURNEY FROM THUMBA TO THE MOON
+---
+
+# How to read this book — your real study load
+
+**Total pages: 58.** Don't let the page count scare you.
+
+### Mandatory reading — pages 1 to 29 (50% of the book)
+
+That's the full syllabus. Master those 29 pages and you've covered every concept an examiner can fairly ask.
+
+### Bonus material — pages 30 to 58 (50% of the book)
+
+Reference tables, compilations, and self-test material — useful in your last week of revision OR if you're aiming for a top rank.
+
+### Two study tracks
+
+- **Just want to pass?** Read pages 1–29. Skim the appendices once before the exam.
+
+- **Want to top your batch?** Read the appendices too — they're how 70% becomes 90%.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p6–10** | [PART A](#part-a) | SPACE TECHNOLOGY: INDIA'S JOURNEY FROM THUMBA TO THE MOON |
+| **p11–13** | [PART B](#part-b) | DEFENCE TECHNOLOGY: GUARDING THE NATION |
+| **p14–15** | [PART C](#part-c) | NUCLEAR PROGRAMME |
+| **p16–20** | [PART D](#part-d) | COMPUTING, AI, AND DIGITAL INDIA |
+| **p21–22** | [PART E](#part-e) | BIOTECHNOLOGY & HEALTH TECH |
+| **p23–24** | [PART F](#part-f) | ENERGY & ENVIRONMENT TECH |
+| **p25** | [PART G](#part-g) | HEALTH & MEDICAL TECH |
+| **p26–29** | [PART H](#part-h) | PHYSICS, CHEMISTRY, BIOLOGY ESSENTIALS |
+| **p30–31** | [PART X](#part-x) | RECENT ISRO MISSIONS (2020-2026) — *Recent ISRO Missions (2020–26) — Chandrayaan-3, Aditya-L1, Gaganyaan.* |
+| **p32–34** | [PART Y](#part-y) | DEFENCE TECHNOLOGY (recent) — *Defence Tech (recent) — Mission Divyastra, Agni-V MIRV, Tejas Mk-1A.* |
+| **p35–38** | [PART Z](#part-z) | COMPUTER FUNDAMENTALS DEEP-DRILL — *Computer Fundamentals Deep-Drill — generations, OSI, Office shortcuts.* |
+| **p39** | [PART W](#part-w) | BIOTECH RECENT (extension) — *Recent Science Breakthroughs (2024–26) — CRISPR, AI milestones.* |
+| **p40–42** | [PART V](#part-v) | NOBEL PRIZES 2020-2024 (full 5 years) — *Nobel Prizes 2020–24 — full 5 years across all fields.* |
+| **p43–45** | [PART W](#part-w) | RECENT (2024-26) SCIENCE & TECH BREAKTHROUGHS — *Recent Science Breakthroughs (2024–26) — CRISPR, AI milestones.* |
+| **p46–47** | [PART U](#part-u) | SCI-TECH MINI-MOCK (25 Questions · 25 Minutes) — *25-Question Mini-Mock — timed self-test.* |
+| **p48–58** | [PART T](#part-t) | COMPUTER AWARENESS DEEP-DRILL (Banks GA + SSC + RRB) — *Computer Awareness Deep-Drill — Banks GA + SSC + RRB extra.* |
+
+---
+# PART A — SPACE TECHNOLOGY: INDIA'S JOURNEY FROM THUMBA TO THE MOON {#part-a}
 
 ## Chapter A1 — The Story of ISRO: From Coconut Groves to Cosmos
 
 ### Background
 
-**1962, Thumba, Kerala.** A fishing village where a Jesuit church is converted into a rocket workshop. Parts are carted on bicycles. The first Indian rocket — a Nike-Apache — goes up on **21 November 1963**. 63 years later, a descendant of that programme lands near the **lunar south pole** (Chandrayaan-3, 23 August 2023). India becomes the **first country** to do so. From bicycles to the moon: *that* is ISRO's arc.
+**From bicycles to the moon — ISRO's arc.**
 
-### The Mechanism (why India needs a space programme)
+- **1962, Thumba, Kerala** — a fishing village; a Jesuit church converted into a rocket workshop.
 
-**Vikram Sarabhai's vision (1963):** "There is no ambiguity of purpose. We must be second to none in the application of advanced technologies to the real problems of man and society." Translation: India's space programme exists for **development**, not prestige — weather, communication, education, resource mapping, disaster response.
+- Parts carted on **bicycles**.
+
+- First Indian rocket — a Nike-Apache — launched **21 November 1963**.
+
+- **63 years later** — Chandrayaan-3 lands near the **lunar south pole** (23 Aug 2023).
+
+- India becomes the **first country** ever to do so.
+
+### Why India needs a space programme
+
+**Vikram Sarabhai's vision (1963):**
+
+> "There is no ambiguity of purpose. We must be **second to none** in the application of advanced technologies to the real problems of man and society."
+
+**Translation** — India's space programme exists for **development**, not prestige:
+
+- Weather forecasting
+
+- Communication (TV, telephony)
+
+- Education (EDUSAT)
+
+- Resource mapping (RESOURCESAT)
+
+- Disaster response
 
 ### 🔭 Organisational Tree
 
@@ -263,7 +361,7 @@ flowchart TD
 
 \newpage
 
-# PART B — DEFENCE TECHNOLOGY: GUARDING THE NATION
+# PART B — DEFENCE TECHNOLOGY: GUARDING THE NATION {#part-b}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -390,7 +488,7 @@ Imagine India has three shields: **Prithvi** for neighbours up close, **Agni** f
 
 \newpage
 
-# PART C — NUCLEAR PROGRAMME
+# PART C — NUCLEAR PROGRAMME {#part-c}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -471,7 +569,7 @@ flowchart LR
 
 \newpage
 
-# PART D — COMPUTING, AI, AND DIGITAL INDIA
+# PART D — COMPUTING, AI, AND DIGITAL INDIA {#part-d}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -644,7 +742,7 @@ AI today is basically **pattern-matching on steroids**. Feed a machine millions 
 
 \newpage
 
-# PART E — BIOTECHNOLOGY & HEALTH TECH
+# PART E — BIOTECHNOLOGY & HEALTH TECH {#part-e}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -731,7 +829,7 @@ flowchart TD
 
 \newpage
 
-# PART F — ENERGY & ENVIRONMENT TECH
+# PART F — ENERGY & ENVIRONMENT TECH {#part-f}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -805,7 +903,7 @@ flowchart TD
 
 \newpage
 
-# PART G — HEALTH & MEDICAL TECH
+# PART G — HEALTH & MEDICAL TECH {#part-g}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -859,7 +957,7 @@ flowchart TD
 
 \newpage
 
-# PART H — PHYSICS, CHEMISTRY, BIOLOGY ESSENTIALS
+# PART H — PHYSICS, CHEMISTRY, BIOLOGY ESSENTIALS {#part-h}
 
 > *Physics, Chemistry, and Biology each have dedicated full-length books in this series. This part provides a rapid-revision layer for the general-awareness flavour of questions that appear in SSC and Banking exams.*
 
@@ -1049,13 +1147,12 @@ mindmap
 
 ---
 
-*More parts and expansions will be added as new quiz topics are generated. Keep this file as your single source of Sci-Tech truth.*
 
 ---
 
 \newpage
 
-# PART X — RECENT ISRO MISSIONS (2020-2026)
+# PART X — RECENT ISRO MISSIONS (2020-2026) {#part-x}
 
 | Year | Mission | Launcher | Notes |
 |---|---|---|---|
@@ -1103,7 +1200,7 @@ mindmap
 
 \newpage
 
-# PART Y — DEFENCE TECHNOLOGY (recent)
+# PART Y — DEFENCE TECHNOLOGY (recent) {#part-y}
 
 ## Missiles — operational (DRDO)
 
@@ -1197,7 +1294,7 @@ mindmap
 
 \newpage
 
-# PART Z — COMPUTER FUNDAMENTALS DEEP-DRILL
+# PART Z — COMPUTER FUNDAMENTALS DEEP-DRILL {#part-z}
 
 ## Z.1 Generations of computers
 
@@ -1364,7 +1461,7 @@ mindmap
 
 ---
 
-# PART W — BIOTECH RECENT (extension)
+# PART W — BIOTECH RECENT (extension) {#part-w}
 
 - **CRISPR-Cas9** — Jennifer Doudna + Emmanuelle Charpentier (Nobel 2020).
 - **mRNA vaccines** — Pfizer/BioNTech, Moderna (2020); Karikó + Weissman (Nobel Medicine 2023) for nucleoside-modified mRNA.
@@ -1381,7 +1478,7 @@ mindmap
 
 \newpage
 
-# PART V — NOBEL PRIZES 2020-2024 (full 5 years)
+# PART V — NOBEL PRIZES 2020-2024 (full 5 years) {#part-v}
 
 ## Physics
 
@@ -1551,7 +1648,7 @@ mindmap
 
 \newpage
 
-# PART U — SCI-TECH MINI-MOCK (25 Questions · 25 Minutes)
+# PART U — SCI-TECH MINI-MOCK (25 Questions · 25 Minutes) {#part-u}
 
 Set a timer. No looking back. Check the answer key at the end.
 
@@ -1679,7 +1776,7 @@ Set a timer. No looking back. Check the answer key at the end.
 
 \newpage
 
-# PART T — COMPUTER AWARENESS DEEP-DRILL (Banks GA + SSC + RRB)
+# PART T — COMPUTER AWARENESS DEEP-DRILL (Banks GA + SSC + RRB) {#part-t}
 
 > Computer Awareness carries 5-10 marks in Banks Mains GA, 2-3 in SSC CHSL/CGL Tier-2 (Computer Knowledge), 2-3 in RRB NTPC. Drill these tables to mastery.
 

@@ -9,15 +9,19 @@ date: "2026"
 
 <div class="examtip">
 
-Walk into any SSC CGL, IBPS PO or RRB exam and chemistry questions follow a brutal pattern: they are almost never about deep understanding. They are about recall — specific, well-targeted recall. Three categories account for 80% of chemistry questions:
+**Chemistry questions are almost never about deep understanding** — they are about specific, well-targeted recall.
 
-**1. Everyday names vs chemical names** ("What is the chemical name of baking soda?") — this appears in almost every paper.
+**Three categories account for 80% of chemistry questions:**
 
-**2. Alloy composition** ("Which metals make brass?") — expect at least one in every General Science section.
+- **1. Everyday names vs chemical names** — "Chemical name of baking soda?" Appears in almost every paper.
 
-**3. Discovery/inventor facts** ("Who invented nylon?") — steady 1-2 questions per paper in SSC exams.
+- **2. Alloy composition** — "Which metals make brass?" Expect at least one in every General Science section.
 
-Everything else — pH values, activity series, industrial processes, polymers, indicators — shows up regularly but less predictably. This book is built around these three hot zones, then covers the rest in depth so you're never caught off guard.
+- **3. Discovery / inventor facts** — "Who invented nylon?" Steady 1–2 questions per paper in SSC exams.
+
+**Everything else** — pH values, activity series, industrial processes, polymers, indicators — shows up regularly but less predictably.
+
+This book is built around the three hot zones, then covers the rest in depth so you're never caught off guard.
 
 </div>
 
@@ -38,11 +42,63 @@ Everything else — pH values, activity series, industrial processes, polymers, 
 
 \newpage
 
-# PART A — MATTER AND ITS NATURE
+---
+
+# How to read this book — your real study load
+
+**Total pages: 57.** Don't let the page count scare you.
+
+### Mandatory reading — pages 1 to 37 (65% of the book)
+
+That's the full syllabus. Master those 37 pages and you've covered every concept an examiner can fairly ask.
+
+### Bonus material — pages 38 to 57 (35% of the book)
+
+Reference tables, compilations, and self-test material — useful in your last week of revision OR if you're aiming for a top rank.
+
+### Two study tracks
+
+- **Just want to pass?** Read pages 1–37. Skim the appendices once before the exam.
+
+- **Want to top your batch?** Read the appendices too — they're how 70% becomes 90%.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p4–7** | [PART A](#part-a) | MATTER AND ITS NATURE |
+| **p8–10** | [PART B](#part-b) | THE PERIODIC TABLE |
+| **p11–13** | [PART C](#part-c) | CHEMICAL BONDING AND REACTIONS |
+| **p14–20** | [PART D](#part-d) | ACIDS, BASES, SALTS |
+| **p21–23** | [PART E](#part-e) | METALS AND THE ACTIVITY SERIES |
+| **p24–28** | [PART F](#part-f) | ORGANIC CHEMISTRY |
+| **p29–31** | [PART G](#part-g) | POLYMERS AND FIBRES |
+| **p32–34** | [PART H](#part-h) | EVERYDAY CHEMISTRY |
+| **p35–37** | [PART I](#part-i) | ENVIRONMENTAL CHEMISTRY |
+| **p38–39** | [PART T](#part-t) | DISCOVERIES AND INVENTORS IN CHEMISTRY — *Discoveries & Inventors — who-discovered-what table.* |
+| **p40–41** | [PART U](#part-u) | THE ESSENTIAL CHEMICAL NAMES TABLE — *Essential Chemical Names — everyday ↔ chemical name table.* |
+| **p42–43** | [PART V](#part-v) | ALLOYS AND METALLURGY — *Alloys & Metallurgy — composition tables.* |
+| **p44–46** | [PART Y](#part-y) | FERTILISERS — *Fertilisers — N/P/K compositions, NPK ratios.* |
+| **p47–48** | [PART AA](#part-aa) | INDUSTRIAL PROCESSES — *Industrial Processes — Haber, Contact, Hall-Héroult, Solvay.* |
+| **p49–52** | [PART AB](#part-ab) | ORGANIC CHEMISTRY DEPTH — *Organic Chemistry Depth — extra worked detail.* |
+| **p53–57** | [PART AC](#part-ac) | BIOMOLECULES — *Biomolecules — carbs, proteins, lipids, nucleic acids.* |
+
+---
+# PART A — MATTER AND ITS NATURE {#part-a}
 
 ## Chapter A1 — States of Matter
 
-Picture a ₹10 ice block on a summer day. In 20 minutes you watch it go solid → liquid → gas (steam). Same H₂O molecules throughout — only their motion and spacing change. This is the entire story of states of matter.
+**The intuition — ice on a hot day**
+
+- Picture a ₹10 ice block on a summer day.
+
+- In 20 minutes: **solid → liquid → gas** (steam).
+
+- Same H₂O molecules throughout — only motion and spacing change.
+
+That is the entire story of states of matter.
 
 ### The Five States
 
@@ -101,9 +157,73 @@ flowchart TD
 
 ## Chapter A2 — Atomic Structure
 
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 360" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="270" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">Bohr Model — Atom Structure (Sodium, Z=11)</text>
+
+<!-- Orbits -->
+<circle cx="220" cy="180" r="30" fill="none" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="3,2"/>
+<circle cx="220" cy="180" r="65" fill="none" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="3,2"/>
+<circle cx="220" cy="180" r="105" fill="none" stroke="#e65100" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+<!-- Nucleus (protons + neutrons) -->
+<circle cx="220" cy="180" r="18" fill="#fff59d" stroke="#f57f17" stroke-width="2"/>
+<text x="220" y="178" text-anchor="middle" font-size="9" font-weight="bold" fill="#bf360c">11p⁺</text>
+<text x="220" y="190" text-anchor="middle" font-size="9" font-weight="bold" fill="#0d47a1">12n⁰</text>
+
+<!-- Shell K (2 e-) -->
+<circle cx="190" cy="180" r="4" fill="#1565c0"/>
+<circle cx="250" cy="180" r="4" fill="#1565c0"/>
+<text x="160" y="148" font-size="10" font-weight="bold" fill="#1565c0">K shell (2 e⁻)</text>
+
+<!-- Shell L (8 e-) — 8 electrons around -->
+<circle cx="155" cy="180" r="4" fill="#2e7d32"/>
+<circle cx="285" cy="180" r="4" fill="#2e7d32"/>
+<circle cx="220" cy="115" r="4" fill="#2e7d32"/>
+<circle cx="220" cy="245" r="4" fill="#2e7d32"/>
+<circle cx="173" cy="135" r="4" fill="#2e7d32"/>
+<circle cx="267" cy="225" r="4" fill="#2e7d32"/>
+<circle cx="267" cy="135" r="4" fill="#2e7d32"/>
+<circle cx="173" cy="225" r="4" fill="#2e7d32"/>
+<text x="115" y="115" font-size="10" font-weight="bold" fill="#2e7d32">L shell (8 e⁻)</text>
+
+<!-- Shell M (1 e-) — outermost = valence -->
+<circle cx="325" cy="180" r="5" fill="#e65100" stroke="#bf360c" stroke-width="2"/>
+<text x="335" y="184" font-size="10" font-weight="bold" fill="#bf360c">VALENCE e⁻ (1)</text>
+<text x="335" y="197" font-size="9" fill="#bf360c">→ Na ⁺ ion easily</text>
+
+<text x="80" y="80" font-size="10" font-weight="bold" fill="#e65100">M shell (1 e⁻)</text>
+
+<!-- Right side: Key facts -->
+<rect x="380" y="60" width="155" height="280" rx="6" fill="#f3e5f5" stroke="#4a148c" stroke-width="1.5"/>
+<text x="457" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a148c">Atom Basics</text>
+<text x="388" y="100" font-size="10" fill="#333">• Z = atomic number</text>
+<text x="388" y="113" font-size="9" fill="#333">  = number of protons</text>
+<text x="388" y="127" font-size="10" fill="#333">• A = mass number</text>
+<text x="388" y="140" font-size="9" fill="#333">  = protons + neutrons</text>
+<text x="388" y="154" font-size="10" fill="#333">• Neutrons = A − Z</text>
+<text x="388" y="174" font-size="11" font-weight="bold" fill="#4a148c">Shell capacity</text>
+<text x="388" y="190" font-size="10" fill="#333">  K = 2 (n=1)</text>
+<text x="388" y="204" font-size="10" fill="#333">  L = 8 (n=2)</text>
+<text x="388" y="218" font-size="10" fill="#333">  M = 18 (n=3)</text>
+<text x="388" y="232" font-size="10" fill="#333">  N = 32 (n=4)</text>
+<text x="388" y="246" font-size="9" fill="#555">  (2n² rule)</text>
+<text x="388" y="266" font-size="11" font-weight="bold" fill="#4a148c">Sub-atomic mass</text>
+<text x="388" y="282" font-size="9" fill="#333">  Proton ≈ 1 u (+1)</text>
+<text x="388" y="296" font-size="9" fill="#333">  Neutron ≈ 1 u (0)</text>
+<text x="388" y="310" font-size="9" fill="#333">  Electron ≈ 1/1836 u</text>
+<text x="388" y="324" font-size="9" fill="#333">  Heaviest = NEUTRON</text>
+
+</svg>
+
+</div>
+
 ### The Atomic Model: A History Worth Knowing
 
-"Who discovered what?" questions on atomic structure are a fixture — appears 1–2 times per paper. Learn this sequence cold.
+**"Who discovered what?"** — appears 1–2 times per paper. Learn this sequence cold.
 
 | Scientist | Year | Contribution |
 |-----------|------|--------------|
@@ -139,7 +259,7 @@ To remember isotopes vs isobars: **"Same Z = IsoTopes (T = Top = atomic number o
 
 \newpage
 
-# PART B — THE PERIODIC TABLE
+# PART B — THE PERIODIC TABLE {#part-b}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -165,9 +285,31 @@ flowchart TD
 
 ## Chapter B1 — From Mendeleev to Moseley
 
-In 1869, Dmitri Mendeleev arranged 63 known elements by atomic weight and noticed repeating patterns in behaviour — he called this the **periodic law**. More importantly, he was bold enough to leave gaps for elements that didn't yet exist. He predicted eka-aluminium (later found: Gallium), eka-silicon (Germanium), and eka-boron (Scandium). All three were discovered within 15 years, confirming the table.
+**Mendeleev's table (1869)**
 
-The problem: Mendeleev's table had anomalies — argon (Ar, atomic weight 39.9) came before potassium (K, 39.1) in weight order but clearly belonged in the noble gas column. **Henry Moseley (1913)** solved this by re-ordering on atomic number, not atomic weight. All anomalies vanished.
+- **Dmitri Mendeleev** arranged 63 known elements by **atomic weight**.
+
+- Noticed repeating patterns in behaviour → called it the **periodic law**.
+
+- **Left gaps** for elements that didn't yet exist.
+
+- Predicted: **Eka-aluminium** (= Gallium), **Eka-silicon** (= Germanium), **Eka-boron** (= Scandium).
+
+- All three were discovered within 15 years, confirming the table.
+
+**The Mendeleev problem**
+
+- Argon (Ar, 39.9) came **before** potassium (K, 39.1) by weight — but Ar clearly belonged with noble gases.
+
+- Co–Ni and Te–I were similarly reversed.
+
+**Moseley's fix (1913)**
+
+- Re-ordered by **atomic number** (= number of protons), not atomic weight.
+
+- All anomalies vanished.
+
+- The **modern periodic law** is based on atomic number.
 
 <div class="keypoint">
 
@@ -177,10 +319,76 @@ The modern periodic table has **7 periods (rows)**, **18 groups (columns)**, **1
 
 ### The Four Blocks
 
-- **s-block** (Groups 1–2): Alkali metals (Li, Na, K, Rb, Cs, Fr) and alkaline earth metals (Be, Mg, Ca, Sr, Ba, Ra). Soft, reactive, low melting points.
-- **p-block** (Groups 13–18): Contains the most variety — metals, metalloids, non-metals, noble gases. Includes carbon, nitrogen, halogens.
-- **d-block** (Groups 3–12): Transition metals. Iron, copper, gold, silver, platinum. Hard, high melting points, variable oxidation states.
-- **f-block** (below main table): Lanthanides (4f, rare earths) and Actinides (5f, radioactive). All actinides beyond uranium are man-made.
+- **s-block** (Groups 1–2) — Alkali + alkaline-earth metals. Li, Na, K | Be, Mg, Ca. Soft, reactive, low MP.
+
+- **p-block** (Groups 13–18) — The most variety: metals + metalloids + non-metals + noble gases.
+
+- **d-block** (Groups 3–12) — Transition metals. Fe, Cu, Au, Ag, Pt. Hard, high MP, variable oxidation states.
+
+- **f-block** (below main table) — Lanthanides (4f, rare earths) + Actinides (5f, radioactive). All elements beyond U are man-made.
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="280" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">Periodic Table — 4 Blocks (s, p, d, f)</text>
+
+<!-- s-block (left) -->
+<rect x="30" y="40" width="65" height="180" fill="#bbdefb" stroke="#0d47a1" stroke-width="2"/>
+<text x="62" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">s</text>
+<text x="62" y="78" text-anchor="middle" font-size="10" fill="#0d47a1">Gr 1–2</text>
+<text x="62" y="100" text-anchor="middle" font-size="9" fill="#0d47a1">Alkali +</text>
+<text x="62" y="113" text-anchor="middle" font-size="9" fill="#0d47a1">Alkaline</text>
+<text x="62" y="126" text-anchor="middle" font-size="9" fill="#0d47a1">earth</text>
+<text x="62" y="155" text-anchor="middle" font-size="9" font-weight="bold" fill="#0d47a1">Li Na K</text>
+<text x="62" y="170" text-anchor="middle" font-size="9" font-weight="bold" fill="#0d47a1">Mg Ca</text>
+<text x="62" y="200" text-anchor="middle" font-size="9" fill="#0d47a1">Soft, reactive</text>
+<text x="62" y="213" text-anchor="middle" font-size="9" fill="#0d47a1">Low MP</text>
+
+<!-- p-block (right wing) -->
+<rect x="320" y="40" width="195" height="180" fill="#c8e6c9" stroke="#1b5e20" stroke-width="2"/>
+<text x="417" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">p</text>
+<text x="417" y="78" text-anchor="middle" font-size="10" fill="#1b5e20">Gr 13–18</text>
+<text x="417" y="100" text-anchor="middle" font-size="9" fill="#1b5e20">Metals + Metalloids</text>
+<text x="417" y="113" text-anchor="middle" font-size="9" fill="#1b5e20">+ Non-metals</text>
+<text x="417" y="126" text-anchor="middle" font-size="9" fill="#1b5e20">+ Noble gases</text>
+<text x="417" y="155" text-anchor="middle" font-size="9" font-weight="bold" fill="#1b5e20">C N O F Ne</text>
+<text x="417" y="170" text-anchor="middle" font-size="9" font-weight="bold" fill="#1b5e20">Al Si P S Cl</text>
+<text x="417" y="200" text-anchor="middle" font-size="9" fill="#1b5e20">The most</text>
+<text x="417" y="213" text-anchor="middle" font-size="9" fill="#1b5e20">variety</text>
+
+<!-- d-block (middle) -->
+<rect x="100" y="80" width="215" height="140" fill="#ffe0b2" stroke="#e65100" stroke-width="2"/>
+<text x="207" y="100" text-anchor="middle" font-size="13" font-weight="bold" fill="#bf360c">d</text>
+<text x="207" y="118" text-anchor="middle" font-size="10" fill="#bf360c">Gr 3–12</text>
+<text x="207" y="138" text-anchor="middle" font-size="10" fill="#bf360c">TRANSITION METALS</text>
+<text x="207" y="158" text-anchor="middle" font-size="9" font-weight="bold" fill="#bf360c">Fe Cu Ag Au Zn</text>
+<text x="207" y="171" text-anchor="middle" font-size="9" font-weight="bold" fill="#bf360c">Pt Ni Cr Mn Ti</text>
+<text x="207" y="195" text-anchor="middle" font-size="9" fill="#bf360c">Hard, high MP</text>
+<text x="207" y="208" text-anchor="middle" font-size="9" fill="#bf360c">Variable oxidation states</text>
+
+<!-- f-block (bottom) -->
+<rect x="100" y="240" width="415" height="60" fill="#f3e5f5" stroke="#4a148c" stroke-width="2"/>
+<text x="307" y="262" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a148c">f</text>
+<text x="120" y="262" font-size="10" font-weight="bold" fill="#4a148c">Lanthanides (4f):</text>
+<text x="240" y="262" font-size="9" fill="#4a148c">La–Lu, "rare earths"</text>
+<text x="120" y="280" font-size="10" font-weight="bold" fill="#4a148c">Actinides (5f):</text>
+<text x="220" y="280" font-size="9" fill="#4a148c">Ac–Lr, all radioactive (incl. U, Pu)</text>
+<text x="307" y="293" text-anchor="middle" font-size="9" fill="#4a148c">Beyond Uranium = man-made (transuranic)</text>
+
+<!-- Hydrogen + Helium pointer -->
+<rect x="30" y="45" width="22" height="20" fill="#fff59d" stroke="#f57f17" stroke-width="1.5"/>
+<text x="41" y="59" text-anchor="middle" font-size="9" font-weight="bold" fill="#bf360c">H</text>
+<rect x="493" y="45" width="22" height="20" fill="#fff59d" stroke="#f57f17" stroke-width="1.5"/>
+<text x="504" y="59" text-anchor="middle" font-size="9" font-weight="bold" fill="#bf360c">He</text>
+
+<!-- Bottom note -->
+<text x="280" y="316" text-anchor="middle" font-size="10" fill="#555">7 periods • 18 groups • 118 elements (last 4 added 2016: Nh, Mc, Ts, Og)</text>
+
+</svg>
+
+</div>
 
 ### Important Groups — Learn These Families
 
@@ -228,7 +436,7 @@ Electronegativity decreasing order: **F > O > N > Cl > Br > I**. Memory: **"Fren
 
 \newpage
 
-# PART C — CHEMICAL BONDING AND REACTIONS
+# PART C — CHEMICAL BONDING AND REACTIONS {#part-c}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -254,33 +462,120 @@ flowchart TD
 
 ## Chapter C1 — How Atoms Bond Together
 
-There are three main types of chemical bond. Understanding which type forms tells you almost everything about a compound's properties.
+**Three main bond types — knowing which type forms tells you almost everything about the compound.**
 
-### Ionic Bond
+### Ionic Bond — by transfer
 
-Formed by **transfer of electrons** — one atom gives, another takes. Results in oppositely charged ions attracted to each other. Typically between a metal and a non-metal.
+- One atom **gives** electron(s), another **takes**.
 
-Examples: NaCl (table salt), MgO (magnesia), CaF₂ (fluorspar).
+- Result: oppositely charged ions attract.
 
-Properties: High melting point, conducts electricity when dissolved in water or melted, brittle.
+- Typically forms between a **metal + non-metal**.
 
-### Covalent Bond
+- **Examples** — NaCl (table salt), MgO, CaF₂.
 
-Formed by **sharing of electrons** between two non-metals. Can be single (one shared pair), double (two shared pairs), or triple (three shared pairs).
+- **Properties** — high MP, conducts when dissolved/molten, brittle.
 
-Examples: H₂O (water), CH₄ (methane), O₂ (oxygen — double bond), N₂ (nitrogen — triple bond).
+### Covalent Bond — by sharing
 
-### Metallic Bond
+- Two non-metals **share** electron pairs.
 
-In metals, valence electrons form a "sea" that flows freely around positive metal cores. This is why metals conduct electricity and heat, are malleable, and are lustrous.
+- **Single** (1 pair), **double** (2 pairs), **triple** (3 pairs).
+
+- **Examples** — H₂O, CH₄, O₂ (double), N₂ (triple).
+
+- **Properties** — low MP, poor conductor, often gas or liquid.
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="280" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">Ionic vs Covalent Bonding</text>
+
+<!-- IONIC panel -->
+<rect x="20" y="40" width="250" height="220" rx="8" fill="#fce4ec" stroke="#c62828" stroke-width="2"/>
+<text x="145" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#b71c1c">IONIC (NaCl)</text>
+
+<!-- Na -->
+<circle cx="85" cy="130" r="32" fill="none" stroke="#0d47a1" stroke-width="1.5" stroke-dasharray="3,2"/>
+<circle cx="85" cy="130" r="20" fill="#bbdefb" stroke="#0d47a1" stroke-width="2"/>
+<text x="85" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="#0d47a1">Na⁺</text>
+<text x="85" y="180" text-anchor="middle" font-size="10" fill="#0d47a1">(lost 1 e⁻)</text>
+
+<!-- Arrow electron transfer -->
+<path d="M 105,115 Q 145,95 175,115" stroke="#bf360c" stroke-width="2" fill="none" marker-end="url(#ar1)"/>
+<defs>
+  <marker id="ar1" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L7,3.5 Z" fill="#bf360c"/>
+  </marker>
+</defs>
+<circle cx="140" cy="98" r="5" fill="#bf360c"/>
+<text x="146" y="92" font-size="9" font-weight="bold" fill="#bf360c">e⁻</text>
+
+<!-- Cl -->
+<circle cx="205" cy="130" r="36" fill="none" stroke="#1b5e20" stroke-width="1.5" stroke-dasharray="3,2"/>
+<circle cx="205" cy="130" r="24" fill="#c8e6c9" stroke="#1b5e20" stroke-width="2"/>
+<text x="205" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b5e20">Cl⁻</text>
+<text x="205" y="180" text-anchor="middle" font-size="10" fill="#1b5e20">(gained 1 e⁻)</text>
+
+<text x="145" y="215" text-anchor="middle" font-size="10" font-weight="bold" fill="#b71c1c">Electron TRANSFER</text>
+<text x="145" y="230" text-anchor="middle" font-size="9" fill="#b71c1c">Metal → Non-metal</text>
+<text x="145" y="244" text-anchor="middle" font-size="9" fill="#b71c1c">High MP | Brittle | Conducts when dissolved</text>
+
+<!-- COVALENT panel -->
+<rect x="290" y="40" width="250" height="220" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+<text x="415" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#1b5e20">COVALENT (H₂O)</text>
+
+<!-- O -->
+<circle cx="415" cy="135" r="30" fill="#ffcdd2" stroke="#c62828" stroke-width="2"/>
+<text x="415" y="140" text-anchor="middle" font-size="16" font-weight="bold" fill="#b71c1c">O</text>
+
+<!-- H1 -->
+<circle cx="355" cy="170" r="18" fill="#fff59d" stroke="#f57f17" stroke-width="2"/>
+<text x="355" y="175" text-anchor="middle" font-size="13" font-weight="bold" fill="#e65100">H</text>
+
+<!-- H2 -->
+<circle cx="475" cy="170" r="18" fill="#fff59d" stroke="#f57f17" stroke-width="2"/>
+<text x="475" y="175" text-anchor="middle" font-size="13" font-weight="bold" fill="#e65100">H</text>
+
+<!-- Shared electron pairs (between O and each H) -->
+<circle cx="378" cy="155" r="3" fill="#1b5e20"/>
+<circle cx="386" cy="158" r="3" fill="#1b5e20"/>
+<circle cx="444" cy="155" r="3" fill="#1b5e20"/>
+<circle cx="452" cy="158" r="3" fill="#1b5e20"/>
+
+<!-- Bond lines -->
+<line x1="370" y1="165" x2="395" y2="148" stroke="#1b5e20" stroke-width="2"/>
+<line x1="460" y1="165" x2="435" y2="148" stroke="#1b5e20" stroke-width="2"/>
+
+<text x="415" y="215" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">Electron SHARING</text>
+<text x="415" y="230" text-anchor="middle" font-size="9" fill="#1b5e20">Non-metal + Non-metal</text>
+<text x="415" y="244" text-anchor="middle" font-size="9" fill="#1b5e20">Low MP | Poor conductor | Gas/liquid</text>
+
+</svg>
+
+</div>
+
+### Metallic Bond — "sea of electrons"
+
+- Valence electrons form a **delocalised sea** that flows freely around positive metal cores.
+
+- This explains why metals: **conduct electricity + heat, are malleable, and are lustrous**.
 
 ### Dative (Coordinate) Bond
 
-Both electrons in the shared pair come from the **same atom**. Examples: NH₄⁺ (ammonium ion), H₃O⁺ (hydronium ion).
+- Both electrons in the shared pair come from the **same atom**.
+
+- **Examples** — NH₄⁺ (ammonium), H₃O⁺ (hydronium).
 
 ### Hydrogen Bond
 
-A weak intermolecular attraction that forms when hydrogen is bonded to a very electronegative atom — **F, O, or N** only.
+- A weak intermolecular attraction.
+
+- Forms when H is bonded to a very electronegative atom — **F, O, or N only**.
+
+- Strength: ~1/10 of a covalent bond, but enough to keep water liquid at room temp.
 
 <div class="keypoint">
 
@@ -314,7 +609,7 @@ flowchart TD
 
 ## Chapter C2 — Types of Chemical Reactions
 
-Every chemical change in a competitive exam question falls into one of these categories. Know them by name and example.
+**Every exam reaction question maps to one of these categories.** Know them by name and example.
 
 | Type | Pattern | Example |
 |------|---------|---------|
@@ -343,7 +638,7 @@ Students confuse "oxidation" with "gaining oxygen" — that is only the old, inc
 
 \newpage
 
-# PART D — ACIDS, BASES, SALTS
+# PART D — ACIDS, BASES, SALTS {#part-d}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -401,7 +696,102 @@ flowchart TD
 
 ## Chapter D2 — The pH Scale
 
-pH = −log[H⁺]. Think of pH as a 0-to-14 ruler where 0 is maximally acidic and 14 is maximally basic.
+**The idea**
+
+- **pH = −log[H⁺]** (negative log of hydrogen-ion concentration).
+
+- A **0-to-14 ruler** where 0 is maximally acidic and 14 is maximally basic.
+
+- Each step = **10× change** in H⁺ concentration.
+
+- pH 7 = neutral; below = acidic; above = basic (alkaline).
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="280" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">pH Scale — 0 to 14</text>
+
+<!-- Rainbow strip pH 0..14 -->
+<rect x="30" y="55" width="35" height="50" fill="#b71c1c"/>
+<rect x="65" y="55" width="35" height="50" fill="#d32f2f"/>
+<rect x="100" y="55" width="35" height="50" fill="#f44336"/>
+<rect x="135" y="55" width="35" height="50" fill="#ff7043"/>
+<rect x="170" y="55" width="35" height="50" fill="#ffa726"/>
+<rect x="205" y="55" width="35" height="50" fill="#ffd54f"/>
+<rect x="240" y="55" width="35" height="50" fill="#fff176"/>
+<rect x="275" y="55" width="35" height="50" fill="#aed581"/>
+<rect x="310" y="55" width="35" height="50" fill="#66bb6a"/>
+<rect x="345" y="55" width="35" height="50" fill="#42a5f5"/>
+<rect x="380" y="55" width="35" height="50" fill="#1976d2"/>
+<rect x="415" y="55" width="35" height="50" fill="#3949ab"/>
+<rect x="450" y="55" width="35" height="50" fill="#5e35b1"/>
+<rect x="485" y="55" width="35" height="50" fill="#7b1fa2"/>
+<rect x="520" y="55" width="20" height="50" fill="#4a148c"/>
+
+<!-- Scale numbers -->
+<text x="47" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">0</text>
+<text x="82" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">1</text>
+<text x="117" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">2</text>
+<text x="152" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">3</text>
+<text x="187" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">4</text>
+<text x="222" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">5</text>
+<text x="257" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">6</text>
+<text x="292" y="125" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">7</text>
+<text x="327" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">8</text>
+<text x="362" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">9</text>
+<text x="397" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">10</text>
+<text x="432" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">11</text>
+<text x="467" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">12</text>
+<text x="502" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">13</text>
+<text x="530" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">14</text>
+
+<!-- ACIDIC / NEUTRAL / BASIC labels -->
+<text x="150" y="44" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">ACIDIC</text>
+<text x="292" y="44" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">NEUTRAL</text>
+<text x="450" y="44" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a148c">BASIC / ALKALINE</text>
+
+<!-- Substance markers below -->
+<text x="47" y="148" text-anchor="middle" font-size="9" fill="#b71c1c">Battery</text>
+<text x="47" y="158" text-anchor="middle" font-size="9" fill="#b71c1c">acid</text>
+
+<text x="100" y="148" text-anchor="middle" font-size="9" fill="#b71c1c">Stomach</text>
+<text x="100" y="158" text-anchor="middle" font-size="9" fill="#b71c1c">acid (1.5)</text>
+
+<text x="135" y="148" text-anchor="middle" font-size="9" fill="#b71c1c">Lemon</text>
+<text x="135" y="158" text-anchor="middle" font-size="9" fill="#b71c1c">(2–3)</text>
+<text x="170" y="148" text-anchor="middle" font-size="9" fill="#b71c1c">Vinegar</text>
+<text x="170" y="158" text-anchor="middle" font-size="9" fill="#b71c1c">(2.5–3.5)</text>
+<text x="222" y="148" text-anchor="middle" font-size="9" fill="#bf360c">Coffee</text>
+<text x="222" y="158" text-anchor="middle" font-size="9" fill="#bf360c">(~5)</text>
+
+<text x="292" y="148" text-anchor="middle" font-size="9" fill="#1b5e20">Pure</text>
+<text x="292" y="158" text-anchor="middle" font-size="9" fill="#1b5e20">water</text>
+
+<text x="306" y="170" font-size="9" fill="#0d47a1">Blood (7.4)</text>
+<line x1="304" y1="160" x2="306" y2="105" stroke="#0d47a1" stroke-width="0.8"/>
+
+<text x="362" y="148" text-anchor="middle" font-size="9" fill="#0d47a1">Baking</text>
+<text x="362" y="158" text-anchor="middle" font-size="9" fill="#0d47a1">soda (9)</text>
+
+<text x="432" y="148" text-anchor="middle" font-size="9" fill="#4a148c">Ammonia</text>
+<text x="432" y="158" text-anchor="middle" font-size="9" fill="#4a148c">(~11)</text>
+<text x="502" y="148" text-anchor="middle" font-size="9" fill="#4a148c">Bleach</text>
+<text x="502" y="158" text-anchor="middle" font-size="9" fill="#4a148c">(~13)</text>
+<text x="530" y="148" text-anchor="middle" font-size="9" fill="#4a148c">NaOH</text>
+
+<!-- Bottom: Key facts box -->
+<rect x="30" y="180" width="510" height="50" rx="6" fill="#fffde7" stroke="#f9a825" stroke-width="1.5"/>
+<text x="285" y="200" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Exam trap: Blood is NOT neutral!</text>
+<text x="40" y="216" font-size="10" fill="#333">Blood = 7.35–7.45 (slightly alkaline). Below 7.35 = acidosis. Above 7.45 = alkalosis.</text>
+<text x="40" y="227" font-size="10" fill="#333">Bicarbonate buffer keeps blood pH steady.</text>
+
+</svg>
+
+</div>
+
+**Common pH values to memorise:**
 
 | Substance | Approximate pH |
 |-----------|---------------|
@@ -575,7 +965,7 @@ Baking soda is NaHCO₃ (sodium bicarbonate). It is mildly basic (pH ~8.3). When
 
 \newpage
 
-# PART E — METALS AND THE ACTIVITY SERIES
+# PART E — METALS AND THE ACTIVITY SERIES {#part-e}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -634,7 +1024,7 @@ flowchart TD
 
 ## Chapter E2 — Activity Series (Reactivity Series)
 
-This is one of the most frequently tested topics in competitive chemistry. Memorise the order.
+**One of the most frequently tested topics in competitive chemistry.** Memorise the order — questions just rephrase it.
 
 **Most reactive → Least reactive:**
 
@@ -746,7 +1136,7 @@ Galvanising uses zinc as a protective coat. Zinc is above iron in the activity s
 
 \newpage
 
-# PART F — ORGANIC CHEMISTRY
+# PART F — ORGANIC CHEMISTRY {#part-f}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -923,7 +1313,7 @@ Hydrogen has by far the highest calorific value — nearly 3× petrol. This is w
 
 \newpage
 
-# PART G — POLYMERS AND FIBRES
+# PART G — POLYMERS AND FIBRES {#part-g}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1035,7 +1425,7 @@ Natural rubber (polyisoprene) is sticky, weak, and melts in summer heat. In 1839
 
 \newpage
 
-# PART H — EVERYDAY CHEMISTRY
+# PART H — EVERYDAY CHEMISTRY {#part-h}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1163,7 +1553,7 @@ Penicillin — discovered by Alexander Fleming in **1928** when he noticed the m
 
 \newpage
 
-# PART I — ENVIRONMENTAL CHEMISTRY
+# PART I — ENVIRONMENTAL CHEMISTRY {#part-i}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1289,7 +1679,7 @@ flowchart TD
 
 \newpage
 
-# PART T — DISCOVERIES AND INVENTORS IN CHEMISTRY
+# PART T — DISCOVERIES AND INVENTORS IN CHEMISTRY {#part-t}
 
 Discovery + year questions appear in every SSC and banking paper — learn each entry here.
 
@@ -1331,7 +1721,7 @@ Discovery + year questions appear in every SSC and banking paper — learn each 
 
 \newpage
 
-# PART U — THE ESSENTIAL CHEMICAL NAMES TABLE
+# PART U — THE ESSENTIAL CHEMICAL NAMES TABLE {#part-u}
 
 This is the table you must memorise completely. Chemical name ↔ everyday name questions appear in every competitive exam paper.
 
@@ -1392,7 +1782,7 @@ Plaster of Paris vs Gypsum — a classic trap: Gypsum is CaSO₄·2H₂O (two wa
 
 \newpage
 
-# PART V — ALLOYS AND METALLURGY
+# PART V — ALLOYS AND METALLURGY {#part-v}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1453,7 +1843,7 @@ Brass = copper + zinc. Bronze = copper + tin. These two are confused in nearly e
 
 \newpage
 
-# PART Y — FERTILISERS
+# PART Y — FERTILISERS {#part-y}
 
 ## Chapter Y1 — The NPK Macronutrients
 
@@ -1536,7 +1926,7 @@ Rhizobium bacteria live in root nodules of legumes (pulses — peas, beans, lent
 
 \newpage
 
-# PART AA — INDUSTRIAL PROCESSES
+# PART AA — INDUSTRIAL PROCESSES {#part-aa}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1589,7 +1979,7 @@ For the three big acid/base industrial processes: **"Haber makes ammonia (H for 
 
 \newpage
 
-# PART AB — ORGANIC CHEMISTRY DEPTH
+# PART AB — ORGANIC CHEMISTRY DEPTH {#part-ab}
 
 ## Chapter AB1 — IUPAC Naming Rules
 
@@ -1688,7 +2078,7 @@ flowchart LR
 
 \newpage
 
-# PART AC — BIOMOLECULES
+# PART AC — BIOMOLECULES {#part-ac}
 
 <div class="chapter-summary">
 <div class="mermaid">

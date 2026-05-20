@@ -107,6 +107,31 @@ async def toggle_exam_stage_visibility(
 # --------------------------------------------------------------------------- #
 
 @admin_router.put(
+    "/exam-stages/{stage_id}/pattern",
+    response_model=schema.ExamStageOut,
+)
+async def update_exam_stage_pattern(
+    stage_id: UUID,
+    payload: schema.ExamPatternCreate,
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+):
+    """Replace the ExamPattern (timing blueprint) attached to a stage.
+
+    Use this when an exam board updates the notification — total duration,
+    sectional timing flag, per-section question counts and per-section
+    durations all flow through here. The student-facing player reads this
+    pattern at attempt-time, so changes take effect on the very next attempt.
+
+    Validation: section question_count and (when sectional timing is on)
+    section duration_minutes MUST sum to the totals — see
+    ``validate_pattern_sums``. Existing user attempts are not retroactively
+    rescored — the timing change only affects future attempts.
+    """
+    return await service.replace_exam_pattern(db, stage_id=stage_id, pattern=payload)
+
+
+@admin_router.put(
     "/exam-stages/{stage_id}/pricing",
     response_model=schema.ExamStageOut,
 )

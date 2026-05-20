@@ -9,21 +9,23 @@ date: "2026"
 
 <div class="examtip">
 
-Physics questions in competitive exams fall into a predictable pattern. They are rarely about solving equations — they are almost always about conceptual recall and application. The examiner's favourite moves are:
+**Physics questions follow a predictable pattern.** They are rarely about solving equations — almost always about conceptual recall and application.
 
-**1. "Why does X happen?" questions** (pressure cooker, ice floating, sky colour) — these are pure understanding questions, and they appear in every paper.
+**The examiner's favourite moves:**
 
-**2. "Who discovered / invented X?"** — Röntgen, Faraday, Chadwick, Fleming; these appear 1-2 times per paper.
+- **1. "Why does X happen?"** — pressure cooker, ice floating, sky colour. Pure understanding; every paper.
 
-**3. Correction for vision defects** — myopia/hypermetropia and concave/convex lens. Never skipped by examiners.
+- **2. "Who discovered / invented X?"** — Röntgen, Faraday, Chadwick, Fleming. 1–2 per paper.
 
-**4. Motor vs Generator** (which is which, which hand rule) — a classic 1-mark gift if you know it.
+- **3. Vision defects** — myopia / hypermetropia and concave / convex lens. Never skipped.
 
-**5. Sound speed and echo distance** — straightforward calculation questions.
+- **4. Motor vs Generator** — which hand rule? A classic 1-mark gift.
 
-**6. Alpha, Beta, Gamma radiation properties** — penetration, charge, what stops them.
+- **5. Sound speed and echo distance** — straightforward calculation.
 
-Pure numerics (actual force calculations, wave equation solving) appear rarely. This book builds your conceptual understanding first, then gives you the numbers you must know cold.
+- **6. Alpha / Beta / Gamma radiation** — penetration, charge, what stops them.
+
+**Pure numerics** (force calculations, wave equations) appear rarely. This book builds concepts first, then gives the numbers you must know cold.
 
 </div>
 
@@ -44,7 +46,45 @@ Pure numerics (actual force calculations, wave equation solving) appear rarely. 
 
 \newpage
 
-# PART A — MECHANICS
+---
+
+# How to read this book — your real study load
+
+**Total pages: 35.** Don't let the page count scare you.
+
+### Mandatory reading — pages 1 to 25 (71% of the book)
+
+That's the full syllabus. Master those 25 pages and you've covered every concept an examiner can fairly ask.
+
+### Bonus material — pages 26 to 35 (29% of the book)
+
+Reference tables, compilations, and self-test material — useful in your last week of revision OR if you're aiming for a top rank.
+
+### Two study tracks
+
+- **Just want to pass?** Read pages 1–25. Skim the appendices once before the exam.
+
+- **Want to top your batch?** Read the appendices too — they're how 70% becomes 90%.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p4–8** | [PART A](#part-a) | MECHANICS |
+| **p9–10** | [PART B](#part-b) | PROPERTIES OF MATTER |
+| **p11–13** | [PART C](#part-c) | HEAT AND THERMODYNAMICS |
+| **p14–18** | [PART D](#part-d) | WAVES, SOUND, AND LIGHT |
+| **p19–21** | [PART E](#part-e) | ELECTRICITY AND MAGNETISM |
+| **p22–25** | [PART F](#part-f) | MODERN PHYSICS |
+| **p26–27** | [PART V](#part-v) | INSTRUMENTS AND WHAT THEY MEASURE — *Instruments & What They Measure — barometer, seismograph, etc.* |
+| **p28–29** | [PART W](#part-w) | DISCOVERIES AND INVENTIONS IN PHYSICS — *Discoveries & Inventions — Newton, Faraday, Chadwick.* |
+| **p30–31** | [PART X](#part-x) | DAILY-LIFE PHYSICS ("WHY" QUESTIONS) — *Daily-Life Physics — pressure cooker, blue sky, ice floats.* |
+| **p32–35** | [PART AA](#part-aa) | KEY CONSTANTS AND FORMULAS — *Key Constants & Formulas — single-page exam-day reference.* |
+
+---
+# PART A — MECHANICS {#part-a}
 
 ## Chapter A1 — SI Units
 
@@ -109,13 +149,27 @@ flowchart TD
 
 ## Chapter A2 — Newton's Laws of Motion
 
-Isaac Newton formulated these three laws in 1687 in his Principia Mathematica. They governed everything from cricket balls to rockets until Einstein refined them for extreme speeds and masses.
+**Isaac Newton, 1687** — published in *Principia Mathematica*.
+
+- Governed everything from cricket balls to rockets.
+
+- Refined by Einstein for extreme speeds (relativity) and quantum scales.
 
 ### First Law — Law of Inertia
 
-An object at rest stays at rest, and an object moving at constant velocity continues moving at constant velocity, unless acted upon by an external force.
+**Statement:**
 
-**Inertia** is the tendency of an object to resist change in its state of motion. Inertia is proportional to mass — a truck is harder to start moving than a bicycle.
+- An object **at rest stays at rest**.
+
+- An object **moving at constant velocity** continues at the same velocity.
+
+- Unless acted upon by an **external force**.
+
+**Inertia:**
+
+- Tendency to resist change in motion.
+
+- **Proportional to mass** — a truck is harder to start moving than a bicycle.
 
 <div class="examtip">
 
@@ -125,17 +179,102 @@ Exam applications of Newton's First Law: seat belts (body wants to continue movi
 
 ### Second Law — F = ma
 
-The rate of change of momentum of an object is proportional to the applied force and in the direction of the force.
+**Statement:** rate of change of momentum ∝ applied force, in the direction of the force.
 
-Simplified: **Force = mass × acceleration**
+**Simplified:** **Force = mass × acceleration**
 
 - More force → more acceleration.
-- More mass → less acceleration for same force.
-- SI unit of force: newton (N). One newton accelerates 1 kg at 1 m/s².
+
+- More mass → less acceleration for the same force.
+
+- SI unit: **newton (N)**. 1 N accelerates 1 kg at 1 m/s².
 
 ### Third Law — Action and Reaction
 
-For every action there is an equal and opposite reaction. The two forces act on different objects.
+**Statement:** for every action there is an **equal and opposite reaction**.
+
+- The two forces act on **different objects** (this trips up most students).
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 280" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="270" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">Newton's 3 Laws — Visual Summary</text>
+
+<!-- Panel 1: Inertia -->
+<rect x="10" y="40" width="170" height="220" rx="8" fill="#fffde7" stroke="#f9a825" stroke-width="2"/>
+<text x="95" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#e65100">1st: Inertia</text>
+
+<!-- Car at rest then sudden brake -->
+<rect x="35" y="105" width="80" height="35" rx="6" fill="#90caf9" stroke="#0d47a1" stroke-width="2"/>
+<circle cx="50" cy="143" r="7" fill="#37474f"/>
+<circle cx="100" cy="143" r="7" fill="#37474f"/>
+<!-- Person inside (lurching forward) -->
+<circle cx="75" cy="92" r="6" fill="#ef9a9a"/>
+<line x1="75" y1="98" x2="85" y2="115" stroke="#c62828" stroke-width="2.5"/>
+<line x1="80" y1="105" x2="95" y2="110" stroke="#c62828" stroke-width="2"/>
+<!-- Arrow showing lurch forward -->
+<line x1="115" y1="98" x2="140" y2="98" stroke="#bf360c" stroke-width="2" marker-end="url(#na)"/>
+<text x="135" y="92" font-size="9" fill="#bf360c">lurches</text>
+
+<text x="95" y="175" text-anchor="middle" font-size="9" fill="#e65100">Car brakes suddenly →</text>
+<text x="95" y="188" text-anchor="middle" font-size="9" fill="#e65100">body continues forward</text>
+<text x="95" y="205" text-anchor="middle" font-size="9" fill="#e65100">(why seatbelts!)</text>
+<text x="95" y="225" text-anchor="middle" font-size="9" font-style="italic" fill="#e65100">Object resists change</text>
+<text x="95" y="238" text-anchor="middle" font-size="9" font-style="italic" fill="#e65100">in its state of motion.</text>
+
+<!-- Panel 2: F = ma -->
+<rect x="190" y="40" width="170" height="220" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+<text x="275" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#1b5e20">2nd: F = ma</text>
+
+<!-- Box with arrow showing force -->
+<rect x="225" y="105" width="80" height="50" fill="#a5d6a7" stroke="#1b5e20" stroke-width="2"/>
+<text x="265" y="135" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">m</text>
+<!-- Force arrow -->
+<line x1="195" y1="130" x2="220" y2="130" stroke="#bf360c" stroke-width="3" marker-end="url(#na)"/>
+<text x="200" y="120" font-size="11" font-weight="bold" fill="#bf360c">F</text>
+<!-- Acceleration arrow -->
+<line x1="305" y1="130" x2="340" y2="130" stroke="#1565c0" stroke-width="3" marker-end="url(#na)"/>
+<text x="315" y="120" font-size="11" font-weight="bold" fill="#1565c0">a</text>
+
+<text x="275" y="180" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">F = m × a</text>
+<text x="275" y="200" text-anchor="middle" font-size="9" fill="#1b5e20">More F → more a</text>
+<text x="275" y="214" text-anchor="middle" font-size="9" fill="#1b5e20">More m → less a (same F)</text>
+<text x="275" y="232" text-anchor="middle" font-size="9" font-style="italic" fill="#1b5e20">1 N = mass × accel</text>
+<text x="275" y="245" text-anchor="middle" font-size="9" font-style="italic" fill="#1b5e20">(of 1 kg @ 1 m/s²)</text>
+
+<!-- Panel 3: Action-Reaction -->
+<rect x="370" y="40" width="160" height="220" rx="8" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+<text x="450" y="60" text-anchor="middle" font-size="12" font-weight="bold" fill="#880e4f">3rd: Action ↔ Reaction</text>
+
+<!-- Rocket -->
+<polygon points="450,90 460,120 440,120" fill="#37474f"/>
+<rect x="440" y="120" width="20" height="50" fill="#90a4ae" stroke="#37474f" stroke-width="1.5"/>
+<!-- Flame downward -->
+<polygon points="445,170 455,170 460,200 450,210 440,200" fill="#ff7043"/>
+<polygon points="447,200 453,200 455,220 450,225 445,220" fill="#fff59d"/>
+<!-- Up arrow on rocket -->
+<line x1="450" y1="80" x2="450" y2="65" stroke="#1b5e20" stroke-width="2.5" marker-end="url(#na2)"/>
+<text x="465" y="70" font-size="10" font-weight="bold" fill="#1b5e20">Reaction</text>
+<text x="465" y="82" font-size="9" fill="#1b5e20">(rocket up)</text>
+<!-- Down arrow for gas -->
+<line x1="430" y1="220" x2="430" y2="235" stroke="#bf360c" stroke-width="2.5" marker-end="url(#na2)"/>
+<text x="385" y="232" font-size="10" font-weight="bold" fill="#bf360c">Action</text>
+<text x="385" y="244" font-size="9" fill="#bf360c">(gas down)</text>
+
+<defs>
+  <marker id="na" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L7,3.5 Z" fill="#bf360c"/>
+  </marker>
+  <marker id="na2" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L7,3.5 Z" fill="#333"/>
+  </marker>
+</defs>
+
+</svg>
+
+</div>
 
 <div class="examtip">
 
@@ -240,15 +379,27 @@ flowchart TD
 
 ### Conservation of Energy
 
-Energy cannot be created or destroyed. It transforms from one form to another. Total energy of an isolated system is constant.
+**The law:**
 
-Classic example: A pendulum at its highest point has maximum PE and zero KE. At the lowest point, PE converts entirely to KE. The total (PE + KE) stays constant throughout the swing (ignoring air resistance).
+- Energy **cannot be created or destroyed**.
+
+- It only **transforms** from one form to another.
+
+- Total energy of an **isolated system is constant**.
+
+**Classic example — the pendulum:**
+
+- At the **highest point** → maximum PE, zero KE.
+
+- At the **lowest point** → zero PE, maximum KE.
+
+- (PE + KE) stays constant throughout the swing (ignoring air resistance).
 
 ---
 
 \newpage
 
-# PART B — PROPERTIES OF MATTER
+# PART B — PROPERTIES OF MATTER {#part-b}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -279,13 +430,27 @@ flowchart TD
 
 ### Pascal's Law
 
-Pressure applied to an enclosed fluid transmits equally in all directions. This is why hydraulic systems (car brakes, JCB excavators, dental chairs) can multiply force enormously with a small input.
+**Statement:** pressure on an enclosed fluid transmits **equally in all directions**.
+
+**Why it matters:**
+
+- Hydraulic systems can **multiply force** enormously from a small input.
+
+- Applications — car brakes, JCB excavators, dental chairs, hydraulic press.
 
 ### Archimedes' Principle
 
-The upward buoyant force on a body immersed in fluid equals the weight of fluid displaced by the body.
+**Statement:** upward buoyant force on a submerged body = **weight of fluid displaced**.
 
-A steel ship floats because it is hollow — its effective density (steel + air) is less than water, so it displaces enough water for the buoyant force to equal its weight. A solid steel ball sinks because its density is much greater than water.
+**Steel ship vs steel ball:**
+
+- A solid steel ball **sinks** — density of steel >> density of water.
+
+- A steel ship **floats** because it is **hollow**.
+
+- Effective density (steel + interior air) < density of water.
+
+- Ship displaces enough water for the buoyant force to equal its weight.
 
 <div class="examtip">
 
@@ -316,15 +481,37 @@ flowchart TD
 
 ## Chapter B2 — Surface Tension, Viscosity, Capillarity
 
-- **Surface tension** — why water forms droplets (spherical = minimum surface area for a given volume), why insects can walk on water, why a needle can float on still water. Detergent reduces surface tension — the soap molecule disrupts the surface layer.
-- **Viscosity** — internal friction in fluids. Honey > water > petrol. Viscosity decreases with temperature (why engine oil thins when hot).
-- **Capillarity** — rise or fall of liquid in narrow tubes due to surface tension vs gravity. Water rises in a glass capillary (adhesion to glass > cohesion between water molecules). Mercury falls in a glass capillary. Plants use capillary action to draw water up roots and stems.
+**Surface tension**
+
+- Why water forms droplets — spherical shape = minimum surface area for a given volume.
+
+- Why insects can walk on water; why a needle can float on still water.
+
+- **Detergent reduces surface tension** — soap molecules disrupt the surface layer.
+
+**Viscosity**
+
+- Internal friction in fluids; resistance to flow.
+
+- Ranking: **honey > water > petrol**.
+
+- **Viscosity decreases with temperature** (why engine oil thins when hot).
+
+**Capillarity**
+
+- Rise or fall of liquid in narrow tubes — surface tension vs gravity.
+
+- Water **rises** in a glass capillary (adhesion to glass > cohesion).
+
+- Mercury **falls** in a glass capillary (cohesion > adhesion).
+
+- Plants use capillary action to draw water up roots and stems.
 
 ---
 
 \newpage
 
-# PART C — HEAT AND THERMODYNAMICS
+# PART C — HEAT AND THERMODYNAMICS {#part-c}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -465,7 +652,7 @@ A refrigerator moves heat from cold to hot — but only by consuming electricity
 
 \newpage
 
-# PART D — WAVES, SOUND, AND LIGHT
+# PART D — WAVES, SOUND, AND LIGHT {#part-d}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -490,7 +677,63 @@ flowchart TD
 
 ## Chapter D1 — Sound
 
-Sound is a mechanical wave — it requires a medium to travel. It cannot travel through vacuum. That is why space is silent.
+**Sound is a mechanical wave:**
+
+- It needs a **medium** to travel (solid / liquid / gas).
+
+- It **cannot travel through vacuum** — that's why space is silent.
+
+- It is a **longitudinal** wave — compressions + rarefactions along the direction of travel.
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="280" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">Wave Anatomy — Wavelength, Amplitude, Frequency</text>
+
+<!-- Equilibrium axis -->
+<line x1="40" y1="120" x2="490" y2="120" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
+
+<!-- Sine wave (2 wavelengths) -->
+<path d="M 40,120 Q 90,40 140,120 T 240,120 T 340,120 T 440,120 L 490,120"
+  stroke="#1565c0" stroke-width="3" fill="none"/>
+
+<!-- Wavelength markers (between two peaks: x=90 and x=290) -->
+<line x1="90" y1="35" x2="90" y2="155" stroke="#c62828" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="290" y1="35" x2="290" y2="155" stroke="#c62828" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="90" y1="155" x2="290" y2="155" stroke="#c62828" stroke-width="1.5" marker-end="url(#wm)" marker-start="url(#wm)"/>
+<defs>
+  <marker id="wm" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L7,3.5 Z" fill="#c62828"/>
+  </marker>
+</defs>
+<text x="190" y="172" text-anchor="middle" font-size="11" font-weight="bold" fill="#c62828">Wavelength (λ)</text>
+
+<!-- Amplitude marker -->
+<line x1="180" y1="120" x2="180" y2="60" stroke="#1b5e20" stroke-width="1.5" marker-end="url(#wam)" marker-start="url(#wam)"/>
+<defs>
+  <marker id="wam" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+    <path d="M0,0 L0,7 L7,3.5 Z" fill="#1b5e20"/>
+  </marker>
+</defs>
+<text x="186" y="95" font-size="11" font-weight="bold" fill="#1b5e20">A</text>
+<text x="195" y="86" font-size="10" fill="#1b5e20">amplitude</text>
+
+<!-- Crest / Trough -->
+<text x="90" y="30" text-anchor="middle" font-size="10" fill="#0d47a1" font-weight="bold">Crest</text>
+<text x="190" y="208" text-anchor="middle" font-size="10" fill="#0d47a1" font-weight="bold">Trough</text>
+
+<!-- Frequency formula box -->
+<rect x="380" y="35" width="160" height="65" rx="6" fill="#fffde7" stroke="#f9a825" stroke-width="1.5"/>
+<text x="460" y="53" text-anchor="middle" font-size="10" font-weight="bold" fill="#e65100">Wave equation</text>
+<text x="460" y="70" text-anchor="middle" font-size="12" font-weight="bold" fill="#e65100">v = f × λ</text>
+<text x="385" y="84" font-size="9" fill="#333">v = speed, f = frequency,</text>
+<text x="385" y="96" font-size="9" fill="#333">λ = wavelength</text>
+
+</svg>
+
+</div>
 
 ### Speed of Sound
 
@@ -501,7 +744,9 @@ Sound is a mechanical wave — it requires a medium to travel. It cannot travel 
 | Water | ~1500 m/s |
 | Steel | ~5000 m/s |
 
-Sound travels faster in solids than in liquids, and faster in liquids than in gases. Speed increases with temperature.
+**Order of speeds:** **Solid > Liquid > Gas** (because molecules are closer; vibrations transmit faster).
+
+**Speed increases with temperature** (in air, ~0.6 m/s per °C rise).
 
 ### Frequency Ranges
 
@@ -519,11 +764,23 @@ Echo needs a minimum distance of **17 metres** between you and the reflecting su
 
 ### Doppler Effect
 
-The apparent frequency of a sound changes when the source and observer are in relative motion. When the source approaches, frequency appears higher (pitch rises). When the source moves away, frequency appears lower (pitch falls). Classic example: an ambulance siren changes pitch as it passes you.
+**The idea:** apparent frequency changes when source and observer are in relative motion.
+
+- **Source approaches** → frequency appears **higher** (pitch rises).
+
+- **Source moves away** → frequency appears **lower** (pitch falls).
+
+- **Classic example:** an ambulance siren rising in pitch as it approaches, dropping as it passes.
 
 ### SONAR
 
-Sound Navigation and Ranging — uses ultrasonic pulses to detect underwater objects and map the ocean floor. The time for the echo to return, multiplied by the speed of sound in water, gives twice the distance to the object.
+**S**ound **N**avigation **A**nd **R**anging.
+
+- Uses **ultrasonic pulses** to detect underwater objects.
+
+- Maps the ocean floor; finds submarines, shoals of fish.
+
+- **Distance = (speed of sound in water × echo time) / 2** (divide by 2 — wave goes and returns).
 
 ---
 
@@ -551,11 +808,21 @@ flowchart TD
 
 ## Chapter D2 — Light and Optics
 
-Light is an electromagnetic wave that travels at **c = 3 × 10⁸ m/s** in vacuum. This is the fastest speed in the universe.
+**Nature of light:**
 
-Speed of light in other media: water ~2.25 × 10⁸ m/s, glass ~2 × 10⁸ m/s. Light slows down in denser media.
+- Light is an **electromagnetic wave**.
 
-**Refractive index (n)** = speed of light in vacuum / speed of light in medium. For glass ≈ 1.5, water ≈ 1.33, diamond ≈ 2.42.
+- Speed in vacuum: **c = 3 × 10⁸ m/s** — the fastest speed in the universe.
+
+- **Slows down in denser media** — water ~2.25 × 10⁸ m/s, glass ~2 × 10⁸ m/s.
+
+**Refractive index (n):**
+
+- **n = speed in vacuum / speed in medium.**
+
+- Higher n → light slows more → bends more.
+
+- **Glass ≈ 1.5**, **water ≈ 1.33**, **diamond ≈ 2.42**.
 
 ### Reflection
 
@@ -564,11 +831,25 @@ Speed of light in other media: water ~2.25 × 10⁸ m/s, glass ~2 × 10⁸ m/s. 
 
 ### Refraction (Snell's Law)
 
-n₁ sin θ₁ = n₂ sin θ₂
+**Snell's law:** **n₁ sin θ₁ = n₂ sin θ₂**
 
-Light bends toward the normal when entering a denser medium and away from the normal when entering a less-dense medium.
+- Light **bends toward the normal** when entering a **denser** medium.
 
-**Total Internal Reflection (TIR)** — when light travels from a denser to a less-dense medium at an angle greater than the critical angle, it is completely reflected back. This is what gives diamonds their sparkle (very small critical angle ~24°) and what optical fibres rely on.
+- Light **bends away from the normal** when entering a **less-dense** medium.
+
+### Total Internal Reflection (TIR)
+
+- Happens when light goes **denser → less-dense** at angle **> critical angle**.
+
+- Light is **completely reflected back** into the denser medium.
+
+- **Applications:**
+
+  - **Diamond sparkle** — critical angle ~24° → most rays bounce inside.
+
+  - **Optical fibres** — internet backbone; light bounces along the core.
+
+  - **Mirages** — hot air over road acts as less-dense layer.
 
 ### Mirrors — Which Type Does What
 
@@ -603,6 +884,85 @@ Lens formula: 1/v − 1/u = 1/f. Power of lens: P = 1/f (metres). Unit: dioptre 
 | Astigmatism | Cornea unevenly curved | Cylindrical lens |
 | Cataract | Lens becomes opaque | Surgery to replace lens |
 
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Title -->
+<text x="280" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">Vision Defects + Lens Corrections</text>
+
+<!-- MYOPIA panel -->
+<rect x="10" y="35" width="270" height="230" rx="8" fill="#fce4ec" stroke="#c62828" stroke-width="2"/>
+<text x="145" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#b71c1c">MYOPIA (short-sight)</text>
+
+<!-- Eye outline -->
+<ellipse cx="180" cy="120" rx="50" ry="35" fill="#fff" stroke="#5d4037" stroke-width="2"/>
+<!-- Cornea -->
+<path d="M 230,100 Q 245,120 230,140" fill="none" stroke="#1565c0" stroke-width="2.5"/>
+<!-- Lens (too strong = bulging) -->
+<ellipse cx="208" cy="120" rx="6" ry="18" fill="#bbdefb" stroke="#0d47a1" stroke-width="1.5"/>
+<!-- Retina (back of eye) -->
+<path d="M 132,95 Q 130,120 132,145" fill="none" stroke="#c62828" stroke-width="3"/>
+<text x="115" y="170" font-size="9" fill="#c62828">Retina</text>
+
+<!-- Light rays converging too early -->
+<line x1="240" y1="105" x2="160" y2="120" stroke="#f9a825" stroke-width="1.5"/>
+<line x1="240" y1="135" x2="160" y2="120" stroke="#f9a825" stroke-width="1.5"/>
+<circle cx="160" cy="120" r="4" fill="#bf360c"/>
+<text x="150" y="113" font-size="9" fill="#bf360c" font-weight="bold">×</text>
+<text x="135" y="180" font-size="9" fill="#bf360c">Image too soon</text>
+<text x="135" y="192" font-size="9" fill="#bf360c">(before retina)</text>
+
+<!-- Correction: concave lens in front -->
+<path d="M 248,90 L 245,120 L 248,150 L 252,150 L 255,120 L 252,90 Z" fill="#c8e6c9" stroke="#1b5e20" stroke-width="2"/>
+<text x="265" y="100" font-size="9" font-weight="bold" fill="#1b5e20">Concave</text>
+<text x="265" y="112" font-size="9" fill="#1b5e20">lens</text>
+<text x="265" y="124" font-size="9" fill="#1b5e20">(diverges</text>
+<text x="265" y="136" font-size="9" fill="#1b5e20">rays first)</text>
+
+<text x="145" y="222" text-anchor="middle" font-size="10" font-weight="bold" fill="#b71c1c">Eyeball too long OR lens too strong</text>
+<text x="145" y="236" text-anchor="middle" font-size="9" fill="#b71c1c">→ Distant objects blurry</text>
+<text x="145" y="252" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">Fix: CONCAVE lens</text>
+
+<!-- HYPERMETROPIA panel -->
+<rect x="290" y="35" width="260" height="230" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+<text x="420" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#1b5e20">HYPERMETROPIA (long-sight)</text>
+
+<!-- Eye outline -->
+<ellipse cx="450" cy="120" rx="50" ry="35" fill="#fff" stroke="#5d4037" stroke-width="2"/>
+<!-- Cornea -->
+<path d="M 500,100 Q 515,120 500,140" fill="none" stroke="#1565c0" stroke-width="2.5"/>
+<!-- Lens (too weak = flatter) -->
+<ellipse cx="478" cy="120" rx="4" ry="14" fill="#bbdefb" stroke="#0d47a1" stroke-width="1.5"/>
+<!-- Retina -->
+<path d="M 402,95 Q 400,120 402,145" fill="none" stroke="#c62828" stroke-width="3"/>
+<text x="380" y="170" font-size="9" fill="#c62828">Retina</text>
+
+<!-- Light rays converging behind retina -->
+<line x1="510" y1="105" x2="380" y2="120" stroke="#f9a825" stroke-width="1.5"/>
+<line x1="510" y1="135" x2="380" y2="120" stroke="#f9a825" stroke-width="1.5"/>
+<circle cx="370" cy="120" r="4" fill="#bf360c"/>
+<text x="362" y="115" font-size="9" fill="#bf360c" font-weight="bold">×</text>
+<text x="345" y="180" font-size="9" fill="#bf360c">Image too late</text>
+<text x="345" y="192" font-size="9" fill="#bf360c">(behind retina)</text>
+
+<!-- Correction: convex lens -->
+<ellipse cx="525" cy="120" rx="6" ry="22" fill="#c8e6c9" stroke="#1b5e20" stroke-width="2"/>
+<text x="535" y="105" font-size="9" font-weight="bold" fill="#1b5e20">Convex</text>
+<text x="535" y="117" font-size="9" fill="#1b5e20">lens</text>
+<text x="535" y="129" font-size="9" fill="#1b5e20">(converges</text>
+<text x="535" y="141" font-size="9" fill="#1b5e20">rays first)</text>
+
+<text x="420" y="222" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">Eyeball too short OR lens too weak</text>
+<text x="420" y="236" text-anchor="middle" font-size="9" fill="#1b5e20">→ Near objects blurry</text>
+<text x="420" y="252" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">Fix: CONVEX lens</text>
+
+</svg>
+
+</div>
+
+**Memory aid: M → C (Myopia → Concave) | Hyper → Cv (Hypermetropia → Convex).**
+
 <div class="mnemonic">
 
 **Myopia → Concave, Hypermetropia → Convex**. Memory trick: the words **Myopia** and **Concave** both have fewer common letters to remember — just link the **M**yopic person needs a **C**oncave lens. Or: Myopia = "My can't see far" → need to diverge the light more → concave.
@@ -611,11 +971,39 @@ Lens formula: 1/v − 1/u = 1/f. Power of lens: P = 1/f (metres). Unit: dioptre 
 
 ### Dispersion and Colour
 
-- **Dispersion** — white light splits into its spectrum (VIBGYOR) when passing through a prism. Newton first demonstrated this in 1666.
-- **VIBGYOR**: Violet, Indigo, Blue, Green, Yellow, Orange, Red — in order of decreasing wavelength (increasing frequency). Violet has highest frequency in visible range.
-- **Rainbow** — caused by refraction + total internal reflection + dispersion inside raindrops.
-- **Blue sky** — Rayleigh scattering. Shorter (blue) wavelengths scatter ~5× more than longer (red) wavelengths. So when sunlight enters the atmosphere, blue light scatters in all directions, making the whole sky look blue.
-- **Red sunset** — at sunrise/sunset, sunlight travels through much more atmosphere to reach your eyes. Blue light has already scattered away; red, which scatters least, dominates.
+**Dispersion**
+
+- White light splits into its spectrum **VIBGYOR** when passing through a prism.
+
+- Newton first demonstrated this in **1666**.
+
+**VIBGYOR — order matters**
+
+- **V**iolet → **I**ndigo → **B**lue → **G**reen → **Y**ellow → **O**range → **R**ed.
+
+- **Decreasing wavelength** (and **increasing frequency**) going left to right.
+
+- **Violet** has the highest frequency in the visible range.
+
+**Rainbow**
+
+- Caused by **refraction + total internal reflection + dispersion** inside raindrops.
+
+- Always opposite the sun; primary bow is 42° from the anti-solar point.
+
+**Blue sky — Rayleigh scattering**
+
+- Shorter (blue) wavelengths scatter **~5× more** than longer (red) wavelengths.
+
+- Sunlight enters the atmosphere → blue scatters in all directions → whole sky looks blue.
+
+**Red sunset**
+
+- At sunrise / sunset, sunlight travels through **much more atmosphere**.
+
+- Blue has already scattered away en route.
+
+- **Red**, which scatters least, dominates → red-orange sky.
 
 <div class="keypoint">
 
@@ -643,7 +1031,7 @@ Radio → Microwaves → Infrared → Visible light → Ultraviolet → X-rays �
 
 \newpage
 
-# PART E — ELECTRICITY AND MAGNETISM
+# PART E — ELECTRICITY AND MAGNETISM {#part-e}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -680,9 +1068,19 @@ flowchart TD
 
 **V = I × R**
 
-At constant temperature, current through a conductor is proportional to the voltage across it.
+- At constant temperature, current through a conductor is **proportional to voltage**.
 
-Power consumed: **P = V × I = I²R = V²/R**. Unit: watt (W).
+- **V** = voltage (volts), **I** = current (amperes), **R** = resistance (ohms).
+
+**Power formulas** (all equivalent — pick the one matching what you know):
+
+- **P = V × I**
+
+- **P = I² × R**
+
+- **P = V² / R**
+
+Unit: **watt (W)**. Commercial unit: **kilowatt-hour (kWh)** = 1 unit on your bill = 3.6 × 10⁶ J.
 
 ### Household Electricity in India
 
@@ -778,7 +1176,7 @@ Works on mutual induction — the changing current in the primary coil creates a
 
 \newpage
 
-# PART F — MODERN PHYSICS
+# PART F — MODERN PHYSICS {#part-f}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -978,7 +1376,7 @@ flowchart TD
 
 \newpage
 
-# PART V — INSTRUMENTS AND WHAT THEY MEASURE
+# PART V — INSTRUMENTS AND WHAT THEY MEASURE {#part-v}
 
 | Instrument | Measures |
 |-----------|---------|
@@ -1025,7 +1423,7 @@ flowchart TD
 
 \newpage
 
-# PART W — DISCOVERIES AND INVENTIONS IN PHYSICS
+# PART W — DISCOVERIES AND INVENTIONS IN PHYSICS {#part-w}
 
 | Discovery / Invention | Scientist | Year | Country |
 |----------------------|----------|------|---------|
@@ -1074,7 +1472,7 @@ Indian scientists to remember for physics: **C.V. Raman** (Raman Effect, Nobel P
 
 \newpage
 
-# PART X — DAILY-LIFE PHYSICS ("WHY" QUESTIONS)
+# PART X — DAILY-LIFE PHYSICS ("WHY" QUESTIONS) {#part-x}
 
 1–2 questions on everyday physics phenomena appear in almost every competitive exam. For each phenomenon below, know both the fact and the reason behind it.
 
@@ -1112,7 +1510,7 @@ Indian scientists to remember for physics: **C.V. Raman** (Raman Effect, Nobel P
 
 \newpage
 
-# PART AA — KEY CONSTANTS AND FORMULAS
+# PART AA — KEY CONSTANTS AND FORMULAS {#part-aa}
 
 <div class="chapter-summary">
 <div class="mermaid">

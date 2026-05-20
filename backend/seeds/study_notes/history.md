@@ -8,7 +8,17 @@ documentclass: book
 
 # EXAMINER BLUEPRINT — What Gets Tested Most
 
-History questions in competitive exams are almost entirely about **dates, names, and one-line significance** of events. Narrative matters for understanding, but what earns marks is a clean table of facts in your head. Here is what examiners reach for, across SSC, RRB, Banking, and state PSC exams.
+**History questions are almost entirely about three things:**
+
+- **Dates** — when did it happen?
+
+- **Names** — who did it?
+
+- **One-line significance** — why does it matter?
+
+Narrative matters for understanding, but what earns marks is a **clean table of facts** in your head.
+
+Here is what examiners reach for, across SSC, RRB, Banking, and state PSC exams.
 
 <div class="examtip">
 
@@ -69,13 +79,224 @@ This book moves through time in a logical sequence:
 - **Part E — Post-Independence India** (1947 → today)
 - **Part F — World History** (revolutions, world wars, decolonisation, Cold War)
 
-**Three things history rewards: dates, names, and one-line significance.** Get those right and you can reconstruct every narrative around them. Read a chapter, close the book, and test yourself on the key facts before moving on. That active retrieval — not passive re-reading — is what shows up in your score.
+**Three things history rewards:**
 
-**Reading pace:** one Part per week is a comfortable pace. Each "Exam hooks" section at the end of every chapter is your revision checklist — if you can answer those, the chapter is done.
+- **Dates** + **names** + **one-line significance**.
+
+- Get those right and you can reconstruct every narrative around them.
+
+**How to study a chapter:**
+
+- Read it once.
+
+- **Close the book**, test yourself on the key facts.
+
+- That **active retrieval** (not passive re-reading) is what shows up on your score.
+
+**Reading pace:**
+
+- **One Part per week** is a comfortable pace.
+
+- Each chapter's **"Exam hooks"** section is your revision checklist — if you can answer those, the chapter is done.
 
 ---
 
-# Part A — Ancient India
+---
+
+# How to read this book — your real study load
+
+**Total pages: 91.** Don't let the page count scare you.
+
+### Mandatory reading — pages 1 to 65 (71% of the book)
+
+That's the full syllabus. Master those 65 pages and you've covered every concept an examiner can fairly ask.
+
+### Bonus material — pages 66 to 91 (29% of the book)
+
+Reference tables, compilations, and self-test material — useful in your last week of revision OR if you're aiming for a top rank.
+
+### Two study tracks
+
+- **Just want to pass?** Read pages 1–65. Skim the appendices once before the exam.
+
+- **Want to top your batch?** Read the appendices too — they're how 70% becomes 90%.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p6–29** | [Part A](#part-a) | Ancient India |
+| **p30–40** | [Part B](#part-b) | Medieval India (650 – 1526) |
+| **p41–46** | [Part C](#part-c) | The Mughals + Marathas (1526 – 1803) |
+| **p47–58** | [Part D](#part-d) | Colonial India + Freedom Struggle (1600s – 1947) |
+| **p59–60** | [Part E](#part-e) | Post-Independence India (1947 – today) |
+| **p61–65** | [Part F](#part-f) | World History |
+| **p66** | [PART X](#part-x) | DELHI SULTANATE (1206-1526) — *Delhi Sultanate (1206–1526) — all 5 dynasties + key sultans.* |
+| **p67** | [PART Y](#part-y) | MUGHAL EMPIRE (1526-1857) — *Mughal Empire (1526–1857) — all 6 emperors + key dates.* |
+| **p68** | [PART Z](#part-z) | MARATHAS + SIKHS — *Marathas + Sikhs — Shivaji, Peshwas, 10 Sikh Gurus.* |
+| **p69–72** | [PART AA](#part-aa) | BRITISH RULE — KEY ACTS + GG/VICEROYS — *British Rule — Acts + Governors-General/Viceroys.* |
+| **p73–76** | [PART AB](#part-ab) | FREEDOM STRUGGLE TIMELINE (1857-1947) — *Freedom Struggle Timeline (1857–1947).* |
+| **p77–79** | [PART AC](#part-ac) | POST-INDEPENDENCE (key milestones) — *Post-Independence Key Milestones.* |
+| **p80** | [PART AD](#part-ad) | WORLD HISTORY (high-yield) — *World History — French Revolution, World Wars, Cold War.* |
+| **p81** | [PART AE](#part-ae) | HISTORY TRAP-RECOGNITION CARDS — *Trap-Recognition Cards — common examiner traps.* |
+| **p82–83** | [PART AF](#part-af) | HISTORY MINI-MOCK (25 Questions · 25 Minutes) — *25-Question Mini-Mock — timed self-test.* |
+| **p84–86** | [PART AG](#part-ag) | BHAKTI + SUFI MOVEMENTS (high-yield) — *Bhakti + Sufi Movements — saints, traditions, regions.* |
+| **p87–90** | [PART AH](#part-ah) | SOCIAL + RELIGIOUS REFORMERS (19-20c) — *Social + Religious Reformers (19–20c).* |
+| **p91** | [PART AI](#part-ai) | BHAKTI-SUFI-REFORMERS QUICK DRILL (10 Q) — *Bhakti-Sufi-Reformers Quick Drill — 10 Q self-test.* |
+
+---
+# Part A — Ancient India {#part-a}
+
+<div style="margin: 8pt 0; text-align: center;">
+
+<svg viewBox="0 0 480 530" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:480px;display:block;margin:10pt auto;font-family:Arial,sans-serif;">
+<rect width="480" height="530" fill="#c8e6f5" rx="8"/>
+
+<path d="M 125.9,33.7 L 145.1,38.4 L 165.5,52.5 L 179.2,61.9 L 186.0,72.9 L 195.6,88.6 L 209.3,107.4 L 222.9,124.6 L 233.9,143.5 L 243.4,151.3 L 257.1,159.1 L 270.7,167.0 L 288.5,174.8 L 304.9,178.0 L 318.6,182.7 L 332.2,185.8 L 345.9,188.9 L 340.4,193.6 L 345.9,201.5 L 352.7,206.2 L 343.1,214.0 L 352.7,218.7 L 366.4,221.9 L 375.9,218.7 L 386.9,206.2 L 400.5,190.5 L 421.0,178.0 L 427.8,167.0 L 430.6,154.4 L 434.7,151.3 L 448.3,162.3 L 448.3,178.0 L 441.5,193.6 L 414.2,214.0 L 393.7,229.7 L 386.9,237.6 L 384.1,250.1 L 384.1,256.4 L 380.0,265.8 L 373.2,273.6 L 366.4,268.9 L 362.3,261.1 L 356.8,256.4 L 348.6,253.2 L 332.2,268.9 L 322.7,276.8 L 309.0,284.6 L 302.2,292.4 L 288.5,303.4 L 277.6,316.0 L 263.9,331.7 L 243.4,347.3 L 222.9,363.0 L 216.1,378.7 L 212.0,402.2 L 209.3,425.7 L 206.5,449.3 L 195.6,469.7 L 184.7,480.6 L 175.1,486.9 L 168.3,480.6 L 164.2,472.8 L 160.1,460.2 L 154.6,449.3 L 150.5,433.6 L 141.0,417.9 L 138.2,402.2 L 127.3,378.7 L 120.5,363.0 L 113.6,339.5 L 113.6,323.8 L 110.9,316.0 L 110.9,300.3 L 106.8,284.6 L 100.0,276.8 L 93.1,272.1 L 83.6,268.9 L 72.6,264.2 L 61.7,261.1 L 54.9,253.2 L 50.8,245.4 L 52.2,237.6 L 65.8,229.7 L 79.5,234.4 L 93.1,228.1 L 79.5,206.2 L 93.1,182.7 L 79.5,167.0 L 86.3,151.3 L 83.6,135.6 L 86.3,119.9 L 106.8,104.3 L 120.5,93.3 L 124.6,83.9 L 123.2,68.2 L 130.0,57.2 L 131.4,46.2 L 125.9,33.7 Z" fill="#f5f0e8" stroke="#8b6914" stroke-width="1.2"/>
+
+<text x="240" y="14" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e3a5f">India — Key Historical Sites</text>
+<text x="240" y="26" text-anchor="middle" font-size="8" fill="#374151">Ancient · Medieval · Colonial · Freedom Struggle</text>
+
+<!-- NW cluster: Taxila, Mohenjo-daro, Amritsar, Lahore — pulled left -->
+<circle cx="110.9" cy="85.4" r="3" fill="#92400e" stroke="white"/>
+<line x1="108" y1="85" x2="80" y2="75" stroke="#92400e" stroke-width="0.6"/>
+<text x="20" y="72" font-size="7.5" font-weight="600" fill="#92400e">Taxila</text>
+<text x="20" y="82" font-size="7" fill="#92400e">(ancient univ.)</text>
+
+<circle cx="46.7" cy="185.8" r="3" fill="#92400e" stroke="white"/>
+<text x="14" y="184" font-size="7.5" font-weight="600" fill="#92400e">Mohenjo-</text>
+<text x="14" y="194" font-size="7.5" font-weight="600" fill="#92400e">daro (IVC)</text>
+
+<circle cx="139.6" cy="118.4" r="3" fill="#dc2626" stroke="white"/>
+<line x1="142" y1="119" x2="170" y2="100" stroke="#dc2626" stroke-width="0.6"/>
+<text x="173" y="96" font-size="7.5" font-weight="600" fill="#dc2626">Amritsar</text>
+<text x="173" y="106" font-size="7" fill="#dc2626">(Jallianwala 1919)</text>
+
+<!-- Delhi cluster: Panipat above Delhi -->
+<circle cx="166.9" cy="152.9" r="3" fill="#7f1d1d" stroke="white"/>
+<line x1="170" y1="151" x2="225" y2="125" stroke="#7f1d1d" stroke-width="0.6"/>
+<text x="227" y="123" font-size="7.5" font-weight="600" fill="#7f1d1d">Panipat</text>
+<text x="227" y="132" font-size="7" fill="#7f1d1d">(3 battles: 1526/56/1761)</text>
+
+<circle cx="171.0" cy="165.4" r="3.5" fill="#dc2626" stroke="white" stroke-width="1"/>
+<text x="176" y="160" font-size="8" font-weight="700" fill="#dc2626">Delhi</text>
+
+<!-- Agra + Fatehpur Sikri — split labels to the right side -->
+<circle cx="181.9" cy="187.4" r="3" fill="#166534" stroke="white"/>
+<line x1="185" y1="187" x2="225" y2="180" stroke="#166534" stroke-width="0.6"/>
+<text x="227" y="178" font-size="7.5" font-weight="600" fill="#166534">Agra</text>
+<text x="227" y="187" font-size="7" fill="#166534">(Taj Mahal)</text>
+
+<circle cx="177.8" cy="195" r="3" fill="#166534" stroke="white"/>
+<line x1="181" y1="195" x2="225" y2="198" stroke="#166534" stroke-width="0.6"/>
+<text x="227" y="200" font-size="7.5" font-weight="600" fill="#166534">Fatehpur Sikri</text>
+<text x="227" y="209" font-size="7" fill="#166534">(Akbar's city)</text>
+
+<!-- Ajmer (Sufi) -->
+<circle cx="135.5" cy="198.3" r="3" fill="#7c3aed" stroke="white"/>
+<line x1="133" y1="200" x2="80" y2="210" stroke="#7c3aed" stroke-width="0.6"/>
+<text x="20" y="208" font-size="7.5" font-weight="600" fill="#7c3aed">Ajmer</text>
+<text x="20" y="218" font-size="7" fill="#7c3aed">(Sufi dargah)</text>
+
+<!-- Ganga plain dense cluster: pull labels right, fan out vertically -->
+<circle cx="276.2" cy="195.2" r="3" fill="#dc2626" stroke="white"/>
+<line x1="279" y1="195" x2="335" y2="155" stroke="#dc2626" stroke-width="0.6"/>
+<text x="338" y="153" font-size="7.5" font-weight="600" fill="#dc2626">Champaran</text>
+<text x="338" y="163" font-size="7" fill="#dc2626">(1917: 1st satyagraha)</text>
+
+<circle cx="250.2" cy="217.2" r="3" fill="#92400e" stroke="white"/>
+<line x1="253" y1="217" x2="335" y2="178" stroke="#92400e" stroke-width="0.6"/>
+<text x="338" y="176" font-size="7.5" font-weight="600" fill="#92400e">Varanasi</text>
+<text x="338" y="186" font-size="7" fill="#92400e">(Sarnath nearby)</text>
+
+<circle cx="262.5" cy="212.5" r="3" fill="#7f1d1d" stroke="white"/>
+<line x1="265" y1="213" x2="335" y2="198" stroke="#7f1d1d" stroke-width="0.6"/>
+<text x="338" y="196" font-size="7.5" font-weight="600" fill="#7f1d1d">Buxar</text>
+<text x="338" y="206" font-size="7" fill="#7f1d1d">(1764)</text>
+
+<circle cx="280.3" cy="212.5" r="3.5" fill="#92400e" stroke="white" stroke-width="1"/>
+<line x1="283" y1="213" x2="335" y2="220" stroke="#92400e" stroke-width="0.6"/>
+<text x="338" y="218" font-size="7.5" font-weight="700" fill="#92400e">Pataliputra</text>
+<text x="338" y="228" font-size="7" fill="#92400e">(Patna — Mauryan)</text>
+
+<circle cx="283.0" cy="220.3" r="3" fill="#92400e" stroke="white"/>
+<line x1="286" y1="221" x2="335" y2="240" stroke="#92400e" stroke-width="0.6"/>
+<text x="338" y="238" font-size="7.5" font-weight="600" fill="#92400e">Nalanda</text>
+<text x="338" y="248" font-size="7" fill="#92400e">(ancient univ.)</text>
+
+<!-- Sanchi -->
+<circle cx="177.8" cy="245.4" r="3" fill="#92400e" stroke="white"/>
+<line x1="175" y1="245" x2="55" y2="252" stroke="#92400e" stroke-width="0.6"/>
+<text x="14" y="252" font-size="7.5" font-weight="600" fill="#92400e">Sanchi</text>
+<text x="14" y="262" font-size="7" fill="#92400e">(Stupa)</text>
+
+<!-- Bengal -->
+<circle cx="321.3" cy="240.7" r="3" fill="#7f1d1d" stroke="white"/>
+<line x1="324" y1="240" x2="395" y2="260" stroke="#7f1d1d" stroke-width="0.6"/>
+<text x="398" y="258" font-size="7.5" font-weight="600" fill="#7f1d1d">Plassey</text>
+<text x="398" y="268" font-size="7" fill="#7f1d1d">(1757)</text>
+
+<circle cx="324.0" cy="259.5" r="3" fill="#dc2626" stroke="white"/>
+<text x="332" y="262" font-size="7.5" font-weight="600" fill="#dc2626">Kolkata</text>
+
+<!-- Haldighati / Dandi / Mumbai — west cluster, labels in Arabian Sea -->
+<circle cx="123.2" cy="225.0" r="3" fill="#7f1d1d" stroke="white"/>
+<line x1="120" y1="225" x2="55" y2="280" stroke="#7f1d1d" stroke-width="0.6"/>
+<text x="14" y="278" font-size="7.5" font-weight="600" fill="#7f1d1d">Haldighati</text>
+<text x="14" y="288" font-size="7" fill="#7f1d1d">(1576)</text>
+
+<circle cx="106.8" cy="286.2" r="3" fill="#dc2626" stroke="white"/>
+<line x1="104" y1="286" x2="55" y2="305" stroke="#dc2626" stroke-width="0.6"/>
+<text x="14" y="303" font-size="7.5" font-weight="600" fill="#dc2626">Dandi</text>
+<text x="14" y="313" font-size="7" fill="#dc2626">(Salt March 1930)</text>
+
+<circle cx="112.3" cy="314.4" r="3" fill="#dc2626" stroke="white"/>
+<line x1="109" y1="315" x2="55" y2="335" stroke="#dc2626" stroke-width="0.6"/>
+<text x="14" y="333" font-size="7.5" font-weight="600" fill="#dc2626">Mumbai</text>
+<text x="14" y="343" font-size="7" fill="#dc2626">(Quit India 1942)</text>
+
+<!-- South cluster -->
+<circle cx="161.4" cy="374.0" r="3" fill="#92400e" stroke="white"/>
+<line x1="158" y1="374" x2="55" y2="380" stroke="#92400e" stroke-width="0.6"/>
+<text x="14" y="378" font-size="7.5" font-weight="600" fill="#92400e">Hampi</text>
+<text x="14" y="388" font-size="7" fill="#92400e">(Vijayanagar)</text>
+
+<circle cx="124.6" cy="370.9" r="3" fill="#dc2626" stroke="white"/>
+<line x1="122" y1="371" x2="55" y2="408" stroke="#dc2626" stroke-width="0.6"/>
+<text x="14" y="406" font-size="7.5" font-weight="600" fill="#dc2626">Goa</text>
+<text x="14" y="416" font-size="7" fill="#dc2626">(liberated 1961)</text>
+
+<circle cx="164.2" cy="419.5" r="3" fill="#7f1d1d" stroke="white"/>
+<line x1="161" y1="420" x2="55" y2="430" stroke="#7f1d1d" stroke-width="0.6"/>
+<text x="14" y="428" font-size="7.5" font-weight="600" fill="#7f1d1d">Seringapatam</text>
+<text x="14" y="438" font-size="7" fill="#7f1d1d">(Tipu Sultan)</text>
+
+<circle cx="197.0" cy="444.6" r="3" fill="#92400e" stroke="white"/>
+<line x1="200" y1="445" x2="295" y2="450" stroke="#92400e" stroke-width="0.6"/>
+<text x="297" y="448" font-size="7.5" font-weight="600" fill="#92400e">Thanjavur</text>
+<text x="297" y="458" font-size="7" fill="#92400e">(Chola)</text>
+
+<!-- Compass -->
+<circle cx="448" cy="60" r="13" fill="white" opacity="0.9" stroke="#94a3b8"/>
+<text x="448" y="56" text-anchor="middle" font-size="8" font-weight="bold" fill="#374151">N</text>
+<polygon points="448,50 445,60 448,58 451,60" fill="#1e3a5f"/>
+
+<!-- Legend -->
+<rect x="335" y="475" width="130" height="50" rx="3" fill="white" opacity="0.92" stroke="#94a3b8"/>
+<text x="400" y="486" text-anchor="middle" font-size="8" font-weight="bold" fill="#374151">Legend</text>
+<circle cx="343" cy="495" r="3" fill="#92400e"/>
+<text x="350" y="498" font-size="7" fill="#333">Ancient India</text>
+<circle cx="343" cy="506" r="3" fill="#166534"/>
+<text x="350" y="509" font-size="7" fill="#333">Mughal / Medieval</text>
+<circle cx="403" cy="495" r="3" fill="#dc2626"/>
+<text x="410" y="498" font-size="7" fill="#333">Freedom struggle</text>
+<circle cx="403" cy="506" r="3" fill="#7f1d1d"/>
+<text x="410" y="509" font-size="7" fill="#333">Battle / armed</text>
+</svg>
+
+</div>
 
 The first 3,500 years of Indian civilisation: from the mysterious grid cities
 of the Indus, through the Vedic pastoral age, into the great empires of the
@@ -999,6 +1220,102 @@ flowchart TD
 </div>
 </div>
 
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg viewBox="0 0 480 530" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:480px;display:block;margin:8pt auto;font-family:Arial,sans-serif;">
+<defs>
+  <clipPath id="ind-me"><path d="M 125.9,33.7 L 145.1,38.4 L 165.5,52.5 L 179.2,61.9 L 186.0,72.9 L 195.6,88.6 L 209.3,107.4 L 222.9,124.6 L 233.9,143.5 L 243.4,151.3 L 257.1,159.1 L 270.7,167.0 L 288.5,174.8 L 304.9,178.0 L 318.6,182.7 L 332.2,185.8 L 345.9,188.9 L 340.4,193.6 L 345.9,201.5 L 352.7,206.2 L 343.1,214.0 L 352.7,218.7 L 366.4,221.9 L 375.9,218.7 L 386.9,206.2 L 400.5,190.5 L 421.0,178.0 L 427.8,167.0 L 430.6,154.4 L 434.7,151.3 L 448.3,162.3 L 448.3,178.0 L 441.5,193.6 L 414.2,214.0 L 393.7,229.7 L 386.9,237.6 L 384.1,250.1 L 384.1,256.4 L 380.0,265.8 L 373.2,273.6 L 366.4,268.9 L 362.3,261.1 L 356.8,256.4 L 348.6,253.2 L 332.2,268.9 L 322.7,276.8 L 309.0,284.6 L 302.2,292.4 L 288.5,303.4 L 277.6,316.0 L 263.9,331.7 L 243.4,347.3 L 222.9,363.0 L 216.1,378.7 L 212.0,402.2 L 209.3,425.7 L 206.5,449.3 L 195.6,469.7 L 184.7,480.6 L 175.1,486.9 L 168.3,480.6 L 164.2,472.8 L 160.1,460.2 L 154.6,449.3 L 150.5,433.6 L 141.0,417.9 L 138.2,402.2 L 127.3,378.7 L 120.5,363.0 L 113.6,339.5 L 113.6,323.8 L 110.9,316.0 L 110.9,300.3 L 106.8,284.6 L 100.0,276.8 L 93.1,272.1 L 83.6,268.9 L 72.6,264.2 L 61.7,261.1 L 54.9,253.2 L 50.8,245.4 L 52.2,237.6 L 65.8,229.7 L 79.5,234.4 L 93.1,228.1 L 79.5,206.2 L 93.1,182.7 L 79.5,167.0 L 86.3,151.3 L 83.6,135.6 L 86.3,119.9 L 106.8,104.3 L 120.5,93.3 L 124.6,83.9 L 123.2,68.2 L 130.0,57.2 L 131.4,46.2 L 125.9,33.7 Z"/></clipPath>
+</defs>
+
+<!-- Ocean background -->
+<rect width="480" height="530" fill="#cfe2f3" rx="8"/>
+
+<!-- Mauryan territory shading (top + middle) -->
+<rect x="0" y="0" width="480" height="340" fill="#ffe0b2" opacity="0.85" clip-path="url(#ind-me)"/>
+<!-- Deep south (NOT under Mauryas) -->
+<rect x="0" y="340" width="480" height="200" fill="#e8f5e9" opacity="0.85" clip-path="url(#ind-me)"/>
+
+<!-- Kalinga (Odisha coast) -->
+<ellipse cx="305" cy="285" rx="22" ry="20" fill="#ef9a9a" opacity="0.85" clip-path="url(#ind-me)"/>
+
+<!-- India outline -->
+<path d="M 125.9,33.7 L 145.1,38.4 L 165.5,52.5 L 179.2,61.9 L 186.0,72.9 L 195.6,88.6 L 209.3,107.4 L 222.9,124.6 L 233.9,143.5 L 243.4,151.3 L 257.1,159.1 L 270.7,167.0 L 288.5,174.8 L 304.9,178.0 L 318.6,182.7 L 332.2,185.8 L 345.9,188.9 L 340.4,193.6 L 345.9,201.5 L 352.7,206.2 L 343.1,214.0 L 352.7,218.7 L 366.4,221.9 L 375.9,218.7 L 386.9,206.2 L 400.5,190.5 L 421.0,178.0 L 427.8,167.0 L 430.6,154.4 L 434.7,151.3 L 448.3,162.3 L 448.3,178.0 L 441.5,193.6 L 414.2,214.0 L 393.7,229.7 L 386.9,237.6 L 384.1,250.1 L 384.1,256.4 L 380.0,265.8 L 373.2,273.6 L 366.4,268.9 L 362.3,261.1 L 356.8,256.4 L 348.6,253.2 L 332.2,268.9 L 322.7,276.8 L 309.0,284.6 L 302.2,292.4 L 288.5,303.4 L 277.6,316.0 L 263.9,331.7 L 243.4,347.3 L 222.9,363.0 L 216.1,378.7 L 212.0,402.2 L 209.3,425.7 L 206.5,449.3 L 195.6,469.7 L 184.7,480.6 L 175.1,486.9 L 168.3,480.6 L 164.2,472.8 L 160.1,460.2 L 154.6,449.3 L 150.5,433.6 L 141.0,417.9 L 138.2,402.2 L 127.3,378.7 L 120.5,363.0 L 113.6,339.5 L 113.6,323.8 L 110.9,316.0 L 110.9,300.3 L 106.8,284.6 L 100.0,276.8 L 93.1,272.1 L 83.6,268.9 L 72.6,264.2 L 61.7,261.1 L 54.9,253.2 L 50.8,245.4 L 52.2,237.6 L 65.8,229.7 L 79.5,234.4 L 93.1,228.1 L 79.5,206.2 L 93.1,182.7 L 79.5,167.0 L 86.3,151.3 L 83.6,135.6 L 86.3,119.9 L 106.8,104.3 L 120.5,93.3 L 124.6,83.9 L 123.2,68.2 L 130.0,57.2 L 131.4,46.2 L 125.9,33.7 Z" fill="none" stroke="#5d4037" stroke-width="2"/>
+
+<!-- Title -->
+<rect x="0" y="0" width="480" height="22" fill="#5d4037" opacity="0.9"/>
+<text x="240" y="15" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Mauryan Empire (321–185 BCE)</text>
+
+<!-- City markers + labels (positioned around features to avoid overlap) -->
+
+<!-- Taxila (NW, outside modern India) -->
+<circle cx="110.9" cy="85.4" r="4" fill="#8d6e63" stroke="white" stroke-width="1"/>
+<text x="56" y="80" font-size="8" font-weight="bold" fill="#5d4037">Taxila</text>
+<text x="56" y="91" font-size="7.5" fill="#5d4037">(univ.)</text>
+
+<!-- Pataliputra (capital) -->
+<polygon points="280,213 286,206 292,213 286,220" fill="#f57f17" stroke="#e65100" stroke-width="1.5"/>
+<text x="295" y="208" font-size="9" font-weight="bold" fill="#e65100">Pataliputra</text>
+<text x="295" y="220" font-size="7.5" fill="#e65100">(Patna) — Capital</text>
+
+<!-- Sarnath (near Varanasi) -->
+<circle cx="250" cy="217" r="3.5" fill="#1565c0" stroke="white" stroke-width="1"/>
+<text x="195" y="208" font-size="8" font-weight="bold" fill="#1565c0">Sarnath</text>
+<text x="195" y="218" font-size="7.5" fill="#1565c0">(Lion Capital)</text>
+
+<!-- Sanchi (Stupa) -->
+<circle cx="178" cy="245" r="3.5" fill="#1565c0" stroke="white" stroke-width="1"/>
+<text x="116" y="241" font-size="8" font-weight="bold" fill="#1565c0">Sanchi</text>
+<text x="116" y="251" font-size="7.5" fill="#1565c0">(Stupa)</text>
+
+<!-- Ujjain (governor's seat under Ashoka) -->
+<circle cx="155" cy="225" r="3.5" fill="#1565c0" stroke="white" stroke-width="1"/>
+<text x="55" y="225" font-size="8" font-weight="bold" fill="#1565c0">Ujjain</text>
+<text x="55" y="236" font-size="7.5" fill="#1565c0">(Ashoka governed)</text>
+
+<!-- Kalinga label -->
+<text x="305" y="282" text-anchor="middle" font-size="9" font-weight="bold" fill="#b71c1c">Kalinga</text>
+<text x="345" y="295" font-size="8" fill="#b71c1c">261 BCE War</text>
+<text x="345" y="306" font-size="8" fill="#b71c1c">→ Ashoka converts</text>
+
+<!-- Deep South label -->
+<text x="172" y="430" text-anchor="middle" font-size="9" font-weight="bold" fill="#1b5e20">Chola · Pandya</text>
+<text x="172" y="442" text-anchor="middle" font-size="8" fill="#1b5e20">(Not under Mauryas)</text>
+
+<!-- Dynasty info box (right side, in ocean) -->
+<rect x="335" y="350" width="138" height="155" rx="4" fill="white" opacity="0.95" stroke="#5d4037" stroke-width="1"/>
+<text x="404" y="365" text-anchor="middle" font-size="10" font-weight="bold" fill="#5d4037">Mauryan Dynasty</text>
+<text x="342" y="380" font-size="8" fill="#333">Founded: 321 BCE</text>
+<text x="342" y="391" font-size="8" fill="#333">Chandragupta Maurya</text>
+<text x="342" y="402" font-size="8" fill="#333">Advisor: Chanakya</text>
+<text x="342" y="413" font-size="8" fill="#333">(Arthashastra)</text>
+<text x="342" y="428" font-size="8" font-weight="bold" fill="#b71c1c">Bindusara (298–273)</text>
+<text x="342" y="439" font-size="8" fill="#333">"Amitraghata"</text>
+<text x="342" y="454" font-size="8" font-weight="bold" fill="#1b5e20">Ashoka (268–232 BCE)</text>
+<text x="342" y="465" font-size="8" fill="#333">Kalinga → Buddhism</text>
+<text x="342" y="476" font-size="8" fill="#333">Dhamma; pillars + edicts</text>
+<text x="342" y="491" font-size="8" fill="#b71c1c">Ended 185 BCE</text>
+<text x="342" y="502" font-size="8" fill="#b71c1c">(Pushyamitra Shunga)</text>
+
+<!-- Legend (bottom-left, in ocean) -->
+<rect x="20" y="450" width="125" height="68" rx="4" fill="white" opacity="0.9" stroke="#94a3b8" stroke-width="0.8"/>
+<text x="28" y="463" font-size="8" font-weight="bold" fill="#374151">Legend</text>
+<rect x="28" y="468" width="12" height="9" fill="#ffe0b2" stroke="#8d6e63"/>
+<text x="44" y="476" font-size="7.5" fill="#333">Mauryan territory</text>
+<rect x="28" y="480" width="12" height="9" fill="#ef9a9a" stroke="#c62828"/>
+<text x="44" y="488" font-size="7.5" fill="#333">Kalinga (fought)</text>
+<rect x="28" y="492" width="12" height="9" fill="#e8f5e9" stroke="#2e7d32"/>
+<text x="44" y="500" font-size="7.5" fill="#333">Outside empire</text>
+<polygon points="32,510 36,506 40,510 36,514" fill="#f57f17" stroke="#e65100"/>
+<text x="46" y="513" font-size="7.5" fill="#333">Capital</text>
+
+<!-- Compass -->
+<circle cx="455" cy="510" r="13" fill="white" opacity="0.85" stroke="#94a3b8"/>
+<text x="455" y="506" text-anchor="middle" font-size="8" font-weight="bold" fill="#374151">N</text>
+<polygon points="455,500 452,510 455,508 458,510" fill="#1e3a5f"/>
+</svg>
+
+</div>
+
 ## Chapter 8 — Gupta Age (320 – 550 CE) — India's Classical Golden Age
 
 ### 8.1 Hook — the age of Sanskrit classics + decimal mathematics
@@ -1234,57 +1551,1747 @@ Studied by Ambedkar + Constituent Assembly while framing Panchayati Raj
 
 ---
 
-# Part B — Medieval India (650 – 1526)
+# Part B — Medieval India (650 – 1526) {#part-b}
 
-**Coming soon.** This Part will cover the Pratiharas, Palas, Rashtrakutas'
-successors, the Arab invasion of Sindh (712 CE), the Ghaznavid raids (1000
-– 1030 CE), Ghurids + the **Delhi Sultanate** (1206 – 1526; 5 dynasties —
-Slave/Mamluk, Khilji, Tughlaq, Sayyid, Lodi), the **Bhakti + Sufi**
-movements, the **Vijayanagar + Bahmani** empires + the Deccan Sultanates.
-
-Structure planned (to be populated):
-
-- Chapter 11: North Indian kingdoms + Arab/Ghaznavid invasions
-- Chapter 12: Delhi Sultanate (5 dynasties)
-- Chapter 13: Bhakti Movement
-- Chapter 14: Sufi Movement
-- Chapter 15: Vijayanagar + Bahmani + Deccan Sultanates
+The eight centuries between Harsha's death (647 CE) and Babur's invasion
+(1526) reshape India. North India fragments into a **tripartite struggle**
+for Kannauj; then comes the **first Islamic foothold** at Sindh (712), the
+**Ghaznavid + Ghurid raids**, and finally the **Delhi Sultanate** — five
+dynasties over 320 years. Parallel currents: the **Bhakti + Sufi
+movements**, and in the south the **Vijayanagar–Bahmani** rivalry.
 
 ---
 
-# Part C — The Mughals + Marathas (1526 – 1803)
+## Chapter 11 — North Indian Kingdoms + Early Islamic Invasions
 
-**Coming soon.** Babur → Akbar → the golden age under Shah Jahan → Aurangzeb
-→ decline. Shivaji's Maratha confederacy; Peshwa rule; the third battle of
-Panipat (1761); the Anglo-Maratha wars.
+### 11.1 The Tripartite Struggle for Kannauj (8th – 10th c.)
+
+After Harsha, **Kannauj** (modern UP) becomes the political centre of north
+India — whoever holds Kannauj is "Emperor of Hindustan". Three powers
+fight for it for ~200 years.
+
+| Dynasty | Region | Founder | Famous ruler | Capital |
+|---|---|---|---|---|
+| **Gurjara-Pratiharas** | NW India | Nagabhata I | **Mihira Bhoja** (836–885) | Kannauj |
+| **Palas** | Bengal + Bihar | **Gopala** (750, elected) | **Dharmapala**, **Devapala** | Munger / Pataliputra |
+| **Rashtrakutas** | Deccan | Dantidurga (753) | **Krishna I** (Kailasa temple, Ellora); **Amoghavarsha** | Manyakheta |
+
+<div class="keypoint">
+
+**Three things examiners ask about the tripartite struggle**
+
+1. The **3 contenders** — Pratiharas, Palas, Rashtrakutas — and that
+   **Kannauj** is the prize.
+2. **Mihira Bhoja** (Pratihara, c. 836–885) eventually held Kannauj
+   longest; Arab traveller **Sulaiman** praised his cavalry.
+3. **Pala patronage of Buddhism** — **Vikramashila** university founded by
+   **Dharmapala** (~800 CE); **Nalanda** continued under Pala support.
+
+</div>
+
+### 11.2 Rashtrakuta cultural legacy
+
+- **Krishna I** built the rock-cut **Kailasa temple at Ellora (Cave 16)** —
+  carved top-down out of a single basalt cliff (~756 CE). UNESCO WHS.
+- **Amoghavarsha I** (814–878) wrote **Kavirajamarga** (oldest Kannada
+  literary work) and patronised Jainism.
+- Rashtrakutas' Arab contemporary **Al-Masudi** called the king
+  "Ballhara" — greatest of the four kings of the world (the others being
+  the Caliph, the Byzantine Emperor, and the Chinese Emperor).
+
+### 11.3 Arab invasion of Sindh (712 CE) — Islam arrives in India
+
+- **712 CE** — **Muhammad bin Qasim**, 17-year-old general of the Umayyad
+  Caliphate, defeats **Raja Dahir** of Sindh at **Rohri / Aror**.
+- He governs Sindh + Multan as Arab provinces; first sustained Muslim
+  political presence in the subcontinent.
+- Pretext: piracy on Arab ships off Debal; campaign authorised by
+  Governor **Al-Hajjaj bin Yusuf**.
+- **Limit:** the conquest stays a frontier province; never penetrates
+  beyond Multan. Arab control over Sindh lasts ~3 centuries.
+
+<div class="pitfall">
+
+**Trap — Sindh 712 was NOT the "Muslim conquest of India".** Arab control
+is local + brief. The decisive Islamic intrusion is the **Ghaznavid +
+Ghurid raids** from Afghanistan ~300 years later.
+
+</div>
+
+### 11.4 Mahmud of Ghazni (raids 1000 – 1027 CE)
+
+- Son of Sabuktigin; ruler of **Ghazni** (eastern Afghanistan).
+- **17 raids** into India between 1000 and 1027 — primarily for **plunder**,
+  not territorial conquest.
+- **1025 — Somnath temple raid (Gujarat)** — most famous; idol destroyed,
+  treasury looted. Defended by Bhima I of Anhilwara (Solanki/Chalukya).
+- Brought scholar **Al-Beruni** (Abu Rayhan) to India — wrote
+  **Kitab-ul-Hind** / *Tahqiq-i-Hind* (~1030 CE), the first ethnographic
+  study of India by an outsider.
+- Court poet **Firdausi** wrote the **Shahnama**.
+
+### 11.5 Muhammad of Ghor (1175 – 1206) — the conquest begins
+
+- Real name **Muizz-ud-din Muhammad bin Sam** of the Ghurid dynasty.
+- **1191 — First Battle of Tarain** — defeated by Prithviraj Chauhan III
+  (Rajput confederacy).
+- **1192 — Second Battle of Tarain** — Ghori defeats Prithviraj; Delhi +
+  Ajmer fall. This is the **decisive battle** that begins Muslim rule in
+  north India.
+- **1194 — Battle of Chandawar** — defeats Jayachandra of Kannauj.
+- Leaves general **Qutb-ud-din Aibak** as governor; assassinated 1206.
+
+<div class="pyq">
+
+**PYQ-style: The Second Battle of Tarain (1192) was fought between:**
+
+(a) Muhammad of Ghor and Jayachandra
+(b) Mahmud of Ghazni and Prithviraj Chauhan
+(c) **Muhammad of Ghor and Prithviraj Chauhan III**
+(d) Muhammad bin Qasim and Raja Dahir
+
+<div class="pyq-answer">**Ans:** (c). 1191 = Tarain I (Prithviraj wins);
+1192 = Tarain II (Ghori wins, decisive). 1194 = Chandawar (vs
+Jayachandra). 712 = Sindh (vs Dahir).</div>
+
+</div>
+
+### 11.6 Exam hooks — Chapter 11
+
+- Tripartite struggle = **Pratiharas (NW) + Palas (Bengal) + Rashtrakutas
+  (Deccan)** for **Kannauj**.
+- **Kailasa temple Ellora** — Krishna I (Rashtrakuta), rock-cut, ~756 CE.
+- **Vikramashila University** — founded by Dharmapala (Pala).
+- **Sindh 712** — Muhammad bin Qasim defeats Raja Dahir; Umayyad Caliphate.
+- **Mahmud of Ghazni** — 17 raids; **Somnath 1025**; brought Al-Beruni.
+- **Tarain I (1191)** — Prithviraj wins; **Tarain II (1192)** — Ghori wins.
+- **Battle of Chandawar 1194** — Ghori vs Jayachandra.
 
 ---
 
-# Part D — Colonial India + Freedom Struggle (1600s – 1947)
+## Chapter 12 — The Delhi Sultanate (1206 – 1526)
 
-**Coming soon.** Europeans' arrival (Portuguese 1498, Dutch 1602, English
-1600, French 1664); Plassey (1757); Buxar (1764); Regulating Act 1773 →
-Crown rule 1858; social reformers; the 1857 Revolt; INC's founding (1885);
-Moderates vs Extremists; Gandhi's return (1915); Non-Cooperation (1920–22);
-Civil Disobedience (1930–34); Quit India (1942); Partition + Independence
-(1947).
+### 12.1 Hook — five dynasties in 320 years
+
+After Muhammad of Ghor's death (1206), his slave-general **Qutb-ud-din
+Aibak** declares independence and crowns himself Sultan at **Lahore**. For
+the next 320 years, **five Muslim dynasties** rule Delhi.
+
+| # | Dynasty | Years | Founder | Last ruler |
+|---|---|---|---|---|
+| 1 | **Mamluk / Slave / Ilbari** | 1206 – 1290 | **Qutb-ud-din Aibak** | Kayumars |
+| 2 | **Khilji** | 1290 – 1320 | **Jalal-ud-din Khilji** | Khusrau Khan |
+| 3 | **Tughlaq** | 1320 – 1414 | **Ghiyas-ud-din Tughlaq** | Mahmud Tughlaq |
+| 4 | **Sayyid** | 1414 – 1451 | **Khizr Khan** | Alam Shah |
+| 5 | **Lodi** | 1451 – 1526 | **Bahlul Lodi** | **Ibrahim Lodi** (d. Panipat I) |
+
+<div class="examtip">
+
+**Mnemonic — "MKTSL"** (Mamluk-Khilji-Tughlaq-Sayyid-Lodi). Or:
+**"M**y **K**ind **T**eacher **S**aid **L**isten" — gives the dynasties
+in order.
+
+</div>
+
+### 12.2 The Mamluk / Slave dynasty (1206–1290)
+
+| Ruler | Reign | Must-know |
+|---|---|---|
+| **Qutb-ud-din Aibak** | 1206–10 | Founder; built **Quwwat-ul-Islam mosque** (first mosque in India) + began **Qutb Minar** (Delhi); died playing **chaugan** (polo) at Lahore. |
+| **Iltutmish** | 1211–36 | Real consolidator; introduced **silver tanka + copper jital** (currency); organised **Iqta system**; created **Turkan-i-Chihalgani** (40 nobles); completed Qutb Minar; received caliphate investiture. |
+| **Razia Sultana** | 1236–40 | **First + only woman ruler of Delhi**; daughter of Iltutmish; killed at Kaithal. |
+| **Balban** | 1266–87 | "Iron-blood policy"; introduced Persian court rituals — **sijda** (prostration) + **paibos** (kissing feet); theory of kingship "**Zillullah**" (Shadow of God); crushed Mewatis. |
+| Kayumars | 1287–90 | Boy-king; killed by Jalal-ud-din Khilji. |
+
+### 12.3 The Khilji dynasty (1290–1320)
+
+- **Jalal-ud-din Khilji** (1290–96) — founder; killed by his nephew.
+- **Alauddin Khilji** (1296–1316) — **the greatest Khilji**.
+  - Conquests: **Gujarat (1299)**, **Ranthambore (1301)**, **Chittor (1303)** —
+    Padmavati legend, Rani Padmini's jauhar.
+  - South expedition under **Malik Kafur** — Devagiri (Yadavas), Warangal
+    (Kakatiyas), Dwarasamudra (Hoysalas), Madurai (Pandyas) — 1307–13.
+  - **Market reforms** — fixed prices in 3 markets (grain, cloth, horses);
+    appointed **Diwan-i-Riyasat** (market controller).
+  - **Doab measurement** — land revenue = 50% of produce; introduced
+    **Dagh** (horse-branding) + **Chehra** (descriptive roll of soldiers).
+- **Khusrau Khan** (1320) — last Khilji; killed by Ghazi Malik.
+
+<div class="pitfall">
+
+**Trap — "Padmavati at Chittor" — the year is 1303**, not 1301
+(Ranthambore) or 1305. The Rajput rani's **jauhar** is symbolic; the
+historical Padmavati is debated, but the **fall of Chittor (1303)** is
+real.
+
+</div>
+
+### 12.4 The Tughlaq dynasty (1320–1414)
+
+| Ruler | Reign | Must-know |
+|---|---|---|
+| **Ghiyas-ud-din Tughlaq** | 1320–25 | Founder (was Ghazi Malik); died when wooden pavilion at Afghanpur collapsed (suspected — son Juna Khan / Muhammad). |
+| **Muhammad-bin-Tughlaq** | 1325–51 | Most learned + most controversial. **5 "follies"**: (1) **capital transfer to Daulatabad** (Devagiri); (2) **token currency** (copper coins as silver value, 1329–32); (3) Khorasan expedition (abandoned); (4) Qarachil expedition; (5) Doab taxation in famine. **Ibn Battuta** (Moroccan) visited his court 1333–42. |
+| **Firoz Shah Tughlaq** | 1351–88 | Built **Firozabad** (5th Delhi); abolished 23 taxes (kept only **Kharaj, Khams, Jizya, Zakat** — the 4 Sharia taxes); built **canals** (Yamuna–Hissar); transported **Ashokan pillars** from Topra + Meerut to Delhi; first Sultan to impose **Jizya on Brahmins**. |
+| Mahmud Tughlaq | 1394–1414 | Reigned during **Timur's invasion (1398)** — Timur sacked Delhi, massacred residents, took Indian masons to Samarkand. |
+
+### 12.5 Sayyid + Lodi dynasties (1414–1526)
+
+- **Sayyids (1414–51)** — Khizr Khan was Timur's deputy; weakest dynasty;
+  controlled only Delhi + suburbs.
+- **Lodis (1451–1526)** — **first Afghan (Pashtun) dynasty** (others were
+  Turkish).
+  - **Bahlul Lodi** — founder; defeated Sharqis of Jaunpur.
+  - **Sikandar Lodi** (1489–1517) — shifted capital to **Agra (1504)**;
+    started gaz-i-Sikandari (yard measurement).
+  - **Ibrahim Lodi** (1517–26) — **last Sultan**; defeated + killed by
+    **Babur at the First Battle of Panipat, 21 Apr 1526**. Only Sultan to
+    die on a battlefield.
+
+### 12.6 Sultanate art + architecture
+
+| Monument | Built by | Notes |
+|---|---|---|
+| **Quwwat-ul-Islam mosque** | Aibak | First mosque in India; built from temple debris |
+| **Qutb Minar** (73 m) | Aibak (1199) → Iltutmish (completed); 4th storey damaged by lightning, restored by Firoz Shah | UNESCO WHS 1993 |
+| **Alai Darwaza** | Alauddin Khilji (1311) | True dome + true arch first time in India |
+| **Tughlaqabad** | Ghiyas-ud-din Tughlaq | 3rd Delhi |
+| **Firozabad / Hauz Khas / Kotla** | Firoz Shah Tughlaq | 5th Delhi |
+| **Lodi Gardens (Sikandar Lodi, Mohammad Shah's tomb)** | Lodis | Octagonal tomb style |
+
+### 12.7 Exam hooks — Chapter 12
+
+- 5 dynasties: **Mamluk → Khilji → Tughlaq → Sayyid → Lodi** (1206–1526).
+- **Aibak** = founder + Qutb Minar started; **Iltutmish** = silver tanka.
+- **Razia** = only woman Sultan of Delhi.
+- **Balban** = sijda + paibos; "Zillullah".
+- **Alauddin Khilji** = Chittor 1303; market controls; Malik Kafur south.
+- **Muhammad bin Tughlaq's 5 follies** — capital transfer, token currency,
+  Khorasan, Qarachil, Doab tax.
+- **Ibn Battuta** = Muhammad bin Tughlaq's court (1333–42).
+- **Firoz Shah** — moved Ashokan pillars to Delhi; canals; jizya on
+  Brahmins.
+- **Timur's invasion** = 1398 (during Mahmud Tughlaq).
+- **Ibrahim Lodi** = died at **Panipat I, 1526** vs Babur.
 
 ---
 
-# Part E — Post-Independence India (1947 – today)
+## Chapter 13 — Bhakti Movement (12th – 17th c.)
 
-**Coming soon.** Integration of Princely States under Sardar Patel; Nehru's
-era (1947 – 1964); Green Revolution; Indo-Pak 1965 + 1971; Bangladesh
-liberation; Emergency (1975 – 77); LPG reforms (1991); nuclear tests (1974,
-1998); Kargil (1999); GST (2017); Art 370 abrogation (2019).
+> 2–3 PYQ marks per History section. Pattern = match saint with state / sect.
+
+### 13.1 What and why
+
+The **Bhakti movement** is a current of devotional Hinduism that
+**rejects caste hierarchy, rituals, and Brahmin monopoly** in favour of
+direct emotional surrender to a personal god. It begins in **Tamil south
+India (6th–9th c.)** with the Alvars + Nayanars, and spreads to north
+India after the 12th century.
+
+Two streams:
+
+| Stream | God | Examples |
+|---|---|---|
+| **Saguna** (with form) | Ram / Krishna / Shiva | Tulsidas, Mirabai, Surdas, Vallabhacharya |
+| **Nirguna** (formless) | Brahman (no idol) | Kabir, Nanak, Ravidas, Dadu |
+
+### 13.2 South Indian roots — Alvars + Nayanars (6th – 9th c.)
+
+- **Alvars** — 12 Vaishnavite saints (devoted to Vishnu); compiled
+  **Nalayira Divya Prabandham** (4,000 verses) by Nathamuni. **Andal** =
+  the only female Alvar ("Tiruppavai").
+- **Nayanars** — 63 Shaivite saints (devoted to Shiva); collected in
+  **Periya Puranam** (Sekkizhar). Famous: Appar, Sambandar, Sundarar,
+  Manikkavachakar.
+
+### 13.3 The Vaishnava acharyas — philosophical Bhakti
+
+| Acharya | School | Region | Key idea |
+|---|---|---|---|
+| **Shankaracharya** (788–820) | **Advaita** (non-dualism) | Kerala | Brahman = Atman; world is maya; founded **4 mathas** (Sringeri, Puri, Dwarka, Badrinath) |
+| **Ramanuja** (11–12c) | **Vishishtadvaita** (qualified non-dualism) | Tamil Nadu | God is personal; soul + god are distinct yet related |
+| **Madhvacharya** (13c) | **Dvaita** (dualism) | Karnataka (Udupi) | Soul + god permanently separate |
+| **Nimbarka** (13c) | **Dvaitadvaita** | South India | Krishna–Radha worship |
+| **Vallabhacharya** (15–16c) | **Shuddhadvaita** (pure non-dualism) | Gujarat | Pushtimarg; Krishna bhakti |
+
+### 13.4 Northern Bhakti — Saguna saints
+
+| Saint | Period | Region | Must-know |
+|---|---|---|---|
+| **Ramananda** | 14–15c | Varanasi | First major north-Indian Bhakti saint; disciples were **Kabir, Ravidas, Pipa, Sena, Dhanna** — across all castes. |
+| **Tulsidas** | 16c | Awadh | Wrote **Ramcharitmanas** in Awadhi; contemporary of Akbar. |
+| **Surdas** | 16c | Mathura | Blind poet; **Sursagar** (Krishna's childhood); one of the *Ashtachhap* of Vallabhacharya. |
+| **Mirabai** | 16c | Mewar (Rajasthan) | Married to Bhojraj of Mewar; Krishna devotee; ~1300 padas + bhajans. |
+| **Chaitanya Mahaprabhu** | 1486–1533 | Bengal | Founded **Gaudiya Vaishnavism**; popularised **Hare Krishna mantra**; "Achintya Bheda Abheda". |
+| **Shankaradeva** | 15–16c | Assam | Eka-sarana-naam-dharma; founded **Sattras**; **Borgeets**. |
+
+### 13.5 Nirguna saints — the bridge to Sufism
+
+| Saint | Period | Caste / region | Key text / idea |
+|---|---|---|---|
+| **Kabir** | 1440–1518 | Weaver (Julaha), Varanasi | **Bijak**, Sakhi, Doha; disciple of Ramananda; rejected both Hindu + Muslim orthodoxy. |
+| **Guru Nanak** | 1469–1539 | Khatri, Talwandi (Punjab) | First Sikh Guru; "Ek Onkar"; verses later compiled in **Adi Granth**. |
+| **Ravidas (Raidas)** | 15–16c | Cobbler (Chamar), Varanasi | Begumpura ideal city; Mirabai's guru. |
+| **Dadu Dayal** | 1544–1603 | Gujarat → Rajasthan | Dadu Panth; non-sectarian. |
+
+### 13.6 Maharashtra Bhakti — Varkari sampradaya (Vithoba bhakti at Pandharpur)
+
+| Saint | Period | Key |
+|---|---|---|
+| **Jnaneshwar** | 13c | **Jnaneshwari** — Marathi commentary on Bhagavad Gita |
+| **Namdev** | 13–14c | Verses in Adi Granth |
+| **Eknath** | 16c | Eknathi Bhagavat |
+| **Tukaram** | 17c | **Abhangs** — devotional verses |
+| **Samarth Ramdas** | 17c | Spiritual guru of Shivaji; **Dasbodh** |
+
+### 13.7 Lingayat / Virashaiva movement
+
+- **Basavanna** (12c, Karnataka) — founded the Lingayat sect; worship Shiva
+  as **Ishtalinga** (personal linga); rejected caste, idol worship, temple
+  rituals.
+- **Vachana literature** — Kannada prose-poetry of Lingayat saints
+  (Akkamahadevi, Allama Prabhu).
+
+### 13.8 Exam hooks — Chapter 13
+
+- 4 philosophical schools: **Advaita (Shankara) — Vishishtadvaita
+  (Ramanuja) — Dvaita (Madhva) — Shuddhadvaita (Vallabha)**.
+- **Ramananda** = first major North-Indian Bhakti saint; disciples
+  included Kabir + Ravidas.
+- **Kabir** = weaver, Varanasi, disciple of Ramananda; *Bijak*.
+- **Tulsidas** = **Ramcharitmanas in Awadhi**; contemporary of Akbar.
+- **Chaitanya** = Bengal; Gaudiya Vaishnavism; **Hare Krishna**.
+- **Mirabai** = Mewar; Krishna; **Bhojraj**.
+- **Basavanna** = Lingayats; Karnataka; 12c.
+- **Andal** = only female Alvar; Tiruppavai.
+- **Tukaram** + Pandharpur + Vithoba = Varkari (Maharashtra).
 
 ---
 
-# Part F — World History
+## Chapter 14 — Sufi Movement (8th – 18th c.)
 
-**Coming soon.** Renaissance, Reformation, American Revolution (1775–83),
-French Revolution (1789), Industrial Revolution (1760–1840), World Wars,
-Russian + Chinese Revolutions, Cold War + Decolonisation.
+### 14.1 What Sufism is
+
+**Sufism** = mystical, devotional Islam. Emphasises personal experience of
+divine love (**ishq**), **pir–murid** (master–disciple) chain, devotional
+music (**sama / qawwali**), and the doctrine of **Wahdat-ul-Wujud** ("Unity
+of Being", Ibn Arabi).
+
+Sufi orders are called **silsilahs**; ~12 reached India; **4 are
+exam-critical**.
+
+### 14.2 The 4 major silsilahs in India
+
+| Silsilah | Founder in India | Centre | Famous saints |
+|---|---|---|---|
+| **Chishti** | **Khwaja Moinuddin Chishti** (12c, from Sistan/Persia) | **Ajmer** | Bakhtiyar Kaki (Mehrauli, Delhi); Baba Farid (Pakpattan, Punjab); **Nizamuddin Auliya** (Delhi); Nasiruddin Chiragh ("Chiragh-i-Delhi") |
+| **Suhrawardi** | Bahauddin Zakaria (13c) | **Multan + Punjab** | Rukn-ud-din Multani; accepted state patronage (unlike Chishtis) |
+| **Qadiri** | Niamatullah / Shah Niamatullah (15–16c) | Punjab, Sindh | **Mian Mir** (Lahore — laid Golden Temple foundation per tradition); **Dara Shukoh** was his disciple |
+| **Naqshbandi** | Khwaja Baqi Billah (late 16c, from C. Asia) | Delhi | **Sheikh Ahmad Sirhindi** ("Mujaddid Alf Sani") — opposed Akbar's Din-i-Ilahi |
+
+### 14.3 Famous Sufi saints — must memorise
+
+| Saint | Years | Centre | Famous for |
+|---|---|---|---|
+| **Khwaja Moinuddin Chishti** | 1141–1236 | Ajmer | "Garib Nawaz"; Chishti order's founder in India; dargah at Ajmer |
+| **Bakhtiyar Kaki** | 1173–1235 | Mehrauli (Delhi) | Disciple of Chishti; Iltutmish his royal devotee |
+| **Baba Farid (Ganj-Shakar)** | 1173–1265 | Pakpattan (Punjab) | His Punjabi verses included in **Adi Granth** |
+| **Nizamuddin Auliya** | 1238–1325 | Delhi | Pupil of Baba Farid; lived through 7 Sultans; refused to attend their courts. "Hanuz Dilli dur ast" (Delhi is still far away) — about Ghiyas-ud-din Tughlaq |
+| **Amir Khusrau** | 1253–1325 | Delhi | Disciple of Nizamuddin; "**Tuti-i-Hind**" (Parrot of India); credited with **Qawwali**, **sitar + tabla** (debated); Khari Boli; wrote *Tughlaq Nama, Khazain-ul-Futuh, Ashiqa* |
+| **Sheikh Salim Chishti** | 16c | Fatehpur Sikri | Akbar's prayer for a son (Salim → Jahangir, named after him); his tomb is at FS |
+| **Mian Mir** | 16–17c | Lahore | Qadiri; reportedly laid foundation of **Harmandir Sahib (Golden Temple)** |
+| **Sheikh Ahmad Sirhindi** | 1564–1624 | Sirhind | **"Mujaddid Alf Sani"** (Renewer of 2nd Millennium); orthodox; opposed Akbar's syncretism |
+| **Sarmad Kashani** | d. 1661 | Delhi | Persian-Jewish mystic; executed by Aurangzeb |
+
+### 14.4 Sufi institutions + vocabulary
+
+- **Khanqah** — Sufi hospice / monastery where pir lived with disciples.
+- **Pir / Murshid** — spiritual master; **Murid** — disciple.
+- **Sama** — devotional music gathering (favoured by Chishtis; opposed by
+  Naqshbandis).
+- **Qawwali** — devotional Sufi singing (popularised by Amir Khusrau).
+- **Urs** — death anniversary of a saint (celebrated, not mourned —
+  union with God).
+- **Dargah** — shrine over a Sufi saint's tomb (Ajmer, Nizamuddin, etc.).
+- **Wahdat-ul-Wujud** — Ibn Arabi's "Unity of Being".
+- **Wahdat-ul-Shuhud** — Sirhindi's counter-doctrine ("Unity of
+  Witnessing"): God + creation are distinct.
+
+### 14.5 Exam hooks — Chapter 14
+
+- 4 main orders: **Chishti, Suhrawardi, Qadiri, Naqshbandi**.
+- **Khwaja Moinuddin Chishti** — Ajmer, founder of Chishti in India.
+- **Nizamuddin Auliya** — Delhi; pupil of Baba Farid; **Amir Khusrau** his
+  disciple.
+- **Amir Khusrau** = "Tuti-i-Hind"; Qawwali.
+- **Baba Farid's** verses are in the **Adi Granth**.
+- **Mian Mir** (Qadiri) — Golden Temple foundation tradition.
+- **Sheikh Ahmad Sirhindi** = "Mujaddid Alf Sani"; opposed Din-i-Ilahi.
+- **Salim Chishti** = Fatehpur Sikri; Akbar's son Salim named after him.
+
+<div class="pyq">
+
+**PYQ-style: Amir Khusrau was a disciple of which Sufi saint?**
+
+(a) Khwaja Moinuddin Chishti
+(b) Baba Farid
+(c) **Nizamuddin Auliya**
+(d) Sheikh Salim Chishti
+
+<div class="pyq-answer">**Ans:** (c) Nizamuddin Auliya. Khusrau's tomb is
+right next to Nizamuddin's in Delhi.</div>
+
+</div>
+
+---
+
+## Chapter 15 — Vijayanagar + Bahmani + Deccan Sultanates
+
+### 15.1 Why these two empires matter
+
+While the Delhi Sultanate consolidated north India, the **Deccan** split
+into a Hindu south (**Vijayanagar**) and a Muslim north-Deccan
+(**Bahmani**, later 5 sultanates). Their 200-year rivalry shapes South
+Indian history.
+
+### 15.2 Vijayanagar Empire (1336 – 1646)
+
+| Item | Detail |
+|---|---|
+| Founded | **1336** by **Harihara I + Bukka I** (Sangama brothers) |
+| Capital | **Hampi** (Karnataka) — UNESCO WHS 1986 |
+| Spiritual mentor | **Vidyaranya** (Sage of Sringeri) |
+| Dynasties | **Sangama → Saluva → Tuluva → Aravidu** (4 in total) |
+
+#### Greatest ruler — Krishnadevaraya (r. 1509–1529, Tuluva)
+
+- Wrote **Amuktamalyada** (Telugu poem) + **Ushaparinayam** (Sanskrit).
+- Court had the **Ashtadiggajas** ("8 elephants of the directions") — 8
+  Telugu poets, including **Allasani Peddana** ("Andhra Kavita Pitamaha").
+- Patronised **Madhavacharya, Vyasaraya** (Dvaita scholars).
+- Italian traveller **Domingo Paes** described his court.
+- Defeated Bahmani successors; conquered Raichur (1520).
+
+#### Battle of Talikota / Rakshasi-Tangadi (23 Jan 1565)
+
+- 4 Deccan sultanates (**Bijapur + Ahmadnagar + Golconda + Bidar**)
+  combine and crush Vijayanagar's **Ramaraya**.
+- Hampi sacked + razed; Vijayanagar never recovers fully (lingers under
+  Aravidu line in Penukonda + Chandragiri till 1646).
+
+#### Hampi monuments (Tuluva era)
+
+- **Virupaksha temple** (Shiva); **Vittala temple** with musical pillars +
+  stone chariot; **Lotus Mahal**; **Hazara Rama temple**; **elephant
+  stables**.
+
+### 15.3 Bahmani Sultanate (1347 – 1518)
+
+| Item | Detail |
+|---|---|
+| Founded | **1347** by **Hasan Gangu / Alauddin Bahman Shah** (revolted against Muhammad-bin-Tughlaq) |
+| Capital | **Gulbarga → Bidar** (shifted in 1429) |
+| Famous PM | **Mahmud Gawan** (Vizier under Muhammad Shah III; founded Madrasa at Bidar; executed 1481) |
+
+After ~170 years the Bahmani breaks into **5 Deccan Sultanates**:
+
+| Sultanate | Capital | Founder | Famous for |
+|---|---|---|---|
+| **Bijapur (Adil Shahi)** | Bijapur | Yusuf Adil Shah | **Gol Gumbaz** (2nd largest dome in world; Muhammad Adil Shah) |
+| **Ahmadnagar (Nizam Shahi)** | Ahmadnagar | Malik Ahmad | **Chand Bibi** (Razia of Ahmadnagar); resisted Akbar |
+| **Golconda (Qutb Shahi)** | Golconda → Hyderabad (1591) | Quli Qutb Shah | **Charminar** (1591, Muhammad Quli Qutb Shah); diamond trade (Kohinoor) |
+| **Bidar (Barid Shahi)** | Bidar | Qasim Barid | Mahmud Gawan's Madrasa |
+| **Berar (Imad Shahi)** | Ellichpur | Fathullah Imad | Smallest; absorbed by Ahmadnagar 1574 |
+
+<div class="examtip">
+
+**Mnemonic — "BAG-BB"** for the 5 Deccan Sultanates: **B**ijapur,
+**A**hmadnagar, **G**olconda, **B**idar, **B**erar.
+
+</div>
+
+### 15.4 Exam hooks — Chapter 15
+
+- **Vijayanagar** founded **1336** by **Harihara + Bukka** (Sangama); spiritual
+  guide **Vidyaranya**; capital **Hampi**.
+- 4 dynasties: **Sangama → Saluva → Tuluva → Aravidu**.
+- **Krishnadevaraya** (1509–29, Tuluva) — greatest; **Amuktamalyada**;
+  **Ashtadiggajas**.
+- **Battle of Talikota 1565** — Deccan sultanates crush Vijayanagar; Hampi
+  sacked.
+- **Bahmani** founded **1347** by **Hasan Gangu** (Bahman Shah).
+- Breaks into **5 sultanates** — Bijapur, Ahmadnagar, Golconda, Bidar, Berar.
+- **Gol Gumbaz** = Bijapur (Muhammad Adil Shah).
+- **Charminar** = Golconda (1591, Muhammad Quli Qutb Shah).
+- **Hampi** = UNESCO WHS 1986.
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["MEDIEVAL INDIA<br>650 - 1526"]:::root
+    R --> NK["North Indian Kingdoms"]:::key
+    R --> INV["Islamic Invasions"]:::date
+    R --> DS["Delhi Sultanate 1206-1526"]:::key
+    R --> BS["Bhakti + Sufi"]:::proc
+    R --> SOU["South: Vijayanagar + Bahmani"]:::key
+    NK --> NK1["Tripartite struggle for KANNAUJ<br>Pratiharas + Palas + Rashtrakutas<br>Kailasa Temple Ellora = Krishna I (Rashtrakuta)"]:::date
+    INV --> INV1["712 CE: Muhammad bin Qasim defeats<br>Raja Dahir at Sindh (Umayyad Caliphate)"]:::date
+    INV --> INV2["1000-1027: Mahmud of Ghazni - 17 raids<br>Somnath 1025; Al-Beruni's Kitab-ul-Hind"]:::date
+    INV --> INV3["1192: Tarain II - Muhammad of Ghor<br>defeats Prithviraj Chauhan III. DECISIVE"]:::date
+    DS --> DS1["5 dynasties (MKTSL):<br>Mamluk 1206-90 (Aibak, Iltutmish, Razia, Balban)<br>Khilji 1290-1320 (Alauddin)<br>Tughlaq 1320-1414 (Muhammad, Firoz)<br>Sayyid 1414-51 - Lodi 1451-1526"]:::date
+    DS --> DS2["Panipat I 1526: Babur kills Ibrahim Lodi<br>End of Delhi Sultanate"]:::trap
+    BS --> BS1["Bhakti: Saguna (Tulsi, Mira, Surdas)<br>Nirguna (Kabir, Nanak, Ravidas)<br>4 Acharyas: Shankara - Ramanuja - Madhva - Vallabha"]:::proc
+    BS --> BS2["Sufi: 4 silsilahs - Chishti, Suhrawardi,<br>Qadiri, Naqshbandi<br>Nizamuddin + Amir Khusrau (Tuti-i-Hind)"]:::proc
+    SOU --> SOU1["Vijayanagar 1336-1646<br>Founders: Harihara + Bukka<br>Krishnadevaraya (1509-29)<br>BATTLE OF TALIKOTA 1565 - destroyed"]:::date
+    SOU --> SOU2["Bahmani 1347-1518 - 5 Deccan sultanates<br>Bijapur, Ahmadnagar, Golconda, Bidar, Berar"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
+---
+
+# Part C — The Mughals + Marathas (1526 – 1803) {#part-c}
+
+The **Mughal Empire** (1526–1857 nominally; effective rule till 1707) is
+the most-tested medieval-modern dynasty in Indian competitive exams. Six
+"Great Mughals" (Babur to Aurangzeb), three battles of Panipat, a Sur
+interregnum (1540–55), an attempt to synthesize Hindu + Muslim
+traditions, and finally a long Deccan war that drains the empire. Out of
+the Deccan war emerges **Shivaji's Maratha Confederacy** — which by the
+mid-1700s becomes the de-facto power in India.
+
+---
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg viewBox="0 0 480 530" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:480px;display:block;margin:8pt auto;font-family:Arial,sans-serif;">
+<defs>
+  <clipPath id="ind-mg"><path d="M 125.9,33.7 L 145.1,38.4 L 165.5,52.5 L 179.2,61.9 L 186.0,72.9 L 195.6,88.6 L 209.3,107.4 L 222.9,124.6 L 233.9,143.5 L 243.4,151.3 L 257.1,159.1 L 270.7,167.0 L 288.5,174.8 L 304.9,178.0 L 318.6,182.7 L 332.2,185.8 L 345.9,188.9 L 340.4,193.6 L 345.9,201.5 L 352.7,206.2 L 343.1,214.0 L 352.7,218.7 L 366.4,221.9 L 375.9,218.7 L 386.9,206.2 L 400.5,190.5 L 421.0,178.0 L 427.8,167.0 L 430.6,154.4 L 434.7,151.3 L 448.3,162.3 L 448.3,178.0 L 441.5,193.6 L 414.2,214.0 L 393.7,229.7 L 386.9,237.6 L 384.1,250.1 L 384.1,256.4 L 380.0,265.8 L 373.2,273.6 L 366.4,268.9 L 362.3,261.1 L 356.8,256.4 L 348.6,253.2 L 332.2,268.9 L 322.7,276.8 L 309.0,284.6 L 302.2,292.4 L 288.5,303.4 L 277.6,316.0 L 263.9,331.7 L 243.4,347.3 L 222.9,363.0 L 216.1,378.7 L 212.0,402.2 L 209.3,425.7 L 206.5,449.3 L 195.6,469.7 L 184.7,480.6 L 175.1,486.9 L 168.3,480.6 L 164.2,472.8 L 160.1,460.2 L 154.6,449.3 L 150.5,433.6 L 141.0,417.9 L 138.2,402.2 L 127.3,378.7 L 120.5,363.0 L 113.6,339.5 L 113.6,323.8 L 110.9,316.0 L 110.9,300.3 L 106.8,284.6 L 100.0,276.8 L 93.1,272.1 L 83.6,268.9 L 72.6,264.2 L 61.7,261.1 L 54.9,253.2 L 50.8,245.4 L 52.2,237.6 L 65.8,229.7 L 79.5,234.4 L 93.1,228.1 L 79.5,206.2 L 93.1,182.7 L 79.5,167.0 L 86.3,151.3 L 83.6,135.6 L 86.3,119.9 L 106.8,104.3 L 120.5,93.3 L 124.6,83.9 L 123.2,68.2 L 130.0,57.2 L 131.4,46.2 L 125.9,33.7 Z"/></clipPath>
+</defs>
+
+<!-- Ocean background -->
+<rect width="480" height="530" fill="#cfe2f3" rx="8"/>
+
+<!-- Mughal territory shading -->
+<rect x="0" y="22" width="480" height="320" fill="#e8eaf6" opacity="0.85" clip-path="url(#ind-mg)"/>
+<!-- Aurangzeb's southern extension (lighter) -->
+<rect x="0" y="342" width="480" height="120" fill="#e8eaf6" opacity="0.45" clip-path="url(#ind-mg)"/>
+
+<!-- India outline -->
+<path d="M 125.9,33.7 L 145.1,38.4 L 165.5,52.5 L 179.2,61.9 L 186.0,72.9 L 195.6,88.6 L 209.3,107.4 L 222.9,124.6 L 233.9,143.5 L 243.4,151.3 L 257.1,159.1 L 270.7,167.0 L 288.5,174.8 L 304.9,178.0 L 318.6,182.7 L 332.2,185.8 L 345.9,188.9 L 340.4,193.6 L 345.9,201.5 L 352.7,206.2 L 343.1,214.0 L 352.7,218.7 L 366.4,221.9 L 375.9,218.7 L 386.9,206.2 L 400.5,190.5 L 421.0,178.0 L 427.8,167.0 L 430.6,154.4 L 434.7,151.3 L 448.3,162.3 L 448.3,178.0 L 441.5,193.6 L 414.2,214.0 L 393.7,229.7 L 386.9,237.6 L 384.1,250.1 L 384.1,256.4 L 380.0,265.8 L 373.2,273.6 L 366.4,268.9 L 362.3,261.1 L 356.8,256.4 L 348.6,253.2 L 332.2,268.9 L 322.7,276.8 L 309.0,284.6 L 302.2,292.4 L 288.5,303.4 L 277.6,316.0 L 263.9,331.7 L 243.4,347.3 L 222.9,363.0 L 216.1,378.7 L 212.0,402.2 L 209.3,425.7 L 206.5,449.3 L 195.6,469.7 L 184.7,480.6 L 175.1,486.9 L 168.3,480.6 L 164.2,472.8 L 160.1,460.2 L 154.6,449.3 L 150.5,433.6 L 141.0,417.9 L 138.2,402.2 L 127.3,378.7 L 120.5,363.0 L 113.6,339.5 L 113.6,323.8 L 110.9,316.0 L 110.9,300.3 L 106.8,284.6 L 100.0,276.8 L 93.1,272.1 L 83.6,268.9 L 72.6,264.2 L 61.7,261.1 L 54.9,253.2 L 50.8,245.4 L 52.2,237.6 L 65.8,229.7 L 79.5,234.4 L 93.1,228.1 L 79.5,206.2 L 93.1,182.7 L 79.5,167.0 L 86.3,151.3 L 83.6,135.6 L 86.3,119.9 L 106.8,104.3 L 120.5,93.3 L 124.6,83.9 L 123.2,68.2 L 130.0,57.2 L 131.4,46.2 L 125.9,33.7 Z" fill="none" stroke="#4a148c" stroke-width="2"/>
+
+<!-- Title -->
+<rect x="0" y="0" width="480" height="22" fill="#4a148c" opacity="0.9"/>
+<text x="240" y="15" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Mughal Empire — Capitals &amp; Battles</text>
+
+<!-- Panipat (all 3 battles) -->
+<circle cx="166.9" cy="152.9" r="7" fill="#c62828" stroke="white" stroke-width="2"/>
+<text x="180" y="148" font-size="9" font-weight="bold" fill="#c62828">Panipat</text>
+<text x="180" y="158" font-size="7.5" fill="#c62828">1526 · 1556 · 1761</text>
+
+<!-- Delhi (capital) -->
+<polygon points="171,165 176,160 181,165 176,170" fill="#f57f17" stroke="#e65100" stroke-width="1.5"/>
+<text x="195" y="170" font-size="9" font-weight="bold" fill="#e65100">Delhi</text>
+
+<!-- Agra (capital) -->
+<polygon points="182,187 187,182 192,187 187,192" fill="#f57f17" stroke="#e65100" stroke-width="1.5"/>
+<text x="200" y="192" font-size="9" font-weight="bold" fill="#e65100">Agra</text>
+<text x="200" y="202" font-size="7.5" fill="#e65100">(Taj Mahal)</text>
+
+<!-- Fatehpur Sikri -->
+<circle cx="178" cy="200" r="3" fill="#8d6e63" stroke="white"/>
+<text x="100" y="195" font-size="8" font-weight="bold" fill="#5d4037">Fatehpur</text>
+<text x="100" y="206" font-size="8" font-weight="bold" fill="#5d4037">Sikri</text>
+
+<!-- Haldighati -->
+<circle cx="123.2" cy="225" r="4" fill="#2e7d32" stroke="white" stroke-width="1"/>
+<text x="48" y="222" font-size="8" font-weight="bold" fill="#1b5e20">Haldighati</text>
+<text x="48" y="232" font-size="7.5" fill="#1b5e20">1576: Akbar vs</text>
+<text x="48" y="242" font-size="7.5" fill="#1b5e20">Maharana Pratap</text>
+
+<!-- Plassey -->
+<circle cx="321" cy="240" r="4" fill="#2e7d32" stroke="white" stroke-width="1"/>
+<text x="330" y="245" font-size="8" font-weight="bold" fill="#1b5e20">Plassey</text>
+<text x="330" y="255" font-size="7.5" fill="#1b5e20">1757</text>
+
+<!-- Buxar -->
+<circle cx="262" cy="212" r="3.5" fill="#2e7d32" stroke="white" stroke-width="1"/>
+<text x="230" y="218" font-size="8" font-weight="bold" fill="#1b5e20">Buxar</text>
+<text x="230" y="228" font-size="7.5" fill="#1b5e20">1764</text>
+
+<!-- Battle labels (left side, in ocean) -->
+<rect x="6" y="270" width="115" height="100" rx="4" fill="white" opacity="0.92" stroke="#c62828" stroke-width="1"/>
+<text x="64" y="284" text-anchor="middle" font-size="9" font-weight="bold" fill="#c62828">3 Battles of Panipat</text>
+<text x="10" y="298" font-size="7.5" font-weight="bold" fill="#c62828">I · 1526</text>
+<text x="10" y="308" font-size="7" fill="#333">Babur vs Lodi</text>
+<text x="10" y="317" font-size="7" fill="#333">→ Mughal Empire</text>
+<text x="10" y="330" font-size="7.5" font-weight="bold" fill="#e65100">II · 1556</text>
+<text x="10" y="340" font-size="7" fill="#333">Akbar vs Hemu</text>
+<text x="10" y="353" font-size="7.5" font-weight="bold" fill="#1565c0">III · 1761</text>
+<text x="10" y="363" font-size="7" fill="#333">Durrani vs Marathas</text>
+
+<!-- Mughal Emperors box (right side, in ocean) -->
+<rect x="335" y="285" width="140" height="225" rx="4" fill="white" opacity="0.95" stroke="#4a148c" stroke-width="1"/>
+<text x="405" y="300" text-anchor="middle" font-size="10" font-weight="bold" fill="#4a148c">Mughal Emperors</text>
+<text x="342" y="315" font-size="8" font-weight="bold" fill="#333">Babur 1526–30</text>
+<text x="342" y="325" font-size="7.5" fill="#555">Founded empire</text>
+<text x="342" y="338" font-size="8" font-weight="bold" fill="#333">Humayun 1530–56</text>
+<text x="342" y="348" font-size="7.5" fill="#555">Lost to Sher Shah '40</text>
+<text x="342" y="361" font-size="8" font-weight="bold" fill="#333">Akbar 1556–1605</text>
+<text x="342" y="371" font-size="7.5" fill="#555">Din-i-Ilahi · Navratnas</text>
+<text x="342" y="384" font-size="8" font-weight="bold" fill="#333">Jahangir 1605–27</text>
+<text x="342" y="394" font-size="7.5" fill="#555">Nur Jahan · paintings</text>
+<text x="342" y="407" font-size="8" font-weight="bold" fill="#333">Shah Jahan 1628–58</text>
+<text x="342" y="417" font-size="7.5" fill="#555">Taj Mahal · Peacock Th.</text>
+<text x="342" y="430" font-size="8" font-weight="bold" fill="#333">Aurangzeb 1658–1707</text>
+<text x="342" y="440" font-size="7.5" fill="#555">Largest extent · jizya</text>
+<text x="342" y="455" font-size="8" font-weight="bold" fill="#e65100">Sher Shah Sur</text>
+<text x="342" y="465" font-size="7.5" fill="#555">1540–45: GT Road,</text>
+<text x="342" y="475" font-size="7.5" fill="#555">Rupiya coin</text>
+<text x="342" y="490" font-size="8" fill="#b71c1c">End: 1857 (1707 effective)</text>
+<text x="342" y="503" font-size="7.5" fill="#555">Bahadur Shah Zafar last</text>
+
+<!-- Legend (bottom-left, in ocean) -->
+<rect x="20" y="450" width="115" height="68" rx="4" fill="white" opacity="0.9" stroke="#94a3b8" stroke-width="0.8"/>
+<text x="28" y="463" font-size="8" font-weight="bold" fill="#374151">Legend</text>
+<rect x="28" y="468" width="12" height="9" fill="#e8eaf6" stroke="#4a148c"/>
+<text x="44" y="476" font-size="7.5" fill="#333">Mughal territory</text>
+<circle cx="34" cy="486" r="4" fill="#c62828"/>
+<text x="44" y="489" font-size="7.5" fill="#333">Panipat (3 battles)</text>
+<polygon points="30,500 34,496 38,500 34,504" fill="#f57f17" stroke="#e65100"/>
+<text x="44" y="503" font-size="7.5" fill="#333">Capital city</text>
+<circle cx="34" cy="513" r="4" fill="#2e7d32"/>
+<text x="44" y="516" font-size="7.5" fill="#333">Other battle</text>
+
+<!-- Compass -->
+<circle cx="455" cy="60" r="13" fill="white" opacity="0.85" stroke="#94a3b8"/>
+<text x="455" y="56" text-anchor="middle" font-size="8" font-weight="bold" fill="#374151">N</text>
+<polygon points="455,50 452,60 455,58 458,60" fill="#1e3a5f"/>
+</svg>
+
+</div>
+
+## Chapter 16 — The Six Great Mughals
+
+### 16.1 Babur (r. 1526 – 1530) — the founder
+
+- Full name **Zahir-ud-din Muhammad Babur**; descendant of **Timur** (on
+  father's side) + **Genghis Khan** (on mother's side).
+- Came from **Farghana** (Uzbekistan); was driven out + made Kabul his base.
+- **Four key battles**:
+
+| Battle | Year | Defeated | Result |
+|---|---|---|---|
+| **Panipat I** | 21 Apr 1526 | **Ibrahim Lodi** | End of Delhi Sultanate; founded Mughal Empire |
+| **Khanwa** | 17 Mar 1527 | **Rana Sanga** (Mewar) | Defeated Rajput confederacy |
+| **Chanderi** | 1528 | **Medini Rai** | Consolidated Bundelkhand |
+| **Ghaghra** | 1529 | **Mahmud Lodi + Afghans** | Eastern frontier secured |
+
+- Wrote **Tuzuk-i-Baburi (Baburnama)** in **Chagatai Turkic** — first major
+  Mughal autobiography; describes Indian flora, fauna, customs.
+- Brought **gunpowder + matchlock muskets + field artillery** ("tulghuma"
+  tactics) to north India — decisive at Panipat.
+- Died at Agra; buried at Kabul (per his wish).
+
+### 16.2 Humayun (r. 1530–40, 1555–56) — the exile
+
+- Inherited a half-built empire; faced rebellions from brothers Kamran,
+  Askari, Hindal.
+- **Defeats by Sher Shah Suri**: **Chausa (1539)** + **Kannauj/Bilgram
+  (1540)** — driven out of India.
+- 15-year exile in **Persia** (Shah Tahmasp's court).
+- Reconquered Delhi in **1555** with Persian help; died a year later (Jan
+  1556) **falling from the library stairs at Sher Mandal (Purana Qila)**.
+- Tomb at Delhi — **first garden tomb** in India; UNESCO WHS; commissioned
+  by his widow **Bega Begum / Haji Begum** (1565–72).
+
+### 16.3 Sur Interregnum — Sher Shah Suri (r. 1540–45)
+
+Though not a Mughal, his **5-year reign sets the template** that Akbar
+later refines.
+
+- **Born Farid Khan**; given title "Sher Khan" for killing a tiger.
+- Built the **Grand Trunk Road** (Sonargaon, Bengal → Kabul) and built
+  **1,700 sarais** (rest-houses) along it.
+- Issued the **silver Rupiya** (~178 grains) — the basis of the modern rupee.
+- Re-organised **Iqta** into **Sarkar → Pargana** units.
+- **Postal system** — relay of horse-borne dak.
+- Land revenue — **measurement + classification** (good/middle/bad) =
+  ancestor of Todar Mal's zabti.
+- Built **Purana Qila** + **Sher Shah's tomb at Sasaram** (Bihar) — finest
+  Indo-Islamic tomb in pre-Mughal style.
+- Died in an accidental gunpowder explosion at **Kalinjar fort (1545)**.
+
+### 16.4 Akbar (r. 1556 – 1605) — the consolidator
+
+- Crowned at **Kalanaur (Punjab)** at age 13 (1556); regent **Bairam Khan**
+  ran the government 1556–60.
+- **Second Battle of Panipat (5 Nov 1556)** — Bairam Khan + Akbar defeat
+  **Hemu (Hemchandra Vikramaditya)** — last Hindu emperor of Delhi.
+- **Conquests**: Malwa (1561), Gondwana (Rani Durgavati, 1564), Chittor
+  (1568, Jaimal + Patta), Ranthambore (1569), Gujarat (1572), Bengal
+  (1576), Kashmir (1586), Sindh (1591), Berar–Khandesh (Asirgarh, 1601).
+- **Mansabdari system** — military-civil ranks of 10 to 10,000 sawars
+  (cavalry); **dual ranks zat + sawar**.
+- **Land revenue (Todar Mal, 1580)** — **Zabti / Dahsala system** —
+  10-year average yield in rupees per bigha; ~33% of produce.
+- **Religious policy**: abolished **jizya (1564)** + pilgrimage tax (1563);
+  **Ibadat Khana** at Fatehpur Sikri (1575); **Din-i-Ilahi (1582)** —
+  syncretic monotheism; **Mahzar (1579)** — declared Akbar as final
+  arbiter on religious matters.
+- **Nine gems (Navaratnas)**: **Abul Fazl** (Akbarnama, Ain-i-Akbari),
+  **Faizi** (poet), **Tansen** (music), **Raja Todar Mal** (revenue),
+  **Raja Man Singh** (general), **Abdul Rahim Khan-i-Khanan**,
+  **Birbal**, **Hakim Hukam**, **Mulla do Pyaza**.
+- **Fatehpur Sikri** (1571–85) — capital for 14 years; **UNESCO WHS**;
+  **Buland Darwaza** built after Gujarat conquest.
+- Foreign envoys: **Ralph Fitch** (1583); **Father Acquaviva** (Jesuit
+  from Goa, 1580).
+
+<div class="examtip">
+
+**Mughal "first" facts**
+
+- Founder = **Babur**.
+- First Mughal **defeated + driven out** = Humayun.
+- First Mughal **garden tomb in India** = Humayun's tomb (Delhi).
+- First Mughal to abolish **jizya** = Akbar (1564); **reimposed by
+  Aurangzeb** (1679).
+- First Mughal **golden age of architecture** = Shah Jahan.
+- Last "great" Mughal = **Aurangzeb** (d. 1707).
+- Last Mughal at all = **Bahadur Shah II Zafar** (deposed 1857).
+
+</div>
+
+### 16.5 Jahangir (r. 1605–27) — the connoisseur
+
+- Real name **Salim**; titled "**Nur-ud-din Jahangir**"; named after Salim
+  Chishti.
+- Wife **Nur Jahan** ("Light of the World", née Mehr-un-Nisa) — most
+  powerful Mughal queen; coins minted in her name; **Junta of four** ran
+  the court (Nur Jahan + her father I'timad-ud-Daulah + brother Asaf
+  Khan + Jahangir).
+- **Captain William Hawkins** (1608–11) + **Sir Thomas Roe** (1615–18) —
+  English envoys; Roe secured trading rights for the EIC.
+- Patronised Mughal **miniature painting** (peak under him) — Mansur,
+  Bishan Das, Abul Hasan.
+- Built **I'timad-ud-Daulah's tomb at Agra** ("Baby Taj") — first
+  pietra-dura inlay in India; commissioned by Nur Jahan.
+- Tomb at **Lahore** (Shahdara Bagh).
+
+### 16.6 Shah Jahan (r. 1628–58) — the builder
+
+- Real name **Khurram**; "Shah Jahan" = King of the World.
+- Wife **Mumtaz Mahal** (Arjumand Banu) died **1631** at Burhanpur in
+  childbirth — **Taj Mahal** built in her memory (1632–53, UNESCO WHS).
+- Architects: **Ustad Ahmad Lahori** (chief) + Ustad Isa.
+- Other monuments: **Red Fort, Delhi (1639–48)** with **Diwan-i-Aam +
+  Diwan-i-Khas** (housing the **Peacock Throne**); **Jama Masjid Delhi
+  (1656)**; **Moti Masjid (Agra Fort)**; **Shahjahanabad** (7th Delhi).
+- Capital shifted from **Agra to Shahjahanabad / Delhi (1648)**.
+- Wars of succession 1657–58 between sons **Dara Shukoh (eldest,
+  Sufi-Vedanta liberal), Shuja, Aurangzeb, Murad**.
+- **Aurangzeb wins** at **Samugarh (29 May 1658)**; Shah Jahan imprisoned
+  in **Agra Fort** by his son; died there 1666; buried beside Mumtaz.
+
+### 16.7 Aurangzeb (Alamgir) (r. 1658–1707) — the orthodox
+
+- Longest-reigning Mughal — **49 years**.
+- Killed brothers (Dara executed 1659; Shuja, Murad finished off).
+- **Religious reversal** — **reimposed jizya (1679)**; banned music;
+  destroyed temples (Vishwanath Varanasi, Keshava Rai Mathura, Somnath).
+- **Executed Guru Tegh Bahadur (1675)** at Chandni Chowk (Sis Ganj) —
+  refused conversion to Islam.
+- **25-year Deccan war (1681–1707)** against the Marathas — ruinously
+  expensive; pursued **Shivaji's son Sambhaji** (captured + executed 1689).
+- Extended empire to **maximum territorial extent** (3.2 million sq km;
+  150 mn subjects).
+- Died at **Ahmadnagar (1707)**; modest tomb at **Khuldabad**.
+- Wrote **Fatawa-i-Alamgiri** (compendium of Sunni jurisprudence).
+
+### 16.8 Three Battles of Panipat — never confuse them
+
+| Battle | Date | Combatants | Winner |
+|---|---|---|---|
+| **Panipat I** | **21 Apr 1526** | Babur vs Ibrahim Lodi | Babur (founds Mughal empire) |
+| **Panipat II** | **5 Nov 1556** | Akbar/Bairam Khan vs Hemu | Akbar |
+| **Panipat III** | **14 Jan 1761** | **Marathas (Sadashivrao Bhau) vs Ahmad Shah Abdali** | Abdali (Marathas crushed) |
+
+### 16.9 Exam hooks — Chapter 16
+
+- **Babur** = Panipat I 1526; *Baburnama* in Chagatai; from Farghana.
+- **Humayun** = lost to **Sher Shah at Chausa 1539 + Kannauj 1540**;
+  Persian exile; died falling from library.
+- **Sher Shah** = **Rupiya, GT Road, sarais**; died at Kalinjar 1545.
+- **Akbar** = age 13 at Kalanaur 1556; **Panipat II (vs Hemu)**;
+  Todar Mal land revenue 1580; jizya abolished 1564; Din-i-Ilahi 1582;
+  Navaratnas; Fatehpur Sikri.
+- **Jahangir** = Salim, Nur Jahan; Hawkins (1608) + Roe (1615);
+  miniature painting.
+- **Shah Jahan** = Taj Mahal (Mumtaz d. 1631); Red Fort + Jama Masjid;
+  Peacock Throne; capital → Shahjahanabad 1648.
+- **Aurangzeb** = jizya 1679; executed Tegh Bahadur 1675; **25-year
+  Deccan war**; longest reign (49 yrs); died 1707.
+- **Panipat I (1526), II (1556), III (1761)** — Babur–Akbar–Abdali.
+
+---
+
+## Chapter 17 — The Marathas + Decline of the Mughals
+
+### 17.1 Rise of Shivaji (1630 – 1680)
+
+- Born **19 Feb 1630** at **Shivneri fort** (Pune district); father
+  **Shahji Bhonsle** (Bijapur general); mother **Jijabai**; guru
+  **Samarth Ramdas**.
+- Built power from western Ghats — captured Torna (1646), Kondana
+  (Sinhagad), Purandar, Raigad.
+- **1659 — Battle of Pratapgarh** — killed **Afzal Khan** (Bijapur general)
+  using a *wagh-nakh* (tiger-claws).
+- **1664 — Sack of Surat** (English factory looted).
+- **1665 — Treaty of Purandar** with Mughals (Jai Singh I) — surrendered
+  23 forts.
+- **1666 — Agra escape** — was confined by Aurangzeb; escaped in a fruit
+  basket.
+- **6 Jun 1674 — Coronation at Raigad** — assumed title **"Chhatrapati"**;
+  ceremony performed by **Gaga Bhatt** of Varanasi.
+- Established **Ashtapradhan Mandal** (8 ministers): Peshwa (PM), Amatya
+  (Finance), Sachiv (Secretary), Mantri (Home), Senapati (Army),
+  Sumant (Foreign), Nyayadhish (Justice), Panditrao (Religious head).
+- Levied two taxes: **Chauth** (¼ of revenue from invaded territory) +
+  **Sardeshmukhi** (additional 10% as hereditary "chief headman" fee).
+- Died **3 Apr 1680** at Raigad.
+
+### 17.2 After Shivaji
+
+| Ruler | Reign | Notes |
+|---|---|---|
+| **Sambhaji** | 1680–89 | Captured by Aurangzeb at Sangameshwar; tortured + executed at Tulapur (Mar 1689). |
+| **Rajaram** | 1689–1700 | Carried on resistance from **Jinji** (TN) for 8 years. |
+| **Tarabai** (regent for Shivaji II) | 1700–07 | Held Maratha state during Aurangzeb's invasion. |
+| **Shahu** | 1707–49 | Released by Bahadur Shah I; rules from Satara; **Peshwa Balaji Vishwanath** rises. |
+
+### 17.3 The Peshwa era (1713 – 1818) — Peshwa = effective ruler
+
+| Peshwa | Years | Key acts |
+|---|---|---|
+| **Balaji Vishwanath** | 1713–20 | First Peshwa under Shahu; secured Maratha **swaraj** + **chauth/sardeshmukhi rights** over Mughal Deccan via Sayyid brothers (1719). |
+| **Baji Rao I** | **1720–40** | **Greatest Peshwa**; never lost a battle in 41 campaigns; conquered Bundelkhand, Malwa, Gujarat; raid on Delhi (1737); inducted **Holkars (Indore), Scindias (Gwalior), Gaekwads (Baroda), Bhonsles (Nagpur)** into a confederacy. |
+| **Balaji Baji Rao (Nana Saheb)** | 1740–61 | Empire reaches peak — Maratha army even camps at **Attock** (NW frontier); but suffers the catastrophe of **Panipat III**. |
+| **Madhav Rao I** | 1761–72 | Recovered Maratha power after Panipat III; "the last great Peshwa". |
+| Narayan Rao → Raghunath Rao → Madhav Rao II | 1772–95 | Civil war + 1st Anglo-Maratha. |
+| **Baji Rao II** | 1796–1818 | Last Peshwa; signed **Treaty of Bassein 1802** with British (subsidiary alliance); pensioned to **Bithoor (Kanpur)** after 3rd Anglo-Maratha war. |
+
+### 17.4 Third Battle of Panipat (14 Jan 1761) — Maratha catastrophe
+
+- **Combatants**: Marathas (commander **Sadashivrao Bhau**, with
+  Vishwasrao + Ibrahim Khan Gardi's artillery + ~100,000 troops + camp
+  followers) vs **Ahmad Shah Abdali (Durrani)** of Afghanistan, allied
+  with the Rohillas (Najib-ud-Daulah) + the Nawab of Awadh (Shuja-ud-Daulah).
+- **Result**: Marathas crushed — Sadashivrao Bhau, Vishwasrao + ~40,000
+  Maratha soldiers killed.
+- **Why it matters**:
+  - Maratha northward expansion halted.
+  - Created a **power vacuum** in north India that the **British EIC**
+    eventually filled.
+  - Abdali could not stay in India; Maratha power **revived locally** under
+    Madhav Rao I but never recovered the same primacy.
+
+<div class="pitfall">
+
+**Trap — Panipat III (1761) was NOT a British victory.** The British were
+not a combatant — they exploited the **power vacuum** later. The Afghan
+**Ahmad Shah Abdali** won the battle but withdrew.
+
+</div>
+
+### 17.5 The Anglo-Maratha Wars (1775 – 1818)
+
+| War | Years | Outcome / treaty |
+|---|---|---|
+| **First Anglo-Maratha War** | 1775–82 | **Treaty of Salbai 1782** — status quo ante; British recognise Madhav Rao II. |
+| **Second Anglo-Maratha War** | 1803–05 | British (Wellesley) defeat Scindia (Assaye, Laswari) + Bhonsle (Argaon, Adgaon); **Treaty of Bassein (Dec 1802)** with Peshwa Baji Rao II = key prelude. |
+| **Third Anglo-Maratha War** | 1817–18 | British (Lord Hastings) crush Peshwa Baji Rao II (Khirkee), Holkar (Mahidpur), Bhonsle (Sitabuldi). **Peshwa-ship abolished**; Maratha confederacy ends. |
+
+### 17.6 Sikh ascendancy (parallel to Marathas)
+
+- **Banda Singh Bahadur** (1708–16) — first Sikh military leader after Guru
+  Gobind Singh; captured Sirhind 1710.
+- **12 Misls** (confederacies) — 18th century Punjab.
+- **Maharaja Ranjit Singh** (r. 1799–1839) — "Sher-e-Punjab"; unified misls;
+  capital **Lahore**; **Treaty of Amritsar 1809** with British (Sutlej =
+  boundary); secured **Koh-i-Noor** from Shah Shuja of Kabul.
+- **First Anglo-Sikh War (1845–46)** — Treaty of Lahore.
+- **Second Anglo-Sikh War (1848–49)** — Punjab annexed by **Dalhousie**.
+
+### 17.7 Decline of the Mughals — the long sunset
+
+After Aurangzeb (1707):
+
+- **Bahadur Shah I (1707–12)** — modest revival.
+- **Muhammad Shah "Rangila" (1719–48)** — **Nadir Shah's invasion (1739)**
+  — looted **Peacock Throne + Koh-i-Noor**; massacre in Delhi.
+- **Ahmad Shah Abdali's invasions** — 1748, 1757, 1761.
+- **Shah Alam II (1759–1806)** — defeated at **Battle of Buxar (1764)**;
+  granted **Diwani of Bengal, Bihar, Orissa** to EIC by **Treaty of
+  Allahabad (1765)**.
+- **Bahadur Shah II Zafar (r. 1837–57)** — figurehead emperor; named by
+  1857 mutineers as their leader; exiled to **Rangoon (Yangon)**; died
+  1862.
+
+### 17.8 Exam hooks — Chapter 17
+
+- **Shivaji** = b. **1630 Shivneri**; coronation **6 Jun 1674 Raigad**;
+  **Ashtapradhan**; **Chauth + Sardeshmukhi**.
+- **Pratapgarh 1659** = killed Afzal Khan; **Treaty of Purandar 1665**;
+  Agra escape 1666.
+- **Sambhaji** executed by Aurangzeb 1689.
+- **Peshwa Baji Rao I** (1720–40) = "greatest"; assembled the confederacy.
+- **Balaji Baji Rao** (Nana Saheb) — peak under him; **Panipat III 1761**.
+- **Panipat III (14 Jan 1761)** = **Sadashivrao Bhau vs Ahmad Shah Abdali**.
+- **Treaty of Bassein 1802** = Baji Rao II + British (sub. alliance).
+- **3 Anglo-Maratha wars**: 1775–82 (Salbai), 1803–05 (Assaye), 1817–18
+  (Peshwa-ship abolished).
+- **Ranjit Singh** = "Sher-e-Punjab"; **Treaty of Amritsar 1809**;
+  Punjab annexed **1849**.
+- **Nadir Shah** = 1739 (Peacock Throne + Kohinoor).
+
+<div class="pyq">
+
+**PYQ-style: Who killed Afzal Khan, and where?**
+
+(a) Sambhaji at Burhanpur
+(b) **Shivaji at Pratapgarh (1659)**
+(c) Baji Rao I at Bhopal
+(d) Madhav Rao I at Pune
+
+<div class="pyq-answer">**Ans:** (b). Shivaji at Pratapgarh using a
+*wagh-nakh* (tiger-claws), 1659 — early consolidation of Maratha
+power.</div>
+
+</div>
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["MUGHALS + MARATHAS<br>1526 - 1803"]:::root
+    R --> MUG["Six Great Mughals"]:::key
+    R --> SUR["Sur Interregnum"]:::date
+    R --> MAR["Maratha rise"]:::key
+    R --> DEC["Decline of Mughals"]:::trap
+    MUG --> M1["Babur 1526-30: Panipat I (Ibrahim Lodi)<br>Baburnama in Chagatai"]:::date
+    MUG --> M2["Humayun 1530-40, 1555-56:<br>Lost to Sher Shah at Chausa + Kannauj<br>Died falling from library"]:::date
+    MUG --> M3["Akbar 1556-1605: Panipat II vs Hemu<br>Mansabdari + Zabti (Todar Mal)<br>Din-i-Ilahi 1582; Navaratnas"]:::date
+    MUG --> M4["Jahangir 1605-27: Nur Jahan;<br>Hawkins 1608 + Roe 1615"]:::date
+    MUG --> M5["Shah Jahan 1628-58: Taj Mahal<br>(Mumtaz d. 1631); Red Fort; Peacock Throne"]:::date
+    MUG --> M6["Aurangzeb 1658-1707: Jizya 1679<br>Killed Guru Tegh Bahadur 1675<br>25-yr Deccan war; longest reign"]:::date
+    SUR --> SUR1["Sher Shah Suri 1540-45:<br>Silver Rupiya; GT Road + sarais<br>Tomb at Sasaram; d. Kalinjar 1545"]:::date
+    MAR --> MA1["Shivaji 1630-80: Pratapgarh 1659<br>Coronation Raigad 6 Jun 1674<br>Ashtapradhan; Chauth + Sardeshmukhi"]:::date
+    MAR --> MA2["Peshwa Baji Rao I (1720-40)<br>Built confederacy: Scindia, Holkar,<br>Gaekwad, Bhonsle"]:::date
+    MAR --> MA3["PANIPAT III 14 Jan 1761:<br>Sadashivrao Bhau vs Ahmad Shah Abdali<br>Marathas crushed"]:::trap
+    MAR --> MA4["3 Anglo-Maratha wars:<br>1775-82 Salbai; 1803-05 Bassein;<br>1817-18 Peshwa abolished"]:::date
+    DEC --> DEC1["Nadir Shah 1739: Peacock Throne + Kohinoor<br>Shah Alam II loses Buxar 1764<br>Bahadur Shah Zafar last (1857)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
+---
+
+# Part D — Colonial India + Freedom Struggle (1600s – 1947) {#part-d}
+
+Three and a half centuries of Indian history — from Vasco da Gama's
+landing at Calicut (**1498**) to Independence (**15 Aug 1947**) — generate
+roughly **40% of every SSC / RRB / Banking / state-PSC history paper**.
+The two questions examiners reach for most often: **"Who introduced which
+reform?"** and **"In which year did Gandhi do X?"** This Part walks
+through it in five movements: European arrival, EIC consolidation, Crown
+rule + early nationalism, Gandhian era, Independence + Partition.
+
+---
+
+## Chapter 18 — Europeans Arrive in India
+
+### 18.1 The five European trading companies
+
+| Power | Year arrived | First settlement | Main centres in India |
+|---|---|---|---|
+| **Portuguese** | **1498** (Vasco da Gama at Calicut) | Cochin 1503 | Goa (1510, Albuquerque), Daman, Diu |
+| **Dutch (VOC)** | 1602 (chartered) — India 1605 | Masulipatnam | Pulicat, Surat, Nagapattinam |
+| **English (EIC)** | **1600** (royal charter) — India 1608 | Surat 1613 | **Madras 1639 (Day) — Bombay 1668 — Calcutta 1690 (Charnock)** |
+| **Danish** | 1620 | Tranquebar | Serampore (Bengal) |
+| **French (CIO)** | **1664** | Surat 1668 | **Pondicherry 1674 (Francois Martin), Chandernagore** |
+
+<div class="keypoint">
+
+**Anchor facts — repeated almost every paper**
+
+- **Vasco da Gama** — landed at **Calicut, 17/20 May 1498**; guided by
+  Gujarati pilot Abdul Majid; hosted by the **Zamorin**.
+- **EIC charter** — granted by **Queen Elizabeth I on 31 Dec 1600**.
+- **Sir Thomas Roe** — secured Surat trading rights from **Jahangir
+  (1615)**.
+- **Madras = Fort St George (1639)**; **Bombay** = Charles II's dowry
+  from Catherine of Braganza, leased to EIC 1668 for £10/year;
+  **Calcutta = Fort William** founded by Job Charnock 1690.
+- French HQ: **Pondicherry** (Francois Martin, 1674).
+
+</div>
+
+### 18.2 The Carnatic Wars + Anglo-French rivalry
+
+| War | Years | Trigger | Result |
+|---|---|---|---|
+| **First Carnatic** | 1746–48 | Austrian Succession war in Europe | Treaty of Aix-la-Chapelle; Madras restored to British |
+| **Second Carnatic** | 1749–54 | Succession disputes in Hyderabad + Arcot | British (Robert Clive) prevail; **Treaty of Pondicherry (1754)** |
+| **Third Carnatic** | 1756–63 | Seven Years' War in Europe | **Battle of Wandiwash (22 Jan 1760)** — Eyre Coote defeats Comte de Lally; French eliminated as political power in India; **Peace of Paris 1763**. |
+
+---
+
+## Chapter 19 — The English East India Company — Plassey to Crown Rule
+
+### 19.1 Battle of Plassey (23 Jun 1757)
+
+- **Combatants**: **Robert Clive** (with ~3,000 EIC troops) vs **Siraj-ud-
+  Daulah** (Nawab of Bengal, ~50,000 troops).
+- **Backstory**: Black Hole of Calcutta incident (Jun 1756, disputed
+  details); Siraj had captured Calcutta.
+- **Mir Jafar** (Siraj's commander) defected to Clive — pre-arranged.
+- Siraj's army folded in a single morning at the mango grove of Palashi
+  (Nadia district, Bengal); Siraj fled + was murdered.
+- **Mir Jafar** installed as puppet Nawab.
+- Significance: **Beginning of British political power in India**;
+  EIC gains effective control over Bengal's wealth.
+
+### 19.2 Battle of Buxar (22 Oct 1764)
+
+- **Combatants**: **Major Hector Munro** (EIC) vs combined armies of
+  **Mir Qasim (Nawab of Bengal) + Shuja-ud-Daulah (Nawab of Awadh) +
+  Shah Alam II (Mughal Emperor)**.
+- Decisive British victory.
+- **Treaty of Allahabad (12 Aug 1765)** — Robert Clive negotiated:
+  - **Diwani of Bengal, Bihar, Orissa** granted to EIC by Shah Alam II
+    (right to collect revenue).
+  - Awadh restored to Shuja-ud-Daulah on payment of ₹50 lakh indemnity.
+  - **Dual administration in Bengal** — EIC collects revenue, Nawab
+    handles civil + criminal justice (ended 1772 by Warren Hastings).
+
+<div class="pitfall">
+
+**Plassey vs Buxar — the classic exam trap**
+
+- **Plassey 1757** = vs **Siraj-ud-Daulah** only; **Clive** vs Nawab; a
+  *coup* enabled by Mir Jafar's defection.
+- **Buxar 1764** = vs the **triple alliance** (Mir Qasim + Shuja-ud-
+  Daulah + Shah Alam II); **Munro**; a *true military victory*.
+- **Plassey gave Bengal**; **Buxar legalised it** via Treaty of
+  Allahabad (1765).
+
+</div>
+
+### 19.3 Key Acts of British Parliament — 1773 to 1858
+
+| Act | Year | Key provisions |
+|---|---|---|
+| **Regulating Act** | **1773** | First parliamentary intervention in EIC; **Governor-General of Bengal** (Warren Hastings, first); Supreme Court at Calcutta (1774); GG controls Bombay + Madras. |
+| **Pitt's India Act** | **1784** | **Dual control** — Board of Control (parliament) + Court of Directors (EIC). |
+| **Charter Act** | 1793 | Renewed EIC's commercial monopoly. |
+| **Charter Act** | 1813 | **EIC monopoly ended** (tea + China trade retained); ₹1 lakh/year for education; Christian missions allowed. |
+| **Charter Act** | **1833** | **First GG of India** (William Bentinck); central legislature; **Macaulay's Law Commission** appointed; EIC purely administrative. |
+| **Charter Act** | 1853 | **Open competition** for civil services; separate executive + legislative councils. |
+| **Government of India Act** | **1858** | EIC abolished; **Crown rule begins**; Secretary of State for India + 15-member Council; GG becomes **Viceroy** (Canning was first). |
+
+### 19.4 Methods of British annexation
+
+| Policy | Architect | Mechanism |
+|---|---|---|
+| **Ring Fence** | Warren Hastings | Defensive buffers around Bengal |
+| **Subsidiary Alliance** | **Wellesley (1798)** | Indian ruler accepts British troops in his territory + pays for them; cedes foreign affairs; first signatory — **Nizam of Hyderabad (1798)**; **Awadh (1801)**; **Peshwa Baji Rao II — Treaty of Bassein (1802)**. |
+| **Doctrine of Lapse** | **Dalhousie (1848–56)** | If a ruler died without a *natural* heir, his adopted heir would not be recognised + the state would lapse to British. Used at **Satara (1848), Jaitpur, Sambhalpur, Udaipur, Jhansi (1853), Nagpur (1854)**. |
+| Annexation on alleged misgovernance | Dalhousie | **Awadh (1856)** — directly annexed. |
+
+### 19.5 Land revenue systems
+
+| System | Year | Architect | Region | Mechanism |
+|---|---|---|---|---|
+| **Permanent Settlement / Zamindari** | **1793** | **Cornwallis** | Bengal, Bihar, Orissa | Zamindars made hereditary owners; pay fixed revenue to British; tenants exploited. |
+| **Ryotwari** | 1820 | **Thomas Munro + Read** | Madras, Bombay | Direct settlement with the ryot (peasant); revenue revised every 30 years. |
+| **Mahalwari** | 1822 | **Holt Mackenzie + R.M. Bird** | NWP, Punjab, parts of CP | Village/mahal as unit; jointly liable. |
+
+### 19.6 Exam hooks — Chapter 19
+
+- **Plassey 1757** = Clive vs Siraj-ud-Daulah; **Mir Jafar's** defection.
+- **Buxar 1764** = Munro vs Mir Qasim + Shuja-ud-Daulah + Shah Alam II.
+- **Treaty of Allahabad 1765** = Diwani of Bengal/Bihar/Orissa.
+- **Warren Hastings** = first GG of Bengal (Regulating Act 1773).
+- **William Bentinck** = first GG of India (Charter Act 1833); **abolished
+  sati 1829**; English education (Macaulay 1835).
+- **Cornwallis** = **Permanent Settlement 1793**; civil-services reforms.
+- **Wellesley** = **Subsidiary Alliance** (1798).
+- **Dalhousie** = **Doctrine of Lapse**; first railway (Bombay–Thane 1853);
+  first telegraph (Calcutta–Agra 1854); Wood's Despatch 1854.
+- **Canning** = last GG + first Viceroy (GoI Act 1858).
+
+---
+
+## Chapter 20 — The Revolt of 1857 + Crown Rule
+
+<div style="margin: 8pt 0; text-align: center;">
+
+<svg viewBox="0 0 480 530" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:480px;display:block;margin:10pt auto;font-family:Arial,sans-serif;">
+<rect width="480" height="530" fill="#c8e6f5" rx="8"/>
+
+<path d="M 125.9,33.7 L 145.1,38.4 L 165.5,52.5 L 179.2,61.9 L 186.0,72.9 L 195.6,88.6 L 209.3,107.4 L 222.9,124.6 L 233.9,143.5 L 243.4,151.3 L 257.1,159.1 L 270.7,167.0 L 288.5,174.8 L 304.9,178.0 L 318.6,182.7 L 332.2,185.8 L 345.9,188.9 L 340.4,193.6 L 345.9,201.5 L 352.7,206.2 L 343.1,214.0 L 352.7,218.7 L 366.4,221.9 L 375.9,218.7 L 386.9,206.2 L 400.5,190.5 L 421.0,178.0 L 427.8,167.0 L 430.6,154.4 L 434.7,151.3 L 448.3,162.3 L 448.3,178.0 L 441.5,193.6 L 414.2,214.0 L 393.7,229.7 L 386.9,237.6 L 384.1,250.1 L 384.1,256.4 L 380.0,265.8 L 373.2,273.6 L 366.4,268.9 L 362.3,261.1 L 356.8,256.4 L 348.6,253.2 L 332.2,268.9 L 322.7,276.8 L 309.0,284.6 L 302.2,292.4 L 288.5,303.4 L 277.6,316.0 L 263.9,331.7 L 243.4,347.3 L 222.9,363.0 L 216.1,378.7 L 212.0,402.2 L 209.3,425.7 L 206.5,449.3 L 195.6,469.7 L 184.7,480.6 L 175.1,486.9 L 168.3,480.6 L 164.2,472.8 L 160.1,460.2 L 154.6,449.3 L 150.5,433.6 L 141.0,417.9 L 138.2,402.2 L 127.3,378.7 L 120.5,363.0 L 113.6,339.5 L 113.6,323.8 L 110.9,316.0 L 110.9,300.3 L 106.8,284.6 L 100.0,276.8 L 93.1,272.1 L 83.6,268.9 L 72.6,264.2 L 61.7,261.1 L 54.9,253.2 L 50.8,245.4 L 52.2,237.6 L 65.8,229.7 L 79.5,234.4 L 93.1,228.1 L 79.5,206.2 L 93.1,182.7 L 79.5,167.0 L 86.3,151.3 L 83.6,135.6 L 86.3,119.9 L 106.8,104.3 L 120.5,93.3 L 124.6,83.9 L 123.2,68.2 L 130.0,57.2 L 131.4,46.2 L 125.9,33.7 Z" fill="#f5f0e8" stroke="#8b6914" stroke-width="1.2"/>
+
+<text x="240" y="14" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e3a5f">India — Freedom Struggle Key Sites</text>
+<text x="240" y="26" text-anchor="middle" font-size="8" fill="#374151">1857 Revolt · INC · Gandhi · 1942 Quit India</text>
+
+<!-- NW: Amritsar, Lahore -->
+<circle cx="139.6" cy="118.4" r="3" fill="#7f1d1d" stroke="white"/>
+<line x1="142" y1="119" x2="195" y2="80" stroke="#7f1d1d" stroke-width="0.6"/>
+<text x="197" y="78" font-size="7.5" font-weight="600" fill="#7f1d1d">Amritsar 1919</text>
+<text x="197" y="88" font-size="7" fill="#7f1d1d">(Jallianwala Bagh)</text>
+
+<circle cx="131.4" cy="119.9" r="3" fill="#dc2626" stroke="white"/>
+<line x1="129" y1="121" x2="55" y2="105" stroke="#dc2626" stroke-width="0.6"/>
+<text x="14" y="102" font-size="7.5" font-weight="600" fill="#dc2626">Lahore</text>
+<text x="14" y="112" font-size="7" fill="#dc2626">(Purna Swaraj 1929)</text>
+
+<!-- Meerut + Delhi cluster -->
+<circle cx="177.8" cy="159.1" r="3" fill="#7f1d1d" stroke="white"/>
+<line x1="180" y1="158" x2="270" y2="100" stroke="#7f1d1d" stroke-width="0.6"/>
+<text x="273" y="98" font-size="7.5" font-weight="600" fill="#7f1d1d">Meerut</text>
+<text x="273" y="108" font-size="7" fill="#7f1d1d">(1857 sparked here)</text>
+
+<circle cx="171.0" cy="165.4" r="3.5" fill="#dc2626" stroke="white" stroke-width="1"/>
+<line x1="174" y1="167" x2="270" y2="125" stroke="#dc2626" stroke-width="0.6"/>
+<text x="273" y="123" font-size="7.5" font-weight="700" fill="#dc2626">Delhi</text>
+<text x="273" y="133" font-size="7" fill="#dc2626">(capital from 1911)</text>
+
+<!-- Ganga plain — 1857 cluster: Lucknow + Kanpur -->
+<circle cx="221.6" cy="193.6" r="3" fill="#7f1d1d" stroke="white"/>
+<line x1="225" y1="194" x2="335" y2="150" stroke="#7f1d1d" stroke-width="0.6"/>
+<text x="338" y="148" font-size="7.5" font-weight="600" fill="#7f1d1d">Lucknow</text>
+<text x="338" y="158" font-size="7" fill="#7f1d1d">(1857: Begum Hazrat Mahal)</text>
+
+<circle cx="213.4" cy="198.3" r="3" fill="#7f1d1d" stroke="white"/>
+<line x1="216" y1="199" x2="335" y2="170" stroke="#7f1d1d" stroke-width="0.6"/>
+<text x="338" y="168" font-size="7.5" font-weight="600" fill="#7f1d1d">Kanpur</text>
+<text x="338" y="178" font-size="7" fill="#7f1d1d">(1857: Nana Sahib)</text>
+
+<!-- Champaran -->
+<circle cx="276.2" cy="195.2" r="3" fill="#dc2626" stroke="white"/>
+<line x1="279" y1="195" x2="335" y2="195" stroke="#dc2626" stroke-width="0.6"/>
+<text x="338" y="194" font-size="7.5" font-weight="600" fill="#dc2626">Champaran 1917</text>
+<text x="338" y="204" font-size="7" fill="#dc2626">(Gandhi's 1st satyagraha)</text>
+
+<!-- Sabarmati / Bardoli / Dandi — west cluster -->
+<circle cx="106.8" cy="251.7" r="3" fill="#dc2626" stroke="white"/>
+<line x1="103" y1="252" x2="55" y2="245" stroke="#dc2626" stroke-width="0.6"/>
+<text x="14" y="243" font-size="7.5" font-weight="600" fill="#dc2626">Sabarmati</text>
+<text x="14" y="253" font-size="7" fill="#dc2626">(Gandhi ashram)</text>
+
+<circle cx="115.0" cy="283.0" r="3" fill="#dc2626" stroke="white"/>
+<line x1="112" y1="283" x2="55" y2="278" stroke="#dc2626" stroke-width="0.6"/>
+<text x="14" y="276" font-size="7.5" font-weight="600" fill="#dc2626">Bardoli 1928</text>
+<text x="14" y="286" font-size="7" fill="#dc2626">(No-tax satyagraha)</text>
+
+<circle cx="106.8" cy="286.2" r="3" fill="#dc2626" stroke="white"/>
+<line x1="103" y1="288" x2="55" y2="310" stroke="#dc2626" stroke-width="0.6"/>
+<text x="14" y="308" font-size="7.5" font-weight="600" fill="#dc2626">Dandi 1930</text>
+<text x="14" y="318" font-size="7" fill="#dc2626">(Salt March)</text>
+
+<!-- Mumbai -->
+<circle cx="112.3" cy="314.4" r="3" fill="#dc2626" stroke="white"/>
+<line x1="109" y1="316" x2="55" y2="345" stroke="#dc2626" stroke-width="0.6"/>
+<text x="14" y="343" font-size="7.5" font-weight="600" fill="#dc2626">Mumbai</text>
+<text x="14" y="353" font-size="7" fill="#dc2626">(Quit India 1942)</text>
+
+<!-- Central: Nagpur, Wardha -->
+<circle cx="197.0" cy="283.0" r="3" fill="#dc2626" stroke="white"/>
+<line x1="200" y1="283" x2="290" y2="270" stroke="#dc2626" stroke-width="0.6"/>
+<text x="293" y="268" font-size="7.5" font-weight="600" fill="#dc2626">Nagpur</text>
+<text x="293" y="278" font-size="7" fill="#dc2626">(Non-Coop 1920)</text>
+
+<circle cx="190.1" cy="289.3" r="3" fill="#dc2626" stroke="white"/>
+<line x1="193" y1="291" x2="290" y2="298" stroke="#dc2626" stroke-width="0.6"/>
+<text x="293" y="296" font-size="7.5" font-weight="600" fill="#dc2626">Wardha</text>
+<text x="293" y="306" font-size="7" fill="#dc2626">(Gandhi's ashram)</text>
+
+<!-- Kolkata -->
+<circle cx="324.0" cy="259.5" r="3.5" fill="#dc2626" stroke="white" stroke-width="1"/>
+<line x1="327" y1="260" x2="395" y2="245" stroke="#dc2626" stroke-width="0.6"/>
+<text x="398" y="243" font-size="7.5" font-weight="700" fill="#dc2626">Kolkata</text>
+<text x="398" y="253" font-size="7" fill="#dc2626">(INC founded 1885)</text>
+
+<!-- Goa -->
+<circle cx="124.6" cy="370.9" r="3" fill="#dc2626" stroke="white"/>
+<line x1="122" y1="372" x2="55" y2="395" stroke="#dc2626" stroke-width="0.6"/>
+<text x="14" y="393" font-size="7.5" font-weight="600" fill="#dc2626">Goa</text>
+<text x="14" y="403" font-size="7" fill="#dc2626">(liberated 1961)</text>
+
+<!-- Andaman (Cellular Jail) -->
+<circle cx="382.8" cy="430.5" r="3" fill="#7f1d1d" stroke="white"/>
+<line x1="385" y1="428" x2="395" y2="395" stroke="#7f1d1d" stroke-width="0.6"/>
+<text x="398" y="393" font-size="7.5" font-weight="600" fill="#7f1d1d">Andaman</text>
+<text x="398" y="403" font-size="7" fill="#7f1d1d">(Cellular Jail)</text>
+
+<!-- Compass -->
+<circle cx="448" cy="60" r="13" fill="white" opacity="0.9" stroke="#94a3b8"/>
+<text x="448" y="56" text-anchor="middle" font-size="8" font-weight="bold" fill="#374151">N</text>
+<polygon points="448,50 445,60 448,58 451,60" fill="#1e3a5f"/>
+
+<!-- Legend -->
+<rect x="335" y="480" width="130" height="42" rx="3" fill="white" opacity="0.92" stroke="#94a3b8"/>
+<circle cx="343" cy="492" r="3" fill="#dc2626"/>
+<text x="350" y="495" font-size="7.5" fill="#333">Freedom movement event</text>
+<circle cx="343" cy="506" r="3" fill="#7f1d1d"/>
+<text x="350" y="509" font-size="7.5" fill="#333">Armed struggle / Revolt</text>
+</svg>
+
+</div>
+
+### 20.1 Causes
+
+| Type | Examples |
+|---|---|
+| Political | Doctrine of Lapse (Jhansi, Satara); annexation of Awadh (1856); removal of Mughal heir from Red Fort |
+| Economic | Ruined artisans; high land revenue; deindustrialisation |
+| Social/religious | Hindu Widow Remarriage Act 1856; Christian missions; abolition of sati seen as interference |
+| Military | Disparity in pay; recent **Enfield rifle cartridges greased with cow + pig fat** (the immediate trigger) |
+
+### 20.2 Course
+
+- **29 Mar 1857** — **Mangal Pandey** fires at Lt. Baugh at **Barrackpore**;
+  hanged 8 Apr 1857.
+- **10 May 1857** — **Meerut** sepoys revolt; march to Delhi.
+- **11 May** — Delhi taken; **Bahadur Shah II Zafar** declared symbolic
+  leader.
+
+| Centre | Leader |
+|---|---|
+| Delhi | **Bahadur Shah Zafar** (general Bakht Khan) |
+| Kanpur | **Nana Sahib + Tantia Tope** |
+| Lucknow | **Begum Hazrat Mahal** (regent for Birjis Qadr) |
+| Jhansi | **Rani Lakshmibai** |
+| Bihar (Jagdishpur) | **Kunwar Singh** (80-year-old zamindar) |
+| Faizabad | **Maulvi Ahmadullah Shah** |
+
+### 20.3 Suppression + consequences
+
+- Delhi recaptured by British 20 Sep 1857; Bahadur Shah II Zafar exiled to
+  **Rangoon** (d. 1862).
+- Rani Lakshmibai died fighting at **Gwalior, 17 Jun 1858**.
+- Tantia Tope captured + hanged Apr 1859.
+- **Government of India Act 1858**: EIC abolished; **Crown rule**; Secretary
+  of State for India; Viceroy.
+- **Queen Victoria's Proclamation (1 Nov 1858)** — "Magna Carta of India":
+  no further annexation; respect for religion; equal opportunity in
+  services.
+- Indian Army reorganised — more Europeans; Bengal army's strength cut.
+
+### 20.4 Exam hooks — Revolt of 1857
+
+- **Mangal Pandey** = Barrackpore (29 Mar 1857); **Meerut = 10 May 1857**.
+- **Bahadur Shah II Zafar** = symbolic head; last Mughal; exiled Rangoon.
+- **Nana Sahib + Tantia Tope** = Kanpur; **Rani Lakshmibai** = Jhansi
+  (d. 17 Jun 1858 at Gwalior).
+- **Begum Hazrat Mahal** = Lucknow.
+- **GoI Act 1858** + Queen's Proclamation = end of EIC.
+- **Veer Savarkar** called it "**First War of Indian Independence**".
+
+---
+
+## Chapter 21 — Birth of Indian Nationalism (1858 – 1905)
+
+### 21.1 Pre-INC organisations
+
+| Year | Organisation | Founder(s) |
+|---|---|---|
+| 1828 | **Brahmo Samaj** | Raja Ram Mohan Roy |
+| 1836 | Landholders' Society | Dwarkanath Tagore |
+| 1851 | British India Association | Calcutta |
+| 1866 | East India Association (London) | Dadabhai Naoroji |
+| 1867 | Prarthana Samaj | Atmaram Pandurang |
+| 1875 | **Arya Samaj** | Dayananda Saraswati |
+| 1876 | **Indian Association** | **Surendranath Banerjee** (Calcutta) |
+| 1884 | Madras Mahajan Sabha | M. Viraraghavachari |
+
+### 21.2 Indian National Congress — founded 1885
+
+- Founded **28 Dec 1885** at **Gokuldas Tejpal Sanskrit College, Bombay**.
+- **A.O. Hume** (retired British civil servant) = founder-secretary.
+- **W.C. Bonnerjee** = first President; 72 delegates attended.
+- Viceroy at the time: **Lord Dufferin** (1884–88).
+- **Safety-valve theory** (Lala Lajpat Rai) — Hume's purpose was to vent
+  Indian discontent before it boiled over.
+
+### 21.3 Moderates (1885 – 1905)
+
+- Method: petitions, prayers, constitutional dialogue ("3 P's").
+- Leaders: **Dadabhai Naoroji** (Drain Theory; "Grand Old Man"; first
+  Indian MP in House of Commons 1892), **Gopal Krishna Gokhale**
+  (Gandhi's political guru; founded **Servants of India Society 1905**),
+  **Surendranath Banerjee**, **Pherozeshah Mehta**, **Womesh C. Bonnerjee**.
+- Achievements: forced **Indian Councils Act 1892** (indirect elections);
+  cracked Indian-civil-services exam age + venue.
+
+### 21.4 Partition of Bengal + Extremists (1905 – 1919)
+
+- **16 Oct 1905** — Lord **Curzon** partitions Bengal (East Bengal + Assam
+  as a separate province) — official reason "administrative", real reason
+  to weaken Bengali nationalism.
+- **Swadeshi Movement** — boycott of British goods; promotion of Indian
+  industry; founding of **Bengal Chemicals (P.C. Ray)**, **National
+  Council of Education**.
+- **1906 — Muslim League** founded at **Dhaka** (Aga Khan III, Nawab
+  Salimullah).
+- **1906 Calcutta Session (Naoroji)** — **Swaraj** as the goal mentioned
+  first time.
+- **1907 Surat Split** — Moderates (Mehta, Gokhale) vs Extremists
+  (Tilak, Lala Lajpat Rai, Bipin Chandra Pal — "Lal-Bal-Pal"); Congress
+  splits.
+- **1908** — Tilak imprisoned (6 yrs in Mandalay, Burma); slogan "**Swaraj
+  is my birthright + I shall have it**".
+- **1911** — Bengal partition **annulled** by King George V; capital
+  shifted from **Calcutta to Delhi** (Lord Hardinge II).
+- **1916 Home Rule Movement** — **B.G. Tilak (April)** + **Annie Besant
+  (September)** (Madras).
+- **1916 Lucknow Pact** — Congress (Tilak) + Muslim League (Jinnah) sign
+  joint demand for self-rule; separate electorates accepted.
+- **1919 (13 Apr) — Jallianwala Bagh massacre** — General **Reginald Dyer**
+  orders firing at Amritsar; ~1,000 killed (official British figure 379).
+- **GoI Act 1919 (Montagu-Chelmsford reforms)** — **Diarchy** in provinces;
+  bicameral central legislature; PSC.
+
+### 21.5 Famous revolutionary names (pre-Gandhi era)
+
+| Year | Person | Event |
+|---|---|---|
+| 1908 | **Khudiram Bose, Prafulla Chaki** | Muzaffarpur bomb (intended for Magistrate Kingsford); Khudiram hanged at 18. |
+| 1909 | Madanlal Dhingra | Killed Curzon-Wyllie in London. |
+| 1912 | Rasbehari Bose, Sachin Sanyal | Bomb on Lord Hardinge (Delhi conspiracy). |
+| 1913 | Lala Hardayal, Sohan Singh Bhakna | **Ghadar Party** founded San Francisco. |
+| 1914 | — | **Komagata Maru** incident (Vancouver/Calcutta). |
+| 1915 | Rasbehari Bose | Fled to Japan after Lahore plot failed. |
+
+---
+
+## Chapter 22 — Gandhian Era + Freedom Struggle (1915 – 1947)
+
+### 22.1 Gandhi's return + first satyagrahas
+
+- **9 Jan 1915** — Gandhi returns to India from South Africa (Bombay
+  harbour). **9 Jan = Pravasi Bharatiya Divas**.
+- **1916** — joins INC at **Lucknow session** (Ambika Charan Mazumdar
+  President).
+- **1917 — Champaran Satyagraha** (Bihar) — Gandhi invited by **Rajkumar
+  Shukla**; against **tinkathia** indigo system; abolished. **First
+  satyagraha in India.**
+- **1918 — Kheda Satyagraha** (Gujarat) — peasants in famine + tax;
+  **Vallabhbhai Patel** rises beside Gandhi.
+- **1918 — Ahmedabad Mill Strike** — workers vs mill-owners (Anasuya
+  Sarabhai); 35% wage rise won.
+
+### 22.2 The four mass movements
+
+| Movement | Years | Triggers | Method | End / result |
+|---|---|---|---|---|
+| **Non-Cooperation + Khilafat** | **1920–22** | Rowlatt Act + Jallianwala Bagh + abolition of Caliphate | Boycott of schools, courts, titles, foreign cloth | **Suspended after Chauri Chaura (4 Feb 1922)** — 22 policemen killed by mob; Gandhi unilaterally calls off. |
+| **Civil Disobedience** | **1930–34** | Salt tax; Simon Commission (1928 — all-white, no Indian); Nehru Report 1928 | **Dandi March (12 Mar – 6 Apr 1930)** — 240 miles from Sabarmati to Dandi; ~78 followers; salt made illegally | **Gandhi-Irwin Pact (5 Mar 1931)** — temporary suspension; Gandhi attends 2nd RTC; resumed 1932; called off May 1934. |
+| **Individual Satyagraha** | 1940–41 | August Offer 1940 rejected | Selected individual satyagrahis | Symbolic; ~25,000 arrested. |
+| **Quit India** | **8 Aug 1942** | Cripps Mission failure; WWII | "Do or Die"; Congress leaders arrested 9 Aug at **Bombay (Gowalia Tank)** | Crushed by Sep 1942; **Aruna Asaf Ali** hoisted flag at Gowalia Tank; underground network (Usha Mehta's secret radio); RIN Mutiny 1946 follows. |
+
+### 22.3 The decisive INC sessions
+
+| Year | Place | President | Significance |
+|---|---|---|---|
+| **1916** | Lucknow | Ambika Charan Mazumdar | **Lucknow Pact** with ML (Jinnah) |
+| **1917** | Calcutta | **Annie Besant** | **First woman President** |
+| **1924** | Belgaum | **M.K. Gandhi** | **Only session Gandhi presided** |
+| **1925** | Kanpur | **Sarojini Naidu** | **First Indian woman President** |
+| **1928** | Calcutta | Motilal Nehru | Nehru Report adopted |
+| **1929** | **Lahore** | **Jawaharlal Nehru** | **Purna Swaraj resolution (19 Dec 1929)** — first Independence Day **26 Jan 1930** |
+| 1931 | Karachi | Vallabhbhai Patel | Fundamental Rights + economic policy resolutions |
+| 1937 | Faizpur | J.L. Nehru | First rural session |
+| 1938 | Haripura | Subhas Chandra Bose | |
+| 1939 | Tripuri | **S.C. Bose** re-elected, then **resigned** | Pattabhi Sitaramayya (Gandhi-backed) lost; Bose left Congress, formed **Forward Bloc (3 May 1939)** |
+| 1940 | Ramgarh | Maulana Azad | |
+
+### 22.4 Acts + Commissions
+
+| Year | Item | Key |
+|---|---|---|
+| 1919 | **Rowlatt Act** | Detention without trial; "no dalil, no vakil, no appeal"; Gandhi launched first all-India satyagraha |
+| 1919 | **GoI Act (Montagu–Chelmsford)** | **Diarchy** in provinces; bicameral central legislature |
+| 1927 | **Simon Commission** | All-white; "Simon Go Back"; Lala Lajpat Rai injured by lathi-charge in Lahore (d. 17 Nov 1928) |
+| 1928 | **Nehru Report** | Drafted by Motilal Nehru + 9 others — first Indian-drafted constitutional outline; dominion status |
+| 1929 | **14 points of Jinnah** | Counter to Nehru Report |
+| 1930–32 | **Round Table Conferences** | 1st (1930, no Congress); 2nd (1931, Gandhi alone); 3rd (1932) |
+| 1932 | **Communal Award (Aug)** + **Poona Pact (24 Sep)** | Ramsay MacDonald's separate electorate for Depressed Classes → Gandhi's fast in Yerwada → **Poona Pact** between Gandhi + Ambedkar — joint electorate with reserved seats |
+| **1935** | **GoI Act** | **Provincial autonomy**; diarchy at centre; All-India Federation (never enforced); 3 lists; RBI 1934 → start of operation 1 Apr 1935; **basis of much of the Indian Constitution** |
+| 1937 | **Provincial elections** | Congress wins 8 of 11 provinces |
+| 1940 (Mar) | **Lahore Resolution / Pakistan Resolution** | Muslim League's demand for separate Muslim state |
+| 1942 (Mar) | **Cripps Mission** | Dominion status post-war + provincial opt-out; Congress + ML reject ("post-dated cheque on a crashing bank" — Gandhi) |
+| 1945 (Jun) | **Wavell Plan + Simla Conference** | Failed |
+| 1946 | **Cabinet Mission** (Pethick-Lawrence + Cripps + A.V. Alexander) | Rejected partition, proposed grouping; Constituent Assembly elected indirectly |
+| **1946 (16 Aug)** | **Direct Action Day** | Jinnah's call → Calcutta + Noakhali killings |
+| **1946 (9 Dec)** | **Constituent Assembly first meeting** | **Sachchidananda Sinha** temporary chair → **Rajendra Prasad** permanent (11 Dec) |
+| **1947 (3 Jun)** | **Mountbatten Plan** | Partition agreed |
+| **1947 (18 Jul)** | **Indian Independence Act** | Royal assent; created India + Pakistan; ended paramountcy |
+| **1947 (15 Aug)** | **Independence** | **Nehru's "Tryst with Destiny"** speech (14 Aug midnight) |
+
+### 22.5 Subhas Chandra Bose + INA
+
+- **1938 Haripura, 1939 Tripuri** — Congress President; resigned after
+  conflict with Gandhi.
+- **3 May 1939** — founded **Forward Bloc**.
+- **1941** — escaped Calcutta house arrest; reached Berlin via Kabul + Moscow.
+- **1943** — took over **Indian National Army (INA) / Azad Hind Fauj**
+  (originally founded by **Mohan Singh** 1942 in Singapore); **Provisional
+  Govt of Free India (Azad Hind)** proclaimed at Singapore **21 Oct 1943**;
+  recognised by 9 Axis powers; women's regiment **Rani of Jhansi** under
+  Lakshmi Sahgal.
+- **1944** — INA crossed into Manipur, raised flag at Moirang; halted at
+  **Imphal–Kohima**.
+- **18 Aug 1945** — reported air crash near Taipei (Taiwan); body never
+  conclusively recovered.
+- **INA Trials at Red Fort (1945)** — Shah Nawaz Khan, P.K. Sahgal,
+  Gurbaksh Singh Dhillon; defended by **Bhulabhai Desai, Tej Bahadur
+  Sapru, Nehru, Asaf Ali**; massive public sympathy.
+
+### 22.6 Famous Revolutionaries (1922–1947)
+
+| Year | Person(s) | Event |
+|---|---|---|
+| 1925 | **Bismil, Ashfaqulla Khan, Roshan Singh, Rajendra Lahiri** | **Kakori Train Robbery (9 Aug 1925)**; first 4 hanged 1927 |
+| 1928 | **Bhagat Singh, Sukhdev, Rajguru, Chandrashekhar Azad** | **HSRA**; killed J.P. Saunders at Lahore (17 Dec 1928) — revenge for Lala Lajpat Rai |
+| **1929 (8 Apr)** | Bhagat Singh + **B.K. Dutt** | Bomb in **Central Legislative Assembly, Delhi** (non-lethal, deliberately) — to "make the deaf hear" |
+| 1930 (18 Apr) | **Surya Sen ("Master Da")** | **Chittagong Armoury Raid** |
+| **23 Mar 1931** | — | **Bhagat Singh, Sukhdev, Rajguru hanged at Lahore Central Jail** — **Shaheed Diwas** |
+| 27 Feb 1931 | Chandrashekhar Azad | Killed at Alfred Park, Allahabad (now Azad Park) |
+
+### 22.7 Partition + the path to 15 August
+
+- **20 Feb 1947** — PM Attlee announces British will quit by June 1948.
+- **22 Mar 1947** — **Lord Mountbatten** arrives as Viceroy.
+- **3 Jun 1947** — **Mountbatten Plan**: partition into 2 dominions (India
+  + Pakistan); date advanced to **15 Aug 1947**.
+- **Radcliffe Line** — boundary drawn by Sir Cyril Radcliffe in **5 weeks**
+  (between Punjab + Bengal); announced 17 Aug 1947 (after independence).
+- **14 Aug 1947** — Pakistan independent (Jinnah as Governor-General).
+- **15 Aug 1947** — India independent; **Nehru = first PM, Mountbatten =
+  first Governor-General**.
+- **26 Nov 1949** — Constitution adopted.
+- **26 Jan 1950** — Constitution in force; **C. Rajagopalachari** = last
+  Governor-General (since Jun 1948); India becomes Republic.
+
+### 22.8 Exam hooks — Chapters 21 + 22
+
+- **INC founded 28 Dec 1885** (Bombay; W.C. Bonnerjee; A.O. Hume; under
+  Dufferin).
+- **Muslim League founded 1906 Dhaka** (Aga Khan, Salimullah).
+- **Surat Split 1907** = Moderates vs Extremists.
+- **Lal-Bal-Pal** = Lala Lajpat Rai + Bal Gangadhar Tilak + Bipin Chandra
+  Pal.
+- **Jallianwala Bagh 13 Apr 1919** — Dyer at Amritsar.
+- **Champaran 1917** = first Indian satyagraha.
+- **Non-Cooperation 1920–22**; **Chauri Chaura 4 Feb 1922** ends it.
+- **Dandi March 12 Mar 1930**; **Gandhi-Irwin Pact 5 Mar 1931**.
+- **Purna Swaraj** = Lahore session **1929 Jawaharlal Nehru**;
+  **26 Jan 1930** = first Independence Day.
+- **Quit India 8 Aug 1942 Bombay (Gowalia Tank)**; "Do or Die"; **Aruna
+  Asaf Ali** hoisted flag.
+- **Bhagat Singh, Sukhdev, Rajguru hanged 23 Mar 1931** (Lahore).
+- **Subhas Bose** founded Forward Bloc 1939; **INA / Azad Hind 21 Oct
+  1943** at Singapore.
+- **Cabinet Mission 1946**; **Direct Action 16 Aug 1946**; **Constituent
+  Assembly first met 9 Dec 1946**.
+- **Independence 15 Aug 1947**; **Constitution 26 Jan 1950**.
+
+<div class="pyq">
+
+**PYQ-style: The Non-Cooperation Movement was suspended after the
+violent incident at:**
+
+(a) Champaran
+(b) Kheda
+(c) **Chauri Chaura (4 Feb 1922)**
+(d) Dandi
+
+<div class="pyq-answer">**Ans:** (c) Chauri Chaura — mob set fire to a
+police station + killed 22 policemen; Gandhi unilaterally called off NCM,
+shocking the Congress.</div>
+
+</div>
+
+<div class="pyq">
+
+**PYQ-style: At which INC session was the Purna Swaraj resolution
+passed?**
+
+(a) 1928 Calcutta (Motilal Nehru)
+(b) **1929 Lahore (Jawaharlal Nehru)**
+(c) 1931 Karachi (V. Patel)
+(d) 1937 Faizpur (J.L. Nehru)
+
+<div class="pyq-answer">**Ans:** (b) 1929 Lahore session, Jawaharlal Nehru
+presided; flag hoisted by him on banks of Ravi on 31 Dec 1929; first
+Independence Day observed 26 Jan 1930.</div>
+
+</div>
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart TD
+    R["COLONIAL INDIA + FREEDOM STRUGGLE<br>1498 - 1947"]:::root
+    R --> EUR["Europeans Arrive"]:::date
+    R --> EIC["EIC Consolidation"]:::key
+    R --> R57["1857 Revolt"]:::trap
+    R --> NAT["Nationalism + INC"]:::key
+    R --> GAN["Gandhian Era"]:::proc
+    R --> IND["Independence 1947"]:::date
+    EUR --> EUR1["Portuguese 1498 (Vasco da Gama at Calicut)<br>Dutch 1602 - English 1600 - French 1664"]:::date
+    EIC --> EIC1["Plassey 1757: Clive vs Siraj-ud-Daulah<br>Buxar 1764: Munro vs Mir Qasim + Shuja + Shah Alam II<br>Treaty of Allahabad 1765 = Diwani"]:::date
+    EIC --> EIC2["Regulating Act 1773 - Pitt's 1784<br>GoI 1858 = Crown rule begins"]:::date
+    R57 --> R571["Trigger: greased cartridges (Enfield rifle)<br>10 May 1857 Meerut - Bahadur Shah Zafar symbolic head<br>Nana Sahib (Kanpur), Lakshmibai (Jhansi), Hazrat Mahal (Lucknow)"]:::trap
+    NAT --> NAT1["INC 28 Dec 1885: A.O. Hume + W.C. Bonnerjee<br>Curzon Partitions Bengal 1905 (annulled 1911)<br>Surat Split 1907 (Mod vs Ext); ML 1906 Dhaka"]:::date
+    NAT --> NAT2["Jallianwala Bagh 13 Apr 1919 (Dyer)<br>GoI 1919 Diarchy"]:::trap
+    GAN --> GAN1["Gandhi returns 9 Jan 1915<br>Champaran 1917 (first satyagraha)<br>NCM 1920-22 (suspended after Chauri Chaura 4 Feb 1922)"]:::proc
+    GAN --> GAN2["Civil Disobedience 1930-34<br>Dandi March 12 Mar 1930<br>Gandhi-Irwin Pact 5 Mar 1931"]:::proc
+    GAN --> GAN3["Lahore 1929: Purna Swaraj (J. Nehru)<br>Quit India 8 Aug 1942 - Gowalia Tank<br>Aruna Asaf Ali hoists flag"]:::date
+    IND --> IND1["Cabinet Mission 1946; Direct Action 16 Aug 1946<br>Mountbatten Plan 3 Jun 1947<br>Indian Independence Act 18 Jul 1947<br>INDEPENDENCE 15 Aug 1947"]:::date
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
+---
+
+# Part E — Post-Independence India (1947 – today) {#part-e}
+
+## Chapter E1 — Integration of Princely States + Early Nation-Building
+
+At Independence, **562 Princely States** existed alongside British India. **Sardar Vallabhbhai Patel** (Iron Man of India, 1st Home Minister) and V.P. Menon achieved integration through the **Instrument of Accession**.
+
+| State | Special note |
+|-------|-------------|
+| **Hyderabad** | "Operation Polo" — Police Action (September 1948); Nizam refused to join |
+| **Junagadh** | Nawab acceded to Pakistan; plebiscite held — joined India |
+| **Kashmir** | Maharaja Hari Singh signed accession (October 1947) after Pakistani tribal attack; dispute ongoing |
+| **Goa** | Liberated from Portugal by **Operation Vijay (1961)**; merged December 19, 1961 |
+| **Sikkim** | Merged into India in **1975** (22nd state) — referendum held |
+
+**States Reorganisation Act 1956** — reorganised states on linguistic basis following the **States Reorganisation Commission (Fazl Ali Commission, 1953–55)**. Created 14 states + 6 UTs.
+
+<div class="keypoint">
+
+**Patel vs Nehru — exam favourite:** Both were Congress leaders. Patel → integration of states, Home Ministry. Nehru → PM, foreign policy, FYPs. First PM = Nehru; First President = Rajendra Prasad; First Home Minister = Patel.
+
+</div>
+
+## Chapter E2 — Nehru Era (1947–1964)
+
+**Five-Year Plans (FYPs):** Model based on Soviet planning — started 1951 under **Planning Commission** (1950).
+
+| FYP | Period | Focus |
+|-----|--------|-------|
+| First | 1951–56 | Agriculture + rehabilitation |
+| Second | 1956–61 | Heavy industry (Mahalanobis model) |
+| Third | 1961–66 | Self-reliance; disrupted by 1962 war |
+
+**Non-Aligned Movement (NAM):** Founded 1961 in Belgrade. India's stance: neither US nor USSR blocs. **Panchsheel Agreement (1954)** — 5 principles of peaceful coexistence between India and China.
+
+**Sino-Indian War (1962):** China attacked across McMahon Line. India suffered major military losses. Nehru's humiliation; he died in May 1964.
+
+## Chapter E3 — Wars and Major Events (1965–1991)
+
+| Year | Event | Outcome |
+|------|-------|---------|
+| **1965** | Indo-Pak War (Operation Gibraltar) | Tashkent Agreement (Jan 1966); Lal Bahadur Shastri signed (died same day) |
+| **1971** | Indo-Pak War (Bangladesh Liberation) | Indira Gandhi declared India-Pak war; **Shimla Agreement (1972)**; Bangladesh created |
+| **1974** | Pokhran-I (Smiling Buddha) | India's first nuclear test; Mrs. Gandhi's era |
+| **1975–77** | Emergency (25 June 1975 – 21 March 1977) | Proclaimed under Art 352; press censored; mass arrests; Allahabad HC ruling → trigger |
+| **1984** | Operation Blue Star (June) | Army stormed Golden Temple (Amritsar); Indira Gandhi assassinated (Oct 31) |
+| **1987** | Bofors scandal | Rajiv Gandhi era; arms purchase bribe allegation |
+| **1991** | LPG Reforms (Liberalisation, Privatisation, Globalisation) | PM Narasimha Rao + FM Manmohan Singh; balance-of-payments crisis → IMF bailout → opened economy |
+
+<div class="pitfall">
+
+**Emergency (1975–77) trap:** The Emergency was declared on **25 June 1975**, NOT during the 1971 war. The Allahabad High Court judgment (12 June 1975) disqualifying Mrs. Gandhi from her Rae Bareli seat was the direct trigger. The 1971 Bangladesh war had ended in December 1971 — a full 3.5 years earlier.
+
+</div>
+
+## Chapter E4 — Post-Liberalisation and Recent Milestones
+
+| Year | Milestone |
+|------|-----------|
+| **1998** | Pokhran-II — Operation Shakti; 5 nuclear tests; India declared nuclear-armed state |
+| **1999** | Kargil War (Operation Vijay); Pakistan-backed infiltration; India recaptured peaks |
+| **2005** | Right to Information (RTI) Act |
+| **2009** | MGNREGS (National Rural Employment Guarantee Act) — 100 days work guarantee |
+| **2014** | Pradhan Mantri Jan Dhan Yojana (PMJDY) — financial inclusion |
+| **2017** | GST (Goods and Services Tax) from 1 July — "one nation, one tax" |
+| **2019** | Article 370 abrogated (5 August); J&K bifurcated into 2 UTs |
+
+<div class="examtip">
+
+**High-hit exam facts from Post-Independence:**
+1. Smiling Buddha (1974) = code name for Pokhran-I nuclear test.
+2. Operation Vijay = both Goa liberation (1961) AND Kargil recapture (1999) — know context.
+3. Emergency: 25 June 1975–21 March 1977. 42nd Amendment (1976) — during Emergency.
+4. 14th PM of India = Narendra Modi (2014); 15th = Modi again (2024).
+5. RTI Act 2005; MGNREGS 2005; Right to Education (Art 21A) 2002.
+
+</div>
+
+<div class="pyq">
+
+**Q.E1.** The Shimla Agreement (1972) was signed between India and:
+
+(a) China  (b) Bangladesh  (c) Pakistan  (d) Nepal
+
+<div class="pyq-answer">
+
+**Ans:** (c) Pakistan — after the 1971 Bangladesh Liberation War. Signed by Indira Gandhi and Zulfikar Ali Bhutto in Shimla on 2 July 1972.
+
+</div>
+</div>
+
+<div class="pyq">
+
+**Q.E2.** "Operation Blue Star" was conducted to:
+
+(a) Liberate Goa  (b) Flush out militants from the Golden Temple  (c) Recapture Kargil peaks  (d) Conduct the 1974 nuclear test
+
+<div class="pyq-answer">
+
+**Ans:** (b) June 1984; launched by Indira Gandhi to clear militants (Bhindranwale group) from Harmandir Sahib (Golden Temple), Amritsar.
+
+</div>
+</div>
+
+---
+
+# Part F — World History {#part-f}
+
+World History appears in SSC CGL (5–8 Qs in GA section), State PSCs, and UPSC GS-I. Focus on revolutions, wars, and key dates — examiners do NOT ask obscure European monarchs; they test pivotal moments and their causes/outcomes.
+
+## Chapter F1 — Renaissance to Revolutions (14th–18th century)
+
+| Event | Period | Key facts |
+|-------|--------|-----------|
+| **Renaissance** | 14th–17th c. | "Rebirth" of art + learning; began in Italy; Leonardo da Vinci, Michelangelo, Raphael |
+| **Reformation** | 1517 | Martin Luther's 95 Theses (Wittenberg); challenged Catholic Church; led to Protestantism |
+| **Glorious Revolution (England)** | 1688 | William III replaced James II; established constitutional monarchy |
+| **American Revolution** | 1775–1783 | 13 colonies vs Britain; Declaration of Independence (4 July 1776); Treaty of Paris 1783 |
+| **French Revolution** | 1789 | Storming of Bastille (14 July 1789); "Liberty, Equality, Fraternity"; Napoleon emerged |
+| **Industrial Revolution** | 1760–1840 | Steam engine (Watt); began in Britain; factory system; urbanisation |
+
+<div class="keypoint">
+
+**Exam must-knows:** French Revolution slogan = **Liberté, Égalité, Fraternité**. American independence date = **4 July 1776**. Martin Luther ≠ Martin Luther King Jr. (King = US civil rights leader, 20th c.). Industrial Revolution started in **Britain** (not France or Germany).
+
+</div>
+
+## Chapter F2 — World Wars
+
+### World War I (1914–1918)
+
+- **Cause:** Assassination of Archduke Franz Ferdinand (28 June 1914, Sarajevo) by Gavrilo Princip.
+- **Alliances:**
+  - **Triple Alliance (Central Powers):** Germany + Austria-Hungary + Italy → later Italy joined Allies.
+  - **Triple Entente (Allied Powers):** Britain + France + Russia (+ USA from 1917).
+- **Key events:** Trench warfare; Gallipoli (1915); Battle of Somme (1916); USA joined 1917; Armistice 11 November 1918.
+- **Outcome:** Treaty of Versailles (1919) — Germany punished; League of Nations formed.
+
+### World War II (1939–1945)
+
+| Date | Event |
+|------|-------|
+| 1 Sep 1939 | Germany invades Poland → UK + France declare war |
+| 1940 | Dunkirk evacuation; Battle of Britain (RAF vs Luftwaffe) |
+| 1941 | Germany invades USSR; Japan attacks Pearl Harbor (7 Dec) → USA joins |
+| 1943 | Battle of Stalingrad — turning point on Eastern Front |
+| 6 Jun 1944 | D-Day — Allied landings at Normandy |
+| 8 May 1945 | Germany surrenders (V-E Day) |
+| 6 + 9 Aug 1945 | Atomic bombs on Hiroshima + Nagasaki |
+| 2 Sep 1945 | Japan surrenders (V-J Day) — WWII ends |
+
+- **Axis:** Germany (Hitler) + Italy (Mussolini) + Japan (Hirohito/Tojo).
+- **Allies:** USA, UK, USSR, France.
+- **UN Founded:** 24 October 1945 (UN Day) — replaced League of Nations.
+
+<div class="pitfall">
+
+**Common WWII traps:**
+1. **Hiroshima (6 Aug)** = Little Boy (Uranium); **Nagasaki (9 Aug)** = Fat Man (Plutonium).
+2. **Treaty of Versailles** = post-WWI; NOT post-WWII. Post-WWII = Paris Peace Conferences (1947).
+3. **Axis** = Germany, Italy, Japan. Mussolini = Italy; Hitler = Germany. Don't swap.
+
+</div>
+
+## Chapter F3 — Russian Revolution + Cold War
+
+| Event | Year | Key point |
+|-------|------|-----------|
+| Russian Revolution (Feb) | 1917 | Tsar Nicholas II abdicated; Provisional Government |
+| Russian Revolution (Oct) | 1917 | Bolsheviks (Lenin) seized power; communism established |
+| USSR formed | 1922 | Union of Soviet Socialist Republics |
+| Chinese Revolution | 1949 | Mao Zedong proclaimed People's Republic of China (1 Oct) |
+| NATO formed | 1949 | North Atlantic Treaty Organisation — Western bloc |
+| Warsaw Pact | 1955 | Eastern bloc counter to NATO |
+| Korean War | 1950–53 | North (China-USSR backed) vs South (USA-UN backed); armistice, no peace treaty |
+| Suez Crisis | 1956 | Egypt nationalised Suez Canal; UK, France, Israel attacked |
+| Cuban Missile Crisis | 1962 | USSR placed missiles in Cuba; USA blockade; near nuclear war |
+| Berlin Wall | 1961–1989 | Divided Berlin; fell 9 Nov 1989 → German reunification 1990 |
+| USSR dissolved | 1991 | 15 republics became independent; Cold War ended |
+
+<div class="examtip">
+
+**Top World History questions in SSC/Banks:**
+1. "Where was UN Charter signed?" → **San Francisco (1945)**.
+2. "Who was the first Secretary-General of the UN?" → **Trygve Lie (Norway)**.
+3. "NATO was established in?" → **1949**.
+4. "Bolshevik Revolution leader?" → **Lenin (Vladimir Ilyich Ulyanov)**.
+5. "Glasnost + Perestroika" → **Mikhail Gorbachev's** reforms that led to USSR dissolution.
+
+</div>
+
+<div class="pyq">
+
+**Q.F1.** The Treaty of Versailles (1919) was signed after which war?
+
+(a) World War II  (b) Crimean War  (c) World War I  (d) French Revolution
+
+<div class="pyq-answer">
+
+**Ans:** (c) World War I. Signed on 28 June 1919 in the Hall of Mirrors, Palace of Versailles. Germany was forced to accept the "War Guilt Clause" (Article 231).
+
+</div>
+</div>
+
+<div class="pyq">
+
+**Q.F2.** The Bolshevik Revolution of 1917 was led by:
+
+(a) Stalin  (b) Lenin  (c) Trotsky  (d) Khrushchev
+
+<div class="pyq-answer">
+
+**Ans:** (b) Lenin (Vladimir Ilyich Ulyanov). The October Revolution (Nov 7 in modern calendar) brought the Bolsheviks to power. Trotsky was also key; Stalin rose to power after Lenin's death (1924).
+
+</div>
+</div>
 
 ---
 
@@ -1410,16 +3417,12 @@ graph TD
 - **Cholas** — Rajaraja + Rajendra. Brihadeshvara 1010, Gangaikondacholapuram
   1035. Sri Vijaya naval 1025. Uttiramerur 919. Nataraja bronzes.
 
-*Parts B–F will be added to this book in subsequent revisions, in the same
-pedagogical style. For now, you can already score well in the Ancient India
-section of SSC/RRB/PO/Banking — keep the facts from the cheatsheet above
-in active recall during the exam.*
 
 ---
 
 \newpage
 
-# PART X — DELHI SULTANATE (1206-1526)
+# PART X — DELHI SULTANATE (1206-1526) {#part-x}
 
 ## 5 dynasties
 
@@ -1446,7 +3449,7 @@ in active recall during the exam.*
 
 \newpage
 
-# PART Y — MUGHAL EMPIRE (1526-1857)
+# PART Y — MUGHAL EMPIRE (1526-1857) {#part-y}
 
 | Emperor | Reign | Notable |
 |---|---|---|
@@ -1466,7 +3469,7 @@ in active recall during the exam.*
 
 \newpage
 
-# PART Z — MARATHAS + SIKHS
+# PART Z — MARATHAS + SIKHS {#part-z}
 
 ## Maratha rulers
 
@@ -1505,7 +3508,7 @@ in active recall during the exam.*
 
 \newpage
 
-# PART AA — BRITISH RULE — KEY ACTS + GG/VICEROYS
+# PART AA — BRITISH RULE — KEY ACTS + GG/VICEROYS {#part-aa}
 
 ## Governors-General + Viceroys (must memorise)
 
@@ -1598,7 +3601,7 @@ in active recall during the exam.*
 
 \newpage
 
-# PART AB — FREEDOM STRUGGLE TIMELINE (1857-1947)
+# PART AB — FREEDOM STRUGGLE TIMELINE (1857-1947) {#part-ab}
 
 ## 1857 Revolt
 
@@ -1706,7 +3709,7 @@ in active recall during the exam.*
 
 \newpage
 
-# PART AC — POST-INDEPENDENCE (key milestones)
+# PART AC — POST-INDEPENDENCE (key milestones) {#part-ac}
 
 | Year | Event |
 |---|---|
@@ -1754,7 +3757,7 @@ in active recall during the exam.*
 
 \newpage
 
-# PART AD — WORLD HISTORY (high-yield)
+# PART AD — WORLD HISTORY (high-yield) {#part-ad}
 
 ## Renaissance + Reformation
 
@@ -1815,7 +3818,7 @@ in active recall during the exam.*
 
 ---
 
-# PART AE — HISTORY TRAP-RECOGNITION CARDS
+# PART AE — HISTORY TRAP-RECOGNITION CARDS {#part-ae}
 
 | Trap | Where | How to spot |
 |---|---|---|
@@ -1834,7 +3837,7 @@ in active recall during the exam.*
 
 ---
 
-# PART AF — HISTORY MINI-MOCK (25 Questions · 25 Minutes)
+# PART AF — HISTORY MINI-MOCK (25 Questions · 25 Minutes) {#part-af}
 
 Set a timer. No looking back. Mark your answers and check the key at the end.
 
@@ -1960,7 +3963,7 @@ Set a timer. No looking back. Mark your answers and check the key at the end.
 
 \newpage
 
-# PART AG — BHAKTI + SUFI MOVEMENTS (high-yield)
+# PART AG — BHAKTI + SUFI MOVEMENTS (high-yield) {#part-ag}
 
 > Bhakti + Sufi appear in 2-3 PYQ marks per History section in SSC, RRB, Banks GA. These are the saints + texts examiners pick.
 
@@ -2061,7 +4064,7 @@ Other notable orders: **Firdausi** (Bihar — Sharafuddin Yahya Maneri); **Shatt
 
 \newpage
 
-# PART AH — SOCIAL + RELIGIOUS REFORMERS (19-20c)
+# PART AH — SOCIAL + RELIGIOUS REFORMERS (19-20c) {#part-ah}
 
 > 3-5 PYQ marks per paper. These are the names examiners pick.
 
@@ -2147,7 +4150,7 @@ Other notable orders: **Firdausi** (Bihar — Sharafuddin Yahya Maneri); **Shatt
 
 \newpage
 
-# PART AI — BHAKTI-SUFI-REFORMERS QUICK DRILL (10 Q)
+# PART AI — BHAKTI-SUFI-REFORMERS QUICK DRILL (10 Q) {#part-ai}
 
 1. Founder of Brahmo Samaj? — **Raja Ram Mohan Roy** (1828)
 2. Year of Sati abolition Act? — **1829** (Bentinck)

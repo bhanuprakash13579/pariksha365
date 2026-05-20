@@ -15,7 +15,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 WebBrowser.maybeCompleteAuthSession();
 
 // --- API SERVICE ---
-const API_BASE_URL = 'https://pariksha365-backend-production.up.railway.app/api/v1';
+const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'https://api.pariksha365.in/api/v1';
 
 const api = axios.create({ baseURL: API_BASE_URL, headers: { 'Content-Type': 'application/json' } });
 
@@ -123,6 +123,7 @@ import ForgotPasswordScreen from './src/screens/Auth/ForgotPasswordScreen';
 import MockTestScreen from './src/screens/Test/MockTestScreen';
 import PostTestResultsScreen from './src/screens/Test/PostTestResultsScreen';
 import QuizSessionScreen from './src/screens/Main/QuizSessionScreen';
+import PrivateModuleScreen from './src/screens/Main/PrivateModuleScreen';
 
 // --- Testbook-Style Profile Screen ---
 const ProfileScreen = ({ navigation, route }: any) => {
@@ -681,6 +682,7 @@ export default function App() {
         <Stack.Screen name="MockTest" component={MockTestScreen} options={{ headerShown: false }} />
         <Stack.Screen name="PostTestResults" component={PostTestResultsScreen} options={{ headerShown: false }} />
         <Stack.Screen name="QuizSession" component={QuizSessionScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="PrivateModule" component={PrivateModuleScreen} options={({ route }: any) => ({ title: route.params?.moduleName || 'Special Practice' })} />
         {/* Testbook Sub-Screens */}
         <Stack.Screen name="EditProfile" component={EditProfileScreen} options={{ title: 'Edit Profile' }} />
         <Stack.Screen name="SavedQuestions" component={SavedQuestionsScreen} options={{ title: 'Saved Questions' }} />

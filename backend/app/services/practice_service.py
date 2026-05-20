@@ -308,18 +308,31 @@ async def submit_quiz_answers(db: AsyncSession, user_id: uuid.UUID, answers: Lis
     details = []
     topic_stats = {}  # topic_code → {correct, total, subject, topic}
 
+    # Parse + validate question IDs once, then fetch every QuizQuestion in a
+    # single round-trip. The previous code issued one SELECT per answer, which
+    # turned a 30-question quiz submit into 30 sequential DB hops over a high-
+    # latency Railway link. With many concurrent submitters this also held a
+    # DB connection from the (small) pool for the entire duration of the loop.
+    parsed_ids: List[uuid.UUID] = []
     for ans in answers:
         raw_qid = ans.get("question_id")
         if not raw_qid:
             raise HTTPException(status_code=400, detail="Every answer must include a question_id.")
         try:
-            q_id = uuid.UUID(str(raw_qid))
+            parsed_ids.append(uuid.UUID(str(raw_qid)))
         except (ValueError, TypeError):
             raise HTTPException(status_code=400, detail=f"Invalid question_id: {raw_qid!r}.")
 
-        selected_index = ans.get("selected_option_index")
+    questions_by_id = {}
+    if parsed_ids:
+        rows = (await db.execute(
+            select(QuizQuestion).where(QuizQuestion.id.in_(parsed_ids))
+        )).scalars().all()
+        questions_by_id = {q.id: q for q in rows}
 
-        question = (await db.execute(select(QuizQuestion).where(QuizQuestion.id == q_id))).scalars().first()
+    for ans, q_id in zip(answers, parsed_ids):
+        selected_index = ans.get("selected_option_index")
+        question = questions_by_id.get(q_id)
 
         was_correct = False
         correct_index = None

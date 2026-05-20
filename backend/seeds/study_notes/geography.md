@@ -8,7 +8,13 @@ documentclass: book
 
 # EXAMINER BLUEPRINT — What Gets Tested Most
 
-Geography in competitive exams splits into two zones: **physical geography** (earth's structure, atmosphere, rivers, climate, soils) and **Indian geography** (states, rivers, national parks, minerals, ports, passes). Examiners lean heavily on Indian geography, where factual precision matters most.
+**Geography in competitive exams splits into two zones:**
+
+- **Physical geography** — earth's structure, atmosphere, rivers, climate, soils.
+
+- **Indian geography** — states, rivers, national parks, minerals, ports, passes.
+
+**Examiners lean heavily on Indian geography** — factual precision matters most.
 
 <div class="examtip">
 
@@ -44,9 +50,21 @@ Geography in competitive exams splits into two zones: **physical geography** (ea
 
 # How To Use This Book
 
-Geography rewards **visual memory** above all. You cannot remember the monsoon without a mental picture of the Bay of Bengal branch curving up into Assam; you cannot remember the southern peninsula's rivers without a map in your head with Godavari flowing east and Narmada flowing west. Build that mental map — the rest follows.
+**Geography rewards visual memory above all.**
 
-Keep a physical map of India visible while reading this book. Trace each river, each state border, each mountain range with your finger as you read about it. The physical act of tracing locks location into memory far better than reading alone.
+- You cannot remember the monsoon without a **mental picture** of the Bay of Bengal branch curving up into Assam.
+
+- You cannot remember the peninsula's rivers without a map in your head — Godavari flowing east, Narmada flowing west.
+
+- **Build that mental map — the rest follows.**
+
+**Practical tip:**
+
+- Keep a **physical map of India** visible while reading this book.
+
+- Trace each river, state border, mountain range with your finger as you read.
+
+- The physical act of tracing locks location into memory **far better than reading alone**.
 
 This book moves **outward → inward**:
 
@@ -67,7 +85,45 @@ This book moves **outward → inward**:
 
 ---
 
-# Part A — The Planet
+---
+
+# How to read this book — your real study load
+
+**Total pages: 65.** Don't let the page count scare you.
+
+### Mandatory reading — pages 1 to 36 (55% of the book)
+
+That's the full syllabus. Master those 36 pages and you've covered every concept an examiner can fairly ask.
+
+### Bonus material — pages 37 to 65 (45% of the book)
+
+Reference tables, compilations, and self-test material — useful in your last week of revision OR if you're aiming for a top rank.
+
+### Two study tracks
+
+- **Just want to pass?** Read pages 1–36. Skim the appendices once before the exam.
+
+- **Want to top your batch?** Read the appendices too — they're how 70% becomes 90%.
+
+---
+
+# Index — Table of Contents (clickable)
+
+| Pages | Part / Chapter | Topic / What it covers |
+|---:|---|---|
+| **p4–17** | [Part A](#part-a) | The Planet |
+| **p18–28** | [Part D](#part-d) | India, Physical |
+| **p29–33** | [Part E](#part-e) | India: Human + Economic |
+| **p34–36** | [Part F](#part-f) | World |
+| **p37–47** | [PART X](#part-x) | STATES OF INDIA — COMPLETE TABLE — *States of India — Capital, CM, Governor, area, population, features.* |
+| **p48–52** | [PART AA](#part-aa) | WORLD GEOGRAPHY (high-yield) — *World Geography — continents, oceans, mountain ranges, deserts.* |
+| **p53** | [PART AC](#part-ac) | GEOGRAPHY TRAP-RECOGNITION CARDS — *Trap-Recognition Cards — common examiner traps.* |
+| **p54–56** | [PART AD](#part-ad) | GEOGRAPHY MINI-MOCK (25 Questions · 25 Minutes) — *25-Question Mini-Mock — timed self-test.* |
+| **p57–62** | [PART AE](#part-ae) | INDIA "LONGEST / LARGEST / HIGHEST" MASTER LIST — *India 'Longest / Largest / Highest' — every superlative.* |
+| **p63–65** | [PART AF](#part-af) | WORLD "LONGEST / LARGEST" QUICK-RECALL — *World 'Longest / Largest' — quick-recall master list.* |
+
+---
+# Part A — The Planet {#part-a}
 
 ## Chapter 1 — The Universe + the Solar System
 
@@ -259,6 +315,72 @@ flowchart TD
 </div>
 </div>
 
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<text x="280" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Earth's Interior — Concentric Layers (full cross-section)</text>
+
+<!-- Concentric circles centered at (200, 210); largest radius 150 -->
+<!-- Crust thin outer ring: r=150 -->
+<circle cx="200" cy="210" r="150" fill="#2e7d32"/>
+<!-- Mantle ring: r=146 (leaving 4 px crust visible) -->
+<circle cx="200" cy="210" r="146" fill="#ef9a9a"/>
+<!-- Outer Core: r=78 -->
+<circle cx="200" cy="210" r="78" fill="#ffcc80"/>
+<!-- Inner Core: r=30 -->
+<circle cx="200" cy="210" r="30" fill="#ffe082"/>
+
+<!-- Outer border for clarity -->
+<circle cx="200" cy="210" r="150" fill="none" stroke="#222" stroke-width="1.2"/>
+
+<!-- Leader lines + labels (pulled out to the right) -->
+<!-- Crust (outer rim, at top of circle) -->
+<line x1="200" y1="60" x2="200" y2="40" stroke="#2e7d32" stroke-width="0.8"/>
+<line x1="200" y1="40" x2="370" y2="40" stroke="#2e7d32" stroke-width="0.8"/>
+<text x="375" y="38" font-size="11" font-weight="bold" fill="#2e7d32">Crust — 5–70 km</text>
+<text x="375" y="51" font-size="9" fill="#2e7d32">Oceanic = basalt · Continental = granite</text>
+
+<!-- Mantle leader from middle-right of mantle -->
+<line x1="345" y1="210" x2="370" y2="100" stroke="#b71c1c" stroke-width="0.8"/>
+<text x="375" y="98" font-size="11" font-weight="bold" fill="#b71c1c">Mantle — 70 to 2,900 km</text>
+<text x="375" y="111" font-size="9" fill="#b71c1c">Silicate rock; ~2,900 km thick</text>
+<text x="375" y="124" font-size="9" fill="#b71c1c">Asthenosphere = plastic; plates slide</text>
+
+<!-- Outer Core leader from middle-right of outer core ring -->
+<line x1="270" y1="210" x2="370" y2="160" stroke="#e65100" stroke-width="0.8"/>
+<text x="375" y="158" font-size="11" font-weight="bold" fill="#e65100">Outer Core — 2,900 to 5,100 km</text>
+<text x="375" y="171" font-size="9" fill="#e65100">Liquid iron-nickel (~2,200 km thick)</text>
+<text x="375" y="184" font-size="9" fill="#e65100">Generates Earth's magnetic field</text>
+
+<!-- Inner Core leader from center -->
+<line x1="225" y1="210" x2="370" y2="220" stroke="#f57f17" stroke-width="0.8"/>
+<text x="375" y="218" font-size="11" font-weight="bold" fill="#f57f17">Inner Core — 5,100 to 6,371 km</text>
+<text x="375" y="231" font-size="9" fill="#bf360c">Solid iron (~1,270 km radius)</text>
+
+<!-- Discontinuities box -->
+<rect x="30" y="280" width="510" height="110" rx="6" fill="#f5f5f5" stroke="#888"/>
+<text x="285" y="299" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Key Discontinuities (exam favourites)</text>
+
+<text x="42" y="318" font-size="10" font-weight="bold" fill="#2e7d32">Moho</text>
+<text x="42" y="331" font-size="9" fill="#555">Crust ↔ Mantle boundary</text>
+<text x="42" y="344" font-size="9" fill="#555">Discovered by Mohorovičić, 1909</text>
+
+<text x="195" y="318" font-size="10" font-weight="bold" fill="#b71c1c">Gutenberg</text>
+<text x="195" y="331" font-size="9" fill="#555">Mantle ↔ Outer Core</text>
+<text x="195" y="344" font-size="9" fill="#555">At ~2,900 km depth</text>
+
+<text x="370" y="318" font-size="10" font-weight="bold" fill="#1565c0">Lehmann</text>
+<text x="370" y="331" font-size="9" fill="#555">Outer ↔ Inner Core</text>
+<text x="370" y="344" font-size="9" fill="#555">At ~5,100 km depth</text>
+
+<text x="42" y="370" font-size="9" fill="#333">Seismic proof: P-waves travel through ALL layers · S-waves CANNOT pass the liquid outer core (proves it's liquid).</text>
+<text x="42" y="383" font-size="9" fill="#333">Highest pressure + density at the centre. Inner core is solid despite being hottest (~5,500 °C) — extreme pressure keeps it solid.</text>
+
+</svg>
+
+</div>
+
 ## Chapter 3 — Plate Tectonics, Earthquakes, Volcanoes
 
 ### 3.1 The big idea
@@ -291,6 +413,104 @@ graph TD
 
 **Himalayas** — **Indian plate** colliding with **Eurasian plate** since
 ~50 million years ago; still rising ~5 mm/yr.
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 290" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<defs>
+  <marker id="ca" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0,0 L0,7 L7,3.5 Z" fill="#c62828"/></marker>
+  <marker id="da" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0,0 L0,7 L7,3.5 Z" fill="#1565c0"/></marker>
+  <marker id="ta" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0,0 L0,7 L7,3.5 Z" fill="#2e7d32"/></marker>
+</defs>
+
+<text x="280" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Three Types of Plate Boundaries</text>
+
+<!-- ─── CONVERGENT ─── -->
+<rect x="10" y="35" width="175" height="245" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="2"/>
+<text x="97" y="54" text-anchor="middle" font-size="12" font-weight="bold" fill="#b71c1c">Convergent</text>
+<text x="97" y="68" text-anchor="middle" font-size="9" fill="#555">Plates collide; denser one sinks.</text>
+
+<!-- Plate A (left) -->
+<rect x="20" y="120" width="60" height="22" fill="#ef9a9a" stroke="#c62828" stroke-width="1.5"/>
+<text x="50" y="135" text-anchor="middle" font-size="9" fill="#b71c1c">Plate A</text>
+<!-- Arrow ON Plate A pointing right -->
+<line x1="30" y1="110" x2="70" y2="110" stroke="#c62828" stroke-width="2.5" marker-end="url(#ca)"/>
+
+<!-- Plate B (right) — slightly higher because uplifted by collision -->
+<rect x="105" y="120" width="60" height="22" fill="#ef9a9a" stroke="#c62828" stroke-width="1.5"/>
+<text x="135" y="135" text-anchor="middle" font-size="9" fill="#b71c1c">Plate B</text>
+<!-- Arrow ON Plate B pointing left -->
+<line x1="155" y1="110" x2="115" y2="110" stroke="#c62828" stroke-width="2.5" marker-end="url(#ca)"/>
+
+<!-- Mountain on top of Plate B (entirely within plate width 105–165) -->
+<polygon points="115,120 135,95 155,120" fill="#8d6e63" opacity="0.85"/>
+<text x="135" y="89" text-anchor="middle" font-size="8" fill="#5d4037">fold mtn</text>
+
+<!-- Subduction wedge — Plate A descending under Plate B -->
+<polygon points="80,142 105,142 135,185 110,185" fill="#a04040" opacity="0.85"/>
+<text x="115" y="167" font-size="8" fill="#fff" font-weight="bold">A subducts</text>
+
+<text x="97" y="210" text-anchor="middle" font-size="10" font-weight="bold" fill="#b71c1c">→ Mountains + Trenches</text>
+<text x="97" y="225" text-anchor="middle" font-size="9" fill="#b71c1c">Himalayas (India–Eurasia)</text>
+<text x="97" y="238" text-anchor="middle" font-size="9" fill="#b71c1c">Andes (Nazca–S. America)</text>
+<text x="97" y="251" text-anchor="middle" font-size="9" fill="#b71c1c">Marianas Trench — deepest</text>
+<text x="97" y="264" text-anchor="middle" font-size="9" fill="#b71c1c">(10,994 m below sea level)</text>
+
+<!-- ─── DIVERGENT ─── -->
+<rect x="195" y="35" width="175" height="245" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+<text x="282" y="54" text-anchor="middle" font-size="12" font-weight="bold" fill="#0d47a1">Divergent</text>
+<text x="282" y="68" text-anchor="middle" font-size="9" fill="#555">Plates move apart; magma rises.</text>
+
+<rect x="205" y="120" width="60" height="22" fill="#90caf9" stroke="#1565c0" stroke-width="1.5"/>
+<text x="235" y="135" text-anchor="middle" font-size="9" fill="#0d47a1">Plate A</text>
+<rect x="300" y="120" width="60" height="22" fill="#90caf9" stroke="#1565c0" stroke-width="1.5"/>
+<text x="330" y="135" text-anchor="middle" font-size="9" fill="#0d47a1">Plate B</text>
+
+<!-- Arrows pointing AWAY from each other -->
+<line x1="215" y1="110" x2="195" y2="110" stroke="#1565c0" stroke-width="2.5" marker-end="url(#da)"/>
+<line x1="350" y1="110" x2="370" y2="110" stroke="#1565c0" stroke-width="2.5" marker-end="url(#da)"/>
+
+<!-- Magma rising between them -->
+<polygon points="270,165 280,142 290,165" fill="#ef6c00"/>
+<polygon points="278,185 285,165 292,185" fill="#fff176"/>
+<text x="282" y="200" text-anchor="middle" font-size="8" fill="#bf360c">magma rises</text>
+
+<text x="282" y="220" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">→ Mid-ocean ridges + Rifts</text>
+<text x="282" y="235" text-anchor="middle" font-size="9" fill="#0d47a1">Mid-Atlantic Ridge</text>
+<text x="282" y="248" text-anchor="middle" font-size="9" fill="#0d47a1">East African Rift Valley</text>
+<text x="282" y="261" text-anchor="middle" font-size="9" fill="#0d47a1">Iceland sits ON the ridge</text>
+
+<!-- ─── TRANSFORM (plates at SAME level, side by side) ─── -->
+<rect x="380" y="35" width="175" height="245" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+<text x="467" y="54" text-anchor="middle" font-size="12" font-weight="bold" fill="#1b5e20">Transform</text>
+<text x="467" y="68" text-anchor="middle" font-size="9" fill="#555">Plates slide past laterally.</text>
+
+<!-- Plate A (left) and Plate B (right) at SAME y level -->
+<rect x="390" y="125" width="68" height="30" fill="#a5d6a7" stroke="#2e7d32" stroke-width="1.5"/>
+<text x="424" y="143" text-anchor="middle" font-size="10" fill="#1b5e20">Plate A</text>
+<rect x="475" y="125" width="68" height="30" fill="#a5d6a7" stroke="#2e7d32" stroke-width="1.5"/>
+<text x="509" y="143" text-anchor="middle" font-size="10" fill="#1b5e20">Plate B</text>
+
+<!-- Plate A arrow going DOWN (south); Plate B arrow going UP (north) -->
+<line x1="424" y1="170" x2="424" y2="190" stroke="#2e7d32" stroke-width="2.5" marker-end="url(#ta)"/>
+<line x1="509" y1="170" x2="509" y2="110" stroke="#2e7d32" stroke-width="2.5" marker-end="url(#ta)"/>
+<text x="395" y="186" font-size="8" fill="#1b5e20">moves S</text>
+<text x="480" y="106" font-size="8" fill="#1b5e20">moves N</text>
+
+<!-- Fault line between plates (vertical, on the boundary at x=466) -->
+<line x1="466" y1="100" x2="466" y2="200" stroke="#c62828" stroke-width="2.5" stroke-dasharray="5,3"/>
+<text x="438" y="98" font-size="8" font-weight="bold" fill="#c62828">fault line</text>
+
+<text x="467" y="218" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">→ Earthquakes (no volcano)</text>
+<text x="467" y="232" text-anchor="middle" font-size="9" fill="#1b5e20">San Andreas Fault (USA)</text>
+<text x="467" y="245" text-anchor="middle" font-size="9" fill="#1b5e20">North Anatolian Fault (Turkey)</text>
+<text x="467" y="258" text-anchor="middle" font-size="9" fill="#1b5e20">No new crust created/destroyed</text>
+<text x="467" y="271" text-anchor="middle" font-size="9" fill="#1b5e20">Pure shear stress</text>
+
+</svg>
+
+</div>
 
 ### 3.3 Earthquakes
 
@@ -397,6 +617,69 @@ graph TD
 falls in troposphere (-6.5°C/km), rises in stratosphere (due to ozone
 absorbing UV), falls in mesosphere, rises in thermosphere.
 
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<!-- Troposphere 0-12 km -->
+<rect x="60" y="280" width="240" height="70" fill="#bbdefb" stroke="#1565c0" stroke-width="2"/>
+<text x="180" y="306" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">TROPOSPHERE</text>
+<text x="180" y="322" text-anchor="middle" font-size="10" fill="#0d47a1">0–12 km | Weather happens here</text>
+<text x="180" y="337" text-anchor="middle" font-size="10" fill="#0d47a1">Temp ↓ with altitude | Tropopause at top</text>
+<text x="180" y="350" text-anchor="middle" font-size="10" fill="#0d47a1">Lapse rate: 6.5°C / 1000 m</text>
+
+<!-- Stratosphere 12-50 km -->
+<rect x="60" y="200" width="240" height="78" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
+<text x="180" y="224" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">STRATOSPHERE</text>
+<text x="180" y="240" text-anchor="middle" font-size="10" fill="#1b5e20">12–50 km | Ozone layer (15–35 km)</text>
+<text x="180" y="255" text-anchor="middle" font-size="10" fill="#1b5e20">Temp ↑ with altitude (UV absorbed)</text>
+<text x="180" y="270" text-anchor="middle" font-size="10" fill="#1b5e20">Jet streams; commercial aircraft fly here</text>
+
+<!-- Mesosphere 50-80 km -->
+<rect x="60" y="130" width="240" height="68" fill="#fff9c4" stroke="#f9a825" stroke-width="2"/>
+<text x="180" y="153" text-anchor="middle" font-size="13" font-weight="bold" fill="#e65100">MESOSPHERE</text>
+<text x="180" y="169" text-anchor="middle" font-size="10" fill="#e65100">50–80 km | Coldest layer (–90°C)</text>
+<text x="180" y="184" text-anchor="middle" font-size="10" fill="#e65100">Meteors burn up here | Temp ↓</text>
+
+<!-- Thermosphere 80-700 km -->
+<rect x="60" y="60" width="240" height="68" fill="#fce4ec" stroke="#c62828" stroke-width="2"/>
+<text x="180" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#b71c1c">THERMOSPHERE</text>
+<text x="180" y="97" text-anchor="middle" font-size="10" fill="#b71c1c">80–700 km | Temp up to 2000°C</text>
+<text x="180" y="112" text-anchor="middle" font-size="10" fill="#b71c1c">Ionosphere; Aurora borealis/australis</text>
+
+<!-- Exosphere -->
+<rect x="60" y="20" width="240" height="38" fill="#ede7f6" stroke="#4a148c" stroke-width="2"/>
+<text x="180" y="37" text-anchor="middle" font-size="12" font-weight="bold" fill="#4a148c">EXOSPHERE (700+ km)</text>
+<text x="180" y="53" text-anchor="middle" font-size="10" fill="#4a148c">Satellites orbit here | Merges into space</text>
+
+<!-- Altitude scale -->
+<text x="10" y="355" font-size="10" fill="#333">0 km</text>
+<text x="10" y="285" font-size="10" fill="#333">12 km</text>
+<text x="10" y="205" font-size="10" fill="#333">50 km</text>
+<text x="10" y="135" font-size="10" fill="#333">80 km</text>
+<text x="10" y="65" font-size="10" fill="#333">700 km</text>
+
+<!-- Right column exam facts -->
+<rect x="320" y="20" width="235" height="330" rx="6" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+<text x="437" y="40" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">Exam Quick-Fire Facts</text>
+<text x="330" y="58" font-size="10" fill="#333">• Atmosphere = 78% N₂, 21% O₂, 0.04% CO₂</text>
+<text x="330" y="73" font-size="10" fill="#333">• Ozone layer: CFC destroys it (Montreal 1987)</text>
+<text x="330" y="88" font-size="10" fill="#333">• Ionosphere: reflects AM radio waves</text>
+<text x="330" y="103" font-size="10" fill="#333">• Jet streams: 9–16 km, westerly, fast winds</text>
+<text x="330" y="118" font-size="10" fill="#333">• Tropopause: boundary tropo–strato</text>
+<text x="330" y="133" font-size="10" fill="#333">• Stratopause: boundary strato–meso</text>
+<text x="330" y="148" font-size="10" fill="#333">• Mesopause: boundary meso–thermo</text>
+<text x="330" y="163" font-size="10" fill="#333">• Thermopause: boundary thermo–exo</text>
+<text x="330" y="178" font-size="10" fill="#333">• Aurora: solar wind + ionosphere</text>
+<text x="330" y="193" font-size="10" fill="#333">• S-waves can't travel through liquid outer core</text>
+<text x="330" y="210" font-size="10" fill="#b71c1c" font-weight="bold">Memory: The Strange Monkey Trotted Everywhere</text>
+<text x="330" y="225" font-size="10" fill="#b71c1c">(T=Troposphere, S=Stratosphere, M=Meso,</text>
+<text x="330" y="240" font-size="10" fill="#b71c1c"> T=Thermo, E=Exosphere)</text>
+
+</svg>
+
+</div>
+
 ### 4.2 Winds — the 3-cell model
 
 ```mermaid
@@ -432,6 +715,128 @@ in SH. Zero at equator; maximum at poles.
 - **Mistral** — cold dry France, Rhone Valley.
 - **Harmattan** — dry W. Africa.
 - **Santa Ana** — California dry hot.
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 490" style="font-family:Arial,sans-serif;max-width:100%;display:block;margin:auto;">
+
+<text x="290" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#0d47a1">Global Pressure Belts + Prevailing Winds</text>
+
+<!-- 7 pressure belts + 6 wind bands (alternating), top-to-bottom 90°N to 90°S -->
+<!-- Polar High N -->
+<rect x="30" y="40" width="320" height="38" fill="#e3f2fd" stroke="#1565c0"/>
+<text x="190" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="#0d47a1">Polar High (~90°N)</text>
+<text x="190" y="72" text-anchor="middle" font-size="9" fill="#0d47a1">Cold dense air descends → high pressure</text>
+
+<!-- Wind: Polar Easterlies N -->
+<rect x="30" y="78" width="320" height="32" fill="#e8eaf6"/>
+<text x="190" y="95" text-anchor="middle" font-size="10" font-weight="bold" fill="#283593">Polar Easterlies (N)</text>
+<text x="190" y="106" text-anchor="middle" font-size="9" fill="#283593">Blow from NE → SW</text>
+
+<!-- Subpolar Low N -->
+<rect x="30" y="110" width="320" height="38" fill="#fff9c4" stroke="#f9a825"/>
+<text x="190" y="128" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Sub-Polar Low (~60°N)</text>
+<text x="190" y="142" text-anchor="middle" font-size="9" fill="#e65100">Cold + warm air meet; cyclones form</text>
+
+<!-- Wind: Westerlies N -->
+<rect x="30" y="148" width="320" height="32" fill="#e3f2fd"/>
+<text x="190" y="165" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">Westerlies (N)</text>
+<text x="190" y="176" text-anchor="middle" font-size="9" fill="#0d47a1">Blow from SW → NE</text>
+
+<!-- Subtropical High N (Horse Latitudes) -->
+<rect x="30" y="180" width="320" height="38" fill="#fce4ec" stroke="#c62828"/>
+<text x="190" y="198" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">Sub-Tropical High (~30°N — Horse Latitudes)</text>
+<text x="190" y="212" text-anchor="middle" font-size="9" fill="#b71c1c">Descending warm air; deserts (Sahara, Thar)</text>
+
+<!-- Wind: NE Trades -->
+<rect x="30" y="218" width="320" height="32" fill="#e8f5e9"/>
+<text x="190" y="235" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">NE Trade Winds</text>
+<text x="190" y="246" text-anchor="middle" font-size="9" fill="#1b5e20">NE → SW (Indian SW monsoon reverses these)</text>
+
+<!-- ITCZ (0°) -->
+<rect x="30" y="250" width="320" height="38" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
+<text x="190" y="268" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">ITCZ / Equatorial Low (0°)</text>
+<text x="190" y="282" text-anchor="middle" font-size="9" fill="#1b5e20">Doldrums; calm + heavy rain; shifts N in summer</text>
+
+<!-- Wind: SE Trades -->
+<rect x="30" y="288" width="320" height="32" fill="#e8f5e9"/>
+<text x="190" y="305" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">SE Trade Winds</text>
+<text x="190" y="316" text-anchor="middle" font-size="9" fill="#1b5e20">SE → NW</text>
+
+<!-- Subtropical High S -->
+<rect x="30" y="320" width="320" height="38" fill="#fce4ec" stroke="#c62828"/>
+<text x="190" y="338" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">Sub-Tropical High (~30°S)</text>
+<text x="190" y="352" text-anchor="middle" font-size="9" fill="#b71c1c">Deserts: Atacama, Kalahari, Australian</text>
+
+<!-- Wind: Westerlies S -->
+<rect x="30" y="358" width="320" height="32" fill="#e3f2fd"/>
+<text x="190" y="375" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">Westerlies (S) — Roaring 40s, Furious 50s</text>
+<text x="190" y="386" text-anchor="middle" font-size="9" fill="#0d47a1">NW → SE; strongest winds on Earth</text>
+
+<!-- Subpolar Low S -->
+<rect x="30" y="390" width="320" height="38" fill="#fff9c4" stroke="#f9a825"/>
+<text x="190" y="408" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Sub-Polar Low (~60°S)</text>
+<text x="190" y="422" text-anchor="middle" font-size="9" fill="#e65100">Around Antarctic circle; "Screaming Sixties"</text>
+
+<!-- Wind: Polar Easterlies S (was MISSING!) -->
+<rect x="30" y="428" width="320" height="28" fill="#e8eaf6"/>
+<text x="190" y="445" text-anchor="middle" font-size="10" font-weight="bold" fill="#283593">Polar Easterlies (S) — SE → NW</text>
+
+<!-- Polar High S -->
+<rect x="30" y="456" width="320" height="28" fill="#e3f2fd" stroke="#1565c0"/>
+<text x="190" y="472" text-anchor="middle" font-size="10" font-weight="bold" fill="#0d47a1">Polar High (~90°S — Antarctica)</text>
+
+<!-- Latitude markers on left -->
+<text x="6" y="62" font-size="9" fill="#666">90°N</text>
+<text x="6" y="131" font-size="9" fill="#666">60°N</text>
+<text x="6" y="201" font-size="9" fill="#666">30°N</text>
+<text x="6" y="271" font-size="9" fill="#666">0°</text>
+<text x="6" y="341" font-size="9" fill="#666">30°S</text>
+<text x="6" y="411" font-size="9" fill="#666">60°S</text>
+<text x="6" y="472" font-size="9" fill="#666">90°S</text>
+
+<!-- Right column: notes -->
+<rect x="365" y="40" width="205" height="444" rx="6" fill="#f5f5f5" stroke="#888" stroke-width="1"/>
+<text x="467" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Key Concepts</text>
+
+<text x="372" y="78" font-size="10" font-weight="bold" fill="#b71c1c">Coriolis Effect</text>
+<text x="372" y="92" font-size="9" fill="#333">• Deflects winds RIGHT in NH</text>
+<text x="372" y="105" font-size="9" fill="#333">• Deflects winds LEFT in SH</text>
+<text x="372" y="118" font-size="9" fill="#333">• Zero at equator, max at poles</text>
+
+<text x="372" y="138" font-size="10" font-weight="bold" fill="#1b5e20">Indian Monsoon</text>
+<text x="372" y="152" font-size="9" fill="#333">• SW monsoon = reversed NE trades</text>
+<text x="372" y="164" font-size="9" fill="#333">  (Jun–Sep)</text>
+<text x="372" y="177" font-size="9" fill="#333">• Arabian + Bay of Bengal branches</text>
+<text x="372" y="189" font-size="9" fill="#333">• NE monsoon Oct–Dec = TN rain</text>
+
+<text x="372" y="209" font-size="10" font-weight="bold" fill="#0d47a1">Local Winds (exam)</text>
+<text x="372" y="223" font-size="9" fill="#333">• Loo — hot, dry, NW India</text>
+<text x="372" y="235" font-size="9" fill="#333">• Mango Showers — Kerala pre-mon</text>
+<text x="372" y="247" font-size="9" fill="#333">• Nor'wester / Kalbaisakhi — Bengal</text>
+<text x="372" y="259" font-size="9" fill="#333">• Chinook — Rockies lee, USA</text>
+<text x="372" y="271" font-size="9" fill="#333">• Foehn — Alps lee side</text>
+<text x="372" y="283" font-size="9" fill="#333">• Sirocco — Sahara → Med.</text>
+<text x="372" y="295" font-size="9" fill="#333">• Mistral — NW France (cold)</text>
+<text x="372" y="307" font-size="9" fill="#333">• Harmattan — W. Africa (dry)</text>
+
+<text x="372" y="327" font-size="10" font-weight="bold" fill="#bf360c">3 Cells per Hemisphere</text>
+<text x="372" y="341" font-size="9" fill="#333">• Hadley cell (0° – 30°)</text>
+<text x="372" y="353" font-size="9" fill="#333">• Ferrel cell (30° – 60°)</text>
+<text x="372" y="365" font-size="9" fill="#333">• Polar cell (60° – 90°)</text>
+
+<text x="372" y="385" font-size="10" font-weight="bold" fill="#4a148c">Southern Winds</text>
+<text x="372" y="399" font-size="9" fill="#333">• Roaring 40s (40–50°S)</text>
+<text x="372" y="411" font-size="9" fill="#333">• Furious 50s (50–60°S)</text>
+<text x="372" y="423" font-size="9" fill="#333">• Screaming 60s (60–70°S)</text>
+
+<text x="372" y="443" font-size="10" font-weight="bold" fill="#37474f">Why deflection?</text>
+<text x="372" y="457" font-size="9" fill="#333">Earth rotates W → E, so a moving</text>
+<text x="372" y="469" font-size="9" fill="#333">parcel of air "appears" to curve</text>
+
+</svg>
+
+</div>
 
 ### 4.3 Indian Monsoon — the crown jewel topic
 
@@ -479,6 +884,101 @@ also coastal AP + Rayalaseema + Karaikal + S. Kerala. Rest of India is dry.
 - **Indian Ocean Dipole (IOD)** — positive phase (W. IO warmer than E.)
   strengthens monsoon; negative phase weakens.
 - **MJO** (Madden-Julian Oscillation) — eastward-moving tropical convection.
+
+<div style="margin: 10pt 0; text-align: center;">
+
+<svg viewBox="0 0 480 530" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:480px;display:block;margin:8pt auto;font-family:Arial,sans-serif;">
+<defs>
+  <clipPath id="ind-mon"><path d="M 125.9,33.7 L 145.1,38.4 L 165.5,52.5 L 179.2,61.9 L 186.0,72.9 L 195.6,88.6 L 209.3,107.4 L 222.9,124.6 L 233.9,143.5 L 243.4,151.3 L 257.1,159.1 L 270.7,167.0 L 288.5,174.8 L 304.9,178.0 L 318.6,182.7 L 332.2,185.8 L 345.9,188.9 L 340.4,193.6 L 345.9,201.5 L 352.7,206.2 L 343.1,214.0 L 352.7,218.7 L 366.4,221.9 L 375.9,218.7 L 386.9,206.2 L 400.5,190.5 L 421.0,178.0 L 427.8,167.0 L 430.6,154.4 L 434.7,151.3 L 448.3,162.3 L 448.3,178.0 L 441.5,193.6 L 414.2,214.0 L 393.7,229.7 L 386.9,237.6 L 384.1,250.1 L 384.1,256.4 L 380.0,265.8 L 373.2,273.6 L 366.4,268.9 L 362.3,261.1 L 356.8,256.4 L 348.6,253.2 L 332.2,268.9 L 322.7,276.8 L 309.0,284.6 L 302.2,292.4 L 288.5,303.4 L 277.6,316.0 L 263.9,331.7 L 243.4,347.3 L 222.9,363.0 L 216.1,378.7 L 212.0,402.2 L 209.3,425.7 L 206.5,449.3 L 195.6,469.7 L 184.7,480.6 L 175.1,486.9 L 168.3,480.6 L 164.2,472.8 L 160.1,460.2 L 154.6,449.3 L 150.5,433.6 L 141.0,417.9 L 138.2,402.2 L 127.3,378.7 L 120.5,363.0 L 113.6,339.5 L 113.6,323.8 L 110.9,316.0 L 110.9,300.3 L 106.8,284.6 L 100.0,276.8 L 93.1,272.1 L 83.6,268.9 L 72.6,264.2 L 61.7,261.1 L 54.9,253.2 L 50.8,245.4 L 52.2,237.6 L 65.8,229.7 L 79.5,234.4 L 93.1,228.1 L 79.5,206.2 L 93.1,182.7 L 79.5,167.0 L 86.3,151.3 L 83.6,135.6 L 86.3,119.9 L 106.8,104.3 L 124.6,83.9 L 123.2,68.2 L 130.0,57.2 L 131.4,46.2 L 125.9,33.7 Z"/></clipPath>
+  <marker id="ma" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L0,10 L10,5 Z" fill="#1565c0"/></marker>
+  <marker id="mb" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L0,10 L10,5 Z" fill="#00695c"/></marker>
+  <marker id="mne" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L0,10 L10,5 Z" fill="#bf360c"/></marker>
+</defs>
+
+<!-- Ocean -->
+<rect width="480" height="530" fill="#cfe2f3" rx="8"/>
+
+<!-- India shape -->
+<path d="M 125.9,33.7 L 145.1,38.4 L 165.5,52.5 L 179.2,61.9 L 186.0,72.9 L 195.6,88.6 L 209.3,107.4 L 222.9,124.6 L 233.9,143.5 L 243.4,151.3 L 257.1,159.1 L 270.7,167.0 L 288.5,174.8 L 304.9,178.0 L 318.6,182.7 L 332.2,185.8 L 345.9,188.9 L 340.4,193.6 L 345.9,201.5 L 352.7,206.2 L 343.1,214.0 L 352.7,218.7 L 366.4,221.9 L 375.9,218.7 L 386.9,206.2 L 400.5,190.5 L 421.0,178.0 L 427.8,167.0 L 430.6,154.4 L 434.7,151.3 L 448.3,162.3 L 448.3,178.0 L 441.5,193.6 L 414.2,214.0 L 393.7,229.7 L 386.9,237.6 L 384.1,250.1 L 384.1,256.4 L 380.0,265.8 L 373.2,273.6 L 366.4,268.9 L 362.3,261.1 L 356.8,256.4 L 348.6,253.2 L 332.2,268.9 L 322.7,276.8 L 309.0,284.6 L 302.2,292.4 L 288.5,303.4 L 277.6,316.0 L 263.9,331.7 L 243.4,347.3 L 222.9,363.0 L 216.1,378.7 L 212.0,402.2 L 209.3,425.7 L 206.5,449.3 L 195.6,469.7 L 184.7,480.6 L 175.1,486.9 L 168.3,480.6 L 164.2,472.8 L 160.1,460.2 L 154.6,449.3 L 150.5,433.6 L 141.0,417.9 L 138.2,402.2 L 127.3,378.7 L 120.5,363.0 L 113.6,339.5 L 113.6,323.8 L 110.9,316.0 L 110.9,300.3 L 106.8,284.6 L 100.0,276.8 L 93.1,272.1 L 83.6,268.9 L 72.6,264.2 L 61.7,261.1 L 54.9,253.2 L 50.8,245.4 L 52.2,237.6 L 65.8,229.7 L 79.5,234.4 L 93.1,228.1 L 79.5,206.2 L 93.1,182.7 L 79.5,167.0 L 86.3,151.3 L 83.6,135.6 L 86.3,119.9 L 106.8,104.3 L 124.6,83.9 L 123.2,68.2 L 130.0,57.2 L 131.4,46.2 L 125.9,33.7 Z" fill="#c8e6c9" stroke="#388e3c" stroke-width="2"/>
+
+<!-- Title -->
+<rect x="0" y="0" width="480" height="22" fill="#1565c0" opacity="0.85"/>
+<text x="240" y="15" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Indian Monsoon — SW &amp; NE Branches</text>
+
+<!-- Arabian Sea SW branch arrows (hitting Kerala/Karnataka/Maharashtra W coast from SW) -->
+<line x1="35" y1="478" x2="125" y2="445" stroke="#1565c0" stroke-width="2.5" marker-end="url(#ma)"/>
+<line x1="40" y1="435" x2="128" y2="400" stroke="#1565c0" stroke-width="2.5" marker-end="url(#ma)"/>
+<line x1="40" y1="380" x2="132" y2="358" stroke="#1565c0" stroke-width="2.5" marker-end="url(#ma)"/>
+<line x1="45" y1="325" x2="132" y2="313" stroke="#1565c0" stroke-width="2.5" marker-end="url(#ma)"/>
+
+<text x="18" y="498" font-size="9" font-weight="bold" fill="#0d47a1">Arabian Sea Branch (SW)</text>
+<text x="18" y="510" font-size="8" fill="#0d47a1">Jun–Sep · ~75% of rain</text>
+
+<!-- Bay of Bengal SW branch arrows (hitting E coast from SE) -->
+<line x1="435" y1="430" x2="350" y2="345" stroke="#00695c" stroke-width="2.5" marker-end="url(#mb)"/>
+<line x1="445" y1="378" x2="370" y2="295" stroke="#00695c" stroke-width="2.5" marker-end="url(#mb)"/>
+<line x1="445" y1="320" x2="395" y2="245" stroke="#00695c" stroke-width="2.5" marker-end="url(#mb)"/>
+<line x1="435" y1="265" x2="415" y2="215" stroke="#00695c" stroke-width="2.5" marker-end="url(#mb)"/>
+
+<text x="345" y="498" font-size="9" font-weight="bold" fill="#004d40">Bay of Bengal Branch (SW)</text>
+<text x="345" y="510" font-size="8" fill="#004d40">Jun–Sep · into Bengal / NE</text>
+
+<!-- NE Monsoon arrow — originates OUTSIDE India over NE/Bay and points SW to TN -->
+<line x1="395" y1="285" x2="240" y2="430" stroke="#bf360c" stroke-width="2.5" stroke-dasharray="7,4" marker-end="url(#mne)"/>
+<text x="345" y="315" font-size="9" font-weight="bold" fill="#bf360c">NE Monsoon</text>
+<text x="345" y="327" font-size="8" fill="#bf360c">(Oct–Dec)</text>
+<text x="345" y="339" font-size="8" fill="#bf360c">→ Tamil Nadu rains</text>
+
+<!-- Cherrapunji — Meghalaya / NE bulge (correct position) -->
+<circle cx="345" cy="218" r="4" fill="#c62828" stroke="white" stroke-width="1.5"/>
+<line x1="349" y1="218" x2="395" y2="178" stroke="#c62828" stroke-width="0.6"/>
+<text x="398" y="176" font-size="8" font-weight="bold" fill="#c62828">Cherrapunji / Mawsynram</text>
+<text x="398" y="188" font-size="7.5" fill="#c62828">(Meghalaya — wettest places)</text>
+
+<!-- Mumbai (W coast onset) -->
+<circle cx="112" cy="314" r="3" fill="#0d47a1" stroke="white"/>
+<line x1="109" y1="314" x2="55" y2="295" stroke="#0d47a1" stroke-width="0.6"/>
+<text x="18" y="293" font-size="8" font-weight="bold" fill="#0d47a1">Mumbai</text>
+<text x="18" y="305" font-size="7.5" fill="#0d47a1">(onset ~10 Jun)</text>
+
+<!-- Kerala onset marker — coast at SW -->
+<circle cx="160" cy="475" r="3" fill="#0d47a1" stroke="white"/>
+<line x1="163" y1="473" x2="215" y2="453" stroke="#0d47a1" stroke-width="0.6"/>
+<rect x="218" y="443" width="100" height="22" rx="3" fill="white" opacity="0.95" stroke="#0d47a1"/>
+<text x="268" y="456" text-anchor="middle" font-size="8" font-weight="bold" fill="#0d47a1">Kerala onset</text>
+<text x="268" y="465" text-anchor="middle" font-size="7.5" fill="#0d47a1">~1 June</text>
+
+<!-- Delhi onset (with leader) -->
+<circle cx="171" cy="165" r="3" fill="#004d40" stroke="white"/>
+<line x1="174" y1="163" x2="225" y2="130" stroke="#004d40" stroke-width="0.6"/>
+<rect x="228" y="118" width="100" height="22" rx="3" fill="white" opacity="0.95" stroke="#004d40"/>
+<text x="278" y="131" text-anchor="middle" font-size="8" font-weight="bold" fill="#004d40">Delhi onset</text>
+<text x="278" y="140" text-anchor="middle" font-size="7.5" fill="#004d40">~29 June</text>
+<text x="138" y="178" font-size="8" font-weight="bold" fill="#004d40">Delhi</text>
+
+<!-- Western Ghats label -->
+<text x="55" y="365" font-size="8" font-weight="bold" fill="#e65100">Western Ghats</text>
+<text x="55" y="377" font-size="7.5" fill="#e65100">(windward heavy rain)</text>
+<line x1="112" y1="365" x2="138" y2="365" stroke="#e65100" stroke-width="0.6"/>
+
+<!-- Legend -->
+<rect x="15" y="170" width="105" height="80" rx="4" fill="white" opacity="0.95" stroke="#94a3b8"/>
+<text x="68" y="184" text-anchor="middle" font-size="8" font-weight="bold" fill="#374151">Legend</text>
+<line x1="22" y1="196" x2="42" y2="196" stroke="#1565c0" stroke-width="2.5" marker-end="url(#ma)"/>
+<text x="48" y="199" font-size="7.5" fill="#0d47a1">SW · Arabian Sea</text>
+<line x1="22" y1="211" x2="42" y2="211" stroke="#00695c" stroke-width="2.5" marker-end="url(#mb)"/>
+<text x="48" y="214" font-size="7.5" fill="#004d40">SW · Bay of Bengal</text>
+<line x1="22" y1="226" x2="42" y2="226" stroke="#bf360c" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#mne)"/>
+<text x="48" y="229" font-size="7.5" fill="#bf360c">NE · Oct–Dec</text>
+<text x="22" y="244" font-size="7" fill="#666">SW monsoon = 75% of annual rain</text>
+
+<!-- Compass -->
+<circle cx="455" cy="60" r="13" fill="white" opacity="0.85" stroke="#94a3b8"/>
+<text x="455" y="56" text-anchor="middle" font-size="8" font-weight="bold" fill="#374151">N</text>
+<polygon points="455,50 452,60 455,58 458,60" fill="#1e3a5f"/>
+</svg>
+
+</div>
 
 ### 4.4 Exam hooks
 
@@ -570,7 +1070,7 @@ India, ~7 m); Okha, Mumbai, Haldia, Paradip, Chennai, Vizag, Cochin, Tuticorin.
 
 ---
 
-# Part D — India, Physical
+# Part D — India, Physical {#part-d}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -666,6 +1166,77 @@ flowchart TD
     classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
     classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
 </div>
+</div>
+
+### India — Major Cities: Location Reference
+
+<div style="margin: 8pt 0; text-align: center;">
+
+<svg viewBox="0 0 480 530" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:480px;display:block;margin:10pt auto;font-family:Georgia,serif;">
+  <rect width="480" height="530" fill="#e8f4fd" rx="8"/>
+  <!-- Ocean/water background -->
+  <rect width="480" height="530" fill="#c8e6f5" rx="8"/>
+  <!-- India land -->
+  <path d="M 125.9,33.7 L 145.1,38.4 L 165.5,52.5 L 179.2,61.9 L 186.0,72.9 L 195.6,88.6 L 209.3,107.4 L 222.9,124.6 L 233.9,143.5 L 243.4,151.3 L 257.1,159.1 L 270.7,167.0 L 288.5,174.8 L 304.9,178.0 L 318.6,182.7 L 332.2,185.8 L 345.9,188.9 L 340.4,193.6 L 345.9,201.5 L 352.7,206.2 L 343.1,214.0 L 352.7,218.7 L 366.4,221.9 L 375.9,218.7 L 386.9,206.2 L 400.5,190.5 L 421.0,178.0 L 427.8,167.0 L 430.6,154.4 L 434.7,151.3 L 448.3,162.3 L 448.3,178.0 L 441.5,193.6 L 414.2,214.0 L 393.7,229.7 L 386.9,237.6 L 384.1,250.1 L 384.1,256.4 L 380.0,265.8 L 373.2,273.6 L 366.4,268.9 L 362.3,261.1 L 356.8,256.4 L 348.6,253.2 L 332.2,268.9 L 322.7,276.8 L 309.0,284.6 L 302.2,292.4 L 288.5,303.4 L 277.6,316.0 L 263.9,331.7 L 243.4,347.3 L 222.9,363.0 L 216.1,378.7 L 212.0,402.2 L 209.3,425.7 L 206.5,449.3 L 195.6,469.7 L 184.7,480.6 L 175.1,486.9 L 168.3,480.6 L 164.2,472.8 L 160.1,460.2 L 154.6,449.3 L 150.5,433.6 L 141.0,417.9 L 138.2,402.2 L 127.3,378.7 L 120.5,363.0 L 113.6,339.5 L 113.6,323.8 L 110.9,316.0 L 110.9,300.3 L 106.8,284.6 L 100.0,276.8 L 93.1,272.1 L 83.6,268.9 L 72.6,264.2 L 61.7,261.1 L 54.9,253.2 L 50.8,245.4 L 52.2,237.6 L 65.8,229.7 L 79.5,234.4 L 93.1,228.1 L 79.5,206.2 L 93.1,182.7 L 79.5,167.0 L 86.3,151.3 L 83.6,135.6 L 86.3,119.9 L 106.8,104.3 L 120.5,93.3 L 124.6,83.9 L 123.2,68.2 L 130.0,57.2 L 131.4,46.2 L 125.9,33.7 Z" fill="#f5f0e8" stroke="#8b6914" stroke-width="1.2"/>
+  <text x="240" y="14" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e3a5f">Major Cities of India</text>
+  <text x="240" y="26" text-anchor="middle" font-size="8.5" fill="#374151">For Geography · SSC CGL · IBPS PO · RRB NTPC</text>
+  <circle cx="171.0" cy="165.4" r="3.5" fill="#dc2626" stroke="#fff" stroke-width="1"/>
+  <text x="176.0" y="157.4" font-size="7.5" fill="#dc2626" font-weight="600">Delhi</text>
+  <text x="176.0" y="166.4" font-size="7.5" fill="#dc2626" font-weight="600">(Capital)</text>
+  <circle cx="112.3" cy="314.4" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="117.3" y="306.4" font-size="7.5" fill="#1d4ed8" font-weight="600">Mumbai</text>
+  <circle cx="213.4" cy="408.5" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="218.4" y="420.5" font-size="7.5" fill="#1d4ed8" font-weight="600">Chennai</text>
+  <circle cx="324.0" cy="259.5" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="329.0" y="251.5" font-size="7.5" fill="#1d4ed8" font-weight="600">Kolkata</text>
+  <circle cx="176.5" cy="410.5" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="181.5" y="422.5" font-size="7.5" fill="#1d4ed8" font-weight="600">Bengaluru</text>
+  <circle cx="188.8" cy="341.1" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="193.8" y="353.1" font-size="7.5" fill="#1d4ed8" font-weight="600">Hyderabad</text>
+  <circle cx="108.2" cy="253.2" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="113.2" y="245.2" font-size="7.5" fill="#1d4ed8" font-weight="600">Ahmedabad</text>
+  <circle cx="125.9" cy="323.8" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="130.9" y="335.8" font-size="7.5" fill="#1d4ed8" font-weight="600">Pune</text>
+  <circle cx="151.9" cy="192.1" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="156.9" y="184.1" font-size="7.5" fill="#1d4ed8" font-weight="600">Jaipur</text>
+  <circle cx="221.6" cy="193.6" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="226.6" y="185.6" font-size="7.5" fill="#1d4ed8" font-weight="600">Lucknow</text>
+  <circle cx="278.9" cy="212.5" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="283.9" y="204.5" font-size="7.5" fill="#1d4ed8" font-weight="600">Patna</text>
+  <circle cx="173.7" cy="248.5" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="178.7" y="240.5" font-size="7.5" fill="#1d4ed8" font-weight="600">Bhopal</text>
+  <circle cx="138.2" cy="79.2" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="143.2" y="71.2" font-size="7.5" fill="#1d4ed8" font-weight="600">Srinagar</text>
+  <circle cx="369.1" cy="203.1" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="374.1" y="195.1" font-size="7.5" fill="#1d4ed8" font-weight="600">Guwahati</text>
+  <circle cx="288.5" cy="295.6" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="293.5" y="287.6" font-size="7.5" fill="#1d4ed8" font-weight="600">Bhubaneswar</text>
+  <circle cx="254.3" cy="336.4" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="259.3" y="348.4" font-size="7.5" fill="#1d4ed8" font-weight="600">Visakhapatnam</text>
+  <circle cx="166.9" cy="480.6" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="171.9" y="492.6" font-size="7.5" fill="#1d4ed8" font-weight="600">Trivandrum</text>
+  <circle cx="165.5" cy="132.5" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="170.5" y="124.5" font-size="7.5" fill="#1d4ed8" font-weight="600">Chandigarh</text>
+  <circle cx="231.1" cy="279.9" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="236.1" y="271.9" font-size="7.5" fill="#1d4ed8" font-weight="600">Raipur</text>
+  <circle cx="281.7" cy="247.0" r="3.5" fill="#1d4ed8" stroke="#fff" stroke-width="1"/>
+  <text x="286.7" y="239.0" font-size="7.5" fill="#1d4ed8" font-weight="600">Ranchi</text>
+  <circle cx="175.1" cy="486.9" r="3.5" fill="#7c3aed" stroke="#fff" stroke-width="1"/>
+  <text x="180.1" y="498.9" font-size="7.5" fill="#7c3aed" font-weight="600">Kanyakumari</text>
+  <!-- Compass -->
+  <circle cx="452" cy="502" r="14" fill="white" fill-opacity="0.85" stroke="#94a3b8" stroke-width="0.8"/>
+  <text x="452" y="497" text-anchor="middle" font-size="8" font-weight="bold" fill="#374151">N</text>
+  <polygon points="452,492 449,502 452,500 455,502" fill="#1e3a5f"/>
+  <polygon points="452,512 449,502 452,504 455,502" fill="#94a3b8"/>
+  <rect x="18" y="463" width="130" height="53" rx="3" fill="white" fill-opacity="0.85" stroke="#94a3b8" stroke-width="0.8"/>
+  <circle cx="26" cy="473" r="3.5" fill="#dc2626"/>
+  <text x="34" y="476" font-size="7.5" fill="#374151">National Capital</text>
+  <circle cx="26" cy="486" r="3.5" fill="#1d4ed8"/>
+  <text x="34" y="489" font-size="7.5" fill="#374151">Major City</text>
+  <circle cx="26" cy="499" r="3.5" fill="#7c3aed"/>
+  <text x="34" y="502" font-size="7.5" fill="#374151">Landmark</text>
+</svg>
+
 </div>
 
 ## Chapter 7 — Physiography of India
@@ -826,96 +1397,134 @@ flowchart TD
 </div>
 </div>
 
-<div class="part-divider">
+<div style="margin: 12pt 0; page-break-before: always; text-align: center;">
 
-### India — Physiographic Zones (Schematic Map)
+### India — Physiographic Zones
 
-<svg viewBox="0 0 520 600" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:520px;display:block;margin:0 auto;font-family:Georgia,serif;">
-  <rect width="520" height="600" fill="#f0f4ff" rx="10"/>
-  <text x="260" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a5f">Physiographic Divisions of India (N to S)</text>
-  <!-- Himalayas -->
-  <rect x="60" y="42" width="380" height="65" rx="8" fill="#c8b89a" stroke="#8b6914" stroke-width="1.5"/>
-  <text x="250" y="64" text-anchor="middle" font-size="12" font-weight="bold" fill="#3b1f00">THE HIMALAYAS</text>
-  <text x="250" y="80" text-anchor="middle" font-size="10" fill="#3b1f00">Himadri (Great) · Himachal (Middle) · Shiwaliks (Outer)</text>
-  <text x="250" y="96" text-anchor="middle" font-size="9" fill="#5c3200">K2 8611 m (PoK) · Everest 8849 m (Nepal) · youngest fold mountains</text>
-  <!-- Pass markers -->
-  <circle cx="105" cy="58" r="5" fill="#dc2626"/>
-  <text x="107" y="53" font-size="8" fill="#7f1d1d">Zoji La</text>
-  <circle cx="185" cy="58" r="5" fill="#dc2626"/>
-  <text x="187" y="53" font-size="8" fill="#7f1d1d">Rohtang</text>
-  <circle cx="285" cy="58" r="5" fill="#dc2626"/>
-  <text x="287" y="53" font-size="8" fill="#7f1d1d">Shipki La</text>
-  <circle cx="370" cy="58" r="5" fill="#dc2626"/>
-  <text x="372" y="53" font-size="8" fill="#7f1d1d">Nathu La</text>
-  <!-- Northern Plains -->
-  <rect x="60" y="117" width="380" height="68" rx="8" fill="#d4edda" stroke="#2d6a4f" stroke-width="1.5"/>
-  <text x="250" y="140" text-anchor="middle" font-size="12" font-weight="bold" fill="#1b4332">NORTHERN PLAINS</text>
-  <text x="250" y="157" text-anchor="middle" font-size="10" fill="#1b4332">Indo-Gangetic-Brahmaputra · world&#39;s most fertile alluvial plain</text>
-  <text x="250" y="173" text-anchor="middle" font-size="9" fill="#2d6a4f">Bhangar (old alluvium) · Khadar (new flood plain) · Bhaber · Terai</text>
-  <!-- River lines in plains -->
-  <line x1="105" y1="122" x2="105" y2="180" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <text x="86" y="152" font-size="8" fill="#1565c0">Indus</text>
-  <line x1="210" y1="122" x2="210" y2="180" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <text x="195" y="148" font-size="8" fill="#1565c0">Yamuna</text>
-  <line x1="270" y1="122" x2="270" y2="180" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <text x="274" y="148" font-size="8" fill="#1565c0">Ganga</text>
-  <line x1="395" y1="122" x2="395" y2="180" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <text x="397" y="148" font-size="8" fill="#1565c0">Brahmaputra</text>
-  <!-- Central Highlands -->
-  <rect x="60" y="196" width="240" height="58" rx="8" fill="#ffe0b2" stroke="#e65100" stroke-width="1.5"/>
-  <text x="180" y="218" text-anchor="middle" font-size="11" font-weight="bold" fill="#bf360c">CENTRAL HIGHLANDS</text>
-  <text x="180" y="234" text-anchor="middle" font-size="9" fill="#bf360c">Vindhya · Satpura · Aravalli ranges</text>
-  <text x="180" y="248" text-anchor="middle" font-size="9" fill="#bf360c">Barrier between N plains and Deccan</text>
-  <!-- Thar Desert -->
-  <rect x="310" y="196" width="130" height="58" rx="8" fill="#fff9c4" stroke="#f57f17" stroke-width="1.5"/>
-  <text x="375" y="218" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">THAR DESERT</text>
-  <text x="375" y="234" text-anchor="middle" font-size="9" fill="#e65100">Rajasthan · Gujarat</text>
-  <text x="375" y="248" text-anchor="middle" font-size="9" fill="#e65100">India&#39;s hot arid region</text>
-  <!-- Western Ghats strip -->
-  <rect x="44" y="264" width="30" height="185" rx="6" fill="#bbdefb" stroke="#1565c0" stroke-width="1.5"/>
-  <text x="59" y="340" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#0d47a1" transform="rotate(-90,59,355)">W. Ghats (Sahyadri)</text>
-  <!-- Deccan Plateau -->
-  <rect x="80" y="264" width="330" height="120" rx="8" fill="#ffe4bc" stroke="#a0522d" stroke-width="1.5"/>
-  <text x="245" y="288" text-anchor="middle" font-size="12" font-weight="bold" fill="#5d1f00">DECCAN PLATEAU</text>
-  <text x="245" y="305" text-anchor="middle" font-size="10" fill="#5d1f00">1500 million years old · avg 600–900 m</text>
-  <text x="245" y="320" text-anchor="middle" font-size="9" fill="#7b3f00">Deccan Trap (NW basalt) · Anamudi 2695 m highest</text>
-  <text x="245" y="336" text-anchor="middle" font-size="9" fill="#7b3f00">E-flowing: Godavari · Krishna · Cauvery → Bay of Bengal</text>
-  <text x="245" y="352" text-anchor="middle" font-size="9" fill="#7b3f00">W-flowing: Narmada · Tapi → Arabian Sea (in rift valleys)</text>
-  <!-- Eastern Ghats strip -->
-  <rect x="416" y="264" width="30" height="185" rx="6" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
-  <text x="431" y="340" text-anchor="middle" font-size="8.5" font-weight="bold" fill="#1b5e20" transform="rotate(90,431,355)">E. Ghats (Discontinuous)</text>
-  <!-- Coastal Plains row -->
-  <rect x="44" y="394" width="66" height="55" rx="6" fill="#b2ebf2" stroke="#00838f" stroke-width="1.5"/>
-  <text x="77" y="412" text-anchor="middle" font-size="8" font-weight="bold" fill="#004d40">Malabar Coast</text>
-  <text x="77" y="426" text-anchor="middle" font-size="7.5" fill="#004d40">Lagoons</text>
-  <text x="77" y="439" text-anchor="middle" font-size="7.5" fill="#004d40">Backwaters</text>
-  <rect x="376" y="394" width="70" height="55" rx="6" fill="#b2dfdb" stroke="#00695c" stroke-width="1.5"/>
-  <text x="411" y="412" text-anchor="middle" font-size="8" font-weight="bold" fill="#004d40">Coromandel</text>
-  <text x="411" y="426" text-anchor="middle" font-size="7.5" fill="#004d40">Smooth coast</text>
-  <text x="411" y="439" text-anchor="middle" font-size="7.5" fill="#004d40">Bay of Bengal</text>
-  <!-- South tip -->
-  <polygon points="180,460 320,460 250,530" fill="#e0f7fa" stroke="#0077b6" stroke-width="1.5"/>
-  <text x="250" y="492" text-anchor="middle" font-size="9" fill="#0077b6">Kanyakumari</text>
-  <text x="250" y="507" text-anchor="middle" font-size="8" fill="#0077b6">3 seas converge</text>
-  <!-- Sea labels -->
-  <text x="14" y="370" font-size="9" fill="#1565c0" transform="rotate(-90,14,380)">Arabian Sea</text>
-  <text x="504" y="370" font-size="9" fill="#1565c0" transform="rotate(90,504,380)">Bay of Bengal</text>
-  <!-- Compass -->
-  <g transform="translate(470,55)">
-    <text x="0" y="-14" text-anchor="middle" font-size="10" fill="#374151">N</text>
-    <text x="0" y="22" text-anchor="middle" font-size="10" fill="#374151">S</text>
-    <text x="-16" y="6" text-anchor="middle" font-size="10" fill="#374151">W</text>
-    <text x="16" y="6" text-anchor="middle" font-size="10" fill="#374151">E</text>
-    <line x1="0" y1="-10" x2="0" y2="16" stroke="#374151" stroke-width="1"/>
-    <line x1="-12" y1="3" x2="12" y2="3" stroke="#374151" stroke-width="1"/>
-  </g>
-  <!-- Legend -->
-  <rect x="60" y="540" width="155" height="50" rx="5" fill="white" stroke="#9ca3af" stroke-width="1"/>
-  <text x="70" y="555" font-size="9" font-weight="bold" fill="#374151">Key</text>
-  <circle cx="72" cy="566" r="4" fill="#dc2626"/>
-  <text x="80" y="569" font-size="8" fill="#374151">Mountain Pass</text>
-  <line x1="70" y1="579" x2="84" y2="579" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <text x="88" y="582" font-size="8" fill="#374151">River (schematic)</text>
+<svg viewBox="0 0 480 530" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:480px;display:block;margin:8pt auto;font-family:Arial,sans-serif;">
+<defs>
+  <clipPath id="ind-phys"><path d="M 125.9,33.7 L 145.1,38.4 L 165.5,52.5 L 179.2,61.9 L 186.0,72.9 L 195.6,88.6 L 209.3,107.4 L 222.9,124.6 L 233.9,143.5 L 243.4,151.3 L 257.1,159.1 L 270.7,167.0 L 288.5,174.8 L 304.9,178.0 L 318.6,182.7 L 332.2,185.8 L 345.9,188.9 L 340.4,193.6 L 345.9,201.5 L 352.7,206.2 L 343.1,214.0 L 352.7,218.7 L 366.4,221.9 L 375.9,218.7 L 386.9,206.2 L 400.5,190.5 L 421.0,178.0 L 427.8,167.0 L 430.6,154.4 L 434.7,151.3 L 448.3,162.3 L 448.3,178.0 L 441.5,193.6 L 414.2,214.0 L 393.7,229.7 L 386.9,237.6 L 384.1,250.1 L 384.1,256.4 L 380.0,265.8 L 373.2,273.6 L 366.4,268.9 L 362.3,261.1 L 356.8,256.4 L 348.6,253.2 L 332.2,268.9 L 322.7,276.8 L 309.0,284.6 L 302.2,292.4 L 288.5,303.4 L 277.6,316.0 L 263.9,331.7 L 243.4,347.3 L 222.9,363.0 L 216.1,378.7 L 212.0,402.2 L 209.3,425.7 L 206.5,449.3 L 195.6,469.7 L 184.7,480.6 L 175.1,486.9 L 168.3,480.6 L 164.2,472.8 L 160.1,460.2 L 154.6,449.3 L 150.5,433.6 L 141.0,417.9 L 138.2,402.2 L 127.3,378.7 L 120.5,363.0 L 113.6,339.5 L 113.6,323.8 L 110.9,316.0 L 110.9,300.3 L 106.8,284.6 L 100.0,276.8 L 93.1,272.1 L 83.6,268.9 L 72.6,264.2 L 61.7,261.1 L 54.9,253.2 L 50.8,245.4 L 52.2,237.6 L 65.8,229.7 L 79.5,234.4 L 93.1,228.1 L 79.5,206.2 L 93.1,182.7 L 79.5,167.0 L 86.3,151.3 L 83.6,135.6 L 86.3,119.9 L 106.8,104.3 L 124.6,83.9 L 123.2,68.2 L 130.0,57.2 L 131.4,46.2 L 125.9,33.7 Z"/></clipPath>
+</defs>
+
+<!-- Ocean -->
+<rect width="480" height="530" fill="#cfe2f3" rx="8"/>
+
+<!-- Zone bands clipped to India -->
+<rect x="0" y="0" width="480" height="160" fill="#d7a98f" clip-path="url(#ind-phys)"/>
+<rect x="0" y="160" width="480" height="70" fill="#fff9c4" clip-path="url(#ind-phys)"/>
+<rect x="0" y="230" width="480" height="60" fill="#c8e6c9" clip-path="url(#ind-phys)"/>
+<rect x="0" y="290" width="480" height="130" fill="#ffe0b2" clip-path="url(#ind-phys)"/>
+<rect x="0" y="420" width="480" height="80" fill="#f8bbd0" clip-path="url(#ind-phys)"/>
+
+<!-- Thar Desert overlay (NW) -->
+<rect x="55" y="155" width="85" height="105" fill="#ffcc80" opacity="0.7" clip-path="url(#ind-phys)"/>
+
+<!-- Western Ghats strip (along W coast, x=130-150) -->
+<rect x="130" y="290" width="22" height="170" fill="#a5d6a7" opacity="0.9" clip-path="url(#ind-phys)"/>
+
+<!-- Eastern Ghats strip (along E coast, x=235-258) -->
+<rect x="235" y="280" width="23" height="135" fill="#80cbc4" opacity="0.7" clip-path="url(#ind-phys)"/>
+
+<!-- India outline -->
+<path d="M 125.9,33.7 L 145.1,38.4 L 165.5,52.5 L 179.2,61.9 L 186.0,72.9 L 195.6,88.6 L 209.3,107.4 L 222.9,124.6 L 233.9,143.5 L 243.4,151.3 L 257.1,159.1 L 270.7,167.0 L 288.5,174.8 L 304.9,178.0 L 318.6,182.7 L 332.2,185.8 L 345.9,188.9 L 340.4,193.6 L 345.9,201.5 L 352.7,206.2 L 343.1,214.0 L 352.7,218.7 L 366.4,221.9 L 375.9,218.7 L 386.9,206.2 L 400.5,190.5 L 421.0,178.0 L 427.8,167.0 L 430.6,154.4 L 434.7,151.3 L 448.3,162.3 L 448.3,178.0 L 441.5,193.6 L 414.2,214.0 L 393.7,229.7 L 386.9,237.6 L 384.1,250.1 L 384.1,256.4 L 380.0,265.8 L 373.2,273.6 L 366.4,268.9 L 362.3,261.1 L 356.8,256.4 L 348.6,253.2 L 332.2,268.9 L 322.7,276.8 L 309.0,284.6 L 302.2,292.4 L 288.5,303.4 L 277.6,316.0 L 263.9,331.7 L 243.4,347.3 L 222.9,363.0 L 216.1,378.7 L 212.0,402.2 L 209.3,425.7 L 206.5,449.3 L 195.6,469.7 L 184.7,480.6 L 175.1,486.9 L 168.3,480.6 L 164.2,472.8 L 160.1,460.2 L 154.6,449.3 L 150.5,433.6 L 141.0,417.9 L 138.2,402.2 L 127.3,378.7 L 120.5,363.0 L 113.6,339.5 L 113.6,323.8 L 110.9,316.0 L 110.9,300.3 L 106.8,284.6 L 100.0,276.8 L 93.1,272.1 L 83.6,268.9 L 72.6,264.2 L 61.7,261.1 L 54.9,253.2 L 50.8,245.4 L 52.2,237.6 L 65.8,229.7 L 79.5,234.4 L 93.1,228.1 L 79.5,206.2 L 93.1,182.7 L 79.5,167.0 L 86.3,151.3 L 83.6,135.6 L 86.3,119.9 L 106.8,104.3 L 124.6,83.9 L 123.2,68.2 L 130.0,57.2 L 131.4,46.2 L 125.9,33.7 Z" fill="none" stroke="#37474f" stroke-width="2"/>
+
+<!-- Title -->
+<rect x="0" y="0" width="480" height="22" fill="#37474f" opacity="0.9"/>
+<text x="240" y="15" text-anchor="middle" font-size="12" font-weight="bold" fill="white">India — Physiographic Zones</text>
+
+<!-- Zone labels -->
+<text x="245" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#5d4037">HIMALAYAS</text>
+<text x="245" y="120" text-anchor="middle" font-size="8" fill="#5d4037">(Himadri · Himachal · Shiwaliks)</text>
+
+<text x="240" y="195" text-anchor="middle" font-size="11" font-weight="bold" fill="#827717">NORTHERN PLAINS</text>
+<text x="240" y="208" text-anchor="middle" font-size="8" fill="#827717">(Indo-Gangetic-Brahmaputra)</text>
+
+<text x="220" y="262" text-anchor="middle" font-size="10" font-weight="bold" fill="#1b5e20">CENTRAL HIGHLANDS</text>
+<text x="220" y="275" text-anchor="middle" font-size="8" fill="#1b5e20">(Vindhya · Aravalli ranges)</text>
+
+<text x="190" y="355" font-size="12" font-weight="bold" fill="#bf360c">DECCAN</text>
+<text x="190" y="370" font-size="12" font-weight="bold" fill="#bf360c">PLATEAU</text>
+<text x="190" y="384" font-size="8" fill="#bf360c">(basalt + crystalline)</text>
+
+<text x="180" y="448" font-size="11" font-weight="bold" fill="#880e4f">DEEP SOUTH</text>
+<text x="180" y="461" font-size="8" fill="#880e4f">(Kerala · Tamil Nadu)</text>
+
+<!-- Thar Desert label -->
+<text x="95" y="205" text-anchor="middle" font-size="10" font-weight="bold" fill="#e65100">THAR</text>
+<text x="95" y="218" text-anchor="middle" font-size="9" fill="#e65100">DESERT</text>
+
+<!-- Western Ghats label — to the LEFT in Arabian Sea, leader line to strip -->
+<text x="60" y="385" font-size="9" font-weight="bold" fill="#2e7d32">Western</text>
+<text x="60" y="397" font-size="9" font-weight="bold" fill="#2e7d32">Ghats</text>
+<line x1="95" y1="385" x2="128" y2="380" stroke="#2e7d32" stroke-width="0.7"/>
+
+<!-- Eastern Ghats label — to the RIGHT in Bay of Bengal, leader line to strip -->
+<text x="305" y="340" font-size="9" font-weight="bold" fill="#00695c">Eastern</text>
+<text x="305" y="352" font-size="9" font-weight="bold" fill="#00695c">Ghats</text>
+<line x1="300" y1="345" x2="262" y2="345" stroke="#00695c" stroke-width="0.7"/>
+
+<!-- Cities (correct positions) -->
+<!-- Srinagar -->
+<circle cx="138" cy="79" r="3" fill="#222" stroke="white"/>
+<line x1="135" y1="79" x2="80" y2="60" stroke="#222" stroke-width="0.6"/>
+<text x="40" y="58" font-size="8" font-weight="bold" fill="#222">Srinagar</text>
+<text x="40" y="68" font-size="7" fill="#222">(J&amp;K)</text>
+
+<!-- Delhi -->
+<circle cx="171" cy="165" r="3" fill="#222" stroke="white"/>
+<line x1="168" y1="165" x2="100" y2="148" stroke="#222" stroke-width="0.6"/>
+<text x="55" y="146" font-size="8" font-weight="bold" fill="#222">Delhi</text>
+
+<!-- Patna -->
+<circle cx="280" cy="213" r="3" fill="#222" stroke="white"/>
+<line x1="283" y1="212" x2="335" y2="195" stroke="#222" stroke-width="0.6"/>
+<text x="338" y="193" font-size="8" font-weight="bold" fill="#222">Patna</text>
+
+<!-- Kolkata (correct position, east coast Bengal area) -->
+<circle cx="324" cy="259" r="3" fill="#222" stroke="white"/>
+<line x1="327" y1="259" x2="395" y2="262" stroke="#222" stroke-width="0.6"/>
+<text x="398" y="262" font-size="8" font-weight="bold" fill="#222">Kolkata</text>
+
+<!-- Mumbai (W coast) -->
+<circle cx="112" cy="314" r="3" fill="#222" stroke="white"/>
+<line x1="109" y1="315" x2="55" y2="320" stroke="#222" stroke-width="0.6"/>
+<text x="20" y="318" font-size="8" font-weight="bold" fill="#222">Mumbai</text>
+
+<!-- Hyderabad — correct position (central Deccan, ~250, 350) -->
+<circle cx="240" cy="355" r="3" fill="#222" stroke="white"/>
+<line x1="243" y1="355" x2="295" y2="385" stroke="#222" stroke-width="0.6"/>
+<text x="298" y="388" font-size="8" font-weight="bold" fill="#222">Hyderabad</text>
+
+<!-- Chennai (E coast Tamil Nadu) -->
+<circle cx="220" cy="430" r="3" fill="#222" stroke="white"/>
+<line x1="223" y1="430" x2="295" y2="430" stroke="#222" stroke-width="0.6"/>
+<text x="298" y="433" font-size="8" font-weight="bold" fill="#222">Chennai</text>
+
+<!-- Kanyakumari (very tip) -->
+<circle cx="175" cy="487" r="3" fill="#222" stroke="white"/>
+<line x1="178" y1="487" x2="270" y2="495" stroke="#222" stroke-width="0.6"/>
+<text x="273" y="498" font-size="8" font-weight="bold" fill="#222">Kanyakumari</text>
+
+<!-- Legend -->
+<rect x="345" y="40" width="130" height="100" rx="4" fill="white" opacity="0.93" stroke="#94a3b8"/>
+<text x="410" y="54" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">Legend</text>
+<rect x="352" y="60" width="14" height="10" fill="#d7a98f" stroke="#5d4037" stroke-width="0.6"/>
+<text x="370" y="69" font-size="8" fill="#333">Himalayas</text>
+<rect x="352" y="73" width="14" height="10" fill="#fff9c4" stroke="#827717" stroke-width="0.6"/>
+<text x="370" y="82" font-size="8" fill="#333">N. Plains</text>
+<rect x="352" y="86" width="14" height="10" fill="#c8e6c9" stroke="#1b5e20" stroke-width="0.6"/>
+<text x="370" y="95" font-size="8" fill="#333">C. Highlands</text>
+<rect x="352" y="99" width="14" height="10" fill="#ffe0b2" stroke="#bf360c" stroke-width="0.6"/>
+<text x="370" y="108" font-size="8" fill="#333">Deccan</text>
+<rect x="352" y="112" width="14" height="10" fill="#ffcc80" stroke="#e65100" stroke-width="0.6"/>
+<text x="370" y="121" font-size="8" fill="#333">Thar Desert</text>
+<rect x="352" y="125" width="14" height="10" fill="#f8bbd0" stroke="#880e4f" stroke-width="0.6"/>
+<text x="370" y="134" font-size="8" fill="#333">Deep South</text>
+
+<!-- Compass -->
+<circle cx="455" cy="170" r="13" fill="white" opacity="0.85" stroke="#94a3b8"/>
+<text x="455" y="166" text-anchor="middle" font-size="8" font-weight="bold" fill="#374151">N</text>
+<polygon points="455,160 452,170 455,168 458,170" fill="#1e3a5f"/>
 </svg>
 
 </div>
@@ -1030,7 +1639,7 @@ flowchart TD
 </div>
 </div>
 
-<div class="part-divider">
+<div style="margin: 12pt 0; page-break-before: always; text-align: center;">
 
 ### India — River Systems (Himalayan vs Peninsular)
 
@@ -1146,6 +1755,67 @@ flowchart TD
 
 </div>
 
+### India — Rivers: Geographic Position
+
+<div style="margin: 8pt 0; text-align: center;">
+
+<svg viewBox="0 0 480 530" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:480px;display:block;margin:10pt auto;font-family:Georgia,serif;">
+  <rect width="480" height="530" fill="#e8f4fd" rx="8"/>
+  <rect width="480" height="530" fill="#c8e6f5" rx="8"/>
+  <path d="M 125.9,33.7 L 145.1,38.4 L 165.5,52.5 L 179.2,61.9 L 186.0,72.9 L 195.6,88.6 L 209.3,107.4 L 222.9,124.6 L 233.9,143.5 L 243.4,151.3 L 257.1,159.1 L 270.7,167.0 L 288.5,174.8 L 304.9,178.0 L 318.6,182.7 L 332.2,185.8 L 345.9,188.9 L 340.4,193.6 L 345.9,201.5 L 352.7,206.2 L 343.1,214.0 L 352.7,218.7 L 366.4,221.9 L 375.9,218.7 L 386.9,206.2 L 400.5,190.5 L 421.0,178.0 L 427.8,167.0 L 430.6,154.4 L 434.7,151.3 L 448.3,162.3 L 448.3,178.0 L 441.5,193.6 L 414.2,214.0 L 393.7,229.7 L 386.9,237.6 L 384.1,250.1 L 384.1,256.4 L 380.0,265.8 L 373.2,273.6 L 366.4,268.9 L 362.3,261.1 L 356.8,256.4 L 348.6,253.2 L 332.2,268.9 L 322.7,276.8 L 309.0,284.6 L 302.2,292.4 L 288.5,303.4 L 277.6,316.0 L 263.9,331.7 L 243.4,347.3 L 222.9,363.0 L 216.1,378.7 L 212.0,402.2 L 209.3,425.7 L 206.5,449.3 L 195.6,469.7 L 184.7,480.6 L 175.1,486.9 L 168.3,480.6 L 164.2,472.8 L 160.1,460.2 L 154.6,449.3 L 150.5,433.6 L 141.0,417.9 L 138.2,402.2 L 127.3,378.7 L 120.5,363.0 L 113.6,339.5 L 113.6,323.8 L 110.9,316.0 L 110.9,300.3 L 106.8,284.6 L 100.0,276.8 L 93.1,272.1 L 83.6,268.9 L 72.6,264.2 L 61.7,261.1 L 54.9,253.2 L 50.8,245.4 L 52.2,237.6 L 65.8,229.7 L 79.5,234.4 L 93.1,228.1 L 79.5,206.2 L 93.1,182.7 L 79.5,167.0 L 86.3,151.3 L 83.6,135.6 L 86.3,119.9 L 106.8,104.3 L 120.5,93.3 L 124.6,83.9 L 123.2,68.2 L 130.0,57.2 L 131.4,46.2 L 125.9,33.7 Z" fill="#f5f0e8" stroke="#8b6914" stroke-width="1.2"/>
+  <text x="240" y="14" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e3a5f">Rivers of India</text>
+  <text x="240" y="26" text-anchor="middle" font-size="8.5" fill="#374151">Himalayan (perennial) · Peninsular (seasonal) · For SSC · RRB · Banks</text>
+  <path d="M 186.0,141.9 L 184.7,145.0 L 198.3,159.1 L 213.4,182.7 L 222.9,190.5 L 236.6,198.3 L 243.4,214.0 L 250.2,217.2 L 263.9,214.0 L 278.9,212.5 L 298.1,217.2 L 311.7,225.0 L 318.6,240.7 L 325.4,253.2 L 329.5,261.1" fill="none" stroke="#1565c0" stroke-width="2.0" stroke-linecap="round"/>
+  <text x="257.1" y="229.7" font-size="7.5" font-weight="bold" fill="#1565c0">Ganga</text>
+  <path d="M 176.5,132.5 L 179.2,143.5 L 181.9,159.1 L 171.0,165.4 L 176.5,178.0 L 181.9,187.4 L 213.4,206.2 L 233.9,214.0" fill="none" stroke="#2563eb" stroke-width="2.0" stroke-linecap="round"/>
+  <text x="172.4" y="174.8" font-size="7.5" font-weight="bold" fill="#2563eb">Yamuna</text>
+  <path d="M 421.0,167.0 L 414.2,178.0 L 393.7,187.4 L 380.0,198.3 L 369.1,203.1 L 352.7,209.3 L 343.1,214.0 L 339.0,229.7 L 345.9,237.6 L 352.7,245.4" fill="none" stroke="#0284c7" stroke-width="2.0" stroke-linecap="round"/>
+  <text x="393.7" y="201.5" font-size="7.5" font-weight="bold" fill="#0284c7">Brahmaputra</text>
+  <path d="M 124.6,300.3 L 134.1,301.9 L 154.6,308.1 L 172.4,316.0 L 195.6,323.8 L 216.1,334.8 L 233.9,350.5 L 236.6,355.2" fill="none" stroke="#065f46" stroke-width="2.0" stroke-linecap="round"/>
+  <text x="181.9" y="323.8" font-size="7.5" font-weight="bold" fill="#065f46">Godavari</text>
+  <path d="M 127.3,333.2 L 147.8,339.5 L 161.4,350.5 L 181.9,355.2 L 202.4,359.9 L 217.5,363.0 L 222.9,366.2" fill="none" stroke="#166534" stroke-width="2.0" stroke-linecap="round"/>
+  <text x="175.1" y="355.2" font-size="7.5" font-weight="bold" fill="#166534">Krishna</text>
+  <path d="M 151.9,421.0 L 161.4,427.3 L 171.0,433.6 L 184.7,441.4 L 197.0,443.0 L 206.5,444.6" fill="none" stroke="#14532d" stroke-width="2.0" stroke-linecap="round"/>
+  <text x="175.1" y="433.6" font-size="7.5" font-weight="bold" fill="#14532d">Cauvery</text>
+  <path d="M 229.8,257.9 L 209.3,261.1 L 195.6,264.2 L 175.1,268.9 L 154.6,276.8 L 138.2,276.8 L 124.6,272.1 L 116.4,281.5 L 108.2,284.6" fill="none" stroke="#7c3aed" stroke-width="2.0" stroke-linecap="round"/>
+  <text x="188.8" y="268.9" font-size="7.5" font-weight="bold" fill="#7c3aed">Narmada</text>
+  <circle cx="186.0" cy="141.9" r="3" fill="#0369a1" stroke="#fff" stroke-width="1"/>
+  <text x="191.0" y="137.9" font-size="7" fill="#0369a1" font-weight="600">Gangotri</text>
+  <text x="191.0" y="146.9" font-size="7" fill="#0369a1" font-weight="600">(Ganga source)</text>
+  <circle cx="329.5" cy="261.1" r="3" fill="#0369a1" stroke="#fff" stroke-width="1"/>
+  <text x="334.5" y="257.1" font-size="7" fill="#0369a1" font-weight="600">Ganga</text>
+  <text x="334.5" y="266.1" font-size="7" fill="#0369a1" font-weight="600">delta</text>
+  <circle cx="421.0" cy="167.0" r="3" fill="#0369a1" stroke="#fff" stroke-width="1"/>
+  <text x="426.0" y="163.0" font-size="7" fill="#0369a1" font-weight="600">Brahmaputra</text>
+  <text x="426.0" y="172.0" font-size="7" fill="#0369a1" font-weight="600">(enters India)</text>
+  <circle cx="124.6" cy="300.3" r="3" fill="#0369a1" stroke="#fff" stroke-width="1"/>
+  <text x="129.6" y="296.3" font-size="7" fill="#0369a1" font-weight="600">Trimbak</text>
+  <text x="129.6" y="305.3" font-size="7" fill="#0369a1" font-weight="600">(Godavari src)</text>
+  <circle cx="108.2" cy="284.6" r="3" fill="#0369a1" stroke="#fff" stroke-width="1"/>
+  <text x="113.2" y="280.6" font-size="7" fill="#0369a1" font-weight="600">Narmada</text>
+  <text x="113.2" y="289.6" font-size="7" fill="#0369a1" font-weight="600">mouth</text>
+  <!-- Compass -->
+  <circle cx="452" cy="502" r="14" fill="white" fill-opacity="0.85" stroke="#94a3b8" stroke-width="0.8"/>
+  <text x="452" y="497" text-anchor="middle" font-size="8" font-weight="bold" fill="#374151">N</text>
+  <polygon points="452,492 449,502 452,500 455,502" fill="#1e3a5f"/>
+  <polygon points="452,512 449,502 452,504 455,502" fill="#94a3b8"/>
+  <rect x="18" y="424" width="130" height="92" rx="3" fill="white" fill-opacity="0.85" stroke="#94a3b8" stroke-width="0.8"/>
+  <line x1="22" y1="434" x2="32" y2="434" stroke="#1565c0" stroke-width="2.5"/>
+  <text x="36" y="437" font-size="7.5" fill="#374151">Ganga system</text>
+  <line x1="22" y1="447" x2="32" y2="447" stroke="#0284c7" stroke-width="2.5"/>
+  <text x="36" y="450" font-size="7.5" fill="#374151">Brahmaputra</text>
+  <line x1="22" y1="460" x2="32" y2="460" stroke="#065f46" stroke-width="2.5"/>
+  <text x="36" y="463" font-size="7.5" fill="#374151">Godavari</text>
+  <line x1="22" y1="473" x2="32" y2="473" stroke="#166534" stroke-width="2.5"/>
+  <text x="36" y="476" font-size="7.5" fill="#374151">Krishna</text>
+  <line x1="22" y1="486" x2="32" y2="486" stroke="#14532d" stroke-width="2.5"/>
+  <text x="36" y="489" font-size="7.5" fill="#374151">Cauvery</text>
+  <line x1="22" y1="499" x2="32" y2="499" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="36" y="502" font-size="7.5" fill="#374151">Narmada</text>
+</svg>
+
+</div>
+
 ## Chapter 9 — Indian Climate + Monsoon
 
 ### 9.1 4 seasons
@@ -1254,7 +1924,7 @@ Khadar = new alluvium (lighter, sandy, near river banks) · Bhangar = old alluvi
 
 ---
 
-# Part E — India: Human + Economic
+# Part E — India: Human + Economic {#part-e}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1491,7 +2161,7 @@ flowchart TD
 
 ---
 
-# Part F — World
+# Part F — World {#part-f}
 
 <div class="chapter-summary">
 <div class="mermaid">
@@ -1662,14 +2332,12 @@ Islands, Lakshadweep, Dadra-Nagar-Haveli+Daman-Diu, Ladakh (5 without).
 - Non-fossil target — **500 GW by 2030**; **Net Zero by 2070**.
 - Golden Quadrilateral — Delhi-Mumbai-Chennai-Kolkata.
 
-*Parts C (oceans in detail), world countries' capitals, world cities +
-resources will be added in subsequent revisions of this file.*
 
 ---
 
 \newpage
 
-# PART X — STATES OF INDIA — COMPLETE TABLE
+# PART X — STATES OF INDIA — COMPLETE TABLE {#part-x}
 
 | State | Capital | Formed | Lok Sabha seats | Rajya Sabha | Notable |
 |---|---|---|---|---|---|
@@ -1909,7 +2577,7 @@ resources will be added in subsequent revisions of this file.*
 
 \newpage
 
-# PART AA — WORLD GEOGRAPHY (high-yield)
+# PART AA — WORLD GEOGRAPHY (high-yield) {#part-aa}
 
 ## Continents — quick facts
 
@@ -2103,7 +2771,7 @@ resources will be added in subsequent revisions of this file.*
 
 ---
 
-# PART AC — GEOGRAPHY TRAP-RECOGNITION CARDS
+# PART AC — GEOGRAPHY TRAP-RECOGNITION CARDS {#part-ac}
 
 | Trap | Where | How to spot |
 |---|---|---|
@@ -2124,7 +2792,7 @@ resources will be added in subsequent revisions of this file.*
 
 ---
 
-# PART AD — GEOGRAPHY MINI-MOCK (25 Questions · 25 Minutes)
+# PART AD — GEOGRAPHY MINI-MOCK (25 Questions · 25 Minutes) {#part-ad}
 
 Set a timer. No looking back. Mark your answers and check the key at the end.
 
@@ -2256,7 +2924,7 @@ Set a timer. No looking back. Mark your answers and check the key at the end.
 
 \newpage
 
-# PART AE — INDIA "LONGEST / LARGEST / HIGHEST" MASTER LIST
+# PART AE — INDIA "LONGEST / LARGEST / HIGHEST" MASTER LIST {#part-ae}
 
 > Examiners ask one of these every paper. Memorise this entire list cold.
 
@@ -2425,7 +3093,7 @@ Set a timer. No looking back. Mark your answers and check the key at the end.
 
 \newpage
 
-# PART AF — WORLD "LONGEST / LARGEST" QUICK-RECALL
+# PART AF — WORLD "LONGEST / LARGEST" QUICK-RECALL {#part-af}
 
 | Record | Holder |
 |---|---|
