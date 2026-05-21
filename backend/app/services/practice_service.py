@@ -69,7 +69,9 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
                QuizQuestion.id.not_in(attempted_today))
         .order_by(func.random()).limit(limit)
     )
-    return [_serialize_quiz_question(q) for q in (await db.execute(stmt)).scalars().all()]
+    raw = (await db.execute(stmt)).scalars().all()
+    expanded = await _expand_passage_groups(db, list(raw))
+    return [_serialize_quiz_question(q) for q in expanded]
 
 
 async def get_weak_topic_quiz(db: AsyncSession, user_id: uuid.UUID, limit: int = 10) -> dict:
@@ -179,8 +181,9 @@ async def get_weak_topic_quiz(db: AsyncSession, user_id: uuid.UUID, limit: int =
     else:
         message = "Practice mode — keep answering to help us learn your strengths and weaknesses."
 
+    final_qs = await _expand_passage_groups(db, unique_qs[:limit])
     return {
-        "questions": [_serialize_quiz_question(q) for q in unique_qs[:limit]],
+        "questions": [_serialize_quiz_question(q) for q in final_qs],
         "weak_topics": weak_topic_info,
         "suggested_count": suggested_count,
         "total_available": await _count_weak_topic_questions(db, weak_topics) if weak_topics else 0,
@@ -751,6 +754,45 @@ async def _update_mastery(db: AsyncSession, user_id: uuid.UUID, subject: str, to
     db.add(mastery)
 
 
+async def _expand_passage_groups(db: AsyncSession, questions: list) -> list:
+    """For any question that belongs to a passage group (passage_id set),
+    fetch all sibling questions from that passage and insert them as a
+    contiguous block right after the first occurrence of that passage_id.
+    Deduplicates so siblings already in the list aren't repeated."""
+    passage_ids = [q.passage_id for q in questions if q.passage_id]
+    if not passage_ids:
+        return questions
+
+    unique_pids = list(dict.fromkeys(passage_ids))  # preserve order, dedupe
+
+    # Fetch all siblings in one round-trip
+    siblings_by_pid: dict[str, list] = {}
+    for pid in unique_pids:
+        rows = (await db.execute(
+            select(QuizQuestion).where(QuizQuestion.passage_id == pid)
+        )).scalars().all()
+        siblings_by_pid[pid] = rows
+
+    seen_ids: set = set()
+    result: list = []
+    inserted_pids: set = set()
+
+    for q in questions:
+        if q.id in seen_ids:
+            continue
+        seen_ids.add(q.id)
+        result.append(q)
+
+        if q.passage_id and q.passage_id not in inserted_pids:
+            inserted_pids.add(q.passage_id)
+            for sibling in siblings_by_pid.get(q.passage_id, []):
+                if sibling.id not in seen_ids:
+                    seen_ids.add(sibling.id)
+                    result.append(sibling)
+
+    return result
+
+
 async def _count_weak_topic_questions(db, weak_topics) -> int:
     total = 0
     for wt in weak_topics:
@@ -772,6 +814,7 @@ def _serialize_quiz_question(q: QuizQuestion) -> dict:
         "id": str(q.id), "question_text": q.question_text, "image_url": q.image_url,
         "diagram_svg": q.diagram_svg, "explanation_svg": q.explanation_svg,
         "subject": q.subject, "topic": q.topic, "topic_code": q.topic_code,
+        "passage_id": q.passage_id,
         "difficulty": q.difficulty, "explanation": q.explanation,
         "options": [{"option_text": o.get("option_text"), "is_correct": o.get("is_correct")} for o in q.options]
     }

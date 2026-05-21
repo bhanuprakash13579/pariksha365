@@ -111,6 +111,7 @@ async def _self_heal_schema(db: AsyncSession) -> None:
         # TestSeries real-exam timing snapshot (this release).
         "ALTER TABLE test_series ADD COLUMN IF NOT EXISTS total_duration_minutes INTEGER;",
         "ALTER TABLE test_series ADD COLUMN IF NOT EXISTS has_sectional_timing BOOLEAN NOT NULL DEFAULT FALSE;",
+        "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS passage_id VARCHAR;",
     ]
     for stmt in statements:
         try:
@@ -757,6 +758,7 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
                 valid_until=valid_until,
                 is_published=bool(q_doc.get("is_published", True)),
                 topic_code=_TOPIC_CODE_MAP.get(_raw_tc, _raw_tc) or None,
+                passage_id=q_doc.get("passage_id"),
                 options=options,
             ))
             totals["questions_loaded"] += 1

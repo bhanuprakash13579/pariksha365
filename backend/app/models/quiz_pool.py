@@ -24,6 +24,7 @@ class QuizQuestion(Base):
     subject = Column(String, index=True, nullable=False)  # e.g., "Polity", "Reasoning"
     topic = Column(String, index=True, nullable=True)     # e.g., "Fundamental Rights", "Syllogism"
     topic_code = Column(String, index=True, nullable=True)  # e.g., "POL_FR" — deterministic matching key
+    passage_id = Column(String, index=True, nullable=True)  # groups RC/DI questions sharing one passage
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     options = Column(JSON, nullable=False, default=list)
 
