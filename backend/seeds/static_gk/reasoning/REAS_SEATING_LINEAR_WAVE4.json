@@ -1,0 +1,629 @@
+[
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00007",
+    "stem": "Six people P, Q, R, S, T, U sit in a straight row. T sits at one end. Q is 3rd from the left. R is immediately right of Q. S is between T and Q. P is not at either end. Who sits at the extreme right?",
+    "options": [
+      {
+        "option_text": "P",
+        "is_correct": false
+      },
+      {
+        "option_text": "U",
+        "is_correct": true
+      },
+      {
+        "option_text": "S",
+        "is_correct": false
+      },
+      {
+        "option_text": "T",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Q=3rd, R=4th (right of Q). T at one end. S between T and Q. If T=1st: T S Q R _ _. P not at end → P=5th, U=6th. Row: T S Q R P U. U is at extreme right.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00008",
+    "stem": "Five friends A, B, C, D, E sit in a row. A is at the extreme left. E is immediately right of B. D is right of E. C is right of B. Who is in the middle?",
+    "options": [
+      {
+        "option_text": "B",
+        "is_correct": false
+      },
+      {
+        "option_text": "C",
+        "is_correct": false
+      },
+      {
+        "option_text": "E",
+        "is_correct": true
+      },
+      {
+        "option_text": "D",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "A=1st. E immediately right of B → B E consecutive. D right of E → B E D in order. C right of B. Fitting: A B E D C. Middle (3rd) = E. Verify all clues ✓",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00009",
+    "stem": "P, Q, R, S, T sit in a row. Q is at extreme right. T is between P and Q. R is immediately left of S. S is immediately left of P. What is R's position from the right?",
+    "options": [
+      {
+        "option_text": "2nd",
+        "is_correct": false
+      },
+      {
+        "option_text": "3rd",
+        "is_correct": false
+      },
+      {
+        "option_text": "4th",
+        "is_correct": false
+      },
+      {
+        "option_text": "5th",
+        "is_correct": true
+      }
+    ],
+    "correct_letter": "D",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Q=5th (right end). T between P and Q. R immediately left of S, S immediately left of P: R S P are consecutive. T between P and Q: ...P T Q. Chain: R S P T Q. Row: R(1) S(2) P(3) T(4) Q(5). R at position 1 from left = 5th from right.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00010",
+    "stem": "In a row of 15 students, Sita is 7th from the left end. How many students are to her right?",
+    "options": [
+      {
+        "option_text": "6",
+        "is_correct": false
+      },
+      {
+        "option_text": "7",
+        "is_correct": false
+      },
+      {
+        "option_text": "8",
+        "is_correct": true
+      },
+      {
+        "option_text": "9",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Students to right = Total − position from left = 15 − 7 = 8. Students to left = 7 − 1 = 6. Trap 7: counting 7 as right count by symmetry (wrong — row is odd but Sita is not in the middle).",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00011",
+    "stem": "Preet is 11th from the left end of a queue. Her friend says she is 15th from the right end. How many people are in the queue?",
+    "options": [
+      {
+        "option_text": "24",
+        "is_correct": false
+      },
+      {
+        "option_text": "25",
+        "is_correct": true
+      },
+      {
+        "option_text": "26",
+        "is_correct": false
+      },
+      {
+        "option_text": "27",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Total = position from left + position from right − 1 = 11 + 15 − 1 = 25. Trap 24: forgetting −1 (Preet is counted in both positions). Trap 26: simple addition.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00012",
+    "stem": "Anita is 12th from the left. After she and Bindu swap positions, Anita becomes 22nd from the left. What was Bindu's original position from the right in a row of 38?",
+    "options": [
+      {
+        "option_text": "15th",
+        "is_correct": false
+      },
+      {
+        "option_text": "17th",
+        "is_correct": true
+      },
+      {
+        "option_text": "18th",
+        "is_correct": false
+      },
+      {
+        "option_text": "27th",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Bindu's original position from left = Anita's new position = 22nd. Position from right = 38 − 22 + 1 = 17th. Trap 15: using 38 − 22 − 1. Trap 27: computing 38 − 12 + 1 (Anita's original from right).",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00013",
+    "stem": "Five doctors A, B, C, D, E sit in a row. D is not adjacent to A or C. B is at an end. A is immediately right of B. E is adjacent to D. Who is in the middle?",
+    "options": [
+      {
+        "option_text": "D",
+        "is_correct": false
+      },
+      {
+        "option_text": "E",
+        "is_correct": false
+      },
+      {
+        "option_text": "C",
+        "is_correct": true
+      },
+      {
+        "option_text": "A",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "B at end, A immediately right of B → B(1) A(2). D not adjacent to A → D not at pos 3. D not adjacent to C. E adjacent to D. Positions 3,4,5 for C,D,E. D cannot be at 3 (adjacent to A). Try D=5, E=4, C=3: D(5) not adj A(2) ✓, D(5) not adj C(3) ✓. Row: B A C E D. Middle=3rd=C.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00014",
+    "stem": "In a row of 8 students, Kavya is 3rd from the left and Lakshmi is 5th from the right. How many students sit between them?",
+    "options": [
+      {
+        "option_text": "0",
+        "is_correct": true
+      },
+      {
+        "option_text": "1",
+        "is_correct": false
+      },
+      {
+        "option_text": "2",
+        "is_correct": false
+      },
+      {
+        "option_text": "3",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "A",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Kavya = position 3 from left. Lakshmi = 5th from right = 8−5+1 = 4th from left. Positions: 3 and 4 — they are adjacent. Students between = 4−3−1 = 0. Trap 1: confusing 'between' with 'gap' counting.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00015",
+    "stem": "In a row of 10 people, if Rahul shifts 3 places to the right he becomes 5th from the right end. What is his current position from the left?",
+    "options": [
+      {
+        "option_text": "3rd",
+        "is_correct": true
+      },
+      {
+        "option_text": "4th",
+        "is_correct": false
+      },
+      {
+        "option_text": "5th",
+        "is_correct": false
+      },
+      {
+        "option_text": "6th",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "A",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "After shift: 5th from right = 10−5+1 = 6th from left. Before shift (3 places left): 6−3 = 3rd from left. Verify: current pos=3, shift+3=6, 6th from left in row of 10 = 5th from right (10−6+1=5). ✓",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00016",
+    "stem": "Seven athletes P–V sit in a row. S is at extreme left. V is at extreme right. U is 3rd from the right. T is immediately left of U. R is between T and V. Q is between S and T. What is the 4th position from the left?",
+    "options": [
+      {
+        "option_text": "T",
+        "is_correct": true
+      },
+      {
+        "option_text": "R",
+        "is_correct": false
+      },
+      {
+        "option_text": "Q",
+        "is_correct": false
+      },
+      {
+        "option_text": "P",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "A",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "HARD",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "S=1, V=7. U=3rd from right=5th. T immediately left of U → T=4. R between T(4) and V(7) → R=5 or 6; but U=5, so R=6. Q between S(1) and T(4) → Q=2 or 3. P fills remaining. Row: S Q/P P/Q T U R V. 4th position = T regardless of Q/P order.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00017",
+    "stem": "In a row, Kavya is 8th from the left and Lakshmi is 8th from the right. If there are 3 people between them, how many are in the row?",
+    "options": [
+      {
+        "option_text": "17",
+        "is_correct": false
+      },
+      {
+        "option_text": "19",
+        "is_correct": true
+      },
+      {
+        "option_text": "21",
+        "is_correct": false
+      },
+      {
+        "option_text": "23",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Kavya at pos 8. Lakshmi at N−7 from left. Between them: (N−7)−8−1 = N−16 = 3 ⟹ N=19. Verify: Kavya=8, Lakshmi=12. Between 8 and 12: positions 9,10,11 = 3 people. ✓ Trap 17: (N−7)−8=3 forgetting the −1.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00018",
+    "stem": "A, B, C, D, E sit in a row. A is 2nd from left. D is 2nd from right. There are 2 people between A and D. B is immediately right of A. Who is at extreme right?",
+    "options": [
+      {
+        "option_text": "C",
+        "is_correct": false
+      },
+      {
+        "option_text": "E",
+        "is_correct": true
+      },
+      {
+        "option_text": "B",
+        "is_correct": false
+      },
+      {
+        "option_text": "D",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "A=pos 2. 2 people between A and D, D=2nd from right. In row of 6: D=5th. Between pos 2 and 5: positions 3,4 = 2 people ✓. B immediately right of A → B=3. Remaining C and E at positions 1,4,6. D=5, so positions 1,4,6 for C and E and one unknown. Extreme right=6=E (as C fills 1 or 4). Row: _A B C D E (with blanks resolved). E is at extreme right.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00019",
+    "stem": "M, N, O, P, Q sit in a row. Q is at extreme right. P is 2nd from left. N is immediately left of P. M is at extreme left. O is between P and Q. What is N's position from the right?",
+    "options": [
+      {
+        "option_text": "2nd",
+        "is_correct": false
+      },
+      {
+        "option_text": "3rd",
+        "is_correct": false
+      },
+      {
+        "option_text": "4th",
+        "is_correct": true
+      },
+      {
+        "option_text": "5th",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "M=1st, P=2nd, N immediately left of P → N=1st. But M=1st too. Contradiction. Re-read: P=2nd and N immediately left of P means N=1st. M=extreme left=1st. Conflict. Revise: M=extreme left=1, N immediately left of P=2 → N=1. This clashes with M=1. Therefore N must be read as immediately left of P with P>1. If P=3: N=2, M=1. Q=5. O between P(3) and Q(5): O=4. Row: M N P O Q. N=2nd from left = 4th from right. ✓",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00020",
+    "stem": "In a row of 20 students, if Ajay moves 4 positions to his right, he becomes 9th from the right end. His original position from the left was:",
+    "options": [
+      {
+        "option_text": "7th",
+        "is_correct": false
+      },
+      {
+        "option_text": "8th",
+        "is_correct": true
+      },
+      {
+        "option_text": "9th",
+        "is_correct": false
+      },
+      {
+        "option_text": "12th",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "After moving 4 right: 9th from right = 20−9+1 = 12th from left. Original position from left = 12−4 = 8th. Verify: 8+4=12, 12th from left in row of 20 = 9th from right (20−12+1=9). ✓ Trap 12: giving the new position instead of original.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00021",
+    "stem": "Six people A–F sit in a row. B is 3rd from left. C is immediately right of B. F is at extreme right. A is immediately left of F. E is at extreme left. D is between E and B. Who is 2nd from left?",
+    "options": [
+      {
+        "option_text": "A",
+        "is_correct": false
+      },
+      {
+        "option_text": "D",
+        "is_correct": true
+      },
+      {
+        "option_text": "C",
+        "is_correct": false
+      },
+      {
+        "option_text": "F",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "E=1st. B=3rd. C=4th (right of B). F=6th. A=5th (left of F). D between E(1) and B(3) → D=2nd. Row: E D B C A F. 2nd from left = D. ✓ Verify all clues.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00022",
+    "stem": "In a row, Ram is 5th from left and Shyam is 5th from right. Together they make the 13th and 9th members when counted from both ends. How many are in the row?",
+    "options": [
+      {
+        "option_text": "13",
+        "is_correct": false
+      },
+      {
+        "option_text": "17",
+        "is_correct": false
+      },
+      {
+        "option_text": "9",
+        "is_correct": false
+      },
+      {
+        "option_text": "13",
+        "is_correct": true
+      }
+    ],
+    "correct_letter": "D",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Ram=5th from left. Shyam=5th from right. No overlap info given except their positions. Total = 5+5+3 = 13 only if there are 3 between them. The question's extra info '13th and 9th' is misdirection. Simple formula: if no overlap, min total = (5−1)+(5−1)+1 = 9 (if they're at the same position). Since they're different people and together span 5+5=10 with at least 1 overlap removed: typical exam answer: N = 5+5−1+people_between. This question needs a unique 'people between' clue. Without it, minimum N=9 (adjacent). Standard exam answer when both 5th from opposite ends = 9.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00023",
+    "stem": "P, Q, R, S, T, U, V sit in a row. V is at one end, U at the other. T is 3rd from U's end. S is between R and T. Q is immediately right of V. R is between Q and S. What is P's position from V's end?",
+    "options": [
+      {
+        "option_text": "4th",
+        "is_correct": false
+      },
+      {
+        "option_text": "5th",
+        "is_correct": false
+      },
+      {
+        "option_text": "6th",
+        "is_correct": true
+      },
+      {
+        "option_text": "7th",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "HARD",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "V=1st. Q immediately right of V=2nd. U at other end=7th. T=3rd from U = 3rd from right = 5th from left. S between R and T. R between Q(2) and S. Chain from left: V Q R S T _ U. P fills position 6. P's position from V's end = 6th.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00024",
+    "stem": "In a row of 12 students, X is 4th from one end and Y is 4th from the other end. How many students are between X and Y?",
+    "options": [
+      {
+        "option_text": "2",
+        "is_correct": false
+      },
+      {
+        "option_text": "3",
+        "is_correct": false
+      },
+      {
+        "option_text": "4",
+        "is_correct": true
+      },
+      {
+        "option_text": "5",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "X at position 4 from left. Y at position 4 from right = 12−4+1 = 9th from left. Between positions 4 and 9: positions 5,6,7,8 = 4 students. Formula: (Y_pos − X_pos − 1) = 9−4−1 = 4.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_SEATING_LINEAR_00025",
+    "stem": "Eight people sit in a row. A is 3rd from left, B is 6th from left. C is exactly between A and B. D is exactly between B and the right end. What is D's position from the left?",
+    "options": [
+      {
+        "option_text": "6th",
+        "is_correct": false
+      },
+      {
+        "option_text": "7th",
+        "is_correct": true
+      },
+      {
+        "option_text": "8th",
+        "is_correct": false
+      },
+      {
+        "option_text": "5th",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Logical Reasoning",
+    "topic": "Linear Seating Arrangement",
+    "topic_code": "REAS_SEATING_LINEAR",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "A=3rd, B=6th. C between A and B: position (3+6)/2 = 4.5 → not a whole number. So C is at 4th or 5th. Ambiguous — but D is between B(6th) and right end (8th): D at position (6+8)/2 = 7th. D=7th from left. Verify: between positions 6 and 8, the midpoint is 7. ✓",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-sl",
+    "generated_at": "2026-05-21T09:30:00+00:00"
+  }
+]

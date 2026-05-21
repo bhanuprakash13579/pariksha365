@@ -1,0 +1,401 @@
+[
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00007",
+    "stem": "Question: What is the value of integer n?\nStatement I: n² = 25\nStatement II: n is positive",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": true},
+      {"option_text": "Either statement alone is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: n²=25 ⟹ n=5 or n=−5. Two values — NOT sufficient. Statement II: n>0 alone gives no specific value. NOT sufficient. Both: n²=25 AND n>0 ⟹ n=5 uniquely. SUFFICIENT.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00008",
+    "stem": "Question: Is x > y?\nStatement I: x + y = 20\nStatement II: x − y = 6",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": true},
+      {"option_text": "Both statements together are sufficient", "is_correct": false},
+      {"option_text": "Neither statement is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "B",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: x+y=20. Could be x=15,y=5 (x>y) or x=5,y=15 (x<y). NOT sufficient. Statement II: x−y=6 ⟹ x=y+6 > y always. YES, x>y. SUFFICIENT by II alone.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00009",
+    "stem": "Question: What is the area of the rectangle?\nStatement I: The perimeter is 24 cm\nStatement II: The length is twice the breadth",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": true},
+      {"option_text": "Neither statement is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: 2(l+b)=24 ⟹ l+b=12. Many rectangles satisfy this. NOT sufficient. Statement II: l=2b alone has infinite solutions. NOT sufficient. Both: 2b+b=12 ⟹ b=4, l=8. Area = 32 cm². SUFFICIENT together.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00010",
+    "stem": "Question: What is A's present age?\nStatement I: The ratio of A's age to B's age is 3:2\nStatement II: B is 10 years younger than A",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": true},
+      {"option_text": "Neither statement is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: A/B=3/2 — multiple solutions (30&20, 15&10…). NOT sufficient. Statement II: A−B=10 — multiple solutions. NOT sufficient. Both: A=3k, B=2k, and 3k−2k=10 ⟹ k=10 ⟹ A=30. SUFFICIENT together.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00011",
+    "stem": "Question: What is the profit percentage?\nStatement I: Cost price = ₹800\nStatement II: Selling price is 25% more than the cost price",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": true},
+      {"option_text": "Both statements together are sufficient", "is_correct": false},
+      {"option_text": "Neither statement is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "B",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: CP=₹800 but SP unknown — can't find profit%. NOT sufficient. Statement II: SP=1.25×CP ⟹ profit%=25% regardless of the actual CP. SUFFICIENT. Absolute price is irrelevant when the ratio directly gives the percentage.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00012",
+    "stem": "Question: Is number N divisible by 8?\nStatement I: N is divisible by 4\nStatement II: N is divisible by 2",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": false},
+      {"option_text": "Neither statement is sufficient", "is_correct": true}
+    ],
+    "correct_letter": "D",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "HARD",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: N divisible by 4 — could be 4 (not div by 8) or 8 (div by 8). NOT sufficient. Statement II: even weaker. NOT sufficient. Both together only imply divisibility by 4 — N=4 fails, N=8 works. Counter-example N=4 shows both statements can hold yet N not div by 8. Neither sufficient.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00013",
+    "stem": "Question: Who is the tallest among P, Q and R?\nStatement I: P is taller than Q\nStatement II: R is shorter than Q",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": true},
+      {"option_text": "Neither statement is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: P>Q, but R's position unknown. NOT sufficient. Statement II: R<Q, but P's position unknown. NOT sufficient. Both: P>Q>R ⟹ P is tallest. SUFFICIENT together.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00014",
+    "stem": "Question: What is the rate of simple interest per annum?\nStatement I: Principal = ₹5,000 and time = 2 years\nStatement II: Total amount after 2 years = ₹5,800",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": true},
+      {"option_text": "Either statement alone is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: P=5000, T=2 years — rate unknown, can't find SI. NOT sufficient. Statement II: Amount=5800 — P and T unknown. NOT sufficient. Both: SI=5800−5000=₹800; R = SI×100/(P×T) = 800×100/(5000×2) = 8% p.a. SUFFICIENT together.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00015",
+    "stem": "Question: Is m an even number?\nStatement I: m² is even\nStatement II: m + 1 is odd",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Either statement alone is sufficient", "is_correct": true},
+      {"option_text": "Neither statement is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "HARD",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: m² is even ⟹ m is even (an odd number squared is always odd). SUFFICIENT. Statement II: m+1 is odd ⟹ m is even (odd = even+1). SUFFICIENT. Either alone confirms m is even. Classic number-theory trap in high-difficulty Bank PO papers.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00016",
+    "stem": "Question: What is the distance between cities A and B?\nStatement I: A car takes 3 hours to travel from A to B at 60 km/h\nStatement II: The same car takes 4 hours to return from B to A",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": true},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": false},
+      {"option_text": "Either statement alone is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "A",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: distance = speed × time = 60×3 = 180 km. Uniquely determined. SUFFICIENT. Statement II: 4 hours to return but no return speed given — distance = 4×(unknown speed). NOT sufficient alone. Answer: A.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00017",
+    "stem": "Question: In a class of 40, how many students passed?\nStatement I: 15% of students failed\nStatement II: 34 students passed",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Either statement alone is sufficient", "is_correct": true},
+      {"option_text": "Both statements together are needed", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: 15% of 40 = 6 failed ⟹ passed = 34. SUFFICIENT. Statement II: directly states 34 passed. SUFFICIENT. Either alone gives 34.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00018",
+    "stem": "Question: What is the speed of the stream?\nStatement I: A boat travels 30 km upstream in 5 hours\nStatement II: The boat's speed in still water is 8 km/h",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": true},
+      {"option_text": "Neither statement is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: upstream speed = 30/5 = 6 km/h. Stream speed = still-water speed − 6. Still-water speed unknown. NOT sufficient. Statement II: still-water=8 km/h, but upstream speed unknown. NOT sufficient. Both: stream = 8−6 = 2 km/h. SUFFICIENT together.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00019",
+    "stem": "Question: What is the value of x + y?\nStatement I: 3x + 2y = 18\nStatement II: x − y = 1",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": true},
+      {"option_text": "Neither statement is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: one equation, two unknowns. NOT sufficient. Statement II: one equation, two unknowns. NOT sufficient. Both: x=y+1; sub into 3(y+1)+2y=18 ⟹ 5y=15 ⟹ y=3, x=4. x+y=7. SUFFICIENT together.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00020",
+    "stem": "Question: Is quadrilateral ABCD a square?\nStatement I: All four sides are equal\nStatement II: All four angles are equal (each 90°)",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": true},
+      {"option_text": "Either statement alone is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "HARD",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I alone: equal sides = rhombus (not necessarily a square — angles could be non-right). NOT sufficient. Statement II alone: all 90° angles = rectangle (sides could differ). NOT sufficient. Both: equal sides + 90° angles = square. SUFFICIENT together. Classic geometry trap.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00021",
+    "stem": "Question: What is the compound interest on a sum for 2 years?\nStatement I: The rate is 10% p.a. compounded annually\nStatement II: The principal is ₹10,000",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": true},
+      {"option_text": "Neither statement is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "CI formula needs P, r, n. Statement I: r=10% only. NOT sufficient. Statement II: P=10,000 only. NOT sufficient. Both: CI = 10000[(1.1)²−1] = 10000×0.21 = ₹2,100. SUFFICIENT together.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00022",
+    "stem": "Question: Is x a prime number?\nStatement I: x is odd and greater than 1\nStatement II: x has exactly two factors",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": true},
+      {"option_text": "Both statements together are sufficient", "is_correct": false},
+      {"option_text": "Neither statement is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "B",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "HARD",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: odd and >1 could be 9 (not prime) or 3,5,7 (prime). NOT sufficient. Statement II: 'exactly two factors' IS the definition of primality. So x is prime. SUFFICIENT by II alone.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00023",
+    "stem": "Question: What is the average of four consecutive integers?\nStatement I: The smallest integer is 7\nStatement II: The sum of the four integers is 34",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Either statement alone is sufficient", "is_correct": true},
+      {"option_text": "Both statements together are needed", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: numbers are 7,8,9,10 ⟹ average = (7+10)/2 = 8.5. SUFFICIENT. Statement II: average = 34/4 = 8.5. SUFFICIENT. Either alone gives 8.5. They are consistent: 7+8+9+10=34 ✓.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00024",
+    "stem": "Question: How many students are in the class?\nStatement I: 60% of students are girls\nStatement II: There are 18 girls in the class",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": true},
+      {"option_text": "Either statement alone is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: 60% girls — total unknown. NOT sufficient. Statement II: 18 girls — percent unknown. NOT sufficient. Both: 60%×total=18 ⟹ total=30. SUFFICIENT together.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  },
+  {
+    "id": "sgk_REAS_DATA_SUFFICIENCY_00025",
+    "stem": "Question: In a row of people, what is Ravi's position from the left?\nStatement I: Ravi is 5th from the right end\nStatement II: There are 12 people in the row",
+    "options": [
+      {"option_text": "Statement I alone is sufficient", "is_correct": false},
+      {"option_text": "Statement II alone is sufficient", "is_correct": false},
+      {"option_text": "Both statements together are sufficient", "is_correct": true},
+      {"option_text": "Neither statement is sufficient", "is_correct": false}
+    ],
+    "correct_letter": "C",
+    "subject": "Logical Reasoning",
+    "topic": "Data Sufficiency — Banking/SSC style",
+    "topic_code": "REAS_DATA_SUFFICIENCY",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "explanation": "Statement I: 5th from right — position from left depends on total number. NOT sufficient. Statement II: 12 people — Ravi's position unknown. NOT sufficient. Both: position from left = 12−5+1 = 8th. SUFFICIENT together.",
+    "answer_source": "generated",
+    "generator_tag": "claude-sonnet-4-6-2026-05-21-reas-ds",
+    "generated_at": "2026-05-21T09:00:00+00:00"
+  }
+]

@@ -699,16 +699,25 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
     count = 0
     for f in files:
         doc = json.loads(f.read_text())
-        for q_doc in doc.get("questions", []):
+        # Support both plain-list format (newer) and dict-wrapped {questions:[...]} format (older).
+        q_docs = doc if isinstance(doc, list) else doc.get("questions", [])
+        for q_doc in q_docs:
             count += 1
             if limit and count > limit:
                 break
             qid = q_doc.get("id")
             q_uuid = _uuid_for(_NS_QUIZ_Q, qid) if qid else _uuid.uuid4()
             existing = await db.get(QuizQuestion, q_uuid)
-            # The production table uses the same JSON options shape —
-            # {option_text, is_correct} — so we pass through as-is.
-            options = q_doc.get("options") or []
+            # Normalise options to {option_text, is_correct} regardless of source format.
+            # Seeds may use {option_text, is_correct} or {letter, text, is_correct}.
+            raw_opts = q_doc.get("options") or []
+            options = [
+                {
+                    "option_text": (o.get("option_text") or o.get("text") or ""),
+                    "is_correct": bool(o.get("is_correct", False)),
+                }
+                for o in raw_opts
+            ]
             if existing is not None:
                 totals["questions_skipped_existing"] += 1
                 continue
@@ -728,9 +737,11 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
 
             db.add(QuizQuestion(
                 id=q_uuid,
-                question_text=q_doc["stem"],
+                question_text=(q_doc.get("stem") or q_doc.get("text") or ""),
                 image_url=None,
                 explanation=q_doc.get("explanation"),
+                diagram_svg=q_doc.get("diagram_svg"),
+                explanation_svg=q_doc.get("explanation_svg"),
                 difficulty=(q_doc.get("difficulty") or "MEDIUM"),
                 subject=q_doc.get("subject") or "General Knowledge",
                 topic=q_doc.get("topic"),

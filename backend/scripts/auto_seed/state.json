@@ -1,31 +1,31 @@
 {
-  "scanned_at": "2026-05-20T02:51:10+00:00",
-  "total_questions": 9225,
-  "total_topics": 1245,
+  "scanned_at": "2026-05-21T05:20:34+00:00",
+  "total_questions": 9999,
+  "total_topics": 1282,
   "by_subject": {
     "Quantitative Aptitude": {
-      "codes": 145,
-      "questions": 1043
+      "codes": 152,
+      "questions": 1229
     },
     "History": {
-      "codes": 124,
-      "questions": 927
-    },
-    "Polity": {
-      "codes": 110,
-      "questions": 857
+      "codes": 129,
+      "questions": 979
     },
     "Reasoning": {
       "codes": 118,
-      "questions": 815
+      "questions": 967
+    },
+    "Polity": {
+      "codes": 115,
+      "questions": 912
     },
     "English": {
-      "codes": 106,
-      "questions": 756
+      "codes": 108,
+      "questions": 873
     },
     "General Knowledge": {
-      "codes": 93,
-      "questions": 749
+      "codes": 101,
+      "questions": 858
     },
     "Biology": {
       "codes": 99,
@@ -35,25 +35,25 @@
       "codes": 95,
       "questions": 715
     },
+    "Geography": {
+      "codes": 92,
+      "questions": 692
+    },
     "Physics": {
       "codes": 87,
       "questions": 646
-    },
-    "Geography": {
-      "codes": 86,
-      "questions": 632
     },
     "Chemistry": {
       "codes": 87,
       "questions": 626
     },
     "Economics": {
-      "codes": 57,
-      "questions": 434
+      "codes": 60,
+      "questions": 465
     },
     "Environment": {
-      "codes": 38,
-      "questions": 279
+      "codes": 39,
+      "questions": 291
     }
   },
   "topics": [
@@ -3650,6 +3650,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "ECO_BANKING_FINANCE",
+      "subject": "Economics",
+      "topic": "Banking & Finance",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/economics/ECO_BANKING_FINANCE.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 5,
+      "diff_medium": 4,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "ECO_BANKING_HISTORY_MIXED",
       "subject": "Economics",
       "topic": "Banking history & reforms — mixed tiers",
@@ -3989,6 +4008,25 @@
       "diff_easy": 0,
       "diff_medium": 3,
       "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "ECO_INDIAN_ECONOMY_BASICS",
+      "subject": "Economics",
+      "topic": "Indian Economy — Basics",
+      "questions": 13,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/economics/ECO_INDIAN_ECONOMY_BASICS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 5,
+      "diff_medium": 6,
+      "diff_hard": 2,
       "diff_unknown": 0
     },
     {
@@ -4539,6 +4577,25 @@
       "parity_fails": 6,
       "diff_easy": 4,
       "diff_medium": 6,
+      "diff_hard": 0,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "ECO_SCHEMES_PROGRAMMES",
+      "subject": "Economics",
+      "topic": "Government Schemes & Programmes",
+      "questions": 8,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/economics/ECO_SCHEMES_PROGRAMMES.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 6,
+      "diff_easy": 5,
+      "diff_medium": 3,
       "diff_hard": 0,
       "diff_unknown": 0
     },
@@ -5322,6 +5379,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "ENG_GRAMMAR_MIXED",
+      "subject": "English",
+      "topic": "Grammar — Mixed",
+      "questions": 14,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/english/ENG_GRAMMAR_MIXED.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 4,
+      "diff_medium": 6,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "ENG_IDIOMS_DAILY_MIXED",
       "subject": "English",
       "topic": "Idioms — daily use — mixed tiers",
@@ -5439,7 +5515,7 @@
       "topic_code": "ENG_NARRATION",
       "subject": "English",
       "topic": "Direct ↔ Indirect Speech (Narration)",
-      "questions": 6,
+      "questions": 37,
       "schema_versions": [
         "A"
       ],
@@ -5448,10 +5524,10 @@
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 2,
-      "diff_easy": 1,
-      "diff_medium": 5,
-      "diff_hard": 0,
+      "parity_fails": 8,
+      "diff_easy": 10,
+      "diff_medium": 21,
+      "diff_hard": 6,
       "diff_unknown": 0
     },
     {
@@ -5667,7 +5743,7 @@
       "topic_code": "ENG_PARA_JUMBLE",
       "subject": "English",
       "topic": "Para-jumbles — sentence rearrangement (Banking Mains / SSC Tier 2)",
-      "questions": 5,
+      "questions": 35,
       "schema_versions": [
         "A"
       ],
@@ -5677,9 +5753,9 @@
       "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 0,
-      "diff_easy": 0,
-      "diff_medium": 4,
-      "diff_hard": 1,
+      "diff_easy": 9,
+      "diff_medium": 19,
+      "diff_hard": 7,
       "diff_unknown": 0
     },
     {
@@ -6085,7 +6161,7 @@
       "topic_code": "ENG_READING_COMPREHENSION",
       "subject": "English",
       "topic": "Reading Comprehension — short passage + inference",
-      "questions": 6,
+      "questions": 33,
       "schema_versions": [
         "A"
       ],
@@ -6094,10 +6170,10 @@
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 6,
-      "diff_easy": 1,
-      "diff_medium": 3,
-      "diff_hard": 2,
+      "parity_fails": 23,
+      "diff_easy": 13,
+      "diff_medium": 14,
+      "diff_hard": 6,
       "diff_unknown": 0
     },
     {
@@ -6557,6 +6633,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "ENG_VOCABULARY_ROOTS",
+      "subject": "English",
+      "topic": "Vocabulary — Word Roots",
+      "questions": 15,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/ENG_VOCABULARY_ROOTS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 5,
+      "diff_medium": 6,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "ENG_VOICE",
       "subject": "English",
       "topic": "Active ↔ Passive Voice",
@@ -6915,6 +7010,25 @@
       "diff_easy": 0,
       "diff_medium": 5,
       "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "ENV_ECOLOGY_BASICS",
+      "subject": "Environment",
+      "topic": "Ecology & Environment",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/environment/ENV_ECOLOGY_BASICS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 11,
+      "diff_easy": 6,
+      "diff_medium": 5,
+      "diff_hard": 1,
       "diff_unknown": 0
     },
     {
@@ -7450,6 +7564,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "GK_ART_FOLK_CULTURE",
+      "subject": "General Knowledge",
+      "topic": "Art, Folk Culture & Traditions",
+      "questions": 15,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/general_knowledge/GK_ART_FOLK_CULTURE.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 7,
+      "diff_medium": 5,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "GK_AWARDS_HONORS_VII_MIXED",
       "subject": "General Knowledge",
       "topic": "Awards & Honors — major international and national awards",
@@ -7561,6 +7694,25 @@
       "diff_easy": 1,
       "diff_medium": 4,
       "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "GK_BIOLOGY_BASICS",
+      "subject": "General Knowledge",
+      "topic": "Biology Basics",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/general_knowledge/GK_BIOLOGY_BASICS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 6,
+      "diff_easy": 10,
+      "diff_medium": 2,
+      "diff_hard": 0,
       "diff_unknown": 0
     },
     {
@@ -8362,6 +8514,44 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "GK_INDIA_MISCELLANEOUS",
+      "subject": "General Knowledge",
+      "topic": "India — Miscellaneous",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/general_knowledge/GK_INDIA_MISCELLANEOUS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 10,
+      "diff_medium": 0,
+      "diff_hard": 0,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "GK_INTERNATIONAL_ORGS",
+      "subject": "General Knowledge",
+      "topic": "International Organisations",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/general_knowledge/GK_INTERNATIONAL_ORGS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 10,
+      "diff_medium": 2,
+      "diff_hard": 0,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "GK_INTERNATIONAL_ORG_II_MIXED",
       "subject": "General Knowledge",
       "topic": "International Organizations and Headquarters",
@@ -8799,6 +8989,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "GK_PHYSICS_CHEMISTRY",
+      "subject": "General Knowledge",
+      "topic": "Physics & Chemistry",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/general_knowledge/GK_PHYSICS_CHEMISTRY.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 10,
+      "diff_medium": 2,
+      "diff_hard": 0,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "GK_PMS_PRESIDENTS_MIXED",
       "subject": "General Knowledge",
       "topic": "Prime Ministers & Presidents of India — mixed tiers",
@@ -8913,6 +9122,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "GK_SCIENCE_TECH",
+      "subject": "General Knowledge",
+      "topic": "Science & Technology",
+      "questions": 22,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/general_knowledge/GK_SCIENCE_TECH.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 16,
+      "diff_easy": 11,
+      "diff_medium": 9,
+      "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "GK_SCIENCE_TECH_ADVANCED",
       "subject": "General Knowledge",
       "topic": "Science & Tech — multi-statement / inference",
@@ -8947,6 +9175,25 @@
       "parity_fails": 5,
       "diff_easy": 0,
       "diff_medium": 6,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "GK_SPORTS_AWARDS",
+      "subject": "General Knowledge",
+      "topic": "Sports — Awards & Records",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/general_knowledge/GK_SPORTS_AWARDS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 7,
+      "diff_medium": 4,
       "diff_hard": 1,
       "diff_unknown": 0
     },
@@ -9180,6 +9427,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "GK_WORLD_CAPITALS",
+      "subject": "General Knowledge",
+      "topic": "World Capitals",
+      "questions": 14,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/general_knowledge/GK_WORLD_CAPITALS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 9,
+      "diff_medium": 3,
+      "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "GEO_AFRICAN_GEOGRAPHY_MIXED",
       "subject": "Geography",
       "topic": "African geography — mixed tiers",
@@ -9294,6 +9560,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "GEO_CLIMATE_INDIA",
+      "subject": "Geography",
+      "topic": "Climate of India",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/geography/GEO_CLIMATE_INDIA.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 3,
+      "diff_medium": 6,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "GEO_CLIMATE_INDIA_MIXED",
       "subject": "Geography",
       "topic": "Climate of India — monsoon mechanism, seasons, Koppen classification, cyclones",
@@ -9348,6 +9633,25 @@
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "GEO_DAMS_PROJECTS",
+      "subject": "Geography",
+      "topic": "Major Dams & River Projects",
+      "questions": 8,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/geography/GEO_DAMS_PROJECTS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 6,
+      "diff_easy": 5,
+      "diff_medium": 3,
+      "diff_hard": 0,
       "diff_unknown": 0
     },
     {
@@ -10168,6 +10472,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "GEO_NATURAL_RESOURCES",
+      "subject": "Geography",
+      "topic": "Natural Resources of India",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/geography/GEO_NATURAL_RESOURCES.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 3,
+      "diff_medium": 6,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "GEO_NORTH_EAST_STATES_MIXED",
       "subject": "Geography",
       "topic": "North-East Indian states — mixed tiers",
@@ -10339,6 +10662,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "GEO_RIVERS_INDIA",
+      "subject": "Geography",
+      "topic": "Rivers of India",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/geography/GEO_RIVERS_INDIA.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 7,
+      "diff_easy": 4,
+      "diff_medium": 5,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "GEO_RIVERS_INDIA_MIXED",
       "subject": "Geography",
       "topic": "Rivers of India — Origin, Course and Tributaries",
@@ -10410,6 +10752,25 @@
       "needs_subject_canon": false,
       "parity_fails": 1,
       "diff_easy": 2,
+      "diff_medium": 4,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "GEO_SOILS_INDIA",
+      "subject": "Geography",
+      "topic": "Soils of India",
+      "questions": 8,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/geography/GEO_SOILS_INDIA.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 3,
       "diff_medium": 4,
       "diff_hard": 1,
       "diff_unknown": 0
@@ -10643,6 +11004,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "GEO_WORLD_GEOGRAPHY",
+      "subject": "Geography",
+      "topic": "World Geography",
+      "questions": 14,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/geography/GEO_WORLD_GEOGRAPHY.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 11,
+      "diff_easy": 8,
+      "diff_medium": 5,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "GEO_WORLD_MIXED_TIERS",
       "subject": "Geography",
       "topic": "World geography — mixed tiers",
@@ -10811,6 +11191,101 @@
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "HIST_ANCIENT_INDIA",
+      "subject": "History",
+      "topic": "Ancient India",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/history/HIST_ANCIENT_INDIA.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 7,
+      "diff_easy": 6,
+      "diff_medium": 3,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "HIST_FREEDOM_STRUGGLE",
+      "subject": "History",
+      "topic": "Modern India — Freedom Struggle",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/history/HIST_FREEDOM_STRUGGLE.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 4,
+      "diff_easy": 8,
+      "diff_medium": 3,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "HIST_MEDIEVAL_ARCHITECTURE",
+      "subject": "History",
+      "topic": "Medieval India — Architecture",
+      "questions": 8,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/history/HIST_MEDIEVAL_ARCHITECTURE.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 6,
+      "diff_easy": 3,
+      "diff_medium": 3,
+      "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "HIST_MUGHAL_PERIOD",
+      "subject": "History",
+      "topic": "Mughal Period",
+      "questions": 8,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/history/HIST_MUGHAL_PERIOD.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 7,
+      "diff_easy": 3,
+      "diff_medium": 4,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "HIST_WORLD_HISTORY",
+      "subject": "History",
+      "topic": "World History",
+      "questions": 14,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/history/HIST_WORLD_HISTORY.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 11,
+      "diff_easy": 9,
+      "diff_medium": 4,
+      "diff_hard": 1,
       "diff_unknown": 0
     },
     {
@@ -15241,6 +15716,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "POL_DPSP_FUNDAMENTAL_DUTIES",
+      "subject": "Polity",
+      "topic": "DPSP & Fundamental Duties",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/polity/POL_DPSP_FUNDAMENTAL_DUTIES.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 7,
+      "diff_easy": 4,
+      "diff_medium": 5,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "POL_DPSP_II_MIXED",
       "subject": "Polity",
       "topic": "Directive Principles of State Policy — mixed tiers",
@@ -15428,6 +15922,25 @@
       "diff_easy": 0,
       "diff_medium": 3,
       "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "POL_EMERGENCY_PROVISIONS",
+      "subject": "Polity",
+      "topic": "Emergency Provisions",
+      "questions": 8,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/polity/POL_EMERGENCY_PROVISIONS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 6,
+      "diff_easy": 3,
+      "diff_medium": 3,
+      "diff_hard": 2,
       "diff_unknown": 0
     },
     {
@@ -15659,6 +16172,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "POL_FUNDAMENTAL_RIGHTS",
+      "subject": "Polity",
+      "topic": "Fundamental Rights",
+      "questions": 11,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/polity/POL_FUNDAMENTAL_RIGHTS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 5,
+      "diff_medium": 5,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "POL_FUNDAMENTAL_RIGHTS_III_MIXED",
       "subject": "Polity",
       "topic": "Fundamental Rights: Articles 12-35",
@@ -15811,6 +16343,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "POL_GOVERNOR_STATE",
+      "subject": "Polity",
+      "topic": "Governor & State Government",
+      "questions": 8,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/polity/POL_GOVERNOR_STATE.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 5,
+      "diff_easy": 3,
+      "diff_medium": 5,
+      "diff_hard": 0,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "POL_GST_COUNCIL_MIXED",
       "subject": "Polity",
       "topic": "GST Council and 101st Amendment — mixed tiers",
@@ -15884,6 +16435,25 @@
       "diff_easy": 1,
       "diff_medium": 2,
       "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "POL_JUDICIARY",
+      "subject": "Polity",
+      "topic": "Indian Judiciary",
+      "questions": 7,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/polity/POL_JUDICIARY.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 6,
+      "diff_easy": 3,
+      "diff_medium": 3,
+      "diff_hard": 1,
       "diff_unknown": 0
     },
     {
@@ -16213,7 +16783,7 @@
       "topic_code": "POL_PARLIAMENT",
       "subject": "Polity",
       "topic": "Parliament of India",
-      "questions": 10,
+      "questions": 21,
       "schema_versions": [
         "A"
       ],
@@ -16222,9 +16792,9 @@
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 8,
-      "diff_easy": 3,
-      "diff_medium": 4,
+      "parity_fails": 13,
+      "diff_easy": 7,
+      "diff_medium": 11,
       "diff_hard": 3,
       "diff_unknown": 0
     },
@@ -17486,7 +18056,7 @@
       "topic_code": "QNT_DATA_INTERPRETATION_MIXED",
       "subject": "Quantitative Aptitude",
       "topic": "Data Interpretation — mixed tiers",
-      "questions": 5,
+      "questions": 29,
       "schema_versions": [
         "A"
       ],
@@ -17495,10 +18065,10 @@
       ],
       "needs_transcode": false,
       "needs_subject_canon": true,
-      "parity_fails": 1,
-      "diff_easy": 2,
-      "diff_medium": 3,
-      "diff_hard": 0,
+      "parity_fails": 6,
+      "diff_easy": 14,
+      "diff_medium": 13,
+      "diff_hard": 2,
       "diff_unknown": 0
     },
     {
@@ -18265,7 +18835,7 @@
       "topic_code": "QNT_PERCENTAGE",
       "subject": "Quantitative Aptitude",
       "topic": "Percentage",
-      "questions": 12,
+      "questions": 16,
       "schema_versions": [
         "A"
       ],
@@ -18274,10 +18844,10 @@
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 3,
-      "diff_easy": 8,
-      "diff_medium": 4,
-      "diff_hard": 0,
+      "parity_fails": 4,
+      "diff_easy": 10,
+      "diff_medium": 5,
+      "diff_hard": 1,
       "diff_unknown": 0
     },
     {
@@ -18930,7 +19500,7 @@
       "topic_code": "QNT_RATIO_PROPORTION",
       "subject": "Quantitative Aptitude",
       "topic": "Ratio and Proportion",
-      "questions": 10,
+      "questions": 20,
       "schema_versions": [
         "A"
       ],
@@ -18939,10 +19509,10 @@
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
-      "diff_easy": 5,
-      "diff_medium": 5,
-      "diff_hard": 0,
+      "parity_fails": 3,
+      "diff_easy": 10,
+      "diff_medium": 9,
+      "diff_hard": 1,
       "diff_unknown": 0
     },
     {
@@ -19038,6 +19608,139 @@
       "diff_easy": 2,
       "diff_medium": 3,
       "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QNT_SHORTCUT_ALLIGATION_MIXTURES",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Alligation & Mixtures",
+      "questions": 25,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QNT_SHORTCUT_ALLIGATION_MIXTURES.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 6,
+      "diff_easy": 8,
+      "diff_medium": 15,
+      "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QNT_SHORTCUT_BOATS_TRAINS",
+      "subject": "Quantitative Aptitude",
+      "topic": "Boats & Trains — Shortcuts",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QNT_SHORTCUT_BOATS_TRAINS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 1,
+      "diff_easy": 4,
+      "diff_medium": 5,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QNT_SHORTCUT_GEOMETRY",
+      "subject": "Quantitative Aptitude",
+      "topic": "Geometry & Mensuration Shortcuts",
+      "questions": 11,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QNT_SHORTCUT_GEOMETRY.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 4,
+      "diff_easy": 7,
+      "diff_medium": 4,
+      "diff_hard": 0,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QNT_SHORTCUT_NUMBER_SYSTEM",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System — Shortcuts",
+      "questions": 25,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QNT_SHORTCUT_NUMBER_SYSTEM.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 3,
+      "diff_easy": 8,
+      "diff_medium": 12,
+      "diff_hard": 5,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QNT_SHORTCUT_PERCENT_CI_SI_FORMULAS",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Percentage, SI & CI",
+      "questions": 25,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QNT_SHORTCUT_PERCENT_CI_SI_FORMULAS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 4,
+      "diff_easy": 11,
+      "diff_medium": 10,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QNT_SHORTCUT_PROFIT_LOSS_FORMULAS",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Profit & Loss",
+      "questions": 25,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QNT_SHORTCUT_PROFIT_LOSS_FORMULAS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 5,
+      "diff_easy": 11,
+      "diff_medium": 10,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QNT_SHORTCUT_TSD_WORK_FORMULAS",
+      "subject": "Quantitative Aptitude",
+      "topic": "Shortcut Formulas — Time, Speed, Distance & Work",
+      "questions": 25,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QNT_SHORTCUT_TSD_WORK_FORMULAS.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 4,
+      "diff_easy": 13,
+      "diff_medium": 9,
+      "diff_hard": 3,
       "diff_unknown": 0
     },
     {
@@ -20279,7 +20982,7 @@
       "topic_code": "REAS_CODING_MIXED_TIERS",
       "subject": "Reasoning",
       "topic": "Coding-Decoding — mixed tiers",
-      "questions": 5,
+      "questions": 31,
       "schema_versions": [
         "A"
       ],
@@ -20288,10 +20991,10 @@
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 1,
+      "parity_fails": 2,
+      "diff_easy": 14,
+      "diff_medium": 13,
+      "diff_hard": 4,
       "diff_unknown": 0
     },
     {
@@ -20488,7 +21191,7 @@
       "topic_code": "REAS_DIRECTION",
       "subject": "Reasoning",
       "topic": "Direction Sense",
-      "questions": 5,
+      "questions": 33,
       "schema_versions": [
         "A"
       ],
@@ -20497,10 +21200,10 @@
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 0,
-      "diff_easy": 5,
-      "diff_medium": 0,
-      "diff_hard": 0,
+      "parity_fails": 12,
+      "diff_easy": 14,
+      "diff_medium": 14,
+      "diff_hard": 5,
       "diff_unknown": 0
     },
     {
@@ -20773,7 +21476,7 @@
       "topic_code": "REAS_INPUT_OUTPUT",
       "subject": "Reasoning",
       "topic": "Input-Output machine (Bank PO Mains)",
-      "questions": 5,
+      "questions": 27,
       "schema_versions": [
         "A"
       ],
@@ -20782,10 +21485,10 @@
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 0,
-      "diff_easy": 0,
-      "diff_medium": 0,
-      "diff_hard": 5,
+      "parity_fails": 1,
+      "diff_easy": 8,
+      "diff_medium": 8,
+      "diff_hard": 11,
       "diff_unknown": 0
     },
     {
@@ -21172,7 +21875,7 @@
       "topic_code": "REAS_ORDER_RANKING",
       "subject": "Reasoning",
       "topic": "Order and Ranking",
-      "questions": 5,
+      "questions": 30,
       "schema_versions": [
         "A"
       ],
@@ -21181,10 +21884,10 @@
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 1,
-      "diff_easy": 3,
-      "diff_medium": 2,
-      "diff_hard": 0,
+      "parity_fails": 6,
+      "diff_easy": 12,
+      "diff_medium": 13,
+      "diff_hard": 5,
       "diff_unknown": 0
     },
     {
@@ -21324,7 +22027,7 @@
       "topic_code": "REAS_PUZZLE_FLOOR",
       "subject": "Reasoning",
       "topic": "Floor-based Puzzle (Bank PO Mains style)",
-      "questions": 5,
+      "questions": 18,
       "schema_versions": [
         "A"
       ],
@@ -21334,9 +22037,9 @@
       "needs_transcode": false,
       "needs_subject_canon": false,
       "parity_fails": 2,
-      "diff_easy": 2,
-      "diff_medium": 2,
-      "diff_hard": 1,
+      "diff_easy": 9,
+      "diff_medium": 7,
+      "diff_hard": 2,
       "diff_unknown": 0
     },
     {
@@ -21704,7 +22407,7 @@
       "topic_code": "REAS_SYLLOGISM_MIXED_TIERS",
       "subject": "Reasoning",
       "topic": "Syllogism — mixed tiers",
-      "questions": 5,
+      "questions": 43,
       "schema_versions": [
         "A"
       ],
@@ -21713,10 +22416,10 @@
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 2,
-      "diff_easy": 1,
-      "diff_medium": 2,
-      "diff_hard": 2,
+      "parity_fails": 15,
+      "diff_easy": 13,
+      "diff_medium": 21,
+      "diff_hard": 9,
       "diff_unknown": 0
     },
     {

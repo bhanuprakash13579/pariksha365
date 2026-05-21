@@ -1,185 +1,234 @@
 [
   {
     "id": "sgk_PHY_OPTICS_MIXED_00001",
-    "text": "A plane mirror always forms an image that is ____.",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "stem": "A concave mirror placed in front of an object beyond the centre of curvature produces an image that is:",
     "options": [
       {
-        "key": "A",
-        "text": "real, inverted, and the same size as the object"
+        "option_text": "Virtual, erect, and magnified",
+        "is_correct": false
       },
       {
-        "key": "B",
-        "text": "virtual, erect, and the same size as the object"
+        "option_text": "Real, inverted, and diminished",
+        "is_correct": true
       },
       {
-        "key": "C",
-        "text": "real, erect, and diminished in comparison"
+        "option_text": "Real, inverted, and same size",
+        "is_correct": false
       },
       {
-        "key": "D",
-        "text": "virtual, inverted, and magnified beyond the object"
+        "option_text": "Virtual, inverted, and diminished",
+        "is_correct": false
       }
     ],
-    "correct": "B",
-    "difficulty": "easy",
-    "effort_tier": "tier1",
-    "explanation": "Images in plane mirrors are: virtual (cannot be projected on a screen), erect (upright, not flipped top-to-bottom), the same size as the object, and laterally inverted (left-right flip). The image appears as far behind the mirror as the object is in front."
+    "correct_letter": "B",
+    "explanation": "Object beyond C (centre of curvature) → image forms between F and C, and it is real, inverted, and diminished. Object at C → image at C, same size. Object between F and C → image beyond C, real, inverted, magnified.",
+    "difficulty": "medium",
+    "effort_tier": "medium",
+    "subject": "Physics",
+    "topic": "Optics",
+    "staleness_risk": "low",
+    "answer_source": "verified",
+    "generated_at": "2026-05-21T13:47:14.185151Z",
+    "generator_tag": "claude-code-wave4"
   },
   {
     "id": "sgk_PHY_OPTICS_MIXED_00002",
-    "text": "The bending of a light ray when it passes from air into water is called ____.",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "stem": "When a ray of light passes from a denser medium to a rarer medium, it bends:",
     "options": [
       {
-        "key": "A",
-        "text": "reflection at the water surface interface"
+        "option_text": "Towards the normal",
+        "is_correct": false
       },
       {
-        "key": "B",
-        "text": "diffraction around the water-air boundary"
+        "option_text": "Away from the normal",
+        "is_correct": true
       },
       {
-        "key": "C",
-        "text": "refraction due to change in optical density"
+        "option_text": "Along the normal",
+        "is_correct": false
       },
       {
-        "key": "D",
-        "text": "dispersion into component wavelengths"
+        "option_text": "Does not bend",
+        "is_correct": false
       }
     ],
-    "correct": "C",
+    "correct_letter": "B",
+    "explanation": "Snell's Law: n₁ sin θ₁ = n₂ sin θ₂. When going from denser (higher n) to rarer (lower n) medium, the refracted ray bends away from the normal (θ₂ > θ₁).",
     "difficulty": "easy",
-    "effort_tier": "tier1",
-    "explanation": "Refraction is the bending of light at the boundary between two media of different optical densities. Light entering water from air slows down and bends toward the normal because water is optically denser (higher refractive index ~1.33) than air (~1.00)."
+    "effort_tier": "medium",
+    "subject": "Physics",
+    "topic": "Optics",
+    "staleness_risk": "low",
+    "answer_source": "verified",
+    "generated_at": "2026-05-21T13:47:14.185151Z",
+    "generator_tag": "claude-code-wave4"
   },
   {
     "id": "sgk_PHY_OPTICS_MIXED_00003",
-    "text": "A convex lens is held very close (within its focal length) to a printed page. The image seen by the eye is ____.",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "stem": "Total internal reflection occurs when light travels from a denser to rarer medium AND the angle of incidence is:",
     "options": [
       {
-        "key": "A",
-        "text": "real, inverted, and magnified beyond focal length"
+        "option_text": "Less than the critical angle",
+        "is_correct": false
       },
       {
-        "key": "B",
-        "text": "virtual, erect, and magnified — acts as a magnifying glass"
+        "option_text": "Equal to 0°",
+        "is_correct": false
       },
       {
-        "key": "C",
-        "text": "real, erect, and diminished to a smaller print size"
+        "option_text": "Greater than or equal to the critical angle",
+        "is_correct": true
       },
       {
-        "key": "D",
-        "text": "virtual, inverted, and the same size as the original"
+        "option_text": "Exactly 45°",
+        "is_correct": false
       }
     ],
-    "correct": "B",
+    "correct_letter": "C",
+    "explanation": "Total internal reflection (TIR) occurs when: (1) light travels from denser → rarer medium AND (2) angle of incidence ≥ critical angle. At critical angle, refracted ray goes along the boundary (90°). Above critical angle, all light reflects internally. Used in optical fibres.",
     "difficulty": "medium",
-    "effort_tier": "tier1",
-    "explanation": "When an object is placed between the optical centre and the focal point of a convex lens (u < f), the image formed is virtual, erect, and magnified — the basis of a magnifying glass. A real, inverted image requires the object to be beyond the focal point."
+    "effort_tier": "medium",
+    "subject": "Physics",
+    "topic": "Optics",
+    "staleness_risk": "low",
+    "answer_source": "verified",
+    "generated_at": "2026-05-21T13:47:14.185151Z",
+    "generator_tag": "claude-code-wave4"
   },
   {
     "id": "sgk_PHY_OPTICS_MIXED_00004",
-    "text": "Total Internal Reflection (TIR) occurs when ____.",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "stem": "A person with myopia (short-sightedness) cannot see distant objects clearly. The type of lens used to correct myopia is:",
     "options": [
       {
-        "key": "A",
-        "text": "light travels from a rarer medium to a denser medium at any angle"
+        "option_text": "Convex (converging) lens",
+        "is_correct": false
       },
       {
-        "key": "B",
-        "text": "light travels from a denser medium to a rarer medium beyond the critical angle"
+        "option_text": "Concave (diverging) lens",
+        "is_correct": true
       },
       {
-        "key": "C",
-        "text": "white light splits into its component colours passing through a prism"
+        "option_text": "Cylindrical lens",
+        "is_correct": false
       },
       {
-        "key": "D",
-        "text": "light reflects off a concave mirror without any accompanying refraction"
+        "option_text": "Bifocal lens",
+        "is_correct": false
       }
     ],
-    "correct": "B",
-    "difficulty": "medium",
-    "effort_tier": "tier1",
-    "explanation": "TIR requires two conditions: (1) light must travel from a denser to a rarer medium (e.g., glass to air), and (2) the angle of incidence must exceed the critical angle. Applications include optical fibres (communications), diamonds (brilliance), and mirages. Option A describes normal refraction, not TIR."
+    "correct_letter": "B",
+    "explanation": "Myopia: eye lens converges distant objects in front of the retina. Concave (diverging) lens spreads the rays so they converge correctly on the retina. Hyperopia (far-sightedness) is corrected with a convex lens.",
+    "difficulty": "easy",
+    "effort_tier": "medium",
+    "subject": "Physics",
+    "topic": "Optics",
+    "staleness_risk": "low",
+    "answer_source": "verified",
+    "generated_at": "2026-05-21T13:47:14.185151Z",
+    "generator_tag": "claude-code-wave4"
   },
   {
     "id": "sgk_PHY_OPTICS_MIXED_00005",
-    "text": "In the visible spectrum arranged from violet to red (VIBGYOR), which colour has the highest frequency?",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "stem": "The power of a lens is defined as the reciprocal of its focal length in metres. The SI unit of power of a lens is:",
     "options": [
       {
-        "key": "A",
-        "text": "Red — longest wavelength, lowest energy photons"
+        "option_text": "Watt (W)",
+        "is_correct": false
       },
       {
-        "key": "B",
-        "text": "Green — middle of the visible spectrum range"
+        "option_text": "Dioptre (D)",
+        "is_correct": true
       },
       {
-        "key": "C",
-        "text": "Yellow — highest intensity in sunlight spectrum"
+        "option_text": "Candela (cd)",
+        "is_correct": false
       },
       {
-        "key": "D",
-        "text": "Violet — shortest wavelength, highest frequency"
+        "option_text": "Lumen (lm)",
+        "is_correct": false
       }
     ],
-    "correct": "D",
-    "difficulty": "medium",
-    "effort_tier": "tier1",
-    "explanation": "Frequency is inversely proportional to wavelength (f = c/λ). Violet has the shortest wavelength (~380–420 nm) and therefore the highest frequency and energy among visible colours. Red has the longest wavelength (~620–750 nm) and lowest frequency. This is why UV (beyond violet) causes sunburn while IR (beyond red) is merely heat."
+    "correct_letter": "B",
+    "explanation": "Power (P) = 1/f (metres). Unit: Dioptre (D) = m⁻¹. Convex lens: positive power. Concave lens: negative power. A −2.5 D lens has focal length = −0.4 m.",
+    "difficulty": "easy",
+    "effort_tier": "medium",
+    "subject": "Physics",
+    "topic": "Optics",
+    "staleness_risk": "low",
+    "answer_source": "verified",
+    "generated_at": "2026-05-21T13:47:14.185151Z",
+    "generator_tag": "claude-code-wave4"
   },
   {
     "id": "sgk_PHY_OPTICS_MIXED_00006",
-    "text": "A concave mirror has focal length 15 cm. An object is placed 45 cm in front of it (u = −45 cm, f = −15 cm). Using the mirror formula, the image distance v is ____.",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "stem": "The phenomenon of splitting of white light into its constituent colours by a prism is called:",
     "options": [
       {
-        "key": "A",
-        "text": "v = −22.5 cm (real image, 22.5 cm in front)"
+        "option_text": "Reflection",
+        "is_correct": false
       },
       {
-        "key": "B",
-        "text": "v = −30 cm (real image, 30 cm in front of mirror)"
+        "option_text": "Refraction",
+        "is_correct": false
       },
       {
-        "key": "C",
-        "text": "v = −45 cm (real image at same position as object)"
+        "option_text": "Dispersion",
+        "is_correct": true
       },
       {
-        "key": "D",
-        "text": "v = +22.5 cm (virtual image, 22.5 cm behind mirror)"
+        "option_text": "Diffraction",
+        "is_correct": false
       }
     ],
-    "correct": "A",
-    "difficulty": "hard",
-    "effort_tier": "tier2",
-    "explanation": "Mirror formula: 1/f = 1/v + 1/u → 1/v = 1/f − 1/u = 1/(−15) − 1/(−45) = −3/45 + 1/45 = −2/45. So v = −45/2 = −22.5 cm. Negative v confirms a real image formed in front of the concave mirror. The image is between the centre of curvature (30 cm) and the focus (15 cm), hence magnified."
+    "correct_letter": "C",
+    "explanation": "Dispersion occurs because different colours (wavelengths) of light travel at different speeds in glass and are refracted by different amounts. Violet bends the most (highest refractive index); red bends the least. Rainbow is caused by dispersion in water droplets.",
+    "difficulty": "easy",
+    "effort_tier": "medium",
+    "subject": "Physics",
+    "topic": "Optics",
+    "staleness_risk": "low",
+    "answer_source": "verified",
+    "generated_at": "2026-05-21T13:47:14.185151Z",
+    "generator_tag": "claude-code-wave4"
   },
   {
     "id": "sgk_PHY_OPTICS_MIXED_00007",
-    "text": "Light passes from glass (refractive index 1.5) to air. sin C = 1/1.5, giving critical angle C ≈ 42°. A ray hits the glass–air interface at 45°. What happens?",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "stem": "In a plane mirror, the image formed is:",
     "options": [
       {
-        "key": "A",
-        "text": "C ≈ 42°; the ray undergoes total internal reflection at 45°"
+        "option_text": "Real, inverted, same size at twice the object distance",
+        "is_correct": false
       },
       {
-        "key": "B",
-        "text": "C ≈ 48°; the ray refracts partially into air at 45°"
+        "option_text": "Virtual, erect, same size and as far behind the mirror as the object is in front",
+        "is_correct": true
       },
       {
-        "key": "C",
-        "text": "C ≈ 42°; the ray refracts and partially reflects at 45°"
+        "option_text": "Virtual, inverted, magnified",
+        "is_correct": false
       },
       {
-        "key": "D",
-        "text": "C ≈ 48°; the ray undergoes total internal reflection at 45°"
+        "option_text": "Real, erect, diminished",
+        "is_correct": false
       }
     ],
-    "correct": "A",
-    "difficulty": "hard",
-    "effort_tier": "tier2",
-    "explanation": "sin C = 1/n = 1/1.5 = 0.667 → C ≈ 41.8° ≈ 42°. Since the incident angle (45°) > critical angle (42°), the condition for TIR is met — the ray reflects entirely back into the glass with no refraction into air. This is why optical fibre cores (denser glass) confine light by TIR at the glass–cladding interface."
+    "correct_letter": "B",
+    "explanation": "Plane mirror: image is virtual (behind the mirror), erect (upright), same size as object, and laterally inverted. Object distance = image distance (measured from mirror). Image cannot be obtained on a screen.",
+    "difficulty": "easy",
+    "effort_tier": "medium",
+    "subject": "Physics",
+    "topic": "Optics",
+    "staleness_risk": "low",
+    "answer_source": "verified",
+    "generated_at": "2026-05-21T13:47:14.185151Z",
+    "generator_tag": "claude-code-wave4"
   },
   {
     "id": "sgk_PHY_OPTICS_MIXED_00008",
@@ -187,7 +236,7 @@
     "options": [
       {
         "option_text": "3 × 10⁶ m/s",
-        "is_correct": "3 × 10⁸ m/s"
+        "is_correct": false
       },
       {
         "option_text": "3 × 10¹⁰ m/s",
@@ -196,9 +245,13 @@
       {
         "option_text": "3 × 10⁴ m/s",
         "is_correct": false
+      },
+      {
+        "option_text": "3 × 10⁸ m/s",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -216,7 +269,7 @@
     "options": [
       {
         "option_text": "Diverging",
-        "is_correct": "Converging"
+        "is_correct": false
       },
       {
         "option_text": "Concave",
@@ -225,9 +278,13 @@
       {
         "option_text": "Planar",
         "is_correct": false
+      },
+      {
+        "option_text": "Converging",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -245,7 +302,7 @@
     "options": [
       {
         "option_text": "Reflection",
-        "is_correct": "Refraction"
+        "is_correct": false
       },
       {
         "option_text": "Diffraction",
@@ -254,9 +311,13 @@
       {
         "option_text": "Polarisation",
         "is_correct": false
+      },
+      {
+        "option_text": "Refraction",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -274,7 +335,7 @@
     "options": [
       {
         "option_text": "Light passes from a rarer to a denser medium",
-        "is_correct": "Light in a denser medium hits the boundary at an angle greater than the critical angle"
+        "is_correct": false
       },
       {
         "option_text": "Light is completely absorbed",
@@ -283,9 +344,13 @@
       {
         "option_text": "A lens breaks the light beam",
         "is_correct": false
+      },
+      {
+        "option_text": "Light in a denser medium hits the boundary at an angle greater than the critical angle",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -303,7 +368,7 @@
     "options": [
       {
         "option_text": "30°",
-        "is_correct": "41.8°"
+        "is_correct": false
       },
       {
         "option_text": "60°",
@@ -312,9 +377,13 @@
       {
         "option_text": "45°",
         "is_correct": false
+      },
+      {
+        "option_text": "41.8°",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -332,7 +401,7 @@
     "options": [
       {
         "option_text": "Convex lens",
-        "is_correct": "Concave (diverging) lens"
+        "is_correct": false
       },
       {
         "option_text": "Bifocal lens only",
@@ -341,9 +410,13 @@
       {
         "option_text": "Prism",
         "is_correct": false
+      },
+      {
+        "option_text": "Concave (diverging) lens",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -361,7 +434,7 @@
     "options": [
       {
         "option_text": "Concave lens",
-        "is_correct": "Convex (converging) lens"
+        "is_correct": false
       },
       {
         "option_text": "Prism",
@@ -370,9 +443,13 @@
       {
         "option_text": "Cylindrical lens only",
         "is_correct": false
+      },
+      {
+        "option_text": "Convex (converging) lens",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -390,7 +467,7 @@
     "options": [
       {
         "option_text": "Speed of light in medium / Speed in vacuum",
-        "is_correct": "Speed of light in vacuum / Speed of light in the medium"
+        "is_correct": false
       },
       {
         "option_text": "Wavelength in vacuum / Wavelength in medium",
@@ -399,6 +476,10 @@
       {
         "option_text": "Both B and C are correct",
         "is_correct": false
+      },
+      {
+        "option_text": "Speed of light in vacuum / Speed of light in the medium",
+        "is_correct": true
       }
     ],
     "correct_letter": "D",
@@ -419,7 +500,7 @@
     "options": [
       {
         "option_text": "Interference",
-        "is_correct": "Dispersion"
+        "is_correct": false
       },
       {
         "option_text": "Scattering",
@@ -428,9 +509,13 @@
       {
         "option_text": "Diffraction",
         "is_correct": false
+      },
+      {
+        "option_text": "Dispersion",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -448,7 +533,7 @@
     "options": [
       {
         "option_text": "Highest to lowest wavelength (violet to red)",
-        "is_correct": "Lowest to highest wavelength (violet to red) — i.e., from 380 nm to 700 nm"
+        "is_correct": false
       },
       {
         "option_text": "Alphabetical order",
@@ -457,9 +542,13 @@
       {
         "option_text": "From lowest to highest frequency",
         "is_correct": false
+      },
+      {
+        "option_text": "Lowest to highest wavelength (violet to red) — i.e., from 380 nm to 700 nm",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -477,7 +566,7 @@
     "options": [
       {
         "option_text": "Reflection of ocean colour",
-        "is_correct": "Rayleigh scattering — shorter (blue) wavelengths scatter more than red"
+        "is_correct": false
       },
       {
         "option_text": "Absorption of red light",
@@ -486,9 +575,13 @@
       {
         "option_text": "Presence of blue ozone",
         "is_correct": false
+      },
+      {
+        "option_text": "Rayleigh scattering — shorter (blue) wavelengths scatter more than red",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -506,7 +599,7 @@
     "options": [
       {
         "option_text": "Diffraction of light",
-        "is_correct": "Total internal reflection"
+        "is_correct": false
       },
       {
         "option_text": "Refraction only",
@@ -515,9 +608,13 @@
       {
         "option_text": "Polarisation",
         "is_correct": false
+      },
+      {
+        "option_text": "Total internal reflection",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -535,7 +632,7 @@
     "options": [
       {
         "option_text": "Rear-view mirror in vehicles",
-        "is_correct": "Torch/flashlight, headlights, solar concentrators"
+        "is_correct": false
       },
       {
         "option_text": "Periscope",
@@ -544,9 +641,13 @@
       {
         "option_text": "Kaleidoscope",
         "is_correct": false
+      },
+      {
+        "option_text": "Torch/flashlight, headlights, solar concentrators",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -564,7 +665,7 @@
     "options": [
       {
         "option_text": "Only reflection by water droplets",
-        "is_correct": "Dispersion, total internal reflection, and refraction in water droplets"
+        "is_correct": false
       },
       {
         "option_text": "Only refraction",
@@ -573,9 +674,13 @@
       {
         "option_text": "Diffraction of sunlight",
         "is_correct": false
+      },
+      {
+        "option_text": "Dispersion, total internal reflection, and refraction in water droplets",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -593,7 +698,7 @@
     "options": [
       {
         "option_text": "20 D",
-        "is_correct": "5 D (= 1/0.2 m)"
+        "is_correct": false
       },
       {
         "option_text": "0.2 D",
@@ -602,9 +707,13 @@
       {
         "option_text": "−5 D",
         "is_correct": false
+      },
+      {
+        "option_text": "5 D (= 1/0.2 m)",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -622,7 +731,7 @@
     "options": [
       {
         "option_text": "Cornea",
-        "is_correct": "Retina"
+        "is_correct": false
       },
       {
         "option_text": "Iris",
@@ -631,9 +740,13 @@
       {
         "option_text": "Pupil",
         "is_correct": false
+      },
+      {
+        "option_text": "Retina",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -651,7 +764,7 @@
     "options": [
       {
         "option_text": "Retina",
-        "is_correct": "Cornea or lens (not perfectly spherical)"
+        "is_correct": false
       },
       {
         "option_text": "Iris",
@@ -660,9 +773,13 @@
       {
         "option_text": "Pupil",
         "is_correct": false
+      },
+      {
+        "option_text": "Cornea or lens (not perfectly spherical)",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
@@ -680,7 +797,7 @@
     "options": [
       {
         "option_text": "Refraction",
-        "is_correct": "Diffraction"
+        "is_correct": false
       },
       {
         "option_text": "Reflection",
@@ -689,9 +806,13 @@
       {
         "option_text": "Dispersion",
         "is_correct": false
+      },
+      {
+        "option_text": "Diffraction",
+        "is_correct": true
       }
     ],
-    "correct_letter": "B",
+    "correct_letter": "D",
     "subject": "Physics",
     "topic": "Optics",
     "topic_code": "PHY_OPTICS_MIXED",
