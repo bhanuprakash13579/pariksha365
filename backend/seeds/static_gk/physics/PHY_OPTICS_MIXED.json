@@ -1,191 +1,706 @@
-{
-  "schema_version": 1,
-  "subject": "Physics",
-  "topic": "Optics — Reflection, Refraction, Lenses",
-  "topic_code": "PHY_OPTICS_MIXED",
-  "generated_at": "2026-05-07",
-  "questions": [
-    {
-      "id": "sgk_PHY_OPTICS_MIXED_001",
-      "text": "A plane mirror always forms an image that is ____.",
-      "options": [
-        {
-          "key": "A",
-          "text": "real, inverted, and the same size as the object"
-        },
-        {
-          "key": "B",
-          "text": "virtual, erect, and the same size as the object"
-        },
-        {
-          "key": "C",
-          "text": "real, erect, and diminished in comparison"
-        },
-        {
-          "key": "D",
-          "text": "virtual, inverted, and magnified beyond the object"
-        }
-      ],
-      "correct": "B",
-      "difficulty": "easy",
-      "effort_tier": "tier1",
-      "explanation": "Images in plane mirrors are: virtual (cannot be projected on a screen), erect (upright, not flipped top-to-bottom), the same size as the object, and laterally inverted (left-right flip). The image appears as far behind the mirror as the object is in front."
-    },
-    {
-      "id": "sgk_PHY_OPTICS_MIXED_002",
-      "text": "The bending of a light ray when it passes from air into water is called ____.",
-      "options": [
-        {
-          "key": "A",
-          "text": "reflection at the water surface interface"
-        },
-        {
-          "key": "B",
-          "text": "diffraction around the water-air boundary"
-        },
-        {
-          "key": "C",
-          "text": "refraction due to change in optical density"
-        },
-        {
-          "key": "D",
-          "text": "dispersion into component wavelengths"
-        }
-      ],
-      "correct": "C",
-      "difficulty": "easy",
-      "effort_tier": "tier1",
-      "explanation": "Refraction is the bending of light at the boundary between two media of different optical densities. Light entering water from air slows down and bends toward the normal because water is optically denser (higher refractive index ~1.33) than air (~1.00)."
-    },
-    {
-      "id": "sgk_PHY_OPTICS_MIXED_003",
-      "text": "A convex lens is held very close (within its focal length) to a printed page. The image seen by the eye is ____.",
-      "options": [
-        {
-          "key": "A",
-          "text": "real, inverted, and magnified beyond focal length"
-        },
-        {
-          "key": "B",
-          "text": "virtual, erect, and magnified — acts as a magnifying glass"
-        },
-        {
-          "key": "C",
-          "text": "real, erect, and diminished to a smaller print size"
-        },
-        {
-          "key": "D",
-          "text": "virtual, inverted, and the same size as the original"
-        }
-      ],
-      "correct": "B",
-      "difficulty": "medium",
-      "effort_tier": "tier1",
-      "explanation": "When an object is placed between the optical centre and the focal point of a convex lens (u < f), the image formed is virtual, erect, and magnified — the basis of a magnifying glass. A real, inverted image requires the object to be beyond the focal point."
-    },
-    {
-      "id": "sgk_PHY_OPTICS_MIXED_004",
-      "text": "Total Internal Reflection (TIR) occurs when ____.",
-      "options": [
-        {
-          "key": "A",
-          "text": "light travels from a rarer medium to a denser medium at any angle"
-        },
-        {
-          "key": "B",
-          "text": "light travels from a denser medium to a rarer medium beyond the critical angle"
-        },
-        {
-          "key": "C",
-          "text": "white light splits into its component colours passing through a prism"
-        },
-        {
-          "key": "D",
-          "text": "light reflects off a concave mirror without any accompanying refraction"
-        }
-      ],
-      "correct": "B",
-      "difficulty": "medium",
-      "effort_tier": "tier1",
-      "explanation": "TIR requires two conditions: (1) light must travel from a denser to a rarer medium (e.g., glass to air), and (2) the angle of incidence must exceed the critical angle. Applications include optical fibres (communications), diamonds (brilliance), and mirages. Option A describes normal refraction, not TIR."
-    },
-    {
-      "id": "sgk_PHY_OPTICS_MIXED_005",
-      "text": "In the visible spectrum arranged from violet to red (VIBGYOR), which colour has the highest frequency?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Red — longest wavelength, lowest energy photons"
-        },
-        {
-          "key": "B",
-          "text": "Green — middle of the visible spectrum range"
-        },
-        {
-          "key": "C",
-          "text": "Yellow — highest intensity in sunlight spectrum"
-        },
-        {
-          "key": "D",
-          "text": "Violet — shortest wavelength, highest frequency"
-        }
-      ],
-      "correct": "D",
-      "difficulty": "medium",
-      "effort_tier": "tier1",
-      "explanation": "Frequency is inversely proportional to wavelength (f = c/λ). Violet has the shortest wavelength (~380–420 nm) and therefore the highest frequency and energy among visible colours. Red has the longest wavelength (~620–750 nm) and lowest frequency. This is why UV (beyond violet) causes sunburn while IR (beyond red) is merely heat."
-    },
-    {
-      "id": "sgk_PHY_OPTICS_MIXED_006",
-      "text": "A concave mirror has focal length 15 cm. An object is placed 45 cm in front of it (u = −45 cm, f = −15 cm). Using the mirror formula, the image distance v is ____.",
-      "options": [
-        {
-          "key": "A",
-          "text": "v = −22.5 cm (real image, 22.5 cm in front)"
-        },
-        {
-          "key": "B",
-          "text": "v = −30 cm (real image, 30 cm in front of mirror)"
-        },
-        {
-          "key": "C",
-          "text": "v = −45 cm (real image at same position as object)"
-        },
-        {
-          "key": "D",
-          "text": "v = +22.5 cm (virtual image, 22.5 cm behind mirror)"
-        }
-      ],
-      "correct": "A",
-      "difficulty": "hard",
-      "effort_tier": "tier2",
-      "explanation": "Mirror formula: 1/f = 1/v + 1/u → 1/v = 1/f − 1/u = 1/(−15) − 1/(−45) = −3/45 + 1/45 = −2/45. So v = −45/2 = −22.5 cm. Negative v confirms a real image formed in front of the concave mirror. The image is between the centre of curvature (30 cm) and the focus (15 cm), hence magnified."
-    },
-    {
-      "id": "sgk_PHY_OPTICS_MIXED_007",
-      "text": "Light passes from glass (refractive index 1.5) to air. sin C = 1/1.5, giving critical angle C ≈ 42°. A ray hits the glass–air interface at 45°. What happens?",
-      "options": [
-        {
-          "key": "A",
-          "text": "C ≈ 42°; the ray undergoes total internal reflection at 45°"
-        },
-        {
-          "key": "B",
-          "text": "C ≈ 48°; the ray refracts partially into air at 45°"
-        },
-        {
-          "key": "C",
-          "text": "C ≈ 42°; the ray refracts and partially reflects at 45°"
-        },
-        {
-          "key": "D",
-          "text": "C ≈ 48°; the ray undergoes total internal reflection at 45°"
-        }
-      ],
-      "correct": "A",
-      "difficulty": "hard",
-      "effort_tier": "tier2",
-      "explanation": "sin C = 1/n = 1/1.5 = 0.667 → C ≈ 41.8° ≈ 42°. Since the incident angle (45°) > critical angle (42°), the condition for TIR is met — the ray reflects entirely back into the glass with no refraction into air. This is why optical fibre cores (denser glass) confine light by TIR at the glass–cladding interface."
-    }
-  ]
-}
+[
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00001",
+    "text": "A plane mirror always forms an image that is ____.",
+    "options": [
+      {
+        "key": "A",
+        "text": "real, inverted, and the same size as the object"
+      },
+      {
+        "key": "B",
+        "text": "virtual, erect, and the same size as the object"
+      },
+      {
+        "key": "C",
+        "text": "real, erect, and diminished in comparison"
+      },
+      {
+        "key": "D",
+        "text": "virtual, inverted, and magnified beyond the object"
+      }
+    ],
+    "correct": "B",
+    "difficulty": "easy",
+    "effort_tier": "tier1",
+    "explanation": "Images in plane mirrors are: virtual (cannot be projected on a screen), erect (upright, not flipped top-to-bottom), the same size as the object, and laterally inverted (left-right flip). The image appears as far behind the mirror as the object is in front."
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00002",
+    "text": "The bending of a light ray when it passes from air into water is called ____.",
+    "options": [
+      {
+        "key": "A",
+        "text": "reflection at the water surface interface"
+      },
+      {
+        "key": "B",
+        "text": "diffraction around the water-air boundary"
+      },
+      {
+        "key": "C",
+        "text": "refraction due to change in optical density"
+      },
+      {
+        "key": "D",
+        "text": "dispersion into component wavelengths"
+      }
+    ],
+    "correct": "C",
+    "difficulty": "easy",
+    "effort_tier": "tier1",
+    "explanation": "Refraction is the bending of light at the boundary between two media of different optical densities. Light entering water from air slows down and bends toward the normal because water is optically denser (higher refractive index ~1.33) than air (~1.00)."
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00003",
+    "text": "A convex lens is held very close (within its focal length) to a printed page. The image seen by the eye is ____.",
+    "options": [
+      {
+        "key": "A",
+        "text": "real, inverted, and magnified beyond focal length"
+      },
+      {
+        "key": "B",
+        "text": "virtual, erect, and magnified — acts as a magnifying glass"
+      },
+      {
+        "key": "C",
+        "text": "real, erect, and diminished to a smaller print size"
+      },
+      {
+        "key": "D",
+        "text": "virtual, inverted, and the same size as the original"
+      }
+    ],
+    "correct": "B",
+    "difficulty": "medium",
+    "effort_tier": "tier1",
+    "explanation": "When an object is placed between the optical centre and the focal point of a convex lens (u < f), the image formed is virtual, erect, and magnified — the basis of a magnifying glass. A real, inverted image requires the object to be beyond the focal point."
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00004",
+    "text": "Total Internal Reflection (TIR) occurs when ____.",
+    "options": [
+      {
+        "key": "A",
+        "text": "light travels from a rarer medium to a denser medium at any angle"
+      },
+      {
+        "key": "B",
+        "text": "light travels from a denser medium to a rarer medium beyond the critical angle"
+      },
+      {
+        "key": "C",
+        "text": "white light splits into its component colours passing through a prism"
+      },
+      {
+        "key": "D",
+        "text": "light reflects off a concave mirror without any accompanying refraction"
+      }
+    ],
+    "correct": "B",
+    "difficulty": "medium",
+    "effort_tier": "tier1",
+    "explanation": "TIR requires two conditions: (1) light must travel from a denser to a rarer medium (e.g., glass to air), and (2) the angle of incidence must exceed the critical angle. Applications include optical fibres (communications), diamonds (brilliance), and mirages. Option A describes normal refraction, not TIR."
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00005",
+    "text": "In the visible spectrum arranged from violet to red (VIBGYOR), which colour has the highest frequency?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Red — longest wavelength, lowest energy photons"
+      },
+      {
+        "key": "B",
+        "text": "Green — middle of the visible spectrum range"
+      },
+      {
+        "key": "C",
+        "text": "Yellow — highest intensity in sunlight spectrum"
+      },
+      {
+        "key": "D",
+        "text": "Violet — shortest wavelength, highest frequency"
+      }
+    ],
+    "correct": "D",
+    "difficulty": "medium",
+    "effort_tier": "tier1",
+    "explanation": "Frequency is inversely proportional to wavelength (f = c/λ). Violet has the shortest wavelength (~380–420 nm) and therefore the highest frequency and energy among visible colours. Red has the longest wavelength (~620–750 nm) and lowest frequency. This is why UV (beyond violet) causes sunburn while IR (beyond red) is merely heat."
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00006",
+    "text": "A concave mirror has focal length 15 cm. An object is placed 45 cm in front of it (u = −45 cm, f = −15 cm). Using the mirror formula, the image distance v is ____.",
+    "options": [
+      {
+        "key": "A",
+        "text": "v = −22.5 cm (real image, 22.5 cm in front)"
+      },
+      {
+        "key": "B",
+        "text": "v = −30 cm (real image, 30 cm in front of mirror)"
+      },
+      {
+        "key": "C",
+        "text": "v = −45 cm (real image at same position as object)"
+      },
+      {
+        "key": "D",
+        "text": "v = +22.5 cm (virtual image, 22.5 cm behind mirror)"
+      }
+    ],
+    "correct": "A",
+    "difficulty": "hard",
+    "effort_tier": "tier2",
+    "explanation": "Mirror formula: 1/f = 1/v + 1/u → 1/v = 1/f − 1/u = 1/(−15) − 1/(−45) = −3/45 + 1/45 = −2/45. So v = −45/2 = −22.5 cm. Negative v confirms a real image formed in front of the concave mirror. The image is between the centre of curvature (30 cm) and the focus (15 cm), hence magnified."
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00007",
+    "text": "Light passes from glass (refractive index 1.5) to air. sin C = 1/1.5, giving critical angle C ≈ 42°. A ray hits the glass–air interface at 45°. What happens?",
+    "options": [
+      {
+        "key": "A",
+        "text": "C ≈ 42°; the ray undergoes total internal reflection at 45°"
+      },
+      {
+        "key": "B",
+        "text": "C ≈ 48°; the ray refracts partially into air at 45°"
+      },
+      {
+        "key": "C",
+        "text": "C ≈ 42°; the ray refracts and partially reflects at 45°"
+      },
+      {
+        "key": "D",
+        "text": "C ≈ 48°; the ray undergoes total internal reflection at 45°"
+      }
+    ],
+    "correct": "A",
+    "difficulty": "hard",
+    "effort_tier": "tier2",
+    "explanation": "sin C = 1/n = 1/1.5 = 0.667 → C ≈ 41.8° ≈ 42°. Since the incident angle (45°) > critical angle (42°), the condition for TIR is met — the ray reflects entirely back into the glass with no refraction into air. This is why optical fibre cores (denser glass) confine light by TIR at the glass–cladding interface."
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00008",
+    "stem": "The speed of light in vacuum is approximately:",
+    "options": [
+      {
+        "option_text": "3 × 10⁶ m/s",
+        "is_correct": "3 × 10⁸ m/s"
+      },
+      {
+        "option_text": "3 × 10¹⁰ m/s",
+        "is_correct": false
+      },
+      {
+        "option_text": "3 × 10⁴ m/s",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "The speed of light in vacuum (c) ≈ 3 × 10⁸ m/s (exactly 299,792,458 m/s). This is the universal speed limit.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025481Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00009",
+    "stem": "A convex lens is also called a _____ lens because it converges light.",
+    "options": [
+      {
+        "option_text": "Diverging",
+        "is_correct": "Converging"
+      },
+      {
+        "option_text": "Concave",
+        "is_correct": false
+      },
+      {
+        "option_text": "Planar",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "A convex lens (thick at centre) converges parallel light rays to a focal point — hence called a converging lens.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025528Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00010",
+    "stem": "The phenomenon of light bending when it passes from one medium to another is called:",
+    "options": [
+      {
+        "option_text": "Reflection",
+        "is_correct": "Refraction"
+      },
+      {
+        "option_text": "Diffraction",
+        "is_correct": false
+      },
+      {
+        "option_text": "Polarisation",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "Refraction is the bending of light when it passes from one medium to another with a different optical density (refractive index), because its speed changes.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025550Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00011",
+    "stem": "Total Internal Reflection occurs when:",
+    "options": [
+      {
+        "option_text": "Light passes from a rarer to a denser medium",
+        "is_correct": "Light in a denser medium hits the boundary at an angle greater than the critical angle"
+      },
+      {
+        "option_text": "Light is completely absorbed",
+        "is_correct": false
+      },
+      {
+        "option_text": "A lens breaks the light beam",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "TIR: when light in a denser medium (glass, water) strikes the boundary with a rarer medium at an angle greater than the critical angle, all light is reflected back. This principle is used in optical fibres.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025562Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00012",
+    "stem": "The critical angle for glass (refractive index n=1.5) with respect to air is approximately:",
+    "options": [
+      {
+        "option_text": "30°",
+        "is_correct": "41.8°"
+      },
+      {
+        "option_text": "60°",
+        "is_correct": false
+      },
+      {
+        "option_text": "45°",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "HARD",
+    "effort_tier": "C",
+    "staleness_risk": "LOW",
+    "explanation": "Critical angle θ_c = sin⁻¹(1/n) = sin⁻¹(1/1.5) = sin⁻¹(0.667) ≈ 41.8°.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025575Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00013",
+    "stem": "Myopia (short-sightedness) is corrected using a:",
+    "options": [
+      {
+        "option_text": "Convex lens",
+        "is_correct": "Concave (diverging) lens"
+      },
+      {
+        "option_text": "Bifocal lens only",
+        "is_correct": false
+      },
+      {
+        "option_text": "Prism",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "In myopia, the image forms in front of the retina (eyeball too long or lens too powerful). A concave lens diverges the incoming light to shift the focal point backward onto the retina.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025587Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00014",
+    "stem": "Hypermetropia (long-sightedness) is corrected using a:",
+    "options": [
+      {
+        "option_text": "Concave lens",
+        "is_correct": "Convex (converging) lens"
+      },
+      {
+        "option_text": "Prism",
+        "is_correct": false
+      },
+      {
+        "option_text": "Cylindrical lens only",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "In hypermetropia, the image focuses behind the retina. A convex lens adds converging power to bring the focal point forward onto the retina.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025600Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00015",
+    "stem": "The refractive index of a medium is defined as:",
+    "options": [
+      {
+        "option_text": "Speed of light in medium / Speed in vacuum",
+        "is_correct": "Speed of light in vacuum / Speed of light in the medium"
+      },
+      {
+        "option_text": "Wavelength in vacuum / Wavelength in medium",
+        "is_correct": false
+      },
+      {
+        "option_text": "Both B and C are correct",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "D",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "Refractive index n = c/v (speed in vacuum / speed in medium). Also n = λ₀/λ_medium (vacuum wavelength / wavelength in medium). Both B and C are correct.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025612Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00016",
+    "stem": "The splitting of white light into its component colours by a prism is called:",
+    "options": [
+      {
+        "option_text": "Interference",
+        "is_correct": "Dispersion"
+      },
+      {
+        "option_text": "Scattering",
+        "is_correct": false
+      },
+      {
+        "option_text": "Diffraction",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "Dispersion occurs because different wavelengths (colours) of light refract by different amounts in the prism medium. Violet bends most (highest refractive index), red least.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025624Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00017",
+    "stem": "VIBGYOR represents the order of colours in the visible spectrum from:",
+    "options": [
+      {
+        "option_text": "Highest to lowest wavelength (violet to red)",
+        "is_correct": "Lowest to highest wavelength (violet to red) — i.e., from 380 nm to 700 nm"
+      },
+      {
+        "option_text": "Alphabetical order",
+        "is_correct": false
+      },
+      {
+        "option_text": "From lowest to highest frequency",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "VIBGYOR: Violet–Indigo–Blue–Green–Yellow–Orange–Red. Violet has the shortest wavelength (~380 nm, highest frequency); Red has the longest (~700 nm, lowest frequency).",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025636Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00018",
+    "stem": "The blue colour of the sky is due to:",
+    "options": [
+      {
+        "option_text": "Reflection of ocean colour",
+        "is_correct": "Rayleigh scattering — shorter (blue) wavelengths scatter more than red"
+      },
+      {
+        "option_text": "Absorption of red light",
+        "is_correct": false
+      },
+      {
+        "option_text": "Presence of blue ozone",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "Rayleigh scattering: the intensity of scattering is proportional to 1/λ⁴. Blue light (shorter wavelength) is scattered ~5.5 times more than red, making the sky appear blue from all directions.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025711Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00019",
+    "stem": "Optical fibres use the principle of:",
+    "options": [
+      {
+        "option_text": "Diffraction of light",
+        "is_correct": "Total internal reflection"
+      },
+      {
+        "option_text": "Refraction only",
+        "is_correct": false
+      },
+      {
+        "option_text": "Polarisation",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "Optical fibres guide light through repeated total internal reflections along the core (denser glass) without loss through the cladding (less dense glass). Used in telecommunications and medical instruments.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025723Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00020",
+    "stem": "A concave mirror is used in which of these devices?",
+    "options": [
+      {
+        "option_text": "Rear-view mirror in vehicles",
+        "is_correct": "Torch/flashlight, headlights, solar concentrators"
+      },
+      {
+        "option_text": "Periscope",
+        "is_correct": false
+      },
+      {
+        "option_text": "Kaleidoscope",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "Concave mirrors (converging) are used to create parallel beams (with source at focus) in torches, headlights, and to concentrate solar energy. Convex mirrors are used as rear-view mirrors (wider field of view).",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025739Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00021",
+    "stem": "The phenomenon of formation of rainbow is due to:",
+    "options": [
+      {
+        "option_text": "Only reflection by water droplets",
+        "is_correct": "Dispersion, total internal reflection, and refraction in water droplets"
+      },
+      {
+        "option_text": "Only refraction",
+        "is_correct": false
+      },
+      {
+        "option_text": "Diffraction of sunlight",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "HARD",
+    "effort_tier": "C",
+    "staleness_risk": "LOW",
+    "explanation": "Rainbows form when sunlight enters water droplets, undergoes refraction (entering), TIR (inside), and refraction again (exiting) — dispersing white light into a spectrum. Red appears outside, violet inside.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025750Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00022",
+    "stem": "The focal length of a convex lens is 20 cm. Its power is:",
+    "options": [
+      {
+        "option_text": "20 D",
+        "is_correct": "5 D (= 1/0.2 m)"
+      },
+      {
+        "option_text": "0.2 D",
+        "is_correct": false
+      },
+      {
+        "option_text": "−5 D",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "Power P = 1/f (in metres) = 1/0.20 = 5 D (dioptres). Convex lenses have positive power.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025761Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00023",
+    "stem": "In a camera, the role of the film/sensor (in relation to the eye) corresponds to the:",
+    "options": [
+      {
+        "option_text": "Cornea",
+        "is_correct": "Retina"
+      },
+      {
+        "option_text": "Iris",
+        "is_correct": false
+      },
+      {
+        "option_text": "Pupil",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "In the eye-camera analogy: lens ↔ lens, iris ↔ aperture, retina ↔ film/sensor, cornea ↔ outer glass. The retina receives the focused image, as does the film.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025773Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00024",
+    "stem": "Astigmatism is caused by an imperfect curvature of the:",
+    "options": [
+      {
+        "option_text": "Retina",
+        "is_correct": "Cornea or lens (not perfectly spherical)"
+      },
+      {
+        "option_text": "Iris",
+        "is_correct": false
+      },
+      {
+        "option_text": "Pupil",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "Astigmatism occurs when the cornea or lens has an irregular curvature, causing light to focus at multiple points rather than one, leading to blurred or distorted vision.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025784Z"
+  },
+  {
+    "id": "sgk_PHY_OPTICS_MIXED_00025",
+    "stem": "The phenomenon of light bending around the edges of an obstacle is called:",
+    "options": [
+      {
+        "option_text": "Refraction",
+        "is_correct": "Diffraction"
+      },
+      {
+        "option_text": "Reflection",
+        "is_correct": false
+      },
+      {
+        "option_text": "Dispersion",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Optics",
+    "topic_code": "PHY_OPTICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "Diffraction is the spreading of waves around obstacles or through narrow openings. It is more pronounced when the obstacle/slit size is comparable to the wavelength of light.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:50:52.025795Z"
+  }
+]

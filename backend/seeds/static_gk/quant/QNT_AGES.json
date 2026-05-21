@@ -1,156 +1,668 @@
-{
-  "schema_version": 1,
-  "subject": "Quantitative Aptitude",
-  "topic": "Ages",
-  "topic_code": "QNT_AGES",
-  "description": null,
-  "questions": [
-    {
-      "stem": "Father is thrice as old as his son. After 10 years, he will be twice as old as the son. Present age of the son is:",
-      "options": [
-        {"option_text": "8 years", "is_correct": false},
-        {"option_text": "10 years", "is_correct": true},
-        {"option_text": "12 years", "is_correct": false},
-        {"option_text": "15 years", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "Let son = x, father = 3x. After 10 yrs: 3x+10 = 2(x+10) → 3x+10 = 2x+20 → x = 10. Verify: father 30 now, son 10; after 10 yrs father 40, son 20 → 2:1 ✓.",
-      "subject": "Quantitative Aptitude",
-      "topic": "Ages",
-      "topic_code": "QNT_AGES",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-21-qnt-ag-01",
-      "generated_at": "2026-04-21T13:30:00+00:00",
-      "id": "sgk_QNT_AGES_00001"
-    },
-    {
-      "stem": "Ratio of ages of A and B is 4:5. After 6 years, ratio becomes 6:7. Present age of A is:",
-      "options": [
-        {"option_text": "10 years", "is_correct": false},
-        {"option_text": "12 years", "is_correct": true},
-        {"option_text": "15 years", "is_correct": false},
-        {"option_text": "18 years", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "Let A = 4k, B = 5k. (4k+6)/(5k+6) = 6/7 → 7(4k+6) = 6(5k+6) → 28k+42 = 30k+36 → 2k = 6 → k = 3. A = 12. Verify: 12:15 = 4:5 ✓; +6 → 18:21 = 6:7 ✓.",
-      "subject": "Quantitative Aptitude",
-      "topic": "Ages",
-      "topic_code": "QNT_AGES",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-21-qnt-ag-02",
-      "generated_at": "2026-04-21T13:30:00+00:00",
-      "id": "sgk_QNT_AGES_00002"
-    },
-    {
-      "stem": "Present ages of A and B are in the ratio 5:7. Five years ago the ratio was 4:6. Sum of their present ages is:",
-      "options": [
-        {"option_text": "48 years", "is_correct": false},
-        {"option_text": "60 years", "is_correct": true},
-        {"option_text": "72 years", "is_correct": false},
-        {"option_text": "84 years", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "Let A = 5k, B = 7k. (5k−5)/(7k−5) = 4/6 = 2/3 → 3(5k−5) = 2(7k−5) → 15k − 15 = 14k − 10 → k = 5. A = 25, B = 35; sum = 60. Verify: 5 yrs ago 20:30 = 2:3 = 4:6 ✓.",
-      "subject": "Quantitative Aptitude",
-      "topic": "Ages",
-      "topic_code": "QNT_AGES",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-21-qnt-ag-03",
-      "generated_at": "2026-04-21T13:30:00+00:00",
-      "id": "sgk_QNT_AGES_00003"
-    },
-    {
-      "stem": "Average age of a family of 5 members is 20. If the youngest (5 years old) is excluded, the average of the remaining four is:",
-      "options": [
-        {"option_text": "22.75", "is_correct": false},
-        {"option_text": "23.75", "is_correct": true},
-        {"option_text": "24.50", "is_correct": false},
-        {"option_text": "25.00", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "Total age = 5 × 20 = 100. Exclude 5 → 95 left across 4 members → 95/4 = 23.75.",
-      "subject": "Quantitative Aptitude",
-      "topic": "Ages",
-      "topic_code": "QNT_AGES",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-21-qnt-ag-04",
-      "generated_at": "2026-04-21T13:30:00+00:00",
-      "id": "sgk_QNT_AGES_00004"
-    },
-    {
-      "stem": "Ten years ago, father was 4 times as old as his son. Ten years hence, he will be twice as old. Present age of father:",
-      "options": [
-        {"option_text": "40 years", "is_correct": false},
-        {"option_text": "50 years", "is_correct": true},
-        {"option_text": "60 years", "is_correct": false},
-        {"option_text": "70 years", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "Let son's present age = s, father's = f. 10 yrs ago: f − 10 = 4(s − 10) → f = 4s − 30. 10 yrs hence: f + 10 = 2(s + 10) → f = 2s + 10. Equate: 4s − 30 = 2s + 10 → s = 20 → f = 50. Verify: 10 yrs ago 40 = 4·10 ✓; 10 yrs hence 60 = 2·30 ✓.",
-      "subject": "Quantitative Aptitude",
-      "topic": "Ages",
-      "topic_code": "QNT_AGES",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-21-qnt-ag-05",
-      "generated_at": "2026-04-21T13:30:00+00:00",
-      "id": "sgk_QNT_AGES_00005"
-    },
-    {
-      "stem": "A man is 24 years older than his son. In two years his age will be twice the son's. Present age of son:",
-      "options": [
-        {"option_text": "18 years", "is_correct": false},
-        {"option_text": "20 years", "is_correct": false},
-        {"option_text": "22 years", "is_correct": true},
-        {"option_text": "24 years", "is_correct": false}
-      ],
-      "correct_letter": "C",
-      "explanation": "Son = x, man = x + 24. In 2 yrs: (x+24+2) = 2(x+2) → x+26 = 2x+4 → x = 22.",
-      "subject": "Quantitative Aptitude",
-      "topic": "Ages",
-      "topic_code": "QNT_AGES",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-21-qnt-ag-06",
-      "generated_at": "2026-04-21T13:30:00+00:00",
-      "id": "sgk_QNT_AGES_00006"
-    },
-    {
-      "stem": "Average age of 30 students is 14. With the class teacher's age included, the average rises by 1. Teacher's age is:",
-      "options": [
-        {"option_text": "42 years", "is_correct": false},
-        {"option_text": "45 years", "is_correct": true},
-        {"option_text": "48 years", "is_correct": false},
-        {"option_text": "50 years", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "Old total = 30 × 14 = 420. New total = 31 × 15 = 465. Teacher = 465 − 420 = 45. Shortcut: new avg 15 + additional contribution to the other 30 (1 × 30 = 30) = 45.",
-      "subject": "Quantitative Aptitude",
-      "topic": "Ages",
-      "topic_code": "QNT_AGES",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-21-qnt-ag-07",
-      "generated_at": "2026-04-21T13:30:00+00:00",
-      "id": "sgk_QNT_AGES_00007"
-    }
-  ]
-}
+[
+  {
+    "stem": "Father is thrice as old as his son. After 10 years, he will be twice as old as the son. Present age of the son is:",
+    "options": [
+      {
+        "option_text": "8 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "10 years",
+        "is_correct": true
+      },
+      {
+        "option_text": "12 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "15 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "Let son = x, father = 3x. After 10 yrs: 3x+10 = 2(x+10) → 3x+10 = 2x+20 → x = 10. Verify: father 30 now, son 10; after 10 yrs father 40, son 20 → 2:1 ✓.",
+    "subject": "Quantitative Aptitude",
+    "topic": "Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-21-qnt-ag-01",
+    "generated_at": "2026-04-21T13:30:00+00:00",
+    "id": "sgk_QNT_AGES_00001"
+  },
+  {
+    "stem": "Ratio of ages of A and B is 4:5. After 6 years, ratio becomes 6:7. Present age of A is:",
+    "options": [
+      {
+        "option_text": "10 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "12 years",
+        "is_correct": true
+      },
+      {
+        "option_text": "15 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "18 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "Let A = 4k, B = 5k. (4k+6)/(5k+6) = 6/7 → 7(4k+6) = 6(5k+6) → 28k+42 = 30k+36 → 2k = 6 → k = 3. A = 12. Verify: 12:15 = 4:5 ✓; +6 → 18:21 = 6:7 ✓.",
+    "subject": "Quantitative Aptitude",
+    "topic": "Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-21-qnt-ag-02",
+    "generated_at": "2026-04-21T13:30:00+00:00",
+    "id": "sgk_QNT_AGES_00002"
+  },
+  {
+    "stem": "Present ages of A and B are in the ratio 5:7. Five years ago the ratio was 4:6. Sum of their present ages is:",
+    "options": [
+      {
+        "option_text": "48 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "60 years",
+        "is_correct": true
+      },
+      {
+        "option_text": "72 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "84 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "Let A = 5k, B = 7k. (5k−5)/(7k−5) = 4/6 = 2/3 → 3(5k−5) = 2(7k−5) → 15k − 15 = 14k − 10 → k = 5. A = 25, B = 35; sum = 60. Verify: 5 yrs ago 20:30 = 2:3 = 4:6 ✓.",
+    "subject": "Quantitative Aptitude",
+    "topic": "Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-21-qnt-ag-03",
+    "generated_at": "2026-04-21T13:30:00+00:00",
+    "id": "sgk_QNT_AGES_00003"
+  },
+  {
+    "stem": "Average age of a family of 5 members is 20. If the youngest (5 years old) is excluded, the average of the remaining four is:",
+    "options": [
+      {
+        "option_text": "22.75",
+        "is_correct": false
+      },
+      {
+        "option_text": "23.75",
+        "is_correct": true
+      },
+      {
+        "option_text": "24.50",
+        "is_correct": false
+      },
+      {
+        "option_text": "25.00",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "Total age = 5 × 20 = 100. Exclude 5 → 95 left across 4 members → 95/4 = 23.75.",
+    "subject": "Quantitative Aptitude",
+    "topic": "Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-21-qnt-ag-04",
+    "generated_at": "2026-04-21T13:30:00+00:00",
+    "id": "sgk_QNT_AGES_00004"
+  },
+  {
+    "stem": "Ten years ago, father was 4 times as old as his son. Ten years hence, he will be twice as old. Present age of father:",
+    "options": [
+      {
+        "option_text": "40 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "50 years",
+        "is_correct": true
+      },
+      {
+        "option_text": "60 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "70 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "Let son's present age = s, father's = f. 10 yrs ago: f − 10 = 4(s − 10) → f = 4s − 30. 10 yrs hence: f + 10 = 2(s + 10) → f = 2s + 10. Equate: 4s − 30 = 2s + 10 → s = 20 → f = 50. Verify: 10 yrs ago 40 = 4·10 ✓; 10 yrs hence 60 = 2·30 ✓.",
+    "subject": "Quantitative Aptitude",
+    "topic": "Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-21-qnt-ag-05",
+    "generated_at": "2026-04-21T13:30:00+00:00",
+    "id": "sgk_QNT_AGES_00005"
+  },
+  {
+    "stem": "A man is 24 years older than his son. In two years his age will be twice the son's. Present age of son:",
+    "options": [
+      {
+        "option_text": "18 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "20 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "22 years",
+        "is_correct": true
+      },
+      {
+        "option_text": "24 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "C",
+    "explanation": "Son = x, man = x + 24. In 2 yrs: (x+24+2) = 2(x+2) → x+26 = 2x+4 → x = 22.",
+    "subject": "Quantitative Aptitude",
+    "topic": "Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-21-qnt-ag-06",
+    "generated_at": "2026-04-21T13:30:00+00:00",
+    "id": "sgk_QNT_AGES_00006"
+  },
+  {
+    "stem": "Average age of 30 students is 14. With the class teacher's age included, the average rises by 1. Teacher's age is:",
+    "options": [
+      {
+        "option_text": "42 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "45 years",
+        "is_correct": true
+      },
+      {
+        "option_text": "48 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "50 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "Old total = 30 × 14 = 420. New total = 31 × 15 = 465. Teacher = 465 − 420 = 45. Shortcut: new avg 15 + additional contribution to the other 30 (1 × 30 = 30) = 45.",
+    "subject": "Quantitative Aptitude",
+    "topic": "Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-21-qnt-ag-07",
+    "generated_at": "2026-04-21T13:30:00+00:00",
+    "id": "sgk_QNT_AGES_00007"
+  },
+  {
+    "id": "sgk_QNT_AGES_00008",
+    "stem": "The ratio of ages of A and B is 3:4. After 5 years the ratio will be 4:5. Find A's present age.",
+    "options": [
+      {
+        "option_text": "12 years",
+        "is_correct": "15 years"
+      },
+      {
+        "option_text": "10 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "9 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "Let A=3x, B=4x. (3x+5)/(4x+5)=4/5 → 15x+25=16x+20 → x=5. A=15 years.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965601Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00009",
+    "stem": "A is 20 years older than B. Five years ago A was twice as old as B. Find their present ages.",
+    "options": [
+      {
+        "option_text": "A=35, B=15",
+        "is_correct": "A=45, B=25"
+      },
+      {
+        "option_text": "A=40, B=20",
+        "is_correct": false
+      },
+      {
+        "option_text": "A=30, B=10",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "A = B+20. Five years ago: (A−5)=2(B−5). A−5=2B−10. (B+20)−5=2B−10. B+15=2B−10. B=25. A=45.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965611Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00010",
+    "stem": "Priya is twice as old as her sister was when Priya was as old as her sister is now. If their combined ages are 56, how old is Priya now?",
+    "options": [
+      {
+        "option_text": "28 years",
+        "is_correct": "32 years"
+      },
+      {
+        "option_text": "24 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "36 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "HARD",
+    "effort_tier": "C",
+    "staleness_risk": "LOW",
+    "explanation": "Let sister's age = S, Priya = P. Difference D = P−S. When Priya was S years old, that was D years ago. Sister was then S−D = S−(P−S) = 2S−P years old. Priya now = twice (2S−P). P = 2(2S−P) = 4S−2P. 3P=4S. P+S=56. From 3P=4S → S=3P/4. P+3P/4=56. 7P/4=56. P=32.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965617Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00011",
+    "stem": "10 years ago the ratio of ages of A and B was 5:7. Now the ratio is 7:9. Find the present age of A.",
+    "options": [
+      {
+        "option_text": "30 years",
+        "is_correct": "35 years"
+      },
+      {
+        "option_text": "25 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "40 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "HARD",
+    "effort_tier": "C",
+    "staleness_risk": "LOW",
+    "explanation": "(A−10)/(B−10)=5/7 → 7A−70=5B−50 → 7A=5B+20. A/B=7/9 → B=9A/7. 7A=5(9A/7)+20. 49A=45A+140. 4A=140. A=35.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965620Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00012",
+    "stem": "The present ages of three people are in ratio 4:7:9. Eight years ago the sum of their ages was 56. Find the present age of the oldest.",
+    "options": [
+      {
+        "option_text": "36 years",
+        "is_correct": "32 years"
+      },
+      {
+        "option_text": "28 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "40 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "A",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "Present sum = 4x+7x+9x = 20x. Eight years ago sum = 20x−24 = 56. 20x=80. x=4. Oldest = 9×4 = 36.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965626Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00013",
+    "stem": "A is 4 years younger than B and 6 years older than C. If the sum of all three ages is 46, find B's age.",
+    "options": [
+      {
+        "option_text": "18 years",
+        "is_correct": "20 years"
+      },
+      {
+        "option_text": "16 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "22 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "A = B−4; C = A−6 = B−10. Sum: (B−4)+B+(B−10)=46. 3B−14=46. 3B=60. B=20.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965629Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00014",
+    "stem": "The average age of a class of 20 students is 16 years. If the teacher's age is included, the average becomes 17 years. How old is the teacher?",
+    "options": [
+      {
+        "option_text": "37 years",
+        "is_correct": "37 years — same calculation two ways"
+      },
+      {
+        "option_text": "34 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "40 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "A",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "Total without teacher = 20×16=320. Total with teacher = 21×17=357. Teacher = 357−320 = 37.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965632Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00015",
+    "stem": "Father's age is 3 times his son's age. After 12 years father will be twice the son's age. What is the son's present age?",
+    "options": [
+      {
+        "option_text": "12 years",
+        "is_correct": "10 years"
+      },
+      {
+        "option_text": "15 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "8 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "A",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "F=3S. F+12=2(S+12). 3S+12=2S+24. S=12.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965638Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00016",
+    "stem": "The ratio of ages of Asha and Radha is 4:5. After 6 years the ratio will be 7:8. Find Asha's present age.",
+    "options": [
+      {
+        "option_text": "8 years",
+        "is_correct": "16 years"
+      },
+      {
+        "option_text": "12 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "20 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "A",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "4x+6)/(5x+6)=7/8. 32x+48=35x+42. 6=3x. x=2. Asha=8.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965641Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00017",
+    "stem": "The average age of 5 members in a family is 24 years. If the youngest member is 4 years old, what was the average age of the family just before the youngest was born?",
+    "options": [
+      {
+        "option_text": "25 years",
+        "is_correct": "20 years"
+      },
+      {
+        "option_text": "24 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "28 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "A",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "HARD",
+    "effort_tier": "C",
+    "staleness_risk": "LOW",
+    "explanation": "Total age now = 120. Four years ago, each of the other 4 members was 4 years younger. Total of 4 members 4 years ago = 120−4 (youngest now 0, remove him) = 116−4×4 = 116−16 = 100. Average = 100/4 = 25.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965653Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00018",
+    "stem": "A boy is 10 years older than his brother. Two years hence he will be twice his brother's age. Find the brother's present age.",
+    "options": [
+      {
+        "option_text": "6 years",
+        "is_correct": "8 years"
+      },
+      {
+        "option_text": "10 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "12 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "A = B+10. A+2=2(B+2). B+10+2=2B+4. 12=B+2. B=8. Wait: B+12=2B+4 → 8=B. Yes, B=8.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965656Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00019",
+    "stem": "Five years ago, the age of P was twice that of Q. Five years hence, P's age will be 1.5 times Q's age. Find P's present age.",
+    "options": [
+      {
+        "option_text": "20 years",
+        "is_correct": "25 years"
+      },
+      {
+        "option_text": "30 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "15 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "HARD",
+    "effort_tier": "C",
+    "staleness_risk": "LOW",
+    "explanation": "P−5=2(Q−5); P+5=1.5(Q+5). From 1st: P=2Q−5. Sub in 2nd: 2Q−5+5=1.5Q+7.5. 2Q=1.5Q+7.5. 0.5Q=7.5. Q=15. P=2(15)−5=25.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965661Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00020",
+    "stem": "Mahesh is 5 years younger than his wife. Four years back, their ages were in ratio 5:6. How old is Mahesh now?",
+    "options": [
+      {
+        "option_text": "24 years",
+        "is_correct": "29 years"
+      },
+      {
+        "option_text": "34 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "19 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "W=M+5. (M−4)/(W−4)=5/6. 6(M−4)=5(W−4). 6M−24=5W−20. 6M−24=5(M+5)−20. 6M−24=5M+25−20=5M+5. M=29.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965665Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00021",
+    "stem": "Age of a grandfather is 6 times age of his grandson. If the grandfather is 60, the grandson is:",
+    "options": [
+      {
+        "option_text": "10 years",
+        "is_correct": "6 years"
+      },
+      {
+        "option_text": "12 years",
+        "is_correct": false
+      },
+      {
+        "option_text": "8 years",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "A",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "60/6 = 10 years.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965671Z"
+  },
+  {
+    "id": "sgk_QNT_AGES_00022",
+    "stem": "The present average age of a couple is 30. 3 years ago their average age was 27. This is consistent because:",
+    "options": [
+      {
+        "option_text": "Both are 3 years older now",
+        "is_correct": "The average increases by 3 as both age by 3 — always true"
+      },
+      {
+        "option_text": "One of them is older by 6",
+        "is_correct": false
+      },
+      {
+        "option_text": "False; average should be 33",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "topic_code": "QNT_AGES",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "Each person ages 1 year per year. After 3 years, both ages increase by 3 total from the couple, so average increases by 3. 27+3=30. Consistent.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:28:57.965674Z"
+  }
+]

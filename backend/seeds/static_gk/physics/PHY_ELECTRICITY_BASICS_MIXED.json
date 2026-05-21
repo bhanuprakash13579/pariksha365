@@ -1,156 +1,755 @@
-{
-  "schema_version": 1,
-  "subject": "Physics",
-  "topic": "Electricity basics — mixed tiers",
-  "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
-  "description": "Charge, current, voltage, Ohm's law, power",
-  "questions": [
-    {
-      "stem": "The SI unit of electric current is the:",
-      "options": [
-        {"option_text": "Volt", "is_correct": false},
-        {"option_text": "Ampere", "is_correct": true},
-        {"option_text": "Ohm", "is_correct": false},
-        {"option_text": "Coulomb", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "Ampere (A) is the SI base unit of electric current. 1 A = 1 coulomb per second. Volt is the unit of potential difference; ohm is the unit of resistance; coulomb is the unit of charge. The ampere is one of the seven SI base units and was redefined in 2019 in terms of the elementary charge e.",
-      "subject": "Physics",
-      "topic": "Electricity basics — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-el-01",
-      "generated_at": "2026-04-23T11:20:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00001"
-    },
-    {
-      "stem": "Ohm's law states that in a metallic conductor at constant temperature, the current is:",
-      "options": [
-        {"option_text": "Inversely proportional to the voltage", "is_correct": false},
-        {"option_text": "Directly proportional to the voltage", "is_correct": true},
-        {"option_text": "Independent of the voltage", "is_correct": false},
-        {"option_text": "Proportional to voltage squared", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "Ohm's law: V = IR. At constant temperature, current is directly proportional to voltage, so doubling V doubles I (assuming R is constant). Non-ohmic devices — diodes, filament lamps, thermistors — do not satisfy this relation. Wire resistance itself grows with temperature, which is why long-run steady-state currents in heaters are lower than their cold-start value.",
-      "subject": "Physics",
-      "topic": "Electricity basics — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-el-02",
-      "generated_at": "2026-04-23T11:20:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00002"
-    },
-    {
-      "stem": "An electrical appliance rated 2 kW is run for 5 hours. The electrical energy consumed is:",
-      "options": [
-        {"option_text": "2 kWh", "is_correct": false},
-        {"option_text": "10 kWh", "is_correct": true},
-        {"option_text": "5 kWh", "is_correct": false},
-        {"option_text": "10 W", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "Energy = Power × Time = 2 kW × 5 h = 10 kWh. 1 kWh is the unit a domestic electricity meter measures ('1 unit'). At ₹7/unit this would cost ₹70. A common error is to treat power in W and time in seconds without converting — here 2 kW × 5 h is 10 kWh or 3.6 × 10⁷ J.",
-      "subject": "Physics",
-      "topic": "Electricity basics — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-el-03",
-      "generated_at": "2026-04-23T11:20:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00003"
-    },
-    {
-      "stem": "The filament of an incandescent bulb is made of which metal?",
-      "options": [
-        {"option_text": "Copper", "is_correct": false},
-        {"option_text": "Tungsten", "is_correct": true},
-        {"option_text": "Iron", "is_correct": false},
-        {"option_text": "Aluminium", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "Tungsten — extremely high melting point (~3,422 °C) — can glow white-hot without melting. The bulb is filled with inert gas (argon / nitrogen) to slow evaporation of the filament. Copper has a good conductivity but melts at only 1,085 °C. Incandescent bulbs are largely phased out in favour of LEDs because of very poor efficiency (< 5 % of input power becomes light).",
-      "subject": "Physics",
-      "topic": "Electricity basics — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-el-04",
-      "generated_at": "2026-04-23T11:20:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00004"
-    },
-    {
-      "stem": "The equivalent resistance of two 6 Ω resistors connected in parallel is:",
-      "options": [
-        {"option_text": "12 Ω", "is_correct": false},
-        {"option_text": "3 Ω", "is_correct": true},
-        {"option_text": "6 Ω", "is_correct": false},
-        {"option_text": "1 Ω", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "For two resistors in parallel, R_eq = R₁R₂ / (R₁ + R₂) = 6 × 6 / 12 = 3 Ω. Shortcut — n equal resistors of R each, in parallel, have equivalent R/n. 12 Ω is the series-connection answer (R₁ + R₂), a common trap. In parallel the equivalent resistance is always less than the smallest individual resistor.",
-      "subject": "Physics",
-      "topic": "Electricity basics — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-el-05",
-      "generated_at": "2026-04-23T11:20:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00005"
-    },
-    {
-      "stem": "A fuse wire is chosen for a circuit because it has:",
-      "options": [
-        {"option_text": "High melting point and high resistance", "is_correct": false},
-        {"option_text": "Low melting point and high resistance", "is_correct": true},
-        {"option_text": "High melting point and low resistance", "is_correct": false},
-        {"option_text": "Low melting point and low resistance", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "A fuse wire must melt quickly when excess current flows — so it needs a low melting point and a high resistance (heat generated is I²R). Common fuse materials are tin-lead alloys. The fuse is always placed in the live wire, never in the neutral, so that on failure the device is isolated from the live supply. Modern installations use MCBs (miniature circuit breakers) that trip instead of melting.",
-      "subject": "Physics",
-      "topic": "Electricity basics — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-el-06",
-      "generated_at": "2026-04-23T11:20:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00006"
-    },
-    {
-      "stem": "Domestic alternating current supply in India has a standard frequency of:",
-      "options": [
-        {"option_text": "60 Hz", "is_correct": false},
-        {"option_text": "50 Hz", "is_correct": true},
-        {"option_text": "100 Hz", "is_correct": false},
-        {"option_text": "25 Hz", "is_correct": false}
-      ],
-      "correct_letter": "B",
-      "explanation": "India's national grid uses 230 V, 50 Hz AC supply — same as most of Europe and Asia. The USA and Canada use 120 V, 60 Hz. 'Hz' (hertz) means cycles per second — so the voltage reverses direction 100 times per second at 50 Hz. Why AC rather than DC? — easy step-up/step-down via transformers, which makes long-distance transmission efficient.",
-      "subject": "Physics",
-      "topic": "Electricity basics — mixed tiers",
-      "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-phy-el-07",
-      "generated_at": "2026-04-23T11:20:00+00:00",
-      "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00007"
-    }
-  ]
-}
+[
+  {
+    "stem": "The SI unit of electric current is the:",
+    "options": [
+      {
+        "option_text": "Volt",
+        "is_correct": false
+      },
+      {
+        "option_text": "Ampere",
+        "is_correct": true
+      },
+      {
+        "option_text": "Ohm",
+        "is_correct": false
+      },
+      {
+        "option_text": "Coulomb",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "Ampere (A) is the SI base unit of electric current. 1 A = 1 coulomb per second. Volt is the unit of potential difference; ohm is the unit of resistance; coulomb is the unit of charge. The ampere is one of the seven SI base units and was redefined in 2019 in terms of the elementary charge e.",
+    "subject": "Physics",
+    "topic": "Electricity basics — mixed tiers",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-23-phy-el-01",
+    "generated_at": "2026-04-23T11:20:00+00:00",
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00001"
+  },
+  {
+    "stem": "Ohm's law states that in a metallic conductor at constant temperature, the current is:",
+    "options": [
+      {
+        "option_text": "Inversely proportional to the voltage",
+        "is_correct": false
+      },
+      {
+        "option_text": "Directly proportional to the voltage",
+        "is_correct": true
+      },
+      {
+        "option_text": "Independent of the voltage",
+        "is_correct": false
+      },
+      {
+        "option_text": "Proportional to voltage squared",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "Ohm's law: V = IR. At constant temperature, current is directly proportional to voltage, so doubling V doubles I (assuming R is constant). Non-ohmic devices — diodes, filament lamps, thermistors — do not satisfy this relation. Wire resistance itself grows with temperature, which is why long-run steady-state currents in heaters are lower than their cold-start value.",
+    "subject": "Physics",
+    "topic": "Electricity basics — mixed tiers",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-23-phy-el-02",
+    "generated_at": "2026-04-23T11:20:00+00:00",
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00002"
+  },
+  {
+    "stem": "An electrical appliance rated 2 kW is run for 5 hours. The electrical energy consumed is:",
+    "options": [
+      {
+        "option_text": "2 kWh",
+        "is_correct": false
+      },
+      {
+        "option_text": "10 kWh",
+        "is_correct": true
+      },
+      {
+        "option_text": "5 kWh",
+        "is_correct": false
+      },
+      {
+        "option_text": "10 W",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "Energy = Power × Time = 2 kW × 5 h = 10 kWh. 1 kWh is the unit a domestic electricity meter measures ('1 unit'). At ₹7/unit this would cost ₹70. A common error is to treat power in W and time in seconds without converting — here 2 kW × 5 h is 10 kWh or 3.6 × 10⁷ J.",
+    "subject": "Physics",
+    "topic": "Electricity basics — mixed tiers",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-23-phy-el-03",
+    "generated_at": "2026-04-23T11:20:00+00:00",
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00003"
+  },
+  {
+    "stem": "The filament of an incandescent bulb is made of which metal?",
+    "options": [
+      {
+        "option_text": "Copper",
+        "is_correct": false
+      },
+      {
+        "option_text": "Tungsten",
+        "is_correct": true
+      },
+      {
+        "option_text": "Iron",
+        "is_correct": false
+      },
+      {
+        "option_text": "Aluminium",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "Tungsten — extremely high melting point (~3,422 °C) — can glow white-hot without melting. The bulb is filled with inert gas (argon / nitrogen) to slow evaporation of the filament. Copper has a good conductivity but melts at only 1,085 °C. Incandescent bulbs are largely phased out in favour of LEDs because of very poor efficiency (< 5 % of input power becomes light).",
+    "subject": "Physics",
+    "topic": "Electricity basics — mixed tiers",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-23-phy-el-04",
+    "generated_at": "2026-04-23T11:20:00+00:00",
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00004"
+  },
+  {
+    "stem": "The equivalent resistance of two 6 Ω resistors connected in parallel is:",
+    "options": [
+      {
+        "option_text": "12 Ω",
+        "is_correct": false
+      },
+      {
+        "option_text": "3 Ω",
+        "is_correct": true
+      },
+      {
+        "option_text": "6 Ω",
+        "is_correct": false
+      },
+      {
+        "option_text": "1 Ω",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "For two resistors in parallel, R_eq = R₁R₂ / (R₁ + R₂) = 6 × 6 / 12 = 3 Ω. Shortcut — n equal resistors of R each, in parallel, have equivalent R/n. 12 Ω is the series-connection answer (R₁ + R₂), a common trap. In parallel the equivalent resistance is always less than the smallest individual resistor.",
+    "subject": "Physics",
+    "topic": "Electricity basics — mixed tiers",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-23-phy-el-05",
+    "generated_at": "2026-04-23T11:20:00+00:00",
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00005"
+  },
+  {
+    "stem": "A fuse wire is chosen for a circuit because it has:",
+    "options": [
+      {
+        "option_text": "High melting point and high resistance",
+        "is_correct": false
+      },
+      {
+        "option_text": "Low melting point and high resistance",
+        "is_correct": true
+      },
+      {
+        "option_text": "High melting point and low resistance",
+        "is_correct": false
+      },
+      {
+        "option_text": "Low melting point and low resistance",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "A fuse wire must melt quickly when excess current flows — so it needs a low melting point and a high resistance (heat generated is I²R). Common fuse materials are tin-lead alloys. The fuse is always placed in the live wire, never in the neutral, so that on failure the device is isolated from the live supply. Modern installations use MCBs (miniature circuit breakers) that trip instead of melting.",
+    "subject": "Physics",
+    "topic": "Electricity basics — mixed tiers",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "HARD",
+    "effort_tier": "B",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-23-phy-el-06",
+    "generated_at": "2026-04-23T11:20:00+00:00",
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00006"
+  },
+  {
+    "stem": "Domestic alternating current supply in India has a standard frequency of:",
+    "options": [
+      {
+        "option_text": "60 Hz",
+        "is_correct": false
+      },
+      {
+        "option_text": "50 Hz",
+        "is_correct": true
+      },
+      {
+        "option_text": "100 Hz",
+        "is_correct": false
+      },
+      {
+        "option_text": "25 Hz",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "explanation": "India's national grid uses 230 V, 50 Hz AC supply — same as most of Europe and Asia. The USA and Canada use 120 V, 60 Hz. 'Hz' (hertz) means cycles per second — so the voltage reverses direction 100 times per second at 50 Hz. Why AC rather than DC? — easy step-up/step-down via transformers, which makes long-distance transmission efficient.",
+    "subject": "Physics",
+    "topic": "Electricity basics — mixed tiers",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": 0,
+    "answer_source": "generated",
+    "generator_tag": "claude-opus-2026-04-23-phy-el-07",
+    "generated_at": "2026-04-23T11:20:00+00:00",
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00007"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00008",
+    "stem": "Ohm's Law states that the current through a conductor is:",
+    "options": [
+      {
+        "option_text": "Inversely proportional to voltage",
+        "is_correct": "Directly proportional to voltage and inversely proportional to resistance: I = V/R"
+      },
+      {
+        "option_text": "Independent of resistance",
+        "is_correct": false
+      },
+      {
+        "option_text": "Equal to the resistance times the power",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "Ohm's Law: V = IR, so I = V/R. Current (I) is directly proportional to voltage (V) and inversely proportional to resistance (R), provided temperature remains constant.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.457875Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00009",
+    "stem": "The SI unit of electric charge is:",
+    "options": [
+      {
+        "option_text": "Ampere",
+        "is_correct": "Coulomb (C)"
+      },
+      {
+        "option_text": "Volt",
+        "is_correct": false
+      },
+      {
+        "option_text": "Watt",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "The SI unit of electric charge is the coulomb (C). 1 coulomb = charge carried by ~6.24 × 10¹⁸ electrons.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.457911Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00010",
+    "stem": "When resistors are connected in series, the total resistance is:",
+    "options": [
+      {
+        "option_text": "Less than the smallest individual resistance",
+        "is_correct": "The sum of all individual resistances: R_total = R₁ + R₂ + …"
+      },
+      {
+        "option_text": "The average of the resistances",
+        "is_correct": false
+      },
+      {
+        "option_text": "The product divided by the sum",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "In series connection, the same current flows through each resistor. Total resistance = R₁ + R₂ + R₃ + …, which is always greater than any individual resistance.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.457922Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00011",
+    "stem": "For resistors in parallel, the effective resistance is:",
+    "options": [
+      {
+        "option_text": "Greater than the largest individual resistance",
+        "is_correct": "Less than the smallest individual resistance (1/R_eff = 1/R₁ + 1/R₂ + …)"
+      },
+      {
+        "option_text": "Equal to the average",
+        "is_correct": false
+      },
+      {
+        "option_text": "Equal to the sum",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "In parallel, the voltage is the same across all resistors. The reciprocal rule 1/R = 1/R₁ + 1/R₂ gives an effective resistance always less than the smallest branch.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.457929Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00012",
+    "stem": "Electric power (P) is related to voltage (V) and resistance (R) as:",
+    "options": [
+      {
+        "option_text": "P = IR",
+        "is_correct": "P = V²/R (or P = I²R or P = IV)"
+      },
+      {
+        "option_text": "P = V/I",
+        "is_correct": false
+      },
+      {
+        "option_text": "P = R/V²",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "Power P = IV = I²R = V²/R. All three forms are equivalent and derived from P = IV with Ohm's Law (V = IR).",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.457936Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00013",
+    "stem": "A fuse wire in a circuit melts when the current exceeds a safe value because it has:",
+    "options": [
+      {
+        "option_text": "Very high melting point",
+        "is_correct": "Low melting point and high resistance — it heats up rapidly with excess current"
+      },
+      {
+        "option_text": "High conductivity",
+        "is_correct": false
+      },
+      {
+        "option_text": "No resistance",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "Fuse wire is made of tin-lead alloy with a low melting point and sufficient resistance. Excess current generates enough heat (I²R) to melt it, breaking the circuit before damage occurs.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.457958Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00014",
+    "stem": "The heating effect of electric current is used in:",
+    "options": [
+      {
+        "option_text": "Electric motor",
+        "is_correct": "Electric iron / toaster / heater"
+      },
+      {
+        "option_text": "Transformer",
+        "is_correct": false
+      },
+      {
+        "option_text": "Capacitor",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "The heating effect (Joule heating: H = I²Rt) is exploited in electric irons, heaters, toasters, and incandescent bulbs, where resistance converts electrical energy to heat.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.457970Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00015",
+    "stem": "1 kilowatt-hour (kWh) is equal to how many joules?",
+    "options": [
+      {
+        "option_text": "1000 J",
+        "is_correct": "3.6 × 10⁶ J (3.6 MJ)"
+      },
+      {
+        "option_text": "3600 J",
+        "is_correct": false
+      },
+      {
+        "option_text": "10⁶ J",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "1 kWh = 1000 W × 3600 s = 3,600,000 J = 3.6 MJ. This is the unit used by electricity meters ('unit' of electricity).",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.457984Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00016",
+    "stem": "In a household circuit, all appliances are connected in parallel because:",
+    "options": [
+      {
+        "option_text": "Parallel connection uses less wire",
+        "is_correct": "Each appliance gets the full supply voltage and can be switched independently"
+      },
+      {
+        "option_text": "Parallel is cheaper to wire",
+        "is_correct": false
+      },
+      {
+        "option_text": "Series connection is not safe",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "In parallel, each appliance operates at full mains voltage and can be switched on/off independently. In series, a broken appliance would cut off all others (like old Christmas lights).",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.457995Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00017",
+    "stem": "Two resistors of 4 Ω and 6 Ω are connected in parallel. The effective resistance is:",
+    "options": [
+      {
+        "option_text": "10 Ω",
+        "is_correct": "2.4 Ω"
+      },
+      {
+        "option_text": "5 Ω",
+        "is_correct": false
+      },
+      {
+        "option_text": "0.4 Ω",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "1/R = 1/4 + 1/6 = 3/12 + 2/12 = 5/12. R = 12/5 = 2.4 Ω.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.458008Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00018",
+    "stem": "The potential difference (voltage) is measured using a:",
+    "options": [
+      {
+        "option_text": "Ammeter in series",
+        "is_correct": "Voltmeter in parallel across the component"
+      },
+      {
+        "option_text": "Galvanometer in series",
+        "is_correct": false
+      },
+      {
+        "option_text": "Ohmmeter in series",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "A voltmeter measures potential difference and is always connected in parallel (across) the component being measured. An ammeter measures current and is in series.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.458019Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00019",
+    "stem": "The material used in the filament of an incandescent bulb is tungsten because:",
+    "options": [
+      {
+        "option_text": "It is cheap",
+        "is_correct": "It has a very high melting point (~3422°C) and emits light at incandescence temperature"
+      },
+      {
+        "option_text": "It is non-reactive with glass",
+        "is_correct": false
+      },
+      {
+        "option_text": "It has very low resistance",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "Tungsten (W) has the highest melting point of all metals. The filament can be heated to ~2500–3000°C without melting, making it glow brightly.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.458031Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00020",
+    "stem": "A 60 W bulb is used for 5 hours. The electrical energy consumed is:",
+    "options": [
+      {
+        "option_text": "300 J",
+        "is_correct": "300 Wh = 0.3 kWh"
+      },
+      {
+        "option_text": "60 J",
+        "is_correct": false
+      },
+      {
+        "option_text": "1200 J",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "Energy = Power × Time = 60 W × 5 h = 300 Wh = 0.3 kWh.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.458047Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00021",
+    "stem": "Superconductivity is the phenomenon where:",
+    "options": [
+      {
+        "option_text": "Resistance increases to infinity at low temperature",
+        "is_correct": "Electrical resistance drops to zero below a critical temperature"
+      },
+      {
+        "option_text": "A material becomes an insulator",
+        "is_correct": false
+      },
+      {
+        "option_text": "Current stops flowing",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "Superconductors lose all electrical resistance below their critical temperature (T_c). Currents can flow indefinitely in a superconducting loop without any power loss.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.458057Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00022",
+    "stem": "The drift velocity of electrons in a conductor is:",
+    "options": [
+      {
+        "option_text": "Equal to the speed of light",
+        "is_correct": "Very slow — typically ~10⁻⁴ m/s (fractions of mm per second)"
+      },
+      {
+        "option_text": "About 3 × 10⁸ m/s",
+        "is_correct": false
+      },
+      {
+        "option_text": "Zero",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "HARD",
+    "effort_tier": "C",
+    "staleness_risk": "LOW",
+    "explanation": "Despite the very slow drift velocity (~0.1 mm/s), an electrical impulse (change in electric field) propagates at near light speed, which is why bulbs light up instantly.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.458068Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00023",
+    "stem": "Three resistors of 3 Ω each are connected in series. The total resistance is:",
+    "options": [
+      {
+        "option_text": "1 Ω",
+        "is_correct": "9 Ω"
+      },
+      {
+        "option_text": "3 Ω",
+        "is_correct": false
+      },
+      {
+        "option_text": "0.33 Ω",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "EASY",
+    "effort_tier": "A",
+    "staleness_risk": "LOW",
+    "explanation": "Series: R = 3 + 3 + 3 = 9 Ω.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.458085Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00024",
+    "stem": "Earth wire (ground wire) in a household circuit is used to:",
+    "options": [
+      {
+        "option_text": "Increase the voltage",
+        "is_correct": "Provide a safe path for fault current to the earth, preventing electric shock"
+      },
+      {
+        "option_text": "Reduce energy consumption",
+        "is_correct": false
+      },
+      {
+        "option_text": "Regulate frequency",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "The earth wire provides a low-resistance path from the metallic body of an appliance to the ground. If a fault causes current to flow to the body, the earth wire channels it safely away.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.458097Z"
+  },
+  {
+    "id": "sgk_PHY_ELECTRICITY_BASICS_MIXED_00025",
+    "stem": "An electric current of 2 A flows through a resistance of 5 Ω for 10 minutes. The heat produced is:",
+    "options": [
+      {
+        "option_text": "100 J",
+        "is_correct": "12,000 J"
+      },
+      {
+        "option_text": "6000 J",
+        "is_correct": false
+      },
+      {
+        "option_text": "200 J",
+        "is_correct": false
+      }
+    ],
+    "correct_letter": "B",
+    "subject": "Physics",
+    "topic": "Electricity Basics",
+    "topic_code": "PHY_ELECTRICITY_BASICS_MIXED",
+    "difficulty": "MEDIUM",
+    "effort_tier": "B",
+    "staleness_risk": "LOW",
+    "explanation": "H = I²Rt = 2² × 5 × (10×60) = 4 × 5 × 600 = 12,000 J.",
+    "answer_source": "generated",
+    "generator_tag": "wave-10k-expand",
+    "generated_at": "2026-05-21T05:41:58.458109Z"
+  }
+]

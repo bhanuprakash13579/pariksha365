@@ -115,14 +115,23 @@ def _load_seed_questions(only_code: str | None = None):
             doc = json.loads(bundle_file.read_text())
         except Exception:
             continue
-        for q in doc.get("questions", []) or []:
-            tc = q.get("topic_code") or doc.get("topic_code")
+        # Support both plain-list format and {"questions": [...]} dict format
+        if isinstance(doc, list):
+            questions = doc
+            doc_meta: dict = {}
+        else:
+            questions = doc.get("questions", []) or []
+            doc_meta = doc
+        for q in questions:
+            if not isinstance(q, dict):
+                continue
+            tc = q.get("topic_code") or doc_meta.get("topic_code")
             if only_code and tc != only_code:
                 continue
             stem = q.get("stem") or ""
             ans = _normalise_answer(q.get("options") or [])
             yield (tc or "UNKNOWN",
-                   doc.get("subject"),
+                   q.get("subject") or doc_meta.get("subject"),
                    bundle_file.relative_to(_SEEDS),
                    stem,
                    ans,
