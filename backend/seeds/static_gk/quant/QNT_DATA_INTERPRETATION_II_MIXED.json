@@ -8,16 +8,28 @@
     {
       "stem": "From a TABLE: Sales of A=200, B=150, C=250, D=400. The percentage share of D in total is approximately:",
       "options": [
-        {"option_text": "40% (400 out of 1000 total)", "is_correct": true},
-        {"option_text": "30% (an under-estimate calc)", "is_correct": false},
-        {"option_text": "50% (an over-estimate)", "is_correct": false},
-        {"option_text": "25% (a wrong calc value)", "is_correct": false}
+        {
+          "option_text": "40% (400 out of 1000 total)",
+          "is_correct": true
+        },
+        {
+          "option_text": "30% (an under-estimate calc)",
+          "is_correct": false
+        },
+        {
+          "option_text": "50% (an over-estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "25% (a wrong calc value)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Total = 200 + 150 + 250 + 400 = 1000. D's share = 400/1000 × 100 = 40%. KEY METHOD for DI percentage problems: (1) FIND TOTAL or relevant SUM. (2) DIVIDE the specific value by total. (3) MULTIPLY by 100 for percentage. CRITICAL for DI: read questions CAREFULLY — 'share', 'increase', 'difference' have specific meanings. PRACTICE: A's share = 200/1000 = 20%; B's = 15%; C's = 25%; D's = 40%. CHECK: 20+15+25+40 = 100% ✓. DI IN COMPETITIVE EXAMS: typically a chart/table + 4-5 questions. Time-management tip: ESTIMATE first, calculate exact only if needed. ROUNDING SHORTCUTS: 'closest to 40%' often suffices over '40.0%' when answer choices differ by >5%. KEY RATIOS to memorize: (1) 1/2 = 50%. (2) 1/3 = 33.3%. (3) 1/4 = 25%. (4) 1/5 = 20%. (5) 1/6 = 16.67%. (6) 1/7 = 14.29%. (7) 1/8 = 12.5%. (8) 1/9 = 11.11%. (9) 1/10 = 10%. PYQ FREQUENCY: simple-percentage DI in SSC CGL Tier 1, IBPS Clerk Pre, RRB NTPC — 5-10 DI Qs per paper.",
       "subject": "Quant",
       "topic": "Data Interpretation II",
-      "topic_code": "QNT_DATA_INTERPRETATION_II_MIXED",
+      "topic_code": "QA_DI",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -29,16 +41,28 @@
     {
       "stem": "Bar graph shows production: 2020=80, 2021=100, 2022=125, 2023=150 units. Compound growth rate from 2020 to 2023 is approximately:",
       "options": [
-        {"option_text": "23% per annum (using A=P(1+r)^3)", "is_correct": true},
-        {"option_text": "30% per annum (over-estimate)", "is_correct": false},
-        {"option_text": "70% over the 3-year period", "is_correct": false},
-        {"option_text": "20% just per year average", "is_correct": false}
+        {
+          "option_text": "23% per annum (using A=P(1+r)^3)",
+          "is_correct": true
+        },
+        {
+          "option_text": "30% per annum (over-estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "70% over the 3-year period",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% just per year average",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Apply CAGR (Compound Annual Growth Rate): A = P(1+r)^n. Plug 150 = 80 × (1+r)^3 → (1+r)^3 = 1.875 → 1+r = (1.875)^(1/3) ≈ 1.234 → r ≈ 0.234 = 23.4%. RULE OF 72 CHECK: at 23%, doubling time = 72/23 ≈ 3.13 years; from 80 to 160 in ~3 years matches roughly (we got 150 in 3 years, so ~95% of doubled — close to expected). KEY DI METHOD: (1) GROWTH PROBLEMS — CAGR formula = ((end/start)^(1/years)) − 1. (2) CUMULATIVE GROWTH (over period) ≠ AVERAGE annual growth. (3) IMPORTANT — always specify: simple average vs CAGR. e.g., 70/3 = 23.3% simple average; CAGR is also ~23% here (close because growth is steady). EXAM PRACTICE: bar/line graphs commonly compare 4-5 years; common Q types: (a) % change between 2 specific years. (b) average growth rate. (c) which year saw highest/lowest value. (d) total over period. (e) ratio between two values. SHORTCUT: when dealing with growth rates near 10%, ratio (1.1)^3 ≈ 1.33; (1.2)^3 ≈ 1.73; (1.25)^3 ≈ 1.95 (~doubling in 3 years). PYQ FREQUENCY: bar-graph DI in IBPS PO Mains, SBI PO Mains, CAT — 5+ Qs per paper.",
       "subject": "Quant",
       "topic": "Data Interpretation II",
-      "topic_code": "QNT_DATA_INTERPRETATION_II_MIXED",
+      "topic_code": "QA_DI",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -50,16 +74,28 @@
     {
       "stem": "Pie chart of 360°: subject A=72°, B=108°, C=90°, D=90°. If total marks = 1000, marks in B subject =?",
       "options": [
-        {"option_text": "300 marks (108/360 × 1000)", "is_correct": true},
-        {"option_text": "200 marks (an under-estimate)", "is_correct": false},
-        {"option_text": "250 marks (calc error here)", "is_correct": false},
-        {"option_text": "500 marks (over-estimate)", "is_correct": false}
+        {
+          "option_text": "300 marks (108/360 × 1000)",
+          "is_correct": true
+        },
+        {
+          "option_text": "200 marks (an under-estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "250 marks (calc error here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "500 marks (over-estimate)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "PIE CHART: total = 360°. SECTOR OF B = 108°. So B's share = 108/360 = 30%. Marks for B = 30% of 1000 = 300. SHORTCUT: pie chart degree to percent → divide by 3.6 (since 360/100 = 3.6). 108 ÷ 3.6 = 30. Same as 108/360 × 100. CHECK: A = 72/360 = 20% → 200 marks; B = 30% → 300; C = 90/360 = 25% → 250; D = 25% → 250. Sum = 200+300+250+250 = 1000 ✓. KEY PIE-CHART CONVERSIONS: (a) 18° = 5%; (b) 36° = 10%; (c) 72° = 20%; (d) 90° = 25%; (e) 108° = 30%; (f) 144° = 40%; (g) 180° = 50%; (h) 216° = 60%; (i) 252° = 70%; (j) 270° = 75%; (k) 360° = 100%. EXAM-FAVOURITE: pie-chart Qs typically ask: (1) value of a specific sector. (2) ratio of two sectors. (3) % difference between two sectors. (4) what was added/removed. PYQ FREQUENCY: pie chart in SSC CGL Tier 2, IBPS PO Pre, IBPS PO Mains 5-10 DI Qs per paper. EXAMINER MINDSET: tests degree-to-percent intuition + careful percentage calculations.",
       "subject": "Quant",
       "topic": "Data Interpretation II",
-      "topic_code": "QNT_DATA_INTERPRETATION_II_MIXED",
+      "topic_code": "QA_DI",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -71,16 +107,28 @@
     {
       "stem": "Line graph: rainfall (mm) Jan=50, Feb=80, Mar=120, Apr=200, May=350, Jun=500. Average monthly rainfall is:",
       "options": [
-        {"option_text": "About 217 mm (sum/6 calc)", "is_correct": true},
-        {"option_text": "About 100 mm (under-estimate)", "is_correct": false},
-        {"option_text": "About 350 mm (over-estimate)", "is_correct": false},
-        {"option_text": "About 500 mm (max value)", "is_correct": false}
+        {
+          "option_text": "About 217 mm (sum/6 calc)",
+          "is_correct": true
+        },
+        {
+          "option_text": "About 100 mm (under-estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "About 350 mm (over-estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "About 500 mm (max value)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Sum = 50 + 80 + 120 + 200 + 350 + 500 = 1300. Number of months = 6. Average = 1300/6 ≈ 216.67 mm ≈ 217 mm. KEY METHOD: simple averaging of values. NUANCE — MEAN vs MEDIAN: (1) MEAN: 217 (computed). (2) MEDIAN: average of middle values (Mar=120, Apr=200) = 160. (3) MODE: not relevant here. INSIGHT: when data has OUTLIERS (here 500 is much higher than typical), MEAN is PULLED UP relative to MEDIAN. INDIA RAINFALL: SOUTHWEST MONSOON brings ~75% of annual rainfall in JUNE-SEPTEMBER. NORTHEAST MONSOON (Tamil Nadu, AP coast) — Oct-Dec. ANNUAL RAINFALL PATTERNS: (a) Mawsynram (Meghalaya) ~11,873 mm (highest in India). (b) Jaisalmer ~150 mm (lowest). PRACTICE — DI WITH MONSOON DATA: comparison of years, identifying drought years (typically <80% of long-term avg), heavy rainfall years (>110%). UPSC angle: agricultural geography + monsoon variability + climate change. PYQ FREQUENCY: line-graph DI in SSC CGL Tier 2, IBPS PO Mains, RBI Grade B 5-10 DI Qs per paper. EXAMINER MINDSET: tests reading + arithmetic carefully under time pressure.",
       "subject": "Quant",
       "topic": "Data Interpretation II",
-      "topic_code": "QNT_DATA_INTERPRETATION_II_MIXED",
+      "topic_code": "QA_DI",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -92,16 +140,28 @@
     {
       "stem": "Table: Population A=4000, B=5000, C=6000. If A grew 10%, B fell 5%, C grew 20%, the new total is approximately:",
       "options": [
-        {"option_text": "16,350 (sum after percent changes)", "is_correct": true},
-        {"option_text": "15,000 (no change calc)", "is_correct": false},
-        {"option_text": "17,000 (over-estimate calc)", "is_correct": false},
-        {"option_text": "16,000 (under-estimate)", "is_correct": false}
+        {
+          "option_text": "16,350 (sum after percent changes)",
+          "is_correct": true
+        },
+        {
+          "option_text": "15,000 (no change calc)",
+          "is_correct": false
+        },
+        {
+          "option_text": "17,000 (over-estimate calc)",
+          "is_correct": false
+        },
+        {
+          "option_text": "16,000 (under-estimate)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "New A = 4000 × 1.10 = 4400. New B = 5000 × 0.95 = 4750. New C = 6000 × 1.20 = 7200. New total = 4400 + 4750 + 7200 = 16,350. SHORTCUT mental math: 10% of 4000 = 400 → +400 = 4400. 5% of 5000 = 250 → −250 = 4750. 20% of 6000 = 1200 → +1200 = 7200. Sum the values. KEY METHOD: when DI presents PERCENT-CHANGE data: (1) Compute NEW value for each item. (2) SUM them. ALTERNATIVE: (a) NET CHANGE = +400 − 250 + 1200 = +1350. (b) ORIGINAL TOTAL = 15000; NEW TOTAL = 15000 + 1350 = 16350. INSIGHT: faster to compute NET CHANGE (sum of plus/minus) and add to original total. SAMPLE COMMON DI scenarios: (a) Sales/revenue grew/fell by X% across products. (b) Population growth/decline. (c) Election votes change between elections. (d) Stock prices rise/fall in different sectors. PRACTICE: when a multi-segment data has different % changes, NEVER simply average the percentages — compute each segment then sum. PYQ FREQUENCY: complex DI calculations in SSC CGL Tier 2, IBPS PO Mains, RBI Grade B Mains 5+ Qs per paper.",
       "subject": "Quant",
       "topic": "Data Interpretation II",
-      "topic_code": "QNT_DATA_INTERPRETATION_II_MIXED",
+      "topic_code": "QA_DI",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -113,16 +173,28 @@
     {
       "stem": "Mixed graph: Boys = 60% of total students (1000). Among boys, 40% wear glasses. Number of boys wearing glasses is:",
       "options": [
-        {"option_text": "240 (60% of 1000 × 40%)", "is_correct": true},
-        {"option_text": "400 (just 40% of total)", "is_correct": false},
-        {"option_text": "600 (just count of boys)", "is_correct": false},
-        {"option_text": "100 (way under-shot calc)", "is_correct": false}
+        {
+          "option_text": "240 (60% of 1000 × 40%)",
+          "is_correct": true
+        },
+        {
+          "option_text": "400 (just 40% of total)",
+          "is_correct": false
+        },
+        {
+          "option_text": "600 (just count of boys)",
+          "is_correct": false
+        },
+        {
+          "option_text": "100 (way under-shot calc)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Step 1: TOTAL BOYS = 60% of 1000 = 600. Step 2: BOYS WEARING GLASSES = 40% of 600 = 240. KEY METHOD for nested percentages: APPLY PERCENTAGES SEQUENTIALLY (multiplicatively): 0.60 × 0.40 × 1000 = 0.24 × 1000 = 240. EXAM TRAP: compute 40% directly of 1000 → 400 (wrong; that's % of total, not % of boys). Or 60% × 40% = 24% of 1000 = 240 (correct). PRACTICE: GIRLS wearing glasses = 40% of girls = 0.4 × 400 = 160 (assuming 40% rate among girls). Total wearing glasses = 240 + 160 = 400. PERCENTAGE ratio: 400/1000 = 40% wear glasses overall (matches average). NESTED PERCENT problems are popular in DI: (a) breakdown by gender + opinion (favored/not). (b) by region + product. (c) by year + quarter. SAMPLE: 'In a survey, 60% are men; 30% of men prefer X; 70% of women prefer Y. What % of total prefer X?' — assume 1000 sample: men=600, men preferring X = 180; women=400; women NOT preferring Y = 30%, so 120 prefer X (assuming binary). Total preferring X = 180 + 120 = 300 = 30% of total. PYQ FREQUENCY: nested-percentage DI in IBPS PO Mains, SBI PO Mains 1-2 per paper.",
       "subject": "Quant",
       "topic": "Data Interpretation II",
-      "topic_code": "QNT_DATA_INTERPRETATION_II_MIXED",
+      "topic_code": "QA_DI",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -134,16 +206,28 @@
     {
       "stem": "Caselet: Bank's total deposits = ₹500 crore. Savings 40%, Current 25%, Fixed 35%. If interest rates: Savings 4%, Current 0%, Fixed 7%, total interest payable per year is:",
       "options": [
-        {"option_text": "₹20.25 crore (weighted interest)", "is_correct": true},
-        {"option_text": "₹15 crore (under-estimate calc)", "is_correct": false},
-        {"option_text": "₹35 crore (over-estimate)", "is_correct": false},
-        {"option_text": "₹50 crore (way over-shot)", "is_correct": false}
+        {
+          "option_text": "₹20.25 crore (weighted interest)",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹15 crore (under-estimate calc)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹35 crore (over-estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹50 crore (way over-shot)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "STEP-by-STEP: (1) Savings deposits = 40% of 500 = ₹200 crore × 4% = ₹8 crore interest. (2) Current = 25% of 500 = ₹125 crore × 0% = ₹0. (3) Fixed = 35% of 500 = ₹175 crore × 7% = ₹12.25 crore. TOTAL INTEREST = 8 + 0 + 12.25 = ₹20.25 crore. KEY METHOD for CASELETS: (1) READ entire passage carefully. (2) IDENTIFY the structure (multiple categories with rates). (3) COMPUTE for each category SEPARATELY. (4) SUM. CASELET DI is a DI subtype with TEXT description (not just visual chart) + multiple Qs. Common in IBPS PO Mains, RBI Grade B, banking exams. UPSC angle: financial inclusion + banking sector reforms (CAA-NRC, JAM trinity, GST, demonetization, etc.). KEY TERMS: (a) SAVINGS account — low interest, easy access. (b) CURRENT account — for businesses, no interest, unlimited transactions. (c) FIXED DEPOSIT (FD) — locked period, higher interest. (d) RECURRING DEPOSIT (RD) — regular monthly contribution. RBI POLICY RATE: REPO RATE — banks borrow from RBI; affects deposit + lending rates. As of April 2026: REPO ~5-6% (varies). PYQ FREQUENCY: bank-related DI in IBPS PO Mains, RBI Grade B Mains, SBI PO 5+ Qs per paper. EXAMINER MINDSET: tests financial-literacy + careful arithmetic.",
       "subject": "Quant",
       "topic": "Data Interpretation II",
-      "topic_code": "QNT_DATA_INTERPRETATION_II_MIXED",
+      "topic_code": "QA_DI",
       "difficulty": "hard",
       "effort_tier": "tier2",
       "staleness_risk": "low",

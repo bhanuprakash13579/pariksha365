@@ -8,16 +8,28 @@
     {
       "stem": "An article is sold for ₹720 at 20% loss. Cost price is:",
       "options": [
-        {"option_text": "₹800 cost price (calculated)", "is_correct": false},
-        {"option_text": "₹900 cost price (calculated)", "is_correct": true},
-        {"option_text": "₹864 cost price (calculated)", "is_correct": false},
-        {"option_text": "₹850 cost price (calculated)", "is_correct": false}
+        {
+          "option_text": "₹800 cost price (calculated)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹900 cost price (calculated)",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹864 cost price (calculated)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹850 cost price (calculated)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "When LOSS is x%, SP = CP × (1 − x/100). So 720 = CP × 0.80 → CP = 900. Verify: 20% of 900 = 180; 900 − 180 = 720 ✓. KEY INSIGHT — work backwards using SP/CP factors: GAIN of x% → factor (1 + x/100); LOSS of x% → factor (1 − x/100). Common SSC trap: students directly compute 720 + 20% = 864 (option C) — that adds 20% of SP, not CP. Always anchor percentage to BASE (here, CP). GENERAL FORMULA: CP = SP × 100/(100 − loss%) for loss; CP = SP × 100/(100 + gain%) for gain.",
       "subject": "Quant",
       "topic": "Profit and loss V — mixed tiers",
-      "topic_code": "QNT_PROFIT_LOSS_V_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Marked price ₹500. Successive discounts of 10% and 20% are given. Final selling price is:",
       "options": [
-        {"option_text": "₹350 (using two discounts)", "is_correct": false},
-        {"option_text": "₹360 (using two discounts)", "is_correct": true},
-        {"option_text": "₹380 (using two discounts)", "is_correct": false},
-        {"option_text": "₹400 (using two discounts)", "is_correct": false}
+        {
+          "option_text": "₹350 (using two discounts)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹360 (using two discounts)",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹380 (using two discounts)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹400 (using two discounts)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Successive discounts NEVER simply add. After 10% off: 500 × 0.9 = 450. After 20% off: 450 × 0.8 = 360. NET DISCOUNT FORMULA for two successive discounts a, b: a + b − (ab/100) = 10 + 20 − 200/100 = 28%. So SP = MP × (1 − 28/100) = 500 × 0.72 = 360. INSIGHT — order doesn't matter (multiplication is commutative); 10% then 20% = 20% then 10% = 28% net. CLASSIC TRAP: students add to get 30% (= 350) — option A. Retailers exploit this: 'Buy 1 get 50% off on 2nd' sounds like 50% but is really 25% on the pair. RELATED: successive % CHANGE formula (gain/loss) = a + b + ab/100 (with sign).",
       "subject": "Quant",
       "topic": "Profit and loss V — mixed tiers",
-      "topic_code": "QNT_PROFIT_LOSS_V_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "A dealer marks goods 25% above CP and gives 10% discount. His profit % is:",
       "options": [
-        {"option_text": "15% gain on cost (final)", "is_correct": false},
-        {"option_text": "12.5% gain on cost (final)", "is_correct": true},
-        {"option_text": "10% gain on cost (final)", "is_correct": false},
-        {"option_text": "20% gain on cost (final)", "is_correct": false}
+        {
+          "option_text": "15% gain on cost (final)",
+          "is_correct": false
+        },
+        {
+          "option_text": "12.5% gain on cost (final)",
+          "is_correct": true
+        },
+        {
+          "option_text": "10% gain on cost (final)",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% gain on cost (final)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Assume CP = 100 (always pick CP=100 for % problems). MP = 125 (25% above CP). SP after 10% discount = 125 × 0.9 = 112.5. Profit = 12.5 on CP of 100 → 12.5%. SHORTCUT FORMULA: net % = mark-up + discount + (mark-up × discount)/100 with appropriate signs = 25 + (−10) + 25(−10)/100 = 25 − 10 − 2.5 = 12.5%. INSIGHT — markup % + discount % don't simply subtract, because their bases differ (markup on CP, discount on MP). REAL-WORLD: this is exactly how retail works — high markup + 'attractive discount' = healthy margin. SSC PYQ favourite.",
       "subject": "Quant",
       "topic": "Profit and loss V — mixed tiers",
-      "topic_code": "QNT_PROFIT_LOSS_V_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Selling 8 articles for ₹100 results in 20% loss. To gain 25%, the SP of 8 articles should be:",
       "options": [
-        {"option_text": "₹150 selling price for eight", "is_correct": false},
-        {"option_text": "₹156.25 selling price for eight", "is_correct": true},
-        {"option_text": "₹160 selling price for eight", "is_correct": false},
-        {"option_text": "₹140 selling price for eight", "is_correct": false}
+        {
+          "option_text": "₹150 selling price for eight",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹156.25 selling price for eight",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹160 selling price for eight",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹140 selling price for eight",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Step 1 — find CP: SP at 20% loss = 80% of CP → 100 = 0.8 × CP → CP = 125 for 8 articles. Step 2 — new SP at 25% gain = 125 × 1.25 = 156.25 for 8 articles. INSIGHT — TWO-STEP method always works: first reverse-engineer CP from given (SP, %), then forward-compute desired SP from (CP, target %). SHORTCUT: new SP = old SP × (100 + target%)/(100 − loss%) = 100 × 125/80 = 156.25. CP per article = 15.625; new SP per article = 19.53. Useful in inventory pricing where cost is known but target margin changes.",
       "subject": "Quant",
       "topic": "Profit and loss V — mixed tiers",
-      "topic_code": "QNT_PROFIT_LOSS_V_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "By selling at ₹450 a man gains 12.5%. To gain 25%, he must sell at:",
       "options": [
-        {"option_text": "₹480 sale price for the gain", "is_correct": false},
-        {"option_text": "₹500 sale price for the gain", "is_correct": true},
-        {"option_text": "₹520 sale price for the gain", "is_correct": false},
-        {"option_text": "₹540 sale price for the gain", "is_correct": false}
+        {
+          "option_text": "₹480 sale price for the gain",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹500 sale price for the gain",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹520 sale price for the gain",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹540 sale price for the gain",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "450 = (1 + 12.5/100) × CP = 1.125 × CP → CP = 400. New SP at 25% gain = 400 × 1.25 = 500. SHORTCUT: new SP = old SP × (100 + new gain%)/(100 + old gain%) = 450 × 125/112.5 = 500. INSIGHT — when old + new are both PROFITS, you can directly scale SP by the ratio of (1 + gain%) factors. KEY: never mix base; CP must be the anchor. PYQ trick: students compute 450 × 1.25 = 562.5 (option C/D ballpark) — they apply 25% on SP not CP. Always reduce to CP first.",
       "subject": "Quant",
       "topic": "Profit and loss V — mixed tiers",
-      "topic_code": "QNT_PROFIT_LOSS_V_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "A dishonest dealer claims to sell at cost but uses 800 g weight for a kg. His profit % is:",
       "options": [
-        {"option_text": "20% gain (he cheats by 200 g)", "is_correct": false},
-        {"option_text": "25% gain (he cheats by 200 g)", "is_correct": true},
-        {"option_text": "30% gain (he cheats by 200 g)", "is_correct": false},
-        {"option_text": "15% gain (he cheats by 200 g)", "is_correct": false}
+        {
+          "option_text": "20% gain (he cheats by 200 g)",
+          "is_correct": false
+        },
+        {
+          "option_text": "25% gain (he cheats by 200 g)",
+          "is_correct": true
+        },
+        {
+          "option_text": "30% gain (he cheats by 200 g)",
+          "is_correct": false
+        },
+        {
+          "option_text": "15% gain (he cheats by 200 g)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "DISHONEST DEALER FORMULA: gain % = [(true weight − false weight) / false weight] × 100 = (1000−800)/800 × 100 = 25%. WHY: he charges customer for 1 kg but actually delivers 800 g. He effectively SELLS 800 g for the cost-price of 1000 g → gains the cost of 200 g, on his actual COST of 800 g → 25%. COMMON MISTAKE: dividing by 1000 (true weight) gives 20% — wrong because dealer's cost was for 800 g actually delivered. EXTENSION: if dealer also marks up % above CP, total gain compounds. BALANCE-FRAUD QUESTIONS test whether you know the BASE = false weight, not true weight.",
       "subject": "Quant",
       "topic": "Profit and loss V — mixed tiers",
-      "topic_code": "QNT_PROFIT_LOSS_V_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "If CP of 12 articles equals SP of 9 articles, gain percent is:",
       "options": [
-        {"option_text": "25% gain on cost (computed)", "is_correct": false},
-        {"option_text": "33⅓% gain on cost (computed)", "is_correct": true},
-        {"option_text": "20% gain on cost (computed)", "is_correct": false},
-        {"option_text": "40% gain on cost (computed)", "is_correct": false}
+        {
+          "option_text": "25% gain on cost (computed)",
+          "is_correct": false
+        },
+        {
+          "option_text": "33⅓% gain on cost (computed)",
+          "is_correct": true
+        },
+        {
+          "option_text": "20% gain on cost (computed)",
+          "is_correct": false
+        },
+        {
+          "option_text": "40% gain on cost (computed)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "12 CP = 9 SP → SP/CP = 12/9 = 4/3. Gain = (SP − CP)/CP = (4/3 − 1)/1 = 1/3 = 33⅓%. SHORTCUT FORMULA: when 'CP of x = SP of y', gain% = ((x − y)/y) × 100 if x > y (gain), or loss% = ((y − x)/x) × 100 if y > x (loss). Here x=12, y=9 → (12−9)/9 = 33.33%. INSIGHT: this ratio framework lets you skip plugging actual numbers. EXAMPLE 2: if SP of 5 = CP of 4 → loss% = (5−4)/5 × 100 = 20%. SSC + banking PYQ pattern.",
       "subject": "Quant",
       "topic": "Profit and loss V — mixed tiers",
-      "topic_code": "QNT_PROFIT_LOSS_V_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,

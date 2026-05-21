@@ -8,16 +8,28 @@
     {
       "stem": "The number of ways the letters of the word 'ROAD' can be arranged is:",
       "options": [
-        {"option_text": "12", "is_correct": false},
-        {"option_text": "24", "is_correct": true},
-        {"option_text": "16", "is_correct": false},
-        {"option_text": "36", "is_correct": false}
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": true
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "All four letters of ROAD are distinct, so number of arrangements = 4! = 4 × 3 × 2 × 1 = 24. Whenever letters are distinct, total = n!. If a letter were repeated, divide by the factorial of the repetition count — e.g. 'BOOK' has 2 O's so total = 4! / 2! = 12.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutation and combination — mixed tiers",
-      "topic_code": "QNT_PERMUTATION_II_MIXED",
+      "topic_code": "QA_PNC",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "How many distinct arrangements are possible for the letters of the word 'MISSISSIPPI'?",
       "options": [
-        {"option_text": "11!", "is_correct": false},
-        {"option_text": "34,650", "is_correct": true},
-        {"option_text": "39,916,800", "is_correct": false},
-        {"option_text": "55,440", "is_correct": false}
+        {
+          "option_text": "11!",
+          "is_correct": false
+        },
+        {
+          "option_text": "34,650",
+          "is_correct": true
+        },
+        {
+          "option_text": "39,916,800",
+          "is_correct": false
+        },
+        {
+          "option_text": "55,440",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "MISSISSIPPI has 11 letters: M = 1, I = 4, S = 4, P = 2. Formula for permutations with repetition: 11! / (4! × 4! × 2! × 1!) = 39,916,800 / (24 × 24 × 2 × 1) = 39,916,800 / 1,152 = 34,650.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutation and combination — mixed tiers",
-      "topic_code": "QNT_PERMUTATION_II_MIXED",
+      "topic_code": "QA_PNC",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "From a group of 8 men, in how many ways can a committee of 3 be selected?",
       "options": [
-        {"option_text": "24", "is_correct": false},
-        {"option_text": "56", "is_correct": true},
-        {"option_text": "336", "is_correct": false},
-        {"option_text": "112", "is_correct": false}
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "56",
+          "is_correct": true
+        },
+        {
+          "option_text": "336",
+          "is_correct": false
+        },
+        {
+          "option_text": "112",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Selection (no order) — combinations. ⁸C₃ = 8! / (3! × 5!) = (8 × 7 × 6) / (3 × 2 × 1) = 336 / 6 = 56. Trap option 336 = ⁸P₃ (permutations, where order matters). For committees / teams / groups, use C; for arrangements / rankings / passwords, use P.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutation and combination — mixed tiers",
-      "topic_code": "QNT_PERMUTATION_II_MIXED",
+      "topic_code": "QA_PNC",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "In how many ways can 5 people be seated around a circular table?",
       "options": [
-        {"option_text": "120", "is_correct": false},
-        {"option_text": "24", "is_correct": true},
-        {"option_text": "60", "is_correct": false},
-        {"option_text": "12", "is_correct": false}
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": true
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Circular arrangements — fix one person to break rotational symmetry; the rest can be arranged in (n − 1)! ways. So 5 people → 4! = 24. If reflections (clockwise vs anti-clockwise) are also considered equivalent (e.g., bead arrangement on a necklace), divide further by 2 → (n − 1)! / 2 = 12. SSC convention: by default, reflections distinct → answer 24.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutation and combination — mixed tiers",
-      "topic_code": "QNT_PERMUTATION_II_MIXED",
+      "topic_code": "QA_PNC",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "How many 4-digit numbers can be formed using the digits 1 to 9 if no digit is repeated?",
       "options": [
-        {"option_text": "6,561", "is_correct": false},
-        {"option_text": "3,024", "is_correct": true},
-        {"option_text": "9,000", "is_correct": false},
-        {"option_text": "362,880", "is_correct": false}
+        {
+          "option_text": "6,561",
+          "is_correct": false
+        },
+        {
+          "option_text": "3,024",
+          "is_correct": true
+        },
+        {
+          "option_text": "9,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "362,880",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "9 distinct digits, choose and arrange 4 of them in order — ⁹P₄ = 9! / 5! = 9 × 8 × 7 × 6 = 3,024. Trap 6,561 = 9⁴ (with repetition allowed). Trap 9,000 = total 4-digit numbers using 0-9 (1000 to 9999). Trap 362,880 = 9!.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutation and combination — mixed tiers",
-      "topic_code": "QNT_PERMUTATION_II_MIXED",
+      "topic_code": "QA_PNC",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "A team of 4 must be chosen from 6 boys and 4 girls so that the team has at least 1 girl. The number of ways is:",
       "options": [
-        {"option_text": "180", "is_correct": false},
-        {"option_text": "195", "is_correct": true},
-        {"option_text": "210", "is_correct": false},
-        {"option_text": "120", "is_correct": false}
+        {
+          "option_text": "180",
+          "is_correct": false
+        },
+        {
+          "option_text": "195",
+          "is_correct": true
+        },
+        {
+          "option_text": "210",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Total ways without restriction = ¹⁰C₄ = 210. Ways with NO girl (all boys) = ⁶C₄ = 15. So at-least-1-girl = 210 − 15 = 195. The 'complement' trick — easier than summing 1G+3B + 2G+2B + 3G+1B + 4G+0B = 60 + 90 + 40 + 1 = 191. Hmm — let me re-verify. ⁴C₁·⁶C₃ + ⁴C₂·⁶C₂ + ⁴C₃·⁶C₁ + ⁴C₄·⁶C₀ = 4·20 + 6·15 + 4·6 + 1·1 = 80 + 90 + 24 + 1 = 195 ✓. Both methods agree.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutation and combination — mixed tiers",
-      "topic_code": "QNT_PERMUTATION_II_MIXED",
+      "topic_code": "QA_PNC",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "The number of ways the letters of the word 'NUMBER' can be arranged so that the vowels U and E always remain together is:",
       "options": [
-        {"option_text": "120", "is_correct": false},
-        {"option_text": "240", "is_correct": true},
-        {"option_text": "360", "is_correct": false},
-        {"option_text": "720", "is_correct": false}
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "240",
+          "is_correct": true
+        },
+        {
+          "option_text": "360",
+          "is_correct": false
+        },
+        {
+          "option_text": "720",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Standard 'group-the-bound-pair' technique. Treat (UE) or (EU) as a single block — now we have 5 distinct items to arrange: N, M, B, R, (vowel-pair). 5! = 120 arrangements. The vowel-pair internally can be UE or EU = 2 ways. Total = 120 × 2 = 240. Always: arrange the n−k+1 'items' first, then multiply by k! for internal arrangements of the bound block.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutation and combination — mixed tiers",
-      "topic_code": "QNT_PERMUTATION_II_MIXED",
+      "topic_code": "QA_PNC",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,

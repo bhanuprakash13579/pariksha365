@@ -8,16 +8,28 @@
     {
       "stem": "Five boys — A, B, C, D, E — sit in a row. C sits immediately right of A. D is to the immediate left of A. E is at one end. Which boy is in the middle?",
       "options": [
-        {"option_text": "A", "is_correct": true},
-        {"option_text": "B", "is_correct": false},
-        {"option_text": "C", "is_correct": false},
-        {"option_text": "D", "is_correct": false}
+        {
+          "option_text": "A",
+          "is_correct": true
+        },
+        {
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "option_text": "C",
+          "is_correct": false
+        },
+        {
+          "option_text": "D",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Order with D-A-C fixed (3 consecutive). E at one end. B occupies remaining position. Possible lineups: E-D-A-C-B or B-D-A-C-E. In both, A is in the middle (3rd of 5).",
       "subject": "Reasoning",
       "topic": "Puzzle / simple arrangement — mixed tiers",
-      "topic_code": "REAS_PUZZLE_ARRANGEMENT_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "A is taller than B. B is shorter than C. D is taller than A. Who is the SHORTEST?",
       "options": [
-        {"option_text": "A", "is_correct": false},
-        {"option_text": "B", "is_correct": true},
-        {"option_text": "C", "is_correct": false},
-        {"option_text": "Cannot be determined", "is_correct": false}
+        {
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "option_text": "B",
+          "is_correct": true
+        },
+        {
+          "option_text": "C",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "A > B, C > B, D > A. So A, C, D are all taller than B. B is the shortest. Ordering A vs C cannot be fixed, but B at bottom is certain.",
       "subject": "Reasoning",
       "topic": "Puzzle / simple arrangement — mixed tiers",
-      "topic_code": "REAS_PUZZLE_ARRANGEMENT_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Six friends are sitting in a row. P is at the extreme right. Q is between P and R. S is to the immediate left of R. T is between S and U. Who is at the extreme LEFT?",
       "options": [
-        {"option_text": "P", "is_correct": false},
-        {"option_text": "U", "is_correct": true},
-        {"option_text": "T", "is_correct": false},
-        {"option_text": "S", "is_correct": false}
+        {
+          "option_text": "P",
+          "is_correct": false
+        },
+        {
+          "option_text": "U",
+          "is_correct": true
+        },
+        {
+          "option_text": "T",
+          "is_correct": false
+        },
+        {
+          "option_text": "S",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "P is at extreme right. Q between P & R → order ... R, Q, P. S immediate left of R → ... S, R, Q, P. T between S and U → ... U, T, S, R, Q, P. 6 names all placed. Extreme left = U.",
       "subject": "Reasoning",
       "topic": "Puzzle / simple arrangement — mixed tiers",
-      "topic_code": "REAS_PUZZLE_ARRANGEMENT_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "In a line, Sachin is 10th from the left and Virat is 15th from the right. They exchange positions — now Sachin becomes 18th from the left. Total number of people is:",
       "options": [
-        {"option_text": "25", "is_correct": false},
-        {"option_text": "32", "is_correct": true},
-        {"option_text": "28", "is_correct": false},
-        {"option_text": "30", "is_correct": false}
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "32",
+          "is_correct": true
+        },
+        {
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "After swap, Sachin takes Virat's old position. If Sachin is 18th from left, he is also at Virat's old spot (15th from right). Total = 18 + 15 − 1 = 32.",
       "subject": "Reasoning",
       "topic": "Puzzle / simple arrangement — mixed tiers",
-      "topic_code": "REAS_PUZZLE_ARRANGEMENT_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "In a row of girls facing NORTH: Priya is 7th from the left, Neha is 11th from the right. If they interchange, Priya becomes 16th from the left. Total girls in the row is:",
       "options": [
-        {"option_text": "24", "is_correct": false},
-        {"option_text": "26", "is_correct": true},
-        {"option_text": "22", "is_correct": false},
-        {"option_text": "20", "is_correct": false}
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "26",
+          "is_correct": true
+        },
+        {
+          "option_text": "22",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "After exchange, Priya = Neha's old position = 11th from right and 16th from left. Total = 16 + 11 − 1 = 26.",
       "subject": "Reasoning",
       "topic": "Puzzle / simple arrangement — mixed tiers",
-      "topic_code": "REAS_PUZZLE_ARRANGEMENT_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "In a class of 40 students, Meena is 12th from the top. Shyam is 19 places BELOW Meena. What is Shyam's rank from the bottom?",
       "options": [
-        {"option_text": "8", "is_correct": false},
-        {"option_text": "10", "is_correct": true},
-        {"option_text": "9", "is_correct": false},
-        {"option_text": "12", "is_correct": false}
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": true
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Meena's rank from top = 12. Shyam = 12 + 19 = 31st from top. Rank from bottom = 40 − 31 + 1 = 10.",
       "subject": "Reasoning",
       "topic": "Puzzle / simple arrangement — mixed tiers",
-      "topic_code": "REAS_PUZZLE_ARRANGEMENT_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Five boxes — P, Q, R, S, T — are stacked vertically. T is at the top. S is immediately above P. R is somewhere between T and S. Q is at the bottom. What is the order from TOP to BOTTOM?",
       "options": [
-        {"option_text": "T, R, S, P, Q", "is_correct": true},
-        {"option_text": "T, S, P, R, Q", "is_correct": false},
-        {"option_text": "T, S, R, P, Q", "is_correct": false},
-        {"option_text": "T, P, S, R, Q", "is_correct": false}
+        {
+          "option_text": "T, R, S, P, Q",
+          "is_correct": true
+        },
+        {
+          "option_text": "T, S, P, R, Q",
+          "is_correct": false
+        },
+        {
+          "option_text": "T, S, R, P, Q",
+          "is_correct": false
+        },
+        {
+          "option_text": "T, P, S, R, Q",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "T top, Q bottom. Remaining R, S, P in positions 2, 3, 4. 'S immediately above P' → adjacent pair S-P (top-to-bottom). R between T and S → R at position 2, S at 3, P at 4. Order: T-R-S-P-Q.",
       "subject": "Reasoning",
       "topic": "Puzzle / simple arrangement — mixed tiers",
-      "topic_code": "REAS_PUZZLE_ARRANGEMENT_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,

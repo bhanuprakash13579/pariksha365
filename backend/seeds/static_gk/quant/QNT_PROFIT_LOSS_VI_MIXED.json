@@ -8,16 +8,28 @@
     {
       "stem": "A shopkeeper offers TWO successive discounts of 10% and 20%. What is the equivalent single discount?",
       "options": [
-        {"option_text": "28% (using formula a+b−ab/100)", "is_correct": true},
-        {"option_text": "30% (a simple sum of two)", "is_correct": false},
-        {"option_text": "25% (a wrong intermediate calc)", "is_correct": false},
-        {"option_text": "32% (an over-estimate now)", "is_correct": false}
+        {
+          "option_text": "28% (using formula a+b−ab/100)",
+          "is_correct": true
+        },
+        {
+          "option_text": "30% (a simple sum of two)",
+          "is_correct": false
+        },
+        {
+          "option_text": "25% (a wrong intermediate calc)",
+          "is_correct": false
+        },
+        {
+          "option_text": "32% (an over-estimate now)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "FORMULA for SUCCESSIVE DISCOUNTS: equivalent = a + b − (a×b)/100, where a, b are the % discounts. Plug a=10, b=20: equivalent = 10 + 20 − (10×20)/100 = 30 − 2 = 28%. ALTERNATIVE NUMERIC METHOD: assume MP = ₹100. After 10% off: ₹90. After 20% off ₹90: 0.8 × 90 = ₹72. Total reduction: ₹100 − ₹72 = ₹28 = 28% discount. WHY NOT 30%: successive discounts compound MULTIPLICATIVELY, not additively. The first 10% leaves ₹90; the second 20% applies to ₹90 (not to original ₹100). KEY INSIGHT: order of discounts doesn't matter — 20% then 10% gives same result. APPLICATION — MARKED PRICE TRICKS: many retailers ADVERTISE 'Up to 50% + 20% extra off' which sounds like 70% but is really 1 − (0.5×0.8) = 60%. CHAIN OF DISCOUNTS: for THREE discounts a, b, c — equivalent = 1 − (1−a/100)(1−b/100)(1−c/100). PYQ FREQUENCY: successive discount problem appears in SSC CGL Tier 1, IBPS PO Pre, RRB NTPC — 1-2× per cycle.",
       "subject": "Quant",
       "topic": "Profit and Loss VI",
-      "topic_code": "QNT_PROFIT_LOSS_VI_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -29,16 +41,28 @@
     {
       "stem": "A shopkeeper marks his goods 40% above CP and gives a 25% discount. His profit % is:",
       "options": [
-        {"option_text": "5% profit (using MP-discount formula)", "is_correct": true},
-        {"option_text": "15% profit (a simple subtraction)", "is_correct": false},
-        {"option_text": "10% profit (incorrect calc here)", "is_correct": false},
-        {"option_text": "Loss of 5% (negative result)", "is_correct": false}
+        {
+          "option_text": "5% profit (using MP-discount formula)",
+          "is_correct": true
+        },
+        {
+          "option_text": "15% profit (a simple subtraction)",
+          "is_correct": false
+        },
+        {
+          "option_text": "10% profit (incorrect calc here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Loss of 5% (negative result)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Let CP = ₹100. MP = CP + 40% = ₹140. Discount on MP = 25%, so SP = MP × 0.75 = ₹140 × 0.75 = ₹105. PROFIT = SP − CP = ₹105 − ₹100 = ₹5. PROFIT % = 5/100 × 100 = 5%. KEY FORMULA: Profit% = MP%(over CP) × (100 − discount%)/100 − 100 = 140 × 0.75 − 100 = 105 − 100 = 5%. SHORTCUT MENTAL MATH: 40% markup × 75% retention = 1.4 × 0.75 = 1.05 → 5% gain. EXAM-FAVORITE TRAP: students compute 40% − 25% = 15% — INCORRECT (these don't add/subtract simply because they apply to different bases). ANALOGOUS: x% increase followed by y% decrease gives net x − y − xy/100 % change (formula). PYQ FREQUENCY: MP-discount-CP-profit chain is a top SSC CGL, IBPS Clerk MCQ — 2-3 per Tier 1 paper. EXAMINER MINDSET: tests three-step price-chain reasoning; rewards careful base-tracking.",
       "subject": "Quant",
       "topic": "Profit and Loss VI",
-      "topic_code": "QNT_PROFIT_LOSS_VI_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -50,16 +74,28 @@
     {
       "stem": "A dishonest shopkeeper uses a faulty weight of 800 g instead of 1 kg, while claiming honest pricing. His profit % is:",
       "options": [
-        {"option_text": "25% — sells less for same price", "is_correct": true},
-        {"option_text": "20% — direct subtract calc", "is_correct": false},
-        {"option_text": "12.5% — under-estimate calc", "is_correct": false},
-        {"option_text": "10% — quite far off here", "is_correct": false}
+        {
+          "option_text": "25% — sells less for same price",
+          "is_correct": true
+        },
+        {
+          "option_text": "20% — direct subtract calc",
+          "is_correct": false
+        },
+        {
+          "option_text": "12.5% — under-estimate calc",
+          "is_correct": false
+        },
+        {
+          "option_text": "10% — quite far off here",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "DISHONEST DEALER FORMULA: Profit% = (TRUE WEIGHT − FALSE WEIGHT)/(FALSE WEIGHT) × 100. Plug TRUE = 1000g, FALSE = 800g: Profit% = (1000−800)/800 × 100 = 200/800 × 100 = 25%. INTUITIVE METHOD: customer pays for 1000 g but gets 800 g. The shopkeeper EFFECTIVELY sells 800 g for the price of 1000 g. So COST of goods = price of 800 g; SELLING PRICE = price of 1000 g. Markup over cost = (1000−800)/800 × 100 = 25%. CONTRAST: if the question said 'customer pays for 800 g but gets 1000 g' (LOSS scenario, e.g., dishonest measurement against shopkeeper) — Loss% = (1000−800)/1000 × 100 = 20% (different base). PRACTICAL CONTEXT: Indian Weights & Measures Act, 2011 prescribes penalties for short weighing (Rs 25,000 fine + cancellation of license). FAMOUS INSTANCE: many retail audits across India still find ~5-10% non-compliance in vegetable markets. PYQ FREQUENCY: 'dishonest dealer' is a SSC CGL, IBPS PO favorite — 1-2 per cycle. EXAMINER MINDSET: tests base-of-percentage discipline.",
       "subject": "Quant",
       "topic": "Profit and Loss VI",
-      "topic_code": "QNT_PROFIT_LOSS_VI_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -71,16 +107,28 @@
     {
       "stem": "If selling price of 12 articles equals cost price of 15 articles, the profit % is:",
       "options": [
-        {"option_text": "25% (gain ratio of 3:12)", "is_correct": true},
-        {"option_text": "20% (a different ratio calc)", "is_correct": false},
-        {"option_text": "30% (an over-estimate value)", "is_correct": false},
-        {"option_text": "15% (an under-estimate calc)", "is_correct": false}
+        {
+          "option_text": "25% (gain ratio of 3:12)",
+          "is_correct": true
+        },
+        {
+          "option_text": "20% (a different ratio calc)",
+          "is_correct": false
+        },
+        {
+          "option_text": "30% (an over-estimate value)",
+          "is_correct": false
+        },
+        {
+          "option_text": "15% (an under-estimate calc)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Let CP of one article = ₹1. CP of 15 articles = ₹15. Given: SP of 12 articles = CP of 15 articles = ₹15. So SP per article = ₹15/12 = ₹1.25. PROFIT per article = ₹1.25 − ₹1 = ₹0.25. PROFIT % = 0.25/1 × 100 = 25%. SHORTCUT FORMULA: Profit% = (n − m)/m × 100, where m articles sold at price of n articles. Here m=12, n=15. Profit% = (15−12)/12 × 100 = 25%. INSIGHT: this question type — 'CP of x articles = SP of y articles' — when y < x means PROFIT (SELLING FEWER articles for the price of MORE). When y > x means LOSS. EXAMPLES: 'CP of 10 items = SP of 8 items' → profit = (10−8)/8 × 100 = 25%. 'CP of 8 = SP of 10' → loss = (10−8)/10 × 100 = 20% loss. PYQ FREQUENCY: this exact pattern appears in SSC CGL Tier 1, IBPS Clerk Pre, RRB NTPC ~1× per paper. EXAM TIP: don't get confused which side is bigger — the SIDE WITH FEWER ARTICLES corresponds to GAIN per article.",
       "subject": "Quant",
       "topic": "Profit and Loss VI",
-      "topic_code": "QNT_PROFIT_LOSS_VI_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -92,16 +140,28 @@
     {
       "stem": "A merchant sells two items: one at 20% profit, another at 20% loss, with EQUAL SELLING PRICES of ₹600 each. Net result is:",
       "options": [
-        {"option_text": "Loss of 4% on the deal", "is_correct": true},
-        {"option_text": "Neither profit nor loss break-even", "is_correct": false},
-        {"option_text": "Profit of 4% on the deal", "is_correct": false},
-        {"option_text": "Loss of 8% on the deal", "is_correct": false}
+        {
+          "option_text": "Loss of 4% on the deal",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither profit nor loss break-even",
+          "is_correct": false
+        },
+        {
+          "option_text": "Profit of 4% on the deal",
+          "is_correct": false
+        },
+        {
+          "option_text": "Loss of 8% on the deal",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Find CP of EACH item, then total CP and total SP. ITEM 1 (20% PROFIT): SP = 600, profit% = 20. CP1 = SP/(1.20) = 600/1.2 = ₹500. ITEM 2 (20% LOSS): SP = 600, loss% = 20. CP2 = SP/(0.80) = 600/0.8 = ₹750. TOTAL CP = 500 + 750 = ₹1250. TOTAL SP = 1200. NET LOSS = 1250 − 1200 = ₹50. NET LOSS% = 50/1250 × 100 = 4%. STANDARD FORMULA: when same item gain% = loss% = x, with EQUAL SP, NET LOSS% = x²/100. Here x=20, so loss = 400/100 = 4%. KEY INSIGHT: if profit% and loss% are EQUAL with EQUAL SPs, the DEAL IS ALWAYS A LOSS — never break-even, never profit. The CP-side asymmetry (CP₁ < CP₂) means more money was actually invested, so the equal SPs don't recover it. SAMPLE OTHER CASES: x=10% → loss = 1%; x=25% → loss = 6.25%; x=40% → loss = 16%. PYQ FREQUENCY: this 'loss = x²/100' formula is a SSC CGL Tier 1, IBPS PO Pre, RRB NTPC favorite — 1-2× per cycle.",
       "subject": "Quant",
       "topic": "Profit and Loss VI",
-      "topic_code": "QNT_PROFIT_LOSS_VI_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -113,16 +173,28 @@
     {
       "stem": "An item is marked 50% above CP. After two successive discounts of 10% and 20%, the profit/loss is:",
       "options": [
-        {"option_text": "Profit of 8% on the item", "is_correct": true},
-        {"option_text": "Loss of 8% on the item", "is_correct": false},
-        {"option_text": "Profit of 20% on the item", "is_correct": false},
-        {"option_text": "Loss of 4% on the item now", "is_correct": false}
+        {
+          "option_text": "Profit of 8% on the item",
+          "is_correct": true
+        },
+        {
+          "option_text": "Loss of 8% on the item",
+          "is_correct": false
+        },
+        {
+          "option_text": "Profit of 20% on the item",
+          "is_correct": false
+        },
+        {
+          "option_text": "Loss of 4% on the item now",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Let CP = ₹100. MP = ₹150 (50% above CP). After 10% discount: 150 × 0.9 = ₹135. After 20% discount on ₹135: 135 × 0.8 = ₹108. SP = ₹108. Profit = SP − CP = 108 − 100 = ₹8. Profit% = 8/100 × 100 = 8%. SHORTCUT METHOD: 1.5 × 0.9 × 0.8 = 1.08 → 8% gain (multiplicative chaining of price factors). KEY METHOD for chain-discount + markup problems: (1) start with CP=100. (2) multiply by (1 + markup%) to get MP. (3) multiply by (1 − d₁%)(1 − d₂%) for successive discounts. (4) compare to CP. INSIGHT — discount-tracking: 1.5 × 0.9 = 1.35 (35% above CP after first discount). 1.35 × 0.8 = 1.08 (8% above CP after second discount). The successive discounts ate up most but not all of the markup. PYQ FREQUENCY: chain-discount-markup problems are SSC CGL Tier 2, IBPS PO Mains, RBI Grade B Mains favorites — 1-2 per paper. EXAMINER MINDSET: tests multi-stage price arithmetic discipline.",
       "subject": "Quant",
       "topic": "Profit and Loss VI",
-      "topic_code": "QNT_PROFIT_LOSS_VI_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -134,16 +206,28 @@
     {
       "stem": "A trader marks goods 25% above CP and gives a discount of 12% to a regular customer. His profit % to the nearest integer is:",
       "options": [
-        {"option_text": "10% profit (1.25 × 0.88 = 1.10)", "is_correct": true},
-        {"option_text": "13% profit a step too high", "is_correct": false},
-        {"option_text": "5% profit a step too low", "is_correct": false},
-        {"option_text": "8% (an even closer estimate)", "is_correct": false}
+        {
+          "option_text": "10% profit (1.25 × 0.88 = 1.10)",
+          "is_correct": true
+        },
+        {
+          "option_text": "13% profit a step too high",
+          "is_correct": false
+        },
+        {
+          "option_text": "5% profit a step too low",
+          "is_correct": false
+        },
+        {
+          "option_text": "8% (an even closer estimate)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Let CP = ₹100. MP = ₹125 (25% markup). Discount = 12% → SP = 125 × 0.88 = ₹110. Profit = 110 − 100 = ₹10. Profit% = 10%. SHORTCUT FORMULA: Effective profit% = (1 + markup%) × (1 − discount%) − 1 = 1.25 × 0.88 − 1 = 1.10 − 1 = 0.10 = 10%. EXAM TIP: this is fast mental math — practice (1+x)(1−y) decomposition: (1.25)(0.88) = 1.25 − 0.15 = 1.10 (since 1.25 × 0.12 = 0.15). KEY PRINCIPLE: when MP > CP > 0 and discount% ≠ markup%, you can have profit, loss, or break-even depending on which is larger. PROFIT iff (1+m)(1−d) > 1, i.e., m > d/(1−d). Here m=25%, threshold = 12/(1−0.12) = 12/0.88 ≈ 13.6%. Since 25% > 13.6%, profit. NEAR THRESHOLD: if m=10%, d=10%, profit = 1.1 × 0.9 − 1 = 0.99 − 1 = −1% (LOSS, despite same magnitudes). PYQ FREQUENCY: markup-discount-profit chain in SSC CGL, IBPS Clerk — 2-3 per paper.",
       "subject": "Quant",
       "topic": "Profit and Loss VI",
-      "topic_code": "QNT_PROFIT_LOSS_VI_MIXED",
+      "topic_code": "QA_PROFIT_LOSS",
       "difficulty": "hard",
       "effort_tier": "tier2",
       "staleness_risk": "low",

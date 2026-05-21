@@ -8,16 +8,28 @@
     {
       "stem": "Question: What is the age of Rahul? Statement I: Rahul is 5 years older than his sister Preeti. Statement II: Preeti's age is 18 years. Which is sufficient?",
       "options": [
-        {"option_text": "Statement I alone is sufficient", "is_correct": false},
-        {"option_text": "Both I and II together are sufficient, but neither alone", "is_correct": true},
-        {"option_text": "Statement II alone is sufficient", "is_correct": false},
-        {"option_text": "Each alone is sufficient", "is_correct": false}
+        {
+          "option_text": "Statement I alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II together are sufficient, but neither alone",
+          "is_correct": true
+        },
+        {
+          "option_text": "Statement II alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Each alone is sufficient",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Statement I gives a relationship (Rahul = Preeti + 5) but no absolute age. Statement II gives Preeti's age alone. Neither alone answers the question. Combined: Rahul = 18 + 5 = 23. So both are needed. Classic 'C' answer in the standard CAT-style data sufficiency framework.",
       "subject": "Reasoning",
       "topic": "Data sufficiency II — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_II_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Question: In what year was Rajiv born? Statement I: Rajiv is now 32 years old. Statement II: Rajiv's elder brother was born in 1988 and he is 4 years older than Rajiv. Which is sufficient?",
       "options": [
-        {"option_text": "I alone is sufficient", "is_correct": false},
-        {"option_text": "Each of I and II alone is sufficient", "is_correct": true},
-        {"option_text": "II alone is sufficient", "is_correct": false},
-        {"option_text": "Neither alone nor together", "is_correct": false}
+        {
+          "option_text": "I alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Each of I and II alone is sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "II alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither alone nor together",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Statement I alone — if Rajiv is 32 in the CURRENT year, birth year = current year − 32. Statement II alone — brother born 1988, Rajiv 4 years younger → Rajiv born 1992. Each statement alone gives the answer (via different paths). So 'either alone is sufficient' — the 'D' answer.",
       "subject": "Reasoning",
       "topic": "Data sufficiency II — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_II_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Question: What is the value of x? Statement I: x + 5 = 12. Statement II: x is a positive integer. Which is sufficient?",
       "options": [
-        {"option_text": "I alone is sufficient", "is_correct": true},
-        {"option_text": "II alone is sufficient", "is_correct": false},
-        {"option_text": "Both together", "is_correct": false},
-        {"option_text": "Neither", "is_correct": false}
+        {
+          "option_text": "I alone is sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "II alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both together",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Statement I alone → x = 7, unique value. Statement II alone — there are infinitely many positive integers, not enough. So I alone is sufficient, II is not needed. Answer A.",
       "subject": "Reasoning",
       "topic": "Data sufficiency II — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_II_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Question: What is the code for 'GREEN' in a certain language? Statement I: In that language, 'BLUE IS NICE' is coded as 'ka pa tu'. Statement II: 'GREEN IS DARK' is coded as 'mi pa lo'.",
       "options": [
-        {"option_text": "I alone", "is_correct": false},
-        {"option_text": "Both together", "is_correct": true},
-        {"option_text": "II alone", "is_correct": false},
-        {"option_text": "Neither", "is_correct": false}
+        {
+          "option_text": "I alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both together",
+          "is_correct": true
+        },
+        {
+          "option_text": "II alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "From I: {BLUE, IS, NICE} ↔ {ka, pa, tu}. From II: {GREEN, IS, DARK} ↔ {mi, pa, lo}. The shared word IS = pa (appears in both). So from II minus 'pa' — {GREEN, DARK} ↔ {mi, lo}. Without more data, we can't uniquely assign GREEN to 'mi' or 'lo'. BUT we need both statements to even identify which word is 'IS'. Answer — both needed (though still ambiguous between mi/lo, the DS framework treats it as 'C — both statements together narrow it to the correct pair').",
       "subject": "Reasoning",
       "topic": "Data sufficiency II — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_II_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "Question: How many children does Seema have? Statement I: Seema has fewer than 4 children. Statement II: Seema has more than 2 children but fewer than 5.",
       "options": [
-        {"option_text": "I alone is sufficient", "is_correct": false},
-        {"option_text": "II alone is sufficient", "is_correct": false},
-        {"option_text": "Both together are sufficient, neither alone is", "is_correct": true},
-        {"option_text": "Neither is sufficient", "is_correct": false}
+        {
+          "option_text": "I alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "II alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both together are sufficient, neither alone is",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither is sufficient",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "Statement I — fewer than 4 → 0, 1, 2 or 3 children (four possibilities). Statement II — more than 2 and fewer than 5 → 3 or 4 (two possibilities). Neither alone gives a unique value. Combining — intersection of {0,1,2,3} and {3,4} = {3}. Unique answer: 3 children. Answer C — both together sufficient, neither alone.",
       "subject": "Reasoning",
       "topic": "Data sufficiency II — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_II_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "Question: What is the average of five consecutive integers? Statement I: The largest integer is 10. Statement II: The smallest integer is 6.",
       "options": [
-        {"option_text": "I alone", "is_correct": false},
-        {"option_text": "Either I or II alone is sufficient", "is_correct": true},
-        {"option_text": "II alone", "is_correct": false},
-        {"option_text": "Both together", "is_correct": false}
+        {
+          "option_text": "I alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either I or II alone is sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "II alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both together",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Five consecutive integers — if the largest is 10, they are 6, 7, 8, 9, 10; average = 8. If the smallest is 6, same five: 6, 7, 8, 9, 10; average = 8. Each statement alone determines the set uniquely. So 'D — either alone is sufficient'.",
       "subject": "Reasoning",
       "topic": "Data sufficiency II — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_II_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Question: What is the speed of a train? Statement I: The train covers 180 km in 2 hours. Statement II: The train is a superfast train.",
       "options": [
-        {"option_text": "I alone is sufficient", "is_correct": true},
-        {"option_text": "II alone is sufficient", "is_correct": false},
-        {"option_text": "Both together", "is_correct": false},
-        {"option_text": "Neither", "is_correct": false}
+        {
+          "option_text": "I alone is sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "II alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both together",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Statement I — speed = distance / time = 180/2 = 90 km/h. Precise answer from I alone. Statement II — 'superfast' is a category, not a speed. In Indian Railways, 'superfast' means average > 55 km/h — still a range, not a number. II alone doesn't give a unique value. Answer — A.",
       "subject": "Reasoning",
       "topic": "Data sufficiency II — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_II_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,

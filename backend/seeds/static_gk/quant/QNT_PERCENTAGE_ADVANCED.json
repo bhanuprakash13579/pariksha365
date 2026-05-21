@@ -8,16 +8,28 @@
     {
       "stem": "A's salary is 20% more than B's, and B's salary is 25% less than C's. If A earns ₹36,000, what does C earn?",
       "options": [
-        {"option_text": "₹36,000", "is_correct": false},
-        {"option_text": "₹40,000", "is_correct": true},
-        {"option_text": "₹45,000", "is_correct": false},
-        {"option_text": "₹48,000", "is_correct": false}
+        {
+          "option_text": "₹36,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹40,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹45,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹48,000",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Work backwards. A = 120% of B → B = 36000/1.20 = 30000. B = 75% of C → C = 30000/0.75 = 40000. Trap ₹45,000 comes from applying the +25% reverse mistakenly; ₹48,000 from chaining +20% +25% on A.",
       "subject": "Quantitative Aptitude",
       "topic": "Percentage — exam-grade mixed (Banking Mains / SSC Tier 2)",
-      "topic_code": "QNT_PERCENTAGE_ADVANCED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "A shopkeeper marks an item 40 % above cost and gives 10 % discount for cash. He uses a weight of 900 g for 1 kg. Overall profit per cent is closest to:",
       "options": [
-        {"option_text": "26%", "is_correct": false},
-        {"option_text": "40%", "is_correct": true},
-        {"option_text": "50%", "is_correct": false},
-        {"option_text": "33%", "is_correct": false}
+        {
+          "option_text": "26%",
+          "is_correct": false
+        },
+        {
+          "option_text": "40%",
+          "is_correct": true
+        },
+        {
+          "option_text": "50%",
+          "is_correct": false
+        },
+        {
+          "option_text": "33%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Three successive tricks. Let CP of 1000 g = 100 → MP 140 → SP after 10 % discount = 126 (for 1000 g as billed). But he DELIVERS only 900 g, whose true CP = 90. Actual profit = 126 − 90 = 36 on CP 90 → 40 %. Distractor 26 % is just the mark-up-minus-discount (ignores false weight); 50 % comes from 126/84 mis-calc.",
       "subject": "Quantitative Aptitude",
       "topic": "Percentage — exam-grade mixed (Banking Mains / SSC Tier 2)",
-      "topic_code": "QNT_PERCENTAGE_ADVANCED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "In an election between two candidates, 15 % of the votes were declared invalid. The winner got 65 % of the valid votes and won by 8,400 votes. Total votes cast were:",
       "options": [
-        {"option_text": "24,000", "is_correct": false},
-        {"option_text": "32,941", "is_correct": true},
-        {"option_text": "40,000", "is_correct": false},
-        {"option_text": "28,000", "is_correct": false}
+        {
+          "option_text": "24,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "32,941",
+          "is_correct": true
+        },
+        {
+          "option_text": "40,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "28,000",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Let total = T. Valid = 0.85 T. Winner − Loser = (65 − 35) % of valid = 30 % × 0.85 T = 0.255 T. Set 0.255 T = 8400 → T = 8400/0.255 = 32,941.18 ≈ 32,941. Classic trap 24,000 / 40,000 / 28,000 come from applying 30 % or 35 % to total T directly (ignoring the 15 % invalid layer).",
       "subject": "Quantitative Aptitude",
       "topic": "Percentage — exam-grade mixed (Banking Mains / SSC Tier 2)",
-      "topic_code": "QNT_PERCENTAGE_ADVANCED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Population of a town is 50,000. It rises by 10 % in the first year, falls by 12 % in the second, and rises by 5 % in the third. Population at the end of 3 years is closest to:",
       "options": [
-        {"option_text": "50,600", "is_correct": false},
-        {"option_text": "50,820", "is_correct": true},
-        {"option_text": "48,500", "is_correct": false},
-        {"option_text": "52,100", "is_correct": false}
+        {
+          "option_text": "50,600",
+          "is_correct": false
+        },
+        {
+          "option_text": "50,820",
+          "is_correct": true
+        },
+        {
+          "option_text": "48,500",
+          "is_correct": false
+        },
+        {
+          "option_text": "52,100",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Compound changes: 50000 × 1.10 × 0.88 × 1.05. Compute pairwise: 1.10 × 0.88 = 0.968 (net −3.2 %). Then × 1.05 = 1.0164. Final = 50000 × 1.0164 = 50,820. Distractor 50,600 uses arithmetic +10 − 12 + 5 = +3 % (wrong because these are multiplicative, not additive).",
       "subject": "Quantitative Aptitude",
       "topic": "Percentage — exam-grade mixed (Banking Mains / SSC Tier 2)",
-      "topic_code": "QNT_PERCENTAGE_ADVANCED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "When the price of sugar rose by 20 %, a family reduced consumption so that its monthly sugar bill stayed the same. The family's reduction in consumption is:",
       "options": [
-        {"option_text": "20 %", "is_correct": false},
-        {"option_text": "16.67 %", "is_correct": true},
-        {"option_text": "25 %", "is_correct": false},
-        {"option_text": "18 %", "is_correct": false}
+        {
+          "option_text": "20 %",
+          "is_correct": false
+        },
+        {
+          "option_text": "16.67 %",
+          "is_correct": true
+        },
+        {
+          "option_text": "25 %",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 %",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Fixed expenditure → Price × Qty = constant. If price is multiplied by (1 + r) then Qty must be multiplied by 1/(1 + r). Change in Qty % = r/(1 + r) × 100. r = 0.20 → 20/120 × 100 = 16.67 %. Naïve trap 20 % mirrors the rise.",
       "subject": "Quantitative Aptitude",
       "topic": "Percentage — exam-grade mixed (Banking Mains / SSC Tier 2)",
-      "topic_code": "QNT_PERCENTAGE_ADVANCED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "Consider the following two statements about percentages. (i) A 25 % rise followed by a 25 % fall leaves the value unchanged. (ii) A 10 % rise and a 20 % rise applied in any order give the same net change. Which is/are correct?",
       "options": [
-        {"option_text": "Only (i)", "is_correct": false},
-        {"option_text": "Only (ii)", "is_correct": true},
-        {"option_text": "Both (i) and (ii)", "is_correct": false},
-        {"option_text": "Neither (i) nor (ii)", "is_correct": false}
+        {
+          "option_text": "Only (i)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only (ii)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both (i) and (ii)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither (i) nor (ii)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "(i) is wrong: equal opposite % changes leave a NET LOSS of (25²)/100 = 6.25 % (e.g., 100 → 125 → 93.75). (ii) is correct: multiplication is commutative — 1.10 × 1.20 = 1.20 × 1.10 = 1.32. Multi-statement test of the two most-tricked identities.",
       "subject": "Quantitative Aptitude",
       "topic": "Percentage — exam-grade mixed (Banking Mains / SSC Tier 2)",
-      "topic_code": "QNT_PERCENTAGE_ADVANCED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "X's income is 40 % more than Y's, and Y's income is 25 % less than Z's. If X's income is ₹42,000, Z's income is:",
       "options": [
-        {"option_text": "₹35,000", "is_correct": false},
-        {"option_text": "₹40,000", "is_correct": true},
-        {"option_text": "₹45,000", "is_correct": false},
-        {"option_text": "₹50,000", "is_correct": false}
+        {
+          "option_text": "₹35,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹40,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹45,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹50,000",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "X = 1.40 Y → Y = 42000/1.4 = 30000. Y = 0.75 Z → Z = 30000/0.75 = 40000. Trap ₹45,000 from misreading 'Y is 25 % less than Z' as 'Z is 25 % less than Y'.",
       "subject": "Quantitative Aptitude",
       "topic": "Percentage — exam-grade mixed (Banking Mains / SSC Tier 2)",
-      "topic_code": "QNT_PERCENTAGE_ADVANCED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -155,16 +239,28 @@
     {
       "stem": "In a test, a candidate scored 40 % of the maximum and failed by 30 marks. Another who scored 52 % exceeded the pass mark by 42 marks. The maximum marks were:",
       "options": [
-        {"option_text": "500", "is_correct": false},
-        {"option_text": "600", "is_correct": true},
-        {"option_text": "700", "is_correct": false},
-        {"option_text": "750", "is_correct": false}
+        {
+          "option_text": "500",
+          "is_correct": false
+        },
+        {
+          "option_text": "600",
+          "is_correct": true
+        },
+        {
+          "option_text": "700",
+          "is_correct": false
+        },
+        {
+          "option_text": "750",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Let max = M and pass = P. 0.40 M + 30 = P and 0.52 M − 42 = P. Equate: 0.12 M = 72 → M = 600. (Sanity: P = 0.40·600 + 30 = 270 = 0.52·600 − 42 ✓.)",
       "subject": "Quantitative Aptitude",
       "topic": "Percentage — exam-grade mixed (Banking Mains / SSC Tier 2)",
-      "topic_code": "QNT_PERCENTAGE_ADVANCED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "HARD",
       "effort_tier": "A",
       "staleness_risk": 0,

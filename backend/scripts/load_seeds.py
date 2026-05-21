@@ -55,6 +55,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional
 
+# Import at module level so normalization is always in scope.
+try:
+    from scripts.topic_code_map import TOPIC_CODE_MAP as _TOPIC_CODE_MAP
+except ImportError:
+    _TOPIC_CODE_MAP = {}
+
 from sqlalchemy import select
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -735,6 +741,7 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
             except Exception:
                 pass
 
+            _raw_tc = q_doc.get("topic_code") or ""
             db.add(QuizQuestion(
                 id=q_uuid,
                 question_text=(q_doc.get("stem") or q_doc.get("text") or ""),
@@ -749,7 +756,7 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
                 event_date=event_date,
                 valid_until=valid_until,
                 is_published=bool(q_doc.get("is_published", True)),
-                topic_code=q_doc.get("topic_code"),
+                topic_code=_TOPIC_CODE_MAP.get(_raw_tc, _raw_tc) or None,
                 options=options,
             ))
             totals["questions_loaded"] += 1

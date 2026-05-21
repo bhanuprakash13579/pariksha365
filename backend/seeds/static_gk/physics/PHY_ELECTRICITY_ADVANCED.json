@@ -8,16 +8,28 @@
     {
       "stem": "A 60 W bulb and a 100 W bulb designed for 220 V are connected in SERIES across a 220 V supply. Which will be BRIGHTER and why?",
       "options": [
-        {"option_text": "The 100 W bulb, because its power rating is higher", "is_correct": false},
-        {"option_text": "The 60 W bulb, because its resistance is higher and more power dissipates in it", "is_correct": true},
-        {"option_text": "Both will glow equally", "is_correct": false},
-        {"option_text": "Neither will glow in series", "is_correct": false}
+        {
+          "option_text": "The 100 W bulb, because its power rating is higher",
+          "is_correct": false
+        },
+        {
+          "option_text": "The 60 W bulb, because its resistance is higher and more power dissipates in it",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both will glow equally",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither will glow in series",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Resistance R = V²/P. 60 W bulb has R = 220²/60 ≈ 807 Ω. 100 W bulb has R = 220²/100 = 484 Ω. In SERIES, same current flows through both; power dissipated P = I²R → the HIGHER-resistance (60 W, the lower-rated) bulb dissipates more power and glows brighter. Counter-intuitive result — classic exam trap.",
       "subject": "Physics",
       "topic": "Electricity & Magnetism — multi-statement / application",
-      "topic_code": "PHY_ELECTRICITY_ADVANCED",
+      "topic_code": "PHY_CURRENT",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Consider the following about ELECTRIC POWER in a purely RESISTIVE circuit. 1. P = V²/R. 2. P = I²R. 3. P = V·I. 4. In an AC purely resistive circuit, RMS values are used for V and I in power calculations. Which are correct?",
       "options": [
-        {"option_text": "1, 2 and 3 only", "is_correct": false},
-        {"option_text": "1, 2, 3 and 4", "is_correct": true},
-        {"option_text": "1 and 3 only", "is_correct": false},
-        {"option_text": "3 and 4 only", "is_correct": false}
+        {
+          "option_text": "1, 2 and 3 only",
+          "is_correct": false
+        },
+        {
+          "option_text": "1, 2, 3 and 4",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 and 3 only",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 and 4 only",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "All four correct. The three power formulae are equivalent through V = IR. For AC resistive circuits, average power = V_rms × I_rms (with V_rms = V_peak/√2 for sinusoidal). In reactive circuits add the cosφ (power factor).",
       "subject": "Physics",
       "topic": "Electricity & Magnetism — multi-statement / application",
-      "topic_code": "PHY_ELECTRICITY_ADVANCED",
+      "topic_code": "PHY_CURRENT",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Three resistors of 4 Ω, 6 Ω and 12 Ω are connected in PARALLEL across a 12 V battery. The total current drawn is:",
       "options": [
-        {"option_text": "1 A", "is_correct": false},
-        {"option_text": "6 A", "is_correct": true},
-        {"option_text": "4 A", "is_correct": false},
-        {"option_text": "3 A", "is_correct": false}
+        {
+          "option_text": "1 A",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 A",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 A",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 A",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "1/R_eq = 1/4 + 1/6 + 1/12 = 3/12 + 2/12 + 1/12 = 6/12 → R_eq = 2 Ω. I = V/R = 12/2 = 6 A. Always compute R_eq first, then I = V/R_eq.",
       "subject": "Physics",
       "topic": "Electricity & Magnetism — multi-statement / application",
-      "topic_code": "PHY_ELECTRICITY_ADVANCED",
+      "topic_code": "PHY_CURRENT",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Match the instrument with its PRINCIPLE of operation. A. Electric motor. B. Transformer. C. Electric generator (dynamo). D. Galvanometer. List-II: 1. A current-carrying coil in a magnetic field experiences a torque (motor effect). 2. Mutual induction. 3. Electromagnetic induction (moving conductor in magnetic field). 4. Deflection of a current-carrying coil in a magnetic field.",
       "options": [
-        {"option_text": "A-1, B-2, C-3, D-4", "is_correct": true},
-        {"option_text": "A-1, B-3, C-2, D-4", "is_correct": false},
-        {"option_text": "A-3, B-2, C-1, D-4", "is_correct": false},
-        {"option_text": "A-4, B-2, C-3, D-1", "is_correct": false}
+        {
+          "option_text": "A-1, B-2, C-3, D-4",
+          "is_correct": true
+        },
+        {
+          "option_text": "A-1, B-3, C-2, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-3, B-2, C-1, D-4",
+          "is_correct": false
+        },
+        {
+          "option_text": "A-4, B-2, C-3, D-1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Motor — motor effect (Fleming's Left-Hand rule). Transformer — mutual induction (Faraday). Generator — electromagnetic induction (Fleming's Right-Hand rule). Galvanometer — torque on coil causes deflection proportional to current. Note 1 vs 4 are subtly different: motor converts to mechanical rotation; galvanometer produces a measured deflection.",
       "subject": "Physics",
       "topic": "Electricity & Magnetism — multi-statement / application",
-      "topic_code": "PHY_ELECTRICITY_ADVANCED",
+      "topic_code": "PHY_CURRENT",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "ASSERTION (A): A transformer does not work on DC supply. REASON (R): A steady DC current produces a constant magnetic flux, which does not induce an EMF in the secondary coil.",
       "options": [
-        {"option_text": "Both A and R are true, R is the correct explanation", "is_correct": true},
-        {"option_text": "Both A and R are true, R is NOT the correct explanation", "is_correct": false},
-        {"option_text": "A is true, R is false", "is_correct": false},
-        {"option_text": "A is false, R is true", "is_correct": false}
+        {
+          "option_text": "Both A and R are true, R is the correct explanation",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both A and R are true, R is NOT the correct explanation",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is true, R is false",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is false, R is true",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Transformers rely on a CHANGING flux to induce EMF in the secondary (Faraday's law: EMF = -dΦ/dt). Steady DC gives dΦ/dt = 0 → no induction → no stepped voltage. (Modern DC-DC converters exist but they CHOP the DC into pulses first to make dΦ/dt ≠ 0.)",
       "subject": "Physics",
       "topic": "Electricity & Magnetism — multi-statement / application",
-      "topic_code": "PHY_ELECTRICITY_ADVANCED",
+      "topic_code": "PHY_CURRENT",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "A long straight wire carries a current of 5 A. The magnetic field at 0.1 m from the wire is (μ₀ = 4π × 10⁻⁷ T·m/A):",
       "options": [
-        {"option_text": "10⁻⁵ T", "is_correct": true},
-        {"option_text": "10⁻⁶ T", "is_correct": false},
-        {"option_text": "10⁻⁴ T", "is_correct": false},
-        {"option_text": "2 × 10⁻⁷ T", "is_correct": false}
+        {
+          "option_text": "10⁻⁵ T",
+          "is_correct": true
+        },
+        {
+          "option_text": "10⁻⁶ T",
+          "is_correct": false
+        },
+        {
+          "option_text": "10⁻⁴ T",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 × 10⁻⁷ T",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "B = μ₀ I / (2π r) = (4π × 10⁻⁷ × 5) / (2π × 0.1) = (4 × 10⁻⁷ × 5) / (2 × 0.1) = (20 × 10⁻⁷) / 0.2 = 10⁻⁵ T. Ampere's law for a long straight wire.",
       "subject": "Physics",
       "topic": "Electricity & Magnetism — multi-statement / application",
-      "topic_code": "PHY_ELECTRICITY_ADVANCED",
+      "topic_code": "PHY_CURRENT",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Which of the following does NOT use the principle of ELECTROMAGNETIC INDUCTION?",
       "options": [
-        {"option_text": "Induction stove", "is_correct": false},
-        {"option_text": "Electric generator", "is_correct": false},
-        {"option_text": "Transformer", "is_correct": false},
-        {"option_text": "Electric iron", "is_correct": true}
+        {
+          "option_text": "Induction stove",
+          "is_correct": false
+        },
+        {
+          "option_text": "Electric generator",
+          "is_correct": false
+        },
+        {
+          "option_text": "Transformer",
+          "is_correct": false
+        },
+        {
+          "option_text": "Electric iron",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "explanation": "Electric iron uses simple JOULE HEATING in a resistive element — not electromagnetic induction. Induction stove (eddy currents in the iron pot), generator (Faraday), transformer (mutual induction) all rely on EMI.",
       "subject": "Physics",
       "topic": "Electricity & Magnetism — multi-statement / application",
-      "topic_code": "PHY_ELECTRICITY_ADVANCED",
+      "topic_code": "PHY_CURRENT",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -155,16 +239,28 @@
     {
       "stem": "A fuse in an electric circuit is designed to:",
       "options": [
-        {"option_text": "Lower voltage to safe levels", "is_correct": false},
-        {"option_text": "Break the circuit when current exceeds a rated limit, protecting devices", "is_correct": true},
-        {"option_text": "Increase the current capacity of the wire", "is_correct": false},
-        {"option_text": "Convert AC to DC", "is_correct": false}
+        {
+          "option_text": "Lower voltage to safe levels",
+          "is_correct": false
+        },
+        {
+          "option_text": "Break the circuit when current exceeds a rated limit, protecting devices",
+          "is_correct": true
+        },
+        {
+          "option_text": "Increase the current capacity of the wire",
+          "is_correct": false
+        },
+        {
+          "option_text": "Convert AC to DC",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "A fuse is a thin wire of low-melting-point alloy that melts and breaks the circuit when excessive current flows (short circuit, overload). Protects appliances and wiring from damage/fire. Modern alternative: MCB (Miniature Circuit Breaker) — reusable.",
       "subject": "Physics",
       "topic": "Electricity & Magnetism — multi-statement / application",
-      "topic_code": "PHY_ELECTRICITY_ADVANCED",
+      "topic_code": "PHY_CURRENT",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,

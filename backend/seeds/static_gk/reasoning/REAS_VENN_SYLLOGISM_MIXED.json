@@ -8,16 +8,28 @@
     {
       "stem": "In a class of 60 students, 30 play cricket and 25 play football; 10 play both. How many play neither?",
       "options": [
-        {"option_text": "5", "is_correct": false},
-        {"option_text": "15", "is_correct": true},
-        {"option_text": "20", "is_correct": false},
-        {"option_text": "10", "is_correct": false}
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Either sport = 30 + 25 − 10 = 45. Neither = 60 − 45 = 15.",
       "subject": "Reasoning",
       "topic": "Venn diagrams & syllogism — mixed tiers",
-      "topic_code": "REAS_VENN_SYLLOGISM_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Statements: All cats are mammals. All mammals are animals. Conclusion: All cats are animals.",
       "options": [
-        {"option_text": "Conclusion follows", "is_correct": true},
-        {"option_text": "Does not follow", "is_correct": false},
-        {"option_text": "Partially follows", "is_correct": false},
-        {"option_text": "Cannot be determined", "is_correct": false}
+        {
+          "option_text": "Conclusion follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Does not follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Partially follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Transitive. A ⊆ M, M ⊆ An → A ⊆ An. Classic Barbara syllogism (A + A → A type).",
       "subject": "Reasoning",
       "topic": "Venn diagrams & syllogism — mixed tiers",
-      "topic_code": "REAS_VENN_SYLLOGISM_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "In a survey of 100 people: 50 like tea, 30 like coffee, 10 like both. How many like ONLY tea?",
       "options": [
-        {"option_text": "50", "is_correct": false},
-        {"option_text": "40", "is_correct": true},
-        {"option_text": "20", "is_correct": false},
-        {"option_text": "10", "is_correct": false}
+        {
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": true
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Only tea = (tea total) − (both) = 50 − 10 = 40.",
       "subject": "Reasoning",
       "topic": "Venn diagrams & syllogism — mixed tiers",
-      "topic_code": "REAS_VENN_SYLLOGISM_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Statements: Some pens are pencils. All pencils are books. Conclusions: (I) Some pens are books. (II) All pens are books.",
       "options": [
-        {"option_text": "Only (I) follows", "is_correct": true},
-        {"option_text": "Only (II) follows", "is_correct": false},
-        {"option_text": "Both follow", "is_correct": false},
-        {"option_text": "Neither follows", "is_correct": false}
+        {
+          "option_text": "Only (I) follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only (II) follows",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither follows",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Some pens overlap pencils; all pencils are books → that overlap is also in books → 'Some pens are books' follows. (II) 'All pens are books' needs the entire pen-set to be in books, which is not established.",
       "subject": "Reasoning",
       "topic": "Venn diagrams & syllogism — mixed tiers",
-      "topic_code": "REAS_VENN_SYLLOGISM_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "Statements: No bird is a mammal. All parrots are birds. Conclusion: No parrot is a mammal.",
       "options": [
-        {"option_text": "Follows", "is_correct": true},
-        {"option_text": "Does not follow", "is_correct": false},
-        {"option_text": "Cannot be determined", "is_correct": false},
-        {"option_text": "Only 'some parrots are not mammals' follows", "is_correct": false}
+        {
+          "option_text": "Follows",
+          "is_correct": true
+        },
+        {
+          "option_text": "Does not follow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only 'some parrots are not mammals' follows",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "A ⊆ B and B ∩ M = ∅ → A ∩ M = ∅. Valid syllogism (E + A → E form, Celarent).",
       "subject": "Reasoning",
       "topic": "Venn diagrams & syllogism — mixed tiers",
-      "topic_code": "REAS_VENN_SYLLOGISM_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "In a group of 50 people who know languages: 20 know English, 25 know Hindi, 5 know both. How many know AT LEAST ONE language?",
       "options": [
-        {"option_text": "45", "is_correct": false},
-        {"option_text": "40", "is_correct": true},
-        {"option_text": "35", "is_correct": false},
-        {"option_text": "50", "is_correct": false}
+        {
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": true
+        },
+        {
+          "option_text": "35",
+          "is_correct": false
+        },
+        {
+          "option_text": "50",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "|E ∪ H| = |E| + |H| − |E ∩ H| = 20 + 25 − 5 = 40. So 40 know at least one language (the remaining 10 know neither).",
       "subject": "Reasoning",
       "topic": "Venn diagrams & syllogism — mixed tiers",
-      "topic_code": "REAS_VENN_SYLLOGISM_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Statements: Some A are B. No B is C. Conclusions: (I) Some A are not C. (II) No A is C.",
       "options": [
-        {"option_text": "Only (I)", "is_correct": true},
-        {"option_text": "Only (II)", "is_correct": false},
-        {"option_text": "Both", "is_correct": false},
-        {"option_text": "Neither", "is_correct": false}
+        {
+          "option_text": "Only (I)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only (II)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "'Some A are B' + 'No B is C' → the A-B overlap is disjoint from C → 'Some A are not C'. (II) is too strong — the A's that are NOT B's could still possibly be C's. Classic I + E → O form.",
       "subject": "Reasoning",
       "topic": "Venn diagrams & syllogism — mixed tiers",
-      "topic_code": "REAS_VENN_SYLLOGISM_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,

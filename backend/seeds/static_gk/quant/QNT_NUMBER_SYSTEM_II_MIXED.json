@@ -8,16 +8,28 @@
     {
       "stem": "What is the LCM of 12 and 18?",
       "options": [
-        {"option_text": "24 is the LCM here", "is_correct": false},
-        {"option_text": "36 is the LCM here", "is_correct": true},
-        {"option_text": "54 is the LCM here", "is_correct": false},
-        {"option_text": "72 is the LCM here", "is_correct": false}
+        {
+          "option_text": "24 is the LCM here",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 is the LCM here",
+          "is_correct": true
+        },
+        {
+          "option_text": "54 is the LCM here",
+          "is_correct": false
+        },
+        {
+          "option_text": "72 is the LCM here",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "LCM (Least Common Multiple) = smallest number divisible by BOTH. METHOD 1 — prime factorisation: 12 = 2² × 3; 18 = 2 × 3². LCM = take HIGHEST power of EACH prime = 2² × 3² = 4 × 9 = 36. METHOD 2 — multiples: 12, 24, 36; 18, 36 → first common = 36. SHORTCUT: LCM × HCF = product of numbers. So HCF(12,18) = 6; check: 12 × 18 = 216 = 36 × 6 ✓. INSIGHT — LCM useful for: lining up cycles (LCM of two repeating events), denominators in fractions (find common denom), train problems (when two trains meet again at start). HCF (= GCD) for: max equal parts, simplifying fractions.",
       "subject": "Quant",
       "topic": "Number system II — mixed tiers",
-      "topic_code": "QNT_NUMBER_SYSTEM_II_MIXED",
+      "topic_code": "QA_NUMBER",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "What is the HCF of 24, 36, and 60?",
       "options": [
-        {"option_text": "6 is the HCF here", "is_correct": false},
-        {"option_text": "12 is the HCF here", "is_correct": true},
-        {"option_text": "18 is the HCF here", "is_correct": false},
-        {"option_text": "24 is the HCF here", "is_correct": false}
+        {
+          "option_text": "6 is the HCF here",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 is the HCF here",
+          "is_correct": true
+        },
+        {
+          "option_text": "18 is the HCF here",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 is the HCF here",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "HCF (Highest Common Factor / GCD) = largest number that divides ALL given. Prime factorisation: 24 = 2³ × 3; 36 = 2² × 3²; 60 = 2² × 3 × 5. HCF = take LOWEST power of EACH common prime = 2² × 3 = 12. (5 isn't in all 3, so not in HCF.) Verify: 12 divides 24 (=2×12) ✓; 36 (=3×12) ✓; 60 (=5×12) ✓. EUCLID's algorithm (faster for big numbers): HCF(a,b) = HCF(b, a mod b). Continue till remainder = 0; last divisor = HCF. e.g., HCF(36, 24) = HCF(24, 12) = HCF(12, 0) = 12. INSIGHT: useful for finding largest equal-size groupings (e.g., dividing 24 boys + 36 girls into equal-mix groups → HCF = 12 groups).",
       "subject": "Quant",
       "topic": "Number system II — mixed tiers",
-      "topic_code": "QNT_NUMBER_SYSTEM_II_MIXED",
+      "topic_code": "QA_NUMBER",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Sum of digits of a number is divisible by 9 → number is divisible by:",
       "options": [
-        {"option_text": "3 (divisibility by 3 rule)", "is_correct": false},
-        {"option_text": "9 (divisibility by 9 rule)", "is_correct": true},
-        {"option_text": "11 (alternate-sum rule)", "is_correct": false},
-        {"option_text": "Both 9 and 11 (combined)", "is_correct": false}
+        {
+          "option_text": "3 (divisibility by 3 rule)",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 (divisibility by 9 rule)",
+          "is_correct": true
+        },
+        {
+          "option_text": "11 (alternate-sum rule)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both 9 and 11 (combined)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "DIVISIBILITY RULES (PYQ favourites): 2 → last digit even; 3 → digit-SUM divisible by 3; 4 → last 2 digits div by 4; 5 → last digit 0 or 5; 6 → div by 2 AND 3; 8 → last 3 digits div by 8; 9 → digit-sum div by 9; 10 → last digit 0; 11 → alternating sum (odd-position digits − even-position digits) div by 11; 7 → no simple rule (or: double last digit, subtract from rest); 13 → multiply last digit by 4, add to rest. INSIGHT: digit-sum rules (3, 9) come from base-10 arithmetic — every power of 10 leaves remainder 1 mod 9 (because 10 ≡ 1 mod 9). So number ≡ digit-sum mod 9. ALSO works: number div by 9 ⇒ div by 3 too (since 3 divides 9).",
       "subject": "Quant",
       "topic": "Number system II — mixed tiers",
-      "topic_code": "QNT_NUMBER_SYSTEM_II_MIXED",
+      "topic_code": "QA_NUMBER",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Smallest 3-digit number divisible by 7 is:",
       "options": [
-        {"option_text": "100 is smallest 3-digit", "is_correct": false},
-        {"option_text": "105 (= 7 × 15) is smallest", "is_correct": true},
-        {"option_text": "112 is smallest divisible-7", "is_correct": false},
-        {"option_text": "108 is smallest divisible-7", "is_correct": false}
+        {
+          "option_text": "100 is smallest 3-digit",
+          "is_correct": false
+        },
+        {
+          "option_text": "105 (= 7 × 15) is smallest",
+          "is_correct": true
+        },
+        {
+          "option_text": "112 is smallest divisible-7",
+          "is_correct": false
+        },
+        {
+          "option_text": "108 is smallest divisible-7",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Smallest 3-digit number = 100. Divide 100 by 7: 100 ÷ 7 = 14 remainder 2. Next multiple of 7 after 100 = 7 × 15 = 105. So 105 is the smallest 3-digit multiple of 7. SHORTCUT FORMULA: if you want smallest n-digit multiple of k → take smallest n-digit number, divide by k, take ceiling, multiply back. Here: ⌈100/7⌉ = 15; 15 × 7 = 105. LARGEST 3-digit multiple of 7: 999/7 = 142.71... → ⌊999/7⌋ = 142; 142 × 7 = 994. Count of 3-digit multiples of 7: 142 − 15 + 1 = 128.",
       "subject": "Quant",
       "topic": "Number system II — mixed tiers",
-      "topic_code": "QNT_NUMBER_SYSTEM_II_MIXED",
+      "topic_code": "QA_NUMBER",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "How many PRIME numbers are between 1 and 20 (exclusive of 1, inclusive of 20)?",
       "options": [
-        {"option_text": "7 prime numbers (2,3,5,7,11,13,17)", "is_correct": false},
-        {"option_text": "8 prime numbers (2,3,5,7,11,13,17,19)", "is_correct": true},
-        {"option_text": "9 prime numbers (1 included wrongly)", "is_correct": false},
-        {"option_text": "6 prime numbers (off by some)", "is_correct": false}
+        {
+          "option_text": "7 prime numbers (2,3,5,7,11,13,17)",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 prime numbers (2,3,5,7,11,13,17,19)",
+          "is_correct": true
+        },
+        {
+          "option_text": "9 prime numbers (1 included wrongly)",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 prime numbers (off by some)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "PRIMES = numbers > 1 with no divisors other than 1 + itself. Up to 20: 2, 3, 5, 7, 11, 13, 17, 19 = 8 primes. NOTE: 1 is NOT prime (has only 1 divisor — itself). 2 is the only EVEN prime (and smallest prime). All other primes are ODD. SIEVE OF ERATOSTHENES — efficient algorithm to find primes up to N. PRIME COUNT (π function): π(10)=4, π(20)=8, π(100)=25, π(1000)=168. PRIME NUMBER THEOREM: π(N) ≈ N/ln(N). INFINITELY MANY primes (proved by Euclid, ~300 BCE). LARGEST KNOWN prime (as of 2026) is a Mersenne prime with millions of digits.",
       "subject": "Quant",
       "topic": "Number system II — mixed tiers",
-      "topic_code": "QNT_NUMBER_SYSTEM_II_MIXED",
+      "topic_code": "QA_NUMBER",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "If LCM(a,b) = 72 and HCF(a,b) = 6, then product of a + b is:",
       "options": [
-        {"option_text": "78 product (sum-not-product)", "is_correct": false},
-        {"option_text": "432 (LCM × HCF = product)", "is_correct": true},
-        {"option_text": "324 product (some confusion)", "is_correct": false},
-        {"option_text": "144 product (some confusion)", "is_correct": false}
+        {
+          "option_text": "78 product (sum-not-product)",
+          "is_correct": false
+        },
+        {
+          "option_text": "432 (LCM × HCF = product)",
+          "is_correct": true
+        },
+        {
+          "option_text": "324 product (some confusion)",
+          "is_correct": false
+        },
+        {
+          "option_text": "144 product (some confusion)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "FUNDAMENTAL FORMULA: a × b = LCM(a, b) × HCF(a, b). So a × b = 72 × 6 = 432. WHY this works: LCM contains highest powers of all primes; HCF contains lowest; multiplied, you get back the product (each prime appears the right number of times). USE: if you know any 3 of {a, b, LCM, HCF}, compute the 4th. EXAMPLE: a × b = 432; HCF = 6 → both a + b are multiples of 6; possibilities (since LCM = 72): could be (6, 72), (12, 36), (24, 18), etc. — but (12, 36) works as both factors of 72; (24, 18): HCF=6 ✓, LCM=72 ✓, product=432 ✓.",
       "subject": "Quant",
       "topic": "Number system II — mixed tiers",
-      "topic_code": "QNT_NUMBER_SYSTEM_II_MIXED",
+      "topic_code": "QA_NUMBER",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "How many ZEROES are there at the END of 100! (factorial)?",
       "options": [
-        {"option_text": "20 trailing zeroes (estimate)", "is_correct": false},
-        {"option_text": "24 trailing zeroes (correct count)", "is_correct": true},
-        {"option_text": "10 trailing zeroes (less)", "is_correct": false},
-        {"option_text": "100 trailing zeroes (way more)", "is_correct": false}
+        {
+          "option_text": "20 trailing zeroes (estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 trailing zeroes (correct count)",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 trailing zeroes (less)",
+          "is_correct": false
+        },
+        {
+          "option_text": "100 trailing zeroes (way more)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Trailing zeros come from factor of 10 = 2 × 5 in factorial. In any factorial, there are MORE 2s than 5s, so #trailing zeros = #of times 5 appears in prime factorisation. FORMULA: count = ⌊n/5⌋ + ⌊n/25⌋ + ⌊n/125⌋ + ... (Legendre's formula). For n = 100: ⌊100/5⌋ = 20; ⌊100/25⌋ = 4; ⌊100/125⌋ = 0. Total = 20 + 4 = 24. INSIGHT — 100! has 158 digits in total; 24 of them are trailing zeros. SHORTCUT — useful for problems asking 'how many zeros end n!?': just count powers of 5 ≤ n, then ≤ n²/5, etc.",
       "subject": "Quant",
       "topic": "Number system II — mixed tiers",
-      "topic_code": "QNT_NUMBER_SYSTEM_II_MIXED",
+      "topic_code": "QA_NUMBER",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,

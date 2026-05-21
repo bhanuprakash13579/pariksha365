@@ -8,16 +8,28 @@
     {
       "stem": "Find the next term in the series: B, D, F, H, ?",
       "options": [
-        {"option_text": "J (skip-one alphabet pattern)", "is_correct": true},
-        {"option_text": "I (just the next letter)", "is_correct": false},
-        {"option_text": "K (a non-pattern letter)", "is_correct": false},
-        {"option_text": "L (further down alphabet)", "is_correct": false}
+        {
+          "option_text": "J (skip-one alphabet pattern)",
+          "is_correct": true
+        },
+        {
+          "option_text": "I (just the next letter)",
+          "is_correct": false
+        },
+        {
+          "option_text": "K (a non-pattern letter)",
+          "is_correct": false
+        },
+        {
+          "option_text": "L (further down alphabet)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "PATTERN: each term skips ONE letter from the previous. B → (skip C) → D → (skip E) → F → (skip G) → H → (skip I) → J. Position-wise: B=2, D=4, F=6, H=8, J=10. The arithmetic difference is +2 each step. ALPHABET POSITIONS (memorize): A=1, B=2, C=3, ..., M=13, ..., Z=26. SHORTCUT for letter series: (1) write down each letter's position number. (2) find the numerical pattern (+2, ×2, prime, etc.). (3) compute next position; convert back to letter. COMMON LETTER-SERIES PATTERNS: (a) +1 (consecutive: A, B, C, D...). (b) +2 (skip-one: A, C, E, G...). (c) +3 (skip-two: A, D, G, J...). (d) prime gaps: B, C, E, H, M (positions 2, 3, 5, 8, 13 — Fibonacci-like). (e) reverse alphabet (Z, Y, X...). PYQ FREQUENCY: 1-2 letter-series Qs per SSC CGL Tier 1, IBPS Clerk Prelims, RRB NTPC.",
       "subject": "Reasoning",
       "topic": "Letter Series II",
-      "topic_code": "REAS_LETTER_SERIES_II_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -29,16 +41,28 @@
     {
       "stem": "Find the next term: A, C, F, J, ?",
       "options": [
-        {"option_text": "O (gaps: +2, +3, +4, +5)", "is_correct": true},
-        {"option_text": "N (a smaller jump letter)", "is_correct": false},
-        {"option_text": "M (another option letter)", "is_correct": false},
-        {"option_text": "P (a larger jump letter)", "is_correct": false}
+        {
+          "option_text": "O (gaps: +2, +3, +4, +5)",
+          "is_correct": true
+        },
+        {
+          "option_text": "N (a smaller jump letter)",
+          "is_correct": false
+        },
+        {
+          "option_text": "M (another option letter)",
+          "is_correct": false
+        },
+        {
+          "option_text": "P (a larger jump letter)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "PATTERN: increasing gap by 1 each time. A → C (gap +2) → F (gap +3) → J (gap +4) → ? (gap +5). Position-wise: A=1, C=3, F=6, J=10, NEXT = 10+5 = 15 = O. DIFFERENCES SERIES: 2, 3, 4, 5, 6... (arithmetic progression of gaps). KEY METHOD — when a series doesn't have a constant gap: (1) compute differences. (2) check if differences themselves form a pattern (constant, arithmetic, geometric). (3) extend the differences and add to the last term. SAMPLE PATTERNS: (a) constant +2: A, C, E, G... (b) +1, +2, +3...: A, B, D, G, K, P (triangular gaps). (c) Fibonacci gaps: A, B, D, G, M, V (1, 2, 3, 5, 8...). (d) geometric: A, B, D, H, P (×2 gaps). PYQ FREQUENCY: increasing-gap series is a top SSC CGL trick — 1 per Tier 1 paper; mixed alphabetical/numerical in IBPS PO Reasoning.",
       "subject": "Reasoning",
       "topic": "Letter Series II",
-      "topic_code": "REAS_LETTER_SERIES_II_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -50,16 +74,28 @@
     {
       "stem": "Which letter comes next: Z, X, V, T, ?",
       "options": [
-        {"option_text": "R (reverse skip-one)", "is_correct": true},
-        {"option_text": "S (just one letter back)", "is_correct": false},
-        {"option_text": "Q (a deeper jump back)", "is_correct": false},
-        {"option_text": "U (forward direction now)", "is_correct": false}
+        {
+          "option_text": "R (reverse skip-one)",
+          "is_correct": true
+        },
+        {
+          "option_text": "S (just one letter back)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q (a deeper jump back)",
+          "is_correct": false
+        },
+        {
+          "option_text": "U (forward direction now)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "PATTERN: REVERSE ALPHABET, skipping one letter each time. Z=26 → X=24 (gap −2) → V=22 (gap −2) → T=20 (gap −2) → R=18 (gap −2). KEY: each step subtracts 2 in alphabetical position. SHORTCUT: when you see Z, Y, X, W, V... think 'reverse alphabet'; if every-other-letter, it's '−2 in position'. ALPHABET REVERSE POSITIONS: Z=1 (or 26), Y=2 (or 25), X=3 (or 24), ... A=26 (or 1). When tackling reverse problems, use the BACK-TO-FRONT positions: Z is the '1st from end', X is '3rd from end', etc. EXAM TRAP: students confuse forward (A→Z) and backward (Z→A) numbering. PRACTICE: Z X V T R P N L J H F D B — full reverse skip-one. PYQ FREQUENCY: reverse-direction series Qs in SSC, IBPS, SBI 1-2× per cycle. EXAMINER MINDSET: tests directional flexibility + pattern recognition.",
       "subject": "Reasoning",
       "topic": "Letter Series II",
-      "topic_code": "REAS_LETTER_SERIES_II_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -71,16 +107,28 @@
     {
       "stem": "Find the missing term in the series: AZ, BY, CX, DW, ?",
       "options": [
-        {"option_text": "EV (forward + reverse pair)", "is_correct": true},
-        {"option_text": "FU (skipped a letter pair)", "is_correct": false},
-        {"option_text": "EW (wrong second letter)", "is_correct": false},
-        {"option_text": "DV (wrong first letter)", "is_correct": false}
+        {
+          "option_text": "EV (forward + reverse pair)",
+          "is_correct": true
+        },
+        {
+          "option_text": "FU (skipped a letter pair)",
+          "is_correct": false
+        },
+        {
+          "option_text": "EW (wrong second letter)",
+          "is_correct": false
+        },
+        {
+          "option_text": "DV (wrong first letter)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "PATTERN: each term has TWO letters: (1) FIRST letter goes A → B → C → D → E (forward in alphabet, +1). (2) SECOND letter goes Z → Y → X → W → V (backward, −1). So the next pair is E + V = EV. INSIGHT: this is a 'PAIRED-DIRECTION' pattern — first letter increments, second letter decrements. POSITION ARITHMETIC: A(1)+Z(26) = 27; B(2)+Y(25) = 27; C(3)+X(24) = 27; D(4)+W(23) = 27. EVERY pair sums to 27! So the next pair must be E(5) + V(22) = 27 ✓. RELATED PATTERN: 'AZ' is the FIRST + LAST letter; 'BY' is the SECOND + SECOND-LAST, etc. — known as 'opposite-letter pairs'. OPPOSITE-LETTER MEMORIZATION: A↔Z, B↔Y, C↔X, D↔W, E↔V, F↔U, G↔T, H↔S, I↔R, J↔Q, K↔P, L↔O, M↔N. Each pair sums to 27. PYQ FREQUENCY: paired-letter series in SSC CGL, IBPS PO; common in coding-decoding too.",
       "subject": "Reasoning",
       "topic": "Letter Series II",
-      "topic_code": "REAS_LETTER_SERIES_II_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -92,16 +140,28 @@
     {
       "stem": "Complete the series: A1, C9, E25, G49, ?",
       "options": [
-        {"option_text": "I81 (next odd-letter, 9-squared)", "is_correct": true},
-        {"option_text": "H64 (a pure even pattern)", "is_correct": false},
-        {"option_text": "I64 (only the letter is right)", "is_correct": false},
-        {"option_text": "J81 (only the number right)", "is_correct": false}
+        {
+          "option_text": "I81 (next odd-letter, 9-squared)",
+          "is_correct": true
+        },
+        {
+          "option_text": "H64 (a pure even pattern)",
+          "is_correct": false
+        },
+        {
+          "option_text": "I64 (only the letter is right)",
+          "is_correct": false
+        },
+        {
+          "option_text": "J81 (only the number right)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "DOUBLE PATTERN — letters and numbers progress independently. LETTERS: A=1, C=3, E=5, G=7, I=9 (odd-position letters: 1, 3, 5, 7, 9). NUMBERS: 1, 9, 25, 49, 81 — these are squares of odd numbers: 1², 3², 5², 7², 9². So the next term combines I (9th letter) with 9² = 81 → I81. KEY METHOD for COMPOUND series: (1) split into letter-component and number-component. (2) find each pattern independently. (3) combine. INSIGHT: the LETTER position itself (1, 3, 5, 7, 9) is the SQUARE-ROOT of the NUMBER (1, 9, 25, 49, 81). This 'self-referential' pattern is especially elegant. SAMPLE OTHER COMPOUND PATTERNS: (a) A1, B4, C9, D16 (n²). (b) A2, C6, E12, G20 (n×(n+1) for odd-position letters). (c) A1, B3, C6, D10 (triangular). PYQ ANGLE: compound letter-number series appear in SSC CGL, IBPS PO; require systematic decomposition.",
       "subject": "Reasoning",
       "topic": "Letter Series II",
-      "topic_code": "REAS_LETTER_SERIES_II_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "hard",
       "effort_tier": "tier2",
       "staleness_risk": "low",
@@ -113,16 +173,28 @@
     {
       "stem": "Find the next term: AB, DE, GH, JK, ?",
       "options": [
-        {"option_text": "MN (skip-two pair pattern)", "is_correct": true},
-        {"option_text": "LM (only one letter ahead)", "is_correct": false},
-        {"option_text": "OP (a much further skip)", "is_correct": false},
-        {"option_text": "MO (mismatched second letter)", "is_correct": false}
+        {
+          "option_text": "MN (skip-two pair pattern)",
+          "is_correct": true
+        },
+        {
+          "option_text": "LM (only one letter ahead)",
+          "is_correct": false
+        },
+        {
+          "option_text": "OP (a much further skip)",
+          "is_correct": false
+        },
+        {
+          "option_text": "MO (mismatched second letter)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "PATTERN: each pair has CONSECUTIVE letters (AB, DE, GH, JK), and between consecutive pairs there's a SKIP OF TWO letters. AB → (skip C) → DE → (skip F) → GH → (skip I) → JK → (skip L) → MN. POSITION-WISE: A=1, B=2; D=4, E=5; G=7, H=8; J=10, K=11; M=13, N=14. The first letter of each pair: A=1, D=4, G=7, J=10, M=13 — gaps of +3. KEY METHOD for paired-letter series: track only the FIRST letter of each pair (or the LAST), find its arithmetic pattern; the second letter usually follows a related rule (often +1 from the first). PRACTICE PATTERNS: AB, CD, EF, GH (consecutive pairs, no skip). AB, DE, GH (skip 1 between pairs — the question above). AC, EG, IK, MO (every 2nd letter, no second-letter rule). PYQ FREQUENCY: paired-letter series are 1-2 Qs per SSC CGL Tier 1, RRB NTPC, RBI Grade B Phase 1.",
       "subject": "Reasoning",
       "topic": "Letter Series II",
-      "topic_code": "REAS_LETTER_SERIES_II_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -134,16 +206,28 @@
     {
       "stem": "Find the next term: B, E, I, N, T, ?",
       "options": [
-        {"option_text": "A (gap +6 wraps Z to A)", "is_correct": true},
-        {"option_text": "Z (one position back)", "is_correct": false},
-        {"option_text": "Y (two positions back)", "is_correct": false},
-        {"option_text": "U (just next letter)", "is_correct": false}
+        {
+          "option_text": "A (gap +6 wraps Z to A)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Z (one position back)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Y (two positions back)",
+          "is_correct": false
+        },
+        {
+          "option_text": "U (just next letter)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "PATTERN — INCREASING GAPS: B(2) → E(5) → I(9) → N(14) → T(20) → ?. Differences: +3, +4, +5, +6 → next gap is +7. T(20) + 7 = 27. Since alphabet has 26 letters, position 27 WRAPS AROUND to 1 = A. WRAP-AROUND RULE: when position > 26, subtract 26 (so 27→1, 28→2, etc.). When position < 1, add 26. INTUITION: think of the alphabet as a CIRCLE (Z connects back to A) — you can keep going forward indefinitely. ALTERNATIVE: differences could continue 3, 4, 5, 6, 7... matching triangular-number gaps. CHECK: Σ(3+4+5+6+7) = 25, so position = 2+25 = 27 = A (wrap). PYQ ANGLE: increasing-gap with wrap-around is a CGL Tier-2 / IBPS PO Mains advanced reasoning pattern. EXAM TRAP: students forget the WRAP RULE and pick a non-existent letter. KEY METHOD: when gap takes you past Z, mod-26 the result.",
       "subject": "Reasoning",
       "topic": "Letter Series II",
-      "topic_code": "REAS_LETTER_SERIES_II_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "hard",
       "effort_tier": "tier2",
       "staleness_risk": "low",

@@ -8,16 +8,28 @@
     {
       "stem": "Pointing to a photo, Anil said: 'His father is my father's only son.' The person in the photo is Anil's:",
       "options": [
-        {"option_text": "Brother", "is_correct": false},
-        {"option_text": "Son", "is_correct": true},
-        {"option_text": "Father", "is_correct": false},
-        {"option_text": "Uncle", "is_correct": false}
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Son",
+          "is_correct": true
+        },
+        {
+          "option_text": "Father",
+          "is_correct": false
+        },
+        {
+          "option_text": "Uncle",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "TYPE 1 — self-referential. 'My father's only son' = Anil himself. So 'his father is Anil' → the person in the photo is Anil's son.",
       "subject": "Reasoning",
       "topic": "Blood Relations",
-      "topic_code": "REAS_BLOOD_RELATION",
+      "topic_code": "RSN_BLOOD",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "A woman introduces a man as 'the son of the brother of my mother'. The man is the woman's:",
       "options": [
-        {"option_text": "Brother", "is_correct": false},
-        {"option_text": "Cousin", "is_correct": true},
-        {"option_text": "Nephew", "is_correct": false},
-        {"option_text": "Uncle", "is_correct": false}
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin",
+          "is_correct": true
+        },
+        {
+          "option_text": "Nephew",
+          "is_correct": false
+        },
+        {
+          "option_text": "Uncle",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "TYPE 3 — chain relation. Mother's brother = maternal uncle. His son = cousin (specifically maternal cousin).",
       "subject": "Reasoning",
       "topic": "Blood Relations",
-      "topic_code": "REAS_BLOOD_RELATION",
+      "topic_code": "RSN_BLOOD",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "B is the brother of A. C is the father of A. D is the brother of C. E is the son of D. How is E related to A?",
       "options": [
-        {"option_text": "Brother", "is_correct": false},
-        {"option_text": "Cousin", "is_correct": true},
-        {"option_text": "Uncle", "is_correct": false},
-        {"option_text": "Nephew", "is_correct": false}
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin",
+          "is_correct": true
+        },
+        {
+          "option_text": "Uncle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nephew",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "TYPE 5 — family tree. C is A's father; D is C's brother → D is A's uncle. E is D's son → E is A's cousin.",
       "subject": "Reasoning",
       "topic": "Blood Relations",
-      "topic_code": "REAS_BLOOD_RELATION",
+      "topic_code": "RSN_BLOOD",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Pointing to a girl, Ravi said: 'She is the daughter of the only daughter of my mother.' The girl is Ravi's:",
       "options": [
-        {"option_text": "Sister", "is_correct": false},
-        {"option_text": "Niece", "is_correct": true},
-        {"option_text": "Cousin", "is_correct": false},
-        {"option_text": "Daughter", "is_correct": false}
+        {
+          "option_text": "Sister",
+          "is_correct": false
+        },
+        {
+          "option_text": "Niece",
+          "is_correct": true
+        },
+        {
+          "option_text": "Cousin",
+          "is_correct": false
+        },
+        {
+          "option_text": "Daughter",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "TYPE 1 — mother's only daughter = Ravi's sister (assuming Ravi is male). The girl is his sister's daughter = niece.",
       "subject": "Reasoning",
       "topic": "Blood Relations",
-      "topic_code": "REAS_BLOOD_RELATION",
+      "topic_code": "RSN_BLOOD",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "X's mother is the only daughter of Y's father. How is Y's father related to X?",
       "options": [
-        {"option_text": "Father", "is_correct": false},
-        {"option_text": "Grandfather", "is_correct": true},
-        {"option_text": "Uncle", "is_correct": false},
-        {"option_text": "Brother", "is_correct": false}
+        {
+          "option_text": "Father",
+          "is_correct": false
+        },
+        {
+          "option_text": "Grandfather",
+          "is_correct": true
+        },
+        {
+          "option_text": "Uncle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "X's mother is Y's father's only daughter → Y's father is X's maternal grandfather.",
       "subject": "Reasoning",
       "topic": "Blood Relations",
-      "topic_code": "REAS_BLOOD_RELATION",
+      "topic_code": "RSN_BLOOD",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "If A + B means A is the father of B; A − B means A is the sister of B; A × B means A is the wife of B; then what does P + Q × R mean?",
       "options": [
-        {"option_text": "P is the father of R", "is_correct": false},
-        {"option_text": "P is the father-in-law of R", "is_correct": true},
-        {"option_text": "P is the brother of R", "is_correct": false},
-        {"option_text": "P is the husband of R", "is_correct": false}
+        {
+          "option_text": "P is the father of R",
+          "is_correct": false
+        },
+        {
+          "option_text": "P is the father-in-law of R",
+          "is_correct": true
+        },
+        {
+          "option_text": "P is the brother of R",
+          "is_correct": false
+        },
+        {
+          "option_text": "P is the husband of R",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "TYPE 4 — coded family. P + Q = P is father of Q. Q × R = Q is wife of R. So P's daughter (Q) is married to R → P is R's father-in-law.",
       "subject": "Reasoning",
       "topic": "Blood Relations",
-      "topic_code": "REAS_BLOOD_RELATION",
+      "topic_code": "RSN_BLOOD",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "A man introduces a woman as the wife of the grandson of his mother. How is the woman related to the man?",
       "options": [
-        {"option_text": "Daughter", "is_correct": false},
-        {"option_text": "Daughter-in-law", "is_correct": true},
-        {"option_text": "Sister-in-law", "is_correct": false},
-        {"option_text": "Niece", "is_correct": false}
+        {
+          "option_text": "Daughter",
+          "is_correct": false
+        },
+        {
+          "option_text": "Daughter-in-law",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sister-in-law",
+          "is_correct": false
+        },
+        {
+          "option_text": "Niece",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "The man's mother's grandson is the man's own son (since the mother's child = man himself; his son = grandson of mother). The son's wife = daughter-in-law.",
       "subject": "Reasoning",
       "topic": "Blood Relations",
-      "topic_code": "REAS_BLOOD_RELATION",
+      "topic_code": "RSN_BLOOD",
       "difficulty": "MEDIUM",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -155,16 +239,28 @@
     {
       "stem": "Sarita has no brother or sister. Her father's only son-in-law is called ______ by Sarita's mother.",
       "options": [
-        {"option_text": "Son", "is_correct": false},
-        {"option_text": "Son-in-law", "is_correct": true},
-        {"option_text": "Husband", "is_correct": false},
-        {"option_text": "Nephew", "is_correct": false}
+        {
+          "option_text": "Son",
+          "is_correct": false
+        },
+        {
+          "option_text": "Son-in-law",
+          "is_correct": true
+        },
+        {
+          "option_text": "Husband",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nephew",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Sarita has no siblings → she is the only daughter → her father's only son-in-law is her husband. Sarita's mother calls her own son-in-law 'son-in-law'.",
       "subject": "Reasoning",
       "topic": "Blood Relations",
-      "topic_code": "REAS_BLOOD_RELATION",
+      "topic_code": "RSN_BLOOD",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,

@@ -8,16 +8,28 @@
     {
       "stem": "At 3:00, the angle between the hour hand and the minute hand of a clock is:",
       "options": [
-        {"option_text": "30°", "is_correct": false},
-        {"option_text": "90°", "is_correct": true},
-        {"option_text": "60°", "is_correct": false},
-        {"option_text": "120°", "is_correct": false}
+        {
+          "option_text": "30°",
+          "is_correct": false
+        },
+        {
+          "option_text": "90°",
+          "is_correct": true
+        },
+        {
+          "option_text": "60°",
+          "is_correct": false
+        },
+        {
+          "option_text": "120°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Hour hand at 3 (90° from 12, clockwise); minute hand at 12 (0°). Difference = 90°. General formula — angle between the two hands = |30 × H − 5.5 × M|, where H = hours, M = minutes. At 3:00 → |30 × 3 − 5.5 × 0| = 90°. Classic benchmark angles: 12:00 = 0°; 3:00 = 90°; 6:00 = 180°; 9:00 = 270° (or equivalently 90° the other way).",
       "subject": "Reasoning",
       "topic": "Clock problems II — mixed tiers",
-      "topic_code": "REAS_CLOCK_II_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "At 4:20, the angle between the hour hand and the minute hand is:",
       "options": [
-        {"option_text": "0°", "is_correct": false},
-        {"option_text": "10°", "is_correct": true},
-        {"option_text": "20°", "is_correct": false},
-        {"option_text": "30°", "is_correct": false}
+        {
+          "option_text": "0°",
+          "is_correct": false
+        },
+        {
+          "option_text": "10°",
+          "is_correct": true
+        },
+        {
+          "option_text": "20°",
+          "is_correct": false
+        },
+        {
+          "option_text": "30°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Formula |30 × 4 − 5.5 × 20| = |120 − 110| = 10°. The hour hand moves 0.5° per minute (30° per hour ÷ 60 min), so at 4:20 it is 0.5 × 20 = 10° past the 4 mark (at 120 + 10 = 130°). The minute hand is at 20 × 6 = 120°. Difference 130 − 120 = 10°.",
       "subject": "Reasoning",
       "topic": "Clock problems II — mixed tiers",
-      "topic_code": "REAS_CLOCK_II_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "The hour and minute hands of a clock coincide (overlap) how many times in a 12-hour period?",
       "options": [
-        {"option_text": "12", "is_correct": false},
-        {"option_text": "11", "is_correct": true},
-        {"option_text": "24", "is_correct": false},
-        {"option_text": "13", "is_correct": false}
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "13",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "In 12 hours, the two hands coincide 11 times — because the minute hand laps the hour hand 11 times. The first coincidence is at 12:00, the last before the next 12:00 is around 11:59-something. Each coincidence happens roughly every 12/11 hours ≈ 65.45 minutes. In 24 hours the hands coincide 22 times.",
       "subject": "Reasoning",
       "topic": "Clock problems II — mixed tiers",
-      "topic_code": "REAS_CLOCK_II_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "A clock gains 10 seconds every hour. In a 24-hour period, how much time does it gain?",
       "options": [
-        {"option_text": "2 minutes", "is_correct": false},
-        {"option_text": "4 minutes", "is_correct": true},
-        {"option_text": "10 minutes", "is_correct": false},
-        {"option_text": "1 minute", "is_correct": false}
+        {
+          "option_text": "2 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 minutes",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 minute",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "10 seconds/hour × 24 hours = 240 seconds = 4 minutes. Gain-rate questions are direct multiplication once you identify the rate. If a clock loses 5 minutes per day, in a week it loses 35 minutes. If the time is right at 12 noon but it has gained 4 minutes by next noon, the clock now reads 12:04 at true 12:00.",
       "subject": "Reasoning",
       "topic": "Clock problems II — mixed tiers",
-      "topic_code": "REAS_CLOCK_II_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "The mirror image of a clock showing 2:30 is:",
       "options": [
-        {"option_text": "9:30", "is_correct": true},
-        {"option_text": "10:30", "is_correct": false},
-        {"option_text": "9:00", "is_correct": false},
-        {"option_text": "10:00", "is_correct": false}
+        {
+          "option_text": "9:30",
+          "is_correct": true
+        },
+        {
+          "option_text": "10:30",
+          "is_correct": false
+        },
+        {
+          "option_text": "9:00",
+          "is_correct": false
+        },
+        {
+          "option_text": "10:00",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Mirror-time formula — Mirror time = 11:60 − given time (when the given time is after 1:00). At 2:30 → 11:60 − 2:30 = 9:30. Verify: the clock shows 2 and 6 positions; reflected across the vertical (12-6 axis), 2 maps to 10, 6 stays at 6 — but the HOUR hand of 2:30 is halfway between 2 and 3; its mirror lies halfway between 9 and 10, which is 9:30.",
       "subject": "Reasoning",
       "topic": "Clock problems II — mixed tiers",
-      "topic_code": "REAS_CLOCK_II_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "In 60 minutes, the minute hand of a clock moves through an angle of:",
       "options": [
-        {"option_text": "60°", "is_correct": false},
-        {"option_text": "360°", "is_correct": true},
-        {"option_text": "180°", "is_correct": false},
-        {"option_text": "90°", "is_correct": false}
+        {
+          "option_text": "60°",
+          "is_correct": false
+        },
+        {
+          "option_text": "360°",
+          "is_correct": true
+        },
+        {
+          "option_text": "180°",
+          "is_correct": false
+        },
+        {
+          "option_text": "90°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "The minute hand completes one full revolution (360°) per hour. Therefore it moves 360°/60 = 6° per minute. The hour hand completes 360° in 12 hours — 30° per hour or 0.5° per minute. These two rates are the basis of every clock-angle formula in this topic.",
       "subject": "Reasoning",
       "topic": "Clock problems II — mixed tiers",
-      "topic_code": "REAS_CLOCK_II_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "A clock shows 6:15. The angle between the two hands is:",
       "options": [
-        {"option_text": "90°", "is_correct": false},
-        {"option_text": "97.5°", "is_correct": true},
-        {"option_text": "82.5°", "is_correct": false},
-        {"option_text": "75°", "is_correct": false}
+        {
+          "option_text": "90°",
+          "is_correct": false
+        },
+        {
+          "option_text": "97.5°",
+          "is_correct": true
+        },
+        {
+          "option_text": "82.5°",
+          "is_correct": false
+        },
+        {
+          "option_text": "75°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "|30 × 6 − 5.5 × 15| = |180 − 82.5| = 97.5°. Verify: minute hand at 15 → 90°. Hour hand at 6:15 → 180 + 0.5 × 15 = 187.5°. Difference 187.5 − 90 = 97.5°. The 5.5 in the formula comes from the fact that every minute, the minute hand gains 5.5° on the hour hand (6° − 0.5°).",
       "subject": "Reasoning",
       "topic": "Clock problems II — mixed tiers",
-      "topic_code": "REAS_CLOCK_II_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,

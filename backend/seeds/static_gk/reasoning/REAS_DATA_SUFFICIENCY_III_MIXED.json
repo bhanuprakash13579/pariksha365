@@ -8,16 +8,28 @@
     {
       "stem": "Question: What is the value of x?\nStatement I: x + 5 = 12.\nStatement II: 2x = 14.\nWhich statement(s) alone is/are SUFFICIENT to answer?",
       "options": [
-        {"option_text": "Only I", "is_correct": false},
-        {"option_text": "Either I or II alone is sufficient", "is_correct": true},
-        {"option_text": "Both I and II together but neither alone", "is_correct": false},
-        {"option_text": "Neither I nor II", "is_correct": false}
+        {
+          "option_text": "Only I",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either I or II alone is sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both I and II together but neither alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither I nor II",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "From I: x + 5 = 12 → x = 7. Sufficient alone. From II: 2x = 14 → x = 7. Also sufficient alone. So EITHER statement gives a unique x. Standard DS option labels: A — only I; B — only II; C — both together; D — either alone; E — neither. Here answer = 'either alone'.",
       "subject": "Reasoning",
       "topic": "Data sufficiency — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_III_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Question: What is the age of Anil?\nStatement I: Anil is 5 years older than Bina.\nStatement II: Bina is 2 years younger than Chetan.\nSufficiency?",
       "options": [
-        {"option_text": "Either alone is sufficient", "is_correct": false},
-        {"option_text": "Both I and II together are NOT sufficient (no absolute age given)", "is_correct": true},
-        {"option_text": "Only I is sufficient", "is_correct": false},
-        {"option_text": "Only II is sufficient", "is_correct": false}
+        {
+          "option_text": "Either alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II together are NOT sufficient (no absolute age given)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II is sufficient",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "I gives Anil = Bina + 5. II gives Bina = Chetan − 2. Combine: Anil = Chetan + 3. Still NO absolute age — depends on Chetan's age which is never given. So even both statements together cannot fix Anil's actual age. Result: 'data insufficient'. Common DS trap — relations without an anchor.",
       "subject": "Reasoning",
       "topic": "Data sufficiency — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_III_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Question: Is x > 0?\nStatement I: x² > 9.\nStatement II: x³ > 0.\nSufficiency?",
       "options": [
-        {"option_text": "Only I is sufficient", "is_correct": false},
-        {"option_text": "Only II is sufficient (x³ > 0 implies x > 0 since cube preserves sign)", "is_correct": true},
-        {"option_text": "Either alone", "is_correct": false},
-        {"option_text": "Both together but neither alone", "is_correct": false}
+        {
+          "option_text": "Only I is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II is sufficient (x³ > 0 implies x > 0 since cube preserves sign)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Either alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both together but neither alone",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "I: x² > 9 → |x| > 3 → x > 3 OR x < −3. Cannot conclude sign of x. INSUFFICIENT. II: x³ > 0. Cubes preserve sign — for any real number, x³ has the same sign as x. So x³ > 0 implies x > 0. SUFFICIENT. Only II alone answers the question. Note — in the GMAT-style 5-option layout this is option 'B'.",
       "subject": "Reasoning",
       "topic": "Data sufficiency — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_III_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Question: How many sides does the polygon have?\nStatement I: Sum of interior angles is 720°.\nStatement II: It is a regular hexagon.\nSufficiency?",
       "options": [
-        {"option_text": "Only I", "is_correct": false},
-        {"option_text": "Either I or II alone is sufficient", "is_correct": true},
-        {"option_text": "Only II", "is_correct": false},
-        {"option_text": "Neither", "is_correct": false}
+        {
+          "option_text": "Only I",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either I or II alone is sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Formula: sum of interior angles of n-gon = (n − 2) × 180°. From I: (n−2) × 180 = 720 → n−2 = 4 → n = 6. SUFFICIENT. From II: 'regular hexagon' literally means 6-sided regular polygon → n = 6. SUFFICIENT. So either alone works.",
       "subject": "Reasoning",
       "topic": "Data sufficiency — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_III_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "Question: What is Priya's monthly salary?\nStatement I: Priya saves 30% of her salary.\nStatement II: Her monthly savings are ₹15,000.\nSufficiency?",
       "options": [
-        {"option_text": "Either alone", "is_correct": false},
-        {"option_text": "Both I and II together but neither alone", "is_correct": true},
-        {"option_text": "Only I", "is_correct": false},
-        {"option_text": "Only II", "is_correct": false}
+        {
+          "option_text": "Either alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II together but neither alone",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "I alone: knowing the savings RATE doesn't give salary. II alone: knowing the savings AMOUNT doesn't give salary. Combined: 30% of salary = ₹15,000 → salary = ₹50,000. Sufficient only when both used together. Standard DS pattern — neither rate alone nor absolute alone, but rate + absolute → answer.",
       "subject": "Reasoning",
       "topic": "Data sufficiency — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_III_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "Question: Which day of the week is 1 January 2030?\nStatement I: 1 January 2024 is a Monday.\nStatement II: 2024, 2028 are leap years.\nSufficiency?",
       "options": [
-        {"option_text": "Only I", "is_correct": false},
-        {"option_text": "Both I and II together (need the leap-year info to count odd days correctly)", "is_correct": true},
-        {"option_text": "Only II", "is_correct": false},
-        {"option_text": "Either alone", "is_correct": false}
+        {
+          "option_text": "Only I",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both I and II together (need the leap-year info to count odd days correctly)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either alone",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "From 1-Jan-2024 to 1-Jan-2030 = 6 years. Need to know how many leap years (each adds 2 odd days) vs ordinary years (each adds 1). I alone: just gives the anchor date. II alone: just lists leap years. Both → 2 leap years (2024, 2028) + 4 ordinary years (2025, 26, 27, 29) = 2·2 + 4·1 = 8 odd days = 1 odd day (8 mod 7). Monday + 1 = Tuesday. Sufficient only with both.",
       "subject": "Reasoning",
       "topic": "Data sufficiency — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_III_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Question: How many books did Ravi read this year?\nStatement I: Ravi read more books than Suresh.\nStatement II: Suresh read 12 books.\nSufficiency?",
       "options": [
-        {"option_text": "Either alone", "is_correct": false},
-        {"option_text": "Both together NOT sufficient — only tells us Ravi read >12, not exact count", "is_correct": true},
-        {"option_text": "Only I", "is_correct": false},
-        {"option_text": "Only II", "is_correct": false}
+        {
+          "option_text": "Either alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both together NOT sufficient — only tells us Ravi read >12, not exact count",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only II",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "I: 'more than Suresh' is a relation — no number. II: Suresh's count, but doesn't directly tell Ravi's. Together: Ravi > 12 — could be 13, 50, or anything. Still no exact value for Ravi's count. NOT sufficient. The Q asks for an EXACT number; mere inequality isn't enough.",
       "subject": "Reasoning",
       "topic": "Data sufficiency — mixed tiers",
-      "topic_code": "REAS_DATA_SUFFICIENCY_III_MIXED",
+      "topic_code": "RSN_DATA_SUFF",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,

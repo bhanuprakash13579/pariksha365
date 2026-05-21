@@ -8,16 +8,28 @@
     {
       "stem": "Find the next number in the series: 2, 4, 8, 16, 32, __?",
       "options": [
-        {"option_text": "48", "is_correct": false},
-        {"option_text": "64", "is_correct": true},
-        {"option_text": "40", "is_correct": false},
-        {"option_text": "36", "is_correct": false}
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "64",
+          "is_correct": true
+        },
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Each term is doubled: 2 → 4 → 8 → 16 → 32 → 64. Geometric series with common ratio 2. Powers of 2: 2¹, 2², 2³, 2⁴, 2⁵, 2⁶ = 64. Trap 48 is +16 after 32 (wrong rule). Trap 36 is the perfect square of 6 (unrelated).",
       "subject": "Reasoning",
       "topic": "Number series — mixed tiers",
-      "topic_code": "REAS_NUMBER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Find the next number in the series: 3, 6, 11, 18, 27, __?",
       "options": [
-        {"option_text": "36", "is_correct": false},
-        {"option_text": "38", "is_correct": true},
-        {"option_text": "40", "is_correct": false},
-        {"option_text": "42", "is_correct": false}
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "38",
+          "is_correct": true
+        },
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "42",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Differences: +3, +5, +7, +9, __ (consecutive odd numbers). Next diff = +11. So 27 + 11 = 38. Alternative look: terms are n² + 2 for n = 1, 2, 3, 4, 5, 6 → 3, 6, 11, 18, 27, 38. Both methods give 38.",
       "subject": "Reasoning",
       "topic": "Number series — mixed tiers",
-      "topic_code": "REAS_NUMBER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Find the wrong term in the series: 2, 6, 12, 20, 30, 40, 56.",
       "options": [
-        {"option_text": "12", "is_correct": false},
-        {"option_text": "40", "is_correct": true},
-        {"option_text": "30", "is_correct": false},
-        {"option_text": "56", "is_correct": false}
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": true
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "56",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Differences between consecutive terms: +4, +6, +8, +10 (expect +12), then +14. Series SHOULD BE 2, 6, 12, 20, 30, 42, 56. The value 40 breaks the pattern — it should be 42. Alternative view — terms are n(n+1) for n = 1, 2, 3, 4, 5 → 2, 6, 12, 20, 30, then 42 (n=6), 56 (n=7).",
       "subject": "Reasoning",
       "topic": "Number series — mixed tiers",
-      "topic_code": "REAS_NUMBER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Find the next number: 1, 4, 9, 16, 25, __?",
       "options": [
-        {"option_text": "30", "is_correct": false},
-        {"option_text": "36", "is_correct": true},
-        {"option_text": "32", "is_correct": false},
-        {"option_text": "49", "is_correct": false}
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": true
+        },
+        {
+          "option_text": "32",
+          "is_correct": false
+        },
+        {
+          "option_text": "49",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Perfect squares: 1², 2², 3², 4², 5², 6² = 36. Sequence of square numbers. Differences between consecutive squares follow the odd-number pattern (+3, +5, +7, +9, +11). Option 49 is 7², i.e., two positions ahead. Option 32 is 2⁵ (unrelated).",
       "subject": "Reasoning",
       "topic": "Number series — mixed tiers",
-      "topic_code": "REAS_NUMBER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "Find the next number: 1, 1, 2, 3, 5, 8, 13, __?",
       "options": [
-        {"option_text": "16", "is_correct": false},
-        {"option_text": "21", "is_correct": true},
-        {"option_text": "18", "is_correct": false},
-        {"option_text": "20", "is_correct": false}
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "21",
+          "is_correct": true
+        },
+        {
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Fibonacci series — each term = sum of the previous two. 5 + 8 = 13. 8 + 13 = 21. Further: 13 + 21 = 34, 21 + 34 = 55. Appears in nature (spirals in sunflowers, nautilus shells, leaf arrangements).",
       "subject": "Reasoning",
       "topic": "Number series — mixed tiers",
-      "topic_code": "REAS_NUMBER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "Find the next number: 100, 99, 95, 86, 70, __?",
       "options": [
-        {"option_text": "45", "is_correct": true},
-        {"option_text": "50", "is_correct": false},
-        {"option_text": "55", "is_correct": false},
-        {"option_text": "40", "is_correct": false}
+        {
+          "option_text": "45",
+          "is_correct": true
+        },
+        {
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "option_text": "55",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Differences (descending): −1, −4, −9, −16, __. These are the negative squares: −1², −2², −3², −4², and next −5² = −25. So 70 − 25 = 45. Always subtract the next perfect square.",
       "subject": "Reasoning",
       "topic": "Number series — mixed tiers",
-      "topic_code": "REAS_NUMBER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Find the next number: 5, 11, 23, 47, __?",
       "options": [
-        {"option_text": "89", "is_correct": false},
-        {"option_text": "95", "is_correct": true},
-        {"option_text": "71", "is_correct": false},
-        {"option_text": "99", "is_correct": false}
+        {
+          "option_text": "89",
+          "is_correct": false
+        },
+        {
+          "option_text": "95",
+          "is_correct": true
+        },
+        {
+          "option_text": "71",
+          "is_correct": false
+        },
+        {
+          "option_text": "99",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Rule: each term = (previous × 2) + 1. Verify: 5 × 2 + 1 = 11. 11 × 2 + 1 = 23. 23 × 2 + 1 = 47. 47 × 2 + 1 = 95. Also, differences double each time — +6, +12, +24, +48 — another valid way to see the same pattern.",
       "subject": "Reasoning",
       "topic": "Number series — mixed tiers",
-      "topic_code": "REAS_NUMBER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,

@@ -8,16 +8,28 @@
     {
       "stem": "An EXOTHERMIC reaction is one in which:",
       "options": [
-        {"option_text": "Heat is absorbed from the surroundings into the system", "is_correct": false},
-        {"option_text": "Heat is released from the system into the surroundings", "is_correct": true},
-        {"option_text": "Mass is created from energy stored in the chemical bonds", "is_correct": false},
-        {"option_text": "Reactants are converted but no temperature change happens", "is_correct": false}
+        {
+          "option_text": "Heat is absorbed from the surroundings into the system",
+          "is_correct": false
+        },
+        {
+          "option_text": "Heat is released from the system into the surroundings",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mass is created from energy stored in the chemical bonds",
+          "is_correct": false
+        },
+        {
+          "option_text": "Reactants are converted but no temperature change happens",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "EXOTHERMIC — releases heat (ΔH < 0). Surroundings warm up. Examples: combustion (CH₄ + 2O₂ → CO₂ + 2H₂O + heat), neutralisation (acid + base), respiration (glucose + O₂), most precipitation. ENDOTHERMIC — absorbs heat (ΔH > 0). Surroundings cool down. Examples: photosynthesis, melting, evaporation, dissolving NH₄NO₃ in water (cold pack). Distractor 1 = endothermic. Distractor 3 — mass is conserved in chemical reactions; only energy form changes. Distractor 4 — there is always some thermal change.",
       "subject": "Chemistry",
       "topic": "Thermodynamics basics — mixed tiers",
-      "topic_code": "CHEM_THERMODYNAMICS_BASICS_MIXED",
+      "topic_code": "CHE_THERMO",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "The FIRST LAW of thermodynamics states that:",
       "options": [
-        {"option_text": "Heat always flows from cold bodies to hot bodies spontaneously", "is_correct": false},
-        {"option_text": "Energy can be neither created nor destroyed, only transformed", "is_correct": true},
-        {"option_text": "Entropy of an isolated system is always increasing over time", "is_correct": false},
-        {"option_text": "Absolute zero of temperature can be reached in finite steps", "is_correct": false}
+        {
+          "option_text": "Heat always flows from cold bodies to hot bodies spontaneously",
+          "is_correct": false
+        },
+        {
+          "option_text": "Energy can be neither created nor destroyed, only transformed",
+          "is_correct": true
+        },
+        {
+          "option_text": "Entropy of an isolated system is always increasing over time",
+          "is_correct": false
+        },
+        {
+          "option_text": "Absolute zero of temperature can be reached in finite steps",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "FIRST LAW — energy conservation, applied to thermodynamic systems. Mathematically: ΔU = q − w (or q + w, sign convention varies); change in internal energy = heat added minus work done by the system. Forbids perpetual-motion machines of the FIRST kind. Distractor 1 — opposite of true; heat flows from hot to cold (Second Law / Clausius). Distractor 3 = SECOND law (entropy increase). Distractor 4 = THIRD law violation (absolute zero is unreachable in finite steps).",
       "subject": "Chemistry",
       "topic": "Thermodynamics basics — mixed tiers",
-      "topic_code": "CHEM_THERMODYNAMICS_BASICS_MIXED",
+      "topic_code": "CHE_THERMO",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "ENTROPY (S) is best described as a measure of:",
       "options": [
-        {"option_text": "The total internal energy stored in the system", "is_correct": false},
-        {"option_text": "The disorder or number of microscopic arrangements", "is_correct": true},
-        {"option_text": "The rate at which the chemical reaction proceeds", "is_correct": false},
-        {"option_text": "The total mass of substances in the system", "is_correct": false}
+        {
+          "option_text": "The total internal energy stored in the system",
+          "is_correct": false
+        },
+        {
+          "option_text": "The disorder or number of microscopic arrangements",
+          "is_correct": true
+        },
+        {
+          "option_text": "The rate at which the chemical reaction proceeds",
+          "is_correct": false
+        },
+        {
+          "option_text": "The total mass of substances in the system",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "ENTROPY — measure of disorder / number of microstates. Boltzmann formula: S = k ln W (W = number of accessible microstates; k = Boltzmann constant). Higher disorder → higher entropy. Examples — ice (low S) → water (medium S) → vapour (high S). Mixing two gases increases entropy. SECOND LAW: total entropy of universe always increases in any spontaneous process. Distractor 1 = internal energy U. Distractor 3 = rate constant. Distractor 4 = mass.",
       "subject": "Chemistry",
       "topic": "Thermodynamics basics — mixed tiers",
-      "topic_code": "CHEM_THERMODYNAMICS_BASICS_MIXED",
+      "topic_code": "CHE_THERMO",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Gibbs FREE ENERGY change (ΔG) determines spontaneity. A reaction is spontaneous at constant T, P when:",
       "options": [
-        {"option_text": "ΔG is positive and grows larger over time", "is_correct": false},
-        {"option_text": "ΔG is negative (free energy decreases)", "is_correct": true},
-        {"option_text": "ΔG is exactly zero (system at equilibrium)", "is_correct": false},
-        {"option_text": "ΔG is undefined under these conditions", "is_correct": false}
+        {
+          "option_text": "ΔG is positive and grows larger over time",
+          "is_correct": false
+        },
+        {
+          "option_text": "ΔG is negative (free energy decreases)",
+          "is_correct": true
+        },
+        {
+          "option_text": "ΔG is exactly zero (system at equilibrium)",
+          "is_correct": false
+        },
+        {
+          "option_text": "ΔG is undefined under these conditions",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "ΔG = ΔH − TΔS. Spontaneity criterion at constant T, P: ΔG < 0 (free energy decreases). ΔG = 0 → equilibrium (no net change). ΔG > 0 → non-spontaneous (reverse is spontaneous). EXOTHERMIC + entropy-increasing reactions are always spontaneous. ENDOTHERMIC + entropy-decreasing are always non-spontaneous. The other two combinations depend on temperature: high T favours entropy-driven processes, low T favours enthalpy-driven processes.",
       "subject": "Chemistry",
       "topic": "Thermodynamics basics — mixed tiers",
-      "topic_code": "CHEM_THERMODYNAMICS_BASICS_MIXED",
+      "topic_code": "CHE_THERMO",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "HESS'S LAW states that the total enthalpy change of a chemical reaction is:",
       "options": [
-        {"option_text": "Always equal to twice the activation energy of the reaction", "is_correct": false},
-        {"option_text": "Independent of the path taken to convert reactants to products", "is_correct": true},
-        {"option_text": "Proportional to the temperature at which it is carried out", "is_correct": false},
-        {"option_text": "Negligible compared to entropy of the system in question", "is_correct": false}
+        {
+          "option_text": "Always equal to twice the activation energy of the reaction",
+          "is_correct": false
+        },
+        {
+          "option_text": "Independent of the path taken to convert reactants to products",
+          "is_correct": true
+        },
+        {
+          "option_text": "Proportional to the temperature at which it is carried out",
+          "is_correct": false
+        },
+        {
+          "option_text": "Negligible compared to entropy of the system in question",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "HESS'S LAW — enthalpy is a STATE FUNCTION; total ΔH depends only on initial and final states, NOT on the route. Practical use: if a reaction can't be measured directly (e.g., burning C to CO is hard to control vs CO₂), we sum up other measurable steps to get the desired enthalpy. Born-Haber cycle uses Hess's law to compute lattice enthalpies. Distractor 1 — confuses ΔH with Ea. Distractor 3 — wrong proportionality. Distractor 4 — false generalisation.",
       "subject": "Chemistry",
       "topic": "Thermodynamics basics — mixed tiers",
-      "topic_code": "CHEM_THERMODYNAMICS_BASICS_MIXED",
+      "topic_code": "CHE_THERMO",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "The SECOND LAW of thermodynamics implies that:",
       "options": [
-        {"option_text": "Heat always flows spontaneously from cold to hot bodies", "is_correct": false},
-        {"option_text": "Total entropy of an isolated system never decreases over time", "is_correct": true},
-        {"option_text": "Energy can be created from nothing in a closed system", "is_correct": false},
-        {"option_text": "Absolute zero is reachable using any cooling method available", "is_correct": false}
+        {
+          "option_text": "Heat always flows spontaneously from cold to hot bodies",
+          "is_correct": false
+        },
+        {
+          "option_text": "Total entropy of an isolated system never decreases over time",
+          "is_correct": true
+        },
+        {
+          "option_text": "Energy can be created from nothing in a closed system",
+          "is_correct": false
+        },
+        {
+          "option_text": "Absolute zero is reachable using any cooling method available",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "SECOND LAW — entropy of an isolated system never decreases; it stays the same in reversible processes and increases in irreversible (real) processes. Equivalent statements: (a) Heat flows spontaneously from hot to cold, never the reverse without external work — Clausius. (b) No engine working between two reservoirs can be 100% efficient at converting heat to work — Kelvin-Planck. (c) Forbids perpetual-motion machines of the SECOND kind. Distractor 1 — opposite of correct direction. Distractor 3 violates first law. Distractor 4 violates third law.",
       "subject": "Chemistry",
       "topic": "Thermodynamics basics — mixed tiers",
-      "topic_code": "CHEM_THERMODYNAMICS_BASICS_MIXED",
+      "topic_code": "CHE_THERMO",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Burning a fuel to release stored chemical energy as heat is an example of:",
       "options": [
-        {"option_text": "An endothermic reaction with positive ΔH", "is_correct": false},
-        {"option_text": "An exothermic reaction with negative ΔH", "is_correct": true},
-        {"option_text": "A reaction with zero enthalpy change overall", "is_correct": false},
-        {"option_text": "A reaction that violates the first law of thermodynamics", "is_correct": false}
+        {
+          "option_text": "An endothermic reaction with positive ΔH",
+          "is_correct": false
+        },
+        {
+          "option_text": "An exothermic reaction with negative ΔH",
+          "is_correct": true
+        },
+        {
+          "option_text": "A reaction with zero enthalpy change overall",
+          "is_correct": false
+        },
+        {
+          "option_text": "A reaction that violates the first law of thermodynamics",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Combustion = exothermic; energy of bonds in reactants > energy of bonds in products → difference released as heat. Standard enthalpies of combustion: methane −890 kJ/mol; ethanol −1367 kJ/mol; petrol/octane −5470 kJ/mol; hydrogen −286 kJ/mol (cleanest, no CO₂). Bond enthalpies determine ΔH. Distractor 1 — endothermic = absorbs heat (e.g., photosynthesis, melting). Distractor 3 — combustion has large negative ΔH. Distractor 4 — combustion conserves energy (heat output = bond energy difference); doesn't violate any law.",
       "subject": "Chemistry",
       "topic": "Thermodynamics basics — mixed tiers",
-      "topic_code": "CHEM_THERMODYNAMICS_BASICS_MIXED",
+      "topic_code": "CHE_THERMO",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,

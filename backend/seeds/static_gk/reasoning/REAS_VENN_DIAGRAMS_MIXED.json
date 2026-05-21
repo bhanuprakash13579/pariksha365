@@ -8,16 +8,28 @@
     {
       "stem": "Which Venn relationship best describes the categories DOCTORS, ENGINEERS, MEN?",
       "options": [
-        {"option_text": "All three are mutually exclusive (no overlap)", "is_correct": false},
-        {"option_text": "Doctors and Engineers don't overlap with each other; both partially overlap with Men (some doctors are men; some engineers are men)", "is_correct": true},
-        {"option_text": "Engineers ⊂ Doctors", "is_correct": false},
-        {"option_text": "All Doctors are Engineers", "is_correct": false}
+        {
+          "option_text": "All three are mutually exclusive (no overlap)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Doctors and Engineers don't overlap with each other; both partially overlap with Men (some doctors are men; some engineers are men)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Engineers ⊂ Doctors",
+          "is_correct": false
+        },
+        {
+          "option_text": "All Doctors are Engineers",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "A doctor cannot also be an engineer in the same instant of practice — these are different professions. So no overlap between Doctors and Engineers. But both groups have men → both intersect with the 'Men' set. Standard Venn — Two non-overlapping circles (Doctors, Engineers), each partially inside a larger 'Men' circle. Symbolically — D ∩ E = ∅, D ∩ M ≠ ∅, E ∩ M ≠ ∅.",
       "subject": "Reasoning",
       "topic": "Venn diagrams (set relationships) — mixed tiers",
-      "topic_code": "REAS_VENN_DIAGRAMS_MIXED",
+      "topic_code": "RSN_VENN",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Which is the best Venn relation for: ANIMALS, DOGS, CATS?",
       "options": [
-        {"option_text": "All three concentric (one inside the other)", "is_correct": false},
-        {"option_text": "Dogs and Cats are non-overlapping subsets of Animals", "is_correct": true},
-        {"option_text": "Dogs ⊂ Cats", "is_correct": false},
-        {"option_text": "All three overlap fully", "is_correct": false}
+        {
+          "option_text": "All three concentric (one inside the other)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Dogs and Cats are non-overlapping subsets of Animals",
+          "is_correct": true
+        },
+        {
+          "option_text": "Dogs ⊂ Cats",
+          "is_correct": false
+        },
+        {
+          "option_text": "All three overlap fully",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Dogs ⊂ Animals; Cats ⊂ Animals; Dogs ∩ Cats = ∅ (a single creature can't be both). So two smaller circles (Dogs, Cats) sit inside a larger circle (Animals), with no overlap between Dogs and Cats. Pattern called 'two non-overlapping subsets of a common superset'. Compare 'Mango, Banana, Fruit' (same pattern); 'Doctor, Engineer, Person' (same pattern).",
       "subject": "Reasoning",
       "topic": "Venn diagrams (set relationships) — mixed tiers",
-      "topic_code": "REAS_VENN_DIAGRAMS_MIXED",
+      "topic_code": "RSN_VENN",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Pick the correct Venn relation for: STUDENTS, CRICKETERS, BOOKS:",
       "options": [
-        {"option_text": "Concentric (Books ⊂ Cricketers ⊂ Students)", "is_correct": false},
-        {"option_text": "Students and Cricketers overlap (some students play cricket); Books has no overlap with either (Books are inanimate objects)", "is_correct": true},
-        {"option_text": "All three mutually exclusive", "is_correct": false},
-        {"option_text": "All three identical", "is_correct": false}
+        {
+          "option_text": "Concentric (Books ⊂ Cricketers ⊂ Students)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Students and Cricketers overlap (some students play cricket); Books has no overlap with either (Books are inanimate objects)",
+          "is_correct": true
+        },
+        {
+          "option_text": "All three mutually exclusive",
+          "is_correct": false
+        },
+        {
+          "option_text": "All three identical",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Students ∩ Cricketers ≠ ∅ (some students are cricketers; some cricketers are students). Books ∩ Students = ∅ (a person and an object cannot share identity). Books ∩ Cricketers = ∅. So two partly-overlapping circles (Students, Cricketers) with a separate disjoint circle for Books. Common in 'mixed-category' Venn questions — the inanimate-vs-animate test is a quick check for disjoint relations.",
       "subject": "Reasoning",
       "topic": "Venn diagrams (set relationships) — mixed tiers",
-      "topic_code": "REAS_VENN_DIAGRAMS_MIXED",
+      "topic_code": "RSN_VENN",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Best Venn relation for: WHEAT, BARLEY, GRAIN?",
       "options": [
-        {"option_text": "Concentric (one inside another)", "is_correct": false},
-        {"option_text": "Wheat and Barley are non-overlapping subsets of Grain", "is_correct": true},
-        {"option_text": "Wheat ⊂ Barley", "is_correct": false},
-        {"option_text": "All three overlap with same area", "is_correct": false}
+        {
+          "option_text": "Concentric (one inside another)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wheat and Barley are non-overlapping subsets of Grain",
+          "is_correct": true
+        },
+        {
+          "option_text": "Wheat ⊂ Barley",
+          "is_correct": false
+        },
+        {
+          "option_text": "All three overlap with same area",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Wheat ⊂ Grain; Barley ⊂ Grain; Wheat ∩ Barley = ∅. Two smaller non-overlapping circles inside a larger 'Grain' circle. Same pattern as 'Cars, Trucks, Vehicles', 'Lions, Tigers, Felines'.",
       "subject": "Reasoning",
       "topic": "Venn diagrams (set relationships) — mixed tiers",
-      "topic_code": "REAS_VENN_DIAGRAMS_MIXED",
+      "topic_code": "RSN_VENN",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "Best Venn relation for: TEACHERS, SCIENTISTS, INDIANS?",
       "options": [
-        {"option_text": "All three mutually exclusive", "is_correct": false},
-        {"option_text": "All three overlap pairwise — some Teachers are Scientists; some Indians are Teachers; some Indians are Scientists", "is_correct": true},
-        {"option_text": "Teachers ⊂ Scientists", "is_correct": false},
-        {"option_text": "Indians ⊂ Teachers", "is_correct": false}
+        {
+          "option_text": "All three mutually exclusive",
+          "is_correct": false
+        },
+        {
+          "option_text": "All three overlap pairwise — some Teachers are Scientists; some Indians are Teachers; some Indians are Scientists",
+          "is_correct": true
+        },
+        {
+          "option_text": "Teachers ⊂ Scientists",
+          "is_correct": false
+        },
+        {
+          "option_text": "Indians ⊂ Teachers",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "All three pairs have non-empty intersections. Some Teachers ARE Scientists (e.g., a professor researching). Some Indians are Teachers. Some Indians are Scientists. Some Indians are both Teachers AND Scientists (the central triple-intersection). So the standard 3-way overlapping Venn (the 7-region diagram) applies. Set theory — union of 3 sets has up to 2³ − 1 = 7 disjoint regions.",
       "subject": "Reasoning",
       "topic": "Venn diagrams (set relationships) — mixed tiers",
-      "topic_code": "REAS_VENN_DIAGRAMS_MIXED",
+      "topic_code": "RSN_VENN",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "What is the best Venn relation for: TABLE, CHAIR, FURNITURE?",
       "options": [
-        {"option_text": "All three concentric (one inside another inside another)", "is_correct": false},
-        {"option_text": "Table and Chair are non-overlapping subsets of Furniture (a piece of furniture is either a table or a chair, not both)", "is_correct": true},
-        {"option_text": "All three identical sets", "is_correct": false},
-        {"option_text": "No relation", "is_correct": false}
+        {
+          "option_text": "All three concentric (one inside another inside another)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Table and Chair are non-overlapping subsets of Furniture (a piece of furniture is either a table or a chair, not both)",
+          "is_correct": true
+        },
+        {
+          "option_text": "All three identical sets",
+          "is_correct": false
+        },
+        {
+          "option_text": "No relation",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Table ⊂ Furniture; Chair ⊂ Furniture; Table ∩ Chair = ∅. Two non-overlapping subsets of a larger superset. Identical pattern to 'Wheat, Barley, Grain' or 'Dogs, Cats, Animals'. Quick spot — the umbrella term is one element + the other two are types of it that don't blend.",
       "subject": "Reasoning",
       "topic": "Venn diagrams (set relationships) — mixed tiers",
-      "topic_code": "REAS_VENN_DIAGRAMS_MIXED",
+      "topic_code": "RSN_VENN",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "If 60 students play cricket, 40 play football and 20 play both, how many play AT LEAST ONE?",
       "options": [
-        {"option_text": "100", "is_correct": false},
-        {"option_text": "80", "is_correct": true},
-        {"option_text": "20", "is_correct": false},
-        {"option_text": "60", "is_correct": false}
+        {
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "option_text": "80",
+          "is_correct": true
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Inclusion-Exclusion: |A ∪ B| = |A| + |B| − |A ∩ B| = 60 + 40 − 20 = 80. 80 students play at least one. Of these — 60 play cricket (40 only-cricket + 20 both); 40 play football (20 only-football + 20 both); 20 play both. The trap option 100 fails to subtract the double-counted overlap.",
       "subject": "Reasoning",
       "topic": "Venn diagrams (set relationships) — mixed tiers",
-      "topic_code": "REAS_VENN_DIAGRAMS_MIXED",
+      "topic_code": "RSN_VENN",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,

@@ -8,16 +8,28 @@
     {
       "stem": "The TIME PERIOD of a SIMPLE PENDULUM depends on:",
       "options": [
-        {"option_text": "Length and gravity (T = 2π√(L/g))", "is_correct": true},
-        {"option_text": "Mass of the bob alone here", "is_correct": false},
-        {"option_text": "Amplitude of swing (small)", "is_correct": false},
-        {"option_text": "Color and material used (no)", "is_correct": false}
+        {
+          "option_text": "Length and gravity (T = 2π√(L/g))",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mass of the bob alone here",
+          "is_correct": false
+        },
+        {
+          "option_text": "Amplitude of swing (small)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Color and material used (no)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "SIMPLE PENDULUM TIME PERIOD: T = 2π × √(L/g), where L = length of pendulum, g = acceleration due to gravity. KEY: T is INDEPENDENT of (a) MASS of the bob (light vs heavy bob = same period, in vacuum). (b) AMPLITUDE for SMALL swings (< ~10°). LARGER amplitudes (> 15°) → period slightly increases (anharmonic). EXAMPLES: (1) PENDULUM LENGTH 1 m, g = 9.8 m/s² → T = 2π × √(1/9.8) ≈ 2.01 seconds. (2) GRANDFATHER CLOCK pendulum is ~99 cm to give T = 2 s (1 sec each way). (3) TOWER OF PISA experiment: Galileo (1583) noticed cathedral lamp swinging — observed period independence of amplitude → invented pendulum clock concept. APPLICATIONS: (1) GRANDFATHER CLOCKS — pendulum's regular T provides time-keeping. (2) FOUCAULT PENDULUM (1851) — demonstrated EARTH'S ROTATION (plane of swing rotates due to rotation of Earth's surface). (3) SEISMOMETERS use pendulum-like masses to measure ground vibrations. KEY: T ∝ √L — DOUBLING length, T ↑ by √2 ≈ 1.414. T ∝ 1/√g — at higher altitude (lower g) or moon (g ~ 1/6), T is LARGER (slower swing). MOON pendulum: ~2.45× slower than on Earth. SPRING-MASS variant: T = 2π × √(m/k) — spring constant k. PYQ FREQUENCY: pendulum formula in NEET, JEE-Main, NCERT 1× per cycle.",
       "subject": "Physics",
       "topic": "SHM and Pendulum",
-      "topic_code": "PHY_SHM_PENDULUM_MIXED",
+      "topic_code": "PHY_SHM",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -29,16 +41,28 @@
     {
       "stem": "In SIMPLE HARMONIC MOTION (SHM), the restoring force is:",
       "options": [
-        {"option_text": "Proportional to displacement and opposite", "is_correct": true},
-        {"option_text": "Constant always in any direction", "is_correct": false},
-        {"option_text": "Proportional to velocity squared", "is_correct": false},
-        {"option_text": "Independent of any displacement", "is_correct": false}
+        {
+          "option_text": "Proportional to displacement and opposite",
+          "is_correct": true
+        },
+        {
+          "option_text": "Constant always in any direction",
+          "is_correct": false
+        },
+        {
+          "option_text": "Proportional to velocity squared",
+          "is_correct": false
+        },
+        {
+          "option_text": "Independent of any displacement",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "SIMPLE HARMONIC MOTION (SHM) — characterized by restoring force F = −kx, where k = positive constant (spring stiffness, etc.) and x = displacement from equilibrium. NEGATIVE SIGN means force is OPPOSITE to displacement direction (always pulls back to equilibrium). KEY CHARACTERISTICS: (1) F ∝ −x (linear restoring force). (2) Resulting motion: sinusoidal (sine/cosine wave). (3) Energy ALTERNATES between kinetic and potential — both change in magnitude but TOTAL is conserved (in absence of friction/damping). EXAMPLES: (1) MASS-ON-SPRING — ideal SHM. (2) PENDULUM (small angles) — approximates SHM. (3) TUNING FORK vibrations. (4) MOLECULAR vibrations in solids (atomic 'springs'). (5) AC current oscillates SHM-like. EQUATIONS: (1) x(t) = A × cos(ωt + φ), where A = amplitude, ω = angular frequency, φ = phase. (2) ω = √(k/m) for spring; ω = √(g/L) for pendulum. (3) T (period) = 2π/ω. (4) f (frequency) = 1/T. ENERGY: total = ½ k A² (constant). At extremes (x = ±A), all energy is potential; at center (x = 0), all kinetic. NON-SHM cases: large-amplitude pendulum (anharmonic); F = −kx − bx³ models 'soft' or 'hard' springs. RESONANCE: when driven at natural frequency, amplitude grows large (e.g., bridges, glass shattering). PYQ FREQUENCY: SHM definition in NEET, JEE-Main 1-2× per paper.",
       "subject": "Physics",
       "topic": "SHM and Pendulum",
-      "topic_code": "PHY_SHM_PENDULUM_MIXED",
+      "topic_code": "PHY_SHM",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -50,16 +74,28 @@
     {
       "stem": "If pendulum's length is INCREASED 4 TIMES, its time period becomes:",
       "options": [
-        {"option_text": "2 times original (T ∝ √L)", "is_correct": true},
-        {"option_text": "4 times original directly", "is_correct": false},
-        {"option_text": "16 times original (linear)", "is_correct": false},
-        {"option_text": "Half of original (decreases)", "is_correct": false}
+        {
+          "option_text": "2 times original (T ∝ √L)",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 times original directly",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 times original (linear)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Half of original (decreases)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Apply T = 2π√(L/g) → T ∝ √L. If L → 4L, then T → √4 × T = 2 × T. So new period is 2× original. KEY METHOD: T scales as the SQUARE ROOT of L. INCREASE L by FACTOR k → T increases by √k. PRACTICE: (1) L → 9L → T → 3T (since √9 = 3). (2) L → 100L → T → 10T. (3) L halved (L → L/2) → T → T/√2. RELATED FREQUENCY: f = 1/T → f ∝ 1/√L. SHORTER pendulum vibrates FASTER. PRACTICAL: (a) Wristwatch with mechanical movement uses tiny balance wheel acting like a pendulum. (b) Clocks with longer pendulum → tick more slowly. KEPLER'S 3RD LAW analogy: T² ∝ a³ for orbits (Newton's law of gravity); pendulum is T² ∝ L. SAMPLE COMBINED PROBLEMS: (a) Pendulum length increased 4×; gravity halved. New T = 2 × √2 × T = 2√2 T (combining factors). (b) Pendulum on the Moon (g/6) of length L: T_moon = √6 × T_earth ≈ 2.45 × T_earth. SPACECRAFT effects on pendulum: in zero-gravity (orbiting space station), pendulum DOES NOT swing — there's no restoring force; clocks need different mechanisms. PYQ FREQUENCY: pendulum-length scaling in NEET, JEE-Main 1× per cycle.",
       "subject": "Physics",
       "topic": "SHM and Pendulum",
-      "topic_code": "PHY_SHM_PENDULUM_MIXED",
+      "topic_code": "PHY_SHM",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -71,16 +107,28 @@
     {
       "stem": "RESONANCE in mechanical systems occurs when:",
       "options": [
-        {"option_text": "Driving frequency = natural frequency", "is_correct": true},
-        {"option_text": "System has highest possible damping", "is_correct": false},
-        {"option_text": "Input force has zero frequency only", "is_correct": false},
-        {"option_text": "Amplitude is at minimum value here", "is_correct": false}
+        {
+          "option_text": "Driving frequency = natural frequency",
+          "is_correct": true
+        },
+        {
+          "option_text": "System has highest possible damping",
+          "is_correct": false
+        },
+        {
+          "option_text": "Input force has zero frequency only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Amplitude is at minimum value here",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "RESONANCE — when an external DRIVING FORCE oscillates at the SAME FREQUENCY as the system's NATURAL FREQUENCY (the frequency at which it freely oscillates), AMPLITUDE BUILDS UP DRAMATICALLY. PHYSICS: with each push at the right time, energy is added → amplitude grows. EXAMPLES: (1) PUSHING A SWING — must push at 'right moment' (period-matched) for swing to grow. Pushing at random times damps it. (2) GLASS SHATTERING from singing — opera singer hits note matching glass's resonant frequency; amplitude grows until fracture. (3) TACOMA NARROWS BRIDGE COLLAPSE (Nov 1940, USA) — wind-induced oscillations at the bridge's natural frequency caused massive amplitude → bridge broke; iconic engineering case study. (4) MILITARY: marching soldiers must NOT march in step on bridges — could resonate (BROUGHTON SUSPENSION BRIDGE, England, 1831 — collapsed under marching troops). (5) RADIO TUNING — adjusts circuit's resonant frequency to match radio station's frequency → maximum signal. (6) MRI MACHINES — radiowaves at NMR resonant frequency cause strong response. (7) MUSICAL INSTRUMENTS — sound box resonates at natural frequency, amplifying string vibrations. SAFETY DESIGNS — minimize resonance via DAMPING (e.g., shock absorbers) + DETUNING (avoid critical natural frequencies). PYQ FREQUENCY: resonance in NEET, JEE-Main 1× per cycle.",
       "subject": "Physics",
       "topic": "SHM and Pendulum",
-      "topic_code": "PHY_SHM_PENDULUM_MIXED",
+      "topic_code": "PHY_SHM",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -92,16 +140,28 @@
     {
       "stem": "What is the time period of a SECONDS PENDULUM (used in clocks)?",
       "options": [
-        {"option_text": "2 seconds (1 sec each swing)", "is_correct": true},
-        {"option_text": "1 second (one swing only)", "is_correct": false},
-        {"option_text": "60 seconds (one minute)", "is_correct": false},
-        {"option_text": "Half a second only here", "is_correct": false}
+        {
+          "option_text": "2 seconds (1 sec each swing)",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 second (one swing only)",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 seconds (one minute)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Half a second only here",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "SECONDS PENDULUM — time period exactly T = 2 SECONDS. So takes 1 sec for each ONE-WAY swing (left to right or right to left) — pendulum 'ticks' once per second. LENGTH: from T = 2π√(L/g): L = g × T² / (4π²) = 9.8 × 4 / (4π²) ≈ 0.993 m ≈ 99.3 cm. So a seconds pendulum is ~1 meter long. USES: GRANDFATHER CLOCKS — typical pendulum length ~99 cm, ticks 1/sec. The 'tick' you hear is from the pendulum's reversal point. NOTE: g varies by location → pendulum length must be slightly adjusted: at equator g ≈ 9.78 → L ≈ 0.99 m; at poles g ≈ 9.83 → L ≈ 0.996 m. So a CLOCK SET in Equator if MOVED to POLES would tick slightly FASTER (g higher → T smaller → faster). HISTORICAL: Galileo conceived pendulum clock idea (1602); Christian HUYGENS built first practical pendulum clock (1656) — accuracy ~minutes/day, vs prior clocks at hours/day error. KEY ROLE: pendulum clocks dominated time-keeping for ~300 years (1656-1930) until QUARTZ CLOCKS (1927) and ATOMIC CLOCKS (1955) took over for precision. ATOMIC CLOCKS today: NIST F-2 (USA) accurate to 10⁻¹⁶ — 1 second error in 300 million years. PYQ FREQUENCY: 'seconds pendulum length' in NEET, JEE-Main 1× per 2 cycles.",
       "subject": "Physics",
       "topic": "SHM and Pendulum",
-      "topic_code": "PHY_SHM_PENDULUM_MIXED",
+      "topic_code": "PHY_SHM",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -113,16 +173,28 @@
     {
       "stem": "A spring with k = 100 N/m is attached to a 1 kg mass. The angular frequency of SHM is:",
       "options": [
-        {"option_text": "10 rad/s (using ω=√(k/m))", "is_correct": true},
-        {"option_text": "100 rad/s (over-shot value)", "is_correct": false},
-        {"option_text": "1 rad/s (under-estimate calc)", "is_correct": false},
-        {"option_text": "0.1 rad/s (way under-shot)", "is_correct": false}
+        {
+          "option_text": "10 rad/s (using ω=√(k/m))",
+          "is_correct": true
+        },
+        {
+          "option_text": "100 rad/s (over-shot value)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 rad/s (under-estimate calc)",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.1 rad/s (way under-shot)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Apply ω = √(k/m). Plug k=100, m=1: ω = √(100/1) = 10 rad/s. PERIOD: T = 2π/ω = 2π/10 ≈ 0.628 s. FREQUENCY: f = 1/T = 1/0.628 ≈ 1.59 Hz (cycles/sec). KEY FORMULAS for SPRING-MASS SHM: (1) ω = √(k/m). (2) T = 2π × √(m/k). (3) f = 1/T = (1/2π) × √(k/m). PRACTICE: (1) k=400, m=1: ω = 20 rad/s, T = 0.314 s. (2) k=100, m=4: ω = 5 rad/s, T = 1.26 s. (3) Doubling mass: ω → ω/√2 (slower). Doubling k: ω → ω×√2 (faster). ENERGY in SHM: (1) Kinetic: KE = ½ m v² = ½ m × ω² × (A² − x²). (2) Potential (spring): PE = ½ k x². (3) Total E = ½ k A² (constant). At equilibrium: max KE, min PE. At extremes: max PE, zero KE. APPLICATIONS: (1) AUTO SUSPENSION — coil springs damped to reduce bouncing. (2) SHOCK ABSORBERS — critically damped. (3) SEISMOMETERS — mass on spring; ground shake → mass relatively stays, providing measurement. (4) ANALOGOUS to LC circuit (electrical SHM): ω = 1/√(LC). PYQ FREQUENCY: spring-mass calculations in NEET, JEE-Main 1-2× per cycle.",
       "subject": "Physics",
       "topic": "SHM and Pendulum",
-      "topic_code": "PHY_SHM_PENDULUM_MIXED",
+      "topic_code": "PHY_SHM",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -134,16 +206,28 @@
     {
       "stem": "DAMPING in oscillating systems causes amplitude to:",
       "options": [
-        {"option_text": "Decrease over time (energy lost)", "is_correct": true},
-        {"option_text": "Increase over time always", "is_correct": false},
-        {"option_text": "Stay constant indefinitely (ideal)", "is_correct": false},
-        {"option_text": "Oscillate randomly (chaotic)", "is_correct": false}
+        {
+          "option_text": "Decrease over time (energy lost)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Increase over time always",
+          "is_correct": false
+        },
+        {
+          "option_text": "Stay constant indefinitely (ideal)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Oscillate randomly (chaotic)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "DAMPING — the gradual loss of OSCILLATION AMPLITUDE due to FRICTION, AIR RESISTANCE, or other dissipative forces. Energy of oscillator is gradually converted to HEAT or other forms. EXAMPLES: (1) PENDULUM in air — eventually stops due to air drag + pivot friction. (2) GUITAR STRING — vibration dies down because energy radiates as sound. (3) MASS-SPRING in oil — quickly damped (high viscosity). DAMPING TYPES: (1) UNDERDAMPED — system oscillates but amplitude decreases exponentially (most everyday systems). (2) OVERDAMPED — system returns to equilibrium SLOWLY without oscillating (e.g., slamming a heavy door against thick paint). (3) CRITICALLY DAMPED — fastest possible return to equilibrium without overshoot (used in CAR SHOCK ABSORBERS — comfort + safety). MATHEMATICAL: amplitude A(t) = A₀ × e^(−γt) where γ = damping coefficient. Larger γ = faster decay. APPLICATIONS: (1) DOOR CLOSER mechanisms. (2) AUTO SHOCK ABSORBERS — dampen road bumps. (3) BUILDING VIBRATION DAMPERS in earthquake-resistant skyscrapers (Taipei 101 has a giant 660-ton tuned mass damper — reduces sway during earthquakes/typhoons). RESONANCE + DAMPING: low damping → SHARP resonance peaks (sensitive); high damping → broad/no resonance. PYQ FREQUENCY: damping types in NEET, JEE-Main 1× per cycle.",
       "subject": "Physics",
       "topic": "SHM and Pendulum",
-      "topic_code": "PHY_SHM_PENDULUM_MIXED",
+      "topic_code": "PHY_SHM",
       "difficulty": "hard",
       "effort_tier": "tier2",
       "staleness_risk": "low",

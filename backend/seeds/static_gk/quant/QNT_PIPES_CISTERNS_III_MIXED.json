@@ -8,16 +8,28 @@
     {
       "stem": "Pipe A fills tank in 6 hr, Pipe B in 8 hr. Together they fill in:",
       "options": [
-        {"option_text": "24/7 hr (~3.43 hr) combined fill", "is_correct": true},
-        {"option_text": "7 hr (sum of times) wrong", "is_correct": false},
-        {"option_text": "14 hr (twice sum) wrong", "is_correct": false},
-        {"option_text": "2 hr (over-estimated speed)", "is_correct": false}
+        {
+          "option_text": "24/7 hr (~3.43 hr) combined fill",
+          "is_correct": true
+        },
+        {
+          "option_text": "7 hr (sum of times) wrong",
+          "is_correct": false
+        },
+        {
+          "option_text": "14 hr (twice sum) wrong",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 hr (over-estimated speed)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Combined rate = 1/6 + 1/8 = 4/24 + 3/24 = 7/24 tank/hr. Time = 24/7 ≈ 3.43 hr ≈ 3 hr 25 min. INSIGHT — TIMES NEVER ADD; RATES DO. Common mistake: students sum up times (6+8=14), wrong. Always think 'rate per hour'. SHORTCUT FORMULA for 2 pipes filling: T_combined = (T_a × T_b)/(T_a + T_b) = 6×8/14 = 48/14 = 24/7. EXTENSION: 3 pipes A, B, C fill in T_a, T_b, T_c — combined = 1/(1/T_a + 1/T_b + 1/T_c). If LEAK (drains), subtract its rate.",
       "subject": "Quant",
       "topic": "Pipes and cisterns III — mixed tiers",
-      "topic_code": "QNT_PIPES_CISTERNS_III_MIXED",
+      "topic_code": "QA_PIPES",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Pipe A fills in 12 hr; Pipe B empties full tank in 18 hr. With both open, tank fills in:",
       "options": [
-        {"option_text": "36 hr (slower due to leak)", "is_correct": true},
-        {"option_text": "30 hr (incorrect estimate)", "is_correct": false},
-        {"option_text": "6 hr (combined wrong)", "is_correct": false},
-        {"option_text": "9 hr (incorrect estimate)", "is_correct": false}
+        {
+          "option_text": "36 hr (slower due to leak)",
+          "is_correct": true
+        },
+        {
+          "option_text": "30 hr (incorrect estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 hr (combined wrong)",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 hr (incorrect estimate)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "A fills at 1/12 per hr; B empties at 1/18 per hr (negative). Net rate = 1/12 − 1/18 = 3/36 − 2/36 = 1/36 per hr. Time = 36 hr (fills more slowly than A alone). INSIGHT — when filling rate > emptying, tank still fills, but slowly. If filling rate < emptying, tank can't be filled (eventually empty). FORMULA: net rate = sum of inflow rates − sum of outflow rates. PRACTICAL: water tanks with leaks; bathtubs with drain open + tap on; reservoirs with evaporation losses (a kind of leak).",
       "subject": "Quant",
       "topic": "Pipes and cisterns III — mixed tiers",
-      "topic_code": "QNT_PIPES_CISTERNS_III_MIXED",
+      "topic_code": "QA_PIPES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Three pipes A, B, C fill tank in 4, 6, 12 hr. Together they fill in:",
       "options": [
-        {"option_text": "2 hr (combined fast)", "is_correct": true},
-        {"option_text": "3 hr (close but wrong)", "is_correct": false},
-        {"option_text": "4 hr (slowest pipe alone)", "is_correct": false},
-        {"option_text": "22 hr (sum of times)", "is_correct": false}
+        {
+          "option_text": "2 hr (combined fast)",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 hr (close but wrong)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 hr (slowest pipe alone)",
+          "is_correct": false
+        },
+        {
+          "option_text": "22 hr (sum of times)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Combined rate = 1/4 + 1/6 + 1/12 = 3/12 + 2/12 + 1/12 = 6/12 = 1/2 per hr. Time = 2 hr. SHORTCUT: LCM denominator approach — find LCM of 4, 6, 12 = 12 (capacity = 12 units). A = 12/4 = 3 units/hr; B = 12/6 = 2; C = 12/12 = 1. Total = 6 units/hr. Time = 12/6 = 2 hr. INSIGHT — LCM method is FAST for multi-pipe problems; works well for any 'work-rate' problem (men, machines, pipes). Always assign LCM as 'total work' to keep numbers integer-friendly.",
       "subject": "Quant",
       "topic": "Pipes and cisterns III — mixed tiers",
-      "topic_code": "QNT_PIPES_CISTERNS_III_MIXED",
+      "topic_code": "QA_PIPES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "A tank fills in 10 hr without leak. With leak, takes 12 hr. Leak alone empties full tank in:",
       "options": [
-        {"option_text": "60 hr (calculated leak rate)", "is_correct": true},
-        {"option_text": "2 hr (just the difference)", "is_correct": false},
-        {"option_text": "22 hr (incorrect estimate)", "is_correct": false},
-        {"option_text": "120 hr (incorrect estimate)", "is_correct": false}
+        {
+          "option_text": "60 hr (calculated leak rate)",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 hr (just the difference)",
+          "is_correct": false
+        },
+        {
+          "option_text": "22 hr (incorrect estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "120 hr (incorrect estimate)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Without leak: rate = 1/10 per hr. With leak: rate = 1/12 per hr (slower). Leak rate = 1/10 − 1/12 = 6/60 − 5/60 = 1/60 per hr. Leak alone empties in 1/(1/60) = 60 hr. INSIGHT — common 'tap + leak' problem. FORMULA: leak alone empty time = (T_with_leak × T_without_leak) / (T_with_leak − T_without_leak) = (12 × 10)/(12 − 10) = 60 hr. WORKS when filling-rate > leak-rate (positive net); otherwise tank never fills.",
       "subject": "Quant",
       "topic": "Pipes and cisterns III — mixed tiers",
-      "topic_code": "QNT_PIPES_CISTERNS_III_MIXED",
+      "topic_code": "QA_PIPES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "Pipe A fills tank in 20 hr. Pipe B fills in 30 hr. After working together for 5 hr, A is closed. B alone takes how long more?",
       "options": [
-        {"option_text": "17.5 hr more for B alone", "is_correct": true},
-        {"option_text": "10 hr more for B alone", "is_correct": false},
-        {"option_text": "25 hr more for B alone", "is_correct": false},
-        {"option_text": "15 hr more for B alone", "is_correct": false}
+        {
+          "option_text": "17.5 hr more for B alone",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 hr more for B alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 hr more for B alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 hr more for B alone",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Combined rate = 1/20 + 1/30 = 5/60 = 1/12 per hr. In 5 hr together: 5/12 of tank done. Remaining = 7/12. B alone fills at 1/30 per hr → time = (7/12)/(1/30) = 7×30/12 = 210/12 = 17.5 hr. SHORTCUT: LCM = 60 (capacity 60 units); A=3 units/hr; B=2; together=5. After 5 hr: 25 units. Remaining = 35. B alone: 35/2 = 17.5 hr. INSIGHT — these 2-stage problems: (1) compute work done in stage 1 with multiple workers; (2) remaining work / single worker rate.",
       "subject": "Quant",
       "topic": "Pipes and cisterns III — mixed tiers",
-      "topic_code": "QNT_PIPES_CISTERNS_III_MIXED",
+      "topic_code": "QA_PIPES",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "Pipe A fills 60% of tank, then B alone fills the rest. A fills in 6 hr; B fills in 9 hr. Total time:",
       "options": [
-        {"option_text": "7.2 hr total time taken", "is_correct": true},
-        {"option_text": "6 hr (only A's time)", "is_correct": false},
-        {"option_text": "15 hr (sum of times)", "is_correct": false},
-        {"option_text": "9 hr (only B's time)", "is_correct": false}
+        {
+          "option_text": "7.2 hr total time taken",
+          "is_correct": true
+        },
+        {
+          "option_text": "6 hr (only A's time)",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 hr (sum of times)",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 hr (only B's time)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "A fills 60% alone: time = 0.6 × 6 = 3.6 hr (since A takes 6 hr for 100%). B fills remaining 40% alone: time = 0.4 × 9 = 3.6 hr. Total = 3.6 + 3.6 = 7.2 hr. INSIGHT — 'sequential' problems (one pipe at a time) are simpler than parallel. Each pipe's time scales linearly with fraction filled. KEY: A's RATE = 1/6 per hr → to fill 60%, need 0.6 / (1/6) = 3.6 hr.",
       "subject": "Quant",
       "topic": "Pipes and cisterns III — mixed tiers",
-      "topic_code": "QNT_PIPES_CISTERNS_III_MIXED",
+      "topic_code": "QA_PIPES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Pipe A is twice as fast as Pipe B. Together they fill in 8 hr. A alone fills in:",
       "options": [
-        {"option_text": "12 hr A alone fills tank", "is_correct": true},
-        {"option_text": "16 hr A alone fills tank", "is_correct": false},
-        {"option_text": "24 hr A alone fills tank", "is_correct": false},
-        {"option_text": "4 hr A alone fills tank", "is_correct": false}
+        {
+          "option_text": "12 hr A alone fills tank",
+          "is_correct": true
+        },
+        {
+          "option_text": "16 hr A alone fills tank",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 hr A alone fills tank",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 hr A alone fills tank",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "A's rate = 2 × B's rate. Let B = x → A = 2x. Combined = 3x = 1/8 → x = 1/24. So B = 1/24 per hr → B alone = 24 hr. A = 2x = 1/12 → A alone = 12 hr. INSIGHT — when speed ratio is given (like A:B = 2:1), assign units (A = 2u/hr, B = u/hr) → combined = 3u/hr → use total time to find u → individual times. Equivalently, if A is k times faster: A:B time ratio = 1:k (faster pipe takes less time, ratio is INVERSE of speed ratio).",
       "subject": "Quant",
       "topic": "Pipes and cisterns III — mixed tiers",
-      "topic_code": "QNT_PIPES_CISTERNS_III_MIXED",
+      "topic_code": "QA_PIPES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,

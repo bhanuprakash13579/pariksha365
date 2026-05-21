@@ -8,16 +8,28 @@
     {
       "stem": "If 12 men complete a job in 8 days, in how many days will 16 men complete it?",
       "options": [
-        {"option_text": "6 days for sixteen men", "is_correct": true},
-        {"option_text": "10 days for sixteen men", "is_correct": false},
-        {"option_text": "12 days for sixteen men", "is_correct": false},
-        {"option_text": "4 days for sixteen men", "is_correct": false}
+        {
+          "option_text": "6 days for sixteen men",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 days for sixteen men",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 days for sixteen men",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 days for sixteen men",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Total work = 12 × 8 = 96 man-days. With 16 men: time = 96/16 = 6 days. INVERSE PROPORTION: more men, less time. SHORTCUT FORMULA: M₁D₁ = M₂D₂ → 12×8 = 16×D₂ → D₂ = 6. EXTENSION: M₁D₁H₁/W₁ = M₂D₂H₂/W₂ (also include hours/day + work units when those vary). KEY ASSUMPTION: equal efficiency across men. Real-life caveat: adding too many workers can SLOW progress (BROOKS' LAW in software engineering: 'adding manpower to late project makes it later'); coordination overhead grows.",
       "subject": "Quant",
       "topic": "Time and work IV — mixed tiers",
-      "topic_code": "QNT_TIME_WORK_IV_MIXED",
+      "topic_code": "QA_TIME_WORK",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "A can do work in 10 days, B in 15 days. Together how long?",
       "options": [
-        {"option_text": "6 days together combined", "is_correct": true},
-        {"option_text": "12.5 days together combined", "is_correct": false},
-        {"option_text": "25 days together combined", "is_correct": false},
-        {"option_text": "5 days together combined", "is_correct": false}
+        {
+          "option_text": "6 days together combined",
+          "is_correct": true
+        },
+        {
+          "option_text": "12.5 days together combined",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 days together combined",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 days together combined",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Combined rate = 1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6 per day. Time = 6 days. SHORTCUT FORMULA: T = (T_A × T_B)/(T_A + T_B) = 10×15/(10+15) = 150/25 = 6. INSIGHT — combined time always LESS than either individual time. LCM METHOD: total work = LCM(10,15) = 30 units; A = 3 units/day, B = 2 units/day, combined = 5 units/day → 30/5 = 6 days. INSIGHT — useful when ratio of individual times has clean LCM. SAME logic for: PIPES + CISTERNS, multi-CPU computing, parallel pipelines.",
       "subject": "Quant",
       "topic": "Time and work IV — mixed tiers",
-      "topic_code": "QNT_TIME_WORK_IV_MIXED",
+      "topic_code": "QA_TIME_WORK",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "A is twice as efficient as B. Together they finish in 12 days. A alone takes:",
       "options": [
-        {"option_text": "18 days alone for A", "is_correct": true},
-        {"option_text": "24 days alone for A", "is_correct": false},
-        {"option_text": "36 days alone for A", "is_correct": false},
-        {"option_text": "8 days alone for A", "is_correct": false}
+        {
+          "option_text": "18 days alone for A",
+          "is_correct": true
+        },
+        {
+          "option_text": "24 days alone for A",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 days alone for A",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 days alone for A",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Efficiency ratio A:B = 2:1 → time ratio inverse = 1:2 → A's time : B's time = 1:2. Combined: 1/A + 1/B = 1/12 → 1/A + 1/(2A) = 1/12 → 3/(2A) = 1/12 → A = 18 days; B = 36 days. Verify: 1/18 + 1/36 = 2/36 + 1/36 = 3/36 = 1/12 ✓. SHORTCUT — when A is k times faster: A's time = combined × (k+1)/k. Here k=2: A = 12 × 3/2 = 18. INSIGHT — useful for percentage-efficiency problems. SAME LOGIC: A 50% more efficient than B → A:B = 3:2 efficiency = 2:3 time.",
       "subject": "Quant",
       "topic": "Time and work IV — mixed tiers",
-      "topic_code": "QNT_TIME_WORK_IV_MIXED",
+      "topic_code": "QA_TIME_WORK",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "A + B can do work in 12 days; B alone in 30. A alone:",
       "options": [
-        {"option_text": "20 days alone for A", "is_correct": true},
-        {"option_text": "18 days alone for A", "is_correct": false},
-        {"option_text": "24 days alone for A", "is_correct": false},
-        {"option_text": "15 days alone for A", "is_correct": false}
+        {
+          "option_text": "20 days alone for A",
+          "is_correct": true
+        },
+        {
+          "option_text": "18 days alone for A",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 days alone for A",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 days alone for A",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Combined rate = 1/12. B's rate = 1/30. A's rate = 1/12 − 1/30 = 5/60 − 2/60 = 3/60 = 1/20. So A alone = 20 days. INSIGHT — when COMBINED + ONE ALONE are given, find OTHER by SUBTRACTION of rates. Verify: 1/20 + 1/30 = 3/60 + 2/60 = 5/60 = 1/12 ✓. PYQ standard. ALSO: if A + B + C combined rate is given, with A + B's combined and B + C's combined, can find each individually using rate algebra.",
       "subject": "Quant",
       "topic": "Time and work IV — mixed tiers",
-      "topic_code": "QNT_TIME_WORK_IV_MIXED",
+      "topic_code": "QA_TIME_WORK",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "A alone in 24 days, B alone in 16 days. A starts; B joins after some days; together they finish in 12 total days. After how many days did B join?",
       "options": [
-        {"option_text": "Day 4 (A worked alone first 4)", "is_correct": true},
-        {"option_text": "Day 6 (A worked alone first 6)", "is_correct": false},
-        {"option_text": "Day 8 (A worked alone first 8)", "is_correct": false},
-        {"option_text": "Day 2 (A worked alone first 2)", "is_correct": false}
+        {
+          "option_text": "Day 4 (A worked alone first 4)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Day 6 (A worked alone first 6)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Day 8 (A worked alone first 8)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Day 2 (A worked alone first 2)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Let B joined on day x; B works (12−x) days. Total work = 12 × (1/24) [A all 12 days] + (12−x) × (1/16) [B from day x] = 1. → 12/24 + (12−x)/16 = 1 → 1/2 + (12−x)/16 = 1 → (12−x)/16 = 1/2 → 12−x = 8 → x = 4. So B joined after 4 days. SHORTCUT verify: A alone for 4 days does 4/24 = 1/6 of work. Remaining 5/6 by A+B together at rate 1/24+1/16 = 5/48 → time = (5/6)/(5/48) = 8 days. Total = 4+8 = 12 ✓. INSIGHT — ALWAYS set up TOTAL WORK = 1 equation; use linear algebra in time variables.",
       "subject": "Quant",
       "topic": "Time and work IV — mixed tiers",
-      "topic_code": "QNT_TIME_WORK_IV_MIXED",
+      "topic_code": "QA_TIME_WORK",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "20 men can complete work in 30 days. After 10 days, 5 men leave. Total time:",
       "options": [
-        {"option_text": "About 36.7 days total time", "is_correct": true},
-        {"option_text": "Exactly 30 days total time", "is_correct": false},
-        {"option_text": "About 40 days total time", "is_correct": false},
-        {"option_text": "About 25 days total time", "is_correct": false}
+        {
+          "option_text": "About 36.7 days total time",
+          "is_correct": true
+        },
+        {
+          "option_text": "Exactly 30 days total time",
+          "is_correct": false
+        },
+        {
+          "option_text": "About 40 days total time",
+          "is_correct": false
+        },
+        {
+          "option_text": "About 25 days total time",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Total work = 20 × 30 = 600 man-days. After 10 days: 20 × 10 = 200 done; 400 left. With 15 men: time = 400/15 ≈ 26.67 days. Total = 10 + 26.67 ≈ 36.67 days. INSIGHT — when worker count CHANGES PARTWAY, split into stages: (1) Stage 1: original team for x days (work done = M₁ × x); (2) Stage 2: remaining team for y days (= M₂ × y). Total work = constant; solve. CONCEPT: PROJECT MANAGEMENT real-life — workers leaving / joining shifts schedule. Useful for: construction, software projects, harvest-period labour.",
       "subject": "Quant",
       "topic": "Time and work IV — mixed tiers",
-      "topic_code": "QNT_TIME_WORK_IV_MIXED",
+      "topic_code": "QA_TIME_WORK",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "If 1 man = 2 women in efficiency, and 5 women complete a job in 24 days, how long do 4 men take?",
       "options": [
-        {"option_text": "15 days for the 4 men", "is_correct": true},
-        {"option_text": "12 days for the 4 men", "is_correct": false},
-        {"option_text": "20 days for the 4 men", "is_correct": false},
-        {"option_text": "10 days for the 4 men", "is_correct": false}
+        {
+          "option_text": "15 days for the 4 men",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 days for the 4 men",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 days for the 4 men",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 days for the 4 men",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "1 man's efficiency = 2 women's. So 4 men = 8 women's worth. Total work in 'woman-days' = 5 × 24 = 120 woman-days. Time for 4 men (= 8 women) = 120/8 = 15 days. SHORTCUT — convert all to a SINGLE UNIT (here 'woman-units') based on efficiency ratio, then use M·D = constant. KEY INSIGHT: efficiency-ratio problems become simple unit-conversion + standard work-rate equations. SAME APPROACH for: gender-mixed crews, machine speed differences, child + adult workers, parallel workers with different output rates.",
       "subject": "Quant",
       "topic": "Time and work IV — mixed tiers",
-      "topic_code": "QNT_TIME_WORK_IV_MIXED",
+      "topic_code": "QA_TIME_WORK",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,

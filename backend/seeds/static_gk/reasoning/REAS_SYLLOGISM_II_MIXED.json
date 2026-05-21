@@ -8,16 +8,28 @@
     {
       "stem": "Statements: All men are mortal. Socrates is a man. Which conclusion follows?",
       "options": [
-        {"option_text": "Socrates may be immortal", "is_correct": false},
-        {"option_text": "Socrates is mortal", "is_correct": true},
-        {"option_text": "Some men are not mortal", "is_correct": false},
-        {"option_text": "No definite conclusion", "is_correct": false}
+        {
+          "option_text": "Socrates may be immortal",
+          "is_correct": false
+        },
+        {
+          "option_text": "Socrates is mortal",
+          "is_correct": true
+        },
+        {
+          "option_text": "Some men are not mortal",
+          "is_correct": false
+        },
+        {
+          "option_text": "No definite conclusion",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Classic syllogism. Major premise: All men are mortal (set 'men' ⊂ 'mortal'). Minor premise: Socrates ∈ 'men'. Conclusion: Socrates ∈ 'mortal'. The 'universal-positive + particular' pattern always gives a particular-positive conclusion provided the middle term is distributed.",
       "subject": "Reasoning",
       "topic": "Syllogism II — mixed tiers",
-      "topic_code": "REAS_SYLLOGISM_II_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Statements: All roses are flowers. Some flowers are red. Which conclusion follows?",
       "options": [
-        {"option_text": "All roses are red", "is_correct": false},
-        {"option_text": "No definite conclusion follows about roses being red", "is_correct": true},
-        {"option_text": "Some roses are red", "is_correct": false},
-        {"option_text": "No rose is red", "is_correct": false}
+        {
+          "option_text": "All roses are red",
+          "is_correct": false
+        },
+        {
+          "option_text": "No definite conclusion follows about roses being red",
+          "is_correct": true
+        },
+        {
+          "option_text": "Some roses are red",
+          "is_correct": false
+        },
+        {
+          "option_text": "No rose is red",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "All roses ⊂ flowers, and SOME flowers are red — the red flowers may or may not include roses. Using Venn diagrams: the 'rose' circle is inside the 'flower' circle, while the 'red' subset could sit anywhere inside or outside 'rose'. So we cannot conclude that some roses are red; nor that none are. 'No definite conclusion' is correct.",
       "subject": "Reasoning",
       "topic": "Syllogism II — mixed tiers",
-      "topic_code": "REAS_SYLLOGISM_II_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Statements: No cats are dogs. All dogs are mammals. Which conclusion follows?",
       "options": [
-        {"option_text": "No cats are mammals", "is_correct": false},
-        {"option_text": "Some mammals are not cats", "is_correct": true},
-        {"option_text": "All mammals are dogs", "is_correct": false},
-        {"option_text": "Some cats are dogs", "is_correct": false}
+        {
+          "option_text": "No cats are mammals",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some mammals are not cats",
+          "is_correct": true
+        },
+        {
+          "option_text": "All mammals are dogs",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some cats are dogs",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "From 'All dogs are mammals' + 'No cats are dogs' — dogs are inside mammals, and cats are outside the dog-subset. Since dogs (which are mammals) are NOT cats, at least those particular mammals (the dogs) are not cats → 'some mammals are not cats'. You cannot conclude 'no cats are mammals' — cats may or may not be mammals (in fact they are, but that cannot be derived from these premises alone).",
       "subject": "Reasoning",
       "topic": "Syllogism II — mixed tiers",
-      "topic_code": "REAS_SYLLOGISM_II_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Statements: Some books are novels. All novels are interesting. Which follows?",
       "options": [
-        {"option_text": "Some books are interesting", "is_correct": true},
-        {"option_text": "All books are interesting", "is_correct": false},
-        {"option_text": "All interesting things are books", "is_correct": false},
-        {"option_text": "No books are interesting", "is_correct": false}
+        {
+          "option_text": "Some books are interesting",
+          "is_correct": true
+        },
+        {
+          "option_text": "All books are interesting",
+          "is_correct": false
+        },
+        {
+          "option_text": "All interesting things are books",
+          "is_correct": false
+        },
+        {
+          "option_text": "No books are interesting",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Some books are novels → at least a subset of books lies inside 'novels'. All novels are interesting → every novel, including those novel-books, is interesting. So those books are interesting → 'Some books are interesting'. We cannot upgrade to 'all books are interesting' because the remaining books (that are not novels) might be boring.",
       "subject": "Reasoning",
       "topic": "Syllogism II — mixed tiers",
-      "topic_code": "REAS_SYLLOGISM_II_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "Statements: All mangoes are fruits. All fruits are healthy. Which does NOT necessarily follow?",
       "options": [
-        {"option_text": "All mangoes are healthy", "is_correct": false},
-        {"option_text": "All healthy things are fruits", "is_correct": true},
-        {"option_text": "Some fruits are mangoes", "is_correct": false},
-        {"option_text": "Some healthy things are mangoes", "is_correct": false}
+        {
+          "option_text": "All mangoes are healthy",
+          "is_correct": false
+        },
+        {
+          "option_text": "All healthy things are fruits",
+          "is_correct": true
+        },
+        {
+          "option_text": "Some fruits are mangoes",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some healthy things are mangoes",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "A-type (universal-positive) statements do not convert to universal-positive. 'All A are B' does NOT imply 'All B are A'. So 'all fruits are healthy' does not give us 'all healthy things are fruits'. The other three follow — all mangoes are healthy (chain), some fruits are mangoes (existential from 'all mangoes are fruits'), some healthy things are mangoes (chain → existential).",
       "subject": "Reasoning",
       "topic": "Syllogism II — mixed tiers",
-      "topic_code": "REAS_SYLLOGISM_II_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "Statements: No artists are liars. Some artists are singers. Which follows?",
       "options": [
-        {"option_text": "No singers are liars", "is_correct": false},
-        {"option_text": "Some singers are not liars", "is_correct": true},
-        {"option_text": "All liars are singers", "is_correct": false},
-        {"option_text": "Some artists are liars", "is_correct": false}
+        {
+          "option_text": "No singers are liars",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some singers are not liars",
+          "is_correct": true
+        },
+        {
+          "option_text": "All liars are singers",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some artists are liars",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Some artists are singers → there exist individuals who are both artists and singers. 'No artists are liars' → those particular singer-artists are NOT liars. Therefore, at least those singers are not liars → 'Some singers are not liars'. We cannot say 'no singers are liars' — singers outside the artist-group might be liars.",
       "subject": "Reasoning",
       "topic": "Syllogism II — mixed tiers",
-      "topic_code": "REAS_SYLLOGISM_II_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Statements: All squares are rectangles. No rectangle is a triangle. Which follows?",
       "options": [
-        {"option_text": "Some squares are triangles", "is_correct": false},
-        {"option_text": "No squares are triangles", "is_correct": true},
-        {"option_text": "All triangles are squares", "is_correct": false},
-        {"option_text": "Some rectangles are triangles", "is_correct": false}
+        {
+          "option_text": "Some squares are triangles",
+          "is_correct": false
+        },
+        {
+          "option_text": "No squares are triangles",
+          "is_correct": true
+        },
+        {
+          "option_text": "All triangles are squares",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some rectangles are triangles",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Squares ⊂ Rectangles, and Rectangles ∩ Triangles = ∅ (empty). So Squares ∩ Triangles must also be empty — 'No squares are triangles' follows by chain-elimination. This is a classic 'E-type with universal affirmative' syllogism (Celarent).",
       "subject": "Reasoning",
       "topic": "Syllogism II — mixed tiers",
-      "topic_code": "REAS_SYLLOGISM_II_MIXED",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,

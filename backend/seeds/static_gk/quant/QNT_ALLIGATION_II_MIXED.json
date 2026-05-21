@@ -8,16 +8,28 @@
     {
       "stem": "In what ratio must rice at ₹50/kg be mixed with rice at ₹70/kg to get a mixture worth ₹60/kg?",
       "options": [
-        {"option_text": "2 : 1", "is_correct": false},
-        {"option_text": "1 : 1", "is_correct": true},
-        {"option_text": "3 : 2", "is_correct": false},
-        {"option_text": "1 : 2", "is_correct": false}
+        {
+          "option_text": "2 : 1",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 1",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 : 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 2",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Alligation rule: ratio = (price of dearer − mean) : (mean − price of cheaper) = (70 − 60) : (60 − 50) = 10 : 10 = 1 : 1. Verify: equal kg of each — (50 + 70) / 2 = ₹60/kg. ✓",
       "subject": "Quant",
       "topic": "Alligation II — mixed tiers",
-      "topic_code": "QNT_ALLIGATION_II_MIXED",
+      "topic_code": "QA_MIXTURE",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "A 20-litre mixture contains milk and water in the ratio 3 : 1. How much water must be added to make the ratio 1 : 1?",
       "options": [
-        {"option_text": "5 litres", "is_correct": false},
-        {"option_text": "10 litres", "is_correct": true},
-        {"option_text": "15 litres", "is_correct": false},
-        {"option_text": "8 litres", "is_correct": false}
+        {
+          "option_text": "5 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 litres",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 litres",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Current: milk = 3/4 × 20 = 15 L; water = 5 L. Milk stays at 15 L (only water is added). For milk:water = 1:1, water must also = 15 L. Water to add = 15 − 5 = 10 L. Verify: total = 30 L; milk 15, water 15 → 1:1. ✓",
       "subject": "Quant",
       "topic": "Alligation II — mixed tiers",
-      "topic_code": "QNT_ALLIGATION_II_MIXED",
+      "topic_code": "QA_MIXTURE",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "A jar contains milk and water in 5 : 3. If 16 litres of mixture is removed and replaced with pure water, the ratio becomes 3 : 5. Find the original quantity of milk in the jar.",
       "options": [
-        {"option_text": "15 litres", "is_correct": false},
-        {"option_text": "25 litres", "is_correct": true},
-        {"option_text": "30 litres", "is_correct": false},
-        {"option_text": "20 litres", "is_correct": false}
+        {
+          "option_text": "15 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 litres",
+          "is_correct": true
+        },
+        {
+          "option_text": "30 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 litres",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Let total = 8x; milk = 5x, water = 3x. Remove 16 L of mixture (5/8 milk and 3/8 water) — remove 10 of milk and 6 of water. Add 16 L pure water. New milk = 5x − 10; new water = 3x − 6 + 16 = 3x + 10. Given new ratio 3 : 5 → (5x − 10) / (3x + 10) = 3/5 → 25x − 50 = 9x + 30 → 16x = 80 → x = 5. So milk = 5x = 25 L. Verify: total was 40 L; milk 25, water 15 → 5:3. ✓",
       "subject": "Quant",
       "topic": "Alligation II — mixed tiers",
-      "topic_code": "QNT_ALLIGATION_II_MIXED",
+      "topic_code": "QA_MIXTURE",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Two types of sugar at ₹32/kg and ₹40/kg are mixed in the ratio 3 : 2. The price per kg of the mixture is:",
       "options": [
-        {"option_text": "₹34.4", "is_correct": false},
-        {"option_text": "₹35.2", "is_correct": true},
-        {"option_text": "₹36.0", "is_correct": false},
-        {"option_text": "₹38.4", "is_correct": false}
+        {
+          "option_text": "₹34.4",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹35.2",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹36.0",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹38.4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Weighted average price = (3 × 32 + 2 × 40) / (3 + 2) = (96 + 80) / 5 = 176 / 5 = ₹35.2. Shortcut with alligation — if two components are in ratio 3:2, the mean sits 2/5 of the way from cheaper (32) to dearer (40): 32 + (2/5)(40 − 32) = 32 + 3.2 = 35.2. ✓",
       "subject": "Quant",
       "topic": "Alligation II — mixed tiers",
-      "topic_code": "QNT_ALLIGATION_II_MIXED",
+      "topic_code": "QA_MIXTURE",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "In what ratio should two varieties of tea at ₹300/kg and ₹500/kg be mixed so that the shopkeeper gains 20% by selling the mixture at ₹480/kg?",
       "options": [
-        {"option_text": "2 : 1", "is_correct": false},
-        {"option_text": "1 : 1", "is_correct": true},
-        {"option_text": "3 : 2", "is_correct": false},
-        {"option_text": "1 : 3", "is_correct": false}
+        {
+          "option_text": "2 : 1",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 1",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 : 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Selling price ₹480 at 20% gain → cost of mixture = 480/1.20 = ₹400/kg. Using alligation — ratio = (500 − 400) : (400 − 300) = 100 : 100 = 1 : 1. Verify: equal kg of each → mean price = (300 + 500)/2 = ₹400. ✓",
       "subject": "Quant",
       "topic": "Alligation II — mixed tiers",
-      "topic_code": "QNT_ALLIGATION_II_MIXED",
+      "topic_code": "QA_MIXTURE",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "The mean age of a class of 30 students is 14 years. When the class teacher's age is included, the mean rises to 15 years. What is the teacher's age?",
       "options": [
-        {"option_text": "30 years", "is_correct": false},
-        {"option_text": "45 years", "is_correct": true},
-        {"option_text": "42 years", "is_correct": false},
-        {"option_text": "40 years", "is_correct": false}
+        {
+          "option_text": "30 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 years",
+          "is_correct": true
+        },
+        {
+          "option_text": "42 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 years",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Sum of student ages = 30 × 14 = 420. After adding the teacher (31 people, mean 15), new sum = 31 × 15 = 465. Teacher's age = 465 − 420 = 45. Shortcut — adding one person raised the mean by 1 for 31 people, so teacher contributes 14 + 31 × 1 = 45 beyond the previous mean-line. ✓",
       "subject": "Quant",
       "topic": "Alligation II — mixed tiers",
-      "topic_code": "QNT_ALLIGATION_II_MIXED",
+      "topic_code": "QA_MIXTURE",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "A vessel contains 80 litres of milk. 8 litres of milk is removed and replaced with water, and this process is repeated once more. The quantity of pure milk remaining is:",
       "options": [
-        {"option_text": "64 litres", "is_correct": false},
-        {"option_text": "64.8 litres", "is_correct": true},
-        {"option_text": "72 litres", "is_correct": false},
-        {"option_text": "60 litres", "is_correct": false}
+        {
+          "option_text": "64 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "64.8 litres",
+          "is_correct": true
+        },
+        {
+          "option_text": "72 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 litres",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Formula: milk after n replacements = initial × (1 − r/V)ⁿ, where r = removed per operation, V = total volume. Here V = 80, r = 8, n = 2 → milk = 80 × (1 − 8/80)² = 80 × (0.9)² = 80 × 0.81 = 64.8 L. Each 8 L removed contains a mix of milk + water, so you never lose more than the fraction.",
       "subject": "Quant",
       "topic": "Alligation II — mixed tiers",
-      "topic_code": "QNT_ALLIGATION_II_MIXED",
+      "topic_code": "QA_MIXTURE",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,

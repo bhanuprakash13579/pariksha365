@@ -8,16 +8,28 @@
     {
       "stem": "Statements: All cats are dogs. All dogs are mice. Which conclusion follows?",
       "options": [
-        {"option_text": "Some cats are not mice", "is_correct": false},
-        {"option_text": "All cats are mice", "is_correct": true},
-        {"option_text": "No cat is a mouse", "is_correct": false},
-        {"option_text": "No dog is a cat", "is_correct": false}
+        {
+          "option_text": "Some cats are not mice",
+          "is_correct": false
+        },
+        {
+          "option_text": "All cats are mice",
+          "is_correct": true
+        },
+        {
+          "option_text": "No cat is a mouse",
+          "is_correct": false
+        },
+        {
+          "option_text": "No dog is a cat",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "TYPE 1 — universal affirmative chain. All A are B; all B are C → all A are C. Draw Venn: cats ⊆ dogs ⊆ mice, so cats ⊆ mice. The option 'all cats are mice' strictly follows.",
       "subject": "Reasoning",
       "topic": "Syllogism",
-      "topic_code": "REAS_SYLLOGISM",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Statements: Some pens are books. All books are papers. Which conclusion follows?",
       "options": [
-        {"option_text": "All pens are papers", "is_correct": false},
-        {"option_text": "Some pens are papers", "is_correct": true},
-        {"option_text": "No pen is a paper", "is_correct": false},
-        {"option_text": "All papers are pens", "is_correct": false}
+        {
+          "option_text": "All pens are papers",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some pens are papers",
+          "is_correct": true
+        },
+        {
+          "option_text": "No pen is a paper",
+          "is_correct": false
+        },
+        {
+          "option_text": "All papers are pens",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Chain I + A. Some pens are books; those books are papers; so those pens are papers → some pens are papers. 'All pens are papers' does NOT follow because only SOME pens are proven to be books.",
       "subject": "Reasoning",
       "topic": "Syllogism",
-      "topic_code": "REAS_SYLLOGISM",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Statements: No bird is a fish. All crows are birds. Which conclusion follows?",
       "options": [
-        {"option_text": "All crows are fish", "is_correct": false},
-        {"option_text": "No crow is a fish", "is_correct": true},
-        {"option_text": "Some crows are fish", "is_correct": false},
-        {"option_text": "All fish are crows", "is_correct": false}
+        {
+          "option_text": "All crows are fish",
+          "is_correct": false
+        },
+        {
+          "option_text": "No crow is a fish",
+          "is_correct": true
+        },
+        {
+          "option_text": "Some crows are fish",
+          "is_correct": false
+        },
+        {
+          "option_text": "All fish are crows",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "E + A → E. Crows are a subset of birds; birds are disjoint from fish; hence crows are disjoint from fish → no crow is a fish.",
       "subject": "Reasoning",
       "topic": "Syllogism",
-      "topic_code": "REAS_SYLLOGISM",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Statements: Some A are B. No B is C. Which conclusion follows?",
       "options": [
-        {"option_text": "Some A are C", "is_correct": false},
-        {"option_text": "Some A are not C", "is_correct": true},
-        {"option_text": "All A are C", "is_correct": false},
-        {"option_text": "No A is C", "is_correct": false}
+        {
+          "option_text": "Some A are C",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some A are not C",
+          "is_correct": true
+        },
+        {
+          "option_text": "All A are C",
+          "is_correct": false
+        },
+        {
+          "option_text": "No A is C",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "I + E → O. The A's that are B cannot be C (since B and C are disjoint). So at least some A's are not C. Stronger claims ('no A is C') don't follow because some A's might not be B and could still be C.",
       "subject": "Reasoning",
       "topic": "Syllogism",
-      "topic_code": "REAS_SYLLOGISM",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "Statements: All roses are flowers. Some flowers fade quickly. Which conclusion definitely follows?",
       "options": [
-        {"option_text": "All roses fade quickly", "is_correct": false},
-        {"option_text": "Some roses fade quickly", "is_correct": false},
-        {"option_text": "None of the above conclusions is definite", "is_correct": true},
-        {"option_text": "No rose fades quickly", "is_correct": false}
+        {
+          "option_text": "All roses fade quickly",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some roses fade quickly",
+          "is_correct": false
+        },
+        {
+          "option_text": "None of the above conclusions is definite",
+          "is_correct": true
+        },
+        {
+          "option_text": "No rose fades quickly",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "A + I does NOT yield a middle-term-linked conclusion because the 'some flowers' that fade may or may not be the roses. Venn admits both possibilities — so neither 'some roses fade' nor 'no rose fades' is certain. The test is rigour over intuition.",
       "subject": "Reasoning",
       "topic": "Syllogism",
-      "topic_code": "REAS_SYLLOGISM",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "MEDIUM",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "Statements: Some pencils are erasers. All erasers are sharpeners. Which conclusion follows?",
       "options": [
-        {"option_text": "All pencils are sharpeners", "is_correct": false},
-        {"option_text": "Some pencils are sharpeners", "is_correct": true},
-        {"option_text": "No pencil is a sharpener", "is_correct": false},
-        {"option_text": "All sharpeners are erasers", "is_correct": false}
+        {
+          "option_text": "All pencils are sharpeners",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some pencils are sharpeners",
+          "is_correct": true
+        },
+        {
+          "option_text": "No pencil is a sharpener",
+          "is_correct": false
+        },
+        {
+          "option_text": "All sharpeners are erasers",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "I + A chain. Some pencils are erasers, and all erasers are sharpeners → those pencils are sharpeners → some pencils are sharpeners. Do NOT upgrade to 'all' — only 'some' is proven.",
       "subject": "Reasoning",
       "topic": "Syllogism",
-      "topic_code": "REAS_SYLLOGISM",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Statements: All doctors are graduates. Some graduates are young. Which conclusion follows?",
       "options": [
-        {"option_text": "All doctors are young", "is_correct": false},
-        {"option_text": "Some doctors are young (possible only)", "is_correct": false},
-        {"option_text": "Neither 'some doctors are young' nor 'no doctor is young' is certain", "is_correct": true},
-        {"option_text": "No doctor is young", "is_correct": false}
+        {
+          "option_text": "All doctors are young",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some doctors are young (possible only)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither 'some doctors are young' nor 'no doctor is young' is certain",
+          "is_correct": true
+        },
+        {
+          "option_text": "No doctor is young",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "explanation": "Same A + I pattern as before — undistributed-middle-like issue. Young graduates may or may not overlap with the doctor subset. Neither option follows with certainty. Common exam trap: pick a 'some' answer that feels right but isn't justified.",
       "subject": "Reasoning",
       "topic": "Syllogism",
-      "topic_code": "REAS_SYLLOGISM",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "MEDIUM",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -155,16 +239,28 @@
     {
       "stem": "Statement 'Some apples are mangoes' also allows which conversion?",
       "options": [
-        {"option_text": "All mangoes are apples", "is_correct": false},
-        {"option_text": "Some mangoes are apples", "is_correct": true},
-        {"option_text": "No mango is an apple", "is_correct": false},
-        {"option_text": "All apples are mangoes", "is_correct": false}
+        {
+          "option_text": "All mangoes are apples",
+          "is_correct": false
+        },
+        {
+          "option_text": "Some mangoes are apples",
+          "is_correct": true
+        },
+        {
+          "option_text": "No mango is an apple",
+          "is_correct": false
+        },
+        {
+          "option_text": "All apples are mangoes",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Conversion rule for 'I' proposition: 'Some A are B' ↔ 'Some B are A'. This is always valid. Beware: 'All A are B' does NOT convert to 'All B are A'; it converts only to 'Some B are A'.",
       "subject": "Reasoning",
       "topic": "Syllogism",
-      "topic_code": "REAS_SYLLOGISM",
+      "topic_code": "RSN_SYLLOGISM",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,

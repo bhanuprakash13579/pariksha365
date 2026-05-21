@@ -8,16 +8,28 @@
     {
       "stem": "The price of a TV is increased by 25% and then decreased by 20%. The net change in price is:",
       "options": [
-        {"option_text": "5% net increase from price", "is_correct": false},
-        {"option_text": "No change in the final price", "is_correct": true},
-        {"option_text": "5% net decrease from price", "is_correct": false},
-        {"option_text": "10% net increase from price", "is_correct": false}
+        {
+          "option_text": "5% net increase from price",
+          "is_correct": false
+        },
+        {
+          "option_text": "No change in the final price",
+          "is_correct": true
+        },
+        {
+          "option_text": "5% net decrease from price",
+          "is_correct": false
+        },
+        {
+          "option_text": "10% net increase from price",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Successive change formula: a + b + ab/100 where a = +25, b = −20. Net = 25 − 20 + (25)(−20)/100 = 5 − 5 = 0%. Quick verify: 100 → 125 → 125 × 0.8 = 100. No net change. Distractor 5% increase = if you add only 25 − 20. Distractor 5% decrease = sign mistake. Distractor 10% = arbitrary.",
       "subject": "Quant",
       "topic": "Percentage IV — mixed tiers",
-      "topic_code": "QNT_PERCENTAGE_IV_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "If A's salary is 25% more than B's, by what percent is B's salary less than A's?",
       "options": [
-        {"option_text": "25% less salary than A's", "is_correct": false},
-        {"option_text": "20% less salary than A's", "is_correct": true},
-        {"option_text": "30% less salary than A's", "is_correct": false},
-        {"option_text": "15% less salary than A's", "is_correct": false}
+        {
+          "option_text": "25% less salary than A's",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% less salary than A's",
+          "is_correct": true
+        },
+        {
+          "option_text": "30% less salary than A's",
+          "is_correct": false
+        },
+        {
+          "option_text": "15% less salary than A's",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Let B = 100 → A = 125. B is less than A by (125 − 100)/125 × 100 = 25/125 × 100 = 20%. Shortcut: x% more = (x/(100+x)) × 100 less. Here = 25/125 × 100 = 20. Reverse percentages are NOT symmetric — common SSC trap.",
       "subject": "Quant",
       "topic": "Percentage IV — mixed tiers",
-      "topic_code": "QNT_PERCENTAGE_IV_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "In an exam, 35% of students failed in Maths, 25% failed in English, and 10% failed in BOTH. The percentage who passed in BOTH subjects is:",
       "options": [
-        {"option_text": "60% of the total students", "is_correct": false},
-        {"option_text": "50% of the total students", "is_correct": true},
-        {"option_text": "40% of the total students", "is_correct": false},
-        {"option_text": "65% of the total students", "is_correct": false}
+        {
+          "option_text": "60% of the total students",
+          "is_correct": false
+        },
+        {
+          "option_text": "50% of the total students",
+          "is_correct": true
+        },
+        {
+          "option_text": "40% of the total students",
+          "is_correct": false
+        },
+        {
+          "option_text": "65% of the total students",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Failed in at least one = 35 + 25 − 10 = 50% (inclusion-exclusion). So passed in both = 100 − 50 = 50%. Distractor 60% = if you forget the overlap subtraction. Distractor 40% = double subtraction. Distractor 65% = used 35% only.",
       "subject": "Quant",
       "topic": "Percentage IV — mixed tiers",
-      "topic_code": "QNT_PERCENTAGE_IV_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "If 60% of A = 75% of B, then A : B equals:",
       "options": [
-        {"option_text": "4 : 5 ratio of A to B", "is_correct": false},
-        {"option_text": "5 : 4 ratio of A to B", "is_correct": true},
-        {"option_text": "3 : 4 ratio of A to B", "is_correct": false},
-        {"option_text": "6 : 7 ratio of A to B", "is_correct": false}
+        {
+          "option_text": "4 : 5 ratio of A to B",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 : 4 ratio of A to B",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 : 4 ratio of A to B",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 : 7 ratio of A to B",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "60A/100 = 75B/100 → 60A = 75B → A/B = 75/60 = 5/4. So A : B = 5 : 4. Cross-check: 60% of 5 = 3; 75% of 4 = 3. ✓ Distractor 4 : 5 = inverted. Distractor 3 : 4 = unrelated. Distractor 6 : 7 = arbitrary.",
       "subject": "Quant",
       "topic": "Percentage IV — mixed tiers",
-      "topic_code": "QNT_PERCENTAGE_IV_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "A shopkeeper marks goods 40% above cost and offers 20% discount on marked price. His profit percent is:",
       "options": [
-        {"option_text": "20% gain on cost price now", "is_correct": false},
-        {"option_text": "12% gain on cost price now", "is_correct": true},
-        {"option_text": "8% gain on cost price now", "is_correct": false},
-        {"option_text": "16% gain on cost price now", "is_correct": false}
+        {
+          "option_text": "20% gain on cost price now",
+          "is_correct": false
+        },
+        {
+          "option_text": "12% gain on cost price now",
+          "is_correct": true
+        },
+        {
+          "option_text": "8% gain on cost price now",
+          "is_correct": false
+        },
+        {
+          "option_text": "16% gain on cost price now",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Let CP = 100. MP = 140. SP = 140 × 0.8 = 112. Profit = 12 → 12%. Successive form: Net = 40 − 20 + (40)(−20)/100 = 20 − 8 = 12%. ✓ Distractor 20% = no discount applied. Distractor 8% = sign error. Distractor 16% = used wrong factors.",
       "subject": "Quant",
       "topic": "Percentage IV — mixed tiers",
-      "topic_code": "QNT_PERCENTAGE_IV_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "When a number is increased by 20%, it becomes 144. The original number was:",
       "options": [
-        {"option_text": "120 was the original number", "is_correct": true},
-        {"option_text": "115 was the original number", "is_correct": false},
-        {"option_text": "125 was the original number", "is_correct": false},
-        {"option_text": "118 was the original number", "is_correct": false}
+        {
+          "option_text": "120 was the original number",
+          "is_correct": true
+        },
+        {
+          "option_text": "115 was the original number",
+          "is_correct": false
+        },
+        {
+          "option_text": "125 was the original number",
+          "is_correct": false
+        },
+        {
+          "option_text": "118 was the original number",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Let original = x. x × 1.20 = 144 → x = 144/1.2 = 120. Cross-check: 20% of 120 = 24, 120+24 = 144. ✓ Distractor 115 = 144 × 0.8. Distractor 125 = arbitrary. Distractor 118 = arbitrary.",
       "subject": "Quant",
       "topic": "Percentage IV — mixed tiers",
-      "topic_code": "QNT_PERCENTAGE_IV_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "A man's salary is increased by 10% and then decreased by 10%. His net loss/gain percent is:",
       "options": [
-        {"option_text": "Exactly no change in salary", "is_correct": false},
-        {"option_text": "1% net loss in salary", "is_correct": true},
-        {"option_text": "1% net gain in salary", "is_correct": false},
-        {"option_text": "2% net loss in salary", "is_correct": false}
+        {
+          "option_text": "Exactly no change in salary",
+          "is_correct": false
+        },
+        {
+          "option_text": "1% net loss in salary",
+          "is_correct": true
+        },
+        {
+          "option_text": "1% net gain in salary",
+          "is_correct": false
+        },
+        {
+          "option_text": "2% net loss in salary",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Successive: a = +10, b = −10. Net = 10 − 10 + (10)(−10)/100 = 0 − 1 = −1%. So 1% LOSS. Quick verify: 100 → 110 → 110 × 0.9 = 99 → 1% loss. SSC favourite trap (equal % up/down ≠ no change).",
       "subject": "Quant",
       "topic": "Percentage IV — mixed tiers",
-      "topic_code": "QNT_PERCENTAGE_IV_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,

@@ -8,16 +8,28 @@
     {
       "stem": "The HCF (Highest Common Factor) of 24 and 36 is:",
       "options": [
-        {"option_text": "6", "is_correct": false},
-        {"option_text": "12", "is_correct": true},
-        {"option_text": "8", "is_correct": false},
-        {"option_text": "72", "is_correct": false}
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "72",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Prime factorise: 24 = 2³ × 3, 36 = 2² × 3². HCF = product of LOWEST powers of common primes = 2² × 3¹ = 12. LCM = product of HIGHEST powers = 2³ × 3² = 72. Check: HCF × LCM = 12 × 72 = 864 = 24 × 36 ✓ (always holds for two numbers). Quick verification: 24 = 12 × 2, 36 = 12 × 3 — both divisible by 12 with no common factor in the quotients (2 and 3 are coprime).",
       "subject": "Quantitative Aptitude",
       "topic": "HCF and LCM — mixed tiers",
-      "topic_code": "QNT_HCF_LCM_III_MIXED",
+      "topic_code": "QA_HCF_LCM",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "The LCM of 12, 15, and 20 is:",
       "options": [
-        {"option_text": "30", "is_correct": false},
-        {"option_text": "60", "is_correct": true},
-        {"option_text": "120", "is_correct": false},
-        {"option_text": "180", "is_correct": false}
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "180",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Prime factorise: 12 = 2² × 3, 15 = 3 × 5, 20 = 2² × 5. LCM = highest power of each prime = 2² × 3 × 5 = 60. Verify: 60/12 = 5 ✓, 60/15 = 4 ✓, 60/20 = 3 ✓ — divisible by all three with quotients (5, 4, 3) sharing no common factor → 60 is the SMALLEST such number.",
       "subject": "Quantitative Aptitude",
       "topic": "HCF and LCM — mixed tiers",
-      "topic_code": "QNT_HCF_LCM_III_MIXED",
+      "topic_code": "QA_HCF_LCM",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "What is the smallest number that, when divided by 12, 16, and 20, leaves a remainder of 4 in each case?",
       "options": [
-        {"option_text": "204", "is_correct": false},
-        {"option_text": "244", "is_correct": true},
-        {"option_text": "200", "is_correct": false},
-        {"option_text": "300", "is_correct": false}
+        {
+          "option_text": "204",
+          "is_correct": false
+        },
+        {
+          "option_text": "244",
+          "is_correct": true
+        },
+        {
+          "option_text": "200",
+          "is_correct": false
+        },
+        {
+          "option_text": "300",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "When the same remainder is left, required number = LCM(divisors) + remainder. LCM(12, 16, 20). Factorise: 12 = 2²·3; 16 = 2⁴; 20 = 2²·5. LCM = 2⁴ · 3 · 5 = 240. Add remainder 4 → 244. Verify: 244/12 = 20 r 4 ✓; 244/16 = 15 r 4 ✓; 244/20 = 12 r 4 ✓.",
       "subject": "Quantitative Aptitude",
       "topic": "HCF and LCM — mixed tiers",
-      "topic_code": "QNT_HCF_LCM_III_MIXED",
+      "topic_code": "QA_HCF_LCM",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Three bells ring at intervals of 9, 12 and 15 minutes. They ring together at 9:00 a.m. After how long do they ring together again?",
       "options": [
-        {"option_text": "30 minutes", "is_correct": false},
-        {"option_text": "180 minutes (= 3 hours)", "is_correct": true},
-        {"option_text": "60 minutes", "is_correct": false},
-        {"option_text": "45 minutes", "is_correct": false}
+        {
+          "option_text": "30 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "180 minutes (= 3 hours)",
+          "is_correct": true
+        },
+        {
+          "option_text": "60 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 minutes",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Bells ring together again after LCM of intervals. LCM(9, 12, 15). 9 = 3², 12 = 2²·3, 15 = 3·5. LCM = 2² · 3² · 5 = 180 minutes = 3 hours. So next together at 12:00 noon.",
       "subject": "Quantitative Aptitude",
       "topic": "HCF and LCM — mixed tiers",
-      "topic_code": "QNT_HCF_LCM_III_MIXED",
+      "topic_code": "QA_HCF_LCM",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "Find the largest number that exactly divides 91, 156, and 247.",
       "options": [
-        {"option_text": "11", "is_correct": false},
-        {"option_text": "13", "is_correct": true},
-        {"option_text": "17", "is_correct": false},
-        {"option_text": "19", "is_correct": false}
+        {
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "option_text": "13",
+          "is_correct": true
+        },
+        {
+          "option_text": "17",
+          "is_correct": false
+        },
+        {
+          "option_text": "19",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Find HCF of three numbers. Use Euclidean algorithm: HCF(91, 156). 156 = 91 × 1 + 65; 91 = 65 × 1 + 26; 65 = 26 × 2 + 13; 26 = 13 × 2 + 0 → HCF = 13. Now HCF(13, 247): 247 = 13 × 19 → divisible. So HCF(91, 156, 247) = 13. Verify: 91 = 7 × 13; 156 = 12 × 13; 247 = 19 × 13 ✓.",
       "subject": "Quantitative Aptitude",
       "topic": "HCF and LCM — mixed tiers",
-      "topic_code": "QNT_HCF_LCM_III_MIXED",
+      "topic_code": "QA_HCF_LCM",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "The product of two numbers is 1,440 and their LCM is 240. The HCF is:",
       "options": [
-        {"option_text": "5", "is_correct": false},
-        {"option_text": "6", "is_correct": true},
-        {"option_text": "8", "is_correct": false},
-        {"option_text": "12", "is_correct": false}
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "For any two positive integers: HCF × LCM = product of the numbers. So 240 × HCF = 1440 → HCF = 1440/240 = 6. The two numbers could be (6, 240), (12, 120), (24, 60), (48, 30) — all pairs whose product is 1440 and HCF is 6 must satisfy LCM = 240. Verify with (24, 60): HCF(24, 60) = 12 (not 6) — so this pair fails; only (30, 48) and similar pairs satisfy both conditions exactly.",
       "subject": "Quantitative Aptitude",
       "topic": "HCF and LCM — mixed tiers",
-      "topic_code": "QNT_HCF_LCM_III_MIXED",
+      "topic_code": "QA_HCF_LCM",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Find the LCM of two numbers if their HCF is 5 and the numbers themselves are 25 and 30.",
       "options": [
-        {"option_text": "50", "is_correct": false},
-        {"option_text": "150", "is_correct": true},
-        {"option_text": "750", "is_correct": false},
-        {"option_text": "60", "is_correct": false}
+        {
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "option_text": "150",
+          "is_correct": true
+        },
+        {
+          "option_text": "750",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "HCF × LCM = product of the numbers. 5 × LCM = 25 × 30 = 750 → LCM = 150. Verify: 25 = 5² and 30 = 2·3·5. LCM = 2·3·5² = 150 ✓. Check HCF: only common prime power is 5¹ → HCF = 5 ✓.",
       "subject": "Quantitative Aptitude",
       "topic": "HCF and LCM — mixed tiers",
-      "topic_code": "QNT_HCF_LCM_III_MIXED",
+      "topic_code": "QA_HCF_LCM",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,

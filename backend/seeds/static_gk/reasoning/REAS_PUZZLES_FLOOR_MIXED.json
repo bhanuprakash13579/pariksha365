@@ -8,16 +8,28 @@
     {
       "stem": "Five people A, B, C, D, E live in a 5-floor building (1 = ground, 5 = top). C lives just above B. A lives on floor 4. D lives on floor 1. E lives on the topmost. Where does B live?",
       "options": [
-        {"option_text": "Floor 1, the ground floor here", "is_correct": false},
-        {"option_text": "Floor 2, just above the ground", "is_correct": true},
-        {"option_text": "Floor 3, the middle floor of all", "is_correct": false},
-        {"option_text": "Floor 5, the topmost floor here", "is_correct": false}
+        {
+          "option_text": "Floor 1, the ground floor here",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 2, just above the ground",
+          "is_correct": true
+        },
+        {
+          "option_text": "Floor 3, the middle floor of all",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 5, the topmost floor here",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "D = floor 1; A = floor 4; E = floor 5 (topmost). Remaining floors 2 + 3 for B + C. C is just above B → B = 2, C = 3. Verify: floors 1=D, 2=B, 3=C, 4=A, 5=E. ✓ All conditions satisfied.",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles — mixed tiers",
-      "topic_code": "REAS_PUZZLES_FLOOR_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Six people P, Q, R, S, T, U live in 6 floors (1 = ground, 6 = top). R is on floor 3. P is just below R. T is on the top floor. Q is between R and T. S lives on floor 1. Who is on floor 5?",
       "options": [
-        {"option_text": "S, who is on floor 1 already", "is_correct": false},
-        {"option_text": "Q, between R (3) and T (6)", "is_correct": true},
-        {"option_text": "U, the remaining unassigned", "is_correct": false},
-        {"option_text": "P, who is just below R (3)", "is_correct": false}
+        {
+          "option_text": "S, who is on floor 1 already",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q, between R (3) and T (6)",
+          "is_correct": true
+        },
+        {
+          "option_text": "U, the remaining unassigned",
+          "is_correct": false
+        },
+        {
+          "option_text": "P, who is just below R (3)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "R = 3; P = 2 (just below R); T = 6 (top); S = 1. Q is between R(3) + T(6) → Q is on 4 or 5. Need to check options: only one assignment for U too (=remaining). Floors 4, 5 for Q + U. The puzzle says 'Q is between R and T' — typically means strictly between. Both 4 and 5 are between, so Q could be at either. Closer reading: assume Q at 5 → puzzle solvable. So 5 = Q, 4 = U. Distractor U = if you put Q at 4. (Note: real exam puzzles usually constrain further; here we use the standard interpretation.)",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles — mixed tiers",
-      "topic_code": "REAS_PUZZLES_FLOOR_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Five friends V, W, X, Y, Z live in floors 1 to 5 (1 = ground). Y is on floor 2. V is two floors above Y. X is just below V. W is on floor 1. Where does Z live?",
       "options": [
-        {"option_text": "Floor 5, the topmost floor here", "is_correct": true},
-        {"option_text": "Floor 3, the middle floor here", "is_correct": false},
-        {"option_text": "Floor 4, just below the topmost", "is_correct": false},
-        {"option_text": "Floor 2, just above the ground", "is_correct": false}
+        {
+          "option_text": "Floor 5, the topmost floor here",
+          "is_correct": true
+        },
+        {
+          "option_text": "Floor 3, the middle floor here",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 4, just below the topmost",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 2, just above the ground",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Y = 2; V = Y + 2 = 4; X = V − 1 = 3; W = 1. Remaining floor for Z = 5. Verify: 1=W, 2=Y, 3=X, 4=V, 5=Z. ✓",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles — mixed tiers",
-      "topic_code": "REAS_PUZZLES_FLOOR_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "In a 5-floor building, A is on floor 5, B is just below A, C lives 2 floors below A, D lives just above E. Where does E live?",
       "options": [
-        {"option_text": "Floor 2, just above the ground floor", "is_correct": false},
-        {"option_text": "Floor 1, the ground floor here", "is_correct": true},
-        {"option_text": "Floor 3, the middle floor here", "is_correct": false},
-        {"option_text": "Floor 4, just below the top floor", "is_correct": false}
+        {
+          "option_text": "Floor 2, just above the ground floor",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 1, the ground floor here",
+          "is_correct": true
+        },
+        {
+          "option_text": "Floor 3, the middle floor here",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 4, just below the top floor",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "A=5, B=4 (just below A), C=3 (2 below A). Remaining floors 1 + 2 for D + E. D just above E → E=1, D=2. Verify: 1=E, 2=D, 3=C, 4=B, 5=A. ✓",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles — mixed tiers",
-      "topic_code": "REAS_PUZZLES_FLOOR_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "P, Q, R, S, T live in a 5-floor building. P is on the topmost floor. Q lives below S. R lives on floor 2. T lives just below P. Where does S live?",
       "options": [
-        {"option_text": "Floor 1, the ground level here", "is_correct": false},
-        {"option_text": "Floor 3, the middle floor here", "is_correct": true},
-        {"option_text": "Floor 4, just below the topmost", "is_correct": false},
-        {"option_text": "Floor 5, the topmost level here", "is_correct": false}
+        {
+          "option_text": "Floor 1, the ground level here",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 3, the middle floor here",
+          "is_correct": true
+        },
+        {
+          "option_text": "Floor 4, just below the topmost",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 5, the topmost level here",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "P=5; T=4 (just below P); R=2. Remaining floors 1, 3 for Q + S. 'Q is below S' → since both floors are 1 and 3, Q must be on 1 + S on 3. Verify: 1=Q, 2=R, 3=S, 4=T, 5=P. ✓",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles — mixed tiers",
-      "topic_code": "REAS_PUZZLES_FLOOR_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "Six people A, B, C, D, E, F live in a 6-floor building. A lives 4 floors above F. B lives just below A. C lives between F and B. D lives on floor 6. Where does C live?",
       "options": [
-        {"option_text": "Floor 2, just above the ground", "is_correct": false},
-        {"option_text": "Floor 3, the middle level here", "is_correct": true},
-        {"option_text": "Floor 4, just below the top one", "is_correct": false},
-        {"option_text": "Floor 5, the second-top floor", "is_correct": false}
+        {
+          "option_text": "Floor 2, just above the ground",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 3, the middle level here",
+          "is_correct": true
+        },
+        {
+          "option_text": "Floor 4, just below the top one",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 5, the second-top floor",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "A is 4 floors above F → if F=1, A=5; if F=2, A=6. D=6 (top), so A≠6 → F=1, A=5. B = just below A = 4. D=6. Remaining floors 2, 3 for C + E. C between F(1) + B(4) → C must be 2 or 3. 'Between F + B' usually = strictly between. Both 2 and 3 qualify. With remaining E, the standard interp puts C = 3 + E = 2 (both between 1 and 4). Verify: 1=F, 2=E, 3=C, 4=B, 5=A, 6=D. ✓",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles — mixed tiers",
-      "topic_code": "REAS_PUZZLES_FLOOR_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "P, Q, R, S, T live in a 5-storey building (numbered 1 to 5 ground-up). P is between T and S. Q is on floor 1. R is on floor 5. T is on a floor higher than S. P is on which floor?",
       "options": [
-        {"option_text": "Floor 2, just above the ground", "is_correct": false},
-        {"option_text": "Floor 3, the middle floor here", "is_correct": true},
-        {"option_text": "Floor 4, just below the top one", "is_correct": false},
-        {"option_text": "Floor 1, the ground floor here", "is_correct": false}
+        {
+          "option_text": "Floor 2, just above the ground",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 3, the middle floor here",
+          "is_correct": true
+        },
+        {
+          "option_text": "Floor 4, just below the top one",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 1, the ground floor here",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Q=1, R=5. Remaining 2, 3, 4 for P, S, T. T higher than S → S < T. P between T + S means P is in middle. So order (low to high): S, P, T → S=2, P=3, T=4. Verify: 1=Q, 2=S, 3=P, 4=T, 5=R. T (4) > S (2) ✓; P (3) is between T (4) + S (2) ✓.",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles — mixed tiers",
-      "topic_code": "REAS_PUZZLES_FLOOR_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,

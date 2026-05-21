@@ -8,16 +8,28 @@
     {
       "stem": "Average of first 5 multiples of 3 is:",
       "options": [
-        {"option_text": "9 average of multiples", "is_correct": true},
-        {"option_text": "7 average of multiples", "is_correct": false},
-        {"option_text": "12 average of multiples", "is_correct": false},
-        {"option_text": "15 average of multiples", "is_correct": false}
+        {
+          "option_text": "9 average of multiples",
+          "is_correct": true
+        },
+        {
+          "option_text": "7 average of multiples",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 average of multiples",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 average of multiples",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "First 5 multiples of 3: 3, 6, 9, 12, 15. Sum = 45. Average = 45/5 = 9. SHORTCUT FORMULA: average of first n multiples of k = k(n+1)/2. So 3(5+1)/2 = 9. INSIGHT — same shortcut applied to first n natural numbers (k=1): avg = (n+1)/2; first n even numbers (k=2): avg = (n+1); first n odd numbers: avg = n.",
       "subject": "Quant",
       "topic": "Averages IV — mixed tiers",
-      "topic_code": "QNT_AVERAGES_IV_MIXED",
+      "topic_code": "QA_AVERAGE",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Average of 30 students is 15. If teacher's age (45) is included, new average is:",
       "options": [
-        {"option_text": "15 (no change occurs)", "is_correct": false},
-        {"option_text": "16 (slight bump up)", "is_correct": true},
-        {"option_text": "20 (much bigger bump)", "is_correct": false},
-        {"option_text": "30 (impossibly high)", "is_correct": false}
+        {
+          "option_text": "15 (no change occurs)",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 (slight bump up)",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 (much bigger bump)",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 (impossibly high)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Total of 30 students = 30 × 15 = 450. New total (with teacher) = 450 + 45 = 495. New count = 31. New avg = 495/31 ≈ 15.97 ≈ 16. SHORTCUT — when adding new value v to set with avg a + count n: new avg = (na + v)/(n+1). When v > a, avg goes up; when v < a, avg goes down. INSIGHT: a single 'outlier' (here teacher age 45 vs students 15) PULLS the average toward itself — a key feature of arithmetic mean (vs MEDIAN, which is robust to outliers).",
       "subject": "Quant",
       "topic": "Averages IV — mixed tiers",
-      "topic_code": "QNT_AVERAGES_IV_MIXED",
+      "topic_code": "QA_AVERAGE",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Average of 6 numbers is 25. If one number 35 is removed, average of remaining 5 is:",
       "options": [
-        {"option_text": "23 (the new average value)", "is_correct": true},
-        {"option_text": "20 (the new average value)", "is_correct": false},
-        {"option_text": "27 (the new average value)", "is_correct": false},
-        {"option_text": "30 (the new average value)", "is_correct": false}
+        {
+          "option_text": "23 (the new average value)",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 (the new average value)",
+          "is_correct": false
+        },
+        {
+          "option_text": "27 (the new average value)",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 (the new average value)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Total of 6 = 6 × 25 = 150. After removing 35: total = 150 − 35 = 115. New count = 5. New avg = 115/5 = 23. SHORTCUT — removing a value v from a set with avg a, count n: new avg = (na − v)/(n−1). Here 35 > 25 (the removed value > avg), so new avg DECREASES. Mirror image of Q2.",
       "subject": "Quant",
       "topic": "Averages IV — mixed tiers",
-      "topic_code": "QNT_AVERAGES_IV_MIXED",
+      "topic_code": "QA_AVERAGE",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Average weight of 4 boys is 50 kg. After 5th boy joins, new average is 52 kg. Weight of 5th boy is:",
       "options": [
-        {"option_text": "60 kg (5th boy weight)", "is_correct": true},
-        {"option_text": "55 kg (5th boy weight)", "is_correct": false},
-        {"option_text": "52 kg (5th boy weight)", "is_correct": false},
-        {"option_text": "65 kg (5th boy weight)", "is_correct": false}
+        {
+          "option_text": "60 kg (5th boy weight)",
+          "is_correct": true
+        },
+        {
+          "option_text": "55 kg (5th boy weight)",
+          "is_correct": false
+        },
+        {
+          "option_text": "52 kg (5th boy weight)",
+          "is_correct": false
+        },
+        {
+          "option_text": "65 kg (5th boy weight)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Old total = 4 × 50 = 200. New total = 5 × 52 = 260. 5th boy = 260 − 200 = 60 kg. SHORTCUT METHOD: new avg − old avg = 2 → 5th boy must add (n × Δ avg) = 4 × 2 = 8 above NEW avg, so 5th boy = 52 + 8 = 60. (Logic: new boy's weight raises avg of 4 by 2 each → adds 8 to total + himself = own weight = new avg + 8 = 60.) INSIGHT — REPLACEMENT problems: change in total = change in avg × count.",
       "subject": "Quant",
       "topic": "Averages IV — mixed tiers",
-      "topic_code": "QNT_AVERAGES_IV_MIXED",
+      "topic_code": "QA_AVERAGE",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "WEIGHTED average of marks: a class has 30 boys (avg 70) + 20 girls (avg 80). Class average is:",
       "options": [
-        {"option_text": "74 weighted average value", "is_correct": true},
-        {"option_text": "75 simple-average wrong here", "is_correct": false},
-        {"option_text": "72 weighted average value", "is_correct": false},
-        {"option_text": "78 weighted average value", "is_correct": false}
+        {
+          "option_text": "74 weighted average value",
+          "is_correct": true
+        },
+        {
+          "option_text": "75 simple-average wrong here",
+          "is_correct": false
+        },
+        {
+          "option_text": "72 weighted average value",
+          "is_correct": false
+        },
+        {
+          "option_text": "78 weighted average value",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Weighted Avg = (n₁a₁ + n₂a₂)/(n₁ + n₂) = (30×70 + 20×80)/(30+20) = (2100 + 1600)/50 = 3700/50 = 74. SHORTCUT — alligation rule: ratio of distance from each group's avg to overall avg = INVERSE of group sizes. Here boys:girls = 3:2, so distances are 2:3. Total range = 80−70 = 10; split 4 (boys) + 6 (girls) → boys avg + 4 = 74; girls avg − 6 = 74 ✓. INSIGHT — simple AVG (75) is wrong because groups are different sizes; always use WEIGHTED.",
       "subject": "Quant",
       "topic": "Averages IV — mixed tiers",
-      "topic_code": "QNT_AVERAGES_IV_MIXED",
+      "topic_code": "QA_AVERAGE",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "Average of 11 consecutive integers is 16. The smallest integer in the set is:",
       "options": [
-        {"option_text": "11 smallest integer here", "is_correct": true},
-        {"option_text": "10 smallest integer here", "is_correct": false},
-        {"option_text": "12 smallest integer here", "is_correct": false},
-        {"option_text": "16 smallest integer here", "is_correct": false}
+        {
+          "option_text": "11 smallest integer here",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 smallest integer here",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 smallest integer here",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 smallest integer here",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "For CONSECUTIVE integers (or arithmetic series), AVERAGE = MIDDLE element = MEDIAN. With 11 numbers, middle = 6th. So 6th integer = 16. Sequence: ..., 14, 15, 16, 17, 18, ... → smallest (1st) = 16 − 5 = 11. SHORTCUT for n consecutive integers with avg a: range from (a − (n−1)/2) to (a + (n−1)/2). Here 16 − 5 to 16 + 5 = 11 to 21.",
       "subject": "Quant",
       "topic": "Averages IV — mixed tiers",
-      "topic_code": "QNT_AVERAGES_IV_MIXED",
+      "topic_code": "QA_AVERAGE",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "A car covers 300 km at 60 km/h + returns at 40 km/h. Average speed of round trip is:",
       "options": [
-        {"option_text": "48 km/h (harmonic mean)", "is_correct": true},
-        {"option_text": "50 km/h (arithmetic mean)", "is_correct": false},
-        {"option_text": "45 km/h arbitrary value", "is_correct": false},
-        {"option_text": "52 km/h arbitrary value", "is_correct": false}
+        {
+          "option_text": "48 km/h (harmonic mean)",
+          "is_correct": true
+        },
+        {
+          "option_text": "50 km/h (arithmetic mean)",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 km/h arbitrary value",
+          "is_correct": false
+        },
+        {
+          "option_text": "52 km/h arbitrary value",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Equal-distance trips at different speeds → AVERAGE = HARMONIC MEAN of two speeds = 2ab/(a+b) = 2×60×40/(60+40) = 4800/100 = 48 km/h. INSIGHT: ARITHMETIC MEAN (50) WRONG here — because equal-distance journeys spend MORE TIME on slower segment, biasing avg DOWN toward slower speed. KEY DISTINCTION: equal TIMES → arithmetic mean; equal DISTANCES → harmonic mean. PYQ classic trap.",
       "subject": "Quant",
       "topic": "Averages IV — mixed tiers",
-      "topic_code": "QNT_AVERAGES_IV_MIXED",
+      "topic_code": "QA_AVERAGE",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,

@@ -8,16 +8,28 @@
     {
       "stem": "Five people A, B, C, D, E live on 5 different floors of a building (1 = lowest, 5 = topmost). A lives on the topmost floor. B lives on floor 2. C lives just below D. E lives on:",
       "options": [
-        {"option_text": "Floor 1", "is_correct": true},
-        {"option_text": "Floor 3", "is_correct": false},
-        {"option_text": "Floor 4", "is_correct": false},
-        {"option_text": "Floor 5", "is_correct": false}
+        {
+          "option_text": "Floor 1",
+          "is_correct": true
+        },
+        {
+          "option_text": "Floor 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 4",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 5",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "A = 5, B = 2. Remaining floors {1, 3, 4} for C, D, E. C is just below D → C = D − 1. From {1, 3, 4}, consecutive pairs are only (3, 4). So C = 3, D = 4. E gets the leftover floor = 1.",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles II — mixed tiers",
-      "topic_code": "REAS_PUZZLE_FLOOR_II_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Four friends P, Q, R, S live on 4 floors (1 lowest, 4 topmost). P lives on the topmost. Q lives on floor 1. R lives just below S. R lives on:",
       "options": [
-        {"option_text": "Floor 1", "is_correct": false},
-        {"option_text": "Floor 2", "is_correct": true},
-        {"option_text": "Floor 3", "is_correct": false},
-        {"option_text": "Floor 4", "is_correct": false}
+        {
+          "option_text": "Floor 1",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 2",
+          "is_correct": true
+        },
+        {
+          "option_text": "Floor 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "P = 4, Q = 1. Remaining {2, 3} for R, S. R = S − 1 → (R, S) = (2, 3). Hence R lives on floor 2 and S on floor 3.",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles II — mixed tiers",
-      "topic_code": "REAS_PUZZLE_FLOOR_II_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Six persons of different professions live on 6 floors (1 lowest, 6 topmost). The Pilot lives on floor 1. The Doctor lives on floor 4. The Engineer lives two floors above the Artist. The Teacher lives just above the Engineer. The Lawyer lives on the remaining floor. On which floor does the Lawyer live?",
       "options": [
-        {"option_text": "Floor 2", "is_correct": true},
-        {"option_text": "Floor 3", "is_correct": false},
-        {"option_text": "Floor 5", "is_correct": false},
-        {"option_text": "Floor 6", "is_correct": false}
+        {
+          "option_text": "Floor 2",
+          "is_correct": true
+        },
+        {
+          "option_text": "Floor 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 5",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 6",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Pilot = 1, Doctor = 4. Available {2, 3, 5, 6} for Artist, Engineer, Teacher, Lawyer. Engineer = Artist + 2; from {2, 3, 5, 6} with gap 2: (3, 5). So Artist = 3, Engineer = 5. Teacher = Engineer + 1 = 6. Lawyer gets the remaining floor = 2. Final: Pilot 1, Lawyer 2, Artist 3, Doctor 4, Engineer 5, Teacher 6.",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles II — mixed tiers",
-      "topic_code": "REAS_PUZZLE_FLOOR_II_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Five students V, W, X, Y, Z live on 5 different floors (1 lowest, 5 topmost). V lives just above W. X lives on an even-numbered floor. Y lives on floor 5. Z lives on floor 1. V lives on which floor?",
       "options": [
-        {"option_text": "Floor 2", "is_correct": false},
-        {"option_text": "Floor 3", "is_correct": true},
-        {"option_text": "Floor 4", "is_correct": false},
-        {"option_text": "Floor 5", "is_correct": false}
+        {
+          "option_text": "Floor 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 3",
+          "is_correct": true
+        },
+        {
+          "option_text": "Floor 4",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 5",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Y = 5, Z = 1. Available {2, 3, 4} for V, W, X. X is on an even floor → X = 2 or 4. V = W + 1. If X = 2 → V, W from {3, 4} → W = 3, V = 4 ✓. If X = 4 → V, W from {2, 3} → W = 2, V = 3 ✓. Two solutions — to disambiguate, exam standard takes the case where V is the LOWER possibility (3) when both fit; the official answer is V = 3.",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles II — mixed tiers",
-      "topic_code": "REAS_PUZZLE_FLOOR_II_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "Seven persons K, L, M, N, O, P, Q live on 7 floors (1 lowest, 7 topmost). K lives on floor 4. L lives 3 floors above K. M lives just below K. N lives on floor 1. O lives just above N. P lives just below L. Q lives on the remaining floor. Q lives on:",
       "options": [
-        {"option_text": "Floor 2", "is_correct": false},
-        {"option_text": "Floor 5", "is_correct": true},
-        {"option_text": "Floor 6", "is_correct": false},
-        {"option_text": "Floor 7", "is_correct": false}
+        {
+          "option_text": "Floor 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 5",
+          "is_correct": true
+        },
+        {
+          "option_text": "Floor 6",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 7",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "K = 4. L = K + 3 = 7. M = K − 1 = 3. N = 1. O = N + 1 = 2. P = L − 1 = 6. Q gets the remaining floor = 5. Final layout (1 → 7): N, O, M, K, Q, P, L.",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles II — mixed tiers",
-      "topic_code": "REAS_PUZZLE_FLOOR_II_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "In a 5-storey building (1 lowest, 5 topmost) live A, B, C, D, E. The order from BOTTOM to TOP is C, A, E, B, D. Who lives just above E?",
       "options": [
-        {"option_text": "A", "is_correct": false},
-        {"option_text": "B", "is_correct": true},
-        {"option_text": "C", "is_correct": false},
-        {"option_text": "D", "is_correct": false}
+        {
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "option_text": "B",
+          "is_correct": true
+        },
+        {
+          "option_text": "C",
+          "is_correct": false
+        },
+        {
+          "option_text": "D",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Floors 1→5 from bottom to top: C, A, E, B, D. So C=1, A=2, E=3, B=4, D=5. The person just above E (3) is on floor 4 = B.",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles II — mixed tiers",
-      "topic_code": "REAS_PUZZLE_FLOOR_II_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Six persons live on 6 floors of a building (1 = lowest, 6 = topmost). The Doctor lives on floor 6. The Engineer lives just below the Doctor. The Teacher lives on floor 1. The Pilot lives just above the Teacher. The Architect lives on floor 4. Where does the Lawyer live?",
       "options": [
-        {"option_text": "Floor 2 (Pilot)", "is_correct": false},
-        {"option_text": "Floor 3", "is_correct": true},
-        {"option_text": "Floor 4 (Architect)", "is_correct": false},
-        {"option_text": "Floor 5 (Engineer)", "is_correct": false}
+        {
+          "option_text": "Floor 2 (Pilot)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 3",
+          "is_correct": true
+        },
+        {
+          "option_text": "Floor 4 (Architect)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Floor 5 (Engineer)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Doctor = 6. Engineer = Doctor − 1 = 5. Teacher = 1. Pilot = Teacher + 1 = 2. Architect = 4. Lawyer gets the remaining floor = 3. Final layout: Teacher 1, Pilot 2, Lawyer 3, Architect 4, Engineer 5, Doctor 6.",
       "subject": "Reasoning",
       "topic": "Floor / building puzzles II — mixed tiers",
-      "topic_code": "REAS_PUZZLE_FLOOR_II_MIXED",
+      "topic_code": "RSN_PUZZLES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,

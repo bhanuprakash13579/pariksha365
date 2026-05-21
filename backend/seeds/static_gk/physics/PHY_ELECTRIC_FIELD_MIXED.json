@@ -8,16 +8,28 @@
     {
       "stem": "What is the SI unit of electric field intensity?",
       "options": [
-        {"option_text": "Newton per Coulomb (N/C)", "is_correct": true},
-        {"option_text": "Coulomb per Newton (C/N)", "is_correct": false},
-        {"option_text": "Joule per Coulomb (J/C) alone", "is_correct": false},
-        {"option_text": "Coulomb per second (C/s).", "is_correct": false}
+        {
+          "option_text": "Newton per Coulomb (N/C)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Coulomb per Newton (C/N)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Joule per Coulomb (J/C) alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Coulomb per second (C/s).",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "ELECTRIC FIELD E is defined as force per unit positive test charge: E = F/q. SI UNIT: Newton/Coulomb (N/C), equivalent to Volt/metre (V/m) — the EQUIVALENT unit. DERIVATION OF V/m: V = J/C, and J = N·m, so V/m = (N·m/C)/m = N/C ✓. KEY FORMULAS: (1) For a point charge Q at distance r: E = kQ/r² (where k = 1/(4πε₀) ≈ 9×10⁹ Nm²/C²). (2) Field due to infinite plane: E = σ/(2ε₀). (3) Inside a parallel-plate capacitor: E = V/d. SCALES — typical electric fields: dry air's BREAKDOWN field = 3 × 10⁶ V/m (sparks fly above this); fluorescent tube interior ~10⁵ V/m; static-charged sweater ~10⁴ V/m; near a charged comb ~10³ V/m. APPLICATION: lightning discharge happens when atmospheric E exceeds ~3 MV/m (megavolt/metre). EXAM TIP: know N/C ≡ V/m; questions often switch between units. PYQ ANGLE: definitional Qs on E-field appear in JEE-Main, NEET, NCERT-driven SSC papers.",
       "subject": "Physics",
       "topic": "Electric Field",
-      "topic_code": "PHY_ELECTRIC_FIELD_MIXED",
+      "topic_code": "PHY_ELECTROSTATICS",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -29,16 +41,28 @@
     {
       "stem": "Two point charges of +4 μC and −4 μC are placed 0.1 m apart. The electric DIPOLE MOMENT is:",
       "options": [
-        {"option_text": "4 × 10⁻⁷ C·m, towards positive", "is_correct": true},
-        {"option_text": "4 × 10⁻⁵ C·m alone alone", "is_correct": false},
-        {"option_text": "Zero (cancelling charges) alone", "is_correct": false},
-        {"option_text": "0.4 C·m alone alone alone", "is_correct": false}
+        {
+          "option_text": "4 × 10⁻⁷ C·m, towards positive",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 × 10⁻⁵ C·m alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zero (cancelling charges) alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.4 C·m alone alone alone",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "DIPOLE MOMENT p = q × d, where q = magnitude of charge, d = separation distance. p = 4 × 10⁻⁶ C × 0.1 m = 4 × 10⁻⁷ C·m. DIRECTION: by convention, dipole moment points from NEGATIVE to POSITIVE charge. KEY POINTS ABOUT DIPOLES: (1) Net charge = 0, but field is NOT zero everywhere — strongest along the dipole axis. (2) Far-field E ∝ p/r³ (faster decay than point-charge 1/r²). (3) In an external uniform field, dipole experiences TORQUE τ = p × E (no net force, but rotates to align with E). REAL-WORLD: water molecule has dipole moment ~6.2 × 10⁻³⁰ C·m — that's why H₂O is a polar solvent (dissolves ionic compounds). HCl molecule = 3.6 × 10⁻³⁰ C·m. RADIO ANTENNAS: oscillating dipoles radiate EM waves — basis of all wireless communication. INSIGHT: 'Debye' (D) is a CGS unit = 3.336 × 10⁻³⁰ C·m, used in chemistry. PYQ FREQUENCY: 1 Q on dipoles per JEE-Main; less common in SSC/CGL.",
       "subject": "Physics",
       "topic": "Electric Field",
-      "topic_code": "PHY_ELECTRIC_FIELD_MIXED",
+      "topic_code": "PHY_ELECTROSTATICS",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -50,16 +74,28 @@
     {
       "stem": "Electric field lines (in a STATIC field) NEVER:",
       "options": [
-        {"option_text": "Cross each other anywhere in space", "is_correct": true},
-        {"option_text": "Begin from positive charges alone", "is_correct": false},
-        {"option_text": "End at negative charges alone", "is_correct": false},
-        {"option_text": "Are tangent to field at every point", "is_correct": false}
+        {
+          "option_text": "Cross each other anywhere in space",
+          "is_correct": true
+        },
+        {
+          "option_text": "Begin from positive charges alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "End at negative charges alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Are tangent to field at every point",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "PROPERTIES of electric field lines (Faraday's representation): (1) START at POSITIVE charges, END at NEGATIVE charges (or extend to infinity). (2) NEVER CROSS — because at any point, E has a UNIQUE direction; two crossing lines would mean two directions, impossible. (3) Density of lines reflects field STRENGTH. (4) Tangent to a field line at any point gives the direction of E at that point. (5) Field lines are CONTINUOUS curves — no breaks. (6) They DO NOT pass THROUGH a conductor (E = 0 inside conductors at equilibrium). INSIGHT: field lines are a VISUALIZATION tool, not real physical entities — the field exists everywhere in space; lines just represent it conveniently. ANALOG: gravitational field, magnetic field also have similar field-line concepts. NCERT CLASS 12 — Ch. 1 Electric Charges and Fields. EXAMINER MINDSET: tests CONCEPTUAL understanding of field-line properties — a perennial SSC, JEE, NEET MCQ favourite. PYQ FREQUENCY: 1 Q per JEE-Main paper on field-line properties.",
       "subject": "Physics",
       "topic": "Electric Field",
-      "topic_code": "PHY_ELECTRIC_FIELD_MIXED",
+      "topic_code": "PHY_ELECTROSTATICS",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -71,16 +107,28 @@
     {
       "stem": "Coulomb's law states that the force between two point charges is:",
       "options": [
-        {"option_text": "Inversely proportional to distance squared", "is_correct": true},
-        {"option_text": "Directly proportional to distance.", "is_correct": false},
-        {"option_text": "Inversely proportional to distance.", "is_correct": false},
-        {"option_text": "Proportional to charge sum only.", "is_correct": false}
+        {
+          "option_text": "Inversely proportional to distance squared",
+          "is_correct": true
+        },
+        {
+          "option_text": "Directly proportional to distance.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Inversely proportional to distance.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Proportional to charge sum only.",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "COULOMB'S LAW: F = k·q₁·q₂/r², where k = 1/(4πε₀) ≈ 9 × 10⁹ Nm²/C². Force is: (1) DIRECTLY proportional to product of charges. (2) INVERSELY proportional to SQUARE of distance. (3) Acts along the line joining the charges. (4) ATTRACTIVE for opposite-sign charges, REPULSIVE for same-sign. HISTORY: Charles-Augustin de Coulomb (1785, France) measured this with a torsion balance — same principle Cavendish later used for gravity. STRUCTURAL SIMILARITY to NEWTON'S GRAVITY: F = G·m₁·m₂/r² — both inverse-square laws. RELATIVE STRENGTH: electric force is ~10³⁹ TIMES stronger than gravity at atomic scales — that's why atoms hold together via electrostatics, and gravity dominates only at large scales (no negative mass to cancel out). NCERT CLASS 12 — Ch. 1. PYQ FREQUENCY: Coulomb's law is a 1-mark guarantee in JEE-Main and NEET. EXAM ANGLE: 'inverse-square law' is the KEY phrase — appears in 90% of polarity-of-distance Qs.",
       "subject": "Physics",
       "topic": "Electric Field",
-      "topic_code": "PHY_ELECTRIC_FIELD_MIXED",
+      "topic_code": "PHY_ELECTROSTATICS",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -92,16 +140,28 @@
     {
       "stem": "Inside a CONDUCTOR in electrostatic equilibrium, the electric field is:",
       "options": [
-        {"option_text": "Zero — charges redistribute to cancel", "is_correct": true},
-        {"option_text": "Equal to surface field always.", "is_correct": false},
-        {"option_text": "Maximum at the centre always.", "is_correct": false},
-        {"option_text": "Inversely proportional to volume.", "is_correct": false}
+        {
+          "option_text": "Zero — charges redistribute to cancel",
+          "is_correct": true
+        },
+        {
+          "option_text": "Equal to surface field always.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Maximum at the centre always.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Inversely proportional to volume.",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "INSIDE a conductor at electrostatic equilibrium, E = 0. WHY? Free electrons redistribute themselves on the SURFACE such that internal fields cancel (otherwise charges would keep moving — not equilibrium). KEY CONSEQUENCES: (1) NO charge inside a solid conductor — all excess charge resides on the OUTER SURFACE. (2) Field just outside conductor's surface = σ/ε₀ (perpendicular to surface). (3) FARADAY CAGE: a hollow conductor SHIELDS its interior from external E-fields — used in MRI rooms, sensitive electronics, lightning protection on aircraft. (4) Cars are essentially Faraday cages — relatively safe in a lightning strike (current flows over the metal body, not through occupants). NCERT CLASS 12 — Ch. 1, 2. APPLICATION: COAXIAL CABLES use a conductor-shield to keep signals undistorted by external E-fields. INSIGHT: this property is unique to ELECTROSTATIC (not dynamic) — under AC currents, internal E can be non-zero. PYQ ANGLE: a perennial SSC, JEE-Main MCQ — 1-2 Qs per paper. EXAMINER MINDSET: tests conductor-property fundamentals.",
       "subject": "Physics",
       "topic": "Electric Field",
-      "topic_code": "PHY_ELECTRIC_FIELD_MIXED",
+      "topic_code": "PHY_ELECTROSTATICS",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -113,16 +173,28 @@
     {
       "stem": "What is the electric field at a distance of 1 metre from a point charge of +1 microcoulomb?",
       "options": [
-        {"option_text": "9000 N/C towards outward radial", "is_correct": true},
-        {"option_text": "900 N/C alone alone alone", "is_correct": false},
-        {"option_text": "9 × 10⁻³ N/C alone alone", "is_correct": false},
-        {"option_text": "9 × 10⁵ N/C alone alone alone", "is_correct": false}
+        {
+          "option_text": "9000 N/C towards outward radial",
+          "is_correct": true
+        },
+        {
+          "option_text": "900 N/C alone alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 × 10⁻³ N/C alone alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 × 10⁵ N/C alone alone alone",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "FIELD due to point charge: E = kQ/r². Plug: k = 9 × 10⁹ Nm²/C²; Q = 1 × 10⁻⁶ C; r = 1 m. E = (9 × 10⁹ × 10⁻⁶) / 1² = 9 × 10³ = 9000 N/C. DIRECTION: radially OUTWARD from positive charge. SCALE-CHECK: 9000 N/C is a moderate field; air breakdown is ~3 × 10⁶ N/C, so this charge wouldn't ionize air at 1 m. SHORTCUT MNEMONIC: for any point charge, when you know Q in microcoulombs and r in metres, E = 9000 × Q(μC) / r²(m²) — a fast-recall formula. PRACTICE: at 0.5 m, E quadruples to 36,000 N/C (because 1/r²). At 2 m, E becomes 2250 N/C (1/4 of original). INVERSE-SQUARE FALLOFF: doubling distance reduces field to 1/4. EXAM ANGLE: standard 'plug-and-chug' Coulomb's law / E-field Q in JEE-Main, NEET, NDA. PYQ FREQUENCY: 2-3 such numerical Qs per JEE-Main physics section. EXAMINER MINDSET: tests formula recall + unit-handling discipline.",
       "subject": "Physics",
       "topic": "Electric Field",
-      "topic_code": "PHY_ELECTRIC_FIELD_MIXED",
+      "topic_code": "PHY_ELECTROSTATICS",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -134,16 +206,28 @@
     {
       "stem": "The relationship between electric field E and electric potential V in a uniform field is:",
       "options": [
-        {"option_text": "E = −dV/dx (negative gradient)", "is_correct": true},
-        {"option_text": "E = V × distance always alone", "is_correct": false},
-        {"option_text": "E = +dV/dx (positive gradient)", "is_correct": false},
-        {"option_text": "E and V are unrelated.", "is_correct": false}
+        {
+          "option_text": "E = −dV/dx (negative gradient)",
+          "is_correct": true
+        },
+        {
+          "option_text": "E = V × distance always alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "E = +dV/dx (positive gradient)",
+          "is_correct": false
+        },
+        {
+          "option_text": "E and V are unrelated.",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "RELATION: E = −∇V (negative gradient of potential). In 1-D: E = −dV/dx. In 3-D: E_x = −∂V/∂x, E_y = −∂V/∂y, E_z = −∂V/∂z. NEGATIVE SIGN: E points in the direction of DECREASING potential — high V to low V (just as water flows from high to low gravitational potential). SIMPLE CASE — UNIFORM FIELD: V = E·d (or magnitude V = E×d in a parallel-plate capacitor where E is uniform). FORMULA RELATIONSHIPS: V (volts) = J/C; E (V/m) = volt per metre. EXAMPLE: parallel-plate capacitor with V = 100 V across d = 1 mm gap → E = V/d = 10⁵ V/m. ENERGY: work done MOVING a charge q against E from A to B = q(V_B − V_A) = q·ΔV. CONSERVATIVE FIELD: electrostatic field is conservative — work depends only on endpoints, not path. PYQ ANGLE: 'E = −dV/dx' is a JEE-Main, NEET, NCERT class 12 staple — 1-2 Qs per cycle. EXAMINER MINDSET: tests calculus-based understanding of E-V relation.",
       "subject": "Physics",
       "topic": "Electric Field",
-      "topic_code": "PHY_ELECTRIC_FIELD_MIXED",
+      "topic_code": "PHY_ELECTROSTATICS",
       "difficulty": "hard",
       "effort_tier": "tier2",
       "staleness_risk": "low",

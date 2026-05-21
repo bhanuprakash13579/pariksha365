@@ -8,16 +8,28 @@
     {
       "stem": "If A's salary is 25% more than B's, then B's salary is what % LESS than A's?",
       "options": [
-        {"option_text": "20% less (using flip formula)", "is_correct": true},
-        {"option_text": "25% (the same percentage)", "is_correct": false},
-        {"option_text": "30% (an over-estimate)", "is_correct": false},
-        {"option_text": "15% (an under-estimate)", "is_correct": false}
+        {
+          "option_text": "20% less (using flip formula)",
+          "is_correct": true
+        },
+        {
+          "option_text": "25% (the same percentage)",
+          "is_correct": false
+        },
+        {
+          "option_text": "30% (an over-estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "15% (an under-estimate)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "PERCENTAGE FLIP FORMULA: If A is x% MORE than B, then B is (x/(100+x))×100 % LESS than A. Plug x=25: B is less by (25/125)×100 = 20%. NUMERIC CHECK: let B = 100 → A = 125. B is 25 less than A → 25/125 × 100 = 20%. PARALLEL FORMULA: If A is x% LESS than B, then B is (x/(100−x))×100 % MORE than A. e.g., A is 20% less than B → B is 25% more than A. EXAMPLES: (1) Cost increased by 10% → required reduction of 10/110 × 100 = 9.09% (to restore original spending). (2) Population grew by 50% → declined by 33.33% would bring back. (3) 'Discount' problems often hide this asymmetry. KEY INSIGHT: percentages are ASYMMETRIC because the BASE changes — the bigger number is the reference for one direction, smaller for the other. PYQ FREQUENCY: this exact 'A is x% more than B...' MCQ is a SSC CGL Tier 1, IBPS Clerk Pre, RRB NTPC favorite — 1-2× per cycle.",
       "subject": "Quant",
       "topic": "Percentage V",
-      "topic_code": "QNT_PERCENTAGE_V_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -29,16 +41,28 @@
     {
       "stem": "In an election between two candidates, the winner got 60% of votes and won by 4000 votes. Total votes cast were:",
       "options": [
-        {"option_text": "20,000 (using 20% margin)", "is_correct": true},
-        {"option_text": "10,000 (an under-estimate)", "is_correct": false},
-        {"option_text": "16,000 (incorrect calc value)", "is_correct": false},
-        {"option_text": "40,000 (an over-estimate)", "is_correct": false}
+        {
+          "option_text": "20,000 (using 20% margin)",
+          "is_correct": true
+        },
+        {
+          "option_text": "10,000 (an under-estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "16,000 (incorrect calc value)",
+          "is_correct": false
+        },
+        {
+          "option_text": "40,000 (an over-estimate)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Set up: Winner got 60%, Loser got 40% (assuming 2-candidate, all votes counted). Margin = 60% − 40% = 20% of total = 4000. So total = 4000 / 0.20 = 20,000 votes. Verify: 60% of 20,000 = 12,000 (winner); 40% = 8,000 (loser); margin = 4,000 ✓. KEY METHOD for election problems: (1) Identify percentages of each candidate. (2) Margin (in %) corresponds to vote-difference. (3) Total = vote-difference / margin%. VARIATIONS: (a) 'invalid votes' — subtract first to get valid votes; then apply % to valid. (b) '3 candidates' — sum to 100% (or less if some invalid); margins are between specific pairs. (c) '%age won by' — usually means margin %. INDIA ELECTION CONTEXT: Lok Sabha elections (every 5 years), 543 constituencies. Tightest margin in 2024 LS: in Mumbai North-West, won by 48 votes (re-counted). LARGEST: Modi from Varanasi 2024 won by ~1.5 lakh votes; Smriti Irani from Amethi defeated. PYQ FREQUENCY: election % problems are SSC CGL Tier 1, RRB NTPC favorites — 1× per paper.",
       "subject": "Quant",
       "topic": "Percentage V",
-      "topic_code": "QNT_PERCENTAGE_V_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -50,16 +74,28 @@
     {
       "stem": "A number is increased by 20% and then decreased by 20%. The net change is:",
       "options": [
-        {"option_text": "4% decrease (loss of x²/100)", "is_correct": true},
-        {"option_text": "0% (cancellation breakeven)", "is_correct": false},
-        {"option_text": "4% increase (incorrect sign)", "is_correct": false},
-        {"option_text": "20% decrease (over-estimate)", "is_correct": false}
+        {
+          "option_text": "4% decrease (loss of x²/100)",
+          "is_correct": true
+        },
+        {
+          "option_text": "0% (cancellation breakeven)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4% increase (incorrect sign)",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% decrease (over-estimate)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Let original number = 100. After +20%: 120. After −20% on 120: 120 × 0.8 = 96. Net change: 100 − 96 = 4 → 4% DECREASE. KEY FORMULA: when a number is increased by x% and then decreased by x%, the NET CHANGE is always a LOSS of x²/100 %. Plug x=20: loss = 400/100 = 4%. EXAMPLES: x=10 → loss = 1%; x=25 → loss = 6.25%; x=50 → loss = 25%. WHY ALWAYS A LOSS: the second percentage applies to a LARGER base than the first, so the absolute change is bigger. SAMPLE RELATED: increase by x% then increase by y% → net = x + y + xy/100; increase by x% then decrease by y% → net = x − y − xy/100. PRICE-TAG TRAP: shopkeepers often raise then 'discount' by same % to give an illusion of fairness; customer net pays slightly less than original. SUCCESSIVE % CHANGE FORMULA: (1+a)(1+b) = 1 + a + b + ab (with a, b in decimals). PYQ FREQUENCY: x²/100 formula in SSC CGL, IBPS PO Pre — 1-2 per paper. EXAMINER MINDSET: tests recognition of standard 'increase-decrease' identity.",
       "subject": "Quant",
       "topic": "Percentage V",
-      "topic_code": "QNT_PERCENTAGE_V_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -71,16 +107,28 @@
     {
       "stem": "A man spends 80% of his income. If income increases by 25% and expenditure by 10%, percentage increase in savings is:",
       "options": [
-        {"option_text": "85% (using ratio shifts)", "is_correct": true},
-        {"option_text": "15% (a wrong subtraction)", "is_correct": false},
-        {"option_text": "35% (calc shortcut error)", "is_correct": false},
-        {"option_text": "25% (just income change)", "is_correct": false}
+        {
+          "option_text": "85% (using ratio shifts)",
+          "is_correct": true
+        },
+        {
+          "option_text": "15% (a wrong subtraction)",
+          "is_correct": false
+        },
+        {
+          "option_text": "35% (calc shortcut error)",
+          "is_correct": false
+        },
+        {
+          "option_text": "25% (just income change)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Let initial INCOME = ₹100. EXPENDITURE = 80% of 100 = ₹80. SAVINGS = 100 − 80 = ₹20. NEW INCOME = 100 × 1.25 = ₹125. NEW EXPENDITURE = 80 × 1.10 = ₹88. NEW SAVINGS = 125 − 88 = ₹37. INCREASE in savings = 37 − 20 = ₹17. % INCREASE = 17/20 × 100 = 85%. KEY METHOD for income-expenditure-savings problems: (1) Set income = 100. (2) Compute initial expenditure & savings. (3) Apply percentage changes to each. (4) Compute new savings. (5) Find % increase RELATIVE TO INITIAL savings. INSIGHT: small absolute changes in expenditure can produce LARGE percentage changes in savings (because savings is much smaller than expenditure). REAL-WORLD: this is why salary hikes feel 'amplified' in disposable income; high-spending households (low savings rate) see bigger savings-% changes. PYQ FREQUENCY: income-expense % problems in SSC CGL Tier 2, IBPS PO Mains, RBI Grade B Mains — 1-2 per paper. EXAMINER MINDSET: tests systematic algebraic-arithmetic discipline.",
       "subject": "Quant",
       "topic": "Percentage V",
-      "topic_code": "QNT_PERCENTAGE_V_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -92,16 +140,28 @@
     {
       "stem": "If 30% of A = 50% of B, then A:B is:",
       "options": [
-        {"option_text": "5:3 (cross-multiply ratio)", "is_correct": true},
-        {"option_text": "3:5 (the inverse direction)", "is_correct": false},
-        {"option_text": "30:50 (raw form ratio)", "is_correct": false},
-        {"option_text": "5:6 (incorrect calc value)", "is_correct": false}
+        {
+          "option_text": "5:3 (cross-multiply ratio)",
+          "is_correct": true
+        },
+        {
+          "option_text": "3:5 (the inverse direction)",
+          "is_correct": false
+        },
+        {
+          "option_text": "30:50 (raw form ratio)",
+          "is_correct": false
+        },
+        {
+          "option_text": "5:6 (incorrect calc value)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Given: 30% of A = 50% of B → 0.30A = 0.50B. Cross-multiply: A/B = 0.50/0.30 = 50/30 = 5/3. So A:B = 5:3. KEY METHOD: when 'p% of A = q% of B', then A:B = q:p (inverse). NUMERIC: e.g., A = 50, B = 30 → 30% of 50 = 15; 50% of 30 = 15 ✓. INSIGHT: this is the INVERSE of 'p × A = q × B' style ratios — because percentages flip when dividing through. RELATED: 'A is x% of B' means A = (x/100)B → A:B = x:100. SAMPLE PRACTICE: 'If 40% of X = 60% of Y, find X:Y' → 60:40 = 3:2. 'If 25% of P = 75% of Q' → P:Q = 75:25 = 3:1. CONTEXTS: ratio problems often combine with mixture/alligation, ages, or proportions. WORK-RATIO: 'A is 3 times faster than B' means A:B = 3:1 (in efficiency). PYQ FREQUENCY: 'p% of A = q% of B' is a top SSC CGL Tier 1, IBPS Clerk Pre 1-mark guarantee.",
       "subject": "Quant",
       "topic": "Percentage V",
-      "topic_code": "QNT_PERCENTAGE_V_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -113,16 +173,28 @@
     {
       "stem": "The population of a town increases by 10% annually. If current population is 40,000, what was it 2 years ago?",
       "options": [
-        {"option_text": "About 33,058 (using P/(1.1)²)", "is_correct": true},
-        {"option_text": "32,000 (a simple subtraction)", "is_correct": false},
-        {"option_text": "33,000 (rounded estimate)", "is_correct": false},
-        {"option_text": "36,363 (just one year back)", "is_correct": false}
+        {
+          "option_text": "About 33,058 (using P/(1.1)²)",
+          "is_correct": true
+        },
+        {
+          "option_text": "32,000 (a simple subtraction)",
+          "is_correct": false
+        },
+        {
+          "option_text": "33,000 (rounded estimate)",
+          "is_correct": false
+        },
+        {
+          "option_text": "36,363 (just one year back)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Apply COMPOUND-GROWTH FORMULA: Future = Past × (1 + r)^n. Equivalently: PAST = FUTURE / (1 + r)^n. Plug: r = 0.10, n = 2. PAST = 40,000 / (1.10)² = 40,000 / 1.21 ≈ 33,057.85 ≈ 33,058. EXACT METHOD: let past population be P. P × 1.10² = 40,000 → P × 1.21 = 40,000 → P = 40,000 / 1.21 ≈ 33,058. EXAM TRAP: students compute 40,000 × 0.81 (= 32,400) — INCORRECT. The reverse of GROWTH BY 10% is NOT 'reduce by 10%'; it's 'divide by 1.10' (which gives 9.09% reduction). Compound growth is MULTIPLICATIVE; reversing requires DIVISION, not subtraction. KEY METHOD: F = P × (1+r)^n (growth); P = F / (1+r)^n (reverse). EXAMPLES — 1 year back from 40K @ 10% growth: 40K/1.1 = 36,364. 5 years back: 40K/1.1^5 = 24,837. RELATED: India's annual population growth ~1% (down from 2.2% in 1980s) — slow exponential change adds up over decades. PYQ FREQUENCY: compound % growth in SSC CGL Tier 2, IBPS PO Mains 1-2× per cycle.",
       "subject": "Quant",
       "topic": "Percentage V",
-      "topic_code": "QNT_PERCENTAGE_V_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
@@ -134,16 +206,28 @@
     {
       "stem": "If price of sugar increases by 25%, by what % must consumption decrease so that total expenditure stays constant?",
       "options": [
-        {"option_text": "20% (using 100p/(100+p))", "is_correct": true},
-        {"option_text": "25% (incorrect symmetry)", "is_correct": false},
-        {"option_text": "30% (an over-correction)", "is_correct": false},
-        {"option_text": "15% (an under-correction)", "is_correct": false}
+        {
+          "option_text": "20% (using 100p/(100+p))",
+          "is_correct": true
+        },
+        {
+          "option_text": "25% (incorrect symmetry)",
+          "is_correct": false
+        },
+        {
+          "option_text": "30% (an over-correction)",
+          "is_correct": false
+        },
+        {
+          "option_text": "15% (an under-correction)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "FORMULA: when PRICE increases by p%, consumption must DECREASE by (p/(100+p))×100 % to keep expenditure unchanged. Plug p=25: decrease = (25/125)×100 = 20%. NUMERIC CHECK: original price ₹100/kg, consumption 1 kg → expenditure ₹100. New price = ₹125/kg. To keep expenditure ₹100, consumption = 100/125 = 0.8 kg → reduction of 20%. PARALLEL: if PRICE DECREASES by p%, consumption can INCREASE by (p/(100−p))×100 % to keep expenditure constant. e.g., price drops 20% → consumption can rise 25%. APPLICATION — INFLATION/COST OF LIVING: when fuel prices rise, drivers reduce kilometers driven; the ratio approximates this formula. CASE: 1973 OPEC OIL CRISIS — petrol prices quadrupled (300% increase) → required ~75% reduction in consumption to maintain $-spending — drove permanent shifts in fuel-efficient vehicles. PYQ FREQUENCY: 'price-consumption' inverse-% MCQs in SSC CGL Tier 2, IBPS PO Mains, RBI Mains — 1-2 per cycle. EXAMINER MINDSET: tests asymmetric percentage relationships.",
       "subject": "Quant",
       "topic": "Percentage V",
-      "topic_code": "QNT_PERCENTAGE_V_MIXED",
+      "topic_code": "QA_PERCENT",
       "difficulty": "hard",
       "effort_tier": "tier2",
       "staleness_risk": "low",

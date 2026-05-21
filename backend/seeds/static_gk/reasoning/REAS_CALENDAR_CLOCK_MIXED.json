@@ -8,16 +8,28 @@
     {
       "stem": "If 15 August 2023 was a Tuesday, what day of the week was 15 August 2022?",
       "options": [
-        {"option_text": "Sunday", "is_correct": false},
-        {"option_text": "Monday", "is_correct": true},
-        {"option_text": "Tuesday", "is_correct": false},
-        {"option_text": "Wednesday", "is_correct": false}
+        {
+          "option_text": "Sunday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Monday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Tuesday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wednesday",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "From 15 Aug 2022 to 15 Aug 2023 is exactly 365 days (no leap day between). 365 mod 7 = 1 odd day. So 15 Aug 2022 was 1 day BEFORE Tuesday → Monday.",
       "subject": "Reasoning",
       "topic": "Calendar & clock — mixed tiers",
-      "topic_code": "REAS_CALENDAR_CLOCK_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "In a leap year, how many ODD DAYS are there?",
       "options": [
-        {"option_text": "1", "is_correct": false},
-        {"option_text": "2", "is_correct": true},
-        {"option_text": "3", "is_correct": false},
-        {"option_text": "0", "is_correct": false}
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Ordinary year = 365 days = 52 weeks + 1 day → 1 odd day. Leap year = 366 = 52 weeks + 2 days → 2 odd days.",
       "subject": "Reasoning",
       "topic": "Calendar & clock — mixed tiers",
-      "topic_code": "REAS_CALENDAR_CLOCK_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "How many times in a day do the HOUR HAND and MINUTE HAND of a clock COINCIDE (overlap)?",
       "options": [
-        {"option_text": "24", "is_correct": false},
-        {"option_text": "22", "is_correct": true},
-        {"option_text": "12", "is_correct": false},
-        {"option_text": "11", "is_correct": false}
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "22",
+          "is_correct": true
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "In 12 hours the hands coincide 11 times (not 12 — between 11 and 1 they overlap only once, at 12). So in 24 hours = 22 times. Similarly, hands are straight-opposite 22 times per day; right-angle 44 times.",
       "subject": "Reasoning",
       "topic": "Calendar & clock — mixed tiers",
-      "topic_code": "REAS_CALENDAR_CLOCK_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "The angle between the hour hand and minute hand of a clock at 3:30 is:",
       "options": [
-        {"option_text": "75°", "is_correct": true},
-        {"option_text": "90°", "is_correct": false},
-        {"option_text": "60°", "is_correct": false},
-        {"option_text": "105°", "is_correct": false}
+        {
+          "option_text": "75°",
+          "is_correct": true
+        },
+        {
+          "option_text": "90°",
+          "is_correct": false
+        },
+        {
+          "option_text": "60°",
+          "is_correct": false
+        },
+        {
+          "option_text": "105°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Formula: |30H − 11M/2| where H = hour, M = minutes. At 3:30 → |30·3 − 11·30/2| = |90 − 165| = 75°.",
       "subject": "Reasoning",
       "topic": "Calendar & clock — mixed tiers",
-      "topic_code": "REAS_CALENDAR_CLOCK_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "Which year is a CENTURY YEAR that IS a leap year?",
       "options": [
-        {"option_text": "1700", "is_correct": false},
-        {"option_text": "1800", "is_correct": false},
-        {"option_text": "1900", "is_correct": false},
-        {"option_text": "2000", "is_correct": true}
+        {
+          "option_text": "1700",
+          "is_correct": false
+        },
+        {
+          "option_text": "1800",
+          "is_correct": false
+        },
+        {
+          "option_text": "1900",
+          "is_correct": false
+        },
+        {
+          "option_text": "2000",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "explanation": "Century years are leap only if divisible by 400. 1700, 1800, 1900 divisible by 100 but not 400 → not leap. 2000 = 400 × 5 → leap.",
       "subject": "Reasoning",
       "topic": "Calendar & clock — mixed tiers",
-      "topic_code": "REAS_CALENDAR_CLOCK_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "What is the angle between hour and minute hand at 6:00?",
       "options": [
-        {"option_text": "90°", "is_correct": false},
-        {"option_text": "180°", "is_correct": true},
-        {"option_text": "120°", "is_correct": false},
-        {"option_text": "150°", "is_correct": false}
+        {
+          "option_text": "90°",
+          "is_correct": false
+        },
+        {
+          "option_text": "180°",
+          "is_correct": true
+        },
+        {
+          "option_text": "120°",
+          "is_correct": false
+        },
+        {
+          "option_text": "150°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "At 6:00 exactly, hour hand points to 6, minute hand to 12 — directly opposite → 180°.",
       "subject": "Reasoning",
       "topic": "Calendar & clock — mixed tiers",
-      "topic_code": "REAS_CALENDAR_CLOCK_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "If 1 January 2024 was a Monday, what was the day of the week on 1 March 2024? (Note: 2024 is a leap year.)",
       "options": [
-        {"option_text": "Thursday", "is_correct": false},
-        {"option_text": "Friday", "is_correct": true},
-        {"option_text": "Saturday", "is_correct": false},
-        {"option_text": "Wednesday", "is_correct": false}
+        {
+          "option_text": "Thursday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Friday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Saturday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wednesday",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Days from 1 Jan to 1 Mar 2024 = 31 (Jan) + 29 (leap-Feb) = 60 days elapsed. 60 mod 7 = 4 odd days. Monday + 4 = Friday.",
       "subject": "Reasoning",
       "topic": "Calendar & clock — mixed tiers",
-      "topic_code": "REAS_CALENDAR_CLOCK_MIXED",
+      "topic_code": "RSN_CLOCK_CALENDAR",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,

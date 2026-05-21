@@ -8,16 +8,28 @@
     {
       "stem": "In how many ways can the letters of the word 'WORLD' be arranged?",
       "options": [
-        {"option_text": "60", "is_correct": false},
-        {"option_text": "120", "is_correct": true},
-        {"option_text": "720", "is_correct": false},
-        {"option_text": "24", "is_correct": false}
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": true
+        },
+        {
+          "option_text": "720",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "5 distinct letters → 5! = 120. Basic permutation without repetition.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutations and Combinations",
-      "topic_code": "QNT_PERMUTATION",
+      "topic_code": "QA_PNC",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Number of arrangements of the letters of 'LEVEL':",
       "options": [
-        {"option_text": "120", "is_correct": false},
-        {"option_text": "30", "is_correct": true},
-        {"option_text": "60", "is_correct": false},
-        {"option_text": "15", "is_correct": false}
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "5 letters with repetitions L(2), E(2), V(1). Arrangements = 5!/(2!·2!) = 120/4 = 30.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutations and Combinations",
-      "topic_code": "QNT_PERMUTATION",
+      "topic_code": "QA_PNC",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "How many 3-letter arrangements can be formed from 8 distinct letters (no repetition)?",
       "options": [
-        {"option_text": "56", "is_correct": false},
-        {"option_text": "336", "is_correct": true},
-        {"option_text": "120", "is_correct": false},
-        {"option_text": "512", "is_correct": false}
+        {
+          "option_text": "56",
+          "is_correct": false
+        },
+        {
+          "option_text": "336",
+          "is_correct": true
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "512",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "nPr = n!/(n−r)! = 8!/5! = 8 × 7 × 6 = 336. Distractor 56 is 8C3 (combinations); 512 is 8³ (with repetition).",
       "subject": "Quantitative Aptitude",
       "topic": "Permutations and Combinations",
-      "topic_code": "QNT_PERMUTATION",
+      "topic_code": "QA_PNC",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "In how many ways can 5 people be seated around a circular table?",
       "options": [
-        {"option_text": "120", "is_correct": false},
-        {"option_text": "24", "is_correct": true},
-        {"option_text": "60", "is_correct": false},
-        {"option_text": "20", "is_correct": false}
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": true
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Circular arrangements of n distinct persons = (n−1)! = 4! = 24. The subtraction accounts for rotational equivalence — only relative positions matter.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutations and Combinations",
-      "topic_code": "QNT_PERMUTATION",
+      "topic_code": "QA_PNC",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "A committee of 3 is to be formed from 5 men and 4 women with at least 1 woman. Total ways:",
       "options": [
-        {"option_text": "74", "is_correct": true},
-        {"option_text": "84", "is_correct": false},
-        {"option_text": "60", "is_correct": false},
-        {"option_text": "90", "is_correct": false}
+        {
+          "option_text": "74",
+          "is_correct": true
+        },
+        {
+          "option_text": "84",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "90",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Total committees without restriction = 9C3 = 84. Committees with NO woman (all men) = 5C3 = 10. At-least-1-woman = 84 − 10 = 74. Complement trick is cleaner than summing cases.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutations and Combinations",
-      "topic_code": "QNT_PERMUTATION",
+      "topic_code": "QA_PNC",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "Number of ways to choose 2 cards from a standard 52-card deck:",
       "options": [
-        {"option_text": "1326", "is_correct": true},
-        {"option_text": "2652", "is_correct": false},
-        {"option_text": "52", "is_correct": false},
-        {"option_text": "104", "is_correct": false}
+        {
+          "option_text": "1326",
+          "is_correct": true
+        },
+        {
+          "option_text": "2652",
+          "is_correct": false
+        },
+        {
+          "option_text": "52",
+          "is_correct": false
+        },
+        {
+          "option_text": "104",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Order doesn't matter → combination. 52C2 = 52·51/2 = 1326. Distractor 2652 = 52P2 counts order.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutations and Combinations",
-      "topic_code": "QNT_PERMUTATION",
+      "topic_code": "QA_PNC",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "How many arrangements of the letters of 'MISSISSIPPI' are there?",
       "options": [
-        {"option_text": "34650", "is_correct": true},
-        {"option_text": "39916800", "is_correct": false},
-        {"option_text": "831600", "is_correct": false},
-        {"option_text": "990", "is_correct": false}
+        {
+          "option_text": "34650",
+          "is_correct": true
+        },
+        {
+          "option_text": "39916800",
+          "is_correct": false
+        },
+        {
+          "option_text": "831600",
+          "is_correct": false
+        },
+        {
+          "option_text": "990",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "11 letters with repetitions M(1), I(4), S(4), P(2). Arrangements = 11!/(4!·4!·2!·1!) = 39,916,800 / (24·24·2) = 39,916,800 / 1152 = 34,650.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutations and Combinations",
-      "topic_code": "QNT_PERMUTATION",
+      "topic_code": "QA_PNC",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -155,16 +239,28 @@
     {
       "stem": "In how many ways can 4 boys and 3 girls sit in a row so that all girls sit together?",
       "options": [
-        {"option_text": "720", "is_correct": true},
-        {"option_text": "5040", "is_correct": false},
-        {"option_text": "120", "is_correct": false},
-        {"option_text": "144", "is_correct": false}
+        {
+          "option_text": "720",
+          "is_correct": true
+        },
+        {
+          "option_text": "5040",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "144",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Treat the 3 girls as ONE unit → 4 boys + 1 girl-block = 5 units → 5! = 120. Within the girl-block, 3 girls can permute in 3! = 6 ways. Total = 120 × 6 = 720. Classic 'bundle together' technique.",
       "subject": "Quantitative Aptitude",
       "topic": "Permutations and Combinations",
-      "topic_code": "QNT_PERMUTATION",
+      "topic_code": "QA_PNC",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,

@@ -8,16 +8,28 @@
     {
       "stem": "A bag has 5 red and 3 blue balls. The probability that a randomly drawn ball is BLUE is:",
       "options": [
-        {"option_text": "5/8 (the red fraction)", "is_correct": false},
-        {"option_text": "3/8 (the blue fraction)", "is_correct": true},
-        {"option_text": "1/2 (assumes equal split)", "is_correct": false},
-        {"option_text": "3/5 (blue divided by red)", "is_correct": false}
+        {
+          "option_text": "5/8 (the red fraction)",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/8 (the blue fraction)",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/2 (assumes equal split)",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/5 (blue divided by red)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "P(blue) = blue / total = 3 / (5+3) = 3/8. Distractor 1 swaps numerator (gives red probability). Distractor 3 ignores the actual counts. Distractor 4 uses the wrong denominator (just red).",
       "subject": "Quantitative Aptitude",
       "topic": "Probability III — mixed tiers",
-      "topic_code": "QNT_PROBABILITY_III_MIXED",
+      "topic_code": "QA_PROBABILITY",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Two dice are tossed together. The probability that the SUM is 7 is:",
       "options": [
-        {"option_text": "5/36 (one fewer than the actual count)", "is_correct": false},
-        {"option_text": "6/36 = 1/6 (six favourable pairs)", "is_correct": true},
-        {"option_text": "7/36 (taken from the sum value)", "is_correct": false},
-        {"option_text": "1/12 (half of the correct value)", "is_correct": false}
+        {
+          "option_text": "5/36 (one fewer than the actual count)",
+          "is_correct": false
+        },
+        {
+          "option_text": "6/36 = 1/6 (six favourable pairs)",
+          "is_correct": true
+        },
+        {
+          "option_text": "7/36 (taken from the sum value)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/12 (half of the correct value)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Total outcomes = 6×6 = 36. Pairs giving sum 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 pairs. P = 6/36 = 1/6. Sum 7 is the most likely outcome with two fair dice. Distractor 1 = 5/36 (sum 6 or 8). Distractor 3 = 7/36 (no valid pairing). Distractor 4 = halves the answer.",
       "subject": "Quantitative Aptitude",
       "topic": "Probability III — mixed tiers",
-      "topic_code": "QNT_PROBABILITY_III_MIXED",
+      "topic_code": "QA_PROBABILITY",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "From a pack of 52 cards, the probability of drawing a KING is:",
       "options": [
-        {"option_text": "1/52 (a single specified card)", "is_correct": false},
-        {"option_text": "1/13 (any one of four kings)", "is_correct": true},
-        {"option_text": "1/4 (any one of four suits)", "is_correct": false},
-        {"option_text": "3/13 (any J, Q or K card)", "is_correct": false}
+        {
+          "option_text": "1/52 (a single specified card)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/13 (any one of four kings)",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/4 (any one of four suits)",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/13 (any J, Q or K card)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "4 kings (one per suit) in 52 cards. P = 4/52 = 1/13. Distractor 1 — single card. Distractor 3 = 13/52 = 1/4 (any suit). Distractor 4 = 12/52 = 3/13 (any face card: J, Q, K).",
       "subject": "Quantitative Aptitude",
       "topic": "Probability III — mixed tiers",
-      "topic_code": "QNT_PROBABILITY_III_MIXED",
+      "topic_code": "QA_PROBABILITY",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "If P(A) = 0.4 and P(B) = 0.5 and the events are MUTUALLY EXCLUSIVE, then P(A or B) =",
       "options": [
-        {"option_text": "0.2 (the product of probabilities)", "is_correct": false},
-        {"option_text": "0.9 (the sum of probabilities)", "is_correct": true},
-        {"option_text": "0.7 (an arbitrary combined value)", "is_correct": false},
-        {"option_text": "0.5 (the larger of the two)", "is_correct": false}
+        {
+          "option_text": "0.2 (the product of probabilities)",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.9 (the sum of probabilities)",
+          "is_correct": true
+        },
+        {
+          "option_text": "0.7 (an arbitrary combined value)",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.5 (the larger of the two)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Mutually exclusive: P(A and B) = 0. So P(A or B) = P(A) + P(B) = 0.4 + 0.5 = 0.9. Distractor 1 = product (gives joint probability of INDEPENDENT events, not 'or'). Distractor 3 from arbitrary combination. Distractor 4 ignores the additive rule.",
       "subject": "Quantitative Aptitude",
       "topic": "Probability III — mixed tiers",
-      "topic_code": "QNT_PROBABILITY_III_MIXED",
+      "topic_code": "QA_PROBABILITY",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "A coin is tossed 3 times. The probability of getting EXACTLY 2 heads is:",
       "options": [
-        {"option_text": "1/4 (random guess)", "is_correct": false},
-        {"option_text": "3/8 (correct binomial value)", "is_correct": true},
-        {"option_text": "1/2 (half because equal heads/tails)", "is_correct": false},
-        {"option_text": "1/8 (one specific sequence only)", "is_correct": false}
+        {
+          "option_text": "1/4 (random guess)",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/8 (correct binomial value)",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/2 (half because equal heads/tails)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/8 (one specific sequence only)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "3 tosses: 2³ = 8 equally likely outcomes. Exactly 2 heads can occur in C(3,2) = 3 ways: HHT, HTH, THH. P = 3/8. Binomial: P = C(3,2) × (1/2)² × (1/2)¹ = 3 × 1/8 = 3/8. Distractor 1 = 1/4 random guess. Distractor 3 = 1/2 confused with at-least-1-head. Distractor 4 = 1/8 (probability of one specific outcome).",
       "subject": "Quantitative Aptitude",
       "topic": "Probability III — mixed tiers",
-      "topic_code": "QNT_PROBABILITY_III_MIXED",
+      "topic_code": "QA_PROBABILITY",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "The probability of an event A NOT occurring equals:",
       "options": [
-        {"option_text": "1 + P(A) (sum greater than 1)", "is_correct": false},
-        {"option_text": "1 − P(A) (the complement rule)", "is_correct": true},
-        {"option_text": "P(A) ÷ 2 (an arbitrary halving)", "is_correct": false},
-        {"option_text": "P(A) × 0 (yields zero always)", "is_correct": false}
+        {
+          "option_text": "1 + P(A) (sum greater than 1)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 − P(A) (the complement rule)",
+          "is_correct": true
+        },
+        {
+          "option_text": "P(A) ÷ 2 (an arbitrary halving)",
+          "is_correct": false
+        },
+        {
+          "option_text": "P(A) × 0 (yields zero always)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Complement Rule: P(not A) = 1 − P(A). Total probability is 1; everything not-A is the rest. Useful for 'at least one' problems: P(at least 1) = 1 − P(none). Distractor 1 — sum exceeds 1, impossible for valid probability. Distractor 3 — arbitrary. Distractor 4 — would always give zero.",
       "subject": "Quantitative Aptitude",
       "topic": "Probability III — mixed tiers",
-      "topic_code": "QNT_PROBABILITY_III_MIXED",
+      "topic_code": "QA_PROBABILITY",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Two cards are drawn at random WITHOUT REPLACEMENT from a standard deck of 52. The probability that BOTH are aces is:",
       "options": [
-        {"option_text": "1/169 (independent multiplication)", "is_correct": false},
-        {"option_text": "1/221 (correct dependent value)", "is_correct": true},
-        {"option_text": "4/52 (one ace probability)", "is_correct": false},
-        {"option_text": "1/52 (a single ace fraction)", "is_correct": false}
+        {
+          "option_text": "1/169 (independent multiplication)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/221 (correct dependent value)",
+          "is_correct": true
+        },
+        {
+          "option_text": "4/52 (one ace probability)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/52 (a single ace fraction)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Without replacement: P(1st ace) = 4/52 = 1/13. P(2nd ace given 1st was ace) = 3/51 = 1/17. P(both) = 1/13 × 1/17 = 1/221. Distractor 1 = (4/52)² = 1/169 (independent multiplication, valid only WITH replacement). Distractor 3 = single-ace probability. Distractor 4 from another wrong reading.",
       "subject": "Quantitative Aptitude",
       "topic": "Probability III — mixed tiers",
-      "topic_code": "QNT_PROBABILITY_III_MIXED",
+      "topic_code": "QA_PROBABILITY",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,

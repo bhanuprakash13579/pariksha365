@@ -8,16 +8,28 @@
     {
       "stem": "If log₂ 8 = x, then x equals:",
       "options": [
-        {"option_text": "2", "is_correct": false},
-        {"option_text": "3", "is_correct": true},
-        {"option_text": "4", "is_correct": false},
-        {"option_text": "1", "is_correct": false}
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Definition of log: log_b(N) = x ⟺ b^x = N. Here log₂ 8 = x ⟺ 2^x = 8 = 2³ → x = 3. Logarithms exist only for POSITIVE arguments (N > 0); the base b > 0 and b ≠ 1. log_b(b) = 1; log_b(1) = 0 for any valid base.",
       "subject": "Quantitative Aptitude",
       "topic": "Logarithms — mixed tiers",
-      "topic_code": "QNT_LOGARITHMS_MIXED",
+      "topic_code": "QA_SIMPLIFY",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "log(MN) = log M + log N is the:",
       "options": [
-        {"option_text": "Quotient rule", "is_correct": false},
-        {"option_text": "Product rule of logarithms", "is_correct": true},
-        {"option_text": "Power rule", "is_correct": false},
-        {"option_text": "Change-of-base rule", "is_correct": false}
+        {
+          "option_text": "Quotient rule",
+          "is_correct": false
+        },
+        {
+          "option_text": "Product rule of logarithms",
+          "is_correct": true
+        },
+        {
+          "option_text": "Power rule",
+          "is_correct": false
+        },
+        {
+          "option_text": "Change-of-base rule",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Three core log laws: PRODUCT log(MN) = log M + log N; QUOTIENT log(M/N) = log M − log N; POWER log(Mⁿ) = n · log M. These convert multiplications into additions — the original utility of logarithms before calculators (slide rule, log tables). Change of base: log_b X = log_a X / log_a b. Common base 10: just 'log'. Natural log base e ≈ 2.71828: 'ln'.",
       "subject": "Quantitative Aptitude",
       "topic": "Logarithms — mixed tiers",
-      "topic_code": "QNT_LOGARITHMS_MIXED",
+      "topic_code": "QA_SIMPLIFY",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Simplify: log 25 + log 4 (base 10).",
       "options": [
-        {"option_text": "1", "is_correct": false},
-        {"option_text": "2", "is_correct": true},
-        {"option_text": "100", "is_correct": false},
-        {"option_text": "4", "is_correct": false}
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Apply product rule: log 25 + log 4 = log(25 × 4) = log 100. Since base is 10: log₁₀ 100 = 2 (because 10² = 100). Always be alert to opportunities to combine log terms — combined arguments often simplify to a power of the base.",
       "subject": "Quantitative Aptitude",
       "topic": "Logarithms — mixed tiers",
-      "topic_code": "QNT_LOGARITHMS_MIXED",
+      "topic_code": "QA_SIMPLIFY",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "If log₁₀ 2 = 0.3010, the value of log₁₀ 5 is:",
       "options": [
-        {"option_text": "0.5000", "is_correct": false},
-        {"option_text": "0.6990", "is_correct": true},
-        {"option_text": "0.6020", "is_correct": false},
-        {"option_text": "0.3010", "is_correct": false}
+        {
+          "option_text": "0.5000",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.6990",
+          "is_correct": true
+        },
+        {
+          "option_text": "0.6020",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.3010",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Use 5 = 10/2. So log 5 = log 10 − log 2 = 1 − 0.3010 = 0.6990. Other handy log identities (base 10): log 3 ≈ 0.4771; log 7 ≈ 0.8451; log 11 ≈ 1.0414; log 2 + log 5 = log 10 = 1 (always).",
       "subject": "Quantitative Aptitude",
       "topic": "Logarithms — mixed tiers",
-      "topic_code": "QNT_LOGARITHMS_MIXED",
+      "topic_code": "QA_SIMPLIFY",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "If 3^x = 81, then the value of x using logarithms is:",
       "options": [
-        {"option_text": "3", "is_correct": false},
-        {"option_text": "4", "is_correct": true},
-        {"option_text": "5", "is_correct": false},
-        {"option_text": "27", "is_correct": false}
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "27",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Take log of both sides: x · log 3 = log 81 = log(3⁴) = 4·log 3 → x = 4. Or directly: 81 = 3⁴ so 3^x = 3⁴ → x = 4. Both routes give the same answer; the log method becomes essential when bases don't match nicely (e.g., 3^x = 50).",
       "subject": "Quantitative Aptitude",
       "topic": "Logarithms — mixed tiers",
-      "topic_code": "QNT_LOGARITHMS_MIXED",
+      "topic_code": "QA_SIMPLIFY",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "The 'characteristic' of log 1234 (base 10) is:",
       "options": [
-        {"option_text": "2", "is_correct": false},
-        {"option_text": "3", "is_correct": true},
-        {"option_text": "4", "is_correct": false},
-        {"option_text": "1", "is_correct": false}
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Logarithm of a positive number = characteristic (integer part) + mantissa (decimal part). For numbers ≥ 1, characteristic = (digits before decimal point) − 1. 1234 has 4 digits → characteristic = 3. log 1234 ≈ 3.0913, so characteristic 3, mantissa 0.0913. For numbers between 0 and 1, characteristic is negative — written as bar (e.g., log 0.123 ≈ −0.9101, written 1̄.0899).",
       "subject": "Quantitative Aptitude",
       "topic": "Logarithms — mixed tiers",
-      "topic_code": "QNT_LOGARITHMS_MIXED",
+      "topic_code": "QA_SIMPLIFY",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Solve: log₂ x + log₂ (x − 6) = 4.",
       "options": [
-        {"option_text": "x = 8", "is_correct": true},
-        {"option_text": "x = 4", "is_correct": false},
-        {"option_text": "x = 6", "is_correct": false},
-        {"option_text": "x = 16", "is_correct": false}
+        {
+          "option_text": "x = 8",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = 4",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 6",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 16",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Combine using product rule: log₂[x(x−6)] = 4 → x(x−6) = 2⁴ = 16 → x² − 6x − 16 = 0. Quadratic: x = [6 ± √(36 + 64)]/2 = [6 ± 10]/2. x = 8 or x = −2. Reject x = −2 because log of a negative number is undefined (also requires x − 6 > 0, so x > 6). Thus x = 8. Verify: log₂ 8 + log₂ 2 = 3 + 1 = 4 ✓.",
       "subject": "Quantitative Aptitude",
       "topic": "Logarithms — mixed tiers",
-      "topic_code": "QNT_LOGARITHMS_MIXED",
+      "topic_code": "QA_SIMPLIFY",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,

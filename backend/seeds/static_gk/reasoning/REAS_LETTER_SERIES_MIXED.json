@@ -8,16 +8,28 @@
     {
       "stem": "Find the next letter in the series: A, C, E, G, __?",
       "options": [
-        {"option_text": "H", "is_correct": false},
-        {"option_text": "I", "is_correct": true},
-        {"option_text": "J", "is_correct": false},
-        {"option_text": "K", "is_correct": false}
+        {
+          "option_text": "H",
+          "is_correct": false
+        },
+        {
+          "option_text": "I",
+          "is_correct": true
+        },
+        {
+          "option_text": "J",
+          "is_correct": false
+        },
+        {
+          "option_text": "K",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Skip one letter each time — A (skip B) C (skip D) E (skip F) G (skip H) → I. All odd-position letters of the alphabet: A(1), C(3), E(5), G(7), I(9). Shortcut: position number = 2n − 1 for n = 1, 2, 3, 4, 5.",
       "subject": "Reasoning",
       "topic": "Letter series — mixed tiers",
-      "topic_code": "REAS_LETTER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Find the next pair: AB, DE, GH, __?",
       "options": [
-        {"option_text": "IJ", "is_correct": false},
-        {"option_text": "JK", "is_correct": true},
-        {"option_text": "KL", "is_correct": false},
-        {"option_text": "HI", "is_correct": false}
+        {
+          "option_text": "IJ",
+          "is_correct": false
+        },
+        {
+          "option_text": "JK",
+          "is_correct": true
+        },
+        {
+          "option_text": "KL",
+          "is_correct": false
+        },
+        {
+          "option_text": "HI",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Each pair skips one letter after the previous pair. AB → skip C → DE → skip F → GH → skip I → JK. Positions: A(1)B(2) → D(4)E(5) → G(7)H(8) → J(10)K(11). Gap between first-letters is 3 each time.",
       "subject": "Reasoning",
       "topic": "Letter series — mixed tiers",
-      "topic_code": "REAS_LETTER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "Find the missing letter: B, D, F, __, J, L.",
       "options": [
-        {"option_text": "G", "is_correct": false},
-        {"option_text": "H", "is_correct": true},
-        {"option_text": "I", "is_correct": false},
-        {"option_text": "K", "is_correct": false}
+        {
+          "option_text": "G",
+          "is_correct": false
+        },
+        {
+          "option_text": "H",
+          "is_correct": true
+        },
+        {
+          "option_text": "I",
+          "is_correct": false
+        },
+        {
+          "option_text": "K",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Even-position letters of the alphabet — B(2), D(4), F(6), H(8), J(10), L(12). Gap of +2 each time. The missing letter at position 8 is H. Verify the rest: J(10)-H(8)=2 ✓; L(12)-J(10)=2 ✓.",
       "subject": "Reasoning",
       "topic": "Letter series — mixed tiers",
-      "topic_code": "REAS_LETTER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Find the next letter: Z, X, V, T, __?",
       "options": [
-        {"option_text": "S", "is_correct": false},
-        {"option_text": "R", "is_correct": true},
-        {"option_text": "Q", "is_correct": false},
-        {"option_text": "U", "is_correct": false}
+        {
+          "option_text": "S",
+          "is_correct": false
+        },
+        {
+          "option_text": "R",
+          "is_correct": true
+        },
+        {
+          "option_text": "Q",
+          "is_correct": false
+        },
+        {
+          "option_text": "U",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Descending, gap of −2. Z(26) → X(24) → V(22) → T(20) → R(18). The even-position letters going backwards from Z. Shortcut: 'alphabet − position' — every other letter from the end.",
       "subject": "Reasoning",
       "topic": "Letter series — mixed tiers",
-      "topic_code": "REAS_LETTER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "Find the next term: AZ, BY, CX, __?",
       "options": [
-        {"option_text": "DW", "is_correct": true},
-        {"option_text": "DV", "is_correct": false},
-        {"option_text": "EW", "is_correct": false},
-        {"option_text": "DX", "is_correct": false}
+        {
+          "option_text": "DW",
+          "is_correct": true
+        },
+        {
+          "option_text": "DV",
+          "is_correct": false
+        },
+        {
+          "option_text": "EW",
+          "is_correct": false
+        },
+        {
+          "option_text": "DX",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Two-letter pattern — 1st letters go forward (A, B, C, D, …), 2nd letters go backward (Z, Y, X, W, …). Each position sums to 27 (A+Z=1+26=27, B+Y=2+25=27, C+X=3+24=27, D+W=4+23=27). Also known as 'complementary alphabet' pairs.",
       "subject": "Reasoning",
       "topic": "Letter series — mixed tiers",
-      "topic_code": "REAS_LETTER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "If every letter of the word COMPUTER is shifted 2 positions forward in the alphabet, the new word is:",
       "options": [
-        {"option_text": "BNOOTSDQ", "is_correct": false},
-        {"option_text": "EQORWVGT", "is_correct": true},
-        {"option_text": "DPNQVUFS", "is_correct": false},
-        {"option_text": "FSPUYXI V", "is_correct": false}
+        {
+          "option_text": "BNOOTSDQ",
+          "is_correct": false
+        },
+        {
+          "option_text": "EQORWVGT",
+          "is_correct": true
+        },
+        {
+          "option_text": "DPNQVUFS",
+          "is_correct": false
+        },
+        {
+          "option_text": "FSPUYXI V",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Shift each letter +2: C(3)→E(5), O(15)→Q(17), M(13)→O(15), P(16)→R(18), U(21)→W(23), T(20)→V(22), E(5)→G(7), R(18)→T(20). Result: EQORWVGT. Trap DPNQVUFS is shift +1 (off by one).",
       "subject": "Reasoning",
       "topic": "Letter series — mixed tiers",
-      "topic_code": "REAS_LETTER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "Find the next term: AB2, CD4, EF6, __?",
       "options": [
-        {"option_text": "GH7", "is_correct": false},
-        {"option_text": "GH8", "is_correct": true},
-        {"option_text": "GH10", "is_correct": false},
-        {"option_text": "FG8", "is_correct": false}
+        {
+          "option_text": "GH7",
+          "is_correct": false
+        },
+        {
+          "option_text": "GH8",
+          "is_correct": true
+        },
+        {
+          "option_text": "GH10",
+          "is_correct": false
+        },
+        {
+          "option_text": "FG8",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Letters — AB, CD, EF, GH (consecutive pairs). Numbers — 2, 4, 6, 8 (arithmetic progression +2). So next = GH8. The letter-pair formula is 'next consecutive pair of letters'; the number formula is 'add 2 to the previous number'.",
       "subject": "Reasoning",
       "topic": "Letter series — mixed tiers",
-      "topic_code": "REAS_LETTER_SERIES_MIXED",
+      "topic_code": "RSN_SERIES",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,

@@ -8,16 +8,28 @@
     {
       "stem": "A man walks 5 km North, turns East and walks 12 km. His SHORTEST distance from start is:",
       "options": [
-        {"option_text": "13 km via straight-line distance", "is_correct": true},
-        {"option_text": "17 km via straight-line distance", "is_correct": false},
-        {"option_text": "11 km via straight-line distance", "is_correct": false},
-        {"option_text": "15 km via straight-line distance", "is_correct": false}
+        {
+          "option_text": "13 km via straight-line distance",
+          "is_correct": true
+        },
+        {
+          "option_text": "17 km via straight-line distance",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 km via straight-line distance",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 km via straight-line distance",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Shortest distance from start = √(5² + 12²) = √(25+144) = √169 = 13 km (Pythagoras: classic 5-12-13 triple). Distractor 17 = sum of legs. Distractor 11/15 = arbitrary.",
       "subject": "Reasoning",
       "topic": "Direction sense III — mixed tiers",
-      "topic_code": "REAS_DIRECTION_SENSE_III_MIXED",
+      "topic_code": "RSN_DIRECTION",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -29,16 +41,28 @@
     {
       "stem": "Ravi walks 3 km East, then 4 km North, then 3 km West. His distance from starting point is:",
       "options": [
-        {"option_text": "10 km, the sum of all walks", "is_correct": false},
-        {"option_text": "4 km, only northward distance", "is_correct": true},
-        {"option_text": "5 km, the diagonal of triangle", "is_correct": false},
-        {"option_text": "7 km, two of the walks added", "is_correct": false}
+        {
+          "option_text": "10 km, the sum of all walks",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 km, only northward distance",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 km, the diagonal of triangle",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 km, two of the walks added",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "East 3 km, then North 4 km, then West 3 km — the East 3 and West 3 cancel out (he is back to original east-west position). Net displacement = 4 km North. Distractor 10 = total path length. Distractor 5 = ignored cancelling. Distractor 7 = wrong addition.",
       "subject": "Reasoning",
       "topic": "Direction sense III — mixed tiers",
-      "topic_code": "REAS_DIRECTION_SENSE_III_MIXED",
+      "topic_code": "RSN_DIRECTION",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -50,16 +74,28 @@
     {
       "stem": "A boy walks 8 km North, then 6 km West, then 8 km South, then 14 km East. His final position from start is:",
       "options": [
-        {"option_text": "8 km East of starting position", "is_correct": true},
-        {"option_text": "6 km East of starting position", "is_correct": false},
-        {"option_text": "8 km West of starting position", "is_correct": false},
-        {"option_text": "0 km, back at the start", "is_correct": false}
+        {
+          "option_text": "8 km East of starting position",
+          "is_correct": true
+        },
+        {
+          "option_text": "6 km East of starting position",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 km West of starting position",
+          "is_correct": false
+        },
+        {
+          "option_text": "0 km, back at the start",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "N 8 + S 8 cancel (back to original N-S position). W 6 + E 14 → net 14 − 6 = 8 km East. So final = 8 km East of start. Distractor 6 = took only first west move. Distractor 8 West = sign error. Distractor 0 = assumed all cancel.",
       "subject": "Reasoning",
       "topic": "Direction sense III — mixed tiers",
-      "topic_code": "REAS_DIRECTION_SENSE_III_MIXED",
+      "topic_code": "RSN_DIRECTION",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -71,16 +107,28 @@
     {
       "stem": "Facing North, A turns 90° clockwise, then 180° clockwise, then 45° anticlockwise. He is now facing:",
       "options": [
-        {"option_text": "South-East direction at the end", "is_correct": false},
-        {"option_text": "South-West direction at the end", "is_correct": true},
-        {"option_text": "North-West direction at the end", "is_correct": false},
-        {"option_text": "North-East direction at the end", "is_correct": false}
+        {
+          "option_text": "South-East direction at the end",
+          "is_correct": false
+        },
+        {
+          "option_text": "South-West direction at the end",
+          "is_correct": true
+        },
+        {
+          "option_text": "North-West direction at the end",
+          "is_correct": false
+        },
+        {
+          "option_text": "North-East direction at the end",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Start: N. +90° CW → E. +180° CW → W. −45° (anticlockwise) from W → SW (between W and S). Confirm: 0° = N, +90 = E, +180 from E → 270 (= W). −45 from W → 270−45 = 225° = SW. Distractor SE = went the wrong direction. Distractor NW/NE = miscalculated.",
       "subject": "Reasoning",
       "topic": "Direction sense III — mixed tiers",
-      "topic_code": "REAS_DIRECTION_SENSE_III_MIXED",
+      "topic_code": "RSN_DIRECTION",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
@@ -92,16 +140,28 @@
     {
       "stem": "A walks 4 km South, turns left and walks 6 km, turns left and walks 4 km. He is now facing which direction?",
       "options": [
-        {"option_text": "North direction at the end", "is_correct": true},
-        {"option_text": "South direction at the end", "is_correct": false},
-        {"option_text": "East direction at the end", "is_correct": false},
-        {"option_text": "West direction at the end", "is_correct": false}
+        {
+          "option_text": "North direction at the end",
+          "is_correct": true
+        },
+        {
+          "option_text": "South direction at the end",
+          "is_correct": false
+        },
+        {
+          "option_text": "East direction at the end",
+          "is_correct": false
+        },
+        {
+          "option_text": "West direction at the end",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "explanation": "Facing S → walks 4 km S. Turns LEFT (when facing S, left is E) → walks 6 km E. Turns LEFT (when facing E, left is N) → walks 4 km N. So at the end he is FACING N. (His position: 6 km East of start.)",
       "subject": "Reasoning",
       "topic": "Direction sense III — mixed tiers",
-      "topic_code": "REAS_DIRECTION_SENSE_III_MIXED",
+      "topic_code": "RSN_DIRECTION",
       "difficulty": "MEDIUM",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -113,16 +173,28 @@
     {
       "stem": "Two cars start from the SAME POINT. Car A goes North 30 km; Car B goes East 40 km. The distance between them now is:",
       "options": [
-        {"option_text": "70 km via direct line distance", "is_correct": false},
-        {"option_text": "50 km via direct line distance", "is_correct": true},
-        {"option_text": "10 km via direct line distance", "is_correct": false},
-        {"option_text": "55 km via direct line distance", "is_correct": false}
+        {
+          "option_text": "70 km via direct line distance",
+          "is_correct": false
+        },
+        {
+          "option_text": "50 km via direct line distance",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 km via direct line distance",
+          "is_correct": false
+        },
+        {
+          "option_text": "55 km via direct line distance",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Pythagoras: distance = √(30² + 40²) = √(900 + 1600) = √2500 = 50 km. (3-4-5 ratio scaled by 10.) Distractor 70 = sum. Distractor 10 = difference. Distractor 55 = arbitrary.",
       "subject": "Reasoning",
       "topic": "Direction sense III — mixed tiers",
-      "topic_code": "REAS_DIRECTION_SENSE_III_MIXED",
+      "topic_code": "RSN_DIRECTION",
       "difficulty": "EASY",
       "effort_tier": "A",
       "staleness_risk": 0,
@@ -134,16 +206,28 @@
     {
       "stem": "A man starts walking East. He turns left, then right, then right, then left. The direction he is FINALLY facing is:",
       "options": [
-        {"option_text": "South in the final direction", "is_correct": false},
-        {"option_text": "East in the final direction", "is_correct": true},
-        {"option_text": "West in the final direction", "is_correct": false},
-        {"option_text": "North in the final direction", "is_correct": false}
+        {
+          "option_text": "South in the final direction",
+          "is_correct": false
+        },
+        {
+          "option_text": "East in the final direction",
+          "is_correct": true
+        },
+        {
+          "option_text": "West in the final direction",
+          "is_correct": false
+        },
+        {
+          "option_text": "North in the final direction",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "E → left = N → right = E → right = S → left = E. Trace: facing E, turn left → N (90° left from E). From N, turn right → E. From E, turn right → S. From S, turn left → E. Final = E. Distractor S/W/N = errors at one of the turns.",
       "subject": "Reasoning",
       "topic": "Direction sense III — mixed tiers",
-      "topic_code": "REAS_DIRECTION_SENSE_III_MIXED",
+      "topic_code": "RSN_DIRECTION",
       "difficulty": "HARD",
       "effort_tier": "B",
       "staleness_risk": 0,
