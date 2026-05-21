@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, SafeAreaView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { SvgXml } from 'react-native-svg';
 import { QuizAPI, PrivateModuleAPI } from '../../services/api';
 import { COLORS } from '../../styles/theme';
 
 interface QuizQuestion {
     id: string;
     question_text: string;
+    diagram_svg?: string;
+    explanation?: string;
+    explanation_svg?: string;
     options: { option_text: string; is_correct?: boolean }[];
     subject?: string;
     topic?: string;
@@ -21,6 +25,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
     const [loading, setLoading] = useState(true);
     const [submitted, setSubmitted] = useState(false);
     const [scorecard, setScorecard] = useState<any>(null);
+    const [showReview, setShowReview] = useState(false);
     const [submitting, setSubmitting] = useState(false);
 
     useEffect(() => {
@@ -197,6 +202,47 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                     >
                         <Text style={{ color: '#fff', fontWeight: '700', fontSize: 16 }}>Back to Categories</Text>
                     </TouchableOpacity>
+
+                    {/* Review Toggle */}
+                    <TouchableOpacity
+                        onPress={() => setShowReview(v => !v)}
+                        style={{ borderRadius: 14, paddingVertical: 14, alignItems: 'center', marginBottom: 16, borderWidth: 1, borderColor: '#e5e7eb', backgroundColor: '#fff' }}
+                    >
+                        <Text style={{ color: '#374151', fontWeight: '600', fontSize: 14 }}>{showReview ? '▲ Hide Review' : '📋 Review Answers'}</Text>
+                    </TouchableOpacity>
+
+                    {showReview && questions.map((q, idx) => {
+                        const selIdx = selectedAnswers[idx];
+                        return (
+                            <View key={q.id} style={{ backgroundColor: '#fff', borderRadius: 14, padding: 16, marginBottom: 12, borderWidth: 1, borderColor: '#e5e7eb' }}>
+                                <Text style={{ fontSize: 13, fontWeight: '600', color: '#111827', marginBottom: 10, lineHeight: 20 }}>
+                                    {idx + 1}. {q.question_text}
+                                </Text>
+                                {q.options.map((opt, i) => {
+                                    const isCorrect = opt.is_correct;
+                                    const isSelected = selIdx === i;
+                                    const bg = isCorrect ? '#f0fdf4' : isSelected ? '#fef2f2' : '#f9fafb';
+                                    const border = isCorrect ? '#22c55e' : isSelected ? '#ef4444' : '#e5e7eb';
+                                    return (
+                                        <View key={i} style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: bg, borderWidth: 1, borderColor: border, borderRadius: 8, paddingHorizontal: 10, paddingVertical: 8, marginBottom: 6 }}>
+                                            <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#6b7280', marginRight: 6 }}>{String.fromCharCode(65 + i)}.</Text>
+                                            <Text style={{ fontSize: 12, color: '#374151', flex: 1 }}>{opt.option_text}</Text>
+                                            {isCorrect && <Text style={{ color: '#16a34a', fontWeight: 'bold', fontSize: 14 }}>✓</Text>}
+                                            {isSelected && !isCorrect && <Text style={{ color: '#dc2626', fontWeight: 'bold', fontSize: 14 }}>✗</Text>}
+                                        </View>
+                                    );
+                                })}
+                                {q.explanation ? (
+                                    <View style={{ backgroundColor: '#eff6ff', borderRadius: 8, padding: 10, marginTop: 8, borderWidth: 1, borderColor: '#bfdbfe' }}>
+                                        <Text style={{ fontSize: 12, color: '#1e40af' }}>💡 {q.explanation}</Text>
+                                    </View>
+                                ) : null}
+                                {q.explanation_svg ? (
+                                    <SvgXml xml={q.explanation_svg} width="100%" height={200} style={{ marginTop: 10 }} />
+                                ) : null}
+                            </View>
+                        );
+                    })}
                 </ScrollView>
             </SafeAreaView>
         );
@@ -239,6 +285,12 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                         {currentQ.question_text}
                     </Text>
                 </View>
+
+                {/* Diagram */}
+                {currentQ.diagram_svg && (
+                    <SvgXml xml={currentQ.diagram_svg} width="100%" height={200}
+                        style={{ marginBottom: 16 }} />
+                )}
 
                 {/* Options */}
                 {currentQ.options.map((opt, i) => {

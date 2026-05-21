@@ -8,15 +8,25 @@
     {
       "stem": "The human heart has how many chambers?",
       "options": [
-        {"option_text": "2", "is_correct": false},
-        {"option_text": "4 (two atria + two ventricles)", "is_correct": true},
-        {"option_text": "3", "is_correct": false},
-        {"option_text": "1", "is_correct": false}
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 (two atria + two ventricles)",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Four chambers: right atrium → right ventricle → pulmonary artery → lungs (deoxygenated blood); left atrium ← pulmonary veins ← lungs (oxygenated blood) → left ventricle → aorta. Septum between left and right halves prevents mixing. Average size ~fist, mass ~300 g, beats ~72 bpm at rest = ~100,000 beats/day. Fish — 2 chambers (1A + 1V); frogs/reptiles — 3 (2A + 1V, except crocodiles); birds + mammals — 4 (complete double circulation).",
-      "needs_diagram": true,
-      "diagram_hint": "Cross-section of human heart showing 4 chambers, valves (tricuspid, mitral, pulmonary, aortic), major vessels (vena cava, pulmonary artery/vein, aorta).",
       "subject": "Biology",
       "topic": "Human heart and circulation — mixed tiers",
       "topic_code": "BIO_HEART_CIRCULATION_II_MIXED",
@@ -26,15 +36,28 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-24-bio-hc-01",
       "generated_at": "2026-04-24T16:20:00+00:00",
-      "id": "sgk_BIO_HEART_CIRCULATION_II_MIXED_00001"
+      "id": "sgk_BIO_HEART_CIRCULATION_II_MIXED_00001",
+      "explanation_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 240\" width=\"400\" height=\"240\">\n<rect width=\"400\" height=\"240\" fill=\"#fff1f2\" rx=\"8\"/>\n<text x=\"200\" y=\"15\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#881337\">Human Heart — 4 Chambers</text>\n<!-- Heart outline -->\n<path d=\"M200,220 C140,180 60,140 60,100 C60,65 90,45 130,55 C150,60 170,75 200,95 C230,75 250,60 270,55 C310,45 340,65 340,100 C340,140 260,180 200,220Z\" fill=\"#fecdd3\" stroke=\"#f43f5e\" stroke-width=\"2\"/>\n<!-- Septum -->\n<line x1=\"200\" y1=\"55\" x2=\"200\" y2=\"200\" stroke=\"#be123c\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n<!-- Right Atrium (upper right from patient's view = left of diagram) -->\n<rect x=\"70\" y=\"55\" width=\"115\" height=\"60\" rx=\"6\" fill=\"#fda4af\" stroke=\"#f43f5e\" stroke-width=\"1.5\" fill-opacity=\"0.7\"/>\n<text x=\"127\" y=\"82\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#881337\">Right Atrium</text>\n<text x=\"127\" y=\"95\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#9f1239\">(receives deoxygenated blood)</text>\n<!-- Left Atrium (upper left from patient = right of diagram) -->\n<rect x=\"215\" y=\"55\" width=\"115\" height=\"60\" rx=\"6\" fill=\"#fca5a5\" stroke=\"#f43f5e\" stroke-width=\"1.5\" fill-opacity=\"0.7\"/>\n<text x=\"272\" y=\"82\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#881337\">Left Atrium</text>\n<text x=\"272\" y=\"95\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#9f1239\">(receives oxygenated blood)</text>\n<!-- Tricuspid valve -->\n<text x=\"127\" y=\"122\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#be123c\">Tricuspid valve ▼</text>\n<!-- Mitral valve -->\n<text x=\"272\" y=\"122\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#be123c\">Mitral valve ▼</text>\n<!-- Right Ventricle -->\n<rect x=\"70\" y=\"128\" width=\"115\" height=\"75\" rx=\"6\" fill=\"#fda4af\" stroke=\"#f43f5e\" stroke-width=\"1.5\" fill-opacity=\"0.7\"/>\n<text x=\"127\" y=\"158\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#881337\">Right Ventricle</text>\n<text x=\"127\" y=\"171\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#9f1239\">→ Pulmonary artery</text>\n<!-- Left Ventricle -->\n<rect x=\"215\" y=\"128\" width=\"115\" height=\"75\" rx=\"6\" fill=\"#fca5a5\" stroke=\"#f43f5e\" stroke-width=\"1.5\" fill-opacity=\"0.7\"/>\n<text x=\"272\" y=\"158\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#881337\">Left Ventricle</text>\n<text x=\"272\" y=\"171\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#9f1239\">→ Aorta (systemic)</text>\n<!-- Vessels top -->\n<text x=\"105\" y=\"44\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#1e3a8a\">Superior Vena Cava ↓</text>\n<text x=\"295\" y=\"44\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#1e3a8a\">Pulmonary veins ↓</text>\n</svg>"
     },
     {
       "stem": "The valve between the LEFT atrium and LEFT ventricle of the human heart is called the:",
       "options": [
-        {"option_text": "Tricuspid valve", "is_correct": false},
-        {"option_text": "Mitral (bicuspid) valve", "is_correct": true},
-        {"option_text": "Pulmonary valve", "is_correct": false},
-        {"option_text": "Aortic valve", "is_correct": false}
+        {
+          "option_text": "Tricuspid valve",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mitral (bicuspid) valve",
+          "is_correct": true
+        },
+        {
+          "option_text": "Pulmonary valve",
+          "is_correct": false
+        },
+        {
+          "option_text": "Aortic valve",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Four heart valves: TRICUSPID (right atrium ↔ right ventricle, 3 cusps); BICUSPID / MITRAL (left atrium ↔ left ventricle, 2 cusps; named after a 'mitre' — bishop's headgear); PULMONARY semilunar (RV ↔ pulmonary artery); AORTIC semilunar (LV ↔ aorta). Mnemonic 'LAB RAT' — Left = Atrium-Bicuspid, Right = Atrium-Tricuspid. 'Lub-dub' heart sounds: Lub = AV valves close (tricuspid + mitral); Dub = semilunar valves close.",
@@ -52,10 +75,22 @@
     {
       "stem": "The natural pacemaker of the heart, which initiates each heartbeat, is the:",
       "options": [
-        {"option_text": "AV node (atrio-ventricular node)", "is_correct": false},
-        {"option_text": "SA node (sino-atrial node) in the right atrium", "is_correct": true},
-        {"option_text": "Bundle of His", "is_correct": false},
-        {"option_text": "Purkinje fibres", "is_correct": false}
+        {
+          "option_text": "AV node (atrio-ventricular node)",
+          "is_correct": false
+        },
+        {
+          "option_text": "SA node (sino-atrial node) in the right atrium",
+          "is_correct": true
+        },
+        {
+          "option_text": "Bundle of His",
+          "is_correct": false
+        },
+        {
+          "option_text": "Purkinje fibres",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Conduction pathway — SA node (sinoatrial, in right atrial wall, ~100 bpm intrinsic rate, slowed to ~72 by vagal tone) → atrial muscle → AV node (atrioventricular, brief delay ~0.1s lets atria fully empty) → Bundle of His → Right + Left bundle branches → Purkinje fibres → ventricular muscle. Each firing produces an ECG wave (P = atrial depolarisation, QRS = ventricular depolarisation, T = ventricular repolarisation).",
@@ -73,10 +108,22 @@
     {
       "stem": "Normal blood pressure for a healthy adult at rest is approximately:",
       "options": [
-        {"option_text": "80/120 mmHg", "is_correct": false},
-        {"option_text": "120/80 mmHg (systolic/diastolic)", "is_correct": true},
-        {"option_text": "180/100 mmHg", "is_correct": false},
-        {"option_text": "60/40 mmHg", "is_correct": false}
+        {
+          "option_text": "80/120 mmHg",
+          "is_correct": false
+        },
+        {
+          "option_text": "120/80 mmHg (systolic/diastolic)",
+          "is_correct": true
+        },
+        {
+          "option_text": "180/100 mmHg",
+          "is_correct": false
+        },
+        {
+          "option_text": "60/40 mmHg",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Systolic / Diastolic = 120 / 80 mmHg ideally. Systolic — peak pressure when ventricles contract; diastolic — minimum when ventricles relax. Hypertension: ≥140/90 (Stage 1); Pre-hypertension 120-139 / 80-89; Hypotension <90/60. Measured with sphygmomanometer (Korotkoff sounds via stethoscope) or digital. Risk factors — smoking, salt, stress, obesity, alcohol, family history. Untreated hypertension → stroke, heart failure, kidney disease.",
@@ -94,10 +141,22 @@
     {
       "stem": "The 'pulmonary' circulation refers to blood flow between the:",
       "options": [
-        {"option_text": "Heart and the body", "is_correct": false},
-        {"option_text": "Heart and the lungs", "is_correct": true},
-        {"option_text": "Heart and the kidneys", "is_correct": false},
-        {"option_text": "Heart and the brain", "is_correct": false}
+        {
+          "option_text": "Heart and the body",
+          "is_correct": false
+        },
+        {
+          "option_text": "Heart and the lungs",
+          "is_correct": true
+        },
+        {
+          "option_text": "Heart and the kidneys",
+          "is_correct": false
+        },
+        {
+          "option_text": "Heart and the brain",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Two circulations: PULMONARY (heart → lungs → heart, oxygenates blood); SYSTEMIC (heart → body → heart, delivers oxygen to tissues). Pulmonary artery — only artery carrying DEOXYGENATED blood (RV → lungs). Pulmonary veins — only veins carrying OXYGENATED blood (lungs → LA). Discovered fully by William Harvey in 1628 (De Motu Cordis). Pulmonary circulation operates at much LOWER pressure (~25/8 mmHg) than systemic — reason for the thin-walled pulmonary artery vs muscular aorta.",
@@ -115,10 +174,22 @@
     {
       "stem": "The chamber of the heart with the THICKEST muscular wall is the:",
       "options": [
-        {"option_text": "Right atrium", "is_correct": false},
-        {"option_text": "Left ventricle (must pump blood to entire body via aorta)", "is_correct": true},
-        {"option_text": "Right ventricle", "is_correct": false},
-        {"option_text": "Left atrium", "is_correct": false}
+        {
+          "option_text": "Right atrium",
+          "is_correct": false
+        },
+        {
+          "option_text": "Left ventricle (must pump blood to entire body via aorta)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Right ventricle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Left atrium",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Left ventricle wall is ~3-4× thicker than right ventricle's because it generates the systemic blood pressure (~120 mmHg) — pumping blood through the aorta to every body tissue. Right ventricle has lower pressure (~25 mmHg pulmonary) — needs less muscle. Atria are thin-walled — they only push blood ~5 mmHg into the next-door ventricle. Hypertension causes Left Ventricular Hypertrophy (LVH) — thicker wall but stiffer = poorer filling.",
@@ -136,10 +207,22 @@
     {
       "stem": "Blood components by volume — plasma is roughly:",
       "options": [
-        {"option_text": "10% of blood", "is_correct": false},
-        {"option_text": "55% of blood; the rest 45% is cells (mostly RBCs)", "is_correct": true},
-        {"option_text": "80% of blood", "is_correct": false},
-        {"option_text": "30% of blood", "is_correct": false}
+        {
+          "option_text": "10% of blood",
+          "is_correct": false
+        },
+        {
+          "option_text": "55% of blood; the rest 45% is cells (mostly RBCs)",
+          "is_correct": true
+        },
+        {
+          "option_text": "80% of blood",
+          "is_correct": false
+        },
+        {
+          "option_text": "30% of blood",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Whole blood: plasma ~55% (water 90%, proteins 7%, ions, glucose, etc.) + cellular ('formed elements') ~45% — RBCs (4.5-5.5 million/µL, dominate by volume), WBCs (4-11 thousand/µL — 5 types: neutrophil, lymphocyte, monocyte, eosinophil, basophil), platelets (1.5-4 lakh/µL). Hematocrit (PCV) = % cells = ~40-50% in adults. Plasma without clotting factors = serum (used in medical tests). Total adult blood volume ~5-5.5 litres.",

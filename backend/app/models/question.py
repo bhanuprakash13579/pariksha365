@@ -17,7 +17,9 @@ class Question(Base):
     section_id = Column(UUID(as_uuid=True), ForeignKey("sections.id"))
     question_text = Column(Text, nullable=False)
     image_url = Column(String, nullable=True)
+    diagram_svg = Column(Text, nullable=True)
     explanation = Column(Text, nullable=True)
+    explanation_svg = Column(Text, nullable=True)
     difficulty = Column(SAEnum(DifficultyLevel), default=DifficultyLevel.MEDIUM)
     subject = Column(String, index=True, nullable=True) # e.g. Polity, English, Reasoning
     topic = Column(String, nullable=True)

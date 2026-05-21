@@ -8,15 +8,25 @@
     {
       "stem": "The largest part of the human brain is the:",
       "options": [
-        {"option_text": "Cerebellum", "is_correct": false},
-        {"option_text": "Cerebrum", "is_correct": true},
-        {"option_text": "Medulla oblongata", "is_correct": false},
-        {"option_text": "Pons", "is_correct": false}
+        {
+          "option_text": "Cerebellum",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cerebrum",
+          "is_correct": true
+        },
+        {
+          "option_text": "Medulla oblongata",
+          "is_correct": false
+        },
+        {
+          "option_text": "Pons",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Cerebrum — the largest part (~80% of brain mass). Divided into two hemispheres (left + right) connected by corpus callosum; outer grey matter (cerebral cortex) is folded into gyri and sulci, increasing surface area. Controls voluntary movement, sensory perception, language, memory, reasoning. Cerebellum — second largest, controls balance and coordination. Medulla oblongata — controls involuntary functions (heart rate, breathing). Pons — relays signals between cerebrum and cerebellum.",
-      "needs_diagram": true,
-      "diagram_hint": "Lateral view of human brain — labelled cerebrum (with frontal, parietal, temporal, occipital lobes), cerebellum, brain stem (midbrain, pons, medulla oblongata).",
       "subject": "Biology",
       "topic": "Human brain — mixed tiers",
       "topic_code": "BIO_HUMAN_BRAIN_MIXED",
@@ -26,15 +36,28 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-24-bio-br-01",
       "generated_at": "2026-04-24T13:00:00+00:00",
-      "id": "sgk_BIO_HUMAN_BRAIN_MIXED_00001"
+      "id": "sgk_BIO_HUMAN_BRAIN_MIXED_00001",
+      "explanation_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 220\" width=\"400\" height=\"220\">\n<rect width=\"400\" height=\"220\" fill=\"#f5f3ff\" rx=\"8\"/>\n<text x=\"200\" y=\"15\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#3730a3\">Human Brain — Lateral View</text>\n<!-- Brain outline (rough ellipse) -->\n<ellipse cx=\"185\" cy=\"110\" rx=\"150\" ry=\"90\" fill=\"#ddd6fe\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n<!-- Brain stem at bottom right -->\n<ellipse cx=\"290\" cy=\"175\" rx=\"28\" ry=\"20\" fill=\"#c7d2fe\" stroke=\"#4f46e5\" stroke-width=\"1.5\"/>\n<text x=\"290\" y=\"179\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"9\" fill=\"#3730a3\">Brain Stem</text>\n<!-- Cerebellum (lower back) -->\n<ellipse cx=\"100\" cy=\"170\" rx=\"45\" ry=\"28\" fill=\"#bbf7d0\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n<text x=\"100\" y=\"174\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"9\" fill=\"#14532d\">Cerebellum</text>\n<!-- Lobe divisions -->\n<path d=\"M185,30 Q220,80 210,130\" stroke=\"#4f46e5\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"4,2\"/>\n<path d=\"M155,30 Q130,70 135,120\" stroke=\"#4f46e5\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"4,2\"/>\n<!-- Lobe labels -->\n<text x=\"230\" y=\"70\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e1b4b\">Frontal</text>\n<text x=\"230\" y=\"82\" font-family=\"sans-serif\" font-size=\"9\" fill=\"#3730a3\">Lobe</text>\n<text x=\"168\" y=\"58\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e1b4b\">Parietal</text>\n<text x=\"168\" y=\"70\" font-family=\"sans-serif\" font-size=\"9\" fill=\"#3730a3\">Lobe</text>\n<text x=\"70\" y=\"80\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e1b4b\">Occipital</text>\n<text x=\"70\" y=\"92\" font-family=\"sans-serif\" font-size=\"9\" fill=\"#3730a3\">Lobe</text>\n<text x=\"200\" y=\"135\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e1b4b\">Temporal</text>\n<text x=\"205\" y=\"147\" font-family=\"sans-serif\" font-size=\"9\" fill=\"#3730a3\">Lobe</text>\n<!-- Cerebrum label -->\n<text x=\"155\" y=\"105\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#4c1d95\">Cerebrum</text>\n<text x=\"155\" y=\"118\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#5b21b6\">(largest part)</text>\n</svg>"
     },
     {
       "stem": "Which part of the brain is responsible for maintaining body balance and coordinated muscle movements?",
       "options": [
-        {"option_text": "Cerebrum", "is_correct": false},
-        {"option_text": "Cerebellum", "is_correct": true},
-        {"option_text": "Hypothalamus", "is_correct": false},
-        {"option_text": "Thalamus", "is_correct": false}
+        {
+          "option_text": "Cerebrum",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cerebellum",
+          "is_correct": true
+        },
+        {
+          "option_text": "Hypothalamus",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thalamus",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Cerebellum (Latin: 'little brain') — sits at the back of the skull, below the cerebrum. Despite being only ~10% of brain mass it contains over half of the brain's neurons. Coordinates voluntary movements (gait, posture, fine motor control), maintains balance using inputs from inner ear and muscle proprioceptors. Damage causes ataxia (uncoordinated movement). Hypothalamus controls hormones, hunger, thirst, body temperature. Thalamus is the brain's 'relay station' for sensory information.",
@@ -52,10 +75,22 @@
     {
       "stem": "The 'master gland' of the body, attached to the base of the brain (controls many other endocrine glands), is the:",
       "options": [
-        {"option_text": "Thyroid", "is_correct": false},
-        {"option_text": "Pituitary gland", "is_correct": true},
-        {"option_text": "Pineal gland", "is_correct": false},
-        {"option_text": "Adrenal", "is_correct": false}
+        {
+          "option_text": "Thyroid",
+          "is_correct": false
+        },
+        {
+          "option_text": "Pituitary gland",
+          "is_correct": true
+        },
+        {
+          "option_text": "Pineal gland",
+          "is_correct": false
+        },
+        {
+          "option_text": "Adrenal",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Pituitary — pea-sized endocrine gland under the hypothalamus. Anterior pituitary secretes GH, ACTH, TSH, FSH, LH, prolactin — controlling growth, stress response, thyroid, gonads, lactation. Posterior pituitary secretes ADH (water balance) and oxytocin (childbirth, lactation). Hypothalamus regulates the pituitary via releasing hormones — making the H-P axis the core of endocrine control. Pineal — secretes melatonin (sleep cycle). Adrenal — kidneys' top — secretes cortisol, adrenaline.",
@@ -73,15 +108,25 @@
     {
       "stem": "Which lobe of the cerebral cortex is primarily responsible for vision?",
       "options": [
-        {"option_text": "Frontal lobe", "is_correct": false},
-        {"option_text": "Occipital lobe", "is_correct": true},
-        {"option_text": "Temporal lobe", "is_correct": false},
-        {"option_text": "Parietal lobe", "is_correct": false}
+        {
+          "option_text": "Frontal lobe",
+          "is_correct": false
+        },
+        {
+          "option_text": "Occipital lobe",
+          "is_correct": true
+        },
+        {
+          "option_text": "Temporal lobe",
+          "is_correct": false
+        },
+        {
+          "option_text": "Parietal lobe",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Occipital lobe — at the back of the head — processes visual information from the eyes (primary visual cortex V1). Damage causes 'cortical blindness' (eyes work, brain can't process the input). Frontal — voluntary movement, decision-making, personality. Parietal — touch, spatial awareness. Temporal — hearing, language, memory. The four lobes are separated by named sulci (central sulcus, lateral fissure, parieto-occipital sulcus).",
-      "needs_diagram": true,
-      "diagram_hint": "Lateral view of cerebral hemisphere with the four lobes shaded distinct colours and labelled.",
       "subject": "Biology",
       "topic": "Human brain — mixed tiers",
       "topic_code": "BIO_HUMAN_BRAIN_MIXED",
@@ -91,15 +136,28 @@
       "answer_source": "generated",
       "generator_tag": "claude-opus-2026-04-24-bio-br-04",
       "generated_at": "2026-04-24T13:00:00+00:00",
-      "id": "sgk_BIO_HUMAN_BRAIN_MIXED_00004"
+      "id": "sgk_BIO_HUMAN_BRAIN_MIXED_00004",
+      "explanation_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 220\" width=\"400\" height=\"220\">\n<rect width=\"400\" height=\"220\" fill=\"#faf5ff\" rx=\"8\"/>\n<text x=\"200\" y=\"15\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#581c87\">Cerebral Cortex — 4 Lobes</text>\n<!-- Brain outline -->\n<ellipse cx=\"185\" cy=\"110\" rx=\"150\" ry=\"88\" fill=\"#ede9fe\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n<!-- Frontal lobe (front, largest, blue) -->\n<path d=\"M185,25 Q300,40 320,110 Q290,130 210,130 Q220,80 185,25Z\" fill=\"#bfdbfe\" fill-opacity=\"0.8\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/>\n<text x=\"268\" y=\"85\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#1e3a8a\">Frontal</text>\n<text x=\"268\" y=\"97\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#1e40af\">motor control</text>\n<text x=\"268\" y=\"107\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#1e40af\">reasoning</text>\n<!-- Parietal lobe (top, green) -->\n<path d=\"M185,25 Q100,35 60,80 Q70,130 130,140 Q155,110 210,130 Q220,80 185,25Z\" fill=\"#bbf7d0\" fill-opacity=\"0.8\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n<text x=\"120\" y=\"80\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#14532d\">Parietal</text>\n<text x=\"120\" y=\"92\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#166534\">touch, space</text>\n<!-- Temporal lobe (bottom middle, orange) -->\n<path d=\"M210,130 Q255,155 290,175 Q230,195 165,185 Q125,175 130,140 Q155,110 210,130Z\" fill=\"#fed7aa\" fill-opacity=\"0.8\" stroke=\"#f97316\" stroke-width=\"1.5\"/>\n<text x=\"205\" y=\"170\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#7c2d12\">Temporal</text>\n<text x=\"205\" y=\"182\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#9a3412\">hearing, memory</text>\n<!-- Occipital lobe (back, red) — vision -->\n<path d=\"M60,80 Q36,115 55,155 Q80,190 130,190 Q165,185 130,140 Q70,130 60,80Z\" fill=\"#fecaca\" fill-opacity=\"0.8\" stroke=\"#ef4444\" stroke-width=\"1.5\"/>\n<text x=\"76\" y=\"155\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#7f1d1d\">Occipital</text>\n<text x=\"76\" y=\"167\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"8\" fill=\"#991b1b\">VISION ★</text>\n</svg>"
     },
     {
       "stem": "The neurotransmitter involved in muscle contraction at neuromuscular junctions is:",
       "options": [
-        {"option_text": "Dopamine", "is_correct": false},
-        {"option_text": "Acetylcholine", "is_correct": true},
-        {"option_text": "Serotonin", "is_correct": false},
-        {"option_text": "GABA", "is_correct": false}
+        {
+          "option_text": "Dopamine",
+          "is_correct": false
+        },
+        {
+          "option_text": "Acetylcholine",
+          "is_correct": true
+        },
+        {
+          "option_text": "Serotonin",
+          "is_correct": false
+        },
+        {
+          "option_text": "GABA",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Acetylcholine (ACh) — released by motor neurons at the neuromuscular junction; binds nicotinic receptors on muscle fibres → action potential → contraction. Acetylcholinesterase breaks it down to terminate the signal. Drugs targeting this pathway: nerve agents (sarin, VX) inhibit the esterase → continuous stimulation → paralysis; myasthenia gravis = autoimmune attack on ACh receptors. Other key neurotransmitters: dopamine (reward, motor control — Parkinson's = dopamine deficit), serotonin (mood — SSRIs target it), GABA (main inhibitory in CNS), glutamate (main excitatory).",
@@ -117,10 +175,22 @@
     {
       "stem": "The medulla oblongata, situated at the base of the brain stem, is most critical for:",
       "options": [
-        {"option_text": "Language and speech", "is_correct": false},
-        {"option_text": "Vital autonomic functions — heart rate, breathing, blood pressure, swallowing", "is_correct": true},
-        {"option_text": "Long-term memory storage", "is_correct": false},
-        {"option_text": "Voluntary motor control", "is_correct": false}
+        {
+          "option_text": "Language and speech",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vital autonomic functions — heart rate, breathing, blood pressure, swallowing",
+          "is_correct": true
+        },
+        {
+          "option_text": "Long-term memory storage",
+          "is_correct": false
+        },
+        {
+          "option_text": "Voluntary motor control",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "Medulla oblongata — hosts the cardiac centre, respiratory rhythm centre and vasomotor centre. Damage here is rapidly fatal because these autonomic functions cease. Also handles reflexes — vomiting, sneezing, coughing, swallowing. The respiratory rhythm has 2 components — inspiratory (medulla) + apneustic + pneumotaxic (pons fine-tuning). 'Brain death' diagnosis hinges on the absence of brainstem reflexes including loss of medullary function.",
@@ -138,10 +208,22 @@
     {
       "stem": "The number of cranial nerves arising from the brain in humans is:",
       "options": [
-        {"option_text": "10", "is_correct": false},
-        {"option_text": "12", "is_correct": true},
-        {"option_text": "14", "is_correct": false},
-        {"option_text": "8", "is_correct": false}
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "explanation": "12 pairs of cranial nerves — labelled by Roman numerals I to XII. Mnemonic 'On Old Olympus's Towering Tops, A Finn And German Viewed Some Hops' — Olfactory (I), Optic (II), Oculomotor (III), Trochlear (IV), Trigeminal (V), Abducens (VI), Facial (VII), Auditory/Vestibulocochlear (VIII), Glossopharyngeal (IX), Vagus (X), Accessory/Spinal Accessory (XI), Hypoglossal (XII). Vagus (X) is the longest cranial nerve. The peripheral nervous system also has 31 pairs of spinal nerves.",

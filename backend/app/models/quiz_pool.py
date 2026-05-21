@@ -17,7 +17,9 @@ class QuizQuestion(Base):
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, index=True)
     question_text = Column(Text, nullable=False)
     image_url = Column(String, nullable=True)
+    diagram_svg = Column(Text, nullable=True)
     explanation = Column(Text, nullable=True)
+    explanation_svg = Column(Text, nullable=True)
     difficulty = Column(String, default="MEDIUM")
     subject = Column(String, index=True, nullable=False)  # e.g., "Polity", "Reasoning"
     topic = Column(String, index=True, nullable=True)     # e.g., "Fundamental Rights", "Syllogism"

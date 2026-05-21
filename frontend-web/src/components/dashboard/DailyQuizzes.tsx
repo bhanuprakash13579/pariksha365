@@ -187,6 +187,51 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                         className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-xl transition-colors shadow-lg">
                         ← Back to Categories
                     </button>
+
+                    {/* Review Answers */}
+                    <div className="mt-6">
+                        <h3 className="font-bold text-gray-900 mb-4">📋 Review Answers</h3>
+                        {activeQuiz.questions.map((q: any, idx: number) => {
+                            const selectedIdx = activeQuiz.answers[q.id];
+                            const correctIdx = q.options?.findIndex((o: any) => o.is_correct);
+                            return (
+                                <div key={q.id} className="bg-white rounded-xl border border-gray-200 p-4 mb-4 shadow-sm">
+                                    <p className="text-sm font-medium text-gray-900 mb-3 leading-relaxed">
+                                        <span className="text-gray-400 font-bold mr-1">{idx + 1}.</span>
+                                        <span dangerouslySetInnerHTML={{ __html: q.question_text.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/\n/g, '<br />') }} />
+                                    </p>
+                                    <div className="space-y-1.5 mb-3">
+                                        {q.options?.map((opt: any, i: number) => {
+                                            const isCorrect = opt.is_correct;
+                                            const isSelected = selectedIdx === i;
+                                            const cls = isCorrect
+                                                ? 'bg-green-50 border-green-400 text-green-900'
+                                                : isSelected
+                                                    ? 'bg-red-50 border-red-400 text-red-900'
+                                                    : 'bg-gray-50 border-gray-200 text-gray-700';
+                                            return (
+                                                <div key={i} className={`flex items-center px-3 py-2 border rounded-lg text-sm ${cls}`}>
+                                                    <span className="font-bold mr-2">{String.fromCharCode(65 + i)}.</span>
+                                                    <span className="flex-1">{opt.option_text}</span>
+                                                    {isCorrect && <span className="ml-2 font-bold text-green-600">✓</span>}
+                                                    {isSelected && !isCorrect && <span className="ml-2 font-bold text-red-600">✗</span>}
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                    {q.explanation && (
+                                        <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-xs text-blue-900">
+                                            💡 {q.explanation}
+                                        </div>
+                                    )}
+                                    {q.explanation_svg && (
+                                        <div className="mt-3 flex justify-center overflow-x-auto"
+                                            dangerouslySetInnerHTML={{ __html: q.explanation_svg }} />
+                                    )}
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             );
         }
@@ -212,6 +257,10 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                 <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm mb-6">
                     <div className="text-base font-medium text-gray-900 leading-relaxed mb-6 prose prose-sm max-w-none"
                         dangerouslySetInnerHTML={{ __html: q.question_text.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/\n/g, '<br />') }} />
+                    {q.diagram_svg && (
+                        <div className="mb-6 flex justify-center"
+                            dangerouslySetInnerHTML={{ __html: q.diagram_svg }} />
+                    )}
 
                     <div className="space-y-3">
                         {q.options?.map((opt: any, i: number) => (

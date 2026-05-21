@@ -588,7 +588,9 @@ async def upload_quiz_questions(db: AsyncSession, questions: List[dict]) -> dict
         quiz_q = QuizQuestion(
             question_text=q.get("question_text", ""),
             image_url=q.get("image_url"),
+            diagram_svg=q.get("diagram_svg"),
             explanation=q.get("explanation", ""),
+            explanation_svg=q.get("explanation_svg"),
             difficulty=q.get("difficulty", "MEDIUM"),
             subject=canon_subj,
             topic=canon_topic,
@@ -768,6 +770,7 @@ async def _count_weak_topic_questions(db, weak_topics) -> int:
 def _serialize_quiz_question(q: QuizQuestion) -> dict:
     return {
         "id": str(q.id), "question_text": q.question_text, "image_url": q.image_url,
+        "diagram_svg": q.diagram_svg, "explanation_svg": q.explanation_svg,
         "subject": q.subject, "topic": q.topic, "topic_code": q.topic_code,
         "difficulty": q.difficulty, "explanation": q.explanation,
         "options": [{"option_text": o.get("option_text"), "is_correct": o.get("is_correct")} for o in q.options]

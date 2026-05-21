@@ -197,6 +197,8 @@ class QuizQuestionCreate(BaseModel):
     explanation: Optional[str] = ""
     difficulty: Optional[str] = "MEDIUM"
     image_url: Optional[str] = None
+    diagram_svg: Optional[str] = None
+    explanation_svg: Optional[str] = None
 
 
 class QuizQuestionUpdate(BaseModel):
@@ -208,6 +210,8 @@ class QuizQuestionUpdate(BaseModel):
     explanation: Optional[str] = None
     difficulty: Optional[str] = None
     image_url: Optional[str] = None
+    diagram_svg: Optional[str] = None
+    explanation_svg: Optional[str] = None
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -496,6 +500,8 @@ async def create_quiz_question(
         explanation=data.explanation or "",
         difficulty=data.difficulty or "MEDIUM",
         image_url=data.image_url,
+        diagram_svg=data.diagram_svg,
+        explanation_svg=data.explanation_svg,
     )
     db.add(q)
     await db.commit()
@@ -527,6 +533,8 @@ async def update_quiz_question(
     if data.explanation is not None: q.explanation = data.explanation
     if data.difficulty is not None: q.difficulty = data.difficulty
     if data.image_url is not None: q.image_url = data.image_url
+    if data.diagram_svg is not None: q.diagram_svg = data.diagram_svg
+    if data.explanation_svg is not None: q.explanation_svg = data.explanation_svg
 
     db.add(q)
     await db.commit()

@@ -8,6 +8,9 @@ interface Question {
     id: string;
     question_text: string;
     image_url?: string;
+    diagram_svg?: string;
+    explanation?: string;
+    explanation_svg?: string;
     options: { option_text: string, is_correct?: boolean }[];
 }
 
@@ -715,6 +718,10 @@ export const MockTestInterface = () => {
                                 {currentQuestion.image_url && (
                                     <img src={currentQuestion.image_url.startsWith('http') ? currentQuestion.image_url : `${API_BASE}${currentQuestion.image_url}`}
                                         alt="Question" className="max-w-full rounded-lg mb-6 border" />
+                                )}
+                                {currentQuestion.diagram_svg && (
+                                    <div className="mb-6 flex justify-center"
+                                        dangerouslySetInnerHTML={{ __html: currentQuestion.diagram_svg }} />
                                 )}
 
                                 <div className="space-y-3">
