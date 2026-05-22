@@ -1,0 +1,533 @@
+{
+  "schema_version": "1.1",
+  "subject": "Reasoning",
+  "topic": "Syllogism",
+  "topic_code": "RSN_SYLLOGISM",
+  "questions": [
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00001",
+      "stem": "Statements: All dogs are animals. All animals are living beings.\nConclusions: I. All dogs are living beings. II. All living beings are dogs.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "All dogs → animals → living beings. So All dogs are living beings (I: valid). The reverse 'All living beings are dogs' cannot be concluded (II: invalid).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00002",
+      "stem": "Statements: Some cats are dogs. All dogs are birds.\nConclusions: I. Some cats are birds. II. All birds are cats.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Some cats are dogs + All dogs are birds → Some cats are birds (I: valid by combining particular affirmative with universal affirmative). 'All birds are cats' reverses the relationship wrongly (II: invalid).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00003",
+      "stem": "Statements: No pen is a pencil. All pencils are erasers.\nConclusions: I. No pen is an eraser. II. Some erasers are not pens.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "No pen is pencil + All pencils are erasers → Some erasers are not pens (since all pencils = erasers, and no pen is pencil, so those erasers that came from pencils are not pens). Conclusion I 'No pen is an eraser' cannot be concluded since pens may still be erasers from another route.",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00004",
+      "stem": "Statements: All chairs are tables. Some tables are desks.\nConclusions: I. Some chairs are desks. II. Some desks are tables.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "All chairs are tables + Some tables are desks: the 'some tables' that are desks may or may not be those that are chairs — so I does not necessarily follow. 'Some desks are tables' is the converse of 'Some tables are desks' — valid (II follows).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00005",
+      "stem": "Statements: All flowers are plants. No plant is a tree.\nConclusions: I. No flower is a tree. II. Some trees are flowers.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "All flowers are plants + No plant is tree → No flower is a tree (valid: A+E → E). Conclusion II 'Some trees are flowers' contradicts I and cannot follow.",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00006",
+      "stem": "Statements: Some books are pens. Some pens are rulers.\nConclusions: I. Some books are rulers. II. Some rulers are books.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "explanation": "Some + Some gives no definite conclusion. The 'some books that are pens' may or may not overlap with 'some pens that are rulers'. Neither I nor II necessarily follows.",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00007",
+      "stem": "Statements: All mangoes are fruits. All fruits are delicious.\nConclusions: I. All mangoes are delicious. II. All delicious things are mangoes.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "All mangoes → fruits → delicious. So All mangoes are delicious (I: valid). The converse 'All delicious things are mangoes' (II) cannot be derived.",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00008",
+      "stem": "Statements: Some cars are buses. All buses are vehicles.\nConclusions: I. Some cars are vehicles. II. Some vehicles are cars.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "Some cars are buses + All buses are vehicles → Some cars are vehicles (I: valid). The converse of a particular affirmative is valid: 'Some vehicles are cars' (II: also valid).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00009",
+      "stem": "Statements: No man is a woman. All women are humans.\nConclusions: I. No man is human. II. Some humans are not men.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "No man is woman + All women are humans: all women are humans but men may or may not be human (I: cannot conclude 'No man is human'). Since all women are humans and no man is a woman, those women who are humans are not men — so Some humans are not men (II: valid).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00010",
+      "stem": "Statements: All A are B. No B is C. Some C are D.\nConclusions: I. No A is C. II. Some D are not B.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "All A→B, No B→C: so No A is C (I: valid, A+E→E). For II: Some C are D; No B is C → those Ds that come from C cannot be B → Some D are not B (II: valid).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00011",
+      "stem": "Statements: All lions are tigers. Some tigers are bears.\nConclusions: I. Some lions are bears. II. Some bears are tigers.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "All lions → tigers. Some tigers are bears — these 'some tigers' may or may not include those that are lions. So I (Some lions are bears) does NOT necessarily follow. Converse of 'Some tigers are bears' is 'Some bears are tigers' (II: valid).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00012",
+      "stem": "Statements: No A is B. Some B are C.\nConclusions: I. Some C are not A. II. No C is A.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "No A is B → No B is A. Some B are C → those 'some B' that are C are not A → Some C are not A (I: valid). 'No C is A' is too strong — some C may be A from a different set (II: invalid).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00013",
+      "stem": "Statements: All P are Q. All Q are R. No R is S.\nConclusions: I. No P is S. II. No Q is S.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "All P→Q→R, No R→S: so No P is S (I: valid) and No Q is S since all Q are R and No R is S (II: valid).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00014",
+      "stem": "Statements: Some students are clever. All clever people are hardworking.\nConclusion: Some students are hardworking.",
+      "options": [
+        {"option_text": "Conclusion follows", "is_correct": true},
+        {"option_text": "Conclusion does not follow", "is_correct": false},
+        {"option_text": "Conclusion is uncertain", "is_correct": false},
+        {"option_text": "Data is insufficient", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Some students are clever + All clever are hardworking → Some students are hardworking (I+A → I type: valid conclusion).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00015",
+      "stem": "Statements: All X are Y. Some Y are Z. No Z is W.\nConclusions: I. Some X are Z. II. No Y is W.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "explanation": "All X→Y; Some Y→Z: the 'some Y that are Z' may or may not include those Y that come from X → I doesn't follow. 'No Y is W': No Z is W, but Y includes elements that are NOT Z, and those non-Z Ys could be W → II doesn't follow.",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00016",
+      "stem": "Statements: All pens are books. All books are shelves.\nConclusions: I. All pens are shelves. II. All shelves are pens.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "All pens→books→shelves: All pens are shelves (I: valid). 'All shelves are pens' reverses a universal affirmative, which is not valid (II: invalid).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00017",
+      "stem": "Statements: Some roses are red. Some red things are beautiful.\nConclusions: I. Some roses are beautiful. II. All beautiful things are red.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "explanation": "Some+Some gives no definite conclusion. I doesn't follow (the roses that are red may not be among the red things that are beautiful). II is a universal affirmative that cannot be derived from particular premises.",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00018",
+      "stem": "Statements: All doctors are rich. No rich person is poor.\nConclusions: I. No doctor is poor. II. Some poor people are not doctors.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "All doctors→rich; No rich→poor: so No doctor is poor (I: valid). Since no doctor is poor, any poor person is not a doctor → Some (in fact, all) poor people are not doctors (II: valid).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00019",
+      "stem": "Statements: Some teachers are singers. All singers are dancers.\nConclusions: I. Some teachers are dancers. II. Some dancers are teachers.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "Some teachers→singers; All singers→dancers: Some teachers are dancers (I: valid). Converse of particular affirmative: Some dancers are teachers (II: valid).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00020",
+      "stem": "Statements: All birds can fly. Penguins are birds.\nConclusions: I. Penguins can fly. II. Some birds are penguins.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "This is a purely logical question — assuming the statements are true (even if contrary to real life): All birds can fly + Penguins are birds → Penguins can fly (I: logically valid). 'Penguins are birds' → Some birds are penguins (II: valid conversion).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00021",
+      "stem": "Statements: All tables are wood. Some wood is hard. No hard thing is cheap.\nConclusions: I. Some tables may be cheap. II. Some wood is not cheap.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Some wood is hard + No hard is cheap → Some wood is not cheap (II: valid — the wood that is hard cannot be cheap). I says 'may be cheap' which is a possibility but given no hard thing is cheap and tables are wood, whether tables are cheap depends on whether they are the hard wood subset — the conclusion I is uncertain, not definite.",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00022",
+      "stem": "Statements: All A are B. All C are B.\nConclusions: I. All A are C. II. Some B are A.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "All A are B → Some B are A (valid conversion of universal affirmative to particular — II follows). All A are B and All C are B does not mean All A are C; A and C share B as a common set but may be completely different subsets of B (I: invalid).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00023",
+      "stem": "Statements: Some engineers are managers. No manager is a clerk.\nConclusions: I. Some engineers are not clerks. II. Some clerks are not engineers.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Some engineers→managers; No manager→clerk: those engineers who are managers are not clerks → Some engineers are not clerks (I: valid). 'Some clerks are not engineers' — clerks may or may not include engineers from a different angle; cannot be determined from these statements alone (II: doesn't necessarily follow).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00024",
+      "stem": "Statements: All stars are planets. No planet is a moon.\nConclusions: I. No star is a moon. II. All planets are stars.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "All stars→planets; No planet→moon: No star is moon (I: valid, A+E→E). 'All planets are stars' reverses the universal affirmative, which is invalid (II: doesn't follow).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_SYLLOGISM_VII_MIXED_00025",
+      "stem": "Statements: Some actors are directors. All directors are producers. Some producers are writers.\nConclusions: I. Some actors are producers. II. Some writers are directors.",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Some actors→directors; All directors→producers: Some actors are producers (I: valid). For II: All directors→producers and Some producers are writers — but the 'some producers' that are writers may not be those that came from directors (II: doesn't necessarily follow).",
+      "subject": "Reasoning",
+      "topic": "Syllogism",
+      "topic_code": "RSN_SYLLOGISM",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    }
+  ]
+}

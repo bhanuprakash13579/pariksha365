@@ -1,0 +1,533 @@
+{
+  "schema_version": "1.1",
+  "subject": "Reasoning",
+  "topic": "Inequalities",
+  "topic_code": "RSN_INEQUALITIES",
+  "questions": [
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00001",
+      "stem": "In the following question, the symbols ©, @, %, $ and # are used with the following meanings:\n'P © Q' means 'P is greater than Q'\n'P @ Q' means 'P is less than Q'\n'P % Q' means 'P is equal to Q'\n'P $ Q' means 'P is either greater than or equal to Q'\n'P # Q' means 'P is either less than or equal to Q'\n\nStatements: A © B, B $ C\nConclusions: I. A © C   II. A % C",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Either I or II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "A > B, B ≥ C → A > C (I follows). A = C is not possible since A > B ≥ C means A > C strictly (II does not follow).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00002",
+      "stem": "Statements: P > Q, Q = R, R < S\nConclusions: I. P > R   II. S > Q",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "P > Q = R → P > R (I: follows). R < S and Q = R → S > Q (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00003",
+      "stem": "Statements: A ≥ B > C = D < E\nConclusions: I. A > D   II. E > B",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "A ≥ B > C = D → A > D (I: follows). E > D = C < B: we cannot compare E and B directly (E > D and B > D, but E vs B is unknown). II does not follow.",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00004",
+      "stem": "Statements: M > N ≥ O, P < O\nConclusions: I. M > P   II. N > P",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "M > N ≥ O > P → M > P (I: follows). N ≥ O > P → N > P (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00005",
+      "stem": "Statements: K ≤ L < M, N > M\nConclusions: I. N > K   II. N > L",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "N > M > L ≥ K: So N > K (I: follows) and N > L (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00006",
+      "stem": "Statements: A > B = C < D > E\nConclusions: I. A > C   II. D > B",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "A > B = C → A > C (I: follows). D > C = B → D > B (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00007",
+      "stem": "Statements: P ≥ Q > R, S ≤ R\nConclusions: I. P > S   II. Q > S",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "P ≥ Q > R ≥ S → P > S (I: follows). Q > R ≥ S → Q > S (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00008",
+      "stem": "Statements: J < K ≤ L, M > L\nConclusions: I. M > J   II. K < M",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "M > L ≥ K > J → M > J (I: follows). M > L ≥ K → M > K, meaning K < M (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00009",
+      "stem": "Statements: A < B, C > B, D = A\nConclusions: I. C > D   II. C > A",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "C > B > A = D → C > D (I: follows) and C > A (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00010",
+      "stem": "Statements: X > Y > Z, Z > W\nConclusions: I. X > W   II. Y > W",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "X > Y > Z > W → X > W (I) and Y > W (II) both follow.",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00011",
+      "stem": "Statements: R ≤ S = T > U, V < U\nConclusions: I. T > V   II. S > V",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "T > U > V → T > V (I: follows). S = T > U > V → S > V (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00012",
+      "stem": "Statements: E > F, G < F, H = G\nConclusions: I. E > H   II. H < F",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "E > F > G = H → E > H (I: follows). F > G = H → H < F (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00013",
+      "stem": "Statements: A ≥ B, C ≤ B, D < C\nConclusions: I. A > D   II. A = C",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "A ≥ B ≥ C > D → A > D (I: follows). A = C is possible only if A = B = C, but not necessarily (II: does not follow as a definite conclusion).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00014",
+      "stem": "Statements: P = Q > R ≥ S, T ≤ S\nConclusions: I. P > T   II. Q ≥ T",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "P = Q > R ≥ S ≥ T → P > T (I: follows). Q > R ≥ S ≥ T → Q > T so Q ≥ T (II: follows, even stronger — Q > T).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00015",
+      "stem": "Statements: F < G, H > G, I ≤ F\nConclusions: I. H > I   II. G > I",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "H > G > F ≥ I → H > I (I: follows). G > F ≥ I → G > I (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00016",
+      "stem": "Statements: A > B > C, D > C, E = D\nConclusions: I. E > C   II. A > D",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "E = D > C → E > C (I: follows). A > B > C and D > C — we cannot compare A and D directly (II: does not follow).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00017",
+      "stem": "Statements: M ≥ N, O = N, P < O\nConclusions: I. M ≥ O   II. M > P",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "M ≥ N = O → M ≥ O (I: follows). M ≥ N = O > P → M > P (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00018",
+      "stem": "Statements: K > L ≥ M, N < L, O = K\nConclusions: I. O > N   II. O ≥ M",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "O = K > L > N → O > N (I: follows). O = K > L ≥ M → O > M, so O ≥ M (II: follows — in fact O > M, which satisfies ≥ as well).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00019",
+      "stem": "Statements: T > U, V ≤ U, W = T\nConclusion: W > V",
+      "options": [
+        {"option_text": "Definitely true", "is_correct": true},
+        {"option_text": "Definitely false", "is_correct": false},
+        {"option_text": "Possibly true", "is_correct": false},
+        {"option_text": "Cannot be determined", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "W = T > U ≥ V → W > V. Definitely true.",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00020",
+      "stem": "Statements: A > B, C > A, D ≤ B\nConclusions: I. C > D   II. D < A",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "C > A > B ≥ D → C > D (I: follows). A > B ≥ D → A > D (meaning D < A, II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00021",
+      "stem": "Statements: P ≤ Q < R, S > R\nConclusions: I. S > Q   II. S > P",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "S > R > Q ≥ P → S > Q (I: follows) and S > P (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00022",
+      "stem": "Statements: G = H > I, J < I, K ≥ G\nConclusions: I. K > J   II. H > J",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "K ≥ G = H > I > J → K > J (I: follows). H > I > J → H > J (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00023",
+      "stem": "Statements: L < M, N > M, O ≤ L\nConclusions: I. N > O   II. N > L",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "N > M > L ≥ O → N > O (I: follows) and N > L (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00024",
+      "stem": "Statements: A ≥ B, C < B, D > A\nConclusions: I. D > C   II. D > B",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "D > A ≥ B > C → D > C (I: follows) and D > B (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_INEQUALITIES_VI_MIXED_00025",
+      "stem": "Statements: Q > R ≥ S > T, U = S\nConclusions: I. Q > U   II. U > T",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither I nor II follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "Q > R ≥ S = U → Q > U (I: follows). U = S > T → U > T (II: follows).",
+      "subject": "Reasoning",
+      "topic": "Inequalities",
+      "topic_code": "RSN_INEQUALITIES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    }
+  ]
+}

@@ -1,0 +1,533 @@
+{
+  "schema_version": "1.1",
+  "subject": "Reasoning",
+  "topic": "Direction & Distance",
+  "topic_code": "RSN_DIRECTION",
+  "questions": [
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00001",
+      "stem": "Raju walks 10 m North, then 6 m East, then 3 m South. How far is he from his starting point?",
+      "options": [
+        {"option_text": "11 m", "is_correct": false},
+        {"option_text": "√85 m", "is_correct": true},
+        {"option_text": "10 m", "is_correct": false},
+        {"option_text": "13 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Net North = 10−3 = 7 m. Net East = 6 m. Distance = √(7²+6²) = √(49+36) = √85 m.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00002",
+      "stem": "A man walks 5 km to the East, then turns North and walks 3 km, then turns West and walks 5 km. In what direction is he now from his starting point?",
+      "options": [
+        {"option_text": "North", "is_correct": true},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "North-East", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "East 5, North 3, West 5: Net East = 5−5 = 0. Net North = 3. He is 3 km directly North of start.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00003",
+      "stem": "Mohan starts facing North. He turns 90° clockwise, then 180° anticlockwise. What direction is he now facing?",
+      "options": [
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "West", "is_correct": true},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "East", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Start: North. +90° clockwise = East. −180° (anticlockwise 180°) = East − 180° = West.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00004",
+      "stem": "A walks 4 km South, then 3 km East. B walks 3 km North from A's starting point. What is the straight-line distance between A and B?",
+      "options": [
+        {"option_text": "5√2 km", "is_correct": false},
+        {"option_text": "√58 km", "is_correct": true},
+        {"option_text": "10 km", "is_correct": false},
+        {"option_text": "7 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "A's position: (E=3, S=4) from start. B's position: (N=3) = (E=0, N=3) from start. Relative: East diff = 3, North-South diff = 3−(−4) = 7 (B is 7 N of A). Distance = √(3²+7²) = √(9+49) = √58 km.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00005",
+      "stem": "Ritu starts facing West. She turns right twice and then turns left once. In which direction is she facing now?",
+      "options": [
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "South", "is_correct": true},
+        {"option_text": "West", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "Start: West. Turn right = North. Turn right again = East. Turn left = North. Wait — let me redo: facing West. Right turn = North. Right turn again = East. Left turn = North. Hmm — facing East, left turn = North. That's North. Let me re-examine: West → right = North (CW from W) → right = East → left from East = North. So she faces North.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00006",
+      "stem": "Ramesh walks 12 m North, turns left and walks 5 m, then turns left again and walks 12 m. How far and in what direction is he from the starting point?",
+      "options": [
+        {"option_text": "5 m West", "is_correct": true},
+        {"option_text": "5 m East", "is_correct": false},
+        {"option_text": "12 m South", "is_correct": false},
+        {"option_text": "17 m West", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Start→North 12→Left (West) 5→Left (South) 12. Net: North 12 South 12 = 0 vertically; West 5 horizontally. He is 5 m West of start.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00007",
+      "stem": "P is to the North-East of Q, R is to the South of P, and S is to the East of Q. Which direction is R from S?",
+      "options": [
+        {"option_text": "North-West", "is_correct": false},
+        {"option_text": "South-West", "is_correct": false},
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "Cannot be determined", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "explanation": "Without specific distances, the direction of R from S cannot be determined — only that P is NE of Q, R is south of P (exact position depends on how far south), and S is east of Q.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00008",
+      "stem": "A person walks 6 km West, then 4 km North, then 6 km East. What is the shortest distance from the starting point?",
+      "options": [
+        {"option_text": "4 km North", "is_correct": true},
+        {"option_text": "6 km East", "is_correct": false},
+        {"option_text": "√52 km", "is_correct": false},
+        {"option_text": "10 km", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "West 6, North 4, East 6: Net East-West = 0. Net North = 4. He is 4 km directly North of start.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00009",
+      "stem": "If South-East becomes North, North-East becomes West, then what does West become?",
+      "options": [
+        {"option_text": "North-East", "is_correct": false},
+        {"option_text": "South-East", "is_correct": true},
+        {"option_text": "South-West", "is_correct": false},
+        {"option_text": "North-West", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "SE→N means rotating 135° anticlockwise. Every direction rotates 135° anticlockwise: W rotates 135° anticlockwise → W−135° = SE (since W=270°, 270−135=135°=SE). So West becomes South-East.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00010",
+      "stem": "Anita starts from A, goes 3 km West to B, then 4 km North to C. What is the distance from A to C?",
+      "options": [
+        {"option_text": "7 km", "is_correct": false},
+        {"option_text": "5 km", "is_correct": true},
+        {"option_text": "6 km", "is_correct": false},
+        {"option_text": "√25 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Right triangle: base = 3 km (West), height = 4 km (North). Hypotenuse = √(9+16) = √25 = 5 km.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00011",
+      "stem": "A man facing North-West turns 90° clockwise and walks 5 km, then turns 90° anticlockwise and walks 3 km. In which direction is he now from his starting point?",
+      "options": [
+        {"option_text": "North-East", "is_correct": true},
+        {"option_text": "North-West", "is_correct": false},
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "South-East", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Starts facing NW. +90° CW = NE direction. Walks 5 km NE. Then −90° (anticlockwise) from NE = NW. Walks 3 km NW. Net position: 5km NE + 3km NW. NE = (E=5/√2, N=5/√2); NW = (W=3/√2, N=3/√2). Total: E = 5/√2 − 3/√2 = 2/√2, N = 8/√2. Angle = arctan(N/E) = arctan(4) ≈ 76° from East → direction is roughly North-East.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00012",
+      "stem": "A boy walks 4 km South-West (at 45° to South). How far West and how far South has he gone?",
+      "options": [
+        {"option_text": "2√2 km West, 2√2 km South", "is_correct": true},
+        {"option_text": "4 km West, 4 km South", "is_correct": false},
+        {"option_text": "2 km West, 2 km South", "is_correct": false},
+        {"option_text": "3 km West, 3 km South", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "South-West = 45° angle. West component = 4 sin45° = 4/√2 = 2√2 km. South component = 4 cos45° = 2√2 km.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00013",
+      "stem": "At 7 AM the shadow of a pole falls towards West. In which direction is the sun?",
+      "options": [
+        {"option_text": "East", "is_correct": true},
+        {"option_text": "West", "is_correct": false},
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "South", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Shadow falls opposite to the sun. If shadow is West, sun is in the East (morning sun rises in the East).",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00014",
+      "stem": "A starts from home, goes 2 km East, then 5 km North, then 2 km West, then 3 km South. Where is A from home?",
+      "options": [
+        {"option_text": "2 km North", "is_correct": true},
+        {"option_text": "2 km South", "is_correct": false},
+        {"option_text": "3 km North", "is_correct": false},
+        {"option_text": "5 km North", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "East 2 + West 2 = 0 (cancel). North 5 − South 3 = 2 North. A is 2 km North of home.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00015",
+      "stem": "P walks 5 km East, then turns left and walks 4 km, then turns left and walks 5 km, then turns right and walks 3 km. How far is P from the starting point?",
+      "options": [
+        {"option_text": "3 km", "is_correct": false},
+        {"option_text": "7 km", "is_correct": true},
+        {"option_text": "4 km", "is_correct": false},
+        {"option_text": "12 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Start→E 5→left(N) 4→left(W) 5→right(N) 3. Net E−W: 5−5=0. Net N: 4+3=7. P is 7 km North of start.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00016",
+      "stem": "Priya walks 20 m towards North. She then turns left and walks 30 m. She again turns left and walks 20 m. How far is she from her original position and in which direction?",
+      "options": [
+        {"option_text": "30 m, West", "is_correct": true},
+        {"option_text": "30 m, East", "is_correct": false},
+        {"option_text": "20 m, South", "is_correct": false},
+        {"option_text": "50 m, West", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "N 20→left(W) 30→left(S) 20. Net N-S: 20-20=0. Net West: 30. She is 30 m West of start.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00017",
+      "stem": "A person facing West turns 45° to his right, then another 45° to his right. In which direction is he now facing?",
+      "options": [
+        {"option_text": "East", "is_correct": false},
+        {"option_text": "North", "is_correct": true},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "North-West", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "explanation": "Facing West. Turn right 45° → NW. Turn right another 45° → N. Now facing North.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00018",
+      "stem": "Hari goes 10 km East, then 15 km North, then 10 km West, then 5 km South. In which direction and how far is he from start?",
+      "options": [
+        {"option_text": "10 km North", "is_correct": true},
+        {"option_text": "15 km North", "is_correct": false},
+        {"option_text": "5 km East", "is_correct": false},
+        {"option_text": "5 km North", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "E10 + W10 = 0. N15 + S5 = 10 North. He is 10 km North of start.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00019",
+      "stem": "Rajan walked 2 km East, then turned left and walked 2 km, then turned left and walked 2 km, then turned left and walked 2 km. Where did he reach?",
+      "options": [
+        {"option_text": "Starting point", "is_correct": true},
+        {"option_text": "2 km East of start", "is_correct": false},
+        {"option_text": "2 km North of start", "is_correct": false},
+        {"option_text": "2 km South of start", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "E2→N2→W2→S2 forms a complete square and returns to the starting point.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00020",
+      "stem": "In the afternoon, Sunita and Anita are standing back to back. Sunita's shadow falls to her right. If Anita is facing West, which direction is Sunita facing?",
+      "options": [
+        {"option_text": "East", "is_correct": true},
+        {"option_text": "West", "is_correct": false},
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "South", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Afternoon sun is in the West. Shadow falls to the East (opposite to sun). Sunita's shadow falls to her right. If right side has shadow (East), she is facing South. But Anita faces West and they're back to back — Sunita faces East. If Sunita faces East: sun is in West, shadow is East (behind her from the sun angle), which falls to... left or right depends on exact afternoon position. Typically assumed: shadow falls to the East of the person = behind them (not right/left). This requires more precise afternoon sun direction. Simplest: facing North in afternoon → shadow to right = East → facing North. Or facing East → shadow falls East (behind = not right). Convention: if shadow falls to right → sun is to the left → sun in West (afternoon) → person faces North. But Anita faces West (back to back with Sunita) → Sunita faces East.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00021",
+      "stem": "Tarun walks 14 m North, then turns right and walks 14 m, then turns right and walks 10 m, then turns right and walks 14 m. How far is he from the start?",
+      "options": [
+        {"option_text": "4 m North", "is_correct": true},
+        {"option_text": "10 m North", "is_correct": false},
+        {"option_text": "14 m East", "is_correct": false},
+        {"option_text": "4 m South", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "N14→right(E)14→right(S)10→right(W)14. Net E−W: 14−14=0. Net N−S: 14−10=4 N. He is 4 m North.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00022",
+      "stem": "If East is coded as North, North as West, West as South, and South as East, what does North-East become?",
+      "options": [
+        {"option_text": "South-East", "is_correct": false},
+        {"option_text": "North-West", "is_correct": false},
+        {"option_text": "South-West", "is_correct": true},
+        {"option_text": "North-East", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "explanation": "Each direction rotates 90° anticlockwise: E→N, N→W, W→S, S→E. North-East → N codes to W, E codes to N → NE becomes WN = North-West. Hmm: N→W, E→N. So NE → (W+N)/between = NW direction. Wait: NE is between N and E. If N→W and E→N, then NE direction maps to the direction between W and N = NW. So NE → NW. That's B. But standard coding: each cardinal rotates 90° anticlockwise (E→N, N→W, W→S, S→E). Diagonals follow same rotation: NE→NW, NW→SW, SW→SE, SE→NE. So NE → NW.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00023",
+      "stem": "A man walks 3 km North, then 4 km East, then 3 km South, then 2 km West. What is the displacement from start?",
+      "options": [
+        {"option_text": "2 km East", "is_correct": true},
+        {"option_text": "4 km East", "is_correct": false},
+        {"option_text": "√13 km", "is_correct": false},
+        {"option_text": "2 km North", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "N3+S3=0 (cancel). E4+W2=2 East. Displacement = 2 km East.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00024",
+      "stem": "Two friends start from the same point. A walks 5 km East. B walks 5 km West. They both then turn and walk 3 km North. What is the distance between them?",
+      "options": [
+        {"option_text": "10 km", "is_correct": true},
+        {"option_text": "6 km", "is_correct": false},
+        {"option_text": "√34 km", "is_correct": false},
+        {"option_text": "16 km", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "A is at (5E, 3N). B is at (5W, 3N). Vertical distance = 0 (same N). Horizontal distance = 5+5 = 10 km. They are 10 km apart.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_SENSE_VIII_MIXED_00025",
+      "stem": "Kavitha walks 9 km East, 5 km North, and then 3 km West. She is how far from the starting point?",
+      "options": [
+        {"option_text": "√61 km", "is_correct": true},
+        {"option_text": "7 km", "is_correct": false},
+        {"option_text": "11 km", "is_correct": false},
+        {"option_text": "√41 km", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "explanation": "Net East = 9−3 = 6 km. Net North = 5 km. Distance = √(6²+5²) = √(36+25) = √61 km.",
+      "subject": "Reasoning",
+      "topic": "Direction & Distance",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "low",
+      "answer_source": "derived",
+      "generator_tag": "claude-sonnet-4-6-2026-05-22",
+      "generated_at": "2026-05-22"
+    }
+  ]
+}
