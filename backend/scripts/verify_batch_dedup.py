@@ -53,7 +53,7 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Iterable
 
-_BACKEND = Path(__file__).resolve().parents[2]
+_BACKEND = Path(__file__).resolve().parents[1]
 _SEEDS = _BACKEND / "seeds"
 _DEDUP_PATH = _SEEDS / "_dedup" / "existing_quiz_signatures.json"
 _POOL_DIR = _SEEDS / "static_gk"
@@ -114,6 +114,8 @@ def _load_seed_questions(only_code: str | None = None):
         try:
             doc = json.loads(bundle_file.read_text())
         except Exception:
+            continue
+        if not isinstance(doc, dict):
             continue
         for q in doc.get("questions", []) or []:
             tc = q.get("topic_code") or doc.get("topic_code")
