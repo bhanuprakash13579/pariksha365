@@ -5,6 +5,20 @@ import { SvgXml } from 'react-native-svg';
 import { QuizAPI, PrivateModuleAPI } from '../../services/api';
 import { COLORS } from '../../styles/theme';
 
+function renderExplanationMobile(text: string, baseStyle: object) {
+    return text.split('\n').map((line, i) => {
+        const parts = line.split(/\*\*(.*?)\*\*/g);
+        return (
+            <Text key={i} style={baseStyle}>
+                {parts.map((p, j) => j % 2 === 1
+                    ? <Text key={j} style={{ fontWeight: 'bold' }}>{p}</Text>
+                    : p
+                )}
+            </Text>
+        );
+    });
+}
+
 interface QuizQuestion {
     id: string;
     question_text: string;
@@ -234,7 +248,8 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                                 })}
                                 {q.explanation ? (
                                     <View style={{ backgroundColor: '#eff6ff', borderRadius: 8, padding: 10, marginTop: 8, borderWidth: 1, borderColor: '#bfdbfe' }}>
-                                        <Text style={{ fontSize: 12, color: '#1e40af' }}>💡 {q.explanation}</Text>
+                                        <Text style={{ fontSize: 12, color: '#1e40af' }}>💡</Text>
+                                        {renderExplanationMobile(q.explanation, { fontSize: 12, color: '#1e40af' })}
                                     </View>
                                 ) : null}
                                 {q.explanation_svg ? (

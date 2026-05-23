@@ -2,6 +2,17 @@ import { useCallback, useEffect, useState } from 'react';
 import { ArrowLeft, Lock, Sparkles } from 'lucide-react';
 import { PrivateModuleAPI } from '../../services/api';
 
+function renderExplanation(text: string) {
+    return text.split('\n').map((line, i) => {
+        const parts = line.split(/\*\*(.*?)\*\*/g);
+        return (
+            <span key={i} className="block">
+                {parts.map((p, j) => j % 2 === 1 ? <strong key={j}>{p}</strong> : p)}
+            </span>
+        );
+    });
+}
+
 type ModuleSummary = {
     slug: string;
     name: string;
@@ -194,7 +205,7 @@ export const PrivateModuleQuizzes = ({ slug }: { slug: string }) => {
                                         ))}
                                     </div>
                                     {r?.explanation && (
-                                        <div className="text-[11px] text-gray-500 bg-gray-50 rounded p-2">{r.explanation}</div>
+                                        <div className="text-[11px] text-gray-500 bg-gray-50 rounded p-2">{renderExplanation(r.explanation)}</div>
                                     )}
                                 </div>
                             );

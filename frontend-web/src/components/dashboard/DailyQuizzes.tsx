@@ -3,6 +3,17 @@ import { Lock, ChevronRight } from 'lucide-react';
 import { QuizAPI, PrivateModuleAPI } from '../../services/api';
 import { PrivateModuleQuizzes } from './PrivateModuleQuizzes';
 
+function renderExplanation(text: string) {
+    return text.split('\n').map((line, i) => {
+        const parts = line.split(/\*\*(.*?)\*\*/g);
+        return (
+            <span key={i} className="block">
+                {parts.map((p, j) => j % 2 === 1 ? <strong key={j}>{p}</strong> : p)}
+            </span>
+        );
+    });
+}
+
 type AccessibleModule = { slug: string; name: string; description?: string };
 
 export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }) => {
@@ -221,7 +232,7 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                                     </div>
                                     {q.explanation && (
                                         <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-xs text-blue-900">
-                                            💡 {q.explanation}
+                                            💡 {renderExplanation(q.explanation)}
                                         </div>
                                     )}
                                     {q.explanation_svg && (
