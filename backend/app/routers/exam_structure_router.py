@@ -11,10 +11,10 @@ The admin routes here are deliberately separate from the legacy
 ``admin_router.py`` — exam-structure is a coherent surface and deserves its own
 module for future growth (pattern CRUD, stage creation, etc.).
 """
-from typing import List
+from typing import List, Optional
 from uuid import UUID
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import get_db
@@ -30,6 +30,28 @@ admin_router = APIRouter()
 # --------------------------------------------------------------------------- #
 # Public reads
 # --------------------------------------------------------------------------- #
+
+@public_router.get("/stages/tests", response_model=List[schema.PublishedTestOut])
+async def list_published_stage_tests(
+    category_id: Optional[UUID] = Query(default=None),
+    subcategory_id: Optional[UUID] = Query(default=None),
+    test_type: Optional[str] = Query(default=None, pattern="^(MOCK|PYQ)$"),
+    db: AsyncSession = Depends(get_db),
+):
+    """Return all published test series for enabled exam stages.
+
+    Supports filtering by ``category_id``, ``subcategory_id``, and/or
+    ``test_type`` (MOCK | PYQ).  Used by the student home screen and mobile
+    CategoryScreen to show mocks and previous-year papers without going through
+    the legacy Course/Folder tree.
+    """
+    return await service.list_published_tests(
+        db,
+        category_id=category_id,
+        subcategory_id=subcategory_id,
+        test_type=test_type,
+    )
+
 
 @public_router.get("", response_model=List[schema.CategoryWithStructureOut])
 async def read_exam_structure(db: AsyncSession = Depends(get_db)):

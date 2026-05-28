@@ -116,6 +116,10 @@ export const ExamStructureAPI = {
         api.put(`/admin/exam-structure/exam-stages/${stageId}/pricing`, { price_inr, validity_days }),
     adminGrantStagePurchase: (user_id: string, exam_stage_id: string, validity_days: number, note: string) =>
         api.post('/admin/exam-structure/exam-stages/purchases/grant', { user_id, exam_stage_id, validity_days, note }),
+
+    // Student: fetch published tests for a category / subcategory
+    listPublishedTests: (params: { category_id?: string; subcategory_id?: string; test_type?: 'MOCK' | 'PYQ' }) =>
+        api.get('/exam-structure/stages/tests', { params }),
 };
 
 export const CourseAPI = {

@@ -27,6 +27,7 @@ from app.models.category import Category
 from app.models.exam_pattern import ExamPattern, SectionPattern
 from app.models.exam_stage import ExamStage
 from app.models.subcategory import SubCategory
+from app.models.test_series import TestSeries
 from app.schemas import exam_structure_schema as schema
 
 EntityType = Literal["category", "subcategory", "exam_stage"]
@@ -107,6 +108,83 @@ async def get_stage_by_slug(
     )
     result = await db.execute(stmt)
     return result.scalar_one_or_none()
+
+
+# --------------------------------------------------------------------------- #
+# Published tests (student-facing)
+# --------------------------------------------------------------------------- #
+
+async def list_published_tests(
+    db: AsyncSession,
+    *,
+    category_id: Optional[UUID] = None,
+    subcategory_id: Optional[UUID] = None,
+    test_type: Optional[str] = None,
+) -> list[dict]:
+    """Return all published TestSeries rows for enabled exam stages, with the
+    stage / subcategory / category context denormalised onto each row.
+
+    Filters (all optional):
+      * ``category_id``    — restrict to one category
+      * ``subcategory_id`` — restrict to one subcategory (used by mobile)
+      * ``test_type``      — "MOCK" or "PYQ"
+
+    Only surfaces tests whose entire ancestor chain is enabled
+    (category.is_enabled AND subcategory.is_enabled AND exam_stage.is_enabled).
+    """
+    stmt = (
+        select(
+            TestSeries,
+            ExamStage.id.label("stage_id"),
+            ExamStage.name.label("stage_name"),
+            SubCategory.id.label("subcategory_id"),
+            SubCategory.name.label("subcategory_name"),
+            Category.id.label("category_id"),
+            Category.name.label("category_name"),
+        )
+        .join(ExamStage, ExamStage.id == TestSeries.exam_stage_id)
+        .join(SubCategory, SubCategory.id == ExamStage.subcategory_id)
+        .join(Category, Category.id == SubCategory.category_id)
+        .where(TestSeries.is_published.is_(True))
+        .where(TestSeries.exam_stage_id.isnot(None))
+        .where(ExamStage.is_enabled.is_(True))
+        .where(SubCategory.is_enabled.is_(True))
+        .where(Category.is_enabled.is_(True))
+    )
+    if category_id is not None:
+        stmt = stmt.where(Category.id == category_id)
+    if subcategory_id is not None:
+        stmt = stmt.where(SubCategory.id == subcategory_id)
+    if test_type is not None:
+        stmt = stmt.where(TestSeries.test_type == test_type)
+
+    stmt = stmt.order_by(TestSeries.test_type, TestSeries.paper_date.desc().nullslast(), TestSeries.title)
+
+    rows = (await db.execute(stmt)).all()
+
+    out = []
+    for row in rows:
+        ts: TestSeries = row[0]
+        out.append(
+            schema.PublishedTestOut(
+                id=ts.id,
+                title=ts.title,
+                test_type=ts.test_type.value if hasattr(ts.test_type, "value") else str(ts.test_type),
+                total_questions=None,  # avoid lazy-load; client infers from pattern if needed
+                total_duration_minutes=ts.total_duration_minutes,
+                has_sectional_timing=ts.has_sectional_timing,
+                negative_marking=ts.negative_marking,
+                paper_date=str(ts.paper_date) if ts.paper_date else None,
+                paper_shift=ts.paper_shift,
+                stage_id=row.stage_id,
+                stage_name=row.stage_name,
+                subcategory_id=row.subcategory_id,
+                subcategory_name=row.subcategory_name,
+                category_id=row.category_id,
+                category_name=row.category_name,
+            )
+        )
+    return out
 
 
 # --------------------------------------------------------------------------- #

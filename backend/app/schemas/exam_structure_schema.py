@@ -148,6 +148,32 @@ class CategoryWithStructureOut(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
+# ---- Published test series (student-facing) --------------------------------
+
+class PublishedTestOut(BaseModel):
+    """Lightweight projection of a published TestSeries for the student home
+    screen. Only carries what the card UI needs — start the test via
+    POST /attempts/start/{id} as usual."""
+
+    id: UUID
+    title: str
+    test_type: str           # "MOCK" or "PYQ"
+    total_questions: Optional[int] = None
+    total_duration_minutes: Optional[int] = None
+    has_sectional_timing: bool = False
+    negative_marking: float = 0.25
+    paper_date: Optional[str] = None
+    paper_shift: Optional[str] = None
+    stage_id: UUID
+    stage_name: str
+    subcategory_id: UUID
+    subcategory_name: str
+    category_id: UUID
+    category_name: str
+
+    model_config = ConfigDict(from_attributes=True)
+
+
 # ---- Visibility toggle payloads -------------------------------------------
 
 class VisibilityToggleIn(BaseModel):

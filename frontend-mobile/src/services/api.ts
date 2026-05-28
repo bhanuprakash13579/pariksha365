@@ -52,6 +52,11 @@ export const CategoryAPI = {
     list: () => api.get('/categories'),
 };
 
+export const ExamStructureAPI = {
+    listPublishedTests: (params: { category_id?: string; subcategory_id?: string; test_type?: 'MOCK' | 'PYQ' }) =>
+        api.get('/exam-structure/stages/tests', { params }),
+};
+
 export const AttemptAPI = {
     list: () => api.get('/attempts'),
     start: (test_series_id: string) => api.post(`/attempts/start/${test_series_id}`),
