@@ -97,27 +97,46 @@ async def _background_schema_selfheal() -> None:
         except Exception as e:
             print(f"BG: create_all failed: {e!r}")
 
-    # 2. ALTER TABLE self-heal (timing + CA columns). Idempotent via IF NOT EXISTS.
-    try:
-        async with SessionLocal() as db:
-            if engine.dialect.name == "postgresql":
-                for stmt in (
-                    "ALTER TABLE test_series ADD COLUMN IF NOT EXISTS total_duration_minutes INTEGER;",
-                    "ALTER TABLE test_series ADD COLUMN IF NOT EXISTS has_sectional_timing BOOLEAN NOT NULL DEFAULT FALSE;",
-                    "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS is_current_affair BOOLEAN NOT NULL DEFAULT FALSE;",
-                    "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS event_date DATE;",
-                    "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS valid_until DATE;",
-                    "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS last_reviewed_at TIMESTAMPTZ;",
-                    "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS is_published BOOLEAN NOT NULL DEFAULT TRUE;",
-                    # passage_id groups RC/DI questions that share one reading passage
-                    "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS passage_id VARCHAR;",
-                    "CREATE INDEX IF NOT EXISTS ix_quiz_questions_passage_id ON quiz_questions (passage_id);",
-                ):
+    # 2. ALTER TABLE self-heal — every post-baseline column on the hot-path
+    #    tables (test_series, quiz_questions, questions) is added here with
+    #    IF NOT EXISTS so a redeploy onto a DB that's missing any of them
+    #    auto-repairs before the first user request. Each ALTER is run in its
+    #    OWN transaction so one failure doesn't poison the rest of the heal —
+    #    that's the bug that broke quizzes today: a single statement raised,
+    #    Postgres marked the txn as aborted, and the remaining ALTERs (which
+    #    would have added passage_id, diagram_svg, etc.) silently no-op'd.
+    if engine.dialect.name == "postgresql":
+        heal_stmts = (
+            # --- test_series (mocks / PYQs) ----------------------------------
+            "ALTER TABLE test_series ADD COLUMN IF NOT EXISTS total_duration_minutes INTEGER;",
+            "ALTER TABLE test_series ADD COLUMN IF NOT EXISTS has_sectional_timing BOOLEAN NOT NULL DEFAULT FALSE;",
+            "ALTER TABLE test_series ADD COLUMN IF NOT EXISTS cdn_url VARCHAR;",
+            # --- quiz_questions (daily quiz / weak-topic / CA) ---------------
+            "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS is_current_affair BOOLEAN NOT NULL DEFAULT FALSE;",
+            "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS event_date DATE;",
+            "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS valid_until DATE;",
+            "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS last_reviewed_at TIMESTAMPTZ;",
+            "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS is_published BOOLEAN NOT NULL DEFAULT TRUE;",
+            "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS passage_id VARCHAR;",
+            "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS diagram_svg TEXT;",
+            "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS explanation_svg TEXT;",
+            "CREATE INDEX IF NOT EXISTS ix_quiz_questions_passage_id ON quiz_questions (passage_id);",
+            # --- questions (test-series MCQs) --------------------------------
+            "ALTER TABLE questions ADD COLUMN IF NOT EXISTS diagram_svg TEXT;",
+            "ALTER TABLE questions ADD COLUMN IF NOT EXISTS explanation_svg TEXT;",
+        )
+        ok = 0
+        for stmt in heal_stmts:
+            try:
+                async with SessionLocal() as db:
                     await db.execute(_sql_text(stmt))
-                await db.commit()
-                print("BG: timing/CA ALTER TABLE self-heal completed")
-    except Exception as e:
-        print(f"BG: timing-column ALTER skipped: {e!r}")
+                    await db.commit()
+                ok += 1
+            except Exception as e:
+                # Failures are expected for ALTERs on tables that don't exist
+                # yet (fresh DB before create_all). Log and continue.
+                print(f"BG: heal skipped — {stmt[:60]}…: {e!r}")
+        print(f"BG: column self-heal applied {ok}/{len(heal_stmts)} statements")
 
     # 3. Cashfree enum + payment columns. Idempotent.
     try:
