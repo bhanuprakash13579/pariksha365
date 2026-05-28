@@ -204,7 +204,6 @@ export const DailyQuizzes = ({ onQuizComplete }: { onQuizComplete?: () => void }
                         <h3 className="font-bold text-gray-900 mb-4">📋 Review Answers</h3>
                         {activeQuiz.questions.map((q: any, idx: number) => {
                             const selectedIdx = activeQuiz.answers[q.id];
-                            const correctIdx = q.options?.findIndex((o: any) => o.is_correct);
                             return (
                                 <div key={q.id} className="bg-white rounded-xl border border-gray-200 p-4 mb-4 shadow-sm">
                                     <p className="text-sm font-medium text-gray-900 mb-3 leading-relaxed">
