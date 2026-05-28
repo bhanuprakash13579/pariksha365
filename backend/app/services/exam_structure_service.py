@@ -121,7 +121,7 @@ async def list_published_tests(
     subcategory_id: Optional[UUID] = None,
     test_type: Optional[str] = None,
 ) -> list[dict]:
-    """Return all published TestSeries rows for enabled exam stages, with the
+    """Return all published TestSeries rows linked to an exam stage, with the
     stage / subcategory / category context denormalised onto each row.
 
     Filters (all optional):
@@ -129,8 +129,15 @@ async def list_published_tests(
       * ``subcategory_id`` — restrict to one subcategory (used by mobile)
       * ``test_type``      — "MOCK" or "PYQ"
 
-    Only surfaces tests whose entire ancestor chain is enabled
-    (category.is_enabled AND subcategory.is_enabled AND exam_stage.is_enabled).
+    Source of truth is ``TestSeries.is_published`` — the admin flipped that
+    flag in the publish-toggle UI, so the test should appear to students.
+    We do NOT additionally require ExamStage / SubCategory / Category
+    ``is_enabled`` cascade: those flags exist for staging entire branches
+    of the catalogue and the visibility self-heal in main.py only flips
+    Category + SubCategory, never ExamStage — so requiring stage.is_enabled
+    here permanently hid published tests for any stage the admin never
+    manually toggled on. If an admin wants to hide an entire stage they
+    can unpublish its tests; the publish flag is the authoritative signal.
     """
     stmt = (
         select(
@@ -147,9 +154,6 @@ async def list_published_tests(
         .join(Category, Category.id == SubCategory.category_id)
         .where(TestSeries.is_published.is_(True))
         .where(TestSeries.exam_stage_id.isnot(None))
-        .where(ExamStage.is_enabled.is_(True))
-        .where(SubCategory.is_enabled.is_(True))
-        .where(Category.is_enabled.is_(True))
     )
     if category_id is not None:
         stmt = stmt.where(Category.id == category_id)
