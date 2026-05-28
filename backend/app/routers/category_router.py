@@ -1,5 +1,5 @@
 import uuid
-from fastapi import APIRouter, Body, Depends
+from fastapi import APIRouter, Body, Depends, Query
 from sqlalchemy import update as _sql_update
 from sqlalchemy.ext.asyncio import AsyncSession
 from typing import List
@@ -14,9 +14,25 @@ from app.services import category_service
 router = APIRouter()
 
 @router.get("", response_model=List[category_schema.Category])
-async def read_categories(db: AsyncSession = Depends(get_db)):
-    categories = await category_service.get_all_categories(db)
-    return categories
+async def read_categories(
+    include_all: bool = Query(False, description="Include disabled categories — for the goal switcher which lets users pick any exam goal regardless of content-readiness flags."),
+    db: AsyncSession = Depends(get_db),
+):
+    """Default: only enabled categories with their enabled subcategories
+    (drives the home grid). Pass ``include_all=true`` to surface every
+    category — used by the goal switcher dropdown so users can target
+    exams whose content is still being built. Subcategories are still
+    pruned in that mode to ``is_enabled=True`` so the cascade still hides
+    half-finished sub-trees from students.
+    """
+    if include_all:
+        cats = await category_service.get_all_categories(db, include_disabled=True)
+        # Keep only enabled subcategories so the goal-set still drives sane
+        # navigation; the category itself stays visible for selection.
+        for c in cats:
+            c.subcategories = [s for s in c.subcategories if s.is_enabled]
+        return cats
+    return await category_service.get_all_categories(db)
 
 
 @router.get("/admin", response_model=List[category_schema.Category])

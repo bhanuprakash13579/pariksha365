@@ -49,7 +49,8 @@ export const CourseAPI = {
 };
 
 export const CategoryAPI = {
-    list: () => api.get('/categories'),
+    list: (opts?: { include_all?: boolean }) =>
+        api.get('/categories', { params: opts?.include_all ? { include_all: true } : undefined }),
 };
 
 export const ExamStructureAPI = {

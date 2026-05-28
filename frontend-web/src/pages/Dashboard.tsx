@@ -119,7 +119,11 @@ export const StudentDashboard = () => {
         const fetchInitial = async () => {
             try {
                 const [catRes, userRes, attemptRes, coursesRes] = await Promise.all([
-                    CategoryAPI.list(),
+                    // include_all=true so the goal switcher always lists every exam
+                    // (SSC, UPSC, Bank, etc.), even those whose content isn't yet
+                    // fully published. Without this the dropdown silently collapsed
+                    // to the one enabled category.
+                    CategoryAPI.list({ include_all: true }),
                     UserAPI.getMe(),
                     AttemptAPI.list().catch(() => ({ data: [] })),
                     CourseAPI.list().catch(() => ({ data: [] }))
