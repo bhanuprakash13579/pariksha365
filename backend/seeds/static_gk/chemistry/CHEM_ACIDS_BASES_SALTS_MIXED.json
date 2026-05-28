@@ -1,240 +1,108 @@
 {
   "schema_version": 1,
   "subject": "Chemistry",
-  "topic": "Acids, bases and salts — mixed tiers",
+  "topic": "Acids, Bases, and Salts",
   "topic_code": "CHEM_ACIDS_BASES_SALTS_MIXED",
-  "description": "pH, indicators, neutralisation, common salts",
+  "description": "Covers pH scale, Formic acid, Neutralization.",
   "questions": [
     {
-      "stem": "The pH of pure water at 25 °C is exactly:",
+      "stem": "The pH scale measures how acidic or basic a substance is. Which of the following statements about the pH scale is mathematically correct?",
       "options": [
         {
-          "option_text": "0",
-          "is_correct": false
-        },
-        {
-          "option_text": "7",
+          "option_text": "A solution with a pH of 3 is ten times more acidic than a solution with a pH of 4",
           "is_correct": true
         },
         {
-          "option_text": "10",
+          "option_text": "A solution with a pH of 8 is highly acidic",
           "is_correct": false
         },
         {
-          "option_text": "14",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "B",
-      "explanation": "Pure water at 25 °C is neutral: [H⁺] = [OH⁻] = 10⁻⁷ mol/L, so pH = 7. Acidic solutions have pH < 7 (higher H⁺), basic solutions pH > 7. The scale runs 0-14. A change of one pH unit means a ten-fold change in H⁺ concentration.",
-      "subject": "Chemistry",
-      "topic": "Acids, bases and salts — mixed tiers",
-      "topic_code": "CHE_SALTS",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-abs-01",
-      "generated_at": "2026-04-23T09:20:00+00:00",
-      "id": "sgk_CHEM_ACIDS_BASES_SALTS_MIXED_00001"
-    },
-    {
-      "stem": "Litmus paper turns red in the presence of:",
-      "options": [
-        {
-          "option_text": "A base",
+          "option_text": "Pure distilled water at room temperature has a pH of exactly 0",
           "is_correct": false
         },
         {
-          "option_text": "An acid",
-          "is_correct": true
-        },
-        {
-          "option_text": "A neutral salt",
-          "is_correct": false
-        },
-        {
-          "option_text": "Pure water",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "B",
-      "explanation": "Blue litmus turns red in acids; red litmus turns blue in bases. Litmus is a mixture of dyes from lichens. Other indicators: phenolphthalein — colourless in acid, pink in base; methyl orange — red in acid, yellow in base; turmeric — yellow in acid/neutral, red in base.",
-      "subject": "Chemistry",
-      "topic": "Acids, bases and salts — mixed tiers",
-      "topic_code": "CHE_SALTS",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-abs-02",
-      "generated_at": "2026-04-23T09:20:00+00:00",
-      "id": "sgk_CHEM_ACIDS_BASES_SALTS_MIXED_00002"
-    },
-    {
-      "stem": "Common salt used in cooking has the chemical formula:",
-      "options": [
-        {
-          "option_text": "NaHCO₃",
-          "is_correct": false
-        },
-        {
-          "option_text": "NaCl",
-          "is_correct": true
-        },
-        {
-          "option_text": "Na₂CO₃",
-          "is_correct": false
-        },
-        {
-          "option_text": "NaOH",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "B",
-      "explanation": "Common (table) salt is sodium chloride, NaCl. The other options are: NaHCO₃ — baking soda; Na₂CO₃ — washing soda; NaOH — caustic soda (a strong base). Most table salt in India is fortified with potassium iodate to prevent iodine-deficiency goitre.",
-      "subject": "Chemistry",
-      "topic": "Acids, bases and salts — mixed tiers",
-      "topic_code": "CHE_SALTS",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-abs-03",
-      "generated_at": "2026-04-23T09:20:00+00:00",
-      "id": "sgk_CHEM_ACIDS_BASES_SALTS_MIXED_00003"
-    },
-    {
-      "stem": "A neutralisation reaction between an acid and a base produces:",
-      "options": [
-        {
-          "option_text": "Only a salt",
-          "is_correct": false
-        },
-        {
-          "option_text": "A salt and water",
-          "is_correct": true
-        },
-        {
-          "option_text": "A salt and hydrogen",
-          "is_correct": false
-        },
-        {
-          "option_text": "A salt and oxygen",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "B",
-      "explanation": "Acid + Base → Salt + Water. Example: HCl + NaOH → NaCl + H₂O. Acid + active metal gives salt + H₂; metal oxide (basic) + acid also gives salt + water. Neutralisation is exothermic — the mixture warms up slightly.",
-      "subject": "Chemistry",
-      "topic": "Acids, bases and salts — mixed tiers",
-      "topic_code": "CHE_SALTS",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-abs-04",
-      "generated_at": "2026-04-23T09:20:00+00:00",
-      "id": "sgk_CHEM_ACIDS_BASES_SALTS_MIXED_00004"
-    },
-    {
-      "stem": "The acid secreted by the stomach during digestion is:",
-      "options": [
-        {
-          "option_text": "Sulphuric acid",
-          "is_correct": false
-        },
-        {
-          "option_text": "Hydrochloric acid",
-          "is_correct": true
-        },
-        {
-          "option_text": "Citric acid",
-          "is_correct": false
-        },
-        {
-          "option_text": "Acetic acid",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "B",
-      "explanation": "Parietal cells of the stomach lining secrete hydrochloric acid, giving gastric juice a pH of around 1.5-3.5. It kills microbes and activates pepsin from pepsinogen. Antacids (milk of magnesia = Mg(OH)₂, or baking soda) neutralise excess HCl. Citric acid is found in citrus fruits; acetic acid in vinegar; sulphuric acid in lead-acid car batteries.",
-      "subject": "Chemistry",
-      "topic": "Acids, bases and salts — mixed tiers",
-      "topic_code": "CHE_SALTS",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-abs-05",
-      "generated_at": "2026-04-23T09:20:00+00:00",
-      "id": "sgk_CHEM_ACIDS_BASES_SALTS_MIXED_00005"
-    },
-    {
-      "stem": "Match the common name with the chemical formula. A. Baking soda. B. Washing soda. C. Caustic soda. D. Plaster of Paris. List-II: 1. NaOH, 2. Na₂CO₃·10H₂O, 3. NaHCO₃, 4. CaSO₄·½H₂O.",
-      "options": [
-        {
-          "option_text": "A-3, B-2, C-1, D-4",
-          "is_correct": true
-        },
-        {
-          "option_text": "A-1, B-2, C-3, D-4",
-          "is_correct": false
-        },
-        {
-          "option_text": "A-3, B-1, C-2, D-4",
-          "is_correct": false
-        },
-        {
-          "option_text": "A-2, B-3, C-1, D-4",
+          "option_text": "A solution with a pH of 14 has the highest possible concentration of hydrogen ions (H+)",
           "is_correct": false
         }
       ],
       "correct_letter": "A",
-      "explanation": "Baking soda — sodium bicarbonate (NaHCO₃). Washing soda — hydrated sodium carbonate (Na₂CO₃·10H₂O). Caustic soda — sodium hydroxide (NaOH), a strong base used in soap-making. Plaster of Paris — calcium sulphate hemihydrate (CaSO₄·½H₂O); made by heating gypsum to ~120 °C.",
+      "explanation": "WHY IT IS CORRECT: The pH scale (0 to 14) is logarithmic (base 10). It measures the concentration of Hydrogen ions (H+). Because it is logarithmic, a change of ONE unit on the scale represents a TEN-FOLD change in acidity. Therefore, pH 3 is 10 times more acidic than pH 4, and 100 times more acidic than pH 5.\nDECOY BUSTING: \n- pH 8 is mildly basic/alkaline (anything above 7 is basic).\n- Pure water is perfectly neutral at pH 7. (pH 0 is extremely strong acid).\n- pH 14 represents the STRONGEST base, meaning it has the LOWEST concentration of H+ ions (and the highest concentration of OH- ions).\nEXAM INSIGHT: Human blood is slightly basic, strictly maintained between 7.35 and 7.45. Acid rain typically has a pH between 4.0 and 5.0.",
       "subject": "Chemistry",
-      "topic": "Acids, bases and salts — mixed tiers",
-      "topic_code": "CHE_SALTS",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-abs-06",
-      "generated_at": "2026-04-23T09:20:00+00:00",
-      "id": "sgk_CHEM_ACIDS_BASES_SALTS_MIXED_00006"
+      "topic": "Acids, Bases, and Salts",
+      "topic_code": "CHEM_ACIDS_BASES_SALTS_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_CHEM_ACIDS_BASES_SALTS_MIXED_001"
     },
     {
-      "stem": "Which acid is naturally present in sour milk and curd?",
+      "stem": "When an ant bites, it injects an acidic liquid into the skin, causing a burning sensation. Which acid is primarily responsible for this?",
       "options": [
         {
-          "option_text": "Citric acid",
+          "option_text": "Formic acid (Methanoic acid)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Acetic acid",
           "is_correct": false
         },
         {
           "option_text": "Lactic acid",
-          "is_correct": true
-        },
-        {
-          "option_text": "Formic acid",
           "is_correct": false
         },
         {
-          "option_text": "Tartaric acid",
+          "option_text": "Citric acid",
           "is_correct": false
         }
       ],
-      "correct_letter": "B",
-      "explanation": "Lactic acid is produced when Lactobacillus bacteria ferment lactose in milk; it curdles the milk and gives curd its sour taste. Citric acid is in lemons and oranges; formic acid in ant stings and nettles; tartaric acid in grapes and tamarind; acetic acid in vinegar; oxalic acid in spinach.",
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: Ant venom and bee stings contain Formic acid (IUPAC name: Methanoic acid, HCOOH). The name comes from the Latin word 'formica', which means ant. The burning sensation is caused by this acid reacting with the tissues in the skin. \nDECOY BUSTING: Acetic acid is found in vinegar. Lactic acid is found in sour milk/curd and muscle tissue during fatigue. Citric acid is found in citrus fruits (lemons, oranges).\nEXAM INSIGHT: The standard first-aid home remedy for an ant sting is to rub a mild base on it, such as baking soda (sodium bicarbonate) or calamine lotion, to neutralize the formic acid.",
       "subject": "Chemistry",
-      "topic": "Acids, bases and salts — mixed tiers",
-      "topic_code": "CHE_SALTS",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-23-chem-abs-07",
-      "generated_at": "2026-04-23T09:20:00+00:00",
-      "id": "sgk_CHEM_ACIDS_BASES_SALTS_MIXED_00007"
+      "topic": "Acids, Bases, and Salts",
+      "topic_code": "CHEM_ACIDS_BASES_SALTS_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_CHEM_ACIDS_BASES_SALTS_MIXED_002"
+    },
+    {
+      "stem": "The process by which an acid reacts with a base to form salt and water is called:",
+      "options": [
+        {
+          "option_text": "Neutralization",
+          "is_correct": true
+        },
+        {
+          "option_text": "Saponification",
+          "is_correct": false
+        },
+        {
+          "option_text": "Esterification",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hydration",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: A neutralization reaction is a chemical reaction in which an acid and a base quantitatively react with each other. The H+ ions from the acid combine with the OH- ions from the base to form water (H2O), and the remaining ions form a salt. For example, Hydrochloric Acid (HCl) + Sodium Hydroxide (NaOH) -> Sodium Chloride (NaCl) + Water (H2O).\nDECOY BUSTING: Saponification is the reaction of fats/oils with a strong base to make soap. Esterification is the reaction of an acid and an alcohol to make an ester (which smells fruity). Hydration is the addition of water.\nEXAM INSIGHT: Farmers use neutralization to treat acidic soil by adding quicklime (calcium oxide) or slaked lime (calcium hydroxide), which are bases. Similarly, antacids (like Milk of Magnesia) neutralize excess stomach acid.",
+      "subject": "Chemistry",
+      "topic": "Acids, Bases, and Salts",
+      "topic_code": "CHEM_ACIDS_BASES_SALTS_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_CHEM_ACIDS_BASES_SALTS_MIXED_003"
     }
   ]
 }

@@ -1,191 +1,75 @@
 {
   "schema_version": 1,
   "subject": "Reasoning",
-  "topic": "Coding-Decoding — Letter Shift and Pattern",
+  "topic": "Coding and Decoding",
   "topic_code": "REAS_CODING_DECODING_II_MIXED",
-  "generated_at": "2026-05-08",
+  "description": "Covers Reverse shifting and Number sum coding.",
   "questions": [
     {
-      "id": "sgk_REAS_CODING_DECODING_II_MIXED_001",
-      "text": "In a code, each letter is shifted +3 (A→D, B→E...). 'CAT' is coded as 'FDW'. How is 'BIRD' coded?",
+      "stem": "In a certain code language, 'COMPUTER' is written as 'RFUVQNPC'. How will 'MEDICINE' be written in that same code?",
       "options": [
         {
-          "option_text": "ELUG",
+          "option_text": "EOJDJEFM",
           "is_correct": true
         },
         {
-          "option_text": "EKVG",
+          "option_text": "MFEDJJOE",
           "is_correct": false
         },
         {
-          "option_text": "DLUG",
+          "option_text": "MFEJDJOE",
           "is_correct": false
         },
         {
-          "option_text": "ELMG",
+          "option_text": "EOJDEJFM",
           "is_correct": false
         }
       ],
-      "correct": "A",
-      "difficulty": "easy",
-      "effort_tier": "tier1",
-      "explanation": "Each letter +3: B(2)+3=E(5), I(9)+3=L(12), R(18)+3=U(21), D(4)+3=G(7) → ELUG. Verify with given: C(3)+3=F, A(1)+3=D, T(20)+3=W → FDW ✓."
-    },
-    {
-      "id": "sgk_REAS_CODING_DECODING_II_MIXED_002",
-      "text": "In a code, each letter is replaced by its mirror in the alphabet (A↔Z, B↔Y, C↔X... so position n → position 27−n). 'COLD' is coded as 'XLWO'. How is 'HEAT' coded?",
-      "options": [
-        {
-          "option_text": "SVZG",
-          "is_correct": true
-        },
-        {
-          "option_text": "WSZA",
-          "is_correct": false
-        },
-        {
-          "option_text": "SVYG",
-          "is_correct": false
-        },
-        {
-          "option_text": "TVZG",
-          "is_correct": false
-        }
-      ],
-      "correct": "A",
-      "difficulty": "easy",
-      "effort_tier": "tier1",
-      "explanation": "Mirror rule: each position n maps to (27−n). H(8)→S(19), E(5)→V(22), A(1)→Z(26), T(20)→G(7) → SVZG. Verify: C(3)→X(24), O(15)→L(12), L(12)→O(15), D(4)→W(23) → XLWO ✓."
-    },
-    {
-      "id": "sgk_REAS_CODING_DECODING_II_MIXED_003",
-      "text": "In a code, each letter is shifted by its position in the word (+1 for 1st letter, +2 for 2nd, +3 for 3rd, +4 for 4th). 'WORD' is coded as 'XQUH'. How is 'STAR' coded?",
-      "options": [
-        {
-          "option_text": "TVDV",
-          "is_correct": true
-        },
-        {
-          "option_text": "TUDT",
-          "is_correct": false
-        },
-        {
-          "option_text": "TVCU",
-          "is_correct": false
-        },
-        {
-          "option_text": "TVCV",
-          "is_correct": false
-        }
-      ],
-      "correct": "A",
-      "difficulty": "medium",
-      "effort_tier": "tier1",
-      "explanation": "S(19)+1=T(20), T(20)+2=V(22), A(1)+3=D(4), R(18)+4=V(22) → TVDV. Verify: W(23)+1=X(24), O(15)+2=Q(17), R(18)+3=U(21), D(4)+4=H(8) → XQUH ✓."
-    },
-    {
-      "id": "sgk_REAS_CODING_DECODING_II_MIXED_004",
-      "text": "In a code, the word is reversed and then each letter is shifted +1. 'CODE' is coded as 'FEPD'. How is 'LOVE' coded?",
-      "options": [
-        {
-          "option_text": "FWPM",
-          "is_correct": true
-        },
-        {
-          "option_text": "EWPM",
-          "is_correct": false
-        },
-        {
-          "option_text": "FVPM",
-          "is_correct": false
-        },
-        {
-          "option_text": "FWPN",
-          "is_correct": false
-        }
-      ],
-      "correct": "A",
-      "difficulty": "medium",
-      "effort_tier": "tier1",
-      "explanation": "Reverse LOVE = EVOL. E+1=F, V+1=W, O+1=P, L+1=M → FWPM. Verify: CODE reversed = EDOC. E+1=F, D+1=E, O+1=P, C+1=D → FEPD ✓."
-    },
-    {
-      "id": "sgk_REAS_CODING_DECODING_II_MIXED_005",
-      "text": "In a code where each letter is shifted +1 (A→B, B→C...), what does the coded word 'GPPE' decode to?",
-      "options": [
-        {
-          "option_text": "FOOD",
-          "is_correct": true
-        },
-        {
-          "option_text": "FOND",
-          "is_correct": false
-        },
-        {
-          "option_text": "FOLK",
-          "is_correct": false
-        },
-        {
-          "option_text": "FOOT",
-          "is_correct": false
-        }
-      ],
-      "correct": "A",
-      "difficulty": "medium",
-      "effort_tier": "tier1",
-      "explanation": "Decoding means reversing the +1 shift (apply −1): G(7)−1=F(6), P(16)−1=O(15), P(16)−1=O(15), E(5)−1=D(4) → FOOD. FOND would encode to GPOE (not GPPE); FOOT would encode to GPPE — wait, F+1=G, O+1=P, O+1=P, T+1=U → GPPU ≠ GPPE. FOOD: F+1=G, O+1=P, O+1=P, D+1=E → GPPE ✓."
-    },
-    {
-      "id": "sgk_REAS_CODING_DECODING_II_MIXED_006",
-      "text": "In a code, consonants are shifted −1 and vowels are shifted +2. 'FIRE' is coded as 'EKQG'. How is 'CALM' coded?",
-      "options": [
-        {
-          "option_text": "BCKL",
-          "is_correct": true
-        },
-        {
-          "option_text": "BCJL",
-          "is_correct": false
-        },
-        {
-          "option_text": "BDKL",
-          "is_correct": false
-        },
-        {
-          "option_text": "BCKM",
-          "is_correct": false
-        }
-      ],
-      "correct": "A",
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: Let's analyze the shift from COMPUTER to RFUVQNPC.\n1. The word is reversed: RETUPMOC\n2. Now, apply a +1 shift to each letter:\nR + 1 = S (Wait, the first letter is R. Let's look closer).\nLet's reverse the whole word: C-O-M-P-U-T-E-R becomes R-E-T-U-P-M-O-C.\nNow look at the code: R-F-U-V-Q-N-P-C.\nWait, R remains R? No, C(+1)=D? No.\nLet's look at the first and last letters: C -> R and R -> C. They swapped!\nLet's look at the middle letters: O M P U T E -> F U V Q N P.\nO(+1)=P (which is at the end). E(+1)=F (which is at the beginning).\nAh! The pattern is: The first and last letters are swapped. The middle letters are reversed and shifted by +1.\nLet's test another pattern:\nC -> +1 -> D (not in code).\nLet's try reversing just the middle?\nLet's look at the classic pattern:\nC O M P U T E R\nWrite it backward: R E T U P M O C\nNow shift: R(+0)=R. E(+1)=F. T(+1)=U. U(+1)=V. P(+1)=Q. M(+1)=N. O(+1)=P. C(+0)=C.\nYes! The first and last letters of the reversed word stay the same. The rest get +1.\nNow apply to MEDICINE:\n1. Reverse: E N I C I D E M\n2. Keep first/last same, +1 to middle:\nE stays E.\nN + 1 = O.\nI + 1 = J.\nC + 1 = D.\nI + 1 = J.\nD + 1 = E.\nE + 1 = F.\nM stays M.\nResult: EOJDJEFM.\nDECOY BUSTING: Other options fail to keep the first/last letters fixed after reversal, or they apply the shift without reversing.\nEXAM INSIGHT: When the first and last letters of the code look like the first and last letters of the original word (just swapped), immediately test the 'Reverse and Shift' pattern.",
+      "subject": "Reasoning",
+      "topic": "Coding and Decoding",
+      "topic_code": "REAS_CODING_DECODING_II_MIXED",
       "difficulty": "hard",
       "effort_tier": "tier2",
-      "explanation": "C(cons, 3)−1=B(2), A(vowel, 1)+2=C(3), L(cons, 12)−1=K(11), M(cons, 13)−1=L(12) → BCKL. Verify FIRE: F(cons)−1=E, I(vowel)+2=K, R(cons)−1=Q, E(vowel)+2=G → EKQG ✓."
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_001"
     },
     {
-      "id": "sgk_REAS_CODING_DECODING_II_MIXED_007",
-      "text": "In a code, each letter is first replaced by its mirror (A↔Z, n↔27−n) and then the entire word is reversed. 'CODE' is coded as 'VWLX'. How is 'STAR' coded?",
+      "stem": "If A = 1, CAT = 24, then POLICE = ?",
       "options": [
         {
-          "option_text": "IZGH",
+          "option_text": "60",
           "is_correct": true
         },
         {
-          "option_text": "HZGI",
+          "option_text": "57",
           "is_correct": false
         },
         {
-          "option_text": "IZGJ",
+          "option_text": "62",
           "is_correct": false
         },
         {
-          "option_text": "IYGH",
+          "option_text": "59",
           "is_correct": false
         }
       ],
-      "correct": "A",
-      "difficulty": "hard",
-      "effort_tier": "tier2",
-      "explanation": "Step 1 — mirror STAR: S(19)→H(8), T(20)→G(7), A(1)→Z(26), R(18)→I(9) → HGZI. Step 2 — reverse HGZI → IZGH. Verify CODE: C(3)→X(24), O(15)→L(12), D(4)→W(23), E(5)→V(22) → XLWV → reversed → VWLX ✓."
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: The logic is the sum of the positional values of the letters in the English alphabet (A=1, B=2, C=3... Z=26).\nFor CAT:\nC = 3\nA = 1\nT = 20\nSum = 3 + 1 + 20 = 24.\nNow apply to POLICE:\nP = 16\nO = 15\nL = 12\nI = 9\nC = 3\nE = 5\nSum = 16 + 15 + 12 + 9 + 3 + 5 = 60.\nDECOY BUSTING: The other options are simply arithmetic errors. Always double-check your addition in these problems.\nEXAM INSIGHT: For number coding, always check the direct sum first. If that fails, check the sum of the REVERSE positional values (Z=1, Y=2).",
+      "subject": "Reasoning",
+      "topic": "Coding and Decoding",
+      "topic_code": "REAS_CODING_DECODING_II_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_002"
     }
   ]
 }

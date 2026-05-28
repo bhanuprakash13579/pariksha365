@@ -1,248 +1,108 @@
 {
   "schema_version": 1,
   "subject": "Economics",
-  "topic": "Sectors of Indian economy — mixed tiers",
+  "topic": "Sectors of Economy",
   "topic_code": "ECO_SECTORS_MIXED",
-  "description": "Primary/secondary/tertiary, employment-output split, industries",
+  "description": "Covers Primary/Tertiary sectors and Disguised unemployment.",
   "questions": [
     {
-      "stem": "In India, which sector contributes the LARGEST share of GDP currently?",
+      "stem": "In the context of the Indian economy, which sector is referred to as the 'Primary Sector'?",
       "options": [
         {
-          "option_text": "Agriculture (primary)",
-          "is_correct": false
-        },
-        {
-          "option_text": "Industry / manufacturing (secondary)",
-          "is_correct": false
-        },
-        {
-          "option_text": "Services (tertiary)",
+          "option_text": "Agriculture and allied activities",
           "is_correct": true
         },
         {
-          "option_text": "Mining",
+          "option_text": "Manufacturing and Industries",
+          "is_correct": false
+        },
+        {
+          "option_text": "Services like IT and Banking",
+          "is_correct": false
+        },
+        {
+          "option_text": "High-level Research and Development",
           "is_correct": false
         }
       ],
-      "correct_letter": "C",
-      "explanation": "Services sector contributes >50% of India's GDP. Industry ~26%, Agriculture ~15%. But agriculture still EMPLOYS ~44% of the workforce — the classic 'structural mismatch' of India's economy.",
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: The Primary Sector involves the direct extraction or harvesting of natural resources from the earth. This includes agriculture, forestry, fishing, and mining. It forms the base for all other products.\nDECOY BUSTING: Manufacturing is the Secondary Sector. Services (banking, transport) form the Tertiary Sector. Research & Development is often classed as the Quaternary Sector.\nEXAM INSIGHT: Even though the Primary Sector contributes the LEAST to India's GDP (around 18-20%), it famously employs the LARGEST portion of the Indian workforce (around 45%), highlighting a massive productivity/underemployment issue in agriculture.",
       "subject": "Economics",
-      "topic": "Sectors of Indian economy — mixed tiers",
-      "topic_code": "ECO_INDUSTRY",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 1,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eco-sec-01",
-      "generated_at": "2026-04-22T12:10:00+00:00",
-      "id": "sgk_ECO_SECTORS_MIXED_00001"
+      "topic": "Sectors of Economy",
+      "topic_code": "ECO_SECTORS_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_ECO_SECTORS_MIXED_001"
     },
     {
-      "stem": "Which of the following is classified as a PRIMARY sector activity?",
+      "stem": "Which of the following activities falls under the 'Tertiary Sector' of the economy?",
       "options": [
+        {
+          "option_text": "Banking and Insurance",
+          "is_correct": true
+        },
+        {
+          "option_text": "Textile manufacturing",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mining of iron ore",
+          "is_correct": false
+        },
+        {
+          "option_text": "Dairy farming",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: The Tertiary Sector is the service sector. It doesn't produce physical goods; instead, it provides services that support the primary and secondary sectors and the general population. Banking, insurance, transport, trade, healthcare, and education all fall under this sector.\nDECOY BUSTING: Textile manufacturing is Secondary (processing raw materials). Mining and dairy farming are Primary (extracting from nature).\nEXAM INSIGHT: The Tertiary sector is the undisputed backbone of the modern Indian economy, contributing over 50% to the total GDP, largely driven by the IT/BPO boom since the 1990s.",
+      "subject": "Economics",
+      "topic": "Sectors of Economy",
+      "topic_code": "ECO_SECTORS_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_ECO_SECTORS_MIXED_002"
+    },
+    {
+      "stem": "The phenomenon of 'Disguised Unemployment' is most commonly observed in which sector of the Indian economy?",
+      "options": [
+        {
+          "option_text": "Agriculture",
+          "is_correct": true
+        },
+        {
+          "option_text": "Information Technology",
+          "is_correct": false
+        },
+        {
+          "option_text": "Manufacturing",
+          "is_correct": false
+        },
         {
           "option_text": "Banking",
           "is_correct": false
-        },
-        {
-          "option_text": "Cement manufacturing",
-          "is_correct": false
-        },
-        {
-          "option_text": "Fishing",
-          "is_correct": true
-        },
-        {
-          "option_text": "IT services",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "C",
-      "explanation": "Primary = extraction from nature: agriculture, fishing, forestry, mining. Secondary = manufacturing / industry (cement, cars, steel). Tertiary = services (banking, IT, trade, transport). Quaternary = knowledge-intensive (R&D). Quinary = high-level decision-making (policy, CEO).",
-      "subject": "Economics",
-      "topic": "Sectors of Indian economy — mixed tiers",
-      "topic_code": "ECO_INDUSTRY",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eco-sec-02",
-      "generated_at": "2026-04-22T12:10:00+00:00",
-      "id": "sgk_ECO_SECTORS_MIXED_00002"
-    },
-    {
-      "stem": "Under MGNREGA (2005), each rural household is guaranteed at least ___ days of wage employment a year:",
-      "options": [
-        {
-          "option_text": "50",
-          "is_correct": false
-        },
-        {
-          "option_text": "100",
-          "is_correct": true
-        },
-        {
-          "option_text": "150",
-          "is_correct": false
-        },
-        {
-          "option_text": "200",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "B",
-      "explanation": "MGNREGA — Mahatma Gandhi National Rural Employment Guarantee Act (2005), effective 2006. Guarantees 100 days of unskilled wage labour per rural household per year, within 5 km of the home or travel allowance. Now extended to 150 days in some drought-hit districts.",
-      "subject": "Economics",
-      "topic": "Sectors of Indian economy — mixed tiers",
-      "topic_code": "ECO_INDUSTRY",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eco-sec-03",
-      "generated_at": "2026-04-22T12:10:00+00:00",
-      "id": "sgk_ECO_SECTORS_MIXED_00003"
-    },
-    {
-      "stem": "Match the INDUSTRY with its KEY INDIAN LOCATION. A. Jute.  B. Cotton textiles.  C. Iron & steel.  D. IT / software. List-II: 1. Kolkata belt (WB).  2. Mumbai-Ahmedabad.  3. Jamshedpur (Jharkhand).  4. Bengaluru / Hyderabad.",
-      "options": [
-        {
-          "option_text": "A-1, B-2, C-3, D-4",
-          "is_correct": true
-        },
-        {
-          "option_text": "A-2, B-1, C-3, D-4",
-          "is_correct": false
-        },
-        {
-          "option_text": "A-1, B-2, C-4, D-3",
-          "is_correct": false
-        },
-        {
-          "option_text": "A-1, B-3, C-2, D-4",
-          "is_correct": false
         }
       ],
       "correct_letter": "A",
-      "explanation": "Jute — West Bengal (Hooghly belt; India is world's largest jute producer). Cotton — Mumbai 'Cottonopolis', Ahmedabad ('Manchester of India'). Iron & steel — TISCO (1907) at Jamshedpur. IT — Bengaluru 'Silicon Valley of India', Hyderabad 'Cyberabad'.",
+      "explanation": "WHY IT IS CORRECT: Disguised unemployment occurs when more people are employed in a job than are actually required to do it. If some workers are removed, total production does not decrease because their marginal productivity is zero. In India, this is rampant in agriculture, where an entire family of 6 might work on a small farm that only really needs 2 people to tend it.\nDECOY BUSTING: IT, Manufacturing, and Banking usually suffer from 'Cyclical' unemployment (due to recessions) or 'Structural' unemployment (due to changing skills), but rarely disguised unemployment as private companies won't pay extra unneeded workers.\nEXAM INSIGHT: Another common type of rural unemployment is 'Seasonal Unemployment', where farmers have no work during the off-season (months when no crops are sown or harvested).",
       "subject": "Economics",
-      "topic": "Sectors of Indian economy — mixed tiers",
-      "topic_code": "ECO_INDUSTRY",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eco-sec-04",
-      "generated_at": "2026-04-22T12:10:00+00:00",
-      "id": "sgk_ECO_SECTORS_MIXED_00004"
-    },
-    {
-      "stem": "The term 'Blue Economy' refers to:",
-      "options": [
-        {
-          "option_text": "Economic activities related to water",
-          "is_correct": true
-        },
-        {
-          "option_text": "Tax-haven offshore banking",
-          "is_correct": false
-        },
-        {
-          "option_text": "Stock market indicators tied to the colour blue",
-          "is_correct": false
-        },
-        {
-          "option_text": "Economy focused on cold-chain logistics",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "A",
-      "explanation": "Blue economy — sustainable use of ocean resources: fisheries, shipping, offshore oil/gas, coastal tourism, marine renewable energy. India launched 'Draft Blue Economy Policy' framework in 2021. Green economy = sustainability focus on land/forest. oceans, seas, lakes, rivers.",
-      "subject": "Economics",
-      "topic": "Sectors of Indian economy — mixed tiers",
-      "topic_code": "ECO_INDUSTRY",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eco-sec-05",
-      "generated_at": "2026-04-22T12:10:00+00:00",
-      "id": "sgk_ECO_SECTORS_MIXED_00005",
-      "_fixes": [
-        {
-          "type": "option_tell_fix",
-          "was": "Economic activities related to water (oceans, seas, lakes, rivers)",
-          "now": "Economic activities related to water",
-          "moved_to_explanation": "oceans, seas, lakes, rivers"
-        }
-      ]
-    },
-    {
-      "stem": "Consider the following about NITI AAYOG. 1. It replaced the Planning Commission on 1 January 2015. 2. Its full name is 'National Institution for Transforming India'. 3. The Prime Minister is its Chairperson ex officio. 4. Unlike the Planning Commission, it does NOT allocate funds to states. Which are correct?",
-      "options": [
-        {
-          "option_text": "1 and 2 only",
-          "is_correct": false
-        },
-        {
-          "option_text": "1, 2 and 3 only",
-          "is_correct": false
-        },
-        {
-          "option_text": "1, 2, 3 and 4",
-          "is_correct": true
-        },
-        {
-          "option_text": "2 and 4 only",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "C",
-      "explanation": "All four correct. NITI Aayog is a policy think-tank, not a statutory or constitutional body. Vice-Chairperson (full-time executive head) currently: Suman Bery (2022 onwards). Fund allocation to states moved to the Finance Ministry.",
-      "subject": "Economics",
-      "topic": "Sectors of Indian economy — mixed tiers",
-      "topic_code": "ECO_INDUSTRY",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 1,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eco-sec-06",
-      "generated_at": "2026-04-22T12:10:00+00:00",
-      "id": "sgk_ECO_SECTORS_MIXED_00006"
-    },
-    {
-      "stem": "The 'INFORMAL' / 'UNORGANISED' sector in India broadly employs what fraction of the workforce?",
-      "options": [
-        {
-          "option_text": "About 20%",
-          "is_correct": false
-        },
-        {
-          "option_text": "About 40%",
-          "is_correct": false
-        },
-        {
-          "option_text": "About 80-90%",
-          "is_correct": true
-        },
-        {
-          "option_text": "Almost 100%",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "C",
-      "explanation": "Informal sector (small enterprises, self-employed, contract workers, farm labour) employs roughly 80-90% of India's workforce but contributes ~50% of GDP — the classic informality trap. Formalisation efforts include GST registration, Udyam portal (MSMEs), e-Shram (unorganised workers).",
-      "subject": "Economics",
-      "topic": "Sectors of Indian economy — mixed tiers",
-      "topic_code": "ECO_INDUSTRY",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 1,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-22-eco-sec-07",
-      "generated_at": "2026-04-22T12:10:00+00:00",
-      "id": "sgk_ECO_SECTORS_MIXED_00007"
+      "topic": "Sectors of Economy",
+      "topic_code": "ECO_SECTORS_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_ECO_SECTORS_MIXED_003"
     }
   ]
 }

@@ -1,240 +1,75 @@
 {
   "schema_version": 1,
   "subject": "Reasoning",
-  "topic": "Coding-decoding III — mixed tiers",
+  "topic": "Coding and Decoding",
   "topic_code": "REAS_CODING_DECODING_III_MIXED",
-  "description": "Letter-shift codes, position-number coding, mirror coding, word reversal",
+  "description": "Covers Reverse -1 shift, Double positional value.",
   "questions": [
     {
-      "stem": "If 'BREAK' is coded as 'CSFBL' (each letter +1), then 'STONE' is coded as:",
+      "stem": "In a certain code, MONKEY is written as XDJMNL. How is TIGER written in that code?",
       "options": [
         {
-          "option_text": "TUPOF in the same code system",
+          "option_text": "QDFHS",
           "is_correct": true
         },
         {
-          "option_text": "TUPNF in the same code system",
+          "option_text": "SDFHS",
           "is_correct": false
         },
         {
-          "option_text": "RSNMD in the same code system",
+          "option_text": "SHFDQ",
           "is_correct": false
         },
         {
-          "option_text": "TUPOG in the same code system",
+          "option_text": "QDHFS",
           "is_correct": false
         }
       ],
       "correct_letter": "A",
-      "explanation": "Rule: +1 shift. Verify BREAK: B→C, R→S, E→F, A→B, K→L = CSFBL ✓. Apply STONE: S→T, T→U, O→P, N→O, E→F = TUPOF. Distractor TUPNF — N kept as N. Distractor RSNMD = shift −1. Distractor TUPOG — E shifted +2.",
+      "explanation": "WHY IT IS CORRECT: \nLet's reverse MONKEY -> YEKNOM.\nNow apply a -1 shift to each letter:\nY - 1 = X\nE - 1 = D\nK - 1 = J\nN - 1 = M\nO - 1 = N\nM - 1 = L\nResult: XDJMNL.\nNow apply to TIGER:\n1. Reverse: REGIT.\n2. Apply -1 shift:\nR - 1 = Q\nE - 1 = D\nG - 1 = F\nI - 1 = H\nT - 1 = S\nResult: QDFHS.\nDECOY BUSTING: The decoy options use wrong shifts or forget to reverse the word first.\nEXAM INSIGHT: The \"Reverse and +/- 1\" pattern is extremely common in Bank PO and SSC CGL Tier 1 exams.",
       "subject": "Reasoning",
-      "topic": "Coding-decoding III — mixed tiers",
-      "topic_code": "RSN_CODING",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-reas-cd3-01",
-      "generated_at": "2026-04-26T20:50:00+00:00",
-      "id": "sgk_REAS_CODING_DECODING_III_MIXED_00001"
+      "topic": "Coding and Decoding",
+      "topic_code": "REAS_CODING_DECODING_III_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_REAS_CODING_DECODING_III_MIXED_001"
     },
     {
-      "stem": "If 'TEACHER' is coded as 'VGCEJGT' (each letter +2), then 'STUDENT' is coded as:",
+      "stem": "If A=2, M=26, Z=52, then BET = ?",
       "options": [
         {
-          "option_text": "UVWFGPV in the cipher code",
+          "option_text": "54",
           "is_correct": true
         },
         {
-          "option_text": "UVWFFPV in the cipher code",
+          "option_text": "27",
           "is_correct": false
         },
         {
-          "option_text": "RSTCDMS in the cipher code",
+          "option_text": "44",
           "is_correct": false
         },
         {
-          "option_text": "UVWGGPV in the cipher code",
+          "option_text": "64",
           "is_correct": false
         }
       ],
       "correct_letter": "A",
-      "explanation": "Rule: +2 shift. STUDENT: S→U, T→V, U→W, D→F, E→G, N→P, T→V = UVWFGPV. Verify TEACHER: T→V, E→G, A→C, C→E, H→J, E→G, R→T = VGCEJGT ✓. Distractor UVWFFPV slips on E. Distractor RSTCDMS = shift −1. Distractor UVWGGPV slips on D.",
+      "explanation": "WHY IT IS CORRECT: The logic here is (Positional Value x 2).\nA = 1 x 2 = 2.\nM = 13 x 2 = 26.\nZ = 26 x 2 = 52.\nFor BET:\nB = 2 x 2 = 4\nE = 5 x 2 = 10\nT = 20 x 2 = 40\nSum = 4 + 10 + 40 = 54.\nAlternatively, calculate the normal sum and multiply by 2: (2+5+20) * 2 = 27 * 2 = 54.\nDECOY BUSTING: 27 is the normal sum without multiplying. Always test the logic on ALL provided examples (A, M, Z) before applying.\nEXAM INSIGHT: Number coding often uses operations like (Sum x 2), (Sum + Number of Letters), or (Sum of Vowels only).",
       "subject": "Reasoning",
-      "topic": "Coding-decoding III — mixed tiers",
-      "topic_code": "RSN_CODING",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-reas-cd3-02",
-      "generated_at": "2026-04-26T20:50:00+00:00",
-      "id": "sgk_REAS_CODING_DECODING_III_MIXED_00002"
-    },
-    {
-      "stem": "In a code, 'PAPER' is written as 'OZODQ'. How is 'PENCIL' written in the same code?",
-      "options": [
-        {
-          "option_text": "ODMBHK in the same cipher",
-          "is_correct": true
-        },
-        {
-          "option_text": "ODNBHK in the same cipher",
-          "is_correct": false
-        },
-        {
-          "option_text": "QFOEJM in the same cipher",
-          "is_correct": false
-        },
-        {
-          "option_text": "ODMBJK in the same cipher",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "A",
-      "explanation": "Rule: −1 shift. PAPER: P→O, A→Z (wraps), P→O, E→D, R→Q = OZODQ ✓. PENCIL: P→O, E→D, N→M, C→B, I→H, L→K = ODMBHK. Distractor ODNBHK = no shift on N. Distractor QFOEJM = +1. Distractor ODMBJK = wrong shift on I.",
-      "subject": "Reasoning",
-      "topic": "Coding-decoding III — mixed tiers",
-      "topic_code": "RSN_CODING",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-reas-cd3-03",
-      "generated_at": "2026-04-26T20:50:00+00:00",
-      "id": "sgk_REAS_CODING_DECODING_III_MIXED_00003"
-    },
-    {
-      "stem": "If A=1, B=2, ..., Z=26, then the SUM of letter positions in 'GAME' equals:",
-      "options": [
-        {
-          "option_text": "26 is the position sum total",
-          "is_correct": true
-        },
-        {
-          "option_text": "25 is the position sum total",
-          "is_correct": false
-        },
-        {
-          "option_text": "28 is the position sum total",
-          "is_correct": false
-        },
-        {
-          "option_text": "30 is the position sum total",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "A",
-      "explanation": "G = 7, A = 1, M = 13, E = 5. Sum = 7 + 1 + 13 + 5 = 26. Distractor 25 = subtract one. Distractor 28 = used wrong M position. Distractor 30 = arithmetic slip.",
-      "subject": "Reasoning",
-      "topic": "Coding-decoding III — mixed tiers",
-      "topic_code": "RSN_CODING",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-reas-cd3-04",
-      "generated_at": "2026-04-26T20:50:00+00:00",
-      "id": "sgk_REAS_CODING_DECODING_III_MIXED_00004"
-    },
-    {
-      "stem": "In a MIRROR code (A↔Z, B↔Y, C↔X, ..., M↔N), the word 'LION' is coded as:",
-      "options": [
-        {
-          "option_text": "ORLM in the mirror cipher",
-          "is_correct": true
-        },
-        {
-          "option_text": "OPMN in the mirror cipher",
-          "is_correct": false
-        },
-        {
-          "option_text": "ORLN in the mirror cipher",
-          "is_correct": false
-        },
-        {
-          "option_text": "ORML in the mirror cipher",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "A",
-      "explanation": "Mirror: letter at position p maps to position (27 − p). L = 12 → 27−12 = 15 = O. I = 9 → 18 = R. O = 15 → 12 = L. N = 14 → 13 = M. → ORLM. Distractor OPMN = shift −2 not mirror. Distractor ORLN = N kept. Distractor ORML = swap last two.",
-      "subject": "Reasoning",
-      "topic": "Coding-decoding III — mixed tiers",
-      "topic_code": "RSN_CODING",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-reas-cd3-05",
-      "generated_at": "2026-04-26T20:50:00+00:00",
-      "id": "sgk_REAS_CODING_DECODING_III_MIXED_00005"
-    },
-    {
-      "stem": "If 'PARIS' is coded as 'SIRAP' (word reversal), then 'INDIA' is coded as:",
-      "options": [
-        {
-          "option_text": "AIDNI in the same coding",
-          "is_correct": true
-        },
-        {
-          "option_text": "ANIDI in the same coding",
-          "is_correct": false
-        },
-        {
-          "option_text": "INDIA in the same coding",
-          "is_correct": false
-        },
-        {
-          "option_text": "IDIAN in the same coding",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "A",
-      "explanation": "Rule: reverse the order of letters. PARIS reversed = SIRAP ✓. INDIA reversed: I-N-D-I-A → A-I-D-N-I = AIDNI. Distractor ANIDI = wrong order. Distractor INDIA = no change. Distractor IDIAN = scrambled.",
-      "subject": "Reasoning",
-      "topic": "Coding-decoding III — mixed tiers",
-      "topic_code": "RSN_CODING",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-reas-cd3-06",
-      "generated_at": "2026-04-26T20:50:00+00:00",
-      "id": "sgk_REAS_CODING_DECODING_III_MIXED_00006"
-    },
-    {
-      "stem": "In a code, 'CAT' = 3+1+20 = 24 and 'DOG' = 4+15+7 = 26 (sum of letter positions). The code for 'BIRD' is:",
-      "options": [
-        {
-          "option_text": "33 from sum of positions",
-          "is_correct": true
-        },
-        {
-          "option_text": "32 from sum of positions",
-          "is_correct": false
-        },
-        {
-          "option_text": "34 from sum of positions",
-          "is_correct": false
-        },
-        {
-          "option_text": "31 from sum of positions",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "A",
-      "explanation": "Rule: sum of letter positions. BIRD: B = 2, I = 9, R = 18, D = 4. Sum = 2+9+18+4 = 33. Distractor 32 = used B = 1. Distractor 34 = arithmetic slip. Distractor 31 = used R = 17.",
-      "subject": "Reasoning",
-      "topic": "Coding-decoding III — mixed tiers",
-      "topic_code": "RSN_CODING",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "staleness_risk": 0,
-      "answer_source": "generated",
-      "generator_tag": "claude-opus-2026-04-26-reas-cd3-07",
-      "generated_at": "2026-04-26T20:50:00+00:00",
-      "id": "sgk_REAS_CODING_DECODING_III_MIXED_00007"
+      "topic": "Coding and Decoding",
+      "topic_code": "REAS_CODING_DECODING_III_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_REAS_CODING_DECODING_III_MIXED_002"
     }
   ]
 }

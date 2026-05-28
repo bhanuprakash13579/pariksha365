@@ -1,240 +1,75 @@
 {
   "schema_version": 1,
   "subject": "Reasoning",
-  "topic": "Blood Relations II — coded relations, multi-step family trees, gender identification",
+  "topic": "Blood Relations",
   "topic_code": "REAS_BLOOD_RELATIONS_II_MIXED",
-  "description": "Blood relations: direct and coded relation problems, 3-generation family trees, gender identification from context, marriage relations, in-law relations.",
+  "description": "Covers complex pointer relations and family tree logic.",
   "questions": [
     {
-      "stem": "A introduces B to C saying 'He is the son of my father's only daughter.' How is B related to A?",
+      "stem": "Pointing to a woman in a picture, a man says, 'She is the mother-in-law of the wife of the father of my only son.' How is the woman related to the man?",
       "options": [
         {
-          "option_text": "B is A's nephew — A's father's only daughter is A's sister; her son is A's nephew",
+          "option_text": "Mother",
           "is_correct": true
         },
         {
-          "option_text": "B is A's son — this would require B to be A's own child, not sister's child",
+          "option_text": "Wife",
           "is_correct": false
         },
         {
-          "option_text": "B is A's cousin — cousin would require a different parent relationship path",
+          "option_text": "Daughter",
           "is_correct": false
         },
         {
-          "option_text": "B is A's brother — A's father's only daughter's son is one generation below A",
+          "option_text": "Sister",
           "is_correct": false
         }
       ],
       "correct_letter": "A",
-      "explanation": "TRACE: A's father's only daughter = A's sister (A has only one sister). Her son = A's nephew. So B is A's nephew. GENDER CHECK: B is called 'He' so B is male. Sister's son = nephew. COMMON PITFALL: 'father's only daughter' is always the speaker's sister (or the speaker herself if female — but the 'only' usually implies distinct from speaker in exam context). PYQ: 'father's only daughter' = sister; her children = nephew/niece.",
+      "explanation": "WHY IT IS CORRECT: Let's break this down from the end backward:\n1. \"my only son\" -> The man's son.\n2. \"the father of my only son\" -> The man himself.\n3. \"the wife of the father of my only son\" -> The man's wife.\n4. \"She is the mother-in-law of [the man's wife]\" -> The mother-in-law of a man's wife is the man's own mother.\nTherefore, the woman in the picture is the man's mother.\nDECOY BUSTING: If the prompt said \"mother-in-law of my wife\", it's obvious. The phrase \"father of my only son\" is just a long-winded decoy way of saying \"me\".\nEXAM INSIGHT: The key to these \"pointing to a picture\" puzzles is replacing long phrases with the direct relationship, step-by-step.",
       "subject": "Reasoning",
-      "topic": "Blood Relations II — coded relations, multi-step family trees, gender identification",
-      "topic_code": "RSN_BLOOD",
-      "difficulty": "easy",
+      "topic": "Blood Relations",
+      "topic_code": "REAS_BLOOD_RELATIONS_II_MIXED",
+      "difficulty": "medium",
       "effort_tier": "tier1",
       "staleness_risk": "low",
       "answer_source": "verified",
       "generator_tag": "v3-rich-explanation",
-      "generated_at": "2026-05-06",
+      "generated_at": "2026-05-23",
       "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_001"
     },
     {
-      "stem": "In a family, P is the mother of Q. R is the brother of P. S is the father of R. How is S related to Q?",
+      "stem": "A, B, C, D, E, and F are members of a family. B is the son of C but C is not the mother of B. A and C are a married couple. E is the brother of C. D is the daughter of A. F is the brother of B. Who is the mother of B?",
       "options": [
         {
-          "option_text": "S is Q's maternal great-grandfather — S is grandfather of P, who is mother of Q",
+          "option_text": "A",
           "is_correct": true
         },
         {
-          "option_text": "S is Q's grandfather — S is P's grandfather, one more generation above Q's grandfather",
+          "option_text": "C",
           "is_correct": false
         },
         {
-          "option_text": "S is Q's uncle — S is P's brother's father; S is in the generation above P's parents",
+          "option_text": "D",
           "is_correct": false
         },
         {
-          "option_text": "S is Q's father — S is two generations above Q, not one generation above",
+          "option_text": "E",
           "is_correct": false
         }
       ],
       "correct_letter": "A",
-      "explanation": "CHAIN: Q's mother = P. P's brother = R. R's father = S. So S is the father of R and P. S → P (daughter) → Q. S is P's father = Q's grandfather. WAIT: Re-read — 'S is the father of R.' R is P's brother. So S is father of R and also father of P (since R and P are siblings). S is P's father = Q's maternal grandfather. So S is Q's maternal grandfather, NOT great-grandfather. CORRECTION: answer A says 'maternal great-grandfather' but the correct answer is 'maternal grandfather.' The correct letter should be B... but option B says 'grandfather' without 'maternal'. In exam context, the correct answer is 'maternal grandfather.' NOTE: this question tests careful chain-tracing — S is Q's maternal grandfather.",
+      "explanation": "WHY IT IS CORRECT: Let's build the family tree:\n1. \"B is the son of C but C is not the mother of B.\" -> If C is a parent but not the mother, C MUST be the FATHER.\n2. \"A and C are a married couple.\" -> Since C is the father (male), A must be the wife (female). Therefore, A is the mother.\n3. \"E is the brother of C\" -> E is the uncle.\n4. \"D is the daughter of A\" -> D is B's sister.\n5. \"F is the brother of B\" -> F is B's brother.\nThe question asks: Who is the mother of B? The answer is A.\nDECOY BUSTING: The trick is \"C is not the mother\". Many students get confused here, forgetting that a parent can be a father.\nEXAM INSIGHT: Always look out for \"Parent but not mother/father\" tricks. It simply determines the gender of the parent.",
       "subject": "Reasoning",
-      "topic": "Blood Relations II — coded relations, multi-step family trees, gender identification",
-      "topic_code": "RSN_BLOOD",
+      "topic": "Blood Relations",
+      "topic_code": "REAS_BLOOD_RELATIONS_II_MIXED",
       "difficulty": "easy",
       "effort_tier": "tier1",
       "staleness_risk": "low",
       "answer_source": "verified",
       "generator_tag": "v3-rich-explanation",
-      "generated_at": "2026-05-06",
+      "generated_at": "2026-05-23",
       "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_002"
-    },
-    {
-      "stem": "Pointing to a man, a woman says, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
-      "options": [
-        {
-          "option_text": "Mother — only daughter of my mother = myself; so the woman is the man's mother",
-          "is_correct": true
-        },
-        {
-          "option_text": "Aunt — this would require the man's mother to be the woman's sibling, not herself",
-          "is_correct": false
-        },
-        {
-          "option_text": "Sister — sister implies same generation; the man's mother is the woman herself here",
-          "is_correct": false
-        },
-        {
-          "option_text": "Grandmother — grandmother would require one more generation between the woman and the man",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "A",
-      "explanation": "CLASSIC TRICK: 'the only daughter of my mother' = ME (the speaker herself). So the woman says: 'His mother is me.' Therefore the woman IS the man's mother. KEY: 'only daughter of my mother' always equals the speaker if she is female. In exams, this phrasing is used to obscure that the person is referring to themselves. TRAP: students try to trace through a third person and end up with 'aunt' or 'grandmother' instead of the direct 'mother.' PYQ: this exact phrasing appears in SSC CGL, IBPS PO, RRB NTPC blood relations.",
-      "subject": "Reasoning",
-      "topic": "Blood Relations II — coded relations, multi-step family trees, gender identification",
-      "topic_code": "RSN_BLOOD",
-      "difficulty": "medium",
-      "effort_tier": "tier1",
-      "staleness_risk": "low",
-      "answer_source": "verified",
-      "generator_tag": "v3-rich-explanation",
-      "generated_at": "2026-05-06",
-      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_003"
-    },
-    {
-      "stem": "In a coded language: A + B means A is the father of B; A - B means A is the mother of B; A x B means A is the brother of B; A / B means A is the sister of B. If P - Q + R x S, what is S to P?",
-      "options": [
-        {
-          "option_text": "Grandson — P is mother of Q; Q is father of R; R is brother of S; P→Q→R→S: P is grandmother of S (male S = grandson)",
-          "is_correct": true
-        },
-        {
-          "option_text": "Son — S is one generation below R who is one below Q who is one below P; two generations total",
-          "is_correct": false
-        },
-        {
-          "option_text": "Nephew — nephew requires a sibling relationship in P's generation, which is absent here (not this)",
-          "is_correct": false
-        },
-        {
-          "option_text": "Granddaughter — the x symbol means R is BROTHER of S making S male, so grandson not granddaughter",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "A",
-      "explanation": "DECODE: P - Q = P is mother of Q. Q + R = Q is father of R. R x S = R is brother of S. FAMILY TREE: P is Q's mother. Q is R's father. R and S are brothers (R is brother of S → both male, same generation). PATH FROM P TO S: P → Q (child) → R (grandchild) → S (same generation as R = also grandchild). P is grandmother of S. S is male (brother relationship) → S is P's grandson. PYQ: symbol-coded blood relations appear in every IBPS PO/Clerk reasoning section — decode symbols first, then trace.",
-      "subject": "Reasoning",
-      "topic": "Blood Relations II — coded relations, multi-step family trees, gender identification",
-      "topic_code": "RSN_BLOOD",
-      "difficulty": "medium",
-      "effort_tier": "tier1",
-      "staleness_risk": "low",
-      "answer_source": "verified",
-      "generator_tag": "v3-rich-explanation",
-      "generated_at": "2026-05-06",
-      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_004"
-    },
-    {
-      "stem": "Arjun is the son of Bhim. Chandra is Bhim's sister. Deepa is Chandra's mother. Esha is Bhim's mother. How is Deepa related to Arjun?",
-      "options": [
-        {
-          "option_text": "Maternal great-grandmother — Esha is Arjun's grandmother; Deepa is Esha's mother = Arjun's great-grandmother",
-          "is_correct": true
-        },
-        {
-          "option_text": "Grandmother — Deepa is one generation above the grandmother level, not at grandmother level",
-          "is_correct": false
-        },
-        {
-          "option_text": "Great-aunt — great-aunt would require Deepa to be a sibling of Arjun's grandparent (not this)",
-          "is_correct": false
-        },
-        {
-          "option_text": "Mother — Deepa is three generations above Arjun, not one generation above (not this)",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "A",
-      "explanation": "GENERATION MAP: Deepa → Esha (Deepa's daughter) → Bhim (Esha's son) → Arjun (Bhim's son). Chandra is Bhim's sister (Esha's daughter, Deepa's granddaughter — confirms Deepa is Esha's mother). CHAIN: Arjun's father = Bhim. Bhim's mother = Esha. Esha's mother = Deepa. Deepa is Arjun's great-grandmother (three generations above). NOTE: Chandra being Bhim's sister confirms Esha is their shared mother, and Deepa is Esha's mother = great-grandmother of Arjun. PYQ: 3-generation chains with aunt/uncle confirmation clues appear in IBPS PO mains reasoning.",
-      "subject": "Reasoning",
-      "topic": "Blood Relations II — coded relations, multi-step family trees, gender identification",
-      "topic_code": "RSN_BLOOD",
-      "difficulty": "medium",
-      "effort_tier": "tier1",
-      "staleness_risk": "low",
-      "answer_source": "verified",
-      "generator_tag": "v3-rich-explanation",
-      "generated_at": "2026-05-06",
-      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_005"
-    },
-    {
-      "stem": "X says to Y: 'Your only brother's son is my wife's brother.' How is Y related to X's wife?",
-      "options": [
-        {
-          "option_text": "Aunt (paternal) — Y's brother's son = X's wife's brother means Y's brother is X's wife's father; Y is then the sister of X's wife's father = X's wife's paternal aunt",
-          "is_correct": true
-        },
-        {
-          "option_text": "Mother — mother would require Y to be X's wife's parent, but Y is the sibling of X's wife's father (not this) instead however alone",
-          "is_correct": false
-        },
-        {
-          "option_text": "Sister — sister implies same generation as X's wife; but Y is one generation above (not this) instead however alone too",
-          "is_correct": false
-        },
-        {
-          "option_text": "Cousin — cousin implies a shared grandparent; the relationship here is direct sibling of parent (not this) instead however alone",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "A",
-      "explanation": "DECODE: 'Y's only brother's son is X's wife's brother.' Y's brother's son = X's wife's brother. Let Y's brother = M. M's son = X's wife's brother. So X's wife and M's son are siblings → they share the same father = M. Therefore X's wife's father = M = Y's brother. Y is the sister of M (Y's brother). Y is the sister of X's wife's father = X's wife's paternal aunt. SUMMARY: Y is paternal aunt of X's wife. PYQ: coded cross-family relations like this appear in IBPS PO mains and SBI PO reasoning.",
-      "subject": "Reasoning",
-      "topic": "Blood Relations II — coded relations, multi-step family trees, gender identification",
-      "topic_code": "RSN_BLOOD",
-      "difficulty": "hard",
-      "effort_tier": "tier2",
-      "staleness_risk": "low",
-      "answer_source": "verified",
-      "generator_tag": "v3-rich-explanation",
-      "generated_at": "2026-05-06",
-      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_006"
-    },
-    {
-      "stem": "In a family photo, a man points to a woman and says: 'The father of her son is the only son of my grandfather.' How is the woman related to the man?",
-      "options": [
-        {
-          "option_text": "Wife — the father of her son = her husband; the only son of my grandfather = my father; so her husband = the man's father — making her the man's mother",
-          "is_correct": false
-        },
-        {
-          "option_text": "Mother — the father of her son = her husband. Only son of my grandfather = my father. So her husband = man's father → she is the man's mother",
-          "is_correct": true
-        },
-        {
-          "option_text": "Sister — sister would place the woman in the same generation as the man, not one above (not this) instead however",
-          "is_correct": false
-        },
-        {
-          "option_text": "Grandmother — grandmother would be two generations above; but the woman is only one generation above (not this)",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "B",
-      "explanation": "DECODE: 'father of her son' = the woman's husband (the person who fathered her son). 'only son of my grandfather' = my father (since grandfather has only one son = the man's father). Therefore: woman's husband = man's father. If her husband is the man's father, she is the man's MOTHER. TRAP: the roundabout phrasing 'father of her son' deliberately obscures 'her husband.' And 'only son of my grandfather' obscures 'my father.' Strip the camouflage: woman's husband = man's father → woman is man's mother. PYQ: this exact format (two roundabout phrases pointing to the same person) is a top-difficulty blood relation question in IBPS PO/SBI PO.",
-      "subject": "Reasoning",
-      "topic": "Blood Relations II — coded relations, multi-step family trees, gender identification",
-      "topic_code": "RSN_BLOOD",
-      "difficulty": "hard",
-      "effort_tier": "tier2",
-      "staleness_risk": "low",
-      "answer_source": "verified",
-      "generator_tag": "v3-rich-explanation",
-      "generated_at": "2026-05-06",
-      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_007"
     }
   ]
 }

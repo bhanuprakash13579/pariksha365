@@ -1,43 +1,50 @@
 {
   "schema_version": 1,
   "subject": "Biology",
-  "topic": "Digestive Enzymes and Functions",
+  "topic": "Digestive Enzymes",
   "topic_code": "BIO_DIGESTIVE_ENZYMES_MIXED",
+  "description": "Covers Amylase, Bile, and HCl.",
   "questions": [
     {
-      "stem": "Which of the following enzymes is primarily present in human saliva and begins the digestion of carbohydrates by breaking down starch?",
+      "stem": "In human digestion, which enzyme present in saliva begins the chemical breakdown of starches (carbohydrates) into simpler sugars right in the mouth?",
       "options": [
         {
-          "option_text": "Pepsin (alternative interpretation)",
-          "is_correct": false
-        },
-        {
-          "option_text": "Salivary Amylase",
+          "option_text": "Salivary Amylase (Ptyalin)",
           "is_correct": true
         },
         {
-          "option_text": "Trypsin (alternative interpretation)",
+          "option_text": "Pepsin",
           "is_correct": false
         },
         {
-          "option_text": "Lipase (alternative interpretation)",
+          "option_text": "Lipase",
+          "is_correct": false
+        },
+        {
+          "option_text": "Trypsin",
           "is_correct": false
         }
       ],
-      "correct_letter": "B",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "explanation": "Salivary amylase (also known as ptyalin) is secreted by the salivary glands. It begins the chemical digestion of carbohydrates in the mouth by breaking down complex starch into simpler sugars like maltose. Pepsin and Trypsin digest proteins.",
-      "staleness_risk": 0,
-      "subject": null,
-      "answer_source": "generated",
-      "generator_tag": "gemini-batch-fix-2026-05-15",
-      "generated_at": "2026-05-19T08:44:00+00:00",
-      "id": "sgk_BIO_DIGESTIVE_ENZYMES_MIXED_00001"
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: Digestion begins in the mouth. Saliva contains an enzyme called Salivary Amylase (historically known as Ptyalin). Its primary job is to break down complex carbohydrates (starches) into simpler sugars (like maltose and dextrin). This is why a piece of bread tastes sweeter the longer you chew it.\nDECOY BUSTING: Pepsin is found in the stomach and breaks down proteins. Lipase breaks down fats (lipids). Trypsin is secreted by the pancreas into the small intestine to further digest proteins.\nEXAM INSIGHT: Amylase works best in a slightly acidic to neutral pH (around 6.8). Once the swallowed food reaches the highly acidic stomach, the salivary amylase is denatured and stops working.",
+      "subject": "Biology",
+      "topic": "Digestive Enzymes",
+      "topic_code": "BIO_DIGESTIVE_ENZYMES_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_BIO_DIGESTIVE_ENZYMES_MIXED_001"
     },
     {
-      "stem": "Although it does not contain any digestive enzymes, 'bile juice' is crucial for the digestion of fats. Which organ produces bile juice?",
+      "stem": "Which organ secretes bile, a fluid essential for the emulsification and digestion of fats?",
       "options": [
+        {
+          "option_text": "Liver",
+          "is_correct": true
+        },
         {
           "option_text": "Gallbladder",
           "is_correct": false
@@ -47,179 +54,55 @@
           "is_correct": false
         },
         {
-          "option_text": "Liver",
-          "is_correct": true
-        },
-        {
           "option_text": "Stomach",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "C",
-      "difficulty": "EASY",
-      "effort_tier": "A",
-      "explanation": "The liver produces bile juice, which helps in the emulsification (breaking down into smaller droplets) of fats. The gallbladder merely stores and concentrates the bile, but it does NOT produce it.",
-      "staleness_risk": 0,
-      "subject": null,
-      "answer_source": "generated",
-      "generator_tag": "gemini-batch-fix-2026-05-15",
-      "generated_at": "2026-05-19T08:44:00+00:00",
-      "id": "sgk_BIO_DIGESTIVE_ENZYMES_MIXED_00002"
-    },
-    {
-      "stem": "Pepsin is a powerful protein-digesting enzyme. In which part of the human digestive system is it actively secreted and used?",
-      "options": [
-        {
-          "option_text": "Small Intestine",
-          "is_correct": false
-        },
-        {
-          "option_text": "Large Intestine",
-          "is_correct": false
-        },
-        {
-          "option_text": "Mouth (alternative interpretation)",
-          "is_correct": false
-        },
-        {
-          "option_text": "Stomach",
-          "is_correct": true
-        }
-      ],
-      "correct_letter": "D",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "explanation": "Pepsin is secreted by the gastric glands of the stomach as the inactive proenzyme pepsinogen. It is activated by the highly acidic environment (hydrochloric acid) of the stomach to digest proteins.",
-      "staleness_risk": 0,
-      "subject": null,
-      "answer_source": "generated",
-      "generator_tag": "gemini-batch-fix-2026-05-15",
-      "generated_at": "2026-05-19T08:44:00+00:00",
-      "id": "sgk_BIO_DIGESTIVE_ENZYMES_MIXED_00003"
-    },
-    {
-      "stem": "Trypsin is a crucial enzyme that helps in the digestion of proteins into smaller peptides. Which organ specifically secretes trypsin?",
-      "options": [
-        {
-          "option_text": "Pancreas",
-          "is_correct": true
-        },
-        {
-          "option_text": "Stomach",
-          "is_correct": false
-        },
-        {
-          "option_text": "Liver (alternative interpretation)",
-          "is_correct": false
-        },
-        {
-          "option_text": "Salivary Glands",
           "is_correct": false
         }
       ],
       "correct_letter": "A",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "explanation": "Trypsin is produced in the pancreas as the inactive proenzyme trypsinogen. It travels via pancreatic juice to the small intestine, where it becomes active and digests proteins.",
-      "staleness_risk": 0,
-      "subject": null,
-      "answer_source": "generated",
-      "generator_tag": "gemini-batch-fix-2026-05-15",
-      "generated_at": "2026-05-19T08:44:00+00:00",
-      "id": "sgk_BIO_DIGESTIVE_ENZYMES_MIXED_00004"
+      "explanation": "WHY IT IS CORRECT: Bile is continuously produced and secreted by the Liver. Bile does not contain any digestive enzymes; rather, it contains bile salts. These salts act like soap (emulsification), breaking down large, stubborn fat globules into tiny droplets. This massively increases the surface area for the enzyme Lipase to actually digest the fat.\nDECOY BUSTING: The Gallbladder does NOT produce bile; it merely STORES and concentrates the bile produced by the liver, releasing it into the small intestine when you eat a fatty meal. The Pancreas secretes lipase, amylase, and protease.\nEXAM INSIGHT: If a person has their gallbladder surgically removed (due to gallstones), their liver still produces bile, but it drips continuously into the intestine rather than being stored for a large meal. Such patients must avoid eating extremely fatty, heavy meals.",
+      "subject": "Biology",
+      "topic": "Digestive Enzymes",
+      "topic_code": "BIO_DIGESTIVE_ENZYMES_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_BIO_DIGESTIVE_ENZYMES_MIXED_002"
     },
     {
-      "stem": "Rennin (or chymosin) is a proteolytic enzyme found specifically in the gastric juice of human infants. What is its primary function?",
+      "stem": "Which acid is secreted by the parietal cells of the stomach to create a highly acidic environment necessary for protein digestion and killing bacteria?",
       "options": [
         {
-          "option_text": "To break down complex plant starches into simple sugars.",
-          "is_correct": false
-        },
-        {
-          "option_text": "To effectively emulsify solid heavy dietary animal fats.",
-          "is_correct": false
-        },
-        {
-          "option_text": "To curdle milk proteins (casein) for easier digestion.",
+          "option_text": "Hydrochloric acid (HCl)",
           "is_correct": true
         },
         {
-          "option_text": "To cleanly officially neutralize highly acidic stomach juices.",
+          "option_text": "Sulfuric acid (H2SO4)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Acetic acid (CH3COOH)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lactic acid (C3H6O3)",
           "is_correct": false
         }
       ],
-      "correct_letter": "C",
-      "difficulty": "MEDIUM",
-      "effort_tier": "A",
-      "explanation": "Rennin is essential in infants for the digestion of milk. It curdles the milk protein (casein), keeping it in the stomach longer so pepsin has time to break it down. (Note: Renin with one 'n' is a kidney hormone).",
-      "staleness_risk": 0,
-      "subject": null,
-      "answer_source": "generated",
-      "generator_tag": "gemini-batch-fix-2026-05-15",
-      "generated_at": "2026-05-19T08:44:00+00:00",
-      "id": "sgk_BIO_DIGESTIVE_ENZYMES_MIXED_00005"
-    },
-    {
-      "stem": "The pancreas secretes pancreatic juice which contains a variety of digestive enzymes. Which of the following is NOT secreted by the pancreas?",
-      "options": [
-        {
-          "option_text": "Lipase",
-          "is_correct": false
-        },
-        {
-          "option_text": "Sucrase",
-          "is_correct": true
-        },
-        {
-          "option_text": "Amylase",
-          "is_correct": false
-        },
-        {
-          "option_text": "Trypsin",
-          "is_correct": false
-        }
-      ],
-      "correct_letter": "B",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "explanation": "Sucrase is an enzyme that breaks down sucrose into glucose and fructose. It is secreted by the intestinal glands (succus entericus) of the small intestine, NOT the pancreas. The pancreas secretes pancreatic amylase, lipase, and trypsin.",
-      "staleness_risk": 0,
-      "subject": null,
-      "answer_source": "generated",
-      "generator_tag": "gemini-batch-fix-2026-05-15",
-      "generated_at": "2026-05-19T08:44:00+00:00",
-      "id": "sgk_BIO_DIGESTIVE_ENZYMES_MIXED_00006"
-    },
-    {
-      "stem": "Enterokinase is an enzyme secreted by the intestinal mucosa. What is its crucial specific biological role in the human digestive process?",
-      "options": [
-        {
-          "option_text": "It breaks down complex carbohydrates. (alternative interpretation)",
-          "is_correct": false
-        },
-        {
-          "option_text": "It officially destroys harmful bacteria. (alternative interpretation)",
-          "is_correct": false
-        },
-        {
-          "option_text": "It safely heavily emulsifies dietary fats. (alternative interpretation)",
-          "is_correct": false
-        },
-        {
-          "option_text": "It activates the inactive pancreatic proenzyme trypsinogen into active trypsin",
-          "is_correct": true
-        }
-      ],
-      "correct_letter": "D",
-      "difficulty": "HARD",
-      "effort_tier": "B",
-      "explanation": "Wait, the text got corrupted in Option A. Clean version: Enterokinase (or enteropeptidase) does not directly digest food. Instead, it activates the inactive pancreatic enzyme 'trypsinogen' into active 'trypsin', which then sets off a cascade activating other pancreatic enzymes.",
-      "staleness_risk": 0,
-      "subject": null,
-      "answer_source": "generated",
-      "generator_tag": "gemini-batch-fix-2026-05-15",
-      "generated_at": "2026-05-19T08:44:00+00:00",
-      "id": "sgk_BIO_DIGESTIVE_ENZYMES_MIXED_00007"
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: The parietal cells in the stomach lining secrete strong Hydrochloric acid (HCl), dropping the stomach's pH to roughly 1.5 to 2.0. This extreme acidity serves three purposes: 1) It kills harmful bacteria entering with food. 2) It unravels (denatures) complex proteins. 3) Crucially, it activates 'pepsinogen' (an inactive enzyme) into 'pepsin', which then cuts the unraveled proteins into smaller peptides.\nDECOY BUSTING: Sulfuric acid is battery acid. Acetic acid is vinegar. Lactic acid is produced in muscles during intense exercise (causing cramps).\nEXAM INSIGHT: To protect itself from its own acid, the stomach lining secretes a thick layer of alkaline mucus. If this mucus layer is breached (often due to H. pylori bacteria or excessive NSAID painkillers), the acid burns the stomach lining, causing a Peptic Ulcer.",
+      "subject": "Biology",
+      "topic": "Digestive Enzymes",
+      "topic_code": "BIO_DIGESTIVE_ENZYMES_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_BIO_DIGESTIVE_ENZYMES_MIXED_003"
     }
   ]
 }
