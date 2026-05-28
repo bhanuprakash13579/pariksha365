@@ -109,6 +109,9 @@ async def _background_schema_selfheal() -> None:
                     "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS valid_until DATE;",
                     "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS last_reviewed_at TIMESTAMPTZ;",
                     "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS is_published BOOLEAN NOT NULL DEFAULT TRUE;",
+                    # passage_id groups RC/DI questions that share one reading passage
+                    "ALTER TABLE quiz_questions ADD COLUMN IF NOT EXISTS passage_id VARCHAR;",
+                    "CREATE INDEX IF NOT EXISTS ix_quiz_questions_passage_id ON quiz_questions (passage_id);",
                 ):
                     await db.execute(_sql_text(stmt))
                 await db.commit()
