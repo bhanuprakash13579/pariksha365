@@ -174,11 +174,15 @@ export const StudentDashboard = () => {
     const [isSearching, setIsSearching] = useState(false);
     const [showSearchDropdown, setShowSearchDropdown] = useState(false);
     const searchRef = useRef<HTMLDivElement>(null);
+    const goalDropdownRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
                 setShowSearchDropdown(false);
+            }
+            if (goalDropdownRef.current && !goalDropdownRef.current.contains(event.target as Node)) {
+                setIsGoalDropdownOpen(false);
             }
         };
         document.addEventListener('mousedown', handleClickOutside);
@@ -348,7 +352,7 @@ export const StudentDashboard = () => {
                     </div>
 
                     {/* Global Goal Switcher (desktop full + mobile compact) */}
-                    <div className="relative ml-2 sm:ml-4">
+                    <div className="relative ml-2 sm:ml-4" ref={goalDropdownRef}>
                         <button
                             onClick={() => setIsGoalDropdownOpen(!isGoalDropdownOpen)}
                             disabled={savingGoal}
@@ -363,7 +367,7 @@ export const StudentDashboard = () => {
                         </button>
 
                         {isGoalDropdownOpen && (
-                            <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50 max-h-[70vh] overflow-y-auto">
+                            <div className="fixed sm:absolute top-16 sm:top-full right-2 sm:right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-[100] max-h-[70vh] overflow-y-auto">
                                 <div className="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b border-gray-50 mb-2">
                                     Change Exam Goal
                                 </div>
@@ -487,102 +491,150 @@ export const StudentDashboard = () => {
                                                 </div>
                                             </div>
 
-                                            {/* ROW 2: Previous Year Papers */}
-                                            <div className="mb-10">
-                                                <div className="flex justify-between items-end mb-4">
-                                                    <h2 className="text-2xl font-black text-gray-900 tracking-tight flex items-center gap-2">
-                                                        <span className="text-blue-500">📚</span> Previous Year Papers (100% Free)
-                                                    </h2>
-                                                </div>
-                                                <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 scrollbar-hide">
-                                                    {/* Exam-stage PYQs (primary source) */}
-                                                    {stagePYQs.map((t: any) => (
-                                                        <div
-                                                            key={t.id}
-                                                            onClick={() => navigate(`/mock-test/${t.id}`)}
-                                                            className="snap-start flex-shrink-0 w-72 bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md cursor-pointer transition-shadow"
-                                                        >
-                                                            <div className="flex items-start justify-between mb-3">
-                                                                <span className="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded-lg">{t.stage_name}</span>
-                                                                <span className="text-xs text-gray-400">{t.paper_date || ''}</span>
-                                                            </div>
-                                                            <p className="font-bold text-gray-900 text-sm mb-2 line-clamp-2">{t.title}</p>
-                                                            <div className="flex items-center gap-3 text-xs text-gray-500">
-                                                                {t.total_duration_minutes && <span>⏱ {t.total_duration_minutes} min</span>}
-                                                                {t.paper_shift && <span>• {t.paper_shift}</span>}
-                                                            </div>
-                                                            <button className="mt-3 w-full bg-blue-500 hover:bg-blue-600 text-white text-sm font-bold py-2 rounded-xl transition-colors">
-                                                                Start Test
-                                                            </button>
-                                                        </div>
-                                                    ))}
-                                                    {/* Legacy course/folder PYQs */}
-                                                    {allCourses.filter(c =>
-                                                        (subcatToCatMap.get(c.subcategory_id) === globalExamGoalId) &&
-                                                        (c.title.toLowerCase().includes('pyq') || c.title.toLowerCase().includes('previous year') || c.title.toLowerCase().includes('past paper'))
-                                                    ).map(course => (
-                                                        (course.folders || []).map((folder: any) => (
-                                                            <FolderCard key={folder.id} folder={folder} course={course} isEnrolled={userEnrollments.has(course.id)} onClick={() => setSelectedCourse(course)} />
-                                                        ))
-                                                    ))}
-                                                    {stagePYQs.length === 0 && allCourses.filter(c =>
-                                                        (subcatToCatMap.get(c.subcategory_id) === globalExamGoalId) &&
-                                                        (c.title.toLowerCase().includes('pyq') || c.title.toLowerCase().includes('previous year'))
-                                                    ).length === 0 && (
-                                                        <div className="w-full text-center py-8 text-gray-400 text-sm italic bg-white border border-dashed border-gray-200 rounded-2xl">
-                                                            No Previous Year Papers available for this selection yet.
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            </div>
+                                            {(() => {
+                                                // Group tests by subcategory so SSC CGL, CHSL, MTS each get their
+                                                // own scrollable row instead of being mashed into one strip.
+                                                const groupBySub = (tests: any[]) => {
+                                                    const map = new Map<string, { id: string; name: string; tests: any[] }>();
+                                                    for (const t of tests) {
+                                                        const key = t.subcategory_id;
+                                                        if (!map.has(key)) {
+                                                            map.set(key, { id: key, name: t.subcategory_name, tests: [] });
+                                                        }
+                                                        map.get(key)!.tests.push(t);
+                                                    }
+                                                    return Array.from(map.values()).sort((a, b) => a.name.localeCompare(b.name));
+                                                };
+                                                const pyqGroups = groupBySub(stagePYQs);
+                                                const mockGroups = groupBySub(stageMocks);
 
-                                            {/* ROW 3: Mock Tests */}
-                                            <div className="mb-10">
-                                                <div className="flex justify-between items-end mb-4">
-                                                    <h2 className="text-2xl font-black text-gray-900 tracking-tight flex items-center gap-2">
-                                                        <span className="text-green-500">🌟</span> Complete Mock Test Series
-                                                    </h2>
-                                                </div>
-                                                <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 scrollbar-hide">
-                                                    {/* Exam-stage Mocks (primary source) */}
-                                                    {stageMocks.map((t: any) => (
-                                                        <div
-                                                            key={t.id}
-                                                            onClick={() => navigate(`/mock-test/${t.id}`)}
-                                                            className="snap-start flex-shrink-0 w-72 bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md cursor-pointer transition-shadow"
-                                                        >
-                                                            <div className="flex items-start justify-between mb-3">
-                                                                <span className="text-xs font-bold text-green-600 bg-green-50 px-2 py-1 rounded-lg">{t.stage_name}</span>
-                                                                <span className="text-xs text-gray-400 font-medium">MOCK</span>
-                                                            </div>
-                                                            <p className="font-bold text-gray-900 text-sm mb-2 line-clamp-2">{t.title}</p>
-                                                            <div className="flex items-center gap-3 text-xs text-gray-500">
-                                                                {t.total_duration_minutes && <span>⏱ {t.total_duration_minutes} min</span>}
-                                                            </div>
-                                                            <button className="mt-3 w-full bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold py-2 rounded-xl transition-colors">
-                                                                Start Mock
-                                                            </button>
+                                                // Legacy course/folder rows (fallback when admin hasn't migrated to ExamStages yet)
+                                                const legacyPYQs = allCourses.filter(c =>
+                                                    (subcatToCatMap.get(c.subcategory_id) === globalExamGoalId) &&
+                                                    (c.title.toLowerCase().includes('pyq') || c.title.toLowerCase().includes('previous year') || c.title.toLowerCase().includes('past paper'))
+                                                );
+                                                const legacyMocks = allCourses.filter(c =>
+                                                    (subcatToCatMap.get(c.subcategory_id) === globalExamGoalId) &&
+                                                    !(c.title.toLowerCase().includes('pyq') || c.title.toLowerCase().includes('previous year') || c.title.toLowerCase().includes('past paper'))
+                                                );
+
+                                                return (
+                                                    <>
+                                                        {/* ── Previous Year Papers — one row per SubCategory ── */}
+                                                        <div className="mb-10">
+                                                            <h2 className="text-2xl font-black text-gray-900 tracking-tight flex items-center gap-2 mb-4">
+                                                                <span className="text-blue-500">📚</span> Previous Year Papers (100% Free)
+                                                            </h2>
+
+                                                            {pyqGroups.length === 0 && legacyPYQs.length === 0 && (
+                                                                <div className="text-center py-8 text-gray-400 text-sm italic bg-white border border-dashed border-gray-200 rounded-2xl">
+                                                                    No Previous Year Papers available for this selection yet.
+                                                                </div>
+                                                            )}
+
+                                                            {pyqGroups.map(group => (
+                                                                <div key={group.id} className="mb-6">
+                                                                    <div className="flex items-center gap-2 mb-3">
+                                                                        <h3 className="text-base font-bold text-gray-700">{group.name}</h3>
+                                                                        <span className="text-xs text-gray-400">({group.tests.length})</span>
+                                                                    </div>
+                                                                    <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-2 scrollbar-hide">
+                                                                        {group.tests.map((t: any) => (
+                                                                            <div
+                                                                                key={t.id}
+                                                                                onClick={() => navigate(`/mock-test/${t.id}`)}
+                                                                                className="snap-start flex-shrink-0 w-72 bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md cursor-pointer transition-shadow"
+                                                                            >
+                                                                                <div className="flex items-start justify-between mb-3">
+                                                                                    <span className="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded-lg">{t.stage_name}</span>
+                                                                                    <span className="text-xs text-gray-400">{t.paper_date || ''}</span>
+                                                                                </div>
+                                                                                <p className="font-bold text-gray-900 text-sm mb-2 line-clamp-2">{t.title}</p>
+                                                                                <div className="flex items-center gap-3 text-xs text-gray-500">
+                                                                                    {t.total_duration_minutes && <span>⏱ {t.total_duration_minutes} min</span>}
+                                                                                    {t.paper_shift && <span>• {t.paper_shift}</span>}
+                                                                                </div>
+                                                                                <button className="mt-3 w-full bg-blue-500 hover:bg-blue-600 text-white text-sm font-bold py-2 rounded-xl transition-colors">
+                                                                                    Start Test
+                                                                                </button>
+                                                                            </div>
+                                                                        ))}
+                                                                    </div>
+                                                                </div>
+                                                            ))}
+
+                                                            {legacyPYQs.length > 0 && (
+                                                                <div className="mb-6">
+                                                                    <h3 className="text-base font-bold text-gray-700 mb-3">Other Previous Year Papers</h3>
+                                                                    <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-2 scrollbar-hide">
+                                                                        {legacyPYQs.map(course => (
+                                                                            (course.folders || []).map((folder: any) => (
+                                                                                <FolderCard key={folder.id} folder={folder} course={course} isEnrolled={userEnrollments.has(course.id)} onClick={() => setSelectedCourse(course)} />
+                                                                            ))
+                                                                        ))}
+                                                                    </div>
+                                                                </div>
+                                                            )}
                                                         </div>
-                                                    ))}
-                                                    {/* Legacy course/folder Mocks */}
-                                                    {allCourses.filter(c =>
-                                                        (subcatToCatMap.get(c.subcategory_id) === globalExamGoalId) &&
-                                                        !(c.title.toLowerCase().includes('pyq') || c.title.toLowerCase().includes('previous year') || c.title.toLowerCase().includes('past paper'))
-                                                    ).map(course => (
-                                                        (course.folders || []).map((folder: any) => (
-                                                            <FolderCard key={folder.id} folder={folder} course={course} isEnrolled={userEnrollments.has(course.id)} onClick={() => setSelectedCourse(course)} />
-                                                        ))
-                                                    ))}
-                                                    {stageMocks.length === 0 && allCourses.filter(c =>
-                                                        (subcatToCatMap.get(c.subcategory_id) === globalExamGoalId) &&
-                                                        !(c.title.toLowerCase().includes('pyq') || c.title.toLowerCase().includes('previous year'))
-                                                    ).length === 0 && (
-                                                        <div className="w-full text-center py-8 text-gray-400 text-sm italic bg-white border border-dashed border-gray-200 rounded-2xl">
-                                                            No Mock Tests available for this selection yet.
+
+                                                        {/* ── Mock Tests — one row per SubCategory ── */}
+                                                        <div className="mb-10">
+                                                            <h2 className="text-2xl font-black text-gray-900 tracking-tight flex items-center gap-2 mb-4">
+                                                                <span className="text-green-500">🌟</span> Complete Mock Test Series
+                                                            </h2>
+
+                                                            {mockGroups.length === 0 && legacyMocks.length === 0 && (
+                                                                <div className="text-center py-8 text-gray-400 text-sm italic bg-white border border-dashed border-gray-200 rounded-2xl">
+                                                                    No Mock Tests available for this selection yet.
+                                                                </div>
+                                                            )}
+
+                                                            {mockGroups.map(group => (
+                                                                <div key={group.id} className="mb-6">
+                                                                    <div className="flex items-center gap-2 mb-3">
+                                                                        <h3 className="text-base font-bold text-gray-700">{group.name}</h3>
+                                                                        <span className="text-xs text-gray-400">({group.tests.length})</span>
+                                                                    </div>
+                                                                    <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-2 scrollbar-hide">
+                                                                        {group.tests.map((t: any) => (
+                                                                            <div
+                                                                                key={t.id}
+                                                                                onClick={() => navigate(`/mock-test/${t.id}`)}
+                                                                                className="snap-start flex-shrink-0 w-72 bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md cursor-pointer transition-shadow"
+                                                                            >
+                                                                                <div className="flex items-start justify-between mb-3">
+                                                                                    <span className="text-xs font-bold text-green-600 bg-green-50 px-2 py-1 rounded-lg">{t.stage_name}</span>
+                                                                                    <span className="text-xs text-gray-400 font-medium">MOCK</span>
+                                                                                </div>
+                                                                                <p className="font-bold text-gray-900 text-sm mb-2 line-clamp-2">{t.title}</p>
+                                                                                <div className="flex items-center gap-3 text-xs text-gray-500">
+                                                                                    {t.total_duration_minutes && <span>⏱ {t.total_duration_minutes} min</span>}
+                                                                                </div>
+                                                                                <button className="mt-3 w-full bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold py-2 rounded-xl transition-colors">
+                                                                                    Start Mock
+                                                                                </button>
+                                                                            </div>
+                                                                        ))}
+                                                                    </div>
+                                                                </div>
+                                                            ))}
+
+                                                            {legacyMocks.length > 0 && (
+                                                                <div className="mb-6">
+                                                                    <h3 className="text-base font-bold text-gray-700 mb-3">Other Mock Tests</h3>
+                                                                    <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-2 scrollbar-hide">
+                                                                        {legacyMocks.map(course => (
+                                                                            (course.folders || []).map((folder: any) => (
+                                                                                <FolderCard key={folder.id} folder={folder} course={course} isEnrolled={userEnrollments.has(course.id)} onClick={() => setSelectedCourse(course)} />
+                                                                            ))
+                                                                        ))}
+                                                                    </div>
+                                                                </div>
+                                                            )}
                                                         </div>
-                                                    )}
-                                                </div>
-                                            </div>
+                                                    </>
+                                                );
+                                            })()}
                                         </>
                                     );
                                 case 'learning':

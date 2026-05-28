@@ -43,51 +43,75 @@ export default function CategoryScreen({ navigation, route }: any) {
 
     return (
         <View style={styles.container}>
-            {/* Header */}
-            <View style={[styles.tbHeaderContainer, { paddingTop: 55, paddingBottom: 15 }]}>
-                <TouchableOpacity style={styles.tbHeaderLeftBtn} onPress={() => navigation.goBack()}>
-                    <Ionicons name="arrow-back" size={24} color={COLORS.white} />
-                </TouchableOpacity>
-                <Text style={{ flex: 1, color: COLORS.white, fontSize: 18, fontWeight: 'bold', marginLeft: 15 }}>{categoryTitle}</Text>
-            </View>
+            {/* Compact header: back ➜ title + subtitle on one row */}
+            <View style={{ backgroundColor: COLORS.headerBg, paddingTop: 50, paddingBottom: 12, paddingHorizontal: 12 }}>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                    <TouchableOpacity
+                        onPress={() => navigation.goBack()}
+                        style={{ width: 36, height: 36, borderRadius: 18, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255,255,255,0.08)' }}
+                    >
+                        <Ionicons name="arrow-back" size={20} color={COLORS.white} />
+                    </TouchableOpacity>
+                    <View style={{ flex: 1, marginLeft: 12 }}>
+                        <Text style={{ color: COLORS.white, fontSize: 18, fontWeight: '800' }} numberOfLines={1}>{categoryTitle}</Text>
+                        <Text style={{ color: 'rgba(255,255,255,0.65)', fontSize: 11, marginTop: 2 }}>
+                            {pyqCount + mockCount} tests · {pyqCount} PYQ · {mockCount} Mock
+                        </Text>
+                    </View>
+                </View>
 
-            {/* Subcategory chips */}
-            <View style={{ backgroundColor: COLORS.headerBg, paddingBottom: 12 }}>
-                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 15 }}>
-                    {(subcategories || []).map((sub: any) => (
-                        <TouchableOpacity
-                            key={sub.id}
-                            onPress={() => setActiveSubId(sub.id)}
-                            style={{
-                                paddingHorizontal: 16, paddingVertical: 8,
-                                backgroundColor: activeSubId === sub.id ? COLORS.primary : COLORS.searchBg,
-                                borderRadius: 20, marginRight: 10,
-                                borderWidth: 1, borderColor: activeSubId === sub.id ? COLORS.primary : '#3f3f46',
-                            }}>
-                            <Text style={{ color: activeSubId === sub.id ? COLORS.white : COLORS.iconColor, fontWeight: '600' }}>{sub.name}</Text>
-                        </TouchableOpacity>
-                    ))}
+                {/* Subcategory chips — tighter and inside the header band so they're visually grouped with the title */}
+                <ScrollView
+                    horizontal
+                    showsHorizontalScrollIndicator={false}
+                    style={{ marginTop: 14 }}
+                    contentContainerStyle={{ paddingRight: 12 }}
+                >
+                    {(subcategories || []).map((sub: any) => {
+                        const active = activeSubId === sub.id;
+                        return (
+                            <TouchableOpacity
+                                key={sub.id}
+                                onPress={() => setActiveSubId(sub.id)}
+                                style={{
+                                    paddingHorizontal: 14, paddingVertical: 7,
+                                    backgroundColor: active ? COLORS.white : 'rgba(255,255,255,0.08)',
+                                    borderRadius: 16, marginRight: 8,
+                                }}>
+                                <Text style={{
+                                    color: active ? COLORS.primary : 'rgba(255,255,255,0.9)',
+                                    fontWeight: active ? '800' : '600',
+                                    fontSize: 12,
+                                    letterSpacing: 0.2,
+                                }}>{sub.name}</Text>
+                            </TouchableOpacity>
+                        );
+                    })}
                 </ScrollView>
             </View>
 
-            {/* Mock / PYQ tab toggle */}
-            <View style={{ flexDirection: 'row', backgroundColor: '#f3f4f6', margin: 15, borderRadius: 12, padding: 4 }}>
-                {(['PYQ', 'MOCK'] as TestTab[]).map(tab => (
-                    <TouchableOpacity
-                        key={tab}
-                        onPress={() => setTestTab(tab)}
-                        style={{
-                            flex: 1, paddingVertical: 8, borderRadius: 10, alignItems: 'center',
-                            backgroundColor: testTab === tab ? COLORS.white : 'transparent',
-                            shadowColor: testTab === tab ? '#000' : 'transparent',
-                            shadowOpacity: testTab === tab ? 0.08 : 0,
-                            shadowRadius: 4, elevation: testTab === tab ? 2 : 0,
-                        }}>
-                        <Text style={{ fontWeight: '700', color: testTab === tab ? COLORS.primary : COLORS.textSub, fontSize: 13 }}>
-                            {tab === 'PYQ' ? `📚 Previous Year (${pyqCount})` : `📝 Mock Tests (${mockCount})`}
-                        </Text>
-                    </TouchableOpacity>
-                ))}
+            {/* Mock / PYQ segmented control — sits just below the header band */}
+            <View style={{ flexDirection: 'row', backgroundColor: '#f3f4f6', marginHorizontal: 12, marginTop: 12, borderRadius: 10, padding: 3 }}>
+                {(['PYQ', 'MOCK'] as TestTab[]).map(tab => {
+                    const active = testTab === tab;
+                    return (
+                        <TouchableOpacity
+                            key={tab}
+                            onPress={() => setTestTab(tab)}
+                            style={{
+                                flex: 1, paddingVertical: 7, borderRadius: 8, alignItems: 'center',
+                                backgroundColor: active ? COLORS.white : 'transparent',
+                                shadowColor: active ? '#000' : 'transparent',
+                                shadowOpacity: active ? 0.08 : 0,
+                                shadowOffset: { width: 0, height: 1 },
+                                shadowRadius: 3, elevation: active ? 1 : 0,
+                            }}>
+                            <Text style={{ fontWeight: '700', color: active ? COLORS.primary : COLORS.textSub, fontSize: 12 }}>
+                                {tab === 'PYQ' ? `Previous Year · ${pyqCount}` : `Mock Tests · ${mockCount}`}
+                            </Text>
+                        </TouchableOpacity>
+                    );
+                })}
             </View>
 
             <ScrollView contentContainerStyle={styles.contentPadAlt}>
