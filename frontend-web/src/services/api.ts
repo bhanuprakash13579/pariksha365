@@ -251,6 +251,8 @@ export const AdminTestSeriesAPI = {
         }),
     togglePublish: (id: string, is_published: boolean) =>
         api.put(`/admin/test-series/${id}/publish-toggle`, { is_published }),
+    patchMeta: (id: string, body: { title?: string; description?: string; paper_date?: string; paper_shift?: string }) =>
+        api.patch(`/admin/test-series/${id}`, body),
 };
 
 // Private modules (e.g. EPFO APFC) — email-whitelisted question banks

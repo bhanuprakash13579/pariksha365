@@ -1,4 +1,4 @@
-from typing import Any, List
+from typing import Any, List, Optional
 from fastapi import APIRouter, Depends, UploadFile, File, Query, Form
 from sqlalchemy.ext.asyncio import AsyncSession
 import uuid
@@ -133,6 +133,64 @@ async def admin_test_series_coverage(
 
 class PublishToggleIn(BaseModel):
     is_published: bool
+
+
+class TestSeriesMetaPatch(BaseModel):
+    """Light-weight metadata patch — only fields safe to change without
+    touching the section/question tree (which is content, not metadata).
+    All fields optional; unset fields stay as-is."""
+    title: Optional[str] = None
+    description: Optional[str] = None
+    paper_date: Optional[str] = None  # ISO date "YYYY-MM-DD"
+    paper_shift: Optional[str] = None
+
+
+@router.patch("/test-series/{test_id}")
+async def admin_update_test_series_meta(
+    test_id: uuid.UUID,
+    payload: TestSeriesMetaPatch,
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    """Rename / re-describe a TestSeries without touching its questions.
+
+    Required because the existing PUT /tests/{test_id} on test_series_router
+    is a FULL replace (expects every section + question in the payload), so
+    it can't be used to edit just the title from the admin UI. This PATCH
+    accepts a partial body — title alone, description alone, etc.
+    """
+    from sqlalchemy import select
+    from app.models.test_series import TestSeries
+    from fastapi import HTTPException
+    from datetime import date as _date
+
+    ts = (await db.execute(
+        select(TestSeries).where(TestSeries.id == test_id)
+    )).scalar_one_or_none()
+    if ts is None:
+        raise HTTPException(status_code=404, detail="Test series not found")
+    if payload.title is not None:
+        new_title = payload.title.strip()
+        if not new_title:
+            raise HTTPException(status_code=400, detail="Title must not be empty")
+        ts.title = new_title
+    if payload.description is not None:
+        ts.description = payload.description
+    if payload.paper_date is not None:
+        try:
+            ts.paper_date = _date.fromisoformat(payload.paper_date) if payload.paper_date else None
+        except ValueError:
+            raise HTTPException(status_code=400, detail="paper_date must be YYYY-MM-DD")
+    if payload.paper_shift is not None:
+        ts.paper_shift = payload.paper_shift or None
+    await db.commit()
+    return {
+        "id": str(ts.id),
+        "title": ts.title,
+        "description": ts.description,
+        "paper_date": ts.paper_date.isoformat() if ts.paper_date else None,
+        "paper_shift": ts.paper_shift,
+    }
 
 
 @router.put("/test-series/{test_id}/publish-toggle")

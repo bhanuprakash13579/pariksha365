@@ -186,7 +186,32 @@ export const AdminTestCoverage = () => {
                                 return (
                                     <tr key={r.id} className={r.is_published ? '' : 'bg-gray-50/40'}>
                                         <td className="px-4 py-3">
-                                            <div className="font-bold text-gray-900 leading-tight">{r.title}</div>
+                                            <div className="flex items-center gap-2">
+                                                <div className="font-bold text-gray-900 leading-tight">{r.title}</div>
+                                                <button
+                                                    onClick={async () => {
+                                                        const nt = prompt('Rename test series:', r.title);
+                                                        if (!nt || nt.trim() === '' || nt.trim() === r.title) return;
+                                                        setSavingId(r.id);
+                                                        try {
+                                                            await AdminTestSeriesAPI.patchMeta(r.id, { title: nt.trim() });
+                                                            setData(d => d ? {
+                                                                ...d,
+                                                                papers: d.papers.map(p => p.id === r.id ? { ...p, title: nt.trim() } : p),
+                                                            } : d);
+                                                        } catch (e: any) {
+                                                            alert(e?.response?.data?.detail || 'Rename failed');
+                                                        } finally {
+                                                            setSavingId(null);
+                                                        }
+                                                    }}
+                                                    disabled={savingId === r.id}
+                                                    className="text-[10px] text-gray-400 hover:text-orange-600 px-1.5 py-0.5 rounded border border-transparent hover:border-orange-200 transition-colors disabled:opacity-50"
+                                                    title="Rename"
+                                                >
+                                                    ✎
+                                                </button>
+                                            </div>
                                             <div className="text-xs text-gray-500 mt-0.5">{exam || '—'}</div>
                                         </td>
                                         <td className="px-4 py-3">

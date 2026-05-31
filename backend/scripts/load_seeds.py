@@ -696,6 +696,7 @@ async def _load_all_pyq(db: AsyncSession, limit: Optional[int], dry_run: bool = 
 
 async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool = False) -> dict:
     from app.models.quiz_pool import QuizQuestion
+    from sqlalchemy import select as _sql_select
 
     gk_root = _SEEDS / "static_gk"
     if not gk_root.exists():
@@ -703,9 +704,25 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
 
     files = [p for p in sorted(gk_root.rglob("*.json")) if not p.name.startswith("_")]
     totals = {"bundles_loaded": 0, "questions_loaded": 0, "questions_skipped_existing": 0}
+
+    # Pre-fetch every existing question UUID in one round-trip so the per-Q
+    # dedup check is O(1) in Python instead of one Railway DB round-trip per
+    # question (~80ms RTT × ~40k questions = ~50 min just on lookups).
+    existing_uuids: set = set()
+    log.info("pre-fetching existing quiz_question IDs from prod...")
+    rows = await db.execute(_sql_select(QuizQuestion.id))
+    existing_uuids = {r[0] for r in rows.all()}
+    log.info("found %d existing quiz_questions", len(existing_uuids))
+
     count = 0
+    skipped_malformed = 0
     for f in files:
-        doc = json.loads(f.read_text())
+        try:
+            doc = json.loads(f.read_text())
+        except json.JSONDecodeError as e:
+            log.warning("MALFORMED %s: %s", f.relative_to(_SEEDS), e)
+            skipped_malformed += 1
+            continue
         # Support both plain-list format (newer) and dict-wrapped {questions:[...]} format (older).
         q_docs = doc if isinstance(doc, list) else doc.get("questions", [])
         for q_doc in q_docs:
@@ -714,20 +731,35 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
                 break
             qid = q_doc.get("id")
             q_uuid = _uuid_for(_NS_QUIZ_Q, qid) if qid else _uuid.uuid4()
-            existing = await db.get(QuizQuestion, q_uuid)
+            already_present = q_uuid in existing_uuids
             # Normalise options to {option_text, is_correct} regardless of source format.
-            # Seeds may use {option_text, is_correct} or {letter, text, is_correct}.
+            # Seeds use one of three shapes:
+            #   1. [{"option_text": "...", "is_correct": bool}]
+            #   2. [{"letter": "A", "text": "...", "is_correct": bool}]
+            #   3. ["text1", "text2", ...] + sibling "correct_letter": "A"
+            # (shape #3 is the static-GK generator's output.)
             raw_opts = q_doc.get("options") or []
-            options = [
-                {
-                    "option_text": (o.get("option_text") or o.get("text") or ""),
-                    "is_correct": bool(o.get("is_correct", False)),
-                }
-                for o in raw_opts
-            ]
-            if existing is not None:
+            correct_letter = (q_doc.get("correct_letter") or "").strip().upper()
+            options = []
+            for idx, o in enumerate(raw_opts):
+                if isinstance(o, str):
+                    # Shape #3: bare string option + correct_letter field.
+                    letter = chr(ord("A") + idx)
+                    options.append({
+                        "option_text": o,
+                        "is_correct": (letter == correct_letter),
+                    })
+                else:
+                    options.append({
+                        "option_text": (o.get("option_text") or o.get("text") or ""),
+                        "is_correct": bool(o.get("is_correct", False)),
+                    })
+            if already_present:
                 totals["questions_skipped_existing"] += 1
                 continue
+            # Track for the rest of this run so duplicates within seeds
+            # don't both try to insert and trip a PK violation.
+            existing_uuids.add(q_uuid)
             # CA-aware fields. Static-GK bundles leave these unset; CA
             # bundles (under seeds/static_gk/_current_affairs/) carry them
             # so the admin Current Affairs dashboard shows them as managed.
@@ -767,6 +799,7 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
         else:
             await db.commit()
         totals["bundles_loaded"] += 1
+    totals["bundles_malformed"] = skipped_malformed
     return totals
 
 

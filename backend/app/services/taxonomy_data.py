@@ -405,7 +405,7 @@ TAXONOMY_EXPANDED = [
     ("General Knowledge", "Sobriquets (Nicknames of Places & Persons)", "GK_SOBRIQUETS", ["sobriquets", "nicknames of places", "nicknames of eminent persons", "geographical epithets"]),
     ("General Knowledge", "Important Instruments & Their Uses", "GK_INSTRUMENTS_USES", ["scientific instruments", "measuring instruments", "barometer", "hygrometer", "lactometer"]),
     ("General Knowledge", "Prominent Personalities & Leaders (Historical)", "GK_PERSONALITIES_HIST", ["prominent personalities", "historical leaders", "social reformers", "freedom fighters", "scientists", "philosophers"]),
-    ("General Knowledge", "Miscellaneous Static GK", "GK_MISC", ["miscellaneous gk", "static gk general", "other facts"])
+    ("General Knowledge", "Miscellaneous Static GK", "GK_MISC", ["miscellaneous gk", "static gk general", "other facts"]),
 
     # ─── New canonicals added by normalize_topic_codes.py ───
     ("Biology", "Ecology, Biomes & Biodiversity", "BIO_ECOLOGY", ["ecology", "biomes", "ecosystems", "food chains", "biodiversity hotspots", "biodiversity"]),
