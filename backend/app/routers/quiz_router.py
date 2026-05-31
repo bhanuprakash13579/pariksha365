@@ -601,6 +601,25 @@ async def get_taxonomy(
     return await taxonomy_service.get_all(db)
 
 
+@router.post("/admin/taxonomy/reload-cache")
+async def reload_taxonomy_cache(
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user)
+) -> Any:
+    """Force the in-memory topic-code cache to reload from the DB.
+
+    Needed when taxonomy rows are inserted directly via SQL / a maintenance
+    script (bypassing the CRUD endpoints that normally call invalidate_cache).
+    Without this, the running workers keep serving a stale code list and the
+    scrape/edit workspace wrongly flags freshly-registered codes as
+    'missing/invalid'. NOTE: this only clears the worker that handles THIS
+    request; with multiple uvicorn workers, prefer a redeploy to clear all.
+    """
+    taxonomy_service.invalidate_cache()
+    codes = await taxonomy_service.get_all_codes_flat(db)
+    return {"status": "reloaded", "total_codes": len(codes)}
+
+
 class TaxonomyEntryCreate(BaseModel):
     subject: str
     topic: str
