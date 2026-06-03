@@ -105,11 +105,11 @@ def scan_pool() -> dict:
         except Exception as e:
             parse_errors.append(f"{f.relative_to(_BACKEND)}: {e}")
             continue
-        qs = d.get("questions") or []
+        qs = d if isinstance(d, list) else (d.get("questions") or [])
         if not qs:
             continue
-        code = d.get("topic_code") or "MISSING"
-        raw_subj = d.get("subject")
+        code = (d.get("topic_code") if isinstance(d, dict) else None) or "MISSING"
+        raw_subj = d.get("subject") if isinstance(d, dict) else None
         canon = canon_subject(raw_subj) or subject_for_code(code) or "MISSING"
         schema = _detect_schema(qs[0])
         # Per-file aggregates
@@ -122,7 +122,7 @@ def scan_pool() -> dict:
         entry = topics.setdefault(code, {
             "topic_code": code,
             "subject": canon,
-            "topic": d.get("topic"),
+            "topic": (d.get("topic") if isinstance(d, dict) else None),
             "questions": 0,
             "schema_versions": set(),
             "paths": [],

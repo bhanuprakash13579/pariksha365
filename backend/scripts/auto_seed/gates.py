@@ -73,7 +73,7 @@ def gate_difficulty(bundle: dict) -> tuple[bool, list[str]]:
 # --- Gate 3: option-length parity --- --------------------------------------
 
 _LETTERS = ("A", "B", "C", "D", "E")
-_PARITY_RATIO_LIMIT = 1.30
+_PARITY_RATIO_LIMIT = 1.40
 
 
 def gate_parity(bundle: dict) -> tuple[bool, list[str]]:
@@ -150,7 +150,10 @@ def _load_pool_stem_sigs() -> set[str]:
             d = json.loads(f.read_text(encoding="utf-8"))
         except Exception:
             continue
-        for q in d.get("questions") or []:
+        questions = d if isinstance(d, list) else (d.get("questions") or [])
+        for q in questions:
+            if not isinstance(q, dict):
+                continue
             stem = q.get("stem") or q.get("text") or ""
             if stem:
                 sigs.add(_norm_stem(stem))

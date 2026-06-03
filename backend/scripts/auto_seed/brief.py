@@ -28,13 +28,16 @@ _POOL = _BACKEND / "seeds" / "static_gk"
 
 def _existing_stems_for(topic_code: str) -> list[str]:
     stems: list[str] = []
-    # Search across all subject folders since topic_code is unique
     for f in _POOL.rglob(f"{topic_code}.json"):
         try:
             d = json.loads(f.read_text())
         except Exception:
             continue
-        for q in d.get("questions", []):
+        # Support both dict-with-questions-key and legacy bare-list formats
+        questions = d if isinstance(d, list) else d.get("questions", [])
+        for q in questions:
+            if not isinstance(q, dict):
+                continue
             s = q.get("stem") or q.get("text")
             if s:
                 stems.append(s)
