@@ -14,7 +14,19 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "in.pariksha365.app"
+      "bundleIdentifier": "in.pariksha365.app",
+      "buildNumber": "6",
+      "infoPlist": {
+        "CFBundleDisplayName": " ",
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "in.pariksha365.app",
+              "com.googleusercontent.apps.592393648560-0csjsd0dvukv94qg05np14rj1v3o9gg2"
+            ]
+          }
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -36,7 +48,8 @@
     },
     "owner": "bhanu13579",
     "plugins": [
-      "expo-web-browser"
+      "expo-web-browser",
+      "expo-apple-authentication"
     ]
   }
 }

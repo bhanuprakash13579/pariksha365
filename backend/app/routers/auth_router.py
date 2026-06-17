@@ -3,7 +3,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.database import get_db
 from app.core.dependencies import get_current_admin_user
-from app.schemas.auth_schema import Token, LoginRequest, ForgotPasswordRequest, ResetPasswordRequest, MessageResponse, GoogleLoginRequest
+from app.schemas.auth_schema import Token, LoginRequest, ForgotPasswordRequest, ResetPasswordRequest, MessageResponse, GoogleLoginRequest, AppleLoginRequest
 from app.schemas.user_schema import UserCreate, UserResponse
 from app.services import auth_service
 
@@ -35,10 +35,20 @@ async def google_login(
     login_data: GoogleLoginRequest,
     db: AsyncSession = Depends(get_db)
 ) -> Any:
-    """
-    Login or create a user via Google ID Token.
-    """
     return await auth_service.authenticate_google_user(db, token=login_data.token)
+
+
+@router.post("/apple", response_model=Token)
+async def apple_login(
+    login_data: AppleLoginRequest,
+    db: AsyncSession = Depends(get_db)
+) -> Any:
+    """Login or create a user via Apple Sign-In identity token."""
+    return await auth_service.authenticate_apple_user(
+        db,
+        identity_token=login_data.identity_token,
+        full_name=login_data.full_name,
+    )
 
 @router.post("/forgot-password", response_model=MessageResponse)
 async def forgot_password(

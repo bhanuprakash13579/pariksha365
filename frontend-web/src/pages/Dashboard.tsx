@@ -100,6 +100,23 @@ export const StudentDashboard = () => {
         return map;
     }, [dbCategories]);
 
+    // Collect published tests from exam_stages for the selected goal category.
+    // Each entry carries the stage context so the UI can group them.
+    const stageTests = useMemo(() => {
+        const rows: { stageName: string; subcatName: string; test: any }[] = [];
+        for (const cat of examStructure) {
+            if (globalExamGoalId && cat.id !== globalExamGoalId) continue;
+            for (const sub of (cat.subcategories || [])) {
+                for (const stage of (sub.exam_stages || [])) {
+                    for (const ts of (stage.test_series || [])) {
+                        rows.push({ stageName: stage.name, subcatName: sub.name, test: ts });
+                    }
+                }
+            }
+        }
+        return rows;
+    }, [examStructure, globalExamGoalId]);
+
     // Accordion State
     const [expandedFolders, setExpandedFolders] = useState<Set<string>>(new Set());
     const toggleFolder = (folderId: string, e: React.MouseEvent) => {
@@ -126,13 +143,15 @@ export const StudentDashboard = () => {
                     CategoryAPI.list({ include_all: true }),
                     UserAPI.getMe(),
                     AttemptAPI.list().catch(() => ({ data: [] })),
-                    CourseAPI.list().catch(() => ({ data: [] }))
+                    CourseAPI.list().catch(() => ({ data: [] })),
+                    ExamStructureAPI.listPublic().catch(() => ({ data: [] })),
                 ]);
                 setDbCategories(catRes.data);
                 setUserName(userRes.data.name || '');
                 setUserPoints(userRes.data.points || 0);
                 setUserStars(userRes.data.stars || 0);
                 setTestAttempts(attemptRes.data || []);
+                setExamStructure(examStructRes.data || []);
 
                 try {
                     const streakRes = await api.get('/quiz/streak');

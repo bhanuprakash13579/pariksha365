@@ -43,7 +43,10 @@ def _structure_load_options():
         selectinload(Category.subcategories)
         .selectinload(SubCategory.exam_stages)
         .selectinload(ExamStage.exam_pattern)
-        .selectinload(ExamPattern.section_patterns)
+        .selectinload(ExamPattern.section_patterns),
+        selectinload(Category.subcategories)
+        .selectinload(SubCategory.exam_stages)
+        .selectinload(ExamStage.test_series),
     ]
 
 
@@ -85,6 +88,8 @@ async def list_structure_public(db: AsyncSession) -> list[Category]:
 
 
 def _prune_stages(sub: SubCategory) -> SubCategory:
+    for stage in sub.exam_stages:
+        stage.test_series = [ts for ts in stage.test_series if ts.is_published]
     sub.exam_stages = [st for st in sub.exam_stages if st.is_enabled]
     return sub
 

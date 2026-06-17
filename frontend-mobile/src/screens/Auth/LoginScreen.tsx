@@ -57,15 +57,27 @@ export default function LoginScreen({ navigation }: any) {
 
     const handleAppleAuth = async () => {
         try {
-            await AppleAuthentication.signInAsync({
+            const result = await AppleAuthentication.signInAsync({
                 requestedScopes: [
                     AppleAuthentication.AppleAuthenticationScope.FULL_NAME,
                     AppleAuthentication.AppleAuthenticationScope.EMAIL,
                 ],
             });
-            navigation.replace('MainTabs', { isGuest: false });
+            if (!result.identityToken) {
+                Alert.alert('Authentication Failed', 'Apple did not return an identity token.');
+                return;
+            }
+            setLoading(true);
+            const fullName = result.fullName
+                ? [result.fullName.givenName, result.fullName.familyName].filter(Boolean).join(' ')
+                : null;
+            const loginRes = await AuthAPI.appleLogin(result.identityToken, fullName);
+            await AsyncStorage.setItem('token', loginRes.data.access_token);
+            await navigateAfterAuth();
         } catch (e: any) {
-            if (e.code !== 'ERR_REQUEST_CANCELED') Alert.alert('Authentication Failed', 'Apple Sign in failed.');
+            if (e.code !== 'ERR_REQUEST_CANCELED') Alert.alert('Authentication Failed', e.response?.data?.detail || 'Apple Sign in failed.');
+        } finally {
+            setLoading(false);
         }
     };
 

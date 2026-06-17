@@ -203,8 +203,15 @@ async def get_attempt_answers(db: AsyncSession, attempt_id: uuid.UUID, user_id: 
     result = await db.execute(stmt)
     return result.scalars().all()
 
-async def save_answer(db: AsyncSession, attempt_id: uuid.UUID, answer_in: UserAnswerCreate) -> UserAnswer:
-    # Upsert logic for answer
+async def save_answer(db: AsyncSession, attempt_id: uuid.UUID, user_id: uuid.UUID, answer_in: UserAnswerCreate) -> UserAnswer:
+    # Verify attempt belongs to this user before accepting answers.
+    owner_check = (await db.execute(
+        select(Attempt).where(Attempt.id == attempt_id, Attempt.user_id == user_id,
+                              Attempt.status == AttemptStatus.IN_PROGRESS)
+    )).scalars().first()
+    if not owner_check:
+        raise HTTPException(status_code=403, detail="Attempt not found or not accessible")
+
     stmt = select(UserAnswer).where(
         UserAnswer.attempt_id == attempt_id,
         UserAnswer.question_id == answer_in.question_id
@@ -226,21 +233,28 @@ async def save_answer(db: AsyncSession, attempt_id: uuid.UUID, answer_in: UserAn
     await db.refresh(new_answer)
     return new_answer
 
-async def submit_attempt(db: AsyncSession, attempt_id: uuid.UUID) -> Result:
-    # Eager-load test_series only (for negative_marking). Sections are no
-    # longer pulled here — the per-Q marks come from each answer's
-    # question.section join below, so loading every section unnecessarily
-    # padded the response and slowed submit on long papers.
+async def submit_attempt(db: AsyncSession, attempt_id: uuid.UUID, user_id: uuid.UUID) -> Result:
+    from sqlalchemy import update as _sql_update
+    # Atomic status transition — also enforces ownership (user_id match).
+    # Only transitions IN_PROGRESS → SUBMITTED; returns nothing if already
+    # submitted, wrong user, or attempt doesn't exist.
+    update_res = await db.execute(
+        _sql_update(Attempt)
+        .where(Attempt.id == attempt_id, Attempt.user_id == user_id,
+               Attempt.status == AttemptStatus.IN_PROGRESS)
+        .values(status=AttemptStatus.SUBMITTED, ended_at=datetime.utcnow())
+        .returning(Attempt.id)
+    )
+    if update_res.fetchone() is None:
+        raise HTTPException(status_code=400, detail="Invalid attempt or already submitted")
+    await db.flush()
+
+    # Reload with test_series eager-loaded for negative_marking.
     attempt = (await db.execute(
         select(Attempt)
         .options(selectinload(Attempt.test_series))
         .where(Attempt.id == attempt_id)
     )).scalars().first()
-    if not attempt or attempt.status == AttemptStatus.SUBMITTED:
-        raise HTTPException(status_code=400, detail="Invalid attempt or already submitted")
-        
-    attempt.status = AttemptStatus.SUBMITTED
-    attempt.ended_at = datetime.utcnow()
     
     # Fetch all answers for this attempt
     answers_stmt = select(UserAnswer).options(

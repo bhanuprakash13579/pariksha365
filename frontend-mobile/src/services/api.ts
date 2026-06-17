@@ -23,6 +23,7 @@ export const AuthAPI = {
     login: (email: string, password: string) => api.post('/auth/login', { email, password }),
     signup: (name: string, email: string, password: string) => api.post('/auth/signup', { name, email, password }),
     googleLogin: (token: string) => api.post('/auth/google', { token }),
+    appleLogin: (identity_token: string, full_name?: string | null) => api.post('/auth/apple', { identity_token, full_name }),
 };
 
 export const UserAPI = {
@@ -56,11 +57,13 @@ export const CategoryAPI = {
 export const ExamStructureAPI = {
     listPublishedTests: (params: { category_id?: string; subcategory_id?: string; test_type?: 'MOCK' | 'PYQ' }) =>
         api.get('/exam-structure/stages/tests', { params }),
+    listPublic: () => api.get('/exam-structure'),
+    getStageAccess: (stageId: string) => api.get(`/exam-structure/exam-stages/${stageId}/access`),
 };
 
 export const AttemptAPI = {
     list: () => api.get('/attempts'),
-    start: (test_series_id: string) => api.post(`/attempts/start/${test_series_id}`),
+    start: (test_series_id: string) => api.post('/attempts/start', { test_series_id }),
     saveAnswer: (attemptId: string, data: any) => api.post(`/attempts/${attemptId}/answers`, data),
     submit: (attemptId: string) => api.post(`/attempts/${attemptId}/submit`),
     getAnswers: (attemptId: string) => api.get(`/attempts/${attemptId}/answers`),

@@ -289,6 +289,8 @@ import os
 import cloudinary
 import cloudinary.uploader
 from fastapi import HTTPException
+from app.models.notes import Note
+from app.services.r2_storage_service import r2_storage
 
 # Ensure Cloudinary is configured (either via CLOUDINARY_URL env var or manually)
 # cloudinary.config(cloud_name="...", api_key="...", api_secret="...")
@@ -319,4 +321,48 @@ async def upload_image(
     except Exception as e:
         print(f"Cloudinary Upload Error: {e}")
         raise HTTPException(status_code=500, detail=f"Failed to upload image to Cloudinary: {str(e)}")
+
+
+@router.post("/notes/upload")
+async def upload_notes_pdf(
+    file: UploadFile = File(...),
+    slug: str = Form(..., description="Short URL-safe identifier, e.g. 'gk_static_2026'"),
+    title: str = Form(..., description="Human-readable title shown to students"),
+    db: AsyncSession = Depends(get_db),
+    admin: User = Depends(get_current_admin_user),
+) -> Any:
+    """Upload a study-notes PDF to R2 and register it in the database.
+
+    The slug becomes the book_id in the download URL:
+      GET /api/v1/payments/notes/file/{slug}
+    Existing entries with the same slug are updated (upsert).
+    """
+    if not file.filename or not file.filename.lower().endswith(".pdf"):
+        raise HTTPException(status_code=400, detail="Only PDF files are accepted")
+
+    safe_slug = slug.strip().lower().replace(" ", "_")
+    if not safe_slug:
+        raise HTTPException(status_code=400, detail="slug must not be empty")
+
+    pdf_bytes = await file.read()
+
+    try:
+        r2_url = r2_storage.upload_notes_pdf(safe_slug, pdf_bytes)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"R2 upload failed: {e}")
+
+    from sqlalchemy import select
+    existing = (await db.execute(
+        select(Note).where(Note.slug == safe_slug)
+    )).scalars().first()
+
+    if existing:
+        existing.title = title
+        existing.file_url = r2_url
+        existing.is_visible = True
+    else:
+        db.add(Note(file_url=r2_url, title=title, slug=safe_slug, is_visible=True))
+
+    await db.commit()
+    return {"status": "ok", "slug": safe_slug, "r2_url": r2_url}
 

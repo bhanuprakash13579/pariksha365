@@ -16,6 +16,8 @@ Notes download:
 """
 from __future__ import annotations
 
+import asyncio
+import io
 import json
 import os
 import time
@@ -25,7 +27,7 @@ from pathlib import Path
 from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException, Request
-from fastapi.responses import FileResponse
+from fastapi.responses import StreamingResponse
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -34,6 +36,7 @@ from app.core.database import get_db
 from app.core.dependencies import get_current_active_user
 from app.models.exam_stage import ExamStage
 from app.models.exam_stage_purchase import ExamStagePurchase
+from app.models.notes import Note
 from app.models.notes_purchase import NotesPurchase
 from app.models.payment import (
     Payment, PaymentProvider, PaymentStatus,
@@ -42,6 +45,8 @@ from app.models.payment import (
 from app.models.user import User
 from app.schemas.payment_schema import CashfreeOrderResponse, NotesAccessResponse
 from app.services import cashfree_service
+from app.services.pdf_watermark_service import watermark_pdf
+from app.services.r2_storage_service import r2_storage
 
 router = APIRouter()
 
@@ -66,7 +71,8 @@ def _notify_url() -> str:
     return f"{settings.BACKEND_URL.rstrip('/')}/api/v1/payments/cashfree/webhook"
 
 
-def _notes_files() -> list[dict]:
+def _local_notes_files() -> list[dict]:
+    """Files baked into the deployment via manifest.json + local _build/out/."""
     if not _NOTES_MANIFEST.exists():
         return []
     try:
@@ -78,13 +84,32 @@ def _notes_files() -> list[dict]:
         book_id = book.get("id", "")
         if not book_id:
             continue
-        filename = f"{book_id}.pdf"
-        if (_NOTES_OUT / filename).exists():
+        if (_NOTES_OUT / f"{book_id}.pdf").exists():
             files.append({
                 "id": book_id,
                 "title": book.get("title", ""),
-                "filename": filename,
+                "filename": f"{book_id}.pdf",
                 "download_url": f"/api/v1/payments/notes/file/{book_id}",
+            })
+    return files
+
+
+async def _all_notes_files(db: AsyncSession) -> list[dict]:
+    """Merge local manifest files with admin-uploaded DB files."""
+    files = _local_notes_files()
+    local_slugs = {f["id"] for f in files}
+
+    db_notes = (await db.execute(
+        select(Note).where(Note.is_visible == True, Note.slug.isnot(None))
+    )).scalars().all()
+
+    for note in db_notes:
+        if note.slug not in local_slugs:
+            files.append({
+                "id": note.slug,
+                "title": note.title or note.slug,
+                "filename": f"{note.slug}.pdf",
+                "download_url": f"/api/v1/payments/notes/file/{note.slug}",
             })
     return files
 
@@ -314,7 +339,7 @@ async def get_notes_access(
 
     if not purchase:
         return NotesAccessResponse(has_access=False, files=[])
-    return NotesAccessResponse(has_access=True, files=_notes_files())
+    return NotesAccessResponse(has_access=True, files=await _all_notes_files(db))
 
 
 @router.get("/notes/file/{book_id}")
@@ -329,14 +354,40 @@ async def download_notes_file(
     if not purchase:
         raise HTTPException(status_code=403, detail="Notes not purchased")
 
-    # Prevent path traversal
     safe_id = book_id.replace("/", "").replace("\\", "").replace("..", "").strip()
-    file_path = _NOTES_OUT / f"{safe_id}.pdf"
-    if not file_path.exists():
-        raise HTTPException(status_code=404, detail="File not found")
 
-    return FileResponse(
-        file_path,
+    # 1. Try local file (baked into deployment)
+    local_path = _NOTES_OUT / f"{safe_id}.pdf"
+    if local_path.exists():
+        pdf_bytes = local_path.read_bytes()
+    else:
+        # 2. Try admin-uploaded file from R2 via DB
+        note = (await db.execute(
+            select(Note).where(Note.slug == safe_id, Note.is_visible == True)
+        )).scalars().first()
+        if not note:
+            raise HTTPException(status_code=404, detail="File not found")
+        loop = asyncio.get_event_loop()
+        pdf_bytes = await loop.run_in_executor(None, r2_storage.download_notes_pdf, safe_id)
+        if not pdf_bytes:
+            raise HTTPException(status_code=404, detail="File not available in storage")
+
+    # Watermark runs in a thread pool so it does not block the event loop
+    loop = asyncio.get_event_loop()
+    wm_bytes = await loop.run_in_executor(
+        None,
+        watermark_pdf,
+        pdf_bytes,
+        current_user.name,
+        current_user.email,
+        current_user.phone,
+    )
+
+    return StreamingResponse(
+        io.BytesIO(wm_bytes),
         media_type="application/pdf",
-        filename=f"Pariksha365-{safe_id}.pdf",
+        headers={
+            "Content-Disposition": f'attachment; filename="Pariksha365-{safe_id}.pdf"',
+            "Content-Length": str(len(wm_bytes)),
+        },
     )

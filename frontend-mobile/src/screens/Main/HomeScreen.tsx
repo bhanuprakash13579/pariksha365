@@ -36,7 +36,7 @@ export default function HomeScreen({ navigation, route }: any) {
                 {/* Mobile Daily Quiz Hero Banner */}
                 <TouchableOpacity
                     activeOpacity={0.9}
-                    onPress={() => navigation.navigate('DailyQuiz')}
+                    onPress={() => navigation.navigate('DailyQuizTab')}
                     style={{ marginBottom: 20, marginTop: 10, shadowColor: '#f97316', shadowOpacity: 0.3, shadowRadius: 10, shadowOffset: { width: 0, height: 4 }, elevation: 8 }}
                 >
                     <LinearGradient
@@ -84,7 +84,7 @@ export default function HomeScreen({ navigation, route }: any) {
                             <TouchableOpacity
                                 key={cat.id}
                                 style={{ width: '48%', marginBottom: 15 }}
-                                onPress={() => navigation.navigate('Category', { categoryTitle: cat.name, subcategories: cat.subcategories })}
+                                onPress={() => navigation.navigate('Category', { categoryTitle: cat.name, categoryId: cat.id, subcategories: cat.subcategories })}
                                 activeOpacity={0.8}
                             >
                                 <LinearGradient

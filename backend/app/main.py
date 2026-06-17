@@ -233,10 +233,11 @@ import traceback
 
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
-    return JSONResponse(
-        status_code=500,
-        content={"detail": "Internal Server Error", "traceback": traceback.format_exc()},
-    )
+    is_dev = os.getenv("ENV", "production").lower() in ("dev", "development", "local")
+    content: dict = {"detail": "Internal Server Error"}
+    if is_dev:
+        content["traceback"] = traceback.format_exc()
+    return JSONResponse(status_code=500, content=content)
 
 app.include_router(auth_router.router, prefix=f"{settings.API_V1_STR}/auth", tags=["auth"])
 app.include_router(user_router.router, prefix=f"{settings.API_V1_STR}/users", tags=["users"])

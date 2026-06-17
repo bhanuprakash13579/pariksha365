@@ -17,6 +17,11 @@ class LoginRequest(BaseModel):
 class GoogleLoginRequest(BaseModel):
     token: str
 
+
+class AppleLoginRequest(BaseModel):
+    identity_token: str
+    full_name: Optional[str] = None
+
 class ForgotPasswordRequest(BaseModel):
     email: EmailStr
 

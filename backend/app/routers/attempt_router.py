@@ -36,7 +36,7 @@ async def save_answer(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_active_user)
 ) -> Any:
-    return await scoring_service.save_answer(db, attempt_id, answer_in)
+    return await scoring_service.save_answer(db, attempt_id, current_user.id, answer_in)
 
 @router.post("/{attempt_id}/submit", response_model=ResultResponse)
 async def submit_attempt(
@@ -44,7 +44,7 @@ async def submit_attempt(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_active_user)
 ) -> Any:
-    return await scoring_service.submit_attempt(db, attempt_id)
+    return await scoring_service.submit_attempt(db, attempt_id, current_user.id)
 
 @router.get("/{attempt_id}/answers", response_model=List[UserAnswerResponse])
 async def get_attempt_answers(

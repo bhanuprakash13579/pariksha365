@@ -11,6 +11,46 @@ from app.schemas.auth_schema import Token
 from app.services import oauth_service
 import secrets
 
+async def authenticate_apple_user(db: AsyncSession, identity_token: str, full_name: str | None = None) -> Token:
+    payload = await oauth_service.verify_apple_token(identity_token)
+
+    # Apple uses `sub` as the stable user identifier, email may be absent on
+    # subsequent logins. We look up by email when present, else by apple_sub.
+    email = payload.get("email")
+    apple_sub = payload.get("sub", "")
+
+    stmt = select(User).where(User.email == email) if email else select(User).where(User.apple_sub == apple_sub)
+    result = await db.execute(stmt)
+    user = result.scalars().first()
+
+    if not user:
+        # If email absent (subsequent logins) and no existing user, refuse —
+        # we can't create an account without an email.
+        if not email:
+            raise HTTPException(status_code=400, detail="Apple token missing email. Please sign out of Apple ID on your device and try again.")
+        random_password = secrets.token_urlsafe(32)
+        derived_name = full_name or (email.split("@")[0] if email else "User")
+        user = User(
+            email=email,
+            password_hash=get_password_hash(random_password),
+            name=derived_name,
+        )
+        # Store apple_sub if the column exists (safe — no-op if column missing)
+        try:
+            user.apple_sub = apple_sub
+        except AttributeError:
+            pass
+        db.add(user)
+        await db.commit()
+        await db.refresh(user)
+    elif not user.is_active:
+        raise HTTPException(status_code=400, detail="Inactive user")
+
+    access_token = create_access_token(subject=user.id)
+    refresh_token = create_refresh_token(subject=user.id)
+    return Token(access_token=access_token, refresh_token=refresh_token)
+
+
 async def authenticate_google_user(db: AsyncSession, token: str) -> Token:
     # verify_google_token calls google-auth's sync HTTP client to fetch Google's
     # public certs. Running it in a thread avoids blocking the event loop for

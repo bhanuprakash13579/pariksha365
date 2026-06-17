@@ -162,7 +162,7 @@ export default function PostTestResultsScreen({ navigation, route }: any) {
                                 </View>
                             ))}
                             <TouchableOpacity
-                                onPress={() => navigation.navigate('DailyQuizTab')}
+                                onPress={() => navigation.navigate('MainTabs', { screen: 'DailyQuizTab' })}
                                 style={{
                                     backgroundColor: COLORS.primary, borderRadius: 12, paddingVertical: 14, alignItems: 'center', marginTop: 4,
                                     shadowColor: COLORS.primary, shadowOpacity: 0.3, shadowRadius: 8, shadowOffset: { width: 0, height: 4 }, elevation: 5,

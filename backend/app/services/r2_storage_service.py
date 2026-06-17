@@ -22,6 +22,26 @@ class R2StorageService:
             region_name='auto'
         )
 
+    def upload_notes_pdf(self, slug: str, pdf_bytes: bytes) -> str:
+        """Upload a study-notes PDF to R2 and return its public URL."""
+        file_key = f"notes/{slug}.pdf"
+        self.s3.put_object(
+            Bucket=self.bucket_name,
+            Key=file_key,
+            Body=pdf_bytes,
+            ContentType="application/pdf",
+        )
+        return f"{self.public_domain}/{file_key}"
+
+    def download_notes_pdf(self, slug: str) -> bytes | None:
+        """Fetch a study-notes PDF from R2. Returns None if not found."""
+        file_key = f"notes/{slug}.pdf"
+        try:
+            resp = self.s3.get_object(Bucket=self.bucket_name, Key=file_key)
+            return resp["Body"].read()
+        except Exception:
+            return None
+
     async def upload_test_json(self, test_id: str, test_data: dict) -> str:
         """
         Uploads a compiled mock test JSON directly to Cloudflare R2

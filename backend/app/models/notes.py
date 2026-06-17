@@ -8,8 +8,10 @@ class Note(Base):
     __tablename__ = "notes"
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, index=True)
-    test_series_id = Column(UUID(as_uuid=True), ForeignKey("test_series.id"))
+    test_series_id = Column(UUID(as_uuid=True), ForeignKey("test_series.id"), nullable=True)
     file_url = Column(String, nullable=False)
+    title = Column(String, nullable=True)
+    slug = Column(String, nullable=True, index=True)
     is_visible = Column(Boolean, default=True)
 
     test_series = relationship("TestSeries", back_populates="notes")

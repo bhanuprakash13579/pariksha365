@@ -72,11 +72,25 @@ class ExamStageCreate(ExamStageBase):
     exam_pattern: Optional[ExamPatternCreate] = None
 
 
+class TestSeriesSummaryOut(BaseModel):
+    id: UUID
+    title: str
+    test_type: str
+    is_published: bool
+    total_questions: Optional[int] = None
+    total_duration_minutes: Optional[int] = None
+    negative_marking: float = 0.25
+    paper_date: Optional[str] = None
+    paper_shift: Optional[str] = None
+    model_config = ConfigDict(from_attributes=True)
+
+
 class ExamStageOut(ExamStageBase):
     id: UUID
     subcategory_id: UUID
     created_at: datetime
     exam_pattern: Optional[ExamPatternOut] = None
+    test_series: List["TestSeriesSummaryOut"] = Field(default_factory=list)
     model_config = ConfigDict(from_attributes=True)
 
 
