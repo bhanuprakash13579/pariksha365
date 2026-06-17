@@ -124,6 +124,9 @@ async def _background_schema_selfheal() -> None:
             # --- questions (test-series MCQs) --------------------------------
             "ALTER TABLE questions ADD COLUMN IF NOT EXISTS diagram_svg TEXT;",
             "ALTER TABLE questions ADD COLUMN IF NOT EXISTS explanation_svg TEXT;",
+            # --- users (Apple Sign-In) ----------------------------------------
+            "ALTER TABLE users ADD COLUMN IF NOT EXISTS apple_sub VARCHAR;",
+            "CREATE UNIQUE INDEX IF NOT EXISTS ix_users_apple_sub ON users (apple_sub);",
         )
         ok = 0
         for stmt in heal_stmts:
