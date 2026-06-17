@@ -240,11 +240,11 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                                     const bg = isCorrect ? '#f0fdf4' : isSelected ? '#fef2f2' : '#f9fafb';
                                     const border = isCorrect ? '#22c55e' : isSelected ? '#ef4444' : '#e5e7eb';
                                     return (
-                                        <View key={i} style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: bg, borderWidth: 1, borderColor: border, borderRadius: 8, paddingHorizontal: 10, paddingVertical: 8, marginBottom: 6 }}>
-                                            <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#6b7280', marginRight: 6 }}>{String.fromCharCode(65 + i)}.</Text>
-                                            <Text style={{ fontSize: 12, color: '#374151', flex: 1 }}>{opt.option_text}</Text>
-                                            {isCorrect && <Text style={{ color: '#16a34a', fontWeight: 'bold', fontSize: 14 }}>✓</Text>}
-                                            {isSelected && !isCorrect && <Text style={{ color: '#dc2626', fontWeight: 'bold', fontSize: 14 }}>✗</Text>}
+                                        <View key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', backgroundColor: bg, borderWidth: 1, borderColor: border, borderRadius: 8, paddingHorizontal: 10, paddingVertical: 8, marginBottom: 6 }}>
+                                            <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#6b7280', marginRight: 6, marginTop: 1 }}>{String.fromCharCode(65 + i)}.</Text>
+                                            <Text style={{ fontSize: 12, color: '#374151', flex: 1, lineHeight: 18 }}>{opt.option_text}</Text>
+                                            {isCorrect && <Text style={{ color: '#16a34a', fontWeight: 'bold', fontSize: 14, marginLeft: 4 }}>✓</Text>}
+                                            {isSelected && !isCorrect && <Text style={{ color: '#dc2626', fontWeight: 'bold', fontSize: 14, marginLeft: 4 }}>✗</Text>}
                                         </View>
                                     );
                                 })}
@@ -281,7 +281,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                 <TouchableOpacity onPress={() => navigation.goBack()}>
                     <Ionicons name="close" size={24} color="#374151" />
                 </TouchableOpacity>
-                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#111827' }}>{title}</Text>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#111827', flex: 1, textAlign: 'center', marginHorizontal: 8 }} numberOfLines={1}>{title}</Text>
                 <Text style={{ fontSize: 13, color: '#6b7280', fontWeight: '600' }}>
                     {currentIdx + 1}/{questions.length}
                 </Text>
@@ -298,7 +298,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
             <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 80 }}>
                 {/* Question */}
                 <View style={{ backgroundColor: '#fff', borderRadius: 16, padding: 20, marginBottom: 16, borderWidth: 1, borderColor: '#f3f4f6' }}>
-                    <Text style={{ fontSize: 15, fontWeight: '500', color: '#111827', lineHeight: 24 }}>
+                    <Text style={{ fontSize: 15, fontWeight: '500', color: '#111827', lineHeight: 25 }}>
                         {currentQ.question_text}
                     </Text>
                 </View>
@@ -318,7 +318,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                             onPress={() => selectOption(i)}
                             activeOpacity={0.7}
                             style={{
-                                flexDirection: 'row', alignItems: 'center',
+                                flexDirection: 'row', alignItems: 'flex-start',
                                 padding: 14, borderRadius: 12, marginBottom: 10,
                                 borderWidth: 2,
                                 borderColor: isSelected ? COLORS.primary : '#e5e7eb',
@@ -329,11 +329,11 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                                 width: 20, height: 20, borderRadius: 10,
                                 borderWidth: 2, borderColor: isSelected ? COLORS.primary : '#d1d5db',
                                 backgroundColor: isSelected ? COLORS.primary : '#fff',
-                                alignItems: 'center', justifyContent: 'center', marginRight: 12,
+                                alignItems: 'center', justifyContent: 'center', marginRight: 12, marginTop: 1,
                             }}>
                                 {isSelected && <View style={{ width: 7, height: 7, borderRadius: 3.5, backgroundColor: '#fff' }} />}
                             </View>
-                            <Text style={{ fontSize: 14, fontWeight: isSelected ? '600' : '400', color: isSelected ? '#9a3412' : '#374151', flex: 1 }}>
+                            <Text style={{ fontSize: 14, fontWeight: isSelected ? '600' : '400', color: isSelected ? '#9a3412' : '#374151', flex: 1, lineHeight: 22 }}>
                                 <Text style={{ fontWeight: 'bold', color: '#9ca3af' }}>{String.fromCharCode(65 + i)}. </Text>
                                 {opt.option_text}
                             </Text>

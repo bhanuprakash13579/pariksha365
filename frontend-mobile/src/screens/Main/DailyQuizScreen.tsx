@@ -147,15 +147,15 @@ export default function DailyQuizScreen({ navigation }: any) {
                     Choose a subject to practice. 10 random questions daily!
                 </Text>
 
-                <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between' }}>
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 12 }}>
                     {categories.map((cat: any, idx: number) => (
                         <TouchableOpacity
                             key={idx}
                             disabled={!cat.has_questions}
                             onPress={() => navigation.navigate('QuizSession', { subject: cat.key, title: cat.name, limit: 10 })}
                             style={{
-                                width: '48%', backgroundColor: cat.has_questions ? '#fff' : '#f3f4f6',
-                                borderRadius: 16, padding: 16, marginBottom: 12,
+                                width: '47%', backgroundColor: cat.has_questions ? '#fff' : '#f3f4f6',
+                                borderRadius: 16, padding: 16,
                                 borderWidth: 1, borderColor: '#f3f4f6',
                                 opacity: cat.has_questions ? 1 : 0.5
                             }}
