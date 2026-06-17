@@ -3,7 +3,8 @@ from google.auth.transport import requests as google_requests
 from fastapi import HTTPException, status
 from app.core.config import settings
 import httpx
-from jose import jwt as _jose_jwt, exceptions as _jose_exc
+import jwt as _pyjwt
+from jwt.algorithms import RSAAlgorithm as _RSAAlgorithm
 
 
 # Tolerate small clock drift between Google's auth server and our server.
@@ -69,13 +70,11 @@ _APPLE_ISSUER = "https://appleid.apple.com"
 async def verify_apple_token(identity_token: str) -> dict:
     """Verify an Apple Sign-In identity token (JWT) and return its decoded payload.
 
-    Fetches Apple's public JWKS, selects the key matching the token's `kid`,
-    then verifies the RS256 signature, issuer, and audience. Raises
-    HTTPException(401) on any failure so callers never have to handle jose
-    exceptions directly.
+    Uses PyJWT + RSAAlgorithm.from_jwk() to verify the RS256 signature against
+    Apple's published JWKS, then checks issuer and audience.
     """
     try:
-        header = _jose_jwt.get_unverified_header(identity_token)
+        header = _pyjwt.get_unverified_header(identity_token)
         kid = header.get("kid")
         if not kid:
             raise HTTPException(status_code=401, detail="Apple token missing kid header")
@@ -83,28 +82,33 @@ async def verify_apple_token(identity_token: str) -> dict:
         async with httpx.AsyncClient(timeout=10) as client:
             resp = await client.get(_APPLE_KEYS_URL)
             resp.raise_for_status()
-        jwks = resp.json()
+            jwks = resp.json()
 
-        # Find the matching key
-        key = next((k for k in jwks.get("keys", []) if k.get("kid") == kid), None)
-        if key is None:
+        key_data = next((k for k in jwks.get("keys", []) if k.get("kid") == kid), None)
+        if key_data is None:
             raise HTTPException(status_code=401, detail="Apple public key not found for kid")
 
-        # Build audience — accept any Apple client ID from settings if configured,
-        # otherwise just the primary iOS bundle identifier.
-        apple_audiences = getattr(settings, "APPLE_CLIENT_IDS", None) or ["in.pariksha365.app"]
+        public_key = _RSAAlgorithm.from_jwk(key_data)
 
-        payload = _jose_jwt.decode(
+        apple_audience = (getattr(settings, "APPLE_CLIENT_IDS", None) or ["in.pariksha365.app"])
+        # PyJWT accepts a list for audience — any match in the list is accepted
+        payload = _pyjwt.decode(
             identity_token,
-            key,
+            public_key,
             algorithms=["RS256"],
-            audience=apple_audiences,
+            audience=apple_audience,
             issuer=_APPLE_ISSUER,
-            options={"leeway": 60},
+            leeway=60,
         )
         return payload
 
-    except (_jose_exc.JWTError, _jose_exc.JWKError) as e:
+    except _pyjwt.ExpiredSignatureError:
+        raise HTTPException(status_code=401, detail="Apple token has expired")
+    except _pyjwt.InvalidAudienceError:
+        raise HTTPException(status_code=401, detail="Apple token audience mismatch — expected in.pariksha365.app")
+    except _pyjwt.InvalidIssuerError:
+        raise HTTPException(status_code=401, detail="Apple token issuer mismatch")
+    except _pyjwt.PyJWTError as e:
         raise HTTPException(status_code=401, detail=f"Invalid Apple token: {e}")
     except HTTPException:
         raise
