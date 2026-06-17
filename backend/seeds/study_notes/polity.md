@@ -205,9 +205,24 @@ one-liner. Many are covered again in Chapter 3 + 13.
 | 1942 | **Cripps Mission** | Dominion status post-war — rejected. |
 | 1946 | **Cabinet Mission Plan** | Proposed three-tier federation + a Constituent Assembly; partition avoided by a hair but rejected by League eventually. |
 
+<div class="keypoint">
+
+**Mnemonic — "RPCCC-GIC-MMG-ACC"** for pre-1946 Acts in order:
+**R**egulating Act (1773), **P**itt's Act (1784), **C**harter 1813, **C**harter 1833, **C**harter 1853, **G**oI 1858, **I**ndian Councils 1861, **I**ndian Councils 1892, **M**orley-Minto 1909, **M**ontagu-Chelmsford 1919, **G**oI 1935, **A**ugust Offer 1940, **C**ripps 1942, **C**abinet Mission 1946.
+
+**Quick shortcut:** The three most-tested Acts are 1773 (Regulating — first), 1909 (Morley-Minto — separate electorates), 1935 (GoI — two-thirds of the Constitution). Know these three cold.
+
+</div>
+
 <div class="examtip">
 
 **Quick test:** Before reading further, try to name three pre-1946 Acts that shaped the 1950 Constitution and one thing each gave us. If you cannot name even two, go back and re-read the table above.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** Examiners swap 1909 and 1919 Reforms. Remember: **1909 = Morley-Minto = separate electorates** (the communal divide). **1919 = Montagu-Chelmsford = diarchy** (shared provincial power). Wrong year = wrong answer.
 
 </div>
 
@@ -224,6 +239,23 @@ timeline
     1950-01-24 : Members sign. National anthem + national song adopted.
     1950-01-26 : Constitution comes INTO FORCE. Republic Day.
 ```
+
+<div class="keypoint">
+
+**TIMELINE ANCHOR — The 6 dates you cannot get wrong:**
+
+| Date | Event | Memory hook |
+|---|---|---|
+| 9 Dec 1946 | CA first session | "9 December — nine drafters begin" |
+| 11 Dec 1946 | Rajendra Prasad elected President | 11 = two ones = two Rajendras (also 1st President of India) |
+| 13 Dec 1946 | Nehru moves Objectives Resolution | "Lucky 13 = Nehru's lucky speech" |
+| 26 Nov 1949 | Constitution ADOPTED | **Constitution Day** / Law Day |
+| 24 Jan 1950 | Members sign; anthem adopted | 2 days before Republic Day |
+| 26 Jan 1950 | Constitution INTO FORCE | **Republic Day** — same as Purna Swaraj Day 1930 |
+
+**Shortcut:** The only two dates candidates need verbatim: **26 Nov 1949** (adopted) and **26 Jan 1950** (enforced). The two-month gap exists because the Assembly wanted to align enforcement with the historic date of Purna Swaraj (26 Jan 1930).
+
+</div>
 
 **Memorise 26 NOV 1949 + 26 JAN 1950** as the two dates. **Why the 2-month gap?**
 Because the Assembly wanted the "commencement" to fall on the **same date**
@@ -315,6 +347,23 @@ several systems and adapted them. What comes from where:
 
 <div class="keypoint">
 
+**Mnemonic — "UAICAGFUSJ-1935"** for sources: **U**K, **A**merica, **I**reland, **C**anada, **A**ustralia, **G**ermany, **F**rance, **U**SSR, **S**outh Africa, **J**apan, **1935 Act** (two-thirds).
+
+**Quick shortcut — the three most-tested matchings:**
+1. **DPSPs → Ireland** (examiners love this; candidates wrongly say USA)
+2. **Fundamental Duties → USSR** (added 1976 by 42nd Amendment)
+3. **Art 21 "procedure established by law" → Japan** (not UK, not USA — Japan's 1946 constitution)
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** Candidates confuse the source of DPSPs. DPSPs = **Ireland** (Irish Constitution 1937 borrowed from Spain's 1931 Constitution). USA gave Fundamental Rights, not DPSPs. This wrong-source pairing appears every SSC/PSC exam.
+
+</div>
+
+<div class="keypoint">
+
 **Quick-recall: Sources of the Constitution**
 
 UK gave the how-government-runs (parliamentary system, cabinet, writs, single citizenship). USA gave the citizen's shield (FRs, judicial review, written Constitution). Ireland gave the promises (DPSPs, RS nomination, Presidential election). Canada gave the glue to the centre (quasi-federal, residuary powers with Centre). Germany gave the emergency brakes (suspension of FRs during Emergency). USSR gave duties and ideals (FDs, social/economic/political justice in Preamble). The 1935 Government of India Act gave the machinery — nearly two-thirds of the entire constitutional structure.
@@ -346,7 +395,7 @@ answer sheet in mains.
 
 <div class="examtip">
 
-**Quick test:** Close the book and name: (a) the chair of the Drafting Committee, (b) the Constitutional Adviser, (c) the first chair of the Constituent Assembly, (d) the date the Constitution was adopted, (e) the date it came into force. Write the answers, then check. If you missed any, re-read §1.3 above.
+**Quick test:** Close the book and name: (a) the chair of the Drafting Committee,  (b) the Constitutional Adviser,  (c) the first chair of the Constituent Assembly,  (d) the date the Constitution was adopted,  (e) the date it came into force. Write the answers, then check. If you missed any, re-read §1.3 above.
 
 </div>
 
@@ -354,7 +403,7 @@ answer sheet in mains.
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["MAKING OF THE CONSTITUTION"]:::root
     R --> CA["Constituent Assembly"]:::date
     R --> DC["Drafting + Adoption"]:::date
@@ -488,7 +537,7 @@ Three words added by 42nd Amendment 1976: **Socialist, Secular, Integrity.** Two
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["THE PREAMBLE"]:::root
     R --> KW["Key Words"]:::key
     R --> AM["Words added by 42nd Amendment 1976"]:::date
@@ -587,7 +636,7 @@ The lengthiest written constitution in the world. One country across 28 states w
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["SALIENT FEATURES"]:::root
     R --> S1["Structural Features"]:::key
     R --> S2["Political Features"]:::key
@@ -795,6 +844,17 @@ instructed to fill in details by statute. It did so through the
 
 ### 5.3 The Citizenship Act, 1955 — five gateways in + three exits
 
+<div class="keypoint">
+
+**Mnemonic — "B-D-R-N-I"** for the 5 ways to acquire citizenship:
+**B**irth, **D**escent, **R**egistration, **N**aturalisation, **I**ncorporation of territory.
+
+**Memory hook:** "**Birds Don't Run; Nature Includes**" — every word begins with the right letter.
+
+**3 ways OUT — "R-T-D":** **R**enunciation, **T**ermination (auto — acquire foreign citizenship), **D**eprivation (government-forced).
+
+</div>
+
 **Five ways to BECOME a citizen:**
 
 1. **By birth** (Sec 3).
@@ -823,6 +883,14 @@ instructed to fill in details by statute. It did so through the
    with enemy, sentence of ≥ 2 years within 5 years of naturalisation, etc.
 
 ### 5.4 CAA 2019 — what actually changed
+
+<div class="examtip">
+
+⚠️ **TRAP:** The CAA 2019 is about **who can get citizenship faster**. It does **NOT** take away any existing Indian citizen's citizenship. Examiners often phrase questions to imply it strips rights — it does not. It only **adds** a fast-track path (12 → 6 years) for a specific group of persecuted non-Muslim migrants from 3 countries.
+
+**Quick recall — "3-6-6"**: **3** countries (Pakistan, Afghanistan, Bangladesh) + **6** religions (Hindu, Sikh, Buddhist, Jain, Parsi, Christian) + **6** years naturalisation (down from 12) + cut-off **31 Dec 2014**.
+
+</div>
 
 The **Citizenship Amendment Act, 2019** (effective when Rules were notified,
 11 March 2024) gave a **fast-track path to citizenship by naturalisation**
@@ -880,7 +948,7 @@ Indian citizenship is single and regulated by Parliament under Article 11. Five 
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["CITIZENSHIP (Art 5-11)"]:::root
     R --> AC["Acquisition of Citizenship"]:::proc
     R --> LO["Loss of Citizenship"]:::key
@@ -1017,6 +1085,22 @@ discrimination**.
 
 #### Art 14 — Equality before law + equal protection of laws
 
+<div class="keypoint">
+
+**Quick recall — Art 14 has TWO phrases, TWO sources:**
+- "Equality **before** the law" = **UK** concept (Dicey's Rule of Law) — no one is above the law.
+- "Equal **protection** of the laws" = **US** concept (14th Amendment) — state must treat like cases alike.
+
+**Analogy:** "Before the law" = everyone enters the same door. "Protection of the laws" = everyone gets a fair deal once inside.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** Art 14 does NOT mean everyone is treated identically. It allows **reasonable classification** — you can group people differently if: (1) there is an intelligible differentia, and (2) it has a rational nexus to the law's objective. Examiners often call this the "twin-test" of Art 14.
+
+</div>
+
 Two phrases, two origins:
 - **Equality before the law** — English common law (Dicey) — negative; no one above the law.
 - **Equal protection of laws** — US 14th Amendment — positive; like treatment
@@ -1130,6 +1214,17 @@ Each freedom has matched **reasonable restrictions**:
 proportionate, not arbitrary, related to a listed ground.
 
 #### Art 20 — Protection for conviction of offences
+
+<div class="keypoint">
+
+**Mnemonic — "EDJ-SI"** for Art 20's 3 protections:
+**E**x post facto ban, **D**ouble **J**eopardy ban, **S**elf-**I**ncrimination ban.
+
+Or just say: **"No Retrospective, No Twice, No Confession."**
+
+**Key exam shortcut:** Art 20 + Art 21 are the **only two FRs that CANNOT be suspended** even during a National Emergency under Art 352. The 44th Amendment 1978 made this absolute.
+
+</div>
 
 Three guarantees:
 1. **No ex post facto law** — only for criminal laws.
@@ -1299,6 +1394,19 @@ the **SC** (bypassing HCs if they wish). SC **must** entertain the petition
 
 #### The five writs
 
+<div class="keypoint">
+
+**Mnemonic — "H-M-P-C-Q"** for the 5 Writs: **H**abeas corpus, **M**andamus, **P**rohibition, **C**ertiorari, **Q**uo Warranto.
+
+**Memory sentence:** "**Has Manmohan Planned Creating Quotas?**" — each first word gives one writ.
+
+**Quick shortcut — Prohibition vs Certiorari:**
+- **Prohibition** = STOP a proceeding that hasn't finished yet (future action).
+- **Certiorari** = QUASH an order that's already been passed (past action).
+Exam questions often swap these two. Remember: Pro = "Pro-hibit the future"; Certi = "Certify and cancel the past."
+
+</div>
+
 ```mermaid
 graph TD
     W[Writs under Arts 32 + 226]
@@ -1318,6 +1426,14 @@ graph TD
 | **Quo warranto** | Public-office holder | Test legal authority to hold the post |
 
 #### Art 32 vs Art 226
+
+<div class="examtip">
+
+⚠️ **TRAP:** Candidates often confuse Art 32 (Supreme Court) with Art 226 (High Court). The critical difference: **Art 32 itself is a Fundamental Right** (right to move the SC); Art 226 is **not** a Fundamental Right — it is a constitutional right, but not Part III. Also, Art 226's scope is **broader** than Art 32 — HC can issue writs for ANY legal right, not just FR violations.
+
+**One-liner to remember:** "Art 32 = heart and soul (Ambedkar's words) = FR itself. Art 226 = HC power = broader scope but not a FR."
+
+</div>
 
 | Feature | Art 32 (SC) | Art 226 (HC) |
 |---------|-------------|--------------|
@@ -1450,7 +1566,7 @@ Six shields: equality (14–18), freedom (19–22), against exploitation (23–2
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["FUNDAMENTAL RIGHTS<br>Part III, Art 12-35"]:::root
     R --> SX["6 Fundamental Rights"]:::key
     R --> WR["5 Writs — Art 32 and Art 226"]:::key
@@ -1504,6 +1620,20 @@ They are **not justiciable**. You cannot go to court to enforce a DPSP. But:
   the bedrock of both, and the two must be read together, not as rivals.
 
 ### 7.2 Classification of DPSPs — three clean buckets
+
+<div class="keypoint">
+
+**Quick recall — 3 categories + their most-tested articles:**
+
+| Category | Must-know Articles | Memory hook |
+|---|---|---|
+| **Socialistic** | 39 (equal pay), 39A (free legal aid), 42 (maternity), 43 (living wage) | "Welfare for workers" |
+| **Gandhian** | 40 (Panchayats), 43 (cottage industries), 47 (prohibition), 48 (cattle) | "Village India" |
+| **Liberal-Intellectual** | 44 (UCC), 48A (environment), 50 (judicial separation), 51 (world peace) | "Rule of law + global vision" |
+
+**Exam shortcut:** The 4 most frequently asked DPSP articles: **40** (village panchayats), **44** (Uniform Civil Code), **48A** (environment — 42nd Amdt), **39A** (free legal aid).
+
+</div>
 
 ```mermaid
 graph TD
@@ -1643,7 +1773,7 @@ Know these by heart:
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["DIRECTIVE PRINCIPLES<br>Part IV, Art 36-51"]:::root
     R --> BA["Basic Nature"]:::key
     R --> KA["Key Articles to Know"]:::key
@@ -1676,7 +1806,16 @@ The **42nd Amendment, 1976** inserted **Part IV-A (Article 51-A)** with
 **10 duties**. The **86th Amendment, 2002** added an **11th duty** (parents'
 responsibility for child's education).
 
-Today: **11 Fundamental Duties**. Non-justiciable (like DPSPs); but a
+Today: **11 Fundamental Duties**.
+
+<div class="examtip">
+
+⚠️ **TRAP — the 3 classic FD mistakes:**
+1. Candidates say FDs were added by the **44th Amendment** — wrong. **42nd Amendment 1976**. The 44th Amendment 1978 did other things (restored property, non-suspendable Arts 20+21).
+2. Candidates forget that FDs apply only to **citizens** (not foreigners or corporations) — unlike most FRs which also protect non-citizens.
+3. The **11th FD** (education for children) was added by the **86th Amendment 2002** — same amendment that added Art 21A (RTE). Link them: same year, same theme.
+
+</div> Non-justiciable (like DPSPs); but a
 statute can be passed compelling compliance with any duty (e.g., Prevention
 of Insults to National Honour Act 1971 enforces respect for Constitution +
 National Flag + Anthem).
@@ -1740,7 +1879,7 @@ Eleven duties, all in one Article — 51-A. Added during the Emergency by the 42
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["FUNDAMENTAL DUTIES<br>Art 51A, Part IV-A"]:::root
     R --> AD["Addition History"]:::date
     R --> DU["Key Duties (11 total)"]:::key
@@ -1823,7 +1962,7 @@ If you got 8+ right, move on. If less, re-read chapters 1 + 6 + 7.
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["FRs + DPSPs + FDs<br>THE BIG PICTURE"]:::root
     R --> CM["Comparison Matrix"]:::key
     R --> LC["Landmark Cases"]:::date
@@ -2233,6 +2372,22 @@ timeline
 | 351 | Develop Hindi |
 
 ## Part XVIII — Emergency (352-360)
+
+<div class="keypoint">
+
+**Mnemonic — "352-356-360"** = National-State-Financial. Think: **"National has the most digits in its name (8) → Article 352 (3+5+2=10). Financial is smallest emergency → Article 360."**
+
+**Quick recall — the 3 Emergency Articles at a glance:**
+
+| Art | Type | Ground | Times used |
+|---|---|---|---|
+| 352 | National Emergency | War / External aggression / Armed rebellion | 3 times (1962, 1971, 1975) |
+| 356 | President's Rule | Failure of constitutional machinery in state | ~135 times |
+| 360 | Financial Emergency | Threat to financial stability | **NEVER** |
+
+**Most important exam fact:** Art 360 Financial Emergency has **never been declared** in India's history.
+
+</div>
 
 | Art | Subject |
 |---|---|

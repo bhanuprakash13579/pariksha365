@@ -432,4 +432,14 @@ TAXONOMY_EXPANDED = [
     ("Vocabulary", "Foreign Words & Phrases", "VOCAB_FOREIGN", ["foreign words", "foreign phrases", "latin phrases", "french terms"]),
     ("Vocabulary", "Thematic Vocabulary (Business, Legal, Medical)", "VOCAB_THEMATIC", ["business vocabulary", "legal vocabulary", "medical terms", "domain vocabulary", "technical terms"]),
     ("Vocabulary", "Vocabulary in Context", "VOCAB_CONTEXT", ["vocabulary in context", "fill in the blanks vocabulary", "context-based word meaning"]),
+
+    # ─── Codes registered for newer static-GK seed waves (May 2026) ───
+    ("Geography", "Indian Agriculture (Crops, Seasons, Revolutions)", "GEO_IND_AGRICULTURE", ["indian agriculture", "kharif", "rabi", "zaid", "green revolution", "white revolution", "cropping seasons", "msp", "soils and crops"]),
+    ("General Knowledge", "Classical & Folk Dances of India", "GK_DANCES", ["classical dances", "folk dances", "bharatanatyam", "kathak", "kathakali", "kuchipudi", "odissi", "manipuri", "mohiniyattam", "sattriya", "indian dance forms"]),
+    ("Computer Knowledge", "MS Office (Word, Excel, PowerPoint)", "COMP_MS_OFFICE", ["ms office", "microsoft office", "ms word", "ms excel", "ms powerpoint", "spreadsheet functions", "office shortcuts", "vlookup", "mail merge"]),
+    ("Computer Knowledge", "Computer Abbreviations & Full Forms", "COMP_ABBREVIATIONS", ["computer abbreviations", "full forms", "acronyms", "ram", "rom", "cpu", "usb", "computer terminology"]),
+    ("General Knowledge", "Festivals of India", "GK_FESTIVALS", ["festivals of india", "indian festivals", "harvest festivals", "onam", "pongal", "bihu", "diwali", "regional festivals", "tribal festivals"]),
+    ("Polity", "Chief Minister & State Council of Ministers", "POL_CHIEF_MINISTER", ["chief minister", "state council of ministers", "cm powers", "state executive", "article 164", "article 167"]),
+    ("Economics", "Taxation & GST", "ECO_TAXATION", ["taxation", "gst", "goods and services tax", "direct tax", "indirect tax", "income tax", "customs duty", "cess", "surcharge", "gst council"]),
+    ("General Knowledge", "Musical Instruments & Exponents", "GK_MUSIC", ["musical instruments", "indian classical music", "sitar", "tabla", "shehnai", "sarod", "santoor", "veena", "music maestros", "carnatic", "hindustani"]),
 ]

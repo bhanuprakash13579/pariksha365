@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-26-eco-ni2-07",
       "generated_at": "2026-04-26T20:15:00+00:00",
       "id": "sgk_ECO_NATIONAL_INCOME_II_MIXED_00007"
+    },
+    {
+      "stem": "Which of the following payments is EXCLUDED from GDP because it does not correspond to any current productive service rendered?",
+      "options": [
+        {
+          "option_text": "Government salaries paid to active civil servants for services rendered",
+          "is_correct": false
+        },
+        {
+          "option_text": "Old-age pension disbursed by the government to retired employees",
+          "is_correct": true
+        },
+        {
+          "option_text": "Interest earned by banks on loans extended to private businesses",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rent received by landlords for leasing commercial office space",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Pensions are transfer payments — money moves from government to retirees without any current productive service in return, so they are excluded from GDP. Government salaries, bank interest income, and rent are all payments for current factor services (labour, capital, land) and ARE included in GDP.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:42:56+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_II_MIXED_00008"
+    },
+    {
+      "stem": "Which single deduction transforms Gross National Product (GNP) into Net National Product (NNP)?",
+      "options": [
+        {
+          "option_text": "Net factor income from abroad earned by resident nationals",
+          "is_correct": false
+        },
+        {
+          "option_text": "Capital consumption allowance, also known as depreciation",
+          "is_correct": true
+        },
+        {
+          "option_text": "Net indirect taxes comprising indirect taxes minus subsidies paid",
+          "is_correct": false
+        },
+        {
+          "option_text": "Value of intermediate goods consumed during the production process",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "NNP = GNP − Depreciation (Capital Consumption Allowance), which accounts for wear and tear of capital assets. Net factor income from abroad is the adjustment used to convert GDP → GNP, not GNP → NNP. Net indirect taxes convert market-price aggregates to factor-cost aggregates — a separate dimension entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:42:56+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_II_MIXED_00009"
+    },
+    {
+      "stem": "The 'value-added method' of measuring national income was introduced specifically to overcome which inherent problem in the gross output method?",
+      "options": [
+        {
+          "option_text": "Inability to capture imputed value of owner-occupied housing stock",
+          "is_correct": false
+        },
+        {
+          "option_text": "Risk of counting intermediate goods multiple times as final output",
+          "is_correct": true
+        },
+        {
+          "option_text": "Difficulty separating nominal output from real output at current prices",
+          "is_correct": false
+        },
+        {
+          "option_text": "Challenge of including informal sector transactions in official estimates",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "The value-added method counts only the incremental value added at each production stage (Output − Intermediate inputs), eliminating double-counting. Without it, steel used to make a car would be counted twice — once as steel output and again embedded in the car's value. Imputed rent, nominal vs real, and informal sector are separate problems requiring different solutions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:42:56+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_II_MIXED_00010"
+    },
+    {
+      "stem": "Personal Disposable Income (PDI) is derived from Personal Income (PI) by deducting which specific item?",
+      "options": [
+        {
+          "option_text": "Undistributed profits retained by corporations from their net earnings",
+          "is_correct": false
+        },
+        {
+          "option_text": "Direct personal taxes and compulsory non-tax payments to government",
+          "is_correct": true
+        },
+        {
+          "option_text": "Net factor income earned by residents from assets placed abroad",
+          "is_correct": false
+        },
+        {
+          "option_text": "Social security contributions paid by employers on behalf of workers",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "PDI = PI − Direct Personal Taxes − Non-Tax Payments (fines, compulsory fees). This is what households actually have available to spend or save. Undistributed corporate profits are deducted at an earlier stage (moving from NNP to Personal Income, not PI to PDI). Social security contributions by employers are also excluded before arriving at PI.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:42:56+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_II_MIXED_00011"
+    },
+    {
+      "stem": "Among the following, which non-monetary item is conventionally INCLUDED in India's national income estimates as per standard accounting norms?",
+      "options": [
+        {
+          "option_text": "Domestic services performed by housewives within their own households",
+          "is_correct": false
+        },
+        {
+          "option_text": "Imputed rental value of houses occupied by their respective owners",
+          "is_correct": true
+        },
+        {
+          "option_text": "Voluntary services rendered by NGO workers without any remuneration",
+          "is_correct": false
+        },
+        {
+          "option_text": "Value of barter transactions conducted in rural informal economies",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Imputed rent of owner-occupied houses is included because the owner implicitly receives rental income equal to what a tenant would pay — excluding it would understate housing services in GDP. Domestic housework, volunteer NGO labour, and most barter exchanges are excluded because they lack observable market prices and are difficult to measure consistently.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:42:56+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_II_MIXED_00012"
+    },
+    {
+      "stem": "A country's GDP at market price is ₹500 lakh crore, depreciation is ₹40 lakh crore, net indirect taxes are ₹60 lakh crore, and net factor income from abroad is ₹(−10) lakh crore. What is NNP at Factor Cost?",
+      "options": [
+        {
+          "option_text": "₹400 lakh crore — arrived at by ignoring net factor income from abroad",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹390 lakh crore — obtained after applying all four adjustments correctly",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹460 lakh crore — obtained by deducting only depreciation and ignoring rest",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹410 lakh crore — computed by treating net factor income as a positive inflow",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "NNP at FC = GDP at MP − Depreciation − Net Indirect Taxes + NFIA = 500 − 40 − 60 + (−10) = 390. Option A (₹400) omits NFIA entirely. Option C (₹460) deducts only depreciation: 500 − 40 = 460. Option D (₹410) incorrectly treats NFIA as positive: 500 − 40 − 60 + 10 = 410. The sign of NFIA is a common trap — a negative value means factor outflows exceed inflows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:42:56+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_II_MIXED_00013"
+    },
+    {
+      "stem": "When India's national accounts were rebased to the 2011-12 base year (released January 2015), what was the most notable CONCEPTUAL shift from the earlier 2004-05 series?",
+      "options": [
+        {
+          "option_text": "Gross Value Added at basic prices replaced GDP at factor cost as primary aggregate",
+          "is_correct": true
+        },
+        {
+          "option_text": "MCA-21 corporate database replaced census surveys as the main data source",
+          "is_correct": false
+        },
+        {
+          "option_text": "Real GDP growth replaced nominal GDP growth as India's official headline indicator",
+          "is_correct": false
+        },
+        {
+          "option_text": "GDP at purchasing power parity replaced GDP at market exchange rates in reporting",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "The 2011-12 series adopted 'GVA at basic prices' as the primary aggregate replacing 'GDP at factor cost'. Basic prices = factor cost + production taxes − production subsidies, making it a distinct concept. MCA-21 was a significant data-source change, not a conceptual one. Real GDP growth was already India's headline indicator before 2015. PPP-based GDP was never adopted as a replacement for market-exchange-rate reporting in India's official accounts.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:42:56+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_II_MIXED_00014"
     }
   ]
 }

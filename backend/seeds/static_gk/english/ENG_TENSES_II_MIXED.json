@@ -235,6 +235,426 @@
       "generator_tag": "claude-opus-2026-04-24-eng-tn-07",
       "generated_at": "2026-04-24T04:20:00+00:00",
       "id": "sgk_ENG_TENSES_II_MIXED_00007"
+    },
+    {
+      "stem": "Which option correctly identifies the tense error in the sentence: 'Yesterday, the minister has inaugurated the new expressway'?",
+      "options": [
+        {
+          "option_text": "'Yesterday' should be replaced with 'Recently' for correct tense usage",
+          "is_correct": false
+        },
+        {
+          "option_text": "'has inaugurated' must be 'inaugurated' as 'yesterday' needs simple past",
+          "is_correct": true
+        },
+        {
+          "option_text": "'new expressway' needs 'newly built expressway' for grammatical precision",
+          "is_correct": false
+        },
+        {
+          "option_text": "'the minister' should come after 'inaugurated' to fix the word order",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct because 'yesterday' is a definite past time marker that requires simple past tense ('inaugurated'), never present perfect ('has inaugurated'). Present perfect pairs with indefinite time expressions like 'recently' or 'just,' not fixed past points. Option A is wrong because substituting 'Recently' changes the sentence's meaning rather than correcting the grammatical error — the tense form itself is the violation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:27:35+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00008"
+    },
+    {
+      "stem": "The examination will not begin until all candidates ___ their admit cards to the invigilator.",
+      "options": [
+        {
+          "option_text": "will show their admit cards without fail",
+          "is_correct": false
+        },
+        {
+          "option_text": "show their admit cards without delay",
+          "is_correct": true
+        },
+        {
+          "option_text": "are showing their admit cards right now",
+          "is_correct": false
+        },
+        {
+          "option_text": "would show their admit cards on request",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct because in subordinate time clauses introduced by 'until,' 'when,' 'before,' and 'as soon as,' simple present tense — not future — is used to refer to future events. 'Show' is the correct form. Option A is the classic trap: candidates apply future logic from the main clause into the time clause, but 'will show' is grammatically forbidden inside a time subordinate clause.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:27:35+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00009"
+    },
+    {
+      "stem": "The coach said, 'My players have been practising for six hours.' In reported speech, this becomes: 'The coach said that his players ___.'",
+      "options": [
+        {
+          "option_text": "have been practising for the past six hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "had been practising for six hours at that time",
+          "is_correct": true
+        },
+        {
+          "option_text": "were practising continuously for six long hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "had practised for six hours without any break",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct because in reported speech, present perfect continuous ('have been practising') backshifts to past perfect continuous ('had been practising'), preserving both the perfect and continuous aspects intact. Option C is the most tempting wrong answer: 'were practising' (past continuous) is only the backshift of 'are practising' (present continuous), which drops the perfect aspect. Option D uses past perfect simple and discards the continuous aspect altogether.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:27:35+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00010"
+    },
+    {
+      "stem": "Choose the correct verb form: 'If the panchayat ___ the irrigation scheme properly, crop yields would increase significantly.'",
+      "options": [
+        {
+          "option_text": "implements the scheme in the proper manner",
+          "is_correct": false
+        },
+        {
+          "option_text": "implemented the scheme in the proper manner",
+          "is_correct": true
+        },
+        {
+          "option_text": "had implemented the scheme in proper fashion",
+          "is_correct": false
+        },
+        {
+          "option_text": "will implement the scheme in due course",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct because Type-2 conditionals express hypothetical present or future situations using simple past in the if-clause and 'would + base verb' in the main clause. 'Implemented' (simple past) correctly forms a Type-2 structure. Option C is the key distractor: 'had implemented' (past perfect) would create a Type-3 conditional, expressing an unreal past situation — not a hypothetical present one as intended here.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:27:35+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00011"
+    },
+    {
+      "stem": "The senior officer ___ long working hours, so the extended shifts during elections posed no difficulty for her.",
+      "options": [
+        {
+          "option_text": "used to work during such long working hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "was used to working such long hours daily",
+          "is_correct": true
+        },
+        {
+          "option_text": "is used to work during such long hours here",
+          "is_correct": false
+        },
+        {
+          "option_text": "had used to work during such long hours often",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct because 'be used to + gerund' expresses present or past accustomedness, which fits the context — she was habituated, so shifts caused no difficulty. Option A is wrong because 'used to + base verb' expresses a discontinued past habit, implying she no longer works long hours; that logic breaks the result clause. Option C is wrong because 'is used to' requires a gerund ('working'), not a bare infinitive ('work') — a common confusion in exams.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:27:35+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00012"
+    },
+    {
+      "stem": "By the time the arbitration panel ___, both companies had already reached an out-of-court settlement.",
+      "options": [
+        {
+          "option_text": "announces the verdict to all parties involved",
+          "is_correct": false
+        },
+        {
+          "option_text": "announced the final verdict to all parties",
+          "is_correct": true
+        },
+        {
+          "option_text": "had announced the verdict to both parties",
+          "is_correct": false
+        },
+        {
+          "option_text": "was in the process of announcing the verdict",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct because 'by the time + time clause' uses simple past ('announced') in the subordinate clause, while the main clause uses past perfect ('had already reached') to signal the earlier completed action. The sequencing burden is on the main clause's past perfect, not the time clause. Option C is the prime distractor: 'had announced' (past perfect) in the time clause creates an awkward double past-perfect structure that native grammar avoids — the 'by the time' framing already implies sequence.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:27:35+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00013"
+    },
+    {
+      "stem": "The presiding officer demanded that every candidate ___ the answer sheet before the alarm rang.",
+      "options": [
+        {
+          "option_text": "completes the answer sheet well on time",
+          "is_correct": false
+        },
+        {
+          "option_text": "complete the answer sheet well in time",
+          "is_correct": true
+        },
+        {
+          "option_text": "completed the answer sheet quickly enough",
+          "is_correct": false
+        },
+        {
+          "option_text": "had completed the answer sheet beforehand",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct because after verbs of demand, insistence, recommendation, or requirement ('demanded that'), English uses the mandative subjunctive — the bare infinitive regardless of person or number. Hence 'complete' (not 'completes') is correct. Option A is the classic trap: candidates apply standard third-person-singular '-s' to 'complete,' producing 'completes,' which violates the subjunctive rule. Option C incorrectly applies backshift logic, treating the 'that'-clause as reported speech rather than a mandative construction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:27:35+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00014"
+    },
+    {
+      "stem": "Which sentence correctly uses the tense in relation to the time expression given?",
+      "options": [
+        {
+          "option_text": "She has visited Paris last summer for a cultural exchange trip.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She visited Paris last summer for a cultural exchange trip.",
+          "is_correct": true
+        },
+        {
+          "option_text": "She visits Paris last summer for a cultural exchange trip.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She was visiting Paris last summer for a cultural exchange trip.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct because 'last summer' is a definite past time marker that demands Simple Past ('visited'). Option A is the most tempting distractor: Present Perfect ('has visited') sounds educated but is incompatible with a specific past time reference like 'last summer' — it requires unspecified time or markers such as 'ever/never/just/already'. Options C and D use present and past continuous respectively, neither of which suits a completed, dated past event.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:29:17+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00015"
+    },
+    {
+      "stem": "Which sentence correctly uses Past Perfect to show an action completed before another past event?",
+      "options": [
+        {
+          "option_text": "Before the doctor arrived, the patient already died in the ward.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Before the doctor arrived, the patient had already died in the ward.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Before the doctor arrived, the patient has already died in the ward.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Before the doctor arrived, the patient was already dying in the ward.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: when two past events occur in sequence, the earlier action uses Past Perfect ('had died') and the later one uses Simple Past ('arrived'). Option A omits the auxiliary 'had', making it grammatically incomplete despite 'already' being present. Option D ('was dying') uses Past Continuous, implying an ongoing action rather than one conclusively completed before 'arrived'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:29:17+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00016"
+    },
+    {
+      "stem": "Identify the sentence that correctly employs the Future Perfect Continuous tense.",
+      "options": [
+        {
+          "option_text": "By next year, he will be working in this office for a full decade.",
+          "is_correct": false
+        },
+        {
+          "option_text": "By next year, he will have been working in this office for a decade.",
+          "is_correct": true
+        },
+        {
+          "option_text": "By next year, he would have been working in this office for a decade.",
+          "is_correct": false
+        },
+        {
+          "option_text": "By next year, he has been working in this office for a full decade.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: Future Perfect Continuous is formed with 'will + have + been + V-ing', used to express duration of an action up to a specific future point ('by next year'). Option A uses Future Continuous ('will be working'), which lacks 'have been' and cannot indicate duration up to a future moment. Option C uses 'would', signalling a conditional rather than a future statement. Option D (Present Perfect Continuous) has no future reference.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:29:17+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00017"
+    },
+    {
+      "stem": "The principal announced, 'The examination will begin at nine sharp.' Which is the correct reported speech form?",
+      "options": [
+        {
+          "option_text": "The principal announced that the examination would begin at nine sharp.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The principal announced that the examination will begin at nine sharp.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The principal announced that the examination shall begin at nine sharp.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The principal announced that the examination had begun at nine sharp.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct: when the reporting verb is past tense ('announced'), 'will' must backshift to 'would' in formal reported speech. Option B retains 'will', which is acceptable only in informal speech or when the event is still upcoming — but exam setters expect the standard backshift rule. Option D ('had begun') changes the meaning entirely, implying the examination was already over when announced.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:29:17+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00018"
+    },
+    {
+      "stem": "Which sentence correctly demonstrates the Second Conditional for a hypothetical present situation?",
+      "options": [
+        {
+          "option_text": "If she studies harder, she will secure a government job very soon.",
+          "is_correct": false
+        },
+        {
+          "option_text": "If she studied harder, she would secure a government job sooner.",
+          "is_correct": true
+        },
+        {
+          "option_text": "If she had studied harder, she would secure a government job soon.",
+          "is_correct": false
+        },
+        {
+          "option_text": "If she would study harder, she will secure a government job soon.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: Second Conditional uses 'If + Past Simple, would + base verb' to frame an unlikely or imaginative present/future scenario. Option A is First Conditional — it implies a real possibility, not a hypothetical one. Option C mixes the if-clause of Third Conditional ('had studied') with a result clause that does not match, creating a structurally incoherent mixed sentence. Option D incorrectly places 'would' inside the if-clause, a widespread but non-standard error.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:29:17+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00019"
+    },
+    {
+      "stem": "Identify the sentence where the mandative subjunctive mood is correctly used.",
+      "options": [
+        {
+          "option_text": "It is essential that every candidate submits the application on time.",
+          "is_correct": false
+        },
+        {
+          "option_text": "It is essential that every candidate submit the application on time.",
+          "is_correct": true
+        },
+        {
+          "option_text": "It is essential that every candidate submitted the application on time.",
+          "is_correct": false
+        },
+        {
+          "option_text": "It is essential that every candidate is submitting the application now.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: after expressions of necessity, urgency, or recommendation (essential, imperative, vital, insisted), the that-clause employs the mandative subjunctive — the base form of the verb for ALL subjects, including third-person singular, with no '-s' ending. Option A is the most seductive distractor because 'submits' follows normal agreement rules for 'every candidate', yet the subjunctive overrides that rule entirely. Option C shifts to past tense, altering the meaning. Option D introduces Present Continuous, which is inappropriate here.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:29:17+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00020"
+    },
+    {
+      "stem": "Which option correctly rewrites 'If she had known the truth, she would not be so upset now' as an inverted conditional?",
+      "options": [
+        {
+          "option_text": "Were she to know the truth, she would not be so upset now.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Had she known the truth, she would not be so upset now.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Should she have known the truth, she would not be so upset now.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Has she known the truth, she would not be so upset now at all.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: inverting a past hypothetical if-clause (Third Conditional) means dropping 'if' and fronting 'had' before the subject — 'Had she known'. The sentence is a mixed conditional (past hypothesis, present consequence), and inversion applies only to the if-clause structure, which is preserved in B. Option A ('Were she to know') inverts a present/future hypothetical (Second Conditional) and does not match the original past-tense if-clause. Option C ('Should she have known') is non-standard and not a recognised inversion form for past hypotheticals.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:29:17+00:00",
+      "id": "sgk_ENG_TENSES_II_MIXED_00021"
     }
   ]
 }

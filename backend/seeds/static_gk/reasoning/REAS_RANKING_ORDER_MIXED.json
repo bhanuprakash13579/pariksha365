@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Ranking and Order",
+  "topic_code": "REAS_RANKING_ORDER_MIXED",
+  "description": "Covers Position interchange and Rank gaps.",
+  "questions": [
+    {
+      "stem": "In a row of boys, if A is 10th from the left and B is 9th from the right, and they interchange their positions, A becomes 15th from the left. How many boys are there in the row?",
+      "options": [
+        {
+          "option_text": "23",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "option_text": "28",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: Let's track the positions.\nInitial: A is 10th from Left (L). B is 9th from Right (R).\nThey swap. So, A is now sitting in B's old chair.\nB's old chair is 9th from the Right.\nThe problem states that after swapping, A is 15th from the Left.\nSo, this specific chair is 15th from the Left AND 9th from the Right.\nTotal boys = (Position from Left + Position from Right) - 1\nTotal = 15 + 9 - 1 = 24 - 1 = 23.\nDECOY BUSTING: The most common error is forgetting to subtract 1, leading to 24. We subtract 1 because the chair is counted twice (once from the left, once from the right).\nEXAM INSIGHT: Whenever positions are interchanged, focus on the chair that has two pieces of data (position from left AND right).",
+      "subject": "Reasoning",
+      "topic": "Ranking and Order",
+      "topic_code": "REAS_RANKING_ORDER_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_REAS_RANKING_ORDER_MIXED_001"
+    },
+    {
+      "stem": "Ramesh ranks 13th in a class of 33 students. There are 5 students below Suresh rankwise. How many students are there between Ramesh and Suresh?",
+      "options": [
+        {
+          "option_text": "14",
+          "is_correct": true
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "13",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: \nTotal students = 33.\nRamesh's rank from top = 13th.\nIf there are 5 students BELOW Suresh, then Suresh is the 6th student from the bottom.\nTo find Suresh's rank from the top: (Total - Rank from bottom) + 1\nSuresh's rank from top = (33 - 6) + 1 = 27 + 1 = 28th.\nSo, Ramesh is 13th and Suresh is 28th.\nNumber of students BETWEEN them = (Rank of Suresh - Rank of Ramesh) - 1\nStudents between = (28 - 13) - 1 = 15 - 1 = 14.\nDECOY BUSTING: If you just do 28 - 13, you get 15. But this INCLUDES Suresh. The question asks for the number of students BETWEEN them, so you must subtract 1.\nEXAM INSIGHT: Drawing a quick vertical line and placing numbers on it is the safest way to avoid the 'off-by-one' errors that plague ranking questions.",
+      "subject": "Reasoning",
+      "topic": "Ranking and Order",
+      "topic_code": "REAS_RANKING_ORDER_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_REAS_RANKING_ORDER_MIXED_002"
+    },
+    {
+      "stem": "In a class, Deepak ranks 9th from the top and Rekha ranks 6th from the bottom. Exactly 4 students are ranked between them, with Deepak above Rekha. How many students are there in the class?",
+      "options": [
+        {
+          "option_text": "17 students are in the class altogether",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 students are in the class altogether",
+          "is_correct": false
+        },
+        {
+          "option_text": "19 students are in the class altogether",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 students are in the class altogether",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Total = Deepak's rank from top + students between + Rekha's rank from bottom = 9 + 4 + 6 = 19. Option B (18) is the most common error — students subtract 1, treating ranks as gaps instead of positions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:48+00:00",
+      "id": "sgk_REAS_RANKING_ORDER_MIXED_00003"
+    },
+    {
+      "stem": "Among 9 candidates shortlisted for a government post interview, one candidate holds exactly the middle rank. How many candidates are ranked below this middle-ranked candidate?",
+      "options": [
+        {
+          "option_text": "3 candidates are ranked below the middle one",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 candidates are ranked below the middle one",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 candidates are ranked below the middle one",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 candidates are ranked below the middle one",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Middle rank in a group of 9 = (9+1)/2 = 5th. Candidates below = 9 − 5 = 4. Option C (5) is wrong — 5 would be the count below only if the candidate were 4th, not 5th.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:48+00:00",
+      "id": "sgk_REAS_RANKING_ORDER_MIXED_00004"
+    },
+    {
+      "stem": "Preethi is ranked 12th from the top and 18th from the bottom in her class. Sohan is ranked 20th from the top in the same class. How many students are ranked between Preethi and Sohan?",
+      "options": [
+        {
+          "option_text": "5 students are ranked between the two of them",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 students are ranked between the two of them",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 students are ranked between the two of them",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 students are ranked between the two of them",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Total students = 12 + 18 − 1 = 29. Preethi is 12th and Sohan is 20th from the top. Students between them = 20 − 12 − 1 = 7. Option D (8) is the classic off-by-one error from forgetting to subtract 1 when counting gaps between two positions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:48+00:00",
+      "id": "sgk_REAS_RANKING_ORDER_MIXED_00005"
+    },
+    {
+      "stem": "In a queue of 50 persons, Aarav stands at the 20th position from the front. He moves 8 places towards the front and then shifts 3 places back towards his original position. What is his new position from the back of the queue?",
+      "options": [
+        {
+          "option_text": "33rd position from the back of the queue",
+          "is_correct": false
+        },
+        {
+          "option_text": "34th position from the back of the queue",
+          "is_correct": false
+        },
+        {
+          "option_text": "35th position from the back of the queue",
+          "is_correct": false
+        },
+        {
+          "option_text": "36th position from the back of the queue",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "New position from front = 20 − 8 + 3 = 15. Position from back = 50 − 15 + 1 = 36. Option A (33) results from forgetting the +1 adjustment and also misapplying the net movement as −11 instead of −5.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:48+00:00",
+      "id": "sgk_REAS_RANKING_ORDER_MIXED_00006"
+    },
+    {
+      "stem": "In a row of 30 children, 14 children stand to the left of Ritu and 9 children stand to the right of Kavya. Assuming Ritu stands to the left of Kavya, how many children stand between Ritu and Kavya?",
+      "options": [
+        {
+          "option_text": "4 children stand between Ritu and Kavya",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 children stand between Ritu and Kavya",
+          "is_correct": true
+        },
+        {
+          "option_text": "6 children stand between Ritu and Kavya",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 children stand between Ritu and Kavya",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Ritu's position from left = 14 + 1 = 15th. Kavya's position from left = 30 − 9 = 21st. Children between = 21 − 15 − 1 = 5. Option C (6) is wrong — it skips the −1 needed to exclude the two persons themselves.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:48+00:00",
+      "id": "sgk_REAS_RANKING_ORDER_MIXED_00007"
+    },
+    {
+      "stem": "In a row of 25 students, Raj stands 11th from the left and Karim stands 17th from the left. Three students originally standing between Raj and Karim leave the row entirely. What is Karim's new position from the right end?",
+      "options": [
+        {
+          "option_text": "7th position from the right end of the row",
+          "is_correct": false
+        },
+        {
+          "option_text": "8th position from the right end of the row",
+          "is_correct": false
+        },
+        {
+          "option_text": "9th position from the right end of the row",
+          "is_correct": true
+        },
+        {
+          "option_text": "11th position from the right end of the row",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "After 3 students leave, total = 25 − 3 = 22. The 3 departed students were all to the left of Karim, so Karim shifts left by 3: new position from left = 17 − 3 = 14th. From right = 22 − 14 + 1 = 9th. Option D (11) is a trap — it uses Raj's original position as the answer, confusing the two persons.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:48+00:00",
+      "id": "sgk_REAS_RANKING_ORDER_MIXED_00008"
+    },
+    {
+      "stem": "In a row of students, Arun is 19th from the left end. Bela stands 4 positions to the right of Arun. The number of students to the right of Bela is exactly one-third the number of students to the left of Arun. How many students are there in the row?",
+      "options": [
+        {
+          "option_text": "25 students are standing in the row",
+          "is_correct": false
+        },
+        {
+          "option_text": "27 students are standing in the row",
+          "is_correct": false
+        },
+        {
+          "option_text": "29 students are standing in the row",
+          "is_correct": true
+        },
+        {
+          "option_text": "31 students are standing in the row",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Students to left of Arun = 19 − 1 = 18. Students to right of Bela = 18 ÷ 3 = 6. Bela's position from left = 19 + 4 = 23rd. Total = 23 + 6 = 29. Option D (31) arises from mistakenly adding 4 twice — once to get Bela's position and again when computing the total.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:48+00:00",
+      "id": "sgk_REAS_RANKING_ORDER_MIXED_00009"
+    }
+  ]
+}

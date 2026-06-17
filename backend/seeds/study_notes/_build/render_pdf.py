@@ -90,8 +90,15 @@ HTML_TEMPLATE = """<!doctype html>
     mermaid.initialize({{
       startOnLoad: true,
       theme: 'neutral',
-      flowchart: {{ htmlLabels: true, nodeSpacing: 28, rankSpacing: 38, curve: 'basis' }},
-      fontSize: 13
+      flowchart: {{
+        htmlLabels: true,
+        nodeSpacing: 18,
+        rankSpacing: 35,
+        curve: 'basis',
+        useMaxWidth: true,
+        padding: 6
+      }},
+      fontSize: 12
     }});
   }}
   // Wait for Mermaid SVG rendering then signal Chrome ready.
@@ -112,7 +119,7 @@ HTML_TEMPLATE = """<!doctype html>
 CSS = textwrap.dedent("""
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-  @page { size: A4; margin: 15mm 14mm 22mm 14mm; }
+  @page { size: A4; margin: 15mm 14mm 18mm 14mm; }
 
   html, body {
     font-family: "Inter", "DejaVu Sans", "Noto Sans", system-ui, sans-serif;
@@ -254,7 +261,13 @@ CSS = textwrap.dedent("""
   /* Nested lists — slightly tighter */
   li > ul, li > ol { margin-top: 2pt; margin-bottom: 1pt; }
   li > ul > li, li > ol > li { margin-bottom: 2pt; }
-  h1 + *, h2 + *, h3 + *, h4 + * { page-break-before: avoid; }
+  /* Avoid orphan headings — but EXCLUDE chapter-summary so big mindmaps
+     can push to a new page without dragging the h1 with them (which
+     would leave blank pages). */
+  h1 + *:not(.chapter-summary):not(.part-divider),
+  h2 + *:not(.chapter-summary),
+  h3 + *:not(.chapter-summary),
+  h4 + *:not(.chapter-summary) { page-break-before: avoid; }
 
   /* ── Plain blockquote (narrative / italic aside) ── */
   blockquote {
@@ -324,7 +337,8 @@ CSS = textwrap.dedent("""
     border-collapse: collapse;
     margin: 8pt 0;
     width: 100%;
-    font-size: 9.5pt;
+    font-size: 8.5pt;
+    line-height: 1.3;
     page-break-inside: auto;
     font-variant-numeric: tabular-nums;
   }
@@ -332,16 +346,17 @@ CSS = textwrap.dedent("""
   table thead { display: table-header-group; }
   table th, table td {
     border: 1px solid #94a3b8;
-    padding: 4.5pt 8pt;
+    padding: 3pt 5pt;
     text-align: left;
     vertical-align: top;
+    word-break: break-word;
   }
   table th {
     background: #dbeafe;
     font-weight: 600;
     color: #1e3a8a;
     letter-spacing: 0.02em;
-    font-size: 9pt;
+    font-size: 8.5pt;
   }
   /* Alternating row tint */
   table tbody tr:nth-child(even) td { background: #f8fafc; }
@@ -510,6 +525,33 @@ CSS = textwrap.dedent("""
   }
   .pitfall strong, blockquote.pitfall strong { color: #b91c1c; }
 
+  /* Exam Shortcut (fuchsia) */
+  .shortcut {
+    background: #fdf4ff;
+    border: 1px solid #d946ef;
+    padding: 22pt 10pt 6pt 10pt;
+    margin: 10pt 0;
+    color: #701a75;
+    position: relative;
+    border-radius: 4pt;
+    page-break-inside: avoid;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  .shortcut::before {
+    content: "⚡ EXAM SHORTCUT";
+    display: block;
+    position: absolute;
+    top: -1px; left: -1px; right: -1px;
+    background: linear-gradient(90deg, #c026d3 0%, #9333ea 100%);
+    color: #ffffff;
+    padding: 3pt 10pt;
+    font-weight: 700;
+    font-size: 8pt;
+    letter-spacing: 0.06em;
+    border-radius: 3pt 3pt 0 0;
+  }
+  .shortcut strong { color: #86198f; font-size: 10pt; }
+
   /* PYQ / Exam Question (blue) */
   .pyq {
     background: #eff6ff;
@@ -527,11 +569,16 @@ CSS = textwrap.dedent("""
   .mermaid { text-align: center; margin: 12pt 0; }
 
   /* ── Chapter Summary tree wrapper ── */
+  /* LR (left-to-right) mermaid layout flows the tree VERTICALLY down the
+     portrait page with horizontal node text — labels stay big and readable
+     while branches stack downward naturally.
+     NOTE: page-break-inside removed — the mermaid SVG is atomic anyway,
+     and forcing avoid was creating blank pages when adjacent summaries
+     and headings combined. */
   .chapter-summary {
     border: 1.5pt solid #7c3aed;
     border-radius: 5pt;
     margin: 14pt 0 6pt 0;
-    page-break-inside: avoid;
   }
   .chapter-summary::before {
     content: "\\25CE  Chapter Summary \\2014  Everything in One View";
@@ -585,6 +632,17 @@ CSS = textwrap.dedent("""
     padding: 6pt 4pt;
     background: #faf5ff;
     margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  /* Cap SVG dimensions so a tall mindmap never exceeds a single page.
+     This forces Chrome to scale it down rather than push to a new page
+     (which was creating blank pages between consecutive summaries). */
+  .chapter-summary .mermaid svg {
+    max-width: 100% !important;
+    max-height: 240mm !important;
+    width: auto !important;
+    height: auto !important;
   }
 
   /* ── Page break controls ── */
@@ -600,7 +658,16 @@ CSS = textwrap.dedent("""
 
 def _strip_pandoc_directives(text: str) -> str:
     # \newpage from pandoc -> CSS page break (break-before avoids phantom blank pages)
-    # Also strip a preceding --- separator to avoid double page breaks
+    # Also strip a preceding --- separator to avoid double page breaks.
+    # SKIP \newpage entirely when it is immediately followed (after optional
+    # h1/h2 heading + blank lines) by a <div class="chapter-summary"> block —
+    # the chapter-summary's tall mindmap will naturally push to a new page,
+    # so forcing a \newpage break above it produces a blank page.
+    text = re.sub(
+        r"(---\s*\n\s*)?\\newpage\s*\n+(#{1,3}\s+[^\n]+\n+)?(?=<div\s+class=\"chapter-summary\")",
+        r"\2",
+        text,
+    )
     text = re.sub(r"---\s*\n\s*\\newpage", '\n<div class="pb"></div>\n', text)
     text = re.sub(r"\\newpage", '\n<div class="pb"></div>\n', text)
     # YAML front-matter
@@ -656,6 +723,7 @@ _MD_DIV_CLASSES = (
     "steps", "method-a", "method-b", "worked", "examtip", "keypoint",
     "mnemonic", "pitfall", "pyq", "intuition", "definition", "formula",
     "chapter-summary", "part-divider", "options", "pyq-answer", "answer-key",
+    "shortcut",
 )
 
 def _inject_markdown_attr(text: str) -> str:
@@ -672,31 +740,73 @@ def _inject_markdown_attr(text: str) -> str:
 def _preprocess_content(text: str) -> str:
     """Pre-markdown transforms: split MCQ options and crammed answer lists."""
 
-    # ── MCQ options crammed on one line ──────────────────────────────────────
-    # e.g. "(a) Inflation (b) Deflation (c) Stagflation (d) Recession"
-    _OPT_LINE = re.compile(
-        r'^([^\n]*)\(a\)([^\n]*)\(b\)([^\n]*)\(c\)([^\n]*)',
+    # ── MCQ options ──────────────────────────────────────────────────────────
+    # Two source layouts both get normalised to a clean exam-style block:
+    #   (A) inline   — "(a) Inflation (b) Deflation (c) Stagflation (d) Recession"
+    #   (B) stacked  — each option on its own source line
+    # Rendering rule (mimics a real OMR paper):
+    #   • short options  (each ≤ 14 chars, all four ≤ 48 total) → ONE line
+    #     e.g.  (a) 5    (b) 10    (c) 15    (d) 20
+    #   • medium options (each ≤ 30 chars, exactly 4 opts)      → 2×2 GRID
+    #     e.g.  (a) Option one     (b) Option two
+    #           (c) Option three   (d) Option four
+    #   • long options   (anything bigger)                      → one PER LINE
+    _SHORT_MAX = 14   # max single-option length for single-line layout
+    _SHORT_TOTAL = 48  # max combined option length for single-line layout
+    _MED_MAX = 30     # max single-option length for 2×2 grid layout
+    _GAP = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"  # spacing between inline options
+    _ROWGAP = "&nbsp;&nbsp;&nbsp;&nbsp;"      # spacing between the 2 grid columns
+
+    def _emit_opts(prefix: str, opts: list[str]) -> str:
+        """opts = ['Nucleus', 'Ribosome', ...] ; render exam-style."""
+        labels = "abcde"
+        clean = [re.sub(r'&nbsp;|\xa0', ' ', o).strip() for o in opts]
+        clean = [c for c in clean if c]
+        if not clean:
+            return prefix
+        labelled = [f"({labels[i]})&nbsp;{c}" for i, c in enumerate(clean)]
+        maxlen = max(len(c) for c in clean)
+        total = sum(len(c) for c in clean)
+        if maxlen <= _SHORT_MAX and total <= _SHORT_TOTAL:
+            # Tier 1 — all on one line
+            block = _GAP.join(labelled)
+        elif maxlen <= _MED_MAX and len(labelled) == 4:
+            # Tier 2 — 2×2 grid (two options per row)
+            block = (labelled[0] + _ROWGAP + labelled[1] + "<br/>"
+                     + labelled[2] + _ROWGAP + labelled[3])
+        else:
+            # Tier 3 — one option per line
+            block = "<br/>".join(labelled)
+        return f"{prefix}<br/>{block}" if prefix else f"<br/>{block}"
+
+    # Layout A — all four options inline on one line (optional stem prefix).
+    _OPT_INLINE = re.compile(
+        r'^([^\n]*?)\(a\)([^\n]*?)\(b\)([^\n]*?)\(c\)([^\n]*?)\(d\)([^\n]*)$',
         re.MULTILINE | re.IGNORECASE,
     )
 
-    def _split_opts(m: re.Match) -> str:
+    def _split_inline(m: re.Match) -> str:
         prefix = m.group(1).strip()
-        rest = m.group(0)[len(m.group(1)):]  # from "(a)" onward
-        parts = re.split(r'\s*\(([a-dA-D])\)\s*', rest)
-        # parts: ['', 'a', 'text_a', 'b', 'text_b', ...]
-        lines = []
-        if prefix:
-            lines.append(prefix)
-        i = 1
-        while i + 1 < len(parts):
-            label = parts[i].lower()
-            content = re.sub(r'&nbsp;|\xa0', ' ', parts[i + 1]).strip()
-            if content:
-                lines.append(f"({label}) {content}")
-            i += 2
-        return "\n".join(lines)
+        opts = [m.group(2), m.group(3), m.group(4), m.group(5)]
+        return _emit_opts(prefix, opts)
 
-    text = _OPT_LINE.sub(_split_opts, text)
+    text = _OPT_INLINE.sub(_split_inline, text)
+
+    # Layout B — four consecutive lines, each starting with (a) (b) (c) (d).
+    _OPT_STACK = re.compile(
+        r'^[ \t]*\(a\)[ \t]*(.+)\n'
+        r'^[ \t]*\(b\)[ \t]*(.+)\n'
+        r'^[ \t]*\(c\)[ \t]*(.+)\n'
+        r'^[ \t]*\(d\)[ \t]*(.+)$',
+        re.MULTILINE | re.IGNORECASE,
+    )
+
+    def _split_stack(m: re.Match) -> str:
+        opts = [m.group(1), m.group(2), m.group(3), m.group(4)]
+        # strip markdown bold around the whole option (kept inside if partial)
+        return _emit_opts("", opts)
+
+    text = _OPT_STACK.sub(_split_stack, text)
 
     # ── Crammed numbered answer lists ────────────────────────────────────────
     # e.g. "Answers: 1. Calcium hypochlorite 2. 3 parts HCl 3. Silver"
@@ -718,6 +828,13 @@ def _preprocess_content(text: str) -> str:
         r'^(\*\*(?:Ans|Answer|Sol|Solution|Correct answer)[.:*]?\*\*[^\n]*)',
         re.MULTILINE | re.IGNORECASE,
     )
+
+    # ── Auto-wrap shortcuts to showcase them elegantly ───────────────────────
+    # Wraps paragraphs starting with "**Shortcut:**", "**Quick way:**", etc.
+    _SHORTCUT_LABEL = re.compile(
+        r'(?m)^(\*\*(?:Shortcut|Formula shortcut|Quick shortcut|Quick way)[\.:*]?\*\*.*(?:\n(?!\n).*)*)',
+    )
+    text = _SHORTCUT_LABEL.sub(r'<div class="shortcut">\n\n\1\n\n</div>', text)
     text = _ANS_LABEL.sub(
         r'<div class="pyq-answer">\n\1\n</div>',
         text,

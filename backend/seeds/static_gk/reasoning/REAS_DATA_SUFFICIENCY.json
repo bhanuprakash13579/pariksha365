@@ -202,6 +202,216 @@
       "generator_tag": "claude-opus-2026-04-21-reas-ds-06",
       "generated_at": "2026-04-21T14:35:00+00:00",
       "id": "sgk_REAS_DATA_SUFFICIENCY_00006"
+    },
+    {
+      "stem": "What is the value of (x + y)? Statement I: x − y = 4. Statement II: x² − y² = 20.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient; Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient; Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient; neither alone is",
+          "is_correct": true
+        },
+        {
+          "option_text": "Either statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Statement I gives x − y = 4 but leaves x + y undetermined (one equation, two unknowns). Statement II: x² − y² = (x + y)(x − y) = 20 — one equation in two compound unknowns, insufficient alone. Together, substitute (x − y) = 4 into (x + y) × 4 = 20, giving x + y = 5. The tempting wrong pick A ignores that a single linear equation with two unknowns cannot uniquely determine a second linear combination of those unknowns.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T03:30:33+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00007"
+    },
+    {
+      "stem": "How many students passed the examination? Statement I: 40% of the students in the class failed. Statement II: 120 students failed the examination.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient; Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient; Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient; neither alone is",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither statement alone nor both together are sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Statement I gives the failure rate (40%) but not the class size, so the absolute count of passing students cannot be found. Statement II gives the number of failures (120) but not the total, so it too is insufficient alone. Together, total students = 120 ÷ 0.40 = 300, and students who passed = 300 − 120 = 180. Choosing D is wrong because combining rate and count does fully determine the answer.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T03:30:33+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00008"
+    },
+    {
+      "stem": "Is quadrilateral PQRS a rhombus? Statement I: The diagonals of PQRS bisect each other at right angles. Statement II: All four sides of PQRS are equal in length.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient; Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient; Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient; neither alone is",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient to answer the question",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Statement I: a quadrilateral whose diagonals bisect each other is a parallelogram; if additionally they meet at right angles, it is a rhombus — sufficient alone. Statement II: all four sides equal is the defining property of a rhombus — sufficient alone. The frequent mistake is choosing C (thinking both properties are jointly needed), but each condition individually and uniquely identifies a rhombus.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T03:30:33+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00009"
+    },
+    {
+      "stem": "What is the speed of the boat in still water? Statement I: The boat covers 48 km downstream in 4 hours. Statement II: The speed of the water current is 3 km/h.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient; Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient; Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient; neither alone is",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither statement alone nor both together are sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Statement I: downstream speed = 48 ÷ 4 = 12 km/h = (boat speed + stream speed) — one equation in two unknowns, insufficient alone. Statement II: stream = 3 km/h, but no travel data to fix the downstream or upstream speed — insufficient alone. Together, boat speed = 12 − 3 = 9 km/h. Choosing A is wrong because a single downstream-speed equation has two unknowns; a second independent relation (stream speed) is essential.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T03:30:33+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00010"
+    },
+    {
+      "stem": "What is the age of the eldest child in a family that has exactly three children? Statement I: The sum of all three children's ages is 36 years. Statement II: The eldest child is twice as old as the youngest, and the middle child is 12 years old.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient; Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient; Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient; neither alone is",
+          "is_correct": true
+        },
+        {
+          "option_text": "Neither statement alone nor both together are sufficient",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Statement I: the total is 36 but the individual ages are unconstrained — infinitely many valid triplets exist. Statement II: gives two relations (eldest = 2 × youngest; middle = 12) but without a total, the system has one degree of freedom and cannot be solved. Together, let youngest = y; then y + 12 + 2y = 36 → 3y = 24 → y = 8, so eldest = 16 years. Choosing D is wrong because the combined system is fully determined.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T03:30:33+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00011"
+    },
+    {
+      "stem": "What is the remainder when the positive integer N is divided by 6? Statement I: When N is divided by 12, the remainder is 5. Statement II: When N is divided by 4, the remainder is 1.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient; Statement II alone is not",
+          "is_correct": true
+        },
+        {
+          "option_text": "Statement II alone is sufficient; Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient; neither alone is",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Statement I: N = 12k + 5. Since 12 is a multiple of 6, N mod 6 = (12k + 5) mod 6 = 0 + 5 = 5 — uniquely determined regardless of k. Sufficient alone. Statement II: N = 4m + 1 yields N = 1 (mod 6 = 1), N = 5 (mod 6 = 5), N = 9 (mod 6 = 3), N = 13 (mod 6 = 1) — the remainder cycles and is not unique. Not sufficient even combined with I. The tempting wrong choice C overlooks that a divisor-12 remainder condition already fixes the divisor-6 remainder because 6 | 12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T03:30:33+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00012"
+    },
+    {
+      "stem": "Is the positive integer M divisible by 12? Statement I: M is divisible by both 4 and 6. Statement II: M is divisible by both 3 and 8.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient; Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient; Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient; neither alone is",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient to answer the question",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Statement I: LCM(4, 6) = 12; if M is divisible by both 4 and 6, it must be divisible by their LCM, which is 12. Sufficient alone. Statement II: LCM(3, 8) = 24; divisibility by 24 implies divisibility by every factor of 24, including 12. Sufficient alone. Both statements independently establish divisibility by 12. The classic error is multiplying 4 × 6 = 24 instead of computing LCM, then wrongly concluding Statement I only proves divisibility by 24 and therefore treating it as insufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T03:30:33+00:00",
+      "id": "sgk_REAS_DATA_SUFFICIENCY_00013"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "subject": "Quant",
+  "subject": "Quantitative Aptitude",
   "topic": "Percentage IV — mixed tiers",
   "topic_code": "QNT_PERCENTAGE_IV_MIXED",
   "description": "Successive percentage change, percentage error, ratio-to-percent conversions",
@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-26-qnt-pct4-07",
       "generated_at": "2026-04-26T20:45:00+00:00",
       "id": "sgk_QNT_PERCENTAGE_IV_MIXED_00007"
+    },
+    {
+      "stem": "A family's monthly income is ₹25,000. They spend 60% on household expenses, 20% on rent, and save the rest. If household expenses rise by 25%, what percentage of the monthly income is now saved?",
+      "options": [
+        {
+          "option_text": "10% of income is now saved after the household expense hike",
+          "is_correct": false
+        },
+        {
+          "option_text": "5% of income is now saved after the household expense hike",
+          "is_correct": true
+        },
+        {
+          "option_text": "15% of income is now saved after the household expense hike",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% of income is now saved after the household expense hike",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Original household spend = 60% × ₹25,000 = ₹15,000; rent = ₹5,000. New household spend = ₹15,000 × 1.25 = ₹18,750. Savings = ₹25,000 − ₹18,750 − ₹5,000 = ₹1,250 = 5% of ₹25,000. Option D (20%) is the original savings rate, before the hike. Option C (15%) ignores that the 25% rise applies to a component already worth 60% of income, producing a much larger absolute cut to savings.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:43:54+00:00",
+      "id": "sgk_QNT_PERCENTAGE_IV_MIXED_00008"
+    },
+    {
+      "stem": "Two candidates contested a local body election. Candidate A polled 42,000 votes and Candidate B polled 18,000 votes. What percentage of the total votes did the losing candidate receive?",
+      "options": [
+        {
+          "option_text": "43% of total votes went to the losing candidate",
+          "is_correct": false
+        },
+        {
+          "option_text": "18% of total votes went to the losing candidate",
+          "is_correct": false
+        },
+        {
+          "option_text": "30% of total votes went to the losing candidate",
+          "is_correct": true
+        },
+        {
+          "option_text": "25% of total votes went to the losing candidate",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Total votes = 42,000 + 18,000 = 60,000. Losing candidate B's share = 18,000 ÷ 60,000 × 100 = 30%. Option A (43%) is the classic trap: it computes 18,000 ÷ 42,000 × 100 ≈ 43%, expressing B's votes as a fraction of A's votes rather than of the total polled. Option B (18%) mistakes the raw-thousands figure directly for a percentage.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:43:54+00:00",
+      "id": "sgk_QNT_PERCENTAGE_IV_MIXED_00009"
+    },
+    {
+      "stem": "A town's population was 40,000 in 2020. It grew by 10% in 2021 and then declined by 5% in 2022. What was the population at the end of 2022?",
+      "options": [
+        {
+          "option_text": "Population of 42,000 at end of 2022 (net 5% growth on original base)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Population of 44,000 at end of 2022 (only 2021 growth counted, 2022 ignored)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Population of 40,000 at end of 2022 (growth and decline treated as cancelling)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Population of 41,800 at end of 2022 (sequential changes on updated base)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. 2021 population = 40,000 × 1.10 = 44,000. 2022 population = 44,000 × 0.95 = 41,800. Option A (42,000) is the most common error — it applies a simple net 5% (= 10 − 5) to the original 40,000, ignoring that the 5% decline acts on the already-grown base of 44,000. The correct multiplier chain is 1.10 × 0.95 = 1.045, so 40,000 × 1.045 = 41,800. Option C incorrectly assumes +10% and −5% cancel to zero.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:43:54+00:00",
+      "id": "sgk_QNT_PERCENTAGE_IV_MIXED_00010"
+    },
+    {
+      "stem": "In a competitive exam, 40% of candidates cleared the written test. Of those, 75% cleared the interview. If 1,500 candidates were ultimately selected, how many candidates appeared for the written test originally?",
+      "options": [
+        {
+          "option_text": "3,750 candidates appeared for the written test originally",
+          "is_correct": false
+        },
+        {
+          "option_text": "5,000 candidates appeared for the written test originally",
+          "is_correct": true
+        },
+        {
+          "option_text": "2,000 candidates appeared for the written test originally",
+          "is_correct": false
+        },
+        {
+          "option_text": "6,000 candidates appeared for the written test originally",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Combined selection rate = 40% × 75% = 30%. So 30% of total = 1,500 ⟹ total = 1,500 ÷ 0.30 = 5,000. Option A (3,750) is the most tempting error: dividing 1,500 only by 40% ignores the interview filter entirely. Option C (2,000) treats the post-written-test pool (1,500 ÷ 0.75 = 2,000) as the original cohort. Option D (6,000) divides by 25%, using the interview failure rate instead of the pass rate.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:43:54+00:00",
+      "id": "sgk_QNT_PERCENTAGE_IV_MIXED_00011"
+    },
+    {
+      "stem": "The length of a rectangle is increased by 20% and its width is simultaneously decreased by 20%. What is the net percentage change in the area of the rectangle?",
+      "options": [
+        {
+          "option_text": "4% decrease in area (net result of 20% increase in length and 20% decrease in width)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Zero net change in area (equal-magnitude changes offset each other completely)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4% increase in area (length gain percentage exceeds the width loss effect)",
+          "is_correct": false
+        },
+        {
+          "option_text": "2% decrease in area (arithmetic average of the two opposite percentage changes)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. New area = (L × 1.20) × (W × 0.80) = 0.96LW, a 4% decrease. General rule: when one dimension changes by +x% and the other by −x%, the area changes by −x²/100 % = −(400/100)% = −4%. Option B (zero change) is the intuitive trap — equal magnitudes cancel in a single variable, but area is a product; the 20% rise and 20% fall compound to produce a net loss, not a wash. Option C wrongly reverses the direction of the net change.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:43:54+00:00",
+      "id": "sgk_QNT_PERCENTAGE_IV_MIXED_00012"
+    },
+    {
+      "stem": "In a mixture of milk and water, milk constitutes 80% of the total. When 15 litres of water is added, the milk percentage drops to 60%. How many litres of milk were originally present in the mixture?",
+      "options": [
+        {
+          "option_text": "45 litres of milk were in the original mixture",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 litres of milk were in the original mixture",
+          "is_correct": true
+        },
+        {
+          "option_text": "60 litres of milk were in the original mixture",
+          "is_correct": false
+        },
+        {
+          "option_text": "27 litres of milk were in the original mixture",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let original total = x litres; milk = 0.8x. After adding 15 L water: 0.8x / (x + 15) = 0.60 ⟹ 0.8x = 0.6x + 9 ⟹ 0.2x = 9 ⟹ x = 45 L total. Milk = 0.8 × 45 = 36 litres. Option A (45 L) confuses the total original volume with the milk volume. Option C (60 L) arises from the erroneous equation 0.8x − 15 = 0.6x — wrongly treating the added water as diluting the milk directly — which gives x = 75 and milk = 60. Option D (27 L) applies the post-addition percentage (60%) instead of the original (80%) to x = 45.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:43:54+00:00",
+      "id": "sgk_QNT_PERCENTAGE_IV_MIXED_00013"
+    },
+    {
+      "stem": "Rajan spends 30% of his salary on rent, 25% of the remaining amount on food, and 20% of what is then left on transport. He saves ₹10,500 per month. What is his monthly salary?",
+      "options": [
+        {
+          "option_text": "₹42,000 per month as the total monthly salary",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹20,000 per month as the total monthly salary",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹25,000 per month as the total monthly salary",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹15,000 per month as the total monthly salary",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. After rent (30%), remainder = 70% of S. After food (25% of remainder), remainder = 75% × 70% = 52.5% of S. After transport (20% of remainder), savings = 80% × 52.5% = 42% of S. So 0.42S = ₹10,500 ⟹ S = ₹25,000. Option A (₹42,000) is the most seductive error: treating all three rates as applying to the gross salary gives 30 + 25 + 20 = 75% spent, savings = 25%, and 10,500 ÷ 0.25 = ₹42,000 — but the stem says each percentage applies to the remainder, not the original. Option B (₹20,000) results from stopping the chain after rent and food only: 10,500 ÷ 0.525 = ₹20,000.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:43:54+00:00",
+      "id": "sgk_QNT_PERCENTAGE_IV_MIXED_00014"
     }
   ]
 }

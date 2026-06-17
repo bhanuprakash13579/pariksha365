@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "subject": "Quant",
+  "subject": "Quantitative Aptitude",
   "topic": "Partnership & pipes-cisterns — mixed tiers",
   "topic_code": "QNT_PARTNERSHIP_PIPES_MIXED",
   "description": "Investment-time proportion, tap filling problems",
@@ -243,6 +243,216 @@
       "generator_tag": "claude-opus-2026-04-22-qnt-prt-07",
       "generated_at": "2026-04-22T19:00:00+00:00",
       "id": "sgk_QNT_PARTNERSHIP_PIPES_MIXED_00007"
+    },
+    {
+      "stem": "A, B, and C invest in a business in the ratio 2 : 3 : 5. If the annual profit is ₹40,000, by how much does B's share exceed A's share?",
+      "options": [
+        {
+          "option_text": "₹4,000 more in favour of B than A",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹8,000 more in favour of B than A",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹6,000 more in favour of B than A",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,000 more in favour of B than A",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "Total parts = 2+3+5 = 10. A's share = 2/10 × 40,000 = ₹8,000; B's share = 3/10 × 40,000 = ₹12,000. Excess = ₹12,000 − ₹8,000 = ₹4,000. Option B (₹8,000) is the most tempting error: using denominator 5 (only A+B parts, ignoring C) gives 1/5 × 40,000 = ₹8,000.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:53+00:00",
+      "id": "sgk_QNT_PARTNERSHIP_PIPES_MIXED_00008"
+    },
+    {
+      "stem": "A pipe fills a tank in 15 hours. Because of a leak at the bottom, the filling time rises to 20 hours. In how many hours will the leak alone empty the full tank?",
+      "options": [
+        {
+          "option_text": "5 hours — by subtracting fill times directly",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 hours — using combined fill-rate formula wrongly",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 hours — the correct drainage rate is 1/60 per hour",
+          "is_correct": true
+        },
+        {
+          "option_text": "30 hours — halving the extra delay observed in filling",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Pipe rate = 1/15; net fill rate with leak = 1/20. Leak rate = 1/15 − 1/20 = 4/60 − 3/60 = 1/60 per hour, so the leak empties the full tank in 60 hours. Option A (5 h) is the classic error of subtracting times (20 − 15 = 5) instead of subtracting rates; Option B arises from misapplying the combined-pipes formula 1/(1/15 + 1/20) ≈ 8.6 h.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:53+00:00",
+      "id": "sgk_QNT_PARTNERSHIP_PIPES_MIXED_00009"
+    },
+    {
+      "stem": "A and B invest ₹24,000 and ₹36,000 respectively. A, the working partner, receives 20% of annual profit as commission; the balance is then split in proportion to capital. If annual profit is ₹25,000, what is B's total earning?",
+      "options": [
+        {
+          "option_text": "₹15,000 — three-fifths of gross profit ignoring commission",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹12,000 — correct share after deducting A's commission",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹8,000 — applying A's lower capital ratio (2/5) to B",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹10,000 — computing B's share as 2/5 of full profit",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "A's commission = 20% × 25,000 = ₹5,000. Remaining = ₹20,000. Capital ratio A:B = 24,000:36,000 = 2:3. B's share = 3/5 × 20,000 = ₹12,000. The most tempting wrong answer (₹15,000) skips the commission step entirely, applying the 3/5 ratio to the full ₹25,000. Option C (₹8,000) swaps the ratios, mistakenly using 2/5 for B.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:53+00:00",
+      "id": "sgk_QNT_PARTNERSHIP_PIPES_MIXED_00010"
+    },
+    {
+      "stem": "Pipes X and Y together fill a tank in 12 minutes; X alone fills it in 20 minutes. X starts first and Y is opened 5 minutes later. How many minutes from the start does the tank take to fill completely?",
+      "options": [
+        {
+          "option_text": "12 minutes — same as the combined fill duration",
+          "is_correct": false
+        },
+        {
+          "option_text": "14 minutes — solving the fractional fill equation correctly",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 minutes — averaging X-alone and combined fill times",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 minutes — adding 5-minute delay directly to combined time",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Y alone: 1/12 − 1/20 = 1/30, so Y fills in 30 min. Let T = total time. X works for T min, Y for (T−5) min: T/20 + (T−5)/30 = 1. Multiply by 60: 3T + 2(T−5) = 60 → 5T = 70 → T = 14 min. Verify: 14/20 + 9/30 = 7/10 + 3/10 = 1 ✓. Option D (16 min) wrongly adds 5 to the combined time 11 without accounting for X's solo contribution during those 5 minutes.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:53+00:00",
+      "id": "sgk_QNT_PARTNERSHIP_PIPES_MIXED_00011"
+    },
+    {
+      "stem": "P, Q, and R start a business with ₹8,000, ₹12,000, and ₹16,000. After 6 months, P adds ₹4,000 and Q withdraws ₹4,000; R's investment remains unchanged. What is the correct profit-sharing ratio at year end?",
+      "options": [
+        {
+          "option_text": "2 : 3 : 4 — ratio based on initial capital amounts only",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 : 5 : 8 — weighted correctly by capital and time held",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 : 3 : 4 — applying the mid-year changes only partially",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 1 : 2 — treating P and Q as equal, R double that",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "P: 8,000×6 + 12,000×6 = 48,000 + 72,000 = 1,20,000. Q: 12,000×6 + 8,000×6 = 72,000 + 48,000 = 1,20,000. R: 16,000×12 = 1,92,000. Ratio = 1,20,000 : 1,20,000 : 1,92,000 = 5 : 5 : 8. Option A (2:3:4) is the most common error — it uses only opening capitals and ignores the mid-year changes entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:53+00:00",
+      "id": "sgk_QNT_PARTNERSHIP_PIPES_MIXED_00012"
+    },
+    {
+      "stem": "Pipe A fills a tank in 9 hours and pipe B fills it in 12 hours. Starting with A, the pipes operate alternately for exactly 1 hour each. How long will the tank take to fill completely?",
+      "options": [
+        {
+          "option_text": "10 hours 15 minutes — A finishes the last fraction early",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 hours 20 minutes — assuming B fills the last fraction",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 hours 0 minutes — rounding each partial cycle upward",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 hours 50 minutes — using simple average rate of A and B",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Each 2-hour cycle fills 1/9 + 1/12 = 7/36. After 4 cycles (8 h): 28/36 filled. Hour 9 (A): +4/36 → 32/36. Hour 10 (B): +3/36 → 35/36. Remaining = 1/36. Hour 11 is A's turn (odd hour); A fills at 4/36 per hour, so time needed = (1/36) ÷ (4/36) = 1/4 h = 15 min. Total = 10 h 15 min. Option B (20 min) arises from assuming it is B's turn in hour 11 — if B were filling, (1/36)÷(3/36) = 1/3 h = 20 min — but hour 11 belongs to A.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:53+00:00",
+      "id": "sgk_QNT_PARTNERSHIP_PIPES_MIXED_00013"
+    },
+    {
+      "stem": "A and B invest ₹60,000 and ₹40,000 in a partnership. Each receives 12% per annum interest on capital first; the remaining profit is split in ratio 2 : 3 (A : B). If the profit before interest is ₹35,000, find B's total earnings.",
+      "options": [
+        {
+          "option_text": "₹21,000 — applying ratio 3/5 directly to the gross profit",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹18,600 — correct: capital interest plus B's profit-share",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹14,000 — mistakenly applying A's ratio (2/5) to B's share",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹19,000 — using 10% interest rate instead of the agreed 12%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Total interest = 12% × 1,00,000 = ₹12,000. Remaining = 35,000 − 12,000 = ₹23,000. B's interest = 12% × 40,000 = ₹4,800. B's profit-share = 3/5 × 23,000 = ₹13,800. B's total = 4,800 + 13,800 = ₹18,600. Option A (₹21,000) is the most tempting trap: applying 3/5 directly to ₹35,000 skips the interest deduction step. Option D: using 10% gives B ₹4,000 + 3/5 × 25,000 = ₹19,000 — plausible if the candidate recalls a round rate from memory.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:53+00:00",
+      "id": "sgk_QNT_PARTNERSHIP_PIPES_MIXED_00014"
     }
   ]
 }

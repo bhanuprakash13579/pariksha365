@@ -1,662 +1,668 @@
-[
-  {
-    "id": "sgk_QNT_DI_CASELET_00006",
-    "stem": "CASELET: A school has 800 students. 55% are boys. 40% of boys and 30% of girls play cricket. How many students in total play cricket?",
-    "options": [
-      {
-        "option_text": "264",
-        "is_correct": false
-      },
-      {
-        "option_text": "284",
-        "is_correct": true
-      },
-      {
-        "option_text": "296",
-        "is_correct": false
-      },
-      {
-        "option_text": "320",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Boys = 55% × 800 = 440; Girls = 360. Cricket (boys) = 40% × 440 = 176. Cricket (girls) = 30% × 360 = 108. Total = 176 + 108 = 284. Trap 320: 40% of all 800. Trap 296: forgetting girls who play cricket.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00007",
-    "stem": "CASELET: A factory produces 2,400 units/day. Machine A produces 45% and Machine B produces the rest. On a specific day Machine A works at 80% efficiency and Machine B at 110% efficiency. What is that day's total production?",
-    "options": [
-      {
-        "option_text": "2,316 units",
-        "is_correct": true
-      },
-      {
-        "option_text": "2,352 units",
-        "is_correct": false
-      },
-      {
-        "option_text": "2,376 units",
-        "is_correct": false
-      },
-      {
-        "option_text": "2,400 units",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Normal A = 45% × 2400 = 1080; Normal B = 1320. Adjusted A = 1080 × 0.80 = 864. Adjusted B = 1320 × 1.10 = 1452. Total = 864 + 1452 = 2,316. Trap 2,400: thinking changes cancel (they don't — A falls more than B rises because A's base is smaller).",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00008",
-    "stem": "CASELET: In a village of 3,000 households, 60% own a TV. Of TV-owning households, 35% also own a refrigerator. How many households own BOTH a TV and a refrigerator?",
-    "options": [
-      {
-        "option_text": "540",
-        "is_correct": false
-      },
-      {
-        "option_text": "630",
-        "is_correct": true
-      },
-      {
-        "option_text": "720",
-        "is_correct": false
-      },
-      {
-        "option_text": "1,050",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "TV households = 60% × 3000 = 1800. Both = 35% × 1800 = 630. Trap 1,050: 35% of all 3000 (wrong base). Trap 720: 40% of 1800.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00009",
-    "stem": "CASELET: A company employs 500 workers — 60% permanent (₹18,000/month each) and 40% contractual (₹11,000/month each). What is the total monthly wage bill?",
-    "options": [
-      {
-        "option_text": "₹72,00,000",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹74,00,000",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹76,00,000",
-        "is_correct": true
-      },
-      {
-        "option_text": "₹79,00,000",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Permanent = 300 × ₹18,000 = ₹54,00,000. Contractual = 200 × ₹11,000 = ₹22,00,000. Total = ₹76,00,000. Trap ₹72L: applying ₹18,000 to all 500 × 0.8 (wrong). Trap ₹74L: using ₹12,000 for permanent workers.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00010",
-    "stem": "CASELET: A, B, C invest ₹12,000, ₹16,000 and ₹20,000 respectively in a business for 1 year. Total profit = ₹9,600. What is B's share of profit?",
-    "options": [
-      {
-        "option_text": "₹2,400",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹3,200",
-        "is_correct": true
-      },
-      {
-        "option_text": "₹3,600",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹4,000",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Ratio = 12:16:20 = 3:4:5; total parts = 12. B's share = (4/12) × 9600 = ₹3,200. A gets ₹2,400; C gets ₹4,000. Trap ₹3,600: dividing equally (9600/3).",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00011",
-    "stem": "CASELET: A train covers 400 km to city Q in 5 hours at 80 km/h. It returns at 60 km/h. What is the average speed for the entire round trip?",
-    "options": [
-      {
-        "option_text": "70.00 km/h",
-        "is_correct": false
-      },
-      {
-        "option_text": "68.57 km/h",
-        "is_correct": true
-      },
-      {
-        "option_text": "72.00 km/h",
-        "is_correct": false
-      },
-      {
-        "option_text": "66.67 km/h",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Total distance = 800 km. Time forward = 5 h; time return = 400/60 = 20/3 h. Total time = 5 + 20/3 = 35/3 h. Avg speed = 800 ÷ (35/3) = 2400/35 ≈ 68.57 km/h. Classic trap: simple average (80+60)/2 = 70 km/h ignores that more time is spent at the slower speed.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00012",
-    "stem": "CASELET: A sum of ₹12,000 is lent partly at 8% p.a. and the rest at 12% p.a. simple interest. If the total interest after 2 years is ₹2,400, how much was lent at 8%?",
-    "options": [
-      {
-        "option_text": "₹4,000",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹5,000",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹6,000",
-        "is_correct": true
-      },
-      {
-        "option_text": "₹8,000",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Let x = amount at 8%. Then (12000−x) at 12%. SI = x×8×2/100 + (12000−x)×12×2/100 = 2400. Simplify: 0.16x + 2880 − 0.24x = 2400. −0.08x = −480. x = ₹6,000. Verify: 6000 at 8% for 2y = ₹960; 6000 at 12% for 2y = ₹1440; total = ₹2400. ✓",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00013",
-    "stem": "CASELET: Meena's age to Seema's age is 4:5. After 8 years the ratio becomes 6:7. What is Meena's present age?",
-    "options": [
-      {
-        "option_text": "12 years",
-        "is_correct": false
-      },
-      {
-        "option_text": "16 years",
-        "is_correct": true
-      },
-      {
-        "option_text": "20 years",
-        "is_correct": false
-      },
-      {
-        "option_text": "24 years",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Let Meena = 4k, Seema = 5k. After 8 years: (4k+8)/(5k+8) = 6/7. Cross-multiply: 28k+56 = 30k+48 ⟹ 2k = 8 ⟹ k = 4. Meena = 16, Seema = 20. Verify: 24/28 = 6/7. ✓",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00014",
-    "stem": "CASELET: Class average score of 30 students is 68. Five new students join and the average rises to 70. What is the average score of the 5 new students?",
-    "options": [
-      {
-        "option_text": "76",
-        "is_correct": false
-      },
-      {
-        "option_text": "78",
-        "is_correct": false
-      },
-      {
-        "option_text": "80",
-        "is_correct": false
-      },
-      {
-        "option_text": "82",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Original total = 30 × 68 = 2,040. New total (35 students) = 35 × 70 = 2,450. Sum of 5 new students = 2450 − 2040 = 410. Average = 410/5 = 82. Trap 78: using shortcut (70−68) × 6 = 12 added to 70 = 82, but wrong if using ratio wrong.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00015",
-    "stem": "CASELET: A cistern has inlet pipes P (fills in 10 h) and Q (fills in 15 h), and drain R (empties in 9 h). All three are opened together when the cistern is 1/4 full. In how many hours will the cistern be completely full?",
-    "options": [
-      {
-        "option_text": "9.0 hours",
-        "is_correct": false
-      },
-      {
-        "option_text": "11.25 hours",
-        "is_correct": false
-      },
-      {
-        "option_text": "13.5 hours",
-        "is_correct": true
-      },
-      {
-        "option_text": "18.0 hours",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "HARD",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Net fill rate = 1/10 + 1/15 − 1/9. LCM(10,15,9) = 90. = 9/90 + 6/90 − 10/90 = 5/90 = 1/18 per hour. Remaining = 3/4. Time = (3/4) ÷ (1/18) = (3/4) × 18 = 13.5 hours. Note: net rate is positive (1/18), so tank does fill. Trap 18 h: forgetting the cistern starts 1/4 full.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00016",
-    "stem": "CASELET: In a survey of 800 people, 45% read newspapers, 30% read magazines, and 15% read both. How many read NEITHER newspapers nor magazines?",
-    "options": [
-      {
-        "option_text": "240",
-        "is_correct": false
-      },
-      {
-        "option_text": "280",
-        "is_correct": false
-      },
-      {
-        "option_text": "320",
-        "is_correct": true
-      },
-      {
-        "option_text": "360",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "By inclusion-exclusion: read at least one = 45 + 30 − 15 = 60%. Neither = 100 − 60 = 40% = 40% × 800 = 320. Trap 240: 30% × 800 (only magazine readers). Trap 280: forgetting to subtract the intersection.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00017",
-    "stem": "CASELET: A boat goes 36 km upstream in 4 hours and 48 km downstream in 4 hours. What is the speed of the current?",
-    "options": [
-      {
-        "option_text": "1.5 km/h",
-        "is_correct": true
-      },
-      {
-        "option_text": "3.0 km/h",
-        "is_correct": false
-      },
-      {
-        "option_text": "4.5 km/h",
-        "is_correct": false
-      },
-      {
-        "option_text": "10.5 km/h",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Upstream speed = 36/4 = 9 km/h. Downstream speed = 48/4 = 12 km/h. Current speed = (downstream − upstream)/2 = (12−9)/2 = 1.5 km/h. Trap 3 km/h: forgetting to halve. Trap 10.5: (9+12)/2 = boat speed, not current.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00018",
-    "stem": "CASELET: A salesperson earns ₹12,000/month base pay plus 5% commission on sales above ₹1,00,000. In April, total sales = ₹2,40,000. What was the total earning?",
-    "options": [
-      {
-        "option_text": "₹17,000",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹18,000",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹19,000",
-        "is_correct": true
-      },
-      {
-        "option_text": "₹24,000",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Commission base = 2,40,000 − 1,00,000 = ₹1,40,000. Commission = 5% × 1,40,000 = ₹7,000. Total = ₹12,000 + ₹7,000 = ₹19,000. Trap ₹24,000: 5% on total sales (₹12,000 commission) + base = ₹24,000 (wrong — commission is on excess only). Trap ₹18,000: 5% of ₹1,20,000 excess (wrong threshold).",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00019",
-    "stem": "CASELET: A car was purchased for ₹5,00,000 and depreciates at 20% per year. What is its value after 3 years?",
-    "options": [
-      {
-        "option_text": "₹2,00,000",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹2,56,000",
-        "is_correct": true
-      },
-      {
-        "option_text": "₹3,00,000",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹3,20,000",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Value = 5,00,000 × (1 − 0.20)³ = 5,00,000 × (0.8)³ = 5,00,000 × 0.512 = ₹2,56,000. Trap ₹2,00,000: simple 60% depreciation (20%×3) applied linearly = 5L×0.40 = ₹2L. Trap ₹3,20,000: only 2 years applied (5L×0.64).",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00020",
-    "stem": "CASELET: In an exam, 60% of students passed in English and 70% passed in Maths. 20% failed in both subjects. What percentage passed in BOTH subjects?",
-    "options": [
-      {
-        "option_text": "30%",
-        "is_correct": false
-      },
-      {
-        "option_text": "42%",
-        "is_correct": false
-      },
-      {
-        "option_text": "50%",
-        "is_correct": true
-      },
-      {
-        "option_text": "55%",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "20% failed both → 80% passed at least one. By inclusion-exclusion: P(E∪M) = P(E) + P(M) − P(E∩M). 80 = 60 + 70 − P(both). P(both) = 50%. Trap 30%: 100−60−70+30 (wrong sign). Trap 42%: 60%×70% (independent events assumption).",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00021",
-    "stem": "CASELET: A shopkeeper buys 200 kg of rice at ₹40/kg and 150 kg at ₹48/kg, mixes them, and sells the mixture at ₹50/kg. What is his total profit?",
-    "options": [
-      {
-        "option_text": "₹1,800",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹2,100",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹2,300",
-        "is_correct": true
-      },
-      {
-        "option_text": "₹2,500",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Cost = 200×40 + 150×48 = 8,000 + 7,200 = ₹15,200. Total kg = 350. Revenue = 350×50 = ₹17,500. Profit = 17,500 − 15,200 = ₹2,300. Trap ₹1,800: using average cost ₹44/kg and profit margin wrong. Trap ₹2,500: selling all at ₹50 and using wrong CP.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00022",
-    "stem": "CASELET: A bag has 4 red, 5 blue, and 6 green balls. Two balls are drawn randomly without replacement. What is the probability that the two balls are of DIFFERENT colours?",
-    "options": [
-      {
-        "option_text": "62/105",
-        "is_correct": false
-      },
-      {
-        "option_text": "74/105",
-        "is_correct": true
-      },
-      {
-        "option_text": "31/105",
-        "is_correct": false
-      },
-      {
-        "option_text": "4/5",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "HARD",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Total = 15 balls. C(15,2) = 105. Same colour pairs: RR = C(4,2)=6; BB = C(5,2)=10; GG = C(6,2)=15; total same = 31. Different = 105−31 = 74. P = 74/105. Trap 31/105: probability of same colour (not different). Trap 62/105: doubling same-colour count.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00023",
-    "stem": "CASELET: Two mixtures are combined in equal volumes. Mixture 1 has milk:water = 7:3. Mixture 2 has milk:water = 3:2. What is the milk:water ratio in the final mixture?",
-    "options": [
-      {
-        "option_text": "3:2",
-        "is_correct": false
-      },
-      {
-        "option_text": "13:7",
-        "is_correct": true
-      },
-      {
-        "option_text": "5:3",
-        "is_correct": false
-      },
-      {
-        "option_text": "61:39",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "HARD",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Take 10 units of each. Mixture 1 (10 units): milk = 7, water = 3. Mixture 2 (10 units): milk = (3/5)×10 = 6, water = 4. Combined: milk = 7+6 = 13, water = 3+4 = 7. Ratio = 13:7. Trap 61:39: miscomputing fractions by not equalising volumes first.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00024",
-    "stem": "CASELET: A hostel serves lunch to 480 students. On a day when 30 students are absent, the same total budget allows each remaining student to receive ₹8 extra food allowance. What is the original daily food budget of the hostel?",
-    "options": [
-      {
-        "option_text": "₹54,000",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹57,600",
-        "is_correct": true
-      },
-      {
-        "option_text": "₹60,000",
-        "is_correct": false
-      },
-      {
-        "option_text": "₹62,400",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "HARD",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Let per-student food cost = x. Budget B = 480x. With 450 students: B/450 = x + 8. So 480x/450 = x + 8. 480x = 450x + 3600. 30x = 3600. x = ₹120. Budget = 480 × 120 = ₹57,600. Trap ₹54,000: 450×120 (wrong base for budget). Trap ₹60,000: forgetting the ₹8 extra means per-head cost rose.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_DI_CASELET_00025",
-    "stem": "CASELET: A trader marks up goods by 40% and gives a 25% discount. On a sale of ₹84,000 after discount, what was his profit percentage over cost?",
-    "options": [
-      {
-        "option_text": "5%",
-        "is_correct": true
-      },
-      {
-        "option_text": "10%",
-        "is_correct": false
-      },
-      {
-        "option_text": "15%",
-        "is_correct": false
-      },
-      {
-        "option_text": "12%",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "subject": "Quantitative Aptitude",
-    "topic": "Data Interpretation — text caselet (Banking Mains)",
-    "topic_code": "QA_DI",
-    "difficulty": "HARD",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Let CP = 100. MP = 140. SP after 25% discount = 140 × 0.75 = 105. Profit% = 5%. The actual sale amount ₹84,000 is extra info (a classic examiner misdirection). Students who solve for CP from ₹84,000 waste time — profit% is constant regardless of scale.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
-    "generated_at": "2026-05-21T07:30:00+00:00"
-  }
-]
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Di Caselet",
+  "topic_code": "QNT_DI_CASELET_II_MIXED",
+  "questions": [
+    {
+      "id": "sgk_QNT_DI_CASELET_00006",
+      "stem": "CASELET: A school has 800 students. 55% are boys. 40% of boys and 30% of girls play cricket. How many students in total play cricket?",
+      "options": [
+        {
+          "option_text": "264",
+          "is_correct": false
+        },
+        {
+          "option_text": "284",
+          "is_correct": true
+        },
+        {
+          "option_text": "296",
+          "is_correct": false
+        },
+        {
+          "option_text": "320",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Boys = 55% × 800 = 440; Girls = 360. Cricket (boys) = 40% × 440 = 176. Cricket (girls) = 30% × 360 = 108. Total = 176 + 108 = 284. Trap 320: 40% of all 800. Trap 296: forgetting girls who play cricket.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00007",
+      "stem": "CASELET: A factory produces 2,400 units/day. Machine A produces 45% and Machine B produces the rest. On a specific day Machine A works at 80% efficiency and Machine B at 110% efficiency. What is that day's total production?",
+      "options": [
+        {
+          "option_text": "2,316 units",
+          "is_correct": true
+        },
+        {
+          "option_text": "2,352 units",
+          "is_correct": false
+        },
+        {
+          "option_text": "2,376 units",
+          "is_correct": false
+        },
+        {
+          "option_text": "2,400 units",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Normal A = 45% × 2400 = 1080; Normal B = 1320. Adjusted A = 1080 × 0.80 = 864. Adjusted B = 1320 × 1.10 = 1452. Total = 864 + 1452 = 2,316. Trap 2,400: thinking changes cancel (they don't — A falls more than B rises because A's base is smaller).",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00008",
+      "stem": "CASELET: In a village of 3,000 households, 60% own a TV. Of TV-owning households, 35% also own a refrigerator. How many households own BOTH a TV and a refrigerator?",
+      "options": [
+        {
+          "option_text": "540",
+          "is_correct": false
+        },
+        {
+          "option_text": "630",
+          "is_correct": true
+        },
+        {
+          "option_text": "720",
+          "is_correct": false
+        },
+        {
+          "option_text": "1,050",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "TV households = 60% × 3000 = 1800. Both = 35% × 1800 = 630. Trap 1,050: 35% of all 3000 (wrong base). Trap 720: 40% of 1800.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00009",
+      "stem": "CASELET: A company employs 500 workers — 60% permanent (₹18,000/month each) and 40% contractual (₹11,000/month each). What is the total monthly wage bill?",
+      "options": [
+        {
+          "option_text": "₹72,00,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹74,00,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹76,00,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹79,00,000",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Permanent = 300 × ₹18,000 = ₹54,00,000. Contractual = 200 × ₹11,000 = ₹22,00,000. Total = ₹76,00,000. Trap ₹72L: applying ₹18,000 to all 500 × 0.8 (wrong). Trap ₹74L: using ₹12,000 for permanent workers.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00010",
+      "stem": "CASELET: A, B, C invest ₹12,000, ₹16,000 and ₹20,000 respectively in a business for 1 year. Total profit = ₹9,600. What is B's share of profit?",
+      "options": [
+        {
+          "option_text": "₹2,400",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹3,200",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹3,600",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹4,000",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Ratio = 12:16:20 = 3:4:5; total parts = 12. B's share = (4/12) × 9600 = ₹3,200. A gets ₹2,400; C gets ₹4,000. Trap ₹3,600: dividing equally (9600/3).",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00011",
+      "stem": "CASELET: A train covers 400 km to city Q in 5 hours at 80 km/h. It returns at 60 km/h. What is the average speed for the entire round trip?",
+      "options": [
+        {
+          "option_text": "70.00 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "68.57 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "72.00 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "66.67 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Total distance = 800 km. Time forward = 5 h; time return = 400/60 = 20/3 h. Total time = 5 + 20/3 = 35/3 h. Avg speed = 800 ÷ (35/3) = 2400/35 ≈ 68.57 km/h. Classic trap: simple average (80+60)/2 = 70 km/h ignores that more time is spent at the slower speed.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00012",
+      "stem": "CASELET: A sum of ₹12,000 is lent partly at 8% p.a. and the rest at 12% p.a. simple interest. If the total interest after 2 years is ₹2,400, how much was lent at 8%?",
+      "options": [
+        {
+          "option_text": "₹4,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹5,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹6,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹8,000",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Let x = amount at 8%. Then (12000−x) at 12%. SI = x×8×2/100 + (12000−x)×12×2/100 = 2400. Simplify: 0.16x + 2880 − 0.24x = 2400. −0.08x = −480. x = ₹6,000. Verify: 6000 at 8% for 2y = ₹960; 6000 at 12% for 2y = ₹1440; total = ₹2400. ✓",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00013",
+      "stem": "CASELET: Meena's age to Seema's age is 4:5. After 8 years the ratio becomes 6:7. What is Meena's present age?",
+      "options": [
+        {
+          "option_text": "12 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 years",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 years",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Let Meena = 4k, Seema = 5k. After 8 years: (4k+8)/(5k+8) = 6/7. Cross-multiply: 28k+56 = 30k+48 ⟹ 2k = 8 ⟹ k = 4. Meena = 16, Seema = 20. Verify: 24/28 = 6/7. ✓",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00014",
+      "stem": "CASELET: Class average score of 30 students is 68. Five new students join and the average rises to 70. What is the average score of the 5 new students?",
+      "options": [
+        {
+          "option_text": "76",
+          "is_correct": false
+        },
+        {
+          "option_text": "78",
+          "is_correct": false
+        },
+        {
+          "option_text": "80",
+          "is_correct": false
+        },
+        {
+          "option_text": "82",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Original total = 30 × 68 = 2,040. New total (35 students) = 35 × 70 = 2,450. Sum of 5 new students = 2450 − 2040 = 410. Average = 410/5 = 82. Trap 78: using shortcut (70−68) × 6 = 12 added to 70 = 82, but wrong if using ratio wrong.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00015",
+      "stem": "CASELET: A cistern has inlet pipes P (fills in 10 h) and Q (fills in 15 h), and drain R (empties in 9 h). All three are opened together when the cistern is 1/4 full. In how many hours will the cistern be completely full?",
+      "options": [
+        {
+          "option_text": "9.0 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "11.25 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "13.5 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "18.0 hours",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Net fill rate = 1/10 + 1/15 − 1/9. LCM(10,15,9) = 90. = 9/90 + 6/90 − 10/90 = 5/90 = 1/18 per hour. Remaining = 3/4. Time = (3/4) ÷ (1/18) = (3/4) × 18 = 13.5 hours. Note: net rate is positive (1/18), so tank does fill. Trap 18 h: forgetting the cistern starts 1/4 full.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00016",
+      "stem": "CASELET: In a survey of 800 people, 45% read newspapers, 30% read magazines, and 15% read both. How many read NEITHER newspapers nor magazines?",
+      "options": [
+        {
+          "option_text": "240",
+          "is_correct": false
+        },
+        {
+          "option_text": "280",
+          "is_correct": false
+        },
+        {
+          "option_text": "320",
+          "is_correct": true
+        },
+        {
+          "option_text": "360",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "By inclusion-exclusion: read at least one = 45 + 30 − 15 = 60%. Neither = 100 − 60 = 40% = 40% × 800 = 320. Trap 240: 30% × 800 (only magazine readers). Trap 280: forgetting to subtract the intersection.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00017",
+      "stem": "CASELET: A boat goes 36 km upstream in 4 hours and 48 km downstream in 4 hours. What is the speed of the current?",
+      "options": [
+        {
+          "option_text": "1.5 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "3.0 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "4.5 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "10.5 km/h",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Upstream speed = 36/4 = 9 km/h. Downstream speed = 48/4 = 12 km/h. Current speed = (downstream − upstream)/2 = (12−9)/2 = 1.5 km/h. Trap 3 km/h: forgetting to halve. Trap 10.5: (9+12)/2 = boat speed, not current.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00018",
+      "stem": "CASELET: A salesperson earns ₹12,000/month base pay plus 5% commission on sales above ₹1,00,000. In April, total sales = ₹2,40,000. What was the total earning?",
+      "options": [
+        {
+          "option_text": "₹17,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹18,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹19,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹24,000",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Commission base = 2,40,000 − 1,00,000 = ₹1,40,000. Commission = 5% × 1,40,000 = ₹7,000. Total = ₹12,000 + ₹7,000 = ₹19,000. Trap ₹24,000: 5% on total sales (₹12,000 commission) + base = ₹24,000 (wrong — commission is on excess only). Trap ₹18,000: 5% of ₹1,20,000 excess (wrong threshold).",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00019",
+      "stem": "CASELET: A car was purchased for ₹5,00,000 and depreciates at 20% per year. What is its value after 3 years?",
+      "options": [
+        {
+          "option_text": "₹2,00,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,56,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹3,00,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹3,20,000",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Value = 5,00,000 × (1 − 0.20)³ = 5,00,000 × (0.8)³ = 5,00,000 × 0.512 = ₹2,56,000. Trap ₹2,00,000: simple 60% depreciation (20%×3) applied linearly = 5L×0.40 = ₹2L. Trap ₹3,20,000: only 2 years applied (5L×0.64).",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00020",
+      "stem": "CASELET: In an exam, 60% of students passed in English and 70% passed in Maths. 20% failed in both subjects. What percentage passed in BOTH subjects?",
+      "options": [
+        {
+          "option_text": "30%",
+          "is_correct": false
+        },
+        {
+          "option_text": "42%",
+          "is_correct": false
+        },
+        {
+          "option_text": "50%",
+          "is_correct": true
+        },
+        {
+          "option_text": "55%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "20% failed both → 80% passed at least one. By inclusion-exclusion: P(E∪M) = P(E) + P(M) − P(E∩M). 80 = 60 + 70 − P(both). P(both) = 50%. Trap 30%: 100−60−70+30 (wrong sign). Trap 42%: 60%×70% (independent events assumption).",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00021",
+      "stem": "CASELET: A shopkeeper buys 200 kg of rice at ₹40/kg and 150 kg at ₹48/kg, mixes them, and sells the mixture at ₹50/kg. What is his total profit?",
+      "options": [
+        {
+          "option_text": "₹1,800",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,100",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,300",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹2,500",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Cost = 200×40 + 150×48 = 8,000 + 7,200 = ₹15,200. Total kg = 350. Revenue = 350×50 = ₹17,500. Profit = 17,500 − 15,200 = ₹2,300. Trap ₹1,800: using average cost ₹44/kg and profit margin wrong. Trap ₹2,500: selling all at ₹50 and using wrong CP.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00022",
+      "stem": "CASELET: A bag has 4 red, 5 blue, and 6 green balls. Two balls are drawn randomly without replacement. What is the probability that the two balls are of DIFFERENT colours?",
+      "options": [
+        {
+          "option_text": "62/105",
+          "is_correct": false
+        },
+        {
+          "option_text": "74/105",
+          "is_correct": true
+        },
+        {
+          "option_text": "31/105",
+          "is_correct": false
+        },
+        {
+          "option_text": "4/5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Total = 15 balls. C(15,2) = 105. Same colour pairs: RR = C(4,2)=6; BB = C(5,2)=10; GG = C(6,2)=15; total same = 31. Different = 105−31 = 74. P = 74/105. Trap 31/105: probability of same colour (not different). Trap 62/105: doubling same-colour count.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00023",
+      "stem": "CASELET: Two mixtures are combined in equal volumes. Mixture 1 has milk:water = 7:3. Mixture 2 has milk:water = 3:2. What is the milk:water ratio in the final mixture?",
+      "options": [
+        {
+          "option_text": "3:2",
+          "is_correct": false
+        },
+        {
+          "option_text": "13:7",
+          "is_correct": true
+        },
+        {
+          "option_text": "5:3",
+          "is_correct": false
+        },
+        {
+          "option_text": "61:39",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Take 10 units of each. Mixture 1 (10 units): milk = 7, water = 3. Mixture 2 (10 units): milk = (3/5)×10 = 6, water = 4. Combined: milk = 7+6 = 13, water = 3+4 = 7. Ratio = 13:7. Trap 61:39: miscomputing fractions by not equalising volumes first.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00024",
+      "stem": "CASELET: A hostel serves lunch to 480 students. On a day when 30 students are absent, the same total budget allows each remaining student to receive ₹8 extra food allowance. What is the original daily food budget of the hostel?",
+      "options": [
+        {
+          "option_text": "₹54,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹57,600",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹60,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹62,400",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Let per-student food cost = x. Budget B = 480x. With 450 students: B/450 = x + 8. So 480x/450 = x + 8. 480x = 450x + 3600. 30x = 3600. x = ₹120. Budget = 480 × 120 = ₹57,600. Trap ₹54,000: 450×120 (wrong base for budget). Trap ₹60,000: forgetting the ₹8 extra means per-head cost rose.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_DI_CASELET_00025",
+      "stem": "CASELET: A trader marks up goods by 40% and gives a 25% discount. On a sale of ₹84,000 after discount, what was his profit percentage over cost?",
+      "options": [
+        {
+          "option_text": "5%",
+          "is_correct": true
+        },
+        {
+          "option_text": "10%",
+          "is_correct": false
+        },
+        {
+          "option_text": "15%",
+          "is_correct": false
+        },
+        {
+          "option_text": "12%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — text caselet (Banking Mains)",
+      "topic_code": "QA_DI",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Let CP = 100. MP = 140. SP after 25% discount = 140 × 0.75 = 105. Profit% = 5%. The actual sale amount ₹84,000 is extra info (a classic examiner misdirection). Students who solve for CP from ₹84,000 waste time — profit% is constant regardless of scale.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-di",
+      "generated_at": "2026-05-21T07:30:00+00:00"
+    }
+  ]
+}

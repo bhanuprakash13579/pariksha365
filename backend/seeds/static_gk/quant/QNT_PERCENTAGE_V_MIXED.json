@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "subject": "Quant",
+  "subject": "Quantitative Aptitude",
   "topic": "Percentage V",
   "topic_code": "QNT_PERCENTAGE_V_MIXED",
   "description": "Advanced percentage problems — percentage change formula, election problems, population growth, expenditure-savings, comparison-with-base.",
@@ -235,6 +235,216 @@
       "generator_tag": "v3-rich-explanation",
       "generated_at": "2026-04-28",
       "id": "sgk_QNT_PERCENTAGE_V_MIXED_007"
+    },
+    {
+      "stem": "What is 15% of 40% of 500?",
+      "options": [
+        {
+          "option_text": "25 — treating percentages as a simple sum",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 — applying both percentages in sequence",
+          "is_correct": true
+        },
+        {
+          "option_text": "35 — computing 40% then adding 15 directly",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 — computing only 40% of 500 then halving",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "15% of 40% of 500 = 0.15 × 0.40 × 500 = 0.15 × 200 = 30. Equivalently, 6% of 500 = 30. Option A (25) is wrong — treating the expression as (15 + 10)% of 100 confuses a percentage-of-percentage with a plain percentage. Always collapse successive percentage operators into a single multiplier: 0.15 × 0.40 = 0.06.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:42:44+00:00",
+      "id": "sgk_QNT_PERCENTAGE_V_MIXED_00008"
+    },
+    {
+      "stem": "A student scores 72 marks and still fails by 8 marks. If the passing percentage is 40%, what are the total marks in the examination?",
+      "options": [
+        {
+          "option_text": "150 marks as total, if passing threshold were 50%",
+          "is_correct": false
+        },
+        {
+          "option_text": "200 marks as total, derived from passing marks formula",
+          "is_correct": true
+        },
+        {
+          "option_text": "180 marks as total, treating 72 as the passing score",
+          "is_correct": false
+        },
+        {
+          "option_text": "250 marks as total, based on an incorrect pass ratio",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Passing marks = 72 + 8 = 80. Since 40% of Total = 80, Total = 80 ÷ 0.40 = 200. Option C (180) is the most tempting error — using 72 directly as the passing mark gives 72/0.40 = 180, but 72 is the score obtained, not the passing mark. The 8-mark shortfall must be added first.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:42:44+00:00",
+      "id": "sgk_QNT_PERCENTAGE_V_MIXED_00009"
+    },
+    {
+      "stem": "The length of a rectangle is increased by 20% and its breadth is decreased by 10%. What is the net percentage change in its area?",
+      "options": [
+        {
+          "option_text": "10% increase, treating both changes as simply additive",
+          "is_correct": false
+        },
+        {
+          "option_text": "8% increase, the correct net area percentage change",
+          "is_correct": true
+        },
+        {
+          "option_text": "2% decrease, misapplying the subtraction of percentage",
+          "is_correct": false
+        },
+        {
+          "option_text": "12% increase, overstating by treating cross-term wrong",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "New area = 1.20 × 0.90 × original = 1.08 × original, so net change = +8%. Option A (10%) is the classic error: adding 20% − 10% = 10%, which ignores the multiplicative cross-term (−20 × 10/100 = −2%). The correct formula for combined effect = a + b + ab/100 = 20 − 10 − 2 = +8%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:42:44+00:00",
+      "id": "sgk_QNT_PERCENTAGE_V_MIXED_00010"
+    },
+    {
+      "stem": "In a class, 60% of students are boys. If 25% of boys and 40% of girls passed an examination, what percentage of the total class passed?",
+      "options": [
+        {
+          "option_text": "31% of the total class cleared the examination",
+          "is_correct": true
+        },
+        {
+          "option_text": "32.5% of total class, averaging 25% and 40% equally",
+          "is_correct": false
+        },
+        {
+          "option_text": "30% of total class, using 50-50 gender assumption",
+          "is_correct": false
+        },
+        {
+          "option_text": "33% of total class, rounding up the weighted result",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Boys = 60%, Girls = 40%. Passed = (25% × 60) + (40% × 40) = 15 + 16 = 31%. Option B (32.5%) is the most common error — a simple average of 25% and 40% = 32.5%, valid only if boys and girls were equal in number. When group sizes differ, a weighted average must be used.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:42:44+00:00",
+      "id": "sgk_QNT_PERCENTAGE_V_MIXED_00011"
+    },
+    {
+      "stem": "A shopkeeper marks goods 40% above cost price and then gives two successive discounts of 10% each. What is his net profit percentage on the cost price?",
+      "options": [
+        {
+          "option_text": "12% net profit, treating two 10% as a single 20% discount",
+          "is_correct": false
+        },
+        {
+          "option_text": "13.4% net profit, using compound successive discounts",
+          "is_correct": true
+        },
+        {
+          "option_text": "14% net profit, subtracting only one discount of 10%",
+          "is_correct": false
+        },
+        {
+          "option_text": "21% net profit, applying discounts on cost price instead",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "SP = CP × 1.40 × 0.90 × 0.90 = CP × 1.134, so net profit = 13.4%. Option A (12%) is the most tempting error: assuming two 10% discounts equal 20% gives SP = 1.40 × 0.80 × CP = 1.12 × CP = 12% profit. Two successive discounts compound: effective discount = 1 − (0.9 × 0.9) = 19%, not 20%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:42:44+00:00",
+      "id": "sgk_QNT_PERCENTAGE_V_MIXED_00012"
+    },
+    {
+      "stem": "A's income is 20% more than B's income, and B's income is 25% more than C's income. By what percentage is A's income more than C's income?",
+      "options": [
+        {
+          "option_text": "45% more than C, obtained by simply adding 20 + 25",
+          "is_correct": false
+        },
+        {
+          "option_text": "50% more than C, obtained by chaining the multipliers",
+          "is_correct": true
+        },
+        {
+          "option_text": "40% more than C, by averaging the two given percentages",
+          "is_correct": false
+        },
+        {
+          "option_text": "44% more than C, using an incorrect cross-term formula",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B = 1.25C and A = 1.20 × B = 1.20 × 1.25C = 1.50C. So A is 50% more than C. Option A (45%) is the classic chain-percentage trap: adding 20% + 25% = 45% is valid only when both percentages share the same base. Here the 20% is on B, which is itself already 25% above C, so the correct operation is 1.20 × 1.25 = 1.50, giving 50%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:42:44+00:00",
+      "id": "sgk_QNT_PERCENTAGE_V_MIXED_00013"
+    },
+    {
+      "stem": "A 100-litre mixture of milk and water is in the ratio 3:2. How many litres of water must be added so that water forms exactly 60% of the new mixture?",
+      "options": [
+        {
+          "option_text": "40 litres of water added to reach 60% water content",
+          "is_correct": false
+        },
+        {
+          "option_text": "50 litres of water added to reach 60% water content",
+          "is_correct": true
+        },
+        {
+          "option_text": "60 litres of water added to reach 60% water content",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 litres of water added to reach 60% water content",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Milk = 60 L, Water = 40 L. Let x litres of water be added: (40 + x)/(100 + x) = 0.60 → 40 + x = 60 + 0.6x → 0.4x = 20 → x = 50. Option A (40) is wrong because adding 40 gives water = 80/140 ≈ 57.1%, not 60% — the common error is forgetting the denominator also increases. Option C (60) overshoots: 100/160 = 62.5%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:42:44+00:00",
+      "id": "sgk_QNT_PERCENTAGE_V_MIXED_00014"
     }
   ]
 }

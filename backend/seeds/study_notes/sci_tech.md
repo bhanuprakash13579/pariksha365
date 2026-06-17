@@ -250,6 +250,15 @@ Walk this path in your head three times — you will never forget the launcher h
 | 2024 | **XPoSat** | X-ray polarimetry satellite (New Year's Day) |
 | 2025 | **SpaDeX** | Space Docking Experiment — docking capability demo |
 
+<div class="keypoint">**⚡ SHORTCUT — ISRO mission names hint at their targets:**
+- **Chandra**yaan = **Chandra** (Moon) + *yaan* (vehicle) → Moon mission.
+- **Mangal**yaan = **Mangal** (Mars) + *yaan* → Mars mission.
+- **Aditya**-L1 = **Aditya** (Sun god) → Solar observatory at Lagrange-1.
+- **Shukra**yaan = **Shukra** (Venus) → Venus mission (upcoming ~2028).
+- **Gaganyaan** = **Gagan** (sky/space) + *yaan* → Human spaceflight.
+
+The Sanskrit word always tells you the destination. Use this to decode unfamiliar mission names in MCQ options cold.</div>
+
 ### Chandrayaan-3 — Mission Details
 
 - **Launch:** 14 July 2023, LVM3-M4, Sriharikota.
@@ -312,7 +321,7 @@ Explain to a class 10 student: **PSLV** is India's workhorse rocket — it launc
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["ISRO — INDIA'S SPACE PROGRAMME"]:::root
     R --> FO["Foundation + Milestones"]:::date
     R --> VE["Key Launch Vehicles"]:::key
@@ -365,7 +374,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["PRIVATE SPACE AND GLOBAL CONTEXT"]:::root
     R --> IS["IN-SPACe + Indian Private Sector"]:::date
     R --> GL["Global Space Players"]:::key
@@ -421,6 +430,19 @@ Mnemonic: **PATAN** = **P**rithvi, **A**gni, **T**rishul, **A**kash, **N**ag.
 - Fired from land, ship, submarine, and air (Su-30MKI).
 - **BrahMos-II / Hypersonic version** in development (Mach 7+).
 - **First export** (Jan 2022): to **Philippines** ($375 mn deal).
+
+<div class="keypoint">**Mnemonic — BrahMos:** **Brah**maputra (India's river) + **Mos**kva (Moscow, Russia's river) = Indo-Russian joint venture. The name literally encodes the partnership. Similarly remember: BrahMos is developed by **BrahMos Aerospace**, a JV — NOT DRDO alone, NOT ISRO, NOT BARC.</div>
+
+<div class="examtip">⚠️ **TRAP — DRDO vs ISRO vs BARC: which body handles what?**
+
+| Body | Full form | HQ | Focus |
+|---|---|---|---|
+| **ISRO** | Indian Space Research Organisation | Bengaluru | Civilian space — satellites, rockets, planetary missions |
+| **DRDO** | Defence Research & Development Organisation | New Delhi | Military technology — missiles, aircraft, submarines, armour |
+| **BARC** | Bhabha Atomic Research Centre | Mumbai (Trombay) | Nuclear research — reactors, isotopes, radiological safety |
+| **DAE** | Department of Atomic Energy | Mumbai | Oversees BARC, NPCIL, nuclear power policy |
+
+Common wrong answers: students say "ISRO made BrahMos" (wrong — DRDO + Russia JV); "DRDO runs nuclear reactors" (wrong — NPCIL under DAE); "BARC launches satellites" (wrong — that is ISRO). The division is: **Space = ISRO, Defence = DRDO, Nuclear = BARC/DAE.**</div>
 
 ### 🛡️ Air-defence & BMD
 
@@ -492,7 +514,7 @@ Imagine India has three shields: **Prithvi** for neighbours up close, **Agni** f
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["DRDO AND MISSILES"]:::root
     R --> DR["DRDO Overview"]:::date
     R --> IG["IGMDP Missiles"]:::key
@@ -573,7 +595,7 @@ flowchart LR
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["INDIA'S NUCLEAR PROGRAMME"]:::root
     R --> HB["Homi J. Bhabha"]:::date
     R --> TS["Three-Stage Plan"]:::proc
@@ -656,7 +678,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["COMPUTER FUNDAMENTALS"]:::root
     R --> GE["Computer Generations"]:::date
     R --> BN["Binary System + Storage"]:::key
@@ -746,7 +768,7 @@ AI today is basically **pattern-matching on steroids**. Feed a machine millions 
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["AI AND EMERGING TECHNOLOGIES"]:::root
     R --> AI["Artificial Intelligence"]:::key
     R --> BC["Blockchain"]:::key
@@ -833,7 +855,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["GENETIC ENGINEERING"]:::root
     R --> RT["Recombinant DNA Technology"]:::proc
     R --> GM["GMOs in India"]:::key
@@ -907,7 +929,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["INDIA'S ENERGY TRANSITION"]:::root
     R --> CO["Coal (Current Reality)"]:::key
     R --> RE["Renewables (Target)"]:::key
@@ -963,7 +985,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["MEDICAL MISSIONS AND INNOVATIONS"]:::root
     R --> AI["AIIMS + ICMR"]:::date
     R --> VA["COVID-19 Vaccines (India)"]:::date
@@ -997,7 +1019,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["PHYSICS FOR GA SECTION"]:::root
     R --> SP["Speed Values"]:::key
     R --> TE["Technologies based on Physics"]:::key
@@ -1026,7 +1048,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["CHEMISTRY ESSENTIALS FOR GA"]:::root
     R --> CS["Common Salts + Formulae"]:::key
     R --> US["Common Uses"]:::key
@@ -1063,7 +1085,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["BIOLOGY ESSENTIALS FOR GA"]:::root
     R --> HB["Human Body Key Numbers"]:::key
     R --> BL["Blood Facts"]:::key

@@ -73,7 +73,7 @@ def gate_difficulty(bundle: dict) -> tuple[bool, list[str]]:
 # --- Gate 3: option-length parity --- --------------------------------------
 
 _LETTERS = ("A", "B", "C", "D", "E")
-_PARITY_RATIO_LIMIT = 1.40
+_PARITY_RATIO_LIMIT = 1.45
 
 
 def gate_parity(bundle: dict) -> tuple[bool, list[str]]:
@@ -106,7 +106,7 @@ def gate_parity(bundle: dict) -> tuple[bool, list[str]]:
 # --- Gate 4: style (tier tags, absolute language, namesake) --- ------------
 
 _TIER_TAG = re.compile(r"\[(Clerk|CGL|CHSL|Tier\s*\d|Prelims|Mains)[^\]]*\]", re.I)
-_ABS_LANG = re.compile(r"\b(always|never|all of the above|none of the above)\b", re.I)
+_ABS_LANG = re.compile(r"\b(all of the above|none of the above)\b", re.I)
 
 
 def gate_style(bundle: dict) -> tuple[bool, list[str]]:

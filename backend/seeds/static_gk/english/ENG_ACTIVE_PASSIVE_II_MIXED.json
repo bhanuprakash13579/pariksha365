@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-23-eng-ap-07",
       "generated_at": "2026-04-23T23:50:00+00:00",
       "id": "sgk_ENG_ACTIVE_PASSIVE_II_MIXED_00007"
+    },
+    {
+      "stem": "Select the correct passive voice form of: 'The government will launch a new welfare scheme next month.'",
+      "options": [
+        {
+          "option_text": "A new welfare scheme will be launched by the government next month.",
+          "is_correct": true
+        },
+        {
+          "option_text": "A new welfare scheme will be being launched by the government next month.",
+          "is_correct": false
+        },
+        {
+          "option_text": "A new welfare scheme will have been launched by the government next month.",
+          "is_correct": false
+        },
+        {
+          "option_text": "A new welfare scheme is launched by the government next month.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "Simple future active 'will + V1' becomes passive 'will + be + V3'. Option B wrongly applies future continuous passive ('will be being'), which is not standard for a simple future. Option C uses future perfect passive ('will have been'), implying prior completion — not intended here. Option D uses simple present passive, ignoring the future tense signal entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:48+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_II_MIXED_00008"
+    },
+    {
+      "stem": "Which of the following sentences is written in passive voice?",
+      "options": [
+        {
+          "option_text": "The journalist published an explosive report yesterday.",
+          "is_correct": false
+        },
+        {
+          "option_text": "An old bridge was demolished by the municipal corporation.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The athlete broke three national records in one event.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Children enjoy playing outdoor games in the evening.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "In option B, the subject 'An old bridge' receives the action ('was demolished'), and the doer follows 'by' — the classic passive structure. Options A, C, and D all have subjects performing the action, making them active voice. A common mistake is to confuse a long subject in active voice with passive construction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:48+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_II_MIXED_00009"
+    },
+    {
+      "stem": "Choose the correct passive voice transformation of: 'Can the doctor examine the patient right now?'",
+      "options": [
+        {
+          "option_text": "Can the patient be examined by the doctor right now?",
+          "is_correct": true
+        },
+        {
+          "option_text": "Could the patient be examined by the doctor right now?",
+          "is_correct": false
+        },
+        {
+          "option_text": "The patient can be examined by the doctor right now.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Can the patient examined by the doctor right now?",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "For modal interrogative passive, the structure is: Modal + subject + be + V3, preserving the question form and the original modal. 'Can' is retained unchanged — not shifted to 'could' as in option B. Option C correctly uses 'can be examined' but converts the question into a statement, losing the interrogative. Option D omits 'be', making the verb chain grammatically broken.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:48+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_II_MIXED_00010"
+    },
+    {
+      "stem": "Which option correctly converts to passive voice: 'Someone must have taken the important files.'?",
+      "options": [
+        {
+          "option_text": "The important files must be taken by someone.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The important files must have been taken by someone.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The important files have been taken by someone.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The important files must have taken by someone.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "The active sentence uses a perfect modal 'must have + V3'; its passive is: subject + must have been + V3. Option A uses simple modal passive ('must be taken'), stripping the perfect aspect that signals inference about a past event. Option C drops 'must', converting a deduction into a plain statement of fact. Option D omits 'been', breaking the passive participle chain — a frequent error candidates make.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:48+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_II_MIXED_00011"
+    },
+    {
+      "stem": "Identify the correct passive voice of: 'The landlord needs to paint the walls before winter.'",
+      "options": [
+        {
+          "option_text": "The walls needed to be painted by the landlord before winter.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The walls need to be painted by the landlord before winter.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The walls are being painted by the landlord before winter.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The walls need to have been painted by the landlord before winter.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "For 'need + to + V1', the passive form is 'need + to be + V3', preserving tense. Option A shifts tense to past ('needed'), which contradicts the original present-tense sentence. Option C replaces the infinitive construction with present continuous passive, distorting the meaning from obligation to ongoing action. Option D uses a perfect infinitive passive ('to have been painted'), implying prior completion — an aspect not present in the original.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:48+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_II_MIXED_00012"
+    },
+    {
+      "stem": "'The principal awarded Meera the first prize at the ceremony' has two objects. Which passive transformation is CORRECT?",
+      "options": [
+        {
+          "option_text": "Meera was awarded the first prize at the ceremony by the principal.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The first prize was awarded Meera at the ceremony by the principal.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Meera had been awarded the first prize at the ceremony by the principal.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The first prize is awarded to Meera at the ceremony by the principal.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "When a ditransitive verb like 'award' takes two objects, either may become the passive subject. Using the indirect object ('Meera') as subject: 'Meera was awarded the first prize by the principal' is the grammatically standard form. Option B promotes the direct object but omits the mandatory preposition 'to' — it must be 'awarded to Meera'. Option C incorrectly shifts the tense to past perfect. Option D uses simple present tense, losing the past-tense context entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:48+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_II_MIXED_00013"
+    },
+    {
+      "stem": "Which option is the correct passive voice of: 'Someone had been following the suspect for weeks.'?",
+      "options": [
+        {
+          "option_text": "The suspect was being followed by someone for weeks.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The suspect had been being followed by someone for weeks.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The suspect has been followed by someone for weeks.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The suspect was followed by someone for weeks.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Past perfect continuous active ('had been + V-ing') converts to past perfect continuous passive: 'had been being + V3'. Option A uses past continuous passive ('was being followed'), losing the perfect aspect that marks an action ongoing before a past reference point. Option C uses present perfect passive, ignoring the past perfect frame entirely. Option D uses simple past passive, collapsing both the perfect and continuous dimensions — the most tempting wrong answer because it sounds natural, but it fundamentally changes the grammatical meaning.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:48+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_II_MIXED_00014"
     }
   ]
 }

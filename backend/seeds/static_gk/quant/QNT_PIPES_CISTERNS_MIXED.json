@@ -220,6 +220,216 @@
       "generator_tag": "gemini-batch-fix-2026-05-15",
       "generated_at": "2026-05-19T08:44:32+00:00",
       "id": "sgk_QNT_PIPES_CISTERNS_MIXED_00007"
+    },
+    {
+      "stem": "A full cistern has two outlet pipes. Outlet P empties it in 10 hours and outlet Q empties it in 15 hours. Both outlets are opened simultaneously. In how many hours will the cistern be completely empty?",
+      "options": [
+        {
+          "option_text": "4 hours — outlets combined as 1/4 per hour by direct addition",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 hours — combined drain rate 1/10 + 1/15 = 1/6 per hour",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 hours — arithmetic mean of the 10 and 15 hour drain times",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 hours — LCM of drain durations mistaken as the final answer",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Combined drain rate = 1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6 per hour. Time to empty = 6 hours. Option C (12 hours) is the arithmetic mean (10+15)/2 — a frequent error when students average times instead of adding rates. Option D (30 hours) confuses the LCM as the answer rather than using it as a computational tool to find the net rate.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:20+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_MIXED_00008"
+    },
+    {
+      "stem": "A water tank is exactly three-quarters full. A drain pipe, which would empty a completely full tank in 12 hours, is opened. How long will it take to drain only the water currently present in the tank?",
+      "options": [
+        {
+          "option_text": "8 hours — subtracting one-quarter of 12 hours from the full drain time",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 hours — draining 3/4 tank at rate 1/12 per hour gives exactly 9 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 hours — full drain time applied without adjusting for partial volume",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 hours — inverting the fraction: 12 multiplied by 4/3 by mistake",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Work to drain = 3/4 of tank. Drain rate = 1/12 per hour. Time = (3/4) ÷ (1/12) = (3/4) × 12 = 9 hours. Option D (16 hours) is the classic inversion error: computing 12 ÷ (3/4) = 16 instead of multiplying. Option A (8 hours) wrongly subtracts (1/4 × 12 = 3) from 12 instead of scaling by the filled fraction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:20+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_MIXED_00009"
+    },
+    {
+      "stem": "Pipe A fills a cistern in 20 minutes and Pipe B fills it in 30 minutes. Both are opened simultaneously, but Pipe A is shut off after a while. The cistern is completely filled exactly 18 minutes after both pipes were first opened. For how many minutes was Pipe A kept open?",
+      "options": [
+        {
+          "option_text": "6 minutes — one-third of 18 minutes allocated by simple proportion",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 minutes — A fills 2/5 of cistern at its 1/20 rate in exactly 8 min",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 minutes — A assumed to run until the halfway mark of total time",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 minutes — splitting 18 minutes equally between both pipes assumed",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Let A run for t minutes; B runs all 18 minutes. Equation: t/20 + 18/30 = 1 → t/20 + 3/5 = 1 → t/20 = 2/5 → t = 8 minutes. Option C (10 min) is tempting because A and B together would fill the tank in 12 minutes, so students assume A ran proportionally for 10 of 18 minutes — but this ignores that B alone covers the post-shutdown period.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:20+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_MIXED_00010"
+    },
+    {
+      "stem": "A cistern is exactly one-third full. Pipe A, which fills the full cistern in 3 hours, and Pipe B, which drains the full cistern in 5 hours, are both opened simultaneously. How long will it take for the cistern to become completely full?",
+      "options": [
+        {
+          "option_text": "2 hours — only Pipe A's rate applied to remaining 2/3 volume",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 hours — net fill rate 2/15 per hour covers the remaining 2/3 volume",
+          "is_correct": true
+        },
+        {
+          "option_text": "2.5 hours — net rate 2/15 applied to the already-filled 1/3 portion",
+          "is_correct": false
+        },
+        {
+          "option_text": "7.5 hours — net rate computed correctly but full empty tank assumed",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Net fill rate = 1/3 − 1/5 = 2/15 per hour. Remaining volume = 1 − 1/3 = 2/3. Time = (2/3) ÷ (2/15) = (2/3) × (15/2) = 5 hours. Option D (7.5 hours) is the most frequent error: the net rate 2/15 is derived correctly but applied to the full tank (15/2 = 7.5), forgetting 1/3 is already filled. Option C (2.5 hours) applies the net rate to the wrong portion — the filled 1/3 instead of the empty 2/3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:20+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_MIXED_00011"
+    },
+    {
+      "stem": "Pipe A fills a tank in 20 minutes, Pipe B fills it in 30 minutes, and Pipe C is a drain pipe. When all three pipes are opened together, the tank gets completely filled in 60 minutes. How long would Pipe C alone take to empty a full tank?",
+      "options": [
+        {
+          "option_text": "12 minutes — C's drain rate wrongly set equal to A and B combined",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 minutes — C drains at rate 1/15 per minute, derived from net equation",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 minutes — C assumed to exactly offset only Pipe A's contribution",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 minutes — C assumed to exactly offset only Pipe B's contribution",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Combined fill rate of A and B = 1/20 + 1/30 = 5/60 = 1/12. With all three open, net fill rate = 1/60. So C's drain rate = 1/12 − 1/60 = 5/60 − 1/60 = 4/60 = 1/15. C alone empties in 15 minutes. Option A (12 minutes) is the classic trap: students set C equal to the A+B combined rate of 1/12, ignoring that the net 1/60 fill rate already accounts for C's drag on A+B.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:20+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_MIXED_00012"
+    },
+    {
+      "stem": "A large inlet pipe fills a tank exactly 5 times faster than a small inlet pipe. Both were opened together, but the large pipe broke down after some time, and the small pipe alone then took 30 more minutes to complete the filling. The total fill time from start to finish was 50 minutes. In how many minutes can the large pipe alone fill the entire tank?",
+      "options": [
+        {
+          "option_text": "25 minutes — derived from incorrectly estimating small pipe at 125 min",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 minutes — small pipe alone fills in 150 min, so large = 150 ÷ 5",
+          "is_correct": true
+        },
+        {
+          "option_text": "35 minutes — obtained by averaging the breakdown instant and total time",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 minutes — computed from combined-work formula skipping breakdown step",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Large pipe broke at minute 50 − 30 = 20. Let small pipe alone take S minutes; large = S/5. Work equation: 20 × (5/S + 1/S) + 30 × (1/S) = 1 → 120/S + 30/S = 1 → S = 150. Large alone = 150/5 = 30 minutes. Option A (25 min) arises from an arithmetic slip where students read 150/S = 1 as S = 125 after mishandling the coefficient of the combined-work term.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:20+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_MIXED_00013"
+    },
+    {
+      "stem": "Inlet pipes P and Q fill a cistern in 12 hours and 16 hours respectively. Outlet pipe R empties the full cistern in 8 hours. All three are opened simultaneously from empty. Due to scheduled power cuts, after every 2 hours of active operation the pipes stay closed for exactly 30 minutes. How many total hours (including all off-periods) does it take to completely fill the cistern?",
+      "options": [
+        {
+          "option_text": "48 hours — net fill rate 1/48 applied directly, ignoring all off-periods",
+          "is_correct": false
+        },
+        {
+          "option_text": "59 hours 30 minutes — 23 full 2.5-hour cycles then 2 final active hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "60 hours — 24 complete 2.5-hour cycles counted including last rest period",
+          "is_correct": false
+        },
+        {
+          "option_text": "62 hours 30 minutes — one extra cycle added as buffer for uncertainty",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Net fill rate = 1/12 + 1/16 − 1/8 = 4/48 + 3/48 − 6/48 = 1/48 per hour. Each 2-hour active window fills 2/48 = 1/24 of tank. Each cycle = 2 hr active + 0.5 hr off = 2.5 hr. After 23 full cycles: 23/24 filled, 57.5 hours elapsed. Remaining 1/24 requires 2 more active hours (1/24 ÷ 1/48 = 2 exactly). Total = 57.5 + 2 = 59.5 hours = 59 hr 30 min. Option C (60 hours) is the common trap: students count 24 × 2.5 = 60, but the cistern fills at the end of the 24th active window — the subsequent 30-minute rest never begins.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:20+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_MIXED_00014"
     }
   ]
 }

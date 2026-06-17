@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Trains",
+  "topic_code": "QNT_TRAINS_IX_MIXED",
+  "description": "Covers Pole crossing, Platform crossing.",
+  "questions": [
+    {
+      "stem": "A train 150 meters long is running at a speed of 90 km/hr. How much time will it take to cross a railway signal pole?",
+      "options": [
+        {
+          "option_text": "6 seconds",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 seconds",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: \nStep 1: Convert the speed from km/hr to m/s by multiplying by (5/18).\nSpeed = 90 * (5/18) = 5 * 5 = 25 m/s.\nStep 2: To cross a stationary pole (which has negligible width), the train only needs to cover its own length.\nDistance = 150 meters.\nStep 3: Time = Distance / Speed\nTime = 150 / 25 = 6 seconds.\nDECOY BUSTING: If you forget to convert km/hr to m/s, you'll end up with a completely wrong number. Always check units.\nEXAM INSIGHT: The (5/18) conversion factor comes from (1000 meters / 3600 seconds). Multiplying by (5/18) goes from km/hr to m/s. Multiplying by (18/5) goes the other way.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Trains",
+      "topic_code": "QNT_TRAINS_IX_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_QNT_TRAINS_IX_MIXED_001_24a811"
+    },
+    {
+      "stem": "A train 200 meters long is running at 72 km/hr. How long will it take to cross a platform that is 300 meters long?",
+      "options": [
+        {
+          "option_text": "25 seconds",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 seconds",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT:\nStep 1: Convert speed to m/s. \nSpeed = 72 * (5/18) = 4 * 5 = 20 m/s.\nStep 2: To cross a platform, the train must cover its own length PLUS the length of the platform.\nTotal Distance = 200 (train) + 300 (platform) = 500 meters.\nStep 3: Time = Total Distance / Speed\nTime = 500 / 20 = 25 seconds.\nDECOY BUSTING: 10 seconds is the time to cross a pole (200/20). 15 seconds is the time for a point to cross the platform (300/20). You MUST add the lengths together.\nEXAM INSIGHT: Whether the object being crossed is a platform, a bridge, or a tunnel, always add its length to the train's length.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Trains",
+      "topic_code": "QNT_TRAINS_IX_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_QNT_TRAINS_IX_MIXED_002_ea1044"
+    }
+  ]
+}

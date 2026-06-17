@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-22-eng-nar-07",
       "generated_at": "2026-04-22T17:40:00+00:00",
       "id": "sgk_ENG_NARRATION_MIXED_00007"
+    },
+    {
+      "stem": "She said to her mother, \"I am feeling very tired now.\" Which of the following is the correct indirect speech?",
+      "options": [
+        {
+          "option_text": "She told her mother that she is feeling very tired then.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She told her mother that she was feeling very tired then.",
+          "is_correct": true
+        },
+        {
+          "option_text": "She told her mother that she was feeling very tired now.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She told her mother that I was feeling very tired then.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: 'am' backshifts to 'was'; 'now' changes to 'then'; the first-person 'I' changes to 'she'. Option A fails to backshift 'is' to 'was'. Option C incorrectly retains 'now' — deictic time words must shift in indirect speech. Option D wrongly keeps the first-person pronoun 'I' instead of shifting to 'she'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:56:53+00:00",
+      "id": "sgk_ENG_NARRATION_MIXED_00008"
+    },
+    {
+      "stem": "He told me that he had lost his keys the day before. Which of the following is the correct direct speech?",
+      "options": [
+        {
+          "option_text": "He said to me, \"I have lost my keys yesterday.\"",
+          "is_correct": false
+        },
+        {
+          "option_text": "He said to me, \"I had lost my keys the day before.\"",
+          "is_correct": false
+        },
+        {
+          "option_text": "He said to me, \"I lost my keys yesterday.\"",
+          "is_correct": true
+        },
+        {
+          "option_text": "He said to me, \"I lose my keys yesterday.\"",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct: past perfect 'had lost' in indirect reverses to simple past 'lost' in direct; 'the day before' converts back to 'yesterday'. Option A is wrong because present perfect cannot co-occur with 'yesterday' — a classic grammar trap. Option B wrongly retains the past perfect and the indirect time expression 'the day before', which belong only in reported speech. Option D uses simple present 'lose', which is grammatically wrong for a past event.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:56:53+00:00",
+      "id": "sgk_ENG_NARRATION_MIXED_00009"
+    },
+    {
+      "stem": "The priest said to the congregation, \"May God bless you all!\" Which of the following correctly reports this optative sentence in indirect speech?",
+      "options": [
+        {
+          "option_text": "The priest prayed that God may bless them all.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The priest wished that God might bless them all.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The priest said that God would bless them all.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The priest wished that God should bless them all.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: optative sentences use the reporting verb 'wished/prayed'; the modal 'may' backshifts to 'might'; 'you' shifts to 'them'. Option A is wrong because 'may' is not backshifted to 'might' — a frequent error. Option C alters the meaning from a blessing/wish to a future prediction using 'would'. Option D inserts 'should', which carries obligation rather than optative force and is incorrect here.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:56:53+00:00",
+      "id": "sgk_ENG_NARRATION_MIXED_00010"
+    },
+    {
+      "stem": "He said, \"If I were rich, I would travel the world.\" Which of the following is the correct indirect speech?",
+      "options": [
+        {
+          "option_text": "He said that if he had been rich, he would have travelled the world.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He said that if he was rich, he would travel the world.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He said that if he were rich, he would travel the world.",
+          "is_correct": true
+        },
+        {
+          "option_text": "He said that if he were rich, he will travel the world.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct: in a second conditional (counterfactual hypothesis), the subjunctive 'were' is preserved in indirect speech — hypothetical conditions do not undergo standard tense backshift. Option A wrongly converts the sentence to a third conditional (past perfect + would have), changing its meaning entirely. Option B replaces the subjunctive 'were' with indicative 'was', losing the counterfactual nuance. Option D incorrectly changes 'would' to 'will', which is not possible in a reported past-context sentence.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:56:53+00:00",
+      "id": "sgk_ENG_NARRATION_MIXED_00011"
+    },
+    {
+      "stem": "The interviewer asked the candidate, \"Do you have any prior experience in this field?\" Which of the following is the correct indirect speech?",
+      "options": [
+        {
+          "option_text": "The interviewer asked whether he have any prior experience in that field.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The interviewer asked whether he had any prior experience in that field.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The interviewer asked that did he have any prior experience in that field.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The interviewer asked if he has had any prior experience in this field.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: yes/no questions convert using 'whether/if'; the auxiliary 'do' is dropped and 'have' backshifts to 'had'; 'you' shifts to 'he'; 'this' shifts to 'that'. Option A omits the required backshift of 'have' to 'had'. Option C wrongly retains question-word inversion ('did he have') after 'that' — indirect questions always use affirmative word order. Option D uses the present perfect 'has had' instead of simple past 'had', and retains 'this' instead of changing it to 'that'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:56:53+00:00",
+      "id": "sgk_ENG_NARRATION_MIXED_00012"
+    },
+    {
+      "stem": "\"I have been working here since morning and I may finish by evening,\" he said. Which of the following is the correct indirect speech?",
+      "options": [
+        {
+          "option_text": "He said he had been working there since morning and might finish by evening.",
+          "is_correct": true
+        },
+        {
+          "option_text": "He said he has been working here since morning and may finish by evening.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He said he had been working there from morning and would finish by evening.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He said he had been working here since morning and might finish by evening.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct: 'have been working' backshifts to 'had been working'; 'here' shifts to 'there' (place deixis); 'may' backshifts to 'might'; 'since' is retained because it marks the start of a period, not a deictic reference. Option B makes no changes to tense, place, or modal — a complete failure to report. Option C wrongly replaces 'since' with 'from' (altering the grammatical structure) and uses 'would' instead of 'might', which changes probability to prediction. Option D correctly backshifts tense and modal but fails to change 'here' to 'there' — a subtle place-deixis error many students miss.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:56:53+00:00",
+      "id": "sgk_ENG_NARRATION_MIXED_00013"
+    },
+    {
+      "stem": "My friend said to me, \"Your brother told me that you had promised to help him.\" Which of the following correctly converts this to indirect speech?",
+      "options": [
+        {
+          "option_text": "My friend told me that my brother had told him that I had promised to help him.",
+          "is_correct": true
+        },
+        {
+          "option_text": "My friend told me that my brother told him that I promised to help him.",
+          "is_correct": false
+        },
+        {
+          "option_text": "My friend told me that his brother had told him that I had promised to help me.",
+          "is_correct": false
+        },
+        {
+          "option_text": "My friend told me that his brother had told him that I had promised to help him.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct: 'Your brother' (the friend addressing the narrator) → 'my brother' (narrator's brother in indirect); 'told me' (the friend was told) → 'had told him' (backshift + pronoun shift); 'you had promised' → 'I had promised'; 'him' (the brother) remains 'him'. Option B omits backshift of both 'told' and 'promised'. Options C and D both use 'his brother' — but 'his' would incorrectly refer to the friend's own brother; the original 'your brother' referred to the narrator's brother, so 'my brother' is the only correct rendering. Option C additionally uses 'help me' instead of 'help him', swapping the object incorrectly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:56:53+00:00",
+      "id": "sgk_ENG_NARRATION_MIXED_00014"
     }
   ]
 }

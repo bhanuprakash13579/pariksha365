@@ -334,6 +334,216 @@
       "generator_tag": "claude-opus-2026-04-21-eng-sva-10",
       "generated_at": "2026-04-21T10:20:00+00:00",
       "id": "sgk_ENG_SV_AGREEMENT_00010"
+    },
+    {
+      "stem": "Which of the following sentences is grammatically correct?",
+      "options": [
+        {
+          "option_text": "The fleet of ships were anchored safely at the harbour after the storm",
+          "is_correct": false
+        },
+        {
+          "option_text": "The fleet of ships was anchored safely at the harbour after the storm",
+          "is_correct": true
+        },
+        {
+          "option_text": "The fleet of ships have been anchored safely at the harbour after storm",
+          "is_correct": false
+        },
+        {
+          "option_text": "The fleet of ships are anchored safely at the harbour after the storm",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "'The fleet' is the singular head noun; 'of ships' is a prepositional modifier that does not change the number of the subject. Singular past tense 'was' is therefore correct. Options A, C, and D all apply plural verb forms as if 'ships' were the governing subject — the classic proximity-error trap.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-15",
+      "generated_at": "2026-06-15T03:04:34+00:00",
+      "id": "sgk_ENG_SV_AGREEMENT_00011"
+    },
+    {
+      "stem": "Which sentence correctly applies subject-verb agreement with 'either...or'?",
+      "options": [
+        {
+          "option_text": "Either the officers or the director have signed off on the final report",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either the officers or the director are signing off on the final report",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either the officers or the director has signed off on the final report",
+          "is_correct": true
+        },
+        {
+          "option_text": "Either the officers or the director were signing off on the final report",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "With 'either...or', the verb agrees with the subject immediately preceding it (the proximate-subject rule). 'The director' (singular) is closer to the verb, so singular 'has' is correct. Options A and B incorrectly treat the plural 'officers' as the governing subject because it appears first in the sentence.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-15",
+      "generated_at": "2026-06-15T03:04:34+00:00",
+      "id": "sgk_ENG_SV_AGREEMENT_00012"
+    },
+    {
+      "stem": "Which sentence demonstrates correct subject-verb agreement in a relative clause?",
+      "options": [
+        {
+          "option_text": "He is one of those researchers who consistently publish path-breaking papers",
+          "is_correct": true
+        },
+        {
+          "option_text": "He is one of those researchers who consistently publishes path-breaking papers",
+          "is_correct": false
+        },
+        {
+          "option_text": "He is one of those researchers who has consistently published papers of note",
+          "is_correct": false
+        },
+        {
+          "option_text": "He is one of those researchers who is consistently publishing path-breaking papers",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "In the structure 'one of those X who...', the relative pronoun 'who' refers back to the plural antecedent 'researchers', not to 'one'. The verb in the relative clause must therefore be plural: 'publish'. Option B is the most tempting wrong choice — it uses singular 'publishes' by treating 'one' as the antecedent of 'who', which is incorrect.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-15",
+      "generated_at": "2026-06-15T03:04:34+00:00",
+      "id": "sgk_ENG_SV_AGREEMENT_00013"
+    },
+    {
+      "stem": "Identify the sentence where the verb correctly agrees with the subject despite an intervening phrase.",
+      "options": [
+        {
+          "option_text": "The list of complaints filed by the employees were submitted to the board",
+          "is_correct": false
+        },
+        {
+          "option_text": "The list of complaints filed by the employees have been submitted to the board",
+          "is_correct": false
+        },
+        {
+          "option_text": "The list of complaints filed by the employees are submitted to the board now",
+          "is_correct": false
+        },
+        {
+          "option_text": "The list of complaints filed by the employees was submitted to the board",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "The true subject is 'the list' (singular). The long postmodifying phrase 'of complaints filed by the employees' does not alter the number of the head noun. Singular past tense 'was' is therefore correct. Options A, B, and C all use plural verbs, falling for the intervening-modifier trap by treating 'employees' as the subject.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-15",
+      "generated_at": "2026-06-15T03:04:34+00:00",
+      "id": "sgk_ENG_SV_AGREEMENT_00014"
+    },
+    {
+      "stem": "Which of the following sentences correctly uses a gerund phrase as the grammatical subject?",
+      "options": [
+        {
+          "option_text": "Reading difficult texts regularly improve your comprehension and vocabulary skills",
+          "is_correct": false
+        },
+        {
+          "option_text": "Reading difficult texts regularly improves your comprehension and vocabulary skills",
+          "is_correct": true
+        },
+        {
+          "option_text": "Reading difficult texts regularly are improving comprehension and vocabulary skills",
+          "is_correct": false
+        },
+        {
+          "option_text": "Reading difficult texts regularly have improved comprehension and vocabulary skills",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "A gerund phrase — a verb+ing form functioning as a noun — is always grammatically singular regardless of its internal length or complexity. 'Reading difficult texts regularly' is the subject, so it requires singular verb 'improves'. Option A uses bare-form 'improve', the most common error, treating the phrase as though it were a plural noun.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-15",
+      "generated_at": "2026-06-15T03:04:34+00:00",
+      "id": "sgk_ENG_SV_AGREEMENT_00015"
+    },
+    {
+      "stem": "Which sentence correctly follows the agreement rule for 'more than one' as the subject?",
+      "options": [
+        {
+          "option_text": "More than one applicant has cleared the preliminary examination this year",
+          "is_correct": true
+        },
+        {
+          "option_text": "More than one applicant have cleared the preliminary examination this year",
+          "is_correct": false
+        },
+        {
+          "option_text": "More than one applicant were clearing the preliminary examination this year",
+          "is_correct": false
+        },
+        {
+          "option_text": "More than one applicant qualify for the preliminary examination every year",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "'More than one' is a well-known idiomatic exception: despite its logically plural meaning, it takes a singular verb when immediately followed by a singular noun. This is codified usage, not intuitive logic. Options B and C use plural 'have' and 'were', following meaning rather than grammar. Option D uses bare infinitive 'qualify', which is also incorrect; the singular 'qualifies' would be required.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-15",
+      "generated_at": "2026-06-15T03:04:34+00:00",
+      "id": "sgk_ENG_SV_AGREEMENT_00016"
+    },
+    {
+      "stem": "Which sentence correctly applies subject-verb agreement with 'not only...but also'?",
+      "options": [
+        {
+          "option_text": "Not only the principal but also the teachers was blamed for the declining results",
+          "is_correct": false
+        },
+        {
+          "option_text": "Not only the principal but also the teachers is blamed for the declining results",
+          "is_correct": false
+        },
+        {
+          "option_text": "Not only the principal but also the teachers were blamed for the declining results",
+          "is_correct": true
+        },
+        {
+          "option_text": "Not only the principal but also the teachers has been blamed for poor results",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "With correlative conjunctions 'not only...but also', the verb agrees with the subject closest to it (proximate-subject rule). Here 'the teachers' (plural) is adjacent to the verb, so plural 'were' is correct. Option A uses singular 'was', agreeing instead with the distant subject 'the principal' — the most tempting error. Options B and D also use singular forms 'is' and 'has been', both incorrect for the same reason.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-15",
+      "generated_at": "2026-06-15T03:04:34+00:00",
+      "id": "sgk_ENG_SV_AGREEMENT_00017"
     }
   ]
 }

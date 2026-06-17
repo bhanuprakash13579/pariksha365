@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "subject": "Quant",
+  "subject": "Quantitative Aptitude",
   "topic": "DI pie chart — mixed tiers",
   "topic_code": "QNT_DI_PIE_CHART_MIXED",
   "description": "Pie chart interpretation; degrees vs percent, sector calculation",
@@ -202,6 +202,216 @@
       "generator_tag": "claude-opus-2026-04-26-qnt-pc-07",
       "generated_at": "2026-04-27T02:15:00+00:00",
       "id": "sgk_QNT_DI_PIE_CHART_MIXED_00007"
+    },
+    {
+      "stem": "A pie chart represents the distribution of 2,400 employees across 6 departments. The Production department's sector subtends an angle of 90°. How many employees belong to departments other than Production?",
+      "options": [
+        {
+          "option_text": "600 employees counted in the Production sector",
+          "is_correct": false
+        },
+        {
+          "option_text": "1,800 employees across the remaining five departments",
+          "is_correct": true
+        },
+        {
+          "option_text": "1,200 employees in all non-Production departments",
+          "is_correct": false
+        },
+        {
+          "option_text": "2,100 employees spread across the other departments",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Production = (90/360) × 2400 = 600 employees. Employees outside Production = 2400 − 600 = 1,800. Option A (600) is the Production count itself — the classic 'find the sector, not its complement' trap.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:44+00:00",
+      "id": "sgk_QNT_DI_PIE_CHART_MIXED_00007"
+    },
+    {
+      "stem": "A pie chart shows the area distribution across 4 zones of a city. Zone P occupies 90°, Zone Q occupies 72°, and Zone R occupies 108°. What is the central angle for Zone S?",
+      "options": [
+        {
+          "option_text": "72°, matching Zone Q's share of the city area",
+          "is_correct": false
+        },
+        {
+          "option_text": "90°, the residual angle completing the full circle",
+          "is_correct": true
+        },
+        {
+          "option_text": "108°, equal to the largest zone already allocated",
+          "is_correct": false
+        },
+        {
+          "option_text": "54°, one-sixth of the complete 360° pie circle",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "All sectors must sum to 360°. Zone S = 360 − 90 − 72 − 108 = 90°. Option C (108°) would push the total to 378°, which exceeds 360°. Option D (54°) incorrectly assumes equal division into six parts.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:44+00:00",
+      "id": "sgk_QNT_DI_PIE_CHART_MIXED_00008"
+    },
+    {
+      "stem": "Two pie charts show workforce data for Factory X (total 1,500 workers) and Factory Y (total 2,000 workers). The 'Skilled Workers' sector is 120° in Factory X's chart and 90° in Factory Y's chart. What is the difference in skilled workers between the two factories?",
+      "options": [
+        {
+          "option_text": "Factory X has 250 more skilled workers than Y",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both factories have exactly the same skilled worker count",
+          "is_correct": true
+        },
+        {
+          "option_text": "Factory Y has 250 more skilled workers than X",
+          "is_correct": false
+        },
+        {
+          "option_text": "Factory X has 125 fewer skilled workers than Y",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Factory X skilled = (120/360) × 1500 = 500; Factory Y skilled = (90/360) × 2000 = 500. Both equal 500 — the smaller angle in Y is exactly offset by its larger workforce. Option A is the most tempting error: comparing angles directly without scaling by base totals.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:44+00:00",
+      "id": "sgk_QNT_DI_PIE_CHART_MIXED_00009"
+    },
+    {
+      "stem": "In a pie chart of a company's annual revenue, the sectors for Electronics, FMCG, and Pharma together span 240° and are in the ratio 5 : 4 : 3. What is the central angle allocated to the Electronics sector?",
+      "options": [
+        {
+          "option_text": "60°, assigned to the smallest ratio component",
+          "is_correct": false
+        },
+        {
+          "option_text": "100°, proportional to 5 parts of the 240° arc",
+          "is_correct": true
+        },
+        {
+          "option_text": "150°, computed as 5 parts out of the full 360°",
+          "is_correct": false
+        },
+        {
+          "option_text": "80°, the angle that belongs to the FMCG segment",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Total ratio parts = 5+4+3 = 12. Electronics = (5/12) × 240 = 100°. Option C (150°) is the classic error of applying the ratio to 360° instead of the stated 240°. Option D (80°) is FMCG's correct angle: (4/12) × 240 = 80°.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:44+00:00",
+      "id": "sgk_QNT_DI_PIE_CHART_MIXED_00010"
+    },
+    {
+      "stem": "A pie chart shows five states' share of national wheat production: State A = 28%, State B = 22%, State C = 18%, State D = 16%, State E = 16%. If total production is 450 lakh tonnes, by how many lakh tonnes does State A exceed State C?",
+      "options": [
+        {
+          "option_text": "36 lakh tonnes, applying an 8-percentage-point gap",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 lakh tonnes, from the 10-percentage-point difference",
+          "is_correct": true
+        },
+        {
+          "option_text": "50 lakh tonnes, after rounding to the nearest figure",
+          "is_correct": false
+        },
+        {
+          "option_text": "54 lakh tonnes, using a 12-percentage-point difference",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Gap = 28% − 18% = 10%. Excess = 10% of 450 = 45 lakh tonnes. Option A (36 lt) uses 8%, which equals the gap between A and B, not A and C. Option D (54 lt) uses 12%, the gap between A and D — a common misread of the chart.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:44+00:00",
+      "id": "sgk_QNT_DI_PIE_CHART_MIXED_00011"
+    },
+    {
+      "stem": "Two pie charts represent the budgets of State X (₹800 crore total) and State Y (₹600 crore total). The Education sector occupies 135° in State X's chart and 150° in State Y's chart. What is the ratio of Education expenditure of State X to that of State Y?",
+      "options": [
+        {
+          "option_text": "9 : 10, derived by comparing the two sector angles directly",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 : 5, after converting sector angles to crore amounts",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 : 3, obtained by scaling the total budgets alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 : 6, arrived at by reversing the computed ratio",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "State X Education = (135/360) × 800 = (3/8) × 800 = ₹300 cr. State Y Education = (150/360) × 600 = (5/12) × 600 = ₹250 cr. Ratio = 300 : 250 = 6 : 5. Option A (9:10) is the most seductive error — it treats the sector angles as the ratio, completely ignoring that the two base totals differ.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:44+00:00",
+      "id": "sgk_QNT_DI_PIE_CHART_MIXED_00012"
+    },
+    {
+      "stem": "A pie chart shows the composition of a 720-member parliamentary committee: General 35%, OBC 30%, SC 20%, ST 10%, EWS 5%. A sub-committee is formed using ALL SC and ST members plus 60 newly inducted EWS members (no other categories). EWS members constitute what fraction of this sub-committee?",
+      "options": [
+        {
+          "option_text": "4/13, counting all original and inducted EWS members",
+          "is_correct": true
+        },
+        {
+          "option_text": "2/15, dividing total EWS by the original 720-member body",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/23, adding only the 60 new EWS and ignoring original 36",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/6, dividing original EWS only by SC-plus-ST total alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "SC = 20% of 720 = 144; ST = 10% of 720 = 72; original EWS = 5% of 720 = 36; total EWS in sub-committee = 36 + 60 = 96. Sub-committee size = 144 + 72 + 96 = 312. Fraction = 96/312 = 4/13. Option B (2/15) mistakenly uses the original 720 as denominator. Option C (5/23) forgets the pre-existing 36 EWS members: 60/(144+72+60) = 60/276 = 5/23.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:44+00:00",
+      "id": "sgk_QNT_DI_PIE_CHART_MIXED_00013"
     }
   ]
 }

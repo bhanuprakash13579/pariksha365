@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Direction and Distance",
+  "topic_code": "REAS_DIRECTION_DISTANCE_MIXED",
+  "description": "Covers basic direction mapping and distance calculation.",
+  "questions": [
+    {
+      "stem": "A man walks 5 km toward South and then turns to the right. After walking 3 km, he turns to the left and walks 5 km. Now in which direction is he from the starting place?",
+      "options": [
+        {
+          "option_text": "South-West",
+          "is_correct": true
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        },
+        {
+          "option_text": "South-East",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: Let the starting point be (0,0).\n1. Walks 5 km South: Current position is (0, -5).\n2. Turns right: Facing South, turning right means facing West. He walks 3 km West: Current position is (-3, -5).\n3. Turns left: Facing West, turning left means facing South. He walks 5 km South: Current position is (-3, -10).\nFrom the origin (0,0), the point (-3, -10) lies in the bottom-left quadrant, which is South-West.\nDECOY BUSTING: If you don't draw it and just read \"turns right, turns left,\" you might mistakenly think he is directly South. Drawing a quick map is essential.\nEXAM INSIGHT: Always draw a small cross denoting N, S, E, W before starting. Remember: Right turn = Clockwise. Left turn = Anti-clockwise.",
+      "subject": "Reasoning",
+      "topic": "Direction and Distance",
+      "topic_code": "REAS_DIRECTION_DISTANCE_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_MIXED_001"
+    },
+    {
+      "stem": "Rasik walked 20 m towards North. Then he turned right and walks 30 m. Then he turns right and walks 35 m. Then he turns left and walks 15 m. Finally, he turns left and walks 15 m. In which direction and how many metres is he from the starting position?",
+      "options": [
+        {
+          "option_text": "45 m East",
+          "is_correct": true
+        },
+        {
+          "option_text": "30 m East",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 m West",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 m West",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: Let's track his coordinates (x=East, y=North) from origin (0,0):\n1. 20m North: (0, 20). Facing N.\n2. Turns right (faces E), walks 30m: (30, 20).\n3. Turns right (faces S), walks 35m: (30, 20 - 35) = (30, -15).\n4. Turns left (faces E), walks 15m: (30 + 15, -15) = (45, -15).\n5. Turns left (faces N), walks 15m: (45, -15 + 15) = (45, 0).\nHis final position is (45, 0). From the origin (0,0), this is exactly 45 metres to the East.\nDECOY BUSTING: Tracking just the final line segments might lead you to guess 30m. Using a simple Cartesian coordinate system eliminates all drawing errors.\nEXAM INSIGHT: Coordinate tracking is the most foolproof method for direction problems involving many turns.",
+      "subject": "Reasoning",
+      "topic": "Direction and Distance",
+      "topic_code": "REAS_DIRECTION_DISTANCE_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_MIXED_002"
+    },
+    {
+      "stem": "At 6:00 PM, Reena stands facing the setting sun. She then turns 90° clockwise. Which direction is she now facing?",
+      "options": [
+        {
+          "option_text": "She faces South, turning toward the ground below her",
+          "is_correct": false
+        },
+        {
+          "option_text": "She faces North, after a clockwise quarter-turn from West",
+          "is_correct": true
+        },
+        {
+          "option_text": "She faces East, toward the direction of morning sunrise",
+          "is_correct": false
+        },
+        {
+          "option_text": "She faces South-West from her original standing position",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "The sun sets in the West, so Reena is initially facing West. A 90° clockwise turn from West leads to North (clockwise order: N→E→S→W→N, so West+clockwise 90° = North). Option A (South) is the common error — South would require a 90° anticlockwise turn from West, not clockwise.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:49+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_MIXED_00003"
+    },
+    {
+      "stem": "Rohan is initially facing South-East. He turns 135° in the anticlockwise direction. Which direction is he now facing?",
+      "options": [
+        {
+          "option_text": "He is now facing North, a primary cardinal direction",
+          "is_correct": true
+        },
+        {
+          "option_text": "He is now facing East, toward the morning sunrise side",
+          "is_correct": false
+        },
+        {
+          "option_text": "He is now facing West, opposite to the Eastern direction",
+          "is_correct": false
+        },
+        {
+          "option_text": "He is now facing North-East, an intercardinal direction",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "South-East lies at 135° clockwise from North. An anticlockwise rotation of 135° subtracts that angle: 135° − 135° = 0°, which corresponds to North. Option D (North-East = 45°) is the typical error made when candidates subtract only 90° instead of the full 135°.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:49+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_MIXED_00004"
+    },
+    {
+      "stem": "Priya walks 12 km North, then 5 km East, then 12 km South, then 3 km West. How far is she from her starting point and in which direction?",
+      "options": [
+        {
+          "option_text": "2 km East of her starting point exactly",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 km North-East of her starting point",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km West of her starting point exactly",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 km South of her starting point exactly",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "North–South legs cancel: 12 km N and 12 km S give zero net vertical displacement. East–West: 5 km E minus 3 km W = 2 km East. Final position is 2 km East of start. Option B (5 km NE) is the common error where candidates treat the full 5 km East leg as displacement without cancelling the equal North and South legs.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:49+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_MIXED_00005"
+    },
+    {
+      "stem": "Amit and Sumit start from the same point X. Amit walks 9 km North and Sumit walks 12 km East. What is the straight-line distance between their final positions?",
+      "options": [
+        {
+          "option_text": "21 km, the simple sum of both individual distances walked",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 km, the shortest path by the Pythagorean theorem",
+          "is_correct": true
+        },
+        {
+          "option_text": "10.8 km, obtained by averaging the two distances walked",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 km, equal to the longer of the two distances walked",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "The two paths form the legs of a right triangle. Hypotenuse = √(9² + 12²) = √(81 + 144) = √225 = 15 km. This is a classic 3-4-5 Pythagorean triple scaled by 3 (9-12-15). Option A (21 km) is the most common error — adding the distances as if they were collinear rather than perpendicular.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:49+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_MIXED_00006"
+    },
+    {
+      "stem": "A postman starts from post office P, rides 6 km East, then 8 km South, then 4 km East, then 8 km North, then 12 km West to reach point Q. In which direction is Q from P?",
+      "options": [
+        {
+          "option_text": "East of P, since total eastward movement was 10 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "West of P, since net horizontal position is 2 km leftward",
+          "is_correct": true
+        },
+        {
+          "option_text": "South-West of P, due to partial southward displacement",
+          "is_correct": false
+        },
+        {
+          "option_text": "North of P, since the N–S movements cancel each other out",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Tracking each leg: East 6 + East 4 = 10 km East total; South 8 then North 8 cancel to zero. West 12 km. Net East–West: 10 E − 12 W = 2 km West. Q is 2 km West of P. Option A is the classic error of summing only the eastward legs (6+4=10) without subtracting the larger westward leg (12 km).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:49+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_MIXED_00007"
+    },
+    {
+      "stem": "Starting from point X, Meghna walks 15 km North, 20 km East, 15 km South, 8 km West, then 9 km North. What is the straight-line distance between her final position and point X?",
+      "options": [
+        {
+          "option_text": "17 km, which accounts for all four directional components",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 km, the net displacement by the Pythagorean theorem",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 km, the net East–West horizontal component only",
+          "is_correct": false
+        },
+        {
+          "option_text": "67 km, the total path distance covering all five legs",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Step-by-step from X=(0,0): 15N→(0,15); 20E→(20,15); 15S→(20,0); 8W→(12,0); 9N→(12,9). Net displacement: 12 km East, 9 km North. Distance = √(12²+9²) = √(144+81) = √225 = 15 km (a 3-4-5 triple scaled by 3). Option C (12 km) is the error of reading only the horizontal component and ignoring the 9 km northward net. Option D is the total path length, not displacement.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:49+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_MIXED_00008"
+    },
+    {
+      "stem": "Ankita and Bharti start from the same point. Ankita walks 6 km East then 8 km North. Bharti walks 8 km South then 6 km West. In what direction is Ankita's final position relative to Bharti's final position?",
+      "options": [
+        {
+          "option_text": "North, since Ankita's total northward walk exceeded Bharti's",
+          "is_correct": false
+        },
+        {
+          "option_text": "North-East, as Ankita is both north and east of Bharti",
+          "is_correct": true
+        },
+        {
+          "option_text": "East, since the combined horizontal gap is 12 km apart",
+          "is_correct": false
+        },
+        {
+          "option_text": "South-West, which is Bharti's position relative to Ankita",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Ankita ends at (6, 8) and Bharti ends at (−6, −8). The vector from Bharti to Ankita is (6−(−6), 8−(−8)) = (12 East, 16 North). Since both components are positive, Ankita lies in the North-East quadrant from Bharti. Option C (East) is wrong because the northward component (16 km) is actually larger than the eastward (12 km), making North-East more accurate. Option D reverses the reference point — South-West is the direction of Bharti from Ankita, not Ankita from Bharti.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:08:49+00:00",
+      "id": "sgk_REAS_DIRECTION_DISTANCE_MIXED_00009"
+    }
+  ]
+}

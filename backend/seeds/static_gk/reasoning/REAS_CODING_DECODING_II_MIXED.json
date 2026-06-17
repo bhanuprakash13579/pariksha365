@@ -70,6 +70,216 @@
       "generator_tag": "v3-rich-explanation",
       "generated_at": "2026-05-23",
       "id": "sgk_REAS_CODING_DECODING_II_MIXED_002"
+    },
+    {
+      "stem": "In a certain code language, 'FLAME' is written as 'HNCOG'. How will 'SWORD' be written in the same code?",
+      "options": [
+        {
+          "option_text": "TXPSE — applying a +1 forward shift to each letter of SWORD",
+          "is_correct": false
+        },
+        {
+          "option_text": "WASVH — applying a +4 circular shift (Z wraps to A) to SWORD",
+          "is_correct": false
+        },
+        {
+          "option_text": "UYQTF — applying a +2 forward shift to each letter of SWORD",
+          "is_correct": true
+        },
+        {
+          "option_text": "VZRUG — applying a +3 forward shift to each letter of SWORD",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "The pattern is each letter shifted +2 forward: F→H, L→N, A→C, M→O, E→G confirms this. Applying the same rule to SWORD: S(19+2=21=U), W(23+2=25=Y), O(15+2=17=Q), R(18+2=20=T), D(4+2=6=F) → UYQTF. Option A uses a +1 shift giving TXPSE, while option D uses +3 giving VZRUG — both wrong by one step.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:41+00:00",
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_00003"
+    },
+    {
+      "stem": "In a certain code, each letter is replaced by its mirror in the alphabet (A↔Z, B↔Y, C↔X, ..., M↔N). If 'ROSE' is coded as 'ILHV', how will 'MANGO' be coded?",
+      "options": [
+        {
+          "option_text": "NZMTL — mirror rule applied: M↔N, A↔Z, N↔M, G↔T, O↔L",
+          "is_correct": true
+        },
+        {
+          "option_text": "MZMSL — only vowels A and O are mirrored; consonants left unchanged",
+          "is_correct": false
+        },
+        {
+          "option_text": "OZMVL — each letter shifted forward by its own alphabetical position",
+          "is_correct": false
+        },
+        {
+          "option_text": "NZMOL — first three letters correct but G and O positions swapped",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "Mirror formula: mirror of position n = 27−n. R(18)→I(9), O(15)→L(12), S(19)→H(8), E(5)→V(22) = ILHV ✓ confirms the rule. For MANGO: M(13)→N(14), A(1)→Z(26), N(14)→M(13), G(7)→T(20), O(15)→L(12) → NZMTL. Option B is wrong because the rule applies uniformly to all letters, not just vowels.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:41+00:00",
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_00004"
+    },
+    {
+      "stem": "In a certain code, the value of a word equals the sum of squares of the alphabetical positions of its letters (A=1, B=2, ... Z=26). If the value of 'ACE' is 35, what is the coded value of 'BIG'?",
+      "options": [
+        {
+          "option_text": "18 — sum of plain letter positions B(2)+I(9)+G(7) without squaring",
+          "is_correct": false
+        },
+        {
+          "option_text": "126 — product of the letter positions B(2)×I(9)×G(7) multiplied together",
+          "is_correct": false
+        },
+        {
+          "option_text": "134 — sum of squared positions: B²(4)+I²(81)+G²(49) totalled correctly",
+          "is_correct": true
+        },
+        {
+          "option_text": "153 — sum of squares treating I as the 10th letter due to off-by-one",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "ACE = 1²+3²+5² = 1+9+25 = 35 confirms the squaring rule. For BIG: B=2nd letter (2²=4), I=9th letter (9²=81), G=7th letter (7²=49). Sum = 4+81+49 = 134. Option A (18) adds positions without squaring. Option D (153) is a classic trap: if I is miscounted as position 10, then 4+100+49=153 — a plausible off-by-one error.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:41+00:00",
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_00005"
+    },
+    {
+      "stem": "In a coded language: 'sky is blue' = 'mop kir fen'; 'blue water lake' = 'fen nug taz'; 'lake is green' = 'taz kir vox'. What is the code word for 'green'?",
+      "options": [
+        {
+          "option_text": "kir — the code word for 'is', appearing in sentences 1 and 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "taz — the code word for 'lake', appearing in sentences 2 and 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "nug — the code word for 'water', found exclusively in sentence 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "vox — the code word for 'green', isolated from sentence 3 by deduction",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Sentences 1 and 2 share 'blue' → blue=fen. Sentences 2 and 3 share 'lake' → lake=taz. Sentences 1 and 3 share 'is' → is=kir. In sentence 3 ('lake is green' = 'taz kir vox'), taz and kir are already decoded, leaving green=vox. 'kir' (option A) is the most tempting distractor — it appears in the same sentence as 'green' but codes 'is'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:41+00:00",
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_00006"
+    },
+    {
+      "stem": "In a code language, odd-positioned letters (1st, 3rd, 5th) are shifted +3 forward and even-positioned letters (2nd, 4th, 6th) are shifted −2 backward. How is 'PENCIL' coded?",
+      "options": [
+        {
+          "option_text": "SHQFLO — all six letters uniformly shifted forward by +3 positions",
+          "is_correct": false
+        },
+        {
+          "option_text": "SCQALJ — odd positions +3 and even positions −2 applied correctly",
+          "is_correct": true
+        },
+        {
+          "option_text": "NCLAGJ — all six letters uniformly shifted backward by −2 positions",
+          "is_correct": false
+        },
+        {
+          "option_text": "NHLFGO — reversed rule applied: even positions get +3, odd get −2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Apply the alternating rule to PENCIL: P(1st,+3)→S; E(2nd,−2)→C; N(3rd,+3)→Q; C(4th,−2)→A; I(5th,+3)→L; L(6th,−2)→J → SCQALJ. Option A (SHQFLO) applies +3 to every letter without alternating. Option D (NHLFGO) is the reversed-rule trap — even positions get +3 and odd positions get −2 instead of the stated rule.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:41+00:00",
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_00007"
+    },
+    {
+      "stem": "In a certain code, a word is first written in reverse, then each letter is shifted 2 places forward (with Z→B, Y→A wrap). If 'STONE' is coded as 'GPQVU', what is the code for 'CHAIR'?",
+      "options": [
+        {
+          "option_text": "EJCKT — applying the +2 letter shift to CHAIR directly without reversing",
+          "is_correct": false
+        },
+        {
+          "option_text": "TKCJE — reversing CHAIR to RIAHC, then shifting each letter forward +2",
+          "is_correct": true
+        },
+        {
+          "option_text": "ULDKF — reversing CHAIR first, then shifting each letter forward by +3",
+          "is_correct": false
+        },
+        {
+          "option_text": "QHZGB — reversing CHAIR first, then shifting each letter backward by −1",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Verify: STONE reversed = ENOTS; E+2=G, N+2=P, O+2=Q, T+2=V, S+2=U → GPQVU ✓. For CHAIR: reverse = RIAHC; R(18+2=20=T), I(9+2=11=K), A(1+2=3=C), H(8+2=10=J), C(3+2=5=E) → TKCJE. Option A (EJCKT) is the most common wrong answer — it shifts CHAIR without reversing first: C→E, H→J, A→C, I→K, R→T = EJCKT. The reversal step is the critical differentiator.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:41+00:00",
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_00008"
+    },
+    {
+      "stem": "In a certain code, each letter's value = its position-in-word × its alphabetical rank (A=1). The word's code is the total of all letter values. Given 'CAT' = 65, what is the coded value of 'EXAM'?",
+      "options": [
+        {
+          "option_text": "43 — sum of plain alphabetical ranks E(5)+X(24)+A(1)+M(13) with no weighting",
+          "is_correct": false
+        },
+        {
+          "option_text": "65 — sum computed by counting word-positions from zero (0,1,2,3) not from one",
+          "is_correct": false
+        },
+        {
+          "option_text": "107 — sum using position-from-end × alphabetical rank for each letter",
+          "is_correct": false
+        },
+        {
+          "option_text": "108 — sum: 1×E(5)+2×X(24)+3×A(1)+4×M(13) = 5+48+3+52 totalled correctly",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "Verify CAT: C(1st)=1×3=3, A(2nd)=2×1=2, T(3rd)=3×20=60 → 3+2+60=65 ✓. For EXAM: E(1st)=1×5=5, X(2nd)=2×24=48, A(3rd)=3×1=3, M(4th)=4×13=52 → 5+48+3+52=108. Option B (65) is a deliberate trap — 0-indexed positions give 0×5+1×24+2×1+3×13=65, matching CAT's value exactly and luring test-takers. Option C (107) comes from reversing position order: 4×5+3×24+2×1+1×13=20+72+2+13=107.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:41+00:00",
+      "id": "sgk_REAS_CODING_DECODING_II_MIXED_00009"
     }
   ]
 }

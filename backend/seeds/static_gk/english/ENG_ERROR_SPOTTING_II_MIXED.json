@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-23-eng-es2-07",
       "generated_at": "2026-04-23T02:50:00+00:00",
       "id": "sgk_ENG_ERROR_SPOTTING_II_MIXED_00007"
+    },
+    {
+      "stem": "Spot the error in: 'He is an European (A) / who has worked as (B) / an engineer in (C) / this firm for years. (D)'",
+      "options": [
+        {
+          "option_text": "'an European' should be 'a European'",
+          "is_correct": true
+        },
+        {
+          "option_text": "'has worked' should be 'had worked'",
+          "is_correct": false
+        },
+        {
+          "option_text": "'worked' should be 'work' in this context",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sentence contains no grammatical error",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "Part A is wrong: 'European' begins with the consonant sound /juː/, so the article must be 'a', not 'an'. The rule is governed by pronunciation, not spelling — compare 'an MBA' (vowel sound) vs 'a university' (consonant sound). Option B is a common trap since 'has worked' (present perfect for ongoing employment) is grammatically valid.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:49:34+00:00",
+      "id": "sgk_ENG_ERROR_SPOTTING_II_MIXED_00008"
+    },
+    {
+      "stem": "Spot the error in: 'The doctor suggested (A) / that the patient rests (B) / for at least (C) / a week. (D)'",
+      "options": [
+        {
+          "option_text": "'suggested' should be 'had suggested'",
+          "is_correct": false
+        },
+        {
+          "option_text": "'rests' should be 'rest' (bare infinitive)",
+          "is_correct": true
+        },
+        {
+          "option_text": "'for at least' should be 'at least for'",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sentence contains no grammatical error",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Part B is wrong: verbs of recommendation — 'suggest', 'recommend', 'insist', 'demand' — trigger the mandative subjunctive, requiring the bare infinitive in the that-clause regardless of the subject. 'Rests' (third-person -s form) must be 'rest'. Option A is tempting but 'suggested' in the simple past is perfectly correct here.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:49:34+00:00",
+      "id": "sgk_ENG_ERROR_SPOTTING_II_MIXED_00009"
+    },
+    {
+      "stem": "Spot the error in: 'Despite of his poor health (A) / he attended (B) / all the scheduled (C) / lectures regularly. (D)'",
+      "options": [
+        {
+          "option_text": "'Despite of' is wrong; correct form is 'Despite'",
+          "is_correct": true
+        },
+        {
+          "option_text": "'attended' should be 'had attended' here",
+          "is_correct": false
+        },
+        {
+          "option_text": "'all the' should be 'all of the' correctly",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sentence contains no grammatical error",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Part A is wrong: 'despite' is itself a preposition equivalent to 'in spite of', so adding 'of' after it is redundant and incorrect. Correct forms are 'Despite his poor health' or 'In spite of his poor health'. Option C is a deliberate trap — both 'all the lectures' and 'all of the lectures' are standard English, so Part C carries no error.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:49:34+00:00",
+      "id": "sgk_ENG_ERROR_SPOTTING_II_MIXED_00010"
+    },
+    {
+      "stem": "Spot the error in: 'Either the director (A) / or his assistants (B) / is responsible (C) / for the oversight. (D)'",
+      "options": [
+        {
+          "option_text": "'Either' should be 'Neither' in the context",
+          "is_correct": false
+        },
+        {
+          "option_text": "'or' should be replaced with 'nor' here",
+          "is_correct": false
+        },
+        {
+          "option_text": "'is responsible' should be 'are responsible'",
+          "is_correct": true
+        },
+        {
+          "option_text": "The sentence contains no grammatical error",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Part C is wrong: the proximity rule applies with 'either...or' — the verb agrees with the subject immediately before it. 'Assistants' is plural, so the verb must be 'are responsible', not 'is responsible'. Option B is the classic trap: 'either...or' is a standard affirmative correlative and there is no rule requiring it to become 'neither...nor'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:49:34+00:00",
+      "id": "sgk_ENG_ERROR_SPOTTING_II_MIXED_00011"
+    },
+    {
+      "stem": "Spot the error in: 'No sooner had (A) / the bell rung (B) / then the children (C) / rushed out. (D)'",
+      "options": [
+        {
+          "option_text": "'had' should be 'did' in this structure",
+          "is_correct": false
+        },
+        {
+          "option_text": "'rung' should be 'rang' since the action is past",
+          "is_correct": false
+        },
+        {
+          "option_text": "'then' should be 'than' in this idiom",
+          "is_correct": true
+        },
+        {
+          "option_text": "The sentence contains no grammatical error",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Part C is wrong: the fixed correlative is 'no sooner...than', never 'no sooner...then'. 'Then' indicates a time sequence; 'than' is grammatically required by the idiom. Option B is the strongest trap: after auxiliary 'had', the past participle 'rung' is correct — substituting simple past 'rang' would actually introduce an error, not fix one.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:49:34+00:00",
+      "id": "sgk_ENG_ERROR_SPOTTING_II_MIXED_00012"
+    },
+    {
+      "stem": "Spot the error in: 'Seldom I have witnessed (A) / such dedication (B) / among the young (C) / officers. (D)'",
+      "options": [
+        {
+          "option_text": "'Seldom I have' needs inversion: 'Seldom have I'",
+          "is_correct": true
+        },
+        {
+          "option_text": "'such dedication' should be 'such a dedication'",
+          "is_correct": false
+        },
+        {
+          "option_text": "'among the young' should be 'between the young'",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sentence contains no grammatical error",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Part A is wrong: negative or restrictive adverbials fronted for emphasis — 'seldom', 'rarely', 'hardly', 'never', 'little', 'not only' — trigger obligatory subject-auxiliary inversion. 'Seldom I have witnessed' must be 'Seldom have I witnessed'. Option C traps students who confuse 'among' (three or more) with 'between' (exactly two); referring to a group of officers, 'among' is the correct preposition.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:49:34+00:00",
+      "id": "sgk_ENG_ERROR_SPOTTING_II_MIXED_00013"
+    },
+    {
+      "stem": "Spot the error in: 'The principal, as well as (A) / his teachers, have been (B) / summoned to appear (C) / before the board. (D)'",
+      "options": [
+        {
+          "option_text": "'as well as' should be changed to 'and'",
+          "is_correct": false
+        },
+        {
+          "option_text": "'have been' should be 'has been' here",
+          "is_correct": true
+        },
+        {
+          "option_text": "'to appear' should be 'for appearing' here",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sentence contains no grammatical error",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Part B is wrong: 'as well as', 'along with', 'together with', and 'in addition to' are parenthetical connectors, not coordinating conjunctions. The grammatical subject remains 'The principal' (singular), so the verb must be 'has been', not 'have been'. Option A is the strongest trap — replacing 'as well as' with 'and' would create a compound plural subject and make 'have been' correct, but the original connector is itself grammatically acceptable.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:49:34+00:00",
+      "id": "sgk_ENG_ERROR_SPOTTING_II_MIXED_00014"
     }
   ]
 }

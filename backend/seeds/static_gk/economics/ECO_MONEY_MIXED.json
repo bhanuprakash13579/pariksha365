@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-22-eco-mon-07",
       "generated_at": "2026-04-22T06:00:00+00:00",
       "id": "sgk_ECO_MONEY_MIXED_00007"
+    },
+    {
+      "stem": "Statutory Liquidity Ratio (SLR) requires banks to maintain a minimum fraction of their Net Demand and Time Liabilities (NDTL) in which of the following permissible forms?",
+      "options": [
+        {
+          "option_text": "Cash deposits held with Reserve Bank of India alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gold, cash, or RBI-approved government securities",
+          "is_correct": true
+        },
+        {
+          "option_text": "Foreign exchange reserves and approved equity holdings",
+          "is_correct": false
+        },
+        {
+          "option_text": "Fixed deposits placed with any scheduled commercial bank",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "SLR mandates that banks park a prescribed share of NDTL in liquid assets: gold, cash in hand, or government and other approved securities. Option A is wrong because SLR assets are not restricted to RBI deposits — that is CRR. Options C and D name instruments that are not RBI-approved SLR-eligible assets.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:36:46+00:00",
+      "id": "sgk_ECO_MONEY_MIXED_00008"
+    },
+    {
+      "stem": "Under the Marginal Standing Facility (MSF), scheduled commercial banks can borrow overnight from the RBI by pledging securities drawn specifically from which source?",
+      "options": [
+        {
+          "option_text": "Excess CRR balances maintained with the Reserve Bank of India",
+          "is_correct": false
+        },
+        {
+          "option_text": "Securities held within the bank's own SLR portfolio quota",
+          "is_correct": true
+        },
+        {
+          "option_text": "Foreign currency assets held in overseas NOSTRO accounts",
+          "is_correct": false
+        },
+        {
+          "option_text": "Subordinated debt instruments previously issued to retail depositors",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "MSF allows banks to borrow overnight by dipping into their SLR-eligible securities portfolio (up to 2% of NDTL), even if doing so temporarily breaches the SLR floor. This distinguishes MSF from the repo window, where only excess (non-SLR) securities are pledged. CRR balances (Option A) cannot be pledged under MSF.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:36:46+00:00",
+      "id": "sgk_ECO_MONEY_MIXED_00009"
+    },
+    {
+      "stem": "As per RBI's Master Direction on Priority Sector Lending, what is the agriculture sub-target that domestic scheduled commercial banks must lend as a share of Adjusted Net Bank Credit (ANBC)?",
+      "options": [
+        {
+          "option_text": "10% of ANBC, as prescribed under the Basel II framework norms",
+          "is_correct": false
+        },
+        {
+          "option_text": "18% of ANBC, with 8% ring-fenced for small and marginal farmers",
+          "is_correct": true
+        },
+        {
+          "option_text": "25% of ANBC, as mandated by the Ministry of Finance guidelines",
+          "is_correct": false
+        },
+        {
+          "option_text": "40% of ANBC, which is the aggregate priority sector lending ceiling",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "The agriculture-specific sub-target under Priority Sector Lending is 18% of ANBC, of which at least 8% must flow to small and marginal farmers. Option D (40%) is the overall PSL target across all categories — a common mix-up. 10% and 25% do not correspond to any agriculture PSL threshold.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:36:46+00:00",
+      "id": "sgk_ECO_MONEY_MIXED_00010"
+    },
+    {
+      "stem": "Which of the following most accurately identifies a key regulatory distinction between a Non-Banking Financial Company (NBFC) and a scheduled commercial bank in India?",
+      "options": [
+        {
+          "option_text": "An NBFC can freely issue demand drafts and letters of credit",
+          "is_correct": false
+        },
+        {
+          "option_text": "An NBFC can extend loans secured against movable and immovable assets",
+          "is_correct": false
+        },
+        {
+          "option_text": "An NBFC cannot accept demand deposits repayable instantly on call",
+          "is_correct": true
+        },
+        {
+          "option_text": "An NBFC is regulated exclusively by the Ministry of Finance alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "The single sharpest legal distinction is that NBFCs cannot accept demand deposits (current/savings accounts withdrawable on demand). They may accept time deposits but are excluded from the payment and settlement system and deposit insurance (DICGC). Option A is wrong — NBFCs cannot issue demand drafts. Option D is wrong — RBI is the primary regulator of NBFCs, not the Finance Ministry.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:36:46+00:00",
+      "id": "sgk_ECO_MONEY_MIXED_00011"
+    },
+    {
+      "stem": "In a 'reverse repo' transaction under the RBI's Liquidity Adjustment Facility (LAF), which of the following correctly describes the mechanics of the operation?",
+      "options": [
+        {
+          "option_text": "RBI lends short-term funds to banks by buying their government securities",
+          "is_correct": false
+        },
+        {
+          "option_text": "Banks park surplus cash with RBI by purchasing government securities temporarily",
+          "is_correct": true
+        },
+        {
+          "option_text": "RBI provides emergency funds against SLR-ineligible collateral to banks",
+          "is_correct": false
+        },
+        {
+          "option_text": "Banks borrow from RBI against pledge of their approved CRR surplus balances",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "In a reverse repo, banks lend surplus funds to RBI: banks buy government securities from RBI with an agreement that RBI repurchases them — this absorbs excess liquidity from the system. Option A describes a plain repo (liquidity injection, not absorption). Option C describes the MSF/SLF window. RBI absorbs liquidity through reverse repos while injecting it through repos.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:36:46+00:00",
+      "id": "sgk_ECO_MONEY_MIXED_00012"
+    },
+    {
+      "stem": "Under the revised RBI Prompt Corrective Action (PCA) framework effective January 2022, mandatory restrictions on a bank are triggered by breach of threshold limits on which combination of indicators?",
+      "options": [
+        {
+          "option_text": "CRAR or CET1, Net NPA ratio, and Tier 1 Leverage Ratio",
+          "is_correct": true
+        },
+        {
+          "option_text": "Gross NPA ratio, Return on Equity, and Credit-Deposit Ratio",
+          "is_correct": false
+        },
+        {
+          "option_text": "SLR shortfall, CRR deficit, and Priority Sector Lending gap",
+          "is_correct": false
+        },
+        {
+          "option_text": "Repo Rate exposure, FOREX reserves, and Capital Conservation Buffer",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "The 2021-revised PCA framework (effective 1 January 2022) uses three risk dimensions: capital (CRAR / CET1), asset quality (Net NPA ratio), and leverage (Tier 1 Leverage Ratio). Return on Assets — a parameter in the earlier framework — was removed in the 2021 revision; candidates who memorised the old framework are misled by its omission. Options B, C, and D mix in metrics that are not PCA trigger parameters.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:36:46+00:00",
+      "id": "sgk_ECO_MONEY_MIXED_00013"
+    },
+    {
+      "stem": "The Monetary Policy Committee (MPC) of RBI comprises six members and decides the policy repo rate by majority vote. What happens constitutionally if the vote ends in a tie?",
+      "options": [
+        {
+          "option_text": "The Finance Minister casts the deciding vote as an ex-officio MPC member",
+          "is_correct": false
+        },
+        {
+          "option_text": "The RBI Governor exercises a second casting vote to resolve the deadlock",
+          "is_correct": true
+        },
+        {
+          "option_text": "The matter is referred to the RBI Central Board of Directors for resolution",
+          "is_correct": false
+        },
+        {
+          "option_text": "The decision is deferred automatically to the next scheduled MPC meeting date",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Section 45ZI(8) of the RBI Act, 1934 explicitly provides that 'in the event of an equality of votes, the Governor shall have a second or casting vote.' The Finance Minister is not an MPC member (Option A is a common misconception — the government nominates three external members, but the Finance Minister sits outside the MPC). The Central Board has no MPC jurisdiction (Option C), and deferral is not a statutory resolution mechanism (Option D).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:36:46+00:00",
+      "id": "sgk_ECO_MONEY_MIXED_00014"
     }
   ]
 }

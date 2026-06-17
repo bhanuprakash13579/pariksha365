@@ -168,7 +168,7 @@ Binomial name of humans → <strong>Homo sapiens</strong>
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["CLASSIFICATION OF LIFE"]:::root
     R --> K["5 Kingdoms — Whittaker 1969"]:::key
     R --> T["Taxonomic Ranks"]:::proc
@@ -236,6 +236,18 @@ flowchart TD
 | **Cell wall** | Rigidity; protection | Building walls |
 | **Centrosome** | Spindle formation (animal cells) | Foreman |
 | **Peroxisome** | Breaks H₂O₂ via catalase | Detox unit |
+
+<div class="mnemonic">
+
+**"My Rival Gets Little Credit, Victories Are Very Costly"** — Mitochondria, Ribosome, (Rough) ER, (Golgi) Letters out, Chloroplast, Vacuole, (cell) Apparatus, Very (vacuole), Centrosome. Simpler anchor: **"Power, Print, Post"** — Mitochondria (Power), Ribosome (Print proteins), Golgi (Post/dispatch). Lysosomes = **"Suicide Bags"** (exam's favourite nickname).
+
+</div>
+
+<div class="keypoint">
+
+**Analogy — The cell is a city:** Nucleus = Mayor's office (makes all decisions). Mitochondria = Power station. Ribosomes = Factories (protein production). Golgi = Post office (packages + ships). Lysosomes = Waste disposal trucks. Cell membrane = City boundary wall (controls what enters/exits).
+
+</div>
 
 <div class="examtip">
 <strong>Four organelle questions examiners love:</strong><br>
@@ -332,6 +344,14 @@ flowchart TD
 
 <div class="mnemonic">
 <strong>Phases of mitosis: PMAT</strong> — Prophase, Metaphase, Anaphase, Telophase. In meiosis, the same phases happen twice (Meiosis I and Meiosis II), but Prophase I has the special event of crossing over (chiasmata formation), which creates genetic variation.
+
+**Mitosis vs Meiosis shortcut:** Mitosis = **"Makes Two Twins"** (2 identical daughter cells, diploid, for growth/repair). Meiosis = **"Makes Four Minors"** (4 haploid cells, for gametes). Mitosis is your body repairing a cut. Meiosis is making sperm/egg cells. **"M**itosis = **M**aintenance; **M**eiosis = **M**aking gametes."
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "Meiosis produces 4 cells with the same chromosome number." — FALSE. Meiosis halves the chromosome number (diploid 2n → haploid n). Each of the 4 cells has HALF the parent's chromosomes. Mitosis produces 2 cells with the SAME chromosome number. Exam question: "How many chromosomes in a human sperm?" → 23 (haploid), not 46.
+
 </div>
 
 ### Body extremes — memorise cold
@@ -352,7 +372,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["THE CELL"]:::root
     R --> P["Prokaryote<br>No nucleus — Bacteria, Archaea"]:::key
     R --> E["Eukaryote<br>True nucleus — Plants, Animals, Fungi"]:::key
@@ -462,9 +482,21 @@ flowchart TD
 "Classic monohybrid ratio?" → <strong>3:1</strong> (phenotypic) and <strong>1:2:1</strong> (genotypic)
 </div>
 
+<div class="mnemonic">
+
+**Mendel's ratios — two numbers to remember:** Monohybrid = **3:1** phenotype. Dihybrid = **9:3:3:1** phenotype. Quick check: 3:1 adds to 4 (total offspring in one cross). 9:3:3:1 adds to 16 (two traits = 4×4 combinations). If the exam gives a ratio — count the total. 4 = monohybrid result. 16 = dihybrid result.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "Phenotypic ratio and genotypic ratio are the same." — FALSE. Monohybrid cross (Tt × Tt): Phenotypic ratio = 3:1 (3 tall : 1 dwarf). Genotypic ratio = 1:2:1 (1 TT : 2 Tt : 1 tt). Examiners ask both. Phenotypic = what you SEE. Genotypic = actual genes. Both Tt and TT look tall (same phenotype), but different genotypes.
+
+</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["MENDELIAN GENETICS"]:::root
     R --> L["Mendel's Two Laws"]:::proc
     R --> P["Pea Plant Traits"]:::key
@@ -475,7 +507,7 @@ flowchart TD
     P --> P1["Dominant: Tall, Round, Yellow<br>Recessive: Dwarf, Wrinkled, Green"]:::key
     C --> C1["Monohybrid cross: 3:1 phenotype<br>Genotype ratio: 1:2:1"]:::key
     C --> C2["Dihybrid cross: 9:3:3:1<br>Two traits simultaneously"]:::key
-    BL --> BL1["A + B = co-dominant<br>O = recessive; AB = universal recipient<br>O = universal donor"]:::key
+    BL --> BL1["A + B = co-dominant<br>O = recessive; AB = universal recipient<br>O− = universal donor"]:::key
     classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
     classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
     classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
@@ -642,7 +674,7 @@ Sex of the baby is determined by the <strong>father's sperm</strong>, not the mo
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["DNA and MOLECULAR GENETICS"]:::root
     R --> S["DNA Structure"]:::key
     R --> C["Central Dogma"]:::proc
@@ -704,7 +736,7 @@ Lamarck's theory → inheritance of acquired characters (giraffe neck story) —
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["EVOLUTION"]:::root
     R --> D["Darwin 1859"]:::date
     R --> E["Evidence for Evolution"]:::proc
@@ -758,7 +790,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["PLANT KINGDOM OVERVIEW"]:::root
     R --> D["5 Plant Divisions"]:::proc
     R --> MC["Monocot vs Dicot Angiosperms"]:::key
@@ -903,9 +935,23 @@ flowchart TD
 "CAM plants open stomata when?" → <strong>Night</strong> (to reduce water loss in desert conditions)
 </div>
 
+<div class="mnemonic">
+
+**Photosynthesis in one line: "CO₂ + Water + Light → Sugar + Oxygen"** — 6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂. Analogy: Think of a plant as a solar-powered kitchen: sunlight = electricity, CO₂ = raw ingredient from air, water = raw ingredient from soil, glucose = the cooked meal, oxygen = exhaust gas released.
+
+**Light reaction vs Dark reaction (Calvin):** Light reaction = charges the battery (makes ATP + NADPH). Calvin cycle = uses the battery to build glucose. "**Light charges, Dark builds.**"
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "Dark reactions require darkness." — This is FALSE. The Calvin cycle is called "dark" because it doesn't directly use light — but it runs during the DAY using ATP and NADPH from the light reactions. Examiners word it as "Does the Calvin cycle occur at night?" — the answer is NO, it predominantly runs during the day.
+
+</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["PHOTOSYNTHESIS"]:::root
     R --> EQ["Core Equation"]:::key
     R --> PH["Two Phases"]:::proc
@@ -942,9 +988,26 @@ flowchart TD
 "Hormone responsible for apical dominance?" → <strong>Auxin</strong> — suppresses lateral buds; pruning removes the apex and removes auxin dominance, causing bushy growth.
 </div>
 
+<div class="mnemonic">
+
+**Plant hormone quick links — 5 hormones, 5 functions:**
+- **A**uxin = **A**ngle (bends plant toward light — phototropism)
+- **G**ibberellin = **G**row tall (stem elongation, seed germination)
+- **C**ytokinin = **C**ell division (stays young, delays aging)
+- **ABA** = **A**bort/Avoid (stress, stomata close, dormancy)
+- **E**thylene = **E**nds growth (ripens fruit, causes leaf fall — the only gaseous hormone)
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "Ethylene is a liquid plant hormone." — FALSE. Ethylene (C₂H₄) is the only **gaseous** plant hormone. All others (auxin, gibberellin, cytokinin, ABA) are dissolved in plant fluids. Also: "ABA promotes growth." — FALSE. ABA = Abscisic Acid = stress hormone that promotes **dormancy and closure**, not growth.
+
+</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["PLANT HORMONES"]:::root
     R --> H1["Auxin (IAA)"]:::key
     R --> H2["Gibberellin (GA)"]:::key
@@ -1010,7 +1073,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["PLANT REPRODUCTION"]:::root
     R --> PO["Pollination Agents"]:::proc
     R --> DF["Double Fertilization<br>Unique to Angiosperms"]:::key
@@ -1136,7 +1199,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["DIGESTIVE SYSTEM"]:::root
     R --> PT["Digestive Path"]:::proc
     R --> EN["Key Enzymes + Sites"]:::key
@@ -1168,7 +1231,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["RESPIRATORY SYSTEM"]:::root
     R --> AP["Air Path"]:::proc
     R --> LV["Lung Volumes"]:::key
@@ -1317,6 +1380,18 @@ flowchart TD
 "Normal Hb: male/female?" → <strong>13–17 / 12–15.5 g/dL</strong>
 </div>
 
+<div class="mnemonic">
+
+**Blood group donor-recipient rule — "Give to ALL, take from ALL":** O gives to everyone (universal donor — O has no antigens, so no rejection). AB receives from everyone (universal recipient — AB has no antibodies, so accepts all). Memory: **"O = Open to give"** and **"AB = Accepts Broadly."**
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "Universal donor" = O **negative** (O−), NOT just O. The Rh factor matters too — an O+ person cannot donate to an Rh-negative patient safely. Examiners sometimes test "O" vs "O negative" as a trap. Always say O negative for universal donor. AB positive for universal recipient.
+
+</div>
+
 ### WBC types (granulocytes + agranulocytes)
 
 | WBC | % | Function |
@@ -1333,7 +1408,7 @@ Examiners trick students with: "Biggest WBC?" → <strong>Monocyte</strong>. "Sm
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["CIRCULATORY SYSTEM"]:::root
     R --> DC["Double Circulation"]:::proc
     R --> HT["Heart Facts"]:::key
@@ -1382,9 +1457,21 @@ flowchart TD
 Key neurotransmitters: acetylcholine, dopamine, serotonin, GABA, noradrenaline
 </div>
 
+<div class="mnemonic">
+
+**Brain regions in one sentence: "Cerebrum Thinks, Cerebellum Balances, Medulla Maintains."** Cerebrum = thinking, speech, memory (the CEO). Cerebellum = balance and coordination (the gyroscope). Medulla = automatic functions like heartbeat, breathing (the autopilot). Hypothalamus = hunger, thirst, temperature (the thermostat).
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP — Cerebellum vs Cerebrum:** "Balance centre?" = **Cerebellum** (NOT cerebrum). "Thinking centre?" = **Cerebrum** (NOT cerebellum). Students frequently swap these. Memory: **CerebELLum = bELLance (balance)**. Damage to cerebellum → staggering gait. Damage to cerebrum → loss of thinking/speech. These two appear as swap-the-answer traps every year.
+
+</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["NERVOUS SYSTEM"]:::root
     R --> DIV["Divisions"]:::proc
     R --> BR["Brain Parts + Functions"]:::key
@@ -1430,9 +1517,21 @@ flowchart TD
 "Love hormone / milk ejection?" → <strong>Oxytocin</strong>
 </div>
 
+<div class="mnemonic">
+
+**Hormone-gland quick links:** "**Pituitary = Boss**" (master gland, controls all others — like a CEO over department heads). "**Thyroid = Throttle**" (controls metabolic rate — high thyroid = engine racing; low thyroid = engine slow). "**Adrenal = Alarm**" (adrenaline fires when alarmed = fight-or-flight). "**Pancreas = Glucose Police**" (insulin = lowers sugar; glucagon = raises sugar).
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP — Goitre vs Cretinism:** Both are thyroid/iodine deficiency diseases — but Goitre = enlarged thyroid gland in adults. Cretinism = stunted mental and physical development in children born to iodine-deficient mothers. Examiners ask: "which disease in children?" → Cretinism (not goitre). Also: "largest endocrine gland?" = Thyroid (NOT pituitary, which is the master gland but small).
+
+</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["ENDOCRINE SYSTEM"]:::root
     R --> PG["Pituitary — Master Gland"]:::key
     R --> TH["Thyroid Gland"]:::key
@@ -1463,7 +1562,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["EXCRETORY SYSTEM"]:::root
     R --> OR["Organs"]:::proc
     R --> NP["Nephron — functional unit"]:::key
@@ -1518,11 +1617,233 @@ flowchart TD
 
 \newpage
 
+## Chapter D8 — Reproductive System {#chapter-d8}
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart LR
+    R["REPRODUCTIVE SYSTEM"]:::root
+    R --> MR["Male System"]:::key
+    R --> FR["Female System"]:::key
+    R --> MC["Menstrual Cycle"]:::key
+    R --> FP["Fertilization & Pregnancy"]:::key
+    R --> TR["TRAPS"]:::trap
+    MR --> MR1["Testes → Epididymis → Vas deferens → Urethra<br>Spermatogenesis: 1 cell → 4 haploid sperm<br>Leydig cells produce testosterone"]:::key
+    FR --> FR1["Ovaries → Fallopian tube → Uterus → Cervix → Vagina<br>Oogenesis: 1 cell → 1 egg + 3 polar bodies<br>Follicles: estrogen; Corpus luteum: progesterone"]:::key
+    MC --> MC1["Day 1–5: Menstruation<br>Day 6–13: Follicular (FSH → estrogen rises)<br>Day 14: Ovulation (LH surge)<br>Day 15–28: Luteal (corpus luteum → progesterone)"]:::key
+    FP --> FP1["Fertilization: FALLOPIAN TUBE (not uterus!)<br>Implantation: Day 6–7 in uterus<br>hCG → basis of pregnancy test<br>Gestation: ~280 days (40 weeks)"]:::key
+    TR --> TR1["Fertilization ≠ uterus; Oogenesis ≠ 4 eggs<br>Vasectomy = male; Tubectomy = female<br>Pregnancy test hormone = hCG (not progesterone)"]:::trap
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
+The reproductive system ensures the continuation of the species. It is tested in SSC CGL/CHSL and RRB NTPC in two main ways: (a) anatomy + hormone mapping, and (b) menstrual cycle phases and contraception types.
+
+---
+
+### Male Reproductive System
+
+The primary organs are the **testes**, housed in the **scrotum** — which keeps them 2–3°C below body temperature, because human sperm cannot develop at 37°C.
+
+**Pathway of sperm:**
+
+Seminiferous tubules (sperm formed here) → Epididymis (maturation/storage) → Vas deferens → Ejaculatory duct → Urethra → Penis
+
+**Spermatogenesis** (sperm production):
+
+- Diploid (2n) **spermatogonia** undergo mitosis → primary spermatocytes → meiosis I → secondary spermatocytes → meiosis II → **4 haploid (n) spermatids** → mature sperm.
+- Each primary spermatocyte yields **4 functional sperm** — remember this contrast with oogenesis (1 egg).
+
+**Accessory glands and their secretions:**
+
+| Gland | Secretion | Function |
+|-------|-----------|----------|
+| Seminal vesicles | Fructose-rich fluid | Energy source for sperm motility |
+| Prostate gland | Alkaline fluid | Neutralises vaginal acidity (sperm protection) |
+| Cowper's (bulbourethral) glands | Clear mucus | Lubrication before ejaculation |
+
+**Semen** = sperm + secretions from all three glands above.
+
+**Testosterone** is produced by **Leydig cells** (interstitial cells) in the testes. It drives secondary male characteristics: deeper voice, facial hair, muscle mass, libido.
+
+<div class="keypoint">
+<strong>Key male reproductive facts:</strong><br>
+"Sperm production site?" → <strong>Seminiferous tubules</strong> (inside testes)<br>
+"Testosterone-producing cells?" → <strong>Leydig cells</strong><br>
+"Why scrotum outside body?" → Sperm need <strong>2–3°C below body temperature</strong> (35°C) for viability<br>
+"How many sperm from 1 primary spermatocyte?" → <strong>4</strong> (via meiosis)
+</div>
+
+---
+
+### Female Reproductive System
+
+**Primary organs:** Ovaries (produce eggs + hormones estrogen and progesterone).
+
+**Pathway of egg:**
+
+Ovary → Fallopian tube (site of fertilization) → Uterus (site of implantation/development) → Cervix → Vagina
+
+**Oogenesis** (egg production):
+
+- Diploid **oogonium** → primary oocyte → meiosis I (unequal division) → secondary oocyte + **first polar body** → meiosis II → **1 egg (ovum) + second polar body** (which also divides) → net result: **1 egg + 3 polar bodies**.
+- Contrast with spermatogenesis: oogenesis gives **1 functional cell** (egg), spermatogenesis gives **4 functional cells** (sperm). The three polar bodies are non-functional and degenerate.
+
+**Hormones:**
+
+| Hormone | Produced by | Action |
+|---------|------------|--------|
+| Estrogen | Ovarian follicles | Secondary female characteristics; uterine lining (endometrium) growth |
+| Progesterone | Corpus luteum | Maintains uterine lining; sustains pregnancy |
+| FSH | Anterior pituitary | Stimulates follicle growth in ovary |
+| LH | Anterior pituitary | Triggers ovulation; forms corpus luteum |
+
+---
+
+### Menstrual Cycle (28 days — very frequently tested)
+
+The menstrual cycle prepares the uterus for a potential pregnancy each month.
+
+| Phase | Days | Key event |
+|-------|------|-----------|
+| **Menstruation** | 1–5 | Uterine lining sheds (if no fertilization in previous cycle); estrogen and progesterone are low |
+| **Follicular / Proliferative** | 6–13 | FSH from pituitary → follicle grows → estrogen rises → endometrium thickens |
+| **Ovulation** | ~Day 14 | LH surge from pituitary → mature follicle ruptures → egg released into fallopian tube |
+| **Luteal / Secretory** | 15–28 | Ruptured follicle → corpus luteum → secretes progesterone → endometrium maintained for implantation |
+
+**If no fertilization occurs:** corpus luteum degenerates (after ~10 days) → progesterone drops → endometrium breaks down → menstruation begins (Day 1 of next cycle).
+
+<div class="keypoint">
+<strong>Menstrual cycle quick reference:</strong><br>
+"Which hormone triggers ovulation?" → <strong>LH surge</strong> (Day 14)<br>
+"Which phase does FSH dominate?" → <strong>Follicular phase</strong> (Days 6–13)<br>
+"Which structure produces progesterone?" → <strong>Corpus luteum</strong><br>
+"Duration of luteal phase?" → <strong>14 days</strong> (most constant part of cycle)
+</div>
+
+---
+
+### Fertilization & Pregnancy
+
+**Where does fertilization occur?** In the **ampulla of the fallopian tube** (upper third). This is an extremely common exam trap — many candidates say "uterus."
+
+**Developmental sequence after fertilization:**
+
+Zygote (fertilized egg) → Cleavage → Morula (solid ball of cells) → Blastocyst (hollow) → Implantation in uterine wall (Day 6–7 after fertilization)
+
+**Key pregnancy hormones:**
+
+| Hormone | Source | Role |
+|---------|--------|------|
+| hCG (human chorionic gonadotropin) | Placenta (trophoblast cells) | Maintains corpus luteum in early pregnancy; basis of pregnancy test (detected in urine) |
+| Progesterone | Corpus luteum (early); placenta (after ~3 months) | Maintains uterine lining; prevents uterine contractions |
+| Estrogen | Placenta | Uterine growth; breast development during pregnancy |
+
+**Placenta:** Temporary organ formed from embryonic (chorion) and maternal (uterine wall) tissue. It exchanges oxygen, nutrients, and waste between mother and foetus without direct mixing of blood. It also acts as an endocrine organ, producing hCG, progesterone and estrogen from the 3rd month.
+
+**Gestation period:** ~280 days (40 weeks / 9 months) in humans.
+
+---
+
+### Contraception
+
+| Type | Method | Mechanism |
+|------|--------|-----------|
+| **Barrier** | Condom, diaphragm, cervical cap | Physical block — prevents sperm from reaching egg |
+| **Hormonal (daily pill)** | Combined oral contraceptive pill | Synthetic estrogen + progesterone — inhibit FSH/LH → suppress ovulation |
+| **Emergency contraceptive** | Plan B (levonorgestrel), iPill | High-dose progestin — delays ovulation or prevents implantation |
+| **IUD — Copper-T** | Intrauterine device (copper) | Copper ions are spermicidal; also prevents implantation |
+| **IUD — Hormonal** | Mirena, etc. | Releases progestin → thickens cervical mucus; suppresses ovulation |
+| **Surgical — Vasectomy** | Male: vas deferens cut/tied | Permanent; sperm cannot exit; does NOT affect testosterone or sexual drive |
+| **Surgical — Tubectomy** | Female: fallopian tubes cut/tied | Permanent; egg cannot travel to uterus; does NOT affect hormones or menstruation |
+| **Natural — Rhythm method** | Avoid Days 10–17 of cycle | Least reliable; fertile window timing; no devices or hormones |
+
+<div class="pitfall">
+⚠️ <strong>Contraception traps:</strong><br>
+"Vasectomy is done in?" → <strong>MALES</strong> (vas deferens is cut) — do not confuse with tubectomy.<br>
+"Tubectomy is done in?" → <strong>FEMALES</strong> (fallopian tubes are cut/tied).<br>
+"Does vasectomy affect testosterone?" → <strong>NO</strong> — Leydig cells still produce testosterone; only sperm pathway is blocked.<br>
+"Oral pills work by?" → Suppressing <strong>ovulation</strong> (not killing sperm).
+</div>
+
+---
+
+### Reproductive Health & STDs
+
+Sexually transmitted diseases (STDs) or STIs are tested by their causative agent and one or two distinguishing features.
+
+| Disease | Causative Agent | Type | Key Distinguishing Feature |
+|---------|----------------|------|---------------------------|
+| **HIV/AIDS** | HIV (Human Immunodeficiency Virus) | Retrovirus | Destroys CD4+ T-helper cells → immune collapse; no cure; transmitted via blood, unprotected sex, mother-to-child |
+| **Gonorrhoea** | *Neisseria gonorrhoeae* | Bacterium | Purulent ("drip") discharge; penicillin-resistant strains (MRNG) now common |
+| **Syphilis** | *Treponema pallidum* | Bacterium | 3 stages; Stage 1: painless chancre (sore); if untreated → systemic damage |
+| **Chlamydia** | *Chlamydia trachomatis* | Obligate intracellular bacterium | Most common bacterial STI globally; often asymptomatic |
+| **Genital herpes** | Herpes simplex virus-2 (HSV-2) | Virus | Lifelong infection with recurrent blistering episodes; no cure |
+| **Genital warts / Cervical cancer** | Human papillomavirus (HPV) | Virus | Types 6/11 → warts; types 16/18 → cervical cancer; vaccine available (Gardasil) |
+| **Hepatitis B** | Hepatitis B virus (HBV) | Virus | Can spread sexually; affects liver; vaccine available |
+
+<div class="keypoint">
+<strong>STD quick facts for exams:</strong><br>
+"HIV destroys which cells?" → <strong>CD4+ T-lymphocytes (T-helper cells)</strong><br>
+"HIV is classified as a?" → <strong>Retrovirus</strong> (uses reverse transcriptase; RNA genome)<br>
+"Most common bacterial STI globally?" → <strong>Chlamydia</strong><br>
+"Which STD causes a painless chancre in Stage 1?" → <strong>Syphilis</strong><br>
+"HPV vaccine protects against?" → Genital warts AND <strong>cervical cancer</strong>
+</div>
+
+---
+
+<div class="pitfall">
+⚠️ <strong>Chapter D8 — Exam trap card (memorise these 4):</strong><br>
+1. "Where does fertilization occur?" → <strong>FALLOPIAN TUBE</strong> — NOT the uterus (uterus = implantation site).<br>
+2. "Oogenesis produces how many eggs per primary oocyte?" → <strong>1 egg + 3 polar bodies</strong> — NOT 4 eggs. Contrast: spermatogenesis → 4 functional sperm.<br>
+3. "Which hormone is the basis of a pregnancy test?" → <strong>hCG</strong> — NOT progesterone (even though progesterone rises in pregnancy, hCG is what urine tests detect).<br>
+4. "Tubectomy is performed in?" → <strong>FEMALES</strong>; vasectomy = MALES. Both are permanent surgical contraception.
+</div>
+
+---
+
+<div class="pyq">
+<strong>Chapter D8 — PYQ-Style Practice (5 Questions)</strong>
+
+1. During the menstrual cycle, ovulation is triggered by a surge in which hormone?
+   (a) FSH  (b) Estrogen  (c) LH  (d) Progesterone
+
+2. Fertilization of the ovum in humans normally occurs in the:
+   (a) Uterus  (b) Cervix  (c) Ovary  (d) Fallopian tube
+
+3. Oogenesis differs from spermatogenesis in that it produces:
+   (a) 4 functional cells per meiosis  (b) 2 functional cells and 2 polar bodies  (c) 1 functional cell and 3 non-functional polar bodies  (d) Only diploid cells
+
+4. Which of the following surgical procedures involves cutting of the vas deferens?
+   (a) Tubectomy  (b) Hysterectomy  (c) Vasectomy  (d) Oophorectomy
+
+5. The hormone hCG (human chorionic gonadotropin) is produced by:
+   (a) Corpus luteum  (b) Anterior pituitary  (c) Placenta  (d) Ovarian follicle
+
+**Answers:** 1-c | 2-d | 3-c | 4-c | 5-c
+
+**Explanation highlights:**
+- Q1: LH surge on ~Day 14 is the trigger for ovulation; FSH drives follicle growth before that.
+- Q2: Classic trap — fertilization = fallopian tube; implantation = uterus.
+- Q3: Oogenesis → 1 egg + 3 polar bodies (cytoplasm concentrates in one cell for the large, nutrient-rich egg).
+- Q4: Vasectomy cuts the vas deferens in males; tubectomy cuts fallopian tubes in females.
+- Q5: hCG is produced by the trophoblast (outer layer of blastocyst/placenta) — it's what urine pregnancy tests detect.
+</div>
+
+---
+
+\newpage
+
 # PART E — NUTRITION: VITAMINS & MINERALS {#part-e}
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["SKELETAL AND MUSCULAR SYSTEM"]:::root
     R --> BN["Bone Facts"]:::key
     R --> JT["Types of Joints"]:::key
@@ -1570,9 +1891,28 @@ Blood clotting vitamin → <strong>K</strong><br>
 Scurvy → <strong>C</strong> | Night blindness → <strong>A</strong> | Rickets → <strong>D</strong> | Beri-beri → <strong>B₁</strong>
 </div>
 
+<div class="mnemonic">
+
+**Fat-soluble vitamins — "ADEK" or "A Dog Eats Kibble"** — A, D, E, K. These four dissolve in fat, are stored in the liver, and can build up to toxic levels if overdosed. All others (B group + C) are water-soluble — excess is flushed out in urine, so you need them daily.
+
+**Deficiency diseases shortcut:**
+- **A**vitamin A → **A**nightblindness (Night blindness starts with the sound of "A" in dark)
+- **B₁** → **B**eriberi (B1 = B-ONE = beri-beri)
+- **C** → **S**curvy (C looks like a scurvy-ridden open wound)
+- **D** → **D**ifficult bones (Rickets/Osteomalacia = soft bones)
+- **K** → **K**oagulation (clotting factor)
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP — Rickets vs Osteomalacia:** Both are Vitamin D deficiency — but Rickets = in **children** (bones soften before hardening = bow legs). Osteomalacia = in **adults** (bones soften). Same cause, age-specific name. Examiners ask: "Vitamin D deficiency in adults?" → Osteomalacia (not Rickets). This trap appears every year.
+
+</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["VITAMINS"]:::root
     R --> FS["Fat-Soluble: A D E K<br>Stored in liver + fatty tissue"]:::key
     R --> WS["Water-Soluble: B complex + C<br>Not stored — must eat daily"]:::key
@@ -1613,7 +1953,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["ESSENTIAL MINERALS"]:::root
     R --> MC["Macro-minerals"]:::key
     R --> TR["Trace minerals"]:::key
@@ -1693,9 +2033,27 @@ Plague → <strong>Rat flea</strong><br>
 Sleeping sickness → <strong>Tsetse fly</strong>
 </div>
 
+<div class="mnemonic">
+
+**Mosquito-borne disease vectors — "MAC" rule:** **M**alaria = **A**nopheles (M-A), **A**edes = **D**engue (A-D), **C**ulex = **F**ilaria (C-F). Or use: **"An**opheles gives **An**emia-like malaria. **Ae**des gives **De**ngue fever. **Cu**lex **cu**ts lymph nodes (filariasis / elephantiasis)." Female mosquito only bites (males drink plant nectar).
+
+</div>
+
+<div class="keypoint">
+
+**Quick Recall — Disease type shortcuts:** All mosquito-borne diseases = protozoal or viral. All tick/flea-borne = bacterial. Ringworm = NOT a worm (it's a fungal infection — exam classic trick). Malaria pathogen = Plasmodium (protozoan, NOT bacterium or virus). Rabies = caused by virus (NOT bacteria), spread by dog bite.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "Ringworm is caused by a worm." — FALSE. Ringworm (*Tinea*) is a **fungal** skin infection, not caused by any worm. The name comes from the ring-shaped rash. Examiners test this every year. Also: "Malaria vector is male Anopheles mosquito." — FALSE. Only the **female** Anopheles bites (she needs blood to lay eggs). Male mosquitoes don't bite.
+
+</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["DISEASE CLASSIFICATION<br>and CAUSATIVE AGENTS"]:::root
     R --> BA["Bacterial Diseases"]:::key
     R --> VI["Viral Diseases"]:::key
@@ -1758,7 +2116,7 @@ India's UIP (Universal Immunisation Programme) started → <strong>1985</strong>
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["IMMUNITY"]:::root
     R --> IN["Innate (Non-specific)"]:::key
     R --> AC["Acquired (Specific)"]:::key
@@ -1810,7 +2168,7 @@ The pyramid of <strong>energy</strong> is ALWAYS upright — this is the most te
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["ECOSYSTEM and ENERGY FLOW"]:::root
     R --> TL["Trophic Levels"]:::proc
     R --> TR["10% Rule — Lindeman's Law"]:::key
@@ -1847,7 +2205,7 @@ Extinct (EX) → Extinct in Wild (EW) → Critically Endangered (CR) → Endange
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["BIODIVERSITY"]:::root
     R --> HS["Hotspots — Global + India"]:::key
     R --> IU["IUCN Red List Categories"]:::key
@@ -1873,7 +2231,7 @@ flowchart TD
 
 | Project | Year | Target |
 |---------|------|--------|
-| **Project Tiger** | 1973 | Bengal tiger; 55+ reserves |
+| **Project Tiger** | 1973 | Bengal tiger; 58 reserves (as of Mar 2025) |
 | **Project Elephant** | 1992 | Asian elephant |
 | **Project Crocodile** | 1975 | Mugger, saltwater, gharial |
 | **Cheetah reintroduction** | 2022 | Kuno National Park (Namibian + South African cheetahs) |
@@ -2078,7 +2436,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["INDIAN WILDLIFE and CONSERVATION"]:::root
     R --> NP["First + Key National Parks"]:::key
     R --> PR["Conservation Projects"]:::date
@@ -2088,7 +2446,7 @@ flowchart TD
     NP --> NP2["Kaziranga NP: Assam — UNESCO WHS<br>70% of world's Indian rhinoceros"]:::key
     NP --> NP3["Gir Forest NP: Gujarat<br>ONLY wild habitat of Asiatic Lion"]:::key
     NP --> NP4["Sundarbans NP: West Bengal — UNESCO WHS<br>Largest mangrove; Bengal Tiger"]:::key
-    PR --> PR1["Project Tiger: 1973 — PM Indira Gandhi<br>53 Tiger Reserves (2024); tigers: 3167"]:::date
+    PR --> PR1["Project Tiger: 1973 — PM Indira Gandhi<br>58 Tiger Reserves (2025); tigers: 3167"]:::date
     PR --> PR2["Project Elephant: 1992<br>32 Elephant Reserves in India"]:::date
     PA --> PA1["18 Biosphere Reserves; 12 UNESCO listed<br>First BR: Nilgiri 1986<br>Largest BR: Pachmarhi (MP)"]:::key
     PA --> PA2["106 National Parks; 565 Sanctuaries<br>Total PAs cover 5% of India's area"]:::key

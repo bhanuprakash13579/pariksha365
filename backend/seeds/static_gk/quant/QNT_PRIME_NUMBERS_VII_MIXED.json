@@ -220,6 +220,216 @@
       "generator_tag": "gemini-batch-fix-2026-05-15",
       "generated_at": "2026-05-19T08:44:33+00:00",
       "id": "sgk_QNT_PRIME_NUMBERS_VII_MIXED_00007"
+    },
+    {
+      "stem": "Which of the following is a pair of twin primes?",
+      "options": [
+        {
+          "option_text": "3 and 7, which differ by 4 (not a twin prime pair)",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 and 13, consecutive primes differing by exactly 2",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 and 9, where 9 = 3² is a composite, not a prime",
+          "is_correct": false
+        },
+        {
+          "option_text": "17 and 21, where 21 = 3 × 7 is a composite number",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Twin primes are pairs of primes differing by exactly 2. (11, 13): both prime, 13 − 11 = 2 ✓. (3, 7) differ by 4, not 2. (5, 9): 9 = 3² is composite. (17, 21): 21 = 3 × 7 is composite. The most tempting wrong answer is (3, 7) because both are prime, but candidates forget that twin primes must differ by exactly 2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:55:20+00:00",
+      "id": "sgk_QNT_PRIME_NUMBERS_VII_MIXED_00008"
+    },
+    {
+      "stem": "Every prime number greater than 3 must be expressible in which of the following forms?",
+      "options": [
+        {
+          "option_text": "Of the form 4k + 1 for some positive integer k",
+          "is_correct": false
+        },
+        {
+          "option_text": "Of the form 6k ± 1 for some positive integer k",
+          "is_correct": true
+        },
+        {
+          "option_text": "Of the form 4k + 3 for some positive integer k",
+          "is_correct": false
+        },
+        {
+          "option_text": "Of the form 8k ± 1 for some positive integer k",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Any prime p > 3 is not divisible by 2 or 3, so p mod 6 must be 1 or 5, i.e., p = 6k + 1 or 6k − 1 (written 6k ± 1). Verify: 5 = 6×1−1, 7 = 6×1+1, 11 = 6×2−1, 13 = 6×2+1. The form 4k+1 fails for p = 7 (= 4×1+3). The form 8k±1 fails for p = 11 (= 8×1+3, not ±1).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:55:20+00:00",
+      "id": "sgk_QNT_PRIME_NUMBERS_VII_MIXED_00009"
+    },
+    {
+      "stem": "A natural number N has exactly three distinct factors. Which of the following best describes N?",
+      "options": [
+        {
+          "option_text": "The square of a prime number (e.g., 4, 9, 25, or 49)",
+          "is_correct": true
+        },
+        {
+          "option_text": "The product of two distinct primes p and q, i.e., p × q",
+          "is_correct": false
+        },
+        {
+          "option_text": "A perfect cube of a prime number, such as 8, 27, or 125",
+          "is_correct": false
+        },
+        {
+          "option_text": "A prime number itself, possessing only 1 and itself as factors",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "If N = p² (p prime), its only factors are 1, p, and p² — exactly three. The product p × q (distinct primes) has four factors: 1, p, q, pq. A prime cube p³ also has four factors: 1, p, p², p³. A prime has only two factors. The most tempting distractor is p × q because candidates confuse 'product of primes' with 'few factors'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:55:20+00:00",
+      "id": "sgk_QNT_PRIME_NUMBERS_VII_MIXED_00010"
+    },
+    {
+      "stem": "How many prime numbers lie strictly between 50 and 100?",
+      "options": [
+        {
+          "option_text": "8 prime numbers exist in the open interval (50, 100)",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 prime numbers exist in the open interval (50, 100)",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 prime numbers exist in the open interval (50, 100)",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 prime numbers exist in the open interval (50, 100)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Primes between 50 and 100 (exclusive): 53, 59, 61, 67, 71, 73, 79, 83, 89, 97 — exactly 10. Common errors: 51 = 3×17, 57 = 3×19, 77 = 7×11, and 91 = 7×13 are composite. Candidates who include 91 (mistaking it for prime) or 57 count 12; those who also miss 53 land on 9.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:55:20+00:00",
+      "id": "sgk_QNT_PRIME_NUMBERS_VII_MIXED_00011"
+    },
+    {
+      "stem": "The product of two prime numbers is 437. What is their sum?",
+      "options": [
+        {
+          "option_text": "38, obtained by summing the two prime factors of 437",
+          "is_correct": false
+        },
+        {
+          "option_text": "42, obtained by summing the two prime factors of 437",
+          "is_correct": true
+        },
+        {
+          "option_text": "40, obtained by summing the two prime factors of 437",
+          "is_correct": false
+        },
+        {
+          "option_text": "44, obtained by summing the two prime factors of 437",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Test prime divisors: 437 ÷ 19 = 23 exactly, so 437 = 19 × 23 (both prime). Sum = 19 + 23 = 42. The trap option 40 lures candidates who incorrectly try 17 × 23 = 391 ≠ 437. The option 38 = 17 + 21 involves 21, which is not prime. Self-verify: 19 × 23 = (20−1)(20+3) = 400 + 60 − 20 − 3 = 437 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:55:20+00:00",
+      "id": "sgk_QNT_PRIME_NUMBERS_VII_MIXED_00012"
+    },
+    {
+      "stem": "How many prime numbers p, where p < 20, have the property that p² + 2 is also prime?",
+      "options": [
+        {
+          "option_text": "No prime p below 20 makes p² + 2 a prime number at all",
+          "is_correct": false
+        },
+        {
+          "option_text": "Exactly one prime (p = 3) satisfies this; 3² + 2 = 11 is prime",
+          "is_correct": true
+        },
+        {
+          "option_text": "Exactly two primes (p = 3 and p = 5) satisfy this condition",
+          "is_correct": false
+        },
+        {
+          "option_text": "Exactly three primes (p = 3, 5 and 7) satisfy this condition",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Check each prime < 20: p=2 → 4+2=6 (composite); p=3 → 9+2=11 ✓ prime; p=5 → 25+2=27=3³ (composite); p=7 → 49+2=51=3×17; p=11 → 123=3×41; p=13 → 171=9×19; p=17 → 291=3×97; p=19 → 363=3×121. The pattern: for any odd prime p ≠ 3, p ≡ 1 or 2 (mod 3) ⟹ p² ≡ 1 (mod 3) ⟹ p²+2 ≡ 0 (mod 3), i.e., always divisible by 3. Only p = 3 escapes this constraint.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:55:20+00:00",
+      "id": "sgk_QNT_PRIME_NUMBERS_VII_MIXED_00013"
+    },
+    {
+      "stem": "p and q are prime numbers satisfying p² − q² = 72. How many ordered pairs (p, q) exist?",
+      "options": [
+        {
+          "option_text": "Exactly one ordered pair (p, q) satisfies this equation",
+          "is_correct": false
+        },
+        {
+          "option_text": "Exactly two ordered pairs (p, q) satisfy this equation",
+          "is_correct": true
+        },
+        {
+          "option_text": "Exactly three ordered pairs (p, q) satisfy this equation",
+          "is_correct": false
+        },
+        {
+          "option_text": "Exactly four ordered pairs (p, q) satisfy this equation",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Factorise: (p+q)(p−q) = 72. Both odd primes ⟹ p+q = 2a, p−q = 2b, so 4ab = 72 ⟹ ab = 18. Factor pairs (a > b > 0): (18,1) → p=19, q=17 ✓ both prime; (9,2) → p=11, q=7 ✓ both prime; (6,3) → p=9 (not prime) ✗. Case q=2: p²=76, not a perfect square ✗. Valid pairs: (19,17) and (11,7). Verify: 361−289=72 ✓ and 121−49=72 ✓. Candidates often stop after finding one solution, choosing option A.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:55:20+00:00",
+      "id": "sgk_QNT_PRIME_NUMBERS_VII_MIXED_00014"
     }
   ]
 }

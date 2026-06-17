@@ -70,6 +70,216 @@
       "generator_tag": "v3-rich-explanation",
       "generated_at": "2026-05-23",
       "id": "sgk_REAS_CODING_DECODING_MIXED_002"
+    },
+    {
+      "stem": "In a certain code language, 'MONDAY' is written as 'YADNOM'. Using the same logic, how will 'FRIDAY' be coded?",
+      "options": [
+        {
+          "option_text": "The coded form is YADRIF (R and I order swapped during reversal)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coded form is YADIFR (A and I positions mixed up in reversal)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coded form is YADIRF (all six letters reversed in correct order)",
+          "is_correct": true
+        },
+        {
+          "option_text": "The coded form is YIADRF (only partial reversal applied to the word)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "MONDAY reversed letter by letter yields YADNOM, confirming the rule is simple reversal. FRIDAY reversed is Y-A-D-I-R-F = YADIRF. Option A (YADRIF) is the classic trap — it swaps R and I in the middle, an error that occurs when mentally reversing a 6-letter word without writing it out.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:40:18+00:00",
+      "id": "sgk_REAS_CODING_DECODING_MIXED_00003"
+    },
+    {
+      "stem": "In a certain language, 'Ocean' is called 'Sky', 'Sky' is called 'Desert', 'Desert' is called 'Mountain', and 'Mountain' is called 'River'. What would a camel traverse, according to this coded language?",
+      "options": [
+        {
+          "option_text": "Mountain (since Desert is called Mountain in this coded language)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sky (which is the code name given to Ocean in this language)",
+          "is_correct": false
+        },
+        {
+          "option_text": "River (which is the coded name assigned to Mountain here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Desert (the real-world answer, ignoring the code substitution)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "In real life, camels traverse deserts. In this code, 'Desert' is called 'Mountain', so the answer is Mountain. Option C (River) is the classic one-step-too-far trap — River is the code name for Mountain, not for Desert; accepting it means applying two substitutions instead of one.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:40:18+00:00",
+      "id": "sgk_REAS_CODING_DECODING_MIXED_00004"
+    },
+    {
+      "stem": "In a coded language: 'ta ki ro' means 'bright sun shines'; 'ki pa mi' means 'sun and moon'; 'ta lo pa' means 'bright stars and'. Which word is the code for 'shines'?",
+      "options": [
+        {
+          "option_text": "The code word is 'ta' (ta codes for bright, not shines)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The code word is 'ki' (ki codes for sun, not shines)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The code word is 'mi' (mi codes for moon, not shines)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The code word is 'ro' (by elimination from statement 1, ro = shines)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Statements 1 and 2 share 'ki' and 'sun' → ki=sun. Statements 1 and 3 share 'ta' and 'bright' → ta=bright. Statements 2 and 3 share 'pa' and 'and' → pa=and. With ta and ki assigned, the only remaining word in statement 1 is 'ro', which must mean shines. Option A (ta) is a common wrong choice — candidates spot 'ta' appearing twice without completing the full elimination.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:40:18+00:00",
+      "id": "sgk_REAS_CODING_DECODING_MIXED_00005"
+    },
+    {
+      "stem": "In a code language, adjacent letter pairs are swapped throughout: 1st↔2nd, 3rd↔4th, 5th↔6th. If 'BRANCH' is coded as 'RBNAHC', how will 'SIGNAL' be coded?",
+      "options": [
+        {
+          "option_text": "The coded form is ISGNAL (first pair S↔I swapped only, middle and last untouched)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coded form is ISNGLA (all three pairs correctly swapped: S↔I, G↔N, A↔L)",
+          "is_correct": true
+        },
+        {
+          "option_text": "The coded form is SIGNLA (only the last pair of letters A↔L was swapped here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coded form is SINGLA (first pair skipped, middle and last pairs swapped)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "SIGNAL: S(1)↔I(2)=IS; G(3)↔N(4)=NG; A(5)↔L(6)=LA → IS-NG-LA = ISNGLA. Verify with given: B↔R=RB, A↔N=NA, C↔H=HC → RBNAHC ✓. Option C (SIGNLA) is the most tempting wrong answer — it correctly swaps only the last pair A↔L while leaving S,I and G,N in their original positions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:40:18+00:00",
+      "id": "sgk_REAS_CODING_DECODING_MIXED_00006"
+    },
+    {
+      "stem": "In a code, each letter is coded as the sum of its alphabetic rank and its position in the word. Example — 'ACE': A(rank 1 + pos 1)=2, C(rank 3 + pos 2)=5, E(rank 5 + pos 3)=8, giving 2-5-8. What is the code for 'BIG'?",
+      "options": [
+        {
+          "option_text": "The coded sequence is 2-9-7 (raw alphabetic ranks only, no word-position added)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coded sequence is 2-10-9 (word position counted from zero, not from one)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coded sequence is 3-11-10 (letter rank plus word rank: the correct rule)",
+          "is_correct": true
+        },
+        {
+          "option_text": "The coded sequence is 3-10-10 (I miscounted as the 8th letter of the alphabet)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "B is the 2nd letter at word-position 1: 2+1=3. I is the 9th letter at word-position 2: 9+2=11. G is the 7th letter at word-position 3: 7+3=10. Code = 3-11-10. Option D (3-10-10) is the sharpest trap — it arises from mistaking I for the 8th letter; H is 8th and I is 9th, a confusion that costs candidates marks under time pressure.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:40:18+00:00",
+      "id": "sgk_REAS_CODING_DECODING_MIXED_00007"
+    },
+    {
+      "stem": "In a code language, each letter of a word is first shifted 3 places forward in the alphabet (cyclically), and then the entire coded string is reversed. 'LION' is coded as 'QRLO'. How will 'TIGER' be coded?",
+      "options": [
+        {
+          "option_text": "The coded form is UHJLW (shift +3 applied to each letter, then string reversed)",
+          "is_correct": true
+        },
+        {
+          "option_text": "The coded form is WLJHU (shift of +3 applied but final reversal step was skipped)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coded form is TGIKV (shift of +2 applied to all letters, then reversed)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coded form is VKIGT (shift of +2 applied without any reversal of the string)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Step 1 shift +3: T→W, I→L, G→J, E→H, R→U → WLJHU. Step 2 reverse WLJHU → UHJLW. Cross-verify: L→O, I→L, O→R, N→Q → OLRQ, reversed = QRLO ✓. Option B (WLJHU) is the top distractor — examinees who correctly apply the shift but forget the reversal step will land here, losing 2 marks on what appears to be a completed calculation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:40:18+00:00",
+      "id": "sgk_REAS_CODING_DECODING_MIXED_00008"
+    },
+    {
+      "stem": "In a code, if a word starts with a vowel, each letter is replaced by its mirror in the alphabet (A↔Z, B↔Y, C↔X…) and then the word is reversed. If a word starts with a consonant, each letter is shifted +4 cyclically. 'IRON' is coded as 'MLIR' and 'BLEND' is coded as 'FPIRH'. How is 'AMBER' coded?",
+      "options": [
+        {
+          "option_text": "The coded form is ZNYVI (mirror substitution applied correctly but reversal was omitted)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coded form is IVYNZ (mirror substitution then reversal: correct vowel-start rule)",
+          "is_correct": true
+        },
+        {
+          "option_text": "The coded form is EQFIV (consonant-start shift rule applied to AMBER by mistake)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coded form is REBMA (only the string reversed, mirror substitution was skipped)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "AMBER starts with A (vowel) → apply vowel rule. Step 1 mirror: A→Z, M→N, B→Y, E→V, R→I → ZNYVI. Step 2 reverse ZNYVI → IVYNZ. Verify IRON: I→R, R→I, O→L, N→M → RILM reversed = MLIR ✓. Option C (EQFIV) is the sharpest trap: applying the consonant +4 shift to AMBER (A+4=E, M+4=Q, B+4=F, E+4=I, R+4=V) is the error of not recognising A as a vowel, which many candidates commit under exam pressure.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:40:18+00:00",
+      "id": "sgk_REAS_CODING_DECODING_MIXED_00009"
     }
   ]
 }

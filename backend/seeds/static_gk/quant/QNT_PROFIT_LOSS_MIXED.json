@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "subject": "Quant",
+  "subject": "Quantitative Aptitude",
   "topic": "Profit and loss — mixed tiers",
   "topic_code": "QNT_PROFIT_LOSS_MIXED",
   "description": "CP, SP, profit %, loss %, discount problems",
@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-23-qnt-pl-07",
       "generated_at": "2026-04-23T17:00:00+00:00",
       "id": "sgk_QNT_PROFIT_LOSS_MIXED_00007"
+    },
+    {
+      "stem": "A shopkeeper sells two watches, each at ₹1,200. He gains 20% on the first watch and loses 20% on the second. What is his net result on the combined transaction?",
+      "options": [
+        {
+          "option_text": "Net loss of 4% on the combined transaction",
+          "is_correct": true
+        },
+        {
+          "option_text": "Net profit of 4% on the combined transaction",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither profit nor loss — the gains cancel out",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net loss of 2% on the combined transaction",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "When two items are sold at the same price with equal profit% and loss%, the net result is always a loss. Net loss% = (common %/10)² = (20/10)² = 4%. CP₁ = 1200/1.2 = ₹1,000; CP₂ = 1200/0.8 = ₹1,500; Total CP = ₹2,500, Total SP = ₹2,400 → Loss = ₹100 = 4% of ₹2,500. Option C is wrong because equal % on different CPs never cancels.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:02:27+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00008"
+    },
+    {
+      "stem": "A retailer purchases goods worth ₹800 and additionally spends ₹200 on transportation and storage. He then sells the goods at 15% profit on his total cost. What is the selling price?",
+      "options": [
+        {
+          "option_text": "₹920 — 15% profit applied to purchase price ₹800 only",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,150 — 15% profit on total cost (₹800 + ₹200)",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1,000 — selling at total cost without adding any profit",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,200 — 50% markup mistakenly applied to ₹800",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Total cost = ₹800 (purchase) + ₹200 (overhead) = ₹1,000. Selling at 15% profit on total cost: SP = 1,000 × 1.15 = ₹1,150. Option A (₹920) is the most common mistake — applying 15% only to the invoice price of ₹800 and ignoring overhead expenses that are part of the cost.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:02:27+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00009"
+    },
+    {
+      "stem": "A dealer mixes two grades of rice costing ₹40/kg and ₹60/kg in the ratio 3:2 by weight. At what price per kg must he sell the mixture to earn a 25% profit?",
+      "options": [
+        {
+          "option_text": "₹50/kg — 25% profit applied to only the lower grade",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹60/kg — 25% on weighted-average CP of ₹48/kg",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹62.50/kg — 25% on simple mean of ₹50/kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹75/kg — 25% profit applied to the higher grade only",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Weighted-average CP = (3×40 + 2×60) / (3+2) = (120+120)/5 = ₹48/kg. SP for 25% profit = 48 × 1.25 = ₹60/kg. Option C (₹62.50) is the classic error — taking the simple arithmetic mean (40+60)/2 = ₹50 instead of the ratio-weighted mean; the 3:2 ratio skews the average toward the cheaper grade.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:02:27+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00010"
+    },
+    {
+      "stem": "A manufacturer lists an item at MRP ₹2,000 and offers a trade discount of 30% to the wholesaler. The wholesaler also avails a further 10% cash discount on the post-trade price. What amount does the wholesaler ultimately pay?",
+      "options": [
+        {
+          "option_text": "₹1,200 — combined 40% flat discount applied to MRP",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,260 — 30% trade discount, then 10% on reduced price",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1,300 — single equivalent 35% discount applied on MRP",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,400 — only the 30% trade discount applied to MRP",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "After 30% trade discount: 2,000 × 0.70 = ₹1,400. After 10% cash discount on ₹1,400: 1,400 × 0.90 = ₹1,260. Option A (₹1,200) is the trap — adding 30+10 = 40% and taking 40% off MRP. Successive discounts always yield a higher net price than a single summed discount because the second discount applies to an already-reduced base.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:02:27+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00011"
+    },
+    {
+      "stem": "A vendor buys 200 kg of apples at ₹50/kg. During storage, 20 kg get spoiled and are discarded. He sells the remaining apples at ₹70/kg. What is his overall profit percentage on the transaction?",
+      "options": [
+        {
+          "option_text": "40% — comparing ₹70 sell price to ₹50 cost, ignoring loss",
+          "is_correct": false
+        },
+        {
+          "option_text": "26% — net profit of ₹2,600 on total investment of ₹10,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "30% — partial adjustment for the 20 kg spoilage loss",
+          "is_correct": false
+        },
+        {
+          "option_text": "20.6% — profit expressed as a fraction of revenue earned",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Total CP = 200 × 50 = ₹10,000. Saleable quantity = 200 − 20 = 180 kg. SP = 180 × 70 = ₹12,600. Profit = ₹2,600. Profit% = (2,600/10,000) × 100 = 26%. Option A (40%) ignores spoilage entirely. Option D (20.6%) is a common error of computing profit as a % of SP (2,600/12,600), not CP.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:02:27+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00012"
+    },
+    {
+      "stem": "A merchant marks up goods by 25% above cost price and then offers a discount on the marked price. If his net profit on the transaction is 5%, what is the discount percentage he offered on the marked price?",
+      "options": [
+        {
+          "option_text": "16% — discount correctly computed on the marked price",
+          "is_correct": true
+        },
+        {
+          "option_text": "20% — discount amount taken as percentage of cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "15% — difference between markup rate and profit rate",
+          "is_correct": false
+        },
+        {
+          "option_text": "25% — confusing the discount percentage with the markup",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Let CP = 100. MP = 125 (25% markup). Net profit = 5%, so SP = 105. Discount = MP − SP = 125 − 105 = 20. Discount% = (20/125) × 100 = 16%. Option B (20%) is the trap — 20 is the absolute discount and candidates often express it over CP (100) rather than over MP (125). Option C (15%) is the naive subtraction 25% − 10%... but profit is only 5%, making that route wrong too.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:02:27+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00013"
+    },
+    {
+      "stem": "A manufacturer produces an item at ₹500 and sells it to a wholesaler at 20% profit. The wholesaler sells it to a retailer at 15% profit on his cost, and the retailer sells it to the final customer at 10% profit on his cost. How much does the customer pay?",
+      "options": [
+        {
+          "option_text": "₹725 — flat 45% combined markup applied to ₹500 cost",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹690 — chain stops at retailer's purchase price only",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹759 — three successive markups: ×1.20 × 1.15 × 1.10",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹817 — each margin computed on selling price, not cost",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Manufacturer → Wholesaler: 500 × 1.20 = ₹600. Wholesaler → Retailer: 600 × 1.15 = ₹690. Retailer → Customer: 690 × 1.10 = ₹759. Option A (₹725) adds all percentages as a flat 45%, ignoring the compounding effect. Option D (₹817) is what you get if each profit% is applied on SP (i.e., SP = Cost/(1 − margin%)), which is a different profit convention not stated in the problem.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:02:27+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_MIXED_00014"
     }
   ]
 }

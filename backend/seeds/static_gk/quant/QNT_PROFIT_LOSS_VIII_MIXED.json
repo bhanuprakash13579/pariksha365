@@ -220,6 +220,216 @@
       "generator_tag": "gemini-batch-fix-2026-05-15",
       "generated_at": "2026-05-19T08:44:34+00:00",
       "id": "sgk_QNT_PROFIT_LOSS_VIII_MIXED_00007"
+    },
+    {
+      "stem": "A shopkeeper marks an article 40% above its cost price and then offers a 15% discount on the marked price. What is his net profit percentage?",
+      "options": [
+        {
+          "option_text": "Profit of 17% over the original cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Profit of 19% over the original cost price",
+          "is_correct": true
+        },
+        {
+          "option_text": "Profit of 21% over the original cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Profit of 25% over the original cost price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Let CP = 100. MP = 140. SP = 140 × 0.85 = 119. Profit = 19%. Option C (21%) is the most tempting mistake — candidates incorrectly add the mark-up and subtract the discount (40 − 15 − 4 = 21) without accounting for the multiplicative effect of the discount on the inflated marked price.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:18+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VIII_MIXED_00008"
+    },
+    {
+      "stem": "A vendor sells 12 pens for the same total price as it costs him to buy 15 pens. What is his profit percentage?",
+      "options": [
+        {
+          "option_text": "Profit of 20% on the total purchase cost",
+          "is_correct": false
+        },
+        {
+          "option_text": "Profit of 25% on the total purchase cost",
+          "is_correct": true
+        },
+        {
+          "option_text": "Profit of 15% on the total purchase cost",
+          "is_correct": false
+        },
+        {
+          "option_text": "Profit of 30% on the total purchase cost",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "SP of 12 pens = CP of 15 pens. Profit on 12 pens = CP of (15 − 12) = CP of 3 pens. Profit % = (3/12) × 100 = 25%. Option A (20%) is wrong because candidates mistakenly compute 3/15 × 100 = 20%, dividing by the selling quantity 15 instead of the buying quantity 12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:18+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VIII_MIXED_00009"
+    },
+    {
+      "stem": "A shopkeeper allows a discount of 10% on the marked price and still earns a profit of 17% on the cost price. By what percentage has he marked the article above its cost price?",
+      "options": [
+        {
+          "option_text": "Marked up by 25% over the cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Marked up by 27% over the cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Marked up by 30% over the cost price",
+          "is_correct": true
+        },
+        {
+          "option_text": "Marked up by 35% over the cost price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Let CP = 100. SP = 117. Since SP = 0.9 × MP, we get MP = 117/0.9 = 130. Mark-up = 30%. Option B (27%) is a common error — candidates compute the discount as a fraction of CP instead of MP, or misread the relationship between 10% discount and 17% profit as (17 + 10) = 27%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:18+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VIII_MIXED_00010"
+    },
+    {
+      "stem": "A trader marks his goods 25% above cost price and then offers successive discounts of 10% and 4% to the buyer. What is his net profit or loss percentage on the cost price?",
+      "options": [
+        {
+          "option_text": "Net profit of 10% on the original cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net profit of 8% on the original cost price",
+          "is_correct": true
+        },
+        {
+          "option_text": "Net loss of 2% on the original cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net profit of 6% on the original cost price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "CP = 100, MP = 125. After 10% discount: 125 × 0.90 = 112.5. After 4% discount: 112.5 × 0.96 = 108. Net profit = 8%. Option A (10%) is wrong because candidates add the successive discounts as 10 + 4 = 14% on MP giving 125 × 0.86 = 107.5 (≈7.5% profit), or mistakenly assume the discounts partially offset each other to land on 10%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:18+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VIII_MIXED_00011"
+    },
+    {
+      "stem": "A seller marks an article 35% above its cost price. To earn exactly 8% profit on the cost price, what percentage discount must he offer on the marked price?",
+      "options": [
+        {
+          "option_text": "Discount of 15% on the marked price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Discount of 18% on the marked price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Discount of 20% on the marked price",
+          "is_correct": true
+        },
+        {
+          "option_text": "Discount of 25% on the marked price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "CP = 100, MP = 135, required SP = 108. Discount = (135 − 108)/135 × 100 = 27/135 × 100 = 20%. Option B (18%) is a frequent error — candidates compute (135 − 108)/100 × 100 = 27%, then confuse numerator/denominator or subtract 35 − 8 = 27 and halve it, arriving at ≈18%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:18+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VIII_MIXED_00012"
+    },
+    {
+      "stem": "A trader buys 80 oranges for Rs. 240. He discards 20 that are unfit for sale. He wants to earn exactly 20% profit on his total purchase cost. At what price (in Rs.) must he sell each remaining orange?",
+      "options": [
+        {
+          "option_text": "Rs. 4.50 per sellable orange",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 4.80 per sellable orange",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rs. 5.00 per sellable orange",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 5.40 per sellable orange",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Total CP = Rs. 240. Required SP = 240 × 1.20 = Rs. 288. Sellable oranges = 80 − 20 = 60. SP per orange = 288/60 = Rs. 4.80. Option C (Rs. 5.00) is wrong when candidates compute 20% profit on 60 oranges only (cost attributed as 60/80 × 240 = 180; SP = 216; per unit = 3.60 — another common wrong path) or round 288/60 up to 5. Option A arises from computing 240/60 × 1.125.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:18+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VIII_MIXED_00013"
+    },
+    {
+      "stem": "A manufacturer sells goods to a wholesaler at 20% profit; the wholesaler sells to a retailer at 15% profit; the retailer sells to a customer at 25% profit. If the customer pays Rs. 2,070, what is the manufacturer's cost price?",
+      "options": [
+        {
+          "option_text": "Rs. 1,000 as manufacturer's cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 1,200 as manufacturer's cost price",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rs. 1,400 as manufacturer's cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 1,500 as manufacturer's cost price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Let manufacturer's CP = x. Chain: x × 1.20 × 1.15 × 1.25 = 2070. Compute: 1.20 × 1.15 = 1.38; 1.38 × 1.25 = 1.725. So x = 2070/1.725 = 1200. Option C (Rs. 1,400) is the most tempting error — candidates add 20 + 15 + 25 = 60% and compute 2070/1.60 ≈ 1294, then round to 1,400, ignoring the compounding nature of successive markups through the supply chain.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:18+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VIII_MIXED_00014"
     }
   ]
 }

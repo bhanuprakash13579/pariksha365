@@ -70,6 +70,216 @@
       "generator_tag": "v3-rich-explanation",
       "generated_at": "2026-05-23",
       "id": "sgk_PHY_THERMODYNAMICS_MIXED_002"
+    },
+    {
+      "stem": "A clinical thermometer works by reaching thermal equilibrium with the body whose temperature is being measured. This working principle is a direct application of which law of thermodynamics?",
+      "options": [
+        {
+          "option_text": "First law — which relates heat, work, and internal energy change",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zeroth law — which defines the concept of thermal equilibrium",
+          "is_correct": true
+        },
+        {
+          "option_text": "Second law — which governs the direction of natural heat flow",
+          "is_correct": false
+        },
+        {
+          "option_text": "Third law — which relates to system behaviour near absolute zero",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "The Zeroth law states that if two systems are each in thermal equilibrium with a third, they are in equilibrium with each other. A thermometer reaches equilibrium with the body and then reads that temperature — a textbook application of the Zeroth law. The First law is about energy conservation, not temperature measurement, which is the most common confusion here.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:23:41+00:00",
+      "id": "sgk_PHY_THERMODYNAMICS_MIXED_00003"
+    },
+    {
+      "stem": "Water is widely preferred as a coolant in automobile radiators and nuclear reactors over most other common liquids. The primary physical property responsible for this preference is its?",
+      "options": [
+        {
+          "option_text": "Low boiling point, which limits the operating temperature range",
+          "is_correct": false
+        },
+        {
+          "option_text": "High specific heat capacity, allowing it to absorb more heat per kg",
+          "is_correct": true
+        },
+        {
+          "option_text": "Low viscosity, which enables faster coolant circulation speed",
+          "is_correct": false
+        },
+        {
+          "option_text": "High density, making it heavier than most other liquid coolants",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Water has one of the highest specific heat capacities among common liquids (~4200 J/kg·K), meaning it absorbs a large amount of heat for a small rise in temperature — ideal for a coolant. Low boiling point (Option A) is actually a disadvantage for high-temperature systems since the coolant would vapourise. Low viscosity aids flow but is not the primary thermal reason.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:23:41+00:00",
+      "id": "sgk_PHY_THERMODYNAMICS_MIXED_00004"
+    },
+    {
+      "stem": "A Carnot engine operates between a hot reservoir at 500 K and a cold reservoir at 300 K. What is the maximum theoretical efficiency of this engine?",
+      "options": [
+        {
+          "option_text": "60%, obtained as the ratio of cold to hot reservoir temperature",
+          "is_correct": false
+        },
+        {
+          "option_text": "67%, using temperature difference divided by the cold reservoir value",
+          "is_correct": false
+        },
+        {
+          "option_text": "40%, from the standard Carnot formula (1 − T_cold/T_hot) × 100",
+          "is_correct": true
+        },
+        {
+          "option_text": "50%, taken as the simple arithmetic mean of the two temperatures",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Carnot efficiency η = (1 − T_cold/T_hot) = (1 − 300/500) = 0.40 = 40%. Option A (60%) is the most tempting error — it computes T_cold/T_hot = 300/500 directly, forgetting to subtract from 1. Option B (67%) arises from the wrong formula (T_hot − T_cold)/T_cold = 200/300. Option D assumes a simple arithmetic average, which has no thermodynamic basis.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:23:41+00:00",
+      "id": "sgk_PHY_THERMODYNAMICS_MIXED_00005"
+    },
+    {
+      "stem": "During rapid adiabatic compression of an ideal gas inside a thermally insulated cylinder, which statement correctly describes the change in internal energy of the gas?",
+      "options": [
+        {
+          "option_text": "Internal energy decreases because the gas does work on the piston",
+          "is_correct": false
+        },
+        {
+          "option_text": "Internal energy stays constant since no heat enters or leaves system",
+          "is_correct": false
+        },
+        {
+          "option_text": "Internal energy increases as external work is done on the gas",
+          "is_correct": true
+        },
+        {
+          "option_text": "Internal energy first rises then falls as compression progresses",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "In an adiabatic process Q = 0. By the first law: ΔU = Q − W = −W. During compression, work is done ON the gas (W < 0 by convention), so ΔU > 0 — internal energy and temperature both rise. Option A describes adiabatic expansion, not compression. Option B confuses adiabatic with isothermal; for an isothermal ideal-gas process ΔU = 0 because temperature is fixed, not because Q = 0.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:23:41+00:00",
+      "id": "sgk_PHY_THERMODYNAMICS_MIXED_00006"
+    },
+    {
+      "stem": "A gas in a perfectly insulated rigid container undergoes free expansion into a vacuum (W = 0, Q = 0). Which statement about the entropy of the gas is correct?",
+      "options": [
+        {
+          "option_text": "Entropy decreases because no heat is exchanged with the surroundings",
+          "is_correct": false
+        },
+        {
+          "option_text": "Entropy stays zero since the process is adiabatic and reversible",
+          "is_correct": false
+        },
+        {
+          "option_text": "Entropy increases because free expansion into vacuum is irreversible",
+          "is_correct": true
+        },
+        {
+          "option_text": "Entropy change equals the ratio of heat absorbed to temperature here",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Free expansion is an irreversible process — the gas cannot spontaneously re-compress itself. The second law requires entropy to increase for any irreversible process, even when Q = 0 and W = 0. For an ideal gas, ΔS = nR ln(V₂/V₁) > 0. Option B is the key trap: 'adiabatic' does NOT imply 'reversible'. Only a reversible adiabatic (isentropic) process has ΔS = 0. Option D is the formula for reversible heat exchange, inapplicable here.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:23:41+00:00",
+      "id": "sgk_PHY_THERMODYNAMICS_MIXED_00007"
+    },
+    {
+      "stem": "A refrigerator operates between a cold reservoir at 7°C and a hot reservoir at 27°C. What is the coefficient of performance (COP) of this ideal refrigerator?",
+      "options": [
+        {
+          "option_text": "15, using hot reservoir Kelvin temperature divided by the difference",
+          "is_correct": false
+        },
+        {
+          "option_text": "14, using cold reservoir Kelvin temperature divided by the difference",
+          "is_correct": true
+        },
+        {
+          "option_text": "0.07, calculated as temperature difference over cold Kelvin value",
+          "is_correct": false
+        },
+        {
+          "option_text": "20, equal to the numerical temperature difference in Kelvin degrees",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "COP of refrigerator = T_cold / (T_hot − T_cold). Converting to Kelvin: T_cold = 280 K, T_hot = 300 K. COP = 280 / (300 − 280) = 280/20 = 14. Option A (15) uses the heat-pump formula T_hot/(T_hot − T_cold) = 300/20, which is the most common mix-up. Option C (0.07) inverts the refrigerator formula: ΔT/T_cold = 20/280 ≈ 0.07, which equals 1/COP. Celsius temperatures must never be used directly in thermodynamic efficiency formulae.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:23:41+00:00",
+      "id": "sgk_PHY_THERMODYNAMICS_MIXED_00008"
+    },
+    {
+      "stem": "A Carnot engine has an efficiency of 50% operating between reservoirs at T_hot and T_cold. If the temperature of the cold reservoir alone is halved while T_hot remains unchanged, what is the new efficiency of the engine?",
+      "options": [
+        {
+          "option_text": "60%, since efficiency improves proportionally with cold temperature drop",
+          "is_correct": false
+        },
+        {
+          "option_text": "75%, as new Carnot efficiency with the cold reservoir temperature halved",
+          "is_correct": true
+        },
+        {
+          "option_text": "100%, since halving cold temperature makes the engine fully efficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "80%, obtained by averaging original efficiency with the halving factor",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Initial η = 50% → T_cold/T_hot = 0.5 → T_cold = 0.5 T_hot. After halving: new T_cold = 0.25 T_hot. New η = 1 − (0.25 T_hot / T_hot) = 1 − 0.25 = 75%. Option C (100%) is the most tempting wrong answer — 100% efficiency requires T_cold = 0 K (absolute zero), not merely halving a finite temperature. Option A incorrectly assumes efficiency scales linearly with the change in cold-reservoir temperature.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:23:41+00:00",
+      "id": "sgk_PHY_THERMODYNAMICS_MIXED_00009"
     }
   ]
 }

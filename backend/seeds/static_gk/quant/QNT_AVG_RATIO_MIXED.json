@@ -202,6 +202,216 @@
       "generator_tag": "claude-opus-2026-04-21-qnt-ar-06",
       "generated_at": "2026-04-21T19:05:00+00:00",
       "id": "sgk_QNT_AVG_RATIO_MIXED_00006"
+    },
+    {
+      "stem": "Section A of a school has 40 students with an average score of 72, and Section B has 60 students with an average score of 78. What is the combined average score of the entire school?",
+      "options": [
+        {
+          "option_text": "74.4 marks — simple average of section scores",
+          "is_correct": false
+        },
+        {
+          "option_text": "75.6 marks — weighted by section sizes",
+          "is_correct": true
+        },
+        {
+          "option_text": "76.2 marks — adjusted for class strength",
+          "is_correct": false
+        },
+        {
+          "option_text": "75.0 marks — midpoint of section averages",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Weighted average = (40×72 + 60×78)/100 = (2880 + 4680)/100 = 7560/100 = 75.6. The most tempting wrong answer is 75.0, obtained by taking a simple (unweighted) average of 72 and 78. Since Section B is larger, it pulls the combined average closer to 78, giving 75.6 not 75.0.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:27+00:00",
+      "id": "sgk_QNT_AVG_RATIO_MIXED_00007"
+    },
+    {
+      "stem": "The monthly incomes of A and B are in the ratio 4:5, and their monthly expenditures are in the ratio 3:4. If each saves exactly ₹2,000 per month, what is A's monthly income?",
+      "options": [
+        {
+          "option_text": "₹8,000 per month is A's monthly income",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹10,000 per month is A's monthly income",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹6,000 per month is A's monthly income",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹12,000 per month is A's monthly income",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "Let incomes = 4k and 5k; expenditures = 3m and 4m. Savings equations: 4k − 3m = 2000 and 5k − 4m = 2000. From the first: m = (4k−2000)/3. Substituting: 5k − 4(4k−2000)/3 = 2000 → 15k − 16k + 8000 = 6000 → k = 2000. So A's income = 4×2000 = ₹8,000. The distractor ₹10,000 arises from mistakenly assuming B's income is the answer, or confusing the ratio multiplier.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:27+00:00",
+      "id": "sgk_QNT_AVG_RATIO_MIXED_00008"
+    },
+    {
+      "stem": "The ratio of present ages of Anita and Bhavna is 4:5. Three years ago, their ages were in the ratio 3:4. What will be Anita's age 5 years from now?",
+      "options": [
+        {
+          "option_text": "Anita will be 15 years old at that time",
+          "is_correct": false
+        },
+        {
+          "option_text": "Anita will be 19 years old at that time",
+          "is_correct": false
+        },
+        {
+          "option_text": "Anita will be 17 years old at that time",
+          "is_correct": true
+        },
+        {
+          "option_text": "Anita will be 21 years old at that time",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Let present ages = 4x and 5x. Three years ago: (4x−3)/(5x−3) = 3/4 → 4(4x−3) = 3(5x−3) → 16x−12 = 15x−9 → x = 3. Anita's present age = 4×3 = 12 years. Five years from now = 12+5 = 17 years. The distractor 15 arises from finding present age (12) correctly but forgetting to add 5, while 19 comes from adding 5 to Bhavna's present age (15-1=14+5 confusion).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:27+00:00",
+      "id": "sgk_QNT_AVG_RATIO_MIXED_00009"
+    },
+    {
+      "stem": "A, B and C start a business by investing capital in the ratio 2:3:5. After 8 months from the start, A withdraws his entire investment. At the end of the year, in what ratio should the annual profit be distributed among A, B and C?",
+      "options": [
+        {
+          "option_text": "2 : 9 : 15 (A, B and C profit shares)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 : 9 : 15 (A, B and C profit shares)",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 : 9 : 10 (A, B and C profit shares)",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 : 3 : 5 — original investment ratio",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Profit is proportional to capital × time. A invests for 8 months: 2×8 = 16 units. B and C invest for 12 months: 3×12 = 36 and 5×12 = 60 units. Ratio = 16:36:60; dividing throughout by 4 gives 4:9:15. The common error is using the original ratio 2:3:5, ignoring the time difference after A's withdrawal.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:27+00:00",
+      "id": "sgk_QNT_AVG_RATIO_MIXED_00010"
+    },
+    {
+      "stem": "A vessel contains a mixture of milk and water in the ratio 7:3. When 20 litres of water is added to the vessel, the new ratio of milk to water becomes 7:5. What was the original quantity of milk in the vessel?",
+      "options": [
+        {
+          "option_text": "50 litres of milk in the original mixture",
+          "is_correct": false
+        },
+        {
+          "option_text": "56 litres of milk in the original mixture",
+          "is_correct": false
+        },
+        {
+          "option_text": "63 litres of milk in the original mixture",
+          "is_correct": false
+        },
+        {
+          "option_text": "70 litres of milk in the original mixture",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Let milk = 7x, water = 3x. After adding 20 L water: 7x/(3x+20) = 7/5 → 35x = 21x+140 → 14x = 140 → x = 10. Original milk = 7×10 = 70 litres. The distractor 50 arises from equating 3x+20 = 5×(7x)/7 = 5x, giving x=10 for water but then mis-labelling it as milk. Verification: 70:30 → add 20 L water → 70:50 = 7:5 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:27+00:00",
+      "id": "sgk_QNT_AVG_RATIO_MIXED_00011"
+    },
+    {
+      "stem": "A vessel contains petrol and diesel in the ratio 5:3. Exactly 16 litres of the mixture is drawn out and replaced with pure diesel. The new ratio of petrol to diesel becomes 5:7. What was the original quantity of petrol in the vessel?",
+      "options": [
+        {
+          "option_text": "30 litres of petrol in the original vessel",
+          "is_correct": true
+        },
+        {
+          "option_text": "24 litres of petrol in the original vessel",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 litres of petrol in the original vessel",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 litres of petrol in the original vessel",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Let total = V litres; petrol = 5V/8, diesel = 3V/8. Removing 16 L of mixture (in existing ratio): petrol removed = 5/8×16 = 10 L, diesel removed = 6 L. After replacement with 16 L diesel — petrol = 5V/8−10, diesel = 3V/8−6+16 = 3V/8+10. Setting up ratio: (5V/8−10)/(3V/8+10) = 5/7 → 7(5V/8−10) = 5(3V/8+10) → 35V/8−70 = 15V/8+50 → 20V/8 = 120 → V = 48. Petrol = 5×48/8 = 30 L. Distractor 24 results from incorrectly assuming only diesel is removed rather than a proportional mixture draw.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:27+00:00",
+      "id": "sgk_QNT_AVG_RATIO_MIXED_00012"
+    },
+    {
+      "stem": "The present salaries of Ravi and Sumit are in the ratio 3:5. If each receives an annual increment of ₹6,000, the new ratio of their salaries becomes 3:4. What is Sumit's present salary?",
+      "options": [
+        {
+          "option_text": "₹8,000 is Sumit's current monthly salary",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹12,000 is Sumit's current monthly salary",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹10,000 is Sumit's current monthly salary",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹15,000 is Sumit's current monthly salary",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Let present salaries = 3x and 5x. After increment: (3x+6000)/(5x+6000) = 3/4 → 4(3x+6000) = 3(5x+6000) → 12x+24000 = 15x+18000 → 3x = 6000 → x = 2000. Sumit's salary = 5×2000 = ₹10,000. The distractor ₹12,000 arises from solving for Ravi's post-increment salary (3x+6000 = 6000+6000) and misidentifying it as Sumit's current salary; ₹15,000 comes from mistakenly applying the new ratio (3:4) to compute 4×3750 without solving the equation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:37:27+00:00",
+      "id": "sgk_QNT_AVG_RATIO_MIXED_00013"
     }
   ]
 }

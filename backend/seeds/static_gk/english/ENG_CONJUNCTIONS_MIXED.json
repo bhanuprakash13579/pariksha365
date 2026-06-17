@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-23-eng-cj-07",
       "generated_at": "2026-04-23T22:40:00+00:00",
       "id": "sgk_ENG_CONJUNCTIONS_MIXED_00007"
+    },
+    {
+      "stem": "Choose the sentence that correctly uses 'either...or' with proper subject-verb agreement.",
+      "options": [
+        {
+          "option_text": "Either the principal or the teachers has to attend the seminar.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either the principal or the teachers have to attend the seminar.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Either the principal and the teachers have to attend the seminar.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either the principal nor the teachers have to attend the seminar.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: with 'either...or', the verb agrees with the subject closest to it. 'Teachers' (plural) is nearer, so 'have' is correct. Option A wrongly matches the verb with 'principal' (singular → 'has'). Option C misuses 'and' instead of 'or', breaking the correlative pair. Option D uses 'nor', which pairs only with 'neither', not 'either'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:43:15+00:00",
+      "id": "sgk_ENG_CONJUNCTIONS_MIXED_00008"
+    },
+    {
+      "stem": "Which sentence correctly uses 'so...that' to express degree and result?",
+      "options": [
+        {
+          "option_text": "The soup was such hot that she could not taste it properly.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The soup was very hot that she could not taste it properly.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The soup was so hot that she could not taste it properly.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The soup was too hot that she could not taste it properly.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct: the pattern 'so + adjective + that' expresses degree leading to a result. Option A is wrong because 'such' must precede 'a/an + adjective + noun' (e.g., 'such a hot soup that...'). Option B is wrong because 'very...that' is not a recognised conjunction construction. Option D is wrong because 'too' pairs with 'to' (infinitive), not with 'that'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:43:15+00:00",
+      "id": "sgk_ENG_CONJUNCTIONS_MIXED_00009"
+    },
+    {
+      "stem": "Identify the grammatically correct sentence using 'hardly' or 'scarcely' as a negative adverb with an appropriate conjunction.",
+      "options": [
+        {
+          "option_text": "Scarcely had she entered the hall than the lights went out.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hardly had she entered the hall when the lights went out.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Scarcely she had entered the hall when the lights went out.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hardly she had entered the hall than the lights went out.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: 'Hardly/Scarcely + had + subject + V3 + when' requires both inversion of subject-auxiliary AND the conjunction 'when'. Option A uses 'than' — this is the error students most commonly make by confusing it with 'no sooner...than'. Option C omits mandatory inversion; 'had' must precede the subject. Option D commits both errors: no inversion and 'than' instead of 'when'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:43:15+00:00",
+      "id": "sgk_ENG_CONJUNCTIONS_MIXED_00010"
+    },
+    {
+      "stem": "Which sentence correctly uses the conjunction 'lest'?",
+      "options": [
+        {
+          "option_text": "He practised daily lest he would forget the verses by the recital.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He practised daily lest he should forget the verses by the recital.",
+          "is_correct": true
+        },
+        {
+          "option_text": "He practised daily lest he forgets the verses by the recital.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He practised daily lest that he should forget the verses by the recital.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: 'lest' is a negative purpose conjunction that must be followed by 'should' (subjunctive construction). Option A is wrong because 'lest' never combines with 'would'. Option C is wrong because the bare present tense 'forgets' cannot follow 'lest'. Option D introduces a redundant 'that' after 'lest', which is a frequent written-English error.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:43:15+00:00",
+      "id": "sgk_ENG_CONJUNCTIONS_MIXED_00011"
+    },
+    {
+      "stem": "In which sentence is 'as' functioning as a CAUSAL conjunction (equivalent to 'because'), rather than a temporal one?",
+      "options": [
+        {
+          "option_text": "As she grew older, her passion for classical music deepened.",
+          "is_correct": false
+        },
+        {
+          "option_text": "As the laboratory was shut, the experiment had to be postponed.",
+          "is_correct": true
+        },
+        {
+          "option_text": "He waved to the crowd as the train pulled slowly out of the station.",
+          "is_correct": false
+        },
+        {
+          "option_text": "As she watched from the terrace, the children played in the rain.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: 'As the laboratory was shut' states a static condition that causes the result — 'as' = 'because'. Option A uses 'as' temporally (= as time passed / over time). Option C uses 'as' temporally (= at the very moment the train departed). Option D also uses 'as' temporally (= while she was watching). The causal reading is strongest when the 'as' clause describes a state, not a simultaneous action.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:43:15+00:00",
+      "id": "sgk_ENG_CONJUNCTIONS_MIXED_00012"
+    },
+    {
+      "stem": "Identify the grammatical error in: 'No sooner had the finance minister tabled the budget when the opposition staged a walkout from Parliament.'",
+      "options": [
+        {
+          "option_text": "'had' should be replaced with 'has' to reflect the present context.",
+          "is_correct": false
+        },
+        {
+          "option_text": "'tabled' should be replaced with 'table' to keep the verb consistent.",
+          "is_correct": false
+        },
+        {
+          "option_text": "'when' should be replaced with 'than' as 'no sooner' pairs only with 'than'.",
+          "is_correct": true
+        },
+        {
+          "option_text": "'staged' should be replaced with 'had staged' for correct event sequencing.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct: the fixed correlative is 'no sooner...than' — 'when' is an intrusion from the 'hardly/scarcely...when' pattern and is incorrect here. Option A is wrong: past perfect 'had' is precisely correct in a past-narrative 'no sooner' clause. Option B is wrong: 'tabled' (past participle after 'had') is grammatically sound. Option D is wrong: the simple past 'staged' correctly describes the result event; changing it to 'had staged' would illogically reverse the sequence.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:43:15+00:00",
+      "id": "sgk_ENG_CONJUNCTIONS_MIXED_00013"
+    },
+    {
+      "stem": "Which of the following sentences contains a conjunction-related grammatical error?",
+      "options": [
+        {
+          "option_text": "Both the captain and the players were felicitated for the championship win.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The director, as well as his deputies, was summoned before the inquiry panel.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Neither the CEO nor the board members was informed about the acquisition deal.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Not only the clerks but also the manager has signed the undertaking document.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is incorrect: with 'neither...nor', the verb agrees with the nearer subject. 'Board members' is plural and closer to the verb, so it must be 'were informed', not 'was'. Option A is correct: 'both...and' always triggers a plural verb ('were'). Option B is correct: with 'as well as', the verb agrees only with the primary subject 'director' (singular → 'was'). Option D is correct: 'manager' is the nearer subject and is singular, so 'has' is correct.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:43:15+00:00",
+      "id": "sgk_ENG_CONJUNCTIONS_MIXED_00014"
     }
   ]
 }

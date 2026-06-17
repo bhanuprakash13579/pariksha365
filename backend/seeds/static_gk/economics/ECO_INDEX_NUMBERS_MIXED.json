@@ -220,6 +220,216 @@
       "generator_tag": "gemini-batch-fix-2026-05-15",
       "generated_at": "2026-05-19T08:44:05+00:00",
       "id": "sgk_ECO_INDEX_NUMBERS_MIXED_00007"
+    },
+    {
+      "stem": "What is the base year for India's revised Index of Industrial Production (IIP) series currently used for all official releases?",
+      "options": [
+        {
+          "option_text": "Financial year 2004-05 (previously used base year)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Financial year 2011-12 (current official base year)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Financial year 2010-11 (used for interim estimates)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Financial year 2007-08 (used in GDP deflator)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "India revised the IIP base year from 2004-05 to 2011-12 in May 2017, aligning it with the new GDP and WPI base years. Option A (2004-05) was the old base and remains the most common wrong choice among students who recall the previous series.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:15+00:00",
+      "id": "sgk_ECO_INDEX_NUMBERS_MIXED_00008"
+    },
+    {
+      "stem": "In the CPI-Combined basket used for India's official inflation tracking, which expenditure group accounts for the single largest share of total weight?",
+      "options": [
+        {
+          "option_text": "Housing (includes rent, repairs, and maintenance)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Fuel and Light (cooking fuel and lighting needs)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Food and Beverages (cereals, milk, and vegetables)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Clothing, Bedding, and Footwear (textile goods)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Food and Beverages carries approximately 54.18% weight in CPI-Combined (base 2012), reflecting India's household spending reality. Housing (10.07%) is often mistaken as the dominant group because it seems intuitively large in urban budgets, but it is far smaller than the food group in the combined index.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:15+00:00",
+      "id": "sgk_ECO_INDEX_NUMBERS_MIXED_00009"
+    },
+    {
+      "stem": "The Paasche Price Index is structurally distinct from the Laspeyres Price Index in that it uses which quantities as weights in its formula?",
+      "options": [
+        {
+          "option_text": "Base period quantities adjusted for income-level changes",
+          "is_correct": false
+        },
+        {
+          "option_text": "Current period quantities prevailing in the comparison year",
+          "is_correct": true
+        },
+        {
+          "option_text": "Geometric mean of base and current period quantities",
+          "is_correct": false
+        },
+        {
+          "option_text": "Fixed quantities sourced from a decennial population census",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Paasche uses current year quantities (Qn) as weights: ΣPnQn / ΣP0Qn. Laspeyres uses base year quantities (Q0). Option A is a common confusion — neither index adjusts weights for income; they differ only in the time period of the quantity weights used.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:15+00:00",
+      "id": "sgk_ECO_INDEX_NUMBERS_MIXED_00010"
+    },
+    {
+      "stem": "In India's IIP framework (base year 2011-12), which sector carries the dominant weight of approximately 77.6% in the overall index?",
+      "options": [
+        {
+          "option_text": "Mining sector, covering extraction of coal and ores",
+          "is_correct": false
+        },
+        {
+          "option_text": "Electricity sector, covering power generation output",
+          "is_correct": false
+        },
+        {
+          "option_text": "Manufacturing sector, covering all factory production",
+          "is_correct": true
+        },
+        {
+          "option_text": "Construction sector, covering buildings and bridges",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "IIP covers three sectors: Manufacturing (~77.63%), Mining (~14.37%), and Electricity (~7.99%). Manufacturing's dominance means monthly IIP swings are almost entirely driven by factory output. Option D is a trap — Construction is tracked separately via the use-based 'Infrastructure/Construction Goods' sub-index, not as a standalone IIP sector.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:15+00:00",
+      "id": "sgk_ECO_INDEX_NUMBERS_MIXED_00011"
+    },
+    {
+      "stem": "Fisher's Ideal Price Index is considered 'ideal' among classical index formulas primarily because it simultaneously satisfies which two statistical tests?",
+      "options": [
+        {
+          "option_text": "The Unit Test and the Circular Test of index consistency",
+          "is_correct": false
+        },
+        {
+          "option_text": "The Time Reversal Test and the Factor Reversal Test",
+          "is_correct": true
+        },
+        {
+          "option_text": "The Chain Base Test and the Fixed Base Weighted Test",
+          "is_correct": false
+        },
+        {
+          "option_text": "The Commodity Reversal Test and the Identity Test",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Fisher's Index = √(Laspeyres × Paasche). This geometric mean satisfies the Time Reversal Test (reversing base and current year gives the reciprocal) and the Factor Reversal Test (price index × quantity index = value ratio). Option A is wrong — neither Laspeyres nor Paasche satisfies the Circular Test, and Fisher's primary distinction is the two tests named in B.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:15+00:00",
+      "id": "sgk_ECO_INDEX_NUMBERS_MIXED_00012"
+    },
+    {
+      "stem": "In index number methodology, the statistical technique of 'splicing' is specifically applied when which situation arises in a long-run price series?",
+      "options": [
+        {
+          "option_text": "Price data for seasonal commodities is missing in certain months",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two index series with different base years must be linked into one continuous series",
+          "is_correct": true
+        },
+        {
+          "option_text": "Geometric mean replaces arithmetic mean during a Laspeyres revision cycle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Basket weights are updated mid-series using newer consumption survey data",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Splicing links an old index series (e.g., WPI base 2004-05) to a new series (base 2011-12) by calculating a conversion factor at the overlap point, enabling a single unbroken time series for trend analysis. Option D describes 'rebasing' or 'chain-linking', which is a separate concept — rebasing updates weights but does not necessarily link two separate series into one.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:15+00:00",
+      "id": "sgk_ECO_INDEX_NUMBERS_MIXED_00013"
+    },
+    {
+      "stem": "Among the use-based categories in India's IIP, which sub-index is most closely watched as a leading indicator of private investment cycles despite being the most statistically volatile component?",
+      "options": [
+        {
+          "option_text": "Primary Goods index, tracking raw material and food output",
+          "is_correct": false
+        },
+        {
+          "option_text": "Capital Goods index, tracking machinery and equipment output",
+          "is_correct": true
+        },
+        {
+          "option_text": "Consumer Durables index, tracking household appliance output",
+          "is_correct": false
+        },
+        {
+          "option_text": "Infrastructure Goods index, tracking cement and steel output",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Capital Goods production (boilers, turbines, machine tools) directly reflects new capacity creation by firms, making it a proxy for business investment sentiment. Its month-to-month swing can exceed ±30%, far outstripping other use-based categories. Consumer Durables (Option C) is frequently confused with Capital Goods; the key distinction is that durables track consumer spending on long-lived items, not producer-side investment in productive machinery.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:15+00:00",
+      "id": "sgk_ECO_INDEX_NUMBERS_MIXED_00014"
     }
   ]
 }

@@ -431,6 +431,15 @@ Agra, Gwalior (oldest khyal), Kirana, Patiala, Jaipur-Atrauli, Banaras, Mewati, 
 - Naturalised: **Mother Teresa (1980).**
 - **2024 recipients:** Karpoori Thakur, L.K. Advani, P.V. Narasimha Rao, Chaudhary Charan Singh, M.S. Swaminathan.
 
+<div class="examtip">⚠️ **TRAP — Bharat Ratna vs Padma Awards — who nominates?**
+
+| Award | Nomination source | Who decides | Key distinction |
+|---|---|---|---|
+| **Bharat Ratna** | Prime Minister recommends to President | President of India confers | No application; PM initiates; no committee |
+| **Padma awards** | Anyone can nominate (online portal open to public) | Padma Awards Committee → HM → PM → President | Recommendations open to public since 2016 |
+
+Common wrong answer: students say "the government nominates Bharat Ratna" — technically the **Prime Minister recommends** and the **President awards** it. Also: Bharat Ratna **can be awarded posthumously** (first posthumous: Lal Bahadur Shastri, 1966). Padma awards can also be posthumous.</div>
+
 ## Chapter B2 — Gallantry Awards (peacetime)
 
 - **Param Vir Chakra** (wartime, highest military — 21 awardees; first Major Somnath Sharma, 1947).
@@ -501,6 +510,16 @@ Agra, Gwalior (oldest khyal), Kirana, Patiala, Jaipur-Atrauli, Banaras, Mewati, 
 - **1st Athletics Olympic gold**: **Neeraj Chopra** (javelin, Tokyo 2020 → held 2021).
 - **Hockey golds**: 8 (1928-1980).
 - **Paris 2024 haul**: 1 silver (Neeraj Chopra) + 5 bronze; total 6 medals.
+
+<div class="keypoint">**⚡ SHORTCUT — Olympics vs Commonwealth vs Asian Games — what's different:**
+
+| Games | Organiser | Unique to it (not in Olympics) | India's strength |
+|---|---|---|---|
+| **Olympics** | IOC, Lausanne | Benchmark; all major sports | Hockey (8 golds), shooting, wrestling, badminton |
+| **Commonwealth Games** | CGF | Netball, lawn bowls, para-sports integrated | Weightlifting, shooting, wrestling (high medal count) |
+| **Asian Games** | OCA | Kabaddi, Sepaktakraw, Wushu, Kurash (regional sports) | Kabaddi (unbeaten for decades), shooting, athletics |
+
+Key trap: **Cricket is NOT an Olympic sport** (as of 2024; added to 2028 LA Olympics). Kabaddi is played at Asian Games but not at Olympics or CWG.</div>
 
 ## Chapter C2 — Cricket (ICC-level)
 
@@ -584,6 +603,13 @@ Agra, Gwalior (oldest khyal), Kirana, Patiala, Jaipur-Atrauli, Banaras, Mewati, 
 | Interpreter of Maladies, Namesake | Jhumpa Lahiri |
 | The Hungry Tide | Amitav Ghosh |
 | A Passage to India | E.M. Forster |
+
+<div class="examtip">⚠️ **TRAP — Author nationality and citizenship often tested:**
+- **Salman Rushdie** — born India (Mumbai), British citizen. *Satanic Verses* (1988) led to a fatwa; *Midnight's Children* won Booker 1981.
+- **V.S. Naipaul** — born Trinidad; British citizen; Nobel Literature 2001. NOT Indian, but of Indian-origin.
+- **Jhumpa Lahiri** — born London; raised USA; of Bengali-origin. *Interpreter of Maladies* (Pulitzer 2000) is set in India/USA.
+- **Amitav Ghosh** — Indian citizen; writes in English. *Ibis trilogy* including *Sea of Poppies*.
+- Examiners exploit "Indian author" vs "Indian-origin author" — check citizenship, not ancestry.</div>
 
 ### Exam pointers
 
@@ -1960,7 +1986,7 @@ Set a timer. No looking back. Check the answer key at the end.
 
 **25.** India's chess player D Gukesh became World Chess Champion in 2024, making him the:
 
-(a) Youngest ever world champion at age 18  (b) Second Indian to win the title  (c) Both (a) and (b)  (d) First Asian world champion
+(a) Youngest ever world champion at age 18  (b) Second Indian to win the title  (c) Both (a) and  (b)  (d) First Asian world champion
 
 ---
 

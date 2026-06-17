@@ -220,6 +220,216 @@
       "generator_tag": "gemini-batch-fix-2026-05-15",
       "generated_at": "2026-05-19T08:44:06+00:00",
       "id": "sgk_ECO_NATIONAL_INCOME_VI_MIXED_00007"
+    },
+    {
+      "stem": "Which method of computing national income aggregates the net value added by each producing unit, thereby automatically eliminating intermediate consumption?",
+      "options": [
+        {
+          "option_text": "Expenditure method, summing all final household spends",
+          "is_correct": false
+        },
+        {
+          "option_text": "Value Added Method, tracing output minus intermediate inputs",
+          "is_correct": true
+        },
+        {
+          "option_text": "Income method, totalling wages, rent, interest and profit",
+          "is_correct": false
+        },
+        {
+          "option_text": "Direct tax method, derived from assessed taxable income data",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: the Product (Value Added) Method sums Net Value Added = Output minus Intermediate Consumption across all sectors, so double-counting is structurally impossible. Option C (Income Method) also gives the same national income but works from the factor-payment side, not from output minus inputs.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:41:22+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_VI_MIXED_00008"
+    },
+    {
+      "stem": "In India's official national accounts, what specific macroeconomic aggregate is formally equated to 'National Income'?",
+      "options": [
+        {
+          "option_text": "GNP at market prices, before subtracting capital depreciation",
+          "is_correct": false
+        },
+        {
+          "option_text": "NNP at factor cost, i.e., GNP minus depreciation and net indirect taxes",
+          "is_correct": true
+        },
+        {
+          "option_text": "GDP at market prices, the most widely published headline figure",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gross Value Added at basic prices before adding any product taxes",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: National Income = NNP at Factor Cost = GNP at Market Price − Depreciation − Net Indirect Taxes. Candidates often confuse it with GDP at Market Price (option C), which is the headline number but neither nets out depreciation nor removes indirect taxes.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:41:22+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_VI_MIXED_00009"
+    },
+    {
+      "stem": "Old-age pensions disbursed by the government are excluded from GDP computation for which fundamental reason?",
+      "options": [
+        {
+          "option_text": "A payment that crosses national borders or involves foreign exchange",
+          "is_correct": false
+        },
+        {
+          "option_text": "They involve no production of new goods or services in the current period",
+          "is_correct": true
+        },
+        {
+          "option_text": "A government expenditure that is not formally recorded in the Union Budget",
+          "is_correct": false
+        },
+        {
+          "option_text": "Income received by pensioners who then re-spend it all on consumption goods",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: GDP measures the value of current production. Transfer payments like pensions redistribute existing purchasing power without generating new output, so including them would overstate productive activity. Option D is a common trap — pensioners do spend the money, but that spending (not the pension itself) gets counted when goods are purchased.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:41:22+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_VI_MIXED_00010"
+    },
+    {
+      "stem": "The GDP deflator differs from the Consumer Price Index (CPI) most significantly because it covers which price universe?",
+      "options": [
+        {
+          "option_text": "A fixed basket of consumer goods and services revised every five years",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only goods and services included in central government procurement lists",
+          "is_correct": false
+        },
+        {
+          "option_text": "All goods and services actually produced within the economy in that year",
+          "is_correct": true
+        },
+        {
+          "option_text": "Import prices alone, excluding domestically manufactured goods and services",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct: the GDP deflator is a Paasche index that uses the current year's output basket, so it automatically reflects changes in what the economy actually produces — including investment goods, government services, and exports not in the CPI. Option A describes CPI's fixed Laspeyres basket, the key structural difference.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:41:22+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_VI_MIXED_00011"
+    },
+    {
+      "stem": "A country's nominal GDP rises from ₹100 lakh crore to ₹112 lakh crore, while the GDP deflator climbs from 100 to 106. What is the approximate real GDP growth rate?",
+      "options": [
+        {
+          "option_text": "About 12%, as nominal GDP growth equals real economic expansion",
+          "is_correct": false
+        },
+        {
+          "option_text": "About 5.7%, after removing the 6-point price rise from 12% nominal growth",
+          "is_correct": true
+        },
+        {
+          "option_text": "About 6%, equal to the rate of inflation shown by the deflator",
+          "is_correct": false
+        },
+        {
+          "option_text": "About 18%, by summing nominal growth and the inflation rate together",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: Real GDP = Nominal GDP / Deflator × 100. New real GDP = 112/106 × 100 = 105.66, so growth ≈ 5.66% ≈ 5.7%. Option C (6%) confuses the inflation rate itself with real growth; option A ignores inflation entirely. The deflator must divide out price changes, not be subtracted arithmetically.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:41:22+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_VI_MIXED_00012"
+    },
+    {
+      "stem": "Which formula correctly converts GDP at Market Price to GDP at Factor Cost?",
+      "options": [
+        {
+          "option_text": "GDP at FC = GDP at MP plus net indirect taxes and minus all subsidies",
+          "is_correct": false
+        },
+        {
+          "option_text": "GDP at FC = GDP at MP minus net indirect taxes (indirect taxes − subsidies)",
+          "is_correct": true
+        },
+        {
+          "option_text": "GDP at FC = GNP at MP minus depreciation plus net factor income abroad",
+          "is_correct": false
+        },
+        {
+          "option_text": "GDP at FC = GDP at MP minus only central subsidies, keeping state-level taxes",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: Net Indirect Taxes = Indirect Taxes − Subsidies. Market price includes these taxes but factor cost strips them out, so GDP at FC = GDP at MP − NIT. Option A reverses the logic. Option C conflates GNP/GDP and mixes in depreciation, which is unrelated to the market-price-to-factor-cost conversion.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:41:22+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_VI_MIXED_00013"
+    },
+    {
+      "stem": "In the expenditure approach Y = C + I + G + NX, which government outlay is explicitly excluded from the 'G' (government expenditure) component?",
+      "options": [
+        {
+          "option_text": "Salaries paid to defence personnel and armed forces staff on duty",
+          "is_correct": false
+        },
+        {
+          "option_text": "Capital spending on public infrastructure such as highways and bridges",
+          "is_correct": false
+        },
+        {
+          "option_text": "Transfer payments like unemployment benefits, pensions and subsidies",
+          "is_correct": true
+        },
+        {
+          "option_text": "Procurement of military equipment and defence hardware by government",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct: 'G' in the expenditure identity captures only government purchases of currently produced goods and services. Transfer payments (pensions, subsidies, unemployment doles) shift income without purchasing output, so they are excluded to prevent double-counting — the recipient's subsequent spending is captured in 'C'. Options A, B, and D all represent actual government purchases of services or capital goods.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:41:22+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_VI_MIXED_00014"
     }
   ]
 }

@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-26-qnt-pct3-07",
       "generated_at": "2026-04-26T13:30:00+00:00",
       "id": "sgk_QNT_PERCENTAGE_III_MIXED_00007"
+    },
+    {
+      "stem": "The length of a rectangle is increased by 10% and its breadth is decreased by 10%. What is the net percentage change in the area of the rectangle?",
+      "options": [
+        {
+          "option_text": "Area remains unchanged with zero net change",
+          "is_correct": false
+        },
+        {
+          "option_text": "Area decreases by exactly 1 percent",
+          "is_correct": true
+        },
+        {
+          "option_text": "Area increases by exactly 1 percent",
+          "is_correct": false
+        },
+        {
+          "option_text": "Area decreases by exactly 2 percent",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "New area = 1.10L × 0.90B = 0.99LB, which is 1% less than the original LB. Option A is the most common trap: students assume equal and opposite percentage changes cancel — they do not, because the 10% decrease acts on the already-enlarged dimension, making the net effect −1%, not 0.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:39:53+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00008"
+    },
+    {
+      "stem": "In a competitive examination, 60% of the candidates passed. If 480 candidates failed, what was the total number of candidates who appeared for the exam?",
+      "options": [
+        {
+          "option_text": "800 total candidates appeared in the exam",
+          "is_correct": false
+        },
+        {
+          "option_text": "960 total candidates appeared in the exam",
+          "is_correct": false
+        },
+        {
+          "option_text": "1,000 total candidates appeared in the exam",
+          "is_correct": false
+        },
+        {
+          "option_text": "1,200 total candidates appeared in the exam",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "If 60% passed, then 40% failed. So 40% of total = 480, giving total = 480 ÷ 0.40 = 1,200. Option A (800) is the classic error: mistakenly treating 60% as the failed rate and computing 480 ÷ 0.60 = 800, which swaps the passed and failed percentages.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:39:53+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00009"
+    },
+    {
+      "stem": "The price of rice rises by 25%. By what percentage must a household reduce its consumption of rice so that the total monthly expenditure on rice remains exactly unchanged?",
+      "options": [
+        {
+          "option_text": "Reduce consumption by exactly 16.67 percent",
+          "is_correct": false
+        },
+        {
+          "option_text": "Reduce consumption by exactly 20 percent",
+          "is_correct": true
+        },
+        {
+          "option_text": "Reduce consumption by exactly 25 percent",
+          "is_correct": false
+        },
+        {
+          "option_text": "Reduce consumption by exactly 12.50 percent",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Expenditure = Price × Quantity. New price = 1.25P. For expenditure to stay constant: 1.25P × Q_new = P × Q, so Q_new = Q/1.25 = 0.80Q — a reduction of 20%. The formula is (rise%) ÷ (100 + rise%) × 100 = 25/125 × 100 = 20%. Option C (25%) is wrong because the reduction must be taken relative to the new inflated price level, not the original one.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:39:53+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00010"
+    },
+    {
+      "stem": "In an election between two candidates, the winner secured 56% of the valid votes polled. Total valid votes were 75,000 and 3,000 votes were declared invalid. By how many votes did the winner defeat the opponent?",
+      "options": [
+        {
+          "option_text": "The winning margin was 4,500 valid votes",
+          "is_correct": false
+        },
+        {
+          "option_text": "The winning margin was 9,000 valid votes",
+          "is_correct": true
+        },
+        {
+          "option_text": "The winning margin was 9,360 valid votes",
+          "is_correct": false
+        },
+        {
+          "option_text": "The winning margin was 8,400 valid votes",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Winner = 56% of 75,000 = 42,000; Loser = 44% of 75,000 = 33,000; Margin = 9,000. The 3,000 invalid votes are a deliberate trap and must NOT be added to the base. Option C (9,360) is the trap answer: using 78,000 as the base — 12% × 78,000 = 9,360. Option A (4,500) arises from mistakenly counting only the winner's lead above 50%: 6% × 75,000 = 4,500.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:39:53+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00011"
+    },
+    {
+      "stem": "A person saves 25% of his monthly income. His income increases by 20% and he raises his monthly expenditure by 10%. What is the percentage increase in his monthly savings?",
+      "options": [
+        {
+          "option_text": "Monthly savings rise by 20 percent overall",
+          "is_correct": false
+        },
+        {
+          "option_text": "Monthly savings rise by 30 percent overall",
+          "is_correct": false
+        },
+        {
+          "option_text": "Monthly savings rise by 40 percent overall",
+          "is_correct": false
+        },
+        {
+          "option_text": "Monthly savings rise by 50 percent overall",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Let income = 100 → Expenditure = 75, Savings = 25. New income = 120; New expenditure = 75 × 1.10 = 82.5; New savings = 120 − 82.5 = 37.5. % increase = (37.5 − 25)/25 × 100 = 50%. Option A (20%) is the most tempting trap — students apply the income growth rate directly to savings, ignoring that expenditure also rose and eroded part of the gain.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:39:53+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00012"
+    },
+    {
+      "stem": "A trader sells an article at a profit of 25%. Had he bought it at 20% less and sold it for ₹6 less than his original selling price, he would have made a profit of 50%. Find the original cost price of the article.",
+      "options": [
+        {
+          "option_text": "The original cost price of the article is ₹100",
+          "is_correct": false
+        },
+        {
+          "option_text": "The original cost price of the article is ₹120",
+          "is_correct": true
+        },
+        {
+          "option_text": "The original cost price of the article is ₹144",
+          "is_correct": false
+        },
+        {
+          "option_text": "The original cost price of the article is ₹150",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Let CP = x. SP = 1.25x. New CP = 0.80x; New SP = 1.25x − 6. New profit 50% ⟹ New SP = 1.50 × 0.80x = 1.20x. Equating: 1.25x − 6 = 1.20x → 0.05x = 6 → x = ₹120. Verification: original CP=120, SP=150 (25% profit ✓); new CP=96, SP=144 (50% profit ✓), and 150−6=144 ✓. ₹150 is the original SP — the frequent error when students solve for SP instead of CP.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:39:53+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00013"
+    },
+    {
+      "stem": "In a container, milk constitutes 80% of a mixture of milk and water. When 20 litres of pure water is added, the percentage of milk in the resulting mixture drops to 60%. What was the initial volume of the mixture in litres?",
+      "options": [
+        {
+          "option_text": "The initial volume of the mixture was 50 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "The initial volume of the mixture was 60 litres",
+          "is_correct": true
+        },
+        {
+          "option_text": "The initial volume of the mixture was 75 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "The initial volume of the mixture was 80 litres",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Let initial volume = x litres; milk = 0.80x. After adding 20 L water: 0.80x/(x + 20) = 0.60 → 0.80x = 0.60x + 12 → 0.20x = 12 → x = 60 litres. Verification: milk = 48 L; after adding 20 L water, total = 80 L, milk% = 48/80 = 60% ✓. Option D (80 L) is a common error: students see the percentage drop of 20 points and reason '20 L added = 20% of something → base = 100 → original = 80 L', conflating percentage-point drop with percentage of volume.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:39:53+00:00",
+      "id": "sgk_QNT_PERCENTAGE_III_MIXED_00014"
     }
   ]
 }

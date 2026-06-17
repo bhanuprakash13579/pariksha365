@@ -220,6 +220,216 @@
       "generator_tag": "gemini-batch-fix-2026-05-15",
       "generated_at": "2026-05-19T08:44:34+00:00",
       "id": "sgk_QNT_PROFIT_LOSS_XX_MIXED_00007"
+    },
+    {
+      "stem": "A shopkeeper marks his goods 40% above cost price and allows a 25% discount on the marked price. What is his net profit percentage?",
+      "options": [
+        {
+          "option_text": "Profit of 5% on the original cost price",
+          "is_correct": true
+        },
+        {
+          "option_text": "Profit of 10% on the original cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Loss of 5% on the original cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Profit of 15% on the original cost price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "Let CP = 100. MP = 140. SP = 140 × 0.75 = 105. Profit = 5%. Option B (10%) is the classic error of averaging the markup and discount rates; the correct calculation requires multiplying the factors: 1.40 × 0.75 = 1.05.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:06:50+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_XX_MIXED_00008"
+    },
+    {
+      "stem": "A trader buys 12 kg of wheat flour for Rs. 96 and sells it at Rs. 9.50 per kg. What is the profit percentage on his purchase price?",
+      "options": [
+        {
+          "option_text": "15.50% gain on the total purchase amount",
+          "is_correct": false
+        },
+        {
+          "option_text": "18.75% gain on the total purchase amount",
+          "is_correct": true
+        },
+        {
+          "option_text": "12.50% gain on the total purchase amount",
+          "is_correct": false
+        },
+        {
+          "option_text": "20.00% gain on the total purchase amount",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "CP per kg = 96 ÷ 12 = Rs. 8. Profit per kg = 9.50 − 8 = Re. 1.50. Profit% = (1.50/8) × 100 = 18.75%. Option A (15.50%) results from the error of computing profit as a percentage of SP (1.50/9.50 ≈ 15.79%) rather than CP.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:06:50+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_XX_MIXED_00009"
+    },
+    {
+      "stem": "A shopkeeper sells ⅔ of his stock at 15% profit and the remaining ⅓ at 9% loss. What is his overall profit or loss percentage on the entire stock?",
+      "options": [
+        {
+          "option_text": "Net profit of 7% on the aggregate cost value",
+          "is_correct": true
+        },
+        {
+          "option_text": "Net profit of 5% on the aggregate cost value",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net loss of 7% on the aggregate cost value",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net profit of 9% on the aggregate cost value",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Let total CP = 100. SP of ⅔ stock = (2/3)×100×1.15 = 230/3. SP of ⅓ stock = (1/3)×100×0.91 = 91/3. Total SP = 321/3 = 107. Profit = 7%. Option D (9%) is wrong: it simply averages 15% and −9% without applying the correct weights (2:1 ratio).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:06:50+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_XX_MIXED_00010"
+    },
+    {
+      "stem": "A jacket sold for Rs. 480 results in a loss of 20% for the seller. At what price must he sell it to earn a profit of 20%?",
+      "options": [
+        {
+          "option_text": "Rs. 700 to achieve the required 20% gain",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 720 to achieve the required 20% gain",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rs. 660 to achieve the required 20% gain",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 576 to achieve the required 20% gain",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "CP = 480 ÷ 0.80 = Rs. 600. For 20% profit: SP = 600 × 1.20 = Rs. 720. Option D (Rs. 576) is the most common error — applying 20% profit directly to the loss-making SP (480 × 1.20 = 576) instead of first recovering the true cost price.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:06:50+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_XX_MIXED_00011"
+    },
+    {
+      "stem": "Two successive discounts of 20% and 15% offered on a marked price together equal one single discount of what percentage?",
+      "options": [
+        {
+          "option_text": "A single flat discount of 28% on the marked price",
+          "is_correct": false
+        },
+        {
+          "option_text": "A single flat discount of 35% on the marked price",
+          "is_correct": false
+        },
+        {
+          "option_text": "A single flat discount of 32% on the marked price",
+          "is_correct": true
+        },
+        {
+          "option_text": "A single flat discount of 30% on the marked price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Equivalent single discount = 1 − (1 − 0.20)(1 − 0.15) = 1 − 0.80 × 0.85 = 1 − 0.68 = 32%. Option B (35%) is the most tempting error: naively adding 20% + 15% = 35% without accounting for the compounding effect where the second discount applies to an already-reduced price.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:06:50+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_XX_MIXED_00012"
+    },
+    {
+      "stem": "Two articles are purchased together for Rs. 6,000. The first is sold at 30% profit and the second at 10% loss, yielding a net profit of Rs. 480 on the pair. What was the cost price of the first article?",
+      "options": [
+        {
+          "option_text": "Rs. 2,400 as the cost of the first article",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 2,700 as the cost of the first article",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rs. 3,000 as the cost of the first article",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 3,300 as the cost of the first article",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Let CP₁ = x, CP₂ = 6000 − x. Net profit: 1.30x + 0.90(6000 − x) − 6000 = 480 → 0.40x − 600 = 480 → x = Rs. 2,700. Verify: SP₁ = 3510, SP₂ = 2970, Total SP = 6480, Profit = Rs. 480 ✓. Option C (Rs. 3,000) is the naive guess assuming equal cost split — a common shortcut error when profit and loss percentages differ.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:06:50+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_XX_MIXED_00013"
+    },
+    {
+      "stem": "A trader buys 100 kg of rice at Rs. 40/kg and 150 kg at Rs. 50/kg. He mixes both lots and sells the blend at a uniform price to earn exactly 25% profit on total cost. What is the selling price per kg of the mixture?",
+      "options": [
+        {
+          "option_text": "Rs. 55.00 per kg of the blended rice mixture",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 57.50 per kg of the blended rice mixture",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rs. 60.00 per kg of the blended rice mixture",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 56.25 per kg of the blended rice mixture",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Total CP = 100×40 + 150×50 = Rs. 11,500. Required SP = 11,500 × 1.25 = Rs. 14,375. Total quantity = 250 kg. SP per kg = 14,375 ÷ 250 = Rs. 57.50. Option D (Rs. 56.25) is the classic mixture error: using the simple average CP (Rs. 45/kg) instead of the weighted average (Rs. 46/kg), then applying 25% — a trap set for candidates who skip the weighting step.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:06:50+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_XX_MIXED_00014"
     }
   ]
 }

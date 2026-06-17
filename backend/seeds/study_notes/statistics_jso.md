@@ -62,19 +62,19 @@ date: "2026"
 | 12 | Index Numbers | 6 | 12 | ⭐⭐⭐⭐ HIGH | Easy |
 |    | **TOTAL** | **100** | **200** | | |
 
-> **What this dashboard tells you.** The five **CRITICAL** chapters (2, 3, 5, 6, 7, 9) carry **120 / 200 marks** = 60%. Mastering them alone gets you to ≈108/120. With the four **HIGH** chapters added (1, 4, 8, 11, 12) you cover **88% of the paper**. ANOVA is the only area where you can afford ≤80% mastery if time is tight.
+> **What this dashboard tells you.** The five **CRITICAL** chapters (2, 3, 5, 6, 7, 9) carry **$\dfrac{120}{200}$ marks** = 60%. Mastering them alone gets you to ≈108/120. With the four **HIGH** chapters added (1, 4, 8, 11, 12) you cover **88% of the paper**. ANOVA is the only area where you can afford ≤80% mastery if time is tight.
 
 ## Cut-offs reality check
 
 **Cut-off bands — historically:**
 
-- **General (UR) cut-off** — 70–75% band → roughly **140–150 / 200 marks**.
+- **General (UR) cut-off** — 70–75% band → roughly **140–$\dfrac{150}{200}$ marks**.
 
-- **≥ 90% (≥ 180 / 200)** — practically guarantees final selection in most cycles.
+- **≥ 90% (≥ $\dfrac{180}{200}$)** — practically guarantees final selection in most cycles.
 
 - Cut-offs shift by vacancy count + competition; **treat 75% as your floor, not your ceiling**.
 
-**The 95% target = 190 / 200:**
+**The 95% target = $\dfrac{190}{200}$:**
 
 - Demands **≥ 96 correct** out of 100, with ≤ 2 wrongs.
 
@@ -112,7 +112,17 @@ Read end-to-end in order without skipping.
 | **p66–73** | [Chapter 9](#chapter-9) | Statistical Inference (Estimation + Testing of Hypotheses) |
 | **p74–78** | [Chapter 10](#chapter-10) | Analysis of Variance (ANOVA) |
 | **p79–84** | [Chapter 11](#chapter-11) | Time Series Analysis |
-| **p85–134** | [Chapter 12](#chapter-12) | Index Numbers |
+| **p85–92** | [Chapter 12](#chapter-12) | Index Numbers |
+| — | [Appendix A](#appendix-a) | Master Formula Sheet (one-page revision) |
+| — | [Appendix B](#appendix-b) | Ultimate Tables: z, t, χ², F, distribution cheat sheets |
+| — | [Appendix C](#appendix-c) | Full-length 100-Q Mock Test #1 (with answer key) |
+| — | [Appendix D](#appendix-d) | 7-Day Final Revision Plan |
+| — | [Appendix E](#appendix-e) | Extended Drill Pack — 6 CRITICAL chapters (25–30 Qs each) |
+| — | [Appendix F](#appendix-f) | Mock Test #2 — 100 Qs, full coverage (with answer key) |
+| — | [Appendix G](#appendix-g) | JSO PYQ-Framing Bank (recognise the wording, lock the answer) |
+| — | [Appendix H](#appendix-h) | Common errors that cost JSO candidates the 95% mark |
+| — | [Appendix I](#appendix-i) | Memory tricks (mnemonics that actually stick) |
+| — | [Appendix K](#appendix-k) | Extended Drill for HIGH chapters (Ch 1, 4, 8, 11, 12) — 20 Qs each |
 
 ---
 # PART 0 — FOUNDATIONS YOU CANNOT SKIP {#part-0}
@@ -453,11 +463,11 @@ Suppose a class is written **20–30**.
 | Lower limit ($L$) | Smallest value the class includes | 20 |
 | Upper limit ($U$) | Largest value the class includes | 30 |
 | Class width ($h$) | $ U - L $ | 10 |
-| Class mark / mid-value ($m$) | $ (L+U)/2 $ | 25 |
+| Class mark / mid-value ($m$) | $\frac{L+U}{2}$ | 25 |
 | Class boundaries (continuous form) | $ L - 0.5 $ to $ U + 0.5 $ (for inclusive series) | 19.5 – 30.5 |
 | Frequency ($f$) | Count of observations in the class | given |
 | Cumulative frequency | Running total of $f$ | computed |
-| Relative frequency | $ f / \sum f $ | a proportion |
+| Relative frequency | $\frac{f}{\sum f}$ | a proportion |
 
 **Inclusive vs exclusive class:**
 
@@ -565,7 +575,7 @@ To convert inclusive → exclusive: subtract 0.5 from each lower limit and add 0
 When class widths differ, you must plot **frequency density** (= $ f / h $) on the y-axis, **not** raw frequency. Otherwise the visual impression lies.
 
 **Example.** Classes 0–10 (f=20), 10–20 (f=30), 20–40 (f=40).
-Density = 20/10 = 2, 30/10 = 3, 40/20 = **2** (not 4).
+Density = $\dfrac{20}{10}$ = 2, $\dfrac{30}{10}$ = 3, $\dfrac{40}{20}$ = **2** (not 4).
 
 ## 1.8 Worked PYQ-style examples
 
@@ -590,7 +600,7 @@ Density = 20/10 = 2, 30/10 = 3, 40/20 = **2** (not 4).
 <div class="worked" markdown="block">
 
 **Q 1.2.** A pie chart shows education spending as 25 % of a state's outlay. The corresponding angle is:
-**(a) 25°** **(b) 90°** **(c) 25/360 °** **(d) 100°**
+**(a) 25°** **(b) 90°** **(c) $\dfrac{25}{360}$ °** **(d) 100°**
 
 **Step 1 — Apply the pie-chart angle formula.**
 
@@ -659,10 +669,10 @@ Find cumulative frequency of class 20–30 (less-than form).
 
 **Step 1 — Compute frequency density = f / h for each class.**
 
-- Class 1 (width 5): 20 / 5 = 4
-- Class 2 (width 5): 25 / 5 = 5
-- Class 3 (width 10): 50 / 10 = 5
-- Class 4 (width 10): 30 / 10 = 3
+- Class 1 (width 5): $\dfrac{20}{5}$ = 4
+- Class 2 (width 5): $\dfrac{25}{5}$ = 5
+- Class 3 (width 10): $\dfrac{50}{10}$ = 5
+- Class 4 (width 10): $\dfrac{30}{10}$ = 3
 
 Heights = **4, 5, 5, 3**.  **Ans (b).**
 
@@ -700,7 +710,7 @@ Heights = **4, 5, 5, 3**.  **Ans (b).**
 | # | Q | Ans |
 |---|----|-----|
 | 1 | Class mark of 50–60 = ? | 55 |
-| 2 | Total frequency = 200; sector for "Education" = 72°. % share? | 72/360 × 100 = **20%** |
+| 2 | Total frequency = 200; sector for "Education" = 72°. % share? | $\dfrac{72}{360}$ × 100 = **20%** |
 | 3 | Class 100–149 inclusive → exclusive lower boundary? | 99.5 |
 | 4 | The graph used to show parts of a whole is? | Pie |
 | 5 | Class width if classes are 0–4, 5–9, 10–14? | 5 |
@@ -817,6 +827,12 @@ $$\text{Median} = L + \frac{\frac{N}{2} - F}{f} \times h$$
 $$\text{Mode} = L + \frac{f_1 - f_0}{2f_1 - f_0 - f_2} \times h$$
 
 $$\boxed{\text{Mode} = 3\,\text{Median} - 2\,\text{Mean}} \quad \text{(empirical relation — used to find the third when two are known)}$$
+
+<div class="keypoint">**Mnemonic — Mean, Median, Mode:** Remember **"Arranged Nicely, Middle is Median; Mode is Most"**. Mean = sum/n (affected by every value); Median = the middle value when arranged in order (positional); Mode = the most frequent value. **The Mean is the only measure pulled toward outliers** — Median and Mode are resistant to extreme values.</div>
+
+<div class="keypoint">**⚡ SHORTCUT — Evenly spaced series:** For an arithmetic progression (evenly spaced values), Mean = $\frac{\text{First} + \text{Last}}{2}$. Example: 10, 20, 30, 40, 50 → Mean = $\frac{10 + 50}{2}$ = 30. No need to add all five values.</div>
+
+<div class="examtip">⚠️ **TRAP — Outliers affect Mean, NOT Median:** If the question says "a billionaire moves into a village — what happens to the average income?", the Mean shoots up dramatically but the Median barely moves. Examiners frequently reverse this in the options. Rule: **Mean IS affected by outliers; Median is NOT**.</div>
 
 </div>
 
@@ -1291,7 +1307,7 @@ Coincidence here; usually Mode and Median differ.
 
 **Q 2.12.** $ D_5 $ of a distribution = ?
 
-**Soln.** $D_5$ splits the bottom 5/10 from the top 5/10, which is exactly the median. **Ans: Median ($Q_2 = D_5 = P_{50}$).**
+**Soln.** $D_5$ splits the bottom $\dfrac{5}{10}$ from the top $\dfrac{5}{10}$ which is exactly the median. **Ans: Median ($Q_2 = D_5 = P_{50}$).**
 
 </div>
 
@@ -1348,9 +1364,9 @@ Coincidence here; usually Mode and Median differ.
 | 2 | Combined mean: 40 boys (avg 60) + 60 girls (avg 50). | (40·60+60·50)/100 = 54 |
 | 3 | If mean of $X$ is 50, mean of $Y = 2X - 5$? | 95 |
 | 4 | Sum of deviations from mean = ? | 0 |
-| 5 | AM = 12, GM = 6. HM? | GM² = AM·HM → HM = 36/12 = 3 |
-| 6 | A car covers 100 km @ 50 km/h, returns @ 25 km/h. Avg speed? | HM: 2/(1/50+1/25) = 2/(3/50) = 100/3 ≈ 33.33 km/h |
-| 7 | Mode = 30, Mean = 25. Median? | Mode = 3 Med − 2 Mean → 30 = 3 Med − 50 → Med = 80/3 ≈ 26.67 |
+| 5 | AM = 12, GM = 6. HM? | GM² = AM·HM → HM = $\dfrac{36}{12}$ = 3 |
+| 6 | A car covers 100 km @ 50 km/h, returns @ 25 km/h. Avg speed? | HM: 2/($\dfrac{1}{50}$+$\dfrac{1}{25}$) = 2/($\dfrac{3}{50}$) = $\dfrac{100}{3}$ ≈ 33.33 km/h |
+| 7 | Mode = 30, Mean = 25. Median? | Mode = 3 Med − 2 Mean → 30 = 3 Med − 50 → Med = $\dfrac{80}{3}$ ≈ 26.67 |
 | 8 | If each obs increased by 5, mean increases by? | 5 |
 | 9 | If each obs multiplied by 3, mean multiplied by? | 3 |
 | 10 | Median is the same as which decile? | $D_5$ |
@@ -1390,6 +1406,16 @@ Two cricket batsmen both average 50 runs per innings. Batsman A scores: 48, 51, 
 $$\sigma^2 = \frac{\sum f_i X_i^2}{N} - \left(\frac{\sum f_i X_i}{N}\right)^2 = \overline{X^2} - (\bar{X})^2$$
 
 This is always faster to compute than $\frac{\sum f_i(X_i - \bar{X})^2}{N}$ because you don't need $\bar{X}$ first.
+
+<div class="keypoint">**⚡ SHORTCUT — SD properties you must know cold:**
+- SD is always **≥ 0** (it is a square root of a non-negative number).
+- **SD = 0 means all values are identical** (zero spread). If any two values differ, SD > 0.
+- SD is in the **same units** as the original data (unlike Variance, which is in squared units).
+- Adding a constant to every value does **not** change SD (only changes the mean).
+- Multiplying every value by constant $k$ multiplies SD by $|k|$.
+</div>
+
+<div class="examtip">⚠️ **TRAP — $\sum X_i^2 \neq (\sum X_i)^2$:** These are two completely different quantities. Examiners plant options that switch them. Always compute $\sum X_i^2$ (square each value, then add) separately from $(\sum X_i)^2$ (add first, then square).</div>
 
 **Step-deviation form (for grouped data with equal class widths $h$):**
 
@@ -1734,7 +1760,7 @@ The **Gini coefficient** = area between the Lorenz curve and the line of equalit
 - Coefficient = $(Q_3 - Q_1) / (Q_3 + Q_1)$
 - = $(45 - 25) / (45 + 25)$
 - = $20 / 70$
-- = **2/7 ≈ 0.286**
+- = **$\dfrac{2}{7}$ ≈ 0.286**
 
 </div>
 
@@ -1806,7 +1832,7 @@ The **Gini coefficient** = area between the Lorenz curve and the line of equalit
 
 **Q 3.10.** For a normal-ish distribution, MD/SD ≈ ?
 
-**Soln.** Empirical ratio for normal data: MD ≈ 0.7979 σ ≈ **4/5 σ**. So MD/SD ≈ **4/5** (memorise).
+**Soln.** Empirical ratio for normal data: MD ≈ 0.7979 σ ≈ **$\dfrac{4}{5}$ σ**. So MD/SD ≈ **$\dfrac{4}{5}$** (memorise).
 
 </div>
 
@@ -1878,10 +1904,10 @@ The **Gini coefficient** = area between the Lorenz curve and the line of equalit
 | 2 | SD of constant 7 = ? | 0 |
 | 3 | Combined mean of n₁=20 (X̄=15) and n₂=30 (X̄=25)? | 21 |
 | 4 | Series with smaller CV is …? | More consistent |
-| 5 | Variance of first 10 natural numbers? | (100−1)/12 = 99/12 = 8.25 |
+| 5 | Variance of first 10 natural numbers? | (100−1)/12 = $\dfrac{99}{12}$ = 8.25 |
 | 6 | If each obs is doubled, SD becomes? | doubled |
 | 7 | Sum of squared deviations from mean is …? | minimum |
-| 8 | QD ≈ ? × σ | 2/3 σ (≈ 0.6745 σ) |
+| 8 | QD ≈ ? × σ | $\dfrac{2}{3}$ σ (≈ 0.6745 σ) |
 | 9 | Var(X) = 4, Var(Y) = 5, X & Y independent. Var(X+Y)? | 9 |
 | 10 | Coefficient of QD formula? | (Q₃−Q₁)/(Q₃+Q₁) |
 
@@ -2410,9 +2436,9 @@ Karl Pearson's Sk = +0.6, Mean = 50, Mode = 44. Find SD.
 
 | $\mu_2$ | $\mu_3$ | $\mu_4$ | What is it? |
 |---------|---------|---------|-------------|
-| 4 | 0 | 48 | β₁ = 0²/4³ = 0; β₂ = 48/16 = 3 → **Symmetric mesokurtic** |
-| 9 | 27 | 324 | β₁ = 729/729 = 1; β₂ = 324/81 = 4 → **Positive skew, leptokurtic** |
-| 25 | 0 | 1250 | β₁ = 0; β₂ = 1250/625 = 2 → **Symmetric, platykurtic** |
+| 4 | 0 | 48 | β₁ = 0²/4³ = 0; β₂ = $\dfrac{48}{16}$ = 3 → **Symmetric mesokurtic** |
+| 9 | 27 | 324 | β₁ = $\dfrac{729}{729}$ = 1; β₂ = $\dfrac{324}{81}$ = 4 → **Positive skew, leptokurtic** |
+| 25 | 0 | 1250 | β₁ = 0; β₂ = $\dfrac{1250}{625}$ = 2 → **Symmetric, platykurtic** |
 
 *Pattern.* β₁ = 0 → symmetric. β₂ = 3 → mesokurtic. β₂ > 3 → lepto. β₂ < 3 → platy.
 
@@ -3051,7 +3077,7 @@ Check: $b_{YX} \times b_{XY} = 1.2 \times 0.3 = 0.36 = 0.6^2$ ✓
 | 3 | Two regression lines intersect at? | (X̄, Ȳ) |
 | 4 | r = 0 → angle between lines? | 90° |
 | 5 | r² is called? | Coefficient of determination |
-| 6 | Spearman with d² sum 30, n=10? | 1 − 6·30/(10·99) = 1 − 180/990 ≈ 0.818 |
+| 6 | Spearman with d² sum 30, n=10? | 1 − 6·30/(10·99) = 1 − $\dfrac{180}{990}$ ≈ 0.818 |
 | 7 | If σx = 4, σy = 8, r = 0.5 → bYX? | 1 |
 | 8 | r between (X+5) and (Y−3) when r(X,Y)=0.7? | 0.7 (origin invariant) |
 | 9 | Multiple correlation R is in? | [0, 1] |
@@ -3238,7 +3264,7 @@ $$
 
 **Step 3 — Compute P.**
 
-- $P = 6/36 = $ **1/6**
+- $P = 6/36 = $ **$\dfrac{1}{6}$**
 
 </div>
 
@@ -3248,13 +3274,13 @@ $$
 
 **Step 1 — Identify the individual probabilities.**
 
-- P(king) = 4/52; P(red) = 26/52; P(king ∩ red) = 2/52
+- P(king) = $\dfrac{4}{52}$; P(red) = $\dfrac{26}{52}$; P(king ∩ red) = $\dfrac{2}{52}$
 
 **Step 2 — Apply the addition rule.**
 
-- P(king ∪ red) = 4/52 + 26/52 − 2/52
-- = 28/52
-- = **7/13**
+- P(king ∪ red) = $\dfrac{4}{52}$ + $\dfrac{26}{52}$ − $\dfrac{2}{52}$
+- = $\dfrac{28}{52}$
+- = **$\dfrac{7}{13}$**
 
 </div>
 
@@ -3273,13 +3299,13 @@ $$
 
 **Q 6.4.** A bag has 5 white, 3 black balls. Two drawn without replacement. P(both white)?
 
-**Step 1 — P(1st white) = 5/8** (5 white out of 8 total).
+**Step 1 — P(1st white) = $\dfrac{5}{8}$** (5 white out of 8 total).
 
-**Step 2 — P(2nd white | 1st white) = 4/7** (after removing one white).
+**Step 2 — P(2nd white | 1st white) = $\dfrac{4}{7}$** (after removing one white).
 
 **Step 3 — Multiply (chain rule).**
 
-- $P = \dfrac{5}{8} \cdot \dfrac{4}{7} = \dfrac{20}{56} = $ **5/14**
+- $P = \dfrac{5}{8} \cdot \dfrac{4}{7} = \dfrac{20}{56} = $ **$\dfrac{5}{14}$**
 
 </div>
 
@@ -3306,7 +3332,7 @@ $$
 
 **Step 3 — Compute P.**
 
-- $P = 4/8 = $ **1/2**
+- $P = 4/8 = $ **$\dfrac{1}{2}$**
 
 </div>
 
@@ -3377,13 +3403,13 @@ $$
 
 **Q 6.12.** Two cards drawn without replacement. P(both kings)?
 
-**Step 1 — P(1st king) = 4/52** (4 kings in 52 cards).
+**Step 1 — P(1st king) = $\dfrac{4}{52}$** (4 kings in 52 cards).
 
-**Step 2 — P(2nd king | 1st king) = 3/51** (after removing one king).
+**Step 2 — P(2nd king | 1st king) = $\dfrac{3}{51}$** (after removing one king).
 
 **Step 3 — Multiply.**
 
-- $P = \dfrac{4}{52} \cdot \dfrac{3}{51} = \dfrac{12}{2652} = $ **1/221**
+- $P = \dfrac{4}{52} \cdot \dfrac{3}{51} = \dfrac{12}{2652} = $ **$\dfrac{1}{221}$**
 
 </div>
 
@@ -3395,7 +3421,7 @@ $$
 
 **Step 2 — Compute P.**
 
-- $P = 3/6 = $ **1/2**
+- $P = 3/6 = $ **$\dfrac{1}{2}$**
 
 </div>
 
@@ -3440,16 +3466,16 @@ $$
 
 | # | Q | Ans |
 |---|----|-----|
-| 1 | Sum of 2 dice = 8. P? | 5/36 |
-| 2 | Card = ace. P? | 4/52 = 1/13 |
+| 1 | Sum of 2 dice = 8. P? | $\dfrac{5}{36}$ |
+| 2 | Card = ace. P? | $\dfrac{4}{52}$ = $\dfrac{1}{13}$ |
 | 3 | P(A)=0.5, P(B)=0.5, indep. P(A∩B)? | 0.25 |
 | 4 | P(A)=0.5, P(B)=0.5, ME. P(A∪B)? | 1.0 |
-| 5 | One coin tossed twice. P(both H)? | 1/4 |
-| 6 | Box: 7 R, 3 G. 1 drawn. P(R)? | 7/10 |
+| 5 | One coin tossed twice. P(both H)? | $\dfrac{1}{4}$ |
+| 6 | Box: 7 R, 3 G. 1 drawn. P(R)? | $\dfrac{7}{10}$ |
 | 7 | Two indep events: P(A)=0.4, P(B)=0.6. P(A or B)? | 0.4+0.6−0.24 = 0.76 |
-| 8 | Bag has 3R, 4B. 2 drawn no rep. P(2R)? | 3/7·2/6 = 1/7 |
+| 8 | Bag has 3R, 4B. 2 drawn no rep. P(2R)? | $\dfrac{3}{7}$·$\dfrac{2}{6}$ = $\dfrac{1}{7}$ |
 | 9 | P(A∩B) = 0, P(A) > 0, P(B) > 0. Indep? | No (mutually exclusive) |
-| 10 | Three coins. P(at least 1 H)? | 1 − 1/8 = 7/8 |
+| 10 | Three coins. P(at least 1 H)? | 1 − $\dfrac{1}{8}$ = $\dfrac{7}{8}$ |
 
 ---
 
@@ -5335,9 +5361,9 @@ $F_{0.05}(2, 9) \approx 4.26$. Computed F = 32.3 >> 4.26 → **Reject H₀** —
 
 **Step 2 — Fill Total SS = 120 + 80 = 200; Total df = 3 + 16 = 19 ✓.**
 
-**Step 3 — MSB = 120 / 3 = 40.**
+**Step 3 — MSB = $\dfrac{120}{3}$ = 40.**
 
-**Step 4 — F = MSB / MSW = 40 / 5 = 8.0.**
+**Step 4 — F = MSB / MSW = $\dfrac{40}{5}$ = 8.0.**
 
 **Ans:** MS Between = **40**, F = **8.0**, SSW = **80**, SST = **200**.
 
@@ -6091,9 +6117,11 @@ Both methods are mathematically equivalent.
 
 ---
 
+> **Chapters complete.** You have now covered all 12 examinable topics. The appendices that follow consolidate everything — Appendix A gives the formula sheet for rapid revision, Appendix B provides the statistical tables, and Appendices C and F are full timed mocks. Work through them in order once you have finished reading the main chapters.
+
 \newpage
 
-# APPENDIX A — Master Formula Sheet (one-page revision)
+# APPENDIX A — Master Formula Sheet (one-page revision) {#appendix-a}
 
 ## A.1 Central tendency
 
@@ -6207,7 +6235,7 @@ Both methods are mathematically equivalent.
 
 \newpage
 
-# APPENDIX B — ULTIMATE TABLES (rapid reference)
+# APPENDIX B — ULTIMATE TABLES (rapid reference) {#appendix-b}
 
 ## B.1 Common z-values and CI multipliers
 
@@ -6298,7 +6326,7 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 \newpage
 
-# APPENDIX C — Full-length 100-Q Mock (with answer key)
+# APPENDIX C — Full-length 100-Q Mock (with answer key) {#appendix-c}
 
 > **Instructions.** 120 minutes. 2 marks per Q. **−0.5** per wrong. Use the in-test calculator. Answer key at the end.
 
@@ -6420,29 +6448,29 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 | # | Ans | # | Ans | # | Ans | # | Ans |
 |---|-----|---|-----|---|-----|---|-----|
-| 1 | 85 | 26 | 0 | 51 | 8/52=2/13 | 76 | Σ(O−E)²/E |
+| 1 | 85 | 26 | 0 | 51 | $\dfrac{8}{52}$=$\dfrac{2}{13}$ | 76 | Σ(O−E)²/E |
 | 2 | 22 | 27 | 0 | 52 | 0 | 77 | (4−1)(5−1)=12 |
 | 3 | 11 | 28 | mesokurtic | 53 | 0.4 | 78 | variances |
 | 4 | 4 | 29 | 0 | 54 | 0.20 | 79 | 1.96 |
 | 5 | 12 | 30 | 1 | 55 | 0.484 | 80 | [(n₁−1)s₁²+(n₂−1)s₂²]/(n₁+n₂−2) |
-| 6 | 8 | 31 | 0.8 | 56 | 3/8 | 81 | n−1 |
-| 7 | 12 | 32 | (X̄, Ȳ) | 57 | 1−1/16=15/16 | 82 | unbiased, consistent, efficient, sufficient |
-| 8 | 21 | 33 | 90° | 58 | 5/14 | 83 | X/n |
+| 6 | 8 | 31 | 0.8 | 56 | $\dfrac{3}{8}$ | 81 | n−1 |
+| 7 | 12 | 32 | (X̄, Ȳ) | 57 | 1−$\dfrac{1}{16}$=$\dfrac{15}{16}$ | 82 | unbiased, consistent, efficient, sufficient |
+| 8 | 21 | 33 | 90° | 58 | $\dfrac{5}{14}$ | 83 | X/n |
 | 9 | σ/X̄ × 100 | 34 | 1−6·30/(10·99)≈0.818 | 59 | 3 | 84 | means |
 | 10 | √(110−100)=√10≈3.16 | 35 | 0.6 | 60 | 2.1 | 85 | N − 1 |
-| 11 | 31 | 36 | 1.05 | 61 | e⁻⁴≈0.0183 | 86 | (90/3)/(60/20)=30/3=10 |
+| 11 | 31 | 36 | 1.05 | 61 | e⁻⁴≈0.0183 | 86 | ($\dfrac{90}{3}$)/($\dfrac{60}{20}$)=$\dfrac{30}{3}$=10 |
 | 12 | mean+10, SD same | 37 | determination | 62 | P(Z>2)=0.0228 | 87 | (3−1)(4−1)=6 |
 | 13 | 108° | 38 | origin & scale | 63 | 0.95 | 88 | T, S, C, I |
 | 14 | 12 | 39 | [0,1] | 64 | 3 | 89 | 2 |
 | 15 | 29.5 | 40 | 25 | 65 | Poisson | 90 | 400 |
-| 16 | ogive | 41 | √0.30≈0.548 | 66 | (4−0)²/12=16/12=4/3 | 91 | Y = T·S·C·I |
+| 16 | ogive | 41 | √0.30≈0.548 | 66 | (4−0)²/12=$\dfrac{16}{12}$=$\dfrac{4}{3}$ | 91 | Y = T·S·C·I |
 | 17 | T | 42 | 0.16 | 67 | 1 | 92 | ΣXY/ΣX² |
 | 18 | 36 | 43 | platykurtic | 68 | √[(N−n)/(N−1)] | 93 | base year (Q₀) |
 | 19 | 0 | 44 | 1 | 69 | 30 | 94 | current year (Q₁) |
 | 20 | 9.5 – 19.5 | 45 | 0 | 70 | small | 95 | √(L·P) |
 | 21 | 0 | 46 | σY√(1−r²) | 71 | non-probability | 96 | time + factor reversal |
 | 22 | QD | 47 | T | 72 | √(0.25/400)=0.025 | 97 | 100 |
-| 23 | f / h | 48 | m(m²−1)/12 per tie | 73 | (1.96·10/2)²≈96.04→97 | 98 | 1/CPI × 100 |
+| 23 | f / h | 48 | m(m²−1)/12 per tie | 73 | (1.96·$\dfrac{10}{2}$)²≈96.04→97 | 98 | 1/CPI × 100 |
 | 24 | 13 | 49 | same r | 74 | α | 99 | falls |
 | 25 | 20 % | 50 | [−1, 1] | 75 | 1 − β | 100 | Q₀ + Q₁ |
 
@@ -6450,7 +6478,7 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 \newpage
 
-# APPENDIX D — 7-day final revision plan (for the last week)
+# APPENDIX D — 7-Day Final Revision Plan (for the last week) {#appendix-d}
 
 | Day | Morning (3 h) | Evening (3 h) | Recall pass |
 |-----|---------------|--------------|-------------|
@@ -6475,7 +6503,9 @@ So $P(|Z| < 1.96) = 2 \cdot 0.4750 = 0.95$. Memorise these 9 anchors.
 
 \newpage
 
-# APPENDIX E — Extended Drill Pack (deep dive on the 6 CRITICAL chapters)
+# APPENDIX E — Extended Drill Pack (deep dive on the 6 CRITICAL chapters) {#appendix-e}
+
+> **Why this appendix follows the revision plan.** The 7-day plan in Appendix D schedules your reading; this drill pack gives you the raw practice volume to make those readings stick — especially for the six chapters (2, 3, 5, 6, 7, 9) that together account for 60% of your marks.
 
 **60 % of the JSO paper comes from six chapters.** The mini-mocks give you a taste; this pack gives mastery. Solve closed-book; re-read the chapter only on a wrong answer.
 
@@ -6605,7 +6635,7 @@ $\text{GM} = (3^{10})^{1/5} = 3^2 = \mathbf{9}$. (Or: middle term of GP = GM.)
 
 **E-2.9.** AM of two numbers exceeds their GM by 2. AM exceeds HM by what?
 
-Use AM × HM = GM². Let AM = G + 2, where GM = G. Then HM = G²/(G + 2). AM − HM = (G + 2) − G²/(G + 2) = [(G+2)² − G²]/(G + 2) = (4G + 4)/(G + 2) = 4(G + 1)/(G + 2). Without specifics, students often plug small values (G = 4 → AM = 6, HM = 16/6 = 8/3; AM − HM = 6 − 8/3 = 10/3 ≈ 3.33). The general answer: **$4(G+1)/(G+2)$**.
+Use AM × HM = GM². Let AM = G + 2, where GM = G. Then HM = G²/(G + 2). AM − HM = (G + 2) − G²/(G + 2) = [(G+2)² − G²]/(G + 2) = (4G + 4)/(G + 2) = 4(G + 1)/(G + 2). Without specifics, students often plug small values (G = 4 → AM = 6, HM = $\dfrac{16}{6}$ = $\dfrac{8}{3}$; AM − HM = 6 − $\dfrac{8}{3}$ = $\dfrac{10}{3}$ ≈ 3.33). The general answer: **$4(G+1)/(G+2)$**.
 
 </div>
 
@@ -6882,7 +6912,7 @@ $4 \cdot 9 + 9 \cdot 16 = 36 + 144 = \mathbf{180}$.
 
 **E-3.5.** SD of 10 observations is 6. If each observation is increased by 5 and then divided by 2, new SD?
 
-Origin-add doesn't change SD; scale by 1/2 → SD = **3**.
+Origin-add doesn't change SD; scale by $\dfrac{1}{2}$ → SD = **3**.
 
 </div>
 
@@ -7073,7 +7103,7 @@ $a^2 \text{Var}(X) + b^2 \text{Var}(Y)$.
 
 **E-3.22.** $s = 5$ is sample SD with $n = 25$. $\sigma$ (population SD if computed with n divisor)?
 
-Sample variance with $n-1$ divisor = 25. $\sum (X − \bar X)^2 = 24 \cdot 25 = 600$. With $n$ divisor: 600/25 = 24. $\sigma$ (sample raw form) = $\sqrt{24} \approx 4.90$.
+Sample variance with $n-1$ divisor = 25. $\sum (X − \bar X)^2 = 24 \cdot 25 = 600$. With $n$ divisor: $\dfrac{600}{25}$ = 24. $\sigma$ (sample raw form) = $\sqrt{24} \approx 4.90$.
 
 </div>
 
@@ -7285,7 +7315,7 @@ $r ≈ 0$ → no linear correlation.
 
 **E-5.18.** Sum of products of deviations $\sum (X − \bar X)(Y − \bar Y) = 240$, n = 10, σ_X = 4, σ_Y = 8. r?
 
-Cov = 240/10 = 24. $r = 24/(4·8) = \mathbf{0.75}$.
+Cov = $\dfrac{240}{10}$ = 24. $r = 24/(4·8) = \mathbf{0.75}$.
 
 </div>
 
@@ -7355,7 +7385,7 @@ Sign flips: new $b_{YX} = -r \sigma_Y / \sigma_X$ so it flips sign.
 
 **E-6.1.** Two dice rolled. P(at least one 6)?
 
-P(no 6 on either) = (5/6)². P(at least one) = 1 − 25/36 = **11/36**.
+P(no 6 on either) = ($\dfrac{5}{6}$)². P(at least one) = 1 − $\dfrac{25}{36}$ = **$\dfrac{11}{36}$**.
 
 </div>
 
@@ -7371,7 +7401,7 @@ ${}^3C_2 (2/3)^2 (1/3)^1 = 3 · 4/9 · 1/3 = 4/9$.
 
 **E-6.3.** A bag has 5W, 4B, 3R. One drawn. P(W or R)?
 
-Mutually exclusive. P = 5/12 + 3/12 = **8/12 = 2/3**.
+Mutually exclusive. P = $\dfrac{5}{12}$ + $\dfrac{3}{12}$ = **$\dfrac{8}{12}$ = $\dfrac{2}{3}$**.
 
 </div>
 
@@ -7379,7 +7409,7 @@ Mutually exclusive. P = 5/12 + 3/12 = **8/12 = 2/3**.
 
 **E-6.4.** Two cards drawn from a pack without replacement. P(both aces)?
 
-4/52 · 3/51 = 12/2652 = **1/221**.
+$\dfrac{4}{52}$ · $\dfrac{3}{51}$ = $\dfrac{12}{2652}$ = **$\dfrac{1}{221}$**.
 
 </div>
 
@@ -7403,7 +7433,7 @@ Yes (independence ⇔ P(A | B) = P(A)).
 
 **E-6.7.** Three balls drawn from bag of 5R, 4G, 3W (no replacement). P(one of each colour)?
 
-Numerator = ${}^5C_1 \cdot {}^4C_1 \cdot {}^3C_1 = 60$. Denom = ${}^{12}C_3 = 220$. P = 60/220 = **3/11**.
+Numerator = ${}^5C_1 \cdot {}^4C_1 \cdot {}^3C_1 = 60$. Denom = ${}^{12}C_3 = 220$. P = $\dfrac{60}{220}$ = **$\dfrac{3}{11}$**.
 
 </div>
 
@@ -7458,7 +7488,7 @@ $P(C|D) = 0.006/0.017 \approx \mathbf{0.353}$.
 
 **E-6.12.** Throw 2 dice. P(sum ≥ 10)?
 
-Sums 10, 11, 12 → (4,6),(5,5),(6,4) | (5,6),(6,5) | (6,6) = 3 + 2 + 1 = 6 outcomes / 36 = **1/6**.
+Sums 10, 11, 12 → (4,6),(5,5),(6,4) | (5,6),(6,5) | (6,6) = 3 + 2 + 1 = 6 outcomes / 36 = **$\dfrac{1}{6}$**.
 
 </div>
 
@@ -7466,7 +7496,7 @@ Sums 10, 11, 12 → (4,6),(5,5),(6,4) | (5,6),(6,5) | (6,6) = 3 + 2 + 1 = 6 outc
 
 **E-6.13.** A bag has 4 white and 6 black balls. Two drawn without replacement. P(at least one white)?
 
-P(none white) = (6/10)(5/9) = 30/90 = 1/3. P(at least one) = 1 − 1/3 = **2/3**.
+P(none white) = ($\dfrac{6}{10}$)($\dfrac{5}{9}$) = $\dfrac{30}{90}$ = 1/3. P(at least one) = 1 − $\dfrac{1}{3}$ = **$\dfrac{2}{3}$**.
 
 </div>
 
@@ -7482,7 +7512,7 @@ P(A^c) · P(B^c) = 0.6 · 0.5 = **0.3**.
 
 **E-6.15.** Probability of getting at least 1 head in 5 tosses?
 
-1 − (1/2)^5 = 1 − 1/32 = **31/32**.
+1 − ($\dfrac{1}{2}$)^5 = 1 − $\dfrac{1}{32}$ = **$\dfrac{31}{32}$**.
 
 </div>
 
@@ -7506,7 +7536,7 @@ P(A^c) · P(B^c) = 0.6 · 0.5 = **0.3**.
 
 **E-6.18.** Pair of dice. P(odd sum)?
 
-Half of 36 = **18/36 = 1/2** (by parity argument: odd sum ⇔ exactly one of the two dice is odd).
+Half of 36 = **$\dfrac{18}{36}$ = $\dfrac{1}{2}$** (by parity argument: odd sum ⇔ exactly one of the two dice is odd).
 
 </div>
 
@@ -7528,7 +7558,7 @@ $P(\text{biased}|H) = 0.32/0.62 \approx \mathbf{0.516}$.
 
 **E-6.20.** A fair coin is tossed until first head. P(first H on the 4th toss)?
 
-(1/2)³ · (1/2) = **1/16**.
+($\dfrac{1}{2}$)³ · ($\dfrac{1}{2}$) = **$\dfrac{1}{16}$**.
 
 </div>
 
@@ -7548,7 +7578,7 @@ $= 0.3 + 0.4 - 0.6 = \mathbf{0.1}$.
 
 **E-6.22.** Out of 5 letters, 3 are addressed correctly. Letters placed in envelopes randomly. P(none correctly placed)?
 
-Derangement $D_5 = 44$. P = 44/120 = **11/30**.
+Derangement $D_5 = 44$. P = $\dfrac{44}{120}$ = **$\dfrac{11}{30}$**.
 
 </div>
 
@@ -7556,15 +7586,15 @@ Derangement $D_5 = 44$. P = 44/120 = **11/30**.
 
 **E-6.23.** A throws a die first, then B. P(A scores higher)?
 
-By symmetry P(A > B) = P(B > A) and P(equal) = 6/36 = 1/6. So P(A > B) = (1 − 1/6)/2 = **5/12**.
+By symmetry P(A > B) = P(B > A) and P(equal) = $\dfrac{6}{36}$ = 1/6. So P(A > B) = (1 − $\dfrac{1}{6}$)/2 = **$\dfrac{5}{12}$**.
 
 </div>
 
 <div class="worked" markdown="block">
 
-**E-6.24.** Two indep events have P(none happens) = 1/4 and P(both happen) = 1/4. Find P(A) and P(B).
+**E-6.24.** Two indep events have P(none happens) = $\dfrac{1}{4}$ and P(both happen) = 1/4. Find P(A) and P(B).
 
-Let p = P(A), q = P(B). pq = 1/4 and (1−p)(1−q) = 1/4 → 1 − p − q + pq = 1/4 → 1 − (p+q) + 1/4 = 1/4 → p + q = 1. With pq = 1/4: p, q are roots of t² − t + 0.25 = 0 → t = 0.5, 0.5. So **P(A) = P(B) = 0.5**.
+Let p = P(A), q = P(B). pq = $\dfrac{1}{4}$ and (1−p)(1−q) = $\dfrac{1}{4}$ → 1 − p − q + pq = $\dfrac{1}{4}$ → 1 − (p+q) + $\dfrac{1}{4}$ = $\dfrac{1}{4}$ → p + q = 1. With pq = $\dfrac{1}{4}$: p, q are roots of t² − t + 0.25 = 0 → t = 0.5, 0.5. So **P(A) = P(B) = 0.5**.
 
 </div>
 
@@ -7703,7 +7733,7 @@ n large, p small, np = λ moderate.
 
 **E-7.13.** Hypergeometric: lot of 50 has 10 defective. 5 picked without replacement. Mean number of defectives in the sample?
 
-Mean = nK/N = 5 · 10 / 50 = **1**.
+Mean = nK/N = 5 · $\dfrac{10}{50}$ = **1**.
 
 </div>
 
@@ -7711,7 +7741,7 @@ Mean = nK/N = 5 · 10 / 50 = **1**.
 
 **E-7.14.** Continuous uniform on [4, 16]. P(X ≤ 10)?
 
-(10 − 4)/(16 − 4) = 6/12 = **0.5**.
+(10 − 4)/(16 − 4) = $\dfrac{6}{12}$ = **0.5**.
 
 </div>
 
@@ -8129,7 +8159,9 @@ k − 1 − m.
 
 \newpage
 
-# APPENDIX F — Mock Test #2 (100 Qs, full coverage)
+# APPENDIX F — Mock Test #2 (100 Qs, full coverage) {#appendix-f}
+
+> **Why a second full mock.** Appendix C tested you before the deep drill; this mock tests whether the extended practice in Appendix E has moved your error pattern. Sit it under the same timed conditions — 120 minutes, calculator allowed — and compare your score against your Appendix C attempt.
 
 > **Instructions.** 120 minutes, 2 marks each, **−0.5** per wrong. Calculator allowed. Answer key at the end.
 
@@ -8251,25 +8283,25 @@ k − 1 − m.
 
 | # | Ans | # | Ans | # | Ans | # | Ans |
 |---|-----|---|-----|---|-----|---|-----|
-| 1 | 5 | 26 | variance | 51 | 1/2 | 76 | unbiased + min variance + consistent + sufficient |
-| 2 | f/h (frequency density) | 27 | 0 | 52 | 5/16 | 77 | X/n |
+| 1 | 5 | 26 | variance | 51 | $\dfrac{1}{2}$ | 76 | unbiased + min variance + consistent + sufficient |
+| 2 | f/h (frequency density) | 27 | 0 | 52 | $\dfrac{5}{16}$ | 77 | X/n |
 | 3 | 12 | 28 | 3·(70−65)/8 = 1.875 | 53 | 0.20 | 78 | n − 1 |
 | 4 | 0 | 29 | leptokurtic | 54 | 0.7 | 79 | Σ(O−E)²/E |
-| 5 | AM ≥ GM ≥ HM | 30 | subtract h²/12 | 55 | 6/45 = 2/15 | 80 | 25 |
+| 5 | AM ≥ GM ≥ HM | 30 | subtract h²/12 | 55 | $\dfrac{6}{45}$ = $\dfrac{2}{15}$ | 80 | 25 |
 | 6 | exactly two | 31 | T | 56 | (0.6·0.5)/(0.6·0.5 + 0.4·0.8) = 0.30/0.62 ≈ 0.484 | 81 | two variances |
 | 7 | 25.5th | 32 | −√0.24 ≈ −0.490 | 57 | μ=10, σ=√5 ≈ 2.24 | 82 | F > F_table → reject |
-| 8 | P₈₀ | 33 | 0.49 | 58 | 16 (since q = 3/4, p = 1/4, n = 16) | 83 | wider |
+| 8 | P₈₀ | 33 | 0.49 | 58 | 16 (since q = $\dfrac{3}{4}$ p = $\dfrac{1}{4}$ n = 16) | 83 | wider |
 | 9 | 26 | 34 | (X̄, Ȳ) | 59 | e^(−3) ≈ 0.0498 | 84 | 2.576 |
 | 10 | extreme values | 35 | 90° | 60 | P(Z > 2) = 0.0228 | 85 | means |
 | 11 | 8 | 36 | 1 − 6·50/(8·63) = 1 − 0.595 = 0.405 | 61 | mean μ | 86 | (4−1)(3−1) = 6 |
-| 12 | 3 Med − 2 Mean | 37 | 0.75 | 62 | (80 − 70)/5 = 2 | 87 | (80/3)/(60/20) = 26.67/3 = 8.89 |
-| 13 | 29.5 – 39.5 | 38 | negative | 63 | nK/N = 5·8/20 = 2 | 88 | normality, equal var, indep |
-| 14 | 162° | 39 | [0, 1] | 64 | 144/12 = 12 | 89 | 2–10 years |
+| 12 | 3 Med − 2 Mean | 37 | 0.75 | 62 | (80 − 70)/5 = 2 | 87 | ($\dfrac{80}{3}$)/($\dfrac{60}{20}$) = 26.67/3 = 8.89 |
+| 13 | 29.5 – 39.5 | 38 | negative | 63 | nK/N = 5·$\dfrac{8}{20}$ = 2 | 88 | normality, equal var, indep |
+| 14 | 162° | 39 | [0, 1] | 64 | $\dfrac{144}{12}$ = 12 | 89 | 2–10 years |
 | 15 | √8 ≈ 2.83 | 40 | [−1, 1] | 65 | 1 | 90 | Y = T·S·C·I |
 | 16 | 25 | 41 | 0.6 | 66 | stratified | 91 | 1200 |
 | 17 | σ = 10 % of mean | 42 | ±0.9 | 67 | 30 | 92 | b = ΣXY/ΣX² |
-| 18 | 40/80 = 0.5 | 43 | σY√(1−r²) | 68 | √(0.6·0.4/400) = √0.0006 ≈ 0.0245 | 93 | base year (Q₀) |
-| 19 | 8 | 44 | [−1, 1] | 69 | (1.96·20/5)² ≈ 61.5 → 62 | 94 | current year (Q₁) |
+| 18 | $\dfrac{40}{80}$ = 0.5 | 43 | σY√(1−r²) | 68 | √(0.6·0.4/400) = √0.0006 ≈ 0.0245 | 93 | base year (Q₀) |
+| 19 | 8 | 44 | [−1, 1] | 69 | (1.96·$\dfrac{20}{5}$)² ≈ 61.5 → 62 | 94 | current year (Q₁) |
 | 20 | (64−1)/12 = 5.25 | 45 | 0 (symmetric) | 70 | systematic | 95 | √(L · P) |
 | 21 | perfect equality | 46 | origin & positive scale | 71 | quantifiable error estimate | 96 | time + factor reversal |
 | 22 | 50 | 47 | coincide | 72 | decreases | 97 | money wage / CPI × 100 |
@@ -8281,7 +8313,9 @@ k − 1 − m.
 
 \newpage
 
-# APPENDIX G — JSO PYQ-Framing Bank (recognise the wording, lock the answer)
+# APPENDIX G — JSO PYQ-Framing Bank (recognise the wording, lock the answer) {#appendix-g}
+
+> **Why this follows the mocks.** After two full mock attempts you will have encountered every common question type; this framing bank names the exact JSO wording patterns so you can trigger the answer automatically — no computation needed for most of these.
 
 > Examiners reuse phrasings. Once you have seen the framing, you can answer the Q in 10 seconds. This bank lists every "tell" the JSO has used in the last 6 papers.
 
@@ -8377,7 +8411,7 @@ k − 1 − m.
 
 \newpage
 
-# APPENDIX H — Common errors that cost JSO candidates the 95% mark
+# APPENDIX H — Common errors that cost JSO candidates the 95% mark {#appendix-h}
 
 | # | Error | Why it happens | Correct fix |
 |---|-------|----------------|-------------|
@@ -8406,7 +8440,9 @@ k − 1 − m.
 
 \newpage
 
-# APPENDIX I — Memory tricks (mnemonics that actually stick)
+# APPENDIX I — Memory tricks (mnemonics that actually stick) {#appendix-i}
+
+> **Why this follows the error list.** Knowing your common mistakes (Appendix H) is only half the fix — the other half is encoding the correct answer so firmly that the error never recurs. These mnemonics give your memory a reliable hook for each prone-to-forget result.
 
 | Concept | Mnemonic |
 |---------|----------|
@@ -8431,7 +8467,9 @@ k − 1 − m.
 
 \newpage
 
-# APPENDIX K — Extended Drill for HIGH chapters (Ch 1, 4, 8, 11, 12)
+# APPENDIX K — Extended Drill for HIGH chapters (Ch 1, 4, 8, 11, 12) {#appendix-k}
+
+> **Why a separate drill for HIGH chapters.** Appendix E drilled the six CRITICAL chapters; the five HIGH chapters (1, 4, 8, 11, 12) together carry 40% of the paper and deserve their own practice set. Work through these after finishing Appendix E.
 
 > 20 fresh worked problems per chapter. Pair with the mini-mock and the chapter worked examples for full coverage.
 
@@ -8563,7 +8601,7 @@ Lower boundary = 54.5, upper boundary = 64.5. Exclusive: **54.5 – 64.5**.
 
 **K-1.16.** A pie chart is drawn for two quantities: 60 and 40. Angles?
 
-60/(60+40) × 360 = **216°** and 40/100 × 360 = **144°**.
+60/(60+40) × 360 = **216°** and $\dfrac{40}{100}$ × 360 = **144°**.
 
 </div>
 
@@ -9047,7 +9085,7 @@ That quarter is **15 % below** the overall trend/average.
 
 **K-11.12.** The sum of seasonal indices over 4 quarters should equal 400. A set of indices is 95, 110, 105, 92. Their sum is 402. Adjusted index for Q1?
 
-Adjustment factor = 400/402. Q1 adjusted = 95 × 400/402 ≈ **94.5**.
+Adjustment factor = 400/402. Q1 adjusted = 95 × $\dfrac{400}{402}$ ≈ **94.5**.
 
 </div>
 
@@ -9181,7 +9219,7 @@ $V_{01}$ (the value index). Only Fisher satisfies both time and factor reversal 
 
 **K-12.7.** Index in 2010 = 100 (base 2000). Index in 2015 = 150 (base 2000). Shift base to 2010.
 
-Index₂₀₁₅ (base 2010) = 150/100 × 100 = **150**.
+Index₂₀₁₅ (base 2010) = $\dfrac{150}{100}$ × 100 = **150**.
 
 </div>
 
@@ -9189,7 +9227,7 @@ Index₂₀₁₅ (base 2010) = 150/100 × 100 = **150**.
 
 **K-12.8.** An index series is 80 (2018), 100 (2020 = base), 110 (2022). Purchasing power of money in 2022?
 
-1/110 × 100 = **90.9** paise per rupee of 2020 value.
+$\dfrac{1}{110}$ × 100 = **90.9** paise per rupee of 2020 value.
 
 </div>
 
@@ -9197,7 +9235,7 @@ Index₂₀₁₅ (base 2010) = 150/100 × 100 = **150**.
 
 **K-12.9.** A worker's money wage in 2023 is ₹20,000. CPI 2023 = 250 (base 2010 = 100). Real wage in 2010 rupees?
 
-Real wage = 20000/250 × 100 = **₹8,000**.
+Real wage = $\dfrac{20000}{250}$ × 100 = **₹8,000**.
 
 </div>
 
@@ -9245,7 +9283,7 @@ Two index series have a common **overlap year** and need to be joined into one c
 
 **K-12.15.** A price index of 200 and a quantity index of 150 (both with the same formula). Value index approximately?
 
-Under factor-reversal, V₀₁ = P₀₁ × Q₀₁ = 200 × 150 / 100 (adjusting for base) = **300**. (Direct check: if both are Fisher, product = value index.)
+Under factor-reversal, V₀₁ = P₀₁ × Q₀₁ = 200 × $\dfrac{150}{100}$ (adjusting for base) = **300**. (Direct check: if both are Fisher, product = value index.)
 
 </div>
 
@@ -9269,7 +9307,7 @@ WPI measures price change at the **wholesale/manufacturer level**; CPI measures 
 
 **K-12.18.** An index of 160 in period 1 and 200 in period 2 (same base). Relative change from period 1 to period 2?
 
-(200 − 160)/160 = 40/160 = **25 %** increase.
+(200 − 160)/160 = $\dfrac{40}{160}$ = **25 %** increase.
 
 </div>
 
@@ -9285,6 +9323,6 @@ A **price index** (like the GDP deflator or WPI). Real GDP = Nominal GDP / Price
 
 **K-12.20.** A 3-item Laspeyres is 110. If ΣP₁Q₀ = 440 and ΣP₀Q₀ = 400. Verify.
 
-440/400 × 100 = **110** ✓.
+$\dfrac{440}{400}$ × 100 = **110** ✓.
 
 </div>

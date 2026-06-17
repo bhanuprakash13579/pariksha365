@@ -42,13 +42,13 @@ date: "2026"
 
 ---
 
-**Current counts to know (verify before any exam after 2026):**
+**Current counts to know (Verified June 2026):**
 
-| Item | Value (April 2026) |
+| Item | Value (June 2026) |
 |------|-------------------|
 | Tiger Reserves | 58 (56th = Guru Ghasidas-Tamor Pingla, CG; 57th = Ratapani, MP; 58th = Madhav, MP) |
 | Biosphere Reserves | 18 in India (12 listed under UNESCO MAB) |
-| Ramsar Sites | 85+ (Tamil Nadu has the most at state level, 14+) |
+| Ramsar Sites | **100** (Milestone reached June 5, 2026 with Jai Prakash Narayan Bird Sanctuary, UP) |
 | Tiger population | ~3,167 (2022 census); 2026 census ongoing |
 | National Parks | 106 |
 | Wildlife Sanctuaries | ~570 |
@@ -118,9 +118,17 @@ Reference tables, compilations, and self-test material — useful in your last w
 
 Sunlight → **Producers** (green plants, phytoplankton) → **Primary consumers** (herbivores) → **Secondary consumers** (carnivores) → **Tertiary consumers** → **Decomposers** (bacteria, fungi) → nutrient return.
 
+<div class="intuition">
+
+**The "90% Tax" Analogy (The 10% Rule):**
+Imagine nature has a strict 90% "handling fee" every time energy changes hands. If Grass makes ₹100 of energy from the sun, the Grasshopper that eats it only gets to keep ₹10. The Frog that eats the grasshopper only gets ₹1. The Snake that eats the frog gets ₹0.10. 
+This is why food chains are short (usually 4 steps max) — the energy simply runs out! It also explains why apex predators (like Tigers) are always rare compared to deer.
+
+</div>
+
 <div class="keypoint">
 
-The **10% Rule (Lindeman, 1942)** — only about 10% of the energy at one trophic level is transferred to the next. This is why food chains have a maximum of 4-5 levels. If you eat a plant, you get 100 units of energy. If a cow eats the plant, you get 10 units from eating the cow. This is why a vegetarian diet is more energy-efficient and why apex predators are always rare.
+The **10% Rule (Lindeman, 1942)** — only about 10% of the energy at one trophic level is transferred to the next. This is why a vegetarian diet is more energy-efficient and why apex predators require massive hunting territories.
 
 </div>
 
@@ -191,7 +199,7 @@ The **10% Rule (Lindeman, 1942)** — only about 10% of the energy at one trophi
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["THE ECOSYSTEM"]:::root
     R --> CO["Components"]:::proc
     R --> TR["Trophic Levels + 10% Rule"]:::key
@@ -399,7 +407,7 @@ Atmosphere is 78% N₂, but plants cannot use it directly. The cycle works throu
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["BIOGEOCHEMICAL CYCLES"]:::root
     R --> CA["Carbon Cycle"]:::proc
     R --> NI["Nitrogen Cycle"]:::proc
@@ -435,7 +443,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["BIODIVERSITY — LEVELS AND IMPORTANCE"]:::root
     R --> LV["3 Levels of Biodiversity"]:::key
     R --> VA["Value of Biodiversity"]:::key
@@ -474,9 +482,11 @@ India's 4 hotspots: **"Himalayas, Indo-Burma, Western Ghats, Sundaland"** — **
 
 India is also one of the **17 megadiverse countries** that together hold approximately 70% of global biodiversity. The others include Brazil, Colombia, Indonesia, Mexico, Australia, China, DRC, and more.
 
+<div class="keypoint">**Key biome memory trick:** "**The closer to the equator, the more biodiversity.**" Tropical rainforests (equator) → most species. Temperate forests (mid-latitudes) → fewer. Tundra (polar) → fewest. This single rule correctly answers any "which biome has highest/lowest biodiversity" question. The reason: equatorial regions have year-round warmth, high rainfall, and no seasonal die-off — all three conditions maximise species richness.</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["BIODIVERSITY HOTSPOTS"]:::root
     R --> CR["Criteria to Qualify"]:::key
     R --> GL["Global Hotspots"]:::key
@@ -508,7 +518,7 @@ IUCN (International Union for Conservation of Nature) was established in **1948*
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["IUCN RED LIST CATEGORIES"]:::root
     R --> OR["Order from Most to Least Threatened"]:::key
     R --> IN["Indian Examples"]:::key
@@ -588,9 +598,21 @@ Under the **Wildlife (Protection) Act 1972**:
 
 **Elephant Reserves** — under Project Elephant. India has **33 Elephant Reserves**.
 
+<div class="keypoint">**Mnemonic — NP vs WLS:** Think **"No People"** vs **"Wildlife + Limited Settlement."** A National Park = **N**o human activity. A Wildlife **S**anctuary = **S**ome regulated use still allowed. If the question says "no grazing, no forestry, no settlement" → National Park. If "regulated grazing allowed" → Wildlife Sanctuary.</div>
+
+<div class="examtip">⚠️ **TRAP — Ramsar vs Biosphere Reserve vs World Heritage Site: candidates mix these every year.**
+
+| Category | Governing body | Covers | India count |
+|---|---|---|---|
+| **Ramsar Site** | Ramsar Convention (1971, Iran) | Wetlands only | 100 (June 2026) |
+| **Biosphere Reserve** | UNESCO MAB Programme | Large landscape with 3 zones | 18 (12 on UNESCO list) |
+| **UNESCO World Heritage Site** | UNESCO WHC | Outstanding universal value | 42 (as of 2024) |
+
+A site can hold ALL THREE designations simultaneously — Sundarbans is a Ramsar site, a UNESCO WHS, and part of a Biosphere Reserve. Examiners test all three labels on the same site deliberately.</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["PROTECTED AREAS IN INDIA"]:::root
     R --> NP["National Parks"]:::key
     R --> WS["Wildlife Sanctuaries"]:::key
@@ -674,7 +696,7 @@ India's first Biosphere Reserve = **Nilgiri (1986)**. Largest BR = **Kachchh, Gu
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["BIOSPHERE RESERVES OF INDIA"]:::root
     R --> ST["Statistics"]:::key
     R --> FI["First Established"]:::date
@@ -697,8 +719,8 @@ flowchart TD
 
 - **Ramsar Convention** — signed at Ramsar, Iran in **1971**; entered force 1975. India ratified in **1982**.
 - India's first Ramsar sites: **Chilika (Odisha)** and **Keoladeo Ghana (Rajasthan)**, both designated in **1981** (under the 1982 ratification).
-- **85+ Ramsar sites** in India as of April 2026 — highest number among Asian countries.
-- **Tamil Nadu** has the most Ramsar sites at the state level (14+).
+- **100 Ramsar sites** in India as of June 2026 (The 100th was Jai Prakash Narayan Bird Sanctuary, UP) — highest number in Asia and 3rd globally behind UK and Mexico.
+- **Tamil Nadu** has the most Ramsar sites at the state level.
 - **Largest Ramsar site in India**: Sundarbans Wetland, West Bengal.
 
 ---
@@ -709,14 +731,14 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["RAMSAR WETLAND SITES"]:::root
     R --> CO["Convention Background"]:::date
     R --> IN["India's Ramsar Sites"]:::key
     R --> KS["Key Sites to Know"]:::key
     CO --> CO1["Ramsar Convention: signed 1971 in Ramsar, Iran<br>HQ: Gland, Switzerland<br>Focuses on conservation of wetland ecosystems"]:::date
     CO --> CO2["Ramsar = 'Wetland of International Importance'<br>Criteria: rare ecosystem; supports waterfowl; unique biodiversity<br>World: 2400+ sites; 169 countries"]:::key
-    IN --> IN1["India: 75 Ramsar sites (2023) — most in South Asia<br>First 2 Ramsar sites in India (1981):<br>Chilika Lake (Odisha) + Keoladeo NP (Rajasthan)"]:::date
+    IN --> IN1["India: 100 Ramsar sites (June 2026) — most in Asia, 3rd globally<br>First 2 Ramsar sites in India (1981):<br>Chilika Lake (Odisha) + Keoladeo NP (Rajasthan)"]:::date
     IN --> IN2["Largest Ramsar site: Sundarbans (WB)<br>Smallest Ramsar site: Renuka Lake (HP)<br>Most Ramsar sites in one state: Uttar Pradesh (10+)"]:::key
     KS --> KS1["Chilika Lake: Asia's largest brackish water lagoon<br>Irrawaddy dolphins + migratory birds<br>Flamingo Festival held here"]:::key
     KS --> KS2["Sambhar Lake (Rajasthan): largest inland saline lake<br>Flamingo sightings; near Jaipur<br>Wular Lake (J&K): largest freshwater lake in India"]:::key
@@ -745,22 +767,40 @@ flowchart TD
 
 </div>
 
+### Particulate Matter — PM2.5 and PM10 (must-know definitions)
+
+<div class="keypoint">
+
+**PM2.5** — particles with diameter **less than 2.5 μm (micrometres)**. So fine they penetrate deep into the lungs and enter the bloodstream. The most dangerous particulate for health; linked to heart disease, stroke, lung cancer.
+
+**PM10** — particles with diameter **less than 10 μm**. Enter the lungs but generally stopped before reaching the bloodstream.
+
+**Why PM2.5 is worse:** It is ~30× smaller than a human hair. No filter in the nose or throat can stop it.
+
+**National Ambient Air Quality Standards (NAAQS) — India (CPCB):**
+- PM2.5 annual standard: **40 μg/m³** (India) vs **5 μg/m³** (WHO 2021 guideline — 8× stricter)
+- PM10 annual standard: **60 μg/m³** (India)
+
+Most Indian cities exceed even the relaxed Indian standard, which is why India appears at the top of global air pollution rankings.
+
+</div>
+
 ### Air Quality Index (India — CPCB)
 
-| AQI | Category |
-|-----|---------|
-| 0–50 | Good |
-| 51–100 | Satisfactory |
-| 101–200 | Moderate |
-| 201–300 | Poor |
-| 301–400 | Very Poor |
-| 401–500 | Severe |
+| AQI | Category | Health implication |
+|-----|---------|-------------------|
+| 0–50 | Good | Minimal impact |
+| 51–100 | Satisfactory | Minor breathing discomfort for sensitive people |
+| 101–200 | Moderate | Breathing discomfort — asthma, heart patients |
+| 201–300 | Poor | Breathing discomfort for most; avoid outdoor exercise |
+| 301–400 | Very Poor | Respiratory illness on prolonged exposure |
+| 401–500 | Severe / Hazardous | Affects healthy people; serious for the sick |
 
 AQI is maintained by CPCB (Central Pollution Control Board) and monitored for PM₂.₅, PM₁₀, NO₂, SO₂, CO, O₃, NH₃, and Pb.
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["AIR POLLUTION"]:::root
     R --> PO["Pollutants"]:::key
     R --> AQ["AQI Scale"]:::key
@@ -801,7 +841,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["WATER POLLUTION"]:::root
     R --> SO["Major Sources"]:::key
     R --> BO["BOD and DO"]:::key
@@ -821,6 +861,53 @@ flowchart TD
 </div>
 </div>
 
+## Chapter D2B — Ozone Layer
+
+### What is the ozone layer?
+
+- **Ozone (O₃)** is a molecule of three oxygen atoms.
+- In the **stratosphere** (15–50 km altitude), ozone forms a protective layer that absorbs 97–99% of the Sun's harmful **ultraviolet (UV-B and UV-C) radiation**.
+- Without this layer, UV radiation would cause massive increases in skin cancer, cataracts, and damage to crops and marine ecosystems.
+
+<div class="examtip">
+
+**Exam trap — where is the ozone layer?**
+
+"The ozone layer is in which part of the atmosphere?" → **Stratosphere** (NOT troposphere).
+
+**Ground-level ozone = bad (pollutant)**. Stratospheric ozone = good (protects life). Same molecule; opposite roles; different altitude. Examiners test this distinction every year.
+
+</div>
+
+### Ozone Hole — Discovery and Cause
+
+- The **ozone hole** forms primarily over **Antarctica** (and to a lesser extent the Arctic) during spring.
+- **Discovered in 1985** by British scientists **Farman, Gardiner, and Shanklin** (British Antarctic Survey).
+- **Cause**: **CFCs (chlorofluorocarbons)** — used in refrigerators, air conditioners, aerosol sprays — rise into the stratosphere, break down under UV radiation, and release chlorine atoms. One chlorine atom can destroy **100,000 ozone molecules**.
+
+### Montreal Protocol (1987) — Most Successful Environmental Treaty
+
+- **Signed**: 1987, entered force 1989.
+- **Goal**: Phase out ozone-depleting substances (ODS) — primarily CFCs, HCFCs, halons.
+- Regarded as the **most successful global environmental treaty** because:
+  - Near-universal ratification (197 countries).
+  - Ozone hole is slowly recovering — projected full recovery by ~2060–2070.
+- India joined in **1992**.
+
+### Kigali Amendment (2016) to Montreal Protocol
+
+- **Agreed**: October 2016, Kigali, Rwanda. Entered force 2019.
+- **What it does**: Adds phase-down of **HFCs (hydrofluorocarbons)** to the Montreal Protocol.
+- **Why important**: HFCs were introduced as replacements for CFCs (they do NOT deplete ozone) — but they are **potent greenhouse gases** with GWP of hundreds to thousands.
+- By phasing down HFCs (mainly used in ACs and refrigerators), Kigali Amendment addresses **both** ozone protection AND climate change.
+- India ratified in **2021**.
+
+<div class="examtip">
+
+**Kigali Amendment exam trap:** "What does the Kigali Amendment target?" → **HFCs** (not CFCs — those are already phased out). HFCs were the CFC replacements but are powerful GHGs. Kigali closes this loophole.
+
+</div>
+
 ## Chapter D3 — Solid Waste, Noise, Soil
 
 - **E-waste**: India generates ~3.2 million tonnes/year. E-Waste Management Rules 2022 introduced EPR.
@@ -837,7 +924,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["SOLID WASTE, NOISE AND SOIL POLLUTION"]:::root
     R --> SW["Solid Waste Types"]:::key
     R --> NO["Noise Pollution"]:::key
@@ -877,7 +964,7 @@ The natural greenhouse effect keeps Earth ~15 °C warmer than it would otherwise
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["GREENHOUSE GASES"]:::root
     R --> GE["Greenhouse Effect — Natural vs Enhanced"]:::key
     R --> GH["Main Greenhouse Gases + GWP"]:::key
@@ -924,7 +1011,7 @@ Common traps: Vienna Convention (1985) vs Montreal Protocol (1987) — Vienna is
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["CLIMATE TREATIES TIMELINE"]:::root
     R --> S1["1970s-80s"]:::date
     R --> S2["1990s"]:::date
@@ -993,7 +1080,7 @@ NAPCC has exactly **8 missions**. Examiners often ask the count. The Solar Missi
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["INDIA'S CLIMATE ACTION"]:::root
     R --> ND["NDC Targets"]:::key
     R --> RE["Renewable Energy"]:::key
@@ -1038,7 +1125,7 @@ The **Environment Protection Act is from 1986**, NOT 1984 (the year of the Bhopa
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["KEY ENVIRONMENTAL ACTS"]:::root
     R --> A1["Pre-1980 Acts"]:::date
     R --> A2["1980s Acts"]:::date
@@ -1067,7 +1154,7 @@ After the 2022 Amendment, WLPA has **4 schedules** (reduced from the original 6)
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["WILDLIFE PROTECTION ACT 1972 — SCHEDULES"]:::root
     R --> S1["Schedule I"]:::key
     R --> S2S3["Schedules II and III"]:::key
@@ -1119,7 +1206,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["KEY ENVIRONMENTAL INSTITUTIONS"]:::root
     R --> CP["CPCB"]:::key
     R --> NG["NGT"]:::key

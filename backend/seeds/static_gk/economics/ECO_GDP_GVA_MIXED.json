@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-24-eco-gdp-07",
       "generated_at": "2026-04-24T16:40:00+00:00",
       "id": "sgk_ECO_GDP_GVA_MIXED_00007"
+    },
+    {
+      "stem": "Which formula correctly links Gross Value Added (GVA) at basic prices to GDP at market prices?",
+      "options": [
+        {
+          "option_text": "GDP (MP) = GVA + Subsidies − Product taxes",
+          "is_correct": false
+        },
+        {
+          "option_text": "GDP (MP) = GVA + Product taxes − Subsidies",
+          "is_correct": true
+        },
+        {
+          "option_text": "GDP (MP) = GVA − Product taxes + Subsidies",
+          "is_correct": false
+        },
+        {
+          "option_text": "GDP (MP) = GVA + Net Factor Income from Abroad",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "GDP at market prices = GVA at basic prices + Taxes on products − Subsidies on products (i.e., + Net taxes on products). Option A reverses the sign, incorrectly netting subsidies above taxes. Option D confuses the GVA→GDP step with the GDP→GNP step; adding NFIA converts GDP to GNP, not GVA to GDP.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:52+00:00",
+      "id": "sgk_ECO_GDP_GVA_MIXED_00008"
+    },
+    {
+      "stem": "Net Domestic Product (NDP) at market prices is obtained from GDP at market prices by?",
+      "options": [
+        {
+          "option_text": "Adding net indirect taxes levied on domestic output",
+          "is_correct": false
+        },
+        {
+          "option_text": "Subtracting depreciation (capital consumption allowance)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Adding net factor income earned from abroad by residents",
+          "is_correct": false
+        },
+        {
+          "option_text": "Subtracting net exports from the total expenditure side",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "NDP = GDP − Depreciation (Capital Consumption Allowance), which accounts for wear and tear of fixed capital used in production. Option C describes how GDP converts to GNP via the NFIA adjustment — a common confusion. Net indirect taxes are already embedded in GDP at MP, so adding them again (Option A) would double-count.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:52+00:00",
+      "id": "sgk_ECO_GDP_GVA_MIXED_00009"
+    },
+    {
+      "stem": "Output of a Japanese-owned factory operating inside Indian territory will be counted in which national accounts?",
+      "options": [
+        {
+          "option_text": "Counted in both India's GDP and India's GNP",
+          "is_correct": false
+        },
+        {
+          "option_text": "Counted in India's GDP and also in Japan's GNP",
+          "is_correct": true
+        },
+        {
+          "option_text": "Counted in India's GNP and also in Japan's GDP",
+          "is_correct": false
+        },
+        {
+          "option_text": "Counted in both Japan's GDP and Japan's GNP",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "GDP covers production within a country's geographic boundary; GNP covers production by a country's nationals wherever located. The factory is on Indian soil → India's GDP. It is owned by Japanese nationals → Japan's GNP. It is excluded from India's GNP (non-Indian ownership) and from Japan's GDP (not on Japanese territory). Option A is the most common wrong answer — students forget that GNP strips out foreign-owned production.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:52+00:00",
+      "id": "sgk_ECO_GDP_GVA_MIXED_00010"
+    },
+    {
+      "stem": "Transfer payments such as old-age pensions and unemployment allowances are excluded from GDP primarily because?",
+      "options": [
+        {
+          "option_text": "They are paid out of government budgets and not by private firms",
+          "is_correct": false
+        },
+        {
+          "option_text": "They do not correspond to any current production of goods or services",
+          "is_correct": true
+        },
+        {
+          "option_text": "They are already captured under the household consumption component",
+          "is_correct": false
+        },
+        {
+          "option_text": "They represent capital expenditure rather than revenue expenditure",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "GDP measures the value of current economic production. Transfer payments are one-sided flows — the recipient provides no good or service in return — so including them would inflate income without any matching output. Option C is wrong: it is the household's subsequent spending of that transferred income that enters consumption — the transfer itself is not a transaction for production.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:52+00:00",
+      "id": "sgk_ECO_GDP_GVA_MIXED_00011"
+    },
+    {
+      "stem": "The base year adopted by MoSPI for India's current National Accounts Statistics series (launched in January 2015) is?",
+      "options": [
+        {
+          "option_text": "2004-05, which was the base year of the previous CSO series",
+          "is_correct": false
+        },
+        {
+          "option_text": "2011-12, adopted under the revised National Accounts series",
+          "is_correct": true
+        },
+        {
+          "option_text": "2014-15, aligned with the Rangarajan Committee revision year",
+          "is_correct": false
+        },
+        {
+          "option_text": "2017-18, updated to reflect the post-GST economic structure",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "In January 2015, CSO (now MoSPI) shifted India's National Accounts base year from 2004-05 to 2011-12. The same revision replaced GDP at factor cost with GVA at basic prices as the headline measure. Option A is the old (superseded) base year — the most tempting distractor for candidates who studied from pre-2015 material.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:52+00:00",
+      "id": "sgk_ECO_GDP_GVA_MIXED_00012"
+    },
+    {
+      "stem": "Gross National Disposable Income (GNDI) exceeds Gross National Product (GNP) when a country receives positive net?",
+      "options": [
+        {
+          "option_text": "Net indirect taxes collected by the central government",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net current transfers received from the rest of the world",
+          "is_correct": true
+        },
+        {
+          "option_text": "Net fixed capital formation over the depreciation provision",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net factor income earned abroad by resident nationals",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "GNDI = GNP + Net Current Transfers from Abroad (e.g., remittances, foreign grants). These transfers raise disposable income without representing factor payments for production. Option D is the critical distractor: NFIA (Net Factor Income from Abroad) is what converts GDP into GNP — so it is already embedded in GNP and cannot be the further step that gives GNDI. For India, massive inward remittances consistently make GNDI > GNP.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:52+00:00",
+      "id": "sgk_ECO_GDP_GVA_MIXED_00013"
+    },
+    {
+      "stem": "India's GDP measured at Purchasing Power Parity (PPP) is substantially larger than at current market exchange rates mainly because?",
+      "options": [
+        {
+          "option_text": "PPP also captures informal sector output omitted from official GDP data",
+          "is_correct": false
+        },
+        {
+          "option_text": "Non-traded goods and services are relatively cheaper in India than in the US",
+          "is_correct": true
+        },
+        {
+          "option_text": "The rupee is systematically overvalued against the dollar in forex markets",
+          "is_correct": false
+        },
+        {
+          "option_text": "PPP calculations incorporate projected real growth of emerging economies",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "PPP equalises price levels using a common basket of goods. In India, non-tradables (local food, housing, personal services) cost far less in rupee terms than their dollar equivalents in the US — the Balassa-Samuelson effect. PPP conversion captures this higher real purchasing power, raising India's PPP-GDP relative to market-rate GDP. Option C is wrong: the rupee is typically undervalued on forex markets (which would actually raise market-rate GDP), and PPP addresses price-level differences, not currency misalignment. Option A conflates PPP methodology with informal-sector measurement.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T15:59:52+00:00",
+      "id": "sgk_ECO_GDP_GVA_MIXED_00014"
     }
   ]
 }

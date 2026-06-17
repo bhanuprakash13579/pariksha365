@@ -267,6 +267,216 @@
       "generator_tag": "claude-opus-in-chat-2026-04-20-eco-tax-01",
       "generated_at": "2026-04-20T23:10:00+00:00",
       "id": "sgk_ECO_TAXES_00012"
+    },
+    {
+      "stem": "GST in India is described as a 'destination-based consumption tax.' What does this specifically mean in terms of tax revenue allocation?",
+      "options": [
+        {
+          "option_text": "Revenue accrues to the state where the manufacturing unit is located",
+          "is_correct": false
+        },
+        {
+          "option_text": "Revenue accrues to the state where goods or services are finally consumed",
+          "is_correct": true
+        },
+        {
+          "option_text": "Revenue goes to Central Government and is redistributed via Finance Commission",
+          "is_correct": false
+        },
+        {
+          "option_text": "Revenue accrues to the state where the supplier's head office is registered",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Under destination-based taxation, GST revenue belongs to the consuming state, not the producing one. This replaced the origin-based CST/VAT framework and directly benefits consumption-heavy states. Option A describes the old origin-based system that GST was specifically designed to replace.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:53:55+00:00",
+      "id": "sgk_ECO_TAXES_00008"
+    },
+    {
+      "stem": "Among the following, which commodity is placed in the HIGHEST GST slab of 28% in India?",
+      "options": [
+        {
+          "option_text": "Packaged food items sold under registered brand names (5–12% slab)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Household fans, coolers, and similar domestic appliances (18% slab)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mobile phones and consumer electronics after their 2020 revision (18% slab)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cement used in construction and infrastructure development (28% slab)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "Cement attracts 28% GST despite being a critical infrastructure input — a frequently tested anomaly. Mobile phones were moved to 18% in 2020. Fans attract 18%. Branded packaged food ranges 5–12%. Candidates often confuse cement with lower-rate construction inputs like steel (18%), making D the most commonly missed option.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:53:55+00:00",
+      "id": "sgk_ECO_TAXES_00009"
+    },
+    {
+      "stem": "Under GST law, 'ZERO-RATED SUPPLY' and 'NIL-RATED SUPPLY' are not the same. Which statement CORRECTLY distinguishes them?",
+      "options": [
+        {
+          "option_text": "Both terms are fully interchangeable; both describe supplies entirely free from GST",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nil-rated covers exports and SEZ supplies; zero-rated covers all domestically exempt goods",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zero-rated (exports/SEZ) allows ITC refund; nil-rated domestic goods deny ITC claims",
+          "is_correct": true
+        },
+        {
+          "option_text": "Zero-rated means the output tax rate is 0%; nil-rated means no invoice is required",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Section 16 of the IGST Act defines zero-rated supply as exports and SEZ supplies — crucially, the supplier can claim a refund of input tax credit even though no output tax is charged. Nil-rated domestic supplies (fresh vegetables, salt) attract 0% GST but the supplier CANNOT reclaim ITC on inputs. Option B reverses the definitions — a classic examiner trap exploiting candidates who confuse the two.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:53:55+00:00",
+      "id": "sgk_ECO_TAXES_00010"
+    },
+    {
+      "stem": "A manufacturer of PAN MASALA with annual turnover of ₹80 lakh wants to reduce compliance burden by opting for the GST Composition Scheme. Is this permissible?",
+      "options": [
+        {
+          "option_text": "Yes, any manufacturer below the ₹1.5 crore turnover threshold can freely opt in",
+          "is_correct": false
+        },
+        {
+          "option_text": "Yes, but the manufacturer must obtain prior approval from the GST Council first",
+          "is_correct": false
+        },
+        {
+          "option_text": "No, manufacturers of pan masala, tobacco, and ice cream are specifically excluded",
+          "is_correct": true
+        },
+        {
+          "option_text": "No, because the Composition Scheme is available only to traders, not to manufacturers",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Section 10 of the CGST Act explicitly bars manufacturers of pan masala, tobacco products, and ice cream from the Composition Scheme regardless of their turnover — a PYQ-frequent fact. Option D is a common distractor: manufacturers of other goods CAN opt in up to ₹1.5 crore. Only these three categories carry an absolute product-based exclusion, not a general manufacturing bar.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:53:55+00:00",
+      "id": "sgk_ECO_TAXES_00011"
+    },
+    {
+      "stem": "A Delhi-based architect provides design services for a building under construction in Goa. The client is registered in Maharashtra. Under GST, the PLACE OF SUPPLY of this service will be:",
+      "options": [
+        {
+          "option_text": "Delhi, because the architect is registered as a GST taxpayer in Delhi state",
+          "is_correct": false
+        },
+        {
+          "option_text": "Goa, as the immovable property is located in Goa per Section 12(3) of IGST Act",
+          "is_correct": true
+        },
+        {
+          "option_text": "Maharashtra, being the state where the service recipient is registered or domiciled",
+          "is_correct": false
+        },
+        {
+          "option_text": "The state where the agreement for architectural services was formally executed",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Section 12(3) of the IGST Act mandates that the place of supply for services related to immovable property — including architecture, interior design, and civil construction — is the location of the property itself. Goa being the property's location makes this an inter-state supply attracting IGST. Options A and C reflect the most common misapplication of the general rule (supplier's or recipient's location) which applies only when no specific rule exists.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:53:55+00:00",
+      "id": "sgk_ECO_TAXES_00012"
+    },
+    {
+      "stem": "Section 17(5) of the CGST Act creates a 'BLOCKED CREDITS' list — Input Tax Credit that cannot be claimed. Which of the following correctly identifies a blocked credit?",
+      "options": [
+        {
+          "option_text": "GST paid on raw materials used to manufacture a taxable output product",
+          "is_correct": false
+        },
+        {
+          "option_text": "GST paid on outdoor catering services arranged for the company's employees",
+          "is_correct": true
+        },
+        {
+          "option_text": "GST paid on goods exported under a valid Letter of Undertaking (LUT)",
+          "is_correct": false
+        },
+        {
+          "option_text": "GST paid on capital machinery used exclusively in providing taxable services",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Section 17(5)(b) of the CGST Act specifically blocks ITC on food and beverages, outdoor catering, health services, and similar personal consumption items — even when provided at the workplace for employees. Options A (raw materials for taxable output), C (export under LUT as zero-rated supply), and D (capital equipment for taxable services) all qualify for ITC and are placed as tempting distractors testing whether the candidate has memorised the blocked list versus the general eligibility rule.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:53:55+00:00",
+      "id": "sgk_ECO_TAXES_00013"
+    },
+    {
+      "stem": "The MINIMUM ALTERNATE TAX (MAT) under Section 115JB of the Income Tax Act was reduced by the Taxation Laws Ordinance, 2019. What is the revised MAT rate currently applicable?",
+      "options": [
+        {
+          "option_text": "10% of book profit, rationalised for domestic companies post-2022 reforms",
+          "is_correct": false
+        },
+        {
+          "option_text": "15% of book profit, reduced from 18.5% by the Taxation Laws Ordinance, 2019",
+          "is_correct": true
+        },
+        {
+          "option_text": "18.5% of book profit, the original rate applicable since MAT was first introduced",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% of book profit, uniformly applicable to all domestic companies in India",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "The Taxation Laws (Amendment) Ordinance 2019 reduced MAT from 18.5% to 15% of book profit (plus applicable surcharge and cess) — announced simultaneously with the cut in base corporate tax rates to 22%. Option C (18.5%) is the sharpest distractor: it was the long-standing rate for over a decade and many candidates have outdated notes. MAT is calculated on book profit under the Companies Act, not on taxable income, which is its defining distinction from regular income tax.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:53:55+00:00",
+      "id": "sgk_ECO_TAXES_00014"
     }
   ]
 }

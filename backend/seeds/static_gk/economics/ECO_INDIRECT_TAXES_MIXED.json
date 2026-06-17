@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-24-eco-it-07",
       "generated_at": "2026-04-24T20:30:00+00:00",
       "id": "sgk_ECO_INDIRECT_TAXES_MIXED_00007"
+    },
+    {
+      "stem": "GST in India subsumed approximately how many indirect taxes that were previously levied by the Central and State governments combined?",
+      "options": [
+        {
+          "option_text": "Around 17 taxes (8 Central + 9 State level)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Around 25 taxes (15 Central + 10 State level)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Around 8 taxes (4 Central + 4 State level)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Around 30 taxes (12 Central + 18 State level)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "GST subsumed 17 taxes: 8 Central (Central Excise, Service Tax, CVD, SAD, CST, Excise on medicinal preparations, additional excise on textiles and sugar) and 9 State (VAT, entry tax, luxury tax, entertainment tax, advertisement tax, purchase tax, lottery/betting tax, octroi, State cesses). Option B is wrong — 25 overstates the count and misrepresents the Central/State split.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T16:01:35+00:00",
+      "id": "sgk_ECO_INDIRECT_TAXES_MIXED_00008"
+    },
+    {
+      "stem": "Which constitutional amendment inserted Articles 246A and 279A into the Indian Constitution, formally enabling the GST framework?",
+      "options": [
+        {
+          "option_text": "100th Constitutional Amendment Act, 2015",
+          "is_correct": false
+        },
+        {
+          "option_text": "101st Constitutional Amendment Act, 2016",
+          "is_correct": true
+        },
+        {
+          "option_text": "97th Constitutional Amendment Act, 2011",
+          "is_correct": false
+        },
+        {
+          "option_text": "103rd Constitutional Amendment Act, 2019",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "The 101st CAA, 2016 inserted Art 246A (concurrent GST law-making power), Art 269A (IGST levy), and Art 279A (GST Council), and amended Schedule VII. The 100th CAA (land boundary agreement with Bangladesh) is the most common distractor due to adjacency; the 97th CAA dealt with co-operative societies and the 103rd introduced EWS reservation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T16:01:35+00:00",
+      "id": "sgk_ECO_INDIRECT_TAXES_MIXED_00009"
+    },
+    {
+      "stem": "Under the GST framework, Integrated GST (IGST) is levied on inter-State supplies of goods and services. Who collects IGST, and how is the revenue ultimately apportioned?",
+      "options": [
+        {
+          "option_text": "Origin State collects; revenue is split equally between origin and destination States",
+          "is_correct": false
+        },
+        {
+          "option_text": "Centre collects; revenue is apportioned between Centre and the destination State",
+          "is_correct": true
+        },
+        {
+          "option_text": "Centre collects; entire IGST revenue is retained by the Central Government",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both States collect separately; GST Council arbitrates any revenue surplus",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "IGST is collected by the Centre under the IGST Act, 2017. It follows the destination principle: the CGST portion is retained by the Centre, while the SGST-equivalent portion is transferred to the destination (consuming) State. Option C is wrong because the destination State always receives its share — IGST is not a revenue-neutral tool for the Centre alone.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T16:01:35+00:00",
+      "id": "sgk_ECO_INDIRECT_TAXES_MIXED_00010"
+    },
+    {
+      "stem": "The GST Composition Scheme allows small taxpayers to pay tax at a flat rate with minimal compliance. Which of the following businesses is statutorily INELIGIBLE to opt for this scheme?",
+      "options": [
+        {
+          "option_text": "A manufacturer of goods with annual turnover below ₹1.5 crore",
+          "is_correct": false
+        },
+        {
+          "option_text": "A restaurant owner (not serving alcohol) with turnover below ₹1.5 crore",
+          "is_correct": false
+        },
+        {
+          "option_text": "A trader engaged in inter-State supply of taxable goods",
+          "is_correct": true
+        },
+        {
+          "option_text": "A retailer of readymade garments with turnover below ₹1.5 crore",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Section 10(2)(b) of the CGST Act explicitly bars any supplier making inter-State outward supplies from the Composition Scheme, regardless of turnover. The scheme is restricted to intra-State suppliers only, since IGST collection across States requires the regular return-filing mechanism. Restaurant owners and intra-State traders are eligible if within the turnover threshold.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T16:01:35+00:00",
+      "id": "sgk_ECO_INDIRECT_TAXES_MIXED_00011"
+    },
+    {
+      "stem": "Alcoholic liquor for human consumption is deliberately kept outside GST. Which other category of goods still attracts Central Excise duty (not GST) on manufacture as of 2024?",
+      "options": [
+        {
+          "option_text": "Tobacco products including cigarettes and beedis",
+          "is_correct": false
+        },
+        {
+          "option_text": "Petroleum products such as petrol, diesel, and ATF",
+          "is_correct": true
+        },
+        {
+          "option_text": "Precious metals like gold and silver jewellery",
+          "is_correct": false
+        },
+        {
+          "option_text": "Packaged food items including cereals and pulses",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Five petroleum products — crude oil, natural gas, aviation turbine fuel (ATF), petrol (motor spirit), and high-speed diesel — remain outside GST and continue to attract Central Excise (by Centre) and VAT (by States). Tobacco is the most common wrong answer; it IS under GST at 28% plus a compensation cess. Gold attracts 3% GST, and cereals/pulses attract 0–5% GST.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T16:01:35+00:00",
+      "id": "sgk_ECO_INDIRECT_TAXES_MIXED_00012"
+    },
+    {
+      "stem": "A 'zero-rated supply' under the IGST Act is fundamentally different from a GST-exempt supply. Which statement accurately captures the critical operational distinction between them?",
+      "options": [
+        {
+          "option_text": "Zero-rated supplies attract 0% GST; exempt supplies attract 5% — the lowest positive slab",
+          "is_correct": false
+        },
+        {
+          "option_text": "On zero-rated supplies, supplier can claim full ITC refund; on exempt, ITC is unavailable",
+          "is_correct": true
+        },
+        {
+          "option_text": "Zero-rated covers only goods exports; exempt supply covers only domestic services",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zero-rated needs GSTR-1 filing; exempt supplies fall outside the GST return framework",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Zero-rated supply (exports and SEZ supplies under Section 16 IGST Act) levies 0% GST but crucially allows the supplier to claim a refund of Input Tax Credit on all inputs used. Exempt supplies also attract no GST but the supplier must reverse any ITC taken on inputs used for exempt supplies — making the tax cost stick in the supply chain. Option A is wrong because exempt does not mean 5%; it literally means 0% with no ITC flow-through.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T16:01:35+00:00",
+      "id": "sgk_ECO_INDIRECT_TAXES_MIXED_00013"
+    },
+    {
+      "stem": "A company sells a gift hamper containing chocolates (18% GST), dry fruits (5% GST), and a decorative tin box (12% GST), bundled together as a single assorted pack at one price. What is the correct GST treatment of this transaction?",
+      "options": [
+        {
+          "option_text": "Composite supply taxed at 18%, since chocolates are the principal element by value",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mixed supply taxed at 18%, being the highest GST rate among its constituent items",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mixed supply taxed at the weighted average GST rate of all three components",
+          "is_correct": false
+        },
+        {
+          "option_text": "Composite supply taxed at 5%, treating dry fruits as the principal natural supply",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "A 'composite supply' requires items to be naturally bundled and one to be the principal supply (e.g., transport + insurance). A gift hamper is artificially bundled, so it is a 'mixed supply' under Section 2(74) of CGST Act. Mixed supplies are taxed at the highest rate applicable to any component — here 18% on chocolates. Option C (weighted average) is a common misconception; GST law does not provide for apportionment in mixed supply scenarios.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T16:01:35+00:00",
+      "id": "sgk_ECO_INDIRECT_TAXES_MIXED_00014"
     }
   ]
 }

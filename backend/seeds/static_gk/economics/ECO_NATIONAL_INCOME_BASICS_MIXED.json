@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-23-eco-ni-07",
       "generated_at": "2026-04-23T23:30:00+00:00",
       "id": "sgk_ECO_NATIONAL_INCOME_BASICS_MIXED_00007"
+    },
+    {
+      "stem": "Gross National Product (GNP) differs from Gross Domestic Product (GDP) in that GNP additionally includes which of the following?",
+      "options": [
+        {
+          "option_text": "depreciation of capital assets within the country's territory",
+          "is_correct": false
+        },
+        {
+          "option_text": "indirect taxes collected by the government in a fiscal year",
+          "is_correct": false
+        },
+        {
+          "option_text": "net factor income earned from abroad by the country's residents",
+          "is_correct": true
+        },
+        {
+          "option_text": "government transfer payments including pensions and unemployment relief",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "GNP = GDP + Net Factor Income from Abroad (NFIA). When Indian residents earn wages, rent, interest, or profit abroad and those earnings are added (minus factor income paid to foreigners inside India), the result is GNP. Depreciation (option A) is subtracted from GNP to arrive at NNP — it plays no role in the GDP-to-GNP bridge. Indirect taxes (option B) distinguish market price from factor cost, which is a separate distinction unrelated to the domestic-vs-national scope.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:39:40+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_BASICS_MIXED_00008"
+    },
+    {
+      "stem": "Which of the following is EXCLUDED from the computation of a country's national income?",
+      "options": [
+        {
+          "option_text": "old-age pension payments disbursed by the government to retirees",
+          "is_correct": true
+        },
+        {
+          "option_text": "wages paid to workers employed in the manufacturing sector",
+          "is_correct": false
+        },
+        {
+          "option_text": "interest earned by households on fixed deposits held with banks",
+          "is_correct": false
+        },
+        {
+          "option_text": "rent received by landlords from commercial and residential tenants",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "Transfer payments such as old-age pensions are one-sided transactions — the government disburses money but receives no current productive service in return. National income counts only factor incomes (wages, interest, rent, profit) earned by contributing to current production. Wages (B), interest on deposits (C), and rent from property (D) are all genuine factor incomes and are therefore included.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:39:40+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_BASICS_MIXED_00009"
+    },
+    {
+      "stem": "Which of the following items IS included when estimating India's national income, even though no direct market transaction takes place?",
+      "options": [
+        {
+          "option_text": "value of unpaid household work performed by homemakers each year",
+          "is_correct": false
+        },
+        {
+          "option_text": "black market transactions involving unregistered goods and services",
+          "is_correct": false
+        },
+        {
+          "option_text": "lottery winnings and gambling receipts received by individuals",
+          "is_correct": false
+        },
+        {
+          "option_text": "imputed rental value of owner-occupied residential houses each year",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Imputed rental value of owner-occupied houses IS included because, by convention, homeowners are treated as renting their home to themselves — a real housing service flows even without a cash transaction. Unpaid household work (A) lies outside the production boundary and is excluded despite its economic significance. Black market transactions (B) go unreported and cannot be captured. Lottery winnings (C) are transfer receipts, not factor income arising from production, so they are excluded.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:39:40+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_BASICS_MIXED_00010"
+    },
+    {
+      "stem": "The value-added method of measuring GDP sums up, across all producing units in the economy, which of the following?",
+      "options": [
+        {
+          "option_text": "the net value added at each production stage from raw material to final output",
+          "is_correct": true
+        },
+        {
+          "option_text": "total sales revenue of all firms across every production stage combined",
+          "is_correct": false
+        },
+        {
+          "option_text": "only the final retail price of goods sold directly to end consumers",
+          "is_correct": false
+        },
+        {
+          "option_text": "factor payments — wages, rent, interest, and profit — across all sectors",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "The value-added (production) method records Value Added = Output Value − Intermediate Input Cost at every stage, then sums these across all producing units. This design eliminates double counting because intermediate goods purchased from other firms are deducted. Option B (total sales revenue) would double-count intermediate goods sold between firms. Option C describes the expenditure method's final-goods logic. Option D describes the income method, which is conceptually equivalent but methodologically distinct.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:39:40+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_BASICS_MIXED_00011"
+    },
+    {
+      "stem": "To derive Personal Income (PI) from National Income (NI), which combination of adjustments is correct?",
+      "options": [
+        {
+          "option_text": "add undistributed corporate profits, then subtract transfer payments received",
+          "is_correct": false
+        },
+        {
+          "option_text": "add corporate income tax and social security contributions paid by employers",
+          "is_correct": false
+        },
+        {
+          "option_text": "subtract corporate tax and undistributed profits, then add transfer payments",
+          "is_correct": true
+        },
+        {
+          "option_text": "subtract government subsidies and add all forms of household investment income",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "PI = NI − Undistributed corporate profits − Corporate income tax − Social security contributions + Transfer payments received by households. Profits retained by firms and taxes paid by corporations never reach households, so they are subtracted; government transfers (pensions, relief) add back income households receive without producing. Option A reverses the sign on undistributed profits — these must be subtracted because they are earned within NI but never distributed to individual residents.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:39:40+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_BASICS_MIXED_00012"
+    },
+    {
+      "stem": "The concept of 'Green GDP' modifies conventional GDP primarily by accounting for which of the following?",
+      "options": [
+        {
+          "option_text": "only agricultural and forestry sector contributions to total national output",
+          "is_correct": false
+        },
+        {
+          "option_text": "cost of environmental degradation and natural resource depletion during growth",
+          "is_correct": true
+        },
+        {
+          "option_text": "foreign direct investment inflows and bilateral trade surplus or deficit values",
+          "is_correct": false
+        },
+        {
+          "option_text": "informal sector output and unregistered household production value estimates",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Green GDP = Conventional GDP − Monetary value of environmental damage − Cost of depleting non-renewable natural resources. It measures sustainable growth by penalising output that erodes the ecological base. Option A is wrong because Green GDP applies across all sectors, not just agriculture or forestry. Option C describes adjustments relevant to cross-border factor income (GNP-type) accounting. Option D relates to the informal-economy estimation problem, which is a data-coverage issue entirely separate from environmental accounting.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:39:40+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_BASICS_MIXED_00013"
+    },
+    {
+      "stem": "A country's nominal GDP in the base year was ₹100 lakh crore. In the current year, nominal GDP rose to ₹130 lakh crore and the GDP deflator stood at 120 (base = 100). What is the real GDP growth rate?",
+      "options": [
+        {
+          "option_text": "30 percent, since real growth equals the full rise in nominal GDP terms",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 percent, as the deflator percentage rise itself constitutes real growth",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 percent, by subtracting deflator growth (20%) from nominal growth (30%)",
+          "is_correct": false
+        },
+        {
+          "option_text": "8.33 percent, since real GDP equals nominal GDP divided by the deflator index",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "Real GDP = (Nominal GDP ÷ GDP Deflator) × 100 = (130 ÷ 120) × 100 = 108.33 lakh crore. Since base-year real GDP = 100 lakh crore, real growth = 8.33%. Option C (10%) applies the popular approximation rule — real growth ≈ nominal growth − inflation = 30% − 20% = 10% — which is only approximate, not exact. Option A (30%) ignores the price-level rise entirely. Option B (20%) confuses the deflator's own percentage increase with actual output growth.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:39:40+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_BASICS_MIXED_00014"
     }
   ]
 }

@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Blood Relations",
+  "topic_code": "REAS_BLOOD_RELATIONS_XI_MIXED",
+  "questions": [
+    {
+      "stem": "Pointing to a photograph, Rakesh says, 'She is the daughter of the only son of my grandfather.' How is the woman in the photograph related to Rakesh?",
+      "options": [
+        {
+          "option_text": "Rakesh's maternal aunt (wife of his mother's brother)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rakesh's sister (daughter of the same father as Rakesh)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rakesh's niece (daughter of Rakesh's own sibling)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rakesh's daughter (born directly to Rakesh himself)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "The only son of Rakesh's grandfather is Rakesh's own father. The daughter of Rakesh's father is Rakesh's sister. Option C (niece) is the classic trap — candidates add an extra generation by reading 'grandfather's son's daughter' as two steps away rather than recognising the chain collapses to the same parental level.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T14:49:52+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_XI_MIXED_00001"
+    },
+    {
+      "stem": "Raman says to Geeta, 'Your only brother's son is my wife's brother.' How is Geeta related to Raman's wife?",
+      "options": [
+        {
+          "option_text": "Geeta is Raman's wife's mother (who gave birth to her)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Geeta is Raman's wife's paternal aunt (sister of her father)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Geeta is Raman's wife's grandmother (two generations above her)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Geeta is Raman's wife's maternal aunt (sister of her mother)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Let Geeta's brother be X. X's son Y is Raman's wife's brother, so Raman's wife is also a child of X — making her Geeta's niece. Geeta is therefore Raman's wife's paternal aunt (sister of her father X). Option D (maternal aunt) is the common error: the link passes through Geeta's brother, which is the paternal line of Raman's wife, not the maternal line.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T14:49:52+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_XI_MIXED_00002"
+    },
+    {
+      "stem": "Introducing Kiran, Meena says, 'His mother is the only daughter of my mother.' How is Kiran related to Meena?",
+      "options": [
+        {
+          "option_text": "Kiran is Meena's brother (they share the same mother)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kiran is Meena's son (Meena herself is Kiran's mother)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Kiran is Meena's nephew (born to one of Meena's siblings)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kiran is Meena's grandson (two generations below Meena)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "The only daughter of Meena's mother is Meena herself — a self-referential clue. So Kiran's mother = Meena, making Kiran her son. Option C (nephew) is the dominant trap: candidates assume 'daughter of my mother' must refer to someone other than the speaker, missing that Meena may be the only daughter.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T14:49:52+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_XI_MIXED_00003"
+    },
+    {
+      "stem": "A is the son of B. C is the sister of A. D is the father of C. E is the mother of D. How is B related to E?",
+      "options": [
+        {
+          "option_text": "B is E's daughter (born directly to E as her child)",
+          "is_correct": false
+        },
+        {
+          "option_text": "B is E's daughter-in-law (married to E's son D)",
+          "is_correct": true
+        },
+        {
+          "option_text": "B is E's granddaughter (two full generations below E)",
+          "is_correct": false
+        },
+        {
+          "option_text": "B is E's sister-in-law (married to one of E's brothers)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "C is A's sister, so they share parents. D is C's father, making D also A's father. B is stated to be A's parent; since D is the father, B must be the mother — and hence D's wife. E is D's mother, so B (D's wife) is E's daughter-in-law. Option A is wrong because B is not E's biological child; she entered the family through marriage to D.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T14:49:52+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_XI_MIXED_00004"
+    },
+    {
+      "stem": "In a coding system: 'A @ B' means A is the father of B; 'A # B' means A is the mother of B; 'A $ B' means A is the brother of B. Which expression correctly means 'X is the maternal uncle of Z'?",
+      "options": [
+        {
+          "option_text": "X @ Y # Z — making X the maternal grandfather of Z",
+          "is_correct": false
+        },
+        {
+          "option_text": "X $ Y # Z — making X the maternal uncle of Z",
+          "is_correct": true
+        },
+        {
+          "option_text": "X # Y $ Z — making X the maternal grandmother of Z",
+          "is_correct": false
+        },
+        {
+          "option_text": "X $ Y @ Z — making X the paternal uncle of Z",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Maternal uncle = brother of Z's mother. X $ Y means X is Y's brother; Y # Z means Y is Z's mother. Together: X is the brother of Z's mother → maternal uncle. Option D (X $ Y @ Z) makes Y the father of Z, so X becomes the brother of Z's father — that is paternal uncle, the most frequent mix-up in this question type.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T14:49:52+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_XI_MIXED_00005"
+    },
+    {
+      "stem": "In a family of six — P, Q, R, S, T, U — P is married to Q; R is the son of P; T is the daughter of Q; S is the brother of T; U is the son of R. How is U related to S?",
+      "options": [
+        {
+          "option_text": "U is S's son (born directly to S within this family)",
+          "is_correct": false
+        },
+        {
+          "option_text": "U is S's nephew (U is the son of S's brother R)",
+          "is_correct": true
+        },
+        {
+          "option_text": "U is S's grandson (two full generations below S)",
+          "is_correct": false
+        },
+        {
+          "option_text": "U is S's cousin (born to a sibling of S's parents)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "P and Q are spouses. R is their son; T is their daughter; S is T's brother, so S is also P and Q's child — placing R and S as siblings. U is R's son, making U the nephew of R's sibling S. Option D (cousin) traps candidates who mistakenly assign S to a different parental branch rather than recognising all clues converge on the same P–Q couple.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T14:49:52+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_XI_MIXED_00006"
+    },
+    {
+      "stem": "Pointing to a man in a photograph, a woman says, 'His mother's only brother is the father of my son's only sister.' The woman has exactly one son. How is the woman related to the man?",
+      "options": [
+        {
+          "option_text": "She is the man's paternal aunt (sister of his father)",
+          "is_correct": false
+        },
+        {
+          "option_text": "She is the man's maternal aunt (wife of his mother's brother)",
+          "is_correct": true
+        },
+        {
+          "option_text": "She is the man's mother (the woman who gave birth to him)",
+          "is_correct": false
+        },
+        {
+          "option_text": "She is the man's sister-in-law (wife of his own brother)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Since the woman has exactly one son, 'my son's only sister' is the woman's own daughter. 'Father of my daughter' is the woman's husband. The clue then reads: the man's mother's only brother = the woman's husband. So the woman is married to the man's maternal uncle, making her his maternal aunt. Option A (paternal aunt) is the trap for candidates who miss that 'mother's only brother' anchors the relationship firmly on the maternal side.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T14:49:52+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_XI_MIXED_00007"
+    }
+  ]
+}

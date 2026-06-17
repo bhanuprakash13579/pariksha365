@@ -220,6 +220,216 @@
       "generator_tag": "gemini-batch-fix-2026-05-15",
       "generated_at": "2026-05-19T08:44:06+00:00",
       "id": "sgk_ECO_NATIONAL_INCOME_III_MIXED_00007"
+    },
+    {
+      "stem": "Which mathematical relationship correctly converts GDP at Market Price to GDP at Factor Cost?",
+      "options": [
+        {
+          "option_text": "GDP at Factor Cost = GDP at Market Price + Net Indirect Taxes",
+          "is_correct": false
+        },
+        {
+          "option_text": "GDP at Factor Cost = GDP at Market Price − Net Indirect Taxes",
+          "is_correct": true
+        },
+        {
+          "option_text": "GDP at Market Price = GDP at Factor Cost + Net Direct Taxes",
+          "is_correct": false
+        },
+        {
+          "option_text": "GDP at Factor Cost = GDP at Market Price ÷ Net Indirect Taxes",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct because GDP at Factor Cost = GDP at Market Price − Net Indirect Taxes (Indirect Taxes minus Subsidies). Market price embeds taxes paid to government; stripping net indirect taxes leaves only factor earnings — wages, rent, interest, profit. Option A is wrong because adding net indirect taxes would double-count the tax component already embedded in market price, inflating factor cost above its true level.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:40:23+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_III_MIXED_00008"
+    },
+    {
+      "stem": "Which formula correctly expresses Gross National Product (GNP) in terms of Gross Domestic Product (GDP)?",
+      "options": [
+        {
+          "option_text": "GNP equals GDP minus factor earnings received from abroad",
+          "is_correct": false
+        },
+        {
+          "option_text": "GNP equals GDP plus Net Factor Income from Abroad (NFIA)",
+          "is_correct": true
+        },
+        {
+          "option_text": "GNP equals National Income minus depreciation allowance only",
+          "is_correct": false
+        },
+        {
+          "option_text": "GNP equals GDP minus Net Indirect Taxes and product subsidies",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: GNP = GDP + NFIA, where NFIA = factor income earned abroad by residents minus factor income paid to non-residents domestically. GDP measures output within borders regardless of ownership; NFIA adjusts for nationality. Option A is wrong because it subtracts only income received from abroad instead of computing the net (received minus paid), reversing the sign. Option D describes moving from GDP at market price to factor cost, not computing GNP.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:40:23+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_III_MIXED_00009"
+    },
+    {
+      "stem": "Which method of calculating national income sums only the net value added at each stage of production to prevent intermediate goods from being counted more than once?",
+      "options": [
+        {
+          "option_text": "Income Method — aggregates wages, rent, interest and profit earned",
+          "is_correct": false
+        },
+        {
+          "option_text": "Expenditure Method — totals final spending by all economic agents",
+          "is_correct": false
+        },
+        {
+          "option_text": "Product (Value Added) Method — sums net output at each production stage",
+          "is_correct": true
+        },
+        {
+          "option_text": "Commodity Flow Method — tracks goods movement from producers to final users",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. The Product (Output/Value Added) Method adds only the incremental value created at each production stage — output value minus cost of intermediate inputs — so cotton, yarn, cloth, and finished shirt are never all counted separately. The Income Method (Option A) sums factor payments; the Expenditure Method (Option B) totals final demand — neither tracks production-stage values. Option D (Commodity Flow) is an older technique used to cross-check estimates, not a primary method recognised in India's National Accounts.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:40:23+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_III_MIXED_00010"
+    },
+    {
+      "stem": "Which base year is currently used by India's National Statistical Office (NSO) for computing GDP at constant prices, following the 2015 comprehensive revision of National Account Statistics?",
+      "options": [
+        {
+          "option_text": "2004–05 (used before the last revision of National Account Statistics)",
+          "is_correct": false
+        },
+        {
+          "option_text": "2011–12 (officially adopted after the 2015 rebasing of national accounts)",
+          "is_correct": true
+        },
+        {
+          "option_text": "2001–02 (introduced post-liberalisation to replace earlier base years)",
+          "is_correct": false
+        },
+        {
+          "option_text": "2017–18 (proposed for adoption but not yet officially implemented)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. In January 2015, the Central Statistics Office (now NSO) shifted the base year to 2011–12 from 2004–05, simultaneously switching from 'GDP at factor cost' to 'GVA at basic prices' as the headline sectoral measure. Option A (2004–05) is the most tempting distractor since it was the base year until that revision. Option D is a proposed future change not yet implemented.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:40:23+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_III_MIXED_00011"
+    },
+    {
+      "stem": "Which characteristic most clearly distinguishes the GDP Deflator from the Consumer Price Index (CPI) as a tool for measuring the economy's overall price level?",
+      "options": [
+        {
+          "option_text": "GDP Deflator uses a fixed Laspeyres basket revised every five years",
+          "is_correct": false
+        },
+        {
+          "option_text": "GDP Deflator includes imported goods in its overall price-level calculation",
+          "is_correct": false
+        },
+        {
+          "option_text": "GDP Deflator automatically updates its basket with the current production mix",
+          "is_correct": true
+        },
+        {
+          "option_text": "GDP Deflator covers only the manufacturing sector's price movements",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. The GDP Deflator is a Paasche-type index whose basket reflects what the economy currently produces, changing each period as output composition shifts. CPI, by contrast, is a Laspeyres index with a fixed base-period consumer basket — so Option A has the two indices reversed. Option B is also wrong: the GDP Deflator excludes imported goods because imports are not part of domestic production; CPI actually includes imports. Option D is incorrect because the deflator spans the entire economy, not just manufacturing.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:40:23+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_III_MIXED_00012"
+    },
+    {
+      "stem": "Which sequence of adjustments correctly derives Personal Disposable Income (PDI) starting from National Income (NI) in national income accounting?",
+      "options": [
+        {
+          "option_text": "PDI = NI − Corporate taxes − Undistributed profits + Transfer payments − Personal taxes",
+          "is_correct": true
+        },
+        {
+          "option_text": "PDI = NI + Depreciation + Net indirect taxes − Social security contributions",
+          "is_correct": false
+        },
+        {
+          "option_text": "PDI = NI − Net Factor Income from Abroad + Transfer payments + Personal taxes",
+          "is_correct": false
+        },
+        {
+          "option_text": "PDI = NI − Government expenditure + Subsidies − Undistributed corporate profits",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. From NI, subtract corporate profit taxes and retained (undistributed) earnings that never reach households, then add government transfer payments (pensions, unemployment doles) to arrive at Personal Income. Subtracting personal income taxes gives Personal Disposable Income. Option B is wrong because adding depreciation moves toward Gross concepts — NI is already net of depreciation. Option C incorrectly adds personal taxes instead of subtracting them, and NFIA adjustments belong between GDP and GNP, not between NI and PDI.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:40:23+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_III_MIXED_00013"
+    },
+    {
+      "stem": "After the 2015 revision of India's National Account Statistics, which concept officially replaced 'GDP at Factor Cost' as the primary measure for estimating sectoral contributions to output?",
+      "options": [
+        {
+          "option_text": "GDP at current market prices including all net indirect taxes and subsidies",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gross Value Added (GVA) at basic prices, excluding product-specific taxes",
+          "is_correct": true
+        },
+        {
+          "option_text": "Net Value Added (NVA) at factor cost, net of depreciation and indirect taxes",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gross National Product (GNP) at basic prices, including net overseas earnings",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. The 2015 revision adopted GVA at basic prices as the headline sectoral measure. 'Basic prices' = producer price + production subsidies − production taxes, but excludes product taxes (e.g., GST/excise). The new identity is: GDP at Market Price = GVA at Basic Prices + Product Taxes − Product Subsidies. This differs from the old 'factor cost' (which stripped all indirect taxes) and from 'market price' (which includes all taxes). Option A is wrong because GDP at market price includes product taxes, making it the aggregate, not the sectoral building-block. Option C (NVA) introduces a depreciation adjustment not part of this replacement.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-14",
+      "generated_at": "2026-06-14T16:40:23+00:00",
+      "id": "sgk_ECO_NATIONAL_INCOME_III_MIXED_00014"
     }
   ]
 }

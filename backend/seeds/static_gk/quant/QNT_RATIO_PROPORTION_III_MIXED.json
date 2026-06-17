@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-26-qnt-rp3-07",
       "generated_at": "2026-04-26T15:30:00+00:00",
       "id": "sgk_QNT_RATIO_PROPORTION_III_MIXED_00007"
+    },
+    {
+      "stem": "₹8,400 is divided among P, Q, and R such that P's share is twice Q's share, and Q's share is three times R's share. What is R's share?",
+      "options": [
+        {
+          "option_text": "₹1,680 (double the smallest correct share)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,520 (Q's share, mistaken for R's portion)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹840 (one-tenth of the total sum divided)",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹4,200 (exactly half of the total sum)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Let R = x; then Q = 3x and P = 2Q = 6x. Total = 6x + 3x + x = 10x = 8400, giving x = 840. R's share = ₹840. Option B (₹2,520) is Q's share — the common trap of picking the intermediate member of the ratio instead of the smallest.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:35+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_III_MIXED_00008"
+    },
+    {
+      "stem": "The mean proportional between 9 and 25 is p, and the mean proportional between 4 and 49 is q. What is p + q?",
+      "options": [
+        {
+          "option_text": "22 (uses arithmetic mean of all four base numbers)",
+          "is_correct": false
+        },
+        {
+          "option_text": "29 (correct sum of both geometric mean proportionals)",
+          "is_correct": true
+        },
+        {
+          "option_text": "34 (adds all four base numbers and then halves them)",
+          "is_correct": false
+        },
+        {
+          "option_text": "17 (computes only one mean proportional and stops)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Mean proportional between a and b = √(ab). p = √(9 × 25) = √225 = 15; q = √(4 × 49) = √196 = 14; p + q = 29. Option A (22) arises from mistakenly averaging the four bases: (9+25+4+49)/4 ≈ 22, confusing arithmetic mean with the geometric mean concept.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:35+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_III_MIXED_00009"
+    },
+    {
+      "stem": "The volumes of two cubes are in the ratio 8:27. What is the ratio of their total surface areas?",
+      "options": [
+        {
+          "option_text": "8 : 27 (carries the volume ratio directly to area)",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 : 3 (ratio of cube edges — one step short of the answer)",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 : 81 (over-squares by applying fourth-power instead)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 : 9 (squares the edge-length ratio to get area ratio)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Volume ratio a³:b³ = 8:27 → edge ratio a:b = ∛8:∛27 = 2:3. Total surface area = 6a²:6b² = a²:b² = 4:9. Option B (2:3) is the most tempting trap — candidates correctly extract the cube root for edge length but forget to square it for the area step.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:35+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_III_MIXED_00010"
+    },
+    {
+      "stem": "A starts a business investing ₹10,000. After 4 months, B joins with ₹15,000. After another 4 months, C joins with ₹20,000. At year-end the total profit is ₹27,000. What is B's share of profit?",
+      "options": [
+        {
+          "option_text": "₹10,125 (B's correct time-weighted profit share)",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹6,750 (C's correct share — confused with B's portion)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹13,500 (treats only A and B as equal partners, ignoring C)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹9,000 (uses capital invested only, ignoring time duration)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Investment-months: A = 10000×12 = 120000; B = 15000×8 = 120000; C = 20000×4 = 80000. Ratio = 3:3:2, total 8 parts. B's share = 3/8 × 27000 = ₹10,125. Option D (₹9,000) uses only capital ratio 2:3:4 giving B = 3/9 × 27000 = ₹9,000 — the classic error of ignoring the time component in partnership problems.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:35+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_III_MIXED_00011"
+    },
+    {
+      "stem": "Two numbers are in the ratio 5:6. The larger number is increased by 20% and the smaller number is decreased by 10%. What is the new ratio of the two numbers?",
+      "options": [
+        {
+          "option_text": "4 : 7 (mistakenly applies 20% decrease to both numbers)",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 : 4 (reverses which number gets increased vs decreased)",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 : 8 (correct after applying the respective percentages)",
+          "is_correct": true
+        },
+        {
+          "option_text": "9 : 16 (wrongly squares each percentage-change multiplier)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Let numbers = 5k (smaller) and 6k (larger). New smaller = 5k × 0.9 = 4.5k; new larger = 6k × 1.2 = 7.2k. New ratio = 4.5:7.2 = 45:72 = 5:8. Option B (3:4) traps candidates who reverse the operations — applying the decrease to the larger and the increase to the smaller.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:35+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_III_MIXED_00012"
+    },
+    {
+      "stem": "Vessels A, B, and C contain wine-water mixtures in ratios 2:3, 3:2, and 5:1 respectively. Equal volumes are drawn from all three and combined. What is the ratio of wine to water in the resulting mixture?",
+      "options": [
+        {
+          "option_text": "5 : 3 (sums the ratio numerators and denominators directly)",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 : 7 (correct — fraction addition using LCM of denominators)",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 : 1 (copies only the highest wine-concentration vessel)",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 : 2 (reads vessel B's ratio as the final blended outcome)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Taking 1 unit from each: wine = 2/5 + 3/5 + 5/6 = 12/30 + 18/30 + 25/30 = 55/30; water = 3/5 + 2/5 + 1/6 = 18/30 + 12/30 + 5/30 = 35/30. Ratio = 55:35 = 11:7. Option A (5:3) is the notorious shortcut trap — adding numerators (2+3+5=10) and denominators (3+2+1=6) directly fails because the vessel totals (5, 5, 6) are not equal, so fractions must be used.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:35+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_III_MIXED_00013"
+    },
+    {
+      "stem": "The incomes of A, B, and C are in ratio 3:4:5, and their expenditures are in ratio 4:5:6. If A saves exactly one-fourth of his income, what is the ratio of savings of A, B, and C?",
+      "options": [
+        {
+          "option_text": "3 : 4 : 5 (mistakenly treats savings as proportional to income)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 2 : 3 (wrongly assumes every person saves the same fraction)",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 : 19 : 23 (uses arithmetic increments instead of algebra)",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 : 19 : 26 (derived by anchoring on A's given savings fraction)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "Let incomes = 3k, 4k, 5k. A saves 3k/4, so A's expenditure = 9k/4. Expenditure ratio 4:5:6 → 9k/4 = 4m, giving m = 9k/16. B's expenditure = 5m = 45k/16; B's savings = 4k − 45k/16 = 19k/16. C's expenditure = 6m = 54k/16; C's savings = 5k − 54k/16 = 26k/16. A's savings = 12k/16. Ratio = 12:19:26. Option A (3:4:5) is wrong because savings depend on both income and expenditure ratios — they cannot simply mirror the income ratio when expenditure ratios differ.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:35+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_III_MIXED_00014"
     }
   ]
 }

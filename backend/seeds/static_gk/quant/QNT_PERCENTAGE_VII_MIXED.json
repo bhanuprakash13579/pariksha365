@@ -220,6 +220,216 @@
       "generator_tag": "gemini-batch-fix-2026-05-15",
       "generated_at": "2026-05-19T08:44:32+00:00",
       "id": "sgk_QNT_PERCENTAGE_VII_MIXED_00007"
+    },
+    {
+      "stem": "A number is first increased by 20% and then decreased by 20%. What is the net percentage change in the original number?",
+      "options": [
+        {
+          "option_text": "Increases by exactly 4 percent overall",
+          "is_correct": false
+        },
+        {
+          "option_text": "Decreases by exactly 4 percent overall",
+          "is_correct": true
+        },
+        {
+          "option_text": "No net change — the number remains the same",
+          "is_correct": false
+        },
+        {
+          "option_text": "Decreases by exactly 2 percent overall",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Net multiplier = 1.2 × 0.8 = 0.96, so the number reduces by 4%. Option C is the classic trap — successive equal-magnitude +/−% do NOT cancel; the second % applies to a larger base, so the decrease dominates. The formula: net change = −(p²/100) = −(400/100) = −4%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:32+00:00",
+      "id": "sgk_QNT_PERCENTAGE_VII_MIXED_00008"
+    },
+    {
+      "stem": "A man spends 80% of his monthly income. His income rises by 25% while his expenditure rises by 10%. By what percentage do his savings increase?",
+      "options": [
+        {
+          "option_text": "Savings increase by 70 percent monthly",
+          "is_correct": false
+        },
+        {
+          "option_text": "Savings increase by 85 percent monthly",
+          "is_correct": true
+        },
+        {
+          "option_text": "Savings increase by 15 percent monthly",
+          "is_correct": false
+        },
+        {
+          "option_text": "Savings increase by 95 percent monthly",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Let income = 100, so expenditure = 80 and savings = 20. New income = 125, new expenditure = 80 × 1.10 = 88, new savings = 37. % increase = (37 − 20)/20 × 100 = 85%. Option C (15%) is wrong — it naively subtracts the two percentage rates (25 − 10) without accounting for the different bases of income and expenditure.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:32+00:00",
+      "id": "sgk_QNT_PERCENTAGE_VII_MIXED_00009"
+    },
+    {
+      "stem": "A shopkeeper marks up an article by 40% above its cost price and then offers two successive discounts of 10% each on the marked price. What is the net profit or loss percentage on the cost price?",
+      "options": [
+        {
+          "option_text": "Net loss of 13.4 percent on cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net profit of 13.4 percent on cost price",
+          "is_correct": true
+        },
+        {
+          "option_text": "Net profit of 20 percent on cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net profit of 16.6 percent on cost price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Let CP = 100, so MP = 140. After first 10% discount: 140 × 0.9 = 126. After second 10% discount: 126 × 0.9 = 113.4. Profit = 13.4%. Option C (20%) is wrong — candidates mistakenly subtract two 10% discounts (= 20%) from 40% markup linearly; the correct two successive discounts = 1 − 0.81 = 19% off MP, not 20% off.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:32+00:00",
+      "id": "sgk_QNT_PERCENTAGE_VII_MIXED_00010"
+    },
+    {
+      "stem": "A vessel contains spirit and water in ratio 4:1. When 10 litres of water is added, the ratio becomes 2:1. What percentage of the original mixture was spirit?",
+      "options": [
+        {
+          "option_text": "Spirit was 75 percent of the original mixture",
+          "is_correct": false
+        },
+        {
+          "option_text": "Spirit was 80 percent of the original mixture",
+          "is_correct": true
+        },
+        {
+          "option_text": "Spirit was 60 percent of the original mixture",
+          "is_correct": false
+        },
+        {
+          "option_text": "Spirit was 85 percent of the original mixture",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Original: spirit = 4x, water = x. After adding water: 4x/(x + 10) = 2/1 → 4x = 2x + 20 → x = 10. So spirit = 40, original total = 50. Spirit% = 40/50 × 100 = 80%. Option A (75%) is wrong — it corresponds to a 3:1 ratio, which is the ratio after adding water, not before.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:32+00:00",
+      "id": "sgk_QNT_PERCENTAGE_VII_MIXED_00011"
+    },
+    {
+      "stem": "B's annual salary is 20% less than A's annual salary. By what percentage is A's salary more than B's salary?",
+      "options": [
+        {
+          "option_text": "A's salary is 20 percent more than B's salary",
+          "is_correct": false
+        },
+        {
+          "option_text": "A's salary is 25 percent more than B's salary",
+          "is_correct": true
+        },
+        {
+          "option_text": "A's salary is 16.67 percent more than B's salary",
+          "is_correct": false
+        },
+        {
+          "option_text": "A's salary is 30 percent more than B's salary",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Let A = 100, then B = 80. A exceeds B by 20, and percentage excess = 20/80 × 100 = 25%. Option A (20%) is the most common error — candidates apply the same 20% in reverse without adjusting the base from A to B. The base changes from A's salary to B's salary, making the percentage larger.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:32+00:00",
+      "id": "sgk_QNT_PERCENTAGE_VII_MIXED_00012"
+    },
+    {
+      "stem": "In a three-candidate election, 8% of registered voters abstained. Among valid votes, Candidate A got 45%, Candidate B got 30%, and Candidate C got the rest. If A's winning margin over C was 5,520 votes, how many voters were registered?",
+      "options": [
+        {
+          "option_text": "28,000 voters were registered for the election",
+          "is_correct": false
+        },
+        {
+          "option_text": "30,000 voters were registered for the election",
+          "is_correct": true
+        },
+        {
+          "option_text": "32,000 voters were registered for the election",
+          "is_correct": false
+        },
+        {
+          "option_text": "27,600 voters were registered for the election",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Valid votes = 92% of N. C got 100 − 45 − 30 = 25% of valid votes. Margin = (45 − 25)% of valid votes = 20% of 0.92N = 5,520. So 0.184N = 5,520 → N = 30,000. Option D (27,600) is the calculated number of valid votes cast — a classic trap where candidates stop one step early and report valid votes instead of total registered voters.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:32+00:00",
+      "id": "sgk_QNT_PERCENTAGE_VII_MIXED_00013"
+    },
+    {
+      "stem": "A city's population grew by 10% in Year 1, fell by 10% in Year 2, and grew by 20% in Year 3. If the population at the end of Year 3 is 23,760, what was the city's population at the start of Year 1?",
+      "options": [
+        {
+          "option_text": "Initial population was 19,800 residents",
+          "is_correct": false
+        },
+        {
+          "option_text": "Initial population was 20,000 residents",
+          "is_correct": true
+        },
+        {
+          "option_text": "Initial population was 22,000 residents",
+          "is_correct": false
+        },
+        {
+          "option_text": "Initial population was 21,000 residents",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Correct multiplier chain: P × 1.10 × 0.90 × 1.20 = P × 1.188. So P = 23,760 / 1.188 = 20,000. Option A (19,800) is wrong — candidates add percentages algebraically (+10 − 10 + 20 = +20%) giving P = 23,760/1.20 = 19,800; this ignores compounding. The key insight: 10% up then 10% down yields only 99% of original (net −1%), not 100%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:41:32+00:00",
+      "id": "sgk_QNT_PERCENTAGE_VII_MIXED_00014"
     }
   ]
 }

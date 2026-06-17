@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Number Series",
+  "topic_code": "QNT_NUMBER_SERIES_MIXED",
+  "description": "Covers Difference of squares, multiplication series.",
+  "questions": [
+    {
+      "stem": "Find the missing number in the series: 2, 5, 10, 17, 26, ?",
+      "options": [
+        {
+          "option_text": "37",
+          "is_correct": true
+        },
+        {
+          "option_text": "35",
+          "is_correct": false
+        },
+        {
+          "option_text": "34",
+          "is_correct": false
+        },
+        {
+          "option_text": "39",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: Let's check the differences between consecutive terms:\n5 - 2 = 3\n10 - 5 = 5\n17 - 10 = 7\n26 - 17 = 9\nThe differences are consecutive odd numbers: 3, 5, 7, 9.\nThe next difference must be 11.\nTherefore, 26 + 11 = 37.\nALTERNATIVE LOGIC: The series is based on squares + 1.\n1^2 + 1 = 2\n2^2 + 1 = 5\n3^2 + 1 = 10\n4^2 + 1 = 17\n5^2 + 1 = 26\n6^2 + 1 = 37.\nDECOY BUSTING: Guessing 35 assumes a jump of 9 again.\nEXAM INSIGHT: Always calculate the first-level differences. If they don't show a clear pattern, calculate the second-level differences (differences of the differences).",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number Series",
+      "topic_code": "QNT_NUMBER_SERIES_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_QNT_NUMBER_SERIES_MIXED_001"
+    },
+    {
+      "stem": "Find the missing number in the series: 8, 28, 116, 584, ?",
+      "options": [
+        {
+          "option_text": "3508",
+          "is_correct": true
+        },
+        {
+          "option_text": "3504",
+          "is_correct": false
+        },
+        {
+          "option_text": "3500",
+          "is_correct": false
+        },
+        {
+          "option_text": "3512",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: Let's look for a multiplication pattern, as the numbers are growing rapidly.\n8 * 3 + 4 = 28\n28 * 4 + 4 = 116\n116 * 5 + 4 = 584\nThe pattern is: multiply by (n) and add 4, where n increases by 1 each time.\nNext step: multiply by 6 and add 4.\n584 * 6 + 4 = 3504 + 4 = 3508.\nDECOY BUSTING: 3504 is the result if you forget to add the final 4.\nEXAM INSIGHT: Rapid growth in a series is a dead giveaway that multiplication or exponents are involved. Slow growth means addition/subtraction.",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number Series",
+      "topic_code": "QNT_NUMBER_SERIES_MIXED",
+      "difficulty": "hard",
+      "effort_tier": "tier2",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_QNT_NUMBER_SERIES_MIXED_002"
+    },
+    {
+      "stem": "Which number replaces the question mark in the series: 3, 6, 11, 18, 27, ?",
+      "options": [
+        {
+          "option_text": "34, completing the series 3,6,11,18,27,34",
+          "is_correct": false
+        },
+        {
+          "option_text": "38, completing the series 3,6,11,18,27,38",
+          "is_correct": true
+        },
+        {
+          "option_text": "36, completing the series 3,6,11,18,27,36",
+          "is_correct": false
+        },
+        {
+          "option_text": "40, completing the series 3,6,11,18,27,40",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "The differences between consecutive terms are 3, 5, 7, 9 — consecutive odd numbers, each increasing by 2. The next difference must be 11, giving 27 + 11 = 38. Option D (40) is wrong because it assumes the difference jumps by 4 (to 13) rather than by 2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:41:49+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_MIXED_00003"
+    },
+    {
+      "stem": "Find the missing term in the series: 4, 12, 36, 108, 324, ?",
+      "options": [
+        {
+          "option_text": "648 — if common ratio changes to ×2 at last step",
+          "is_correct": false
+        },
+        {
+          "option_text": "1024 — following a pattern of powers of two here",
+          "is_correct": false
+        },
+        {
+          "option_text": "972 — consistent multiplication by 3 throughout",
+          "is_correct": true
+        },
+        {
+          "option_text": "1296 — if the ratio increases to ×4 at last step",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Each term is obtained by multiplying the previous by 3: 4×3=12, 12×3=36, 36×3=108, 108×3=324, 324×3=972. Option A (648) is the most common wrong answer, applying a ratio of ×2 instead of the consistent ×3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:41:49+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_MIXED_00004"
+    },
+    {
+      "stem": "Identify the missing number in the series: 2, 9, 28, 65, 126, ?",
+      "options": [
+        {
+          "option_text": "217 — each term equals n³+1 for n = 1,2,3,4...",
+          "is_correct": true
+        },
+        {
+          "option_text": "196 — if pattern follows n² + n formula here",
+          "is_correct": false
+        },
+        {
+          "option_text": "210 — sum of the 5th and 6th square numbers",
+          "is_correct": false
+        },
+        {
+          "option_text": "215 — following an arithmetic second difference",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Each term follows n³+1: 1³+1=2, 2³+1=9, 3³+1=28, 4³+1=65, 5³+1=126, so 6³+1=217. Option D (215) is the trap for candidates who notice near-cubic growth but apply second-difference arithmetic incorrectly instead of recognising the cube pattern.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:41:49+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_MIXED_00005"
+    },
+    {
+      "stem": "What is the missing term in the series: 3, 7, 6, 14, 9, 21, 12, ?",
+      "options": [
+        {
+          "option_text": "24, as the arithmetic sequence gap increases here",
+          "is_correct": false
+        },
+        {
+          "option_text": "30, by adding +9 to the previous odd-position term",
+          "is_correct": false
+        },
+        {
+          "option_text": "35, if both sequences merge into a single AP here",
+          "is_correct": false
+        },
+        {
+          "option_text": "28, from the even-position sub-series with d=7",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "This is two interleaved APs: odd-position terms (3, 6, 9, 12) have d=3, and even-position terms (7, 14, 21, ?) have d=7. The 8th term is the 4th even-position term: 21+7=28. Option B (30) is the common error — it adds 9 (the odd-series increment) to the even-position term 21.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:41:49+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_MIXED_00006"
+    },
+    {
+      "stem": "Find the next term in the series: 5, 10, 30, 120, 600, ?",
+      "options": [
+        {
+          "option_text": "2400 — multiplying 600 by factor 4 at this stage",
+          "is_correct": false
+        },
+        {
+          "option_text": "3600 — multiplying factors increase by 1 each time",
+          "is_correct": true
+        },
+        {
+          "option_text": "3000 — multiplying 600 by factor 5 again here",
+          "is_correct": false
+        },
+        {
+          "option_text": "4200 — adding 600 to the product of all previous",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "The multiplying factor increases by 1 at each step: ×2, ×3, ×4, ×5, ×6. So 5×2=10, 10×3=30, 30×4=120, 120×5=600, 600×6=3600. Option C (3000) is the classic trap — it repeats ×5 instead of advancing the factor to ×6.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:41:49+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_MIXED_00007"
+    },
+    {
+      "stem": "What replaces the question mark in the series: 7, 8, 18, 57, 232, ?",
+      "options": [
+        {
+          "option_text": "928 — obtained by multiplying previous term by 4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1170 — following second-order recurrence pattern",
+          "is_correct": false
+        },
+        {
+          "option_text": "1160 — applying the rule ×(n-1) + constant offset",
+          "is_correct": false
+        },
+        {
+          "option_text": "1165 — applying the rule ×n + n at each step here",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "The rule is (previous term)×n + n, where n starts at 1 and increments each step: 7×1+1=8, 8×2+2=18, 18×3+3=57, 57×4+4=232, 232×5+5=1165. Option C (1160) is the closest distractor — it correctly identifies the multiplicative part but omits the additive +n component.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:41:49+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_MIXED_00008"
+    },
+    {
+      "stem": "Identify the missing number in the series: 4, 5, 9, 18, 34, 59, ?",
+      "options": [
+        {
+          "option_text": "84 — if differences follow an AP with d=9 here",
+          "is_correct": false
+        },
+        {
+          "option_text": "108 — if next difference follows 7² = 49 instead",
+          "is_correct": false
+        },
+        {
+          "option_text": "95 — successive differences are perfect squares",
+          "is_correct": true
+        },
+        {
+          "option_text": "90 — if the gap between differences is constant",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "The first differences between consecutive terms are 1, 4, 9, 16, 25 — the perfect squares 1², 2², 3², 4², 5² in order. The next difference must be 6²=36, giving 59+36=95. Option B (108) is the shrewdest trap — it skips to 7²=49, which is wrong because the squares must be applied consecutively without gaps.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:41:49+00:00",
+      "id": "sgk_QNT_NUMBER_SERIES_MIXED_00009"
+    }
+  ]
+}

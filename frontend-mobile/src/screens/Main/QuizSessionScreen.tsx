@@ -31,7 +31,7 @@ interface QuizQuestion {
 }
 
 export default function QuizSessionScreen({ navigation, route }: any) {
-    const { subject, limit = 10, title = 'Daily Quiz', moduleSlug } = route.params || {};
+    const { subject, limit = 10, title = 'Daily Quiz', moduleSlug, weakTopicMode = false } = route.params || {};
 
     const [questions, setQuestions] = useState<QuizQuestion[]>([]);
     const [currentIdx, setCurrentIdx] = useState(0);
@@ -55,6 +55,8 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                 let res;
                 if (moduleSlug) {
                     res = await PrivateModuleAPI.getQuiz(moduleSlug, subject, limit);
+                } else if (weakTopicMode) {
+                    res = await QuizAPI.getWeakTopicQuiz(limit);
                 } else {
                     res = await QuizAPI.getDailyQuiz(subject, limit);
                 }
@@ -66,7 +68,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
             }
         };
         fetchQuiz();
-    }, [subject, limit, moduleSlug]);
+    }, [subject, limit, moduleSlug, weakTopicMode]);
 
     const selectOption = (optionIndex: number) => {
         if (submitted) return;

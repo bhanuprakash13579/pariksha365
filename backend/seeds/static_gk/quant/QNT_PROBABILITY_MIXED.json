@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "subject": "Quant",
+  "subject": "Quantitative Aptitude",
   "topic": "Probability — mixed tiers",
   "topic_code": "QNT_PROBABILITY_MIXED",
   "description": "Dice, cards, coins, urn problems",
@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-23-qnt-prob-07",
       "generated_at": "2026-04-23T06:40:00+00:00",
       "id": "sgk_QNT_PROBABILITY_MIXED_00007"
+    },
+    {
+      "stem": "A bag contains 3 red, 4 blue, and 5 yellow balls. One ball is drawn at random. What is the probability that the ball drawn is NOT yellow?",
+      "options": [
+        {
+          "option_text": "5/12 — the probability of drawing a yellow ball, not its complement",
+          "is_correct": false
+        },
+        {
+          "option_text": "7/12 — since 7 of the 12 balls in the bag are not yellow",
+          "is_correct": true
+        },
+        {
+          "option_text": "7/11 — dividing non-yellow count by total after removing one yellow",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/7 — ratio of yellow balls to non-yellow balls in the bag",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Total balls = 3+4+5 = 12. Non-yellow balls = 3+4 = 7. P(not yellow) = 7/12. Option A (5/12) is the probability of drawing a yellow ball — a complementary confusion. Option C (7/11) wrongly subtracts one yellow ball from the total before the draw, misapplying conditional-probability logic.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:38+00:00",
+      "id": "sgk_QNT_PROBABILITY_MIXED_00008"
+    },
+    {
+      "stem": "A card is drawn at random from a well-shuffled deck of 52 cards. What is the probability that the card bears an ODD number (Aces are NOT counted as odd)?",
+      "options": [
+        {
+          "option_text": "5/13 — if Ace is also treated as an odd-numbered card",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/13 — mistakenly omitting 7 from the list of odd numbers",
+          "is_correct": false
+        },
+        {
+          "option_text": "4/13 — counting 3, 5, 7, 9 across all four suits (16 cards)",
+          "is_correct": true
+        },
+        {
+          "option_text": "2/13 — limiting the count to only red-suited odd-numbered cards",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Odd-numbered cards (Ace excluded): 3, 5, 7, 9 — each in 4 suits = 16 cards. P = 16/52 = 4/13. Option A (5/13) is the classic trap of counting Ace as odd, giving 5×4=20 cards. Option B (3/13) arises when a student forgets to include 7, leaving only three odd values.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:38+00:00",
+      "id": "sgk_QNT_PROBABILITY_MIXED_00009"
+    },
+    {
+      "stem": "A committee of 2 members is to be selected at random from a group of 5 men and 3 women. What is the probability that the committee includes AT LEAST ONE woman?",
+      "options": [
+        {
+          "option_text": "9/14 — using complementary method: 1 minus P(no woman selected)",
+          "is_correct": true
+        },
+        {
+          "option_text": "3/8 — direct probability of selecting a woman in a single draw",
+          "is_correct": false
+        },
+        {
+          "option_text": "15/28 — counting only committees with exactly one woman",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/28 — probability of selecting exactly two women on the committee",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Total ways = C(8,2) = 28. All-male committees = C(5,2) = 10. P(at least 1 woman) = 1 − 10/28 = 18/28 = 9/14. Option C (15/28) is the most tempting error — it counts only exact-one-woman cases: C(5,1)×C(3,1) = 15, ignoring the two-women case C(3,2) = 3, thus giving 15/28 instead of 18/28.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:38+00:00",
+      "id": "sgk_QNT_PROBABILITY_MIXED_00010"
+    },
+    {
+      "stem": "Two unbiased dice are thrown simultaneously. What is the probability that the ABSOLUTE DIFFERENCE between the two numbers shown is exactly 2?",
+      "options": [
+        {
+          "option_text": "5/18 — probability that the absolute difference equals 1, not 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/9 — counting only pairs where the smaller number appears first",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/6 — applying a single-die probability formula to two dice",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/9 — all 8 ordered pairs with absolute difference of exactly 2",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Ordered pairs with |a−b|=2: (1,3),(3,1),(2,4),(4,2),(3,5),(5,3),(4,6),(6,4) — exactly 8 of 36. P = 8/36 = 2/9. Option A (5/18) is the probability for |a−b|=1, which yields 10 ordered pairs — the most frequent error from misidentifying the target difference. Option B (1/9) forgets to count both orderings of each pair.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:38+00:00",
+      "id": "sgk_QNT_PROBABILITY_MIXED_00011"
+    },
+    {
+      "stem": "A box contains 10 bulbs, of which 3 are defective. Two bulbs are drawn one by one WITHOUT replacement. Given that the FIRST bulb drawn is defective, what is the probability that the SECOND bulb is also defective?",
+      "options": [
+        {
+          "option_text": "3/10 — using the original proportion without updating the sample",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/9 — 2 defective bulbs remain among 9 after the first is drawn",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/15 — computing the joint probability that both are defective",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/5 — keeping the original total of 10 in the denominator",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "After removing the first defective bulb, 9 bulbs remain with exactly 2 still defective. Conditional probability = 2/9. Option A (3/10) is the unconditional probability of picking a defective bulb — it ignores the given condition. Option C (1/15) is the joint probability C(3,2)/C(10,2) = 3/45 = 1/15, which answers a different question.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:38+00:00",
+      "id": "sgk_QNT_PROBABILITY_MIXED_00012"
+    },
+    {
+      "stem": "The probabilities that students A, B, and C each independently pass an examination are 1/2, 1/3, and 1/4 respectively. What is the probability that EXACTLY TWO of the three students pass?",
+      "options": [
+        {
+          "option_text": "1/24 — probability that all three students pass simultaneously",
+          "is_correct": false
+        },
+        {
+          "option_text": "7/24 — probability that at least two of the three students pass",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/4 — summing three mutually exclusive two-pass combinations",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/8 — counting only the case where both A and B pass the exam",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Three mutually exclusive cases: P(A∩B∩C') = (1/2)(1/3)(3/4) = 3/24; P(A∩B'∩C) = (1/2)(2/3)(1/4) = 2/24; P(A'∩B∩C) = (1/2)(1/3)(1/4) = 1/24. Total = 6/24 = 1/4. Option B (7/24) is the probability that at least two pass — it adds the all-three-pass case (1/24) to the exact-two total, a classic 'at least' vs 'exactly' confusion.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:38+00:00",
+      "id": "sgk_QNT_PROBABILITY_MIXED_00013"
+    },
+    {
+      "stem": "Box A contains 3 red and 5 white balls; Box B contains 4 red and 2 white balls. A fair coin is tossed: heads → draw from Box A, tails → draw from Box B. A red ball is drawn. What is the probability it came from Box B?",
+      "options": [
+        {
+          "option_text": "16/25 — Bayes' theorem applied correctly to the red-ball evidence",
+          "is_correct": true
+        },
+        {
+          "option_text": "9/25 — the posterior probability that the red ball came from Box A",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2 — the prior probability before observing the ball's colour",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/3 — Box B's own conditional probability without normalising",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "P(Red|A)=3/8, P(Red|B)=2/3, each box chosen with P=1/2. Total P(Red) = (3/8)(1/2)+(2/3)(1/2) = 3/16+1/3 = 9/48+16/48 = 25/48. Bayes: P(B|Red) = [(2/3)(1/2)]÷(25/48) = (1/3)×(48/25) = 16/25. Option B (9/25) is P(Box A|Red), the complementary posterior. Option D (2/3) is Box B's likelihood before normalising across both hypotheses.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:38+00:00",
+      "id": "sgk_QNT_PROBABILITY_MIXED_00014"
     }
   ]
 }

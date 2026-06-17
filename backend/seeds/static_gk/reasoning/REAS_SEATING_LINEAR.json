@@ -202,6 +202,216 @@
       "generator_tag": "claude-opus-2026-04-21-reas-sl-06",
       "generated_at": "2026-04-21T12:30:00+00:00",
       "id": "sgk_REAS_SEATING_LINEAR_00006"
+    },
+    {
+      "stem": "Five engineers — Anil, Bela, Charu, Dev, Esha — sit in a row facing north. Charu sits at the rightmost seat. Anil sits immediately to the left of Charu. Bela sits 2nd from the left end. Dev does not sit adjacent to Anil. Who sits at the leftmost seat?",
+      "options": [
+        {
+          "option_text": "Esha is at the leftmost seat",
+          "is_correct": false
+        },
+        {
+          "option_text": "Dev is at the leftmost seat",
+          "is_correct": true
+        },
+        {
+          "option_text": "Bela is at the leftmost seat",
+          "is_correct": false
+        },
+        {
+          "option_text": "Anil is at the leftmost seat",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Charu→5, Anil→4, Bela→2. Positions 1 and 3 remain for Dev and Esha. Anil is at position 4; its neighbours are positions 3 and 5. Since Dev cannot be adjacent to Anil, Dev ≠ 3, so Dev sits at position 1 (leftmost) and Esha at 3. Option A is wrong because Esha is placed at position 3, not position 1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:45:42+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00007"
+    },
+    {
+      "stem": "In a row of persons, Rahul is 8th from the left end and 13th from the right end. Five new persons then join and all sit to the right of Rahul's current position. What is Rahul's new position from the right end?",
+      "options": [
+        {
+          "option_text": "Rahul is now 13th from the right end",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rahul is now 18th from the right end",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rahul is now 8th from the right end",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rahul is now 15th from the right end",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Original row: 8 + 13 − 1 = 20 persons; 12 persons are to Rahul's right. Five new persons sit to his right, making 12 + 5 = 17 persons on his right. New rank from right = 17 + 1 = 18. Option A is wrong because it ignores the five additions entirely. Option D (15th) is a common error of adding 5 to Rahul's own left-rank instead of to the count of persons to his right.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:45:42+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00008"
+    },
+    {
+      "stem": "Seven committee members — Harish, Inder, Jagat, Kiran, Lata, Mala, Navin — are seated in a single row. Jagat sits at one extreme end. Inder is 3rd to the right of Jagat. Kiran is immediately to the left of Mala. Harish sits between Inder and Kiran. Navin sits to the left of Lata in the two remaining positions. Who sits immediately to the right of Harish?",
+      "options": [
+        {
+          "option_text": "Kiran sits immediately to the right of Harish",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mala sits immediately to the right of Harish",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lata sits immediately to the right of Harish",
+          "is_correct": false
+        },
+        {
+          "option_text": "Inder sits immediately to the right of Harish",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "If Jagat were at position 7, Inder would need position 10 — impossible. So Jagat→1, Inder→4. For Harish to sit between Inder(4) and Kiran, Kiran must be to the right of Inder: Harish→5, Kiran→6, Mala→7. Remaining positions 2 and 3 go to Navin and Lata (Navin left): Navin→2, Lata→3. Full row: Jagat Navin Lata Inder Harish Kiran Mala. Harish's immediate right is Kiran. Option B (Mala) is wrong — Mala is at position 7, one seat beyond Kiran, not adjacent to Harish.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:45:42+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00009"
+    },
+    {
+      "stem": "In a row of 10 persons, Usha is 4th from the left end and Vijay is 3rd from the right end. Vijay then shifts 2 places to the left. How many persons now sit between Usha and Vijay?",
+      "options": [
+        {
+          "option_text": "No person sits between Usha and Vijay now",
+          "is_correct": false
+        },
+        {
+          "option_text": "Exactly 1 person sits between Usha and Vijay",
+          "is_correct": true
+        },
+        {
+          "option_text": "Exactly 2 persons sit between Usha and Vijay",
+          "is_correct": false
+        },
+        {
+          "option_text": "Exactly 3 persons sit between Usha and Vijay",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Vijay's original position from left = 10 − 3 + 1 = 8. After shifting 2 places left, Vijay is at position 6. Usha is at position 4. The only position strictly between 4 and 6 is position 5, so exactly 1 person sits between them. Option C (2 persons) is the most common error: candidates compute 6 − 4 = 2 without subtracting 1 for the 'strictly between' count.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:45:42+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00010"
+    },
+    {
+      "stem": "Six persons — Farhan, Geeta, Hari, Ishaan, Jaya, Kavya — are seated in a row. Farhan is 2nd from the left end. Geeta is 3rd from the right end. Ishaan is immediately to the right of Geeta. Exactly two persons sit between Geeta and Hari. Kavya does not sit adjacent to Farhan. What is Jaya's position from the right end?",
+      "options": [
+        {
+          "option_text": "Jaya is seated 2nd from the right end",
+          "is_correct": false
+        },
+        {
+          "option_text": "Jaya is seated 3rd from the right end",
+          "is_correct": false
+        },
+        {
+          "option_text": "Jaya is seated 4th from the right end",
+          "is_correct": true
+        },
+        {
+          "option_text": "Jaya is seated 5th from the right end",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Farhan→2; Geeta is 3rd from right in a 6-seat row = position 4; Ishaan→5. Two persons between Geeta(4) and Hari means a gap of 3: Hari at 1 or 7, so Hari→1. Remaining seats 3 and 6 for Jaya and Kavya. Kavya cannot be adjacent to Farhan(2), so Kavya ≠ 3; Kavya→6, Jaya→3. Position 3 from left in a 6-seat row = 6 − 3 + 1 = 4th from right. Option B (3rd from right) is the classic error of mistaking the left-rank for the right-rank without applying the conversion formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:45:42+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00011"
+    },
+    {
+      "stem": "Nine persons P, Q, R, S, T, U, V, W, X sit in a row. P is 5th from the left end. W is at the right end. S is 2nd to the left of W. V is immediately to the right of P. Q is 3rd to the right of T. R is immediately to the left of Q. U and X fill the two remaining positions with U to the left of X. Who are the immediate left and immediate right neighbours of P, respectively?",
+      "options": [
+        {
+          "option_text": "Q on the immediate left and V on the immediate right",
+          "is_correct": true
+        },
+        {
+          "option_text": "R on the immediate left and V on the immediate right",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q on the immediate left and S on the immediate right",
+          "is_correct": false
+        },
+        {
+          "option_text": "T on the immediate left and V on the immediate right",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Fixed placements: P→5, W→9, S→7, V→6. Remaining slots {1,2,3,4,8} for Q,R,T,U,X. Q = T+3 and R = T+2 must all fall in this set. Testing T=1: R=3, Q=4 — both free. U and X fill {2,8}: U→2, X→8. Full row: T(1) U(2) R(3) Q(4) P(5) V(6) S(7) X(8) W(9). P's immediate left neighbour is Q(4) and immediate right is V(6). Option B is wrong because R is at position 3, two seats to the left of P, not adjacent. Option C is wrong because S is at position 7, two seats to the right of P.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:45:42+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00012"
+    },
+    {
+      "stem": "Ten persons — A, B, C, D, E, F, G, H, I, J — sit in a row (positions 1–10, left to right). G is at the leftmost position. A is at an odd-numbered position but not at positions 1, 3, or 9. B is exactly 3 positions to the left of A. C is immediately to the right of B. F is immediately to the left of A. D is 4th from the right end. E sits adjacent to D, on the side of D toward the right end. H, I, J fill the remaining positions in that left-to-right order. Who sits immediately to the left of D?",
+      "options": [
+        {
+          "option_text": "H sits immediately to the left of D",
+          "is_correct": true
+        },
+        {
+          "option_text": "A sits immediately to the left of D",
+          "is_correct": false
+        },
+        {
+          "option_text": "F sits immediately to the left of D",
+          "is_correct": false
+        },
+        {
+          "option_text": "I sits immediately to the left of D",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is odd and not 1, 3, or 9, so A ∈ {5, 7}. If A=7: B=4, C=5, F=6; D (4th from right in 10 seats) = position 7 = A — direct conflict. So A=5, B=2, C=3, F=4. With G=1, positions {1,2,3,4,5} are filled. D = 10 − 4 + 1 = position 7; E = position 8 (adjacent to D toward right end). Remaining positions {6, 9, 10} for H, I, J in left-to-right order: H→6, I→9, J→10. D is at position 7; its immediate left is position 6 = H. Option B is wrong because A is at position 5, two seats away from D, not adjacent.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:45:42+00:00",
+      "id": "sgk_REAS_SEATING_LINEAR_00013"
     }
   ]
 }

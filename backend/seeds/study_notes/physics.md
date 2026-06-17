@@ -129,7 +129,7 @@ The commercial unit of electrical energy is 1 kilowatt-hour (kWh) = 1 unit on yo
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["SI UNITS"]:::root
     R --> B["7 Base SI Units"]:::key
     R --> D["Key Derived Units"]:::key
@@ -154,6 +154,12 @@ flowchart TD
 - Governed everything from cricket balls to rockets.
 
 - Refined by Einstein for extreme speeds (relativity) and quantum scales.
+
+<div class="keypoint">
+
+**Quick Recall — 3 Laws in 3 words:** Inertia | F=ma | Reaction. Every exam scenario maps to exactly one of these. "Lurching / jerking" = 1st Law. "Greater force = greater push" = 2nd Law. "Rocket / gun / swimming" = 3rd Law.
+
+</div>
 
 ### First Law — Law of Inertia
 
@@ -282,6 +288,18 @@ Third Law applications that appear in exams: **rocket propulsion** (gas pushed b
 
 </div>
 
+<div class="keypoint">
+
+**Analogy:** The Third Law is like clapping — your left hand hits the right hand with exactly the same force the right hand hits the left, but both hands feel it. The forces are equal and opposite but act on different objects — just like rocket gas and rocket body.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** Newton's Third Law says the reaction force is equal and opposite — but students often think the two forces cancel. They CANNOT cancel because they act on **different objects**. A book on a table: book pushes table down (action), table pushes book up (reaction). These don't cancel — they act on different bodies.
+
+</div>
+
 ### Equations of Motion (Constant Acceleration)
 
 - v = u + at
@@ -294,7 +312,7 @@ Where: u = initial velocity, v = final velocity, a = acceleration, t = time, s =
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["NEWTON'S LAWS OF MOTION"]:::root
     R --> L1["1st Law: Inertia"]:::key
     R --> L2["2nd Law: F = ma"]:::key
@@ -351,7 +369,7 @@ Escape velocity from Earth = **11.2 km/s** (~40,300 km/h). This is the minimum s
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["GRAVITATION"]:::root
     R --> UG["Universal Gravitation"]:::key
     R --> EG["Earth's Gravity (g)"]:::key
@@ -403,7 +421,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["WORK, ENERGY, POWER"]:::root
     R --> WK["Work"]:::key
     R --> EN["Energy Types"]:::key
@@ -460,7 +478,7 @@ Ice floats on water — this is anomalous expansion. Water expands on freezing (
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["PRESSURE, FLUIDS, BUOYANCY"]:::root
     R --> PR["Pressure"]:::key
     R --> AR["Archimedes Principle"]:::key
@@ -515,7 +533,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["SURFACE TENSION, VISCOSITY, CAPILLARITY"]:::root
     R --> ST["Surface Tension"]:::key
     R --> VI["Viscosity"]:::key
@@ -548,7 +566,7 @@ Absolute zero (0 K = −273.15 °C) — theoretically the coldest possible tempe
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["TEMPERATURE SCALES"]:::root
     R --> SC["3 Main Scales"]:::key
     R --> CO["Conversions"]:::proc
@@ -581,7 +599,7 @@ The Sun's heat reaches Earth through the vacuum of space — this is radiation (
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["HEAT TRANSFER"]:::root
     R --> CO["Conduction"]:::key
     R --> CV["Convection"]:::key
@@ -619,7 +637,7 @@ Steam burns are worse than boiling water burns at the same 100 °C — because s
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["SPECIFIC HEAT AND LATENT HEAT"]:::root
     R --> SH["Specific Heat Capacity"]:::key
     R --> LH["Latent Heat"]:::key
@@ -656,7 +674,7 @@ A refrigerator moves heat from cold to hot — but only by consuming electricity
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["LAWS OF THERMODYNAMICS"]:::root
     R --> Z["Zeroth Law"]:::key
     R --> F["First Law"]:::key
@@ -748,6 +766,18 @@ flowchart TD
 
 **Speed increases with temperature** (in air, ~0.6 m/s per °C rise).
 
+<div class="mnemonic">
+
+**"Soldiers Lightly Go"** — **S**olid → **L**iquid → **G**as: speed of sound decreases in this order. Solid is fastest because particles are packed tightly and vibrations transfer instantly.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** Sound travels FASTEST in solids, SLOWEST in gases — opposite of what many students assume. "Sound must travel faster in open air (gas) than in dense iron (solid)" is wrong. Iron: ~5000 m/s; Air: 343 m/s. Denser and more elastic medium = faster sound.
+
+</div>
+
 ### Frequency Ranges
 
 | Range | Frequency | Who uses it |
@@ -786,7 +816,7 @@ Echo needs a minimum distance of **17 metres** between you and the reflecting su
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["SOUND"]:::root
     R --> NA["Nature of Sound"]:::key
     R --> SP["Speed in Different Media"]:::key
@@ -883,6 +913,18 @@ Lens formula: 1/v − 1/u = 1/f. Power of lens: P = 1/f (metres). Unit: dioptre 
 | Presbyopia | Eye lens stiffens with age; cannot adjust | Bifocal lens |
 | Astigmatism | Cornea unevenly curved | Cylindrical lens |
 | Cataract | Lens becomes opaque | Surgery to replace lens |
+
+<div class="keypoint">
+
+**Exam shortcut — Vision defects in 4 words:** Myopia = **Concave** | Hypermetropia = **Convex**. Quick memory: **My Cave** (Myopia → Concave) and **Hyper Vex** (Hypermetropia → Convex). Concave diverges light so the image moves back onto the retina. Convex converges light so the image moves forward onto the retina.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "Concave lens is used to correct which defect?" — Answer is **Myopia** (near-sighted, cannot see far). Many students mix this up and write Hypermetropia. Use: **Concave = Cannot see far = Myopia**. Convex = Hypermetropia (cannot see near). Examiners set the question both ways.
+
+</div>
 
 <div style="margin: 10pt 0; text-align: center;">
 
@@ -1035,7 +1077,7 @@ Radio → Microwaves → Infrared → Visible light → Ultraviolet → X-rays �
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["LIGHT AND OPTICS"]:::root
     R --> NA["Nature of Light"]:::key
     R --> RE["Reflection + Refraction"]:::key
@@ -1106,7 +1148,7 @@ Why is AC preferred for power transmission? Transformers can step up voltage for
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["CURRENT ELECTRICITY"]:::root
     R --> OH["Ohm's Law"]:::key
     R --> CI["Circuits"]:::key
@@ -1161,6 +1203,14 @@ The direction of the induced current is always such that it opposes the change (
 
 Motor = Left = I drive the **L**eft side. Generator = Right.
 
+**Quick hook: "FBI for Left (Motor)"** — **F**ield (index), **B**asically in the middle (current = Middle finger), **I**ndicates force/Thrust (thumb). Left hand = **L**ets electricity **L**ift things (motor). Right hand = **R**otation **R**eleases current (generator).
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** Motor uses **Left** hand; Generator uses **Right** hand. Students commonly swap them. Memory: mo**L**tor → **L**eft. Generators **R**otate to produce current → **R**ight hand. In the exam: if it converts electrical → mechanical = motor = LEFT. Mechanical → electrical = generator = RIGHT.
+
 </div>
 
 ### Transformer
@@ -1180,7 +1230,7 @@ Works on mutual induction — the changing current in the primary coil creates a
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["MAGNETISM AND EMI"]:::root
     R --> MA["Magnetism Basics"]:::key
     R --> EL["Electromagnetism"]:::key
@@ -1211,9 +1261,24 @@ flowchart TD
 
 Rutherford used the famous gold-foil (alpha-scattering) experiment — firing alpha particles at gold foil. Most passed through (empty space), some deflected slightly (electrons), and a few bounced straight back (nucleus). He concluded the atom is mostly empty with a tiny, dense, positive nucleus.
 
+<div class="keypoint">
+
+**Bohr model — energy of hydrogen electron in orbit n:**
+
+$$E_n = -\frac{13.6}{n^2} \text{ eV}$$
+
+- n = 1 (ground state): E = −13.6 eV (most stable)
+- n = 2: E = −3.4 eV
+- n = 3: E = −1.51 eV
+- The **negative sign** means the electron is bound to the nucleus; energy needed to free it = 13.6 eV (ionisation energy of hydrogen).
+- When an electron **falls** from a higher n to a lower n, it **emits** a photon. When it **absorbs** energy, it **jumps** to a higher n.
+- Energy of emitted photon: $E = hf = 13.6\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$ eV, where $n_2 > n_1$.
+
+</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["ATOMIC MODELS"]:::root
     R --> TH["Thomson 1897"]:::date
     R --> RU["Rutherford 1911"]:::date
@@ -1249,7 +1314,7 @@ The heaviest sub-atomic particle is the **neutron** (just slightly heavier than 
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["SUBATOMIC PARTICLES"]:::root
     R --> PA["Basic Particles"]:::key
     R --> IS["Isotopes, Isobars, Isotones"]:::key
@@ -1273,21 +1338,38 @@ Henri Becquerel discovered radioactivity in 1896 (from uranium). Marie and Pierr
 
 ### Three Types of Radiation
 
-| Type | Symbol | Nature | Charge | Penetrating power | Stopped by |
-|------|--------|--------|--------|-----------------|-----------|
-| Alpha | α | Helium nucleus (2p + 2n) | +2 | Lowest | Paper, few cm of air |
-| Beta | β | Fast electron | −1 | Medium | 3mm aluminium |
-| Gamma | γ | High-energy EM wave (photon) | 0 | Highest | Several cm of lead |
+| Type | Symbol | Nature | Charge | Penetrating power | Ionizing power | Stopped by |
+|------|--------|--------|--------|-----------------|---------------|-----------|
+| Alpha | α | Helium nucleus (2p + 2n) | +2 | **Lowest** (α < β < γ) | **Highest** (α > β > γ) | Paper, few cm of air |
+| Beta | β | Fast electron (or positron) | −1 (or +1) | Medium | Medium | 3 mm aluminium |
+| Gamma | γ | High-energy EM wave (photon) | 0 | **Highest** | **Lowest** | Several cm of lead |
+
+<div class="keypoint">
+
+**Key inverse relationship:** Penetrating power and ionizing power are **opposite** for the three radiation types.
+- α: highest ionizing power (large charge, slow speed → many collisions per cm) but lowest penetration (stopped by paper).
+- γ: highest penetrating power (no charge, massless photon → few collisions) but lowest ionizing power.
+- This makes α particles the most dangerous **internally** (if inhaled/ingested) and γ rays the most dangerous **externally** (penetrate the body).
+
+</div>
 
 <div class="mnemonic">
 
-Penetrating power order: **α < β < γ** (alphabetical = weakest to strongest). What stops them: **Paper, Aluminium, Lead** — think PAL. Alpha needs a PAL to stop it (paper stops alpha). Aluminium stops beta. Lead stops gamma.
+Penetrating power order: **α < β < γ** (alphabetical = weakest to strongest). What stops them: **Paper, Aluminium, Lead** — think **PAL**. Alpha needs a PAL to stop it (paper stops alpha). Aluminium stops beta. Lead stops gamma.
+
+**Analogy:** Alpha is like a heavy truck — massive and easy to stop (paper does it). Beta is like a bicycle — lighter, needs aluminium. Gamma is like a ghost (pure energy, massless) — needs thick lead to absorb it.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "What stops alpha radiation?" — Many students write lead (since lead is the 'strongest' shield). But alpha is the weakest penetrator and is stopped by just a sheet of paper or a few cm of air. Lead is for gamma. Alpha → Paper | Beta → Aluminium | Gamma → Lead (PAL).
 
 </div>
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["RADIOACTIVITY"]:::root
     R --> DI["Discovery"]:::date
     R --> RA["Radiation Types"]:::key
@@ -1327,6 +1409,18 @@ This is the source of the Sun's energy. Fusion releases far more energy per unit
 
 </div>
 
+<div class="mnemonic">
+
+**Fission vs Fusion — easy memory split:** "**Fi**ssion = **Fi**ght" (heavy nucleus breaks apart, like splitting a fighting duo). "**Fu**sion = **Fu**nnel" (light nuclei come together and merge). Fission = atom bomb (U-235). Fusion = hydrogen bomb and the SUN. Fusion releases more energy per kg but is harder to control.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "Sun's energy source?" — Answer is nuclear **fusion** (NOT fission). Many students write fission because nuclear reactors use fission. The Sun fuses hydrogen into helium. All stars are fusion reactors. Commercial electricity uses fission. Fusion is what powers stars; fission is what powers current reactors.
+
+</div>
+
 ### E = mc²
 
 Einstein's mass-energy equivalence. Even a tiny mass (m) holds an enormous amount of energy (c = 3 × 10⁸ m/s, so c² = 9 × 10¹⁶). Burning 1 gram of matter completely would yield 9 × 10¹³ joules — equivalent to 20,000 tons of TNT.
@@ -1337,7 +1431,7 @@ Carbon-14 (¹⁴C) is a radioactive isotope of carbon with half-life of **5730 y
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["NUCLEAR REACTIONS"]:::root
     R --> FI["Nuclear Fission"]:::key
     R --> FU["Nuclear Fusion"]:::key
@@ -1359,18 +1453,170 @@ flowchart TD
 
 ## Chapter F5 — Semiconductors
 
-| Type | Resistivity | Band gap | Examples |
-|------|------------|---------|---------|
-| Conductor | Very low | None | Copper, silver, aluminium |
-| Semiconductor | Intermediate | Small (~1 eV) | Silicon (Si), Germanium (Ge) |
-| Insulator | Very high | Large | Glass, rubber, plastic |
+### F5.1 — Classification of Solids by Conductivity
 
-- **N-type semiconductor** — doped with pentavalent atoms (phosphorus, arsenic); extra electrons are charge carriers.
-- **P-type semiconductor** — doped with trivalent atoms (boron, aluminium); "holes" are charge carriers.
-- **Diode** (P-N junction) — allows current in one direction only.
-- **LED (Light Emitting Diode)** — emits light when forward current flows.
-- **Transistor** — invented 1947 by Bardeen, Brattain, Shockley (Bell Labs); Nobel 1956. Functions as amplifier and switch. Foundation of all modern electronics.
-- **Integrated Circuit (IC)** — many transistors on one silicon chip. Invented by Jack Kilby, 1958; Nobel 2000.
+| Type | Resistivity | Free carriers | Examples |
+|------|------------|--------------|---------|
+| Conductor (metal) | < 10⁻⁸ Ω·m | Free electrons (many) | Copper, silver, aluminium |
+| Semiconductor | 10⁻⁵ to 10³ Ω·m | Electrons + holes (few) | Silicon (Si), Germanium (Ge) |
+| Insulator | > 10⁸ Ω·m | None | Glass, rubber, plastic |
+
+<div class="keypoint">
+
+**Key difference from metals:** Metal resistance **increases** with temperature (electrons collide more). Semiconductor resistance **decreases** with temperature — heat frees more charge carriers. This is the opposite behaviour, and it's a classic exam question.
+
+**Which semiconductor is more common?** Silicon (Si) — it is cheaper, widely available (sand is SiO₂), and remains stable at higher temperatures. Germanium (Ge) was used in early transistors but largely replaced by Si.
+
+Both Si and Ge are in **Group 14** of the periodic table (4 valence electrons each).
+
+</div>
+
+---
+
+### F5.2 — Intrinsic vs Extrinsic Semiconductors
+
+| Type | What it is | Majority charge carriers |
+|------|-----------|------------------------|
+| Intrinsic | Pure Si or Ge crystal; no dopant | Electrons = holes (equal numbers) |
+| Extrinsic | Si or Ge doped with impurity atoms | Unequal — depends on dopant |
+| n-type | Pentavalent dopant added (P, As, Sb — Group 15) | **Electrons** are majority carriers |
+| p-type | Trivalent dopant added (B, Al, Ga, In — Group 13) | **Holes** are majority carriers |
+
+**Doping** = deliberate addition of tiny amounts of impurity atoms to dramatically increase conductivity.
+
+- **n-type:** Phosphorus has 5 valence electrons. 4 bond with Si neighbours; the 5th is loosely held and becomes a free electron. Net charge of the crystal is still neutral, but electrons are the majority carriers.
+- **p-type:** Boron has 3 valence electrons. It forms bonds with 3 Si neighbours but leaves one bond incomplete — this "missing electron" is called a **hole**. Holes act as positive charge carriers.
+
+<div class="pitfall">
+
+⚠️ **TRAP:** "What are majority carriers in p-type?" — Answer: **Holes** (NOT electrons). In p-type, holes are majority and electrons are minority carriers. Students often say "positive charges" and while conceptually right, the precise answer is "holes." Similarly, in n-type, electrons are majority carriers and holes are minority carriers.
+
+</div>
+
+---
+
+### F5.3 — p-n Junction Diode
+
+A p-n junction is formed by joining a p-type and n-type semiconductor in a single crystal.
+
+- **Depletion layer:** At the junction, electrons from n-side diffuse into p-side and fill holes. This creates a region with no free carriers and a built-in electric field pointing from n to p.
+- **Forward bias:** p-side connected to +ve terminal of battery; n-side to −ve. The external field opposes the built-in field → depletion layer narrows → current flows easily.
+- **Reverse bias:** p-side connected to −ve terminal. External field reinforces built-in field → depletion layer widens → current blocked (only a tiny leakage current flows).
+
+<div class="keypoint">
+
+**Key application — Rectification:** A diode converts AC (which alternates direction) to DC (one direction only) because it only allows current in one direction. A **half-wave rectifier** uses one diode; a **full-wave rectifier** uses four diodes in a bridge configuration.
+
+</div>
+
+**Zener diode:** A specially doped diode designed to operate in reverse bias at a precise "Zener voltage." Used for **voltage regulation** — keeps output voltage constant even if input fluctuates. Unlike a normal diode, reverse breakdown in a Zener is controlled and non-destructive.
+
+---
+
+### F5.4 — Special Diodes and Applications
+
+| Device | Operating principle | Primary use |
+|--------|-------------------|------------|
+| Rectifier diode | Conducts in forward bias only | AC → DC conversion |
+| Zener diode | Controlled reverse-bias breakdown | Voltage regulation / voltage reference |
+| LED (Light Emitting Diode) | Electron-hole recombination emits a photon | Indicator lights, displays, TV backlights |
+| Photodiode | Incident photons generate electron-hole pairs | Light sensors, optical communication |
+| Solar cell | Photovoltaic effect in p-n junction | Sunlight → electricity |
+
+**LED colour depends on semiconductor material:**
+- GaAs (Gallium Arsenide) → infrared
+- GaP (Gallium Phosphide) → green / red
+- GaN (Gallium Nitride) → blue / white (enables white LEDs)
+
+<div class="keypoint">
+
+**LED vs Solar cell — easy memory:** LED = electricity IN, light OUT (forward biased). Solar cell = light IN, electricity OUT. They are conceptually reverse processes in a p-n junction.
+
+</div>
+
+---
+
+### F5.5 — Transistor
+
+A transistor is a three-layer semiconductor device: either **n-p-n** or **p-n-p** sandwich. It has three terminals:
+- **E — Emitter:** supplies majority carriers
+- **B — Base:** thin, lightly doped middle layer that controls current
+- **C — Collector:** collects majority carriers
+
+**Two key functions:**
+
+1. **Amplifier** — a small base current controls a large collector current. Current gain β = I_C / I_B (typically 20 to 500). One milliamp at the base controls hundreds of milliamps at the collector.
+2. **Switch** — small base signal turns transistor fully ON (saturated) or fully OFF (cut-off); used in digital logic and computers.
+
+<div class="keypoint">
+
+Transistor was invented in **1947** by John Bardeen, Walter Brattain, and William Shockley at Bell Labs, USA — Nobel Prize in Physics 1956. It replaced vacuum tubes (thermionic valves) making electronics smaller, cheaper, and more reliable. Without the transistor there would be no modern computers, smartphones, or satellites.
+
+NPN transistors are more common than PNP because electrons (majority carriers in NPN) have higher mobility than holes.
+
+</div>
+
+---
+
+### F5.6 — Logic Gates (Digital Electronics)
+
+Logic gates are the building blocks of all digital circuits (computers, phones, calculators). They take binary inputs (0 or 1) and produce a binary output.
+
+| Gate | Boolean expression | Output rule | Truth table (key cases) |
+|------|-------------------|------------|------------------------|
+| AND | A · B | Output = 1 **only if both** inputs are 1 | 1·1=1; all others = 0 |
+| OR | A + B | Output = 1 **if any** input is 1 | 0+0=0; all others = 1 |
+| NOT | Ā (inverter) | Output = **opposite** of input | 0→1; 1→0 |
+| NAND | NOT(A·B) | Output = 0 **only if both** inputs are 1 | opposite of AND |
+| NOR | NOT(A+B) | Output = 1 **only if both** inputs are 0 | opposite of OR |
+| XOR | A ⊕ B | Output = 1 **if inputs differ** | 0,0→0; 0,1→1; 1,0→1; 1,1→0 |
+
+<div class="keypoint">
+
+**Universal gates:** NAND and NOR are called universal gates because **any** logic gate (AND, OR, NOT, XOR…) can be built using only NAND gates alone, or only NOR gates alone. This is very important in chip manufacturing — having one type of gate simplifies fabrication.
+
+</div>
+
+<div class="pitfall">
+
+⚠️ **Classic exam traps on logic gates:**
+
+- "Which gate gives output 1 when both inputs are 0?" → **NOR gate** (not OR, not AND).
+- "Which gate gives output 0 when both inputs are 1?" → **NAND gate** (not AND).
+- "Universal gates?" → **NAND and NOR** (not AND, not OR).
+- "XOR gives 1 when inputs are ___?" → **Different** (0,1 or 1,0). Same inputs (0,0 or 1,1) give 0.
+- "NOT gate is also called?" → **Inverter**.
+
+</div>
+
+---
+
+### F5.7 — Integrated Circuits (ICs) and Moore's Law
+
+An **Integrated Circuit (IC)** places thousands to billions of transistors, resistors, and capacitors on a single tiny silicon chip (a few mm²).
+
+**Key facts:**
+- Invented by **Jack Kilby** (Texas Instruments, 1958) — Nobel Prize in Physics 2000
+- Independently co-invented by **Robert Noyce** (Fairchild Semiconductor, 1958) — the Nobel went to Kilby alone (Noyce died in 1990)
+- **Generations of ICs** (by transistor count):
+  - SSI (Small Scale Integration) — tens of transistors
+  - MSI (Medium Scale Integration) — hundreds
+  - LSI (Large Scale Integration) — thousands
+  - VLSI (Very Large Scale Integration) — millions (1980s–1990s)
+  - ULSI (Ultra Large Scale Integration) — billions (modern CPUs, GPUs)
+- **Moore's Law** (Gordon Moore, 1965): the number of transistors on a chip doubles approximately every 2 years. This has held roughly true for six decades.
+
+<div class="pitfall">
+
+**Semiconductor Trap Card — five facts that repeatedly appear in SSC CGL/NTPC papers:**
+
+1. "Which semiconductor is more commonly used — Si or Ge?" → **Silicon (Si)** — stable at higher temperatures, cheaper, more abundant.
+2. "Majority carriers in p-type?" → **Holes** (NOT electrons; electrons are minority carriers in p-type).
+3. "Universal gates?" → **NAND and NOR** (any circuit can be built from NAND alone, or NOR alone).
+4. "LED works on which bias?" → **Forward bias** (it emits light when forward biased).
+5. "Who invented the IC?" → **Jack Kilby** (Nobel Prize 2000). Robert Noyce co-invented independently the same year but the Nobel went to Kilby alone.
+
+</div>
 
 ---
 
@@ -1514,7 +1760,7 @@ Indian scientists to remember for physics: **C.V. Raman** (Raman Effect, Nobel P
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["SEMICONDUCTORS"]:::root
     R --> CO["Conductors vs Insulators vs SC"]:::key
     R --> TY["Types of Semiconductors"]:::key

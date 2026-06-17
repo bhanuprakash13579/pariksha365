@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "General Knowledge",
+  "topic": "Computer awareness — mixed tiers",
+  "topic_code": "GK_COMPUTER_BASICS_MIXED",
+  "questions": [
+    {
+      "stem": "In computer terminology, what does the process of 'booting' refer to?",
+      "options": [
+        {
+          "option_text": "Saving data files to a hard disk or USB storage",
+          "is_correct": false
+        },
+        {
+          "option_text": "Loading the operating system into the computer's memory",
+          "is_correct": true
+        },
+        {
+          "option_text": "Connecting the computer to the internet via a router",
+          "is_correct": false
+        },
+        {
+          "option_text": "Formatting a storage drive to erase all existing files",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Booting is the startup sequence that loads the OS from storage into RAM, making the system ready for use. 'Saving files' is a write operation unrelated to startup. Connecting to the internet is a network step that happens after the OS is already running, making B the only correct description of the boot process.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T13:41:25+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_MIXED_00001"
+    },
+    {
+      "stem": "Which port number is standardly assigned to HTTPS for secure web communication?",
+      "options": [
+        {
+          "option_text": "Port 21, which is reserved for FTP file transfers",
+          "is_correct": false
+        },
+        {
+          "option_text": "Port 80, which is used for unencrypted HTTP traffic",
+          "is_correct": false
+        },
+        {
+          "option_text": "Port 443, which is assigned to encrypted HTTPS traffic",
+          "is_correct": true
+        },
+        {
+          "option_text": "Port 25, which handles outgoing SMTP email delivery",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Port 443 is the IANA-assigned well-known port for HTTPS (HTTP over TLS/SSL). Port 80 is the most common wrong answer because students associate it with 'the web', but Port 80 serves plain unencrypted HTTP. Ports 21 and 25 serve FTP and SMTP respectively — entirely different protocols.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T13:41:25+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_MIXED_00002"
+    },
+    {
+      "stem": "Which sequence correctly ranks computer memory from FASTEST to SLOWEST access speed?",
+      "options": [
+        {
+          "option_text": "Cache memory → RAM → Hard Disk → CPU Register",
+          "is_correct": false
+        },
+        {
+          "option_text": "CPU Register → Cache memory → RAM → Hard Disk",
+          "is_correct": true
+        },
+        {
+          "option_text": "RAM → CPU Register → Cache memory → Hard Disk",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hard Disk → RAM → Cache memory → CPU Register",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "CPU Registers are inside the processor itself and are the fastest storage, followed by Cache (L1/L2/L3 on-chip or near-chip), then RAM (main memory), and finally Hard Disk (slowest, mechanical or flash). Option A is the most tempting wrong answer — many students know Cache is faster than RAM but forget Registers sit above Cache in the hierarchy.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T13:41:25+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_MIXED_00003"
+    },
+    {
+      "stem": "A file with the extension '.exe' on a Windows system belongs to which category?",
+      "options": [
+        {
+          "option_text": "An image file opened with photo-editing applications",
+          "is_correct": false
+        },
+        {
+          "option_text": "An executable file that directly launches a program",
+          "is_correct": true
+        },
+        {
+          "option_text": "A compressed archive bundling several files together",
+          "is_correct": false
+        },
+        {
+          "option_text": "A plain-text document created by a word processor",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "'.exe' stands for 'executable' and contains compiled machine-code instructions the OS can run directly. Compressed archives use .zip or .rar; image files use .jpg/.png; word-processor documents use .doc/.docx. Confusing .exe with .zip is a common error since both may appear after downloading software.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T13:41:25+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_MIXED_00004"
+    },
+    {
+      "stem": "Which protocol is used by an email client to DOWNLOAD messages from a remote mail server?",
+      "options": [
+        {
+          "option_text": "SMTP (Simple Mail Transfer Protocol), used to send emails",
+          "is_correct": false
+        },
+        {
+          "option_text": "FTP (File Transfer Protocol), used for remote file access",
+          "is_correct": false
+        },
+        {
+          "option_text": "POP3 (Post Office Protocol 3), used to retrieve incoming mail",
+          "is_correct": true
+        },
+        {
+          "option_text": "HTTP (HyperText Transfer Protocol), used for web browsing",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "POP3 (or its modern alternative IMAP) is designed specifically for clients to pull emails from a mail server to local storage. SMTP is the most tempting distractor because it is the other half of the email system — but SMTP handles only outgoing/sending, not retrieval. FTP and HTTP are unrelated to mail delivery.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T13:41:25+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_MIXED_00005"
+    },
+    {
+      "stem": "In computer networking, what is the PRIMARY function of NAT (Network Address Translation)?",
+      "options": [
+        {
+          "option_text": "Encrypting data packets before sending them over public networks",
+          "is_correct": false
+        },
+        {
+          "option_text": "Allowing multiple private-network devices to share one public IP address",
+          "is_correct": true
+        },
+        {
+          "option_text": "Resolving domain names into numeric IP addresses for routing",
+          "is_correct": false
+        },
+        {
+          "option_text": "Blocking unauthorised traffic from entering a private network",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "NAT remaps private IP addresses (e.g., 192.168.x.x) to a single public IP at the router, conserving the limited IPv4 address pool. Option C describes DNS (Domain Name System), the most common confusion with NAT. Option D describes a firewall's role. Option A is the job of VPN/TLS encryption, not NAT.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T13:41:25+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_MIXED_00006"
+    },
+    {
+      "stem": "Which statement CORRECTLY distinguishes a computer VIRUS from a WORM?",
+      "options": [
+        {
+          "option_text": "A virus spreads only via email; a worm infects boot sectors alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "A virus needs a host file to attach to; a worm self-replicates across networks",
+          "is_correct": true
+        },
+        {
+          "option_text": "A worm encrypts files for ransom; a virus corrupts system registry data",
+          "is_correct": false
+        },
+        {
+          "option_text": "A virus targets hardware firmware; a worm targets application-layer data",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "The defining difference: a virus must attach to a legitimate host file and spreads when that file is executed by a user, whereas a worm is self-contained and propagates automatically across networks without any user action or host file. Option C describes ransomware, a distinct malware category. Options A and D swap real attributes with fabricated constraints not part of the standard definitions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T13:41:25+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_MIXED_00007"
+    }
+  ]
+}

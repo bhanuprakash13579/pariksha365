@@ -235,6 +235,426 @@
       "generator_tag": "claude-opus-2026-04-26-eng-rs2-07",
       "generated_at": "2026-04-26T21:50:00+00:00",
       "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00007"
+    },
+    {
+      "stem": "Mohan said, 'I visited the museum last year.' Which is the correct indirect form of this sentence?",
+      "options": [
+        {
+          "option_text": "Mohan said that he visited the museum last year.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mohan said that he had visited the museum the previous year.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mohan said that he has visited the museum the previous year.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mohan said that he had visited the museum last year.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: past simple ('visited') backshifts to past perfect ('had visited'), and 'last year' must change to 'the previous year'. Option A fails to backshift the tense. Option C wrongly uses present perfect 'has visited'. Option D backshifts correctly but leaves 'last year' unchanged — a common overlooked error.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:41+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00008"
+    },
+    {
+      "stem": "She said, 'I have finished my homework.' The correct indirect speech form is:",
+      "options": [
+        {
+          "option_text": "She said that she has finished her homework.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She said that she had finished her homework.",
+          "is_correct": true
+        },
+        {
+          "option_text": "She said that she finished her homework.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She said that she had been finishing her homework.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: present perfect ('have finished') backshifts to past perfect ('had finished'). Option A incorrectly retains present perfect 'has finished'. Option C uses simple past — valid for backshifting present simple, not present perfect. Option D wrongly introduces past perfect continuous, implying an incomplete ongoing action, which distorts meaning.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:41+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00009"
+    },
+    {
+      "stem": "Priya said, 'Let's go for a walk.' The correct indirect form of this suggestion is:",
+      "options": [
+        {
+          "option_text": "Priya said that let them go for a walk.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Priya suggested that they should go for a walk.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Priya told them that they go for a walk.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Priya ordered that they must go for a walk.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: 'Let's...' expresses a suggestion, so the reporting verb must be 'suggested/proposed', not 'said' or 'told'. Structure becomes: suggested + that + subject + should + base verb. Option A retains 'let' inside the reported clause, which is grammatically wrong. Option C uses 'told' (wrong verb for suggestions) with no modal. Option D uses 'ordered', converting a mutual suggestion into a command and completely altering the speaker's intent.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:41+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00010"
+    },
+    {
+      "stem": "The manager said to his team, 'You must submit the report today.' The correct indirect form is:",
+      "options": [
+        {
+          "option_text": "The manager told his team that they must submit the report today.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The manager told his team that they had to submit the report that day.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The manager said to his team they should submit the report today.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The manager told his team that you must submit the report that day.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: 'must' denoting external obligation changes to 'had to' in past reported speech; 'today' shifts to 'that day'; 'you' shifts to 'they'. Option A retains both 'must' and 'today' unchanged. Option C keeps 'today' and uses the non-standard 'said to his team' without 'that'. Option D correctly shifts 'today' to 'that day' but fails to change the pronoun 'you' to 'they' — a pronoun-shift oversight examiners frequently test.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:41+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00011"
+    },
+    {
+      "stem": "The doctor said to the patient, 'Don't eat oily food.' Which option correctly reports this negative imperative?",
+      "options": [
+        {
+          "option_text": "The doctor said to the patient that he should not eat oily food.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The doctor advised the patient not to eat oily food.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The doctor told the patient that don't eat oily food.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The doctor commanded the patient to not eat oily food.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: negative imperatives are reported as 'advised/told + object + not + to-infinitive'. 'Advised' suits the doctor's tone precisely. Option A uses a declarative 'that-clause' structure, which is non-standard for imperatives. Option C retains 'don't' inside the reported clause — the most frequent student error in negative imperative conversion. Option D uses 'commanded', implying authority and force, which misrepresents a doctor's advisory register.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:41+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00012"
+    },
+    {
+      "stem": "She said to him, 'Did you lock the door before leaving?' Which option correctly converts this to indirect speech?",
+      "options": [
+        {
+          "option_text": "She asked him whether he locks the door before he left.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She asked him whether he had locked the door before leaving.",
+          "is_correct": true
+        },
+        {
+          "option_text": "She said to him whether he had locked the door before leaving.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She questioned him if he had been locking the door before leaving.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: a yes/no question in past simple ('Did...lock') backshifts to past perfect ('had locked'); auxiliary 'Did' is dropped; word order becomes declarative; 'whether/if' introduces the clause. Option A mixes tenses — 'locks' (present) inside the clause is inconsistent with the past reporting context. Option C uses 'said to him whether' — yes/no questions require reporting verb 'asked', not 'said to'. Option D uses past perfect continuous 'had been locking', implying an interrupted ongoing action, which misrepresents the simple completed act the original question tests.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:41+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00013"
+    },
+    {
+      "stem": "He said, 'If I work hard, I will pass the exam.' The correct reported form of this conditional sentence is:",
+      "options": [
+        {
+          "option_text": "He said that if he works hard, he will pass the exam.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He said that if he worked hard, he would pass the exam.",
+          "is_correct": true
+        },
+        {
+          "option_text": "He said that if he had worked hard, he would have passed the exam.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He said that if he worked hard, he shall pass the exam.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: in a Type 1 (real/open) conditional reported in past tense, present simple 'work' → past simple 'worked', and 'will' → 'would'. The real-condition relationship is preserved. Option A makes no tense backshift at all — a basic error. Option C converts the sentence to a Type 3 (unreal past) conditional, changing 'If I work hard' (realistically possible) into a past hypothetical — a subtle but meaning-altering error that examiners prize. Option D wrongly uses 'shall' instead of 'would'; 'shall' is not the reported-speech equivalent of 'will' when the main clause is in the past.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:41+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00014"
+    },
+    {
+      "stem": "Anita said to Rahul, \"Your brother met me yesterday.\" Which of the following is the correct indirect speech?",
+      "options": [
+        {
+          "option_text": "Anita told Rahul that his brother had met her the previous day.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Anita told Rahul that your brother had met her the previous day.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Anita told Rahul that his brother met her the next day.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Anita said Rahul that her brother had met him the previous day.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct: 'your' (Rahul's) shifts to 'his'; 'me' (Anita) shifts to 'her'; 'met' (simple past) back-shifts to 'had met' (past perfect); 'yesterday' shifts to 'the previous day'. Option B wrongly retains 'your' — the most common pronoun-change error. Option C fails to back-shift the tense and uses 'next day' instead of 'previous day'. Option D swaps pronouns wrongly, making 'her brother' and 'him' refer to incorrect antecedents.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:23:25+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00015"
+    },
+    {
+      "stem": "He said, \"I shall return the book tomorrow.\" Which of the following is the correct indirect speech?",
+      "options": [
+        {
+          "option_text": "He said that he would return the book the following day.",
+          "is_correct": true
+        },
+        {
+          "option_text": "He said that he will return the book the following day.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He said that he shall return the book the next day.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He said that he had returned the book the following day.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct: 'shall' used for the first person in direct speech back-shifts to 'would' in indirect speech; 'tomorrow' changes to 'the following day'. Option B uses 'will' instead of 'would' — a very common error where candidates apply second/third person rules. Option C retains 'shall' unchanged, ignoring the back-shift rule entirely. Option D uses past perfect 'had returned', falsely implying the action was already completed at the time of speaking.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:23:25+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00016"
+    },
+    {
+      "stem": "Priya said to her friends, \"Let us plan a trip to Goa next month.\" Which of the following is the correct indirect speech?",
+      "options": [
+        {
+          "option_text": "Priya said to her friends that let them plan a trip to Goa the next month.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Priya suggested her friends that they should plan a trip to Goa the following month.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Priya suggested to her friends that they should plan a trip to Goa the next month.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Priya told her friends that they should plan a trip to Goa the following month.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct: 'Let us' signals a suggestion, reported as 'suggested + to + object + that + subject + should + verb'. Option A retains the direct form entirely without a proper reporting structure. Option B omits the necessary preposition 'to' — 'suggest' cannot take a direct object the way 'tell' or 'ask' can; it must be 'suggested to her friends'. Option D uses 'told...should', which implies a command or instruction rather than a mutual suggestion.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:23:25+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00017"
+    },
+    {
+      "stem": "She said to me, \"I have never visited the Red Fort.\" Which of the following is the correct indirect speech?",
+      "options": [
+        {
+          "option_text": "She told me that she had never visited the Red Fort.",
+          "is_correct": true
+        },
+        {
+          "option_text": "She told me that she never visited the Red Fort.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She said to me that she has never visited the Red Fort.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She told me that she never had visited the Red Fort before.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct: Present perfect 'have visited' back-shifts to past perfect 'had visited' in indirect speech. Option B uses simple past 'visited' — a frequent error that drops the perfect aspect, changing the nuance of the experience. Option C retains present perfect 'has never visited' without any back-shift. Option D wrongly splits the auxiliary, placing 'had' after 'never' and adding 'before', producing a non-standard and grammatically awkward construction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:23:25+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00018"
+    },
+    {
+      "stem": "The examiner said to the student, \"Did you attempt all the questions?\" Which of the following is the correct indirect speech?",
+      "options": [
+        {
+          "option_text": "The examiner asked the student if he had attempted all the questions.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The examiner asked the student that did he attempt all the questions.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The examiner told the student whether he attempted all the questions.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The examiner asked the student whether he attempts all the questions.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct: Yes/no questions in indirect speech use 'if' or 'whether' as connector; the auxiliary 'Did' is dropped and the tense back-shifts: 'did attempt' → 'had attempted'. Option B wrongly retains the inverted question word order with 'that did he' — a common direct-to-indirect conversion error. Option C uses 'told' as the reporting verb, which is grammatically inappropriate for a question; also lacks back-shift. Option D retains present tense 'attempts' — no back-shift applied.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:23:25+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00019"
+    },
+    {
+      "stem": "Suresh said, \"If I get a transfer, I will move to Mumbai.\" Which of the following is the correct indirect speech?",
+      "options": [
+        {
+          "option_text": "Suresh said that if he gets a transfer, he will move to Mumbai.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Suresh said that if he got a transfer, he would move to Mumbai.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Suresh said that if he had got a transfer, he would move to Mumbai.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Suresh said that if he would get a transfer, he would move to Mumbai.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: A Type 1 conditional ('if + simple present, will + infinitive') back-shifts in indirect speech to 'if + simple past, would + infinitive': 'gets' → 'got', 'will move' → 'would move'. Option A retains the present tense and 'will' — no back-shift at all. Option C uses past perfect 'had got' in the if-clause — this is a subtle trap that incorrectly converts the sentence into a Type 3 (unreal/hypothetical past) conditional, changing the original meaning. Option D inserts 'would' in the if-clause, which is grammatically incorrect in any conditional type.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:23:25+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00020"
+    },
+    {
+      "stem": "Maya said to her mother, \"I have been waiting here for two hours and I am very tired.\" Which of the following is the correct indirect speech?",
+      "options": [
+        {
+          "option_text": "Maya told her mother that she has been waiting there for two hours and she is tired.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Maya told her mother that she had been waiting there for two hours and she was very tired.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Maya said to her mother that I had been waiting here for two hours and I was very tired.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Maya told her mother she had been waiting there for two hours and had been very tired.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: Multiple simultaneous shifts are required — present perfect continuous 'have been waiting' → past perfect continuous 'had been waiting'; simple present 'am very tired' → simple past 'was very tired'; 'here' → 'there'; 'I' → 'she'. Option A retains both present tenses with no back-shift and also omits 'very'. Option C retains first-person pronoun 'I' and proximity adverb 'here' — the classic error of neglecting pronoun and adverb changes. Option D upgrades 'was very tired' to 'had been very tired'; simple stative complements do not require past perfect — only the action verb 'waiting' needs perfect aspect.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:23:25+00:00",
+      "id": "sgk_ENG_REPORTED_SPEECH_II_MIXED_00021"
     }
   ]
 }

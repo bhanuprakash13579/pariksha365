@@ -220,6 +220,216 @@
       "generator_tag": "gemini-batch-fix-2026-05-15",
       "generated_at": "2026-05-19T08:44:32+00:00",
       "id": "sgk_QNT_PARTNERSHIPS_VII_MIXED_00007"
+    },
+    {
+      "stem": "A and B start a business investing Rs. 24,000 and Rs. 36,000 respectively. A, being the working partner, draws Rs. 500 per month as salary. At the end of the year, the total profit is Rs. 18,000. What is B's share of the profit?",
+      "options": [
+        {
+          "option_text": "Rs. 10,800 splitting full profit in 2:3 capital ratio",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 7,200 as B's share after deducting A's salary first",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rs. 6,000 if the remaining profit is divided equally",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 8,000 using an incorrect 1:2 capital ratio instead",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "A's annual salary = 500 × 12 = Rs. 6,000. Remaining profit = 18,000 − 6,000 = Rs. 12,000. Capital ratio A:B = 24,000:36,000 = 2:3. B's share = (3/5) × 12,000 = Rs. 7,200. Option A is wrong because the working partner's salary must be deducted before applying capital ratios — distributing the full Rs. 18,000 in ratio 2:3 overpays B and under-compensates A's labour.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:40:41+00:00",
+      "id": "sgk_QNT_PARTNERSHIPS_VII_MIXED_00008"
+    },
+    {
+      "stem": "P invests Rs. 15,000 at the start of the year. After 6 months, he withdraws Rs. 5,000 from the business. Q invests Rs. 12,000 for the entire year. In what ratio should the annual profit be divided between P and Q?",
+      "options": [
+        {
+          "option_text": "5 : 4 using only the initial amounts at the start",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 : 6 using only P's reduced capital for the full year",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 : 24 based on time-weighted effective capital invested",
+          "is_correct": true
+        },
+        {
+          "option_text": "24 : 25 with Q treated as the dominant contributing partner",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "P's effective capital = 15,000 × 6 + 10,000 × 6 = 90,000 + 60,000 = 1,50,000. Q's effective capital = 12,000 × 12 = 1,44,000. Ratio = 1,50,000 : 1,44,000 = 25 : 24. Option A (5:4) is the most tempting error — it ignores time-weighting and simply compares opening capitals. Option B applies P's post-withdrawal amount of Rs. 10,000 to the whole year, also incorrect.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:40:41+00:00",
+      "id": "sgk_QNT_PARTNERSHIPS_VII_MIXED_00009"
+    },
+    {
+      "stem": "A invests Rs. 8,000 for the full year. B invests Rs. 6,000 for the first 8 months and then adds Rs. 4,000 to his capital for the remaining 4 months. If A's profit share is Rs. 4,800, what is B's profit?",
+      "options": [
+        {
+          "option_text": "Rs. 4,400 calculated using B's time-weighted capital correctly",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rs. 3,600 if B's investment remained Rs. 6,000 throughout",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 6,000 if B's peak capital of Rs. 10,000 applied all year",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 4,000 using Rs. 10,000 for the first 8 months only instead",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A's effective = 8,000 × 12 = 96,000. B's effective = 6,000 × 8 + 10,000 × 4 = 48,000 + 40,000 = 88,000. Ratio A:B = 96:88 = 12:11. Total profit = 4,800 × 23/12 = Rs. 9,200. B's share = 9,200 × 11/23 = Rs. 4,400. Option B (Rs. 3,600) is the most tempting error — it ignores B's mid-year addition and uses Rs. 6,000 all year giving ratio 4:3, then B = 9,200 × 3/7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:40:41+00:00",
+      "id": "sgk_QNT_PARTNERSHIPS_VII_MIXED_00010"
+    },
+    {
+      "stem": "A starts a business with Rs. 40,000. After 5 months, B joins the partnership. At year end, the profit is shared between A and B in the ratio 8:7. How much capital did B invest?",
+      "options": [
+        {
+          "option_text": "Rs. 60,000 since B invested for 7 remaining months only",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rs. 84,000 treating B's involvement as only 5 months long",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 70,000 if B's investment duration counted as 6 months",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 35,000 if B's capital assumed to span all 12 months",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "B joins after 5 months so B invests for 12 − 5 = 7 months. Let B's capital = x. Setting up: 40,000 × 12 : x × 7 = 8:7 → 4,80,000/7x = 8/7 → 56x = 33,60,000 → x = Rs. 60,000. Option B (Rs. 84,000) is the classic error of using 5 months for B instead of 7. Option D (Rs. 35,000) results from incorrectly applying a full 12-month duration to B.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:40:41+00:00",
+      "id": "sgk_QNT_PARTNERSHIPS_VII_MIXED_00011"
+    },
+    {
+      "stem": "A invests Rs. 45,000 in a business for the entire year. B invests Rs. 60,000 but only for part of the year. If the profit is divided between A and B in the ratio 3:2, for how many months did B invest?",
+      "options": [
+        {
+          "option_text": "9 months, or three-quarters of the financial year elapsed",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 months, which is two-thirds of the financial year only",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 months, exactly half of the financial year invested",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 months, which is one-third of the financial year only",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Let B invest for t months. A's effective = 45,000 × 12 = 5,40,000. B's effective = 60,000t. Ratio 3:2 → 5,40,000 / (60,000t) = 3/2 → t = 10,80,000 / 1,80,000 = 6 months. At t = 9, effective capitals are equal (1:1 ≠ 3:2). At t = 8, ratio = 5,40,000:4,80,000 = 9:8 ≠ 3:2. Both are common wrong guesses based on round time fractions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:40:41+00:00",
+      "id": "sgk_QNT_PARTNERSHIPS_VII_MIXED_00012"
+    },
+    {
+      "stem": "P, Q and R invest Rs. 50,000, Rs. 40,000 and Rs. 30,000 in a partnership. They agree that each partner first receives 10% per annum interest on their capital, and the remaining profit is split equally. If the annual profit is Rs. 36,000, what is the total amount received by R (interest + profit share)?",
+      "options": [
+        {
+          "option_text": "Rs. 9,000 distributing entire profit proportional to capital only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 11,000 including R's 10% interest plus equal profit share",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rs. 12,000 when the full profit is divided equally among three",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 8,000 counting only R's equal share of profit after interest",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Interest: P = 5,000, Q = 4,000, R = 3,000; total interest = Rs. 12,000. Remaining profit = 36,000 − 12,000 = Rs. 24,000. Equal share per partner = 24,000/3 = Rs. 8,000. R's total = 3,000 + 8,000 = Rs. 11,000. Option C (Rs. 12,000) skips the interest step and splits the full profit equally. Option D (Rs. 8,000) correctly computes R's profit share but forgets to add R's interest on capital — the most tempting error.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:40:41+00:00",
+      "id": "sgk_QNT_PARTNERSHIPS_VII_MIXED_00013"
+    },
+    {
+      "stem": "A starts a business investing Rs. 60,000. B joins after 3 months with Rs. 80,000, and C joins after 6 months from the start with Rs. 90,000. At year end, B's profit share amounts to Rs. 24,000. What is the total profit for the year?",
+      "options": [
+        {
+          "option_text": "Rs. 55,500 if B is treated as investing for the full year",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 75,000 if C's entry is mistimed to month 3 from start",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rs. 66,000 using correct durations and profit ratio 4:4:3",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rs. 87,000 if B's entry is assumed to begin at month 6 start",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "A: 60,000 × 12 = 7,20,000. B joins after 3 months → 9 months remaining: 80,000 × 9 = 7,20,000. C joins after 6 months → 6 months remaining: 90,000 × 6 = 5,40,000. Ratio A:B:C = 720:720:540 = 4:4:3 (11 parts total). B's share = 4/11 of total. So 4/11 × T = 24,000 → T = Rs. 66,000. Option A (Rs. 55,500) results from using B for 12 months (ratio becomes 12:16:9, 16 parts for B). Option D (Rs. 87,000) places B's entry at month 6 giving only 6 months, making B's share fraction smaller and total appear larger.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:40:41+00:00",
+      "id": "sgk_QNT_PARTNERSHIPS_VII_MIXED_00014"
     }
   ]
 }

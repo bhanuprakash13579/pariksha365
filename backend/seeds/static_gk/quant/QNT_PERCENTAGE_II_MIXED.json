@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "subject": "Quant",
+  "subject": "Quantitative Aptitude",
   "topic": "Percentage II — mixed tiers",
   "topic_code": "QNT_PERCENTAGE_II_MIXED",
   "description": "Percentage increase / decrease, conversions, word problems",
@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-23-qnt-p2-07",
       "generated_at": "2026-04-23T21:20:00+00:00",
       "id": "sgk_QNT_PERCENTAGE_II_MIXED_00007"
+    },
+    {
+      "stem": "If 40% of a number exceeds its 25% by 45, find 60% of that number.",
+      "options": [
+        {
+          "option_text": "150, which equals 50% of the original number",
+          "is_correct": false
+        },
+        {
+          "option_text": "120, which is 40% of the original number",
+          "is_correct": false
+        },
+        {
+          "option_text": "180, which is 60% of the original number",
+          "is_correct": true
+        },
+        {
+          "option_text": "270, which represents 90% of the original number",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "40% − 25% = 15% of x = 45, so x = 300. Then 60% of 300 = 180. Option A (150) is wrong because it computes 50% of 300; Option B (120) stops at 40% of 300; Option D (270) mistakenly computes 90% of 300.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:38:37+00:00",
+      "id": "sgk_QNT_PERCENTAGE_II_MIXED_00008"
+    },
+    {
+      "stem": "The price of wheat rises by 25%. By what percentage must a family reduce its consumption so that their monthly expenditure on wheat remains unchanged?",
+      "options": [
+        {
+          "option_text": "15%, since the price rose by only one-quarter overall",
+          "is_correct": false
+        },
+        {
+          "option_text": "20%, so that total expenditure stays exactly the same",
+          "is_correct": true
+        },
+        {
+          "option_text": "25%, matching the same percentage as the price rise",
+          "is_correct": false
+        },
+        {
+          "option_text": "80%, the new consumption as a fraction of the old level",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "New price = 1.25P. To keep expenditure E constant, new consumption = E/1.25P = 0.8 × original, so a 20% reduction is needed. Option C (25%) is the most tempting trap — reducing by the same % as the rise does NOT restore expenditure; 1.25 × 0.75 = 0.9375, still below original. Option D confuses the new consumption level (80%) with the reduction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:38:37+00:00",
+      "id": "sgk_QNT_PERCENTAGE_II_MIXED_00009"
+    },
+    {
+      "stem": "A vessel contains 80 litres of a milk-and-water mixture in the ratio 3:1. What percentage of the mixture must be replaced with pure milk so that the resulting mixture is in the ratio 4:1?",
+      "options": [
+        {
+          "option_text": "10% of the 80-litre mixture (8 litres replaced out)",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% of the 80-litre mixture (16 litres replaced out)",
+          "is_correct": true
+        },
+        {
+          "option_text": "25% of the 80-litre mixture (20 litres replaced out)",
+          "is_correct": false
+        },
+        {
+          "option_text": "12.5% of the 80-litre mixture (10 litres replaced out)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Initial milk = 60 L, water = 20 L. Removing x litres of mixture removes x/4 water. For ratio 4:1: (60 + x/4)/(20 − x/4) = 4 → 60 + x/4 = 80 − x → 5x/4 = 20 → x = 16 L = 20% of 80. Option C (25%) is the common error from setting up the equation incorrectly; Option A (10%) under-estimates the water removal needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:38:37+00:00",
+      "id": "sgk_QNT_PERCENTAGE_II_MIXED_00010"
+    },
+    {
+      "stem": "A shopkeeper marks his goods 40% above cost price and then allows two successive discounts of 10% each. What is his net profit percentage on cost price?",
+      "options": [
+        {
+          "option_text": "20% profit (mark-up of 40 minus combined discounts of 20)",
+          "is_correct": false
+        },
+        {
+          "option_text": "13.4% net profit after applying both successive discounts",
+          "is_correct": true
+        },
+        {
+          "option_text": "12% profit, treating two 10% discounts as one flat 20%",
+          "is_correct": false
+        },
+        {
+          "option_text": "26% profit after applying only the first 10% discount",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "SP = CP × 1.40 × 0.90 × 0.90 = 1.134 CP → 13.4% profit. Option A (20%) is wrong because successive discounts are NOT additive; 40 − 10 − 10 ≠ net result. Option C (12%) is the classic error of treating two successive 10% discounts as a flat 20%: 1.40 × 0.80 = 1.12, giving only 12% — this is less than the correct 13.4% because successive discounts are smaller than their sum.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:38:37+00:00",
+      "id": "sgk_QNT_PERCENTAGE_II_MIXED_00011"
+    },
+    {
+      "stem": "A man's monthly income is ₹10,000 and expenditure is ₹8,000. If his income rises by 20% and expenditure rises by 30%, what is the percentage change in his monthly savings?",
+      "options": [
+        {
+          "option_text": "Savings decrease by 10%, leaving ₹1,800 as the balance",
+          "is_correct": false
+        },
+        {
+          "option_text": "Savings decrease by 20%, reducing the balance to ₹1,600",
+          "is_correct": true
+        },
+        {
+          "option_text": "Savings stay at ₹2,000 since both income and spending rise",
+          "is_correct": false
+        },
+        {
+          "option_text": "Savings decrease by 30%, now only ₹1,400 remains in hand",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Original savings = 10,000 − 8,000 = ₹2,000. New income = ₹12,000; new expenditure = ₹8,000 × 1.3 = ₹10,400; new savings = ₹1,600. Change = (1,600 − 2,000)/2,000 × 100 = −20%. Option D (30%) is wrong because 30% is only the expenditure growth rate, not the savings change rate; the savings base is ₹2,000, not ₹8,000.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:38:37+00:00",
+      "id": "sgk_QNT_PERCENTAGE_II_MIXED_00012"
+    },
+    {
+      "stem": "Two items are each sold at ₹4,800. The seller gains 20% on the first item and loses 20% on the second. What is the net financial outcome of the entire transaction?",
+      "options": [
+        {
+          "option_text": "No net gain or loss since the profit and loss cancel out",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net loss of 4% on the total cost price of both the items",
+          "is_correct": true
+        },
+        {
+          "option_text": "Net gain of 4% as the profitable sale fully compensates",
+          "is_correct": false
+        },
+        {
+          "option_text": "Net loss of 2% on the combined selling price of both items",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "CP₁ = 4800/1.2 = ₹4,000; CP₂ = 4800/0.8 = ₹6,000. Total CP = ₹10,000; total SP = ₹9,600; net loss = ₹400 = 4% of total CP. Formula: when SP is equal and profit/loss % is equal, net loss% = x²/100 = 400/100 = 4%. Option A (no net change) is the most tempting trap — equal % does NOT mean equal absolute amounts because the CP bases differ. Option D confuses the loss base (total CP vs total SP).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:38:37+00:00",
+      "id": "sgk_QNT_PERCENTAGE_II_MIXED_00013"
+    },
+    {
+      "stem": "In an examination, Rahul scored 25% more marks than Suman, and Priya scored 20% more marks than Rahul. If Priya scored 480 marks, how many marks did Suman score?",
+      "options": [
+        {
+          "option_text": "384 marks (obtained by reducing Priya's score by 20% only)",
+          "is_correct": false
+        },
+        {
+          "option_text": "320 marks (correct result of the full three-link chain)",
+          "is_correct": true
+        },
+        {
+          "option_text": "360 marks (subtracting 25% directly from Priya's 480 marks)",
+          "is_correct": false
+        },
+        {
+          "option_text": "288 marks (multiplying Priya's score by factors 0.80 and 0.75)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Priya = 1.2 × Rahul → Rahul = 480/1.2 = 400. Rahul = 1.25 × Suman → Suman = 400/1.25 = 320. Option A (384) stops at Rahul's score. Option C (360) wrongly deducts 25% from Priya's score, skipping the intermediate step. Option D (288) is the reverse-chain error: multiplying by 0.80 × 0.75 instead of dividing by 1.20 × 1.25; candidates confuse 'A is 25% more than B' with 'B is 25% less than A'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:38:37+00:00",
+      "id": "sgk_QNT_PERCENTAGE_II_MIXED_00014"
     }
   ]
 }

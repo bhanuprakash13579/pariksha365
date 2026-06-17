@@ -270,6 +270,8 @@ mindmap
 | -phile | noun | lover of | bibliophile, oenophile |
 | -ship | noun | state, skill | friendship, leadership, craftsmanship |
 
+<div class="keypoint">**⚡ SAY THE ROOT OUT LOUD** — After learning each Latin/Greek root, say the root and a derived word aloud three times. Your auditory memory retains sounds far better than visual lists. *"spect — inspect, spect — inspect, spect — inspect."* One minute per root = permanent recall. This single habit separates students who forget roots by exam day from those who decode unfamiliar words cold.</div>
+
 > **Feynman check:** Using only the tables above, decode: *omniscient, anachronism, benefactor, misanthrope, xenophobic, subterranean, autocracy, philanthropist, gerontocracy, matricide.* All ten should fall out.
 
 ---
@@ -315,6 +317,8 @@ mindmap
 | **Triskaidekaphobia** | the number 13 | Gk. *treis-kai-deka* = three and ten |
 | **Xenophobia** | foreigners, strangers | Gk. *xenos* = stranger |
 | **Zoophobia** | animals | Gk. *zoon* = animal (zoology) |
+
+<div class="keypoint">**Mnemonic — phobia cluster:** Remember the FIVE most-confused phobias with this image: **"A Crazy Glossy Xeno Hydra"** = **A**crophobia (heights) · **C**laustrophobia (closed spaces) · **G**lossophobia (public speaking) · **X**enophobia (strangers) · **H**ydrophobia (water/rabies). These five appear in at least one paper per year.</div>
 
 **Paper-setter's traps in this cluster:**
 
@@ -376,6 +380,8 @@ mindmap
 | **Ecocide** | the environment |
 | **Tyrannicide** | a tyrant |
 
+<div class="keypoint">**Mnemonic — -cide cluster:** Picture a family dinner gone wrong: **"Patricide → father (paternal), Matricide → mother (maternal), Fratricide → brother (fraternal)"** — the Latin family-relation word always hides at the front. For regicide vs tyrannicide: a KING is a *rex* (Latin), a TYRANT is *tyrannos* (Greek) — the word origin matches the culture that hated tyrants most (Greece).</div>
+
 **Paper-setter's favourite pairings:**
 
 - *matricide* vs *patricide* — quick sex-test.
@@ -410,6 +416,8 @@ mindmap
 | **Patriarchy** | fathers / men |
 | **Matriarchy** | mothers / women |
 | **Anarchy** | no one — absence of rule |
+
+<div class="keypoint">**Mnemonic — -cracy cluster:** "**D**emos rules = **D**emocracy; **A**utos (self) rules = **A**utocracy; **Ploutos** (wealth) rules = **Plutocracy**; **Kakistos** (worst) rules = **Kakistocracy**." Remember: the root always tells you WHO rules. When you see an unfamiliar -cracy word in an MCQ, decode the root before looking at options — the answer is already in the word.</div>
 
 **Compare & contrast:** *democracy* (all people), *ochlocracy* (mob rule — its degenerate form), *plutocracy* (rich rule), *kleptocracy* (thieves rule). These are the *degenerations* a paper-setter loves to test.
 
@@ -480,6 +488,16 @@ Works in both directions — once you know the theme, the word builds itself.
 # PART H — CONFUSABLES (the one-letter traps) {#part-h}
 
 These are **the highest-marked trap type in English papers.** Memorise the pair, laugh at the mix-up, never lose that mark.
+
+<div class="examtip">⚠️ **TRAP — The Big 3 Confusables that appear every year:**
+
+| Pair | Memory trick |
+|---|---|
+| **affect** (v) vs **effect** (n) | **A**ffect = **A**ction (verb); **E**ffect = **E**nd-result (noun). *"The rain **affected** the match; the **effect** was a no-result."* |
+| **principal** vs **principle** | Principal = **pal** at the top (head of school, main); principlE = **E**thics, rulE. *"The **principal** has a strong **principle**."* |
+| **complement** vs **compliment** | complEment = **E**nhances/complet**E**s; complIment = **I** like it (flattery). *"The sauce was a **complement** to the dish; the chef received a **compliment**."* |
+
+</div>
 
 | Pair | Meanings |
 |------|----------|

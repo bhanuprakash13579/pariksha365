@@ -1,715 +1,721 @@
-[
-  {
-    "stem": "Pointing to a man, Rita said, 'His mother is the only daughter of my mother.' How is the man related to Rita?",
-    "options": [
-      {
-        "option_text": "Brother",
-        "is_correct": false
-      },
-      {
-        "option_text": "Son",
-        "is_correct": true
-      },
-      {
-        "option_text": "Nephew",
-        "is_correct": false
-      },
-      {
-        "option_text": "Uncle",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "'Only daughter of my mother' = Rita herself. So his mother is Rita → he is Rita's son.",
-    "subject": "Reasoning",
-    "topic": "Blood relations — mixed tiers",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-22-reas-br-01",
-    "generated_at": "2026-04-22T03:45:00+00:00",
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00001"
-  },
-  {
-    "stem": "If A is the brother of B, B is the sister of C, and C is the father of D, how is D related to A?",
-    "options": [
-      {
-        "option_text": "Brother",
-        "is_correct": false
-      },
-      {
-        "option_text": "Nephew",
-        "is_correct": false
-      },
-      {
-        "option_text": "Niece or nephew",
-        "is_correct": true
-      },
-      {
-        "option_text": "Cousin",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "explanation": "A and C are siblings (both have B as sibling). D is C's child → D is A's niece/nephew. Gender of D is not stated so the safest answer is 'niece or nephew'. gender not specified.",
-    "subject": "Reasoning",
-    "topic": "Blood relations — mixed tiers",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-22-reas-br-02",
-    "generated_at": "2026-04-22T03:45:00+00:00",
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00002",
-    "_fixes": [
-      {
-        "type": "option_tell_fix",
-        "was": "Niece or nephew (gender not specified)",
-        "now": "Niece or nephew",
-        "moved_to_explanation": "gender not specified"
-      }
-    ]
-  },
-  {
-    "stem": "Pointing to a photograph, a man said, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph was it?",
-    "options": [
-      {
-        "option_text": "His own",
-        "is_correct": false
-      },
-      {
-        "option_text": "His son's",
-        "is_correct": true
-      },
-      {
-        "option_text": "His father's",
-        "is_correct": false
-      },
-      {
-        "option_text": "His nephew's",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "'My father's son' with no siblings = the man himself. So 'that man's father = the speaker' → the photograph is of the speaker's son.",
-    "subject": "Reasoning",
-    "topic": "Blood relations — mixed tiers",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-22-reas-br-03",
-    "generated_at": "2026-04-22T03:45:00+00:00",
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00003"
-  },
-  {
-    "stem": "P is the brother of Q. Q is the brother of R. S is the father of P. How is R related to S?",
-    "options": [
-      {
-        "option_text": "Son",
-        "is_correct": false
-      },
-      {
-        "option_text": "Daughter",
-        "is_correct": false
-      },
-      {
-        "option_text": "Son or daughter",
-        "is_correct": true
-      },
-      {
-        "option_text": "Grandson",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "explanation": "P, Q, R are siblings. S is P's father → S is also R's father. R's gender isn't stated, so answer: S's son or daughter. gender of R unknown.",
-    "subject": "Reasoning",
-    "topic": "Blood relations — mixed tiers",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-22-reas-br-04",
-    "generated_at": "2026-04-22T03:45:00+00:00",
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00004",
-    "_fixes": [
-      {
-        "type": "option_tell_fix",
-        "was": "Son or daughter (gender of R unknown)",
-        "now": "Son or daughter",
-        "moved_to_explanation": "gender of R unknown"
-      }
-    ]
-  },
-  {
-    "stem": "In a family, A + B means A is the mother of B; A − B means A is the brother of B; A × B means A is the father of B; A ÷ B means A is the daughter of B. Which expression shows that P is the maternal uncle of Q?",
-    "options": [
-      {
-        "option_text": "P − M + Q",
-        "is_correct": true
-      },
-      {
-        "option_text": "P × M ÷ Q",
-        "is_correct": false
-      },
-      {
-        "option_text": "P + M − Q",
-        "is_correct": false
-      },
-      {
-        "option_text": "Q − M + P",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "Maternal uncle = mother's brother. We need P as brother of Q's mother M. P − M (P is brother of M) + M + Q (M is mother of Q) → P − M + Q. Option A captures this relation.",
-    "subject": "Reasoning",
-    "topic": "Blood relations — mixed tiers",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "HARD",
-    "effort_tier": "B",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-22-reas-br-05",
-    "generated_at": "2026-04-22T03:45:00+00:00",
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00005"
-  },
-  {
-    "stem": "Introducing a woman, a man said, 'Her mother is the only daughter of my mother-in-law.' How is the woman related to the man?",
-    "options": [
-      {
-        "option_text": "Daughter",
-        "is_correct": true
-      },
-      {
-        "option_text": "Sister",
-        "is_correct": false
-      },
-      {
-        "option_text": "Wife",
-        "is_correct": false
-      },
-      {
-        "option_text": "Niece",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "'Only daughter of my mother-in-law' = the man's wife. So the woman's mother is the man's wife → the woman is the man's daughter.",
-    "subject": "Reasoning",
-    "topic": "Blood relations — mixed tiers",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-22-reas-br-06",
-    "generated_at": "2026-04-22T03:45:00+00:00",
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00006"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00007",
-    "stem": "Pointing to a photograph, Kavya says, 'This man is the only son of my paternal grandfather.' How is the man in the photograph related to Kavya?",
-    "options": [
-      {
-        "option_text": "Brother",
-        "is_correct": false
-      },
-      {
-        "option_text": "Uncle",
-        "is_correct": false
-      },
-      {
-        "option_text": "Father",
-        "is_correct": false
-      },
-      {
-        "option_text": "Father",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "Paternal grandfather's only son = Kavya's father. So the man is Kavya's Father.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778568Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00008",
-    "stem": "A is the father of B. B is the sister of C. C is the mother of D. How is A related to D?",
-    "options": [
-      {
-        "option_text": "Father",
-        "is_correct": false
-      },
-      {
-        "option_text": "Grandfather",
-        "is_correct": false
-      },
-      {
-        "option_text": "Uncle",
-        "is_correct": false
-      },
-      {
-        "option_text": "Great-grandfather",
-        "is_correct": false
-      },
-      {
-        "option_text": "Mother",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "A→B (father-daughter), B is sister of C→A is C's father too. C is D's mother → A is D's maternal grandfather.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778590Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00009",
-    "stem": "Rohan says, 'Seema's father is the only son of my mother.' How is Rohan related to Seema?",
-    "options": [
-      {
-        "option_text": "Uncle",
-        "is_correct": false
-      },
-      {
-        "option_text": "Grandfather",
-        "is_correct": false
-      },
-      {
-        "option_text": "Brother",
-        "is_correct": false
-      },
-      {
-        "option_text": "Father",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "My mother's only son = Rohan himself. So Rohan is Seema's father.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778601Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00010",
-    "stem": "Introducing a man to her husband, a woman said, 'His brother's father is the only son of my grandfather.' How is the woman related to the man?",
-    "options": [
-      {
-        "option_text": "Sister",
-        "is_correct": false
-      },
-      {
-        "option_text": "Mother",
-        "is_correct": false
-      },
-      {
-        "option_text": "Daughter",
-        "is_correct": false
-      },
-      {
-        "option_text": "Aunt",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "Only son of her grandfather = her father. Man's brother's father = man's father. So man's father = woman's father → they are siblings. Woman is man's Sister.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778610Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00011",
-    "stem": "P's mother is Q's grandmother. R is P's brother. How is Q related to R?",
-    "options": [
-      {
-        "option_text": "Son/Daughter",
-        "is_correct": false
-      },
-      {
-        "option_text": "Grandson/Granddaughter",
-        "is_correct": false
-      },
-      {
-        "option_text": "Cousin",
-        "is_correct": false
-      },
-      {
-        "option_text": "Nephew/Niece",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "Q's grandmother = P's mother means Q is child of P's sibling (aunt/uncle of P) or Q is P's child. Actually: P's mother is Q's grandmother → Q is P's niece/nephew (Q's parent is P's sibling). R is P's brother (P's sibling). So Q is child of P or R's sibling. If Q's parent is a sibling of P, and R is also P's sibling, Q could be R's child (R's son/daughter). So Q is R's child = Son/Daughter.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778614Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00012",
-    "stem": "Four friends A, B, C, D are related. B is the father of A. D is the son of C. A and C are siblings. How is B related to D?",
-    "options": [
-      {
-        "option_text": "Uncle",
-        "is_correct": false
-      },
-      {
-        "option_text": "Father",
-        "is_correct": false
-      },
-      {
-        "option_text": "Brother",
-        "is_correct": false
-      },
-      {
-        "option_text": "Grandfather",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "A and C are siblings → B (father of A) is also parent of C (A's sibling, so B is C's father). D is C's son → B is D's grandfather.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778619Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00013",
-    "stem": "A woman says of a man, 'His mother-in-law is my mother-in-law's daughter.' How is the woman related to the man?",
-    "options": [
-      {
-        "option_text": "Sister-in-law",
-        "is_correct": false
-      },
-      {
-        "option_text": "Aunt",
-        "is_correct": false
-      },
-      {
-        "option_text": "Wife",
-        "is_correct": false
-      },
-      {
-        "option_text": "Mother",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "HARD",
-    "effort_tier": "C",
-    "staleness_risk": "LOW",
-    "explanation": "My mother-in-law's daughter = my sister-in-law (or husband's sister). The man's mother-in-law = that sister-in-law → the man is married to my husband's sister. So the man is my husband's sister's husband → the man is my brother-in-law. Woman is man's Sister-in-law.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778626Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00014",
-    "stem": "If 'A $ B' means A is the father of B, 'A @ B' means A is the wife of B, and 'A # B' means A is the sister of B, what does 'P $ Q # R @ S' mean?",
-    "options": [
-      {
-        "option_text": "P is the father-in-law of S",
-        "is_correct": false
-      },
-      {
-        "option_text": "P is the uncle of S",
-        "is_correct": false
-      },
-      {
-        "option_text": "Cannot be determined",
-        "is_correct": false
-      },
-      {
-        "option_text": "P is the grandfather of S",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "HARD",
-    "effort_tier": "C",
-    "staleness_risk": "LOW",
-    "explanation": "P$Q: P father of Q. Q#R: Q sister of R. R@S: R wife of S. So R is married to S; R is child of P (P is Q's father and Q is R's sister → P is R's father too). R is S's wife → P is S's father-in-law.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778630Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00015",
-    "stem": "Looking at a portrait Ravi says, 'The father of this girl is my father's only son-in-law.' Ravi is a male. What is the girl's relation to Ravi?",
-    "options": [
-      {
-        "option_text": "Niece",
-        "is_correct": false
-      },
-      {
-        "option_text": "Sister",
-        "is_correct": false
-      },
-      {
-        "option_text": "Cousin",
-        "is_correct": false
-      },
-      {
-        "option_text": "Daughter",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "Father's only son-in-law = husband of Ravi's only sister. The girl's father is Ravi's brother-in-law (sister's husband). So the girl is the daughter of Ravi's sister → the girl is Ravi's Niece.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778633Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00016",
-    "stem": "Suresh told Vikas, 'Yesterday I met the only brother of the daughter of my grandmother.' Who did Suresh meet?",
-    "options": [
-      {
-        "option_text": "Himself",
-        "is_correct": false
-      },
-      {
-        "option_text": "His father",
-        "is_correct": false
-      },
-      {
-        "option_text": "His cousin",
-        "is_correct": false
-      },
-      {
-        "option_text": "His uncle",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "Grandmother's daughter = Suresh's mother or aunt. If 'my grandmother' is paternal: daughters could be Suresh's aunts. The only brother of his grandmother's daughter = his uncle (or his own father if grandmother's daughter = his mother). 'Only brother of the daughter' — if the daughter is his mother, then her only brother is Suresh's maternal uncle. But the question says Suresh 'met' someone, so it's likely his uncle. But a simpler read: grandmother's daughter = his mother; only brother of his mother = his maternal uncle. Answer: His uncle.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778637Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00017",
-    "stem": "Jayesh is Kamla's brother. Sonu is Kamla's mother. Vishnu is Sonu's father. Rekha is Vishnu's mother. How is Jayesh related to Vishnu?",
-    "options": [
-      {
-        "option_text": "Grandson",
-        "is_correct": false
-      },
-      {
-        "option_text": "Great-grandson",
-        "is_correct": false
-      },
-      {
-        "option_text": "Brother",
-        "is_correct": false
-      },
-      {
-        "option_text": "Son",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "Kamla's mother is Sonu; Kamla's brother is Jayesh → Jayesh's mother is also Sonu. Vishnu is Sonu's father → Vishnu is Jayesh's maternal grandfather. So Jayesh is Vishnu's grandson.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778645Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00018",
-    "stem": "In a family photo Deepa says, 'This lady is the wife of the grandson of my mother.' Deepa is female. Who is the lady?",
-    "options": [
-      {
-        "option_text": "Deepa's niece-in-law / daughter-in-law",
-        "is_correct": false
-      },
-      {
-        "option_text": "Deepa's granddaughter-in-law",
-        "is_correct": false
-      },
-      {
-        "option_text": "Deepa's cousin",
-        "is_correct": false
-      },
-      {
-        "option_text": "Deepa's sister-in-law",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "My mother's grandson = Deepa's own son or her sibling's son. The wife of that grandson = Deepa's daughter-in-law (if it's Deepa's son) or nephew's wife (niece-in-law). The lady is Deepa's daughter-in-law or niece-in-law.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778650Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00019",
-    "stem": "Pointing to a man in a photograph, a woman says, 'He is the only son of my mother's mother.' How is the woman related to the man in the photograph?",
-    "options": [
-      {
-        "option_text": "Niece",
-        "is_correct": false
-      },
-      {
-        "option_text": "Daughter",
-        "is_correct": false
-      },
-      {
-        "option_text": "Grand-niece",
-        "is_correct": false
-      },
-      {
-        "option_text": "Granddaughter",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "My mother's mother = my maternal grandmother. Her only son = my maternal granduncle (my mother's brother, i.e., maternal uncle). So the man is the woman's maternal uncle. The woman is man's Niece.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778660Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00020",
-    "stem": "If X is Y's brother, Y is Z's sister, Z is W's daughter, and W is V's husband, how is X related to V?",
-    "options": [
-      {
-        "option_text": "Son",
-        "is_correct": false
-      },
-      {
-        "option_text": "Son-in-law",
-        "is_correct": false
-      },
-      {
-        "option_text": "Nephew",
-        "is_correct": false
-      },
-      {
-        "option_text": "Grandson",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "V is W's husband, W is Z's mother. Z is Y's sister. Y is X's sister. So X, Y, Z are all siblings; W and V are their parents. X is V's son.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778663Z"
-  },
-  {
-    "id": "sgk_REAS_BLOOD_RELATION_MIXED_00021",
-    "stem": "Sangeeta is the niece of Ashok. Ashok's mother is Kamla. Kamla's husband is Raju. How is Sangeeta related to Raju?",
-    "options": [
-      {
-        "option_text": "Grand-niece",
-        "is_correct": false
-      },
-      {
-        "option_text": "Niece",
-        "is_correct": false
-      },
-      {
-        "option_text": "Daughter-in-law",
-        "is_correct": false
-      },
-      {
-        "option_text": "Granddaughter",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Blood Relations",
-    "topic_code": "RSN_BLOOD",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "Sangeeta is niece of Ashok → Sangeeta is child of Ashok's sibling. Kamla (Ashok's mother) and Raju are Ashok's parents. So Sangeeta's parent is Ashok's sibling, and Kamla & Raju are grandparents of Sangeeta → Sangeeta is their granddaughter.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:24:17.778667Z"
-  }
-]
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Blood Relation",
+  "topic_code": "REAS_BLOOD_RELATION_MIXED",
+  "questions": [
+    {
+      "stem": "Pointing to a man, Rita said, 'His mother is the only daughter of my mother.' How is the man related to Rita?",
+      "options": [
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Son",
+          "is_correct": true
+        },
+        {
+          "option_text": "Nephew",
+          "is_correct": false
+        },
+        {
+          "option_text": "Uncle",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "'Only daughter of my mother' = Rita herself. So his mother is Rita → he is Rita's son.",
+      "subject": "Reasoning",
+      "topic": "Blood relations — mixed tiers",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-br-01",
+      "generated_at": "2026-04-22T03:45:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00001"
+    },
+    {
+      "stem": "If A is the brother of B, B is the sister of C, and C is the father of D, how is D related to A?",
+      "options": [
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nephew",
+          "is_correct": false
+        },
+        {
+          "option_text": "Niece or nephew",
+          "is_correct": true
+        },
+        {
+          "option_text": "Cousin",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "A and C are siblings (both have B as sibling). D is C's child → D is A's niece/nephew. Gender of D is not stated so the safest answer is 'niece or nephew'. gender not specified.",
+      "subject": "Reasoning",
+      "topic": "Blood relations — mixed tiers",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-br-02",
+      "generated_at": "2026-04-22T03:45:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00002",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Niece or nephew (gender not specified)",
+          "now": "Niece or nephew",
+          "moved_to_explanation": "gender not specified"
+        }
+      ]
+    },
+    {
+      "stem": "Pointing to a photograph, a man said, 'I have no brother or sister, but that man's father is my father's son.' Whose photograph was it?",
+      "options": [
+        {
+          "option_text": "His own",
+          "is_correct": false
+        },
+        {
+          "option_text": "His son's",
+          "is_correct": true
+        },
+        {
+          "option_text": "His father's",
+          "is_correct": false
+        },
+        {
+          "option_text": "His nephew's",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "'My father's son' with no siblings = the man himself. So 'that man's father = the speaker' → the photograph is of the speaker's son.",
+      "subject": "Reasoning",
+      "topic": "Blood relations — mixed tiers",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-br-03",
+      "generated_at": "2026-04-22T03:45:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00003"
+    },
+    {
+      "stem": "P is the brother of Q. Q is the brother of R. S is the father of P. How is R related to S?",
+      "options": [
+        {
+          "option_text": "Son",
+          "is_correct": false
+        },
+        {
+          "option_text": "Daughter",
+          "is_correct": false
+        },
+        {
+          "option_text": "Son or daughter",
+          "is_correct": true
+        },
+        {
+          "option_text": "Grandson",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "P, Q, R are siblings. S is P's father → S is also R's father. R's gender isn't stated, so answer: S's son or daughter. gender of R unknown.",
+      "subject": "Reasoning",
+      "topic": "Blood relations — mixed tiers",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-br-04",
+      "generated_at": "2026-04-22T03:45:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00004",
+      "_fixes": [
+        {
+          "type": "option_tell_fix",
+          "was": "Son or daughter (gender of R unknown)",
+          "now": "Son or daughter",
+          "moved_to_explanation": "gender of R unknown"
+        }
+      ]
+    },
+    {
+      "stem": "In a family, A + B means A is the mother of B; A − B means A is the brother of B; A × B means A is the father of B; A ÷ B means A is the daughter of B. Which expression shows that P is the maternal uncle of Q?",
+      "options": [
+        {
+          "option_text": "P − M + Q",
+          "is_correct": true
+        },
+        {
+          "option_text": "P × M ÷ Q",
+          "is_correct": false
+        },
+        {
+          "option_text": "P + M − Q",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q − M + P",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Maternal uncle = mother's brother. We need P as brother of Q's mother M. P − M (P is brother of M) + M + Q (M is mother of Q) → P − M + Q. Option A captures this relation.",
+      "subject": "Reasoning",
+      "topic": "Blood relations — mixed tiers",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-br-05",
+      "generated_at": "2026-04-22T03:45:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00005"
+    },
+    {
+      "stem": "Introducing a woman, a man said, 'Her mother is the only daughter of my mother-in-law.' How is the woman related to the man?",
+      "options": [
+        {
+          "option_text": "Daughter",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sister",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wife",
+          "is_correct": false
+        },
+        {
+          "option_text": "Niece",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "'Only daughter of my mother-in-law' = the man's wife. So the woman's mother is the man's wife → the woman is the man's daughter.",
+      "subject": "Reasoning",
+      "topic": "Blood relations — mixed tiers",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-br-06",
+      "generated_at": "2026-04-22T03:45:00+00:00",
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00006"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00007",
+      "stem": "Pointing to a photograph, Kavya says, 'This man is the only son of my paternal grandfather.' How is the man in the photograph related to Kavya?",
+      "options": [
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Uncle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Father",
+          "is_correct": false
+        },
+        {
+          "option_text": "Father",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "Paternal grandfather's only son = Kavya's father. So the man is Kavya's Father.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778568Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00008",
+      "stem": "A is the father of B. B is the sister of C. C is the mother of D. How is A related to D?",
+      "options": [
+        {
+          "option_text": "Father",
+          "is_correct": false
+        },
+        {
+          "option_text": "Grandfather",
+          "is_correct": false
+        },
+        {
+          "option_text": "Uncle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Great-grandfather",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mother",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "A→B (father-daughter), B is sister of C→A is C's father too. C is D's mother → A is D's maternal grandfather.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778590Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00009",
+      "stem": "Rohan says, 'Seema's father is the only son of my mother.' How is Rohan related to Seema?",
+      "options": [
+        {
+          "option_text": "Uncle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Grandfather",
+          "is_correct": false
+        },
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Father",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "My mother's only son = Rohan himself. So Rohan is Seema's father.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778601Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00010",
+      "stem": "Introducing a man to her husband, a woman said, 'His brother's father is the only son of my grandfather.' How is the woman related to the man?",
+      "options": [
+        {
+          "option_text": "Sister",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Daughter",
+          "is_correct": false
+        },
+        {
+          "option_text": "Aunt",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "Only son of her grandfather = her father. Man's brother's father = man's father. So man's father = woman's father → they are siblings. Woman is man's Sister.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778610Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00011",
+      "stem": "P's mother is Q's grandmother. R is P's brother. How is Q related to R?",
+      "options": [
+        {
+          "option_text": "Son/Daughter",
+          "is_correct": false
+        },
+        {
+          "option_text": "Grandson/Granddaughter",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nephew/Niece",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "Q's grandmother = P's mother means Q is child of P's sibling (aunt/uncle of P) or Q is P's child. Actually: P's mother is Q's grandmother → Q is P's niece/nephew (Q's parent is P's sibling). R is P's brother (P's sibling). So Q is child of P or R's sibling. If Q's parent is a sibling of P, and R is also P's sibling, Q could be R's child (R's son/daughter). So Q is R's child = Son/Daughter.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778614Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00012",
+      "stem": "Four friends A, B, C, D are related. B is the father of A. D is the son of C. A and C are siblings. How is B related to D?",
+      "options": [
+        {
+          "option_text": "Uncle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Father",
+          "is_correct": false
+        },
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Grandfather",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "A and C are siblings → B (father of A) is also parent of C (A's sibling, so B is C's father). D is C's son → B is D's grandfather.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778619Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00013",
+      "stem": "A woman says of a man, 'His mother-in-law is my mother-in-law's daughter.' How is the woman related to the man?",
+      "options": [
+        {
+          "option_text": "Sister-in-law",
+          "is_correct": false
+        },
+        {
+          "option_text": "Aunt",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wife",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mother",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "LOW",
+      "explanation": "My mother-in-law's daughter = my sister-in-law (or husband's sister). The man's mother-in-law = that sister-in-law → the man is married to my husband's sister. So the man is my husband's sister's husband → the man is my brother-in-law. Woman is man's Sister-in-law.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778626Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00014",
+      "stem": "If 'A $ B' means A is the father of B, 'A @ B' means A is the wife of B, and 'A # B' means A is the sister of B, what does 'P $ Q # R @ S' mean?",
+      "options": [
+        {
+          "option_text": "P is the father-in-law of S",
+          "is_correct": false
+        },
+        {
+          "option_text": "P is the uncle of S",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        },
+        {
+          "option_text": "P is the grandfather of S",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "LOW",
+      "explanation": "P$Q: P father of Q. Q#R: Q sister of R. R@S: R wife of S. So R is married to S; R is child of P (P is Q's father and Q is R's sister → P is R's father too). R is S's wife → P is S's father-in-law.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778630Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00015",
+      "stem": "Looking at a portrait Ravi says, 'The father of this girl is my father's only son-in-law.' Ravi is a male. What is the girl's relation to Ravi?",
+      "options": [
+        {
+          "option_text": "Niece",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sister",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin",
+          "is_correct": false
+        },
+        {
+          "option_text": "Daughter",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "Father's only son-in-law = husband of Ravi's only sister. The girl's father is Ravi's brother-in-law (sister's husband). So the girl is the daughter of Ravi's sister → the girl is Ravi's Niece.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778633Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00016",
+      "stem": "Suresh told Vikas, 'Yesterday I met the only brother of the daughter of my grandmother.' Who did Suresh meet?",
+      "options": [
+        {
+          "option_text": "Himself",
+          "is_correct": false
+        },
+        {
+          "option_text": "His father",
+          "is_correct": false
+        },
+        {
+          "option_text": "His cousin",
+          "is_correct": false
+        },
+        {
+          "option_text": "His uncle",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "Grandmother's daughter = Suresh's mother or aunt. If 'my grandmother' is paternal: daughters could be Suresh's aunts. The only brother of his grandmother's daughter = his uncle (or his own father if grandmother's daughter = his mother). 'Only brother of the daughter' — if the daughter is his mother, then her only brother is Suresh's maternal uncle. But the question says Suresh 'met' someone, so it's likely his uncle. But a simpler read: grandmother's daughter = his mother; only brother of his mother = his maternal uncle. Answer: His uncle.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778637Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00017",
+      "stem": "Jayesh is Kamla's brother. Sonu is Kamla's mother. Vishnu is Sonu's father. Rekha is Vishnu's mother. How is Jayesh related to Vishnu?",
+      "options": [
+        {
+          "option_text": "Grandson",
+          "is_correct": false
+        },
+        {
+          "option_text": "Great-grandson",
+          "is_correct": false
+        },
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Son",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "Kamla's mother is Sonu; Kamla's brother is Jayesh → Jayesh's mother is also Sonu. Vishnu is Sonu's father → Vishnu is Jayesh's maternal grandfather. So Jayesh is Vishnu's grandson.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778645Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00018",
+      "stem": "In a family photo Deepa says, 'This lady is the wife of the grandson of my mother.' Deepa is female. Who is the lady?",
+      "options": [
+        {
+          "option_text": "Deepa's niece-in-law / daughter-in-law",
+          "is_correct": false
+        },
+        {
+          "option_text": "Deepa's granddaughter-in-law",
+          "is_correct": false
+        },
+        {
+          "option_text": "Deepa's cousin",
+          "is_correct": false
+        },
+        {
+          "option_text": "Deepa's sister-in-law",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "My mother's grandson = Deepa's own son or her sibling's son. The wife of that grandson = Deepa's daughter-in-law (if it's Deepa's son) or nephew's wife (niece-in-law). The lady is Deepa's daughter-in-law or niece-in-law.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778650Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00019",
+      "stem": "Pointing to a man in a photograph, a woman says, 'He is the only son of my mother's mother.' How is the woman related to the man in the photograph?",
+      "options": [
+        {
+          "option_text": "Niece",
+          "is_correct": false
+        },
+        {
+          "option_text": "Daughter",
+          "is_correct": false
+        },
+        {
+          "option_text": "Grand-niece",
+          "is_correct": false
+        },
+        {
+          "option_text": "Granddaughter",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "My mother's mother = my maternal grandmother. Her only son = my maternal granduncle (my mother's brother, i.e., maternal uncle). So the man is the woman's maternal uncle. The woman is man's Niece.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778660Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00020",
+      "stem": "If X is Y's brother, Y is Z's sister, Z is W's daughter, and W is V's husband, how is X related to V?",
+      "options": [
+        {
+          "option_text": "Son",
+          "is_correct": false
+        },
+        {
+          "option_text": "Son-in-law",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nephew",
+          "is_correct": false
+        },
+        {
+          "option_text": "Grandson",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "V is W's husband, W is Z's mother. Z is Y's sister. Y is X's sister. So X, Y, Z are all siblings; W and V are their parents. X is V's son.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778663Z"
+    },
+    {
+      "id": "sgk_REAS_BLOOD_RELATION_MIXED_00021",
+      "stem": "Sangeeta is the niece of Ashok. Ashok's mother is Kamla. Kamla's husband is Raju. How is Sangeeta related to Raju?",
+      "options": [
+        {
+          "option_text": "Grand-niece",
+          "is_correct": false
+        },
+        {
+          "option_text": "Niece",
+          "is_correct": false
+        },
+        {
+          "option_text": "Daughter-in-law",
+          "is_correct": false
+        },
+        {
+          "option_text": "Granddaughter",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "RSN_BLOOD",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "Sangeeta is niece of Ashok → Sangeeta is child of Ashok's sibling. Kamla (Ashok's mother) and Raju are Ashok's parents. So Sangeeta's parent is Ashok's sibling, and Kamla & Raju are grandparents of Sangeeta → Sangeeta is their granddaughter.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:24:17.778667Z"
+    }
+  ]
+}

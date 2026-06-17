@@ -351,7 +351,7 @@ wheat + barley + goat + sheep; mud-brick houses; dentistry evidence!
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["PREHISTORY AND STONE AGES"]:::root
     R --> ST["Stone Age Divisions"]:::key
     R --> SN["Key Sites in India"]:::date
@@ -376,6 +376,29 @@ flowchart TD
 > hymns — and where the exam's cheapest marks are.
 
 ### 2.1 Discovery + dating
+
+<div class="keypoint">
+
+**TIMELINE ANCHOR — IVC Discovery sequence:**
+
+| Year | Person | What they did |
+|---|---|---|
+| 1826 | Charles Masson | Noted Harappa mounds (but didn't identify) |
+| 1856 | Brunton brothers | Used Harappan bricks for railway ballast |
+| 1861 | Alexander Cunningham | Founded ASI; visited Harappa 1872 |
+| **1921** | **Daya Ram Sahni** | **Excavated Harappa** |
+| **1922** | **R.D. Banerji** | **Excavated Mohenjo-daro** |
+| **24 Sep 1924** | **Sir John Marshall** | Announced IVC to the world |
+
+**Memory shortcut:** "**Harappa 1921 = Daya Ram Sahni**; **Mohenjo-daro 1922 = R.D. Banerji**" — one year apart, both under direction of Sir John Marshall.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** Candidates mix up who found which site. Remember: **Harappa = Sahni** (both "H"/"S" appear in each other), **Mohenjo-daro = Banerji** (both "B"/"M" are different — just memorise the order 1921→1922). Sir John Marshall was the director who oversaw both — he did not personally dig.
+
+</div>
 
 - **1826** — **Charles Masson** (ex-soldier turned explorer) noted a brick
   mound at Harappa; published 1842, not identified as a lost civilisation.
@@ -465,6 +488,15 @@ Order by **size**: Rakhigarhi (~550 ha — **largest**) > Mohenjo-daro > Harappa
 | **Bhirrana** | Haryana | 2005 (L.S. Rao) | Some claim earliest site — ~7500 BCE pottery (controversial). |
 
 ### 2.3 Town planning — the hallmark feature
+
+<div class="keypoint">
+
+**Mnemonic — "GRID-BURN"** for IVC town-planning features (already noted in §2.8 — use it here too):
+**G**rid streets, **R**atio 1:2:4 bricks, **I**ndus-style covered drains, **D**ual mounds (citadel + lower town), **B**urnt bricks (kiln-fired), **U**niform weights, **R**egulation across 1,500 km, **N**o temples or palaces clearly identified.
+
+**Key fact to memorise:** Every Harappan city follows the same grid-drain-brick pattern across 1,500 km — this shows a **central standardising authority**, not just local tradition. Examiners test "what does the uniformity suggest?"
+
+</div>
 
 #### Citadel + Lower Town model
 
@@ -633,7 +665,7 @@ into **Cemetery H** (Punjab), **Jhukar** (Sindh), **Rangpur IIB/C** (Gujarat),
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["HARAPPAN CIVILISATION<br>3300-1300 BCE"]:::root
     R --> SI["Major Sites"]:::key
     R --> FE["Key Features"]:::key
@@ -674,6 +706,21 @@ found no Steppe ancestry in the IVC skeleton sampled, consistent with a
 post-IVC migration.
 
 ### 3.2 Early vs Later Vedic — the contrast you must know
+
+<div class="keypoint">
+
+**Quick recall — Early vs Later Vedic in 4 contrasts:**
+
+| Axis | Early Vedic (1500–1000 BCE) | Later Vedic (1000–600 BCE) |
+|---|---|---|
+| Geography | Punjab (Indus basin) | Gangetic plain (eastward shift) |
+| Economy | Cattle = wealth (pastoral) | Plough + rice + iron tools |
+| Society | Relatively equal; women in rituals | Varna hardens into hereditary jati |
+| Religion | Nature gods (Indra, Agni, Varuna) | Trimurti + elaborate yajnas + Upanishads |
+
+**Mnemonic — "GELS"**: Geography shifts east, Economy shifts to agriculture, Life-stages (ashrama) codified, Society hardens.
+
+</div>
 
 | Feature | **Early Vedic (1500 – 1000 BCE)** | **Later Vedic (1000 – 600 BCE)** |
 |---------|-----------------------------------|-----------------------------------|
@@ -749,7 +796,7 @@ Originally **functional**. Became **hereditary** in the later Vedic period
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["THE VEDIC AGE<br>1500-600 BCE"]:::root
     R --> EV["Early vs Later Vedic"]:::key
     R --> VE["4 Vedas"]:::key
@@ -833,7 +880,7 @@ graph LR
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["16 MAHAJANAPADAS<br>600-300 BCE"]:::root
     R --> MJ["Key Mahajanapadas"]:::key
     R --> MG["Rise of Magadha"]:::key
@@ -904,6 +951,30 @@ Gotami** persuaded him (with Ananda's intercession).
 
 ### 5.4 Buddhist Councils — the 4 you must know
 
+<div class="keypoint">
+
+**TIMELINE ANCHOR — 4 Buddhist Councils:**
+
+| Council | Place | Year | Patron | Chair | What happened |
+|---|---|---|---|---|---|
+| **1st** | Rajagriha | 483 BCE | Ajatashatru | **Mahakashyapa** | Compiled Sutta + Vinaya Pitakas |
+| **2nd** | Vaishali | 383 BCE | Kalashoka | **Sabakami** | First schism: Sthaviras vs Mahasanghikas |
+| **3rd** | Pataliputra | 250 BCE | **Ashoka** | **Moggaliputta Tissa** | Added Abhidhamma Pitaka; sent missions abroad |
+| **4th** | Kundalavana (Kashmir) | 1st c CE | **Kanishka** | **Vasumitra** | Mahayana crystallised; commentaries compiled |
+
+**Mnemonic — "R-V-P-K"** for places: **R**ajagriha, **V**aishali, **P**ataliputra, **K**undalavana/Kashmir.
+Say it as: "**Really Very Pretty Kashmir**" — the 4 council locations in order.
+
+**Chair shortcuts:** 1st = Maha**k**ashyapa; 2nd = **S**abakami; 3rd = **M**oggaliputta **T**issa (under Ashoka); 4th = **V**asumitra (under Kanishka).
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** The 3rd Council was at **Pataliputra** under **Ashoka** — candidates often confuse Pataliputra with Rajagriha (the 1st council). Rajagriha = 1st council (483 BCE); Pataliputra = 3rd council (250 BCE, Ashoka). Also note: the **4th council** in **Kashmir** is associated with **Kanishka** (Kushana king) and crystallised Mahayana Buddhism — not Hinayana.
+
+</div>
+
 ```mermaid
 graph TD
     C1[1st Council<br/>Rajagriha 483 BCE<br/>Ajatashatru<br/>Mahakashyapa chair<br/>compiled Sutta + Vinaya Pitakas]
@@ -963,7 +1034,7 @@ B.R. Ambedkar's Navayana movement** (conversion of ~5 lakh Dalits at
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["BUDDHISM"]:::root
     R --> LI["Life of the Buddha"]:::date
     R --> TE["Core Teachings"]:::key
@@ -1078,7 +1149,7 @@ while **Sthulabhadra** stayed in Magadha:
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["JAINISM"]:::root
     R --> MV["Mahavira's Life"]:::date
     R --> TE["Core Teachings"]:::key
@@ -1133,6 +1204,25 @@ Consolidated the empire south to Karnataka. Greek accounts call him
 **Ajivika** sect. Received a Greek ambassador **Deimachus**.
 
 ### 7.3 Ashoka the Great (r. 268 – 232 BCE)
+
+<div class="keypoint">
+
+**Quick recall — Ashoka's 5 key facts:**
+1. **Kalinga War** = 261 BCE → moral transformation → adopts Dhamma
+2. **Edicts in Brahmi** script (deciphered by James Prinsep, **1837**)
+3. **Title on edicts** = "Devanampiya Piyadasi" (identified as Ashoka only in **1915**)
+4. **Lion Capital at Sarnath** = India's national emblem (adopted 26 Jan 1950)
+5. **Dharma Chakra** on India's flag = from Sarnath Lion Capital
+
+**Mnemonic — "K-E-T-L-D"**: **K**alinga War, **E**dicts in Brahmi, **T**itle "Piyadasi", **L**ion Capital, **D**hamma missions abroad.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** The Brahmi script was deciphered by **James Prinsep in 1837** — not by John Marshall (who announced IVC in 1924) or Alexander Cunningham. These three names get swapped in options frequently. Also: Ashoka's edicts say "Piyadasi" — his name "Ashoka" was confirmed only in **1915** by linking an inscription at Maski.
+
+</div>
 
 - Killed rivals to seize the throne.
 - **Kalinga War (261 BCE)** — 100,000 killed, 150,000 deported → Ashoka's
@@ -1199,7 +1289,7 @@ in **185 BCE**, founding the **Sunga dynasty**.
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["MAURYAN EMPIRE<br>322-185 BCE"]:::root
     R --> FO["Foundation"]:::date
     R --> AS["Ashoka the Great"]:::date
@@ -1327,6 +1417,23 @@ the finest ever struck. Tag: "**Golden Age of Classical India**".
 
 ### 8.2 Major Gupta rulers
 
+<div class="keypoint">
+
+**Mnemonic — "SGC-SCI-KS"** for Gupta rulers in order:
+**S**ri Gupta → **G**hatotkacha → **C**handragupta I → **S**amudragupta → **C**handragupta II → **K**umaragupta → **S**kandagupta.
+
+Or remember: "**Saintly Ghosts Can Sing Classical Kannada Songs**."
+
+**The "Golden Age" ruler = Chandragupta II (Vikramaditya)**, not Samudragupta or Chandragupta I. Samudragupta = "Napoleon" (conqueror). Chandragupta II = cultural peak. Students confuse these two.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "Vikramaditya" is a **title** (meaning "Sun of Valour"), not a personal name. **Chandragupta II** carried this title. The legendary Vikramaditya of the *Vetala Panchavimsati* (who had 9 gems including Kalidasa in his court) = Chandragupta II. Do not confuse with Chandragupta I (Gupta Era founder) or Chandragupta Maurya (322 BCE). Three different Chandraguptas — this trips up many candidates.
+
+</div>
+
 | Ruler | Dates | Key facts |
 |-------|-------|-----------|
 | **Sri Gupta** | c. 240 – 280 CE | Founder; obscure. |
@@ -1380,7 +1487,7 @@ the finest ever struck. Tag: "**Golden Age of Classical India**".
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["GUPTA AGE<br>320-550 CE - Golden Age"]:::root
     R --> RU["Key Rulers"]:::date
     R --> AC["Achievements in Arts + Science"]:::key
@@ -1456,7 +1563,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["POST-GUPTA DYNASTIES<br>600-900 CE"]:::root
     R --> HR["Harsha of Kanauj"]:::date
     R --> CH["Chalukyas of Vatapi"]:::date
@@ -1685,6 +1792,19 @@ the next 320 years, **five Muslim dynasties** rule Delhi.
 | 4 | **Sayyid** | 1414 – 1451 | **Khizr Khan** | Alam Shah |
 | 5 | **Lodi** | 1451 – 1526 | **Bahlul Lodi** | **Ibrahim Lodi** (d. Panipat I) |
 
+<div class="keypoint">
+
+**Mnemonic — "MKTSL"** (Mamluk-Khilji-Tughlaq-Sayyid-Lodi): **"My Kind Teacher Said Listen"**
+
+**Quick facts per dynasty (the one thing per dynasty examiners test):**
+- Mamluk: **Iltutmish** = silver tanka + Iqta system; **Razia** = only woman sultan; **Balban** = "Zillullah"
+- Khilji: **Alauddin** = market controls + Chittor 1303 + Malik Kafur
+- Tughlaq: **Muhammad bin Tughlaq** = capital transfer + token currency; **Firoz** = canals + moved Ashokan pillars
+- Sayyid: weakest dynasty — just know the name
+- Lodi: **Sikandar** moved capital to Agra 1504; **Ibrahim Lodi** died at Panipat I 1526
+
+</div>
+
 <div class="examtip">
 
 **Mnemonic — "MKTSL"** (Mamluk-Khilji-Tughlaq-Sayyid-Lodi). Or:
@@ -1806,6 +1926,29 @@ Two streams:
 
 ### 13.3 The Vaishnava acharyas — philosophical Bhakti
 
+<div class="keypoint">
+
+**Quick recall — 4 main Vedantic schools (exam favourite):**
+
+| School | Acharya | Core idea | Region |
+|---|---|---|---|
+| **Advaita** (non-dualism) | **Shankaracharya** | Brahman = Atman; world is maya | Kerala |
+| **Vishishtadvaita** (qualified non-dualism) | **Ramanuja** | God is personal; soul + God distinct but related | Tamil Nadu |
+| **Dvaita** (dualism) | **Madhvacharya** | Soul + God permanently separate | Karnataka (Udupi) |
+| **Shuddhadvaita** (pure non-dualism) | **Vallabhacharya** | Pushtimarg; Krishna bhakti | Gujarat |
+
+**Mnemonic — "SRMV" = "Smart Rajasthan Minds Value"**: Shankara (Advaita), Ramanuja (Vishishtadvaita), Madhva (Dvaita), Vallabha (Shuddhadvaita).
+
+**Exam shortcut:** The one most often tested as a pairing = **Ramanuja + Vishishtadvaita** and **Madhvacharya + Dvaita** (Karnataka). Shankara is too famous to confuse; Vallabha is tested less often.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** Shankaracharya (788–820 CE) is NOT a Bhakti saint in the traditional sense — he is a philosopher who revived Advaita Vedanta and challenged Buddhism through debate. Examiners sometimes list him among Bhakti saints to trick. His role was philosophical reform, not devotional mass movement. The Bhakti saints (Kabir, Tukaram, Mirabai, Chaitanya) came much later.
+
+</div>
+
 | Acharya | School | Region | Key idea |
 |---|---|---|---|
 | **Shankaracharya** (788–820) | **Advaita** (non-dualism) | Kerala | Brahman = Atman; world is maya; founded **4 mathas** (Sringeri, Puri, Dwarka, Badrinath) |
@@ -1881,6 +2024,25 @@ Sufi orders are called **silsilahs**; ~12 reached India; **4 are
 exam-critical**.
 
 ### 14.2 The 4 major silsilahs in India
+
+<div class="keypoint">
+
+**Mnemonic — "CSNQ"** for the 4 major Sufi orders: **C**hishti, **S**uhrawardi, **N**aqshbandi, **Q**adiri.
+Memory sentence: "**Chishtis Serve Noble Qawwalis**."
+
+**Key distinctions — what examiners test:**
+- **Chishti** = most popular in India; **refused state patronage** (unique); Ajmer centre; famous for music (sama/qawwali)
+- **Suhrawardi** = **accepted state patronage** (contrast with Chishti); Multan centre
+- **Naqshbandi** = orthodox; **opposed music + dancing**; Sheikh Ahmad Sirhindi "Mujaddid Alf Sani" was their most famous
+- **Qadiri** = Mian Mir (Golden Temple tradition); Dara Shukoh was a disciple
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** The Chishti order's defining feature is that they **refused royal gifts and state patronage** — Nizamuddin Auliya famously never visited the Sultan's court. Examiners test this contrast with the Suhrawardi order (which accepted state support). Do not confuse Chishti (Ajmer) with Qadiri (Punjab).
+
+</div>
 
 | Silsilah | Founder in India | Centre | Famous saints |
 |---|---|---|---|
@@ -2027,7 +2189,7 @@ After ~170 years the Bahmani breaks into **5 Deccan Sultanates**:
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["MEDIEVAL INDIA<br>650 - 1526"]:::root
     R --> NK["North Indian Kingdoms"]:::key
     R --> INV["Islamic Invasions"]:::date
@@ -2214,6 +2376,21 @@ mid-1700s becomes the de-facto power in India.
 Though not a Mughal, his **5-year reign sets the template** that Akbar
 later refines.
 
+<div class="keypoint">
+
+**Mnemonic — "GT-RS-PD"** for Sher Shah's contributions:
+**G**rand Trunk Road (Sonargaon → Kabul), **T**omb at Sasaram, **R**upiya coin (silver), **S**arkar-Pargana system (land administration), **P**ostal relay system, **D**ied at Kalinjar 1545.
+
+**Quick shortcut:** Sher Shah in 5 years did more administrative work than most emperors do in 50. His reforms were so good that Akbar **borrowed** them: Todar Mal's Zabti = Sher Shah's measurement system refined; Grand Trunk Road = still in use.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** The **silver Rupiya** was introduced by **Sher Shah Suri** (1540–45), NOT by the Mughals. Candidates often attribute it to Akbar or Aurangzeb. Sher Shah also standardised weights and measures — an early standardisation effort. Also: Sher Shah was NOT a Mughal — he was a **Sur Afghan** who defeated Humayun and ruled 1540–45 in the Mughal interregnum.
+
+</div>
+
 - **Born Farid Khan**; given title "Sher Khan" for killing a tiger.
 - Built the **Grand Trunk Road** (Sonargaon, Bengal → Kabul) and built
   **1,700 sarais** (rest-houses) along it.
@@ -2314,6 +2491,28 @@ later refines.
 - Wrote **Fatawa-i-Alamgiri** (compendium of Sunni jurisprudence).
 
 ### 16.8 Three Battles of Panipat — never confuse them
+
+<div class="keypoint">
+
+**TIMELINE ANCHOR — 3 Battles of Panipat:**
+
+| Battle | Date | Mughal/Winner | Loser | Result |
+|---|---|---|---|---|
+| **Panipat I** | **21 Apr 1526** | **Babur** | Ibrahim Lodi | Mughal Empire founded |
+| **Panipat II** | **5 Nov 1556** | **Akbar** (Bairam Khan) | Hemu (Hindu king) | Mughal power secured |
+| **Panipat III** | **14 Jan 1761** | **Ahmad Shah Abdali** | Marathas (Sadashivrao Bhau) | Maratha expansion halted |
+
+**Mnemonic — "BIL → Babur Ibrahim Lodi" (Panipat I); "ABH → Akbar Beats Hemu" (Panipat II); "AAM → Abdali Against Marathas" (Panipat III).**
+
+**Key insight for exams:** Panipat III (1761) is NOT a Mughal battle — the Mughals were already weak. It's the Afghan Abdali vs the Marathas. The British were NOT involved.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** Panipat III (14 Jan 1761) is widely confused. The British did **not** fight at Panipat III — they were watching. **Ahmad Shah Abdali (Durrani)** of Afghanistan won. The Marathas were led by **Sadashivrao Bhau**. This battle created the power vacuum that the British EIC later filled — but the British did not fight here.
+
+</div>
 
 | Battle | Date | Combatants | Winner |
 |---|---|---|---|
@@ -2476,7 +2675,7 @@ power.</div>
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["MUGHALS + MARATHAS<br>1526 - 1803"]:::root
     R --> MUG["Six Great Mughals"]:::key
     R --> SUR["Sur Interregnum"]:::date
@@ -2519,6 +2718,29 @@ rule + early nationalism, Gandhian era, Independence + Partition.
 ## Chapter 18 — Europeans Arrive in India
 
 ### 18.1 The five European trading companies
+
+<div class="keypoint">
+
+**Mnemonic — "P-D-E-D-F"** for European powers in order of arrival:
+**P**ortuguese (1498), **D**utch (1602), **E**nglish (1600 charter, 1608 India), **D**anish (1620), **F**rench (1664).
+
+Or: "**Pretty Dutch Explorers Dress Fine**."
+
+**Key dates to memorise (repeat-PYQs):**
+- Portuguese in India: **1498 — Vasco da Gama at Calicut**
+- EIC Charter: **31 Dec 1600 — Queen Elizabeth I**
+- Madras / Fort St George: **1639**
+- Bombay: **1668** (Charles II's dowry from Portugal)
+- Calcutta / Fort William: **1690 — Job Charnock**
+- French HQ: **Pondicherry 1674 — Francois Martin**
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** The English EIC received its charter in **1600** but reached India only in **1608**. Examiners ask "when did EIC arrive in India?" — the answer is **1608** (first ship), not 1600 (charter date). Similarly, the Portuguese arrived in **1498** (Vasco da Gama), but Goa was conquered only in **1510** by Albuquerque. Do not mix arrival with conquest.
+
+</div>
 
 | Power | Year arrived | First settlement | Main centres in India |
 |---|---|---|---|
@@ -2609,6 +2831,23 @@ rule + early nationalism, Gandhian era, Independence + Partition.
 
 ### 19.4 Methods of British annexation
 
+<div class="keypoint">
+
+**Mnemonic — "R-S-D" for 3 British annexation policies:**
+**R**ing Fence (Warren Hastings — defensive), **S**ubsidiary Alliance (Wellesley 1798 — offensive-defensive), **D**octrine of Lapse (Dalhousie 1848 — aggressive).
+
+**Subsidiary Alliance — exam shortcut:** The first state to sign = **Nizam of Hyderabad (1798)**. Peshwa Baji Rao II signed = Treaty of Bassein **(1802)**. This is how the British got Maratha-territory footholds.
+
+**Doctrine of Lapse — states taken by Dalhousie:** "**SJ-SJNJ**" = **S**atara, **J**aitpur, **S**ambhalpur, **J**hansi, **N**agpur, **U**dairapur (Udaipur). All adopted heirs rejected; states annexed.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** The **Doctrine of Lapse** was Dalhousie's policy — but examiners sometimes ask which state was taken under it. **Jhansi (1853)** is most famous. **Awadh (1856)** was annexed on a different ground — "misgovernance" — NOT under the Doctrine of Lapse. Candidates confuse this constantly. Awadh's king (Wajid Ali Shah) had a natural heir but the state was still taken — that makes it distinct from the Doctrine of Lapse.
+
+</div>
+
 | Policy | Architect | Mechanism |
 |---|---|---|
 | **Ring Fence** | Warren Hastings | Defensive buffers around Bengal |
@@ -2617,6 +2856,30 @@ rule + early nationalism, Gandhian era, Independence + Partition.
 | Annexation on alleged misgovernance | Dalhousie | **Awadh (1856)** — directly annexed. |
 
 ### 19.5 Land revenue systems
+
+<div class="keypoint">
+
+**Quick recall — 3 land revenue systems:**
+
+| System | Year | Architect | Region | Who pays tax |
+|---|---|---|---|---|
+| **Zamindari / Permanent Settlement** | 1793 | **Cornwallis** | Bengal, Bihar, Orissa | **Zamindar** (fixed forever) |
+| **Ryotwari** | 1820 | **Thomas Munro** | Madras, Bombay | **Ryot (peasant)** directly |
+| **Mahalwari** | 1822 | **Holt Mackenzie** | NWP, Punjab, CP | **Village (mahal)** collectively |
+
+**Mnemonic — "ZRM = Cornwallis-Munro-Mackenzie" (CMM):**
+**Z**amindari = **C**ornwallis; **R**yotwari = **M**unro; **M**ahalwari = **M**ackenzie.
+Say: "**Cornwallis Makes Revenue Magic**" → Cornwallis=Zamindari, Munro=Ryotwari, Mackenzie=Mahalwari.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** The **Permanent Settlement** was "permanent" — meaning the revenue amount was **fixed forever in 1793** and could never be raised. Zamindars benefited enormously because as land productivity grew, they pocketed the surplus. Examiners test this: "Who benefited most from Permanent Settlement?" Answer = **Zamindars**, not farmers or the British government.
+
+Also: **Ryotwari was in Madras + Bombay** (NOT Bengal). A common wrong option is Bengal. Bengal = Zamindari only.
+
+</div>
 
 | System | Year | Architect | Region | Mechanism |
 |---|---|---|---|---|
@@ -2768,6 +3031,42 @@ rule + early nationalism, Gandhian era, Independence + Partition.
 
 ### 20.2 Course
 
+<div class="keypoint">
+
+**TIMELINE ANCHOR — 1857 Revolt key dates:**
+
+| Date | Event |
+|---|---|
+| 29 Mar 1857 | Mangal Pandey fires at Barrackpore (Bengal) |
+| 8 Apr 1857 | Mangal Pandey hanged |
+| **10 May 1857** | **Meerut sepoys revolt** — the main outbreak |
+| 11 May 1857 | Sepoys reach Delhi; Bahadur Shah II declared leader |
+| 20 Sep 1857 | British recapture Delhi |
+| 17 Jun 1858 | Rani Lakshmibai dies at Gwalior |
+| 1 Nov 1858 | Queen Victoria's Proclamation — EIC abolished, Crown rule |
+
+**Leader-Centre matchings (most-tested):**
+
+| Centre | Leader | One fact |
+|---|---|---|
+| Delhi | Bahadur Shah II Zafar + Bakht Khan (general) | Last Mughal; exiled to Rangoon |
+| Kanpur | **Nana Sahib + Tantia Tope** | Nana Sahib was adopted son of Peshwa Baji Rao II |
+| **Lucknow** | **Begum Hazrat Mahal** | Regent for son Birjis Qadr |
+| **Jhansi** | **Rani Lakshmibai** | Died fighting at Gwalior, not Jhansi |
+| Bihar | **Kunwar Singh** | 80-year-old zamindar; lost an arm, threw it in the Ganga |
+
+**Mnemonic for centres — "DBK-LJ-B"**: **D**elhi–Bahadur Shah, **K**anpur–Nana Sahib, **L**ucknow–Hazrat Mahal, **J**hansi–Rani Lakshmibai, **B**ihar–Kunwar Singh.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** Rani Lakshmibai is associated with **Jhansi** but she died at **Gwalior** on 17 June 1858 — NOT at Jhansi. Jhansi fell earlier. She escaped and continued fighting at Gwalior before dying there. Examiners specifically test "where did Rani Lakshmibai die?" Answer = **Gwalior**.
+
+Also: The Revolt started at **Meerut (10 May 1857)** — NOT at Barrackpore. Mangal Pandey's individual act at Barrackpore (29 Mar) was a precursor but the organised revolt began at Meerut.
+
+</div>
+
 - **29 Mar 1857** — **Mangal Pandey** fires at Lt. Baugh at **Barrackpore**;
   hanged 8 Apr 1857.
 - **10 May 1857** — **Meerut** sepoys revolt; march to Delhi.
@@ -2901,6 +3200,31 @@ rule + early nationalism, Gandhian era, Independence + Partition.
 
 ### 22.2 The four mass movements
 
+<div class="keypoint">
+
+**TIMELINE ANCHOR — Gandhi's 4 mass movements:**
+
+| Movement | Year | Ended because | Key fact |
+|---|---|---|---|
+| Non-Cooperation + Khilafat | 1920–22 | **Chauri Chaura (4 Feb 1922)** — mob burns police station | First pan-India movement; boycott of schools + courts |
+| Civil Disobedience | 1930–34 | **Gandhi-Irwin Pact (5 Mar 1931)** | Dandi March 12 Mar 1930; salt tax defied |
+| Individual Satyagraha | 1940–41 | Symbolic; 25,000 arrested | Vinoba Bhave = first satyagrahi |
+| **Quit India** | **8 Aug 1942** | Crushed by Sep 1942 | "Do or Die"; leaders arrested at Gowalia Tank, Bombay |
+
+**Mnemonic — "NC-CD-IS-QI":** Non-Cooperation, Civil Disobedience, Individual Satyagraha, Quit India.
+Or: "**Never Can India Surrender Quickly**" → NC, CD, IS, QI.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP — 3 common Gandhi movement mistakes:**
+1. Non-Cooperation was withdrawn because of **Chauri Chaura (4 Feb 1922)** — NOT because the British agreed to demands. Gandhi called it off unilaterally after the mob killing of 22 policemen. This was controversial even among Congress leaders.
+2. **Dandi March start date = 12 March 1930** (from Sabarmati ashram). The actual salt-making at Dandi = **6 April 1930**. Exam questions test both dates.
+3. **Quit India resolution** passed **8 Aug 1942** at Bombay. Leaders were arrested **9 Aug 1942** the very next morning before any movement could begin. **Aruna Asaf Ali** hoisted the Congress flag at Gowalia Tank.
+
+</div>
+
 | Movement | Years | Triggers | Method | End / result |
 |---|---|---|---|---|
 | **Non-Cooperation + Khilafat** | **1920–22** | Rowlatt Act + Jallianwala Bagh + abolition of Caliphate | Boycott of schools, courts, titles, foreign cloth | **Suspended after Chauri Chaura (4 Feb 1922)** — 22 policemen killed by mob; Gandhi unilaterally calls off. |
@@ -2909,6 +3233,30 @@ rule + early nationalism, Gandhian era, Independence + Partition.
 | **Quit India** | **8 Aug 1942** | Cripps Mission failure; WWII | "Do or Die"; Congress leaders arrested 9 Aug at **Bombay (Gowalia Tank)** | Crushed by Sep 1942; **Aruna Asaf Ali** hoisted flag at Gowalia Tank; underground network (Usha Mehta's secret radio); RIN Mutiny 1946 follows. |
 
 ### 22.3 The decisive INC sessions
+
+<div class="keypoint">
+
+**Quick recall — 5 INC sessions every exam tests:**
+
+| Year | Place | President | Why it matters |
+|---|---|---|---|
+| 1885 | Bombay | W.C. Bonnerjee | INC founded |
+| 1906 | Calcutta | Dadabhai Naoroji | "Swaraj" goal first stated |
+| 1929 | **Lahore** | **J. Nehru** | **Purna Swaraj** — complete independence declared; 26 Jan 1930 = first Independence Day |
+| 1924 | Belgaum | **M.K. Gandhi** | **Only session Gandhi presided** |
+| 1939 | Tripuri | Bose resigned | Bose formed Forward Bloc after Gandhi's candidate Pattabhi Sitaramayya lost |
+
+**Women firsts in INC:**
+- **Annie Besant (1917 Calcutta)** = first woman President (she was British, not Indian)
+- **Sarojini Naidu (1925 Kanpur)** = first Indian woman President
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "First woman President of INC" = **Annie Besant (1917)**. "First Indian woman President of INC" = **Sarojini Naidu (1925)**. These two are confused in options — the year and nationality matter. Annie Besant was British; Sarojini Naidu was Indian. Both are correct answers to different question framings.
+
+</div>
 
 | Year | Place | President | Significance |
 |---|---|---|---|
@@ -3049,7 +3397,7 @@ Independence Day observed 26 Jan 1930.</div>
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["COLONIAL INDIA + FREEDOM STRUGGLE<br>1498 - 1947"]:::root
     R --> EUR["Europeans Arrive"]:::date
     R --> EIC["EIC Consolidation"]:::key
@@ -3079,103 +3427,500 @@ flowchart TD
 
 # Part E — Post-Independence India (1947 – today) {#part-e}
 
-## Chapter E1 — Integration of Princely States + Early Nation-Building
+## Chapter E1 — Integration of Princely States {#e1}
 
-At Independence, **562 Princely States** existed alongside British India. **Sardar Vallabhbhai Patel** (Iron Man of India, 1st Home Minister) and V.P. Menon achieved integration through the **Instrument of Accession**.
+At Independence, **562 Princely States** existed alongside British India. **Sardar Vallabhbhai Patel** (Iron Man of India, 1st Home Minister) and **V.P. Menon** (ICS officer, key architect) were the two men who achieved integration — Patel supplied the political will; Menon drafted the legal machinery.
 
-| State | Special note |
-|-------|-------------|
-| **Hyderabad** | "Operation Polo" — Police Action (September 1948); Nizam refused to join |
-| **Junagadh** | Nawab acceded to Pakistan; plebiscite held — joined India |
-| **Kashmir** | Maharaja Hari Singh signed accession (October 1947) after Pakistani tribal attack; dispute ongoing |
-| **Goa** | Liberated from Portugal by **Operation Vijay (1961)**; merged December 19, 1961 |
-| **Sikkim** | Merged into India in **1975** (22nd state) — referendum held |
+### Instrument of Accession
 
-**States Reorganisation Act 1956** — reorganised states on linguistic basis following the **States Reorganisation Commission (Fazl Ali Commission, 1953–55)**. Created 14 states + 6 UTs.
+Rulers signed the Instrument of Accession on **three subjects only**: Defence, External Affairs, and Communications. Everything else remained with the state. The accession was NOT a merger — it was a conditional transfer of limited powers.
+
+### Key State-by-State Cases (exam-tested individually)
+
+| State | Method | Year | Special notes |
+|-------|--------|------|---------------|
+| **Hyderabad** | Police Action — **Operation Polo** | Sep 1948 | Nizam Mir Osman Ali refused to join; **J.N. Chaudhuri** commanded the operation; lasted just 5 days; also called "Police Action" euphemistically |
+| **Junagadh** | Plebiscite / Referendum | Nov 1947 | Nawab Mohammed Mahabat Khan acceded to Pakistan; India held a referendum — people overwhelmingly voted for India |
+| **Travancore** | Negotiation under pressure | 1947 | Dewan C.P. Ramaswami Iyer declared independence; joined after political pressure and popular agitation |
+| **Bhopal** | Negotiation | 1949 | Nawab Hamidullah Khan was reluctant; eventually signed after prolonged persuasion |
+| **Kashmir** | Instrument of Accession | Oct 26, 1947 | Maharaja **Hari Singh** signed after Pakistani tribal militias invaded; led to 1st Kashmir War (Oct 1947–Jan 1949); UN ceasefire; Line of Control (LoC) created |
+| **Sikkim** | Referendum + 36th Constitutional Amendment | 1975 | India's **22nd state**; Chogyal (king) Palden Thondup Namgyal removed; voted in plebiscite to join India |
+| **Goa** | Military action — **Operation Vijay** | Dec 1961 | Portuguese colony; 36-hour military operation (Dec 18–19, 1961); became a UT; full statehood in 1987 |
 
 <div class="keypoint">
 
-**Patel vs Nehru — exam favourite:** Both were Congress leaders. Patel → integration of states, Home Ministry. Nehru → PM, foreign policy, FYPs. First PM = Nehru; First President = Rajendra Prasad; First Home Minister = Patel.
+**Patel vs Nehru — exam perennial:** Both were Congress leaders. Patel → integration of states, 1st Home Minister. Nehru → 1st PM, foreign policy, Five-Year Plans. First PM = Nehru; First President = Rajendra Prasad; First Deputy PM = Patel. Patel died December 15, 1950 — before the constitution of the first elected government.
 
 </div>
-
-## Chapter E2 — Nehru Era (1947–1964)
-
-**Five-Year Plans (FYPs):** Model based on Soviet planning — started 1951 under **Planning Commission** (1950).
-
-| FYP | Period | Focus |
-|-----|--------|-------|
-| First | 1951–56 | Agriculture + rehabilitation |
-| Second | 1956–61 | Heavy industry (Mahalanobis model) |
-| Third | 1961–66 | Self-reliance; disrupted by 1962 war |
-
-**Non-Aligned Movement (NAM):** Founded 1961 in Belgrade. India's stance: neither US nor USSR blocs. **Panchsheel Agreement (1954)** — 5 principles of peaceful coexistence between India and China.
-
-**Sino-Indian War (1962):** China attacked across McMahon Line. India suffered major military losses. Nehru's humiliation; he died in May 1964.
-
-## Chapter E3 — Wars and Major Events (1965–1991)
-
-| Year | Event | Outcome |
-|------|-------|---------|
-| **1965** | Indo-Pak War (Operation Gibraltar) | Tashkent Agreement (Jan 1966); Lal Bahadur Shastri signed (died same day) |
-| **1971** | Indo-Pak War (Bangladesh Liberation) | Indira Gandhi declared India-Pak war; **Shimla Agreement (1972)**; Bangladesh created |
-| **1974** | Pokhran-I (Smiling Buddha) | India's first nuclear test; Mrs. Gandhi's era |
-| **1975–77** | Emergency (25 June 1975 – 21 March 1977) | Proclaimed under Art 352; press censored; mass arrests; Allahabad HC ruling → trigger |
-| **1984** | Operation Blue Star (June) | Army stormed Golden Temple (Amritsar); Indira Gandhi assassinated (Oct 31) |
-| **1987** | Bofors scandal | Rajiv Gandhi era; arms purchase bribe allegation |
-| **1991** | LPG Reforms (Liberalisation, Privatisation, Globalisation) | PM Narasimha Rao + FM Manmohan Singh; balance-of-payments crisis → IMF bailout → opened economy |
 
 <div class="pitfall">
 
-**Emergency (1975–77) trap:** The Emergency was declared on **25 June 1975**, NOT during the 1971 war. The Allahabad High Court judgment (12 June 1975) disqualifying Mrs. Gandhi from her Rae Bareli seat was the direct trigger. The 1971 Bangladesh war had ended in December 1971 — a full 3.5 years earlier.
+**Operation Vijay appears TWICE in history:** (1) Goa liberation (1961) — against Portugal. (2) Kargil recapture (1999) — against Pakistani intruders. Always check the year/context in the question.
 
 </div>
 
-## Chapter E4 — Post-Liberalisation and Recent Milestones
+### States Reorganisation Act 1956
 
-| Year | Milestone |
-|------|-----------|
-| **1998** | Pokhran-II — Operation Shakti; 5 nuclear tests; India declared nuclear-armed state |
-| **1999** | Kargil War (Operation Vijay); Pakistan-backed infiltration; India recaptured peaks |
-| **2005** | Right to Information (RTI) Act |
-| **2009** | MGNREGS (National Rural Employment Guarantee Act) — 100 days work guarantee |
-| **2014** | Pradhan Mantri Jan Dhan Yojana (PMJDY) — financial inclusion |
-| **2017** | GST (Goods and Services Tax) from 1 July — "one nation, one tax" |
-| **2019** | Article 370 abrogated (5 August); J&K bifurcated into 2 UTs |
+**Fazl Ali Commission** (States Reorganisation Commission, 1953–55; members: Fazl Ali, H.N. Kunzru, K.M. Panikkar) recommended reorganisation on **linguistic basis**. The Act created **14 states + 6 Union Territories**. Key new states: Andhra Pradesh (already carved out in 1953 after Potti Sriramulu's fast-unto-death), Kerala, Karnataka (then Mysore), Maharashtra + Gujarat (later split in 1960 on Mahagujarat movement).
+
+<div class="pyq">
+
+**Q.E1a.** "Operation Polo" was conducted for the integration of which princely state?
+
+(a) Junagadh  (b) Kashmir  (c) Hyderabad  (d) Travancore
+
+<div class="pyq-answer">
+
+**Ans:** (c) Hyderabad — September 1948 police action under General J.N. Chaudhuri. The Nizam had declared independence and refused to accede; the 5-day operation resolved the impasse militarily.
+
+</div>
+</div>
+
+<div class="pyq">
+
+**Q.E1b.** The Instrument of Accession signed by princely states covered which subjects?
+
+(a) All subjects including law and order  
+(b) Defence, External Affairs, and Communications only  
+(c) Defence, Finance, and Railways  
+(d) All subjects except religion
+
+<div class="pyq-answer">
+
+**Ans:** (b) Defence, External Affairs, and Communications — the three subjects explicitly listed in the standard Instrument of Accession. All other legislative matters remained with the ruler.
+
+</div>
+</div>
+
+---
+
+## Chapter E2 — Nehru Era (1947–1964) {#e2}
+
+**Jawaharlal Nehru** served as Prime Minister from August 15, 1947 until his death on **May 27, 1964** — the longest-serving PM of India (16 years, 9 months).
+
+### Constitutional and Electoral Foundations
+
+- **First General Elections 1951–52**: World's largest democratic exercise at that time; Congress won **364 out of 489** Lok Sabha seats; voter turnout ~45.7%; conducted under Election Commission set up in 1950.
+- **Rajendra Prasad**: First President of India (1950–1962); Dr. S. Radhakrishnan: Second President.
+
+### Five-Year Plans
+
+**Planning Commission** established **March 15, 1950** (replaced in 2014 by NITI Aayog under Modi).
+
+| FYP | Period | Focus/Model | Key achievement |
+|-----|--------|-------------|-----------------|
+| First | 1951–56 | Agriculture + rehabilitation of refugees | Bhakra-Nangal dam; Hirakud dam |
+| Second | 1956–61 | **Mahalanobis model** — heavy industry emphasis | Steel plants: Bhilai (USSR), Durgapur (UK), Rourkela (Germany) |
+| Third | 1961–66 | Self-reliance; disrupted by 1962 war and 1965 war | Called "Lame Duck" plan |
+
+### Institutions Founded Under Nehru
+
+| Institution | Year | Note |
+|-------------|------|-------|
+| IIT Kharagpur | 1951 | First IIT in India |
+| Atomic Energy Commission | 1948 | Homi J. Bhabha as chairman |
+| AEET (later BARC) | 1954 | Bhabha Atomic Research Centre, Mumbai |
+| AIIMS New Delhi | 1956 | Premier medical institute |
+| Planning Commission | 1950 | Dissolved → NITI Aayog (2015) |
+| Life Insurance Corporation (LIC) | 1956 | Nationalisation of 245 life insurers |
+
+### Hindu Code Bills (1955–56)
+
+Modernised personal law for Hindus:
+- **Hindu Marriage Act (1955)** — monogamy, divorce provisions
+- **Hindu Succession Act (1956)** — equal inheritance rights for daughters (amended further in 2005)
+- **Hindu Adoption and Maintenance Act (1956)**
+- **Hindu Minority and Guardianship Act (1956)**
+
+B.R. Ambedkar had pushed for a comprehensive Hindu Code Bill as Law Minister but resigned in 1951 when Nehru stalled it; the bills were eventually passed piecemeal.
+
+### Foreign Policy Under Nehru
+
+**Panchsheel (Five Principles of Peaceful Coexistence):**
+Signed between India and China on **April 29, 1954** (as part of a trade agreement on Tibet). Nehru + Zhou Enlai.
+
+| # | Principle |
+|---|-----------|
+| 1 | Mutual respect for territorial integrity and sovereignty |
+| 2 | Mutual non-aggression |
+| 3 | Non-interference in each other's internal affairs |
+| 4 | Equality and mutual benefit |
+| 5 | Peaceful coexistence |
+
+"**Hindi-Chini bhai bhai**" (Indians and Chinese are brothers) — Nehru's famous slogan, used 1950s; bitterly ironic after 1962.
+
+**Non-Aligned Movement (NAM):**
+- Founded **September 1961**, Belgrade (Yugoslavia)
+- **Five founding leaders (PANIST mnemonic — Panchsheel, Afro-Asia):** Nehru (India), Tito (Yugoslavia), Nkrumah (Ghana), Sukarno (Indonesia), Nasser (Egypt)
+- India's principle: stay out of both US (NATO) and USSR (Warsaw Pact) blocs
+
+**Sino-Indian War 1962:**
+- China attacked across the **McMahon Line** (eastern sector) and the Aksai Chin (western sector) in October–November 1962
+- India suffered humiliating military losses; Nehru had championed "Hindi-Chini bhai bhai" — this war shattered it
+- **Galwan Valley** (recalled during 2020 clash) was one of the contested areas
+- Nehru's health declined sharply after 1962; he died of a stroke on May 27, 1964
 
 <div class="examtip">
 
-**High-hit exam facts from Post-Independence:**
-1. Smiling Buddha (1974) = code name for Pokhran-I nuclear test.
-2. Operation Vijay = both Goa liberation (1961) AND Kargil recapture (1999) — know context.
-3. Emergency: 25 June 1975–21 March 1977. 42nd Amendment (1976) — during Emergency.
-4. 14th PM of India = Narendra Modi (2014); 15th = Modi again (2024).
-5. RTI Act 2005; MGNREGS 2005; Right to Education (Art 21A) 2002.
+**NAM founding facts tested every year:**
+- Year: 1961 | City: Belgrade | Country: Yugoslavia
+- Five founding leaders: Nehru, Tito, Nkrumah, Sukarno, Nasser
+- India hosted NAM Summit in New Delhi in 1983 (Indira Gandhi presided)
 
 </div>
 
 <div class="pyq">
 
-**Q.E1.** The Shimla Agreement (1972) was signed between India and:
+**Q.E2a.** The Panchsheel Agreement (1954) was signed between India and:
+
+(a) Pakistan  (b) USA  (c) China  (d) Yugoslavia
+
+<div class="pyq-answer">
+
+**Ans:** (c) China — April 29, 1954; the five principles of peaceful coexistence were agreed between Nehru and Chinese Premier Zhou Enlai as part of a broader agreement on Tibet trade.
+
+</div>
+</div>
+
+<div class="pyq">
+
+**Q.E2b.** Which Indian steel plant was set up with USSR assistance during the Second Five-Year Plan?
+
+(a) Durgapur  (b) Rourkela  (c) Bhilai  (d) Bokaro
+
+<div class="pyq-answer">
+
+**Ans:** (c) Bhilai (Chhattisgarh) — with Soviet assistance. Durgapur = UK assistance; Rourkela = West Germany assistance; Bokaro (set up later, 1964 onwards) = Soviet assistance too (but under Third Plan).
+
+</div>
+</div>
+
+---
+
+## Chapter E3 — Wars and Major Events (1965–1991) {#e3}
+
+### Lal Bahadur Shastri (PM: June 9, 1964 – January 11, 1966)
+
+**Indo-Pak War 1965:**
+- Pakistan launched **Operation Gibraltar** — infiltrators sent into Kashmir to trigger an uprising
+- India retaliated; war spread to Punjab front; tanks battle near Lahore
+- Shastri's famous slogan: **"Jai Jawan Jai Kisan"** (coined during this war)
+- **Tashkent Declaration (January 10, 1966)**: Soviet-mediated peace deal; signed by Shastri and Pakistan's Ayub Khan
+- Shastri **died the next day** (January 11, 1966) in Tashkent — widely attributed to heart attack; received **Bharat Ratna posthumously** (first person to receive it posthumously)
+
+**Green Revolution (mid-1960s):**
+- **M.S. Swaminathan** (father of Green Revolution in India) + **Norman Borlaug**'s high-yielding wheat varieties
+- Punjab and Haryana transformed into India's breadbasket
+- India achieved wheat self-sufficiency by late 1960s
+
+### Indira Gandhi — First Term (PM: January 24, 1966 – March 24, 1977)
+
+**Bank Nationalisation 1969:**
+- **July 19, 1969**: 14 major commercial banks with deposits above ₹50 crore nationalised
+- Banks included: Punjab National Bank, Bank of Baroda, Bank of India, Canara Bank, UCO Bank, etc.
+- Slogan: "Bank nationalisation for the poor"; politically weakened the Congress (O) faction; consolidated Indira's power
+- Second round of nationalisation: **1980** — 6 more banks nationalised
+
+**Indo-Pak War 1971 + Bangladesh Liberation:**
+- Pakistan's military crackdown in East Pakistan (Operation Searchlight, March 1971) caused ~10 million refugees to flee to India
+- India signed **Treaty of Peace, Friendship and Cooperation with USSR** (August 1971) — strategic cover against US/China intervention
+- War began December 3, 1971; **Dacca fell December 16, 1971 → Vijay Diwas (Victory Day)**
+- Pakistan's Lt. General A.A.K. Niazi signed the Instrument of Surrender
+- **~93,000 Pakistani POWs** surrendered — largest surrender since World War II
+- **Shimla Agreement (July 2, 1972)**: Signed by Indira Gandhi and Zulfikar Ali Bhutto; converted ceasefire line into **Line of Control (LoC)** in J&K; resolved to settle disputes bilaterally (not through UN)
+- **Operation Trident** — Indian Navy's first missile attack on Karachi harbour (December 4–5, 1971); Navy Day celebrated December 4
+
+**Pokhran-I — Operation Smiling Buddha (1974):**
+- Date: **May 18, 1974**
+- Location: Pokhran, Rajasthan desert (Thar Desert)
+- India's **first nuclear test** — described as a "peaceful nuclear explosion"
+- Led by **Raja Ramanna** (BARC chief); political decision by Indira Gandhi
+- International reaction: Sharp criticism; Canada (CIRUS reactor supplier) and USA suspended nuclear cooperation
+
+**Emergency (1975–77):**
+- Allahabad High Court judgment (June 12, 1975) found Indira Gandhi guilty of electoral malpractice in 1971 elections → disqualified from Parliament for 6 years
+- Emergency proclaimed **June 25, 1975** under **Article 352** (internal disturbance)
+- Lasted **21 months** — ended March 21, 1977
+- **Key events during Emergency:**
+  - Press censorship — newspapers published with blank columns in protest
+  - Mass arrests: J.P. Narayan, Morarji Desai, Atal Bihari Vajpayee, Lal Krishna Advani, Chandra Shekhar
+  - **42nd Amendment (1976)** — called the "mini-Constitution"; added "socialist" and "secular" to the Preamble; extended Lok Sabha term to 6 years; made Directive Principles superior to Fundamental Rights
+  - Forced sterilisation programme (Sanjay Gandhi's controversial campaign)
+
+**Janata Party Government (1977–79):**
+- First non-Congress government at the Centre
+- **Morarji Desai** became PM (India's first non-Congress PM)
+- **43rd Amendment (1977)** — reversed some Emergency-era changes
+- **44th Amendment (1978)** — restored pre-Emergency rights; right to property removed from Fundamental Rights → made a legal right under Art. 300A; "internal disturbance" replaced by "armed rebellion" as ground for Art. 352
+- Janata government collapsed due to internal feuds; Indira returned in 1980
+
+**Indira Gandhi — Second Term (PM: January 14, 1980 – October 31, 1984):**
+
+**Operation Blue Star (June 1984):**
+- **Jarnail Singh Bhindranwale** and armed militants had fortified the **Golden Temple (Harmandir Sahib)** in Amritsar — demanding Khalistan
+- Indian Army entered the temple complex on **June 3–8, 1984**; heavy casualties on both sides; Bhindranwale killed
+- **Operation Woodrose** followed — combing operation in Punjab countryside
+- Indira Gandhi **assassinated on October 31, 1984** by her two Sikh bodyguards — Satwant Singh and Beant Singh — in retaliation for Operation Blue Star
+- **1984 anti-Sikh riots** followed in Delhi and elsewhere
+
+### Rajiv Gandhi (PM: October 31, 1984 – December 2, 1989)
+
+- Youngest PM of India (40 years old); won 1984 elections with historic 404 seats (Congress)
+- **Bhopal Gas Tragedy (December 2–3, 1984):**
+  - **Methyl isocyanate (MIC)** gas leaked from Union Carbide India Ltd. (UCIL) pesticide plant
+  - Worst industrial disaster in history; ~3,800 immediate deaths (official); estimates of total deaths range up to 15,000+
+  - Warren Anderson (Union Carbide CEO) fled India; legal battle continues
+  - *Trap: Bhopal gas = MIC, not cyanide — a very common wrong answer in MCQs*
+- **Rajiv-Longowal Accord (July 1985)**: Punjab peace accord with Harchand Singh Longowal (SGPC chief); Longowal was assassinated two months later
+- **Sri Lanka Accord (July 1987) + IPKF**: India signed accord with Sri Lanka's Jayewardene; Indian Peace Keeping Force (IPKF) sent to control LTTE — became a quagmire; withdrawn in 1990
+- **Mandal Commission Report**: B.P. Mandal Commission (constituted 1979) had recommended **27% reservation for OBCs** in government jobs; submitted report in 1980 but shelved
+- **Rajiv Gandhi assassinated (May 21, 1991)** by LTTE suicide bomber Thenmozhi Rajaratnam (Dhanu) at Sriperumbudur, Tamil Nadu; received Bharat Ratna posthumously (1991)
+
+### V.P. Singh (PM: December 2, 1989 – November 10, 1990) + Chandrasekhar (1990–91)
+
+- V.P. Singh **implemented Mandal Commission** recommendations in August 1990 → 27% OBC reservation in central government jobs
+- Sparked nationwide agitation; students self-immolated in protest
+- BJP withdrew support (Babri Masjid issue); V.P. Singh resigned; Chandrasekhar had brief minority government
+
+<div class="pitfall">
+
+**Emergency (1975–77) trap:** Emergency was declared **June 25, 1975**, NOT during or right after the 1971 Bangladesh war. The trigger was the **Allahabad HC judgment of June 12, 1975** disqualifying Indira Gandhi from her Rae Bareli constituency — 3.5 years after the 1971 war ended.
+
+</div>
+
+<div class="pitfall">
+
+**Shastri's Bharat Ratna:** Lal Bahadur Shastri received Bharat Ratna in **1966 — posthumously** (died Jan 11, 1966; Bharat Ratna announced same year). He was the **first person to receive Bharat Ratna posthumously**.
+
+</div>
+
+<div class="pyq">
+
+**Q.E3a.** The Tashkent Declaration (1966) was signed between India and Pakistan to end:
+
+(a) 1947–48 Kashmir War  (b) 1962 Sino-Indian War  (c) 1965 Indo-Pak War  (d) 1971 Bangladesh War
+
+<div class="pyq-answer">
+
+**Ans:** (c) 1965 Indo-Pak War — signed by Indian PM Lal Bahadur Shastri and Pakistani President Ayub Khan on January 10, 1966, with Soviet mediation in Tashkent (Uzbekistan). Shastri died the very next day.
+
+</div>
+</div>
+
+<div class="pyq">
+
+**Q.E3b.** The gas that leaked in the Bhopal disaster (1984) was:
+
+(a) Phosgene  (b) Hydrogen cyanide  (c) Methyl isocyanate (MIC)  (d) Chlorine
+
+<div class="pyq-answer">
+
+**Ans:** (c) Methyl isocyanate (MIC) — from Union Carbide's pesticide plant. Option (b) hydrogen cyanide is the most common trap distractor because "isocyanate" sounds similar to "cyanate/cyanide" — they are chemically distinct.
+
+</div>
+</div>
+
+<div class="pyq">
+
+**Q.E3c.** "Operation Smiling Buddha" refers to:
+
+(a) India's first nuclear test (1974)  (b) India's second nuclear test (1998)  (c) Liberation of Goa (1961)  (d) Kargil War (1999)
+
+<div class="pyq-answer">
+
+**Ans:** (a) India's first nuclear test, May 18, 1974 at Pokhran, Rajasthan — during Indira Gandhi's premiership. Operation Shakti (1998) was the second nuclear test series under Vajpayee.
+
+</div>
+</div>
+
+---
+
+## Chapter E4 — Post-Liberalisation and Recent Milestones {#e4}
+
+### 1991 Economic Liberalisation — LPG Reforms
+
+**Context:** India faced a severe **Balance of Payments (BoP) crisis** in 1991 — foreign exchange reserves fell to just 2 weeks of import cover. India was on the verge of sovereign default.
+
+**Crisis response:**
+- India pledged **67 tonnes of gold** (RBI gold) to the Bank of England and Bank of Japan as collateral to secure an IMF loan
+- PM **P.V. Narasimha Rao** and Finance Minister **Manmohan Singh** introduced sweeping reforms
+
+**LPG Reforms:**
+
+| Reform pillar | Key measures |
+|---------------|-------------|
+| **Liberalisation** | Abolished industrial licensing (License Raj); freed prices; reduced bureaucratic controls |
+| **Privatisation** | Disinvestment in public sector enterprises began |
+| **Globalisation** | Reduced import tariffs; opened FDI; devalued rupee (two-step devaluation, July 1991) |
+
+SEBI given **statutory status** in 1992 (Securities and Exchange Board of India Act 1992).
+
+<div class="keypoint">
+
+**1991 finance minister trap:** FM = **Manmohan Singh**; PM = **P.V. Narasimha Rao**. Manmohan Singh later became PM (2004–2014). In 1991, Narasimha Rao was PM and Manmohan Singh was Finance Minister — examiners frequently swap these two in options.
+
+</div>
+
+### Chronological Milestones (Post-1991) — High-Frequency Exam Table
+
+| Year | Event | Exam hook |
+|------|-------|-----------|
+| 1991 | Economic liberalisation; 67 tonnes gold pledged to IMF | FM = Manmohan Singh |
+| 1992 | **Babri Masjid demolition (December 6)** | Led to communal riots; triggered Ayodhya dispute legal chain |
+| 1992 | SEBI given statutory status | Securities regulation |
+| 1993 | Mumbai serial blasts (March 12) | 13 coordinated bomb explosions |
+| 1996 | India signs CTBT rejected (did NOT ratify) | Non-proliferation context |
+| **1998** | **Pokhran-II — Operation Shakti** (May 11–13): 5 nuclear tests | PM Vajpayee; India declared nuclear weapons state |
+| **1999** | **Kargil War — Operation Vijay** | Pakistan intrusion at high altitude; India recaptured peaks by July 26 (Vijay Diwas) |
+| 2000 | India's population crossed **1 billion** | Aastha Arora, Delhi — symbolic "one billionth" baby |
+| 2001 | Parliament attack (December 13) | Operation Parakram; standoff with Pakistan |
+| 2004 | Manmohan Singh becomes PM (UPA-I) | Congress-led coalition; 10 years as PM (2004–2014) |
+| 2005 | **Right to Information (RTI) Act** | Citizens' right to seek government information |
+| 2005 | MGNREGS (now MGNREGA) | 100-day employment guarantee; later extended to rural BPL |
+| 2008 | **Mumbai 26/11 attacks** | 10 Lashkar-e-Taiba terrorists; 166 killed; Ajmal Kasab captured and hanged (2012) |
+| 2014 | **Narendra Modi becomes PM (NDA/BJP)** | Swachh Bharat Mission; Make in India; Jan Dhan Yojana launched |
+| 2015 | NITI Aayog replaced Planning Commission | Established January 1, 2015 |
+| **2016** | **Demonetisation (November 8, 2016)** | ₹500 and ₹1000 notes withdrawn; ~86% of currency by value demonetised |
+| **2017** | **GST launched July 1, 2017** | "One Nation, One Tax"; replaced 17 Central + State indirect taxes; 4-tier rate structure |
+| 2019 | **Article 370 abrogated (August 5, 2019)** | J&K reorganised into 2 UTs: J&K (with legislature) + Ladakh (without legislature) |
+| 2019 | **Citizenship Amendment Act (CAA)** passed | Fast-track citizenship for persecuted minorities from Pakistan, Bangladesh, Afghanistan (not Muslims) |
+| 2020 | Galwan Valley clash with China (June 15) | First combat deaths on LAC since 1975 |
+| 2023 | India holds **G20 Presidency** (2022–23) | New Delhi Summit (September 9–10, 2023); "Vasudhaiva Kutumbakam" theme |
+| 2023 | **New Parliament building** inaugurated | May 28, 2023 by PM Modi; old Parliament building renamed "Samvidhan Sadan" |
+| 2024 | 18th Lok Sabha elections | NDA-3.0; Modi sworn in for 3rd term on June 9, 2024 |
+
+### Pokhran-I vs Pokhran-II — The Perennial Confusion Pair
+
+| Parameter | Pokhran-I | Pokhran-II |
+|-----------|-----------|------------|
+| Operation name | **Smiling Buddha** | **Operation Shakti** |
+| Year | **1974** | **1998** |
+| PM | **Indira Gandhi** | **Atal Bihari Vajpayee** |
+| Number of tests | **1** | **5** (May 11 = 3 tests; May 13 = 2 tests) |
+| India's declaration | "Peaceful nuclear explosion" | India declared itself a nuclear weapons state |
+| International reaction | Moderate sanctions | USA, Japan, others imposed sanctions |
+| Key scientist | Raja Ramanna | A.P.J. Abdul Kalam (then DRDO chief), R. Chidambaram |
+
+### Kargil War 1999
+
+- Pakistan Army + Northern Light Infantry infiltrated high-altitude posts in **Kargil sector** of J&K (winter 1998–99), disguised as mujahideen
+- India launched **Operation Vijay** (July 1999) — 2 months of fighting at altitudes up to 18,000 ft
+- Key peaks recaptured: Tiger Hill, Tololing, Point 4875
+- **Vijay Diwas: July 26, 1999** — commemorated annually
+- India lost ~527 soldiers; Pakistan's involvement denied publicly but confirmed by Musharraf later
+- India refused to cross the LoC (showed strategic restraint) and won international support
+
+<div class="pitfall">
+
+**"Operation Vijay" trap — three contexts:**
+1. Goa liberation from Portugal (December 1961)
+2. Kargil War operation (1999)
+3. The name appears in other contexts too. Always anchor to the year.
+
+</div>
+
+### Landmark Constitutional Amendments (Post-Independence — High-Frequency)
+
+| Amendment | Year | Key change |
+|-----------|------|-----------|
+| **1st** | 1951 | Added 9th Schedule; land reform laws protected from judicial review |
+| **7th** | 1956 | Implemented States Reorganisation Act (14 states, 6 UTs) |
+| **24th** | 1971 | Parliament's power to amend all parts of Constitution affirmed |
+| **42nd** | 1976 | "Mini-Constitution"; added "socialist", "secular", "integrity" to Preamble; 10 Fundamental Duties added (Art. 51A) |
+| **43rd** | 1977 | Reversed some Emergency-era changes |
+| **44th** | 1978 | Right to property removed from Fundamental Rights (Art. 300A); "armed rebellion" replaces "internal disturbance" in Art. 352 |
+| **52nd** | 1985 | Anti-Defection Law (10th Schedule) |
+| **61st** | 1988 | Voting age reduced from 21 to **18** |
+| **73rd** | 1992 | Panchayati Raj institutions constitutionalised (Part IX) |
+| **74th** | 1992 | Municipalities constitutionalised (Part IX-A) |
+| **86th** | 2002 | Free and compulsory education (Art. 21A) for 6–14 years |
+| **91st** | 2003 | Council of Ministers capped at 15% of Lok Sabha strength |
+| **101st** | 2016 | GST (Goods and Services Tax) introduced |
+| **103rd** | 2019 | 10% EWS (Economically Weaker Section) reservation |
+
+<div class="examtip">
+
+**Top 10 Post-Independence high-hit exam facts:**
+1. Smiling Buddha (1974, Pokhran-I) ≠ Operation Shakti (1998, Pokhran-II) — Indira vs Vajpayee
+2. Operation Vijay appears twice: Goa (1961) + Kargil (1999)
+3. Emergency: June 25, 1975 → March 21, 1977; Art. 352; 42nd Amendment passed during Emergency
+4. 1991 Finance Minister = Manmohan Singh (PM = Narasimha Rao)
+5. India pledged 67 tonnes of gold to secure IMF loan in 1991
+6. Bhopal gas = MIC (Methyl IsoCyanate), NOT cyanide
+7. Bangladesh Victory Day = December 16, 1971 = Vijay Diwas
+8. Shimla Agreement (July 2, 1972) — signed by Indira Gandhi + Zulfikar Ali Bhutto; created LoC
+9. RTI Act 2005; GST = July 1, 2017; Art. 370 abrogated = August 5, 2019
+10. Lal Bahadur Shastri = first posthumous Bharat Ratna recipient (1966)
+
+</div>
+
+<div class="pitfall">
+
+**Trap-card rapid fire:**
+- "Operation Polo" → Integration of Hyderabad (police action, 1948) — NOT Goa, NOT Kargil
+- "Who was India's Finance Minister during 1991 liberalisation?" → Manmohan Singh (common trap: candidates say Narasimha Rao who was PM)
+- "Bhopal gas leaked which chemical?" → MIC (Methyl IsoCyanate) — NOT cyanide (most common wrong MCQ option)
+- "Simla Agreement was signed after which war?" → 1971 war (Bangladesh liberation) — NOT 1965, NOT 1962
+- "Pokhran-I code name?" → Smiling Buddha | "Pokhran-II code name?" → Operation Shakti
+- "NAM founding year and city?" → 1961, Belgrade (not Bandung — Bandung Conference 1955 was a precursor Asian-African conference)
+- "India's 22nd state?" → Sikkim (1975)
+- "When was Goa liberated?" → December 19, 1961 (Operation Vijay against Portugal)
+- "42nd Amendment added which words to Preamble?" → Socialist, Secular, Integrity (Integrity to "unity and integrity of the nation")
+- "Right to vote age reduced to 18 by which amendment?" → 61st Amendment, 1988
+
+</div>
+
+<div class="pyq">
+
+**Q.E4a.** The Shimla Agreement (1972) was signed between India and:
 
 (a) China  (b) Bangladesh  (c) Pakistan  (d) Nepal
 
 <div class="pyq-answer">
 
-**Ans:** (c) Pakistan — after the 1971 Bangladesh Liberation War. Signed by Indira Gandhi and Zulfikar Ali Bhutto in Shimla on 2 July 1972.
+**Ans:** (c) Pakistan — after the 1971 Bangladesh Liberation War. Signed by Indira Gandhi and Zulfikar Ali Bhutto on July 2, 1972 in Shimla. It converted the ceasefire line in J&K into the Line of Control (LoC) and committed both sides to resolve disputes bilaterally.
 
 </div>
 </div>
 
 <div class="pyq">
 
-**Q.E2.** "Operation Blue Star" was conducted to:
+**Q.E4b.** "Operation Blue Star" was conducted to:
 
-(a) Liberate Goa  (b) Flush out militants from the Golden Temple  (c) Recapture Kargil peaks  (d) Conduct the 1974 nuclear test
+(a) Liberate Goa from Portugal  
+(b) Flush out militants from the Golden Temple, Amritsar  
+(c) Recapture Kargil peaks from Pakistani intruders  
+(d) Conduct India's first nuclear test at Pokhran
 
 <div class="pyq-answer">
 
-**Ans:** (b) June 1984; launched by Indira Gandhi to clear militants (Bhindranwale group) from Harmandir Sahib (Golden Temple), Amritsar.
+**Ans:** (b) June 3–8, 1984; launched by PM Indira Gandhi to clear Jarnail Singh Bhindranwale and armed militants from Harmandir Sahib (Golden Temple), Amritsar. Led directly to Indira Gandhi's assassination on October 31, 1984.
+
+</div>
+</div>
+
+<div class="pyq">
+
+**Q.E4c.** India's first nuclear test (1974) was codenamed:
+
+(a) Operation Vijay  (b) Operation Shakti  (c) Smiling Buddha  (d) Operation Polo
+
+<div class="pyq-answer">
+
+**Ans:** (c) Smiling Buddha — May 18, 1974 at Pokhran, Rajasthan. Operation Shakti was the 1998 test. Operation Vijay = Goa (1961) / Kargil (1999). Operation Polo = Hyderabad integration (1948).
+
+</div>
+</div>
+
+<div class="pyq">
+
+**Q.E4e.** Which of the following Constitutional Amendments added the words "Socialist" and "Secular" to the Preamble of India?
+
+(a) 40th Amendment  (b) 42nd Amendment  (c) 44th Amendment  (d) 52nd Amendment
+
+<div class="pyq-answer">
+
+**Ans:** (b) 42nd Amendment (1976) — passed during the Emergency. Also added "integrity" (to "unity and integrity of the nation"), 10 Fundamental Duties (Art. 51A), and extended Lok Sabha term to 6 years (later reversed by 44th Amendment).
 
 </div>
 </div>
@@ -3299,7 +4044,7 @@ World History appears in SSC CGL (5–8 Qs in GA section), State PSCs, and UPSC 
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["CHOLA EMPIRE<br>9th-13th Century CE"]:::root
     R --> FO["Foundation"]:::date
     R --> RJ["Rajaraja I and Rajendra I"]:::date

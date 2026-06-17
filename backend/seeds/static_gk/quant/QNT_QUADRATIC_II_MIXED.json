@@ -1,629 +1,635 @@
-[
-  {
-    "id": "sgk_QNT_QUADRATIC_00007",
-    "stem": "Solve: $x^2 - 7x + 12 = 0$",
-    "options": [
-      {
-        "option_text": "x = 3, 4",
-        "is_correct": true
-      },
-      {
-        "option_text": "x = 2, 6",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = 1, 12",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = −3, −4",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Find two numbers whose product = 12 and sum = 7: that's 3 and 4. So $x^2-7x+12 = (x-3)(x-4) = 0$, giving x = 3 or x = 4. Trap −3,−4: applies when signs in factors are positive (e.g., $x^2+7x+12$).",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00008",
-    "stem": "Solve: $x^2 + x - 12 = 0$",
-    "options": [
-      {
-        "option_text": "x = 3, −4",
-        "is_correct": true
-      },
-      {
-        "option_text": "x = 4, −3",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = 6, −2",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = 2, −6",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Need two numbers with product = −12 and sum = +1: that's +4 and −3... wait: +4 × (−3) = −12, +4+(−3) = +1. So $(x+4)(x-3) = 0$ gives x = 3 or x = −4. Verify: 9+3−12=0 ✓ and 16−4−12=0 ✓. Trap 4,−3: confusing which root is which sign.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00009",
-    "stem": "Solve: $x^2 - x - 6 = 0$",
-    "options": [
-      {
-        "option_text": "x = 3, −2",
-        "is_correct": true
-      },
-      {
-        "option_text": "x = 2, −3",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = 6, −1",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = −3, 2",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Product = −6, sum = −1: that's 3×(−2) = −6, 3+(−2) = 1... but sum should be −1, so we need −3+2 = −1. Hmm: $(x-3)(x+2) = x^2-x-6$. Roots: x=3 or x=−2. Verify: 9−3−6=0 ✓, 4+2−6=0 ✓.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00010",
-    "stem": "Solve: $3x^2 - 10x + 3 = 0$",
-    "options": [
-      {
-        "option_text": "x = 1, 3",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = 1/3, 3",
-        "is_correct": true
-      },
-      {
-        "option_text": "x = 2, 3/2",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = 3/2, 2/3",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Factor: $3x^2-10x+3 = (3x-1)(x-3) = 0$. So 3x = 1 ⟹ x = 1/3; or x = 3. Verify: 3(1/9)−10(1/3)+3 = 1/3−10/3+9/3 = 0 ✓. Trap x=1,3: forgetting the leading coefficient 3 splits into (3x−1).",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00011",
-    "stem": "Solve: $x^2 - 4x - 21 = 0$",
-    "options": [
-      {
-        "option_text": "x = 3, 7",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = 7, −3",
-        "is_correct": true
-      },
-      {
-        "option_text": "x = −7, 3",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = −7, −3",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Product = −21, sum = −4: that's 7×(−3) = −21, 7+(−3) = 4... need sum = −4. Use (−7)×3 = −21, (−7)+3 = −4. So $(x-7)(x+3) = 0$ ⟹ x = 7 or x = −3. Verify: 49−28−21=0 ✓, 9+12−21=0 ✓.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00012",
-    "stem": "Solve: $2x^2 + 3x - 9 = 0$",
-    "options": [
-      {
-        "option_text": "x = 3/2, −3",
-        "is_correct": true
-      },
-      {
-        "option_text": "x = 3, −3/2",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = 9/2, −1",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = 1, −9/2",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Factor: $2x^2+3x-9 = (2x-3)(x+3) = 0$. Check: 2x·x+2x·3−3·x−9 = 2x²+6x−3x−9 = 2x²+3x−9 ✓. Roots: x = 3/2 or x = −3. Verify: 2(9/4)+3(3/2)−9 = 9/2+9/2−9 = 0 ✓.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00013",
-    "stem": "The discriminant of $x^2 - 6x + 9 = 0$ is zero. The nature of roots is:",
-    "options": [
-      {
-        "option_text": "Two distinct real roots",
-        "is_correct": false
-      },
-      {
-        "option_text": "Two equal real roots",
-        "is_correct": true
-      },
-      {
-        "option_text": "No real roots",
-        "is_correct": false
-      },
-      {
-        "option_text": "One positive and one negative root",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "$\\Delta = b^2 - 4ac = 36 - 36 = 0$. When $\\Delta = 0$, the equation has two equal (repeated) real roots: $x = -b/2a = 6/2 = 3$. Equation factors as $(x-3)^2 = 0$.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00014",
-    "stem": "For the quadratic $x^2 + 2x + 5 = 0$, the discriminant is:",
-    "options": [
-      {
-        "option_text": "24",
-        "is_correct": false
-      },
-      {
-        "option_text": "−16",
-        "is_correct": true
-      },
-      {
-        "option_text": "16",
-        "is_correct": false
-      },
-      {
-        "option_text": "4",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "$\\Delta = b^2 - 4ac = (2)^2 - 4(1)(5) = 4 - 20 = -16$. Since $\\Delta < 0$, there are NO real roots — this equation has only complex (imaginary) roots. Trap 16: computing $b^2 = 4$ and $4ac = 20$, then answering 20−4=16 (wrong sign).",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00015",
-    "stem": "BANK PO STYLE — I. $x^2 - 5x + 6 = 0$   II. $y^2 - 7y + 10 = 0$   Find the relation between x and y.",
-    "options": [
-      {
-        "option_text": "x > y",
-        "is_correct": false
-      },
-      {
-        "option_text": "x < y",
-        "is_correct": false
-      },
-      {
-        "option_text": "x ≤ y",
-        "is_correct": true
-      },
-      {
-        "option_text": "x = y or no relation",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Eq I: $(x-2)(x-3)=0$ ⟹ x = 2 or 3. Eq II: $(y-2)(y-5)=0$ ⟹ y = 2 or 5. Compare all pairs: (x=2,y=2): x=y; (x=2,y=5): x<y; (x=3,y=2): x>y; (x=3,y=5): x<y. Since x can be ≤ y or > y, the definitive relationship is: 'No definite relationship' is most accurate — BUT if exam expects best fit, x ≤ y covers 3 of 4 cases. Exam convention: answer 'No definite relationship'.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00016",
-    "stem": "BANK PO STYLE — I. $x^2 - 9x + 20 = 0$   II. $y^2 - 5y + 6 = 0$   Find the relation between x and y.",
-    "options": [
-      {
-        "option_text": "x < y",
-        "is_correct": false
-      },
-      {
-        "option_text": "x ≥ y",
-        "is_correct": true
-      },
-      {
-        "option_text": "x ≤ y",
-        "is_correct": false
-      },
-      {
-        "option_text": "Cannot be determined",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Eq I: $(x-4)(x-5)=0$ ⟹ x = 4 or 5. Eq II: $(y-2)(y-3)=0$ ⟹ y = 2 or 3. Compare all pairs: (4,2): x>y; (4,3): x>y; (5,2): x>y; (5,3): x>y. In every combination x > y, so x ≥ y (and actually x > y always). Answer: x ≥ y.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00017",
-    "stem": "BANK PO STYLE — I. $x^2 - 11x + 28 = 0$   II. $y^2 - 10y + 24 = 0$   Find the relation between x and y.",
-    "options": [
-      {
-        "option_text": "x > y",
-        "is_correct": false
-      },
-      {
-        "option_text": "x < y",
-        "is_correct": false
-      },
-      {
-        "option_text": "x ≥ y",
-        "is_correct": false
-      },
-      {
-        "option_text": "Cannot be determined",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Eq I: $(x-4)(x-7)=0$ ⟹ x = 4 or 7. Eq II: $(y-4)(y-6)=0$ ⟹ y = 4 or 6. Cases: (x=4,y=4): x=y; (x=4,y=6): x<y; (x=7,y=4): x>y; (x=7,y=6): x>y. Mixed outcomes — no definite relationship. This 'no relation' option is the correct Bank PO answer when all comparison signs appear.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00018",
-    "stem": "The sum of the roots of $3x^2 - 12x + 9 = 0$ is:",
-    "options": [
-      {
-        "option_text": "−4",
-        "is_correct": false
-      },
-      {
-        "option_text": "3",
-        "is_correct": false
-      },
-      {
-        "option_text": "4",
-        "is_correct": true
-      },
-      {
-        "option_text": "−3",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "By Vieta's formulas: sum of roots = −b/a = −(−12)/3 = 4. Product of roots = c/a = 9/3 = 3. Verify: equation simplifies to $x^2−4x+3=0 = (x-1)(x-3)$, roots 1 and 3; sum = 4. ✓ Trap −4: forgetting to flip the sign of b.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00019",
-    "stem": "The product of the roots of $2x^2 + 5x - 12 = 0$ is:",
-    "options": [
-      {
-        "option_text": "6",
-        "is_correct": false
-      },
-      {
-        "option_text": "−6",
-        "is_correct": true
-      },
-      {
-        "option_text": "5/2",
-        "is_correct": false
-      },
-      {
-        "option_text": "−5/2",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Product of roots = c/a = −12/2 = −6. Sum of roots = −b/a = −5/2. Verify by factoring: $2x^2+5x-12 = (2x-3)(x+4)$ ⟹ roots 3/2 and −4; product = (3/2)×(−4) = −6. ✓",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00020",
-    "stem": "Which value of k makes $x^2 + kx + 16 = 0$ have equal roots?",
-    "options": [
-      {
-        "option_text": "4 only",
-        "is_correct": false
-      },
-      {
-        "option_text": "8 only",
-        "is_correct": false
-      },
-      {
-        "option_text": "−8 only",
-        "is_correct": false
-      },
-      {
-        "option_text": "8 or −8",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Equal roots ⟹ discriminant = 0. $k^2 - 4(1)(16) = 0$. $k^2 = 64$. $k = \\pm 8$. Both +8 and −8 work: $(x-4)^2=0$ with k=8, and $(x+4)^2=0$ with k=−8. Trap 8 only: discarding the negative solution for k (k itself can be negative even though the roots must be real).",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00021",
-    "stem": "BANK PO STYLE — I. $2x^2 - 7x + 3 = 0$   II. $2y^2 - 9y + 9 = 0$   Find the relation between x and y.",
-    "options": [
-      {
-        "option_text": "x > y",
-        "is_correct": false
-      },
-      {
-        "option_text": "x < y",
-        "is_correct": false
-      },
-      {
-        "option_text": "x ≤ y",
-        "is_correct": true
-      },
-      {
-        "option_text": "x ≥ y",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "HARD",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Eq I: $2x^2-7x+3 = (2x-1)(x-3) = 0$ ⟹ x = 1/2 or 3. Eq II: $2y^2-9y+9 = (2y-3)(y-3) = 0$ ⟹ y = 3/2 or 3. Compare: (x=0.5,y=1.5): x<y; (x=0.5,y=3): x<y; (x=3,y=1.5): x>y; (x=3,y=3): x=y. Outcomes: <, <, >, =. Best answer: x ≤ y (covers = and < cases; only fails for x=3, y=3/2 but that's x>y, so 'no definite' is also valid; exam convention = x ≤ y when majority fit).",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00022",
-    "stem": "If one root of $x^2 - 5x + k = 0$ is 2, what is the value of k and the other root?",
-    "options": [
-      {
-        "option_text": "k = 6, other root = 3",
-        "is_correct": true
-      },
-      {
-        "option_text": "k = 3, other root = 6",
-        "is_correct": false
-      },
-      {
-        "option_text": "k = 10, other root = −2",
-        "is_correct": false
-      },
-      {
-        "option_text": "k = 4, other root = 2",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "If x=2 is a root: 4−10+k = 0 ⟹ k = 6. With k=6: $x^2-5x+6 = (x-2)(x-3) = 0$, so other root = 3. Alternatively by Vieta's: sum = 5, so if one root is 2, other = 5−2 = 3. Product = k = 2×3 = 6. ✓",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00023",
-    "stem": "For the equation $x^2 - (a+b)x + ab = 0$, what are the roots?",
-    "options": [
-      {
-        "option_text": "x = ab, x = 0",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = a, x = b",
-        "is_correct": true
-      },
-      {
-        "option_text": "x = a+b, x = 1",
-        "is_correct": false
-      },
-      {
-        "option_text": "x = −a, x = −b",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "HARD",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "$x^2 - (a+b)x + ab = (x-a)(x-b) = 0$. Roots are x = a and x = b. This is the standard factored form: sum of roots = a+b (matches −(−(a+b))/1), product = ab (matches ab/1). Trap −a,−b: would come from $(x+a)(x+b) = x^2+(a+b)x+ab$, which has +sign before (a+b).",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00024",
-    "stem": "A number exceeds its positive square root by 12. What is the number?",
-    "options": [
-      {
-        "option_text": "9",
-        "is_correct": false
-      },
-      {
-        "option_text": "16",
-        "is_correct": true
-      },
-      {
-        "option_text": "25",
-        "is_correct": false
-      },
-      {
-        "option_text": "36",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Let number = $x^2$ (so $\\sqrt{x^2}=x$). Given: $x^2 - x = 12$. So $x^2 - x - 12 = 0 = (x-4)(x+3)$. x = 4 (positive). Number = $4^2 = 16$. Verify: 16 − 4 = 12. ✓ Trap 25: 25−5=20 ≠ 12.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  },
-  {
-    "id": "sgk_QNT_QUADRATIC_00025",
-    "stem": "The length of a rectangle is 3 more than twice its width. Its area is 90 sq. units. What is the width?",
-    "options": [
-      {
-        "option_text": "5",
-        "is_correct": false
-      },
-      {
-        "option_text": "6",
-        "is_correct": true
-      },
-      {
-        "option_text": "9",
-        "is_correct": false
-      },
-      {
-        "option_text": "10",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "subject": "Quantitative Aptitude",
-    "topic": "Quadratic Equations — Banking/SSC style",
-    "topic_code": "QA_QUADRATIC",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "explanation": "Let width = w. Length = 2w+3. Area: w(2w+3) = 90. $2w^2+3w-90=0$. Discriminant = 9+720 = 729. $\\sqrt{729}=27$. w = (−3+27)/4 = 24/4 = 6. Verify: length = 15, area = 6×15 = 90. ✓ Trap 5: 5×(13)=65 ≠ 90.",
-    "answer_source": "generated",
-    "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
-    "generated_at": "2026-05-21T08:30:00+00:00"
-  }
-]
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Quadratic",
+  "topic_code": "QNT_QUADRATIC_II_MIXED",
+  "questions": [
+    {
+      "id": "sgk_QNT_QUADRATIC_00007",
+      "stem": "Solve: $x^2 - 7x + 12 = 0$",
+      "options": [
+        {
+          "option_text": "x = 3, 4",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = 2, 6",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 1, 12",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = −3, −4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Find two numbers whose product = 12 and sum = 7: that's 3 and 4. So $x^2-7x+12 = (x-3)(x-4) = 0$, giving x = 3 or x = 4. Trap −3,−4: applies when signs in factors are positive (e.g., $x^2+7x+12$).",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00008",
+      "stem": "Solve: $x^2 + x - 12 = 0$",
+      "options": [
+        {
+          "option_text": "x = 3, −4",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = 4, −3",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 6, −2",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 2, −6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Need two numbers with product = −12 and sum = +1: that's +4 and −3... wait: +4 × (−3) = −12, +4+(−3) = +1. So $(x+4)(x-3) = 0$ gives x = 3 or x = −4. Verify: 9+3−12=0 ✓ and 16−4−12=0 ✓. Trap 4,−3: confusing which root is which sign.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00009",
+      "stem": "Solve: $x^2 - x - 6 = 0$",
+      "options": [
+        {
+          "option_text": "x = 3, −2",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = 2, −3",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 6, −1",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = −3, 2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Product = −6, sum = −1: that's 3×(−2) = −6, 3+(−2) = 1... but sum should be −1, so we need −3+2 = −1. Hmm: $(x-3)(x+2) = x^2-x-6$. Roots: x=3 or x=−2. Verify: 9−3−6=0 ✓, 4+2−6=0 ✓.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00010",
+      "stem": "Solve: $3x^2 - 10x + 3 = 0$",
+      "options": [
+        {
+          "option_text": "x = 1, 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 1/3, 3",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = 2, 3/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 3/2, 2/3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Factor: $3x^2-10x+3 = (3x-1)(x-3) = 0$. So 3x = 1 ⟹ x = 1/3; or x = 3. Verify: 3(1/9)−10(1/3)+3 = 1/3−10/3+9/3 = 0 ✓. Trap x=1,3: forgetting the leading coefficient 3 splits into (3x−1).",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00011",
+      "stem": "Solve: $x^2 - 4x - 21 = 0$",
+      "options": [
+        {
+          "option_text": "x = 3, 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 7, −3",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = −7, 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = −7, −3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Product = −21, sum = −4: that's 7×(−3) = −21, 7+(−3) = 4... need sum = −4. Use (−7)×3 = −21, (−7)+3 = −4. So $(x-7)(x+3) = 0$ ⟹ x = 7 or x = −3. Verify: 49−28−21=0 ✓, 9+12−21=0 ✓.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00012",
+      "stem": "Solve: $2x^2 + 3x - 9 = 0$",
+      "options": [
+        {
+          "option_text": "x = 3/2, −3",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = 3, −3/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 9/2, −1",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 1, −9/2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Factor: $2x^2+3x-9 = (2x-3)(x+3) = 0$. Check: 2x·x+2x·3−3·x−9 = 2x²+6x−3x−9 = 2x²+3x−9 ✓. Roots: x = 3/2 or x = −3. Verify: 2(9/4)+3(3/2)−9 = 9/2+9/2−9 = 0 ✓.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00013",
+      "stem": "The discriminant of $x^2 - 6x + 9 = 0$ is zero. The nature of roots is:",
+      "options": [
+        {
+          "option_text": "Two distinct real roots",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two equal real roots",
+          "is_correct": true
+        },
+        {
+          "option_text": "No real roots",
+          "is_correct": false
+        },
+        {
+          "option_text": "One positive and one negative root",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "$\\Delta = b^2 - 4ac = 36 - 36 = 0$. When $\\Delta = 0$, the equation has two equal (repeated) real roots: $x = -b/2a = 6/2 = 3$. Equation factors as $(x-3)^2 = 0$.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00014",
+      "stem": "For the quadratic $x^2 + 2x + 5 = 0$, the discriminant is:",
+      "options": [
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "−16",
+          "is_correct": true
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "$\\Delta = b^2 - 4ac = (2)^2 - 4(1)(5) = 4 - 20 = -16$. Since $\\Delta < 0$, there are NO real roots — this equation has only complex (imaginary) roots. Trap 16: computing $b^2 = 4$ and $4ac = 20$, then answering 20−4=16 (wrong sign).",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00015",
+      "stem": "BANK PO STYLE — I. $x^2 - 5x + 6 = 0$   II. $y^2 - 7y + 10 = 0$   Find the relation between x and y.",
+      "options": [
+        {
+          "option_text": "x > y",
+          "is_correct": false
+        },
+        {
+          "option_text": "x < y",
+          "is_correct": false
+        },
+        {
+          "option_text": "x ≤ y",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = y or no relation",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Eq I: $(x-2)(x-3)=0$ ⟹ x = 2 or 3. Eq II: $(y-2)(y-5)=0$ ⟹ y = 2 or 5. Compare all pairs: (x=2,y=2): x=y; (x=2,y=5): x<y; (x=3,y=2): x>y; (x=3,y=5): x<y. Since x can be ≤ y or > y, the definitive relationship is: 'No definite relationship' is most accurate — BUT if exam expects best fit, x ≤ y covers 3 of 4 cases. Exam convention: answer 'No definite relationship'.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00016",
+      "stem": "BANK PO STYLE — I. $x^2 - 9x + 20 = 0$   II. $y^2 - 5y + 6 = 0$   Find the relation between x and y.",
+      "options": [
+        {
+          "option_text": "x < y",
+          "is_correct": false
+        },
+        {
+          "option_text": "x ≥ y",
+          "is_correct": true
+        },
+        {
+          "option_text": "x ≤ y",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Eq I: $(x-4)(x-5)=0$ ⟹ x = 4 or 5. Eq II: $(y-2)(y-3)=0$ ⟹ y = 2 or 3. Compare all pairs: (4,2): x>y; (4,3): x>y; (5,2): x>y; (5,3): x>y. In every combination x > y, so x ≥ y (and actually x > y always). Answer: x ≥ y.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00017",
+      "stem": "BANK PO STYLE — I. $x^2 - 11x + 28 = 0$   II. $y^2 - 10y + 24 = 0$   Find the relation between x and y.",
+      "options": [
+        {
+          "option_text": "x > y",
+          "is_correct": false
+        },
+        {
+          "option_text": "x < y",
+          "is_correct": false
+        },
+        {
+          "option_text": "x ≥ y",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Eq I: $(x-4)(x-7)=0$ ⟹ x = 4 or 7. Eq II: $(y-4)(y-6)=0$ ⟹ y = 4 or 6. Cases: (x=4,y=4): x=y; (x=4,y=6): x<y; (x=7,y=4): x>y; (x=7,y=6): x>y. Mixed outcomes — no definite relationship. This 'no relation' option is the correct Bank PO answer when all comparison signs appear.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00018",
+      "stem": "The sum of the roots of $3x^2 - 12x + 9 = 0$ is:",
+      "options": [
+        {
+          "option_text": "−4",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "−3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "By Vieta's formulas: sum of roots = −b/a = −(−12)/3 = 4. Product of roots = c/a = 9/3 = 3. Verify: equation simplifies to $x^2−4x+3=0 = (x-1)(x-3)$, roots 1 and 3; sum = 4. ✓ Trap −4: forgetting to flip the sign of b.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00019",
+      "stem": "The product of the roots of $2x^2 + 5x - 12 = 0$ is:",
+      "options": [
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "−6",
+          "is_correct": true
+        },
+        {
+          "option_text": "5/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "−5/2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Product of roots = c/a = −12/2 = −6. Sum of roots = −b/a = −5/2. Verify by factoring: $2x^2+5x-12 = (2x-3)(x+4)$ ⟹ roots 3/2 and −4; product = (3/2)×(−4) = −6. ✓",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00020",
+      "stem": "Which value of k makes $x^2 + kx + 16 = 0$ have equal roots?",
+      "options": [
+        {
+          "option_text": "4 only",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 only",
+          "is_correct": false
+        },
+        {
+          "option_text": "−8 only",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 or −8",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Equal roots ⟹ discriminant = 0. $k^2 - 4(1)(16) = 0$. $k^2 = 64$. $k = \\pm 8$. Both +8 and −8 work: $(x-4)^2=0$ with k=8, and $(x+4)^2=0$ with k=−8. Trap 8 only: discarding the negative solution for k (k itself can be negative even though the roots must be real).",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00021",
+      "stem": "BANK PO STYLE — I. $2x^2 - 7x + 3 = 0$   II. $2y^2 - 9y + 9 = 0$   Find the relation between x and y.",
+      "options": [
+        {
+          "option_text": "x > y",
+          "is_correct": false
+        },
+        {
+          "option_text": "x < y",
+          "is_correct": false
+        },
+        {
+          "option_text": "x ≤ y",
+          "is_correct": true
+        },
+        {
+          "option_text": "x ≥ y",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Eq I: $2x^2-7x+3 = (2x-1)(x-3) = 0$ ⟹ x = 1/2 or 3. Eq II: $2y^2-9y+9 = (2y-3)(y-3) = 0$ ⟹ y = 3/2 or 3. Compare: (x=0.5,y=1.5): x<y; (x=0.5,y=3): x<y; (x=3,y=1.5): x>y; (x=3,y=3): x=y. Outcomes: <, <, >, =. Best answer: x ≤ y (covers = and < cases; only fails for x=3, y=3/2 but that's x>y, so 'no definite' is also valid; exam convention = x ≤ y when majority fit).",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00022",
+      "stem": "If one root of $x^2 - 5x + k = 0$ is 2, what is the value of k and the other root?",
+      "options": [
+        {
+          "option_text": "k = 6, other root = 3",
+          "is_correct": true
+        },
+        {
+          "option_text": "k = 3, other root = 6",
+          "is_correct": false
+        },
+        {
+          "option_text": "k = 10, other root = −2",
+          "is_correct": false
+        },
+        {
+          "option_text": "k = 4, other root = 2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "If x=2 is a root: 4−10+k = 0 ⟹ k = 6. With k=6: $x^2-5x+6 = (x-2)(x-3) = 0$, so other root = 3. Alternatively by Vieta's: sum = 5, so if one root is 2, other = 5−2 = 3. Product = k = 2×3 = 6. ✓",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00023",
+      "stem": "For the equation $x^2 - (a+b)x + ab = 0$, what are the roots?",
+      "options": [
+        {
+          "option_text": "x = ab, x = 0",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = a, x = b",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = a+b, x = 1",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = −a, x = −b",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "HARD",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "$x^2 - (a+b)x + ab = (x-a)(x-b) = 0$. Roots are x = a and x = b. This is the standard factored form: sum of roots = a+b (matches −(−(a+b))/1), product = ab (matches ab/1). Trap −a,−b: would come from $(x+a)(x+b) = x^2+(a+b)x+ab$, which has +sign before (a+b).",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00024",
+      "stem": "A number exceeds its positive square root by 12. What is the number?",
+      "options": [
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": true
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Let number = $x^2$ (so $\\sqrt{x^2}=x$). Given: $x^2 - x = 12$. So $x^2 - x - 12 = 0 = (x-4)(x+3)$. x = 4 (positive). Number = $4^2 = 16$. Verify: 16 − 4 = 12. ✓ Trap 25: 25−5=20 ≠ 12.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    },
+    {
+      "id": "sgk_QNT_QUADRATIC_00025",
+      "stem": "The length of a rectangle is 3 more than twice its width. Its area is 90 sq. units. What is the width?",
+      "options": [
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "subject": "Quantitative Aptitude",
+      "topic": "Quadratic Equations — Banking/SSC style",
+      "topic_code": "QA_QUADRATIC",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "explanation": "Let width = w. Length = 2w+3. Area: w(2w+3) = 90. $2w^2+3w-90=0$. Discriminant = 9+720 = 729. $\\sqrt{729}=27$. w = (−3+27)/4 = 24/4 = 6. Verify: length = 15, area = 6×15 = 90. ✓ Trap 5: 5×(13)=65 ≠ 90.",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-21-qnt-quad",
+      "generated_at": "2026-05-21T08:30:00+00:00"
+    }
+  ]
+}

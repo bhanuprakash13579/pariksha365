@@ -141,27 +141,27 @@ You cannot be fast at arithmetic without *cached* values in your head. Before an
 | Fraction | Percentage | Decimal |
 |----------|-----------|---------|
 | 1/1 | 100 % | 1.000 |
-| 1/2 | 50 % | 0.500 |
-| 1/3 | 33.33 % | 0.333… |
-| 1/4 | 25 % | 0.250 |
-| 1/5 | 20 % | 0.200 |
-| 1/6 | 16.67 % | 0.166… |
-| 1/7 | 14.28 % | 0.142857… |
-| 1/8 | 12.5 % | 0.125 |
-| 1/9 | 11.11 % | 0.111… |
-| 1/10 | 10 % | 0.100 |
-| 1/11 | 9.09 % | 0.0909… |
-| 1/12 | 8.33 % | 0.0833… |
-| 1/13 | 7.69 % | 0.0769… |
-| 1/14 | 7.14 % | 0.0714… |
-| 1/15 | 6.66 % | 0.0667… |
-| 1/16 | 6.25 % | 0.0625 |
-| 1/20 | 5 % | 0.050 |
-| 1/25 | 4 % | 0.040 |
-| 1/40 | 2.5 % | 0.025 |
-| 1/50 | 2 % | 0.020 |
+| $\dfrac{1}{2}$ | 50 % | 0.500 |
+| $\dfrac{1}{3}$ | 33.33 % | 0.333… |
+| $\dfrac{1}{4}$ | 25 % | 0.250 |
+| $\dfrac{1}{5}$ | 20 % | 0.200 |
+| $\dfrac{1}{6}$ | 16.67 % | 0.166… |
+| $\dfrac{1}{7}$ | 14.28 % | 0.142857… |
+| $\dfrac{1}{8}$ | 12.5 % | 0.125 |
+| $\dfrac{1}{9}$ | 11.11 % | 0.111… |
+| $\dfrac{1}{10}$ | 10 % | 0.100 |
+| $\dfrac{1}{11}$ | 9.09 % | 0.0909… |
+| $\dfrac{1}{12}$ | 8.33 % | 0.0833… |
+| $\dfrac{1}{13}$ | 7.69 % | 0.0769… |
+| $\dfrac{1}{14}$ | 7.14 % | 0.0714… |
+| $\dfrac{1}{15}$ | 6.66 % | 0.0667… |
+| $\dfrac{1}{16}$ | 6.25 % | 0.0625 |
+| $\dfrac{1}{20}$ | 5 % | 0.050 |
+| $\dfrac{1}{25}$ | 4 % | 0.040 |
+| $\dfrac{1}{40}$ | 2.5 % | 0.025 |
+| $\dfrac{1}{50}$ | 2 % | 0.020 |
 
-Also the multiples: 3/8 = 37.5 %, 5/8 = 62.5 %, 2/3 = 66.67 %, 3/7 = 42.85 %, 4/7 = 57.14 %, 5/11 = 45.45 %, etc.
+Also the multiples: $\dfrac{3}{8}$ = 37.5 %, $\dfrac{5}{8}$ = 62.5 %, $\dfrac{2}{3}$ = 66.67 %, $\dfrac{3}{7}$ = 42.85 %, $\dfrac{4}{7}$ = 57.14 %, $\dfrac{5}{11}$ = 45.45 %, etc.
 
 ## 0.2 Squares, cubes, roots
 
@@ -178,33 +178,152 @@ Cubes of 1-15 (NON-NEGOTIABLE), bonus 16-20.
 
 If you still compute 17 × 14 by column multiplication, you are losing 15 seconds per question. Drill these.
 
-## 0.4 Universal shortcuts (used everywhere)
+## 0.4 Universal shortcuts — S-1 through S-15
 
-**10% trick** — move decimal one place left.
+These 15 shortcuts each cover an entire **model** (a class of question types), not a single problem. Learn all 15 cold. A worked preview appears here; full application appears at the end of each relevant chapter.
 
-- 10% of 742 = **74.2**.
+---
 
-- Everything else is built on this.
+**S-1 — The 10%/1%/5% Trio** *(%, P&L, SI/CI, Discount, T&W wages, TSD)*
 
-**1% trick** — move decimal two places left.
+Move the decimal: 10% → one place left. 1% → two places left. 5% = half of 10%.
+All other common percentages decompose: 17% = 10% + 5% + 2×1%.
 
-- 1% of 742 = **7.42**.
+> 17% of 742 = 74.2 + 37.1 + 14.84 = **126.14** (no pen needed).
 
-**5% = half of 10%**
+---
 
-- 5% of 742 = **37.1**.
+**S-2 — Net Change Formula: A + B + AB/100** *(Successive %, CI, successive discounts, population growth)*
 
-**Break a nasty percentage into a sum of easy ones**
+When a value changes by A% then B%, the net % change = A + B + $\dfrac{AB}{100}$.
 
-- 17% = 10% + 5% + 2% = 10% + 5% + 2 × 1%.
+> Price rises 10% then falls 10%: net = 10 + (−10) + $\dfrac{10 \times (−10)}{100}$ = −1%. **Net loss of 1%.**
+> Two successive discounts of 20% and 25%: net discount = 20 + 25 + $\dfrac{20 \times 25}{100}$ = 40%. **Equivalent single discount = 40%.**
 
-- 17% of 742 = 74.2 + 37.1 + 14.84 = **126.14**.
+---
 
+**S-3 — LCM = Total Work** *(Time & Work, Pipes & Cisterns, Efficiency)*
 
-**Fraction conversion:** "x is what % of y" is faster as the fraction x/y matched to the table above.
+Take LCM of all given time values. That is the total work. Each person/pipe's rate = LCM ÷ their time.
 
-**Percent-change symmetry:** a% of b = b% of a. 32% of 50 = 50% of 32 = 16. Use whichever side is easier.
+> A in 12 days, B in 15 days → LCM = 60 units. A's rate = 5/day, B's rate = 4/day. Together = 9/day → $\dfrac{60}{9}$ = **6⅔ days**.
 
+---
+
+**S-4 — Component Ratio** *(Partnership, Mixture, Ratio & Proportion)*
+
+Share of first = $\dfrac{a}{a+b}$ × Total, where a:b is the ratio.
+
+> Profit split 3:5, total ₹640 → First gets $\dfrac{3}{8}$ × 640 = **₹240**.
+
+---
+
+**S-5 — Alligation Cross** *(Mixtures & Alligation, Average Speed, Blending)*
+
+To blend two quantities of costs c1 and c2 to get mean price m:
+Ratio = (c2 − m) : (m − c1).
+
+> Mix milk at ₹30/L with water (₹0) to get average ₹20/L:
+> Ratio water:milk = (30−20) : (20−0) = 10 : 20 = **1:2**. Per 3L mixture: 1L water + 2L milk.
+
+---
+
+**S-6 — Speed–Time Inverse (fixed distance)** *(TSD, Trains, Boats, Races)*
+
+When distance is fixed: Time ∝ $\dfrac{1}{\text{Speed}}$, so $\dfrac{T_1}{T_2} = \dfrac{S_2}{S_1}$.
+
+> A drives at 60 km/h and takes 4 h. At 80 km/h it takes 4 × $\dfrac{60}{80}$ = **3 h**.
+
+---
+
+**S-7 — Fraction–Percent Table (memorise cold)** *(ALL percentage topics)*
+
+| Fraction | % | Fraction | % |
+|---|---|---|---|
+| $\dfrac{1}{2}$ | 50% | $\dfrac{1}{9}$ | 11.11% |
+| $\dfrac{1}{3}$ | 33.33% | $\dfrac{1}{10}$ | 10% |
+| $\dfrac{1}{4}$ | 25% | $\dfrac{1}{11}$ | 9.09% |
+| $\dfrac{1}{5}$ | 20% | $\dfrac{1}{12}$ | 8.33% |
+| $\dfrac{1}{6}$ | 16.67% | $\dfrac{2}{3}$ | 66.67% |
+| $\dfrac{1}{7}$ | 14.28% | $\dfrac{3}{4}$ | 75% |
+| $\dfrac{1}{8}$ | 12.5% | $\dfrac{4}{5}$ | 80% |
+
+**Rule:** When you see a %, instantly convert to the fraction above. $\dfrac{1}{8}$ is far faster to multiply than 12.5%.
+
+---
+
+**S-8 — Digit-Sum Check** *(Answer verification for any arithmetic)*
+
+Cast out 9s: replace every number with its digit-sum, perform the same operation, check against the candidate answer's digit-sum. Wrong answer → digit-sum won't match.
+
+> 37 × 48 = ? Digit-sums: 10→1, 12→3. Product digit-sum = 1×3 = 3. Answer 1776: 1+7+7+6 = 21 → 3. **Matches — likely correct.**
+
+---
+
+**S-9 — Base-Deviation Multiplication** *(Squaring, large products near 100 or 50)*
+
+For numbers near base B: (B+a)(B+b) = B(B+a+b) + ab.
+
+> 97 × 103 = 100×(97+103−100) + (−3)(3) = 100×100 − 9 = **9991**.
+> 48² = (50−2)² = 2500 − 200 + 4 = **2304**.
+
+---
+
+**S-10 — Reverse Percentage** *(Finding original price before markup or discount)*
+
+"After X% increase, value is V. Find original." → Original = $\dfrac{V \times 100}{100 + X}$. Never multiply V by (100−X)% — that gives the wrong answer.
+
+> After 20% rise, price = ₹840. Do NOT compute 840 × 0.80. Original = $\dfrac{840 \times 100}{120}$ = $\dfrac{84000}{120}$ = **₹700**.
+
+---
+
+**S-11 — Set Formula** *(Venn diagrams, survey problems, Probability)*
+
+n(A∪B) = n(A) + n(B) − n(A∩B).
+Three-set: n(A∪B∪C) = n(A)+n(B)+n(C) − n(A∩B) − n(B∩C) − n(A∩C) + n(A∩B∩C).
+
+> 100 students: 60 like Cricket, 50 like Football, 30 like both. Neither = 100 − (60+50−30) = **20**.
+
+---
+
+**S-12 — Percent-Change Symmetry: a% of b = b% of a** *(Any % computation)*
+
+Swap to whichever side is easier to compute.
+
+> 32% of 50 = 50% of 32 = **16**. 4% of 75 = 75% of 4 = 3. No long multiplication needed.
+
+---
+
+**S-13 — Relative Speed** *(Trains, Boats, Races)*
+
+| Direction | Relative Speed | 
+|---|---|
+| Moving **towards** each other | S₁ + S₂ |
+| Moving in **same direction** | S₁ − S₂ (faster − slower) |
+| Boat **upstream** | Boat speed − Current speed |
+| Boat **downstream** | Boat speed + Current speed |
+
+Time to meet/cross = $\dfrac{\text{Total distance}}{\text{Relative speed}}$.
+
+> Train A (100 m) and Train B (150 m) approach each other at 60 km/h and 90 km/h. Relative speed = 150 km/h = $\dfrac{150}{3.6}$ m/s = $\dfrac{125}{3}$ m/s. Distance = 250 m. Time = $\dfrac{250 \times 3}{125}$ = **6 seconds**.
+
+---
+
+**S-14 — Average Speed for Equal Distances** *(TSD return trips, two-leg journeys)*
+
+Average speed = $\dfrac{2ab}{a+b}$, where a and b are the two speeds.
+
+> Car goes at 40 km/h, returns at 60 km/h. Average = $\dfrac{2 \times 40 \times 60}{40+60}$ = $\dfrac{4800}{100}$ = **48 km/h** (not 50 — the arithmetic mean is always wrong here).
+
+---
+
+**S-15 — Partnership Profit Ratio** *(Partnership, Investment problems)*
+
+Profit ratio = P₁T₁ : P₂T₂ (capital × time).
+
+> A invests ₹6,000 for 5 months; B invests ₹4,000 for 9 months. Ratio = 30,000 : 36,000 = 5:6. Total profit ₹22,000 → A gets $\dfrac{5}{11}$ × 22,000 = **₹10,000**.
+
+---
 
 ## 0.5 Generic problem-solving flow
 
@@ -285,7 +404,7 @@ Sum unit digit: 6 + 3 = 9. Options with unit digit ≠ 9 are eliminated immediat
 **What it is:** The answer to many geometry problems must be divisible by specific numbers because of the formula structure. You can eliminate options before computing.
 
 **When to use:**
-**Formula involves π = 22/7:** The answer will contain 22 in the numerator → divisible by both **2 and 11**.
+**Formula involves π = $\dfrac{22}{7}$:** The answer will contain 22 in the numerator → divisible by both **2 and 11**.
 
   If only one option is divisible by 11 and it passes the magnitude check, that option is almost certainly correct.
 **Formula involves 3 in denominator** (cone, pyramid): answer divisible by specific factors after cancellation.
@@ -296,11 +415,11 @@ Sum unit digit: 6 + 3 = 9. Options with unit digit ≠ 9 are eliminated immediat
 
 <div class="keypoint">
 
-**The π = 22/7 rule:**
+**The π = $\dfrac{22}{7}$ rule:**
 
-- Cylinder/Cone/Sphere volumes and surface areas use π = 22/7 in exams.
-- Volume of cone = (1/3)(22/7)r²h = **22r²h / 21** — the 22 in the numerator means the answer is always divisible by **11** (and by 2) when dimensions are integers.
-- Hemisphere TSA = 3πr² = 3(22/7)r² = **66r²/7** — since 66 = 6 × 11, the answer is again divisible by 11.
+- Cylinder/Cone/Sphere volumes and surface areas use π = $\dfrac{22}{7}$ in exams.
+- Volume of cone = ($\dfrac{1}{3}$)($\dfrac{22}{7}$)r²h = **22r²h / 21** — the 22 in the numerator means the answer is always divisible by **11** (and by 2) when dimensions are integers.
+- Hemisphere TSA = 3πr² = 3($\dfrac{22}{7}$)r² = **66r²/7** — since 66 = 6 × 11, the answer is again divisible by 11.
 - **Before computing:** scan the options and eliminate any not divisible by 11. Often only one option remains.
 
 </div>
@@ -313,9 +432,9 @@ Options: (a) 280 cm³ &nbsp; (b) 308 cm³ &nbsp; (c) 294 cm³ &nbsp; (d) 315 cm�
 
 *Fast path:*
 
-Formula = (22/21) × r²h
+Formula = ($\dfrac{22}{21}$) × r²h
 
-= (22/21) × 49 × 6
+= ($\dfrac{22}{21}$) × 49 × 6
 
 = 22 × 14 = **308**
 
@@ -473,7 +592,7 @@ Difference = A − B = 1.25x − x = 0.25x
 
 % less = Difference / A × 100 = 0.25x / 1.25x × 100
 
-= (0.25 / 1.25) × 100 = 0.2 × 100 = **20 %**
+= (0.25/1.25) × 100 = 0.2 × 100 = **20 %**
 
 </div>
 
@@ -486,9 +605,9 @@ Let B = 100, then A = 125
 
 Difference = A − B = 125 − 100 = 25
 
-% less = Difference / A × 100 = 25 / 125 × 100
+% less = Difference / A × 100 = $\dfrac{25}{125}$ × 100
 
-= (1/5) × 100 = **20 %**
+= ($\dfrac{1}{5}$) × 100 = **20 %**
 
 </div>
 
@@ -513,7 +632,7 @@ Net change = (96 − 100) / 100 × 100 = **−4 %**
 *Formula verification:* a + b + ab/100
 = 20 + (−20) + (20 × (−20)) / 100
 
-= 0 + (−400 / 100)
+= 0 + (−$\dfrac{400}{100}$)
 
 = 0 − 4 = **−4 %** ✓
 
@@ -526,7 +645,7 @@ Net change = (96 − 100) / 100 × 100 = **−4 %**
 
 **When to use:** Every single time-work or pipes problem. This is a universal substitution for this topic — not a special trick.
 
-**When NOT to use:** Basically always use it. The only exception: if the problem gives fractional portions done ("A completes 2/5 of a job in 4 days") — then work directly with the fraction.
+**When NOT to use:** Basically always use it. The only exception: if the problem gives fractional portions done ("A completes $\dfrac{2}{5}$ of a job in 4 days") — then work directly with the fraction.
 
 **Worked example.** A completes a job in 12 days, B in 18 days. Together, how long?
 
@@ -534,17 +653,17 @@ Net change = (96 − 100) / 100 × 100 = **−4 %**
 
 *Fraction method:*
 
-A's rate = 1/12 of the work per day
+A's rate = $\dfrac{1}{12}$ of the work per day
 
-B's rate = 1/18 of the work per day
+B's rate = $\dfrac{1}{18}$ of the work per day
 
-Combined rate = 1/12 + 1/18
+Combined rate = $\dfrac{1}{12}$ + $\dfrac{1}{18}$
 
 </div>
 
-  = 3/36 + 2/36  *(LCM of 12, 18 = 36)*
-  = 5/36
-Time together = 1 / (5/36) = 36/5 = **7.2 days**
+  = $\dfrac{3}{36}$ + $\dfrac{2}{36}$  *(LCM of 12, 18 = 36)*
+  = $\dfrac{5}{36}$
+Time together = 1 / ($\dfrac{5}{36}$) = $\dfrac{36}{5}$ = **7.2 days**
 
 
 <div class="steps">
@@ -553,13 +672,13 @@ Time together = 1 / (5/36) = 36/5 = **7.2 days**
 
 Total work = LCM(12, 18) = **36 units**
 
-A's rate = 36/12 = **3 units/day**
+A's rate = $\dfrac{36}{12}$ = **3 units/day**
 
-B's rate = 36/18 = **2 units/day**
+B's rate = $\dfrac{36}{18}$ = **2 units/day**
 
 Combined rate = 5 units/day
 
-Time = 36/5 = **7.2 days**
+Time = $\dfrac{36}{5}$ = **7.2 days**
 
 </div>
 
@@ -626,9 +745,9 @@ Time = 36/5 = **7.2 days**
 
 
 **Step 1 — Find alcohol in each solution.**
-Alcohol in Solution 1 = 40% of 20 litres = (40/100) × 20 = **8 litres**
+Alcohol in Solution 1 = 40% of 20 litres = ($\dfrac{40}{100}$) × 20 = **8 litres**
 
-Alcohol in Solution 2 = 80% of 50 litres = (80/100) × 50 = **40 litres**
+Alcohol in Solution 2 = 80% of 50 litres = ($\dfrac{80}{100}$) × 50 = **40 litres**
 
 
 **Step 2 — Find total alcohol.**
@@ -642,7 +761,7 @@ Total volume = 20 + 50 = **70 litres**
 **Step 4 — Calculate alcohol % in mixture.**
 Alcohol % = (Total alcohol / Total volume) × 100
 
-= (48 / 70) × 100
+= ($\dfrac{48}{70}$) × 100
 
 = **68.57 %**
 
@@ -717,13 +836,13 @@ Flip to get acid : water = **3 : 2** ✓
 
 *Traditional:*
 
-Time₁ = 60 / 40 = **1.5 h**
+Time₁ = $\dfrac{60}{40}$ = **1.5 h**
 
-Time₂ = 90 / 60 = **1.5 h**
+Time₂ = $\dfrac{90}{60}$ = **1.5 h**
 
 Total distance = 150 km; total time = 3 h
 
-Average speed = 150 / 3 = **50 km/h**
+Average speed = $\dfrac{150}{3}$ = **50 km/h**
 
 </div>
 
@@ -738,7 +857,7 @@ Average speed = (S₁ × T₁ + S₂ × T₂) / (T₁ + T₂)
 
 = (60 + 90) / 3
 
-= 150 / 3 = **50 km/h** ✓
+= $\dfrac{150}{3}$ = **50 km/h** ✓
 
 </div>
 
@@ -797,7 +916,7 @@ Multiply numerator and denominator by (1 + cos θ)
 
 <div class="pitfall">
 
-**Common trap:** A question says "simplify (sin θ + cos θ)²." At θ = 45°, this = (1/√2 + 1/√2)² = (√2)² = 2. Options: (a) 1 + 2sinθcosθ (b) 1 + sin2θ (c) sin2θ + 1 (d) both (a) and (b). At θ = 45°: (a) = 1 + 2(1/2) = 2 ✓; (b) = 1 + 1 = 2 ✓. Both match → you cannot distinguish by substitution alone. **The answer is (d)**. Lesson: when multiple options match at one angle, try a second angle, or use algebra.
+**Common trap:** A question says "simplify (sin θ + cos θ)²." At θ = 45°, this = (1/√2 + 1/√2)² = (√2)² = 2. Options: (a) 1 + 2sinθcosθ (b) 1 + sin2θ (c) sin2θ + 1 (d) both (a) and (b). At θ = 45°: (a) = 1 + 2($\dfrac{1}{2}$) = 2 ✓; (b) = 1 + 1 = 2 ✓. Both match → you cannot distinguish by substitution alone. **The answer is (d)**. Lesson: when multiple options match at one angle, try a second angle, or use algebra.
 
 </div>
 
@@ -817,24 +936,24 @@ Multiply numerator and denominator by (1 + cos θ)
 
 36 = 2² × 3²; distinct prime factors: 2 and 3
 
-φ(36) = 36 × (1 − 1/2) × (1 − 1/3)
+φ(36) = 36 × (1 − $\dfrac{1}{2}$) × (1 − $\dfrac{1}{3}$)
 
-= 36 × 1/2 × 2/3
+= 36 × $\dfrac{1}{2}$ × $\dfrac{2}{3}$
 
-= 18 × 2/3 = **12**
+= 18 × $\dfrac{2}{3}$ = **12**
 
 Those 12 numbers: 1, 5, 7, 11, 13, 17, 19, 23, 25, 29, 31, 35
 
 
 **Worked example.** n = 30 = 2 × 3 × 5. Find φ(30).
 
-φ(30) = 30 × (1 − 1/2) × (1 − 1/3) × (1 − 1/5)
+φ(30) = 30 × (1 − $\dfrac{1}{2}$) × (1 − $\dfrac{1}{3}$) × (1 − $\dfrac{1}{5}$)
 
-= 30 × 1/2 × 2/3 × 4/5
+= 30 × $\dfrac{1}{2}$ × $\dfrac{2}{3}$ × $\dfrac{4}{5}$
 
-= 15 × 2/3 × 4/5
+= 15 × $\dfrac{2}{3}$ × $\dfrac{4}{5}$
 
-= 10 × 4/5 = **8**
+= 10 × $\dfrac{4}{5}$ = **8**
 
 
 ---
@@ -993,17 +1112,17 @@ Squares 1-30.
 
 ## Type 1 — Convert fraction ↔ percentage ↔ decimal
 
-**Cue:** "Express 5/8 as a percentage" / "37.5 % = ? fraction".
+**Cue:** "Express $\dfrac{5}{8}$ as a percentage" / "37.5 % = ? fraction".
 
 **Insight:** The table in § 0.1. Done.
 
-**Shortcut:** Table lookup. 5/8 = 62.5 %.
+**Shortcut:** Table lookup. $\dfrac{5}{8}$ = 62.5 %.
 
-**Traditional:** 5/8 = 5 × 100 / 8 = 62.5.
+**Traditional:** $\dfrac{5}{8}$ = 5 × $\dfrac{100}{8}$ = 62.5.
 
-**Variations:** Recurring decimals → 0.333… = 1/3; 0.142857… = 1/7 (period 6 — a known pattern).
+**Variations:** Recurring decimals → 0.333… = $\dfrac{1}{3}$; 0.142857… = $\dfrac{1}{7}$ (period 6 — a known pattern).
 
-**Self-check:** 7/8 = ? %. → **87.5 %** (50 + 25 + 12.5).
+**Self-check:** $\dfrac{7}{8}$ = ? %. → **87.5 %** (50 + 25 + 12.5).
 
 ---
 
@@ -1022,7 +1141,7 @@ Squares 1-30.
 Total = 170 + 25.5 = **195.5** (done in < 10 seconds mentally)
 
 
-**Traditional:** 23/100 × 850 = 19,550/100 = 195.5.
+**Traditional:** $\dfrac{23}{100}$ × 850 = $\dfrac{19550}{100}$ = 195.5.
 
 **Variations:**
 
@@ -1041,9 +1160,9 @@ Ugly percentages (17.5 %) → 17.5 = 10 + 5 + 2.5.
 
 **Insight:** Compute A/B, then map to the table.
 
-**Shortcut:** 24/64 = 3/8 = 37.5 %.
+**Shortcut:** $\dfrac{24}{64}$ = $\dfrac{3}{8}$ = 37.5 %.
 
-**Traditional:** (24 × 100) / 64 = 2400/64 = 37.5.
+**Traditional:** (24 × 100) / 64 = $\dfrac{2400}{64}$ = 37.5.
 
 **Variations:**
 
@@ -1052,7 +1171,7 @@ Ugly percentages (17.5 %) → 17.5 = 10 + 5 + 2.5.
 "By what percentage is A less than B?" → (B−A)/B × 100 (base is B).
 
 
-**Self-check:** 45 is what % of 75? → 45/75 = 3/5 = **60 %**.
+**Self-check:** 45 is what % of 75? → $\dfrac{45}{75}$ = $\dfrac{3}{5}$ = **60 %**.
 
 ---
 
@@ -1062,18 +1181,18 @@ Ugly percentages (17.5 %) → 17.5 = 10 + 5 + 2.5.
 
 **Insight:** Change / Original × 100, original (the *old* value) is the base.
 
-**Shortcut:** 300 − 240 = 60. 60/240 = 1/4 = **25 %**.
+**Shortcut:** 300 − 240 = 60. $\dfrac{60}{240}$ = $\dfrac{1}{4}$ = **25 %**.
 
-**Traditional:** 60 × 100 / 240 = 25.
+**Traditional:** 60 × $\dfrac{100}{240}$ = 25.
 
 **Variations:**
 
-Watch the base direction: "decreased from 300 to 240" → 60/300 = 1/5 = **20 %**.
+Watch the base direction: "decreased from 300 to 240" → $\dfrac{60}{300}$ = $\dfrac{1}{5}$ = **20 %**.
 
 Two different bases give two different answers — the exam exploits this.
 
 
-**Self-check:** Salary up from ₹20k to ₹28k → 8/20 = **40 %**.
+**Self-check:** Salary up from ₹20k to ₹28k → $\dfrac{8}{20}$ = **40 %**.
 
 ---
 
@@ -1138,7 +1257,7 @@ Discount-on-discount: 10% + 20% successive = 10 + 20 − 2 = **28%**, NOT 30%.
 
 Net change = a + b + ab/100 = 30 + (−20) + (30 × (−20)) / 100
 
-= 10 + (−600/100) = 10 − 6 = **+4%**
+= 10 + (−$\dfrac{600}{100}$) = 10 − 6 = **+4%**
 
 Verify with numbers: 100 → ×1.30 → 130 → ×0.80 → **104**. Net gain = 4%. ✓
 
@@ -1182,10 +1301,10 @@ Verify with numbers: 100 → ×1.30 → 130 → ×0.80 → **104**. Net gain = 4
 
 **Mixed rates:** Year 1 +10%, Year 2 +5%, Year 3 −8% → 50,000 × 1.10 × 1.05 × 0.92 = 52,878.
 
-**Find original:** 66,550 after 3 years at 10% → 66,550 / 1.331 = **50,000**.
+**Find original:** 66,550 after 3 years at 10% → 66,550/1.331 = **50,000**.
 
 
-**Self-check:** ₹8000 at 25 % p.a. CI for 2 years → 8000 × (5/4)² = 8000 × 25/16 = **₹12,500**.
+**Self-check:** ₹8000 at 25 % p.a. CI for 2 years → 8000 × ($\dfrac{5}{4}$)² = 8000 × $\dfrac{25}{16}$ = **₹12,500**.
 
 ---
 
@@ -1248,7 +1367,7 @@ New savings = 120 − 82.5 = **37.5**
 **Step 4 — Calculate % change in savings.**
 Change = 37.5 − 25 = 12.5
 
-% change = (12.5 / 25) × 100 = **+50%**
+% change = (12.$\dfrac{5}{25}$) × 100 = **+50%**
 
 
 </div>
@@ -1262,7 +1381,7 @@ Change = 37.5 − 25 = 12.5
 **New Income:** 100 × 1.10 = **110**
 **New Expense:** 80 × 1.20 = **96**
 **New Savings:** 110 − 96 = **14**
-**% change in savings:** (14 − 20) / 20 × 100 = −6/20 × 100 = **−30%**
+**% change in savings:** (14 − 20) / 20 × 100 = −$\dfrac{6}{20}$ × 100 = **−30%**
 
 </div>
 
@@ -1348,7 +1467,7 @@ Pure milk = 25% × 40 = **10 L**
 
 
 **Step 2 — Set up equation for new concentration.**
-10 / (40 + x) = 20 / 100 = 1/5
+10 / (40 + x) = $\dfrac{20}{100}$ = $\dfrac{1}{5}$
 
 
 **Step 3 — Solve for x.**
@@ -1383,11 +1502,11 @@ New price = 125 (25 % rise)
 
 Expenditure stays at 10,000
 
-New Quantity = 10,000 / 125 = **80**
+New Quantity = $\dfrac{10000}{125}$ = **80**
 
 
 **Step 3 — Find % drop in consumption.**
-Drop in quantity = (100 − 80) / 100 × 100 = 20/100 × 100 = **20%**
+Drop in quantity = (100 − 80) / 100 × 100 = $\dfrac{20}{100}$ × 100 = **20%**
 
 
 </div>
@@ -1416,7 +1535,7 @@ Net discount = a + b + ab/100, where a = −20, b = −10
 
 = −20 + (−10) + [(−20) × (−10)] / 100
 
-= −30 + 200/100
+= −30 + $\dfrac{200}{100}$
 
 = −30 + 2 = **−28%**
 
@@ -1462,7 +1581,7 @@ Final price = 1600 − 160 = **₹1440** ✓
 
 **Insight:** Area ∝ side². If side is (1 + r), area is (1 + r)² ≈ 1 + 2r + r². With r = 3 % = 0.03, area error = 6 + 0.09 ≈ **6.09 %**.
 
-**Shortcut:** Successive-% with a = b = r. Net = 2r + r²/100. r = 3 → 6 + 9/100 = **6.09 %**.
+**Shortcut:** Successive-% with a = b = r. Net = 2r + r²/100. r = 3 → 6 + $\dfrac{9}{100}$ = **6.09 %**.
 
 **Traditional:** Same algebra explicitly.
 
@@ -1473,7 +1592,7 @@ Cube / volume: three successive r → 3r + 3r²/100 + r³/10000 ≈ 3r.
 One side +r %, other side −s %: apply signed successive.
 
 
-**Self-check:** Radius +4 % → area of circle error? → 2(4) + 16/100 = **8.16 %**.
+**Self-check:** Radius +4 % → area of circle error? → 2(4) + $\dfrac{16}{100}$ = **8.16 %**.
 
 ---
 
@@ -1487,7 +1606,7 @@ One side +r %, other side −s %: apply signed successive.
 
 
 **Step 1 — Compute 60% of 750.**
-60% × 750 = (60/100) × 750 = **450**
+60% × 750 = ($\dfrac{60}{100}$) × 750 = **450**
 
 
 **Step 2 — Take 40% less of 450.**
@@ -1499,7 +1618,7 @@ One side +r %, other side −s %: apply signed successive.
 **Step 3 — Reverse-divide to find N.**
 25% of N = 270
 
-N = 270 × (100/25) = 270 × 4 = **1080**
+N = 270 × ($\dfrac{100}{25}$) = 270 × 4 = **1080**
 
 
 </div>
@@ -1549,9 +1668,9 @@ N = 270 × (100/25) = 270 × 4 = **1080**
 
 **Cue:** "CP = 400, SP = 460. Profit %?"
 
-**Shortcut:** (460 − 400)/400 = 60/400 = 3/20 = **15 %**.
+**Shortcut:** (460 − 400)/400 = $\dfrac{60}{400}$ = $\dfrac{3}{20}$ = **15 %**.
 
-**Traditional:** 60 × 100 / 400 = 15.
+**Traditional:** 60 × $\dfrac{100}{400}$ = 15.
 
 **Variation:** SP < CP → loss %, base still CP.
 
@@ -1561,11 +1680,11 @@ N = 270 × (100/25) = 270 × 4 = **1080**
 
 **Cue:** "CP = 800, wants 12.5 % profit. SP?"
 
-**Shortcut:** 12.5 % = 1/8. So profit = 100. SP = **900**.
+**Shortcut:** 12.5 % = $\dfrac{1}{8}$. So profit = 100. SP = **900**.
 
-**Traditional:** SP = 800 × 112.5/100 = 900.
+**Traditional:** SP = 800 × 112.$\dfrac{5}{100}$ = 900.
 
-**Variation:** Loss instead of profit. 12.5 % loss → SP = 7/8 × 800 = 700.
+**Variation:** Loss instead of profit. 12.5 % loss → SP = $\dfrac{7}{8}$ × 800 = 700.
 
 ---
 
@@ -1573,7 +1692,7 @@ N = 270 × (100/25) = 270 × 4 = **1080**
 
 **Cue:** "Sold at 1080 for 20 % profit. CP?"
 
-**Shortcut:** SP is 120 % of CP → CP = 1080 × 100/120 = **900**. The common trap is dividing by 1.2 vs subtracting 20 %.
+**Shortcut:** SP is 120 % of CP → CP = 1080 × $\dfrac{100}{120}$ = **900**. The common trap is dividing by 1.2 vs subtracting 20 %.
 
 **Traditional:** Let CP = x. 1.2x = 1080 → x = 900.
 
@@ -1595,7 +1714,7 @@ N = 270 × (100/25) = 270 × 4 = **1080**
 **Step 1 — Find CP of the article sold at 20 % gain.**
 Gainer's CP = SP × 100 / (100 + gain %)
 
-= 2400 × 100 / 120
+= 2400 × $\dfrac{100}{120}$
 
 = **₹2,000**
 
@@ -1603,7 +1722,7 @@ Gainer's CP = SP × 100 / (100 + gain %)
 **Step 2 — Find CP of the article sold at 20 % loss.**
 Loser's CP = SP × 100 / (100 − loss %)
 
-= 2400 × 100 / 80
+= 2400 × $\dfrac{100}{80}$
 
 = **₹3,000**
 
@@ -1615,7 +1734,7 @@ Total SP = 2,400 + 2,400 = **₹4,800**
 
 Loss = 5,000 − 4,800 = **₹200**
 
-Loss % = Loss / Total CP × 100 = 200 / 5,000 × 100 = **4 %**
+Loss % = Loss / Total CP × 100 = $\dfrac{200}{5000}$ × 100 = **4 %**
 
 
 </div>
@@ -1699,7 +1818,7 @@ Net = $a + b + \dfrac{a \times b}{100}$, where a = +25 (mark-up), b = −10 (dis
 
 **Variation:** Uses BOTH a false weight AND marks up the price. Combine via successive %.
 
-**Self-check:** 950 g instead of 1 kg → profit = 50/950 = **5.26 %**.
+**Self-check:** 950 g instead of 1 kg → profit = $\dfrac{50}{950}$ = **5.26 %**.
 
 ---
 
@@ -1709,17 +1828,17 @@ Net = $a + b + \dfrac{a \times b}{100}$, where a = +25 (mark-up), b = −10 (dis
 
 **Shortcut:**
 
-On buying, gets 1100 g by paying for 1000 g → effective CP / g is reduced to 10/11 of claimed.
+On buying, gets 1100 g by paying for 1000 g → effective CP / g is reduced to $\dfrac{10}{11}$ of claimed.
 
-On selling, delivers 900 g for 1000 g price → SP / g is increased to 10/9.
+On selling, delivers 900 g for 1000 g price → SP / g is increased to $\dfrac{10}{9}$.
 
-Ratio SP/CP per gram = (10/9) ÷ (10/11)
+Ratio SP/CP per gram = ($\dfrac{10}{9}$) ÷ ($\dfrac{10}{11}$)
 
-= (10/9) × (11/10)
+= ($\dfrac{10}{9}$) × ($\dfrac{11}{10}$)
 
-= **11/9**
+= **$\dfrac{11}{9}$**
 
-Profit % = (SP/CP − 1) × 100 = (11/9 − 1) × 100 = 2/9 × 100 = **22.22 %**
+Profit % = (SP/CP − 1) × 100 = ($\dfrac{11}{9}$ − 1) × 100 = $\dfrac{2}{9}$ × 100 = **22.22 %**
 
 
 ---
@@ -1763,9 +1882,9 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 
 **Cue:** "A shopkeeper's profit is 20 % of SP. Find profit % on CP."
 
-**Insight:** If profit = 20 % of SP, then CP = 80 % of SP. Profit/CP = 20/80 = **25 %**.
+**Insight:** If profit = 20 % of SP, then CP = 80 % of SP. Profit/CP = $\dfrac{20}{80}$ = **25 %**.
 
-**Variation:** Some exams ask "20 % loss on SP" → loss/CP = 20/120 = 16.67 %.
+**Variation:** Some exams ask "20 % loss on SP" → loss/CP = $\dfrac{20}{120}$ = 16.67 %.
 
 ---
 
@@ -1811,7 +1930,7 @@ Already in Type 5 (percentage). Recapping for SP/MP context:
 **Reverse (find R):** Given SI = ₹1440, P = 6000, T = 3.
 - R = SI × 100 / (P × T)
 - = 1440 × 100 / (6000 × 3)
-- = 144,000 / 18,000
+- = $\dfrac{144000}{18000}$
 - = **8%**
 
 </div>
@@ -1836,14 +1955,14 @@ $\dfrac{P \times R \times T}{100} = P$
 
 Cancel P: R × T = 100
 
-With T = 8: R = 100 / 8 = **12.5% p.a.**
+With T = 8: R = $\dfrac{100}{8}$ = **12.5% p.a.**
 
 
 **Tripling (Amount = 3P):**
 
 SI = 2P → R × T = 200
 
-With T = 8: R = 200 / 8 = **25% p.a.**
+With T = 8: R = $\dfrac{200}{8}$ = **25% p.a.**
 
 
 </div>
@@ -1899,7 +2018,7 @@ With T = 8: R = 200 / 8 = **25% p.a.**
 *← this formula works ONLY when T = 2 years; for T = 3, use Method B*
 
 **Step 2:** $= 5000 \times \dfrac{64}{10000}$
-*← (8/100)² = 64/10000, not 8² = 64 over 100; squaring the full fraction is the critical step*
+*← ($\dfrac{8}{100}$)² = $\dfrac{64}{10000}$ not 8² = 64 over 100; squaring the full fraction is the critical step*
 
 **Answer:** $= \dfrac{320000}{10000}$ = **₹32**
 
@@ -1918,7 +2037,7 @@ With T = 8: R = 200 / 8 = **25% p.a.**
 **Step 1 — Calculate SI over 2 years.**
 SI = P × R × T / 100
 
-= 5,000 × 8 × 2 / 100
+= 5,000 × 8 × $\dfrac{2}{100}$
 
 = **₹800**
 
@@ -1957,7 +2076,7 @@ CI − SI = 832 − 800 = **₹32** ✓
 
 <div class="steps">
 
-**Step 1:** Half-yearly rate = 10 / 2 = **5 %**
+**Step 1:** Half-yearly rate = $\dfrac{10}{2}$ = **5 %**
 
 **Step 2:** Number of half-yearly periods = 2 × 1 = **2**
 
@@ -2104,7 +2223,7 @@ So **R = 10%**
 
 **Step 1:** Let present ages: A = 3k, B = 5k
 
-**Step 2:** After 6 years: (3k + 6) / (5k + 6) = 2/3
+**Step 2:** After 6 years: (3k + 6) / (5k + 6) = $\dfrac{2}{3}$
 
 **Step 3:** Cross-multiply: 3(3k + 6) = 2(5k + 6)
 
@@ -2131,9 +2250,9 @@ So **R = 10%**
 
 | Sub-type | Formula | Example |
 |---|---|---|
-| Fourth proportional of a, b, c | $x = \dfrac{bc}{a}$ | 3rd prop of 3, 5, 9 → x = 5×9/3 = 15 |
+| Fourth proportional of a, b, c | $x = \dfrac{bc}{a}$ | 3rd prop of 3, 5, 9 → x = 5×$\dfrac{9}{3}$ = 15 |
 | Mean proportional of a, b | $x = \sqrt{ab}$ | Mean prop of 4 and 9 → x = √36 = 6 |
-| Third proportional of a, b | $x = \dfrac{b^2}{a}$ | Third prop of 2, 6 → x = 36/2 = 18 |
+| Third proportional of a, b | $x = \dfrac{b^2}{a}$ | Third prop of 2, 6 → x = $\dfrac{36}{2}$ = 18 |
 
 <div class="keypoint">
 
@@ -2159,7 +2278,7 @@ So **R = 10%**
 
 **Step 2:** 12 × 8 = 16 × t
 
-**Step 3:** t = 96 / 16 = **6 days**
+**Step 3:** t = $\dfrac{96}{16}$ = **6 days**
 
 </div>
 
@@ -2169,12 +2288,12 @@ So **R = 10%**
 
 **Step 1:** More boxes → more time → DIRECT variation
 
-**Step 2:** Set up proportion: 120/4 = 300/t
+**Step 2:** Set up proportion: $\dfrac{120}{4}$ = 300/t
 
 **Step 3:** Solve for t.
-t = 300 × 4 / 120
+t = 300 × $\dfrac{4}{120}$
 
-= 1200 / 120
+= $\dfrac{1200}{120}$
 
 = **10 hours**
 
@@ -2332,7 +2451,7 @@ New member's score = Old average − Change in sum = 60 − 12 = **48** ✓
 
 **Step 4:** Total count = 30 + 20 = 50
 
-**Answer:** Average = 3300 / 50 = **66 marks**
+**Answer:** Average = $\dfrac{3300}{50}$ = **66 marks**
 
 </div>
 
@@ -2357,11 +2476,11 @@ New member's score = Old average − Change in sum = 60 − 12 = **48** ✓
 
 **Step 2:** New sum = 600 + 50 = 650
 
-**Step 3:** New average = 650 / 21 = **30.95** (≈ 31)
+**Step 3:** New average = $\dfrac{650}{21}$ = **30.95** (≈ 31)
 
 </div>
 
-**Variation:** "He scores 0 in the 21st innings." → New avg = 600/21 = **28.57**. Averages fall when you score below your average; rise when you score above.
+**Variation:** "He scores 0 in the 21st innings." → New avg = $\dfrac{600}{21}$ = **28.57**. Averages fall when you score below your average; rise when you score above.
 
 </div>
 
@@ -2414,7 +2533,7 @@ Each person's rate = total work ÷ their solo time = an integer.
 Add/subtract rates, then divide total work by combined rate.
 
 
-**Why LCM?** It kills fractions. 1/12 + 1/18 becomes 3 + 2 = 5 (integers). Faster, fewer errors.
+**Why LCM?** It kills fractions. $\dfrac{1}{12}$ + $\dfrac{1}{18}$ becomes 3 + 2 = 5 (integers). Faster, fewer errors.
 
 ---
 
@@ -2431,7 +2550,7 @@ Add/subtract rates, then divide total work by combined rate.
 <div class="steps">
 
 **Step 1:** LCM(12, 18) = 36 → set as total work
-*← LCM converts all rates to whole numbers; you never deal with fractions like 1/12 or 1/18*
+*← LCM converts all rates to whole numbers; you never deal with fractions like $\dfrac{1}{12}$ or $\dfrac{1}{18}$*
 
 **Step 2:** A's rate = 36 ÷ **12** = 3 units/day
 
@@ -2474,13 +2593,13 @@ $\dfrac{ab}{a+b} = \dfrac{12 \times 18}{12 + 18} = \dfrac{216}{30}$ = **7.2 days
 
 **Step 1:** Let total work = LCM approach; use fraction for this type.
 
-**Step 2:** Work done in first 4 days (A+B together) = 4/12 = 1/3
+**Step 2:** Work done in first 4 days (A+B together) = $\dfrac{4}{12}$ = $\dfrac{1}{3}$
 
-**Step 3:** Remaining work = 1 − 1/3 = 2/3
+**Step 3:** Remaining work = 1 − $\dfrac{1}{3}$ = $\dfrac{2}{3}$
 
-**Step 4:** A alone does 2/3 of work in 10 days
+**Step 4:** A alone does $\dfrac{2}{3}$ of work in 10 days
 
-**Step 5:** A alone does full work in 10 ÷ (2/3) = 10 × 3/2 = **15 days**
+**Step 5:** A alone does full work in 10 ÷ ($\dfrac{2}{3}$) = 10 × $\dfrac{3}{2}$ = **15 days**
 
 </div>
 </div>
@@ -2499,7 +2618,7 @@ $\dfrac{ab}{a+b} = \dfrac{12 \times 18}{12 + 18} = \dfrac{216}{30}$ = **7.2 days
 
 **Step 2:** Set total work = 30 units (choose LCM-friendly number)
 
-**Step 3:** Together: (2 + 1) = 3 units/day; total time = 30/3 = 10 days ✓ (confirms our setup)
+**Step 3:** Together: (2 + 1) = 3 units/day; total time = $\dfrac{30}{3}$ = 10 days ✓ (confirms our setup)
 
 **Step 4:** A alone: 30 ÷ 2 = **15 days**
 
@@ -2543,12 +2662,12 @@ n = 2,400 ÷ 120 = **20 men**
 
 <div class="steps">
 
-**Step 1:** 3 men = 5 women (same output) → 1 man = 5/3 women
+**Step 1:** 3 men = 5 women (same output) → 1 man = $\dfrac{5}{3}$ women
 
 **Step 2:** Convert 2 men to women-equivalent, then add 3 women.
-2 men = 2 × (5/3) = 10/3 women-equivalent
+2 men = 2 × ($\dfrac{5}{3}$) = $\dfrac{10}{3}$ women-equivalent
 
-Total = 10/3 + 3 = 10/3 + 9/3 = **19/3 women-equivalent**
+Total = $\dfrac{10}{3}$ + 3 = $\dfrac{10}{3}$ + $\dfrac{9}{3}$ = **$\dfrac{19}{3}$ women-equivalent**
 
 
 **Step 3:** Find total work in woman-days.
@@ -2557,14 +2676,14 @@ Total = 10/3 + 3 = 10/3 + 9/3 = **19/3 women-equivalent**
 Total work = 5 × 20 = **100 woman-days**
 
 
-**Step 4:** Find time for 19/3 women.
+**Step 4:** Find time for $\dfrac{19}{3}$ women.
 Time = Total work / Rate
 
-= 100 ÷ (19/3)
+= 100 ÷ ($\dfrac{19}{3}$)
 
-= 100 × 3/19
+= 100 × $\dfrac{3}{19}$
 
-= 300/19 ≈ **15.8 days**
+= $\dfrac{300}{19}$ ≈ **15.8 days**
 
 
 </div>
@@ -2582,13 +2701,13 @@ Time = Total work / Rate
 
 **Step 1:** Total capacity = LCM(10, 15) = 30 units
 
-**Step 2:** A fills: 30/10 = 3 units/hour
+**Step 2:** A fills: $\dfrac{30}{10}$ = 3 units/hour
 
-**Step 3:** Leak empties: 30/15 = 2 units/hour
+**Step 3:** Leak empties: $\dfrac{30}{15}$ = 2 units/hour
 
 **Step 4:** Net rate = 3 − 2 = 1 unit/hour
 
-**Answer:** Time = 30/1 = **30 hours**
+**Answer:** Time = **30 hours**
 
 </div>
 
@@ -2604,7 +2723,7 @@ Time = Total work / Rate
 
 **Step 1:** Total work = LCM(8, 12) = 24 units
 
-**Step 2:** A's rate = 24/8 = 3 units/day; B's rate = 24/12 = 2 units/day
+**Step 2:** A's rate = $\dfrac{24}{8}$ = 3 units/day; B's rate = $\dfrac{24}{12}$ = 2 units/day
 
 **Step 3:** Every 2-day cycle: 3 + 2 = 5 units completed
 
@@ -2612,7 +2731,7 @@ Time = Total work / Rate
 
 **Step 5:** Day 9 is A's turn: A does 3 units → remaining = 4 − 3 = 1 unit
 
-**Step 6:** Day 10 is B's turn: B needs 1 unit at 2 units/day → takes 1/2 day
+**Step 6:** Day 10 is B's turn: B needs 1 unit at 2 units/day → takes $\dfrac{1}{2}$ day
 
 **Answer:** Total = 9 + 0.5 = **9.5 days**
 
@@ -2633,9 +2752,9 @@ Time = Total work / Rate
 
 **Step 3:** Ratio of work = 3 : 2
 
-**Step 4:** A's share = (3/5) × 1800 = **₹1080**
+**Step 4:** A's share = ($\dfrac{3}{5}$) × 1800 = **₹1080**
 
-**Step 5:** B's share = (2/5) × 1800 = **₹720**
+**Step 5:** B's share = ($\dfrac{2}{5}$) × 1800 = **₹720**
 
 </div>
 
@@ -2827,17 +2946,17 @@ where x = quantity replaced each time, V = total volume, n = number of replaceme
 **Step 1:** x = 10 L, V = 40 L, n = 2
 
 **Step 2:** Fraction of milk remaining per step.
-Fraction = (V − x) / V = (40 − 10) / 40 = 30 / 40 = **3/4**
+Fraction = (V − x) / V = (40 − 10) / 40 = $\dfrac{30}{40}$ = **$\dfrac{3}{4}$**
 
 
-**Step 3:** After 2 replacements: milk fraction = (3/4)² = 9/16
+**Step 3:** After 2 replacements: milk fraction = ($\dfrac{3}{4}$)² = $\dfrac{9}{16}$
 
-**Step 4:** Final milk = 40 × 9/16 = 22.5 L
+**Step 4:** Final milk = 40 × $\dfrac{9}{16}$ = 22.5 L
 
 **Step 5 — Find milk % in final mixture.**
 Milk % = (Final milk / Total volume) × 100
 
-= (22.5 / 40) × 100
+= (22.$\dfrac{5}{40}$) × 100
 
 = **56.25%**
 
@@ -2847,7 +2966,7 @@ Milk % = (Final milk / Total volume) × 100
 
 <div class="pitfall">
 
-**Common mistake:** Students compute (1 − 10/40)² = (3/4)² but then forget to multiply by the original volume. The formula gives the *fraction* remaining; multiply by initial volume to get litres.
+**Common mistake:** Students compute (1 − $\dfrac{10}{40}$)² = ($\dfrac{3}{4}$)² but then forget to multiply by the original volume. The formula gives the *fraction* remaining; multiply by initial volume to get litres.
 
 </div>
 
@@ -2869,11 +2988,11 @@ Milk % = (Final milk / Total volume) × 100
 
 **Step 3:** Profit = 100 − 80 = ₹20
 
-**Answer:** Profit % = 20/80 × 100 = **25%**
+**Answer:** Profit % = $\dfrac{20}{80}$ × 100 = **25%**
 
 </div>
 
-**Alligation shortcut:** Ratio wheat:pebbles = 4:1. Mean price = ₹20 = cost of wheat → "gain" = 20/16 = ... use the direct approach above; it's faster.
+**Alligation shortcut:** Ratio wheat:pebbles = 4:1. Mean price = ₹20 = cost of wheat → "gain" = $\dfrac{20}{16}$ = ... use the direct approach above; it's faster.
 
 </div>
 
@@ -2891,7 +3010,7 @@ Milk % = (Final milk / Total volume) × 100
 
 **Step 2:** Let water added = x L
 
-**Step 3:** New concentration: 12 / (30 + x) = 25/100 = 1/4
+**Step 3:** New concentration: 12 / (30 + x) = $\dfrac{25}{100}$ = $\dfrac{1}{4}$
 
 **Step 4:** 30 + x = 12 × 4 = 48
 
@@ -2916,8 +3035,8 @@ Milk % = (Final milk / Total volume) × 100
 | Formula | Notes |
 |---|---|
 | D = S × T | The master equation |
-| km/h → m/s: multiply by 5/18 | 72 km/h = 72 × 5/18 = 20 m/s |
-| m/s → km/h: multiply by 18/5 | 15 m/s = 15 × 18/5 = 54 km/h |
+| km/h → m/s: multiply by $\dfrac{5}{18}$ | 72 km/h = 72 × $\dfrac{5}{18}$ = 20 m/s |
+| m/s → km/h: multiply by $\dfrac{18}{5}$ | 15 m/s = 15 × $\dfrac{18}{5}$ = 54 km/h |
 | Avg speed (equal distances): 2uv/(u+v) | Harmonic mean — NOT (u+v)/2 |
 | Avg speed (equal times): (u+v)/2 | Arithmetic mean |
 | Relative speed (opposite): u + v | Approaching each other |
@@ -2996,9 +3115,9 @@ Milk % = (Final milk / Total volume) × 100
 
 **Step 2:** Time = 20 s
 
-**Step 3:** Speed = 400/20 = 20 m/s
+**Step 3:** Speed = $\dfrac{400}{20}$ = 20 m/s
 
-**Answer:** = 20 × 18/5 = **72 km/h**
+**Answer:** = 20 × $\dfrac{18}{5}$ = **72 km/h**
 
 </div>
 </div>
@@ -3024,9 +3143,9 @@ Milk % = (Final milk / Total volume) × 100
 
 <div class="steps">
 
-**Step 1:** Downstream speed = 18/2 = 9 km/h
+**Step 1:** Downstream speed = $\dfrac{18}{2}$ = 9 km/h
 
-**Step 2:** Upstream speed = 12/3 = 4 km/h
+**Step 2:** Upstream speed = $\dfrac{12}{3}$ = 4 km/h
 
 **Step 3:** Boat speed = (9 + 4)/2 = **6.5 km/h**
 
@@ -3127,9 +3246,9 @@ Angle = |90 − 110| = |−20| = **20°**
 
 **Step 2:** Total parts = 5 + 8 = 13
 
-**Step 3:** A's share = (5/13) × 6500 = **₹2500**
+**Step 3:** A's share = ($\dfrac{5}{13}$) × 6500 = **₹2500**
 
-**Step 4:** B's share = (8/13) × 6500 = **₹4000**
+**Step 4:** B's share = ($\dfrac{8}{13}$) × 6500 = **₹4000**
 
 </div>
 
@@ -3217,7 +3336,7 @@ Angle = |90 − 110| = |−20| = **20°**
 
 **Step 1:** Let present ages: A = 3k, B = 5k
 
-**Step 2:** After 8 years: (3k + 8)/(5k + 8) = 5/7
+**Step 2:** After 8 years: (3k + 8)/(5k + 8) = $\dfrac{5}{7}$
 
 **Step 3:** Cross-multiply: 7(3k + 8) = 5(5k + 8)
 
@@ -3452,7 +3571,7 @@ Cycle: {2, 4, 1}, length = 3
 | Unit digit of base | Cycle | Length |
 |---|---|---|
 | 0, 1, 5, 6 | 0, 1, 5, 6 (themselves) | 1 |
-| 4, 9 | 4/6, 9/1 | 2 |
+| 4, 9 | 4 → 6 → 4 → 6 ...  and  9 → 1 → 9 → 1 ... | 2 |
 | 2 | 2, 4, 8, 6 | 4 |
 | 3 | 3, 9, 7, 1 | 4 |
 | 7 | 7, 9, 3, 1 | 4 |
@@ -3479,7 +3598,51 @@ Odd factors: include only odd prime bases (2^0). Odd factors of 360 = (2+1)(1+1)
 
 **Verify:** 18 + 6 = 24 ✓.
 
-## Type 8 — "Find the missing digit for divisibility" problems
+**Sum of all divisors formula.** If N = p₁^a × p₂^b × p₃^c, then:
+
+Sum of all divisors = $\dfrac{p_1^{a+1}-1}{p_1-1}$ × $\dfrac{p_2^{b+1}-1}{p_2-1}$ × $\dfrac{p_3^{c+1}-1}{p_3-1}$
+
+**Example.** Sum of divisors of 12. 12 = 2² × 3¹.
+
+Sum = $\dfrac{2^3 - 1}{2 - 1}$ × $\dfrac{3^2 - 1}{3 - 1}$ = $\dfrac{7}{1}$ × $\dfrac{8}{2}$ = 7 × 4 = **28**.
+
+Verify by listing: 1 + 2 + 3 + 4 + 6 + 12 = 28 ✓.
+
+## Type 8 — Advanced number theory (Wilson, Fermat, CRT)
+
+These appear in SSC CGL Tier-2 and occasionally in Banks Mains. Knowing the theorems converts 2-minute problems into 10-second eliminations.
+
+**Wilson's Theorem.** For any prime p: (p − 1)! ≡ −1 (mod p).
+
+*Equivalently:* (p − 1)! + 1 is divisible by p.
+
+**Example.** Find remainder when 6! is divided by 7. Here p = 7 (prime). Wilson: (7−1)! = 6! ≡ −1 ≡ 6 (mod 7). **Remainder = 6**.
+
+*Quick check:* 6! = 720. 720 ÷ 7 = 102 remainder **6** ✓.
+
+**Fermat's Little Theorem.** If p is prime and gcd(a, p) = 1, then:
+
+a^(p−1) ≡ 1 (mod p)
+
+**Example.** Find remainder when 2^100 is divided by 101. Since 101 is prime and gcd(2, 101) = 1: 2^100 ≡ 1 (mod 101). **Remainder = 1**.
+
+*Why it matters for exams:* Whenever the exponent is p−1 and the modulus is prime p, the remainder is 1 instantly — no need to find cycles.
+
+**Chinese Remainder Theorem (CRT) — basic exam version.**
+
+When a number N leaves remainder r₁ when divided by m₁, and remainder r₂ when divided by m₂ (where gcd(m₁, m₂) = 1), there exists a unique N in [0, m₁m₂) satisfying both conditions.
+
+*SSC exam pattern:* "A number when divided by 5 leaves remainder 3, and when divided by 7 leaves remainder 2. Find the smallest such number."
+
+**Solve:** Need N ≡ 3 (mod 5) and N ≡ 2 (mod 7).
+
+List numbers ≡ 3 (mod 5): 3, 8, 13, 18, 23, 28, ...
+
+Check which is ≡ 2 (mod 7): 23 mod 7 = 2 ✓. Smallest N = **23**.
+
+(General solution: N = 23 + 35k for any integer k ≥ 0.)
+
+## Type 9 — "Find the missing digit for divisibility" problems
 
 **Pattern:** "The number 3_6 is divisible by 9. Find the missing digit."
 
@@ -3636,7 +3799,7 @@ Odd factors: include only odd prime bases (2^0). Odd factors of 360 = (2+1)(1+1)
 | Square (side a) | a² | 4a |
 | Rectangle (l × b) | l × b | 2(l + b) |
 | Triangle (base b, height h) | ½bh | a + b + c |
-| Equilateral triangle (side a) | (√3/4)a² | 3a |
+| Equilateral triangle (side a) | (√$\dfrac{3}{4}$)a² | 3a |
 | Circle (radius r) | πr² | 2πr |
 | Sector (r, angle θ°) | (θ/360)πr² | 2r + rθ (θ rad: ½r²θ) |
 | Trapezium (parallel a, b; height h) | ½(a + b)h | a + b + leg₁ + leg₂ |
@@ -3653,7 +3816,9 @@ Odd factors: include only odd prime bases (2^0). Odd factors of 360 = (2+1)(1+1)
 | Cone (r, h, l=√(r²+h²)) | ⅓πr²h | πrl | πr(r + l) |
 | Sphere (r) | ⁴⁄₃πr³ | — | 4πr² |
 | Hemisphere (r) | ⅔πr³ | 2πr² | 3πr² |
-| Frustum (R, r, h) | ⅓πh(R²+r²+Rr) | πl(R+r) | πl(R+r)+π(R²+r²) |
+| Frustum (R, r, h, l=√(h²+(R-r)²)) | ⅓πh(R²+r²+Rr) | πl(R+r) | πl(R+r)+π(R²+r²) |
+| Pyramid (sq. base a, slant l, ht h) | ⅓a²h | ½ × 4a × l = 2al | a² + 2al |
+| Prism (base area A_b, perimeter p, ht h) | A_b × h | p × h (lateral) | 2A_b + ph |
 
 ## Type 1 — Direct substitution (area / perimeter)
 
@@ -3663,7 +3828,7 @@ Odd factors: include only odd prime bases (2^0). Odd factors of 360 = (2+1)(1+1)
 
 **Example.** Rectangle 15 × 8. Perimeter = 2(15 + 8) = **46 cm**. Area = 15 × 8 = **120 cm²**.
 
-**Self-check.** Equilateral triangle side 6 cm. Area = (√3/4) × 36 = **9√3 cm²**. Perimeter = **18 cm**.
+**Self-check.** Equilateral triangle side 6 cm. Area = (√$\dfrac{3}{4}$) × 36 = **9√3 cm²**. Perimeter = **18 cm**.
 
 ## Type 2 — Optimisation (largest/smallest shape inscribed in another)
 
@@ -3716,8 +3881,8 @@ Largest equilateral triangle in a circle of radius r → side = r√3.
 = 14 ÷ 2 = **7 cm**
 
 **Step 2:** Area = π × r²
-= (22/7) × 7²
-= (22/7) × 49
+= ($\dfrac{22}{7}$) × 7²
+= ($\dfrac{22}{7}$) × 49
 = 22 × 7
 
 **Answer:** Area = **154 cm²**
@@ -3753,8 +3918,8 @@ Largest equilateral triangle in a circle of radius r → side = r√3.
 = π × (49 − 12.25)
 = π × 36.75
 
-**Step 2:** Substitute π = 22/7
-= (22/7) × 36.75
+**Step 2:** Substitute π = $\dfrac{22}{7}$
+= ($\dfrac{22}{7}$) × 36.75
 = 22 × 5.25
 
 **Answer:** Area = **115.5 cm²**
@@ -3777,11 +3942,11 @@ l = √(r² + h²) = √(3.5² + 4²) = √(12.25 + 16) = √28.25 ≈ **5.315 c
 
 **Step 2 — Volume of cone.**
 
-V₁ = (1/3) × π × r² × h = (1/3) × (22/7) × 12.25 × 4 = **51.33 cm³**
+V₁ = ($\dfrac{1}{3}$) × π × r² × h = ($\dfrac{1}{3}$) × ($\dfrac{22}{7}$) × 12.25 × 4 = **51.33 cm³**
 
 **Step 3 — Volume of hemisphere.**
 
-V₂ = (2/3) × π × r³ = (2/3) × (22/7) × 3.5³ = (2/3) × (22/7) × 42.875 = **89.83 cm³**
+V₂ = ($\dfrac{2}{3}$) × π × r³ = ($\dfrac{2}{3}$) × ($\dfrac{22}{7}$) × 3.5³ = ($\dfrac{2}{3}$) × ($\dfrac{22}{7}$) × 42.875 = **89.83 cm³**
 
 **Step 4 — Total volume.**
 
@@ -3789,7 +3954,7 @@ V = V₁ + V₂ = 51.33 + 89.83 = **141.16 cm³**
 
 **Step 5 — Total surface area** (CSA of cone + curved surface of hemisphere; shared flat circle is interior).
 
-TSA = πrl + 2πr² = (22/7) × 3.5 × 5.315 + 2 × (22/7) × 3.5² ≈ 58.47 + 77 = **135.47 cm²**
+TSA = πrl + 2πr² = ($\dfrac{22}{7}$) × 3.5 × 5.315 + 2 × ($\dfrac{22}{7}$) × 3.5² ≈ 58.47 + 77 = **135.47 cm²**
 
 </div>
 
@@ -3818,14 +3983,14 @@ Slant height: l = √[h² + (R − r)²] = √(576 + 49) = √625 = **25 cm**
 
 R + r = 21 + 14 = **35 cm**
 
-CSA = π × l × (R + r) = (22/7) × 25 × 35 = 22 × 25 × 5 = **2,750 cm²**
+CSA = π × l × (R + r) = ($\dfrac{22}{7}$) × 25 × 35 = 22 × 25 × 5 = **2,750 cm²**
 
 
 ## Type 8 — Rolling / rotation (wheel, cylinder rolling)
 
 **Rule.** Distance covered in one revolution = circumference = πD = 2πr.
 
-**Example.** Wheel radius 35 cm makes 500 revolutions. Distance = 500 × 2π × 35 = 500 × 220/7 = 500 × 31.43 ≈ **110,000 cm = 1.1 km**.
+**Example.** Wheel radius 35 cm makes 500 revolutions. Distance = 500 × 2π × 35 = 500 × $\dfrac{220}{7}$ = 500 × 31.43 ≈ **110,000 cm = 1.1 km**.
 
 ## Type 9 — Effect of changing one dimension on area / volume
 
@@ -3969,9 +4134,9 @@ Ratio of sides = 6 : 9 = **2 : 3**
 
 Ratio of areas = 2² : 3² = **4 : 9**
 
-24 / area(PQR) = 4/9
+24 / area(PQR) = $\dfrac{4}{9}$
 
-area(PQR) = 24 × 9/4 = **54 cm²**
+area(PQR) = 24 × $\dfrac{9}{4}$ = **54 cm²**
 
 
 ## Type 3 — Basic proportionality theorem (Thales) + Midpoint
@@ -3982,9 +4147,9 @@ area(PQR) = 24 × 9/4 = **54 cm²**
 
 By BPT: AD/DB = AE/EC
 
-Substitute: 4/6 = 5/EC
+Substitute: $\dfrac{4}{6}$ = 5/EC
 
-Cross-multiply: EC = 5 × 6/4 = **7.5 cm**
+Cross-multiply: EC = 5 × $\dfrac{6}{4}$ = **7.5 cm**
 
 
 ## Type 4 — Pythagorean theorem + Pythagorean triples
@@ -4073,10 +4238,10 @@ If PT and PS are tangents from P to circle centre O, then PT = PS.
   <circle cx="285" cy="100" r="4" fill="#dc2626"/>
   <text x="292" y="104" fill="#dc2626" font-weight="bold">P</text>
   <!-- Tangent point A: OP=175, r=55 → tangent=√(175²−55²)=√(30625−3025)=√27600≈166.1 -->
-  <!-- angle at O: cos(angle)=55/175=0.314, angle≈71.7° from OP toward tangent point -->
+  <!-- angle at O: cos(angle)=$\dfrac{55}{175}$=0.314, angle≈71.7° from OP toward tangent point -->
   <!-- A ≈ (110 + 55·cos(71.7°-from-P-direction), 100 + 55·sin(...)  -->
   <!-- simpler: PA is tangent, OA⊥PA. Use: A=(110+55·cos(θ),100+55·sin(θ)) where angle OAP=90° -->
-  <!-- By right triangle: sin(∠OPA)=OA/OP=55/175≈0.314 → ∠OPA≈18.3° -->
+  <!-- By right triangle: sin(∠OPA)=OA/OP=$\dfrac{55}{175}$≈0.314 → ∠OPA≈18.3° -->
   <!-- A=(110+55·cos(180°−71.7°), 100+55·sin(71.7°)) ≈ (110-17.2, 100+52.3)=(93,152) -->
   <!-- B=(93, 48) (symmetric) -->
   <line x1="285" y1="100" x2="93" y2="152" stroke="#15803d" stroke-width="2"/>
@@ -4157,7 +4322,7 @@ Number of sides = 360° ÷ 30° = **12**
 
 **Slope:** m = (y₂−y₁)/(x₂−x₁). Parallel lines: equal slope. Perpendicular lines: m₁ × m₂ = −1.
 
-**Example.** Slope of line joining (2, 5) and (6, 13) = (13−5)/(6−2) = 8/4 = **2**.
+**Example.** Slope of line joining (2, 5) and (6, 13) = (13−5)/(6−2) = $\dfrac{8}{4}$ = **2**.
 
 ---
 
@@ -4170,9 +4335,9 @@ Number of sides = 360° ÷ 30° = **12**
 | θ | sin | cos | tan |
 |---|-----|-----|-----|
 | 0° | 0 | 1 | 0 |
-| 30° | 1/2 | √3/2 | 1/√3 |
+| 30° | $\dfrac{1}{2}$ | √$\dfrac{3}{2}$ | 1/√3 |
 | 45° | 1/√2 | 1/√2 | 1 |
-| 60° | √3/2 | 1/2 | √3 |
+| 60° | √$\dfrac{3}{2}$ | $\dfrac{1}{2}$ | √3 |
 | 90° | 1 | 0 | ∞ |
 
 sin²θ + cos²θ = 1
@@ -4189,7 +4354,7 @@ Complementary: sin(90° − θ) = cos θ, and similarly for all ratios.
 **Attack:** Replace θ with 30°/45°/60°/90° and evaluate using the table above.
 
 **Example.** Find: 2sin 60° − tan 45° + cos 30°.
-= 2(√3/2) − 1 + (√3/2) = √3 − 1 + √3/2 = **3√3/2 − 1 ≈ 1.598**.
+= 2(√$\dfrac{3}{2}$) − 1 + (√$\dfrac{3}{2}$) = √3 − 1 + √$\dfrac{3}{2}$ = **3√$\dfrac{3}{2}$ − 1 ≈ 1.598**.
 
 ## Type 2 — Complementary-angle simplifications
 
@@ -4291,12 +4456,68 @@ h/√3 + 100 = h√3
 100 = 2h/√3
 
 **Step 4:** Solve for h:
-h = 100√3 / 2
+h = 100√$\dfrac{3}{2}$
 h = 50√3
 
 **Answer:** h = 50√3 ≈ **86.6 m**
 
 </div>
+
+---
+
+## Type 6 — Compound angles, double angles, and max/min of trigonometric expressions
+
+> These appear in SSC CGL Tier-2 and Banks PO Mains. Memorise the six formulas below — most SSC compound-angle questions reduce to direct substitution.
+
+**Compound angle formulas:**
+
+sin(A + B) = sin A cos B + cos A sin B
+
+sin(A − B) = sin A cos B − cos A sin B
+
+cos(A + B) = cos A cos B − sin A sin B
+
+cos(A − B) = cos A cos B + sin A sin B
+
+tan(A + B) = $\dfrac{\tan A + \tan B}{1 - \tan A \tan B}$
+
+tan(A − B) = $\dfrac{\tan A - \tan B}{1 + \tan A \tan B}$
+
+**Double angle formulas:**
+
+sin 2A = 2 sin A cos A
+
+cos 2A = cos²A − sin²A = 1 − 2sin²A = 2cos²A − 1
+
+tan 2A = $\dfrac{2\tan A}{1-\tan^2 A}$
+
+**t-substitution (t = tan θ/2 — converts trig expressions to rational form):**
+
+sin θ = $\dfrac{2t}{1+t^2}$;   cos θ = $\dfrac{1-t^2}{1+t^2}$;   where t = tan(θ/2)
+
+*When to use:* Equations of the form a sin θ + b cos θ = c — substitute t to convert to a quadratic in t.
+
+**Maximum and minimum of a sin θ + b cos θ:**
+
+Maximum value = **+√(a² + b²)**
+
+Minimum value = **−√(a² + b²)**
+
+*SSC exam pattern:* "Find the maximum of 3 sin θ + 4 cos θ."
+
+Maximum = √(3² + 4²) = √(9 + 16) = √25 = **5**.
+
+Minimum = **−5**.
+
+**Example (compound angle).** Evaluate sin 75°.
+
+sin 75° = sin(45° + 30°) = sin 45° cos 30° + cos 45° sin 30°
+
+= $\dfrac{1}{\sqrt{2}} \cdot \dfrac{\sqrt{3}}{2} + \dfrac{1}{\sqrt{2}} \cdot \dfrac{1}{2}$
+
+= $\dfrac{\sqrt{3} + 1}{2\sqrt{2}}$ = $\dfrac{\sqrt{6}+\sqrt{2}}{4}$
+
+***Watch out:*** Students write sin(A + B) = sin A + sin B (wrong — this confuses linearity of addition with trig addition; sin is NOT a linear function). The correct expansion always involves products of sines and cosines.
 
 ---
 
@@ -4352,11 +4573,11 @@ A linear equation: ax + b = 0 (one variable) or ax + by = c (two variables) — 
 
 **Step 4.** Combine: 13x = 46
 
-**Step 5.** x = 46/13. Hmm, not clean — check work.
+**Step 5.** x = $\dfrac{46}{13}$. Hmm, not clean — check work.
 
-**Re-check eq.1:** 3x + 5y = 11. Substitute x=46/13, y = 2(46/13) − 7 = 92/13 − 91/13 = 1/13. Verify: 3(46/13) + 5(1/13) = 138/13 + 5/13 = 143/13 = 11 ✓
+**Re-check eq.1:** 3x + 5y = 11. Substitute x=$\dfrac{46}{13}$ y = 2($\dfrac{46}{13}$) − 7 = $\dfrac{92}{13}$ − $\dfrac{91}{13}$ = $\dfrac{1}{13}$. Verify: 3($\dfrac{46}{13}$) + 5($\dfrac{1}{13}$) = $\dfrac{138}{13}$ + $\dfrac{5}{13}$ = $\dfrac{143}{13}$ = 11 ✓
 
-**Answer:** x = 46/13, y = 1/13.
+**Answer:** x = $\dfrac{46}{13}$ y = $\dfrac{1}{13}$.
 
 *(Examiner lesson — even "ugly" fractions can be correct. Always verify by substitution.)*
 
@@ -4415,12 +4636,12 @@ Standard form: **ax² + bx + c = 0** (a ≠ 0).
 | D < 0 | No real roots (complex conjugates) |
 | D is a perfect square | Roots are rational |
 
-**Vieta's formulas (sum/product of roots) — MUST MEMORISE:**
+**Vieta's formulas — quadratic (sum/product of roots) — MUST MEMORISE:**
 
 - Sum of roots: α + β = **−b / a**
 - Product of roots: α · β = **c / a**
 - Sum of squares: α² + β² = (α + β)² − 2αβ
-- Sum of cubes: α³ + β³ = (α + β)³ − 3αβ(α + β)
+- Sum of cubes: α³ + β³ = (α + β)³ − 3αβ(α + β) = (α + β)[(α + β)² − 3αβ]
 - 1/α + 1/β = (α + β) / αβ
 - (α − β)² = (α + β)² − 4αβ ↔ |α − β| = √D / |a|
 - α/β + β/α = (α² + β²) / αβ
@@ -4428,6 +4649,18 @@ Standard form: **ax² + bx + c = 0** (a ≠ 0).
 **Forming a quadratic from given roots p and q:**
 
 x² − (p + q)x + pq = 0
+
+**Vieta's formulas — cubic ax³ + bx² + cx + d = 0 (SSC CGL Tier-2 / Banks Mains):**
+
+If α, β, γ are the three roots:
+
+- Sum: α + β + γ = **−b / a**
+- Sum of products taken two at a time: αβ + βγ + γα = **c / a**
+- Product: αβγ = **−d / a**
+
+*Exam pattern:* "If α, β, γ are roots of 2x³ − 3x² + x − 5 = 0, find α + β + γ and αβγ."
+
+α + β + γ = −(−3)/2 = **3/2**;   αβγ = −(−5)/2 = **5/2**.
 
 ### Worked Example 1 (EASY — factorisation)
 
@@ -4447,7 +4680,7 @@ x² − (p + q)x + pq = 0
 
 **Q.** If α and β are roots of x² − 5x + 3 = 0, find α³ + β³.
 
-**Step 1.** Sum α + β = −(−5)/1 = 5. Product αβ = 3/1 = 3.
+**Step 1.** Sum α + β = −(−5)/1 = 5. Product αβ = 3.
 
 **Step 2.** Identity: α³ + β³ = (α + β)³ − 3αβ(α + β)
 
@@ -4473,7 +4706,7 @@ x² − (p + q)x + pq = 0
 
 **Step 6.** Quadratic formula: k = [−16 ± √(256 + 528)] / 6 = [−16 ± √784] / 6 = [−16 ± 28]/6
 
-**Answer:** k = 12/6 = **2** or k = −44/6 = **−22/3**.
+**Answer:** k = $\dfrac{12}{6}$ = **2** or k = −$\dfrac{44}{6}$ = **−$\dfrac{22}{3}$**.
 
 ### Worked Example 4 (HARD — forming quadratic + relation)
 
@@ -4694,7 +4927,7 @@ A surd is an irrational root, e.g., √2, ³√5, √(2 + √3).
 
 **Step 1.** 9 = 3² and 8 = 2³.
 
-**Step 2.** log₈ 9 = log₂³ 3² = (2/3) · log₂ 3 = **2a/3**.
+**Step 2.** log₈ 9 = log₂³ 3² = ($\dfrac{2}{3}$) · log₂ 3 = **2a/3**.
 
 ### Worked Example 3 (HARD)
 
@@ -4748,7 +4981,7 @@ A sequence whose **reciprocals** form an AP. To work with an HP, take reciprocal
 
 **Step 1.** a = 3, d = 4, n = 20.
 
-**Step 2.** Sₙ = (n/2)[2a + (n − 1)d] = (20/2)[6 + 19(4)] = 10 × (6 + 76) = 10 × 82 = **820**
+**Step 2.** Sₙ = (n/2)[2a + (n − 1)d] = ($\dfrac{20}{2}$)[6 + 19(4)] = 10 × (6 + 76) = 10 × 82 = **820**
 
 ### Worked Example 2 (MEDIUM — three-term AP)
 
@@ -4778,9 +5011,9 @@ A sequence whose **reciprocals** form an AP. To work with an HP, take reciprocal
 
 **Step 3.** From (i): a² = 25(1 − r)². Equate to (ii): 25(1 − r)² = 15(1 − r)(1 + r)
 
-**Step 4.** Cancel (1 − r): 25(1 − r) = 15(1 + r) ⇒ 25 − 25r = 15 + 15r ⇒ 40r = 10 ⇒ **r = 1/4**.
+**Step 4.** Cancel (1 − r): 25(1 − r) = 15(1 + r) ⇒ 25 − 25r = 15 + 15r ⇒ 40r = 10 ⇒ **r = $\dfrac{1}{4}$**.
 
-**Step 5.** a = 5(1 − 1/4) = 5 × 3/4 = **15/4**.
+**Step 5.** a = 5(1 − $\dfrac{1}{4}$) = 5 × $\dfrac{3}{4}$ = **$\dfrac{15}{4}$**.
 
 ---
 
@@ -4799,6 +5032,30 @@ A sequence whose **reciprocals** form an AP. To work with an HP, take reciprocal
 3. For ax² + bx + c < 0: α < x < β (between the roots).
 
 (Reverse if a < 0.)
+
+**AM ≥ GM ≥ HM inequality (high-frequency SSC/Banks tool):**
+
+For positive numbers a and b:
+
+AM = $\dfrac{a+b}{2}$;   GM = √(ab);   HM = $\dfrac{2ab}{a+b}$
+
+**AM ≥ GM ≥ HM** always. Equality holds when and only when a = b.
+
+*Exam applications:*
+- If sum (a + b) is fixed → product (ab) is **maximum** when a = b. Maximum product = (sum/2)².
+- If product (ab) is fixed → sum (a + b) is **minimum** when a = b. Minimum sum = 2√(ab).
+- Standard SSC form: "If x > 0, find the minimum of x + 9/x." → x + 9/x ≥ 2√(x · 9/x) = 2√9 = **6**. Equality at x = 3.
+- For n positive variables: arithmetic mean ≥ geometric mean. If x₁ + x₂ + x₃ = 30, max(x₁x₂x₃) = 10³ = 1000 (all equal).
+
+**Cauchy-Schwarz inequality (SSC CGL Tier-2 / Banks Mains):**
+
+(a² + b²)(x² + y²) ≥ (ax + by)²
+
+*Exam use:* Find the maximum of (ax + by) given a² + b² and x² + y² are known.
+
+Maximum of (ax + by) = √(a² + b²) × √(x² + y²)
+
+**Example.** If a² + b² = 25 and x² + y² = 9, maximum of ax + by = √25 × √9 = 5 × 3 = **15**.
 
 ### Worked Example 1 (EASY)
 
@@ -4898,7 +5155,7 @@ P(n, r) = **n! / (n − r)!** = number of ways to arrange r items chosen from n 
 
 **Q.** In how many ways can 5 people sit in 3 chairs?
 
-**Step 1.** P(5, 3) = 5!/(5 − 3)! = 5!/2! = 120/2 = **60**.
+**Step 1.** P(5, 3) = 5!/(5 − 3)! = 5!/2! = $\dfrac{120}{2}$ = **60**.
 
 ### Worked Example 2 (MEDIUM — restrictions)
 
@@ -4944,7 +5201,7 @@ If among n items, p are alike of one kind, q alike of another, etc., the number 
 
 **Step 3.** Compute: 11! = 39,916,800. Denominator: 1 × 24 × 24 × 2 = 1,152.
 
-**Step 4.** = 39,916,800 / 1,152 = **34,650**.
+**Step 4.** = $\dfrac{39916800}{1152}$ = **34,650**.
 
 ---
 
@@ -4985,7 +5242,7 @@ C(n, r) = **n! / [r! · (n − r)!]** — number of ways to choose r items from 
 
 **Q.** From 10 students, in how many ways can we form a team of 4?
 
-**Step 1.** C(10, 4) = 10!/(4! · 6!) = (10 × 9 × 8 × 7)/(4 × 3 × 2 × 1) = 5040/24 = **210**.
+**Step 1.** C(10, 4) = 10!/(4! · 6!) = (10 × 9 × 8 × 7)/(4 × 3 × 2 × 1) = $\dfrac{5040}{24}$ = **210**.
 
 ### Worked Example 2 (MEDIUM — committee with restriction)
 
@@ -5020,7 +5277,7 @@ C(n, r) = **n! / [r! · (n − r)!]** — number of ways to choose r items from 
 
 **Step 2.** Subtract the 20 sides (which are not diagonals): 190 − 20 = **170 diagonals**.
 
-**Formula shortcut:** Diagonals of n-gon = **n(n − 3)/2** = 20 × 17 / 2 = **170** ✓
+**Formula shortcut:** Diagonals of n-gon = **n(n − 3)/2** = 20 × $\dfrac{17}{2}$ = **170** ✓
 
 ---
 
@@ -5078,7 +5335,7 @@ This works only when all outcomes are **equally likely**.
 
 ## 14C.1 Coin tosses
 
-**Single coin:** P(H) = P(T) = 1/2.
+**Single coin:** P(H) = P(T) = $\dfrac{1}{2}$.
 
 **n coins (or 1 coin tossed n times):** sample space = 2ⁿ.
 
@@ -5090,7 +5347,7 @@ This works only when all outcomes are **equally likely**.
 
 **Step 2.** Outcomes with exactly 2 heads: HHT, HTH, THH = 3 outcomes.
 
-**Step 3.** P = 3/8.
+**Step 3.** P = $\dfrac{3}{8}$.
 
 ### Worked Example 2 (MEDIUM)
 
@@ -5098,15 +5355,15 @@ This works only when all outcomes are **equally likely**.
 
 **Step 1.** Easier via complement: P(at least 1 H) = 1 − P(no H) = 1 − P(all T).
 
-**Step 2.** P(all T) = (1/2)⁴ = 1/16.
+**Step 2.** P(all T) = ($\dfrac{1}{2}$)⁴ = $\dfrac{1}{16}$.
 
-**Step 3.** P(at least 1 H) = 1 − 1/16 = **15/16**.
+**Step 3.** P(at least 1 H) = 1 − $\dfrac{1}{16}$ = **$\dfrac{15}{16}$**.
 
 ---
 
 ## 14C.2 Dice
 
-**One die:** outcomes 1–6. P(any specific number) = 1/6.
+**One die:** outcomes 1–6. P(any specific number) = $\dfrac{1}{6}$.
 
 **Two dice:** sample space = 36 (6 × 6). Sum can range from 2 to 12.
 
@@ -5114,17 +5371,17 @@ This works only when all outcomes are **equally likely**.
 
 | Sum | Outcomes | Count | P |
 |-----|----------|-------|---|
-| 2 | (1,1) | 1 | 1/36 |
-| 3 | (1,2),(2,1) | 2 | 2/36 |
-| 4 | (1,3),(3,1),(2,2) | 3 | 3/36 |
-| 5 | 4 outcomes | 4 | 4/36 |
-| 6 | 5 outcomes | 5 | 5/36 |
-| **7** | **6 outcomes (most likely)** | **6** | **6/36 = 1/6** |
-| 8 | 5 | 5 | 5/36 |
-| 9 | 4 | 4 | 4/36 |
-| 10 | 3 | 3 | 3/36 |
-| 11 | 2 | 2 | 2/36 |
-| 12 | (6,6) | 1 | 1/36 |
+| 2 | (1,1) | 1 | $\dfrac{1}{36}$ |
+| 3 | (1,2),(2,1) | 2 | $\dfrac{2}{36}$ |
+| 4 | (1,3),(3,1),(2,2) | 3 | $\dfrac{3}{36}$ |
+| 5 | 4 outcomes | 4 | $\dfrac{4}{36}$ |
+| 6 | 5 outcomes | 5 | $\dfrac{5}{36}$ |
+| **7** | **6 outcomes (most likely)** | **6** | **$\dfrac{6}{36}$ = $\dfrac{1}{6}$** |
+| 8 | 5 | 5 | $\dfrac{5}{36}$ |
+| 9 | 4 | 4 | $\dfrac{4}{36}$ |
+| 10 | 3 | 3 | $\dfrac{3}{36}$ |
+| 11 | 2 | 2 | $\dfrac{2}{36}$ |
+| 12 | (6,6) | 1 | $\dfrac{1}{36}$ |
 
 ### Worked Example 1 (EASY)
 
@@ -5132,7 +5389,7 @@ This works only when all outcomes are **equally likely**.
 
 **Step 1.** Outcomes giving sum 9: (3,6), (4,5), (5,4), (6,3) = 4 outcomes.
 
-**Step 2.** P = 4/36 = **1/9**.
+**Step 2.** P = $\dfrac{4}{36}$ = **$\dfrac{1}{9}$**.
 
 ### Worked Example 2 (MEDIUM)
 
@@ -5142,7 +5399,7 @@ This works only when all outcomes are **equally likely**.
 
 **Step 2.** Counts (from table): 1 + 2 + 4 + 6 + 2 = **15 favourable outcomes**.
 
-**Step 3.** P = 15/36 = **5/12**.
+**Step 3.** P = $\dfrac{15}{36}$ = **$\dfrac{5}{12}$**.
 
 ---
 
@@ -5162,17 +5419,17 @@ This works only when all outcomes are **equally likely**.
 
 **Q.** Probability of drawing a King from a shuffled deck.
 
-**Answer:** 4/52 = **1/13**.
+**Answer:** $\dfrac{4}{52}$ = **$\dfrac{1}{13}$**.
 
 ### Worked Example 2 (MEDIUM — without replacement)
 
 **Q.** Two cards drawn one after another (without replacement). Probability both are aces.
 
-**Step 1.** P(1st ace) = 4/52 = 1/13.
+**Step 1.** P(1st ace) = $\dfrac{4}{52}$ = $\dfrac{1}{13}$.
 
-**Step 2.** Given 1st was ace, P(2nd ace) = 3/51 = 1/17.
+**Step 2.** Given 1st was ace, P(2nd ace) = $\dfrac{3}{51}$ = $\dfrac{1}{17}$.
 
-**Step 3.** Joint P = (1/13) × (1/17) = **1/221**.
+**Step 3.** Joint P = ($\dfrac{1}{13}$) × ($\dfrac{1}{17}$) = **$\dfrac{1}{221}$**.
 
 ### Worked Example 3 (HARD)
 
@@ -5182,7 +5439,7 @@ This works only when all outcomes are **equally likely**.
 
 **Step 2.** Favourable: choose 2 aces out of 4 × choose 3 non-aces out of 48 = C(4, 2) × C(48, 3).
 
-**Step 3.** P = [C(4, 2) × C(48, 3)] / C(52, 5) = [6 × 17,296] / 2,598,960 = 103,776 / 2,598,960 ≈ **0.0399** (about 4%).
+**Step 3.** P = [C(4, 2) × C(48, 3)] / C(52, 5) = [6 × 17,296] / 2,598,960 = $\dfrac{103776}{2598960}$ ≈ **0.0399** (about 4%).
 
 ---
 
@@ -5194,17 +5451,17 @@ This works only when all outcomes are **equally likely**.
 
 **Step 1.** Total = 5 + 4 + 3 = 12.
 
-**Step 2.** P(blue) = 4/12 = **1/3**.
+**Step 2.** P(blue) = $\dfrac{4}{12}$ = **$\dfrac{1}{3}$**.
 
 ### Worked Example 2 (MEDIUM — without replacement)
 
 **Q.** Same bag. Two balls drawn without replacement. Probability both are red.
 
-**Step 1.** P(1st red) = 5/12.
+**Step 1.** P(1st red) = $\dfrac{5}{12}$.
 
-**Step 2.** Given 1st red, bag now has 4 red, 4 blue, 3 green = 11 total. P(2nd red) = 4/11.
+**Step 2.** Given 1st red, bag now has 4 red, 4 blue, 3 green = 11 total. P(2nd red) = $\dfrac{4}{11}$.
 
-**Step 3.** Joint P = (5/12) × (4/11) = 20/132 = **5/33**.
+**Step 3.** Joint P = ($\dfrac{5}{12}$) × ($\dfrac{4}{11}$) = $\dfrac{20}{132}$ = **$\dfrac{5}{33}$**.
 
 ### Worked Example 3 (HARD — at least one)
 
@@ -5212,9 +5469,9 @@ This works only when all outcomes are **equally likely**.
 
 **Step 1.** Easier via complement. P(none green) = pick all 3 from non-green (5 + 4 = 9 balls).
 
-**Step 2.** P(all non-green) = C(9, 3) / C(12, 3) = 84/220 = 21/55.
+**Step 2.** P(all non-green) = C(9, 3) / C(12, 3) = $\dfrac{84}{220}$ = $\dfrac{21}{55}$.
 
-**Step 3.** P(at least 1 green) = 1 − 21/55 = **34/55**.
+**Step 3.** P(at least 1 green) = 1 − $\dfrac{21}{55}$ = **$\dfrac{34}{55}$**.
 
 ---
 
@@ -5230,7 +5487,7 @@ This works only when all outcomes are **equally likely**.
 
 **Step 1.** After first King, deck has 51 cards, 3 Kings.
 
-**Step 2.** P(2nd King | 1st King) = 3/51 = **1/17**.
+**Step 2.** P(2nd King | 1st King) = $\dfrac{3}{51}$ = **$\dfrac{1}{17}$**.
 
 ### Worked Example 2 (HARD — Bayes-style)
 
@@ -5240,11 +5497,61 @@ This works only when all outcomes are **equally likely**.
 
 **Step 2.** P(D) = P(A) · P(D | A) + P(B) · P(D | B) = 0.6(0.02) + 0.4(0.05) = 0.012 + 0.020 = 0.032.
 
-**Step 3.** P(B | D) = P(B) · P(D | B) / P(D) = (0.4)(0.05) / 0.032 = 0.020 / 0.032 = **5/8 = 0.625**.
+**Step 3.** P(B | D) = P(B) · P(D | B) / P(D) = (0.4)(0.05) / 0.032 = 0.020 / 0.032 = **$\dfrac{5}{8}$ = 0.625**.
 
 ---
 
-## 14C.6 Mini-mock (10 Qs — full solutions in next section)
+## 14C.6 Bayes' theorem, Expected value, and Binomial distribution
+
+> These three appear in Banks PO Mains and occasionally SSC CGL Tier-2. One worked example each is enough to recognise the pattern.
+
+**Bayes' Theorem (2-event version):**
+
+P(H₁ | E) = $\dfrac{P(H_1) \cdot P(E|H_1)}{P(H_1) \cdot P(E|H_1) + P(H_2) \cdot P(E|H_2)}$
+
+*Reading:* "Given that event E occurred, what is the probability it came from hypothesis H₁?"
+
+*The Worked Example 2 in 14C.5 above is a direct application* (machine A vs machine B). The general steps are always: (i) write P(H₁), P(H₂); (ii) write P(E|H₁), P(E|H₂); (iii) compute total P(E) = P(H₁)·P(E|H₁) + P(H₂)·P(E|H₂); (iv) apply Bayes.
+
+***Watch out:*** Students forget to compute the denominator P(E) and instead use just P(E|H₁) — this gives the wrong numerator-only answer. Always build the full denominator first.
+
+---
+
+**Expected Value E[X] = Σ x · P(x):**
+
+For a random variable X taking values x₁, x₂, … with probabilities p₁, p₂, …:
+
+E[X] = x₁p₁ + x₂p₂ + x₃p₃ + …
+
+*Exam pattern:* "A player wins ₹5 if a die shows 6, and loses ₹1 for any other outcome. What is the expected profit per throw?"
+
+E[X] = 5 × (1/6) + (−1) × (5/6) = 5/6 − 5/6 = **0** (fair game).
+
+A biased version: win ₹6 on a 6 (prob 1/6), lose ₹1 otherwise. E[X] = 6/6 − 5/6 = **1/6 ≈ ₹0.17 expected gain per throw**.
+
+---
+
+**Binomial Distribution (brief intro for exams):**
+
+When an experiment is repeated n independent times, each with probability p of success:
+
+P(X = r) = C(n, r) · p^r · (1 − p)^(n − r)
+
+*When to use:* "n independent trials, each with the same probability p of success — find the probability of exactly r successes."
+
+**Example.** A fair coin is tossed 5 times. Probability of exactly 3 heads.
+
+n = 5, p = 1/2, r = 3.
+
+P(X = 3) = C(5, 3) × (1/2)³ × (1/2)² = 10 × (1/32) = **10/32 = 5/16 ≈ 0.3125**.
+
+**Mean of binomial:** E[X] = np.   **Variance:** np(1 − p).
+
+For the above: mean = 5 × 1/2 = **2.5**; variance = 5 × 1/2 × 1/2 = **1.25**.
+
+---
+
+## 14C.7 Mini-mock (10 Qs — full solutions in next section)
 
 1. Three coins tossed. P(at least 2 heads).
 2. Two dice rolled. P(both even).
@@ -5259,16 +5566,16 @@ This works only when all outcomes are **equally likely**.
 
 ### Solutions sketch
 
-1. P(≥ 2 H) = (3 + 1)/8 = 1/2.
-2. P(both even) = (3/6)² = 1/4.
-3. Face cards = 12. Red = 26. Red face = 6. Union = 12 + 26 − 6 = 32. P = 32/52 = 8/13.
-4. Total committees = C(7, 3) = 35. All-boys = C(4, 3) = 4. At least one girl = 35 − 4 = 31. P = 31/35.
-5. Total arrangements 5! = 120. Starting with W: fix W → 4! = 24. P = 24/120 = 1/5.
-6. Multiples of 3: 33. Multiples of 5: 20. Multiples of 15: 6. Union = 33 + 20 − 6 = 47. P = 47/100.
-7. P(spade) = 13/52 = 1/4. With replacement: (1/4)² = 1/16.
-8. Sums 10, 11, 12 → 3 + 2 + 1 = 6 outcomes. P = 6/36 = 1/6.
-9. P(both white) = C(6,2)/C(10,2) = 15/45 = 1/3. P(both black) = C(4,2)/C(10,2) = 6/45 = 2/15. Sum = 7/15.
-10. Number of derangements of 5 = 44. P(at least one correct) = 1 − 44/120 = 76/120 = 19/30.
+1. P(≥ 2 H) = (3 + 1)/8 = $\dfrac{1}{2}$.
+2. P(both even) = ($\dfrac{3}{6}$)² = $\dfrac{1}{4}$.
+3. Face cards = 12. Red = 26. Red face = 6. Union = 12 + 26 − 6 = 32. P = $\dfrac{32}{52}$ = $\dfrac{8}{13}$.
+4. Total committees = C(7, 3) = 35. All-boys = C(4, 3) = 4. At least one girl = 35 − 4 = 31. P = $\dfrac{31}{35}$.
+5. Total arrangements 5! = 120. Starting with W: fix W → 4! = 24. P = $\dfrac{24}{120}$ = $\dfrac{1}{5}$.
+6. Multiples of 3: 33. Multiples of 5: 20. Multiples of 15: 6. Union = 33 + 20 − 6 = 47. P = $\dfrac{47}{100}$.
+7. P(spade) = $\dfrac{13}{52}$ = $\dfrac{1}{4}$. With replacement: ($\dfrac{1}{4}$)² = $\dfrac{1}{16}$.
+8. Sums 10, 11, 12 → 3 + 2 + 1 = 6 outcomes. P = $\dfrac{6}{36}$ = $\dfrac{1}{6}$.
+9. P(both white) = C(6,2)/C(10,2) = $\dfrac{15}{45}$ = $\dfrac{1}{3}$. P(both black) = C(4,2)/C(10,2) = $\dfrac{6}{45}$ = $\dfrac{2}{15}$. Sum = $\dfrac{7}{15}$.
+10. Number of derangements of 5 = 44. P(at least one correct) = 1 − $\dfrac{44}{120}$ = $\dfrac{76}{120}$ = $\dfrac{19}{30}$.
 
 ---
 
@@ -5371,10 +5678,10 @@ Round: 40 % of 1900 = 760. 24 × 18 = 432. Sum ≈ 1192. Pick option closest to 
 | 24.04 | 24 |
 | 39.97 | 40 |
 | 11.95 | 12 |
-| 16.66 % | 1/6 |
-| 33.33 % | 1/3 |
-| 12.5 % | 1/8 |
-| 14.28 % | 1/7 |
+| 16.66 % | $\dfrac{1}{6}$ |
+| 33.33 % | $\dfrac{1}{3}$ |
+| 12.5 % | $\dfrac{1}{8}$ |
+| 14.28 % | $\dfrac{1}{7}$ |
 | √26 | ≈ 5.1 |
 | √48 | ≈ 6.93 |
 | 12 % of 250 | 30 |
@@ -5503,7 +5810,7 @@ sin 2θ = 2 sin θ cos θ
 
 cos 2θ = cos²θ − sin²θ = 1 − 2 sin²θ = 2 cos²θ − 1
 
-standard angles: sin 0 = 0, sin 30 = ½, sin 45 = 1/√2, sin 60 = √3/2, sin 90 = 1
+standard angles: sin 0 = 0, sin 30 = ½, sin 45 = 1/√2, sin 60 = √$\dfrac{3}{2}$ sin 90 = 1
 
 height & distance: tan(angle of elevation) = opposite/adjacent
 
@@ -5515,7 +5822,7 @@ height & distance: tan(angle of elevation) = opposite/adjacent
 3. Sum of interior angles of an n-gon = (n − 2) × 180°.
 4. Each interior angle of a regular n-gon = (n − 2) × 180° / n.
 5. Area of triangle = ½ × base × height = ½ ab sin C = √[s(s−a)(s−b)(s−c)] (Heron's).
-6. Area of equilateral triangle (side a) = √3/4 × a².
+6. Area of equilateral triangle (side a) = √$\dfrac{3}{4}$ × a².
 7. Inradius (incircle): r = Area / s.
 8. Circumradius: R = abc / (4 × Area).
 9. Pythagoras: a² + b² = c² in right triangle.
@@ -5598,20 +5905,20 @@ Difference = A − B = 125 − 100 = **25**
 
 % decrease = Difference / A × 100
 
-= 25 / 125 × 100
+= $\dfrac{25}{125}$ × 100
 
-= (1/5) × 100 = **20 %**
+= ($\dfrac{1}{5}$) × 100 = **20 %**
 
 
 **Worth knowing:** Memorise the shortcut formula. If A is r % more than B, then **B is r / (100 + r) × 100 % less than A**.
-Verify with r = 25: 25 / 125 × 100 = 20 % ✓
+Verify with r = 25: $\dfrac{25}{125}$ × 100 = 20 % ✓
 
 
 *Watch out:* "25 %" — students assume "25 % more" implies "25 % less" by symmetry. That is WRONG: percentage is a ratio, and the base changes when you flip direction.
 
 **A similar question:** A is r % LESS than B, find by what % B is more than A. Use **B is r / (100 − r) × 100 % more than A**.
 
-Example: A is 20 % less than B → B is 20/80 × 100 = **25 % more** than A.
+Example: A is 20 % less than B → B is $\dfrac{20}{80}$ × 100 = **25 % more** than A.
 
 
 **Another twist:** Successive percentage relations. If A is 20 % more than B, and B is 25 % more than C, what % is A more than C?
@@ -5639,16 +5946,16 @@ So Quantity must drop by 20 %.
 
 
 **Quick way:** Apply the formula directly.
-r = 25 → drop % = 25 / (100 + 25) × 100 = 25 / 125 × 100 = **20 %**
+r = 25 → drop % = 25 / (100 + 25) × 100 = $\dfrac{25}{125}$ × 100 = **20 %**
 
 
 *Watch out:* "25 %" — students assume "if price up by r %, cut consumption by r %". That UNDER-shoots — would result in 1.25 × 0.75 = 0.9375 × original expenditure (still down 6.25 %).
 
-**A similar question:** Price up by 50 %, consumption cut needed = 50 / 150 × 100 = **33.33 %**.
+**A similar question:** Price up by 50 %, consumption cut needed = $\dfrac{50}{150}$ × 100 = **33.33 %**.
 
 **Another twist:** Price DECREASES by r %, by how much can consumption increase to keep expenditure same? Use **r / (100 − r) × 100 %**.
 
-Example: Price down 20 % → consumption can go up by 20/80 × 100 = **25 %**.
+Example: Price down 20 % → consumption can go up by $\dfrac{20}{80}$ × 100 = **25 %**.
 
 
 ---
@@ -5667,7 +5974,7 @@ a = +20 (increase), b = −20 (decrease)
 
 
 **Step 2 — Compute the third term.**
-ab/100 = (20 × (−20)) / 100 = −400 / 100 = **−4**
+ab/100 = (20 × (−20)) / 100 = −$\dfrac{400}{100}$ = **−4**
 
 
 **Step 3 — Sum all three terms.**
@@ -5688,11 +5995,11 @@ Net change: (96 − 100)/100 × 100 = **−4 %** ✓
 
 **Worth knowing:** Universal pattern: "+r % then −r %" always results in a loss of **(r/10)²**.
 
-r = 20 → loss = (20/10)² = **4 %**
+r = 20 → loss = ($\dfrac{20}{10}$)² = **4 %**
 
-r = 30 → loss = (30/10)² = **9 %**
+r = 30 → loss = ($\dfrac{30}{10}$)² = **9 %**
 
-r = 10 → loss = (10/10)² = **1 %**
+r = 10 → loss = ($\dfrac{10}{10}$)² = **1 %**
 
 
 *Watch out:* "0 %" — students assume +20 % and −20 % cancel. They DO NOT, because the second 20 % is taken on a larger base (120, not 100).
@@ -5703,7 +6010,7 @@ Net % = a + b + ab/100
 
 = 30 + (−20) + (30 × −20) / 100
 
-= 10 + (−600 / 100)
+= 10 + (−$\dfrac{600}{100}$)
 
 = 10 − 6
 
@@ -5782,14 +6089,14 @@ Fail both = 100 − 80 = **20 %**
 
 
 **Note:** Take the ratio.**
-X / Y = 0.5 / 0.1 = **5 / 1**
+X / Y = 0.5 / 0.1 = **5**
 
 So **X : Y = 5 : 1**
 
 
-*Watch out:* "1 : 5" — students invert the ratio at the end.
+*Watch out:* "1 : 5" — students finish 0.1X = 0.5Y and write X/Y = 0.1/0.5 (thinking "X-coefficient over Y-coefficient"), giving 1/5 instead of 5. The mistake: dividing by the wrong side. Fix: rearrange X/Y = 0.5Y/0.1Y = 0.5/0.1 = 5 (move the Y-coefficient to the numerator).
 
-**A similar question:** If 40 % of (X+Y) = 60 % of (X−Y), find X : Y. Repeat the steps: 0.4X + 0.4Y = 0.6X − 0.6Y → 1.0Y = 0.2X → X/Y = 5/1.
+**A similar question:** If 40 % of (X+Y) = 60 % of (X−Y), find X : Y. Repeat the steps: 0.4X + 0.4Y = 0.6X − 0.6Y → 1.0Y = 0.2X → X/Y = 5.
 
 **Another twist:** 25 % of A = 35 % of B. Find A : B.
 
@@ -5797,7 +6104,7 @@ So **X : Y = 5 : 1**
 
 A / B = 0.35 / 0.25
 
-= 35 / 25
+= $\dfrac{35}{25}$
 
 = **7 : 5**
 
@@ -5876,7 +6183,7 @@ MP = 100 × 1.50 = **150**
 
 SP after 20 % discount = 150 × 0.80 = **120**
 
-Profit = 120 − 100 = 20 → Profit % = (20/100) × 100 = **20 %**
+Profit = 120 − 100 = 20 → Profit % = ($\dfrac{20}{100}$) × 100 = **20 %**
 
 </div>
 
@@ -5905,18 +6212,18 @@ Total SP = 600 + 600 = **₹1,200**
 
 Net loss = 1,250 − 1,200 = **₹50**
 
-Loss % = 50 / 1,250 × 100 = **4 %**
+Loss % = $\dfrac{50}{1250}$ × 100 = **4 %**
 
 </div>
 
 
 **Quick way:** Memorise the shortcut.** Whenever same SP + equal ± r %, **net result is always a loss = (r/10)²**.
 
-For r = 20 %: loss = (20/10)² = **4 %** ✓
+For r = 20 %: loss = ($\dfrac{20}{10}$)² = **4 %** ✓
 
-For r = 10 %: loss = (10/10)² = **1 %**
+For r = 10 %: loss = ($\dfrac{10}{10}$)² = **1 %**
 
-For r = 25 %: loss = (25/10)² = **6.25 %**
+For r = 25 %: loss = ($\dfrac{25}{10}$)² = **6.25 %**
 
 
 *Watch out:* "0 %" — students assume gain and loss cancel out. They DO NOT, because the bases (CP_A vs CP_B) are different.
@@ -5953,7 +6260,7 @@ Final SP = 100.80, CP = 100
 
 Profit = 100.80 − 100 = 0.80
 
-Profit % = (0.80 / 100) × 100 = **+0.80 %** (small gain)
+Profit % = (0.$\dfrac{80}{100}$) × 100 = **+0.80 %** (small gain)
 
 
 </div>
@@ -5977,25 +6284,25 @@ Profit % = (0.80 / 100) × 100 = **+0.80 %** (small gain)
 
 **Discount** of 10 % means he sells at 0.90 × MP, i.e., at 1.30 × 0.90 = **1.17 × CP** (he gets paid 1.17 × CP for the goods).
 
-**False weight** — customer thinks they got 1,000 g (worth 1.17 × CP at the marked rate) but actually received 900 g. So the trader effectively SOLD only 900 g of goods for the price of 1,000 g. Multiplier: 1,000 / 900 = **10/9 ≈ 1.111**.
+**False weight** — customer thinks they got 1,000 g (worth 1.17 × CP at the marked rate) but actually received 900 g. So the trader effectively SOLD only 900 g of goods for the price of 1,000 g. Multiplier: $\dfrac{1000}{900}$ = **$\dfrac{10}{9}$ ≈ 1.111**.
 
 </div>
 
 
 **Quick way:** Multiply all three multipliers.
 
-Total revenue / cost = 1.17 × (10/9) = 11.70 / 9 = **1.30**
+Total revenue / cost = 1.17 × ($\dfrac{10}{9}$) = 11.$\dfrac{70}{9}$ = **1.30**
 
 So profit = 30 % over CP. Answer = **30 %**.
 
 
-**Worth knowing:** Sanity-check.** Take CP of 1 kg = ₹100. Marks to ₹130, sells at ₹130 × 0.9 = ₹117 (for what customer thinks is 1 kg). Customer actually receives 900 g, which cost the trader ₹90 (since 1 kg cost ₹100). So trader spent ₹90 of goods and received ₹117 → profit ₹27 on a cost of ₹90 → 27/90 × 100 = **30 %** ✓.
+**Worth knowing:** Sanity-check.** Take CP of 1 kg = ₹100. Marks to ₹130, sells at ₹130 × 0.9 = ₹117 (for what customer thinks is 1 kg). Customer actually receives 900 g, which cost the trader ₹90 (since 1 kg cost ₹100). So trader spent ₹90 of goods and received ₹117 → profit ₹27 on a cost of ₹90 → $\dfrac{27}{90}$ × 100 = **30 %** ✓.
 
 *Watch out:* "17 %" — students compute markup × (1 − discount) and stop. They forget the false-weight bonus.
 
-**A similar question:** Trader uses 800 g per "1 kg" instead of 900 g. False weight multiplier becomes 1000/800 = 1.25. Total = 1.17 × 1.25 = 1.4625 → **46.25 % profit**.
+**A similar question:** Trader uses 800 g per "1 kg" instead of 900 g. False weight multiplier becomes $\dfrac{1000}{800}$ = 1.25. Total = 1.17 × 1.25 = 1.4625 → **46.25 % profit**.
 
-**Another twist:** Markup 25 %, discount 20 %, weight 950 g per kg. Multipliers: 1.25 × 0.80 × (1000/950) = 1.00 × 1.0526 = **5.26 %** profit. (Note: 25-20 alone gives 0 %, weight adds the bonus.)
+**Another twist:** Markup 25 %, discount 20 %, weight 950 g per kg. Multipliers: 1.25 × 0.80 × ($\dfrac{1000}{950}$) = 1.00 × 1.0526 = **5.26 %** profit. (Note: 25-20 alone gives 0 %, weight adds the bonus.)
 
 ---
 
@@ -6058,18 +6365,18 @@ Profit = 100 − 80 = ₹20.
 
 Profit % = Profit / CP × 100
 
-= 20 / 80 × 100
+= $\dfrac{20}{80}$ × 100
 
 = **25 %**
 
 
 **Worth knowing:** Important rule.** Profit % is ALWAYS computed on CP (cost price), never on SP. Discount % is on MP (marked price). Mixing these is the most common error.
 
-*Watch out:* "20 %" — students compute Profit / SP (= 20/100 = 20 %), using SP as base. Wrong base.
+*Watch out:* "20 %" — students compute Profit / SP (= $\dfrac{20}{100}$ = 20 %), using SP as base. Wrong base.
 
-**A similar question:** CP is 75 % of SP. Profit % = 25/75 × 100 = **33.33 %**.
+**A similar question:** CP is 75 % of SP. Profit % = $\dfrac{25}{75}$ × 100 = **33.33 %**.
 
-**Another twist:** SP is 80 % of CP (i.e., a loss). Loss % = (CP − SP)/CP × 100 = 20/100 × 100 = **20 %** loss.
+**Another twist:** SP is 80 % of CP (i.e., a loss). Loss % = (CP − SP)/CP × 100 = $\dfrac{20}{100}$ × 100 = **20 %** loss.
 
 **Quick rule.** If CP / SP = k, then profit % = (1 − k)/k × 100. If k = 0.8 → 0.2/0.8 × 100 = 25 %.
 
@@ -6107,7 +6414,7 @@ Total payment = 950 + 1,800 + 2,125 = **₹4,875**
 **Step 5 — Find effective discount %.**
 Total discount = 50 + 200 + 375 = **₹625**
 
-Effective discount % = (625 / 5,500) × 100 ≈ **11.36 %**
+Effective discount % = ($\dfrac{625}{5500}$) × 100 ≈ **11.36 %**
 
 
 </div>
@@ -6148,9 +6455,9 @@ B's contribution = 30,000 × 8 = **2,40,000**
 
 Ratio A : B = 240,000 : 240,000 = **1 : 1**
 
-A's share = 26,000 × 1/2 = **₹13,000**
+A's share = 26,000 × $\dfrac{1}{2}$ = **₹13,000**
 
-B's share = 26,000 × 1/2 = **₹13,000**
+B's share = 26,000 × $\dfrac{1}{2}$ = **₹13,000**
 
 </div>
 
@@ -6198,9 +6505,9 @@ P = ₹4,000, R = 5 % p.a., T = 3 years
 **Step 3 — Substitute into the formula.**
 SI = P × R × T / 100
 
-= 4,000 × 5 × 3 / 100
+= 4,000 × 5 × $\dfrac{3}{100}$
 
-= 60,000 / 100
+= $\dfrac{60000}{100}$
 
 = **₹600**
 
@@ -6218,9 +6525,9 @@ A = P + SI
 
 **A similar question:** Time given in months. Same problem, but T = 30 months.
 
-Convert: T = 30 / 12 = **2.5 years**
+Convert: T = $\dfrac{30}{12}$ = **2.5 years**
 
-SI = 4,000 × 5 × 2.5 / 100 = 50,000 / 100 = **₹500**
+SI = 4,000 × 5 × 2.$\dfrac{5}{100}$ = $\dfrac{50000}{100}$ = **₹500**
 
 
 **Another twist — Find R when SI is given.** SI = ₹720 on ₹4,000 for 3 years.
@@ -6229,7 +6536,7 @@ R = SI × 100 / (P × T)
 
 = 720 × 100 / (4,000 × 3)
 
-= 72,000 / 12,000
+= $\dfrac{72000}{12000}$
 
 = **6 %**
 
@@ -6240,7 +6547,7 @@ P = SI × 100 / (R × T)
 
 = 450 × 100 / (5 × 3)
 
-= 45,000 / 15
+= $\dfrac{45000}{15}$
 
 = **₹3,000**
 
@@ -6269,7 +6576,7 @@ Difference = CI − SI = P × (r/100)² ✓
 **Step 3 — Substitute the known values.**
 CI − SI = 40, r = 5 %
 
-40 = P × (5 / 100)²
+40 = P × ($\dfrac{5}{100}$)²
 
 40 = P × 0.0025
 
@@ -6285,7 +6592,7 @@ P = 40 / 0.0025
 
 **Verification — cross-check with full SI and CI:**
 
-SI for 2 yrs = P × r × T / 100 = 16,000 × 5 × 2 / 100 = **₹1,600**
+SI for 2 yrs = P × r × T / 100 = 16,000 × 5 × $\dfrac{2}{100}$ = **₹1,600**
 
 CI for 2 yrs = P × [(1.05)² − 1] = 16,000 × 0.1025 = **₹1,640**
 
@@ -6317,7 +6624,7 @@ P = 76 / 0.031
 
 
 **Step 2 — Solve for r/100.**
-(r/100)² = 100 / 10,000 = 0.01
+(r/100)² = $\dfrac{100}{10000}$ = 0.01
 
 
 **Step 3 — Take the square root.**
@@ -6339,11 +6646,11 @@ r = 0.1 × 100 = **10 %**
 **Step 1 — Find the rate from the doubling condition.**
 Doubles in 5 years → SI = P
 
-Substitute into SI formula: P × R × 5 / 100 = P
+Substitute into SI formula: P × R × $\dfrac{5}{100}$ = P
 
-Cancel P from both sides: R × 5 / 100 = 1
+Cancel P from both sides: R × $\dfrac{5}{100}$ = 1
 
-R = 100 / 5 = **20 % p.a.**
+R = $\dfrac{100}{5}$ = **20 % p.a.**
 
 
 **Step 2 — Apply same rate to find time for tripling.**
@@ -6353,7 +6660,7 @@ Substitute: P × 20 × T / 100 = 2P
 
 Cancel P from both sides: 20T / 100 = 2
 
-T = 2 × 100 / 20
+T = 2 × $\dfrac{100}{20}$
 
 = **10 years**
 
@@ -6382,7 +6689,7 @@ Substitute: t = log(3) × 5/log(2) = 5 × 1.585 = **7.92 years**
 
 ---
 
-**Q14.** A sum of money at compound interest grows to **1,331 / 1,000** of itself in 3 years. Find the annual rate of interest.
+**Q14.** A sum of money at compound interest grows to **$\dfrac{1331}{1000}$** of itself in 3 years. Find the annual rate of interest.
 
 <div class="steps">
 
@@ -6392,27 +6699,27 @@ Substitute: t = log(3) × 5/log(2) = 5 × 1.585 = **7.92 years**
 
 
 **Step 2 — Set up the equation.**
-Given: A/P = 1331/1000
+Given: A/P = $\dfrac{1331}{1000}$
 
-CI formula gives: (1 + r/100)³ = 1331/1000
+CI formula gives: (1 + r/100)³ = $\dfrac{1331}{1000}$
 
 
 **Step 3 — Take the cube root of both sides.**
-1 + r/100 = ∛(1331/1000)
+1 + r/100 = ∛($\dfrac{1331}{1000}$)
 
-= 11/10  *(since 11³ = 1331 and 10³ = 1000)*
+= $\dfrac{11}{10}$  *(since 11³ = 1331 and 10³ = 1000)*
 
 
 **Step 4 — Solve for r.**
-r/100 = 11/10 − 1 = 1/10
+r/100 = $\dfrac{11}{10}$ − 1 = $\dfrac{1}{10}$
 
-r = (1/10) × 100
+r = ($\dfrac{1}{10}$) × 100
 
 = **10 % p.a.**
 
 
 </div>
-*Watch out:* "11 %" — students take 11/10 directly without subtracting 1.
+*Watch out:* "11 %" — students take $\dfrac{11}{10}$ directly without subtracting 1.
 
 **Memorise these cube identities** (super useful for CI problems): 1331 = 11³; 1728 = 12³; 2197 = 13³; 2744 = 14³; 3375 = 15³; 4096 = 16³; 4913 = 17³; 5832 = 18³; 6859 = 19³; 8000 = 20³.
 
@@ -6472,7 +6779,7 @@ r = **10 %**
 **Step 1 — Adjust rate and number of periods for half-yearly compounding.**
 Annual rate r = 10 %
 
-Half-yearly rate = r / 2 = 10 / 2 = **5 %**
+Half-yearly rate = r / 2 = $\dfrac{10}{2}$ = **5 %**
 
 Time = 2 years → number of half-year periods = 2 × 2 = **4**
 
@@ -6480,7 +6787,7 @@ Time = 2 years → number of half-year periods = 2 × 2 = **4**
 **Step 2 — Apply the CI formula with adjusted values.**
 A = P × (1 + half-yearly rate / 100)^periods
 
-= 10,000 × (1 + 5/100)⁴
+= 10,000 × (1 + $\dfrac{5}{100}$)⁴
 
 = 10,000 × (1.05)⁴
 
@@ -6513,7 +6820,7 @@ Annual: A = 10,000 × (1.10)² = 10,000 × 1.21 = ₹12,100 → CI = ₹2,100
 Half-yearly extra = 2,155.06 − 2,100 = **₹55.06 more** (interest reinvested twice as often)
 
 
-*Watch out:* Students forget to halve the rate AND double the periods. Either error alone gives a wrong answer.
+*Watch out:* Students plug r = 10 % directly and n = 2 into CI formula A = P(1+r/100)^n, getting A = 10,000 × 1.1² = ₹12,100, which is annual compounding — not half-yearly. The mistake: forgetting to adjust both the rate (10% → 5%) AND the periods (2 → 4). Fix: A = 10,000 × (1.05)⁴ ≈ ₹12,155.
 
 **A similar question — Quarterly compounding.** Same P = ₹10,000, r = 10 %, T = 2 years.
 
@@ -6521,7 +6828,7 @@ Half-yearly extra = 2,155.06 − 2,100 = **₹55.06 more** (interest reinvested 
 
 
 **Step 1 — Adjust rate and periods.**
-Quarterly rate = 10 / 4 = **2.5 %**
+Quarterly rate = $\dfrac{10}{4}$ = **2.5 %**
 
 Periods = 2 × 4 = **8**
 
@@ -6545,7 +6852,7 @@ CI = A − P = 12,184.03 − 10,000 = **₹2,184.03**
 
 
 **Step 1 — Adjust rate and periods.**
-Monthly rate = 10 / 12 ≈ **0.833 %**
+Monthly rate = $\dfrac{10}{12}$ ≈ **0.833 %**
 
 Periods = 2 × 12 = **24**
 
@@ -6573,9 +6880,9 @@ CI ≈ 12,204 − 10,000 = **₹2,204**
 **Step 1 — Calculate SI for first segment (3 years at 5 %).**
 SI₁ = P × R₁ × T₁ / 100
 
-= 10,000 × 5 × 3 / 100
+= 10,000 × 5 × $\dfrac{3}{100}$
 
-= 150,000 / 100
+= $\dfrac{150000}{100}$
 
 = **₹1,500**
 
@@ -6583,9 +6890,9 @@ SI₁ = P × R₁ × T₁ / 100
 **Step 2 — Calculate SI for second segment (2 years at 8 %).**
 SI₂ = P × R₂ × T₂ / 100  *(principal remains ₹10,000 throughout — it's SI, not CI)*
 
-= 10,000 × 8 × 2 / 100
+= 10,000 × 8 × $\dfrac{2}{100}$
 
-= 160,000 / 100
+= $\dfrac{160000}{100}$
 
 = **₹1,600**
 
@@ -6643,10 +6950,10 @@ Sum of present values = loan amount: x/1.10 + x/1.21 = 2,210.
   x × (1/1.10 + 1/1.21) = 2,210
 **Step 3:** Compute the bracket:
 
-  (1.21 + 1.10) / (1.10 × 1.21) = 2.31 / 1.331 ≈ 1.7355
+  (1.21 + 1.10) / (1.10 × 1.21) = 2.31/1.331 ≈ 1.7355
 **Step 4:** Solve:
 
-  x = 2,210 / 1.7355 ≈ **₹1,273**
+  x = 2210/1.7355 ≈ **₹1,273**
 
 *Note: Instalment problems have no reliable one-liner shortcut. Always use the PV-equation method shown above.*
 
@@ -6658,9 +6965,9 @@ Sum of present values = loan amount: x/1.10 + x/1.21 = 2,210.
 
 
 **Step 1 — Calculate SI for Year 1 on full principal.**
-SI₁ = 1,200 × 10 × 1 / 100
+SI₁ = 1,200 × 10 × $\dfrac{1}{100}$
 
-= 12,000 / 100
+= $\dfrac{12000}{100}$
 
 = **₹120**
 
@@ -6674,9 +6981,9 @@ Remaining principal = 1,320 − 400 = **₹920**
 
 
 **Step 3 — Calculate SI on the remaining principal for 2 more years.**
-SI₂ = 920 × 10 × 2 / 100
+SI₂ = 920 × 10 × $\dfrac{2}{100}$
 
-= 18,400 / 100
+= $\dfrac{18400}{100}$
 
 = **₹184**
 
@@ -6722,7 +7029,7 @@ Combined: **A : B : C = 15 : 20 : 24**
 
 
 **Quick way:** Direct cross-multiply (when only A : C asked).
-A/C = (A/B) × (B/C) = (3/4) × (5/6) = 15/24 = **5 : 8**.
+A/C = (A/B) × (B/C) = ($\dfrac{3}{4}$) × ($\dfrac{5}{6}$) = $\dfrac{15}{24}$ = **5 : 8**.
 
 
 ***Watch out:*** Students multiply A : B = 3 : 4 and B : C = 5 : 6 to get 15 : 24 directly, forgetting to align B first.
@@ -6745,7 +7052,7 @@ Change in sum = new value − old value = 26 − 36 = **−10**
 
 New sum = 250 − 10 = **240**
 
-New average = 240 / 10 = **24**
+New average = $\dfrac{240}{10}$ = **24**
 
 </div>
 
@@ -6756,7 +7063,7 @@ New average = old average + (change in sum) / count = 25 + (−10)/10 = **24**.
 
 ***Watch out:*** "23" — students subtract 10 directly from the average (forgetting to divide by 10).
 
-**A similar question:** Average of 8 numbers = 40. One number 30 is replaced by 50. New average = 40 + 20/8 = **42.5**.
+**A similar question:** Average of 8 numbers = 40. One number 30 is replaced by 50. New average = 40 + $\dfrac{20}{8}$ = **42.5**.
 
 **Another twist — Add or remove an element.** Average of 5 numbers = 20. A 6th number 26 is added.
 
@@ -6798,7 +7105,7 @@ Remaining total = 308 − 63 = **245 years**
 
 Remaining count = 11 − 2 = **9**
 
-New average = 245 / 9 = **27.22 years** (or 27 and 2/9)
+New average = $\dfrac{245}{9}$ = **27.22 years** (or 27 and $\dfrac{2}{9}$)
 
 </div>
 
@@ -6865,9 +7172,9 @@ Fourth number = Total − Known sum
 
 Total work = 5 men × 6 days = **30 man-days**
 
-1 man-day-of-work = 3 units; 1 woman-day-of-work = 2 units (from ratio 3:2). So 1 woman = 2/3 of a man.
+1 man-day-of-work = 3 units; 1 woman-day-of-work = 2 units (from ratio 3:2). So 1 woman = $\dfrac{2}{3}$ of a man.
 
-4 women = 4 × (2/3) = **8/3 man-equivalent**
+4 women = 4 × ($\dfrac{2}{3}$) = **$\dfrac{8}{3}$ man-equivalent**
 
 </div>
 
@@ -6877,9 +7184,9 @@ Total work = 5 men × 6 days = **30 man-days**
 **Step 4 — Compute the number of days required.**
 Days needed = Total work ÷ woman-equivalent workers
 
-= 30 ÷ (8/3)
+= 30 ÷ ($\dfrac{8}{3}$)
 
-= 30 × 3/8
+= 30 × $\dfrac{3}{8}$
 
 = **11.25 days** (or 11 days and 6 hours)
 
@@ -6887,9 +7194,9 @@ Days needed = Total work ÷ woman-equivalent workers
 </div>
 **Worth knowing:** General formula. M₁D₁/W₁ = M₂D₂/W₂ where M = workers, D = days, W = work units. Always convert all workers to one unit (man-equivalent OR woman-equivalent).
 
-***Watch out:*** "9 days" — students compute 30/4 = 7.5 (wrong; doesn't account for the 3:2 ratio) or 30 × 3/4 (off).
+***Watch out:*** "9 days" — students compute $\dfrac{30}{4}$ = 7.5 (wrong; doesn't account for the 3:2 ratio) or 30 × $\dfrac{3}{4}$ (off).
 
-**A similar question:** 6 men finish in 8 days. 1 man = 4 women. How long for 12 women? 6 men × 8 days = 48 man-days. 12 women = 3 men → 48/3 = **16 days**.
+**A similar question:** 6 men finish in 8 days. 1 man = 4 women. How long for 12 women? 6 men × 8 days = 48 man-days. 12 women = 3 men → $\dfrac{48}{3}$ = **16 days**.
 
 **Another twist — Mixed crew.** A work takes 8 men 10 days, OR 16 women 10 days. How long for 4 men + 4 women?
 
@@ -6916,7 +7223,7 @@ Let the two numbers be **3x** and **5x**.
 
 After adding 8: (3x + 8) and (5x + 8).
 
-Given new ratio: (3x + 8) / (5x + 8) = **5 / 7**
+Given new ratio: (3x + 8) / (5x + 8) = **$\dfrac{5}{7}$**
 
 Cross-multiply: 7(3x + 8) = 5(5x + 8)
 
@@ -6928,7 +7235,7 @@ Rearrange: collect x-terms on one side and constants on the other.
 
 16 = 4x
 
-x = 16 / 4 = **4**
+x = $\dfrac{16}{4}$ = **4**
 
 Numbers = 3×4 = **12** and 5×4 = **20**
 
@@ -6937,7 +7244,7 @@ Numbers = 3×4 = **12** and 5×4 = **20**
 
 **Worth knowing:** Verify. New ratio = (12+8) : (20+8) = 20 : 28 = 5 : 7 ✓.
 
-***Watch out:*** Students set up (5x+8)/(3x+8) = 5/7, swapping numerator and denominator.
+***Watch out:*** Students set up (5x+8)/(3x+8) = $\dfrac{5}{7}$ swapping numerator and denominator.
 
 **A similar question:** Two numbers in ratio 2 : 3. After subtracting 4 from each, ratio = 1 : 2. Find the numbers.
 
@@ -6946,7 +7253,7 @@ Numbers = 3×4 = **12** and 5×4 = **20**
 **Let:** numbers = 2x and 3x
 
 **Step 1:** Set up equation after modification:
-(2x − 4) / (3x − 4) = 1/2
+(2x − 4) / (3x − 4) = $\dfrac{1}{2}$
 
 **Step 2:** Cross-multiply:
 2(2x − 4) = 1(3x − 4)
@@ -6969,7 +7276,7 @@ x = 4
 New numbers = (2 × 4x + 10) = 8x + 10 and (2 × 5x + 10) = 10x + 10
 
 **Step 2:** Set up equation:
-(8x + 10) / (10x + 10) = 9/11
+(8x + 10) / (10x + 10) = $\dfrac{9}{11}$
 
 **Step 3:** Cross-multiply:
 11(8x + 10) = 9(10x + 10)
@@ -7025,17 +7332,17 @@ Combined: A : B : C : D = **16 : 24 : 30 : 35**
 
 
 **Step 1 — Find the initial amounts of milk and water.**
-Milk fraction = 7/10; water fraction = 3/10.
+Milk fraction = $\dfrac{7}{10}$; water fraction = $\dfrac{3}{10}$.
 
-Initial milk = 60 × 7/10 = **42 L**
+Initial milk = 60 × $\dfrac{7}{10}$ = **42 L**
 
-Initial water = 60 × 3/10 = **18 L**
+Initial water = 60 × $\dfrac{3}{10}$ = **18 L**
 
 
 **Step 2 — Find how much milk and water are removed with the 20 L of mixture.**
-Milk removed = 20 × 7/10 = **14 L**
+Milk removed = 20 × $\dfrac{7}{10}$ = **14 L**
 
-Water removed = 20 × 3/10 = **6 L**
+Water removed = 20 × $\dfrac{3}{10}$ = **6 L**
 
 
 **Step 3 — Find amounts after removal.**
@@ -7084,7 +7391,7 @@ New student's weight = 312 − 250 = **62 kg**.
 
 **TSD** = Time-Speed-Distance; **km/h** = kilometres per hour; **m/s** = metres per second
 
-**Conversion:** 1 km/h = 5/18 m/s; 1 m/s = 18/5 km/h (appears in nearly every TSD problem)
+**Conversion:** 1 km/h = $\dfrac{5}{18}$ m/s; 1 m/s = $\dfrac{18}{5}$ km/h (appears in nearly every TSD problem)
 
 **Boat:** speed in still water = b; stream speed = s
 
@@ -7109,11 +7416,11 @@ Distance = **240 m**
 
 
 **Step 2 — Find speed in m/s.**
-Speed = Distance / Time = 240 / 12 = **20 m/s**
+Speed = Distance / Time = $\dfrac{240}{12}$ = **20 m/s**
 
 
 **Step 3 — Convert to km/h.**
-Speed = 20 × 18/5 = 360/5 = **72 km/h**
+Speed = 20 × $\dfrac{18}{5}$ = $\dfrac{360}{5}$ = **72 km/h**
 
 
 </div>
@@ -7121,9 +7428,9 @@ Speed = 20 × 18/5 = 360/5 = **72 km/h**
 
 ***Watch out:*** "20 km/h" — students give the m/s answer without converting to km/h.
 
-**A similar question — Pass a platform.** Train 200 m long, speed 72 km/h, passes a 100 m platform. Speed = 72 × 5/18 = 20 m/s. Total distance = 200 + 100 = 300 m. Time = 300/20 = **15 s**.
+**A similar question — Pass a platform.** Train 200 m long, speed 72 km/h, passes a 100 m platform. Speed = 72 × $\dfrac{5}{18}$ = 20 m/s. Total distance = 200 + 100 = 300 m. Time = $\dfrac{300}{20}$ = **15 s**.
 
-**Another twist — Find length.** A train passes a man standing on a platform in 10 s at 54 km/h. Length = 54 × 5/18 × 10 = 15 × 10 = **150 m**.
+**Another twist — Find length.** A train passes a man standing on a platform in 10 s at 54 km/h. Length = 54 × $\dfrac{5}{18}$ × 10 = 15 × 10 = **150 m**.
 
 ---
 
@@ -7139,7 +7446,7 @@ Relative speed = 80 + 100 = **180 km/h**
 
 
 **Step 2 — Convert to m/s.**
-180 km/h × 5/18 = 900/18 = **50 m/s**
+180 km/h × $\dfrac{5}{18}$ = $\dfrac{900}{18}$ = **50 m/s**
 
 
 **Step 3 — Find total distance covered during crossing.**
@@ -7149,7 +7456,7 @@ Total distance = Relative speed × Time = 50 × 15 = **750 m**
 **Step 4 — Find length of each train.**
 750 m = sum of both train lengths
 
-Since lengths are equal: each train = 750 / 2 = **375 m**
+Since lengths are equal: each train = $\dfrac{750}{2}$ = **375 m**
 
 
 </div>
@@ -7162,7 +7469,7 @@ Since lengths are equal: each train = 750 / 2 = **375 m**
 
 ***Watch out:*** "750 m" — students give total length instead of length of each.
 
-**A similar question — Same direction.** Two trains 200 m and 250 m long, speeds 60 km/h and 90 km/h, same direction. Relative = 30 km/h = 25/3 m/s. Total length = 450 m. Time = 450/(25/3) = 450 × 3/25 = **54 seconds**.
+**A similar question — Same direction.** Two trains 200 m and 250 m long, speeds 60 km/h and 90 km/h, same direction. Relative = 30 km/h = $\dfrac{25}{3}$ m/s. Total length = 450 m. Time = 450/($\dfrac{25}{3}$) = 450 × $\dfrac{3}{25}$ = **54 seconds**.
 
 **Another twist — Find one speed.** Two trains 100 m and 150 m, opposite directions, cross in 5 s. One train at 90 km/h. Relative = (100+150)/5 = 50 m/s = 180 km/h. Other train = 180 − 90 = **90 km/h**.
 
@@ -7182,9 +7489,9 @@ Upstream speed = boat speed − stream speed = 9 − 3 = **6 km/h**
 
 
 **Step 2 — Find time for each leg.**
-Time downstream = Distance / Speed = 24 / 12 = **2 hours**
+Time downstream = Distance / Speed = $\dfrac{24}{12}$ = **2 hours**
 
-Time upstream = 24 / 6 = **4 hours**
+Time upstream = $\dfrac{24}{6}$ = **4 hours**
 
 
 **Step 3 — Find total time.**
@@ -7192,9 +7499,9 @@ Total time = 2 + 4 = **6 hours**
 
 
 </div>
-***Watch out:*** Averaging the two speeds (9 km/h) and computing 48 / 9 = 5.33 h — WRONG. Speeds differ → must split into legs.
+***Watch out:*** Averaging the two speeds (9 km/h) and computing $\dfrac{48}{9}$ = 5.33 h — WRONG. Speeds differ → must split into legs.
 
-**Worth knowing:** Round-trip average speed (when distance same in both directions) = 2(d₁s₁s₂)/(s₁+s₂)·(1/d) → simplified: **harmonic mean = 2 × down × up / (down + up)**. Here = 2 × 12 × 6 / 18 = 144/18 = **8 km/h**. Total distance 48 km / 8 km/h = 6 hours ✓.
+**Worth knowing:** Round-trip average speed (when distance same in both directions) = 2(d₁s₁s₂)/(s₁+s₂)·(1/d) → simplified: **harmonic mean = 2 × down × up / (down + up)**. Here = 2 × 12 × $\dfrac{6}{18}$ = $\dfrac{144}{18}$ = **8 km/h**. Total distance 48 km / 8 km/h = 6 hours ✓.
 
 **A similar question — Find boat speed.** Boat takes 4 h downstream and 6 h upstream for 24 km each way.
 
@@ -7220,7 +7527,7 @@ Total time = 2 + 4 = **6 hours**
 Upstream speed = 12 − s
 
 **Step 2:** Upstream takes twice as long → time ratio = 2 : 1
-∴ (12 + s) / (12 − s) = 2/1
+∴ (12 + s) / (12 − s) = 2
 *(same distance, so faster speed = shorter time → speed ratio is inverted)*
 
 **Step 3:** Cross-multiply:
@@ -7278,7 +7585,7 @@ Average = 2ab / (a + b)
 
 = 2 × 60 × 40 / (60 + 40)
 
-= 4800 / 100
+= $\dfrac{4800}{100}$
 
 = **48 km/h**
 
@@ -7287,9 +7594,9 @@ Average = 2ab / (a + b)
 
 **Worth knowing:** Compare with **equal-time** journey. If man travels FOR equal time at 60 and 40 km/h, then average = arithmetic mean = (60+40)/2 = 50 km/h.
 
-**A similar question — 3 equal segments.** Man covers 1/3 distance at 30, 1/3 at 40, 1/3 at 60. Average = 3 / (1/30 + 1/40 + 1/60) = 3 / ((4+3+2)/120) = 3 × 120/9 = **40 km/h**.
+**A similar question — 3 equal segments.** Man covers $\dfrac{1}{3}$ distance at 30, $\dfrac{1}{3}$ at 40, $\dfrac{1}{3}$ at 60. Average = 3 / ($\dfrac{1}{30}$ + $\dfrac{1}{40}$ + $\dfrac{1}{60}$) = 3 / ((4+3+2)/120) = 3 × $\dfrac{120}{9}$ = **40 km/h**.
 
-**Another twist — Unequal legs.** Man covers 60 km at 30 km/h and 40 km at 40 km/h. Use definition: total dist / total time. Time₁ = 60/30 = 2; Time₂ = 40/40 = 1; total = 3 h. Total dist = 100 km. Average = 100/3 = **33.33 km/h**.
+**Another twist — Unequal legs.** Man covers 60 km at 30 km/h and 40 km at 40 km/h. Use definition: total dist / total time. Time₁ = $\dfrac{60}{30}$ = 2; Time₂ = $\dfrac{40}{40}$ = 1; total = 3 h. Total dist = 100 km. Average = $\dfrac{100}{3}$ = **33.33 km/h**.
 
 ---
 
@@ -7305,7 +7612,7 @@ Relative speed = 20 + 30 = **50 km/h**
 
 
 **Step 2 — Find time to meet.**
-Time = Distance / Relative speed = 100 / 50 = **2 hours**
+Time = Distance / Relative speed = $\dfrac{100}{50}$ = **2 hours**
 
 
 </div>
@@ -7318,7 +7625,7 @@ Time = Distance / Relative speed = 100 / 50 = **2 hours**
 
 ***Watch out:*** Students compute distance covered by each (A covers 40 km, B covers 60 km, sum = 100 km — coincidence) without using the cleaner relative-speed approach.
 
-**A similar question — Chase problem.** A walks at 4 km/h. B walks at 6 km/h. A is 8 km ahead. When will B catch A? Relative speed = 6 − 4 = 2 km/h. Time = 8/2 = **4 hours**.
+**A similar question — Chase problem.** A walks at 4 km/h. B walks at 6 km/h. A is 8 km ahead. When will B catch A? Relative speed = 6 − 4 = 2 km/h. Time = $\dfrac{8}{2}$ = **4 hours**.
 
 **Another twist — When and where they meet.** Same A & B opposite-end problem (100 km apart, 20 and 30 km/h). After meeting (at t = 2 h), distance from A's start = A's speed × t = 20 × 2 = **40 km**. From B's end = 30 × 2 = **60 km**.
 
@@ -7360,7 +7667,7 @@ Relative speed = 90 − 60 = **30 km/h**
 
 
 **Step 2 — Convert to m/s.**
-30 km/h × 5/18 = 150/18 = 25/3 m/s ≈ **8.33 m/s**
+30 km/h × $\dfrac{5}{18}$ = $\dfrac{150}{18}$ = $\dfrac{25}{3}$ m/s ≈ **8.33 m/s**
 
 
 **Step 3 — Find total distance (sum of both train lengths).**
@@ -7368,7 +7675,7 @@ Total distance = 200 + 150 = **350 m**
 
 
 **Step 4 — Find time.**
-Time = Distance / Relative speed = 350 ÷ (25/3) = 350 × 3/25 = 1050/25 = **42 seconds**
+Time = Distance / Relative speed = 350 ÷ ($\dfrac{25}{3}$) = 350 × $\dfrac{3}{25}$ = $\dfrac{1050}{25}$ = **42 seconds**
 
 
 </div>
@@ -7419,32 +7726,32 @@ c = 3.2 ÷ 2 = **1.6 km/h**
 
 <div class="steps">
 
-A's rate = 1/12 (one job per 12 days, i.e., 1/12 of the job per day)
+A's rate = $\dfrac{1}{12}$ (one job per 12 days, i.e., $\dfrac{1}{12}$ of the job per day)
 
-B's rate = 1/18
+B's rate = $\dfrac{1}{18}$
 
-Combined rate = 1/12 + 1/18
+Combined rate = $\dfrac{1}{12}$ + $\dfrac{1}{18}$
 
 </div>
 
 
   Find LCM of 12 and 18 = 36.
-  1/12 = 3/36
-  1/18 = 2/36
-  Sum = 5/36
+  $\dfrac{1}{12}$ = $\dfrac{3}{36}$
+  $\dfrac{1}{18}$ = $\dfrac{2}{36}$
+  Sum = $\dfrac{5}{36}$
 
-Combined time = 1 / combined rate = 1 / (5/36) = **36/5 = 7.2 days**
+Combined time = 1 / combined rate = 1 / ($\dfrac{5}{36}$) = **$\dfrac{36}{5}$ = 7.2 days**
 
 
 **Quick way:** Direct formula for two workers.
-Combined time = **(A × B) / (A + B)** = (12 × 18) / (12 + 18) = 216 / 30 = **7.2 days**.
+Combined time = **(A × B) / (A + B)** = (12 × 18) / (12 + 18) = $\dfrac{216}{30}$ = **7.2 days**.
 
 
 ***Watch out:*** "15 days" — students average days (12+18)/2. WRONG: rates add, not days.
 
-**A similar question:** A in 10 days, B in 15 days. Together = (10×15)/(10+15) = 150/25 = **6 days**.
+**A similar question:** A in 10 days, B in 15 days. Together = (10×15)/(10+15) = $\dfrac{150}{25}$ = **6 days**.
 
-**Another twist — Three workers together.** A in 12, B in 18, C in 24 days. Combined rate = 1/12 + 1/18 + 1/24 = (6+4+3)/72 = 13/72. Time = **72/13 ≈ 5.54 days**.
+**Another twist — Three workers together.** A in 12, B in 18, C in 24 days. Combined rate = $\dfrac{1}{12}$ + $\dfrac{1}{18}$ + $\dfrac{1}{24}$ = (6+4+3)/72 = $\dfrac{13}{72}$. Time = **$\dfrac{72}{13}$ ≈ 5.54 days**.
 
 ---
 
@@ -7454,30 +7761,30 @@ Combined time = **(A × B) / (A + B)** = (12 × 18) / (12 + 18) = 216 / 30 = **7
 
 <div class="steps">
 
-Rate of (A + B) = 1/12
+Rate of (A + B) = $\dfrac{1}{12}$
 
-Rate of (B + C) = 1/15
+Rate of (B + C) = $\dfrac{1}{15}$
 
-Rate of (C + A) = 1/20
+Rate of (C + A) = $\dfrac{1}{20}$
 
 Add all three: (A + B) + (B + C) + (C + A) = 2(A + B + C)
 
-Sum on RHS = 1/12 + 1/15 + 1/20
+Sum on RHS = $\dfrac{1}{12}$ + $\dfrac{1}{15}$ + $\dfrac{1}{20}$
 
 </div>
 
 
   LCM of 12, 15, 20 = 60.
-  1/12 = 5/60
-  1/15 = 4/60
-  1/20 = 3/60
-  Sum = **12/60 = 1/5**
+  $\dfrac{1}{12}$ = $\dfrac{5}{60}$
+  $\dfrac{1}{15}$ = $\dfrac{4}{60}$
+  $\dfrac{1}{20}$ = $\dfrac{3}{60}$
+  Sum = **$\dfrac{12}{60}$ = $\dfrac{1}{5}$**
 
-So 2(A + B + C) = 1/5
+So 2(A + B + C) = $\dfrac{1}{5}$
 
-A + B + C = 1/5 ÷ 2 = **1/10**
+A + B + C = $\dfrac{1}{5}$ ÷ 2 = **$\dfrac{1}{10}$**
 
-All three together = 1 ÷ (1/10) = **10 days**
+All three together = 1 ÷ ($\dfrac{1}{10}$) = **10 days**
 
 
 **Worth knowing:** To find an INDIVIDUAL worker's time, subtract a pair's rate from the all-three rate.
@@ -7486,9 +7793,9 @@ All three together = 1 ÷ (1/10) = **10 days**
 
 *C's rate:*
 
-C's rate = (A+B+C) − (A+B) = 1/10 − 1/12
+C's rate = (A+B+C) − (A+B) = $\dfrac{1}{10}$ − $\dfrac{1}{12}$
 
-= (6 − 5) / 60 = 1/60
+= (6 − 5) / 60 = $\dfrac{1}{60}$
 
 **C alone = 60 days**
 
@@ -7499,9 +7806,9 @@ C's rate = (A+B+C) − (A+B) = 1/10 − 1/12
 
 *A's rate:*
 
-A's rate = (A+B+C) − (B+C) = 1/10 − 1/15
+A's rate = (A+B+C) − (B+C) = $\dfrac{1}{10}$ − $\dfrac{1}{15}$
 
-= (3 − 2) / 30 = 1/30
+= (3 − 2) / 30 = $\dfrac{1}{30}$
 
 **A alone = 30 days**
 
@@ -7512,20 +7819,20 @@ A's rate = (A+B+C) − (B+C) = 1/10 − 1/15
 
 *B's rate:*
 
-B's rate = (A+B+C) − (C+A) = 1/10 − 1/20
+B's rate = (A+B+C) − (C+A) = $\dfrac{1}{10}$ − $\dfrac{1}{20}$
 
-= (2 − 1) / 20 = 1/20
+= (2 − 1) / 20 = $\dfrac{1}{20}$
 
 **B alone = 20 days**
 
 </div>
 
 
-***Watch out:*** Students forget the factor of 2 and conclude A+B+C takes 5 days. WRONG.
+***Watch out:*** Students compute (1/12 + 1/15 + 1/20) = 12/60 = 1/5 and conclude A+B+C = 5 days. The mistake: they forget that summing the three pairs double-counts every worker — the sum gives 2×(A+B+C) = 1/5, not (A+B+C). Fix: divide by 2 → A+B+C = 1/10 → 10 days.
 
-**A similar question:** (A+B) = 8 days, (B+C) = 12 days, (C+A) = 24 days. Sum of rates = 1/8 + 1/12 + 1/24 = (3+2+1)/24 = 6/24 = 1/4. So 2(A+B+C) = 1/4 → A+B+C = 1/8 → **8 days together**.
+**A similar question:** (A+B) = 8 days, (B+C) = 12 days, (C+A) = 24 days. Sum of rates = $\dfrac{1}{8}$ + $\dfrac{1}{12}$ + $\dfrac{1}{24}$ = (3+2+1)/24 = $\dfrac{6}{24}$ = $\dfrac{1}{4}$. So 2(A+B+C) = $\dfrac{1}{4}$ → A+B+C = $\dfrac{1}{8}$ → **8 days together**.
 
-**Another twist — A leaves midway.** A, B, C together start a work that all three would finish in 10 days. A leaves after 4 days. How long do B and C take to finish? Work done in 4 days = 4/10 = 2/5. Remaining = 3/5. B+C rate = 1/15. Time = (3/5)/(1/15) = 3/5 × 15 = **9 days**.
+**Another twist — A leaves midway.** A, B, C together start a work that all three would finish in 10 days. A leaves after 4 days. How long do B and C take to finish? Work done in 4 days = $\dfrac{4}{10}$ = $\dfrac{2}{5}$. Remaining = $\dfrac{3}{5}$. B+C rate = $\dfrac{1}{15}$. Time = ($\dfrac{3}{5}$)/($\dfrac{1}{15}$) = $\dfrac{3}{5}$ × 15 = **9 days**.
 
 ---
 
@@ -7535,26 +7842,26 @@ B's rate = (A+B+C) − (C+A) = 1/10 − 1/20
 
 <div class="steps">
 
-Filling pipe rate = +1/6 (fills 1/6 per hour)
+Filling pipe rate = +$\dfrac{1}{6}$ (fills $\dfrac{1}{6}$ per hour)
 
-Emptying pipe rate = −1/8 (empties 1/8 per hour)
+Emptying pipe rate = −$\dfrac{1}{8}$ (empties $\dfrac{1}{8}$ per hour)
 
-Net rate = 1/6 − 1/8
+Net rate = $\dfrac{1}{6}$ − $\dfrac{1}{8}$
 
 </div>
 
 
   LCM of 6, 8 = 24.
-  1/6 = 4/24
-  1/8 = 3/24
-  Net = (4 − 3)/24 = 1/24
+  $\dfrac{1}{6}$ = $\dfrac{4}{24}$
+  $\dfrac{1}{8}$ = $\dfrac{3}{24}$
+  Net = (4 − 3)/24 = $\dfrac{1}{24}$
 
-Time to fill = 1 / (1/24) = **24 hours**
+Time to fill = 1 / ($\dfrac{1}{24}$) = **24 hours**
 
 
 **Worth knowing:** This works ONLY if filling > emptying (net rate positive). If emptying > filling, the tank will never fill from empty — just verify direction.
 
-***Watch out:*** Students ADD rates (1/6 + 1/8 = 7/24 → 24/7 ≈ 3.4 h) instead of subtracting. Wrong because emptying opposes filling.
+***Watch out:*** Students ADD rates ($\dfrac{1}{6}$ + $\dfrac{1}{8}$ = $\dfrac{7}{24}$ → $\dfrac{24}{7}$ ≈ 3.4 h) instead of subtracting. Wrong because emptying opposes filling.
 
 **A similar question — Two filling + one emptying.** Pipes A (fills in 4 h), B (fills in 6 h), C (empties in 8 h).
 
@@ -7562,37 +7869,37 @@ Time to fill = 1 / (1/24) = **24 hours**
 
 
 **Step 1 — Find net rate.**
-Net rate = 1/4 + 1/6 − 1/8
+Net rate = $\dfrac{1}{4}$ + $\dfrac{1}{6}$ − $\dfrac{1}{8}$
 
 LCM of 4, 6, 8 = 24
 
-= 6/24 + 4/24 − 3/24
+= $\dfrac{6}{24}$ + $\dfrac{4}{24}$ − $\dfrac{3}{24}$
 
-= **7/24** per hour
+= **$\dfrac{7}{24}$** per hour
 
 
 **Step 2 — Find time to fill.**
-Time = 1 / (7/24) = **24/7 ≈ 3.43 hours**
+Time = 1 / ($\dfrac{7}{24}$) = **$\dfrac{24}{7}$ ≈ 3.43 hours**
 
 
 </div>
-**Another twist — Tank already partly full.** Tank is 1/3 full. Filling pipe (4 h) and emptying pipe (6 h) both opened.
+**Another twist — Tank already partly full.** Tank is $\dfrac{1}{3}$ full. Filling pipe (4 h) and emptying pipe (6 h) both opened.
 
 <div class="steps">
 
 
 **Step 1 — Find net fill rate.**
-Net rate = 1/4 − 1/6
+Net rate = $\dfrac{1}{4}$ − $\dfrac{1}{6}$
 
-= 3/12 − 2/12
+= $\dfrac{3}{12}$ − $\dfrac{2}{12}$
 
-= **1/12** per hour
+= **$\dfrac{1}{12}$** per hour
 
 
 **Step 2 — Find remaining volume and time.**
-Remaining to fill = 1 − 1/3 = **2/3**
+Remaining to fill = 1 − $\dfrac{1}{3}$ = **$\dfrac{2}{3}$**
 
-Time = remaining / net rate = (2/3) ÷ (1/12) = (2/3) × 12 = **8 hours**
+Time = remaining / net rate = ($\dfrac{2}{3}$) ÷ ($\dfrac{1}{12}$) = ($\dfrac{2}{3}$) × 12 = **8 hours**
 
 
 </div>
@@ -7608,11 +7915,11 @@ Let B's rate = x (job per day). Then A's rate = 2x (twice as efficient).
 
 Combined rate = A + B = 2x + x = 3x
 
-Combined time = 12 days, so combined rate = 1/12
+Combined time = 12 days, so combined rate = $\dfrac{1}{12}$
 
-Set up equation: 3x = 1/12
+Set up equation: 3x = $\dfrac{1}{12}$
 
-Solve: x = 1/12 ÷ 3 = **1/36**
+Solve: x = $\dfrac{1}{12}$ ÷ 3 = **$\dfrac{1}{36}$**
 
 </div>
 
@@ -7621,40 +7928,40 @@ Solve: x = 1/12 ÷ 3 = **1/36**
 
 
 **Step 3 — Compute A's rate and time.**
-A's rate = 2x = 2 × 1/36 = **1/18**
+A's rate = 2x = 2 × $\dfrac{1}{36}$ = **$\dfrac{1}{18}$**
 
-A alone takes = 1 ÷ (1/18) = **18 days**
+A alone takes = 1 ÷ ($\dfrac{1}{18}$) = **18 days**
 
 
 </div>
-**Worth knowing:** Sanity check by finding B's time too. B alone = 1/x = 36 days. Verify: 1/18 + 1/36 = 2/36 + 1/36 = 3/36 = 1/12 ✓.
+**Worth knowing:** Sanity check by finding B's time too. B alone = 1/x = 36 days. Verify: $\dfrac{1}{18}$ + $\dfrac{1}{36}$ = $\dfrac{2}{36}$ + $\dfrac{1}{36}$ = $\dfrac{3}{36}$ = $\dfrac{1}{12}$ ✓.
 
 **Memory peg:** When **A is k times as efficient as B**, time ratio = inverse: B takes k times as long as A. So if combined time = T, then **A alone = T(k+1)/k** and **B alone = T(k+1)**.
-Here k = 2, T = 12: A = 12 × 3/2 = 18 ✓. B = 12 × 3 = 36 ✓.
+Here k = 2, T = 12: A = 12 × $\dfrac{3}{2}$ = 18 ✓. B = 12 × 3 = 36 ✓.
 
 
 ***Watch out:*** "24 days" — students treat A and B as equal (combined 12 → each 24).
 
 **A similar question — A is 3 times as efficient as B; together 9 days.**
 
-Using formula: A alone = T × (k+1)/k = 9 × 4/3 = **12 days**
+Using formula: A alone = T × (k+1)/k = 9 × $\dfrac{4}{3}$ = **12 days**
 
 B alone = T × (k+1) = 9 × 4 = **36 days**
 
 
 **Another twist — Three workers in efficiency ratio.** A : B : C efficiencies = 6 : 4 : 3. Together they finish in 6 days.
 
-Combined rate = 1/6 per day
+Combined rate = $\dfrac{1}{6}$ per day
 
 Sum of efficiency parts = 6 + 4 + 3 = 13
 
-Each "1-part" rate = 1/(6 × 13) = 1/78 per day
+Each "1-part" rate = 1/(6 × 13) = $\dfrac{1}{78}$ per day
 
-A alone (6 parts): time = 78/6 = **13 days**
+A alone (6 parts): time = $\dfrac{78}{6}$ = **13 days**
 
-B alone (4 parts): time = 78/4 = **19.5 days**
+B alone (4 parts): time = $\dfrac{78}{4}$ = **19.5 days**
 
-C alone (3 parts): time = 78/3 = **26 days**
+C alone (3 parts): time = $\dfrac{78}{3}$ = **26 days**
 
 
 ---
@@ -7671,14 +7978,14 @@ New scenario = 8 men × d days × 6 h/day = 48d man-hours
 
 Set equal: 48d = 960
 
-d = 960 / 48 = **20 days**
+d = $\dfrac{960}{48}$ = **20 days**
 
 </div>
 
 
 **Worth knowing:** General formula. (M₁ × D₁ × H₁) = (M₂ × D₂ × H₂), where M = men, D = days, H = hours/day. Rearrange to find the unknown.
 
-***Watch out:*** Students apply only one ratio (e.g., 12/8 × 10 = 15 days), forgetting the hours-per-day factor.
+***Watch out:*** Students apply only one ratio (e.g., $\dfrac{12}{8}$ × 10 = 15 days), forgetting the hours-per-day factor.
 
 **A similar question — Find men needed.** A work needs 20 men working 8 h/day for 12 days. How many men needed to finish in 10 days at 6 h/day?
 
@@ -7696,19 +8003,19 @@ Total = m × 6 × 10 = 60m
 **Step 3 — Solve for m.**
 60m = 1,920
 
-m = 1,920 / 60 = **32 men**
+m = $\dfrac{1920}{60}$ = **32 men**
 
 
 </div>
 **Another twist — Add a fourth variable: efficiency.** 6 men can build a wall in 8 days. 4 women can build same wall in 12 days. How long for 3 men + 4 women?
 
-1 man's rate = 1/(6 × 8) = **1/48** wall/day
+1 man's rate = 1/(6 × 8) = **$\dfrac{1}{48}$** wall/day
 
-1 woman's rate = 1/(4 × 12) = **1/48** wall/day → so 1 man = 1 woman in efficiency
+1 woman's rate = 1/(4 × 12) = **$\dfrac{1}{48}$** wall/day → so 1 man = 1 woman in efficiency
 
-Combined rate of 3 men + 4 women = 7 × (1/48) = 7/48 wall/day
+Combined rate of 3 men + 4 women = 7 × ($\dfrac{1}{48}$) = $\dfrac{7}{48}$ wall/day
 
-Time = 1 ÷ (7/48) = 48/7 ≈ **6.86 days**
+Time = 1 ÷ ($\dfrac{7}{48}$) = $\dfrac{48}{7}$ ≈ **6.86 days**
 
 
 ### Section 6A — ADVANCED TIME & WORK (exam-level variations)
@@ -7719,19 +8026,19 @@ Time = 1 ÷ (7/48) = 48/7 ≈ **6.86 days**
 
 <div class="steps">
 
-A's 1-day work = 1/12; B's 1-day work = 1/18.
+A's 1-day work = $\dfrac{1}{12}$; B's 1-day work = $\dfrac{1}{18}$.
 
-2-day cycle (A on day 1, B on day 2) = 1/12 + 1/18 = (3+2)/36 = **5/36** of total work.
+2-day cycle (A on day 1, B on day 2) = $\dfrac{1}{12}$ + $\dfrac{1}{18}$ = (3+2)/36 = **$\dfrac{5}{36}$** of total work.
 
-Number of complete 2-day cycles to finish: 36/5 = 7.2 → use **7 full cycles = 14 days**
+Number of complete 2-day cycles to finish: $\dfrac{36}{5}$ = 7.2 → use **7 full cycles = 14 days**
 
-Work done after 14 days = 7 × 5/36 = 35/36; remaining = 1/36
+Work done after 14 days = 7 × $\dfrac{5}{36}$ = $\dfrac{35}{36}$; remaining = $\dfrac{1}{36}$
 
-Day 15 is A's turn. A's rate = 1/12 = 3/36 per day, but only 1/36 remains.
+Day 15 is A's turn. A's rate = $\dfrac{1}{12}$ = $\dfrac{3}{36}$ per day, but only $\dfrac{1}{36}$ remains.
 
-Time needed on day 15 = (1/36) ÷ (1/12) = 12/36 = **1/3 day**.
+Time needed on day 15 = ($\dfrac{1}{36}$) ÷ ($\dfrac{1}{12}$) = $\dfrac{12}{36}$ = **$\dfrac{1}{3}$ day**.
 
-Total time = 14 + 1/3 = **14⅓ days**.
+Total time = 14 + $\dfrac{1}{3}$ = **14⅓ days**.
 
 </div>
 
@@ -7742,17 +8049,17 @@ Total time = 14 + 1/3 = **14⅓ days**.
 
 <div class="steps">
 
-Combined work-rate (A + B) = 1/10 per day.
+Combined work-rate (A + B) = $\dfrac{1}{10}$ per day.
 
-Work done in first 4 days = 4 × 1/10 = **2/5**.
+Work done in first 4 days = 4 × $\dfrac{1}{10}$ = **$\dfrac{2}{5}$**.
 
-Remaining work = 1 − 2/5 = **3/5**.
+Remaining work = 1 − $\dfrac{2}{5}$ = **$\dfrac{3}{5}$**.
 
-A alone does 3/5 in 6 days → A's rate = (3/5) / 6 = **1/10**? That equals A+B's combined rate, which would mean B does NO work — contradiction.
+A alone does $\dfrac{3}{5}$ in 6 days → A's rate = ($\dfrac{3}{5}$) / 6 = **$\dfrac{1}{10}$**? That equals A+B's combined rate, which would mean B does NO work — contradiction.
 
-Recheck: if A's rate = 1/10, then A alone takes **10 days** for the whole work. But then A + B rate would exceed 1/10. Setup needs A's rate < 1/10. Let me redo.
+Recheck: if A's rate = $\dfrac{1}{10}$ then A alone takes **10 days** for the whole work. But then A + B rate would exceed $\dfrac{1}{10}$. Setup needs A's rate < $\dfrac{1}{10}$. Let me redo.
 
-A alone rate = 3/5 ÷ 6 = 1/10 per day. So A alone time = 1 / (1/10) = **10 days**.
+A alone rate = $\dfrac{3}{5}$ ÷ 6 = $\dfrac{1}{10}$ per day. So A alone time = 1 / ($\dfrac{1}{10}$) = **10 days**.
 
 </div>
 
@@ -7828,7 +8135,7 @@ Cheaper : Dearer = 6 : 4 = **3 : 2**
 
 
 </div>
-**Quick way:** Verify with concrete numbers. Take 3 kg of ₹30 + 2 kg of ₹40. Cost = 3×30 + 2×40 = 90 + 80 = ₹170. Total = 5 kg. Average = 170/5 = ₹34/kg ✓.
+**Quick way:** Verify with concrete numbers. Take 3 kg of ₹30 + 2 kg of ₹40. Cost = 3×30 + 2×40 = 90 + 80 = ₹170. Total = 5 kg. Average = $\dfrac{170}{5}$ = ₹34/kg ✓.
 
 **Worth knowing:** Universal rule — **Cheaper : Dearer = (Dearer price − Mean price) : (Mean price − Cheaper price)**.
 
@@ -7886,7 +8193,7 @@ Mix **2 parts of the 20% solution** with **1 part of the 50% solution**.
 
 
 </div>
-**Another twist — Three components.** Mix three teas of ₹40, ₹50, ₹70 per kg to get ₹52 per kg. With three items, multiple ratios work — usually fix one ratio (e.g., ₹40 to ₹50) at 1:1, then alligate that combined "₹45 mix" with the ₹70 tea: ratio = (70−52):(52−45) = 18:7 → so 1:1:(2×7/18) of the three. Common shortcut: pair up.
+**Another twist — Three components.** Mix three teas of ₹40, ₹50, ₹70 per kg to get ₹52 per kg. With three items, multiple ratios work — usually fix one ratio (e.g., ₹40 to ₹50) at 1:1, then alligate that combined "₹45 mix" with the ₹70 tea: ratio = (70−52):(52−45) = 18:7 → so 1:1:(2×$\dfrac{7}{18}$) of the three. Common shortcut: pair up.
 
 ---
 
@@ -7905,9 +8212,9 @@ Fraction remaining per step = (V − x) / V
 
 = (40 − 4) / 40
 
-= 36 / 40
+= $\dfrac{36}{40}$
 
-= **9/10 = 0.9**
+= **$\dfrac{9}{10}$ = 0.9**
 
 
 **Step 2 — Apply the fraction over 3 iterations.**
@@ -7941,21 +8248,21 @@ Original substance remaining = V × (1 − x/V)ⁿ
 
 
 **Step 1 — After removing 10 L (replace with water).**
-Fraction remaining = (100 − 10) / 100 = 90/100
+Fraction remaining = (100 − 10) / 100 = $\dfrac{90}{100}$
 
-Milk = 100 × 90/100 = **90 L**
+Milk = 100 × $\dfrac{90}{100}$ = **90 L**
 
 
 **Step 2 — After removing 20 L from 100 L total.**
-Fraction remaining = 80/100
+Fraction remaining = $\dfrac{80}{100}$
 
-Milk = 90 × 80/100 = **72 L**
+Milk = 90 × $\dfrac{80}{100}$ = **72 L**
 
 
 **Step 3 — After removing 30 L from 100 L total.**
-Fraction remaining = 70/100
+Fraction remaining = $\dfrac{70}{100}$
 
-Milk = 72 × 70/100 = **50.4 L**
+Milk = 72 × $\dfrac{70}{100}$ = **50.4 L**
 
 
 </div>
@@ -7967,26 +8274,26 @@ Milk = 72 × 70/100 = **50.4 L**
 
 <div class="steps">
 
-Jar A: milk fraction = 4/(4+3) = **4/7**
+Jar A: milk fraction = 4/(4+3) = **$\dfrac{4}{7}$**
 
-Jar B: milk fraction = 5/(5+2) = **5/7**
+Jar B: milk fraction = 5/(5+2) = **$\dfrac{5}{7}$**
 
 Take 1 unit from each jar.
 
-Milk from A = **4/7**; milk from B = **5/7**
+Milk from A = **$\dfrac{4}{7}$**; milk from B = **$\dfrac{5}{7}$**
 
-Total milk = 4/7 + 5/7 = **9/7**
+Total milk = $\dfrac{4}{7}$ + $\dfrac{5}{7}$ = **$\dfrac{9}{7}$**
 
 Total volume = 1 + 1 = **2 units**
 
-Water = 2 − 9/7 = 14/7 − 9/7 = **5/7**
+Water = 2 − $\dfrac{9}{7}$ = $\dfrac{14}{7}$ − $\dfrac{9}{7}$ = **$\dfrac{5}{7}$**
 
-Final ratio milk : water = 9/7 : 5/7 = **9 : 5**
+Final ratio milk : water = $\dfrac{9}{7}$ : $\dfrac{5}{7}$ = **9 : 5**
 
 </div>
 
 
-**Worth knowing:** When you pool equal volumes, the new fraction = average of the two milk-fractions. Average of 4/7 and 5/7 = 9/14 = milk/total. Water/total = 5/14. Ratio = 9 : 5 ✓.
+**Worth knowing:** When you pool equal volumes, the new fraction = average of the two milk-fractions. Average of $\dfrac{4}{7}$ and $\dfrac{5}{7}$ = $\dfrac{9}{14}$ = milk/total. Water/total = $\dfrac{5}{14}$. Ratio = 9 : 5 ✓.
 
 ***Watch out:*** Students "average the ratios" → (4+5):(3+2) = 9:5 → coincidentally CORRECT here, but only because both jars have the SAME total of 7 parts. If totals differ (e.g., 4:3 and 3:1), averaging ratios fails.
 
@@ -7996,27 +8303,27 @@ Final ratio milk : water = 9/7 : 5/7 = **9 : 5**
 
 
 **Step 1 — Find milk fraction from each jar.**
-Milk from Jar A = 3/4 of 1 unit = **3/4**
+Milk from Jar A = $\dfrac{3}{4}$ of 1 unit = **$\dfrac{3}{4}$**
 
-Milk from Jar B = 5/7 of 1 unit = **5/7**
+Milk from Jar B = $\dfrac{5}{7}$ of 1 unit = **$\dfrac{5}{7}$**
 
 
 **Step 2 — Total milk in mixture (2 units total).**
-Total milk = 3/4 + 5/7
+Total milk = $\dfrac{3}{4}$ + $\dfrac{5}{7}$
 
 = (3 × 7 + 5 × 4) / 28
 
 = (21 + 20) / 28
 
-= **41/28**
+= **$\dfrac{41}{28}$**
 
 
 **Step 3 — Find water.**
-Total water = 2 − 41/28 = (56 − 41) / 28 = **15/28**
+Total water = 2 − $\dfrac{41}{28}$ = (56 − 41) / 28 = **$\dfrac{15}{28}$**
 
 
 **Step 4 — Final ratio.**
-Milk : Water = 41/28 : 15/28 = **41 : 15**
+Milk : Water = $\dfrac{41}{28}$ : $\dfrac{15}{28}$ = **41 : 15**
 
 
 </div>
@@ -8028,23 +8335,23 @@ Milk : Water = 41/28 : 15/28 = **41 : 15**
 
 
 **Step 1 — Find milk from each jar.**
-Milk from Jar A = 2 × (4/7) = **8/7**
+Milk from Jar A = 2 × ($\dfrac{4}{7}$) = **$\dfrac{8}{7}$**
 
-Milk from Jar B = 5 × (5/7) = **25/7**
+Milk from Jar B = 5 × ($\dfrac{5}{7}$) = **$\dfrac{25}{7}$**
 
 
 **Step 2 — Total milk.**
-Total milk = 8/7 + 25/7 = **33/7**
+Total milk = $\dfrac{8}{7}$ + $\dfrac{25}{7}$ = **$\dfrac{33}{7}$**
 
 
 **Step 3 — Total volume and water.**
 Total volume = 2 + 5 = **7 units**
 
-Water = 7 − 33/7 = (49 − 33) / 7 = **16/7**
+Water = 7 − $\dfrac{33}{7}$ = (49 − 33) / 7 = **$\dfrac{16}{7}$**
 
 
 **Step 4 — Final ratio.**
-Milk : Water = 33/7 : 16/7 = **33 : 16**
+Milk : Water = $\dfrac{33}{7}$ : $\dfrac{16}{7}$ = **33 : 16**
 
 
 </div>
@@ -8069,7 +8376,7 @@ Now alligate ₹60 (sub-mix) with Type 2 (₹60): same price → degenerate, any
 
 **Step 2 — Shift to 2:1 mix of Type 1 : Type 3.**
 
-Weighted mean = (2 × 40 + 1 × 80)/3 = 160/3 = **₹53.33**
+Weighted mean = (2 × 40 + 1 × 80)/3 = $\dfrac{160}{3}$ = **₹53.33**
 
 
 **Step 3 — Alligate the ₹53.33 sub-mix with Type 2 (₹60) at target ₹55.**
@@ -8081,9 +8388,9 @@ So: 3 parts sub-mix (2:1 of Type 1:Type 3) to 1 part Type 2.
 
 **Step 4 — Unpack sub-mix into individual types.**
 
-Type 1 from sub-mix = 3 × 2/3 = **2 parts**
+Type 1 from sub-mix = 3 × $\dfrac{2}{3}$ = **2 parts**
 
-Type 3 from sub-mix = 3 × 1/3 = **1 part**
+Type 3 from sub-mix = 3 × $\dfrac{1}{3}$ = **1 part**
 
 Type 2 = **1 part**
 
@@ -8092,7 +8399,7 @@ Final ratio: **Type 1 : Type 2 : Type 3 = 2 : 1 : 1**
 
 **Step 5 — Verify.**
 
-(2 × 40 + 1 × 60 + 1 × 80) / 4 = 220/4 = **₹55** ✓
+(2 × 40 + 1 × 60 + 1 × 80) / 4 = $\dfrac{220}{4}$ = **₹55** ✓
 
 
 </div>
@@ -8111,11 +8418,11 @@ Final ratio: **Type 1 : Type 2 : Type 3 = 2 : 1 : 1**
 **Step 1 — Compute the fraction of milk remaining after 3 iterations.**
 Fraction remaining = (1 − x/V)³
 
-= (1 − 8/80)³
+= (1 − $\dfrac{8}{80}$)³
 
-= (9/10)³
+= ($\dfrac{9}{10}$)³
 
-= 729/1000
+= $\dfrac{729}{1000}$
 
 = **0.729**
 
@@ -8140,7 +8447,7 @@ Ratio milk : water = 729 : 271 ≈ **2.69 : 1**
 > **Notation expansion (used throughout this section):**
 > **Area** is in square units (cm², m²). **Volume** is in cubic units (cm³, m³).
 > **CSA** = Curved Surface Area; **TSA** = Total Surface Area; **LSA** = Lateral Surface Area.
-> **π (pi)** ≈ 22/7 (use this when r is a multiple of 7) or 3.14 otherwise.
+> **π (pi)** ≈ $\dfrac{22}{7}$ (use this when r is a multiple of 7) or 3.14 otherwise.
 
 ---
 
@@ -8204,11 +8511,11 @@ Area = √[s(s−a)(s−b)(s−c)]
 
 **A similar question — Equilateral triangle.** Side 6 cm.
 
-Area = (√3/4) × side²
+Area = (√$\dfrac{3}{4}$) × side²
 
-= (√3/4) × 6²
+= (√$\dfrac{3}{4}$) × 6²
 
-= (√3/4) × 36
+= (√$\dfrac{3}{4}$) × 36
 
 = **9√3 sq cm ≈ 15.59 sq cm**
 
@@ -8239,10 +8546,10 @@ Area = ½ × a × b × sin C
 Volume formula = π × r² × h
 
 
-**Step 2 — Substitute values (use π = 22/7 because r = 7).**
-V = (22/7) × 7² × 10
+**Step 2 — Substitute values (use π = $\dfrac{22}{7}$ because r = 7).**
+V = ($\dfrac{22}{7}$) × 7² × 10
 
-= (22/7) × 49 × 10
+= ($\dfrac{22}{7}$) × 49 × 10
 
 = 22 × 7 × 10
 
@@ -8271,9 +8578,9 @@ V = πr²h → h = V / (πr²)
 
 
 **Step 2 — Substitute values.**
-h = 770 / ((22/7) × 49)
+h = 770 / (($\dfrac{22}{7}$) × 49)
 
-= 770 / 154
+= $\dfrac{770}{154}$
 
 = **5 cm**
 
@@ -8291,11 +8598,11 @@ R² − r² = 7² − 5² = 49 − 25 = **24**
 **Step 2 — Apply hollow cylinder volume formula.**
 Volume of metal = π × (R² − r²) × h
 
-= (22/7) × 24 × 10
+= ($\dfrac{22}{7}$) × 24 × 10
 
 = (22 × 24 × 10) / 7
 
-= 5,280 / 7
+= $\dfrac{5280}{7}$
 
 ≈ **754.29 cm³**
 
@@ -8327,7 +8634,7 @@ Volume = length × breadth × height = 4 × 3 × h = 12h
 **Step 3 — Equate volumes (metal is conserved) and solve for h.**
 12h = 216
 
-h = 216 / 12
+h = $\dfrac{216}{12}$
 
 = **18 cm**
 
@@ -8347,11 +8654,11 @@ Volume of cube = side³ = 12³ = **1,728 cm³**
 
 
 **Step 2 — Find volume of one sphere.**
-Volume = (4/3) × π × r³ = (4/3) × (22/7) × 1³ ≈ **4.19 cm³**
+Volume = ($\dfrac{4}{3}$) × π × r³ = ($\dfrac{4}{3}$) × ($\dfrac{22}{7}$) × 1³ ≈ **4.19 cm³**
 
 
 **Step 3 — Count spheres.**
-Number = 1,728 / 4.19 ≈ **412 spheres**
+Number = $\dfrac{1728}{4}$.19 ≈ **412 spheres**
 
 
 </div>
@@ -8361,11 +8668,11 @@ Number = 1,728 / 4.19 ≈ **412 spheres**
 
 
 **Step 1 — Find sphere volume.**
-Sphere V = (4/3) × π × r³ = (4/3) × π × 6³ = (4/3) × π × 216 = **288π**
+Sphere V = ($\dfrac{4}{3}$) × π × r³ = ($\dfrac{4}{3}$) × π × 6³ = ($\dfrac{4}{3}$) × π × 216 = **288π**
 
 
 **Step 2 — Find cone volume.**
-Cone V = (1/3) × π × r² × h = (1/3) × π × 4 × 3 = **4π**
+Cone V = ($\dfrac{1}{3}$) × π × r² × h = ($\dfrac{1}{3}$) × π × 4 × 3 = **4π**
 
 
 **Step 3 — Count cones.**
@@ -8402,8 +8709,8 @@ Volume of metal = π × (R² − r²) × h
 = 1,800π
 
 
-**Step 3 — Substitute π = 22/7.**
-Volume = (22/7) × 1,800
+**Step 3 — Substitute π = $\dfrac{22}{7}$.**
+Volume = ($\dfrac{22}{7}$) × 1,800
 
 = **5,657.14 cm³**
 
@@ -8427,15 +8734,15 @@ R² + r² + R × r = 7² + 4² + 7 × 4
 
 
 **Step 2 — Apply the frustum volume formula.**
-Volume = (1/3) × π × h × (R² + r² + Rr)
+Volume = ($\dfrac{1}{3}$) × π × h × (R² + r² + Rr)
 
-= (1/3) × (22/7) × 12 × 93
+= ($\dfrac{1}{3}$) × ($\dfrac{22}{7}$) × 12 × 93
 
-= (22/7) × 4 × 93
+= ($\dfrac{22}{7}$) × 4 × 93
 
 = (22 × 372) / 7
 
-= 8,184 / 7
+= $\dfrac{8184}{7}$
 
 ≈ **1,169 cm³**
 
@@ -8475,19 +8782,19 @@ l = √[h² + (R − r)²]
 **Step 1 — Find sphere radius.**
 Sphere touches all 6 faces → radius = side / 2
 
-r = 10 / 2 = **5 cm**
+r = $\dfrac{10}{2}$ = **5 cm**
 
 
 **Step 2 — Compute sphere volume.**
-Sphere volume = (4/3) × π × r³
+Sphere volume = ($\dfrac{4}{3}$) × π × r³
 
-= (4/3) × (22/7) × 5³
+= ($\dfrac{4}{3}$) × ($\dfrac{22}{7}$) × 5³
 
-= (4/3) × (22/7) × 125
+= ($\dfrac{4}{3}$) × ($\dfrac{22}{7}$) × 125
 
 = (4 × 22 × 125) / (3 × 7)
 
-= 11,000 / 21
+= $\dfrac{11000}{21}$
 
 ≈ **523.81 cm³**
 
@@ -8515,50 +8822,47 @@ Empty space = Cube volume − Sphere volume
 
 ---
 
-**Q37.** In ΔABC, AD is the angle-bisector from vertex A meeting BC at point D. AB = 6, AC = 8, BC = 7. Find BD.
+**Q37.** ABCD is a cyclic quadrilateral inscribed in a circle. ∠A = 110°. Find ∠C. If ∠B = 85°, find ∠D.
 
-**What kind of problem is this?** Angle-bisector theorem application. The bisector divides the opposite side in the ratio of the two adjacent sides.
+**What kind of problem is this?** Cyclic quadrilateral — opposite angle property. SSC CGL Tier-2 and RRB NTPC both test this directly and as part of circle-theorem chains.
 
 **Solving it.** Step-by-step.
 
 <div class="steps">
 
 
-**Step 1 — State the angle-bisector theorem.**
-BD / DC = AB / AC
+**Step 1 — State the cyclic-quadrilateral theorem.**
+In a cyclic quadrilateral, opposite angles are supplementary (sum = 180°).
+
+∠A + ∠C = 180°   and   ∠B + ∠D = 180°
 
 
-**Step 2 — Find the ratio BD : DC.**
-BD / DC = 6 / 8 = **3 : 4**
+**Step 2 — Find ∠C.**
+∠C = 180° − ∠A = 180° − 110° = **70°**
 
 
-**Step 3 — Split BC in the ratio 3 : 4.**
-BD + DC = BC = 7
+**Step 3 — Find ∠D.**
+∠D = 180° − ∠B = 180° − 85° = **95°**
 
-BD = AB / (AB + AC) × BC
 
-= 6 / (6 + 8) × 7
-
-= (6/14) × 7
-
-= **3**
+**Step 4 — Verify angle sum.**
+∠A + ∠B + ∠C + ∠D = 110 + 85 + 70 + 95 = **360°** ✓  (must equal 360° for any quadrilateral)
 
 
 </div>
-**Worth knowing:** General formula. If AD bisects ∠A and meets BC at D:
+**Worth knowing:** Two related cyclic-quad results.
 
-BD = (AB / (AB + AC)) × BC
+**Exterior angle of cyclic quadrilateral** = interior opposite angle. So the exterior angle at A = ∠C = 70°.
 
-DC = (AC / (AB + AC)) × BC
+**Ptolemy's theorem** (occasionally tested at SSC Tier-2): for a cyclic quadrilateral with diagonals p, q and sides a, b, c, d:  p × q = ac + bd.
 
-Sanity: BD + DC = BC ✓.
+***Watch out:*** Students write ∠A + ∠B = 180° (adjacent angles) instead of ∠A + ∠C = 180° (opposite angles). The supplementary pair is always across the diagonal, never side-by-side.
 
+**A similar question — Find all angles.** Cyclic quadrilateral with ∠A : ∠C = 2 : 1. Since ∠A + ∠C = 180°, we get 2k + k = 180° → k = 60°. So ∠A = **120°**, ∠C = **60°**.
 
-***Watch out:*** "4" — students invert the ratio (6 : 8 read as DC : BD instead of BD : DC).
+**Another twist — Angle at centre vs at circumference.** Chord AB subtends ∠AOB = 140° at the centre O. What is the angle ∠ACB where C is any other point on the major arc?
 
-**A similar question — Find DC.** Same triangle. DC = (8/14) × 7 = **4** (and BD = 3, sum = 7 ✓).
-
-**Another twist — External angle bisector.** External bisector of ∠A meets BC extended at E. Then BE / EC = AB / AC = 6/8 = 3/4. With BC = 7, BE − EC = 7 → BE = 21, EC = 28 (BE − EC = −7, take absolute distance from B: 21).
+∠ACB = ½ × ∠AOB = ½ × 140° = **70°** (Inscribed angle = half central angle for same arc).
 
 ---
 
@@ -8582,7 +8886,7 @@ AP × PB = CP × PD
 
 
 **Step 3 — Solve for PD.**
-PD = 24 / 3 = **8**
+PD = $\dfrac{24}{3}$ = **8**
 
 
 </div>
@@ -8595,7 +8899,7 @@ PD = 24 / 3 = **8**
 **One tangent + one secant from external point:** PT² = PA × PB.
 
 
-***Watch out:*** Students invert and compute 24/3 wrong (they get the right number 8 but using flawed reasoning); or they pair AP with CP instead of AP with PB.
+***Watch out:*** Students invert and compute $\dfrac{24}{3}$ wrong (they get the right number 8 but using flawed reasoning); or they pair AP with CP instead of AP with PB.
 
 **A similar question — Find one chord segment.** Chords intersect at P; AP = 5, PB = 8, CD = 12 with CP = ?. Then 5 × 8 = CP × (12 − CP) → 40 = 12·CP − CP² → CP² − 12CP + 40 = 0 → CP = (12 ± √(144−160))/2. Discriminant negative → not possible (means P can't lie inside with those values). Try CD = 13: 40 = CP(13 − CP) → CP² − 13CP + 40 = 0 → CP = 5 or 8.
 
@@ -8613,7 +8917,7 @@ PT² = PA × PB
 
 
 **Step 2 — Solve for PB.**
-PB = 36 / 4 = **9 cm**
+PB = $\dfrac{36}{4}$ = **9 cm**
 
 AB = PB − PA = 9 − 4 = **5 cm**
 
@@ -8621,71 +8925,57 @@ AB = PB − PA = 9 − 4 = **5 cm**
 </div>
 ---
 
-**Q39.** A polygon has 9 sides. Find the sum of its interior angles.
+**Q39.** A tangent PQ is drawn to a circle at point Q, and PRS is a secant from the same external point P, meeting the circle at R (nearer) and S (farther). PS = 16 cm and PR = 4 cm. Find the length of the tangent PQ. Also, if ∠QSR = 35°, find ∠PQR.
 
-**What kind of problem is this?** Direct application of polygon-interior-angle formula.
+**What kind of problem is this?** Two-in-one: (i) Tangent-secant theorem (Power of a Point); (ii) Angle in alternate segment (Tangent-chord angle = inscribed angle in alternate segment). Both appear in SSC CGL Tier-2 and Banks PO Mains.
 
 **Solving it.** Step-by-step.
 
 <div class="steps">
 
 
-**Step 1 — Apply the interior-angle sum formula.**
-Sum = (n − 2) × 180°
+**Part (i) — Find PQ using tangent-secant theorem.**
+
+**Step 1 — State the formula.**
+PT² = PA × PB for tangent PT and secant through A (near) and B (far) from the same external point.
+
+Here: PQ² = PR × PS
 
 
-**Step 2 — Substitute n = 9.**
-= (9 − 2) × 180
-
-= 7 × 180
-
-= **1,260°**
+**Step 2 — Substitute known values.**
+PQ² = 4 × 16 = 64
 
 
-</div>
-**Worth knowing:** Two related formulas.
+**Step 3 — Solve.**
+PQ = √64 = **8 cm**
 
-**Sum of EXTERIOR angles of any polygon = always 360°** (regardless of n).
-
-**Each interior angle of a regular n-gon = (n − 2) × 180° / n**.
-
-  For regular 9-gon (nonagon): 1260 / 9 = **140°** per angle.
-**Each exterior angle of a regular n-gon = 360 / n**.
-
-  For regular 9-gon: 360 / 9 = **40°** per exterior.
-
-***Watch out:*** "1,440°" — students use (n − 1) × 180 (wrong; it's n − 2). Or "1,620°" using n × 180.
-
-**A similar question — Find n given interior sum.** Sum = 1,800°.
-
-<div class="steps">
+Sanity: PQ² = 64 = PR × PS = 4 × 16 ✓
 
 
-**Step 1 — Set up the equation.**
-(n − 2) × 180 = 1,800
+**Part (ii) — Find ∠PQR using alternate segment theorem.**
 
+The tangent-chord angle equals the inscribed angle in the alternate segment.
 
-**Step 2 — Solve for n.**
-n − 2 = 1,800 / 180 = 10
+Tangent PQ touches the circle at Q; chord QR creates two segments. The angle between tangent PQ and chord QR (i.e., ∠PQR) equals the inscribed angle in the alternate segment (i.e., ∠QSR, since S is in the alternate segment).
 
-n = **12 sides** (dodecagon)
+∠PQR = ∠QSR = **35°**
 
 
 </div>
-**Another twist — Find interior of regular polygon, given exterior.** Each exterior angle = 24°.
+**Worth knowing:** The alternate segment theorem in full.
 
-<div class="steps">
+**Alternate segment theorem:** The angle between a tangent to a circle at a point T and a chord TP equals the inscribed angle subtended by chord TP on the opposite side (alternate segment).
 
+∠(tangent, chord TP) = ∠TQP  where Q is any point on the arc not containing the tangent-side.
 
-**Step 1 — Find number of sides.**
-Number of sides = 360° / exterior angle = 360 / 24 = **15 sides**
+***Watch out:*** Students mix up which segment is "alternate". If the tangent is at Q and chord is QR, the angle ∠PQR (between tangent and chord, measured on one side) equals the angle at any point in the segment on the OTHER side of the chord from the tangent.
 
+**A similar question — From external point P, tangent PT = 10, secant with near-intercept PA = 5. Find PB.**
+PB = PT² / PA = 100 / 5 = **20 cm**. So chord AB = PB − PA = 20 − 5 = **15 cm**.
 
-**Step 2 — Find each interior angle.**
-Interior = 180° − exterior = 180 − 24 = **156°**
+**Another twist — Two tangents from external point.** From external P, two tangents PA and PB are drawn. Then PA = PB (tangent lengths from same external point are equal). If PA = 6 and the distance PO from P to centre is 10, find the radius r.
 
-
-</div>
+In right triangle OAP: OA² + PA² = OP² → r² + 36 = 100 → r = **8 cm**.
 ---
 
 ### Section 9A — ADVANCED GEOMETRY (exam-level variations)
@@ -8702,9 +8992,9 @@ Interior = 180° − exterior = 180 − 24 = **156°**
 **Step 1 — Ratio of areas for similar figures.**
 Ratio of areas = (ratio of corresponding sides)²
 
-= (3/5)²
+= ($\dfrac{3}{5}$)²
 
-= 9/25
+= $\dfrac{9}{25}$
 
 = **9 : 25**
 
@@ -8712,7 +9002,7 @@ Ratio of areas = (ratio of corresponding sides)²
 **Step 2 — Other related ratios (worth knowing).**
 Ratio of perimeters = ratio of sides = **3 : 5**
 
-Ratio of volumes (similar 3D solids) = (3/5)³ = 27/125 = **27 : 125**
+Ratio of volumes (similar 3D solids) = ($\dfrac{3}{5}$)³ = $\dfrac{27}{125}$ = **27 : 125**
 
 
 </div>
@@ -8803,13 +9093,13 @@ Opposite angles of a cyclic quadrilateral are supplementary (they sum to 180°).
 
 <div class="steps">
 
-sin 30° = **1/2**
+sin 30° = **$\dfrac{1}{2}$**
 
-cos 60° = **1/2**
+cos 60° = **$\dfrac{1}{2}$**
 
 tan 45° = **1**
 
-Sum = 1/2 + 1/2 + 1 = **2**
+Sum = $\dfrac{1}{2}$ + $\dfrac{1}{2}$ + 1 = **2**
 
 </div>
 
@@ -8818,28 +9108,28 @@ Sum = 1/2 + 1/2 + 1 = **2**
 
 | θ | 0° | 30° | 45° | 60° | 90° |
 |---|---|---|---|---|---|
-| sin | 0 | 1/2 | 1/√2 | √3/2 | 1 |
-| cos | 1 | √3/2 | 1/√2 | 1/2 | 0 |
+| sin | 0 | $\dfrac{1}{2}$ | 1/√2 | √$\dfrac{3}{2}$ | 1 |
+| cos | 1 | √$\dfrac{3}{2}$ | 1/√2 | $\dfrac{1}{2}$ | 0 |
 | tan | 0 | 1/√3 | 1 | √3 | undefined |
 
-**Memory peg.** sin row uses √(0/4), √(1/4), √(2/4), √(3/4), √(4/4) — square-root of (0,1,2,3,4)/4. cos row is the reverse.
+**Memory peg.** sin row uses √($\dfrac{0}{4}$), √($\dfrac{1}{4}$), √($\dfrac{2}{4}$), √($\dfrac{3}{4}$), √($\dfrac{4}{4}$) — square-root of (0,1,2,3,4)/4. cos row is the reverse.
 
-***Watch out:*** Students mix sin 30 (= 1/2) with sin 60 (= √3/2). Always recall sin = "small to large" (0 → 1).
+***Watch out:*** Students mix sin 30 (= $\dfrac{1}{2}$) with sin 60 (= √$\dfrac{3}{2}$). Always recall sin = "small to large" (0 → 1).
 
 **A similar question — Pythagorean identity check.** Verify sin² 30° + cos² 30° = 1.
 
-sin² 30° = (1/2)² = **1/4**
+sin² 30° = ($\dfrac{1}{2}$)² = **$\dfrac{1}{4}$**
 
-cos² 30° = (√3/2)² = **3/4**
+cos² 30° = (√$\dfrac{3}{2}$)² = **$\dfrac{3}{4}$**
 
-Sum = 1/4 + 3/4 = **1** ✓ (Pythagorean identity: sin²θ + cos²θ = 1 for any θ)
+Sum = $\dfrac{1}{4}$ + $\dfrac{3}{4}$ = **1** ✓ (Pythagorean identity: sin²θ + cos²θ = 1 for any θ)
 
 
 **Another twist — Compound angle identity.** sin 30° × cos 60° + cos 30° × sin 60°.
 
-= (1/2)(1/2) + (√3/2)(√3/2)
+= ($\dfrac{1}{2}$)($\dfrac{1}{2}$) + (√$\dfrac{3}{2}$)(√$\dfrac{3}{2}$)
 
-= 1/4 + 3/4
+= $\dfrac{1}{4}$ + $\dfrac{3}{4}$
 
 = **1** ✓ (This is the addition formula: sin(A + B) = sin A cos B + cos A sin B → sin(30° + 60°) = sin 90° = 1)
 
@@ -8872,15 +9162,13 @@ tan 30° = pole height (h) / shadow length (10)
 **Step 3 — Substitute tan 30° = 1/√3 and solve.**
 1/√3 = h / 10
 
-h = 10 / √3
-
-= 10√3 / 3
+h = 10 / √3 = $\dfrac{10\sqrt{3}}{3}$
 
 ≈ **5.77 m**
 
 
 </div>
-**Worth knowing:** Rationalise denominators (10/√3 → 10√3/3) for clean answers. The form 10/√3 is correct but rare in MCQs.
+**Worth knowing:** Rationalise denominators: $\dfrac{10}{\sqrt{3}} = \dfrac{10\sqrt{3}}{3}$ ≈ 5.77. MCQs almost always give the rationalised form, so always multiply numerator and denominator by √3.
 
 ***Watch out:*** "10√3 m" — students use tan 30° = √3 (mixing up tan 30 with tan 60 = √3) or invert the ratio.
 
@@ -9015,9 +9303,9 @@ HCF = 3 × 7 = **21**
 
 **Worth knowing:** Verify with the LCM × HCF = product identity.
 
-LCM = (252 × 105) / 21 = 26,460 / 21 = **1,260**.
+LCM = (252 × 105) / 21 = $\dfrac{26460}{21}$ = **1,260**.
 
-Verify: 1,260 / 252 = 5 ✓; 1,260 / 105 = 12 ✓.
+Verify: $\dfrac{1260}{252}$ = 5 ✓; $\dfrac{1260}{105}$ = 12 ✓.
 
 
 ***Watch out:*** "63" — students miss the prime factor 5 and include 3 × 21 = 63 wrongly.
@@ -9087,11 +9375,11 @@ Digits = 9, 9, 4, 4. Sum = 9 + 9 + 4 + 4 = **26**.
 
 **Worth knowing:** Quick way to compute largest multiple of n ≤ M. Compute M ÷ n; take integer part k; answer = k × n.
 
-***Watch out:*** Students compute 9999/88 wrongly and use 114 × 88 = 10,032 (a 5-digit number — out of range). Or they round to 114 instead of flooring to 113.
+***Watch out:*** Students compute $\dfrac{9999}{88}$ wrongly and use 114 × 88 = 10,032 (a 5-digit number — out of range). Or they round to 114 instead of flooring to 113.
 
-**A similar question — Smallest 4-digit multiple of 7.** Smallest 4-digit number = 1000. 1000/7 = 142.86 → ceiling = 143. 143 × 7 = **1,001**.
+**A similar question — Smallest 4-digit multiple of 7.** Smallest 4-digit number = 1000. $\dfrac{1000}{7}$ = 142.86 → ceiling = 143. 143 × 7 = **1,001**.
 
-**Another twist — Largest 3-digit multiple of LCM(4, 5, 6).** LCM(4, 5, 6) = 60. Largest 3-digit ≤ 999: 999/60 = 16.65 → 16 × 60 = **960**.
+**Another twist — Largest 3-digit multiple of LCM(4, 5, 6).** LCM(4, 5, 6) = 60. Largest 3-digit ≤ 999: $\dfrac{999}{60}$ = 16.65 → 16 × 60 = **960**.
 
 ---
 
@@ -9191,7 +9479,7 @@ Position 1 in the cycle → unit digit = **7**.
 
 </div>
 
-***Watch out:*** "7^93 — cycle of 4, so 93/4 = 23.25, unit digit is 3" — students confuse 23.25 with the 3rd position. Always use the INTEGER remainder (93 mod 4 = 1), not the decimal part.
+***Watch out:*** "7^93 — cycle of 4, so $\dfrac{93}{4}$ = 23.25, unit digit is 3" — students confuse 23.25 with the 3rd position. Always use the INTEGER remainder (93 mod 4 = 1), not the decimal part.
 
 ---
 
@@ -9451,7 +9739,7 @@ x = (−b ± √discriminant) / (2a)
 
 = (7 ± 5) / 4
 
-x = 12/4 = **3** or x = 2/4 = **1/2**
+x = $\dfrac{12}{4}$ = **3** or x = $\dfrac{2}{4}$ = **$\dfrac{1}{2}$**
 
 
 </div>
@@ -9463,7 +9751,7 @@ x = 12/4 = **3** or x = 2/4 = **1/2**
 
 = (2x − 1)(x − 3) = 0
 
-x = 1/2 or x = 3 ✓
+x = $\dfrac{1}{2}$ or x = 3 ✓
 
 
 ---
@@ -9478,7 +9766,7 @@ Multiply Eq2 by 2: 10x − 6y = 28
 
 Add both equations: 19x = 76
 
-x = 76 / 19 = **4**
+x = $\dfrac{76}{19}$ = **4**
 
 Substitute x = 4 into Eq1: 3(4) + 2y = 16 → 12 + 2y = 16
 
@@ -9537,9 +9825,9 @@ Final (2024) = 250
 
 Difference = 250 − 120 = **130**
 
-% growth = (difference / initial) × 100 = (130 / 120) × 100
+% growth = (difference / initial) × 100 = ($\dfrac{130}{120}$) × 100
 
-= 13,000 / 120
+= $\dfrac{13000}{120}$
 
 = **108.33 %**
 
@@ -9550,7 +9838,7 @@ Difference = 250 − 120 = **130**
 
 **A similar question — % decline.** Production was 250 in 2024, dropped to 200 in 2025. % decline = (250 − 200) / 250 × 100 = **20 %**.
 
-**Another twist — Average annual growth rate (CAGR-style approximation).** If production grows from 120 (2020) to 250 (2024) over 4 years, simple average annual growth ≈ 108.33 % / 4 = **27.08 % per year (simple average)**. (True CAGR via compounded formula = (250/120)^(1/4) − 1 ≈ 20.16 %.)
+**Another twist — Average annual growth rate (CAGR-style approximation).** If production grows from 120 (2020) to 250 (2024) over 4 years, simple average annual growth ≈ 108.33 % / 4 = **27.08 % per year (simple average)**. (True CAGR via compounded formula = ($\dfrac{250}{120}$)^($\dfrac{1}{4}$) − 1 ≈ 20.16 %.)
 
 ---
 
@@ -9562,14 +9850,14 @@ Difference = 250 − 120 = **130**
 
 Marketing slice = 15 % of total budget = ₹3 crore
 
-1 % of total = 3 / 15 = ₹0.2 crore
+1 % of total = $\dfrac{3}{15}$ = ₹0.2 crore
 
 100 % (total budget) = 100 × 0.2 = **₹20 crore**
 
 </div>
 
 
-**Quick way:** Direct ratio. Total = 3 / (15/100) = 3 × (100/15) = 300 / 15 = **₹20 crore**.
+**Quick way:** Direct ratio. Total = 3 / ($\dfrac{15}{100}$) = 3 × ($\dfrac{100}{15}$) = $\dfrac{300}{15}$ = **₹20 crore**.
 
 **Worth knowing:** Once total is known, find any other slice instantly.
 
@@ -9607,13 +9895,13 @@ Q4 = Total − sum of known = 1,000 − 720 = **280 units**
 </div>
 
 
-**Worth knowing:** Verify by computing the average back. (200 + 240 + 280 + 280) / 4 = 1000 / 4 = 250 ✓.
+**Worth knowing:** Verify by computing the average back. (200 + 240 + 280 + 280) / 4 = $\dfrac{1000}{4}$ = 250 ✓.
 
 ***Watch out:*** Students forget that "average = 250 over 4 quarters" gives total = 1000 and try to set up algebra unnecessarily.
 
 **A similar question — Find missing month.** Average rainfall over 12 months = 50 mm. 11 months total = 540 mm. Missing month = 600 − 540 = **60 mm**.
 
-**Another twist — Average of new sub-set.** If Q4 in question becomes 320 (not 280), what's the new yearly average? New total = 720 + 320 = 1,040. Avg = 1,040 / 4 = **260 units/quarter**.
+**Another twist — Average of new sub-set.** If Q4 in question becomes 320 (not 280), what's the new yearly average? New total = 720 + 320 = 1,040. Avg = $\dfrac{1040}{4}$ = **260 units/quarter**.
 
 ---
 
@@ -9674,107 +9962,25 @@ Total ways to choose 2 balls from 12 = C(12, 2) = (12 × 11) / 2 = **66**
 
 Favourable: choose 2 red from 5 reds = C(5, 2) = (5 × 4) / 2 = **10**
 
-P(both red) = favourable / total = 10 / 66 = **5 / 33**
+P(both red) = favourable / total = $\dfrac{10}{66}$ = **$\dfrac{5}{33}$**
 
 </div>
 
 
 **Quick way:** Sequential probability (without replacement).
 
-P(first red) = 5/12
+P(first red) = $\dfrac{5}{12}$
 
-P(second red | first red) = 4/11 (4 reds left out of 11 remaining)
+P(second red | first red) = $\dfrac{4}{11}$ (4 reds left out of 11 remaining)
 
-P(both red) = (5/12) × (4/11) = 20 / 132 = **5/33** ✓ (same answer)
+P(both red) = ($\dfrac{5}{12}$) × ($\dfrac{4}{11}$) = $\dfrac{20}{132}$ = **$\dfrac{5}{33}$** ✓ (same answer)
 
 
-***Watch out:*** Students use **with replacement** logic: (5/12) × (5/12) = 25/144. WRONG when the question says "without replacement" or "drawn together".
+***Watch out:*** Students use **with replacement** logic: ($\dfrac{5}{12}$) × ($\dfrac{5}{12}$) = $\dfrac{25}{144}$. WRONG when the question says "without replacement" or "drawn together".
 
-**A similar question — Both balls of same colour.** P(2 red) + P(2 blue) + P(2 green) = C(5,2)/C(12,2) + C(4,2)/C(12,2) + C(3,2)/C(12,2) = 10/66 + 6/66 + 3/66 = 19/66.
+**A similar question — Both balls of same colour.** P(2 red) + P(2 blue) + P(2 green) = C(5,2)/C(12,2) + C(4,2)/C(12,2) + C(3,2)/C(12,2) = $\dfrac{10}{66}$ + $\dfrac{6}{66}$ + $\dfrac{3}{66}$ = $\dfrac{19}{66}$.
 
-**Another twist — One red and one blue.** Favourable = C(5,1) × C(4,1) = 5 × 4 = 20 ways (any red × any blue). Total = C(12, 2) = 66. P = 20/66 = **10/33**.
-
-## Section 8 — MENSURATION (3)
-
-**Q34.** Area of a triangle with sides 5, 12, 13 (right-angled).
-*Method.* Right triangle (5-12-13). Area = ½ × 5 × 12 = **30 sq units**.
-Watch out: Students use Heron's formula → same answer but slower.
-
-**Q35.** Volume of a cylinder, r = 7 cm, h = 10 cm.
-*Method.* V = π r² h = (22/7) × 49 × 10 = **1,540 cm³**.
-Watch out: Students confuse curved surface (2πrh) with volume.
-
-**Q36.** A cube of side 6 cm is melted and recast into a cuboid 4 × 3 × ?.
-*Method.* Volume preserved. 6³ = 216 = 4 × 3 × h → h = 216/12 = **18 cm**.
-Watch out: Students compute SA instead.
-
-## Section 9 — GEOMETRY (3)
-
-**Q37.** In ΔABC, AD is angle-bisector from A meeting BC at D. AB = 6, AC = 8, BC = 7. Find BD.
-*Method.* Angle-bisector theorem: BD/DC = AB/AC = 6/8 = 3/4. So BD = (3/7) × 7 = **3**.
-Watch out: "4" — students invert.
-
-**Q38.** Two chords AB and CD of a circle intersect inside at P. AP = 4, PB = 6, CP = 3. Find PD.
-*Method.* AP × PB = CP × PD → 24 = 3 × PD → PD = **8**.
-Watch out: Students use 24/3 wrong.
-
-**Q39.** A polygon has 9 sides. Sum of interior angles?
-*Method.* (n − 2) × 180 = 7 × 180 = **1,260°**.
-Watch out: "1,440°" — students use (n−1) × 180.
-
-## Section 10 — TRIGONOMETRY + HEIGHTS (2)
-
-**Q40.** sin 30° + cos 60° + tan 45° = ?
-*Method.* ½ + ½ + 1 = **2**.
-Watch out: none — pure recall.
-
-**Q41.** A pole casts a shadow 10 m long when the sun's elevation is 30°. Height of pole?
-*Method.* tan 30 = h / 10 → h = 10/√3 = **10√3/3 ≈ 5.77 m**.
-Watch out: "10√3 m" — students invert tan.
-
-## Section 11 — NUMBER SYSTEM + LCM/HCF (2)
-
-**Q42.** Find HCF of 252 and 105.
-*Method.* 252 = 2² × 3² × 7; 105 = 3 × 5 × 7. HCF = 3 × 7 = **21**.
-Watch out: "63" — students miss the 5.
-
-**Q43.** Sum of digits of largest 4-digit number divisible by 88.
-*Method.* 9999 ÷ 88 = 113.6 → 113 × 88 = 9944. Digit sum = 9+9+4+4 = **26**.
-Watch out: Students compute floor wrong.
-
-## Section 12 — ALGEBRA + IDENTITIES (3)
-
-**Q44.** If x + 1/x = 5, find x³ + 1/x³.
-*Method.* a³ + 1/a³ = (a + 1/a)³ − 3(a + 1/a) = 125 − 15 = **110**.
-Watch out: "125" — students forget the 3k subtraction.
-
-**Q45.** If a + b + c = 0, find a³ + b³ + c³.
-*Method.* Identity: when sum = 0, cubes sum = 3abc. So **3abc**.
-Watch out: "0" — common mistake.
-
-**Q46.** If a² + b² + c² − ab − bc − ca = 0, then?
-*Method.* This factors as ½ [(a−b)² + (b−c)² + (c−a)²] = 0 → all squares are zero → **a = b = c**.
-Watch out: Students assume only a = b = c possible without proof.
-
-## Section 13 — DATA INTERPRETATION (3)
-
-**Q47.** A bar chart shows production (in tonnes) over 5 years: 2020:120, 2021:150, 2022:180, 2023:200, 2024:250. % growth from 2020 to 2024?
-*Method.* (250 − 120)/120 × 100 = 130/120 × 100 = **108.33 %**.
-Watch out: "130 %" — students forget to divide by initial.
-
-**Q48.** A pie chart of company expenses: salary 30 %, raw 25 %, R&D 20 %, marketing 15 %, misc 10 %. If marketing = ₹3 cr, find total budget.
-*Method.* 15 % = 3 cr → 1 % = 0.2 cr → 100 % = **₹20 cr**.
-Watch out: Students use direct fraction without unit-rate.
-
-**Q49.** Avg sales over 4 quarters of a year is 250 units. Q1, Q2, Q3 sales are 200, 240, 280. Find Q4.
-*Method.* Total = 4 × 250 = 1000. Q4 = 1000 − 720 = **280**.
-Watch out: Students forget Q4 explicitly given by avg.
-
-## Section 14 — PROBABILITY + PERMUTATIONS (1)
-
-**Q50.** A bag has 5 red, 4 blue, 3 green balls. Probability of drawing 2 red?
-*Method.* C(5,2)/C(12,2) = 10/66 = **5/33**.
-Watch out: Students use 5/12 × 5/12 (with replacement, wrong here).
+**Another twist — One red and one blue.** Favourable = C(5,1) × C(4,1) = 5 × 4 = 20 ways (any red × any blue). Total = C(12, 2) = 66. P = $\dfrac{20}{66}$ = **$\dfrac{10}{33}$**.
 
 ---
 
@@ -9790,7 +9996,7 @@ Watch out: Students use 5/12 × 5/12 (with replacement, wrong here).
 
 After 1 red drawn, remaining = 5 red + 4 blue = 9 total.
 
-P(second red | first red) = 5/9.
+P(second red | first red) = $\dfrac{5}{9}$.
 
 </div>
 
@@ -9902,7 +10108,7 @@ Otherwise → **no relation**.
 
 **A similar question — Clear x > y.** I. x² − 9x + 20 = 0 → x = 4, 5. II. y² − 5y + 6 = 0 → y = 2, 3. Smallest x = 4 > largest y = 3 → **x > y**.
 
-**Another twist — Equation in expanded form.** I. 2x² − 11x + 12 = 0. Factorise: (2x − 3)(x − 4) = 0 → x = 1.5 or 4. II. 3y² − 14y + 16 = 0. Factorise: (3y − 8)(y − 2) = 0 → y = 8/3 ≈ 2.67 or 2. Smallest x = 1.5 < smallest y = 2; largest x = 4 > largest y = 8/3. Mixed → **no relation**.
+**Another twist — Equation in expanded form.** I. 2x² − 11x + 12 = 0. Factorise: (2x − 3)(x − 4) = 0 → x = 1.5 or 4. II. 3y² − 14y + 16 = 0. Factorise: (3y − 8)(y − 2) = 0 → y = $\dfrac{8}{3}$ ≈ 2.67 or 2. Smallest x = 1.5 < smallest y = 2; largest x = 4 > largest y = $\dfrac{8}{3}$. Mixed → **no relation**.
 
 ---
 
@@ -9944,7 +10150,7 @@ Mixed → **no relation can be established**.
 
 <div class="steps">
 
-39.97 % ≈ **40 %** (= 2/5)
+39.97 % ≈ **40 %** (= $\dfrac{2}{5}$)
 
 1899.98 ≈ **1,900**
 
@@ -9957,7 +10163,7 @@ Mixed → **no relation can be established**.
 
 **Now compute (mentally).**
 
-40 % of 1,900 = (2/5) × 1,900 = **760**
+40 % of 1,900 = ($\dfrac{2}{5}$) × 1,900 = **760**
 
 24 × 18 = (24 × 20) − (24 × 2) = 480 − 48 = **432**
 
@@ -9968,14 +10174,14 @@ Sum = 760 + 432 = **1,192**
 
 | Difficult % | Round to | As fraction |
 |---|---|---|
-| 39.97 % | 40 % | 2/5 |
-| 33.33 % | 33.33 % | 1/3 |
-| 16.66 % | 16.66 % | 1/6 |
-| 14.28 % | 14.28 % | 1/7 |
-| 12.5 % | 12.5 % | 1/8 |
-| 11.11 % | 11.11 % | 1/9 |
-| 9.09 % | 9.09 % | 1/11 |
-| 8.33 % | 8.33 % | 1/12 |
+| 39.97 % | 40 % | $\dfrac{2}{5}$ |
+| 33.33 % | 33.33 % | $\dfrac{1}{3}$ |
+| 16.66 % | 16.66 % | $\dfrac{1}{6}$ |
+| 14.28 % | 14.28 % | $\dfrac{1}{7}$ |
+| 12.5 % | 12.5 % | $\dfrac{1}{8}$ |
+| 11.11 % | 11.11 % | $\dfrac{1}{9}$ |
+| 9.09 % | 9.09 % | $\dfrac{1}{11}$ |
+| 8.33 % | 8.33 % | $\dfrac{1}{12}$ |
 
 ***Watch out:*** Don't over-round. If actual is 1899.98, rounding to 2,000 introduces 5 % error — too much. Round to nearest "nice" value (1,900 here).
 
@@ -9989,9 +10195,9 @@ Sum = 760 + 432 = **1,192**
 
 <div class="steps">
 
-16.66 % = 1/6, of 1,200 = **200**.
+16.66 % = $\dfrac{1}{6}$ of 1,200 = **200**.
 
-25.04 % = 1/4, of 800 = **200**.
+25.04 % = $\dfrac{1}{4}$ of 800 = **200**.
 
 ? ≈ 200 + 200 = **400**.
 
@@ -10017,7 +10223,7 @@ Compare Quantity I and Quantity II.
 
 **Quantity I.**
 
-Downstream speed = distance / time = 30 / 3 = **10 km/h**
+Downstream speed = distance / time = $\dfrac{30}{3}$ = **10 km/h**
 
 Downstream = boat + stream → boat = 10 − 2 = **8 km/h**
 
@@ -10026,7 +10232,7 @@ Downstream = boat + stream → boat = 10 − 2 = **8 km/h**
 
 5 consecutive even numbers starting at 16: 16, 18, 20, 22, 24.
 
-Average = (sum) / 5 = (16+18+20+22+24)/5 = 100/5 = **20**.
+Average = (sum) / 5 = (16+18+20+22+24)/5 = $\dfrac{100}{5}$ = **20**.
 
 Or shortcut: average of consecutive numbers = middle number = **20**.
 
@@ -10108,7 +10314,7 @@ Ratio of A : B : C in 2024? → 4 : 3 : 3
 
 Total production in 2025? → 13,560
 
-% of total contributed by A in 2025? → 6000/13560 × 100 ≈ 44.25 %
+% of total contributed by A in 2025? → $\dfrac{6000}{13560}$ × 100 ≈ 44.25 %
 
 Difference between A's 2025 and B's 2025? → 6000 − 4320 = 1,680 units
 
@@ -10172,7 +10378,7 @@ Slope formula: m = (y₂ − y₁) / (x₂ − x₁)
 
 = (11 − 3) / (6 − 2)
 
-= 8 / 4
+= $\dfrac{8}{4}$
 
 = **2**
 
@@ -10205,7 +10411,7 @@ y = **2x − 1**
 
 **Another twist — Perpendicular line.** Find equation of line perpendicular to y = 2x − 1, passing through (1, 5).
 
-Perpendicular slope m' = −1/2 (since 2 × (−1/2) = −1)
+Perpendicular slope m' = −$\dfrac{1}{2}$ (since 2 × (−$\dfrac{1}{2}$) = −1)
 
 Point-slope: y − 5 = −0.5(x − 1)
 
@@ -10231,7 +10437,7 @@ Multiply by 2: **2y + x = 11**
 
 **Sort first:** 4, 4, 4, 6, 6, 7, 8, 8, 9. (n = 9)
 
-**Mean** = sum / count = (4+4+4+6+6+7+8+8+9) / 9 = 56 / 9 ≈ **6.22**
+**Mean** = sum / count = (4+4+4+6+6+7+8+8+9) / 9 = $\dfrac{56}{9}$ ≈ **6.22**
 
 **Median** = middle value (since n = 9, middle is (9+1)/2 = 5th value when sorted) = **6**
 
@@ -10249,7 +10455,7 @@ Multiply by 2: **2y + x = 11**
 
 
 **Step 1 — Find the mean.**
-Mean = (2 + 4 + 6 + 8 + 10) / 5 = 30 / 5 = **6**
+Mean = (2 + 4 + 6 + 8 + 10) / 5 = $\dfrac{30}{5}$ = **6**
 
 
 **Step 2 — Find each deviation from the mean and square it.**
@@ -10267,7 +10473,7 @@ Mean = (2 + 4 + 6 + 8 + 10) / 5 = 30 / 5 = **6**
 **Step 3 — Compute the variance.**
 Sum of squared deviations = 16 + 4 + 0 + 4 + 16 = **40**
 
-Variance = Sum / n = 40 / 5 = **8**
+Variance = Sum / n = $\dfrac{40}{5}$ = **8**
 
 
 **Step 4 — Compute Standard Deviation.**
@@ -10343,14 +10549,14 @@ x = 10^2.5
 
 <div class="steps">
 
-Volume of cylinder = πr²h = (22/7) × 49 × 10
+Volume of cylinder = πr²h = ($\dfrac{22}{7}$) × 49 × 10
 
 </div>
 
   = 22 × 10 × 7 = **1,540 cm³**
-Volume of cone = (1/3)πr²h = (1/3) × (22/7) × 49 × 4
+Volume of cone = ($\dfrac{1}{3}$)πr²h = ($\dfrac{1}{3}$) × ($\dfrac{22}{7}$) × 49 × 4
 
-  = (1/3) × 22 × 28 = **205.33 cm³**
+  = ($\dfrac{1}{3}$) × 22 × 28 = **205.33 cm³**
 Total volume = 1,540 + 205.33 = **1,745.33 cm³**
 
 
@@ -10362,21 +10568,21 @@ Total volume = 1,540 + 205.33 = **1,745.33 cm³**
 
 Volume of cylinder = **1,540 cm³** (from above)
 
-Volume of hemisphere = (2/3)πr³ = (2/3) × (22/7) × 343
+Volume of hemisphere = ($\dfrac{2}{3}$)πr³ = ($\dfrac{2}{3}$) × ($\dfrac{22}{7}$) × 343
 
-  = (2/3) × 22 × 49 = **718.67 cm³**
+  = ($\dfrac{2}{3}$) × 22 × 49 = **718.67 cm³**
 Total = 1,540 + 718.67 = **2,258.67 cm³**
 
 
 **Another twist — Frustum (cone with top cut off).** Frustum has R = 6 (bottom radius), r = 3 (top radius), h = 8.
 
-Volume = (1/3)πh(R² + r² + Rr)
+Volume = ($\dfrac{1}{3}$)πh(R² + r² + Rr)
 
-= (1/3) × (22/7) × 8 × (36 + 9 + 18)
+= ($\dfrac{1}{3}$) × ($\dfrac{22}{7}$) × 8 × (36 + 9 + 18)
 
-= (1/3) × (22/7) × 8 × 63
+= ($\dfrac{1}{3}$) × ($\dfrac{22}{7}$) × 8 × 63
 
-= (1/3) × 22 × 8 × 9 = **528 cm³**
+= ($\dfrac{1}{3}$) × 22 × 8 × 9 = **528 cm³**
 
 
 ---
@@ -10452,13 +10658,13 @@ Angle of minute hand from 12 = M × 6°.
 Angle between = |11M/2 − 30H| (mod 360, take smaller of the two: angle or 360 − angle).
 
 
-**Quick way using formula.** |11 × 40 / 2 − 30 × 3| = |220 − 90| = **130°** ✓.
+**Quick way using formula.** |11 × $\dfrac{40}{2}$ − 30 × 3| = |220 − 90| = **130°** ✓.
 
 ***Watch out:*** Sometimes the "smaller" angle is asked — if your answer is > 180°, subtract from 360° to get the reflex-angle complement.
 
-**A similar question — Clock at 6:15.** |11 × 15/2 − 30 × 6| = |82.5 − 180| = **97.5°**.
+**A similar question — Clock at 6:15.** |11 × $\dfrac{15}{2}$ − 30 × 6| = |82.5 − 180| = **97.5°**.
 
-**Another twist — When are the hands at right angle?** Hands form 90° angle 22 times in 12 hours (not 24 — they "miss" twice due to relative speed). First time after 3:00: when |11M/2 − 90| = 90 → 11M/2 = 0 or 180 → M = 0 (i.e. 3:00 itself, but they're at 90° already? actually at 3:00 they're at 90°). Next: M = 360/11 ≈ 32.73 minutes past 3 → roughly **3:32:43**.
+**Another twist — When are the hands at right angle?** Hands form 90° angle 22 times in 12 hours (not 24 — they "miss" twice due to relative speed). First time after 3:00: when |11M/2 − 90| = 90 → 11M/2 = 0 or 180 → M = 0 (i.e. 3:00 itself, but they're at 90° already? actually at 3:00 they're at 90°). Next: M = $\dfrac{360}{11}$ ≈ 32.73 minutes past 3 → roughly **3:32:43**.
 
 ---
 
@@ -10471,18 +10677,18 @@ Angle between = |11M/2 − 30H| (mod 360, take smaller of the two: angle or 360 
 3. CP = ₹400, SP = ₹500. Profit %?  (a) 20 (b) 25 (c) 30 (d) 33
 4. 12, 18 LCM = ?  (a) 36 (b) 48 (c) 24 (d) 60
 5. Avg of first 10 natural numbers?  (a) 4.5 (b) 5 (c) 5.5 (d) 6
-6. 1/2 + 1/3 + 1/6 = ?  (a) 1 (b) 5/6 (c) 7/6 (d) 11/6
+6. $\dfrac{1}{2}$ + $\dfrac{1}{3}$ + $\dfrac{1}{6}$ = ?  (a) 1 (b) $\dfrac{5}{6}$ (c) $\dfrac{7}{6}$ (d) $\dfrac{11}{6}$
 7. A ratio 3:4, B is 25 % more. New ratio?  (a) 3:5 (b) 6:7 (c) 12:15 (d) 24:25
 8. 25 % of x = 80. x = ?  (a) 320 (b) 280 (c) 360 (d) 400
 9. Train 200 m at 72 km/h crosses pole in?  (a) 8 s (b) 10 s (c) 12 s (d) 15 s
 10. Boat speed in still water 12, stream 4. Downstream 32 km in?  (a) 1.5 h (b) 2 h (c) 2.5 h (d) 3 h
 11. A and B together 8 days, A alone 12. B alone?  (a) 16 (b) 20 (c) 24 (d) 30
 12. (a + b)² − (a − b)² = ?  (a) 4ab (b) 2ab (c) ab (d) 0
-13. sin² 30° + cos² 30° = ?  (a) 1/2 (b) 1 (c) √3/2 (d) 2
+13. sin² 30° + cos² 30° = ?  (a) $\dfrac{1}{2}$ (b) 1 (c) √$\dfrac{3}{2}$ (d) 2
 14. Area equilateral triangle side 6 = ?  (a) 9√3 (b) 18√3 (c) 36 (d) 18
 15. SI on ₹2,000 @ 5 % for 4 yrs = ?  (a) 200 (b) 300 (c) 400 (d) 500
 16. CI on ₹1,000 @ 10 % for 2 yrs = ?  (a) 200 (b) 210 (c) 215 (d) 220
-17. P (red on a die) = ?  (a) 0 (b) 1/6 (c) 1/3 (d) 1/2
+17. P (red on a die) = ?  (a) 0 (b) $\dfrac{1}{6}$ (c) $\dfrac{1}{3}$ (d) $\dfrac{1}{2}$
 18. 7! / 5! = ?  (a) 7 (b) 14 (c) 42 (d) 35
 19. Sum of angles of pentagon = ?  (a) 360 (b) 540 (c) 720 (d) 900
 20. Volume cube side 5 = ?  (a) 25 (b) 75 (c) 100 (d) 125
@@ -10514,7 +10720,7 @@ Angle between = |11M/2 − 30H| (mod 360, take smaller of the two: angle or 360 
 | "average speed = (s₁ + s₂)/2" | TSD | Only true for equal time, not equal distance. Use harmonic 2s₁s₂/(s₁+s₂) for equal distance |
 | Adding pipe rates instead of subtracting | Pipes | If outlet pipe, subtract |
 | Using SP as base for profit % | P&L | Always CP base; SP base is "discount" or "margin" |
-| Forgetting 18/5 conversion | Speed | km/h to m/s: × 5/18 |
+| Forgetting $\dfrac{18}{5}$ conversion | Speed | km/h to m/s: × $\dfrac{5}{18}$ |
 | Heron + obvious right-angle | Mensuration | Check Pythagoras first; ½·base·height beats Heron |
 | Rate "p.a. compounded half-yearly" → use rate/2, periods × 2 | CI | Always halve rate, double periods |
 | (n−1) instead of (n−2) for polygon angles | Geometry | Sum = (n − 2) × 180 |
@@ -10527,7 +10733,7 @@ Angle between = |11M/2 − 30H| (mod 360, take smaller of the two: angle or 360 
 
 **Cubes 1-15:**  1,8,27,64,125,216,343,512,729,1000,1331,1728,2197,2744,3375.
 
-**Fraction = % conversions:**  1/2=50, 1/3=33.3, 1/4=25, 1/5=20, 1/6=16.6, 1/7=14.28, 1/8=12.5, 1/9=11.1, 1/10=10, 1/11=9.09, 1/12=8.33, 1/13=7.69, 1/14=7.14, 1/15=6.66, 1/16=6.25, 1/20=5, 1/25=4.
+**Fraction = % conversions:**  $\dfrac{1}{2}$=50, $\dfrac{1}{3}$=33.3, $\dfrac{1}{4}$=25, $\dfrac{1}{5}$=20, $\dfrac{1}{6}$=16.6, $\dfrac{1}{7}$=14.28, $\dfrac{1}{8}$=12.5, $\dfrac{1}{9}$=11.1, $\dfrac{1}{10}$=10, $\dfrac{1}{11}$=9.09, $\dfrac{1}{12}$=8.33, $\dfrac{1}{13}$=7.69, $\dfrac{1}{14}$=7.14, $\dfrac{1}{15}$=6.66, $\dfrac{1}{16}$=6.25, $\dfrac{1}{20}$=5, $\dfrac{1}{25}$=4.
 
 **Roots:**  √2=1.414, √3=1.732, √5=2.236, √7=2.645, √10=3.162.
 
@@ -10552,8 +10758,8 @@ if a+b+c = 0 → a³+b³+c³ = 3abc
 
 | θ | 0° | 30° | 45° | 60° | 90° |
 |---|---|---|---|---|---|
-| sin | 0 | 1/2 | 1/√2 | √3/2 | 1 |
-| cos | 1 | √3/2 | 1/√2 | 1/2 | 0 |
+| sin | 0 | $\dfrac{1}{2}$ | 1/√2 | √$\dfrac{3}{2}$ | 1 |
+| cos | 1 | √$\dfrac{3}{2}$ | 1/√2 | $\dfrac{1}{2}$ | 0 |
 | tan | 0 | 1/√3 | 1 | √3 | ∞ |
 
 ---
@@ -10635,7 +10841,7 @@ For numbers 50 ± k:
 
 48 × 47: 47 − 2 = 45 → first part is 25 + 45 = wait, simpler: each is 50 − k. Use base 50.
 
-Use Nikhilam with base 50: deviations from 50 are −2, −3. Cross: 48 + (−3) = 45. Multiply: 6. Multiply first part by 50/100 = ½. Answer = 45 × 50 + 6 = 2256.
+Use Nikhilam with base 50: deviations from 50 are −2, −3. Cross: 48 + (−3) = 45. Multiply: 6. Multiply first part by $\dfrac{50}{100}$ = ½. Answer = 45 × 50 + 6 = 2256.
 
 Or just memorise standard products.
 
@@ -10653,11 +10859,11 @@ Or just memorise standard products.
 
 ### Multiplication by 25, 50, 125, 250
 
-× 25: (× 100) ÷ 4. So 36 × 25 = 3600/4 = 900.
+× 25: (× 100) ÷ 4. So 36 × 25 = $\dfrac{3600}{4}$ = 900.
 
-× 50: (× 100) ÷ 2. So 84 × 50 = 8400/2 = 4200.
+× 50: (× 100) ÷ 2. So 84 × 50 = $\dfrac{8400}{2}$ = 4200.
 
-× 125: (× 1000) ÷ 8. So 56 × 125 = 56000/8 = 7000.
+× 125: (× 1000) ÷ 8. So 56 × 125 = $\dfrac{56000}{8}$ = 7000.
 
 
 ## H.2 Squaring + cubing tricks
@@ -10684,9 +10890,9 @@ Or just memorise standard products.
 
 Multiply numerator × 2, divide by 10.
 
-245/5 = (245 × 2)/10 = 490/10 = **49**.
+$\dfrac{245}{5}$ = (245 × 2)/10 = $\dfrac{490}{10}$ = **49**.
 
-1234/5 = (1234 × 2)/10 = 2468/10 = **246.8**.
+$\dfrac{1234}{5}$ = (1234 × 2)/10 = $\dfrac{2468}{10}$ = **246.8**.
 
 
 ### Division by 25, 125
@@ -10720,26 +10926,26 @@ If digit sum is divisible by 9, the number is. Quotient by repeated subtraction.
 
 | Fraction | % |
 |---|---|
-| 1/2 | 50 |
-| 1/3 | 33.33 |
-| 1/4 | 25 |
-| 1/5 | 20 |
-| 1/6 | 16.66 |
-| 1/7 | 14.28 |
-| 1/8 | 12.5 |
-| 1/9 | 11.11 |
-| 1/10 | 10 |
-| 1/11 | 9.09 |
-| 1/12 | 8.33 |
-| 2/3 | 66.66 |
-| 3/4 | 75 |
-| 3/5 | 60 |
-| 2/7 | 28.57 |
-| 5/8 | 62.5 |
-| 3/8 | 37.5 |
-| 7/8 | 87.5 |
-| 5/9 | 55.55 |
-| 7/9 | 77.77 |
+| $\dfrac{1}{2}$ | 50 |
+| $\dfrac{1}{3}$ | 33.33 |
+| $\dfrac{1}{4}$ | 25 |
+| $\dfrac{1}{5}$ | 20 |
+| $\dfrac{1}{6}$ | 16.66 |
+| $\dfrac{1}{7}$ | 14.28 |
+| $\dfrac{1}{8}$ | 12.5 |
+| $\dfrac{1}{9}$ | 11.11 |
+| $\dfrac{1}{10}$ | 10 |
+| $\dfrac{1}{11}$ | 9.09 |
+| $\dfrac{1}{12}$ | 8.33 |
+| $\dfrac{2}{3}$ | 66.66 |
+| $\dfrac{3}{4}$ | 75 |
+| $\dfrac{3}{5}$ | 60 |
+| $\dfrac{2}{7}$ | 28.57 |
+| $\dfrac{5}{8}$ | 62.5 |
+| $\dfrac{3}{8}$ | 37.5 |
+| $\dfrac{7}{8}$ | 87.5 |
+| $\dfrac{5}{9}$ | 55.55 |
+| $\dfrac{7}{9}$ | 77.77 |
 
 ## H.6 Time-saving sutras (Vedic — 16 main + 13 sub)
 
@@ -10773,15 +10979,16 @@ If digit sum is divisible by 9, the number is. Quotient by repeated subtraction.
 | Parallelogram (b, h) | b × h | 2(a + b) |
 | Rhombus (d₁, d₂) | ½ × d₁ × d₂ | 4 × side; side = ½ × √(d₁² + d₂²) |
 | Triangle (b, h) | ½ × b × h | a + b + c |
-| Equilateral triangle (a) | (√3/4) × a²; height = (√3/2) × a | 3a |
+| Equilateral triangle (a) | (√$\dfrac{3}{4}$) × a²; height = (√$\dfrac{3}{2}$) × a | 3a |
 | Right triangle | ½ × base × perpendicular | a + b + √(a² + b²) |
 | Heron's formula | √[s(s−a)(s−b)(s−c)] where s = (a+b+c)/2 | — |
 | Trapezium | ½ × (a + b) × h | sum of all sides |
 | Circle (r) | π × r² | 2π × r (circumference) |
-| Sector (r, θ) | (θ/360) × π × r² | arc length = (θ/360) × 2π × r |
+| Sector (r, θ°) | (θ/360) × π × r²; or ½r²θ_rad (θ in radians) | arc length = (θ/360) × 2πr = rθ_rad |
+| Segment of circle (r, θ in radians) | $\dfrac{r^2}{2}(\theta - \sin\theta)$ — area between chord and arc | chord length = 2r sin(θ/2) |
 | Annulus (R, r) | π(R² − r²) | 2π(R + r) |
-| Regular polygon (n sides, side a) | (1/4) × n × a² × cot(180°/n) | n × a |
-| Regular hexagon (a) | (3√3/2) × a² | 6a |
+| Regular polygon (n sides, side a) | ($\dfrac{1}{4}$) × n × a² × cot(180°/n) | n × a |
+| Regular hexagon (a) | (3√$\dfrac{3}{2}$) × a² | 6a |
 
 ## 3D shapes — Volume + Surface
 
@@ -10791,12 +10998,12 @@ If digit sum is divisible by 9, the number is. Quotient by repeated subtraction.
 | Cuboid (l, b, h) | l × b × h | 2(lb + bh + hl) | 2h(l + b) |
 | Cylinder (r, h) | π r² h | 2πr(r + h) | 2πrh |
 | Hollow cylinder (R, r, h) | π(R² − r²)h | 2π(R + r)(R − r + h) | 2πh(R + r) |
-| Cone (r, h, l) | (1/3) π r² h; slant l = √(r² + h²) | π r (r + l) | π r l |
-| Sphere (r) | (4/3) π r³ | 4π r² | — |
-| Hemisphere (r) | (2/3) π r³ | 3π r² | 2π r² |
-| Spherical shell (R, r) | (4/3)π(R³ − r³) | — | — |
-| Frustum of cone (R, r, h, l) | (1/3) π h (R² + r² + Rr); l = √(h² + (R−r)²) | π(R² + r² + l(R+r)) | π l (R + r) |
-| Pyramid (square base a, h, slant l) | (1/3) a² h | a² + 2a×l | 2a×l |
+| Cone (r, h, l) | ($\dfrac{1}{3}$) π r² h; slant l = √(r² + h²) | π r (r + l) | π r l |
+| Sphere (r) | ($\dfrac{4}{3}$) π r³ | 4π r² | — |
+| Hemisphere (r) | ($\dfrac{2}{3}$) π r³ | 3π r² | 2π r² |
+| Spherical shell (R, r) | ($\dfrac{4}{3}$)π(R³ − r³) | — | — |
+| Frustum of cone (R, r, h, l) | ($\dfrac{1}{3}$) π h (R² + r² + Rr); l = √(h² + (R−r)²) | π(R² + r² + l(R+r)) | π l (R + r) |
+| Pyramid (square base a, h, slant l) | ($\dfrac{1}{3}$) a² h | a² + 2a×l | 2a×l |
 | Tetrahedron (a) | (a³ × √2)/12 | √3 × a² | — |
 | Prism (general) | base area × height | 2 × base + perimeter × h | perimeter × h |
 
@@ -10804,7 +11011,7 @@ If digit sum is divisible by 9, the number is. Quotient by repeated subtraction.
 
 **Cube** is the cuboid with l = b = h = a.
 
-**Sphere** = 4πr² (surface) and (4/3)πr³ (volume) — memorise EXACTLY.
+**Sphere** = 4πr² (surface) and ($\dfrac{4}{3}$)πr³ (volume) — memorise EXACTLY.
 
 
 **Cone slant length** l = √(r² + h²) — Pythagoras.
@@ -10821,9 +11028,9 @@ If digit sum is divisible by 9, the number is. Quotient by repeated subtraction.
 | Setup | Formula |
 |---|---|
 | Largest cube cut from cube of side a | a (same) |
-| Largest sphere from cube of side a | (4/3)π(a/2)³ |
+| Largest sphere from cube of side a | ($\dfrac{4}{3}$)π(a/2)³ |
 | Largest cylinder from cube (axis through cube) | πr²h with r = a/2, h = a |
-| Largest cone from cube | (1/3)π(a/2)²(a) |
+| Largest cone from cube | ($\dfrac{1}{3}$)π(a/2)²(a) |
 | Largest cube inscribed in sphere of r | side = (2r)/√3 |
 | Diagonal of square inscribed in circle r | 2r |
 
@@ -10837,9 +11044,9 @@ Squares 1-30 cold. Cubes 1-15 cold.
 
 Tables 11-20 cold.
 
-Fraction-percent table memorised (1/2 = 50, 1/8 = 12.5, etc.).
+Fraction-percent table memorised ($\dfrac{1}{2}$ = 50, $\dfrac{1}{8}$ = 12.5, etc.).
 
-π ≈ 22/7; √2 ≈ 1.414, √3 ≈ 1.732.
+π ≈ $\dfrac{22}{7}$; √2 ≈ 1.414, √3 ≈ 1.732.
 
 
 **Universal shortcuts:**
@@ -10870,7 +11077,7 @@ Squares ending in 5: lead × (lead+1), append 25.
 
 **Time-Speed-Distance:**
 
-km/h to m/s: × 5/18.
+km/h to m/s: × $\dfrac{5}{18}$.
 
 Average speed (equal distance): 2ab/(a+b).
 
@@ -10893,7 +11100,7 @@ CI − SI for 2 yrs = P(r/100)².
 
 **Trigonometry standard angles:**
 
-sin(0, 30, 45, 60, 90) = 0, ½, 1/√2, √3/2, 1.
+sin(0, 30, 45, 60, 90) = 0, ½, 1/√2, √$\dfrac{3}{2}$ 1.
 
 cos = reverse.
 
@@ -10902,16 +11109,16 @@ cos = reverse.
 
 Sum interior angles polygon = (n−2) × 180°.
 
-Equilateral triangle area = (√3/4)a².
+Equilateral triangle area = (√$\dfrac{3}{4}$)a².
 
 Heron's: √[s(s−a)(s−b)(s−c)].
 
 
 **Mensuration:**
 
-Sphere V = (4/3)πr³, SA = 4πr².
+Sphere V = ($\dfrac{4}{3}$)πr³, SA = 4πr².
 
-Cone V = (1/3)πr²h, slant = √(r²+h²).
+Cone V = ($\dfrac{1}{3}$)πr²h, slant = √(r²+h²).
 
 Hemisphere TSA = 3πr² (NOT 2πr²).
 

@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Time and Work",
+  "topic_code": "QNT_TIME_WORK_VIII_MIXED",
+  "questions": [
+    {
+      "stem": "A can complete a project in 15 days. B is 50% more efficient than A. In how many days can B alone finish the entire project?",
+      "options": [
+        {
+          "option_text": "7.5 days, thinking B halves A's time",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 days, as B's time = 15 ÷ 1.5 = 10 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 days, using direct proportion method",
+          "is_correct": false
+        },
+        {
+          "option_text": "22.5 days, adding 50% more to A's timeline",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: if B is 50% more efficient, B's rate = 1.5 × (1/15) = 1/10, so B finishes in 10 days. Option A (7.5 days) is the most tempting error — candidates confuse '50% more efficient' with 'does it in 50% of the time'; only 100% more efficiency halves the time. Here, time = 15 ÷ 1.5 = 10 days, not 15 ÷ 2 = 7.5 days.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:07:16+00:00",
+      "id": "sgk_QNT_TIME_WORK_VIII_MIXED_00001"
+    },
+    {
+      "stem": "A fill pipe can fill a tank in 12 minutes. A drain pipe can empty the same tank in 20 minutes. If both pipes are opened simultaneously when the tank is empty, in how many minutes will the tank be completely full?",
+      "options": [
+        {
+          "option_text": "7.5 minutes, by adding both pipe flow rates",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 minutes, net fill rate = 1/30 per minute",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 minutes, using LCM divided by net units",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 minutes, equal to LCM of both pipe timings",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: net fill rate = 1/12 − 1/20 = 5/60 − 3/60 = 2/60 = 1/30 per minute, so the tank fills in 30 minutes. Option A (7.5 min) comes from mistakenly adding both rates (1/12 + 1/20 = 8/60 → 7.5 min), treating the drain pipe as a second fill pipe — a classic sign confusion error.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:07:16+00:00",
+      "id": "sgk_QNT_TIME_WORK_VIII_MIXED_00002"
+    },
+    {
+      "stem": "A, B, and C together can complete a work in 10 days. A alone takes 30 days and B alone takes 40 days. Wages are distributed proportional to each person's contribution. If total wages are ₹4,200, what is C's share?",
+      "options": [
+        {
+          "option_text": "₹1,400, by dividing wages equally among three",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,050, using inverse of individual work timings",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,750, from efficiency ratio A:B:C = 4:3:5",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹2,100, assuming C completes half the total work",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct: C's rate = 1/10 − 1/30 − 1/40 = 12/120 − 4/120 − 3/120 = 5/120 = 1/24. Efficiency ratio A:B:C = 1/30 : 1/40 : 1/24 = 4:3:5 (multiply each by LCM 120). C's share = 5/12 × 4200 = ₹1,750. Option A (₹1,400) is the equal-distribution error — candidates forget wages depend on work contribution, not on headcount (each would get 2700/3 = 900 if equal, or 4200/3 = 1400 here).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:07:16+00:00",
+      "id": "sgk_QNT_TIME_WORK_VIII_MIXED_00003"
+    },
+    {
+      "stem": "A and B together can finish a work in 12 days. They start working together, but after 4 days A leaves. B alone then completes the remaining work in 24 more days. In how many days can A alone finish the entire work?",
+      "options": [
+        {
+          "option_text": "16 days, based on overlapping work period lengths",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 days, derived from B's solo rate of 1/36 daily",
+          "is_correct": true
+        },
+        {
+          "option_text": "24 days, equal to B's remaining work duration",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 days, averaging the combined and solo phases",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: work done in 4 days together = 4/12 = 1/3; remaining = 2/3. B finishes 2/3 in 24 days → B's rate = (2/3)/24 = 1/36 per day, so B alone takes 36 days. Then 1/A = 1/12 − 1/36 = 3/36 − 1/36 = 2/36 = 1/18, so A alone takes 18 days. Option C (24 days) is the classic trap — candidates assume A's solo time equals B's remaining-work time, ignoring that B's rate must be extracted first.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:07:16+00:00",
+      "id": "sgk_QNT_TIME_WORK_VIII_MIXED_00004"
+    },
+    {
+      "stem": "4 men and 6 women can complete a work in 8 days. 3 men and 7 women can complete the same work in 10 days. In how many days can 10 women alone complete the work?",
+      "options": [
+        {
+          "option_text": "30 days, solving only from the first equation",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 days, by averaging the two given work schedules",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 days, each woman's 1-day work = 1/400 of job",
+          "is_correct": true
+        },
+        {
+          "option_text": "50 days, based on proportional reduction formula",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct: let m and w be 1-day outputs. Equations: 4m+6w = 1/8 and 3m+7w = 1/10. Multiply first by 3 and second by 4: 12m+18w = 3/8 and 12m+28w = 2/5. Subtract: 10w = 2/5 − 3/8 = 16/40 − 15/40 = 1/40, so w = 1/400. Ten women do 10/400 = 1/40 per day → 40 days. Check: 4m = 1/8 − 6/400 = 44/400, m = 11/400; verify equation 2: 3(11/400)+7(1/400) = 40/400 = 1/10 ✓. Option A (30 days) results from using only one equation with an assumed man–woman ratio.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:07:16+00:00",
+      "id": "sgk_QNT_TIME_WORK_VIII_MIXED_00005"
+    },
+    {
+      "stem": "A and B work on alternate days, with A working on Day 1. A alone can finish the work in 8 days and B alone in 12 days. After how many days from the start will the work be fully completed?",
+      "options": [
+        {
+          "option_text": "9 days, treating the last partial day as complete",
+          "is_correct": false
+        },
+        {
+          "option_text": "9.5 days, with B finishing the last half on Day 10",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 days, rounding up the fractional final day",
+          "is_correct": false
+        },
+        {
+          "option_text": "9.33 days, miscomputing A's contribution in Day 9",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: per 2-day cycle (A then B): 1/8 + 1/12 = 3/24 + 2/24 = 5/24. After 4 complete cycles (8 days): 20/24 = 5/6 done. Day 9 (A works): adds 1/8 = 3/24 → cumulative = 23/24. Remaining = 1/24. Day 10 (B's turn): B needs (1/24) ÷ (1/12) = 0.5 day. Total = 9 + 0.5 = 9.5 days. Option A (9 days) is wrong because 5/6 + 1/8 = 23/24 < 1, confirming work is not finished after Day 9. Option D (9.33 days) comes from assuming the residual 1/24 is done by A at rate 1/8: (1/24)÷(1/12) ≠ 1/3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:07:16+00:00",
+      "id": "sgk_QNT_TIME_WORK_VIII_MIXED_00006"
+    },
+    {
+      "stem": "A, B, and C together complete a work in 10 days. A is twice as efficient as B, and B is one-third as efficient as C. If they are paid ₹2,700 for the whole job, what is C's share of the wages?",
+      "options": [
+        {
+          "option_text": "₹900, assuming equal wages distributed to all three",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,200, using weighted average of efficiencies",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,350, proportional to efficiency ratio 2:1:3",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1,500, as C bears the highest individual workload",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct: 'B is one-third as efficient as C' means B = C/3, so C = 3B. 'A is twice as efficient as B' gives A = 2B. Ratio A:B:C = 2B:B:3B = 2:1:3. C's share = 3/(2+1+3) × 2700 = 3/6 × 2700 = ₹1,350. Option A (₹900) is the equal-distribution error (2700/3). Option D (₹1,500) traps candidates who invert the B-is-one-third relationship and write C = B/3 instead of C = 3B, producing an erroneous ratio.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:07:16+00:00",
+      "id": "sgk_QNT_TIME_WORK_VIII_MIXED_00007"
+    }
+  ]
+}

@@ -130,7 +130,7 @@ export default function DailyQuizScreen({ navigation }: any) {
                             ))}
                         </View>
 
-                        <TouchableOpacity onPress={() => navigation.navigate('QuizSession', { subject: null, title: 'Weak Topic Practice' })} style={{
+                        <TouchableOpacity onPress={() => navigation.navigate('QuizSession', { subject: null, title: 'Weak Topic Practice', weakTopicMode: true })} style={{
                             backgroundColor: COLORS.primary, paddingVertical: 12,
                             borderRadius: 12, alignItems: 'center'
                         }}>

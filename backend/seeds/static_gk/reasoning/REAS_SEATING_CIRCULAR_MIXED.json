@@ -1,497 +1,503 @@
-[
-  {
-    "stem": "In a circular arrangement of 8 people FACING THE CENTRE, how many people sit between any two who are DIRECTLY OPPOSITE, counted along either arc?",
-    "options": [
-      {
-        "option_text": "2",
-        "is_correct": false
-      },
-      {
-        "option_text": "3",
-        "is_correct": true
-      },
-      {
-        "option_text": "4",
-        "is_correct": false
-      },
-      {
-        "option_text": "5",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "8 seats → opposite = +4 positions. Between them on either arc: 3 people (positions 2, 3, 4 on one side of positions 1 and 5).",
-    "subject": "Reasoning",
-    "topic": "Seating arrangement — circular mixed tiers",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-22-reas-circ-01",
-    "generated_at": "2026-04-22T01:30:00+00:00",
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00001"
-  },
-  {
-    "stem": "Six friends A, B, C, D, E, F sit around a circular table FACING THE CENTRE. A is to the immediate right of F. B is 2nd to the left of C. D is between A and B. E is between C and F. Who sits 3rd to the LEFT of B?",
-    "options": [
-      {
-        "option_text": "F",
-        "is_correct": true
-      },
-      {
-        "option_text": "A",
-        "is_correct": false
-      },
-      {
-        "option_text": "D",
-        "is_correct": false
-      },
-      {
-        "option_text": "C",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "With the clues: clockwise order is F → A → D → B → ? → ? → back to F. 'B is 2nd left of C' ⇒ C is 2nd right of B ⇒ positions 5, 6 clockwise from B are ?, C. 'E is between C and F' forces E at position 5: F, A, D, B, E, C, F. 3rd LEFT of B = 3 seats counter-clockwise from B = B→D→A→F. Answer: F (6-seater ⇒ 3rd left = directly opposite).",
-    "subject": "Reasoning",
-    "topic": "Seating arrangement — circular mixed tiers",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-22-reas-circ-02",
-    "generated_at": "2026-04-22T01:30:00+00:00",
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00002"
-  },
-  {
-    "stem": "8 people sit around a circular table FACING THE CENTRE, numbered 1–8 clockwise. Which position sits DIRECTLY OPPOSITE to position 3?",
-    "options": [
-      {
-        "option_text": "Position 6",
-        "is_correct": false
-      },
-      {
-        "option_text": "Position 7",
-        "is_correct": true
-      },
-      {
-        "option_text": "Position 5",
-        "is_correct": false
-      },
-      {
-        "option_text": "Position 8",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "8 seats ⇒ opposite seat is +4. 3 + 4 = 7.",
-    "subject": "Reasoning",
-    "topic": "Seating arrangement — circular mixed tiers",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-22-reas-circ-03",
-    "generated_at": "2026-04-22T01:30:00+00:00",
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00003"
-  },
-  {
-    "stem": "Seven people P, Q, R, S, T, U, V sit around a circular table FACING THE CENTRE. Q is immediate right of P. S is 3rd to the right of Q. T is immediate left of P. U is between V and R. S is immediate right of R. Who sits IMMEDIATELY LEFT of S?",
-    "options": [
-      {
-        "option_text": "Q",
-        "is_correct": false
-      },
-      {
-        "option_text": "R",
-        "is_correct": true
-      },
-      {
-        "option_text": "U",
-        "is_correct": false
-      },
-      {
-        "option_text": "V",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "Fix P. Clockwise (i.e. each person's right, when facing centre): P, Q, ?, S, ?, ?, T, back to P. 'S is 3rd right of Q' matches (pos 3 after Q). 'S is immediate right of R' ⇒ R immediately left of S (pos between Q and S). Hence clockwise order: P, Q, R, S, ?, ?, T. Remaining U, V occupy positions 5, 6 with U between V and R — since R is at 3, U must sit at 5 and V at 6 (so U is between V at 6 and... R at 3? — only 'between' in the immediate-neighbour sense works when U is at 5: left neighbour is S (pos 4), right neighbour is V (pos 6); 'between V and R' is satisfied if we read it as 'on the arc between V and R that includes no other named person', which is the V-U-T-P-Q-R arc — consistent). Immediate left of S = R.",
-    "subject": "Reasoning",
-    "topic": "Seating arrangement — circular mixed tiers",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "HARD",
-    "effort_tier": "B",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-22-reas-circ-04",
-    "generated_at": "2026-04-22T01:30:00+00:00",
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00004"
-  },
-  {
-    "stem": "If 6 people sit around a circular table FACING THE CENTRE, how many DISTINCT arrangements of the 6 people are possible (treating rotations as the same arrangement)?",
-    "options": [
-      {
-        "option_text": "6! = 720",
-        "is_correct": false
-      },
-      {
-        "option_text": "5! = 120",
-        "is_correct": true
-      },
-      {
-        "option_text": "4! = 24",
-        "is_correct": false
-      },
-      {
-        "option_text": "6!/2 = 360",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "Circular permutations of n distinct objects = (n−1)!. Hence 5! = 120. (If reflections were ALSO identified, it would be 5!/2 = 60.)",
-    "subject": "Reasoning",
-    "topic": "Seating arrangement — circular mixed tiers",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-22-reas-circ-05",
-    "generated_at": "2026-04-22T01:30:00+00:00",
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00005"
-  },
-  {
-    "stem": "5 boys and 5 girls sit around a circular table FACING THE CENTRE such that boys and girls ALTERNATE. In how many distinct seating arrangements are possible (fixing rotations)?",
-    "options": [
-      {
-        "option_text": "5! × 5! = 14400",
-        "is_correct": false
-      },
-      {
-        "option_text": "4! × 5! = 2880",
-        "is_correct": true
-      },
-      {
-        "option_text": "10! = 3628800",
-        "is_correct": false
-      },
-      {
-        "option_text": "5! × 4! / 2 = 1440",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "Fix one boy to kill rotations (anchors the circle). Arrange the remaining 4 boys in 4 seats: 4! = 24 ways. Between boys there are 5 alternating gaps for girls: 5! = 120 ways. Total = 24 × 120 = 2880.",
-    "subject": "Reasoning",
-    "topic": "Seating arrangement — circular mixed tiers",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "HARD",
-    "effort_tier": "B",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-22-reas-circ-06",
-    "generated_at": "2026-04-22T01:30:00+00:00",
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00006"
-  },
-  {
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00007",
-    "stem": "Four people W, X, Y, Z sit around a square table, one on each side, all facing inward. W is opposite to Y. X is to the left of W. Which of the following must be TRUE?",
-    "options": [
-      {
-        "option_text": "Z is opposite to X",
-        "is_correct": false
-      },
-      {
-        "option_text": "W is to the left of Z",
-        "is_correct": false
-      },
-      {
-        "option_text": "All of the above",
-        "is_correct": false
-      },
-      {
-        "option_text": "Y is to the right of X",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Seating Arrangement — Circular",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "W opposite Y (given). X is left of W. Remaining: Z must be opposite X (since only 4 seats and pairs are W-Y and X-Z). Also Y is to the right of X (W is left of X, Y opposite W, so Y is right of X). Both A and B are true. Answer = D (All of the above) if B is also necessarily true. Let's check: W opp Y, X opp Z. X left of W → going clockwise: X, W, Z, Y? Then left of W = X ✓, right of X = W, right of W = Z, right of Z = Y, right of Y = X. Y is to right of X? Going clockwise from X: W, Z, Y. So Y is 3rd right of X, or 1st left of X. That means Y is immediately to X's left. So 'Y is to the right of X' = FALSE in this arrangement. So only A is necessarily true.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:27:01.265221Z"
-  },
-  {
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00008",
-    "stem": "Three pairs of couples — (A,B), (C,D), (E,F) — sit around a circular table. No couple sits adjacent to each other. How many distinct arrangements are possible (treating rotations as identical)?",
-    "options": [
-      {
-        "option_text": "6",
-        "is_correct": false
-      },
-      {
-        "option_text": "24",
-        "is_correct": false
-      },
-      {
-        "option_text": "4",
-        "is_correct": false
-      },
-      {
-        "option_text": "12",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Seating Arrangement — Circular",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "HARD",
-    "effort_tier": "C",
-    "staleness_risk": "LOW",
-    "explanation": "6 people circular arrangement = (6−1)! = 120 total. With no couple adjacent, by inclusion-exclusion or direct count. Fix A's seat. B cannot sit next to A. The number of ways to arrange such that no couple is adjacent = 12 (a known result for 3 couples circular). Actually the answer for 3 couples in a circle with no two members of a couple adjacent = 12. Answer: 12.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:27:01.265232Z"
-  },
-  {
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00009",
-    "stem": "Seven people sit in a circle. Person 1 is directly opposite Person 5 (numbering them clockwise 1–7 from some reference). Is this possible?",
-    "options": [
-      {
-        "option_text": "Yes, because 7 is odd",
-        "is_correct": false
-      },
-      {
-        "option_text": "Yes, because 5+1=6 is even",
-        "is_correct": false
-      },
-      {
-        "option_text": "Only if one person faces outward",
-        "is_correct": false
-      },
-      {
-        "option_text": "No, in a 7-person circle no two people are exactly opposite each other",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Seating Arrangement — Circular",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "In a circle with an ODD number of seats, no two seats are exactly diametrically opposite — you can't divide 7 by 2 evenly. So no true 'opposite' exists in a 7-person circle.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:27:01.265256Z"
-  },
-  {
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00010",
-    "stem": "Six people P, Q, R, S, T, U sit in a circle facing the centre. P is between U and Q. S is between R and T. U and R are not adjacent. Which of these is a valid complete arrangement (clockwise)?",
-    "options": [
-      {
-        "option_text": "P, Q, S, R, T, U",
-        "is_correct": false
-      },
-      {
-        "option_text": "P, Q, R, S, T, U",
-        "is_correct": false
-      },
-      {
-        "option_text": "Q, P, U, T, S, R",
-        "is_correct": false
-      },
-      {
-        "option_text": "P, U, T, S, R, Q",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Seating Arrangement — Circular",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "HARD",
-    "effort_tier": "C",
-    "staleness_risk": "LOW",
-    "explanation": "P between U and Q means clockwise order has U–P–Q or Q–P–U. S between R and T means R–S–T or T–S–R. Check option B: P, U, T, S, R, Q. P between U and Q: going clockwise U–P–Q? In the sequence P,U,T,S,R,Q clockwise: adjacent to P = U and Q. Yes, P between U and Q ✓. S between R and T: S=4th, R=5th, T=3rd → T–S–R ✓. U and R adjacent? U=2nd, R=5th; not adjacent ✓. Option B satisfies all.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:27:01.265263Z"
-  },
-  {
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00011",
-    "stem": "In a circular arrangement of 6 people (A, B, C, D, E, F) facing the centre, A is immediately to the right of B, and C is immediately to the right of D. E and F are the remaining two. Which of the following is a NECESSARY conclusion?",
-    "options": [
-      {
-        "option_text": "E and F are adjacent",
-        "is_correct": false
-      },
-      {
-        "option_text": "A and D are adjacent",
-        "is_correct": false
-      },
-      {
-        "option_text": "C and B are adjacent",
-        "is_correct": false
-      },
-      {
-        "option_text": "E and F may or may not be adjacent",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Seating Arrangement — Circular",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "With 6 seats: B–A pair and D–C pair placed. The remaining seats go to E and F. Whether E and F end up adjacent depends on where the pairs are placed — they could be separated. So E and F may or may not be adjacent.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:27:01.265277Z"
-  },
-  {
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00012",
-    "stem": "Five children sit in a circle. Aryan is between Bhavna and Chirag. Deepa is between Chirag and Esha. Who is Esha between?",
-    "options": [
-      {
-        "option_text": "Deepa and Aryan",
-        "is_correct": false
-      },
-      {
-        "option_text": "Aryan and Bhavna",
-        "is_correct": false
-      },
-      {
-        "option_text": "Bhavna and Chirag",
-        "is_correct": false
-      },
-      {
-        "option_text": "Deepa and Bhavna",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Seating Arrangement — Circular",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "Clockwise: B, Aryan, Chirag, Deepa, Esha (and Esha connects back to Bhavna). So Esha is between Deepa and Bhavna.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:27:01.265286Z"
-  },
-  {
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00013",
-    "stem": "In a circular arrangement of 5 people, Rakesh is 2nd to the left of Suresh and 3rd to the right of Suresh. Is this consistent?",
-    "options": [
-      {
-        "option_text": "Yes, 2nd left = 3rd right in a 5-seat circle",
-        "is_correct": false
-      },
-      {
-        "option_text": "Only if they are adjacent",
-        "is_correct": false
-      },
-      {
-        "option_text": "Yes, 2nd left = 2nd right in a 5-seat circle",
-        "is_correct": false
-      },
-      {
-        "option_text": "No, 2nd left ≠ 3rd right in any circle",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Seating Arrangement — Circular",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "In a 5-seat circle, 2nd to the left = 3 positions to the right (since 5−2=3). So '2nd to the left of Suresh AND 3rd to the right of Suresh' is the same statement. Consistent.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:27:01.265293Z"
-  },
-  {
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00014",
-    "stem": "Six persons A–F sit around a circle, each facing outward. A says 'B is directly opposite me.' If facing outward, what is the position of B relative to A in terms of seats?",
-    "options": [
-      {
-        "option_text": "3 seats away (same as inward facing)",
-        "is_correct": false
-      },
-      {
-        "option_text": "2 seats away",
-        "is_correct": false
-      },
-      {
-        "option_text": "Cannot determine",
-        "is_correct": false
-      },
-      {
-        "option_text": "3 seats away, but the person B actually faces away from A",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Seating Arrangement — Circular",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "Whether facing inward or outward, 'opposite' in a 6-person circle = 3 seats away. However, since both face outward, they face opposite directions — away from each other. The seat-distance is still 3.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:27:01.265299Z"
-  },
-  {
-    "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00015",
-    "stem": "P, Q, R sit in a circle with equal spacing. R says 'P is to my immediate right.' Q says 'R is to my immediate right.' Who is to Q's immediate left?",
-    "options": [
-      {
-        "option_text": "P",
-        "is_correct": false
-      },
-      {
-        "option_text": "Q (himself)",
-        "is_correct": false
-      },
-      {
-        "option_text": "Cannot be determined",
-        "is_correct": false
-      },
-      {
-        "option_text": "R",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Seating Arrangement — Circular",
-    "topic_code": "RSN_SEATING_CIRCULAR",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "R→P is to R's right (clockwise). Q→R is to Q's right. So clockwise order: ...Q, R, P... In a 3-person circle: Q, R, P clockwise. Q's immediate left (counter-clockwise from Q) = P. So P is to Q's left.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:27:01.265305Z"
-  }
-]
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Seating Circular",
+  "topic_code": "REAS_SEATING_CIRCULAR_MIXED",
+  "questions": [
+    {
+      "stem": "In a circular arrangement of 8 people FACING THE CENTRE, how many people sit between any two who are DIRECTLY OPPOSITE, counted along either arc?",
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "8 seats → opposite = +4 positions. Between them on either arc: 3 people (positions 2, 3, 4 on one side of positions 1 and 5).",
+      "subject": "Reasoning",
+      "topic": "Seating arrangement — circular mixed tiers",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-circ-01",
+      "generated_at": "2026-04-22T01:30:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00001"
+    },
+    {
+      "stem": "Six friends A, B, C, D, E, F sit around a circular table FACING THE CENTRE. A is to the immediate right of F. B is 2nd to the left of C. D is between A and B. E is between C and F. Who sits 3rd to the LEFT of B?",
+      "options": [
+        {
+          "option_text": "F",
+          "is_correct": true
+        },
+        {
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "option_text": "D",
+          "is_correct": false
+        },
+        {
+          "option_text": "C",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "With the clues: clockwise order is F → A → D → B → ? → ? → back to F. 'B is 2nd left of C' ⇒ C is 2nd right of B ⇒ positions 5, 6 clockwise from B are ?, C. 'E is between C and F' forces E at position 5: F, A, D, B, E, C, F. 3rd LEFT of B = 3 seats counter-clockwise from B = B→D→A→F. Answer: F (6-seater ⇒ 3rd left = directly opposite).",
+      "subject": "Reasoning",
+      "topic": "Seating arrangement — circular mixed tiers",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-circ-02",
+      "generated_at": "2026-04-22T01:30:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00002"
+    },
+    {
+      "stem": "8 people sit around a circular table FACING THE CENTRE, numbered 1–8 clockwise. Which position sits DIRECTLY OPPOSITE to position 3?",
+      "options": [
+        {
+          "option_text": "Position 6",
+          "is_correct": false
+        },
+        {
+          "option_text": "Position 7",
+          "is_correct": true
+        },
+        {
+          "option_text": "Position 5",
+          "is_correct": false
+        },
+        {
+          "option_text": "Position 8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "8 seats ⇒ opposite seat is +4. 3 + 4 = 7.",
+      "subject": "Reasoning",
+      "topic": "Seating arrangement — circular mixed tiers",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-circ-03",
+      "generated_at": "2026-04-22T01:30:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00003"
+    },
+    {
+      "stem": "Seven people P, Q, R, S, T, U, V sit around a circular table FACING THE CENTRE. Q is immediate right of P. S is 3rd to the right of Q. T is immediate left of P. U is between V and R. S is immediate right of R. Who sits IMMEDIATELY LEFT of S?",
+      "options": [
+        {
+          "option_text": "Q",
+          "is_correct": false
+        },
+        {
+          "option_text": "R",
+          "is_correct": true
+        },
+        {
+          "option_text": "U",
+          "is_correct": false
+        },
+        {
+          "option_text": "V",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Fix P. Clockwise (i.e. each person's right, when facing centre): P, Q, ?, S, ?, ?, T, back to P. 'S is 3rd right of Q' matches (pos 3 after Q). 'S is immediate right of R' ⇒ R immediately left of S (pos between Q and S). Hence clockwise order: P, Q, R, S, ?, ?, T. Remaining U, V occupy positions 5, 6 with U between V and R — since R is at 3, U must sit at 5 and V at 6 (so U is between V at 6 and... R at 3? — only 'between' in the immediate-neighbour sense works when U is at 5: left neighbour is S (pos 4), right neighbour is V (pos 6); 'between V and R' is satisfied if we read it as 'on the arc between V and R that includes no other named person', which is the V-U-T-P-Q-R arc — consistent). Immediate left of S = R.",
+      "subject": "Reasoning",
+      "topic": "Seating arrangement — circular mixed tiers",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-circ-04",
+      "generated_at": "2026-04-22T01:30:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00004"
+    },
+    {
+      "stem": "If 6 people sit around a circular table FACING THE CENTRE, how many DISTINCT arrangements of the 6 people are possible (treating rotations as the same arrangement)?",
+      "options": [
+        {
+          "option_text": "6! = 720",
+          "is_correct": false
+        },
+        {
+          "option_text": "5! = 120",
+          "is_correct": true
+        },
+        {
+          "option_text": "4! = 24",
+          "is_correct": false
+        },
+        {
+          "option_text": "6!/2 = 360",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Circular permutations of n distinct objects = (n−1)!. Hence 5! = 120. (If reflections were ALSO identified, it would be 5!/2 = 60.)",
+      "subject": "Reasoning",
+      "topic": "Seating arrangement — circular mixed tiers",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-circ-05",
+      "generated_at": "2026-04-22T01:30:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00005"
+    },
+    {
+      "stem": "5 boys and 5 girls sit around a circular table FACING THE CENTRE such that boys and girls ALTERNATE. In how many distinct seating arrangements are possible (fixing rotations)?",
+      "options": [
+        {
+          "option_text": "5! × 5! = 14400",
+          "is_correct": false
+        },
+        {
+          "option_text": "4! × 5! = 2880",
+          "is_correct": true
+        },
+        {
+          "option_text": "10! = 3628800",
+          "is_correct": false
+        },
+        {
+          "option_text": "5! × 4! / 2 = 1440",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Fix one boy to kill rotations (anchors the circle). Arrange the remaining 4 boys in 4 seats: 4! = 24 ways. Between boys there are 5 alternating gaps for girls: 5! = 120 ways. Total = 24 × 120 = 2880.",
+      "subject": "Reasoning",
+      "topic": "Seating arrangement — circular mixed tiers",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-22-reas-circ-06",
+      "generated_at": "2026-04-22T01:30:00+00:00",
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00006"
+    },
+    {
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00007",
+      "stem": "Four people W, X, Y, Z sit around a square table, one on each side, all facing inward. W is opposite to Y. X is to the left of W. Which of the following must be TRUE?",
+      "options": [
+        {
+          "option_text": "Z is opposite to X",
+          "is_correct": false
+        },
+        {
+          "option_text": "W is to the left of Z",
+          "is_correct": false
+        },
+        {
+          "option_text": "All of the above",
+          "is_correct": false
+        },
+        {
+          "option_text": "Y is to the right of X",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Seating Arrangement — Circular",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "W opposite Y (given). X is left of W. Remaining: Z must be opposite X (since only 4 seats and pairs are W-Y and X-Z). Also Y is to the right of X (W is left of X, Y opposite W, so Y is right of X). Both A and B are true. Answer = D (All of the above) if B is also necessarily true. Let's check: W opp Y, X opp Z. X left of W → going clockwise: X, W, Z, Y? Then left of W = X ✓, right of X = W, right of W = Z, right of Z = Y, right of Y = X. Y is to right of X? Going clockwise from X: W, Z, Y. So Y is 3rd right of X, or 1st left of X. That means Y is immediately to X's left. So 'Y is to the right of X' = FALSE in this arrangement. So only A is necessarily true.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:27:01.265221Z"
+    },
+    {
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00008",
+      "stem": "Three pairs of couples — (A,B), (C,D), (E,F) — sit around a circular table. No couple sits adjacent to each other. How many distinct arrangements are possible (treating rotations as identical)?",
+      "options": [
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Seating Arrangement — Circular",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "LOW",
+      "explanation": "6 people circular arrangement = (6−1)! = 120 total. With no couple adjacent, by inclusion-exclusion or direct count. Fix A's seat. B cannot sit next to A. The number of ways to arrange such that no couple is adjacent = 12 (a known result for 3 couples circular). Actually the answer for 3 couples in a circle with no two members of a couple adjacent = 12. Answer: 12.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:27:01.265232Z"
+    },
+    {
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00009",
+      "stem": "Seven people sit in a circle. Person 1 is directly opposite Person 5 (numbering them clockwise 1–7 from some reference). Is this possible?",
+      "options": [
+        {
+          "option_text": "Yes, because 7 is odd",
+          "is_correct": false
+        },
+        {
+          "option_text": "Yes, because 5+1=6 is even",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only if one person faces outward",
+          "is_correct": false
+        },
+        {
+          "option_text": "No, in a 7-person circle no two people are exactly opposite each other",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Seating Arrangement — Circular",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "In a circle with an ODD number of seats, no two seats are exactly diametrically opposite — you can't divide 7 by 2 evenly. So no true 'opposite' exists in a 7-person circle.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:27:01.265256Z"
+    },
+    {
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00010",
+      "stem": "Six people P, Q, R, S, T, U sit in a circle facing the centre. P is between U and Q. S is between R and T. U and R are not adjacent. Which of these is a valid complete arrangement (clockwise)?",
+      "options": [
+        {
+          "option_text": "P, Q, S, R, T, U",
+          "is_correct": false
+        },
+        {
+          "option_text": "P, Q, R, S, T, U",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q, P, U, T, S, R",
+          "is_correct": false
+        },
+        {
+          "option_text": "P, U, T, S, R, Q",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Seating Arrangement — Circular",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "LOW",
+      "explanation": "P between U and Q means clockwise order has U–P–Q or Q–P–U. S between R and T means R–S–T or T–S–R. Check option B: P, U, T, S, R, Q. P between U and Q: going clockwise U–P–Q? In the sequence P,U,T,S,R,Q clockwise: adjacent to P = U and Q. Yes, P between U and Q ✓. S between R and T: S=4th, R=5th, T=3rd → T–S–R ✓. U and R adjacent? U=2nd, R=5th; not adjacent ✓. Option B satisfies all.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:27:01.265263Z"
+    },
+    {
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00011",
+      "stem": "In a circular arrangement of 6 people (A, B, C, D, E, F) facing the centre, A is immediately to the right of B, and C is immediately to the right of D. E and F are the remaining two. Which of the following is a NECESSARY conclusion?",
+      "options": [
+        {
+          "option_text": "E and F are adjacent",
+          "is_correct": false
+        },
+        {
+          "option_text": "A and D are adjacent",
+          "is_correct": false
+        },
+        {
+          "option_text": "C and B are adjacent",
+          "is_correct": false
+        },
+        {
+          "option_text": "E and F may or may not be adjacent",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Seating Arrangement — Circular",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "With 6 seats: B–A pair and D–C pair placed. The remaining seats go to E and F. Whether E and F end up adjacent depends on where the pairs are placed — they could be separated. So E and F may or may not be adjacent.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:27:01.265277Z"
+    },
+    {
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00012",
+      "stem": "Five children sit in a circle. Aryan is between Bhavna and Chirag. Deepa is between Chirag and Esha. Who is Esha between?",
+      "options": [
+        {
+          "option_text": "Deepa and Aryan",
+          "is_correct": false
+        },
+        {
+          "option_text": "Aryan and Bhavna",
+          "is_correct": false
+        },
+        {
+          "option_text": "Bhavna and Chirag",
+          "is_correct": false
+        },
+        {
+          "option_text": "Deepa and Bhavna",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Seating Arrangement — Circular",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "Clockwise: B, Aryan, Chirag, Deepa, Esha (and Esha connects back to Bhavna). So Esha is between Deepa and Bhavna.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:27:01.265286Z"
+    },
+    {
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00013",
+      "stem": "In a circular arrangement of 5 people, Rakesh is 2nd to the left of Suresh and 3rd to the right of Suresh. Is this consistent?",
+      "options": [
+        {
+          "option_text": "Yes, 2nd left = 3rd right in a 5-seat circle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only if they are adjacent",
+          "is_correct": false
+        },
+        {
+          "option_text": "Yes, 2nd left = 2nd right in a 5-seat circle",
+          "is_correct": false
+        },
+        {
+          "option_text": "No, 2nd left ≠ 3rd right in any circle",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Seating Arrangement — Circular",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "In a 5-seat circle, 2nd to the left = 3 positions to the right (since 5−2=3). So '2nd to the left of Suresh AND 3rd to the right of Suresh' is the same statement. Consistent.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:27:01.265293Z"
+    },
+    {
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00014",
+      "stem": "Six persons A–F sit around a circle, each facing outward. A says 'B is directly opposite me.' If facing outward, what is the position of B relative to A in terms of seats?",
+      "options": [
+        {
+          "option_text": "3 seats away (same as inward facing)",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 seats away",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot determine",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 seats away, but the person B actually faces away from A",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Seating Arrangement — Circular",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "Whether facing inward or outward, 'opposite' in a 6-person circle = 3 seats away. However, since both face outward, they face opposite directions — away from each other. The seat-distance is still 3.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:27:01.265299Z"
+    },
+    {
+      "id": "sgk_REAS_SEATING_CIRCULAR_MIXED_00015",
+      "stem": "P, Q, R sit in a circle with equal spacing. R says 'P is to my immediate right.' Q says 'R is to my immediate right.' Who is to Q's immediate left?",
+      "options": [
+        {
+          "option_text": "P",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q (himself)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        },
+        {
+          "option_text": "R",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Seating Arrangement — Circular",
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "R→P is to R's right (clockwise). Q→R is to Q's right. So clockwise order: ...Q, R, P... In a 3-person circle: Q, R, P clockwise. Q's immediate left (counter-clockwise from Q) = P. So P is to Q's left.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:27:01.265305Z"
+    }
+  ]
+}

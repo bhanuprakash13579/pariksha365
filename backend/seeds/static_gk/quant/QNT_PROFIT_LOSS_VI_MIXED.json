@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "subject": "Quant",
+  "subject": "Quantitative Aptitude",
   "topic": "Profit and Loss VI",
   "topic_code": "QNT_PROFIT_LOSS_VI_MIXED",
   "description": "Profit and loss — successive discounts, marked price, list price vs selling price, MP-CP-SP relationships, false weights, dishonest dealer.",
@@ -235,6 +235,216 @@
       "generator_tag": "v3-rich-explanation",
       "generated_at": "2026-04-28",
       "id": "sgk_QNT_PROFIT_LOSS_VI_MIXED_007"
+    },
+    {
+      "stem": "A vendor buys lemons at 6 for ₹5 and sells them at 5 for ₹6. What is his gain%?",
+      "options": [
+        {
+          "option_text": "32% profit calculated on cost price per lemon",
+          "is_correct": false
+        },
+        {
+          "option_text": "44% profit calculated on cost price per lemon",
+          "is_correct": true
+        },
+        {
+          "option_text": "36% profit calculated on selling price per lemon",
+          "is_correct": false
+        },
+        {
+          "option_text": "40% profit calculated on cost price per lemon",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "CP per lemon = ₹5/6; SP per lemon = ₹6/5. Gain% = (6/5 − 5/6) ÷ (5/6) × 100 = (11/30) × (6/5) × 100 = 44%. Option A (32%) is the result of mistakenly placing SP in the denominator instead of CP in the gain formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:08:08+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VI_MIXED_00008"
+    },
+    {
+      "stem": "A shopkeeper buys a bicycle for ₹4,500, spends ₹500 on repairs, and sells it for ₹6,000. What is his profit% on total cost?",
+      "options": [
+        {
+          "option_text": "33.33% on the original purchase price, ignoring repair costs",
+          "is_correct": false
+        },
+        {
+          "option_text": "22.22% using actual profit of ₹1,000 over purchase price of ₹4,500",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% on total investment including all costs and repairs made",
+          "is_correct": true
+        },
+        {
+          "option_text": "16.67% expressed as a percentage of the final selling price only",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Total cost = ₹4,500 + ₹500 = ₹5,000. SP = ₹6,000. Profit = ₹1,000. Profit% = (1000 ÷ 5000) × 100 = 20%. Option A (33.33%) forgets repair cost in CP and inflates profit to ₹1,500; Option B correctly finds ₹1,000 profit but divides by the incomplete base of ₹4,500; Option D computes profit as a fraction of SP.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:08:08+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VI_MIXED_00009"
+    },
+    {
+      "stem": "A manufacturer sells to a wholesaler at 25% profit, the wholesaler sells to a retailer at 20% profit, and the retailer sells at ₹1,800 making 20% profit. What was the manufacturer's original cost price?",
+      "options": [
+        {
+          "option_text": "₹1,000, traced backward through each successive profit margin",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹800, obtained by subtracting all percentage margins linearly",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,200, derived by applying combined 65% margin to ₹1,800",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹900, obtained by dividing retail price by the combined rate",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Work backward: Retailer CP = 1800 ÷ 1.20 = ₹1,500; Wholesaler CP = 1500 ÷ 1.20 = ₹1,250; Manufacturer CP = 1250 ÷ 1.25 = ₹1,000. Option B (₹800) is the classic linear-subtraction error: you cannot deduct 25%+20%+20% = 65% directly from ₹1,800 because margins compound multiplicatively, not additively.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:08:08+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VI_MIXED_00010"
+    },
+    {
+      "stem": "A shopkeeper wishes to allow a 20% discount on the marked price and still earn 28% profit on a cost price of ₹500. What marked price should he fix?",
+      "options": [
+        {
+          "option_text": "₹640 (equating the marked price directly to the target selling price)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹750 (marking 50% above CP before applying the 20% discount)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹850 (rounding the calculated price up to the nearest hundred)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹800 (gives SP of ₹640 after 20% discount, ensuring 28% profit)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Required SP = 500 × 1.28 = ₹640. Since SP = MP × 0.80, we get MP = 640 ÷ 0.80 = ₹800. Option B (₹750) is the most tempting trap: MP = 750 gives SP = 750 × 0.80 = ₹600, yielding only 20% profit on ₹500—short of the required 28%. Option A confuses marked price with selling price.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:08:08+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VI_MIXED_00011"
+    },
+    {
+      "stem": "A merchant claims his profit is 25% of the selling price. What is his actual profit% calculated on the cost price?",
+      "options": [
+        {
+          "option_text": "25% on cost price (same fraction applies to cost as to SP)",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% on cost price (obtained by subtracting ratio from selling side)",
+          "is_correct": false
+        },
+        {
+          "option_text": "33.33% on cost price, since CP equals exactly 75% of the SP",
+          "is_correct": true
+        },
+        {
+          "option_text": "30% on cost price (rounding the exact fraction to nearest whole)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "If profit = 25% of SP, let SP = 100; then profit = 25 and CP = 75. Profit% on CP = 25 ÷ 75 × 100 = 33.33%. Option A (25%) is wrong: the same absolute profit is a larger fraction when measured against the smaller base (CP vs SP). Option B (20%) applies the inverse-percentage formula incorrectly — that formula applies when profit% on CP is given and you want profit% on SP, not the other way around.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:08:08+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VI_MIXED_00012"
+    },
+    {
+      "stem": "A trader buys goods listed at ₹6,000, receives a 10% trade discount, then a 5% cash discount on the reduced price, and spends ₹200 on freight. At what selling price must he quote to earn exactly 20% profit on total cost?",
+      "options": [
+        {
+          "option_text": "₹6,396 (20% profit on net cost after both discounts plus freight)",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹6,480 (20% on trade-discounted price, ignoring cash discount and freight)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹6,156 (20% added on cash-discounted price only, freight excluded)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹7,200 (applying 20% profit directly on the original list price)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "After 10% trade discount: 6000 × 0.90 = ₹5,400. After 5% cash discount: 5400 × 0.95 = ₹5,130. Total cost = 5130 + 200 = ₹5,330. SP = 5330 × 1.20 = ₹6,396. Option B (₹6,480) skips the cash discount and freight — it marks up only the trade-discounted price. Option C (₹6,156) applies the markup correctly on the doubly-discounted price but forgets freight. Option D ignores both discounts entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:08:08+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VI_MIXED_00013"
+    },
+    {
+      "stem": "On a lot costing ₹4,000 a trader earns a% profit, and on a second lot costing ₹6,000 he earns (a + 15)% profit. If his overall profit on total investment is 29%, what is the value of a?",
+      "options": [
+        {
+          "option_text": "a = 15%, with second lot at 30%, giving 24% blended profit overall",
+          "is_correct": false
+        },
+        {
+          "option_text": "a = 18%, first lot at 18%, second at 33%, giving 27% blended profit",
+          "is_correct": false
+        },
+        {
+          "option_text": "a = 20%, first lot at 20%, second at 35%, giving 29% blended profit",
+          "is_correct": true
+        },
+        {
+          "option_text": "a = 25%, first lot at 25%, second at 40%, giving 34% blended profit",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Total investment = ₹10,000; required profit = 29% × 10,000 = ₹2,900. Equation: (4000·a/100) + (6000·(a+15)/100) = 2900 → 40a + 60a + 900 = 2900 → 100a = 2000 → a = 20. Verify: 4000×0.20 + 6000×0.35 = 800 + 2100 = 2900 ✓. Option A (a=15) yields 4000×0.15 + 6000×0.30 = 600 + 1800 = 2400 = 24%, not 29%. Option B (a=18) gives 720 + 1980 = 2700 = 27%, also short.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:08:08+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_VI_MIXED_00014"
     }
   ]
 }

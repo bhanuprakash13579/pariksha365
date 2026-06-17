@@ -1,662 +1,668 @@
-[
-  {
-    "id": "sgk_REAS_CLOCK_IV_00001",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "At 3:00, what is the angle between the hour hand and the minute hand?",
-    "options": [
-      {
-        "option_text": "45°",
-        "is_correct": false
-      },
-      {
-        "option_text": "90°",
-        "is_correct": true
-      },
-      {
-        "option_text": "60°",
-        "is_correct": false
-      },
-      {
-        "option_text": "30°",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "At 3:00: hour hand is at 90° (3×30°), minute hand is at 0°. Angle = 90°. Formula: |30H − 5.5M| = |90 − 0| = 90°.",
-    "difficulty": "easy",
-    "effort_tier": "A",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00002",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "At what time between 4 and 5 o'clock do the hour and minute hands coincide?",
-    "options": [
-      {
-        "option_text": "4:21 9/11",
-        "is_correct": true
-      },
-      {
-        "option_text": "4:22",
-        "is_correct": false
-      },
-      {
-        "option_text": "4:20",
-        "is_correct": false
-      },
-      {
-        "option_text": "4:18",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "Hands coincide: M = 60H/11 for fractional minutes. H=4: M = 240/11 = 21 9/11. So 4 h 21 9/11 min.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00003",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "At 10:10, the angle between the hour and minute hands is:",
-    "options": [
-      {
-        "option_text": "115°",
-        "is_correct": true
-      },
-      {
-        "option_text": "120°",
-        "is_correct": false
-      },
-      {
-        "option_text": "105°",
-        "is_correct": false
-      },
-      {
-        "option_text": "110°",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "|30H − 5.5M| = |300 − 55| = 245°. Since > 180°, take 360° − 245° = 115°.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00004",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "How many times do the hour and minute hands of a clock coincide in 12 hours?",
-    "options": [
-      {
-        "option_text": "12",
-        "is_correct": false
-      },
-      {
-        "option_text": "11",
-        "is_correct": true
-      },
-      {
-        "option_text": "24",
-        "is_correct": false
-      },
-      {
-        "option_text": "10",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "The hands coincide 11 times in every 12 hours (not 12). They meet approximately every 65 5/11 minutes: 12:00, 1:05.5, 2:10.9 … 10:54.5.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00005",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "A clock gains 5 minutes every hour. If it shows the correct time at 9:00 AM, what will it show 6 actual hours later?",
-    "options": [
-      {
-        "option_text": "3:00 PM",
-        "is_correct": false
-      },
-      {
-        "option_text": "3:30 PM",
-        "is_correct": true
-      },
-      {
-        "option_text": "2:30 PM",
-        "is_correct": false
-      },
-      {
-        "option_text": "3:15 PM",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "Gain = 5 min/hr × 6 hr = 30 min extra. Clock shows 9:00 AM + 6 h + 30 min = 3:30 PM.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00006",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "At 7:20, how far has the hour hand moved from 12 o'clock (in degrees)?",
-    "options": [
-      {
-        "option_text": "200°",
-        "is_correct": false
-      },
-      {
-        "option_text": "210°",
-        "is_correct": false
-      },
-      {
-        "option_text": "220°",
-        "is_correct": true
-      },
-      {
-        "option_text": "215°",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "explanation": "Hour hand moves 0.5°/min. 7:20 = 440 minutes past 12. Angle = 440 × 0.5 = 220°.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00007",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "A clock loses 10 minutes every hour. Set correct at 8 AM, what time does it show at actual 4 PM (8 hours later)?",
-    "options": [
-      {
-        "option_text": "2:40 PM",
-        "is_correct": true
-      },
-      {
-        "option_text": "3:00 PM",
-        "is_correct": false
-      },
-      {
-        "option_text": "3:20 PM",
-        "is_correct": false
-      },
-      {
-        "option_text": "2:20 PM",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "Loss = 10 min/hr × 8 hr = 80 min total. Clock shows 8 AM + (480 − 80) min = 8 AM + 400 min = 8 AM + 6 h 40 min = 2:40 PM.",
-    "difficulty": "hard",
-    "effort_tier": "C",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00008",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "How many times do the hands of a clock form a right angle (90°) in 12 hours?",
-    "options": [
-      {
-        "option_text": "12",
-        "is_correct": false
-      },
-      {
-        "option_text": "22",
-        "is_correct": true
-      },
-      {
-        "option_text": "24",
-        "is_correct": false
-      },
-      {
-        "option_text": "11",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "The minute hand overtakes the hour hand 11 times in 12 hours, and each overtake contains 2 right-angle crossings (before and after coincidence) = 22 right angles in 12 hours.",
-    "difficulty": "hard",
-    "effort_tier": "C",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00009",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "At 6:30, the angle between the hour and minute hands is:",
-    "options": [
-      {
-        "option_text": "0°",
-        "is_correct": false
-      },
-      {
-        "option_text": "15°",
-        "is_correct": true
-      },
-      {
-        "option_text": "30°",
-        "is_correct": false
-      },
-      {
-        "option_text": "90°",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "|30H − 5.5M| = |180 − 165| = 15°.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00010",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "Between 5 and 6 o'clock, the first time the hands are at 90° is at:",
-    "options": [
-      {
-        "option_text": "5:10 10/11",
-        "is_correct": true
-      },
-      {
-        "option_text": "5:15",
-        "is_correct": false
-      },
-      {
-        "option_text": "5:05 5/11",
-        "is_correct": false
-      },
-      {
-        "option_text": "5:20",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "Angle = 90°: 30H − 5.5M = 90 → 150 − 5.5M = 90 → 5.5M = 60 → M = 120/11 = 10 10/11. Answer: 5:10 10/11.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00011",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "A clock loses 3 minutes every day. Set to 12:00 noon, what time does it show after 4 days?",
-    "options": [
-      {
-        "option_text": "11:48 AM",
-        "is_correct": true
-      },
-      {
-        "option_text": "11:42 AM",
-        "is_correct": false
-      },
-      {
-        "option_text": "11:50 AM",
-        "is_correct": false
-      },
-      {
-        "option_text": "11:44 AM",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "Loss = 3 min/day × 4 days = 12 min total. Shows 12:00 noon − 12 min = 11:48 AM.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00012",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "At 9:45, the angle between the hour and minute hands is:",
-    "options": [
-      {
-        "option_text": "22.5°",
-        "is_correct": true
-      },
-      {
-        "option_text": "52.5°",
-        "is_correct": false
-      },
-      {
-        "option_text": "7.5°",
-        "is_correct": false
-      },
-      {
-        "option_text": "37.5°",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "|30H − 5.5M| = |270 − 247.5| = 22.5°.",
-    "difficulty": "easy",
-    "effort_tier": "A",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00013",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "At what time between 1 and 2 o'clock do the hands point in exactly opposite directions?",
-    "options": [
-      {
-        "option_text": "1:38 2/11",
-        "is_correct": true
-      },
-      {
-        "option_text": "1:49 1/11",
-        "is_correct": false
-      },
-      {
-        "option_text": "1:40",
-        "is_correct": false
-      },
-      {
-        "option_text": "1:45",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "Opposite: 30H − 5.5M = −180 → 30 − 5.5M = −180 → 5.5M = 210 → M = 420/11 = 38 2/11. Time: 1:38 2/11.",
-    "difficulty": "hard",
-    "effort_tier": "C",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00014",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "A watch is 10 minutes fast. If it shows 7:50 AM, the correct time is:",
-    "options": [
-      {
-        "option_text": "8:00 AM",
-        "is_correct": false
-      },
-      {
-        "option_text": "7:40 AM",
-        "is_correct": true
-      },
-      {
-        "option_text": "8:10 AM",
-        "is_correct": false
-      },
-      {
-        "option_text": "7:00 AM",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "Fast by 10 min → actual time = shown − 10 = 7:50 − 10 = 7:40 AM.",
-    "difficulty": "easy",
-    "effort_tier": "A",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00015",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "How many minutes after 12:00 do the clock hands next coincide?",
-    "options": [
-      {
-        "option_text": "60 min",
-        "is_correct": false
-      },
-      {
-        "option_text": "65 5/11 min",
-        "is_correct": true
-      },
-      {
-        "option_text": "55 min",
-        "is_correct": false
-      },
-      {
-        "option_text": "62 min",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "Minute hand gains on hour hand at 5.5°/min. For a full lap gain (360°): time = 360/5.5 = 720/11 = 65 5/11 minutes.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00016",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "At 2:30, the angle between the hour and minute hands is:",
-    "options": [
-      {
-        "option_text": "90°",
-        "is_correct": false
-      },
-      {
-        "option_text": "105°",
-        "is_correct": true
-      },
-      {
-        "option_text": "95°",
-        "is_correct": false
-      },
-      {
-        "option_text": "75°",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "|30H − 5.5M| = |60 − 165| = 105°.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00017",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "The minute hand moves 6° per minute. In 20 minutes, it sweeps through:",
-    "options": [
-      {
-        "option_text": "100°",
-        "is_correct": false
-      },
-      {
-        "option_text": "110°",
-        "is_correct": false
-      },
-      {
-        "option_text": "120°",
-        "is_correct": true
-      },
-      {
-        "option_text": "60°",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "C",
-    "explanation": "6°/min × 20 min = 120°.",
-    "difficulty": "easy",
-    "effort_tier": "A",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00018",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "At 12:20, the angle between the hour and minute hands is:",
-    "options": [
-      {
-        "option_text": "100°",
-        "is_correct": false
-      },
-      {
-        "option_text": "110°",
-        "is_correct": true
-      },
-      {
-        "option_text": "90°",
-        "is_correct": false
-      },
-      {
-        "option_text": "120°",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "|30(12) − 5.5(20)| = |360 − 110| = 250°. Smaller angle = 360 − 250 = 110°.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00019",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "Two clocks are set correctly at 10 AM. Clock A gains 2 min/hour; Clock B loses 1 min/hour. After 5 hours, Clock A shows — and Clock B shows —.",
-    "options": [
-      {
-        "option_text": "3:10 PM and 2:55 PM",
-        "is_correct": true
-      },
-      {
-        "option_text": "3:00 PM and 2:55 PM",
-        "is_correct": false
-      },
-      {
-        "option_text": "3:10 PM and 3:00 PM",
-        "is_correct": false
-      },
-      {
-        "option_text": "2:55 PM and 3:10 PM",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "Actual: 3:00 PM. A gains 2×5=10 min → 3:10 PM. B loses 1×5=5 min → 2:55 PM.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  },
-  {
-    "id": "sgk_REAS_CLOCK_IV_00020",
-    "topic_code": "RSN_CLOCK_CALENDAR",
-    "stem": "A clock was set correctly at 8:00 AM. It lost 2 minutes per hour. What will it show at the correct time of 2:00 PM (6 hours later)?",
-    "options": [
-      {
-        "option_text": "1:48 PM",
-        "is_correct": true
-      },
-      {
-        "option_text": "1:50 PM",
-        "is_correct": false
-      },
-      {
-        "option_text": "1:52 PM",
-        "is_correct": false
-      },
-      {
-        "option_text": "1:40 PM",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "Loss = 2 min/hr × 6 hr = 12 min. Shows 8 AM + 6 h − 12 min = 2 PM − 12 min = 1:48 PM.",
-    "difficulty": "medium",
-    "effort_tier": "B",
-    "subject": "Reasoning",
-    "topic": "Clocks",
-    "staleness_risk": "low",
-    "answer_source": "verified",
-    "generated_at": "2026-05-21T13:53:52.329436Z",
-    "generator_tag": "claude-code-wave4"
-  }
-]
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Clock",
+  "topic_code": "REAS_CLOCK_IV_MIXED",
+  "questions": [
+    {
+      "id": "sgk_REAS_CLOCK_IV_00001",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "At 3:00, what is the angle between the hour hand and the minute hand?",
+      "options": [
+        {
+          "option_text": "45°",
+          "is_correct": false
+        },
+        {
+          "option_text": "90°",
+          "is_correct": true
+        },
+        {
+          "option_text": "60°",
+          "is_correct": false
+        },
+        {
+          "option_text": "30°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "At 3:00: hour hand is at 90° (3×30°), minute hand is at 0°. Angle = 90°. Formula: |30H − 5.5M| = |90 − 0| = 90°.",
+      "difficulty": "easy",
+      "effort_tier": "A",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00002",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "At what time between 4 and 5 o'clock do the hour and minute hands coincide?",
+      "options": [
+        {
+          "option_text": "4:21 9/11",
+          "is_correct": true
+        },
+        {
+          "option_text": "4:22",
+          "is_correct": false
+        },
+        {
+          "option_text": "4:20",
+          "is_correct": false
+        },
+        {
+          "option_text": "4:18",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Hands coincide: M = 60H/11 for fractional minutes. H=4: M = 240/11 = 21 9/11. So 4 h 21 9/11 min.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00003",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "At 10:10, the angle between the hour and minute hands is:",
+      "options": [
+        {
+          "option_text": "115°",
+          "is_correct": true
+        },
+        {
+          "option_text": "120°",
+          "is_correct": false
+        },
+        {
+          "option_text": "105°",
+          "is_correct": false
+        },
+        {
+          "option_text": "110°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "|30H − 5.5M| = |300 − 55| = 245°. Since > 180°, take 360° − 245° = 115°.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00004",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "How many times do the hour and minute hands of a clock coincide in 12 hours?",
+      "options": [
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "The hands coincide 11 times in every 12 hours (not 12). They meet approximately every 65 5/11 minutes: 12:00, 1:05.5, 2:10.9 … 10:54.5.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00005",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "A clock gains 5 minutes every hour. If it shows the correct time at 9:00 AM, what will it show 6 actual hours later?",
+      "options": [
+        {
+          "option_text": "3:00 PM",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:30 PM",
+          "is_correct": true
+        },
+        {
+          "option_text": "2:30 PM",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:15 PM",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Gain = 5 min/hr × 6 hr = 30 min extra. Clock shows 9:00 AM + 6 h + 30 min = 3:30 PM.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00006",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "At 7:20, how far has the hour hand moved from 12 o'clock (in degrees)?",
+      "options": [
+        {
+          "option_text": "200°",
+          "is_correct": false
+        },
+        {
+          "option_text": "210°",
+          "is_correct": false
+        },
+        {
+          "option_text": "220°",
+          "is_correct": true
+        },
+        {
+          "option_text": "215°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "Hour hand moves 0.5°/min. 7:20 = 440 minutes past 12. Angle = 440 × 0.5 = 220°.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00007",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "A clock loses 10 minutes every hour. Set correct at 8 AM, what time does it show at actual 4 PM (8 hours later)?",
+      "options": [
+        {
+          "option_text": "2:40 PM",
+          "is_correct": true
+        },
+        {
+          "option_text": "3:00 PM",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:20 PM",
+          "is_correct": false
+        },
+        {
+          "option_text": "2:20 PM",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Loss = 10 min/hr × 8 hr = 80 min total. Clock shows 8 AM + (480 − 80) min = 8 AM + 400 min = 8 AM + 6 h 40 min = 2:40 PM.",
+      "difficulty": "hard",
+      "effort_tier": "C",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00008",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "How many times do the hands of a clock form a right angle (90°) in 12 hours?",
+      "options": [
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "22",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "The minute hand overtakes the hour hand 11 times in 12 hours, and each overtake contains 2 right-angle crossings (before and after coincidence) = 22 right angles in 12 hours.",
+      "difficulty": "hard",
+      "effort_tier": "C",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00009",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "At 6:30, the angle between the hour and minute hands is:",
+      "options": [
+        {
+          "option_text": "0°",
+          "is_correct": false
+        },
+        {
+          "option_text": "15°",
+          "is_correct": true
+        },
+        {
+          "option_text": "30°",
+          "is_correct": false
+        },
+        {
+          "option_text": "90°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "|30H − 5.5M| = |180 − 165| = 15°.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00010",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "Between 5 and 6 o'clock, the first time the hands are at 90° is at:",
+      "options": [
+        {
+          "option_text": "5:10 10/11",
+          "is_correct": true
+        },
+        {
+          "option_text": "5:15",
+          "is_correct": false
+        },
+        {
+          "option_text": "5:05 5/11",
+          "is_correct": false
+        },
+        {
+          "option_text": "5:20",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Angle = 90°: 30H − 5.5M = 90 → 150 − 5.5M = 90 → 5.5M = 60 → M = 120/11 = 10 10/11. Answer: 5:10 10/11.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00011",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "A clock loses 3 minutes every day. Set to 12:00 noon, what time does it show after 4 days?",
+      "options": [
+        {
+          "option_text": "11:48 AM",
+          "is_correct": true
+        },
+        {
+          "option_text": "11:42 AM",
+          "is_correct": false
+        },
+        {
+          "option_text": "11:50 AM",
+          "is_correct": false
+        },
+        {
+          "option_text": "11:44 AM",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Loss = 3 min/day × 4 days = 12 min total. Shows 12:00 noon − 12 min = 11:48 AM.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00012",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "At 9:45, the angle between the hour and minute hands is:",
+      "options": [
+        {
+          "option_text": "22.5°",
+          "is_correct": true
+        },
+        {
+          "option_text": "52.5°",
+          "is_correct": false
+        },
+        {
+          "option_text": "7.5°",
+          "is_correct": false
+        },
+        {
+          "option_text": "37.5°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "|30H − 5.5M| = |270 − 247.5| = 22.5°.",
+      "difficulty": "easy",
+      "effort_tier": "A",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00013",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "At what time between 1 and 2 o'clock do the hands point in exactly opposite directions?",
+      "options": [
+        {
+          "option_text": "1:38 2/11",
+          "is_correct": true
+        },
+        {
+          "option_text": "1:49 1/11",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:40",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:45",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Opposite: 30H − 5.5M = −180 → 30 − 5.5M = −180 → 5.5M = 210 → M = 420/11 = 38 2/11. Time: 1:38 2/11.",
+      "difficulty": "hard",
+      "effort_tier": "C",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00014",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "A watch is 10 minutes fast. If it shows 7:50 AM, the correct time is:",
+      "options": [
+        {
+          "option_text": "8:00 AM",
+          "is_correct": false
+        },
+        {
+          "option_text": "7:40 AM",
+          "is_correct": true
+        },
+        {
+          "option_text": "8:10 AM",
+          "is_correct": false
+        },
+        {
+          "option_text": "7:00 AM",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Fast by 10 min → actual time = shown − 10 = 7:50 − 10 = 7:40 AM.",
+      "difficulty": "easy",
+      "effort_tier": "A",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00015",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "How many minutes after 12:00 do the clock hands next coincide?",
+      "options": [
+        {
+          "option_text": "60 min",
+          "is_correct": false
+        },
+        {
+          "option_text": "65 5/11 min",
+          "is_correct": true
+        },
+        {
+          "option_text": "55 min",
+          "is_correct": false
+        },
+        {
+          "option_text": "62 min",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Minute hand gains on hour hand at 5.5°/min. For a full lap gain (360°): time = 360/5.5 = 720/11 = 65 5/11 minutes.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00016",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "At 2:30, the angle between the hour and minute hands is:",
+      "options": [
+        {
+          "option_text": "90°",
+          "is_correct": false
+        },
+        {
+          "option_text": "105°",
+          "is_correct": true
+        },
+        {
+          "option_text": "95°",
+          "is_correct": false
+        },
+        {
+          "option_text": "75°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "|30H − 5.5M| = |60 − 165| = 105°.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00017",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "The minute hand moves 6° per minute. In 20 minutes, it sweeps through:",
+      "options": [
+        {
+          "option_text": "100°",
+          "is_correct": false
+        },
+        {
+          "option_text": "110°",
+          "is_correct": false
+        },
+        {
+          "option_text": "120°",
+          "is_correct": true
+        },
+        {
+          "option_text": "60°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "explanation": "6°/min × 20 min = 120°.",
+      "difficulty": "easy",
+      "effort_tier": "A",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00018",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "At 12:20, the angle between the hour and minute hands is:",
+      "options": [
+        {
+          "option_text": "100°",
+          "is_correct": false
+        },
+        {
+          "option_text": "110°",
+          "is_correct": true
+        },
+        {
+          "option_text": "90°",
+          "is_correct": false
+        },
+        {
+          "option_text": "120°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "|30(12) − 5.5(20)| = |360 − 110| = 250°. Smaller angle = 360 − 250 = 110°.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00019",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "Two clocks are set correctly at 10 AM. Clock A gains 2 min/hour; Clock B loses 1 min/hour. After 5 hours, Clock A shows — and Clock B shows —.",
+      "options": [
+        {
+          "option_text": "3:10 PM and 2:55 PM",
+          "is_correct": true
+        },
+        {
+          "option_text": "3:00 PM and 2:55 PM",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:10 PM and 3:00 PM",
+          "is_correct": false
+        },
+        {
+          "option_text": "2:55 PM and 3:10 PM",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Actual: 3:00 PM. A gains 2×5=10 min → 3:10 PM. B loses 1×5=5 min → 2:55 PM.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    },
+    {
+      "id": "sgk_REAS_CLOCK_IV_00020",
+      "topic_code": "RSN_CLOCK_CALENDAR",
+      "stem": "A clock was set correctly at 8:00 AM. It lost 2 minutes per hour. What will it show at the correct time of 2:00 PM (6 hours later)?",
+      "options": [
+        {
+          "option_text": "1:48 PM",
+          "is_correct": true
+        },
+        {
+          "option_text": "1:50 PM",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:52 PM",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:40 PM",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Loss = 2 min/hr × 6 hr = 12 min. Shows 8 AM + 6 h − 12 min = 2 PM − 12 min = 1:48 PM.",
+      "difficulty": "medium",
+      "effort_tier": "B",
+      "subject": "Reasoning",
+      "topic": "Clocks",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generated_at": "2026-05-21T13:53:52.329436Z",
+      "generator_tag": "claude-code-wave4"
+    }
+  ]
+}

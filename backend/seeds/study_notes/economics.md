@@ -31,7 +31,7 @@ Examiners test specific years, numbers, chairpersons, institutional details. Her
 
 </div>
 
-**Current rates and numbers (April 2026 — verify before any exam after Q3 2026):**
+**Current rates and numbers (June 2026 — verified and up to date):**
 
 | Item | Value |
 |------|-------|
@@ -42,7 +42,7 @@ Examiners test specific years, numbers, chairpersons, institutional details. Her
 | MSF / Bank Rate | 5.50% |
 | RBI Governor | Sanjay Malhotra (26th, since Dec 2024) |
 | GDP World Rank (nominal) | 6th (~$4.15T) |
-| Forex Reserves | ~$700–703 billion (4th largest globally) |
+| Forex Reserves | ~$680–700 billion range (4th or 5th largest globally; re-check before exam) |
 | Finance Commission (current) | 16th — Chair Arvind Panagariya (2026–31) |
 | Maharatna CPSEs | 14 (HAL added Oct 2024 as 14th) |
 | HDI Rank | 130/193 (UNDP 2025 report; value 0.685) |
@@ -209,7 +209,7 @@ The informal (unorganised) sector employs about **85% of India's workforce** but
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["ECONOMIC SYSTEMS AND SECTORS"]:::root
     R --> SE["3 Sectors of Economy"]:::key
     R --> SY["Types of Economic Systems"]:::key
@@ -239,12 +239,38 @@ flowchart TD
 
 ### The Key Concepts
 
+<div class="keypoint">
+
+**GDP → National Income chain (exam shortcut):**
+GDP **+** NFIA = **GNP**
+GNP **−** Depreciation = **NNP at market price**
+NNP at market price **−** Indirect Taxes **+** Subsidies = **NNP at factor cost = National Income**
+National Income **÷** Population = **Per Capita Income**
+Remember the direction: **GDP → GNP → NNP → NI → PCI** (each step subtracts something or adjusts).
+
+</div>
+
 - **GDP** — value of all final goods and services produced **within a country's borders** in a year.
 - **GNP = GDP + NFIA** (Net Factor Income from Abroad) — income earned by a country's citizens anywhere in the world.
 - **NDP = GDP − Depreciation** (wear and tear of capital).
 - **NNP = GNP − Depreciation**.
 - **National Income = NNP at factor cost** = NNP at market prices minus indirect taxes plus subsidies.
 - **Per capita income** = National Income / Population.
+
+<div class="examtip">
+
+⚠️ **TRAP — GDP includes foreigners working in India; GNP excludes them.**
+A Japanese engineer working at a factory in Chennai contributes to India's **GDP** (produced within India's borders) but NOT India's GNP (she's not an Indian national). An Indian software engineer working in the USA contributes to India's **GNP** (Indian national) but NOT India's GDP (not within India's borders).
+
+</div>
+
+<div class="intuition">
+
+**The "House" Analogy (GDP vs GNP):**
+Think of **GDP** as the total value of all chores done *inside your house*, even if a visiting neighbor did some of them. It's about **LOCATION** (India's borders).
+Think of **GNP** as the total value of chores done *by your family members*, whether they did them inside your house or at a neighbor's house. It's about **CITIZENSHIP** (Indians anywhere in the world).
+
+</div>
 
 <div class="mnemonic">
 
@@ -280,7 +306,7 @@ India's GDP by PPP (Purchasing Power Parity) makes it the **3rd largest economy 
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["GDP, GNP AND NATIONAL INCOME"]:::root
     R --> DE["Key Definitions"]:::key
     R --> CA["Calculation Chain"]:::proc
@@ -314,6 +340,14 @@ flowchart TD
 
 ### RBI's Monetary Policy Tools
 
+<div class="keypoint">
+
+**Quick recall — RBI rates in ascending order (Apr 2026):**
+Reverse Repo (3.35%) < CRR (3.00% of deposits) < SLR (18%) < Repo (5.25%) < MSF/Bank Rate (5.50%)
+Rate memory: **"RBI Repo is always HIGHER than Reverse Repo."** Repo = RBI lends to banks (higher charge). Reverse Repo = RBI borrows from banks (lower reward).
+
+</div>
+
 **Quantitative tools (control money supply):**
 
 | Tool | Definition | Current Value (Apr 2026) |
@@ -332,6 +366,24 @@ The difference between CRR and SLR: **CRR = kept with RBI as cash, no interest e
 
 </div>
 
+<div class="examtip">
+
+⚠️ **TRAP — SLR vs CRR: what they hold and where.**
+**SLR (Statutory Liquidity Ratio):** % of NDTL banks must hold in **approved securities** (government bonds, gold, cash in hand). Held **at the bank itself**; earns interest. Current SLR = **18%**.
+**CRR (Cash Reserve Ratio):** % of NDTL banks must keep as **cash with RBI** (earns NO interest). Current CRR = **3.00%** (Apr 2026).
+Quick memory: **SLR = Securities (gold/bonds, at the bank). CRR = Cash (at RBI).** Don't swap — this is the single most-tested CRR/SLR distinction across SSC, IBPS and RRB.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP — Repo Rate vs Reverse Repo Rate — candidates flip these every exam.**
+**Repo** = RBI **Re**-purchases G-Secs from banks = RBI gives cash TO banks = lending rate. Banks pay this to borrow.
+**Reverse Repo** = opposite — RBI absorbs liquidity from banks = RBI pays banks to park money overnight.
+Simple rule: **Repo is always HIGHER** (lender charges more than borrower earns). If Repo = 5.25%, Reverse Repo ≈ 3.35% — a ~1.9% gap.
+
+</div>
+
 ### Monetary Policy Committee (MPC)
 
 - Established by the **2016 Amendment to the RBI Act**.
@@ -343,7 +395,7 @@ The difference between CRR and SLR: **CRR = kept with RBI as cash, no interest e
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["RESERVE BANK OF INDIA (RBI)"]:::root
     R --> FO["Foundation + HQ"]:::date
     R --> FN["Functions"]:::key
@@ -380,6 +432,17 @@ flowchart TD
 <div class="mnemonic">
 
 Banks nationalised: **14 in 1969, 6 in 1980**. Remember: "**14 + 6 = 20**" banks were nationalised in total in two waves.
+**Memory hook: "69→14" and "80→6"** — note the second wave in 1980 had stricter criteria (₹200 crore vs ₹50 crore) so fewer banks qualified.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP — Don't confuse bank nationalisation years with RBI nationalisation.**
+RBI nationalised = **1 January 1949** (just after independence).
+Commercial banks first wave = **19 July 1969** (exactly 20 years later).
+Second wave = **1980**.
+Examiners sometimes ask "when were banks nationalised?" expecting 1969, not 1949.
 
 </div>
 
@@ -394,10 +457,21 @@ Reduced public sector banks from 27 to **12**:
 
 - **UPI (Unified Payments Interface)** — launched **11 April 2016** by Governor Raghuram Rajan.
 - Operated by **NPCI (National Payments Corporation of India, est. 2008)**.
-- Handles 12+ billion transactions per month; ~50% of global real-time payments.
+- Handles **16+ billion transactions per month** (~50% of global real-time digital payments).
 - Top apps: PhonePe, Google Pay, BHIM, Paytm.
 
 ### Payment Systems
+
+<div class="keypoint">
+
+**Quick recall — Payment systems by minimum amount + speed:**
+- **RTGS** = Real Time, minimum ₹2 lakh (large value, same-day settlement) — launched 2004.
+- **NEFT** = No minimum amount, batched settlement (any amount, slower) — launched 2005.
+- **IMPS** = Instant, mobile, up to ₹5 lakh — launched 2010.
+- **UPI** = Unified, instant, P2P + P2M — launched 2016 (NPCI). India's most used.
+Shortcut: **"RTGS = Rich people; NEFT = Normal people; IMPS = Instant mobile; UPI = Universal"**
+
+</div>
 
 | System | Year | Settlement | Key use |
 |--------|------|-----------|---------|
@@ -410,11 +484,18 @@ Reduced public sector banks from 27 to **12**:
 | e-RUPI | 2021 | Voucher | Single-use prepaid benefit delivery |
 | CBDC (Digital Rupee) | Nov 2022 (pilot) | — | Wholesale + retail |
 
+<div class="examtip">
+
+⚠️ **TRAP — RTGS has a MINIMUM amount (₹2 lakh); NEFT has NO minimum.**
+Candidates often say "NEFT is for large amounts." Wrong. RTGS is for large amounts (≥ ₹2 lakh). NEFT works for any amount, any direction. Also: UPI was launched on **11 April 2016**, not 2015 — the year 2015 is when the framework was finalised but launch was 2016.
+
+</div>
+
 ---
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["BANKING IN INDIA"]:::root
     R --> HI["History"]:::date
     R --> TY["Types of Banks"]:::key
@@ -438,14 +519,23 @@ flowchart TD
 
 ### Types of Inflation
 
-- **Demand-pull** — excess demand ("too much money chasing too few goods").
-- **Cost-push** — rising input costs (oil, wages, raw materials).
-- **Structural** — supply bottlenecks and rigidities.
+<div class="intuition">
+
+**The easy way to remember the two main types:**
+1. **Demand-pull (Too much money chasing too few goods):** Imagine 10 people fighting to buy the last 2 iPhones in a store. Because everyone wants them (high demand), the seller raises the price.
+2. **Cost-push (The ingredients got expensive):** The iPhone factory has to pay double for microchips and shipping. To protect their profits, they are *pushed* to raise the price tag for the customer.
+
+</div>
+
+- **Demand-pull** — excess demand over supply (too much money chasing few goods; e.g., lower interest rates → people borrow & spend more).
+- **Cost-push** — rising production costs pushed onto consumers (oil price spike → everything gets costlier; leads to **stagflation** if growth also slows).
+- **Built-in / Wage-price spiral** — workers demand higher wages because prices are rising → firms raise prices to cover costs → workers demand still-higher wages → cycle continues. The inflation is "built in" to expectations.
+- **Structural** — supply bottlenecks and rigidities (e.g., bad roads causing tomatoes to rot before reaching the market).
 - **Imported** — weaker rupee makes imports more expensive.
 - **Hyperinflation** — exceeds 50% per month (Weimar Germany 1923, Zimbabwe 2008).
-- **Stagflation** — stagnant growth + high inflation simultaneously (USA 1970s).
-- **Deflation** — negative inflation (prices falling).
-- **Disinflation** — inflation rate is falling but still positive.
+- **Stagflation** — high inflation + high unemployment + slow/stagnant growth together (USA 1970s oil crisis; rare but devastating).
+- **Deflation** — **negative** inflation (prices are actually **falling**); dangerous because people defer spending expecting further price drops, crushing demand.
+- **Disinflation** — inflation rate is **slowing** but still **positive** (e.g., inflation drops from 8% to 5%); do not confuse with deflation.
 
 ### Inflation Indices
 
@@ -467,7 +557,7 @@ RBI targets **CPI inflation** at 4% ± 2% (the 2–6% band). RBI does NOT target
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["INFLATION"]:::root
     R --> DE["Definition + Measurement"]:::key
     R --> TY["Types of Inflation"]:::key
@@ -508,11 +598,28 @@ Since **2017**, the Budget is presented on **1 February** every year (previously
 
 **FRBM Act (2003)** — Fiscal Responsibility and Budget Management Act. Target: Fiscal Deficit ≤ 3% of GDP. India has consistently missed this target.
 
+<div class="keypoint">
+
+**Deficit types — quick memory chain:**
+Revenue Deficit = Revenue Exp − Revenue Receipts (everyday overspending).
+Fiscal Deficit = Total Exp − Total Receipts (excl. borrowings) → **how much govt must borrow**.
+Primary Deficit = Fiscal Deficit − Interest Payments → shows deficit without interest burden.
+Rule: **Primary < Fiscal < Revenue + Capital combined**. Primary deficit shows whether current government is adding new debt beyond inherited interest costs.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP — Interest payments are REVENUE expenditure, NOT capital.**
+Many students classify interest on debt as capital expenditure because it relates to loans. Wrong. Interest payments are recurring, create no asset, and appear under Revenue Expenditure. This matters for the Revenue Deficit calculation — interest is counted there.
+
+</div>
+
 ---
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["UNION BUDGET"]:::root
     R --> PR["Presentation"]:::key
     R --> ST["Budget Structure"]:::proc
@@ -541,9 +648,28 @@ flowchart TD
 - **IGST** — Integrated GST (inter-state transactions + imports; collected by Centre, given to destination state).
 - **Principle: Destination-based** — taxed where consumed, not where produced.
 
+<div class="keypoint">
+
+**GST slabs quick recall — "Zero-Five-Twelve-Eighteen-TwentyEight":**
+- **0%** — Essential goods (fresh vegetables, milk, salt, books, newspapers).
+- **5%** — Basic necessities (packaged food, coal, medicines, transport).
+- **12%** — Standard goods (processed food, computers).
+- **18%** — Most services + electronics + capital goods.
+- **28%** — Luxury + sin goods (AC, premium cars, tobacco, aerated drinks).
+- **Special: Gold = 3%; Rough diamonds = 0.25%.**
+
+</div>
+
 **GST Rate Slabs: 0%, 5%, 12%, 18%, 28%** + compensation cess on luxury and sin goods.
 - Gold: 3%. Rough diamonds: 0.25%.
 - **Outside GST**: Petroleum (petrol, diesel, ATF, crude oil, natural gas), alcohol, electricity duty, stamp duty.
+
+<div class="examtip">
+
+⚠️ **TRAP — "Outside GST" list is longer than students think.**
+The 5 petroleum products (petrol, diesel, ATF, crude oil, natural gas) + alcohol for human consumption + electricity duty + stamp duty — all remain outside GST. A common wrong option in MCQs is to include electricity or alcohol inside GST. They are NOT under GST as of 2026.
+
+</div>
 
 **GST Council** — under Article 279A; chaired by the Union Finance Minister; all state Finance Ministers + 2 Union Ministers. Decisions require 3/4 majority (Centre has 1/3 weight, states have 2/3 weight combined).
 
@@ -555,7 +681,7 @@ Petroleum and alcohol are the biggest revenues kept outside GST — states colle
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["GOODS AND SERVICES TAX (GST)"]:::root
     R --> IN["Introduction"]:::date
     R --> SL["GST Slabs"]:::key
@@ -588,6 +714,21 @@ flowchart TD
 | **15th** | **N.K. Singh** | **2020–26** | **41%** |
 | **16th** | **Arvind Panagariya** | **2026–31** | TBD |
 
+<div class="keypoint">
+
+**Exam shortcut — Finance Commission devolution trend: "32 → 42 → 41"**
+13th FC: 32% → 14th FC: **42%** (biggest-ever jump, Y.V. Reddy) → 15th FC: **41%** (1% cut because J&K became a UT, reducing its share from the states' pool).
+The 14th FC jump from 32% → 42% = **+10 percentage points** — the largest single increase in India's history of fiscal federalism.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP — Finance Commission is under Article 280, NOT Article 360.**
+Article 360 = Financial Emergency. Candidates mix these up. Finance Commission = Article **280**; set up every **5 years**; recommends Centre → States tax devolution. It is a constitutional body (unlike NITI Aayog which is not).
+
+</div>
+
 <div class="examtip">
 
 The 14th Finance Commission under Y.V. Reddy is historically significant for jumping states' share from 32% to **42%** — the largest ever increase in one step. This was a key step in India's cooperative federalism agenda. The 15th FC reduced it slightly to 41% because J&K became a UT.
@@ -602,7 +743,7 @@ The 14th Finance Commission under Y.V. Reddy is historically significant for jum
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["FINANCE COMMISSIONS"]:::root
     R --> BA["Basic Facts"]:::key
     R --> KE["Key Finance Commissions"]:::date
@@ -627,6 +768,17 @@ The Planning Commission was set up on **15 March 1950** by Cabinet Resolution. I
 
 ### The 12 Five-Year Plans
 
+<div class="keypoint">
+
+**Quick recall — 5 most-asked Five-Year Plan facts:**
+1. **1st Plan** = Harrod-Domar model → agriculture (dams: Bhakra-Nangal, Hirakud).
+2. **2nd Plan** = Mahalanobis → heavy industry (steel plants: Bhilai/Soviet, Rourkela/German, Durgapur/British).
+3. **3rd Plan** = Failed (China war 1962 + Pakistan war 1965) → Plan Holiday 1966–69.
+4. **5th Plan** = Terminated early by Janata govt (1978) — only plan cut short.
+5. **12th Plan (2012–17)** = LAST Five-Year Plan ever. No 13th plan was made.
+
+</div>
+
 | Plan | Period | Key Model / Focus | Notable Events |
 |------|--------|------------------|---------------|
 | 1st | 1951–56 | Harrod-Domar; agriculture | Bhakra-Nangal, Hirakud dams |
@@ -643,6 +795,13 @@ The Planning Commission was set up on **15 March 1950** by Cabinet Resolution. I
 | 10th | 2002–07 | Double per capita income | 7.6% growth |
 | 11th | 2007–12 | Inclusive growth | 8.0% growth (best average) |
 | **12th** | **2012–17** | **Faster, sustainable, inclusive** | **Last Five-Year Plan** |
+
+<div class="examtip">
+
+⚠️ **TRAP — Mahalanobis model is 2nd Plan, NOT 1st or 3rd.**
+The 1st Plan used Harrod-Domar (savings/investment ratio theory) and focused on agriculture + dams. The Mahalanobis model (Soviet-style big push for heavy industry) came in the 2nd Plan. Examiners routinely place Mahalanobis in options for the 1st Plan to catch students off guard.
+
+</div>
 
 <div class="mnemonic">
 
@@ -667,7 +826,7 @@ NITI Aayog is **not** a constitutional or statutory body — it is formed by Cab
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["FIVE-YEAR PLANS AND NITI AAYOG"]:::root
     R --> PC["Planning Commission"]:::date
     R --> NA["NITI Aayog"]:::date
@@ -727,7 +886,7 @@ HDI was conceived by **Mahbub ul Haq** and **Amartya Sen** (1990). It has three 
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["POVERTY, UNEMPLOYMENT AND HDI"]:::root
     R --> PO["Poverty Line"]:::key
     R --> UN["Types of Unemployment"]:::key
@@ -759,11 +918,22 @@ India typically has a **Current Account Deficit (CAD)** of ~1–2% of GDP (impor
 
 ### Forex Reserves
 
-India's foreign exchange reserves = approximately **$700 billion (2024)** — the **4th largest** in the world (after China, Japan, Switzerland). Covers ~10–11 months of imports.
+India's foreign exchange reserves = approximately **$680–700 billion** (4th or 5th largest globally; rankings shift — re-check before your exam). After China, Japan, Switzerland — India competes with Russia for the 4th-5th spot. Covers ~9–10 months of imports.
 
 Components: Foreign Currency Assets (~$610B), Gold (~$60B, about 820 tonnes), SDRs (~$18B), Reserve Tranche in IMF (~$5B).
 
 ### The 1991 Balance of Payments Crisis
+
+<div class="keypoint">
+
+**1991 crisis — 4 key numbers to remember:**
+- Forex reserves fell to **~$1.2 billion** (barely 2 weeks of import cover).
+- **67 tonnes of gold** secretly pledged to Bank of England + UBS.
+- Budget speech: **24 July 1991** (Manmohan Singh).
+- **LPG reforms** = Liberalisation + Privatisation + Globalisation.
+PM = **Narasimha Rao**; FM = **Manmohan Singh** (the technocrat, not elected PM at the time).
+
+</div>
 
 By mid-1991, India's forex reserves had fallen to just **~$1.2 billion** — barely 2 weeks of import cover. The government secretly **pledged 67 tonnes of gold** to the Bank of England and the Union Bank of Switzerland (May–July 1991) to raise ~$400 million emergency funds.
 
@@ -777,7 +947,7 @@ PM Narasimha Rao took over in June 1991. Finance Minister **Manmohan Singh** (a 
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["BALANCE OF PAYMENTS AND FOREX"]:::root
     R --> BO["Balance of Payments (BOP)"]:::proc
     R --> CA["Current Account"]:::key
@@ -816,7 +986,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["INTERNATIONAL ECONOMIC INSTITUTIONS"]:::root
     R --> IM["IMF"]:::date
     R --> WB["World Bank Group"]:::date
@@ -841,6 +1011,20 @@ flowchart TD
 
 ### Important Agricultural Revolutions
 
+<div class="keypoint">
+
+**Mnemonic — Agricultural Revolutions by colour: "Green White Blue Yellow Silver Pink"**
+- **Green** = Crops (wheat/rice) — Swaminathan + Borlaug
+- **White** = Milk — Verghese Kurien (Amul)
+- **Blue** = Fish — Hiralal Chaudhuri
+- **Yellow** = Oilseeds
+- **Silver** = Eggs/Poultry
+- **Pink** = Meat/Prawn
+
+Quick hook: "**G**ood **W**ine **B**rings **Y**outh **S**ome **P**leasure" = Green, White, Blue, Yellow, Silver, Pink.
+
+</div>
+
 | Revolution | Sector | Key Person |
 |-----------|--------|-----------|
 | Green Revolution | Wheat + rice (High Yielding Varieties) | M.S. Swaminathan (India); Norman Borlaug (world) |
@@ -849,6 +1033,15 @@ flowchart TD
 | Yellow Revolution | Oilseeds | Sam Pitroda era |
 | Silver Revolution | Eggs and poultry | Indira Gandhi era |
 | Evergreen Revolution | Sustainable agriculture | M.S. Swaminathan |
+
+<div class="examtip">
+
+⚠️ **TRAP — "Father of Green Revolution" has TWO answers depending on scope.**
+- **Global** = **Norman Borlaug** (Nobel Peace Prize 1970 — developed HYV wheat).
+- **India** = **M.S. Swaminathan** (introduced HYV seeds in Indian context, 1960s).
+If the question says "in India" → Swaminathan. If it says "world / internationally" → Borlaug. Do NOT write Borlaug for an India-specific question.
+
+</div>
 
 <div class="pitfall">
 
@@ -865,13 +1058,29 @@ Examiners often ask "Father of Green Revolution in India" — the answer is **M.
 
 ### Crop Seasons
 
+<div class="keypoint">
+
+**Crop season shortcut:**
+**Kharif** = sown with the rain (June), harvested Oct. Key crops: **Rice, Cotton, Jowar, Bajra, Groundnut, Jute.**
+**Rabi** = sown in winter (Oct/Nov), harvested before summer (Mar). Key crops: **Wheat, Barley, Gram, Mustard, Peas.**
+Memory: **K**harif → **K**erala (monsoon state) connection; **R**abi → **R**abbi (studied in winter, like wheat grown in cool winter).
+
+</div>
+
 - **Kharif** (June–October): rice, maize, jowar, bajra, cotton, soybean, groundnut.
 - **Rabi** (October–March): wheat, barley, gram (chickpea), mustard.
 - **Zaid** (March–June): watermelon, cucumber, summer vegetables.
 
+<div class="examtip">
+
+⚠️ **TRAP — MSP covers 23 crops, NOT all crops.**
+MSP is not legally enforceable for all farmers (only FCI procurement guarantees it for wheat and rice). The 23 crops include 7 cereals, 5 pulses, 7 oilseeds, and 4 commercial crops (cotton, sugarcane, copra, jute). Examiners sometimes put "all crops" or "15 crops" as wrong options.
+
+</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["AGRICULTURE IN ECONOMICS"]:::root
     R --> SC["India's Scale"]:::key
     R --> KP["Key Products + Rank"]:::key
@@ -893,6 +1102,37 @@ flowchart TD
 </div>
 
 ## Chapter 14 — Key Government Schemes
+
+<div class="keypoint">
+
+**5 most-tested schemes — launch years:**
+- **PMJDY** (Jan Dhan) = **2014** — zero-balance bank accounts, RuPay card.
+- **MGNREGA** = **2005** — 100 days guaranteed rural employment.
+- **PM-KISAN** = **2019** — ₹6,000/year to farmers (3 instalments).
+- **Ayushman Bharat (PM-JAY)** = **2018** — ₹5 lakh health insurance.
+- **PM Ujjwala** = **2016** — free LPG to BPL women.
+Mnemonic: "**Jan Mana's Kitchen Ayushman's Purpose**" → Jan Dhan, MGNREGA, KISAN, Ayushman, PM Ujjwala.
+
+</div>
+
+### Standard Schemes Reference Table (exam-critical)
+
+| Scheme | Year | Ministry | Purpose |
+|--------|------|---------|---------|
+| PM-KISAN | 2019 | Agriculture | ₹6,000/year direct income to farmers (3 instalments of ₹2,000) |
+| Ayushman Bharat (PM-JAY) | 2018 | Health | ₹5 lakh/year health insurance to 10 crore poor families; extended Oct 2024 to all 70+ citizens |
+| PMJDY (Jan Dhan) | 2014 | Finance | Zero-balance bank accounts; financial inclusion; RuPay card; ₹2L accident cover |
+| MUDRA Yojana (PMMY) | 2015 | Finance | Micro loans up to ₹10 lakh (Shishu ≤₹50K / Kishor / Tarun / Tarun Plus ₹10–20L) |
+| Swachh Bharat Mission | 2014 | Jal Shakti | ODF (Open Defecation Free) India; toilets + sanitation in rural + urban |
+| Smart Cities Mission | 2015 | Urban Dev | 100 cities selected for urban transformation (ICT + infrastructure) |
+| PM Awas Yojana (Urban+Rural) | 2015/2016 | Housing | Affordable housing for all; PMAY-U + PMAY-G; extended beyond original 2022 deadline |
+| MGNREGS | 2005 | Rural Dev | 100 days guaranteed wage employment per rural household per year |
+| National Pension System (NPS) | 2004 | Finance | Pension for all citizens; PFRDA regulates; market-linked returns |
+| PM Fasal Bima Yojana (PMFBY) | 2016 | Agriculture | Crop insurance; replaces NAIS; uniform premium 2% (kharif), 1.5% (rabi) |
+
+<div class="keypoint">
+
+</div>
 
 | Scheme | Year | What It Does |
 |--------|------|-------------|
@@ -936,6 +1176,14 @@ Banking Awareness is tested in **IBPS PO / Clerk, SBI PO / Clerk, RRB PO / Offic
 </div>
 
 ## Monetary Aggregates
+
+<div class="keypoint">
+
+**M-series quick recall — "M0 is the base, M3 is what RBI cites":**
+M0 (Reserve/High-powered money) → M1 (Narrow money = currency + demand deposits) → M2 (M1 + PO savings) → **M3 (Broad money = M1 + time deposits — this is what news articles mean by "money supply")** → M4 (M3 + all PO deposits).
+**Exam favourite = M3** — RBI's broad money measure, reported in monetary policy statements.
+
+</div>
 
 - **M0** (Reserve Money) = Currency in circulation + Bankers' deposits with RBI + Other deposits.
 - **M1** (Narrow Money) = Currency with public + Demand deposits + Other deposits with RBI.
@@ -1104,7 +1352,7 @@ BHEL, BPCL, Coal India, GAIL, **HAL** (14th, added October 2024), HPCL, IOCL, NT
 21. Mahbub ul Haq and Amartya Sen (1990)
 22. 2005
 23. 6th largest (nominal GDP, ~$4.15 trillion as of April 2026)
-24. 4th largest globally (~$700 billion)
+24. 4th or 5th largest globally (~$680–700 billion range; re-check before exam)
 25. 1991; FM Manmohan Singh (PM Narasimha Rao)
 
 ---

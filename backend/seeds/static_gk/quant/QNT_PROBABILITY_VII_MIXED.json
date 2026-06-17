@@ -220,6 +220,216 @@
       "generator_tag": "gemini-batch-fix-2026-05-15",
       "generated_at": "2026-05-19T08:44:33+00:00",
       "id": "sgk_QNT_PROBABILITY_VII_MIXED_00007"
+    },
+    {
+      "stem": "Three fair coins are tossed simultaneously. What is the probability of getting at least one tail?",
+      "options": [
+        {
+          "option_text": "1/2 (assuming equal chance per coin toss)",
+          "is_correct": false
+        },
+        {
+          "option_text": "7/8 (complement of the all-heads outcome)",
+          "is_correct": true
+        },
+        {
+          "option_text": "3/4 (three of four outcomes show one tail)",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/8 (three outcomes show exactly one tail)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Sample space = 2³ = 8 equally likely outcomes. The only outcome with NO tail is HHH. So P(at least one tail) = 1 − 1/8 = 7/8. Option C (3/4) is the two-coin answer students frequently import by mistake. Option D (3/8) counts only exactly-one-tail outcomes (HHT, HTH, THH = 3) and misses the two-tail and three-tail cases.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:59+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00008"
+    },
+    {
+      "stem": "A card is drawn at random from a well-shuffled standard deck of 52 cards. What is the probability that the card drawn is a face card?",
+      "options": [
+        {
+          "option_text": "1/4 (thirteen cards per suit assumed here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/13 (four kings only, ignoring others)",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/13 (twelve face cards out of 52 total)",
+          "is_correct": true
+        },
+        {
+          "option_text": "4/13 (counting Ace as a face card too)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Face cards = Jack, Queen, King across 4 suits = 3 × 4 = 12 cards. P = 12/52 = 3/13. Option A (1/4) implies 13 face cards, which is incorrect. Option D (4/13 = 16/52) is the classic error of treating the Ace as a face card, giving 4 × 4 = 16, a mistake seen in nearly every exam cycle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:59+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00009"
+    },
+    {
+      "stem": "Two fair dice are thrown simultaneously. What is the probability that the sum of the numbers on the two dice is a perfect square?",
+      "options": [
+        {
+          "option_text": "7/36 (sums 4 and 9 give seven outcomes)",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/6 (six perfect-square sums in the range)",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/36 (only sum equal to 9 considered here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/4 (nine outcomes yield a perfect square)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Possible sums range from 2 to 12. Perfect squares in this range: 4 and 9. Sum = 4: (1,3),(2,2),(3,1) = 3 ways. Sum = 9: (3,6),(4,5),(5,4),(6,3) = 4 ways. Total = 7 favourable outcomes out of 36. Option D (9/36 = 1/4) is wrong — 9 outcomes is the doubles count, not the perfect-square-sum count. Option C (5/36) ignores all the sum = 4 cases entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:59+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00010"
+    },
+    {
+      "stem": "A bag contains 4 red balls and 6 blue balls. Two balls are drawn at random without replacement. What is the probability that both drawn balls are of the same colour?",
+      "options": [
+        {
+          "option_text": "2/15 (counting only red-red combinations)",
+          "is_correct": false
+        },
+        {
+          "option_text": "8/15 (complement: one ball of each colour)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3 (counting only blue-blue combinations)",
+          "is_correct": false
+        },
+        {
+          "option_text": "7/15 (red-red and blue-blue both included)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Without replacement: P(RR) = (4/10) × (3/9) = 12/90 = 2/15. P(BB) = (6/10) × (5/9) = 30/90 = 1/3 = 5/15. P(same colour) = 2/15 + 5/15 = 7/15. Option B (8/15) is P(different colours) = 1 − 7/15, a complement-swap error. Option C (1/3) includes only blue-blue and forgets red-red, a partial-count mistake common under time pressure.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:59+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00011"
+    },
+    {
+      "stem": "One card is drawn at random from a standard deck of 52 cards. What is the probability that the card is either a spade or a king?",
+      "options": [
+        {
+          "option_text": "17/52 (adding spades and kings without overlap)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4/13 (16 favourable cards from 52 by addition rule)",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/4 (only spade suit probability considered)",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/13 (five separate groups counted in total)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "By the addition rule: P(spade ∪ king) = P(spade) + P(king) − P(king of spades) = 13/52 + 4/52 − 1/52 = 16/52 = 4/13. Option A (17/52) is the single most common trap: adding 13 + 4 = 17 without subtracting the king of spades, which is counted in both groups. Option C ignores the three non-spade kings entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:59+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00012"
+    },
+    {
+      "stem": "Three fair coins are tossed simultaneously. Given that at least one head has appeared, what is the probability that exactly two heads appeared?",
+      "options": [
+        {
+          "option_text": "3/8 (three of eight outcomes give two heads)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2 (half of qualifying outcomes match here)",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/7 (three outcomes among the seven valid ones)",
+          "is_correct": true
+        },
+        {
+          "option_text": "4/7 (four outcomes satisfy the given event)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Conditional probability: P(exactly 2H | at least 1H) = P(exactly 2H) / P(at least 1H) = (3/8) ÷ (7/8) = 3/7. Reduced sample space excludes TTT, leaving 7 outcomes. Exactly-two-head outcomes: HHT, HTH, THH = 3. Option A (3/8) is the unconditional probability of exactly two heads — the most tempting wrong answer because it uses the correct numerator but forgets the conditional denominator. Option D (4/7) counts HHT, HTH, THH, HHH = 4, confusing 'exactly two' with 'two or more'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:59+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00013"
+    },
+    {
+      "stem": "Two fair dice are rolled simultaneously. Given that the sum of the two numbers is even, what is the probability that both dice show the same number?",
+      "options": [
+        {
+          "option_text": "1/6 (six doubles out of all 36 outcomes)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3 (six doubles among 18 even-sum outcomes)",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/2 (half of even-sum outcomes are doubles)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/4 (nine matching cases in the sample space)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "A sum is even when both dice are even (3 even values × 3 even values = 9 ways) or both are odd (3 × 3 = 9 ways), giving 18 even-sum outcomes in the reduced sample space. Every double (1-1, 2-2, 3-3, 4-4, 5-5, 6-6) produces an even sum (n + n = 2n), so all 6 doubles qualify. P(same | even sum) = 6/18 = 1/3. Option A (1/6 = 6/36) is the unconditional probability of a double, ignoring the 'given even sum' restriction — the typical conditional-probability oversight under exam pressure.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:59:59+00:00",
+      "id": "sgk_QNT_PROBABILITY_VII_MIXED_00014"
     }
   ]
 }

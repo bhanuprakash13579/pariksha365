@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "subject": "Quant",
+  "subject": "Quantitative Aptitude",
   "topic": "Profit and loss V — mixed tiers",
   "topic_code": "QNT_PROFIT_LOSS_V_MIXED",
   "description": "P&L: discounts, marked price, successive discounts, dishonest dealers",
@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-26-qnt-pl5-07",
       "generated_at": "2026-04-27T03:30:00+00:00",
       "id": "sgk_QNT_PROFIT_LOSS_V_MIXED_00007"
+    },
+    {
+      "stem": "A trader earns a profit that is exactly 20% of his selling price on every transaction. What is his actual profit percentage calculated on cost price?",
+      "options": [
+        {
+          "option_text": "25% profit on cost price",
+          "is_correct": true
+        },
+        {
+          "option_text": "20% profit on cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "16.67% profit on cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "22.5% profit on cost price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "Let SP = 100. Profit = 20% of SP = 20. So CP = 80. Profit% on CP = (20/80)×100 = 25%. Option B (20%) is wrong because profit expressed as a percentage of SP is always lower than the same profit expressed as a percentage of CP; the two rates coincide only when profit = 0.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:10+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_V_MIXED_00008"
+    },
+    {
+      "stem": "A manufacturer sells to a distributor at 20% profit; the distributor sells to a retailer at 10% profit; the retailer sells to the customer at 25% profit. If the manufacturer's cost price is ₹100, how much does the final customer pay?",
+      "options": [
+        {
+          "option_text": "₹155 — all three margins added directly to base",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹132 — only two markups applied in the supply chain",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹165 — compounding of all three successive markups",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹180 — distributor's margin taken at 20% instead of 10%",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Each markup compounds on the previous price: 100 × 1.20 × 1.10 × 1.25 = 165. Option A (₹155) is wrong because it naively adds percentages (20+10+25 = 55%), ignoring that each stage's markup is calculated on the already-marked-up price, not the original ₹100.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:10+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_V_MIXED_00009"
+    },
+    {
+      "stem": "A shopkeeper sells one-third of his stock at a 15% loss. At what profit percentage must he sell the remaining two-thirds so that he earns an overall profit of 5% on the entire stock?",
+      "options": [
+        {
+          "option_text": "20% profit on the remaining two-thirds",
+          "is_correct": false
+        },
+        {
+          "option_text": "12.5% profit on the remaining two-thirds",
+          "is_correct": false
+        },
+        {
+          "option_text": "17.5% profit on the remaining two-thirds",
+          "is_correct": false
+        },
+        {
+          "option_text": "15% profit on the remaining two-thirds",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "Let total CP = 3k. SP from loss lot = 0.85k. Required total SP for 5% gain = 3.15k. SP needed from remaining 2k lot = 3.15k − 0.85k = 2.30k, so profit = 0.30k on CP 2k → 15%. Option A (20%) is wrong — it assumes recovery needed = 15+5 = 20%, ignoring that the remaining lot is twice as large, so it absorbs the shortfall more efficiently.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:10+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_V_MIXED_00010"
+    },
+    {
+      "stem": "Two articles A and B together cost ₹2,000. Article A is sold at 30% profit and Article B at 20% loss, yielding an overall gain of ₹50. What is the cost price of Article A?",
+      "options": [
+        {
+          "option_text": "₹1,000 as cost price of Article A",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹900 as cost price of Article A",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹800 as cost price of Article A",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,100 as cost price of Article A",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Let CP_A = x, CP_B = 2000−x. Equation: 0.3x − 0.2(2000−x) = 50 → 0.5x = 450 → x = 900. Option A (₹1,000) is wrong — an equal split gives a net gain of 0.3×1000 − 0.2×1000 = ₹100, not ₹50, proving A's share must be smaller. Option D (₹1,100) is the CP of B, arising from swapping which article is at profit vs loss.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:10+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_V_MIXED_00011"
+    },
+    {
+      "stem": "A merchant buys goods worth ₹8,000, then spends ₹400 on transportation and ₹600 on packaging. He wants 15% profit on his total outlay. At what price should he sell the goods?",
+      "options": [
+        {
+          "option_text": "₹10,350 — profit on total cost including all overheads",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹9,200 — profit on ₹8,000 purchase price, overheads ignored",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹10,200 — overhead added separately after profit markup",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹9,660 — profit on purchase and transport, packaging excluded",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Total outlay = 8000+400+600 = ₹9,000. SP = 9000 × 1.15 = ₹10,350. Option B (₹9,200) is wrong — it computes 8000×1.15, treating only the purchase price as cost; all overheads are part of total outlay and must be included before the 15% margin is applied.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:10+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_V_MIXED_00012"
+    },
+    {
+      "stem": "A dishonest dealer uses a 1,200 g weight in place of 1 kg while buying goods, and an 800 g weight in place of 1 kg while selling. If he transacts at the stated price per kg throughout, what is his overall profit percentage?",
+      "options": [
+        {
+          "option_text": "25% — only the selling-side fraud is accounted for",
+          "is_correct": false
+        },
+        {
+          "option_text": "40% — both fraud margins are added linearly",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% — only the buying-side fraud is accounted for",
+          "is_correct": false
+        },
+        {
+          "option_text": "50% — compounding effect of buying and selling frauds",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "Over LCM(1200,800) = 2400 g: dealer buys 2400 g by paying for 2×1000 = 2000 g worth (CP = ₹2,000); sells 2400 g by charging for 3×1000 = 3000 g worth (SP = ₹3,000). Profit = ₹1,000/₹2,000 = 50%. Option B (40%) is wrong — it adds (1200−1000)/1000 + (1000−800)/1000 = 20+20 = 40%; but the two frauds multiply: effective gain ratio = (1200/1000) × (1000/800) = 3/2, giving 50%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:10+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_V_MIXED_00013"
+    },
+    {
+      "stem": "A trader has 500 articles with a total cost price of ₹10,000. He sells 300 articles at 25% profit. At what price per article must he sell each of the remaining 200 articles to earn an overall profit of 20% on the entire lot?",
+      "options": [
+        {
+          "option_text": "₹25 per article — same rate as first lot sold",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹20.50 per article — near cost-price pricing",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹22.50 per article on the remaining 200 items",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹24 per article — 20% profit applied per item",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "CP per article = ₹10,000/500 = ₹20. Revenue from 300 at 25% profit = 300×25 = ₹7,500. Required total revenue for 20% profit on ₹10,000 = ₹12,000. Revenue needed from 200 remaining = 12,000−7,500 = ₹4,500; SP = 4500/200 = ₹22.50. Option D (₹24) is wrong — it applies 20% to individual CP (20×1.2 = 24), ignoring that the above-target profit on the first lot lowers the required selling price on the second.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:10:10+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_V_MIXED_00014"
     }
   ]
 }

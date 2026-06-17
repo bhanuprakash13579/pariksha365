@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "subject": "Quant",
+  "subject": "Quantitative Aptitude",
   "topic": "Ratio & proportion — mixed tiers",
   "topic_code": "QNT_RATIO_PROPORTION_MIXED",
   "description": "Ratio splits, mixtures, proportional reasoning",
@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-22-qnt-rat-07",
       "generated_at": "2026-04-22T22:00:00+00:00",
       "id": "sgk_QNT_RATIO_PROPORTION_MIXED_00007"
+    },
+    {
+      "stem": "In a library, the ratio of fiction books to non-fiction books is 7:3. What fraction of the total books is non-fiction?",
+      "options": [
+        {
+          "option_text": "3/7, the ratio of non-fiction to fiction books",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/10, found by taking 3 out of the 10 total ratio parts",
+          "is_correct": true
+        },
+        {
+          "option_text": "7/10, which is the fraction for fiction books only",
+          "is_correct": false
+        },
+        {
+          "option_text": "7/3, the reciprocal of the non-fiction-to-fiction ratio",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Total ratio parts = 7+3 = 10. Non-fiction fraction = 3/10. Option A (3/7) is the most tempting error — it is the ratio of non-fiction to fiction, not non-fiction to the whole. Option C (7/10) is the fraction representing fiction books, not non-fiction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:12:51+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_MIXED_00008"
+    },
+    {
+      "stem": "Find the third proportional to 6 and 18.",
+      "options": [
+        {
+          "option_text": "24, obtained by adding 6 to each term progressively",
+          "is_correct": false
+        },
+        {
+          "option_text": "36, by doubling the second term in the sequence",
+          "is_correct": false
+        },
+        {
+          "option_text": "54, the correct third proportional to 6 and 18",
+          "is_correct": true
+        },
+        {
+          "option_text": "48, by multiplying the first term by a factor of 8",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "If a:b = b:c, then c = b²/a. Here c = 18²/6 = 324/6 = 54. Short Trick: third proportional = (second term)² ÷ (first term). Option B (36 = 2×18) is the classic error — doubling the middle term instead of using b²/a. Option A treats it as an arithmetic sequence.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:12:51+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_MIXED_00009"
+    },
+    {
+      "stem": "The ratio of copper to zinc in an alloy is 5:3. If 8 kg of copper is added to 24 kg of this alloy, what is the new ratio of copper to zinc?",
+      "options": [
+        {
+          "option_text": "15:9, the original copper-to-zinc ratio before adding",
+          "is_correct": false
+        },
+        {
+          "option_text": "23:9, the correct ratio after adding 8 kg of copper",
+          "is_correct": true
+        },
+        {
+          "option_text": "23:8, confusing the added copper mass with zinc content",
+          "is_correct": false
+        },
+        {
+          "option_text": "7:3, arrived at by rounding 23:9 to nearest simple ratio",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Original 24 kg alloy in ratio 5:3 (total 8 parts) → copper = 24×5/8 = 15 kg, zinc = 9 kg. Adding 8 kg copper: copper = 23 kg, zinc = 9 kg (unchanged). New ratio = 23:9. Option A (15:9) is the original ratio. Option C replaces zinc's 9 with the added quantity 8 — a common slip of substituting the number that was added.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:12:51+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_MIXED_00010"
+    },
+    {
+      "stem": "A's income and expenditure are in the ratio 8:5. If A saves ₹1,800 per month, what is A's monthly expenditure?",
+      "options": [
+        {
+          "option_text": "₹3,000, correct expenditure when savings equals the ratio gap",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹2,880, from multiplying savings by the income ratio 8/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹4,800, which gives A's total monthly income, not expenditure",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,125, applying expenditure ratio 5/8 directly to savings",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Income = 8k, expenditure = 5k, savings = (8−5)k = 3k = ₹1,800 → k = 600. Expenditure = 5×600 = ₹3,000. Short Trick: savings = difference-of-parts × k; find k first, then multiply. Option C (₹4,800) is 8k — A's income, not expenditure. Option B applies 8/5 to savings directly, skipping the step of finding k.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:12:51+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_MIXED_00011"
+    },
+    {
+      "stem": "A invests ₹15,000 for 6 months and B invests ₹12,000 for 9 months in a partnership. In what ratio should the annual profit be divided?",
+      "options": [
+        {
+          "option_text": "5:4, dividing only the capital amounts with no time factor",
+          "is_correct": false
+        },
+        {
+          "option_text": "4:5, the inverted form of the capital-only ratio 5:4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5:6, using time-weighted investment contributions correctly",
+          "is_correct": true
+        },
+        {
+          "option_text": "3:2, from simplifying the time periods 6 months and 9 months",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Profit ratio = capital × time. A: 15,000×6 = 90,000; B: 12,000×9 = 108,000. Ratio = 90,000:108,000 = 5:6. Short Trick: multiply each partner's capital by their duration, then simplify. Option A (5:4) ignores time and only compares 15,000:12,000. Option D uses only the time ratio (6:9 = 2:3), discarding capital entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:12:51+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_MIXED_00012"
+    },
+    {
+      "stem": "A container holds milk and water in the ratio 5:2. When 14 litres of the mixture are removed and replaced with 14 litres of pure water, the ratio becomes 5:9. What was the original total volume of the mixture?",
+      "options": [
+        {
+          "option_text": "21 litres, treating 7 as the direct multiplier without solving",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 litres, from an incorrect setup equating 5k/2k to 5/9",
+          "is_correct": false
+        },
+        {
+          "option_text": "42 litres, by tripling the replaced volume of 14 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "28 litres, found by solving the mixture-replacement equation",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "Let total = 7k. Removing 14 L in ratio 5:2 takes out 10 L milk and 4 L water. After adding 14 L water: milk = 5k−10, water = 2k−4+14 = 2k+10. Setting (5k−10)/(2k+10) = 5/9: 45k−90 = 10k+50 → 35k = 140 → k = 4. Total = 28 L. Option A (21 L) uses k=3 without verifying the final ratio. Option B collapses both components into one ratio, losing the replacement effect.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:12:51+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_MIXED_00013"
+    },
+    {
+      "stem": "If (4a + 3b) : (6a − b) = 5 : 3, what is the ratio a : b?",
+      "options": [
+        {
+          "option_text": "7:9, the correct ratio derived by cross-multiplying both sides",
+          "is_correct": true
+        },
+        {
+          "option_text": "9:7, the inverted form of the correctly simplified ratio",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:7, arising from a sign error when collecting like terms",
+          "is_correct": false
+        },
+        {
+          "option_text": "7:12, from partial cross-multiplication of only the left bracket",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Cross-multiplying: 3(4a+3b) = 5(6a−b) → 12a+9b = 30a−5b → 14b = 18a → a/b = 14/18 = 7/9, so a:b = 7:9. Option B (9:7) is the most tempting trap — it inverts the ratio, confusing a:b with b:a. Option C arises from writing −5b as +5b (sign error), giving 9b = 18a → 1:2, or variant slips yielding 3:7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:12:51+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_MIXED_00014"
     }
   ]
 }

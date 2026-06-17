@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-24-eng-tf-07",
       "generated_at": "2026-04-24T13:20:00+00:00",
       "id": "sgk_ENG_TRANSFORMATION_MIXED_00007"
+    },
+    {
+      "stem": "Which option correctly rewrites 'She was too nervous to speak clearly during the interview' using 'so...that'?",
+      "options": [
+        {
+          "option_text": "She was so nervous that she could speak clearly during the interview.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She was so nervous that she could not speak clearly during the interview.",
+          "is_correct": true
+        },
+        {
+          "option_text": "She was so nervous so she could not speak clearly during the interview.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She was so nervous that she may not speak clearly during the interview.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct because 'too + adjective + to + verb' converts to 'so + adjective + that + subject + cannot + verb.' The infinitive 'to speak' becomes 'could not speak.' Option A reverses the meaning entirely. Option C uses 'so...so' which is an ungrammatical double-connector. Option D uses 'may not,' implying mere possibility rather than inability, which changes the original meaning.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:30:24+00:00",
+      "id": "sgk_ENG_TRANSFORMATION_MIXED_00008"
+    },
+    {
+      "stem": "Which of the following is the correct passive form of 'The government has launched several welfare schemes for the rural poor'?",
+      "options": [
+        {
+          "option_text": "Several welfare schemes were launched by the government for the rural poor.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Several welfare schemes have been launched by the government for the rural poor.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Several welfare schemes are launched by the government for the rural poor.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Several welfare schemes had been launched by the government for the rural poor.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct because the active voice uses present perfect tense ('has launched'), whose passive equivalent is 'have/has been + past participle' → 'have been launched.' Option A uses simple past ('were launched'), which changes the tense. Option C uses simple present ('are launched'), losing the perfect aspect. Option D uses past perfect ('had been launched'), which implies an action completed before another past event — a different tense altogether.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:30:24+00:00",
+      "id": "sgk_ENG_TRANSFORMATION_MIXED_00009"
+    },
+    {
+      "stem": "Which sentence correctly transforms 'The suspect refused to confess unless his lawyer was present' into an 'if...not' conditional?",
+      "options": [
+        {
+          "option_text": "The suspect refused to confess if his lawyer was not present.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The suspect refused to confess if his lawyer would not be present.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The suspect refused not to confess if his lawyer was present.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The suspect refused to confess if his lawyer had not been present.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct: 'unless P' = 'if not P' with tense preserved — 'unless his lawyer was present' → 'if his lawyer was not present.' Option B introduces 'would,' creating a modal conditional that alters the original meaning. Option C shifts the negation to 'refused,' producing a double-negative error ('refused not to confess') that reverses the meaning. Option D shifts to past perfect ('had not been present'), which implies a time-sequence relationship not present in the original.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:30:24+00:00",
+      "id": "sgk_ENG_TRANSFORMATION_MIXED_00010"
+    },
+    {
+      "stem": "Which option correctly converts 'The Ganga flows faster than any other river in India' to superlative degree?",
+      "options": [
+        {
+          "option_text": "The Ganga flows most fast among all rivers in India.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The Ganga flows the fastest of all rivers in India.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The Ganga is fastest flowing than all rivers in India.",
+          "is_correct": false
+        },
+        {
+          "option_text": "No river in India flows as fast as the Ganga flows.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: 'faster than any other' in comparative becomes 'the fastest of all' in superlative. Option A uses 'most fast,' which is incorrect — the irregular superlative of 'fast' is 'fastest,' not 'most fast.' Option C wrongly combines superlative form 'fastest' with the comparative connector 'than' — superlatives do not take 'than.' Option D correctly expresses the idea but in positive degree ('as fast as'), not superlative.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:30:24+00:00",
+      "id": "sgk_ENG_TRANSFORMATION_MIXED_00011"
+    },
+    {
+      "stem": "Which sentence correctly converts 'Although the evidence was compelling, the jury acquitted the accused' into a compound sentence?",
+      "options": [
+        {
+          "option_text": "The evidence was compelling, but the jury acquitted the accused still.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The evidence was compelling, yet the jury acquitted the accused.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The evidence was compelling, so the jury acquitted the accused.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The evidence being compelling, the jury acquitted the accused.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: the concessive subordinating conjunction 'although' converts to the coordinating conjunction 'yet' to form a compound sentence expressing contrast. Option A uses 'but...still' — while 'but' is valid, placing 'still' at the end is ungrammatical (it must precede the verb). Option C uses 'so,' which implies a causal consequence, completely inverting the meaning. Option D uses a participial phrase ('being compelling'), which produces a simple sentence, not a compound one.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:30:24+00:00",
+      "id": "sgk_ENG_TRANSFORMATION_MIXED_00012"
+    },
+    {
+      "stem": "Which sentence correctly transforms 'She had scarcely reached the station when the train departed' using an inverted (negative-adverb fronted) structure?",
+      "options": [
+        {
+          "option_text": "Scarcely had she reached the station when the train departed.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Scarcely she had reached the station when the train departed.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Scarcely had she reached the station than the train departed.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Scarcely did she reach the station when the train departed.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct: fronting 'scarcely' triggers subject-auxiliary inversion → 'Scarcely + had + subject + past participle + when.' Option B places the auxiliary after the subject ('she had'), failing to invert — a very common error. Option C uses 'than' after 'scarcely,' which is incorrect; 'than' belongs to the 'no sooner...than' pattern — 'scarcely/hardly' always pairs with 'when.' Option D uses 'did...reach' (simple past), but the original has past perfect ('had reached'); inversion must preserve the original tense.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:30:24+00:00",
+      "id": "sgk_ENG_TRANSFORMATION_MIXED_00013"
+    },
+    {
+      "stem": "Which of the following correctly transforms the Type 3 conditional 'If he had invested wisely in his youth, he would not have struggled financially in old age' into a Type 2 conditional?",
+      "options": [
+        {
+          "option_text": "If he invests wisely in his youth, he will not struggle financially in old age.",
+          "is_correct": false
+        },
+        {
+          "option_text": "If he invested wisely in his youth, he would not struggle financially in old age.",
+          "is_correct": true
+        },
+        {
+          "option_text": "If he had been investing wisely in his youth, he would not struggle financially.",
+          "is_correct": false
+        },
+        {
+          "option_text": "If he would have invested wisely, he would not have struggled financially in old age.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: Type 3 (if + past perfect ... would have + V3) expresses a counterfactual past; Type 2 (if + simple past ... would + V1) expresses a hypothetical present/future. The conversion requires 'had invested' → 'invested' and 'would not have struggled' → 'would not struggle.' Option A converts to Type 1 (real future), not Type 2. Option C uses past continuous ('had been investing') in the if-clause — neither Type 2 nor a valid inversion. Option D places 'would have' inside the if-clause, which is a widespread Indian-English error; 'would' never appears in the if-clause of standard conditionals.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:30:24+00:00",
+      "id": "sgk_ENG_TRANSFORMATION_MIXED_00014"
     }
   ]
 }

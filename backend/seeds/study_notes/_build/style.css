@@ -15,9 +15,9 @@ blockquote {
     font-style: italic;
 }
 code { background: #f1f5f9; padding: 1pt 3pt; border-radius: 3pt; }
-table { border-collapse: collapse; margin: 8pt 0; }
-table th, table td { border: 1px solid #94a3b8; padding: 4pt 8pt; }
-table th { background: #e2e8f0; text-align: left; }
+table { border-collapse: collapse; margin: 8pt 0; width: 100%; table-layout: auto; }
+table th, table td { border: 1px solid #94a3b8; padding: 3pt 6pt; font-size: 9pt; line-height: 1.35; word-break: break-word; }
+table th { background: #e2e8f0; text-align: left; font-size: 8.5pt; letter-spacing: 0.2pt; }
 hr { border: 0; border-top: 1px dashed #94a3b8; margin: 12pt 0; }
 
 /* highlight boxes */

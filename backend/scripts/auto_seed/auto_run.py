@@ -96,6 +96,12 @@ MANDATORY QUALITY RULES — violating any one will cause REJECTION:
 ④ EXAMINER MINDSET — each question must:
    • Be genuinely plausible in the next exam paper (not trivial, not obscure trivia)
    • Have distractors that represent specific real misunderstandings, not random noise
+   • EASY questions: a student who has studied MUST recall the answer — do NOT make
+     wrong options obviously absurd (e.g. "Jobs in urban areas" for MGNREGA, "President"
+     for a Finance Ministry role). All 4 options must be plausibly related to the topic.
+     BAD easy distractor: "50 days" and "Jobs in urban areas" for an MGNREGA question
+     GOOD easy distractor: "100 days only in drought years", "150 days in NE states",
+       "100 days for BPL families only" — forces real knowledge, not elimination
    • For hard questions: require multi-step reasoning or precise recall
    • Cover PYQ-high-hit angles: GI tags, constitutional articles, folk arts, tribal
      cultures, scientific terminology, niche historical events
@@ -204,7 +210,7 @@ def _call_claude(prompt: str, model_flag: list[str]) -> dict | None:
            "--output-format", "text", "--effort", "medium"] + model_flag + [prompt]
     try:
         result = subprocess.run(cmd, capture_output=True, text=True,
-                                timeout=300, cwd=str(_BACKEND))
+                                timeout=450, cwd=str(_BACKEND))
         if result.returncode != 0:
             err = (result.stderr or "").strip()[:300]
             print(f"\n    [claude exit {result.returncode}] {err}", flush=True)
@@ -218,7 +224,7 @@ def _call_claude(prompt: str, model_flag: list[str]) -> dict | None:
         print(f"\n    [JSON error] {e}", flush=True)
         return None
     except subprocess.TimeoutExpired:
-        print("\n    [timeout 300s]", flush=True)
+        print("\n    [timeout 450s]", flush=True)
         return None
     except Exception as e:
         print(f"\n    [error] {e}", flush=True)
@@ -237,7 +243,7 @@ def _generate_one(brief: dict, model_flag: list[str], dry_run: bool) -> tuple[st
                     "topic_code": tc, "questions": []}
 
     stems = brief.get("existing_stems", [])
-    stems_text = "\n".join(f"  - {s[:100]}" for s in stems[:15]) or "  (none yet)"
+    stems_text = "\n".join(f"  - {s[:100]}" for s in stems[:10]) or "  (none yet)"
     prompt = _PROMPT.format(
         topic_code=tc,
         subject=brief["subject"],
@@ -263,8 +269,8 @@ def _generate_one(brief: dict, model_flag: list[str], dry_run: bool) -> tuple[st
 # Main loop
 # ──────────────────────────────────────────────────────────────────────────────
 
-def run(n_topics: int = 10, target_total: int = 50000,
-        workers: int = 4, model: str = "sonnet", dry_run: bool = False) -> None:
+def run(n_topics: int = 20, target_total: int = 50000,
+        workers: int = 8, model: str = "sonnet", dry_run: bool = False) -> None:
 
     model_id = MODEL_ALIASES.get(model, model)
     model_flag = ["--model", model_id] if model != "sonnet" else []
@@ -370,9 +376,9 @@ def main() -> int:
     ap = argparse.ArgumentParser(
         description="Autonomous generator — subprocess per topic, no context drift"
     )
-    ap.add_argument("--topics", type=int, default=10, help="Topics per wave (default 10)")
+    ap.add_argument("--topics", type=int, default=20, help="Topics per wave (default 20)")
     ap.add_argument("--target", type=int, default=50000, help="Stop when pool ≥ this")
-    ap.add_argument("--workers", type=int, default=4, help="Parallel workers (default 4)")
+    ap.add_argument("--workers", type=int, default=8, help="Parallel workers (default 8)")
     ap.add_argument("--model", default="sonnet",
                     choices=list(MODEL_ALIASES.keys()) + list(MODEL_ALIASES.values()),
                     help="Model to use (default: sonnet)")

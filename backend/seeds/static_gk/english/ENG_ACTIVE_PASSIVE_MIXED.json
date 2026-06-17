@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-22-eng-ap-07",
       "generated_at": "2026-04-22T05:50:00+00:00",
       "id": "sgk_ENG_ACTIVE_PASSIVE_MIXED_00007"
+    },
+    {
+      "stem": "Which option correctly converts 'They will launch the new satellite next month' into passive voice?",
+      "options": [
+        {
+          "option_text": "The new satellite will be launching next month.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The new satellite will be launched next month.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The new satellite would be launched next month.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The new satellite is being launched next month.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: simple future passive = will + be + past participle (will be launched). Option A uses a progressive form 'will be launching' which is not a valid passive structure. Option C introduces 'would', shifting the meaning to conditional. Option D uses present continuous passive, mismatching the future time frame.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:35+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_MIXED_00008"
+    },
+    {
+      "stem": "Choose the correct passive voice form of 'The committee selects candidates through written interviews'?",
+      "options": [
+        {
+          "option_text": "Candidates are being selected by the committee through written interviews.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Candidates were selected by the committee through written interviews.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Candidates are selected by the committee through written interviews.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Candidates have been selected by the committee through written interviews.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct: simple present active (selects) → simple present passive (are selected). Option A (are being selected) is the passive of 'is currently selecting' — present continuous. Option B (were selected) shifts to simple past. Option D (have been selected) is present perfect passive, implying completion rather than habitual action.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:35+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_MIXED_00009"
+    },
+    {
+      "stem": "Identify the correct passive transformation of 'The chef was preparing a special dish for the guests when the owner arrived'?",
+      "options": [
+        {
+          "option_text": "A special dish was being prepared for the guests by the chef when the owner arrived.",
+          "is_correct": true
+        },
+        {
+          "option_text": "A special dish was prepared for the guests by the chef when the owner arrived.",
+          "is_correct": false
+        },
+        {
+          "option_text": "A special dish had been prepared for the guests by the chef when the owner arrived.",
+          "is_correct": false
+        },
+        {
+          "option_text": "A special dish is being prepared for the guests by the chef when the owner arrived.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct: past continuous active (was preparing) → past continuous passive (was being + V3). Option B (was prepared) is simple past passive — wrong tense. The most common mistake is Option B; candidates forget the 'being' in progressive passives. Option C uses past perfect, and Option D incorrectly uses present continuous despite a clearly past-tense context clue ('when the owner arrived').",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:35+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_MIXED_00010"
+    },
+    {
+      "stem": "When 'The principal awarded Riya the gold medal' is converted into passive voice, which form is grammatically correct?",
+      "options": [
+        {
+          "option_text": "The gold medal was awarded Riya by the principal.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Riya was awarded the gold medal by the principal.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The gold medal was awarded to Riya from the principal.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Riya has been awarded the gold medal by the principal.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: with two objects (indirect object = Riya, direct object = the gold medal), the indirect object preferentially becomes the subject in passive voice: 'Riya was awarded the gold medal by the principal.' Option A drops the required preposition 'to' if the direct object is fronted. Option C incorrectly uses 'from' instead of 'by' for the agent. Option D shifts the tense to present perfect without justification.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:35+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_MIXED_00011"
+    },
+    {
+      "stem": "Which sentence correctly renders 'Someone had stolen my bicycle before I reached home' in passive voice?",
+      "options": [
+        {
+          "option_text": "My bicycle had been stolen before I reached home.",
+          "is_correct": true
+        },
+        {
+          "option_text": "My bicycle was stolen before I reached home by someone.",
+          "is_correct": false
+        },
+        {
+          "option_text": "My bicycle has been stolen before I reached home.",
+          "is_correct": false
+        },
+        {
+          "option_text": "My bicycle had stolen before I reached home by someone.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct: past perfect active (had + stolen) → past perfect passive (had been + V3 = had been stolen); the indefinite agent 'someone' is dropped as it adds no information. Option B uses simple past passive, losing the past-perfect aspect that signals prior completion. Option C uses present perfect, changing the tense entirely. Option D omits 'been', producing a non-passive, ungrammatical structure.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:35+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_MIXED_00012"
+    },
+    {
+      "stem": "Three of the following passive constructions are grammatically correct. Which one contains an error?",
+      "options": [
+        {
+          "option_text": "The letter was being written by him when I called.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The homework must have been completed by the students by noon.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The awards have been distributed to all eligible winners.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The new bridge is been built by the state engineers.",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is the erroneous sentence: 'is been built' is not a valid English passive form. The present continuous passive requires 'is being built' (is + being + V3). Options A (past continuous passive), B (modal perfect passive: must + have been + V3), and C (present perfect passive) are all correctly formed. Candidates frequently confuse 'is been' with 'is being' under exam pressure.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:35+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_MIXED_00013"
+    },
+    {
+      "stem": "Which option correctly converts the present continuous active sentence 'The authorities are looking into all complaints filed last week' into passive voice?",
+      "options": [
+        {
+          "option_text": "All complaints filed last week are looked into by the authorities.",
+          "is_correct": false
+        },
+        {
+          "option_text": "All complaints filed last week are being looked into by the authorities.",
+          "is_correct": true
+        },
+        {
+          "option_text": "All complaints filed last week were being looked into by the authorities.",
+          "is_correct": false
+        },
+        {
+          "option_text": "All complaints filed last week have been looked into by the authorities.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: present continuous passive = am/is/are + being + V3; crucially, the phrasal verb 'look into' must remain intact — splitting it into 'looked by ... into' is a known error. Option A (are looked into) is simple present passive, not continuous. Option C (were being) shifts to past continuous. Option D (have been looked into) is present perfect passive. This question tests both tense accuracy and phrasal verb passivisation — a paired challenge that trips many candidates.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-08",
+      "generated_at": "2026-06-08T15:51:35+00:00",
+      "id": "sgk_ENG_ACTIVE_PASSIVE_MIXED_00014"
     }
   ]
 }

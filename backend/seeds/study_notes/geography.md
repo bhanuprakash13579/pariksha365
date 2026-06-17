@@ -205,7 +205,7 @@ of long-period comets.
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["UNIVERSE AND SOLAR SYSTEM"]:::root
     R --> U["Universe Facts"]:::date
     R --> P["Planets — 8 in order"]:::key
@@ -293,7 +293,7 @@ graph LR
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["EARTH'S INTERIOR AND ROCKS"]:::root
     R --> L["3 Layers"]:::proc
     R --> D["Discontinuities"]:::key
@@ -577,7 +577,7 @@ dinosaurs.
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["PLATE TECTONICS"]:::root
     R --> CT["Continental Drift Theory"]:::date
     R --> PB["Plate Boundaries"]:::proc
@@ -872,6 +872,23 @@ graph LR
 - **1 Sep onwards** — retreat begins NW → SE.
 - **15 Oct** — monsoon fully retreated.
 
+<div class="keypoint">
+
+**Exam shortcut — Monsoon onset dates (descending south to north):**
+"**K-M-D-I**" = **K**erala (1 Jun) → **M**umbai (10 Jun) → **D**elhi (end Jun) → **I**ndia complete (15 Jul).
+Retreat is the reverse — NW first, SE last. Onset moves N; retreat moves S.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP — El Niño vs La Niña effects on India:**
+El Niño = warming in Pacific = **weak/delayed Indian monsoon** (drought risk).
+La Niña = cooling in Pacific = **strong/early Indian monsoon** (flood risk).
+Candidates often flip these. Warm Pacific → Indian Ocean temperature contrast weakens → less monsoon pull.
+
+</div>
+
 **NE monsoon** (Oct–Dec) — brings ~60% of **Tamil Nadu's** annual rainfall;
 also coastal AP + Rayalaseema + Karaikal + S. Kerala. Rest of India is dry.
 
@@ -998,7 +1015,7 @@ also coastal AP + Rayalaseema + Karaikal + S. Kerala. Rest of India is dry.
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["ATMOSPHERE AND CLIMATE"]:::root
     R --> L["5 Atmospheric Layers"]:::key
     R --> TR["TRAP: Temperature changes per layer"]:::trap
@@ -1049,6 +1066,44 @@ than its latitude suggests.
 **El Niño** occurs in equatorial Pacific; **upwelling** of cold Humboldt
 current off Peru drives fisheries + rainfall patterns.
 
+#### Warm currents — key details
+
+| Current | Ocean | Direction | Notable effect |
+|---------|-------|-----------|---------------|
+| **Gulf Stream** | N. Atlantic | N. America east coast → Europe | Keeps W. Europe mild; extension = N. Atlantic Drift |
+| **Kuroshio (Japan Current)** | N. Pacific | Japan east coast → N. Pacific | Warms Japan's Pacific coast |
+| **Brazil Current** | S. Atlantic | Along Brazil coast southward | Warm water along E. South America |
+| **Agulhas Current** | Indian | Along E. Africa / S. Africa | Warm; meets cold Benguela off Cape |
+| **North Equatorial Current** | Atlantic + Pacific | Westward near equator | Feeds Gulf Stream and Kuroshio |
+
+#### Cold currents — key details + effects on deserts
+
+| Current | Ocean | Direction | Notable effect |
+|---------|-------|-----------|---------------|
+| **Labrador Current** | N. Atlantic | S. Canada / US east coast | Dense fogs off Newfoundland (Grand Banks) |
+| **Canary Current** | N. Atlantic | W. Africa (Morocco → Sahara coast) | Cooling → **Sahara Desert** on west African coast |
+| **California Current** | N. Pacific | US west coast (Oregon → Baja) | Cool, foggy California summers |
+| **Humboldt / Peru Current** | S. Pacific | Peru / Chile coast | Makes **Atacama Desert** (driest); rich upwelling fishing grounds |
+| **Benguela Current** | S. Atlantic | W. Africa (Angola → S. Africa) | Causes **Namib Desert** on Namibia coast |
+| **Oyashio Current** | N. Pacific | Meets Kuroshio off Japan | Rich fishing grounds (plankton-rich cold water) |
+
+<div class="examtip">
+
+**The #1 exam rule on ocean currents:**
+
+**Cold currents cause deserts on the WEST coasts of continents.**
+- Canary (cold) → Sahara (W. Africa)
+- Benguela (cold) → Namib Desert (W. Africa / Namibia)
+- Humboldt (cold) → Atacama Desert (W. South America)
+- California (cold) → Dry coastal California / Baja California
+
+**Warm currents cause mild, wet climates on WEST coasts.**
+- Gulf Stream + N. Atlantic Drift (warm) → mild, rainy W. Europe (UK, France, Norway)
+
+Memory hook: **"Cold west = dry; Warm west = wet"**
+
+</div>
+
 ### 5.3 Tides
 
 - Caused by **gravitational pull** of Moon (dominant) + Sun.
@@ -1074,7 +1129,7 @@ India, ~7 m); Okha, Mumbai, Haldia, Paradip, Chennai, Vizag, Cochin, Tuticorin.
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["OCEANS, CURRENTS, TIDES"]:::root
     R --> OC["5 Oceans"]:::key
     R --> CU["Ocean Currents"]:::key
@@ -1109,13 +1164,28 @@ flowchart TD
   **Mirzapur, UP**.
 - **Tropic of Cancer (23.5°N)** passes through **8 Indian states**: Gujarat,
   Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura,
-  Mizoram. Mnemonic — **"Gujarat Rajasthan Ma CH JH BeTrMi"** → GR MaCH JH
-  BeTrMi (or any 8-item jingle).
+  Mizoram.
+
+<div class="keypoint">
+
+**Mnemonic — 8 states on Tropic of Cancer (W → E):**
+"**Gujju Rajaji Meets Cheerful Jharkhand With Tripura's Mizo**"
+→ **Gu**jarat · **Ra**jasthan · **M**adhya Pradesh · **Ch**hattisgarh · **Jh**arkhand · **W**est Bengal · **Tri**pura · **Mi**zoram.
+
+</div>
 - **Area**: 3.287 million km² — **7th largest country**.
 - **Coastline**: 7,516.6 km (mainland + islands).
 - **Land border**: 15,106.7 km, shared with 7 countries.
 
-### 6.2 Land borders (mnemonic — "BBC + MAP-N"):
+### 6.2 Land borders (mnemonic — "PACNBM"):
+
+<div class="keypoint">
+
+**Mnemonic — India's 7 land neighbours (W → E clockwise): "PACNBM-B"**
+**P**akistan · **A**fghanistan · **C**hina · **N**epal · **B**hutan · **M**yanmar · **B**angladesh
+Say: "**PAC-N-BMB**" (like a drumbeat). Afghanistan is shortest (106 km); Bangladesh is longest (4,096 km).
+
+</div>
 
 Starting clockwise from W:
 - **Pakistan** (3,323 km, Radcliffe Line) — 4 states: Gujarat, Rajasthan,
@@ -1139,6 +1209,22 @@ Maritime: Sri Lanka (**Palk Strait**), Maldives.
 - **Afghanistan** = shortest (106 km, through PoK).
 - **McMahon Line** = India-China (E); **Durand Line** = India-Afghanistan;
   **Radcliffe Line** = India-Pakistan.
+
+<div class="keypoint">
+
+**Mnemonic — India's 3 boundary lines: "R-D-M"**
+**R**adcliffe = **R**ajasthan/Punjab/J&K (India-Pakistan) — drawn by Cyril Radcliffe in 1947.
+**D**urand = **D**awn of Pakistan (India-Afghanistan, 1893, Henry Durand).
+**M**cMahon = **M**ain China border (NE, 1914, Henry McMahon).
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP — "Actual Line of Control" (LAC) is NOT the same as the McMahon Line.** The McMahon Line is the disputed NE boundary drawn in 1914. The LAC is the de-facto boundary India and China currently observe (loosely). China rejects the McMahon Line entirely. Examiners sometimes ask which is the formal vs de-facto boundary.
+
+</div>
+
 - Standard Meridian — 1 state covers it (UP).
 - Indira Point (Great Nicobar) = southernmost tip of Indian territory
   (overall); Kanyakumari = southernmost on mainland.
@@ -1147,7 +1233,7 @@ Maritime: Sri Lanka (**Palk Strait**), Maldives.
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["INDIA: LOCATION AND BORDERS"]:::root
     R --> LL["Latitudes + Longitudes"]:::key
     R --> BO["Neighbouring Countries"]:::key
@@ -1256,6 +1342,14 @@ graph TD
 
 ### 7.1 Himalayas — 3 parallel ranges + 4 divisions by longitude
 
+<div class="keypoint">
+
+**Mnemonic — Himalayan ranges South → North: "S-L-G-T"**
+**S**hiwaliks → **L**esser (Himachal) → **G**reater (Himadri) → **T**rans-Himalayas.
+Think: "**Some Little Giants Transcend**."
+
+</div>
+
 **By parallel range (S to N)**:
 
 1. **Shiwaliks** (Outer Himalayas) — foothills, 900–1,200 m; Duns here
@@ -1267,6 +1361,12 @@ graph TD
    Devi, Nanga Parbat; perpetually snow-covered; 6,000+ m.
 4. **Trans-Himalayas** — N of Greater, includes Karakoram, Ladakh, Zanskar;
    **K2 (8611 m)** = 2nd highest peak globally (in PoK Karakoram).
+
+<div class="examtip">
+
+⚠️ **TRAP:** K2 (8,611 m) is India's highest peak only when counting PoK (Pakistan-occupied Kashmir). **Kanchenjunga (8,586 m, Sikkim)** is India's highest peak in undisputed territory. Examiners ask both versions — read the question carefully.
+
+</div>
 
 **By longitude (W to E)**:
 
@@ -1345,6 +1445,17 @@ Karnataka + Kerala (**Doddabetta** = Nilgiri's highest, 2,637 m).
 
 ### Mountain Passes of India — Quick Reference
 
+<div class="keypoint">
+
+**Quick recall — 5 most-asked passes:**
+- **Zoji La** — J&K, Srinagar ↔ Leh (only winter link to Ladakh)
+- **Rohtang** — HP, Kullu ↔ Lahaul (Atal Tunnel below it)
+- **Nathu La** — Sikkim, India ↔ China (reopened 2006 for trade)
+- **Shipki La** — HP, India ↔ China (Sutlej river enters India here)
+- **Khardung La** — Ladakh, Leh ↔ Nubra Valley (world's highest motorable pass)
+
+</div>
+
 Passes appear in every SSC CGL, CDS, and State PSC paper. Know the location, state, and what each connects.
 
 | Pass | State / Region | Connects | Altitude | Significance |
@@ -1357,6 +1468,7 @@ Passes appear in every SSC CGL, CDS, and State PSC paper. Know the location, sta
 | **Nathu La** | Sikkim | India ↔ China (Tibet) | 4,310 m | Reopened 2006 for trade; silk route link |
 | **Jelep La** | Sikkim | Sikkim ↔ Chumbi Valley (Tibet/China) | 4,390 m | Historical British India-Tibet route |
 | **Bomdi La** | Arunachal Pradesh | India ↔ China (Tibet) | 2,217 m | Scene of 1962 Indo-China war fighting |
+| **Bum La** | Arunachal Pradesh | India ↔ China (Tibet); near Tawang | 4,700 m | India-China trade route; near McMahon Line |
 | **Sela Pass** | Arunachal Pradesh | Tawang ↔ rest of Arunachal | 4,170 m | Sela tunnel (2024) built for all-weather access |
 | **Khyber Pass** | Pakistan (PoK border) | Pakistan ↔ Afghanistan | 1,070 m | Historic invasion route into Indian subcontinent |
 | **Bolan Pass** | Pakistan (Balochistan) | Pakistan ↔ Afghanistan | 1,800 m | Gateway used by IVC-era traders |
@@ -1376,14 +1488,14 @@ Passes appear in every SSC CGL, CDS, and State PSC paper. Know the location, sta
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["PHYSIOGRAPHY OF INDIA"]:::root
     R --> HM["Himalayas"]:::key
     R --> NP["Northern Plains"]:::key
     R --> PP["Peninsular Plateau"]:::key
     R --> CG["Coastal Plains + Ghats"]:::key
     HM --> HM1["3 parallel ranges:<br>Himadri (Great Himalaya) — highest peaks<br>Himachal (Middle) — hill stations<br>Shiwaliks (Outer) — newest; terai"]:::key
-    HM --> HM2["Highest peak in India: K2 (8611 m, PoK)<br>Mt Everest (8848 m) in Nepal<br>Youngest fold mountains — still rising"]:::key
+    HM --> HM2["Highest peak in India (undisputed): Kanchenjunga (8586 m, Sikkim)<br>K2 (8611 m) is in PoK — counts only if PoK included<br>Mt Everest (8848 m) is in Nepal"]:::key
     NP --> NP1["Formed by alluvial deposits of Himalayan rivers<br>Most fertile plain in world<br>Bhangar (old alluvium) vs Khadar (new flood plain)"]:::key
     PP --> PP1["Ancient (1.5 billion years old)<br>Deccan Trap: basalt rock from volcanic eruptions<br>Average height 600-900 m"]:::key
     PP --> PP2["Highest peak on Deccan: Anamudi 2695 m<br>(Western Ghats, Kerala)<br>Highest in Eastern Ghats: Mahendragiri"]:::key
@@ -1552,6 +1664,14 @@ graph TD
 
 ### 8.2 Himalayan rivers — key facts
 
+<div class="keypoint">
+
+**Quick recall — Ganga's major tributaries (Left bank vs Right bank):**
+- **Left bank** (from Nepal/Bihar): **G**omti, **G**haghara, **G**andak, **K**osi → "**GGG-K**" — all from Nepal hills.
+- **Right bank** (from peninsular/central): **Y**amuna, **S**on, **C**hambal, **B**etwa → "**YSCB**."
+
+</div>
+
 - **Indus** — 3,180 km (710 km in India) — from Tibet; enters India at Leh;
   flows through J&K, Ladakh, PoK, Pakistan → Arabian Sea.
 - **Ganga** — 2,525 km (largest basin in India) — **Source: Gangotri
@@ -1577,6 +1697,21 @@ Mnemonic: **"NTSML"** = Narmada, Tapi, Sabarmati, Mahi, Luni — the five main w
 
 </div>
 
+<div class="keypoint">
+
+**Mnemonic — East-flowing peninsular rivers (S to N along east coast): "MaGKaKr"**
+**Ma**hanadi → **G**odavari → **K**rishna → **Ka**veri (tip of peninsula — wait, Kaveri is more S than Krishna).
+Order by mouth (N to S on east coast): **Mahanadi → Godavari → Krishna → Kaveri**.
+Think: "**M-G-K-K**" = "**Many Gods Keep Kneeling**."
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** Both Godavari and Kaveri are called "Dakshina Ganga (Ganga of the South)." When the question asks "which river is called Dakshina Ganga?" — the answer is **Godavari** (more commonly). Kaveri is called "Dakshin Ganga" locally in TN. Don't pick Kaveri over Godavari without reading the full question.
+
+</div>
+
 **East-flowing (to Bay of Bengal; deltas)**:
 - **Godavari** — 1,465 km, **longest Peninsular river + longest entirely within
   India**. Source: **Trimbak, Nashik** (MH). "Dakshina Ganga."
@@ -1591,6 +1726,12 @@ Mnemonic: **"NTSML"** = Narmada, Tapi, Sabarmati, Mahi, Luni — the five main w
 - **Sabarmati** — 371 km (Gujarat; Dhebar Lake source).
 - **Mahi** — 583 km (MP → Guj).
 - **Luni** — Rajasthan; ephemeral; ends in Rann.
+
+<div class="examtip">
+
+⚠️ **TRAP — West-flowing rivers form ESTUARIES, not DELTAS.** Why? Because they flow through rift valleys with steep gradients — they rush to the sea, depositing little sediment. East-flowing rivers cross gentle slopes, depositing sediment to build rich deltas (Godavari, Krishna, Kaveri, Mahanadi). Exam questions often describe a river and ask "delta or estuary" — check which direction it flows first.
+
+</div>
 
 ### 8.4 Indus Waters Treaty (1960)
 
@@ -1618,7 +1759,7 @@ Most resilient cross-border water treaty — survived 3 wars.
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["RIVERS OF INDIA"]:::root
     R --> HS["2 River Systems"]:::proc
     R --> GN["Ganga + Brahmaputra"]:::key
@@ -1861,7 +2002,7 @@ graph LR
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["INDIAN CLIMATE AND MONSOON"]:::root
     R --> SE["4 Seasons"]:::proc
     R --> MO["Monsoon Mechanism"]:::key
@@ -1886,6 +2027,14 @@ flowchart TD
 
 **6 major soil types** (ICAR classification):
 
+<div class="keypoint">
+
+**Quick recall — 4 exam-critical soils: "ABRL"**
+**A**lluvial (most widespread, most fertile) · **B**lack/Regur (cotton, self-ploughing) · **R**ed (iron-oxide colour, millets) · **L**aterite (leached, cashew/tea/coffee).
+Rule of thumb: **biggest area = Alluvial; best for cotton = Black; poorest fertility = Laterite**.
+
+</div>
+
 | Soil | % of India | Region | Crops |
 |------|-----------|--------|-------|
 | **Alluvial** | ~43% | Indo-Gangetic plain, coastal + delta | Rice, wheat, sugarcane, jute, oilseeds |
@@ -1897,6 +2046,25 @@ flowchart TD
 
 **Also**: Saline / Alkaline (Reh — Punjab, Haryana); Peaty + Marshy (Kerala
 Kuttanad, Sundarbans).
+
+### 10.1 Soil colour, states, and fertility — complete table
+
+<div class="examtip">
+
+Examiners ask: "Which soil is black?", "Why is red soil red?", "Which soil is brick-red?". Memorise the colour column — it's the fastest giveaway in a question.
+
+</div>
+
+| Soil | States | Colour | Key crops | Why that colour |
+|------|--------|--------|-----------|----------------|
+| **Alluvial** | UP, Bihar, Punjab, WB, Rajasthan (doabs), coastal plains | Light grey / yellowish | Rice, wheat, sugarcane, jute, oilseeds | River sediment deposits — varied minerals |
+| **Black / Regur** | Maharashtra, MP, Gujarat, Karnataka, AP | **Black** | **Cotton**, jowar, linseed, sugarcane | Basalt → iron + titanium compounds turn soil black |
+| **Red and Yellow** | AP, Telangana, Tamil Nadu, Odisha, Chhattisgarh | **Red / Yellow** | Groundnuts, millets, cotton, tobacco | Iron oxide (Fe₂O₃) → red; yellow when hydrated |
+| **Laterite** | Kerala, Karnataka, NE states, Odisha (high-rainfall hills) | **Brick-red** | Cashew, coconut, tea, coffee, rubber | Heavy leaching removes silica; iron + aluminium remain |
+| **Arid / Desert** | Rajasthan, Gujarat (Rann of Kutch) | Sandy / light brown | Bajra, guar (with irrigation) | Low rainfall; little organic matter |
+| **Mountain / Forest** | Himalayas, NE states (hill slopes) | Brown / dark brown | Tea, fruits, spices, vegetables | Forest humus; organic decay on slopes |
+| **Peaty / Marshy** | Kerala (Kuttanad), WB (Sundarbans), Odisha deltas | Dark / black | Rice | High organic content; waterlogged |
+| **Saline / Reh / Usar** | UP, Haryana, Punjab (semi-arid canal zones) | White crust on surface | Very poor; needs reclamation | Salt accumulation through capillary action |
 
 ### 10.1 Exam hooks
 
@@ -1922,13 +2090,19 @@ Khadar = new alluvium (lighter, sandy, near river banks) · Bhangar = old alluvi
 - **Red soil** gets its colour from **iron oxide**.
 - Khadar (new alluvium) vs Bhangar (old alluvium).
 
+<div class="examtip">
+
+⚠️ **TRAP — Laterite soil is NOT good for food crops.** The name "laterite" comes from Latin _later_ = brick — it literally hardens like a brick when dry. Heavy rain leaches away nutrients (nitrogen, phosphorus) leaving only iron and aluminium oxides. Plantation crops (tea, coffee, cashew, rubber) thrive here because they can survive poor soil. Rice and wheat cannot. Don't be fooled by "fertile-looking" hill areas.
+
+</div>
+
 ---
 
 # Part E — India: Human + Economic {#part-e}
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["SOILS OF INDIA"]:::root
     R --> A["Alluvial Soil"]:::key
     R --> B["Black Soil (Regur)"]:::key
@@ -1969,7 +2143,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["POPULATION OF INDIA"]:::root
     R --> C["Census 2011 Key Figures"]:::date
     R --> ST["State Rankings"]:::key
@@ -1994,11 +2168,26 @@ flowchart TD
 
 ### 12.1 3 cropping seasons
 
+<div class="keypoint">
+
+**Mnemonic — Kharif vs Rabi crops:**
+**Kharif = "Rice Jumps Cheerfully" →** Rice, Jowar, Cotton (sown in June, harvested Oct; monsoon crops).
+**Rabi = "Wheat Barely Grows in Mustard" →** Wheat, Barley, Gram, Mustard (sown Oct, harvested Mar; winter crops).
+Rule: **K**harif starts in **J**une (both have "J" sound → Jun); **R**abi rhymes with **R**abi (winter = Rabi = rabbi = scholar who studies in winter).
+
+</div>
+
 - **Kharif** (Jun–Oct, monsoon) — **rice, maize, bajra, jowar, ragi, cotton,
   sugarcane, tur, groundnut, soyabean, jute**.
 - **Rabi** (Oct–Mar, winter) — **wheat (dominant), barley, gram, mustard,
   peas, lentil**.
 - **Zaid** (Mar–Jun, summer) — watermelon, cucumber, muskmelon, fodder.
+
+<div class="examtip">
+
+⚠️ **TRAP — Cotton is a Kharif crop, NOT Rabi.** Cotton is sown in monsoon season (June). Many students associate cotton with "dry" Rajasthan/Gujarat and assume it's a dry-season (Rabi) crop. It needs warm monsoon temperatures to grow. Similarly, **Jute is Kharif** — it needs high humidity + rain.
+
+</div>
 
 ### 12.2 Crop → Largest producer state
 
@@ -2046,7 +2235,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["AGRICULTURE IN INDIA"]:::root
     R --> KH["Kharif vs Rabi"]:::key
     R --> CR["Key Crops + States"]:::key
@@ -2107,7 +2296,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["MINERALS AND ENERGY"]:::root
     R --> CO["Coal"]:::key
     R --> IR["Iron + Steel Metals"]:::key
@@ -2165,7 +2354,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["TRANSPORT AND COMMUNICATION"]:::root
     R --> RD["Roads"]:::key
     R --> RL["Railways"]:::key
@@ -2206,7 +2395,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["CONTINENTS, COUNTRIES, OCEANS"]:::root
     R --> CT["7 Continents by Size"]:::key
     R --> CO["Countries — Superlatives"]:::key
@@ -2253,7 +2442,7 @@ graph TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["BIOMES AND NATURAL VEGETATION"]:::root
     R --> TR["Tropical Forests"]:::key
     R --> GR["Grasslands"]:::key
@@ -2477,7 +2666,7 @@ Islands, Lakshadweep, Dadra-Nagar-Haveli+Daman-Diu, Ladakh (5 without).
 
 # 🌳 PART Z — NATIONAL PARKS, TIGER + BIOSPHERE RESERVES
 
-## Tiger reserves (major — 50+ in India)
+## Tiger reserves (major — 58 in India as of March 2025)
 
 | Reserve | State | Notes |
 |---|---|---|
@@ -2529,7 +2718,9 @@ Islands, Lakshadweep, Dadra-Nagar-Haveli+Daman-Diu, Ladakh (5 without).
 | Orang | Assam | Smallest |
 | **Veerangana Durgavati** | MP | 54th (2023) |
 | **Dholpur-Karauli** | Rajasthan | 55th (2024) |
-| **Rani Durgavati / Madhav** | MP | proposed 2025 |
+| **Guru Ghasidas-Tamor Pingla** | Chhattisgarh | 56th (2024) |
+| **Ratapani** | MP | 57th (March 2025) |
+| **Madhav NP** | MP | 58th (March 2025) |
 
 ## All Biosphere reserves (18, with UNESCO MAB status flagged)
 
@@ -2554,7 +2745,7 @@ Islands, Lakshadweep, Dadra-Nagar-Haveli+Daman-Diu, Ladakh (5 without).
 | 17 | Seshachalam | AP | 2010 | — |
 | 18 | Panna | MP | 2011 | ✓ (2020) |
 
-## Ramsar sites — selected key (India had 80+ as of 2024)
+## Ramsar sites — selected key (India has 100 as of June 2026; most in Asia)
 
 - **Chilika Lake** (Odisha) — first Ramsar site of India (1981); largest brackish water lake.
 - **Keoladeo NP / Bharatpur** (Rajasthan) — UNESCO + Ramsar; Siberian crane.
@@ -2748,6 +2939,8 @@ Islands, Lakshadweep, Dadra-Nagar-Haveli+Daman-Diu, Ladakh (5 without).
 
 ## Largest producer (India — 2024)
 
+This table shows the largest **state** within India for each crop.
+
 | Crop | State |
 |---|---|
 | Rice | West Bengal |
@@ -2768,6 +2961,35 @@ Islands, Lakshadweep, Dadra-Nagar-Haveli+Daman-Diu, Ladakh (5 without).
 | Banana | TN |
 | Mango | UP |
 | Apple | J&K → HP (post-2019) |
+
+## India's global rank as a producer (world comparison — exam favourite)
+
+<div class="examtip">
+
+**This is a PYQ high-frequency table.** Examiners especially love Pulses, Milk, Jute, and Spices — India tops those lists. Note the distinction: *largest producer* vs *largest exporter* — they differ for Rice and Tea.
+
+</div>
+
+| Commodity | India's rank | Notes |
+|---|---|---|
+| **Pulses** | **1st (largest in world)** | ~25% of global output; MP is top state |
+| **Milk** | **1st (largest in world)** | Operation Flood (White Revolution); India overtook USA |
+| **Jute** | **1st (largest in world)** | WB produces 80%+ of India's jute; second is Bangladesh |
+| **Spices** | **1st in production AND export** | Kerala + AP; cardamom, pepper, turmeric |
+| **Banana** | **1st (largest in world)** | Tamil Nadu + Maharashtra |
+| Rice | 2nd (after China) | But India is **largest exporter** of rice in the world |
+| Wheat | 2nd (after China) | UP is top state |
+| Sugarcane | 2nd (after Brazil) | UP is top state |
+| Cotton | 2nd (after China; sometimes 3rd) | India competes with USA; Gujarat top state |
+| Tea | 2nd (after China) | But India was historically the **largest exporter** |
+| Groundnut | 2nd (after China) | Gujarat top state |
+
+<div class="keypoint">
+
+**Memory hook for India's No. 1 ranks: "PJMS-B"**
+**P**ulses · **J**ute · **M**ilk · **S**pices · **B**anana — India is world #1 in all five.
+
+</div>
 
 ---
 

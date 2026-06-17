@@ -70,6 +70,216 @@
       "generator_tag": "v3-rich-explanation",
       "generated_at": "2026-05-23",
       "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_002"
+    },
+    {
+      "stem": "Pointing to a photograph, Deepak says, 'His father is the only son of my grandfather.' How is the person in the photograph related to Deepak?",
+      "options": [
+        {
+          "option_text": "Uncle (father's or mother's brother by birth)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Brother (has the same father as Deepak)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Son (child born to Deepak and his spouse)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nephew (son of one of Deepak's siblings)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Deepak's grandfather's only son = Deepak's father. The person's father is therefore Deepak's father, making the person Deepak's brother. Nephew is the classic wrong pick — that would require the person to be a child of Deepak's sibling, not a sibling of Deepak himself.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:26+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00003"
+    },
+    {
+      "stem": "Meena is the sister of Rohan. Sunita is the mother of Rohan. Prakash is the husband of Sunita. How is Meena related to Prakash?",
+      "options": [
+        {
+          "option_text": "Sister (shares Sunita as a common mother)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Niece (daughter of Prakash's own sibling)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Daughter (child born to Prakash and Sunita)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Wife (Meena is wed to Prakash in the same family)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Prakash is Sunita's husband → Prakash is Rohan's father. Meena is Rohan's sister, so they share the same parents → Meena is also Prakash's daughter. Niece is wrong because that would require Meena to be a child of Prakash's sibling, not Prakash himself.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:26+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00004"
+    },
+    {
+      "stem": "In a family, P is the father of Q. Q is the sister of R. S is the wife of P. T is the son of R. How is T related to S?",
+      "options": [
+        {
+          "option_text": "Grandmother (S is the mother of T's parent R)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mother (S is T's own biological mother)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Great-grandmother (two generations above T)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Aunt (S is the sister of T's father or mother)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "S is wife of P → S is mother of Q and R. T is son of R → R is T's mother. Therefore S (R's mother) is T's maternal grandmother. Great-grandmother is the tempting wrong answer — it would need three generational steps, but S→R→T is only two, making S the grandmother, not great-grandmother.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:26+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00005"
+    },
+    {
+      "stem": "Rahul says, 'Deepa's father is the only male child of my paternal grandmother.' How is Deepa related to Rahul?",
+      "options": [
+        {
+          "option_text": "Niece (daughter of Rahul's brother or sister)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin (daughter of Rahul's paternal uncle)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sister (shares the same father as Rahul)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Daughter (Rahul is Deepa's biological father)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Rahul's paternal grandmother's only male child = Rahul's father. Deepa's father is that same person → Deepa and Rahul share the same father → Deepa is Rahul's sister. Cousin is the classic error — that would require Deepa's father to be Rahul's uncle, but 'only male child' locks him as Rahul's father.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:26+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00006"
+    },
+    {
+      "stem": "A woman says about a man, 'His mother is the only daughter of my father-in-law.' How is the man related to the woman?",
+      "options": [
+        {
+          "option_text": "Brother-in-law (husband's own male sibling)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Son (the woman's own biological child)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nephew (son of the woman's husband's sibling)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Cousin (related through a common grandparent)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Father-in-law = woman's husband's father. His only daughter = woman's husband's sister. Man's mother = husband's sister → man is son of husband's sister → man is the husband's nephew and, by extension, the woman's nephew. Son is the tempting wrong choice — the man's mother is the husband's sibling, not the woman herself, so the woman is not his mother.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:26+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00007"
+    },
+    {
+      "stem": "A man says to a woman, 'Your only brother's son is my wife's brother.' How is the woman related to the man's wife?",
+      "options": [
+        {
+          "option_text": "Sister-in-law (married to the man's wife's sibling)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Maternal aunt (the wife's mother's own sister)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Paternal aunt (the wife's father's own sister)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mother (the woman is the one who gave birth to the wife)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Let B = woman's only brother. B's son is man's wife's brother → man's wife and B's son are siblings → man's wife is also B's child (his daughter). The woman is B's sister → the woman is the paternal aunt (father's sister) of the man's wife. Maternal aunt is the most tempting wrong answer, but the relation flows through B who is the wife's father, making it the paternal side, not maternal.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:26+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00008"
+    },
+    {
+      "stem": "In a family: (i) J is the brother of K. (ii) L is the daughter of M. (iii) M is the father-in-law of J. (iv) N is the son of K. (v) K is female. How is N related to L?",
+      "options": [
+        {
+          "option_text": "Paternal aunt (father's sister or father's kin)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Maternal aunt (wife of N's maternal uncle J)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Sister (born to the same parents as N is)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin (child of N's own parent's sibling)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "K is female; J is K's brother → J is male. M is J's father-in-law → J married M's daughter = L. K is N's mother and J's sister → J is N's maternal uncle. Since J is married to L, L is the wife of N's maternal uncle = N's maternal aunt. Cousin is the tempting wrong answer, but L belongs to the parent's generation (one level above N), not the same generation. Paternal aunt would be N's father's sister; here the connection runs through N's mother K, placing it firmly on the maternal side.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-03",
+      "generated_at": "2026-06-03T15:19:26+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_II_MIXED_00009"
     }
   ]
 }

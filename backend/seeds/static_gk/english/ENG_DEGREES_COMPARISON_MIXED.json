@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-26-eng-dc-07",
       "generated_at": "2026-04-26T17:30:00+00:00",
       "id": "sgk_ENG_DEGREES_COMPARISON_MIXED_00007"
+    },
+    {
+      "stem": "Which sentence uses degrees of comparison correctly?",
+      "options": [
+        {
+          "option_text": "The weather today is more hotter than yesterday morning.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She speaks more fluently than her sister does here.",
+          "is_correct": true
+        },
+        {
+          "option_text": "He is more taller than the other players in the team.",
+          "is_correct": false
+        },
+        {
+          "option_text": "This road is more wider than the one we took earlier.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct because 'fluently' is an adverb that forms its comparative with 'more' — no '-er' form exists, so no double comparative arises. A ('more hotter'), C ('more taller'), and D ('more wider') all commit the double comparative error: adding 'more' before an adjective that already takes the '-er' suffix (hotter, taller, wider). Only one comparative marker is permitted.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T18:10:39+00:00",
+      "id": "sgk_ENG_DEGREES_COMPARISON_MIXED_00008"
+    },
+    {
+      "stem": "Convert to POSITIVE degree: 'Riya is the most diligent student in her department.'",
+      "options": [
+        {
+          "option_text": "No other student in her department is as diligent as Riya.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Riya is more diligent than any other student in her department.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Riya is as diligent as every other student in her department.",
+          "is_correct": false
+        },
+        {
+          "option_text": "No other student in her department is more diligent than Riya.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct: the positive degree uses the 'no other … as … as' pattern, preserving superiority without any comparative or superlative form. B and D are comparative-degree equivalents ('more diligent than / more diligent than'), not positive. C inverts the meaning — 'as diligent as every other student' implies mere equality, not excellence.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T18:10:39+00:00",
+      "id": "sgk_ENG_DEGREES_COMPARISON_MIXED_00009"
+    },
+    {
+      "stem": "Which sentence contains an error in the use of degrees of comparison?",
+      "options": [
+        {
+          "option_text": "This is the most perfect arrangement we have ever seen here.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The updated software version runs far better than the older one.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Her solution was a little more elegant than his in the contest.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The committee approved a slightly improved version of the bill.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is erroneous: 'perfect' is an absolute adjective — a thing is either perfect or it is not — so it cannot be graded. 'Most perfect' is incorrect; say 'perfect' or 'nearly perfect'. B uses 'far better' correctly (far intensifies a comparative), C uses 'a little more elegant' correctly, and D uses 'slightly improved' which is not a comparison construction and is grammatically fine.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T18:10:39+00:00",
+      "id": "sgk_ENG_DEGREES_COMPARISON_MIXED_00010"
+    },
+    {
+      "stem": "Which sentence correctly uses a Latin-origin comparative adjective?",
+      "options": [
+        {
+          "option_text": "His performance is superior than all his teammates in the squad.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The quality of this alloy is inferior to the imported alternative.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The team leader is more senior than the new recruits in the batch.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The second clause in the contract is prior than the third clause.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: Latin-derived comparatives — inferior, superior, senior, junior, prior, anterior, posterior — always govern 'to', never 'than'. A uses 'superior than' (wrong preposition). C doubles the comparative by prefixing 'more' before 'senior', which is itself already a comparative form, and incorrectly uses 'than'. D uses 'prior than' instead of the correct 'prior to'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T18:10:39+00:00",
+      "id": "sgk_ENG_DEGREES_COMPARISON_MIXED_00011"
+    },
+    {
+      "stem": "Which sentence avoids the illogical self-comparison error in the comparative degree?",
+      "options": [
+        {
+          "option_text": "This film earned more awards than any film released this decade.",
+          "is_correct": false
+        },
+        {
+          "option_text": "This film earned more awards than any other film released this decade.",
+          "is_correct": true
+        },
+        {
+          "option_text": "This film earned more awards than every film released in this decade.",
+          "is_correct": false
+        },
+        {
+          "option_text": "This film won more accolades than all films put together this decade.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: when comparing one member of a group to the rest of the group, 'other' must be inserted to logically exclude it from the group being compared against. Without 'other', A and C illogically include the film among its own comparators (the film earned more than itself). D's phrasing 'all films put together' shifts the comparison to a collective total, altering meaning and introducing a different logical problem.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T18:10:39+00:00",
+      "id": "sgk_ENG_DEGREES_COMPARISON_MIXED_00012"
+    },
+    {
+      "stem": "Identify the sentence in which 'elder' is used INCORRECTLY.",
+      "options": [
+        {
+          "option_text": "Raghu is the eldest of three brothers, yet his older cousin got more.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She is elder than her husband by two years, surprising to everyone.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The elder of the two siblings secured a government post in the exam.",
+          "is_correct": false
+        },
+        {
+          "option_text": "His elder brother, a retired colonel, still commands great respect.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is incorrect: 'elder' is never followed by 'than' in standard grammar. For direct age comparisons, 'older than' must be used. 'Elder' is reserved for family-seniority contexts (elder brother, elder sister) or as a standalone adjective/noun. A correctly uses 'older' for a direct age comparison with 'cousin'. C uses 'elder of the two' correctly (comparative selection between two people). D uses 'elder brother' correctly as a family descriptor.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T18:10:39+00:00",
+      "id": "sgk_ENG_DEGREES_COMPARISON_MIXED_00013"
+    },
+    {
+      "stem": "Which sentence correctly uses a degree modifier with a comparative adjective?",
+      "options": [
+        {
+          "option_text": "The mountainous route is very longer than the coastal highway option.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Her revised proposal was much more persuasive than the initial draft.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The train is too faster than the bus on this particular route.",
+          "is_correct": false
+        },
+        {
+          "option_text": "His improved score is quite better than what was initially expected.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: 'much' legitimately intensifies a comparative adjective ('much more persuasive'). A fails because 'very' cannot modify comparative forms; 'much longer' or 'far longer' is required. C incorrectly applies the comparative suffix '-er' after 'too' — the correct form is 'too fast', not 'too faster'. D fails because 'quite' modifies absolute or positive adjectives (quite good), not comparatives; 'somewhat better' or 'slightly better' would be grammatically correct.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T18:10:39+00:00",
+      "id": "sgk_ENG_DEGREES_COMPARISON_MIXED_00014"
     }
   ]
 }

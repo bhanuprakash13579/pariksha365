@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-26-eng-dq-07",
       "generated_at": "2026-04-26T19:40:00+00:00",
       "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00007"
+    },
+    {
+      "stem": "Which option correctly converts to indirect speech: 'He asked his friend, \"Where is the nearest hospital?\"'?",
+      "options": [
+        {
+          "option_text": "He asked his friend where the nearest hospital is",
+          "is_correct": false
+        },
+        {
+          "option_text": "He asked his friend where the nearest hospital was",
+          "is_correct": true
+        },
+        {
+          "option_text": "He asked his friend where was the nearest hospital",
+          "is_correct": false
+        },
+        {
+          "option_text": "He asked his friend that where the nearest hospital was",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct because WH-questions convert to indirect speech by replacing question word order with statement order ('where the nearest hospital was') and backshifting present 'is' to past 'was'. Option A retains 'is' without backshift. Option C keeps interrogative word order ('where was the hospital'). Option D wrongly inserts 'that' before the WH-word, which is ungrammatical.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:46:44+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00008"
+    },
+    {
+      "stem": "Choose the correct indirect form of: 'Meena said to her sister, \"Do you know the way to the post office?\"'?",
+      "options": [
+        {
+          "option_text": "Meena asked her sister that she knew the way to the post office",
+          "is_correct": false
+        },
+        {
+          "option_text": "Meena asked her sister that does she know the way to the post office",
+          "is_correct": false
+        },
+        {
+          "option_text": "Meena asked her sister whether she knew the way to the post office",
+          "is_correct": true
+        },
+        {
+          "option_text": "Meena asked her sister if she knows the way to the post office",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct: yes/no questions use 'whether/if + statement word order + backshift'; 'Do you know' becomes 'whether she knew' ('said to' → 'asked', 'you' → 'she', 'know' → 'knew'). Options A and B wrongly use 'that', which introduces reported statements—not yes/no questions. Option D is the most tempting distractor but retains present tense 'knows' instead of backshifting to 'knew'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:46:44+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00009"
+    },
+    {
+      "stem": "Identify the correct indirect speech for: 'The officer said to the applicant, \"Can you submit the documents by Friday?\"'?",
+      "options": [
+        {
+          "option_text": "The officer asked the applicant if he could submit the documents by Friday",
+          "is_correct": true
+        },
+        {
+          "option_text": "The officer asked the applicant that can he submit the documents by Friday",
+          "is_correct": false
+        },
+        {
+          "option_text": "The officer asked the applicant whether he can submit the documents by Friday",
+          "is_correct": false
+        },
+        {
+          "option_text": "The officer asked the applicant if could he submit the documents by Friday",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct because the modal 'can' shifts to 'could' (backshift rule), and question word order inverts to statement order ('if he could submit'). Option B retains 'can' without backshift and uses ungrammatical 'that can he'. Option C also keeps 'can' without the required shift to 'could'. Option D inverts the subject-auxiliary wrongly ('if could he'), a common word-order trap in competitive exams.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:46:44+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00010"
+    },
+    {
+      "stem": "Select the correct indirect form: 'She said to him, \"Where did you go last evening?\"'?",
+      "options": [
+        {
+          "option_text": "She asked him where had he gone the previous evening",
+          "is_correct": false
+        },
+        {
+          "option_text": "She asked him where he went the previous evening",
+          "is_correct": false
+        },
+        {
+          "option_text": "She asked him where he has gone the previous evening",
+          "is_correct": false
+        },
+        {
+          "option_text": "She asked him where he had gone the previous evening",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct: simple past 'did go' shifts to past perfect 'had gone', statement word order replaces question order, and 'last' shifts to 'the previous'. Option A retains interrogative word order ('where had he gone'). Option B uses simple past 'went' — the most common error, missing the obligatory shift to past perfect. Option C wrongly uses present perfect 'has gone', which moves in the wrong tense direction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:46:44+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00011"
+    },
+    {
+      "stem": "Which of the following correctly reports: 'The inspector said to the constable, \"Have you submitted the report yet?\"'?",
+      "options": [
+        {
+          "option_text": "The inspector asked the constable that had he submitted the report yet",
+          "is_correct": false
+        },
+        {
+          "option_text": "The inspector asked the constable whether he had submitted the report yet",
+          "is_correct": true
+        },
+        {
+          "option_text": "The inspector asked the constable if he has submitted the report yet",
+          "is_correct": false
+        },
+        {
+          "option_text": "The inspector asked the constable whether he submitted the report yet",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: present perfect 'have submitted' → past perfect 'had submitted' (backshift), yes/no question uses 'whether/if', statement word order, and 'yet' is retained unchanged. Option A uses 'that had he' — an ungrammatical blend of statement-introducer 'that' with question inversion. Option C keeps 'has submitted' with no backshift. Option D omits 'had', reducing past perfect to simple past 'submitted', which loses the aspect completely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:46:44+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00012"
+    },
+    {
+      "stem": "Choose the correct indirect speech for: 'The manager said to the clerk, \"Why haven't you replied to the client's email yet?\"'?",
+      "options": [
+        {
+          "option_text": "The manager asked the clerk why he has not replied to the client's email yet",
+          "is_correct": false
+        },
+        {
+          "option_text": "The manager asked the clerk why had he not replied to the client's email yet",
+          "is_correct": false
+        },
+        {
+          "option_text": "The manager asked the clerk why he had not replied to the client's email yet",
+          "is_correct": true
+        },
+        {
+          "option_text": "The manager asked the clerk that why he had not replied to the client's email",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct: present perfect negative 'haven't replied' shifts to past perfect 'had not replied'; WH-word 'why' is retained and followed by statement word order ('he had not…'). Option A keeps 'has not replied' — failing the backshift of present perfect to past perfect, a very common error. Option B is tempting but retains question word order ('why had he not') instead of the required statement order. Option D uses 'that why', an ungrammatical double introducer.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:46:44+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00013"
+    },
+    {
+      "stem": "Identify the correct indirect form: 'Rita said to her boss, \"Am I supposed to submit two copies or one?\"'?",
+      "options": [
+        {
+          "option_text": "Rita asked her boss if she is supposed to submit two copies or one",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rita asked her boss whether she was supposed to submit two copies or one",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rita asked her boss that was she supposed to submit two copies or one",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rita asked her boss whether was she supposed to submit two copies or one",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: 'or' questions offering two alternatives convert with 'whether…or' (not 'if…or'); 'Am I' shifts to 'she was' (pronoun 'I' → 'she', 'am' backshifts to 'was'). Option A uses 'if' (acceptable only for simple yes/no, not alternatives) and fails to backshift 'am' to 'was', keeping 'is'. Option C uses 'that was she' — a structural error blending statement-introducer 'that' with question inversion. Option D retains interrogative word order ('whether was she') — the classic trap even advanced students fall into.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-09",
+      "generated_at": "2026-06-09T17:46:44+00:00",
+      "id": "sgk_ENG_DIRECT_INDIRECT_QUESTIONS_MIXED_00014"
     }
   ]
 }

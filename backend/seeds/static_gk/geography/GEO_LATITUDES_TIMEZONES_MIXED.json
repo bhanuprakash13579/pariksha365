@@ -251,6 +251,216 @@
       "generator_tag": "claude-opus-2026-04-23-geo-lat-07",
       "generated_at": "2026-04-23T01:20:00+00:00",
       "id": "sgk_GEO_LATITUDES_TIMEZONES_MIXED_00007"
+    },
+    {
+      "stem": "If the longitude difference between two places is 60°, the local time difference between them is:",
+      "options": [
+        {
+          "option_text": "2 hours, as every 30° equals one hour of time",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 hours, as every 15° equals one hour of time",
+          "is_correct": true
+        },
+        {
+          "option_text": "6 hours, as every 10° equals one hour of time",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 hours, as every 20° equals one hour of time",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Earth rotates 360° in 24 hours, so it covers 15° every hour (360/24 = 15). A 60° difference therefore equals 60/15 = 4 hours. Option A is wrong because 30°/hr would mean Earth rotates only 720° in 24 hours — double the actual rate.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-16",
+      "generated_at": "2026-06-16T13:03:39+00:00",
+      "id": "sgk_GEO_LATITUDES_TIMEZONES_MIXED_00008"
+    },
+    {
+      "stem": "Which of the following correctly identifies the POLEWARD boundary of the North Temperate Zone?",
+      "options": [
+        {
+          "option_text": "The Arctic Circle, situated at latitude 66.5°N",
+          "is_correct": true
+        },
+        {
+          "option_text": "The Tropic of Cancer, situated at latitude 23.5°N",
+          "is_correct": false
+        },
+        {
+          "option_text": "The Antarctic Circle, situated at latitude 66.5°S",
+          "is_correct": false
+        },
+        {
+          "option_text": "The Prime Meridian, which runs at 0° longitude",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "The North Temperate Zone lies between the Tropic of Cancer (23.5°N) and the Arctic Circle (66.5°N). The Arctic Circle is its poleward (upper) boundary. Option B — the Tropic of Cancer — is actually the equatorward boundary of the Temperate Zone, a common confusion in exams. Option D confuses longitude with latitude.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-16",
+      "generated_at": "2026-06-16T13:03:39+00:00",
+      "id": "sgk_GEO_LATITUDES_TIMEZONES_MIXED_00009"
+    },
+    {
+      "stem": "The 82°30'E meridian, used as the basis for Indian Standard Time, passes closest to which city in Uttar Pradesh?",
+      "options": [
+        {
+          "option_text": "Lucknow, the state capital of Uttar Pradesh",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mirzapur, a district near the Vindhya plateau",
+          "is_correct": true
+        },
+        {
+          "option_text": "Varanasi, a major pilgrimage city on the Ganga",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kanpur, an industrial city on the Ganga river",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Mirzapur (approx. 82.6°E) lies nearest to the 82°30'E standard meridian and its clock tower is the traditional IST reference. Varanasi lies further east at ~83°E, making it the most tempting wrong answer since both cities are in eastern UP. Lucknow (~81°E) and Kanpur (~80.3°E) are too far west.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-16",
+      "generated_at": "2026-06-16T13:03:39+00:00",
+      "id": "sgk_GEO_LATITUDES_TIMEZONES_MIXED_00010"
+    },
+    {
+      "stem": "At a location of 120°E longitude, the local time is 6:00 AM. At the same instant, what is the local solar time at a place located at 75°E longitude?",
+      "options": [
+        {
+          "option_text": "3:00 AM, as 75°E is exactly 3 hours behind 120°E",
+          "is_correct": true
+        },
+        {
+          "option_text": "9:00 AM, as 75°E is exactly 3 hours ahead of 120°E",
+          "is_correct": false
+        },
+        {
+          "option_text": "6:00 AM, as both places share the same calendar date",
+          "is_correct": false
+        },
+        {
+          "option_text": "12:00 noon, as the longitude gap converts to 6 hours",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "The difference is 120° − 75° = 45°. At 15° per hour, that equals 3 hours. Since 75°E is to the WEST of 120°E, it is 3 hours BEHIND: 6:00 AM − 3 hours = 3:00 AM. Option B is the classic reversal error — students confuse which meridian is ahead. Option D incorrectly divides 45° by 7.5 instead of 15.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-16",
+      "generated_at": "2026-06-16T13:03:39+00:00",
+      "id": "sgk_GEO_LATITUDES_TIMEZONES_MIXED_00011"
+    },
+    {
+      "stem": "The Tropic of Capricorn (23.5°S) passes through which of the following sets of continents?",
+      "options": [
+        {
+          "option_text": "South America, Africa, Australia, and mainland Asia",
+          "is_correct": false
+        },
+        {
+          "option_text": "South America, Africa, and Australia only",
+          "is_correct": true
+        },
+        {
+          "option_text": "Africa, Australia, and Antarctica only",
+          "is_correct": false
+        },
+        {
+          "option_text": "South America, Africa, Australia, and Europe",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "The Tropic of Capricorn crosses South America (Brazil, Argentina, Chile), Africa (Namibia, Botswana, South Africa, Mozambique), and Australia — exactly three continents. Asia's southernmost mainland point (~1°N) is in the Northern Hemisphere, so Option A is wrong. Antarctica lies between 66.5°S–90°S, well south of 23.5°S. Europe is entirely in the Northern Hemisphere.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-16",
+      "generated_at": "2026-06-16T13:03:39+00:00",
+      "id": "sgk_GEO_LATITUDES_TIMEZONES_MIXED_00012"
+    },
+    {
+      "stem": "The International Date Line bends sharply EASTWARD around the Republic of Kiribati, placing all its islands west of the line. What is the PRIMARY reason for this deviation?",
+      "options": [
+        {
+          "option_text": "To keep all of Kiribati's island groups on the same calendar date",
+          "is_correct": true
+        },
+        {
+          "option_text": "To maintain standard 15° spacing between adjacent Pacific time zones",
+          "is_correct": false
+        },
+        {
+          "option_text": "To align the Date Line precisely with the 180° meridian in that region",
+          "is_correct": false
+        },
+        {
+          "option_text": "To prevent the Date Line from bisecting any exclusive economic zone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "In 1995, Kiribati unilaterally shifted the Date Line eastward so that its eastern islands (Line Islands, including Kiritimati) share the same calendar day as its western islands. Previously, the western and eastern islands were two calendar days apart, creating administrative and economic problems. Option D is plausible but wrong — the IDL crosses many EEZs; the Kiribati case was purely about calendar unity for a sovereign state.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-16",
+      "generated_at": "2026-06-16T13:03:39+00:00",
+      "id": "sgk_GEO_LATITUDES_TIMEZONES_MIXED_00013"
+    },
+    {
+      "stem": "City X is at 75°E longitude and City Y is at 105°W longitude. If it is 3:00 PM on Wednesday at City X, what is the local time and day at City Y?",
+      "options": [
+        {
+          "option_text": "3:00 AM on Wednesday, the very same calendar day",
+          "is_correct": true
+        },
+        {
+          "option_text": "3:00 AM on Thursday, the next calendar day forward",
+          "is_correct": false
+        },
+        {
+          "option_text": "11:00 PM on Tuesday, the previous calendar day",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:00 PM on Thursday, exactly one full day later",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Step 1 — UTC offsets: 75°E → UTC+5 (75÷15=5); 105°W → UTC−7 (105÷15=7). Step 2 — Convert X to UTC: 3:00 PM − 5 h = 10:00 AM UTC Wednesday. Step 3 — Convert UTC to Y: 10:00 AM − 7 h = 3:00 AM Wednesday. No date change occurs because neither conversion crosses midnight. Option B (Thursday) is the most common error — students assume crossing large longitudes always changes the date, which is only true at the International Date Line (≈180°).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-16",
+      "generated_at": "2026-06-16T13:03:39+00:00",
+      "id": "sgk_GEO_LATITUDES_TIMEZONES_MIXED_00014"
     }
   ]
 }

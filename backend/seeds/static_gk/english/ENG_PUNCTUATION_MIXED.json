@@ -235,6 +235,426 @@
       "generator_tag": "claude-opus-2026-04-24-eng-punct-07",
       "generated_at": "2026-04-24T19:00:00+00:00",
       "id": "sgk_ENG_PUNCTUATION_MIXED_00007"
+    },
+    {
+      "stem": "Which sentence correctly uses a comma after an introductory adverbial clause?",
+      "options": [
+        {
+          "option_text": "Although it rained heavily the match was not cancelled.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Although it rained heavily, the match was not cancelled.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Although, it rained heavily the match was not cancelled.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Although it rained heavily the match, was not cancelled.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct because a comma must follow an introductory adverbial clause before the main clause begins. Option A omits the required comma — the most common student error. Option C wrongly places the comma after 'Although', splitting the subordinating conjunction from its own clause. Option D inserts the comma between 'match' and its verb, disrupting the main clause's subject–verb unit.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:20:42+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00008"
+    },
+    {
+      "stem": "Which sentence correctly uses commas to set off an appositive phrase?",
+      "options": [
+        {
+          "option_text": "My brother, an IAS officer lives in New Delhi.",
+          "is_correct": false
+        },
+        {
+          "option_text": "My brother an IAS officer, lives in New Delhi.",
+          "is_correct": false
+        },
+        {
+          "option_text": "My brother, an IAS officer, lives in New Delhi.",
+          "is_correct": true
+        },
+        {
+          "option_text": "My brother an IAS officer lives in New Delhi.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "A non-restrictive appositive phrase ('an IAS officer') must be enclosed by commas on both sides to signal it is supplementary information. C does this correctly. Option A omits the closing comma; Option B omits the opening comma; Option D omits both — each failure blurs where the appositive begins or ends and is marked wrong in SSC/IBPS answer keys.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:20:42+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00009"
+    },
+    {
+      "stem": "In which sentence does the omission of the Oxford (serial) comma create genuine ambiguity about the number of people being thanked?",
+      "options": [
+        {
+          "option_text": "I bought apples, oranges and bananas from the vendor.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She thanked her parents, the Principal and the Chief Guest.",
+          "is_correct": true
+        },
+        {
+          "option_text": "We need pens, pencils and erasers for tomorrow's test.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The panel includes Ravi, Suresh and Mahesh as nominees.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is ambiguous without the Oxford comma: 'her parents, the Principal and the Chief Guest' allows an appositive reading in which 'the Principal and the Chief Guest' identifies who her parents are — reducing three people to one. Adding the comma ('parents, the Principal, and the Chief Guest') unambiguously lists three separate people. In A, C, and D the list items are clearly distinct entities with no apposition risk.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:20:42+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00010"
+    },
+    {
+      "stem": "Which sentence correctly uses parentheses to expand an abbreviation inline?",
+      "options": [
+        {
+          "option_text": "The RBI (Reserve Bank of India), was established in 1935.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The RBI (Reserve Bank of India) was established in 1935.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The RBI, (Reserve Bank of India) was established in 1935.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The (RBI) Reserve Bank of India was established in 1935.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: the expansion immediately follows the abbreviation inside parentheses with no intervening punctuation, and sentence punctuation resumes normally after the closing parenthesis. Option A wrongly adds a comma after the closing parenthesis as though it were a non-restrictive clause. Option C inserts a comma before the opening parenthesis — never standard. Option D reverses the order; the abbreviation must precede its expansion.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:20:42+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00011"
+    },
+    {
+      "stem": "Which of the following is NOT a comma splice (i.e., correctly punctuates two independent clauses)?",
+      "options": [
+        {
+          "option_text": "She studied all night, she passed the examination easily.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He was exhausted, however he kept working through the night.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The results were announced; many students celebrated outside.",
+          "is_correct": true
+        },
+        {
+          "option_text": "It was raining heavily, they cancelled the cricket fixture.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C correctly uses a semicolon to join two related but grammatically independent clauses — the standard remedy for a comma splice. Options A and D are straightforward comma splices. Option B is the subtler trap: 'however' is a conjunctive adverb, not a coordinating conjunction, so it requires a semicolon before it ('exhausted; however, he kept working'), not merely a comma — making B a comma splice as well.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:20:42+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00012"
+    },
+    {
+      "stem": "Which sentence correctly punctuates the conjunctive adverb 'therefore' when it links two independent clauses?",
+      "options": [
+        {
+          "option_text": "He prepared thoroughly, therefore he cleared the prelims.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He prepared thoroughly; therefore, he cleared the prelims.",
+          "is_correct": true
+        },
+        {
+          "option_text": "He prepared thoroughly therefore; he cleared the prelims.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He prepared thoroughly therefore, he cleared the prelims.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "The rule for conjunctive adverbs (therefore, however, consequently) is: semicolon before + comma after. B applies this exactly: 'thoroughly; therefore, he cleared'. Option A uses only a comma before 'therefore' — a classic comma splice. Option C places the semicolon after 'therefore', incorrectly severing it from the clause it introduces. Option D has no semicolon at all, producing yet another comma splice with a misplaced comma.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:20:42+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00013"
+    },
+    {
+      "stem": "Identify the sentence in which the period is placed INCORRECTLY relative to the closing parenthesis.",
+      "options": [
+        {
+          "option_text": "She topped the exam (her highest score to date).",
+          "is_correct": false
+        },
+        {
+          "option_text": "She topped the exam. (It was her highest score to date.)",
+          "is_correct": false
+        },
+        {
+          "option_text": "She topped the exam (her highest score to date.)",
+          "is_correct": true
+        },
+        {
+          "option_text": "He left at noon; she stayed on (as per the roster).",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "When a parenthetical phrase is embedded within a larger sentence (not a standalone sentence), the period belongs outside the closing parenthesis. C wrongly places the period inside — 'to date.' — even though the parenthetical is a phrase, not an independent sentence. Option A correctly places the period outside. Option B is also correct: here the parenthetical is a full standalone sentence following a complete sentence, so its own period sits inside the parentheses. Option D likewise correctly keeps the period outside a mid-sentence phrase.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:20:42+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00014"
+    },
+    {
+      "stem": "Which sentence correctly places a comma after an introductory adverbial clause?",
+      "options": [
+        {
+          "option_text": "When the results were announced the students cheered.",
+          "is_correct": false
+        },
+        {
+          "option_text": "When the results were announced, the students cheered.",
+          "is_correct": true
+        },
+        {
+          "option_text": "When, the results were announced the students cheered.",
+          "is_correct": false
+        },
+        {
+          "option_text": "When the results were announced the students, cheered.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct because a dependent adverbial clause that opens a sentence must be separated from the main clause by a comma. A omits this comma entirely, fusing dependent and main clauses without a break. C wrongly inserts the comma inside the subordinating clause after 'When'. D misplaces the comma between the subject 'students' and its verb 'cheered', which illegally splits subject from predicate.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:38+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00015"
+    },
+    {
+      "stem": "Which sentence does NOT contain a comma splice?",
+      "options": [
+        {
+          "option_text": "She loves cricket, she watches every match on television.",
+          "is_correct": false
+        },
+        {
+          "option_text": "He studied all night, he passed the exam with great distinction.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Although it rained heavily, the match continued without any delay.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The sun set early, the temperature dropped significantly outside.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct: 'Although it rained heavily' is a dependent clause, so the comma separating it from the main clause is grammatically sound — not a splice. A, B, and D each join two independent clauses with only a comma, which defines a comma splice. They require a semicolon, a coordinating conjunction (FANBOYS), or a full stop to be grammatically complete.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:38+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00016"
+    },
+    {
+      "stem": "Which sentence correctly uses parentheses to enclose supplementary information?",
+      "options": [
+        {
+          "option_text": "The treaty (signed in 1648) ended the Thirty Years' War in Europe.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The treaty, (signed in 1648), ended the Thirty Years' War in Europe.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The treaty (signed in 1648,) ended the Thirty Years' War in Europe.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The treaty (signed in 1648.) ended the Thirty Years' War in Europe.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct: parentheses alone enclose the supplementary phrase with no flanking commas. B duplicates punctuation by adding commas both before and after the parenthetical. C places a comma inside the closing parenthesis, which is only permitted when the entire parenthetical is a standalone complete sentence. D inserts a full stop inside the parenthesis mid-sentence — that usage is reserved for a parenthetical that is itself a complete sentence and ends before the outer sentence closes.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:38+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00017"
+    },
+    {
+      "stem": "Which sentence correctly positions an exclamation mark in an exclamatory sentence?",
+      "options": [
+        {
+          "option_text": "What a remarkable! achievement the team has accomplished here.",
+          "is_correct": false
+        },
+        {
+          "option_text": "What a remarkable achievement the team has accomplished here!",
+          "is_correct": true
+        },
+        {
+          "option_text": "What a remarkable achievement! the team has accomplished here.",
+          "is_correct": false
+        },
+        {
+          "option_text": "What! a remarkable achievement the team has accomplished here.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct because the entire exclamatory clause is one unit and the exclamation mark belongs at its close. A places it after 'remarkable', severing the adjective from its noun mid-phrase. C places it after 'achievement', leaving the remainder of the sentence without a terminal mark, and incorrectly lowercases the word that follows. D treats 'What' alone as a complete interjection, which changes both the grammar and the intended meaning of the sentence.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:38+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00018"
+    },
+    {
+      "stem": "Which sentence correctly punctuates 'however' functioning as a conjunctive adverb between two independent clauses?",
+      "options": [
+        {
+          "option_text": "The exam was difficult however, all the students passed with ease.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The exam was difficult; however, all the students passed with ease.",
+          "is_correct": true
+        },
+        {
+          "option_text": "The exam was difficult, however all the students passed with ease.",
+          "is_correct": false
+        },
+        {
+          "option_text": "The exam was difficult, however; all the students passed with ease.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: a conjunctive adverb joining two independent clauses requires a semicolon before it and a comma after it. A omits the semicolon entirely, producing a run-on sentence. C uses only a comma before 'however', which is a classic comma splice — one of the most frequently tested errors in SSC CGL and IBPS English sections. D reverses the logic, placing the comma before 'however' and the semicolon after it, which is grammatically incoherent.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:38+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00019"
+    },
+    {
+      "stem": "Which sentence correctly punctuates a non-restrictive appositive phrase?",
+      "options": [
+        {
+          "option_text": "Dr. Kalam the former President of India was a renowned scientist.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Dr. Kalam, the former President of India, was a renowned scientist.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Dr. Kalam, the former President of India was a renowned scientist.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Dr. Kalam, the former President, of India was a renowned scientist.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: a non-restrictive appositive must be enclosed by two commas — one opening and one closing — because it is removable supplementary information. A omits both commas, making the appositive appear restrictive and blurring meaning. C opens with a comma but never closes it, leaving an asymmetric and broken structure that misleads the reader about where the appositive ends. D splits 'President of India' at 'President', creating a false appositive and stranding 'of India' as an orphaned prepositional phrase.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:38+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00020"
+    },
+    {
+      "stem": "Which sentence correctly places a question mark when a direct question is embedded within a larger statement?",
+      "options": [
+        {
+          "option_text": "She asked, 'Are the results out,' and left the room in a hurry.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She asked, 'Are the results out?' and left the room in a hurry.",
+          "is_correct": true
+        },
+        {
+          "option_text": "She asked, 'Are the results out'? and left the room in a hurry.",
+          "is_correct": false
+        },
+        {
+          "option_text": "She asked, 'Are the results out?' And left the room in a hurry.",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: for a quoted direct question, the question mark belongs inside the closing quotation mark and no additional period follows, because the question mark already serves as terminal punctuation for the quoted clause. A substitutes a comma for the question mark, stripping the embedded clause of its interrogative character entirely. C places the question mark outside the closing quote, violating standard British and Indian exam punctuation conventions for embedded questions. D capitalises 'And' as though it begins a new sentence, incorrectly treating the continuation 'and left the room in a hurry' as syntactically independent.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-10",
+      "generated_at": "2026-06-10T16:22:38+00:00",
+      "id": "sgk_ENG_PUNCTUATION_MIXED_00021"
     }
   ]
 }

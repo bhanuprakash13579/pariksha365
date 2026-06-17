@@ -75,7 +75,7 @@ The four rules below run through every chapter:
 | 16 | Role of IT in Governance | 4 | ⭐⭐⭐ MEDIUM | Easy |
 | | **TOTAL** | **100** | | |
 
-> **What this dashboard tells you.** The 9 CRITICAL chapters (2, 3, 4, 5, 7, 9, 12, 14, 15) carry **66 / 100 questions** = 132 / 200 marks (66%). Master them and you cross the cut-off easily. Add the 4 HIGH chapters and you cover **88%** of the paper. The 3 MEDIUM chapters are last priority.
+> **What this dashboard tells you.** The 9 CRITICAL chapters (2, 3, 4, 5, 7, 9, 12, 14, 15) carry **$\dfrac{66}{100}$ questions** = $\dfrac{132}{200}$ marks (66%). Master them and you cross the cut-off easily. Add the 4 HIGH chapters and you cover **88%** of the paper. The 3 MEDIUM chapters are last priority.
 
 ## Cut-off reality (recent AAO posts)
 
@@ -85,7 +85,7 @@ The four rules below run through every chapter:
 | 2021 | 148–154 | ~75 % |
 | 2019 | 145–150 | ~73 % |
 
-A 95% target = **190/200** demands ≥96 correct out of 100 (with ≤2 wrongs). Achievable only when every formula, fact, and definition is in muscle memory.
+A 95% target = **$\dfrac{190}{200}$** demands ≥96 correct out of 100 (with ≤2 wrongs). Achievable only when every formula, fact, and definition is in muscle memory.
 
 ---
 
@@ -108,12 +108,14 @@ Read end-to-end in order without skipping.
 | Pages | Part / Chapter | Topic / What it covers |
 |---:|---|---|
 | **p5–6** | [PART 0](#part-0) | FOUNDATIONS YOU CANNOT SKIP |
+| | **PART A — Finance & Accounts (40 Qs / 80 marks)** | |
 | **p7–9** | [Chapter 1](#chapter-1) | Fundamentals of Accounting & GAAP |
 | **p10–14** | [Chapter 2](#chapter-2) | Double Entry, Journal, Ledger & Trial Balance |
 | **p15–19** | [Chapter 3](#chapter-3) | Bank Reconciliation, Rectification of Errors & Bills of Exchange |
 | **p20–24** | [Chapter 4](#chapter-4) | Final Accounts: Trading, P&L, P&L Appropriation & Balance Sheet |
 | **p25–28** | [Chapter 5](#chapter-5) | Capital vs Revenue, Depreciation & Inventory Valuation |
 | **p29–32** | [Chapter 6](#chapter-6) | Non-Profit Organisations & Self-Balancing Ledgers |
+| | **PART B — Economics & Governance (60 Qs / 120 marks)** | |
 | **p33–36** | [Chapter 7](#chapter-7) | CAG of India + Finance Commission |
 | **p37–39** | [Chapter 8](#chapter-8) | Basic Concepts of Economics & Introduction to Microeconomics |
 | **p40–45** | [Chapter 9](#chapter-9) | Theory of Demand & Supply (incl. Elasticity, Consumer Behaviour) |
@@ -123,7 +125,14 @@ Read end-to-end in order without skipping.
 | **p61–63** | [Chapter 13](#chapter-13) | Economic Reforms in India (1991 onwards) |
 | **p64–69** | [Chapter 14](#chapter-14) | Money & Banking (RBI, Commercial Banks, Monetary Policy) |
 | **p70–75** | [Chapter 15](#chapter-15) | Fiscal Policy, Budget, FRBM Act & Balance of Payments |
-| **p76–91** | [Chapter 16](#chapter-16) | Role of Information Technology in Governance |
+| **p76–78** | [Chapter 16](#chapter-16) | Role of Information Technology in Governance |
+| — | [Appendix A](#appendix-a) | Master Formula & Fact Sheet (one-shot revision) |
+| — | [Appendix B](#appendix-b) | Ultimate Depth Tables (Finance Commissions, RBI Governors, reforms) |
+| — | [Appendix C](#appendix-c) | Plain-English Concept Primers (first-time readers) |
+| — | [Appendix D](#appendix-d) | Full-length 100-Q Mock Test (with answer key) |
+| — | [Appendix E](#appendix-e) | 7-Day Final Revision Plan |
+| — | [Appendix F](#appendix-f) | Common errors that cost AAO candidates the 95% mark |
+| — | [Appendix G](#appendix-g) | Memory tricks (mnemonics that stick) |
 
 ---
 # PART 0 — FOUNDATIONS YOU CANNOT SKIP {#part-0}
@@ -889,7 +898,7 @@ Use **Profit & Loss Adjustment A/c** + Suspense.
 
 > **Q 3.7.** Bill discounted with bank ₹10,000 at 6 % for 3 months. Discount?
 >
-> - = 10,000 × 6/100 × 3/12
+> - = 10,000 × $\dfrac{6}{100}$ × $\dfrac{3}{12}$
 > - = 10,000 × 0.015
 > - = **₹150**
 > - Bank credits = 10,000 − 150 = ₹9,850
@@ -1138,7 +1147,7 @@ $$
 > **Q 4.10.** Bad debts ₹500 (already in TB). Further bad debts ₹200 to write off and a provision @ 5 % on net debtors needed; debtors ₹20,000.
 >
 > - Net debtors after further bad debts = 20,000 − 200 = ₹19,800
-> - Provision @ 5% = 19,800 × 5/100 = ₹990
+> - Provision @ 5% = 19,800 × $\dfrac{5}{100}$ = ₹990
 > - Total P&L Dr = 500 (existing) + 200 (further) + 990 (provision) = **₹1,690**
 > - Balance Sheet Debtors = 20,000 − 200 − 990 = **₹18,810**
 
@@ -1259,7 +1268,7 @@ Opening stock: 100 units @ ₹10 = ₹1,000. Purchased: 200 units @ ₹12 = ₹2
 > **Weighted Average:**
 > - Total cost = 1,000 + 2,400 = **₹3,400**
 > - Total units = 100 + 200 = **300**
-> - Average cost per unit = 3,400 / 300 = **₹11.33**
+> - Average cost per unit = $\dfrac{3400}{300}$ = **₹11.33**
 > - COGS = 150 × 11.33 = **₹1,700**
 > - Closing stock = 150 × 11.33 = **₹1,700**
 >
@@ -1724,7 +1733,7 @@ The CAG's independence is constitutionally guaranteed precisely because the gove
 | Appointed by | **President of India** (under his hand and seal) |
 | Oath | Administered by President |
 | Tenure | **6 years** OR until age **65**, whichever is earlier |
-| Removal | Same procedure as a Supreme Court judge (resolution of both Houses, 2/3 majority on grounds of proven misbehaviour or incapacity) |
+| Removal | Same procedure as a Supreme Court judge (resolution of both Houses, $\dfrac{2}{3}$ majority on grounds of proven misbehaviour or incapacity) |
 | Salary | Charged on Consolidated Fund of India (not voted) |
 | Conditions of service | Cannot hold any office under GoI or any State government after retirement |
 | Reports submitted to | **President** (Union) → Parliament; **Governor** (State) → State Legislature |
@@ -2391,7 +2400,7 @@ Same numerical types as demand: 0 (perfectly inelastic, vertical), < 1, = 1, > 1
 
 > **Q 9.1.** A 10 % increase in price of a good causes 20 % fall in demand. Ed?
 >
-> |20/10| = **2** (elastic).
+> |$\dfrac{20}{10}$| = **2** (elastic).
 
 > **Q 9.2.** Cross elasticity between tea and sugar is:
 >
@@ -2443,7 +2452,7 @@ Same numerical types as demand: 0 (perfectly inelastic, vertical), < 1, = 1, > 1
 
 > **Q 9.14.** A 5 % rise in income raises demand by 8 %. Income elasticity?
 >
-> 8/5 = **1.6** (luxury).
+> $\dfrac{8}{5}$ = **1.6** (luxury).
 
 > **Q 9.15.** Two goods with Exy = +0.7 are:
 >
@@ -2537,9 +2546,9 @@ Key relationships:
 FC = ₹10,000. VC at Q=100 is ₹5,000. Find TC, AC, AFC, AVC at Q=100. Also, VC at Q=101 is ₹5,040. Find MC.
 
 > TC = 10,000 + 5,000 = ₹15,000
-> - AC = 15,000/100 = **₹150**
-> - AFC = 10,000/100 = **₹100**
-> - AVC = 5,000/100 = **₹50**
+> - AC = $\dfrac{15000}{100}$ = **₹150**
+> - AFC = $\dfrac{10000}{100}$ = **₹100**
+> - AVC = $\dfrac{5000}{100}$ = **₹50**
 > - TC(101) = 10,000 + 5,040 = ₹15,040
 > - MC = 15,040 − 15,000 = **₹40**
 > Note: MC (₹40) < AVC (₹50) → AVC is still falling at Q=100.
@@ -2702,7 +2711,7 @@ Causes of DRS: managerial limits, coordination problems.
 > **Q 10.8.** TFC = 100, TVC = 200 at Q = 50. AC = ?
 >
 > - TC = 100 + 200 = **300**
-> - AC = 300/50 = **6**
+> - AC = $\dfrac{300}{50}$ = **6**
 
 > **Q 10.9.** When MP > AP:
 >
@@ -3871,6 +3880,10 @@ $$\text{Primary Deficit} = \text{Fiscal Deficit} - \text{Interest Payments}$$
 
 $$\text{Monetised Deficit (formerly)} = \text{amount borrowed from RBI (money printing)}$$
 
+<div class="examtip">⚠️ **TRAP — Fiscal Deficit vs Revenue Deficit:** Candidates constantly mix these up. The key distinction: **Fiscal Deficit = total borrowing need** (includes capital expenditure financed by debt). **Revenue Deficit = borrowing just to meet day-to-day expenses** (salaries, subsidies, interest). Revenue Deficit is a subset of Fiscal Deficit. **Primary Deficit = Fiscal Deficit minus interest payments** — it tells you how much NEW borrowing you need, ignoring the burden of old debt. If Primary Deficit = 0, you are only borrowing to service existing debt (steady state).</div>
+
+<div class="keypoint">**Mnemonic — FD, RD, PD relationship:** Think of it as layers of an onion: **FD is the outer layer** (all borrowing). Peel off capital expenditure → you get **RD** (revenue-only borrowing). Peel off interest payments from FD → you get **PD** (new borrowing excluding debt service). Remember: **FD ≥ RD** always; **FD ≥ PD** always (since Interest payments ≥ 0).</div>
+
 </div>
 
 **Budget classification — the two-part budget:**
@@ -3997,6 +4010,23 @@ graph TD
 
 > **Memory hook:** Fiscal deficit = how much the government **borrows** in a year (so it equals the increase in public debt, ignoring repayment).
 
+## 15.5A Finance Minister — Quick Reference (frequent Budget Qs)
+
+| Period | Finance Minister | Notable Budgets / Events |
+|--------|-----------------|--------------------------|
+| 1947–49 | R.K. Shanmugam Chetty | First Budget of independent India (Nov 1947) |
+| 1949–50 | John Mathai | Planned economy vision |
+| 1957–63 | Morarji Desai | Multiple budgets; "peg-a-day" budget |
+| 1991 | Manmohan Singh | LPG reform budget — historic liberalisation |
+| 1999–2004 | Yashwant Sinha | Kelkar Committee reforms |
+| 2004–2008 | P. Chidambaram | Dream Budget" 1997 (earlier term); UPA-era consolidation |
+| 2008–2012 | Pranab Mukherjee | Post-GFC stimulus budgets |
+| 2014–2019 | Arun Jaitley | GST passage; FRBM revision; demonetisation budget |
+| 2019–2024 | Nirmala Sitharaman | First woman to present a full Union Budget; paperless budget 2021 |
+| 2024–present | Nirmala Sitharaman | Continued |
+
+<div class="keypoint">**⚡ SHORTCUT — Who presented India's first budget?** R.K. Shanmugam Chetty on **26 November 1947**. Who is the first woman Finance Minister to present a full budget? **Nirmala Sitharaman** (Indira Gandhi presented one interim budget in 1970 — examiners use this as a trap option).</div>
+
 ## 15.6 FRBM Act, 2003
 
 | Item | Detail |
@@ -4076,7 +4106,7 @@ graph TD
 | **IGST** | Central Government | Inter-state supplies + imports |
 | **UTGST** | UT Government | Intra-UT supplies (no legislature) |
 
-GST Council: Chaired by **Union Finance Minister** + State FMs. Decisions need **3/4ths weighted majority** (Centre 1/3, States 2/3 of votes).
+GST Council: Chaired by **Union Finance Minister** + State FMs. Decisions need **3/4ths weighted majority** (Centre $\dfrac{1}{3}$ States $\dfrac{2}{3}$ of votes).
 
 GST slabs: 0 %, 5 %, 12 %, 18 %, 28 % (+ cess on demerit goods).
 
@@ -4120,7 +4150,7 @@ GST slabs: 0 %, 5 %, 12 %, 18 %, 28 % (+ cess on demerit goods).
 
 > **Q 15.10.** GST Council voting: Centre's share?
 >
-> **1/3** of total votes; States have 2/3. Decision needs **3/4ths weighted majority**.
+> **$\dfrac{1}{3}$** of total votes; States have 2/3. Decision needs **3/4ths weighted majority**.
 
 > **Q 15.11.** Contingency Fund of India is at the disposal of:
 >
@@ -4477,7 +4507,7 @@ Traditional government service delivery: visit the office → stand in a queue �
 | Council article | 279A |
 | Tax types | CGST + SGST + IGST + UTGST |
 | Slabs | 0, 5, 12, 18, 28 (+ cess) |
-| Voting | Centre 1/3, States 2/3; decisions need 3/4ths weighted majority |
+| Voting | Centre $\dfrac{1}{3}$ States $\dfrac{2}{3}$; decisions need 3/4ths weighted majority |
 
 ---
 

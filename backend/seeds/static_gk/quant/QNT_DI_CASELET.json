@@ -169,6 +169,216 @@
       "generator_tag": "claude-opus-2026-04-21-qnt-di-05",
       "generated_at": "2026-04-21T16:15:00+00:00",
       "id": "sgk_QNT_DI_CASELET_00005"
+    },
+    {
+      "stem": "CASELET: A bank branch disbursed loans to 480 customers last month. 60% of the customers took personal loans (average amount ₹2.5 lakh each) and the remaining took home loans (average amount ₹18 lakh each). How many customers of the branch took home loans?",
+      "options": [
+        {
+          "option_text": "144 customers out of 480 took home loans",
+          "is_correct": false
+        },
+        {
+          "option_text": "192 customers out of 480 took home loans",
+          "is_correct": true
+        },
+        {
+          "option_text": "216 customers out of 480 took home loans",
+          "is_correct": false
+        },
+        {
+          "option_text": "288 customers out of 480 took home loans",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Personal loan customers = 60% of 480 = 288; Home loan customers = 480 − 288 = 192. Option A (144) is the trap — it applies 30% instead of 40%, confusing the complement of 60% with 70%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:46:21+00:00",
+      "id": "sgk_QNT_DI_CASELET_00006"
+    },
+    {
+      "stem": "CASELET (cont.): Using the same bank branch data above, what is the ratio of the total amount disbursed as personal loans to the total amount disbursed as home loans?",
+      "options": [
+        {
+          "option_text": "Personal to home loan disbursed ratio is 5 : 24",
+          "is_correct": true
+        },
+        {
+          "option_text": "Personal to home loan disbursed ratio is 3 : 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "Personal to home loan disbursed ratio is 5 : 36",
+          "is_correct": false
+        },
+        {
+          "option_text": "Personal to home loan disbursed ratio is 2 : 9",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "Total personal = 288 × 2.5 = 720 lakh; Total home = 192 × 18 = 3,456 lakh; Ratio = 720 : 3,456 = 5 : 24. Option C (5:36) is the classic trap — it compares only average loan amounts (2.5 : 18) ignoring customer counts. Option B (3:2) uses just the customer-count ratio without applying loan sizes.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:46:21+00:00",
+      "id": "sgk_QNT_DI_CASELET_00007"
+    },
+    {
+      "stem": "CASELET: A public-sector bank reports total advances of ₹60,000 crore and a Gross NPA ratio of 8%. The Gross NPA is distributed across sectors as: Agriculture — 40%, MSME — 35%, and Other sectors — the remainder. What is the Gross NPA of the bank (in ₹ crore)?",
+      "options": [
+        {
+          "option_text": "Gross NPA of the bank stands at ₹3,600 crore",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gross NPA of the bank stands at ₹4,200 crore",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gross NPA of the bank stands at ₹4,800 crore",
+          "is_correct": true
+        },
+        {
+          "option_text": "Gross NPA of the bank stands at ₹5,400 crore",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Gross NPA = 8% of ₹60,000 crore = ₹4,800 crore. Option A (₹3,600 crore) corresponds to 6% — a common error from confusing Net NPA ratio with Gross NPA ratio. Option B (₹4,200 crore) reflects 7%, another typical misread.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:46:21+00:00",
+      "id": "sgk_QNT_DI_CASELET_00008"
+    },
+    {
+      "stem": "CASELET (cont.): Using the same bank's NPA data above, by how much (in ₹ crore) does the Agriculture sector NPA exceed the MSME sector NPA?",
+      "options": [
+        {
+          "option_text": "Agriculture NPA exceeds MSME NPA by ₹120 crore",
+          "is_correct": false
+        },
+        {
+          "option_text": "Agriculture NPA exceeds MSME NPA by ₹240 crore",
+          "is_correct": true
+        },
+        {
+          "option_text": "Agriculture NPA exceeds MSME NPA by ₹360 crore",
+          "is_correct": false
+        },
+        {
+          "option_text": "Agriculture NPA exceeds MSME NPA by ₹480 crore",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Agriculture NPA = 40% of 4,800 = ₹1,920 crore; MSME NPA = 35% of 4,800 = ₹1,680 crore; Difference = ₹240 crore. Option A (₹120 crore) is the trap — it applies the 5% sector-share gap directly to ₹2,400 (half the NPA) instead of the full ₹4,800 crore base.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:46:21+00:00",
+      "id": "sgk_QNT_DI_CASELET_00009"
+    },
+    {
+      "stem": "CASELET (cont.): From the same bank's NPA data, if the bank recovers 25% of the Agriculture NPA and 40% of the MSME NPA during the year, what is the total amount recovered (in ₹ crore) from these two sectors combined?",
+      "options": [
+        {
+          "option_text": "Total recovery from the two sectors is ₹900 crore",
+          "is_correct": false
+        },
+        {
+          "option_text": "Total recovery from the two sectors is ₹1,050 crore",
+          "is_correct": false
+        },
+        {
+          "option_text": "Total recovery from the two sectors is ₹1,152 crore",
+          "is_correct": true
+        },
+        {
+          "option_text": "Total recovery from the two sectors is ₹1,440 crore",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Agriculture recovery = 25% of ₹1,920 = ₹480 crore; MSME recovery = 40% of ₹1,680 = ₹672 crore; Total = ₹1,152 crore. Option A (₹900 crore) is the trap — it applies the same 25% to the combined Agriculture + MSME NPA of ₹3,600 crore, ignoring differentiated rates. Option D (₹1,440 crore) applies 40% uniformly to both.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:46:21+00:00",
+      "id": "sgk_QNT_DI_CASELET_00010"
+    },
+    {
+      "stem": "CASELET: A cooperative society has 500 members — 60% from urban areas and the rest rural. Among urban members, 2/3 are salaried and the remainder are self-employed (SE). Among rural members, exactly half are salaried and the rest SE. The society lends ₹60,000 to each salaried member at 10% p.a. simple interest, and ₹40,000 to each SE member at 15% p.a. simple interest. What is the total annual interest income (in ₹) earned from all members?",
+      "options": [
+        {
+          "option_text": "Total annual interest from all members is ₹24,00,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "Total annual interest from all members is ₹26,00,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "Total annual interest from all members is ₹30,00,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "Total annual interest from all members is ₹36,00,000",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Urban = 300; salaried 200 (loan ₹1,20,00,000 × 10% = ₹12,00,000), SE 100 (₹40,00,000 × 15% = ₹6,00,000). Rural = 200; salaried 100 (₹60,00,000 × 10% = ₹6,00,000), SE 100 (₹40,00,000 × 15% = ₹6,00,000). Total = 12 + 6 + 6 + 6 = ₹30,00,000. Option B (₹26,00,000) is the trap — it applies a flat 10% to the entire disbursed pool of ₹2,60,00,000, ignoring the 15% rate on SE members.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:46:21+00:00",
+      "id": "sgk_QNT_DI_CASELET_00011"
+    },
+    {
+      "stem": "CASELET (cont.): Using the same cooperative society data, the total loan disbursed to urban salaried members is what fraction of the total loan disbursed to all 500 members?",
+      "options": [
+        {
+          "option_text": "Urban salaried share of total loan disbursed is 2/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "Urban salaried share of total loan disbursed is 8/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "Urban salaried share of total loan disbursed is 6/13",
+          "is_correct": true
+        },
+        {
+          "option_text": "Urban salaried share of total loan disbursed is 3/13",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Urban salaried loan = 200 × ₹60,000 = ₹1,20,00,000; Total loan = 1,20,00,000 + 40,00,000 + 60,00,000 + 40,00,000 = ₹2,60,00,000; Fraction = 120/260 = 6/13. Option B (8/13) is the most dangerous trap — it computes total urban loan (₹1,60,00,000) as a share of ₹2,60,00,000, conflating all urban members with urban salaried alone. Option A (2/5) merely uses the member count ratio 200/500 without applying loan amounts.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T16:46:21+00:00",
+      "id": "sgk_QNT_DI_CASELET_00012"
     }
   ]
 }

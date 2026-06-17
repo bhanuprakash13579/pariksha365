@@ -95,11 +95,17 @@ Read end-to-end in order without skipping.
 | **p33** | [PART 12](#part-12) | READING COMPREHENSION (RC) |
 | **p33** | [PART 13](#part-13) | PARA-JUMBLES (SENTENCE REARRANGEMENT) |
 | **p34** | [PART 14](#part-14) | FILL IN THE BLANKS |
+| **p34** | [PART 15](#part-15) | VOCABULARY (Synonyms, Antonyms, Idioms, OWS, Spellings) |
 | **p35–53** | [PART 16](#part-16) | DEEP-DRILL VOCABULARY ESSENTIALS (high-yield list) |
 | **p54–57** | [PART 17](#part-17) | BANKS-FOCUS DEEP DRILL (PO/Clerk/RRB Bank, IBPS+SBI+RBI) |
 | **p58–83** | [PART 18](#part-18) | SSC + RRB FOCUS DEEP DRILL |
 | **p84** | [PART E](#part-e) | TIMED MINI-MOCK (25 Q · 25 min) |
 | **p85** | [PART F](#part-f) | TRAP-RECOGNITION CARDS (English) |
+| — | [Revision Cards](#section-13) | QUICK REVISION CARD: Core Grammar (Parts 4–8 condensed) |
+| — | [Appendix A](#appendix-a) | ERROR SPOTTING — 10-point master checklist |
+| — | [Appendix B](#appendix-b) | TOP-20 PREPOSITION PAIRS quick-reference |
+| — | [Appendix C](#appendix-c) | RC TRAPS (Banks + SSC) |
+| — | [Appendix G](#appendix-g) | FORMULA-BASED CONCEPTS MASTER REFERENCE |
 
 ---
 # PART 1 — PARTS OF SPEECH & SENTENCE STRUCTURE {#part-1}
@@ -180,8 +186,219 @@ Read end-to-end in order without skipping.
 3. **Pronoun agreement** — "Each of the students **has** …" (singular "each").
 4. **Adjective vs adverb** — "He runs **quickly**" (not "quick").
 5. **Degree of comparison** — "one of the tallest buildings" (superlative + plural).
-6. **Preposition fixed pairs** (below).
-7. **Conjunction pairs** (below).
+6. **Preposition fixed pairs** → see PART 5.
+7. **Conjunction pairs** → see PART 6.
+
+## 1.1 Pronouns — case, agreement & reference (HIGH-YIELD)
+
+Pronouns are the **2nd-most-tested** error category after verbs. The single test: is the pronoun in the correct **case** (subjective / objective / possessive), does it **agree** in number with its antecedent, and does its **reference** point to exactly one noun unambiguously?
+
+| Subjective (acts) | Objective (is acted on) | Possessive |
+|---|---|---|
+| I, you, he, she, it, we, they, **who** | me, you, him, her, it, us, them, **whom** | my, your, his, her, its, our, their, **whose** |
+
+**Quick test for who vs whom:** mentally rephrase with **he / him**.
+- "The boy ___ I saw" → "I saw **him**" → use **whom**.
+- "The boy ___ won the prize" → "**He** won" → use **who**.
+
+<div class="worked">
+
+**Example 1 — pronoun case after preposition.**
+*"Between you and I, the plan won't work."*
+
+**Step 1.** "Between" is a preposition → its object must be in the **objective case**.
+**Step 2.** "I" is subjective; needs to be **me**.
+
+**Corrected:** *"**Between you and me**, the plan won't work."*
+
+> Test trick: would you say "between we" or "between us"? Obviously *us*. So the second pronoun must be in the *me/us/him/her/them* family.
+
+</div>
+
+<div class="worked">
+
+**Example 2 — "each / every / either / neither / none" + singular verb + singular pronoun.**
+*"Each of the players must bring their own racket."*
+
+**Step 1.** "Each" → singular subject; verb already singular ("must bring" — OK).
+**Step 2.** But the *pronoun* "their" refers back to "each" → should also be **singular** in strict grammar: **his** or **her** (or *his/her* / *his or her* in modern usage).
+
+**Corrected (formal):** *"Each of the players must bring **his** own racket."*
+*(Modern usage often accepts singular "their" — but the SSC/Banks answer key still prefers the singular *his*.)*
+
+</div>
+
+<div class="worked">
+
+**Example 3 — "who" vs "whom".**
+*"The candidate whom I think will win is from Bihar."*
+
+**Step 1.** Strip the parenthetical *"I think"* → *"The candidate ___ will win"* → subjective case → use **who**.
+
+**Corrected:** *"The candidate **who** I think will win is from Bihar."*
+
+> Test trick: if you can drop the verb cluster ("I think", "we believe") and the remainder is a subject sentence, use **who**.
+
+</div>
+
+## 1.2 Adjective vs Adverb (HIGH-FREQUENCY trap)
+
+**Rule:** *adjectives* modify nouns; *adverbs* modify verbs, adjectives, or other adverbs. The error is usually using an adjective where an adverb is needed.
+
+<div class="worked">
+
+**Example 4.**
+*"He drives very careful on highways."*
+
+**Step 1.** What is being modified? *"drives"* — a **verb**. Verbs need **adverbs**.
+**Step 2.** *Careful* is an adjective; *carefully* is the adverb.
+
+**Corrected:** *"He drives very **carefully** on highways."*
+
+</div>
+
+<div class="worked">
+
+**Example 5 — linking-verb exception.**
+*"This flower smells sweetly."*
+
+**Step 1.** "smells" is a **linking verb** (also: be, seem, appear, look, feel, taste, sound, become, grow). Linking verbs take **adjectives**, not adverbs, because they describe the **subject's state**, not the action.
+
+**Corrected:** *"This flower smells **sweet**."* (describes the flower, not the act of smelling.)
+
+> Same rule: *"She looks **beautiful**"* (NOT beautifully), *"The soup tastes **delicious**"* (NOT deliciously).
+
+</div>
+
+## 1.3 Degree of Comparison (high-traps)
+
+Three degrees: positive (tall) → comparative (taller, between **2** things) → superlative (tallest, among **3+** things).
+
+| Construction | Correct | Common error |
+|---|---|---|
+| Compare **two** things | comparative: *"the taller **of the two**"* | using superlative for two ("the tallest of the two") |
+| Compare **3+** things | superlative: *"the **tallest** of all"* | using comparative |
+| "More" + adjective | only with 2+ syllable adjectives ("more beautiful") | "more better", "more taller" (double comparative — wrong) |
+| "Than" structure | A is taller **than** B | "A is taller **then** B" (then ≠ than) |
+| "Than any other" | *"Mumbai is larger than **any other** city in Maharashtra"* (excluding Mumbai itself) | omitting "other" → "larger than any city" makes Mumbai larger than itself |
+| "One of the + superlative + plural noun" | *"One of the **tallest buildings**"* | "one of the tallest building" (singular wrong) |
+
+<div class="worked">
+
+**Example 6.** *"Mumbai is larger than any city in Maharashtra."*
+
+**Step 1.** Mumbai is itself a city in Maharashtra. "any city" includes Mumbai → makes Mumbai larger than itself — a logical impossibility.
+
+**Corrected:** *"Mumbai is larger than **any other** city in Maharashtra."*
+
+</div>
+
+<div class="worked">
+
+**Example 7.** *"He is one of the best player in our team."*
+
+**Step 1.** "one of the + superlative" must be followed by a **plural noun**.
+**Step 2.** "player" is singular → wrong.
+
+**Corrected:** *"He is one of the best **players** in our team."*
+
+</div>
+
+## 1.4 Collective Nouns — singular vs plural
+
+| Noun acting as ONE unit (singular verb) | Same noun, members act individually (plural verb) |
+|---|---|
+| *The jury **has** reached a verdict.* (acting unanimously) | *The jury **are** divided in their opinion.* (members differ) |
+| *The team **is** practicing.* | *The team **are** wearing different jerseys.* |
+| *The committee **has** decided.* | *The committee **were** unable to agree.* |
+
+> SSC convention typically prefers the **singular** treatment unless the context is unambiguous about individual action. When in doubt for SSC: pick singular.
+
+## 1.5 Gerund (V-ing) vs Infinitive (to + V1) — the #1 PYQ source {#gerund-infinitive}
+
+**Rule:** After certain verbs, only a gerund is correct; after others, only an infinitive; after a small set, both are possible but with a **different meaning**.
+
+### Verbs that take ONLY a Gerund (V-ing)
+
+**Formula:** V + V-ing (never "to + V1")
+
+| Verb group | Members |
+|---|---|
+| Enjoyment / avoidance | enjoy ★★★, avoid ★★★, mind ★★, miss ★★ |
+| Completion / delay | finish ★★, postpone ★★, keep ★ |
+| Denial / admission | deny ★★, suggest ★★, consider ★★ |
+| Habit / risk | practise ★★, risk ★ |
+| Special | stop (= give up) ★★★, regret (past) ★★★ |
+
+**✓** "I enjoy **reading**." **✗** "I enjoy **to read**."
+**✓** "She avoided **meeting** him." **✗** "She avoided **to meet** him."
+
+### Verbs that take ONLY an Infinitive (to + V1)
+
+**Formula:** V + to + V1 (never V-ing)
+
+| Verb group | Members |
+|---|---|
+| Desire / plan | want ★★★, wish ★★★, hope ★★, decide ★★★, plan ★★, intend ★ |
+| Promise / refusal | promise ★★, agree ★★, refuse ★★ |
+| Ability / attempt | manage ★★, fail ★★★, learn ★★ |
+| Appearance | seem ★★★, appear ★★, pretend ★ |
+| Expectation | expect ★★ |
+
+**✓** "She decided **to leave**." **✗** "She decided **leaving**."
+**✓** "He failed **to submit** the form." **✗** "He failed **submitting** the form."
+
+### Verbs that take BOTH — but with DIFFERENT meanings (PYQ gold)
+
+> These are the most-tested traps in error spotting. Memorise all 7 pairs.
+
+| Verb | + Gerund (V-ing) | + Infinitive (to V1) | Memory tip |
+|---|---|---|---|
+| **stop** | give up habit: *"He stopped **smoking**."* (= ceased it) | pause in order to: *"He stopped **to smoke**."* (= paused his walk) | V-ing = **end it**; to+V1 = **pause for it** |
+| **remember** | recall past: *"I remember **meeting** her."* (= I recall that meeting) | not forget future duty: *"Remember **to lock** the door."* (= don't forget) | V-ing = **past**; to+V1 = **future** |
+| **forget** | fail to recall: *"I forget **meeting** him."* (= no memory of it) | fail to do: *"I forgot **to call** him."* (= I didn't make the call) | V-ing = **memory gap**; to+V1 = **action gap** |
+| **regret** | sorry about past action: *"I regret **saying** that."* (= wish I hadn't) | sorry to inform: *"I regret **to inform** you …"* (= formal announcement) | V-ing = **past sorrow**; to+V1 = **present formality** |
+| **try** | experiment / test: *"Try **opening** the window."* (= see if it helps) | make an effort: *"Try **to open** the window."* (= make your best attempt) | V-ing = **experiment**; to+V1 = **effort** |
+| **mean** | involve / result in: *"Success means **working** hard."* | intend: *"I meant **to call** you."* | V-ing = **entails**; to+V1 = **intend** |
+| **need** | passive sense / necessity: *"The car needs **washing**."* (= needs to be washed) | want / obligation: *"I need **to wash** the car."* | V-ing = **thing-focused (passive)**; to+V1 = **person-focused** |
+
+<div class="pitfall">
+
+**PYQ trap — "stopped to smoke" vs "stopped smoking"**
+
+Wrong: *"He stopped **to smoke** on doctor's advice."*
+Right: *"He stopped **smoking** on doctor's advice."*
+Why: "on doctor's advice" means giving up the habit (gerund), not pausing for a smoke (infinitive).
+
+**PYQ trap — "remember meeting" vs "remember to meet"**
+
+Wrong: *"Remember **meeting** the doctor at 5 pm."* (implies you're recalling a past event)
+Right: *"Remember **to meet** the doctor at 5 pm."* (= don't forget the upcoming appointment)
+
+</div>
+
+## 1.5 Common Part-of-Speech Traps
+
+| Trap | Example | Fix |
+|---|---|---|
+| Preposition + objective pronoun | "between you and **I**" | "between you and **me**" |
+| Who vs whom (drop the parenthetical and test he/him) | "the man **whom** I think won" | "the man **who** I think won" |
+| Each / every / either + singular | "Each boy **have** a book" | "Each boy **has** a book" |
+| Adjective for verb | "She sings beautiful." | "She sings beautifully." |
+| Adjective for linking verb | "It tastes badly." | "It tastes bad." |
+| Double comparative / superlative | "more better", "most cleverest" | "better", "cleverest" |
+| Compare with "any" (includes self) | "taller than any boy" | "taller than any **other** boy" |
+| Superlative + singular noun after "one of" | "one of the best teacher" | "one of the best teachers" |
+
+## 1.6 Mini-PYQ Drill — Parts of Speech
+
+1. *"He is shorter than (I / me)."* → **I** (the implied full clause is "than I am"; subjective case).
+2. *"Let (he / him) and (I / me) handle this."* → **him** and **me** (after "let" — objective case).
+3. *"Of the two brothers, Ram is the (taller / tallest)."* → **taller** (comparing two).
+4. *"This is the (most cleverest / cleverest) student in the class."* → **cleverest** (no double superlative).
+5. *"Each of the workers has (his / their) own toolkit."* → **his** (formal/SSC); colloquial *their* increasingly accepted.
+
+> **Carry-forward principle:** in error-spotting, run a 4-step scan on every sentence — Verb (tense/agreement), Preposition (pair), Pronoun (case/agreement), Conjunction (parallelism). 95 % of marks live in these four.
 
 ---
 
@@ -191,53 +408,86 @@ Read end-to-end in order without skipping.
 
 **12 tenses = 4 aspects × 3 times.** Master the *structural formula* for each cell of the grid and 70% of every Error-Spotting, Cloze, and Sentence-Improvement question becomes mechanical.
 
-| Aspect ↓ / Time → | Past | Present | Future |
-|---|---|---|---|
-| **Simple** | wrote | write / writes | will write |
-| **Continuous** | was/were writing | am/is/are writing | will be writing |
-| **Perfect** | had written | has/have written | will have written |
-| **Perfect Continuous** | had been writing | has/have been writing | will have been writing |
-
 > **V1 = base verb** (write), **V2 = past simple** (wrote), **V3 = past participle** (written), **V-ing = present participle** (writing).
+
+## 2.0a The Master Tense Formula Grid — Affirmative
+
+Read **row × column**: e.g. "Past Continuous" = row 2 (Continuous) × column 2 (Past). Every cell has the same structure: **formula** + **example** + **signal cues** (when this tense is triggered).
+
+| Aspect ↓ \\ Time → | **PRESENT** | **PAST** | **FUTURE** |
+|---|---|---|---|
+| **SIMPLE**<br>*(plain action / fact / habit)* | **F:** sub + **V1 / V1+s** (V1+s with he/she/it/singular) + obj<br>**E:** "She **writes** a letter."<br>**Cues:** every day, always, usually, often, never | **F:** sub + **V2** + obj<br>**E:** "She **wrote** a letter."<br>**Cues:** yesterday, ago, last week, in 1995 | **F:** sub + **will / shall + V1** + obj<br>**E:** "She **will write** a letter."<br>**Cues:** tomorrow, next month, soon |
+| **CONTINUOUS**<br>*(action in progress at a point in time)* | **F:** sub + **is/am/are + V1+ing** + obj<br>**E:** "She **is writing** a letter."<br>**Cues:** now, right now, at the moment, currently | **F:** sub + **was/were + V1+ing** + obj<br>**E:** "She **was writing** a letter when I called."<br>**Cues:** at that moment, while, when (with another past) | **F:** sub + **will be + V1+ing** + obj<br>**E:** "She **will be writing** a letter at 5 pm."<br>**Cues:** this time tomorrow, at + future time |
+| **PERFECT**<br>*(action completed with current relevance)* | **F:** sub + **has/have + V3** + obj<br>**E:** "She **has written** a letter."<br>**Cues:** just, already, ever, yet, recently, lately, so far | **F:** sub + **had + V3** + obj<br>**E:** "She **had written** the letter before he arrived."<br>**Cues:** by the time, before / after (with another past) | **F:** sub + **will have + V3** + obj<br>**E:** "She **will have written** the letter by 6 pm."<br>**Cues:** by next year, by then, by + future time |
+| **PERFECT CONTINUOUS**<br>*(action ongoing UP TO a point + duration)* | **F:** sub + **has/have been + V1+ing** + obj<br>**E:** "She **has been writing** for an hour."<br>**Cues:** since + start point, for + duration, all day/year | **F:** sub + **had been + V1+ing** + obj<br>**E:** "She **had been writing** for an hour before he came."<br>**Cues:** for + duration + before another past | **F:** sub + **will have been + V1+ing** + obj<br>**E:** "By 5 pm she **will have been writing** for two hours."<br>**Cues:** by + future time + for + duration |
+
+> **How to read this grid.** Want *past continuous*? Find row "Continuous" × column "Past" → formula is **sub + was/were + V1+ing + obj**, example is "She was writing", cues are "while, at that moment, when". The same routine answers all 12 tenses.
+
+## 2.0b Negatives & Questions — derive from the grid in one step
+
+Every cell above is the **affirmative**. To make negatives and questions, use this universal pair of rules:
+
+| Operation | Rule | Applied example (Past Continuous) |
+|---|---|---|
+| **Negative** | Insert **"not"** immediately after the first auxiliary. | She **was not writing** a letter. |
+| **Question** | Move the first auxiliary in **front of the subject**; end with **?** | **Was** she writing a letter**?** |
+
+**Exception — Simple Present and Simple Past** have no auxiliary in the affirmative; insert **do / does / did** for negatives & questions, and the main verb reverts to **V1**:
+
+| Tense | Negative | Question |
+|---|---|---|
+| Simple Present | sub + **do / does + not + V1** + obj <br>"She **does not write** a letter." | **Do / Does** + sub + V1 + obj + ?<br>"**Does** she write a letter?" |
+| Simple Past | sub + **did + not + V1** + obj<br>"She **did not write** a letter." | **Did** + sub + V1 + obj + ?<br>"**Did** she write a letter?" |
+
+That's it — every one of the 36 forms (12 tenses × 3 moods) is now derivable from the grid plus these two rules.
 
 ---
 
-## 2.1 The 12-Tense Master Table — structure, signal words, use
+## 2.1 The 12-Tense Master Table — Formula · Signal Words · Pitfall
 
 <div class="formula">
 
-**General skeleton for every tense:** Subject + Auxiliary(es) + Main Verb form (+ Object/Complement)
-
-- **Auxiliary chain** carries time + aspect.
-- **Main verb form** is fixed by the aspect (V1, V-ing, V3, been V-ing).
-- **Question form** = invert first auxiliary with subject.
-- **Negative form** = `not` after first auxiliary.
+**General skeleton:** S + Auxiliary(es) + Main Verb form (+ O)
+- **Question** = invert first auxiliary before S
+- **Negative** = insert `not` after first auxiliary
+- **Simple Present / Simple Past negatives / questions** → insert `do/does/did`; main verb reverts to V1
 
 </div>
 
-### 2.1.1 Present Tenses
+| Tense | Formula (Affirmative) | Signal Words | Pitfall |
+|---|---|---|---|
+| **Simple Present** | S + V1/V1+s + O | always, often, usually, every day, rarely, never, sometimes | ✗ "Look! It **rains**." → ✓ "It **is raining**." (use Present Continuous for right-now) |
+| **Present Continuous** | S + is/am/are + V-ing + O | now, right now, at present, at the moment, currently, look! listen! | ✗ Using for stative verbs: "I **am knowing** the answer." → ✓ "I **know** the answer." |
+| **Present Perfect** | S + has/have + V3 + O | just, already, yet, ever, never, recently, lately, so far, since + point, for + duration | ✗ "I **have finished** it two hours **ago**." → ✓ "I **finished** it two hours ago." (ago locks Simple Past) |
+| **Present Perfect Continuous** | S + has/have + been + V-ing + O | for + duration, since + point, all day, the whole morning | ✗ "She has been waiting **since** two hours." → ✓ "…**for** two hours." (since = point, for = duration) |
+| **Simple Past** | S + V2 + O | yesterday, ago, last week/month/year, in 2010, once, then | ✗ "I **have visited** Goa **last December**." → ✓ "I **visited** Goa last December." |
+| **Past Continuous** | S + was/were + V-ing + O | while, as, when (for background), at 5 pm yesterday | ✗ "They **were play** football." → ✓ "They **were playing** football." |
+| **Past Perfect** | S + had + V3 + O | before, after, by the time, already, no sooner…than, hardly…when | ✗ "After he **had arrived**, the meeting **had started**." — only the EARLIER action takes had+V3 |
+| **Past Perfect Continuous** | S + had + been + V-ing + O | for + duration + before/when (past), since + point + before/when | ✗ Confusing with Past Continuous — use when duration up to a past point matters |
+| **Simple Future** | S + will/shall + V1 + O | tomorrow, next week/month/year, soon, in 2030 | ✗ "I will call you when he **will arrive**." → ✓ "…when he **arrives**." (time-clause → Simple Present) |
+| **Future Continuous** | S + will be + V-ing + O | at this time tomorrow, at 8 pm next Monday, in the coming weeks | ✗ Using Future Simple when duration at a future moment is meant |
+| **Future Perfect** | S + will have + V3 + O | by + future time, by then, by the time + clause, before + future point | ✗ "He **will complete** the project by Friday." → ✓ "He **will have completed** it by Friday." |
+| **Future Perfect Continuous** | S + will have been + V-ing + O | for + duration + by + future time | ✗ Using Future Perfect when ongoing duration is the point |
+
+### 2.1.1 Full forms — Positive · Negative · Question reference
 
 <div class="formula">
 
-**Simple Present** — S + V1/V-s/es + O
+**Simple Present** — S + V1/V1+s + O
 
 - Positive: *She **writes** a letter.*
 - Negative: *She **does not write** a letter.*
 - Question: ***Does** she **write** a letter?*
-- Signal words: always, often, usually, generally, every day, rarely, never, sometimes.
-- Use: habit, universal truth, fixed schedule, headlines.
 
 </div>
 
 <div class="formula">
 
-**Present Continuous** — S + am/is/are + V-ing + O
+**Present Continuous** — S + is/am/are + V-ing + O
 
 - Positive: *She **is writing** a letter.*
 - Negative: *She **is not writing** a letter.*
 - Question: ***Is** she **writing** a letter?*
-- Signal words: now, right now, at present, at the moment, currently, these days, look! listen!
-- Use: action in progress now, temporary action, planned near future ("I am meeting him tomorrow").
 
 </div>
 
@@ -248,8 +498,6 @@ Read end-to-end in order without skipping.
 - Positive: *She **has written** a letter.*
 - Negative: *She **has not written** a letter.*
 - Question: ***Has** she **written** a letter?*
-- Signal words: just, already, yet, ever, never, recently, lately, so far, up to now, since + point, for + duration.
-- Use: past action with a present consequence; "completed in unfinished time".
 
 </div>
 
@@ -260,12 +508,8 @@ Read end-to-end in order without skipping.
 - Positive: *She **has been writing** the letter for two hours.*
 - Negative: *She **has not been writing** the letter.*
 - Question: ***Has** she **been writing** the letter?*
-- Signal words: for + duration, since + point, all day, the whole morning, lately, recently.
-- Use: action started in the past, still continuing OR just stopped with visible result.
 
 </div>
-
-### 2.1.2 Past Tenses
 
 <div class="formula">
 
@@ -274,8 +518,6 @@ Read end-to-end in order without skipping.
 - Positive: *She **wrote** a letter.*
 - Negative: *She **did not write** a letter.*
 - Question: ***Did** she **write** a letter?*
-- Signal words: yesterday, ago, last week/month/year, in 2010, once, then.
-- Use: completed action at a definite past time; sequence of past events; reported speech back-shift.
 
 </div>
 
@@ -286,8 +528,6 @@ Read end-to-end in order without skipping.
 - Positive: *She **was writing** a letter.*
 - Negative: *She **was not writing** a letter.*
 - Question: ***Was** she **writing** a letter?*
-- Signal words: while, as, when, at 5 pm yesterday, all day yesterday.
-- Use: action in progress at a past moment; background to a sudden past event ("While I was reading, the phone rang").
 
 </div>
 
@@ -298,8 +538,6 @@ Read end-to-end in order without skipping.
 - Positive: *She **had written** the letter before he arrived.*
 - Negative: *She **had not written** the letter.*
 - Question: ***Had** she **written** the letter?*
-- Signal words: before, after, by the time, already, just, no sooner … than, hardly … when.
-- Use: the earlier of two past actions ("past-in-past"); contrary-to-fact past wish.
 
 </div>
 
@@ -310,12 +548,8 @@ Read end-to-end in order without skipping.
 - Positive: *She **had been writing** the letter for an hour when he came.*
 - Negative: *She **had not been writing** the letter.*
 - Question: ***Had** she **been writing** the letter?*
-- Signal words: for + duration + before/when (past), since + point + before/when (past).
-- Use: duration of an action up to a past reference point.
 
 </div>
-
-### 2.1.3 Future Tenses
 
 <div class="formula">
 
@@ -324,8 +558,6 @@ Read end-to-end in order without skipping.
 - Positive: *She **will write** a letter.*
 - Negative: *She **will not (won't) write** a letter.*
 - Question: ***Will** she **write** a letter?*
-- Signal words: tomorrow, next week/month/year, soon, in 2030, in the future.
-- Use: spontaneous decision; prediction; promise; offer.
 - "going to" form: planned/intended future or evidence-based prediction ("It **is going to** rain — look at those clouds").
 
 </div>
@@ -337,8 +569,6 @@ Read end-to-end in order without skipping.
 - Positive: *She **will be writing** the letter at 5 pm.*
 - Negative: *She **will not be writing** the letter.*
 - Question: ***Will** she **be writing** the letter?*
-- Signal words: at this time tomorrow, at 8 pm next Monday, in the coming weeks.
-- Use: action in progress at a future moment; polite enquiry about plans.
 
 </div>
 
@@ -349,8 +579,6 @@ Read end-to-end in order without skipping.
 - Positive: *She **will have written** the letter by 6 pm.*
 - Negative: *She **will not have written** the letter.*
 - Question: ***Will** she **have written** the letter?*
-- Signal words: by + future time, by then, by the time + clause, before + future point.
-- Use: action that will be completed before a specified future time.
 
 </div>
 
@@ -369,6 +597,8 @@ Read end-to-end in order without skipping.
 ---
 
 ## 2.2 Tense forms at a glance — positive / negative / question
+
+> **Compact supplement only** — this table shows the structural formula. For signal words (ago, since, already, etc.) and usage notes, see 2.1. For per-tense traps, see 2.4a.
 
 | Tense | Positive | Negative | Question |
 |---|---|---|---|
@@ -578,21 +808,76 @@ Read end-to-end in order without skipping.
 | now, right now, at the moment, currently | Present Continuous | *She **is currently** writing.* |
 | when + simple past | Simple Past + Past Cont. | *I was sleeping **when** he called.* |
 
+## 2.4a Per-tense traps — the most common examiner tricks
+
+<div class="pitfall">
+
+**Simple Past vs Present Perfect — "ago" and "yesterday" traps**
+
+- Wrong: *"I **have finished** it two hours **ago**."*
+- Right: *"I **finished** it two hours **ago**."*
+- Why: "ago", "yesterday", "last week", "in 2010" are definite past markers → they **lock** the verb to Simple Past. Present Perfect cannot coexist with a definite past time.
+
+- Wrong: *"He **has visited** Goa **last December**."*
+- Right: *"He **visited** Goa **last December**."*
+
+</div>
+
+<div class="pitfall">
+
+**Past Perfect — reversing the action order**
+
+- Rule: When two actions both happened in the past, the **earlier** one takes Past Perfect; the **later** one takes Simple Past.
+- Wrong: *"After he **had arrived**, the meeting **had started**."* (both in past perfect — wrong; the meeting starting is the later event)
+- Right: *"After he **arrived**, the meeting **had already started**."* (meeting started earlier → past perfect; arrival is later → simple past)
+
+</div>
+
+<div class="pitfall">
+
+**Present Perfect Continuous — "since" vs "for"**
+
+- "Since" pairs with a **point in time**: *"She has been waiting **since** 3 pm."* ✓
+- "For" pairs with a **duration**: *"She has been waiting **for** two hours."* ✓
+- Wrong: *"She has been waiting **since** two hours."* ✗
+
+</div>
+
+<div class="pitfall">
+
+**Simple Present — NOT for actions happening right now**
+
+- Wrong: *"Look! It **rains**."*
+- Right: *"Look! It **is raining**."*
+- Why: "Look!" signals an action visible at this exact moment → Present Continuous.
+
+</div>
+
+<div class="pitfall">
+
+**Future after time-clauses — will is NOT used inside the clause**
+
+- Wrong: *"I will call you when he **will arrive**."*
+- Right: *"I will call you when he **arrives**."*
+- Why: Time-subordinate clauses (when, before, after, until, as soon as) use **Simple Present** even for future meaning.
+
+</div>
+
 ---
 
 ## 2.5 Conditionals (if-clauses)
 
 <div class="formula">
 
-**Five conditional patterns:**
+**Five conditional patterns — full formula and use:**
 
-| Type | Use | If-clause | Main clause | Example |
+| Type | Use | If-clause formula | Main-clause formula | Example |
 |---|---|---|---|---|
-| Type 0 | universal truth | If + present simple | present simple | *If you heat ice, it **melts**.* |
-| Type 1 | likely future | If + present simple | will + V1 | *If it rains, we **will cancel** the picnic.* |
-| Type 2 | unreal present | If + past simple | would + V1 | *If I **were** you, I **would apologise**.* |
-| Type 3 | unreal past | If + had + V3 | would have + V3 | *If I **had studied**, I **would have passed**.* |
-| Mixed | past cause → present result | If + had + V3 | would + V1 | *If I had taken that job, I **would be** rich now.* |
+| **Type 0** | universal truth / scientific fact | **If + S + V1 / V1+s** | **S + V1 / V1+s** | *If you heat ice, it **melts**.* |
+| **Type 1** | real, likely future | **If + S + V1 / V1+s** | **S + will / can / may + V1** | *If it rains, we **will cancel** the picnic.* |
+| **Type 2** | unreal / hypothetical present | **If + S + V2** *(or "were" for to-be in all persons)* | **S + would / could / might + V1** | *If I **were** you, I **would apologise**.* |
+| **Type 3** | unreal / impossible past (regret) | **If + S + had + V3** | **S + would / could / might + have + V3** | *If I **had studied**, I **would have passed**.* |
+| **Mixed (3 → 2)** | past cause → present result | **If + S + had + V3** | **S + would + V1** (present result) | *If I had taken that job, I **would be** rich now.* |
 
 </div>
 
@@ -611,33 +896,22 @@ Read end-to-end in order without skipping.
 
 ## 2.6 Inversion patterns (formal, very high-frequency)
 
-<div class="formula">
+**Formula:** Negative/restrictive word at front → auxiliary moves before subject (same as question word order).
 
-**Negative-front inversion — structure:**
-
-- **No sooner had + S + V3 … than + S + V2.**
-  *No sooner had I sat down than the bell rang.*
-
-- **Hardly / Scarcely had + S + V3 … when + S + V2.**
-  *Hardly had we left when it started raining.*
-
-- **Seldom / Rarely / Never + had + S + V3 …**
-  *Never had I seen such chaos.*
-
-- **Not only … but also …** with inversion: *Not only **does he sing**, but he also plays guitar.*
-
-- **As soon as + S + V2, S + V2** — no inversion needed.
-  *As soon as the train arrived, passengers rushed in.*
-
-</div>
+| Trigger | Formula | Example | Trap |
+|---|---|---|---|
+| **No sooner** | No sooner + had + S + V3 + **than** + S + V2 | *No sooner had I sat down than the bell rang.* | ✗ "…**when** the bell rang" — must be **than** |
+| **Hardly / Scarcely** | Hardly/Scarcely + had + S + V3 + **when** + S + V2 | *Hardly had we left when it started raining.* | ✗ "…**than** it started" — must be **when** |
+| **Never / Rarely / Seldom** | Never/Rarely/Seldom + aux + S + V | *Never have I seen such chaos.* | ✗ "Never I have seen…" — aux must precede S |
+| **Not only … but also** | Not only + aux + S + V, but also … | *Not only does he sing, but he also dances.* | Keep aux inverted in the first clause only |
+| **Only after / Only when / Only then** | Only + clause + aux + S + V | *Only after she left did I realise my mistake.* | ✗ "Only after she left I realised" — aux must invert |
+| **Under no circumstances / In no way** | Phrase + aux + S + V | *Under no circumstances should you open the door.* | ✗ Normal word order after these phrases |
+| **Little** | Little + aux + S + V | *Little did he know the truth.* | ✗ "Little he knew the truth" — aux must precede S |
+| **As soon as + S + V2, S + V2** | No inversion | *As soon as the train arrived, passengers rushed in.* | No inversion needed here |
 
 <div class="pitfall">
 
-**Inversion traps to remember**
-
-- After **no sooner**, always **than** (never "when"). After **hardly/scarcely**, always **when** (never "than").
-- The subordinate clause carries **had + V3**; the main clause uses **simple past**.
-- "Sooner I had reached than it began" ✗ — inversion requires **had** before the subject.
+**Memory peg:** No sooner → **than**; Hardly/Scarcely → **when**; these are non-negotiable pairs. Swapping them is the #1 inversion trap in PYQs.
 
 </div>
 
@@ -752,35 +1026,364 @@ Read end-to-end in order without skipping.
 
 Most common error class. Memorise these rules cold.
 
-## Types
+## The 15 Golden SVA Rules (formula card format)
 
-1. **Either / or, neither / nor** — verb agrees with the noun **closer** to it. "Neither the teacher nor the students **are** wrong."
-2. **With/along with/as well as/besides/including** — verb agrees with the **first** subject. "The principal, along with teachers, **is** attending."
-3. **Collective nouns** — family, team, jury, government → singular when acting as unit; plural when members act individually.
-4. **Uncountables** (news, furniture, information, advice, luggage, machinery, poetry, scenery, bread) → always singular.
-5. **Always plural** — trousers, scissors, spectacles, goods, thanks, wages, premises.
-6. **"Each / every / either / neither / none"** + singular verb.
-7. **A pair of / a number of / a great deal of** — "a number of" → plural verb; "the number of" → singular verb.
-8. **Mathematical subjects** — maths, physics, economics, statistics, politics — singular.
-9. **Distance / money / time as single units** — "Ten miles **is** a long walk."
-10. **"There is / there are"** — agrees with the real subject after it.
+**Rule 1 — Either/or · Neither/nor**
+Formula: [Either A or B] / [Neither A nor B] → verb agrees with **B (closer noun)**
+✓ *"Neither the teacher nor the students **are** wrong."* (students closer → plural)
+✓ *"Neither the students nor the teacher **is** wrong."* (teacher closer → singular)
+✗ *"Either the boys or the girl **are** late."* → "girl" is closer → **is**
+
+---
+
+**Rule 2 — Parenthetical phrases (with / along with / as well as / besides / including)**
+Formula: [A, along with B,] → verb agrees with **A only** (B is parenthetical)
+✓ *"The principal, along with the teachers, **is** attending."*
+✗ *"The principal, along with the teachers, **are** attending."*
+
+---
+
+**Rule 3 — Collective nouns (family, team, jury, committee, government, audience)**
+Formula: Unit action → **singular**; Members acting individually → **plural**
+✓ *"The jury **has** reached a verdict."* (one decision = unit action)
+✓ *"The jury **are** divided in their opinions."* (each member has a different view)
+
+---
+
+**Rule 4 — Uncountable nouns (news, furniture, information, advice, luggage, machinery, poetry, scenery, bread, wealth)**
+Formula: [uncountable noun] → always **singular verb**
+✓ *"The news **is** good."*
+✗ *"The news **are** good."*
+
+---
+
+**Rule 5 — Always-plural nouns (trousers, scissors, spectacles, goods, wages, premises, cattle, police)**
+Formula: [always-plural noun] → always **plural verb**
+✓ *"His trousers **are** torn."*
+✗ *"His trousers **is** torn."*
+
+---
+
+**Rule 6 — Each / Every / Either / Neither / Many a / More than one**
+Formula: [these words] → always **singular verb** (even when they feel plural)
+✓ *"Each of the students **has** submitted the form."*
+✓ *"More than one candidate **was** disqualified."* (sounds plural; is singular!)
+✗ *"Each of the students **have** submitted the form."*
+
+---
+
+**Rule 7 — "A number of" vs "The number of"**
+Formula: **A** number of + plural noun → **plural verb** (a number of = many)
+Formula: **The** number of + plural noun → **singular verb** (the number of = a count)
+✓ *"A number of students **have** applied."*
+✓ *"The number of applicants **is** rising."*
+✗ *"A number of students **has** applied."*
+
+---
+
+**Rule 8 — Academic/mathematical subjects ending in -s (maths, physics, economics, statistics, civics, politics)**
+Formula: [-s subject noun] → always **singular verb**
+✓ *"Economics **is** a scoring subject."*
+✗ *"Physics **are** tough."* → **is**
+
+---
+
+**Rule 9 — Distance / money / time / weight as a single unit**
+Formula: [quantity + unit] treated as one amount → **singular verb**
+✓ *"Ten kilometres **is** a long walk."*
+✓ *"Five hundred rupees **is** too much."*
+✗ *"Five hundred rupees **are** too much."*
+
+---
+
+**Rule 10 — "There is / There are"**
+Formula: There + [be] → verb agrees with the **real subject** after "there" (not with "there")
+✓ *"There **are** five books on the table."* (real subject = five books → plural)
+✗ *"There **is** five books on the table."*
+
+---
+
+**Rule 11 — "None"**
+Formula: None of + uncountable → **singular**; None of + plural countable → plural accepted; SSC: prefer singular when ambiguous
+✓ *"None of the water **was** wasted."* (uncountable)
+✓ *"None of the students **were** present."* (plural countable — accepted)
+
+---
+
+**Rule 12 — "One of the + plural noun + who/that"**
+Formula: One of the [plural noun] + who/that → verb after who/that = **plural** (agrees with the plural noun, not "one")
+✓ *"He is one of the boys **who play** well."* (who = boys → plural)
+✗ *"He is one of the boys who **plays** well."*
+
+---
+
+**Rule 13 — Indefinite pronouns (everyone, someone, no one, anyone, everybody, somebody, nobody, each, nothing, everything)**
+Formula: [indefinite pronoun] → always **singular verb** + **singular pronoun**
+✓ *"Everyone **has** done **his** homework."*
+✗ *"Everyone **have** done **their** homework."*
+
+---
+
+**Rule 14 — Titles of books / films / organisations / countries (even if plural-looking)**
+Formula: [plural-looking title or organisation] → treated as **singular**
+✓ *"The Arabian Nights **is** a classic."*
+✓ *"The United States **is** a superpower."*
+✗ *"The United States **are** a superpower."*
+
+---
+
+**Rule 15 — "Percentage of / proportion of / majority of / fraction of"**
+Formula: [fraction phrase] + of + [noun] → verb agrees with the **noun after "of"**
+✓ *"A large percentage of the work **has** been done."* (work = uncountable → singular)
+✓ *"A large percentage of the students **have** passed."* (students = plural → plural)
+
+## 3.1 Worked Examples — Error Spotting (find and fix the SVA error)
+
+For each sentence below, ask three diagnostic questions in order:
+1. What is the *real* grammatical subject? (Look past intervening phrases.)
+2. Is it singular or plural?
+3. Does the verb agree with it?
+
+<div class="worked">
+
+**Example 1.** *"The list of items are on your desk."*
+
+**Step 1.** Real subject: **"list"** (NOT "items"). "of items" is a prepositional phrase modifying *list*; ignore it for agreement.
+**Step 2.** *List* is singular.
+**Step 3.** Verb must be *is*, not *are*.
+**Corrected:** *"The list of items **is** on your desk."*
+
+</div>
+
+<div class="worked">
+
+**Example 2.** *"Neither the captain nor his players was available for comment."*
+
+**Step 1.** Real subject after "neither/nor": agreement is with the **closer** noun → *players*.
+**Step 2.** *Players* is plural.
+**Step 3.** Verb must be *were*, not *was*.
+**Corrected:** *"Neither the captain nor his players **were** available for comment."*
+
+</div>
+
+<div class="worked">
+
+**Example 3.** *"The principal, along with the teachers, are attending the meeting."*
+
+**Step 1.** "Along with" is a parenthetical (like "as well as", "besides", "including") — the real subject is what comes *before* it: **principal**.
+**Step 2.** *Principal* is singular.
+**Step 3.** Verb must be *is*, not *are*.
+**Corrected:** *"The principal, along with the teachers, **is** attending the meeting."*
+
+</div>
+
+<div class="worked">
+
+**Example 4.** *"A number of students has submitted the form."*
+
+**Step 1.** Distinguish the two formulas:
+&nbsp;&nbsp;• **"A number of"** = many → **plural** verb.
+&nbsp;&nbsp;• **"The number of"** = a count → **singular** verb.
+**Step 2.** Sentence has "a number of" → plural.
+**Step 3.** Verb must be *have*, not *has*.
+**Corrected:** *"A number of students **have** submitted the form."*
+
+</div>
+
+<div class="worked">
+
+**Example 5.** *"Physics are my favourite subject."*
+
+**Step 1.** *Physics* is a mathematical/scientific subject (like maths, economics, statistics) — ends in -s but is **singular**.
+**Step 2.** Singular subject.
+**Step 3.** Verb must be *is*.
+**Corrected:** *"Physics **is** my favourite subject."*
+
+</div>
+
+<div class="worked">
+
+**Example 6 — "More than one" (Rule 6) — singular despite "more".**
+*"More than one applicant **were** rejected."*
+
+**Step 1.** "More than one + singular noun" always takes a **singular verb**.
+**Step 2.** Verb must be *was*, not *were*.
+**Corrected:** *"More than one applicant **was** rejected."*
+
+</div>
+
+<div class="worked">
+
+**Example 7 — "One of the … who" (Rule 12) — verb after "who" agrees with the plural noun.**
+*"She is one of the nurses who **works** in this hospital."*
+
+**Step 1.** "who" refers back to "nurses" (plural), not "one" (singular).
+**Step 2.** Verb after "who" must be plural.
+**Corrected:** *"She is one of the nurses who **work** in this hospital."*
+
+</div>
+
+<div class="worked">
+
+**Example 8 — "Percentage of" (Rule 15) — verb controlled by noun after "of".**
+*"A large proportion of the budget **are** allocated to defence."*
+
+**Step 1.** "of the budget" → "budget" is uncountable (singular noun follows "of").
+**Step 2.** Verb must be singular.
+**Corrected:** *"A large proportion of the budget **is** allocated to defence."*
+
+</div>
+
+<div class="worked">
+
+**Example 9 — Indefinite pronoun (Rule 13) — everyone is always singular.**
+*"Everyone in the team have given their best."*
+
+**Step 1.** "Everyone" = indefinite pronoun → always takes a singular verb.
+**Step 2.** Verb must be *has*.
+**Corrected:** *"Everyone in the team **has** given his best."*
+
+</div>
+
+## 3.2 Common SVA Traps
+
+| Trap | Trigger | Memorise |
+|---|---|---|
+| Prepositional phrase as decoy | "The bag of apples ____" | Verb agrees with **bag** (singular), not apples. |
+| Parenthetical ("along with", "as well as") | "The CEO, along with managers, ____" | Verb agrees with the **CEO** alone. |
+| "Either/or", "Neither/nor" | "Either A or B ____" | Verb agrees with the **closer** noun. |
+| Subject after "There" | "There ____ five books on the table." | *There **are*** — verb agrees with the real subject *five books*. |
+| Uncountables ending in -s | News, mathematics, economics, civics | Always **singular**. |
+| Collective + individual action | "The team ____ wearing different uniforms." | Plural when members act individually: *are*. |
+| Distance / time / money | "Ten kilometres ____ a long way." | Singular: *is*. |
+
+## 3.3 Mini-PYQ Drill — SVA
+
+1. *"Each of the boys (was / were) given a prize."* → **was** (each + singular).
+2. *"The committee (has / have) decided the matter."* → **has** (unit-action) OR *have* (member-action) — both valid; SSC usually marks **has**.
+3. *"One of the men (is / are) absent today."* → **is** (subject = one).
+4. *"Bread and butter (is / are) my breakfast."* → **is** (treated as a single dish).
+5. *"The poet and statesman (is / are) dead."* → **is** (one person who is both); *"The poet and the statesman **are** dead."* (two people) → **are**.
+
+> **Carry-forward principle:** in 90 % of SVA traps, the subject sits *before* a long prepositional or parenthetical phrase. Find the real subject; ignore the noise; pick the agreeing verb.
 
 ---
 
 # PART 4 — ARTICLES (a / an / the) {#part-4}
 
-## 4.0 Opener
+## 4.0 Article Decision Table
 
-- **a / an** used for indefinite countable singular. Choice depends on SOUND, not letter: "an hour" (silent h), "a university" (sounds /ju:/).
-- **the** used for (i) specific mentioned/known thing, (ii) superlatives, (iii) ordinals, (iv) unique things (the sun, the moon), (v) names of rivers/oceans/seas/mountain ranges/gulfs/deserts (the Ganges, the Himalayas), (vi) names of newspapers/ships (the Hindu, the Titanic), (vii) adjectives used as plural nouns (the poor, the rich).
+**Selection rule:** choose by SOUND (not spelling) for a/an. Then check the 3-column table.
+
+| Situation | A / An | The | Ø (no article) |
+|---|---|---|---|
+| First mention of a countable singular noun | ✓ "I saw **a** dog." | ✗ | ✗ |
+| Specific / already-known noun | ✗ | ✓ "**The** dog I saw was huge." | ✗ |
+| Unique things (sun, moon, Earth, sky, universe) | ✗ | ✓ "**The** sun rises in the east." | ✗ |
+| Superlatives & ordinals | ✗ | ✓ "**The** best student", "**the** first attempt" | ✗ |
+| Professions / roles (non-specific) | ✓ "She is **a** doctor." | ✗ | ✗ |
+| Adjectives used as plural nouns | ✗ | ✓ "**The** poor suffer." | ✗ |
+| Rivers, oceans, seas, mountain ranges, deserts, gulfs | ✗ | ✓ "**The** Ganges", "**the** Himalayas", "**the** Sahara" | ✗ |
+| Single mountains, single lakes | ✗ | ✗ | ✓ "Mount Everest", "Lake Victoria" |
+| Newspapers, ships | ✗ | ✓ "**The** Hindu", "**the** Titanic" | ✗ |
+| Musical instruments (playing generally) | ✗ | ✓ "She plays **the** piano." | ✗ |
+| Abstract / uncountable nouns in general meaning | ✗ | ✗ | ✓ "**Honesty** is the best policy." |
+| Languages | ✗ | ✗ | ✓ "She speaks **French**." |
+| Sports / games | ✗ | ✗ | ✓ "He plays **cricket**." |
+| Meals | ✗ | ✗ | ✓ "We had **lunch**." |
+| Most countries (singular, non-federal) | ✗ | ✗ | ✓ "**India** is vast." |
+| Countries with plural/federal names | ✗ | ✓ "**The** USA", "**the** Netherlands", "**the** UAE" | ✗ |
+| Plural countable nouns (general meaning) | ✗ | ✗ | ✓ "**Books** are valuable." |
+
+**a vs an decision (by FIRST SOUND, not letter):**
+
+| Use **a** | Use **an** |
+|---|---|
+| consonant sound: a book, a car, **a** university (/j/ sound), **a** one-eyed man (/w/ sound) | vowel sound: an apple, **an** honest man (silent h), **an** MBA (/em/), **an** X-ray (/eks/) |
 
 ## Types
 
 1. **Missing article before a known/unique noun**.
 2. **Extra article before abstract noun / plural uncountable** ("Honesty is the best policy" — no article before honesty).
 3. **"A" vs "An" by sound** — "an MBA", "a one-eyed man".
-4. **Countries** — normally no "the" (India, USA-exception: The USA because it's plural of States; The Netherlands).
+4. **Countries** — normally no "the" (India); exception: The USA, The Netherlands (plural/federal names).
 5. **Superlatives + ordinals** always take "the".
+
+## 4.1 Worked Examples — Articles
+
+For each sentence, ask:
+1. Is the noun **countable singular**? → needs *a / an / the*.
+2. Is the noun **specific / unique / superlative / ordinal**? → needs *the*.
+3. Is the noun an **abstract / uncountable / plural-general**? → usually **no article**.
+4. For "a / an", does the **first sound** start with a vowel? → use *an*.
+
+<div class="worked">
+
+**Example 1.** *"He is honest man."* — find and fix.
+
+**Step 1.** "Man" is countable singular. **Step 2.** Not specific (no prior mention). **Step 3.** Use *a / an*. **Step 4.** "Honest" starts with a vowel sound (the *h* is silent) → use **an**.
+
+**Corrected:** *"He is **an** honest man."*
+
+</div>
+
+<div class="worked">
+
+**Example 2.** *"She has applied for the MBA at a IIM."* — find and fix.
+
+**Step 1.** "MBA" begins with the consonant letter *M* but with the **vowel sound /ɛm/** → use **an** ("an MBA").
+**Step 2.** "IIM" begins with the **vowel sound /aɪ/** → use **an** ("an IIM").
+
+**Corrected:** *"She has applied for **an** MBA at **an** IIM."*
+
+> Article choice is by *sound*, not spelling. "An hour" (silent *h*), "a university" (sounds /ju:/), "an honour", "a one-way street" (sounds /wʌn/).
+
+</div>
+
+<div class="worked">
+
+**Example 3.** *"Honesty is best policy."* — find and fix.
+
+**Step 1.** "Honesty" = abstract uncountable → **no article**.
+**Step 2.** "policy" is countable singular, BUT here it is part of the **superlative "the best policy"** — superlatives always take **the**.
+
+**Corrected:** *"Honesty is **the** best policy."*
+
+</div>
+
+<div class="worked">
+
+**Example 4.** *"The India is a great country with Himalayas in north."* — find and fix.
+
+**Step 1.** Country names normally take NO article ("India", not "The India"). Exception: countries whose name is **plural / a federation** ("the USA", "the Netherlands", "the UAE", "the UK").
+**Step 2.** "Himalayas" is a mountain RANGE → takes **the**.
+**Step 3.** "north" is a direction (specific) → use **the north**.
+
+**Corrected:** *"India is a great country with **the** Himalayas in **the** north."*
+
+</div>
+
+## 4.2 Articles — Quick Reference Table
+
+| Use **a / an** | Use **the** | Use **NO article** |
+|---|---|---|
+| Indefinite countable singular ("**a** boy") | Specific or previously mentioned ("**the** boy I met") | Plural general ("Boys play.") |
+| First introduction ("I saw **a** dog. **The** dog…") | Unique things ("**the** sun, **the** moon") | Uncountable / abstract ("Honesty is good") |
+| | Superlatives & ordinals ("**the** best", "**the** first") | Proper nouns (most countries, persons) |
+| | Rivers, oceans, mountain ranges, deserts ("**the** Nile, **the** Sahara") | Single mountains ("Mount Everest"), single lakes ("Lake Victoria") |
+| | Plural countries / federations ("**the** USA", "**the** UK") | Singular countries (India, France) |
+| | Adjectives as plural nouns ("**the** poor, **the** rich") | Languages ("She speaks English"), Diseases ("He has flu") |
+| | Ships, newspapers, musical instruments ("**the** Titanic, **the** Hindu, **the** guitar") | Meals ("We had lunch"), games ("We play chess") |
+
+## 4.3 Mini-PYQ Drill — Articles
+
+1. *"It was ___ honour to meet you."* → **an** (silent *h*).
+2. *"___ Ganges flows from ___ Himalayas to ___ Bay of Bengal."* → **The / the / the** (river, mountain range, sea — all take *the*).
+3. *"He is ___ best player in ___ team."* → **the / the** (superlative; specific team).
+4. *"Sugar is ___ bad for your health."* → **no article** (sugar = uncountable mass noun).
+5. *"___ Mahatma Gandhi was ___ great leader."* → **(no article) / a** (proper noun; non-specific count).
+
+> **Carry-forward principle:** in error-spotting, the article is almost always the trap word. Always run the 4-question check (countable? specific? abstract? sound?) before picking your answer.
 
 ---
 
@@ -790,21 +1393,75 @@ Most common error class. Memorise these rules cold.
 
 Prepositions in English are largely idiomatic — there is no rule; you must memorise the fixed verb-preposition / adjective-preposition pairs. Below are the most-tested ones.
 
+## 5.0a AT / IN / ON — Time
+
+| Preposition | When to use | Example | Trap |
+|---|---|---|---|
+| **AT** | specific clock time; fixed points of day; festivals | at 5 pm, at noon, at midnight, at sunrise, at Diwali, at the weekend | ✗ "She called me **on** 3 pm." → ✓ "…**at** 3 pm." |
+| **IN** | longer period: month, year, season, century; parts of day (NOT "night") | in January, in 2024, in summer, in the morning, in the afternoon | ✗ "I study **in** night." → ✓ "…**at** night." (night is the only exception) |
+| **ON** | specific day; specific date; named occasion | on Monday, on 15 June, on my birthday, on Independence Day | ✗ "I met him **in** Monday." → ✓ "…**on** Monday." |
+
+## 5.0b AT / IN / ON — Place
+
+| Preposition | When to use | Example | Trap |
+|---|---|---|---|
+| **AT** | specific point / named location (small) | at the bus stop, at home, at school, at the corner | ✗ "I am **in** home." → ✓ "I am **at** home." |
+| **IN** | enclosed space; inside; city; country | in the room, in Delhi, in India, in the office, in a box | ✗ "She lives **at** Delhi." → ✓ "She lives **in** Delhi." |
+| **ON** | surface (horizontal or vertical) | on the table, on the wall, on the floor, on the road | ✗ "The book is **in** the table." → ✓ "…**on** the table." |
+
+## 5.0c Preposition + Gerund (V-ing) combinations — high-frequency in PYQs
+
+When a preposition is followed by a verb, the verb **must** be in the gerund form (V-ing), never the infinitive.
+
+> Formula: preposition + V-ing (never preposition + to + V1)
+
+| Phrase | Correct form | Wrong form |
+|---|---|---|
+| interested **in** | interested **in studying** | ~~interested in to study~~ |
+| capable **of** | capable **of solving** | ~~capable of to solve~~ |
+| accustomed **to** | accustomed **to working** late | ~~accustomed to work~~ |
+| fond **of** | fond **of reading** | ~~fond of to read~~ |
+| tired **of** | tired **of waiting** | ~~tired of to wait~~ |
+| responsible **for** | responsible **for managing** | ~~responsible for to manage~~ |
+| look forward **to** | look forward **to meeting** you | ~~look forward to meet~~ |
+| insist **on** | insist **on doing** it | ~~insist on to do~~ |
+| afraid **of** | afraid **of failing** | ~~afraid of to fail~~ |
+| good **at** | good **at speaking** | ~~good at to speak~~ |
+| succeeded **in** | succeeded **in passing** | ~~succeeded in to pass~~ |
+| prevented **from** | prevented **from leaving** | ~~prevented from to leave~~ |
+
+<div class="pitfall">
+
+**"used to" trap — two different structures:**
+- "**used to + V1**" (past habit): *"She used to **live** in Mumbai."* ✓ (base verb, not gerund)
+- "**accustomed to + V-ing**" (present habit): *"She is accustomed to **living** in Mumbai."* ✓ (gerund)
+- "**used to + V-ing**" (being accustomed): *"She is used to **working** late."* ✓ (gerund)
+
+Wrong: *"She is used to **work** late."* ✗ — after "used to" when it means "accustomed", use V-ing.
+
+</div>
+
 ## High-frequency fixed pairs
 
-- **accuse of**, **charge with**, **agree to (a proposal) / agree with (a person) / agree on (a matter)**.
-- **consist of**, **comprise [no of]**, **amount to**.
-- **differ from (things) / differ with (person) / differ on (topic)**.
-- **afraid of, aware of, capable of, desirous of, fond of, proud of, sick of, tired of, weary of**.
-- **acquainted with, angry with (person) / angry at (thing)**.
-- **good at, bad at, clever at, expert at**.
-- **die of (disease), die for (cause), die by (hand of), die from (exhaustion)**.
-- **look at (see), look after (take care of), look for (search), look into (investigate), look up (find in ref), look down on (despise), look forward to (V-ing)**.
-- **depend on, insist on, rely on, concentrate on, impose on**.
-- **congratulate on, compliment on, decide on**.
-- **prevent from, suffer from, refrain from, prohibit from, abstain from**.
-- **married to** (not "married with"), **engaged to**.
-- **superior to, inferior to, junior to, senior to, prior to, prefer X to Y** — all take "to", NOT "than".
+| Verb / Adjective | Preposition(s) | Key trap |
+|---|---|---|
+| accuse, charge | of (accuse); with (charge) | ✗ "accused with" → ✓ "accused **of**" |
+| agree | to (proposal) / with (person) / on (topic) | "agree **to** a plan"; "agree **with** him" |
+| consist | of | ✗ "consist in" (for ingredients) → ✓ "consist **of**" |
+| comprise | (no preposition) | ✗ "comprise **of**" → ✓ "comprises 11 players" |
+| differ | from (things) / with (person) / on (topic) | "**differs from** B"; "**differs with** me" |
+| afraid / aware / capable / desirous / fond / proud / sick / tired | of | I am **fond of** sweets. |
+| acquainted | with | **acquainted with** the rules |
+| angry | with (person) / at (thing) | **angry with** him; **angry at** the noise |
+| good / bad / clever / expert | at | **good at** maths |
+| die | of (disease) / for (cause) / from (exhaustion, wound) / by (instrument) | **died of** cancer; **died for** the country |
+| look | at / after / for / into / up / down on / forward to | **look forward to** + V-ing (never to + V1) |
+| depend / insist / rely / concentrate / impose | on | **insist on** quality |
+| congratulate / compliment / decide | on | **congratulated on** the win |
+| prevent / suffer / refrain / prohibit / abstain | from | **suffers from** asthma |
+| married / engaged | to | **married to** (✗ "married with") |
+| superior / inferior / junior / senior / prior / prefer | to | **senior to** me (✗ "senior than") |
+| amount | to | His income **amounts to** ₹5 lakh. |
 
 ## Types
 
@@ -814,25 +1471,260 @@ Prepositions in English are largely idiomatic — there is no rule; you must mem
 4. **"Prefer X to Y"** — NEVER "prefer X than Y".
 5. **Time-place pairs** — in (month / year / morning), on (day / date), at (clock time).
 
+## 5.1 Worked Examples — Preposition Error Spotting
+
+Three diagnostic questions for every preposition error:
+1. Is the preposition required at all? (Some verbs take NO preposition: discuss, marry, enter [a room], reach.)
+2. Is it the correct preposition? (Fixed pairs are non-negotiable.)
+3. Does the comparison structure follow "to", not "than"? (superior/inferior/junior/senior/prior/prefer all take *to*.)
+
+<div class="worked">
+
+**Example 1.** *"We discussed about the matter for two hours."*
+
+**Step 1.** "Discuss" is **transitive** — it takes a direct object with **no preposition**.
+**Step 2.** "about" is extra and wrong.
+
+**Corrected:** *"We discussed the matter for two hours."*
+
+> Same rule applies to: **marry** (not "marry with"), **enter [a room]** (not "enter into" — except for agreements/contracts), **reach** (not "reach to/at" for arrival), **resemble** (not "resemble to"), **comprise** (not "comprise of").
+
+</div>
+
+<div class="worked">
+
+**Example 2.** *"He is married with a doctor and is senior than me."*
+
+**Step 1.** "married" pairs with **to**, never *with*.
+**Step 2.** "senior" pairs with **to**, never *than* (same with superior, inferior, junior, prior, prefer).
+
+**Corrected:** *"He is married **to** a doctor and is senior **to** me."*
+
+</div>
+
+<div class="worked">
+
+**Example 3.** *"She prefers tea than coffee."*
+
+**Step 1.** "prefer X to Y" — fixed pair; *than* is wrong.
+
+**Corrected:** *"She prefers tea **to** coffee."*
+
+> If you want to use *than*, you must say "**rather than**": *"She would rather have tea **than** coffee."*
+
+</div>
+
+<div class="worked">
+
+**Example 4.** *"The meeting will start in 10 AM on Monday in January."*
+
+**Step 1.** Time-of-day clock-time → use **at** ("at 10 AM").
+**Step 2.** Day → use **on** ("on Monday") ✓.
+**Step 3.** Month → use **in** ("in January") ✓.
+
+**Corrected:** *"The meeting will start **at** 10 AM on Monday in January."*
+
+> Time-preposition cheat: **AT** (clock), **ON** (day/date), **IN** (month/year/century/period).
+
+</div>
+
+<div class="worked">
+
+**Example 5.** *"He died from pneumonia and left from Mumbai by air."*
+
+**Step 1.** "Die" — *died **of*** a disease (long illness); *died **from*** an injury / exhaustion; *died **for*** a cause; *died **by*** an instrument (hanging, drowning).
+&nbsp;&nbsp;Pneumonia = disease → **died of pneumonia**.
+**Step 2.** "Left" — depart *from* a place is fine, but the more idiomatic preposition here is just *for* the destination, or just "left Mumbai". "Left from Mumbai" sounds redundant; standard usage = *"left Mumbai by air"* or *"departed from Mumbai by air"*.
+
+**Corrected:** *"He died **of** pneumonia and **left Mumbai by air**."*
+
+</div>
+
+## 5.2 Top-20 Verb / Adjective + Preposition Pairs (memorise)
+
+| Verb / Adjective | Preposition | Example |
+|---|---|---|
+| accuse | of | She **accused him of** lying. |
+| congratulate / compliment / decide | on | I **congratulated her on** the win. |
+| differ | from / with / on | A **differs from** B [things] · A **differs with** B [people] · A **differs on** the issue. |
+| consist | of | The team **consists of** 11 players. |
+| comprise | (no prep) | The team **comprises** 11 players. |
+| insist / depend / rely / concentrate / impose | on | **Insist on** quality. |
+| prevent / suffer / refrain / abstain / prohibit | from | He **suffers from** asthma. |
+| die | of (disease) / for (cause) / from (exhaustion / wound) / by (instrument) | **died of** cancer · **died for** the country. |
+| superior / inferior / junior / senior / prior / prefer | to | She is **junior to** me. |
+| married / engaged | to | He is **engaged to** her. |
+| afraid / aware / capable / desirous / fond / proud / sick / tired | of | I am **fond of** sweets. |
+| acquainted | with | He is **acquainted with** the rules. |
+| angry | with (person) / at (thing) | I am **angry with** him / **at** the noise. |
+| good / bad / clever / expert | at | He is **good at** maths. |
+| look | at / after / for / into / up / down on / forward to | **Look after** your sister. |
+| invite | to | She **invited me to** the party. |
+| listen | to | **Listen to** the teacher. |
+| reply / respond | to | **Reply to** the email. |
+| comply | with | **Comply with** the rules. |
+| complain | about / to / of | **Complain about** the food **to** the manager. |
+
+## 5.3 Mini-PYQ Drill — Prepositions
+
+1. *"He has been suffering ___ fever for three days."* → **from** (suffer **from** an illness).
+2. *"She is married ___ a businessman."* → **to** (married **to**, never *with*).
+3. *"The professor is well acquainted ___ his subject."* → **with** (acquainted **with**).
+4. *"He prefers tea ___ coffee."* → **to** (prefer X **to** Y).
+5. *"They live ___ Bangalore ___ 4th Cross Road."* → **in / on** (in city, on street).
+
+> **Carry-forward principle:** prepositions are *memorised*, not derived. Drill the top-20 pairs above to instinct level.
+
 ---
 
 # PART 6 — CONJUNCTIONS {#part-6}
+
+## 6.0 Correlative Conjunction Formula Table
+
+| Pair | Formula | Example | Trap |
+|---|---|---|---|
+| **Either … or** | Either [X] or [Y] — verb agrees with **Y** | "Either tea or **coffee** is fine." | Verb with X, not Y |
+| **Neither … nor** | Neither [X] nor [Y] — verb agrees with **Y** | "Neither he nor **they** were present." | Adding "not": "not neither" |
+| **Both … and** | Both [X] and [Y] — **always plural verb** | "Both Ram and Shyam **are** here." | Using "both … as well as" (redundant) |
+| **Not only … but also** | Not only [X] but also [Y] — **X and Y same part of speech** | "She is **not only** intelligent **but also** hardworking." (both adj.) | Mixing "not only plays cricket but also a teacher" (verb ≠ noun) |
+| **Whether … or** | Whether [X] or [Y] | "I don't know **whether** he agrees **or** not." | Adding "if" before whether |
+| **No sooner … than** | No sooner + had + S + V3 + **than** + S + V2 | "**No sooner had** I arrived **than** it rained." | Using "when" instead of "than" |
+| **Scarcely / Hardly … when** | Hardly/Scarcely + had + S + V3 + **when** + S + V2 | "**Hardly had** he left **when** she called." | Using "than" instead of "when" |
+| **Rather … than** | Rather [X] than [Y] | "I would **rather** walk **than** drive." | "rather … then" (then ≠ than) |
+| **Lest … should** | Lest + S + **should** + V1 | "Run fast **lest** you **should** miss the bus." | Using "may / will / can" with lest |
+| **Unless** (= if not) | Unless + S + V1 — **never add "not"** | "**Unless** you study, you will fail." | "Unless you **don't** study" (double negative) |
+| **Though / Although … (yet)** | Though + clause, **(yet)** clause — **never "but"** | "**Though** rich, he is unhappy." | "Though rich, **but** unhappy" (redundant) |
+| **Such … that** | Such + a/an + adj + noun + **that** + clause | "It was **such a** hot day **that** we stayed indoors." | "such … as" (wrong for consequence) |
+| **So … that** | So + adj/adv + **that** + clause | "He ran **so fast that** he won." | "so … as" (wrong for consequence) |
 
 ## Types
 
 1. **Coordinating** (FANBOYS — for, and, nor, but, or, yet, so) — connect equals.
 2. **Subordinating** — introduce dependent clauses (because, although, since, unless, until, while).
-3. **Correlative pairs** — either / or, neither / nor, not only / but also, both / and, whether / or, hardly / when, no sooner / than.
-4. **Parallelism** — correlatives must connect same parts of speech. "She is **not only** intelligent **but also** hardworking." (both adjectives.)
+3. **Correlative pairs** — see table above.
+4. **Parallelism** — correlatives must connect same parts of speech.
 5. **"Lest" + should/subjunctive** — "Run fast lest you **should** miss the bus."
-6. **"Unless"** = "if not" — never add "not" after unless. Wrong: "unless you don't study".
+6. **"Unless"** = "if not" — never add "not" after unless.
 7. **"Scarcely/hardly … when"**; **"no sooner … than"**.
+
+## 6.1 Worked Examples — Conjunction Error Spotting
+
+Diagnostic questions:
+1. Are the two halves linked by a **coordinating conjunction (FANBOYS)** or by a **correlative pair**?
+2. If correlative — do both halves connect the **same part of speech / same grammatical form** (parallelism)?
+3. Is the connector itself correct (no "than" instead of "when", no extra "not" after "unless", no "but" after "though")?
+
+<div class="worked">
+
+**Example 1 — Parallelism with correlatives.**
+*"She is not only intelligent but also works hard."*
+
+**Step 1.** Correlative pair: "not only … but also".
+**Step 2.** First half "intelligent" = **adjective**. Second half "works hard" = **verb phrase**. **Not parallel.**
+**Step 3.** Fix by making both halves the same part of speech.
+
+**Corrected:** *"She is **not only intelligent but also hard-working**."* (both adjectives)
+OR *"She **not only is intelligent but also works hard**."* (both verb phrases)
+
+</div>
+
+<div class="worked">
+
+**Example 2 — "No sooner … than" (NOT "when").**
+*"No sooner did he enter the room when the lights went out."*
+
+**Step 1.** Connector: "no sooner". Its correlative partner is **"than"**, never *when*.
+**Step 2.** Same trap exists for "scarcely / hardly … **when**" (NOT *than*), and "rather … than".
+
+**Corrected:** *"No sooner did he enter the room **than** the lights went out."*
+
+> Memory map:
+> - **No sooner … than**
+> - **Scarcely / Hardly … when**
+> - **Rather … than**
+> - **Such … as** (NOT *than*)
+> - **Such … that** (consequence)
+
+</div>
+
+<div class="worked">
+
+**Example 3 — "Unless" already means "if not".**
+*"Unless you don't study hard, you will fail."*
+
+**Step 1.** "Unless" = "if not". Adding *don't* creates a double negative.
+**Step 2.** Drop the *don't*.
+
+**Corrected:** *"**Unless you study hard**, you will fail."*
+(Equivalent to *"If you don't study hard, you will fail."*)
+
+</div>
+
+<div class="worked">
+
+**Example 4 — "Though … yet" (NOT "but").**
+*"Though he is rich, but he is unhappy."*
+
+**Step 1.** "Though" already establishes the contrast. Adding "but" creates a redundant double-conjunction.
+**Step 2.** Two valid fixes: drop "but" (use just "though"), OR pair "though" with "**yet**" (formal).
+
+**Corrected:** *"**Though he is rich, he is unhappy**."*
+OR *"**Though he is rich, yet he is unhappy**."* (formal/literary)
+
+> Same rule: "Although … yet" ✓ (or drop the second conjunction); never "although … but".
+
+</div>
+
+<div class="worked">
+
+**Example 5 — "Lest" + should (subjunctive).**
+*"Run fast lest you may miss the bus."*
+
+**Step 1.** "Lest" = "for fear that / in order that not". It is **always followed by *should*** (the subjunctive). Never *may*, *will*, or *can*.
+
+**Corrected:** *"Run fast **lest you should miss the bus**."*
+
+</div>
+
+## 6.2 Conjunction Pairings & Common Traps — Quick Reference
+
+| Conjunction / Pair | Correct usage | Common error |
+|---|---|---|
+| Either / Or | "Either A or B" — verb agrees with closer noun | Using "either" with more than two options |
+| Neither / Nor | "Neither A nor B" — verb agrees with closer noun | Adding "not" ("not neither") |
+| Not only / But also | Both halves must be **same part of speech** | Mixing adjective + verb phrase |
+| No sooner / **than** | "No sooner had X happened **than** Y…" | Using *when* instead of *than* |
+| Scarcely / **when**; Hardly / **when** | Same structure, but *when* | Using *than* |
+| Both / And | "Both A and B" — never "Both A as well as B" | Using "as well as" with "both" |
+| Whether / Or | "Whether A or B" — never "Whether A or not B" with that structure | Adding "if" before whether |
+| Though / Although | Can stand alone OR pair with **yet** | Using "but" with though/although |
+| Lest | Always with **should** | Using *may / will / can* |
+| Unless | Means "if not" — never add *not* in the if-clause | "Unless you don't…" (double negative) |
+| As soon as / As long as | Sequence / duration | Confusing the two |
+| Since / For | "Since" + point in time (since 2010); "For" + duration (for 5 years) | Swapping them |
+
+## 6.3 Mini-PYQ Drill — Conjunctions
+
+1. *"He is ___ rich ___ generous."* → **both / and** (parallel adjectives).
+2. *"___ he is honest, ___ he is poor."* → **Though / yet** (or *Though / (nothing)* — but never "though / but").
+3. *"Walk carefully ___ you slip."* → **lest you should slip** (lest + should).
+4. *"He had ___ entered the hall ___ the bell rang."* → **scarcely / when** (NOT *than*).
+5. *"___ he is poor, he is happy."* → **Although / Though** (drop "but" if you add one).
+
+> **Carry-forward principle:** conjunctions are about *which partner pairs with which* (no sooner ↔ than, scarcely ↔ when, lest ↔ should). The single most-tested trap is using the wrong partner.
 
 ---
 
 # PART 7 — VOICE (ACTIVE ↔ PASSIVE) {#part-7}
 
 ## 7.0 Opener
+
+<div class="keypoint">**⚡ SHORTCUT — Active → Passive in 3 steps:**
+1. **Object of active → Subject of passive.**
+2. **Verb → be + V3** (match the *be*-form to the original tense: is/was/has been/will be…).
+3. **Subject of active → "by + agent"** at the end (drop "by people/someone" when agent is obvious).
+
+Pronoun shift: I → me, we → us, he → him, she → her, they → them.</div>
 
 **Voice** tells us whether the **subject acts** (active) or **is acted upon** (passive). All passive constructions share one universal skeleton — once you internalise it, every "transform from active to passive" question becomes a 10-second mechanical exercise.
 
@@ -848,6 +1740,27 @@ Prepositions in English are largely idiomatic — there is no rule; you must mem
 </div>
 
 > **Tense check:** the form of *be* is the only thing that changes by tense; the main verb is always **V3**. Memorise the 12 *be*-forms below and you have memorised the entire passive system.
+
+## 7.0a Active ↔ Passive Master Formula Grid
+
+Read **row × column** (e.g. Past Continuous = row 2 × column 2). Each cell shows the **A**ctive formula above and the **P**assive transformation below — with a worked pair.
+
+| Aspect ↓ \\ Time → | **PRESENT** | **PAST** | **FUTURE** |
+|---|---|---|---|
+| **SIMPLE** | **A:** sub + V1 + obj<br>"She **writes** a letter."<br>**P:** obj + **is/am/are + V3** + by + sub<br>"A letter **is written** by her." | **A:** sub + V2 + obj<br>"She **wrote** a letter."<br>**P:** obj + **was/were + V3** + by + sub<br>"A letter **was written** by her." | **A:** sub + will + V1 + obj<br>"She **will write** a letter."<br>**P:** obj + **will be + V3** + by + sub<br>"A letter **will be written** by her." |
+| **CONTINUOUS** | **A:** sub + is/am/are + V1+ing + obj<br>"She **is writing** a letter."<br>**P:** obj + **is/am/are + being + V3** + by + sub<br>"A letter **is being written** by her." | **A:** sub + was/were + V1+ing + obj<br>"She **was writing** a letter."<br>**P:** obj + **was/were + being + V3** + by + sub<br>"A letter **was being written** by her." | **A:** sub + will be + V1+ing + obj<br>"She **will be writing** a letter."<br>**P:** *(future continuous has no standard passive — rephrase as Simple Future passive)* |
+| **PERFECT** | **A:** sub + has/have + V3 + obj<br>"She **has written** a letter."<br>**P:** obj + **has/have been + V3** + by + sub<br>"A letter **has been written** by her." | **A:** sub + had + V3 + obj<br>"She **had written** a letter."<br>**P:** obj + **had been + V3** + by + sub<br>"A letter **had been written** by her." | **A:** sub + will have + V3 + obj<br>"She **will have written** a letter."<br>**P:** obj + **will have been + V3** + by + sub<br>"A letter **will have been written** by her." |
+| **PERFECT CONTINUOUS** | *(no standard passive — rephrase)* | *(no standard passive — rephrase)* | *(no standard passive — rephrase)* |
+
+> **Mechanical rule:** **be + V3** is the spine of every passive cell. The form of **be** (is/was/will be/has been/had been/will have been/being) tracks the tense; the main verb is **always V3**. If you can spot the *be-form* needed for a tense, the passive writes itself.
+
+**Worked transformation in 3 steps:**
+
+| Step | Operation | Example: "She **has written** a letter." |
+|---|---|---|
+| 1 | Object of active → subject of passive | **A letter** … |
+| 2 | Replace verb with **be + V3** (matching tense — Present Perfect → *has been*) | A letter **has been written** … |
+| 3 | Subject of active → **by + agent** at the end | A letter has been written **by her**. ✓ |
 
 ---
 
@@ -945,6 +1858,34 @@ Either object can become the passive subject; the preferred form puts the **pers
 - *She saw him **leave**.* → *He **was seen to leave** by her.*
 - *They made him **work**.* → *He **was made to work** by them.*
 - *People believe him **to be honest**.* → *He **is believed to be honest**.*
+
+</div>
+
+<div class="formula">
+
+**Impersonal passive ("It is said that …" / "He is said to …")** — high-frequency in error spotting.
+
+Two patterns for verbs of saying/thinking/believing (say, think, believe, know, report, expect, consider, allege, claim, suppose):
+
+| Pattern | Formula | Example |
+|---|---|---|
+| **Pattern 1 — "It" as dummy subject** | It + is/was + V3 + that + clause | *"**It is said that** he is an expert."* |
+| **Pattern 2a — Subject raised (same time)** | S + is/was + V3 + to + V1 | *"**He is said to be** an expert."* |
+| **Pattern 2b — Subject raised (different time)** | S + is/was + V3 + to + have + V3 | *"**He is said to have studied** abroad."* (past action reported now) |
+
+More pairs:
+
+- *"People say that she is brilliant."* → *"**It is said that** she is brilliant."* / *"**She is said to be** brilliant."*
+- *"People believe that he stole the money."* → *"**It is believed that** he stole the money."* / *"**He is believed to have stolen** the money."*
+- *"People expected that she would win."* → *"**It was expected that** she would win."* / *"**She was expected to win**."*
+
+<div class="pitfall">
+
+When the embedded clause has a **different time** from the reporting verb, use the **perfect infinitive** in Pattern 2:
+
+- "People say that he **studied** abroad." → "*He **is said to have studied** abroad.*" (past action reported in present → "have + V3")
+
+</div>
 
 </div>
 
@@ -1124,6 +2065,16 @@ Either object can become the passive subject; the preferred form puts the **pers
 
 ## 8.0 Opener
 
+<div class="keypoint">**⚡ SHORTCUT — Narration Reporting-Verb Tense Rules (compact table):**
+
+| Reporting verb tense | Reported tense rule | Example |
+|---|---|---|
+| **Past** (said, told, asked) | Back-shift tense ONE step | "I write" → he said he **wrote** |
+| **Present** (says, tells) | NO change to reported tense | "I write" → he says he **writes** |
+| **Universal truth / fact** | NEVER back-shift | "Earth revolves" → he said Earth **revolves** |
+
+Sentence-type linker chain: Statement → **that** · Yes/No Q → **if/whether** · Wh-Q → **same wh-word** · Order → **to + V1** · Suggestion → **should + V1**</div>
+
 **Direct speech** quotes the exact words inside inverted commas; **indirect (reported) speech** reframes those words through the speaker's voice. Every narration question tests four mechanical shifts in sequence — once you drill them in this fixed order, the answer falls out:
 
 <div class="formula">
@@ -1139,6 +2090,60 @@ Either object can become the passive subject; the preferred form puts the **pers
 
 > **Golden exception — universal-truth rule:** if the reported clause states a permanent fact, a habit, or a universal truth, **do NOT back-shift the tense** even when the reporting verb is past.
 > *He said, "The earth revolves around the sun."* → *He said that the earth **revolves** around the sun.* (not "revolved")
+
+## 8.0a Direct ↔ Indirect Speech Master Tense Grid (when reporting verb is PAST)
+
+Read **row × column** — e.g. *"What does 'Past Continuous' in direct become in indirect?"* Look at row 2 × column 2 → **Past Perfect Continuous**.
+
+| Aspect ↓ \\ Time → in direct | **PRESENT (direct)** → indirect | **PAST (direct)** → indirect | **FUTURE (direct)** → indirect |
+|---|---|---|---|
+| **SIMPLE** | Simple Present **→ Simple Past**<br>"I **write**" → … that he **wrote** | Simple Past **→ Past Perfect**<br>"I **wrote**" → … that he **had written** | will/shall + V1 **→ would/should + V1**<br>"I **will write**" → … that he **would write** |
+| **CONTINUOUS** | Present Continuous **→ Past Continuous**<br>"I **am writing**" → … that he **was writing** | Past Continuous **→ Past Perfect Continuous**<br>"I **was writing**" → … that he **had been writing** | will be + V1+ing **→ would be + V1+ing**<br>"I **will be writing**" → … that he **would be writing** |
+| **PERFECT** | Present Perfect **→ Past Perfect**<br>"I **have written**" → … that he **had written** | Past Perfect **→ no change** (already farthest back)<br>"I **had written**" → … that he **had written** | will have + V3 **→ would have + V3**<br>"I **will have written**" → … that he **would have written** |
+| **PERFECT CONTINUOUS** | Pres Perf Continuous **→ Past Perf Continuous**<br>"I **have been writing**" → … that he **had been writing** | Past Perf Continuous **→ no change**<br>"I **had been writing**" → … that he **had been writing** | will have been + V1+ing **→ would have been + V1+ing** |
+
+> **One sentence to internalise:** each tense shifts **one step further into the past** when the reporting verb is past — except when there is nowhere further to go (Past Perfect / Past Perfect Continuous stay as-is).
+
+### 8.0b Modal back-shift (single line each)
+
+| In direct | In indirect | Example |
+|---|---|---|
+| **will / shall** | **would / should** | "I **will** come" → he said that he **would** come |
+| **can** | **could** | "I **can** swim" → he said that he **could** swim |
+| **may** | **might** | "I **may** go" → he said that he **might** go |
+| **must** (obligation) | **had to** | "I **must** leave" → he said that he **had to** leave |
+| **must** (logical deduction) | **must** (no change) | "He **must** be tired" → she said that he **must** be tired |
+| **ought to** | **ought to** (no change) | "You **ought to** rest" → she said that I **ought to** rest |
+| **should** | **should** (no change) | "We **should** start" → he said that we **should** start |
+
+### 8.0c Time- & place-expression shift (proximal → distal)
+
+| Direct | → | Indirect |
+|---|---|---|
+| now | → | then |
+| today | → | that day |
+| tomorrow | → | the next day / the following day |
+| yesterday | → | the previous day / the day before |
+| last week / month / year | → | the previous week / month / year |
+| next week / month / year | → | the following week / month / year |
+| ago | → | before |
+| here | → | there |
+| this / these | → | that / those |
+| hither | → | thither |
+| thus | → | so |
+| come | → | go |
+| bring | → | take |
+
+### 8.0d Pronoun-shift rule — **SON**
+
+| Position in direct | Becomes in indirect |
+|---|---|
+| **S**ubject pronoun (I, we) | matches the **reporting-clause subject** (he, she, they) |
+| **O**bject pronoun (you) | matches the **reporting-clause object** (me, him, her, us, them) |
+| **N**either category (he, she, it, they) | **no change** |
+
+> **One-line example:** *"**I** met **you** yesterday," he said to her.* → *He said to her that **he** had met **her** the previous day.*
+> (I→he matches the reporter "he"; you→her matches the listener "her"; yesterday→the previous day.)
 
 ---
 
@@ -1525,6 +2530,15 @@ Either object can become the passive subject; the preferred form puts the **pers
 
 ---
 
+<div class="keypoint">**⚡ SHORTCUT — Error Spotting 3-Step Scan:** For every underlined or split sentence, check in this fixed order: **(1) Subject-Verb Agreement** (find the real subject, ignore fillers) → **(2) Tense** (spot the time-signal word; does the verb match?) → **(3) Preposition** (check fixed verb-prep pairs). This order alone resolves ~80% of all error-spotting questions in SSC and Banks papers.</div>
+
+<div class="examtip">⚠️ **TRAP — Singular traps that fool everyone:**
+- **Either / Neither / Each / Every / None** → always singular verb. *"Either of the boys **has** …"* not "have".
+- **"A number of"** → plural verb; **"The number of"** → singular verb.
+- **With / Along with / As well as / Besides** → verb agrees with the FIRST subject only, ignoring the added phrase.</div>
+
+Parts 1–8 gave you the rules. Parts 9–14 show you how examiners test those rules — each chapter is one question-type format with its own attack method. Work through them in order: the grammar you just drilled is directly applied here.
+
 # PART 9 — ERROR SPOTTING {#part-9}
 
 ## 9.0 Opener
@@ -1555,6 +2569,106 @@ The highest-frequency MCQ format. Sentence split into 4 parts (A, B, C, D); cand
 9. **Gerund / infinitive misuse.**
 10. **Misplaced modifier.**
 
+### Worked Example 1 (EASY — S-V agreement)
+
+**Q.** Spot the error:
+(A) The team of cricketers / (B) are practicing / (C) in the field / (D) since morning.
+
+**Step 1.** "Team" = collective noun, treated as singular.
+
+**Step 2.** "Are" is plural verb form — should be "is".
+
+**Step 3.** Error in part **(B)**: "are practicing" → should be "is practicing".
+
+### Worked Example 2 (MEDIUM — preposition)
+
+**Q.** Spot the error:
+(A) She is suffering / (B) from fever / (C) since last / (D) Monday.
+
+**Step 1.** Tense check: "since" implies continuing action → "has been suffering" (Present Perfect Continuous) is correct.
+
+**Step 2.** Part (A) says "She is suffering" — Present Continuous. Should be "She has been suffering".
+
+**Step 3.** Error in part **(A)**.
+
+### Worked Example 3 (HARD — gerund vs infinitive)
+
+**Q.** Spot the error:
+(A) He stopped / (B) to smoke / (C) ten years ago / (D) on doctor's advice.
+
+**Step 1.** "Stopped to + V" = paused IN ORDER to do something. "Stopped + V-ing" = gave up the habit.
+
+**Step 2.** Context: "ten years ago on doctor's advice" implies giving up the habit, not pausing.
+
+**Step 3.** Error in part **(B)**: "to smoke" → should be "smoking".
+
+### Worked Example 4 (HARD — parallelism)
+
+**Q.** Spot the error:
+(A) The new manager / (B) is honest, hardworking / (C) and a man of integrity / (D) which everyone admires.
+
+**Step 1.** "Honest" and "hardworking" are adjectives. "A man of integrity" is a noun phrase — breaks parallelism.
+
+**Step 2.** Should be three parallel adjectives or three parallel noun phrases.
+
+**Step 3.** Error in part **(C)**: should be "and has integrity" or restructure to noun phrases.
+
+### Worked Example 5 (tense consistency)
+
+**Q.** Spot the error:
+(A) When he reached the station / (B) the train already / (C) has left / (D) the platform.
+
+**Step 1.** "When he reached" is **simple past**. An action completed *before* that past action needs **past perfect**.
+**Step 2.** "has left" is present perfect — wrong tense sequence.
+**Step 3.** Error in **(C)**: "has left" → **"had left"**.
+
+### Worked Example 6 (pronoun case)
+
+**Q.** Spot the error:
+(A) The teacher distributed / (B) the sweets / (C) between / (D) you and I.
+
+**Step 1.** After a preposition ("between"), pronouns take the **objective case**.
+**Step 2.** "I" is subjective; needs to be **me**.
+**Step 3.** Error in **(D)**: "you and I" → **"you and me"**.
+
+### Worked Example 7 (article)
+
+**Q.** Spot the error:
+(A) He is / (B) an honest and / (C) a intelligent / (D) young man.
+
+**Step 1.** Article choice is by **sound**. "Intelligent" begins with a vowel sound → needs **an**.
+**Step 2.** "a intelligent" is wrong.
+**Step 3.** Error in **(C)**: "a intelligent" → **"an intelligent"**.
+
+### Worked Example 8 (redundancy)
+
+**Q.** Spot the error:
+(A) He returned back / (B) to his hometown / (C) after / (D) ten long years.
+
+**Step 1.** "Return" already means "come back" — adding "back" is redundant.
+**Step 2.** Same trap family: *repeat again, revert back, final outcome, true facts, past history, free gift.*
+**Step 3.** Error in **(A)**: "returned back" → **"returned"**.
+
+### Worked Example 9 (comparative / superlative)
+
+**Q.** Spot the error:
+(A) Of the two sisters / (B) Meena is / (C) the most intelligent / (D) and hardworking.
+
+**Step 1.** Comparing **two** things uses the **comparative** ("more intelligent" / "the more intelligent"), not the superlative.
+**Step 2.** "the most intelligent" is wrong for two people.
+**Step 3.** Error in **(C)**: "the most intelligent" → **"the more intelligent"**.
+
+### Worked Example 10 (misplaced modifier)
+
+**Q.** Spot the error:
+(A) Walking down the road / (B) a snake / (C) was seen by him / (D) near the gate.
+
+**Step 1.** "Walking down the road" must modify the person doing the walking — but the sentence attaches it to "a snake" (snakes don't walk down roads). This is a **dangling/misplaced modifier**.
+**Step 2.** The subject of the main clause should be the walker (he), not the snake.
+**Step 3.** Error in **(B)/(C)**: restructure to *"…he saw a snake near the gate."* (The modifier must sit next to the noun it describes.)
+
+> **10-type scan order (run on every error-spotting question):** Verb-agreement → Tense → Pronoun → Preposition → Article → Parallelism → Redundancy → Comparative → Gerund/Infinitive → Modifier. Stop at the first error you spot.
+
 ---
 
 # PART 10 — SENTENCE IMPROVEMENT / PHRASE REPLACEMENT {#part-10}
@@ -1562,6 +2676,52 @@ The highest-frequency MCQ format. Sentence split into 4 parts (A, B, C, D); cand
 Similar to error spotting, but the candidate is given 4 replacements for an underlined phrase.
 
 **Method:** identify what's wrong with the underlined part first (don't read options). Then pick the option that fixes the specific error without adding new ones.
+
+## 10.1 Tips & Tricks
+
+| # | Trick | How to apply |
+|---|---|---|
+| 1 | **Diagnose before reading options** | Decide *what's wrong* with the underlined phrase (tense? agreement? preposition?) BEFORE looking at choices — stops option-bias. |
+| 2 | **"No improvement" is a real answer** | If the underlined part is already correct, the answer is often "(d) No improvement / No correction required". Don't force a change. |
+| 3 | **Pick the minimum fix** | The right option corrects the *specific* error and adds nothing new. Reject options that "improve" style but introduce a fresh error. |
+| 4 | **Run the 10-type scan** | Same checklist as error spotting (tense, agreement, pronoun, preposition, article, parallelism, redundancy, comparative, gerund/infinitive, modifier). |
+| 5 | **Watch for "double error" options** | Some options fix the obvious error but break grammar elsewhere — read the *whole* replacement, not just the changed word. |
+| 6 | **Re-read with your choice plugged in** | The corrected sentence must read naturally start-to-finish. |
+
+**Common sentence-improvement sub-types:** tense correction · subject-verb agreement · wrong preposition · article fix · double comparative · conditional (if-clause) · redundancy removal · idiom/phrasal-verb correction.
+
+### Worked Example 1 (EASY)
+
+**Q.** Improve: "Neither of the boys *have* finished their homework."
+Options: (a) has finished his  (b) have finished their  (c) had finished their  (d) have finished his
+
+**Step 1.** "Neither of" is always singular ⇒ verb must be **has** (singular).
+
+**Step 2.** "Neither" is singular ⇒ pronoun also singular ⇒ **his**, not their.
+
+**Step 3.** Answer: **(a) has finished his**.
+
+### Worked Example 2 (MEDIUM)
+
+**Q.** Improve: "He was *more cleverer than* his brother."
+Options: (a) cleverer than  (b) more clever than  (c) more cleverer than  (d) cleverer then
+
+**Step 1.** "More cleverer" is double comparative — incorrect.
+
+**Step 2.** "Clever" forms comparative as "cleverer" (one syllable rule extended).
+
+**Step 3.** Answer: **(a) cleverer than**.
+
+### Worked Example 3 (HARD)
+
+**Q.** Improve: "If I *would have known* the truth, I would have helped you."
+Options: (a) had known  (b) would have known  (c) have known  (d) knew
+
+**Step 1.** Conditional Type 3 form: **If + Past Perfect, would have + V3**.
+
+**Step 2.** "Would have known" in IF clause is wrong; must be "had known".
+
+**Step 3.** Answer: **(a) had known**.
 
 ---
 
@@ -1583,11 +2743,65 @@ Passage with 5-10 blanks. Options per blank.
 2. **Grammar + vocab mix** — article or preposition blanks alongside word blanks.
 3. **New-age cloze** — each blank has 4-5 options that differ subtly.
 
+## 11.1 Tips & Tricks to master Cloze (these win marks examples alone can't teach)
+
+| # | Trick | How to apply |
+|---|---|---|
+| 1 | **Read the full passage first** | Never solve blank-by-blank blind. The theme decides the tone (positive/negative) of every blank. |
+| 2 | **Predict before peeking** | Cover the options, guess your own word, then pick the closest. Stops option-confusion. |
+| 3 | **Use the connector logic** | "However / but / yet" → opposite idea follows. "Moreover / and / also" → same direction. "Because / since / as" → reason. "Therefore / thus" → result. |
+| 4 | **Match grammatical form** | If the blank needs a noun, eliminate verb/adjective options instantly. Check what the surrounding words demand. |
+| 5 | **Collocation sense** | Some words simply go together: "make a *decision*", "take a *risk*", "pay *attention*", "meet a *deadline*". Pick the natural pairing. |
+| 6 | **Preposition/article blanks** | If a blank sits before a noun and options are *a/an/the/in/on/at*, it's a grammar blank — apply Part 4/Part 5 rules, not vocabulary. |
+| 7 | **Tone consistency** | A passage praising something won't suddenly need a negative word, and vice-versa. Keep all blanks in the same emotional key. |
+| 8 | **Eliminate, don't guess** | Cross out 2 clearly wrong options first; then decide between the remaining 2 using connector + collocation. |
+| 9 | **Don't leave the first blank if stuck** | Solve the easy blanks first; the answers narrow the theme and make the hard blanks obvious on a second pass. |
+
+### Worked Example — full cloze passage
+
+**Passage:** Climate change is one of the greatest **(1)** facing humanity today. Rising global temperatures, melting glaciers, and **(2)** sea levels threaten ecosystems worldwide. While many governments have **(3)** to reduce carbon emissions, individual action is also **(4)**. Simple choices like using public transport or **(5)** energy at home can make a meaningful difference.
+
+**Options:**
+1. (a) opportunities  (b) challenges  (c) decisions  (d) policies
+2. (a) decreasing  (b) rising  (c) stable  (d) shrinking
+3. (a) pledged  (b) refused  (c) hesitated  (d) ignored
+4. (a) optional  (b) crucial  (c) irrelevant  (d) unnecessary
+5. (a) wasting  (b) conserving  (c) ignoring  (d) producing
+
+**Step 1.** Blank 1: "greatest ___ facing humanity" — the verb "facing" implies something to overcome; "opportunities" would need "seizing", not "facing". "Challenges" is the correct negative noun that one *faces*. → **(b)**
+
+**Step 2.** Blank 2: "melting glaciers and ___ sea levels" — the passage lists two warming effects in parallel; "decreasing/stable/shrinking" contradict a warming narrative. "Rising" continues that negative parallel. → **(b)**
+
+**Step 3.** Blank 3: "governments have ___ to reduce emissions" — the present perfect + "to reduce" needs a verb of commitment or intent, not reluctance; "pledged" (= formally committed) is the only positive option. → **(a)**
+
+**Step 4.** Blank 4: "individual action is also ___" — the next sentence says "Simple choices … can make a meaningful difference", confirming strong importance, not weakness. "Crucial" (= absolutely necessary) matches that force; "optional / irrelevant / unnecessary" contradict it. → **(b)**
+
+**Step 5.** Blank 5: "or ___ energy at home" — "or" links this to "using public transport", both presented as positive eco-actions; "wasting / ignoring / producing" are harmful or neutral. "Conserving" (= saving energy) is the only eco-positive choice. → **(b)**
+
+**Answers:** 1-b, 2-b, 3-a, 4-b, 5-b.
+
 ---
 
 # PART 12 — READING COMPREHENSION (RC) {#part-12}
 
 ## 12.0 Opener
+
+**Passage length by exam (don't waste time on wrong passages in practice):**
+
+| Exam | Typical passage length | Questions per passage |
+|---|---|---|
+| SSC CGL Tier 1 / CHSL / MTS | 200–300 words | 5–8 |
+| SSC CGL Tier 2 / CAPF | 350–500 words | 8–10 |
+| IBPS PO / SBI PO Prelims | 350–500 words | 5–10 |
+| IBPS PO / SBI PO Mains | 600–800 words | 10–15 |
+| RRB NTPC | 150–250 words | 4–6 |
+
+**Every well-formed RC set covers 4 question types (you will see these in every exam):**
+
+1. **Main-idea / title question** — tests whether you understood the passage as a whole.
+2. **Inference question** — the answer is implied but not directly stated; one logical step beyond the text.
+3. **Vocabulary-in-context question** — the word's meaning as used in the passage (not its dictionary definition).
+4. **Tone / attitude question** — the author's emotional stance (critical, supportive, neutral, ironic, sarcastic, analytical).
 
 **Method (Stepwise):**
 1. **Skim** — get topic + structure in 30-60 s. Don't memorise; locate.
@@ -1607,6 +2821,101 @@ Passage with 5-10 blanks. Options per blank.
 7. **Structural** — purpose of paragraph 2.
 8. **"Which of the following is NOT …"** — watch the negative.
 
+## 12.1 Tips & Tricks to master RC
+
+| # | Trick | How to apply |
+|---|---|---|
+| 1 | **Questions before passage** (for fact/detail Qs) | Read the questions first so you know what to hunt; then scan. Saves re-reading. |
+| 2 | **Topic sentence = first + last line** | The main idea almost always lives in the opening or closing sentence of the passage / each paragraph. |
+| 3 | **Answer from the passage, not your knowledge** | Even if you know more about the topic, pick only what the passage *states or implies*. Outside knowledge = trap. |
+| 4 | **Eliminate "extreme" options** | Words like *always, never, only, entirely, must, all, none* are usually wrong for inference/main-idea questions. |
+| 5 | **Detail questions → locate the exact line** | For "according to the passage…" questions, find the sentence and paraphrase. Never rely on memory. |
+| 6 | **Tone = adjectives the author chose** | Positive adjectives → supportive/optimistic; negative → critical; balanced both sides → neutral/analytical. |
+| 7 | **Inference = one step beyond, not ten** | The right inference is *directly supported* by a line. If you need a long chain of assumptions, it's wrong. |
+| 8 | **Vocabulary-in-context** | Replace the word with each option in the sentence; pick the one that keeps the meaning identical. |
+| 9 | **"NOT/EXCEPT" questions** | Three options are *in* the passage; one isn't. Tick the three you find; the leftover is the answer. |
+| 10 | **Manage time** | If a passage is dense, answer the fact/detail questions (fast, locatable) first; leave inference/tone for last. |
+
+## 12.1a RC Trap Types — how examiners fool you (memorise these 4)
+
+<div class="pitfall">
+
+**Trap 1 — Paraphrase trap** (most common)
+The passage says "X", and the correct answer says the same thing in different words. The wrong options quote the passage almost verbatim in a way that changes the meaning.
+- Passage: *"The scientist was sceptical of the new findings."*
+- Wrong option: *"The scientist rejected the new findings."* (too strong — sceptical ≠ rejected)
+- Right option: *"The scientist doubted the new findings."* (paraphrase of sceptical)
+
+**Rule:** Paraphrase = same meaning, different words. If an option uses the exact words of the passage but adds "only", "never", "always", "entirely" — it is the trap.
+
+</div>
+
+<div class="pitfall">
+
+**Trap 2 — Extreme-language trap**
+Options that use extreme words (**always, never, only, entirely, all, none, must, completely**) for inference or main-idea questions are almost always wrong. Passages are usually nuanced.
+- Passage: *"Most students found the exam difficult."*
+- Wrong: *"All students found the exam difficult."* (extreme — most ≠ all)
+- Right: *"Many students found the exam difficult."* (matches the text)
+
+</div>
+
+<div class="pitfall">
+
+**Trap 3 — Out-of-scope trap**
+An option that sounds reasonable from general knowledge but is **not mentioned in the passage**. The test is always: is this in the text?
+- Passage about: impact of deforestation on climate.
+- Trap option: *"Deforestation affects river formation."* (may be true in reality but not stated here)
+- Rule: If you cannot point to the **exact sentence** in the passage that supports it, the option is out of scope.
+
+</div>
+
+<div class="pitfall">
+
+**Trap 4 — Opposite-meaning trap**
+An option that says the **exact reverse** of what the passage states. Examiners insert these for rushed readers.
+- Passage: *"The reforms strengthened the economy."*
+- Trap: *"The reforms weakened the economy."*
+- Rule: Always verify tone (positive/negative) of the relevant sentence before choosing.
+
+</div>
+
+### Worked Example — short RC
+
+**Passage:**
+*The rise of artificial intelligence has reshaped industries from healthcare to finance. While AI promises efficiency and innovation, it also raises concerns about job displacement and ethical use of personal data. Policymakers must balance encouraging innovation with protecting citizen rights. Critics argue current regulations lag behind technological progress, while industry leaders caution that overregulation could stifle growth. The debate, however, is no longer whether to regulate AI but how to do so effectively.*
+
+**Q1.** What is the main idea?
+(a) AI's negative impact on jobs
+(b) The need for balanced AI regulation
+(c) Industry leaders' opinions on AI
+(d) Healthcare uses of AI
+
+**Step 1.** Topic: AI regulation debate. Last line: "no longer whether to regulate AI but how to do so effectively" — the central tension.
+
+**Step 2.** Option (a) too narrow; (c) too narrow; (d) is one example, not main idea.
+
+**Answer: (b)**.
+
+**Q2.** What does the author imply about current regulations?
+(a) They are sufficient
+(b) They are excessive
+(c) They are slower than technology
+(d) They protect industry
+
+**Step 1.** "Critics argue current regulations lag behind technological progress" → regulations are slower than tech.
+
+**Answer: (c)**.
+
+**Q3.** The tone of the passage is:
+(a) Critical  (b) Balanced  (c) Optimistic  (d) Sarcastic
+
+**Step 1.** Both sides presented: efficiency vs concerns; critics vs industry leaders.
+
+**Step 2.** No clear bias — balanced presentation.
+
+**Answer: (b)**.
+
 ---
 
 # PART 13 — PARA-JUMBLES (SENTENCE REARRANGEMENT) {#part-13}
@@ -1623,6 +2932,42 @@ Passage with 5-10 blanks. Options per blank.
 
 Common traps: a pronoun in Sentence B must follow its antecedent in Sentence A.
 
+## 13.1 Tips & Tricks to master Para-jumbles
+
+| # | Trick | How to apply |
+|---|---|---|
+| 1 | **Find the opener first** | The opening sentence introduces the subject by **full name/noun** and never starts with a pronoun, "this/that/these", "however", "also", or a conjunction. |
+| 2 | **Noun → Pronoun rule** | A sentence using "he / it / they / this / such" must come *after* the sentence that first names that person/thing. This single rule fixes most orderings. |
+| 3 | **Transition words signal position** | "However / but" → contrast with previous. "Therefore / thus / hence" → result of previous. "For example" → follows a general statement. "Firstly… finally" → fixed sequence. |
+| 4 | **Time / logical sequence** | Look for dates, "first/then/later/finally", or cause→effect chains and order accordingly. |
+| 5 | **Mandatory pairs** | Some sentences obviously link (one raises a question, another answers it). Lock these pairs, then place the pair as a unit. |
+| 6 | **The conclusion sentence** | Ends with a summary, a consequence, or words like "thus, in conclusion, as a result". Usually last. |
+| 7 | **Use the options to your advantage** | If 3 of 4 options start with the same sentence, that's almost certainly the opener — verify and move on. |
+| 8 | **Article clue: a → the** | A noun is introduced with "**a/an**" first, then referred to with "**the**" later. The "a" sentence precedes the "the" sentence. |
+
+### Worked Example
+
+**Q.** Arrange in logical order:
+(A) However, this revolution comes with its own challenges.
+(B) The internet has fundamentally changed how we communicate.
+(C) From email to instant messaging, distances have collapsed.
+(D) Privacy concerns and information overload are key issues.
+(E) Society must develop new norms to address them.
+
+Options: (1) BCADE  (2) BACDE  (3) BCDAE  (4) BADCE
+
+**Step 1.** Find the opener: (B) is the most general statement, no back-references. Opener = **B**.
+
+**Step 2.** What follows logically? (C) elaborates on "changed how we communicate" because it gives a concrete example ("email to instant messaging") — this is the noun→example link. → BC.
+
+**Step 3.** (A) starts with "However, this revolution" — "this revolution" must refer back to the internet revolution already named in B+C; "however" signals a contrast, so a complication (challenges) now enters. → BCA.
+
+**Step 4.** (D) follows A because A introduced "challenges" as a general term and D gives the specifics ("privacy concerns and information overload") — general claim → specific instance. → BCAD.
+
+**Step 5.** (E) "Society must develop new norms to address them" — "them" refers to the challenges in D. Concluding statement. → **BCADE**.
+
+**Answer: (1) BCADE**.
+
 ---
 
 # PART 14 — FILL IN THE BLANKS {#part-14}
@@ -1630,6 +2975,54 @@ Common traps: a pronoun in Sentence B must follow its antecedent in Sentence A.
 Single-blank, double-blank, triple-blank variants. Grammar- or vocab-driven.
 
 - Double-blank: find the pair that works for BOTH blanks. Often the pair is syntactically parallel.
+
+## 14.1 Tips & Tricks to master Fill-in-the-Blanks
+
+| # | Trick | How to apply |
+|---|---|---|
+| 1 | **Read the whole sentence first** | The blank's meaning depends on the *entire* sentence, not just the words around it. Identify the tone (positive/negative). |
+| 2 | **Spot the connector** | "Although / despite / but" → the blank contrasts the rest. "And / moreover" → the blank agrees with the rest. Decide polarity before reading options. |
+| 3 | **Grammar blank vs vocab blank** | If options are tenses/prepositions/articles → apply grammar rules. If options are synonyms → use meaning + collocation. |
+| 4 | **Double-blank: test BOTH** | The correct option must fit **both** blanks. Eliminate any pair where even one word fails. Test the *easier* blank first to cut options fast. |
+| 5 | **Collocation memory** | "strong *coffee*" not "powerful coffee"; "heavy *rain*", "make a *mistake*", "commit a *crime*". Pick the natural partner. |
+| 6 | **Cause–effect & condition words** | "so that, in order to, because, unless, if" tell you what logically belongs in the blank. |
+| 7 | **Eliminate extremes & off-tone words** | A neutral sentence rarely needs an extreme word; a praising sentence won't take a negative word. |
+| 8 | **Plug & read aloud (mentally)** | Put your chosen option in and re-read; the right answer *sounds* natural and keeps the grammar intact. |
+
+### Worked Example 1 (single blank — grammar)
+
+**Q.** Despite his hard work, he ______ in the exam.
+(a) succeed  (b) succeeds  (c) failed  (d) wins
+
+**Step 1.** "Despite" sets up contrast — expectation = success; reality = opposite.
+
+**Step 2.** Past tense needed (sentence is reporting a result).
+
+**Answer: (c) failed**.
+
+### Worked Example 2 (double blank — collocation)
+
+**Q.** The committee ______ several recommendations but the chairman ______ them.
+(a) made / accepted  (b) suggested / rejected  (c) prepared / approved  (d) put / ignored
+
+**Step 1.** "But" signals contrast: committee's positive action vs chairman's negative.
+
+**Step 2.** "Suggested" (positive) and "rejected" (negative) form the contrast pair.
+
+**Answer: (b) suggested / rejected**.
+
+### Worked Example 3 (HARD — triple blank)
+
+**Q.** The new policy was ______ at first, but after extensive ______, it gained ______.
+(a) rejected / debate / acceptance  (b) accepted / praise / momentum  (c) opposed / discussion / support  (d) refused / argument / criticism
+
+**Step 1.** "But" = contrast. First state (rejected/opposed) → final state (acceptance/support).
+
+**Step 2.** Middle word fits "extensive ___" — debate or discussion.
+
+**Step 3.** (a) "rejected" / "debate" / "acceptance" — flows logically. (c) "opposed" / "discussion" / "support" — also flows. Both work, but (c) uses more natural collocations.
+
+**Answer: (c) opposed / discussion / support**.
 
 ---
 
@@ -1655,33 +3048,188 @@ Single-blank, double-blank, triple-blank variants. Grammar- or vocab-driven.
 5. **Spelling** (choose the correctly spelt one).
 6. **Foreign phrases** (status quo, bona fide, vice versa, per se, ad hoc).
 
----
+## 15.1 Attack strategy per question type
 
-# APPENDIX A — Master checklist for error spotting (memorise)
+For each question type, run a specific 3-step routine:
 
-1. S-V agreement.
-2. Tense consistency.
-3. Pronoun case & agreement.
-4. Prepositions (fixed pairs).
-5. Articles.
-6. Parallel structure.
-7. Redundancy.
-8. Comparatives.
-9. Gerund/infinitive.
-10. Modifier placement.
+| Type | Step 1 | Step 2 | Step 3 |
+|---|---|---|---|
+| Synonym | If unknown, decode by **prefix / root / suffix** | Eliminate **opposite-meaning** options | Pick the option closest in **register & connotation** |
+| Antonym | Identify the word's **polarity** (positive/negative) | Find options with opposite polarity | Reject same-polarity distractors |
+| Idiom | Translate the idiom **literally** to see the image | Pick the option that **paraphrases** the image | Reject literal traps |
+| One-word substitution | Find the **defining property** in the phrase | Match it to the precise -ist / -phobia / -cide / -archy ending | Reject over-broad options |
+| Spelling | Apply the **doubled-letter** and **unstressed-vowel** rules | Reject phonetic-but-wrong spellings | Pick the technically correct one |
+| Foreign phrase | Translate the Latin/French roots | Map to the closest English idea | Reject false friends |
 
-# APPENDIX B — 50 most-tested preposition traps
+## 15.2 Worked Examples — one per type
 
-(see Part 5; drill this list till it's reflex.)
+<div class="worked">
 
-# APPENDIX C — 100 most-tested idioms (separate assets file)
+**Example 1 — Synonym.**
+Q: Find the synonym of **"OSTENTATIOUS"**.
+(a) modest  (b) showy  (c) hidden  (d) plain
 
-# APPENDIX D — Reading-comprehension traps
+**Step 1.** Decode: *ostent-* root from Latin *ostendere* = "to display, show off."
+**Step 2.** Eliminate opposite-polarity options: *modest, hidden, plain* are all the opposite of showy.
+**Step 3.** Only **(b) showy** matches the "displaying" meaning.
 
-1. **"Extreme" options** ("always", "never", "completely").
-2. **Out-of-scope inferences** that go beyond the passage.
-3. **Opposite-tone distractors** (passage supportive, option critical).
-4. **Over-specific numerical traps** in factual questions — check the passage verbatim.
+**Answer: (b).**
+
+</div>
+
+<div class="worked">
+
+**Example 2 — Antonym.**
+Q: Find the antonym of **"BENEVOLENT"**.
+(a) kind  (b) gentle  (c) malevolent  (d) generous
+
+**Step 1.** Polarity of *benevolent* (= well-wishing, kind) → **positive**.
+**Step 2.** Find a **negative**-polarity option. *Kind, gentle, generous* are all positive (same polarity = wrong). Only **malevolent** (= ill-wishing) is opposite.
+**Step 3.** Roots confirm: *bene* (good) + *volent* (wishing) vs *male* (bad) + *volent* (wishing).
+
+**Answer: (c) malevolent.**
+
+</div>
+
+<div class="worked">
+
+**Example 3 — Idiom.**
+Q: Choose the meaning of: **"To let the cat out of the bag."**
+(a) To free a pet  (b) To accidentally reveal a secret  (c) To lose a quarrel  (d) To buy something blindly
+
+**Step 1.** Literal image: a *hidden cat* (= secret) being *let out of a bag* (= revealed) — accidentally.
+**Step 2.** Paraphrase = "to reveal a secret accidentally" → option (b).
+**Step 3.** Reject literal traps: (a) is literal-cat (wrong); (c) and (d) are unrelated.
+
+**Answer: (b).**
+
+> *Companion idioms:* "spill the beans" = same meaning. "A wolf in sheep's clothing" = a hidden enemy. "Don't count your chickens before they hatch" = don't celebrate prematurely.
+
+</div>
+
+<div class="worked">
+
+**Example 4 — One-word substitution.**
+Q: A person who can use both hands with equal ease is called: **__________**.
+(a) ambivalent  (b) ambidextrous  (c) ambiguous  (d) amphibious
+
+**Step 1.** Defining property = "BOTH hands, equal ease". Need the precise word.
+**Step 2.** *Ambi-* (both) + *dexter* (right hand, hence skilful) → **ambidextrous**.
+**Step 3.** Reject look-alikes: *ambivalent* (mixed feelings), *ambiguous* (unclear), *amphibious* (land + water).
+
+**Answer: (b).**
+
+> **Mini-list of high-yield one-word substitutions:**
+> | Phrase | One word |
+> |---|---|
+> | Lover of books | **bibliophile** |
+> | Hatred of mankind | **misanthropy** |
+> | Government by the few | **oligarchy** |
+> | Government by women | **matriarchy** |
+> | Killing of one's father | **patricide** |
+> | Fear of closed spaces | **claustrophobia** |
+> | Fear of open spaces | **agoraphobia** |
+> | Person who speaks many languages | **polyglot** |
+> | Person who eats everything (plants + meat) | **omnivore** |
+> | Person who eats only plants | **herbivore** |
+> | One who studies birds | **ornithologist** |
+> | One who studies the past | **historian** |
+> | Animal that lives in water + on land | **amphibian** |
+> | Speech to oneself | **soliloquy** |
+> | Mania for stealing | **kleptomania** |
+> | Mania for setting fires | **pyromania** |
+
+</div>
+
+<div class="worked">
+
+**Example 5 — Spelling.**
+Q: Choose the correctly spelt word.
+(a) Accomodate  (b) Acomodate  (c) Accommodate  (d) Accomodade
+
+**Step 1.** Apply the doubled-letter rule for "accommodate" — both *c* AND *m* are doubled (the most-tested spelling trap in English).
+**Step 2.** Option (a) misses one *m*; (b) misses one *c*; (d) wrong ending.
+**Step 3.** **Accommodate** ✓.
+
+**Answer: (c) Accommodate.**
+
+> **Top-15 misspelt words (memorise the doubled-letter pattern):**
+> | Wrong | Correct |
+> |---|---|
+> | Acommodate | **Accommodate** (cc + mm) |
+> | Occurence | **Occurrence** (cc + rr) |
+> | Separate | **Separate** (sep-A-rate, NOT sep-E-rate) |
+> | Priviledge | **Privilege** (only one *d*… actually no *d*) |
+> | Embarassment | **Embarrassment** (rr + ss) |
+> | Millenium | **Millennium** (ll + nn) |
+> | Independant | **Independent** (-ent) |
+> | Recieve | **Receive** ("i before e except after c") |
+> | Concious | **Conscious** (sc + ous) |
+> | Maintainance | **Maintenance** (-ten-, not -tain-) |
+> | Tomatoe | **Tomato** (no *e*) |
+> | Calender | **Calendar** (-dar) |
+> | Goverment | **Government** (gover-N-ment) |
+> | Begining | **Beginning** (nn) |
+> | Refered | **Referred** (rr) |
+
+</div>
+
+<div class="worked">
+
+**Example 6 — Foreign phrase.**
+Q: What does **"per se"** mean?
+(a) per share  (b) by itself  (c) per second  (d) very much
+
+**Step 1.** Latin *per* (through, by) + *se* (itself) → "by itself, intrinsically".
+**Step 2.** **Answer: (b) by itself.**
+
+> **High-yield foreign phrases (Latin + French):**
+> | Phrase | Meaning |
+> |---|---|
+> | **status quo** | the existing state of affairs |
+> | **bona fide** | in good faith / genuine |
+> | **vice versa** | the other way around |
+> | **per se** | by itself / as such |
+> | **ad hoc** | for this specific purpose |
+> | **prima facie** | at first sight |
+> | **ipso facto** | by the fact itself |
+> | **de facto** | in fact (as opposed to *de jure* = in law) |
+> | **de jure** | by right of law |
+> | **sine qua non** | an essential condition |
+> | **carte blanche** | full authority |
+> | **fait accompli** | a done deed |
+> | **coup d'état** | sudden overthrow of a government |
+> | **modus operandi** | manner of operation |
+> | **quid pro quo** | something for something / exchange |
+> | **et cetera (etc.)** | and the rest |
+> | **i.e.** (id est) | that is |
+> | **e.g.** (exempli gratia) | for example |
+> | **vis-à-vis** | in relation to |
+> | **alma mater** | one's old school/college |
+
+</div>
+
+## 15.3 Common Vocabulary Traps
+
+| Trap | Example | Avoid by |
+|---|---|---|
+| Same-polarity distractor in antonyms | All four options synonyms; one is the opposite. | Marking polarity (+/−) before reading options. |
+| Look-alike words | "ambivalent / ambiguous / ambidextrous / amphibious" | Decoding the root: *ambi-* (both), *dexter* (hand), *phib-* (life). |
+| Literal idiom trap | "let the cat out" → "free a pet" (wrong). | Always paraphrase the *image*, not the literal words. |
+| British vs American spelling | colour/color, theatre/theater, organise/organize | Pick whichever the exam uses (SSC/Banks → British). |
+| Greek vs Latin roots in OWS | *-cide* (kill: Latin) vs *-cracy* (rule: Greek) | Memorise the suffix-meaning map. |
+| Foreign-phrase false friend | "per se" ≠ "per share" | Decode the original-language roots, not the look-alike English. |
+
+## 15.4 Mini-PYQ Drill — Vocabulary
+
+1. Synonym of **PROLIFIC** = (a) sterile  (b) abundant  (c) brief  (d) ordinary → **(b) abundant**.
+2. Antonym of **TRANSPARENT** = (a) opaque  (b) clear  (c) obvious  (d) thin → **(a) opaque**.
+3. Idiom: **"To make a clean breast of"** = (a) to bathe  (b) to confess fully  (c) to win easily  (d) to fight openly → **(b) to confess fully**.
+4. One-word: "Government by the wealthy" = (a) plutocracy  (b) aristocracy  (c) democracy  (d) bureaucracy → **(a) plutocracy** (*pluto-* = wealth).
+5. Spelling — pick the correct: (a) Receipt  (b) Reciept  (c) Recipt  (d) Receit → **(a) Receipt**.
+6. Foreign phrase: **"sine qua non"** = (a) without sin  (b) an essential condition  (c) without doubt  (d) old age → **(b) an essential condition**.
+
+> **Carry-forward principle:** vocabulary is won by **systematic decoding** (root + prefix + suffix) PLUS **drilled lists** (the top-300 high-frequency words). Both — not one or the other.
 
 ---
 
@@ -2243,6 +3791,8 @@ Collocations = words that naturally go together. Cloze tests check whether you k
 
 ---
 
+Part 16 built your vocabulary arsenal — the word lists, idioms, and collocations you must know cold. Part 17 now shows exactly how Banking exams test that vocabulary alongside their specific RC, cloze, and sentence-rearrangement patterns, which differ markedly from SSC. Adjust your preparation focus accordingly.
+
 # PART 17 — BANKS-FOCUS DEEP DRILL (PO/Clerk/RRB Bank, IBPS+SBI+RBI) {#part-17}
 
 ## 17.1 What's different in Banking English
@@ -2367,6 +3917,8 @@ Negligible weight on: synonyms, antonyms, OWS, idiom-meaning (those are SSC heav
 
 ---
 
+Part 17 covered the RC-heavy, inference-driven style of Banking exams. Part 18 covers SSC and RRB, where the question mix flips: vocabulary (synonyms, antonyms, OWS, spellings) dominates, and RC passages are shorter and mostly factual. If you are preparing for SSC/RRB only, you can skim Part 17 — but read this chapter carefully.
+
 # PART 18 — SSC + RRB FOCUS DEEP DRILL {#part-18}
 
 ## 18.1 What's different
@@ -2410,24 +3962,51 @@ So drill Parts 1-9 and Part 16 (vocab tables + idioms) the hardest. RC is shorte
 
 ---
 
-# APPENDIX A — Master checklist for error spotting (memorise)
+# APPENDIX A — Master checklist for error spotting {#appendix-a}
 
-1. S-V agreement.
-2. Tense consistency.
-3. Pronoun case & agreement.
-4. Prepositions (fixed pairs).
-5. Articles.
-6. Parallel structure.
-7. Redundancy.
-8. Comparatives.
-9. Gerund/infinitive.
-10. Modifier placement.
+Run this 10-point scan **in order** on every error-spotting question. Stop at the first error you find.
 
-# APPENDIX B — 50 most-tested preposition traps
+| # | Error type | Trigger phrase to look for |
+|---|---|---|
+| 1 | **Subject-Verb Agreement** | Collective noun / "each of / neither of / the number of" near a plural verb |
+| 2 | **Tense consistency** | Time-signal word (since, already, yesterday, when) clashes with verb tense |
+| 3 | **Pronoun agreement / case** | Pronoun after preposition ("between you and I" → "me"); pronoun number mismatch |
+| 4 | **Preposition (fixed pairs)** | "married with / superior than / prefer X than" — wrong prep after fixed verb/adj |
+| 5 | **Article (a / an / the)** | Article chosen by letter not sound ("a honest" → "an honest"; "a university" ✓) |
+| 6 | **Parallelism** | Correlatives (not only … but also …) connect unlike forms (verb vs noun) |
+| 7 | **Redundancy** | "return back / repeat again / past history / revert back / free gift" |
+| 8 | **Comparative / superlative misuse** | "more better / most strongest" (double); superlative for two ("the most of the two") |
+| 9 | **Gerund vs infinitive** | enjoy/avoid/stop + V-ing; decide/want/refuse + to-V; "stop smoking" ≠ "stop to smoke" |
+| 10 | **Misplaced modifier** | Opening participial phrase whose logical subject ≠ subject of main clause |
 
-(see Part 5; drill this list till it's reflex.)
+# APPENDIX B — Top-20 preposition pairs (quick-reference) {#appendix-b}
 
-# APPENDIX C — RC traps (banks + SSC)
+Memorise these cold — there is no logic, only pattern.
+
+| Verb / Adjective | Correct prep | Trap to avoid |
+|---|---|---|
+| accuse | **of** | not "for" |
+| comply | **with** | not "to" |
+| consist | **of** | not "in" / not "with" |
+| depend / rely / insist | **on** | not "upon" in modern usage |
+| differ | **from** (things) / **with** (person) | not "than" |
+| die | **of** disease · **for** cause · **from** injury | not "with" |
+| married / engaged | **to** | not "with" |
+| superior / inferior / junior / senior / prior | **to** | NEVER "than" |
+| prefer X | **to** Y | NEVER "prefer X than Y" |
+| afraid / aware / capable / fond / proud / sick | **of** | — |
+| angry | **with** person / **at** thing | not "on" |
+| good / expert / clever | **at** | not "in" |
+| acquainted | **with** | not "to" |
+| congratulate / compliment / decide | **on** | not "for" |
+| suffer / prevent / refrain / abstain | **from** | not "with" |
+| listen / reply / respond | **to** | not "at" |
+| invite | **to** | not "for" |
+| look | **for** (search) / **after** (care) / **into** (investigate) | each distinct |
+| complain | **about** (matter) / **to** (person) | — |
+| believe | **in** (existence) / no prep for opinion | not "believe on" |
+
+# APPENDIX C — RC traps (banks + SSC) {#appendix-c}
 
 1. **"Extreme" options** ("always", "never", "completely") — usually wrong.
 2. **Out-of-scope inferences** — go beyond the passage.
@@ -2746,40 +4325,6 @@ So drill Parts 1-9 and Part 16 (vocab tables + idioms) the hardest. RC is shorte
 
 **Memory peg.** Disease → "of"; injury → "from"; cause → "for"; weapon → "by".
 
-## Section 2 — SENTENCE IMPROVEMENT (5)
-
-**Q11.** "She **didn't went** to school yesterday."
-*Replace.* "didn't go" (after did, base form).
-
-**Q12.** "If I **was** rich, I would buy a car."
-*Replace.* "were" (subjunctive in unreal conditional).
-
-**Q13.** "He is **more better** than his brother."
-*Replace.* "better" (don't double comparative).
-
-**Q14.** "The two sisters love **one another**."
-*Replace.* "each other" (one another for >2; each other for 2).
-
-**Q15.** "She is junior **than** me."
-*Replace.* "to me" (junior/senior/superior/inferior + "to").
-
-## Section 3 — FILL IN BLANKS (5)
-
-**Q16.** "He acted ___ my advice."
-(a) on  (b) at  (c) for  (d) by — **(a) on**.
-
-**Q17.** "She insisted ___ paying the bill."
-(a) on  (b) for  (c) at  (d) about — **(a) on**.
-
-**Q18.** "He is good ___ mathematics."
-(a) at  (b) in  (c) on  (d) for — **(a) at**.
-
-**Q19.** "He is married ___ a doctor."
-(a) with  (b) to  (c) for  (d) of — **(b) to**.
-
-**Q20.** "He died ___ malaria."
-(a) of  (b) from  (c) by  (d) for — **(a) of** (disease).
-
 ## Section 4 — SYNONYMS (5 worked + variations)
 
 > **Notation expansion (used throughout):**
@@ -2789,7 +4334,7 @@ So drill Parts 1-9 and Part 16 (vocab tables + idioms) the hardest. RC is shorte
 ---
 
 **Q21.** Synonym of **MUNDANE**.
-Options: (a) celestial (b) ordinary (c) sacred (d) unique.
+Options: (a) celestial  (b) ordinary  (c) sacred  (d) unique.
 
 **Solving it.**
 - "Mundane" comes from Latin "mundus" = world. Means **worldly / ordinary / commonplace**.
@@ -2807,7 +4352,7 @@ Options: (a) celestial (b) ordinary (c) sacred (d) unique.
 ---
 
 **Q22.** Synonym of **EXACERBATE**.
-Options: (a) reduce (b) worsen (c) ignore (d) accept.
+Options: (a) reduce  (b) worsen  (c) ignore  (d) accept.
 
 **Solving it.**
 - Exacerbate = make worse, intensify (negative situations).
@@ -2822,7 +4367,7 @@ Options: (a) reduce (b) worsen (c) ignore (d) accept.
 ---
 
 **Q23.** Synonym of **PERFUNCTORY**.
-Options: (a) thorough (b) careful (c) cursory (d) lengthy.
+Options: (a) thorough  (b) careful  (c) cursory  (d) lengthy.
 
 **Solving it.**
 - Perfunctory = done with little care / interest, going through the motions.
@@ -2837,7 +4382,7 @@ Options: (a) thorough (b) careful (c) cursory (d) lengthy.
 ---
 
 **Q24.** Synonym of **IMPECCABLE**.
-Options: (a) faulty (b) flawless (c) unstable (d) eager.
+Options: (a) faulty  (b) flawless  (c) unstable  (d) eager.
 
 **Solving it.**
 - Impeccable = without fault; perfect (im- + pecc- = without sin).
@@ -2848,7 +4393,7 @@ Options: (a) faulty (b) flawless (c) unstable (d) eager.
 ---
 
 **Q25.** Synonym of **GARRULOUS**.
-Options: (a) silent (b) talkative (c) angry (d) wise.
+Options: (a) silent  (b) talkative  (c) angry  (d) wise.
 
 **Solving it.**
 - Garrulous = excessively talkative, chatty.
@@ -2866,7 +4411,7 @@ Options: (a) silent (b) talkative (c) angry (d) wise.
 ---
 
 **Q26.** Antonym of **PROFLIGATE**.
-Options: (a) thrifty (b) wasteful (c) lavish (d) generous.
+Options: (a) thrifty  (b) wasteful  (c) lavish  (d) generous.
 
 **Solving it.**
 - Profligate = recklessly wasteful (especially of money).
@@ -2881,7 +4426,7 @@ Options: (a) thrifty (b) wasteful (c) lavish (d) generous.
 ---
 
 **Q27.** Antonym of **ZENITH**.
-Options: (a) summit (b) peak (c) nadir (d) climb.
+Options: (a) summit  (b) peak  (c) nadir  (d) climb.
 
 **Solving it.**
 - Zenith = highest point.
@@ -2894,7 +4439,7 @@ Options: (a) summit (b) peak (c) nadir (d) climb.
 ---
 
 **Q28.** Antonym of **EPHEMERAL**.
-Options: (a) transient (b) permanent (c) brief (d) sudden.
+Options: (a) transient  (b) permanent  (c) brief  (d) sudden.
 
 **Solving it.**
 - Ephemeral = lasting only a short time.
@@ -2907,7 +4452,7 @@ Options: (a) transient (b) permanent (c) brief (d) sudden.
 ---
 
 **Q29.** Antonym of **VINDICTIVE**.
-Options: (a) merciful (b) angry (c) hostile (d) hateful.
+Options: (a) merciful  (b) angry  (c) hostile  (d) hateful.
 
 **Solving it.**
 - Vindictive = revengeful, holding grudges.
@@ -2918,7 +4463,7 @@ Options: (a) merciful (b) angry (c) hostile (d) hateful.
 ---
 
 **Q30.** Antonym of **CONSPICUOUS**.
-Options: (a) obvious (b) prominent (c) inconspicuous (d) clear.
+Options: (a) obvious  (b) prominent  (c) inconspicuous  (d) clear.
 
 **Solving it.**
 - Conspicuous = clearly visible, prominent.
@@ -2938,7 +4483,7 @@ Options: (a) obvious (b) prominent (c) inconspicuous (d) clear.
 ---
 
 **Q31.** Meaning of **"to bell the cat"**.
-Options: (a) to play with a cat (b) to take a bold first step in a risky task (c) to announce news (d) to be cautious.
+Options: (a) to play with a cat  (b) to take a bold first step in a risky task  (c) to announce news  (d) to be cautious.
 
 **Solving it.**
 - Origin: Aesop's fable — mice agree someone should "bell the cat" (tie a bell on it) so they hear it coming. None volunteers because it's dangerous.
@@ -3069,7 +4614,7 @@ Options: (a) to play with a cat (b) to take a bold first step in a risky task (c
 ---
 
 **Q41.** Climate change __ one of the gravest challenges …
-Options: (a) is (b) are (c) was (d) have been.
+Options: (a) is  (b) are  (c) was  (d) have been.
 
 **Solving it.**
 - Subject: "Climate change" — singular noun.
@@ -3081,7 +4626,7 @@ Options: (a) is (b) are (c) was (d) have been.
 ---
 
 **Q42.** Despite __ warnings from scientists …
-Options: (a) repetitive (b) repeated (c) repeating (d) repeats.
+Options: (a) repetitive  (b) repeated  (c) repeating  (d) repeats.
 
 **Solving it.**
 - Need an adjective modifying "warnings".
@@ -3093,7 +4638,7 @@ Options: (a) repetitive (b) repeated (c) repeating (d) repeats.
 ---
 
 **Q43.** … world leaders have been __ to act decisively.
-Options: (a) reluctant (b) reluctantly (c) reluctance (d) reluctancy.
+Options: (a) reluctant  (b) reluctantly  (c) reluctance  (d) reluctancy.
 
 **Solving it.**
 - After "have been", we need a complement: adjective or noun.
@@ -3105,7 +4650,7 @@ Options: (a) reluctant (b) reluctantly (c) reluctance (d) reluctancy.
 ---
 
 **Q44.** The Paris Agreement, __ in 2015, set ambitious targets …
-Options: (a) signed (b) sign (c) signing (d) being signed.
+Options: (a) signed  (b) sign  (c) signing  (d) being signed.
 
 **Solving it.**
 - Need a past-participle phrase modifying "Paris Agreement". The agreement WAS signed in 2015.
@@ -3116,7 +4661,7 @@ Options: (a) signed (b) sign (c) signing (d) being signed.
 ---
 
 **Q45.** … actual emission reductions have __ behind.
-Options: (a) lagged (b) lag (c) lagging (d) been lag.
+Options: (a) lagged  (b) lag  (c) lagging  (d) been lag.
 
 **Solving it.**
 - After "have", we need a past participle.
@@ -3150,7 +4695,7 @@ Options: (a) lagged (b) lag (c) lagging (d) been lag.
 
 **Step 2 — Identify "however" sentence (P).** "However, impact has been uneven" — must follow a positive statement. Q (positive about internet) → P (contrast: but uneven).
 
-**Step 3 — Examples of "uneven" impact.** S (urban benefits) and R (rural underserved) explain the uneven impact. S then R (positive case first, then negative — natural).
+**Step 3 — Examples of "uneven" impact.** S (urban benefits) and R (rural underserved) both explain the unevenness. S comes before R because it states the advantaged case first; R then provides the contrasting disadvantaged case — a natural pro→con sequence that mirrors how the passage's argument unfolds.
 
 **Final order: Q → P → S → R.**
 
@@ -3192,7 +4737,7 @@ Options: (a) lagged (b) lag (c) lagging (d) been lag.
 ---
 
 **Q47.** Tone of the passage:
-Options: (a) celebratory (b) critical (c) balanced (d) dismissive.
+Options: (a) celebratory  (b) critical  (c) balanced  (d) dismissive.
 
 **Solving it.**
 - The author lists POSITIVE outcomes (middle-class rise, urbanisation, labour rights) AND NEGATIVE outcomes (climate change).
@@ -3212,7 +4757,7 @@ Options: (a) celebratory (b) critical (c) balanced (d) dismissive.
 ---
 
 **Q48.** Author implies the Industrial Revolution:
-Options: (a) was wholly positive (b) was wholly negative (c) had unintended long-term costs (d) was inevitable.
+Options: (a) was wholly positive  (b) was wholly negative  (c) had unintended long-term costs  (d) was inevitable.
 
 **Solving it.**
 - "Sowed seeds of climate change" implies UNINTENDED long-term consequences (not the original goal of industrialisation).
@@ -3224,7 +4769,7 @@ Options: (a) was wholly positive (b) was wholly negative (c) had unintended long
 ---
 
 **Q49.** "Sowed seeds" in the passage means:
-Options: (a) literally planted (b) initiated (c) cancelled (d) prevented.
+Options: (a) literally planted  (b) initiated  (c) cancelled  (d) prevented.
 
 **Solving it.**
 - "Sow seeds" is metaphorical here — to start / initiate something.
@@ -3510,7 +5055,7 @@ Options: (a) literally planted (b) initiated (c) cancelled (d) prevented.
 
 **Q62 (Advanced).** "She studied diligently for months. ___ , she failed the entrance exam due to anxiety on the day."
 
-(a) Therefore   (b) Moreover   (c) Nevertheless   (d) In addition
+(a) Therefore  (b) Moreover  (c) Nevertheless  (d) In addition
 
 **Solving it.**
 - Idea 1: studied diligently → expected outcome = passed.
@@ -3603,9 +5148,11 @@ Replace the bold phrase with the best option:
 
 ---
 
-# Section 13 — RESTRUCTURED CORE GRAMMAR (clean bullets, no clubbing)
+# Section 13 — QUICK REVISION CARD: Core Grammar {#section-13}
 
-> The following sub-sections take the originally compact grammar rules from earlier in this book and re-present them as clean single-line entries with examples — the format you said earlier was missing.
+> **Quick revision card — not a new section.** This is a condensed version of Parts 4–8 for exam-day review. Study the full chapters first; use this card for last-minute recall.
+
+> The sub-sections below re-present key rules as single-line entries with examples for rapid scanning. Full worked examples, traps, and drills are in the original Parts 4–8.
 
 ## 13.1 — VOICE (Active ↔ Passive) — Quick conversion table
 
@@ -3807,31 +5354,31 @@ Replace the bold phrase with the best option:
 
 # PART E — TIMED MINI-MOCK (25 Q · 25 min) {#part-e}
 
-1. Synonym of **CANDID**: (a) honest (b) hidden (c) careful (d) subtle
-2. Antonym of **OBSOLETE**: (a) modern (b) outdated (c) rare (d) ancient
-3. "He is one of the boys who __ honest." (a) is (b) are (c) was (d) has
-4. "Neither he nor I __ correct." (a) am (b) is (c) are (d) be
-5. "The committee __ decided." (a) has (b) have (c) is (d) am
-6. Idiom **"to add fuel to the fire"**: (a) cool down (b) make worse (c) extinguish (d) ignore
-7. OWS for "place where coins are minted": (a) treasury (b) mint (c) bank (d) reserve
-8. Cloze: "She __ the report yesterday." (a) submit (b) submitted (c) submits (d) submitting
-9. Sentence improvement: "I have went there." → corrected? (a) have gone (b) had went (c) has gone (d) had gone
-10. Preposition: "He is fond __ chocolates." (a) of (b) for (c) on (d) at
-11. Synonym **TENACIOUS**: (a) weak (b) persistent (c) angry (d) loud
-12. Antonym **TURBULENT**: (a) chaotic (b) calm (c) windy (d) angry
-13. Article: "She is __ honest girl." (a) a (b) an (c) the (d) no article
-14. Plural of **"deer"**: (a) deers (b) deer (c) deeren (d) dee
+1. Synonym of **CANDID**: (a) honest  (b) hidden  (c) careful  (d) subtle
+2. Antonym of **OBSOLETE**: (a) modern  (b) outdated  (c) rare  (d) ancient
+3. "He is one of the boys who __ honest." (a) is  (b) are  (c) was  (d) has
+4. "Neither he nor I __ correct." (a) am  (b) is  (c) are  (d) be
+5. "The committee __ decided." (a) has  (b) have  (c) is  (d) am
+6. Idiom **"to add fuel to the fire"**: (a) cool down  (b) make worse  (c) extinguish  (d) ignore
+7. OWS for "place where coins are minted": (a) treasury  (b) mint  (c) bank  (d) reserve
+8. Cloze: "She __ the report yesterday." (a) submit  (b) submitted  (c) submits  (d) submitting
+9. Sentence improvement: "I have went there." → corrected? (a) have gone  (b) had went  (c) has gone  (d) had gone
+10. Preposition: "He is fond __ chocolates." (a) of  (b) for  (c) on  (d) at
+11. Synonym **TENACIOUS**: (a) weak  (b) persistent  (c) angry  (d) loud
+12. Antonym **TURBULENT**: (a) chaotic  (b) calm  (c) windy  (d) angry
+13. Article: "She is __ honest girl." (a) a  (b) an  (c) the  (d) no article
+14. Plural of **"deer"**: (a) deers  (b) deer  (c) deeren  (d) dee
 15. Direct/Indirect: He said, "I am happy." → He said that __.
-16. Idiom **"once in a blue moon"**: (a) often (b) very rarely (c) night-time (d) sky-coloured
-17. Foreign phrase **"bona fide"**: (a) fake (b) genuine (c) hidden (d) sudden
-18. Spelling correct: (a) accomodate (b) accommodate (c) acomodate (d) accommadate
-19. "She prefers tea __ coffee." (a) than (b) over (c) to (d) instead
-20. Verb tense: "By next year, I __ here for 5 years." (a) will live (b) will have lived (c) lived (d) am living
-21. OWS "fear of crowds": (a) acrophobia (b) agoraphobia (c) hydrophobia (d) xenophobia
-22. Antonym **VERBOSE**: (a) wordy (b) brief (c) flowery (d) silent
-23. Synonym **PRUDENT**: (a) reckless (b) wasteful (c) cautious (d) hasty
-24. Idiom **"to spill the beans"**: (a) eat carelessly (b) reveal a secret (c) waste food (d) cause mess
-25. "He is junior __ me." (a) than (b) to (c) over (d) by
+16. Idiom **"once in a blue moon"**: (a) often  (b) very rarely  (c) night-time  (d) sky-coloured
+17. Foreign phrase **"bona fide"**: (a) fake  (b) genuine  (c) hidden  (d) sudden
+18. Spelling correct: (a) accomodate  (b) accommodate  (c) acomodate  (d) accommadate
+19. "She prefers tea __ coffee." (a) than  (b) over  (c) to  (d) instead
+20. Verb tense: "By next year, I __ here for 5 years." (a) will live  (b) will have lived  (c) lived  (d) am living
+21. OWS "fear of crowds": (a) acrophobia  (b) agoraphobia  (c) hydrophobia  (d) xenophobia
+22. Antonym **VERBOSE**: (a) wordy  (b) brief  (c) flowery  (d) silent
+23. Synonym **PRUDENT**: (a) reckless  (b) wasteful  (c) cautious  (d) hasty
+24. Idiom **"to spill the beans"**: (a) eat carelessly  (b) reveal a secret  (c) waste food  (d) cause mess
+25. "He is junior __ me." (a) than  (b) to  (c) over  (d) by
 
 **Answer key:** 1-a, 2-a, 3-b, 4-a, 5-a, 6-b, 7-b, 8-b, 9-a, 10-a, 11-b, 12-b, 13-b, 14-b, 15-(he was happy), 16-b, 17-b, 18-b, 19-c, 20-b, 21-b, 22-b, 23-c, 24-b, 25-b.
 
@@ -3863,3 +5410,190 @@ Replace the bold phrase with the best option:
 ---
 
 *Drill all 50 + mini-mock twice. Combine with vocab tables (Part 16) for >90% English mastery.*
+
+\newpage
+
+# APPENDIX G — FORMULA-BASED CONCEPTS MASTER REFERENCE {#appendix-g}
+
+> Every grammar rule below follows a **fixed formula**. Memorise the formula → write the right sentence → spot the wrong one. Use this appendix as the single reference card for formula-driven error spotting.
+
+## G.1 Correlative conjunctions — pair-formula table
+
+| Pair / formula | Use | Verb-agreement rule | Example (correct) | Common trap |
+|---|---|---|---|---|
+| **Either + A + or + B** | one of two options | verb agrees with **B (closer noun)** | "**Either** the boys **or** the girl **is** late." | using verb with A |
+| **Neither + A + nor + B** | none of two | verb agrees with **B (closer noun)** | "**Neither** he **nor** they **were** present." | swapping verb to A |
+| **Not only + A + but also + B** | both A and B (added emphasis) | **A and B same part of speech** (parallel); verb usually with **B (closer)** | "She is **not only** intelligent **but also** hard-working." (both adjectives) | breaking parallelism |
+| **Both + A + and + B** | both items together | verb is **plural** | "**Both** Ram **and** Shyam **are** here." | using "both …  as well as" |
+| **Whether + A + or + B** | choice / yes-no question | — | "I don't know **whether** he is in **or** out." | adding "if" with whether |
+| **Scarcely / Hardly + A (had + V3) + when + B (V2)** | A happened, then B immediately | A inverted with "had"; B in simple past | "**Hardly had** he reached **when** the bell rang." | using "than" |
+| **No sooner + A (had + V3) + than + B (V2)** | A immediately followed by B | A inverted with "had"; B in simple past | "**No sooner had** I sat down **than** the phone rang." | using "when" |
+| **Rather + A + than + B** | preference between two | — | "I would **rather** walk **than** drive." | "rather … then" |
+| **Such + a/an + adj + noun + that + clause** | extreme degree + consequence | — | "She is **such a kind** teacher **that** all love her." | "such … as" / "so … that" |
+| **So + adj/adv + that + clause** | extreme degree + consequence | — | "He ran **so fast that** he won." | "so … as" |
+| **Lest + S + should + V1** | for fear that (negative purpose) | mandatory "should" | "Run fast **lest** you **should** miss the bus." | using "may / will / can" |
+| **Unless + S + V1** (= if not) | negative condition | NEVER add "not" | "**Unless** you study, you will fail." | "unless you don't study" |
+| **Though / Although + clause, (yet) clause** | concession / contrast | can pair with **yet**; never with "but" | "**Though** rich, (yet) he is unhappy." | "Though … but" |
+| **As soon as + A, B** | A is immediately followed by B | — | "**As soon as** he arrived, we left." | confusing with "as long as" |
+
+## G.2 Degree + consequence — "Too / So / Such / Enough" formulas
+
+| Formula | Meaning | Example |
+|---|---|---|
+| **Too + adj + to + V1** | excessive degree — prevents the V1 | "He is **too tired to walk**." (cannot walk) |
+| **Too + adj + for + sb + to + V1** | excessive degree for someone | "The box is **too heavy for me to lift**." |
+| **Adj + enough + to + V1** | sufficient degree — enables the V1 | "He is **strong enough to lift** the box." |
+| **So + adj + that + clause** | extreme degree → consequence (a clause follows) | "He is **so weak that** he cannot stand." |
+| **Such + a/an + adj + noun + that + clause** | extreme degree with a noun → consequence | "It was **such a hot day that** we stayed indoors." |
+| **As + adj + as** | equal comparison | "He is **as tall as** his brother." |
+| **Not so + adj + as / not as + adj + as** | unequal (lesser) | "He is **not so tall as** his brother." |
+
+> **Conversion drill:** "He is too weak to walk" = "He is **so weak that** he cannot walk." (Both formulas express the same idea — the test often asks you to choose the equivalent sentence.)
+
+## G.3 "Wish" + tense formulas
+
+| Use | Formula | Example |
+|---|---|---|
+| **Wish for present** (unreal, opposite of true) | **S + wish + (that) + S + V2 / were** | "I **wish I were** taller." *(I am not tall)* |
+| **Wish for past** (regret) | **S + wish + (that) + S + had + V3** | "I **wish I had studied** harder." *(I didn't study)* |
+| **Wish for future** (annoyance / a change) | **S + wish + (that) + S + would + V1** | "I **wish you would stop** talking." |
+| **If only …** (stronger version of wish) | same forms as above with "If only" | "**If only I had known** earlier!" |
+
+## G.4 Inversion patterns (formal, frequent)
+
+When a negative / restrictive adverbial starts a sentence, the auxiliary inverts before the subject (like a question).
+
+| Opener | Formula | Example |
+|---|---|---|
+| **Never** | Never + aux + S + V | **Never have I seen** such a sight. |
+| **Rarely / Seldom** | Rarely + aux + S + V | **Rarely does he speak** at meetings. |
+| **Hardly / Scarcely … when** | Hardly + had + S + V3 + when + S + V2 | **Hardly had I arrived when** it began to rain. |
+| **No sooner … than** | No sooner + had + S + V3 + than + S + V2 | **No sooner had he left than** it started snowing. |
+| **Not only … but also** | Not only + aux + S + V, but also + … | **Not only did he sing, but** also danced. |
+| **Only after / by / when / then** | Only after + clause + aux + S + V | **Only after she left did I realise** my mistake. |
+| **Under no circumstances / In no way** | Under no circumstances + aux + S + V | **Under no circumstances should you open** the door. |
+| **Little + does/did + S + V** | Little + aux + S + V | **Little did he know** the truth. |
+| **So + adj + be + S + that …** | So + adj + be + S + that | **So beautiful was the painting that** I bought it. |
+
+## G.5 Gerund (V-ing) vs Infinitive (to + V1) — verb-list cards
+
+**Formula:** V + V-ing (gerund-only) · V + to + V1 (infinitive-only) · V + either (same meaning) · V + either (different meaning — memorise!)
+
+**Table 1 — Gerund-only verbs (V + V-ing, never to + V1)**
+
+| Verb | PYQ freq | Verb | PYQ freq |
+|---|---|---|---|
+| enjoy | ★★★ | avoid | ★★★ |
+| finish | ★★ | postpone / delay | ★★ |
+| suggest | ★★ | recommend | ★★ |
+| mind | ★★ | miss | ★★ |
+| deny | ★★ | admit | ★★ |
+| consider | ★★ | practise | ★★ |
+| dislike | ★ | imagine | ★ |
+| risk | ★ | keep | ★ |
+| stop (= give up) | ★★★ | regret (past action) | ★★★ |
+
+> ✓ "I enjoy **reading**." ✗ "I enjoy **to read**."
+
+**Table 2 — Infinitive-only verbs (V + to + V1, never V-ing)**
+
+| Verb | PYQ freq | Verb | PYQ freq |
+|---|---|---|---|
+| want | ★★★ | decide | ★★★ |
+| hope | ★★ | plan | ★★ |
+| agree | ★★ | refuse | ★★ |
+| promise | ★★ | expect | ★★ |
+| manage | ★★ | fail | ★★★ |
+| learn | ★★ | intend | ★ |
+| choose | ★ | offer | ★ |
+| pretend | ★ | threaten | ★ |
+| prepare | ★ | afford | ★★ |
+| seem / appear | ★★★ | wish | ★★★ |
+
+> ✓ "I want **to read**." ✗ "I want **reading**."
+
+**Table 3 — Both-form verbs (same meaning, interchangeable)**
+
+| Verb | V-ing form | to + V1 form |
+|---|---|---|
+| begin / start | "It started **raining**." | "It started **to rain**." |
+| continue | "He continued **working**." | "He continued **to work**." |
+| like / love | "She likes **singing**." | "She likes **to sing**." |
+| prefer / hate | "I prefer **reading**." | "I prefer **to read**." |
+| cease | "The noise ceased **disturbing** us." | "The noise ceased **to disturb** us." |
+
+**Table 4 — Both-form verbs (DIFFERENT meanings — PYQ gold ★★★)**
+
+| Verb | + Gerund (V-ing) | + Infinitive (to V1) | Memory tip |
+|---|---|---|---|
+| **stop** | give up habit: *"stopped **smoking**"* | pause for: *"stopped **to smoke**"* | V-ing = **end it**; to+V1 = **pause for it** |
+| **remember** | recall past: *"remember **meeting** her"* | not forget future: *"remember **to lock** the door"* | V-ing = **past**; to+V1 = **future** |
+| **forget** | fail to recall: *"forget **meeting** him"* | fail to do: *"forgot **to call**"* | V-ing = **memory gap**; to+V1 = **action gap** |
+| **regret** | sorry about past: *"regret **saying** that"* | sorry to inform: *"regret **to inform** you"* | V-ing = **past sorrow**; to+V1 = **formality** |
+| **try** | experiment: *"try **opening** the window"* | make effort: *"try **to open** the window"* | V-ing = **experiment**; to+V1 = **effort** |
+| **mean** | entail: *"success means **working** hard"* | intend: *"I meant **to call**"* | V-ing = **entails**; to+V1 = **intend** |
+| **need** | passive sense: *"the car needs **washing**"* | obligation: *"I need **to wash**"* | V-ing = **thing-focused**; to+V1 = **person-focused** |
+
+## G.6 Modal verbs — usage formula card
+
+| Modal | Formula | Use | Example |
+|---|---|---|---|
+| **can / could** | modal + V1 | ability, permission, possibility | "She **can swim**." |
+| **may / might** | modal + V1 | permission, weak possibility | "It **may rain** tonight." |
+| **shall / will** | modal + V1 | future, intention, offer (shall = 1st person formal) | "I **shall** go." |
+| **should / ought to** | modal + V1 | advice / moral obligation | "You **should rest**." |
+| **must / have to** | modal + V1 | strong obligation, deduction | "You **must** report by 10 AM." |
+| **need not / don't have to** | needn't + V1 | absence of obligation | "You **need not come**." |
+| **used to + V1** | habitual past (no longer true, stronger: implies it has stopped) | "She **used to live** in Delhi." |
+| **would + V1** | habitual past action (repeated, nostalgic — does NOT imply it has stopped) | "Every summer, we **would visit** our grandparents." |
+| **would rather + V1 (than V1)** | preference | "I'd **rather walk than drive**." |
+| **had better + V1** | strong advice / warning | "You'd **better hurry**." |
+| **dare not / dare to + V1** | rare; courage | "He **dare not** cross her." |
+
+## G.7 Subject-verb agreement formula card (all 15 golden rules)
+
+| # | Subject type | Formula | Example |
+|---|---|---|---|
+| 1 | **Each / Every / Either / Neither / Many a / More than one** | always **singular verb** | "**Each** of the boys **has** a bag." / "**More than one** student **was** absent." |
+| 2 | **One of the + plural noun + who/that** | verb after who/that is **plural** | "He is one of the boys **who play** well." (plays ✗) |
+| 3 | **A number of + plural noun** | **plural verb** ("a number of" = many) | "**A number of** students **are** absent." |
+| 4 | **The number of + plural noun** | **singular verb** ("the number of" = a count) | "**The number of** students **is** rising." |
+| 5 | **Either / Neither + A or/nor + B** | verb matches **B (closer noun)** | "**Neither** he **nor** they **were** present." |
+| 6 | **A + along with / as well as / besides / together with + B** | verb agrees with **A** (parenthetical ignored) | "The captain, **as well as** his teammates, **is** ready." |
+| 7 | **Distance / time / money / weight as a unit** | **singular verb** | "**Ten kilometres is** a long walk." / "**Five hundred rupees is** enough." |
+| 8 | **Mathematical / academic subjects ending in -s** (physics, maths, economics, civics, politics) | **singular verb** | "**Mathematics is** my favourite subject." |
+| 9 | **Trousers / scissors / spectacles / goods / wages / premises / cattle / police** | always **plural verb** | "His **trousers are** torn." |
+| 10 | **Bread and butter / horse and carriage / rice and curry** (single dish/unit treated as one) | **singular verb** | "**Bread and butter is** my breakfast." |
+| 11 | **The + adjective** (group of people) | **plural verb** | "**The poor are** suffering." |
+| 12 | **Collective noun (team, jury, family, committee, audience)** | singular when acting as one unit; plural when members act individually | "The jury **has** decided." / "The jury **are** divided." |
+| 13 | **There / Here + be …** | verb agrees with the **real subject after** "there/here" | "**There are** five books on the table." |
+| 14 | **Indefinite pronouns** (everyone, someone, nobody, anybody, everything, nothing, each) | always **singular** verb and **singular** pronoun | "**Everyone has** done **his** work." |
+| 15 | **"None"** | singular with uncountable noun; plural accepted with countable; SSC prefers singular when ambiguous | "**None of the water was** wasted." / "**None of the students were** present." (accepted) |
+| 16 | **Titles of books / films / organisations** (even if plural-looking) | treated as **singular** | "**The Arabian Nights is** a classic." |
+| 17 | **Percentage / proportion / majority / fraction of** | verb agrees with the noun **after "of"** | "A percentage of the **work has** been done." / "A percentage of the **students have** passed." |
+
+## G.8 "Subject + verb form" cheat — all aspects in one line
+
+Remember just these auxiliary fragments and you can build any tense / voice / speech form:
+
+| Tense slot | Aux fragment | Main verb |
+|---|---|---|
+| Simple Present | — (or do/does for neg/Q) | V1 / V1+s |
+| Simple Past | — (or did for neg/Q) | V2 |
+| Simple Future | will / shall | V1 |
+| Present Continuous | is / am / are | V1+ing |
+| Past Continuous | was / were | V1+ing |
+| Future Continuous | will be | V1+ing |
+| Present Perfect | has / have | V3 |
+| Past Perfect | had | V3 |
+| Future Perfect | will have | V3 |
+| Present Perfect Continuous | has been / have been | V1+ing |
+| Past Perfect Continuous | had been | V1+ing |
+| Future Perfect Continuous | will have been | V1+ing |
+| **Passive add-on** | + **be / being / been** | V3 |
+
+> **One-line takeaway:** every English verb form is one of the 12 aux-fragments above + a verb in V1/V2/V3/V-ing. Memorise the 12 fragments and the entire tense + voice + speech system unlocks.
+
+---
+
+*End of formula reference. Treat APPENDIX G as your single-page cheat for error spotting during the final 7-day revision before any exam.*

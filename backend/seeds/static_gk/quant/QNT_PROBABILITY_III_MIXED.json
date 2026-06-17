@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-26-qnt-pr3-07",
       "generated_at": "2026-04-26T16:25:00+00:00",
       "id": "sgk_QNT_PROBABILITY_III_MIXED_00007"
+    },
+    {
+      "stem": "A box contains 6 white and 4 black marbles. Two marbles are drawn one by one WITH replacement. What is the probability that both drawn marbles are white?",
+      "options": [
+        {
+          "option_text": "9/25, since each independent draw gives P(white) = 3/5",
+          "is_correct": true
+        },
+        {
+          "option_text": "3/5, the probability of drawing one white marble only",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3, the probability computed without replacement instead",
+          "is_correct": false
+        },
+        {
+          "option_text": "6/25, treating the second draw as having different odds",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "With replacement, each draw is independent. P(white) = 6/10 = 3/5 each time. P(both white) = (3/5) × (3/5) = 9/25. Option C (1/3) is the without-replacement answer: C(6,2)/C(10,2) = 15/45 = 1/3 — a frequent error when candidates ignore the 'with replacement' condition.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:21+00:00",
+      "id": "sgk_QNT_PROBABILITY_III_MIXED_00008"
+    },
+    {
+      "stem": "The letters of the word 'MOBILE' are arranged at random. What is the probability that all three vowels (O, I, E) always appear together?",
+      "options": [
+        {
+          "option_text": "1/5, by treating all three vowels as a single unit block",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/6, since 3 vowels out of 6 letters gives a direct ratio",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/20, placing vowels in 3 specific fixed positions only",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/10, by partial permutation over only the three vowel slots",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "Treat OIE as one block → 4 units (block + M, B, L). Arrangements = 4! × 3! = 24 × 6 = 144. Total = 6! = 720. P = 144/720 = 1/5. Option B (1/6) is wrong — it naively uses the vowel count as a denominator without accounting for internal rearrangements and block-grouping logic.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:21+00:00",
+      "id": "sgk_QNT_PROBABILITY_III_MIXED_00009"
+    },
+    {
+      "stem": "Three students A, B, and C independently attempt to solve a puzzle. Their probabilities of success are 1/3, 2/5, and 1/2 respectively. What is the probability that at least one of them solves the puzzle?",
+      "options": [
+        {
+          "option_text": "4/5, using the complement: 1 minus P(none of them succeeds)",
+          "is_correct": true
+        },
+        {
+          "option_text": "37/30, the direct sum of all three probabilities combined",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/5, treating only A's failure as the complementary event",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/15, multiplying all three success probabilities together",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "P(none succeeds) = (1 − 1/3)(1 − 2/5)(1 − 1/2) = (2/3)(3/5)(1/2) = 6/30 = 1/5. So P(at least one) = 1 − 1/5 = 4/5. Option D (2/15) is the joint probability that ALL three succeed — the most common mix-up between 'at least one' and 'all' in multi-event problems.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:21+00:00",
+      "id": "sgk_QNT_PROBABILITY_III_MIXED_00010"
+    },
+    {
+      "stem": "In a class of 30 students, 12 play cricket, 10 play football, and 5 play both. A student is chosen at random. What is the probability that the student plays cricket but NOT football?",
+      "options": [
+        {
+          "option_text": "7/30, subtracting dual-sport students from the cricket count",
+          "is_correct": true
+        },
+        {
+          "option_text": "2/5, using the full cricket count of 12 without adjustment",
+          "is_correct": false
+        },
+        {
+          "option_text": "17/30, adding cricket and football totals and dividing by 30",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/6, treating only the 5 dual-sport students as the answer",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Cricket only = 12 − 5 = 7 (removing those who also play football). P = 7/30. Option B (2/5 = 12/30) ignores the overlap, counting dual-sport students in the cricket group — the classic set-theory error of not applying the 'but not' condition.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:21+00:00",
+      "id": "sgk_QNT_PROBABILITY_III_MIXED_00011"
+    },
+    {
+      "stem": "Two fair dice are rolled. Given that the sum of the two dice is even, what is the probability that both dice show the same number?",
+      "options": [
+        {
+          "option_text": "1/3, since all six doubles produce an even sum guaranteed",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/6, the unconditioned probability of any double over 36 outcomes",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2, since even-sum outcomes are exactly half of all 36 results",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/9, counting doubles only among the 9 both-even outcomes",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "Even sum occurs when both dice are even (9 outcomes) or both odd (9 outcomes) → 18 total. All six doubles (1,1)...(6,6) yield even sums → 6 favorable. P = 6/18 = 1/3. Option B (1/6) is P(double) without the given condition — it ignores the conditional restriction to even-sum outcomes entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:21+00:00",
+      "id": "sgk_QNT_PROBABILITY_III_MIXED_00012"
+    },
+    {
+      "stem": "Machines A, B, and C produce 40%, 35%, and 25% of a factory's output with defect rates of 2%, 3%, and 4% respectively. A randomly picked item is defective. What is the probability it came from machine B?",
+      "options": [
+        {
+          "option_text": "7/19, applying Bayes' theorem to the weighted defect contributions",
+          "is_correct": true
+        },
+        {
+          "option_text": "7/20, using B's 35% production share as a direct probability",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3, dividing B's defect rate by the simple sum of all three rates",
+          "is_correct": false
+        },
+        {
+          "option_text": "21/100, multiplying B's share and defect rate without normalising",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "P(defective) = 0.40×0.02 + 0.35×0.03 + 0.25×0.04 = 0.008 + 0.0105 + 0.010 = 0.0285. By Bayes: P(B | defective) = (0.35×0.03)/0.0285 = 0.0105/0.0285 = 105/285 = 7/19 ≈ 0.368. Option D (21/100 = 0.21) is the un-normalised numerator alone — the hallmark error of skipping the total-probability denominator in Bayes problems.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:21+00:00",
+      "id": "sgk_QNT_PROBABILITY_III_MIXED_00013"
+    },
+    {
+      "stem": "A player rolls a fair die once. If the outcome is even, the player wins ₹ equal to the face value. If the outcome is odd, the player loses ₹ equal to (face value − 1). What is the player's expected gain per game?",
+      "options": [
+        {
+          "option_text": "₹1 per game, as the net across all six equiprobable outcomes is ₹6",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹0 per game, since the game appears symmetric and balanced overall",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2 per game, summing only even-outcome gains and dividing by 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹0.50 per game, averaging the win range and loss range without 1/6 weight",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Even outcomes: win ₹2, ₹4, ₹6. Odd outcomes: lose ₹(1−1)=0, ₹(3−1)=2, ₹(5−1)=4. E = (1/6)(+2+4+6−0−2−4) = (1/6)(6) = ₹1. Option B (₹0) is the intuitive but wrong 'symmetric game' assumption — the asymmetry arises because odd face-value 1 costs nothing while even face-value 2 pays ₹2, breaking symmetry in the player's favour.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:57:21+00:00",
+      "id": "sgk_QNT_PROBABILITY_III_MIXED_00014"
     }
   ]
 }

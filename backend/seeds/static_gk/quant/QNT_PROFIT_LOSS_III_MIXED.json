@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-26-qnt-pl3-07",
       "generated_at": "2026-04-26T11:30:00+00:00",
       "id": "sgk_QNT_PROFIT_LOSS_III_MIXED_00007"
+    },
+    {
+      "stem": "A merchant earns a profit that is exactly 20% of the selling price of an article. What is his profit expressed as a percentage of the cost price?",
+      "options": [
+        {
+          "option_text": "25% — for every ₹80 of cost, ₹20 profit is earned",
+          "is_correct": true
+        },
+        {
+          "option_text": "20% — same percentage holds for both CP and SP bases",
+          "is_correct": false
+        },
+        {
+          "option_text": "22.5% — midpoint between SP-based and CP-based rates",
+          "is_correct": false
+        },
+        {
+          "option_text": "16.67% — obtained by inverting the SP-based rate",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "Profit = 20% of SP means CP = 80% of SP. So Profit/CP = (0.2 × SP)/(0.8 × SP) = 25%. Option B (20%) is wrong — it merely restates the SP-based rate without converting the denominator from SP to CP.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:34+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_III_MIXED_00008"
+    },
+    {
+      "stem": "A fruit vendor buys apples at 5 for ₹20 and sells them at 4 for ₹20. What is his profit percentage on the cost price?",
+      "options": [
+        {
+          "option_text": "25% — SP per apple is ₹5 against CP of ₹4 each",
+          "is_correct": true
+        },
+        {
+          "option_text": "20% — profit measured against selling price of ₹5",
+          "is_correct": false
+        },
+        {
+          "option_text": "15% — taking arithmetic difference of the batch rates",
+          "is_correct": false
+        },
+        {
+          "option_text": "33.33% — using unsold apple as fraction of sold lot",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "CP per apple = ₹20 ÷ 5 = ₹4; SP per apple = ₹20 ÷ 4 = ₹5. Profit% = (5 − 4)/4 × 100 = 25%. Option B (20%) is wrong — it computes profit on SP (1/5 = 20%) instead of on CP, a classic base-confusion error.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:34+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_III_MIXED_00009"
+    },
+    {
+      "stem": "A grain merchant blends Type-A rice (bought at ₹40/kg) and Type-B rice (bought at ₹60/kg) in the ratio 3 : 2 by weight, then sells the blend at ₹57/kg. What is his profit percentage?",
+      "options": [
+        {
+          "option_text": "14% — using simple unweighted average of both rates",
+          "is_correct": false
+        },
+        {
+          "option_text": "18.75% — weighted CP of ₹48 versus selling rate ₹57",
+          "is_correct": true
+        },
+        {
+          "option_text": "9.6% — ratio reversed to 2 : 3 by computational error",
+          "is_correct": false
+        },
+        {
+          "option_text": "15.79% — profit calculated as share of selling price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Weighted CP = (3 × 40 + 2 × 60)/5 = (120 + 120)/5 = ₹48/kg. Profit% = (57 − 48)/48 × 100 = 18.75%. Option A (14%) is wrong — it uses the unweighted average CP of ₹50 instead of the 3 : 2 weighted cost of ₹48.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:34+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_III_MIXED_00010"
+    },
+    {
+      "stem": "A trader marks an article 30% above cost price and then offers a discount on the marked price so that he still earns exactly a 4% profit on cost. What discount percentage did he offer?",
+      "options": [
+        {
+          "option_text": "30% — applying the full markup rate as the discount",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% — ₹26 off marked price of ₹130 gives 20% off",
+          "is_correct": true
+        },
+        {
+          "option_text": "26% — discount of ₹26 divided by cost price of ₹100",
+          "is_correct": false
+        },
+        {
+          "option_text": "4% — equating the discount to the stated profit margin",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Let CP = 100, so MP = 130 and required SP = 104. Discount% = (130 − 104)/130 × 100 = 26/130 × 100 = 20%. Option C (26%) is the most common error — candidates divide the rupee discount (₹26) by CP (₹100) instead of MP (₹130).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:34+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_III_MIXED_00011"
+    },
+    {
+      "stem": "A garment store offers successive discounts of 20% and 10% on a saree marked at ₹1,500. A rival store offers a flat 25% discount on the same saree. Which deal is better for the buyer, and by how much?",
+      "options": [
+        {
+          "option_text": "Rival store's deal, saving ₹25 on the listed price",
+          "is_correct": false
+        },
+        {
+          "option_text": "First store's deal, cheaper by ₹45 for the buyer",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both deals give the same final price of ₹1,125",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rival store's deal, as 25% exceeds any two-step rate",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "First store: 1500 × 0.80 × 0.90 = ₹1,080. Rival store: 1500 × 0.75 = ₹1,125. First store is cheaper by ₹45. Option D is wrong — successive 20% + 10% gives an effective 28% discount (not 20%), which beats the rival's flat 25%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:34+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_III_MIXED_00012"
+    },
+    {
+      "stem": "A manufacturer sells goods to a wholesaler at 20% profit; the wholesaler sells to a retailer at 25% profit; the retailer sells to a customer at 20% profit for ₹1,800. What is the manufacturer's cost price?",
+      "options": [
+        {
+          "option_text": "₹1,000 — correct three-stage reverse price calculation",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1,200 — only two of the three profit stages reversed",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,091 — additive 65% markup applied as single divisor",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,440 — subtracting 20% from final price erroneously",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Retailer CP = 1800 ÷ 1.20 = ₹1,500; Wholesaler CP = 1500 ÷ 1.25 = ₹1,200; Manufacturer CP = 1200 ÷ 1.20 = ₹1,000. Option B (₹1,200) is wrong — it skips the manufacturer's own 20% profit stage, stopping one step too early in the reverse chain.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:34+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_III_MIXED_00013"
+    },
+    {
+      "stem": "A stationery wholesaler buys 500 pens at ₹40 each and marks each pen at ₹60. He sells 300 pens at a 10% discount on the marked price and the remaining 200 pens at a 20% discount. What is his net profit percentage on total cost?",
+      "options": [
+        {
+          "option_text": "29% profit — discounts applied correctly on marked price",
+          "is_correct": true
+        },
+        {
+          "option_text": "14% loss — discounts mistakenly applied on cost price",
+          "is_correct": false
+        },
+        {
+          "option_text": "22.5% profit — profit divided by revenue, not by cost",
+          "is_correct": false
+        },
+        {
+          "option_text": "50% profit — using only the MP-to-CP markup ratio",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Total CP = 500 × 40 = ₹20,000. Revenue: 300 × 60 × 0.90 = ₹16,200 plus 200 × 60 × 0.80 = ₹9,600 = ₹25,800 total. Profit% = (25,800 − 20,000)/20,000 × 100 = 29%. Option B (14% loss) is wrong — it applies the discounts to CP (₹40) instead of the marked price (₹60), which inverts the profit into a loss.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:04:34+00:00",
+      "id": "sgk_QNT_PROFIT_LOSS_III_MIXED_00014"
     }
   ]
 }

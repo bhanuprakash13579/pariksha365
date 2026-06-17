@@ -268,6 +268,216 @@
       "generator_tag": "claude-opus-2026-04-21-eng-vc-08",
       "generated_at": "2026-04-21T13:15:00+00:00",
       "id": "sgk_ENG_VOICE_00008"
+    },
+    {
+      "stem": "An artist painted this beautiful mural on the station wall. Which of the following is the correct passive voice form?",
+      "options": [
+        {
+          "option_text": "This beautiful mural is painted on the station wall by an artist",
+          "is_correct": false
+        },
+        {
+          "option_text": "This beautiful mural was painted on the station wall by an artist",
+          "is_correct": true
+        },
+        {
+          "option_text": "This beautiful mural has been painted on the station wall by an artist",
+          "is_correct": false
+        },
+        {
+          "option_text": "This beautiful mural will be painted on the station wall by an artist",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct because the original verb 'painted' is simple past tense, so the passive must use 'was/were + past participle' → 'was painted'. Option A wrongly uses simple present 'is painted'. Option C uses present perfect 'has been painted', and D uses future tense — both are tense mismatches with the original 'painted'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T10:08:32+00:00",
+      "id": "sgk_ENG_VOICE_00009"
+    },
+    {
+      "stem": "Prizes were distributed to the winners by the Chief Guest. Which of the following correctly converts this sentence into active voice?",
+      "options": [
+        {
+          "option_text": "The winners distributed prizes to the Chief Guest",
+          "is_correct": false
+        },
+        {
+          "option_text": "The Chief Guest distributed prizes to the winners",
+          "is_correct": true
+        },
+        {
+          "option_text": "The Chief Guest will distribute prizes to the winners",
+          "is_correct": false
+        },
+        {
+          "option_text": "Prizes are distributed to the winners by the Chief Guest",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: 'by the Chief Guest' identifies the doer → subject; 'winners' become the indirect object. The past tense 'were distributed' maps to simple past 'distributed'. Option A commits a classic inversion error — making the recipients ('winners') the active subject doing the distributing. Option C wrongly shifts tense to future. Option D retains passive structure (present tense).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T10:08:32+00:00",
+      "id": "sgk_ENG_VOICE_00010"
+    },
+    {
+      "stem": "You cannot use mobile phones inside the examination hall. Which of the following is the grammatically correct passive voice form?",
+      "options": [
+        {
+          "option_text": "Mobile phones can be used inside the examination hall",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mobile phones could not be used inside the examination hall",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mobile phones cannot be used inside the examination hall",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mobile phones are not to use inside the examination hall",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct: modal passive of 'cannot use' is 'cannot be used' — the modal and negation both transfer intact. Option A is the most tempting distractor because it correctly forms the passive but drops the negation 'not', reversing the sentence's meaning. Option B wrongly changes 'cannot' (present) to 'could not' (past/conditional). Option D uses 'are not to use' which requires 'to be used' to form a valid passive infinitive construction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T10:08:32+00:00",
+      "id": "sgk_ENG_VOICE_00011"
+    },
+    {
+      "stem": "Do not park vehicles near the emergency exit. Identify the correct passive voice form of this imperative sentence.",
+      "options": [
+        {
+          "option_text": "Vehicles should not park near the emergency exit",
+          "is_correct": false
+        },
+        {
+          "option_text": "Let vehicles not be parked near the emergency exit",
+          "is_correct": true
+        },
+        {
+          "option_text": "Vehicles were not parked near the emergency exit",
+          "is_correct": false
+        },
+        {
+          "option_text": "The emergency exit must not have vehicles parked",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: the standard passive of a negative imperative ('Do not + V + object') follows the pattern 'Let + object + not + be + past participle'. So 'Do not park vehicles' → 'Let vehicles not be parked'. Option A uses a modal active construction ('should not park') — still active voice and merely advisory. Option C wrongly converts it to simple past declarative. Option D is an awkward restructuring that is grammatically non-standard.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T10:08:32+00:00",
+      "id": "sgk_ENG_VOICE_00012"
+    },
+    {
+      "stem": "The engineers had inspected the dam before the monsoon season began. Choose the correct passive voice form.",
+      "options": [
+        {
+          "option_text": "The dam has been inspected by the engineers before the monsoon season",
+          "is_correct": false
+        },
+        {
+          "option_text": "The dam was being inspected by the engineers before the monsoon season",
+          "is_correct": false
+        },
+        {
+          "option_text": "The dam had been inspected by the engineers before the monsoon season began",
+          "is_correct": true
+        },
+        {
+          "option_text": "The dam will have been inspected by the engineers before the monsoon",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct: 'had inspected' is past perfect active; its passive is 'had been inspected' — the auxiliary 'had' is retained, and 'been' is inserted before the past participle. The subordinate time clause 'before the monsoon season began' is carried over unchanged. Option A uses present perfect 'has been inspected', losing the past perfect. Option B uses past continuous passive 'was being inspected', a different tense entirely. Option D uses future perfect, which is contradicted by the context.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T10:08:32+00:00",
+      "id": "sgk_ENG_VOICE_00013"
+    },
+    {
+      "stem": "A reporter was interviewing the minister when the fire broke out. Which of the following correctly rewrites the main clause in passive voice?",
+      "options": [
+        {
+          "option_text": "The minister was interviewed by a reporter when the fire broke out",
+          "is_correct": false
+        },
+        {
+          "option_text": "The minister was being interviewed by a reporter when the fire broke out",
+          "is_correct": true
+        },
+        {
+          "option_text": "The minister had been interviewed by a reporter when the fire broke out",
+          "is_correct": false
+        },
+        {
+          "option_text": "The minister is being interviewed by a reporter when the fire broke out",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct: 'was interviewing' is past continuous active; its passive form is 'was being + past participle' → 'was being interviewed'. The ongoing action at the moment of interruption ('when the fire broke out') demands past continuous, not simple past. Option A ('was interviewed') is simple past passive — it loses the continuous/ongoing aspect and implies the interview was completed, which contradicts the simultaneity with the fire. Option C uses past perfect passive, implying the interview preceded the fire. Option D uses present continuous, creating a tense clash with 'broke out'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T10:08:32+00:00",
+      "id": "sgk_ENG_VOICE_00014"
+    },
+    {
+      "stem": "The administration could have prevented the flood damage with timely action. Which passive transformation is grammatically correct?",
+      "options": [
+        {
+          "option_text": "The flood damage could have been prevented by the administration with timely action",
+          "is_correct": true
+        },
+        {
+          "option_text": "The flood damage could be prevented by the administration with timely action",
+          "is_correct": false
+        },
+        {
+          "option_text": "The flood damage could have been preventing by the administration with timely action",
+          "is_correct": false
+        },
+        {
+          "option_text": "The flood damage could have prevented by the administration with timely action",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct: the active modal perfect 'could have prevented' converts to passive as 'could have been prevented' — modal + have + been + past participle. Option B ('could be prevented') drops 'have', turning a past hypothetical into a general present possibility — a meaning change. Option C uses the present participle 'preventing' instead of the past participle 'prevented', which is a structural error (passive requires past participle). Option D omits 'been', producing 'could have prevented' — which is still active voice in form and syntactically incomplete as a passive.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T10:08:32+00:00",
+      "id": "sgk_ENG_VOICE_00015"
     }
   ]
 }

@@ -1,827 +1,833 @@
-[
-  {
-    "stem": "A man walks 5 m north, then 3 m east. His final distance from the starting point is:",
-    "options": [
-      {
-        "option_text": "√34 m",
-        "is_correct": true
-      },
-      {
-        "option_text": "8 m",
-        "is_correct": false
-      },
-      {
-        "option_text": "2 m",
-        "is_correct": false
-      },
-      {
-        "option_text": "4 m",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "Net N-S = 5, net E-W = 3. Pythagoras: √(25 + 9) = √34 ≈ 5.83 m. Single-step Pythagoras item.",
-    "subject": "Reasoning",
-    "topic": "Direction Sense — Clerk → CGL → PO Mains tier spread",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-21-reas-dt-01",
-    "generated_at": "2026-04-21T17:25:00+00:00",
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00001"
-  },
-  {
-    "stem": "A boy facing east turns 90° clockwise. He now faces:",
-    "options": [
-      {
-        "option_text": "North",
-        "is_correct": false
-      },
-      {
-        "option_text": "South",
-        "is_correct": true
-      },
-      {
-        "option_text": "West",
-        "is_correct": false
-      },
-      {
-        "option_text": "Still East",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "From E, 90° CW → S. Single-turn item — foundational.",
-    "subject": "Reasoning",
-    "topic": "Direction Sense — Clerk → CGL → PO Mains tier spread",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-21-reas-dt-02",
-    "generated_at": "2026-04-21T17:25:00+00:00",
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00002"
-  },
-  {
-    "stem": "Starting from her house, Priya walks 6 km east, then 8 km north, then 3 km west, then 4 km south. Her straight-line distance from home is:",
-    "options": [
-      {
-        "option_text": "3 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "5 km",
-        "is_correct": true
-      },
-      {
-        "option_text": "7 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "9 km",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "Net E-W = 6 − 3 = 3 east. Net N-S = 8 − 4 = 4 north. Pythagoras: √(9 + 16) = √25 = 5 km. Uses the (3, 4, 5) triple.",
-    "subject": "Reasoning",
-    "topic": "Direction Sense — Clerk → CGL → PO Mains tier spread",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-21-reas-dt-03",
-    "generated_at": "2026-04-21T17:25:00+00:00",
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00003"
-  },
-  {
-    "stem": "A girl travels from A: 3 km north, 4 km east, 9 km south, 8 km west, then 6 km north. Her straight-line distance from A is:",
-    "options": [
-      {
-        "option_text": "0 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "4 km",
-        "is_correct": true
-      },
-      {
-        "option_text": "5 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "8 km",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "B",
-    "explanation": "Net N-S = 3 − 9 + 6 = 0. Net E-W = 4 − 8 = −4 (i.e., 4 km west of A). Straight-line distance from A = 4 km.",
-    "subject": "Reasoning",
-    "topic": "Direction Sense — Clerk → CGL → PO Mains tier spread",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-21-reas-dt-04",
-    "generated_at": "2026-04-21T17:25:00+00:00",
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00004"
-  },
-  {
-    "stem": "Ravi starts facing north. He turns right and walks 5 km; then right again, walks 8 km; then left and walks 3 km; then left and walks 5 km. His final position relative to the start is:",
-    "options": [
-      {
-        "option_text": "√73 km (≈ 8.54 km), to the south-east; he faces north",
-        "is_correct": true
-      },
-      {
-        "option_text": "10 km due east; he faces north",
-        "is_correct": false
-      },
-      {
-        "option_text": "√89 km due north",
-        "is_correct": false
-      },
-      {
-        "option_text": "8 km due west; he faces east",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "Track position step by step from (0,0) facing N. Turn R → face E, walk 5 → (5,0). Turn R → face S, walk 8 → (5,−8). Turn L → face E, walk 3 → (8,−8). Turn L → face N, walk 5 → (8,−3). End at (8, −3) facing N. Distance = √(64+9) = √73 ≈ 8.54 km to the south-east of start.",
-    "subject": "Reasoning",
-    "topic": "Direction Sense — Clerk → CGL → PO Mains tier spread",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "HARD",
-    "effort_tier": "B",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-21-reas-dt-05",
-    "generated_at": "2026-04-21T17:25:00+00:00",
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00005"
-  },
-  {
-    "stem": "Ravi starts from point X facing south. He walks 4 m, turns left, walks 3 m, turns left, walks 4 m. In which direction is he from X?",
-    "options": [
-      {
-        "option_text": "East",
-        "is_correct": true
-      },
-      {
-        "option_text": "West",
-        "is_correct": false
-      },
-      {
-        "option_text": "North",
-        "is_correct": false
-      },
-      {
-        "option_text": "South",
-        "is_correct": false
-      }
-    ],
-    "correct_letter": "A",
-    "explanation": "Start (0,0) facing S. Walk 4 S → (0,−4). Turn L (from S = E). Walk 3 E → (3,−4). Turn L (from E = N). Walk 4 N → (3,0). He's at (3, 0) — 3 m EAST of X.",
-    "subject": "Reasoning",
-    "topic": "Direction Sense — Clerk → CGL → PO Mains tier spread",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "MEDIUM",
-    "effort_tier": "A",
-    "staleness_risk": 0,
-    "answer_source": "generated",
-    "generator_tag": "claude-opus-2026-04-21-reas-dt-06",
-    "generated_at": "2026-04-21T17:25:00+00:00",
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00006"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00007",
-    "stem": "Ramesh starts from point A, walks 10 km North, then turns right and walks 5 km. He again turns right and walks 10 km. How far is he from point A and in which direction?",
-    "options": [
-      {
-        "option_text": "5 km, West",
-        "is_correct": false
-      },
-      {
-        "option_text": "10 km, East",
-        "is_correct": false
-      },
-      {
-        "option_text": "15 km, North",
-        "is_correct": false
-      },
-      {
-        "option_text": "5 km, East",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "Start A→10N→turn right (East) 5km→turn right (South) 10km. Final position: 5 km East of A. Direction from A = East.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289090Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00008",
-    "stem": "Priya walks 6 km North, then 8 km East. How far is she from her starting point (straight-line distance)?",
-    "options": [
-      {
-        "option_text": "14 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "12 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "√100 = 10 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "10 km",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "By Pythagoras: √(6² + 8²) = √(36+64) = √100 = 10 km.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289117Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00009",
-    "stem": "A man faces East. He turns 90° clockwise, then 180° anti-clockwise. Which direction does he face now?",
-    "options": [
-      {
-        "option_text": "West",
-        "is_correct": false
-      },
-      {
-        "option_text": "South",
-        "is_correct": false
-      },
-      {
-        "option_text": "East",
-        "is_correct": false
-      },
-      {
-        "option_text": "North",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "East → 90° clockwise → South → 180° anti-clockwise → North.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289125Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00010",
-    "stem": "Ravi drives 4 km North, turns left and drives 3 km, then turns left again and drives 4 km. What is the minimum distance from his starting point?",
-    "options": [
-      {
-        "option_text": "4 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "7 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "5 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "3 km",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "N 4km → turn left (West) 3km → turn left (South) 4km. Net N-S = 0, net E-W = -3km (West). Distance = 3 km.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289131Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00011",
-    "stem": "Sunita stands facing North-West. She turns 90° clockwise. In which direction is she now facing?",
-    "options": [
-      {
-        "option_text": "South-West",
-        "is_correct": false
-      },
-      {
-        "option_text": "South-East",
-        "is_correct": false
-      },
-      {
-        "option_text": "North",
-        "is_correct": false
-      },
-      {
-        "option_text": "North-East",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "NW + 90° clockwise = NE. (NW→N→NE is 90° clockwise)",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289139Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00012",
-    "stem": "At 6:00 AM a man stands facing the rising sun. His shadow falls behind him. In which direction does his shadow point?",
-    "options": [
-      {
-        "option_text": "East",
-        "is_correct": false
-      },
-      {
-        "option_text": "North",
-        "is_correct": false
-      },
-      {
-        "option_text": "South",
-        "is_correct": false
-      },
-      {
-        "option_text": "West",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "Rising sun is in the East. Man faces East. Shadow is cast opposite to light source → shadow falls West (behind him).",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289144Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00013",
-    "stem": "Point B is 12 km to the East of point A. Point C is 5 km to the South of B. What is the straight-line distance from A to C?",
-    "options": [
-      {
-        "option_text": "17 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "15 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "√119 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "13 km",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "A to C: East 12km + South 5km. Pythagoras: √(12² + 5²) = √(144+25) = √169 = 13 km.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289151Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00014",
-    "stem": "Mohan walks 5 km South, turns left (faces East) and walks 3 km, then turns left again (faces North) and walks 5 km. Where is he with respect to his starting point?",
-    "options": [
-      {
-        "option_text": "3 km East",
-        "is_correct": false
-      },
-      {
-        "option_text": "At starting point",
-        "is_correct": false
-      },
-      {
-        "option_text": "5 km North",
-        "is_correct": false
-      },
-      {
-        "option_text": "3 km West",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "S 5km → E 3km → N 5km. Net N-S = 0, net E-W = +3km East. He is 3 km East of start.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289156Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00015",
-    "stem": "A person starts from O, goes 7 km East to reach P, turns North and walks 24 km to reach Q. What is the shortest distance OQ?",
-    "options": [
-      {
-        "option_text": "25 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "17 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "√625 = 25 km",
-        "is_correct": false
-      },
-      {
-        "option_text": "31 km",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "7² + 24² = 49 + 576 = 625. √625 = 25 km.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289161Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00016",
-    "stem": "A clock shows 6 o'clock. If you are facing the 12 o'clock direction, in what direction are you facing?",
-    "options": [
-      {
-        "option_text": "East",
-        "is_correct": false
-      },
-      {
-        "option_text": "South",
-        "is_correct": false
-      },
-      {
-        "option_text": "West",
-        "is_correct": false
-      },
-      {
-        "option_text": "North",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "The 12 on a clock face is at the top. If facing toward 12, you're facing North (in standard compass orientation).",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289173Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00017",
-    "stem": "Anita walks 10 km East, then 10 km North, then 10 km West, then 10 km South. She is now:",
-    "options": [
-      {
-        "option_text": "20 km from start",
-        "is_correct": false
-      },
-      {
-        "option_text": "10 km East of start",
-        "is_correct": false
-      },
-      {
-        "option_text": "10 km South of start",
-        "is_correct": false
-      },
-      {
-        "option_text": "At the starting point",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "10E + 10N + 10W + 10S = net displacement = 0. Back to start.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289178Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00018",
-    "stem": "Vijay starts facing South. He turns 45° to his right. Then turns 135° to his left. Which direction is he now facing?",
-    "options": [
-      {
-        "option_text": "South-East",
-        "is_correct": false
-      },
-      {
-        "option_text": "West",
-        "is_correct": false
-      },
-      {
-        "option_text": "North-West",
-        "is_correct": false
-      },
-      {
-        "option_text": "North-East",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "HARD",
-    "effort_tier": "C",
-    "staleness_risk": "LOW",
-    "explanation": "South + 45° right = South-West. South-West + 135° left = South-West + 135° counter-clockwise = SW→S→SE→E→NE (each 45°, 3 steps = 135°). So NE.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289182Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00019",
-    "stem": "From a point P, Kaveri walks 20 m North to Q, then 15 m East to R, then 20 m South to S. What is the distance PS?",
-    "options": [
-      {
-        "option_text": "20 m",
-        "is_correct": false
-      },
-      {
-        "option_text": "25 m",
-        "is_correct": false
-      },
-      {
-        "option_text": "35 m",
-        "is_correct": false
-      },
-      {
-        "option_text": "15 m",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "P to Q: 20N. Q to R: 15E. R to S: 20S. Net: 0 North-South displacement, 15 m East. PS = 15 m.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289187Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00020",
-    "stem": "At 12 noon the shadow of a vertical pole falls exactly to the North. In which direction is the sun?",
-    "options": [
-      {
-        "option_text": "North",
-        "is_correct": false
-      },
-      {
-        "option_text": "East",
-        "is_correct": false
-      },
-      {
-        "option_text": "West",
-        "is_correct": false
-      },
-      {
-        "option_text": "South",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "Shadow is opposite to light source. Shadow falls North → sun is in the South (overhead in Southern sky at noon in Northern hemisphere regions).",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289192Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00021",
-    "stem": "Deepak travels 3 km North, 4 km East, 3 km South and then 2 km West. What is the shortest distance between his initial and final positions and in which direction?",
-    "options": [
-      {
-        "option_text": "5 km, East",
-        "is_correct": false
-      },
-      {
-        "option_text": "7 km, North-East",
-        "is_correct": false
-      },
-      {
-        "option_text": "√13 km, East",
-        "is_correct": false
-      },
-      {
-        "option_text": "2 km, East",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "N 3 + S 3 = 0 net vertical. E 4 + W 2 = 2 km East net. Final position: 2 km East of start.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289199Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00022",
-    "stem": "A boy starts from his house, walks 2 km towards the North, then turns to his right and walks 1 km. He again turns right and walks 2 km. Finally he turns to his right. In which direction is he now moving?",
-    "options": [
-      {
-        "option_text": "North",
-        "is_correct": false
-      },
-      {
-        "option_text": "East",
-        "is_correct": false
-      },
-      {
-        "option_text": "South",
-        "is_correct": false
-      },
-      {
-        "option_text": "West",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "N 2km → right (East) 1km → right (South) 2km → right → West. He is now moving West.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289207Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00023",
-    "stem": "Sudha walks 9 m towards the South and then turns West and walks 40 m, then turns North and walks 9 m. How far is she from her starting point and in which direction?",
-    "options": [
-      {
-        "option_text": "40 m, West",
-        "is_correct": false
-      },
-      {
-        "option_text": "9 m, South",
-        "is_correct": false
-      },
-      {
-        "option_text": "58 m, South-West",
-        "is_correct": false
-      },
-      {
-        "option_text": "40 m, East",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "S 9m + N 9m = 0 net. Net = 40m West. She is 40 m West of start.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289211Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00024",
-    "stem": "Walking from his home, Ramesh goes 15 m towards the East, then 20 m towards the North. He then goes 15 m towards the West and 10 m towards the South. How far is he from home?",
-    "options": [
-      {
-        "option_text": "20 m",
-        "is_correct": false
-      },
-      {
-        "option_text": "15 m",
-        "is_correct": false
-      },
-      {
-        "option_text": "25 m",
-        "is_correct": false
-      },
-      {
-        "option_text": "10 m",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "EASY",
-    "effort_tier": "A",
-    "staleness_risk": "LOW",
-    "explanation": "E 15 + W 15 = 0. N 20 + S 10 = 10m North. He is 10 m North of home.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289215Z"
-  },
-  {
-    "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00025",
-    "stem": "P is 30 m to the South of Q. R is 40 m to the East of Q. What is the shortest distance between P and R?",
-    "options": [
-      {
-        "option_text": "70 m",
-        "is_correct": false
-      },
-      {
-        "option_text": "60 m",
-        "is_correct": false
-      },
-      {
-        "option_text": "35 m",
-        "is_correct": false
-      },
-      {
-        "option_text": "50 m",
-        "is_correct": true
-      }
-    ],
-    "correct_letter": "D",
-    "subject": "Reasoning",
-    "topic": "Directions & Distances",
-    "topic_code": "RSN_DIRECTION",
-    "difficulty": "MEDIUM",
-    "effort_tier": "B",
-    "staleness_risk": "LOW",
-    "explanation": "Q is origin. P is 30m South (0, -30). R is 40m East (40, 0). PR = √(40² + 30²) = √(1600+900) = √2500 = 50 m.",
-    "answer_source": "generated",
-    "generator_tag": "wave-10k-expand",
-    "generated_at": "2026-05-21T05:25:26.289225Z"
-  }
-]
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Direction Mixed Tiers",
+  "topic_code": "REAS_DIRECTION_MIXED_TIERS",
+  "questions": [
+    {
+      "stem": "A man walks 5 m north, then 3 m east. His final distance from the starting point is:",
+      "options": [
+        {
+          "option_text": "√34 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 m",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Net N-S = 5, net E-W = 3. Pythagoras: √(25 + 9) = √34 ≈ 5.83 m. Single-step Pythagoras item.",
+      "subject": "Reasoning",
+      "topic": "Direction Sense — Clerk → CGL → PO Mains tier spread",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-dt-01",
+      "generated_at": "2026-04-21T17:25:00+00:00",
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00001"
+    },
+    {
+      "stem": "A boy facing east turns 90° clockwise. He now faces:",
+      "options": [
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": true
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        },
+        {
+          "option_text": "Still East",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "From E, 90° CW → S. Single-turn item — foundational.",
+      "subject": "Reasoning",
+      "topic": "Direction Sense — Clerk → CGL → PO Mains tier spread",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-dt-02",
+      "generated_at": "2026-04-21T17:25:00+00:00",
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00002"
+    },
+    {
+      "stem": "Starting from her house, Priya walks 6 km east, then 8 km north, then 3 km west, then 4 km south. Her straight-line distance from home is:",
+      "options": [
+        {
+          "option_text": "3 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "7 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Net E-W = 6 − 3 = 3 east. Net N-S = 8 − 4 = 4 north. Pythagoras: √(9 + 16) = √25 = 5 km. Uses the (3, 4, 5) triple.",
+      "subject": "Reasoning",
+      "topic": "Direction Sense — Clerk → CGL → PO Mains tier spread",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-dt-03",
+      "generated_at": "2026-04-21T17:25:00+00:00",
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00003"
+    },
+    {
+      "stem": "A girl travels from A: 3 km north, 4 km east, 9 km south, 8 km west, then 6 km north. Her straight-line distance from A is:",
+      "options": [
+        {
+          "option_text": "0 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "explanation": "Net N-S = 3 − 9 + 6 = 0. Net E-W = 4 − 8 = −4 (i.e., 4 km west of A). Straight-line distance from A = 4 km.",
+      "subject": "Reasoning",
+      "topic": "Direction Sense — Clerk → CGL → PO Mains tier spread",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-dt-04",
+      "generated_at": "2026-04-21T17:25:00+00:00",
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00004"
+    },
+    {
+      "stem": "Ravi starts facing north. He turns right and walks 5 km; then right again, walks 8 km; then left and walks 3 km; then left and walks 5 km. His final position relative to the start is:",
+      "options": [
+        {
+          "option_text": "√73 km (≈ 8.54 km), to the south-east; he faces north",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 km due east; he faces north",
+          "is_correct": false
+        },
+        {
+          "option_text": "√89 km due north",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 km due west; he faces east",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Track position step by step from (0,0) facing N. Turn R → face E, walk 5 → (5,0). Turn R → face S, walk 8 → (5,−8). Turn L → face E, walk 3 → (8,−8). Turn L → face N, walk 5 → (8,−3). End at (8, −3) facing N. Distance = √(64+9) = √73 ≈ 8.54 km to the south-east of start.",
+      "subject": "Reasoning",
+      "topic": "Direction Sense — Clerk → CGL → PO Mains tier spread",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "HARD",
+      "effort_tier": "B",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-dt-05",
+      "generated_at": "2026-04-21T17:25:00+00:00",
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00005"
+    },
+    {
+      "stem": "Ravi starts from point X facing south. He walks 4 m, turns left, walks 3 m, turns left, walks 4 m. In which direction is he from X?",
+      "options": [
+        {
+          "option_text": "East",
+          "is_correct": true
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "Start (0,0) facing S. Walk 4 S → (0,−4). Turn L (from S = E). Walk 3 E → (3,−4). Turn L (from E = N). Walk 4 N → (3,0). He's at (3, 0) — 3 m EAST of X.",
+      "subject": "Reasoning",
+      "topic": "Direction Sense — Clerk → CGL → PO Mains tier spread",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "A",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "claude-opus-2026-04-21-reas-dt-06",
+      "generated_at": "2026-04-21T17:25:00+00:00",
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00006"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00007",
+      "stem": "Ramesh starts from point A, walks 10 km North, then turns right and walks 5 km. He again turns right and walks 10 km. How far is he from point A and in which direction?",
+      "options": [
+        {
+          "option_text": "5 km, West",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 km, East",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 km, North",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 km, East",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "Start A→10N→turn right (East) 5km→turn right (South) 10km. Final position: 5 km East of A. Direction from A = East.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289090Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00008",
+      "stem": "Priya walks 6 km North, then 8 km East. How far is she from her starting point (straight-line distance)?",
+      "options": [
+        {
+          "option_text": "14 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "√100 = 10 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 km",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "By Pythagoras: √(6² + 8²) = √(36+64) = √100 = 10 km.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289117Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00009",
+      "stem": "A man faces East. He turns 90° clockwise, then 180° anti-clockwise. Which direction does he face now?",
+      "options": [
+        {
+          "option_text": "West",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "East → 90° clockwise → South → 180° anti-clockwise → North.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289125Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00010",
+      "stem": "Ravi drives 4 km North, turns left and drives 3 km, then turns left again and drives 4 km. What is the minimum distance from his starting point?",
+      "options": [
+        {
+          "option_text": "4 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "N 4km → turn left (West) 3km → turn left (South) 4km. Net N-S = 0, net E-W = -3km (West). Distance = 3 km.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289131Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00011",
+      "stem": "Sunita stands facing North-West. She turns 90° clockwise. In which direction is she now facing?",
+      "options": [
+        {
+          "option_text": "South-West",
+          "is_correct": false
+        },
+        {
+          "option_text": "South-East",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "North-East",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "NW + 90° clockwise = NE. (NW→N→NE is 90° clockwise)",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289139Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00012",
+      "stem": "At 6:00 AM a man stands facing the rising sun. His shadow falls behind him. In which direction does his shadow point?",
+      "options": [
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "West",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "Rising sun is in the East. Man faces East. Shadow is cast opposite to light source → shadow falls West (behind him).",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289144Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00013",
+      "stem": "Point B is 12 km to the East of point A. Point C is 5 km to the South of B. What is the straight-line distance from A to C?",
+      "options": [
+        {
+          "option_text": "17 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "√119 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "13 km",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "A to C: East 12km + South 5km. Pythagoras: √(12² + 5²) = √(144+25) = √169 = 13 km.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289151Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00014",
+      "stem": "Mohan walks 5 km South, turns left (faces East) and walks 3 km, then turns left again (faces North) and walks 5 km. Where is he with respect to his starting point?",
+      "options": [
+        {
+          "option_text": "3 km East",
+          "is_correct": false
+        },
+        {
+          "option_text": "At starting point",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 km North",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km West",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "S 5km → E 3km → N 5km. Net N-S = 0, net E-W = +3km East. He is 3 km East of start.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289156Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00015",
+      "stem": "A person starts from O, goes 7 km East to reach P, turns North and walks 24 km to reach Q. What is the shortest distance OQ?",
+      "options": [
+        {
+          "option_text": "25 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "17 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "√625 = 25 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "31 km",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "7² + 24² = 49 + 576 = 625. √625 = 25 km.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289161Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00016",
+      "stem": "A clock shows 6 o'clock. If you are facing the 12 o'clock direction, in what direction are you facing?",
+      "options": [
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "The 12 on a clock face is at the top. If facing toward 12, you're facing North (in standard compass orientation).",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289173Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00017",
+      "stem": "Anita walks 10 km East, then 10 km North, then 10 km West, then 10 km South. She is now:",
+      "options": [
+        {
+          "option_text": "20 km from start",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 km East of start",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 km South of start",
+          "is_correct": false
+        },
+        {
+          "option_text": "At the starting point",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "10E + 10N + 10W + 10S = net displacement = 0. Back to start.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289178Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00018",
+      "stem": "Vijay starts facing South. He turns 45° to his right. Then turns 135° to his left. Which direction is he now facing?",
+      "options": [
+        {
+          "option_text": "South-East",
+          "is_correct": false
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        },
+        {
+          "option_text": "North-West",
+          "is_correct": false
+        },
+        {
+          "option_text": "North-East",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "HARD",
+      "effort_tier": "C",
+      "staleness_risk": "LOW",
+      "explanation": "South + 45° right = South-West. South-West + 135° left = South-West + 135° counter-clockwise = SW→S→SE→E→NE (each 45°, 3 steps = 135°). So NE.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289182Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00019",
+      "stem": "From a point P, Kaveri walks 20 m North to Q, then 15 m East to R, then 20 m South to S. What is the distance PS?",
+      "options": [
+        {
+          "option_text": "20 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 m",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "P to Q: 20N. Q to R: 15E. R to S: 20S. Net: 0 North-South displacement, 15 m East. PS = 15 m.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289187Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00020",
+      "stem": "At 12 noon the shadow of a vertical pole falls exactly to the North. In which direction is the sun?",
+      "options": [
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "Shadow is opposite to light source. Shadow falls North → sun is in the South (overhead in Southern sky at noon in Northern hemisphere regions).",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289192Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00021",
+      "stem": "Deepak travels 3 km North, 4 km East, 3 km South and then 2 km West. What is the shortest distance between his initial and final positions and in which direction?",
+      "options": [
+        {
+          "option_text": "5 km, East",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 km, North-East",
+          "is_correct": false
+        },
+        {
+          "option_text": "√13 km, East",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 km, East",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "N 3 + S 3 = 0 net vertical. E 4 + W 2 = 2 km East net. Final position: 2 km East of start.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289199Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00022",
+      "stem": "A boy starts from his house, walks 2 km towards the North, then turns to his right and walks 1 km. He again turns right and walks 2 km. Finally he turns to his right. In which direction is he now moving?",
+      "options": [
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "West",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "N 2km → right (East) 1km → right (South) 2km → right → West. He is now moving West.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289207Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00023",
+      "stem": "Sudha walks 9 m towards the South and then turns West and walks 40 m, then turns North and walks 9 m. How far is she from her starting point and in which direction?",
+      "options": [
+        {
+          "option_text": "40 m, West",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 m, South",
+          "is_correct": false
+        },
+        {
+          "option_text": "58 m, South-West",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 m, East",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "S 9m + N 9m = 0 net. Net = 40m West. She is 40 m West of start.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289211Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00024",
+      "stem": "Walking from his home, Ramesh goes 15 m towards the East, then 20 m towards the North. He then goes 15 m towards the West and 10 m towards the South. How far is he from home?",
+      "options": [
+        {
+          "option_text": "20 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 m",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "EASY",
+      "effort_tier": "A",
+      "staleness_risk": "LOW",
+      "explanation": "E 15 + W 15 = 0. N 20 + S 10 = 10m North. He is 10 m North of home.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289215Z"
+    },
+    {
+      "id": "sgk_REAS_DIRECTION_MIXED_TIERS_00025",
+      "stem": "P is 30 m to the South of Q. R is 40 m to the East of Q. What is the shortest distance between P and R?",
+      "options": [
+        {
+          "option_text": "70 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "50 m",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "subject": "Reasoning",
+      "topic": "Directions & Distances",
+      "topic_code": "RSN_DIRECTION",
+      "difficulty": "MEDIUM",
+      "effort_tier": "B",
+      "staleness_risk": "LOW",
+      "explanation": "Q is origin. P is 30m South (0, -30). R is 40m East (40, 0). PR = √(40² + 30²) = √(1600+900) = √2500 = 50 m.",
+      "answer_source": "generated",
+      "generator_tag": "wave-10k-expand",
+      "generated_at": "2026-05-21T05:25:26.289225Z"
+    }
+  ]
+}

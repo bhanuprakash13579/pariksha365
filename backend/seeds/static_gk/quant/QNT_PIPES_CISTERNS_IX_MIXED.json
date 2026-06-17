@@ -1,0 +1,533 @@
+{
+  "schema_version": "1.1",
+  "subject": "Quantitative Aptitude",
+  "topic": "Pipes and Cisterns",
+  "topic_code": "QNT_PIPES",
+  "questions": [
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00001",
+      "stem": "Pipe A fills a tank in 12 hours and pipe B fills it in 18 hours. If both are opened together, how many hours will the tank take to fill?",
+      "options": [
+        "A) 7.2 hours",
+        "B) 8 hours",
+        "C) 6 hours",
+        "D) 9 hours"
+      ],
+      "correct_letter": "A",
+      "explanation": "Combined rate = 1/12 + 1/18 = 3/36 + 2/36 = 5/36. Time = 36/5 = 7.2 hours. **Short Trick:** T = (A×B)/(A+B) = (12×18)/(12+18) = 216/30 = 7.2 hrs.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "EASY",
+      "effort_tier": "quick",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00002",
+      "stem": "Pipe A fills a tank in 6 hours, pipe B in 8 hours, and pipe C (a drain) empties it in 24 hours. If all three are open simultaneously, how long will the tank take to fill?",
+      "options": [
+        "A) 3 hours",
+        "B) 4 hours",
+        "C) 5 hours",
+        "D) 6 hours"
+      ],
+      "correct_letter": "B",
+      "explanation": "Net rate = 1/6 + 1/8 − 1/24. LCM(6,8,24) = 24. = 4/24 + 3/24 − 1/24 = 6/24 = 1/4. Time = 4 hours. **Short Trick:** Units method: LCM=24. A=4u/h fill, B=3u/h fill, C=1u/h drain. Net=6u/h fill. Time=24/6=4h.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00003",
+      "stem": "A tap fills a tank in 10 hours. Due to a leak at the bottom, it takes 12 hours to fill the tank. How many hours does the leak alone take to empty the full tank?",
+      "options": [
+        "A) 50 hours",
+        "B) 40 hours",
+        "C) 60 hours",
+        "D) 30 hours"
+      ],
+      "correct_letter": "C",
+      "explanation": "Fill rate with no leak = 1/10. With leak = 1/12. Leak rate = 1/10 − 1/12 = 6/60 − 5/60 = 1/60. Leak alone empties the tank in 60 hours. **Short Trick:** Leak time = (10×12)/(12−10) = 120/2 = 60 hrs.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "EASY",
+      "effort_tier": "quick",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00004",
+      "stem": "Pipes A and B can fill a tank in 15 and 20 hours respectively. Both are opened together. After 4 hours, pipe B is closed. In how many total hours will the tank be filled?",
+      "options": [
+        "A) 10 hours",
+        "B) 11 hours",
+        "C) 11.5 hours",
+        "D) 12 hours"
+      ],
+      "correct_letter": "D",
+      "explanation": "In 4 hours, A+B together fill: 4×(1/15+1/20) = 4×(4+3)/60 = 4×7/60 = 28/60 = 7/15. Remaining = 1−7/15 = 8/15. Only A is open at rate 1/15/h. Time = (8/15)÷(1/15) = 8 more hours. Total = 4+8 = 12 hours. **Short Trick:** LCM(15,20)=60. A=4u/h, B=3u/h. In 4h: 7×4=28u filled. Left=32u. A alone: 32/4=8h. Total=12h.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "HARD",
+      "effort_tier": "careful",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00005",
+      "stem": "Pipes A and B together fill a tank in 6 hours. Pipe A alone takes 10 hours. How long does pipe B alone take to fill the tank?",
+      "options": [
+        "A) 15 hours",
+        "B) 18 hours",
+        "C) 20 hours",
+        "D) 12 hours"
+      ],
+      "correct_letter": "A",
+      "explanation": "Rate of B = (1/6) − (1/10) = 5/30 − 3/30 = 2/30 = 1/15. B alone fills in 15 hours. **Short Trick:** B = (A×joint)/(A−joint) = (10×6)/(10−6) = 60/4 = 15 hrs.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00006",
+      "stem": "Two pipes can fill a tank in 20 minutes and 30 minutes respectively. If both pipes are opened together, how many minutes will it take to fill the tank?",
+      "options": [
+        "A) 10",
+        "B) 12",
+        "C) 15",
+        "D) 25"
+      ],
+      "correct_letter": "B",
+      "explanation": "Combined rate = 1/20 + 1/30 = 3/60 + 2/60 = 5/60 = 1/12. Time = 12 minutes. **Short Trick:** T = (20×30)/(20+30) = 600/50 = 12 min.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "EASY",
+      "effort_tier": "quick",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00007",
+      "stem": "Pipe A fills a tank in 4 hours, pipe B fills it in 12 hours, and pipe C (a drain) empties it in 6 hours. If all three are open simultaneously, how long will the tank take to fill?",
+      "options": [
+        "A) 8 hours",
+        "B) 7 hours",
+        "C) 6 hours",
+        "D) 5 hours"
+      ],
+      "correct_letter": "C",
+      "explanation": "Net rate = 1/4 + 1/12 − 1/6. LCM = 12. = 3/12 + 1/12 − 2/12 = 2/12 = 1/6. Time = 6 hours. Verify: in 1h, net fill = 1/6 of tank; in 6h = full ✓.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00008",
+      "stem": "Pipes P and Q together fill a tank in 12 hours. If P alone takes 20 hours, how many hours does Q alone take?",
+      "options": [
+        "A) 25 hours",
+        "B) 28 hours",
+        "C) 32 hours",
+        "D) 30 hours"
+      ],
+      "correct_letter": "D",
+      "explanation": "Rate of Q = 1/12 − 1/20 = 5/60 − 3/60 = 2/60 = 1/30. Q alone fills in 30 hours. **Short Trick:** Q = (P×joint)/(P−joint) = (20×12)/(20−12) = 240/8 = 30 hrs.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "HARD",
+      "effort_tier": "careful",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00009",
+      "stem": "Pipe A fills a tank in 8 hours and pipe B fills it in 16 hours. If both pipes are opened at 9 AM, at what time will the tank be full?",
+      "options": [
+        "A) 2:20 PM",
+        "B) 3:00 PM",
+        "C) 4:20 PM",
+        "D) 2:40 PM"
+      ],
+      "correct_letter": "A",
+      "explanation": "Combined rate = 1/8 + 1/16 = 2/16 + 1/16 = 3/16. Time = 16/3 hours = 5 hours 20 minutes. Starting from 9 AM: 9 AM + 5h 20min = 2:20 PM. **Short Trick:** T=(8×16)/(8+16)=128/24=16/3h=5h20min → 9AM+5h20min=2:20PM.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00010",
+      "stem": "A cistern has a filling pipe (rate 1/6 of tank per hour) and an emptying pipe (rate 1/4 per hour). If both are opened simultaneously on a FULL cistern, what will happen?",
+      "options": [
+        "A) Fill completely in 12 hours",
+        "B) Empty completely in 12 hours",
+        "C) Fill completely in 24 hours",
+        "D) Nothing changes"
+      ],
+      "correct_letter": "B",
+      "explanation": "Net rate = fill − empty = 1/6 − 1/4 = 2/12 − 3/12 = −1/12 per hour. Negative means the cistern is draining. From full, it empties at rate 1/12 per hour → empties completely in 12 hours. The emptying pipe (1/4) is faster than the filling pipe (1/6), so the net effect is always draining.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "EASY",
+      "effort_tier": "quick",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00011",
+      "stem": "Two inlet pipes fill a tank in 24 and 32 minutes. A drain pipe empties it in 16 minutes. If all three are open (tank empty), when will the tank be full?",
+      "options": [
+        "A) 48 minutes",
+        "B) 72 minutes",
+        "C) 96 minutes",
+        "D) 192 minutes"
+      ],
+      "correct_letter": "C",
+      "explanation": "Net rate = 1/24 + 1/32 − 1/16. LCM = 96. = 4/96 + 3/96 − 6/96 = 1/96 per minute. Time = 96 minutes. **Short Trick:** LCM=96. Inlets add: 4+3=7u/min; drain removes 6u/min. Net=1u/min fill rate. Time=96/1=96 min.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00012",
+      "stem": "Pipe A (fills in 12 hours) is opened at 8 AM. Pipe B (fills in 8 hours) is opened at 10 AM. At what time will the tank be completely full?",
+      "options": [
+        "A) 12 PM (noon)",
+        "B) 1 PM",
+        "C) 3 PM",
+        "D) 2 PM"
+      ],
+      "correct_letter": "D",
+      "explanation": "8 AM–10 AM (2h, A only): fills 2/12 = 1/6. From 10 AM (A+B): rate = 1/12+1/8 = 2/24+3/24 = 5/24 per hour. Remaining = 1−1/6 = 5/6. Time = (5/6)÷(5/24) = (5/6)×(24/5) = 4 hours. 10 AM + 4h = 2 PM.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "HARD",
+      "effort_tier": "careful",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00013",
+      "stem": "A filling pipe fills a tank in 3 hours. The tank is already 1/3 full. How many more hours does the pipe need to fill the tank completely?",
+      "options": [
+        "A) 2 hours",
+        "B) 1.5 hours",
+        "C) 2.5 hours",
+        "D) 3 hours"
+      ],
+      "correct_letter": "A",
+      "explanation": "Remaining portion = 1 − 1/3 = 2/3. Rate = 1/3 per hour. Time = (2/3) ÷ (1/3) = 2 hours. **Short Trick:** 2/3 of the job at 1/3 per hour = 2/3 × 3 = 2 hours.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "EASY",
+      "effort_tier": "quick",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00014",
+      "stem": "Two fill pipes each take 6 hours to fill a tank. A hole can empty the tank in 4 hours. If both pipes are open but the hole is present, how long does the tank take to fill?",
+      "options": [
+        "A) 8 hours",
+        "B) 12 hours",
+        "C) 16 hours",
+        "D) 9 hours"
+      ],
+      "correct_letter": "B",
+      "explanation": "Net rate = 1/6 + 1/6 − 1/4 = 2/6 − 1/4 = 4/12 − 3/12 = 1/12. Time = 12 hours. Verify: two fill pipes together fill at 1/3/h; hole drains at 1/4/h; net = 1/3−1/4=4/12−3/12=1/12; time=12h ✓.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00015",
+      "stem": "Pipe A fills a tank 3 times as fast as pipe B. Together they fill the tank in 18 minutes. How many minutes does pipe B alone take to fill the tank?",
+      "options": [
+        "A) 54 minutes",
+        "B) 48 minutes",
+        "C) 72 minutes",
+        "D) 60 minutes"
+      ],
+      "correct_letter": "C",
+      "explanation": "Let B take t minutes → A takes t/3 minutes. Together: 1/(t/3) + 1/t = 3/t + 1/t = 4/t = 1/18. So t = 72 minutes (B alone). A alone = 72/3 = 24 min. **Verify:** together = AB/(A+B) = 24×72/(24+72) = 1728/96 = 18 min ✓.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "HARD",
+      "effort_tier": "careful",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00016",
+      "stem": "A filling pipe fills a tank in 40 minutes. An emptying pipe drains it in 60 minutes. If the tank is half-full and both pipes are opened, how many minutes will it take for the tank to overflow?",
+      "options": [
+        "A) 120 min",
+        "B) 80 min",
+        "C) 100 min",
+        "D) 60 min"
+      ],
+      "correct_letter": "D",
+      "explanation": "Net fill rate = 1/40 − 1/60 = 3/120 − 2/120 = 1/120 per minute. Remaining capacity = 1/2 of tank. Time = (1/2) ÷ (1/120) = 60 minutes. **Short Trick:** Net rate=1/120/min; half tank = 60 min to fill remaining half → overflow at 60 min.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00017",
+      "stem": "Pipes A and B together fill a tank in 8 hours. Both are opened at 6 AM. After 2 hours, pipe B is closed and pipe A continues alone. After pipe B closes, how many more hours does pipe A take, and what is the total time?",
+      "options": [
+        "A) 9.5 total hours",
+        "B) 10 total hours",
+        "C) 11 total hours",
+        "D) 8 total hours"
+      ],
+      "correct_letter": "A",
+      "explanation": "Pipe A fills in 10h, pipe B fills in 40h; together rate = 1/10+1/40 = 4/40+1/40 = 5/40 = 1/8 ✓ (fills in 8h). In 2 hours (A+B): filled = 2×1/8 = 1/4. Remaining = 3/4. A alone at 1/10/h: time = (3/4)÷(1/10) = 7.5 h. Total = 2+7.5 = 9.5 hours.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00018",
+      "stem": "A cistern is two-thirds full. A fill pipe fills it in 18 minutes; a drain pipe empties it in 9 minutes. If both are open, in how many minutes will the cistern be completely empty?",
+      "options": [
+        "A) 10 min",
+        "B) 12 min",
+        "C) 14 min",
+        "D) 16 min"
+      ],
+      "correct_letter": "B",
+      "explanation": "Net drain rate = 1/9 − 1/18 = 2/18 − 1/18 = 1/18 per minute (net emptying because drain > fill). Tank is 2/3 full. Time to empty = (2/3) ÷ (1/18) = (2/3)×18 = 12 minutes. **Short Trick:** Net drain=1/18/min; volume=2/3; time=12 min.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00019",
+      "stem": "Three pipes can fill a tank in 6, 8, and 12 hours respectively. If all three are opened together, in how long will the tank be filled?",
+      "options": [
+        "A) 2 hours",
+        "B) 2.5 hours",
+        "C) 2 hours 40 minutes",
+        "D) 3 hours"
+      ],
+      "correct_letter": "C",
+      "explanation": "Combined rate = 1/6+1/8+1/12. LCM(6,8,12) = 24. = 4/24+3/24+2/24 = 9/24 = 3/8. Time = 8/3 hours = 2 hours 40 minutes. **Short Trick:** LCM=24; A=4u/h, B=3u/h, C=2u/h → 9u/h; time=24/9=8/3h=2h40min.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "EASY",
+      "effort_tier": "quick",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00020",
+      "stem": "A pipe fills a tank in 5 hours. There is a leakage that empties the tank in 20 hours. With both the pipe open and the leakage present, how long does it take to fill the tank?",
+      "options": [
+        "A) 4 hours",
+        "B) 6 hours",
+        "C) 8 hours",
+        "D) 20/3 hours"
+      ],
+      "correct_letter": "D",
+      "explanation": "Net fill rate = 1/5 − 1/20 = 4/20 − 1/20 = 3/20 per hour. Time = 20/3 hours ≈ 6 hours 40 minutes. **Short Trick:** T_net = (5×20)/(20−5) = 100/15 = 20/3 hours.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "HARD",
+      "effort_tier": "careful",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00021",
+      "stem": "Three pipes A, B, and C together fill a tank in 3 hours. A alone fills it in 6 hours; B alone in 8 hours. How long does C alone take to fill the tank?",
+      "options": [
+        "A) 24 hours",
+        "B) 18 hours",
+        "C) 30 hours",
+        "D) 36 hours"
+      ],
+      "correct_letter": "A",
+      "explanation": "A+B+C = 1/3. C = 1/3 − 1/6 − 1/8 = 8/24 − 4/24 − 3/24 = 1/24. C alone takes 24 hours. **Verify:** 1/6+1/8+1/24 = 4/24+3/24+1/24 = 8/24 = 1/3 ✓ (together fill in 3h).",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00022",
+      "stem": "One pipe fills a tank in 8 minutes, a second in 12 minutes. How much of the tank is filled in 3 minutes if both pipes are open?",
+      "options": [
+        "A) 1/4",
+        "B) 5/8",
+        "C) 7/8",
+        "D) 3/4"
+      ],
+      "correct_letter": "B",
+      "explanation": "Combined rate = 1/8 + 1/12 = 3/24 + 2/24 = 5/24 per minute. In 3 minutes: 3 × 5/24 = 15/24 = 5/8 of the tank. **Short Trick:** 5/24 per min × 3 min = 15/24 = 5/8.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00023",
+      "stem": "A fill pipe fills a tank in 30 hours. If one-third of the tank is already filled, how long will the pipe take to fill the remaining portion?",
+      "options": [
+        "A) 15 hours",
+        "B) 10 hours",
+        "C) 20 hours",
+        "D) 25 hours"
+      ],
+      "correct_letter": "C",
+      "explanation": "Remaining = 1 − 1/3 = 2/3. Rate = 1/30 per hour. Time = (2/3) ÷ (1/30) = (2/3) × 30 = 20 hours. **Short Trick:** 2/3 of the job at 1/30 per hour = 20 hours.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "EASY",
+      "effort_tier": "quick",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00024",
+      "stem": "Pipes A+B fill a tank in 6 hours, B+C in 8 hours, A+C in 12 hours. How long does pipe C alone take to fill the tank?",
+      "options": [
+        "A) 16 hours",
+        "B) 24 hours",
+        "C) 20 hours",
+        "D) 48 hours"
+      ],
+      "correct_letter": "D",
+      "explanation": "2(A+B+C) = (1/6+1/8+1/12). LCM=24: = 4/24+3/24+2/24 = 9/24 = 3/8. So A+B+C = 3/16. C = (A+B+C)−(A+B) = 3/16−1/6 = 9/48−8/48 = 1/48. C alone = 48 hours. **Short Trick:** C = (A+B+C)−(A+B) = 3/16−1/6 = 1/48 → 48h.",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    },
+    {
+      "id": "sgk_QNT_PIPES_CISTERNS_IX_MIXED_00025",
+      "stem": "Pipe A fills a tank in 3 hours. Pipe B (a drain) empties it in 12 hours. If both are opened on an empty tank, how many hours will the tank take to fill?",
+      "options": [
+        "A) 3 hours",
+        "B) 3.5 hours",
+        "C) 4 hours",
+        "D) 6 hours"
+      ],
+      "correct_letter": "C",
+      "explanation": "Net fill rate = 1/3 − 1/12 = 4/12 − 1/12 = 3/12 = 1/4 per hour. Time = 4 hours. **Short Trick:** T_net = (A×B)/(B−A) = (3×12)/(12−3) = 36/9 = 4 hrs (use B−A since B is larger, meaning it drains faster than A fills).",
+      "subject": "quant",
+      "topic": "Pipes and Cisterns",
+      "topic_code": "QNT_PIPES",
+      "difficulty": "MEDIUM",
+      "effort_tier": "medium",
+      "staleness_risk": "low",
+      "answer_source": "generated",
+      "generator_tag": "claude-sonnet-4-6-2026-05-23",
+      "generated_at": "2026-05-28"
+    }
+  ]
+}

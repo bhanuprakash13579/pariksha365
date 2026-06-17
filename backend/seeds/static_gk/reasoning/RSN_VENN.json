@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Venn Diagrams",
+  "topic_code": "RSN_VENN",
+  "questions": [
+    {
+      "stem": "Which Venn diagram correctly represents the relationship among 'Squares', 'Rectangles', and 'Quadrilaterals'?",
+      "options": [
+        {
+          "option_text": "All three circles are completely separate with no intersection",
+          "is_correct": false
+        },
+        {
+          "option_text": "Three concentric circles: Squares inside Rectangles inside Quadrilaterals",
+          "is_correct": true
+        },
+        {
+          "option_text": "Three partially overlapping circles forming a central intersection area",
+          "is_correct": false
+        },
+        {
+          "option_text": "Squares and Rectangles as two separate sub-circles inside Quadrilaterals",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct: every Square is a Rectangle (Squares ⊂ Rectangles) and every Rectangle is a Quadrilateral (Rectangles ⊂ Quadrilaterals), so the three circles must be fully nested/concentric. Option D is a common error — it correctly places both inside Quadrilaterals but wrongly treats Squares and Rectangles as disjoint sets, ignoring that every square satisfies all defining properties of a rectangle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T14:18:22+00:00",
+      "id": "sgk_RSN_VENN_00001"
+    },
+    {
+      "stem": "In a group of 60 people, 35 read newspapers, 28 read magazines, and 12 read both. How many people read neither newspapers nor magazines?",
+      "options": [
+        {
+          "option_text": "7 people in the group read neither newspapers nor magazines",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 people in the group read neither newspapers nor magazines",
+          "is_correct": false
+        },
+        {
+          "option_text": "13 people in the group read neither newspapers nor magazines",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 people in the group read neither newspapers nor magazines",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct: by inclusion-exclusion, readers of at least one = 35 + 28 − 12 = 51; neither = 60 − 51 = 9. Option B (11) is the typical error of computing 60 − 35 − 12 = 13 or confusing overlap handling; Option A (7) arises from mistakenly subtracting the overlap twice from the total.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T14:18:22+00:00",
+      "id": "sgk_RSN_VENN_00002"
+    },
+    {
+      "stem": "In a survey of 80 students, 45 like Science, 38 like Mathematics, and 15 like both subjects. How many students like exactly one of the two subjects?",
+      "options": [
+        {
+          "option_text": "53 students like exactly one of the two subjects",
+          "is_correct": true
+        },
+        {
+          "option_text": "45 students like exactly one of the two subjects",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 students like exactly one of the two subjects",
+          "is_correct": false
+        },
+        {
+          "option_text": "68 students like exactly one of the two subjects",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct: Science only = 45 − 15 = 30; Math only = 38 − 15 = 23; exactly one = 30 + 23 = 53. Option D (68) is the classic error of computing the union (45 + 38 − 15 = 68), which counts 'at least one' not 'exactly one' — a distinction examiners deliberately exploit.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T14:18:22+00:00",
+      "id": "sgk_RSN_VENN_00003"
+    },
+    {
+      "stem": "A survey of 100 people on streaming usage showed: 60 use Hotstar, 50 use Netflix, 45 use Amazon Prime, 20 use both Hotstar and Netflix, 15 use both Netflix and Amazon Prime, 18 use both Hotstar and Amazon Prime, and 8 use all three. How many people use exactly two of the three platforms?",
+      "options": [
+        {
+          "option_text": "22 people subscribe to exactly two of the three platforms",
+          "is_correct": false
+        },
+        {
+          "option_text": "37 people subscribe to exactly two of the three platforms",
+          "is_correct": false
+        },
+        {
+          "option_text": "29 people subscribe to exactly two of the three platforms",
+          "is_correct": true
+        },
+        {
+          "option_text": "45 people subscribe to exactly two of the three platforms",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct: exactly-two regions = (H∩N − all three) + (N∩A − all three) + (H∩A − all three) = (20−8) + (15−8) + (18−8) = 12 + 7 + 10 = 29. Option B (37) is the common error of adding raw pair-intersections (20+15+18 = 53) and subtracting the all-three count only once instead of three times, conflating pairwise-intersection totals with the exactly-two region.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T14:18:22+00:00",
+      "id": "sgk_RSN_VENN_00004"
+    },
+    {
+      "stem": "A Venn diagram for students who passed three exams shows exclusive regions: only Math = 12, only Science = 8, only English = 15; paired regions: Math∩Science only = 6, Science∩English only = 4, Math∩English only = 7; all three = 3. How many students passed in exactly two subjects?",
+      "options": [
+        {
+          "option_text": "10 students in the class passed in exactly two subjects",
+          "is_correct": false
+        },
+        {
+          "option_text": "17 students in the class passed in exactly two subjects",
+          "is_correct": true
+        },
+        {
+          "option_text": "13 students in the class passed in exactly two subjects",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 students in the class passed in exactly two subjects",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct: the question provides the exactly-two regions directly — 6 + 4 + 7 = 17. The all-three region (3) must not be included here. Option D (20) is the trap of adding the all-three count into the exactly-two total; Option C (13) likely comes from selecting only two of the three paired regions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T14:18:22+00:00",
+      "id": "sgk_RSN_VENN_00005"
+    },
+    {
+      "stem": "In a survey of 500 readers, each reads at least one of three newspapers: The Hindu (TH), Hindustan Times (HT), and Times of India (TOI). Given: TH = 300, HT = 225, TOI = 175, TH∩HT = 100, HT∩TOI = 75, TH∩TOI = 50. By how many does the count reading exactly two newspapers exceed those reading all three?",
+      "options": [
+        {
+          "option_text": "100 more readers read exactly two newspapers than all three",
+          "is_correct": false
+        },
+        {
+          "option_text": "115 more readers read exactly two newspapers than all three",
+          "is_correct": false
+        },
+        {
+          "option_text": "125 more readers read exactly two newspapers than all three",
+          "is_correct": true
+        },
+        {
+          "option_text": "150 more readers read exactly two newspapers than all three",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct: first back-calculate all-three via inclusion-exclusion — 300+225+175−100−75−50+x = 500, so 475+x = 500, giving x = 25. Then exactly-two = (100−25)+(75−25)+(50−25) = 75+50+25 = 150. Difference = 150−25 = 125. Option D (150) is the error of reporting the exactly-two total without subtracting the all-three value; Option A (100) likely comes from skipping the back-calculation and estimating.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T14:18:22+00:00",
+      "id": "sgk_RSN_VENN_00006"
+    },
+    {
+      "stem": "At a technology fair with 160 visitors, each visited at least one of two demo stations: VR Station or AI Station. 100 visited VR and 90 visited AI. Among VR-only visitors 40% attended an expert talk, among AI-only visitors 50% attended, and among visitors to both stations 60% attended. How many visitors attended the expert talk in total?",
+      "options": [
+        {
+          "option_text": "68 visitors in total attended the expert talk session",
+          "is_correct": false
+        },
+        {
+          "option_text": "72 visitors in total attended the expert talk session",
+          "is_correct": false
+        },
+        {
+          "option_text": "82 visitors in total attended the expert talk session",
+          "is_correct": false
+        },
+        {
+          "option_text": "76 visitors in total attended the expert talk session",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct: both stations = 100+90−160 = 30; VR only = 70; AI only = 60. Talk attendees = 0.4×70 + 0.5×60 + 0.6×30 = 28+30+18 = 76. Option B (72) is the trap of applying a naïve average rate of 45% to 160 total visitors, which ignores that the three sub-groups are unequal in size — weighted computation on each Venn region separately is mandatory.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-11",
+      "generated_at": "2026-06-11T14:18:22+00:00",
+      "id": "sgk_RSN_VENN_00007"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Blood Relations",
+  "topic_code": "REAS_BLOOD_RELATIONS_MIXED",
+  "description": "Covers basic family tree logic.",
+  "questions": [
+    {
+      "stem": "Pointing to a photograph of a boy, Suresh said, 'He is the son of the only son of my mother.' How is Suresh related to that boy?",
+      "options": [
+        {
+          "option_text": "Father",
+          "is_correct": true
+        },
+        {
+          "option_text": "Uncle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: Let's break the sentence down backward:\n1. 'my mother' -> Suresh's mother.\n2. 'the only son of my mother' -> Since Suresh is male, the *only* son of his mother must be Suresh himself.\n3. 'He is the son of [Suresh]' -> The boy in the photograph is Suresh's son.\nTherefore, Suresh is the father of the boy.\nDECOY BUSTING: If the prompt said \"one of the sons\", Suresh could be the Uncle. But the keyword \"ONLY son\" absolutely locks the identity to Suresh himself.\nEXAM INSIGHT: In blood relation questions, always trace the relationships backward starting from \"my\". Also, do not assume gender based on the name alone unless explicitly stated (e.g., 'son', 'brother'), though in basic problems 'Suresh' implies a male.",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "REAS_BLOOD_RELATIONS_MIXED",
+      "difficulty": "easy",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_REAS_BLOOD_RELATIONS_MIXED_001"
+    },
+    {
+      "stem": "A is the brother of B. C is the sister of D. B is the son of C. How is A related to C?",
+      "options": [
+        {
+          "option_text": "Son",
+          "is_correct": true
+        },
+        {
+          "option_text": "Nephew",
+          "is_correct": false
+        },
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Father",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "explanation": "WHY IT IS CORRECT: Let's map the family tree:\n1. 'B is the son of C' -> C is the parent of B.\n2. 'A is the brother of B' -> A and B are siblings. Since B is the son of C, and A is B's brother, A must ALSO be the son of C.\n3. (The fact that 'C is the sister of D' tells us C is female, so C is the mother, but it is not strictly necessary to answer the question).\nTherefore, A is the son of C.\nDECOY BUSTING: If the question asked how C is related to A, the answer would be Mother. Always read the final 'How is X related to Y' carefully. 'Nephew' would be correct if B was the son of D, not C.\nEXAM INSIGHT: Drawing a quick family tree diagram (using a square for male, circle for female, vertical line for generation, horizontal for siblings) is the fastest way to solve complex puzzles.",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "topic_code": "REAS_BLOOD_RELATIONS_MIXED",
+      "difficulty": "medium",
+      "effort_tier": "tier1",
+      "staleness_risk": "low",
+      "answer_source": "verified",
+      "generator_tag": "v3-rich-explanation",
+      "generated_at": "2026-05-23",
+      "id": "sgk_REAS_BLOOD_RELATIONS_MIXED_002"
+    },
+    {
+      "stem": "Seema introduces Rohan by saying, 'He is the son of the only daughter of my father.' How is Rohan related to Seema?",
+      "options": [
+        {
+          "option_text": "Nephew — born to one of Seema's brothers or sisters",
+          "is_correct": false
+        },
+        {
+          "option_text": "Son — Seema herself is the only daughter mentioned",
+          "is_correct": true
+        },
+        {
+          "option_text": "Brother — he and Seema share the same father",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin — related through a shared grandparent",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Seema's father's only daughter = Seema herself. The son of this only daughter = Seema's own son. So Rohan is Seema's son. Option A (Nephew) is wrong because a nephew is the son of a sibling, not of oneself. The phrase 'only daughter' is the pivot that makes the questioner and the subject the same person.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:04:43+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_MIXED_00003"
+    },
+    {
+      "stem": "Ritu's father is the only brother of Pankaj's mother. How is Pankaj related to Ritu?",
+      "options": [
+        {
+          "option_text": "Brother — Ritu and Pankaj have the same parents altogether",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nephew — Pankaj is the son of Ritu's sibling in the family",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin — Ritu's father and Pankaj's mother are brother and sister",
+          "is_correct": true
+        },
+        {
+          "option_text": "Uncle — Pankaj belongs to the generation above Ritu's own parents",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Ritu's father is the only brother of Pankaj's mother — so these two are siblings. Children of siblings are first cousins, making Ritu and Pankaj cousins. Option D (Uncle) is wrong because Pankaj and Ritu are in the same generation; an uncle-niece relationship would require one to be the sibling of the other's parent.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:04:43+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_MIXED_00004"
+    },
+    {
+      "stem": "Kamla is the mother of Neha. Neha is the wife of Ravi. Ravi's father is Suresh. Suresh's mother is Savitri. How is Kamla related to Ravi?",
+      "options": [
+        {
+          "option_text": "Sister-in-law — Kamla is married to Ravi's brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mother-in-law — Kamla is the mother of Ravi's wife Neha",
+          "is_correct": true
+        },
+        {
+          "option_text": "Paternal aunt — Kamla is the sister of Ravi's father Suresh",
+          "is_correct": false
+        },
+        {
+          "option_text": "Grandmother — Kamla is one generation above Ravi's parents",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Kamla is Neha's mother; Neha is Ravi's wife — therefore Kamla is the mother of Ravi's wife, i.e., Ravi's mother-in-law. The details about Suresh and Savitri are deliberate distractors to lure candidates into Ravi's paternal chain. Option C is wrong because Kamla and Suresh belong to entirely different family branches.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:04:43+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_MIXED_00005"
+    },
+    {
+      "stem": "Pointing to a man, Geeta says, 'His mother is the wife of my father's only son.' Geeta has no sister. How is the man related to Geeta?",
+      "options": [
+        {
+          "option_text": "Son — the man is directly born to Geeta as his mother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Brother — the man and Geeta have the same father",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nephew — the man's father is the only son of Geeta's father",
+          "is_correct": true
+        },
+        {
+          "option_text": "Cousin — their fathers happen to be brothers in the family",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Geeta's father's only son = Geeta's brother (Geeta is female, so the 'only son' is her brother). Wife of Geeta's brother = Geeta's sister-in-law = the man's mother. So the man's father is Geeta's brother, making the man Geeta's nephew. Option A is wrong because Geeta is not the wife referred to — that wife is Geeta's brother's wife.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:04:43+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_MIXED_00006"
+    },
+    {
+      "stem": "If Rajan's son is Sunil's father, and Sunil's sister is Meena, then how is Rajan related to Meena?",
+      "options": [
+        {
+          "option_text": "Father — Rajan is directly one generation above Meena",
+          "is_correct": false
+        },
+        {
+          "option_text": "Maternal grandfather — Rajan is the father of Meena's mother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Paternal grandfather — Rajan is the father of Meena's father",
+          "is_correct": true
+        },
+        {
+          "option_text": "Great-grandfather — Rajan is two generations above Meena's father",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Rajan's son = Sunil's father, so Rajan is Sunil's paternal grandfather. Since Meena is Sunil's sister, both share the same father (Rajan's son). Therefore Rajan is Meena's paternal grandfather. Option B (Maternal grandfather) is a common mistake — it would require Rajan to be the father of Meena's mother, but here Rajan is the father of Meena's father.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:04:43+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_MIXED_00007"
+    },
+    {
+      "stem": "In a family, the following is known: B is the son of C; D is the mother of B; A is the husband of D; E is the brother of C; F is the daughter of E. How is F related to B?",
+      "options": [
+        {
+          "option_text": "Niece — B is the uncle and F is one generation below B",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sister — F and B share the same father C and mother D",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cousin — F is the daughter of B's paternal uncle E",
+          "is_correct": true
+        },
+        {
+          "option_text": "Daughter — F is born to B as a parent in the family",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "Since D is B's mother and B is the son of C, C is B's father. The clue 'A is the husband of D' is a deliberate red herring — A is not necessarily B's father. E is C's brother, making E B's paternal uncle. F is E's daughter, so F is B's cousin through the paternal line. Option B is wrong because F's father is E, not C, so F and B cannot be siblings.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:04:43+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_MIXED_00008"
+    },
+    {
+      "stem": "In a coded language, 'P ÷ Q' means P is the father of Q, 'P × Q' means P is the mother of Q, and 'P + Q' means P is the brother of Q. In the expression A ÷ B × C + D, how is A related to D?",
+      "options": [
+        {
+          "option_text": "Father — A is the direct parent of D in the chain",
+          "is_correct": false
+        },
+        {
+          "option_text": "Maternal grandfather — A is the father of D's mother B",
+          "is_correct": true
+        },
+        {
+          "option_text": "Paternal grandfather — A is the father of D's father",
+          "is_correct": false
+        },
+        {
+          "option_text": "Maternal uncle — A is the brother of D's mother B",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Decode step by step: A ÷ B → A is B's father; B × C → B is C's mother; C + D → C is D's brother (so D's mother is also B). Therefore A is the father of B, and B is the mother of both C and D — making A D's maternal grandfather. Option C (Paternal grandfather) is wrong because A is the father of B who is D's mother, not D's father. Option D is wrong because A is one generation above B, not a sibling of B.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-07",
+      "generated_at": "2026-06-07T04:04:43+00:00",
+      "id": "sgk_REAS_BLOOD_RELATIONS_MIXED_00009"
+    }
+  ]
+}

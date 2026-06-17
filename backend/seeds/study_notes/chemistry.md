@@ -36,7 +36,8 @@ This book is built around the three hot zones, then covers the rest in depth so 
 7. Industrial processes — Haber, Contact, Hall-Héroult (Part AA)
 8. States of matter + periodic table trends (Parts A-B)
 9. Organic basics — functional groups, fuels (Parts G-H)
-10. Fertilisers, food chemistry, environmental (Parts Y, J, K)
+10. Electrochemistry — Faraday's laws, batteries, galvanic cells (Part J)
+11. Fertilisers, food chemistry, environmental (Parts Y, I)
 
 ---
 
@@ -77,7 +78,8 @@ Reference tables, compilations, and self-test material — useful in your last w
 | **p29–31** | [PART G](#part-g) | POLYMERS AND FIBRES |
 | **p32–34** | [PART H](#part-h) | EVERYDAY CHEMISTRY |
 | **p35–37** | [PART I](#part-i) | ENVIRONMENTAL CHEMISTRY |
-| **p38–39** | [PART T](#part-t) | DISCOVERIES AND INVENTORS IN CHEMISTRY — *Discoveries & Inventors — who-discovered-what table.* |
+| **p38–41** | [PART J](#part-j) | ELECTROCHEMISTRY — *Electrolysis, Faraday's laws, galvanic cells, batteries, electrode potentials.* |
+| **p42–43** | [PART T](#part-t) | DISCOVERIES AND INVENTORS IN CHEMISTRY — *Discoveries & Inventors — who-discovered-what table.* |
 | **p40–41** | [PART U](#part-u) | THE ESSENTIAL CHEMICAL NAMES TABLE — *Essential Chemical Names — everyday ↔ chemical name table.* |
 | **p42–43** | [PART V](#part-v) | ALLOYS AND METALLURGY — *Alloys & Metallurgy — composition tables.* |
 | **p44–46** | [PART Y](#part-y) | FERTILISERS — *Fertilisers — N/P/K compositions, NPK ratios.* |
@@ -135,7 +137,7 @@ Sublimation is a high-frequency topic. Substances that sublime directly from sol
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["STATES OF MATTER"]:::root
     R --> S["Solid"]:::key
     R --> L["Liquid"]:::key
@@ -263,7 +265,7 @@ To remember isotopes vs isobars: **"Same Z = IsoTopes (T = Top = atomic number o
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["ATOMIC STRUCTURE"]:::root
     R --> BA["Basic Definitions"]:::key
     R --> EC["Electronic Configuration"]:::key
@@ -420,6 +422,18 @@ Halogens: **"Fierce Clowns Bring Interesting Acts"** — F, Cl, Br, I, At.
 | Electronegativity | Increases | Decreases |
 | Metallic character | Decreases | Increases |
 
+<div class="keypoint">
+
+**Quick Recall — Periodic Trends:** Moving RIGHT across a period: atoms shrink (more protons pull electrons in), harder to remove electrons (higher IE), more electronegative. Moving DOWN a group: atoms grow (new shells), easier to lose electrons, more metallic. Think: **"Right = tighter; Down = looser."**
+
+</div>
+
+<div class="mnemonic">
+
+**Trend direction trick:** Atomic size is the **opposite** of all other trends. Size DECREASES going right (others increase). Size INCREASES going down (others decrease). So just learn size direction and flip it for IE/EN/EA.
+
+</div>
+
 <div class="examtip">
 
 The most electronegative element is **Fluorine (F), 4.0 on Pauling scale**. The most reactive non-metal is Fluorine. The most reactive metal is **Caesium (Cs)** — sometimes Francium is given as the answer, but Cs is more commonly tested. The lightest metal is **Lithium (Li)**. The only liquid metal at room temperature is **Mercury (Hg)** — Gallium is also liquid near room temperature (melts at 29.8 °C) and appears as a trap option.
@@ -440,7 +454,7 @@ Electronegativity decreasing order: **F > O > N > Cl > Br > I**. Memory: **"Fren
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["THE PERIODIC TABLE"]:::root
     R --> ME["Mendeleev 1869"]:::date
     R --> MO["Moseley 1913"]:::date
@@ -587,7 +601,7 @@ Hydrogen bonding explains why water is liquid at room temperature (small molecul
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["CHEMICAL BONDING"]:::root
     R --> IO["Ionic Bond"]:::key
     R --> CO["Covalent Bond"]:::key
@@ -626,6 +640,14 @@ flowchart TD
 
 Oxidation and reduction — **OIL RIG**: Oxidation Is Loss (of electrons), Reduction Is Gain (of electrons). In the reaction Zn + CuSO₄ → ZnSO₄ + Cu, Zn loses electrons (oxidised), Cu²⁺ gains them (reduced). Zinc is the reducing agent; Cu²⁺ is the oxidising agent.
 
+**Analogy:** Think of electrons like money. Oxidation = losing your money (going poor = losing electrons). Reduction = gaining money (getting rich = gaining electrons). The person who steals your money (oxidising agent) gets reduced (gains electrons); you get oxidised (lose electrons).
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "The reducing agent is oxidised" and "the oxidising agent is reduced" — this confuses almost every student. The reducing agent GIVES electrons → it gets oxidised. The oxidising agent TAKES electrons → it gets reduced. In rusting: iron is the reducing agent (Fe → Fe³⁺ + 3e⁻), oxygen is the oxidising agent (gains electrons).
+
 </div>
 
 <div class="pitfall">
@@ -642,7 +664,7 @@ Students confuse "oxidation" with "gaining oxygen" — that is only the old, inc
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["TYPES OF CHEMICAL REACTIONS"]:::root
     R --> CO["Combination"]:::key
     R --> DE["Decomposition"]:::key
@@ -675,7 +697,7 @@ Lewis theory is the broadest. AlCl₃ is a Lewis acid (accepts electrons) even t
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["THEORIES OF ACIDS AND BASES"]:::root
     R --> AR["Arrhenius Theory"]:::key
     R --> BL["Bronsted-Lowry Theory"]:::key
@@ -819,7 +841,7 @@ Blood pH is 7.35–7.45 — slightly alkaline. A drop below 7.35 causes acidosis
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["THE pH SCALE"]:::root
     R --> DE["Definition"]:::key
     R --> VA["pH Values to Know"]:::key
@@ -853,11 +875,19 @@ flowchart TD
 
 Litmus: **A-Red, B-Blue** — Acids turn litmus Red, Bases turn it Blue. Phenolphthalein: **colourless in acid, PiNk in base** — the P is for Pink in base.
 
+**Quick shortcut for indicators:** Litmus and Methyl Orange both turn **Red** in acid. Phenolphthalein turns **Pink** in base (colourless in acid — the only one that "disappears" in acid). Universal indicator is the rainbow — Red=acid, Green=neutral, Violet=strong base.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** Phenolphthalein is colourless in acid AND in neutral. It only turns pink at pH ≥ 8.2. Students often write "yellow in acid" (that's methyl orange) or "red in acid" (that's litmus). Phenolphthalein in acid = **colourless**. Also: turmeric is a natural indicator but NOT used in standard titrations — it changes too slowly.
+
 </div>
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["pH INDICATORS"]:::root
     R --> LI["Litmus — universal in exams"]:::key
     R --> OT["Other Common Indicators"]:::key
@@ -893,6 +923,12 @@ flowchart TD
 <div class="keypoint">
 
 Aqua regia = 3 parts HCl + 1 part HNO₃ (by volume). It dissolves gold and platinum — the only common mixture that can. This question appears in almost every competitive exam's chemistry section.
+
+</div>
+
+<div class="mnemonic">
+
+**Acid nicknames to memorise cold:** HCl = "Spirit of Salt" | H₂SO₄ = "Oil of Vitriol" / "King of Chemicals" | HNO₃ = "Aqua Fortis" (strong water) | Aqua Regia = "Royal Water" (dissolves the kings of metals: gold and platinum). Memory hook: **"The King dissolved in Royal Water"** = Gold dissolved in Aqua Regia.
 
 </div>
 
@@ -961,6 +997,24 @@ Baking soda is NaHCO₃ (sodium bicarbonate). It is mildly basic (pH ~8.3). When
 
 </div>
 
+<div class="mnemonic">
+
+**Common sodium salts — 4 to memorise cold:**
+- **NaCl** = Table salt (common salt, neutral pH 7)
+- **NaHCO₃** = Baking soda (Sodium biCARBonate — the HCO₃ part tells you it's bicarbonate)
+- **Na₂CO₃** = Washing soda (the 2 carbonate = stronger/heavier = washing)
+- **NaOH** = Caustic soda (Hydroxide — the only "OH" = strong base, caustic)
+
+Quick rule: **biCARBonate = baking; CARBonate = washing.** One carbon less (HCO₃ vs CO₃) makes it milder (baking vs washing).
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP — Baking soda vs Baking powder:** Baking soda = pure NaHCO₃. Baking powder = NaHCO₃ + tartaric acid + starch. Baking powder has its own acid, so it doesn't need an acidic ingredient in the recipe. Baking soda needs an acid (lemon juice, buttermilk) to react. Examiners ask: "What is baking powder made of?" — not just baking soda.
+
+</div>
+
 ---
 
 \newpage
@@ -969,7 +1023,7 @@ Baking soda is NaHCO₃ (sodium bicarbonate). It is mildly basic (pH ~8.3). When
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["SALTS AND THEIR pH"]:::root
     R --> FO["Formation"]:::proc
     R --> TY["Salt Types by pH"]:::key
@@ -1003,7 +1057,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["PROPERTIES OF METALS"]:::root
     R --> PH["Physical Properties"]:::key
     R --> EX["Extremes — Exam Favourites"]:::key
@@ -1030,6 +1084,12 @@ flowchart TD
 
 K > Na > Ca > Mg > Al > Zn > Fe > Sn > Pb > **[H]** > Cu > Hg > Ag > Au > Pt
 
+<div class="keypoint">
+
+**Quick Recall — Activity Series:** The series tells you three things instantly: (1) Who displaces whom in a reaction. (2) Which metals react with water / acids. (3) Which metals need electrolysis to extract. Metals above hydrogen react with dilute acids and liberate H₂. Metals below hydrogen (Cu, Hg, Ag, Au, Pt) don't react with dilute acids.
+
+</div>
+
 <div class="mnemonic">
 
 **"Please Stop Calling Me A Zebra, I Stay Planted Here, Cause He's Still At Practice"**
@@ -1052,7 +1112,7 @@ P = Potassium (K), S = Sodium (Na), C = Calcium (Ca), M = Magnesium (Mg), A = Al
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["ACTIVITY SERIES OF METALS"]:::root
     R --> OR["Order of Reactivity"]:::key
     R --> RU["Rules for Reactions"]:::key
@@ -1093,7 +1153,7 @@ Hall-Héroult process (1886): Electrolysis of alumina (Al₂O₃) dissolved in m
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["EXTRACTION OF METALS"]:::root
     R --> ME["Method depends on reactivity"]:::proc
     R --> IR["Iron: Blast Furnace"]:::key
@@ -1132,6 +1192,18 @@ Galvanising uses zinc as a protective coat. Zinc is above iron in the activity s
 
 </div>
 
+<div class="mnemonic">
+
+**"Galvanising = Zinc Protects Iron; Tinning = Tin Betrays Iron."** Galvanising: Zinc is more reactive → it corrodes first → iron stays safe (even if zinc is scratched). Tinning: Tin is less reactive → once scratched, iron is exposed and corrodes faster. Remember: **G**alvanise = **G**uardian (zinc guards iron). **T**inning = **T**raitor (tin betrays iron when damaged).
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "Both galvanising and tinning protect iron." True as long as the coat is intact — but the MECHANISM is opposite. Galvanising: zinc corrodes sacrificially even if coat is scratched (safe). Tinning: tin coat must be unbroken — once scratched, iron rusts faster (unsafe). Examiners test this contrast directly.
+
+</div>
+
 ---
 
 \newpage
@@ -1140,7 +1212,7 @@ Galvanising uses zinc as a protective coat. Zinc is above iron in the activity s
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["CORROSION AND PREVENTION"]:::root
     R --> RU["Rusting of Iron"]:::key
     R --> CO["Conditions for Rusting"]:::key
@@ -1164,9 +1236,21 @@ flowchart TD
 
 Carbon forms 4 bonds (tetravalent), chains indefinitely with itself (catenation), and forms stable double and triple bonds. Result: over 10 million known organic compounds versus about 500,000 for all other elements combined. No other element comes close.
 
+<div class="keypoint">
+
+**Quick Recall — Carbon allotropes:** Diamond (hardest, insulator, 3D tetrahedral lattice) vs Graphite (soft, conductor, layered hexagonal sheets). Both are pure carbon — just different arrangements. **"Diamond is for ever"** because its 3D bonds are unbreakable. Graphite layers slide (pencil writing) because only weak van der Waals forces hold sheets together.
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP:** "Graphite is a non-metal that conducts electricity" — this is the famous exception. Most non-metals are insulators. Graphite conducts because it has delocalised electrons between its hexagonal layers. Diamond (also pure carbon) is an insulator. The examiner knows students forget this and sets it regularly.
+
+</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["WHY CARBON IS SPECIAL"]:::root
     R --> TE["Tetravalency"]:::key
     R --> CA["Catenation"]:::key
@@ -1209,7 +1293,7 @@ Ethyne (acetylene, C₂H₂) is the most important. It burns at over 3000 °C wi
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["HYDROCARBONS"]:::root
     R --> AK["Alkanes (Saturated)"]:::key
     R --> AE["Alkenes (Unsaturated)"]:::key
@@ -1262,6 +1346,46 @@ flowchart LR
     classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
 </div>
 </div>
+
+## Chapter F3b — IUPAC Nomenclature Basics
+
+IUPAC (International Union of Pure and Applied Chemistry) naming lets you name any organic compound systematically. SSC CGL and RRB NTPC test the basic rules.
+
+### Suffix by hydrocarbon type
+
+| Series | Bond type | Suffix | Example (2 carbons) |
+|--------|----------|--------|---------------------|
+| Alkane | Single bonds only | **−ane** | Ethane (C₂H₆) |
+| Alkene | One double bond | **−ene** | Ethene (C₂H₄) |
+| Alkyne | One triple bond | **−yne** | Ethyne (C₂H₂) |
+
+### Prefix by carbon count
+
+| Carbons | Prefix | Example (alkane) |
+|---------|--------|-----------------|
+| 1 | Meth− | Methane |
+| 2 | Eth− | Ethane |
+| 3 | Prop− | Propane |
+| 4 | But− | Butane |
+| 5 | Pent− | Pentane |
+| 6 | Hex− | Hexane |
+
+### Naming steps (in order)
+
+1. **Find the longest continuous carbon chain** → gives the parent name prefix.
+2. **Identify the principal functional group** → gives the suffix (−ane/−ene/−yne; −ol for alcohol; −al for aldehyde; −oic acid for carboxylic acid).
+3. **Number the chain** from the end nearer to the principal functional group to get the **lowest locant**.
+4. **Name substituents** (branches) alphabetically before the parent name, with their position numbers.
+
+**Example:** CH₃−CH₂−OH → 2 carbons → "eth−" + alcohol suffix "−ol" + lowest locant "1" → **Ethan-1-ol** (ethanol).
+
+<div class="keypoint">
+
+The three most important IUPAC rule facts for exams: (1) longest chain wins, (2) number to give functional group the lowest locant, (3) suffix determines compound class (−ane = alkane, −ene = alkene, −yne = alkyne, −ol = alcohol, −oic acid = carboxylic acid).
+
+</div>
+
+---
 
 ## Chapter F4 — Fuels
 
@@ -1317,7 +1441,7 @@ Hydrogen has by far the highest calorific value — nearly 3× petrol. This is w
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["FUELS"]:::root
     R --> CO["Coal Types"]:::key
     R --> PE["Petroleum Products"]:::key
@@ -1349,7 +1473,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["KEY CHEMISTRY CONCEPTS FOR GA"]:::root
     R --> CF["Common Chemical Formulae"]:::key
     R --> LA["Lab Tests and Observations"]:::key
@@ -1396,9 +1520,26 @@ Three "first" questions that appear repeatedly: **First synthetic plastic = Bake
 
 </div>
 
+<div class="mnemonic">
+
+**Polymer quick links:**
+- **Nylon** = Nylon ropes, stockings, parachutes (**N**ot natural, **N**ails everything)
+- **Teflon** = Non-stick (Teflon = "Tef-**lon**g lasting non-stick")
+- **Bakelite** = Electrical switches — thermosetting (cannot melt again = "Bake once, set forever")
+- **PVC** = Pipes and wires (**P**ipes, **V**inyl, **C**ables — same 3 letters)
+- **PET/Terylene** = Bottles and polyester fabric (**P**lastic **E**very**T**ime = bottles and fabric)
+
+</div>
+
+<div class="examtip">
+
+⚠️ **TRAP — Thermoplastic vs Thermosetting:** "Bakelite can be remoulded by heating." — FALSE. Bakelite is **thermosetting** — once set, it cannot be melted again. Common thermoplastics (CAN remould): PVC, polythene, nylon, PET. Thermosetting (CANNOT remould): Bakelite, melamine, epoxy resin. Examiners ask this distinction specifically about Bakelite every few papers.
+
+</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["POLYMERS"]:::root
     R --> NP["Natural Polymers"]:::key
     R --> SP["Synthetic Polymers"]:::key
@@ -1429,7 +1570,7 @@ Natural rubber (polyisoprene) is sticky, weak, and melts in summer heat. In 1839
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["RUBBER AND VULCANISATION"]:::root
     R --> NR["Natural Rubber"]:::key
     R --> VU["Vulcanisation Process"]:::date
@@ -1467,9 +1608,32 @@ flowchart TD
 | Mustard oil | Argemone oil | HNO₃ turns yellow (sanguinarine test) |
 | Pepper | Papaya seeds | Water — papaya seeds are lighter, float |
 
+### Artificial Sweeteners — SSC Favourite
+
+Artificial sweeteners are synthetic compounds that taste sweet but contribute zero or very few calories. SSC CGL tests the names, sweetness order, and who discovered them.
+
+| Sweetener | Sweetness vs sugar | Discovered | Key fact |
+|-----------|--------------------|------------|---------|
+| **Saccharin** | ~550 times | 1879 (Fahlberg & Remsen) | **First** artificial sweetener; coal tar derivative; bitter aftertaste; banned in US 1977–2000 (ban later reversed) |
+| **Aspartame** | ~200 times | 1965 | Used in diet colas (Pepsi Max, Diet Coke); breaks down at high temperature; **NOT used in baking** |
+| **Sucralose** | ~600 times | 1976 | Made from sugar (chlorinated sucrose); heat-stable; used in baking products |
+| **Stevia** | ~200–300 times | — | Natural sweetener from Stevia plant leaves; widely used in India |
+
+<div class="keypoint">
+
+**Sweetness order (high-yield):** Sucralose (600×) > Saccharin (550×) > Aspartame (200×) > Sugar (1×). Saccharin = FIRST artificial sweetener (1879). Sucralose = SWEETEST of the three most common ones.
+
+</div>
+
+<div class="pitfall">
+
+**Exam trap:** "Saccharin is derived from sugar" — FALSE. Saccharin is derived from **toluene/coal tar** (it is synthetic). Sucralose IS derived from sugar (chlorinated sucrose). Examiners swap these descriptions.
+
+</div>
+
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["FOOD SCIENCE"]:::root
     R --> MC["Macronutrients"]:::key
     R --> PR["Food Preservation Methods"]:::key
@@ -1508,7 +1672,7 @@ Synthetic detergents (alkyl benzene sulphonates) work in hard water because thei
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["SOAPS, DETERGENTS AND WATER"]:::root
     R --> SO["Soap"]:::key
     R --> DE["Detergents"]:::key
@@ -1557,7 +1721,7 @@ Penicillin — discovered by Alexander Fleming in **1928** when he noticed the m
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["MEDICINES AND DRUGS"]:::root
     R --> AB["Antibiotics"]:::date
     R --> AN["Analgesics (Pain killers)"]:::key
@@ -1607,7 +1771,7 @@ The main greenhouse gas by volume is CO₂. But the strongest greenhouse gas by 
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["AIR POLLUTION — CHEMISTRY VIEW"]:::root
     R --> PO["Primary Pollutants"]:::key
     R --> SE["Secondary Pollutants"]:::key
@@ -1638,7 +1802,7 @@ flowchart TD
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["OZONE LAYER"]:::root
     R --> ST["Ozone in Stratosphere"]:::key
     R --> DE["Depletion Mechanism"]:::proc
@@ -1674,6 +1838,241 @@ flowchart TD
 | Minamata disease | Mercury (Hg) poisoning from industrial discharge | Minamata Bay, Japan (1950s) |
 | Itai-Itai disease | Cadmium (Cd) poisoning from mining discharge | Jinzu River, Japan (1950s) |
 | Bhopal gas tragedy | MIC (methyl isocyanate) gas leak | Bhopal, India, 1984 |
+
+---
+
+\newpage
+
+# PART J — ELECTROCHEMISTRY {#part-j}
+
+<div class="chapter-summary">
+<div class="mermaid">
+flowchart LR
+    R["ELECTROCHEMISTRY"]:::root
+    R --> EL["Electrolysis"]:::key
+    R --> GA["Galvanic / Voltaic Cell"]:::key
+    R --> FA["Faraday's Laws"]:::proc
+    R --> BA["Batteries"]:::key
+    EL --> EL1["Electrical energy -> Chemical change<br>NON-spontaneous; needs external DC power supply<br>Electrolyte + two electrodes + power source"]:::key
+    EL --> EL2["Anode (+): OXIDATION occurs (OIL)<br>Cathode (-): REDUCTION occurs (RIG)<br>Memory: OILRIG"]:::key
+    GA --> GA1["Chemical energy -> Electrical energy<br>SPONTANEOUS redox reaction<br>Daniel cell: Zn/ZnSO4 || CuSO4/Cu; EMF = 1.1 V"]:::key
+    GA --> GA2["Salt bridge: KCl in agar-agar<br>Maintains charge neutrality between half-cells<br>Anode = oxidation = negative; Cathode = reduction = positive"]:::key
+    FA --> FA1["First Law: m = Z x I x t<br>Mass deposited proportional to charge passed<br>Z = electrochemical equivalent (g/C)"]:::proc
+    FA --> FA2["Second Law: m1/m2 = E1/E2<br>Same charge deposits in ratio of equivalent weights<br>Faraday constant F = 96,500 C/mol"]:::proc
+    BA --> BA1["Dry cell: MnO2 cathode, Zn anode, NH4Cl electrolyte; 1.5V<br>Lead-acid: PbO2 cathode, Pb anode, H2SO4; 2V/cell<br>Car battery = 6 cells in series = 12V"]:::key
+    BA --> BA2["Li-ion: LiCoO2 cathode, graphite anode; 3.6V<br>Fuel cell: continuous; H2 fuel, O2 from air; 1.2V<br>Spacecraft used H2-O2 fuel cells (Apollo missions)"]:::key
+    classDef key fill:#dbeafe,stroke:#2563eb,color:#1e3a5f
+    classDef trap fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    classDef date fill:#fef3c7,stroke:#d97706,color:#78350f
+    classDef proc fill:#dcfce7,stroke:#16a34a,color:#14532d
+    classDef root fill:#f3e8ff,stroke:#9333ea,color:#4c1d95
+</div>
+</div>
+
+## Chapter J1 — What is Electrochemistry?
+
+Electrochemistry is the branch of chemistry dealing with the interconversion of **electrical energy and chemical energy**. It covers two fundamental processes:
+
+- **Electrolysis** — electrical energy drives a non-spontaneous chemical change (external power supply forces a reaction that wouldn't occur on its own).
+- **Galvanic/Voltaic cell** — a spontaneous redox reaction produces electrical energy (chemical reaction generates a current).
+
+<div class="keypoint">
+
+The key distinction: **Electrolysis = electricity IN → chemistry OUT** (non-spontaneous). **Galvanic cell = chemistry IN → electricity OUT** (spontaneous). Examiners regularly swap these — know which direction the energy flows.
+
+</div>
+
+---
+
+## Chapter J2 — Electrolytic Cell
+
+An electrolytic cell consists of:
+1. An **electrolyte** — an ionic compound in solution or molten form (conducts electricity via ion movement).
+2. Two **electrodes** — conductors dipped into the electrolyte.
+3. An **external DC power supply** — forces the non-spontaneous reaction.
+
+### Electrode Rules (very frequently tested)
+
+| Electrode | Terminal | Charge | Reaction | Memory |
+|-----------|---------|--------|----------|--------|
+| **Anode** | +ve terminal | Positive | **Oxidation** (loses electrons) | OIL |
+| **Cathode** | −ve terminal | Negative | **Reduction** (gains electrons) | RIG |
+
+<div class="keypoint">
+
+**OILRIG** — Oxidation Is Loss, Reduction Is Gain. This applies in BOTH electrolytic cells AND galvanic cells. The anode is always where oxidation occurs; the cathode is always where reduction occurs.
+
+</div>
+
+### Key Electrolysis Examples (exam-critical table)
+
+| Electrolyte | Cathode product | Anode product | Industrial use |
+|-------------|----------------|--------------|---------------|
+| Dilute H₂SO₄ (dil. sulphuric acid) | H₂ gas | O₂ gas | Production of hydrogen |
+| CuSO₄ solution (copper electrodes) | Cu deposited on cathode | Cu dissolved from anode | Electroplating / copper refining |
+| Molten NaCl — Down's process | Na metal | Cl₂ gas | Industrial sodium metal production |
+| Molten Al₂O₃ in cryolite — Hall-Héroult process | Al metal | O₂ (burns carbon anode) | Industrial aluminium extraction |
+| Brine (NaCl solution) — Chlor-alkali process | H₂ gas | Cl₂ gas; NaOH formed in solution | Bleaching powder, PVC, caustic soda |
+
+<div class="pitfall">
+
+**Exam trap — electrolysis of dilute H₂SO₄:** H₂ forms at the **CATHODE** (negative electrode) and O₂ forms at the **ANODE** (positive electrode). Students frequently reverse this. Remember: H⁺ ions move to the negative cathode → H₂ forms there. O²⁻/OH⁻ ions move to positive anode → O₂ forms there.
+
+</div>
+
+<div class="examtip">
+
+**Electroplating** uses CuSO₄ solution: the object to be plated is the **cathode** (Cu deposits on it); the copper bar is the **anode** (Cu dissolves to replenish Cu²⁺ ions). The electrolyte concentration stays constant throughout the process.
+
+</div>
+
+---
+
+## Chapter J3 — Faraday's Laws of Electrolysis (VERY high yield)
+
+Michael Faraday (1834) gave two quantitative laws governing electrolysis.
+
+### First Law
+
+> **The mass of substance deposited at an electrode is directly proportional to the quantity of electricity (charge) passed.**
+
+$$m = Z \times Q = Z \times I \times t$$
+
+Where:
+- m = mass deposited (grams)
+- Z = **electrochemical equivalent** (g per coulomb)
+- Q = charge passed (coulombs) = I × t
+- I = current (amperes)
+- t = time (seconds)
+
+### Second Law
+
+> **When the same quantity of electricity is passed through different electrolytes, the masses of substances deposited are proportional to their equivalent weights.**
+
+$$\frac{m_1}{m_2} = \frac{E_1}{E_2}$$
+
+Where E = equivalent weight = Atomic mass ÷ Valency.
+
+**Example:** Same charge deposits 1.08 g of Ag (E = 108) and 0.32 g of Cu (E = 32). Ratio = 108 : 32 = 27 : 8. ✓
+
+### The Faraday Constant
+
+<div class="keypoint">
+
+**1 Faraday (F) = 96,500 coulombs per mole** = charge carried by one mole of electrons (6.022 × 10²³ electrons). This is the single most important number in electrochemistry for competitive exams. F = 96,485 C/mol exactly, but use 96,500 in numerical problems.
+
+</div>
+
+**Electrochemical equivalent:** Z = Equivalent weight / 96,500 (g/C)
+
+**Quick formula to remember:**
+
+$$m = \frac{E \times I \times t}{96500} = \frac{E \times Q}{96500}$$
+
+---
+
+## Chapter J4 — Galvanic / Voltaic Cell
+
+A galvanic cell converts a **spontaneous** chemical (redox) reaction into electrical energy. It consists of:
+- Two **half-cells** (each contains a metal electrode in its salt solution)
+- A **salt bridge** — a U-tube containing KCl in agar-agar gel; allows ion flow to maintain electrical neutrality without mixing the two solutions
+- An **external wire** — carries electron flow (the actual current)
+
+### The Daniel Cell (most exam-tested example)
+
+**Zn | ZnSO₄ (aq) || CuSO₄ (aq) | Cu**
+
+| Half-cell | Electrode | Process | Sign |
+|-----------|----------|---------|------|
+| Zinc in ZnSO₄ | Zn → Zn²⁺ + 2e⁻ | Oxidation | Anode (−ve terminal) |
+| Copper in CuSO₄ | Cu²⁺ + 2e⁻ → Cu | Reduction | Cathode (+ve terminal) |
+
+- **Zinc plate dissolves** over time (Zn is oxidised, ions go into solution).
+- **Copper deposits** on the copper plate (Cu²⁺ ions from solution are reduced).
+- **EMF ≈ 1.1 V**
+- Electrons flow externally from Zn (anode) → Cu (cathode).
+- In the salt bridge, K⁺ ions move toward the CuSO₄ half-cell, Cl⁻ ions move toward the ZnSO₄ half-cell — maintaining neutrality.
+
+**Cell notation rule:** Anode written LEFT | anode solution || cathode solution | Cathode RIGHT (double bar = salt bridge).
+
+### EMF of a cell
+
+$$E°_{cell} = E°_{cathode} - E°_{anode}$$
+
+For the Daniel cell: E° = +0.34 V − (−0.76 V) = **+1.10 V**
+
+A positive E°cell means the reaction is spontaneous.
+
+---
+
+## Chapter J5 — Standard Electrode Potential and Electrochemical Series
+
+Every electrode has a standard electrode potential (E°) measured against the **Standard Hydrogen Electrode (SHE), which is set at 0.00 V**.
+
+### Reading the series
+
+| Half-reaction (reduction) | E° (V) | Notes |
+|--------------------------|--------|-------|
+| F₂ + 2e⁻ → 2F⁻ | +2.87 | Strongest oxidising agent |
+| Au³⁺ + 3e⁻ → Au | +1.50 | Noble metal |
+| Cl₂ + 2e⁻ → 2Cl⁻ | +1.36 | |
+| Cu²⁺ + 2e⁻ → Cu | +0.34 | |
+| 2H⁺ + 2e⁻ → H₂ | 0.00 | Reference (SHE) |
+| Fe²⁺ + 2e⁻ → Fe | −0.44 | |
+| Zn²⁺ + 2e⁻ → Zn | −0.76 | |
+| Na⁺ + e⁻ → Na | −2.71 | |
+| Li⁺ + e⁻ → Li | −3.04 | Strongest reducing agent |
+
+<div class="keypoint">
+
+**Higher E° → stronger oxidising agent → tends to be reduced (cathode side).** **Lower E° (more negative) → stronger reducing agent → tends to be oxidised (anode side).** The electrochemical series also predicts which metal displaces another: a metal lower in the series (more negative E°) can displace a metal higher in the series (less negative / positive E°) from its salt solution. This links directly to the activity series (Part E).
+
+</div>
+
+---
+
+## Chapter J6 — Batteries (Common Exam Questions)
+
+A **battery** is one or more galvanic cells connected in series.
+- **Primary (non-rechargeable)** — reaction is irreversible; cannot be recharged.
+- **Secondary (rechargeable)** — electrode reactions are reversible; can be charged and reused.
+- **Fuel cell** — reactants (fuel + oxidant) supplied continuously; produces electricity as long as fuel flows.
+
+### Battery Comparison Table
+
+| Battery | Primary / Secondary | Cathode | Anode | Electrolyte | EMF | Common use |
+|---------|--------------------|---------|----|-------------|-----|-----------|
+| Dry cell (Leclanché) | Primary | MnO₂ | Zn | NH₄Cl paste | 1.5 V | Torches, remotes, clocks |
+| Lead-acid | Secondary | PbO₂ | Pb | Dilute H₂SO₄ | 2 V/cell | Car batteries (12 V = 6 cells) |
+| Nickel-Cadmium (NiCd) | Secondary | NiO(OH) | Cd | KOH | 1.2 V | Cordless power tools |
+| Lithium-ion (Li-ion) | Secondary | LiCoO₂ | Graphite | Li salt in organic solvent | 3.6 V | Smartphones, EVs, laptops |
+| H₂-O₂ Fuel cell | Fuel cell (continuous) | O₂ (air) | H₂ | KOH / PEM membrane | ~1.2 V | Spacecraft, EVs, buses |
+
+<div class="pitfall">
+
+**Trap cards — batteries:**
+
+- "Car battery uses which acid?" → **Dilute H₂SO₄** (sulphuric acid) — NOT HCl, NOT HNO₃.
+- "Which battery is used in spacecraft / Apollo missions?" → **H₂-O₂ Fuel cell** (also produces drinking water as a by-product).
+- "Dry cell electrolyte?" → **NH₄Cl** (ammonium chloride paste) — NOT sulphuric acid.
+- "What is the EMF of a single lead-acid cell?" → **2 V**. A 12 V car battery = 6 cells in series.
+- "Li-ion battery cathode?" → **LiCoO₂** (lithium cobalt oxide). Anode = graphite (intercalation electrode).
+- "Faraday constant value?" → **96,500 C/mol** (or 96,485 C/mol exactly).
+- "In a galvanic cell, which electrode is the anode?" → The one where **oxidation** occurs — the **negative** terminal (zinc in the Daniel cell). In electrolytic cells the anode is +ve (connected to the +ve terminal of the external supply).
+
+</div>
+
+### Chapter J — Self-test: 5 PYQ-style questions
+
+1. Which of the following laws states that mass deposited during electrolysis is proportional to the quantity of electricity passed? *(Faraday's First Law)*
+
+2. In the electrolysis of dilute H₂SO₄, which gas is produced at the cathode? *(H₂)*
+
+3. The EMF of a Daniel cell is approximately: (a) 0.34 V (b) 0.76 V **(c) 1.10 V** (d) 2.00 V
+
+4. Which battery is used in Apollo spacecraft? *(H₂-O₂ Fuel cell)*
+
+5. 1 Faraday of charge = how many coulombs? *(96,500 C)*
 
 ---
 
@@ -1786,7 +2185,7 @@ Plaster of Paris vs Gypsum — a classic trap: Gypsum is CaSO₄·2H₂O (two wa
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["WATER POLLUTION — CHEMISTRY VIEW"]:::root
     R --> HM["Heavy Metal Poisoning"]:::key
     R --> GW["Groundwater Contaminants"]:::key
@@ -1855,7 +2254,7 @@ Brass = copper + zinc. Bronze = copper + tin. These two are confused in nearly e
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["NPK MACRONUTRIENTS"]:::root
     R --> N["Nitrogen (N)"]:::key
     R --> P["Phosphorus (P)"]:::key
@@ -1930,7 +2329,7 @@ Rhizobium bacteria live in root nodules of legumes (pulses — peas, beans, lent
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["BIOFERTILISERS"]:::root
     R --> NF["Nitrogen-Fixing Biofertilisers"]:::key
     R --> PH["Phosphate-Solubilising"]:::key
@@ -2002,7 +2401,7 @@ For the three big acid/base industrial processes: **"Haber makes ammonia (H for 
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["IUPAC NAMING OF ORGANIC COMPOUNDS"]:::root
     R --> RU["Basic Rules"]:::proc
     R --> SU["Suffixes by Functional Group"]:::key
@@ -2082,7 +2481,7 @@ flowchart LR
 
 <div class="chapter-summary">
 <div class="mermaid">
-flowchart TD
+flowchart LR
     R["TESTS FOR FUNCTIONAL GROUPS"]:::root
     R --> AL["Alcohol (-OH)"]:::key
     R --> AD["Aldehyde (-CHO)"]:::key

@@ -220,6 +220,216 @@
       "generator_tag": "gemini-batch-fix-2026-05-15",
       "generated_at": "2026-05-19T08:44:32+00:00",
       "id": "sgk_QNT_PIPES_CISTERNS_IV_MIXED_00007"
+    },
+    {
+      "stem": "Pipe A fills a tank at exactly twice the rate of Pipe B. When both pipes work together, they fill the tank in 10 hours. How long does Pipe B alone take to fill the same tank?",
+      "options": [
+        {
+          "option_text": "15 hours to fill the full tank",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 hours to fill the full tank",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 hours to fill the full tank",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 hours to fill the full tank",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "Let Pipe B's rate = 1/b per hour. Then Pipe A's rate = 2/b. Together: 3/b = 1/10, so b = 30. Pipe B alone takes 30 hours. The very common trap is 15 hours, which is actually Pipe A's time (30/2). Choosing 20 hours comes from simply doubling the combined time of 10 hours, ignoring the rate relationship entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:53:06+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_IV_MIXED_00008"
+    },
+    {
+      "stem": "A completely full water tank has two drainage pipes P and Q. Pipe P alone empties the full tank in 18 hours and Pipe Q alone in 9 hours. If both outlets are opened simultaneously, in how many hours will the tank be completely empty?",
+      "options": [
+        {
+          "option_text": "4 hours 30 minutes to empty the tank",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 hours to completely drain the tank",
+          "is_correct": true
+        },
+        {
+          "option_text": "9 hours to completely drain the tank",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 hours to completely drain the tank",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "Combined drain rate = 1/18 + 1/9 = 1/18 + 2/18 = 3/18 = 1/6 per hour, so the tank empties in 6 hours. The most common distractor is 9 hours — that is Q's time alone, ignoring P's contribution. The 4.5-hour trap arises from halving Q's solo time without any justification.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:53:06+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_IV_MIXED_00009"
+    },
+    {
+      "stem": "A pipe fills a cistern in 24 hours. After running for 8 hours, a crack develops at the bottom that would drain the full cistern in 36 hours on its own. How many additional hours are needed after the crack appears for the cistern to become completely full?",
+      "options": [
+        {
+          "option_text": "32 hours more to completely fill the cistern",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 hours more to completely fill the cistern",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 hours more to completely fill the cistern",
+          "is_correct": false
+        },
+        {
+          "option_text": "48 hours more to completely fill the cistern",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "After 8 hours, 8/24 = 1/3 is filled; remaining = 2/3. With the crack open, net fill rate = 1/24 − 1/36 = 3/72 − 2/72 = 1/72 per hour. Time for remaining 2/3: (2/3) ÷ (1/72) = 48 hours. The trap of 36 hours comes from confusing the crack's own drain time with the additional time needed to complete filling.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:53:06+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_IV_MIXED_00010"
+    },
+    {
+      "stem": "Pipes A and B together fill a tank in 12 hours; Pipes B and C together fill the same tank in 15 hours. Pipe A is twice as efficient as Pipe C. How long does Pipe A alone take to fill the tank?",
+      "options": [
+        {
+          "option_text": "20 hours to fill the tank alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 hours to fill the tank alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 hours to fill the tank alone",
+          "is_correct": true
+        },
+        {
+          "option_text": "36 hours to fill the tank alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "A+B = 1/12 and B+C = 1/15, so A − C = 1/12 − 1/15 = 5/60 − 4/60 = 1/60. Since A = 2C, substituting gives C = 1/60 (takes 60 hours alone) and A = 2/60 = 1/30, so A alone takes 30 hours. The 20-hour trap comes from ignoring the A = 2C condition and guessing based on LCM shortcuts.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:53:06+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_IV_MIXED_00011"
+    },
+    {
+      "stem": "Pipe A fills a tank in 20 hours and Pipe B in 30 hours. Both pipes are opened together at time zero. After how many hours should Pipe B be closed so that the tank is exactly full at the 15-hour mark?",
+      "options": [
+        {
+          "option_text": "After 5 hours, pipe B must be shut off",
+          "is_correct": false
+        },
+        {
+          "option_text": "After 6 hours, pipe B must be shut off",
+          "is_correct": false
+        },
+        {
+          "option_text": "After 7.5 hours, pipe B must be shut off",
+          "is_correct": true
+        },
+        {
+          "option_text": "After 10 hours, pipe B must be shut off",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Let B run for t hours. Work equation: t(1/20 + 1/30) + (15 − t)(1/20) = 1 → t(5/60) + (15 − t)(3/60) = 1 → 5t + 45 − 3t = 60 → 2t = 15 → t = 7.5 hours. The 10-hour trap comes from setting up the equation incorrectly, forgetting that A continues working alone after B closes.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:53:06+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_IV_MIXED_00012"
+    },
+    {
+      "stem": "Pipe X fills a tank in 12 hours. A small leak at the bottom causes the tank to fill in 16 hours instead. Pipe Y alone fills the same tank in 8 hours. If only Pipe Y and the leak are active (Pipe X is shut), how long does it take to fill the tank?",
+      "options": [
+        {
+          "option_text": "8 hours 48 minutes to fill the tank",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 hours 36 minutes to fill the tank",
+          "is_correct": true
+        },
+        {
+          "option_text": "9 hours 12 minutes to fill the tank",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 hours 24 minutes to fill the tank",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "First isolate the leak: with X open, fill rate = 1/16; X alone = 1/12; so leak rate = 1/12 − 1/16 = 4/48 − 3/48 = 1/48 per hour (drains in 48 hours). Now Y + leak: 1/8 − 1/48 = 6/48 − 1/48 = 5/48 per hour. Time = 48/5 = 9.6 hours = 9 hours 36 minutes. The 10 hours 24 minutes trap arises from wrongly using 1/16 as the leak's drain rate rather than computing it as the difference.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:53:06+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_IV_MIXED_00013"
+    },
+    {
+      "stem": "Pipes A, B, and C fill a tank in 20, 25, and 60 hours respectively. They open in strict rotation — Pipe A for 1 hour, then Pipe B for 1 hour, then Pipe C for 1 hour — and this 3-hour cycle repeats. At exactly what point does the tank first become completely full, and during which pipe's turn does it happen?",
+      "options": [
+        {
+          "option_text": "27 hours 48 minutes, during Pipe A's turn",
+          "is_correct": true
+        },
+        {
+          "option_text": "27 hours 20 minutes, during Pipe B's turn",
+          "is_correct": false
+        },
+        {
+          "option_text": "28 hours 00 minutes, at Pipe C's turn end",
+          "is_correct": false
+        },
+        {
+          "option_text": "29 hours 36 minutes, during Pipe C's turn",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "Each 3-hour cycle fills 1/20 + 1/25 + 1/60 = 15/300 + 12/300 + 5/300 = 32/300 = 8/75. After 9 complete cycles (27 hours): 9 × 8/75 = 72/75 = 24/25 full; remaining = 1/25. In the 10th cycle, Pipe A opens first at rate 1/20. Time to fill 1/25: (1/25) ÷ (1/20) = 20/25 = 4/5 hour = 48 minutes. Tank fills at 27 h 48 min during A's turn. Choosing Pipe B's turn is the distractor for candidates who misjudge that 1/25 > 1/20 and assume A's slot is insufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T04:53:06+00:00",
+      "id": "sgk_QNT_PIPES_CISTERNS_IV_MIXED_00014"
     }
   ]
 }

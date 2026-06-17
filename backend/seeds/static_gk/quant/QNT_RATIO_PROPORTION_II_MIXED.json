@@ -235,6 +235,216 @@
       "generator_tag": "claude-opus-2026-04-25-qnt-rp-07",
       "generated_at": "2026-04-25T01:40:00+00:00",
       "id": "sgk_QNT_RATIO_PROPORTION_II_MIXED_00007"
+    },
+    {
+      "stem": "The duplicate ratio of 4 : 5 is:",
+      "options": [
+        {
+          "option_text": "8 to 10, formed by doubling both terms of the ratio",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 to 25, formed by squaring both terms of the ratio",
+          "is_correct": true
+        },
+        {
+          "option_text": "64 to 125, formed by cubing both terms of the ratio",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 to 5, as ratio value is unaffected by any operation",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "The duplicate ratio of a:b is a²:b². For 4:5, that gives 4²:5² = 16:25. Option A (8:10) merely multiplies each term by 2, which is equivalent to the original ratio 4:5 — it is not raised to the power 2. Option C is the triplicate ratio (cubes), a different concept entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:14:49+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_II_MIXED_00008"
+    },
+    {
+      "stem": "What is the mean proportional between 9 and 25?",
+      "options": [
+        {
+          "option_text": "17, the arithmetic mean (9 + 25) ÷ 2 = 17",
+          "is_correct": false
+        },
+        {
+          "option_text": "225, the product of 9 and 25 before taking square root",
+          "is_correct": false
+        },
+        {
+          "option_text": "15, the geometric mean: square root of (9 × 25)",
+          "is_correct": true
+        },
+        {
+          "option_text": "45, computed by dividing the product 9 × 25 by 5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "Mean proportional between a and b = √(ab). Here √(9 × 25) = √225 = 15. Option A (17) is the arithmetic mean — the single most common substitution error. Option B (225) correctly multiplies the two numbers but forgets to take the square root, giving the third proportional, not the mean proportional.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:14:49+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_II_MIXED_00009"
+    },
+    {
+      "stem": "The incomes of A and B are in the ratio 5 : 4 and their expenditures are in the ratio 3 : 2. If A saves ₹4,000 and B saves ₹6,000, what is A's monthly income?",
+      "options": [
+        {
+          "option_text": "₹20,000, confusing A's income with B's income",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹25,000, correctly found as 5 × k with k = 5,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹5,000, reporting the unit value k instead of 5k",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹15,000, reporting A's expenditure as A's income",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Let incomes = 5k and 4k; expenditures = 3m and 2m. A saves: 5k − 3m = 4,000 …(i). B saves: 4k − 2m = 6,000 …(ii). From (ii), m = 2k − 3,000. Substituting in (i): 5k − 6k + 9,000 = 4,000, giving k = 5,000. A's income = 5 × 5,000 = ₹25,000. Option A (₹20,000) is B's income (4k) — the most frequent slip once k is correctly found.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:14:49+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_II_MIXED_00010"
+    },
+    {
+      "stem": "The compound ratio of (2 : 3), (4 : 9), and (5 : 8) is:",
+      "options": [
+        {
+          "option_text": "40 : 216, before dividing out the common factor 8",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 : 27, after simplifying the product 40 : 216 by 8",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 : 27, missing one multiplier in the numerator",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 : 9, by incorrectly cancelling the middle ratio terms",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Compound ratio = product of all antecedents : product of all consequents = (2×4×5) : (3×9×8) = 40 : 216. GCD(40, 216) = 8, so simplified = 5 : 27. Option A is the unsimplified intermediate step. Option C (10:27) uses only 2×5 = 10 in the numerator, omitting the factor 4 from the second ratio — a partial-multiplication error.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:14:49+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_II_MIXED_00011"
+    },
+    {
+      "stem": "The price of an article is increased in the ratio 5 : 7. What is the percentage increase in price?",
+      "options": [
+        {
+          "option_text": "28.6%, dividing the 2-unit rise by the new price 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "40.0%, dividing the 2-unit rise by the old price 5",
+          "is_correct": true
+        },
+        {
+          "option_text": "16.7%, dividing the 2-unit rise by the sum 5 + 7 = 12",
+          "is_correct": false
+        },
+        {
+          "option_text": "14.3%, dividing 1 unit by the new-price denominator 7",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "Percentage increase = (New − Old) / Old × 100 = (7 − 5) / 5 × 100 = 40%. Option A (28.6%) is the most tempting trap — students divide by the new price 7 instead of the original price 5, effectively computing percentage decrease from new to old rather than increase from old to new.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:14:49+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_II_MIXED_00012"
+    },
+    {
+      "stem": "If (3a + 2b) : (5a − 3b) = 2 : 1, what is the value of a : b?",
+      "options": [
+        {
+          "option_text": "7 : 8, from inverting the solution at the final step",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 : 7, from solving 3a + 2b = 2(5a − 3b) correctly",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 : 2, by reading coefficient of a to coefficient of b",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 : 3, misreading the outer ratio 2 : 1 directly as a : b",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Cross-multiplying: 3a + 2b = 2(5a − 3b) → 3a + 2b = 10a − 6b → 8b = 7a → a : b = 8 : 7. Verify: (3×8 + 2×7) : (5×8 − 3×7) = 38 : 19 = 2 : 1 ✓. Option C (3:2) is a pattern-recognition shortcut that reads only the a-coefficient and b-coefficient from the first expression without solving the equation — plausible but wrong.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:14:49+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_II_MIXED_00013"
+    },
+    {
+      "stem": "A, B, C have monthly incomes in the ratio 5 : 6 : 8. B spends 60% of his income and saves ₹3,600. C's monthly expenditure equals 75% of A's monthly income. What are C's monthly savings?",
+      "options": [
+        {
+          "option_text": "₹3,000, if C spent 75% of her own income instead of A's",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹5,250, if C's 75% benchmark were applied to B's income",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹5,625, confusing C's expenditure amount for her savings",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹6,375, correctly applying 75% of A's income as C's cost",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "B saves 40% (spends 60%): 0.4 × 6k = 3,600 → k = 1,500. So A's income = ₹7,500; B = ₹9,000; C = ₹12,000. C's expenditure = 75% of A's income = 0.75 × 7,500 = ₹5,625. C's savings = 12,000 − 5,625 = ₹6,375. Option A (₹3,000) is the most common error — applying 75% to C's own income (12,000) gives expenditure ₹9,000 and savings ₹3,000, ignoring the problem's explicit cross-reference to A's income.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-13",
+      "generated_at": "2026-06-13T05:14:49+00:00",
+      "id": "sgk_QNT_RATIO_PROPORTION_II_MIXED_00014"
     }
   ]
 }
