@@ -1,7 +1,7 @@
 import bcrypt
+import jwt
 from datetime import datetime, timedelta
 from typing import Any, Union
-from jose import jwt
 from app.core.config import settings
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
@@ -39,7 +39,6 @@ def create_password_reset_token(subject: Union[str, Any]) -> str:
 
 def verify_password_reset_token(token: str) -> str:
     """Returns the user ID (sub) if the token is valid, otherwise raises."""
-    from jose import JWTError
     try:
         payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
         user_id: str = payload.get("sub")
@@ -47,5 +46,6 @@ def verify_password_reset_token(token: str) -> str:
         if user_id is None or token_type != "reset":
             raise ValueError("Invalid token")
         return user_id
-    except JWTError:
+    except jwt.PyJWTError:
         raise ValueError("Invalid or expired token")
+
