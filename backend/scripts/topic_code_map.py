@@ -1536,6 +1536,37 @@ TOPIC_CODE_MAP: dict[str, str] = {
     "VOCAB_ROOTS_CHRON_LOG_II_MIXED":           "VOCAB_WORD_ROOTS",
     "VOCAB_ROOTS_DICT_II_MIXED":                "VOCAB_WORD_ROOTS",
     "VOCAB_ROOTS_DICT_MIXED":                   "VOCAB_WORD_ROOTS",
+
+    # ─── QRE seed-code aliases → canonical ───
+    # English: seed codes used heavily; map to their canonical taxonomy entries
+    "ENG_FIB":                                  "ENG_FIB",
+    "ENG_SPELLING":                             "ENG_SPELLING",
+    "ENG_TENSES":                               "ENG_TENSES",
+    "ENG_SENTENCE_IMP":                         "ENG_SENTENCE_IMP",
+    "ENG_SENT_IMPROVE":                         "ENG_SENTENCE_IMP",
+    "ENG_ERROR":                                "ENG_ERROR_SPOT",
+    "ENG_OWS":                                  "ENG_OWS",
+    "ENG_IDIOMS":                               "ENG_IDIOMS",
+    "ENG_SYNONYMS":                             "ENG_SYNONYMS",
+    "ENG_ANTONYMS":                             "ENG_ANTONYMS",
+    # Quant: new patterns for SSC CGL
+    "QA_NUMBER_SYS":                            "QA_NUMBER",
+    "QA_BOATS_STREAMS":                         "QA_BOATS",
+    "QA_QUADRATIC":                             "QA_QUADRATIC",
+    # Reasoning: variant codes → canonical
+    "RSN_BLOOD_REL":                            "RSN_BLOOD",
+    "RSN_SEATING":                              "RSN_SEATING",
+    "RSN_STMT_ASSUMPTION":                      "RSN_STMT_ASSUMPTION",
+    "RSN_STMT_ASSUM":                           "RSN_STMT_ASSUMPTION",
+    "RSN_CLASSIFY":                             "RSN_CLASSIFICATION",
+    "RSN_CONCLUSIONS":                          "RSN_CONCLUSIONS",
+    "RSN_ARGUMENTS":                            "RSN_ARGUMENTS",
+    "RSN_CAUSE_EFFECT":                         "RSN_CAUSE_EFFECT",
+    "RSN_DECISION":                             "RSN_DECISION",
+    "RSN_NUMBER_PUZZLE":                        "RSN_MISSING_NUM",
+    "RSN_BLOOD_REL":                            "RSN_BLOOD",
+    "RSN_SEATING_CIRCULAR":                     "RSN_SEATING_CIRCULAR",
+    "RSN_SEATING_LINEAR":                       "RSN_SEATING_LINEAR",
 }
 
 

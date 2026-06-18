@@ -58,10 +58,95 @@ def _high_weight_codes() -> set[str]:
     return out
 
 
+_QRE_SUBJECT_MAP = {
+    "Quantitative Aptitude": "quant",
+    "Reasoning": "reasoning",
+    "English": "english",
+    "Vocabulary": "vocabulary",
+}
+
+
+def _taxonomy_zero_topics() -> list[dict]:
+    """Return virtual zero-question entries for taxonomy topics not yet in any seed file.
+    Only for QRE subjects so brand-new topics (e.g. QA_SURDS, RSN_WORD_FORM) get picked.
+    """
+    try:
+        import sys, os
+        _root = str(Path(__file__).resolve().parents[3])
+        if _root not in sys.path:
+            sys.path.insert(0, _root)
+        from backend.app.services.taxonomy_data import TAXONOMY_EXPANDED
+    except Exception:
+        try:
+            import importlib.util
+            _path = Path(__file__).resolve().parents[2] / "app" / "services" / "taxonomy_data.py"
+            spec = importlib.util.spec_from_file_location("taxonomy_data", _path)
+            mod = importlib.util.module_from_spec(spec)  # type: ignore
+            spec.loader.exec_module(mod)  # type: ignore
+            TAXONOMY_EXPANDED = mod.TAXONOMY_EXPANDED
+        except Exception:
+            return []
+
+    return [
+        {"topic_code": tc, "subject": subj, "topic": topic, "questions": 0,
+         "schema_versions": [], "needs_transcode": False, "needs_subject_canon": False,
+         "parity_fails": 0}
+        for subj, topic, tc, _kws in TAXONOMY_EXPANDED
+        if subj in _QRE_SUBJECT_MAP
+    ]
+
+
+def _canonical_map() -> dict[str, str]:
+    """Load topic_code_map: raw_code → canonical_code."""
+    try:
+        import importlib.util
+        _path = Path(__file__).resolve().parents[1] / "topic_code_map.py"
+        spec = importlib.util.spec_from_file_location("topic_code_map", _path)
+        mod = importlib.util.module_from_spec(spec)  # type: ignore
+        spec.loader.exec_module(mod)  # type: ignore
+        return getattr(mod, "TOPIC_CODE_MAP", {})
+    except Exception:
+        return {}
+
+
 def score_topics(state: dict) -> list[dict]:
     hw = _high_weight_codes()
-    by_subj_count = {s: 0 for s in SUBJECT_WEIGHT_TARGETS}
+    tc_map = _canonical_map()
+
+    # ── Step 1: aggregate state topics by CANONICAL topic_code ──────────────
+    # Many seed files use non-canonical codes (ENG_RC_MIXED, QNT_SI_PROG…).
+    # Resolve each to its canonical code via topic_code_map so the scorer
+    # gets accurate "existing" counts per canonical code.
+    canonical_agg: dict[str, dict] = {}
     for t in state.get("topics", []):
+        raw_tc = t["topic_code"]
+        canon_tc = tc_map.get(raw_tc, raw_tc)  # identity if not in map
+        if canon_tc not in canonical_agg:
+            canonical_agg[canon_tc] = {
+                "topic_code": canon_tc,
+                "subject": t["subject"],
+                "topic": t.get("topic") or t.get("topic_code", ""),
+                "questions": 0,
+                "schema_versions": [],
+                "needs_transcode": False,
+                "needs_subject_canon": False,
+                "parity_fails": 0,
+            }
+        canonical_agg[canon_tc]["questions"] += t["questions"]
+        if t.get("needs_transcode"):
+            canonical_agg[canon_tc]["needs_transcode"] = True
+        canonical_agg[canon_tc]["parity_fails"] += t.get("parity_fails", 0)
+
+    # ── Step 2: inject taxonomy zero-entries for brand-new QRE codes ────────
+    for vt in _taxonomy_zero_topics():
+        tc = vt["topic_code"]
+        if tc not in canonical_agg:
+            canonical_agg[tc] = vt
+
+    all_topics = list(canonical_agg.values())
+
+    by_subj_count = {s: 0 for s in SUBJECT_WEIGHT_TARGETS}
+    for t in all_topics:
         if t["subject"] in by_subj_count:
             by_subj_count[t["subject"]] += 1
     # Compute per-topic share for each subject
@@ -70,7 +155,7 @@ def score_topics(state: dict) -> list[dict]:
         for s in SUBJECT_WEIGHT_TARGETS
     }
     rows: list[dict] = []
-    for t in state.get("topics", []):
+    for t in all_topics:
         subj = t["subject"]
         if subj not in SUBJECT_WEIGHT_TARGETS:
             continue

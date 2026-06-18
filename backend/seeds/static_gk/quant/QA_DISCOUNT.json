@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Discount",
+  "topic_code": "QA_DISCOUNT",
+  "questions": [
+    {
+      "stem": "A shopkeeper marks an article at ₹800 and offers a 15% discount on it. What is the selling price of the article?",
+      "options": [
+        {
+          "option_text": "₹640 (by applying a 20% discount instead)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹700 (by subtracting a flat ₹100 from ₹800)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹680 (correctly computed as 85% of ₹800)",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹720 (by applying only a 10% discount on MP)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. SP = MP × (100 − Discount%) / 100 = 800 × 85/100 = ₹680. Option B (₹700) arises from subtracting a flat ₹100, ignoring that 15% of ₹800 = ₹120, not ₹100. Option D applies only 10% discount. **Short Trick:** Split 15% = 10% + 5%. 10% of 800 = 80; 5% = half of 80 = 40. Total discount = 120. SP = 800 − 120 = ₹680.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:01:22+00:00",
+      "id": "sgk_QA_DISCOUNT_00001"
+    },
+    {
+      "stem": "An article is sold at ₹918 after a 10% discount on its marked price. What is the marked price of the article?",
+      "options": [
+        {
+          "option_text": "₹1,020 (dividing SP by 0.9 gives the correct MP)",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1,000 (adding 10% of SP ₹91.8 to SP ₹918)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,008 (adding 10% of ₹918 to itself wrongly)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹990 (subtracting 10% from SP instead of MP)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. SP = MP × 90/100, so MP = SP × 100/90 = 918 × 100/90 = ₹1,020. Option B (₹1,000) is wrong because 10% of 918 = 91.8, and 918 + 91.8 ≠ 1000; moreover, MP must be found on MP's own base, not SP's base. Option D subtracts from SP rather than finding the original base. **Short Trick:** MP = SP ÷ 0.9. Multiply both by 10: 9180 ÷ 9 = ₹1,020. Key rule: to reverse a 10% discount, divide by 0.9.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:01:22+00:00",
+      "id": "sgk_QA_DISCOUNT_00002"
+    },
+    {
+      "stem": "Two successive discounts of 20% and 10% are given on an article. What is the equivalent single discount percentage?",
+      "options": [
+        {
+          "option_text": "25% (averaging the two discounts (20+10)/2)",
+          "is_correct": false
+        },
+        {
+          "option_text": "30% (adding 20% and 10% percentages directly)",
+          "is_correct": false
+        },
+        {
+          "option_text": "27% (incorrect partial multiplication of terms)",
+          "is_correct": false
+        },
+        {
+          "option_text": "28% (computed as 100 − (80 × 90)/100 = 28%)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. After 20% off, price = 80% of MP. After 10% on that = 90% of 80% = 72% of MP. Equivalent discount = 100 − 72 = 28%. Option B (30%) is the classic error: adding both discounts directly, forgetting the second 10% applies to an already-reduced price. **Short Trick:** Formula for two successive discounts a% and b%: Equivalent = a + b − (a×b)/100 = 20 + 10 − (20×10)/100 = 30 − 2 = 28%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:01:22+00:00",
+      "id": "sgk_QA_DISCOUNT_00003"
+    },
+    {
+      "stem": "A trader buys an article for ₹600, marks it 25% above cost price, then offers a 10% discount on the marked price. What is his profit percentage?",
+      "options": [
+        {
+          "option_text": "15% profit (subtracting 10% discount from 25% markup)",
+          "is_correct": false
+        },
+        {
+          "option_text": "10% profit (gain computed as % of marked price)",
+          "is_correct": false
+        },
+        {
+          "option_text": "12.5% profit (SP = ₹675; gain of ₹75 on CP ₹600)",
+          "is_correct": true
+        },
+        {
+          "option_text": "8% profit (dividing net % difference by markup factor)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. MP = 600 × 1.25 = ₹750. SP = 750 × 0.9 = ₹675. Profit = 675 − 600 = ₹75. Profit% = 75/600 × 100 = 12.5%. Option A (15%) wrongly subtracts percentages ignoring different bases. Option B (10%) uses MP as base: 75/750 × 100 = 10%, but profit% is always on CP. **Short Trick:** Net multiplier = 1.25 × 0.90 = 1.125. Profit% = (1.125 − 1) × 100 = 12.5%. Memorise: (1 + m/100)(1 − d/100) − 1 gives net profit/loss.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:01:22+00:00",
+      "id": "sgk_QA_DISCOUNT_00004"
+    },
+    {
+      "stem": "A shopkeeper marks his goods at 40% above cost price and allows a discount of 15% on the marked price. What is his profit or loss percentage?",
+      "options": [
+        {
+          "option_text": "25% profit (subtracting 15% discount from 40% markup)",
+          "is_correct": false
+        },
+        {
+          "option_text": "19% profit (SP = 1.4 × 0.85 × CP = 1.19 CP exactly)",
+          "is_correct": true
+        },
+        {
+          "option_text": "20% profit (simple average of 40% and 15% applied)",
+          "is_correct": false
+        },
+        {
+          "option_text": "21% profit (using wrong product 1.4 × 0.85 = 1.21)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. SP = CP × 1.4 × 0.85. Compute: 1.4 × 0.85 = 1.4 − (1.4 × 0.15) = 1.4 − 0.21 = 1.19. So SP = 1.19 CP → 19% profit. Option A (25%) wrongly subtracts percentages. Option D (21%) has the arithmetic error 1.4 × 0.85 ≠ 1.21. **Short Trick:** 1.4 × 0.85 = 14 × 85 / 1000 = 1190/1000 = 1.19. Alternatively: 40% markup means 7/5 × CP; 15% discount means 17/20 of MP. SP = 7/5 × 17/20 × CP = 119/100 CP = 19% profit.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:01:22+00:00",
+      "id": "sgk_QA_DISCOUNT_00005"
+    },
+    {
+      "stem": "A customer pays ₹2,040 for an article with a marked price of ₹3,000, after receiving two successive discounts. If the second discount is 15%, what is the first discount percentage?",
+      "options": [
+        {
+          "option_text": "18% first discount (approximating 2040/3000 ratio)",
+          "is_correct": false
+        },
+        {
+          "option_text": "22% first discount (adding both discounts to 32%)",
+          "is_correct": false
+        },
+        {
+          "option_text": "25% first discount (treating 2040/3000 = 1st discount)",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% first discount (solving back: 2040 ÷ 2550 = 0.8)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Let first discount = d%. Then: 3000 × (1 − d/100) × 0.85 = 2040. So (1 − d/100) = 2040/(3000 × 0.85) = 2040/2550 = 0.80. Therefore d = 20%. Option A (18%) comes from directly treating 2040/3000 = 0.68 as (1 − d/100), ignoring the second discount. Option C misreads SP/MP ratio as the first discount alone. **Short Trick:** Work backwards step by step. Price before 2nd discount = 2040 ÷ 0.85 = 2400. First discount = (3000 − 2400)/3000 × 100 = 600/3000 × 100 = 20%. This reverse-chain method avoids algebra entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:01:22+00:00",
+      "id": "sgk_QA_DISCOUNT_00006"
+    },
+    {
+      "stem": "A dealer allows a 20% discount on marked price and still earns a 28% profit on cost price. If the marked price is ₹3,200, what is the cost price?",
+      "options": [
+        {
+          "option_text": "₹2,200 (dividing MP ₹3,200 by 1.28 using wrong base)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,100 (using 28% on the SP ₹2,560 as wrong base)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,000 (SP = ₹2,560; then CP = 2,560 ÷ 1.28 = 2,000)",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1,800 (deducting both 20% and 28% from MP ₹3,200)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. SP = 3200 × 0.8 = ₹2,560. Since profit = 28%, SP = CP × 1.28, so CP = 2560/1.28 = ₹2,000. Option A (₹2,200) divides MP by 1.28 instead of SP, confusing the two bases. Option D (₹1,800) wrongly combines both percentages and deducts them from MP. **Short Trick:** CP = SP/1.28 = 2560 × 100/128 = 2560 × 25/32. Simplify: 2560/32 = 80; 80 × 25 = ₹2,000. Key shortcut: 1/1.28 = 25/32 — memorise for 28% profit problems.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:01:22+00:00",
+      "id": "sgk_QA_DISCOUNT_00007"
+    }
+  ]
+}

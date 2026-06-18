@@ -106,10 +106,26 @@ MANDATORY QUALITY RULES — violating any one will cause REJECTION:
    • Cover PYQ-high-hit angles: GI tags, constitutional articles, folk arts, tribal
      cultures, scientific terminology, niche historical events
 
-⑤ EXPLANATION:
+⑤ EXPLANATION (CRITICAL for QRE topics):
    • ≥ 30 characters
    • Justify why the correct answer is right
    • Explain why the most tempting distractor is wrong
+   • For QUANT topics: ALWAYS include a **Short Trick:** section after the
+     explanation with the fastest exam-room method:
+       - Digit-sum / casting-out-nines for multiplication checks
+       - % shortcut (e.g. 12.5% = 1/8, 33.3% = 1/3, 16.7% = 1/6)
+       - Unitary method, fraction conversion, ratio shortcuts
+       - Formula: SI = PRT/100, CI = P(1+r/100)^n − P
+       - D/S/T: use relative speed, upstream/downstream shortcut
+       - Work: LCM method for combined efficiency
+     Example explanation format:
+       "B is correct. P = 8000, R = 5%, T = 3. SI = 8000×5×3/100 = ₹1200.
+        Option A (₹1000) uses T=2.5 years — common error.
+        **Short Trick:** SI = P × R% × T = 8000 × 5% × 3 = 8000 × 0.15 = ₹1200."
+   • For REASONING topics: show the step-by-step elimination logic + any
+     quick pattern-spotting rule (e.g. "Rule: In each row, middle = sum of sides").
+   • For ENGLISH topics: state the grammar rule and give ONE more example
+     applying that exact rule. For vocab: give etymology or memory hook.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

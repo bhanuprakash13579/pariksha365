@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "General Knowledge",
+  "topic": "Computer Fundamentals",
+  "topic_code": "GK_COMPUTER_BASICS",
+  "questions": [
+    {
+      "stem": "When a computer is switched on, which firmware program runs FIRST — before the operating system loads — to initialise hardware components and conduct a Power-On Self Test (POST)?",
+      "options": [
+        {
+          "option_text": "Operating System kernel loaded from the hard disk drive",
+          "is_correct": false
+        },
+        {
+          "option_text": "BIOS (Basic Input/Output System) stored in a ROM chip",
+          "is_correct": true
+        },
+        {
+          "option_text": "Device driver software installed for the graphics adapter",
+          "is_correct": false
+        },
+        {
+          "option_text": "Boot loader utility temporarily held inside RAM cache",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "BIOS firmware, stored in a ROM chip on the motherboard, is the very first program to execute on power-up — it performs POST and then hands control to the boot loader. The OS kernel (A) is loaded only after BIOS finishes; the boot loader (D) is the second stage, not the first; device drivers (C) load much later during OS initialisation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-17",
+      "generated_at": "2026-06-17T03:02:08+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_00001"
+    },
+    {
+      "stem": "Which of the following statements CORRECTLY describes Read-Only Memory (ROM) as used in a typical computer system?",
+      "options": [
+        {
+          "option_text": "Volatile storage that loses all its contents when power is removed",
+          "is_correct": false
+        },
+        {
+          "option_text": "Non-volatile storage that retains data even without a power supply",
+          "is_correct": true
+        },
+        {
+          "option_text": "Removable external memory designed for portable data transfer only",
+          "is_correct": false
+        },
+        {
+          "option_text": "High-speed cache memory placed between the CPU and main RAM",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "ROM is non-volatile — it retains its contents without power, unlike RAM which is volatile (Option A). Removable storage (C) describes USB drives or memory cards. Cache (D) describes L1/L2 SRAM placed close to the CPU. BIOS firmware is the classic example of data permanently stored in ROM.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-17",
+      "generated_at": "2026-06-17T03:02:08+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_00002"
+    },
+    {
+      "stem": "In a computer network, failure of a single END-NODE does NOT disrupt other nodes, but failure of ONE CENTRAL DEVICE brings down the entire network. Which topology matches this behaviour?",
+      "options": [
+        {
+          "option_text": "Ring topology — each node linked to exactly two neighbouring nodes",
+          "is_correct": false
+        },
+        {
+          "option_text": "Star topology — every node connects only to a central hub or switch",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mesh topology — each node maintains a direct link to every other node",
+          "is_correct": false
+        },
+        {
+          "option_text": "Bus topology — all nodes share one common backbone cable or line",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "In Star topology all devices connect to a central hub or switch. One end-node failing isolates only that node; but a hub failure severs all connections. Ring (A) fails entirely if any single node or link breaks. Mesh (C) is the most fault-tolerant — no single node failure collapses it. Bus (D) fails if the shared backbone breaks.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-17",
+      "generated_at": "2026-06-17T03:02:08+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_00003"
+    },
+    {
+      "stem": "Which IPv4 address class reserves first-octet values from 192 to 223, uses a default subnet mask of 255.255.255.0, and supports a maximum of 254 usable host addresses per subnet?",
+      "options": [
+        {
+          "option_text": "Class A — first octet 1–126, supports millions of hosts per network",
+          "is_correct": false
+        },
+        {
+          "option_text": "Class B — first octet 128–191, supports up to 65,534 hosts per network",
+          "is_correct": false
+        },
+        {
+          "option_text": "Class C — first octet 192–223, supports up to 254 hosts per network",
+          "is_correct": true
+        },
+        {
+          "option_text": "Class D — first octet 224–239, reserved entirely for multicast groups",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "Class C: first octet 192–223, 24-bit network prefix, giving 2⁸ − 2 = 254 usable hosts — the default for home and small-office LANs. Class A (A) handles the largest networks (millions of hosts). Class B (B) suits medium enterprises. Class D (D) is not used for individual host assignment at all.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-17",
+      "generated_at": "2026-06-17T03:02:08+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_00004"
+    },
+    {
+      "stem": "Which network protocol automatically assigns an IP address, subnet mask, default gateway, and DNS server address to a device the moment it connects to a network?",
+      "options": [
+        {
+          "option_text": "FTP (File Transfer Protocol) — moves files between client and server",
+          "is_correct": false
+        },
+        {
+          "option_text": "DHCP (Dynamic Host Configuration Protocol) — automates IP assignment",
+          "is_correct": true
+        },
+        {
+          "option_text": "SMTP (Simple Mail Transfer Protocol) — routes outgoing email messages",
+          "is_correct": false
+        },
+        {
+          "option_text": "HTTP (Hypertext Transfer Protocol) — fetches and renders web pages",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "DHCP dynamically provides all four network parameters (IP, subnet mask, gateway, DNS) to any device that joins the network, eliminating manual configuration. FTP (A), SMTP (C), and HTTP (D) are application-layer protocols for file transfer, email delivery, and web browsing — none performs IP address assignment.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-17",
+      "generated_at": "2026-06-17T03:02:08+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_00005"
+    },
+    {
+      "stem": "An OS memory-management technique where only the specific page of a program currently referenced by the CPU is loaded from disk into RAM — all other pages remain on disk until needed — is formally termed:",
+      "options": [
+        {
+          "option_text": "Multitasking — running multiple processes concurrently on a single CPU",
+          "is_correct": false
+        },
+        {
+          "option_text": "Demand paging — fetching RAM pages from disk only when a fault occurs",
+          "is_correct": true
+        },
+        {
+          "option_text": "Time-sharing — allocating CPU time slices across multiple user sessions",
+          "is_correct": false
+        },
+        {
+          "option_text": "Multiprogramming — keeping many programs resident in RAM simultaneously",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Demand paging underpins virtual memory: when the CPU references a page not in RAM, a 'page fault' is triggered and the OS loads that page from the swap space on disk. Multitasking (A) and time-sharing (C) relate to CPU scheduling, not memory-page loading. Multiprogramming (D) means holding multiple programs in RAM — it does not define the on-demand page-loading mechanism.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-17",
+      "generated_at": "2026-06-17T03:02:08+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_00006"
+    },
+    {
+      "stem": "Which of the following CORRECTLY distinguishes HALF-DUPLEX from FULL-DUPLEX data transmission in a communication channel?",
+      "options": [
+        {
+          "option_text": "Half-duplex: simultaneous two-way flow; full-duplex: one direction only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Half-duplex: two-way but not simultaneous; full-duplex: simultaneous both ways",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both allow two-way data flow but differ only in raw transmission bandwidth",
+          "is_correct": false
+        },
+        {
+          "option_text": "Half-duplex: wireless medium exclusively; full-duplex: wired medium only",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "Full-duplex permits simultaneous bidirectional data flow (e.g., telephone calls, modern Ethernet switches). Half-duplex allows both directions but only one at a time (e.g., walkie-talkies, older Wi-Fi). Option A reverses the two definitions. Option C confuses duplex mode with bandwidth. Option D is wrong because both modes are achievable over wired or wireless media.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-17",
+      "generated_at": "2026-06-17T03:02:08+00:00",
+      "id": "sgk_GK_COMPUTER_BASICS_00007"
+    }
+  ]
+}

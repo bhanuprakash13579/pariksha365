@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Heights & Distances",
+  "topic_code": "QA_HEIGHTS",
+  "questions": [
+    {
+      "stem": "A vertical pole stands on flat ground and casts a shadow. The length of the shadow is exactly equal to the height of the pole. What is the angle of elevation of the sun?",
+      "options": [
+        {
+          "option_text": "30°, where tan 30° = 1/√3 and shadow is √3 times the height",
+          "is_correct": false
+        },
+        {
+          "option_text": "90°, where the sun is directly overhead and casts no shadow at all",
+          "is_correct": false
+        },
+        {
+          "option_text": "45°, where tan 45° = 1 and shadow length equals the pole height exactly",
+          "is_correct": true
+        },
+        {
+          "option_text": "60°, where tan 60° = √3 and shadow is 1/√3 times the height",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. The angle of elevation of the sun θ satisfies tan θ = height/shadow = h/h = 1, so θ = 45°. Option A (30°) is wrong because tan 30° = 1/√3 means the shadow would be √3 times the height, not equal to it. Option D (60°) means the shadow is shorter than the height (h/√3). Option B (90°) is a trap for those who confuse 'no shadow' with 'shadow equals height'. **Short Trick:** Memorise the three critical shadow ratios — shadow = h√3 → sun at 30°; shadow = h → sun at 45°; shadow = h/√3 → sun at 60°. When shadow equals height, the answer is always 45°, no calculation needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:06:23+00:00",
+      "id": "sgk_QA_HEIGHTS_00001"
+    },
+    {
+      "stem": "A person standing on level ground, 50 m from the base of a vertical tower, observes the top of the tower at an angle of elevation of 45°. What is the height of the tower?",
+      "options": [
+        {
+          "option_text": "50√2 metres, obtained using the hypotenuse formula for the slant distance",
+          "is_correct": false
+        },
+        {
+          "option_text": "50 metres, since tan 45° = 1 means height equals the base distance",
+          "is_correct": true
+        },
+        {
+          "option_text": "50√3 metres, obtained by mistakenly applying tan 60° to the base distance",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 metres, by halving the base assuming 45° bisects the right angle",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. tan 45° = height/base = h/50. Since tan 45° = 1, we get h = 50 m. Option A (50√2) is the hypotenuse (slant distance from person to top) computed via Pythagoras — a classic confusion between the slant side and the vertical height. Option C (50√3) uses tan 60° = √3 instead of tan 45°. Option D (25 m) has no trigonometric justification. **Short Trick:** At 45°, tan = 1, so height = base distance. Zero computation — simply read off the given horizontal distance. This is the fastest possible Heights & Distances problem in any SSC paper.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:06:23+00:00",
+      "id": "sgk_QA_HEIGHTS_00002"
+    },
+    {
+      "stem": "From a point P on the ground, the angle of elevation of the top of a tower is 30°. The observer walks 20 m directly towards the base of the tower along a straight line and finds the angle of elevation is now 60°. What is the height of the tower?",
+      "options": [
+        {
+          "option_text": "10√3 metres, found by solving both angle equations simultaneously",
+          "is_correct": true
+        },
+        {
+          "option_text": "20√3 metres, by setting tan 60° = h/20 using the walked distance as base",
+          "is_correct": false
+        },
+        {
+          "option_text": "20/√3 metres, by setting tan 30° = h/20 using the walked distance as base",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 metres, by misreading the 20 m walked distance directly as the tower height",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Let h = height and d = initial distance. tan 30° = h/d gives d = h√3. tan 60° = h/(d − 20) gives d − 20 = h/√3. Subtracting: h√3 − h/√3 = 20 → h(2/√3) = 20 → h = 10√3 m. Option B (20√3) is the classic SSC trap — plugging the 20 m walked distance as the denominator in tan 60° = h/20 while ignoring the initial position entirely. Option C makes the same error with tan 30°. **Short Trick:** Use the direct formula h × (cot α − cot β) = distance walked, where α = initial angle and β = final angle. Here: h(cot 30° − cot 60°) = 20 → h(√3 − 1/√3) = 20 → h(2/√3) = 20 → h = 10√3 m. This formula handles all two-observation-point problems in one line.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:06:23+00:00",
+      "id": "sgk_QA_HEIGHTS_00003"
+    },
+    {
+      "stem": "From the top of a 75 m high lighthouse, the angles of depression of two ships lying on the same side of the lighthouse are 45° and 30°. What is the horizontal distance between the two ships?",
+      "options": [
+        {
+          "option_text": "75(√3 + 1) metres, by adding both horizontal distances from the lighthouse",
+          "is_correct": false
+        },
+        {
+          "option_text": "75(√3 − 1) metres, by subtracting the nearer ship's distance from the farther",
+          "is_correct": true
+        },
+        {
+          "option_text": "75√3 metres, using only the farther ship's depression angle of 30°",
+          "is_correct": false
+        },
+        {
+          "option_text": "75(√3 − 1)/2 metres, by averaging the two ships' horizontal distances",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Angle of depression equals angle of elevation from ship to lighthouse top (alternate interior angles on parallel lines). Ship at 30° (farther): tan 30° = 75/d₁ → d₁ = 75√3 m. Ship at 45° (nearer): tan 45° = 75/d₂ → d₂ = 75 m. Gap = d₁ − d₂ = 75√3 − 75 = 75(√3 − 1) m ≈ 54.9 m. Option A (75(√3 + 1)) is the mistake of adding both distances, which would be valid only if the ships were on opposite sides of the lighthouse. Option C ignores the nearer ship entirely, giving the distance from lighthouse to the farther ship. **Short Trick:** Distance from base = height × cot(angle). d₁ = 75 cot 30° = 75√3; d₂ = 75 cot 45° = 75. Separation = 75(√3 − 1). The cot form is faster than re-deriving tan for each ship.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:06:23+00:00",
+      "id": "sgk_QA_HEIGHTS_00004"
+    },
+    {
+      "stem": "Two vertical poles of equal height stand on opposite sides of a road that is 80 m wide. From a point between them on the road, the angles of elevation of the tops of the two poles are 60° and 30°. What is the height of each pole?",
+      "options": [
+        {
+          "option_text": "80/√3 metres (≈ 46 m), using tan 30° applied to the full road width",
+          "is_correct": false
+        },
+        {
+          "option_text": "40√3 metres, by halving 80 m and applying only tan 60° to the half-width",
+          "is_correct": false
+        },
+        {
+          "option_text": "20√3 metres, found by setting the sum of both cot expressions equal to 80 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "30 metres, obtained by approximating √3 ≈ 1.5 and rounding down the result",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let h = height of each pole and x = distance from the observation point to the pole seen at 60°. tan 60° = h/x → x = h/√3. tan 30° = h/(80 − x) → 80 − x = h√3. Adding: 80 = h/√3 + h√3 = h(1/√3 + √3) = 4h/√3. So h = 80√3/4 = 20√3 m ≈ 34.6 m. Option A uses the full road width 80 m as base with tan 30°, ignoring that the observation point divides the road unequally. Option B halves the road and uses only one angle equation, discarding the second angle's information entirely. **Short Trick:** Two-poles formula: h × (cot θ₁ + cot θ₂) = road width. h(cot 60° + cot 30°) = 80 → h(1/√3 + √3) = 80 → h(4/√3) = 80 → h = 20√3. Memorise: equal heights on opposite sides → sum of cots × h = separation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:06:23+00:00",
+      "id": "sgk_QA_HEIGHTS_00005"
+    },
+    {
+      "stem": "A flagpole is mounted on top of a building. From a point on the ground, the angle of elevation of the roof of the building (bottom of the flagpole) is 45°, and the angle of elevation of the top of the flagpole is 60°. If the building is 20 m tall, what is the length of the flagpole?",
+      "options": [
+        {
+          "option_text": "20(√3 − 1) metres, by finding base distance first and then applying tan 60°",
+          "is_correct": true
+        },
+        {
+          "option_text": "20√3 metres, treating tan 60° times the base distance as flagpole length alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "20(√3 + 1) metres, by adding building height and full tan 60° result together",
+          "is_correct": false
+        },
+        {
+          "option_text": "20(√3 − 1)/2 metres, halved on the assumption of symmetry in the angle pair",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Let d = horizontal distance from observer to building base and L = flagpole length. From the 45° angle to the rooftop: tan 45° = 20/d → d = 20 m. From the 60° angle to the flagpole top: tan 60° = (20 + L)/20 → 20 + L = 20√3 → L = 20(√3 − 1) ≈ 14.6 m. Option B (20√3) is the most common SSC trap — students compute 20 × tan 60° = 20√3 and report that as the flagpole length, forgetting to subtract the 20 m building height that is already included in this total. Option C adds rather than subtracts, implying a 54.6 m flagpole on a 20 m building, which is geometrically inconsistent with the given angles. **Short Trick:** Step 1 — lower angle (45°) gives base = building height = 20 m (since tan 45° = 1). Step 2 — total height = base × tan 60° = 20√3. Step 3 — flagpole = total − building = 20√3 − 20 = 20(√3 − 1). Always subtract the known lower segment to isolate the unknown upper segment.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:06:23+00:00",
+      "id": "sgk_QA_HEIGHTS_00006"
+    },
+    {
+      "stem": "From the top of a hill 120 m high, the angles of depression of the top and the foot of a vertical tower standing on the same horizontal plane are 30° and 60° respectively. What is the height of the tower?",
+      "options": [
+        {
+          "option_text": "40 metres, by using d × tan(30°) directly as the tower height without adjustment",
+          "is_correct": false
+        },
+        {
+          "option_text": "80 metres, found by computing horizontal distance via tan 60° first",
+          "is_correct": true
+        },
+        {
+          "option_text": "60 metres, derived by halving the hill height as a symmetry approximation",
+          "is_correct": false
+        },
+        {
+          "option_text": "40√3 metres (≈ 69 m), by treating the horizontal distance as tower height",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let h = tower height and d = horizontal distance between hill and tower. Depression to the foot of tower (60°): tan 60° = 120/d → d = 120/√3 = 40√3 m. Depression to the top of tower (30°): tan 30° = (120 − h)/d → (120 − h)/(40√3) = 1/√3 → 120 − h = 40 → h = 80 m. Option A (40 m) is the classic SSC error — students compute d × tan 30° = 40√3 × (1/√3) = 40 and report it as the tower height, but this equals (120 − h), not h itself; they forget the final subtraction from 120. Option D confuses the horizontal distance 40√3 ≈ 69 m with the vertical tower height. **Short Trick:** Step 1 — use steeper angle (60°) with full hill height to get d = 120 cot 60° = 120/√3 = 40√3. Step 2 — shallower angle (30°) gives (120 − h) = d tan 30° = 40√3/√3 = 40. Step 3 — h = 120 − 40 = 80. In hill-to-tower depression problems, the shallower angle always gives (hill − tower), never the tower directly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:06:23+00:00",
+      "id": "sgk_QA_HEIGHTS_00007"
+    }
+  ]
+}

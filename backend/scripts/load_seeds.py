@@ -724,7 +724,13 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
             skipped_malformed += 1
             continue
         # Support both plain-list format (newer) and dict-wrapped {questions:[...]} format (older).
-        q_docs = doc if isinstance(doc, list) else doc.get("questions", [])
+        # For dict-wrapped files, extract file-level metadata to use as fallbacks for questions
+        # that lack their own topic_code / subject / topic fields.
+        is_dict_doc = isinstance(doc, dict)
+        _file_tc = doc.get("topic_code", "") if is_dict_doc else ""
+        _file_subject = doc.get("subject", "") if is_dict_doc else ""
+        _file_topic = doc.get("topic", "") if is_dict_doc else ""
+        q_docs = doc if not is_dict_doc else doc.get("questions", [])
         for q_doc in q_docs:
             count += 1
             if limit and count > limit:
@@ -774,7 +780,9 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
             except Exception:
                 pass
 
-            _raw_tc = q_doc.get("topic_code") or ""
+            # topic_code: question-level wins; fall back to file-level, then map to canonical
+            _raw_tc = q_doc.get("topic_code") or _file_tc
+            _resolved_tc = _TOPIC_CODE_MAP.get(_raw_tc, _raw_tc) or None
             db.add(QuizQuestion(
                 id=q_uuid,
                 question_text=(q_doc.get("stem") or q_doc.get("text") or ""),
@@ -783,13 +791,13 @@ async def _load_static_gk(db: AsyncSession, limit: Optional[int], dry_run: bool 
                 diagram_svg=q_doc.get("diagram_svg"),
                 explanation_svg=q_doc.get("explanation_svg"),
                 difficulty=(q_doc.get("difficulty") or "MEDIUM"),
-                subject=q_doc.get("subject") or "General Knowledge",
-                topic=q_doc.get("topic"),
+                subject=q_doc.get("subject") or _file_subject or "General Knowledge",
+                topic=q_doc.get("topic") or _file_topic or None,
                 is_current_affair=bool(q_doc.get("is_current_affair", False)),
                 event_date=event_date,
                 valid_until=valid_until,
                 is_published=bool(q_doc.get("is_published", True)),
-                topic_code=_TOPIC_CODE_MAP.get(_raw_tc, _raw_tc) or None,
+                topic_code=_resolved_tc,
                 passage_id=q_doc.get("passage_id"),
                 options=options,
             ))

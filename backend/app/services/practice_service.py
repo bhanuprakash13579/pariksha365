@@ -57,6 +57,14 @@ async def get_quiz_categories_with_counts(db: AsyncSession) -> list:
 
 
 async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, limit: int = 10) -> list:
+    """
+    Pattern-diversity quiz:
+    - Discovery phase: unseen topic_codes come first so every practice session
+      introduces a new SSC CGL question-type (analogy, syllogism, profit-loss, etc.).
+    - Drill phase: once all patterns are seen, weak patterns surface first.
+    - Within each priority tier, questions are random so the student never gets
+      the exact same question back immediately.
+    """
     canonical_subject = SUBJECT_KEY_MAP.get(subject.lower(), subject)
     today_start = datetime.combine(datetime.utcnow().date(), datetime.min.time())
 
@@ -66,19 +74,23 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
         )
     )).all())
 
-    base_cond = [func.lower(QuizQuestion.subject) == canonical_subject.lower()]
-    if attempted_today_ids:
-        base_cond.append(QuizQuestion.id.not_in(attempted_today_ids))
+    # Get all distinct topic_codes for this subject (prefer topic_code, fall back to topic text)
+    tc_rows = (await db.execute(
+        select(QuizQuestion.topic_code, QuizQuestion.topic)
+        .where(func.lower(QuizQuestion.subject) == canonical_subject.lower())
+        .distinct()
+    )).all()
 
-    # Get distinct topics available for this subject
-    available_topics = [
-        row[0] for row in (await db.execute(
-            select(QuizQuestion.topic).where(*base_cond).distinct()
-        )).all() if row[0]
-    ]
+    # Build a map: canonical_key → display_topic
+    # Prefer topic_code as key; fall back to topic text for questions without codes
+    pattern_map: dict[str, str] = {}
+    for tc, topic in tc_rows:
+        key = tc if tc else f"_topic_{topic or 'general'}"
+        if key not in pattern_map:
+            pattern_map[key] = topic or "General"
 
-    if not available_topics:
-        # All questions attempted today — open the pool back up
+    if not pattern_map:
+        # Entire pool attempted today — reopen
         raw = (await db.execute(
             select(QuizQuestion)
             .where(func.lower(QuizQuestion.subject) == canonical_subject.lower())
@@ -87,34 +99,75 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
         expanded = await _expand_passage_groups(db, list(raw))
         return [_serialize_quiz_question(q) for q in expanded]
 
-    # Distribute limit across topics so every session covers different ground
-    random.shuffle(available_topics)
-    n = len(available_topics)
-    base_q = max(1, limit // n)
-    extras = limit - base_q * n  # first `extras` topics get one extra question
+    # Load mastery records for this user's topic_codes in one round-trip
+    code_keys = [k for k in pattern_map if not k.startswith("_topic_")]
+    mastery_map: dict[str, "UserTopicMastery"] = {}
+    if code_keys:
+        rows = (await db.execute(
+            select(UserTopicMastery).where(
+                UserTopicMastery.user_id == user_id,
+                UserTopicMastery.topic_code.in_(code_keys)
+            )
+        )).scalars().all()
+        mastery_map = {m.topic_code: m for m in rows}
+
+    # Priority ordering:
+    # 0 = never attempted (discovery)  → highest priority
+    # 1 = weak         accuracy < 50%
+    # 2 = improving    accuracy 50-70%
+    # 3 = proficient   accuracy ≥ 70%
+    def _priority(key: str) -> int:
+        m = mastery_map.get(key)
+        if not m or m.attempted_count == 0:
+            return 0
+        if m.current_accuracy < 50:
+            return 1
+        if m.current_accuracy < 70:
+            return 2
+        return 3
+
+    # Sort patterns: discovery first, then by priority; tie-break randomly
+    sorted_patterns = sorted(pattern_map.keys(), key=lambda k: (_priority(k), random.random()))
+
+    # Cap selection to avoid too many same-topic questions; aim ≥1 per unique pattern
+    # How many patterns to cover: at least `limit` (one per question), or all if fewer
+    patterns_to_use = sorted_patterns[:limit]
+    per_pattern = max(1, limit // len(patterns_to_use))
 
     seen_ids: set = set()
     result_questions: list = []
 
-    for i, topic in enumerate(available_topics):
+    for key in patterns_to_use:
         if len(result_questions) >= limit:
             break
-        quota = min(base_q + (1 if i < extras else 0), limit - len(result_questions))
+        quota = min(per_pattern, limit - len(result_questions))
         exclude = attempted_today_ids | seen_ids
-        cond = [
-            func.lower(QuizQuestion.subject) == canonical_subject.lower(),
-            func.lower(QuizQuestion.topic) == topic.lower(),
-        ]
+
+        if key.startswith("_topic_"):
+            topic_text = pattern_map[key]
+            cond = [
+                func.lower(QuizQuestion.subject) == canonical_subject.lower(),
+                func.lower(QuizQuestion.topic) == topic_text.lower(),
+                QuizQuestion.topic_code.is_(None),
+            ]
+        else:
+            cond = [
+                func.lower(QuizQuestion.subject) == canonical_subject.lower(),
+                QuizQuestion.topic_code == key,
+            ]
+
         if exclude:
             cond.append(QuizQuestion.id.not_in(exclude))
+
         topic_qs = (await db.execute(
             select(QuizQuestion).where(*cond).order_by(func.random()).limit(quota)
         )).scalars().all()
+
         for q in topic_qs:
             seen_ids.add(q.id)
             result_questions.append(q)
 
-    # Fill any remaining slots (topics with fewer questions than quota)
+    # Fill remaining slots (some patterns had < quota questions)
     if len(result_questions) < limit:
         exclude = seen_ids | attempted_today_ids
         filler_cond = [func.lower(QuizQuestion.subject) == canonical_subject.lower()]
@@ -126,6 +179,7 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
         )).scalars().all()
         result_questions.extend(fillers)
 
+    # Shuffle the final set so discovery topics aren't always question #1
     random.shuffle(result_questions)
     expanded = await _expand_passage_groups(db, result_questions[:limit])
     return [_serialize_quiz_question(q) for q in expanded]
