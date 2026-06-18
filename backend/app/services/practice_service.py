@@ -2,6 +2,7 @@
 Practice Service — Auto-generates quizzes from weak topics using deterministic topic_code matching.
 Zero fuzzy logic in the hot path. All matching is exact WHERE topic_code = 'X'.
 """
+import random
 import uuid
 from datetime import datetime, timedelta
 from typing import List, Optional
@@ -59,18 +60,74 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
     canonical_subject = SUBJECT_KEY_MAP.get(subject.lower(), subject)
     today_start = datetime.combine(datetime.utcnow().date(), datetime.min.time())
 
-    attempted_today = select(QuizAttempt.question_id).where(
-        QuizAttempt.user_id == user_id, QuizAttempt.attempted_at >= today_start
-    )
+    attempted_today_ids = set(r[0] for r in (await db.execute(
+        select(QuizAttempt.question_id).where(
+            QuizAttempt.user_id == user_id, QuizAttempt.attempted_at >= today_start
+        )
+    )).all())
 
-    stmt = (
-        select(QuizQuestion)
-        .where(func.lower(QuizQuestion.subject) == canonical_subject.lower(),
-               QuizQuestion.id.not_in(attempted_today))
-        .order_by(func.random()).limit(limit)
-    )
-    raw = (await db.execute(stmt)).scalars().all()
-    expanded = await _expand_passage_groups(db, list(raw))
+    base_cond = [func.lower(QuizQuestion.subject) == canonical_subject.lower()]
+    if attempted_today_ids:
+        base_cond.append(QuizQuestion.id.not_in(attempted_today_ids))
+
+    # Get distinct topics available for this subject
+    available_topics = [
+        row[0] for row in (await db.execute(
+            select(QuizQuestion.topic).where(*base_cond).distinct()
+        )).all() if row[0]
+    ]
+
+    if not available_topics:
+        # All questions attempted today — open the pool back up
+        raw = (await db.execute(
+            select(QuizQuestion)
+            .where(func.lower(QuizQuestion.subject) == canonical_subject.lower())
+            .order_by(func.random()).limit(limit)
+        )).scalars().all()
+        expanded = await _expand_passage_groups(db, list(raw))
+        return [_serialize_quiz_question(q) for q in expanded]
+
+    # Distribute limit across topics so every session covers different ground
+    random.shuffle(available_topics)
+    n = len(available_topics)
+    base_q = max(1, limit // n)
+    extras = limit - base_q * n  # first `extras` topics get one extra question
+
+    seen_ids: set = set()
+    result_questions: list = []
+
+    for i, topic in enumerate(available_topics):
+        if len(result_questions) >= limit:
+            break
+        quota = min(base_q + (1 if i < extras else 0), limit - len(result_questions))
+        exclude = attempted_today_ids | seen_ids
+        cond = [
+            func.lower(QuizQuestion.subject) == canonical_subject.lower(),
+            func.lower(QuizQuestion.topic) == topic.lower(),
+        ]
+        if exclude:
+            cond.append(QuizQuestion.id.not_in(exclude))
+        topic_qs = (await db.execute(
+            select(QuizQuestion).where(*cond).order_by(func.random()).limit(quota)
+        )).scalars().all()
+        for q in topic_qs:
+            seen_ids.add(q.id)
+            result_questions.append(q)
+
+    # Fill any remaining slots (topics with fewer questions than quota)
+    if len(result_questions) < limit:
+        exclude = seen_ids | attempted_today_ids
+        filler_cond = [func.lower(QuizQuestion.subject) == canonical_subject.lower()]
+        if exclude:
+            filler_cond.append(QuizQuestion.id.not_in(exclude))
+        fillers = (await db.execute(
+            select(QuizQuestion).where(*filler_cond)
+            .order_by(func.random()).limit(limit - len(result_questions))
+        )).scalars().all()
+        result_questions.extend(fillers)
+
+    random.shuffle(result_questions)
+    expanded = await _expand_passage_groups(db, result_questions[:limit])
     return [_serialize_quiz_question(q) for q in expanded]
 
 

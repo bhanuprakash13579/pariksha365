@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, SafeAreaView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { SvgXml } from 'react-native-svg';
@@ -33,6 +33,7 @@ interface QuizQuestion {
 export default function QuizSessionScreen({ navigation, route }: any) {
     const { subject, limit = 10, title = 'Daily Quiz', moduleSlug, weakTopicMode = false } = route.params || {};
 
+    const QUIZ_DURATION = 5 * 60; // 300 seconds
     const [questions, setQuestions] = useState<QuizQuestion[]>([]);
     const [currentIdx, setCurrentIdx] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number | null>>({});
@@ -41,6 +42,8 @@ export default function QuizSessionScreen({ navigation, route }: any) {
     const [scorecard, setScorecard] = useState<any>(null);
     const [showReview, setShowReview] = useState(false);
     const [submitting, setSubmitting] = useState(false);
+    const [timeLeft, setTimeLeft] = useState(QUIZ_DURATION);
+    const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
     useEffect(() => {
         // Reset state whenever subject/module/limit changes (catches re-navigate with same params)
@@ -69,6 +72,43 @@ export default function QuizSessionScreen({ navigation, route }: any) {
         };
         fetchQuiz();
     }, [subject, limit, moduleSlug, weakTopicMode]);
+
+    // Start countdown once questions load
+    useEffect(() => {
+        if (!loading && questions.length > 0 && !submitted) {
+            setTimeLeft(QUIZ_DURATION);
+            timerRef.current = setInterval(() => {
+                setTimeLeft(prev => {
+                    if (prev <= 1) {
+                        clearInterval(timerRef.current!);
+                        return 0;
+                    }
+                    return prev - 1;
+                });
+            }, 1000);
+        }
+        return () => { if (timerRef.current) clearInterval(timerRef.current); };
+    }, [loading, questions.length]);
+
+    // Auto-submit when timer hits 0
+    useEffect(() => {
+        if (timeLeft === 0 && !submitted && !loading && questions.length > 0) {
+            handleSubmit();
+        }
+    }, [timeLeft]);
+
+    // Stop timer after submit
+    useEffect(() => {
+        if (submitted && timerRef.current) {
+            clearInterval(timerRef.current);
+        }
+    }, [submitted]);
+
+    const formatTime = (secs: number) => {
+        const m = Math.floor(secs / 60).toString().padStart(2, '0');
+        const s = (secs % 60).toString().padStart(2, '0');
+        return `${m}:${s}`;
+    };
 
     const selectOption = (optionIndex: number) => {
         if (submitted) return;
@@ -282,9 +322,19 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                     <Ionicons name="close" size={24} color="#374151" />
                 </TouchableOpacity>
                 <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#111827', flex: 1, textAlign: 'center', marginHorizontal: 8 }} numberOfLines={1}>{title}</Text>
-                <Text style={{ fontSize: 13, color: '#6b7280', fontWeight: '600' }}>
-                    {currentIdx + 1}/{questions.length}
-                </Text>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                    <View style={{
+                        backgroundColor: timeLeft < 60 ? '#fee2e2' : '#f3f4f6',
+                        paddingHorizontal: 7, paddingVertical: 3, borderRadius: 8, marginRight: 8,
+                    }}>
+                        <Text style={{ fontSize: 12, fontWeight: 'bold', color: timeLeft < 60 ? '#dc2626' : '#374151' }}>
+                            ⏱ {formatTime(timeLeft)}
+                        </Text>
+                    </View>
+                    <Text style={{ fontSize: 13, color: '#6b7280', fontWeight: '600' }}>
+                        {currentIdx + 1}/{questions.length}
+                    </Text>
+                </View>
             </View>
 
             {/* Progress Bar */}

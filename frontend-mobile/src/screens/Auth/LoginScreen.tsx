@@ -3,9 +3,12 @@ import { View, Text, TextInput, TouchableOpacity, Alert, Platform, KeyboardAvoid
 import { Ionicons } from '@expo/vector-icons';
 import * as Google from 'expo-auth-session/providers/google';
 import * as AppleAuthentication from 'expo-apple-authentication';
+import * as WebBrowser from 'expo-web-browser';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AuthAPI, UserAPI } from '../../services/api';
 import { styles } from '../../styles/theme';
+
+WebBrowser.maybeCompleteAuthSession();
 
 const GOOGLE_IOS_CLIENT_ID = "592393648560-0csjsd0dvukv94qg05np14rj1v3o9gg2.apps.googleusercontent.com";
 const GOOGLE_WEB_CLIENT_ID = "592393648560-70fdb8qfubom1sllvmb29ststk1h1k0v.apps.googleusercontent.com";
@@ -81,7 +84,10 @@ export default function LoginScreen({ navigation }: any) {
         }
     };
 
-    const handleGoogleAuth = () => { promptAsync(); };
+    const handleGoogleAuth = async () => {
+        try { await WebBrowser.warmUpAsync(); } catch {}
+        promptAsync();
+    };
 
     const handleLogin = async () => {
         if (!email || !password) { Alert.alert('Error', 'Please enter email and password.'); return; }

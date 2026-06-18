@@ -667,10 +667,39 @@ const MainTabs = ({ route }: any) => {
   );
 };
 
+const AuthLoadingScreen = ({ navigation }: any) => {
+  useEffect(() => {
+    const checkAuth = async () => {
+      try {
+        const token = await AsyncStorage.getItem('token');
+        if (!token) { navigation.replace('Login'); return; }
+        const res = await UserAPI.getMe();
+        if (!res.data.selected_exam_category_id) {
+          navigation.replace('Onboarding');
+        } else {
+          navigation.replace('MainTabs', { isGuest: false });
+        }
+      } catch {
+        await AsyncStorage.removeItem('token');
+        navigation.replace('Login');
+      }
+    };
+    checkAuth();
+  }, []);
+
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#ffffff' }}>
+      <Image source={require('./assets/icon.png')} style={{ width: 80, height: 80, resizeMode: 'contain', marginBottom: 20 }} />
+      <ActivityIndicator size="large" color="#f97316" />
+    </View>
+  );
+};
+
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
+      <Stack.Navigator initialRouteName="AuthLoading">
+        <Stack.Screen name="AuthLoading" component={AuthLoadingScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Signup" component={SignupScreen} options={{ headerShown: false }} />
         <Stack.Screen name="MainTabs" component={MainTabs} options={{ headerShown: false }} />
