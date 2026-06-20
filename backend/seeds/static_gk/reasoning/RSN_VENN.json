@@ -220,6 +220,426 @@
       "generated_at": "2026-06-11T14:18:22+00:00",
       "id": "sgk_RSN_VENN_00007",
       "topic_code": "RSN_VENN"
+    },
+    {
+      "stem": "Which Venn diagram BEST represents the relationship among 'Pen', 'Stationery', and 'Pencil'?",
+      "options": [
+        {
+          "option_text": "Pen inside Pencil, and Pencil inside Stationery (all nested circles)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Pen and Pencil as separate non-overlapping circles inside Stationery",
+          "is_correct": true
+        },
+        {
+          "option_text": "Pen, Pencil, Stationery as three circles sharing a common region",
+          "is_correct": false
+        },
+        {
+          "option_text": "Pen and Pencil as two overlapping circles, both placed inside Stationery",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Both Pen and Pencil are types of Stationery (subsets), so each circle must lie entirely inside the Stationery circle. However, no pen is a pencil and no pencil is a pen — they are mutually exclusive — so their circles must NOT overlap each other. Option A is wrong: 'Pen inside Pencil' implies every pen is a pencil, which is false. Option D is wrong: overlapping Pen and Pencil circles implies some pens are also pencils. Option C is wrong: a shared region among all three would mean some items are simultaneously pens and pencils. Rule: When A ⊂ C and B ⊂ C but A∩B = ∅, draw two separate non-overlapping circles inside the superset circle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:22:24+00:00",
+      "id": "sgk_RSN_VENN_00008"
+    },
+    {
+      "stem": "In a group of 70 workers, 40 know Python and 35 know Java. Every worker knows at least one language. How many workers know exactly one programming language?",
+      "options": [
+        {
+          "option_text": "60 workers know exactly one of the two programming languages",
+          "is_correct": false
+        },
+        {
+          "option_text": "65 workers know exactly one of the two programming languages",
+          "is_correct": true
+        },
+        {
+          "option_text": "55 workers know exactly one of the two programming languages",
+          "is_correct": false
+        },
+        {
+          "option_text": "70 workers each know only one of the two programming languages",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. By inclusion-exclusion: n(Python ∪ Java) = n(Python) + n(Java) − n(both). Since every worker knows at least one: 40 + 35 − n(both) = 70, so n(both) = 5. Workers knowing exactly one language = Total − both = 70 − 5 = 65. Option A (60) arises from incorrectly computing n(both) = 10 (perhaps subtracting from 70 wrongly). Option D (70) ignores the overlap entirely, treating every worker as knowing only one language. **Short Trick:** n(both) = sum of individuals − total = 40 + 35 − 70 = 5; exactly one = 70 − 5 = 65.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:22:24+00:00",
+      "id": "sgk_RSN_VENN_00009"
+    },
+    {
+      "stem": "In a group of 120 sports enthusiasts (each plays at least one sport), 70 play Chess, 60 play Carrom, and 50 play Ludo. Among these, 25 play Chess and Carrom, 20 play Carrom and Ludo, and 18 play Chess and Ludo. How many play exactly two sports?",
+      "options": [
+        {
+          "option_text": "48 enthusiasts play exactly two of the three sports listed",
+          "is_correct": false
+        },
+        {
+          "option_text": "54 enthusiasts play exactly two of the three sports listed",
+          "is_correct": true
+        },
+        {
+          "option_text": "60 enthusiasts play exactly two of the three sports listed",
+          "is_correct": false
+        },
+        {
+          "option_text": "63 enthusiasts play exactly two of the three sports listed",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. First find n(all three) using inclusion-exclusion: 70+60+50 − 25 − 20 − 18 + x = 120 → 117 + x = 120 → x = 3. Now, exactly two = (Chess∩Carrom only) + (Carrom∩Ludo only) + (Chess∩Ludo only) = (25−3) + (20−3) + (18−3) = 22 + 17 + 15 = 54. Option D (63) is the raw sum 25+20+18 — fails to subtract the triple-counted 'all three' region. Option C (60) is a miscalculation that subtracts only x once instead of three times. **Short Trick:** Exactly two = Σ(pairwise intersections) − 3×n(all three) = (25+20+18) − 3×3 = 63 − 9 = 54.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:22:24+00:00",
+      "id": "sgk_RSN_VENN_00010"
+    },
+    {
+      "stem": "A Venn diagram of three sets X, Y, Z shows these exclusive region counts: Only X = 18, Only Y = 22, Only Z = 16, X∩Y only = 9, Y∩Z only = 7, X∩Z only = 5, and X∩Y∩Z = 4. What is the total number of elements in set Y?",
+      "options": [
+        {
+          "option_text": "Set Y contains 36 elements across all Y-related regions",
+          "is_correct": false
+        },
+        {
+          "option_text": "Set Y contains 42 elements across all Y-related regions",
+          "is_correct": true
+        },
+        {
+          "option_text": "Set Y contains 38 elements across all Y-related regions",
+          "is_correct": false
+        },
+        {
+          "option_text": "Set Y contains 29 elements across all Y-related regions",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Set Y includes every region that touches the Y circle: Only Y (=22) + X∩Y only (=9) + Y∩Z only (=7) + X∩Y∩Z (=4) = 42. Option A (36) = n(X) = 18+9+5+4 — a common mix-up of which set's regions are being summed. Option C (38) omits the X∩Y∩Z region (=4), treating it as outside Y. Option D (29) = Only Y + Y∩Z only = 22+7, skipping the X-side intersections entirely. Rule: n(Y) = [Only Y] + [X∩Y only] + [Y∩Z only] + [X∩Y∩Z]. Every one of the seven Venn regions that lies inside the Y circle must be counted. **Short Trick:** Circle Y 'owns' four of the seven Venn regions — add all four.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:22:24+00:00",
+      "id": "sgk_RSN_VENN_00011"
+    },
+    {
+      "stem": "In a colony of 200 families (each owning at least one appliance), n(TV)=110, n(Fridge)=90, n(AC)=80, n(TV∩Fridge)=35, n(Fridge∩AC)=30, n(TV∩AC)=25. How many families own exactly one appliance?",
+      "options": [
+        {
+          "option_text": "120 families own exactly one of the three appliances listed",
+          "is_correct": false
+        },
+        {
+          "option_text": "130 families own exactly one of the three appliances listed",
+          "is_correct": true
+        },
+        {
+          "option_text": "140 families own exactly one of the three appliances listed",
+          "is_correct": false
+        },
+        {
+          "option_text": "110 families own exactly one of the three appliances listed",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Step 1 — find n(all three): 110+90+80 − 35 − 30 − 25 + x = 200 → 190 + x = 200 → x = 10. Step 2 — find each 'only one' region: Only TV = 110−(35−10)−(25−10)−10 = 110−25−15−10 = 60. Only Fridge = 90−(35−10)−(30−10)−10 = 90−25−20−10 = 35. Only AC = 80−(30−10)−(25−10)−10 = 80−20−15−10 = 35. Exactly one = 60+35+35 = 130. Option A (120) results from mistakenly setting x=0 and miscounting. Option C (140) double-counts pairwise regions. **Short Trick:** Exactly one = n(A)+n(B)+n(C) − 2×[Σpairwise] + 3×n(all three) = 280 − 2×90 + 3×10 = 280−180+30 = 130.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:22:24+00:00",
+      "id": "sgk_RSN_VENN_00012"
+    },
+    {
+      "stem": "In a survey of 600 people, each reads at least one of three newspapers P, Q, R. Exactly 300 people read only one newspaper, exactly 200 read exactly two, and exactly 100 read all three. What is the value of n(P) + n(Q) + n(R)?",
+      "options": [
+        {
+          "option_text": "The sum n(P)+n(Q)+n(R) equals 800 persons in total",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sum n(P)+n(Q)+n(R) equals 1000 persons in total",
+          "is_correct": true
+        },
+        {
+          "option_text": "The sum n(P)+n(Q)+n(R) equals 900 persons in total",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sum n(P)+n(Q)+n(R) equals 600 persons in total",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A person reading exactly one paper is counted 1 time in n(P)+n(Q)+n(R); reading exactly two papers means they are in 2 sets, so they contribute 2; reading all three contributes 3. Therefore: sum = 1×300 + 2×200 + 3×100 = 300 + 400 + 300 = 1000. Option D (600) treats the sum as a headcount — wrong because multi-paper readers appear in more than one set. Option A (800) = 600+200 — partially accounts for double readers but ignores the third contribution of triple readers. Option C (900) = 600+200+100 — adds each tier's count once, missing that double and triple readers contribute extra. **Short Trick:** n(A)+n(B)+n(C) = Σ k × nₖ where nₖ = count reading exactly k papers. This identity holds because each element in set A is counted once in n(A) regardless of how many other sets it belongs to — but it appears in k different sets, so it contributes k to the total sum.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:22:24+00:00",
+      "id": "sgk_RSN_VENN_00013"
+    },
+    {
+      "stem": "In a school of 200 students (each in at least one club), Drama has 90 members, Music has 80, Art has 70. Drama∩Music = 20, Music∩Art = 18, Drama∩Art = 12. The count of students in exactly two clubs is twice the count in all three clubs. How many students are in all three clubs?",
+      "options": [
+        {
+          "option_text": "15 students are enrolled in all three school clubs",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 students are enrolled in all three school clubs",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 students are enrolled in all three school clubs",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 students are enrolled in all three school clubs",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let x = n(all three). Inclusion-exclusion: 90+80+70 − 20 − 18 − 12 + x = 200 → 190 + x = 200 → x = 10. Verification with the second condition: exactly two = (20−10)+(18−10)+(12−10) = 10+8+2 = 20 = 2×10 ✓. Option A (15): gives union = 190+15 = 205 > 200, impossible. Option C (8): union = 198 ≠ 200. Option D (12): union = 202 ≠ 200. The 'exactly two is twice all three' condition serves as a consistency check here — the union equation alone pins down x. **Short Trick:** x = Total − (sum of individuals) + (sum of pairwise) = 200 − 240 + 50 = 10. Always write the union equation first when the total is given; it directly yields the triple intersection without needing to use the second condition separately.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:22:24+00:00",
+      "id": "sgk_RSN_VENN_00014"
+    },
+    {
+      "stem": "Which Venn diagram BEST represents the relationship among 'Animals', 'Mammals', and 'Whales'?",
+      "options": [
+        {
+          "option_text": "Whales and Mammals partially overlap, both circles inside Animals",
+          "is_correct": false
+        },
+        {
+          "option_text": "Three concentric circles: Whales innermost, Mammals middle, Animals outermost",
+          "is_correct": true
+        },
+        {
+          "option_text": "Three separate, non-touching circles with no overlap between them",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mammals and Animals partially overlap, Whales placed fully outside both",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct because every Whale is a Mammal, and every Mammal is an Animal — forming a strict containment chain Whales ⊂ Mammals ⊂ Animals, represented by three concentric circles with Whales innermost. Option A is wrong because it implies some Whales are not Mammals (partial overlap), which is false — the Whale circle must sit entirely inside the Mammal circle. Option C is wrong because it shows no relationship at all among the three groups. **Short Trick:** Whenever X is a type of Y, and Y is a type of Z, always draw nested (concentric) circles, placing the most specific set innermost.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:17:50+00:00",
+      "id": "sgk_RSN_VENN_00015"
+    },
+    {
+      "stem": "A Venn diagram with three intersecting circles A, B, C shows: only A = 12, only B = 9, only C = 14, only A∩B (not C) = 7, only B∩C (not A) = 5, only A∩C (not B) = 6, and A∩B∩C = 3. What is n(A ∪ B ∪ C)?",
+      "options": [
+        {
+          "option_text": "49 — summing only the three single-circle regions and the central region",
+          "is_correct": false
+        },
+        {
+          "option_text": "53 — adding all six outer regions but omitting the central A∩B∩C region",
+          "is_correct": false
+        },
+        {
+          "option_text": "56 — summing all seven distinct non-overlapping Venn regions correctly",
+          "is_correct": true
+        },
+        {
+          "option_text": "62 — counting some two-way intersection regions more than once in addition",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. n(A∪B∪C) is the sum of all seven mutually exclusive regions: 12 + 9 + 14 + 7 + 5 + 6 + 3 = 56. Option B (53) is the classic error of forgetting to add the central region A∩B∩C = 3 after listing the other six. Option D (62) arises from double-counting one or more two-way regions. **Short Trick:** In any 3-circle Venn, list all 7 non-overlapping regions — (only A), (only B), (only C), (A∩B only), (B∩C only), (A∩C only), (all three) — their direct sum equals the union; no formula needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:17:50+00:00",
+      "id": "sgk_RSN_VENN_00016"
+    },
+    {
+      "stem": "In a class of 90 students, each studies at least one of Hindi (H), Sanskrit (S), or Urdu (U). n(H) = 48, n(S) = 38, n(U) = 35. Among pairs: only H∩S (not U) = 8, only S∩U (not H) = 6, only H∩U (not S) = 7. If n(H∩S∩U) = 5, how many students study only Hindi?",
+      "options": [
+        {
+          "option_text": "23 students study only Hindi, with no Sanskrit or Urdu at all",
+          "is_correct": false
+        },
+        {
+          "option_text": "28 students study only Hindi, with no Sanskrit or Urdu at all",
+          "is_correct": true
+        },
+        {
+          "option_text": "33 students study only Hindi, with no Sanskrit or Urdu at all",
+          "is_correct": false
+        },
+        {
+          "option_text": "38 students study only Hindi, with no Sanskrit or Urdu at all",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. First find total pairwise intersections: n(H∩S) = 8+5 = 13, n(H∩U) = 7+5 = 12. Then: Only H = n(H) − n(H∩S) − n(H∩U) + n(H∩S∩U) = 48 − 13 − 12 + 5 = 28. The '+5' restores the all-three region that was subtracted twice. Verify total: 28 + 19 + 17 + 8 + 6 + 7 + 5 = 90 ✓. Option C (33) comes from omitting the '+all-three' correction after double-subtracting it. Option A (23) comes from subtracting all-three a third time. **Short Trick:** Only A = n(A) − n(A∩B) − n(A∩C) + n(A∩B∩C); the final '+' undoes the double-subtraction of the central region.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:17:50+00:00",
+      "id": "sgk_RSN_VENN_00017"
+    },
+    {
+      "stem": "In a pool of 120 job applicants, at least 75 have work experience (W) and at least 60 hold a postgraduate degree (P). At most 15 applicants have neither W nor P. What is the MINIMUM number of applicants who have BOTH W and P?",
+      "options": [
+        {
+          "option_text": "10 applicants have both work experience and a postgraduate degree",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 applicants have both work experience and a postgraduate degree",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 applicants have both work experience and a postgraduate degree",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 applicants have both work experience and a postgraduate degree",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. To minimise the overlap, maximise n(W∪P). Since at most 15 have neither, n(W∪P) ≥ 105; but its theoretical ceiling is 120 (all applicants). Using minimum n(W) = 75, minimum n(P) = 60, and maximum n(W∪P) = 120: min n(W∩P) = 75 + 60 − 120 = 15. Option D (30) is the most tempting trap: it assumes exactly 15 have neither, giving n(W∪P) = 105 and n(W∩P) = 75+60−105 = 30 — but that gives the overlap when the union is at its floor, not its ceiling. **Short Trick:** Minimum overlap = n(A) + n(B) − max n(A∪B); always push the union to its ceiling to minimise the overlap.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:17:50+00:00",
+      "id": "sgk_RSN_VENN_00018"
+    },
+    {
+      "stem": "In a group of 200 students, each passed at least one of three papers P, Q, and R. n(P) = 130, n(Q) = 110, n(R) = 90. What is the MAXIMUM possible number of students who passed all three papers?",
+      "options": [
+        {
+          "option_text": "55 students could have passed all three papers at the maximum",
+          "is_correct": false
+        },
+        {
+          "option_text": "65 students could have passed all three papers at the maximum",
+          "is_correct": true
+        },
+        {
+          "option_text": "75 students could have passed all three papers at the maximum",
+          "is_correct": false
+        },
+        {
+          "option_text": "90 students could have passed all three papers at the maximum",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let n(P∩Q∩R) = x. To maximise x, set each pairwise intersection equal to x (so nobody is in exactly two circles), giving: n(P)+n(Q)+n(R) − 3x + x = 200 → 330 − 2x = 200 → x = 65. Verify: only-P = 130−65−65+65 = 65, only-Q = 45, only-R = 25; total = 65+45+25+65 = 200 ✓. Option D (90) ignores the total constraint — with x=90, inclusion-exclusion gives 330−3(90)+90 = 150 ≠ 200. **Short Trick:** Max triple = (ΣIndividual − Total) ÷ 2 = (330−200) ÷ 2 = 65; this formula applies when each pairwise intersection equals the triple (its minimum valid value).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:17:50+00:00",
+      "id": "sgk_RSN_VENN_00019"
+    },
+    {
+      "stem": "In a school, 200 students each play at least one of Cricket (C), Football (F), or Hockey (H). n(C) = 120, n(F) = 100, n(H) = 80. n(C∩F) = 50 and n(C∩H) = 40 (both figures include all-three players). The number who play only Cricket equals twice the number who play all three sports. How many students play exactly two sports?",
+      "options": [
+        {
+          "option_text": "30 students play exactly two sports (one pair only, not all three)",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 students play exactly two sports (one pair only, not all three)",
+          "is_correct": true
+        },
+        {
+          "option_text": "50 students play exactly two sports (one pair only, not all three)",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 students play exactly two sports (one pair only, not all three)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let n(C∩F∩H) = x. Only C = n(C)−n(C∩F)−n(C∩H)+x = 120−50−40+x = 30+x. Given only C = 2x: 30+x = 2x → x = 30. Now find n(F∩H) via inclusion-exclusion: 200 = 120+100+80−50−n(F∩H)−40+30 → n(F∩H) = 40. Exactly two = (C∩F only)+(F∩H only)+(C∩H only) = (50−30)+(40−30)+(40−30) = 20+10+10 = 40. Option A (30) confuses x (all-three) for exactly-two. Option C (50) mistakenly uses n(C∩F) directly without subtracting the triple-overlap. **Short Trick:** Exactly two = Σ(pairwise)−3×(all three) = (50+40+40)−3(30) = 130−90 = 40.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:17:50+00:00",
+      "id": "sgk_RSN_VENN_00020"
+    },
+    {
+      "stem": "In a city survey of 1000 people, 600 are members of Club A, 500 of Club B, and 400 of Club C. Pairwise memberships: A∩B = 300, B∩C = 200, A∩C = 250. Triple membership A∩B∩C = 150. The rest belong to no club. How many people are members of AT MOST TWO clubs?",
+      "options": [
+        {
+          "option_text": "700 people are members of at most two clubs in the city survey",
+          "is_correct": false
+        },
+        {
+          "option_text": "750 people are members of at most two clubs in the city survey",
+          "is_correct": false
+        },
+        {
+          "option_text": "850 people are members of at most two clubs in the city survey",
+          "is_correct": true
+        },
+        {
+          "option_text": "900 people are members of at most two clubs in the city survey",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. First, n(A∪B∪C) = 600+500+400−300−200−250+150 = 900. Non-members = 1000−900 = 100. 'At most two clubs' means everyone EXCEPT those in all three: 1000−150 = 850 (this correctly includes the 100 non-members, those in exactly one club, and those in exactly two). Option D (900) counts only those in at least one club, silently dropping the 100 non-members. Option B (750) = 900−150, the classic error of subtracting all-three from 'at-least-one' instead of from the total 1000 — it wrongly excludes the 100 non-members from the 'at most two' count. **Short Trick:** 'At most two' = Total − (exactly three) = 1000−150 = 850; non-members always count toward 'at most two' — never subtract them out.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:17:50+00:00",
+      "id": "sgk_RSN_VENN_00021"
     }
   ]
 }

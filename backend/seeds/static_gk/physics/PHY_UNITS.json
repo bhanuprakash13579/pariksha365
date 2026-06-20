@@ -382,6 +382,216 @@
       "generator_tag": "claude-opus-in-chat-2026-04-21-units-01",
       "generated_at": "2026-04-21T00:30:00+00:00",
       "id": "sgk_PHY_UNITS_00010"
+    },
+    {
+      "stem": "In the International System of Units (SI), 'radian' and 'steradian' are classified as which type of units?",
+      "options": [
+        {
+          "option_text": "Base units — fundamental quantities like mass and time",
+          "is_correct": false
+        },
+        {
+          "option_text": "Supplementary units — for plane and solid angle measure",
+          "is_correct": true
+        },
+        {
+          "option_text": "Derived units — expressed as products of base SI units",
+          "is_correct": false
+        },
+        {
+          "option_text": "Coherent units — reserved for electromagnetic quantities",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. In the original SI framework, radian (plane angle) and steradian (solid angle) were designated 'supplementary units' — a special category separate from the 7 base units and derived units. Option A is wrong because the 7 base units (metre, kilogram, second, ampere, kelvin, mole, candela) do not include radian or steradian. Option C is wrong because derived units are formed from base units by multiplication or division (e.g., Newton = kg·m·s⁻²), whereas radian and steradian are purely geometric ratios. Option D ('coherent units') is not a recognised SI classification.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:32:08+00:00",
+      "id": "sgk_PHY_UNITS_00011"
+    },
+    {
+      "stem": "The SI base unit used to quantify the 'amount of substance' in a chemical sample is the:",
+      "options": [
+        {
+          "option_text": "Mole, representing 6.022 × 10²³ constituent entities",
+          "is_correct": true
+        },
+        {
+          "option_text": "Dalton, the unified atomic mass unit used in chemistry",
+          "is_correct": false
+        },
+        {
+          "option_text": "Gram-equivalent, defined via normality in a solution",
+          "is_correct": false
+        },
+        {
+          "option_text": "Faraday, representing one mole of electron charge units",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. The mole (mol) is the SI base unit for amount of substance, defined since 2019 as exactly 6.02214076 × 10²³ elementary entities (Avogadro's number). Option B (Dalton / unified atomic mass unit, u) is used to express atomic and molecular masses but is not an SI base unit. Option C (gram-equivalent) belongs to the older equivalent-weight system and is absent from modern SI. Option D (Faraday ≈ 96485 C/mol) is a unit of electric charge per mole of electrons — related to amount of substance but not the unit for it.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:32:08+00:00",
+      "id": "sgk_PHY_UNITS_00012"
+    },
+    {
+      "stem": "The dimensional formula [ML⁻¹T⁻²] corresponds to which of the following physical quantities?",
+      "options": [
+        {
+          "option_text": "Kinematic viscosity — SI unit is square metre per second",
+          "is_correct": false
+        },
+        {
+          "option_text": "Surface tension — force per unit length along an interface",
+          "is_correct": false
+        },
+        {
+          "option_text": "Pressure or mechanical stress — force per unit cross-section",
+          "is_correct": true
+        },
+        {
+          "option_text": "Coefficient of viscosity — resistance to fluid flow (Pa·s)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Pressure = Force / Area = [MLT⁻²] / [L²] = [ML⁻¹T⁻²]. The same formula applies to mechanical stress, bulk modulus, and Young's modulus. Option A (kinematic viscosity ν = η/ρ) has dimensions [L²T⁻¹]. Option B (surface tension = F/l) has dimensions [MT⁻²]. Option D (coefficient of dynamic viscosity η) has dimensions [ML⁻¹T⁻¹] — note the T exponent is −1, not −2, a very common confusion with pressure since both share the ML⁻¹ factor.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:32:08+00:00",
+      "id": "sgk_PHY_UNITS_00013"
+    },
+    {
+      "stem": "Which of the following physical quantities is truly dimensionless, with dimensional formula [M⁰L⁰T⁰]?",
+      "options": [
+        {
+          "option_text": "Angular velocity — angular displacement divided by time",
+          "is_correct": false
+        },
+        {
+          "option_text": "Strain — ratio of change in length to the original length",
+          "is_correct": true
+        },
+        {
+          "option_text": "Surface charge density — electric charge spread over area",
+          "is_correct": false
+        },
+        {
+          "option_text": "Specific heat capacity — heat absorbed per kilogram per kelvin",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Strain = ΔL / L — both numerator and denominator have dimension [L], so they cancel completely, giving [M⁰L⁰T⁰]. Option A (angular velocity ω = θ/t) has dimension [T⁻¹]; even though the radian is treated as dimensionless, ω still carries per-unit-time. Option C (surface charge density σ = Q/A) has dimensions [A·T·L⁻²]. Option D (specific heat c = Q/(m·ΔT)) has dimensions [L²T⁻²K⁻¹] — involving length, time, and temperature — definitely not dimensionless.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:32:08+00:00",
+      "id": "sgk_PHY_UNITS_00014"
+    },
+    {
+      "stem": "The SI unit of magnetic flux is the Weber (Wb). Which of the following correctly expresses one Weber in terms of other SI units?",
+      "options": [
+        {
+          "option_text": "Ampere per henry (A·H⁻¹) — inverting the inductance relation",
+          "is_correct": false
+        },
+        {
+          "option_text": "Volt × second (V·s) — derived from Faraday's law of induction",
+          "is_correct": true
+        },
+        {
+          "option_text": "Newton per square ampere (N·A⁻²) — from electromagnetic field terms",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tesla per square metre (T·m⁻²) — dividing instead of multiplying area",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Faraday's law states EMF = −dΦ/dt, so Φ (Wb) = EMF × time = V·s. Equivalently, 1 Wb = 1 T·m² (flux = field × area). Option A is wrong: since inductance H = Wb/A, we get A/H = A²/Wb ≠ Wb. Option C: N/A² has dimensions [ML·T⁻²·A⁻²], which is the unit of magnetic permeability (H/m), not flux. Option D: T·m⁻² = (Wb/m²)·m⁻² = Wb·m⁻⁴ ≠ Wb — dividing by m² gives the magnetic field (Tesla), whereas multiplying by m² gives flux (Weber).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:32:08+00:00",
+      "id": "sgk_PHY_UNITS_00015"
+    },
+    {
+      "stem": "In the viscosity equation F = η·A·(dv/dx), where F is shear force, A is area, and dv/dx is velocity gradient, the dimensional formula of the coefficient of viscosity η is:",
+      "options": [
+        {
+          "option_text": "[ML⁻¹T⁻¹] — Newton-second per square metre, i.e., Pa·s",
+          "is_correct": true
+        },
+        {
+          "option_text": "[ML⁻¹T⁻²] — same as pressure; confuses viscosity with stress",
+          "is_correct": false
+        },
+        {
+          "option_text": "[MLT⁻²] — the dimension of force itself, not a transport property",
+          "is_correct": false
+        },
+        {
+          "option_text": "[M⁰L²T⁻¹] — kinematic viscosity (ν = η/ρ), not dynamic η",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Rearranging: η = F / (A · dv/dx). F → [MLT⁻²]; A → [L²]; dv/dx = (m/s)/m → [T⁻¹]. So η = [MLT⁻²] / ([L²][T⁻¹]) = [ML⁻¹T⁻¹]. Option B ([ML⁻¹T⁻²]) is the dimension of pressure — the most common error since both share ML⁻¹ but pressure has T⁻² while dynamic viscosity has T⁻¹ (one fewer power of inverse time). Option D ([L²T⁻¹]) is kinematic viscosity ν = η/ρ, obtained by dividing η by density [ML⁻³] — a different quantity entirely. Option C simply equals the dimension of force, a structural error in applying the formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:32:08+00:00",
+      "id": "sgk_PHY_UNITS_00016"
+    },
+    {
+      "stem": "A physical quantity P = a²b³/√c. The percentage errors in measuring a, b, and c are 2%, 1%, and 4% respectively. The maximum percentage error in P is:",
+      "options": [
+        {
+          "option_text": "7% — ignoring c's error contribution to the total budget",
+          "is_correct": false
+        },
+        {
+          "option_text": "9% — applying power rule: 2×2% + 3×1% + ½×4% = 9%",
+          "is_correct": true
+        },
+        {
+          "option_text": "11% — treating √c as c¹ and using the full 4% for c",
+          "is_correct": false
+        },
+        {
+          "option_text": "12% — swapping the percentage errors of a and c inadvertently",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Writing P = a²·b³·c^(−½), the maximum % error rule gives: |2|×(%Δa) + |3|×(%Δb) + |½|×(%Δc) = 2×2% + 3×1% + 0.5×4% = 4% + 3% + 2% = 9%. Option A (7%) arises from omitting c's term entirely (4+3=7). Option C (11%) is the most frequent student error — treating c^(1/2) as c¹, giving 2×2+3×1+1×4 = 4+3+4 = 11 (forgetting to halve the exponent for a square root). Option D (12%) results from swapping errors of a and c: 2×4% + 3×1% + ½×2% = 8+3+1 = 12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:32:08+00:00",
+      "id": "sgk_PHY_UNITS_00017"
     }
   ]
 }

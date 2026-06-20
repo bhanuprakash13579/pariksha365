@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Modern Physics (Relativity, Quantum, Nuclear)",
+  "topic_code": "PHY_DUAL_NATURE",
+  "questions": [
+    {
+      "stem": "In the photoelectric effect, which property of the incident light determines the maximum kinetic energy of the emitted photoelectrons?",
+      "options": [
+        {
+          "option_text": "Intensity of the incident light beam",
+          "is_correct": false
+        },
+        {
+          "option_text": "Frequency of the incident light beam",
+          "is_correct": true
+        },
+        {
+          "option_text": "Angle of incidence on the metal surface",
+          "is_correct": false
+        },
+        {
+          "option_text": "Speed at which the light beam hits the surface",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Einstein's photoelectric equation: KE_max = hν − φ (work function). The frequency ν of the photon sets hν (photon energy); subtracting the work function gives KE_max. Intensity only controls the number of electrons ejected, NOT their individual energy — the most common misconception tested in SSC/IBPS. Angle of incidence and light speed (always c in vacuum) are irrelevant to KE_max.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:25:25+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00001"
+    },
+    {
+      "stem": "A proton, electron, neutron, and alpha particle all move at the same speed v. Which particle has the largest de Broglie wavelength?",
+      "options": [
+        {
+          "option_text": "A proton moving at speed v in a magnetic field",
+          "is_correct": false
+        },
+        {
+          "option_text": "An electron moving at speed v in the same field",
+          "is_correct": true
+        },
+        {
+          "option_text": "A neutron moving at speed v through a crystal",
+          "is_correct": false
+        },
+        {
+          "option_text": "An alpha particle moving at speed v in vacuum",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. De Broglie wavelength λ = h/mv. At the same speed v, λ is inversely proportional to mass. Electron mass (~9.1 × 10⁻³¹ kg) is far smaller than proton (~1.67 × 10⁻²⁷ kg), neutron (~1.67 × 10⁻²⁷ kg), or alpha particle (~6.64 × 10⁻²⁷ kg). So the electron always has the largest λ. This is why electron microscopes achieve far higher resolution than optical microscopes — a PYQ-frequent application angle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:25:25+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00002"
+    },
+    {
+      "stem": "Light of photon energy 3 eV falls simultaneously on metal X (work function 2 eV) and metal Y (work function 4 eV). Which statement correctly describes the photoelectric outcome?",
+      "options": [
+        {
+          "option_text": "Both metals emit electrons with equal maximum kinetic energy",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only metal X emits electrons with maximum kinetic energy of 1 eV",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only metal Y emits electrons with maximum kinetic energy of 1 eV",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both metals emit electrons; Y emits faster electrons than X",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. KE_max = photon energy − work function. For X: 3 − 2 = 1 eV (emission occurs). For Y: 3 − 4 = −1 eV (negative, so emission is impossible — photon energy falls below Y's threshold). Option C is the classic trap: students confuse which metal has the higher threshold. Option D is wrong because Y emits no electrons at all. Threshold frequency ν₀ = φ/h; for Y, the incident photon frequency is below ν₀.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:25:25+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00003"
+    },
+    {
+      "stem": "Among the following nuclei, which has the highest binding energy per nucleon and is therefore considered the most thermodynamically stable nucleus?",
+      "options": [
+        {
+          "option_text": "Helium-4 nucleus with binding energy ~7.1 MeV per nucleon",
+          "is_correct": false
+        },
+        {
+          "option_text": "Iron-56 nucleus with binding energy ~8.8 MeV per nucleon",
+          "is_correct": true
+        },
+        {
+          "option_text": "Carbon-12 nucleus with binding energy ~7.7 MeV per nucleon",
+          "is_correct": false
+        },
+        {
+          "option_text": "Uranium-238 nucleus with binding energy ~7.6 MeV per nucleon",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The binding energy per nucleon (BE/A) curve peaks at iron-56 (~8.8 MeV/nucleon), making it the most stable nuclide. Nuclei lighter than Fe-56 release energy via fusion; heavier nuclei (like U-238) release energy via fission — both trends converge toward the iron peak. Helium-4 has a notably elevated BE/A for its mass range (~7.1 MeV) but is still well below iron. This BE/A vs mass-number graph is a high-frequency topic in SSC CGL and CBSE-aligned exams.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:25:25+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00004"
+    },
+    {
+      "stem": "The measured mass of a nucleus is always LESS than the arithmetic sum of masses of its constituent protons and neutrons. Which explanation correctly accounts for this mass defect?",
+      "options": [
+        {
+          "option_text": "Some protons convert to neutrons, reducing total particle count",
+          "is_correct": false
+        },
+        {
+          "option_text": "The lost mass is released as binding energy when the nucleus forms",
+          "is_correct": true
+        },
+        {
+          "option_text": "Nuclear electrons cancel proton mass partially inside the nucleus",
+          "is_correct": false
+        },
+        {
+          "option_text": "Strong-force compression physically shrinks protons and neutrons",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. By Einstein's E = mc², when nucleons bind to form a nucleus, the binding energy is released; the nucleus therefore has less mass than isolated nucleons: Δm = BE/c². Option A is a different process (beta-plus decay) and does not reduce mass without energy release. Option C is the discredited pre-1932 nuclear-electron hypothesis, disproved by Chadwick's discovery of the neutron. Option D has no physical basis — strong force does not 'compress' individual nucleon mass.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:25:25+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00005"
+    },
+    {
+      "stem": "An X-ray photon of wavelength 0.030 nm undergoes Compton backscattering (θ = 180°) off a stationary free electron. Given the Compton wavelength λ_c = h/m_e c = 0.00243 nm, what is the wavelength of the scattered photon?",
+      "options": [
+        {
+          "option_text": "0.0324 nm (treating backscatter as 90° — cosine factor taken as 1)",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.0349 nm (correct maximum Compton shift at 180° scattering)",
+          "is_correct": true
+        },
+        {
+          "option_text": "0.0251 nm (subtracting the shift — photon gains energy direction error)",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.00486 nm (reporting Δλ only, forgetting to add original wavelength)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Compton shift formula: Δλ = λ_c(1 − cosθ). At θ = 180°: cos180° = −1, so Δλ = 0.00243 × (1 − (−1)) = 0.00243 × 2 = 0.00486 nm. Scattered λ = 0.030 + 0.00486 = 0.03486 nm ≈ 0.0349 nm. Option A error: using (1 − cos90°) = 1 gives Δλ = 0.00243 nm → λ' = 0.0324 nm — the most common exam mistake. Option C: students who believe photon gains energy subtract the shift instead of adding it. Option D: Δλ is computed correctly but students forget to add it to the original wavelength. Note: backscatter at 180° gives the maximum possible Compton shift of 2λ_c.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:25:25+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00006"
+    },
+    {
+      "stem": "The Heisenberg uncertainty principle (ΔxΔp ≥ ℏ/2) predicts that an electron confined within a nucleus (Δx ~ 10⁻¹⁵ m) would require kinetic energy of ~20 MeV. Since observed beta-decay electrons carry only 1–3 MeV, physicists concluded that?",
+      "options": [
+        {
+          "option_text": "Electrons do reside in the nucleus but release energy during beta emission",
+          "is_correct": false
+        },
+        {
+          "option_text": "Electrons cannot pre-exist in the nucleus; they are created at the moment of beta decay",
+          "is_correct": true
+        },
+        {
+          "option_text": "The uncertainty principle breaks down for sub-nuclear confinement scales",
+          "is_correct": false
+        },
+        {
+          "option_text": "Protons inside nuclei shed partial charge converting into electrons pre-emission",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. For Δx ~ 10⁻¹⁵ m, Δp_min ~ ℏ/(2Δx) ~ 10⁻²⁰ kg·m/s; the relativistic KE (since p >> m_e c) is KE ~ pc ~ 20 MeV. Observed beta electrons carry only 1–3 MeV — a factor-of-10 energy deficit that cannot be explained by energy loss within the nucleus (Option A). This became a decisive argument that electrons do NOT pre-exist inside the nucleus; instead, beta-minus decay creates an electron via n → p + e⁻ + antineutrino at the instant of decay. Option C is wrong — the uncertainty principle is universal and holds at all scales. Option D echoes Rutherford's pre-1932 nuclear electron model, abandoned after Chadwick's neutron discovery in 1932.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:25:25+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00007"
+    }
+  ]
+}

@@ -45,6 +45,15 @@ const AttemptAPI = {
   submit: (attemptId: string) => api.post(`/attempts/${attemptId}/submit`),
 };
 
+const FlaggedAPI = {
+  flag: (question_source: string, question_id: string) =>
+    api.post('/me/flag', { question_source, question_id }),
+  unflag: (question_source: string, question_id: string) =>
+    api.delete('/me/flag', { params: { question_source, question_id } }),
+  list: (source?: string) =>
+    api.get('/me/flagged', { params: source ? { source } : {} }),
+};
+
 // Replace with your actual IDs when generating for Web and Android
 const GOOGLE_IOS_CLIENT_ID = "592393648560-0csjsd0dvukv94qg05np14rj1v3o9gg2.apps.googleusercontent.com";
 const GOOGLE_WEB_CLIENT_ID = "592393648560-o4ou87jvmv6tj3uura8ls27td06pv0o5.apps.googleusercontent.com";
@@ -269,15 +278,143 @@ const ProfileScreen = ({ navigation, route }: any) => {
 };
 
 // --- Testbook Profile Sub-Screens ---
-const SavedQuestionsScreen = () => (
-  <View style={styles.detailContainer}>
-    <View style={styles.emptyState}>
-      <Ionicons name="bookmark-outline" size={64} color="#d1d5db" />
-      <Text style={styles.emptyText}>No saved questions yet.</Text>
-      <Text style={styles.emptySubText}>Bookmark questions during a test to review them here.</Text>
-    </View>
-  </View>
-);
+const SavedQuestionsScreen = () => {
+  const [items, setItems] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [removing, setRemoving] = useState<string | null>(null);
+
+  const load = async () => {
+    setLoading(true);
+    try {
+      const res = await FlaggedAPI.list();
+      setItems(res.data?.items || []);
+    } catch { /* silent */ }
+    finally { setLoading(false); }
+  };
+
+  useEffect(() => { load(); }, []);
+
+  const handleRemove = async (item: any) => {
+    setRemoving(item.question_id);
+    try {
+      await FlaggedAPI.unflag(item.question_source, item.question_id);
+      setItems(prev => prev.filter(i => i.question_id !== item.question_id));
+    } catch { /* silent */ }
+    finally { setRemoving(null); }
+  };
+
+  if (loading) {
+    return (
+      <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}>
+        <ActivityIndicator size="large" color="#f97316" />
+      </View>
+    );
+  }
+
+  if (items.length === 0) {
+    return (
+      <View style={styles.detailContainer}>
+        <View style={styles.emptyState}>
+          <Ionicons name="bookmark-outline" size={64} color="#d1d5db" />
+          <Text style={styles.emptyText}>No saved questions yet.</Text>
+          <Text style={styles.emptySubText}>Tap the bookmark icon on any question during review to save it here.</Text>
+        </View>
+      </View>
+    );
+  }
+
+  return (
+    <ScrollView style={styles.container} contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
+      <Text style={{ fontSize: 15, fontWeight: '700', color: '#111827', marginBottom: 12 }}>
+        {items.length} Saved Question{items.length !== 1 ? 's' : ''}
+      </Text>
+      {items.map((item, idx) => {
+        const isExpanded = expandedId === item.question_id;
+        const isRemoving = removing === item.question_id;
+        const sourceLabel = item.question_source === 'private_module' ? '📚 Module' : '📝 Quiz';
+        const sectionLabel = item.section ? ` · ${item.section}` : '';
+        return (
+          <View key={item.question_id} style={{
+            backgroundColor: '#fff', borderRadius: 12, marginBottom: 10,
+            borderWidth: 1, borderColor: '#e5e7eb', overflow: 'hidden',
+          }}>
+            {/* Header row */}
+            <TouchableOpacity
+              onPress={() => setExpandedId(isExpanded ? null : item.question_id)}
+              style={{ padding: 14, flexDirection: 'row', alignItems: 'flex-start' }}
+            >
+              <Text style={{ fontSize: 11, color: '#6b7280', marginRight: 6, marginTop: 2, minWidth: 18 }}>
+                {idx + 1}.
+              </Text>
+              <Text style={{ flex: 1, fontSize: 13, fontWeight: '600', color: '#111827', lineHeight: 20 }}
+                numberOfLines={isExpanded ? undefined : 3}>
+                {item.question_text || 'Question not available'}
+              </Text>
+              <Ionicons name={isExpanded ? 'chevron-up' : 'chevron-down'} size={16} color="#9ca3af" style={{ marginLeft: 8, marginTop: 2 }} />
+            </TouchableOpacity>
+
+            {/* Source tag */}
+            <View style={{ paddingHorizontal: 14, paddingBottom: 8, flexDirection: 'row', alignItems: 'center' }}>
+              <Text style={{ fontSize: 10, color: '#6b7280', backgroundColor: '#f3f4f6', borderRadius: 6, paddingHorizontal: 6, paddingVertical: 2 }}>
+                {sourceLabel}{sectionLabel}
+              </Text>
+              {item.subject && (
+                <Text style={{ fontSize: 10, color: '#6b7280', marginLeft: 6, backgroundColor: '#f3f4f6', borderRadius: 6, paddingHorizontal: 6, paddingVertical: 2 }}>
+                  {item.subject}
+                </Text>
+              )}
+            </View>
+
+            {/* Expanded: options + explanation */}
+            {isExpanded && item.options?.length > 0 && (
+              <View style={{ paddingHorizontal: 14, paddingBottom: 4 }}>
+                {item.options.map((opt: any, i: number) => {
+                  const bg = opt.is_correct ? '#f0fdf4' : '#f9fafb';
+                  const border = opt.is_correct ? '#22c55e' : '#e5e7eb';
+                  return (
+                    <View key={i} style={{
+                      flexDirection: 'row', alignItems: 'flex-start',
+                      backgroundColor: bg, borderWidth: 1, borderColor: border,
+                      borderRadius: 8, paddingHorizontal: 10, paddingVertical: 8, marginBottom: 6,
+                    }}>
+                      <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#6b7280', marginRight: 6, marginTop: 1 }}>
+                        {String.fromCharCode(65 + i)}.
+                      </Text>
+                      <Text style={{ fontSize: 12, color: '#374151', flex: 1, lineHeight: 18 }}>{opt.option_text}</Text>
+                      {opt.is_correct && <Text style={{ color: '#16a34a', fontWeight: 'bold', fontSize: 14, marginLeft: 4 }}>✓</Text>}
+                    </View>
+                  );
+                })}
+                {item.explanation ? (
+                  <View style={{ backgroundColor: '#eff6ff', borderRadius: 8, padding: 10, marginBottom: 10, borderWidth: 1, borderColor: '#bfdbfe' }}>
+                    <Text style={{ fontSize: 12, color: '#1e40af', lineHeight: 18 }}>💡 {item.explanation}</Text>
+                  </View>
+                ) : null}
+              </View>
+            )}
+
+            {/* Remove button */}
+            <TouchableOpacity
+              onPress={() => handleRemove(item)}
+              disabled={isRemoving}
+              style={{
+                margin: 14, marginTop: 2, paddingVertical: 8, borderRadius: 8,
+                backgroundColor: '#fef2f2', borderWidth: 1, borderColor: '#fecaca',
+                flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
+              }}
+            >
+              <Ionicons name="bookmark" size={14} color="#ef4444" style={{ marginRight: 6 }} />
+              <Text style={{ fontSize: 12, color: '#ef4444', fontWeight: '600' }}>
+                {isRemoving ? 'Removing…' : 'Remove from Saved'}
+              </Text>
+            </TouchableOpacity>
+          </View>
+        );
+      })}
+    </ScrollView>
+  );
+};
 const DownloadsScreen = () => (
   <View style={styles.detailContainer}>
     <View style={styles.emptyState}>

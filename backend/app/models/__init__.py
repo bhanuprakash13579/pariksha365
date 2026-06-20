@@ -25,6 +25,7 @@ from app.models.private_module import (
     PrivateModuleAttempt, PrivateModuleWeakTopic,
 )
 from app.models.notes_purchase import NotesPurchase
+from app.models.flagged_question import UserFlaggedQuestion
 
 # Expose Base and Models for Alembic metadata
 __all__ = [
@@ -62,4 +63,5 @@ __all__ = [
     "PrivateModuleAttempt",
     "PrivateModuleWeakTopic",
     "NotesPurchase",
+    "UserFlaggedQuestion",
 ]

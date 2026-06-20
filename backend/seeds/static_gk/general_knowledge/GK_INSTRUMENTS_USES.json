@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "General Knowledge",
+  "topic": "Computer Fundamentals",
+  "topic_code": "GK_INSTRUMENTS_USES",
+  "questions": [
+    {
+      "stem": "Which output device is specifically designed to produce large-format, high-precision technical drawings such as engineering blueprints and architectural plans?",
+      "options": [
+        {
+          "option_text": "Inkjet printer — sprays liquid ink droplets onto paper",
+          "is_correct": false
+        },
+        {
+          "option_text": "Plotter — draws precise lines using pens or cutting heads",
+          "is_correct": true
+        },
+        {
+          "option_text": "Dot matrix printer — uses impact pins striking an inked ribbon",
+          "is_correct": false
+        },
+        {
+          "option_text": "Laser printer — fuses toner powder onto paper using heat",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. A plotter moves a pen (or cutting head) along X-Y axes to draw continuous vector lines, making it the standard tool for CAD blueprints and maps. Inkjet and laser printers render raster images by depositing dots — unsuitable for the continuous line precision required in engineering drawings. Dot matrix printers are impact-based and used for multi-copy forms, not large-format precision work.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:22:36+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00001"
+    },
+    {
+      "stem": "An OMR (Optical Mark Recognition) sheet reader used in competitive exam evaluation works on which underlying physical principle?",
+      "options": [
+        {
+          "option_text": "Magnetic field variations caused by pencil graphite deposits",
+          "is_correct": false
+        },
+        {
+          "option_text": "Differential light reflectance from darkened bubble regions",
+          "is_correct": true
+        },
+        {
+          "option_text": "Electrical conductivity change in pencil-marked paper areas",
+          "is_correct": false
+        },
+        {
+          "option_text": "Infrared heat signature from high-pressure pen or pencil marks",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. OMR devices shine a beam of light onto the answer sheet; darkened (filled) bubbles absorb more light and reflect less back to the sensor, while blank regions reflect more. This difference in reflectance is detected and interpreted as a mark. Option A (magnetic field) is the principle behind MICR used in bank cheques, not OMR. Option C (conductivity) describes touch-screen technology, not OMR. Option D (infrared heat) has no role in passive paper scanning.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:22:36+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00002"
+    },
+    {
+      "stem": "A dial-up modem was essential for early internet connectivity over telephone lines. Which paired function made this possible?",
+      "options": [
+        {
+          "option_text": "Compressing digital packets into smaller binary bursts for faster transfer",
+          "is_correct": false
+        },
+        {
+          "option_text": "Modulating outgoing digital signals into analog and demodulating received analog back to digital",
+          "is_correct": true
+        },
+        {
+          "option_text": "Encrypting data using RSA public-key pairs before telephone line transmission",
+          "is_correct": false
+        },
+        {
+          "option_text": "Amplifying weakened electrical signals to prevent degradation across phone cables",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The word 'modem' is a portmanteau of MOdulator-DEModulator. Phone lines carry analog signals; computers generate digital data. The modem modulates (digital→analog) at the sender and demodulates (analog→digital) at the receiver. Option A (compression) is a separate protocol layer, not the modem's core function. Option C (RSA encryption) is handled by software/SSL, not the modem hardware. Option D (amplification) is the job of a repeater or signal booster.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:22:36+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00003"
+    },
+    {
+      "stem": "Which statement most accurately describes the role of L1/L2/L3 cache memory in a modern processor?",
+      "options": [
+        {
+          "option_text": "Stores the operating system kernel permanently even when power is removed",
+          "is_correct": false
+        },
+        {
+          "option_text": "Acts as high-speed SRAM buffers between the CPU and slower main RAM",
+          "is_correct": true
+        },
+        {
+          "option_text": "Extends available RAM by mapping inactive data to hard disk swap space",
+          "is_correct": false
+        },
+        {
+          "option_text": "Holds BIOS firmware instructions executed during the POST startup sequence",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Cache memory (built from fast SRAM) sits between the CPU and main RAM (DRAM). Because RAM access takes ~100 CPU cycles, the cache pre-fetches frequently used data, reducing the average memory-access latency. L1 is fastest and smallest (inside the core), L2 is larger, L3 is shared across cores. Option A describes ROM/Flash (non-volatile storage). Option C describes virtual memory — a software technique using the HDD/SSD. Option D describes the BIOS chip (ROM), not cache.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:22:36+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00004"
+    },
+    {
+      "stem": "A digitizer tablet (graphics tablet) is distinct from a touchscreen because it primarily performs which function in professional design workflows?",
+      "options": [
+        {
+          "option_text": "Converts scanned physical documents into editable text using OCR algorithms",
+          "is_correct": false
+        },
+        {
+          "option_text": "Records audio input and converts it into digital waveform sample files",
+          "is_correct": false
+        },
+        {
+          "option_text": "Translates stylus position and pressure into precise XY coordinate data streams",
+          "is_correct": true
+        },
+        {
+          "option_text": "Displays colour-accurate high-resolution images for professional colour proofing",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A digitizer tablet uses an electromagnetic grid beneath its surface to track the stylus's exact X-Y position and pressure level, sending this as vector coordinate data to the software. This enables smooth, pressure-sensitive line work impossible with a mouse. Unlike a touchscreen (capacitive, detects finger touch), it works through the surface and responds only to its paired stylus. Option A describes an OCR scanner. Option B describes a microphone/ADC. Option D describes a colour-calibrated display, not an input device.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:22:36+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00005"
+    },
+    {
+      "stem": "A double-conversion online UPS differs fundamentally from a line-interactive UPS in which way that makes it preferred for sensitive data centre servers?",
+      "options": [
+        {
+          "option_text": "It regulates voltage fluctuations using an autotransformer without touching the AC waveform",
+          "is_correct": false
+        },
+        {
+          "option_text": "It continuously converts incoming AC to DC then back to AC, fully isolating the load from mains",
+          "is_correct": true
+        },
+        {
+          "option_text": "It transfers to battery power only after detecting a complete power outage condition",
+          "is_correct": false
+        },
+        {
+          "option_text": "It filters high-frequency electromagnetic interference injected by other equipment on the supply",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. In a double-conversion (online) UPS, power always flows: Mains AC → Rectifier (AC→DC) → Inverter (DC→AC) → Load. The load NEVER runs directly off the mains, so any sag, surge, or outage is absorbed invisibly — zero transfer time. A line-interactive UPS (Option A) uses an autotransformer to correct voltage but only switches to inverter on outage, meaning a brief transfer gap. Option C describes a standby (offline) UPS — the cheapest type with the longest transfer time (~8 ms). Option D is a noise filter/conditioner, not a UPS variant.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:22:36+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00006"
+    },
+    {
+      "stem": "A storage administrator selects RAID-5 over RAID-1 for a four-drive server array. Which trade-off is the administrator explicitly accepting?",
+      "options": [
+        {
+          "option_text": "Write performance improves because parity is pre-calculated before disk commits",
+          "is_correct": false
+        },
+        {
+          "option_text": "Usable capacity rises to (N−1) drives, but a second failure during rebuild causes total data loss",
+          "is_correct": true
+        },
+        {
+          "option_text": "Full mirroring is maintained while parity provides an additional recovery layer",
+          "is_correct": false
+        },
+        {
+          "option_text": "All four drives are striped without redundancy, doubling throughput over RAID-5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. RAID-5 stripes data with distributed parity across N drives, giving (N−1) drives of usable space (3 drives out of 4 = 75% efficiency). It tolerates ONE drive failure. During the rebuild phase, however, all remaining drives are under heavy read stress — if any second drive fails during this window, the entire array is lost. RAID-1 mirrors data (only 50% efficiency) but survives multiple failures as long as one mirror remains. Option A is wrong: RAID-5 write performance is SLOWER than RAID-0/1 because parity must be computed on every write. Option C describes no real RAID level — RAID-5 does NOT maintain full mirroring. Option D describes RAID-0, which has zero fault tolerance.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:22:36+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00007"
+    }
+  ]
+}

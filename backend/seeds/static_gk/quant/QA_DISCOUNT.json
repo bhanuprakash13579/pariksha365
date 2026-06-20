@@ -213,6 +213,216 @@
       "generator_tag": "auto-seed-2026-06-18",
       "generated_at": "2026-06-18T14:01:22+00:00",
       "id": "sgk_QA_DISCOUNT_00007"
+    },
+    {
+      "stem": "A shopkeeper first grants a 25% trade discount on an article priced at ₹1,200, then offers an additional 10% cash discount on the already-reduced price to customers who pay immediately. How much does a cash-paying customer actually pay?",
+      "options": [
+        {
+          "option_text": "₹756 — applying an inflated combined rate of 37% on ₹1,200 directly",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹810 — applying 25% first, then 10% on the reduced price sequentially",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹780 — treating 25% and 10% as a single flat 35% discount on ₹1,200",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹840 — stopping at the trade discount and ignoring the cash discount",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. After 25% trade discount: 1200 × 0.75 = ₹900. After 10% cash discount: 900 × 0.90 = ₹810. Option C (₹780) is the most common trap — students add 25 + 10 = 35% and compute 1200 × 0.65 = ₹780, but successive discounts are multiplicative, not additive. Option D (₹840) forgets to apply the second discount. **Short Trick:** Net multiplier = 0.75 × 0.90 = 0.675. SP = 1200 × 0.675 = ₹810.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:45:34+00:00",
+      "id": "sgk_QA_DISCOUNT_00008"
+    },
+    {
+      "stem": "An article is displayed at a tagged price of ₹2,500 in a showroom but is actually sold for ₹2,000. What is the discount percentage on the tagged price?",
+      "options": [
+        {
+          "option_text": "16% — obtained by using an incorrect base or rounding the ratio down",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% — dividing the ₹500 discount by the tagged price of ₹2,500",
+          "is_correct": true
+        },
+        {
+          "option_text": "25% — dividing the ₹500 discount by the selling price of ₹2,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "22% — using the average of tagged and selling prices as the divisor",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Discount = 2500 − 2000 = ₹500. Discount% = (500 ÷ 2500) × 100 = 20%. Option C (25%) is the classic trap: 500/2000 × 100 = 25%, obtained by dividing by SP instead of MP. Discount percentage is always calculated on the marked (tagged) price, never the selling price. **Short Trick:** Discount% = (MP − SP)/MP × 100 = 500/2500 = 1/5 = 20%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:45:34+00:00",
+      "id": "sgk_QA_DISCOUNT_00009"
+    },
+    {
+      "stem": "A store runs a 'Buy 3, Pay for 2' offer on identical items each marked at ₹450. What is the effective discount percentage a buyer gets under this scheme?",
+      "options": [
+        {
+          "option_text": "25.00% — treating the offer as 1 item free out of every 4 purchased",
+          "is_correct": false
+        },
+        {
+          "option_text": "33.33% — one of three items is free, saving exactly 1/3rd of total value",
+          "is_correct": true
+        },
+        {
+          "option_text": "50.00% — comparing the free item's price only against the two items paid for",
+          "is_correct": false
+        },
+        {
+          "option_text": "30.00% — applying an approximate flat rate without precise calculation",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Customer pays 2 × 450 = ₹900 for 3 items; total marked price = 3 × 450 = ₹1,350. Discount = ₹450. Discount% = 450/1350 × 100 = 33.33%. Option C (50%) is wrong: 450/900 × 100 = 50%, but discount must be measured on total MP (₹1,350), not on the amount paid (₹900). Option A (25%) confuses this with a 'Buy 3 Get 1 Free' on 4 items (1/4 = 25%). **Short Trick:** 'Buy n, Pay for m' effective discount% = (n − m)/n × 100 = (3 − 2)/3 × 100 = 100/3 ≈ 33.33%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:45:34+00:00",
+      "id": "sgk_QA_DISCOUNT_00010"
+    },
+    {
+      "stem": "A shopkeeper gives three successive discounts of 10%, 5%, and 2% on a television set. What single discount percentage is exactly equivalent to these three successive discounts?",
+      "options": [
+        {
+          "option_text": "17.00% — by simply adding the three discount rates as if independent",
+          "is_correct": false
+        },
+        {
+          "option_text": "16.21% — by multiplying the three successive net-price multipliers correctly",
+          "is_correct": true
+        },
+        {
+          "option_text": "15.50% — by subtracting only the largest pairwise overlap from the sum",
+          "is_correct": false
+        },
+        {
+          "option_text": "16.50% — by applying the two-discount formula and dropping the third rate",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Net multiplier = 0.90 × 0.95 × 0.98. Step 1: 0.90 × 0.95 = 0.855. Step 2: 0.855 × 0.98 = 0.8379. Equivalent discount = 1 − 0.8379 = 16.21%. Option A (17%) is the most common error — adding 10 + 5 + 2 = 17 as if discounts act on the original price each time. Option D (16.5%) ignores the third discount's interaction. **Short Trick:** Combine first two: 10 + 5 − (10×5)/100 = 14.5%. Then combine with 2%: 14.5 + 2 − (14.5×2)/100 = 16.5 − 0.29 = 16.21%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:45:34+00:00",
+      "id": "sgk_QA_DISCOUNT_00011"
+    },
+    {
+      "stem": "During a store sale, a 20% discount is offered on Monday. On Tuesday, a further 15% discount is applied on Monday's already-reduced price. The original price of an item is ₹5,000. How much extra does a Monday buyer pay compared to a Tuesday buyer?",
+      "options": [
+        {
+          "option_text": "₹500 extra — calculated as 10% of the original price of ₹5,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹600 extra — 15% applied on Monday's discounted price of ₹4,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹750 extra — applying Tuesday's 15% discount directly on original ₹5,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹650 extra — averaging both discounts and applying to the original price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Monday price = 5000 × 0.80 = ₹4,000. Tuesday price = 4000 × 0.85 = ₹3,400. Difference = 4000 − 3400 = ₹600. Option C (₹750) is the classic trap: 15% of 5000 = ₹750, but Tuesday's 15% acts on the already-discounted Monday price (₹4,000), not the original. Option A confuses 10% of original with the correct step. **Short Trick:** Extra amount = Original × (1 − d₁) × d₂ = 5000 × 0.80 × 0.15 = ₹600.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:45:34+00:00",
+      "id": "sgk_QA_DISCOUNT_00012"
+    },
+    {
+      "stem": "A shopkeeper offers a 12.5% discount on an article's marked price. Had he offered a 20% discount instead, he would have received ₹165 less. At what price did he actually sell the article?",
+      "options": [
+        {
+          "option_text": "₹1,870 — selling price after mistakenly applying a 15% discount on MP",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,925 — selling price after the correct 12.5% discount on MP of ₹2,200",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹2,035 — obtained by subtracting ₹165 directly from the marked price",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,980 — obtained by using an incorrectly derived marked price of ₹2,000",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. The two scenarios differ by (20% − 12.5%) = 7.5% of MP, which equals ₹165. So MP = 165 × 100/7.5 = ₹2,200. Actual SP = 2200 × 0.875 = ₹1,925. Option C (₹2,035) is wrong: students subtract ₹165 from MP directly (2200 − 165 = 2035) instead of applying the 12.5% discount to find SP. Option D uses a wrong MP of ₹2,000 (from dividing 165 by 8.25% in error). **Short Trick:** MP = gap-in-₹ ÷ gap-in-% × 100 = 165/7.5 × 100 = ₹2,200. Then SP = MP × 7/8 (since 12.5% = 1/8, so 87.5% = 7/8): 2200 × 7/8 = ₹1,925.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:45:34+00:00",
+      "id": "sgk_QA_DISCOUNT_00013"
+    },
+    {
+      "stem": "Shopkeeper A marks an article 60% above cost and allows a 25% discount. Shopkeeper B marks the same article 100% above cost and allows a 30% discount. Both source it at the same cost price. If B's selling price exceeds A's selling price by ₹200, what is the cost price of the article?",
+      "options": [
+        {
+          "option_text": "₹750 — from dividing ₹200 by an incorrectly computed multiplier difference",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,000 — from the correct net-multiplier gap of 0.20 between B and A",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹800 — from using 25% of ₹200 as the implied cost base for calculation",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,200 — from treating the ₹200 gap as 1/6th of an assumed cost price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. SP_A = CP × 1.60 × 0.75 = CP × 1.20. SP_B = CP × 2.00 × 0.70 = CP × 1.40. Difference = CP × (1.40 − 1.20) = CP × 0.20 = ₹200, so CP = ₹1,000. Verify: SP_A = ₹1,200; SP_B = ₹1,400; gap = ₹200 ✓. Option A (₹750) results from miscomputing one multiplier, e.g. using 1.60 × 0.25 instead of 1.60 × 0.75 for A. Option D confuses the ₹200 gap with a percentage of a guessed CP. **Short Trick:** Net multiplier = (1 + markup%) × (1 − discount%). A: 1.6 × 0.75 = 1.20; B: 2.0 × 0.70 = 1.40. Multiplier gap = 0.20. CP = 200 ÷ 0.20 = ₹1,000.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:45:34+00:00",
+      "id": "sgk_QA_DISCOUNT_00014"
     }
   ]
 }

@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Electric Field",
+  "topic_code": "PHY_ELECTROSTATICS",
+  "questions": [
+    {
+      "stem": "Why is it physically impossible for two electric field lines to intersect each other at any point in space?",
+      "options": [
+        {
+          "option_text": "Two intersecting lines would imply a charge exists at the crossing point",
+          "is_correct": false
+        },
+        {
+          "option_text": "At any intersection the field would point in two directions simultaneously",
+          "is_correct": true
+        },
+        {
+          "option_text": "Intersecting lines would violate the inverse square law of Coulomb's force",
+          "is_correct": false
+        },
+        {
+          "option_text": "Electric potential is always zero wherever two field lines cross each other",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Each field line shows the direction of force on a positive test charge at that location. If two lines crossed, the force at that single point would have two distinct directions simultaneously — a physical impossibility. Option A is a common misconception: charges are sources/sinks of field lines, but an intersection point in empty space does not indicate a charge there. Option D confuses equipotential surfaces (where V = 0) with the crossing of field lines, which are unrelated.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:21:09+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00001"
+    },
+    {
+      "stem": "A metallic spherical shell carries a net charge uniformly on its outer surface. What is the electric field at a point located exactly at the geometric centre of the shell?",
+      "options": [
+        {
+          "option_text": "Equal to the field at the outer surface of the shell at that radius",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zero, as all charges reside on the outer surface and cancel internally",
+          "is_correct": true
+        },
+        {
+          "option_text": "Directed radially inward and proportional to the shell's total charge",
+          "is_correct": false
+        },
+        {
+          "option_text": "Proportional to the distance from the centre of the shell's cavity",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. By Gauss's law, the electric flux through any closed surface inside the shell depends solely on the charge enclosed within it. Since all charges reside on the outer surface, zero charge is enclosed by any internal Gaussian surface, so E = 0 at every interior point including the centre. Option C confuses the field outside the shell (radially outward, ∝ Q/r²) with the interior field. Option A would be true for a solid conductor's surface, not the interior.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:21:09+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00002"
+    },
+    {
+      "stem": "A positive test charge is moved along a curved path that is everywhere perpendicular to the electric field lines in a non-uniform field. The work done by the electric force on the charge is:",
+      "options": [
+        {
+          "option_text": "Positive, because the charge moves through a region that has an electric field",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zero, because displacement is always perpendicular to the electric force",
+          "is_correct": true
+        },
+        {
+          "option_text": "Negative, since the charge moves against the direction of the field lines",
+          "is_correct": false
+        },
+        {
+          "option_text": "Equal to q × E × d, where d is the total path length traversed",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Work done W = F · ds = qE ds cosθ. If displacement is always perpendicular to the field (θ = 90°), cosθ = 0, so dW = 0 at every infinitesimal step, and total W = 0. This is equivalent to saying the charge moves along an equipotential surface (ΔV = 0, hence W = qΔV = 0). Option C confuses 'perpendicular to field' with 'opposite to field' (antiparallel, 180°) — that case gives negative work. Option D applies W = qEd without the cosθ factor, a frequent formula error.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:21:09+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00003"
+    },
+    {
+      "stem": "A metal enclosure (Faraday cage) completely shields its interior from an external electrostatic field. The correct physical mechanism behind this shielding is:",
+      "options": [
+        {
+          "option_text": "The metal mesh absorbs and converts electric field energy into heat energy",
+          "is_correct": false
+        },
+        {
+          "option_text": "Induced surface charges create an internal field that exactly cancels the external one",
+          "is_correct": true
+        },
+        {
+          "option_text": "Electric field lines are deflected by the high density of conduction electrons",
+          "is_correct": false
+        },
+        {
+          "option_text": "The cage acts as a capacitor and stores all incoming charge on its surface",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. When an external field is applied, free electrons in the metal redistribute until they produce an internal field equal and opposite to the external one. The net field inside becomes exactly zero — not reduced, but cancelled. This redistribution happens almost instantaneously. Option A is wrong: no energy is converted to heat (the field is cancelled, not absorbed). Option C is wrong: individual electron density doesn't 'deflect' macro field lines; the collective redistribution is the mechanism. Option D is wrong: a capacitor stores charge between two surfaces; a Faraday cage operates by surface induction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:21:09+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00004"
+    },
+    {
+      "stem": "An electric dipole is placed in a uniform external electric field with its dipole moment vector making exactly 90° with the field direction. Which of the following correctly describes the situation?",
+      "options": [
+        {
+          "option_text": "The net force is zero and the net torque on the dipole is also zero",
+          "is_correct": false
+        },
+        {
+          "option_text": "The net force is zero, but the torque on the dipole is at its maximum value",
+          "is_correct": true
+        },
+        {
+          "option_text": "The net force is non-zero and directed along the external field direction",
+          "is_correct": false
+        },
+        {
+          "option_text": "The net torque is zero and the dipole aligns instantly with the field lines",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. In a UNIFORM field, the forces on +q and −q are equal, opposite, and collinear in net effect, so net translational force = 0. The torque τ = pE sinθ; at θ = 90°, sinθ = 1, giving τ = pE — the maximum possible torque. Option A is wrong: torque is zero only at θ = 0° (stable equilibrium) or θ = 180° (unstable equilibrium). Option C would be true only in a NON-UNIFORM field. Option D confuses the 90° position (max torque, unstable tendency) with the equilibrium position at 0°.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:21:09+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00005"
+    },
+    {
+      "stem": "Using Gauss's law, the electric field at perpendicular distance r from an infinitely long straight wire carrying uniform linear charge density λ varies with r as:",
+      "options": [
+        {
+          "option_text": "Inversely proportional to r² (identical to the point charge law)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Directly proportional to r (field increases linearly with distance)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Inversely proportional to r, giving E = λ/(2πε₀r) at distance r",
+          "is_correct": true
+        },
+        {
+          "option_text": "Independent of distance r, forming a spatially uniform field everywhere",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. For a cylindrical Gaussian surface of radius r and length L coaxial with the wire: flux = E × 2πrL = Q_enc/ε₀ = λL/ε₀. Solving: E = λ/(2πε₀r), so E ∝ 1/r. Contrast: (a) point charge → E ∝ 1/r² (spherical symmetry), (b) infinite plane sheet → E = σ/(2ε₀), independent of distance (planar symmetry), (c) infinite line charge → E ∝ 1/r (cylindrical symmetry). Option A is the single most common mistake — candidates recall the point-charge formula and apply it regardless of geometry. Option D describes the infinite plane sheet result, not the line charge.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:21:09+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00006"
+    },
+    {
+      "stem": "The electric field at a point just outside the surface of a charged conductor in electrostatic equilibrium, where the local surface charge density is σ, is given by:",
+      "options": [
+        {
+          "option_text": "σ/(2ε₀), perpendicular and outward — same as an isolated plane sheet",
+          "is_correct": false
+        },
+        {
+          "option_text": "σ/ε₀, perpendicular and outward from the conductor surface",
+          "is_correct": true
+        },
+        {
+          "option_text": "σ²/ε₀, proportional to the square of the local surface charge density",
+          "is_correct": false
+        },
+        {
+          "option_text": "2σ/ε₀, accounting for contributions from both inner and outer conductor faces",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Apply a thin pillbox Gaussian surface straddling the conductor surface (area A, one face inside where E = 0, one face just outside): flux = E × A + 0 = σA/ε₀, giving E = σ/ε₀. Option A (σ/2ε₀) is the field due to an infinite isolated sheet of charge — a source of perpetual exam confusion. For the sheet, each side contributes σ/2ε₀, totalling σ/ε₀. But for a conductor, the interior is shielded (E_inside = 0), so ALL the field appears on the outside, doubling it relative to a simple sheet. Option D (2σ/ε₀) over-counts by applying both-face reasoning incorrectly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:21:09+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00007"
+    }
+  ]
+}

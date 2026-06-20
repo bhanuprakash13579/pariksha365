@@ -95,3 +95,14 @@ export const PrivateModuleAPI = {
     submitQuiz: (slug: string, answers: { question_id: string; selected_option_index: number | null }[]) =>
         api.post(`/private/modules/${slug}/submit`, { answers }),
 };
+
+export const FlaggedAPI = {
+    flag: (question_source: string, question_id: string, user_note?: string) =>
+        api.post('/me/flag', { question_source, question_id, user_note }),
+    unflag: (question_source: string, question_id: string) =>
+        api.delete('/me/flag', { params: { question_source, question_id } }),
+    list: (source?: string) =>
+        api.get('/me/flagged', { params: source ? { source } : {} }),
+    checkStatus: (question_source: string, question_id: string) =>
+        api.get('/me/flag/status', { params: { question_source, question_id } }),
+};

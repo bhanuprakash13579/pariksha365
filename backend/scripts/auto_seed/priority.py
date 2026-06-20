@@ -41,6 +41,12 @@ SUBJECT_WEIGHT_TARGETS: dict[str, int] = {
 
 _PER_TOPIC_CAP = 200  # don't let any one topic exceed this much
 
+# Visual-only topics: require images to be meaningful — skip in text-only generation
+_VISUAL_SKIP: set[str] = {
+    "RSN_PAPER_FOLD", "RSN_FIG_SERIES", "RSN_COUNTING_FIG",
+    "RSN_IMAGES", "RSN_EMBEDDED", "RSN_DOT_SITUATION", "RSN_DICE_CUBES",
+}
+
 
 def _high_weight_codes() -> set[str]:
     if not _HIGH_WEIGHT.exists():
@@ -193,7 +199,7 @@ def score_topics(state: dict) -> list[dict]:
 
 
 def next_picks(state: dict, n: int = 1, exclude: set[str] | None = None) -> list[dict]:
-    exclude = exclude or set()
+    exclude = (exclude or set()) | _VISUAL_SKIP
     rows = score_topics(state)
     return [r for r in rows if r["topic_code"] not in exclude][:n]
 

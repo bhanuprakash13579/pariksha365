@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from app.core.config import settings
 from app.core.database import engine, Base
-from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router, category_router, analytics_router, search_router, quiz_router, exam_structure_router, private_module_router, config_router
+from app.routers import auth_router, user_router, admin_router, test_series_router, attempt_router, payment_router, course_router, category_router, analytics_router, search_router, quiz_router, exam_structure_router, private_module_router, config_router, flagged_router
 import app.models
 
 import asyncio
@@ -257,6 +257,7 @@ app.include_router(exam_structure_router.public_router, prefix=f"{settings.API_V
 app.include_router(exam_structure_router.admin_router, prefix=f"{settings.API_V1_STR}/admin/exam-structure", tags=["admin-exam-structure"])
 app.include_router(private_module_router.router, prefix=f"{settings.API_V1_STR}/private", tags=["private-modules"])
 app.include_router(config_router.router, prefix=f"{settings.API_V1_STR}/config", tags=["config"])
+app.include_router(flagged_router.router, prefix=f"{settings.API_V1_STR}/me", tags=["flagged-questions"])
 
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse

@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Electromagnetic induction — mixed tiers",
+  "topic_code": "PHY_EMI_AC",
+  "questions": [
+    {
+      "stem": "Electromagnetic induction in a stationary closed conducting loop occurs only when which of the following conditions is satisfied?",
+      "options": [
+        {
+          "option_text": "A strong static magnetic field is present around the loop",
+          "is_correct": false
+        },
+        {
+          "option_text": "The magnetic flux linked with the loop changes over time",
+          "is_correct": true
+        },
+        {
+          "option_text": "A high voltage is connected across the loop terminals",
+          "is_correct": false
+        },
+        {
+          "option_text": "The conductor of the loop carries a constant direct current",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Faraday's law states that EMF is induced only when magnetic flux Φ through the loop changes (dΦ/dt ≠ 0). A strong but static field (Option A) produces zero dΦ/dt, hence no EMF — this is the single most common misconception. An external voltage source (Option C) drives current actively, which is not induction. A constant current in the loop (Option D) creates constant flux with no change, so again no induction. The key insight: it is CHANGE in flux, not the field strength itself, that matters.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:36+00:00",
+      "id": "sgk_PHY_EMI_AC_00001"
+    },
+    {
+      "stem": "Lenz's law, which governs the direction of the induced current in a loop, is fundamentally a direct consequence of the conservation of:",
+      "options": [
+        {
+          "option_text": "Electric charge within the closed conducting loop region",
+          "is_correct": false
+        },
+        {
+          "option_text": "Linear momentum of the moving magnet or current-carrying coil",
+          "is_correct": false
+        },
+        {
+          "option_text": "Energy, as the induced current always opposes the driving cause",
+          "is_correct": true
+        },
+        {
+          "option_text": "Magnetic flux, keeping the total flux through the loop constant",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Lenz's law says induced current opposes the change causing it. If the induced current had instead aided the change, flux would increase → more induced current → more aid — a runaway, self-amplifying effect producing energy from nothing. That would violate conservation of energy. Hence opposition is mandatory. Option D is a trap: Lenz's law does not keep flux constant; flux still changes — the induced current merely opposes the rate of change. Option B (momentum) is unrelated to the direction rule.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:36+00:00",
+      "id": "sgk_PHY_EMI_AC_00002"
+    },
+    {
+      "stem": "In an AC generator, the instantaneous induced EMF reaches its peak (maximum) value when the plane of the rotating coil is in which orientation relative to the magnetic field?",
+      "options": [
+        {
+          "option_text": "Perpendicular to the field, where flux linkage is at its maximum",
+          "is_correct": false
+        },
+        {
+          "option_text": "At 45° to the magnetic field, giving an intermediate value of EMF",
+          "is_correct": false
+        },
+        {
+          "option_text": "Parallel to the magnetic field, making rate of flux change maximum",
+          "is_correct": true
+        },
+        {
+          "option_text": "Tilted at 30° to the coil's own axis of rotation inside the field",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. EMF = NBAω sin θ, where θ is the angle between the coil's normal and B. When the coil plane is PARALLEL to B, the normal is perpendicular to B (θ = 90°), giving sin 90° = 1 — EMF is maximum. This is also the instant when flux Φ = NBA cos 90° = 0, but its rate of change is highest. Option A is the classic reversal error: when the plane is perpendicular to B, flux is maximum but dΦ/dt = 0, so EMF = 0 — the exact opposite of what students often assume.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:36+00:00",
+      "id": "sgk_PHY_EMI_AC_00003"
+    },
+    {
+      "stem": "A step-down transformer converts 2200 V to 220 V. The secondary coil delivers a current of 10 A to the load. Assuming 100% efficiency, the current drawn from the primary AC supply is:",
+      "options": [
+        {
+          "option_text": "1 A, since power conservation gives 2200 × Ip = 220 × 10 = 2200",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 A, because current ratios directly equal the inverse turns ratio",
+          "is_correct": false
+        },
+        {
+          "option_text": "100 A, since reducing voltage must increase primary current tenfold",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.1 A, obtained by dividing secondary current by the voltage ratio",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. At 100% efficiency, Vp × Ip = Vs × Is → 2200 × Ip = 220 × 10 = 2200 → Ip = 1 A. The primary-side current is LOWER in a step-down transformer (voltage stepped down, current stepped up on the secondary side — not the primary). Option C inverts this logic entirely: primary current does not increase when voltage steps down. Option D (0.1 A) divides instead of using power balance, compounding the error. Key mnemonic: power is conserved, so lower voltage × higher current = higher voltage × lower current.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:36+00:00",
+      "id": "sgk_PHY_EMI_AC_00004"
+    },
+    {
+      "stem": "The iron core of a power transformer is constructed using many thin sheets of iron electrically insulated from each other rather than a solid block. This lamination primarily reduces which energy loss?",
+      "options": [
+        {
+          "option_text": "Hysteresis loss caused by repeated reversal of magnetisation cycles",
+          "is_correct": false
+        },
+        {
+          "option_text": "Copper loss from resistance heating of the primary winding wire",
+          "is_correct": false
+        },
+        {
+          "option_text": "Eddy current loss due to circulating currents induced in the core",
+          "is_correct": true
+        },
+        {
+          "option_text": "Flux leakage between the primary and secondary coil winding sections",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Eddy currents are induced in the iron core itself by the alternating flux. They circulate in closed loops within the core and dissipate energy as heat (I²R). Lamination breaks these loops by inserting insulating gaps between sheets, dramatically increasing the resistance to eddy-current paths and reducing their magnitude. Option A (hysteresis loss) is reduced by using soft iron (low coercivity), not by lamination — a frequently confused pair in exams. Option B (copper loss) is reduced by using thick, low-resistance wire for windings.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:36+00:00",
+      "id": "sgk_PHY_EMI_AC_00005"
+    },
+    {
+      "stem": "In a purely inductive AC circuit, the frequency of the supply is tripled while the rms voltage across the inductor is kept unchanged. What happens to the rms current through the inductor?",
+      "options": [
+        {
+          "option_text": "Current triples because higher frequency drives more charge oscillation",
+          "is_correct": false
+        },
+        {
+          "option_text": "Current reduces to one-third as inductive reactance triples with frequency",
+          "is_correct": true
+        },
+        {
+          "option_text": "Current is unchanged since the inductance value L itself stays constant",
+          "is_correct": false
+        },
+        {
+          "option_text": "Current halves because only the reactive component partially responds",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Inductive reactance XL = 2πfL. When frequency f triples, XL triples (L and π are constants). Since I = V/XL and V is held fixed, current I = V/(3XL) — it reduces to one-third. Option C is the most tempting wrong answer: students correctly note that L does not change, but forget that reactance depends on BOTH L and f. Option A confuses mechanical wave behaviour with inductive circuit response. In a capacitive circuit, the opposite holds (current increases with frequency) — a frequent exam crossover trap.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:36+00:00",
+      "id": "sgk_PHY_EMI_AC_00006"
+    },
+    {
+      "stem": "A current of 4 A in coil P produces a magnetic flux of 0.012 Wb through each of the 200 turns of nearby coil Q. If the current in P decreases uniformly from 4 A to 1 A in 0.02 s, the magnitude of the EMF induced in coil Q is:",
+      "options": [
+        {
+          "option_text": "45 V, from incorrectly doubling the time interval to 0.04 s in dI/dt",
+          "is_correct": false
+        },
+        {
+          "option_text": "90 V, from M = NΦ/I = 0.6 H and dI/dt = 3 ÷ 0.02 = 150 A/s",
+          "is_correct": true
+        },
+        {
+          "option_text": "120 V, using 4 A as the full current change rather than ΔI = 4−1 = 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "360 V, by omitting the primary current I when computing mutual inductance",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Step 1 — find mutual inductance: M = NΦ/I = (200 × 0.012)/4 = 2.4/4 = 0.6 H. Step 2 — find rate of current change: dI/dt = (4 − 1)/0.02 = 3/0.02 = 150 A/s. Step 3 — EMF = M × dI/dt = 0.6 × 150 = 90 V. Option C error: uses ΔI = 4 A (the starting value) instead of the actual change 4−1 = 3 A → gives 0.6 × 200 = 120 V. Option D error: computes M as NΦ = 2.4 H (forgets to divide by the current I = 4 A) → 2.4 × 150 = 360 V — this misreads flux linkage as mutual inductance directly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:36+00:00",
+      "id": "sgk_PHY_EMI_AC_00007"
+    }
+  ]
+}
