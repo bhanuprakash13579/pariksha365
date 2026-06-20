@@ -7,10 +7,10 @@ import { styles, COLORS } from '../../styles/theme';
 type TestTab = 'MOCK' | 'PYQ';
 
 export default function CategoryScreen({ navigation, route }: any) {
-    const { categoryTitle, subcategories } = route.params;
+    const { categoryTitle, subcategories, initialTab } = route.params;
     const [tests, setTests] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
-    const [testTab, setTestTab] = useState<TestTab>('PYQ');
+    const [testTab, setTestTab] = useState<TestTab>(initialTab || 'PYQ');
 
     const [activeSubId, setActiveSubId] = useState<string | null>(
         subcategories && subcategories.length > 0 ? subcategories[0].id : null

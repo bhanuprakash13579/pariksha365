@@ -12,10 +12,11 @@ const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
 interface QuestionOption { option_text: string; is_correct?: boolean; }
 interface Question { id: string; question_text: string; image_url?: string; options: QuestionOption[]; }
-interface Section { id: string; name: string; marks_per_question: number; questions: Question[]; }
+interface Section { id: string; name: string; marks_per_question: number; time_limit_minutes?: number; questions: Question[]; }
 
 const TIMER_KEY = 'p365_timer';
 const VISITED_KEY = 'p365_visited';
+const SECTION_TIMER_KEY = 'p365_sect_timers';
 
 export default function MockTestScreen({ navigation, route }: any) {
     const { testSeriesId, testTitle: initialTitle } = route.params;
@@ -35,6 +36,12 @@ export default function MockTestScreen({ navigation, route }: any) {
     const [isPaused, setIsPaused] = useState(false);
     const [showPalette, setShowPalette] = useState(false);
     const [showSubmitModal, setShowSubmitModal] = useState(false);
+    // Sectional timing
+    const [hasSectionalTiming, setHasSectionalTiming] = useState(false);
+    const [sectionTimeLeft, setSectionTimeLeft] = useState(0);
+    const [lockedSections, setLockedSections] = useState<Set<number>>(new Set());
+    const sectionTimeLimitsRef = useRef<number[]>([]); // seconds per section
+    const sectionTimeRef = useRef(0);
 
     const timeLeftRef = useRef(0);
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -53,7 +60,26 @@ export default function MockTestScreen({ navigation, route }: any) {
         } catch { return null; }
     };
     const clearTimerState = async () => {
-        try { await AsyncStorage.multiRemove([TIMER_KEY, VISITED_KEY]); } catch { }
+        try { await AsyncStorage.multiRemove([TIMER_KEY, VISITED_KEY, SECTION_TIMER_KEY]); } catch { }
+    };
+
+    // Save section timer so it survives app background (not full kill)
+    const saveSectionTimer = async (aid: string, sIdx: number, startTime: number, totalSecs: number) => {
+        try {
+            const raw = await AsyncStorage.getItem(SECTION_TIMER_KEY);
+            const data = raw ? JSON.parse(raw) : {};
+            if (!data[aid]) data[aid] = {};
+            data[aid][sIdx] = { startTime, totalSecs };
+            await AsyncStorage.setItem(SECTION_TIMER_KEY, JSON.stringify(data));
+        } catch { }
+    };
+    const loadSectionTimer = async (aid: string, sIdx: number) => {
+        try {
+            const raw = await AsyncStorage.getItem(SECTION_TIMER_KEY);
+            if (!raw) return null;
+            const data = JSON.parse(raw);
+            return data[aid]?.[sIdx] ?? null;
+        } catch { return null; }
     };
 
     // -- Question Status --
@@ -150,8 +176,32 @@ export default function MockTestScreen({ navigation, route }: any) {
 
                 setTestTitle(testData.title || 'Mock Test');
                 setNegMarking(testData.negative_marking || 0.25);
-                const durationSecs = (testData.sections?.reduce((sum: number, s: any) => sum + (s.time_limit_minutes || 0), 0) || 60) * 60;
-                setSections(testData.sections || []);
+                const loadedSections: Section[] = testData.sections || [];
+                setSections(loadedSections);
+
+                const hasSect = !!(testData.has_sectional_timing);
+                setHasSectionalTiming(hasSect);
+                const limits = loadedSections.map((s: any) => (s.time_limit_minutes || 0) * 60);
+                sectionTimeLimitsRef.current = limits;
+
+                const durationSecs = hasSect
+                    ? limits.reduce((sum, v) => sum + v, 0) || 3600
+                    : (limits.reduce((sum, v) => sum + v, 0) || 60) * 60 / 60 * 60; // already in secs
+
+                // For sectional: init first section timer
+                if (hasSect && limits.length > 0) {
+                    const saved0 = await loadSectionTimer(aid, 0);
+                    if (saved0) {
+                        const elapsed = (Date.now() - saved0.startTime) / 1000;
+                        const rem = Math.max(0, Math.floor(saved0.totalSecs - elapsed));
+                        sectionTimeRef.current = rem;
+                        setSectionTimeLeft(rem);
+                    } else {
+                        sectionTimeRef.current = limits[0];
+                        setSectionTimeLeft(limits[0]);
+                        await saveSectionTimer(aid, 0, Date.now(), limits[0]);
+                    }
+                }
 
                 // Restore previous answers
                 try {
@@ -199,17 +249,54 @@ export default function MockTestScreen({ navigation, route }: any) {
 
     // -- Timer countdown --
     useEffect(() => {
-        if (timeLeftRef.current <= 0 || !attemptId || isPaused) return;
+        if (!attemptId || isPaused) return;
+        if (timerRef.current) clearInterval(timerRef.current);
+
         timerRef.current = setInterval(() => {
-            timeLeftRef.current -= 1;
-            setTimeLeft(timeLeftRef.current);
-            if (timeLeftRef.current <= 0) {
-                if (timerRef.current) clearInterval(timerRef.current);
-                handleSubmit(true);
+            if (hasSectionalTiming) {
+                // Section timer
+                sectionTimeRef.current -= 1;
+                setSectionTimeLeft(sectionTimeRef.current);
+                if (sectionTimeRef.current <= 0) {
+                    if (timerRef.current) clearInterval(timerRef.current);
+                    // Move to next section or submit
+                    setCurrentSectionIdx(prev => {
+                        const nextIdx = prev + 1;
+                        setLockedSections(ls => new Set([...ls, prev]));
+                        if (nextIdx < sections.length) {
+                            const nextLimit = sectionTimeLimitsRef.current[nextIdx] || 900;
+                            sectionTimeRef.current = nextLimit;
+                            setSectionTimeLeft(nextLimit);
+                            if (attemptIdRef.current) {
+                                saveSectionTimer(attemptIdRef.current, nextIdx, Date.now(), nextLimit);
+                            }
+                            setCurrentQuestionIdx(0);
+                            Alert.alert(
+                                'Section Time Up',
+                                `Moving to next section. The previous section is now locked.`,
+                                [{ text: 'OK' }]
+                            );
+                            return nextIdx;
+                        } else {
+                            // All sections done
+                            handleSubmit(true);
+                            return prev;
+                        }
+                    });
+                }
+            } else {
+                // Global timer
+                timeLeftRef.current -= 1;
+                setTimeLeft(timeLeftRef.current);
+                if (timeLeftRef.current <= 0) {
+                    if (timerRef.current) clearInterval(timerRef.current);
+                    handleSubmit(true);
+                }
             }
         }, 1000);
+
         return () => { if (timerRef.current) clearInterval(timerRef.current); };
-    }, [attemptId, isPaused, handleSubmit]);
+    }, [attemptId, isPaused, hasSectionalTiming, handleSubmit, sections.length]);
 
     // -- Mark question visited --
     useEffect(() => {
@@ -291,6 +378,7 @@ export default function MockTestScreen({ navigation, route }: any) {
         if (currentQuestionIdx > 0) {
             setCurrentQuestionIdx(prev => prev - 1);
         } else if (currentSectionIdx > 0) {
+            if (hasSectionalTiming && lockedSections.has(currentSectionIdx - 1)) return; // locked
             setCurrentSectionIdx(prev => prev - 1);
             const prevSection = sections[currentSectionIdx - 1];
             setCurrentQuestionIdx((prevSection.questions?.length || 1) - 1);
@@ -298,9 +386,21 @@ export default function MockTestScreen({ navigation, route }: any) {
     };
 
     const jumpToQuestion = (sIdx: number, qIdx: number) => {
+        if (hasSectionalTiming && lockedSections.has(sIdx)) return; // locked section
+        if (hasSectionalTiming && sIdx !== currentSectionIdx) return; // can't jump to different section
         setCurrentSectionIdx(sIdx);
         setCurrentQuestionIdx(qIdx);
         setShowPalette(false);
+    };
+
+    const switchSection = (idx: number) => {
+        if (hasSectionalTiming) {
+            if (lockedSections.has(idx)) return; // locked
+            if (idx !== currentSectionIdx) return; // sectional: only current section
+            return;
+        }
+        setCurrentSectionIdx(idx);
+        setCurrentQuestionIdx(0);
     };
 
     // -- Resume from pause --
@@ -321,7 +421,8 @@ export default function MockTestScreen({ navigation, route }: any) {
     const currentSection = sections[currentSectionIdx];
     const currentQuestion = currentSection?.questions?.[currentQuestionIdx];
     const stats = getStats();
-    const isTimeLow = timeLeft < 300;
+    const displayTimeLeft = hasSectionalTiming ? sectionTimeLeft : timeLeft;
+    const isTimeLow = displayTimeLeft < 300;
 
     // =================== RENDER ===================
     return (
@@ -360,7 +461,7 @@ export default function MockTestScreen({ navigation, route }: any) {
                             color: isTimeLow ? '#fecaca' : '#fff',
                             fontWeight: '900', fontSize: 15, marginLeft: 4, fontVariant: ['tabular-nums'],
                         }}>
-                            {formatTime(timeLeft)}
+                            {hasSectionalTiming ? `${currentSection?.name?.split(' ')[0] || 'Sec'}: ` : ''}{formatTime(displayTimeLeft)}
                         </Text>
                     </View>
 
@@ -383,24 +484,31 @@ export default function MockTestScreen({ navigation, route }: any) {
 
                 {/* Section Tabs */}
                 <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ borderTopWidth: 1, borderTopColor: '#374151' }}>
-                    {sections.map((section, idx) => (
-                        <TouchableOpacity
-                            key={section.id}
-                            onPress={() => { setCurrentSectionIdx(idx); setCurrentQuestionIdx(0); }}
-                            style={{
-                                paddingHorizontal: 16, paddingVertical: 10,
-                                borderBottomWidth: 2,
-                                borderBottomColor: idx === currentSectionIdx ? COLORS.primary : 'transparent',
-                            }}
-                        >
-                            <Text style={{
-                                color: idx === currentSectionIdx ? COLORS.primary : '#9ca3af',
-                                fontWeight: 'bold', fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.5,
-                            }}>
-                                {section.name}
-                            </Text>
-                        </TouchableOpacity>
-                    ))}
+                    {sections.map((section, idx) => {
+                        const isLocked = hasSectionalTiming && lockedSections.has(idx);
+                        const isCurrent = idx === currentSectionIdx;
+                        return (
+                            <TouchableOpacity
+                                key={section.id}
+                                onPress={() => switchSection(idx)}
+                                style={{
+                                    paddingHorizontal: 14, paddingVertical: 10,
+                                    borderBottomWidth: 2,
+                                    borderBottomColor: isCurrent ? COLORS.primary : 'transparent',
+                                    flexDirection: 'row', alignItems: 'center',
+                                    opacity: isLocked ? 0.45 : 1,
+                                }}
+                            >
+                                {isLocked && <Ionicons name="lock-closed" size={9} color="#9ca3af" style={{ marginRight: 4 }} />}
+                                <Text style={{
+                                    color: isCurrent ? COLORS.primary : '#9ca3af',
+                                    fontWeight: 'bold', fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.5,
+                                }}>
+                                    {section.name}
+                                </Text>
+                            </TouchableOpacity>
+                        );
+                    })}
                 </ScrollView>
             </View>
 
@@ -651,7 +759,8 @@ export default function MockTestScreen({ navigation, route }: any) {
                         </View>
                         <Text style={{ fontSize: 22, fontWeight: '900', color: '#111827', marginBottom: 8 }}>Test Paused</Text>
                         <Text style={{ fontSize: 14, color: '#6b7280', marginBottom: 4 }}>
-                            Time remaining: <Text style={{ fontWeight: 'bold', color: '#111827' }}>{formatTime(timeLeft)}</Text>
+                            {hasSectionalTiming ? 'Section time: ' : 'Time remaining: '}
+                            <Text style={{ fontWeight: 'bold', color: '#111827' }}>{formatTime(displayTimeLeft)}</Text>
                         </Text>
                         <Text style={{ fontSize: 14, color: '#6b7280', marginBottom: 16 }}>
                             Answered: <Text style={{ fontWeight: 'bold', color: '#111827' }}>{stats.answered}/{totalQuestions}</Text>
