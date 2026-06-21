@@ -252,15 +252,86 @@ const ProfileScreen = ({ navigation, route }: any) => {
 };
 
 // --- Testbook Profile Sub-Screens ---
-const SavedQuestionsScreen = () => (
-  <View style={styles.detailContainer}>
-    <View style={styles.emptyState}>
-      <Ionicons name="bookmark-outline" size={64} color="#d1d5db" />
-      <Text style={styles.emptyText}>No saved questions yet.</Text>
-      <Text style={styles.emptySubText}>Bookmark questions during a test to review them here.</Text>
+const SavedQuestionsScreen = () => {
+  const [saved, setSaved] = React.useState<any[]>([]);
+  const [loading, setLoading] = React.useState(true);
+  const [expanded, setExpanded] = React.useState<Set<string>>(new Set());
+
+  React.useEffect(() => {
+    AsyncStorage.getItem('bookmarked_questions').then(raw => {
+      setSaved(raw ? JSON.parse(raw) : []);
+      setLoading(false);
+    }).catch(() => setLoading(false));
+  }, []);
+
+  const removeBookmark = async (id: string) => {
+    const updated = saved.filter(q => q.id !== id);
+    setSaved(updated);
+    await AsyncStorage.setItem('bookmarked_questions', JSON.stringify(updated));
+  };
+
+  const toggleExpand = (id: string) => {
+    const next = new Set(expanded);
+    next.has(id) ? next.delete(id) : next.add(id);
+    setExpanded(next);
+  };
+
+  if (loading) return <View style={[styles.detailContainer, { justifyContent: 'center', alignItems: 'center' }]}><ActivityIndicator size="large" color="#f97316" /></View>;
+
+  if (saved.length === 0) return (
+    <View style={styles.detailContainer}>
+      <View style={styles.emptyState}>
+        <Ionicons name="bookmark-outline" size={64} color="#d1d5db" />
+        <Text style={styles.emptyText}>No saved questions yet.</Text>
+        <Text style={styles.emptySubText}>Tap the bookmark icon after a quiz to save questions here.</Text>
+      </View>
     </View>
-  </View>
-);
+  );
+
+  return (
+    <ScrollView style={styles.container}>
+      <View style={styles.contentPadAlt}>
+        <Text style={[styles.sectionTitle, { marginTop: 10 }]}>{saved.length} Saved Question{saved.length !== 1 ? 's' : ''}</Text>
+        {saved.map((q: any) => {
+          const isOpen = expanded.has(q.id);
+          return (
+            <View key={q.id} style={[styles.card, { flexDirection: 'column', alignItems: 'flex-start' }]}>
+              <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%', marginBottom: 8 }}>
+                <View style={{ flexDirection: 'row', gap: 6, flexWrap: 'wrap', flex: 1 }}>
+                  {q.subject && <View style={{ backgroundColor: '#fff7ed', paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6, borderWidth: 1, borderColor: '#fed7aa' }}><Text style={{ fontSize: 11, color: '#c2410c', fontWeight: '600' }}>{q.subject}</Text></View>}
+                  {q.topic && <View style={{ backgroundColor: '#f0f9ff', paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6, borderWidth: 1, borderColor: '#bae6fd' }}><Text style={{ fontSize: 11, color: '#0369a1', fontWeight: '600' }}>{q.topic}</Text></View>}
+                </View>
+                <TouchableOpacity onPress={() => removeBookmark(q.id)} style={{ padding: 4 }}>
+                  <Ionicons name="bookmark" size={20} color="#f97316" />
+                </TouchableOpacity>
+              </View>
+              <Text style={{ fontSize: 14, color: '#1f2937', fontWeight: '500', lineHeight: 20, marginBottom: 10 }}>{q.question_text}</Text>
+              {q.options?.map((opt: any, i: number) => (
+                <View key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', marginBottom: 5 }}>
+                  <View style={{ width: 22, height: 22, borderRadius: 11, backgroundColor: opt.is_correct ? '#dcfce7' : '#f3f4f6', borderWidth: 1, borderColor: opt.is_correct ? '#86efac' : '#e5e7eb', alignItems: 'center', justifyContent: 'center', marginRight: 8, marginTop: 1 }}>
+                    <Text style={{ fontSize: 10, fontWeight: 'bold', color: opt.is_correct ? '#16a34a' : '#6b7280' }}>{String.fromCharCode(65 + i)}</Text>
+                  </View>
+                  <Text style={{ fontSize: 13, color: opt.is_correct ? '#16a34a' : '#374151', flex: 1, lineHeight: 18, fontWeight: opt.is_correct ? '600' : '400' }}>{opt.option_text}</Text>
+                </View>
+              ))}
+              {q.explanation && (
+                <TouchableOpacity onPress={() => toggleExpand(q.id)} style={{ marginTop: 8 }}>
+                  <Text style={{ color: '#f97316', fontSize: 13, fontWeight: '600' }}>{isOpen ? '▲ Hide explanation' : '▼ Show explanation'}</Text>
+                </TouchableOpacity>
+              )}
+              {isOpen && q.explanation && (
+                <View style={{ marginTop: 8, backgroundColor: '#f0fdf4', borderRadius: 8, padding: 10, borderWidth: 1, borderColor: '#bbf7d0' }}>
+                  <Text style={{ fontSize: 13, color: '#166534', lineHeight: 18 }}>{q.explanation}</Text>
+                </View>
+              )}
+            </View>
+          );
+        })}
+        <View style={{ height: 30 }} />
+      </View>
+    </ScrollView>
+  );
+};
 const DownloadsScreen = () => (
   <View style={styles.detailContainer}>
     <View style={styles.emptyState}>

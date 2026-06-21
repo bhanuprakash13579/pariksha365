@@ -45,13 +45,26 @@ async def get_quiz_categories_with_counts(db: AsyncSession) -> list:
         select(func.lower(QuizQuestion.subject), func.count(QuizQuestion.id))
         .group_by(func.lower(QuizQuestion.subject))
     )
-    counts_by_subject = {row[0]: row[1] for row in (await db.execute(stmt)).all()}
+    raw = {row[0]: row[1] for row in (await db.execute(stmt)).all()}
+
+    # Normalize: collapse underscores→spaces so "quantitative_aptitude" and
+    # "quantitative aptitude" both map to the same bucket.
+    def _norm(s: str) -> str:
+        return s.lower().replace("_", " ").strip()
+
+    normalized: dict[str, int] = {}
+    for k, v in raw.items():
+        nk = _norm(k)
+        normalized[nk] = normalized.get(nk, 0) + v
+
+    def _count(cat: dict) -> int:
+        return (
+            normalized.get(_norm(cat["name"]), 0)
+            or normalized.get(_norm(cat["key"]), 0)
+        )
+
     return [
-        {
-            **cat,
-            "question_count": counts_by_subject.get(cat["name"].lower(), 0),
-            "has_questions": counts_by_subject.get(cat["name"].lower(), 0) > 0,
-        }
+        {**cat, "question_count": _count(cat), "has_questions": _count(cat) > 0}
         for cat in QUIZ_CATEGORIES
     ]
 
