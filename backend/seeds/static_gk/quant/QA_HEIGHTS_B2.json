@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_HEIGHTS",
+  "subject": "Quantitative Aptitude",
+  "topic": "Heights and Distances",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "A tower casts a shadow of 40 m when the angle of elevation of the sun is 30°. What is the height of the tower?",
+      "options": [
+        {"option_text": "20√3 m (height = shadow × tan30°; tan30°=1/√3; 40/√3 = 40√3/3 ≈ 23.1 m — not 20√3)", "is_correct": false},
+        {"option_text": "40/√3 m = 40√3/3 m (tan30° = height/shadow → height = 40×tan30° = 40/√3)", "is_correct": true},
+        {"option_text": "40√3 m (this uses tan60°=√3, not tan30°)", "is_correct": false},
+        {"option_text": "20 m (using tan45°=1, which gives height=shadow=40, not 20)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. tan(angle of elevation) = height/horizontal distance. tan30° = h/40 → h = 40 × tan30° = 40 × (1/√3) = 40/√3 = 40√3/3 ≈ 23.1 m. Note: tan30° = 1/√3, tan60° = √3. Common error: using tan60°. **Short Trick:** For 30°: opposite = adjacent/√3. For 60°: opposite = adjacent×√3. For 45°: opposite = adjacent.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "From the top of a 60 m high building, the angle of depression of a car on the ground is 30°. How far is the car from the base of the building?",
+      "options": [
+        {"option_text": "30 m (using angle=60° instead of 30°: 60/√3=20√3≈34.6m; 30 doesn't work)", "is_correct": false},
+        {"option_text": "60√3 m (correct: angle of depression = 30° → tan30° = 60/d → d = 60/tan30° = 60√3)", "is_correct": true},
+        {"option_text": "60/√3 m (this would be height/tan30° confused with tan60°)", "is_correct": false},
+        {"option_text": "120 m (no trigonometric basis for this answer)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Angle of depression from top = angle of elevation from car = 30° (alternate angles). tan30° = height/distance = 60/d → d = 60/tan30° = 60/(1/√3) = 60√3 ≈ 103.9 m. Option C (60/√3) would come from wrongly using tan60° in the denominator. **Short Trick:** Angle of depression from top = angle of elevation from point. d = h/tan(θ) = h × cot(θ).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Two poles of heights 6 m and 11 m are standing on level ground. The distance between their feet is 12 m. What is the distance between their tops?",
+      "options": [
+        {"option_text": "√119 m (wrong — let's use Pythagoras: vertical diff=5, horizontal=12; distance=√(25+144)=√169=13 m)", "is_correct": false},
+        {"option_text": "13 m (correct: vertical difference=11−6=5 m; horizontal=12 m; distance=√(5²+12²)=√169=13 m)", "is_correct": true},
+        {"option_text": "√205 m (using full heights instead of difference: √(6²+11²) ignores common baseline)", "is_correct": false},
+        {"option_text": "17 m (5+12=17 — wrong, cannot add distances directly)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Draw a horizontal from the top of the shorter pole to the taller pole. Vertical distance between tops = 11 − 6 = 5 m. Horizontal distance = 12 m. By Pythagorean theorem: distance between tops = √(5² + 12²) = √(25 + 144) = √169 = 13 m. This is a classic 5-12-13 Pythagorean triple. Option A (√119) incorrectly uses some other combination.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A man standing 10 m away from a tree observes the angle of elevation of the top of the tree as 60°. If his eyes are 1.5 m above the ground, what is the height of the tree?",
+      "options": [
+        {"option_text": "10√3 m (ignoring eye height: 10×tan60°=10√3, but total height = 10√3+1.5)", "is_correct": false},
+        {"option_text": "(10√3 + 1.5) m (correct: height above eye = 10×tan60°=10√3; total = 10√3+1.5)", "is_correct": true},
+        {"option_text": "10√3 − 1.5 m (subtracting eye height instead of adding)", "is_correct": false},
+        {"option_text": "11.5√3 m (incorrectly multiplying the entire 11.5 by tan60°)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. The angle is measured from eye level (1.5 m above ground). Height from eye to top of tree = 10 × tan60° = 10√3 m. Total tree height = 10√3 + 1.5 m ≈ 17.32 + 1.5 = 18.82 m. Option A (10√3) ignores the eye-height offset. Option C subtracts it — wrong direction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "From a point P on the ground, the angles of elevation of the top and bottom of a flagpole installed on top of a building are 60° and 45° respectively. If the height of the building is 20 m, what is the height of the flagpole?",
+      "options": [
+        {"option_text": "20(√3−1) m (correct: let d=distance to building; tan45°=20/d→d=20; tan60°=(20+h)/20→h=20(√3−1))", "is_correct": true},
+        {"option_text": "20√3 m (the full height of building+flag, not just the flag)", "is_correct": false},
+        {"option_text": "20(√3+1) m (wrongly adding instead of subtracting)", "is_correct": false},
+        {"option_text": "10(√3−1) m (using half the building height)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Let P be the observation point, d = horizontal distance to building. Bottom of flag = top of building, 20 m high. tan45° = 20/d → d = 20 m. Total height = building + flag = 20 + h. tan60° = (20+h)/d = (20+h)/20 → 20+h = 20√3 → h = 20√3 − 20 = 20(√3−1) ≈ 14.64 m. This is a classic double-angle heights and distances problem.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The angle of elevation of the top of a tower from a point 30 m away is 45°. If the observer moves 15 m closer, what is the new angle of elevation?",
+      "options": [
+        {"option_text": "60° (from 15 m: tan(θ)=30/15=2; θ=arctan(2)≈63.4°, not 60°)", "is_correct": false},
+        {"option_text": "arctan(2) ≈ 63.4° (correct: tower height=30m from 30m at 45°; new distance=15m; tan(θ)=30/15=2)", "is_correct": true},
+        {"option_text": "75° (no trigonometric justification)", "is_correct": false},
+        {"option_text": "90° (only at base of tower)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. At 30 m: tan45° = h/30 → h = 30 m (tower height). Moving 15 m closer: new distance = 15 m. New angle: tan(θ) = 30/15 = 2 → θ = arctan(2) ≈ 63.4°. This is not a standard angle (not 30°/45°/60°), which is why option B is the precise answer. Option A (60°) would require tan60°=√3≈1.73, but we get tan=2 — close but not 60°.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A 10 m long ladder leans against a wall. The foot of the ladder makes a 60° angle with the ground. How high does the ladder reach on the wall?",
+      "options": [
+        {"option_text": "5 m (sin60°=h/10; h=10×sin60°=5√3; 5=10×sin30°, not sin60°)", "is_correct": false},
+        {"option_text": "5√3 m (correct: h = 10 × sin60° = 10 × √3/2 = 5√3 ≈ 8.66 m)", "is_correct": true},
+        {"option_text": "10√3 m (exceeds ladder length — impossible)", "is_correct": false},
+        {"option_text": "5/√3 m (this would be cos60° used incorrectly)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. The ladder is the hypotenuse (10 m). Height = hypotenuse × sin(angle with ground) = 10 × sin60° = 10 × (√3/2) = 5√3 ≈ 8.66 m. Alternative: cos(angle from wall) × length — same result. The horizontal distance from wall = 10 × cos60° = 5 m. Verify: 5² + (5√3)² = 25 + 75 = 100 = 10² ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "From the top of a lighthouse 100 m above sea level, the angle of depression of two boats on the same side are 30° and 45°. What is the distance between the two boats?",
+      "options": [
+        {"option_text": "100(√3−1) m (boat1 at 45°: d1=100m; boat2 at 30°: d2=100√3; distance=100√3−100=100(√3−1) ✓)", "is_correct": true},
+        {"option_text": "100(√3+1) m (adding distances instead of subtracting)", "is_correct": false},
+        {"option_text": "100√3 m (the distance from lighthouse to farther boat, not between boats)", "is_correct": false},
+        {"option_text": "200 m (no trigonometric basis)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Lighthouse height = 100 m. Boat 1 (closer, depression 45°): tan45° = 100/d₁ → d₁ = 100 m. Boat 2 (farther, depression 30°): tan30° = 100/d₂ → d₂ = 100/tan30° = 100√3 m. Distance between boats = d₂ − d₁ = 100√3 − 100 = 100(√3−1) ≈ 73.2 m. **Short Trick:** In double-angle problems, the closer boat uses the larger depression angle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The shadow of a vertical pole is 1/√3 times its height. What is the angle of elevation of the sun?",
+      "options": [
+        {"option_text": "30° (tan30°=1/√3, but tan(elevation) = height/shadow = h/(h/√3) = √3 → 60°)", "is_correct": false},
+        {"option_text": "45° (tan45°=1; shadow=height, not h/√3)", "is_correct": false},
+        {"option_text": "60° (tan(elevation) = height/shadow = h ÷ h/√3 = √3 → arctan(√3) = 60°)", "is_correct": true},
+        {"option_text": "75° (no standard angle gives this with the given ratio)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let height = h. Shadow = h/√3. Angle of elevation of sun = angle whose tangent = height/shadow = h ÷ (h/√3) = √3. tan(θ) = √3 → θ = 60°. Common error: thinking shadow/height=1/√3 means angle=30° — but angle=30° would give shadow=h√3 (shadow is longer than height). Here shadow is shorter than height → sun is higher → angle > 45°.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A person observes a bird sitting on top of a pole from a point 80 m away. The angle of elevation is 30°. The bird flies away horizontally and the angle of elevation from the same point becomes 45°. How far did the bird fly?",
+      "options": [
+        {"option_text": "80(√3−1)/√3 m (height=80tan30°=80/√3; new horizontal at 45°: d₂=height=80/√3; distance flown=80−80/√3=80(1−1/√3)=80(√3−1)/√3 ✓)", "is_correct": true},
+        {"option_text": "80(1−√3) m (negative number — bird can't fly a negative distance)", "is_correct": false},
+        {"option_text": "80√3 − 80 m (this would be if height = 80√3/3 and we compute 80−80/√3... let's check: it equals 80(1−1/√3)=80(√3−1)/√3 — actually the same value expressed differently)", "is_correct": false},
+        {"option_text": "40 m (no trigonometric basis for this)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Height of pole = 80 × tan30° = 80/√3 m. When angle becomes 45°: tan45° = height/d₂ → d₂ = height = 80/√3 m. Distance flown horizontally = d₁ − d₂ = 80 − 80/√3 = 80(1 − 1/√3) = 80(√3−1)/√3 ≈ 80(0.423) ≈ 33.8 m. Note: the bird flew toward the observer (angle increased), so new distance < 80.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

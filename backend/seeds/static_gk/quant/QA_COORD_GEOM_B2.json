@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_COORD_GEOM",
+  "subject": "Quantitative Aptitude",
+  "topic": "Coordinate Geometry",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "What is the distance between the points A(3, 4) and B(7, 7)?",
+      "options": [
+        {"option_text": "4 (horizontal distance only: 7−3=4 — ignoring vertical component)", "is_correct": false},
+        {"option_text": "5 (correct: √((7−3)²+(7−4)²) = √(16+9) = √25 = 5)", "is_correct": true},
+        {"option_text": "7 (sum of differences: 4+3=7 — wrong)", "is_correct": false},
+        {"option_text": "√41 (4²+5²=41 — using wrong coordinates)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Distance formula: d = √((x₂−x₁)² + (y₂−y₁)²) = √((7−3)² + (7−4)²) = √(4² + 3²) = √(16+9) = √25 = 5. This is a 3-4-5 Pythagorean triple. **Short Trick:** Whenever you see differences 3 and 4, the distance = 5 immediately.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the midpoint of the line segment joining the points P(−2, 5) and Q(4, −1).",
+      "options": [
+        {"option_text": "(1, 2) (correct: midpoint = ((−2+4)/2, (5+(−1))/2) = (2/2, 4/2) = (1, 2))", "is_correct": true},
+        {"option_text": "(3, −3) (differences/2: 6/2=3 and −6/2=−3 — wrong; not the midpoint)", "is_correct": false},
+        {"option_text": "(2, 4) (reversing x and y coordinates of the midpoint)", "is_correct": false},
+        {"option_text": "(1, −2) (wrong sign for y: (5−1)/2=2, not −2)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Midpoint formula: ((x₁+x₂)/2, (y₁+y₂)/2) = ((−2+4)/2, (5+(−1))/2) = (2/2, 4/2) = (1, 2). Option D gets the y-coordinate sign wrong by computing 5−1=4 but forgetting to divide: 4/2=2, not −2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is the slope of the line passing through the points (2, 5) and (6, 13)?",
+      "options": [
+        {"option_text": "2 (correct: slope = (13−5)/(6−2) = 8/4 = 2)", "is_correct": true},
+        {"option_text": "4 (numerator only: 13−5=8, dividing by wrong denominator)", "is_correct": false},
+        {"option_text": "1/2 (reciprocal of the correct slope)", "is_correct": false},
+        {"option_text": "3/4 (wrong calculation: 6/8 = 3/4)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Slope (m) = (y₂−y₁)/(x₂−x₁) = (13−5)/(6−2) = 8/4 = 2. Option C (1/2) is the reciprocal — a common error when students invert the fraction. Option D (3/4) comes from writing 6/8 — dividing the difference in x by the difference in y instead of the other way.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the area of the triangle with vertices A(1, 1), B(4, 1), and C(4, 5).",
+      "options": [
+        {"option_text": "4 sq units (half of base×height with wrong base or height)", "is_correct": false},
+        {"option_text": "6 sq units (correct: base AB=3, height=4; area=½×3×4=6)", "is_correct": true},
+        {"option_text": "12 sq units (base×height without halving)", "is_correct": false},
+        {"option_text": "8 sq units (wrong dimension measurement)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A(1,1), B(4,1), C(4,5). AB is horizontal: length = 4−1 = 3. BC is vertical: length = 5−1 = 4. The right angle is at B (since AB is horizontal and BC is vertical). Area = ½ × base × height = ½ × 3 × 4 = 6 sq units. Using the shoelace formula: ½|x_A(y_B−y_C)+x_B(y_C−y_A)+x_C(y_A−y_B)| = ½|1(1−5)+4(5−1)+4(1−1)| = ½|−4+16+0| = ½×12 = 6 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In what ratio does the point P(3, 5) divide the line segment joining A(1, 3) and B(7, 9)?",
+      "options": [
+        {"option_text": "1:2 (checking: using x: 1×7+2×1/(1+2)=9/3=3 ✓; using y: 1×9+2×3/(1+2)=15/3=5 ✓ — YES, 1:2 works)", "is_correct": true},
+        {"option_text": "2:1 (checking: 2×7+1×1/3=15/3=5≠3 for x-coordinate — fails)", "is_correct": false},
+        {"option_text": "1:1 (midpoint would be (4,6)≠(3,5))", "is_correct": false},
+        {"option_text": "1:3 (checking x: 1×7+3×1/4=10/4=2.5≠3 — fails)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Section formula: if P divides AB in ratio m:n, then x_P = (m×x_B + n×x_A)/(m+n). Testing m:n=1:2: x_P = (1×7+2×1)/3 = 9/3 = 3 ✓. y_P = (1×9+2×3)/3 = 15/3 = 5 ✓. Both match. **Short Trick:** The ratio can be found by: (x_P−x_A):(x_B−x_P) = (3−1):(7−3) = 2:4 = 1:2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is the equation of a line with slope 3 passing through the point (1, 2)?",
+      "options": [
+        {"option_text": "y = 3x − 1 (y−2=3(x−1) → y=3x−3+2=3x−1 ✓)", "is_correct": true},
+        {"option_text": "y = 3x + 2 (this passes through (0,2) and has slope 3, but not through (1,2): at x=1, y=5≠2)", "is_correct": false},
+        {"option_text": "y = 3x + 5 (at x=1: y=8≠2 — doesn't pass through (1,2))", "is_correct": false},
+        {"option_text": "y = x + 3 (slope=1≠3)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Point-slope form: y − y₁ = m(x − x₁). y − 2 = 3(x − 1). y − 2 = 3x − 3. y = 3x − 1. Verify: at x=1, y=3(1)−1=2 ✓. Slope = 3 ✓. **Short Trick:** y = mx + c where m=3 and c = y₁ − mx₁ = 2 − 3(1) = −1. So y = 3x−1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The points A(0, 0), B(4, 0), and C(4, 3) form a right triangle. What is the length of the hypotenuse AC?",
+      "options": [
+        {"option_text": "4 (length of AB — the horizontal leg, not hypotenuse)", "is_correct": false},
+        {"option_text": "3 (length of BC — the vertical leg, not hypotenuse)", "is_correct": false},
+        {"option_text": "5 (correct: AC = √(4²+3²) = √(16+9) = √25 = 5)", "is_correct": true},
+        {"option_text": "7 (sum of legs: 4+3=7 — wrong method)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Hypotenuse AC: from A(0,0) to C(4,3). Distance = √((4−0)²+(3−0)²) = √(16+9) = √25 = 5. This is the classic 3-4-5 right triangle. Right angle at B(4,0): AB=4 (horizontal), BC=3 (vertical), AC=5 (hypotenuse). 3²+4²=9+16=25=5² ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is the slope of a line perpendicular to the line 2x + 3y = 6?",
+      "options": [
+        {"option_text": "−2/3 (slope of the given line: 2x+3y=6 → y=−2x/3+2; slope=−2/3 — this is the GIVEN slope, not perpendicular)", "is_correct": false},
+        {"option_text": "3/2 (perpendicular slope = negative reciprocal of −2/3 = 3/2 ✓)", "is_correct": true},
+        {"option_text": "2/3 (reciprocal without negating)", "is_correct": false},
+        {"option_text": "−3/2 (negative of correct answer — confusion with reciprocal direction)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. From 2x+3y=6 → y = −(2/3)x + 2. Slope of given line = −2/3. For perpendicular lines: m₁ × m₂ = −1. m₂ = −1/(−2/3) = 3/2. **Short Trick:** Perpendicular slope = negative reciprocal. Flip the fraction and change the sign: −2/3 → flip: −3/2 → change sign: +3/2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If the coordinates of the centroid of a triangle are (3, 4) and two vertices are (1, 2) and (5, 6), find the third vertex.",
+      "options": [
+        {"option_text": "(3, 4) (that is the centroid, not a vertex)", "is_correct": false},
+        {"option_text": "(3, 4) with centroid formula check: (1+5+x)/3=3 → x=3; (2+6+y)/3=4 → y=4 → third vertex (3,4)", "is_correct": true},
+        {"option_text": "(4, 5) (doesn't satisfy the centroid equation)", "is_correct": false},
+        {"option_text": "(2, 3) (substituting: (1+5+2)/3=8/3≠3)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Centroid = ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3). Given: centroid (3,4), vertices (1,2), (5,6), and (x,y). (1+5+x)/3 = 3 → 6+x=9 → x=3. (2+6+y)/3 = 4 → 8+y=12 → y=4. Third vertex = (3,4). Interesting: the centroid and the third vertex have the same coordinates in this case. Verify: centroid = ((1+5+3)/3, (2+6+4)/3) = (9/3, 12/3) = (3,4) ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is the x-intercept of the line 3x + 4y = 12?",
+      "options": [
+        {"option_text": "3 (setting y=0: 3x+4(0)=12 → x=4, not 3)", "is_correct": false},
+        {"option_text": "4 (correct: x-intercept: set y=0 → 3x=12 → x=4)", "is_correct": true},
+        {"option_text": "12 (the constant term — not the x-intercept)", "is_correct": false},
+        {"option_text": "3/4 (dividing coefficient: 3/4 — wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. X-intercept: set y=0. 3x+4(0)=12 → 3x=12 → x=4. The line crosses the x-axis at (4, 0). Y-intercept: set x=0 → 4y=12 → y=3. The line crosses the y-axis at (0, 3). **Short Trick:** For intercept form ax+by=c: x-intercept = c/a = 12/3 = 4; y-intercept = c/b = 12/4 = 3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

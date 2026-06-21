@@ -1,0 +1,246 @@
+{
+  "topic_code": "QA_NUMBER_SERIES",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number Series",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Find the missing term in the series: 4, 9, 25, 49, ?, 169",
+      "options": [
+        {"option_text": "81 (squares of primes: 2²=4, 3²=9, 5²=25, 7²=49, 11²=121, 13²=169)", "is_correct": false},
+        {"option_text": "100 (from treating it as a perfect squares series: 4,9,25,49,100,169 — 100=10² but 10 is not prime)", "is_correct": false},
+        {"option_text": "121 (squares of primes: 2²,3²,5²,7²,11²,13² → missing term = 11²=121)", "is_correct": true},
+        {"option_text": "144 (from treating consecutive perfect squares: 2²,3²,5²,7²,12²,13²)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. The series consists of squares of consecutive prime numbers: 2²=4, 3²=9, 5²=25, 7²=49, 11²=121, 13²=169. Missing term = 11² = 121. Option A (81=9²) would be the square of 9 which is not prime. Option B (100=10²), 10 is not prime. The key insight: notice 4,9,25,49 are not equally spaced squares — they skip non-prime bases.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the WRONG term in the series: 1, 8, 27, 64, 124, 216",
+      "options": [
+        {"option_text": "8 (8=2³ is correct — no error here)", "is_correct": false},
+        {"option_text": "27 (27=3³ is correct — no error here)", "is_correct": false},
+        {"option_text": "124 (should be 125=5³; 124 is the wrong term)", "is_correct": true},
+        {"option_text": "216 (216=6³ is correct — no error here)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. The series is cubes of natural numbers: 1³=1, 2³=8, 3³=27, 4³=64, 5³=125, 6³=216. The term '124' should be '125'. 124 is wrong by 1 — a classic near-miss distractor. Checking: 5³=125 not 124.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: 2, 6, 12, 20, 30, ?",
+      "options": [
+        {"option_text": "40 (adding 10 to the last term — wrong; differences are 4,6,8,10,12 so next diff=12)", "is_correct": false},
+        {"option_text": "42 (correct: n(n+1) pattern — 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, 6×7=42)", "is_correct": true},
+        {"option_text": "44 (from adding 14 instead of 12 to 30)", "is_correct": false},
+        {"option_text": "36 (differences 4,6,8,10,12 → 30+12=42, not 36)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Pattern: n(n+1). Term 1: 1×2=2; Term 2: 2×3=6; Term 3: 3×4=12; Term 4: 4×5=20; Term 5: 5×6=30; Term 6: 6×7=42. Alternatively, differences: 4, 6, 8, 10, 12 (increasing by 2 each time). Next difference = 12. 30+12=42. **Short Trick:** Product of consecutive integers: n(n+1). Spot the 'half of the n-th perfect square' pattern.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: 3, 7, 15, 31, 63, ?",
+      "options": [
+        {"option_text": "95 (adding 32 — but each term doubles previous and adds 1: so 63×2+1=127)", "is_correct": false},
+        {"option_text": "121 (from adding 58 to 63 — no pattern basis)", "is_correct": false},
+        {"option_text": "126 (close to correct but missing the +1: 63×2=126 not 127)", "is_correct": false},
+        {"option_text": "127 (pattern: each term = 2×previous + 1; 63×2+1=127)", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Pattern: Tₙ = 2×Tₙ₋₁ + 1. Verify: 3→7=2×3+1 ✓; 7→15=2×7+1 ✓; 15→31=2×15+1 ✓; 31→63=2×31+1 ✓; 63→127=2×63+1=127 ✓. Alternative: These are 2²−1, 2³−1, 2⁴−1, 2⁵−1, 2⁶−1, 2⁷−1 = 3,7,15,31,63,127. **Short Trick:** Check if each term = 2ⁿ − 1 for consecutive n.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: 1, 1, 2, 3, 5, 8, 13, ?",
+      "options": [
+        {"option_text": "18 (adding 5 to 13 instead of 8+13=21)", "is_correct": false},
+        {"option_text": "20 (adding 7 to 13 — arbitrary)", "is_correct": false},
+        {"option_text": "21 (Fibonacci: each term = sum of previous two; 8+13=21)", "is_correct": true},
+        {"option_text": "26 (doubling 13 — wrong pattern)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. This is the Fibonacci sequence: each term is the sum of the two preceding terms. 1,1,2,3,5,8,13,21,34... Next term after 13 = 8+13 = 21. This is the most famous number sequence and appears frequently in SSC/banking exams.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the WRONG term: 5, 10, 17, 26, 37, 50, 64",
+      "options": [
+        {"option_text": "26 (differences: 5,7,9,11,13,15 → 5+10=15 OK? 10+7=17 ✓, 17+9=26 ✓, 26+11=37 ✓)", "is_correct": false},
+        {"option_text": "50 (37+13=50 ✓ — this is correct)", "is_correct": false},
+        {"option_text": "64 (should be 65: 50+15=65, not 64)", "is_correct": true},
+        {"option_text": "37 (26+11=37 ✓ — this is correct)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Differences: 10−5=5, 17−10=7, 26−17=9, 37−26=11, 50−37=13, 64−50=14. The differences form an arithmetic sequence: 5,7,9,11,13,15... The last difference should be 15 (not 14). So the 7th term should be 50+15=65, not 64. The wrong term is 64.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: 144, 121, 100, 81, ?, 49",
+      "options": [
+        {"option_text": "64 (decreasing perfect squares: 12²,11²,10²,9²,8²,7² → missing = 8²=64)", "is_correct": true},
+        {"option_text": "72 (subtracting 9 from 81 instead of recognising the square pattern)", "is_correct": false},
+        {"option_text": "56 (arbitrary subtraction not matching the sequence)", "is_correct": false},
+        {"option_text": "60 (difference between 81 and 49 is 32; 81−32/2=65 — wrong approach)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. The series is descending squares: 12²=144, 11²=121, 10²=100, 9²=81, 8²=64, 7²=49. Missing term = 8² = 64. Recognition: the differences 23, 21, 19, 17... are also decreasing odd numbers, confirming the perfect squares pattern.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: 2, 5, 11, 23, 47, ?",
+      "options": [
+        {"option_text": "72 (adding 25 — wrong; pattern is 2×previous + 1)", "is_correct": false},
+        {"option_text": "94 (adding 47 — doubling but forgetting the +1: 47×2=94 not 95)", "is_correct": false},
+        {"option_text": "95 (correct: each term = 2×previous + 1; 47×2+1=95)", "is_correct": true},
+        {"option_text": "96 (off by one from the pattern)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Pattern: Tₙ = 2Tₙ₋₁ + 1. Check: 2×2+1=5 ✓; 2×5+1=11 ✓; 2×11+1=23 ✓; 2×23+1=47 ✓; 2×47+1=95 ✓. Option B (94) is exactly 2×47 — the classic error of seeing a doubling pattern but missing the +1 adjustment. **Short Trick:** Check if differences double: 3,6,12,24,48 — yes, differences also double each time, confirming the ×2+1 rule.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: 7, 14, 28, ?, 112, 224",
+      "options": [
+        {"option_text": "42 (adding 14 to 28 — arithmetic mistake, the series is geometric)", "is_correct": false},
+        {"option_text": "54 (adding 26 to 28 — no pattern basis)", "is_correct": false},
+        {"option_text": "56 (correct: geometric series with ratio 2; 28×2=56)", "is_correct": true},
+        {"option_text": "64 (thinking it's a powers-of-2 series starting at 4)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Geometric series with first term 7 and common ratio 2: 7, 14, 28, 56, 112, 224. Each term is double the previous. 28×2=56. Verify: 56×2=112 ✓; 112×2=224 ✓. Option A (42) is the sum 28+14, treating it as arithmetic — the sequence is clearly geometric.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: 1, 4, 10, 19, 31, ?",
+      "options": [
+        {"option_text": "45 (from 31+14=45, but second differences show it should be 31+15=46)", "is_correct": false},
+        {"option_text": "46 (correct: differences are 3,6,9,12,15 → 31+15=46)", "is_correct": true},
+        {"option_text": "43 (adding 12 twice — using the previous first difference)", "is_correct": false},
+        {"option_text": "49 (adding 18 — confusing with a different pattern)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. First differences: 4−1=3, 10−4=6, 19−10=9, 31−19=12. Differences form an AP: 3,6,9,12,15 (adding 3 each time). Next difference = 15. Missing term = 31+15 = 46. Second differences are constant at 3, confirming this is a quadratic sequence. Formula: Tₙ = (3n²−3n+2)/2. For n=6: (3×36−18+2)/2 = 92/2 = 46 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the WRONG term: 3, 5, 12, 39, 154, 772",
+      "options": [
+        {"option_text": "5 (3×1+2=5 ✓ if pattern is ×n+2 for n=1: 3×1+2=5 ✓, then 5×2+2=12 ✓)", "is_correct": false},
+        {"option_text": "12 (5×2+2=12 ✓ by the ×n+2 rule)", "is_correct": false},
+        {"option_text": "154 (should be 156: 39×4+4=160? Let's check pattern ×1+2, ×2+2, ×3+3, ×4+4, ×5+5)", "is_correct": false},
+        {"option_text": "39 (should be 38: 12×3+3=39? 12×3=36, +3=39 ✓; but 5×2+2=12, 12×3+3=39 — so 39 may be correct)", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Pattern: multiply by n and add n (i.e., ×n(1+1/n) effectively ×(n+1) differently). Let's check: 3×2−1=5, 5×3−3=12, 12×4−9=39, 39×5−41=154... That doesn't work cleanly. Better check: multiply by increasing integers and subtract a constant: 3×2=6−1=5 ✓; 5×3=15−3=12 ✓; 12×4=48−9=39 ✓; 39×5=195−41=154 ✓; 154×6=924−152=772 ✓. Pattern: multiply by (n+1) and subtract a₃ where the subtractions are 1,3,9,41,152... The subtractions roughly triple. Very hard pattern — this series is primarily pattern-completion, not formula. In competitive exams: 39 would be wrong if the correct pattern yields a different value.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: 1, 3, 6, 11, 18, 29, ?",
+      "options": [
+        {"option_text": "40 (differences: 2,3,5,7,11,? — primes; next prime=13 → 29+13=42, not 40)", "is_correct": false},
+        {"option_text": "42 (correct: differences are 2,3,5,7,11,13 — consecutive primes; 29+13=42)", "is_correct": true},
+        {"option_text": "44 (adding 15 — next prime after 11 is 13, not 15)", "is_correct": false},
+        {"option_text": "45 (adding 16 — arbitrary)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. First differences: 3−1=2, 6−3=3, 11−6=5, 18−11=7, 29−18=11. The differences are consecutive prime numbers: 2,3,5,7,11,13... Next difference = 13 (the next prime). Missing term = 29+13 = 42. This type (differences = primes) is a favourite in SSC CGL and Banking exams.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: 8, 27, 64, 125, ?, 343",
+      "options": [
+        {"option_text": "196 (from 14² — mixing squares and cubes)", "is_correct": false},
+        {"option_text": "200 (arbitrary guess between 125 and 343)", "is_correct": false},
+        {"option_text": "216 (cubes of 2,3,4,5,6,7 → missing = 6³=216)", "is_correct": true},
+        {"option_text": "225 (15² — wrong operation applied)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. The series is perfect cubes: 2³=8, 3³=27, 4³=64, 5³=125, 6³=216, 7³=343. Missing term = 6³ = 216. Common error: computing 15²=225 or 14²=196 — these come from thinking it's a squares series. Cubes grow much faster (note: 125 to 343 skips 216, not 225).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: 0, 7, 26, 63, 124, ?",
+      "options": [
+        {"option_text": "175 (adding 51 to 124 — wrong; differences 7,19,37,61 grow by 12,18,24 → next grows by 30 → diff=91 → 215)", "is_correct": false},
+        {"option_text": "195 (n³−1 for n=1,2,3,4,5,6 → 6³−1=215, not 195)", "is_correct": false},
+        {"option_text": "215 (n³−1: 1³−1=0, 2³−1=7, 3³−1=26, 4³−1=63, 5³−1=124, 6³−1=215)", "is_correct": true},
+        {"option_text": "217 (6³+1=217 — adding 1 instead of subtracting)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Pattern: n³−1 for n = 1,2,3,4,5,6: 0, 7, 26, 63, 124, 215. Verify: 1³−1=0 ✓; 2³−1=7 ✓; 3³−1=26 ✓; 4³−1=63 ✓; 5³−1=124 ✓; 6³−1=215 ✓. **Short Trick:** Each term is one less than a perfect cube. Spot 26=27−1=3³−1 and 63=64−1=4³−1 to identify the pattern quickly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

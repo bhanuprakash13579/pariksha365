@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_QUADRATIC",
+  "subject": "Quantitative Aptitude",
+  "topic": "Quadratic Equations",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Find the roots of the equation: x² − 7x + 12 = 0",
+      "options": [
+        {"option_text": "x = 3, x = 4 (factors: (x−3)(x−4) = x²−7x+12 ✓)", "is_correct": true},
+        {"option_text": "x = −3, x = −4 (gives x²+7x+12, not −7x+12)", "is_correct": false},
+        {"option_text": "x = 2, x = 6 (gives x²−8x+12, not −7x+12)", "is_correct": false},
+        {"option_text": "x = 1, x = 12 (gives x²−13x+12, not −7x+12)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. For x²−7x+12=0: find two numbers that multiply to 12 and add to −7. Those are −3 and −4. Factored: (x−3)(x−4)=0 → x=3 or x=4. Verify: 3²−7(3)+12=9−21+12=0 ✓; 4²−7(4)+12=16−28+12=0 ✓. **Short Trick:** Sum of roots = 7, product of roots = 12. Factor pairs of 12: (3,4) sums to 7 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In the two equations below, find the relationship between x and y:\nI. x² − 5x + 6 = 0\nII. y² − 7y + 12 = 0",
+      "options": [
+        {"option_text": "x > y (x: roots 2,3; y: roots 3,4 — comparing ranges: x∈{2,3} vs y∈{3,4})", "is_correct": false},
+        {"option_text": "x < y (max x=3, min y=3; but x=3, y=3 is equal — not strictly less)", "is_correct": false},
+        {"option_text": "x ≤ y (x values: 2 or 3; y values: 3 or 4; in all comparisons x ≤ y)", "is_correct": true},
+        {"option_text": "Cannot be determined (roots of both overlap at 3 making comparison ambiguous)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Equation I: x²−5x+6=0 → (x−2)(x−3)=0 → x=2 or x=3. Equation II: y²−7y+12=0 → (y−3)(y−4)=0 → y=3 or y=4. Checking all combinations: x=2,y=3 → x<y ✓; x=2,y=4 → x<y ✓; x=3,y=3 → x=y ✓; x=3,y=4 → x<y ✓. In all cases x≤y. **Short Trick:** Find all roots of both equations; check all four combinations of (x value, y value) and determine the consistent inequality.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If one root of the equation 2x² − 3x + k = 0 is 2, what is the value of k?",
+      "options": [
+        {"option_text": "−2 (substituting x=2: 2(4)−3(2)+k=0 → 8−6+k=0 → k=−2 ✓)", "is_correct": true},
+        {"option_text": "2 (8−6+2=4≠0 — doesn't satisfy the equation)", "is_correct": false},
+        {"option_text": "−4 (8−6+(−4)=−2≠0)", "is_correct": false},
+        {"option_text": "6 (8−6+6=8≠0)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. If x=2 is a root, substituting: 2(2)²−3(2)+k=0 → 8−6+k=0 → k=−2. Verify: 2x²−3x−2=0 → (2x+1)(x−2)=0 → x=2 or x=−1/2. Root 2 ✓. **Short Trick:** Substitute the given root into the equation and solve for the unknown parameter.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The sum of a number and its reciprocal is 10/3. What is the number?",
+      "options": [
+        {"option_text": "1/3 (x + 1/x = 10/3 → 3x²−10x+3=0 → x=3 or x=1/3 — both valid; 1/3 is one answer)", "is_correct": false},
+        {"option_text": "3 (x=3: 3+1/3=9/3+1/3=10/3 ✓ — 3 is also a valid answer)", "is_correct": false},
+        {"option_text": "Both 3 and 1/3 (the equation 3x²−10x+3=0 has roots x=3 and x=1/3)", "is_correct": true},
+        {"option_text": "5/3 (5/3 + 3/5 = 25/15+9/15 = 34/15 ≠ 10/3)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let the number = x. x + 1/x = 10/3 → 3x²−10x+3=0 → (3x−1)(x−3)=0 → x=1/3 or x=3. Both are valid numbers. Note that 3 and 1/3 are reciprocals of each other, which is consistent (if x=3 satisfies it, so does 1/x=1/3). **Short Trick:** For 'number + reciprocal = k' → multiply both sides by x → quadratic. If roots are r and 1/r, both are valid answers.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "For what value of k does the equation x² − kx + 9 = 0 have equal roots?",
+      "options": [
+        {"option_text": "3 (discriminant = k²−36=0 → k=6 or k=−6; k=3 gives discriminant 9−36=−27 < 0 — no real roots)", "is_correct": false},
+        {"option_text": "6 (discriminant = k²−4(1)(9)=k²−36=0 → k=6 or k=−6; k=6 gives equal roots ✓)", "is_correct": true},
+        {"option_text": "9 (k=9: discriminant=81−36=45>0, two distinct real roots — not equal)", "is_correct": false},
+        {"option_text": "−3 (k=−3: discriminant=9−36=−27<0 — no real roots)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. For equal roots, discriminant = 0. Discriminant = k²−4(1)(9) = k²−36. Setting to 0: k²=36 → k=±6. Positive value: k=6. Verify: x²−6x+9=(x−3)²=0 → equal root x=3 ✓. **Short Trick:** Equal roots ↔ D=0 ↔ b²=4ac. Here b=−k, a=1, c=9: k²=36 → k=6.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Compare the roots of the two quadratic equations:\nI. x² + 3x − 10 = 0\nII. y² − y − 6 = 0\n\nWhat is the relationship between x and y?",
+      "options": [
+        {"option_text": "x > y (I: roots −5,2; II: roots −2,3 — comparing range {−5,2} vs {−2,3})", "is_correct": false},
+        {"option_text": "x < y (not always: x=2,y=−2 gives x>y)", "is_correct": false},
+        {"option_text": "x ≥ y (−5<−2 fails — not always ≥)", "is_correct": false},
+        {"option_text": "Cannot be determined (x=2>y=−2; but x=−5<y=3 — relationship is not consistent)", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Equation I: x²+3x−10=0 → (x+5)(x−2)=0 → x=−5 or x=2. Equation II: y²−y−6=0 → (y−3)(y+2)=0 → y=3 or y=−2. Check combinations: x=−5, y=3 → x<y; x=−5, y=−2 → x<y; x=2, y=3 → x<y; x=2, y=−2 → x>y. Since we get both x<y and x>y depending on which roots we pick, the relationship CANNOT BE DETERMINED. **Short Trick:** If any combination of roots gives opposite inequality, answer is 'Cannot be determined'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If α and β are the roots of the equation 3x² − 8x + 5 = 0, find the value of α + β and αβ.",
+      "options": [
+        {"option_text": "α+β = 8/3, αβ = 5/3 (using Vieta's: sum=−(−8)/3=8/3, product=5/3)", "is_correct": true},
+        {"option_text": "α+β = −8/3, αβ = 5/3 (sum should be positive: −b/a = −(−8)/3 = +8/3)", "is_correct": false},
+        {"option_text": "α+β = 8/3, αβ = −5/3 (product = c/a = 5/3, not −5/3)", "is_correct": false},
+        {"option_text": "α+β = 3/8, αβ = 3/5 (inverted the fractions)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. For ax²+bx+c=0, by Vieta's formulas: α+β = −b/a and αβ = c/a. Here a=3, b=−8, c=5: α+β = −(−8)/3 = 8/3; αβ = 5/3. Verify by factoring: 3x²−8x+5=0 → (3x−5)(x−1)=0 → x=5/3 or x=1. Sum: 5/3+1=5/3+3/3=8/3 ✓. Product: 5/3×1=5/3 ✓. **Short Trick:** Sum = −b/a = 8/3; Product = c/a = 5/3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Solve: 2x² + 5x − 3 = 0. Which root is negative?",
+      "options": [
+        {"option_text": "x = −3 (2x²+5x−3=0: (2x−1)(x+3)=0 → x=1/2 or x=−3; negative root = −3)", "is_correct": true},
+        {"option_text": "x = −1/2 (1/2 is the positive root; −3 is the negative root)", "is_correct": false},
+        {"option_text": "x = −5/2 (substituting: 2(25/4)+5(−5/2)−3=25/2−25/2−3=−3≠0)", "is_correct": false},
+        {"option_text": "x = −1 (substituting: 2−5−3=−6≠0)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. 2x²+5x−3=0: looking for two numbers with product 2×(−3)=−6 and sum=5. Those are 6 and −1. Rewrite: 2x²+6x−x−3=0 → 2x(x+3)−1(x+3)=0 → (2x−1)(x+3)=0. Roots: x=1/2 (positive) or x=−3 (negative). The negative root is −3. **Short Trick:** Product of roots = c/a = −3/2 < 0 → roots have opposite signs. Sum of roots = −5/2 < 0 → negative root has larger magnitude.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In the two equations below:\nI. 2x² − 11x + 15 = 0\nII. 2y² − 7y + 6 = 0\n\nIf x₁ > x₂ and y₁ > y₂, then which relation holds?",
+      "options": [
+        {"option_text": "x₁ > y₁ (I roots: (2x−5)(x−3)=0 → x=5/2, 3; x₁=3; II roots: (2y−3)(y−2)=0 → y=3/2, 2; y₁=2; x₁=3>y₁=2 ✓)", "is_correct": true},
+        {"option_text": "x₁ < y₁ (x₁=3, y₁=2 → x₁>y₁, not less)", "is_correct": false},
+        {"option_text": "x₂ > y₂ (x₂=5/2=2.5, y₂=3/2=1.5 → x₂>y₂; but also x₁>y₁ — more than one relation holds)", "is_correct": false},
+        {"option_text": "x₂ < y₁ (x₂=2.5, y₁=2 → 2.5>2, so this is x₂>y₁ — false)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Equation I: 2x²−11x+15=0 → (2x−5)(x−3)=0 → x=5/2=2.5 or x=3. Larger root x₁=3, smaller x₂=2.5. Equation II: 2y²−7y+6=0 → (2y−3)(y−2)=0 → y=3/2=1.5 or y=2. Larger root y₁=2, smaller y₂=1.5. Comparing: x₁=3 > y₁=2 ✓; x₂=2.5 > y₂=1.5 ✓; x₁>y₁ and x₂>y₂ → x > y overall. Option A (x₁>y₁) is the most directly asked relation here.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The product of two consecutive positive integers is 132. What are the integers?",
+      "options": [
+        {"option_text": "10 and 13 (10×13=130≠132; also not consecutive)", "is_correct": false},
+        {"option_text": "11 and 12 (11×12=132 ✓ and consecutive ✓)", "is_correct": true},
+        {"option_text": "12 and 13 (12×13=156≠132)", "is_correct": false},
+        {"option_text": "9 and 15 (9×15=135≠132; also not consecutive)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Let integers be n and n+1. n(n+1)=132 → n²+n−132=0 → (n−11)(n+12)=0 → n=11 (positive). Integers: 11 and 12. Verify: 11×12=132 ✓. **Short Trick:** Estimate √132≈11.5, so consecutive integers are 11 and 12. Always verify: 11×12=132 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

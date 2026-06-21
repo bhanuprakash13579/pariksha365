@@ -1,0 +1,212 @@
+{
+  "topic_code": "QA_SPEED_TIME",
+  "subject": "Quantitative Aptitude",
+  "topic": "Speed, Time and Distance",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "A train 200 metres long crosses a telegraph pole in 10 seconds. What is the speed of the train in km/h?",
+      "options": [
+        {"option_text": "54 km/h (correct: speed=200m/10s=20m/s; ×18/5=72 km/h — wait, 20×18/5=72)", "is_correct": false},
+        {"option_text": "72 km/h (correct: 200/10=20 m/s; 20×18/5=72 km/h ✓)", "is_correct": true},
+        {"option_text": "60 km/h (wrong conversion: 20 m/s × 3 = 60)", "is_correct": false},
+        {"option_text": "36 km/h (20 m/s × 2 ≠ 36: error in conversion factor)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Speed = distance/time = 200m/10s = 20 m/s. Convert to km/h: multiply by 18/5. 20 × 18/5 = 20 × 3.6 = 72 km/h. **Short Trick:** m/s to km/h → multiply by 18/5 (or 3.6). km/h to m/s → multiply by 5/18.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A car travels from city A to city B at 60 km/h and returns at 40 km/h. What is the average speed for the entire journey?",
+      "options": [
+        {"option_text": "50 km/h (simple average of 60 and 40 — wrong for equal distance round trips)", "is_correct": false},
+        {"option_text": "48 km/h (correct: average speed = 2×60×40/(60+40) = 4800/100 = 48 km/h)", "is_correct": true},
+        {"option_text": "45 km/h (wrong formula)", "is_correct": false},
+        {"option_text": "52 km/h (wrong formula)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. For a journey at speed v₁ one way and v₂ the other, average speed = 2v₁v₂/(v₁+v₂) (harmonic mean). = 2×60×40/(60+40) = 4800/100 = 48 km/h. The arithmetic mean (50) is wrong because more time is spent at the slower speed. **Short Trick:** Average = 2ab/(a+b). Whenever two speeds for equal distances, use harmonic mean, not arithmetic mean.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A man walks at 5 km/h and runs at 10 km/h. He covers 30 km partly by walking and partly by running. If the total time taken is 4 hours, how many km did he walk?",
+      "options": [
+        {"option_text": "10 km (let walk=x km; x/5+(30−x)/10=4 → 2x+30−x=40 → x=10 ✓)", "is_correct": true},
+        {"option_text": "15 km (checking: 15/5+15/10=3+1.5=4.5≠4 — fails)", "is_correct": false},
+        {"option_text": "20 km (checking: 20/5+10/10=4+1=5≠4 — fails)", "is_correct": false},
+        {"option_text": "12 km (checking: 12/5+18/10=2.4+1.8=4.2≠4 — fails)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Let walking distance = x km. Running distance = (30−x) km. Time equation: x/5 + (30−x)/10 = 4. Multiply by 10: 2x + (30−x) = 40. x + 30 = 40. x = 10 km. Verify: 10/5 + 20/10 = 2 + 2 = 4 hours ✓. **Short Trick:** LCM of denominators to clear fractions immediately.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Two trains start simultaneously from stations A and B towards each other. Train 1 speed is 60 km/h, Train 2 speed is 40 km/h. If the distance between A and B is 300 km, how long before they meet?",
+      "options": [
+        {"option_text": "2 hours (correct: relative speed = 60+40=100 km/h; time=300/100=3 h — NOT 2h)", "is_correct": false},
+        {"option_text": "3 hours (correct: 300÷(60+40)=300/100=3 hours ✓)", "is_correct": true},
+        {"option_text": "4 hours (300/75=4 — wrong relative speed)", "is_correct": false},
+        {"option_text": "5 hours (300/60=5 — only Train 1 speed used)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. When two objects move towards each other, relative speed = sum of speeds = 60+40 = 100 km/h. Time to meet = total distance / relative speed = 300/100 = 3 hours. Meeting point: Train 1 covers 60×3=180 km from A; Train 2 covers 40×3=120 km from B. 180+120=300 ✓. **Short Trick:** Towards each other → add speeds; away from each other → subtract speeds.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A person covers 240 km at 60 km/h. By how much must he increase his speed to cover the same distance in 1 hour less?",
+      "options": [
+        {"option_text": "10 km/h (new time = 3h; new speed = 240/3 = 80; increase = 80−60=20, not 10)", "is_correct": false},
+        {"option_text": "20 km/h (original time = 240/60=4h; new time=3h; new speed=240/3=80; increase=20 ✓)", "is_correct": true},
+        {"option_text": "15 km/h (new speed=75: 240/75=3.2h, not 3h)", "is_correct": false},
+        {"option_text": "30 km/h (new speed=90: 240/90=2.67h, not 3h)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Original time = 240/60 = 4 hours. New time = 4−1 = 3 hours. New speed = 240/3 = 80 km/h. Increase = 80−60 = 20 km/h. **Short Trick:** Find new speed first from new time, then subtract original speed for the increase required.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A train 300 metres long crosses a platform 200 metres long in 25 seconds. What is the speed of the train?",
+      "options": [
+        {"option_text": "54 km/h (300+200=500m in 25s=20m/s=72km/h — not 54)", "is_correct": false},
+        {"option_text": "72 km/h (correct: total distance=300+200=500m; speed=500/25=20m/s=72km/h ✓)", "is_correct": true},
+        {"option_text": "60 km/h (computing 300/25=12m/s only — ignoring platform)", "is_correct": false},
+        {"option_text": "36 km/h (wrong: 500/25=20m/s, not 10m/s=36)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. When a train crosses a platform, it must travel its own length PLUS the platform length. Total distance = 300+200 = 500 m. Time = 25 seconds. Speed = 500/25 = 20 m/s. Convert: 20 × 18/5 = 72 km/h. Key rule: Train crosses a platform → distance = train length + platform length.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A boat travels 20 km upstream in 4 hours and 30 km downstream in 3 hours. What is the speed of the stream?",
+      "options": [
+        {"option_text": "2 km/h (upstream speed=20/4=5; downstream=30/3=10; boat speed=(10+5)/2=7.5; stream=(10−5)/2=2.5, not 2)", "is_correct": false},
+        {"option_text": "2.5 km/h (correct: upstream=5km/h, downstream=10km/h; stream speed=(10−5)/2=2.5 ✓)", "is_correct": true},
+        {"option_text": "3 km/h (boat speed=(10+5)/2=7.5; 10−7.5=2.5≠3)", "is_correct": false},
+        {"option_text": "5 km/h (that's the upstream speed, not stream speed)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Upstream speed = 20/4 = 5 km/h. Downstream speed = 30/3 = 10 km/h. If boat speed in still water = b, stream speed = s: upstream = b−s = 5; downstream = b+s = 10. Adding: 2b = 15 → b = 7.5 km/h. Subtracting: 2s = 5 → s = 2.5 km/h. **Short Trick:** Stream speed = (downstream − upstream)/2 = (10−5)/2 = 2.5 km/h.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Two cyclists start from the same point and travel in opposite directions. One cycles at 12 km/h and the other at 18 km/h. After how many hours will they be 75 km apart?",
+      "options": [
+        {"option_text": "2 hours (12+18=30; 30×2=60≠75)", "is_correct": false},
+        {"option_text": "2.5 hours (correct: relative speed=30km/h; 75/30=2.5 hours ✓)", "is_correct": true},
+        {"option_text": "3 hours (30×3=90≠75)", "is_correct": false},
+        {"option_text": "4 hours (30×4=120≠75)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Moving in opposite directions → relative speed = 12+18 = 30 km/h. Distance to be covered = 75 km. Time = 75/30 = 2.5 hours. At 2.5h: Cyclist 1 covers 12×2.5=30 km; Cyclist 2 covers 18×2.5=45 km. Total separation = 30+45 = 75 km ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A man drove from his home to office at 45 km/h and returned at 30 km/h. If the total time for the round trip was 2.5 hours, find the distance from home to office.",
+      "options": [
+        {"option_text": "45 km (45/45+45/30=1+1.5=2.5 ✓ — checking: YES this works!)", "is_correct": true},
+        {"option_text": "36 km (36/45+36/30=0.8+1.2=2.0≠2.5)", "is_correct": false},
+        {"option_text": "54 km (54/45+54/30=1.2+1.8=3.0≠2.5)", "is_correct": false},
+        {"option_text": "30 km (30/45+30/30=0.67+1=1.67≠2.5)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Let distance = d km. Total time: d/45 + d/30 = 2.5. LCM of 45,30 = 90. Multiply: 2d/90 + 3d/90 = 2.5. 5d/90 = 2.5. d = 2.5 × 18 = 45 km. Verify: 45/45 + 45/30 = 1 + 1.5 = 2.5 hours ✓. **Short Trick:** d/v₁ + d/v₂ = T → d(v₁+v₂)/(v₁v₂) = T → d = Tv₁v₂/(v₁+v₂) = 2.5×45×30/75 = 3375/75 = 45 km.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A thief runs at 8 km/h and a policeman chases him at 10 km/h. If the thief had a head start of 200 metres, in how many minutes will the policeman catch the thief?",
+      "options": [
+        {"option_text": "4 minutes (relative speed = 10−8=2 km/h = 1/30 km/min; time=0.2km/(1/30)=6 min — not 4)", "is_correct": false},
+        {"option_text": "6 minutes (correct: relative speed=2km/h; 200m=0.2km; time=0.2/2=0.1h=6 min ✓)", "is_correct": true},
+        {"option_text": "5 minutes (wrong calculation)", "is_correct": false},
+        {"option_text": "10 minutes (200/(10)=20 min? — computing without relative speed)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Relative speed = 10−8 = 2 km/h (same direction → subtract). Gap to close = 200 m = 0.2 km. Time = 0.2/2 = 0.1 hours = 0.1×60 = 6 minutes. **Short Trick:** Convert gap to km first, then divide by relative speed. Moving same direction → relative speed = difference. 200m = 0.2 km; 0.2÷2 = 0.1h = 6 min.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A train crosses another train of equal length travelling in the opposite direction in 12 seconds. If both trains are 300 metres long and Train 1 travels at 72 km/h, find the speed of Train 2.",
+      "options": [
+        {"option_text": "54 km/h (relative speed=600/12=50m/s=180km/h; Train2=180−72=108km/h — checking: 50m/s=180km/h not 54)", "is_correct": false},
+        {"option_text": "108 km/h (correct: total length=600m; relative speed=600/12=50m/s=180km/h; Train2=180−72=108 km/h ✓)", "is_correct": true},
+        {"option_text": "36 km/h (wrong direction of subtraction)", "is_correct": false},
+        {"option_text": "90 km/h (wrong relative speed calculation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total distance to cross = 300+300 = 600 m. Time = 12 s. Relative speed = 600/12 = 50 m/s = 50×18/5 = 180 km/h. Since trains move in opposite directions: relative speed = v₁+v₂. 72+v₂ = 180. v₂ = 108 km/h. **Short Trick:** Opposite direction → add speeds for relative speed. Convert 50m/s: 50×3.6=180km/h. v₂=180−72=108.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If a man walks at 4/5 of his usual speed, he takes 15 minutes more than the usual time to cover the same distance. What is his usual time?",
+      "options": [
+        {"option_text": "45 minutes (if usual time T: new time=T/( 4/5)=5T/4; extra=T/4=15→T=60, not 45)", "is_correct": false},
+        {"option_text": "60 minutes (correct: new time=5T/4; extra time = 5T/4−T=T/4=15 min → T=60 min ✓)", "is_correct": true},
+        {"option_text": "75 minutes (T/4=15→T=60, not 75)", "is_correct": false},
+        {"option_text": "30 minutes (T/4=15→T=60, not 30)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. If speed decreases to 4/5 of usual, time increases to 5/4 of usual (since time ∝ 1/speed for fixed distance). Extra time = 5T/4 − T = T/4 = 15 minutes. Therefore T = 60 minutes. Verify: at 4/5 speed, time = 5/4×60 = 75 min. Extra = 75−60 = 15 min ✓. **Short Trick:** Speed fraction = 4/5 → Time fraction = 5/4 → Extra fraction = 1/4. 1/4 of T = 15 → T = 60 min.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

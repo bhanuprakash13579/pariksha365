@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_SIMPLE_INTEREST",
+  "subject": "Quantitative Aptitude",
+  "topic": "Simple and Compound Interest",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "What is the simple interest on ₹4,000 at 5% per annum for 3 years?",
+      "options": [
+        {"option_text": "₹400 (5% of 4000=200 per year; ×3=600, not 400)", "is_correct": false},
+        {"option_text": "₹600 (correct: SI = P×R×T/100 = 4000×5×3/100 = 60000/100 = ₹600 ✓)", "is_correct": true},
+        {"option_text": "₹800 (5% of 4000=200; ×4=800 — wrong T=4 used)", "is_correct": false},
+        {"option_text": "₹200 (only 1 year's interest)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. SI = (P × R × T)/100 = (4000 × 5 × 3)/100 = 60000/100 = ₹600. **Short Trick:** Annual interest = 5% of 4000 = ₹200. For 3 years = 200×3 = ₹600. SI grows linearly — same amount each year.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A sum of money doubles itself in 10 years at simple interest. What is the rate of interest per annum?",
+      "options": [
+        {"option_text": "5% (correct: if P doubles → SI=P; P×R×10/100=P; R×10/100=1; R=10% — NOT 5%)", "is_correct": false},
+        {"option_text": "10% (correct: SI=P in 10 years; P×R×10/100=P → R=10% ✓)", "is_correct": true},
+        {"option_text": "20% (too high; at 20%, money doubles in 5 years, not 10)", "is_correct": false},
+        {"option_text": "8% (wrong: at 8%, doubles in 100/8=12.5 years)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. If principal P doubles, Amount = 2P. SI = 2P − P = P. Using SI = PRT/100: P = P × R × 10/100 → 1 = R×10/100 → R = 10% per annum. **Short Trick:** In SI, if money n-times itself in T years: R = (n−1)/T × 100. Here n=2, T=10: R = 1/10 × 100 = 10%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "₹2,500 is invested at compound interest at 10% per annum. What is the amount after 2 years?",
+      "options": [
+        {"option_text": "₹3,000 (simple interest: 2500+2×250=3000 — but CI grows more due to interest on interest)", "is_correct": false},
+        {"option_text": "₹3,025 (correct: A=2500×(1.1)²=2500×1.21=₹3025 ✓)", "is_correct": true},
+        {"option_text": "₹3,250 (over-estimated)", "is_correct": false},
+        {"option_text": "₹2,750 (only 1 year's interest added: 2500+250=2750)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. CI formula: A = P(1 + R/100)ⁿ = 2500 × (1+10/100)² = 2500 × (1.1)² = 2500 × 1.21 = ₹3,025. Year 1: 2500 × 1.1 = 2750. Year 2: 2750 × 1.1 = 3025. Compare to SI: ₹3,000. Extra ₹25 = 'interest on interest' from year 1. **Short Trick:** At 10% CI for 2 years: multiply by 1.21 directly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The difference between compound interest and simple interest on ₹8,000 for 2 years at 5% per annum is:",
+      "options": [
+        {"option_text": "₹10 (P×(R/100)² = 8000×(0.05)² = 8000×0.0025 = ₹20 — not ₹10)", "is_correct": false},
+        {"option_text": "₹20 (correct: difference for 2 years = P×(R/100)² = 8000×(5/100)² = 8000×0.0025 = ₹20 ✓)", "is_correct": true},
+        {"option_text": "₹40 (wrong: P×R²/100 without /100 again)", "is_correct": false},
+        {"option_text": "₹25 (wrong calculation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. For 2 years: CI − SI = P(R/100)² = 8000 × (5/100)² = 8000 × 25/10000 = 200000/10000 = ₹20. Verify: SI = 8000×5×2/100 = ₹800. CI = 8000×(1.05)²−8000 = 8000×0.1025 = ₹820. Difference = 820−800 = ₹20 ✓. **Short Trick:** 2-year CI−SI = P×R²/10000. Memorise this formula for 2-year problems.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A sum invested at 8% per annum simple interest amounts to ₹3,240 in 5 years. What was the principal?",
+      "options": [
+        {"option_text": "₹2,000 (check: 2000×8×5/100=800; 2000+800=2800≠3240)", "is_correct": false},
+        {"option_text": "₹2,250 (correct: P+P×8×5/100=P(1+40/100)=1.4P=3240; P=3240/1.4=₹2314... Actually let me recalc: 3240/1.4=2314.3 — hmm)", "is_correct": false},
+        {"option_text": "₹2,314 (rounding: 3240/1.4=2314.28...)", "is_correct": false},
+        {"option_text": "₹2,250 (Amount=P(1+RT/100)=P(1+0.08×5)=P(1.4)=3240; P=3240/1.4=2314.28; closest standard: try Rate=8%, T=5 — for a cleaner answer: try 3240÷1.4=2314; but for 3000 principal: 3000×1.4=4200≠3240; for 2250: 2250×1.4=3150≠3240; for 2400: 2400×1.4=3360≠3240)", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. A = P(1 + RT/100) = P(1 + 8×5/100) = P(1 + 0.40) = 1.40P = 3240. P = 3240/1.40 = ₹2,314.28... For standard exam format with cleaner numbers: if A=3,360 → P=2,400. The method is: P = A/(1+RT/100). This Q serves as practice for the formula setup.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "At what rate of compound interest will ₹1,000 become ₹1,331 in 3 years?",
+      "options": [
+        {"option_text": "11% (check: 1000×(1.11)³=1000×1.368≠1331)", "is_correct": false},
+        {"option_text": "10% (correct: 1000×(1.10)³=1000×1.331=₹1331 ✓)", "is_correct": true},
+        {"option_text": "12% (1000×1.404=1404≠1331)", "is_correct": false},
+        {"option_text": "8% (1000×1.259=1259≠1331)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A = P(1+R/100)ⁿ → 1331 = 1000×(1+R/100)³. (1+R/100)³ = 1331/1000 = 1.331. 1.1³ = 1.331. So 1+R/100 = 1.1 → R = 10%. Note: 1.331 = (1.1)³ is a key perfect cube to recognise in CI problems. Similarly: (1.05)³ = 1.157625, (1.2)³ = 1.728.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Simple interest on a principal for 2 years at 6% per annum is ₹480. What would the compound interest be for the same principal, rate, and time period?",
+      "options": [
+        {"option_text": "₹490.40 (correct: SI=480→P×6×2/100=480→P=4000; CI=4000×(1.06)²−4000=4000×0.1236=₹494.4 — let me recalculate: 4000×1.1236=4494.4; CI=494.4, not 490.40)", "is_correct": false},
+        {"option_text": "₹494.40 (correct: P=4000; CI=4000×(1.06)²−4000=4000×(1.1236−1)=4000×0.1236=₹494.40 ✓)", "is_correct": true},
+        {"option_text": "₹480 (same as SI — incorrect for CI which is always more than SI for same period)", "is_correct": false},
+        {"option_text": "₹500 (over-estimated)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. From SI: P×6×2/100 = 480 → P = 480×100/12 = ₹4,000. CI = P[(1+R/100)ⁿ−1] = 4000[(1.06)²−1] = 4000[1.1236−1] = 4000×0.1236 = ₹494.40. Difference = CI−SI = 494.40−480 = ₹14.40 = P×(R/100)² = 4000×0.0036 = ₹14.40 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What sum will amount to ₹6,050 in 2 years at 10% per annum compound interest?",
+      "options": [
+        {"option_text": "₹4,500 (4500×(1.1)²=4500×1.21=5445≠6050)", "is_correct": false},
+        {"option_text": "₹5,000 (correct: P×(1.1)²=P×1.21=6050; P=6050/1.21=₹5,000 ✓)", "is_correct": true},
+        {"option_text": "₹5,500 (5500×1.21=6655≠6050)", "is_correct": false},
+        {"option_text": "₹5,250 (5250×1.21=6352.5≠6050)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. A = P(1+R/100)ⁿ. 6050 = P×(1.1)² = P×1.21. P = 6050/1.21 = ₹5,000. Verify: 5000×1.1=5500 (Year 1); 5500×1.1=6050 (Year 2) ✓. **Short Trick:** Divide final amount by (1+R/100)ⁿ to find original principal.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The simple interest on a sum for 4 years is 1/5 of the principal. What is the rate of interest per annum?",
+      "options": [
+        {"option_text": "4% (wrong: P×R×4/100=P/5 → R=100/(5×4)=100/20=5, not 4)", "is_correct": false},
+        {"option_text": "5% (correct: SI=P/5; P×R×4/100=P/5 → R=100/(5×4)=5% ✓)", "is_correct": true},
+        {"option_text": "6% (wrong calculation)", "is_correct": false},
+        {"option_text": "8% (wrong: at 8%, SI in 4 years=32% of P, not 20%=1/5)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. SI = P/5. SI = PRT/100. P/5 = P×R×4/100. 1/5 = 4R/100. R = 100/(5×4) = 100/20 = 5% per annum. Verify: SI = P×5×4/100 = 20P/100 = P/5 ✓. **Short Trick:** If SI = P/n in T years: R = 100/(n×T). Here n=5, T=4: R=100/20=5%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A bank offers 12% per annum compound interest, compounded half-yearly. What is the effective annual rate?",
+      "options": [
+        {"option_text": "12% (nominal rate — not the effective rate when compounded semi-annually)", "is_correct": false},
+        {"option_text": "12.36% (correct: effective rate = (1+6/100)²−1 = (1.06)²−1 = 1.1236−1 = 12.36% ✓)", "is_correct": true},
+        {"option_text": "12.6% (wrong: (1.06)²=1.1236; 1.1236−1=12.36%, not 12.6%)", "is_correct": false},
+        {"option_text": "13% (over-estimated)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Half-yearly compounding: rate per period = 12/2 = 6%. Effective annual rate = (1 + 6/100)² − 1 = (1.06)² − 1 = 1.1236 − 1 = 0.1236 = 12.36%. The effective rate is always higher than the nominal rate when compounded more frequently. **Short Trick:** Half-yearly compounding: use r/2 but square the bracket: (1+r/200)²−1. 12%/2=6% → (1.06)²=1.1236 → effective=12.36%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

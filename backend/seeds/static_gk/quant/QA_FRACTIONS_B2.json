@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_FRACTIONS",
+  "subject": "Quantitative Aptitude",
+  "topic": "Fractions and Decimals",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "What fraction of 2/3 is 4/9?",
+      "options": [
+        {"option_text": "1/3 (dividing 4/9 by 2/3: (4/9)÷(2/3) = 4/9×3/2 = 2/3, not 1/3)", "is_correct": false},
+        {"option_text": "2/3 (correct: (4/9) ÷ (2/3) = 4/9 × 3/2 = 12/18 = 2/3)", "is_correct": true},
+        {"option_text": "3/4 (from inverting the wrong fraction: (2/3)÷(4/9) = 3/2 — then error)", "is_correct": false},
+        {"option_text": "8/27 (from multiplying 2/3 × 4/9 instead of dividing)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 'What fraction of A is B?' means B/A. So: (4/9) ÷ (2/3) = 4/9 × 3/2 = 12/18 = 2/3. Verify: 2/3 of 2/3 = 4/9 ✓. Option D (8/27) comes from multiplying 2/3 × 4/9 — a common error when the question says 'of' and students multiply instead of finding the ratio. **Short Trick:** 'What fraction of A is B?' = B ÷ A. Flip A, then multiply.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Arrange the following fractions in ascending order: 3/4, 5/7, 7/9, 4/5",
+      "options": [
+        {"option_text": "3/4 < 5/7 < 7/9 < 4/5 (converting to decimals: 0.75, 0.714, 0.778, 0.8)", "is_correct": false},
+        {"option_text": "5/7 < 3/4 < 7/9 < 4/5 (correct decimal order: 0.714, 0.75, 0.778, 0.8)", "is_correct": true},
+        {"option_text": "3/4 < 7/9 < 5/7 < 4/5 (incorrect ordering — 5/7 is smallest, not 3/4)", "is_correct": false},
+        {"option_text": "5/7 < 7/9 < 3/4 < 4/5 (comparing 3/4 and 7/9 incorrectly)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Convert to decimals: 3/4=0.750, 5/7≈0.714, 7/9≈0.778, 4/5=0.800. Ascending order: 0.714 < 0.750 < 0.778 < 0.800 → 5/7 < 3/4 < 7/9 < 4/5. A common error is to compare 5/7 and 3/4 incorrectly (thinking 3<5 means 3/4 is smaller). **Short Trick:** Convert to decimals or use cross-multiplication for each consecutive pair: 5×4=20 vs 7×3=21 → 5/7 < 3/4 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A bottle is 3/5 full of water. After drinking 1/4 of the water in it, what fraction of the bottle remains filled?",
+      "options": [
+        {"option_text": "7/20 (from 3/5 − 1/4 = 12/20 − 5/20 = 7/20 — incorrectly subtracting 1/4 from 3/5)", "is_correct": false},
+        {"option_text": "9/20 (correct: 1/4 of 3/5 = 3/20 drunk; remaining = 3/5 − 3/20 = 12/20 − 3/20 = 9/20)", "is_correct": true},
+        {"option_text": "3/10 (from 3/5 ÷ 2 — halving instead of subtracting a quarter of the content)", "is_correct": false},
+        {"option_text": "2/5 (from 3/5 − 1/5 — treating 1/4 as 1/5 of the full bottle)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The bottle is 3/5 full. 1/4 of the WATER in the bottle is drunk (not 1/4 of the bottle). Water drunk = 1/4 × 3/5 = 3/20. Remaining water = 3/5 − 3/20 = 12/20 − 3/20 = 9/20. Option A (7/20) comes from directly subtracting 1/4 from 3/5 — treating 1/4 as a fraction of the BOTTLE rather than of the WATER. **Short Trick:** 'Drink 1/4 of what's there': remove 1/4 of 3/5 = 3/20. Left = 3/5 × (1 − 1/4) = 3/5 × 3/4 = 9/20.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The sum of three consecutive fractions with denominators 2, 3, and 4 is 13/12. What is the fraction with denominator 3?",
+      "options": [
+        {"option_text": "1/3 (solving: 1/2 + 1/3 + 1/4 = 6/12+4/12+3/12=13/12 ✓)", "is_correct": true},
+        {"option_text": "2/3 (assuming the denominator-3 fraction is 2/3 — doesn't satisfy the sum)", "is_correct": false},
+        {"option_text": "3/4 (confusing the denominator-3 fraction with the denominator-4 fraction)", "is_correct": false},
+        {"option_text": "4/3 (from misinterpreting the sequence as starting at numerator 4)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. The three consecutive unit fractions 1/2 + 1/3 + 1/4 = 6/12 + 4/12 + 3/12 = 13/12. So the fraction with denominator 3 is 1/3. Verify: 6+4+3=13, over 12 ✓. **Short Trick:** For unit fractions 1/a + 1/b + 1/c, convert to LCM denominator and sum the numerators.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is the value of (2/3 + 3/4) ÷ (2/3 × 3/4)?",
+      "options": [
+        {"option_text": "2 (from adding and then dividing by the product without simplifying: 17/12÷1/2=17/6≠2)", "is_correct": false},
+        {"option_text": "17/6 (from (8+9)÷(1/2)×(1/12): correctly: sum=17/12, product=6/12=1/2; result=17/12÷1/2=17/6)", "is_correct": true},
+        {"option_text": "17/12 (computing only the sum, forgetting to apply the division)", "is_correct": false},
+        {"option_text": "1/2 (computing only the product 2/3 × 3/4 = 1/2, forgetting the sum)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Numerator: 2/3 + 3/4 = 8/12 + 9/12 = 17/12. Denominator: 2/3 × 3/4 = 6/12 = 1/2. Result: (17/12) ÷ (1/2) = 17/12 × 2 = 17/6. **Short Trick:** (a+b)/(a×b) = 1/b + 1/a. Here: 1/(3/4) + 1/(2/3) = 4/3 + 3/2 = 8/6 + 9/6 = 17/6. This is a faster alternate approach.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A man spends 1/3 of his salary on rent, 2/5 of the remainder on food, and saves the rest. What fraction of his salary does he save?",
+      "options": [
+        {"option_text": "4/15 (from subtracting 2/5 of the full salary: 1−1/3−2/5 = 4/15 — error)", "is_correct": false},
+        {"option_text": "1/3 (from saving the same fraction spent on rent — not derived from the problem)", "is_correct": false},
+        {"option_text": "3/10 (from multiplying 1/3 × 3/5 instead of 2/3 × 3/5 for savings)", "is_correct": false},
+        {"option_text": "2/5 (correct: food = 2/5 × 2/3 = 4/15; savings = 2/3 − 4/15 = 6/15 = 2/5)", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Salary = 1. Spent on rent = 1/3. Remainder = 1 − 1/3 = 2/3. Spent on food = 2/5 of 2/3 = 4/15. Saved = 2/3 − 4/15 = 10/15 − 4/15 = 6/15 = 2/5. So he saves 2/5 of his total salary. Note: Option A (4/15) is what he spends on food, not what he saves. **Short Trick:** Saved = Remainder × (1 − food fraction) = 2/3 × (1 − 2/5) = 2/3 × 3/5 = 6/15 = 2/5.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Which of the following is the largest? 5/8, 9/14, 11/17, 7/11",
+      "options": [
+        {"option_text": "5/8 (decimal 0.625 — the smallest of the four)", "is_correct": false},
+        {"option_text": "9/14 (decimal ≈ 0.643 — second smallest of the four)", "is_correct": false},
+        {"option_text": "11/17 (decimal ≈ 0.647 — the largest of the four)", "is_correct": true},
+        {"option_text": "7/11 (decimal ≈ 0.636 — third largest of the four)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Convert to decimals: 5/8=0.625, 9/14≈0.643, 11/17≈0.647, 7/11≈0.636. Ordering: 0.625 < 0.636 < 0.643 < 0.647 → 5/8 < 7/11 < 9/14 < 11/17. Largest = 11/17. **Short Trick:** For fractions close in value, use 3-decimal approximations. Or cross-multiply consecutive pairs: 11×14=154 vs 9×17=153 → 11/17 > 9/14 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If 2/5 of a number is 32, what is 3/8 of that number?",
+      "options": [
+        {"option_text": "24 (number=80; 3/8×80=30, not 24)", "is_correct": false},
+        {"option_text": "28 (number=80; 3/8×80=30, not 28)", "is_correct": false},
+        {"option_text": "30 (2/5 × N = 32 → N = 80; 3/8 × 80 = 30)", "is_correct": true},
+        {"option_text": "36 (using 3/5 of 60 = 36 — wrong base number)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 2/5 × N = 32 → N = 32 × 5/2 = 80. Then 3/8 × 80 = 30. Option D (36) comes from computing 2/5 × N = 32 → N = 60 (error: 32 × 5/2 ≠ 60). **Short Trick:** Find N first: N = given value × (denominator/numerator) = 32 × (5/2) = 80. Then apply the new fraction: 3/8 × 80 = 30.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Simplify: (1 − 1/2) × (1 − 1/3) × (1 − 1/4) × ... × (1 − 1/10)",
+      "options": [
+        {"option_text": "1/9 (thinking the pattern gives 1/n where n=9 terms)", "is_correct": false},
+        {"option_text": "1/10 (correct: telescoping product 1/2 × 2/3 × 3/4 × ... × 9/10 = 1/10)", "is_correct": true},
+        {"option_text": "1/5 (computing only part of the product)", "is_correct": false},
+        {"option_text": "1/2 (computing only the first factor)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Each factor: (1−1/n) = (n−1)/n. Product = (1/2)×(2/3)×(3/4)×...×(9/10). This is a telescoping product — all intermediate terms cancel. Numerators: 1×2×3×...×9. Denominators: 2×3×4×...×10. Cancel all from 2 to 9: result = 1/10. **Short Trick:** (1−1/2)(1−1/3)...(1−1/n) = 1/n. Here n=10, answer = 1/10.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A fraction becomes 3/5 when 2 is added to its numerator and 3 is subtracted from its denominator. If the sum of the original numerator and denominator is 25, find the original fraction.",
+      "options": [
+        {"option_text": "7/18 (check: (7+2)/(18−3)=9/15=3/5 ✓ and 7+18=25 ✓ — the correct fraction)", "is_correct": true},
+        {"option_text": "6/19 (check: (6+2)/(19−3)=8/16=1/2≠3/5 — fails the condition)", "is_correct": false},
+        {"option_text": "8/17 (check: (8+2)/(17−3)=10/14=5/7≠3/5 — fails the condition)", "is_correct": false},
+        {"option_text": "9/16 (check: (9+2)/(16−3)=11/13≠3/5 — fails the condition)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Let fraction = N/D. (N+2)/(D−3) = 3/5 → 5N+10 = 3D−9 → 5N−3D = −19 ...(1). N+D=25 → N=25−D ...(2). Substitute into (1): 5(25−D)−3D = −19 → 125−5D−3D = −19 → 8D = 144 → D = 18. N = 25−18 = 7. Fraction = 7/18. Verify: (7+2)/(18−3) = 9/15 = 3/5 ✓; 7+18 = 25 ✓. **Short Trick:** Set up two linear equations (fraction condition + sum condition) and solve by substitution.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

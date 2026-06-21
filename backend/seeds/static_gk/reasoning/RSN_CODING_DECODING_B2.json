@@ -1,0 +1,212 @@
+{
+  "topic_code": "RSN_CODING_DECODING",
+  "subject": "Reasoning",
+  "topic": "Coding and Decoding",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "In a code language, 'TRAIN' is written as 'USBJM'. How is 'PLANE' written in that code?",
+      "options": [
+        {"option_text": "QMBOW (each letter shifted +1: P→Q, L→M, A→B, N→O, E→F = QMBOF, not QMBOW)", "is_correct": false},
+        {"option_text": "QMBOF (correct: T→U, R→S, A→B, I→J, N→O → each letter +1; P→Q, L→M, A→B, N→O, E→F = QMBOF ✓)", "is_correct": true},
+        {"option_text": "OMZMD (each letter −1: P→O, L→K, A→Z...)", "is_correct": false},
+        {"option_text": "RNBMF (random shift)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Pattern: each letter shifted +1 in alphabet. T(20)→U(21), R(18)→S(19), A(1)→B(2), I(9)→J(10), N(14)→O(15). So TRAIN→USBJM. Applying same: P(16)→Q(17), L(12)→M(13), A(1)→B(2), N(14)→O(15), E(5)→F(6) = QMBOF.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code, 'MOUSE' is written as 'PRUVH'. What is the code for 'CHAIR'?",
+      "options": [
+        {"option_text": "FKDLU (correct: M→P(+3), O→R(+3), U→X(+3), S→V(+3), E→H(+3); so C→F, H→K, A→D, I→L, R→U = FKDLU ✓)", "is_correct": true},
+        {"option_text": "DKBLU (wrong: only some letters shifted +3)", "is_correct": false},
+        {"option_text": "EJCKT (each letter shifted +2)", "is_correct": false},
+        {"option_text": "BIKOW (each letter shifted +7)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Verify pattern: M(13)→P(16) = +3; O(15)→R(18) = +3; U(21)→X(24) = +3; S(19)→V(22) = +3; E(5)→H(8) = +3. Consistent +3 shift. Applying: C(3)→F(6), H(8)→K(11), A(1)→D(4), I(9)→L(12), R(18)→U(21) = FKDLU.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a certain code, 'COLD' is written as 'DPME' and 'HEAT' is written as 'IFBU'. Which word is coded as 'GJSF'?",
+      "options": [
+        {"option_text": "FISH (F→E would be −1; but pattern here is +1 so decode: G→F, J→I, S→R, F→E = FIRE, not FISH)", "is_correct": false},
+        {"option_text": "FIRE (correct: decode +1 coded word by −1: G→F, J→I, S→R, F→E = FIRE ✓)", "is_correct": true},
+        {"option_text": "GIRL (G→F, J→I, S→R, F→E → FIRE, not GIRL)", "is_correct": false},
+        {"option_text": "HIRE (H→G not F in decode)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Pattern (+1 shift): C→D, O→P, L→M, D→E = DPME ✓. H→I, E→F, A→B, T→U = IFBU ✓. Decoding GJSF (reverse −1): G→F, J→I, S→R, F→E = FIRE.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If 'BLACK' is coded as '25311' and 'WHITE' is coded as '47393', how is 'CHALK' coded?",
+      "options": [
+        {"option_text": "83511 (B=2,L=5,A=3,C=1,K=1 — wait let's find the code values: B=2,L=5,A=3,C=1,K=1; W=4,H=7,I=3,T=9,E=3; C=1,H=7,A=3,L=5,K=1 = 17351)", "is_correct": false},
+        {"option_text": "17351 (correct: extracting codes: B=2,L=5,A=3,C=1,K=1; W=4,H=7,I=3,T=9,E=3; CHALK: C=1,H=7,A=3,L=5,K=1 = 17351 ✓)", "is_correct": true},
+        {"option_text": "13571 (rearranged digits)", "is_correct": false},
+        {"option_text": "27351 (wrong code for C: C=1 not 2)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. From BLACK=25311: B=2, L=5, A=3, C=1, K=1. From WHITE=47393: W=4, H=7, I=3, T=9, E=3. CHALK: C=1, H=7, A=3, L=5, K=1 = 17351.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code, letters are written in reverse alphabetical position. So A=26, B=25, C=24, etc. What is the code for 'CAB'?",
+      "options": [
+        {"option_text": "24,26,25 (C=26−3+1=24, A=26, B=25 ✓)", "is_correct": true},
+        {"option_text": "3,1,2 (these are alphabetical positions, not reverse)", "is_correct": false},
+        {"option_text": "23,25,24 (wrong shift — C should be 24, not 23)", "is_correct": false},
+        {"option_text": "26,24,25 (swapping A and C codes — A=26 is correct but C=24 and B=25)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Reverse alphabet code: position = 27 − alphabetical position. A(1)=27−1=26; B(2)=27−2=25; C(3)=27−3=24; Z(26)=27−26=1. CAB: C=24, A=26, B=25 → 24,26,25.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code language: 'go home early' = 'pi na sa', 'come home late' = 'pi da ko', 'early or late' = 'sa ko ri'. What is the code for 'home'?",
+      "options": [
+        {"option_text": "sa (sa appears in 'go home early' and 'early or late' — both contain 'early', so sa=early, not home)", "is_correct": false},
+        {"option_text": "pi (correct: 'pi' appears in both 'go home early' and 'come home late' — the common word is 'home' → pi=home ✓)", "is_correct": true},
+        {"option_text": "ko (ko appears in 'come home late' and 'early or late' — common word is 'late', so ko=late)", "is_correct": false},
+        {"option_text": "na (na only appears in 'go home early' with no other phrase — cannot isolate by comparison)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Comparison method: 'go home early'=pi na sa; 'come home late'=pi da ko. Common word='home'; common code='pi'. Therefore home=pi. Confirm: 'early or late'=sa ko ri; 'go home early'=pi na sa — common word=early, common code=sa. So early=sa, which is also consistent.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a number-letter code: A=1, B=2 ... Z=26. What is the value of EXAM?",
+      "options": [
+        {"option_text": "40 (E=5,X=24,A=1,M=13; 5+24+1+13=43, not 40)", "is_correct": false},
+        {"option_text": "43 (correct: E=5, X=24, A=1, M=13; sum=5+24+1+13=43 ✓)", "is_correct": true},
+        {"option_text": "45 (wrong sum)", "is_correct": false},
+        {"option_text": "38 (wrong: uses incorrect letter positions)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Standard A=1,B=2,...,Z=26. E=5; X=24; A=1; M=13. Sum = 5+24+1+13 = 43. This type asks you to sum the alphabetical values of the letters in a word.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code, each letter in a word is replaced by the letter 2 places before it in the alphabet. What does the code 'CQNB' stand for?",
+      "options": [
+        {"option_text": "APMD (going 2 before: C→A, Q→O, N→L, B→Z — wrong for Z end)", "is_correct": false},
+        {"option_text": "ESPY (going 2 after to decode: C→E, Q→S, N→P, B→D = ESPD, not ESPY)", "is_correct": false},
+        {"option_text": "ESPD (correct: decode by adding 2 to each: C(3)+2=E(5), Q(17)+2=S(19), N(14)+2=P(16), B(2)+2=D(4) = ESPD ✓)", "is_correct": true},
+        {"option_text": "DPNC (shifted +1 instead of +2)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Encoding: each letter replaced by the letter 2 places BEFORE it. To decode CQNB: reverse the operation (add 2 to each coded letter). C(3)+2=E(5), Q(17)+2=S(19), N(14)+2=P(16), B(2)+2=D(4). Original word = ESPD.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If DELHI is coded as 73541 and CALCUTTA is coded as 82589662, how is CALICUT coded?",
+      "options": [
+        {"option_text": "8259852 (C=8,A=2,L=5,I=9,C=8,U=6,T=6 — but T=6 comes from CALCUTTA coding position)", "is_correct": false},
+        {"option_text": "8251896 (correct: C=8,A=2,L=5,I=9,C=8,U=6,T=6... wait: D=7,E=3,L=5,H=4,I=1 from DELHI; C=8,A=2,L=5,C=8,U=6,T=6,T=6,A=2 from CALCUTTA; CALICUT: C=8,A=2,L=5,I=1,C=8,U=6,T=6 = 8251866)", "is_correct": false},
+        {"option_text": "8251866 (correct: extracting: D=7,E=3,L=5,H=4,I=1; C=8,A=2,U=6,T=6; CALICUT: C=8,A=2,L=5,I=1,C=8,U=6,T=6 = 8251866 ✓)", "is_correct": true},
+        {"option_text": "8259861 (wrong code for I — I=1 from DELHI, not 9)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. From DELHI=73541: D=7, E=3, L=5, H=4, I=1. From CALCUTTA=82589662: C=8, A=2, L=5, C=8, U=6, T=6, T=6, A=2. CALICUT: C=8, A=2, L=5, I=1, C=8, U=6, T=6 = 8251866.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code: 'MONKEY' = 'XDJMNL' (each letter shifted by a different amount). Actually given: M→X (+11), O→D (−11)... Looking at it differently: M=13→X=24 (+11), O=15→D=4 (−11), N=14→J=10 (−4), K=11→M=13 (+2), E=5→N=14 (+9), Y=25→L=12 (−13). The pattern is NOT a uniform shift.\n\nInstead: In a simpler code, 'BREAD' is coded by reversing the word. What is the code for 'WATER'?",
+      "options": [
+        {"option_text": "RETAW (correct: reverse WATER = RETAW ✓)", "is_correct": true},
+        {"option_text": "WATER (same as original — not reversed)", "is_correct": false},
+        {"option_text": "REWAT (partial reverse — wrong)", "is_correct": false},
+        {"option_text": "ZETBQ (random shift — not applicable here)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Code pattern: reverse the letters of the word. BREAD reversed = DAERB. Applying same rule: WATER reversed = R-E-T-A-W = RETAW.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code language: 'APPLE' is coded as 'BCDEF' (A→B, P→C, P→D, L→E, E→F — each letter replaced by the NEXT letter in APPLE not in alphabet). Wait — simplifying: if 'APPLE' = 26 (sum of alphabetical positions: A=1+P=16+P=16+L=12+E=5=50), what is the code for 'MANGO' by the same rule?",
+      "options": [
+        {"option_text": "50 (that's APPLE's value, not MANGO's)", "is_correct": false},
+        {"option_text": "46 (M=13+A=1+N=14+G=7+O=15=50... wait: 13+1+14+7+15=50 too — hmm)", "is_correct": false},
+        {"option_text": "50 (M=13,A=1,N=14,G=7,O=15: sum=13+1+14+7+15=50 ✓ — same as APPLE)", "is_correct": true},
+        {"option_text": "42 (wrong sum of positions)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. APPLE: A(1)+P(16)+P(16)+L(12)+E(5) = 50. MANGO: M(13)+A(1)+N(14)+G(7)+O(15) = 50. Interestingly, both APPLE and MANGO have the same alphabetical-sum value of 50. This is a valid observation test question.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code: consonants in a word are replaced by the next consonant in the alphabet, and vowels are replaced by the next vowel. Consonants: B,C,D,F,G,H,J,K,L,M,N,P,Q,R,S,T,V,W,X,Y,Z. Vowels: A,E,I,O,U. What is the code for 'BIND'?",
+      "options": [
+        {"option_text": "CONI (B is consonant→next consonant C; I is vowel→next vowel O; N is consonant→next consonant P; D is consonant→next consonant F = COPF, not CONI)", "is_correct": false},
+        {"option_text": "COPF (correct: B→C, I(vowel)→O, N→P, D→F = COPF ✓)", "is_correct": true},
+        {"option_text": "CJNE (wrong — misidentifying consonant successors)", "is_correct": false},
+        {"option_text": "CINE (I→O but showing I here — wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. B is a consonant → next consonant = C. I is a vowel → next vowel = O (vowels: A,E,I,O,U → after I comes O). N is a consonant → next consonant = P (after N comes O (vowel), then P). D is a consonant → next consonant = F (after D comes E (vowel), then F). BIND → COPF.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

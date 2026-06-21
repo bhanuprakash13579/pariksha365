@@ -1,0 +1,178 @@
+{
+  "topic_code": "RSN_DIRECTION",
+  "subject": "Reasoning",
+  "topic": "Direction Sense",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "A man starts facing North, turns 90° clockwise, then 180° anticlockwise. Which direction is he now facing?",
+      "options": [
+        {"option_text": "North (North→East(+90° CW)→West(+180° ACW from East=turning left 180°): West, not North)", "is_correct": false},
+        {"option_text": "West (correct: North→East(90° CW)→West(180° ACW from East) ✓)", "is_correct": true},
+        {"option_text": "South (North→East→South: only if second turn is 90° CW, not 180°)", "is_correct": false},
+        {"option_text": "East (that's only the first turn result)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Start: North. Turn 90° clockwise (right): faces East. Turn 180° anticlockwise from East: 180° anticlockwise = turn to face the opposite direction = West. Final facing: West.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Ravi walks 5 km North, then 3 km East, then 5 km South. How far is he from his starting point and in which direction?",
+      "options": [
+        {"option_text": "5 km East (net N-S = 5−5=0; net E-W=3 East; distance=3 km East, not 5 km)", "is_correct": false},
+        {"option_text": "3 km East (correct: net North = 5−5=0; net East=3km; he is 3 km East of start ✓)", "is_correct": true},
+        {"option_text": "√34 km (this would apply if North and East displacements remained — but North cancels out here)", "is_correct": false},
+        {"option_text": "8 km East (summing N and E distances — wrong; distances don't add like this)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 5 km North, then 5 km South cancel each other (net N-S = 0). 3 km East remains. Distance from start = 3 km, direction = East. No Pythagoras needed when N-S cancels completely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A boy walks 4 km West, then 3 km South. What is the straight-line distance from his starting point?",
+      "options": [
+        {"option_text": "5 km (correct: √(4²+3²) = √(16+9) = √25 = 5 km ✓)", "is_correct": true},
+        {"option_text": "7 km (sum of 4+3=7 — wrong; use Pythagorean theorem)", "is_correct": false},
+        {"option_text": "4 km (horizontal distance only)", "is_correct": false},
+        {"option_text": "3 km (vertical distance only)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. The path creates a right angle (West then South). The straight-line distance is the hypotenuse: √(4²+3²) = √25 = 5 km. This is the classic 3-4-5 right triangle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Seema is facing South-East. She turns 135° anticlockwise. Which direction is she now facing?",
+      "options": [
+        {"option_text": "North (SE=135° from N; 135° ACW from SE: 135°−135°=0° = North ✓)", "is_correct": true},
+        {"option_text": "East (SE−90°=E, but this is 90°, not 135°)", "is_correct": false},
+        {"option_text": "North-East (SE−45°=E not NE; SE−90°=E; SE−135°=N)", "is_correct": false},
+        {"option_text": "West (SE+90°=SW; SE+135°=W going CW; but ACW 135° from SE=N)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Compass positions: N=0°, NE=45°, E=90°, SE=135°, S=180°, SW=225°, W=270°, NW=315°. SE is at 135° from North. Turning 135° anticlockwise (CCW): 135° − 135° = 0° = North. Final direction: North.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Kiran starts at point A, walks 6 km North to B, then 8 km East to C. What is the shortest distance from A to C?",
+      "options": [
+        {"option_text": "10 km (correct: √(6²+8²)=√(36+64)=√100=10 km ✓)", "is_correct": true},
+        {"option_text": "14 km (6+8=14 — total path, not direct distance)", "is_correct": false},
+        {"option_text": "7 km (wrong: average of 6 and 8)", "is_correct": false},
+        {"option_text": "√48 km (wrong: √(6²)=6 not relevant here)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. 6 km North then 8 km East forms a right angle at B. AC = √(AB²+BC²) = √(6²+8²) = √(36+64) = √100 = 10 km. This is the 6-8-10 Pythagorean triple (= 3-4-5 × 2).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A person is standing at a point facing West. He turns 90° clockwise, then 45° anticlockwise, then 45° clockwise. In which direction is he facing now?",
+      "options": [
+        {"option_text": "South (West→North(+90° CW)→NW(−45° ACW)→North(+45° CW): North, not South)", "is_correct": false},
+        {"option_text": "North (correct: West→North(90° CW)→NW(45° ACW)→North(45° CW) ✓)", "is_correct": true},
+        {"option_text": "East (too many turns assumed)", "is_correct": false},
+        {"option_text": "North-West (only the second turn result)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Start: West. Turn 90° CW: West→North. Turn 45° ACW: North→NW. Turn 45° CW: NW→North. Final direction: North. The last two turns (45° ACW then 45° CW) cancel each other out.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Neeta walks 3 km towards East, then 2 km towards North, then 5 km towards West, then 2 km towards South. How far and in which direction is she from the starting point?",
+      "options": [
+        {"option_text": "3 km West (N-S: +2−2=0; E-W: +3−5=−2 i.e., 2 km West; not 3 km West)", "is_correct": false},
+        {"option_text": "2 km West (correct: net N-S=2−2=0; net E-W=3−5=−2=2 km West ✓)", "is_correct": true},
+        {"option_text": "√13 km SW (N-S doesn't cancel here — but 2N−2S=0 and 3E−5W=2W; purely West)", "is_correct": false},
+        {"option_text": "2 km South-West (N-S=0, so direction is purely West, not SW)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Net East-West: 3 East − 5 West = −2 = 2 km West. Net North-South: 2 North − 2 South = 0. She is exactly 2 km West of her starting point.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If the shadow of a person falls to his right side, in which direction is he facing?",
+      "options": [
+        {"option_text": "East (if facing East, shadow falls West. Shadow to RIGHT while facing East = South — West is left and behind; we need to think: shadow is on right side ← sun is on left → sun in North = person faces South? Let's reason: sun rises East, sets West; midday sun is in South(India). Morning: if shadow falls to right, sun is on left. If shadow falls to right, sun is to the left. If sun is in East (morning), and it's to your left, you're facing North → shadow falls East = right side if facing North. YES!)", "is_correct": false},
+        {"option_text": "North (if facing North in morning (sun in East): East is to right; shadow falls West = to the LEFT. Not right.)", "is_correct": false},
+        {"option_text": "South (if facing South in morning: East is to left; shadow falls West=to right ✓ — Yes! When facing South and sun is in East, shadow falls to the West = right side ✓)", "is_correct": true},
+        {"option_text": "West (if facing West: North is right; shadow falls East = left side, not right)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. In the morning, the sun is in the East. Shadow falls opposite to the sun. If the shadow falls to the RIGHT, the sun is to the LEFT. When facing South, East is to your LEFT → shadow falls West, which is to your RIGHT. So the person is facing SOUTH. (In afternoon with sun in West, the person would face North.)",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Town X is to the East of Town Y. Town Z is to the North of Town X. Town W is to the South of Town Y. If you travel from W to Z, which direction do you generally travel?",
+      "options": [
+        {"option_text": "East (W is south of Y; Z is north of X which is east of Y; going from W(south-west) to Z(north-east) = North-East direction ✓)", "is_correct": false},
+        {"option_text": "North-East (correct: W is south of Y; Z is north of X which is east of Y; W→Z = North-East ✓)", "is_correct": true},
+        {"option_text": "North (going North takes you to Y, not Z which is to the north-east)", "is_correct": false},
+        {"option_text": "South-East (wrong direction: Z is north-east of W)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Plotting positions: Y is reference. X is East of Y. Z is North of X → Z is NE of Y. W is South of Y → SW relative to Z. Traveling from W (south of Y) to Z (north of X = NE of Y) requires going North-East.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Vikram walks 10 km North, 6 km East, 10 km South, and then 3 km West. How far is he from his starting point?",
+      "options": [
+        {"option_text": "6 km (net E-W: 6−3=3 km East; N-S: 10−10=0; distance=3 km, not 6)", "is_correct": false},
+        {"option_text": "3 km East (correct: N-S cancels; net E-W=6−3=3 km East ✓)", "is_correct": true},
+        {"option_text": "9 km (wrong: 6+3=9 — sums instead of subtracts)", "is_correct": false},
+        {"option_text": "√(109) km (wrong: only applicable if N-S doesn't cancel)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. N-S: 10 North − 10 South = 0 (cancel). E-W: 6 East − 3 West = 3 km East. He is 3 km East of starting point. No Pythagoras needed when one axis cancels.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_DISCOUNT",
+  "subject": "Quantitative Aptitude",
+  "topic": "Discount",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "A shopkeeper marks an article at ₹800 and offers a 20% discount. What is the selling price?",
+      "options": [
+        {"option_text": "₹620 (subtracting ₹180 — wrong: 20% of 800=160, not 180)", "is_correct": false},
+        {"option_text": "₹640 (correct: 800 × (1−0.20) = 800 × 0.80 = ₹640)", "is_correct": true},
+        {"option_text": "₹660 (20% of 800=160; 800−160=640≠660)", "is_correct": false},
+        {"option_text": "₹720 (only 10% discounted: 800−80=720)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. SP = MP × (1 − discount%) = 800 × 0.80 = ₹640. Discount amount = 800 × 20/100 = ₹160. SP = 800 − 160 = ₹640. **Short Trick:** Multiply MP by (100−discount%)/100 = 800 × 80/100 = 640.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The marked price of an article is ₹1,200 and it is sold at ₹900. What is the percentage of discount?",
+      "options": [
+        {"option_text": "20% (300/1200=25%, not 20%)", "is_correct": false},
+        {"option_text": "25% (discount=300; 300/1200×100=25% ✓)", "is_correct": true},
+        {"option_text": "30% (30% of 1200=360; 1200−360=840≠900)", "is_correct": false},
+        {"option_text": "33.3% (300/900×100 — dividing by SP instead of MP)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Discount = MP − SP = 1200 − 900 = ₹300. Discount% = (Discount/MP) × 100 = (300/1200) × 100 = 25%. Note: discount percentage is ALWAYS calculated on the Marked Price, not the Selling Price. Option D divides by SP — the classic error. **Short Trick:** Discount% = [(MP−SP)/MP] × 100.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A shopkeeper allows successive discounts of 20% and 10% on an article marked at ₹2,000. What is the net selling price?",
+      "options": [
+        {"option_text": "₹1,400 (treating the discounts as 30% combined: 2000×0.70=1400 — wrong)", "is_correct": false},
+        {"option_text": "₹1,440 (correct: after 20%: 2000×0.80=1600; after 10%: 1600×0.90=1440)", "is_correct": true},
+        {"option_text": "₹1,500 (using only one 20% discount: 2000−500=1500 — wrong)", "is_correct": false},
+        {"option_text": "₹1,600 (applying only the first 20% discount — missing the second 10%)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. For successive discounts, apply them one after the other, NOT add them. Step 1: 20% on ₹2000 → SP₁ = 2000 × 0.80 = ₹1600. Step 2: 10% on ₹1600 → SP₂ = 1600 × 0.90 = ₹1440. Net SP = ₹1440. **Short Trick:** Equivalent single discount = a + b − ab/100 = 20+10−2 = 28%. Net SP = 2000 × 0.72 = ₹1440 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A shopkeeper marks an article 40% above its cost price and gives a 25% discount. What is the profit or loss percentage?",
+      "options": [
+        {"option_text": "5% loss (MP=140% of CP; SP=75% of 140=105% of CP → 5% profit, not loss)", "is_correct": false},
+        {"option_text": "5% profit (SP=140×0.75=105% of CP → 5% profit ✓)", "is_correct": true},
+        {"option_text": "15% profit (the 40−25=15 shortcut is wrong for % calculations)", "is_correct": false},
+        {"option_text": "No profit, no loss (SP must equal CP for this; 105%≠100%)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let CP = ₹100. MP = 100 × 1.40 = ₹140. SP = 140 × 0.75 = ₹105. Profit = SP − CP = 105 − 100 = ₹5. Profit% = 5%. Common mistake: 40% − 25% = 15% profit — this SUBTRACTING shortcut is WRONG. The correct formula: when MP is (1+m) × CP and discount is d%, SP = CP × (1+m) × (1−d) = 100 × 1.40 × 0.75 = 105. **Short Trick:** SP% = (100+mark%) × (100−discount%) / 100 = 140×75/100 = 105%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The selling price of an article after a 15% discount is ₹510. What is its marked price?",
+      "options": [
+        {"option_text": "₹586.50 (adding 15% to 510: 510×1.15=586.5 — this gives the wrong direction)", "is_correct": false},
+        {"option_text": "₹600 (correct: SP = MP × 0.85 → MP = 510/0.85 = 600)", "is_correct": true},
+        {"option_text": "₹595 (510/0.85 = 600, not 595)", "is_correct": false},
+        {"option_text": "₹580 (approximate calculation error)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. SP = MP × (1 − 0.15) = MP × 0.85. Given SP = ₹510: MP = 510 / 0.85 = ₹600. Verify: 15% of 600 = ₹90; 600 − 90 = ₹510 ✓. Option A (₹586.50) comes from the error of applying 15% ON the selling price instead of working backwards to the marked price. **Short Trick:** MP = SP / (1 − discount%) = 510 / 0.85 = 600.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A shopkeeper gives two successive discounts of 10% each. What is the equivalent single discount?",
+      "options": [
+        {"option_text": "20% (10+10=20 — wrongly adding discounts)", "is_correct": false},
+        {"option_text": "19% (correct: equivalent = a+b−ab/100 = 10+10−1 = 19%)", "is_correct": true},
+        {"option_text": "18% (off by 1 — wrong formula)", "is_correct": false},
+        {"option_text": "21% (off by 2 in the wrong direction)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. For two successive discounts a% and b%, equivalent single discount = a + b − ab/100 = 10 + 10 − (10×10)/100 = 20 − 1 = 19%. Verify: On ₹100: after first 10%: ₹90. After second 10% on 90: ₹81. Net discount = ₹19 = 19% on ₹100. **Short Trick:** Successive discount formula: a+b−ab/100. For equal discounts: 2a − a²/100.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A dealer marks an article at ₹1,500. He gives a discount of 10% to the customer and still makes a profit of 8%. What is the cost price of the article?",
+      "options": [
+        {"option_text": "₹1,200 (CP: SP=1500×0.90=1350; profit=8% → CP=1350/1.08=1250≠1200)", "is_correct": false},
+        {"option_text": "₹1,250 (SP=1350; 1350/1.08=1250 ✓)", "is_correct": true},
+        {"option_text": "₹1,300 (1350/1.08≠1300)", "is_correct": false},
+        {"option_text": "₹1,350 (this is the SP after discount, not the CP)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. SP = MP × (1 − 10%) = 1500 × 0.90 = ₹1350. Profit% = 8% → SP = CP × 1.08. CP = SP / 1.08 = 1350 / 1.08 = ₹1250. Verify: 8% of 1250 = 100; 1250 + 100 = 1350 ✓. Option D (₹1350) confuses the SP for the CP. **Short Trick:** CP = (MP × (100−d%)) / (100+profit%)= 1500×90 / 108 = 135000/108 = 1250.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Two articles A and B are sold at the same price of ₹600 each. On article A, there is a 25% discount on marked price. On B, there is a 20% discount on marked price. Which has the higher marked price and by how much?",
+      "options": [
+        {"option_text": "A by ₹50 (MP_A=800, MP_B=750; A higher by 50 ✓)", "is_correct": true},
+        {"option_text": "B by ₹50 (MP_B < MP_A, so B is not higher)", "is_correct": false},
+        {"option_text": "A by ₹100 (MP_A−MP_B=800−750=50, not 100)", "is_correct": false},
+        {"option_text": "Both have the same marked price (discount rates differ, so MPs must differ for same SP)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Article A: SP = MP_A × 0.75 = 600 → MP_A = 600/0.75 = ₹800. Article B: SP = MP_B × 0.80 = 600 → MP_B = 600/0.80 = ₹750. A has the higher marked price: MP_A − MP_B = 800 − 750 = ₹50. Counter-intuitive: A has the bigger discount rate (25% vs 20%) but still has a higher marked price — because to achieve the same selling price with a larger discount, you must start with a higher marked price.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A TV is sold at a discount of 12.5% on its marked price. If the marked price is ₹16,000, the customer pays ₹2,000 as down payment and the rest in 6 monthly equal instalments. What is each monthly instalment?",
+      "options": [
+        {"option_text": "₹1,800 (SP=14000; down payment=2000; balance=12000; per month=12000/6=2000≠1800)", "is_correct": false},
+        {"option_text": "₹2,000 (correct: SP=16000×0.875=14000; balance=14000−2000=12000; instalment=12000/6=2000)", "is_correct": true},
+        {"option_text": "₹2,200 (wrong SP calculation)", "is_correct": false},
+        {"option_text": "₹1,500 (dividing total by 8 instead of 6 monthly instalments)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. SP = 16000 × (1 − 12.5%) = 16000 × 0.875 = ₹14,000. Down payment = ₹2,000. Remaining balance = 14000 − 2000 = ₹12,000. Monthly instalment = 12000 / 6 = ₹2,000. Note: 12.5% = 1/8, so SP = 16000 × 7/8 = ₹14,000. **Short Trick:** 12.5% = 1/8 → remaining fraction = 7/8. 16000 × 7/8 = 14000.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What should be the marked price of an item so that after giving 20% discount, the seller still gains 20% profit on cost price of ₹750?",
+      "options": [
+        {"option_text": "₹1,000 (verify: SP=1000×0.80=800; CP=750; profit=50/750=6.67%≠20%)", "is_correct": false},
+        {"option_text": "₹1,125 (SP=1125×0.80=900; CP=750; profit=150/750=20% ✓)", "is_correct": true},
+        {"option_text": "₹1,200 (SP=1200×0.80=960; profit=210/750=28%≠20%)", "is_correct": false},
+        {"option_text": "₹900 (SP=900×0.80=720; 720<750=loss, not profit)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. CP = ₹750. Required profit = 20% → SP = 750 × 1.20 = ₹900. SP = MP × (1 − 20%) = MP × 0.80. So MP = SP / 0.80 = 900 / 0.80 = ₹1,125. Verify: 20% of 1125 = 225; 1125 − 225 = ₹900 = SP ✓; 900 − 750 = 150 profit; 150/750 = 20% ✓. **Short Trick:** MP = CP × (1+profit%) / (1−discount%) = 750 × 1.20 / 0.80 = 900/0.80 = ₹1125.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

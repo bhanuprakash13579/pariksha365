@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_RATIO_PROPORTION",
+  "subject": "Quantitative Aptitude",
+  "topic": "Ratio and Proportion",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "The ratio of A's age to B's age is 3:4. If B's age is 28 years, what is A's age?",
+      "options": [
+        {"option_text": "18 years (3/4×28=21, not 18)", "is_correct": false},
+        {"option_text": "21 years (correct: A/B=3/4; A=3/4×28=21 years ✓)", "is_correct": true},
+        {"option_text": "24 years (wrong: 6/7 of 28=24 — wrong ratio used)", "is_correct": false},
+        {"option_text": "14 years (1/2 of 28=14 — wrong ratio)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. A:B = 3:4. B = 28. A = (3/4)×28 = 3×7 = 21 years. Verify: A:B = 21:28 = 3:4 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "₹900 is to be distributed among A, B, and C in the ratio 2:3:4. What does B get?",
+      "options": [
+        {"option_text": "₹200 (A's share=2/9×900=200, not B's)", "is_correct": false},
+        {"option_text": "₹300 (correct: B's share=3/9×900=3×100=₹300 ✓)", "is_correct": true},
+        {"option_text": "₹400 (C's share=4/9×900=₹400 — that's C's, not B's)", "is_correct": false},
+        {"option_text": "₹350 (wrong calculation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Total parts = 2+3+4 = 9. Each part = 900/9 = ₹100. A gets 2×100=₹200; B gets 3×100=₹300; C gets 4×100=₹400. Total = 200+300+400=900 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If a:b = 5:6 and b:c = 4:7, find a:b:c.",
+      "options": [
+        {"option_text": "5:6:7 (ignoring that b values must match)", "is_correct": false},
+        {"option_text": "10:12:21 (correct: make b common; a:b=5:6=10:12; b:c=4:7=12:21; a:b:c=10:12:21 ✓)", "is_correct": true},
+        {"option_text": "5:6:4 (taking b and c directly without scaling)", "is_correct": false},
+        {"option_text": "20:24:42 (scaled by 2 from 10:12:21 — equivalent but not simplified)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. a:b = 5:6 = 10:12 (multiply by 2). b:c = 4:7 = 12:21 (multiply by 3). Now b=12 in both. a:b:c = 10:12:21. **Short Trick:** Make the common term (b) equal in both ratios by finding LCM. LCM(6,4)=12. Multiply a:b by 2 → 10:12; multiply b:c by 3 → 12:21.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If 4 books cost ₹60, what do 10 books cost?",
+      "options": [
+        {"option_text": "₹120 (double: 2×60=120 — wrong: 10 books ≠ 8 books)", "is_correct": false},
+        {"option_text": "₹150 (correct: 60/4=₹15 per book; 10×15=₹150 ✓)", "is_correct": true},
+        {"option_text": "₹140 (wrong)", "is_correct": false},
+        {"option_text": "₹100 (wrong: 60×10/4=150, not 100)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Rate = 60/4 = ₹15 per book. 10 books = 10×15 = ₹150. **Short Trick:** Direct proportion: cost ∝ quantity. Use cross-multiplication: 4/60 = 10/x → x = 60×10/4 = ₹150.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The ratio of the number of boys to girls in a class is 3:5. If there are 24 boys, how many students are there in total?",
+      "options": [
+        {"option_text": "40 (24 boys=3 parts; 1 part=8; 5 parts girls=40; total=24+40=64, not 40)", "is_correct": false},
+        {"option_text": "64 (correct: 3 parts=24; 1 part=8; girls=5×8=40; total=24+40=64 ✓)", "is_correct": true},
+        {"option_text": "48 (wrong: 24×2=48 — not the correct total)", "is_correct": false},
+        {"option_text": "56 (wrong calculation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Boys:Girls = 3:5. Boys = 24 = 3 parts. 1 part = 8. Girls = 5×8 = 40. Total = 24+40 = 64 students. Total parts = 3+5=8. Total students = 8×8=64.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If x:y = 3:7 and y:z = 5:9, find x:z.",
+      "options": [
+        {"option_text": "3:9 (wrong — must use the compound ratio)", "is_correct": false},
+        {"option_text": "15:63 = 5:21 (correct: x:z = (x/y)×(y/z) = (3/7)×(5/9) = 15/63 = 5/21; x:z=5:21 ✓)", "is_correct": true},
+        {"option_text": "3:5 (ignoring z altogether)", "is_correct": false},
+        {"option_text": "7:9 (taking y:z without connecting to x)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. x/z = (x/y) × (y/z) = (3/7) × (5/9) = 15/63 = 5/21. So x:z = 5:21. **Short Trick:** Compound ratio: multiply the ratios directly. x:z = (x:y) × (y:z) = (3×5):(7×9) = 15:63 = 5:21.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Two numbers are in the ratio 7:9. If 3 is subtracted from each, the new ratio becomes 2:3. Find the two numbers.",
+      "options": [
+        {"option_text": "21 and 27 (check: (21−3):(27−3)=18:24=3:4≠2:3 — fails)", "is_correct": false},
+        {"option_text": "14 and 18 (check: (14−3):(18−3)=11:15≠2:3 — fails)", "is_correct": false},
+        {"option_text": "21 and 27 (recheck: 18:24=3:4 — not 2:3, so fails again)", "is_correct": false},
+        {"option_text": "7k=21, 9k=27 fails. Let 7k and 9k: (7k−3)/(9k−3)=2/3 → 21k−9=18k−6 → 3k=3 → k=1 → 7 and 9 (check: (7−3):(9−3)=4:6=2:3 ✓)", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Let numbers = 7k and 9k. After subtracting 3: (7k−3)/(9k−3) = 2/3. Cross-multiply: 3(7k−3) = 2(9k−3). 21k−9 = 18k−6. 3k = 3. k = 1. Numbers = 7 and 9. Verify: (7−3):(9−3) = 4:6 = 2:3 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A recipe calls for flour and sugar in the ratio 5:2. If 350 grams of flour is used, how much sugar is needed?",
+      "options": [
+        {"option_text": "120 g (5:2; if flour=350; sugar=2/5×350=140, not 120)", "is_correct": false},
+        {"option_text": "140 g (correct: sugar=2/5×350=140 g ✓)", "is_correct": true},
+        {"option_text": "175 g (1/2 of flour — wrong ratio)", "is_correct": false},
+        {"option_text": "100 g (wrong calculation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Flour:Sugar = 5:2. Flour = 350 g. Sugar = (2/5)×350 = 2×70 = 140 g. Or: 1 unit = 350/5 = 70 g. Sugar = 2×70 = 140 g.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The fourth proportional to 3, 5, and 12 is:",
+      "options": [
+        {"option_text": "18 (3:5=12:x → x=5×12/3=20, not 18)", "is_correct": false},
+        {"option_text": "20 (correct: 3:5=12:x → 3x=60 → x=20 ✓)", "is_correct": true},
+        {"option_text": "15 (wrong: 3×5=15 — just multiplying the first two)", "is_correct": false},
+        {"option_text": "24 (wrong: 3×8=24, no clear derivation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Fourth proportional: if a:b = c:d, then d = bc/a. Here a=3, b=5, c=12. d = (5×12)/3 = 60/3 = 20. Verify: 3:5 = 12:20 → 3×20 = 5×12 → 60 = 60 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A:B = 2:3 and B:C = 3:5. The ratio A:B:C is 2:3:5. If the total of A, B, and C is 100, find C.",
+      "options": [
+        {"option_text": "30 (C's share: 5/10×100=50, not 30)", "is_correct": false},
+        {"option_text": "50 (correct: A:B:C=2:3:5; C=5/(2+3+5)×100=5/10×100=50 ✓)", "is_correct": true},
+        {"option_text": "40 (4/10×100=40 — would be if C's ratio=4)", "is_correct": false},
+        {"option_text": "60 (6/10×100=60 — wrong ratio for C)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. A:B:C = 2:3:5 (given B:C=3:5, and A:B=2:3, and since B=3 in both, no adjustment needed — this is already the combined ratio). Total parts = 2+3+5 = 10. C = 5/10 × 100 = ₹50. A=20, B=30, C=50. Total = 100 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

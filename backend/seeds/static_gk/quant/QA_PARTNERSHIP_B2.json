@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_PARTNERSHIP",
+  "subject": "Quantitative Aptitude",
+  "topic": "Partnership",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "A and B invest ₹20,000 and ₹30,000 respectively. At year end, total profit is ₹15,000. What is A's share?",
+      "options": [
+        {"option_text": "₹5,000 (wrong: A:B=2:3; A's share=2/5×15000=6000, not 5000)", "is_correct": false},
+        {"option_text": "₹6,000 (correct: ratio A:B=20000:30000=2:3; A's share=2/5×15000=₹6000 ✓)", "is_correct": true},
+        {"option_text": "₹7,500 (half the profit — only if invested equally)", "is_correct": false},
+        {"option_text": "₹9,000 (B's share=3/5×15000=9000, not A's)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Investment ratio A:B = 20000:30000 = 2:3. Total parts = 5. A's share = 2/5 × 15000 = ₹6,000. B's share = 3/5 × 15000 = ₹9,000. Verify: 6000+9000 = 15000 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "P invests ₹5,000 for 12 months. Q invests ₹8,000 for 9 months. In what ratio should they share the profit?",
+      "options": [
+        {"option_text": "5:6 (wrong: effective investment: P=5000×12=60000; Q=8000×9=72000; ratio=60:72=5:6 ✓ — wait, this IS correct!)", "is_correct": true},
+        {"option_text": "5:8 (ratio of principal only — ignoring duration)", "is_correct": false},
+        {"option_text": "2:3 (wrong calculation)", "is_correct": false},
+        {"option_text": "4:5 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Profit sharing ratio = (Capital × Time) for each partner. P: 5000×12 = 60,000. Q: 8000×9 = 72,000. Ratio P:Q = 60,000:72,000 = 60:72 = 5:6. **Short Trick:** Always multiply investment by duration (months or years) to get effective capital for profit-sharing.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A, B, and C invest ₹10,000, ₹12,000, and ₹15,000 respectively. A is a working partner and gets 20% of the profit as salary before dividing the rest. Total profit = ₹37,000. What is A's total earning?",
+      "options": [
+        {"option_text": "₹10,000 (20% of 37000=7400 salary; ratio=10:12:15; A's capital share=10/37×29600=8000; total=15400≠10000)", "is_correct": false},
+        {"option_text": "₹15,400 (correct: salary=20%×37000=7400; remaining=29600; A:B:C=10:12:15=37 parts; A's share=10/37×29600=8000; total=7400+8000=15400 ✓)", "is_correct": true},
+        {"option_text": "₹17,000 (over-estimated)", "is_correct": false},
+        {"option_text": "₹12,000 (under-estimated)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A's salary = 20% of 37,000 = ₹7,400. Remaining profit = 37,000−7,400 = ₹29,600. Ratio A:B:C = 10,000:12,000:15,000 = 10:12:15. Total parts = 37. A's capital share = 10/37 × 29,600 = 8,000. A's total = 7,400+8,000 = ₹15,400.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "X and Y start a business with ₹6,000 and ₹9,000 respectively. After 6 months, Z joins with ₹12,000. At year end, what is Z's share in a total profit of ₹37,800?",
+      "options": [
+        {"option_text": "₹10,800 (X: 6000×12=72000; Y: 9000×12=108000; Z: 12000×6=72000; ratio=72:108:72=2:3:2; Z=2/7×37800=10800 ✓)", "is_correct": true},
+        {"option_text": "₹12,600 (wrong: Z's ratio is 2/7 not 1/3)", "is_correct": false},
+        {"option_text": "₹16,200 (Y's share=3/7×37800=16200, not Z's)", "is_correct": false},
+        {"option_text": "₹9,000 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. X invests for 12 months: 6000×12 = 72,000. Y invests for 12 months: 9000×12 = 108,000. Z joins after 6 months, so invests for 6 months: 12000×6 = 72,000. Ratio X:Y:Z = 72:108:72 = 2:3:2. Total parts = 7. Z's share = 2/7 × 37,800 = ₹10,800.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Two friends A and B invest in the ratio 3:5. After a year, B withdraws half his investment. The business runs for another year. What is the profit-sharing ratio over the full 2 years?",
+      "options": [
+        {"option_text": "6:10 (ignoring the withdrawal)", "is_correct": false},
+        {"option_text": "12:15 = 4:5 (correct: A: 3×2=6 over 2 years; B: 5×1+2.5×1=7.5 over 2 years; ratio=6:7.5=4:5 ✓)", "is_correct": true},
+        {"option_text": "3:5 (original ratio — ignoring withdrawal)", "is_correct": false},
+        {"option_text": "6:5 (wrong direction)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let A invest 3k, B invest 5k. Year 1: A=3k, B=5k. Year 2: A=3k, B=2.5k (half withdrawn). Effective capital: A = 3k×2 = 6k. B = 5k×1 + 2.5k×1 = 7.5k. Ratio = 6:7.5 = 60:75 = 4:5.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A, B, C start a business investing ₹2,000, ₹4,000, ₹6,000 for 6, 9, and 12 months respectively. What is B's share of a ₹45,000 profit?",
+      "options": [
+        {"option_text": "₹15,000 (effective: A=12k, B=36k, C=72k; B's ratio=36/120=30%, 0.3×45000=13500≠15000)", "is_correct": false},
+        {"option_text": "₹13,500 (correct: A=2000×6=12000; B=4000×9=36000; C=6000×12=72000; total=120000; B=36/120×45000=13500 ✓)", "is_correct": true},
+        {"option_text": "₹27,000 (C's share=72/120×45000=27000, not B's)", "is_correct": false},
+        {"option_text": "₹10,000 (wrong: would imply B has 22.2% — not matching)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Effective investment: A = 2000×6 = 12,000; B = 4000×9 = 36,000; C = 6000×12 = 72,000. Total = 120,000. B's share = 36/120 × 45,000 = 3/10 × 45,000 = ₹13,500. A's share = 12/120 × 45,000 = ₹4,500; C's share = 72/120 × 45,000 = ₹27,000. Total check: 4500+13500+27000 = 45,000 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Ravi and Suresh invest in a business in ratio 4:5. Ravi is a sleeping partner; Suresh manages it and gets ₹1,000/month from the profit. If annual profit is ₹25,600, what is Ravi's share after Suresh's salary?",
+      "options": [
+        {"option_text": "₹8,000 (remaining profit=25600−12000=13600; Ravi's ratio=4/9; 4/9×13600=6044≠8000)", "is_correct": false},
+        {"option_text": "₹6,044 (correct: salary=1000×12=12000; remainder=13600; Ravi=4/9×13600=6044.4≈₹6,044 ✓)", "is_correct": true},
+        {"option_text": "₹7,600 (wrong: 4/9×17100=7600 — wrong remaining amount)", "is_correct": false},
+        {"option_text": "₹10,240 (4/9 of 23040=10240 — ignoring salary deduction)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Suresh's annual salary = 1000×12 = ₹12,000. Remaining profit = 25,600−12,000 = ₹13,600. This is shared in ratio Ravi:Suresh = 4:5. Ravi's share = 4/9 × 13,600 = ₹6,044 (approx). Suresh's total = 12,000 + 5/9×13,600 = 12,000+7,556 = ₹19,556. Total = 6044+19556 = 25,600 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A and B start a business with ₹15,000 and ₹25,000. At the end of the year, B gets ₹5,000 more than A. What is the total profit?",
+      "options": [
+        {"option_text": "₹16,000 (ratio A:B=3:5; let A get x, B get x+5000; x/(x+5000)=3/5; 5x=3x+15000; 2x=15000; x=7500; total=7500+12500=20000≠16000)", "is_correct": false},
+        {"option_text": "₹20,000 (correct: A:B=15000:25000=3:5; if B gets A+5000; A's part=3k,B's=5k; 5k−3k=2k=5000; k=2500; total=8k=20000 ✓)", "is_correct": true},
+        {"option_text": "₹25,000 (wrong)", "is_correct": false},
+        {"option_text": "₹12,500 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Ratio A:B = 15,000:25,000 = 3:5. Let each part = k. A gets 3k, B gets 5k. B−A = 5k−3k = 2k = ₹5,000 → k = ₹2,500. Total profit = 8k = 8×2,500 = ₹20,000. **Short Trick:** Difference in ratio units = 2; difference in profit = 5000; so 1 unit = 2500; total 8 units = 20,000.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Three partners invest in ratio 1:2:3. The first partner leaves after 4 months. If the business runs for a year, what is the profit-sharing ratio among the three?",
+      "options": [
+        {"option_text": "1:2:3 (original ratio — ignoring different durations)", "is_correct": false},
+        {"option_text": "4:24:36 = 1:6:9 (correct: P1=1×4=4; P2=2×12=24; P3=3×12=36; ratio=4:24:36=1:6:9 ✓)", "is_correct": true},
+        {"option_text": "2:6:9 (wrong)", "is_correct": false},
+        {"option_text": "1:3:6 (wrong calculation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let investments be 1k, 2k, 3k. Effective capital: P1 = 1k×4 = 4k (only 4 months). P2 = 2k×12 = 24k. P3 = 3k×12 = 36k. Ratio = 4:24:36 = 1:6:9.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If 1/3 of A's capital equals 1/4 of B's capital, the ratio of their profits (assuming same duration) is:",
+      "options": [
+        {"option_text": "3:4 (wrong: A/3=B/4 → A=3B/4; A:B=3:4 ✓ — wait this IS correct!)", "is_correct": true},
+        {"option_text": "4:3 (wrong direction: A<B if A/3=B/4)", "is_correct": false},
+        {"option_text": "1:1 (only if A=B, but 1/3A=1/4B means A≠B)", "is_correct": false},
+        {"option_text": "1:3 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. A/3 = B/4. Cross-multiply: 4A = 3B → A/B = 3/4 → A:B = 3:4. Profit ratio (same duration) = capital ratio = 3:4. **Short Trick:** If (1/m)A = (1/n)B → A:B = m:n. Here (1/3)A=(1/4)B → A:B = 3:4.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}
