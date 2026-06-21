@@ -1,9 +1,12 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, SafeAreaView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { SvgXml } from 'react-native-svg';
 import { QuizAPI, PrivateModuleAPI } from '../../services/api';
 import { COLORS } from '../../styles/theme';
+
+const BOOKMARK_KEY = 'bookmarked_questions';
 
 function renderExplanationMobile(text: string, baseStyle: object) {
     return text.split('\n').map((line, i) => {
@@ -33,7 +36,7 @@ interface QuizQuestion {
 export default function QuizSessionScreen({ navigation, route }: any) {
     const { subject, limit = 10, title = 'Daily Quiz', moduleSlug, weakTopicMode = false } = route.params || {};
 
-    const QUIZ_DURATION = 5 * 60; // 300 seconds
+    const QUIZ_DURATION = 5 * 60;
     const [questions, setQuestions] = useState<QuizQuestion[]>([]);
     const [currentIdx, setCurrentIdx] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number | null>>({});
@@ -43,10 +46,20 @@ export default function QuizSessionScreen({ navigation, route }: any) {
     const [showReview, setShowReview] = useState(false);
     const [submitting, setSubmitting] = useState(false);
     const [timeLeft, setTimeLeft] = useState(QUIZ_DURATION);
+    const [bookmarked, setBookmarked] = useState<Set<string>>(new Set());
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+    // Load existing bookmarks
     useEffect(() => {
-        // Reset state whenever subject/module/limit changes (catches re-navigate with same params)
+        AsyncStorage.getItem(BOOKMARK_KEY).then(data => {
+            if (data) {
+                const list: any[] = JSON.parse(data);
+                setBookmarked(new Set(list.map(q => q.id)));
+            }
+        });
+    }, []);
+
+    useEffect(() => {
         setCurrentIdx(0);
         setSelectedAnswers({});
         setSubmitted(false);
@@ -73,16 +86,12 @@ export default function QuizSessionScreen({ navigation, route }: any) {
         fetchQuiz();
     }, [subject, limit, moduleSlug, weakTopicMode]);
 
-    // Start countdown once questions load
     useEffect(() => {
         if (!loading && questions.length > 0 && !submitted) {
             setTimeLeft(QUIZ_DURATION);
             timerRef.current = setInterval(() => {
                 setTimeLeft(prev => {
-                    if (prev <= 1) {
-                        clearInterval(timerRef.current!);
-                        return 0;
-                    }
+                    if (prev <= 1) { clearInterval(timerRef.current!); return 0; }
                     return prev - 1;
                 });
             }, 1000);
@@ -90,18 +99,12 @@ export default function QuizSessionScreen({ navigation, route }: any) {
         return () => { if (timerRef.current) clearInterval(timerRef.current); };
     }, [loading, questions.length]);
 
-    // Auto-submit when timer hits 0
     useEffect(() => {
-        if (timeLeft === 0 && !submitted && !loading && questions.length > 0) {
-            handleSubmit();
-        }
+        if (timeLeft === 0 && !submitted && !loading && questions.length > 0) handleSubmit();
     }, [timeLeft]);
 
-    // Stop timer after submit
     useEffect(() => {
-        if (submitted && timerRef.current) {
-            clearInterval(timerRef.current);
-        }
+        if (submitted && timerRef.current) clearInterval(timerRef.current);
     }, [submitted]);
 
     const formatTime = (secs: number) => {
@@ -110,18 +113,26 @@ export default function QuizSessionScreen({ navigation, route }: any) {
         return `${m}:${s}`;
     };
 
+    const toggleBookmark = async (q: QuizQuestion) => {
+        const existing = await AsyncStorage.getItem(BOOKMARK_KEY);
+        const list: any[] = existing ? JSON.parse(existing) : [];
+        const isMarked = bookmarked.has(q.id);
+        const updated = isMarked
+            ? list.filter(item => item.id !== q.id)
+            : [...list, { id: q.id, question_text: q.question_text, options: q.options, explanation: q.explanation, subject: q.subject, topic: q.topic, savedAt: new Date().toISOString() }];
+        await AsyncStorage.setItem(BOOKMARK_KEY, JSON.stringify(updated));
+        const next = new Set(bookmarked);
+        isMarked ? next.delete(q.id) : next.add(q.id);
+        setBookmarked(next);
+    };
+
     const selectOption = (optionIndex: number) => {
         if (submitted) return;
         setSelectedAnswers(prev => ({ ...prev, [currentIdx]: optionIndex }));
     };
 
-    const goNext = () => {
-        if (currentIdx < questions.length - 1) setCurrentIdx(prev => prev + 1);
-    };
-
-    const goPrev = () => {
-        if (currentIdx > 0) setCurrentIdx(prev => prev - 1);
-    };
+    const goNext = () => { if (currentIdx < questions.length - 1) setCurrentIdx(p => p + 1); };
+    const goPrev = () => { if (currentIdx > 0) setCurrentIdx(p => p - 1); };
 
     const handleSubmit = async () => {
         setSubmitting(true);
@@ -140,17 +151,16 @@ export default function QuizSessionScreen({ navigation, route }: any) {
             setSubmitted(true);
         } catch (err) {
             console.error("Failed to submit quiz:", err);
-            // Scorecard from server failed — show basic local tally so user still sees a result
-            let correct = 0, wrong = 0, skipped = 0;
+            let correct = 0, incorrect = 0, skipped = 0;
             questions.forEach((q, idx) => {
                 const sel = selectedAnswers[idx];
                 if (sel === undefined || sel === null) { skipped++; return; }
-                if (q.options[sel]?.is_correct) correct++; else wrong++;
+                if (q.options[sel]?.is_correct) correct++; else incorrect++;
             });
             setScorecard({
-                correct, wrong, skipped,
+                correct, incorrect, skipped,
                 total: questions.length,
-                score_percentage: questions.length > 0 ? Math.round((correct / questions.length) * 100) : 0,
+                accuracy: questions.length > 0 ? Math.round((correct / questions.length) * 100) : 0,
             });
             setSubmitted(true);
         } finally {
@@ -183,123 +193,227 @@ export default function QuizSessionScreen({ navigation, route }: any) {
 
     // ─── SCORECARD VIEW ───
     if (submitted && scorecard) {
-        const scorePct = scorecard.score_percentage || Math.round((scorecard.correct / scorecard.total) * 100);
-        const isGood = scorePct >= 70;
+        const correct = scorecard.correct ?? 0;
+        const incorrect = scorecard.incorrect ?? scorecard.wrong ?? 0;
+        const skipped = scorecard.skipped ?? 0;
+        const total = scorecard.total ?? questions.length;
+        const accuracy = Math.round(scorecard.accuracy ?? scorecard.score_percentage ?? (total > 0 ? (correct / total) * 100 : 0));
+        const isGood = accuracy >= 70;
+        const weakTopics: any[] = scorecard.weak_topics || [];
+        const nudge = scorecard.nudge || scorecard.encouragement || scorecard.nudge_message;
+
         return (
             <SafeAreaView style={{ flex: 1, backgroundColor: '#f9fafb' }}>
-                <ScrollView contentContainerStyle={{ padding: 20, paddingTop: 40 }}>
-                    {/* Score Circle */}
-                    <View style={{ alignItems: 'center', marginBottom: 30 }}>
-                        <View style={{
-                            width: 120, height: 120, borderRadius: 60,
-                            backgroundColor: isGood ? '#f0fdf4' : '#fff7ed',
-                            borderWidth: 4, borderColor: isGood ? '#22c55e' : COLORS.primary,
-                            alignItems: 'center', justifyContent: 'center', marginBottom: 16,
-                        }}>
-                            <Text style={{ fontSize: 36, fontWeight: '900', color: isGood ? '#16a34a' : '#c2410c' }}>{scorePct}%</Text>
+                <ScrollView>
+                    {/* ── Result Banner ── */}
+                    <View style={{
+                        backgroundColor: isGood ? '#f0fdf4' : '#fff7ed',
+                        paddingTop: 36, paddingBottom: 28, paddingHorizontal: 24,
+                        alignItems: 'center',
+                        borderBottomLeftRadius: 28, borderBottomRightRadius: 28,
+                    }}>
+                        <Text style={{ fontSize: 44, marginBottom: 6 }}>
+                            {isGood ? '🎉' : correct === 0 ? '😅' : '💪'}
+                        </Text>
+                        <View style={{ flexDirection: 'row', alignItems: 'baseline', marginBottom: 4 }}>
+                            <Text style={{ fontSize: 42, fontWeight: '900', color: '#111827', lineHeight: 50 }}>{correct}</Text>
+                            <Text style={{ fontSize: 20, color: '#9ca3af', fontWeight: '600' }}>/{total}</Text>
                         </View>
-                        <Text style={{ fontSize: 22, fontWeight: '800', color: '#111827' }}>
-                            {isGood ? '🎉 Great Job!' : '📊 Keep Practicing!'}
-                        </Text>
-                        <Text style={{ color: '#6b7280', marginTop: 4, textAlign: 'center' }}>
-                            You answered {scorecard.correct} out of {scorecard.total} correctly
+                        <Text style={{ fontSize: 13, color: '#6b7280', marginBottom: 14 }}>Questions Correct</Text>
+
+                        {/* Progress bar */}
+                        <View style={{ width: '100%', height: 8, backgroundColor: 'rgba(0,0,0,0.1)', borderRadius: 4, marginBottom: 6 }}>
+                            <View style={{
+                                height: 8, borderRadius: 4,
+                                backgroundColor: isGood ? '#22c55e' : COLORS.primary,
+                                width: `${Math.min(accuracy, 100)}%`,
+                            }} />
+                        </View>
+                        <Text style={{ fontSize: 13, fontWeight: '700', color: isGood ? '#16a34a' : '#c2410c' }}>
+                            {accuracy}% Accuracy
                         </Text>
                     </View>
 
-                    {/* Stats Cards */}
-                    <View style={{ flexDirection: 'row', gap: 8, marginBottom: 20 }}>
-                        {[
-                            { label: 'Correct', value: scorecard.correct, color: '#22c55e', bg: '#f0fdf4' },
-                            { label: 'Wrong', value: scorecard.wrong, color: '#ef4444', bg: '#fef2f2' },
-                            { label: 'Skipped', value: scorecard.skipped, color: '#6b7280', bg: '#f3f4f6' },
-                        ].map((item, idx) => (
-                            <View key={idx} style={{
-                                flex: 1, backgroundColor: item.bg, borderRadius: 14, padding: 16, alignItems: 'center',
-                            }}>
-                                <Text style={{ fontSize: 28, fontWeight: '900', color: item.color }}>{item.value}</Text>
-                                <Text style={{ fontSize: 11, fontWeight: '600', color: '#9ca3af', marginTop: 4 }}>{item.label}</Text>
-                            </View>
-                        ))}
-                    </View>
-
-                    {/* Focus Areas */}
-                    {scorecard.focus_areas?.length > 0 && (
-                        <View style={{ marginBottom: 20 }}>
-                            <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#111827', marginBottom: 10 }}>🎯 Focus Areas</Text>
-                            {scorecard.focus_areas.map((area: string, idx: number) => (
+                    <View style={{ padding: 16 }}>
+                        {/* ── Correct / Wrong / Skipped ── */}
+                        <View style={{ flexDirection: 'row', gap: 8, marginBottom: 16 }}>
+                            {[
+                                { label: '✓  Correct', value: correct, color: '#16a34a', bg: '#f0fdf4', border: '#bbf7d0' },
+                                { label: '✗  Wrong', value: incorrect, color: '#dc2626', bg: '#fef2f2', border: '#fecaca' },
+                                { label: '—  Skipped', value: skipped, color: '#6b7280', bg: '#f3f4f6', border: '#e5e7eb' },
+                            ].map((item, idx) => (
                                 <View key={idx} style={{
-                                    backgroundColor: '#fff', borderRadius: 10, padding: 12, marginBottom: 6,
-                                    borderWidth: 1, borderColor: '#fecaca', flexDirection: 'row', alignItems: 'center',
+                                    flex: 1, backgroundColor: item.bg, borderRadius: 14, padding: 14,
+                                    alignItems: 'center', borderWidth: 1, borderColor: item.border,
                                 }}>
-                                    <Ionicons name="flag" size={14} color="#ef4444" style={{ marginRight: 8 }} />
-                                    <Text style={{ color: '#374151', fontSize: 13, fontWeight: '500' }}>{area}</Text>
+                                    <Text style={{ fontSize: 26, fontWeight: '900', color: item.color }}>{item.value}</Text>
+                                    <Text style={{ fontSize: 11, fontWeight: '700', color: item.color, marginTop: 3 }}>{item.label}</Text>
                                 </View>
                             ))}
                         </View>
-                    )}
 
-                    {/* Nudge Message */}
-                    {scorecard.nudge_message && (
-                        <View style={{
-                            backgroundColor: '#eff6ff', borderWidth: 1, borderColor: '#bfdbfe',
-                            borderRadius: 12, padding: 14, marginBottom: 20,
-                        }}>
-                            <Text style={{ color: '#1e40af', fontSize: 13, fontWeight: '500' }}>💡 {scorecard.nudge_message}</Text>
-                        </View>
-                    )}
-
-                    {/* Actions */}
-                    <TouchableOpacity
-                        onPress={() => navigation.goBack()}
-                        style={{
-                            backgroundColor: COLORS.primary, borderRadius: 14, paddingVertical: 16, alignItems: 'center', marginBottom: 10,
-                            shadowColor: COLORS.primary, shadowOpacity: 0.3, shadowRadius: 8, shadowOffset: { width: 0, height: 4 }, elevation: 5,
-                        }}
-                    >
-                        <Text style={{ color: '#fff', fontWeight: '700', fontSize: 16 }}>Back to Categories</Text>
-                    </TouchableOpacity>
-
-                    {/* Review Toggle */}
-                    <TouchableOpacity
-                        onPress={() => setShowReview(v => !v)}
-                        style={{ borderRadius: 14, paddingVertical: 14, alignItems: 'center', marginBottom: 16, borderWidth: 1, borderColor: '#e5e7eb', backgroundColor: '#fff' }}
-                    >
-                        <Text style={{ color: '#374151', fontWeight: '600', fontSize: 14 }}>{showReview ? '▲ Hide Review' : '📋 Review Answers'}</Text>
-                    </TouchableOpacity>
-
-                    {showReview && questions.map((q, idx) => {
-                        const selIdx = selectedAnswers[idx];
-                        return (
-                            <View key={q.id} style={{ backgroundColor: '#fff', borderRadius: 14, padding: 16, marginBottom: 12, borderWidth: 1, borderColor: '#e5e7eb' }}>
-                                <Text style={{ fontSize: 13, fontWeight: '600', color: '#111827', marginBottom: 10, lineHeight: 20 }}>
-                                    {idx + 1}. {q.question_text}
-                                </Text>
-                                {q.options.map((opt, i) => {
-                                    const isCorrect = opt.is_correct;
-                                    const isSelected = selIdx === i;
-                                    const bg = isCorrect ? '#f0fdf4' : isSelected ? '#fef2f2' : '#f9fafb';
-                                    const border = isCorrect ? '#22c55e' : isSelected ? '#ef4444' : '#e5e7eb';
-                                    return (
-                                        <View key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', backgroundColor: bg, borderWidth: 1, borderColor: border, borderRadius: 8, paddingHorizontal: 10, paddingVertical: 8, marginBottom: 6 }}>
-                                            <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#6b7280', marginRight: 6, marginTop: 1 }}>{String.fromCharCode(65 + i)}.</Text>
-                                            <Text style={{ fontSize: 12, color: '#374151', flex: 1, lineHeight: 18 }}>{opt.option_text}</Text>
-                                            {isCorrect && <Text style={{ color: '#16a34a', fontWeight: 'bold', fontSize: 14, marginLeft: 4 }}>✓</Text>}
-                                            {isSelected && !isCorrect && <Text style={{ color: '#dc2626', fontWeight: 'bold', fontSize: 14, marginLeft: 4 }}>✗</Text>}
-                                        </View>
-                                    );
-                                })}
-                                {q.explanation ? (
-                                    <View style={{ backgroundColor: '#eff6ff', borderRadius: 8, padding: 10, marginTop: 8, borderWidth: 1, borderColor: '#bfdbfe' }}>
-                                        <Text style={{ fontSize: 12, color: '#1e40af' }}>💡</Text>
-                                        {renderExplanationMobile(q.explanation, { fontSize: 12, color: '#1e40af' })}
-                                    </View>
-                                ) : null}
-                                {q.explanation_svg ? (
-                                    <SvgXml xml={q.explanation_svg} width="100%" height={200} style={{ marginTop: 10 }} />
-                                ) : null}
+                        {/* ── Nudge message ── */}
+                        {nudge ? (
+                            <View style={{
+                                backgroundColor: '#eff6ff', borderWidth: 1, borderColor: '#bfdbfe',
+                                borderRadius: 12, padding: 14, marginBottom: 16,
+                            }}>
+                                <Text style={{ color: '#1e40af', fontSize: 13, fontWeight: '500' }}>💡 {nudge}</Text>
                             </View>
-                        );
-                    })}
+                        ) : null}
+
+                        {/* ── Focus Areas ── */}
+                        {weakTopics.length > 0 ? (
+                            <View style={{
+                                backgroundColor: '#fff', borderRadius: 14, padding: 16, marginBottom: 16,
+                                borderWidth: 1, borderColor: '#fecaca',
+                            }}>
+                                <Text style={{ fontSize: 15, fontWeight: '700', color: '#111827', marginBottom: 12 }}>
+                                    🎯 Focus These Areas
+                                </Text>
+                                {weakTopics.map((wt: any, i: number) => (
+                                    <View key={i} style={{
+                                        flexDirection: 'row', alignItems: 'center',
+                                        paddingVertical: 8,
+                                        borderBottomWidth: i < weakTopics.length - 1 ? 1 : 0,
+                                        borderBottomColor: '#f3f4f6',
+                                    }}>
+                                        <View style={{
+                                            width: 8, height: 8, borderRadius: 4, marginRight: 10,
+                                            backgroundColor: wt.accuracy < 40 ? '#ef4444' : '#f97316',
+                                        }} />
+                                        <View style={{ flex: 1 }}>
+                                            <Text style={{ fontSize: 13, fontWeight: '600', color: '#374151' }}>
+                                                {wt.topic || wt.subject}
+                                            </Text>
+                                            {wt.subject && wt.topic ? (
+                                                <Text style={{ fontSize: 11, color: '#9ca3af' }}>{wt.subject}</Text>
+                                            ) : null}
+                                        </View>
+                                        <Text style={{
+                                            fontSize: 12, fontWeight: '700',
+                                            color: wt.accuracy < 40 ? '#dc2626' : '#ea580c',
+                                        }}>{wt.accuracy}%</Text>
+                                    </View>
+                                ))}
+                            </View>
+                        ) : null}
+
+                        {/* ── Actions ── */}
+                        <TouchableOpacity
+                            onPress={() => navigation.goBack()}
+                            style={{
+                                backgroundColor: COLORS.primary, borderRadius: 14, paddingVertical: 16,
+                                alignItems: 'center', marginBottom: 10,
+                                shadowColor: COLORS.primary, shadowOpacity: 0.3, shadowRadius: 8,
+                                shadowOffset: { width: 0, height: 4 }, elevation: 5,
+                            }}
+                        >
+                            <Text style={{ color: '#fff', fontWeight: '700', fontSize: 16 }}>Back to Categories</Text>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity
+                            onPress={() => setShowReview(v => !v)}
+                            style={{
+                                borderRadius: 14, paddingVertical: 14, alignItems: 'center',
+                                marginBottom: 20, borderWidth: 1, borderColor: '#e5e7eb', backgroundColor: '#fff',
+                            }}
+                        >
+                            <Text style={{ color: '#374151', fontWeight: '600', fontSize: 14 }}>
+                                {showReview ? '▲ Hide Review' : '📋 Review All Answers'}
+                            </Text>
+                        </TouchableOpacity>
+
+                        {/* ── Question Review ── */}
+                        {showReview && questions.map((q, idx) => {
+                            const selIdx = selectedAnswers[idx];
+                            const isSkipped = selIdx === null || selIdx === undefined;
+                            const isCorrect = !isSkipped && !!q.options[selIdx!]?.is_correct;
+                            const status = isSkipped ? 'skipped' : isCorrect ? 'correct' : 'wrong';
+
+                            const statusConfig = {
+                                correct: { label: '✓  CORRECT', color: '#16a34a', bg: '#f0fdf4', border: '#bbf7d0' },
+                                wrong:   { label: '✗  WRONG',   color: '#dc2626', bg: '#fef2f2', border: '#fecaca' },
+                                skipped: { label: '—  SKIPPED', color: '#6b7280', bg: '#f3f4f6', border: '#e5e7eb' },
+                            }[status];
+
+                            const isMarked = bookmarked.has(q.id);
+
+                            return (
+                                <View key={q.id} style={{
+                                    backgroundColor: '#fff', borderRadius: 14, padding: 16, marginBottom: 12,
+                                    borderWidth: 1, borderColor: statusConfig.border,
+                                }}>
+                                    {/* Status badge + bookmark */}
+                                    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
+                                        <View style={{
+                                            paddingHorizontal: 9, paddingVertical: 4, borderRadius: 7,
+                                            backgroundColor: statusConfig.bg,
+                                        }}>
+                                            <Text style={{ fontSize: 11, fontWeight: '800', color: statusConfig.color, letterSpacing: 0.3 }}>
+                                                {statusConfig.label}
+                                            </Text>
+                                        </View>
+                                        {q.subject ? (
+                                            <Text style={{ fontSize: 10, color: '#9ca3af', marginLeft: 8, flex: 1 }} numberOfLines={1}>
+                                                {q.subject}{q.topic ? ` · ${q.topic}` : ''}
+                                            </Text>
+                                        ) : <View style={{ flex: 1 }} />}
+                                        <TouchableOpacity onPress={() => toggleBookmark(q)} style={{ padding: 4 }}>
+                                            <Ionicons
+                                                name={isMarked ? 'bookmark' : 'bookmark-outline'}
+                                                size={20}
+                                                color={isMarked ? COLORS.primary : '#9ca3af'}
+                                            />
+                                        </TouchableOpacity>
+                                    </View>
+
+                                    {/* Question text */}
+                                    <Text style={{ fontSize: 13, fontWeight: '600', color: '#111827', marginBottom: 10, lineHeight: 20 }}>
+                                        {idx + 1}. {q.question_text}
+                                    </Text>
+
+                                    {/* Options */}
+                                    {q.options.map((opt, i) => {
+                                        const isOptCorrect = !!opt.is_correct;
+                                        const isOptSelected = selIdx === i;
+                                        let bg = '#f9fafb', border = '#e5e7eb', textColor = '#374151';
+                                        if (isOptCorrect) { bg = '#f0fdf4'; border = '#22c55e'; textColor = '#15803d'; }
+                                        else if (isOptSelected) { bg = '#fef2f2'; border = '#ef4444'; textColor = '#dc2626'; }
+                                        return (
+                                            <View key={i} style={{
+                                                flexDirection: 'row', alignItems: 'flex-start',
+                                                backgroundColor: bg, borderWidth: 1, borderColor: border,
+                                                borderRadius: 8, paddingHorizontal: 10, paddingVertical: 8, marginBottom: 6,
+                                            }}>
+                                                <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#9ca3af', marginRight: 6, marginTop: 1 }}>
+                                                    {String.fromCharCode(65 + i)}.
+                                                </Text>
+                                                <Text style={{ fontSize: 12, color: textColor, flex: 1, lineHeight: 18, fontWeight: isOptCorrect || isOptSelected ? '600' : '400' }}>
+                                                    {opt.option_text}
+                                                </Text>
+                                                {isOptCorrect && <Ionicons name="checkmark-circle" size={16} color="#16a34a" style={{ marginLeft: 4, marginTop: 1 }} />}
+                                                {isOptSelected && !isOptCorrect && <Ionicons name="close-circle" size={16} color="#dc2626" style={{ marginLeft: 4, marginTop: 1 }} />}
+                                            </View>
+                                        );
+                                    })}
+
+                                    {/* Explanation */}
+                                    {q.explanation ? (
+                                        <View style={{
+                                            backgroundColor: '#eff6ff', borderRadius: 8, padding: 10, marginTop: 8,
+                                            borderWidth: 1, borderColor: '#bfdbfe',
+                                        }}>
+                                            {renderExplanationMobile(q.explanation, { fontSize: 12, color: '#1e40af', lineHeight: 18 })}
+                                        </View>
+                                    ) : null}
+                                    {q.explanation_svg ? (
+                                        <SvgXml xml={q.explanation_svg} width="100%" height={200} style={{ marginTop: 10 }} />
+                                    ) : null}
+                                </View>
+                            );
+                        })}
+                    </View>
                 </ScrollView>
             </SafeAreaView>
         );
@@ -321,7 +435,9 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                 <TouchableOpacity onPress={() => navigation.goBack()}>
                     <Ionicons name="close" size={24} color="#374151" />
                 </TouchableOpacity>
-                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#111827', flex: 1, textAlign: 'center', marginHorizontal: 8 }} numberOfLines={1}>{title}</Text>
+                <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#111827', flex: 1, textAlign: 'center', marginHorizontal: 8 }} numberOfLines={1}>
+                    {title}
+                </Text>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <View style={{
                         backgroundColor: timeLeft < 60 ? '#fee2e2' : '#f3f4f6',
@@ -346,20 +462,16 @@ export default function QuizSessionScreen({ navigation, route }: any) {
             </View>
 
             <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 80 }}>
-                {/* Question */}
                 <View style={{ backgroundColor: '#fff', borderRadius: 16, padding: 20, marginBottom: 16, borderWidth: 1, borderColor: '#f3f4f6' }}>
                     <Text style={{ fontSize: 15, fontWeight: '500', color: '#111827', lineHeight: 25 }}>
                         {currentQ.question_text}
                     </Text>
                 </View>
 
-                {/* Diagram */}
                 {currentQ.diagram_svg && (
-                    <SvgXml xml={currentQ.diagram_svg} width="100%" height={200}
-                        style={{ marginBottom: 16 }} />
+                    <SvgXml xml={currentQ.diagram_svg} width="100%" height={200} style={{ marginBottom: 16 }} />
                 )}
 
-                {/* Options */}
                 {currentQ.options.map((opt, i) => {
                     const isSelected = selectedAnswers[currentIdx] === i;
                     return (
@@ -369,8 +481,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                             activeOpacity={0.7}
                             style={{
                                 flexDirection: 'row', alignItems: 'flex-start',
-                                padding: 14, borderRadius: 12, marginBottom: 10,
-                                borderWidth: 2,
+                                padding: 14, borderRadius: 12, marginBottom: 10, borderWidth: 2,
                                 borderColor: isSelected ? COLORS.primary : '#e5e7eb',
                                 backgroundColor: isSelected ? '#fff7ed' : '#fff',
                             }}
@@ -403,8 +514,9 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                     disabled={currentIdx === 0}
                     style={{
                         flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
-                        paddingVertical: 12, backgroundColor: currentIdx === 0 ? '#f3f4f6' : '#fff', borderRadius: 12, marginRight: 8,
-                        borderWidth: 1, borderColor: '#e5e7eb', opacity: currentIdx === 0 ? 0.5 : 1,
+                        paddingVertical: 12, backgroundColor: currentIdx === 0 ? '#f3f4f6' : '#fff',
+                        borderRadius: 12, marginRight: 8, borderWidth: 1, borderColor: '#e5e7eb',
+                        opacity: currentIdx === 0 ? 0.5 : 1,
                     }}
                 >
                     <Ionicons name="chevron-back" size={16} color="#4b5563" />

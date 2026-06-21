@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, RefreshControl } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -28,7 +28,7 @@ export default function MyLearningScreen({ navigation }: any) {
                 PrivateModuleAPI.listMine().catch(() => ({ data: [] })),
                 AttemptAPI.list().catch(() => ({ data: [] })),
             ]);
-            setModules(modRes.data || []);
+            setModules(modRes.data?.modules || modRes.data || []);
             // most recent 5 attempts
             const all = attRes.data || [];
             setAttempts(all.slice(0, 5));
