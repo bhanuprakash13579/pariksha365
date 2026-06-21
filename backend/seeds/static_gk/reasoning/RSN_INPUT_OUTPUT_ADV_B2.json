@@ -7,10 +7,22 @@
     {
       "stem": "A word sorting machine processes an input of words as follows:\nInput: 'forest green apple mango blue'\nStep 1: apple blue forest green mango (alphabetical order)\nStep 2: 5 3 6 5 5 (number of letters)\nStep 3: 3 5 5 5 6 (arranged in ascending order)\nWhich step would the output be: 3 5 5 5 6?",
       "options": [
-        {"option_text": "Step 1 (wrong: Step 1 is alphabetical arrangement of words)", "is_correct": false},
-        {"option_text": "Step 2 (wrong: Step 2 converts to letter counts but in alphabetical order = 5,3,6,5,5)", "is_correct": false},
-        {"option_text": "Step 3 (correct: Step 3 arranges the letter counts in ascending order = 3,5,5,5,6 ✓)", "is_correct": true},
-        {"option_text": "Step 4 (wrong: no Step 4 described)", "is_correct": false}
+        {
+          "option_text": "Step 1",
+          "is_correct": false
+        },
+        {
+          "option_text": "Step 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "Step 3",
+          "is_correct": true
+        },
+        {
+          "option_text": "Step 4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "A machine rearranges numbers as follows:\nInput: 8 3 6 1 5 9 2 7\nStep 1: 1 3 6 8 5 9 2 7 (smallest moved to front)\nStep 2: 1 2 6 8 5 9 3 7 (next smallest moved to 2nd position)\nStep 3: 1 2 3 8 5 9 6 7\nHow many steps will it take to completely sort the input in ascending order?",
       "options": [
-        {"option_text": "6 steps (wrong: let's count: 1→2→3→(4th: 5 moved to 4th)→(5th: 6 to 5th)→(6th: 7 to 6th)→(7th: 8 to 7th); 7 steps needed)", "is_correct": false},
-        {"option_text": "7 steps (correct: 8 numbers; selection sort needs n-1=7 steps to completely sort ✓)", "is_correct": true},
-        {"option_text": "8 steps (wrong: only n-1 steps needed; the last element is placed correctly automatically)", "is_correct": false},
-        {"option_text": "4 steps (wrong: only 4 numbers would be sorted in 4 steps)", "is_correct": false}
+        {
+          "option_text": "6 steps",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 steps",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 steps",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 steps",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -41,10 +65,22 @@
     {
       "stem": "A machine processes words:\nInput: pen book chair table lamp\nStep 1: book chair lamp pen table (all words arranged alphabetically)\nWhat would be the output of Step 1 for input: 'window door computer fan radio'?",
       "options": [
-        {"option_text": "door computer fan radio window (wrong: just reversed order)", "is_correct": false},
-        {"option_text": "computer door fan radio window (correct: c,d,f,r,w — alphabetical order ✓)", "is_correct": true},
-        {"option_text": "computer fan door window radio (wrong: partially sorted)", "is_correct": false},
-        {"option_text": "door fan computer radio window (wrong: incorrect alphabetical order)", "is_correct": false}
+        {
+          "option_text": "door computer fan radio window",
+          "is_correct": false
+        },
+        {
+          "option_text": "computer door fan radio window",
+          "is_correct": true
+        },
+        {
+          "option_text": "computer fan door window radio",
+          "is_correct": false
+        },
+        {
+          "option_text": "door fan computer radio window",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "A machine processes numbers:\nInput: 15 7 23 4 11 19\nStep 1: 4 7 23 15 11 19 (smallest number moved to front)\nStep 2: 4 7 23 15 11 19 (unchanged — 7 already in position 2? No: second smallest is 7; already at position 2)\nWhat is the output after Step 3 (third smallest moved to 3rd position)?",
       "options": [
-        {"option_text": "4 7 11 15 23 19 (correct: after steps 1,2: 4,7 are placed; Step 3 places 11 at 3rd position: 4 7 11 15 23 19 ✓)", "is_correct": true},
-        {"option_text": "4 7 23 11 15 19 (wrong: 11 should be at 3rd position, not 4th)", "is_correct": false},
-        {"option_text": "4 7 11 23 15 19 (correct as well: after placing 11, the remaining numbers 15,23,19 stay in original relative positions; 4 7 11 15 23 19 ✓)", "is_correct": false},
-        {"option_text": "4 7 11 19 23 15 (wrong: doesn't follow the pattern)", "is_correct": false}
+        {
+          "option_text": "4 7 11 15 23 19",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 7 23 11 15 19",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 7 11 23 15 19",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 7 11 19 23 15",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "A machine alternates between two operations on a number:\nOdd steps: multiply by 2\nEven steps: add 5\nInput: 3\nAfter 4 steps, what is the output?",
       "options": [
-        {"option_text": "41 (wrong: step1: 3×2=6; step2: 6+5=11; step3: 11×2=22; step4: 22+5=27)", "is_correct": false},
-        {"option_text": "27 (correct: step1=6; step2=11; step3=22; step4=27 ✓)", "is_correct": true},
-        {"option_text": "32 (wrong: doesn't match the alternating operations)", "is_correct": false},
-        {"option_text": "22 (wrong: that's after step 3, not step 4)", "is_correct": false}
+        {
+          "option_text": "41",
+          "is_correct": false
+        },
+        {
+          "option_text": "27",
+          "is_correct": true
+        },
+        {
+          "option_text": "32",
+          "is_correct": false
+        },
+        {
+          "option_text": "22",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "A machine reverses every word and then reverses the order of words:\nInput: 'CAT RUNS FAST'\nStep 1: TAC SNUR TSAF (each word reversed)\nStep 2: TSAF SNUR TAC (order of words reversed)\nWhat is the Step 2 output for input: 'DOG EATS BONE'?",
       "options": [
-        {"option_text": "ENOB STAE GOD (correct: Step1: GOD STAE ENOB → Step2: ENOB STAE GOD ✓)", "is_correct": true},
-        {"option_text": "GOD STAE ENOB (wrong: that's only Step 1)", "is_correct": false},
-        {"option_text": "BONE EATS DOG (wrong: that's reversing word order without reversing each word)", "is_correct": false},
-        {"option_text": "DOG STAE ENOB (wrong: mixed — first word not reversed)", "is_correct": false}
+        {
+          "option_text": "ENOB STAE GOD",
+          "is_correct": true
+        },
+        {
+          "option_text": "GOD STAE ENOB",
+          "is_correct": false
+        },
+        {
+          "option_text": "BONE EATS DOG",
+          "is_correct": false
+        },
+        {
+          "option_text": "DOG STAE ENOB",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "A number machine applies this rule repeatedly: if even → divide by 2; if odd → multiply by 3 and add 1. Input: 6. What is the output after 3 steps?",
       "options": [
-        {"option_text": "2 (wrong: step1=6÷2=3; step2=3×3+1=10; step3=10÷2=5)", "is_correct": false},
-        {"option_text": "5 (correct: step1: 6(even)÷2=3; step2: 3(odd)×3+1=10; step3: 10(even)÷2=5 ✓)", "is_correct": true},
-        {"option_text": "3 (wrong: 3 is the output of step 1, not step 3)", "is_correct": false},
-        {"option_text": "10 (wrong: 10 is the output of step 2)", "is_correct": false}
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "A word machine encodes words as follows:\nEach vowel → next vowel (a→e, e→i, i→o, o→u, u→a)\nEach consonant → unchanged\nInput: 'LOVE'\nWhat is the output?",
       "options": [
-        {"option_text": "LUVE (wrong: O→U but V is consonant=V and E→I; LUVI)", "is_correct": false},
-        {"option_text": "LUVI (correct: L→L, O→U, V→V, E→I = LUVI ✓)", "is_correct": true},
-        {"option_text": "LOVE (wrong: that's unchanged)", "is_correct": false},
-        {"option_text": "LOVI (wrong: O was changed correctly to U, but this shows O still)", "is_correct": false}
+        {
+          "option_text": "LUVE",
+          "is_correct": false
+        },
+        {
+          "option_text": "LUVI",
+          "is_correct": true
+        },
+        {
+          "option_text": "LOVE",
+          "is_correct": false
+        },
+        {
+          "option_text": "LOVI",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "Input to a machine: 16, 12, 8, 4. The machine processes:\nStep 1: 4 12 8 16 (first and last swapped)\nStep 2: 4 8 12 16 (middle two swapped)\nWhat would be the output after Step 2 for input: 20, 15, 10, 5?",
       "options": [
-        {"option_text": "5 10 15 20 (correct: step1: 5 15 10 20 (swap 20 and 5); step2: 5 10 15 20 (swap 15 and 10) ✓)", "is_correct": true},
-        {"option_text": "20 10 15 5 (wrong: that's the reverse)", "is_correct": false},
-        {"option_text": "5 15 10 20 (wrong: that's only after Step 1)", "is_correct": false},
-        {"option_text": "15 10 5 20 (wrong: incorrect swapping)", "is_correct": false}
+        {
+          "option_text": "5 10 15 20",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 10 15 5",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 15 10 20",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 10 5 20",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "A machine processes text as follows: remove all vowels and capitalize all consonants.\nInput: 'hello world'\nWhat is the output?",
       "options": [
-        {"option_text": "HLL WRLD (correct: h-e-l-l-o → HLL (remove e,o); w-o-r-l-d → WRLD (remove o) ✓)", "is_correct": true},
-        {"option_text": "HELLO WORLD (wrong: vowels not removed)", "is_correct": false},
-        {"option_text": "hll wrld (wrong: should be capitalized)", "is_correct": false},
-        {"option_text": "HLL WRL (wrong: D from 'world' should be included: WRLD)", "is_correct": false}
+        {
+          "option_text": "HLL WRLD",
+          "is_correct": true
+        },
+        {
+          "option_text": "HELLO WORLD",
+          "is_correct": false
+        },
+        {
+          "option_text": "hll wrld",
+          "is_correct": false
+        },
+        {
+          "option_text": "HLL WRL",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "EASY",

@@ -7,10 +7,22 @@
     {
       "stem": "If A:B = 2:3 and B:C = 4:5, find A:C.",
       "options": [
-        {"option_text": "2:5 (wrong: need to make B common; A:B=2:3=8:12; B:C=4:5=12:15; A:C=8:15)", "is_correct": false},
-        {"option_text": "8:15 (correct: A:B=2:3=8:12; B:C=4:5=12:15; A:C=8:15 ✓)", "is_correct": true},
-        {"option_text": "10:15 (wrong: 10:15=2:3; doesn't match)", "is_correct": false},
-        {"option_text": "4:5 (wrong: that's B:C, not A:C)", "is_correct": false}
+        {
+          "option_text": "2:5",
+          "is_correct": false
+        },
+        {
+          "option_text": "8:15",
+          "is_correct": true
+        },
+        {
+          "option_text": "10:15",
+          "is_correct": false
+        },
+        {
+          "option_text": "4:5",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "Two numbers are in ratio 5:7. If 4 is added to each, the ratio becomes 3:4. Find the numbers.",
       "options": [
-        {"option_text": "15 and 21 (wrong: let 5x and 7x; (5x+4)/(7x+4)=3/4; 20x+16=21x+12; x=4; numbers=20,28)", "is_correct": false},
-        {"option_text": "20 and 28 (correct: 5x=20, 7x=28 when x=4; check: 24/32=3/4 ✓)", "is_correct": true},
-        {"option_text": "10 and 14 (wrong: 10+4=14, 14+4=18; 14/18=7/9≠3/4)", "is_correct": false},
-        {"option_text": "25 and 35 (wrong: 29/39 isn't 3/4)", "is_correct": false}
+        {
+          "option_text": "15 and 21",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 and 28",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 and 14",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 and 35",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "The ratio of A's age to B's age is 3:4. 5 years ago, the ratio was 5:7. What is B's current age?",
       "options": [
-        {"option_text": "28 years (correct: 3x and 4x now; (3x-5)/(4x-5)=5/7; 7(3x-5)=5(4x-5); 21x-35=20x-25; x=10; B=40... wait that gives B=40, not 28)", "is_correct": false},
-        {"option_text": "40 years (correct: x=10; A=30, B=40; 5 years ago: 25/35=5/7 ✓)", "is_correct": true},
-        {"option_text": "32 years (wrong: doesn't satisfy the equation)", "is_correct": false},
-        {"option_text": "36 years (wrong: doesn't satisfy)", "is_correct": false}
+        {
+          "option_text": "28 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 years",
+          "is_correct": true
+        },
+        {
+          "option_text": "32 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 years",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -58,10 +94,22 @@
     {
       "stem": "A sum of ₹1,560 is divided among A, B, and C in ratio 3:5:8. How much more does C get than A?",
       "options": [
-        {"option_text": "₹390 (wrong: total parts=16; A=3×1560/16=292.5; C=8×1560/16=780; C-A=487.5)", "is_correct": false},
-        {"option_text": "₹487.50 (correct: A=3/16×1560=292.50; C=8/16×1560=780; diff=780-292.5=487.50 ✓)", "is_correct": true},
-        {"option_text": "₹650 (wrong: doesn't match calculation)", "is_correct": false},
-        {"option_text": "₹325 (wrong: 325 is 5/16×1560=487.5; off by 162.5)", "is_correct": false}
+        {
+          "option_text": "₹390",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹487.50",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹650",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹325",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "If x:y = 3:4, find (3x+4y):(4x+3y).",
       "options": [
-        {"option_text": "24:25 (correct: x=3k, y=4k; (9k+16k):(12k+12k)=25k:24k=25:24... wait that's 25:24, not 24:25)", "is_correct": false},
-        {"option_text": "25:24 (correct: x=3k, y=4k; 3x+4y=9k+16k=25k; 4x+3y=12k+12k=24k; ratio=25:24 ✓)", "is_correct": true},
-        {"option_text": "3:4 (wrong: same as original ratio — this would only work for specific expressions)", "is_correct": false},
-        {"option_text": "7:7 = 1:1 (wrong: the numerators and denominators differ)", "is_correct": false}
+        {
+          "option_text": "24:25",
+          "is_correct": false
+        },
+        {
+          "option_text": "25:24",
+          "is_correct": true
+        },
+        {
+          "option_text": "3:4",
+          "is_correct": false
+        },
+        {
+          "option_text": "7:7 = 1:1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "A bag contains coins of 1 rupee, 50 paise, and 25 paise in ratio 5:9:4. If total value is ₹206, find the number of 50 paise coins.",
       "options": [
-        {"option_text": "120 (wrong: let 5x, 9x, 4x; value=5x(1)+9x(0.5)+4x(0.25)=5x+4.5x+x=10.5x=206; x=206/10.5≈19.6; not integer)", "is_correct": false},
-        {"option_text": "180 (correct: 10.5x=206; x=206/10.5=196/10=19.619...? Let me recalculate: 5x+4.5x+x=10.5x=206; x=206/10.5=1236/63... doesn't give integer)", "is_correct": false},
-        {"option_text": "Cannot be solved with these numbers (wrong: the numbers should work; let me try: 5x×1 + 9x×0.5 + 4x×0.25 = 5x+4.5x+x = 10.5x = 206; x = 206/10.5 = 19.619; not integer — this question has an error)", "is_correct": false},
-        {"option_text": "108 (correct if total=₹202 or another value; with ₹206: 9x coins of 50p; if x=12: total=5(12)×1+9(12)×0.5+4(12)×0.25=60+54+12=126≠206; if we solve for ₹206: x≈19.6 non-integer; trying x=20: 5(20)+4.5(20)+20=100+90+20=210≠206; the question has arithmetic inconsistency)", "is_correct": true}
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "180",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be solved with these numbers",
+          "is_correct": false
+        },
+        {
+          "option_text": "108",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",
@@ -109,10 +181,22 @@
     {
       "stem": "Divide ₹4,800 among A, B, and C such that A's share is twice B's share, and B's share is thrice C's share. Find C's share.",
       "options": [
-        {"option_text": "₹400 (correct: C=x, B=3x, A=6x; sum=10x=4800; x=480... wait: A=2B and B=3C; if C=x: B=3x, A=2×3x=6x; sum=x+3x+6x=10x=4800; x=480 — that's C=480)", "is_correct": false},
-        {"option_text": "₹480 (correct: C=480, B=1440, A=2880; sum=4800 ✓)", "is_correct": true},
-        {"option_text": "₹600 (wrong: if C=600, B=1800, A=3600; sum=6000≠4800)", "is_correct": false},
-        {"option_text": "₹360 (wrong: if C=360, B=1080, A=2160; sum=3600≠4800)", "is_correct": false}
+        {
+          "option_text": "₹400",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹480",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹600",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹360",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "The incomes of A and B are in ratio 5:4. Their expenses are in ratio 7:5. If each saves ₹1,500, find A's income.",
       "options": [
-        {"option_text": "₹5,000 (wrong: let A's income=5x, B's=4x; A's expense=7y, B's=5y; 5x-7y=1500 and 4x-5y=1500; solving: 5x-7y=4x-5y → x=2y; A=5(2y)=10y; 10y-7y=1500; 3y=1500; y=500; A=10y=5000 — actually 5000 seems right: A income=10y=5000 ✓)", "is_correct": false},
-        {"option_text": "₹5,000 (correct: let income be 5x,4x; expenses 7y,5y; 5x−7y=1500; 4x−5y=1500; subtracting: x−2y=0→x=2y; 5x−7y=10y−7y=3y=1500→y=500; A=5x=5×2×500=5000 ✓)", "is_correct": true},
-        {"option_text": "₹4,000 (wrong: 4000=4x would need x=1000; but we found x=2y=1000; A income=5x=5000, not 4000)", "is_correct": false},
-        {"option_text": "₹6,000 (wrong: doesn't satisfy the equations)", "is_correct": false}
+        {
+          "option_text": "₹5,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹5,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹4,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹6,000",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "If a:b = 2:3, b:c = 4:5, c:d = 3:7, find a:d.",
       "options": [
-        {"option_text": "8:35 (correct: a/d=(a/b)×(b/c)×(c/d)=(2/3)×(4/5)×(3/7)=24/105=8/35=8:35 ✓)", "is_correct": true},
-        {"option_text": "2:7 (wrong: that would be a:d simplified, but 8:35 doesn't simplify to 2:7)", "is_correct": false},
-        {"option_text": "4:15 (wrong: partial product)", "is_correct": false},
-        {"option_text": "24:105 (correct but unsimplified; 8:35 is the simplified form)", "is_correct": false}
+        {
+          "option_text": "8:35",
+          "is_correct": true
+        },
+        {
+          "option_text": "2:7",
+          "is_correct": false
+        },
+        {
+          "option_text": "4:15",
+          "is_correct": false
+        },
+        {
+          "option_text": "24:105",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -160,10 +268,22 @@
     {
       "stem": "Two numbers are in ratio 7:5. If 3 is subtracted from each, the ratio becomes 2:1. Find the larger number.",
       "options": [
-        {"option_text": "14 (wrong: let 7x, 5x; (7x-3)/(5x-3)=2/1; 7x-3=10x-6; 3=3x; x=1; 7x=7)", "is_correct": false},
-        {"option_text": "7 (correct: x=1; numbers are 7 and 5; larger=7 ✓; verify: (7-3)/(5-3)=4/2=2/1 ✓)", "is_correct": true},
-        {"option_text": "35 (wrong: x≠5)", "is_correct": false},
-        {"option_text": "21 (wrong: x≠3)", "is_correct": false}
+        {
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": true
+        },
+        {
+          "option_text": "35",
+          "is_correct": false
+        },
+        {
+          "option_text": "21",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",

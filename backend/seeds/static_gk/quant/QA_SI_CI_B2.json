@@ -7,10 +7,22 @@
     {
       "stem": "What is the simple interest on ₹8,000 at 6% per annum for 3 years?",
       "options": [
-        {"option_text": "₹1,200 (wrong: SI = 8000×6×3/100 = 1440, not 1200)", "is_correct": false},
-        {"option_text": "₹1,440 (correct: SI = P×R×T/100 = 8000×6×3/100 = 144000/100 = ₹1,440 ✓)", "is_correct": true},
-        {"option_text": "₹1,600 (wrong)", "is_correct": false},
-        {"option_text": "₹1,800 (wrong: 8000×6×3.75/100 would give 1800 — not for 3 years)", "is_correct": false}
+        {
+          "option_text": "₹1,200",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,440",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1,600",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,800",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "A sum doubles itself in 10 years under simple interest. What is the rate of interest per annum?",
       "options": [
-        {"option_text": "5% (wrong: if sum doubles in 20 years at 5%: SI=P, so P×R×20/100=P → R=5% for 20 years; for 10 years: P×R×10/100=P → R=10%)", "is_correct": false},
-        {"option_text": "10% (correct: sum doubles means SI = P; P×R×10/100 = P → 10R/100 = 1 → R = 10% ✓)", "is_correct": true},
-        {"option_text": "20% (wrong: 20% for 10 years would triple the sum, not double)", "is_correct": false},
-        {"option_text": "8% (wrong: 8% for 10 years = 80% gain, not 100%)", "is_correct": false}
+        {
+          "option_text": "5%",
+          "is_correct": false
+        },
+        {
+          "option_text": "10%",
+          "is_correct": true
+        },
+        {
+          "option_text": "20%",
+          "is_correct": false
+        },
+        {
+          "option_text": "8%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "The difference between the compound interest and simple interest on ₹10,000 at 10% per annum for 2 years is:",
       "options": [
-        {"option_text": "₹0 (there is always a difference for CI vs SI from year 2 onwards)", "is_correct": false},
-        {"option_text": "₹100 (correct: CI−SI for 2 years = P(R/100)² = 10000×(0.1)² = 10000×0.01 = ₹100 ✓)", "is_correct": true},
-        {"option_text": "₹200 (wrong: that would require a different rate or period)", "is_correct": false},
-        {"option_text": "₹150 (wrong)", "is_correct": false}
+        {
+          "option_text": "₹0",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹100",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹200",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹150",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "Find the compound interest on ₹5,000 for 2 years at 8% per annum compounded annually.",
       "options": [
-        {"option_text": "₹800 (that's the SI = 5000×8×2/100 = 800, not CI)", "is_correct": false},
-        {"option_text": "₹832 (correct: A = 5000×(1.08)² = 5000×1.1664 = ₹5,832; CI = 5832−5000 = ₹832 ✓)", "is_correct": true},
-        {"option_text": "₹900 (wrong)", "is_correct": false},
-        {"option_text": "₹864 (wrong: 5000×8×2.16/100 isn't the formula)", "is_correct": false}
+        {
+          "option_text": "₹800",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹832",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹900",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹864",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "At what rate of simple interest will ₹4,500 amount to ₹5,850 in 4 years?",
       "options": [
-        {"option_text": "6% (wrong: SI = 5850−4500=1350; R = 100×1350/(4500×4) = 135000/18000 = 7.5%)", "is_correct": false},
-        {"option_text": "7.5% (correct: SI = 5850−4500 = ₹1,350; R = 100×SI/(P×T) = 100×1350/(4500×4) = 7.5% ✓)", "is_correct": true},
-        {"option_text": "8% (wrong: 8% for 4 years = 32% of 4500 = 1440, not 1350)", "is_correct": false},
-        {"option_text": "9% (wrong: 9% for 4 years = 36% of 4500 = 1620)", "is_correct": false}
+        {
+          "option_text": "6%",
+          "is_correct": false
+        },
+        {
+          "option_text": "7.5%",
+          "is_correct": true
+        },
+        {
+          "option_text": "8%",
+          "is_correct": false
+        },
+        {
+          "option_text": "9%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "The compound interest on a sum for 3 years at 10% per annum is ₹3,310. What is the principal?",
       "options": [
-        {"option_text": "₹10,000 (correct: A = P(1.1)³ = P×1.331; CI = 0.331P = 3310; P = 3310/0.331 = ₹10,000 ✓)", "is_correct": true},
-        {"option_text": "₹9,000 (wrong: CI at 10% for 3 years on 9000 = 9000×0.331 = 2979, not 3310)", "is_correct": false},
-        {"option_text": "₹8,000 (wrong: CI = 8000×0.331 = 2648)", "is_correct": false},
-        {"option_text": "₹12,000 (wrong: CI = 12000×0.331 = 3972, not 3310)", "is_correct": false}
+        {
+          "option_text": "₹10,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹9,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹8,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹12,000",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -109,10 +181,22 @@
     {
       "stem": "A sum of money is invested at 12% per annum simple interest. After how many years will the interest be 60% of the principal?",
       "options": [
-        {"option_text": "4 years (at 12%: 4 years = 48% — not 60%)", "is_correct": false},
-        {"option_text": "5 years (correct: SI = 60% of P → P×12×T/100 = 0.6P → 12T = 60 → T = 5 years ✓)", "is_correct": true},
-        {"option_text": "6 years (at 12%: 6 years = 72% — too much)", "is_correct": false},
-        {"option_text": "7.2 years (wrong: clean answer is 5 years)", "is_correct": false}
+        {
+          "option_text": "4 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 years",
+          "is_correct": true
+        },
+        {
+          "option_text": "6 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "7.2 years",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "The simple interest on a sum for 5 years at 10% is ₹2,500. What will be the compound interest on the same sum for 2 years at 10%?",
       "options": [
-        {"option_text": "₹1,000 (that would be SI for 2 years, not CI)", "is_correct": false},
-        {"option_text": "₹1,050 (correct: P = 100×2500/(5×10) = ₹5,000; CI for 2 years at 10% = 5000×0.21 = ₹1,050 ✓)", "is_correct": true},
-        {"option_text": "₹1,100 (wrong: CI on 5000 at 10% for 2y = 5000×(1.21−1) = 1050)", "is_correct": false},
-        {"option_text": "₹1,200 (wrong)", "is_correct": false}
+        {
+          "option_text": "₹1,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,050",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1,100",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,200",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "Two equal sums are lent — one at 8% per annum SI for 4 years, the other at 10% per annum SI for 3 years. The difference in interest is ₹240. What is each sum?",
       "options": [
-        {"option_text": "₹2,000 (wrong: interest1=P×0.32, interest2=P×0.30; diff=0.02P=240 → P=12000)", "is_correct": false},
-        {"option_text": "₹6,000 (wrong: 0.02×6000=120, not 240)", "is_correct": false},
-        {"option_text": "₹12,000 (correct: SI1=P×8×4/100=0.32P; SI2=P×10×3/100=0.30P; diff=0.02P=240; P=12000 ✓)", "is_correct": true},
-        {"option_text": "₹8,000 (wrong: 0.02×8000=160, not 240)", "is_correct": false}
+        {
+          "option_text": "₹2,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹6,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹12,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹8,000",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -160,10 +268,22 @@
     {
       "stem": "₹20,000 is invested at compound interest. In how many years will it amount to ₹24,200 at 10% per annum compounded annually?",
       "options": [
-        {"option_text": "1 year (at 10%: 20000×1.1=22000, not 24200)", "is_correct": false},
-        {"option_text": "2 years (correct: 20000×(1.1)²=20000×1.21=₹24,200 ✓)", "is_correct": true},
-        {"option_text": "3 years (20000×1.331=26620, not 24200)", "is_correct": false},
-        {"option_text": "4 years (20000×1.4641=29282)", "is_correct": false}
+        {
+          "option_text": "1 year",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 years",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 years",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",

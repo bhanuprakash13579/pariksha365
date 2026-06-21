@@ -7,10 +7,22 @@
     {
       "stem": "An article marked ₹500 is sold at a 20% discount. Find the selling price.",
       "options": [
-        {"option_text": "₹380 (wrong: 500×0.8=400)", "is_correct": false},
-        {"option_text": "₹400 (correct: SP = MP×(1-discount%) = 500×0.8 = ₹400 ✓)", "is_correct": true},
-        {"option_text": "₹420 (wrong: 500×0.84=420; that's a 16% discount)", "is_correct": false},
-        {"option_text": "₹450 (wrong: 500×0.9=450; that's a 10% discount)", "is_correct": false}
+        {
+          "option_text": "₹380",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹400",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹420",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹450",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "If the marked price is ₹1,200 and the selling price is ₹900, find the discount percentage.",
       "options": [
-        {"option_text": "20% (wrong: 1200×0.2=240; SP=960≠900)", "is_correct": false},
-        {"option_text": "25% (correct: discount=(1200-900)/1200×100=300/1200×100=25% ✓)", "is_correct": true},
-        {"option_text": "30% (wrong: 30% of 1200=360; SP=840≠900)", "is_correct": false},
-        {"option_text": "15% (wrong: 15% of 1200=180; SP=1020≠900)", "is_correct": false}
+        {
+          "option_text": "20%",
+          "is_correct": false
+        },
+        {
+          "option_text": "25%",
+          "is_correct": true
+        },
+        {
+          "option_text": "30%",
+          "is_correct": false
+        },
+        {
+          "option_text": "15%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "A trader marks his goods at 40% above cost and allows a 25% discount. What is his profit or loss percentage?",
       "options": [
-        {"option_text": "5% profit (correct: CP=100; MP=140; SP=140×0.75=105; profit=5% ✓)", "is_correct": true},
-        {"option_text": "15% profit (wrong: 140×0.85=119; that's 15% discount giving 19% profit)", "is_correct": false},
-        {"option_text": "5% loss (wrong: SP=105>CP=100; it's a profit)", "is_correct": false},
-        {"option_text": "No profit no loss (wrong: SP=105, CP=100; profit of 5%)", "is_correct": false}
+        {
+          "option_text": "5% profit",
+          "is_correct": true
+        },
+        {
+          "option_text": "15% profit",
+          "is_correct": false
+        },
+        {
+          "option_text": "5% loss",
+          "is_correct": false
+        },
+        {
+          "option_text": "No profit no loss",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "An item costing ₹600 is marked at ₹900. Find the discount% that gives exactly 10% profit.",
       "options": [
-        {"option_text": "26.67% (wrong: SP=600×1.1=660; discount=(900-660)/900×100=240/900×100=26.67% ✓ — actually this is correct!)", "is_correct": true},
-        {"option_text": "25% (wrong: 25% discount: SP=675; profit=75/600=12.5%, not 10%)", "is_correct": false},
-        {"option_text": "30% (wrong: SP=630; profit=30/600=5%, not 10%)", "is_correct": false},
-        {"option_text": "20% (wrong: SP=720; profit=120/600=20%, not 10%)", "is_correct": false}
+        {
+          "option_text": "26.67%",
+          "is_correct": true
+        },
+        {
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "option_text": "30%",
+          "is_correct": false
+        },
+        {
+          "option_text": "20%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "Successive discounts of 10% and 20% are equivalent to a single discount of:",
       "options": [
-        {"option_text": "30% (wrong: successive discounts are NOT simply added)", "is_correct": false},
-        {"option_text": "28% (correct: 1st: 10% discount leaves 90%; 2nd: 20% of remaining → 90%×80%=72%; total discount=100-72=28% ✓)", "is_correct": true},
-        {"option_text": "25% (wrong: doesn't match)", "is_correct": false},
-        {"option_text": "32% (wrong: doesn't match)", "is_correct": false}
+        {
+          "option_text": "30%",
+          "is_correct": false
+        },
+        {
+          "option_text": "28%",
+          "is_correct": true
+        },
+        {
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "option_text": "32%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "A shopkeeper offers a discount of 10% on marked price. If the article costs ₹360 and he wants a 20% profit, what should be the marked price?",
       "options": [
-        {"option_text": "₹480 (correct: SP=360×1.2=432; after 10% discount, SP=MP×0.9=432; MP=432/0.9=480 ✓)", "is_correct": true},
-        {"option_text": "₹450 (wrong: 450×0.9=405≠432)", "is_correct": false},
-        {"option_text": "₹500 (wrong: 500×0.9=450≠432)", "is_correct": false},
-        {"option_text": "₹432 (wrong: that's the SP, not the MP)", "is_correct": false}
+        {
+          "option_text": "₹480",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹450",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹500",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹432",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "A trader gives 4 articles free on purchase of 12 articles. Find the effective discount percentage.",
       "options": [
-        {"option_text": "25% (wrong: buys 16, gets 12 → discount=4/16=25%? Actually: pays for 12 and gets 16... wait: 'buys 12 and gets 4 free' = gets 16 for price of 12; discount=4/16×100=25%)", "is_correct": false},
-        {"option_text": "33.33% (wrong: that's 4 free for every 8 paid)", "is_correct": false},
-        {"option_text": "25% (correct: pays for 12, gets 16; effective discount=4/16×100=25% ✓)", "is_correct": true},
-        {"option_text": "20% (wrong: 20% would be 3 free for 12 paid = 3/15=20%)", "is_correct": false}
+        {
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "option_text": "33.33%",
+          "is_correct": false
+        },
+        {
+          "option_text": "25%",
+          "is_correct": true
+        },
+        {
+          "option_text": "20%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "A television is listed at ₹30,000 with a 10% trade discount and then a 5% cash discount. Find the final price.",
       "options": [
-        {"option_text": "₹24,000 (wrong: 30000×0.9×0.95=25650, not 24000)", "is_correct": false},
-        {"option_text": "₹25,650 (correct: 30000×0.9=27000; 27000×0.95=25650 ✓)", "is_correct": true},
-        {"option_text": "₹25,500 (wrong: close but 30000×0.85=25500; that's one 15% discount, not successive)", "is_correct": false},
-        {"option_text": "₹26,000 (wrong: doesn't match)", "is_correct": false}
+        {
+          "option_text": "₹24,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹25,650",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹25,500",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹26,000",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "What should be the marked price of an article costing ₹840 to make a 25% profit after a 16% discount?",
       "options": [
-        {"option_text": "₹1,200 (wrong: MP×0.84=840×1.25=1050; MP=1050/0.84=1250, not 1200)", "is_correct": false},
-        {"option_text": "₹1,250 (correct: SP=840×1.25=1050; MP×(1-0.16)=1050; MP=1050/0.84=1250 ✓)", "is_correct": true},
-        {"option_text": "₹1,000 (wrong: 1000×0.84=840; profit=840-840=0%, not 25%)", "is_correct": false},
-        {"option_text": "₹1,100 (wrong: 1100×0.84=924; profit=(924-840)/840=10%, not 25%)", "is_correct": false}
+        {
+          "option_text": "₹1,200",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,250",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,100",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -160,10 +268,22 @@
     {
       "stem": "A shop offers 3 items for ₹80. How much would a customer pay for 12 items? (Same offer applies.)",
       "options": [
-        {"option_text": "₹280 (wrong: 12/3=4 sets; 4×80=320)", "is_correct": false},
-        {"option_text": "₹320 (correct: 12 items = 4 sets of 3; each set ₹80; 4×80=₹320 ✓)", "is_correct": true},
-        {"option_text": "₹360 (wrong: doesn't match 4×80)", "is_correct": false},
-        {"option_text": "₹240 (wrong: 3×80=240; only covers 9 items)", "is_correct": false}
+        {
+          "option_text": "₹280",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹320",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹360",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹240",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",

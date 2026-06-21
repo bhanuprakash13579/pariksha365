@@ -7,10 +7,22 @@
     {
       "stem": "What is the angle between the minute and hour hands of a clock at 3:00?",
       "options": [
-        {"option_text": "60° (wrong: at 3:00, hour hand is at 90°, minute hand at 0°; angle=90°)", "is_correct": false},
-        {"option_text": "90° (correct: hour hand at 3 (90° from 12); minute hand at 12 (0°); angle=90° ✓)", "is_correct": true},
-        {"option_text": "180° (the hands are opposite each other at 6:00, not 3:00)", "is_correct": false},
-        {"option_text": "45° (wrong)", "is_correct": false}
+        {
+          "option_text": "60°",
+          "is_correct": false
+        },
+        {
+          "option_text": "90°",
+          "is_correct": true
+        },
+        {
+          "option_text": "180°",
+          "is_correct": false
+        },
+        {
+          "option_text": "45°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "At what time between 4 and 5 o'clock are the hands of a clock together?",
       "options": [
-        {"option_text": "4:20 (wrong: hands together at 4:21 9/11 minutes)", "is_correct": false},
-        {"option_text": "4:21 9/11 minutes (correct: formula: (60×H)/11 minutes past H; H=4: 60×4/11=240/11=21 9/11 minutes past 4 ✓)", "is_correct": true},
-        {"option_text": "4:22 (wrong: it's 21 9/11, not 22)", "is_correct": false},
-        {"option_text": "4:24 (wrong)", "is_correct": false}
+        {
+          "option_text": "4:20",
+          "is_correct": false
+        },
+        {
+          "option_text": "4:21 9/11 minutes",
+          "is_correct": true
+        },
+        {
+          "option_text": "4:22",
+          "is_correct": false
+        },
+        {
+          "option_text": "4:24",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -41,10 +65,22 @@
     {
       "stem": "A clock loses 5 minutes every hour. If it shows 10:00 AM on Monday, what will it show at 10:00 AM the next day (Tuesday)?",
       "options": [
-        {"option_text": "7:40 AM (correct: 24 hours × 5 min/hr = 120 min lost = 2 hours; clock shows 10:00−2:00=8:00 AM — wait: let me recalculate: loses 5 min per hour; in 24 hours: 5×24=120 min=2 hours lost; actual time Tuesday 10AM, clock shows 10:00−2:00=8:00 AM)", "is_correct": false},
-        {"option_text": "8:00 AM (correct: clock loses 5 min/hr × 24 hrs = 120 min = 2 hours; so when actual time is 10 AM Tuesday, clock reads 8 AM ✓)", "is_correct": true},
-        {"option_text": "8:30 AM (wrong: 120 min loss = 2 hr, not 1.5 hr)", "is_correct": false},
-        {"option_text": "10:00 AM (wrong: clock doesn't lose any time — contradicts premise)", "is_correct": false}
+        {
+          "option_text": "7:40 AM",
+          "is_correct": false
+        },
+        {
+          "option_text": "8:00 AM",
+          "is_correct": true
+        },
+        {
+          "option_text": "8:30 AM",
+          "is_correct": false
+        },
+        {
+          "option_text": "10:00 AM",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "What is the angle between the hands of a clock at 6:30?",
       "options": [
-        {"option_text": "0° (hands are NOT together at 6:30)", "is_correct": false},
-        {"option_text": "15° (correct: at 6:00 angle=180°; in 30 min, hour hand moves 30×0.5=15°; minute hand moves 30×6=180° (now at 6); angle=180−(180−15)=15° ✓)", "is_correct": true},
-        {"option_text": "30° (wrong)", "is_correct": false},
-        {"option_text": "180° (that's the angle at exactly 6:00)", "is_correct": false}
+        {
+          "option_text": "0°",
+          "is_correct": false
+        },
+        {
+          "option_text": "15°",
+          "is_correct": true
+        },
+        {
+          "option_text": "30°",
+          "is_correct": false
+        },
+        {
+          "option_text": "180°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "If January 1, 2024 is a Monday, what day is February 1, 2024?",
       "options": [
-        {"option_text": "Monday (wrong: January has 31 days; 31 mod 7=3; Monday+3=Thursday)", "is_correct": false},
-        {"option_text": "Thursday (correct: January has 31 days; 31=4×7+3; so 3 odd days; Monday+3=Thursday ✓)", "is_correct": true},
-        {"option_text": "Wednesday (wrong: Monday+2=Wednesday — would need 30 days in January)", "is_correct": false},
-        {"option_text": "Friday (Monday+4=Friday — would need 32 days)", "is_correct": false}
+        {
+          "option_text": "Monday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thursday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Wednesday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Friday",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "How many times do the hands of a clock coincide in a day (24 hours)?",
       "options": [
-        {"option_text": "24 (once per hour — wrong; they don't coincide exactly once per hour)", "is_correct": false},
-        {"option_text": "22 (correct: hands coincide 11 times in 12 hours, so 22 times in 24 hours ✓)", "is_correct": true},
-        {"option_text": "44 (wrong: that would be 44 in 24 hours — far too many)", "is_correct": false},
-        {"option_text": "12 (that's for 12 hours, and even then it's 11 not 12)", "is_correct": false}
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "22",
+          "is_correct": true
+        },
+        {
+          "option_text": "44",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -109,10 +181,22 @@
     {
       "stem": "What is the angle between the clock hands at 9:15?",
       "options": [
-        {"option_text": "90° (at 9:00, angle=270° or 90° reflex; at 9:15 hands have moved)", "is_correct": false},
-        {"option_text": "172.5° (correct: minute hand at 15×6=90°; hour hand at 9×30+15×0.5=270+7.5=277.5°; angle=277.5−90=187.5°; smaller angle=360−187.5=172.5° ✓)", "is_correct": true},
-        {"option_text": "150° (wrong)", "is_correct": false},
-        {"option_text": "180° (wrong: that's at exactly 6:00 or 12:30)", "is_correct": false}
+        {
+          "option_text": "90°",
+          "is_correct": false
+        },
+        {
+          "option_text": "172.5°",
+          "is_correct": true
+        },
+        {
+          "option_text": "150°",
+          "is_correct": false
+        },
+        {
+          "option_text": "180°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "If today is Wednesday, what day will it be 100 days from now?",
       "options": [
-        {"option_text": "Friday (correct: 100 = 14×7+2; 2 odd days; Wednesday+2=Friday ✓)", "is_correct": true},
-        {"option_text": "Saturday (wrong: Wednesday+3=Saturday — would need 101 days)", "is_correct": false},
-        {"option_text": "Thursday (Wednesday+1=Thursday — only 1 odd day)", "is_correct": false},
-        {"option_text": "Monday (Wednesday+5=Monday — wrong)", "is_correct": false}
+        {
+          "option_text": "Friday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Saturday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thursday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Monday",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "A watch shows 8:30. What time does it show in a mirror?",
       "options": [
-        {"option_text": "8:30 (mirror reflection doesn't show the same time)", "is_correct": false},
-        {"option_text": "3:30 (correct: mirror image of a clock: subtract original time from 11:60; 11:60−8:30=3:30 ✓)", "is_correct": true},
-        {"option_text": "5:30 (wrong)", "is_correct": false},
-        {"option_text": "4:30 (wrong)", "is_correct": false}
+        {
+          "option_text": "8:30",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:30",
+          "is_correct": true
+        },
+        {
+          "option_text": "5:30",
+          "is_correct": false
+        },
+        {
+          "option_text": "4:30",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "The year 2024 is a leap year. How many Sundays does it have?",
       "options": [
-        {"option_text": "52 (all years have at least 52 Sundays; 2024 is a leap year — need to check odd days to see if 52 or 53)", "is_correct": false},
-        {"option_text": "53 (correct: 2024 is a leap year with 366 days = 52 weeks + 2 odd days; if Jan 1 is Monday, Jan 1 and Jan 2 are the odd days — depends on start day; typically leap year with Jan 1 as a specific day can have 53 Sundays)", "is_correct": false},
-        {"option_text": "52 or 53 depending on which day the year starts (correct: leap year has 2 odd days; if those 2 odd days include Sunday, then 53 Sundays; otherwise 52 ✓)", "is_correct": true},
-        {"option_text": "54 (impossible: even leap years can't have 54 Sundays)", "is_correct": false}
+        {
+          "option_text": "52",
+          "is_correct": false
+        },
+        {
+          "option_text": "53",
+          "is_correct": false
+        },
+        {
+          "option_text": "52 or 53 depending on which day the year starts",
+          "is_correct": true
+        },
+        {
+          "option_text": "54",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",

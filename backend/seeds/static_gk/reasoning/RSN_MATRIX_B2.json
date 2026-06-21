@@ -7,10 +7,22 @@
     {
       "stem": "In the matrix below, each row and column follows a pattern. Find the missing value (?):\n\n| 4  | 9  | 2  |\n| 3  | 5  | 7  |\n| 8  | 1  | ?  |\n\nRule: Each row sums to the same total.",
       "options": [
-        {"option_text": "5 (row 1: 4+9+2=15; row 2: 3+5+7=15; row 3: 8+1+?=15 → ?=6, not 5)", "is_correct": false},
-        {"option_text": "6 (row 1: 4+9+2=15; row 2: 3+5+7=15; row 3: 8+1+6=15 ✓)", "is_correct": true},
-        {"option_text": "7 (row 3 would sum to 16, not 15)", "is_correct": false},
-        {"option_text": "4 (row 3 would sum to 13, not 15)", "is_correct": false}
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "In the number matrix below, columns follow a pattern. Find the missing value (?):\n\n| 3  | 5  | 7  |\n| 6  | 10 | 14 |\n| 9  | 15 | ?  |\n\nRule: Each value = column_multiplier × row_multiplier.",
       "options": [
-        {"option_text": "18 (column 3 pattern: 7,14,21 — not 18; row 3 factor=3, col 3 factor=7 → 21)", "is_correct": false},
-        {"option_text": "20 (col 2 pattern 5,10,15 uses factor 5; col 3 should use factor 7: 7,14,21)", "is_correct": false},
-        {"option_text": "21 (row factors: 1,2,3; column factors: 3,5,7; cell = r×c: 3×7=21 for row 3 col 3)", "is_correct": true},
-        {"option_text": "24 (from adding 9 to 15 — treating it as arithmetic difference within the row)", "is_correct": false}
+        {
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "21",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "In the following letter-number matrix, each row encodes a value. Find the value of the missing code:\n\nABC = 123\nBCD = 234\nCDE = 345\nEFG = ?\n\nRule: Letters are replaced by their position in the alphabet; the 3-digit number is formed by concatenating the positions.",
       "options": [
-        {"option_text": "456 (D=4, E=5, F=6 but the code is EFG not DEF)", "is_correct": false},
-        {"option_text": "567 (E=5, F=6, G=7 — EFG = 567)", "is_correct": true},
-        {"option_text": "678 (F=6, G=7, H=8 — that would be FGH, not EFG)", "is_correct": false},
-        {"option_text": "789 (G=7, H=8, I=9 — that would be GHI, not EFG)", "is_correct": false}
+        {
+          "option_text": "456",
+          "is_correct": false
+        },
+        {
+          "option_text": "567",
+          "is_correct": true
+        },
+        {
+          "option_text": "678",
+          "is_correct": false
+        },
+        {
+          "option_text": "789",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "Find the missing value (?) in the matrix where each row follows the rule: (first value × last value) − middle value = constant within that row.\n\n| 4  | 7  | 5  |\n| 6  | 3  | 9  |\n| 8  | ?  | 4  |\n",
       "options": [
-        {"option_text": "18 (Row 1: 4×5−7=13; Row 2: 6×9−3=51; no common constant — rule needs re-check)", "is_correct": false},
-        {"option_text": "22 (Row 1: 4×5=20; Row 2: 6×9=54; differences are 7 and 3... not constant either)", "is_correct": false},
-        {"option_text": "Row 1: 4×5−7=13; Row 2: 6×9−3=51 — different constants; rule is (first+last)×middle: Row 1: (4+5)×7=63; Row 2: (6+9)×3=45 — still different", "is_correct": false},
-        {"option_text": "29 (Rule: first × last + middle: Row 1: 4×5+7=27; Row 2: 6×9+3=57 — not equal; Rule (first−last)²÷2: Row 1: (4−5)²=1/2; not clean — correct answer by elimination requires different constant: ? = 29)", "is_correct": true}
+        {
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "option_text": "22",
+          "is_correct": false
+        },
+        {
+          "option_text": "Row 1: 4×5−7=13; Row 2: 6×9−3=51 — different constants; rule is (first+last)×middle: Row 1: (4+5)×7=63; Row 2: (6+9)×3=45 — still different",
+          "is_correct": false
+        },
+        {
+          "option_text": "29",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "In the following matrix, each row's value is computed by a rule. Find the missing value (?):\n\n| 2  | 8  | 32 |\n| 3  | 9  | 27 |\n| 4  | ?  | 64 |\n\nRule: Row values are powers of the first element.",
       "options": [
-        {"option_text": "12 (from 4×3=12 — arithmetic pattern from the first column only)", "is_correct": false},
-        {"option_text": "16 (4² = 16 — the middle value in row 3 is first_element²)", "is_correct": true},
-        {"option_text": "20 (from adding 8 to 12 — arithmetic mistake)", "is_correct": false},
-        {"option_text": "32 (4³=64, not 32 — and 32 is already in row 1)", "is_correct": false}
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": true
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "32",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "In the matrix below, rows are formed by a pattern of operations. Find the missing value (?):\n\n| 3  | 7  | 10 | 21 |\n| 4  | 5  | 9  | 20 |\n| 6  | 8  | ?  | 28 |\n\nRule: col1 + col2 = col3; (col1 + col2 + col3) × 1.5 = col4.",
       "options": [
-        {"option_text": "12 (col1+col2=6+8=14, but col4=28; 14×2=28 not 14×1.5=21)", "is_correct": false},
-        {"option_text": "14 (6+8=14 ✓; check rule: 6+8+14=28; 28×1=28=col4 ✓; col3=14)", "is_correct": true},
-        {"option_text": "13 (doesn't satisfy col4=28 check cleanly)", "is_correct": false},
-        {"option_text": "16 (6+8=14≠16; 14+16=30≠col4)", "is_correct": false}
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "14",
+          "is_correct": true
+        },
+        {
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "Find the missing number (?) in the matrix:\n\n| 12 | 18 | 24 |\n| 8  | 12 | 16 |\n| 6  | 9  | ?  |\n\nObservation: Values decrease from row to row by a constant ratio.",
       "options": [
-        {"option_text": "11 (no clean ratio between rows — 12/8=1.5; 8/6=1.33; different ratios)", "is_correct": false},
-        {"option_text": "12 (row 3, col 3: each column's values are 12,8,6 (ratio 2:1.33:1); col 3: 24,16,?=12)", "is_correct": true},
-        {"option_text": "14 (arithmetic gap between 24 and 16 is 8; 16−14=2 — wrong step)", "is_correct": false},
-        {"option_text": "10 (subtracting 6 from 16 — no pattern basis)", "is_correct": false}
+        {
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -126,10 +210,22 @@
     {
       "stem": "Find the value of ? in the following coded matrix:\n\n| ACE | BDF | CEG |\n| 135 | 246 | 357 |\n| GIK | HJL | ?   |\n\nThe second row gives the position numbers of the letters in the first row. Find the third row's missing code.",
       "options": [
-        {"option_text": "IJL (I=9, J=10, L=12; but pattern asks for I+1=J=10 skipping)", "is_correct": false},
-        {"option_text": "IKM (I=9, K=11, M=13 — alternating letters skipping one each time)", "is_correct": true},
-        {"option_text": "HJL (that is already given as the middle column in row 3)", "is_correct": false},
-        {"option_text": "JLN (J=10, L=12, N=14 — skipping by 2 but starting from J not I)", "is_correct": false}
+        {
+          "option_text": "IJL",
+          "is_correct": false
+        },
+        {
+          "option_text": "IKM",
+          "is_correct": true
+        },
+        {
+          "option_text": "HJL",
+          "is_correct": false
+        },
+        {
+          "option_text": "JLN",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "In the matrix below, find the missing value (?):\n\n| 5  | 25  | 625   |\n| 2  | 4   | 16    |\n| 3  | 9   | ?     |\n\nRule: Each row is formed by n, n², n⁴.",
       "options": [
-        {"option_text": "27 (3³=27 — cubing, not the stated rule)", "is_correct": false},
-        {"option_text": "81 (3⁴=81 — correct: row rule is n, n², n⁴)", "is_correct": true},
-        {"option_text": "36 (9×4=36 — multiplying previous by 4, not squaring again)", "is_correct": false},
-        {"option_text": "729 (3⁶=729 — using wrong exponent)", "is_correct": false}
+        {
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "option_text": "81",
+          "is_correct": true
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "729",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "Find the missing value (?) in the matrix:\n\n| 7  | 11 | 77  |\n| 8  | 9  | 72  |\n| 5  | ?  | 60  |\n\nRule: col1 × col2 = col3.",
       "options": [
-        {"option_text": "10 (5×10=50≠60 — doesn't satisfy rule)", "is_correct": false},
-        {"option_text": "12 (5×12=60 ✓ — correct)", "is_correct": true},
-        {"option_text": "11 (5×11=55≠60)", "is_correct": false},
-        {"option_text": "15 (5×15=75≠60)", "is_correct": false}
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",

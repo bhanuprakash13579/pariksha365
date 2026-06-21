@@ -7,10 +7,22 @@
     {
       "stem": "Simplify: 3√12 + 2√27 − √48",
       "options": [
-        {"option_text": "6√3 (from a sign error: 6 + 6 − 6 = 6)", "is_correct": false},
-        {"option_text": "7√3 (arithmetic slip while combining like surds)", "is_correct": false},
-        {"option_text": "8√3 (3×2 + 2×3 − 4 = 8 after simplifying each radical)", "is_correct": true},
-        {"option_text": "9√3 (from taking √48 = 3√3 instead of 4√3)", "is_correct": false}
+        {
+          "option_text": "6√3",
+          "is_correct": false
+        },
+        {
+          "option_text": "7√3",
+          "is_correct": false
+        },
+        {
+          "option_text": "8√3",
+          "is_correct": true
+        },
+        {
+          "option_text": "9√3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "Which of the following is the greatest among √2, ∛3, and ⁶√6?",
       "options": [
-        {"option_text": "⁶√6, since 6 appears in the radicand and dominates visually", "is_correct": false},
-        {"option_text": "√2, since square roots are always larger than cube or sixth roots", "is_correct": false},
-        {"option_text": "∛3, since when expressed as sixth powers: 8 < 9 > 6, so ∛3 is greatest", "is_correct": true},
-        {"option_text": "All three are equal because they simplify to the same value", "is_correct": false}
+        {
+          "option_text": "⁶√6, since 6 appears in the radicand and dominates visually",
+          "is_correct": false
+        },
+        {
+          "option_text": "√2, since square roots are always larger than cube or sixth roots",
+          "is_correct": false
+        },
+        {
+          "option_text": "∛3, since when expressed as sixth powers: 8 < 9 > 6, so ∛3 is greatest",
+          "is_correct": true
+        },
+        {
+          "option_text": "All three are equal because they simplify to the same value",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "If x = 2 + √3, find the value of x + 1/x.",
       "options": [
-        {"option_text": "2 (subtracting 1/x from x due to sign confusion)", "is_correct": false},
-        {"option_text": "4 (x + 1/x = (2+√3) + (2−√3) = 4, since 1/x = 2−√3)", "is_correct": true},
-        {"option_text": "4 + 2√3 (adding x to itself instead of computing 1/x)", "is_correct": false},
-        {"option_text": "7 + 4√3 (computing x² instead of x + 1/x)", "is_correct": false}
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 + 2√3",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 + 4√3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "Evaluate: (8^(2/3) × 4^(3/2)) ÷ 2^5",
       "options": [
-        {"option_text": "1/2 (from computing 8^(2/3) = 2 and 4^(3/2) = 8 giving 16/32)", "is_correct": false},
-        {"option_text": "1 (from 8^(2/3) = 4, 4^(3/2) = 8, product = 32, ÷ 32 = 1)", "is_correct": true},
-        {"option_text": "2 (from reading 4^(3/2) as 4^3 ÷ 2 = 64/2 = 32 giving 128/32)", "is_correct": false},
-        {"option_text": "4 (from computing 8^(2/3) = 4 but treating 4^(3/2) = 16 instead of 8)", "is_correct": false}
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "Rationalise the denominator and simplify: (√5 + √2) / (√5 − √2)",
       "options": [
-        {"option_text": "(7 + 2√10) / 3  (correct — multiply by conjugate and simplify)", "is_correct": true},
-        {"option_text": "(7 − 2√10) / 3  (sign error on the cross-product term 2√10)", "is_correct": false},
-        {"option_text": "(√5 + √2)² / 3  (unsimplified form, not expanding the numerator)", "is_correct": false},
-        {"option_text": "1 / (√5 − √2)²  (incorrectly squaring only the denominator)", "is_correct": false}
+        {
+          "option_text": "(7 + 2√10) / 3",
+          "is_correct": true
+        },
+        {
+          "option_text": "(7 − 2√10) / 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "(√5 + √2)² / 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 / (√5 − √2)²",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "Evaluate: 27^(2/3) + 16^(3/4) − (−8)^(1/3)",
       "options": [
-        {"option_text": "13 (from forgetting to negate (−8)^(1/3): 9 + 8 − 4 = 13)", "is_correct": false},
-        {"option_text": "15 (from (−8)^(1/3) = −2, but adding instead of subtracting: 9+8+2=19)", "is_correct": false},
-        {"option_text": "17 (from taking 16^(3/4) = 8 but computing −(−2) = +2: 9+8+2 = 19... error)", "is_correct": false},
-        {"option_text": "19 (27^(2/3) = 9, 16^(3/4) = 8, (−8)^(1/3) = −2, so 9+8−(−2) = 19)", "is_correct": true}
+        {
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "17",
+          "is_correct": false
+        },
+        {
+          "option_text": "19",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "If x = (√5 + √3)/(√5 − √3) and y = (√5 − √3)/(√5 + √3), find x + y.",
       "options": [
-        {"option_text": "4 (from computing x − y by mistake and getting 0, then 4 by error)", "is_correct": false},
-        {"option_text": "8 (correct — x = 4+√15, y = 4−√15, sum = 8)", "is_correct": true},
-        {"option_text": "2√15 (from x − y only: (4+√15) − (4−√15) = 2√15)", "is_correct": false},
-        {"option_text": "1 (assuming x and y are reciprocals summing to 1)", "is_correct": false}
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "option_text": "2√15",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "Simplify: (√6 + √5)/(√6 − √5) − (√6 − √5)/(√6 + √5)",
       "options": [
-        {"option_text": "2 (treating the surds as equal and computing a/b − b/a = 0 wrongly)", "is_correct": false},
-        {"option_text": "2√30 (computing each fraction separately but combining incorrectly)", "is_correct": false},
-        {"option_text": "4√30 (using a²−b² formula in numerator, (a+b)(a−b) = 1 in denominator)", "is_correct": true},
-        {"option_text": "22 (computing 11+11 from the sum of the expanded numerators only)", "is_correct": false}
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "2√30",
+          "is_correct": false
+        },
+        {
+          "option_text": "4√30",
+          "is_correct": true
+        },
+        {
+          "option_text": "22",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "If √(3 + x) = 4, what is the value of √(3 + x + 13)?",
       "options": [
-        {"option_text": "5 (from 3 + x + 13 = 3 + 13 = 16, forgetting to substitute x)", "is_correct": false},
-        {"option_text": "√29 (from 3 + 16 + 13 = 32 due to √(3+x) = 4 → 3+x = 16 → x = 13: 3+13+13=29)", "is_correct": false},
-        {"option_text": "√30 (from adding 13 to 16+3 = 19, then 19+13 = 32 error)", "is_correct": false},
-        {"option_text": "√29 (√(3+x) = 4 → 3+x = 16 → x = 13; so √(3+13+13) = √29)", "is_correct": true}
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "√29",
+          "is_correct": false
+        },
+        {
+          "option_text": "√30",
+          "is_correct": false
+        },
+        {
+          "option_text": "√29",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "EASY",
@@ -160,10 +268,22 @@
     {
       "stem": "Simplify: √(3 + √5) / √(3 − √5)",
       "options": [
-        {"option_text": "(3 − √5)/2 (sign error after rationalising the compound radical)", "is_correct": false},
-        {"option_text": "(3 + √5)/2 (multiply by (3+√5)/(3+√5) and simplify the denominator)", "is_correct": true},
-        {"option_text": "√(3+√5) × √(3+√5) / 2 (stopped before simplifying the product)", "is_correct": false},
-        {"option_text": "1 (assuming the expression equals 1 because 3+√5 and 3−√5 are symmetric)", "is_correct": false}
+        {
+          "option_text": "(3 − √5)/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "(3 + √5)/2",
+          "is_correct": true
+        },
+        {
+          "option_text": "√(3+√5) × √(3+√5) / 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -177,10 +297,22 @@
     {
       "stem": "If 5^a = 3125 and 5^b = 25, what is the value of 5^(a − 2b)?",
       "options": [
-        {"option_text": "5 (from a − 2b = 5 − 4 = 1, giving 5^1 = 5)", "is_correct": true},
-        {"option_text": "25 (from a − 2b = 2, perhaps from a=5 and 2b=4 giving 1, then adding 1 in error)", "is_correct": false},
-        {"option_text": "125 (from a − 2b = 3, perhaps miscomputing b=1 instead of b=2)", "is_correct": false},
-        {"option_text": "1 (from a − 2b = 0, treating 5^a = 5^b wrongly)", "is_correct": false}
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "125",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "EASY",
@@ -194,10 +326,22 @@
     {
       "stem": "The expression (√3 + 1)/(√3 − 1) can be written in the form a + b√3. What is a + b?",
       "options": [
-        {"option_text": "3 (from a = 2, b = 1 after rationalising, so a + b = 3)", "is_correct": true},
-        {"option_text": "2 (treating the expression as (√3+1)² / 3 without simplifying correctly)", "is_correct": false},
-        {"option_text": "4 (from a = 2, b = 2 due to doubling the √3 coefficient)", "is_correct": false},
-        {"option_text": "1 (treating (√3+1)/(√3−1) ≈ 1 since √3 dominates top and bottom)", "is_correct": false}
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -211,10 +355,22 @@
     {
       "stem": "What is the value of (0.027)^(1/3) + (0.008)^(1/3)?",
       "options": [
-        {"option_text": "0.2 (computing only (0.008)^(1/3) = 0.2 and ignoring (0.027)^(1/3))", "is_correct": false},
-        {"option_text": "0.35 (0.027^(1/3) = 0.3, 0.008^(1/3) = 0.2; sum = 0.5 but halved in error)", "is_correct": false},
-        {"option_text": "0.5 (∛0.027 = 0.3 and ∛0.008 = 0.2; sum = 0.5)", "is_correct": true},
-        {"option_text": "0.7 (from (0.027 + 0.008)^(1/3) = (0.035)^(1/3) ≈ 0.327 — wrong application)", "is_correct": false}
+        {
+          "option_text": "0.2",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.35",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.5",
+          "is_correct": true
+        },
+        {
+          "option_text": "0.7",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -228,10 +384,22 @@
     {
       "stem": "If x = √2 + 1, then what is (x² − 2x)?",
       "options": [
-        {"option_text": "0 (from computing x² − 2x = x(x−2): if x=2 then 0, but x ≠ 2)", "is_correct": false},
-        {"option_text": "−1 (from x² − 2x = (√2+1)² − 2(√2+1) = 3+2√2 − 2√2−2 = 1)", "is_correct": false},
-        {"option_text": "1 (from (√2+1)² − 2(√2+1) = 3+2√2 − 2−2√2 = 1)", "is_correct": true},
-        {"option_text": "2√2 (from only computing the surd part of x², ignoring the constant terms)", "is_correct": false}
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "−1",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "2√2",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",

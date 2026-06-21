@@ -7,10 +7,22 @@
     {
       "stem": "Find the missing number:\n| 4 | 9 | 16 |\n| 25 | 36 | 49 |\n| 64 | ? | 100 |",
       "options": [
-        {"option_text": "72 (wrong: the pattern is perfect squares; 9² = 81, not 72)", "is_correct": false},
-        {"option_text": "81 (correct: pattern = perfect squares; 2²=4, 3²=9, 4²=16, 5²=25, 6²=36, 7²=49, 8²=64, 9²=81, 10²=100 ✓)", "is_correct": true},
-        {"option_text": "80 (wrong: 80 is not a perfect square)", "is_correct": false},
-        {"option_text": "90 (wrong: 90 is not a perfect square)", "is_correct": false}
+        {
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "option_text": "81",
+          "is_correct": true
+        },
+        {
+          "option_text": "80",
+          "is_correct": false
+        },
+        {
+          "option_text": "90",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "Find the missing number:\n| 2 | 8 | 18 |\n| 32 | 50 | 72 |\n| 98 | 128 | ? |",
       "options": [
-        {"option_text": "144 (wrong: pattern is 2n²; n=1→2, n=2→8, n=3→18...n=9→162)", "is_correct": false},
-        {"option_text": "162 (correct: pattern = 2n²; n=1:2, n=2:8, n=3:18, n=4:32, n=5:50, n=6:72, n=7:98, n=8:128, n=9:2×81=162 ✓)", "is_correct": true},
-        {"option_text": "150 (wrong: 2×75=150; but pattern gives 2×81=162)", "is_correct": false},
-        {"option_text": "160 (wrong: 2×80=160; not a perfect 2n² value)", "is_correct": false}
+        {
+          "option_text": "144",
+          "is_correct": false
+        },
+        {
+          "option_text": "162",
+          "is_correct": true
+        },
+        {
+          "option_text": "150",
+          "is_correct": false
+        },
+        {
+          "option_text": "160",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "Find the missing number:\n| 3 | 5 | 7 |\n| 12 | ? | 28 |\n| 30 | 40 | 56 |",
       "options": [
-        {"option_text": "15 (wrong: column 2: 5,?,40; what's the pattern? Row 1: 3,5,7 (diff=2); Row 2: 12,?,28 (diff pattern?); Row 3: 30,40,56 (diff=10,16); Column pattern: 3,12,30 (×4,×2.5?); 5,?,40 (÷ or ×?); 7,28,56 (×4,×2) → 5×4=20)", "is_correct": false},
-        {"option_text": "20 (correct: column analysis: col1=3,12,30 (×4,×2.5); col2=5,?,40; col3=7,28,56; pattern: col3: 7×4=28, 28×2=56; col1: 3×4=12, 12×2.5=30; col2: 5×4=20, 20×2=40 → missing=20 ✓)", "is_correct": true},
-        {"option_text": "18 (wrong: 18×2≠40)", "is_correct": false},
-        {"option_text": "25 (wrong: 25×? doesn't fit 40 with the column pattern)", "is_correct": false}
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": true
+        },
+        {
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -58,10 +94,22 @@
     {
       "stem": "Find the missing number:\n3(7)4\n5(9)4\n6(?  )5",
       "options": [
-        {"option_text": "10 (wrong: 3+4=7; 5+4=9; 6+5=11, not 10)", "is_correct": false},
-        {"option_text": "11 (correct: pattern: left + right = centre; 3+4=7 ✓; 5+4=9 ✓; 6+5=11 ✓)", "is_correct": true},
-        {"option_text": "12 (wrong: 6+5=11, not 12)", "is_correct": false},
-        {"option_text": "9 (wrong: that's the centre of the second row, not the third)", "is_correct": false}
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": true
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -75,10 +123,22 @@
     {
       "stem": "Find the missing number:\n8 → 64 → 512\n3 → 9 → 27\n4 → ? → 64",
       "options": [
-        {"option_text": "8 (wrong: the pattern is squaring/cubing; 4²=16, 4³=64; so ?=4²=16)", "is_correct": false},
-        {"option_text": "16 (correct: pattern: n → n² → n³; 8→64→512 (8²=64, 8³=512); 3→9→27 (3²=9, 3³=27); 4→16→64 (4²=16, 4³=64) ✓)", "is_correct": true},
-        {"option_text": "12 (wrong: 12 is not 4²)", "is_correct": false},
-        {"option_text": "20 (wrong: 20 is not 4²)", "is_correct": false}
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": true
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -92,10 +152,22 @@
     {
       "stem": "Find the missing number:\n| 12 | 18 | 30 |\n| 15 | 20 | 35 |\n| 24 | 28 | ? |",
       "options": [
-        {"option_text": "50 (wrong: checking pattern: col1+col2=col3? 12+18=30 ✓; 15+20=35 ✓; 24+28=52, not 50)", "is_correct": false},
-        {"option_text": "52 (correct: pattern: column 1 + column 2 = column 3; 12+18=30, 15+20=35, 24+28=52 ✓)", "is_correct": true},
-        {"option_text": "48 (wrong: 24+28=52, not 48)", "is_correct": false},
-        {"option_text": "56 (wrong: 24+28=52, not 56)", "is_correct": false}
+        {
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "option_text": "52",
+          "is_correct": true
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "56",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -109,10 +181,22 @@
     {
       "stem": "Find the missing number in the sequence table:\n6 → 12 → 24\n7 → 14 → 28\n9 → ? → 36",
       "options": [
-        {"option_text": "15 (wrong: 9×2=18, not 15)", "is_correct": false},
-        {"option_text": "18 (correct: pattern: n → 2n → 4n; each number doubles; 9→18→36 ✓)", "is_correct": true},
-        {"option_text": "27 (wrong: 27=9×3; pattern here is ×2 not ×3)", "is_correct": false},
-        {"option_text": "21 (wrong: 21 is not 9×2)", "is_correct": false}
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "option_text": "21",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -126,10 +210,22 @@
     {
       "stem": "Find the missing number:\n| 7  | 8  | 11 |\n| 16 | 18 | 24 |\n| 30 | 34 | ?  |",
       "options": [
-        {"option_text": "42 (wrong: checking column 3 pattern: 11,24,?; diff=13,?; checking all columns: col1 diff=9,14; col2 diff=10,16; col3 diff=13,?; differences are increasing — also try: each element = 2× row above: row2/row1 ≈ 2.3; not exact; try: col3=col1+col2-something: 7+8-4=11;16+18-10=24;30+34-?=?; difference pattern not clear; try: each row: 7,8,11 (diff=1,3); 16,18,24 (diff=2,6); 30,34,? (diff=4,12); so ?=34+12=46)", "is_correct": false},
-        {"option_text": "46 (correct: row pattern differences: row1 diff=1,3; row2 diff=2,6; row3 diff=4,12 (doubling pattern); 34+12=46 ✓)", "is_correct": true},
-        {"option_text": "44 (wrong: 34+10=44; but the pattern gives 34+12=46)", "is_correct": false},
-        {"option_text": "48 (wrong: 34+14=48; the correct addition is 12, not 14)", "is_correct": false}
+        {
+          "option_text": "42",
+          "is_correct": false
+        },
+        {
+          "option_text": "46",
+          "is_correct": true
+        },
+        {
+          "option_text": "44",
+          "is_correct": false
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "A magic square rule: every row, column, and diagonal sums to the same number. If the magic sum is 15 and one row is 2, 7, 6, another row is 9, 5, 1, find the missing number X in: 4, 3, X.",
       "options": [
-        {"option_text": "5 (wrong: 4+3+X=15; X=15-7=8)", "is_correct": false},
-        {"option_text": "8 (correct: 4+3+X=15; X=8 ✓; verify: rows 2+7+6=15 ✓; 9+5+1=15 ✓; 4+3+8=15 ✓)", "is_correct": true},
-        {"option_text": "6 (wrong: 4+3+6=13≠15)", "is_correct": false},
-        {"option_text": "9 (wrong: 4+3+9=16≠15)", "is_correct": false}
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "Find the missing number:\n5(36)7\n3(16)5\n4(?  )6",
       "options": [
-        {"option_text": "20 (wrong: checking: 5+7=12; 12²=144≠36; 5×7=35≠36; (5+7)²=144; (7-5)²=4≠36; 6²=36 and 5+7=12? try 36=(5+7)×3=36 ✓; 16=(3+5)×2=16 ✓; (4+6)×?=?→10×?=?)", "is_correct": false},
-        {"option_text": "25 (correct: pattern: (left+right)²/4? 5+7=12; 12/2=6; 6²=36 ✓; 3+5=8; 8/2=4; 4²=16 ✓; 4+6=10; 10/2=5; 5²=25 ✓)", "is_correct": true},
-        {"option_text": "30 (wrong: doesn't match the pattern)", "is_correct": false},
-        {"option_text": "40 (wrong: doesn't match the pattern)", "is_correct": false}
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": true
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",

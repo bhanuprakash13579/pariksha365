@@ -7,10 +7,22 @@
     {
       "stem": "A trader sells two items for ₹990 each. On one he gains 10% and on the other he loses 10%. What is the net profit or loss?",
       "options": [
-        {"option_text": "No profit, no loss (wrong: equal % gain and loss on equal SP always results in a net loss)", "is_correct": false},
-        {"option_text": "1% loss (correct: net loss% = (common %/10)² = (10/10)² = 1% ✓; or calculate directly)", "is_correct": true},
-        {"option_text": "2% profit (wrong: there's always a net loss in this scenario)", "is_correct": false},
-        {"option_text": "0.5% loss (wrong: the formula gives exactly 1% loss)", "is_correct": false}
+        {
+          "option_text": "No profit, no loss",
+          "is_correct": false
+        },
+        {
+          "option_text": "1% loss",
+          "is_correct": true
+        },
+        {
+          "option_text": "2% profit",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.5% loss",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -24,10 +36,22 @@
     {
       "stem": "A fruit seller buys bananas at 6 for ₹5 and sells them at 5 for ₹6. What is the profit percentage?",
       "options": [
-        {"option_text": "30% (wrong: CP per banana=5/6; SP per banana=6/5; profit per banana=6/5-5/6=(36-25)/30=11/30; profit%=11/30÷5/6×100=11/30×6/5×100=66/25×100... wait let me redo: profit%=(SP-CP)/CP×100=(6/5-5/6)/(5/6)×100=(36/30-25/30)/(25/30)×100=(11/30)/(25/30)×100=11/25×100=44%)", "is_correct": false},
-        {"option_text": "44% (correct: CP per banana=5/6; SP per banana=6/5; profit%=(6/5-5/6)/(5/6)×100=(11/30÷5/6)×100=44% ✓)", "is_correct": true},
-        {"option_text": "40% (wrong: close but not the exact answer)", "is_correct": false},
-        {"option_text": "20% (wrong: doesn't match the calculation)", "is_correct": false}
+        {
+          "option_text": "30%",
+          "is_correct": false
+        },
+        {
+          "option_text": "44%",
+          "is_correct": true
+        },
+        {
+          "option_text": "40%",
+          "is_correct": false
+        },
+        {
+          "option_text": "20%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -41,10 +65,22 @@
     {
       "stem": "A shopkeeper uses a faulty weighing scale that reads 900g as 1kg. If he buys and sells at the same rate (CP=SP), what is his profit percentage?",
       "options": [
-        {"option_text": "9% (wrong: he gives 900g but charges for 1kg; profit%=(1000-900)/900×100=11.11%)", "is_correct": false},
-        {"option_text": "11.11% (correct: he gives 900g but charges 1kg price; CP=900g×price/g; SP=1000g×price/g; profit%=100/900×100=11.11% ✓)", "is_correct": true},
-        {"option_text": "10% (wrong: 10% would mean giving 909g for 1kg price; but he gives 900g)", "is_correct": false},
-        {"option_text": "12.5% (wrong: 12.5% would mean giving 889g)", "is_correct": false}
+        {
+          "option_text": "9%",
+          "is_correct": false
+        },
+        {
+          "option_text": "11.11%",
+          "is_correct": true
+        },
+        {
+          "option_text": "10%",
+          "is_correct": false
+        },
+        {
+          "option_text": "12.5%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -58,10 +94,22 @@
     {
       "stem": "An article is sold at a 20% profit. If it had been sold for ₹40 more, the profit would have been 30%. Find the cost price.",
       "options": [
-        {"option_text": "₹360 (wrong: let CP=x; SP1=1.2x; SP2=1.3x; SP2-SP1=0.1x=40; x=400)", "is_correct": false},
-        {"option_text": "₹400 (correct: 0.1×CP=40; CP=₹400 ✓)", "is_correct": true},
-        {"option_text": "₹450 (wrong: 0.1×450=45≠40)", "is_correct": false},
-        {"option_text": "₹350 (wrong: 0.1×350=35≠40)", "is_correct": false}
+        {
+          "option_text": "₹360",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹400",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹450",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹350",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "By selling 12 oranges for ₹1, a man loses 20%. How many oranges should be sold for ₹1 to gain 20%?",
       "options": [
-        {"option_text": "8 (correct: 12 oranges for ₹1 = loss 20% → CP of 12 = ₹1/0.8=₹1.25 → CP per orange=1.25/12; to gain 20%, SP per orange=1.25/12×1.2=1.5/12=1/8; so 8 oranges for ₹1 ✓)", "is_correct": true},
-        {"option_text": "10 (wrong: CP per orange=1.25/12; to sell 10 for ₹1=₹0.1/orange; profit%=(0.1-1.25/12)/(1.25/12)×100=(1.2-1.25)×...)", "is_correct": false},
-        {"option_text": "6 (wrong: 6 oranges for ₹1 would give too much profit)", "is_correct": false},
-        {"option_text": "9 (wrong: doesn't match the calculation)", "is_correct": false}
+        {
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -92,10 +152,22 @@
     {
       "stem": "The cost price of 20 articles equals the selling price of 16 articles. Find the profit or loss percentage.",
       "options": [
-        {"option_text": "20% profit (wrong: CP of 20 = SP of 16; CP per article:SP per article=16:20=4:5; profit=(5-4)/4×100=25%)", "is_correct": false},
-        {"option_text": "25% profit (correct: CP×20=SP×16 → SP/CP=20/16=5/4; profit%=1/4×100=25% ✓)", "is_correct": true},
-        {"option_text": "30% profit (wrong: doesn't match the ratio)", "is_correct": false},
-        {"option_text": "16% loss (wrong: SP>CP here; it's a profit, not a loss)", "is_correct": false}
+        {
+          "option_text": "20% profit",
+          "is_correct": false
+        },
+        {
+          "option_text": "25% profit",
+          "is_correct": true
+        },
+        {
+          "option_text": "30% profit",
+          "is_correct": false
+        },
+        {
+          "option_text": "16% loss",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "A man sold a watch at a 15% loss. If he had sold it for ₹57 more, he would have made a 4% profit. Find the cost price of the watch.",
       "options": [
-        {"option_text": "₹290 (wrong: let CP=x; SP1=0.85x; SP2=1.04x; SP2-SP1=0.19x=57; x=300)", "is_correct": false},
-        {"option_text": "₹300 (correct: 0.19×CP=57; CP=₹300 ✓)", "is_correct": true},
-        {"option_text": "₹320 (wrong: 0.19×320=60.8≠57)", "is_correct": false},
-        {"option_text": "₹280 (wrong: 0.19×280=53.2≠57)", "is_correct": false}
+        {
+          "option_text": "₹290",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹300",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹320",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹280",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "A person bought a mobile for ₹8,000 and sold it for ₹10,000. He then bought another phone with that ₹10,000 and sold it for ₹12,000. What is his overall profit percentage (on total investment)?",
       "options": [
-        {"option_text": "25% (wrong: total invested=8000; total received=12000; but he reinvested; net profit=12000-8000=4000; profit%=4000/8000×100=50%)", "is_correct": false},
-        {"option_text": "50% (correct: invested ₹8,000; ultimately received ₹12,000; profit=₹4,000; profit%=4000/8000×100=50% ✓)", "is_correct": true},
-        {"option_text": "40% (wrong: total profit is ₹4000 on ₹8000 = 50%)", "is_correct": false},
-        {"option_text": "37.5% (wrong: doesn't match calculation)", "is_correct": false}
+        {
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "option_text": "50%",
+          "is_correct": true
+        },
+        {
+          "option_text": "40%",
+          "is_correct": false
+        },
+        {
+          "option_text": "37.5%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "If the selling price is doubled, the profit triples. Find the current profit percentage.",
       "options": [
-        {"option_text": "50% (wrong: let CP=100; SP=100+P; 2SP=100+3P; 2(100+P)=100+3P; 200+2P=100+3P; P=100; profit%=100%)", "is_correct": false},
-        {"option_text": "100% (correct: let CP=100; profit=P; if SP doubled: 2SP=100+3P; 2(100+P)=100+3P; 200+2P=100+3P; P=100; profit%=100% ✓)", "is_correct": true},
-        {"option_text": "75% (wrong: doesn't satisfy the equation)", "is_correct": false},
-        {"option_text": "200% (wrong: 200% doesn't fit the equation)", "is_correct": false}
+        {
+          "option_text": "50%",
+          "is_correct": false
+        },
+        {
+          "option_text": "100%",
+          "is_correct": true
+        },
+        {
+          "option_text": "75%",
+          "is_correct": false
+        },
+        {
+          "option_text": "200%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -160,10 +268,22 @@
     {
       "stem": "A trader marks his goods 50% above cost price but gives a 20% discount. What is his profit percentage?",
       "options": [
-        {"option_text": "30% (wrong: 1.5×0.8=1.2; profit=20%, not 30%)", "is_correct": false},
-        {"option_text": "20% (correct: CP=100; MP=150; SP=150×0.8=120; profit=20% ✓)", "is_correct": true},
-        {"option_text": "25% (wrong: 125% of CP would require different calculation)", "is_correct": false},
-        {"option_text": "10% (wrong: 110% of CP would require bigger discount)", "is_correct": false}
+        {
+          "option_text": "30%",
+          "is_correct": false
+        },
+        {
+          "option_text": "20%",
+          "is_correct": true
+        },
+        {
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "option_text": "10%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",

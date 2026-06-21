@@ -7,10 +7,22 @@
     {
       "stem": "What is the sum of all prime numbers between 10 and 20?",
       "options": [
-        {"option_text": "60 (wrong: 11+13+17+19=60 ✓ — wait this is correct)", "is_correct": false},
-        {"option_text": "60 (correct: primes between 10 and 20 are 11,13,17,19; sum=60 ✓)", "is_correct": true},
-        {"option_text": "55 (wrong: misses 19 or double-counts)", "is_correct": false},
-        {"option_text": "77 (wrong)", "is_correct": false}
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "option_text": "55",
+          "is_correct": false
+        },
+        {
+          "option_text": "77",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "What is the remainder when 2⁶⁵ is divided by 7?",
       "options": [
-        {"option_text": "2 (wrong: find pattern of 2ⁿ mod 7: 2¹=2,2²=4,2³=1; cycle=3; 65=3×21+2; 2⁶⁵ mod 7 = 2² mod 7=4)", "is_correct": false},
-        {"option_text": "4 (correct: 2ⁿ mod 7 repeats with period 3: 2,4,1,2,4,1...; 65 mod 3=2; so remainder=4 ✓)", "is_correct": true},
-        {"option_text": "1 (remainder when exponent is divisible by 3)", "is_correct": false},
-        {"option_text": "6 (wrong)", "is_correct": false}
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -41,10 +65,22 @@
     {
       "stem": "Which of the following numbers is divisible by 11?",
       "options": [
-        {"option_text": "12345 (alternating sum from left: 1−2+3−4+5=3 ≠ 0, not divisible by 11)", "is_correct": false},
-        {"option_text": "24568 (alt sum: 2−4+5−6+8=5 ≠ 0, not divisible by 11)", "is_correct": false},
-        {"option_text": "11011 (correct: alt sum: 1−1+0−1+1=0 ✓ divisible by 11; verify: 11011÷11=1001 ✓)", "is_correct": true},
-        {"option_text": "98765 (alt sum: 9−8+7−6+5=7 ≠ 0, not divisible by 11)", "is_correct": false}
+        {
+          "option_text": "12345",
+          "is_correct": false
+        },
+        {
+          "option_text": "24568",
+          "is_correct": false
+        },
+        {
+          "option_text": "11011",
+          "is_correct": true
+        },
+        {
+          "option_text": "98765",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "The product of two numbers is 120 and their HCF is 4. What is their LCM?",
       "options": [
-        {"option_text": "480 (wrong: HCF × LCM = product; 4 × LCM = 120 → LCM = 30, not 480)", "is_correct": false},
-        {"option_text": "30 (correct: HCF × LCM = product of two numbers; 4 × LCM = 120; LCM = 30 ✓)", "is_correct": true},
-        {"option_text": "48 (120/4×4/4 — wrong approach)", "is_correct": false},
-        {"option_text": "60 (wrong: 60×4=240≠120)", "is_correct": false}
+        {
+          "option_text": "480",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -75,10 +123,22 @@
     {
       "stem": "Find the LCM of 12, 18, and 24.",
       "options": [
-        {"option_text": "24 (LCM must be at least 24, but 24 is not divisible by 18: 24/18 is not integer)", "is_correct": false},
-        {"option_text": "36 (not divisible by 24: 36/24=1.5)", "is_correct": false},
-        {"option_text": "72 (correct: 72/12=6 ✓; 72/18=4 ✓; 72/24=3 ✓ — all divisible ✓)", "is_correct": true},
-        {"option_text": "48 (48/18=2.67 — not divisible by 18)", "is_correct": false}
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "72",
+          "is_correct": true
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -92,10 +152,22 @@
     {
       "stem": "How many numbers between 1 and 100 are divisible by both 4 and 6?",
       "options": [
-        {"option_text": "8 (correct: LCM(4,6)=12; multiples of 12 up to 100: 12,24,36,48,60,72,84,96 = 8 numbers ✓)", "is_correct": true},
-        {"option_text": "25 (multiples of 4 up to 100 — not restricted to those divisible by 6 too)", "is_correct": false},
-        {"option_text": "16 (multiples of 6 up to 100 = 16, but this ignores the 'divisible by 4 too' constraint)", "is_correct": false},
-        {"option_text": "4 (wrong — missed several multiples)", "is_correct": false}
+        {
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "A number when divided by 5 leaves remainder 3, and when divided by 7 leaves remainder 4. Which smallest positive number satisfies both conditions?",
       "options": [
-        {"option_text": "18 (18÷5=3 r3 ✓; 18÷7=2 r4 ✓ — both conditions met!)", "is_correct": true},
-        {"option_text": "8 (8÷5=1 r3 ✓; 8÷7=1 r1 — fails second condition)", "is_correct": false},
-        {"option_text": "53 (53÷5=10 r3 ✓; 53÷7=7 r4 ✓ — both satisfied but not smallest)", "is_correct": false},
-        {"option_text": "13 (13÷5=2 r3 ✓; 13÷7=1 r6 — fails)", "is_correct": false}
+        {
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "53",
+          "is_correct": false
+        },
+        {
+          "option_text": "13",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "What is the unit digit of 3⁴⁸?",
       "options": [
-        {"option_text": "3 (unit digit when power ≡ 1 mod 4)", "is_correct": false},
-        {"option_text": "9 (unit digit when power ≡ 2 mod 4)", "is_correct": false},
-        {"option_text": "7 (unit digit when power ≡ 3 mod 4)", "is_correct": false},
-        {"option_text": "1 (correct: unit digits of powers of 3 cycle: 3,9,7,1,3,9,7,1 with period 4; 48÷4=12 remainder 0; when remainder=0, unit digit=1 ✓)", "is_correct": true}
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "The HCF of two numbers is 8 and their LCM is 96. If one number is 24, what is the other?",
       "options": [
-        {"option_text": "64 (wrong: HCF×LCM=8×96=768; 768/24=32, not 64)", "is_correct": false},
-        {"option_text": "32 (correct: HCF×LCM=product; 8×96=768; other number=768/24=32 ✓)", "is_correct": true},
-        {"option_text": "48 (wrong: 48×24=1152≠768)", "is_correct": false},
-        {"option_text": "16 (wrong: HCF(16,24)=8 ✓, LCM(16,24)=48≠96)", "is_correct": false}
+        {
+          "option_text": "64",
+          "is_correct": false
+        },
+        {
+          "option_text": "32",
+          "is_correct": true
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "A number is divisible by both 7 and 11. It is also even. Which is the smallest such three-digit number?",
       "options": [
-        {"option_text": "154 (154÷7=22 ✓; 154÷11=14 ✓; even ✓ — correct!)", "is_correct": true},
-        {"option_text": "231 (odd number — fails even condition)", "is_correct": false},
-        {"option_text": "308 (divisible by both: 308/7=44 ✓; 308/11=28 ✓; even ✓ — but 154 is smaller)", "is_correct": false},
-        {"option_text": "462 (larger than 154)", "is_correct": false}
+        {
+          "option_text": "154",
+          "is_correct": true
+        },
+        {
+          "option_text": "231",
+          "is_correct": false
+        },
+        {
+          "option_text": "308",
+          "is_correct": false
+        },
+        {
+          "option_text": "462",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -177,10 +297,22 @@
     {
       "stem": "What is the value of (1×2×3×...×10) / (1×2×3×...×7)?",
       "options": [
-        {"option_text": "6 (wrong)", "is_correct": false},
-        {"option_text": "24 (wrong: 8×3=24 — no)", "is_correct": false},
-        {"option_text": "720 (correct: 10!/7! = 8×9×10 = 720 ✓)", "is_correct": true},
-        {"option_text": "5040 (that's 7! itself)", "is_correct": false}
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "720",
+          "is_correct": true
+        },
+        {
+          "option_text": "5040",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -194,10 +326,22 @@
     {
       "stem": "The sum of three consecutive even integers is 78. Find the largest of the three.",
       "options": [
-        {"option_text": "24 (24+26+28=78 but largest=28 ✓ — wait: let me verify: 24+26+28=78 ✓; largest=28)", "is_correct": false},
-        {"option_text": "28 (correct: let the integers be n, n+2, n+4; 3n+6=78; 3n=72; n=24; largest=24+4=28 ✓)", "is_correct": true},
-        {"option_text": "26 (the middle number)", "is_correct": false},
-        {"option_text": "30 (would give 26+28+30=84≠78)", "is_correct": false}
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "28",
+          "is_correct": true
+        },
+        {
+          "option_text": "26",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",

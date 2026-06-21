@@ -7,10 +7,22 @@
     {
       "stem": "What fraction of 2/3 is 4/9?",
       "options": [
-        {"option_text": "1/3 (dividing 4/9 by 2/3: (4/9)÷(2/3) = 4/9×3/2 = 2/3, not 1/3)", "is_correct": false},
-        {"option_text": "2/3 (correct: (4/9) ÷ (2/3) = 4/9 × 3/2 = 12/18 = 2/3)", "is_correct": true},
-        {"option_text": "3/4 (from inverting the wrong fraction: (2/3)÷(4/9) = 3/2 — then error)", "is_correct": false},
-        {"option_text": "8/27 (from multiplying 2/3 × 4/9 instead of dividing)", "is_correct": false}
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/3",
+          "is_correct": true
+        },
+        {
+          "option_text": "3/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "8/27",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "Arrange the following fractions in ascending order: 3/4, 5/7, 7/9, 4/5",
       "options": [
-        {"option_text": "3/4 < 5/7 < 7/9 < 4/5 (converting to decimals: 0.75, 0.714, 0.778, 0.8)", "is_correct": false},
-        {"option_text": "5/7 < 3/4 < 7/9 < 4/5 (correct decimal order: 0.714, 0.75, 0.778, 0.8)", "is_correct": true},
-        {"option_text": "3/4 < 7/9 < 5/7 < 4/5 (incorrect ordering — 5/7 is smallest, not 3/4)", "is_correct": false},
-        {"option_text": "5/7 < 7/9 < 3/4 < 4/5 (comparing 3/4 and 7/9 incorrectly)", "is_correct": false}
+        {
+          "option_text": "3/4 < 5/7 < 7/9 < 4/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/7 < 3/4 < 7/9 < 4/5",
+          "is_correct": true
+        },
+        {
+          "option_text": "3/4 < 7/9 < 5/7 < 4/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/7 < 7/9 < 3/4 < 4/5",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "A bottle is 3/5 full of water. After drinking 1/4 of the water in it, what fraction of the bottle remains filled?",
       "options": [
-        {"option_text": "7/20 (from 3/5 − 1/4 = 12/20 − 5/20 = 7/20 — incorrectly subtracting 1/4 from 3/5)", "is_correct": false},
-        {"option_text": "9/20 (correct: 1/4 of 3/5 = 3/20 drunk; remaining = 3/5 − 3/20 = 12/20 − 3/20 = 9/20)", "is_correct": true},
-        {"option_text": "3/10 (from 3/5 ÷ 2 — halving instead of subtracting a quarter of the content)", "is_correct": false},
-        {"option_text": "2/5 (from 3/5 − 1/5 — treating 1/4 as 1/5 of the full bottle)", "is_correct": false}
+        {
+          "option_text": "7/20",
+          "is_correct": false
+        },
+        {
+          "option_text": "9/20",
+          "is_correct": true
+        },
+        {
+          "option_text": "3/10",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/5",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "The sum of three consecutive fractions with denominators 2, 3, and 4 is 13/12. What is the fraction with denominator 3?",
       "options": [
-        {"option_text": "1/3 (solving: 1/2 + 1/3 + 1/4 = 6/12+4/12+3/12=13/12 ✓)", "is_correct": true},
-        {"option_text": "2/3 (assuming the denominator-3 fraction is 2/3 — doesn't satisfy the sum)", "is_correct": false},
-        {"option_text": "3/4 (confusing the denominator-3 fraction with the denominator-4 fraction)", "is_correct": false},
-        {"option_text": "4/3 (from misinterpreting the sequence as starting at numerator 4)", "is_correct": false}
+        {
+          "option_text": "1/3",
+          "is_correct": true
+        },
+        {
+          "option_text": "2/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "4/3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "EASY",
@@ -75,10 +123,22 @@
     {
       "stem": "What is the value of (2/3 + 3/4) ÷ (2/3 × 3/4)?",
       "options": [
-        {"option_text": "2 (from adding and then dividing by the product without simplifying: 17/12÷1/2=17/6≠2)", "is_correct": false},
-        {"option_text": "17/6 (from (8+9)÷(1/2)×(1/12): correctly: sum=17/12, product=6/12=1/2; result=17/12÷1/2=17/6)", "is_correct": true},
-        {"option_text": "17/12 (computing only the sum, forgetting to apply the division)", "is_correct": false},
-        {"option_text": "1/2 (computing only the product 2/3 × 3/4 = 1/2, forgetting the sum)", "is_correct": false}
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "17/6",
+          "is_correct": true
+        },
+        {
+          "option_text": "17/12",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "A man spends 1/3 of his salary on rent, 2/5 of the remainder on food, and saves the rest. What fraction of his salary does he save?",
       "options": [
-        {"option_text": "4/15 (from subtracting 2/5 of the full salary: 1−1/3−2/5 = 4/15 — error)", "is_correct": false},
-        {"option_text": "1/3 (from saving the same fraction spent on rent — not derived from the problem)", "is_correct": false},
-        {"option_text": "3/10 (from multiplying 1/3 × 3/5 instead of 2/3 × 3/5 for savings)", "is_correct": false},
-        {"option_text": "2/5 (correct: food = 2/5 × 2/3 = 4/15; savings = 2/3 − 4/15 = 6/15 = 2/5)", "is_correct": true}
+        {
+          "option_text": "4/15",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/10",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/5",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "Which of the following is the largest? 5/8, 9/14, 11/17, 7/11",
       "options": [
-        {"option_text": "5/8 (decimal 0.625 — the smallest of the four)", "is_correct": false},
-        {"option_text": "9/14 (decimal ≈ 0.643 — second smallest of the four)", "is_correct": false},
-        {"option_text": "11/17 (decimal ≈ 0.647 — the largest of the four)", "is_correct": true},
-        {"option_text": "7/11 (decimal ≈ 0.636 — third largest of the four)", "is_correct": false}
+        {
+          "option_text": "5/8",
+          "is_correct": false
+        },
+        {
+          "option_text": "9/14",
+          "is_correct": false
+        },
+        {
+          "option_text": "11/17",
+          "is_correct": true
+        },
+        {
+          "option_text": "7/11",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "If 2/5 of a number is 32, what is 3/8 of that number?",
       "options": [
-        {"option_text": "24 (number=80; 3/8×80=30, not 24)", "is_correct": false},
-        {"option_text": "28 (number=80; 3/8×80=30, not 28)", "is_correct": false},
-        {"option_text": "30 (2/5 × N = 32 → N = 80; 3/8 × 80 = 30)", "is_correct": true},
-        {"option_text": "36 (using 3/5 of 60 = 36 — wrong base number)", "is_correct": false}
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -143,10 +239,22 @@
     {
       "stem": "Simplify: (1 − 1/2) × (1 − 1/3) × (1 − 1/4) × ... × (1 − 1/10)",
       "options": [
-        {"option_text": "1/9 (thinking the pattern gives 1/n where n=9 terms)", "is_correct": false},
-        {"option_text": "1/10 (correct: telescoping product 1/2 × 2/3 × 3/4 × ... × 9/10 = 1/10)", "is_correct": true},
-        {"option_text": "1/5 (computing only part of the product)", "is_correct": false},
-        {"option_text": "1/2 (computing only the first factor)", "is_correct": false}
+        {
+          "option_text": "1/9",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/10",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "A fraction becomes 3/5 when 2 is added to its numerator and 3 is subtracted from its denominator. If the sum of the original numerator and denominator is 25, find the original fraction.",
       "options": [
-        {"option_text": "7/18 (check: (7+2)/(18−3)=9/15=3/5 ✓ and 7+18=25 ✓ — the correct fraction)", "is_correct": true},
-        {"option_text": "6/19 (check: (6+2)/(19−3)=8/16=1/2≠3/5 — fails the condition)", "is_correct": false},
-        {"option_text": "8/17 (check: (8+2)/(17−3)=10/14=5/7≠3/5 — fails the condition)", "is_correct": false},
-        {"option_text": "9/16 (check: (9+2)/(16−3)=11/13≠3/5 — fails the condition)", "is_correct": false}
+        {
+          "option_text": "7/18",
+          "is_correct": true
+        },
+        {
+          "option_text": "6/19",
+          "is_correct": false
+        },
+        {
+          "option_text": "8/17",
+          "is_correct": false
+        },
+        {
+          "option_text": "9/16",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",

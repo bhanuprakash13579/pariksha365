@@ -7,10 +7,22 @@
     {
       "stem": "If 3x + 7 = 22, what is the value of x?",
       "options": [
-        {"option_text": "4 (wrong: 3×4+7=19≠22)", "is_correct": false},
-        {"option_text": "5 (correct: 3x=22−7=15; x=5; verify: 3×5+7=22 ✓)", "is_correct": true},
-        {"option_text": "6 (wrong: 3×6+7=25≠22)", "is_correct": false},
-        {"option_text": "3 (wrong: 3×3+7=16≠22)", "is_correct": false}
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "Solve: 2x − 3y = 7 and x + y = 6. Find the value of x.",
       "options": [
-        {"option_text": "3 (x=3 → y=3; check eq1: 6−9=−3≠7)", "is_correct": false},
-        {"option_text": "5 (correct: from eq2: x=6−y; substitute: 2(6−y)−3y=7; 12−2y−3y=7; 5y=5; y=1; x=5 ✓)", "is_correct": true},
-        {"option_text": "4 (x=4→y=2; check: 8−6=2≠7)", "is_correct": false},
-        {"option_text": "7 (x=7→y=−1; check: 14+3=17≠7)", "is_correct": false}
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "If x² − 5x + 6 = 0, what are the values of x?",
       "options": [
-        {"option_text": "x = 1, x = 6 (check: 1−5+6=2≠0; doesn't work)", "is_correct": false},
-        {"option_text": "x = 2, x = 3 (correct: (x−2)(x−3)=0; x=2: 4−10+6=0 ✓; x=3: 9−15+6=0 ✓)", "is_correct": true},
-        {"option_text": "x = −2, x = −3 (wrong: these would give x²+5x+6=0, not −5x+6)", "is_correct": false},
-        {"option_text": "x = 2, x = −3 (check: x=−3: 9+15+6=30≠0)", "is_correct": false}
+        {
+          "option_text": "x = 1, x = 6",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 2, x = 3",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = −2, x = −3",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 2, x = −3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "If (x+3)/4 = (x−1)/2, find x.",
       "options": [
-        {"option_text": "3 (check: (3+3)/4=6/4=1.5; (3−1)/2=2/2=1; 1.5≠1)", "is_correct": false},
-        {"option_text": "5 (correct: cross-multiply: 2(x+3)=4(x−1); 2x+6=4x−4; 10=2x; x=5 ✓)", "is_correct": true},
-        {"option_text": "7 (check: (7+3)/4=10/4=2.5; (7−1)/2=6/2=3; 2.5≠3)", "is_correct": false},
-        {"option_text": "1 (check: (1+3)/4=1; (1−1)/2=0; 1≠0)", "is_correct": false}
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "The sum of a number and its square is 12. Find the number (take the positive value).",
       "options": [
-        {"option_text": "4 (4+16=20≠12)", "is_correct": false},
-        {"option_text": "3 (correct: 3+9=12 ✓; equation: n²+n−12=0; (n+4)(n−3)=0; n=3 (positive))", "is_correct": true},
-        {"option_text": "2 (2+4=6≠12)", "is_correct": false},
-        {"option_text": "6 (6+36=42≠12)", "is_correct": false}
+        {
+          "option_text": "4 (4+16=20≠12)",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 (2+4=6≠12)",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 (6+36=42≠12)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "If 5x − 2 > 13, which of the following must be true?",
       "options": [
-        {"option_text": "x > 2 (check: 5(2)−2=8, not >13; need x>3)", "is_correct": false},
-        {"option_text": "x > 3 (correct: 5x>15; x>3 ✓)", "is_correct": true},
-        {"option_text": "x ≥ 3 (includes x=3: 5(3)−2=13, which is NOT >13)", "is_correct": false},
-        {"option_text": "x < 3 (wrong direction)", "is_correct": false}
+        {
+          "option_text": "x > 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "x > 3",
+          "is_correct": true
+        },
+        {
+          "option_text": "x ≥ 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "x < 3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "The ages of A and B are in ratio 3:5. After 10 years, the ratio becomes 2:3. What is A's current age?",
       "options": [
-        {"option_text": "20 years (check: B=20×5/3≈33.3; after 10: 30/43.3≠2/3)", "is_correct": false},
-        {"option_text": "30 years (correct: 3x+10)/(5x+10)=2/3; 3(3x+10)=2(5x+10); 9x+30=10x+20; x=10; A=30 ✓)", "is_correct": true},
-        {"option_text": "24 years (check: ratio 24:40=3:5 ✓; after 10: 34:50=17:25≠2:3)", "is_correct": false},
-        {"option_text": "15 years (check: B=25; after 10: 25:35=5:7≠2:3)", "is_correct": false}
+        {
+          "option_text": "20 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 years",
+          "is_correct": true
+        },
+        {
+          "option_text": "24 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 years",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "If x + 1/x = 3, what is the value of x² + 1/x²?",
       "options": [
-        {"option_text": "7 (correct: (x+1/x)²=x²+2+1/x²=9; so x²+1/x²=9−2=7 ✓)", "is_correct": true},
-        {"option_text": "9 (that's the square of (x+1/x), not x²+1/x²)", "is_correct": false},
-        {"option_text": "6 (wrong: 3×2=6 — no algebraic basis)", "is_correct": false},
-        {"option_text": "11 (wrong)", "is_correct": false}
+        {
+          "option_text": "7",
+          "is_correct": true
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "A father is 3 times as old as his son. 12 years ago, he was 7 times as old. Find the son's current age.",
       "options": [
-        {"option_text": "20 years (check: father=60; 12 years ago son=8,father=48; 48/8=6≠7)", "is_correct": false},
-        {"option_text": "18 years (correct: son=s,father=3s; 12 years ago: 3s−12=7(s−12); 3s−12=7s−84; 4s=72; s=18 ✓)", "is_correct": true},
-        {"option_text": "16 years (check: father=48; 12 years ago son=4,father=36; 36/4=9≠7)", "is_correct": false},
-        {"option_text": "24 years (check: father=72; 12 years ago son=12,father=60; 60/12=5≠7)", "is_correct": false}
+        {
+          "option_text": "20 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 years",
+          "is_correct": true
+        },
+        {
+          "option_text": "16 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 years",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "If a + b = 10 and ab = 21, what is (a − b)²?",
       "options": [
-        {"option_text": "16 (correct: (a−b)²=(a+b)²−4ab=100−84=16 ✓)", "is_correct": true},
-        {"option_text": "4 (wrong: √(a−b)²=4 would mean a−b=4; check: if a+b=10,ab=21,a−b=4 → a=7,b=3; 7×3=21 ✓ — wait, this IS consistent! (a−b)²=(7−3)²=16, not 4)", "is_correct": false},
-        {"option_text": "79 (wrong: 100−21=79 — forgot the factor of 4)", "is_correct": false},
-        {"option_text": "58 (wrong)", "is_correct": false}
+        {
+          "option_text": "16",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "79",
+          "is_correct": false
+        },
+        {
+          "option_text": "58",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",

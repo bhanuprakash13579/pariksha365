@@ -7,10 +7,22 @@
     {
       "stem": "In a 1000 m race, A beats B by 100 m. By how many seconds does A beat B if B runs 100 m in 10 seconds?",
       "options": [
-        {"option_text": "5 seconds (wrong: B runs 100 m in 10 s, so B takes 10 s to cover that 100 m disadvantage)", "is_correct": false},
-        {"option_text": "10 seconds (correct: when A finishes 1000 m, B has run 900 m; B needs to run 100 more m; B's speed=100/10=10 m/s; time=100/10=10 s ✓)", "is_correct": true},
-        {"option_text": "12 seconds (wrong: that would require B running 100 m in 12 s — but the problem says 10 s)", "is_correct": false},
-        {"option_text": "100 seconds (wrong: B covers 100 m/s — not 1 m/s)", "is_correct": false}
+        {
+          "option_text": "5 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 seconds",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "100 seconds",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "In a 100 m race, A gives B a start of 10 m and still beats B by 5 m. By what distance would A beat B if they started together from the same point?",
       "options": [
-        {"option_text": "15 m (wrong: with 10 m start, A beats by 5 m — total distance advantage is NOT simply 15 m)", "is_correct": false},
-        {"option_text": "14.44 m (correct: in 100 m, B runs 90−5=85 m when A finishes; A:B ratio=100:85=20:17; in straight race starting together, A finishes 100m while B covers 85m; A beats by 15 m... wait let me recalculate)", "is_correct": false},
-        {"option_text": "15 m (correct: A runs 100 m while B runs 100−10−5=85 m; so A:B = 100:85; at end of race B would be at 85 m; A beats by 15 m ✓)", "is_correct": true},
-        {"option_text": "5 m (just the winning margin without the start)", "is_correct": false}
+        {
+          "option_text": "15 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "14.44 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 m",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -41,10 +65,22 @@
     {
       "stem": "In a 200 m race, A runs at 10 m/s and B runs at 8 m/s. By how much does A beat B?",
       "options": [
-        {"option_text": "20 m (wrong: A finishes in 20 s; B covers 8×20=160 m; A beats by 200−160=40 m)", "is_correct": false},
-        {"option_text": "40 m (correct: A finishes in 200/10=20 s; B covers 8×20=160 m; A wins by 200−160=40 m ✓)", "is_correct": true},
-        {"option_text": "25 seconds (this is time, not distance — wrong unit)", "is_correct": false},
-        {"option_text": "2 seconds (A finishes in 20 s; B finishes in 200/8=25 s; A beats B by 5 s — not 2 s)", "is_correct": false}
+        {
+          "option_text": "20 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "25 seconds",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 seconds",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "A can beat B by 20 m and B can beat C by 10 m in a 100 m race. By how much can A beat C?",
       "options": [
-        {"option_text": "30 m (wrong: simple addition ignores the proportional relationship)", "is_correct": false},
-        {"option_text": "28 m (correct: when A finishes 100 m, B covers 80 m; when B finishes 100 m, C covers 90 m; ratio B:C = 100:90; when A finishes (B=80 m), C covers 80×90/100=72 m; A beats C by 100−72=28 m ✓)", "is_correct": true},
-        {"option_text": "29 m (wrong)", "is_correct": false},
-        {"option_text": "20 m (only A vs B — forgot the B vs C part)", "is_correct": false}
+        {
+          "option_text": "30 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "28 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "29 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 m",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "A and B run a 500 m race. A runs at 5 m/s and B runs at 4 m/s. If A gives B a head start of 100 m, who wins and by how much?",
       "options": [
-        {"option_text": "B wins by 25 m (wrong: let's calculate: A finishes in 500/5=100 s; B covers 400 m start-to-finish, runs 4×100=400 m from his start — but B started 100 m ahead, so B's finish position = 100+400=500 m; they finish at the SAME time; neither wins — it's a tie!)", "is_correct": false},
-        {"option_text": "A wins by 100 m (wrong: see calculation above)", "is_correct": false},
-        {"option_text": "They tie (correct: A finishes 500 m in 100 s; B starts at 100 m and in 100 s covers 4×100=400 m; B's position=100+400=500 m = finish line; DEAD HEAT ✓)", "is_correct": true},
-        {"option_text": "A wins by 25 m (wrong: it's a tie)", "is_correct": false}
+        {
+          "option_text": "B wins by 25 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "A wins by 100 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "They tie",
+          "is_correct": true
+        },
+        {
+          "option_text": "A wins by 25 m",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -92,10 +152,22 @@
     {
       "stem": "In a game, A can give B 20 points and C 32 points. How many points can B give C in the same game (out of 100 points)?",
       "options": [
-        {"option_text": "12 points (wrong: simple subtraction ignores ratio)", "is_correct": false},
-        {"option_text": "15 points (correct: A:B = 100:80; A:C = 100:68; B:C = (100/80)/(100/68) = 68/80 = 17/20; B can give C (100−100×68/80) = 100−85=15 points ✓)", "is_correct": true},
-        {"option_text": "13 points (wrong)", "is_correct": false},
-        {"option_text": "20 points (wrong: B can give A 20, not C)", "is_correct": false}
+        {
+          "option_text": "12 points",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 points",
+          "is_correct": true
+        },
+        {
+          "option_text": "13 points",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 points",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -109,10 +181,22 @@
     {
       "stem": "In a 100 m race, P runs from the start and Q starts 3 seconds later. P's speed is 8 m/s and Q's speed is 10 m/s. Who finishes first?",
       "options": [
-        {"option_text": "P (P: time=100/8=12.5 s; Q starts at t=3: finishes at t=3+100/10=3+10=13 s; P finishes at 12.5 s < 13 s — P wins!)", "is_correct": true},
-        {"option_text": "Q (Q finishes at t=13 s vs P at t=12.5 s; P finishes first, not Q)", "is_correct": false},
-        {"option_text": "They tie (12.5 s ≠ 13 s; different finish times)", "is_correct": false},
-        {"option_text": "Cannot be determined (both speeds and delays are given — determinable)", "is_correct": false}
+        {
+          "option_text": "P",
+          "is_correct": true
+        },
+        {
+          "option_text": "Q",
+          "is_correct": false
+        },
+        {
+          "option_text": "They tie",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "In a 600 m race, the ratio of speeds of X and Y is 3:2. If X gives Y a start of 200 m, who wins?",
       "options": [
-        {"option_text": "X wins (X:Y=3:2; Y gets 200 m start; Y needs to run 400 m; X runs 600 m; time X=600/3t=200/t; time Y=400/2t=200/t; they finish at the same time — it's a tie)", "is_correct": false},
-        {"option_text": "Y wins (wrong: see calculation)", "is_correct": false},
-        {"option_text": "They tie (correct: speed ratio 3:2; X covers 600 m in time T=600/3v=200/v; Y covers 400 m in T=400/2v=200/v; same time → dead heat ✓)", "is_correct": true},
-        {"option_text": "Cannot be determined (calculable — it's a tie)", "is_correct": false}
+        {
+          "option_text": "X wins",
+          "is_correct": false
+        },
+        {
+          "option_text": "Y wins",
+          "is_correct": false
+        },
+        {
+          "option_text": "They tie",
+          "is_correct": true
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",

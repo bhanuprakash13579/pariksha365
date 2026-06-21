@@ -7,10 +7,22 @@
     {
       "stem": "Find the mean of: 12, 15, 18, 20, 25",
       "options": [
-        {"option_text": "18 (correct: sum=12+15+18+20+25=90; mean=90/5=18 ✓)", "is_correct": true},
-        {"option_text": "20 (wrong: 20 is the 4th value, not the mean)", "is_correct": false},
-        {"option_text": "17 (wrong: 17×5=85≠90)", "is_correct": false},
-        {"option_text": "19 (wrong: 19×5=95≠90)", "is_correct": false}
+        {
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "17",
+          "is_correct": false
+        },
+        {
+          "option_text": "19",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "Find the median of: 7, 3, 1, 9, 5",
       "options": [
-        {"option_text": "3 (wrong: must sort first: 1,3,5,7,9; median=middle=5)", "is_correct": false},
-        {"option_text": "5 (correct: sort: 1,3,5,7,9; middle value (3rd of 5)=5 ✓)", "is_correct": true},
-        {"option_text": "7 (wrong: 7 is the 4th value, not middle)", "is_correct": false},
-        {"option_text": "9 (wrong: 9 is the largest value)", "is_correct": false}
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "Find the mode of: 4, 7, 4, 3, 7, 4, 9, 7, 4",
       "options": [
-        {"option_text": "7 (wrong: 7 appears 3 times; 4 appears 4 times)", "is_correct": false},
-        {"option_text": "4 (correct: 4 appears 4 times (most frequent); mode=4 ✓)", "is_correct": true},
-        {"option_text": "3 (wrong: 3 appears only once)", "is_correct": false},
-        {"option_text": "Both 4 and 7 (wrong: 4 appears 4 times, 7 appears 3 times; 4 is the only mode)", "is_correct": false}
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both 4 and 7",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "The mean of 5 numbers is 16. If one number is excluded, the mean becomes 14. Find the excluded number.",
       "options": [
-        {"option_text": "20 (wrong: total=5×16=80; new total=4×14=56; excluded=80-56=24)", "is_correct": false},
-        {"option_text": "24 (correct: total=80; new total (4 numbers)=56; excluded=80-56=24 ✓)", "is_correct": true},
-        {"option_text": "22 (wrong: 80-58=22; would need new mean=58/4=14.5)", "is_correct": false},
-        {"option_text": "26 (wrong: 80-54=26; would need 4 numbers with total 54, mean=13.5)", "is_correct": false}
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": true
+        },
+        {
+          "option_text": "22",
+          "is_correct": false
+        },
+        {
+          "option_text": "26",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "The average of 10 numbers is 25. If 5 is added to each number, what is the new average?",
       "options": [
-        {"option_text": "25 (wrong: adding 5 to each number increases the mean by 5)", "is_correct": false},
-        {"option_text": "30 (correct: adding a constant to every value increases the mean by that constant; 25+5=30 ✓)", "is_correct": true},
-        {"option_text": "35 (wrong: 35 would result from adding 10)", "is_correct": false},
-        {"option_text": "50 (wrong: 50 would need doubling all values)", "is_correct": false}
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "option_text": "35",
+          "is_correct": false
+        },
+        {
+          "option_text": "50",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -92,10 +152,22 @@
     {
       "stem": "Find the median of: 13, 17, 22, 28, 34, 40",
       "options": [
-        {"option_text": "22 (wrong: 22 is the 3rd value; median of even n = avg of middle two)", "is_correct": false},
-        {"option_text": "25 (correct: even count (6); median = avg of 3rd and 4th values = (22+28)/2 = 25 ✓)", "is_correct": true},
-        {"option_text": "28 (wrong: 28 is the 4th value; average of 3rd and 4th is needed)", "is_correct": false},
-        {"option_text": "23 (wrong: doesn't match the calculation)", "is_correct": false}
+        {
+          "option_text": "22",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": true
+        },
+        {
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "option_text": "23",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "Which measure of central tendency is most affected by extreme values (outliers)?",
       "options": [
-        {"option_text": "Median (wrong: median is resistant to outliers — it's based on position, not value)", "is_correct": false},
-        {"option_text": "Mean (correct: mean uses all values in calculation, so extreme values pull it significantly ✓)", "is_correct": true},
-        {"option_text": "Mode (wrong: mode only counts frequencies; extreme values don't affect frequency of other values)", "is_correct": false},
-        {"option_text": "All three equally (wrong: mean is most affected)", "is_correct": false}
+        {
+          "option_text": "Median",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mean",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mode",
+          "is_correct": false
+        },
+        {
+          "option_text": "All three equally",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "A student scored 60, 70, 80, 90, and X in five tests. If the mean is 76, find X.",
       "options": [
-        {"option_text": "78 (wrong: 60+70+80+90+X=5×76=380; 300+X=380; X=80)", "is_correct": false},
-        {"option_text": "80 (correct: sum=5×76=380; 60+70+80+90=300; X=380-300=80 ✓)", "is_correct": true},
-        {"option_text": "76 (wrong: if X=76, sum=376≠380)", "is_correct": false},
-        {"option_text": "82 (wrong: if X=82, sum=382≠380)", "is_correct": false}
+        {
+          "option_text": "78",
+          "is_correct": false
+        },
+        {
+          "option_text": "80",
+          "is_correct": true
+        },
+        {
+          "option_text": "76",
+          "is_correct": false
+        },
+        {
+          "option_text": "82",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "The mean of first n natural numbers is:",
       "options": [
-        {"option_text": "n (wrong: sum of first n natural numbers = n(n+1)/2; mean = sum/n = (n+1)/2)", "is_correct": false},
-        {"option_text": "(n+1)/2 (correct: mean of 1,2,3,...,n = [n(n+1)/2]/n = (n+1)/2 ✓)", "is_correct": true},
-        {"option_text": "n/2 (wrong: n/2 ≠ (n+1)/2 unless n is irrelevant)", "is_correct": false},
-        {"option_text": "n(n+1)/2 (wrong: that's the SUM, not the mean)", "is_correct": false}
+        {
+          "option_text": "n",
+          "is_correct": false
+        },
+        {
+          "option_text": "(n+1)/2",
+          "is_correct": true
+        },
+        {
+          "option_text": "n/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "n(n+1)/2",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "The mean of 3, 7, 11 and x is 8. What is the median of this data set?",
       "options": [
-        {"option_text": "8 (wrong: x=8×4-(3+7+11)=32-21=11; data=3,7,11,11; sorted: 3,7,11,11; median=(7+11)/2=9)", "is_correct": false},
-        {"option_text": "9 (correct: x=11; data sorted: 3,7,11,11; median=(7+11)/2=9 ✓)", "is_correct": true},
-        {"option_text": "10 (wrong: doesn't match the calculation)", "is_correct": false},
-        {"option_text": "11 (wrong: 11 is a value but not the median)", "is_correct": false}
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": true
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",

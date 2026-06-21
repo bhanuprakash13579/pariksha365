@@ -7,10 +7,22 @@
     {
       "stem": "In what ratio must tea costing ₹120/kg be mixed with tea costing ₹80/kg to get a mixture costing ₹90/kg?",
       "options": [
-        {"option_text": "1:2 (alligation: cheaper excess=90−80=10; costlier excess=120−90=30; ratio=10:30=1:3, not 1:2)", "is_correct": false},
-        {"option_text": "1:3 (correct: by alligation: ratio of cheaper:costlier = (90−80):(120−90) = 10:30 = 1:3 ✓)", "is_correct": true},
-        {"option_text": "3:1 (wrong: this would be costlier:cheaper ratio, i.e., swapped)", "is_correct": false},
-        {"option_text": "2:1 (wrong)", "is_correct": false}
+        {
+          "option_text": "1:2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:3",
+          "is_correct": true
+        },
+        {
+          "option_text": "3:1",
+          "is_correct": false
+        },
+        {
+          "option_text": "2:1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "A milkman mixes water (costing ₹0) with milk costing ₹40/litre to get a mixture worth ₹32/litre. In what ratio does he mix water to milk?",
       "options": [
-        {"option_text": "1:4 (alligation: water gain=32−0=32; milk loss=40−32=8; water:milk=8:32=1:4 ✓)", "is_correct": true},
-        {"option_text": "4:1 (inverted: this means more water than milk — wrong direction)", "is_correct": false},
-        {"option_text": "1:5 (wrong: 32:8=4:1 for milk:water, reversed gives 1:4)", "is_correct": false},
-        {"option_text": "3:8 (wrong calculation)", "is_correct": false}
+        {
+          "option_text": "1:4",
+          "is_correct": true
+        },
+        {
+          "option_text": "4:1",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:5",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:8",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "A vessel contains 40 litres of pure milk. 8 litres is removed and replaced with water. The process is repeated once more. What fraction of the vessel is now milk?",
       "options": [
-        {"option_text": "3/5 (wrong: (1−8/40)²=(32/40)²=(4/5)²=16/25, not 3/5)", "is_correct": false},
-        {"option_text": "16/25 (correct: milk fraction = (1−8/40)² = (4/5)² = 16/25 ✓)", "is_correct": true},
-        {"option_text": "4/5 (only one replacement — with two repetitions it's (4/5)²)", "is_correct": false},
-        {"option_text": "64/125 (that would be 3 repetitions: (4/5)³)", "is_correct": false}
+        {
+          "option_text": "3/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "16/25",
+          "is_correct": true
+        },
+        {
+          "option_text": "4/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "64/125",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -58,10 +94,22 @@
     {
       "stem": "How many kg of rice at ₹6.20/kg must be mixed with 126 kg of rice at ₹7.20/kg to produce a mixture worth ₹6.45/kg?",
       "options": [
-        {"option_text": "126 kg (alligation: (6.45−6.20):(7.20−6.45)=0.25:0.75=1:3; so cheaper=3×126=378 kg)", "is_correct": false},
-        {"option_text": "378 kg (correct: ratio cheap:dear=(7.20−6.45):(6.45−6.20)=0.75:0.25=3:1; cheap=3×126=378 kg ✓)", "is_correct": true},
-        {"option_text": "252 kg (wrong ratio applied)", "is_correct": false},
-        {"option_text": "504 kg (wrong)", "is_correct": false}
+        {
+          "option_text": "126 kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "378 kg",
+          "is_correct": true
+        },
+        {
+          "option_text": "252 kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "504 kg",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "A 100-litre mixture of milk and water has 70% milk. How much water must be added to make the milk content 50%?",
       "options": [
-        {"option_text": "30 litres (current milk=70L; after adding 30L water: total=130, milk%=70/130=53.8%≠50%)", "is_correct": false},
-        {"option_text": "40 litres (correct: milk=70L must be 50% of new total; new total=70/0.5=140L; water to add=140−100=40L ✓)", "is_correct": true},
-        {"option_text": "50 litres (70/150=46.7%≠50%)", "is_correct": false},
-        {"option_text": "20 litres (70/120=58.3%≠50%)", "is_correct": false}
+        {
+          "option_text": "30 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 litres",
+          "is_correct": true
+        },
+        {
+          "option_text": "50 litres",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 litres",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "Two alloys have gold content 80% and 60% respectively. If they are mixed in the ratio 3:2, what is the gold percentage in the new alloy?",
       "options": [
-        {"option_text": "70% (simple average — correct only if mixed in equal parts, not 3:2)", "is_correct": false},
-        {"option_text": "72% (correct: gold=(3×80+2×60)/(3+2)=(240+120)/5=360/5=72% ✓)", "is_correct": true},
-        {"option_text": "74% (wrong calculation)", "is_correct": false},
-        {"option_text": "68% (wrong: if ratio were 2:3 then (2×80+3×60)/5=(160+180)/5=340/5=68%)", "is_correct": false}
+        {
+          "option_text": "70%",
+          "is_correct": false
+        },
+        {
+          "option_text": "72%",
+          "is_correct": true
+        },
+        {
+          "option_text": "74%",
+          "is_correct": false
+        },
+        {
+          "option_text": "68%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "A shopkeeper mixes two varieties of rice at ₹15/kg and ₹20/kg to sell the mixture at ₹16/kg at a 10% profit. In what ratio should he mix them?",
       "options": [
-        {"option_text": "4:1 (CP of mixture=16/1.1≈14.55; alligation: (14.55−15)=−0.45 and (20−14.55)=5.45; ratio≈1:12 — need to recalculate)", "is_correct": false},
-        {"option_text": "9:1 (correct: CP of mixture=16/1.10=14.545≈80/5.5; alligation with ₹15 and ₹20: (20−14.545):(14.545−15)=5.455:−0.455 — CP<₹15 means he actually needs negative amount of cheaper? This doesn't work cleanly. The problem needs cleaner numbers)", "is_correct": false},
-        {"option_text": "1:9 (wrong)", "is_correct": false},
-        {"option_text": "Cannot be determined with only these constraints — the selling price and profit imply CP≈₹14.55 which is below the cheaper variety; mixing alone cannot achieve this CP without selling below cost", "is_correct": true}
+        {
+          "option_text": "4:1",
+          "is_correct": false
+        },
+        {
+          "option_text": "9:1",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:9",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined with only these constraints — the selling price and profit imply CP≈₹14.55 which is below the cheaper variety; mixing alone cannot achieve this CP without selling below cost",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "A container has 60 litres of spirit. From this, 6 litres is taken out and replaced with water. This process is done 2 more times (total 3 times). What is the ratio of spirit to water in the final mixture?",
       "options": [
-        {"option_text": "729:271 (correct: spirit fraction=(54/60)³=(9/10)³=729/1000; ratio spirit:water=729:271 ✓)", "is_correct": true},
-        {"option_text": "27:8 (that would be (9/10)³ vs remainder but doesn't match)", "is_correct": false},
-        {"option_text": "243:57 (wrong: spirit=60×(0.9)³=60×0.729=43.74; water=60−43.74=16.26; ratio≈43.74:16.26≈729:271, not 243:57)", "is_correct": false},
-        {"option_text": "9:1 (only one replacement: spirit=54, water=6; 54:6=9:1)", "is_correct": false}
+        {
+          "option_text": "729:271",
+          "is_correct": true
+        },
+        {
+          "option_text": "27:8",
+          "is_correct": false
+        },
+        {
+          "option_text": "243:57",
+          "is_correct": false
+        },
+        {
+          "option_text": "9:1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "A class has 40 students. The average marks of 25 students is 60 and the average marks of the remaining 15 students is 40. What is the overall class average?",
       "options": [
-        {"option_text": "50 (simple average of 60 and 40 — only valid if equal numbers in each group)", "is_correct": false},
-        {"option_text": "52.5 (correct: sum1=25×60=1500; sum2=15×40=600; total=2100; avg=2100/40=52.5 ✓)", "is_correct": true},
-        {"option_text": "55 (wrong: biased toward neither group correctly)", "is_correct": false},
-        {"option_text": "48 (wrong)", "is_correct": false}
+        {
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "option_text": "52.5",
+          "is_correct": true
+        },
+        {
+          "option_text": "55",
+          "is_correct": false
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "In what ratio must water be added to spirit costing ₹50/litre to obtain a solution costing ₹40/litre?",
       "options": [
-        {"option_text": "4:1 (alligation: water=₹0; spirit=₹50; mean=₹40; water:spirit=(50−40):(40−0)=10:40=1:4; so water:spirit=1:4, not 4:1)", "is_correct": false},
-        {"option_text": "1:4 (correct: alligation: water part=(50−40)=10; spirit part=(40−0)=40; water:spirit=10:40=1:4 ✓)", "is_correct": true},
-        {"option_text": "4:5 (wrong calculation)", "is_correct": false},
-        {"option_text": "3:7 (wrong)", "is_correct": false}
+        {
+          "option_text": "4:1",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:4",
+          "is_correct": true
+        },
+        {
+          "option_text": "4:5",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:7",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",

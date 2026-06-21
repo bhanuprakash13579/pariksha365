@@ -7,10 +7,22 @@
     {
       "stem": "Find the missing value:\n| 4  | 9  | 16 |\n| 25 | 36 | 49 |\n| 64 | 81 | ?  |",
       "options": [
-        {"option_text": "90 (wrong: the pattern is perfect squares; 10²=100)", "is_correct": false},
-        {"option_text": "100 (correct: 2²,3²,4²,5²,6²,7²,8²,9²,10² = 100 ✓)", "is_correct": true},
-        {"option_text": "121 (wrong: 121=11²; the sequence is 2-10, not 2-11)", "is_correct": false},
-        {"option_text": "144 (wrong: 144=12²; too far in the sequence)", "is_correct": false}
+        {
+          "option_text": "90",
+          "is_correct": false
+        },
+        {
+          "option_text": "100",
+          "is_correct": true
+        },
+        {
+          "option_text": "121",
+          "is_correct": false
+        },
+        {
+          "option_text": "144",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "Find the missing number in the row:\n| 3 | 6 | 12 | 24 | ? |",
       "options": [
-        {"option_text": "36 (wrong: pattern is ×2 each time; 24×2=48)", "is_correct": false},
-        {"option_text": "48 (correct: each number ×2; 3→6→12→24→48 ✓)", "is_correct": true},
-        {"option_text": "30 (wrong: 30 would be 24+6, not 24×2)", "is_correct": false},
-        {"option_text": "32 (wrong: not the right multiple)", "is_correct": false}
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "48",
+          "is_correct": true
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "32",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "In the matrix below, find the value of ?:\n| 2  | 4  | 8  |\n| 3  | 9  | 27 |\n| 4  | 16 | ?  |",
       "options": [
-        {"option_text": "32 (wrong: 4,16 follows ×4; next would be 64; not ×2 pattern)", "is_correct": false},
-        {"option_text": "64 (correct: each row: n, n², n³; row1:2,4,8; row2:3,9,27; row3:4,16,64 ✓)", "is_correct": true},
-        {"option_text": "48 (wrong: 48≠4³)", "is_correct": false},
-        {"option_text": "256 (wrong: 256=4⁴; the pattern is ×2, ×3, ×4 within each row)", "is_correct": false}
+        {
+          "option_text": "32",
+          "is_correct": false
+        },
+        {
+          "option_text": "64",
+          "is_correct": true
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "256",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "Find the missing number:\n| 7 | 9 | 11 |\n| 13 | 15 | 17 |\n| 19 | 21 | ?  |",
       "options": [
-        {"option_text": "23 (correct: sequence is all odd numbers from 7; 7,9,11,13,15,17,19,21,23 ✓)", "is_correct": true},
-        {"option_text": "22 (wrong: 22 is even; pattern uses odd numbers only)", "is_correct": false},
-        {"option_text": "25 (wrong: 25 would skip 23)", "is_correct": false},
-        {"option_text": "24 (wrong: 24 is even)", "is_correct": false}
+        {
+          "option_text": "23",
+          "is_correct": true
+        },
+        {
+          "option_text": "22",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "EASY",
@@ -75,10 +123,22 @@
     {
       "stem": "Find the missing number:\n| 1 | 2 | 3 |\n| 4 | 5 | 6 |\n| 7 | ? | 9 |",
       "options": [
-        {"option_text": "6 (wrong: the pattern is consecutive integers; 8 follows 7)", "is_correct": false},
-        {"option_text": "8 (correct: sequential integers 1-9; row3: 7,8,9 ✓)", "is_correct": true},
-        {"option_text": "10 (wrong: 10 is beyond the 3×3 grid of 1-9)", "is_correct": false},
-        {"option_text": "7 (wrong: 7 is already in the first column)", "is_correct": false}
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": true
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -92,10 +152,22 @@
     {
       "stem": "Find the missing number:\n| 6  | 11 | 18 |\n| 27 | 38 | 51 |\n| 66 | 83 | ?  |",
       "options": [
-        {"option_text": "100 (wrong: differences: row1: 5,7; row2: 11,13; row3: 17,19; last number=83+19=102)", "is_correct": false},
-        {"option_text": "102 (correct: column differences: row1-row2 diff increases by 6 each time; row3: 83+19=102 ✓)", "is_correct": true},
-        {"option_text": "98 (wrong: doesn't match pattern)", "is_correct": false},
-        {"option_text": "104 (wrong: close but 83+19=102, not 104)", "is_correct": false}
+        {
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "option_text": "102",
+          "is_correct": true
+        },
+        {
+          "option_text": "98",
+          "is_correct": false
+        },
+        {
+          "option_text": "104",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -109,10 +181,22 @@
     {
       "stem": "Find the missing value:\n| 10 | 20 | 40 |\n| 15 | 30 | 60 |\n| 25 | ?  | 100|",
       "options": [
-        {"option_text": "40 (wrong: pattern: each row ×2 then ×2; column pattern: 10,15,25 (×1.5,×1.67); middle column=first×2: 20,30,?=50)", "is_correct": false},
-        {"option_text": "50 (correct: each row second number=first×2, third=first×4; 25×2=50 ✓)", "is_correct": true},
-        {"option_text": "45 (wrong: 45≠25×2)", "is_correct": false},
-        {"option_text": "55 (wrong: 55≠25×2)", "is_correct": false}
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "50",
+          "is_correct": true
+        },
+        {
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "option_text": "55",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "Find the value replacing ?:\n| 3  | 5  | 8  |\n| 8  | 13 | 21 |\n| 21 | 34 | ?  |",
       "options": [
-        {"option_text": "48 (wrong: this looks like Fibonacci; 21+34=55)", "is_correct": false},
-        {"option_text": "55 (correct: each number = sum of the two preceding it in the matrix sequence; this follows Fibonacci: 3,5,8,13,21,34,55 ✓)", "is_correct": true},
-        {"option_text": "42 (wrong: 21+21=42; wrong operation)", "is_correct": false},
-        {"option_text": "68 (wrong: 34×2=68; wrong operation)", "is_correct": false}
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "55",
+          "is_correct": true
+        },
+        {
+          "option_text": "42",
+          "is_correct": false
+        },
+        {
+          "option_text": "68",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "A matrix has this property: the product of each row's numbers is the same. Fill in ?:\n| 2 | 4 | 6  |\n| 3 | 6 | ?  |\n| 4 | 3 | 12 |",
       "options": [
-        {"option_text": "4 (correct: row1 product=2×4×6=48; row3=4×3×12=144≠48; let me try: row product: row1=48; but 48≠row3=144; different products... try sum: row1=12, row3=19≠12; column pattern: col1=2,3,4; col2=4,6,3; col3=6,?,12; col1×col2×col3: row1=48; row2=3×6×?=18?×... if product pattern: 48=row2 product? 3×6×?=48; ?=48/18=8/3; not integer. This pattern isn't clear. Let me try: row sums=12,?,19; or use the relationship that all rows have same sum: row1=12; for row2=12: 3+6+?=12; ?=3)", "is_correct": false},
-        {"option_text": "3 (correct: row sum pattern: 2+4+6=12; for row2: 3+6+?=12; ?=3 ✓)", "is_correct": true},
-        {"option_text": "6 (wrong: 3+6+6=15≠12)", "is_correct": false},
-        {"option_text": "9 (wrong: 3+6+9=18≠12)", "is_correct": false}
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "Find the missing number:\n| 5(7)9 |\n| 6(8)10 |\n| 7(?)11 |",
       "options": [
-        {"option_text": "8 (wrong: check pattern: 5+9=14; 7 is in middle — is it (5+9)/2=7 ✓; 6+10=16; 8=(6+10)/2 ✓; 7+11=18; ?=18/2=9)", "is_correct": false},
-        {"option_text": "9 (correct: pattern: middle = (left+right)/2; 5+9=14/2=7; 6+10=16/2=8; 7+11=18/2=9 ✓)", "is_correct": true},
-        {"option_text": "10 (wrong: (7+11)/2=9, not 10)", "is_correct": false},
-        {"option_text": "8 (same as first option — wrong)", "is_correct": false}
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": true
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",

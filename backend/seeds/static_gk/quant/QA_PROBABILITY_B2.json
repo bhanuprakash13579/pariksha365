@@ -7,10 +7,22 @@
     {
       "stem": "A card is drawn at random from a standard deck of 52 cards. What is the probability it is a king?",
       "options": [
-        {"option_text": "1/13 (correct: 4 kings in 52 cards; P=4/52=1/13 ✓)", "is_correct": true},
-        {"option_text": "1/52 (probability of one specific card — not any king)", "is_correct": false},
-        {"option_text": "4/13 (wrong: 4/52=1/13, not 4/13)", "is_correct": false},
-        {"option_text": "1/4 (probability of a suit — not specific rank)", "is_correct": false}
+        {
+          "option_text": "1/13",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/52",
+          "is_correct": false
+        },
+        {
+          "option_text": "4/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "A bag contains 3 red balls, 4 blue balls, and 5 green balls. One ball is drawn at random. What is the probability of drawing a blue ball?",
       "options": [
-        {"option_text": "1/3 (wrong: 4/12=1/3 is actually correct — let me re-check: 4/12=1/3 ✓)", "is_correct": false},
-        {"option_text": "1/3 (correct: total=3+4+5=12; P(blue)=4/12=1/3 ✓)", "is_correct": true},
-        {"option_text": "4/5 (wrong: 4/(4+5) is not the right denominator)", "is_correct": false},
-        {"option_text": "1/4 (wrong: 4 blue out of 12 total = 1/3, not 1/4)", "is_correct": false}
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": true
+        },
+        {
+          "option_text": "4/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "Two dice are thrown simultaneously. What is the probability of getting a sum of 7?",
       "options": [
-        {"option_text": "1/6 (correct: pairs giving sum 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 pairs; total outcomes=36; P=6/36=1/6 ✓)", "is_correct": true},
-        {"option_text": "7/36 (wrong: only 6 pairs give sum 7, not 7)", "is_correct": false},
-        {"option_text": "1/12 (wrong: P=3/36=1/12 is for sum of 10)", "is_correct": false},
-        {"option_text": "5/36 (5 pairs give sum 8, not 7)", "is_correct": false}
+        {
+          "option_text": "1/6",
+          "is_correct": true
+        },
+        {
+          "option_text": "7/36",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/12",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/36",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "A coin is tossed 3 times. What is the probability of getting exactly 2 heads?",
       "options": [
-        {"option_text": "1/4 (wrong: that's getting at least 2 heads)", "is_correct": false},
-        {"option_text": "3/8 (correct: outcomes with exactly 2 heads: HHT, HTH, THH = 3; total outcomes=2³=8; P=3/8 ✓)", "is_correct": true},
-        {"option_text": "1/2 (wrong)", "is_correct": false},
-        {"option_text": "1/8 (probability of all 3 heads)", "is_correct": false}
+        {
+          "option_text": "1/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/8",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/8",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "From a group of 4 men and 3 women, 2 people are selected at random. What is the probability that both are women?",
       "options": [
-        {"option_text": "3/7 (wrong: P=³C₂/⁷C₂=3/21=1/7)", "is_correct": false},
-        {"option_text": "1/7 (correct: ³C₂=3; ⁷C₂=21; P=3/21=1/7 ✓)", "is_correct": true},
-        {"option_text": "2/7 (wrong)", "is_correct": false},
-        {"option_text": "9/49 (wrong: (3/7)²=9/49 is without replacement error)", "is_correct": false}
+        {
+          "option_text": "3/7",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/7",
+          "is_correct": true
+        },
+        {
+          "option_text": "2/7",
+          "is_correct": false
+        },
+        {
+          "option_text": "9/49",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "A card is drawn from a deck of 52. What is the probability of getting a red face card?",
       "options": [
-        {"option_text": "3/26 (correct: red face cards=6 (3 per suit × 2 red suits); P=6/52=3/26 ✓)", "is_correct": true},
-        {"option_text": "1/13 (4/52 — that's probability of any face card of one suit)", "is_correct": false},
-        {"option_text": "6/13 (wrong: denominator should be 52 not 13)", "is_correct": false},
-        {"option_text": "1/4 (probability of red card = 1/2; face card = 12/52; these are not addable directly)", "is_correct": false}
+        {
+          "option_text": "3/26",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "6/13",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "Events A and B are mutually exclusive. P(A) = 0.4 and P(B) = 0.3. What is P(A or B)?",
       "options": [
-        {"option_text": "0.12 (P(A)×P(B) = 0.4×0.3 = 0.12 — that's P(A and B) for independent events)", "is_correct": false},
-        {"option_text": "0.7 (correct: mutually exclusive → P(A∪B) = P(A)+P(B) = 0.4+0.3 = 0.7 ✓)", "is_correct": true},
-        {"option_text": "0.58 (P(A)+P(B)−P(A)×P(B) = 0.4+0.3−0.12 — formula for independent, not mutually exclusive)", "is_correct": false},
-        {"option_text": "1.0 (wrong: probabilities don't sum to 1 unless complementary)", "is_correct": false}
+        {
+          "option_text": "0.12",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.7",
+          "is_correct": true
+        },
+        {
+          "option_text": "0.58",
+          "is_correct": false
+        },
+        {
+          "option_text": "1.0",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "A bag has 6 white and 4 black balls. Two balls are drawn without replacement. What is the probability that both are white?",
       "options": [
-        {"option_text": "9/25 (wrong: (6/10)×(6/10) = 36/100 = 9/25 — this is WITH replacement)", "is_correct": false},
-        {"option_text": "1/3 (correct: P = (6/10)×(5/9) = 30/90 = 1/3 ✓)", "is_correct": true},
-        {"option_text": "2/5 (wrong: P(first white) = 6/10 = 3/5; alone that's 3/5, not 2/5)", "is_correct": false},
-        {"option_text": "1/6 (wrong)", "is_correct": false}
+        {
+          "option_text": "9/25",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": true
+        },
+        {
+          "option_text": "2/5",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/6",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "What is the probability of getting a number greater than 4 when a die is rolled?",
       "options": [
-        {"option_text": "1/2 (wrong: numbers > 4 are 5 and 6 = 2/6 = 1/3, not 1/2)", "is_correct": false},
-        {"option_text": "1/3 (correct: numbers greater than 4 = {5,6}; P = 2/6 = 1/3 ✓)", "is_correct": true},
-        {"option_text": "2/3 (P(4 or more) = 3/6 = 1/2 — but question says GREATER than 4)", "is_correct": false},
-        {"option_text": "1/6 (probability of just one specific outcome)", "is_correct": false}
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": true
+        },
+        {
+          "option_text": "2/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/6",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -160,10 +268,22 @@
     {
       "stem": "The probability that it rains on a day is 0.3. What is the probability that it does NOT rain?",
       "options": [
-        {"option_text": "0.3 (same probability — wrong)", "is_correct": false},
-        {"option_text": "0.7 (correct: P(not rain) = 1 − P(rain) = 1 − 0.3 = 0.7 ✓)", "is_correct": true},
-        {"option_text": "0.6 (wrong: 2×0.3=0.6 — no basis)", "is_correct": false},
-        {"option_text": "Cannot determine (complement rule makes it deterministic)", "is_correct": false}
+        {
+          "option_text": "0.3",
+          "is_correct": false
+        },
+        {
+          "option_text": "0.7",
+          "is_correct": true
+        },
+        {
+          "option_text": "0.6",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot determine",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -177,10 +297,22 @@
     {
       "stem": "Two students A and B appear for an interview. P(A is selected) = 1/3 and P(B is selected) = 1/5. Assuming selections are independent, what is the probability that exactly one of them is selected?",
       "options": [
-        {"option_text": "8/15 (wrong: let's compute: P(A not B) + P(B not A) = (1/3)(4/5) + (2/3)(1/5) = 4/15 + 2/15 = 6/15 = 2/5)", "is_correct": false},
-        {"option_text": "2/5 (correct: P(exactly one) = P(A)×P(B̄) + P(Ā)×P(B) = (1/3)(4/5) + (2/3)(1/5) = 4/15+2/15=6/15=2/5 ✓)", "is_correct": true},
-        {"option_text": "1/15 (P(both selected) = 1/3×1/5=1/15 — not 'exactly one')", "is_correct": false},
-        {"option_text": "7/15 (wrong)", "is_correct": false}
+        {
+          "option_text": "8/15",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/5",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/15",
+          "is_correct": false
+        },
+        {
+          "option_text": "7/15",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -194,10 +326,22 @@
     {
       "stem": "A number is chosen at random from 1 to 20. What is the probability it is divisible by both 2 and 3?",
       "options": [
-        {"option_text": "1/10 (wrong: numbers divisible by 6 in 1-20: 6,12,18=3 numbers; P=3/20 not 1/10=2/20)", "is_correct": false},
-        {"option_text": "3/20 (correct: divisible by both 2 and 3 = divisible by LCM(2,3)=6; multiples of 6 in 1-20: 6,12,18; P=3/20 ✓)", "is_correct": true},
-        {"option_text": "1/2 (probability of divisibility by 2 alone)", "is_correct": false},
-        {"option_text": "1/3 (wrong — but close: multiples of 3 in 1-20 = 6, so 6/20=3/10)", "is_correct": false}
+        {
+          "option_text": "1/10",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/20",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",

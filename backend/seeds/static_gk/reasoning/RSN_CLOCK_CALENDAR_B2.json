@@ -7,10 +7,22 @@
     {
       "stem": "At what time between 3 and 4 o'clock do the minute and hour hands of a clock coincide?",
       "options": [
-        {"option_text": "3:15 (wrong: at 3:15, hour hand is at 3×5+15/4=17.25 min-marks; minute hand at 15; they don't coincide)", "is_correct": false},
-        {"option_text": "3 hours 16 4/11 minutes (correct: formula: coincidence at H×60/11 minutes past H; H=3: 3×60/11=180/11=16 4/11 min past 3 ✓)", "is_correct": true},
-        {"option_text": "3:20 (wrong: at 3:20, hands aren't coinciding)", "is_correct": false},
-        {"option_text": "3:18 (wrong: close but not exact; exact time is 16 4/11 minutes past 3)", "is_correct": false}
+        {
+          "option_text": "3:15",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 hours 16 4/11 minutes",
+          "is_correct": true
+        },
+        {
+          "option_text": "3:20",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:18",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -24,10 +36,22 @@
     {
       "stem": "A clock shows 6:30. What is the angle between the minute and hour hands?",
       "options": [
-        {"option_text": "0° (wrong: at 6:30 the hands are not coinciding)", "is_correct": false},
-        {"option_text": "15° (correct: at 6:30, minute hand=180°; hour hand=6×30+30×0.5=180+15=195°; angle=|195-180|=15° ✓)", "is_correct": true},
-        {"option_text": "30° (wrong: close but hour hand has moved beyond 6 by 15 degrees)", "is_correct": false},
-        {"option_text": "90° (wrong: 90° would be at 3:00 or 9:00 approximately)", "is_correct": false}
+        {
+          "option_text": "0°",
+          "is_correct": false
+        },
+        {
+          "option_text": "15°",
+          "is_correct": true
+        },
+        {
+          "option_text": "30°",
+          "is_correct": false
+        },
+        {
+          "option_text": "90°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "How many times do the hands of a clock coincide in 24 hours?",
       "options": [
-        {"option_text": "24 (wrong: the hands coincide 22 times in 24 hours, not 24)", "is_correct": false},
-        {"option_text": "22 (correct: in 12 hours, hands coincide 11 times (not 12 — they coincide at 12:00, 1:05, 2:10... not at exactly every hour); in 24 hrs = 22 times ✓)", "is_correct": true},
-        {"option_text": "12 (wrong: in 12 hours = 11 coincidences, not 12)", "is_correct": false},
-        {"option_text": "44 (wrong: that would be wrong completely)", "is_correct": false}
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "22",
+          "is_correct": true
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "44",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -58,10 +94,22 @@
     {
       "stem": "A clock loses 10 minutes in 24 hours. It is set correctly at noon. What time will it show after 48 hours (at noon 2 days later)?",
       "options": [
-        {"option_text": "11:40 AM (wrong: clock loses 10×2=20 min total in 48 hrs; at noon it would show 12:00-20=11:40 AM ✓ — actually this is correct)", "is_correct": true},
-        {"option_text": "12:00 PM (wrong: correct time but clock has lost 20 minutes)", "is_correct": false},
-        {"option_text": "11:50 AM (wrong: 11:50 would be only 10 min behind, but 48 hrs = 20 min behind)", "is_correct": false},
-        {"option_text": "12:20 PM (wrong: a gaining clock would show 12:20; losing means behind)", "is_correct": false}
+        {
+          "option_text": "11:40 AM",
+          "is_correct": true
+        },
+        {
+          "option_text": "12:00 PM",
+          "is_correct": false
+        },
+        {
+          "option_text": "11:50 AM",
+          "is_correct": false
+        },
+        {
+          "option_text": "12:20 PM",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "If 26 January 1950 was a Thursday, what day was 26 January 1951?",
       "options": [
-        {"option_text": "Thursday (wrong: 1950 is not a leap year; 365 days = 1 odd day; Thursday + 1 = Friday)", "is_correct": false},
-        {"option_text": "Friday (correct: 1950 is a normal year; 365 days = 1 odd day; Thursday + 1 = Friday ✓)", "is_correct": true},
-        {"option_text": "Saturday (wrong: Saturday would need 2 odd days = a leap year)", "is_correct": false},
-        {"option_text": "Wednesday (wrong: Wednesday would need going backward, but we're going forward)", "is_correct": false}
+        {
+          "option_text": "Thursday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Friday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Saturday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Wednesday",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "The minute hand of a clock overtakes the hour hand every N minutes (where N is greater than 60). Find N.",
       "options": [
-        {"option_text": "60 (wrong: if minute hand went exactly 60 min per coincidence, it would never gain enough over hour hand)", "is_correct": false},
-        {"option_text": "65 5/11 (correct: minute hand gains 55/60 min per minute over hour; for a full overtake (60 min): time=60÷(55/60)×(1/60)... use formula: hands coincide every 60×12/11=65 5/11 minutes ✓)", "is_correct": true},
-        {"option_text": "66 (wrong: close but not the exact value)", "is_correct": false},
-        {"option_text": "70 (wrong: too long; coincidences are more frequent)", "is_correct": false}
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "65 5/11",
+          "is_correct": true
+        },
+        {
+          "option_text": "66",
+          "is_correct": false
+        },
+        {
+          "option_text": "70",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -109,10 +181,22 @@
     {
       "stem": "What time is it when the mirror image of a clock shows 8:10?",
       "options": [
-        {"option_text": "3:50 (correct: mirror image formula: subtract clock time from 11:60 (or 12:00); 11:60-8:10=3:50 ✓)", "is_correct": true},
-        {"option_text": "4:10 (wrong: 4:10 would be 12:00-8:10... that's 3:50)", "is_correct": false},
-        {"option_text": "3:10 (wrong: not the correct reflection formula)", "is_correct": false},
-        {"option_text": "8:50 (wrong: that's reflecting only the minutes, not the whole time)", "is_correct": false}
+        {
+          "option_text": "3:50",
+          "is_correct": true
+        },
+        {
+          "option_text": "4:10",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:10",
+          "is_correct": false
+        },
+        {
+          "option_text": "8:50",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -125,12 +209,23 @@
     },
     {
       "stem": "The angle between the hands of a clock at 9:15 is:",
-
       "options": [
-        {"option_text": "172.5° (correct: minute=15×6=90°; hour=9×30+15×0.5=270+7.5=277.5°; angle=|277.5-90|=187.5°; reflex angle minus...no: smaller angle=360-187.5=172.5° ✓)", "is_correct": true},
-        {"option_text": "90° (wrong: 90° is what it would be exactly at 9:00)", "is_correct": false},
-        {"option_text": "82.5° (wrong: not the correct calculation)", "is_correct": false},
-        {"option_text": "97.5° (wrong: doesn't match formula)", "is_correct": false}
+        {
+          "option_text": "172.5°",
+          "is_correct": true
+        },
+        {
+          "option_text": "90°",
+          "is_correct": false
+        },
+        {
+          "option_text": "82.5°",
+          "is_correct": false
+        },
+        {
+          "option_text": "97.5°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -144,10 +239,22 @@
     {
       "stem": "If 1st January 2023 was a Sunday, what day will 1st January 2024 be?",
       "options": [
-        {"option_text": "Sunday (wrong: 2023 is not a leap year; 1 odd day; Sunday+1=Monday)", "is_correct": false},
-        {"option_text": "Monday (correct: 2023 is normal year (365 days=1 odd day); Sunday+1=Monday ✓)", "is_correct": true},
-        {"option_text": "Tuesday (wrong: Tuesday needs 2 odd days = leap year; 2023 is not a leap year)", "is_correct": false},
-        {"option_text": "Saturday (wrong: Saturday would be going backward)", "is_correct": false}
+        {
+          "option_text": "Sunday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Monday",
+          "is_correct": true
+        },
+        {
+          "option_text": "Tuesday",
+          "is_correct": false
+        },
+        {
+          "option_text": "Saturday",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -161,10 +268,22 @@
     {
       "stem": "A clock was correct at 8:00 AM. It gains 12 seconds every hour. What time will it show when the actual time is 3:00 PM the same day?",
       "options": [
-        {"option_text": "3:01:24 PM (correct: 7 hours from 8 AM to 3 PM; clock gains 12×7=84 seconds=1 min 24 sec; shows 3:00:00+1:24=3:01:24 PM ✓)", "is_correct": true},
-        {"option_text": "3:01:00 PM (wrong: 84 seconds=1 min 24 seconds, not exactly 1 minute)", "is_correct": false},
-        {"option_text": "3:02:00 PM (wrong: 2 minutes would need 120 seconds gain, but only 84 seconds)", "is_correct": false},
-        {"option_text": "2:58:36 PM (wrong: that's if the clock was losing time)", "is_correct": false}
+        {
+          "option_text": "3:01:24 PM",
+          "is_correct": true
+        },
+        {
+          "option_text": "3:01:00 PM",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:02:00 PM",
+          "is_correct": false
+        },
+        {
+          "option_text": "2:58:36 PM",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",

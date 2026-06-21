@@ -7,10 +7,22 @@
     {
       "stem": "If A > B ≥ C > D, which of the following is definitely true?\nI. A > D  II. B > D  III. A ≥ C",
       "options": [
-        {"option_text": "Only I (I: A>B≥C>D → A>D ✓; II: B≥C>D → B>D ✓; III: A>B≥C → A≥C or A>C, so A≥C ✓; all three are true)", "is_correct": false},
-        {"option_text": "I and II only (III is also definitely true: A>B≥C means A>C at minimum, so A≥C is satisfied)", "is_correct": false},
-        {"option_text": "All three (correct: I: A>D (transitive) ✓; II: B≥C>D → B>D ✓; III: A>B≥C → A>C, which satisfies A≥C ✓)", "is_correct": true},
-        {"option_text": "Only I and III (II is also true — B≥C>D → B>D)", "is_correct": false}
+        {
+          "option_text": "Only I",
+          "is_correct": false
+        },
+        {
+          "option_text": "I and II only",
+          "is_correct": false
+        },
+        {
+          "option_text": "All three",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only I and III",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "Decode: In a code, '@' means '>', '#' means '<', and '=' means '='. If P @ Q # R, which is true?",
       "options": [
-        {"option_text": "P > Q < R, so P and R cannot be compared definitively. All conclusions about P vs R are uncertain.", "is_correct": false},
-        {"option_text": "P < R (cannot be concluded: P > Q and Q < R gives no direct P-R relationship)", "is_correct": false},
-        {"option_text": "P > R (cannot be concluded: P > Q, Q < R — P could be greater or less than R)", "is_correct": false},
-        {"option_text": "P > Q and Q < R (correct: decode directly: P @ Q = P > Q; Q # R = Q < R; these are the only definite conclusions ✓)", "is_correct": true}
+        {
+          "option_text": "P > Q < R, so P and R cannot be compared definitively. All conclusions about P vs R are uncertain.",
+          "is_correct": false
+        },
+        {
+          "option_text": "P < R",
+          "is_correct": false
+        },
+        {
+          "option_text": "P > R",
+          "is_correct": false
+        },
+        {
+          "option_text": "P > Q and Q < R",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "Given: M ≥ N = O < P. Which conclusion is definitely TRUE?\nI. M ≥ O  II. P > N  III. M > P",
       "options": [
-        {"option_text": "Only III (M>P: M≥N=O<P means M≥O and P>O; no basis to compare M and P directly — III is NOT certain)", "is_correct": false},
-        {"option_text": "I and II only (correct: I: M≥N=O → M≥O ✓; II: O<P and N=O → N<P → P>N ✓; III: M≥O, O<P → M could be < P — not certain)", "is_correct": true},
-        {"option_text": "All three (III not definite: M≥O and O<P doesn't guarantee M>P — M could equal O which is less than P)", "is_correct": false},
-        {"option_text": "Only I (II is also true: N=O<P → P>N)", "is_correct": false}
+        {
+          "option_text": "Only III",
+          "is_correct": false
+        },
+        {
+          "option_text": "I and II only",
+          "is_correct": true
+        },
+        {
+          "option_text": "All three",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -58,10 +94,22 @@
     {
       "stem": "In coded inequalities: '$' means '≥', '!' means '≤', '%' means '='. If X $ Y % Z ! W, what is the relation between X and W?",
       "options": [
-        {"option_text": "X ≥ W (correct: X≥Y=Z≤W; X≥Z and W≥Z; X and W both ≥ Z but no direct comparison — NOT necessarily X≥W)", "is_correct": false},
-        {"option_text": "X ≤ W (also cannot be determined)", "is_correct": false},
-        {"option_text": "X = W (cannot conclude equality)", "is_correct": false},
-        {"option_text": "Cannot be determined (correct: X≥Y=Z and Z≤W; X≥Z and W≥Z — both are at least Z but X vs W is unknown ✓)", "is_correct": true}
+        {
+          "option_text": "X ≥ W",
+          "is_correct": false
+        },
+        {
+          "option_text": "X ≤ W",
+          "is_correct": false
+        },
+        {
+          "option_text": "X = W",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "If A ≥ B > C ≥ D, which of the following is FALSE?",
       "options": [
-        {"option_text": "A > D (TRUE: A≥B>C≥D → A>D; transitivity holds)", "is_correct": false},
-        {"option_text": "B > D (TRUE: B>C≥D → B>D)", "is_correct": false},
-        {"option_text": "A = D (FALSE: A≥B>C≥D; since B>C, A>C≥D, so A>D always; A cannot equal D ✓)", "is_correct": true},
-        {"option_text": "A ≥ C (TRUE: A≥B>C → A>C, so A≥C holds)", "is_correct": false}
+        {
+          "option_text": "A > D",
+          "is_correct": false
+        },
+        {
+          "option_text": "B > D",
+          "is_correct": false
+        },
+        {
+          "option_text": "A = D",
+          "is_correct": true
+        },
+        {
+          "option_text": "A ≥ C",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "Symbols: '©' means '>'; '®' means '<'; '™' means '='; '℠' means '≥'; '℗' means '≤'.\nStatement: P © Q ℠ R ® S. Conclusions: I. P > R  II. Q > S  III. P © S",
       "options": [
-        {"option_text": "Only I and II (P©Q = P>Q; Q℠R = Q≥R; so P>R ✓ (I true); R®S = R<S; Q≥R and R<S → Q<S is possible — Q>S is NOT certain; II is false)", "is_correct": false},
-        {"option_text": "Only I and III (I: P>Q≥R → P>R ✓; III: P©S means P>S; P>Q≥R<S, P vs S: P>Q≥R and R<S; unknown; III not certain)", "is_correct": false},
-        {"option_text": "Only I (correct: P>Q≥R → P>R (I ✓); Q≥R<S → Q vs S uncertain (II ✗); P>S: P>Q≥R<S — P vs S uncertain (III ✗))", "is_correct": true},
-        {"option_text": "None follows (I clearly follows: P>Q≥R → P>R)", "is_correct": false}
+        {
+          "option_text": "Only I and II",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I and III",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I",
+          "is_correct": true
+        },
+        {
+          "option_text": "None follows",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -109,10 +181,22 @@
     {
       "stem": "If J > K = L > M ≥ N, which conclusion is definitely FALSE?",
       "options": [
-        {"option_text": "J > M (TRUE: J>K=L>M → J>M by transitivity)", "is_correct": false},
-        {"option_text": "K > N (TRUE: K=L>M≥N → K>N)", "is_correct": false},
-        {"option_text": "L ≥ N (TRUE: L>M≥N → L>N, so L≥N holds)", "is_correct": false},
-        {"option_text": "N > J (FALSE: N≤M<L=K<J → J>N; so N>J is impossible ✓)", "is_correct": true}
+        {
+          "option_text": "J > M",
+          "is_correct": false
+        },
+        {
+          "option_text": "K > N",
+          "is_correct": false
+        },
+        {
+          "option_text": "L ≥ N",
+          "is_correct": false
+        },
+        {
+          "option_text": "N > J",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "Statements: All A ≥ B, B > C, C = D. Conclusions: I. A > D  II. A ≥ D  III. B > D",
       "options": [
-        {"option_text": "Only I and III (I: A≥B>C=D → A>D ✓; II: A≥B>C=D → A>D which includes A≥D ✓; III: B>C=D → B>D ✓ — all three are true)", "is_correct": false},
-        {"option_text": "All three (correct: I: A≥B>C=D → A>D ✓; II: A>D satisfies A≥D ✓; III: B>C=D → B>D ✓ — all follow ✓)", "is_correct": true},
-        {"option_text": "Only II and III (I is also true since A>D is stronger than A≥D)", "is_correct": false},
-        {"option_text": "Only I (II and III also follow)", "is_correct": false}
+        {
+          "option_text": "Only I and III",
+          "is_correct": false
+        },
+        {
+          "option_text": "All three",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only II and III",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only I",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "In coded form: 'δ' = '>', 'λ' = '<', 'μ' = '≥'. If E μ F δ G λ H, which is a definite conclusion?",
       "options": [
-        {"option_text": "E > H (cannot determine: E≥F>G<H — E and H position relative to G but E vs H unknown)", "is_correct": false},
-        {"option_text": "E > G (correct: E≥F>G → E>G ✓)", "is_correct": true},
-        {"option_text": "F < H (F>G<H — F vs H unknown: F>G and H>G doesn't mean F<H)", "is_correct": false},
-        {"option_text": "G > H (wrong: G λ H means G < H)", "is_correct": false}
+        {
+          "option_text": "E > H",
+          "is_correct": false
+        },
+        {
+          "option_text": "E > G",
+          "is_correct": true
+        },
+        {
+          "option_text": "F < H",
+          "is_correct": false
+        },
+        {
+          "option_text": "G > H",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "If X > Y ≥ Z, which among the following CANNOT be concluded?",
       "options": [
-        {"option_text": "X > Z (CAN be concluded: X>Y≥Z → X>Z)", "is_correct": false},
-        {"option_text": "Y ≥ Z (DIRECTLY STATED in the given)", "is_correct": false},
-        {"option_text": "Z > X (CANNOT be concluded — in fact it's false: X>Z ✓)", "is_correct": true},
-        {"option_text": "X ≥ Z (CAN be concluded: X>Z implies X≥Z)", "is_correct": false}
+        {
+          "option_text": "X > Z",
+          "is_correct": false
+        },
+        {
+          "option_text": "Y ≥ Z",
+          "is_correct": false
+        },
+        {
+          "option_text": "Z > X",
+          "is_correct": true
+        },
+        {
+          "option_text": "X ≥ Z",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",

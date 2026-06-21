@@ -7,10 +7,22 @@
     {
       "stem": "The angle of elevation of the top of a tower from a point 40m away is 30°. Find the height of the tower.",
       "options": [
-        {"option_text": "40m (wrong: height=40×tan30°=40/√3=40√3/3≈23.1m)", "is_correct": false},
-        {"option_text": "40/√3 m or 40√3/3 m (correct: tan30°=1/√3; height=40×(1/√3)=40/√3=40√3/3 ✓)", "is_correct": true},
-        {"option_text": "40√3 m (wrong: that would be tan60°=√3; height=40√3)", "is_correct": false},
-        {"option_text": "20m (wrong: doesn't match)", "is_correct": false}
+        {
+          "option_text": "40m",
+          "is_correct": false
+        },
+        {
+          "option_text": "40/√3 m or 40√3/3 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "40√3 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "20m",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "From the top of a cliff 100m high, the angle of depression of a boat is 30°. How far is the boat from the base of the cliff?",
       "options": [
-        {"option_text": "100m (wrong: angle of depression=30°; tan30°=height/distance; distance=100/tan30°=100√3)", "is_correct": false},
-        {"option_text": "100√3 m (correct: angle of depression=angle of elevation from boat; tan30°=100/d; d=100/tan30°=100×√3=100√3 ✓)", "is_correct": true},
-        {"option_text": "50√3 m (wrong: that would be for 100/2√3)", "is_correct": false},
-        {"option_text": "100/√3 m (wrong: that's 100×cot60°, different calculation)", "is_correct": false}
+        {
+          "option_text": "100m",
+          "is_correct": false
+        },
+        {
+          "option_text": "100√3 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "50√3 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "100/√3 m",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "A pole 6m tall casts a shadow 6m long. Find the angle of elevation of the sun.",
       "options": [
-        {"option_text": "30° (wrong: tan30°=1/√3; but height/shadow=6/6=1; tan θ=1→θ=45°)", "is_correct": false},
-        {"option_text": "45° (correct: tan θ=height/shadow=6/6=1; tan 45°=1 → θ=45° ✓)", "is_correct": true},
-        {"option_text": "60° (wrong: tan60°=√3≠1)", "is_correct": false},
-        {"option_text": "90° (wrong: 90° means sun directly overhead, shadow=0)", "is_correct": false}
+        {
+          "option_text": "30°",
+          "is_correct": false
+        },
+        {
+          "option_text": "45°",
+          "is_correct": true
+        },
+        {
+          "option_text": "60°",
+          "is_correct": false
+        },
+        {
+          "option_text": "90°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "A man on the top of a 10m-tall building observes a car on the ground. The angle of depression is 60°. How far is the car from the building?",
       "options": [
-        {"option_text": "10m (wrong: distance=10/tan60°=10/√3=10√3/3≈5.77m)", "is_correct": false},
-        {"option_text": "10/√3 m (correct: tan60°=height/distance; distance=10/tan60°=10/√3=10√3/3 ✓)", "is_correct": true},
-        {"option_text": "10√3 m (wrong: that's 10×tan60°=10√3; confuses tan with cot)", "is_correct": false},
-        {"option_text": "5m (wrong: doesn't match)", "is_correct": false}
+        {
+          "option_text": "10m",
+          "is_correct": false
+        },
+        {
+          "option_text": "10/√3 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "10√3 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "5m",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "Two poles of heights 6m and 11m stand vertically on a plane ground. If the distance between their bases is 12m, find the distance between their tops.",
       "options": [
-        {"option_text": "10m (wrong: vertical difference=11-6=5m; horizontal=12m; distance=√(5²+12²)=√(25+144)=√169=13)", "is_correct": false},
-        {"option_text": "13m (correct: vertical diff=5m; horizontal=12m; using Pythagoras: √(5²+12²)=√169=13m ✓)", "is_correct": true},
-        {"option_text": "15m (wrong: 15 would be √(225); √(25+144)=13)", "is_correct": false},
-        {"option_text": "17m (wrong: doesn't match)", "is_correct": false}
+        {
+          "option_text": "10m",
+          "is_correct": false
+        },
+        {
+          "option_text": "13m",
+          "is_correct": true
+        },
+        {
+          "option_text": "15m",
+          "is_correct": false
+        },
+        {
+          "option_text": "17m",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -92,10 +152,22 @@
     {
       "stem": "From a point on the ground, the angles of elevation of the bottom and top of a transmission tower fixed on a building of height 20m are 45° and 60° respectively. Find the height of the tower.",
       "options": [
-        {"option_text": "20m (wrong: let d=distance; tan45°=20/d→d=20; tan60°=(20+h)/20→20+h=20√3→h=20√3-20=20(√3-1)≈14.64m)", "is_correct": false},
-        {"option_text": "20(√3-1) m (correct: d=20 from tan45°=1; (20+h)/20=√3; h=20(√3-1) ✓)", "is_correct": true},
-        {"option_text": "20√3 m (wrong: that's the total height 20+h, not just h)", "is_correct": false},
-        {"option_text": "10m (wrong: doesn't match)", "is_correct": false}
+        {
+          "option_text": "20m",
+          "is_correct": false
+        },
+        {
+          "option_text": "20(√3-1) m",
+          "is_correct": true
+        },
+        {
+          "option_text": "20√3 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "10m",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -109,10 +181,22 @@
     {
       "stem": "The shadow of a tower standing on a level ground is found to be 40m longer when the sun's altitude is 30° than when it is 60°. Find the height of the tower.",
       "options": [
-        {"option_text": "20√3 m (correct: let h=height; at 60°: d₁=h/√3; at 30°: d₂=h√3; d₂-d₁=h√3-h/√3=h(3-1)/√3=2h/√3=40; h=20√3 ✓)", "is_correct": true},
-        {"option_text": "40m (wrong: doesn't match the calculation)", "is_correct": false},
-        {"option_text": "40√3 m (wrong: that's 4 times the correct answer's factor)", "is_correct": false},
-        {"option_text": "10√3 m (wrong: doesn't match)", "is_correct": false}
+        {
+          "option_text": "20√3 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "40m",
+          "is_correct": false
+        },
+        {
+          "option_text": "40√3 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "10√3 m",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "A boy is standing on the ground and looking at the top of a lamppost at an angle of elevation of 60°. His eye height is 1.5m and he is 3m away from the lamppost. Find the height of the lamppost.",
       "options": [
-        {"option_text": "3m (wrong: height of lamppost = 3√3 + 1.5m)", "is_correct": false},
-        {"option_text": "3√3 + 1.5 m (correct: tan60°=height above eye/horizontal=h₀/3; h₀=3√3; total height=3√3+1.5 ✓)", "is_correct": true},
-        {"option_text": "3√3 m (wrong: this doesn't include the eye height)", "is_correct": false},
-        {"option_text": "4.5m (wrong: doesn't match)", "is_correct": false}
+        {
+          "option_text": "3m",
+          "is_correct": false
+        },
+        {
+          "option_text": "3√3 + 1.5 m",
+          "is_correct": true
+        },
+        {
+          "option_text": "3√3 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "4.5m",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "From the top of a tower 50m high, a ball is dropped. At the same instant, another ball is thrown horizontally from the top of another tower 50m high and 100m away. The balls meet at the same height. At what height do they meet?",
       "options": [
-        {"option_text": "25m above ground (wrong: the dropped ball falls and the thrown ball follows projectile; they meet when same horizontal position at same time; height depends on time to travel 100m horizontally)", "is_correct": false},
-        {"option_text": "They never meet at the same height (wrong: if thrown horizontally, the thrown ball stays at 50m minus the fall due to gravity; dropped ball also falls; they can meet)", "is_correct": false},
-        {"option_text": "Both balls are always at the same height at any given instant (correct: both experience the same downward gravitational acceleration; their heights are equal at all times ✓)", "is_correct": true},
-        {"option_text": "Cannot be determined without knowing the horizontal velocity (wrong: for vertical position only, both balls experience same g downward)", "is_correct": false}
+        {
+          "option_text": "25m above ground",
+          "is_correct": false
+        },
+        {
+          "option_text": "They never meet at the same height",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both balls are always at the same height at any given instant",
+          "is_correct": true
+        },
+        {
+          "option_text": "Cannot be determined without knowing the horizontal velocity",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -160,10 +268,22 @@
     {
       "stem": "A ladder 10m long leans against a wall. The base of the ladder is 6m from the wall. How high up the wall does the ladder reach?",
       "options": [
-        {"option_text": "6m (wrong: 6² + h² = 10²; 36 + h² = 100; h² = 64; h = 8)", "is_correct": false},
-        {"option_text": "8m (correct: Pythagoras: 6² + h² = 10²; h = √(100-36) = √64 = 8m ✓)", "is_correct": true},
-        {"option_text": "√136 m (wrong: √136 would be if hypotenuse were 6)", "is_correct": false},
-        {"option_text": "4m (wrong: doesn't match)", "is_correct": false}
+        {
+          "option_text": "6m",
+          "is_correct": false
+        },
+        {
+          "option_text": "8m",
+          "is_correct": true
+        },
+        {
+          "option_text": "√136 m",
+          "is_correct": false
+        },
+        {
+          "option_text": "4m",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",

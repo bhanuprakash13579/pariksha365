@@ -7,10 +7,22 @@
     {
       "stem": "Five friends — A, B, C, D, E — are seated in a row facing north. A is to the left of B. C is to the right of D. E is at the rightmost end. D is to the left of A. Who is in the middle?",
       "options": [
-        {"option_text": "A (A is between D and B but there are 5 people to place; need to determine middle precisely)", "is_correct": false},
-        {"option_text": "B (placing: D < A < B; C > D; E = rightmost; D...A...B...C...E? — B is 3rd from left ✓)", "is_correct": true},
-        {"option_text": "C (C is to the right of D but placing puts C 4th)", "is_correct": false},
-        {"option_text": "D (D is leftmost based on constraints)", "is_correct": false}
+        {
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "option_text": "B",
+          "is_correct": true
+        },
+        {
+          "option_text": "C",
+          "is_correct": false
+        },
+        {
+          "option_text": "D",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -24,10 +36,22 @@
     {
       "stem": "P, Q, R, S are four friends. P is taller than Q. R is shorter than S. Q is taller than S. Who is the tallest?",
       "options": [
-        {"option_text": "Q (Q > S > R, but P > Q, so Q is 2nd, not tallest)", "is_correct": false},
-        {"option_text": "P (correct: P > Q > S > R; therefore P is the tallest ✓)", "is_correct": true},
-        {"option_text": "S (S > R but S < Q < P)", "is_correct": false},
-        {"option_text": "R (R is shortest)", "is_correct": false}
+        {
+          "option_text": "Q",
+          "is_correct": false
+        },
+        {
+          "option_text": "P",
+          "is_correct": true
+        },
+        {
+          "option_text": "S",
+          "is_correct": false
+        },
+        {
+          "option_text": "R (R is shortest)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "In a class, there are 5 students — Anil, Bina, Charu, Dev, and Esha. Each studies a different subject: Maths, Science, English, History, Geography. Anil does not study Maths or Science. Bina studies English. Charu studies History. Dev does not study Geography. Which subject does Anil study?",
       "options": [
-        {"option_text": "Maths (excluded — Anil does not study Maths)", "is_correct": false},
-        {"option_text": "Science (excluded — Anil does not study Science)", "is_correct": false},
-        {"option_text": "Geography (correct: Bina=English, Charu=History; Anil≠Maths, Anil≠Science; Dev≠Geography; Anil must take Geography and Esha+Dev take Maths+Science in some order ✓)", "is_correct": true},
-        {"option_text": "History (taken by Charu)", "is_correct": false}
+        {
+          "option_text": "Maths",
+          "is_correct": false
+        },
+        {
+          "option_text": "Science",
+          "is_correct": false
+        },
+        {
+          "option_text": "Geography",
+          "is_correct": true
+        },
+        {
+          "option_text": "History",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "Six people — I, J, K, L, M, N — sit in a circle facing the centre. K sits opposite L. I sits to the immediate right of K. M sits to the immediate left of L. J and N are adjacent. Who sits opposite I?",
       "options": [
-        {"option_text": "J (cannot be determined from given information alone without fixing J and N)", "is_correct": false},
-        {"option_text": "M (correct: K is opposite L; I is immediately right of K; M is immediately left of L. In a 6-seat circle, K's opposite is L. I (right of K) is opposite to M (left of L) ✓)", "is_correct": true},
-        {"option_text": "N (N is adjacent to J; position not established as opposite to I)", "is_correct": false},
-        {"option_text": "L (L is opposite K, not I)", "is_correct": false}
+        {
+          "option_text": "J",
+          "is_correct": false
+        },
+        {
+          "option_text": "M",
+          "is_correct": true
+        },
+        {
+          "option_text": "N",
+          "is_correct": false
+        },
+        {
+          "option_text": "L",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "A, B, C, D, E work in different departments: HR, IT, Finance, Marketing, Legal. A works in IT. C does not work in HR or Finance. D works in Marketing. E does not work in Legal. Which department does E work in?",
       "options": [
-        {"option_text": "IT (taken by A)", "is_correct": false},
-        {"option_text": "HR (correct: A=IT, D=Marketing; C≠HR, C≠Finance → C=Legal; remaining: B and E get HR and Finance; E≠Legal (already C has Legal); E≠Legal but can take HR or Finance; since C=Legal and B+E split HR and Finance; E could be HR or Finance — need more info... wait: remaining after A=IT, D=Marketing, C=Legal: B and E get HR and Finance; E≠Legal already resolved; no constraint on HR/Finance for E directly. Let me re-read: 'E does not work in Legal'. C=Legal. So E takes HR or Finance. Without further constraints, both possible for E — question may have a unique answer requiring another deduction)", "is_correct": false},
-        {"option_text": "Finance (plausible — need to check if B has a constraint)", "is_correct": false},
-        {"option_text": "Cannot be uniquely determined from the given information (correct: A=IT, D=Marketing, C=Legal; B and E take HR and Finance; no constraint on which one E takes ✓)", "is_correct": true}
+        {
+          "option_text": "IT",
+          "is_correct": false
+        },
+        {
+          "option_text": "HR",
+          "is_correct": false
+        },
+        {
+          "option_text": "Finance",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be uniquely determined from the given information",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",
@@ -92,10 +152,22 @@
     {
       "stem": "In a row of 8 students facing north, Priya is 5th from the left and Sunita is 3rd from the right. How many students are between Priya and Sunita?",
       "options": [
-        {"option_text": "0 (they might be adjacent or the same position)", "is_correct": false},
-        {"option_text": "2 (correct: Priya = 5th from left; Sunita = 3rd from right = 8−3+1 = 6th from left; positions 5 and 6 are adjacent — 0 students between them... wait: 5th and 6th — there are 0 people directly between them. Let me recheck: 3rd from right in 8 = 8−3+1=6th from left. Between position 5 and position 6: 0 students ✓)", "is_correct": false},
-        {"option_text": "0 (correct: Priya is 5th from left; Sunita is 6th from left (8−3+1=6); they are adjacent — 0 students between them ✓)", "is_correct": true},
-        {"option_text": "1 (wrong: that would put them 2 positions apart)", "is_correct": false}
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": true
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "Three friends Ravi, Suresh, and Tarun each own a different pet: a cat, a dog, and a fish. Ravi does not own the dog. Suresh does not own the cat. Tarun owns the fish. Who owns the cat?",
       "options": [
-        {"option_text": "Ravi (correct: Tarun=fish; Suresh≠cat → Suresh=dog; Ravi gets the remaining pet=cat ✓)", "is_correct": true},
-        {"option_text": "Suresh (Suresh does not own the cat — explicitly excluded)", "is_correct": false},
-        {"option_text": "Tarun (Tarun owns the fish)", "is_correct": false},
-        {"option_text": "Cannot be determined (all pets are assignable with given constraints)", "is_correct": false}
+        {
+          "option_text": "Ravi",
+          "is_correct": true
+        },
+        {
+          "option_text": "Suresh",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tarun",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "EASY",
@@ -126,10 +210,22 @@
     {
       "stem": "Mohan walks 4 km east, then 3 km north, then 4 km west. How far is he from his starting point and in which direction?",
       "options": [
-        {"option_text": "7 km north (east and west displacements cancel; only net displacement is 3 km north, not 7 ✓)", "is_correct": false},
-        {"option_text": "3 km north (correct: east 4 km, west 4 km cancel out; net horizontal=0; net displacement=3 km north ✓)", "is_correct": true},
-        {"option_text": "5 km north-west (wrong: there is no diagonal displacement here after east/west cancel)", "is_correct": false},
-        {"option_text": "4 km west (wrong: he ends at 0 km east-west from start)", "is_correct": false}
+        {
+          "option_text": "7 km north",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km north",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 km north-west",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 km west",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -143,10 +239,22 @@
     {
       "stem": "A person starts from point X, walks 5 km south, then 12 km east. What is the straight-line distance from X to the final point?",
       "options": [
-        {"option_text": "17 km (wrong: 5+12=17 — simple addition ignores the right angle)", "is_correct": false},
-        {"option_text": "13 km (correct: right-angle triangle with legs 5 and 12; hypotenuse = √(5²+12²) = √(25+144) = √169 = 13 km ✓)", "is_correct": true},
-        {"option_text": "7 km (|12−5|=7 — wrong; that would be if moving in opposite directions)", "is_correct": false},
-        {"option_text": "15 km (wrong: doesn't follow from the numbers)", "is_correct": false}
+        {
+          "option_text": "17 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "13 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "7 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 km",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "Six boxes are stacked one on top of another. Box A is above Box B. Box C is below Box D. Box B is below Box C. Box E is at the top. Box F is at the bottom. What is the order from top to bottom?",
       "options": [
-        {"option_text": "E, A, B, C, D, F (wrong: B is below C means B, then C going up — and D is above C)", "is_correct": false},
-        {"option_text": "E, A, B, D, C, F (wrong: D is above C, not the reverse)", "is_correct": false},
-        {"option_text": "E, D, C, A, B, F (wrong: A is above B but A vs C relationship not directly given; B < C < D and A > B — need to check where A fits relative to C)", "is_correct": false},
-        {"option_text": "E, A, D, C, B, F (correct: E(top), then B<C<D (D above C above B); A above B but below E; A must be between E and D: E, A, D, C, B, F ✓)", "is_correct": true}
+        {
+          "option_text": "E, A, B, C, D, F",
+          "is_correct": false
+        },
+        {
+          "option_text": "E, A, B, D, C, F",
+          "is_correct": false
+        },
+        {
+          "option_text": "E, D, C, A, B, F",
+          "is_correct": false
+        },
+        {
+          "option_text": "E, A, D, C, B, F",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",

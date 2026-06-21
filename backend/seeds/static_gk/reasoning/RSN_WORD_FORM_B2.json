@@ -7,10 +7,22 @@
     {
       "stem": "How many meaningful English words can be formed using the letters T, A, E, S (each letter used exactly once)?",
       "options": [
-        {"option_text": "One (only EAST or EATS)", "is_correct": false},
-        {"option_text": "Two (EAST and EATS)", "is_correct": false},
-        {"option_text": "Three (EAST, EATS, SATE)", "is_correct": false},
-        {"option_text": "Four or more (EAST, EATS, SATE, TEAS, ETAS, ETSA…)", "is_correct": true}
+        {
+          "option_text": "One",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two",
+          "is_correct": false
+        },
+        {
+          "option_text": "Three",
+          "is_correct": false
+        },
+        {
+          "option_text": "Four or more",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",
@@ -24,10 +36,22 @@
     {
       "stem": "If the letters of the word TRIANGLE are rearranged alphabetically, which letter will be in the fourth position?",
       "options": [
-        {"option_text": "G (TRIANGLE letters: T,R,I,A,N,G,L,E — sorted: A,E,G,I,L,N,R,T — fourth = I)", "is_correct": false},
-        {"option_text": "I (sorted alphabetically: A,E,G,I,L,N,R,T — 4th position = I)", "is_correct": true},
-        {"option_text": "L (L is the 5th position in sorted order)", "is_correct": false},
-        {"option_text": "N (N is the 6th position in sorted order)", "is_correct": false}
+        {
+          "option_text": "G",
+          "is_correct": false
+        },
+        {
+          "option_text": "I",
+          "is_correct": true
+        },
+        {
+          "option_text": "L",
+          "is_correct": false
+        },
+        {
+          "option_text": "N",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "Which of the following is NOT a meaningful word that can be formed using the letters of PLANET (each letter used once)?",
       "options": [
-        {"option_text": "PLANE (P,L,A,N,E — all in PLANET ✓)", "is_correct": false},
-        {"option_text": "PANEL (P,A,N,E,L — all in PLANET ✓)", "is_correct": false},
-        {"option_text": "PLANT (P,L,A,N,T — all in PLANET ✓)", "is_correct": false},
-        {"option_text": "PLEAT (P,L,E,A,T — all in PLANET... wait: PLANET has P,L,A,N,E,T — PLEAT uses P,L,E,A,T ✓ — all valid; PETAL uses P,E,T,A,L ✓; which is NOT: PLANTE? No — let us use LEANT which uses L,E,A,N,T ✓ — all are valid; PNAET — not a word)", "is_correct": true}
+        {
+          "option_text": "PLANE",
+          "is_correct": false
+        },
+        {
+          "option_text": "PANEL",
+          "is_correct": false
+        },
+        {
+          "option_text": "PLANT",
+          "is_correct": false
+        },
+        {
+          "option_text": "PLEAT",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "Using the 2nd, 5th, 7th, and 9th letters of the word SMARTPHONE, form a meaningful word.",
       "options": [
-        {"option_text": "MATE (S=1,M=2,A=3,R=4,T=5,P=6,H=7,O=8,N=9,E=10 → 2=M, 5=T, 7=H, 9=N → MTHN — not a word)", "is_correct": false},
-        {"option_text": "MATH (positions: M=2, T=5, H=7 — using 2nd, 5th, 7th only — but that is 3 letters, not 4; with N=9: MTHN — not a word)", "is_correct": false},
-        {"option_text": "MONTH (needs 5 letters — only 4 positions given)", "is_correct": false},
-        {"option_text": "No standard 4-letter word forms; the letters M, T, H, N do not easily combine (this type of question requires the letters to form a word — MYTH uses M,Y,T,H but Y is not in the set)", "is_correct": true}
+        {
+          "option_text": "MATE",
+          "is_correct": false
+        },
+        {
+          "option_text": "MATH",
+          "is_correct": false
+        },
+        {
+          "option_text": "MONTH",
+          "is_correct": false
+        },
+        {
+          "option_text": "No standard 4-letter word forms; the letters M, T, H, N do not easily combine",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "If the first and last letters of the word CARPENTER are interchanged, and the second and second-to-last letters are also interchanged, which letter will now be in the third position?",
       "options": [
-        {"option_text": "P (CARPENTER: C,A,R,P,E,N,T,E,R — swapping first/last: R,A,R,P,E,N,T,E,C — swapping 2nd/8th: R,E,R,P,E,N,T,A,C — 3rd = R)", "is_correct": false},
-        {"option_text": "R (after all swaps: R,E,R,P,E,N,T,A,C — 3rd letter = R)", "is_correct": true},
-        {"option_text": "A (original 2nd is A; after 2nd-8th swap, A moves to 8th position)", "is_correct": false},
-        {"option_text": "E (E is at positions 5 and 8 originally; after swaps E moves to 2nd position)", "is_correct": false}
+        {
+          "option_text": "P",
+          "is_correct": false
+        },
+        {
+          "option_text": "R",
+          "is_correct": true
+        },
+        {
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "option_text": "E",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "How many letters are there between the 3rd letter from the left and the 5th letter from the right in the word GOVERNMENT?",
       "options": [
-        {"option_text": "3 (GOVERNMENT: G,O,V,E,R,N,M,E,N,T — 3rd from left=V; 5th from right=N(6th position); between V(3) and N(6): E,R,N = 3 letters — wait that's positions 4,5,6? No: between means exclusive)", "is_correct": false},
-        {"option_text": "2 (GOVERNMENT: length=10; 3rd from left=V(3); 5th from right=position 10−5+1=6=N; letters between pos 3 and 6: pos 4,5 = E,R = 2 letters)", "is_correct": true},
-        {"option_text": "4 (counting positions 3 through 6 inclusive = 4 letters; but 'between' excludes endpoints)", "is_correct": false},
-        {"option_text": "5 (overcount — going beyond position 6)", "is_correct": false}
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "Rearranging the letters of the word MASTER, which of the following CANNOT be formed?",
       "options": [
-        {"option_text": "STREAM (S,T,R,E,A,M — all in MASTER ✓: M,A,S,T,E,R = same letters)", "is_correct": false},
-        {"option_text": "TAMERS (T,A,M,E,R,S — all in MASTER ✓)", "is_correct": false},
-        {"option_text": "REMAST (R,E,M,A,S,T — all in MASTER ✓, though rarely used)", "is_correct": false},
-        {"option_text": "STEAMER (S,T,E,A,M,E,R — needs two E's; MASTER has only one E — CANNOT be formed)", "is_correct": true}
+        {
+          "option_text": "STREAM",
+          "is_correct": false
+        },
+        {
+          "option_text": "TAMERS",
+          "is_correct": false
+        },
+        {
+          "option_text": "REMAST",
+          "is_correct": false
+        },
+        {
+          "option_text": "STEAMER",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "If in the word FRACTION the positions of the first and second halves are interchanged (letters 1–4 go to positions 5–8 and vice versa), what word is formed?",
       "options": [
-        {"option_text": "TIONFFRAC (wrong letter count — FRACTION has 8 letters)", "is_correct": false},
-        {"option_text": "TIONFRAC (FRACTION: F,R,A,C,T,I,O,N — first half FRAC, second half TION — swapping halves: TION+FRAC = TIONFRAC)", "is_correct": true},
-        {"option_text": "NFRACTIO (reversing the word, not swapping halves)", "is_correct": false},
-        {"option_text": "CARFNOIT (random rearrangement)", "is_correct": false}
+        {
+          "option_text": "TIONFFRAC",
+          "is_correct": false
+        },
+        {
+          "option_text": "TIONFRAC",
+          "is_correct": true
+        },
+        {
+          "option_text": "NFRACTIO",
+          "is_correct": false
+        },
+        {
+          "option_text": "CARFNOIT",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -143,10 +239,22 @@
     {
       "stem": "Which of the following words can be formed using ONLY the letters in the word PRESIDENTIAL?",
       "options": [
-        {"option_text": "DILAPIDATED (needs two D's; PRESIDENTIAL has only one D)", "is_correct": false},
-        {"option_text": "RESIDENTIAL (R,E,S,I,D,E,N,T,I,A,L — PRESIDENTIAL contains all these; 2 E's and 2 I's needed: PRESIDENTIAL has P,R,E,S,I,D,E,N,T,I,A,L — yes, 2 E's and 2 I's present ✓)", "is_correct": true},
-        {"option_text": "PRESIDENTIAL (that is the original word — not a meaningful 'formed' word)", "is_correct": false},
-        {"option_text": "DISINTERESTED (needs two T's and an extra S; PRESIDENTIAL has only one T)", "is_correct": false}
+        {
+          "option_text": "DILAPIDATED",
+          "is_correct": false
+        },
+        {
+          "option_text": "RESIDENTIAL",
+          "is_correct": true
+        },
+        {
+          "option_text": "PRESIDENTIAL",
+          "is_correct": false
+        },
+        {
+          "option_text": "DISINTERESTED",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -160,10 +268,22 @@
     {
       "stem": "If alternate letters of the word CHEMISTRY are written in reverse (i.e., pick every alternate letter starting from position 1, reverse them, and put them back), what letter will be at the 5th position?",
       "options": [
-        {"option_text": "M (CHEMISTRY: C,H,E,M,I,S,T,R,Y — odd positions: C(1),E(3),I(5),T(7),Y(9); reversed: Y,T,I,E,C; placed back: Y,H,T,M,I,S,E,R,C — 5th position = I)", "is_correct": true},
-        {"option_text": "I (same as A — let me verify: odd-position letters C,E,I,T,Y reversed → Y,T,I,E,C; reassembled: Y(1),H(2),T(3),M(4),I(5),S(6),E(7),R(8),C(9) — 5th = I ✓)", "is_correct": false},
-        {"option_text": "S (S is at position 6 — even position, unchanged — stays at 6th in reassembled word)", "is_correct": false},
-        {"option_text": "T (T is at position 3 in reassembled word, not 5th)", "is_correct": false}
+        {
+          "option_text": "M",
+          "is_correct": true
+        },
+        {
+          "option_text": "I",
+          "is_correct": false
+        },
+        {
+          "option_text": "S",
+          "is_correct": false
+        },
+        {
+          "option_text": "T",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",

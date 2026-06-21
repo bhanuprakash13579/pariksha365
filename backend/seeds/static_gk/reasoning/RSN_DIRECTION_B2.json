@@ -7,10 +7,22 @@
     {
       "stem": "A man starts facing North, turns 90° clockwise, then 180° anticlockwise. Which direction is he now facing?",
       "options": [
-        {"option_text": "North (North→East(+90° CW)→West(+180° ACW from East=turning left 180°): West, not North)", "is_correct": false},
-        {"option_text": "West (correct: North→East(90° CW)→West(180° ACW from East) ✓)", "is_correct": true},
-        {"option_text": "South (North→East→South: only if second turn is 90° CW, not 180°)", "is_correct": false},
-        {"option_text": "East (that's only the first turn result)", "is_correct": false}
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "West",
+          "is_correct": true
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "East",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "Ravi walks 5 km North, then 3 km East, then 5 km South. How far is he from his starting point and in which direction?",
       "options": [
-        {"option_text": "5 km East (net N-S = 5−5=0; net E-W=3 East; distance=3 km East, not 5 km)", "is_correct": false},
-        {"option_text": "3 km East (correct: net North = 5−5=0; net East=3km; he is 3 km East of start ✓)", "is_correct": true},
-        {"option_text": "√34 km (this would apply if North and East displacements remained — but North cancels out here)", "is_correct": false},
-        {"option_text": "8 km East (summing N and E distances — wrong; distances don't add like this)", "is_correct": false}
+        {
+          "option_text": "5 km East",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km East",
+          "is_correct": true
+        },
+        {
+          "option_text": "√34 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 km East",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "A boy walks 4 km West, then 3 km South. What is the straight-line distance from his starting point?",
       "options": [
-        {"option_text": "5 km (correct: √(4²+3²) = √(16+9) = √25 = 5 km ✓)", "is_correct": true},
-        {"option_text": "7 km (sum of 4+3=7 — wrong; use Pythagorean theorem)", "is_correct": false},
-        {"option_text": "4 km (horizontal distance only)", "is_correct": false},
-        {"option_text": "3 km (vertical distance only)", "is_correct": false}
+        {
+          "option_text": "5 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "7 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "Seema is facing South-East. She turns 135° anticlockwise. Which direction is she now facing?",
       "options": [
-        {"option_text": "North (SE=135° from N; 135° ACW from SE: 135°−135°=0° = North ✓)", "is_correct": true},
-        {"option_text": "East (SE−90°=E, but this is 90°, not 135°)", "is_correct": false},
-        {"option_text": "North-East (SE−45°=E not NE; SE−90°=E; SE−135°=N)", "is_correct": false},
-        {"option_text": "West (SE+90°=SW; SE+135°=W going CW; but ACW 135° from SE=N)", "is_correct": false}
+        {
+          "option_text": "North",
+          "is_correct": true
+        },
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "North-East",
+          "is_correct": false
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "Kiran starts at point A, walks 6 km North to B, then 8 km East to C. What is the shortest distance from A to C?",
       "options": [
-        {"option_text": "10 km (correct: √(6²+8²)=√(36+64)=√100=10 km ✓)", "is_correct": true},
-        {"option_text": "14 km (6+8=14 — total path, not direct distance)", "is_correct": false},
-        {"option_text": "7 km (wrong: average of 6 and 8)", "is_correct": false},
-        {"option_text": "√48 km (wrong: √(6²)=6 not relevant here)", "is_correct": false}
+        {
+          "option_text": "10 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "14 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "√48 km",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "EASY",
@@ -92,10 +152,22 @@
     {
       "stem": "A person is standing at a point facing West. He turns 90° clockwise, then 45° anticlockwise, then 45° clockwise. In which direction is he facing now?",
       "options": [
-        {"option_text": "South (West→North(+90° CW)→NW(−45° ACW)→North(+45° CW): North, not South)", "is_correct": false},
-        {"option_text": "North (correct: West→North(90° CW)→NW(45° ACW)→North(45° CW) ✓)", "is_correct": true},
-        {"option_text": "East (too many turns assumed)", "is_correct": false},
-        {"option_text": "North-West (only the second turn result)", "is_correct": false}
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": true
+        },
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "North-West",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "Neeta walks 3 km towards East, then 2 km towards North, then 5 km towards West, then 2 km towards South. How far and in which direction is she from the starting point?",
       "options": [
-        {"option_text": "3 km West (N-S: +2−2=0; E-W: +3−5=−2 i.e., 2 km West; not 3 km West)", "is_correct": false},
-        {"option_text": "2 km West (correct: net N-S=2−2=0; net E-W=3−5=−2=2 km West ✓)", "is_correct": true},
-        {"option_text": "√13 km SW (N-S doesn't cancel here — but 2N−2S=0 and 3E−5W=2W; purely West)", "is_correct": false},
-        {"option_text": "2 km South-West (N-S=0, so direction is purely West, not SW)", "is_correct": false}
+        {
+          "option_text": "3 km West",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 km West",
+          "is_correct": true
+        },
+        {
+          "option_text": "√13 km SW",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 km South-West",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "If the shadow of a person falls to his right side, in which direction is he facing?",
       "options": [
-        {"option_text": "East (if facing East, shadow falls West. Shadow to RIGHT while facing East = South — West is left and behind; we need to think: shadow is on right side ← sun is on left → sun in North = person faces South? Let's reason: sun rises East, sets West; midday sun is in South(India). Morning: if shadow falls to right, sun is on left. If shadow falls to right, sun is to the left. If sun is in East (morning), and it's to your left, you're facing North → shadow falls East = right side if facing North. YES!)", "is_correct": false},
-        {"option_text": "North (if facing North in morning (sun in East): East is to right; shadow falls West = to the LEFT. Not right.)", "is_correct": false},
-        {"option_text": "South (if facing South in morning: East is to left; shadow falls West=to right ✓ — Yes! When facing South and sun is in East, shadow falls to the West = right side ✓)", "is_correct": true},
-        {"option_text": "West (if facing West: North is right; shadow falls East = left side, not right)", "is_correct": false}
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": true
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "Town X is to the East of Town Y. Town Z is to the North of Town X. Town W is to the South of Town Y. If you travel from W to Z, which direction do you generally travel?",
       "options": [
-        {"option_text": "East (W is south of Y; Z is north of X which is east of Y; going from W(south-west) to Z(north-east) = North-East direction ✓)", "is_correct": false},
-        {"option_text": "North-East (correct: W is south of Y; Z is north of X which is east of Y; W→Z = North-East ✓)", "is_correct": true},
-        {"option_text": "North (going North takes you to Y, not Z which is to the north-east)", "is_correct": false},
-        {"option_text": "South-East (wrong direction: Z is north-east of W)", "is_correct": false}
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "North-East",
+          "is_correct": true
+        },
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "South-East",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "Vikram walks 10 km North, 6 km East, 10 km South, and then 3 km West. How far is he from his starting point?",
       "options": [
-        {"option_text": "6 km (net E-W: 6−3=3 km East; N-S: 10−10=0; distance=3 km, not 6)", "is_correct": false},
-        {"option_text": "3 km East (correct: N-S cancels; net E-W=6−3=3 km East ✓)", "is_correct": true},
-        {"option_text": "9 km (wrong: 6+3=9 — sums instead of subtracts)", "is_correct": false},
-        {"option_text": "√(109) km (wrong: only applicable if N-S doesn't cancel)", "is_correct": false}
+        {
+          "option_text": "6 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km East",
+          "is_correct": true
+        },
+        {
+          "option_text": "9 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "√(109) km",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",

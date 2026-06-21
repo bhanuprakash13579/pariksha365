@@ -7,10 +7,22 @@
     {
       "stem": "The HCF of two numbers is 12 and their LCM is 180. If one of the numbers is 36, what is the other?",
       "options": [
-        {"option_text": "48 (from HCF × LCM ÷ one number = 12×180÷36... computed wrong as 48)", "is_correct": false},
-        {"option_text": "60 (correct: other = HCF × LCM ÷ given = 12×180÷36 = 60)", "is_correct": true},
-        {"option_text": "72 (from 180 ÷ 12 × (12÷36) — incorrect formula application)", "is_correct": false},
-        {"option_text": "90 (from 180 ÷ 2 — treating LCM/2 as the other number)", "is_correct": false}
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "option_text": "90",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "Three bells ring at intervals of 6, 8, and 10 minutes respectively. If they ring together at 10:00 AM, when will they next ring together?",
       "options": [
-        {"option_text": "10:20 AM (LCM of 6,8,10 = 20? No: LCM is actually 120 minutes)", "is_correct": false},
-        {"option_text": "10:24 AM (LCM of 6, 8, 10 = 24? Incorrect)", "is_correct": false},
-        {"option_text": "12:00 PM (LCM of 6, 8, 10 = 120 minutes = 2 hours after 10:00 AM)", "is_correct": true},
-        {"option_text": "11:00 AM (guessing 60 minutes as the LCM of 6, 8, and 10)", "is_correct": false}
+        {
+          "option_text": "10:20 AM",
+          "is_correct": false
+        },
+        {
+          "option_text": "10:24 AM",
+          "is_correct": false
+        },
+        {
+          "option_text": "12:00 PM",
+          "is_correct": true
+        },
+        {
+          "option_text": "11:00 AM",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "The ratio of two numbers is 3:4 and their HCF is 6. What is their LCM?",
       "options": [
-        {"option_text": "48 (LCM = 3×4×6 ÷ HCF — incorrect formula)", "is_correct": false},
-        {"option_text": "72 (numbers are 3×6=18 and 4×6=24; LCM(18,24) = 72)", "is_correct": true},
-        {"option_text": "96 (from multiplying 4×6×4 instead of using the correct numbers)", "is_correct": false},
-        {"option_text": "144 (product of the two numbers: 18×24=432 ≠ 144)", "is_correct": false}
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "72",
+          "is_correct": true
+        },
+        {
+          "option_text": "96",
+          "is_correct": false
+        },
+        {
+          "option_text": "144",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "Find the largest number that divides 315, 693, and 840 leaving the same remainder in each case.",
       "options": [
-        {"option_text": "63 (HCF of differences 378 and 525 and 147 = 63)", "is_correct": false},
-        {"option_text": "126 (HCF of 378 and 147 = 3; not 126)", "is_correct": false},
-        {"option_text": "21 (HCF(378, 525, 147) = HCF(378,525)=HCF(147,378)=21? Let's verify)", "is_correct": true},
-        {"option_text": "42 (double the correct answer — error in HCF computation)", "is_correct": false}
+        {
+          "option_text": "63",
+          "is_correct": false
+        },
+        {
+          "option_text": "126",
+          "is_correct": false
+        },
+        {
+          "option_text": "21",
+          "is_correct": true
+        },
+        {
+          "option_text": "42",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "Two numbers are in ratio 5:7 and their LCM is 140. What is their HCF?",
       "options": [
-        {"option_text": "2 (guessing a small common factor without using the ratio)", "is_correct": false},
-        {"option_text": "4 (5k and 7k with LCM=35k=140 → k=4, so HCF=k=4)", "is_correct": true},
-        {"option_text": "7 (treating the ratio's smaller term as the HCF)", "is_correct": false},
-        {"option_text": "20 (from 140÷7=20 — dividing LCM by one ratio term)", "is_correct": false}
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "Find the LCM of 12, 15, 20, and 25.",
       "options": [
-        {"option_text": "200 (from LCM(20,25)=100 then ignoring 12 and 15)", "is_correct": false},
-        {"option_text": "300 (correct: 2²×3×5² = 4×3×25 = 300)", "is_correct": true},
-        {"option_text": "360 (from LCM(12,15,20)=60, then 60×25/HCF(60,25)=60×25/5=300... slipping to 360)", "is_correct": false},
-        {"option_text": "600 (from multiplying 12×25×2=600 instead of computing properly)", "is_correct": false}
+        {
+          "option_text": "200",
+          "is_correct": false
+        },
+        {
+          "option_text": "300",
+          "is_correct": true
+        },
+        {
+          "option_text": "360",
+          "is_correct": false
+        },
+        {
+          "option_text": "600",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "The HCF of two numbers is 8 and their product is 2048. What is their LCM?",
       "options": [
-        {"option_text": "128 (from 2048÷8÷2=128 — incorrect double division)", "is_correct": false},
-        {"option_text": "256 (LCM = Product ÷ HCF = 2048 ÷ 8 = 256)", "is_correct": true},
-        {"option_text": "512 (from 2048÷4=512 — using half the HCF as divisor)", "is_correct": false},
-        {"option_text": "1024 (from 2048÷2=1024 — treating HCF as 2)", "is_correct": false}
+        {
+          "option_text": "128",
+          "is_correct": false
+        },
+        {
+          "option_text": "256",
+          "is_correct": true
+        },
+        {
+          "option_text": "512",
+          "is_correct": false
+        },
+        {
+          "option_text": "1024",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -126,10 +210,22 @@
     {
       "stem": "What is the greatest 4-digit number divisible by both 12 and 18?",
       "options": [
-        {"option_text": "9990 (not divisible by 36: 9990÷36=277.5, fails)", "is_correct": false},
-        {"option_text": "9996 (9996÷36=277.67, fails — slightly over the correct answer)", "is_correct": false},
-        {"option_text": "9972 (9972÷36=277, the greatest 4-digit multiple of LCM(12,18)=36)", "is_correct": true},
-        {"option_text": "9936 (divisible by 36 but not the largest: 9972 is larger and also divisible)", "is_correct": false}
+        {
+          "option_text": "9990",
+          "is_correct": false
+        },
+        {
+          "option_text": "9996",
+          "is_correct": false
+        },
+        {
+          "option_text": "9972",
+          "is_correct": true
+        },
+        {
+          "option_text": "9936",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "If HCF(a, b) = 9 and a × b = 2916, what is LCM(a, b)?",
       "options": [
-        {"option_text": "162 (from 2916÷9÷2=162 — dividing again by 2 in error)", "is_correct": false},
-        {"option_text": "324 (LCM = a×b ÷ HCF = 2916 ÷ 9 = 324)", "is_correct": true},
-        {"option_text": "486 (from 2916÷6 — using 6 as HCF instead of 9)", "is_correct": false},
-        {"option_text": "972 (from 2916÷3 — using 3 as HCF, a factor of 9)", "is_correct": false}
+        {
+          "option_text": "162",
+          "is_correct": false
+        },
+        {
+          "option_text": "324",
+          "is_correct": true
+        },
+        {
+          "option_text": "486",
+          "is_correct": false
+        },
+        {
+          "option_text": "972",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -160,10 +268,22 @@
     {
       "stem": "A rectangular courtyard 3.78 m long and 5.25 m wide is to be paved with identical square tiles. What is the largest size of tile that can be used (in cm)?",
       "options": [
-        {"option_text": "21 cm (HCF of 378 and 525 cm = 21 cm)", "is_correct": true},
-        {"option_text": "3 cm (HCF of 3.78 and 5.25 treated as separate digits 3 and 3)", "is_correct": false},
-        {"option_text": "42 cm (double the correct HCF — 42 doesn't divide 525)", "is_correct": false},
-        {"option_text": "63 cm (HCF of 378 and 126 — incorrect pairing)", "is_correct": false}
+        {
+          "option_text": "21 cm",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "42 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "63 cm",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",

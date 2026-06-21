@@ -7,10 +7,22 @@
     {
       "stem": "A is the brother of B. B is the sister of C. C is the father of D. How is A related to D?",
       "options": [
-        {"option_text": "Brother (wrong: A's gender is given as brother; A-B are siblings; B is female sister; C is B's sibling and father of D; A is male; A is C's brother; uncle to D)", "is_correct": false},
-        {"option_text": "Uncle (correct: A is brother → male; B is sister → female; C is their sibling (unknown gender); C is father of D; A is C's brother → A is D's uncle ✓)", "is_correct": true},
-        {"option_text": "Father (wrong: A's father would be D's grandfather)", "is_correct": false},
-        {"option_text": "Grandfather (wrong: A is one generation above D but A is C's sibling, not C's parent)", "is_correct": false}
+        {
+          "option_text": "Brother",
+          "is_correct": false
+        },
+        {
+          "option_text": "Uncle",
+          "is_correct": true
+        },
+        {
+          "option_text": "Father",
+          "is_correct": false
+        },
+        {
+          "option_text": "Grandfather",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "If INDIA is coded as 91491 (A=1, B=2...Z=26), how is DELHI coded?",
       "options": [
-        {"option_text": "4512012 (wrong: D=4, E=5, L=12, H=8, I=9 → 45 12 8 9 = 4512 89, not 4512012)", "is_correct": false},
-        {"option_text": "4512 89 (wrong format — let me compute: D=4, E=5, L=12, H=8, I=9 → 451289)", "is_correct": false},
-        {"option_text": "451289 (correct: D=4, E=5, L=12, H=8, I=9 → 4-5-12-8-9=451289 ✓)", "is_correct": true},
-        {"option_text": "456789 (wrong: doesn't match letter positions)", "is_correct": false}
+        {
+          "option_text": "4512012",
+          "is_correct": false
+        },
+        {
+          "option_text": "4512 89",
+          "is_correct": false
+        },
+        {
+          "option_text": "451289",
+          "is_correct": true
+        },
+        {
+          "option_text": "456789",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "Five people complete a task taking 10, 12, 15, 18, and 20 hours respectively. If the task can be done by any one of them, who completes it FASTEST?",
       "options": [
-        {"option_text": "The person who takes 20 hours (wrong: taking MORE time = SLOWER)", "is_correct": false},
-        {"option_text": "The person who takes 10 hours (correct: taking FEWER hours = faster; 10 hours = fastest ✓)", "is_correct": true},
-        {"option_text": "The person who takes 15 hours (wrong: 15 hours is in the middle — not fastest)", "is_correct": false},
-        {"option_text": "The person who takes 18 hours (wrong: not the fastest)", "is_correct": false}
+        {
+          "option_text": "The person who takes 20 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "The person who takes 10 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "The person who takes 15 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "The person who takes 18 hours",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "In a group, every person shakes hands with every other person exactly once. If there are 10 handshakes in total, how many people are in the group?",
       "options": [
-        {"option_text": "4 (wrong: C(4,2)=6≠10)", "is_correct": false},
-        {"option_text": "5 (correct: C(5,2)=5×4/2=10 ✓)", "is_correct": true},
-        {"option_text": "6 (wrong: C(6,2)=15≠10)", "is_correct": false},
-        {"option_text": "10 (wrong: C(10,2)=45≠10)", "is_correct": false}
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "A snail climbs 3 metres up a wall during the day but slides back 1 metre at night. The wall is 12 metres high. How many days does the snail take to reach the top?",
       "options": [
-        {"option_text": "5 days (wrong: net gain per day=2m; after 4 full day-night cycles=8m; on day 5 the snail climbs from 8+3=11m and night slides to 10; day 6 climbs to 13>12 → reaches top on day 6)", "is_correct": false},
-        {"option_text": "6 days (correct: net daily gain=2m; after 4 nights=8m; day 5: 8+3=11m but slides to 10m (hasn't reached top yet); day 6: 10+3=13m≥12m → reaches top during day 6 ✓)", "is_correct": true},
-        {"option_text": "7 days (wrong: the snail reaches on day 6)", "is_correct": false},
-        {"option_text": "4 days (wrong: 4×2=8m only)", "is_correct": false}
+        {
+          "option_text": "5 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "7 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 days",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -92,10 +152,22 @@
     {
       "stem": "A hen lays 1.5 eggs in 1.5 days. How many eggs do 6 hens lay in 6 days?",
       "options": [
-        {"option_text": "6 eggs (wrong: rate=1.5/1.5=1 egg/day/hen; 6 hens×6 days=36 eggs)", "is_correct": false},
-        {"option_text": "36 eggs (correct: 1 hen lays 1 egg/day; 6 hens lay 6 eggs/day; in 6 days = 36 eggs ✓)", "is_correct": true},
-        {"option_text": "24 eggs (wrong: doesn't match the rate)", "is_correct": false},
-        {"option_text": "54 eggs (wrong: would need 1.5 eggs/day/hen for 6 hens 6 days)", "is_correct": false}
+        {
+          "option_text": "6 eggs",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 eggs",
+          "is_correct": true
+        },
+        {
+          "option_text": "24 eggs",
+          "is_correct": false
+        },
+        {
+          "option_text": "54 eggs",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "How many times can you subtract 10 from 100?",
       "options": [
-        {"option_text": "10 times (wrong: this is a trick question — you can only subtract 10 from 100 ONCE; after that it's 90, not 100 anymore)", "is_correct": false},
-        {"option_text": "Once (correct: after the first subtraction, you have 90 — you're subtracting from 90, not from 100 anymore ✓)", "is_correct": true},
-        {"option_text": "Unlimited times (wrong: eventually the result reaches 0 and you can't subtract further)", "is_correct": false},
-        {"option_text": "9 times (wrong: misinterpretation)", "is_correct": false}
+        {
+          "option_text": "10 times",
+          "is_correct": false
+        },
+        {
+          "option_text": "Once",
+          "is_correct": true
+        },
+        {
+          "option_text": "Unlimited times",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 times",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "A father is 30 years old when his son is born. After how many years will the father be exactly twice the son's age?",
       "options": [
-        {"option_text": "30 years (correct: father=30+x, son=x; 30+x=2x; x=30; after 30 years: father=60, son=30 ✓)", "is_correct": true},
-        {"option_text": "25 years (wrong: at 25: father=55, son=25; 55≠2×25=50)", "is_correct": false},
-        {"option_text": "20 years (wrong: at 20: father=50, son=20; 50≠2×20=40)", "is_correct": false},
-        {"option_text": "35 years (wrong: at 35: father=65, son=35; 65≠2×35=70)", "is_correct": false}
+        {
+          "option_text": "30 years",
+          "is_correct": true
+        },
+        {
+          "option_text": "25 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 years",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "Three friends share ₹2,400. The second gets twice as much as the first. The third gets twice as much as the second. How much does the first friend get?",
       "options": [
-        {"option_text": "₹200 (wrong: first=x; second=2x; third=4x; sum=7x=2400; x=2400/7≈342.86; not integer; but let's try: 7x=2400; x=342.86... the question likely intended divisible values)", "is_correct": false},
-        {"option_text": "₹342.86 (wrong: non-integer; the question should have cleaner numbers)", "is_correct": false},
-        {"option_text": "₹400 (wrong: 400×7=2800≠2400)", "is_correct": false},
-        {"option_text": "≈₹343 (correct: 7x=2400; x≈342.86≈343; this is the closest answer; SSC exams sometimes have this ✓)", "is_correct": true}
+        {
+          "option_text": "₹200",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹342.86",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹400",
+          "is_correct": false
+        },
+        {
+          "option_text": "≈₹343",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "A library has books in three languages: English, Hindi, and Tamil. 40% are in English, 35% in Hindi, and the rest in Tamil. If there are 300 Tamil books, how many total books are there?",
       "options": [
-        {"option_text": "1,000 (wrong: Tamil=100-40-35=25%; 25% of total=300; total=300/0.25=1200)", "is_correct": false},
-        {"option_text": "1,200 (correct: Tamil%=25%; 25% of total=300; total=1200 ✓)", "is_correct": true},
-        {"option_text": "800 (wrong: 25% of 800=200≠300)", "is_correct": false},
-        {"option_text": "1,500 (wrong: 25% of 1500=375≠300)", "is_correct": false}
+        {
+          "option_text": "1,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "1,200",
+          "is_correct": true
+        },
+        {
+          "option_text": "800",
+          "is_correct": false
+        },
+        {
+          "option_text": "1,500",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",

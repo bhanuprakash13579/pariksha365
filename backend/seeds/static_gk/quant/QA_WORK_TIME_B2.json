@@ -7,10 +7,22 @@
     {
       "stem": "A can complete a work in 12 days and B can complete it in 18 days. How many days will they take to complete it together?",
       "options": [
-        {"option_text": "30 days (wrong: that's 12+18; you can't add time directly)", "is_correct": false},
-        {"option_text": "7.2 days (correct: combined rate = 1/12+1/18 = 3/36+2/36 = 5/36; time = 36/5 = 7.2 days ✓)", "is_correct": true},
-        {"option_text": "15 days (wrong: 15 is the average, not the combined work time)", "is_correct": false},
-        {"option_text": "6 days (wrong: 1/12+1/18=5/36 per day; 1÷(5/36)=36/5=7.2, not 6)", "is_correct": false}
+        {
+          "option_text": "30 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "7.2 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 days",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "X is twice as efficient as Y. Together they finish a work in 14 days. In how many days can Y alone finish the work?",
       "options": [
-        {"option_text": "28 days (wrong: X=2Y efficiency; if Y=x days, X=x/2 days; 1/(x/2)+1/x=1/14 → 3/x=1/14 → x=42 days)", "is_correct": false},
-        {"option_text": "42 days (correct: let Y take x days; X takes x/2 days; 2/x+1/x=1/14 → 3/x=1/14 → x=42 ✓)", "is_correct": true},
-        {"option_text": "21 days (wrong: if Y=21, X=10.5; 1/10.5+1/21=2/21+1/21=3/21=1/7; fills in 7 days ≠ 14)", "is_correct": false},
-        {"option_text": "35 days (wrong: if Y=35, X=17.5; 1/17.5+1/35=2/35+1/35=3/35; time=35/3≈11.67≠14)", "is_correct": false}
+        {
+          "option_text": "28 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "42 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "21 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 days",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "A and B together can do a work in 10 days. B alone can do it in 15 days. In how many days can A alone do it?",
       "options": [
-        {"option_text": "25 days (wrong: A's rate=1/10−1/15=3/30−2/30=1/30; A alone=30 days)", "is_correct": false},
-        {"option_text": "30 days (correct: A's rate = 1/10−1/15 = 3/30−2/30 = 1/30; A alone takes 30 days ✓)", "is_correct": true},
-        {"option_text": "20 days (wrong: if A=20, A+B=1/20+1/15=3/60+4/60=7/60; 60/7≈8.57 days≠10)", "is_correct": false},
-        {"option_text": "40 days (wrong: if A=40, 1/40+1/15=3/120+8/120=11/120; 120/11≈10.9 days≠10)", "is_correct": false}
+        {
+          "option_text": "25 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 days",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "15 men can finish a work in 20 days. In how many days can 25 men finish the same work?",
       "options": [
-        {"option_text": "10 days (wrong: 15×20/25=300/25=12 days)", "is_correct": false},
-        {"option_text": "12 days (correct: work=15×20=300 man-days; 25 men take 300/25=12 days ✓)", "is_correct": true},
-        {"option_text": "8 days (wrong: 25×8=200≠300 man-days)", "is_correct": false},
-        {"option_text": "15 days (wrong: 25×15=375≠300 man-days)", "is_correct": false}
+        {
+          "option_text": "10 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 days",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -75,10 +123,22 @@
     {
       "stem": "A and B together finish work in 6 days. A alone finishes it in 10 days. If B is paid ₹900 for his share of the work, what is A's wage?",
       "options": [
-        {"option_text": "₹600 (wrong: B's rate=1/6−1/10=5/30−3/30=2/30=1/15; B does 1/15 work/day; A does 1/10; ratio A:B=1/10:1/15=3:2; A gets 3/(3+2)×total; ₹900 is B's share=2/5; total=₹2250; A=3/5×2250=₹1350)", "is_correct": false},
-        {"option_text": "₹1350 (correct: A:B rate=1/10:1/15=3:2; B gets 2/5 of total; B=₹900=2/5×total → total=₹2250; A=3/5×₹2250=₹1350 ✓)", "is_correct": true},
-        {"option_text": "₹1000 (wrong: doesn't match the ratio calculation)", "is_correct": false},
-        {"option_text": "₹1500 (wrong: 1500+900=2400; A/total=1500/2400=5/8; A's rate share would be 5/8, not 3/5)", "is_correct": false}
+        {
+          "option_text": "₹600",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1350",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1500",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -92,10 +152,22 @@
     {
       "stem": "P can do a work in 24 days. Q is 50% more efficient than P. In how many days will Q finish the work?",
       "options": [
-        {"option_text": "36 days (wrong: Q is MORE efficient than P, so takes fewer days, not more)", "is_correct": false},
-        {"option_text": "16 days (correct: Q is 50% more efficient → Q's rate = 1.5 × P's rate = 1.5/24 = 1/16; Q takes 16 days ✓)", "is_correct": true},
-        {"option_text": "12 days (wrong: 12 days would mean Q is twice as efficient (rate=2/24=1/12); but Q is only 50% more)", "is_correct": false},
-        {"option_text": "18 days (wrong: 18 days would mean Q takes 3/4 of P's time; efficiency ratio=4/3, not 3/2)", "is_correct": false}
+        {
+          "option_text": "36 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 days",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "A, B, and C can complete a work in 8, 12, and 24 days respectively. If A and B work on alternate days with C working every day, how many days will the work take?",
       "options": [
-        {"option_text": "6 days (wrong: let's compute: C works every day (1/24); Day 1: A+C=1/8+1/24=4/24=1/6; Day 2: B+C=1/12+1/24=3/24=1/8; per 2-day cycle: 1/6+1/8=4/24+3/24=7/24; in 6 days (3 cycles)=21/24=7/8; remaining=1/8; Day 7 (A+C)=1/6; 1/8 ÷ 1/6 = 6/8 = 3/4 day; total=6¾ days)", "is_correct": false},
-        {"option_text": "6 days and 18 hours (wrong: 6 days 18 hours = 6.75 = 6¾ days — actually this IS correct ✓)", "is_correct": true},
-        {"option_text": "7 days (wrong: just shy of 7 days — see calculation)", "is_correct": false},
-        {"option_text": "8 days (wrong: 8 full days is too many)", "is_correct": false}
+        {
+          "option_text": "6 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 days and 18 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "7 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 days",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "20 workers finish a job in 30 days. After 10 days, 10 more workers join. In how many days is the remaining work completed?",
       "options": [
-        {"option_text": "10 days (wrong: remaining work=2/3; 30 men need: (20×30×2/3)/30=20×2/3=40/3≈13.33 days... wait recalc: remaining work=2/3; 30 workers take: total=20×30=600; done in 10 days=200; remaining=400 man-days; 30 men: 400/30=13.33 days)", "is_correct": false},
-        {"option_text": "13⅓ days (correct: total work=20×30=600 man-days; in 10 days: 20×10=200 done; remaining=400; 30 men take 400/30=13⅓ days ✓)", "is_correct": true},
-        {"option_text": "15 days (wrong: 30×15=450≠400 remaining man-days)", "is_correct": false},
-        {"option_text": "20 days (wrong: 30×20=600≠400 remaining man-days)", "is_correct": false}
+        {
+          "option_text": "10 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "13⅓ days",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 days",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "A man and a boy together complete a work in 18 days. If the man works alone, he finishes in 24 days. How many days will the boy take alone?",
       "options": [
-        {"option_text": "36 days (wrong: boy's rate=1/18−1/24=4/72−3/72=1/72; boy alone=72 days)", "is_correct": false},
-        {"option_text": "72 days (correct: boy's rate = 1/18−1/24 = 4/72−3/72 = 1/72; boy takes 72 days alone ✓)", "is_correct": true},
-        {"option_text": "48 days (wrong: if boy=48, man+boy=1/24+1/48=2/48+1/48=3/48=1/16; fills in 16 days ≠ 18)", "is_correct": false},
-        {"option_text": "54 days (wrong: 1/54 doesn't give the right combined rate)", "is_correct": false}
+        {
+          "option_text": "36 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "72 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "48 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "54 days",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "A does ¾ of a work in 15 days. He then calls B and together they complete the remaining work in 3 days. How long would B alone take to do the whole work?",
       "options": [
-        {"option_text": "24 days (wrong: A completes ¾ in 15 days → A's total time=20 days; remaining ¼; in 3 days A does 3/20; B does ¼−3/20=5/20−3/20=2/20=1/10 in 3 days; B's rate=1/30; B alone=30 days)", "is_correct": false},
-        {"option_text": "30 days (correct: A's full time=15÷(3/4)=20 days; in 3 days A does 3/20; B does ¼−3/20=2/20=1/10 in 3 days; B's rate=1/30; B alone=30 days ✓)", "is_correct": true},
-        {"option_text": "40 days (wrong: if B=40, B does 3/40 in 3 days; A does 3/20=6/40; total=9/40≠1/4=10/40)", "is_correct": false},
-        {"option_text": "36 days (wrong: if B=36, B does 3/36=1/12 in 3 days; A does 3/20; sum=1/12+3/20=5/60+9/60=14/60≠1/4=15/60)", "is_correct": false}
+        {
+          "option_text": "24 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 days",
+          "is_correct": true
+        },
+        {
+          "option_text": "40 days",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 days",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",

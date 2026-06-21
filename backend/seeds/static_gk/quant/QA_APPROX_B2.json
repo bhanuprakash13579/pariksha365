@@ -7,10 +7,22 @@
     {
       "stem": "Approximate the value of: 349.87 × 14.96 + 249.98 × 7.02",
       "options": [
-        {"option_text": "6,980 (using 350 × 14 + 250 × 7 = 4900 + 1750, undercounting)", "is_correct": false},
-        {"option_text": "7,000 (using 350 × 15 = 5250, forgetting the second term)", "is_correct": false},
-        {"option_text": "7,000 (using 350×15 + 250×7 = 5250 + 1750 = 7000)", "is_correct": true},
-        {"option_text": "7,500 (using 350 × 20 + 250 × 5 = 7000 + 1250, rounding too liberally)", "is_correct": false}
+        {
+          "option_text": "6,980",
+          "is_correct": false
+        },
+        {
+          "option_text": "7,000",
+          "is_correct": false
+        },
+        {
+          "option_text": "7,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "7,500",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "Find the approximate value of: √(624.9) + ∛(124.8)",
       "options": [
-        {"option_text": "25 (computing √625 = 25 but ignoring the cube root entirely)", "is_correct": false},
-        {"option_text": "28 (√625 = 25 and ∛125 = 5; their sum ≈ 25 + 5 = 30, then rounding down)", "is_correct": false},
-        {"option_text": "30 (√625 + ∛125 = 25 + 5 = 30)", "is_correct": true},
-        {"option_text": "32 (overestimating both terms by rounding up beyond the actual values)", "is_correct": false}
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "option_text": "32",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "Approximate: 5996 ÷ 29.98 + 12.03 × 20.97",
       "options": [
-        {"option_text": "420 (from 6000 ÷ 30 = 200 and 12 × 21 = 252, summing to 452 not 420)", "is_correct": false},
-        {"option_text": "452 (from 6000 ÷ 30 + 12 × 21 = 200 + 252 = 452)", "is_correct": true},
-        {"option_text": "460 (from 6000 ÷ 30 = 200 and 13 × 20 = 260, using over-rounded values)", "is_correct": false},
-        {"option_text": "480 (computing 6000 ÷ 25 + 12 × 20 = 240 + 240 = 480, wrong rounding of divisor)", "is_correct": false}
+        {
+          "option_text": "420",
+          "is_correct": false
+        },
+        {
+          "option_text": "452",
+          "is_correct": true
+        },
+        {
+          "option_text": "460",
+          "is_correct": false
+        },
+        {
+          "option_text": "480",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "What is the approximate value of (18.02)³ − (8.98)³?",
       "options": [
-        {"option_text": "4,140 (from 18³ − 9³ = 5832 − 729 = 5103, computed with an arithmetic error)", "is_correct": false},
-        {"option_text": "5,103 (from 18³ − 9³ = 5832 − 729 = 5103, the correct approximation)", "is_correct": true},
-        {"option_text": "5,800 (from computing only 18³ = 5832 and ignoring the subtraction)", "is_correct": false},
-        {"option_text": "6,561 (from computing (18−9)³ = 9³ = 729 and misidentifying the answer)", "is_correct": false}
+        {
+          "option_text": "4,140",
+          "is_correct": false
+        },
+        {
+          "option_text": "5,103",
+          "is_correct": true
+        },
+        {
+          "option_text": "5,800",
+          "is_correct": false
+        },
+        {
+          "option_text": "6,561",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "Approximate: 74.89% of 3201 + 24.97% of 6398",
       "options": [
-        {"option_text": "2,800 (from 75% of 3000 = 2250 and 25% of 6000 = 1500 = 3750, halved in error)", "is_correct": false},
-        {"option_text": "3,750 (from 75% of 3200 = 2400 and 25% of 6400 = 1600, sum incorrect)", "is_correct": false},
-        {"option_text": "4,000 (from 75% of 3200 = 2400 and 25% of 6400 = 1600; 2400 + 1600 = 4000)", "is_correct": true},
-        {"option_text": "4,500 (from 75% of 3600 + 25% of 7200 — rounding up both significantly)", "is_correct": false}
+        {
+          "option_text": "2,800",
+          "is_correct": false
+        },
+        {
+          "option_text": "3,750",
+          "is_correct": false
+        },
+        {
+          "option_text": "4,000",
+          "is_correct": true
+        },
+        {
+          "option_text": "4,500",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "What approximate value should replace the '?' in the equation: 3.98 × ? = 479.78",
       "options": [
-        {"option_text": "100 (from 4 × 100 = 400, accepting a rough estimate)", "is_correct": false},
-        {"option_text": "110 (from 4 × 110 = 440, still underestimating)", "is_correct": false},
-        {"option_text": "120 (from 4 × 120 = 480 ≈ 479.78, the closest approximation)", "is_correct": true},
-        {"option_text": "125 (from 4 × 125 = 500, slightly overestimating the dividend)", "is_correct": false}
+        {
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "option_text": "110",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": true
+        },
+        {
+          "option_text": "125",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -109,10 +181,22 @@
     {
       "stem": "Approximate: (1999² − 1998²)",
       "options": [
-        {"option_text": "1 (from a² − b² = (a−b)² = 1², treating the formula incorrectly)", "is_correct": false},
-        {"option_text": "3997 (from a² − b² = (a+b)(a−b) = 3997 × 1 = 3997)", "is_correct": true},
-        {"option_text": "3999 (from 1999 × 2 = 3998 — approximating a+b as 2a)", "is_correct": false},
-        {"option_text": "4000 (over-rounding 3997 to the nearest thousand)", "is_correct": false}
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "3997",
+          "is_correct": true
+        },
+        {
+          "option_text": "3999",
+          "is_correct": false
+        },
+        {
+          "option_text": "4000",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "What is the approximate value of: 1/(0.999) + 1/(1.001)?",
       "options": [
-        {"option_text": "1.998 (treating each fraction as ≈ 0.999 and adding)", "is_correct": false},
-        {"option_text": "2 (each term ≈ 1/1 = 1, so sum ≈ 2)", "is_correct": true},
-        {"option_text": "2.002 (overestimating both reciprocals without cancellation)", "is_correct": false},
-        {"option_text": "1 (adding both fractions and treating 0.999 + 1.001 as the denominator)", "is_correct": false}
+        {
+          "option_text": "1.998",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "2.002",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "Approximate: 3.99 × 4.01 + 5.99 × 6.01",
       "options": [
-        {"option_text": "48 (from 4 × 4 + 6 × 6 = 16 + 36 = 52, with an arithmetic slip)", "is_correct": false},
-        {"option_text": "52 (from 4 × 4 + 6 × 6 = 16 + 36 = 52, which is very close to the exact value)", "is_correct": true},
-        {"option_text": "55 (from overestimating 3.99 × 4.01 ≈ 16.5 and 5.99 × 6.01 ≈ 38.5)", "is_correct": false},
-        {"option_text": "60 (from 4 × 5 + 6 × 5 = 20 + 30 = 50 then rounding to 60)", "is_correct": false}
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "52",
+          "is_correct": true
+        },
+        {
+          "option_text": "55",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "Find the approximate value of: 56.89% of 1799 + 43.12% of 3601",
       "options": [
-        {"option_text": "1,400 (using 57% of 1800 = 1026 and 43% of 3600 = 1548, but summed as 1400)", "is_correct": false},
-        {"option_text": "2,574 (from 57% of 1800 = 1026 and 43% of 3600 = 1548, sum = 2574)", "is_correct": true},
-        {"option_text": "2,700 (using 60% of 1800 + 40% of 3600 = 1080 + 1440 = 2520, rounded up)", "is_correct": false},
-        {"option_text": "2,400 (from 50% of 1800 + 50% of 3600 = 900 + 1800, treating both as 50%)", "is_correct": false}
+        {
+          "option_text": "1,400",
+          "is_correct": false
+        },
+        {
+          "option_text": "2,574",
+          "is_correct": true
+        },
+        {
+          "option_text": "2,700",
+          "is_correct": false
+        },
+        {
+          "option_text": "2,400",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -177,10 +297,22 @@
     {
       "stem": "Approximate the value of: (489 × 511) / 100",
       "options": [
-        {"option_text": "2,400 (from 490 × 510 = 249900, dividing by 100 and rounding to 2400)", "is_correct": false},
-        {"option_text": "2,499 (from (500−11)(500+11) = 250000 − 121 = 249879 ÷ 100 ≈ 2499)", "is_correct": true},
-        {"option_text": "2,500 (from 500 × 500 ÷ 100 = 2500, ignoring the difference of squares adjustment)", "is_correct": false},
-        {"option_text": "2,550 (from overestimating the product as 255000)", "is_correct": false}
+        {
+          "option_text": "2,400",
+          "is_correct": false
+        },
+        {
+          "option_text": "2,499",
+          "is_correct": true
+        },
+        {
+          "option_text": "2,500",
+          "is_correct": false
+        },
+        {
+          "option_text": "2,550",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -194,10 +326,22 @@
     {
       "stem": "What is the approximate value of: (1.98)⁴?",
       "options": [
-        {"option_text": "14 (computing (1.98)² ≈ 4 then squaring again: 4² = 16, arithmetic slip)", "is_correct": false},
-        {"option_text": "15.4 (using (2)⁴ = 16 and subtracting 0.6 for the small deficit)", "is_correct": false},
-        {"option_text": "16 (using 1.98 ≈ 2 and 2⁴ = 16, the closest whole-number approximation)", "is_correct": true},
-        {"option_text": "17 (overestimating due to squaring the rounding error instead of the value)", "is_correct": false}
+        {
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "option_text": "15.4",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": true
+        },
+        {
+          "option_text": "17",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",

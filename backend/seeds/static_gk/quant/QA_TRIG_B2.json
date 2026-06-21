@@ -7,10 +7,22 @@
     {
       "stem": "If sin θ = 3/5, find the value of tan θ.",
       "options": [
-        {"option_text": "3/4 (using sin=3/5 and opposite=3, hyp=5; adj=4; tan=opp/adj=3/4 ✓)", "is_correct": true},
-        {"option_text": "4/3 (reciprocal — this would be cot θ, not tan θ)", "is_correct": false},
-        {"option_text": "5/3 (this is csc θ = 1/sin θ = 5/3)", "is_correct": false},
-        {"option_text": "5/4 (this is sec θ = 1/cos θ = 5/4)", "is_correct": false}
+        {
+          "option_text": "3/4",
+          "is_correct": true
+        },
+        {
+          "option_text": "4/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "What is the value of sin²30° + cos²30°?",
       "options": [
-        {"option_text": "1/2 (computing only sin²30° = 1/4 or cos²30° = 3/4 separately)", "is_correct": false},
-        {"option_text": "3/4 (computing only cos²30° and ignoring sin²30°)", "is_correct": false},
-        {"option_text": "1 (correct: Pythagorean identity sin²θ+cos²θ=1 for ALL values of θ)", "is_correct": true},
-        {"option_text": "5/4 (adding incorrectly: 1/4+1=5/4)", "is_correct": false}
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "5/4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "Find the value of tan45° + cot45°.",
       "options": [
-        {"option_text": "1 (tan45°=1; cot45°=1; sum=2, not 1)", "is_correct": false},
-        {"option_text": "√2 (wrong — no square root involved)", "is_correct": false},
-        {"option_text": "2 (correct: tan45°=1, cot45°=1/tan45°=1; 1+1=2)", "is_correct": true},
-        {"option_text": "0 (1+1≠0)", "is_correct": false}
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "√2",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "0 (1+1≠0)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "Simplify: (1 − sin²θ) × sec²θ",
       "options": [
-        {"option_text": "sin²θ (wrong simplification: (1−sin²θ)=cos²θ; cos²θ×sec²θ=1, not sin²θ)", "is_correct": false},
-        {"option_text": "1 (correct: 1−sin²θ=cos²θ; cos²θ × sec²θ = cos²θ × 1/cos²θ = 1)", "is_correct": true},
-        {"option_text": "cos²θ (forgetting to multiply by sec²θ)", "is_correct": false},
-        {"option_text": "tan²θ (wrong identity applied)", "is_correct": false}
+        {
+          "option_text": "sin²θ",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "cos²θ",
+          "is_correct": false
+        },
+        {
+          "option_text": "tan²θ",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "If tan θ = 5/12, what is sin θ + cos θ?",
       "options": [
-        {"option_text": "17/13 (correct: adj=12,opp=5,hyp=13; sin+cos=5/13+12/13=17/13)", "is_correct": true},
-        {"option_text": "5/13 + 12/13 = 1 (wrong: 5/13+12/13=17/13≠1)", "is_correct": false},
-        {"option_text": "13/17 (reciprocal of correct answer)", "is_correct": false},
-        {"option_text": "1 (applying wrong identity — sin+cos≠1)", "is_correct": false}
+        {
+          "option_text": "17/13",
+          "is_correct": true
+        },
+        {
+          "option_text": "5/13 + 12/13 = 1",
+          "is_correct": false
+        },
+        {
+          "option_text": "13/17",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "What is the value of 2sin30°cos30°?",
       "options": [
-        {"option_text": "√3/2 (correct: 2×(1/2)×(√3/2)=√3/2; also equals sin60°)", "is_correct": true},
-        {"option_text": "√3 (forgetting to divide by 2: 2×(1/2)×(√3/2) ≠ √3)", "is_correct": false},
-        {"option_text": "1/2 (this is just sin30°)", "is_correct": false},
-        {"option_text": "3/4 (computing 2×sin²30°×2 or similar error)", "is_correct": false}
+        {
+          "option_text": "√3/2",
+          "is_correct": true
+        },
+        {
+          "option_text": "√3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/4",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "EASY",
@@ -109,10 +181,22 @@
     {
       "stem": "If sin A + sin²A = 1, what is cos²A + cos⁴A?",
       "options": [
-        {"option_text": "0 (wrong — identity manipulation gives a positive value)", "is_correct": false},
-        {"option_text": "1 (correct: sinA=1−sin²A=cos²A; substituting: cos²A+cos⁴A=sinA+sin²A=1)", "is_correct": true},
-        {"option_text": "sin²A (partial substitution error)", "is_correct": false},
-        {"option_text": "2 (over-counting)", "is_correct": false}
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "sin²A",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 (over-counting)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "What is the value of cos0° + sin90° + tan45°?",
       "options": [
-        {"option_text": "2 (cos0°=1, sin90°=1 — their sum is 2, but tan45°=1 also, so total=3)", "is_correct": false},
-        {"option_text": "3 (correct: cos0°=1 + sin90°=1 + tan45°=1 = 3)", "is_correct": true},
-        {"option_text": "1 (misidentifying one of the standard values)", "is_correct": false},
-        {"option_text": "0 (adding signs incorrectly)", "is_correct": false}
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -143,10 +239,22 @@
     {
       "stem": "Which of the following is equal to sin(90° − θ)?",
       "options": [
-        {"option_text": "sinθ (sin(90°−θ) is a complementary angle — not sinθ)", "is_correct": false},
-        {"option_text": "cosθ (correct: sin(90°−θ) = cosθ by complementary angle identity)", "is_correct": true},
-        {"option_text": "−cosθ (wrong sign — the identity has a positive cosθ)", "is_correct": false},
-        {"option_text": "tanθ (unrelated to the complementary angle identity)", "is_correct": false}
+        {
+          "option_text": "sinθ",
+          "is_correct": false
+        },
+        {
+          "option_text": "cosθ",
+          "is_correct": true
+        },
+        {
+          "option_text": "−cosθ",
+          "is_correct": false
+        },
+        {
+          "option_text": "tanθ",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -160,10 +268,22 @@
     {
       "stem": "If cosθ = −1/2 and θ is in the third quadrant (180° < θ < 270°), find sinθ.",
       "options": [
-        {"option_text": "√3/2 (positive value — but in Q3, sin is negative)", "is_correct": false},
-        {"option_text": "−√3/2 (correct: in Q3, both sin and cos are negative; cos=−1/2 means reference angle=60°; sin60°=√3/2 → sin θ=−√3/2)", "is_correct": true},
-        {"option_text": "1/2 (wrong — this is |sin| for 30°, not 60°)", "is_correct": false},
-        {"option_text": "−1/2 (same as cosθ — not correct for the given cosθ=−1/2)", "is_correct": false}
+        {
+          "option_text": "√3/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "−√3/2",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "−1/2",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -177,10 +297,22 @@
     {
       "stem": "Simplify: sin²θ/(1 − cos²θ)",
       "options": [
-        {"option_text": "0 (wrong — sin²θ and 1−cos²θ are equal, not zero)", "is_correct": false},
-        {"option_text": "1 (correct: 1−cos²θ = sin²θ; sin²θ/sin²θ = 1)", "is_correct": true},
-        {"option_text": "cos²θ (wrong — this doesn't simplify to cos²θ)", "is_correct": false},
-        {"option_text": "tan²θ (confusing with a different expression: sin²θ/cos²θ = tan²θ)", "is_correct": false}
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "cos²θ",
+          "is_correct": false
+        },
+        {
+          "option_text": "tan²θ",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -194,10 +326,22 @@
     {
       "stem": "If tan(A+B) = √3 and tan(A−B) = 1/√3, find A and B.",
       "options": [
-        {"option_text": "A=45°, B=15° (tan(45+15)=tan60=√3 ✓; tan(45−15)=tan30=1/√3 ✓)", "is_correct": true},
-        {"option_text": "A=60°, B=30° (tan90°=undefined; fails)", "is_correct": false},
-        {"option_text": "A=30°, B=15° (tan45=1≠√3; fails)", "is_correct": false},
-        {"option_text": "A=75°, B=30° (tan105° is negative; fails)", "is_correct": false}
+        {
+          "option_text": "A=45°, B=15°",
+          "is_correct": true
+        },
+        {
+          "option_text": "A=60°, B=30°",
+          "is_correct": false
+        },
+        {
+          "option_text": "A=30°, B=15°",
+          "is_correct": false
+        },
+        {
+          "option_text": "A=75°, B=30°",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",

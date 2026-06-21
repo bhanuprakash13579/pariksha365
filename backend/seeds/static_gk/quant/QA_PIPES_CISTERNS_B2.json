@@ -7,10 +7,22 @@
     {
       "stem": "Pipe A can fill a tank in 6 hours and Pipe B can fill it in 12 hours. If both pipes are opened together, in how many hours will the tank be full?",
       "options": [
-        {"option_text": "9 hours (wrong: combined rate = 1/6+1/12 = 3/12 = 1/4; time = 4 hours)", "is_correct": false},
-        {"option_text": "4 hours (correct: A fills 1/6 per hour, B fills 1/12 per hour; together = 1/6+1/12 = 2/12+1/12 = 3/12 = 1/4 per hour; time = 4 hours ✓)", "is_correct": true},
-        {"option_text": "3 hours (wrong: 1/3 rate would mean A fills 1/6, B also 1/6; but B takes 12 hours)", "is_correct": false},
-        {"option_text": "6 hours (wrong: that's just pipe A's time alone)", "is_correct": false}
+        {
+          "option_text": "9 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 hours",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "A tank has an inlet pipe that fills it in 8 hours and an outlet pipe that empties it in 12 hours. If both are open simultaneously when the tank is empty, in how many hours will the tank be full?",
       "options": [
-        {"option_text": "20 hours (wrong: net rate = 1/8−1/12 = 3/24−2/24 = 1/24; time = 24 hours)", "is_correct": false},
-        {"option_text": "24 hours (correct: inlet rate = 1/8; outlet rate = 1/12; net filling rate = 1/8−1/12 = 3/24−2/24 = 1/24 per hour; tank fills in 24 hours ✓)", "is_correct": true},
-        {"option_text": "4 hours (wrong: that would be the time if both were filling at those rates)", "is_correct": false},
-        {"option_text": "48 hours (wrong: 1/48 rate would mean outlet is much larger)", "is_correct": false}
+        {
+          "option_text": "20 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "48 hours",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "Two pipes A and B can fill a cistern in 10 minutes and 15 minutes respectively. Both pipes are opened together, but after 5 minutes pipe A is closed. In how many minutes more will the cistern be full?",
       "options": [
-        {"option_text": "3 minutes (wrong: after 5 min together, work done = 5×(1/10+1/15) = 5×5/30 = 5/6; remaining = 1/6; B alone = (1/6)÷(1/15) = 15/6 = 2.5 min)", "is_correct": false},
-        {"option_text": "2.5 minutes (correct: combined rate=1/10+1/15=3/30+2/30=5/30=1/6 per min; in 5 min = 5/6 filled; remaining=1/6; B fills at 1/15; time=1/6÷1/15=15/6=2.5 min ✓)", "is_correct": true},
-        {"option_text": "5 minutes (wrong: 5 more minutes would overfill the cistern)", "is_correct": false},
-        {"option_text": "4 minutes (wrong: B in 4 min = 4/15 ≠ 1/6)", "is_correct": false}
+        {
+          "option_text": "3 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "2.5 minutes",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 minutes",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "A pipe can fill a tank in 4 hours. Due to a leak at the bottom, it takes 6 hours to fill the tank. How long would the leak alone take to empty the full tank?",
       "options": [
-        {"option_text": "10 hours (wrong: 1/4 − 1/leak = 1/6 → 1/leak = 1/4−1/6 = 3/12−2/12 = 1/12; leak = 12 hours)", "is_correct": false},
-        {"option_text": "12 hours (correct: fill rate = 1/4; effective rate with leak = 1/6; leak rate = 1/4−1/6 = 1/12; leak empties in 12 hours ✓)", "is_correct": true},
-        {"option_text": "8 hours (wrong: 1/4−1/8=1/8, so if leak=8h, effective rate=1/8, tank fills in 8h — contradicts 6h)", "is_correct": false},
-        {"option_text": "24 hours (wrong: 1/4−1/24=6/24−1/24=5/24; tank fills in 24/5=4.8h, not 6h)", "is_correct": false}
+        {
+          "option_text": "10 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 hours",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 hours",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "Three pipes A, B, and C can fill a tank in 6, 8, and 12 hours respectively. If all three are opened simultaneously, in how much time will the tank be filled?",
       "options": [
-        {"option_text": "3 hours (wrong: 1/6+1/8+1/12 = 4/24+3/24+2/24 = 9/24 = 3/8; time = 8/3 = 2.67 hours)", "is_correct": false},
-        {"option_text": "2 hours 40 minutes (correct: rate = 1/6+1/8+1/12 = 4/24+3/24+2/24 = 9/24 = 3/8 per hr; time = 8/3 hr = 2 hr 40 min ✓)", "is_correct": true},
-        {"option_text": "3 hours 20 minutes (wrong: 1/6+1/8+1/12 ≠ 1/3.33; actual = 3/8 per hour)", "is_correct": false},
-        {"option_text": "2 hours (wrong: 2 hours means rate = 1/2; but 3/8 ≠ 1/2)", "is_correct": false}
+        {
+          "option_text": "3 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 hours 40 minutes",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 hours 20 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 hours",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "A cistern has two pipes. The inlet fills it in 20 minutes, the outlet empties it in 30 minutes. If the cistern is full, how long will it take to empty if only the outlet is opened?",
       "options": [
-        {"option_text": "20 minutes (that's the inlet pipe's fill time, not the outlet's empty time)", "is_correct": false},
-        {"option_text": "30 minutes (correct: the outlet pipe alone empties the cistern in 30 minutes — that is what '30 minutes to empty' means directly ✓)", "is_correct": true},
-        {"option_text": "12 minutes (wrong: 12 minutes would be LCM-based, not the correct answer here)", "is_correct": false},
-        {"option_text": "60 minutes (wrong: no basis for 60 minutes here)", "is_correct": false}
+        {
+          "option_text": "20 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 minutes",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 minutes",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -109,10 +181,22 @@
     {
       "stem": "Pipe A fills a tank twice as fast as Pipe B. If both together fill it in 18 minutes, how long does Pipe A alone take?",
       "options": [
-        {"option_text": "27 minutes (correct: let B = x min; A = x/2 min (twice as fast); 1/(x/2)+1/x=1/18 → 2/x+1/x=1/18 → 3/x=1/18 → x=54; A=54/2=27 min ✓)", "is_correct": true},
-        {"option_text": "36 minutes (wrong: if A=36, B=72; combined rate=1/36+1/72=3/72=1/24; fills in 24 min, not 18)", "is_correct": false},
-        {"option_text": "24 minutes (wrong: if A=24, B=48; 1/24+1/48=3/48=1/16; fills in 16 min, not 18)", "is_correct": false},
-        {"option_text": "30 minutes (wrong: if A=30, B=60; 1/30+1/60=3/60=1/20; fills in 20 min, not 18)", "is_correct": false}
+        {
+          "option_text": "27 minutes",
+          "is_correct": true
+        },
+        {
+          "option_text": "36 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 minutes",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "A tank is 1/5 full. Pipe A can fill it in 15 minutes and pipe B can empty it in 10 minutes. If both are opened, when will the tank be empty?",
       "options": [
-        {"option_text": "4 minutes (wrong: net emptying rate = 1/10−1/15 = 3/30−2/30 = 1/30 per min; 1/5 full → time = (1/5)÷(1/30) = 6 min)", "is_correct": false},
-        {"option_text": "6 minutes (correct: net draining rate = 1/10−1/15 = 1/30 per min; to drain 1/5 of tank = (1/5)÷(1/30) = 30/5 = 6 min ✓)", "is_correct": true},
-        {"option_text": "3 minutes (wrong: 3 min × 1/30 = 3/30 = 1/10 of tank drained; but tank is 1/5 = 2/10)", "is_correct": false},
-        {"option_text": "10 minutes (wrong: 10×1/30 = 10/30 = 1/3 of tank — but only 1/5 needed)", "is_correct": false}
+        {
+          "option_text": "4 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 minutes",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 minutes",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 minutes",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "Pipe X fills a tank in 'p' hours and pipe Y fills it in 'q' hours. The time to fill the tank when both are open is:",
       "options": [
-        {"option_text": "p + q (wrong: that would mean the rate is 1/(p+q) which is wrong — adding times is not how rates add)", "is_correct": false},
-        {"option_text": "pq/(p+q) (correct: combined rate = 1/p+1/q = (p+q)/pq; time = pq/(p+q) ✓)", "is_correct": true},
-        {"option_text": "(p+q)/pq (wrong: that's the combined RATE, not the time; time = inverse of rate)", "is_correct": false},
-        {"option_text": "√(pq) (wrong: geometric mean has no application in pipes and cisterns)", "is_correct": false}
+        {
+          "option_text": "p + q",
+          "is_correct": false
+        },
+        {
+          "option_text": "pq/(p+q)",
+          "is_correct": true
+        },
+        {
+          "option_text": "(p+q)/pq",
+          "is_correct": false
+        },
+        {
+          "option_text": "√(pq)",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -160,10 +268,22 @@
     {
       "stem": "Two pipes can fill a tank in 12 and 18 hours. If opened alternately for 1 hour each, starting with pipe A, in how many hours will the tank be filled?",
       "options": [
-        {"option_text": "14 hours (wrong: let's calculate: in 2 hrs (1 each): 1/12+1/18=3/36+2/36=5/36; after 14 hrs (7 cycles)=7×5/36=35/36; remaining=1/36; A fills in 1/36÷1/12=12/36=1/3 hr; total=14+1/3=14.33 hours)", "is_correct": false},
-        {"option_text": "14 hours 20 minutes (correct: in each 2-hr cycle: 5/36 filled; 7 cycles=14 hrs fills 35/36; remaining 1/36 filled by A: (1/36)/(1/12)=1/3 hr=20 min; total=14 hr 20 min ✓)", "is_correct": true},
-        {"option_text": "15 hours (wrong: 15 hrs would overshoot the calculation)", "is_correct": false},
-        {"option_text": "13 hours 40 minutes (wrong: partial calculation error)", "is_correct": false}
+        {
+          "option_text": "14 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "14 hours 20 minutes",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 hours",
+          "is_correct": false
+        },
+        {
+          "option_text": "13 hours 40 minutes",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",

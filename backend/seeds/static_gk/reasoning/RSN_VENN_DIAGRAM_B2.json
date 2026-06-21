@@ -7,10 +7,22 @@
     {
       "stem": "In a group of 60 students, 35 play cricket, 20 play football, and 10 play both. How many students play neither cricket nor football?",
       "options": [
-        {"option_text": "10 (wrong: n(C∪F)=35+20−10=45; neither=60−45=15)", "is_correct": false},
-        {"option_text": "15 (correct: n(C∪F) = 35+20−10 = 45; neither = 60−45 = 15 ✓)", "is_correct": true},
-        {"option_text": "5 (wrong: 45+5=50≠60)", "is_correct": false},
-        {"option_text": "25 (wrong: 45+25=70≠60)", "is_correct": false}
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "In a class of 80 students, 45 study Science, 30 study Arts, and 15 study both. How many students study only Science (not Arts)?",
       "options": [
-        {"option_text": "45 (wrong: that's the total number studying Science including those who also study Arts)", "is_correct": false},
-        {"option_text": "30 (correct: students studying ONLY Science = 45−15 = 30 (subtract those who study both) ✓)", "is_correct": true},
-        {"option_text": "15 (that's the number who study BOTH, not only Science)", "is_correct": false},
-        {"option_text": "60 (wrong: that would be more than the total Science students)", "is_correct": false}
+        {
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "In a survey of 100 people, 60 like tea, 50 like coffee, and 30 like both. How many like at least one of the two beverages?",
       "options": [
-        {"option_text": "80 (correct: n(T∪C)=60+50−30=80; 80 people like at least one ✓)", "is_correct": true},
-        {"option_text": "110 (wrong: that's 60+50 without subtracting the intersection)", "is_correct": false},
-        {"option_text": "70 (wrong: 70 would result from 60+50−40=70 — incorrect subtraction)", "is_correct": false},
-        {"option_text": "50 (wrong: that's just the number who like coffee)", "is_correct": false}
+        {
+          "option_text": "80",
+          "is_correct": true
+        },
+        {
+          "option_text": "110",
+          "is_correct": false
+        },
+        {
+          "option_text": "70",
+          "is_correct": false
+        },
+        {
+          "option_text": "50",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "A Venn diagram shows three overlapping sets A, B, C where:\n- Only A = 10\n- Only B = 15\n- Only C = 20\n- A and B only = 5\n- B and C only = 8\n- A and C only = 7\n- All three = 3\nHow many elements are in set A (total)?",
       "options": [
-        {"option_text": "15 (wrong: A = only A + A∩B only + A∩C only + all three = 10+5+7+3=25)", "is_correct": false},
-        {"option_text": "25 (correct: n(A) = only A + (A∩B only) + (A∩C only) + (all three) = 10+5+7+3 = 25 ✓)", "is_correct": true},
-        {"option_text": "18 (wrong: doesn't add up)", "is_correct": false},
-        {"option_text": "22 (wrong: partial sum)", "is_correct": false}
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": true
+        },
+        {
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "option_text": "22",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "In a school of 200 students, 120 have studied French, 100 have studied German, and 20 have studied neither. How many students have studied both French and German?",
       "options": [
-        {"option_text": "20 (wrong: n(F∪G)=200−20=180; 120+100−x=180; x=40, not 20)", "is_correct": false},
-        {"option_text": "40 (correct: at least one = 200−20=180; 120+100−x=180; x=40 ✓)", "is_correct": true},
-        {"option_text": "60 (wrong: 120+100−60=160≠180)", "is_correct": false},
-        {"option_text": "80 (wrong: 120+100−80=140≠180)", "is_correct": false}
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": true
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "80",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "From the Venn diagram context: 120 people were surveyed. 75 like apples, 60 like bananas, and 45 like both. How many like only apples?",
       "options": [
-        {"option_text": "60 (wrong: only apples = 75−45=30)", "is_correct": false},
-        {"option_text": "30 (correct: only apples = total apples − both = 75−45 = 30 ✓)", "is_correct": true},
-        {"option_text": "45 (that's the number who like both, not only apples)", "is_correct": false},
-        {"option_text": "75 (that's total apple-likers including those who also like bananas)", "is_correct": false}
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "option_text": "75",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -109,10 +181,22 @@
     {
       "stem": "In a Venn diagram, Set P = {1,2,3,4,5,6}, Set Q = {4,5,6,7,8,9}. What is P ∩ Q (intersection)?",
       "options": [
-        {"option_text": "{1,2,3,7,8,9} (that's the elements in only P or only Q — the exclusive elements, not the intersection)", "is_correct": false},
-        {"option_text": "{4,5,6} (correct: P∩Q = elements in BOTH P and Q = {4,5,6} ✓)", "is_correct": true},
-        {"option_text": "{1,2,3,4,5,6,7,8,9} (that's P∪Q = all elements in either set)", "is_correct": false},
-        {"option_text": "{1,2,3} (that's elements in only P, not the intersection)", "is_correct": false}
+        {
+          "option_text": "{1,2,3,7,8,9}",
+          "is_correct": false
+        },
+        {
+          "option_text": "{4,5,6}",
+          "is_correct": true
+        },
+        {
+          "option_text": "{1,2,3,4,5,6,7,8,9}",
+          "is_correct": false
+        },
+        {
+          "option_text": "{1,2,3}",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -126,10 +210,22 @@
     {
       "stem": "150 students were surveyed about their hobbies. 90 read books, 80 play games, and some do both. 20 do neither. How many do both?",
       "options": [
-        {"option_text": "30 (wrong: n(B∪G)=150−20=130; 90+80−x=130; 170−x=130; x=40)", "is_correct": false},
-        {"option_text": "40 (correct: n(B∪G) = 150−20 = 130; 90+80−x=130 → x=40 ✓)", "is_correct": true},
-        {"option_text": "50 (wrong: 90+80−50=120≠130)", "is_correct": false},
-        {"option_text": "20 (that's the number who do neither, not both)", "is_correct": false}
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": true
+        },
+        {
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "A represents doctors, B represents teachers. In a Venn diagram, the region OUTSIDE both circles (outside A and B) represents:",
       "options": [
-        {"option_text": "People who are both doctors and teachers (that's the intersection/overlap region)", "is_correct": false},
-        {"option_text": "Only doctors (that's the part of A outside B)", "is_correct": false},
-        {"option_text": "People who are neither doctors nor teachers (correct: the region outside both circles = neither ✓)", "is_correct": true},
-        {"option_text": "People who are doctors or teachers (that's the union region = inside either circle)", "is_correct": false}
+        {
+          "option_text": "People who are both doctors and teachers",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only doctors",
+          "is_correct": false
+        },
+        {
+          "option_text": "People who are neither doctors nor teachers",
+          "is_correct": true
+        },
+        {
+          "option_text": "People who are doctors or teachers",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -160,10 +268,22 @@
     {
       "stem": "In three overlapping sets (Music, Dance, Drama) with 100 students total:\n- Only Music = 25, Only Dance = 20, Only Drama = 15\n- Music & Dance only = 8, Dance & Drama only = 7, Music & Drama only = 6\n- All three = 4\nHow many students are NOT involved in any of the three?",
       "options": [
-        {"option_text": "5 (wrong: sum=25+20+15+8+7+6+4=85; neither=100−85=15)", "is_correct": false},
-        {"option_text": "15 (correct: sum of all regions=25+20+15+8+7+6+4=85; neither=100−85=15 ✓)", "is_correct": true},
-        {"option_text": "10 (wrong: 100−90=10; but 85≠90)", "is_correct": false},
-        {"option_text": "25 (wrong: 100−75=25; 75≠85)", "is_correct": false}
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",

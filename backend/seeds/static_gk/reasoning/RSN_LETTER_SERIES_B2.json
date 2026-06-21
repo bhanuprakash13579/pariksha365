@@ -7,10 +7,22 @@
     {
       "stem": "Find the next term: A, C, F, J, O, ?",
       "options": [
-        {"option_text": "S (wrong: differences +2,+3,+4,+5,+6; O(15)+6=U(21), not S)", "is_correct": false},
-        {"option_text": "U (correct: A(1),C(3),F(6),J(10),O(15),U(21); differences=2,3,4,5,6 (triangular number positions) ✓)", "is_correct": true},
-        {"option_text": "T (wrong: T=20th letter; position should be 21=U)", "is_correct": false},
-        {"option_text": "V (wrong: V=22nd letter; should be 21st=U)", "is_correct": false}
+        {
+          "option_text": "S",
+          "is_correct": false
+        },
+        {
+          "option_text": "U",
+          "is_correct": true
+        },
+        {
+          "option_text": "T",
+          "is_correct": false
+        },
+        {
+          "option_text": "V",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "Find the next term: Z, X, V, T, R, ?",
       "options": [
-        {"option_text": "Q (wrong: pattern is -2 each step; R(18)-2=16=P)", "is_correct": false},
-        {"option_text": "P (correct: Z(26),X(24),V(22),T(20),R(18); each -2; R-2=P(16) ✓)", "is_correct": true},
-        {"option_text": "N (wrong: N=14; R(18)-4=14; gap is -2, not -4)", "is_correct": false},
-        {"option_text": "O (wrong: O=15; not a valid -2 step from R=18)", "is_correct": false}
+        {
+          "option_text": "Q",
+          "is_correct": false
+        },
+        {
+          "option_text": "P",
+          "is_correct": true
+        },
+        {
+          "option_text": "N",
+          "is_correct": false
+        },
+        {
+          "option_text": "O",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "Find the missing term: B, E, H, K, ?, Q",
       "options": [
-        {"option_text": "M (wrong: +3 pattern; K(11)+3=N(14))", "is_correct": false},
-        {"option_text": "N (correct: B(2),E(5),H(8),K(11),N(14),Q(17); each +3 ✓)", "is_correct": true},
-        {"option_text": "L (wrong: L=12; K(11)+1=12; but gap is +3)", "is_correct": false},
-        {"option_text": "O (wrong: O=15; K(11)+4=15; gap is +3 not +4)", "is_correct": false}
+        {
+          "option_text": "M",
+          "is_correct": false
+        },
+        {
+          "option_text": "N",
+          "is_correct": true
+        },
+        {
+          "option_text": "L",
+          "is_correct": false
+        },
+        {
+          "option_text": "O",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "Find the wrong term: AZ, BY, CX, DW, EV, FU, GT",
       "options": [
-        {"option_text": "CX (correct? CX: C=3, X=24; 3+24=27; DW: D=4, W=23; 4+23=27 ✓; GT: G=7, T=20; 7+20=27; all sum to 27; no wrong term here... let me check differently: first letters +1 each; second letters from Z descending. AZ,BY,CX,DW,EV,FU,GT — all follow the pattern. No wrong term.)", "is_correct": false},
-        {"option_text": "GT (wrong: wait let me check: G=7, should be followed by second letter; AZ(last pair), BY, CX, DW, EV, FU, and seventh pair: G=7th letter; Z is 26th, then Y=25, X=24, W=23, V=22, U=21, T=20; G+T=7+20=27; all correct; the seventh pair should be G+T where T=26-6=20; GT is correct)", "is_correct": false},
-        {"option_text": "All terms are correct (correct: each pair has first+second letter positions summing to 27; first letters A,B,C,D,E,F,G ascending; second letters Z,Y,X,W,V,U,T descending ✓)", "is_correct": true},
-        {"option_text": "EV (wrong: E=5, V=22; 5+22=27; correct pattern)", "is_correct": false}
+        {
+          "option_text": "CX",
+          "is_correct": false
+        },
+        {
+          "option_text": "GT",
+          "is_correct": false
+        },
+        {
+          "option_text": "All terms are correct",
+          "is_correct": true
+        },
+        {
+          "option_text": "EV",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "Find the next group: AB, CD, EF, GH, ?",
       "options": [
-        {"option_text": "IK (wrong: should be consecutive; after GH comes IJ, not IK)", "is_correct": false},
-        {"option_text": "IJ (correct: consecutive letter pairs; AB,CD,EF,GH,IJ ✓)", "is_correct": true},
-        {"option_text": "JK (wrong: JK skips I)", "is_correct": false},
-        {"option_text": "HI (wrong: HI would go backward from GH)", "is_correct": false}
+        {
+          "option_text": "IK",
+          "is_correct": false
+        },
+        {
+          "option_text": "IJ",
+          "is_correct": true
+        },
+        {
+          "option_text": "JK",
+          "is_correct": false
+        },
+        {
+          "option_text": "HI",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -92,10 +152,22 @@
     {
       "stem": "Find the missing term: BMX, CNY, DOZ, EP?, FQB",
       "options": [
-        {"option_text": "EQA (wrong: first letter already done — D,E; third letter Z,A,B... EP should have third letter A)", "is_correct": false},
-        {"option_text": "EPA (correct: B,C,D,E,F (+1 each); M,N,O,P,Q (+1 each); X,Y,Z,A,B (cyclic +1 with wrap): Z+1=A ✓; EP+A=EPA ✓)", "is_correct": true},
-        {"option_text": "EPB (wrong: B is the 5th third-letter, not 4th)", "is_correct": false},
-        {"option_text": "EPZ (wrong: Z was the 3rd third-letter, already used)", "is_correct": false}
+        {
+          "option_text": "EQA",
+          "is_correct": false
+        },
+        {
+          "option_text": "EPA",
+          "is_correct": true
+        },
+        {
+          "option_text": "EPB",
+          "is_correct": false
+        },
+        {
+          "option_text": "EPZ",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -109,10 +181,22 @@
     {
       "stem": "Find the next term in the series: ABD, CEH, ?",
       "options": [
-        {"option_text": "DFI (wrong: let's find the pattern; A(1),B(2),D(4): differences 1,2; C(3),E(5),H(8): differences 2,3; next should be differences 3,4; after H: start letter=(?) next from H: H=8; gaps in previous group end on 3, next on 4; let's see: starting positions: A=1, C=3, ?=6 (triangular: 1,3,6,10...); next start=6=F; F(6)+3=I(9)+4=M(13)=FIM)", "is_correct": false},
-        {"option_text": "FIM (correct: pattern—each group starts at triangular positions (1,3,6...); within each group, gaps increase by 1; group1: A(1)+1=B(2)+2=D(4); group2: C(3)+2=E(5)+3=H(8); group3: F(6)+3=I(9)+4=M(13)=FIM ✓)", "is_correct": true},
-        {"option_text": "GJM (wrong: doesn't match the triangular starting positions)", "is_correct": false},
-        {"option_text": "EGJ (wrong: doesn't follow the pattern)", "is_correct": false}
+        {
+          "option_text": "DFI",
+          "is_correct": false
+        },
+        {
+          "option_text": "FIM",
+          "is_correct": true
+        },
+        {
+          "option_text": "GJM",
+          "is_correct": false
+        },
+        {
+          "option_text": "EGJ",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "How many letters separate J and R in the English alphabet?",
       "options": [
-        {"option_text": "7 (correct: J=10, R=18; letters between = 18-10-1=7; K,L,M,N,O,P,Q=7 letters ✓)", "is_correct": true},
-        {"option_text": "8 (wrong: 8 would include either J or R)", "is_correct": false},
-        {"option_text": "6 (wrong: only 6 would miss one letter)", "is_correct": false},
-        {"option_text": "9 (wrong: R-J=8; letters between=R-J-1=7, not 9)", "is_correct": false}
+        {
+          "option_text": "7",
+          "is_correct": true
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -143,10 +239,22 @@
     {
       "stem": "If the alphabet is reversed (Z=1, Y=2...A=26), which letter has the same position value as in normal alphabet?",
       "options": [
-        {"option_text": "M (wrong: M=13 normally; in reversed: M=26-13+1=14; different)", "is_correct": false},
-        {"option_text": "N (wrong: N=14 normally; reversed: N=26-14+1=13; different)", "is_correct": false},
-        {"option_text": "No letter has the same position in both (correct: for normal position x and reversed position 27-x to be equal: x=27-x; 2x=27; x=13.5; no integer solution ✓)", "is_correct": true},
-        {"option_text": "Both M and N (wrong: neither has same position in both orderings)", "is_correct": false}
+        {
+          "option_text": "M",
+          "is_correct": false
+        },
+        {
+          "option_text": "N",
+          "is_correct": false
+        },
+        {
+          "option_text": "No letter has the same position in both",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both M and N",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -160,10 +268,22 @@
     {
       "stem": "Find the next term: ac, ce, eg, gi, ?",
       "options": [
-        {"option_text": "hj (wrong: pattern has alternate letters (skip 1); after gi: g=7, i=9; next starts from i+2=k=11)", "is_correct": false},
-        {"option_text": "ik (correct: pattern — pairs of letters skipping 1 each time; each pair: (odd,odd+2); a(1),c(3); c(3),e(5); e(5),g(7); g(7),i(9); i(9),k(11) ✓)", "is_correct": true},
-        {"option_text": "jk (wrong: jk would mean both even and odd letters; pattern uses alternate letters)", "is_correct": false},
-        {"option_text": "km (wrong: km=11,13; would skip the 'i' connection)", "is_correct": false}
+        {
+          "option_text": "hj",
+          "is_correct": false
+        },
+        {
+          "option_text": "ik",
+          "is_correct": true
+        },
+        {
+          "option_text": "jk",
+          "is_correct": false
+        },
+        {
+          "option_text": "km",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",

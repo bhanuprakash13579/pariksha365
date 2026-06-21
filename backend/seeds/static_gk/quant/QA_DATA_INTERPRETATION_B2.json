@@ -7,10 +7,22 @@
     {
       "stem": "Study the table and answer Q1-Q3:\nA company's annual sales (in ₹ lakhs) over 5 years:\nYear | Sales\n2019 | 120\n2020 | 150\n2021 | 180\n2022 | 210\n2023 | 240\n\nQ1: What was the percentage increase in sales from 2019 to 2023?",
       "options": [
-        {"option_text": "50% (wrong: increase=120; % increase=120/120×100=100%)", "is_correct": false},
-        {"option_text": "100% (correct: increase = 240−120 = 120; % increase = 120/120 × 100 = 100% ✓)", "is_correct": true},
-        {"option_text": "75% (wrong: 75% of 120=90; 120+90=210, not 240)", "is_correct": false},
-        {"option_text": "120% (wrong: 120% of 120=144; 120+144=264, not 240)", "is_correct": false}
+        {
+          "option_text": "50%",
+          "is_correct": false
+        },
+        {
+          "option_text": "100%",
+          "is_correct": true
+        },
+        {
+          "option_text": "75%",
+          "is_correct": false
+        },
+        {
+          "option_text": "120%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "Using the same sales table (2019:120, 2020:150, 2021:180, 2022:210, 2023:240 in ₹ lakhs):\nQ2: What is the average annual sales over the 5-year period?",
       "options": [
-        {"option_text": "₹170 lakhs (wrong: average=(120+150+180+210+240)/5=900/5=180)", "is_correct": false},
-        {"option_text": "₹180 lakhs (correct: total = 120+150+180+210+240 = 900; average = 900/5 = 180 ✓)", "is_correct": true},
-        {"option_text": "₹185 lakhs (wrong: 185×5=925≠900)", "is_correct": false},
-        {"option_text": "₹190 lakhs (wrong: 190×5=950≠900)", "is_correct": false}
+        {
+          "option_text": "₹170 lakhs",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹180 lakhs",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹185 lakhs",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹190 lakhs",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "Using the same sales table (2019:120, 2020:150, 2021:180, 2022:210, 2023:240 in ₹ lakhs):\nQ3: In which year did the sales show the highest growth compared to the previous year?",
       "options": [
-        {"option_text": "2020 (growth = 150−120 = 30; same every year)", "is_correct": false},
-        {"option_text": "2021 (growth = 180−150 = 30; same as other years)", "is_correct": false},
-        {"option_text": "All years show equal absolute growth (correct: each year increases by exactly ₹30 lakhs, so absolute growth is equal across all years ✓)", "is_correct": true},
-        {"option_text": "2022 (growth = 210−180 = 30; same as others)", "is_correct": false}
+        {
+          "option_text": "2020",
+          "is_correct": false
+        },
+        {
+          "option_text": "2021",
+          "is_correct": false
+        },
+        {
+          "option_text": "All years show equal absolute growth",
+          "is_correct": true
+        },
+        {
+          "option_text": "2022",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "Study the data for Q4-Q6:\nA school's examination results:\nSubject | Pass | Fail | Total\nMaths   |  60  |  15  |  75\nScience |  48  |  12  |  60\nEnglish |  80  |  20  | 100\nHistory |  54  |  6   |  60\n\nQ4: What is the overall pass percentage across all subjects?",
       "options": [
-        {"option_text": "80% (wrong: total pass=60+48+80+54=242; total students=75+60+100+60=295; pass%=242/295×100=82.03%)", "is_correct": false},
-        {"option_text": "≈82% (correct: total pass=242; total=295; 242/295×100≈82.03% ✓)", "is_correct": true},
-        {"option_text": "85% (wrong: 85% of 295=250.75, but only 242 passed)", "is_correct": false},
-        {"option_text": "75% (wrong: 75% of 295=221.25, much less than 242)", "is_correct": false}
+        {
+          "option_text": "80%",
+          "is_correct": false
+        },
+        {
+          "option_text": "≈82%",
+          "is_correct": true
+        },
+        {
+          "option_text": "85%",
+          "is_correct": false
+        },
+        {
+          "option_text": "75%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "Using the school data (Maths: 60/75 pass, Science: 48/60, English: 80/100, History: 54/60):\nQ5: Which subject had the highest pass percentage?",
       "options": [
-        {"option_text": "English (80/100 = 80% — not the highest)", "is_correct": false},
-        {"option_text": "History (correct: 54/60 = 90% — the highest pass percentage of all subjects ✓)", "is_correct": true},
-        {"option_text": "Maths (60/75 = 80% — same as English)", "is_correct": false},
-        {"option_text": "Science (48/60 = 80% — same as Maths and English)", "is_correct": false}
+        {
+          "option_text": "English",
+          "is_correct": false
+        },
+        {
+          "option_text": "History",
+          "is_correct": true
+        },
+        {
+          "option_text": "Maths",
+          "is_correct": false
+        },
+        {
+          "option_text": "Science",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "Using the school data (Maths: 60/75 pass, Science: 48/60, English: 80/100, History: 54/60):\nQ6: What is the ratio of total failures to total passes?",
       "options": [
-        {"option_text": "1:4 (wrong: fail=53, pass=242; ratio=53:242 ≠ 1:4=60.5:242)", "is_correct": false},
-        {"option_text": "53:242 (correct: total fail=15+12+20+6=53; total pass=242; ratio=53:242 ✓)", "is_correct": true},
-        {"option_text": "1:5 (wrong: 1:5 = 48.4:242, not 53:242)", "is_correct": false},
-        {"option_text": "15:60 (wrong: that's only Maths failures to Maths passes)", "is_correct": false}
+        {
+          "option_text": "1:4",
+          "is_correct": false
+        },
+        {
+          "option_text": "53:242",
+          "is_correct": true
+        },
+        {
+          "option_text": "1:5",
+          "is_correct": false
+        },
+        {
+          "option_text": "15:60",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "Study the population data and answer Q7-Q10:\nCity populations (in thousands): A=500, B=350, C=420, D=280, E=650\n\nQ7: What percentage of the total population does City E represent?",
       "options": [
-        {"option_text": "25% (wrong: total=500+350+420+280+650=2200; E=650; 650/2200×100=29.54%)", "is_correct": false},
-        {"option_text": "≈29.5% (correct: 650/2200 × 100 ≈ 29.5% ✓)", "is_correct": true},
-        {"option_text": "32% (wrong: 32% of 2200=704≠650)", "is_correct": false},
-        {"option_text": "27% (wrong: 27% of 2200=594≠650)", "is_correct": false}
+        {
+          "option_text": "25%",
+          "is_correct": false
+        },
+        {
+          "option_text": "≈29.5%",
+          "is_correct": true
+        },
+        {
+          "option_text": "32%",
+          "is_correct": false
+        },
+        {
+          "option_text": "27%",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "Using city populations (A=500, B=350, C=420, D=280, E=650 thousands):\nQ8: By how many thousands does the largest city's population exceed the smallest?",
       "options": [
-        {"option_text": "300 (wrong: largest=E=650; smallest=D=280; difference=370)", "is_correct": false},
-        {"option_text": "370 (correct: largest=E=650; smallest=D=280; difference=650−280=370 thousand ✓)", "is_correct": true},
-        {"option_text": "350 (wrong: 650−300=350; but D=280, not 300)", "is_correct": false},
-        {"option_text": "320 (wrong: 650−330=320; but D=280)", "is_correct": false}
+        {
+          "option_text": "300",
+          "is_correct": false
+        },
+        {
+          "option_text": "370",
+          "is_correct": true
+        },
+        {
+          "option_text": "350",
+          "is_correct": false
+        },
+        {
+          "option_text": "320",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -143,10 +239,22 @@
     {
       "stem": "Using city populations (A=500, B=350, C=420, D=280, E=650 thousands):\nQ9: What is the average population of the five cities?",
       "options": [
-        {"option_text": "400 thousand (wrong: total=2200; 2200÷5=440)", "is_correct": false},
-        {"option_text": "440 thousand (correct: average=2200÷5=440 thousand ✓)", "is_correct": true},
-        {"option_text": "420 thousand (that's C's population, which happens to be near average but isn't exactly 2200/5)", "is_correct": false},
-        {"option_text": "450 thousand (wrong: 450×5=2250≠2200)", "is_correct": false}
+        {
+          "option_text": "400 thousand",
+          "is_correct": false
+        },
+        {
+          "option_text": "440 thousand",
+          "is_correct": true
+        },
+        {
+          "option_text": "420 thousand",
+          "is_correct": false
+        },
+        {
+          "option_text": "450 thousand",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -160,10 +268,22 @@
     {
       "stem": "Using city populations (A=500, B=350, C=420, D=280, E=650 thousands):\nQ10: Cities A and C together have a population how many times that of City D?",
       "options": [
-        {"option_text": "3 times (wrong: A+C=920; D=280; 920/280=3.285, not exactly 3)", "is_correct": false},
-        {"option_text": "2.5 times (wrong: 2.5×280=700≠920)", "is_correct": false},
-        {"option_text": "≈3.29 times (correct: (500+420)/280=920/280=3.285≈3.29 times ✓)", "is_correct": true},
-        {"option_text": "4 times (wrong: 4×280=1120≠920)", "is_correct": false}
+        {
+          "option_text": "3 times",
+          "is_correct": false
+        },
+        {
+          "option_text": "2.5 times",
+          "is_correct": false
+        },
+        {
+          "option_text": "≈3.29 times",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 times",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",

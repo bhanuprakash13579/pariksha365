@@ -7,10 +7,22 @@
     {
       "stem": "Find the next term: 2, 6, 12, 20, 30, ?",
       "options": [
-        {"option_text": "40 (wrong: differences are 4,6,8,10 — next diff=12; 30+12=42)", "is_correct": false},
-        {"option_text": "42 (correct: differences: 4,6,8,10,12; next=30+12=42 ✓; pattern: n(n+1) → 1×2=2,2×3=6,3×4=12,4×5=20,5×6=30,6×7=42)", "is_correct": true},
-        {"option_text": "44 (wrong)", "is_correct": false},
-        {"option_text": "36 (wrong: 30+6=36 — used last difference again instead of increasing)", "is_correct": false}
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "42",
+          "is_correct": true
+        },
+        {
+          "option_text": "44",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "Find the missing term: 3, 9, 27, ?, 243",
       "options": [
-        {"option_text": "54 (wrong: 27×2=54, but pattern is ×3)", "is_correct": false},
-        {"option_text": "81 (correct: geometric series with common ratio 3; 27×3=81; 81×3=243 ✓)", "is_correct": true},
-        {"option_text": "108 (wrong: 27×4=108)", "is_correct": false},
-        {"option_text": "72 (wrong)", "is_correct": false}
+        {
+          "option_text": "54",
+          "is_correct": false
+        },
+        {
+          "option_text": "81",
+          "is_correct": true
+        },
+        {
+          "option_text": "108",
+          "is_correct": false
+        },
+        {
+          "option_text": "72",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -41,10 +65,22 @@
     {
       "stem": "Find the next term: 1, 1, 2, 3, 5, 8, 13, ?",
       "options": [
-        {"option_text": "18 (wrong: 13+8=21, not 18)", "is_correct": false},
-        {"option_text": "21 (correct: Fibonacci sequence; each term = sum of previous two: 8+13=21 ✓)", "is_correct": true},
-        {"option_text": "26 (wrong: 13×2=26 — not the pattern)", "is_correct": false},
-        {"option_text": "16 (wrong)", "is_correct": false}
+        {
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "option_text": "21",
+          "is_correct": true
+        },
+        {
+          "option_text": "26",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -58,10 +94,22 @@
     {
       "stem": "Find the next term: AZ, BY, CX, DW, ?",
       "options": [
-        {"option_text": "EW (first letter correct but second should continue decreasing)", "is_correct": false},
-        {"option_text": "EV (correct: first letter increases A→B→C→D→E; second letter decreases Z→Y→X→W→V ✓)", "is_correct": true},
-        {"option_text": "FV (first letter should be E, not F)", "is_correct": false},
-        {"option_text": "EU (wrong: second letter should be V, not U)", "is_correct": false}
+        {
+          "option_text": "EW",
+          "is_correct": false
+        },
+        {
+          "option_text": "EV",
+          "is_correct": true
+        },
+        {
+          "option_text": "FV",
+          "is_correct": false
+        },
+        {
+          "option_text": "EU",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -75,10 +123,22 @@
     {
       "stem": "Find the odd one out: 4, 8, 12, 15, 20, 24",
       "options": [
-        {"option_text": "4 (multiple of 4 — belongs to the pattern)", "is_correct": false},
-        {"option_text": "12 (multiple of 4 — belongs)", "is_correct": false},
-        {"option_text": "15 (correct: all others are multiples of 4 {4,8,12,20,24}; 15 is not a multiple of 4 ✓)", "is_correct": true},
-        {"option_text": "24 (multiple of 4 — belongs)", "is_correct": false}
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",
@@ -92,10 +152,22 @@
     {
       "stem": "Find the next term: 2, 5, 10, 17, 26, ?",
       "options": [
-        {"option_text": "35 (wrong: differences are 3,5,7,9,? — next diff=11; 26+11=37)", "is_correct": false},
-        {"option_text": "37 (correct: differences: 3,5,7,9,11; next=26+11=37; pattern: n²+1 → 1+1=2,4+1=5,9+1=10,16+1=17,25+1=26,36+1=37 ✓)", "is_correct": true},
-        {"option_text": "38 (wrong)", "is_correct": false},
-        {"option_text": "36 (wrong: 36+1=37, so n=6 gives 37, not 36 as the next term)", "is_correct": false}
+        {
+          "option_text": "35",
+          "is_correct": false
+        },
+        {
+          "option_text": "37",
+          "is_correct": true
+        },
+        {
+          "option_text": "38",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "Find the missing term: B2, D4, F6, H8, ?",
       "options": [
-        {"option_text": "I9 (wrong: letters skip one — I follows H but should skip to J; also number increases by 2)", "is_correct": false},
-        {"option_text": "J10 (correct: letters skip one alternate letter B,D,F,H,J; numbers increase by 2: 2,4,6,8,10 ✓)", "is_correct": true},
-        {"option_text": "K10 (wrong: K is the 6th skip but here it should be J)", "is_correct": false},
-        {"option_text": "J9 (wrong: number should be 10, not 9)", "is_correct": false}
+        {
+          "option_text": "I9",
+          "is_correct": false
+        },
+        {
+          "option_text": "J10",
+          "is_correct": true
+        },
+        {
+          "option_text": "K10",
+          "is_correct": false
+        },
+        {
+          "option_text": "J9",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "Find the next term: 144, 121, 100, 81, 64, ?",
       "options": [
-        {"option_text": "36 (wrong: next perfect square after 64 going down is 49, then 36)", "is_correct": false},
-        {"option_text": "49 (correct: series of perfect squares in descending order: 12²,11²,10²,9²,8²,7²=49 ✓)", "is_correct": true},
-        {"option_text": "56 (wrong: 56 is not a perfect square)", "is_correct": false},
-        {"option_text": "48 (wrong)", "is_correct": false}
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "49",
+          "is_correct": true
+        },
+        {
+          "option_text": "56",
+          "is_correct": false
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -143,10 +239,22 @@
     {
       "stem": "Find the next term: 7, 13, 19, 25, 31, ?",
       "options": [
-        {"option_text": "36 (wrong: differences are all 6; 31+6=37, not 36)", "is_correct": false},
-        {"option_text": "37 (correct: arithmetic sequence with common difference 6; 31+6=37 ✓)", "is_correct": true},
-        {"option_text": "38 (wrong: 31+7=38 — used wrong difference)", "is_correct": false},
-        {"option_text": "35 (wrong: 31+4=35)", "is_correct": false}
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "37",
+          "is_correct": true
+        },
+        {
+          "option_text": "38",
+          "is_correct": false
+        },
+        {
+          "option_text": "35",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -160,10 +268,22 @@
     {
       "stem": "Find the missing term: 2, 3, 5, 7, 11, 13, ?, 19",
       "options": [
-        {"option_text": "15 (not prime: 15=3×5)", "is_correct": false},
-        {"option_text": "16 (not prime: 16=2⁴)", "is_correct": false},
-        {"option_text": "17 (correct: this is the sequence of prime numbers: 2,3,5,7,11,13,17,19 ✓)", "is_correct": true},
-        {"option_text": "18 (not prime: 18=2×9)", "is_correct": false}
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "17",
+          "is_correct": true
+        },
+        {
+          "option_text": "18",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",

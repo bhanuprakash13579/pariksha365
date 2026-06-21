@@ -7,10 +7,22 @@
     {
       "stem": "What is the remainder when 2^100 is divided by 3?",
       "options": [
-        {"option_text": "0 (thinking 2^100 is divisible by 3 because it has many factors)", "is_correct": false},
-        {"option_text": "1 (2^even ≡ 1 mod 3; since 100 is even, remainder is 1)", "is_correct": true},
-        {"option_text": "2 (2^odd ≡ 2 mod 3; student misclassifies 100 as odd)", "is_correct": false},
-        {"option_text": "3 (computing 2^100 mod 3 as 3 itself due to rounding)", "is_correct": false}
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "A number when divided by 7 leaves a remainder of 5. What is the remainder when the square of that number is divided by 7?",
       "options": [
-        {"option_text": "4 (from 5² = 25, 25 mod 7 = 4; which is the correct answer)", "is_correct": true},
-        {"option_text": "5 (copying the original remainder without squaring)", "is_correct": false},
-        {"option_text": "10 (doubling the remainder instead of squaring it)", "is_correct": false},
-        {"option_text": "25 (computing 5² but forgetting to take mod 7)", "is_correct": false}
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "How many numbers between 200 and 400 (inclusive) are divisible by both 4 and 6?",
       "options": [
-        {"option_text": "17 (counting multiples of 4 only in the range)", "is_correct": false},
-        {"option_text": "33 (adding multiples of 4 and multiples of 6 without finding LCM)", "is_correct": false},
-        {"option_text": "34 (adding multiples of 4 and 6 and subtracting one overlap)", "is_correct": false},
-        {"option_text": "17 (multiples of LCM(4,6) = 12 in range 200–400: from 204 to 396)", "is_correct": true}
+        {
+          "option_text": "17",
+          "is_correct": false
+        },
+        {
+          "option_text": "33",
+          "is_correct": false
+        },
+        {
+          "option_text": "34",
+          "is_correct": false
+        },
+        {
+          "option_text": "17",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "What is the smallest positive integer that leaves a remainder of 3 when divided by 5 and a remainder of 2 when divided by 7?",
       "options": [
-        {"option_text": "23 (checking 23: 23÷5 = 4 rem 3 ✓; 23÷7 = 3 rem 2 ✓)", "is_correct": true},
-        {"option_text": "8 (from 5 + 3 = 8; only checks one condition)", "is_correct": false},
-        {"option_text": "17 (from 5×3+2 = 17; formula applied incorrectly)", "is_correct": false},
-        {"option_text": "33 (from 5×7−2 = 33; taking the LCM − smaller remainder)", "is_correct": false}
+        {
+          "option_text": "23",
+          "is_correct": true
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "17",
+          "is_correct": false
+        },
+        {
+          "option_text": "33",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "The 5-digit number 3A47B is divisible by 9. If A + B = 13 and both A and B are non-zero single digits, what is the maximum possible value of A × B?",
       "options": [
-        {"option_text": "36 (the minimum product when A=4,B=9 or A=9,B=4)", "is_correct": false},
-        {"option_text": "40 (from A=5,B=8 or A=8,B=5 — second-highest product)", "is_correct": false},
-        {"option_text": "42 (from A=6,B=7 or A=7,B=6 — the maximum product by AM-GM)", "is_correct": true},
-        {"option_text": "54 (from A=9,B=6 — but 9+6=15≠13, violates the given constraint)", "is_correct": false}
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "42",
+          "is_correct": true
+        },
+        {
+          "option_text": "54",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -92,10 +152,22 @@
     {
       "stem": "What is the remainder when (13 × 14 × 15 × 16) is divided by 11?",
       "options": [
-        {"option_text": "0 (thinking the product is divisible by 11 since 11 < 13 — false logic)", "is_correct": false},
-        {"option_text": "3 (error in reducing: using 2×3×4×6 instead of 2×3×4×5)", "is_correct": false},
-        {"option_text": "7 (arithmetic slip in combining the reduced terms mod 11)", "is_correct": false},
-        {"option_text": "10 (reduce mod 11: 2×3×4×5=120; 120 mod 11=10)", "is_correct": true}
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "What is the unit digit of (7^95 + 3^58)?",
       "options": [
-        {"option_text": "0 (unit digit of 7^95 is 3; unit digit of 3^58 is 9; 3+9=12, unit digit=2, not 0)", "is_correct": false},
-        {"option_text": "2 (unit digit of 7^95 is 3; unit digit of 3^58 is 9; sum unit digit = 2)", "is_correct": true},
-        {"option_text": "4 (from an error in the cyclic pattern of 3^n: thinking 3^58 has unit digit 1)", "is_correct": false},
-        {"option_text": "6 (from using the wrong cycle length for 7^n unit digits)", "is_correct": false}
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "Find the smallest positive integer that is divisible by 3, gives remainder 2 when divided by 5, and gives remainder 3 when divided by 7.",
       "options": [
-        {"option_text": "57 (satisfies mod 3 and mod 5 but 57÷7=8 rem 1, not rem 3)", "is_correct": false},
-        {"option_text": "72 (satisfies mod 3 and mod 5 but 72÷7=10 rem 2, not rem 3)", "is_correct": false},
-        {"option_text": "87 (87÷3=29 ✓; 87÷5=17 rem 2 ✓; 87÷7=12 rem 3 ✓)", "is_correct": true},
-        {"option_text": "102 (satisfies mod 3 and mod 5 but 102÷7=14 rem 4, not rem 3)", "is_correct": false}
+        {
+          "option_text": "57",
+          "is_correct": false
+        },
+        {
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "option_text": "87",
+          "is_correct": true
+        },
+        {
+          "option_text": "102",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "By which single digit (1–9) is the number 7,35,420 NOT divisible?",
       "options": [
-        {"option_text": "3 (7+3+5+4+2+0=21, divisible by 3 — so 3 divides it)", "is_correct": false},
-        {"option_text": "4 (last two digits = 20, divisible by 4 — so 4 divides it)", "is_correct": false},
-        {"option_text": "7 (735420 ÷ 7 = 105060 exactly — so 7 divides it)", "is_correct": false},
-        {"option_text": "8 (last three digits = 420, 420 ÷ 8 = 52.5 — so 8 does NOT divide it)", "is_correct": true}
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "What is the remainder when the sum 1 + 2 + 3 + ... + 50 is divided by 13?",
       "options": [
-        {"option_text": "0 (thinking the triangular number 1275 is divisible by 13)", "is_correct": false},
-        {"option_text": "3 (1+2+...+50 = 1275; 1275 = 98×13 + 1; remainder = 1, not 3)", "is_correct": false},
-        {"option_text": "1 (1275 ÷ 13 = 98 remainder 1; correctly computed)", "is_correct": true},
-        {"option_text": "12 (confusing 1275 mod 13 with 13−1=12)", "is_correct": false}
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "EASY",

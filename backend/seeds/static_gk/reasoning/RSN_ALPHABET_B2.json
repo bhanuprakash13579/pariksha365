@@ -7,10 +7,22 @@
     {
       "stem": "What comes next in the series? A, C, F, J, O, ?",
       "options": [
-        {"option_text": "T (differences: +2,+3,+4,+5,+6 → O is 15th; next = 15+6=21 = U)", "is_correct": false},
-        {"option_text": "U (A=1,C=3,F=6,J=10,O=15 — differences +2,+3,+4,+5 → next diff=+6 → 15+6=21=U)", "is_correct": true},
-        {"option_text": "V (position 22 — one beyond U)", "is_correct": false},
-        {"option_text": "S (position 19 — doesn't follow the increasing difference pattern)", "is_correct": false}
+        {
+          "option_text": "T",
+          "is_correct": false
+        },
+        {
+          "option_text": "U",
+          "is_correct": true
+        },
+        {
+          "option_text": "V",
+          "is_correct": false
+        },
+        {
+          "option_text": "S",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -24,10 +36,22 @@
     {
       "stem": "In a certain code, FRIEND is coded as GQKDOC. How is MOTHER coded?",
       "options": [
-        {"option_text": "NRXIFQ (each letter shifted forward by 1,2,3... positions)", "is_correct": true},
-        {"option_text": "NPUIFS (each letter shifted forward by 1 uniformly)", "is_correct": false},
-        {"option_text": "LNSGDQ (each letter shifted backward by 1,2,3...)", "is_correct": false},
-        {"option_text": "NQWJFQ (some other pattern)", "is_correct": false}
+        {
+          "option_text": "NRXIFQ",
+          "is_correct": true
+        },
+        {
+          "option_text": "NPUIFS",
+          "is_correct": false
+        },
+        {
+          "option_text": "LNSGDQ",
+          "is_correct": false
+        },
+        {
+          "option_text": "NQWJFQ",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -41,10 +65,22 @@
     {
       "stem": "Which letter is exactly in the middle between the 6th letter from the left and the 8th letter from the right in the English alphabet?",
       "options": [
-        {"option_text": "M (6th from left = F; 8th from right = position 26-8+1 = 19 = S; middle of F(6) and S(19) = (6+19)/2 = 12.5 — not integer)", "is_correct": false},
-        {"option_text": "L (positions 6 and 19; midpoint = 12.5; not exactly an integer position)", "is_correct": false},
-        {"option_text": "N (positions 6 and 22: 8th from right = 26-8+1 = 19 = S; (6+19)/2 = 12.5 — checking again)", "is_correct": false},
-        {"option_text": "M or L (no exact middle between F(6th) and S(19th); positions are 6 and 19 which don't have an integer midpoint — answer is between L and M)", "is_correct": true}
+        {
+          "option_text": "M",
+          "is_correct": false
+        },
+        {
+          "option_text": "L",
+          "is_correct": false
+        },
+        {
+          "option_text": "N",
+          "is_correct": false
+        },
+        {
+          "option_text": "M or L",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",
@@ -58,10 +94,22 @@
     {
       "stem": "If A=1, B=2, ..., Z=26, what is the value of MANGO?",
       "options": [
-        {"option_text": "48 (M=13,A=1,N=14,G=7,O=15; sum=13+1+14+7+15=50, not 48)", "is_correct": false},
-        {"option_text": "50 (correct: M=13+A=1+N=14+G=7+O=15 = 50)", "is_correct": true},
-        {"option_text": "52 (off by 2 — common counting error)", "is_correct": false},
-        {"option_text": "45 (not correct by summation)", "is_correct": false}
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "50",
+          "is_correct": true
+        },
+        {
+          "option_text": "52",
+          "is_correct": false
+        },
+        {
+          "option_text": "45",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -75,10 +123,22 @@
     {
       "stem": "AZ, BY, CX, DW, ?, FU",
       "options": [
-        {"option_text": "EW (the second letter should continue the reverse: Z,Y,X,W,V; EW would use W not V)", "is_correct": false},
-        {"option_text": "EV (correct: first letters A,B,C,D,E,F; second letters Z,Y,X,W,V,U → EV)", "is_correct": true},
-        {"option_text": "EU (FU already uses U; FU is the next pair, EV comes before)", "is_correct": false},
-        {"option_text": "GV (skipping E — incorrect)", "is_correct": false}
+        {
+          "option_text": "EW",
+          "is_correct": false
+        },
+        {
+          "option_text": "EV",
+          "is_correct": true
+        },
+        {
+          "option_text": "EU",
+          "is_correct": false
+        },
+        {
+          "option_text": "GV",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -92,10 +152,22 @@
     {
       "stem": "If PENCIL is coded as QFODKM, how is RUBBER coded?",
       "options": [
-        {"option_text": "SVCCFS (each letter shifted forward by 1: R+1=S, U+1=V, B+1=C, B+1=C, E+1=F, R+1=S → SVCCFS ✓)", "is_correct": true},
-        {"option_text": "SVDDES (wrong — double-shifting some letters)", "is_correct": false},
-        {"option_text": "QTAAQD (shifting backward by 1)", "is_correct": false},
-        {"option_text": "TYDDGT (shifting forward by 2)", "is_correct": false}
+        {
+          "option_text": "SVCCFS",
+          "is_correct": true
+        },
+        {
+          "option_text": "SVDDES",
+          "is_correct": false
+        },
+        {
+          "option_text": "QTAAQD",
+          "is_correct": false
+        },
+        {
+          "option_text": "TYDDGT",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "How many letters in the English alphabet are there between M and T (not counting M and T)?",
       "options": [
-        {"option_text": "5 (N,O,P,Q,R,S — that's 6 letters between M(13) and T(20))", "is_correct": false},
-        {"option_text": "6 (N=14, O=15, P=16, Q=17, R=18, S=19 — six letters between M and T exclusive)", "is_correct": true},
-        {"option_text": "7 (including either M or T)", "is_correct": false},
-        {"option_text": "8 (including both M and T)", "is_correct": false}
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -126,10 +210,22 @@
     {
       "stem": "Find the missing term in the letter series: B, E, H, K, ?, Q",
       "options": [
-        {"option_text": "M (B=2,E=5,H=8,K=11,N=14,Q=17 — differences all +3; missing=N not M)", "is_correct": false},
-        {"option_text": "N (B(2),E(5),H(8),K(11),N(14),Q(17) — each +3; missing = N ✓)", "is_correct": true},
-        {"option_text": "L (would give a +3 difference from K=11 only if L=12 — but 12-11=1≠3)", "is_correct": false},
-        {"option_text": "O (O=15; K=11; 15−11=4≠3)", "is_correct": false}
+        {
+          "option_text": "M",
+          "is_correct": false
+        },
+        {
+          "option_text": "N",
+          "is_correct": true
+        },
+        {
+          "option_text": "L",
+          "is_correct": false
+        },
+        {
+          "option_text": "O",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -143,10 +239,22 @@
     {
       "stem": "Which letter will be the 4th to the right of the 12th letter from the right end of the English alphabet?",
       "options": [
-        {"option_text": "O (12th from right = position 26−12+1=15=O; 4th to right of O = O+4=position 19=S; not O)", "is_correct": false},
-        {"option_text": "S (12th from right = O(15); 4th to right = O+4=S(19) ✓)", "is_correct": true},
-        {"option_text": "R (O+3=R; 3rd to right, not 4th)", "is_correct": false},
-        {"option_text": "K (12th from right position 15, going 4 to the LEFT gives K=11; that's left not right)", "is_correct": false}
+        {
+          "option_text": "O",
+          "is_correct": false
+        },
+        {
+          "option_text": "S",
+          "is_correct": true
+        },
+        {
+          "option_text": "R",
+          "is_correct": false
+        },
+        {
+          "option_text": "K",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "In a word EXAMINATION, how many letters appear in the same position as in the English alphabet (i.e., their position in the word matches their alphabetical position)?",
       "options": [
-        {"option_text": "One (checking each: E=5th letter, pos 1 in EXAMINATION; X=24th, pos 2; A=1st, pos 3... — methodical check needed)", "is_correct": false},
-        {"option_text": "None (no letter's position in word equals its alphabetical position)", "is_correct": false},
-        {"option_text": "Two (I is 9th letter, appears at pos 5 and pos 9 in EXAMINATION — checking pos 9: E(1)X(2)A(3)M(4)I(5)N(6)A(7)T(8)I(9)O(10)N(11) — I appears at position 5 and 9; I=9th letter; at position 9 it matches!)", "is_correct": true},
-        {"option_text": "Three (overcounting the matches)", "is_correct": false}
+        {
+          "option_text": "One",
+          "is_correct": false
+        },
+        {
+          "option_text": "None",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two",
+          "is_correct": true
+        },
+        {
+          "option_text": "Three",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -177,10 +297,22 @@
     {
       "stem": "In the alphabetical series ABD, EGJ, KMP, ?, the pattern of gaps in each group is +1, +2. What is the next group?",
       "options": [
-        {"option_text": "QST (Q=17, S=19, T=20 — gaps +2,+1 — wrong order)", "is_correct": false},
-        {"option_text": "QSV (Q=17, S=19, V=22 — gaps +2,+3 — follows outer progression)", "is_correct": false},
-        {"option_text": "QSU (Q(17),S(19),U(21) — gap of +2,+2 — doesn't follow +1,+2 pattern)", "is_correct": false},
-        {"option_text": "QTV (Q=17,T=20,V=22: gaps +3,+2? Let's find pattern: ABD: A(1),B(2),D(4) gaps +1,+2; EGJ: E(5),G(7),J(10) gaps +2,+3; KMP: K(11),M(13),P(16) gaps +2,+3; wait the gaps ARE +2,+3 in groups 2 and 3 — let me recalculate)", "is_correct": true}
+        {
+          "option_text": "QST",
+          "is_correct": false
+        },
+        {
+          "option_text": "QSV",
+          "is_correct": false
+        },
+        {
+          "option_text": "QSU",
+          "is_correct": false
+        },
+        {
+          "option_text": "QTV",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",
@@ -194,10 +326,22 @@
     {
       "stem": "If the English alphabet is reversed (A becomes Z, B becomes Y, C becomes X, ...), what would DESK be coded as?",
       "options": [
-        {"option_text": "EHVP (wrong — not a reverse substitution)", "is_correct": false},
-        {"option_text": "WVHP (reverse: D=4→W=23; E=5→V=22; S=19→H=8; K=11→P=16 → WVHP)", "is_correct": true},
-        {"option_text": "WHVP (wrong order of the E and S substitutions)", "is_correct": false},
-        {"option_text": "UVHP (wrong for D: D=4th → reversed = 27-4=23rd letter = W, not U=21st)", "is_correct": false}
+        {
+          "option_text": "EHVP",
+          "is_correct": false
+        },
+        {
+          "option_text": "WVHP",
+          "is_correct": true
+        },
+        {
+          "option_text": "WHVP",
+          "is_correct": false
+        },
+        {
+          "option_text": "UVHP",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",

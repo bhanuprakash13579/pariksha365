@@ -1,0 +1,178 @@
+{
+  "topic_code": "RSN_SYLLOGISM_CLEAN",
+  "subject": "Reasoning",
+  "topic": "Syllogism — Clean Format",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Statements: All pens are pencils. All pencils are scales.\nConclusions:\nI. All pens are scales.\nII. Some scales are pens.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both conclusions I and II follow", "is_correct": true},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Chain: pens ⊆ pencils ⊆ scales. I: All pens are scales (transitive chain) = TRUE. II: Some scales are pens (since all pens are scales, at least those pens are scales, making some scales = pens) = TRUE. Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: Some doctors are teachers. All teachers are engineers.\nConclusions:\nI. Some doctors are engineers.\nII. All engineers are teachers.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": true},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Some doctors → teachers (subset); all teachers → engineers. Those 'some doctors' who are teachers are also engineers → Some doctors are engineers (I = TRUE). II says all engineers are teachers — illegal conversion of 'all teachers are engineers'; engineering is a larger set. I follows, II does not.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: No bird is a fish. All fish are reptiles.\nConclusions:\nI. No bird is a reptile.\nII. Some reptiles are not birds.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": true},
+        {"option_text": "Both conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. No bird is a fish; all fish ⊆ reptiles. Those fish-reptiles are not birds → some reptiles are not birds (II = TRUE). For I: we only know birds and fish are separate; birds might still overlap with reptiles. I cannot be confirmed. Only II follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All roses are flowers. Some flowers are petals.\nConclusions:\nI. Some roses are petals.\nII. Some petals are flowers.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": true},
+        {"option_text": "Both conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. All roses ⊆ flowers; some flowers ∩ petals ≠ ∅. Conclusion II: if some flowers are petals, then some petals are flowers (valid conversion of 'some' statement) = TRUE. Conclusion I: the petal-flowers might not include roses; we can't confirm roses overlap with petals. Only II follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All cats are dogs. All dogs are horses.\nConclusions:\nI. All cats are horses.\nII. No horse is a cat.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": true},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Chain: cats ⊆ dogs ⊆ horses. I: All cats are horses = TRUE by transitivity. II: 'No horse is a cat' = FALSE — since all cats are horses, some horses ARE cats. Only I follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: Some politicians are honest. Some honest people are brave.\nConclusions:\nI. Some politicians are brave.\nII. All brave people are honest.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Some+Some rule: no definite conclusion. The 'some honest politicians' and 'some honest brave' might not overlap. I cannot be confirmed. II says all brave are honest — direct illegal conversion of 'some honest are brave'. Neither conclusion follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All lights are fans. Some fans are coolers.\nConclusions:\nI. Some lights are coolers.\nII. All coolers are fans.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. All lights ⊆ fans; some fans ∩ coolers ≠ ∅. I: the fan-coolers might not include lights (lights are a subset of fans, but the cooler subset may not intersect with lights). I is uncertain. II: illegal reversal of 'some fans are coolers' → not all coolers need to be fans. Neither follows definitively.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: No river is an ocean. All oceans are seas.\nConclusions:\nI. No river is a sea.\nII. Some seas are not rivers.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": false},
+        {"option_text": "Only conclusion II follows", "is_correct": true},
+        {"option_text": "Both conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Rivers and oceans are disjoint. All oceans ⊆ seas. Those ocean-seas are not rivers → some seas (the oceans) are not rivers (II = TRUE). I says no river is a sea — but seas include oceans AND possibly more; rivers might overlap with non-ocean seas. I is uncertain. Only II follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All mangoes are sweet. No sweet thing is sour.\nConclusions:\nI. No mango is sour.\nII. All sweet things are mangoes.",
+      "options": [
+        {"option_text": "Only conclusion I follows", "is_correct": true},
+        {"option_text": "Only conclusion II follows", "is_correct": false},
+        {"option_text": "Both conclusions I and II follow", "is_correct": false},
+        {"option_text": "Neither conclusion follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Mangoes ⊆ sweet things; sweet things ∩ sour things = ∅. Since mangoes ⊆ sweet things and no sweet thing is sour → no mango is sour (I = TRUE). II reverses the first statement illegally; not all sweet things need to be mangoes. Only I follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: Some bikes are cars. All cars are trucks.\nConclusions:\nI. Some bikes are trucks.\nII. Some trucks are bikes.\nIII. All trucks are cars.",
+      "options": [
+        {"option_text": "Only I and II follow", "is_correct": true},
+        {"option_text": "Only I and III follow", "is_correct": false},
+        {"option_text": "All three follow", "is_correct": false},
+        {"option_text": "Only II and III follow", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Some bikes → cars; all cars ⊆ trucks. Those bike-cars are also trucks → Some bikes are trucks (I = TRUE). Since some bikes are trucks → some trucks are bikes (valid conversion; II = TRUE). III says all trucks are cars — illegal reversal; not all trucks need to be cars. Only I and II follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

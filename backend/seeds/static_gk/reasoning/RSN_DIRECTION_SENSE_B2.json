@@ -7,10 +7,22 @@
     {
       "stem": "Rajesh starts from his house, walks 3 km north, then 4 km east, then 3 km south. How far is he from his starting point and in which direction?",
       "options": [
-        {"option_text": "3 km east (wrong: north and south both 3 km cancel; east 4 km net = 4 km east ✓ — wait, this IS correct)", "is_correct": false},
-        {"option_text": "4 km east (correct: north 3 km + south 3 km = net 0; east 4 km remains; he is 4 km east of start ✓)", "is_correct": true},
-        {"option_text": "5 km north-east (wrong: no diagonal displacement after N and S cancel)", "is_correct": false},
-        {"option_text": "4 km north (wrong: south displacement cancels north)", "is_correct": false}
+        {
+          "option_text": "3 km east",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 km east",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 km north-east",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 km north",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "A person facing east turns 90° clockwise, then 45° anti-clockwise. Which direction is he facing now?",
       "options": [
-        {"option_text": "South (wrong: 90° clockwise from east = south; then 45° anti-clockwise from south = south-east)", "is_correct": false},
-        {"option_text": "South-East (correct: East + 90° clockwise = South; South + 45° anti-clockwise = South-East ✓)", "is_correct": true},
-        {"option_text": "East (wrong: the net is 90°−45°=45° clockwise from east = South-East, not East)", "is_correct": false},
-        {"option_text": "South-West (wrong: 45° anti-clockwise from South goes toward South-East, not South-West)", "is_correct": false}
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "South-East",
+          "is_correct": true
+        },
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "South-West",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "Ramesh walks 10 km south, then turns left and walks 5 km, then turns left again and walks 10 km. What is his net displacement and direction from the start?",
       "options": [
-        {"option_text": "10 km north (wrong: only the south-north component is 10 km but the east-west net must be checked)", "is_correct": false},
-        {"option_text": "5 km west (correct: south 10 km → left turn = east; east 5 km → left turn = north; north 10 km; net N-S: 0; net E-W: 5 km east; he is 5 km EAST of start — let me re-verify: going south, left turn faces east, another left turn faces north; final position = 5 km east ✓)", "is_correct": false},
-        {"option_text": "5 km east (correct: south 10 (facing south); left turn → facing east; walk 5 km east; left turn → facing north; walk 10 km north; net vertical = 10S+10N=0; net horizontal = 5E; displacement = 5 km east ✓)", "is_correct": true},
-        {"option_text": "0 km (not back at start — the east component remains)", "is_correct": false}
+        {
+          "option_text": "10 km north",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 km west",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 km east",
+          "is_correct": true
+        },
+        {
+          "option_text": "0 km",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "If south-west is called north, north is called north-east, north-east is called east, what would south-east be called?",
       "options": [
-        {"option_text": "East (each direction shifts by one step clockwise; north-east → east means each step shifts north-east to east; so south-east shifts to south-south-east? — need to identify the pattern: SW→N, N→NE, NE→E; this is a 135° anti-clockwise rotation; SE + 135° anti-clockwise = E? Let's check: SE→E is 90° anti-clockwise... 135° = NE direction from SE? 135° anti-clockwise from SE: SE(135°) - 135° = 0° = East? Actually standard azimuth: N=0, NE=45, E=90, SE=135, S=180, SW=225, W=270, NW=315. Shift SW(225)→N(0 or 360): change = 360-225=135° counter-clockwise. So all directions shift 135° CCW. SE(135°) - 135° = 0° = North.)", "is_correct": false},
-        {"option_text": "North (correct: the renaming shifts each direction 135° counter-clockwise; south-east (135° azimuth) shifted 135° CCW = 0° = North ✓)", "is_correct": true},
-        {"option_text": "South (wrong)", "is_correct": false},
-        {"option_text": "South-West (wrong)", "is_correct": false}
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": true
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "South-West",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -75,10 +123,22 @@
     {
       "stem": "Preeti walks 6 km east, then turns right and walks 8 km, then turns right and walks 6 km. How far and in which direction is she from her starting point?",
       "options": [
-        {"option_text": "6 km south (wrong: the east-west is net 0; south 8 km remains — she is 8 km south)", "is_correct": false},
-        {"option_text": "8 km south (correct: east 6, right turn → south 8, right turn → west 6; net E-W: 6−6=0; net N-S: 8 south; she is 8 km south of start ✓)", "is_correct": true},
-        {"option_text": "10 km south-west (wrong: the N-S and E-W displacements are not in a right triangle here)", "is_correct": false},
-        {"option_text": "0 km (she has not returned to start — the east and west cancel but 8 km south remains)", "is_correct": false}
+        {
+          "option_text": "6 km south",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 km south",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 km south-west",
+          "is_correct": false
+        },
+        {
+          "option_text": "0 km",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "A person facing north turns 135° clockwise. Which direction is he facing?",
       "options": [
-        {"option_text": "East (90° clockwise from north is east; need 45° more)", "is_correct": false},
-        {"option_text": "South-East (correct: 90° CW = east; 135° CW = east + 45° more CW = south-east ✓)", "is_correct": true},
-        {"option_text": "South (south is 180° clockwise from north, not 135°)", "is_correct": false},
-        {"option_text": "North-West (that would be 135° anti-clockwise from north = NW)", "is_correct": false}
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "South-East",
+          "is_correct": true
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "North-West",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "At sunset, Arun walks such that his shadow falls to his right. In which direction is Arun walking?",
       "options": [
-        {"option_text": "North (if shadow falls to right while facing north: sun sets in west; shadow points east (away from sun); right of a northward-facing person = east — yes this works ✓)", "is_correct": true},
-        {"option_text": "South (if facing south: right side = west; shadow falls east (sun in west); east ≠ west — wrong)", "is_correct": false},
-        {"option_text": "East (if facing east: right side = south; shadow falls west (sun in west); west ≠ south — wrong)", "is_correct": false},
-        {"option_text": "West (facing west: shadow falls east behind him; right = north — shadow behind, not right)", "is_correct": false}
+        {
+          "option_text": "North",
+          "is_correct": true
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "HARD",
@@ -126,10 +210,22 @@
     {
       "stem": "Town A is to the north of town B. Town C is to the east of town B. Town D is to the south of town C. Town E is to the west of town D. Which town is directly south-east of town A?",
       "options": [
-        {"option_text": "B (B is directly south of A — not south-east)", "is_correct": false},
-        {"option_text": "C (C is east of B; if B is south of A, then C is south-east of A ✓)", "is_correct": true},
-        {"option_text": "D (D is south of C; further south-east of A? Only if C is directly east of B and D directly south of C → D is south-south-east of A)", "is_correct": false},
-        {"option_text": "E (E is west of D; roughly south of C = south of A's south-east — not directly SE of A)", "is_correct": false}
+        {
+          "option_text": "B",
+          "is_correct": false
+        },
+        {
+          "option_text": "C",
+          "is_correct": true
+        },
+        {
+          "option_text": "D",
+          "is_correct": false
+        },
+        {
+          "option_text": "E",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "Kavita goes 5 km north, then 3 km east, then 5 km south, then 2 km west. What is the minimum distance from her starting point?",
       "options": [
-        {"option_text": "5 km (wrong: net E-W = 3−2=1 km east; net N-S = 5−5=0; distance = 1 km, not 5)", "is_correct": false},
-        {"option_text": "1 km (correct: net north-south = 0 (5N−5S); net east-west = 1 km east (3E−2W); minimum distance = 1 km ✓)", "is_correct": true},
-        {"option_text": "2 km (wrong: net E-W displacement is 1 km, not 2)", "is_correct": false},
-        {"option_text": "3 km (wrong: the E-W net is 1 km after subtracting 2W from 3E)", "is_correct": false}
+        {
+          "option_text": "5 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "Two friends start from the same point. One goes 4 km east, then 3 km north. The other goes 3 km west, then 4 km south. What is the straight-line distance between them?",
       "options": [
-        {"option_text": "7 km (wrong: need to compute their separate positions and find distance between them)", "is_correct": false},
-        {"option_text": "5√2 km (correct: friend1 at (4,3); friend2 at (−3,−4); distance=√((4−(−3))²+(3−(−4))²)=√(7²+7²)=√98=7√2 ✓ — wait, 7√2 ≈ 9.9)", "is_correct": false},
-        {"option_text": "5 km (wrong: √(49+49) = √98, not 5)", "is_correct": false},
-        {"option_text": "7√2 km (correct: friend1 at (4,3); friend2 at (−3,−4); distance=√((4+3)²+(3+4)²)=√(49+49)=√98=7√2 ✓)", "is_correct": true}
+        {
+          "option_text": "7 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "5√2 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "7√2 km",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",

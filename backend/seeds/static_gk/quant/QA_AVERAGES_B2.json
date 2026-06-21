@@ -7,10 +7,22 @@
     {
       "stem": "The average of 5 numbers is 32. If one number is removed, the average becomes 30. What was the removed number?",
       "options": [
-        {"option_text": "38 (total=160; new total=4×30=120; removed=160−120=40, not 38)", "is_correct": false},
-        {"option_text": "40 (correct: sum of 5=5×32=160; sum of 4=4×30=120; removed=160−120=40 ✓)", "is_correct": true},
-        {"option_text": "42 (wrong calculation)", "is_correct": false},
-        {"option_text": "36 (wrong: 160−4×31=160−124=36, not our equation)", "is_correct": false}
+        {
+          "option_text": "38",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": true
+        },
+        {
+          "option_text": "42",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -24,10 +36,22 @@
     {
       "stem": "The average marks of 30 students is 42. If the marks of one student were wrongly recorded as 58 instead of 38, what is the correct average?",
       "options": [
-        {"option_text": "40 (correct: error=58−38=20 extra; total excess=20; correct average=42−20/30=42−2/3=41.33... actually: 42−20/30=42−0.667=41.33)", "is_correct": false},
-        {"option_text": "41.33 (correct: wrong sum=30×42=1260; correct sum=1260−58+38=1260−20=1240; correct avg=1240/30=41.33 ✓)", "is_correct": true},
-        {"option_text": "40.67 (wrong: 1260−30=1230; 1230/30=41, not 40.67)", "is_correct": false},
-        {"option_text": "42 (no change — but the marks were wrongly recorded, so average DOES change)", "is_correct": false}
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "41.33",
+          "is_correct": true
+        },
+        {
+          "option_text": "40.67",
+          "is_correct": false
+        },
+        {
+          "option_text": "42",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -41,10 +65,22 @@
     {
       "stem": "The average weight of a group of 8 people is 65 kg. One person of weight 55 kg leaves and a new person joins. The new average is 66 kg. What is the weight of the new person?",
       "options": [
-        {"option_text": "73 kg (new total=8×66=528; old total=8×65=520; new person=528−520+55=63; not 73)", "is_correct": false},
-        {"option_text": "63 kg (correct: old sum=520; after removing 55: sum=465; new sum=8×66=528; new person=528−465=63 ✓)", "is_correct": true},
-        {"option_text": "71 kg (wrong)", "is_correct": false},
-        {"option_text": "77 kg (over-estimated)", "is_correct": false}
+        {
+          "option_text": "73 kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "63 kg",
+          "is_correct": true
+        },
+        {
+          "option_text": "71 kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "77 kg",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -58,10 +94,22 @@
     {
       "stem": "The average of first 50 natural numbers is:",
       "options": [
-        {"option_text": "25 (average of 1 to 49 is 25; average of 1 to 50 is 25.5)", "is_correct": false},
-        {"option_text": "25.5 (correct: sum of first n natural numbers = n(n+1)/2; avg=50×51/(2×50)=51/2=25.5 ✓)", "is_correct": true},
-        {"option_text": "26 (sum=1275; 1275/50=25.5, not 26)", "is_correct": false},
-        {"option_text": "50.5 (this is the average of 1 to 100)", "is_correct": false}
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "25.5",
+          "is_correct": true
+        },
+        {
+          "option_text": "26",
+          "is_correct": false
+        },
+        {
+          "option_text": "50.5",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -75,10 +123,22 @@
     {
       "stem": "The average of 10 numbers is 15. If each number is multiplied by 4, the new average is:",
       "options": [
-        {"option_text": "19 (15+4=19 — adding instead of multiplying)", "is_correct": false},
-        {"option_text": "60 (correct: when every number is multiplied by k, average also multiplies by k; 15×4=60 ✓)", "is_correct": true},
-        {"option_text": "15 (no change — but each number changed so average changes)", "is_correct": false},
-        {"option_text": "40 (15×4/1.5=40 — no clear derivation)", "is_correct": false}
+        {
+          "option_text": "19",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -92,10 +152,22 @@
     {
       "stem": "The average of 6 consecutive even numbers is 21. What is the largest of these numbers?",
       "options": [
-        {"option_text": "24 (consecutive even: a,a+2,a+4,a+6,a+8,a+10; avg=(6a+30)/6=a+5=21→a=16; largest=16+10=26, not 24)", "is_correct": false},
-        {"option_text": "26 (correct: 6 consecutive even numbers starting at a: avg=a+5=21 → a=16; largest=16+10=26 ✓)", "is_correct": true},
-        {"option_text": "28 (a=18: avg=18+5=23≠21)", "is_correct": false},
-        {"option_text": "22 (a=12: avg=12+5=17≠21)", "is_correct": false}
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "26",
+          "is_correct": true
+        },
+        {
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "option_text": "22",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -109,10 +181,22 @@
     {
       "stem": "A batsman's average score in 11 innings is 36. In the 12th inning, he scores 54 runs. What is his new average?",
       "options": [
-        {"option_text": "36 (unchanged — but a score higher than average increases the average)", "is_correct": false},
-        {"option_text": "37.5 (correct: total after 11=11×36=396; after 12th=396+54=450; new avg=450/12=37.5 ✓)", "is_correct": true},
-        {"option_text": "38 (450/12=37.5, not 38)", "is_correct": false},
-        {"option_text": "45 (adding 54 to 36=90; 90/2=45 — wrong method)", "is_correct": false}
+        {
+          "option_text": "36",
+          "is_correct": false
+        },
+        {
+          "option_text": "37.5",
+          "is_correct": true
+        },
+        {
+          "option_text": "38",
+          "is_correct": false
+        },
+        {
+          "option_text": "45",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -126,10 +210,22 @@
     {
       "stem": "The average of 20 numbers is 50. If 3 is added to each number, the new average is:",
       "options": [
-        {"option_text": "50 (no change — but 3 was added to each number)", "is_correct": false},
-        {"option_text": "53 (correct: when constant k is added to each number, average increases by k; 50+3=53 ✓)", "is_correct": true},
-        {"option_text": "60 (3×20/10=6 added to 50 — wrong formula)", "is_correct": false},
-        {"option_text": "150 (tripling the average — wrong)", "is_correct": false}
+        {
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "option_text": "53",
+          "is_correct": true
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "150",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
@@ -143,10 +239,22 @@
     {
       "stem": "The average age of a family of 6 members is 28 years. If a child of age 3 is born, the new average age is:",
       "options": [
-        {"option_text": "25 (correct: sum=6×28=168; new sum=168+3=171; new avg=171/7=24.43≈24.4, not 25 — hmm)", "is_correct": false},
-        {"option_text": "24.43 (correct: 6×28=168; add 3: sum=171; 171/7=24.43 ✓)", "is_correct": true},
-        {"option_text": "27 (wrong: (6×28+3)/7=171/7≠27)", "is_correct": false},
-        {"option_text": "26 (171/7=24.43, not 26)", "is_correct": false}
+        {
+          "option_text": "25",
+          "is_correct": false
+        },
+        {
+          "option_text": "24.43",
+          "is_correct": true
+        },
+        {
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "option_text": "26",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -160,10 +268,22 @@
     {
       "stem": "The average temperature from Monday to Friday is 38°C. If the average from Monday to Wednesday is 36°C and from Wednesday to Friday is 40°C, what is the temperature on Wednesday?",
       "options": [
-        {"option_text": "36°C (wrong: applying one average to all three days)", "is_correct": false},
-        {"option_text": "38°C (correct: Mon−Fri sum=5×38=190; Mon−Wed sum=3×36=108; Wed−Fri sum=3×40=120; Wed=108+120−190=38°C ✓)", "is_correct": true},
-        {"option_text": "40°C (wrong: applying second-group average directly)", "is_correct": false},
-        {"option_text": "34°C (wrong calculation)", "is_correct": false}
+        {
+          "option_text": "36°C",
+          "is_correct": false
+        },
+        {
+          "option_text": "38°C",
+          "is_correct": true
+        },
+        {
+          "option_text": "40°C",
+          "is_correct": false
+        },
+        {
+          "option_text": "34°C",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",

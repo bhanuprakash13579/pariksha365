@@ -7,10 +7,22 @@
     {
       "stem": "Eight friends A, B, C, D, E, F, G, H sit in a circle. A sits to the immediate right of B. C sits 2 seats to the left of A. How many people sit between A and C going clockwise?",
       "options": [
-        {"option_text": "1 (correct: C is 2 seats to the LEFT of A; going clockwise from A, C is 2 positions to the right (since left of A = right in clockwise direction); 2 seats to the left means 1 person between them going anticlockwise or 6 going clockwise — but '2 seats to the left' means directly 2 positions anticlockwise; going clockwise, there are 8-2-1=5? Let me think again: 8 people total; C is 2 to the LEFT of A (counterclockwise); going CLOCKWISE from A to C = 8-2=6; people between them=5)", "is_correct": false},
-        {"option_text": "5 (correct: 8 people; C is 2 to the left (CCW) of A; going clockwise from A to C = 8-2=6 positions; people IN BETWEEN (not counting A and C) = 6-1=5 ✓)", "is_correct": true},
-        {"option_text": "1 (wrong: 1 person between them going CCW; but going CW = 5)", "is_correct": false},
-        {"option_text": "6 (wrong: 6 is the number of steps from A to C going clockwise, not the people between them)", "is_correct": false}
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -24,10 +36,22 @@
     {
       "stem": "Six people P, Q, R, S, T, U sit around a circular table. P sits opposite Q. R sits to the immediate right of P. S sits to the immediate left of Q. Who sits opposite R?",
       "options": [
-        {"option_text": "T (wrong: need to place all 6; with 6 people, seats 1-6 equally spaced; P at 1, Q at 4 (opposite); R at 2 (right of P); S at 3 (left of Q means right side of Q going clockwise=5); wait: left of Q when facing center: Q at 4; left of Q=3; S at 3; remaining T,U at 5 and 6; opposite R(2)=seat 5; so T or U at 5 = opposite R)", "is_correct": false},
-        {"option_text": "S (correct: P at seat 1, Q at 4 (opposite P); R at 2 (right of P); S at 3 (left of Q); T and U at 5,6; opposite of R(2) = seat 5; but is S at 3 or 5? S is left of Q=4, so S is at 3; remaining T,U at 5,6; whoever is at seat 5 is opposite R — could be T or U)", "is_correct": false},
-        {"option_text": "T or U (correct: opposite of R is seat 5; only T or U can occupy it; exact position of T vs U not determinable from given info ✓)", "is_correct": true},
-        {"option_text": "U (wrong: we cannot determine if it's T or U specifically)", "is_correct": false}
+        {
+          "option_text": "T",
+          "is_correct": false
+        },
+        {
+          "option_text": "S",
+          "is_correct": false
+        },
+        {
+          "option_text": "T or U",
+          "is_correct": true
+        },
+        {
+          "option_text": "U",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "HARD",
@@ -41,10 +65,22 @@
     {
       "stem": "A, B, C, D, E sit around a circular table. A is between C and D. B is to the immediate right of C. E is to the immediate left of D. Who sits between B and E?",
       "options": [
-        {"option_text": "A (wrong: A is between C and D, not B and E)", "is_correct": false},
-        {"option_text": "C (wrong: C is to the left of B, not between B and E)", "is_correct": false},
-        {"option_text": "D (wrong: D is next to A and to E's right, but check the full arrangement)", "is_correct": false},
-        {"option_text": "A (correct: arrangement: C-B... D-E-A-C or rearranging: if A is between C and D, and B is right of C, and E is left of D: circular order = B,C,A,D,E (going clockwise); between B and E: C,A,D — but the immediate person between B and E going counterclockwise... need to check carefully)", "is_correct": true}
+        {
+          "option_text": "A",
+          "is_correct": false
+        },
+        {
+          "option_text": "C",
+          "is_correct": false
+        },
+        {
+          "option_text": "D",
+          "is_correct": false
+        },
+        {
+          "option_text": "A",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",
@@ -58,10 +94,22 @@
     {
       "stem": "In a circular arrangement of 6 people, in how many ways can they be seated?",
       "options": [
-        {"option_text": "720 (wrong: 720=6! is the linear arrangement; circular = (6-1)!=5!=120)", "is_correct": false},
-        {"option_text": "120 (correct: circular permutations of n people = (n-1)! = (6-1)! = 5! = 120 ✓)", "is_correct": true},
-        {"option_text": "60 (wrong: 60=5!/2; that's for arrangements where clockwise and counterclockwise are considered the same)", "is_correct": false},
-        {"option_text": "36 (wrong: no basis for 36)", "is_correct": false}
+        {
+          "option_text": "720",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": true
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
@@ -75,10 +123,22 @@
     {
       "stem": "Five friends sit in a circle: Anuj, Bina, Chirag, Divya, and Ekta. Anuj is between Bina and Chirag. Divya is not adjacent to Bina. Who is to the immediate right of Anuj?",
       "options": [
-        {"option_text": "Bina (could be correct — Anuj is between Bina and Chirag; Bina could be on right or left)", "is_correct": false},
-        {"option_text": "Chirag (could be correct — Chirag could be on right)", "is_correct": false},
-        {"option_text": "Either Bina or Chirag (correct: the problem says Anuj is between Bina and Chirag — both are adjacent to Anuj; without more info, either could be to his immediate right ✓)", "is_correct": true},
-        {"option_text": "Divya (wrong: Divya is not adjacent to Bina; but this doesn't tell us Divya is next to Anuj)", "is_correct": false}
+        {
+          "option_text": "Bina",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chirag",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either Bina or Chirag",
+          "is_correct": true
+        },
+        {
+          "option_text": "Divya",
+          "is_correct": false
+        }
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
@@ -92,10 +152,22 @@
     {
       "stem": "Seven people A, B, C, D, E, F, G sit in a circle. A is third to the right of G. B is second to the left of G. How many people sit between A and B going anticlockwise from A?",
       "options": [
-        {"option_text": "1 (wrong: A is 3 right of G; G is reference; B is 2 left of G; A=G+3 (clockwise); B=G-2=G+5 (clockwise); from A to B anticlockwise: A=G+3; going anticlockwise from A means going towards smaller numbers; B=G+5; distance anticlockwise=7-(5-3)=7-2=5? Let me use positions: let G=1; A=1+3=4; B=1+5=6 (since 2 left = 7-2=5 clockwise → position 6); anticlockwise from A(4) to B(6): 4→3→2→1→7→6 = 5 steps; people between = 4)", "is_correct": false},
-        {"option_text": "4 (correct: G=1, A=4, B=6; anticlockwise from A: 4,3,2,1,7,6; steps=5; people between A and B = 5-1=4 ✓)", "is_correct": true},
-        {"option_text": "3 (wrong: going clockwise A(4)→B(6) = 2 steps; people between=1; going anticlockwise=4 people)", "is_correct": false},
-        {"option_text": "5 (wrong: 5 is the number of steps anticlockwise, not the people between them)", "is_correct": false}
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -109,10 +181,22 @@
     {
       "stem": "In a circular arrangement, A says 'B is to my right' and C says 'B is to my left'. How many people are seated between A and C if the total is 8?",
       "options": [
-        {"option_text": "1 (correct: A has B to A's right; C has B to C's left; so B is between A and C: A-B-C (going clockwise); only B is between A and C clockwise; 1 person between them ✓)", "is_correct": true},
-        {"option_text": "2 (wrong: only B fits between them from the given information)", "is_correct": false},
-        {"option_text": "6 (wrong: that's the other direction)", "is_correct": false},
-        {"option_text": "Cannot be determined (wrong: B is between A and C clockwise, so 1 person between them)", "is_correct": false}
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be determined",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
@@ -126,10 +210,22 @@
     {
       "stem": "In a group of 5 people sitting in a circle, Ram is directly opposite Shyam. If Gopal sits 2 seats to Ram's right, where does Gopal sit relative to Shyam?",
       "options": [
-        {"option_text": "Directly opposite (wrong: Shyam is opposite Ram; Gopal is 2 right of Ram; in a 5-person circle, odd number means no one sits directly opposite anyone)", "is_correct": false},
-        {"option_text": "Cannot be directly opposite in a 5-person circle (correct: in a circle of 5, seats aren't opposite each other in the same way as in even-numbered circles; 'directly opposite' means 2.5 seats away which is impossible with 5 people ✓)", "is_correct": true},
-        {"option_text": "2 seats to the left of Shyam (wrong: with 5 seats, need to verify position)", "is_correct": false},
-        {"option_text": "Adjacent to Shyam (wrong: need to verify; Gopal at Ram+2; Shyam at Ram+2.5 which is impossible in 5-seat circle)", "is_correct": false}
+        {
+          "option_text": "Directly opposite",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cannot be directly opposite in a 5-person circle",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 seats to the left of Shyam",
+          "is_correct": false
+        },
+        {
+          "option_text": "Adjacent to Shyam",
+          "is_correct": false
+        }
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
@@ -143,10 +239,22 @@
     {
       "stem": "Eight people A-H sit in a circle. A is opposite E, B is opposite F, C is opposite G, D is opposite H. B is second to the right of A. Who is second to the right of C?",
       "options": [
-        {"option_text": "D (wrong: need to establish the circular order first)", "is_correct": false},
-        {"option_text": "E (wrong: E is opposite A; let's find C's position relative to A)", "is_correct": false},
-        {"option_text": "G (wrong: G is opposite C, not second right of C)", "is_correct": false},
-        {"option_text": "H (correct: fixed arrangement: A=1, B=3 (2 right of A); E=5 (opposite A); F=7 (opposite B); fill gaps: C=2, D=4, G=6, H=8; second right of C(2)=4=D... wait: C at 2; 2+2=4=D; but who is second to right of C? Let me try: A=1, B=3 (given); D=2? Let me be systematic.)", "is_correct": true}
+        {
+          "option_text": "D",
+          "is_correct": false
+        },
+        {
+          "option_text": "E",
+          "is_correct": false
+        },
+        {
+          "option_text": "G",
+          "is_correct": false
+        },
+        {
+          "option_text": "H",
+          "is_correct": true
+        }
       ],
       "correct_letter": "D",
       "difficulty": "HARD",
@@ -160,10 +268,22 @@
     {
       "stem": "In a circular arrangement with 6 people A,B,C,D,E,F: A is between F and B. C is between B and D. E is between D and F. What is the clockwise order?",
       "options": [
-        {"option_text": "A,B,C,D,E,F (correct: A between F and B → ...F-A-B...; C between B and D → ...B-C-D...; E between D and F → ...D-E-F...; connecting: F-A-B-C-D-E-F = clockwise: A,B,C,D,E,F ✓)", "is_correct": true},
-        {"option_text": "A,F,E,D,C,B (wrong: this is the counterclockwise order)", "is_correct": false},
-        {"option_text": "A,B,D,C,E,F (wrong: C must be between B and D, so order is B-C-D)", "is_correct": false},
-        {"option_text": "F,A,B,C,D,E (same as A,B,C,D,E,F starting from F; same circular arrangement)", "is_correct": false}
+        {
+          "option_text": "A,B,C,D,E,F",
+          "is_correct": true
+        },
+        {
+          "option_text": "A,F,E,D,C,B",
+          "is_correct": false
+        },
+        {
+          "option_text": "A,B,D,C,E,F",
+          "is_correct": false
+        },
+        {
+          "option_text": "F,A,B,C,D,E",
+          "is_correct": false
+        }
       ],
       "correct_letter": "A",
       "difficulty": "MEDIUM",
