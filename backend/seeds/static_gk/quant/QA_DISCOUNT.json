@@ -423,6 +423,426 @@
       "generator_tag": "auto-seed-2026-06-19",
       "generated_at": "2026-06-19T13:45:34+00:00",
       "id": "sgk_QA_DISCOUNT_00014"
+    },
+    {
+      "stem": "A hardware shop marks a toolkit at ₹480. For every ₹8 of marked price, the shopkeeper deducts ₹1 as discount. What is the selling price of the toolkit?",
+      "options": [
+        {
+          "option_text": "₹400 (discount computed as one-sixth of the price)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹432 (computed with a standard 10% trade discount)",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹420 (one-eighth of ₹480 deducted as the discount)",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹440 (discount taken as one-twelfth of the price)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 'For every ₹8, deduct ₹1' means discount rate = 1/8. Discount = 480 ÷ 8 = ₹60. SP = 480 − 60 = ₹420. Option A (₹400) wrongly uses 1/6 as the fraction. Option B (₹432) applies a standard 10% discount (₹48 off) instead of 1/8. **Short Trick:** 1/8 = 12.5%. SP = 87.5% of ₹480 = 0.875 × 480. Use: 480 × 7/8 = 60 × 7 = ₹420. Memorise: 12.5% = 1/8, 16.67% = 1/6, 11.11% = 1/9 for instant fraction conversion.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:44:40+00:00",
+      "id": "sgk_QA_DISCOUNT_00015"
+    },
+    {
+      "stem": "During a clearance sale, a formal shirt originally tagged at ₹900 is sold for ₹720. What is the rate of discount being offered on the shirt?",
+      "options": [
+        {
+          "option_text": "15% — calculated as ₹135 off the original ₹900 price",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% — ratio of (₹900 − ₹720) to the marked price ₹900",
+          "is_correct": true
+        },
+        {
+          "option_text": "25% — discount ratio mistakenly taken on SP of ₹720",
+          "is_correct": false
+        },
+        {
+          "option_text": "30% — found by dividing ₹180 by ₹600 as the base price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Discount = 900 − 720 = ₹180. Discount% = (180 ÷ 900) × 100 = 20%. Option C (25%) is the classic error — dividing by SP instead of MP: 180/720 × 100 = 25% (wrong base). Option D divides by ₹600, which is not relevant here. **Short Trick:** Discount% = [(MP − SP) ÷ MP] × 100. Here: 180/900 = 1/5 = 20%. Rule: ALWAYS divide by MP, never by SP. If MP = ₹9 and SP = ₹7.2, notice 900 and 720 are in ratio 5:4, so discount = 1/5 = 20%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:44:40+00:00",
+      "id": "sgk_QA_DISCOUNT_00016"
+    },
+    {
+      "stem": "A retailer offers a 30% discount on an article marked at ₹400 and a 10% discount on another article marked at ₹600. A customer buys both articles. What is the overall discount percentage on the total purchase?",
+      "options": [
+        {
+          "option_text": "16% — arrived at by reversing the weighted proportions",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% — simple arithmetic mean of the two discount rates",
+          "is_correct": false
+        },
+        {
+          "option_text": "22% — total discount divided by total SP as denominator",
+          "is_correct": false
+        },
+        {
+          "option_text": "18% — discount weighted by each article's marked price",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. SP₁ = 400 × 0.70 = ₹280; SP₂ = 600 × 0.90 = ₹540. Total SP = ₹820, Total MP = ₹1,000. Overall Discount% = (1000 − 820)/1000 × 100 = 18%. Option B (20%) is the dangerous trap — simple average of 30% and 10% — but rates must be WEIGHTED by their MPs, not averaged. **Short Trick:** Effective Discount% = (MP₁ × d₁ + MP₂ × d₂) ÷ (MP₁ + MP₂) = (400×30 + 600×10) ÷ 1000 = (12,000 + 6,000) ÷ 1000 = 18%. Simple average is only valid when both MPs are equal.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:44:40+00:00",
+      "id": "sgk_QA_DISCOUNT_00017"
+    },
+    {
+      "stem": "A dealer sells an article at ₹1,512 after offering a 16% discount on its marked price. If the dealer earns a 26% profit over cost price, what is the cost price of the article?",
+      "options": [
+        {
+          "option_text": "₹1,200 — SP divided by 1.26 gives the correct cost price",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹1,100 — arrived at by computing profit on marked price",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,350 — discount amount subtracted from SP incorrectly",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹1,440 — SP taken directly as base without profit adjustment",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. SP = ₹1,512. Since profit of 26% is on CP: CP = SP ÷ 1.26 = 1512 ÷ 1.26 = ₹1,200. Cross-check: MP = SP ÷ 0.84 = 1512 ÷ 0.84 = ₹1,800; Markup over CP = (1800 − 1200)/1200 × 100 = 50%. Option C (₹1,350) wrongly deducts discount from SP (1512 − 162). Option D skips profit adjustment entirely. **Short Trick:** CP = SP ÷ (1 + Profit%) = 1512 ÷ 1.26. Multiply numerator and denominator by 100: 151200 ÷ 126. Simplify: 151200 ÷ 126 = 1200. Quick check: 126 × 12 = 1512 ✓, so ÷1.26 = ×(100/126) = 1200.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:44:40+00:00",
+      "id": "sgk_QA_DISCOUNT_00018"
+    },
+    {
+      "stem": "The marked price of a television set is ₹32,000. A shop reduces its offered discount from 20% to 12.5% during an off-season period. By how much does the selling price of the TV increase?",
+      "options": [
+        {
+          "option_text": "₹2,000 — computed using a 6.25% change on wrong base price",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,560 — 8% mistakenly applied to original SP of ₹25,600",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2,400 — 7.5% decrease in discount applied directly to MP",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹3,200 — computed as 10% of the marked price ₹32,000 used",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Reducing discount from 20% to 12.5% means the customer gets 7.5% LESS off, so SP increases by 7.5% of MP. Increase = 7.5% of ₹32,000 = ₹2,400. SP₁ = 32,000 × 0.80 = ₹25,600; SP₂ = 32,000 × 0.875 = ₹28,000. Difference = ₹2,400. Option B (₹2,560) applies 8% to the old SP — a common confusion between % of MP and % of SP. **Short Trick:** Change in SP = Change in discount% × MP. Here: (20% − 12.5%) × 32,000 = 7.5% × 32,000. Convert: 7.5% = 3/40. So 32,000 × 3/40 = 800 × 3 = ₹2,400.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:44:40+00:00",
+      "id": "sgk_QA_DISCOUNT_00019"
+    },
+    {
+      "stem": "A furniture dealer wants to offer customers a flat 20% discount on marked price and yet earn a 60% profit on cost price. By what percentage above cost price must he mark each article?",
+      "options": [
+        {
+          "option_text": "75% above cost — insufficient margin after 20% discount",
+          "is_correct": false
+        },
+        {
+          "option_text": "100% above cost — the only value satisfying both conditions",
+          "is_correct": true
+        },
+        {
+          "option_text": "80% above cost — profit% directly confused with markup%",
+          "is_correct": false
+        },
+        {
+          "option_text": "128% above cost — derived by reversing profit and discount",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let CP = ₹100. Required SP = 100 × 1.60 = ₹160 (60% profit). Discount is 20%, so MP × 0.80 = SP → MP = 160 ÷ 0.80 = ₹200. Markup% = (200 − 100)/100 × 100 = 100%. Option C (80%) is the classic mistake — students see 60% profit target and 20% discount and guess 80%. Option A (75%) leaves SP at only ₹140, yielding only 40% profit. **Short Trick:** Markup% = [(1 + Profit%) ÷ (1 − Discount%)] − 1 = [1.60 ÷ 0.80] − 1 = 2.00 − 1 = 1.00 = 100%. This formula is universal: always divide (1 + profit%) by (1 − discount%) and subtract 1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:44:40+00:00",
+      "id": "sgk_QA_DISCOUNT_00020"
+    },
+    {
+      "stem": "A garment store offers three successive discounts of 10%, 20%, and 25% on the tagged price of a saree marked at ₹8,000. What is the amount the customer finally pays, and what is the equivalent single discount percentage?",
+      "options": [
+        {
+          "option_text": "₹4,320 final price with an equivalent 46% single discount",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹4,000 final price with an equivalent 50% single discount",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹4,200 final price with an equivalent 47.5% single discount",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹4,400 final price with an equivalent 45% single discount",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Apply each discount sequentially: ₹8,000 × 0.90 = ₹7,200 → × 0.80 = ₹5,760 → × 0.75 = ₹4,320. Equivalent discount = (8000 − 4320)/8000 × 100 = 3680/8000 × 100 = 46%. Option B (50%) is the most dangerous trap — students simply add 10 + 20 + 25 = 55% or round to 50%, ignoring compounding. Option C (47.5%) uses arithmetic mean of the three rates. **Short Trick:** Net multiplier = (1 − d₁)(1 − d₂)(1 − d₃) = 0.90 × 0.80 × 0.75. Compute in stages: 0.9 × 0.8 = 0.72; 0.72 × 0.75 = 0.54. Final price = 0.54 × 8000 = ₹4,320. Equivalent discount = 1 − 0.54 = 0.46 = 46%. Rule: successive discounts NEVER add — the net is always less than the sum.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:44:40+00:00",
+      "id": "sgk_QA_DISCOUNT_00021"
+    },
+    {
+      "stem": "A shopkeeper buys an article for ₹500 and marks it at ₹750. At what percentage discount on the marked price must he sell the article to exactly recover his cost price without any profit or loss?",
+      "options": [
+        {
+          "option_text": "25% discount to barely cover transport and handling",
+          "is_correct": false
+        },
+        {
+          "option_text": "30% discount and still recover minor overhead costs",
+          "is_correct": false
+        },
+        {
+          "option_text": "33⅓% discount to exactly recover the purchase cost",
+          "is_correct": true
+        },
+        {
+          "option_text": "40% discount equivalent to a standard clearance offer",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. To break even, SP = CP = ₹500. Discount% = (MP − CP)/MP × 100 = (750 − 500)/750 × 100 = 250/750 × 100 = 33⅓%. Option A (25%) gives SP = 750 × 0.75 = ₹562.50, still above CP — shopkeeper makes profit. Option B (30%) gives SP = ₹525, also above CP. Option D (40%) gives SP = ₹450, below CP — causes a loss. **Short Trick:** 250/750 = 1/3. Memorise fraction table: 1/3 = 33.33%. Any fraction-of-MP discount question: convert (MP − CP)/MP to a simple fraction first.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:53:55+00:00",
+      "id": "sgk_QA_DISCOUNT_00022"
+    },
+    {
+      "stem": "A mobile phone showroom offers a cashback of ₹2,250 on a handset with MRP ₹15,000. What is the effective discount percentage on the MRP?",
+      "options": [
+        {
+          "option_text": "12.5% of the final price paid after the cashback",
+          "is_correct": false
+        },
+        {
+          "option_text": "15% of the MRP returned as an effective cashback discount",
+          "is_correct": true
+        },
+        {
+          "option_text": "17.5% reduction on the original sticker price of the phone",
+          "is_correct": false
+        },
+        {
+          "option_text": "20% discount applied on the handset manufacturing cost",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Discount% = (Cashback/MRP) × 100 = (2250/15000) × 100 = 15%. Option A (12.5%) mistakenly takes the base as the price after cashback: 2250/(15000 − 2250) = 2250/12750 ≈ 17.6%, not 12.5% — a double error. Option C (17.5%) gives cashback = 15000 × 0.175 = ₹2,625, not ₹2,250. Option D (20%) would require ₹3,000 cashback on ₹15,000. **Short Trick:** 15000 × 10% = 1500; 15000 × 5% = 750; 1500 + 750 = 2250. So discount = 10% + 5% = 15%. Breaking the percentage into 10% + 5% chunks is faster than long division.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:53:55+00:00",
+      "id": "sgk_QA_DISCOUNT_00023"
+    },
+    {
+      "stem": "A trader marks all goods at 50% above their cost price. He gives 20% discount to a wholesale buyer and only 10% discount to a retail buyer on the same marked price. What is the difference in profit percentages earned from the two sales?",
+      "options": [
+        {
+          "option_text": "10 percentage points difference in profit percentage earned",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 percentage points difference in profit percentage earned",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 percentage points difference in profit percentage earned",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 percentage points difference in profit percentage earned",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let CP = ₹100, so MP = ₹150 (50% above CP). Wholesale buyer (20% discount): SP = 150 × 0.80 = ₹120 → Profit% = (120 − 100)/100 × 100 = 20%. Retail buyer (10% discount): SP = 150 × 0.90 = ₹135 → Profit% = 35%. Difference = 35 − 20 = 15 percentage points. Option A (10 pp) confuses the difference in discount rates (20% − 10% = 10%) with the difference in profit rates — a very common trap. Option C (20 pp) equals the wholesale profit%, not the difference. **Short Trick:** MP = 1.5 × CP, so each 1% change in discount causes a 1.5% change in profit%. The two discounts differ by 10%, so profit difference = 1.5 × 10 = 15 percentage points. No need to compute both profits individually.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:53:55+00:00",
+      "id": "sgk_QA_DISCOUNT_00024"
+    },
+    {
+      "stem": "An air conditioner is listed at ₹36,000. A festival sale offers a 15% discount. An existing customer additionally receives a 5% discount on the already-discounted festival price. What amount does the existing customer pay?",
+      "options": [
+        {
+          "option_text": "₹28,440 after applying a combined flat 21% discount",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹29,070 after applying festival then loyalty discount",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹29,700 after applying a combined flat 17.5% discount",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹30,600 after applying only the 15% festival discount",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. After 15% festival discount: 36000 × 0.85 = ₹30,600. After additional 5% loyalty discount: 30600 × 0.95 = ₹29,070. Option A (₹28,440) adds the two percentages to get 21% and applies it flat: 36000 × 0.79 = ₹28,440 — the classic successive-discount addition error. Option C (₹29,700) uses 17.5% flat, the arithmetic mean of 15% and 5%, which is also wrong. Option D (₹30,600) forgets to apply the loyalty discount. **Short Trick:** Equivalent single discount = 15 + 5 − (15×5)/100 = 20 − 0.75 = 19.25%. SP = 36000 × (1 − 0.1925) = 36000 × 0.8075. Break it: 36000 × 0.80 = 28800; 36000 × 0.0075 = 270; Total = ₹29,070.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:53:55+00:00",
+      "id": "sgk_QA_DISCOUNT_00025"
+    },
+    {
+      "stem": "Two varieties of tea costing ₹80/kg and ₹120/kg are mixed in the ratio 3:1. The mixture is currently sold at ₹110/kg. What percentage discount on this selling price would yield exactly 10% profit on cost price?",
+      "options": [
+        {
+          "option_text": "8% reduction on the ₹110 per kg asking price",
+          "is_correct": false
+        },
+        {
+          "option_text": "10% reduction on the ₹110 per kg asking price",
+          "is_correct": true
+        },
+        {
+          "option_text": "12% reduction on the ₹110 per kg asking price",
+          "is_correct": false
+        },
+        {
+          "option_text": "15% reduction on the ₹110 per kg asking price",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. CP of mixture = (3×80 + 1×120)/(3+1) = (240 + 120)/4 = 360/4 = ₹90/kg. Required SP for 10% profit = 90 × 1.10 = ₹99/kg. Discount% on current SP = (110 − 99)/110 × 100 = 11/110 × 100 = 10%. Option A (8%): discounted SP = 110 × 0.92 = ₹101.2 → profit = (101.2−90)/90 × 100 = 12.4%, not 10%. Option C (12%): SP = 110 × 0.88 = ₹96.8 → profit = 7.6%, not 10%. Option D (15%): SP = ₹93.5 → profit only 3.9%. **Short Trick:** CP by weighted average: ₹80 and ₹120 in ratio 3:1 → CP = 80 + (120−80)×(1/4) = 80 + 10 = ₹90. Required SP = ₹99. Discount% = 11/110 = 1/10 = 10%. Note: 1/11 would be ≈9.09% — avoid confusing base.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:53:55+00:00",
+      "id": "sgk_QA_DISCOUNT_00026"
+    },
+    {
+      "stem": "A dealer marks two articles each at ₹2,400. He offers 15% discount on the first article and earns 2% profit on it. He offers 25% discount on the second article. If both articles have the same cost price, what is the profit or loss percentage on the second article?",
+      "options": [
+        {
+          "option_text": "8% profit on the second article sold at ₹1,800",
+          "is_correct": false
+        },
+        {
+          "option_text": "10% loss on the second article sold at ₹1,800",
+          "is_correct": true
+        },
+        {
+          "option_text": "12% loss on the second article sold at ₹1,800",
+          "is_correct": false
+        },
+        {
+          "option_text": "5% profit on the second article sold at ₹1,800",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Article 1: SP = 2400 × 0.85 = ₹2,040. Profit = 2%, so CP = SP/1.02 = 2040/1.02 = ₹2,000. Article 2 (same CP = ₹2,000): SP = 2400 × 0.75 = ₹1,800. Since SP < CP, it is a loss. Loss% = (2000 − 1800)/2000 × 100 = 200/2000 × 100 = 10%. Option A (8% profit) is impossible since ₹1,800 < CP of ₹2,000. Option C (12% loss) would need SP = 2000 × 0.88 = ₹1,760, but actual SP is ₹1,800. Option D (5% profit) needs SP = ₹2,100 > ₹1,800. **Short Trick:** CP = 2040 ÷ 1.02. Quick mental division: 2040/1.02 — multiply top and bottom by 100: 204000/102 = 2000. Then loss% = (2000−1800)/2000 = 200/2000 = 1/10 = 10%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:53:55+00:00",
+      "id": "sgk_QA_DISCOUNT_00027"
+    },
+    {
+      "stem": "A merchant marks all articles 40% above cost price. A customer buys 5 identical articles: he pays the full marked price for 2 of them, while the remaining 3 are sold at a uniform discount. If the overall effective discount on the total marked price of all 5 articles is 18%, what is the discount percentage offered on the 3 discounted articles?",
+      "options": [
+        {
+          "option_text": "24% uniform discount on the three discounted articles",
+          "is_correct": false
+        },
+        {
+          "option_text": "27% uniform discount on the three discounted articles",
+          "is_correct": false
+        },
+        {
+          "option_text": "30% uniform discount on the three discounted articles",
+          "is_correct": true
+        },
+        {
+          "option_text": "36% uniform discount on the three discounted articles",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let MP per article = M (CP cancels out). Total marked price = 5M. After 18% effective discount, customer pays 5M × 0.82 = 4.1M. Price for 2 articles at full MP = 2M. Price for 3 discounted articles = 4.1M − 2M = 2.1M. Let discount on 3 articles be d%. Then 3M × (1 − d/100) = 2.1M → 1 − d/100 = 2.1/3 = 0.70 → d = 30%. Option A (24%): 3 articles cost 3M×0.76 = 2.28M; total = 4.28M; effective discount = (5M−4.28M)/5M = 14.4% ≠ 18%. Option D (36%): 3M×0.64 = 1.92M; total = 3.92M; effective discount = 21.6% ≠ 18%. **Short Trick:** Effective total payment = 5 × 0.82 = 4.1 parts of M. Subtract 2 full-price parts → 2.1 parts left for 3 articles. Discount on 3 = (3 − 2.1)/3 = 0.9/3 = 0.30 = 30%. The 40% markup information is a red herring — it doesn't affect the discount calculation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:53:55+00:00",
+      "id": "sgk_QA_DISCOUNT_00028"
     }
   ]
 }

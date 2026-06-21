@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_PERCENTAGE_ADV",
+  "subject": "Quantitative Aptitude",
+  "topic": "Percentage — Advanced Applications",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "A number is increased by 20% and then decreased by 20%. What is the net change?",
+      "options": [
+        {"option_text": "0% (wrong: the net change is NOT zero; successive % changes require multiplication, not addition)", "is_correct": false},
+        {"option_text": "4% decrease (correct: 1.2×0.8=0.96; net change=−4% ✓; or use formula: net%=a+b+ab/100=20+(−20)+(20×(−20)/100)=0−4=−4%)", "is_correct": true},
+        {"option_text": "2% decrease (wrong: the formula gives exactly 4%, not 2%)", "is_correct": false},
+        {"option_text": "1% decrease (wrong: not the correct result)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Successive changes formula: Net% = a + b + (a×b)/100 where a=+20%, b=−20%. = 20+(−20)+(20×(−20)/100) = 0−4 = −4%. Net effect = 4% DECREASE. **Key insight:** Equal % increase followed by equal % decrease always gives a net DECREASE = (%)²/100.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Ram's salary is 25% more than Shyam's. By what percentage is Shyam's salary less than Ram's?",
+      "options": [
+        {"option_text": "25% (wrong: if Ram=125, Shyam=100; Shyam is less than Ram by (125-100)/125×100=20%)", "is_correct": false},
+        {"option_text": "20% (correct: let Shyam=100; Ram=125; Shyam is less than Ram by 25/125×100=20% ✓)", "is_correct": true},
+        {"option_text": "30% (wrong: 30% of 125=37.5; 125-37.5=87.5≠100)", "is_correct": false},
+        {"option_text": "15% (wrong: doesn't match the calculation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. If Shyam=100, Ram=125. '% by which Shyam is less than Ram' = (Ram−Shyam)/Ram × 100 = 25/125 × 100 = 20%. **Short Trick:** If A is x% more than B, B is less than A by: x/(100+x) × 100 = 25/125×100 = 20%. These 'reverse percentage' questions are extremely common in SSC/Bank exams.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The price of petrol increased by 25%. By what percentage must a person reduce his consumption to maintain the same expenditure?",
+      "options": [
+        {"option_text": "25% (wrong: if price goes up 25%, reducing by 25% doesn't keep expenditure the same)", "is_correct": false},
+        {"option_text": "20% (correct: new price=125; to keep expenditure=100×P, new consumption=100/125=80%; reduced by 20% ✓)", "is_correct": true},
+        {"option_text": "15% (wrong: 15% reduction means 85% consumption; 125×0.85=106.25≠100)", "is_correct": false},
+        {"option_text": "30% (wrong: 70% consumption at 125% price=87.5≠100)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. If price increases by 25% → new price = 125. For same expenditure (=100P), new quantity = 100/125 = 80% of original. Reduction = 20%. **Formula:** % reduction in consumption = x/(100+x) × 100 = 25/125 × 100 = 20%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In an election between two candidates, 80% of voters cast their votes. Candidate A got 55% of the votes cast and won by 1,400 votes. What is the total number of voters?",
+      "options": [
+        {"option_text": "12,000 (wrong: let total voters=N; votes cast=0.8N; A got 0.55×0.8N; B got 0.45×0.8N; difference=0.1×0.8N=0.08N=1400; N=17,500)", "is_correct": false},
+        {"option_text": "17,500 (correct: 0.08N=1400; N=17,500 ✓)", "is_correct": true},
+        {"option_text": "15,000 (wrong: 0.08×15000=1200≠1400)", "is_correct": false},
+        {"option_text": "20,000 (wrong: 0.08×20000=1600≠1400)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total voters=N. Votes cast=0.8N. A's votes=0.55×0.8N; B's votes=0.45×0.8N. Margin=0.55×0.8N−0.45×0.8N=(0.55−0.45)×0.8N=0.10×0.8N=0.08N=1400. N=1400/0.08=17,500.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A shopkeeper marks his goods 30% above cost price and allows a discount of 15%. What is his profit percentage?",
+      "options": [
+        {"option_text": "12.5% (wrong: 1.3×0.85=1.105; profit=10.5%, not 12.5%)", "is_correct": false},
+        {"option_text": "10.5% (correct: CP=100; MP=130; SP=130×0.85=110.5; profit%=10.5% ✓)", "is_correct": true},
+        {"option_text": "15% (wrong: 15% is just the discount; overall profit≠15%)", "is_correct": false},
+        {"option_text": "9% (wrong: 1.3×0.85=1.105→10.5%, not 9%)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. CP=100; MP=130 (30% markup). SP=130×0.85=110.5 (15% discount on MP). Profit=SP−CP=10.5; Profit%=10.5%. **Formula:** Net% = (1+markup/100)×(1−discount/100)−1 = 1.3×0.85−1=1.105−1=0.105=10.5%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A number is first increased by 10% and then decreased by 10%. The resulting number is:",
+      "options": [
+        {"option_text": "Same as original (wrong: 1.1×0.9=0.99; 1% decrease from original)", "is_correct": false},
+        {"option_text": "1% less than original (correct: 1.1×0.9=0.99; result=99% of original=1% decrease ✓)", "is_correct": true},
+        {"option_text": "1% more than original (wrong: result is 0.99, less than 1)", "is_correct": false},
+        {"option_text": "2% less than original (wrong: 2% decrease would mean 1.1×0.98=1.078...no that's different)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. +10% then −10%: 1.10×0.90=0.99=99% of original → 1% decrease. Formula: net% = a+b+ab/100 = 10+(−10)+(10×(−10)/100) = 0−1 = −1%. Result is 1% less. **General rule:** Successive equal % increase and decrease → net = (%)²/100 decrease.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a class, 40% of students failed in Maths. 30% failed in Science. 10% failed in both. What percentage passed in both subjects?",
+      "options": [
+        {"option_text": "30% (wrong: failed in at least one = 40+30−10=60%; passed in both = 100−60=40%)", "is_correct": false},
+        {"option_text": "40% (correct: failed in at least one = 40+30−10=60%; passed in BOTH = 100−60=40% ✓)", "is_correct": true},
+        {"option_text": "50% (wrong: 100−50=50% would mean 50% failed in at least one; but 40+30-10=60 failed)", "is_correct": false},
+        {"option_text": "60% (wrong: 60% FAILED in at least one; 40% PASSED both)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Failed in at least one = Failed(Maths)+Failed(Science)−Failed(Both) = 40+30−10=60%. Passed in BOTH = 100−60=40%. This applies the inclusion-exclusion principle to percentage problems.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If A earns ₹6,000 and B earns ₹8,000 per month, by what percentage is A's salary less than B's?",
+      "options": [
+        {"option_text": "25% (correct: (8000−6000)/8000×100=2000/8000×100=25% ✓)", "is_correct": true},
+        {"option_text": "33.3% (wrong: (8000−6000)/6000×100=33.3%; but this is B's % more than A, not A's % less than B)", "is_correct": false},
+        {"option_text": "20% (wrong: 20% of 8000=1600; 8000-1600=6400≠6000)", "is_correct": false},
+        {"option_text": "30% (wrong: 30% of 8000=2400; 8000-2400=5600≠6000)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. '% by which A is less than B' = (B−A)/B×100 = (8000−6000)/8000×100 = 25%. Compare: '% by which B is more than A' = (B−A)/A×100 = 2000/6000×100 = 33.3%. The base (denominator) determines the direction: 'less than B' → base=B; 'more than A' → base=A.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A mixture contains milk and water in ratio 5:1. If 15 litres of the mixture is removed and replaced with water, the ratio becomes 5:3. Find the original volume of the mixture.",
+      "options": [
+        {"option_text": "50 litres (wrong: let V=original; milk=5V/6; after removing 15L (which contains 5V/6-milk-of-15=12.5L milk and 2.5L water), milk remaining=5V/6-12.5; water remaining=V/6-2.5+15=V/6+12.5; ratio: (5V/6-12.5):(V/6+12.5)=5:3; 3(5V/6-12.5)=5(V/6+12.5); 5V/2-37.5=5V/6+62.5; 5V/2-5V/6=100; 10V/6=100; V=60 litres)", "is_correct": false},
+        {"option_text": "60 litres (correct: solving gives V=60 litres ✓)", "is_correct": true},
+        {"option_text": "40 litres (wrong: 40L doesn't satisfy the equation)", "is_correct": false},
+        {"option_text": "75 litres (wrong: 75L doesn't satisfy the equation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let V=original volume. Milk=5V/6, Water=V/6. Remove 15L (milk component=15×5/6=12.5L, water=2.5L). Replace with 15L water. New milk=5V/6−12.5; New water=V/6−2.5+15=V/6+12.5. Ratio (5V/6−12.5):(V/6+12.5)=5:3. 3(5V/6−12.5)=5(V/6+12.5) → 5V/2−37.5=5V/6+62.5 → 5V/2−5V/6=100 → 10V/6=100 → V=60 litres.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The population of a town was 10,000 in 2020. It increased by 10% in 2021 and then decreased by 10% in 2022. What was the population at the end of 2022?",
+      "options": [
+        {"option_text": "10,000 (wrong: successive +10% and −10% gives a net −1%, not 0%)", "is_correct": false},
+        {"option_text": "9,900 (correct: 10,000×1.1=11,000; 11,000×0.9=9,900 ✓)", "is_correct": true},
+        {"option_text": "9,800 (wrong: 9800 would be a 2% decrease; net is exactly 1%)", "is_correct": false},
+        {"option_text": "10,100 (wrong: 10,100 would be an increase; there is a net decrease)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 2020: 10,000. 2021 (+10%): 10,000×1.1=11,000. 2022 (−10% of 11,000): 11,000×0.9=9,900. Net change: 9900−10000=−100 (1% decrease on original). This is the standard 'successive opposite percentages give a net loss' problem.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

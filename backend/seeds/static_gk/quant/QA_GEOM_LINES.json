@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Geometry - Lines & Angles",
+  "topic_code": "QA_GEOM_LINES",
+  "questions": [
+    {
+      "stem": "Two angles form a linear pair. One angle exceeds the other by 40°. What is the measure of the larger angle?",
+      "options": [
+        {
+          "option_text": "70° — the smaller angle of the linear pair formed here",
+          "is_correct": false
+        },
+        {
+          "option_text": "110° — the larger angle in this supplementary linear pair",
+          "is_correct": true
+        },
+        {
+          "option_text": "130° — obtained by adding the difference 40° to a right angle 90°",
+          "is_correct": false
+        },
+        {
+          "option_text": "120° — found by dividing 360° equally and adjusting for the 40° excess",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Let the smaller angle = x. Then the larger = x + 40. Linear pair: x + (x + 40) = 180 → 2x = 140 → x = 70°. Larger angle = 110°. Option A (70°) is the smaller angle — a classic reversal error. Option C (130°) wrongly adds 40° to 90° instead of setting up the equation. **Short Trick:** Larger angle = (180 + difference)/2 = (180 + 40)/2 = 220/2 = 110°. Memorise this formula for all 'linear pair with difference' problems.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:11:02+00:00",
+      "id": "sgk_QA_GEOM_LINES_00001"
+    },
+    {
+      "stem": "Lines AB and CD intersect at O. If ∠AOC = (2x + 15)° and ∠BOD = (3x − 5)°, find the measure of ∠AOC.",
+      "options": [
+        {
+          "option_text": "45° — found if the constant −5 in ∠BOD is ignored during equation setup",
+          "is_correct": false
+        },
+        {
+          "option_text": "55° — correct value using the vertically opposite angle property",
+          "is_correct": true
+        },
+        {
+          "option_text": "83° — result if the two angles are wrongly added to equal 180°",
+          "is_correct": false
+        },
+        {
+          "option_text": "125° — the supplement of ∠AOC, i.e., 180° − 55° corresponding to ∠AOB",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. ∠AOC and ∠BOD are vertically opposite angles (equal): 2x + 15 = 3x − 5 → x = 20 → ∠AOC = 2(20) + 15 = 55°. Option A (45°) arises from ignoring −5 in ∠BOD: 2x+15 = 3x → x=15 → 45°. Option C (83°) uses the co-interior error: 2x+15+3x−5=180 → 5x=170 → x=34 → ∠AOC=83°. **Short Trick:** Vertically opposite → equate directly. Supplementary → add to 180°. Know the shape: X-shape means vertical angles, not supplementary.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:11:02+00:00",
+      "id": "sgk_QA_GEOM_LINES_00002"
+    },
+    {
+      "stem": "AB ∥ CD. A transversal cuts AB at P and CD at Q such that ∠BPQ = (4x + 5)° and ∠PQC = (6x − 25)°. Find ∠BPQ.",
+      "options": [
+        {
+          "option_text": "55° — found if the constant +5 is omitted from the left-side expression",
+          "is_correct": false
+        },
+        {
+          "option_text": "65° — correct: alternate interior angles are equal when AB ∥ CD",
+          "is_correct": true
+        },
+        {
+          "option_text": "75° — obtained by averaging the two angle expressions incorrectly",
+          "is_correct": false
+        },
+        {
+          "option_text": "85° — result of treating the angles as co-interior, wrongly summing to 180°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. ∠BPQ and ∠PQC are alternate interior angles (AB ∥ CD), so they are equal: 4x + 5 = 6x − 25 → 2x = 30 → x = 15 → ∠BPQ = 4(15) + 5 = 65°. Option A (55°): dropping +5 gives 4x = 6x−25 → x=12.5 → 55°. Option D (85°) is the classic co-interior trap: 4x+5+6x−25=180 → x=20 → 85°. **Short Trick:** Z-shape (alternate) = equal; C/U-shape (co-interior) = sums to 180°. Identify the shape first, then set up the equation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:11:02+00:00",
+      "id": "sgk_QA_GEOM_LINES_00003"
+    },
+    {
+      "stem": "Point O lies on line AB. Ray OC is drawn so that ∠AOC : ∠COB = 2 : 3. Ray OD bisects ∠COB. Find ∠AOD.",
+      "options": [
+        {
+          "option_text": "108° — if ∠COD is wrongly computed as ∠COB − ∠AOC = 36°, giving 72° + 36°",
+          "is_correct": false
+        },
+        {
+          "option_text": "126° — correct: ∠AOC = 72°, half of ∠COB = 54°, total = 126°",
+          "is_correct": true
+        },
+        {
+          "option_text": "144° — obtained when the ratio 2:3 is reversed and the bisected part is added",
+          "is_correct": false
+        },
+        {
+          "option_text": "90° — computed by simply halving the full straight angle 180° as a shortcut",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. ∠AOC + ∠COB = 180° (linear pair). Ratio 2:3 → ∠AOC = (2/5)×180 = 72°, ∠COB = 108°. OD bisects ∠COB → ∠COD = 54°. ∠AOD = ∠AOC + ∠COD = 72° + 54° = 126°. Option C (144°) reverses the ratio: ∠AOC=108°, ∠COB=72°, ∠COD=36° → 108+36=144°. Option A (108°): student wrongly computes ∠COD = 108−72 = 36° and gets 72+36=108°. **Short Trick:** Each ratio part = 180°/5 = 36°. ∠AOC = 2×36 = 72°, ∠COB = 3×36 = 108°. Bisect ∠COB → 54°. Add: 72+54 = 126°.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:11:02+00:00",
+      "id": "sgk_QA_GEOM_LINES_00004"
+    },
+    {
+      "stem": "Three parallel lines l, m, n are cut by two transversals. The first transversal makes intercepts of 3 cm (between l and m) and 5 cm (between m and n). If the second transversal makes an intercept of 9 cm between l and m, find the intercept between m and n.",
+      "options": [
+        {
+          "option_text": "5.4 cm — found by inverting the ratio, applying 3:5 backward as 5:3",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 cm — correct by the intercept theorem (ratio 3:5 = 9:15 is preserved)",
+          "is_correct": true
+        },
+        {
+          "option_text": "11 cm — adding the ratio difference (5 − 3 = 2) directly to the intercept 9 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 cm — obtained by multiplying 9 cm by 5 without performing the division by 3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. By the Intercept Theorem, parallel lines cut two transversals in the same ratio: 3/5 = 9/d → d = (9 × 5)/3 = 15 cm. Option A (5.4 cm) inverts the ratio: 9 × (3/5) = 5.4. Option D (45 cm) multiplies 9 × 5 = 45 without dividing by 3. Option C (11 cm) adds the difference 2 to 9. **Short Trick:** Think of it as scaling — the 3 cm intercept scaled by ×3 becomes 9 cm on transversal 2. Apply the same scale factor to the 5 cm intercept: 5 × 3 = 15 cm. Always: second intercept = first intercept × (ratio).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:11:02+00:00",
+      "id": "sgk_QA_GEOM_LINES_00005"
+    },
+    {
+      "stem": "Two lines PQ and RS intersect at O, forming ∠POR = 70°. Ray OA bisects ∠POR and ray OB bisects ∠ROQ. Find ∠AOB.",
+      "options": [
+        {
+          "option_text": "70° — assuming the bisector angle equals the original angle ∠POR directly",
+          "is_correct": false
+        },
+        {
+          "option_text": "90° — the bisectors of two adjacent supplementary angles are always perpendicular",
+          "is_correct": true
+        },
+        {
+          "option_text": "55° — taken as the bisected half of the larger supplementary angle ∠ROQ only",
+          "is_correct": false
+        },
+        {
+          "option_text": "80° — obtained by averaging the given ∠POR = 70° with a right angle of 90°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. ∠POR = 70° and ∠ROQ = 110° (linear pair on line PQ). OA bisects ∠POR → ∠ROA = 35°. OB bisects ∠ROQ → ∠ROB = 55°. ∠AOB = ∠ROA + ∠ROB = 35° + 55° = 90°. This result is universal: bisectors of two adjacent supplementary angles are ALWAYS perpendicular, no matter what ∠POR equals. Option C (55°) is just ∠ROB — it forgets to add ∠ROA. **Short Trick:** ∠AOB = (∠POR)/2 + (∠ROQ)/2 = (∠POR + ∠ROQ)/2 = 180°/2 = 90°. Lock this in: the answer is ALWAYS 90° — a guaranteed 1-mark question in SSC CGL.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:11:02+00:00",
+      "id": "sgk_QA_GEOM_LINES_00006"
+    },
+    {
+      "stem": "In △ABC, the bisectors of the exterior angles at B and at C meet at point I. If ∠BAC = 50°, find ∠BIC.",
+      "options": [
+        {
+          "option_text": "65° — correct: exterior angle bisectors meet at ∠BIC = 90° − ∠A/2 = 65°",
+          "is_correct": true
+        },
+        {
+          "option_text": "90° — this would require ∠A = 180°, which makes a degenerate triangle",
+          "is_correct": false
+        },
+        {
+          "option_text": "115° — result of applying the internal bisector (incenter) formula 90° + ∠A/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "130° — confuses ∠BIC with the full angle sum ∠B + ∠C = 180° − 50°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Let ∠B = 2β, ∠C = 2γ. Exterior angle at B = (180° − 2β); its bisector makes angle (90° − β) with BC inside △BIC. Exterior angle at C bisector makes angle (90° − γ). In △BIC: ∠BIC = 180° − (90° − β) − (90° − γ) = β + γ = (∠B + ∠C)/2 = 130°/2 = 65°. Key formula: ∠BIC = 90° − ∠A/2. Option C (115°) applies the INTERNAL bisector (incenter) formula 90° + ∠A/2 — the most tempting wrong answer. **Short Trick:** External bisectors → ∠BIC = 90° − A/2. Internal bisectors (incenter I) → ∠BIC = 90° + A/2. The two formulas are mirror images; confusing them is the single most common error on this question type.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:11:02+00:00",
+      "id": "sgk_QA_GEOM_LINES_00007"
+    },
+    {
+      "stem": "Two angles are supplementary. Their measures are in the ratio 3 : 7. What is the measure of the larger angle?",
+      "options": [
+        {
+          "option_text": "63° — error: using 7/10 × 90° (treating angles as complementary)",
+          "is_correct": false
+        },
+        {
+          "option_text": "126° — correct: 7/10 × 180° since both angles are supplementary (sum = 180°)",
+          "is_correct": true
+        },
+        {
+          "option_text": "108° — error: reading the ratio as 3 : 2 and computing 3/5 × 180°",
+          "is_correct": false
+        },
+        {
+          "option_text": "135° — error: using a 3 : 1 ratio interpretation, giving 3/4 × 180°",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Let the angles be 3x and 7x. Since supplementary: 3x + 7x = 180° → 10x = 180° → x = 18°. Larger angle = 7 × 18° = 126°. Option A (63°) arises from applying 7/10 to 90° instead of 180° — the complementary-vs-supplementary confusion. Option C (108°) comes from a 3:2 ratio misread, giving 3/5 × 180°. **Short Trick:** Larger angle = (larger share ÷ total shares) × 180° = 7/(3+7) × 180° = 7/10 × 180° = 126°.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:27:57+00:00",
+      "id": "sgk_QA_GEOM_LINES_00008"
+    },
+    {
+      "stem": "Two straight lines intersect at point O. One of the four angles formed at O measures 70°. Which option correctly lists ALL four angles at O?",
+      "options": [
+        {
+          "option_text": "70°, 110°, 70°, and 110° — two pairs of vertically opposite angles at O",
+          "is_correct": true
+        },
+        {
+          "option_text": "70°, 90°, 90°, and 110° — two right angles form on one side of the lines",
+          "is_correct": false
+        },
+        {
+          "option_text": "70°, 70°, 100°, and 120° — consecutive angles around O summing to 360°",
+          "is_correct": false
+        },
+        {
+          "option_text": "70°, 80°, 80°, and 130° — adjacent angle pairs totalling 360° around O",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. At the intersection of two straight lines: (i) vertically opposite angles are equal, and (ii) adjacent angles are supplementary. With one angle = 70°, its vertically opposite angle = 70°, and both adjacent angles = 180° − 70° = 110°. Options B, C, D each violate the vertically-opposite rule — in B the pair (90°, 90°) ≠ (70°, 70°). **Short Trick:** Two intersecting lines always produce the pattern θ, (180°−θ), θ, (180°−θ). Given 70°: the four angles are 70°, 110°, 70°, 110°.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:27:57+00:00",
+      "id": "sgk_QA_GEOM_LINES_00009"
+    },
+    {
+      "stem": "AB ∥ CD. A point P lies strictly between the two parallel lines. Ray PA meets AB at A with ∠PAB = 35°, and ray PD meets CD at D with ∠PDC = 50°. What is ∠APD?",
+      "options": [
+        {
+          "option_text": "75° — incorrect value from an arithmetic error in the auxiliary-line method",
+          "is_correct": false
+        },
+        {
+          "option_text": "85° — correct answer using the auxiliary parallel line drawn through P",
+          "is_correct": true
+        },
+        {
+          "option_text": "95° — incorrect; this is the supplement of the actual angle at P",
+          "is_correct": false
+        },
+        {
+          "option_text": "115° — incorrect; arises from misapplying co-interior angles at point P",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Draw line PX through P parallel to both AB and CD. By alternate interior angles: ∠APX = ∠PAB = 35° (AB ∥ PX, transversal AP) and ∠DPX = ∠PDC = 50° (PX ∥ CD, transversal PD). Since rays PA and PD lie on opposite sides of PX, ∠APD = ∠APX + ∠DPX = 35° + 50° = 85°. Option C (95°) is 180° − 85°, a classic supplement-instead-of-angle slip. **Short Trick:** Zigzag between two parallel lines — angle at the bend = SUM of the angles the two arms make with the respective parallel lines (auxiliary-parallel method).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:27:57+00:00",
+      "id": "sgk_QA_GEOM_LINES_00010"
+    },
+    {
+      "stem": "Two supplementary angles are formed by two rays from a common vertex. One angle is 20° more than three times the other angle. What is the measure of the larger angle?",
+      "options": [
+        {
+          "option_text": "120° — error: computing 3x = 3 × 40° = 120°, forgetting to add the 20°",
+          "is_correct": false
+        },
+        {
+          "option_text": "135° — error: computing 3/4 × 180° by treating it as a 3 : 1 ratio problem",
+          "is_correct": false
+        },
+        {
+          "option_text": "160° — error: computing 4x (the full sum) instead of 3x + 20 when x = 40°",
+          "is_correct": false
+        },
+        {
+          "option_text": "140° — correct: x = 40° (smaller angle), so larger = 3(40°) + 20° = 140°",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Let the smaller angle = x. The larger = (3x + 20)°. Since supplementary: x + (3x + 20) = 180 → 4x = 160 → x = 40°. Larger = 3(40) + 20 = 140°. Option A (120°) is the most common error: students find x = 40° correctly but compute 3x = 120° without adding the 20° excess. Option B (135°) treats it as a 3:1 ratio giving 3/4 × 180°. **Short Trick:** Collect terms: x + (3x + 20) = 180 → 4x = 160 → x = 40. Substitute back: 3(40) + 20 = 140°.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:27:57+00:00",
+      "id": "sgk_QA_GEOM_LINES_00011"
+    },
+    {
+      "stem": "AB is a straight line. Rays OC and OD are drawn from point O on AB dividing ∠AOB into three parts: ∠AOC = (4x + 5)°, ∠COD = (2x + 10)°, and ∠DOB = (3x − 15)°. What is the measure of ∠COD?",
+      "options": [
+        {
+          "option_text": "40° — error: evaluating 2x only, dropping the constant +10 from ∠COD",
+          "is_correct": false
+        },
+        {
+          "option_text": "50° — correct: solving 9x = 180° gives x = 20°; ∠COD = 2x + 10° = 50°",
+          "is_correct": true
+        },
+        {
+          "option_text": "85° — error: evaluating ∠AOC = (4x + 5)° = (4×20 + 5)° = 85° instead",
+          "is_correct": false
+        },
+        {
+          "option_text": "45° — error: evaluating ∠DOB = (3x − 15)° = (3×20 − 15)° = 45° instead",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Angles on a straight line sum to 180°: (4x+5) + (2x+10) + (3x−15) = 180 → 9x + 0 = 180 → x = 20°. So ∠COD = 2(20) + 10 = 50°. Cross-check: ∠AOC = 85°, ∠COD = 50°, ∠DOB = 45°; total = 180° ✓. Options C and D result from substituting x = 20 into the wrong expression. Option A drops the +10 constant. **Short Trick:** Add ALL three expressions and set equal to 180°. Constants cancel cleanly here (5 + 10 − 15 = 0), giving 9x = 180 → x = 20. Then substitute into (2x+10) only.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:27:57+00:00",
+      "id": "sgk_QA_GEOM_LINES_00012"
+    },
+    {
+      "stem": "AB ∥ CD. A transversal PQ crosses AB at M and CD at N. The bisector of ∠BMN and the bisector of ∠MNC meet at point T. What is ∠MTN, regardless of the transversal's inclination?",
+      "options": [
+        {
+          "option_text": "45° — error: taking half of 90° instead of applying the triangle angle sum",
+          "is_correct": false
+        },
+        {
+          "option_text": "60° — error: assuming ∠MTN equals the transversal's 60° inclination to AB",
+          "is_correct": false
+        },
+        {
+          "option_text": "90° — correct: bisectors of supplementary co-interior angles always meet at 90°",
+          "is_correct": true
+        },
+        {
+          "option_text": "Cannot be determined without knowing the transversal's angle of inclination",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Since AB ∥ CD, co-interior angles ∠BMN and ∠MNC are supplementary: ∠BMN + ∠MNC = 180°. Let ∠BMN = 2α and ∠MNC = 2β, so 2α + 2β = 180° → α + β = 90°. MT bisects ∠BMN so ∠TMN = α; NT bisects ∠MNC so ∠TNM = β. In △MTN: ∠MTN = 180° − α − β = 180° − 90° = 90°. This holds for ANY transversal. Option D is the trap — students think the answer varies with inclination. **Short Trick:** Bisectors of two supplementary angles always form a right angle (90°). Set up triangle with half-angles α and β where α + β = 90°; third angle of triangle = 90° instantly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:27:57+00:00",
+      "id": "sgk_QA_GEOM_LINES_00013"
+    },
+    {
+      "stem": "Point P lies on segment AB such that AP : PB = 3 : 5. Point Q is the midpoint of segment PB. If AB = 32 cm, what is the length of AQ?",
+      "options": [
+        {
+          "option_text": "16 cm — error: treating Q as the midpoint of AB, giving 32 ÷ 2 = 16 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 cm — error: using PQ as half of AP (= 6 cm) instead of half of PB",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 cm — error: equating AQ with PB = 5/8 × 32, ignoring the AP segment",
+          "is_correct": false
+        },
+        {
+          "option_text": "22 cm — correct: AP = 12 cm, PQ = 10 cm, so AQ = AP + PQ = 22 cm",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. AP = 3/(3+5) × 32 = 3/8 × 32 = 12 cm. PB = 5/8 × 32 = 20 cm. Q is the midpoint of PB, so PQ = 20 ÷ 2 = 10 cm. AQ = AP + PQ = 12 + 10 = 22 cm. Option A (16 cm) treats Q as the midpoint of the full segment AB. Option B (18 cm) halves AP (getting PQ = 6 cm) instead of PB — a ratio-confusion error. Option C (20 cm) reads off PB and forgets to add AP. **Short Trick:** AQ = (3/8)AB + (1/2)(5/8)AB = (6/16 + 5/16) × 32 = (11/16) × 32 = 22 cm.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:27:57+00:00",
+      "id": "sgk_QA_GEOM_LINES_00014"
+    }
+  ]
+}

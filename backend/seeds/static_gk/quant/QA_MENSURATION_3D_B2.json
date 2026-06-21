@@ -1,0 +1,212 @@
+{
+  "topic_code": "QA_MENSURATION_3D",
+  "subject": "Quantitative Aptitude",
+  "topic": "Mensuration 3D — Volume and Surface Area",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Find the volume of a cube whose side is 5 cm.",
+      "options": [
+        {"option_text": "25 cm³ (5² — area, not volume)", "is_correct": false},
+        {"option_text": "75 cm³ (3×5² — wrong)", "is_correct": false},
+        {"option_text": "125 cm³ (correct: volume of cube = side³ = 5³ = 125 cm³ ✓)", "is_correct": true},
+        {"option_text": "150 cm³ (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Volume of cube = a³ = 5³ = 125 cm³. Total surface area = 6a² = 6×25 = 150 cm² (common distractor). Don't confuse volume (a³) with surface area (6a²).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A cylinder has radius 7 cm and height 10 cm. What is its volume? (Use π = 22/7)",
+      "options": [
+        {"option_text": "1540 cm³ (correct: V = πr²h = 22/7 × 49 × 10 = 22 × 7 × 10 = 1540 cm³ ✓)", "is_correct": true},
+        {"option_text": "770 cm³ (half of correct answer — forgot height or halved wrongly)", "is_correct": false},
+        {"option_text": "440 cm³ (curved surface area = 2πrh = 2×22/7×7×10 = 440 — confused volume with CSA)", "is_correct": false},
+        {"option_text": "3080 cm³ (doubled the answer)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Volume of cylinder = πr²h = (22/7) × 7² × 10 = (22/7) × 49 × 10 = 22 × 7 × 10 = 1540 cm³. **Short Trick:** r=7 cancels the 7 in 22/7: (22 × 7 × h) = 22 × 7 × 10 = 1540.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The total surface area of a cuboid is 2(lb + bh + lh). Find the TSA of a cuboid with l=8 cm, b=5 cm, h=3 cm.",
+      "options": [
+        {"option_text": "120 cm² (lbh=120 — volume, not surface area)", "is_correct": false},
+        {"option_text": "158 cm² (wrong)", "is_correct": false},
+        {"option_text": "158 cm² — confirming: 2(8×5+5×3+8×3)=2(40+15+24)=2(79)=158 cm² ✓", "is_correct": false},
+        {"option_text": "158 cm² (correct: 2(lb+bh+lh)=2(40+15+24)=2×79=158 cm² ✓)", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. TSA of cuboid = 2(lb+bh+lh) = 2(8×5 + 5×3 + 8×3) = 2(40+15+24) = 2×79 = 158 cm². Volume = lbh = 8×5×3 = 120 cm³ (a common distractor in TSA questions).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A sphere has radius 6 cm. What is its volume? (Use π = 22/7)",
+      "options": [
+        {"option_text": "288π cm³ (without substituting π — but the question asks with π=22/7)", "is_correct": false},
+        {"option_text": "904.78 cm³ (using π=3.14159 — but question specifies 22/7)", "is_correct": false},
+        {"option_text": "905.14 cm³ (correct: V=(4/3)πr³=(4/3)×(22/7)×216=(4×22×216)/(3×7)=19008/21=905.14 cm³ ✓)", "is_correct": true},
+        {"option_text": "452.57 cm³ (half the correct value)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Volume of sphere = (4/3)πr³ = (4/3)×(22/7)×6³ = (4/3)×(22/7)×216 = (4×22×216)/(21) = 19008/21 ≈ 905.14 cm³. **Short Trick:** For r=6: (4/3)×(22/7)×216 = (88×216)/21 = 19008/21 ≈ 905.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If the radius of a sphere is doubled, by what factor does its volume increase?",
+      "options": [
+        {"option_text": "2 (linear scaling — wrong)", "is_correct": false},
+        {"option_text": "4 (area scaling — wrong)", "is_correct": false},
+        {"option_text": "6 (wrong)", "is_correct": false},
+        {"option_text": "8 (correct: V∝r³; radius doubles → volume = 2³ = 8 times ✓)", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. Volume of sphere = (4/3)πr³. When radius doubles: new volume = (4/3)π(2r)³ = (4/3)π×8r³ = 8 × original volume. Volume scales as the cube of the linear dimension. Factor = 2³ = 8.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A cone has base radius 3 cm and height 4 cm. What is its slant height?",
+      "options": [
+        {"option_text": "5 cm (correct: l=√(r²+h²)=√(9+16)=√25=5 cm — a 3-4-5 Pythagorean triple ✓)", "is_correct": true},
+        {"option_text": "7 cm (3+4=7 — arithmetic addition, not Pythagorean)", "is_correct": false},
+        {"option_text": "√7 cm (wrong)", "is_correct": false},
+        {"option_text": "√43 cm (wrong: √(3²+4²)=√25=5, not √43)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Slant height l = √(r²+h²) = √(3²+4²) = √(9+16) = √25 = 5 cm. This is the classic 3-4-5 Pythagorean triple. Memorise these triples: 3-4-5, 5-12-13, 8-15-17, 7-24-25.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A metallic cube of side 4 cm is melted and recast into a cylinder of height 8 cm. What is the radius of the cylinder? (Use π = 22/7)",
+      "options": [
+        {"option_text": "√(7/11) cm (correct: cube vol=64; πr²h=64; r²=64/(8×22/7)=64×7/176=28/11; r=√(28/11)≈1.596 cm ✓)", "is_correct": false},
+        {"option_text": "√(28/11) cm (correct: r²=64×7/176=448/176=28/11; r=√(28/11) cm ✓)", "is_correct": true},
+        {"option_text": "2 cm (wrong: would give cylinder vol=4×22/7×8 — not 64)", "is_correct": false},
+        {"option_text": "√3 cm (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Volume conserved: cube vol = πr²h. 4³ = (22/7)×r²×8. 64 = (176/7)×r². r² = 64×7/176 = 448/176 = 28/11. r = √(28/11) cm. This tests the key principle: volume is preserved when metal is recast.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A hollow cylindrical pipe is 14 m long. Its outer radius is 5 cm and inner radius is 4 cm. Find the volume of the metal used (in cm³). (Use π = 22/7)",
+      "options": [
+        {"option_text": "3960 cm³ (wrong: π×(25−16)×1400=22/7×9×1400=22×9×200=39600 — off by factor 10)", "is_correct": false},
+        {"option_text": "39600 cm³ (correct: V=π(R²−r²)×h=(22/7)×(25−16)×1400=(22/7)×9×1400=22×9×200=39600 cm³ ✓)", "is_correct": true},
+        {"option_text": "3080 cm³ (wrong)", "is_correct": false},
+        {"option_text": "19800 cm³ (wrong: half the correct answer)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Length = 14 m = 1400 cm. Volume of hollow cylinder = π(R²−r²)×h = (22/7)×(5²−4²)×1400 = (22/7)×9×1400 = 22×9×200 = 39600 cm³. Key: convert units consistently (14m = 1400 cm); use π(R²−r²) for hollow cross-section.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A hemispherical bowl has inner radius 6 cm. How many litres of water can it hold? (1 L = 1000 cm³, π = 22/7)",
+      "options": [
+        {"option_text": "0.452 L (correct: V=(2/3)πr³=(2/3)×(22/7)×216=(2×22×216)/21=9504/21=452.57 cm³≈0.453 L ✓)", "is_correct": true},
+        {"option_text": "0.905 L (sphere volume — hemisphere is half)", "is_correct": false},
+        {"option_text": "4.52 L (off by factor of 10)", "is_correct": false},
+        {"option_text": "1.357 L (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Volume of hemisphere = (2/3)πr³ = (2/3)×(22/7)×216 = (2×22×216)/21 = 9504/21 ≈ 452.57 cm³. In litres: 452.57/1000 ≈ 0.453 L ≈ 0.452 L. Hemisphere = half sphere; use (2/3)πr³ instead of (4/3)πr³.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The curved surface area of a cone with radius 7 cm and slant height 10 cm is:",
+      "options": [
+        {"option_text": "220 cm² (correct: CSA=πrl=(22/7)×7×10=22×10=220 cm² ✓)", "is_correct": true},
+        {"option_text": "440 cm² (total surface area=πrl+πr²=220+154=374 — neither 220 nor 440)", "is_correct": false},
+        {"option_text": "154 cm² (base area only: πr²=(22/7)×49=154 — not CSA)", "is_correct": false},
+        {"option_text": "374 cm² (total surface area: 220+154=374 — that's TSA, not CSA)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Curved Surface Area of cone = πrl = (22/7) × 7 × 10 = 22 × 10 = 220 cm². Note: r=7 cancels the 7 in denominator. Total Surface Area (TSA) = πrl + πr² = 220 + 154 = 374 cm². CSA ≠ TSA.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Water flows through a pipe of diameter 3.5 cm at 2 m/s. How many litres flow per minute? (π = 22/7; 1 L = 1000 cm³)",
+      "options": [
+        {"option_text": "11.55 L/min (correct: r=1.75; area=πr²=(22/7)×3.0625≈9.625 cm²; flow/s=9.625×200=1925 cm³/s; per minute=1925×60=115500 cm³=115.5 L — wait, let me check: area=(22/7)×(3.5/2)²=(22/7)×(1.75)²=(22/7)×3.0625=22×0.4375=9.625 cm²; speed=2 m/s=200 cm/s; vol/s=9.625×200=1925 cm³/s; vol/min=115500 cm³=115.5 L)", "is_correct": false},
+        {"option_text": "115.5 L/min (correct: πr²×v×60=(22/7)×(1.75)²×200×60=9.625×12000=115500 cm³=115.5 L ✓)", "is_correct": true},
+        {"option_text": "57.75 L/min (half of correct — wrong)", "is_correct": false},
+        {"option_text": "1.925 L/min (volume per second instead of per minute)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. r = 3.5/2 = 1.75 cm. Cross-section area = π×(1.75)² = (22/7)×3.0625 = 9.625 cm². Speed = 2 m/s = 200 cm/s. Volume per second = 9.625×200 = 1925 cm³/s. Per minute = 1925×60 = 115500 cm³ = 115.5 litres.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A rectangular tank 10 m long, 5 m wide, and 3 m deep is filled with water. If water is pumped out at 20 litres/second, how many minutes does it take to empty the tank? (1 m³ = 1000 L)",
+      "options": [
+        {"option_text": "75 minutes (correct: volume=10×5×3=150 m³=150000 L; time=150000/20=7500 s=125 min — wait: 7500/60=125 min)", "is_correct": false},
+        {"option_text": "125 minutes (correct: 150 m³=150000 L; rate=20 L/s; time=150000/20=7500 s=7500/60=125 min ✓)", "is_correct": true},
+        {"option_text": "250 minutes (double the correct answer)", "is_correct": false},
+        {"option_text": "62.5 minutes (wrong: used 10 L/s instead of 20)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Volume = 10×5×3 = 150 m³ = 150,000 litres. Pump rate = 20 L/s. Time = 150000/20 = 7500 seconds = 7500/60 = 125 minutes.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

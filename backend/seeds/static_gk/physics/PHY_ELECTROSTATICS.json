@@ -213,6 +213,216 @@
       "generator_tag": "auto-seed-2026-06-19",
       "generated_at": "2026-06-19T13:21:09+00:00",
       "id": "sgk_PHY_ELECTROSTATICS_00007"
+    },
+    {
+      "stem": "The direction of the electric field at a point in space is defined as the direction of force on which of the following test objects placed at that point?",
+      "options": [
+        {
+          "option_text": "A small positive test charge placed at rest at that point",
+          "is_correct": true
+        },
+        {
+          "option_text": "A small negative test charge placed at rest at that point",
+          "is_correct": false
+        },
+        {
+          "option_text": "A neutral conducting sphere placed at rest at that point",
+          "is_correct": false
+        },
+        {
+          "option_text": "A current-carrying wire segment placed at rest at that point",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. By universal convention, the electric field direction at any point equals the direction of force on a small positive test charge placed there. Option B is wrong — a negative charge experiences force opposite to the field direction, not along it. Option C is wrong because a neutral conductor only polarises in a field; there is no net force on it in a uniform field. Option D is wrong because a current-carrying wire responds to magnetic fields (Lorentz force), not static electric fields.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:56+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00008"
+    },
+    {
+      "stem": "A person sitting inside a metal-bodied car during a lightning storm is relatively safe even without a grounding wire connected to earth. This is best explained by:",
+      "options": [
+        {
+          "option_text": "Rubber tyres insulating the car body completely from ground charges",
+          "is_correct": false
+        },
+        {
+          "option_text": "The metal body acting as a Faraday cage, making interior field zero",
+          "is_correct": true
+        },
+        {
+          "option_text": "Car glass windows deflecting the electrical discharge sideways safely",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lightning preferring to strike taller trees rather than low vehicles",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. A closed metallic enclosure (Faraday cage) redistributes induced charges on its outer surface so that the net electric field inside the cavity is zero, shielding occupants. Option A is a popular misconception — the rubber tyres play no role in this shielding; the effect is purely due to charge redistribution on the metal body. Options C and D describe secondary physical observations but are not the scientific mechanism for passenger safety.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:56+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00009"
+    },
+    {
+      "stem": "An infinite plane sheet carries a uniform surface charge density σ. How does the electric field E due to this sheet vary with perpendicular distance r from it?",
+      "options": [
+        {
+          "option_text": "E decreases as 1/r (inverse-linear relationship with distance from sheet)",
+          "is_correct": false
+        },
+        {
+          "option_text": "E decreases as 1/r² (inverse-square law just like a point charge)",
+          "is_correct": false
+        },
+        {
+          "option_text": "E remains constant and equals σ/2ε₀ regardless of distance from sheet",
+          "is_correct": true
+        },
+        {
+          "option_text": "E decreases exponentially with increasing perpendicular distance from sheet",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Applying Gauss's law with a cylindrical pillbox surface of cross-section area A, flux through both flat caps = E·2A and enclosed charge = σA, giving E = σ/2ε₀ — completely independent of r. Option B (1/r²) is the point-charge law. Option A (1/r) applies to an infinite line charge. The distance-independence arises because as r increases, more charge elements contribute, and their perpendicular components exactly compensate the geometric spreading of field lines.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:56+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00010"
+    },
+    {
+      "stem": "An electric dipole of moment p is placed at angle θ to a uniform external electric field E. What does the dipole experience?",
+      "options": [
+        {
+          "option_text": "A net translational force F = pE directed along the external field lines",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zero net force but a restoring torque τ = pE sinθ tending to align it with E",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both a net translational force and a torque each proportional to pE cosθ",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zero torque when θ < 90° and maximum torque only at θ = 0° orientation",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. In a uniform field, forces on +q and −q are equal, opposite, and collinear with the field, so net translational force = 0. However, they form a couple producing torque τ = pE sinθ that tends to align p with E. Option A is wrong — translational force (F = p·∇E) arises only in a non-uniform field. Option D has the condition inverted: torque is maximum at θ = 90° and zero at θ = 0° (aligned) or θ = 180° (anti-aligned).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:56+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00011"
+    },
+    {
+      "stem": "The electric potential V decreases by 40 V over a distance of 0.2 m along the field direction in a uniform field region. What is the magnitude of the electric field E in this region?",
+      "options": [
+        {
+          "option_text": "8 V/m, obtained by multiplying V = 40 and distance d = 0.2 directly",
+          "is_correct": false
+        },
+        {
+          "option_text": "200 V/m, from E = |ΔV/Δr| = 40 ÷ 0.2 (negative-gradient relation)",
+          "is_correct": true
+        },
+        {
+          "option_text": "0.005 V/m, from inverting the ratio as Δr/ΔV = 0.2 ÷ 40 instead",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 V/m, mistakenly using 40 ÷ 2 instead of the correct 40 ÷ 0.2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The relation E = −dV/dr means |E| = |ΔV/Δr| = 40 ÷ 0.2 = 200 V/m. Option A incorrectly multiplies V × d instead of dividing (8 V/m). Option C inverts numerator and denominator. Option D treats 0.2 m as 2 m, a decimal-place slip that gives 20 V/m. The negative sign in E = −dV/dr confirms the field points from high to low potential; the magnitude is 200 V/m.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:56+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00012"
+    },
+    {
+      "stem": "For a short electric dipole of moment p, the field on its axial line at distance r is E_ax and on its equatorial line at the same distance r is E_eq. The ratio E_ax : E_eq is:",
+      "options": [
+        {
+          "option_text": "1 : 1, since both axial and equatorial formulas share the same r³ denominator",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 2, since equatorial field gains a vector projection factor of 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 : 1, since the axial field formula carries an additional factor of 2",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 : 1, since axial distance appears squared while equatorial distance is linear",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. For a short dipole: E_ax = 2kp/r³ and E_eq = kp/r³, giving ratio 2 : 1. The extra factor of 2 in E_ax arises because on the axis, both the +q and −q field components point in the same direction (toward −q end) and add constructively. On the equatorial line, only the axial (antiparallel) components of each charge's field survive — the radial components cancel — halving the resultant. Option D (4:1) is the ratio that would arise only if one compared fields at distances r and r/2, not at the same r.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:56+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00013"
+    },
+    {
+      "stem": "A point charge +Q is placed exactly at the geometric centre of a closed cube of side a. The electric flux passing through exactly ONE face of this cube is:",
+      "options": [
+        {
+          "option_text": "Q/ε₀, since all flux exits the cube and any one face captures it entirely",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q/(6ε₀), since symmetry divides total flux equally among all six faces",
+          "is_correct": true
+        },
+        {
+          "option_text": "Q/(4πε₀a²), since flux depends on face area and local field magnitude",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zero, since equal flux must enter and exit through every individual face",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. By Gauss's law the total outward flux through the entire closed cube = Q/ε₀. Since the charge sits at the exact geometric centre, all 6 faces are completely equivalent by symmetry, so each face receives Q/(6ε₀). Option A is the total flux through all 6 faces, not one. Option C uses the point-charge field formula E = kQ/a² and multiplies by area a² to get Q/(4πε₀), which does not equal the actual flux through one face because the field is not perpendicular or uniform across a flat face at distance a/2 — a correct integral over the full face is needed, confirming Q/(6ε₀). Option D confuses the concept of flux entering vs. exiting with net enclosed flux.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:56+00:00",
+      "id": "sgk_PHY_ELECTROSTATICS_00014"
     }
   ]
 }

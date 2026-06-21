@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_PROFIT_LOSS_ADV",
+  "subject": "Quantitative Aptitude",
+  "topic": "Profit and Loss — Advanced Problems",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "A trader sells two items for ₹990 each. On one he gains 10% and on the other he loses 10%. What is the net profit or loss?",
+      "options": [
+        {"option_text": "No profit, no loss (wrong: equal % gain and loss on equal SP always results in a net loss)", "is_correct": false},
+        {"option_text": "1% loss (correct: net loss% = (common %/10)² = (10/10)² = 1% ✓; or calculate directly)", "is_correct": true},
+        {"option_text": "2% profit (wrong: there's always a net loss in this scenario)", "is_correct": false},
+        {"option_text": "0.5% loss (wrong: the formula gives exactly 1% loss)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. CP1 (gain 10%) = 990/1.1 = ₹900. CP2 (loss 10%) = 990/0.9 = ₹1100. Total CP = 900+1100 = ₹2000. Total SP = 990+990 = ₹1980. Net loss = 2000−1980 = ₹20. Loss% = 20/2000×100 = 1%. **Formula:** When same items sold at same SP with +x% and −x%: net loss% = x²/100 = 10²/100 = 1%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A fruit seller buys bananas at 6 for ₹5 and sells them at 5 for ₹6. What is the profit percentage?",
+      "options": [
+        {"option_text": "30% (wrong: CP per banana=5/6; SP per banana=6/5; profit per banana=6/5-5/6=(36-25)/30=11/30; profit%=11/30÷5/6×100=11/30×6/5×100=66/25×100... wait let me redo: profit%=(SP-CP)/CP×100=(6/5-5/6)/(5/6)×100=(36/30-25/30)/(25/30)×100=(11/30)/(25/30)×100=11/25×100=44%)", "is_correct": false},
+        {"option_text": "44% (correct: CP per banana=5/6; SP per banana=6/5; profit%=(6/5-5/6)/(5/6)×100=(11/30÷5/6)×100=44% ✓)", "is_correct": true},
+        {"option_text": "40% (wrong: close but not the exact answer)", "is_correct": false},
+        {"option_text": "20% (wrong: doesn't match the calculation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. CP per banana = ₹5/6. SP per banana = ₹6/5. Profit% = (SP−CP)/CP × 100 = (6/5 − 5/6)/(5/6) × 100 = ((36−25)/30)/(5/6) × 100 = (11/30 × 6/5) × 100 = 66/25 × 100... Wait: (11/30)÷(5/6) = 11/30 × 6/5 = 66/150 = 11/25. 11/25 × 100 = 44%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A shopkeeper uses a faulty weighing scale that reads 900g as 1kg. If he buys and sells at the same rate (CP=SP), what is his profit percentage?",
+      "options": [
+        {"option_text": "9% (wrong: he gives 900g but charges for 1kg; profit%=(1000-900)/900×100=11.11%)", "is_correct": false},
+        {"option_text": "11.11% (correct: he gives 900g but charges 1kg price; CP=900g×price/g; SP=1000g×price/g; profit%=100/900×100=11.11% ✓)", "is_correct": true},
+        {"option_text": "10% (wrong: 10% would mean giving 909g for 1kg price; but he gives 900g)", "is_correct": false},
+        {"option_text": "12.5% (wrong: 12.5% would mean giving 889g)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. The shopkeeper gives 900g but takes money for 1000g (1kg). Profit% = (True weight − False weight)/False weight × 100 = (1000−900)/900 × 100 = 100/900 × 100 = 11.11%. The formula: profit% = error/(true weight−error) × 100 = 100/900×100.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "An article is sold at a 20% profit. If it had been sold for ₹40 more, the profit would have been 30%. Find the cost price.",
+      "options": [
+        {"option_text": "₹360 (wrong: let CP=x; SP1=1.2x; SP2=1.3x; SP2-SP1=0.1x=40; x=400)", "is_correct": false},
+        {"option_text": "₹400 (correct: 0.1×CP=40; CP=₹400 ✓)", "is_correct": true},
+        {"option_text": "₹450 (wrong: 0.1×450=45≠40)", "is_correct": false},
+        {"option_text": "₹350 (wrong: 0.1×350=35≠40)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. SP at 20% = 1.2×CP. SP at 30% = 1.3×CP. Difference = 0.1×CP = ₹40. CP = ₹400. Verify: SP1=₹480 (20% profit ✓); SP2=₹520 (30% profit ✓); 520−480=₹40 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "By selling 12 oranges for ₹1, a man loses 20%. How many oranges should be sold for ₹1 to gain 20%?",
+      "options": [
+        {"option_text": "8 (correct: 12 oranges for ₹1 = loss 20% → CP of 12 = ₹1/0.8=₹1.25 → CP per orange=1.25/12; to gain 20%, SP per orange=1.25/12×1.2=1.5/12=1/8; so 8 oranges for ₹1 ✓)", "is_correct": true},
+        {"option_text": "10 (wrong: CP per orange=1.25/12; to sell 10 for ₹1=₹0.1/orange; profit%=(0.1-1.25/12)/(1.25/12)×100=(1.2-1.25)×...)", "is_correct": false},
+        {"option_text": "6 (wrong: 6 oranges for ₹1 would give too much profit)", "is_correct": false},
+        {"option_text": "9 (wrong: doesn't match the calculation)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Selling 12 oranges for ₹1 = 20% loss → SP/CP = 0.8 → CP = 1/0.8 = ₹1.25 for 12 oranges. For 20% gain: SP = 1.25 × 1.2 = ₹1.50 for 12 oranges → ₹1 buys 12/1.5 = 8 oranges. So sell 8 oranges for ₹1 to gain 20%. **Short Trick:** n₂/n₁ = (100−loss)/(100+gain) = 80/120 = 2/3; n₂ = 12×2/3 = 8.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The cost price of 20 articles equals the selling price of 16 articles. Find the profit or loss percentage.",
+      "options": [
+        {"option_text": "20% profit (wrong: CP of 20 = SP of 16; CP per article:SP per article=16:20=4:5; profit=(5-4)/4×100=25%)", "is_correct": false},
+        {"option_text": "25% profit (correct: CP×20=SP×16 → SP/CP=20/16=5/4; profit%=1/4×100=25% ✓)", "is_correct": true},
+        {"option_text": "30% profit (wrong: doesn't match the ratio)", "is_correct": false},
+        {"option_text": "16% loss (wrong: SP>CP here; it's a profit, not a loss)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. CP of 20 = SP of 16. Let CP per article = x. SP per article = 20x/16 = 5x/4. Profit per article = 5x/4 − x = x/4. Profit% = (x/4)/x × 100 = 25%. **Short Trick:** CP:SP = 16:20 = 4:5. Profit% = (5−4)/4 × 100 = 25%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A man sold a watch at a 15% loss. If he had sold it for ₹57 more, he would have made a 4% profit. Find the cost price of the watch.",
+      "options": [
+        {"option_text": "₹290 (wrong: let CP=x; SP1=0.85x; SP2=1.04x; SP2-SP1=0.19x=57; x=300)", "is_correct": false},
+        {"option_text": "₹300 (correct: 0.19×CP=57; CP=₹300 ✓)", "is_correct": true},
+        {"option_text": "₹320 (wrong: 0.19×320=60.8≠57)", "is_correct": false},
+        {"option_text": "₹280 (wrong: 0.19×280=53.2≠57)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. SP at 15% loss = 0.85×CP. SP at 4% profit = 1.04×CP. Difference = (1.04−0.85)×CP = 0.19×CP = ₹57. CP = 57/0.19 = ₹300. Verify: 0.85×300=₹255 (SP at loss); 1.04×300=₹312 (SP at profit); 312−255=₹57 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A person bought a mobile for ₹8,000 and sold it for ₹10,000. He then bought another phone with that ₹10,000 and sold it for ₹12,000. What is his overall profit percentage (on total investment)?",
+      "options": [
+        {"option_text": "25% (wrong: total invested=8000; total received=12000; but he reinvested; net profit=12000-8000=4000; profit%=4000/8000×100=50%)", "is_correct": false},
+        {"option_text": "50% (correct: invested ₹8,000; ultimately received ₹12,000; profit=₹4,000; profit%=4000/8000×100=50% ✓)", "is_correct": true},
+        {"option_text": "40% (wrong: total profit is ₹4000 on ₹8000 = 50%)", "is_correct": false},
+        {"option_text": "37.5% (wrong: doesn't match calculation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Initial investment = ₹8,000. Final amount received = ₹12,000. Overall profit = ₹4,000. Profit% = 4000/8000 × 100 = 50%. The intermediate step (₹10,000) is just a reinvestment; the overall profit on the ORIGINAL investment is 50%. Note: individually, first transaction was 25% profit and second was 20% profit — but on overall original investment it's 50%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If the selling price is doubled, the profit triples. Find the current profit percentage.",
+      "options": [
+        {"option_text": "50% (wrong: let CP=100; SP=100+P; 2SP=100+3P; 2(100+P)=100+3P; 200+2P=100+3P; P=100; profit%=100%)", "is_correct": false},
+        {"option_text": "100% (correct: let CP=100; profit=P; if SP doubled: 2SP=100+3P; 2(100+P)=100+3P; 200+2P=100+3P; P=100; profit%=100% ✓)", "is_correct": true},
+        {"option_text": "75% (wrong: doesn't satisfy the equation)", "is_correct": false},
+        {"option_text": "200% (wrong: 200% doesn't fit the equation)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let CP=100, profit=P, SP=100+P. If SP is doubled: new SP=2(100+P). New profit=3P. 2(100+P)=100+3P. 200+2P=100+3P. P=100. Profit% = 100/100 × 100 = 100%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A trader marks his goods 50% above cost price but gives a 20% discount. What is his profit percentage?",
+      "options": [
+        {"option_text": "30% (wrong: 1.5×0.8=1.2; profit=20%, not 30%)", "is_correct": false},
+        {"option_text": "20% (correct: CP=100; MP=150; SP=150×0.8=120; profit=20% ✓)", "is_correct": true},
+        {"option_text": "25% (wrong: 125% of CP would require different calculation)", "is_correct": false},
+        {"option_text": "10% (wrong: 110% of CP would require bigger discount)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. CP=100; Marked Price (MP) = 150 (50% above CP). Discount = 20% on MP → SP = 150×0.8 = 120. Profit = SP−CP = 20. Profit% = 20%. **Formula:** Profit% = (1+mark-up/100)×(1−discount/100)−1 = 1.5×0.8−1 = 1.2−1 = 0.2 = 20%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_CALENDARS",
+  "subject": "Quantitative Aptitude",
+  "topic": "Calendars — Days and Dates",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "How many odd days are there in a leap year?",
+      "options": [
+        {"option_text": "1 (wrong: a normal year has 1 odd day; a leap year has 2 odd days)", "is_correct": false},
+        {"option_text": "2 (correct: a leap year has 366 days = 52 weeks + 2 days; 2 odd days ✓)", "is_correct": true},
+        {"option_text": "0 (wrong: a year with no odd days would be exactly divisible by 7)", "is_correct": false},
+        {"option_text": "3 (wrong: 3 odd days would mean 52×7+3=367 days; not a leap year)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Normal year = 365 days = 52×7+1 → 1 odd day. Leap year = 366 days = 52×7+2 → 2 odd days. 'Odd days' = extra days beyond complete weeks. These are key to finding the day of the week.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If today is Monday, what day will it be after 100 days?",
+      "options": [
+        {"option_text": "Friday (wrong: 100 = 14×7+2; so 2 days after Monday = Wednesday)", "is_correct": false},
+        {"option_text": "Wednesday (correct: 100 days = 14 complete weeks + 2 extra days; Monday + 2 = Wednesday ✓)", "is_correct": true},
+        {"option_text": "Sunday (wrong: that would be 6 days later)", "is_correct": false},
+        {"option_text": "Tuesday (wrong: that would be 1 day later)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 100 ÷ 7 = 14 remainder 2. So 100 days from Monday = Monday + 2 days = Wednesday. **Short Trick:** Divide by 7, take the remainder. Add remainder to the starting day: Mon(1)+2 = Wed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "January 1, 2020 was a Wednesday. What day was January 1, 2021?",
+      "options": [
+        {"option_text": "Wednesday (wrong: 2020 is a leap year — 366 days = 52 weeks + 2 odd days; next year starts 2 days later)", "is_correct": false},
+        {"option_text": "Thursday (wrong: Thursday would mean 1 odd day — that's a normal year; but 2020 is a leap year)", "is_correct": false},
+        {"option_text": "Friday (correct: 2020 is a leap year; 366 days = 52 weeks + 2 odd days; Wednesday + 2 = Friday ✓)", "is_correct": true},
+        {"option_text": "Saturday (wrong: Saturday would need 3 odd days)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 2020 is a leap year (divisible by 4, and by 400 check: 2020÷4=505 exactly ✓). Leap year = 366 days = 52 weeks + 2 odd days. Jan 1, 2020 = Wednesday. Jan 1, 2021 = Wednesday + 2 = Friday.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Which of these years is NOT a leap year?",
+      "options": [
+        {"option_text": "1600 (wrong: 1600 is a leap year — divisible by 400)", "is_correct": false},
+        {"option_text": "2000 (wrong: 2000 is a leap year — divisible by 400)", "is_correct": false},
+        {"option_text": "1900 (correct: 1900 is NOT a leap year — divisible by 100 but NOT by 400 ✓)", "is_correct": true},
+        {"option_text": "2024 (wrong: 2024 is a leap year — divisible by 4 and not a century year)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. LEAP YEAR RULES: (1) Divisible by 4 = leap year. (2) EXCEPTION: Divisible by 100 but NOT by 400 = NOT a leap year. 1900 is divisible by 100 but NOT by 400 → NOT a leap year. 1600, 2000, 2400 are divisible by 400 → ARE leap years. 2024 ÷ 4 = 506 (no remainder) → leap year.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "How many Sundays are there in the month of February 2021 (not a leap year)?",
+      "options": [
+        {"option_text": "5 (wrong: February 2021 has 28 days; max 4 complete weeks; can have 4 Sundays at most)", "is_correct": false},
+        {"option_text": "4 (correct: Feb 2021 has 28 days = exactly 4 weeks; each day of the week appears exactly 4 times ✓)", "is_correct": true},
+        {"option_text": "3 (wrong: 28 days = 4 complete weeks; all days appear exactly 4 times)", "is_correct": false},
+        {"option_text": "Depends on starting day (wrong: since 28 is exactly divisible by 7, all days appear exactly 4 times regardless of start)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. February in a non-leap year has exactly 28 days = 4 complete weeks (28÷7=4 with no remainder). Every day of the week appears EXACTLY 4 times. So there are exactly 4 Sundays. (In a leap year, February has 29 days = 4 weeks + 1 day, giving some days 5 occurrences.)",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If 15 March 2023 was a Wednesday, what day was 15 March 2022?",
+      "options": [
+        {"option_text": "Wednesday (wrong: 2022 is not a leap year; going back 1 year = going back 1 odd day; Wednesday - 1 = Tuesday)", "is_correct": false},
+        {"option_text": "Tuesday (correct: 2022 was a normal year (365 days=1 odd day); going back 1 year from Wednesday = Wednesday−1=Tuesday ✓)", "is_correct": true},
+        {"option_text": "Thursday (wrong: Thursday would be going forward 1 odd day)", "is_correct": false},
+        {"option_text": "Monday (wrong: that would be going back 2 odd days = a leap year)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 2022 is a normal year (365 days = 1 odd day). 15 March 2023 is Wednesday. Going BACK 1 year (through 2022's 365 days): subtract 1 odd day. Wednesday − 1 = Tuesday. (Going forward through a year adds odd days; going backward subtracts them.)",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A month starts on a Friday. What is the maximum number of Sundays it can have?",
+      "options": [
+        {"option_text": "4 (wrong: if month starts on Friday and has 31 days, max Sundays = 5 — on days 2,9,16,23,30 if month is 31 days)", "is_correct": false},
+        {"option_text": "5 (correct: if month has 31 days and starts Friday: first Sunday=day 2; Sundays on 2,9,16,23,30=5 Sundays ✓)", "is_correct": true},
+        {"option_text": "6 (wrong: a month can never have 6 Sundays as max days in a month=31 and 6 Sundays needs 42 days)", "is_correct": false},
+        {"option_text": "3 (wrong: even a 28-day month starting Sunday would have 4 Sundays)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. If the month starts on Friday (day 1), the first Sunday is day 3 (since Friday+2=Sunday). Sundays: 3, 10, 17, 24, 31 — but day 31 exists only if the month has 31 days → 5 Sundays. But question says starts on FRIDAY: day 1=Fri, day 2=Sat, day 3=Sun — first Sunday is day 3. If month has 31 days: Sundays on 3,10,17,24,31=5. Maximum = 5.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Today is Thursday. A project deadline is in 50 days. On what day is the deadline?",
+      "options": [
+        {"option_text": "Wednesday (wrong: 50÷7=7 remainder 1; Thursday+1=Friday)", "is_correct": false},
+        {"option_text": "Friday (correct: 50÷7=7 R1; Thursday+1 day=Friday ✓)", "is_correct": true},
+        {"option_text": "Saturday (wrong: Thursday+2=Saturday; need remainder 2 for that)", "is_correct": false},
+        {"option_text": "Monday (wrong: Thursday+4=Monday; need remainder 4)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 50 ÷ 7 = 7 remainder 1. Add 1 day to Thursday: Friday. **Quick reference:** Day codes (0=Sun, 1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri, 6=Sat). Thursday(4)+1=5=Friday.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The last day of February in a leap year falls on a Saturday. What day does March 1 of that year fall on?",
+      "options": [
+        {"option_text": "Saturday (wrong: the day AFTER Saturday is Sunday)", "is_correct": false},
+        {"option_text": "Sunday (correct: Feb 29 is Saturday; Feb 29+1 day = March 1 = Sunday ✓)", "is_correct": true},
+        {"option_text": "Friday (wrong: Friday would be before the last day of February)", "is_correct": false},
+        {"option_text": "Monday (wrong: Monday would be 2 days after Saturday)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. In a leap year, February has 29 days. If Feb 29 (last day of February) is Saturday, then March 1 is the very next day = Sunday. Simple consecutive day problem.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "How many total odd days are there in 400 years?",
+      "options": [
+        {"option_text": "97 (wrong: the calculation for odd days in 400 years = 0; 400 years form a complete cycle of 7 days)",  "is_correct": false},
+        {"option_text": "0 (correct: 400 years form a complete cycle; 400 years = exactly 20,871 weeks; 0 odd days ✓)", "is_correct": true},
+        {"option_text": "1 (wrong: 1 odd day would mean the 400-year calendar shifts by 1 day; it doesn't — the Gregorian calendar repeats exactly)", "is_correct": false},
+        {"option_text": "5 (wrong: no basis for 5 odd days in 400 years)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 400 years in the Gregorian calendar = 97 leap years + 303 normal years. Total days = (97×366)+(303×365) = 35,502+110,595 = 146,097 = 7×20,871 exactly. 146,097÷7=20,871 with remainder 0. So 400 years = exactly 20,871 weeks with 0 odd days. This is why the Gregorian calendar repeats every 400 years.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

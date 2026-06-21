@@ -213,6 +213,216 @@
       "generator_tag": "auto-seed-2026-06-19",
       "generated_at": "2026-06-19T13:25:25+00:00",
       "id": "sgk_PHY_DUAL_NATURE_00007"
+    },
+    {
+      "stem": "In nuclear fission, a heavy nucleus splits and releases tremendous energy. What is the fundamental source of this released energy?",
+      "options": [
+        {
+          "option_text": "Kinetic energy of the neutrons that initiate the fission reaction",
+          "is_correct": false
+        },
+        {
+          "option_text": "Conversion of mass defect into energy, as described by E = mc²",
+          "is_correct": true
+        },
+        {
+          "option_text": "Release of chemical bond energy stored between nucleons inside",
+          "is_correct": false
+        },
+        {
+          "option_text": "Electromagnetic repulsion between protons in the original nucleus",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. The combined mass of the fission products is always LESS than the original heavy nucleus — this mass deficit (Δm) is converted into energy via E = mc². Option C is a classic misconception: chemical bonds involve electrons, whereas nuclear reactions involve nuclear (strong) forces and are millions of times more energetic. Option D (proton repulsion) is actually the trigger that causes the nucleus to split after neutron capture, not the energy source itself.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:07:38+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00008"
+    },
+    {
+      "stem": "Which of the following correctly identifies the SI unit of radioactivity and its defining quantity?",
+      "options": [
+        {
+          "option_text": "Curie (Ci), defined as 3.7 × 10¹⁰ nuclear disintegrations per second",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rutherford (rd), defined as exactly one million disintegrations per second",
+          "is_correct": false
+        },
+        {
+          "option_text": "Becquerel (Bq), equal to exactly one nuclear disintegration per second",
+          "is_correct": true
+        },
+        {
+          "option_text": "Roentgen (R), used to quantify ionising radiation exposure in air dose",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. The Becquerel (Bq) is the SI unit of radioactivity, named after Henri Becquerel who discovered radioactivity in 1896; 1 Bq = 1 disintegration per second. The Curie (Option A) is the older CGS unit still used in medical contexts and equals 3.7 × 10¹⁰ Bq. The Roentgen (Option D) measures exposure dose of X-rays or gamma rays in air, not the activity of a radioactive source — a common mix-up in exams.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:07:38+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00009"
+    },
+    {
+      "stem": "A proton and an alpha particle are both accelerated from rest through the same potential difference V. What is the ratio of their de Broglie wavelengths (λ_proton : λ_alpha)?",
+      "options": [
+        {
+          "option_text": "1 : 1 (equal wavelengths, since both gain the identical kinetic energy qV)",
+          "is_correct": false
+        },
+        {
+          "option_text": "√2 : 1 (only the mass ratio 1:4 is factored in; charge difference ignored)",
+          "is_correct": false
+        },
+        {
+          "option_text": "2√2 : 1 (mass ratio 1:4 and charge ratio 1:2 both correctly factored in)",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 : 1 (only the charge ratio 1:2 is accounted for; mass difference ignored)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Using λ = h/√(2mqV): λ_p = h/√(2m_p·e·V) and λ_α = h/√(2 × 4m_p × 2e × V) = h/√(16m_p·eV). Ratio λ_p/λ_α = √(16/2) = √8 = 2√2 ≈ 2.83. Option A is wrong because although both gain KE = qV, the alpha's charge (2e) means it gains twice the energy of the proton for the same V. Option B accounts only for mass (√4 = 2) but ignores charge, giving √(4/1) = 2 instead of √(4 × 2/1) = 2√2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:07:38+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00010"
+    },
+    {
+      "stem": "An electron in a hydrogen atom undergoes four different downward transitions. Which transition emits a photon of the HIGHEST frequency?",
+      "options": [
+        {
+          "option_text": "Transition n = 5 → n = 4 (Pfund-adjacent, far-infrared photon, ΔE ≈ 0.31 eV)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Transition n = 4 → n = 3 (Brackett series, mid-infrared photon, ΔE ≈ 0.66 eV)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Transition n = 3 → n = 2 (Balmer series, visible red-light photon, ΔE ≈ 1.89 eV)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Transition n = 2 → n = 1 (Lyman series, ultraviolet photon, ΔE ≈ 10.2 eV)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Bohr energy levels: E_n = −13.6/n² eV. The emitted photon energy = 13.6 × (1/n_f² − 1/n_i²). For n=2→1: ΔE = 13.6 × (1 − 1/4) = 10.2 eV — the largest gap among the options, producing a UV photon (Lyman series, f ≈ 2.47 × 10¹⁵ Hz). The n=5→4 transition gives only ~0.31 eV. A common exam trap is to select n=3→2 (the most visible Balmer line) over n=2→1; remember that series closest to the nucleus always involve the highest energy transitions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:07:38+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00011"
+    },
+    {
+      "stem": "An electron and a positron, both initially at rest, undergo mutual annihilation. What are the products of this reaction?",
+      "options": [
+        {
+          "option_text": "A single gamma photon carrying the full combined rest-mass energy of both",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two gamma photons of 0.511 MeV each, travelling in exactly opposite directions",
+          "is_correct": true
+        },
+        {
+          "option_text": "A neutron and an electron-neutrino, conserving both baryon and lepton numbers",
+          "is_correct": false
+        },
+        {
+          "option_text": "Two X-ray photons of 0.511 MeV each, travelling in the same forward direction",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Each particle has rest-mass energy m_e c² = 0.511 MeV, so total energy = 1.022 MeV, shared equally between two photons. The particles are at rest, so net momentum = 0; two photons moving in exactly opposite directions satisfy momentum conservation (their momenta cancel). Option A (single photon) is impossible: a single photon carries momentum p = E/c ≠ 0, violating conservation of momentum. Option D is wrong on two counts — annihilation produces gamma rays (not X-rays) and they must travel in opposite directions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:07:38+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00012"
+    },
+    {
+      "stem": "The stopping potential for a metal surface is 1.0 V when illuminated with photons of energy 3.0 eV. What will the stopping potential be if the photon energy is raised to 5.0 eV, with the same metal surface?",
+      "options": [
+        {
+          "option_text": "1.67 V — obtained by proportional scaling: 1.0 × (5.0/3.0) = 1.67 V",
+          "is_correct": false
+        },
+        {
+          "option_text": "2.0 V — numerically equal to the work function extracted from the first data",
+          "is_correct": false
+        },
+        {
+          "option_text": "3.0 V — new photon energy minus the work function gives the stopping potential",
+          "is_correct": true
+        },
+        {
+          "option_text": "5.0 V — treating the full new photon energy directly as the stopping potential",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Step 1 — find work function: eV₀ = E_photon − φ → 1.0 eV = 3.0 eV − φ → φ = 2.0 eV. Step 2 — new stopping potential: eV₀' = 5.0 − 2.0 = 3.0 eV → V₀' = 3.0 V. Option A (1.67 V) is the proportional-scaling error; V₀ is NOT proportional to photon energy because the work function is a fixed offset. Option D would only be correct if the work function were zero. The key insight: stopping potential shifts by exactly the same amount as the photon energy shift (ΔV₀ = ΔE_photon/e = 2.0 V), since φ cancels in the difference.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:07:38+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00013"
+    },
+    {
+      "stem": "A muon created in the upper atmosphere has a proper (rest-frame) lifetime of 2.0 μs. It travels toward Earth at v = 0.60c. What is the muon's measured lifetime in the Earth (laboratory) frame? (Lorentz factor γ = 1.25 at v = 0.60c)",
+      "options": [
+        {
+          "option_text": "1.6 μs — obtained by dividing τ₀ by γ, confusing length contraction with time dilation",
+          "is_correct": false
+        },
+        {
+          "option_text": "2.0 μs — the rest-frame lifetime, used unchanged by neglecting relativistic dilation",
+          "is_correct": false
+        },
+        {
+          "option_text": "2.5 μs — correct time dilation: t_lab = γ × τ₀ = 1.25 × 2.0 μs = 2.5 μs",
+          "is_correct": true
+        },
+        {
+          "option_text": "3.0 μs — result of using an incorrect γ = 1.5 instead of the correct γ = 1.25",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Time dilation formula: t_lab = γτ₀ = 1.25 × 2.0 = 2.5 μs. Verification of γ: at v = 0.60c, γ = 1/√(1 − 0.36) = 1/√0.64 = 1/0.8 = 1.25. A moving clock runs slow relative to the lab — the muon's internal clock ticks slower, so the lab observes it living longer. Option A (1.6 μs = τ₀/γ) is the 'length contraction' formula wrongly applied to time. This is one of the most experimentally verified SR effects: muons from cosmic-ray showers DO reach Earth's surface in numbers only explainable by time dilation, despite their short rest lifetime.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:07:38+00:00",
+      "id": "sgk_PHY_DUAL_NATURE_00014"
     }
   ]
 }

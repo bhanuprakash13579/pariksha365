@@ -1,0 +1,178 @@
+{
+  "topic_code": "RSN_SYLLOGISM",
+  "subject": "Reasoning",
+  "topic": "Syllogism",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Statements: All cats are dogs. All dogs are animals.\nConclusions: I. All cats are animals. II. Some animals are cats.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows (All cats→dogs→animals: I follows. Since all cats are animals, some animals are cats: II also follows)", "is_correct": false},
+        {"option_text": "Only II follows (I also follows as shown)", "is_correct": false},
+        {"option_text": "Both I and II follow (correct: I: All cats→dogs→animals; II: since all cats are animals → some animals are cats ✓)", "is_correct": true},
+        {"option_text": "Neither follows (both clearly follow from universal affirmatives)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. All A→B, All B→C → All A→C (I follows). Since All cats are animals, by conversion of universal affirmative: Some animals are cats (II follows). When 'All A are B', we can conclude 'Some B are A' by converse.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: Some books are pens. No pen is a pencil.\nConclusions: I. Some books are not pencils. II. No book is a pencil.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows (correct: Some books are pens + No pen is pencil → Some books are not pencils (I follows). But 'No book is pencil' cannot be concluded because some books may not be pens and could be pencils ✓)", "is_correct": true},
+        {"option_text": "Only II follows (II is too strong — can't conclude ALL books are not pencils)", "is_correct": false},
+        {"option_text": "Both follow (II doesn't follow — see above)", "is_correct": false},
+        {"option_text": "Neither follows (I clearly follows via the particular negative conclusion)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. 'Some books are pens' + 'No pen is pencil' → at minimum 'Some books (those that are pens) are not pencils' — so I follows. But we can't say ALL books are not pencils, because books that are NOT pens could still be pencils. II ('No book is pencil') doesn't follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All flowers are trees. Some trees are houses.\nConclusions: I. Some flowers are houses. II. Some houses are trees.\nWhich follows?",
+      "options": [
+        {"option_text": "Only I follows (I: All flowers are trees + Some trees are houses does NOT guarantee some flowers are houses — the 'some trees' that are houses may not include the ones that are flowers)", "is_correct": false},
+        {"option_text": "Only II follows (correct: II directly follows from 'Some trees are houses' → by conversion: Some houses are trees ✓; I doesn't follow because the overlap isn't guaranteed)", "is_correct": true},
+        {"option_text": "Both follow (I doesn't follow — see above)", "is_correct": false},
+        {"option_text": "Neither follows (II follows from converse of particular affirmative)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. II follows directly from converting 'Some trees are houses' → 'Some houses are trees'. For I: 'All flowers are trees' and 'Some trees are houses' do NOT guarantee the overlap — the 'some trees' that are houses might be entirely different trees from the flowers. So I does NOT follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: No stone is metal. All metals are conductors.\nConclusions: I. No stone is conductor. II. Some conductors are not stones.\nWhich follows?",
+      "options": [
+        {"option_text": "Only I follows (I: No stone is metal; some conductors are metals; we can't say NO stone is conductor — stones could be conductors via another route)", "is_correct": false},
+        {"option_text": "Only II follows (correct: Since all metals are conductors, and no stone is metal → those metals (which are conductors) are not stones. So some conductors (metals) are not stones → II follows ✓)", "is_correct": true},
+        {"option_text": "Both follow (I is too strong — can't conclude 'No stone is conductor')", "is_correct": false},
+        {"option_text": "Neither follows (II follows as shown)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 'All metals are conductors' → metals are a subset of conductors. 'No stone is metal' → stones are outside the metal set. But stones could still be conductors via non-metal paths. So 'No stone is conductor' (I) doesn't follow. However, metals (which are all conductors) are not stones → 'Some conductors (metals) are not stones' → II follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All roses are flowers. All flowers are beautiful.\nConclusions: I. All roses are beautiful. II. All beautiful things are roses.\nWhich follows?",
+      "options": [
+        {"option_text": "Only I follows (correct: All roses→flowers→beautiful: I follows. But 'All beautiful things are roses' is the converse of universal: invalid ✓)", "is_correct": true},
+        {"option_text": "Only II follows (II doesn't follow — flowers and other things can be beautiful without being roses)", "is_correct": false},
+        {"option_text": "Both follow (II is incorrect — universal affirmative converse is invalid)", "is_correct": false},
+        {"option_text": "Neither follows (I clearly follows via transitivity)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. I: All roses are flowers + All flowers are beautiful → All roses are beautiful (transitive). II: 'All beautiful things are roses' would be the converse of the chain — invalid in syllogism. Beautiful things include many things that aren't roses (e.g., sunsets). Only I follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: Some birds are fish. All fish are reptiles.\nConclusions: I. Some birds are reptiles. II. All reptiles are birds.\nWhich follows?",
+      "options": [
+        {"option_text": "Only I follows (correct: Some birds are fish + All fish are reptiles → Some birds are reptiles (I follows). II is invalid converse of universal ✓)", "is_correct": true},
+        {"option_text": "Only II follows (II is an invalid universal conversion)", "is_correct": false},
+        {"option_text": "Both follow (II doesn't follow)", "is_correct": false},
+        {"option_text": "Neither follows (I follows from the chain)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Some birds are fish → (those birds) are reptiles (since all fish are reptiles). So at least 'Some birds are reptiles' follows (I). II says 'All reptiles are birds' — this would require every reptile to be a bird, which doesn't follow from the given statements. Only I follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All chairs are tables. No table is a cupboard. Some cupboards are shelves.\nConclusions: I. No chair is a cupboard. II. Some shelves are not tables.\nWhich follows?",
+      "options": [
+        {"option_text": "Only I follows (I: All chairs are tables + No table is cupboard → No chair is cupboard ✓; II: Some cupboards are shelves + No table is cupboard → some shelves (that are cupboards) are not tables; II also follows)", "is_correct": false},
+        {"option_text": "Both I and II follow (correct: I from chairs→tables and no table is cupboard; II because cupboards that are shelves are not tables ✓)", "is_correct": true},
+        {"option_text": "Only II follows (I also follows)", "is_correct": false},
+        {"option_text": "Neither follows (both clearly follow)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. I: All chairs are tables; No table is cupboard → No chair is cupboard (all chairs, being tables, cannot be cupboards). II: Some cupboards are shelves; No table is cupboard → those shelves that are cupboards are not tables → Some shelves are not tables. Both conclusions follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: Some doctors are teachers. Some teachers are engineers.\nConclusions: I. Some doctors are engineers. II. No doctor is an engineer.\nWhich follows?",
+      "options": [
+        {"option_text": "Only I follows (I may or may not follow — 'some doctors are teachers' and 'some teachers are engineers' doesn't guarantee overlap)", "is_correct": false},
+        {"option_text": "Only II follows (II says NO doctor is engineer — equally unproven)", "is_correct": false},
+        {"option_text": "Both follow (both are strong claims that can't both be supported)", "is_correct": false},
+        {"option_text": "Neither follows (correct: 'some' + 'some' gives no definite conclusion — overlap may or may not exist; neither I nor II can be confirmed ✓)", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. When both premises are particular (Some...Some), no definite conclusion follows. The doctors who are teachers may or may not be among the teachers who are engineers. Both I and II are equally uncertain. This is a key syllogism rule: Particular + Particular = No conclusion.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All mangoes are fruits. No fruit is a vegetable. All vegetables are healthy.\nConclusion: No mango is a vegetable.\nDoes this follow?",
+      "options": [
+        {"option_text": "Does not follow (it clearly does — all mangoes are fruits, no fruit is vegetable → no mango is vegetable)", "is_correct": false},
+        {"option_text": "Follows (correct: All mangoes are fruits + No fruit is vegetable → No mango is vegetable ✓)", "is_correct": true},
+        {"option_text": "Cannot be determined (the logic is straightforward)", "is_correct": false},
+        {"option_text": "Partially follows (syllogism conclusions are binary — they either follow or don't)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. All mangoes are fruits (A⊆F). No fruit is a vegetable (F∩V=∅). Therefore no mango is a vegetable (A∩V=∅). The third statement about vegetables being healthy is irrelevant to this conclusion.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: Some pens are erasers. All erasers are rubbers. No rubber is a sharpener.\nConclusion: Some pens are not sharpeners.\nDoes this follow?",
+      "options": [
+        {"option_text": "Does not follow (some pens are erasers → rubbers → not sharpeners: so at least some pens are not sharpeners — it does follow)", "is_correct": false},
+        {"option_text": "Follows (correct: some pens are erasers → all erasers are rubbers → some pens are rubbers; no rubber is sharpener → those pens (rubbers) are not sharpeners → some pens are not sharpeners ✓)", "is_correct": true},
+      {"option_text": "Cannot be determined (the chain is clear enough to conclude)", "is_correct": false},
+        {"option_text": "Follows only if all pens are erasers (the conclusion is particular — 'some' — so partial coverage suffices)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Chain: Some pens → erasers → rubbers (all erasers are rubbers). No rubber is sharpener. → Those pens that are rubbers are not sharpeners → 'Some pens are not sharpeners' follows. The chain creates a guaranteed subset of pens that cannot be sharpeners.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

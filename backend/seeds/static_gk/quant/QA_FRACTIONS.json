@@ -213,6 +213,426 @@
       "generator_tag": "auto-seed-2026-06-18",
       "generated_at": "2026-06-18T14:05:02+00:00",
       "id": "sgk_QA_FRACTIONS_00007"
+    },
+    {
+      "stem": "How many fractions with denominator 15 lie strictly between 1/5 and 1/3?",
+      "options": [
+        {
+          "option_text": "Exactly 1 fraction — only 4/15 lies between 3/15 and 5/15",
+          "is_correct": true
+        },
+        {
+          "option_text": "Exactly 2 fractions — both 4/15 and 2/15 qualify here",
+          "is_correct": false
+        },
+        {
+          "option_text": "Exactly 3 fractions — 4/15, 6/15, and 7/15 all qualify",
+          "is_correct": false
+        },
+        {
+          "option_text": "Exactly 0 fractions — no value with denominator 15 fits",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Convert both bounds to denominator 15: 1/5 = 3/15 and 1/3 = 5/15. Fractions with denominator 15 strictly between 3/15 and 5/15 must have a numerator strictly between 3 and 5, i.e., only the integer 4. So exactly one fraction (4/15) qualifies. Option B is wrong because 2/15 < 1/5, placing it outside the range entirely. Option C is wrong because 6/15 = 2/5 > 1/3, also outside. Option D is wrong because 4/15 clearly satisfies 3/15 < 4/15 < 5/15. **Short Trick:** Convert bounds to the target denominator. Count integers strictly between the two resulting numerators: here between 3 and 5 → only 4. Answer = 1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:14:26+00:00",
+      "id": "sgk_QA_FRACTIONS_00008"
+    },
+    {
+      "stem": "A recipe requires 2¾ cups of flour, 1½ cups of sugar, and ¾ cup of butter. What is the total quantity of all three ingredients combined?",
+      "options": [
+        {
+          "option_text": "4½ cups total — adding all three ingredient amounts",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 cups total — sum of all three ingredient amounts",
+          "is_correct": true
+        },
+        {
+          "option_text": "5¼ cups total — adding all three ingredient amounts",
+          "is_correct": false
+        },
+        {
+          "option_text": "4¾ cups total — sum of all three ingredient amounts",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Convert to improper fractions with denominator 4: 2¾ = 11/4, 1½ = 6/4, ¾ = 3/4. Sum = (11 + 6 + 3)/4 = 20/4 = 5 cups. Option A (4½) arises from incorrectly treating ¾ + ½ as 1 rather than 5/4. Option C (5¼) adds an extra ¼ due to a carry error. Option D (4¾) comes from wrongly summing 1½ + ¾ as 1¾ instead of 2¼. **Short Trick:** Split into whole and fractional parts. Whole: 2 + 1 + 0 = 3. Fractions: ¾ + ½ + ¾ = 3/4 + 2/4 + 3/4 = 8/4 = 2. Total = 3 + 2 = 5 cups.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:14:26+00:00",
+      "id": "sgk_QA_FRACTIONS_00009"
+    },
+    {
+      "stem": "A sum of money is divided among P, Q, and R in the ratio 1/2 : 1/3 : 1/4. If R's share is ₹600, what is the total sum?",
+      "options": [
+        {
+          "option_text": "₹2400 is the total sum distributed among P, Q, and R",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2600 is the total sum distributed among P, Q, and R",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹3000 is the total sum distributed among P, Q, and R",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹2800 is the total sum distributed among P, Q, and R",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Ratio 1/2 : 1/3 : 1/4 — multiply every term by LCM(2,3,4) = 12 to get the integer ratio 6 : 4 : 3. Total parts = 13. R gets 3 parts = ₹600, so 1 part = ₹200. Total = 13 × 200 = ₹2600. Option A (₹2400) uses 12 total parts, forgetting to sum all three ratios correctly (6+4+3=13, not 12). Option C (₹3000) treats the share of R as 1/5 of the total. Option D (₹2800) uses 14 parts by miscounting. **Short Trick:** Fraction ratio → multiply by LCM of all denominators to clear fractions. R = 3 parts = ₹600 → unit = ₹200. Total = 13 units = ₹2600.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:14:26+00:00",
+      "id": "sgk_QA_FRACTIONS_00010"
+    },
+    {
+      "stem": "A fraction is first multiplied by 3/4 and then the result is divided by 7/5. The final value is 15/56. What is the original fraction?",
+      "options": [
+        {
+          "option_text": "1/3 — one part out of three equal parts",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2 — one part out of two equal parts",
+          "is_correct": true
+        },
+        {
+          "option_text": "2/3 — two parts out of three equal parts",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/4 — three parts out of four equal parts",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let the fraction be F. Then F × (3/4) ÷ (7/5) = 15/56. Dividing by 7/5 is the same as multiplying by 5/7, giving F × (3/4) × (5/7) = F × 15/28 = 15/56. Therefore F = (15/56) × (28/15) = 28/56 = 1/2. Option A: 1/3 × 15/28 = 5/28 ≠ 15/56. Option C: 2/3 × 15/28 = 10/28 ≠ 15/56. Option D: 3/4 × 15/28 = 45/112 ≠ 15/56. **Short Trick:** Reverse the chain of operations — start from 15/56 and undo each step backwards. Undo ÷(7/5) by multiplying 15/56 × (7/5) = 105/280 = 3/8. Undo ×(3/4) by dividing 3/8 ÷ (3/4) = 3/8 × 4/3 = 12/24 = 1/2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:14:26+00:00",
+      "id": "sgk_QA_FRACTIONS_00011"
+    },
+    {
+      "stem": "The recurring decimal 0.1233333... (where only the digit 3 repeats indefinitely after 0.12) expressed as a fraction in its lowest terms is?",
+      "options": [
+        {
+          "option_text": "37/300, since 111/900 reduces by GCD 3 to give 37/300",
+          "is_correct": true
+        },
+        {
+          "option_text": "11/90, applying the standard repeating-decimal fraction rule",
+          "is_correct": false
+        },
+        {
+          "option_text": "41/333, treating 123 as the fully repeating block",
+          "is_correct": false
+        },
+        {
+          "option_text": "37/270, derived from dividing 111 by 810 incorrectly",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Let x = 0.12333.... Then 100x = 12.333... and 1000x = 123.333.... Subtracting: 900x = 111, giving x = 111/900. GCD(111, 900): 111 = 3 × 37; 900 = 3² × 4 × 25; GCD = 3. So x = 37/300. Verify: 37 ÷ 300 = 0.12333... ✓. Option B (11/90 = 0.1222...) arises from treating the digit 2 as the repeating part instead of 3. Option C (41/333) wrongly treats 123 as the repeating block, which would give 0.123123.... Option D has an arithmetic error in computing the denominator. **Short Trick:** For n non-repeating digits after the decimal point and m repeating digits, denominator = 10^(n+m) − 10^n and numerator = (full number ignoring decimal) − (non-repeating part). Here n=2, m=1: denominator = 1000 − 100 = 900; numerator = 123 − 12 = 111. Fraction = 111/900 = 37/300.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:14:26+00:00",
+      "id": "sgk_QA_FRACTIONS_00012"
+    },
+    {
+      "stem": "If x = 1 + 1 ÷ (1 + 1 ÷ (1 + 1/2)), what is the value of x?",
+      "options": [
+        {
+          "option_text": "5/3, approximately equal to 1.667 as a decimal",
+          "is_correct": false
+        },
+        {
+          "option_text": "8/5, exactly equal to 1.600 as a decimal",
+          "is_correct": true
+        },
+        {
+          "option_text": "13/8, approximately equal to 1.625 as a decimal",
+          "is_correct": false
+        },
+        {
+          "option_text": "3/2, exactly equal to 1.500 as a decimal",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Evaluate strictly from the innermost bracket outward. Step 1 (innermost): 1 + 1/2 = 3/2. Step 2 (middle bracket): 1 + 1 ÷ (3/2) = 1 + 2/3 = 5/3. Step 3 (outermost): 1 + 1 ÷ (5/3) = 1 + 3/5 = 8/5. Option D (3/2) is only the innermost result — a student who stops too early gets this. Option A (5/3) is the middle-layer result, missing the final outer step. Option C (13/8) misapplies the Fibonacci-ratio pattern by adding neighbouring numerators and denominators: 5/3 → (5+8)/(3+5) = 13/8, which is incorrect here. **Short Trick:** In a continued fraction, work inside-out. The results form a Fibonacci sequence pattern: 3/2 → 5/3 → 8/5 (numerators 3,5,8 and denominators 2,3,5 are consecutive Fibonacci numbers). Each step: new = 1 + reciprocal(previous).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:14:26+00:00",
+      "id": "sgk_QA_FRACTIONS_00013"
+    },
+    {
+      "stem": "A proper fraction added to its own reciprocal gives 25/12. What is the sum of the numerator and denominator of that fraction?",
+      "options": [
+        {
+          "option_text": "The sum is 5, implying the fraction is 1/4 (p + q = 5)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sum is 7, implying the fraction is 3/4 (p + q = 7)",
+          "is_correct": true
+        },
+        {
+          "option_text": "The sum is 9, implying the fraction is 4/5 (p + q = 9)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sum is 11, implying the fraction is 5/6 (p + q = 11)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let the fraction be p/q with p < q (proper). Then p/q + q/p = 25/12, giving (p² + q²)/pq = 25/12, i.e., 12p² − 25pq + 12q² = 0. Dividing by q² and setting t = p/q: 12t² − 25t + 12 = 0. Discriminant = 625 − 576 = 49, so t = (25 ± 7)/24, yielding t = 32/24 = 4/3 or t = 18/24 = 3/4. Since p < q (proper fraction), t = 3/4, giving p = 3, q = 4, sum = 7. Verify: 3/4 + 4/3 = 9/12 + 16/12 = 25/12 ✓. Option A: 1/4 + 4/1 = 17/4 ≠ 25/12. Option C: 4/5 + 5/4 = 41/20 ≠ 25/12. Option D: 5/6 + 6/5 = 61/30 ≠ 25/12. **Short Trick:** Treat as x + 1/x = 25/12 → 12x² − 25x + 12 = 0. √discriminant = √49 = 7 (perfect square — a hallmark of a well-set exam problem). Roots = (25 ± 7)/24 = 4/3 or 3/4. Proper fraction → 3/4; sum of digits = 3 + 4 = 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:14:26+00:00",
+      "id": "sgk_QA_FRACTIONS_00014"
+    },
+    {
+      "stem": "If 5/7 of a number is equal to 4/9 of another number, what is the ratio of the first number to the second number?",
+      "options": [
+        {
+          "option_text": "28 : 45 (correct: 5/7 × A = 4/9 × B gives A/B = 28/45)",
+          "is_correct": true
+        },
+        {
+          "option_text": "45 : 28 (inverted ratio — gives second to first, not first to second)",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 : 63 (from computing 4×5 : 7×9 = 20:63, multiplying same-position terms)",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 : 35 (from computing 4×9 : 5×7 = 36:35, a cross-multiplication error)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Setting 5A/7 = 4B/9 and solving: A/B = (4/9) ÷ (5/7) = (4×7)/(9×5) = 28/45, giving the ratio A:B = 28:45. Option B (45:28) is the inverted ratio — a very common error where students lose track of which number is 'first'. Option C (20:63) arises from multiplying 4×5 and 7×9 directly (same positions) instead of cross-multiplying. **Short Trick:** When (a/b)×N₁ = (c/d)×N₂, ratio N₁:N₂ = (c×b):(d×a). Here: (4×7):(9×5) = 28:45. Simply cross-multiply the fractions and write as ratio — takes under 10 seconds.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:21+00:00",
+      "id": "sgk_QA_FRACTIONS_00015"
+    },
+    {
+      "stem": "What is the value of (3/4 ÷ 9/16) × (2/3 ÷ 4/9)?",
+      "options": [
+        {
+          "option_text": "2 (the entire expression simplifies cleanly to a whole number)",
+          "is_correct": true
+        },
+        {
+          "option_text": "3/2 (from computing only the second division 2/3 ÷ 4/9 = 3/2)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4/3 (from computing only the first division 3/4 ÷ 9/16 = 4/3)",
+          "is_correct": false
+        },
+        {
+          "option_text": "32/81 (from not flipping the second divisor when dividing 2/3 by 4/9)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. First bracket: 3/4 ÷ 9/16 = 3/4 × 16/9 = 48/36 = 4/3. Second bracket: 2/3 ÷ 4/9 = 2/3 × 9/4 = 18/12 = 3/2. Product: 4/3 × 3/2 = 12/6 = 2. Option D (32/81) is the classic error of forgetting to flip the divisor in the second bracket — computing 2/3 × 4/9 = 8/27 instead of 2/3 × 9/4 = 3/2, then multiplying 4/3 × 8/27 = 32/81. Options B and C are partial-computation traps. **Short Trick:** a/b ÷ c/d = (a×d)/(b×c). Combine both operations into one chain: (3×16)/(4×9) × (2×9)/(3×4). Cancel before multiplying: 16/4=4, 9/9=1, 3/3=1, 2/4=1/2 → the entire product = 4×(1/2) = 2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:21+00:00",
+      "id": "sgk_QA_FRACTIONS_00016"
+    },
+    {
+      "stem": "If (x + 1/3) ÷ (x − 1/3) = 7/5, what is the value of x?",
+      "options": [
+        {
+          "option_text": "x = 6/5 (from misapplying componendo without the dividendo step)",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 2 (verified: (2+1/3)÷(2−1/3) = (7/3)÷(5/3) = 7/5 exactly)",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = 4 (from reading 2x = 4 as x = 4, skipping the final divide-by-2)",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 1/2 (from treating 1/3 as a separate addend and dividing wrongly)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Cross-multiplying: 5(x + 1/3) = 7(x − 1/3) → 5x + 5/3 = 7x − 7/3 → 5/3 + 7/3 = 2x → 12/3 = 4 = 2x → x = 2. Verify: (2+1/3)/(2−1/3) = (7/3)/(5/3) = 7/5 ✓. Option C (x=4) is the critical error of stopping at 2x=4 and writing x=4 — forgetting to divide by 2. Option A (x=6/5) results from misapplying componendo alone. **Short Trick — Componendo-Dividendo:** If p/q = 7/5, then (p+q)/(p−q) = (7+5)/(7−5) = 12/2 = 6. Here p+q = 2x and p−q = 2/3. So 2x ÷ (2/3) = 6 → 3x = 6 → x = 2. This skips cross-multiplication entirely and saves two steps.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:21+00:00",
+      "id": "sgk_QA_FRACTIONS_00017"
+    },
+    {
+      "stem": "A water tank is 7/8 full. After drawing out some water it becomes 5/12 full. What fraction of the tank's total capacity was used?",
+      "options": [
+        {
+          "option_text": "1/8 (from computing (7−5)/8 — subtracting numerators while keeping denominator)",
+          "is_correct": false
+        },
+        {
+          "option_text": "11/24 (correct: LCM of 8 and 12 is 24; 21/24 − 10/24 = 11/24)",
+          "is_correct": true
+        },
+        {
+          "option_text": "2/3 (from treating 7/8 as 3/4 and computing 3/4 − 1/12 = 9/12 − 1/12)",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/12 (from approximating 7/8 as 3/4 and then computing 3/4 − 1/3 = 5/12)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Water used = 7/8 − 5/12. LCM(8, 12) = 24. Converting: 7/8 = 21/24 and 5/12 = 10/24. Difference = 11/24. Option A (1/8) is the most common beginner error — subtracting numerators directly (7−5=2) and writing 2/8=1/4 or 2/(8−0)=1/4... actually getting 1/8 by subtracting only numerators and misreading. Options C and D both stem from incorrectly rounding 7/8 to 3/4, then subtracting with different wrong values of 5/12. **Short Trick:** LCM(8,12): 8=2³, 12=2²×3, LCM=24. Scale 7/8 by ×3 → 21/24; scale 5/12 by ×2 → 10/24. Subtract: 11/24. Identify LCM by prime factorisation in one glance — no long division needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:21+00:00",
+      "id": "sgk_QA_FRACTIONS_00018"
+    },
+    {
+      "stem": "The decimal 0.1666... (where only the digit '6' repeats indefinitely, following a non-recurring '1') expressed as a fraction in its lowest terms is?",
+      "options": [
+        {
+          "option_text": "16/99 (treating all digits as recurring — correct only for 0.1616... form)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/6 (correct: mixed-recurring formula gives (16−1)/90 = 15/90 = 1/6)",
+          "is_correct": true
+        },
+        {
+          "option_text": "8/45 (from using 16/90 without subtracting the non-recurring digit value)",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/11 (from misapplying the pure two-digit repeating block formula 16/88)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. For a mixed recurring decimal 0.ab̄ (non-recurring digit a, then b repeating), the fraction = (full two-digit number − non-recurring part) / 90 = (16 − 1)/90 = 15/90 = 1/6. Verify: 1/6 = 0.16666... ✓. Option A (16/99) is the formula for a pure two-digit repeat — it equals 0.161616..., a different decimal. Option C (8/45 = 16/90) is the error of not subtracting the non-recurring digit. Option D (16/88) applies no standard rule correctly. **Short Trick — Mixed Recurring Formula:** 0.ab̄ → numerator = ab − a (remove non-recurring part), denominator = 90 (one 9 for each recurring digit, one 0 for each non-recurring digit before it). Two recurring digits? Denominator = 900. Always verify by dividing your fraction on paper.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:21+00:00",
+      "id": "sgk_QA_FRACTIONS_00019"
+    },
+    {
+      "stem": "What is the value of 1 + 1/(1 + 1/(1 + 1/2))?",
+      "options": [
+        {
+          "option_text": "3/2 (evaluated only the innermost bracket 1 + 1/2 and stopped there early)",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/3 (evaluated two levels deep but stopped before reaching the outermost +1)",
+          "is_correct": false
+        },
+        {
+          "option_text": "8/5 (correct: inside-out evaluation — 3/2 → 5/3 → 8/5 at each level)",
+          "is_correct": true
+        },
+        {
+          "option_text": "13/8 (from assuming one more nesting level exists beyond the expression)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Always evaluate from the innermost bracket outward. Step 1: 1 + 1/2 = 3/2. Step 2: 1 + 1/(3/2) = 1 + 2/3 = 5/3. Step 3: 1 + 1/(5/3) = 1 + 3/5 = 8/5. Options A and B are early-stopping errors at steps 1 and 2 respectively. Option D (13/8) is the next value in the sequence — a trap for students who miscount the depth of nesting. **Short Trick — Fibonacci Ratios:** The successive values in this family of nested fractions — 1/1, 2/1, 3/2, 5/3, 8/5, 13/8, 21/13 — follow the Fibonacci sequence. Each numerator = sum of previous two Fibonacci numbers. Here, starting from the innermost 1+1/2, three levels yield 3/2 → 5/3 → 8/5. Recognise the pattern and count levels: depth 3 gives the 5th Fibonacci ratio = 8/5.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:21+00:00",
+      "id": "sgk_QA_FRACTIONS_00020"
+    },
+    {
+      "stem": "A fraction becomes 1/3 when 1 is subtracted from its numerator and 1 is added to its denominator. It becomes 1/2 when 1 is added to both its numerator and denominator. What is the original fraction?",
+      "options": [
+        {
+          "option_text": "3/7 (from misreading condition 1 as subtracting 1 from denominator instead of adding)",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/11 (the unique fraction satisfying both given conditions simultaneously)",
+          "is_correct": true
+        },
+        {
+          "option_text": "3/5 (satisfies only condition 1: (3−1)/(5+1) = 1/3, but fails condition 2)",
+          "is_correct": false
+        },
+        {
+          "option_text": "7/15 (satisfies only condition 2: (7+1)/(15+1) = 1/2, but fails condition 1)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let the fraction be p/q. Condition 1: (p−1)/(q+1) = 1/3 → 3p − q = 4 ...(i). Condition 2: (p+1)/(q+1) = 1/2 → 2p − q = −1 ...(ii). Subtract (ii) from (i): p = 5. Substitute into (ii): 10 − q = −1 → q = 11. Original fraction = 5/11. Verify: (5−1)/(11+1) = 4/12 = 1/3 ✓; (5+1)/(11+1) = 6/12 = 1/2 ✓. Option A (3/7) is the answer obtained if condition 1 is misread as subtracting 1 from the denominator — solving (p−1)/(q−1)=1/3 and (p+1)/(q+1)=1/2 gives p=3, q=7. Options C and D each satisfy exactly one condition, expertly designed to trap students who verify only one constraint. **Short Trick:** Always set up both equations and eliminate q by direct subtraction. Single-equation trial-and-error will produce multiple candidates (C, D) — only the system of two equations pins the unique answer.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:21+00:00",
+      "id": "sgk_QA_FRACTIONS_00021"
     }
   ]
 }

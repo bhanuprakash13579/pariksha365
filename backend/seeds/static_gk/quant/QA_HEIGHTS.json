@@ -213,6 +213,636 @@
       "generator_tag": "auto-seed-2026-06-18",
       "generated_at": "2026-06-18T14:06:23+00:00",
       "id": "sgk_QA_HEIGHTS_00007"
+    },
+    {
+      "stem": "A boat at sea observes the top of a vertical cliff 300 m high at an angle of elevation of 30°. After rowing directly towards the cliff, the angle of elevation becomes 60°. How far did the boat row towards the cliff?",
+      "options": [
+        {
+          "option_text": "100√3 m — the remaining distance left to reach the cliff",
+          "is_correct": false
+        },
+        {
+          "option_text": "200√3 m — the actual distance rowed towards the cliff",
+          "is_correct": true
+        },
+        {
+          "option_text": "300√3 m — the initial distance of the boat from the cliff",
+          "is_correct": false
+        },
+        {
+          "option_text": "400√3 m — the sum of both observed distances from cliff",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Let h = 300 m. At 30°: d₁ = h/tan30° = 300√3 m. At 60°: d₂ = h/tan60° = 300/√3 = 100√3 m. Distance rowed = d₁ − d₂ = 300√3 − 100√3 = 200√3 m. Option A (100√3) is the final distance remaining to the cliff, not the distance covered. Option C (300√3) is merely the starting distance. Option D sums instead of subtracting. **Short Trick:** Distance rowed = h(cot30° − cot60°) = h(√3 − 1/√3) = h × 2/√3 = 300 × 2/√3 = 200√3 m. Memorise: gap = h × (cotθ₁ − cotθ₂).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:34:46+00:00",
+      "id": "sgk_QA_HEIGHTS_00008"
+    },
+    {
+      "stem": "A kite is flying at a height of 100 m above the ground. The string attached to the kite makes an angle of 30° with the horizontal. Assuming the string is taut and straight, what is the length of the string?",
+      "options": [
+        {
+          "option_text": "50 m — arises from multiplying 100 by sin30° directly",
+          "is_correct": false
+        },
+        {
+          "option_text": "100 m — mistaking the string length for the kite altitude",
+          "is_correct": false
+        },
+        {
+          "option_text": "200 m — full string length from anchor point to kite",
+          "is_correct": true
+        },
+        {
+          "option_text": "100√3 m — using tangent ratio instead of sine ratio here",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. String is the hypotenuse. sin(angle) = opposite/hypotenuse → sin30° = 100/L → L = 100/sin30° = 100 ÷ 0.5 = 200 m. Option A (50 m) inverts the formula: L = 100 × sin30° = 50 (wrong). Option D (100√3) gives the horizontal ground distance using tan30°: 100/tan30° = 100√3 — that is the base, not the hypotenuse. Option B simply copies the height. **Short Trick:** sin30° = 1/2, so L = height × 2 = 100 × 2 = 200 m. For any kite/string problem, L = height/sinθ.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:34:46+00:00",
+      "id": "sgk_QA_HEIGHTS_00009"
+    },
+    {
+      "stem": "From point A on one bank of a river, the angle of elevation of a tall tree on the opposite bank is 60°. From point B, 20 m directly behind A on the same bank, the angle of elevation of the same tree is 30°. What is the width of the river?",
+      "options": [
+        {
+          "option_text": "5 m — one-fourth of bank gap AB, incorrect ratio applied",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 m — perpendicular width across the river channel here",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 m — bank gap AB wrongly equated to river width directly",
+          "is_correct": false
+        },
+        {
+          "option_text": "10√3 m — the height of the tree, not the river width",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let river width = w and tree height = h. From A: tan60° = h/w → h = w√3. From B: tan30° = h/(w+20) → h = (w+20)/√3. Equating both expressions: w√3 = (w+20)/√3 → 3w = w+20 → 2w = 20 → w = 10 m. Tree height = 10√3 m, which is the tempting trap in Option D. Option C (20 m) confuses the bank separation AB with the river width. **Short Trick:** Ratio of tangents: tan60°/tan30° = (h/w)/(h/(w+20)) = (w+20)/w = 3 → 3w = w+20 → w = 10 m.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:34:46+00:00",
+      "id": "sgk_QA_HEIGHTS_00010"
+    },
+    {
+      "stem": "Tower P is 60 m tall and Tower Q is 20 m tall, both standing on level ground. From the top of Tower P, the angle of depression of the top of Tower Q is 30°. What is the horizontal distance between the two towers?",
+      "options": [
+        {
+          "option_text": "40/√3 m ≈ 23.1 m — using tan60° instead of tan30° here",
+          "is_correct": false
+        },
+        {
+          "option_text": "40√3 m ≈ 69.3 m — height difference 40 m at depression 30°",
+          "is_correct": true
+        },
+        {
+          "option_text": "60√3 m ≈ 103.9 m — using full height of P instead of gap",
+          "is_correct": false
+        },
+        {
+          "option_text": "20√3 m ≈ 34.6 m — using only the height of Tower Q alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The effective vertical drop from P's top to Q's top = 60 − 20 = 40 m. With angle of depression = 30°: tan30° = 40/d → d = 40/tan30° = 40 × √3 = 40√3 m. Option A (40/√3) flips the ratio using tan60° by mistake. Option C (60√3) uses the full height of P (60 m) without subtracting Q's height. Option D (20√3) uses only Q's height. **Short Trick:** d = vertical-gap × cot(depression angle) = 40 × cot30° = 40√3 m. Always subtract heights before applying the formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:34:46+00:00",
+      "id": "sgk_QA_HEIGHTS_00011"
+    },
+    {
+      "stem": "From a window 20 m above street level, the angle of elevation of the top of a building directly across the street is 60°, and the angle of depression of the building's base is 30°. What is the total height of the building?",
+      "options": [
+        {
+          "option_text": "60 m — portion above window only, omitting the 20 m below",
+          "is_correct": false
+        },
+        {
+          "option_text": "80 m — window level added to the height above window level",
+          "is_correct": true
+        },
+        {
+          "option_text": "40 m — averaging both angles and applying to full width",
+          "is_correct": false
+        },
+        {
+          "option_text": "100 m — adding window height twice to the upper section",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let street width = d. Depression 30° to base: tan30° = 20/d → d = 20√3 m. Elevation 60° to top: tan60° = h_above/d → h_above = 20√3 × √3 = 60 m. Total height = 20 + 60 = 80 m. Option A (60 m) forgets to add the 20 m window height below the window line. Option D (100 m) adds 20 m an extra time. **Short Trick:** h_above/window_h = (tan60° × cot30°) = (d × tan60°)/(d × tan30°) × window_h... faster: d = 20/tan30°; h_above = d × tan60° = (20/tan30°) × tan60° = 20 × (tan60°/tan30°) = 20 × 3 = 60. Total = 80 m.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:34:46+00:00",
+      "id": "sgk_QA_HEIGHTS_00012"
+    },
+    {
+      "stem": "From a bridge, an observer notes the angle of depression of an approaching boat as 30°. After the boat travels 50 m towards the bridge pillar, the angle of depression becomes 45°. What is the height of the bridge above the water level?",
+      "options": [
+        {
+          "option_text": "25(√3 − 1) m ≈ 18.3 m — sign flipped during rationalisation",
+          "is_correct": false
+        },
+        {
+          "option_text": "25(√3 + 1) m ≈ 68.3 m — rationalised exact height of bridge",
+          "is_correct": true
+        },
+        {
+          "option_text": "50(√3 + 1) m ≈ 136.6 m — forgot to divide by 2 after step",
+          "is_correct": false
+        },
+        {
+          "option_text": "50/(√3 + 1) m ≈ 18.3 m — rationalised the numerator wrongly",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let h = bridge height, x = initial horizontal distance. tan30° = h/x → x = h√3. tan45° = h/(x−50) → x−50 = h. Substituting: h√3 − 50 = h → h(√3−1) = 50 → h = 50/(√3−1). Rationalise: h = 50(√3+1)/((√3)²−1²) = 50(√3+1)/2 = 25(√3+1) ≈ 68.3 m. Option A flips the sign in the numerator after rationalising. Option C forgets to divide 50(√3+1) by 2. Option D inverts the rationalisation, placing (√3+1) in the denominator. **Short Trick:** h(√3−1) = 50; multiply numerator and denominator by (√3+1): h = 50(√3+1)/(3−1) = 25(√3+1). Key: denominator after rationalising = 3−1 = 2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:34:46+00:00",
+      "id": "sgk_QA_HEIGHTS_00013"
+    },
+    {
+      "stem": "From the foot of a mountain, the angle of elevation of its summit is 45°. After climbing 1000 m up a slope inclined at 30° to the horizontal towards the peak, the angle of elevation of the same summit becomes 60°. Find the height of the mountain.",
+      "options": [
+        {
+          "option_text": "500√3 m ≈ 866 m — ignores the 500 m vertical gain from climb",
+          "is_correct": false
+        },
+        {
+          "option_text": "500(√3 − 1) m ≈ 366 m — sign error while solving the equation",
+          "is_correct": false
+        },
+        {
+          "option_text": "500(√3 + 1) m ≈ 1366 m — exact answer via slope component method",
+          "is_correct": true
+        },
+        {
+          "option_text": "1000(√3 − 1) m ≈ 732 m — uses full slope length as mountain height",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let H = mountain height, D = horizontal base distance. tan45° = H/D → D = H. After 1000 m along 30° slope: horizontal gain = 1000cos30° = 500√3 m; vertical gain = 1000sin30° = 500 m. New angle: tan60° = (H−500)/(D−500√3) = (H−500)/(H−500√3) [since D = H]. So √3(H−500√3) = H−500 → √3H − 1500 = H − 500 → H(√3−1) = 1000 → H = 1000/(√3−1). Rationalise: H = 1000(√3+1)/2 = 500(√3+1) ≈ 1366 m. Option A ignores the 500 m vertical rise (uses H−0 in numerator). Option B has a sign error: H(√3+1) = 1000 would give 500(√3−1). Option D uses full slope 1000 m as the height component. **Short Trick:** 45° gives D = H (golden condition); substitute into 60° equation; isolate H(√3−1) = 1000; rationalise by (√3+1): H = 1000(√3+1)/2 = 500(√3+1).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:34:46+00:00",
+      "id": "sgk_QA_HEIGHTS_00014"
+    },
+    {
+      "stem": "A 10 m long ladder leans against a vertical wall, making an angle of 60° with the ground. How high above the ground does the top of the ladder touch the wall?",
+      "options": [
+        {
+          "option_text": "5 m, using cos 60° instead of sin 60° for height",
+          "is_correct": false
+        },
+        {
+          "option_text": "5√3 m, approximately 8.66 m above the wall",
+          "is_correct": true
+        },
+        {
+          "option_text": "10√3/3 m, approximately 5.77 m above the wall",
+          "is_correct": false
+        },
+        {
+          "option_text": "10√3 m, approximately 17.32 m above the wall",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Height reached = ladder × sin(angle with ground) = 10 × sin 60° = 10 × (√3/2) = 5√3 m ≈ 8.66 m. Option A (5 m) uses cos 60° = 0.5, which gives the horizontal distance from the wall to the ladder's foot, not the height. Option C (10√3/3) arises from computing 10/tan 60° = 10/√3, confusing this with the horizontal-reach formula. Option D (10√3) wrongly multiplies the ladder length by tan 60°. **Short Trick:** In a 30-60-90 triangle, sides are in ratio 1 : √3 : 2. Hypotenuse = 10 (ladder), so the vertical side (height) = 10 × (√3/2) = 5√3. No trig tables needed — just memorise the 1:√3:2 ratio for these angles.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:57:53+00:00",
+      "id": "sgk_QA_HEIGHTS_00015"
+    },
+    {
+      "stem": "A window in a building is 15 m above the ground. From this window, the angle of depression of a parked scooter on the road below is 30°. How far is the scooter from the base of the building?",
+      "options": [
+        {
+          "option_text": "5√3 m, using tan 60° for a 30° depression angle",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 m, equal to the height of the window itself",
+          "is_correct": false
+        },
+        {
+          "option_text": "15√3 m, approximately 25.98 m from the base",
+          "is_correct": true
+        },
+        {
+          "option_text": "30 m, applying the sine rule to the hypotenuse",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. The angle of depression from the window equals the angle of elevation from the scooter = 30°. In the right triangle: tan 30° = height / horizontal distance → 1/√3 = 15/d → d = 15√3 m ≈ 25.98 m. Option A (5√3 ≈ 8.66 m) uses tan 60° = √3, giving d = 15/√3 = 5√3 — the complementary-angle trap. Option B (15 m) is the result only when the angle is 45° (distance = height). Option D (30 m) comes from misapplying sin 30° = 0.5: treating d as the hypotenuse and writing 15/d = 0.5 → d = 30. **Short Trick:** Three-angle trio — angle 30°: distance = height × √3; angle 45°: distance = height; angle 60°: distance = height ÷ √3. Here 30° → d = 15 × √3 = 15√3 m. Instant recall, no setup required.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:57:53+00:00",
+      "id": "sgk_QA_HEIGHTS_00016"
+    },
+    {
+      "stem": "Two vertical poles of heights 12 m and 6 m stand on level ground some distance apart. A straight line joins the top of the 12 m pole to the base of the 6 m pole, and another joins the top of the 6 m pole to the base of the 12 m pole. At what height above the ground do these two lines intersect?",
+      "options": [
+        {
+          "option_text": "6 m, equal to the height of the shorter pole",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 m, equal to the harmonic mean of the two heights",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 m, independent of the distance between the poles",
+          "is_correct": true
+        },
+        {
+          "option_text": "9 m, the arithmetic mean of the two pole heights",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Place the 12 m pole at x = 0 and the 6 m pole at x = d. Line 1 (top of 12 m to base of 6 m): y = 12(1 − x/d). Line 2 (top of 6 m to base of 12 m): y = 6x/d. Setting equal: 12 − 12x/d = 6x/d → 12 = 18x/d → x = 2d/3. Then y = 6 × (2/3) = 4 m. Notice d cancels completely — the height is always h₁h₂/(h₁ + h₂) = (12 × 6)/18 = 4 m regardless of how far apart the poles are. Option B (8 m) is the full harmonic mean 2h₁h₂/(h₁ + h₂) — exactly twice the correct answer, a very common trap. Option D (9 m) is the arithmetic mean. **Short Trick:** Intersection height = product ÷ sum = (h₁ × h₂)/(h₁ + h₂). Here: 72 ÷ 18 = 4 m in one step. This formula works for any distance between poles — a favourite SSC pattern.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:57:53+00:00",
+      "id": "sgk_QA_HEIGHTS_00017"
+    },
+    {
+      "stem": "From two points on level ground on the same side of a tower, the angles of elevation of the top of the tower are 30° and 60°. The distance between these two points is 40 m. What is the height of the tower?",
+      "options": [
+        {
+          "option_text": "10√3 m ≈ 17.32 m (using sum of cot values, not difference)",
+          "is_correct": false
+        },
+        {
+          "option_text": "20√3 m ≈ 34.64 m, the correct height of the tower",
+          "is_correct": true
+        },
+        {
+          "option_text": "40/√3 m ≈ 23.09 m (treating the gap as base for 30°)",
+          "is_correct": false
+        },
+        {
+          "option_text": "40√3 m ≈ 69.28 m (treating the gap as base for 60°)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let height = h. From the nearer point (60°): tan 60° = h/d₁ → d₁ = h/√3. From the farther point (30°): tan 30° = h/d₂ → d₂ = h√3. Difference: d₂ − d₁ = h√3 − h/√3 = 2h/√3 = 40 → h = 20√3 m. Option A (10√3) treats the 40 m gap as the sum (d₁ + d₂) = h(1/√3 + √3) = 4h/√3 = 40 → h = 10√3 — mistaking sum for difference. Option C plugs 40 directly into tan 30°; Option D into tan 60°, both ignoring that 40 is the gap, not the base. **Short Trick:** Angles 30° and 60° from same side → h = gap × √3/2 = 40 × √3/2 = 20√3 m. General formula: h = d × tan α × tan β / (tan β − tan α), where α < β are the two angles.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:57:53+00:00",
+      "id": "sgk_QA_HEIGHTS_00018"
+    },
+    {
+      "stem": "An aircraft flying at a constant altitude of 600 m is observed from a fixed point on the ground. As it flies horizontally away from the observer, the angle of elevation changes from 60° to 30°. How far did the aircraft travel horizontally during this observation?",
+      "options": [
+        {
+          "option_text": "200√3 m ≈ 346.4 m (only the initial ground distance)",
+          "is_correct": false
+        },
+        {
+          "option_text": "600√3 m ≈ 1039.2 m (only the final ground distance)",
+          "is_correct": false
+        },
+        {
+          "option_text": "800√3 m ≈ 1385.6 m (sum of both ground distances)",
+          "is_correct": false
+        },
+        {
+          "option_text": "400√3 m ≈ 692.8 m, the actual horizontal travel distance",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. At elevation 60°: tan 60° = 600/d₁ → d₁ = 600/√3 = 200√3 m. At elevation 30°: tan 30° = 600/d₂ → d₂ = 600√3 m. Horizontal travel = d₂ − d₁ = 600√3 − 200√3 = 400√3 m ≈ 692.8 m. Option A (200√3) is d₁ — only the starting distance. Option B (600√3) is d₂ — only the ending distance. Option C (800√3) wrongly adds d₁ + d₂ instead of subtracting. **Short Trick:** Use the cot formula — horizontal travel = h(cot β − cot α) where α = near angle (60°), β = far angle (30°). = 600(cot 30° − cot 60°) = 600(√3 − 1/√3) = 600 × 2/√3 = 1200/√3 = 400√3 m. One formula, no two-step subtraction needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:57:53+00:00",
+      "id": "sgk_QA_HEIGHTS_00019"
+    },
+    {
+      "stem": "From the top of a vertical tower, the angles of depression of two points P and Q on level ground on the same side (P being nearer to the tower) are 45° and 30° respectively. If PQ = 25 m, what is the height of the tower?",
+      "options": [
+        {
+          "option_text": "25(√3−1)/2 m ≈ 9.15 m (treating P and Q as opposite sides)",
+          "is_correct": false
+        },
+        {
+          "option_text": "25(√3+1)/2 m ≈ 34.15 m, the exact tower height",
+          "is_correct": true
+        },
+        {
+          "option_text": "25/√3 m ≈ 14.43 m (using PQ directly as base for 30°)",
+          "is_correct": false
+        },
+        {
+          "option_text": "25(√3+1) m ≈ 68.3 m (skipping the division by 2 step)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let height = h, d_P = base-to-P distance, d_Q = base-to-Q distance. Depression 45° to P: tan 45° = h/d_P → d_P = h. Depression 30° to Q: tan 30° = h/d_Q → d_Q = h√3. Since Q is farther: PQ = d_Q − d_P = h√3 − h = h(√3 − 1) = 25 → h = 25/(√3 − 1). Rationalise by multiplying numerator and denominator by (√3 + 1): h = 25(√3 + 1)/[(√3)² − 1²] = 25(√3 + 1)/2 ≈ 34.15 m. Option A uses d_P + d_Q = h(1 + √3) = 25 (as if on opposite sides), yielding 25(√3 − 1)/2 ≈ 9.15 m. Option C plugs PQ = 25 directly as the horizontal base for 30°, giving h = 25 tan 30°. Option D forgets to divide by 2 after rationalisation. **Short Trick:** Depression angles 45° and 30°, same side → h = PQ(√3 + 1)/2. The rationalisation step always produces denominator = (3 − 1) = 2. Memorise the pattern to skip algebraic steps in the exam room.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:57:53+00:00",
+      "id": "sgk_QA_HEIGHTS_00020"
+    },
+    {
+      "stem": "A tree was broken by a storm. The broken top portion fell and its tip touched the ground 8 m from the base of the tree, making an angle of 30° with the ground. What was the original height of the tree before it broke?",
+      "options": [
+        {
+          "option_text": "8√3 m ≈ 13.86 m, the original height of the tree",
+          "is_correct": true
+        },
+        {
+          "option_text": "8√3/3 m ≈ 4.62 m (height of the break point only)",
+          "is_correct": false
+        },
+        {
+          "option_text": "16√3/3 m ≈ 9.24 m (length of the fallen portion only)",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 + 16√3/3 m ≈ 17.24 m (using 8 m as the break height)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. The fallen portion forms the hypotenuse of a right triangle with a horizontal leg of 8 m and an angle of 30° at the ground. Fallen length L = 8/cos 30° = 8/(√3/2) = 16/√3 = 16√3/3 m. Height of break from ground = L × sin 30° = (16√3/3) × (1/2) = 8√3/3 m. Original height = break height + fallen length = 8√3/3 + 16√3/3 = 24√3/3 = 8√3 m ≈ 13.86 m. Option B gives only the break-point height, omitting the fallen portion. Option C gives only the fallen-portion length, omitting the standing part. Option D uses 8 m (the horizontal ground distance) as the break height instead of computing it via trigonometry, then adds the fallen length — a very common conceptual error. **Short Trick:** Original height = d(tan θ + sec θ) = 8(tan 30° + sec 30°) = 8(1/√3 + 2/√3) = 8 × 3/√3 = 8√3 m. Memorise: broken-tree height = d(tan θ + sec θ) — one-line formula, no intermediate steps.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:57:53+00:00",
+      "id": "sgk_QA_HEIGHTS_00021"
+    },
+    {
+      "stem": "A ladder leans against a vertical wall. The foot of the ladder is 6 m from the base of the wall and the ladder makes an angle of 60° with the horizontal ground. What is the length of the ladder?",
+      "options": [
+        {
+          "option_text": "6√3 m, the height reached on the wall",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 m, the hypotenuse of the right triangle",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 m, derived by adding base and half the base",
+          "is_correct": false
+        },
+        {
+          "option_text": "6√2 m, applying 45° triangle proportion",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. cos 60° = base/hypotenuse = 6/L → L = 6 ÷ 0.5 = 12 m. Option A (6√3 m) is the height the ladder reaches on the wall (sin 60° × 12 = 6√3), not the ladder length — confusing the opposite side with the hypotenuse is the classic slip. Option D (6√2 m) applies a 45° triangle formula wrongly. **Short Trick:** In a 30-60-90 triangle, sides are in ratio 1 : √3 : 2. The base (adjacent to 60°) = 6 corresponds to '1', so hypotenuse = 6 × 2 = 12 m instantly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:05:31+00:00",
+      "id": "sgk_QA_HEIGHTS_00022"
+    },
+    {
+      "stem": "A person at a window 20 m above street level observes the top of a tree on the opposite side of a 20 m wide street at an angle of elevation of 45°. What is the total height of the tree from the ground?",
+      "options": [
+        {
+          "option_text": "20 m, equal to the observer's window height",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 m, window height plus the 45° elevation rise",
+          "is_correct": true
+        },
+        {
+          "option_text": "30 m, using half the horizontal street width",
+          "is_correct": false
+        },
+        {
+          "option_text": "20√2 m, treating it as a hypotenuse calculation",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Rise above window = 20 × tan 45° = 20 × 1 = 20 m. Total tree height = 20 (window level) + 20 (rise) = 40 m. Option A (20 m) omits the rise, treating the window height as the full tree height. Option D (20√2 m) computes the slant line-of-sight distance, not the vertical height. **Short Trick:** tan 45° = 1, so rise = horizontal distance = 20 m; add observer height: 20 + 20 = 40 m in one step.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:05:31+00:00",
+      "id": "sgk_QA_HEIGHTS_00023"
+    },
+    {
+      "stem": "From the top of a tower, the angles of depression of the top and the bottom of a 30 m high building are 30° and 60° respectively. What is the height of the tower?",
+      "options": [
+        {
+          "option_text": "30 m, equal to the height of the building observed",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 m, equating both depression angle equations",
+          "is_correct": true
+        },
+        {
+          "option_text": "60 m, obtained by doubling the building height",
+          "is_correct": false
+        },
+        {
+          "option_text": "90 m, using the angle sum 30° + 60° directly",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let tower height = h and horizontal distance = d. Depression 60° to foot: tan 60° = h/d → d = h/√3. Depression 30° to top: tan 30° = (h − 30)/d → d = (h − 30)√3. Equating: h/√3 = (h − 30)√3 → h = 3(h − 30) → 2h = 90 → h = 45 m. Option C (60 m) doubles the building height, ignoring the angle geometry entirely. Option D (90 m) adds the two angle values as if they were heights. **Short Trick:** Equate h/√3 = (h−30)√3 directly → h = 3h − 90 → h = 45 m in two lines.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:05:31+00:00",
+      "id": "sgk_QA_HEIGHTS_00024"
+    },
+    {
+      "stem": "A person on a bridge 12 m above a river watches a boat approaching directly below. The engine stops when the angle of depression is 30°, and the boat then drifts until the angle of depression becomes 60°. How far did the boat drift?",
+      "options": [
+        {
+          "option_text": "4√3 m, the final horizontal gap from the bridge",
+          "is_correct": false
+        },
+        {
+          "option_text": "8√3 m, the difference between the two positions",
+          "is_correct": true
+        },
+        {
+          "option_text": "12√3 m, the initial horizontal distance from bridge",
+          "is_correct": false
+        },
+        {
+          "option_text": "16√3 m, the sum of the two horizontal distances",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Bridge height = 12 m. At 30° depression: d1 = 12 ÷ tan 30° = 12√3 m. At 60° depression: d2 = 12 ÷ tan 60° = 12/√3 = 4√3 m. Drift = d1 − d2 = 12√3 − 4√3 = 8√3 m. Option C (12√3 m) is the starting distance, not the drift — the most common error here. Option A (4√3 m) is the ending distance from the bridge, not the distance covered. **Short Trick:** Factor 4√3: d1 = 3 × 4√3, d2 = 1 × 4√3; drift = (3 − 1) × 4√3 = 8√3 m.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:05:31+00:00",
+      "id": "sgk_QA_HEIGHTS_00025"
+    },
+    {
+      "stem": "The shadow of a vertical pole increases by 10 m when the sun's angle of elevation decreases from 60° to 45°. What is the height of the pole?",
+      "options": [
+        {
+          "option_text": "10(√3 + 1) m ≈ 27.3 m, using tangent sum rule",
+          "is_correct": false
+        },
+        {
+          "option_text": "5(3 + √3) m ≈ 23.7 m, from rationalised equation",
+          "is_correct": true
+        },
+        {
+          "option_text": "5√3 m ≈ 8.7 m, applying only the 60° shadow formula",
+          "is_correct": false
+        },
+        {
+          "option_text": "10√3 m ≈ 17.3 m, using only the 60° angle setup",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. At 60°: shadow = h/√3. At 45°: shadow = h. Increase: h − h/√3 = 10 → h(1 − 1/√3) = 10 → h = 10√3/(√3 − 1). Rationalise by multiplying (√3+1)/(√3+1): h = 10√3(√3+1)/2 = 5√3(√3+1) = 5(3 + √3) ≈ 23.7 m. Option A [10(√3+1) ≈ 27.3 m] skips dividing by 2 after rationalising — a frequent algebra slip. Option D uses only the 60° shadow without taking the difference. **Short Trick:** h(√3−1)/√3 = 10 → h = 10√3/(√3−1); multiply top and bottom by (√3+1) → h = 10√3(√3+1)/2 = 5(3+√3).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:05:31+00:00",
+      "id": "sgk_QA_HEIGHTS_00026"
+    },
+    {
+      "stem": "Two towers stand 100 m apart on level ground. An observer at the exact midpoint measures the angle of elevation to the top of the shorter tower as 30° and to the top of the taller tower as 60°. What is the ratio of the height of the shorter tower to the taller tower?",
+      "options": [
+        {
+          "option_text": "1 : √3, derived by taking the tangent values directly",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 3, from tan 30° and tan 60° at equal distance",
+          "is_correct": true
+        },
+        {
+          "option_text": "√3 : 1, obtained by reversing the elevation angles",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 2, using the ratio of the elevation degrees",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Midpoint is 50 m from each tower. h1 = 50 tan 30° = 50/√3. h2 = 50 tan 60° = 50√3. Ratio h1 : h2 = (1/√3) : √3 = 1/√3 ÷ √3 = 1/3 → ratio = 1 : 3. Option A (1 : √3) takes the tangent values themselves as the ratio and ignores that (1/√3)/√3 = 1/3, not 1/√3. Option D (1 : 2) uses degree values 30 and 60 as a proxy for heights, bypassing trigonometry. **Short Trick:** Since horizontal distance (50 m) is equal for both, height ratio = tan 30° : tan 60° = (1/√3) : √3 = 1 : 3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:05:31+00:00",
+      "id": "sgk_QA_HEIGHTS_00027"
+    },
+    {
+      "stem": "From a point on the ground, the angle of elevation of the top of a vertical tower is α and the angle of elevation of the top of a flagstaff of height f fixed at the top of the tower from the same point is β (β > α). Which expression gives the height of the tower?",
+      "options": [
+        {
+          "option_text": "f·tan β ÷ (tan β − tan α), placing β in numerator",
+          "is_correct": false
+        },
+        {
+          "option_text": "f·tan α ÷ (tan β + tan α), using sum in denominator",
+          "is_correct": false
+        },
+        {
+          "option_text": "f·tan α ÷ (tan β − tan α), correctly derived formula",
+          "is_correct": true
+        },
+        {
+          "option_text": "f·(tan β − tan α) ÷ tan α, inverted angle expression",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let h = tower height, d = horizontal distance. tan α = h/d → d = h/tan α. tan β = (h + f)/d → h + f = h·tan β/tan α. So f = h(tan β − tan α)/tan α → h = f·tan α/(tan β − tan α). Option A swaps α and β in the numerator — arising when students substitute d from the second equation into the first by mistake. Option D inverts the whole expression, giving h proportional to the angle difference rather than inversely so. **Short Trick:** Divide the two trig equations: (h+f)/h = tan β/tan α → f/h = (tan β − tan α)/tan α → h = f·tan α/(tan β − tan α).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:05:31+00:00",
+      "id": "sgk_QA_HEIGHTS_00028"
     }
   ]
 }

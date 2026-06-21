@@ -213,6 +213,216 @@
       "generator_tag": "auto-seed-2026-06-19",
       "generated_at": "2026-06-19T13:19:36+00:00",
       "id": "sgk_PHY_EMI_AC_00007"
+    },
+    {
+      "stem": "Fleming's Right-Hand Rule is used to determine the direction of induced EMF in a conductor moving through a magnetic field. Which three physical quantities does this rule correctly relate?",
+      "options": [
+        {
+          "option_text": "Velocity of the conductor, direction of magnetic field, and induced current",
+          "is_correct": true
+        },
+        {
+          "option_text": "Magnetic field, induced current, and the applied external EMF source",
+          "is_correct": false
+        },
+        {
+          "option_text": "Magnetic field direction, induced current, and opposing resistive force",
+          "is_correct": false
+        },
+        {
+          "option_text": "Conductor velocity, induced current, and the net electric flux in the field",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. In Fleming's Right-Hand Rule, the thumb points along the conductor's velocity, the index finger points along the external magnetic field, and the middle finger gives the direction of induced current (conventional). This mnemonic applies to generators and dynamos. Option B incorrectly introduces 'applied external EMF,' which belongs to circuit analysis (Kirchhoff's laws), not the induction rule. Option C substitutes 'resistive force' for induced current, confusing the Right-Hand Rule (generators) with the Left-Hand Rule (motors), which relates force, field, and current. Option D introduces 'electric flux,' which is Gauss's law territory, entirely unrelated to this rule.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:47+00:00",
+      "id": "sgk_PHY_EMI_AC_00008"
+    },
+    {
+      "stem": "In a purely capacitive AC circuit, the frequency of the supply is halved while the rms voltage across the capacitor is kept constant. What happens to the rms current in the circuit?",
+      "options": [
+        {
+          "option_text": "Double, since halving frequency reduces capacitive reactance proportionally",
+          "is_correct": false
+        },
+        {
+          "option_text": "Halve, since halving frequency doubles the capacitive reactance of the circuit",
+          "is_correct": true
+        },
+        {
+          "option_text": "Remain unchanged, as rms voltage and capacitance values are both held fixed",
+          "is_correct": false
+        },
+        {
+          "option_text": "Drop to one-quarter, as reactance change is proportional to frequency squared",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Capacitive reactance Xc = 1/(2πfC). When frequency halves (f → f/2), Xc doubles (Xc → 2Xc). Since rms current I = V/Xc, the current halves (I → V/2Xc = I/2). Option A is wrong: lower frequency INCREASES Xc (not decreases), so current falls rather than rises. Option C incorrectly treats Xc as fixed — but Xc explicitly depends on f, so holding V and C constant while changing f does change the current. Option D would require frequency to fall to one-quarter (not one-half) for a four-fold increase in Xc and a four-fold drop in current; squaring the frequency applies to resonant frequency shifts, not to Xc's linear dependence on f.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:47+00:00",
+      "id": "sgk_PHY_EMI_AC_00009"
+    },
+    {
+      "stem": "A series LCR circuit is driven at its resonant frequency. Which of the following statements correctly describes the circuit's behaviour at resonance?",
+      "options": [
+        {
+          "option_text": "Impedance is at maximum, equal to the arithmetic sum of XL and XC values",
+          "is_correct": false
+        },
+        {
+          "option_text": "Inductive reactance exceeds capacitive reactance by exactly the value of R",
+          "is_correct": false
+        },
+        {
+          "option_text": "Impedance equals resistance R alone, and the circuit power factor is unity",
+          "is_correct": true
+        },
+        {
+          "option_text": "Circuit draws minimum current, and maximum energy is stored in the capacitor",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. At resonance, XL = XC exactly, so the reactive components cancel. Net impedance Z = √[R² + (XL − XC)²] = √[R² + 0] = R — the minimum possible value. Power factor cos φ = R/Z = R/R = 1 (unity), meaning voltage and current are in phase and the circuit consumes maximum real power. Option A is doubly wrong: impedance is MINIMUM (not maximum) at resonance, and it does NOT equal XL + XC (which would be the maximum possible reactive impedance). Option B describes a misunderstanding where students subtract XC from XL and equate the difference to R — this has no physical basis. Option D is also doubly wrong: because impedance is minimum at resonance, the current is MAXIMUM (not minimum), and energy oscillates equally between L and C rather than being stored only in C.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:47+00:00",
+      "id": "sgk_PHY_EMI_AC_00010"
+    },
+    {
+      "stem": "A DC motor is connected to a 240 V supply. At full operating speed, the armature current is 5 A and the armature resistance is 4 Ω. What is the back-EMF developed by the motor at this speed?",
+      "options": [
+        {
+          "option_text": "200 V, found by applying a standard efficiency correction at full-load speed",
+          "is_correct": false
+        },
+        {
+          "option_text": "244 V, obtained by adding the inductive back-reaction to the supply voltage",
+          "is_correct": false
+        },
+        {
+          "option_text": "230 V, found by subtracting only half the total armature resistance drop",
+          "is_correct": false
+        },
+        {
+          "option_text": "220 V, found by subtracting the armature resistive drop from supply voltage",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. In a DC motor, the net driving voltage equals (Supply − Back-EMF), and this net voltage drives armature current through armature resistance: I = (V − Eb)/Ra. Rearranging: Eb = V − I×Ra = 240 − (5 × 4) = 240 − 20 = 220 V. Option A (200 V) results from using V/1.2 or a misapplied efficiency ratio — there is no such standard correction formula for back-EMF. Option B (244 V) is physically impossible: back-EMF in a motor operating at steady state must always be less than supply voltage, because a positive armature current (V > Eb) is what sustains rotation; if Eb exceeded V the motor would decelerate. Option C (230 V) uses I×Ra/2 = 10 V drop instead of the correct 20 V drop, a common slip in two-step problems.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:47+00:00",
+      "id": "sgk_PHY_EMI_AC_00011"
+    },
+    {
+      "stem": "At high frequencies, alternating current tends to flow predominantly near the outer surface of a conductor rather than uniformly through its cross-section — a phenomenon known as the 'skin effect.' As frequency increases, what happens to the effective AC resistance of the conductor?",
+      "options": [
+        {
+          "option_text": "Increases, as the effective cross-section carrying current is reduced",
+          "is_correct": true
+        },
+        {
+          "option_text": "Decreases, since current near the surface travels a shorter effective path",
+          "is_correct": false
+        },
+        {
+          "option_text": "Remains unchanged, since resistance depends only on material resistivity",
+          "is_correct": false
+        },
+        {
+          "option_text": "First decreases then increases due to competing thermal and magnetic effects",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. The skin effect arises because eddy currents induced inside the conductor by the changing magnetic field of the AC oppose the applied current, forcing charge carriers toward the outer surface. This progressively reduces the effective cross-sectional area A conducting current. Since resistance R = ρL/A, reducing A raises R. The 'skin depth' (δ ∝ 1/√f) shrinks with rising frequency, making the conduction region thinner and resistance higher. This is why high-frequency RF coils use Litz wire (many thin insulated strands) to maximise surface area. Option B inverts the logic: a shorter path would lower resistance, but the skin effect increases resistance by reducing area, not path length. Option C is wrong because DC resistance depends on resistivity and geometry, but AC resistance additionally depends on frequency through the skin effect. Option D invents a non-existent 'first-decrease' phase; resistance increases monotonically with frequency due to the skin effect.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:47+00:00",
+      "id": "sgk_PHY_EMI_AC_00012"
+    },
+    {
+      "stem": "The quality factor (Q-factor) of a series LCR resonant circuit quantifies the sharpness of the resonance peak. Which of the following correctly expresses Q in terms of resonant angular frequency ω₀, inductance L, and resistance R?",
+      "options": [
+        {
+          "option_text": "Q = ω₀R/L, indicating circuits with higher resistance resonate more sharply",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q = R/(ω₀L), applicable when series resistance exceeds inductive reactance",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q = ω₀L/R, where larger inductance or lower resistance sharpens resonance",
+          "is_correct": true
+        },
+        {
+          "option_text": "Q = ω₀RC, meaning resistance and capacitance together govern resonance width",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. At resonance, the current I = V/R (since Z = R). The voltage across the inductor is VL = I × XL = (V/R) × ω₀L. Q-factor = VL/V = ω₀L/R. Equivalently, Q = ω₀/Δω where Δω is the −3 dB bandwidth, confirming that higher L or lower R narrows the peak (higher Q). Option A (Q = ω₀R/L) inverts L and R: this would give higher Q with higher R, directly contradicting the fundamental principle that lossy (high-R) circuits have broad, low-Q resonances. Option B (Q = R/ω₀L) is the reciprocal of the correct formula and equals 1/Q — it represents the damping factor, not Q. Option D (Q = ω₀RC) is the Q-factor formula for a PARALLEL RLC resonant circuit, not a series circuit. In a parallel circuit, higher R actually means less power dissipation and higher Q; in a series circuit the relationship is inverted, making these two formulas non-interchangeable.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:47+00:00",
+      "id": "sgk_PHY_EMI_AC_00013"
+    },
+    {
+      "stem": "A single-phase transformer has a constant iron-core (hysteresis + eddy current) loss of 50 W and a full-load copper loss of 200 W. At what fraction of full load does this transformer achieve its maximum efficiency?",
+      "options": [
+        {
+          "option_text": "At 75% of full load, since iron loss is 3/4 of the full-load copper loss",
+          "is_correct": false
+        },
+        {
+          "option_text": "At 50% of full load, where variable copper loss equals constant iron loss",
+          "is_correct": true
+        },
+        {
+          "option_text": "At full load (100%), as peak efficiency coincides with rated transformer output",
+          "is_correct": false
+        },
+        {
+          "option_text": "At 25% of full load, taken as the direct ratio of iron to copper losses",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Transformer efficiency η = Output/(Output + Pi + Pc), where Pi = iron loss (constant) and Pc = copper loss (varies as load²). At fraction x of full load, copper loss = x²×Pc_FL. Maximum efficiency occurs when dη/dx = 0, which gives the condition Pi = x²×Pc_FL, i.e., iron loss = copper loss at that load. Solving: x² = Pi/Pc_FL = 50/200 = 0.25 → x = √0.25 = 0.5. So maximum efficiency occurs at 50% of full load. Option A (75%) would require x² = 0.5625, meaning 56.25% of copper loss equals iron loss — which is not the case here (50 ÷ 200 = 0.25, not 0.5625). Option C is a common misconception: maximum efficiency rarely coincides with full load unless Pi = Pc_FL exactly; here Pi (50 W) is far less than Pc_FL (200 W), so the crossover happens well below full load. Option D (25%) makes the critical error of computing x = Pi/Pc_FL = 50/200 = 0.25 directly, forgetting that copper loss scales as x² (not x), so one must take the square root of the ratio.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:02:47+00:00",
+      "id": "sgk_PHY_EMI_AC_00014"
     }
   ]
 }

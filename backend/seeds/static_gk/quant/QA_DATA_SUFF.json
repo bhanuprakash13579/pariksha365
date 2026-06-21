@@ -1,0 +1,848 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Data Sufficiency",
+  "topic_code": "QA_DATA_SUFF",
+  "questions": [
+    {
+      "stem": "Is positive integer p divisible by 6? Statement I: p is divisible by both 2 and 3. Statement II: p is an exact multiple of 12.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient to answer the question",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. Statement I: A number is divisible by 6 if and only if it is divisible by both 2 and 3, since gcd(2,3)=1. Statement I directly confirms divisibility by 6. Statement II: 12 = 2 × 6, so any multiple of 12 is automatically a multiple of 6. Each statement independently answers the question. Option C is wrong — we do not need both together since each one alone is conclusive. **Short Trick:** Divisibility-by-6 rule = even (last digit even) AND digit-sum divisible by 3. Multiples of 12 always satisfy both since 12 itself does.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:13:09+00:00",
+      "id": "sgk_QA_DATA_SUFF_00001"
+    },
+    {
+      "stem": "What is the simple interest earned on a certain principal amount? Statement I: The principal is ₹8,000 and the annual rate of interest is 5%. Statement II: The time period of the investment is 3 years.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Either statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. SI = (P × R × T) / 100 needs all three variables. Statement I gives P = ₹8,000 and R = 5% but not T — insufficient. Statement II gives T = 3 years but not P or R — insufficient. Together: SI = (8000 × 5 × 3) / 100 = ₹1,200. Option D is wrong because neither statement alone provides all three inputs; they are complementary, not redundant. **Short Trick:** SI = P × R% × T = 8000 × 0.05 × 3. Compute in steps: 5% of 8000 = ₹400 per year; × 3 years = ₹1,200.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:13:09+00:00",
+      "id": "sgk_QA_DATA_SUFF_00002"
+    },
+    {
+      "stem": "What is Pooja's present age? Statement I: The ratio of Pooja's age to her mother's age is 3 : 7. Statement II: Ten years from now, Pooja will be 28 years old.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Statement I: Pooja = 3k, Mother = 7k for unknown k — valid for k = 3, 4, 5, 7, etc. No unique answer. Not sufficient. Statement II: Age 10 years hence = 28 → Present age = 28 − 10 = 18 years. Uniquely determined. Option C is wrong because Statement II alone resolves the question; Statement I cannot pin down an absolute age without a second equation. **Short Trick:** Present age = Future age − years elapsed = 28 − 10 = 18. No algebra needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:13:09+00:00",
+      "id": "sgk_QA_DATA_SUFF_00003"
+    },
+    {
+      "stem": "How many seconds will a train take to completely cross a bridge? Statement I: The speed of the train is 90 km/h. Statement II: The combined length of the train and the bridge is 750 m.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is sufficient",
+          "is_correct": true
+        },
+        {
+          "option_text": "Either statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Time = (Length of train + Length of bridge) / Speed. Statement I gives speed = 90 km/h = 25 m/s but not the total distance — insufficient. Statement II gives combined length = 750 m but not speed — insufficient. Together: Time = 750 / 25 = 30 seconds. Option A is wrong because speed alone cannot determine crossing time without knowing total distance to cover. **Short Trick:** km/h → m/s: multiply by 5/18. 90 × 5/18 = 25 m/s. Then 750 ÷ 25 = 30 sec. Memorise: 90 km/h = 25 m/s (standard exam value).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:13:09+00:00",
+      "id": "sgk_QA_DATA_SUFF_00004"
+    },
+    {
+      "stem": "What is the perimeter of a square? Statement I: The area of the square is 225 cm². Statement II: The length of the diagonal of the square is 15√2 cm.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient to answer the question",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Statement I: Area = side² = 225 → side = 15 cm → Perimeter = 60 cm. Sufficient. Statement II: For a square, diagonal = side√2 → side = 15√2 / √2 = 15 cm → Perimeter = 60 cm. Sufficient. Both routes independently yield the unique side length. Option C is wrong — both statements are not needed simultaneously; each alone resolves the question. **Short Trick:** Area → side: √225 = 15 (since 15² = 225). Diagonal → side: divide by √2. Both confirm perimeter = 4 × 15 = 60 cm.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:13:09+00:00",
+      "id": "sgk_QA_DATA_SUFF_00005"
+    },
+    {
+      "stem": "By what percentage did a company's annual revenue increase from 2022 to 2023? Statement I: Revenue in 2022 was ₹4,00,000 and in 2023 it was ₹5,20,000. Statement II: The absolute increase in revenue was ₹1,20,000.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": true
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. % increase = (Increase / Base) × 100. Statement I provides both base (₹4,00,000) and final (₹5,20,000) → Increase = ₹1,20,000 → % = (1,20,000 / 4,00,000) × 100 = 30%. Sufficient. Statement II gives only the absolute increase = ₹1,20,000 but without the base figure the percentage is indeterminate — e.g., on a base of ₹2,40,000 it would be 50%, not 30%. Not sufficient. Option D is the classic trap here: absolute change and percentage change are fundamentally different; the base is always required. **Short Trick:** % increase = (120000 / 400000) × 100. Cancel zeros: 12/40 × 100 = 30%. Or note 1,20,000 is 3/10 of 4,00,000 → 30%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:13:09+00:00",
+      "id": "sgk_QA_DATA_SUFF_00006"
+    },
+    {
+      "stem": "How many days will B alone take to complete a certain piece of work? Statement I: A and B working together can finish the work in 15 days. Statement II: B is twice as efficient as A, and A alone takes 45 days to complete the work.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Statement I: 1/A + 1/B = 1/15 — one equation with two unknowns. Not sufficient. Statement II: B's efficiency = 2 × A's efficiency; since time ∝ 1/efficiency, B's days = A's days / 2 = 45 / 2 = 22.5 days. Uniquely determined without needing Statement I. Option C is the most tempting wrong answer — candidates assume both are needed to split the combined rate — but Statement II independently gives B's individual rate from A's absolute time alone. **Short Trick:** Efficiency ratio A : B = 1 : 2 → Time ratio A : B = 2 : 1. A takes 45 days → B takes 45 × (1/2) = 22.5 days. LCM check: Total work = 45 units; A does 1 unit/day, B does 2 units/day → B alone = 45 ÷ 2 = 22.5 days.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:13:09+00:00",
+      "id": "sgk_QA_DATA_SUFF_00007"
+    },
+    {
+      "stem": "What is the selling price of an article? Statement I: The cost price of the article is ₹600. Statement II: The profit earned is 25% of the cost price.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, not Statement II",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, not Statement I",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, neither alone",
+          "is_correct": true
+        },
+        {
+          "option_text": "Either statement alone is sufficient independently",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Statement I gives CP = ₹600 but no profit rate, so SP cannot be determined. Statement II gives profit = 25% of CP but CP is unknown, so SP still cannot be found. Together: Profit = 25% × 600 = ₹150; SP = 600 + 150 = ₹750. Option A is wrong because knowing only CP without the profit percentage is insufficient to compute SP. **Short Trick:** SP = CP × (1 + P%/100) = 600 × 1.25 = ₹750. Quick mental check: 25% of 600 = 600 ÷ 4 = 150; SP = 600 + 150 = ₹750.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:40:52+00:00",
+      "id": "sgk_QA_DATA_SUFF_00008"
+    },
+    {
+      "stem": "What is the average of five consecutive even numbers? Statement I: The product of the smallest and largest of the five numbers is 240. Statement II: Three times the middle number equals 48.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, not Statement II",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, not Statement I",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, neither alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient independently",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. Let the five numbers be n, n+2, n+4, n+6, n+8. Statement I: n(n+8) = 240 → n² + 8n − 240 = 0 → n = 12 (try: 12 × 20 = 240 ✓). Average = middle number = 12 + 4 = 16. SUFFICIENT alone. Statement II: 3(n+4) = 48 → n+4 = 16 → average = 16. SUFFICIENT alone. Option C is wrong because we do not need both statements; each independently fixes the entire sequence. **Short Trick:** For any odd count of consecutive even numbers, average = middle (centre) number. From S2: middle = 48 ÷ 3 = 16 directly, no algebra needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:40:52+00:00",
+      "id": "sgk_QA_DATA_SUFF_00009"
+    },
+    {
+      "stem": "What is the area of a rectangle? Statement I: The length of the diagonal of the rectangle is 10 cm. Statement II: The length of the rectangle is 8 cm.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, not Statement II",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, not Statement I",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, neither alone",
+          "is_correct": true
+        },
+        {
+          "option_text": "Either statement alone is sufficient independently",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Statement I: diagonal = 10 cm → L² + B² = 100. Infinite pairs satisfy this (e.g., L = 6 & B = 8, or L = 2 & B = √96), so area is not unique. NOT sufficient. Statement II: L = 8 cm, but B is unknown. NOT sufficient alone. Together: 8² + B² = 100 → B² = 36 → B = 6. Area = 8 × 6 = 48 cm². Option D is wrong because diagonal alone does not uniquely fix a rectangle. **Short Trick:** Spot the 6-8-10 Pythagorean triple instantly — diagonal 10 with one side 8 must pair with side 6. Area = 8 × 6 = 48 cm².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:40:52+00:00",
+      "id": "sgk_QA_DATA_SUFF_00010"
+    },
+    {
+      "stem": "What is the speed of a boat in still water? Statement I: The downstream speed of the boat is 18 km/h and the speed of the current is 4 km/h. Statement II: The boat covers 50 km upstream in 5 hours.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, not Statement II",
+          "is_correct": true
+        },
+        {
+          "option_text": "Statement II alone is sufficient, not Statement I",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, neither alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient independently",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Statement I: downstream speed = boat + current = 18 km/h; current = 4 km/h. Boat speed = 18 − 4 = 14 km/h. SUFFICIENT alone. Statement II: upstream speed = 50 ÷ 5 = 10 km/h = boat − current. This gives one equation with two unknowns (boat speed and current speed), so it is NOT sufficient alone. Option D is wrong because Statement II cannot determine boat speed without knowing the current speed separately. **Short Trick:** Boat speed = Downstream speed − Stream speed = 18 − 4 = 14 km/h. When both upstream (U) and downstream (D) speeds are known, use B = (D + U)/2 — but here only D and stream are given, so direct subtraction applies.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:40:52+00:00",
+      "id": "sgk_QA_DATA_SUFF_00011"
+    },
+    {
+      "stem": "In how many hours will pipe C alone fill a cistern? Statement I: Pipes A, B, and C together fill the cistern in 6 hours. Statement II: Pipes A and B together fill the cistern in 10 hours.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, not Statement II",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, not Statement I",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, neither alone",
+          "is_correct": true
+        },
+        {
+          "option_text": "Either statement alone is sufficient independently",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Statement I gives combined rate of A, B, C as 1/6 per hour, but C's individual rate cannot be extracted without knowing A and B separately. NOT sufficient. Statement II gives combined rate of A+B as 1/10 per hour, but C is not mentioned. NOT sufficient alone. Together: C's rate = 1/6 − 1/10 = 5/30 − 3/30 = 2/30 = 1/15. Pipe C alone takes 15 hours. Option D is wrong because neither statement alone isolates C's contribution. **Short Trick:** LCM method — let cistern = 30 units. (A+B+C) fill 30/6 = 5 units/hr; (A+B) fill 30/10 = 3 units/hr. C fills 5 − 3 = 2 units/hr. C alone = 30 ÷ 2 = 15 hours.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:40:52+00:00",
+      "id": "sgk_QA_DATA_SUFF_00012"
+    },
+    {
+      "stem": "In what ratio were two varieties of rice costing ₹40/kg and ₹60/kg mixed? Statement I: The mixture was sold at ₹57/kg at a profit of 14%. Statement II: The cost price of 5 kg of the mixture is ₹250.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, not Statement II",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, not Statement I",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, neither alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient independently",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Statement I: SP = ₹57 at 14% profit → CP of mixture = 57 ÷ 1.14 = ₹50/kg. By alligation: (60 − 50):(50 − 40) = 10:10 = 1:1. SUFFICIENT alone. Statement II: CP = ₹250 for 5 kg → ₹50/kg. Same alligation gives 1:1. SUFFICIENT alone. Each statement independently reveals the average mixture cost, making alligation directly applicable. Option C is wrong — we need only one statement, not both. **Short Trick:** Alligation rule — Mean cost = ₹50. Difference from cheaper (₹40): 10. Difference from costlier (₹60): 10. Ratio = 10:10 = 1:1. For S1, quick CP check: 57 ÷ 1.14 → multiply by 100/100 → 5700 ÷ 114 = 50 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:40:52+00:00",
+      "id": "sgk_QA_DATA_SUFF_00013"
+    },
+    {
+      "stem": "In how many days can X alone complete a task? Statement I: X is 50% more efficient than Y, who is 40% less efficient than Z. Statement II: Y alone takes 15 days and X and Y together complete the task in 6 days.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, not Statement II",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, not Statement I",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both statements together are sufficient, neither alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is sufficient independently",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Statement I: X is 50% more efficient than Y → X's rate = 1.5 × Y's rate; Y is 40% less efficient than Z → Y = 0.6 × Z. These are purely relative ratios — no absolute number of days is given for any worker, so X's actual days cannot be computed. The mention of Z is a deliberate distractor suggesting richness. NOT sufficient. Statement II: Y alone = 15 days → Y's rate = 1/15 per day. Together rate = 1/6 per day. X's rate = 1/6 − 1/15 = 5/30 − 2/30 = 3/30 = 1/10. X alone = 10 days. SUFFICIENT. Option A is wrong because Statement I carries no baseline numbers whatsoever. **Short Trick:** Formula — X alone = (Y × together) ÷ (Y − together) = (15 × 6) ÷ (15 − 6) = 90 ÷ 9 = 10 days. General rule: If A+B take T days and B takes b days, A alone = bT/(b − T).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:40:52+00:00",
+      "id": "sgk_QA_DATA_SUFF_00014"
+    },
+    {
+      "stem": "What is the two-digit number N? Statement I: The sum of the digits of N is 9. Statement II: The tens digit of N is exactly twice the units digit.",
+      "options": [
+        {
+          "option_text": "Only Statement I alone is sufficient to answer the question",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Statement II alone is sufficient to answer the question",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are needed; neither alone suffices",
+          "is_correct": true
+        },
+        {
+          "option_text": "Either statement alone is independently sufficient to answer it",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Statement I alone: digit-sum = 9 yields N ∈ {18, 27, 36, 45, 54, 63, 72, 81, 90} — 9 candidates, not unique. Statement II alone: tens = 2 × units yields N ∈ {21, 42, 63, 84} — 4 candidates, not unique. Combined: let units = u, tens = 2u. Digit-sum condition: 2u + u = 9 → u = 3, tens = 6 → N = 63. Unique answer found. Option A fails because Statement I gives 9 solutions; Option B fails because Statement II gives 4 solutions. **Short Trick:** In 'find the unique number' DS questions, always count solutions per statement. Here 9 and 4 respectively — so combine. Set tens = 2u, sum = 3u = 9 → u = 3 → N = 63 in under 10 seconds.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:46:43+00:00",
+      "id": "sgk_QA_DATA_SUFF_00015"
+    },
+    {
+      "stem": "What is the principal amount on which interest is calculated? Statement I: The simple interest earned at 8% per annum for 3 years is ₹1,200. Statement II: The simple interest earned is exactly 24% of the principal.",
+      "options": [
+        {
+          "option_text": "Only Statement I alone is sufficient to answer the question",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only Statement II alone is sufficient to answer the question",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are needed; neither alone suffices",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is independently sufficient to answer it",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Statement I: SI = PRT/100 → 1200 = P × 8 × 3/100 → P × 24/100 = 1200 → P = ₹5,000. Unique value — sufficient. Statement II: 'SI = 24% of P' merely restates that R × T = 24 (e.g., 8% × 3 yr, or 12% × 2 yr). P can be ₹1,000, ₹5,000, or any value — no unique principal is determinable. The classic trap: Statement II looks like a numeric clue but gives only a ratio relation with no fixed absolute amount. **Short Trick:** SI = PRT/100. Statement I gives two constants (R = 8, T = 3) plus the SI value, so P = 100 × SI/(R × T) = 100 × 1200/24 = ₹5,000. Rule: whenever a DS statement gives only a proportional relationship (no fixed anchor value), it cannot pin down a unique absolute quantity.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:46:43+00:00",
+      "id": "sgk_QA_DATA_SUFF_00016"
+    },
+    {
+      "stem": "In a class, what percentage of students passed the examination? Statement I: Exactly 18 students failed the examination. Statement II: The number of students who passed is exactly twice the number who failed.",
+      "options": [
+        {
+          "option_text": "Only Statement I alone is sufficient to answer the question",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Statement II alone is sufficient to answer the question",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both statements together are needed; neither alone suffices",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is independently sufficient to answer it",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Statement I: failed = 18, but total class strength is unknown — pass% = 18/total × 100 cannot be computed. Not sufficient. Statement II: passed = 2 × failed → out of every 3 students, 2 passed and 1 failed → pass% = 2/3 × 100 ≈ 66.67%. The ratio alone is enough to compute the percentage — actual counts are irrelevant. The tempting wrong answer is C: candidates assume they need the absolute number of students, but percentages depend only on ratios. Statement I provides an absolute count without a denominator, making it useless alone. **Short Trick:** Whenever a DS question asks for a percentage, a statement giving the ratio of the two parts (pass:fail = 2:1) is always sufficient. Pass% = 2/(2+1) × 100 = 66.67%. Absolute numbers never matter for percentage questions — only ratios do.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:46:43+00:00",
+      "id": "sgk_QA_DATA_SUFF_00017"
+    },
+    {
+      "stem": "What is the circumference of a circle drawn on a sheet of paper? Statement I: The area of the circle is 154 cm². Statement II: The diameter of the circle is 14 cm.",
+      "options": [
+        {
+          "option_text": "Only Statement I alone is sufficient to answer the question",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Statement II alone is sufficient to answer the question",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are needed; neither alone suffices",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is independently sufficient to answer it",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Statement I: Area = πr² = 154 → r² = 154 × 7/22 = 49 → r = 7 cm → Circumference = 2 × 22/7 × 7 = 44 cm. Sufficient alone. Statement II: Diameter = 14 → r = 7 cm → Circumference = 44 cm. Sufficient alone. Both statements independently determine r = 7 cm and hence circumference = 44 cm. The tempting distractor is C (both needed): a student who confuses the area formula with circumference, thinking diameter cannot give circumference directly, falls for this trap. **Short Trick:** For circle DS, remember — knowing any one of {radius, diameter, area, circumference} uniquely determines all others. Area path: r² = 154 × 7/22 = 49 → r = 7 → C = 2πr = 44 cm. Diameter path: r = 14/2 = 7 → C = 44 cm. Either alone is a one-step solve.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:46:43+00:00",
+      "id": "sgk_QA_DATA_SUFF_00018"
+    },
+    {
+      "stem": "What is the speed of a motorboat in still water, in km/h? Statement I: The boat covers 48 km in 4 hours while going downstream. Statement II: The speed of the river current is 3 km/h.",
+      "options": [
+        {
+          "option_text": "Only Statement I alone is sufficient to answer the question",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Statement II alone is sufficient to answer the question",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are needed; neither alone suffices",
+          "is_correct": true
+        },
+        {
+          "option_text": "Either statement alone is independently sufficient to answer it",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Let boat speed = b km/h, current speed = c km/h. Statement I: downstream speed = 48/4 = 12 km/h → b + c = 12. One equation, two unknowns — not sufficient. Statement II: c = 3 km/h. One value given but b still unknown — not sufficient. Combined: b + 3 = 12 → b = 9 km/h. Unique answer. The classic trap with Statement I: many candidates confuse downstream speed (b + c) with boat speed (b), incorrectly concluding that Statement I gives b = 12. It gives b + c = 12. **Short Trick:** In boats-and-streams DS, always check: 'Do I have a speed-distance equation AND a value for the current?' Here Statement I gives b + c = 12, Statement II gives c = 3 → b = 12 − 3 = 9 km/h in one subtraction. Neither condition alone closes the two-variable system.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:46:43+00:00",
+      "id": "sgk_QA_DATA_SUFF_00019"
+    },
+    {
+      "stem": "A trader sells two articles at ₹990 each. What is the net percentage loss on the combined transaction? Statement I: The trader earns a 10% profit on the first article. Statement II: The trader incurs a 10% loss on the second article.",
+      "options": [
+        {
+          "option_text": "Only Statement I alone is sufficient to answer the question",
+          "is_correct": false
+        },
+        {
+          "option_text": "Only Statement II alone is sufficient to answer the question",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are needed; neither alone suffices",
+          "is_correct": true
+        },
+        {
+          "option_text": "Either statement alone is independently sufficient to answer it",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. SP of each article = ₹990. Statement I alone: CP₁ = 990/1.1 = ₹900. CP₂ unknown — total CP and hence net loss% cannot be computed. Not sufficient. Statement II alone: CP₂ = 990/0.9 = ₹1,100. CP₁ unknown — not sufficient. Combined: Total CP = 900 + 1100 = ₹2,000; Total SP = ₹1,980; Net Loss = ₹20; Net Loss% = 20/2000 × 100 = 1%. The dangerous trap is Option D: since both profit% and loss% equal 10%, candidates assume either statement alone is sufficient — but you need BOTH cost prices to compute total CP, and each statement gives only one CP. **Short Trick:** Formula for same SP with equal profit% and loss%: Net Loss% = p²/100. Here p = 10 → Net Loss% = 100/100 = 1%. To apply this formula you still need BOTH the profit% (Stmt I) and the loss% (Stmt II) — confirming C.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:46:43+00:00",
+      "id": "sgk_QA_DATA_SUFF_00020"
+    },
+    {
+      "stem": "What is the HCF of two positive integers p and q? Statement I: The LCM of p and q is 360 and their product is 1,800. Statement II: Both p and q are divisible by 6, and their LCM equals 5 times their HCF.",
+      "options": [
+        {
+          "option_text": "Only Statement I alone is sufficient to answer the question",
+          "is_correct": true
+        },
+        {
+          "option_text": "Only Statement II alone is sufficient to answer the question",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are needed; neither alone suffices",
+          "is_correct": false
+        },
+        {
+          "option_text": "Either statement alone is independently sufficient to answer it",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Statement I: Standard identity HCF × LCM = p × q → HCF × 360 = 1800 → HCF = 5. Unique value — sufficient. Statement II: p and q both divisible by 6 → HCF is a multiple of 6. LCM = 5 × HCF. Let HCF = 6k → LCM = 30k. Valid pairs exist for every positive integer k: k=1 gives (6, 30) with HCF=6; k=2 gives (12, 60) with HCF=12; etc. HCF is not pinned to a unique value — not sufficient. The trap for Statement II: 'LCM = 5 × HCF' looks like it fixes the relationship, but it only sets the ratio LCM:HCF = 5:1, leaving infinitely many valid pairs. **Short Trick:** Memorise HCF × LCM = p × q. Whenever a DS question provides both LCM and the product, HCF = product/LCM is a one-step solve: 1800/360 = 5. Statement I is immediately sufficient; no need to even evaluate Statement II.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:46:43+00:00",
+      "id": "sgk_QA_DATA_SUFF_00021"
+    },
+    {
+      "stem": "What is the profit percentage earned by a trader on selling an article?\nStatement I: The selling price of the article is ₹1,200.\nStatement II: The cost price of the article is ₹1,000.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is",
+          "is_correct": true
+        },
+        {
+          "option_text": "Each statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Profit % = (SP − CP)/CP × 100. Statement I gives SP = ₹1,200 but CP is unknown — insufficient alone. Statement II gives CP = ₹1,000 but SP is unknown — insufficient alone. Together: Profit = 1,200 − 1,000 = ₹200; Profit % = 200/1,000 × 100 = 20%. Option D is wrong because you need both SP and CP; neither alone closes the formula. The common trap is assuming you can 'back-calculate' the other value from one piece, but without a second constraint that is impossible.\n**Short Trick:** Once you have both values, use Profit % = (Difference / CP) × 100 = (200/1000) × 100. Recognise 200/1000 = 1/5 instantly (1/5 × 100 = 20%). Never long-divide — spot the fraction first.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:55:05+00:00",
+      "id": "sgk_QA_DATA_SUFF_00022"
+    },
+    {
+      "stem": "What is the circumference of a circular running track?\nStatement I: The diameter of the track is 21 m.\nStatement II: The area enclosed by the track is 346.5 m² (use π = 22/7).",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is",
+          "is_correct": false
+        },
+        {
+          "option_text": "Each statement alone is sufficient to answer the question",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. Statement I: diameter = 21 m → C = π × d = (22/7) × 21 = 22 × 3 = 66 m. Sufficient alone. Statement II: πr² = 346.5 → r² = 346.5 × 7/22 = 110.25 → r = 10.5 m → C = 2 × (22/7) × 10.5 = 66 m. Also sufficient alone. Option C is the classic trap — students assume 'both together' whenever they see two statements, but each statement independently gives circumference = 66 m. When diameter is known, circumference follows in one step; when area is known, radius follows, then circumference.\n**Short Trick:** From diameter: C = π × d = (22/7) × 21 = 66 m in one multiplication. From area: r² = A/π = 346.5 ÷ (22/7) = 346.5 × 7/22 = 110.25; recognise 10.5² = 110.25, so r = 10.5, C = 66 m. Commit to memory: 10.5² = 110.25.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:55:05+00:00",
+      "id": "sgk_QA_DATA_SUFF_00023"
+    },
+    {
+      "stem": "By how much does the compound interest exceed the simple interest earned on a certain principal for exactly 2 years at a fixed annual rate?\nStatement I: The simple interest for those 2 years on the principal is ₹3,200.\nStatement II: The principal is ₹8,000 and the annual rate of interest is 20%.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is",
+          "is_correct": false
+        },
+        {
+          "option_text": "Each statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Key formula: CI − SI for 2 years = P × (R/100)². Statement I: SI = P×R×2/100 = 3,200 → PR = 1,60,000. The difference = P × (R/100)² = (PR/100) × (R/100) = 1,600 × (R/100). R is still unknown — insufficient alone. Statement II: P = 8,000, R = 20% → CI − SI = 8,000 × (0.20)² = 8,000 × 0.04 = ₹320. Sufficient alone. Option C is the trap: candidates think Statement I lacks 'enough' information and rush to combine, without noticing that Statement II alone is self-complete. Statement I gives PR but not P and R individually, so the rate remains elusive.\n**Short Trick:** CI − SI (2 yr) = P × r²/10,000 where r is rate in %. Here: 8,000 × 400/10,000 = 8,000 × 0.04 = ₹320. Memorise the formula as 'P times r-squared over 10,000' — no need to compute CI and SI separately.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:55:05+00:00",
+      "id": "sgk_QA_DATA_SUFF_00024"
+    },
+    {
+      "stem": "A sum of ₹5,000 is invested at compound interest. For how many years was this sum invested?\nStatement I: The maturity amount after the investment period is ₹7,200 and the rate is 20% per annum.\nStatement II: The total interest earned during the investment period is ₹2,200.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": true
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is",
+          "is_correct": false
+        },
+        {
+          "option_text": "Each statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Statement I: 5,000 × (1.20)^n = 7,200 → (1.20)^n = 1.44. Since 1.20² = 1.44 exactly, n = 2 years. Sufficient alone. Statement II: Interest = ₹2,200 → Amount = ₹7,200 — but this is the same amount as implied in Statement I; without knowing the rate we cannot set up the equation (1 + r/100)^n = 1.44 and solve for n). Rate is absent, so infinitely many (r, n) pairs can produce ₹2,200 interest on ₹5,000. Insufficient alone. Option D is wrong: Statement II tells us nothing independent of the rate, so together they work, but alone Statement I is already enough.\n**Short Trick:** Know powers of 1.20: 1.20¹ = 1.20, 1.20² = 1.44, 1.20³ = 1.728. Divide 7,200 by 5,000 = 1.44 → spot this as 1.20² → n = 2. Commit these three values to memory for any 20%-rate CI question.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:55:05+00:00",
+      "id": "sgk_QA_DATA_SUFF_00025"
+    },
+    {
+      "stem": "What is the sum of the present ages of P and Q?\nStatement I: P is 5 years older than Q.\nStatement II: Five years ago, the ratio of P's age to Q's age was 2 : 1.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is",
+          "is_correct": true
+        },
+        {
+          "option_text": "Each statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Statement I: P − Q = 5. One equation, two unknowns — gives difference but not sum. Insufficient. Statement II: (P − 5)/(Q − 5) = 2/1 → P − 5 = 2Q − 10 → P = 2Q − 5. Still one equation in two unknowns. Insufficient alone. Together: P = Q + 5 (from I) and P = 2Q − 5 (from II). Equating: Q + 5 = 2Q − 5 → Q = 10, P = 15. Sum = 25. Option D is wrong — Statement II alone establishes P in terms of Q but leaves the absolute values free (Q = 5 or 10 or 20 etc. all satisfy the ratio with the right P).\n**Short Trick:** Write both as P − Q = 5 and P − 2Q = −5. Subtract the second from the first: (P−Q) − (P−2Q) = 5−(−5) → Q = 10. Then P = 15, Sum = 25. The 'subtract equations' move is faster than substitution under exam pressure.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:55:05+00:00",
+      "id": "sgk_QA_DATA_SUFF_00026"
+    },
+    {
+      "stem": "Two balls are drawn simultaneously at random from a bag containing only red and blue balls. What is the probability that both drawn balls are red?\nStatement I: The bag contains exactly 5 red balls, and the number of blue balls is between 2 and 4 inclusive.\nStatement II: The total number of balls in the bag is 8.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is",
+          "is_correct": true
+        },
+        {
+          "option_text": "Each statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Statement I: Red = 5, Blue ∈ {2, 3, 4} — totals could be 7, 8, or 9, giving three different probabilities (C(5,2)/C(7,2) = 10/21, 10/28, or 10/36). Insufficient. Statement II: Total = 8, but the split between red and blue is unknown — e.g., 3 red + 5 blue or 6 red + 2 blue etc. all give different probabilities. Insufficient. Together: Red = 5 and Total = 8 → Blue = 3 (the only value in [2, 4] consistent with a total of 8 when red = 5). P(both red) = C(5,2)/C(8,2) = 10/28 = 5/14. The trap is Option A — candidates see 'red count + range for blue' and wrongly conclude that 'approximately known' is enough; probability needs exact counts.\n**Short Trick:** C(5,2) = 5×4/2 = 10; C(8,2) = 8×7/2 = 28. P = 10/28; cancel 2 from both → 5/14. For small n, always compute C(n,2) as n(n−1)/2 without expanding the full factorial.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:55:05+00:00",
+      "id": "sgk_QA_DATA_SUFF_00027"
+    },
+    {
+      "stem": "In a business partnership, A, B, and C invest capital for different durations. What is C's share of the annual profit?\nStatement I: A invested ₹30,000 for 8 months and B invested ₹15,000 for the entire 12 months.\nStatement II: C invested ₹25,000 for the full 12 months and the total annual profit is ₹43,200.",
+      "options": [
+        {
+          "option_text": "Statement I alone is sufficient, but Statement II alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Statement II alone is sufficient, but Statement I alone is not",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both statements together are sufficient, but neither alone is",
+          "is_correct": true
+        },
+        {
+          "option_text": "Each statement alone is sufficient to answer the question",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Profit is shared in proportion to capital × time. Statement I: A = 30,000×8 = 2,40,000 unit-months; B = 15,000×12 = 1,80,000 unit-months. C's capital and the total profit are both unknown — cannot compute C's share. Insufficient. Statement II: C = 25,000×12 = 3,00,000 unit-months and total profit = ₹43,200. But A's and B's capital-times are unknown, so the ratio cannot be completed. Insufficient alone. Together: Ratio = 2,40,000 : 1,80,000 : 3,00,000. Divide each by 60,000 → 4 : 3 : 5. Total parts = 12. C's share = (5/12) × 43,200 = ₹18,000. The hardest trap is Option B — students see 'C's own data + profit' and think that's enough, forgetting that C's fraction depends on A's and B's weighted investments.\n**Short Trick:** Simplify ratio before multiplying: 240 : 180 : 300 → divide by 60 → 4:3:5. C's share = 43,200 ÷ 12 × 5 = 3,600 × 5 = ₹18,000. Always simplify the ratio first; working with 2,40,000 directly leads to arithmetic errors under time pressure.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:55:05+00:00",
+      "id": "sgk_QA_DATA_SUFF_00028"
+    }
+  ]
+}

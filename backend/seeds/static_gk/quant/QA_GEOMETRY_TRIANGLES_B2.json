@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_GEOMETRY_TRIANGLES",
+  "subject": "Quantitative Aptitude",
+  "topic": "Geometry — Triangles",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "In a triangle, the angles are in the ratio 2:3:4. Find the largest angle.",
+      "options": [
+        {"option_text": "60° (wrong: 60° would be the middle angle; largest = 80°)", "is_correct": false},
+        {"option_text": "80° (correct: sum=180°; parts=2+3+4=9; largest=4/9×180=80° ✓)", "is_correct": true},
+        {"option_text": "90° (wrong: a 90° angle would make it right-angled; 4/9×180=80, not 90)", "is_correct": false},
+        {"option_text": "120° (wrong: 120° exceeds one-third of 180°; doesn't fit ratio 2:3:4)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Sum of angles = 180°. Ratio 2:3:4; sum of parts = 9. Angles: 2/9×180=40°, 3/9×180=60°, 4/9×180=80°. Verify: 40+60+80=180 ✓. Largest = 80°.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a right-angled triangle, one acute angle is 35°. Find the other acute angle.",
+      "options": [
+        {"option_text": "45° (wrong: 90+35+45=170≠180)", "is_correct": false},
+        {"option_text": "55° (correct: sum=180°; right angle=90°; other acute=180−90−35=55° ✓)", "is_correct": true},
+        {"option_text": "65° (wrong: 90+35+65=190≠180)", "is_correct": false},
+        {"option_text": "35° (wrong: both acute angles being 35° only works in isosceles right triangle if base angles=45°)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Sum of angles of a triangle = 180°. Right angle = 90°. Given acute angle = 35°. Third angle = 180−90−35 = 55°. Verify: 90+35+55=180 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The sides of a triangle are 5 cm, 12 cm, and 13 cm. What type of triangle is it?",
+      "options": [
+        {"option_text": "Acute triangle (wrong: 5²+12²=25+144=169=13²; this satisfies Pythagoras exactly → right triangle, not acute)", "is_correct": false},
+        {"option_text": "Right triangle (correct: 5²+12²=25+144=169=13²; Pythagoras holds → right-angled triangle ✓)", "is_correct": true},
+        {"option_text": "Obtuse triangle (wrong: obtuse means a²+b²<c²; here 5²+12²=13² exactly → right, not obtuse)", "is_correct": false},
+        {"option_text": "Equilateral triangle (wrong: all sides unequal, so not equilateral)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Test: a²+b²=c²? 5²+12²=25+144=169=13². Since it satisfies Pythagoras exactly, it is a RIGHT TRIANGLE. This is the famous 5-12-13 Pythagorean triple (like 3-4-5). Right triangle test: a²+b²=c² (right); a²+b²>c² (acute); a²+b²<c² (obtuse).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The base of a triangle is 14 cm and its area is 84 cm². Find the height of the triangle.",
+      "options": [
+        {"option_text": "8 cm (wrong: Area=½×14×8=56≠84)", "is_correct": false},
+        {"option_text": "12 cm (correct: Area=½×base×height; 84=½×14×h; 84=7h; h=12 cm ✓)", "is_correct": true},
+        {"option_text": "10 cm (wrong: ½×14×10=70≠84)", "is_correct": false},
+        {"option_text": "6 cm (wrong: ½×14×6=42≠84)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Area = ½ × base × height. 84 = ½ × 14 × h = 7h. h = 84/7 = 12 cm. Verify: ½×14×12=7×12=84 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In an equilateral triangle with side 6 cm, what is the area?",
+      "options": [
+        {"option_text": "18 cm² (wrong: area=√3/4×6²=√3/4×36=9√3≈15.59 cm², not 18)", "is_correct": false},
+        {"option_text": "9√3 cm² (correct: area of equilateral triangle = √3/4×a² = √3/4×36 = 9√3 cm² ✓)", "is_correct": true},
+        {"option_text": "36 cm² (wrong: 36 is a², not the area)", "is_correct": false},
+        {"option_text": "12√3 cm² (wrong: 12√3 = √3/4×48; would be side=4√3)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Area of equilateral triangle = (√3/4)×a² where a = side. = (√3/4)×6² = (√3/4)×36 = 9√3 cm². Numerically: 9×1.732 ≈ 15.59 cm². **Memory:** For equilateral triangle with side 'a': Area = (√3/4)a², Height = (√3/2)a.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Two triangles are similar. The ratio of their corresponding sides is 3:5. What is the ratio of their areas?",
+      "options": [
+        {"option_text": "3:5 (wrong: for similar triangles, area ratio = square of side ratio)", "is_correct": false},
+        {"option_text": "9:25 (correct: area ratio = (3:5)² = 9:25 ✓)", "is_correct": true},
+        {"option_text": "6:10 (wrong: that's just doubling the ratio, not squaring)", "is_correct": false},
+        {"option_text": "27:125 (wrong: that would be the ratio of volumes/cubes for 3D shapes)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. For SIMILAR TRIANGLES: Area ratio = (side ratio)². Side ratio = 3:5. Area ratio = 3²:5² = 9:25. Remember: for similar figures, if sides are in ratio k:1, then areas are in ratio k²:1, and volumes in ratio k³:1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In triangle ABC, the exterior angle at C is 120°. The interior angles at A and B are equal. Find angle A.",
+      "options": [
+        {"option_text": "40° (wrong: exterior angle = sum of two non-adjacent interior angles; ∠C interior=60°; ∠A=∠B; ∠A+∠B=120°; ∠A=60°)", "is_correct": false},
+        {"option_text": "60° (correct: exterior angle at C=120° → interior ∠C=60°; ∠A+∠B+60=180; ∠A+∠B=120; since ∠A=∠B, ∠A=60° ✓)", "is_correct": true},
+        {"option_text": "30° (wrong: 30+30+120=180 for interior angles — but interior ∠C=60, not 120)", "is_correct": false},
+        {"option_text": "45° (wrong: 45+45+interior∠C=180; interior∠C=90; exterior∠C=90≠120)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Exterior angle at C = 120° → Interior angle C = 180°−120° = 60°. In triangle: ∠A+∠B+∠C = 180° → ∠A+∠B = 180°−60° = 120°. Since ∠A = ∠B: 2∠A = 120° → ∠A = 60°. This triangle has all angles = 60° → it's equilateral! Verify: exterior angle = A+B = 60+60 = 120° ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is the length of the hypotenuse of a right triangle with legs 8 cm and 15 cm?",
+      "options": [
+        {"option_text": "16 cm (wrong: 8²+15²=64+225=289; √289=17, not 16)", "is_correct": false},
+        {"option_text": "17 cm (correct: 8²+15²=64+225=289=17²; hypotenuse=17 cm ✓)", "is_correct": true},
+        {"option_text": "23 cm (wrong: 23²=529≠289)", "is_correct": false},
+        {"option_text": "√289 cm (same as 17 but written as surd; technically correct but 17 cm is cleaner)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. By Pythagoras: hypotenuse² = 8²+15² = 64+225 = 289. Hypotenuse = √289 = 17 cm. This is the 8-15-17 Pythagorean triple. Common triples: 3-4-5, 5-12-13, 8-15-17, 7-24-25.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The perimeter of an isosceles triangle is 36 cm. If the base is 12 cm, find one of the equal sides.",
+      "options": [
+        {"option_text": "10 cm (wrong: 10+10+12=32≠36)", "is_correct": false},
+        {"option_text": "12 cm (correct: let equal side=x; x+x+12=36; 2x=24; x=12 cm ✓)", "is_correct": true},
+        {"option_text": "14 cm (wrong: 14+14+12=40≠36)", "is_correct": false},
+        {"option_text": "8 cm (wrong: 8+8+12=28≠36)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Isosceles triangle: two equal sides + base. Let equal side = x. Perimeter: x+x+12=36 → 2x=24 → x=12 cm. The triangle is actually equilateral (all sides = 12 cm)!",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the area of a triangle with sides 13 cm, 14 cm, 15 cm using Heron's formula.",
+      "options": [
+        {"option_text": "72 cm² (wrong: s=21; area=√(21×8×7×6)=√7056=84 cm², not 72)", "is_correct": false},
+        {"option_text": "84 cm² (correct: s=(13+14+15)/2=21; area=√(21(21−13)(21−14)(21−15))=√(21×8×7×6)=√7056=84 ✓)", "is_correct": true},
+        {"option_text": "96 cm² (wrong: incorrect application of Heron's formula)", "is_correct": false},
+        {"option_text": "105 cm² (wrong: 105×21/21=105; doesn't match)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Heron's formula: Area = √(s(s−a)(s−b)(s−c)) where s = semi-perimeter. s = (13+14+15)/2 = 42/2 = 21. Area = √(21×(21−13)×(21−14)×(21−15)) = √(21×8×7×6) = √(7056) = 84 cm². Note: 21×8=168; 7×6=42; 168×42=7056; √7056=84.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

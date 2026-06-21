@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "Forms of energy — mixed tiers",
+  "topic_code": "PHY_WEP",
+  "questions": [
+    {
+      "stem": "In a coal-based thermal power plant, the correct sequence of energy transformations from fuel to electricity is:",
+      "options": [
+        {
+          "option_text": "Chemical → Thermal → Mechanical → Electrical energy",
+          "is_correct": true
+        },
+        {
+          "option_text": "Thermal → Chemical → Mechanical → Electrical energy",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chemical → Mechanical → Electrical → Thermal energy",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nuclear → Thermal → Mechanical → Electrical energy",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Coal combustion releases chemical energy as heat (thermal energy), which converts water to steam driving a turbine (mechanical energy), and the generator converts rotation to electricity. Option D describes a nuclear power plant, which uses fission, not combustion. Option C is wrong because electrical energy cannot precede mechanical in this chain. Option B inverts the chemical and thermal stages — coal does not start as thermal energy.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:34:19+00:00",
+      "id": "sgk_PHY_WEP_00001"
+    },
+    {
+      "stem": "A simple pendulum swings freely without air resistance. At its mean position (lowest point of the swing), which statement about its mechanical energy is correct?",
+      "options": [
+        {
+          "option_text": "Total mechanical energy becomes zero at the mean position",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kinetic energy is maximum and potential energy is minimum",
+          "is_correct": true
+        },
+        {
+          "option_text": "Kinetic energy equals potential energy exactly at mean position",
+          "is_correct": false
+        },
+        {
+          "option_text": "Potential energy is maximum and kinetic energy is minimum",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. At the lowest point the bob moves fastest (maximum speed → maximum KE) and sits at the lowest height relative to the reference (minimum PE). Option D describes the extreme ends of the swing (highest points), where the bob momentarily stops. Option C (KE = PE) holds at an intermediate height, not at the lowest point. Total mechanical energy remains constant throughout — it is never zero as long as the pendulum swings.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:34:19+00:00",
+      "id": "sgk_PHY_WEP_00002"
+    },
+    {
+      "stem": "A body of mass 5 kg initially at rest is acted upon by a constant net force of 20 N on a frictionless surface for 4 seconds. What is its kinetic energy at the end of 4 seconds?",
+      "options": [
+        {
+          "option_text": "320 J, computed using KE = force × velocity at that instant",
+          "is_correct": false
+        },
+        {
+          "option_text": "640 J, applying work-energy theorem: W = ΔKE = ½mv²",
+          "is_correct": true
+        },
+        {
+          "option_text": "1280 J, computed as mass × acceleration × total distance only",
+          "is_correct": false
+        },
+        {
+          "option_text": "160 J, using average velocity (v/2) instead of final velocity",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. From F = ma: a = 20/5 = 4 m/s². After 4 s, v = u + at = 0 + 4×4 = 16 m/s. KE = ½mv² = ½×5×256 = 640 J. Option C (1280 J) drops the ½ factor — the most common slip. Option A (320 J) confuses instantaneous power (F×v = 20×16 = 320 W) with energy. Option D (160 J) incorrectly substitutes average velocity (8 m/s) into the KE formula instead of final velocity.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:34:19+00:00",
+      "id": "sgk_PHY_WEP_00003"
+    },
+    {
+      "stem": "A stone of mass 2 kg is released from rest at a height of 30 m. At what height above the ground does its kinetic energy exactly equal its potential energy? (Take g = 10 m/s²)",
+      "options": [
+        {
+          "option_text": "10 m above the ground (one-third of the total drop height)",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 m above the ground (two-thirds of the total drop height)",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 m above the ground (exactly half the total drop height)",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 m above the ground (two-fifths of the total drop height)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Total ME = mgh = 2×10×30 = 600 J. At height x: PE = 20x and KE = 600 − 20x. Setting KE = PE: 600 − 20x = 20x → x = 15 m. The KE = PE crossover always occurs at h/2 for free fall from rest. Option A (10 m) satisfies KE = 2PE, not KE = PE. Option B (20 m) satisfies PE = 2KE. Option D (12 m) has no physical basis in this problem.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:34:19+00:00",
+      "id": "sgk_PHY_WEP_00004"
+    },
+    {
+      "stem": "A spring with spring constant 500 N/m is compressed by 0.2 m and then released. What is the elastic potential energy stored in the compressed spring?",
+      "options": [
+        {
+          "option_text": "50 J, calculated using full expression kx² omitting the ½ factor",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 J, obtained by applying ½kx without squaring the compression",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 J, correctly using the formula ½kx² = ½×500×0.04",
+          "is_correct": true
+        },
+        {
+          "option_text": "20 J, derived using kx alone without the ½ factor or squaring",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. PE = ½kx² = ½ × 500 × (0.2)² = ½ × 500 × 0.04 = 10 J. Option A (50 J) omits the ½ — the most frequent exam error. Option B (5 J) forgets to square x (uses 0.2 instead of 0.04). Option D (20 J) uses neither ½ nor squaring. The ½ arises because the spring force increases linearly from 0 to kx, making the average restoring force kx/2, not kx.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:34:19+00:00",
+      "id": "sgk_PHY_WEP_00005"
+    },
+    {
+      "stem": "An electric motor with 80% efficiency lifts 200 kg of water to a height of 15 m in exactly 1 minute. What is the electrical power consumed by the motor? (Take g = 10 m/s²)",
+      "options": [
+        {
+          "option_text": "500 W, equal to the useful output power, ignoring efficiency loss",
+          "is_correct": false
+        },
+        {
+          "option_text": "400 W, obtained by multiplying output power by the efficiency ratio",
+          "is_correct": false
+        },
+        {
+          "option_text": "625 W, input power = output power ÷ efficiency = 500 ÷ 0.8",
+          "is_correct": true
+        },
+        {
+          "option_text": "750 W, computed by mistaking motor efficiency as 2/3 instead of 4/5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Useful output power = mgh/t = 200×10×15/60 = 500 W. Since efficiency η = output/input, input power = output ÷ η = 500 ÷ 0.8 = 625 W. Option A (500 W) ignores efficiency — the motor must consume more than it delivers. Option B (400 W) multiplies instead of dividing (500×0.8), a classic sign-flip error. Option D (750 W) arises from misreading 80% as 66.7%. Rule: electrical input power always exceeds useful mechanical output power.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:34:19+00:00",
+      "id": "sgk_PHY_WEP_00006"
+    },
+    {
+      "stem": "A spring (k = 1000 N/m, compressed 0.1 m) launches a 0.5 kg ball horizontally from the edge of a table 5 m high. Ignoring friction and air resistance, what is the total mechanical energy of the ball immediately after launch? (g = 10 m/s²)",
+      "options": [
+        {
+          "option_text": "5 J, counting only the kinetic energy received from the spring",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 J, counting only the gravitational potential energy at table height",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 J, summing KE gained from spring and gravitational PE at height",
+          "is_correct": true
+        },
+        {
+          "option_text": "55 J, adding spring PE and gravitational PE as two separate stores",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Spring PE converts entirely to ball's KE: ½kx² = ½×1000×(0.1)² = 5 J. Gravitational PE of ball at height 5 m: mgh = 0.5×10×5 = 25 J. Total ME = KE + gravitational PE = 5 + 25 = 30 J. Option A (5 J) neglects the gravitational PE the ball already possesses while sitting on the table. Option B (25 J) ignores the kinetic energy added by the spring. Option D (55 J) double-counts by adding the spring's stored energy (5 J) on top of the gravitational PE, but the spring PE has already transformed into the ball's KE — it cannot be added again as a separate 5 J.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:34:19+00:00",
+      "id": "sgk_PHY_WEP_00007"
+    }
+  ]
+}

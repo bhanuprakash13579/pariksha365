@@ -1,0 +1,178 @@
+{
+  "topic_code": "RSN_SERIES_COMPLETION",
+  "subject": "Reasoning",
+  "topic": "Series Completion — Number and Letter Series",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Find the next term: 2, 6, 12, 20, 30, ?",
+      "options": [
+        {"option_text": "40 (wrong: differences are 4,6,8,10 — next diff=12; 30+12=42)", "is_correct": false},
+        {"option_text": "42 (correct: differences: 4,6,8,10,12; next=30+12=42 ✓; pattern: n(n+1) → 1×2=2,2×3=6,3×4=12,4×5=20,5×6=30,6×7=42)", "is_correct": true},
+        {"option_text": "44 (wrong)", "is_correct": false},
+        {"option_text": "36 (wrong: 30+6=36 — used last difference again instead of increasing)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Pattern: n(n+1). n=1:2, n=2:6, n=3:12, n=4:20, n=5:30, n=6:42. Alternatively: differences are 4,6,8,10,... (increasing by 2); next difference=12; 30+12=42. **Short Trick:** If second differences are constant, look for n(n+k) or quadratic formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: 3, 9, 27, ?, 243",
+      "options": [
+        {"option_text": "54 (wrong: 27×2=54, but pattern is ×3)", "is_correct": false},
+        {"option_text": "81 (correct: geometric series with common ratio 3; 27×3=81; 81×3=243 ✓)", "is_correct": true},
+        {"option_text": "108 (wrong: 27×4=108)", "is_correct": false},
+        {"option_text": "72 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. This is a geometric series with first term 3 and common ratio 3 (each term multiplied by 3): 3, 9, 27, 81, 243. Missing term = 81.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the next term: 1, 1, 2, 3, 5, 8, 13, ?",
+      "options": [
+        {"option_text": "18 (wrong: 13+8=21, not 18)", "is_correct": false},
+        {"option_text": "21 (correct: Fibonacci sequence; each term = sum of previous two: 8+13=21 ✓)", "is_correct": true},
+        {"option_text": "26 (wrong: 13×2=26 — not the pattern)", "is_correct": false},
+        {"option_text": "16 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. This is the Fibonacci sequence: each term is the sum of the two preceding terms. 1,1,2,3,5,8,13,21,34... Next term: 8+13=21.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the next term: AZ, BY, CX, DW, ?",
+      "options": [
+        {"option_text": "EW (first letter correct but second should continue decreasing)", "is_correct": false},
+        {"option_text": "EV (correct: first letter increases A→B→C→D→E; second letter decreases Z→Y→X→W→V ✓)", "is_correct": true},
+        {"option_text": "FV (first letter should be E, not F)", "is_correct": false},
+        {"option_text": "EU (wrong: second letter should be V, not U)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Two parallel sequences: First letter: A,B,C,D,E (increasing +1). Second letter: Z,Y,X,W,V (decreasing −1). Next pair: E,V → EV.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the odd one out: 4, 8, 12, 15, 20, 24",
+      "options": [
+        {"option_text": "4 (multiple of 4 — belongs to the pattern)", "is_correct": false},
+        {"option_text": "12 (multiple of 4 — belongs)", "is_correct": false},
+        {"option_text": "15 (correct: all others are multiples of 4 {4,8,12,20,24}; 15 is not a multiple of 4 ✓)", "is_correct": true},
+        {"option_text": "24 (multiple of 4 — belongs)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. The series contains multiples of 4: 4,8,12,20,24. The odd one out is 15 (15÷4=3.75 — not a multiple of 4). All others are divisible by 4.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the next term: 2, 5, 10, 17, 26, ?",
+      "options": [
+        {"option_text": "35 (wrong: differences are 3,5,7,9,? — next diff=11; 26+11=37)", "is_correct": false},
+        {"option_text": "37 (correct: differences: 3,5,7,9,11; next=26+11=37; pattern: n²+1 → 1+1=2,4+1=5,9+1=10,16+1=17,25+1=26,36+1=37 ✓)", "is_correct": true},
+        {"option_text": "38 (wrong)", "is_correct": false},
+        {"option_text": "36 (wrong: 36+1=37, so n=6 gives 37, not 36 as the next term)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Pattern: n²+1. n=1:2, n=2:5, n=3:10, n=4:17, n=5:26, n=6:37. Alternatively: differences are 3,5,7,9,11 (odd numbers in sequence); next difference=11; 26+11=37.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: B2, D4, F6, H8, ?",
+      "options": [
+        {"option_text": "I9 (wrong: letters skip one — I follows H but should skip to J; also number increases by 2)", "is_correct": false},
+        {"option_text": "J10 (correct: letters skip one alternate letter B,D,F,H,J; numbers increase by 2: 2,4,6,8,10 ✓)", "is_correct": true},
+        {"option_text": "K10 (wrong: K is the 6th skip but here it should be J)", "is_correct": false},
+        {"option_text": "J9 (wrong: number should be 10, not 9)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Letters: B,D,F,H,J (every alternate letter, skipping one each time: A skip B, C skip D, E skip F, G skip H, I skip J — wait: B→skip C→D→skip E→F→skip G→H→skip I→J ✓). Numbers: 2,4,6,8,10 (multiples of 2). Next: J10.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the next term: 144, 121, 100, 81, 64, ?",
+      "options": [
+        {"option_text": "36 (wrong: next perfect square after 64 going down is 49, then 36)", "is_correct": false},
+        {"option_text": "49 (correct: series of perfect squares in descending order: 12²,11²,10²,9²,8²,7²=49 ✓)", "is_correct": true},
+        {"option_text": "56 (wrong: 56 is not a perfect square)", "is_correct": false},
+        {"option_text": "48 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 144=12², 121=11², 100=10², 81=9², 64=8², 49=7². Descending squares from 12² to 7². Next term = 7² = 49.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the next term: 7, 13, 19, 25, 31, ?",
+      "options": [
+        {"option_text": "36 (wrong: differences are all 6; 31+6=37, not 36)", "is_correct": false},
+        {"option_text": "37 (correct: arithmetic sequence with common difference 6; 31+6=37 ✓)", "is_correct": true},
+        {"option_text": "38 (wrong: 31+7=38 — used wrong difference)", "is_correct": false},
+        {"option_text": "35 (wrong: 31+4=35)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Arithmetic sequence with first term 7 and common difference 6: 7,13,19,25,31,37. All terms are of the form 7+6(n−1). Next: 31+6=37.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the missing term: 2, 3, 5, 7, 11, 13, ?, 19",
+      "options": [
+        {"option_text": "15 (not prime: 15=3×5)", "is_correct": false},
+        {"option_text": "16 (not prime: 16=2⁴)", "is_correct": false},
+        {"option_text": "17 (correct: this is the sequence of prime numbers: 2,3,5,7,11,13,17,19 ✓)", "is_correct": true},
+        {"option_text": "18 (not prime: 18=2×9)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. This is the sequence of prime numbers in ascending order: 2,3,5,7,11,13,17,19,23,... The missing term is 17 (the prime between 13 and 19).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

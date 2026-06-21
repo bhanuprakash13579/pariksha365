@@ -1,27 +1,27 @@
 {
-  "scanned_at": "2026-06-21T08:09:56+00:00",
-  "total_questions": 21098,
-  "total_topics": 1573,
+  "scanned_at": "2026-06-21T14:42:29+00:00",
+  "total_questions": 21931,
+  "total_topics": 1635,
   "by_subject": {
     "Quantitative Aptitude": {
-      "codes": 209,
-      "questions": 3249
+      "codes": 229,
+      "questions": 3495
     },
     "English": {
-      "codes": 132,
-      "questions": 2528
+      "codes": 142,
+      "questions": 2700
     },
     "Reasoning": {
-      "codes": 160,
-      "questions": 2370
+      "codes": 176,
+      "questions": 2580
     },
     "General Knowledge": {
       "codes": 130,
-      "questions": 2202
+      "questions": 2225
     },
     "Vocabulary": {
-      "codes": 103,
-      "questions": 1605
+      "codes": 119,
+      "questions": 1787
     },
     "Geography": {
       "codes": 108,
@@ -5820,19 +5820,20 @@
       "topic_code": "ENG_ARTICLES",
       "subject": "English",
       "topic": "Articles (a / an / the)",
-      "questions": 17,
+      "questions": 27,
       "schema_versions": [
         "A"
       ],
       "paths": [
-        "seeds/static_gk/english/ENG_ARTICLES.json"
+        "seeds/static_gk/english/ENG_ARTICLES.json",
+        "seeds/static_gk/english/ENG_ARTICLES_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 9,
-      "diff_easy": 6,
-      "diff_medium": 9,
-      "diff_hard": 2,
+      "parity_fails": 15,
+      "diff_easy": 10,
+      "diff_medium": 12,
+      "diff_hard": 5,
       "diff_unknown": 0
     },
     {
@@ -5931,6 +5932,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "ENG_CLOZE_ENV",
+      "subject": "English",
+      "topic": "Cloze Test — Environment and Reading Passages",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/english/ENG_CLOZE_ENV_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 6,
+      "diff_medium": 4,
+      "diff_hard": 0,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "ENG_CLOZE_II_MIXED",
       "subject": "English",
       "topic": "Cloze test / fill-blank II — mixed tiers",
@@ -5985,6 +6005,25 @@
       "diff_easy": 3,
       "diff_medium": 7,
       "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "ENG_CLOZE_TEST",
+      "subject": "English",
+      "topic": "Cloze Test",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/english/ENG_CLOZE_TEST_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 7,
+      "diff_medium": 3,
+      "diff_hard": 0,
       "diff_unknown": 0
     },
     {
@@ -6236,6 +6275,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "ENG_ERROR_SPOTTING",
+      "subject": "English",
+      "topic": "Error Spotting",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/english/ENG_ERROR_SPOTTING_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 2,
+      "diff_medium": 3,
+      "diff_hard": 5,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "ENG_ERROR_SPOTTING_III_MIXED",
       "subject": "English",
       "topic": "Error Spotting III — subject-verb agreement, tense, articles, prepositions, conjunctions",
@@ -6348,6 +6406,44 @@
       "diff_easy": 11,
       "diff_medium": 30,
       "diff_hard": 9,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "ENG_FILL_BLANKS",
+      "subject": "English",
+      "topic": "Fill in the Blanks",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/english/ENG_FILL_BLANKS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 2,
+      "diff_medium": 6,
+      "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "ENG_FILL_BLANKS_ADV",
+      "subject": "English",
+      "topic": "Fill in the Blanks — Double Blank and Advanced",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/english/ENG_FILL_BLANKS_ADV_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 2,
+      "diff_medium": 6,
+      "diff_hard": 2,
       "diff_unknown": 0
     },
     {
@@ -6524,6 +6620,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "ENG_GRAMMAR_SUBJECT_VERB",
+      "subject": "English",
+      "topic": "Subject-Verb Agreement",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/english/ENG_GRAMMAR_SUBJECT_VERB_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 6,
+      "diff_easy": 1,
+      "diff_medium": 5,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "ENG_GRAMMAR_VOICE",
       "subject": "English",
       "topic": "Active and Passive Voice",
@@ -6680,19 +6795,20 @@
       "topic_code": "ENG_NARRATION",
       "subject": "English",
       "topic": "Direct ↔ Indirect Speech (Narration)",
-      "questions": 37,
+      "questions": 47,
       "schema_versions": [
         "A"
       ],
       "paths": [
-        "seeds/static_gk/english/ENG_NARRATION.json"
+        "seeds/static_gk/english/ENG_NARRATION.json",
+        "seeds/static_gk/english/ENG_NARRATION_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 8,
-      "diff_easy": 10,
-      "diff_medium": 21,
-      "diff_hard": 6,
+      "parity_fails": 13,
+      "diff_easy": 11,
+      "diff_medium": 26,
+      "diff_hard": 10,
       "diff_unknown": 0
     },
     {
@@ -6985,6 +7101,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "ENG_PARA_JUMBLES",
+      "subject": "English",
+      "topic": "Para Jumbles — Sentence Rearrangement",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/english/ENG_PARA_JUMBLES_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 1,
+      "diff_medium": 5,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "ENG_PARA_JUMBLES_MIXED",
       "subject": "English",
       "topic": "Para Jumbles — Sentence Reordering",
@@ -7197,19 +7332,20 @@
       "topic_code": "ENG_PREPOSITIONS",
       "subject": "English",
       "topic": "Prepositions (fixed-pair usage)",
-      "questions": 17,
+      "questions": 27,
       "schema_versions": [
         "A"
       ],
       "paths": [
-        "seeds/static_gk/english/ENG_PREPOSITIONS.json"
+        "seeds/static_gk/english/ENG_PREPOSITIONS.json",
+        "seeds/static_gk/english/ENG_PREPOSITIONS_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 3,
-      "diff_easy": 10,
-      "diff_medium": 5,
-      "diff_hard": 2,
+      "parity_fails": 5,
+      "diff_easy": 14,
+      "diff_medium": 10,
+      "diff_hard": 3,
       "diff_unknown": 0
     },
     {
@@ -7368,19 +7504,20 @@
       "topic_code": "ENG_RC",
       "subject": "English",
       "topic": "Passage comprehension basic — mixed tiers",
-      "questions": 14,
+      "questions": 26,
       "schema_versions": [
         "A"
       ],
       "paths": [
-        "seeds/static_gk/english/ENG_RC.json"
+        "seeds/static_gk/english/ENG_RC.json",
+        "seeds/static_gk/english/ENG_RC_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 0,
-      "diff_easy": 4,
-      "diff_medium": 6,
-      "diff_hard": 4,
+      "parity_fails": 12,
+      "diff_easy": 9,
+      "diff_medium": 12,
+      "diff_hard": 5,
       "diff_unknown": 0
     },
     {
@@ -7406,18 +7543,19 @@
       "topic_code": "ENG_READING_COMPREHENSION",
       "subject": "English",
       "topic": "Reading Comprehension — short passage + inference",
-      "questions": 30,
+      "questions": 40,
       "schema_versions": [
         "A"
       ],
       "paths": [
-        "seeds/static_gk/english/ENG_READING_COMPREHENSION.json"
+        "seeds/static_gk/english/ENG_READING_COMPREHENSION.json",
+        "seeds/static_gk/english/ENG_READING_COMPREHENSION_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 20,
-      "diff_easy": 12,
-      "diff_medium": 14,
+      "parity_fails": 29,
+      "diff_easy": 18,
+      "diff_medium": 18,
       "diff_hard": 4,
       "diff_unknown": 0
     },
@@ -7479,6 +7617,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "ENG_SENTENCE_COMPLETION",
+      "subject": "English",
+      "topic": "Sentence Completion — Fill in the Blanks",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/english/ENG_SENTENCE_COMPLETION_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 3,
+      "diff_medium": 4,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "ENG_SENTENCE_IMP",
       "subject": "English",
       "topic": "Sentence Improvement",
@@ -7501,19 +7658,20 @@
       "topic_code": "ENG_SENTENCE_IMPROVEMENT",
       "subject": "English",
       "topic": "Sentence Improvement",
-      "questions": 17,
+      "questions": 27,
       "schema_versions": [
         "A"
       ],
       "paths": [
-        "seeds/static_gk/english/ENG_SENTENCE_IMPROVEMENT.json"
+        "seeds/static_gk/english/ENG_SENTENCE_IMPROVEMENT.json",
+        "seeds/static_gk/english/ENG_SENTENCE_IMPROVEMENT_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 5,
-      "diff_easy": 6,
-      "diff_medium": 9,
-      "diff_hard": 2,
+      "parity_fails": 13,
+      "diff_easy": 7,
+      "diff_medium": 15,
+      "diff_hard": 5,
       "diff_unknown": 0
     },
     {
@@ -7610,6 +7768,25 @@
       "parity_fails": 9,
       "diff_easy": 7,
       "diff_medium": 13,
+      "diff_hard": 6,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "ENG_SPELLING_ADV",
+      "subject": "English",
+      "topic": "Spelling — Commonly Misspelled Words",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/english/ENG_SPELLING_ADV_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 0,
+      "diff_medium": 4,
       "diff_hard": 6,
       "diff_unknown": 0
     },
@@ -7808,20 +7985,21 @@
       "topic_code": "ENG_TENSES",
       "subject": "English",
       "topic": "Tenses",
-      "questions": 33,
+      "questions": 43,
       "schema_versions": [
         "A"
       ],
       "paths": [
         "seeds/static_gk/english/ENG_TENSES.json",
+        "seeds/static_gk/english/ENG_TENSES_B2.json",
         "seeds/static_gk/english/ENG_TENSES_IX_MIXED.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 29,
-      "diff_easy": 11,
-      "diff_medium": 15,
-      "diff_hard": 7,
+      "parity_fails": 37,
+      "diff_easy": 14,
+      "diff_medium": 21,
+      "diff_hard": 8,
       "diff_unknown": 0
     },
     {
@@ -8072,6 +8250,25 @@
       "diff_easy": 7,
       "diff_medium": 6,
       "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "ENG_VOICE_CHANGE",
+      "subject": "English",
+      "topic": "Active and Passive Voice — Change of Voice",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/english/ENG_VOICE_CHANGE_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 4,
+      "diff_easy": 1,
+      "diff_medium": 6,
+      "diff_hard": 3,
       "diff_unknown": 0
     },
     {
@@ -11387,19 +11584,20 @@
       "topic_code": "GK_SOBRIQUETS",
       "subject": "General Knowledge",
       "topic": "Famous nicknames & sobriquets — mixed tiers",
-      "questions": 14,
+      "questions": 26,
       "schema_versions": [
         "A"
       ],
       "paths": [
-        "seeds/static_gk/general_knowledge/GK_SOBRIQUETS.json"
+        "seeds/static_gk/general_knowledge/GK_SOBRIQUETS.json",
+        "seeds/static_gk/general_knowledge/GK_SOBRIQUETS_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 0,
-      "diff_easy": 4,
-      "diff_medium": 6,
-      "diff_hard": 4,
+      "parity_fails": 11,
+      "diff_easy": 8,
+      "diff_medium": 12,
+      "diff_hard": 6,
       "diff_unknown": 0
     },
     {
@@ -11601,20 +11799,21 @@
       "topic_code": "GK_SUPERLATIVES_WORLD",
       "subject": "General Knowledge",
       "topic": "Superlatives - World (Largest, Longest, Highest)",
-      "questions": 31,
+      "questions": 42,
       "schema_versions": [
         "A"
       ],
       "paths": [
         "seeds/static_gk/general-knowledge/GK_SUPERLATIVES_WORLD.json",
-        "seeds/static_gk/general_knowledge/GK_SUPERLATIVES_WORLD.json"
+        "seeds/static_gk/general_knowledge/GK_SUPERLATIVES_WORLD.json",
+        "seeds/static_gk/general_knowledge/GK_SUPERLATIVES_WORLD_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 7,
-      "diff_easy": 13,
-      "diff_medium": 11,
-      "diff_hard": 7,
+      "parity_fails": 18,
+      "diff_easy": 19,
+      "diff_medium": 13,
+      "diff_hard": 10,
       "diff_unknown": 0
     },
     {
@@ -21148,20 +21347,40 @@
     {
       "topic_code": "QA_ALGEBRA",
       "subject": "Quantitative Aptitude",
-      "topic": "Algebra",
-      "questions": 25,
+      "topic": "Algebra — Linear and Quadratic Equations",
+      "questions": 35,
       "schema_versions": [
         "A"
       ],
       "paths": [
+        "seeds/static_gk/quant/QA_ALGEBRA_B2.json",
         "seeds/static_gk/quant/QNT_ALGEBRA_III_MIXED.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 25,
-      "diff_easy": 7,
-      "diff_medium": 13,
-      "diff_hard": 5,
+      "parity_fails": 34,
+      "diff_easy": 8,
+      "diff_medium": 19,
+      "diff_hard": 8,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_ALGEBRA_EQUATIONS",
+      "subject": "Quantitative Aptitude",
+      "topic": "Algebra — Linear and Quadratic Equations",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_ALGEBRA_EQUATIONS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 2,
+      "diff_medium": 6,
+      "diff_hard": 2,
       "diff_unknown": 0
     },
     {
@@ -21226,19 +21445,39 @@
       "topic_code": "QA_BOATS_STREAMS",
       "subject": "Quantitative Aptitude",
       "topic": "Boats and Streams",
-      "questions": 25,
+      "questions": 35,
       "schema_versions": [
         "A"
       ],
       "paths": [
+        "seeds/static_gk/quant/QA_BOATS_STREAMS_B2.json",
         "seeds/static_gk/quant/QNT_BOATS_STREAMS_V_MIXED.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 25,
-      "diff_easy": 7,
-      "diff_medium": 13,
-      "diff_hard": 5,
+      "parity_fails": 34,
+      "diff_easy": 11,
+      "diff_medium": 16,
+      "diff_hard": 8,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_CALENDARS",
+      "subject": "Quantitative Aptitude",
+      "topic": "Calendars — Days and Dates",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_CALENDARS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 4,
+      "diff_medium": 3,
+      "diff_hard": 3,
       "diff_unknown": 0
     },
     {
@@ -21262,6 +21501,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "QA_CLOCKS",
+      "subject": "Quantitative Aptitude",
+      "topic": "Clocks and Calendars",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_CLOCKS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 1,
+      "diff_medium": 4,
+      "diff_hard": 5,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "QA_COORD_GEOM",
       "subject": "Quantitative Aptitude",
       "topic": "Coordinate Geometry — distance, midpoint, slope, section formula",
@@ -21279,6 +21537,25 @@
       "diff_easy": 12,
       "diff_medium": 13,
       "diff_hard": 6,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_DATA_INTERPRETATION",
+      "subject": "Quantitative Aptitude",
+      "topic": "Data Interpretation — Tables and Bar Graphs",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_DATA_INTERPRETATION_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 4,
+      "diff_medium": 5,
+      "diff_hard": 1,
       "diff_unknown": 0
     },
     {
@@ -21358,6 +21635,25 @@
       "diff_easy": 8,
       "diff_medium": 15,
       "diff_hard": 8,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_GEOMETRY_TRIANGLES",
+      "subject": "Quantitative Aptitude",
+      "topic": "Geometry — Triangles",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_GEOMETRY_TRIANGLES_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 5,
+      "diff_medium": 3,
+      "diff_hard": 2,
       "diff_unknown": 0
     },
     {
@@ -21477,6 +21773,44 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "QA_MENSURATION_2D",
+      "subject": "Quantitative Aptitude",
+      "topic": "Mensuration 2D — Area and Perimeter",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_MENSURATION_2D_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 5,
+      "diff_medium": 5,
+      "diff_hard": 0,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_MENSURATION_3D",
+      "subject": "Quantitative Aptitude",
+      "topic": "Mensuration 3D — Volume and Surface Area",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_MENSURATION_3D_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 11,
+      "diff_easy": 5,
+      "diff_medium": 4,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "QA_MEN_3D",
       "subject": "Quantitative Aptitude",
       "topic": "3D Mensuration — mixed tiers",
@@ -21511,6 +21845,25 @@
       "parity_fails": 25,
       "diff_easy": 7,
       "diff_medium": 13,
+      "diff_hard": 5,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_MIXTURES_ADVANCED",
+      "subject": "Quantitative Aptitude",
+      "topic": "Mixtures and Alligation — Advanced",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_MIXTURES_ADVANCED_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 0,
+      "diff_medium": 5,
       "diff_hard": 5,
       "diff_unknown": 0
     },
@@ -21569,6 +21922,44 @@
       "parity_fails": 25,
       "diff_easy": 7,
       "diff_medium": 15,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_NUMBER_SYSTEM",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_NUMBER_SYSTEM_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 12,
+      "diff_easy": 5,
+      "diff_medium": 4,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_NUMBER_SYSTEM_ADV",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System — Advanced (LCM, HCF, Divisibility)",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_NUMBER_SYSTEM_ADV_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 1,
+      "diff_medium": 6,
       "diff_hard": 3,
       "diff_unknown": 0
     },
@@ -21632,6 +22023,44 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "QA_PERCENTAGE_ADV",
+      "subject": "Quantitative Aptitude",
+      "topic": "Percentage — Advanced Applications",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_PERCENTAGE_ADV_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 6,
+      "diff_easy": 0,
+      "diff_medium": 7,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_PERMUTATION_COMBINATION",
+      "subject": "Quantitative Aptitude",
+      "topic": "Permutation and Combination",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_PERMUTATION_COMBINATION_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 12,
+      "diff_easy": 5,
+      "diff_medium": 6,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "QA_PIPES",
       "subject": "Quantitative Aptitude",
       "topic": "Pipes and Cisterns",
@@ -21671,6 +22100,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "QA_PIPES_CISTERNS",
+      "subject": "Quantitative Aptitude",
+      "topic": "Pipes and Cisterns",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_PIPES_CISTERNS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 2,
+      "diff_medium": 4,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "QA_PNC",
       "subject": "Quantitative Aptitude",
       "topic": "Permutation and Combination",
@@ -21693,19 +22141,20 @@
       "topic_code": "QA_PROBABILITY",
       "subject": "Quantitative Aptitude",
       "topic": "Probability",
-      "questions": 25,
+      "questions": 37,
       "schema_versions": [
         "A"
       ],
       "paths": [
+        "seeds/static_gk/quant/QA_PROBABILITY_B2.json",
         "seeds/static_gk/quant/QNT_PROBABILITY_IV_MIXED.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 25,
-      "diff_easy": 7,
-      "diff_medium": 13,
-      "diff_hard": 5,
+      "parity_fails": 35,
+      "diff_easy": 11,
+      "diff_medium": 19,
+      "diff_hard": 7,
       "diff_unknown": 0
     },
     {
@@ -21727,6 +22176,25 @@
       "diff_easy": 16,
       "diff_medium": 29,
       "diff_hard": 15,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_PROFIT_LOSS_ADV",
+      "subject": "Quantitative Aptitude",
+      "topic": "Profit and Loss — Advanced Problems",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_PROFIT_LOSS_ADV_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 0,
+      "diff_medium": 5,
+      "diff_hard": 5,
       "diff_unknown": 0
     },
     {
@@ -21768,6 +22236,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "QA_RACES_GAMES",
+      "subject": "Quantitative Aptitude",
+      "topic": "Races and Games of Skill",
+      "questions": 8,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_RACES_GAMES_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 1,
+      "diff_medium": 2,
+      "diff_hard": 5,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "QA_RATIO",
       "subject": "Quantitative Aptitude",
       "topic": "Ratio & Proportion",
@@ -21784,6 +22271,25 @@
       "diff_easy": 11,
       "diff_medium": 11,
       "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_RATIO_ADV",
+      "subject": "Quantitative Aptitude",
+      "topic": "Ratio and Proportion — Advanced",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_RATIO_ADV_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 0,
+      "diff_medium": 6,
+      "diff_hard": 4,
       "diff_unknown": 0
     },
     {
@@ -21846,6 +22352,63 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "QA_SIMPLIFICATION",
+      "subject": "Quantitative Aptitude",
+      "topic": "Simplification — BODMAS and Arithmetic",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_SIMPLIFICATION_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 4,
+      "diff_medium": 5,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_SI_CI",
+      "subject": "Quantitative Aptitude",
+      "topic": "Simple and Compound Interest — Advanced",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_SI_CI_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 1,
+      "diff_medium": 6,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_SPEED_DISTANCE",
+      "subject": "Quantitative Aptitude",
+      "topic": "Speed, Distance and Time",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_SPEED_DISTANCE_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 3,
+      "diff_medium": 4,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "QA_SPEED_TIME",
       "subject": "Quantitative Aptitude",
       "topic": "Speed, Time and Distance",
@@ -21888,20 +22451,21 @@
       "topic_code": "QA_TIME_WORK",
       "subject": "Quantitative Aptitude",
       "topic": "Time and Work",
-      "questions": 50,
+      "questions": 60,
       "schema_versions": [
         "A"
       ],
       "paths": [
+        "seeds/static_gk/quant/QA_TIME_WORK_B2.json",
         "seeds/static_gk/quant/QNT_TIME_WORK_VII_MIXED.json",
         "seeds/static_gk/quant/QNT_TIME_WORK_VI_MIXED.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 50,
-      "diff_easy": 15,
-      "diff_medium": 25,
-      "diff_hard": 10,
+      "parity_fails": 60,
+      "diff_easy": 17,
+      "diff_medium": 30,
+      "diff_hard": 13,
       "diff_unknown": 0
     },
     {
@@ -21980,6 +22544,25 @@
       "diff_easy": 14,
       "diff_medium": 26,
       "diff_hard": 10,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "QA_WORK_TIME",
+      "subject": "Quantitative Aptitude",
+      "topic": "Work and Time",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/quant/QA_WORK_TIME_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 3,
+      "diff_medium": 4,
+      "diff_hard": 3,
       "diff_unknown": 0
     },
     {
@@ -27617,6 +28200,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "RSN_ANALOGIES",
+      "subject": "Reasoning",
+      "topic": "Analogies",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_ANALOGIES_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 4,
+      "diff_medium": 4,
+      "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "RSN_ANALOGY",
       "subject": "Reasoning",
       "topic": "Analogies",
@@ -27739,6 +28341,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "RSN_BLOOD_RELATIONS",
+      "subject": "Reasoning",
+      "topic": "Blood Relations",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_BLOOD_RELATIONS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 0,
+      "diff_medium": 6,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "RSN_CAUSE_EFFECT",
       "subject": "Reasoning",
       "topic": "Cause and effect — mixed tiers",
@@ -27839,6 +28460,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "RSN_CODING_LETTER",
+      "subject": "Reasoning",
+      "topic": "Coding-Decoding — Letter Shift Patterns",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_CODING_LETTER_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 4,
+      "diff_medium": 5,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "RSN_COURSES",
       "subject": "Reasoning",
       "topic": "Statement & Courses of Action",
@@ -27856,6 +28496,44 @@
       "diff_easy": 7,
       "diff_medium": 12,
       "diff_hard": 5,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "RSN_CRITICAL_REASONING",
+      "subject": "Reasoning",
+      "topic": "Course of Action and Critical Reasoning",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_CRITICAL_REASONING_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 3,
+      "diff_medium": 6,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "RSN_DATA_SUFFICIENCY",
+      "subject": "Reasoning",
+      "topic": "Data Sufficiency",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_DATA_SUFFICIENCY_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 4,
+      "diff_medium": 4,
+      "diff_hard": 2,
       "diff_unknown": 0
     },
     {
@@ -27900,6 +28578,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "RSN_DIRECTION_SENSE",
+      "subject": "Reasoning",
+      "topic": "Direction Sense",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_DIRECTION_SENSE_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 1,
+      "diff_medium": 5,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "RSN_DOT_SITUATION",
       "subject": "Reasoning",
       "topic": "Dot Situation & Grouping of Identical Figures",
@@ -27941,40 +28638,42 @@
       "topic_code": "RSN_INEQUALITIES",
       "subject": "Reasoning",
       "topic": "Symbolic Inequalities",
-      "questions": 50,
+      "questions": 60,
       "schema_versions": [
         "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_INEQUALITIES_VII_MIXED.json",
-        "seeds/static_gk/reasoning/REAS_INEQUALITIES_VI_MIXED.json"
+        "seeds/static_gk/reasoning/REAS_INEQUALITIES_VI_MIXED.json",
+        "seeds/static_gk/reasoning/RSN_INEQUALITIES_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 45,
-      "diff_easy": 21,
-      "diff_medium": 23,
-      "diff_hard": 6,
+      "parity_fails": 54,
+      "diff_easy": 22,
+      "diff_medium": 29,
+      "diff_hard": 9,
       "diff_unknown": 0
     },
     {
       "topic_code": "RSN_INPUT_OUTPUT",
       "subject": "Reasoning",
       "topic": "Input-Output",
-      "questions": 50,
+      "questions": 60,
       "schema_versions": [
         "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_INPUT_OUTPUT_VII_MIXED.json",
-        "seeds/static_gk/reasoning/REAS_INPUT_OUTPUT_VI_MIXED.json"
+        "seeds/static_gk/reasoning/REAS_INPUT_OUTPUT_VI_MIXED.json",
+        "seeds/static_gk/reasoning/RSN_INPUT_OUTPUT_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 50,
-      "diff_easy": 19,
-      "diff_medium": 24,
-      "diff_hard": 7,
+      "parity_fails": 58,
+      "diff_easy": 21,
+      "diff_medium": 30,
+      "diff_hard": 9,
       "diff_unknown": 0
     },
     {
@@ -27998,6 +28697,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "RSN_MISSING_NUMBER",
+      "subject": "Reasoning",
+      "topic": "Missing Number — Matrix and Grid Patterns",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_MISSING_NUMBER_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 5,
+      "diff_medium": 2,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "RSN_NUMBER_PUZZLE",
       "subject": "Reasoning",
       "topic": "Number Puzzles",
@@ -28014,6 +28732,44 @@
       "diff_easy": 7,
       "diff_medium": 13,
       "diff_hard": 5,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "RSN_PUZZLES",
+      "subject": "Reasoning",
+      "topic": "Logic Puzzles — Tabular and Conditional Deduction",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_PUZZLES_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 3,
+      "diff_medium": 3,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "RSN_PUZZLES_ADVANCED",
+      "subject": "Reasoning",
+      "topic": "Logical Puzzles — Advanced",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_PUZZLES_ADVANCED_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 2,
+      "diff_medium": 2,
+      "diff_hard": 6,
       "diff_unknown": 0
     },
     {
@@ -28037,6 +28793,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "RSN_RANKING_ORDER",
+      "subject": "Reasoning",
+      "topic": "Ranking and Order",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_RANKING_ORDER_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 5,
+      "diff_medium": 3,
+      "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "RSN_SEATING",
       "subject": "Reasoning",
       "topic": "Seating Arrangement",
@@ -28056,22 +28831,42 @@
       "diff_unknown": 0
     },
     {
-      "topic_code": "RSN_SEATING_CIRCULAR",
+      "topic_code": "RSN_SEATING_ARRANGEMENT",
       "subject": "Reasoning",
-      "topic": "Seating Arrangement (Circular)",
-      "questions": 25,
+      "topic": "Seating Arrangement",
+      "questions": 10,
       "schema_versions": [
         "A"
       ],
       "paths": [
-        "seeds/static_gk/reasoning/REAS_SEATING_CIRCULAR_V_MIXED.json"
+        "seeds/static_gk/reasoning/RSN_SEATING_ARRANGEMENT_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 25,
+      "parity_fails": 9,
+      "diff_easy": 3,
+      "diff_medium": 4,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "RSN_SEATING_CIRCULAR",
+      "subject": "Reasoning",
+      "topic": "Seating Arrangement (Circular)",
+      "questions": 35,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/REAS_SEATING_CIRCULAR_V_MIXED.json",
+        "seeds/static_gk/reasoning/RSN_SEATING_CIRCULAR_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 35,
       "diff_easy": 7,
-      "diff_medium": 13,
-      "diff_hard": 5,
+      "diff_medium": 17,
+      "diff_hard": 11,
       "diff_unknown": 0
     },
     {
@@ -28093,6 +28888,82 @@
       "diff_easy": 34,
       "diff_medium": 47,
       "diff_hard": 19,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "RSN_SERIES_COMPLETION",
+      "subject": "Reasoning",
+      "topic": "Series Completion — Number and Letter Series",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_SERIES_COMPLETION_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 7,
+      "diff_medium": 3,
+      "diff_hard": 0,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "RSN_SERIES_PATTERN",
+      "subject": "Reasoning",
+      "topic": "Series Completion — Number and Letter Patterns",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_SERIES_PATTERN_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 3,
+      "diff_medium": 6,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "RSN_STATEMENTS",
+      "subject": "Reasoning",
+      "topic": "Statements and Conclusions",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_STATEMENTS_CONCLUSIONS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 2,
+      "diff_medium": 4,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "RSN_STATEMENTS_ASSUMPTIONS",
+      "subject": "Reasoning",
+      "topic": "Statements and Assumptions",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_STATEMENTS_ASSUMPTIONS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 1,
+      "diff_medium": 6,
+      "diff_hard": 3,
       "diff_unknown": 0
     },
     {
@@ -28137,40 +29008,61 @@
       "topic_code": "RSN_SYLLOGISM",
       "subject": "Reasoning",
       "topic": "Syllogism",
-      "questions": 50,
+      "questions": 60,
       "schema_versions": [
         "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_SYLLOGISM_VII_MIXED.json",
-        "seeds/static_gk/reasoning/REAS_SYLLOGISM_X_MIXED.json"
+        "seeds/static_gk/reasoning/REAS_SYLLOGISM_X_MIXED.json",
+        "seeds/static_gk/reasoning/RSN_SYLLOGISM_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 34,
-      "diff_easy": 16,
-      "diff_medium": 23,
-      "diff_hard": 11,
+      "parity_fails": 44,
+      "diff_easy": 20,
+      "diff_medium": 27,
+      "diff_hard": 13,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "RSN_SYLLOGISM_ADV",
+      "subject": "Reasoning",
+      "topic": "Syllogism — Advanced Patterns",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/reasoning/RSN_SYLLOGISM_ADV_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 3,
+      "diff_medium": 3,
+      "diff_hard": 4,
       "diff_unknown": 0
     },
     {
       "topic_code": "RSN_VENN",
       "subject": "Reasoning",
       "topic": "Venn Diagrams",
-      "questions": 74,
+      "questions": 84,
       "schema_versions": [
         "A"
       ],
       "paths": [
         "seeds/static_gk/reasoning/REAS_VENN_DIAGRAMS_V_MIXED.json",
-        "seeds/static_gk/reasoning/RSN_VENN.json"
+        "seeds/static_gk/reasoning/RSN_VENN.json",
+        "seeds/static_gk/reasoning/RSN_VENN_DIAGRAM_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 25,
-      "diff_easy": 22,
-      "diff_medium": 33,
-      "diff_hard": 19,
+      "parity_fails": 33,
+      "diff_easy": 28,
+      "diff_medium": 36,
+      "diff_hard": 20,
       "diff_unknown": 0
     },
     {
@@ -28194,6 +29086,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "VOCAB_ANTONYMS",
+      "subject": "Vocabulary",
+      "topic": "Antonyms",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_ANTONYMS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 12,
+      "diff_easy": 2,
+      "diff_medium": 6,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "VOCAB_ANTONYMS_BASIC_MIXED",
       "subject": "Vocabulary",
       "topic": "Antonyms basic — mixed tiers",
@@ -28209,6 +29120,25 @@
       "parity_fails": 2,
       "diff_easy": 4,
       "diff_medium": 7,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "VOCAB_ANTONYMS_HARD",
+      "subject": "Vocabulary",
+      "topic": "Antonyms — Advanced Level",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_ANTONYMS_HARD_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 1,
+      "diff_medium": 6,
       "diff_hard": 3,
       "diff_unknown": 0
     },
@@ -28285,6 +29215,25 @@
       "parity_fails": 2,
       "diff_easy": 9,
       "diff_medium": 6,
+      "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "VOCAB_COLLOCATIONS",
+      "subject": "Vocabulary",
+      "topic": "Collocations — Common Word Partnerships",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_COLLOCATIONS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 3,
+      "diff_medium": 5,
       "diff_hard": 2,
       "diff_unknown": 0
     },
@@ -28481,6 +29430,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "VOCAB_FOREIGN_WORDS",
+      "subject": "Vocabulary",
+      "topic": "Foreign Words and Phrases Used in English",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_FOREIGN_WORDS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 1,
+      "diff_medium": 6,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "VOCAB_FOREIGN_WORDS_II_MIXED",
       "subject": "Vocabulary",
       "topic": "Foreign words and phrases II — mixed tiers",
@@ -28633,6 +29601,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "VOCAB_HOMOPHONES",
+      "subject": "Vocabulary",
+      "topic": "Homophones and Easily Confused Words",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_HOMOPHONES_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 7,
+      "diff_easy": 2,
+      "diff_medium": 5,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "VOCAB_HOMOPHONES_II_MIXED",
       "subject": "Vocabulary",
       "topic": "Homophones II — mixed tiers",
@@ -28674,19 +29661,39 @@
       "topic_code": "VOCAB_IDIOMS",
       "subject": "Vocabulary",
       "topic": "High-hit idioms (PYQ-weighted)",
-      "questions": 17,
+      "questions": 29,
       "schema_versions": [
         "A"
       ],
       "paths": [
-        "seeds/static_gk/vocabulary/VOCAB_IDIOMS.json"
+        "seeds/static_gk/vocabulary/VOCAB_IDIOMS.json",
+        "seeds/static_gk/vocabulary/VOCAB_IDIOMS_B2.json"
       ],
       "needs_transcode": false,
       "needs_subject_canon": false,
-      "parity_fails": 9,
-      "diff_easy": 11,
-      "diff_medium": 4,
-      "diff_hard": 2,
+      "parity_fails": 21,
+      "diff_easy": 16,
+      "diff_medium": 10,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "VOCAB_IDIOMS_COMMON",
+      "subject": "Vocabulary",
+      "topic": "Common English Idioms — Meaning and Usage",
+      "questions": 11,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_IDIOMS_COMMON_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 11,
+      "diff_easy": 4,
+      "diff_medium": 6,
+      "diff_hard": 1,
       "diff_unknown": 0
     },
     {
@@ -28896,6 +29903,44 @@
       "diff_easy": 9,
       "diff_medium": 6,
       "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "VOCAB_ONE_WORD",
+      "subject": "Vocabulary",
+      "topic": "One Word Substitution",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_ONE_WORD_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 11,
+      "diff_easy": 4,
+      "diff_medium": 6,
+      "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "VOCAB_ONE_WORD_ADV",
+      "subject": "Vocabulary",
+      "topic": "One Word Substitution — Advanced",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_ONE_WORD_ADV_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 7,
+      "diff_easy": 2,
+      "diff_medium": 3,
+      "diff_hard": 5,
       "diff_unknown": 0
     },
     {
@@ -29109,6 +30154,44 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "VOCAB_PHRASAL_ADV",
+      "subject": "Vocabulary",
+      "topic": "Phrasal Verbs — Advanced",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_PHRASAL_ADV_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 8,
+      "diff_easy": 3,
+      "diff_medium": 5,
+      "diff_hard": 2,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "VOCAB_PHRASAL_VERBS",
+      "subject": "Vocabulary",
+      "topic": "Phrasal Verbs",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_PHRASAL_VERBS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 7,
+      "diff_easy": 4,
+      "diff_medium": 7,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "VOCAB_PHRASAL_VERBS_IV_MIXED",
       "subject": "Vocabulary",
       "topic": "Phrasal verbs IV — mixed tiers",
@@ -29163,6 +30246,44 @@
       "diff_easy": 6,
       "diff_medium": 5,
       "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "VOCAB_PREFIX_SUFFIX",
+      "subject": "Vocabulary",
+      "topic": "Prefixes and Suffixes — Word Formation",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_PREFIX_SUFFIX_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 6,
+      "diff_easy": 7,
+      "diff_medium": 2,
+      "diff_hard": 1,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "VOCAB_PROVERBS",
+      "subject": "Vocabulary",
+      "topic": "Proverbs and their Meanings",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_PROVERBS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 4,
+      "diff_medium": 6,
+      "diff_hard": 0,
       "diff_unknown": 0
     },
     {
@@ -30040,6 +31161,25 @@
       "diff_unknown": 0
     },
     {
+      "topic_code": "VOCAB_ROOT_WORDS",
+      "subject": "Vocabulary",
+      "topic": "Word Roots and Word Formation",
+      "questions": 11,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_ROOT_WORDS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 3,
+      "diff_medium": 5,
+      "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
       "topic_code": "VOCAB_SCIENTIFIC_TERMS_MIXED",
       "subject": "Vocabulary",
       "topic": "Scientific terms — mixed tiers",
@@ -30075,6 +31215,44 @@
       "diff_easy": 5,
       "diff_medium": 6,
       "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "VOCAB_SYNONYMS",
+      "subject": "Vocabulary",
+      "topic": "Synonyms",
+      "questions": 12,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_SYNONYMS_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 12,
+      "diff_easy": 2,
+      "diff_medium": 6,
+      "diff_hard": 4,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "VOCAB_SYNONYMS_ADV",
+      "subject": "Vocabulary",
+      "topic": "Synonyms — Advanced Level",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_SYNONYMS_ADV_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 10,
+      "diff_easy": 0,
+      "diff_medium": 4,
+      "diff_hard": 6,
       "diff_unknown": 0
     },
     {
@@ -30151,6 +31329,25 @@
       "diff_easy": 5,
       "diff_medium": 6,
       "diff_hard": 3,
+      "diff_unknown": 0
+    },
+    {
+      "topic_code": "VOCAB_WORD_USAGE",
+      "subject": "Vocabulary",
+      "topic": "Word Usage — Confusable and Commonly Misused Words",
+      "questions": 10,
+      "schema_versions": [
+        "A"
+      ],
+      "paths": [
+        "seeds/static_gk/vocabulary/VOCAB_WORD_USAGE_B2.json"
+      ],
+      "needs_transcode": false,
+      "needs_subject_canon": false,
+      "parity_fails": 9,
+      "diff_easy": 1,
+      "diff_medium": 7,
+      "diff_hard": 2,
       "diff_unknown": 0
     }
   ],

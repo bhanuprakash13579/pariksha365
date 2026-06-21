@@ -1,0 +1,178 @@
+{
+  "topic_code": "ENG_ERROR_SPOTTING",
+  "subject": "English",
+  "topic": "Error Spotting",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Find the error in the sentence: 'Neither the manager nor the employees was present at the meeting.'",
+      "options": [
+        {"option_text": "Neither (conjunction usage is correct)", "is_correct": false},
+        {"option_text": "nor (used correctly in 'neither...nor')", "is_correct": false},
+        {"option_text": "was present (error: 'neither...nor' with a plural noun nearest to the verb requires a plural verb; 'employees' is nearest → verb should be 'were present' ✓)", "is_correct": true},
+        {"option_text": "at the meeting (correct preposition and phrase)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Rule for 'neither...nor' / 'either...or': the verb agrees with the subject CLOSEST to the verb. Here: 'neither the manager NOR THE EMPLOYEES' — 'employees' (plural) is closest → verb = 'were present'. Corrected: 'Neither the manager nor the employees WERE present at the meeting.'",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Identify the error: 'The news are very disturbing.'",
+      "options": [
+        {"option_text": "The (correct article)", "is_correct": false},
+        {"option_text": "news are (error: 'news' is an uncountable noun, always singular → verb must be 'is' ✓)", "is_correct": true},
+        {"option_text": "very (correctly modifies the adjective)", "is_correct": false},
+        {"option_text": "disturbing (correct adjective)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 'News' ends in 's' but is NOT plural — it is an uncountable singular noun. Correct: 'The news IS very disturbing.' Other similar nouns (always singular): information, furniture, advice, luggage, progress, knowledge, equipment, mathematics, physics, economics.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the error: 'He is one of the most brilliant student in the class.'",
+      "options": [
+        {"option_text": "He is (correct subject-verb agreement)", "is_correct": false},
+        {"option_text": "one of the most (correct superlative construction: 'one of the most + adjective + plural noun')", "is_correct": false},
+        {"option_text": "brilliant student (error: 'one of the most brilliant' must be followed by a PLURAL noun → 'students' ✓)", "is_correct": true},
+        {"option_text": "in the class (correct prepositional phrase)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Rule: 'one of the + superlative + PLURAL NOUN'. The structure 'one of the most brilliant STUDENTS' is correct — the noun after 'one of' must be plural. Corrected: 'He is one of the most brilliant STUDENTS in the class.' Common error: using singular noun after 'one of the most'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Spot the error: 'I have been waiting for him since two hours.'",
+      "options": [
+        {"option_text": "I have been waiting (tense is correct — present perfect continuous)", "is_correct": false},
+        {"option_text": "for him (correct object)", "is_correct": false},
+        {"option_text": "since two hours (error: 'since' is used with a specific point in time; 'for' is used with a duration of time → should be 'for two hours' ✓)", "is_correct": true},
+        {"option_text": "No error (the error is in 'since two hours')", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 'Since' = used with a specific point in time (since 8 AM, since Monday, since 2020). 'For' = used with a duration (for two hours, for three days, for a month). Corrected: 'I have been waiting for him FOR two hours.' This is one of the most frequently tested preposition errors.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the error: 'The police has arrived and are investigating the crime scene.'",
+      "options": [
+        {"option_text": "The police has arrived (error: 'police' is always treated as plural in English → 'have arrived' ✓)", "is_correct": true},
+        {"option_text": "and are investigating (this is correct — 'police are' is correct in the second clause)", "is_correct": false},
+        {"option_text": "the crime scene (correct phrase)", "is_correct": false},
+        {"option_text": "No error (there IS an error — 'police has' should be 'police have')", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. 'Police' is always plural (a collective body) — it always takes a plural verb: 'police HAVE arrived', 'police ARE investigating'. Ironically, the second verb ('are investigating') is correct in the sentence. Corrected: 'The police HAVE arrived and are investigating the crime scene.' Note: 'A police officer' is singular.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Identify the error: 'She is too tired to not give up now.'",
+      "options": [
+        {"option_text": "She is (correct)", "is_correct": false},
+        {"option_text": "too tired (correct use of 'too')", "is_correct": false},
+        {"option_text": "to not give up (error: 'too + adjective + to' already implies negation; 'to not' creates a double negative; should be 'to give up' ✓)", "is_correct": true},
+        {"option_text": "No error (there is an error — double negative)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. The structure 'too + adjective + to + verb' implies inability/impossibility without needing 'not'. 'She is too tired to give up' means she cannot even give up. Adding 'not' creates a double negative and reverses the meaning. Correct: 'She is too tired to give up now.' Common trap in SSC/Bank exams.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the error: 'A majority of the students in the class has submitted their assignments.'",
+      "options": [
+        {"option_text": "A majority of the students (correct phrase)", "is_correct": false},
+        {"option_text": "in the class (correct prepositional phrase)", "is_correct": false},
+        {"option_text": "has submitted (error: 'majority' when referring to a majority of countable people takes a plural verb → 'have submitted' ✓)", "is_correct": true},
+        {"option_text": "their assignments (correct — plural pronoun for plural students)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. 'A majority of + plural noun' takes a plural verb when referring to people or countable things. 'A majority of the students HAVE submitted.' Compare: 'The majority (of opinion) IS in favour' (abstract) vs 'A majority of students HAVE passed' (people). Corrected: '...the students in the class HAVE submitted their assignments.'",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Spot the error: 'He denied to have stolen the money.'",
+      "options": [
+        {"option_text": "He denied (verb is used correctly)", "is_correct": false},
+        {"option_text": "to have stolen (error: 'deny' is followed by a gerund (-ing form), not an infinitive; should be 'having stolen' ✓)", "is_correct": true},
+        {"option_text": "the money (correct object)", "is_correct": false},
+        {"option_text": "No error (there is an error — 'to have stolen' should be 'having stolen')", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 'Deny' must be followed by a gerund (-ing), not an infinitive (to + verb). Correct: 'He denied HAVING stolen the money.' Other verbs that take gerunds: admit, avoid, enjoy, mind, suggest, consider, keep, risk, finish, dislike. Verbs that take infinitives: decide, hope, plan, promise, agree, want, refuse.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the error: 'I am looking forward to meet you next week.'",
+      "options": [
+        {"option_text": "I am looking forward (correct phrase start)", "is_correct": false},
+        {"option_text": "to meet (error: 'look forward to' — here 'to' is a preposition, not part of an infinitive; so it must be followed by a noun or gerund → 'meeting' ✓)", "is_correct": true},
+        {"option_text": "you next week (correct)", "is_correct": false},
+        {"option_text": "No error (there IS an error — 'to meet' should be 'to meeting')", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. In 'look forward TO', the 'to' is a PREPOSITION (not part of the infinitive). Prepositions must be followed by nouns or gerunds. Correct: 'I am looking forward to MEETING you next week.' Other similar traps: 'object to doing', 'committed to doing', 'used to doing', 'accustomed to doing', 'devoted to doing'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Identify the error: 'Scarcely had she entered the room than the lights went off.'",
+      "options": [
+        {"option_text": "Scarcely had she entered (inverted structure is correct with 'scarcely')", "is_correct": false},
+        {"option_text": "the room (correct)", "is_correct": false},
+        {"option_text": "than (error: 'scarcely/hardly + had + subject + V3 + WHEN'; 'than' is used with 'no sooner'; should be 'when' ✓)", "is_correct": true},
+        {"option_text": "went off (correct — lights going off is the result)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Rule: 'Scarcely/Hardly + had + subject + V3 + WHEN (not than) + subject + past simple'. 'No Sooner + had + subject + V3 + THAN'. Corrected: 'Scarcely had she entered the room WHEN the lights went off.' The mix-up of 'when' and 'than' is one of the most tested error types in SSC exams.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

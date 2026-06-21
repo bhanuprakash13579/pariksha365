@@ -1,0 +1,638 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Approximation & BODMAS",
+  "topic_code": "QA_APPROX",
+  "questions": [
+    {
+      "stem": "What is the value of 36 ÷ 4 + 2 × 5 − 8?",
+      "options": [
+        {
+          "option_text": "3 (grouping 2 × (5 − 8) = −6 and computing 9 + (−6) = 3)",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 (BODMAS applied correctly: 9 + 10 − 8 = 11)",
+          "is_correct": true
+        },
+        {
+          "option_text": "22 (treating 36 ÷ (4 + 2) × 5 − 8 = 6 × 5 − 8)",
+          "is_correct": false
+        },
+        {
+          "option_text": "47 (left-to-right evaluation ignoring BODMAS rules entirely)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. BODMAS: Division and Multiplication are resolved before Addition and Subtraction. 36 ÷ 4 = 9, 2 × 5 = 10, then 9 + 10 − 8 = 11. Option D (47) is the classic left-to-right trap: 36÷4=9, 9+2=11, 11×5=55, 55−8=47 — multiplication is done after addition, which violates BODMAS. Option C groups 4+2 before dividing, inserting a bracket that does not exist. **Short Trick:** Write down the DM results first as a separate line: 36÷4=9 and 2×5=10. Replace them in the expression → 9 + 10 − 8 = 11. This makes left-to-right errors impossible.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:20:04+00:00",
+      "id": "sgk_QA_APPROX_00001"
+    },
+    {
+      "stem": "A school library has 3,462 novels, 1,837 textbooks, and 2,594 reference books. When each count is rounded to the nearest 100, what is the approximate total number of books?",
+      "options": [
+        {
+          "option_text": "approximately 7,700 books (rounds 3,462 → 3,400 and 2,594 → 2,500)",
+          "is_correct": false
+        },
+        {
+          "option_text": "approximately 7,800 books (rounds 3,462 down to 3,400 incorrectly)",
+          "is_correct": false
+        },
+        {
+          "option_text": "approximately 7,900 books (3,500 + 1,800 + 2,600 after correct rounding)",
+          "is_correct": true
+        },
+        {
+          "option_text": "approximately 8,000 books (rounds 1,837 up to 1,900 incorrectly)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rule: inspect the tens digit of each number — if ≥ 5, round up; if < 5, round down. 3,462: tens digit = 6 → rounds up to 3,500. 1,837: tens digit = 3 → rounds DOWN to 1,800. 2,594: tens digit = 9 → rounds up to 2,600. Total = 3,500 + 1,800 + 2,600 = 7,900. Option D error: 1,837 has tens digit 3, which is less than 5, so it must round down to 1,800, not up to 1,900. **Short Trick:** Cover all digits to the right of the hundreds place. If the two-digit tail ≥ 50, add 100 and zero out; if < 50, just zero out. For 3,462: tail=62 ≥ 50 → 3,500. For 1,837: tail=37 < 50 → 1,800.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:20:04+00:00",
+      "id": "sgk_QA_APPROX_00002"
+    },
+    {
+      "stem": "Without performing long multiplication, what is the exact value of 198 × 202?",
+      "options": [
+        {
+          "option_text": "39,600 (computing 198 × 200 and ignoring the remaining +2 portion)",
+          "is_correct": false
+        },
+        {
+          "option_text": "39,996 (identity a² − b², where a = 200, b = 2: 40,000 − 4)",
+          "is_correct": true
+        },
+        {
+          "option_text": "40,000 (approximating 198 ≈ 202 ≈ 200 and ignoring the difference)",
+          "is_correct": false
+        },
+        {
+          "option_text": "40,004 (mistakenly using a² + b² = 200² + 4 = 40,004)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 198 and 202 are symmetric about 200: 198 = 200 − 2 and 202 = 200 + 2. Apply the difference-of-squares identity: (a − b)(a + b) = a² − b². So 198 × 202 = 200² − 2² = 40,000 − 4 = 39,996. Option D flips the sign: the identity subtracts b², never adds it. Option C (40,000) is a rough estimate but not the exact value — the question asks for exact. **Short Trick:** Whenever two factors are equidistant from a round number n (i.e., they are n−k and n+k), use n² − k² immediately. This eliminates all digit-by-digit multiplication. Spot the symmetry first — that is the skill SSC/IBPS reward in approximation questions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:20:04+00:00",
+      "id": "sgk_QA_APPROX_00003"
+    },
+    {
+      "stem": "What is the value of 1/3 + 1/6 × 3 − 1/4?",
+      "options": [
+        {
+          "option_text": "7/12 after BODMAS: 1/6 × 3 = 1/2 first, then 1/3 + 1/2 − 1/4",
+          "is_correct": true
+        },
+        {
+          "option_text": "5/4 by adding 1/3 + 1/6 = 1/2 first, then multiplying 1/2 × 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/12 by swapping the roles of the first and last terms in the expression",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/2 by stopping after evaluating only 1/3 + 1/6 = 1/2 partially",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. BODMAS: Multiplication is done before Addition/Subtraction. Resolve 1/6 × 3 = 1/2 first. Then: 1/3 + 1/2 − 1/4 = 4/12 + 6/12 − 3/12 = 7/12. Option B is the most tempting error: students add 1/3 + 1/6 = 1/2 first, then multiply: (1/2) × 3 = 3/2, then 3/2 − 1/4 = 5/4 — this treats addition as higher priority than multiplication, which is wrong. **Short Trick:** In any mixed-operation fraction expression, circle every × and ÷ sign first and resolve those terms immediately. Here: 1/6 × 3 = 3/6 = 1/2. Rewrite as 1/3 + 1/2 − 1/4, find LCM = 12, and compute: 4 + 6 − 3 = 7, so answer = 7/12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:20:04+00:00",
+      "id": "sgk_QA_APPROX_00004"
+    },
+    {
+      "stem": "What is the approximate value of 29.97 × 5.02 + 14.89 × 3.98 − 49.98 ÷ 5.02?",
+      "options": [
+        {
+          "option_text": "approximately 195 (rounding 29.97 down to 29 instead of up to 30)",
+          "is_correct": false
+        },
+        {
+          "option_text": "approximately 200 (each factor rounded to nearest integer: 30, 5, 15, 4, 50, 5)",
+          "is_correct": true
+        },
+        {
+          "option_text": "approximately 210 (forgetting to subtract the 49.98 ÷ 5.02 ≈ 10 term)",
+          "is_correct": false
+        },
+        {
+          "option_text": "approximately 220 (treating the subtraction of the last term as addition)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Round each near-integer: 29.97 → 30, 5.02 → 5, 14.89 → 15, 3.98 → 4, 49.98 → 50, 5.02 → 5. Then: 30 × 5 + 15 × 4 − 50 ÷ 5 = 150 + 60 − 10 = 200. Option A error: 29.97 has decimal .97 which is > .5, so it must round UP to 30, not down to 29. That mistake alone drops the first term by 5, giving 145 + 60 − 10 = 195. **Short Trick:** For x.97 or x.98, always round UP; for x.01 or x.02, always round DOWN. This ensures approximation error stays below 0.03 per factor — the standard IBPS/SSC exam strategy for these three-product expressions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:20:04+00:00",
+      "id": "sgk_QA_APPROX_00005"
+    },
+    {
+      "stem": "What is the value of 3 + [4 × {5 − (12 ÷ 4 + 1)} + 7]?",
+      "options": [
+        {
+          "option_text": "14 (innermost () → curly {} → square [], resolving DM before AS in each layer)",
+          "is_correct": true
+        },
+        {
+          "option_text": "19 (misreading +1 as outside the inner brackets: {5 − 12 ÷ 4} + 1 + 7)",
+          "is_correct": false
+        },
+        {
+          "option_text": "28 (ignoring all bracket layers and applying BODMAS to the flat expression)",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 (absorbing the +7 into the curly braces: 4 × {5 − 4 + 7} = 4 × 8 = 32)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Peel from innermost outward. Step 1 — inner (): 12 ÷ 4 + 1 = 3 + 1 = 4. Step 2 — curly {}: 5 − 4 = 1. Step 3 — inside []: 4 × 1 + 7 = 4 + 7 = 11 (× before + by BODMAS). Step 4 — outer addition: 3 + 11 = 14. Option D error: the +7 sits outside {} but inside [], so it is NOT governed by the curly braces. Pulling it in gives 4 × {5 − 4 + 7} = 4 × 8 = 32, then 3 + 32 = 35 — a bracket-boundary confusion. **Short Trick:** Think of (), {}, [] as onion rings — always peel the innermost ring first, fully, before touching the next. Never skip a ring or reassign a term to the wrong ring. Resolve DM before AS inside each ring before moving out.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:20:04+00:00",
+      "id": "sgk_QA_APPROX_00006"
+    },
+    {
+      "stem": "Without performing long multiplication, what is the exact value of 998² − 997 × 999?",
+      "options": [
+        {
+          "option_text": "0 (assuming 998² equals 997 × 999 as they are near-equal large numbers)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 (identity a² − (a−1)(a+1) = 1, with a = 998 giving the exact result)",
+          "is_correct": true
+        },
+        {
+          "option_text": "−1 (applying the identity with the two terms swapped in reverse order)",
+          "is_correct": false
+        },
+        {
+          "option_text": "996,004 (computing only 998² = 996,004 and omitting the subtraction step)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Recognise that 997 × 999 = (998 − 1)(998 + 1) = 998² − 1² = 998² − 1. Therefore: 998² − 997 × 999 = 998² − (998² − 1) = 1. Option A (0) is the intuition trap — students feel the two enormous near-equal terms must cancel, but the square always exceeds the neighbour product by exactly 1. Option C (−1) comes from reversing the subtraction: 997 × 999 − 998² = −1, but the question has 998² first. **Short Trick:** Memorise the identity: n² − (n−1)(n+1) = 1 for every integer n. Quick check: 5² − 4×6 = 25 − 24 = 1. 10² − 9×11 = 100 − 99 = 1. Examiners use three-digit versions of this to eliminate brute-force calculators.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:20:04+00:00",
+      "id": "sgk_QA_APPROX_00007"
+    },
+    {
+      "stem": "What is the value of 72 ÷ 8 − 2 × 3 + 4?",
+      "options": [
+        {
+          "option_text": "25 (BODMAS violated; treated (9−2) as a unit before × 3)",
+          "is_correct": false
+        },
+        {
+          "option_text": "31 (−2×3 term dropped; computed 72÷8×3+4 by mistake)",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 (BODMAS correctly applied; × and ÷ precede + and −)",
+          "is_correct": true
+        },
+        {
+          "option_text": "40 (8 and 2 grouped as denominator; 72÷(8−2)×3+4 computed)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. BODMAS requires × and ÷ before + and −. Step by step: 72÷8=9 and 2×3=6 (both computed first, left to right), then 9−6+4=7. Option A (25) treats (9−2)=7 as a combined unit then multiplies: 7×3+4=25 — a classic BODMAS error of pairing subtraction with division output. Option B (31) drops the −2×3 term entirely: 9×3+4=31. Option D (40) groups (8−2)=6 as the divisor: 72÷6×3+4=12×3+4=40. **Short Trick:** Circle the × and ÷ pairs first, left to right — (72÷8)=9 and (2×3)=6 — then handle + and −: 9−6+4=7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:16:27+00:00",
+      "id": "sgk_QA_APPROX_00008"
+    },
+    {
+      "stem": "What is the approximate value of √143.7, rounded to the nearest integer?",
+      "options": [
+        {
+          "option_text": "11 (nearest perfect square below 143.7 is 11²=121, chosen wrongly)",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 (143.7 ≈ 144 = 12²; so √143.7 ≈ 12 is correct)",
+          "is_correct": true
+        },
+        {
+          "option_text": "13 (rounded up to √169=13² by overestimating the root)",
+          "is_correct": false
+        },
+        {
+          "option_text": "14 (confused 14²=196 with the radicand value 143.7 in error)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. The two nearest perfect squares are 12²=144 (above 143.7 by only 0.3) and 11²=121 (below by 22.7). Since 143.7 sits just 0.3 below 144, √143.7 ≈ 12. Option A (11) picks the lower bound √121=11, but 121 is 22.7 away — far too distant. Option C (13) overshoots to √169=13. Option D (14) confuses 14²=196 with the radicand 143.7. **Short Trick:** Find the two surrounding perfect squares. Gap to 144: 0.3; gap to 121: 22.7. Always pick the square root whose square is closest — here, 12 wins by a wide margin.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:16:27+00:00",
+      "id": "sgk_QA_APPROX_00009"
+    },
+    {
+      "stem": "Given √2 ≈ 1.414 and √3 ≈ 1.732, what is the nearest integer value of (√2 + √3)²?",
+      "options": [
+        {
+          "option_text": "5 (cross-term 2√6 omitted; only (√2)²+(√3)²=2+3=5 computed)",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 (correct expansion: 5+2√6 ≈ 5+4.9 = 9.9 ≈ 10 nearest integer)",
+          "is_correct": true
+        },
+        {
+          "option_text": "11 (overestimated √6 ≈ 3; computed 5+2×3=11 incorrectly)",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 (used √2 ≈ 1.5, √3 ≈ 1.5; then (1.5+1.5)²=3²=9 by error)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Expand algebraically: (√2+√3)²=(√2)²+2·√2·√3+(√3)²=2+2√6+3=5+2√6. Then √6=√2×√3≈1.414×1.732≈2.449, so 5+2×2.449=5+4.898≈9.9≈10. Option A (5) omits the cross-term 2√6 — the most common (a+b)² expansion error, treating it as a²+b² only. Option C (11) overestimates √6≈3 giving 5+6=11. Option D (9) uses rough values √2≈1.5 and √3≈1.5 so (3.0)²=9, losing precision in both approximations. **Short Trick:** Memorise (√a+√b)²=a+b+2√(ab). Here: 2+3+2√6=5+4.9≈10. The cross-term equals twice the geometric mean of a and b.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:16:27+00:00",
+      "id": "sgk_QA_APPROX_00010"
+    },
+    {
+      "stem": "What is the value of 100 ÷ 4 − 3 × (5 + 2) + 2²?",
+      "options": [
+        {
+          "option_text": "6 (treated 2² as simply 2 instead of 4; got 25−21+2=6 by mistake)",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 (correct BODMAS: brackets, exponent, ×÷, then +−; 25−21+4=8)",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 (confused 2² with 2³=8; computed 25−21+8=12 by mistake)",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 (ignored bracket; flattened to 100÷4−3×5+2+2²=25−15+2+4=16)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Full BODMAS sequence — bracket: (5+2)=7; exponent: 2²=4; division and multiplication left to right: 100÷4=25 and 3×7=21; finally add/subtract: 25−21+4=8. Option A (6) evaluates 2²=2: 25−21+2=6. Option C (12) confuses 2² with 2³=8: 25−21+8=12. Option D (16) ignores the bracket entirely, reading the expression flat as 100÷4−3×5+2+2²=25−15+2+4=16 — the bracket's job is to bind 5 and 2 together before multiplication. **Short Trick:** Process from innermost layer outward — bracket: 5+2=7; exponent: 2²=4; then ×÷: 25 and 21; finally 25−21+4=8. Never skip layers.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:16:27+00:00",
+      "id": "sgk_QA_APPROX_00011"
+    },
+    {
+      "stem": "What is the approximate value of 4.97 × √24.8 + 3.02 × √48.9?",
+      "options": [
+        {
+          "option_text": "41 (rounded 4.97 down to 4; computed 4×5+3×7=20+21=41 in error)",
+          "is_correct": false
+        },
+        {
+          "option_text": "43 (used √48.9 ≈ √36=6 instead of √49=7; got 25+18=43 in error)",
+          "is_correct": false
+        },
+        {
+          "option_text": "46 (correct: 4.97≈5, √24.8≈5, 3.02≈3, √48.9≈7; 25+21=46)",
+          "is_correct": true
+        },
+        {
+          "option_text": "53 (rounded 3.02 up to 4 carelessly; computed 5×5+4×7=25+28=53)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Round coefficients to the nearest integer: 4.97≈5, 3.02≈3. Identify the nearest perfect square under each radical: √24.8≈√25=5 (since 5²=25, gap 0.2) and √48.9≈√49=7 (since 7²=49, gap 0.1). Then: 5×5+3×7=25+21=46. Option A (41) rounds 4.97 down to 4: 4×5+3×7=41. Option B (43) picks √36=6 for √48.9, choosing the lower perfect square unnecessarily: 25+18=43. Option D (53) inflates 3.02 to 4: 25+28=53. **Short Trick:** Scan each radicand for the nearest perfect square — 24.8→25 (5²), 48.9→49 (7²). Round multipliers normally (nearest integer). Multiply last: 5×5+3×7=46.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:16:27+00:00",
+      "id": "sgk_QA_APPROX_00012"
+    },
+    {
+      "stem": "What is the approximate value of 2⁷ × (0.498)² ÷ (3.98 × 0.126)?",
+      "options": [
+        {
+          "option_text": "16 (reached 32÷0.5 correctly but multiplied instead: 32×0.5=16)",
+          "is_correct": false
+        },
+        {
+          "option_text": "32 (approximated 0.126 as 0.25 wrongly; 128×0.25÷(4×0.25)=32)",
+          "is_correct": false
+        },
+        {
+          "option_text": "64 (correct: 128×0.25÷(4×0.125)=32÷0.5=64 via fraction anchors)",
+          "is_correct": true
+        },
+        {
+          "option_text": "128 (forgot to square 0.498; computed 128×0.5÷(4×0.125)=128)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Anchor each decimal to a known fraction: 0.498≈0.5=1/2, so (0.498)²≈(1/2)²=1/4=0.25; 0.126≈0.125=1/8; 3.98≈4. Numerator: 2⁷×0.25=128×0.25=32. Denominator: 4×0.125=0.5. Result: 32÷0.5=64. Option A (16) simplifies to 32÷0.5 correctly but then inverts the final division: 32×0.5=16. Option B (32) uses the wrong anchor 0.126≈0.25 instead of 1/8: denominator becomes 4×0.25=1, giving 32÷1=32. Option D (128) forgets to square 0.498, using it as 0.5 once: 128×0.5÷0.5=128. **Short Trick:** Fraction anchors — 0.125=1/8, 0.25=1/4, 0.5=1/2. Rewrite: 2⁷×(1/4)÷(1/2)=2⁷×(1/4)×2=2⁷/2=2⁶=64.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:16:27+00:00",
+      "id": "sgk_QA_APPROX_00013"
+    },
+    {
+      "stem": "What is the approximate value of [√98 + ∛1000] × (1 ÷ 4.89) − 2.01²?",
+      "options": [
+        {
+          "option_text": "0 (correct: [10+10]×0.2−4=4−4=0 after clean approximations)",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 (used 1÷4.89 ≈ 1÷4=0.25; got 20×0.25−4=5−4=1 by mistake)",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 (used 2.01²≈2 instead of 4; got 20×0.2−2=4−2=2 by mistake)",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 (confused ∛1000=100 instead of 10; got 110×0.2−4=22−4=18)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Approximate term by term: √98≈√100=10 (gap: 2, acceptable for approximation); ∛1000=10 exactly since 10³=1000; 1÷4.89≈1÷5=0.2; 2.01²≈2²=4. Expression: (10+10)×0.2−4=20×0.2−4=4−4=0. Option B (1) rounds 4.89 down to 4 instead of 5: 20×0.25−4=5−4=1. Option C (2) uses 2.01²≈2 (forgetting to square before approximating): 4−2=2. Option D (18) mistakes ∛1000 for 10²=100: (10+100)×0.2−4=22−4=18. **Short Trick:** Cube anchors to memorise: ∛8=2, ∛27=3, ∛125=5, ∛1000=10. The elegant zero result is a built-in self-check — if your working gives a clean cancellation, it confirms you approximated each term correctly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:16:27+00:00",
+      "id": "sgk_QA_APPROX_00014"
+    },
+    {
+      "stem": "The numbers 47, 63, 85, and 24 are each rounded to the nearest 10. What is the sum of the four rounded values?",
+      "options": [
+        {
+          "option_text": "The sum of the rounded values is 219",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sum of the rounded values is 220",
+          "is_correct": true
+        },
+        {
+          "option_text": "The sum of the rounded values is 210",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sum of the rounded values is 230",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Round each number using the standard rule (units digit ≥ 5 → round up): 47→50, 63→60, 85→90, 24→20. Sum = 50+60+90+20 = 220. Option A (219) is the exact unrounded sum—a very common mistake when students add first and forget to round. Option C (210) occurs if 85 is rounded down to 80, misapplying a 'round half down' rule. Option D (230) occurs if 24 is rounded up to 30 instead of down to 20 (units digit 4 < 5, so it must go down). **Short Trick:** Check only the units digit: 47(7→up), 63(3→down), 85(5→up), 24(4→down). Round one at a time to avoid carry-over errors.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:58+00:00",
+      "id": "sgk_QA_APPROX_00015"
+    },
+    {
+      "stem": "What is the value of 50% of 240 + 25% of 80 − 10% of 300?",
+      "options": [
+        {
+          "option_text": "The expression evaluates to 90",
+          "is_correct": false
+        },
+        {
+          "option_text": "The expression evaluates to 110",
+          "is_correct": true
+        },
+        {
+          "option_text": "The expression evaluates to 130",
+          "is_correct": false
+        },
+        {
+          "option_text": "The expression evaluates to 115",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 50% of 240 = 120; 25% of 80 = 20; 10% of 300 = 30. BODMAS directs: evaluate each percentage multiplication first, then apply +/−: 120 + 20 − 30 = 110. Option A (90): student restricts 50% of 240 to 50% of 200 = 100 (ignores the extra 40), giving 100+20−30 = 90. Option C (130): student computes 10% of 100 = 10 instead of 10% of 300 = 30, giving 120+20−10 = 130 — a classic place-value slip. Option D (115): student treats 25% of 80 as just the digit 25, giving 120+25−30 = 115. **Short Trick:** 50% = ÷2, 25% = ÷4, 10% = ÷10. So 240÷2 + 80÷4 − 300÷10 = 120 + 20 − 30 = 110.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:58+00:00",
+      "id": "sgk_QA_APPROX_00016"
+    },
+    {
+      "stem": "What is the approximate value of ∛215 + ∛63, rounded to the nearest integer?",
+      "options": [
+        {
+          "option_text": "The approximate sum rounds to 8",
+          "is_correct": false
+        },
+        {
+          "option_text": "The approximate sum rounds to 9",
+          "is_correct": false
+        },
+        {
+          "option_text": "The approximate sum rounds to 10",
+          "is_correct": true
+        },
+        {
+          "option_text": "The approximate sum rounds to 12",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Find the nearest perfect cube for each term. 6³ = 216 is just 1 away from 215, so ∛215 ≈ 6. 4³ = 64 is just 1 away from 63, so ∛63 ≈ 4. Sum ≈ 6 + 4 = 10. Option A (8): uses 5³ = 125 as anchor for 215 and 3³ = 27 for 63 — both anchors are far less accurate, giving 5+3 = 8. Option B (9): correctly finds ∛215 ≈ 6 but anchors ∛63 to 3³=27 rather than the much closer 4³=64, giving 6+3 = 9. Option D (12): overestimates — picks 7 for ∛215 (7³=343 is far from 215) and 5 for ∛63 (5³=125). **Short Trick:** Memorise perfect cubes up to 10³: 1, 8, 27, 64, 125, 216, 343. Bracket the given number between two consecutive perfect cubes and pick the nearer one.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:58+00:00",
+      "id": "sgk_QA_APPROX_00017"
+    },
+    {
+      "stem": "What is the approximate value of (2/3) × 29.9 + (3/4) × 39.8 − (1/5) × 49.7?",
+      "options": [
+        {
+          "option_text": "The approximated result is 35",
+          "is_correct": false
+        },
+        {
+          "option_text": "The approximated result is 40",
+          "is_correct": true
+        },
+        {
+          "option_text": "The approximated result is 45",
+          "is_correct": false
+        },
+        {
+          "option_text": "The approximated result is 50",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Round each decimal to the nearest whole: 29.9 ≈ 30, 39.8 ≈ 40, 49.7 ≈ 50. Compute: (2/3)×30 = 20; (3/4)×40 = 30; (1/5)×50 = 10. Apply BODMAS — multiplication before subtraction: 20 + 30 − 10 = 40. Option A (35): error using 0.6 as an approximation for 2/3 (instead of 0.667), giving 0.6×30 = 18; 18+30−10 = 38, then mis-rounded to 35. Option C (45): student multiplies 3×40 = 120 for the second term instead of dividing by 4, arriving at an inflated intermediate value. Option D (50): omits the subtraction of (1/5)×49.7 entirely, adding only the first two terms: 20+30 = 50. **Short Trick:** SSC approximation questions are engineered so each decimal rounds to a fraction-friendly multiple. Spot the pattern: 2/3 of 30, 3/4 of 40, 1/5 of 50 all yield whole numbers instantly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:58+00:00",
+      "id": "sgk_QA_APPROX_00018"
+    },
+    {
+      "stem": "What is the value of 6² − 4 × 3 + 48 ÷ (2³ − 2)?",
+      "options": [
+        {
+          "option_text": "The value of the expression is 24",
+          "is_correct": false
+        },
+        {
+          "option_text": "The value of the expression is 28",
+          "is_correct": false
+        },
+        {
+          "option_text": "The value of the expression is 32",
+          "is_correct": true
+        },
+        {
+          "option_text": "The value of the expression is 36",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Tier 1 – Brackets: (2³−2) = 8−2 = 6. Tier 2 – Orders/powers: 6² = 36. Tier 3 – Division and multiplication L→R: 48÷6 = 8; 4×3 = 12. Tier 4 – Addition and subtraction L→R: 36−12+8 = 32. Option A (24): student evaluates only 6²−4×3 = 36−12 = 24 and ignores the final +48÷(2³−2) term entirely. Option B (28): student drops the inner brackets, computing 48÷2³ = 6 and then subtracting 2 separately, giving 36−12+6−2 = 28 — a classic bracket-removal error. Option D (36): student reads 2³ as 2×3 = 6, so 2³−2 = 4, and 48÷4 = 12, giving 36−12+12 = 36. **Short Trick:** BODMAS in four clean tiers — B:(2³−2)=6; O:6²=36; DM:48÷6=8 then 4×3=12; AS:36−12+8=32. Never skip the bracket tier.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:58+00:00",
+      "id": "sgk_QA_APPROX_00019"
+    },
+    {
+      "stem": "What is the value of [2 × {3 + (4² − 2³)} − 5] × 3 − [6 ÷ 2 + √(4² + 3²)]?",
+      "options": [
+        {
+          "option_text": "The final value of the expression is 41",
+          "is_correct": false
+        },
+        {
+          "option_text": "The final value of the expression is 43",
+          "is_correct": true
+        },
+        {
+          "option_text": "The final value of the expression is 55",
+          "is_correct": false
+        },
+        {
+          "option_text": "The final value of the expression is 19",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Left block — innermost ( ): 4²−2³ = 16−8 = 8; curly { }: 3+8 = 11; 2×11 = 22; 22−5 = 17; 17×3 = 51. Right block: 4²+3² = 16+9 = 25; √25 = 5; 6÷2 = 3; 3+5 = 8. Final: 51−8 = 43. Option A (41): student computes √(4²+3²) as 4+3 = 7 (adds bases instead of squaring then summing under the root); 6÷2+7 = 10; 51−10 = 41. Option C (55): student treats 2³ as 2×3 = 6; 4²−6 = 10; {3+10} = 13; 2×13−5 = 21; 21×3 = 63; 63−8 = 55. Option D (19): student incorrectly distributes the 2× across the curly brackets, computing 2×3+(4²−2³)−5 = 6+8−5 = 9; 9×3 = 27; 27−8 = 19. **Short Trick:** Work from the innermost bracket outward — () → {} → [] — one layer at a time. Never jump ahead to an outer bracket before the inner one is fully resolved.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:58+00:00",
+      "id": "sgk_QA_APPROX_00020"
+    },
+    {
+      "stem": "What is the approximate integer value of (√224 + ∛124) × (√224 − ∛124)?",
+      "options": [
+        {
+          "option_text": "Approximately 171 after simplifying the product",
+          "is_correct": false
+        },
+        {
+          "option_text": "Approximately 199 after simplifying the product",
+          "is_correct": true
+        },
+        {
+          "option_text": "Approximately 200 after simplifying the product",
+          "is_correct": false
+        },
+        {
+          "option_text": "Approximately 209 after simplifying the product",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Recognise the identity (a+b)(a−b) = a²−b² with a = √224 and b = ∛124. The expression becomes (√224)² − (∛124)² = 224 − (∛124)². Crucially, (√224)² = 224 exactly — no rounding needed for this term. Now approximate only ∛124: since 5³ = 125 is just 1 away from 124 (far closer than 4³ = 64), ∛124 ≈ 5, so (∛124)² ≈ 25. Result: 224 − 25 = 199. Option A (171): student approximates √224 ≈ 14 (rounding 14.97 down) and ∛124 ≈ 5, then computes directly as (14+5)(14−5) = 19×9 = 171 — error from approximating √224 before squaring, discarding its exact square. Option C (200): student rounds √224 ≈ 15 first, so uses 15²=225 instead of 224, giving 225−25 = 200 — a one-unit overestimate from premature rounding. Option D (209): student anchors ∛124 to 4³=64 rather than the far closer 5³=125, giving (15+4)(15−4) = 19×11 = 209. **Short Trick:** For (√x + ∛y)(√x − ∛y), apply a²−b² and keep (√x)²=x exact — only approximate the cube-root term. This avoids all square-root arithmetic and reduces the problem to a single subtraction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:58+00:00",
+      "id": "sgk_QA_APPROX_00021"
+    }
+  ]
+}

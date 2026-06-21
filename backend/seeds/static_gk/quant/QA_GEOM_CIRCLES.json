@@ -1,0 +1,848 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Geometry - Circles & Quadrilaterals",
+  "topic_code": "QA_GEOM_CIRCLES",
+  "questions": [
+    {
+      "stem": "AB is a diameter of a circle and C is any point on the circle other than A and B. What is the measure of angle ACB?",
+      "options": [
+        {
+          "option_text": "45°, half of 90° since the inscribed angle is halved a second time",
+          "is_correct": false
+        },
+        {
+          "option_text": "90°, the angle inscribed in a semicircle is always exactly 90°",
+          "is_correct": true
+        },
+        {
+          "option_text": "60°, an equilateral triangle configuration arises inside the circle",
+          "is_correct": false
+        },
+        {
+          "option_text": "180°, AB being a diameter makes C collinear on the same straight line",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. By Thales' theorem, any angle inscribed in a semicircle (subtended by a diameter) is 90°. The central angle AOB = 180°; the inscribed angle = (1/2) × central angle = 90°. Option A (45°) wrongly halves the inscribed angle a second time — halving happens only once, from central to inscribed. Option C (60°) assumes an equilateral triangle, which requires the chord to subtend 120° at the center, not 180°. **Short Trick:** Inscribed angle = (1/2) × central angle. Diameter always subtends 180° at centre, so any point on the circle sees the diameter at exactly 90°. Memorise: Diameter → right angle at circumference.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:09:44+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00001"
+    },
+    {
+      "stem": "A rectangle has length 12 cm and breadth 5 cm. What is the length of its diagonal?",
+      "options": [
+        {
+          "option_text": "11 cm, obtained by subtracting the smaller side from twice the larger",
+          "is_correct": false
+        },
+        {
+          "option_text": "13 cm, applying Pythagoras: diagonal = √(12² + 5²) = √169 = 13 cm",
+          "is_correct": true
+        },
+        {
+          "option_text": "17 cm, adding both sides directly as 12 + 5 without squaring them first",
+          "is_correct": false
+        },
+        {
+          "option_text": "15 cm, using the incorrect average-and-scale shortcut on the two sides",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. In a rectangle the diagonal is the hypotenuse of the right triangle formed by length and breadth. Diagonal = √(12² + 5²) = √(144 + 25) = √169 = 13 cm. Option C (17) is the most common error — students add sides directly instead of squaring first. Option A (11) reflects a guesswork formula. **Short Trick:** Recognise the 5-12-13 Pythagorean triple instantly — no calculator needed. Essential triples for SSC/IBPS: 3-4-5, 5-12-13, 8-15-17, 7-24-25. Spotting the pair (5, 12) gives diagonal = 13 in zero steps.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:09:44+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00002"
+    },
+    {
+      "stem": "From an external point P, two tangents PA and PB are drawn to a circle with centre O and radius 5 cm. If OP = 13 cm, what is the length of each tangent?",
+      "options": [
+        {
+          "option_text": "8 cm, found by subtracting the radius from OP directly: 13 − 5 = 8",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 cm, using PA = √(OP² − r²) = √(169 − 25) = √144 = 12 cm",
+          "is_correct": true
+        },
+        {
+          "option_text": "18 cm, found by adding the radius to OP directly: 13 + 5 = 18 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 cm, taking the mean of OP and the unknown side as (13 + 7) ÷ 2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The radius OA is perpendicular to tangent PA (tangent-radius theorem), so triangle OAP is right-angled at A. Pythagoras gives: PA² = OP² − OA² = 169 − 25 = 144, so PA = 12 cm. Option A (8) is wrong — linear subtraction of radii applies to transverse tangent length between two circles, not to a tangent from an external point. Option C (18) adds instead of applying Pythagoras. **Short Trick:** Spot the 5-12-13 triple directly. OP = 13 is the hypotenuse, r = 5 is one leg, so tangent = 12 — no arithmetic needed. Always check for Pythagorean triples before computing.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:09:44+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00003"
+    },
+    {
+      "stem": "In cyclic quadrilateral ABCD, angle A = 110° and angle B = 85°. What is the measure of angle D?",
+      "options": [
+        {
+          "option_text": "70°, applying the supplementary rule between angle A and angle D as a pair",
+          "is_correct": false
+        },
+        {
+          "option_text": "80°, assuming angles B and D are equal since they appear on the same side",
+          "is_correct": false
+        },
+        {
+          "option_text": "95°, since opposite angles B and D must sum to 180°, giving D = 95°",
+          "is_correct": true
+        },
+        {
+          "option_text": "165°, subtracting the sum of angles A and B from 360° in one step",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. In a cyclic quadrilateral the opposite angle pairs are supplementary (sum = 180°). In ABCD the opposite pairs are (A, C) and (B, D). So angle D = 180° − 85° = 95°, and angle C = 180° − 110° = 70°. Verification: 110 + 85 + 70 + 95 = 360° ✓. Option A (70°) confuses angle D with angle C — D and A are adjacent, not opposite. Option D (165°) subtracts (A + B) from 360° and treats the remainder as a single angle rather than splitting it between C and D. **Short Trick:** Cyclic quad — opposite corners always add to 180°. Pairs in ABCD: A↔C and B↔D. Find the partner of the target angle, subtract from 180°.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:09:44+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00004"
+    },
+    {
+      "stem": "A sector of a circle with radius 14 cm subtends an angle of 90° at the centre. What is the area of the sector? (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "77 cm², obtained by mistakenly using 45° (half of 90°) in the formula",
+          "is_correct": false
+        },
+        {
+          "option_text": "154 cm², correct: (90/360) × (22/7) × 14² = (1/4) × 616 = 154 cm²",
+          "is_correct": true
+        },
+        {
+          "option_text": "308 cm², obtained by using angle fraction 1/2 instead of the correct 1/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "616 cm², computing the full circle area πr² without applying sector fraction",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Area of sector = (θ/360°) × πr² = (90/360) × (22/7) × 196 = (1/4) × 616 = 154 cm². Option A (77) uses θ = 45° — the student halved the angle again after already computing (1/4). Option C (308) uses fraction 1/2 instead of 1/4, a classic error where students halve 360 to get 180 rather than dividing 90 by 360. Option D (616) omits the sector fraction entirely. **Short Trick:** Sector fraction for common angles — 90° → 1/4, 60° → 1/6, 120° → 1/3, 45° → 1/8. For r = 14: πr² = (22/7) × 196 = 22 × 28 = 616. Multiply by 1/4 → 154. One-step: 616 ÷ 4 = 154.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:09:44+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00005"
+    },
+    {
+      "stem": "Two circles have radii 5 cm and 3 cm with centres 10 cm apart. What is the length of their transverse (cross) common tangent?",
+      "options": [
+        {
+          "option_text": "4√6 cm, applying the direct tangent formula √(d² − (r₁ − r₂)²) = √96",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 cm, using transverse tangent = √(d² − (r₁ + r₂)²) = √(100 − 64) = 6",
+          "is_correct": true
+        },
+        {
+          "option_text": "√66 cm, applying wrong formula √(d² − r₁² − r₂²) = √(100 − 25 − 9)",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 cm, subtracting the sum of both radii from centre distance: 10 − 8 = 2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Length of transverse common tangent = √(d² − (r₁ + r₂)²) = √(10² − (5+3)²) = √(100 − 64) = √36 = 6 cm. Transverse tangents cross between the two circles, so both radii point toward the tangent from the same side — hence (r₁ + r₂) is used. Option A (4√6) uses the direct (external) tangent formula √(d² − (r₁−r₂)²) = √96, which is correct only for tangents that do not cross. Option D (2) commits the error of linear subtraction instead of applying Pythagoras. **Short Trick:** Two formulas — Direct tangent: √(d² − (r₁ − r₂)²). Transverse tangent: √(d² − (r₁ + r₂)²). Memory cue: cross = add the radii, external = subtract the radii.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:09:44+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00006"
+    },
+    {
+      "stem": "A rectangle ABCD is inscribed in a circle of radius 10 cm. If side AB = 16 cm, what is the area of the rectangle?",
+      "options": [
+        {
+          "option_text": "160 cm², computed as AB × radius = 16 × 10, misusing radius as the breadth",
+          "is_correct": false
+        },
+        {
+          "option_text": "192 cm², since diagonal = 2r = 20, BC = √(400 − 256) = 12, Area = 192",
+          "is_correct": true
+        },
+        {
+          "option_text": "256 cm², incorrectly assuming ABCD is a square and computing 16 × 16",
+          "is_correct": false
+        },
+        {
+          "option_text": "96 cm², confusing the chord-to-centre perpendicular distance 6 cm with BC",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. For any rectangle inscribed in a circle the diagonal equals the diameter (since each diagonal subtends a semicircle). Diameter = 2 × 10 = 20 cm. By Pythagoras in triangle ABC: BC = √(AC² − AB²) = √(20² − 16²) = √(400 − 256) = √144 = 12 cm. Area = 16 × 12 = 192 cm². Option A (160) multiplies AB by the radius, confusing radius with breadth. Option D (96) uses the perpendicular distance from centre O to chord AB: √(10² − 8²) = √36 = 6 cm, then computes 16 × 6 = 96 — a very common conceptual error mixing chord-distance with rectangle breadth. **Short Trick:** Rectangle in circle → diagonal = diameter = 2r = 20. Recognise 12-16-20 as the 3-4-5 triple scaled by 4. Breadth = 12 immediately, Area = 16 × 12 = 192 — no square root needed if you spot the triple.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:09:44+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00007"
+    },
+    {
+      "stem": "An arc PQ of a circle subtends an angle of 64° at a point R on the major arc. What angle does the same arc PQ subtend at the centre O of the circle?",
+      "options": [
+        {
+          "option_text": "32°, half of the inscribed angle — reversing the theorem direction",
+          "is_correct": false
+        },
+        {
+          "option_text": "64°, equal to the inscribed angle at R — confusing centre with circumference",
+          "is_correct": false
+        },
+        {
+          "option_text": "128°, double the inscribed angle by the central angle theorem",
+          "is_correct": true
+        },
+        {
+          "option_text": "192°, obtained by tripling the circumference angle in error",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. By the Central Angle Theorem, the angle subtended by an arc at the centre is exactly twice the angle subtended at any point on the remaining arc. Central angle = 2 × 64° = 128°. Option B (64°) confuses inscribed angle with central angle — the most common error. Option A (32°) reverses the relationship entirely. **Short Trick:** Central angle = 2 × Inscribed angle. Always double the circumference angle to get the centre angle. No formula to memorise — just double.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:15:49+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00008"
+    },
+    {
+      "stem": "The diagonals of a parallelogram measure 10 cm and 24 cm and they intersect at right angles. What is the perimeter of the parallelogram?",
+      "options": [
+        {
+          "option_text": "34 cm, simply adding the two diagonal lengths 10 + 24 directly",
+          "is_correct": false
+        },
+        {
+          "option_text": "52 cm, four times the side found by Pythagoras on half-diagonals",
+          "is_correct": true
+        },
+        {
+          "option_text": "60 cm, using an incorrect side length of 15 cm from a wrong triple",
+          "is_correct": false
+        },
+        {
+          "option_text": "68 cm, mistaking the sum of half-diagonals (5 + 12 = 17) as one side",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Perpendicular diagonals in a parallelogram identify it as a rhombus. Half-diagonals = 5 cm and 12 cm. Each side = √(5² + 12²) = √(25 + 144) = √169 = 13 cm. Perimeter = 4 × 13 = 52 cm. Option A (34 cm) merely adds the diagonals. Option D (68 cm) uses 5 + 12 = 17 as the side — a common half-diagonal addition error. **Short Trick:** Half-diagonals 5 and 12 form the 5-12-13 Pythagorean triple — side = 13 instantly. Perimeter = 4 × 13 = 52 cm. Spot the triple; skip the arithmetic.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:15:49+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00009"
+    },
+    {
+      "stem": "A tangent XY touches a circle at point P, and chord PQ makes an angle of 48° with tangent XY. What is the measure of the inscribed angle subtending chord PQ from the alternate segment?",
+      "options": [
+        {
+          "option_text": "24°, half the tangent-chord angle — an incorrect halving step",
+          "is_correct": false
+        },
+        {
+          "option_text": "48°, equal to the tangent-chord angle by the Alternate Segment Theorem",
+          "is_correct": true
+        },
+        {
+          "option_text": "96°, double the tangent-chord angle — an incorrect doubling step",
+          "is_correct": false
+        },
+        {
+          "option_text": "132°, the supplement of the tangent-chord angle incorrectly applied",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The Alternate Segment Theorem states: the angle between a tangent at a point and a chord from that point equals the inscribed angle subtending the same chord in the alternate segment. Therefore the angle = 48°. Option D (132°) uses the supplement — students confuse which side the alternate segment lies on. Option A (24°) is a halving error. **Short Trick:** Tangent-chord angle = inscribed angle in alternate segment. Zero calculation needed — directly state the equality. Memorise: same chord, same arc, just different vantage point.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:15:49+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00010"
+    },
+    {
+      "stem": "Two circles have radii 7 cm and 2 cm respectively, and the distance between their centres is 13 cm. What is the length of their direct common tangent?",
+      "options": [
+        {
+          "option_text": "5 cm, using only the difference of the two radii r₁ − r₂ = 5",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 cm, applying DCT = √(d² − (r₁ − r₂)²) to get √144 = 12",
+          "is_correct": true
+        },
+        {
+          "option_text": "√119 cm ≈ 10.9 cm, from an incorrect substitution in the formula",
+          "is_correct": false
+        },
+        {
+          "option_text": "√194 cm ≈ 13.9 cm, wrongly using (r₁ + r₂)² instead of (r₁ − r₂)²",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Direct Common Tangent (DCT) = √(d² − (r₁ − r₂)²) = √(13² − (7 − 2)²) = √(169 − 25) = √144 = 12 cm. Option A (5 cm) is merely r₁ − r₂, not the tangent. Option D uses the Transverse Common Tangent formula (r₁ + r₂) by mistake — a very common mix-up. **Short Trick:** DCT uses (r₁ − r₂); TCT uses (r₁ + r₂). Here (13, 5, 12) is a 5-12-13 Pythagorean triple — recognise it instantly without computing the square root.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:15:49+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00011"
+    },
+    {
+      "stem": "Two chords AB and CD of a circle intersect at an interior point P. Arc AC (not containing B or D) measures 70°, and arc BD (not containing A or C) measures 30°. What is the measure of angle APD?",
+      "options": [
+        {
+          "option_text": "30°, using only arc BD and ignoring arc AC entirely",
+          "is_correct": false
+        },
+        {
+          "option_text": "35°, halving only the larger arc AC and ignoring arc BD",
+          "is_correct": false
+        },
+        {
+          "option_text": "50°, half the sum of the two intercepted arcs AC and BD",
+          "is_correct": true
+        },
+        {
+          "option_text": "70°, using only arc AC and ignoring arc BD entirely",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. When two chords intersect inside a circle, the angle formed = (sum of intercepted arcs) ÷ 2. ∠APD = (arc AC + arc BD) / 2 = (70° + 30°) / 2 = 50°. Options A and D use only one arc — the single most common error on this type. Option B halves only the larger arc. **Short Trick:** Intersecting chords angle = (arc₁ + arc₂) ÷ 2. Think of it as the arithmetic mean of the two arcs the vertical angles 'see.' Vertical angle APD = vertical angle CPB; both equal (70 + 30)/2 = 50°.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:15:49+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00012"
+    },
+    {
+      "stem": "From an external point E, a secant passes through points A then B on a circle with EA = 4 cm and AB = 8 cm. A second secant from E passes through C then D with EC = 6 cm (C between E and D). What is the length CD?",
+      "options": [
+        {
+          "option_text": "4 cm, incorrectly equating CD with the near-distance EA by symmetry",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 cm, applying Power of a Point: EA × EB = EC × ED correctly",
+          "is_correct": true
+        },
+        {
+          "option_text": "6 cm, confusing chord length CD with the full secant length ED",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 cm, misapplying the formula using AB × EB as the power value",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Power of a Point (two secants from E): EA × EB = EC × ED. EB = EA + AB = 4 + 8 = 12 cm. So 4 × 12 = 6 × ED → ED = 8 cm. CD = ED − EC = 8 − 6 = 2 cm. Option C (6 cm) confuses CD with ED. Option D (10 cm) arises from AB × EB = 8 × 12 = 96, then 96/6 − 6 = 10 — a classic formula misuse. **Short Trick:** Power of a Point uses FULL secant lengths from E (not chord lengths): near × far = near × far. Always compute EB = EA + AB first before substituting.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:15:49+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00013"
+    },
+    {
+      "stem": "Two parallel chords of a circle lie on opposite sides of the centre. The chord lengths are 16 cm and 12 cm, and the perpendicular distance between them is 14 cm. What is the radius of the circle?",
+      "options": [
+        {
+          "option_text": "8 cm, taking half of the longer chord length as the radius",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 cm, solving simultaneous perpendicular-bisector equations correctly",
+          "is_correct": true
+        },
+        {
+          "option_text": "√130 cm ≈ 11.4 cm, incorrectly summing squares of both half-chords",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 cm, using half the total inter-chord distance of 14 cm as radius",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let d₁ and d₂ be perpendicular distances from the centre to the 16 cm and 12 cm chords respectively (opposite sides), so d₁ + d₂ = 14. Perpendicular from centre bisects each chord: r² = d₁² + 8² and r² = d₂² + 6². Subtracting: d₂² − d₁² = 64 − 36 = 28, i.e., (d₂ − d₁)(d₂ + d₁) = 28. With d₁ + d₂ = 14: d₂ − d₁ = 2. Solving: d₁ = 6, d₂ = 8. Then r² = 36 + 64 = 100, r = 10 cm. Option A (8 cm) is just the half-chord of 16 cm. **Short Trick:** Write two r² equations, subtract to get (d₂ − d₁), combine with d₁ + d₂ = gap. Here d₁ = 6, d₂ = 8 forms a 6-8-10 Pythagorean triple — r = 10 by inspection.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:15:49+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00014"
+    },
+    {
+      "stem": "The diagonals of a rhombus are 24 cm and 10 cm. What is the area of the rhombus?",
+      "options": [
+        {
+          "option_text": "48 cm², half of one diagonal times the other diagonal",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 cm², area of only one triangle formed by the diagonals",
+          "is_correct": false
+        },
+        {
+          "option_text": "120 cm², half the product of both diagonals (d₁ × d₂ ÷ 2)",
+          "is_correct": true
+        },
+        {
+          "option_text": "240 cm², direct product of both diagonals without halving",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Area of rhombus = (d₁ × d₂) / 2 = (24 × 10) / 2 = 120 cm². The diagonals bisect each other at right angles, forming 4 congruent right triangles; total area = 4 × (½ × d₁/2 × d₂/2) = d₁d₂/2. Option D (240 cm²) forgets to halve the product. Option B (60 cm²) counts area of only one of the two large triangles formed. **Short Trick:** Area = (d₁ × d₂) ÷ 2. Quick: 24 × 10 = 240; 240 ÷ 2 = 120 cm². No Pythagoras needed — one formula, one step.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:53+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00015"
+    },
+    {
+      "stem": "In cyclic quadrilateral PQRS, interior angle Q = 75°. What is the measure of the exterior angle at vertex S (formed by extending side SR beyond S)?",
+      "options": [
+        {
+          "option_text": "75°, exterior angle equals the opposite interior angle Q",
+          "is_correct": true
+        },
+        {
+          "option_text": "105°, interior angle at S, not the exterior angle at S",
+          "is_correct": false
+        },
+        {
+          "option_text": "15°, difference between the given angle and a right angle",
+          "is_correct": false
+        },
+        {
+          "option_text": "150°, double of angle Q by a misapplied inscribed arc rule",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. In a cyclic quadrilateral, opposite angles are supplementary: ∠Q + ∠S = 180°, so ∠S = 105°. Exterior angle at S = 180° − ∠S = 180° − 105° = 75° = ∠Q. This is the standard theorem: the exterior angle of a cyclic quadrilateral equals the interior angle of the opposite vertex. Option B (105°) is the interior angle at S itself, not the exterior. Option C (15°) has no geometric basis. **Short Trick:** Exterior ∠ at any vertex of a cyclic quad = interior ∠ at the diagonally opposite vertex. Exterior ∠S = ∠Q = 75°. One-line answer.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:53+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00016"
+    },
+    {
+      "stem": "Two circles with radii 8 cm and 3 cm have their centres 13 cm apart. What is the length of their direct (external) common tangent?",
+      "options": [
+        {
+          "option_text": "5 cm, the simple difference between the two radii only",
+          "is_correct": false
+        },
+        {
+          "option_text": "6.93 cm, using the internal tangent formula by mistake",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 cm, correctly applying √(d² − (r₁ − r₂)²) formula",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 cm, subtracting radius difference from the centre distance",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. External (direct) common tangent = √(d² − (r₁ − r₂)²) = √(13² − (8−3)²) = √(169 − 25) = √144 = 12 cm. Option B (6.93 cm) arises from applying the transverse (internal) tangent formula √(d² − (r₁ + r₂)²) = √(169 − 121) = √48 ≈ 6.93, which is the formula for tangents that cross between the circles. Option A (5 cm) is merely r₁ − r₂. **Short Trick:** External tangent → subtract (R − r)²; Internal tangent → subtract (R + r)². Here: √(169 − 25) = √144 = 12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:53+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00017"
+    },
+    {
+      "stem": "A chord of a circle is 30 cm long. The perpendicular distance from the centre to this chord is 8 cm. What is the diameter of the circle?",
+      "options": [
+        {
+          "option_text": "17 cm, the radius of the circle obtained by Pythagoras",
+          "is_correct": false
+        },
+        {
+          "option_text": "34 cm, the diameter calculated using 2 × √(15² + 8²)",
+          "is_correct": true
+        },
+        {
+          "option_text": "30 cm, the chord length wrongly taken as the diameter",
+          "is_correct": false
+        },
+        {
+          "option_text": "23 cm, half-chord and perpendicular distance simply added",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The perpendicular from the centre bisects the chord, so half-chord = 15 cm. By Pythagoras: r² = 15² + 8² = 225 + 64 = 289, so r = 17 cm and diameter = 2 × 17 = 34 cm. Option A (17 cm) stops at the radius without doubling — the single most common error here. Option D (23 cm) wrongly adds 15 + 8 without squaring. **Short Trick:** r = √(half-chord² + perp-dist²) = √(225 + 64) = √289 = 17. Diameter = 2 × 17 = 34 cm. Always double the result when the question asks for diameter.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:53+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00018"
+    },
+    {
+      "stem": "Two chords AB and CD of a circle intersect at point P inside the circle. If PA = 6 cm, PB = 8 cm, and PC = 4 cm, what is the length of PD?",
+      "options": [
+        {
+          "option_text": "10 cm, incorrectly combining segment lengths by addition",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 cm, applying intersecting chords PA × PB = PC × PD",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 cm, using PA × PC ÷ PB = 24 ÷ 8 with wrong formula",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 cm, setting PD equal to PA using wrong symmetry rule",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. By the Intersecting Chords Theorem: PA × PB = PC × PD → 6 × 8 = 4 × PD → 48 = 4 × PD → PD = 12 cm. Option C (3 cm) inverts the numerator pair, computing PA × PC ÷ PB = 24 ÷ 8 = 3 — a mirror-image formula error. Option A (10 cm) adds PA + PC = 10, a raw arithmetic confusion. **Short Trick:** Inside a circle, two intersecting chords obey: product of one chord's segments = product of the other's. 6 × 8 = 4 × PD → PD = 48 ÷ 4 = 12 cm.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:53+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00019"
+    },
+    {
+      "stem": "From an external point T, a tangent TP touches a circle at P, and a secant TAB cuts the circle with A as the near intersection and B as the far one. If TP = 9 cm and TA = 3 cm, what is the length of chord AB?",
+      "options": [
+        {
+          "option_text": "6 cm, twice the near segment TA from the external point T",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 cm, computed as TB − TP = 27 − 9, confusing TP for TA",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 cm, chord AB = TB − TA = 27 − 3 by tangent-secant rule",
+          "is_correct": true
+        },
+        {
+          "option_text": "27 cm, the full secant length TB measured from point T",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Tangent-Secant Theorem: TP² = TA × TB → 9² = 3 × TB → 81 = 3 × TB → TB = 27 cm. Chord AB = TB − TA = 27 − 3 = 24 cm. Option D (27 cm) returns TB, the distance from T to the far intersection, not the chord itself. Option B (18 cm) subtracts TP (= 9) instead of TA (= 3) from TB: 27 − 9 = 18 — a classic near/tangent confusion. **Short Trick:** Tangent² = near × far → 81 = 3 × TB → TB = 27. Chord = far − near = 27 − 3 = 24 cm. Subtract near-segment, never the tangent length.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:53+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00020"
+    },
+    {
+      "stem": "In trapezium ABCD with AB ∥ CD, the diagonals intersect at O. Given AB = 15 cm, CD = 9 cm, and area of triangle COD = 27 cm², what is the total area of trapezium ABCD?",
+      "options": [
+        {
+          "option_text": "108 cm², assuming all four triangles equal triangle COD",
+          "is_correct": false
+        },
+        {
+          "option_text": "147 cm², omitting one of the two equal side triangles",
+          "is_correct": false
+        },
+        {
+          "option_text": "150 cm², using (75 − 27) = 48 instead of √(75 × 27) = 45",
+          "is_correct": false
+        },
+        {
+          "option_text": "192 cm², using similar triangle ratios and geometric mean",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Triangles AOB and COD are similar with ratio AB:CD = 15:9 = 5:3. Area ratio = (5/3)² = 25:9. Area(COD) = 27 cm² → Area(AOB) = (25/9) × 27 = 75 cm². Triangles AOD and BOC are equal in area, each = √(Area(AOB) × Area(COD)) = √(75 × 27) = √2025 = 45 cm². Total = 75 + 27 + 45 + 45 = 192 cm². Option B (147 cm²) sums 75 + 27 + 45, omitting the symmetric side triangle BOC. Option C uses the arithmetic difference 75 − 27 = 48 instead of the geometric mean √(75 × 27) = 45. **Short Trick:** For trapezium with parallels p and q: Area(big △) = Area(small △) × (p/q)². Side △ area = √(big × small). Total = big + small + 2√(big × small) = 75 + 27 + 2(45) = 192 cm².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:30:53+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00021"
+    },
+    {
+      "stem": "A circle has radius 13 cm. A chord PQ is drawn such that the perpendicular distance from the centre O to PQ is 5 cm. What is the length of chord PQ?",
+      "options": [
+        {
+          "option_text": "18 cm (radius added to perpendicular distance)",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 cm (the correct length by the bisector theorem)",
+          "is_correct": true
+        },
+        {
+          "option_text": "16 cm (twice the difference of radius and distance)",
+          "is_correct": false
+        },
+        {
+          "option_text": "26 cm (equal to the full diameter of the circle)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. The perpendicular from the centre bisects the chord. Half-chord = √(13² − 5²) = √(169 − 25) = √144 = 12 cm. Full chord PQ = 2 × 12 = 24 cm. Option A (18 cm) simply adds r + d = 13 + 5, which has no geometric meaning. Option C (16 cm) uses 2 × (r − d) = 2 × 8 = 16, incorrectly treating the chord like a reduced diameter. Option D (26 cm) is 2r, the diameter, ignoring the perpendicular offset entirely. **Short Trick:** Recognise the Pythagorean triple instantly — 5, 12, 13. Half-chord = 12, so full chord = 24 cm without any square-root calculation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:01:17+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00022"
+    },
+    {
+      "stem": "The two diagonals of a rhombus measure 16 cm and 12 cm respectively. What is the perimeter of the rhombus?",
+      "options": [
+        {
+          "option_text": "28 cm (sum of the two diagonals only)",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 cm (four sides each equal to 10 cm)",
+          "is_correct": true
+        },
+        {
+          "option_text": "56 cm (twice the sum of both diagonals)",
+          "is_correct": false
+        },
+        {
+          "option_text": "80 cm (diagonals used without halving first)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Diagonals of a rhombus bisect each other at right angles. Each half-diagonal = 8 cm and 6 cm. Side = √(8² + 6²) = √(64 + 36) = √100 = 10 cm. Perimeter = 4 × 10 = 40 cm. Option D (80 cm) is the classic trap: students compute √(16² + 12²) = √400 = 20 and multiply by 4, forgetting to halve the diagonals before applying Pythagoras. Option A (28 cm) takes only the sum of diagonals — not the perimeter. **Short Trick:** Half-diagonals are 8 and 6 — spot the 3-4-5 family (doubled to 6-8-10). Side = 10 cm, perimeter = 40 cm in under 5 seconds.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:01:17+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00023"
+    },
+    {
+      "stem": "Two chords PQ and RS of a circle intersect at point T inside the circle. If PT = 6 cm, TQ = 8 cm, and RT = 4 cm, what is the length of TS?",
+      "options": [
+        {
+          "option_text": "10 cm (adding PT + TQ and subtracting RT)",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 cm (correct by the intersecting chords theorem)",
+          "is_correct": true
+        },
+        {
+          "option_text": "6 cm (equal to PT, wrongly assuming equal halves)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 cm (equal to RT, wrongly assuming mirror symmetry)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. By the intersecting chords theorem: PT × TQ = RT × TS. So 6 × 8 = 4 × TS → 48 = 4 × TS → TS = 12 cm. Option A (10 cm) comes from an additive error: PT + TQ − RT = 14 − 4 = 10, treating chord segments linearly instead of multiplicatively. Options C and D (6 cm, 4 cm) assume symmetry or equal halves, which only holds when T is the centre — not in general. **Short Trick:** Write the product rule as a cross-multiplication table: PQ-chord product = RS-chord product → 6 × 8 = 4 × TS → TS = 48 ÷ 4 = 12. Think of it as two fractions equated: 6/4 = TS/8 → TS = 12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:01:17+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00024"
+    },
+    {
+      "stem": "Two circles, each with radius 5 cm, have their centres 6 cm apart. What is the length of their common chord?",
+      "options": [
+        {
+          "option_text": "4 cm (half of the chord, not the full length)",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 cm (full length of the common chord)",
+          "is_correct": true
+        },
+        {
+          "option_text": "6 cm (equal to the distance between the two centres)",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 cm (equal to the diameter of each circle)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Since the circles are identical, the line joining their centres perpendicularly bisects the common chord at its midpoint, which lies exactly 3 cm from each centre. Half-chord = √(5² − 3²) = √(25 − 9) = √16 = 4 cm. Full common chord = 2 × 4 = 8 cm. Option A (4 cm) gives only the half-chord. Option C (6 cm) confuses the chord with the centre-to-centre distance. Option D (10 cm) is the diameter — a completely different measurement. **Short Trick:** Spot the 3-4-5 right triangle: half-distance between centres = 3, radius = 5, so half-chord = 4. Double it → chord = 8 cm with no square-root effort.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:01:17+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00025"
+    },
+    {
+      "stem": "In cyclic quadrilateral ABCD, sides AB and DC are extended beyond B and C respectively to meet at external point P. If ∠DAB = 70° and ∠ADC = 80°, what is the measure of ∠APD?",
+      "options": [
+        {
+          "option_text": "10° (absolute difference of the two given angles)",
+          "is_correct": false
+        },
+        {
+          "option_text": "30° (angle at P found via triangle formed at extensions)",
+          "is_correct": true
+        },
+        {
+          "option_text": "70° (equal to interior angle A, a common misread)",
+          "is_correct": false
+        },
+        {
+          "option_text": "75° (arithmetic mean of angles A and D)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Opposite angles of a cyclic quadrilateral are supplementary: ∠B = 180° − ∠D = 100° and ∠C = 180° − ∠A = 110°. Extensions beyond B and C form triangle PBC. At B: ∠PBC = 180° − 100° = 80° (exterior angle). At C: ∠BCP = 180° − 110° = 70° (exterior angle). So ∠P = 180° − 80° − 70° = 30°. Option A (10°) takes |∠D − ∠A| = 10° — an intuitive shortcut with no geometric basis. Option C (70°) confuses ∠P with the original ∠A. **Short Trick:** Step 1 — use the opposite-angle rule to get ∠B and ∠C. Step 2 — take their supplements (exterior angles at B and C). Step 3 — subtract both from 180° to get ∠P.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:01:17+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00026"
+    },
+    {
+      "stem": "A right-angled triangle has legs measuring 9 cm and 40 cm. A circle inscribed in the triangle touches all three sides. What is the radius of the inscribed circle?",
+      "options": [
+        {
+          "option_text": "4 cm — correct incircle radius by the standard formula",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 cm — the value of (a + b − c) without dividing by 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 cm — area divided by full perimeter, not semi-perimeter",
+          "is_correct": false
+        },
+        {
+          "option_text": "10.25 cm — hypotenuse divided by 4, an incorrect method",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Hypotenuse c = √(9² + 40²) = √(81 + 1600) = √1681 = 41 cm. For a right triangle the incircle radius r = (a + b − c) / 2 = (9 + 40 − 41) / 2 = 8 / 2 = 4 cm. Cross-check: Area = (1/2)(9)(40) = 180 cm²; semi-perimeter s = (9 + 40 + 41)/2 = 45; r = Area / s = 180 / 45 = 4 cm ✓. Option B (8 cm) skips the division by 2. Option C (2 cm) uses r = Area / full perimeter = 180 / 90 = 2 — a very common slip. Option D (10.25 cm) uses r = c / 4 = 41 / 4, which has no standard basis. **Short Trick:** For a right triangle only — r = (sum of legs − hypotenuse) ÷ 2. Here: (9 + 40) − 41 = 8; halve it → r = 4 cm. Spot 9-40-41 as a standard Pythagorean triple to avoid long square-root computation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:01:17+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00027"
+    },
+    {
+      "stem": "Triangle ABC is inscribed in a circle. If ∠ABC = 30° and side AC (opposite to ∠B) measures 7 cm, what is the radius of the circumscribed circle?",
+      "options": [
+        {
+          "option_text": "3.5 cm — halving the opposite side directly, skipping the rule",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 cm — correct by the extended law of sines",
+          "is_correct": true
+        },
+        {
+          "option_text": "14 cm — omitting the factor of 2 from the denominator",
+          "is_correct": false
+        },
+        {
+          "option_text": "4.04 cm — using cos 30° instead of sin 30° by confusion",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. By the extended law of sines: AC / sin(∠B) = 2R. So 7 / sin 30° = 2R → 7 / (1/2) = 2R → 14 = 2R → R = 7 cm. Option C (14 cm) is the most tempting error: students write R = AC / sin B = 7 / 0.5 = 14, forgetting the 2 in 2R. Option A (3.5 cm) halves AC directly, confusing the circumradius with a median. Option D (≈4.04 cm) results from inserting cos 30° = √3/2 instead of sin 30° = 1/2: 7 / (2 × √3/2) = 7/√3 ≈ 4.04 — a sin/cos memory error. **Short Trick:** The 30° angle is the key flag — sin 30° = 1/2, the simplest trig value. Dividing by 1/2 just doubles: 2R = 7 × 2 = 14, so R = 7 cm. No calculator needed; the rule is: 2R = opposite side ÷ sine of that angle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:01:17+00:00",
+      "id": "sgk_QA_GEOM_CIRCLES_00028"
+    }
+  ]
+}

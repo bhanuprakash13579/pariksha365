@@ -1,0 +1,212 @@
+{
+  "topic_code": "QA_PERMUTATION_COMBINATION",
+  "subject": "Quantitative Aptitude",
+  "topic": "Permutation and Combination",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "In how many ways can 5 books be arranged on a shelf?",
+      "options": [
+        {"option_text": "25 (5² — wrong)", "is_correct": false},
+        {"option_text": "60 (4! = 24, 5×12=60 — wrong)", "is_correct": false},
+        {"option_text": "120 (correct: 5! = 5×4×3×2×1 = 120 ✓)", "is_correct": true},
+        {"option_text": "720 (6! — off by one)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Arranging n distinct objects = n! = 5! = 120. **Short Trick:** 5! = 5×4×3×2×1 = 120. Memorise: 1!=1, 2!=2, 3!=6, 4!=24, 5!=120, 6!=720, 7!=5040.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "How many ways can 3 students be selected from a group of 8 students?",
+      "options": [
+        {"option_text": "336 (8P3=336 — permutation, not combination)", "is_correct": false},
+        {"option_text": "56 (correct: ⁸C₃ = 8!/(3!×5!) = (8×7×6)/(3×2×1) = 336/6 = 56 ✓)", "is_correct": true},
+        {"option_text": "24 (3! — just the factorial of chosen)", "is_correct": false},
+        {"option_text": "512 (2⁸ — wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Selection (order doesn't matter) = ⁸C₃ = 8!/(3!×5!) = (8×7×6)/(3×2×1) = 336/6 = 56. **Key:** Combination = selection (order irrelevant); Permutation = arrangement (order matters). ⁸C₃ = ⁸P₃ / 3! = 336/6 = 56.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "How many 3-digit numbers can be formed using digits 1, 2, 3, 4, 5 without repetition?",
+      "options": [
+        {"option_text": "125 (5³ — with repetition)", "is_correct": false},
+        {"option_text": "60 (correct: ⁵P₃ = 5×4×3 = 60 ✓)", "is_correct": true},
+        {"option_text": "10 (⁵C₃ = 10 — combination not permutation)", "is_correct": false},
+        {"option_text": "15 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Number of 3-digit numbers without repetition from 5 digits = ⁵P₃ = 5×4×3 = 60. Each position: 5 choices for first digit, 4 remaining for second, 3 remaining for third. **Short Trick:** ⁿPᵣ = n×(n-1)×...×(n-r+1).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In how many ways can the letters of the word 'APPLE' be arranged?",
+      "options": [
+        {"option_text": "120 (5! — ignores repeated letter P)", "is_correct": false},
+        {"option_text": "60 (correct: APPLE has 5 letters with P repeated twice; arrangements=5!/2!=120/2=60 ✓)", "is_correct": true},
+        {"option_text": "20 (wrong)", "is_correct": false},
+        {"option_text": "30 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. APPLE = A, P, P, L, E — 5 letters with P appearing twice. Arrangements = 5!/2! = 120/2 = 60. When letters repeat, divide by the factorial of each letter's frequency. General: n letters with a₁ of type 1, a₂ of type 2... → n!/(a₁!×a₂!×...).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "How many ways can 4 persons be seated around a circular table?",
+      "options": [
+        {"option_text": "24 (4! = 24 — linear arrangement)", "is_correct": false},
+        {"option_text": "6 (correct: circular permutation = (n-1)! = (4-1)! = 3! = 6 ✓)", "is_correct": true},
+        {"option_text": "4 (wrong — rotations aren't counted but reflections may be)", "is_correct": false},
+        {"option_text": "12 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Circular permutations of n people = (n-1)! because one person is fixed as reference to eliminate rotations. For 4 people: (4-1)! = 3! = 6. **Key distinction:** Linear arrangement = n! = 24; Circular = (n-1)! = 6.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A committee of 4 men and 3 women is to be formed from 8 men and 5 women. In how many ways can this be done?",
+      "options": [
+        {"option_text": "350 (⁸C₄ = 70; ⁵C₃ = 10; 70×10 = 700 — wrong multiplication)", "is_correct": false},
+        {"option_text": "700 (correct: ⁸C₄ × ⁵C₃ = 70 × 10 = 700 ✓)", "is_correct": true},
+        {"option_text": "1344 (⁸C₄ × ⁵C₃ computed wrong)", "is_correct": false},
+        {"option_text": "56 (⁸C₃ = 56 — wrong formula)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Men selection: ⁸C₄ = 8!/(4!×4!) = (8×7×6×5)/(4×3×2×1) = 1680/24 = 70. Women selection: ⁵C₃ = 5!/(3!×2!) = (5×4)/(2×1) = 10. Total = 70×10 = 700. Multiply when both selections are independent.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "How many 4-digit even numbers can be formed from digits 1, 2, 3, 4, 5, 6 without repetition?",
+      "options": [
+        {"option_text": "180 (correct: last digit must be 2,4,6 (3 choices); remaining 3 positions from 5 digits: 5×4×3=60; total=3×60=180 ✓)", "is_correct": true},
+        {"option_text": "360 (⁶P₄=360 — doesn't restrict to even)", "is_correct": false},
+        {"option_text": "120 (⁵P₃=60 × 2 — wrong methodology)", "is_correct": false},
+        {"option_text": "240 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Fix the units digit first (even constraint): 3 choices (2, 4, or 6). Remaining 3 positions filled from the other 5 digits: 5×4×3 = 60. Total = 3×60 = 180. **Key technique for constrained positions:** Fill the constrained position first, then fill the rest.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In how many ways can the word 'MATHS' be arranged if M and S are always together?",
+      "options": [
+        {"option_text": "48 (correct: treat MS as one unit → 4 units; arrangements=4!=24; M and S can swap=2; total=48 ✓)", "is_correct": true},
+        {"option_text": "120 (5! — no restriction applied)", "is_correct": false},
+        {"option_text": "24 (4! — forgot M,S can swap internally)", "is_correct": false},
+        {"option_text": "12 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Treat M and S as one block → 4 units (MS, A, T, H). These 4 can be arranged in 4! = 24 ways. Within the block, M and S can be arranged as MS or SM → 2 ways. Total = 24×2 = 48. **Key:** When elements must stay together, treat them as one block; multiply by internal arrangements.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A box has 5 red and 3 blue balls. In how many ways can 2 red and 1 blue ball be selected?",
+      "options": [
+        {"option_text": "30 (correct: ⁵C₂ × ³C₁ = 10 × 3 = 30 ✓)", "is_correct": true},
+        {"option_text": "10 (⁵C₂ = 10 only — ignored blue ball)", "is_correct": false},
+        {"option_text": "56 (⁸C₃=56 — ignores colour constraint)", "is_correct": false},
+        {"option_text": "15 (⁶C₂=15 — wrong)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Red balls: select 2 from 5 = ⁵C₂ = 10. Blue balls: select 1 from 3 = ³C₁ = 3. Total = 10×3 = 30. Multiply for independent selections.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "How many diagonals does a polygon with 8 sides have?",
+      "options": [
+        {"option_text": "20 (correct: diagonals = n(n-3)/2 = 8(8-3)/2 = 8×5/2 = 20 ✓)", "is_correct": true},
+        {"option_text": "28 (⁸C₂ = 28 — includes sides too)", "is_correct": false},
+        {"option_text": "8 (just the number of sides)", "is_correct": false},
+        {"option_text": "16 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Number of diagonals = ⁿC₂ − n = n(n-1)/2 − n = n(n-3)/2. For n=8: 8×5/2 = 20. ⁸C₂ = 28 counts all line segments between vertices; subtract 8 sides to get 20 diagonals.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In how many ways can 5 people be divided into groups of 2 and 3?",
+      "options": [
+        {"option_text": "5 (wrong)", "is_correct": false},
+        {"option_text": "10 (correct: choose 2 from 5 for one group=⁵C₂=10; remaining 3 form the other group automatically ✓)", "is_correct": true},
+        {"option_text": "20 (⁵C₂×⁵C₃=10×10=100 — wrong; once group of 2 chosen, group of 3 is determined)", "is_correct": false},
+        {"option_text": "60 (5!/3!=60 — permutation approach, wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Select 2 people for the first group: ⁵C₂ = 10. The remaining 3 automatically form the second group — no further choice needed. Total = 10. If the two groups were identical (unordered), we'd divide by 2! — but here the groups are different sizes (2 and 3), so no division needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The value of ¹⁰C₃ is:",
+      "options": [
+        {"option_text": "60 (wrong)", "is_correct": false},
+        {"option_text": "120 (correct: ¹⁰C₃ = 10!/(3!×7!) = (10×9×8)/(3×2×1) = 720/6 = 120 ✓)", "is_correct": true},
+        {"option_text": "720 (¹⁰P₃=720 — permutation, not combination)", "is_correct": false},
+        {"option_text": "210 (¹⁰C₄=210 — off by one in r)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. ¹⁰C₃ = (10×9×8)/(3×2×1) = 720/6 = 120. **Short Trick:** For ⁿCᵣ, multiply r numbers from n downward, divide by r!. Here: (10×9×8)/(3×2×1) = 120. Compare: ¹⁰P₃ = 10×9×8 = 720 (no division).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

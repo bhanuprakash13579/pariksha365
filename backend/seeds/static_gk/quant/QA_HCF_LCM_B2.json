@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_HCF_LCM",
+  "subject": "Quantitative Aptitude",
+  "topic": "HCF and LCM",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "The HCF of two numbers is 12 and their LCM is 180. If one of the numbers is 36, what is the other?",
+      "options": [
+        {"option_text": "48 (from HCF × LCM ÷ one number = 12×180÷36... computed wrong as 48)", "is_correct": false},
+        {"option_text": "60 (correct: other = HCF × LCM ÷ given = 12×180÷36 = 60)", "is_correct": true},
+        {"option_text": "72 (from 180 ÷ 12 × (12÷36) — incorrect formula application)", "is_correct": false},
+        {"option_text": "90 (from 180 ÷ 2 — treating LCM/2 as the other number)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. For two numbers: HCF × LCM = Product of the two numbers. So 12 × 180 = 36 × (other). Other = 2160 ÷ 36 = 60. Verify: HCF(36,60) = 12 ✓; LCM(36,60) = 180 ✓. **Short Trick:** Other = (HCF × LCM) ÷ given number = (12 × 180) ÷ 36 = 60.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Three bells ring at intervals of 6, 8, and 10 minutes respectively. If they ring together at 10:00 AM, when will they next ring together?",
+      "options": [
+        {"option_text": "10:20 AM (LCM of 6,8,10 = 20? No: LCM is actually 120 minutes)", "is_correct": false},
+        {"option_text": "10:24 AM (LCM of 6, 8, 10 = 24? Incorrect)", "is_correct": false},
+        {"option_text": "12:00 PM (LCM of 6, 8, 10 = 120 minutes = 2 hours after 10:00 AM)", "is_correct": true},
+        {"option_text": "11:00 AM (guessing 60 minutes as the LCM of 6, 8, and 10)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. The bells ring together at LCM(6, 8, 10) minute intervals. 6 = 2 × 3; 8 = 2³; 10 = 2 × 5. LCM = 2³ × 3 × 5 = 120 minutes = 2 hours. So next together at 10:00 AM + 2 hours = 12:00 PM. Common mistakes: computing LCM as 24 (LCM of 6 and 8 only) or 60 (LCM of 6 and 10 only), forgetting to include all three. **Short Trick:** LCM = highest power of each prime factor: 2³, 3¹, 5¹ → 8×3×5 = 120.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The ratio of two numbers is 3:4 and their HCF is 6. What is their LCM?",
+      "options": [
+        {"option_text": "48 (LCM = 3×4×6 ÷ HCF — incorrect formula)", "is_correct": false},
+        {"option_text": "72 (numbers are 3×6=18 and 4×6=24; LCM(18,24) = 72)", "is_correct": true},
+        {"option_text": "96 (from multiplying 4×6×4 instead of using the correct numbers)", "is_correct": false},
+        {"option_text": "144 (product of the two numbers: 18×24=432 ≠ 144)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. When two numbers are in ratio 3:4, write them as 3k and 4k. HCF of 3k and 4k = k (since gcd(3,4)=1). So k = 6. Numbers: 18 and 24. LCM(18,24) = ? 18 = 2×3², 24 = 2³×3. LCM = 2³×3² = 72. Verify: HCF(18,24) = 6 ✓; ratio 18:24 = 3:4 ✓; LCM = 72 ✓. **Short Trick:** For ratio a:b with HCF k: numbers = ak, bk. LCM = a×b×k (when gcd(a,b)=1). Here 3×4×6 = 72.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the largest number that divides 315, 693, and 840 leaving the same remainder in each case.",
+      "options": [
+        {"option_text": "63 (HCF of differences 378 and 525 and 147 = 63)", "is_correct": false},
+        {"option_text": "126 (HCF of 378 and 147 = 3; not 126)", "is_correct": false},
+        {"option_text": "21 (HCF(378, 525, 147) = HCF(378,525)=HCF(147,378)=21? Let's verify)", "is_correct": true},
+        {"option_text": "42 (double the correct answer — error in HCF computation)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. If a number N divides 315, 693, 840 leaving the same remainder r, then N divides their differences: 693−315=378, 840−693=147, 840−315=525. Required N = HCF(378, 147, 525). 378 = 2×3³×7; 147 = 3×7²; 525 = 3×5²×7. HCF = 3×7 = 21. Verify: 315÷21=15 rem0, 693÷21=33 rem0, 840÷21=40 rem0 — same remainder (0). **Short Trick:** Largest divisor with equal remainders = HCF of all pairwise differences.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Two numbers are in ratio 5:7 and their LCM is 140. What is their HCF?",
+      "options": [
+        {"option_text": "2 (guessing a small common factor without using the ratio)", "is_correct": false},
+        {"option_text": "4 (5k and 7k with LCM=35k=140 → k=4, so HCF=k=4)", "is_correct": true},
+        {"option_text": "7 (treating the ratio's smaller term as the HCF)", "is_correct": false},
+        {"option_text": "20 (from 140÷7=20 — dividing LCM by one ratio term)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let numbers = 5k and 7k. Since gcd(5,7)=1, LCM(5k,7k) = 5×7×k = 35k. Given LCM = 140: 35k = 140 → k = 4. HCF = k = 4. Numbers: 20 and 28. Verify: HCF(20,28)=4 ✓; LCM(20,28)=140 ✓; ratio=20:28=5:7 ✓. **Short Trick:** For numbers in ratio a:b (gcd(a,b)=1): LCM = a×b×HCF. Here 5×7×HCF=140 → HCF=4.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the LCM of 12, 15, 20, and 25.",
+      "options": [
+        {"option_text": "200 (from LCM(20,25)=100 then ignoring 12 and 15)", "is_correct": false},
+        {"option_text": "300 (correct: 2²×3×5² = 4×3×25 = 300)", "is_correct": true},
+        {"option_text": "360 (from LCM(12,15,20)=60, then 60×25/HCF(60,25)=60×25/5=300... slipping to 360)", "is_correct": false},
+        {"option_text": "600 (from multiplying 12×25×2=600 instead of computing properly)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 12=2²×3; 15=3×5; 20=2²×5; 25=5². LCM = highest power of each prime: 2²×3×5² = 4×3×25 = 300. Verify: 300÷12=25 ✓; 300÷15=20 ✓; 300÷20=15 ✓; 300÷25=12 ✓. **Short Trick:** Factorise all numbers; take the highest power of every prime that appears.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The HCF of two numbers is 8 and their product is 2048. What is their LCM?",
+      "options": [
+        {"option_text": "128 (from 2048÷8÷2=128 — incorrect double division)", "is_correct": false},
+        {"option_text": "256 (LCM = Product ÷ HCF = 2048 ÷ 8 = 256)", "is_correct": true},
+        {"option_text": "512 (from 2048÷4=512 — using half the HCF as divisor)", "is_correct": false},
+        {"option_text": "1024 (from 2048÷2=1024 — treating HCF as 2)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. For any two numbers: HCF × LCM = Product. So LCM = Product ÷ HCF = 2048 ÷ 8 = 256. This is the most fundamental HCF-LCM relationship. Verify: if numbers are, say, 32 and 64, HCF=32, product=2048, LCM=64. But HCF=32≠8. Try 16 and 128: HCF=16≠8. Try 8 and 256: HCF=8 ✓, product=2048 ✓, LCM=256 ✓. **Short Trick:** LCM = (Number₁ × Number₂) ÷ HCF. Always memorise this formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is the greatest 4-digit number divisible by both 12 and 18?",
+      "options": [
+        {"option_text": "9990 (not divisible by 36: 9990÷36=277.5, fails)", "is_correct": false},
+        {"option_text": "9996 (9996÷36=277.67, fails — slightly over the correct answer)", "is_correct": false},
+        {"option_text": "9972 (9972÷36=277, the greatest 4-digit multiple of LCM(12,18)=36)", "is_correct": true},
+        {"option_text": "9936 (divisible by 36 but not the largest: 9972 is larger and also divisible)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. LCM(12,18) = 36. A number divisible by both 12 and 18 must be a multiple of 36. Greatest 4-digit number = 9999. 9999 ÷ 36 = 277.75. So the greatest multiple = 36 × 277 = 9972. Verify: 9972÷12=831 ✓; 9972÷18=554 ✓. **Short Trick:** Greatest n-digit multiple of k = k × ⌊(10^n − 1)/k⌋. Here: 9999÷36 = 277 (floor) → 36×277 = 9972.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If HCF(a, b) = 9 and a × b = 2916, what is LCM(a, b)?",
+      "options": [
+        {"option_text": "162 (from 2916÷9÷2=162 — dividing again by 2 in error)", "is_correct": false},
+        {"option_text": "324 (LCM = a×b ÷ HCF = 2916 ÷ 9 = 324)", "is_correct": true},
+        {"option_text": "486 (from 2916÷6 — using 6 as HCF instead of 9)", "is_correct": false},
+        {"option_text": "972 (from 2916÷3 — using 3 as HCF, a factor of 9)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. LCM × HCF = a × b. So LCM = 2916 ÷ 9 = 324. Verify: 2916 = 9 × 324 ✓. Possible numbers: 36 and 81 → HCF(36,81)=9 ✓; 36×81=2916 ✓; LCM(36,81)=324 ✓. **Short Trick:** LCM = (product of numbers) ÷ HCF. The simplest and most direct formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A rectangular courtyard 3.78 m long and 5.25 m wide is to be paved with identical square tiles. What is the largest size of tile that can be used (in cm)?",
+      "options": [
+        {"option_text": "21 cm (HCF of 378 and 525 cm = 21 cm)", "is_correct": true},
+        {"option_text": "3 cm (HCF of 3.78 and 5.25 treated as separate digits 3 and 3)", "is_correct": false},
+        {"option_text": "42 cm (double the correct HCF — 42 doesn't divide 525)", "is_correct": false},
+        {"option_text": "63 cm (HCF of 378 and 126 — incorrect pairing)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Convert to cm: 378 cm and 525 cm. Tile side = HCF(378, 525). 378 = 2×3³×7; 525 = 3×5²×7. HCF = 3×7 = 21 cm. Check: 378÷21=18 tiles, 525÷21=25 tiles — both whole numbers ✓. 42 cm: 525÷42=12.5, not whole — fails. **Short Trick:** For 'largest identical square tile' problems, find HCF of the two dimensions (in the same unit).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

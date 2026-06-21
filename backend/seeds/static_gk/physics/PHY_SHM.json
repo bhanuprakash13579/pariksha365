@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "subject": "Physics",
+  "topic": "SHM and Pendulum",
+  "topic_code": "PHY_SHM",
+  "questions": [
+    {
+      "stem": "When a body executing SHM is at its extreme position (maximum displacement from equilibrium), what is its instantaneous velocity?",
+      "options": [
+        {
+          "option_text": "Equal to ωA, same as the maximum velocity reached at mean position",
+          "is_correct": false
+        },
+        {
+          "option_text": "Zero, because all mechanical energy is stored as potential energy here",
+          "is_correct": true
+        },
+        {
+          "option_text": "Equal to half of ωA, as it is midway through a complete quarter-cycle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Maximum, because the restoring force has done maximum work on the body",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Velocity in SHM is v = ω√(A² − x²). At the extreme position x = A, so v = ω√(A² − A²) = 0. All the energy is stored as elastic/gravitational potential energy. Option A confuses the extreme position with the mean position, where velocity is actually ωA (maximum). Option C incorrectly halves the speed with no physical basis.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:31+00:00",
+      "id": "sgk_PHY_SHM_00001"
+    },
+    {
+      "stem": "At the mean (equilibrium) position of a body in SHM, which statement correctly describes the energy distribution?",
+      "options": [
+        {
+          "option_text": "Potential energy is at maximum and kinetic energy is exactly zero",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both KE and PE are each equal to half of the total mechanical energy",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kinetic energy is at its maximum value and potential energy is zero",
+          "is_correct": true
+        },
+        {
+          "option_text": "Total mechanical energy is at its minimum value at the mean position",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. PE in SHM = ½mω²x². At mean position x = 0, so PE = 0. Since total energy E = ½mω²A² is conserved, all energy is kinetic: KE = E = ½mω²A² (maximum). Option A describes the extreme position, not the mean. Option B (equal split) occurs only at x = A/√2. Option D is wrong because total mechanical energy is constant throughout SHM.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:31+00:00",
+      "id": "sgk_PHY_SHM_00002"
+    },
+    {
+      "stem": "A simple pendulum is oscillating inside a lift that is accelerating upward at 5 m/s². How does its time period compare to when the lift is stationary (take g = 10 m/s²)?",
+      "options": [
+        {
+          "option_text": "Increase, because effective gravity decreases inside an upward-moving lift",
+          "is_correct": false
+        },
+        {
+          "option_text": "Stay unchanged, as gravitational acceleration acts independently of the lift",
+          "is_correct": false
+        },
+        {
+          "option_text": "Decrease, because effective gravity increases when the lift accelerates upward",
+          "is_correct": true
+        },
+        {
+          "option_text": "Double in value, because both gravity and inertial reaction both act on the bob",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Inside an upward-accelerating lift, the effective gravitational acceleration is g_eff = g + a = 10 + 5 = 15 m/s². Since T = 2π√(L/g_eff), a larger g_eff gives a smaller T — the pendulum swings faster. Option A is the classic confusion: students mix up upward lift (g increases) with downward lift or free fall (g decreases). Option D is wrong because the period changes by a factor of √(10/15) = √(2/3), not halves.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:31+00:00",
+      "id": "sgk_PHY_SHM_00003"
+    },
+    {
+      "stem": "Two springs, each of spring constant k, are joined in parallel and carry a mass m. If one of the springs is replaced by a spring of constant 3k (still in parallel), the new angular frequency of oscillation compared to the original is:",
+      "options": [
+        {
+          "option_text": "√2 times the original, since total k rises from 2k to 4k doubling the ratio",
+          "is_correct": false
+        },
+        {
+          "option_text": "Twice the original angular frequency, as k_eff quadruples from 2k to 4k (√4 = 2)",
+          "is_correct": false
+        },
+        {
+          "option_text": "√2 times the original value, as k_eff goes from 2k to 4k and ω ∝ √k_eff",
+          "is_correct": true
+        },
+        {
+          "option_text": "Three times the original, since the replaced spring has triple the stiffness value",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. For springs in parallel, k_eff = sum of all k values. Originally k_eff = k + k = 2k. After replacing one spring: k_eff = k + 3k = 4k. Angular frequency ω = √(k_eff/m), so ω_new/ω_old = √(4k/2k) = √2. Option B mistakes ω ∝ k_eff (linear) for ω ∝ √k_eff (square root). Option A gives the right ratio √2 but wrong reasoning (k does not 'double the ratio'). Option D ignores that only one spring changed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:31+00:00",
+      "id": "sgk_PHY_SHM_00004"
+    },
+    {
+      "stem": "A pendulum clock keeps correct time at sea level. When transported to a high-altitude hill station where g is measurably smaller, what will the clock do?",
+      "options": [
+        {
+          "option_text": "Run fast, since thinner air at altitude reduces air resistance on the bob",
+          "is_correct": false
+        },
+        {
+          "option_text": "Run slow, because reduced g increases the time period of each swing",
+          "is_correct": true
+        },
+        {
+          "option_text": "Keep correct time, since only the string length and bob mass determine T",
+          "is_correct": false
+        },
+        {
+          "option_text": "Run fast initially, then self-correct as the bob adjusts to the new gravity",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. T = 2π√(L/g). At higher altitude g decreases, so T increases — each swing takes longer, meaning the clock completes fewer oscillations per hour and loses time (runs slow). Option A confuses air resistance (a minor secondary effect) with the dominant gravitational effect, and also gets the direction wrong. Option C is wrong because g is explicitly part of the formula. Option D is a fabrication — pendula have no self-correction mechanism for gravity change.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:31+00:00",
+      "id": "sgk_PHY_SHM_00005"
+    },
+    {
+      "stem": "A particle in SHM has amplitude A and total mechanical energy E. At displacement x = A√3/2 from the mean position, what fraction of E is kinetic energy?",
+      "options": [
+        {
+          "option_text": "3E/4, because PE = (3/4)E at this displacement leaving only one-quarter as KE",
+          "is_correct": false
+        },
+        {
+          "option_text": "E/4, since KE = E − PE = E − ½mω²(3A²/4) = E/4 at x = A√3/2",
+          "is_correct": true
+        },
+        {
+          "option_text": "E/2, because the displacement A√3/2 is roughly the midpoint between 0 and A",
+          "is_correct": false
+        },
+        {
+          "option_text": "√3E/2, obtained by applying the displacement ratio directly to total energy",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total energy E = ½mω²A². At x = A√3/2, PE = ½mω²x² = ½mω²·(3A²/4) = (3/4)·½mω²A² = 3E/4. Therefore KE = E − PE = E − 3E/4 = E/4. Option A reverses KE and PE — a common mistake where students assign (3/4)E to KE instead of PE. Option C is incorrect because x = A√3/2 ≈ 0.866A, far from the midpoint. Option D wrongly applies a linear scaling rule instead of the squared displacement relationship.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:31+00:00",
+      "id": "sgk_PHY_SHM_00006"
+    },
+    {
+      "stem": "The bob of a simple pendulum is replaced with one of double the mass, and simultaneously the string length is reduced to one-quarter of its original value. If the original time period was T, the new time period is:",
+      "options": [
+        {
+          "option_text": "T/2, because halving the effective length reduces time period by factor of two",
+          "is_correct": true
+        },
+        {
+          "option_text": "T/√2, since only length changes by factor of 4 and gives √4 = 2 reduction",
+          "is_correct": false
+        },
+        {
+          "option_text": "T/(2√2), as both doubling mass and quartering length together reduce T further",
+          "is_correct": false
+        },
+        {
+          "option_text": "T/4, because quartering the string length quarters the resulting time period too",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. T = 2π√(L/g); mass does not appear in this formula — doubling the bob's mass has absolutely zero effect on T. With L reduced to L/4: T_new = 2π√(L/4 / g) = 2π·(1/2)·√(L/g) = T/2. Option B gives the correct ratio T/2 but with garbled reasoning (it claims √4 = 2 reduction of length by 'factor 2', confusing length change with period change). Option C is the most tempting wrong answer — examinees mistakenly apply mass to the formula as √(mass) scaling. Option D confuses T ∝ √L with T ∝ L, giving a linear (wrong) relationship.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:19:31+00:00",
+      "id": "sgk_PHY_SHM_00007"
+    },
+    {
+      "stem": "In Simple Harmonic Motion, what is the phase difference between the displacement and the velocity of the oscillating particle?",
+      "options": [
+        {
+          "option_text": "0° — displacement and velocity are perfectly in phase always",
+          "is_correct": false
+        },
+        {
+          "option_text": "180° (π rad) — they are always exactly opposite in direction",
+          "is_correct": false
+        },
+        {
+          "option_text": "90° (π/2 rad) — velocity leads displacement by a quarter cycle",
+          "is_correct": true
+        },
+        {
+          "option_text": "45° (π/4 rad) — they are separated by one-eighth of a full cycle",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. If displacement x = A sin(ωt), then velocity v = Aω cos(ωt) = Aω sin(ωt + π/2), so velocity leads displacement by exactly π/2 (90°). Option B is the most tempting wrong answer — a phase difference of 180° applies between displacement and acceleration (since a = −ω²x), not between displacement and velocity.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:48+00:00",
+      "id": "sgk_PHY_SHM_00008"
+    },
+    {
+      "stem": "In a spring-mass system with spring constant k, the attached mass m is doubled while k remains unchanged. What happens to the time period of oscillation?",
+      "options": [
+        {
+          "option_text": "remains unchanged, as mass does not affect spring-mass oscillation",
+          "is_correct": false
+        },
+        {
+          "option_text": "increases by a factor of √2 (approximately 1.41 times the original)",
+          "is_correct": true
+        },
+        {
+          "option_text": "doubles to exactly twice the original time period of oscillation",
+          "is_correct": false
+        },
+        {
+          "option_text": "halves to exactly half the original time period of oscillation",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. T = 2π√(m/k). When m → 2m: T_new = 2π√(2m/k) = T√2 ≈ 1.41T. Option A is the classic confusion with simple pendulums, whose period is mass-independent; for spring-mass systems T ∝ √m. Option C is wrong because T ∝ √m not m — doubling m gives T√2, not 2T.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:48+00:00",
+      "id": "sgk_PHY_SHM_00009"
+    },
+    {
+      "stem": "A spring of constant k oscillates a block of mass m with time period T. The spring is cut into two equal halves and the same block is attached to one half only. What is the new time period?",
+      "options": [
+        {
+          "option_text": "T/√2 — the stiffer half-spring reduces the time period of oscillation",
+          "is_correct": true
+        },
+        {
+          "option_text": "T·√2 — shorter spring vibrates slower due to reduced restoring force",
+          "is_correct": false
+        },
+        {
+          "option_text": "T/2 — period halves exactly because the spring length is exactly halved",
+          "is_correct": false
+        },
+        {
+          "option_text": "T unchanged — cutting the spring length does not alter its spring constant",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. For a uniform spring, k ∝ 1/L. Halving the length doubles the spring constant to 2k. New T = 2π√(m/2k) = T/√2 ≈ 0.707T. Option D is the most common error — students assume spring constant is a material property alone. Option C confuses T ∝ (1/k)^(1/2) with a direct inverse relationship between T and L.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:48+00:00",
+      "id": "sgk_PHY_SHM_00010"
+    },
+    {
+      "stem": "In SHM with amplitude A, when a particle's displacement from the equilibrium position is A/2, what is the ratio of its kinetic energy to its potential energy?",
+      "options": [
+        {
+          "option_text": "1:1 — energy distributes equally at exactly half the amplitude value",
+          "is_correct": false
+        },
+        {
+          "option_text": "1:3 — potential energy dominates at half-amplitude displacement point",
+          "is_correct": false
+        },
+        {
+          "option_text": "√3:1 — derived from square root of the displacement-to-amplitude ratio",
+          "is_correct": false
+        },
+        {
+          "option_text": "3:1 — kinetic energy is three times the potential energy at this point",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. PE = ½mω²x² = ½mω²(A/2)² = mω²A²/8. Total energy E = ½mω²A². KE = E − PE = 4mω²A²/8 − mω²A²/8 = 3mω²A²/8. So KE:PE = 3:1. Option A (1:1 ratio) only holds at x = A/√2 ≈ 0.707A, a completely different displacement. Option B (1:3) would require the particle to be beyond x = A/√2, not at A/2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:48+00:00",
+      "id": "sgk_PHY_SHM_00011"
+    },
+    {
+      "stem": "A pendulum clock keeps accurate time at 20°C. The temperature rises to 40°C and the metallic pendulum rod expands thermally. What effect does this have on the clock's timekeeping?",
+      "options": [
+        {
+          "option_text": "loses time, as the longer rod increases the time period of oscillation",
+          "is_correct": true
+        },
+        {
+          "option_text": "gains time, since higher temperature speeds up the molecular oscillations",
+          "is_correct": false
+        },
+        {
+          "option_text": "keeps accurate time since pendulum clocks auto-compensate for heat expansion",
+          "is_correct": false
+        },
+        {
+          "option_text": "loses time only if the rod is brass; steel rods remain thermally stable",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. T = 2π√(L/g). Thermal expansion increases L (ΔL/L = αΔT), so T increases and the pendulum completes fewer oscillations per day — the clock loses time. Option D is wrong because ALL common metals (steel, brass, iron) have positive linear expansion coefficients and all cause the clock to run slow. Compensation requires special near-zero-α alloys like invar.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:48+00:00",
+      "id": "sgk_PHY_SHM_00012"
+    },
+    {
+      "stem": "A simple pendulum (mass m, string length L) is released from rest at angle θ from the vertical. What is the ratio of string tension at the lowest point to string tension at the highest turning point?",
+      "options": [
+        {
+          "option_text": "(3 − 2cosθ)/cosθ — derived via energy conservation and centripetal law",
+          "is_correct": true
+        },
+        {
+          "option_text": "cosθ/(3 − 2cosθ) — the inverse, obtained by swapping the two tension values",
+          "is_correct": false
+        },
+        {
+          "option_text": "(1 + 2cosθ)/cosθ — uses incorrect velocity expression at the mean position",
+          "is_correct": false
+        },
+        {
+          "option_text": "(3 + 2cosθ)/(1 + cosθ) — adds instead of subtracting cosθ in the numerator",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. At the highest point (v = 0): centripetal condition gives T_top − mg cosθ = 0, so T_top = mg cosθ. At the lowest point: energy conservation gives v² = 2gL(1−cosθ); centripetal condition gives T_bot − mg = mv²/L = 2mg(1−cosθ), so T_bot = mg(3−2cosθ). Ratio = (3−2cosθ)/cosθ. Option C uses v² = gL(1−cosθ) instead of 2gL(1−cosθ) — a factor-of-2 slip in applying the work-energy theorem.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:48+00:00",
+      "id": "sgk_PHY_SHM_00013"
+    },
+    {
+      "stem": "A simple pendulum with natural time period T is suspended in a vehicle that accelerates horizontally at a = g m/s² (equal in magnitude to gravitational acceleration). The new time period of the pendulum is?",
+      "options": [
+        {
+          "option_text": "T/√2 ≈ 0.707T — effective g doubles so period reduces by factor root-two",
+          "is_correct": false
+        },
+        {
+          "option_text": "T·√2 ≈ 1.414T — horizontal force opposes gravity, reducing net downward g",
+          "is_correct": false
+        },
+        {
+          "option_text": "T/2^(1/4) ≈ 0.841T — effective g becomes g√2 and T scales as g^(−1/2)",
+          "is_correct": true
+        },
+        {
+          "option_text": "T/2 = 0.500T — effective g equals 2g so the period becomes exactly half T",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Horizontal acceleration a = g is perpendicular to gravity g, so effective gravity g_eff = √(g² + g²) = g√2 (vector sum, not scalar sum). New period T_new = 2π√(L/g√2) = T·(1/√2)^(1/2) = T/2^(1/4) ≈ 0.841T. Option A error: assumes g_eff = 2g (scalar addition) instead of the correct vector magnitude g√2. Option D error: uses T ∝ 1/g_eff (linear) instead of the correct T ∝ g_eff^(−1/2).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:48+00:00",
+      "id": "sgk_PHY_SHM_00014"
+    }
+  ]
+}

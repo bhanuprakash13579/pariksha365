@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Assertion & Reason",
+  "topic_code": "RSN_ASSERTION",
+  "questions": [
+    {
+      "stem": "Read the following statements carefully and choose the correct option.\nAssertion (A): Water boils at a lower temperature on mountain tops than at sea level.\nReason (R): Atmospheric pressure decreases with increasing altitude, which lowers the boiling point of water.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is true, but R is false and does not support A",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is false, but R is true and stands independently",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. A is true — water boils at ~84°C on Mt. Everest vs 100°C at sea level. R is also true — boiling occurs when vapour pressure equals atmospheric pressure; lower atmospheric pressure means this equilibrium is reached at a lower temperature, so R directly and causally explains A. Option B is wrong because R is not a coincidental fact — the pressure-boiling point relationship is precisely the mechanism behind the phenomenon in A. Step-by-step: (1) A true? Yes — altitude reduces boiling point. (2) R true? Yes — reduced pressure = lower boiling point. (3) Does R explain A? Yes, mechanistically.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:28:22+00:00",
+      "id": "sgk_RSN_ASSERTION_00001"
+    },
+    {
+      "stem": "Read the following statements carefully and choose the correct option.\nAssertion (A): A solar eclipse always occurs on a full moon (Purnima) night.\nReason (R): During a solar eclipse, the Moon positions itself between the Earth and the Sun, blocking sunlight from reaching Earth.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is true, but R is false and does not support A",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is false, but R is true and stands independently",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. Step 1 — A is FALSE: solar eclipse occurs only on a new moon (Amavasya), not on full moon (Purnima). On a full moon, the Moon is on the opposite side of Earth from the Sun — that geometry causes a lunar eclipse, not a solar one. Step 2 — R is TRUE: the mechanism described (Moon between Earth and Sun) is accurate for a solar eclipse. Since A is false and R is true → Answer D. The most common error here is confusing the two eclipse types: full moon ↔ lunar eclipse, new moon ↔ solar eclipse.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:28:22+00:00",
+      "id": "sgk_RSN_ASSERTION_00002"
+    },
+    {
+      "stem": "Read the following statements carefully and choose the correct option.\nAssertion (A): Stalactites hang downward from cave ceilings, while stalagmites grow upward from cave floors.\nReason (R): Both structures are formed by the slow deposition of calcium sulphate carried by dripping water in limestone caves.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is true, but R is false and does not support A",
+          "is_correct": true
+        },
+        {
+          "option_text": "A is false, but R is true and stands independently",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. A is TRUE — stalactites hang from the ceiling (memory hook: 'c' for ceiling), stalagmites rise from the ground ('g' for ground). R is FALSE — both are formed by deposition of calcium carbonate (CaCO₃), NOT calcium sulphate (CaSO₄). The process: rainwater absorbs CO₂ → forms weak carbonic acid → dissolves limestone CaCO₃ → drips into cave → CO₂ escapes → CaCO₃ deposits as the speleothem. Calcium sulphate is gypsum and forms different cave deposits through a separate process. The CaSO₄ vs CaCO₃ confusion is the exact factual error examiners test here.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:28:22+00:00",
+      "id": "sgk_RSN_ASSERTION_00003"
+    },
+    {
+      "stem": "Read the following statements carefully and choose the correct option.\nAssertion (A): African elephants are the largest living land animals on Earth.\nReason (R): Elephants have the longest gestation period of any land mammal, approximately 22 months.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": true
+        },
+        {
+          "option_text": "A is true, but R is false and does not support A",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is false, but R is true and stands independently",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A is TRUE — African elephants weigh up to ~6,000 kg, making them the undisputed largest land animals. R is also TRUE — elephant gestation is ~22 months, the longest for any land mammal. However, R does NOT explain A. Body size is governed by evolutionary pressures, thermoregulation, and ecological niche — not by gestational duration. The two facts are co-traits of the same animal but share no causal link. The critical reasoning step: ask 'does a longer pregnancy cause larger body size?' — clearly no. This is the classic 'correlation ≠ causation' trap in Assertion-Reason questions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:28:22+00:00",
+      "id": "sgk_RSN_ASSERTION_00004"
+    },
+    {
+      "stem": "Read the following statements carefully and choose the correct option.\nAssertion (A): Naval vessels and submarines rely on sonar technology to detect underwater objects and navigate.\nReason (R): Sound travels approximately 4–5 times faster in water than in air, and visible light cannot penetrate beyond ~200 m in seawater, making acoustic detection far more effective than optical methods.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is true, but R is false and does not support A",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is false, but R is true and stands independently",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. A is TRUE — sonar (Sound Navigation And Ranging) is the standard underwater detection technology for naval use. R is also TRUE — sound travels ~1,480 m/s in seawater vs ~343 m/s in air; light is absorbed/scattered within ~200 m even in clear ocean water. R directly explains A: because light fails and sound propagates efficiently, sonar is the logical technological choice. Option B is the trap — students assume R is unrelated — but the two physical properties stated in R are exactly the engineering rationale behind the use described in A.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:28:22+00:00",
+      "id": "sgk_RSN_ASSERTION_00005"
+    },
+    {
+      "stem": "Read the following statements carefully and choose the correct option.\nAssertion (A): Mercury is the hottest planet in the Solar System because it orbits closest to the Sun.\nReason (R): Venus has a dense atmosphere composed of CO₂ and sulphuric acid clouds that trap solar radiation via the greenhouse effect, making its surface consistently hotter than Mercury's.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is true, but R is false and does not support A",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is false, but R is true and stands independently",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Step 1 — Check A: Mercury IS the closest planet to the Sun, but it is NOT the hottest. Mercury has virtually no atmosphere, so it cannot trap heat; its night-side temperature plunges to −180°C and average surface temperature is lower than Venus. A is FALSE. Step 2 — Check R: Venus maintains a surface temperature of ~465°C consistently — the hottest in the Solar System — due to its thick CO₂ atmosphere creating a runaway greenhouse effect. R is TRUE. Since A is false and R is true → Answer D. The critical insight: proximity to an energy source ≠ highest temperature if there is no insulating medium. This tests whether students can distinguish 'closest' from 'hottest' and know the role of atmospheric greenhouse dynamics.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:28:22+00:00",
+      "id": "sgk_RSN_ASSERTION_00006"
+    },
+    {
+      "stem": "Read the following statements carefully and choose the correct option.\nAssertion (A): Iron corrodes (rusts) significantly faster in humid coastal regions than in dry desert environments.\nReason (R): Iron has one of the highest melting points among common structural metals at approximately 1538°C, giving it exceptional structural robustness.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": true
+        },
+        {
+          "option_text": "A is true, but R is false and does not support A",
+          "is_correct": false
+        },
+        {
+          "option_text": "A is false, but R is true and stands independently",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Step 1 — A is TRUE: rusting is an electrochemical reaction (4Fe + 3O₂ + 6H₂O → 2Fe₂O₃·3H₂O). Coastal air contains both moisture and dissolved NaCl, which acts as an electrolyte and accelerates the electrochemical cell, dramatically speeding up corrosion. Step 2 — R is TRUE: iron melts at ~1538°C, one of the highest melting points for structural metals. Step 3 — Does R explain A? No. Melting point measures resistance to thermal breakdown, not resistance to chemical surface corrosion. Corrosion resistance comes from chemical passivation (e.g., chromium oxide layer in stainless steel), entirely unrelated to melting point. The dangerous trap: students conflate 'structural robustness' with 'chemical corrosion resistance' — these are completely different material properties.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:28:22+00:00",
+      "id": "sgk_RSN_ASSERTION_00007"
+    },
+    {
+      "stem": "Examine the given Assertion (A) and Reason (R) and select the correct option.\nAssertion (A): Leaves of green plants appear green in colour.\nReason (R): Chlorophyll in leaves absorbs red and blue light and reflects green light back to our eyes.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assertion (A) is true, but Reason (R) is false",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assertion (A) is false, but Reason (R) is true",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Assertion A is TRUE — leaves appear green universally. Reason R is TRUE and directly explains A: chlorophyll selectively absorbs red light (~650–700 nm) and blue light (~430–450 nm) to drive photosynthesis, but reflects green light (~500–560 nm) back, which our eyes detect as the green colour. Both facts are accurate and R provides the exact optical mechanism behind A. Step-by-step: Is A true? Yes. Is R true? Yes (chlorophyll reflects, not absorbs, green). Does R explain A? Yes — the selective reflection of green is the direct cause of the perceived colour. Common error: students confuse 'absorbs green' with 'reflects green' and wrongly mark C — but R's claim is factually correct.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:04:05+00:00",
+      "id": "sgk_RSN_ASSERTION_00008"
+    },
+    {
+      "stem": "Read the given Assertion and Reason, and choose the most appropriate option.\nAssertion (A): Handles of cooking utensils and soldering irons are made of wood or plastic.\nReason (R): Wood and plastic are good conductors of heat, helping maintain high temperatures during use.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assertion (A) is true, but Reason (R) is false",
+          "is_correct": true
+        },
+        {
+          "option_text": "Assertion (A) is false, but Reason (R) is true",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Assertion A is TRUE — wooden and plastic handles are standard on cooking utensils and soldering irons. Reason R is FALSE: wood and plastic are thermal INSULATORS (poor conductors of heat), not good conductors. That is precisely why they are used — to prevent heat from travelling to the user's hand. R states the exact opposite of the real property. Step-by-step: Is A true? Yes. Is R true? No — calling wood/plastic 'good conductors' contradicts basic material science; their low thermal conductivity (wood ≈ 0.12 W/m·K vs copper ≈ 400 W/m·K) is the functional reason for their use. Common trap: Option A tempts students who sense that A and R are 'related to the same object', but they must evaluate R's factual claim independently.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:04:05+00:00",
+      "id": "sgk_RSN_ASSERTION_00009"
+    },
+    {
+      "stem": "Given below are an Assertion (A) and its Reason (R). Choose the correct option.\nAssertion (A): Ocean tides are generally higher on a full moon night than on a quarter-moon night.\nReason (R): The Moon revolves around the Earth in an elliptical orbit rather than a perfectly circular orbit.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": true
+        },
+        {
+          "option_text": "Assertion (A) is true, but Reason (R) is false",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assertion (A) is false, but Reason (R) is true",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Assertion A is TRUE — spring tides (unusually high) occur on full moon and new moon nights because the Sun, Earth, and Moon are aligned (syzygy), and the gravitational pulls of the Sun and Moon reinforce each other. Reason R is also TRUE — the Moon's orbit is elliptical (Kepler's First Law), which causes perigee–apogee variation in tidal amplitude over the monthly cycle. However, R does NOT explain A. The elliptical orbit determines how far the Moon is from Earth (affecting tidal strength by distance), but it does not explain why full moon specifically yields higher tides than a quarter moon. The correct explanation for A is gravitational alignment (syzygy), not orbital shape. Step: A true? Yes. R true? Yes. R explains A? No — orbit shape ≠ alignment effect. → B.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:04:05+00:00",
+      "id": "sgk_RSN_ASSERTION_00010"
+    },
+    {
+      "stem": "Read the following Assertion (A) and Reason (R) carefully and select the correct option.\nAssertion (A): A rainbow is always seen in the direction opposite to the Sun.\nReason (R): Sunlight entering a raindrop undergoes dispersion, and the refracted light then travels toward the Sun before reaching the observer.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assertion (A) is true, but Reason (R) is false",
+          "is_correct": true
+        },
+        {
+          "option_text": "Assertion (A) is false, but Reason (R) is true",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Assertion A is TRUE — a rainbow always appears in the anti-solar direction (observer's back to the Sun, rainbow at ~42° from the antisolar point). Reason R is partially correct but ultimately FALSE because of its directional claim. While sunlight does undergo dispersion inside a raindrop (refraction on entry, total internal reflection at the back surface, then refraction on exit), the dispersed light does NOT travel toward the Sun. The total internal reflection inside the raindrop sends the light BACK in the direction it came from — toward the observer, away from the Sun. R's phrase 'refracted rays travel toward the Sun' is a factual error about the geometry of the optical path. Step: A true? Yes. R true? No — direction of exit rays is wrong; they return toward observer, not toward Sun. → C.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:04:05+00:00",
+      "id": "sgk_RSN_ASSERTION_00011"
+    },
+    {
+      "stem": "Analyse the following Assertion (A) and Reason (R) and select the most appropriate option.\nAssertion (A): During respiration, plants only absorb carbon dioxide from the surrounding air.\nReason (R): Like all living organisms, plants also require oxygen to carry out cellular respiration.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assertion (A) is true, but Reason (R) is false",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assertion (A) is false, but Reason (R) is true",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Assertion A is FALSE — plants do NOT absorb only CO₂ during respiration. Cellular respiration (occurring 24 hours a day in all living plant cells) requires OXYGEN as a reactant and releases CO₂ as a product, exactly like animal respiration. The confusion arises because students mix up respiration with photosynthesis: during photosynthesis (only in daylight, only in chlorophyll-containing cells), plants absorb CO₂ and release O₂. These are two entirely separate processes. Reason R is TRUE — plants need oxygen for the mitochondrial electron transport chain (aerobic cellular respiration). Step: A false — respiration needs O₂, not only CO₂. R true — O₂ is a genuine requirement for plant cellular respiration. Correct option = D. Most tempting wrong option: C — students know R is correct but incorrectly accept A because of the photosynthesis–respiration confusion.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:04:05+00:00",
+      "id": "sgk_RSN_ASSERTION_00012"
+    },
+    {
+      "stem": "Carefully evaluate the Assertion (A) and Reason (R) given below and choose the best option.\nAssertion (A): A convex (converging) lens can behave as a diverging lens under certain circumstances.\nReason (R): When a convex lens is immersed in a medium whose refractive index exceeds that of the lens material, the lens diverges light.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": true
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assertion (A) is true, but Reason (R) is false",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assertion (A) is false, but Reason (R) is true",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Assertion A is TRUE — a convex lens is NOT inherently converging; its behaviour depends on the relative refractive indices of lens and surrounding medium. Reason R is TRUE and provides the exact mechanism. The lensmaker's equation: 1/f = (n_lens/n_medium − 1) × (1/R₁ − 1/R₂). When n_medium > n_lens, the factor (n_lens/n_medium − 1) becomes negative, reversing the sign of f. A negative focal length means the lens now diverges. Real example: a glass convex lens (n ≈ 1.5) placed in carbon disulphide (n ≈ 1.63) acts as a diverging lens. R correctly and precisely explains why A is true. Step: A true? Yes. R true? Yes (mathematically derivable). Does R explain A? Yes — the refractive index reversal is the direct cause of the behaviour change. Hard because most students assume 'convex lens = converging' as an absolute rule, making C the tempting wrong choice.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:04:05+00:00",
+      "id": "sgk_RSN_ASSERTION_00013"
+    },
+    {
+      "stem": "Study the Assertion (A) and Reason (R) carefully and select the appropriate option.\nAssertion (A): The centre of gravity of a uniform circular ring lies at its geometric centre, which is a point in empty space not occupied by the ring's material.\nReason (R): For any uniform body, the centre of gravity must always lie within the physical boundaries of its material.",
+      "options": [
+        {
+          "option_text": "Both A and R are true, and R correctly explains A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Both A and R are true, but R does not explain A",
+          "is_correct": false
+        },
+        {
+          "option_text": "Assertion (A) is true, but Reason (R) is false",
+          "is_correct": true
+        },
+        {
+          "option_text": "Assertion (A) is false, but Reason (R) is true",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Assertion A is TRUE — for a uniform circular ring, every element of mass is equidistant from the geometric centre and symmetrically placed. The net gravitational (and inertial) effect cancels at the centre, so the centre of gravity is at the geometric centre — a point in empty space where no material exists. Reason R is FALSE — it makes an incorrect generalisation. The centre of gravity can lie OUTSIDE the material of a uniform body in many cases: a circular ring (CG at empty centre), a hollow spherical shell (CG at hollow interior), a boomerang, a horseshoe magnet, or any C-shaped frame. R confuses 'uniform density' with 'solid and filled'; a body can be uniform in density distribution yet have a hollow region. Step: A true? Yes (verified by symmetry argument). R true? No — the rule 'CG always lies within material' is violated by rings, hollow bodies, and non-convex shapes. Common error: students treat R as a standard physics rule and pick A or D without examining whether it holds for non-convex bodies.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:04:05+00:00",
+      "id": "sgk_RSN_ASSERTION_00014"
+    }
+  ]
+}

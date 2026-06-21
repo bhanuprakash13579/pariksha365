@@ -1,0 +1,178 @@
+{
+  "topic_code": "RSN_VENN",
+  "subject": "Reasoning",
+  "topic": "Venn Diagrams",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "In a group of 60 students, 35 play cricket, 20 play football, and 10 play both. How many students play neither cricket nor football?",
+      "options": [
+        {"option_text": "10 (wrong: n(C∪F)=35+20−10=45; neither=60−45=15)", "is_correct": false},
+        {"option_text": "15 (correct: n(C∪F) = 35+20−10 = 45; neither = 60−45 = 15 ✓)", "is_correct": true},
+        {"option_text": "5 (wrong: 45+5=50≠60)", "is_correct": false},
+        {"option_text": "25 (wrong: 45+25=70≠60)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. n(A∪B) = n(A) + n(B) − n(A∩B) = 35+20−10 = 45 play at least one sport. Neither = Total − n(A∪B) = 60−45 = 15. **Formula:** |A∪B| = |A|+|B|−|A∩B|; neither = Total − |A∪B|.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a class of 80 students, 45 study Science, 30 study Arts, and 15 study both. How many students study only Science (not Arts)?",
+      "options": [
+        {"option_text": "45 (wrong: that's the total number studying Science including those who also study Arts)", "is_correct": false},
+        {"option_text": "30 (correct: students studying ONLY Science = 45−15 = 30 (subtract those who study both) ✓)", "is_correct": true},
+        {"option_text": "15 (that's the number who study BOTH, not only Science)", "is_correct": false},
+        {"option_text": "60 (wrong: that would be more than the total Science students)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Only Science = Science total − Both = 45 − 15 = 30. In Venn diagram terms: the Science-only region excludes the intersection. Only Arts = 30−15 = 15. Both = 15. Neither = 80 − (30+15+15) = 80−60 = 20.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a survey of 100 people, 60 like tea, 50 like coffee, and 30 like both. How many like at least one of the two beverages?",
+      "options": [
+        {"option_text": "80 (correct: n(T∪C)=60+50−30=80; 80 people like at least one ✓)", "is_correct": true},
+        {"option_text": "110 (wrong: that's 60+50 without subtracting the intersection)", "is_correct": false},
+        {"option_text": "70 (wrong: 70 would result from 60+50−40=70 — incorrect subtraction)", "is_correct": false},
+        {"option_text": "50 (wrong: that's just the number who like coffee)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. 'At least one' = n(T∪C) = n(T)+n(C)−n(T∩C) = 60+50−30 = 80. The 30 who like both are counted once in tea and once in coffee — subtract once to avoid double-counting. Neither = 100−80 = 20.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A Venn diagram shows three overlapping sets A, B, C where:\n- Only A = 10\n- Only B = 15\n- Only C = 20\n- A and B only = 5\n- B and C only = 8\n- A and C only = 7\n- All three = 3\nHow many elements are in set A (total)?",
+      "options": [
+        {"option_text": "15 (wrong: A = only A + A∩B only + A∩C only + all three = 10+5+7+3=25)", "is_correct": false},
+        {"option_text": "25 (correct: n(A) = only A + (A∩B only) + (A∩C only) + (all three) = 10+5+7+3 = 25 ✓)", "is_correct": true},
+        {"option_text": "18 (wrong: doesn't add up)", "is_correct": false},
+        {"option_text": "22 (wrong: partial sum)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. n(A) includes all elements in A: only-A (10) + A∩B but not C (5) + A∩C but not B (7) + all three A∩B∩C (3) = 25. Total elements = 10+15+20+5+8+7+3 = 68. This is the 3-circle Venn diagram formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a school of 200 students, 120 have studied French, 100 have studied German, and 20 have studied neither. How many students have studied both French and German?",
+      "options": [
+        {"option_text": "20 (wrong: n(F∪G)=200−20=180; 120+100−x=180; x=40, not 20)", "is_correct": false},
+        {"option_text": "40 (correct: at least one = 200−20=180; 120+100−x=180; x=40 ✓)", "is_correct": true},
+        {"option_text": "60 (wrong: 120+100−60=160≠180)", "is_correct": false},
+        {"option_text": "80 (wrong: 120+100−80=140≠180)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. At least one language = 200−20 = 180. n(F∪G) = n(F)+n(G)−n(F∩G) → 180 = 120+100−n(F∩G) → n(F∩G) = 220−180 = 40. Verify: only F = 120−40=80; only G = 100−40=60; both=40; neither=20. Total = 80+60+40+20 = 200 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "From the Venn diagram context: 120 people were surveyed. 75 like apples, 60 like bananas, and 45 like both. How many like only apples?",
+      "options": [
+        {"option_text": "60 (wrong: only apples = 75−45=30)", "is_correct": false},
+        {"option_text": "30 (correct: only apples = total apples − both = 75−45 = 30 ✓)", "is_correct": true},
+        {"option_text": "45 (that's the number who like both, not only apples)", "is_correct": false},
+        {"option_text": "75 (that's total apple-likers including those who also like bananas)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Only apples = 75−45 = 30. Only bananas = 60−45 = 15. Both = 45. Neither = 120−(30+15+45) = 120−90 = 30. Check: 30+15+45+30 = 120 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a Venn diagram, Set P = {1,2,3,4,5,6}, Set Q = {4,5,6,7,8,9}. What is P ∩ Q (intersection)?",
+      "options": [
+        {"option_text": "{1,2,3,7,8,9} (that's the elements in only P or only Q — the exclusive elements, not the intersection)", "is_correct": false},
+        {"option_text": "{4,5,6} (correct: P∩Q = elements in BOTH P and Q = {4,5,6} ✓)", "is_correct": true},
+        {"option_text": "{1,2,3,4,5,6,7,8,9} (that's P∪Q = all elements in either set)", "is_correct": false},
+        {"option_text": "{1,2,3} (that's elements in only P, not the intersection)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. P∩Q (intersection) = elements common to BOTH sets. P = {1,2,3,4,5,6}; Q = {4,5,6,7,8,9}. Common elements = {4,5,6}. P∪Q (union) = {1,2,3,4,5,6,7,8,9}. Only P = {1,2,3}. Only Q = {7,8,9}.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "150 students were surveyed about their hobbies. 90 read books, 80 play games, and some do both. 20 do neither. How many do both?",
+      "options": [
+        {"option_text": "30 (wrong: n(B∪G)=150−20=130; 90+80−x=130; 170−x=130; x=40)", "is_correct": false},
+        {"option_text": "40 (correct: n(B∪G) = 150−20 = 130; 90+80−x=130 → x=40 ✓)", "is_correct": true},
+        {"option_text": "50 (wrong: 90+80−50=120≠130)", "is_correct": false},
+        {"option_text": "20 (that's the number who do neither, not both)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. n(B∪G) = Total − Neither = 150−20 = 130. Using inclusion-exclusion: n(B)+n(G)−n(B∩G) = n(B∪G) → 90+80−x = 130 → 170−x = 130 → x = 40. Both hobbies = 40.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A represents doctors, B represents teachers. In a Venn diagram, the region OUTSIDE both circles (outside A and B) represents:",
+      "options": [
+        {"option_text": "People who are both doctors and teachers (that's the intersection/overlap region)", "is_correct": false},
+        {"option_text": "Only doctors (that's the part of A outside B)", "is_correct": false},
+        {"option_text": "People who are neither doctors nor teachers (correct: the region outside both circles = neither ✓)", "is_correct": true},
+        {"option_text": "People who are doctors or teachers (that's the union region = inside either circle)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. In a Venn diagram: Intersection (A∩B) = overlap = both. Only A = in A but outside B. Only B = in B but outside A. A∪B = anywhere inside either circle. Outside BOTH circles = NEITHER (people who are not doctors and not teachers).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In three overlapping sets (Music, Dance, Drama) with 100 students total:\n- Only Music = 25, Only Dance = 20, Only Drama = 15\n- Music & Dance only = 8, Dance & Drama only = 7, Music & Drama only = 6\n- All three = 4\nHow many students are NOT involved in any of the three?",
+      "options": [
+        {"option_text": "5 (wrong: sum=25+20+15+8+7+6+4=85; neither=100−85=15)", "is_correct": false},
+        {"option_text": "15 (correct: sum of all regions=25+20+15+8+7+6+4=85; neither=100−85=15 ✓)", "is_correct": true},
+        {"option_text": "10 (wrong: 100−90=10; but 85≠90)", "is_correct": false},
+        {"option_text": "25 (wrong: 100−75=25; 75≠85)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Sum of all Venn regions: 25+20+15+8+7+6+4 = 85. Neither = 100−85 = 15. In 3-set Venn problems: list each region (only-A, only-B, only-C, A∩B only, B∩C only, A∩C only, all three), sum them, subtract from total for 'neither'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

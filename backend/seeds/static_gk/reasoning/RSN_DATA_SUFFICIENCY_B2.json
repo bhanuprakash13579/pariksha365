@@ -1,0 +1,178 @@
+{
+  "topic_code": "RSN_DATA_SUFFICIENCY",
+  "subject": "Reasoning",
+  "topic": "Data Sufficiency",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Question: What is the value of x?\nStatement I: x + 3 = 8\nStatement II: x² = 25",
+      "options": [
+        {"option_text": "Statement I alone is sufficient (correct: from I: x=5 (unique value); from II: x=+5 or -5 (two values); I alone gives unique answer ✓)", "is_correct": true},
+        {"option_text": "Statement II alone is sufficient (wrong: x²=25 gives x=±5; not a unique answer)", "is_correct": false},
+        {"option_text": "Both statements together are sufficient (wrong: I alone is sufficient)", "is_correct": false},
+        {"option_text": "Neither statement is sufficient (wrong: I gives unique answer)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Statement I: x+3=8 → x=5 (unique). Sufficient ✓. Statement II: x²=25 → x=+5 or x=−5 (two possible values). NOT uniquely sufficient. Statement I alone is sufficient to answer the question. **Data Sufficiency rule:** Check each statement independently first; use together only if neither alone works.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Question: Is triangle ABC a right triangle?\nStatement I: AB² + BC² = AC²\nStatement II: Angle B = 60°",
+      "options": [
+        {"option_text": "Statement I alone is sufficient (correct: if AB²+BC²=AC², the Pythagorean theorem is satisfied → right angle at B; I alone answers the question ✓)", "is_correct": true},
+        {"option_text": "Statement II alone is sufficient (wrong: angle B=60° means it's NOT a right triangle; but we can answer 'no' from II — actually, this IS sufficient to answer the yes/no question!)", "is_correct": false},
+        {"option_text": "Either statement alone is sufficient (correct: I says yes (right triangle); II says no (60°≠90°); both independently answer the yes/no question ✓)", "is_correct": false},
+        {"option_text": "Both statements together are needed (wrong: either alone suffices)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Both statements independently answer the question. Statement I: AB²+BC²=AC² → Pythagorean theorem satisfied → YES, it is a right triangle at B. Statement II: Angle B=60° ≠ 90° → NO, it is not a right triangle. Both statements give definitive yes/no answers. Either statement alone is SUFFICIENT.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Question: What is the age of Priya?\nStatement I: Priya is 5 years younger than Ritu.\nStatement II: Ritu is 25 years old.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient (wrong: I gives Priya in terms of Ritu's age; needs Ritu's age too)", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient (wrong: II tells us Ritu's age but not the relationship to Priya)", "is_correct": false},
+        {"option_text": "Both statements together are sufficient (correct: from II, Ritu=25; from I, Priya=25−5=20; together give unique answer ✓)", "is_correct": true},
+        {"option_text": "Neither statement is sufficient (wrong: together they are sufficient)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. I alone: Priya = Ritu − 5 (not enough without Ritu's age). II alone: Ritu = 25 (not enough without the relationship). Together: Priya = 25−5 = 20 years. Both needed, both sufficient together.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Question: Is n an even number?\nStatement I: n/2 is an integer.\nStatement II: n is divisible by 4.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient (correct: n/2 is an integer → n is even; I alone answers the question ✓)", "is_correct": true},
+        {"option_text": "Statement II alone is sufficient (wrong: divisible by 4 also means even, so II also works alone; but the question asks which alone... both work alone)", "is_correct": false},
+        {"option_text": "Either statement alone is sufficient (correct: I: n/2 integer → n even (YES); II: n divisible by 4 → n even (YES); both independently sufficient ✓)", "is_correct": false},
+        {"option_text": "Both statements together are needed (wrong: each independently answers the question)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Statement I: n/2 is an integer → n=2×(integer) → n is even. YES, n is even. Sufficient. Statement II: n is divisible by 4 → n=4k for some integer k → n=2×(2k), so n is even. YES, n is even. Sufficient. Both independently answer the question.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Question: What is the length of a rectangle?\nStatement I: The perimeter of the rectangle is 40 cm.\nStatement II: The width of the rectangle is 8 cm.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient (wrong: 2(L+W)=40 → L+W=20; without W, L unknown)", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient (wrong: W=8 but no perimeter/area information; L unknown)", "is_correct": false},
+        {"option_text": "Both statements together are sufficient (correct: L+W=20 and W=8 → L=12 ✓)", "is_correct": true},
+        {"option_text": "Neither is sufficient (wrong: together they are sufficient)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. I alone: 2(L+W)=40 → L+W=20 → insufficient without W. II alone: W=8 → insufficient without another equation. Together: L+8=20 → L=12 cm. Both statements combined are sufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Question: Is x > 0?\nStatement I: x² = 16\nStatement II: x + 4 > 0",
+      "options": [
+        {"option_text": "Statement I alone is sufficient (wrong: x²=16 → x=+4 or x=−4; can't determine sign)", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient (wrong: x+4>0 → x>-4; x could be -3,-2,-1,0,1,2... both negative and positive; can't determine if x>0)", "is_correct": false},
+        {"option_text": "Both statements together are sufficient (correct: x=+4 or -4 from I; x>-4 from II; only x=+4 satisfies both → x>0 ✓)", "is_correct": true},
+        {"option_text": "Neither statement is sufficient (wrong: together they are sufficient)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. I alone: x=+4 or −4 (insufficient). II alone: x>−4 (includes 0,1,2,−1,−2,−3; insufficient). Together: x=+4 or −4 (from I) AND x>−4 (from II). x=−4 satisfies x>−4? No, −4 is NOT >−4 (strict inequality). So only x=+4 satisfies both. Therefore x=+4>0. Both together are sufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Question: What is the profit percentage?\nStatement I: The selling price is ₹120.\nStatement II: The profit is ₹20.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient (wrong: need both CP and SP or profit to find profit%)", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient (wrong: profit=₹20 but need CP or SP too)", "is_correct": false},
+        {"option_text": "Both statements together are sufficient (correct: CP=SP−profit=120−20=100; profit%=20/100×100=20% ✓)", "is_correct": true},
+        {"option_text": "Neither is sufficient (wrong: together they are)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. I alone: SP=₹120 (insufficient without CP or profit). II alone: profit=₹20 (insufficient without CP or SP). Together: CP=SP−profit=120−20=₹100; Profit% = (20/100)×100 = 20%. Both statements are needed and together are sufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Question: Can we determine the average of five numbers?\nStatement I: The sum of the five numbers is 75.\nStatement II: Each number is less than 20.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient (correct: average = sum/count = 75/5 = 15; I alone gives unique average ✓)", "is_correct": true},
+        {"option_text": "Statement II alone is sufficient (wrong: knowing each is less than 20 doesn't give a unique average)", "is_correct": false},
+        {"option_text": "Both statements together are sufficient (wrong: I alone is already sufficient)", "is_correct": false},
+        {"option_text": "Neither is sufficient (wrong: I alone is sufficient)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Average = Sum/Count. Statement I: Sum=75, Count=5 → Average=75/5=15. Uniquely determined. Statement I alone is SUFFICIENT. Statement II only gives upper bound for each number — doesn't determine average.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Question: What is the speed of train A?\nStatement I: Train A crosses a pole in 10 seconds.\nStatement II: Train A is 300 metres long.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient (wrong: need both length and time to find speed)", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient (wrong: need both length and time)", "is_correct": false},
+        {"option_text": "Both statements together are sufficient (correct: speed=distance/time=300m/10s=30 m/s ✓)", "is_correct": true},
+        {"option_text": "Neither is sufficient (wrong: together they are)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Speed = Length/Time (when crossing a pole, the train travels its own length). I: time=10s. II: length=300m. Together: Speed=300/10=30 m/s=108 km/h. Both statements needed and together sufficient.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Question: Is quadrilateral ABCD a square?\nStatement I: All four sides are equal.\nStatement II: All four angles are 90°.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient (wrong: all sides equal = rhombus; not necessarily a square without knowing angles)", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient (wrong: all angles 90° = rectangle; not necessarily a square without equal sides)", "is_correct": false},
+        {"option_text": "Both statements together are sufficient (correct: all equal sides + all 90° angles = square ✓)", "is_correct": true},
+        {"option_text": "Neither is sufficient (wrong: together they are sufficient)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. I alone: all sides equal → could be a rhombus (not necessarily a square). II alone: all angles 90° → could be a rectangle (not necessarily a square). Together: All equal sides (not a rectangle that isn't square) AND all 90° angles (not a rhombus that isn't square) → must be a SQUARE. Both needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Surds & Indices",
+  "topic_code": "QA_SURDS",
+  "questions": [
+    {
+      "stem": "If 4^x = 64, what is the value of x?",
+      "options": [
+        {
+          "option_text": "x = 2, since 4² = 16 which falls short of 64",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 3, since 4³ = 4 × 4 × 4 = 64 (verified)",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = 4, since 4⁴ = 256 which overshoots 64",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 16, from dividing 64 by 4 directly as 64 ÷ 4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Express 64 as a power of 4: 4¹=4, 4²=16, 4³=64. So x=3. Option A (x=2) gives only 16 — one step short. Option C (x=4) gives 256 — overshoots. Option D (x=16) confuses repeated multiplication with simple division, a base-exponent mix-up. **Short Trick:** Factor 64 = 2⁶ and 4 = 2², so 4^x = (2²)^x = 2^(2x) = 2⁶ → 2x=6 → x=3. Alternatively, just recognise 4³=64 by memory.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:16:57+00:00",
+      "id": "sgk_QA_SURDS_00001"
+    },
+    {
+      "stem": "What is the value of (√7 + √3)(√7 − √3)?",
+      "options": [
+        {
+          "option_text": "2, from subtracting √3 from √7 and squaring the result",
+          "is_correct": false
+        },
+        {
+          "option_text": "4, using identity (√a+√b)(√a−√b) = a−b = 7−3 = 4",
+          "is_correct": true
+        },
+        {
+          "option_text": "10, by adding 7 and 3 instead of subtracting them",
+          "is_correct": false
+        },
+        {
+          "option_text": "√21, from multiplying only the inner unlike terms √7×√3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Apply the difference-of-squares identity: (√a+√b)(√a−√b) = (√a)²−(√b)² = a−b. Here a=7, b=3, so result = 7−3 = 4. Option C (=10) adds instead of subtracting — classic sign error. Option D (=√21) picks only the product of unlike terms from FOIL and ignores the squared terms. Option A squares the difference of roots, not the product. **Short Trick:** Spot the conjugate pair instantly — no FOIL expansion needed. Just subtract the radicands: 7−3 = 4.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:16:57+00:00",
+      "id": "sgk_QA_SURDS_00002"
+    },
+    {
+      "stem": "Rationalize the denominator of 1/(√5 + √3). Which expression is the simplified result?",
+      "options": [
+        {
+          "option_text": "(√5 + √3)/2, using same sign instead of conjugate in numerator",
+          "is_correct": false
+        },
+        {
+          "option_text": "(√5 − √3)/2, conjugate mult gives denom (√5)²−(√3)² = 5−3 = 2",
+          "is_correct": true
+        },
+        {
+          "option_text": "(√5 − √3)/8, computing (√5+√3)² = 8 as the new denominator",
+          "is_correct": false
+        },
+        {
+          "option_text": "(√5 − √3)/√15, using √5×√3 = √15 as the denominator instead",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Multiply top and bottom by the conjugate (√5−√3): numerator becomes (√5−√3); denominator = (√5)²−(√3)² = 5−3 = 2. Result = (√5−√3)/2. Option A uses (+√3) in the numerator — flipped conjugate sign. Option C squares (√5+√3) instead of using the difference-of-squares product; (√5+√3)²=8+2√15, not a clean denominator. Option D treats √5×√3=√15 as the rationalizing multiplier — unrelated to conjugate technique. **Short Trick:** For 1/(√a+√b), always use conjugate (√a−√b). Denominator = a−b (pure integer). Here 5−3=2 directly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:16:57+00:00",
+      "id": "sgk_QA_SURDS_00003"
+    },
+    {
+      "stem": "Simplify: (x^(3/2) × x^(1/2)) ÷ x², where x > 0. What is the result?",
+      "options": [
+        {
+          "option_text": "x², adding numerator exponents 3/2+1/2=2 and ignoring ÷x²",
+          "is_correct": false
+        },
+        {
+          "option_text": "1, since 3/2+1/2−2 = 0 and x^0 = 1 for any positive x",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/x (= x^−1), subtracting rather than adding: 3/2−1/2−2 = −1",
+          "is_correct": false
+        },
+        {
+          "option_text": "x^(3/4), from multiplying exponents 3/2 × 1/2 instead of adding",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Apply a^m × a^n = a^(m+n) and a^m ÷ a^n = a^(m−n): combined exponent = 3/2 + 1/2 − 2 = 2 − 2 = 0. Therefore x^0 = 1 for any x > 0. Option A forgets to subtract the denominator's exponent of 2. Option C subtracts the numerator exponents instead of adding (3/2−1/2=1, then 1−2=−1), giving 1/x. Option D multiplies fractional exponents (3/2×1/2=3/4) — valid only for (a^m)^n, not a^m×a^n. **Short Trick:** Convert all to fractions over 2: 3/2+1/2−4/2 = 0/2 = 0 → x^0 = 1. One-line computation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:16:57+00:00",
+      "id": "sgk_QA_SURDS_00004"
+    },
+    {
+      "stem": "What is the value of 1/(2+√3) + 1/(2−√3)?",
+      "options": [
+        {
+          "option_text": "4−2√3, rationalizing both fractions using (2−√3) for each term",
+          "is_correct": false
+        },
+        {
+          "option_text": "4, after rationalization the ±√3 terms cancel; rational sum = 4",
+          "is_correct": true
+        },
+        {
+          "option_text": "1, confusing the denominator (2+√3)(2−√3) = 1 as the final answer",
+          "is_correct": false
+        },
+        {
+          "option_text": "2√3, summing only the irrational numerator terms, ignoring integers",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Rationalize each term separately: 1/(2+√3) = (2−√3)/((2)²−(√3)²) = (2−√3)/1 = 2−√3; similarly 1/(2−√3) = (2+√3)/1 = 2+√3. Sum = (2−√3)+(2+√3) = 4. Option C mistakes the denominator value (=1) for the final answer without combining the numerators. Option A applies the wrong conjugate (2−√3) to both fractions, giving 2(2−√3)=4−2√3. Option D adds only irrational parts. **Short Trick:** Use combined fraction directly: numerator = (2−√3)+(2+√3)=4; denominator = 4−3=1. Answer = 4/1 = 4 immediately.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:16:57+00:00",
+      "id": "sgk_QA_SURDS_00005"
+    },
+    {
+      "stem": "If x = (√5 + √3)/(√5 − √3), what is the value of x + 1/x?",
+      "options": [
+        {
+          "option_text": "8, since x=4+√15 and 1/x=4−√15; their √15 terms cancel out",
+          "is_correct": true
+        },
+        {
+          "option_text": "6, computing only the rational part of rationalized x, ignoring 1/x",
+          "is_correct": false
+        },
+        {
+          "option_text": "2√5, treating the sum as difference of the original surd numerators",
+          "is_correct": false
+        },
+        {
+          "option_text": "4√15, multiplying x and 1/x together rather than adding them",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Rationalize x: multiply by (√5+√3)/(√5+√3) → numerator=(√5+√3)²=5+2√15+3=8+2√15; denominator=(√5)²−(√3)²=2. So x=(8+2√15)/2=4+√15. Since 1/x=(√5−√3)/(√5+√3), similarly 1/x=4−√15. Sum: x+1/x=(4+√15)+(4−√15)=8. Option B computes only the rational part (4) and omits 1/x entirely. Option D multiplies instead of adding: x×(1/x)=1, not 4√15. **Short Trick:** x+1/x = [(√5+√3)²+(√5−√3)²]/[(√5)²−(√3)²] = [(8+2√15)+(8−2√15)]/2 = 16/2 = 8. Numerator cross-terms cancel — no full rationalization needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:16:57+00:00",
+      "id": "sgk_QA_SURDS_00006"
+    },
+    {
+      "stem": "If 2^x = 3^y = 6^(−z), what is the value of 1/x + 1/y + 1/z?",
+      "options": [
+        {
+          "option_text": "1, applying log(6)=log(2)+log(3) but mishandling the negative z",
+          "is_correct": false
+        },
+        {
+          "option_text": "−1, flipping the sign: treating 6^(−z) as 6^z throughout",
+          "is_correct": false
+        },
+        {
+          "option_text": "0, since 6=2×3 forces 1/x+1/y = −1/z, making the total zero",
+          "is_correct": true
+        },
+        {
+          "option_text": "1/(xyz), formed by multiplying the three index reciprocals together",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let 2^x = 3^y = 6^(−z) = k. Then 2=k^(1/x), 3=k^(1/y), 6=k^(−1/z). Since 6=2×3: k^(−1/z)=k^(1/x)×k^(1/y)=k^(1/x+1/y). Equating exponents: −1/z = 1/x+1/y, so 1/x+1/y+1/z = 0. Option A gets 1 by correctly using log(6)=log(2)+log(3) but then drops the negative from 6^(−z), giving the wrong sign. Option B sets 6^(−z)=6^z, flipping the result to −1. **Short Trick:** Set all equal to k; take logs: (1/x)=log2/logk, (1/y)=log3/logk, (1/z)=−log6/logk. Sum = (log2+log3−log6)/logk = log6−log6 / logk = 0. Elegant one-liner.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:16:57+00:00",
+      "id": "sgk_QA_SURDS_00007"
+    },
+    {
+      "stem": "What is the value of (125)^(2/3)?",
+      "options": [
+        {
+          "option_text": "25, since 125^(1/3) = 5 and 5² = 25",
+          "is_correct": true
+        },
+        {
+          "option_text": "15, since exponent 2/3 means multiply 3 by 5",
+          "is_correct": false
+        },
+        {
+          "option_text": "5, since 125^(1/3) alone already gives 5",
+          "is_correct": false
+        },
+        {
+          "option_text": "625, since 125^(2/3) is read as 125² divided by 3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. (125)^(2/3) means take the cube root first, then square: 125^(1/3) = 5 (since 5³ = 125), then 5² = 25. Option C stops at the cube root, forgetting the squaring step. Option D misreads the exponent as 125² ÷ 3. Option B treats 2/3 as a direct multiplier of 3. **Short Trick:** Recognise 125 = 5³, so (5³)^(2/3) = 5^(3 × 2/3) = 5² = 25. Always factorise the base to its prime root before applying fractional exponents.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:35:41+00:00",
+      "id": "sgk_QA_SURDS_00008"
+    },
+    {
+      "stem": "Simplify: √75 − √48 + √27. What is the result?",
+      "options": [
+        {
+          "option_text": "3√3, by treating all surd coefficients as equal to 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4√3, reducing each term to a multiple of √3",
+          "is_correct": true
+        },
+        {
+          "option_text": "6√3, by adding all three coefficients as 5 + 4 − 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "2√3, by subtracting every coefficient from 5 twice",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Reduce each surd: √75 = 5√3, √48 = 4√3, √27 = 3√3. Expression = 5√3 − 4√3 + 3√3 = (5 − 4 + 3)√3 = 4√3. Option A gives 3√3 by ignoring the addition of the last term. Option C (6√3) makes a sign error: 5 + 4 − 3 = 6 instead of 5 − 4 + 3 = 4. Option D subtracts all from 5. **Short Trick:** Extract √3 from all terms first, then handle coefficients as plain integers: 5 − 4 + 3 = 4. Never add or subtract surd values directly — only their like coefficients.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:35:41+00:00",
+      "id": "sgk_QA_SURDS_00009"
+    },
+    {
+      "stem": "Which of the following is the simplified form of √(7 + 4√3)?",
+      "options": [
+        {
+          "option_text": "√3 + √4, by splitting the radicand as two surds",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 + √3, recognising 7 + 4√3 as the square (2 + √3)²",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 + √6, by rewriting the radicand incorrectly as (1+√6)²",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 + √2, by treating 4√3 as equivalent to 2√6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Look for a and b such that a² + b² = 7 and 2ab = 4√3, i.e. ab = 2√3. Testing a = 2, b = √3: a² + b² = 4 + 3 = 7 ✓ and 2ab = 4√3 ✓. So 7 + 4√3 = (2 + √3)², hence √(7 + 4√3) = 2 + √3. Option A applies √(x+y) = √x + √y, which is invalid. Option C guesses without verifying: (1+√6)² = 7 + 2√6 ≠ 7 + 4√3. **Short Trick:** For √(p + 2q√r), find two numbers whose sum is p and whose product is q²r. Here: 4 + 3 = 7 and 4 × 3 = 12 = (2√3)². So √(7 + 4√3) = √4 + √3 = 2 + √3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:35:41+00:00",
+      "id": "sgk_QA_SURDS_00010"
+    },
+    {
+      "stem": "If 2^(x+2) = 8^(x−1), what is the value of x?",
+      "options": [
+        {
+          "option_text": "x = 3, from treating 8^(x−1) as 2^(x−1) incorrectly",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 5/2, by converting both sides to base 2 and equating",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = 2, by expanding 3(x−1) as 3x − 1 instead of 3x − 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 7/2, from solving x + 2 = 3x + 3 with a sign error",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Express both sides as powers of 2: 8 = 2³, so 8^(x−1) = 2^(3(x−1)) = 2^(3x−3). Now equate exponents: x + 2 = 3x − 3 → 5 = 2x → x = 5/2. Option A assumes 8^(x−1) = 2^(x−1), forgetting that 8 = 2³ introduces a factor of 3 in the exponent. Option C expands 3(x−1) as 3x − 1 (off by 2), yielding x = 2. Option D flips the sign in 3(x−1) = 3x − 3, treating it as 3x + 3. **Short Trick:** The single rule here — always convert all bases to the same prime before equating exponents. 8 = 2³ is a standard base-conversion exam trigger.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:35:41+00:00",
+      "id": "sgk_QA_SURDS_00011"
+    },
+    {
+      "stem": "If √x + 1/√x = 3, what is the value of x + 1/x?",
+      "options": [
+        {
+          "option_text": "6, by squaring and subtracting 3 instead of 2 from 9",
+          "is_correct": false
+        },
+        {
+          "option_text": "9, by directly squaring without subtracting the cross-term",
+          "is_correct": false
+        },
+        {
+          "option_text": "7, using (√x + 1/√x)² = x + 2 + 1/x, then solving",
+          "is_correct": true
+        },
+        {
+          "option_text": "5, by squaring and subtracting an incorrect constant of 4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Square both sides: (√x + 1/√x)² = x + 2·(√x)(1/√x) + 1/x = x + 2 + 1/x = 3² = 9. Therefore x + 1/x = 9 − 2 = 7. Option B (9) forgets to subtract the cross-term 2 that arises from the middle term 2·√x·(1/√x) = 2. Option A (6) subtracts 3 instead of 2. Option D (5) invents a cross-term of 4. **Short Trick:** The identity (√x + 1/√x)² = (x + 1/x) + 2 is a standard SSC/IBPS pattern. Memorise: if √x + 1/√x = k, then x + 1/x = k² − 2. Here: 3² − 2 = 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:35:41+00:00",
+      "id": "sgk_QA_SURDS_00012"
+    },
+    {
+      "stem": "If 4^a = 9^b = 36^c, which of the following relationships among a, b, and c is correct?",
+      "options": [
+        {
+          "option_text": "1/a + 1/b = 1/c, derived by equating logarithmic expressions",
+          "is_correct": true
+        },
+        {
+          "option_text": "a + b = c, by direct addition of the respective exponents",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/a × 1/b = 1/c, from multiplying the base-log equations",
+          "is_correct": false
+        },
+        {
+          "option_text": "a² + b² = c², applying a Pythagorean-style identity here",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Let 4^a = 9^b = 36^c = k. Taking logs: a = log k / log 4, so 1/a = log 4 / log k. Similarly 1/b = log 9 / log k and 1/c = log 36 / log k. Since log 36 = log(4 × 9) = log 4 + log 9, we get 1/c = (log 4 + log 9) / log k = 1/a + 1/b. Option B (a+b=c) confuses the reciprocal-log relationship with direct addition. Option C (product) is wrong because log splits multiplication into addition, not multiplication. Option D applies Pythagoras with no basis. **Short Trick:** Whenever p^a = q^b = (pq)^c, the relationship 1/a + 1/b = 1/c always holds — a generalisation of the classic 2^x = 3^y = 6^z pattern. Verify: log(pq) = log p + log q forces the reciprocal-sum identity.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:35:41+00:00",
+      "id": "sgk_QA_SURDS_00013"
+    },
+    {
+      "stem": "What is the value of √(8 + 2√15) − √(8 − 2√15)?",
+      "options": [
+        {
+          "option_text": "2√5, by incorrectly pairing the nested surds with √5 only",
+          "is_correct": false
+        },
+        {
+          "option_text": "2√3, by expressing each radicand as a perfect square first",
+          "is_correct": true
+        },
+        {
+          "option_text": "√15, by treating the difference as a single product form",
+          "is_correct": false
+        },
+        {
+          "option_text": "2, by subtracting the surd parts and retaining only the integer",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Recognise that 8 + 2√15 = 5 + 2√(5·3) + 3 = (√5)² + 2·√5·√3 + (√3)² = (√5 + √3)². Similarly, 8 − 2√15 = (√5 − √3)². Since √5 > √3 > 0, both square roots are positive: √(8+2√15) = √5 + √3 and √(8−2√15) = √5 − √3. Subtracting: (√5+√3) − (√5−√3) = 2√3. Option A (2√5) adds the surds instead of subtracting. Option D (2) drops both surd parts entirely. Option C (√15) mistakes the subtraction for a product. **Short Trick:** For √(p + 2√q), write q = a·b and check if a + b = p. Here: 15 = 5 × 3, 5 + 3 = 8 ✓. So √(8 ± 2√15) = √5 ± √3. The difference cancels √5, leaving 2√3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:35:41+00:00",
+      "id": "sgk_QA_SURDS_00014"
+    }
+  ]
+}

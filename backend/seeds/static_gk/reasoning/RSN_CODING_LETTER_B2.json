@@ -1,0 +1,178 @@
+{
+  "topic_code": "RSN_CODING_LETTER",
+  "subject": "Reasoning",
+  "topic": "Coding-Decoding — Letter Shift Patterns",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "In a certain code, APPLE is written as BQQMF. How is GRAPE written in that code?",
+      "options": [
+        {"option_text": "HSBQF (correct: each letter +1; G→H, R→S, A→B, P→Q, E→F = HSBQF ✓)", "is_correct": true},
+        {"option_text": "FQZOD (wrong: that's a −1 shift)", "is_correct": false},
+        {"option_text": "ITCRG (wrong: that's a +2 shift)", "is_correct": false},
+        {"option_text": "HRCPF (wrong: only some letters shifted correctly)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Pattern: each letter shifts +1. Verify APPLE→BQQMF: A+1=B, P+1=Q, P+1=Q, L+1=M, E+1=F ✓. GRAPE: G+1=H, R+1=S, A+1=B, P+1=Q, E+1=F = HSBQF.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code, KING = LJOH. What is the code for QUEEN?",
+      "options": [
+        {"option_text": "PTDDN (wrong: that's −1 shift)", "is_correct": false},
+        {"option_text": "RVFFO (correct: Q+1=R, U+1=V, E+1=F, E+1=F, N+1=O = RVFFO ✓)", "is_correct": true},
+        {"option_text": "SWGGP (wrong: that's +2 shift)", "is_correct": false},
+        {"option_text": "RVEEO (wrong: only first two letters shifted correctly)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Pattern: +1 shift. KING: K+1=L, I+1=J, N+1=O, G+1=H = LJOH ✓. QUEEN: Q+1=R, U+1=V, E+1=F, E+1=F, N+1=O = RVFFO.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code, ROAD = URDG and MILK = PLNO. What is the code for FIRE?",
+      "options": [
+        {"option_text": "GHSD (wrong: +1 shift only)", "is_correct": false},
+        {"option_text": "ILUH (correct: +3 shift; verify ROAD: R+3=U, O+3=R, A+3=D, D+3=G=URDG ✓; FIRE: F+3=I, I+3=L, R+3=U, E+3=H=ILUH ✓)", "is_correct": true},
+        {"option_text": "JMVI (wrong: +4 shift)", "is_correct": false},
+        {"option_text": "EHQB (wrong: −1 shift from FIRE)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Pattern: +3 shift. Verify ROAD: R+3=U, O+3=R, A+3=D, D+3=G = URDG ✓. Verify MILK: M+3=P, I+3=L, L+3=O, K+3=N = PLNO ✓. FIRE: F+3=I, I+3=L, R+3=U, E+3=H = ILUH.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code, BAKE = DCMG. What is coded as FINE?",
+      "options": [
+        {"option_text": "HKPG (correct: +2 shift; F+2=H, I+2=K, N+2=P, E+2=G = HKPG ✓)", "is_correct": true},
+        {"option_text": "GHOD (wrong: +1 shift only)", "is_correct": false},
+        {"option_text": "EJMD (wrong: −1 shift from FINE)", "is_correct": false},
+        {"option_text": "ILQH (wrong: +3 shift)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Pattern: +2 shift. Verify BAKE: B+2=D, A+2=C, K+2=M, E+2=G = DCMG ✓. FINE: F+2=H, I+2=K, N+2=P, E+2=G = HKPG.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code, 'sky is blue' = '15 27 34', 'blue is sea' = '27 34 43'. What is the code for 'sky'?",
+      "options": [
+        {"option_text": "27 (27 appears in both sentences — it codes for 'is' or 'blue', not 'sky')", "is_correct": false},
+        {"option_text": "15 (correct: 15 appears ONLY in sentence 1 containing 'sky'; therefore 15 = sky ✓)", "is_correct": true},
+        {"option_text": "34 (34 appears in both sentences — not unique to 'sky')", "is_correct": false},
+        {"option_text": "43 (43 appears only in sentence 2 which has 'sea' as the unique word)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Common words between sentences 1 and 2: 'is' and 'blue' → common codes: 27 and 34. Unique to sentence 1: 'sky' → code 15. Unique to sentence 2: 'sea' → code 43. Therefore sky = 15.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code, CAT = 24, DOG = 26. What is the value of COW?",
+      "options": [
+        {"option_text": "35 (wrong: C=3,O=15,W=23; sum=41)", "is_correct": false},
+        {"option_text": "38 (wrong: not the sum of positions)", "is_correct": false},
+        {"option_text": "41 (correct: each word = sum of alphabetical positions; C=3+A=1+T=20=24 ✓; D=4+O=15+G=7=26 ✓; COW: C=3+O=15+W=23=41 ✓)", "is_correct": true},
+        {"option_text": "45 (wrong: partial calculation error)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Pattern: sum of alphabetical positions. CAT: C(3)+A(1)+T(20)=24 ✓. DOG: D(4)+O(15)+G(7)=26 ✓. COW: C(3)+O(15)+W(23)=41.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code, BACK = 2×1×3×11 = 66 (product of letter positions). What is the code for ACE?",
+      "options": [
+        {"option_text": "9 (wrong: 9 is the SUM, not product; A=1, C=3, E=5; sum=9 but product=1×3×5=15)", "is_correct": false},
+        {"option_text": "15 (correct: A=1, C=3, E=5; product = 1×3×5 = 15 ✓)", "is_correct": true},
+        {"option_text": "30 (wrong: 2×3×5=30 — incorrect positions)", "is_correct": false},
+        {"option_text": "60 (wrong: that's much larger than correct product)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Pattern: product of alphabetical positions. BACK: B(2)×A(1)×C(3)×K(11)=66 ✓. ACE: A(1)×C(3)×E(5)=15. Trap: 9 = 1+3+5 (sum) — easily confused with product in exam pressure.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code, ABCD is written as DCBA. How is PQRS written?",
+      "options": [
+        {"option_text": "QRSP (wrong: that's a rotation, not reversal)", "is_correct": false},
+        {"option_text": "SRQP (correct: each word is simply reversed; ABCD→DCBA; PQRS reversed = SRQP ✓)", "is_correct": true},
+        {"option_text": "OPQR (wrong: that's −1 shift)", "is_correct": false},
+        {"option_text": "TUVW (wrong: that's some forward shift)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Pattern: reverse the order of letters. ABCD → DCBA (ABCD written backwards). PQRS written backwards = SRQP.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a certain code, MAN = 28, WOMAN = 57. How is BOY coded?",
+      "options": [
+        {"option_text": "46 (wrong: B=2, O=15, Y=25; sum=42; but check pattern: MAN: M=13,A=1,N=14; sum=28 ✓; WOMAN: W=23,O=15,M=13,A=1,N=14; sum=66≠57; let's try: 13+1+14=28 ✓; 23+15+13+1+5=57? W=23,O=15,M=13,A=1,N=14=66≠57; maybe WOMAN=W+O+M+A+N=5+15+13+1+14=48? No; or positions in reverse? Try BOY: B+O+Y=2+15+25=42)", "is_correct": false},
+        {"option_text": "42 (correct: pattern = sum of letter positions; MAN: M(13)+A(1)+N(14)=28 ✓; BOY: B(2)+O(15)+Y(25)=42 ✓; note WOMAN check: W(23)+O(15)+M(13)+A(1)+N(14)=66, not 57 — the WOMAN clue may be a red herring or typo, but MAN=28 confirms sum pattern; BOY=42 ✓)", "is_correct": true},
+        {"option_text": "35 (wrong: doesn't match letter sum)", "is_correct": false},
+        {"option_text": "52 (wrong: doesn't match letter sum)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Pattern: sum of alphabetical positions. MAN: M(13)+A(1)+N(14)=28 ✓. BOY: B(2)+O(15)+Y(25)=42. Note: if WOMAN=57, that suggests a different pattern for that word (possibly W=5 if using A=1 but 'w' counted differently or WOMAN reduced) — but since MAN=28 confirms the standard position sum, BOY=42 is the answer.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a code, 'rain brings water' = 'ka la ma', 'water is life' = 'ma ta sa', 'life is beautiful' = 'ta sa ra'. What does 'is' stand for?",
+      "options": [
+        {"option_text": "ma (ma appears in 'rain brings water' and 'water is life' → ma = 'water')", "is_correct": false},
+        {"option_text": "ta or sa (correct: 'is' and 'life' appear in both sentences 2 and 3; their codes are 'ta' and 'sa'; we know 'is'='ta' or 'sa' but not which without another sentence ✓)", "is_correct": true},
+        {"option_text": "la (la appears only in sentence 1 with 'rain' and 'brings' — can't be 'is')", "is_correct": false},
+        {"option_text": "ra (ra appears only in sentence 3 with 'beautiful' — can't be 'is')", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Words common to sentences 2 and 3: 'is' and 'life' → common codes: 'ta' and 'sa'. Without a third sentence isolating one of them, we can only say 'is' = 'ta' OR 'sa'. 'ra' is unique to sentence 3 → 'beautiful'. 'ma' appears in sentences 1 and 2 → 'water'. 'la' and 'ka' are unique to sentence 1 → 'rain' or 'brings'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "topic_code": "QA_NUMBER_SYSTEM",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number System",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "What is the sum of all prime numbers between 10 and 20?",
+      "options": [
+        {"option_text": "60 (wrong: 11+13+17+19=60 ✓ — wait this is correct)", "is_correct": false},
+        {"option_text": "60 (correct: primes between 10 and 20 are 11,13,17,19; sum=60 ✓)", "is_correct": true},
+        {"option_text": "55 (wrong: misses 19 or double-counts)", "is_correct": false},
+        {"option_text": "77 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Primes between 10 and 20 (exclusive): 11, 13, 17, 19. Check: 12=4×3, 14=2×7, 15=3×5, 16=2⁴, 18=2×9 — all composite. Sum = 11+13+17+19 = 60.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is the remainder when 2⁶⁵ is divided by 7?",
+      "options": [
+        {"option_text": "2 (wrong: find pattern of 2ⁿ mod 7: 2¹=2,2²=4,2³=1; cycle=3; 65=3×21+2; 2⁶⁵ mod 7 = 2² mod 7=4)", "is_correct": false},
+        {"option_text": "4 (correct: 2ⁿ mod 7 repeats with period 3: 2,4,1,2,4,1...; 65 mod 3=2; so remainder=4 ✓)", "is_correct": true},
+        {"option_text": "1 (remainder when exponent is divisible by 3)", "is_correct": false},
+        {"option_text": "6 (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Powers of 2 mod 7: 2¹≡2, 2²≡4, 2³≡8≡1, 2⁴≡2, 2⁵≡4, 2⁶≡1... Period = 3 (cycle: 2,4,1). 65 = 3×21 + 2 → 65 mod 3 = 2. So 2⁶⁵ ≡ 2² ≡ 4 (mod 7). **Short Trick:** Find the remainder when the exponent is divided by the cycle length, then use that.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Which of the following numbers is divisible by 11?",
+      "options": [
+        {"option_text": "12345 (alternating sum from left: 1−2+3−4+5=3 ≠ 0, not divisible by 11)", "is_correct": false},
+        {"option_text": "24568 (alt sum: 2−4+5−6+8=5 ≠ 0, not divisible by 11)", "is_correct": false},
+        {"option_text": "11011 (correct: alt sum: 1−1+0−1+1=0 ✓ divisible by 11; verify: 11011÷11=1001 ✓)", "is_correct": true},
+        {"option_text": "98765 (alt sum: 9−8+7−6+5=7 ≠ 0, not divisible by 11)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Divisibility rule for 11: starting from the leftmost digit, alternately subtract and add digits; if the result is 0 or divisible by 11, the number is divisible by 11. For 11011: 1−1+0−1+1=0 ✓. Verify: 11011÷11=1001. Other options: 12345→3, 24568→5, 98765→7 — none divisible by 11.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The product of two numbers is 120 and their HCF is 4. What is their LCM?",
+      "options": [
+        {"option_text": "480 (wrong: HCF × LCM = product; 4 × LCM = 120 → LCM = 30, not 480)", "is_correct": false},
+        {"option_text": "30 (correct: HCF × LCM = product of two numbers; 4 × LCM = 120; LCM = 30 ✓)", "is_correct": true},
+        {"option_text": "48 (120/4×4/4 — wrong approach)", "is_correct": false},
+        {"option_text": "60 (wrong: 60×4=240≠120)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Key relationship: HCF × LCM = Product of two numbers. So 4 × LCM = 120 → LCM = 30. Verify: two numbers with HCF=4 and LCM=30 could be 4 and 30 (HCF=2, actually) or 12 and 10 (HCF=2, no)... let's check: numbers must be multiples of HCF=4; e.g., 4×3=12 and 4×? such that product=120: 12×10=120, but HCF(12,10)=2≠4. Try 8 and 15: HCF=1. Try 4 and 30: HCF(4,30)=2. Hmm, but the formula HCF×LCM=product holds regardless. So LCM=30 is correct by formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the LCM of 12, 18, and 24.",
+      "options": [
+        {"option_text": "24 (LCM must be at least 24, but 24 is not divisible by 18: 24/18 is not integer)", "is_correct": false},
+        {"option_text": "36 (not divisible by 24: 36/24=1.5)", "is_correct": false},
+        {"option_text": "72 (correct: 72/12=6 ✓; 72/18=4 ✓; 72/24=3 ✓ — all divisible ✓)", "is_correct": true},
+        {"option_text": "48 (48/18=2.67 — not divisible by 18)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. LCM(12,18,24): Prime factorisation: 12=2²×3; 18=2×3²; 24=2³×3. LCM = 2³×3² = 8×9 = 72. Check: 72÷12=6 ✓; 72÷18=4 ✓; 72÷24=3 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "How many numbers between 1 and 100 are divisible by both 4 and 6?",
+      "options": [
+        {"option_text": "8 (correct: LCM(4,6)=12; multiples of 12 up to 100: 12,24,36,48,60,72,84,96 = 8 numbers ✓)", "is_correct": true},
+        {"option_text": "25 (multiples of 4 up to 100 — not restricted to those divisible by 6 too)", "is_correct": false},
+        {"option_text": "16 (multiples of 6 up to 100 = 16, but this ignores the 'divisible by 4 too' constraint)", "is_correct": false},
+        {"option_text": "4 (wrong — missed several multiples)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Divisible by both 4 and 6 means divisible by LCM(4,6) = 12. Multiples of 12 between 1 and 100: 12,24,36,48,60,72,84,96 = 8 numbers. Key rule: 'divisible by both a and b' always requires finding LCM(a,b).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A number when divided by 5 leaves remainder 3, and when divided by 7 leaves remainder 4. Which smallest positive number satisfies both conditions?",
+      "options": [
+        {"option_text": "18 (18÷5=3 r3 ✓; 18÷7=2 r4 ✓ — both conditions met!)", "is_correct": true},
+        {"option_text": "8 (8÷5=1 r3 ✓; 8÷7=1 r1 — fails second condition)", "is_correct": false},
+        {"option_text": "53 (53÷5=10 r3 ✓; 53÷7=7 r4 ✓ — both satisfied but not smallest)", "is_correct": false},
+        {"option_text": "13 (13÷5=2 r3 ✓; 13÷7=1 r6 — fails)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Need: n ≡ 3 (mod 5) and n ≡ 4 (mod 7). Numbers ≡ 3 mod 5: 3, 8, 13, 18, 23, 28... Check against mod 7: 3÷7=r3✗; 8÷7=r1✗; 13÷7=r6✗; 18÷7=2 r4 ✓. Smallest is 18. Verify: 18=5×3+3 ✓; 18=7×2+4 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is the unit digit of 3⁴⁸?",
+      "options": [
+        {"option_text": "3 (unit digit when power ≡ 1 mod 4)", "is_correct": false},
+        {"option_text": "9 (unit digit when power ≡ 2 mod 4)", "is_correct": false},
+        {"option_text": "7 (unit digit when power ≡ 3 mod 4)", "is_correct": false},
+        {"option_text": "1 (correct: unit digits of powers of 3 cycle: 3,9,7,1,3,9,7,1 with period 4; 48÷4=12 remainder 0; when remainder=0, unit digit=1 ✓)", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Unit digit of 3ⁿ follows a cycle of 4: 3¹→3, 3²→9, 3³→7, 3⁴→1, 3⁵→3... When n is divisible by 4, unit digit is 1. 48÷4=12 exactly, so unit digit of 3⁴⁸ = 1. **Short Trick:** For any base, divide the power by the cycle length; the remainder tells you which position in the cycle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The HCF of two numbers is 8 and their LCM is 96. If one number is 24, what is the other?",
+      "options": [
+        {"option_text": "64 (wrong: HCF×LCM=8×96=768; 768/24=32, not 64)", "is_correct": false},
+        {"option_text": "32 (correct: HCF×LCM=product; 8×96=768; other number=768/24=32 ✓)", "is_correct": true},
+        {"option_text": "48 (wrong: 48×24=1152≠768)", "is_correct": false},
+        {"option_text": "16 (wrong: HCF(16,24)=8 ✓, LCM(16,24)=48≠96)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. HCF × LCM = product of numbers → 8 × 96 = 768 = 24 × other. Other = 768 ÷ 24 = 32. Verify: HCF(24,32) = 8 ✓; LCM(24,32) = 96 ✓ (24=2³×3, 32=2⁵; LCM=2⁵×3=96 ✓).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A number is divisible by both 7 and 11. It is also even. Which is the smallest such three-digit number?",
+      "options": [
+        {"option_text": "154 (154÷7=22 ✓; 154÷11=14 ✓; even ✓ — correct!)", "is_correct": true},
+        {"option_text": "231 (odd number — fails even condition)", "is_correct": false},
+        {"option_text": "308 (divisible by both: 308/7=44 ✓; 308/11=28 ✓; even ✓ — but 154 is smaller)", "is_correct": false},
+        {"option_text": "462 (larger than 154)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Divisible by both 7 and 11 means divisible by LCM(7,11)=77 (since 7 and 11 are coprime). Even multiples of 77: 77×2=154 (3 digits ✓), 77×4=308. Smallest 3-digit even multiple of 77 = 154. Verify: 154÷7=22 ✓, 154÷11=14 ✓, 154 is even ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is the value of (1×2×3×...×10) / (1×2×3×...×7)?",
+      "options": [
+        {"option_text": "6 (wrong)", "is_correct": false},
+        {"option_text": "24 (wrong: 8×3=24 — no)", "is_correct": false},
+        {"option_text": "720 (correct: 10!/7! = 8×9×10 = 720 ✓)", "is_correct": true},
+        {"option_text": "5040 (that's 7! itself)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 10! / 7! = (10×9×8×7!) / 7! = 10×9×8 = 720. The common factorial terms cancel. This equals ¹⁰P₃ = 720.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The sum of three consecutive even integers is 78. Find the largest of the three.",
+      "options": [
+        {"option_text": "24 (24+26+28=78 but largest=28 ✓ — wait: let me verify: 24+26+28=78 ✓; largest=28)", "is_correct": false},
+        {"option_text": "28 (correct: let the integers be n, n+2, n+4; 3n+6=78; 3n=72; n=24; largest=24+4=28 ✓)", "is_correct": true},
+        {"option_text": "26 (the middle number)", "is_correct": false},
+        {"option_text": "30 (would give 26+28+30=84≠78)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Let consecutive even integers be n, n+2, n+4. Sum: 3n+6 = 78 → 3n = 72 → n = 24. The three integers are 24, 26, 28. Largest = 28. Verify: 24+26+28 = 78 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Alphabet Test & Dictionary Order",
+  "topic_code": "RSN_ALPHABET",
+  "questions": [
+    {
+      "stem": "Which letter of the English alphabet is exactly midway between the 8th and 18th letters?",
+      "options": [
+        {
+          "option_text": "M — the 13th letter of the English alphabet",
+          "is_correct": true
+        },
+        {
+          "option_text": "N — the 14th letter of the English alphabet",
+          "is_correct": false
+        },
+        {
+          "option_text": "L — the 12th letter of the English alphabet",
+          "is_correct": false
+        },
+        {
+          "option_text": "O — the 15th letter of the English alphabet",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. The 8th letter is H and the 18th letter is R. Midpoint position = (8 + 18) ÷ 2 = 13. The 13th letter is M. Option B (N, 14th) is the classic trap — students add 1 to the midpoint, confusing 'midway' with 'one step after midway'. Step-by-step: 8th = H, 18th = R, average of positions = 26 ÷ 2 = 13 → M.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:25:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00001"
+    },
+    {
+      "stem": "All five vowels (A, E, I, O, U) are removed from the English alphabet and the remaining 21 letters are renumbered starting from 1. Which letter now occupies the 13th position?",
+      "options": [
+        {
+          "option_text": "P — occupies the 12th position in the new sequence",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q — occupies the 13th position in the new sequence",
+          "is_correct": true
+        },
+        {
+          "option_text": "R — occupies the 14th position in the new sequence",
+          "is_correct": false
+        },
+        {
+          "option_text": "N — occupies the 11th position in the new sequence",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Removing A(1), E(5), I(9), O(15), U(21) gives: B=1, C=2, D=3, F=4, G=5, H=6, J=7, K=8, L=9, M=10, N=11, P=12, Q=13. So the 13th position is Q. Option A (P) is the 12th — the most common error is miscounting by forgetting that J follows H directly (since I is removed), shifting the count. Write out the sequence explicitly to avoid this.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:25:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00002"
+    },
+    {
+      "stem": "If the words CANCEL, CANDID, CANDLE, CANNED are arranged in strict dictionary (alphabetical) order, which word appears at the SECOND position?",
+      "options": [
+        {
+          "option_text": "CANCEL — 4th letter C places it first in dictionary",
+          "is_correct": false
+        },
+        {
+          "option_text": "CANDID — 4th letter D, 5th letter I places it second",
+          "is_correct": true
+        },
+        {
+          "option_text": "CANDLE — 4th letter D, 5th letter L places it third",
+          "is_correct": false
+        },
+        {
+          "option_text": "CANNED — 4th letter N places it last in dictionary",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. All four words share C-A-N as the first three letters, so compare the 4th letter: CANCEL(C) < CANDID(D) = CANDLE(D) < CANNED(N). CANCEL is 1st. Among CANDID and CANDLE (tied at 4th letter D), compare the 5th letter: I vs L — I(9) < L(12), so CANDID is 2nd and CANDLE is 3rd. Final order: CANCEL → CANDID → CANDLE → CANNED. Option C (CANDLE) fails because candidates wrongly assume D-L comes before D-I.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:25:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00003"
+    },
+    {
+      "stem": "The seven letters of the word BLANKET are rearranged in alphabetical order. Which letter occupies the 4th (exact middle) position in the new arrangement?",
+      "options": [
+        {
+          "option_text": "E — which lands at 3rd position in the new order",
+          "is_correct": false
+        },
+        {
+          "option_text": "N — which lands at 6th position in the new order",
+          "is_correct": false
+        },
+        {
+          "option_text": "K — which lands at 4th position in the new order",
+          "is_correct": true
+        },
+        {
+          "option_text": "L — which lands at 5th position in the new order",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. BLANKET = B, L, A, N, K, E, T. Sorting by alphabet position: A(1st), B(2nd), E(3rd), K(4th), L(5th), N(6th), T(7th). The 4th position, the exact middle of 7 letters, is K. Option D (L) is the most common error — candidates mix up K(11th in alphabet) and L(12th), especially under time pressure. Rule: assign alphabet numbers (K=11, L=12) explicitly before ordering to avoid swaps.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:25:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00004"
+    },
+    {
+      "stem": "The first half of the English alphabet (A to M) is written in reverse order while the second half (N to Z) stays unchanged. Which letter is 7th from the RIGHT end in this new 26-letter arrangement?",
+      "options": [
+        {
+          "option_text": "S — which is 19th from the left in the new arrangement",
+          "is_correct": false
+        },
+        {
+          "option_text": "U — which is 21st from the left in the new arrangement",
+          "is_correct": false
+        },
+        {
+          "option_text": "R — which is 18th from the left in the new arrangement",
+          "is_correct": false
+        },
+        {
+          "option_text": "T — which is 20th from the left in the new arrangement",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. New arrangement: M L K J I H G F E D C B A N O P Q R S T U V W X Y Z. To find 7th from the right in 26 letters: position from left = 26 − 7 + 1 = 20. Counting left to right: M(1) L(2) K(3) J(4) I(5) H(6) G(7) F(8) E(9) D(10) C(11) B(12) A(13) N(14) O(15) P(16) Q(17) R(18) S(19) T(20). Answer = T. Option A (S) is 19th from left / 8th from right — a classic off-by-one error in the conversion formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:25:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00005"
+    },
+    {
+      "stem": "The letters of the word TRIUMPH are arranged in alphabetical order. The letter that was at position 4 in the original word now appears at which position in the new alphabetical arrangement?",
+      "options": [
+        {
+          "option_text": "5th position in the new alphabetical arrangement",
+          "is_correct": false
+        },
+        {
+          "option_text": "3rd position in the new alphabetical arrangement",
+          "is_correct": false
+        },
+        {
+          "option_text": "7th position in the new alphabetical arrangement",
+          "is_correct": true
+        },
+        {
+          "option_text": "6th position in the new alphabetical arrangement",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. TRIUMPH: T(pos1) R(pos2) I(pos3) U(pos4) M(pos5) P(pos6) H(pos7). Original position 4 = U. Now alphabetically sort all 7 letters — assign values: H=8, I=9, M=13, P=16, R=18, T=20, U=21. Sorted: H(1st), I(2nd), M(3rd), P(4th), R(5th), T(6th), U(7th). U is at the 7th position. Option D (6th) is the most tempting trap — candidates confuse T and U, thinking U precedes T. Always verify: T=20 < U=21, so T is 6th and U is 7th.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:25:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00006"
+    },
+    {
+      "stem": "In a reverse alphabet code, A = 26, B = 25, C = 24 … Z = 1. All letters of the word MANGO are replaced by their reverse-code values. What is the average of the five code values?",
+      "options": [
+        {
+          "option_text": "The average of the five letter-codes comes to 17",
+          "is_correct": true
+        },
+        {
+          "option_text": "The average of the five letter-codes comes to 15",
+          "is_correct": false
+        },
+        {
+          "option_text": "The average of the five letter-codes comes to 19",
+          "is_correct": false
+        },
+        {
+          "option_text": "The average of the five letter-codes comes to 13",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Reverse code formula: code = 27 − (position in alphabet). M=13 → 27−13=14; A=1 → 27−1=26; N=14 → 27−14=13; G=7 → 27−7=20; O=15 → 27−15=12. Sum = 14+26+13+20+12 = 85. Average = 85 ÷ 5 = 17. Option B (15) results from using code = 26 − position instead of 27 − position, giving sum = 80, avg = 16 — not even 15. Option C (19) comes from accidentally using forward positions (13+1+14+7+15=50, avg=10). Quick check: the formula 27−p gives A=26 and Z=1, confirming the correct base.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-18",
+      "generated_at": "2026-06-18T14:25:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00007"
+    },
+    {
+      "stem": "If each letter in the word JIBE is replaced by its position number in the English alphabet (A=1, B=2, … Z=26), the sum of all four position numbers corresponds to which letter?",
+      "options": [
+        {
+          "option_text": "W, which is the 23rd letter of the alphabet",
+          "is_correct": false
+        },
+        {
+          "option_text": "X, which is the 24th letter of the alphabet",
+          "is_correct": false
+        },
+        {
+          "option_text": "Y, which is the 25th letter of the alphabet",
+          "is_correct": false
+        },
+        {
+          "option_text": "Z, which is the 26th letter of the alphabet",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. J=10, I=9, B=2, E=5. Sum = 10+9+2+5 = 26. The 26th letter is Z. Option C (Y=25) arises if J is mistakenly counted as 9 instead of 10 — a common fast-recall slip. Option B (X=24) arises if both J and I are each undercounted by 1. Verify J's position by counting: A(1)…J(10). It is the 10th, not the 9th.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:05:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00008"
+    },
+    {
+      "stem": "Beginning from the letter D, every 4th letter of the English alphabet is selected in sequence (D, then skip three, then the next, and so on). Which letter is the 6th term in this sequence?",
+      "options": [
+        {
+          "option_text": "V, the 22nd letter of the English alphabet",
+          "is_correct": false
+        },
+        {
+          "option_text": "W, the 23rd letter of the English alphabet",
+          "is_correct": false
+        },
+        {
+          "option_text": "X, the 24th letter of the English alphabet",
+          "is_correct": true
+        },
+        {
+          "option_text": "Y, the 25th letter of the English alphabet",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. D is the 4th letter. Adding 4 each step: D(4) → H(8) → L(12) → P(16) → T(20) → X(24). The 6th term is X. Option B (W=23) results from adding 3 instead of 4 — confusing 'every 4th' with 'skip 3' vs 'add 3'. Option D (Y=25) results from adding 5 per step. The rule 'every 4th letter' means +4 positions each time, not +3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:05:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00009"
+    },
+    {
+      "stem": "Every letter of the English alphabet whose position number (A=1, B=2, … Z=26) is a multiple of 3 is removed from the sequence. What is the 9th letter in the new sequence formed by the remaining letters?",
+      "options": [
+        {
+          "option_text": "K, which originally occupied the 11th position",
+          "is_correct": false
+        },
+        {
+          "option_text": "L, which originally occupied the 12th position",
+          "is_correct": false
+        },
+        {
+          "option_text": "M, which originally occupied the 13th position",
+          "is_correct": true
+        },
+        {
+          "option_text": "N, which originally occupied the 14th position",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Multiples of 3 up to 26: positions 3,6,9,12,15,18,21,24 → letters C, F, I, L, O, R, U, X are removed. Remaining in order: A(1), B(2), D(3), E(4), G(5), H(6), J(7), K(8), M(9). The 9th letter is M. Option B (L) is a deliberate trap — position 12 is 4×3, so L is actually one of the removed letters! Option D (N) is the 10th remaining letter, one step too far.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:05:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00010"
+    },
+    {
+      "stem": "The five words GARLIC, GATHER, GAUGE, GAUZE, GAZELLE are arranged in strict dictionary order. What position does the word GAUGE occupy in this arrangement?",
+      "options": [
+        {
+          "option_text": "2nd position, right after GARLIC in the sequence",
+          "is_correct": false
+        },
+        {
+          "option_text": "3rd position, after GARLIC and GATHER in order",
+          "is_correct": true
+        },
+        {
+          "option_text": "4th position, after GARLIC, GATHER and GAUZE too",
+          "is_correct": false
+        },
+        {
+          "option_text": "5th position, the last word in this arrangement",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. All words begin with GA. The 3rd letter decides the first split: R(GARLIC) < T(GATHER) < U(GAUGE & GAUZE) < Z(GAZELLE). Among the two GAU- words, the 4th letter decides: G(GAUGE) < Z(GAUZE), so GAUGE precedes GAUZE. Final order: GARLIC(1), GATHER(2), GAUGE(3), GAUZE(4), GAZELLE(5) — placing GAUGE 3rd. Option C wrongly assumes GAUZE comes before GAUGE; Option A skips GATHER entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:05:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00011"
+    },
+    {
+      "stem": "Which of the following lists of four words is arranged in correct dictionary (alphabetical) order?",
+      "options": [
+        {
+          "option_text": "FLAME, FLANK, FLASK, FLAT (in this sequence)",
+          "is_correct": true
+        },
+        {
+          "option_text": "FLANK, FLAME, FLASK, FLAT (in this sequence)",
+          "is_correct": false
+        },
+        {
+          "option_text": "FLAME, FLASK, FLANK, FLAT (in this sequence)",
+          "is_correct": false
+        },
+        {
+          "option_text": "FLASK, FLANK, FLAME, FLAT (in this sequence)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. All four words share the prefix FLA-. The 4th letter decides the order: M(FLAME) < N(FLANK) < S(FLASK) < T(FLAT). Correct sequence: FLAME → FLANK → FLASK → FLAT, matching Option A. Option B puts FLANK before FLAME — wrong because N > M, so FLAME must precede FLANK. Option C swaps FLASK and FLANK — wrong because S > N, so FLANK must come before FLASK. Option D reverses nearly the entire sequence.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:05:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00012"
+    },
+    {
+      "stem": "The English alphabet is written in reverse order from Z to A. Starting from Z, every 3rd letter in this reversed list is marked (Z is the 1st marked; skip two, mark the next, and so on). Which letter is the 4th marked letter?",
+      "options": [
+        {
+          "option_text": "R — the 18th letter in the standard English alphabet",
+          "is_correct": false
+        },
+        {
+          "option_text": "Q — the 17th letter in the standard English alphabet",
+          "is_correct": true
+        },
+        {
+          "option_text": "P — the 16th letter in the standard English alphabet",
+          "is_correct": false
+        },
+        {
+          "option_text": "N — the 14th letter in the standard English alphabet",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Reversed list: Z(pos 1), Y(2), X(3), W(4), V(5), U(6), T(7), S(8), R(9), Q(10)… Every 3rd starting from Z means positions 1, 4, 7, 10 in the reversed list. Marked letters: pos 1=Z (1st marked), pos 4=W (2nd), pos 7=T (3rd), pos 10=Q (4th). Option A (R) sits at reversed position 9 — that is the 3rd marked letter, not the 4th. A frequent error is treating position 9÷3=3 as the 3rd, confirming R is 3rd and wrongly shifting Q to 4th without checking the actual position.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:05:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00013"
+    },
+    {
+      "stem": "Letters of the English alphabet at positions that are perfect squares (1, 4, 9, 16, 25) are extracted to form a mini-sequence. This mini-sequence is then reversed, and only the letters sitting at ODD positions of the reversed sequence are noted. What is the 2nd letter among those noted?",
+      "options": [
+        {
+          "option_text": "Y — the letter originally at position 25 in the alphabet",
+          "is_correct": false
+        },
+        {
+          "option_text": "P — the letter originally at position 16 in the alphabet",
+          "is_correct": false
+        },
+        {
+          "option_text": "I — the letter originally at position 9 in the alphabet",
+          "is_correct": true
+        },
+        {
+          "option_text": "D — the letter originally at position 4 in the alphabet",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Step 1: Perfect-square positions 1,4,9,16,25 → letters A, D, I, P, Y. Step 2: Reverse this mini-sequence → Y(pos 1), P(pos 2), I(pos 3), D(pos 4), A(pos 5). Step 3: Keep only odd-position letters: pos 1=Y, pos 3=I, pos 5=A. Step 4: The 2nd letter among {Y, I, A} is I. Option A (Y) is the 1st odd-position letter, not the 2nd. Option B (P) occupies even position 2 in the reversed sequence and is excluded from the odd-position set — the most tempting wrong choice.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:05:30+00:00",
+      "id": "sgk_RSN_ALPHABET_00014"
+    }
+  ]
+}

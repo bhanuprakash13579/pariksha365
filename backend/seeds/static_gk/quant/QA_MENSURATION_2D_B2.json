@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_MENSURATION_2D",
+  "subject": "Quantitative Aptitude",
+  "topic": "Mensuration 2D — Area and Perimeter",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "The length and breadth of a rectangle are in ratio 3:2. If the perimeter is 80 cm, find the area.",
+      "options": [
+        {"option_text": "384 cm² (correct: 2(3x+2x)=80; 5x=40; x=8; L=24,B=16; area=24×16=384 cm² ✓)", "is_correct": true},
+        {"option_text": "300 cm² (wrong dimensions used)", "is_correct": false},
+        {"option_text": "320 cm² (wrong: 20×16=320, uses wrong L)", "is_correct": false},
+        {"option_text": "400 cm² (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Let L=3x, B=2x. Perimeter = 2(L+B) = 2(5x) = 10x = 80 → x = 8. L = 24 cm, B = 16 cm. Area = 24×16 = 384 cm².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The area of a circle is 154 cm². What is its circumference? (Use π = 22/7)",
+      "options": [
+        {"option_text": "44 cm (correct: πr²=154; r²=154×7/22=49; r=7; circumference=2πr=2×22/7×7=44 cm ✓)", "is_correct": true},
+        {"option_text": "22 cm (half the circumference — wrong)", "is_correct": false},
+        {"option_text": "88 cm (diameter × π = 14×22/7=44, not 88)", "is_correct": false},
+        {"option_text": "28 cm (just the diameter)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. πr² = 154. r² = 154 × 7/22 = 7 × 7 = 49. r = 7 cm. Circumference = 2πr = 2 × 22/7 × 7 = 44 cm. **Short Trick:** When π=22/7, area=154 → r=7 is a standard benchmark. Memorise: r=7 ↔ area=154, circumference=44.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A triangle has base 18 cm and height 12 cm. What is its area?",
+      "options": [
+        {"option_text": "216 cm² (base × height without halving)", "is_correct": false},
+        {"option_text": "108 cm² (correct: area = ½ × base × height = ½ × 18 × 12 = 108 cm² ✓)", "is_correct": true},
+        {"option_text": "60 cm² (wrong: 18+12+30/2 — using perimeter approach)", "is_correct": false},
+        {"option_text": "144 cm² (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Area of triangle = ½ × base × height = ½ × 18 × 12 = 9 × 12 = 108 cm².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If the side of a square is increased by 20%, by what percentage does its area increase?",
+      "options": [
+        {"option_text": "20% (area doesn't increase by the same % as side)", "is_correct": false},
+        {"option_text": "40% (linear thinking: 2×20%=40% — wrong; area scales as side²)", "is_correct": false},
+        {"option_text": "44% (correct: new area = (1.2s)² = 1.44s²; increase = 44% ✓)", "is_correct": true},
+        {"option_text": "24% (wrong)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Side increases by 20% → new side = 1.2s. New area = (1.2s)² = 1.44s². Area increases by 44%. **Short Trick:** When linear dimension increases by x%, area increases by (2x + x²/100)% = 2×20 + 400/100 = 40+4 = 44%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A parallelogram has base 14 cm and height 9 cm. What is its area?",
+      "options": [
+        {"option_text": "63 cm² (half of 14×9=63 — treating it as a triangle)", "is_correct": false},
+        {"option_text": "126 cm² (correct: area of parallelogram = base × height = 14 × 9 = 126 cm² ✓)", "is_correct": true},
+        {"option_text": "46 cm² (perimeter: 2×(14+9)=46 — confused with area)", "is_correct": false},
+        {"option_text": "81 cm² (9² = 81 — only height squared)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Area of parallelogram = base × height = 14 × 9 = 126 cm². Unlike a triangle, there is NO ½ factor for a parallelogram. A parallelogram can be rearranged into a rectangle with the same base and height.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "An equilateral triangle has side 6 cm. What is its area?",
+      "options": [
+        {"option_text": "18 cm² (wrong: ½×6×6=18 — treating as right triangle)", "is_correct": false},
+        {"option_text": "9√3 cm² (correct: area = (√3/4)×s² = (√3/4)×36 = 9√3 cm² ✓)", "is_correct": true},
+        {"option_text": "6√3 cm² (wrong: height=3√3; area=½×6×3√3=9√3, not 6√3)", "is_correct": false},
+        {"option_text": "36 cm² (s² without formula — wrong)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Area of equilateral triangle = (√3/4)s² = (√3/4)×36 = 9√3 cm². Height of equilateral triangle with side s = s√3/2 = 3√3. Verify: ½×6×3√3 = 9√3 ✓. Memorise: equilateral triangle with side a → area = (√3/4)a².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A room is 8 m long and 5 m wide. It has a door of 2 m × 1 m and two windows each of 1.5 m × 1 m. If the walls are 3 m high, what is the area to be painted (four walls only, excluding ceiling)?",
+      "options": [
+        {"option_text": "73 m² (perimeter=2(8+5)=26; wall area=26×3=78; subtract door=2; subtract 2 windows=3; 78−2−3=73 m² ✓)", "is_correct": true},
+        {"option_text": "78 m² (total wall area without subtracting door and windows)", "is_correct": false},
+        {"option_text": "75 m² (only subtracted door, forgot windows)", "is_correct": false},
+        {"option_text": "70 m² (over-subtracted)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Perimeter of room = 2(8+5) = 26 m. Total wall area (4 walls) = 26×3 = 78 m². Deductions: Door = 2×1 = 2 m². Two windows = 2×(1.5×1) = 3 m². Net area = 78−2−3 = 73 m².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "The radius of a circle is doubled. By what factor does its area increase?",
+      "options": [
+        {"option_text": "2 (area doubles — wrong: area ∝ r²)", "is_correct": false},
+        {"option_text": "4 (correct: new area = π(2r)² = 4πr² = 4 × original area ✓)", "is_correct": true},
+        {"option_text": "8 (cube of 2 — applies to volume of sphere)", "is_correct": false},
+        {"option_text": "π (wrong: π is already factored into the formula)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Area = πr². When radius doubles to 2r: new area = π(2r)² = 4πr². Area increases by a factor of 4. General rule: area scales as square of linear dimension. If radius increases by factor k, area increases by k².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A trapezium has parallel sides of 13 cm and 7 cm, and height 8 cm. Find its area.",
+      "options": [
+        {"option_text": "80 cm² (correct: area = ½×(sum of parallel sides)×height = ½×(13+7)×8 = ½×20×8 = 80 cm² ✓)", "is_correct": true},
+        {"option_text": "160 cm² (forgetting the ½ factor)", "is_correct": false},
+        {"option_text": "104 cm² (13×8=104 — only using one parallel side)", "is_correct": false},
+        {"option_text": "56 cm² (7×8=56 — only using one parallel side)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Area of trapezium = ½ × (a+b) × h where a,b = parallel sides and h = height. = ½ × (13+7) × 8 = ½ × 20 × 8 = 80 cm². Memorise: trapezium = average of parallel sides × height.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A wire of length 44 cm is bent into a circle. What is the area of the circle? (Use π = 22/7)",
+      "options": [
+        {"option_text": "154 cm² (correct: 2πr=44; r=44×7/(2×22)=7; area=πr²=22/7×49=154 cm² ✓)", "is_correct": true},
+        {"option_text": "308 cm² (double the correct answer)", "is_correct": false},
+        {"option_text": "44 cm² (confusing perimeter with area)", "is_correct": false},
+        {"option_text": "77 cm² (wrong: half of 154)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Circumference = 2πr = 44. r = 44/(2π) = 44×7/(2×22) = 308/44 = 7 cm. Area = πr² = (22/7)×49 = 22×7 = 154 cm². **Short Trick:** Circumference=44 with π=22/7 → r=7 (standard benchmark). Area=154 cm².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

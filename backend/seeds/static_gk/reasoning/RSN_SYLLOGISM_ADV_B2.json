@@ -1,0 +1,178 @@
+{
+  "topic_code": "RSN_SYLLOGISM_ADV",
+  "subject": "Reasoning",
+  "topic": "Syllogism — Advanced Patterns",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Statements: Some A are B. All B are C.\nConclusions: I. Some A are C. II. All C are A.",
+      "options": [
+        {"option_text": "Only I follows (correct: some A=B, all B=C → some A are C ✓; but ALL C can't be A — only B⊆C, not all C ✓)", "is_correct": true},
+        {"option_text": "Only II follows (wrong: II is too strong — only some A are C)", "is_correct": false},
+        {"option_text": "Both I and II follow (wrong: II doesn't follow — all C are A would require A⊇C)", "is_correct": false},
+        {"option_text": "Neither follows (wrong: I definitely follows)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Some A → B (partial link). All B ⊆ C. Therefore: those 'some A' that are B are also C → some A are C (I ✓). Conclusion II 'All C are A' would require all C to come from A — but C includes B plus possibly more; B is a subset of C, and only SOME A are B. II ✗. Only I follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: No M is N. All N are O.\nConclusions: I. No M is O. II. Some O are not M.",
+      "options": [
+        {"option_text": "Only I follows (wrong: I can't be concluded — just because M and N are separate doesn't mean M and O are separate; O includes N and possibly more)", "is_correct": false},
+        {"option_text": "Only II follows (correct: no M is N; all N are O → N ⊆ O; since N≠M, those N (which are O) are not M → some O are not M ✓; I cannot be concluded because O might overlap with M elsewhere)", "is_correct": true},
+        {"option_text": "Both I and II follow (wrong: I doesn't follow definitively)", "is_correct": false},
+        {"option_text": "Neither follows (wrong: II follows)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. No M is N (M and N are mutually exclusive). All N ⊆ O. The N elements are in O and are NOT M → some O (the N elements) are not M (II ✓). Conclusion I: No M is O — this would require M and O to be completely separate. But O might contain elements outside of N, which could overlap with M. I ✗. Only II follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All dogs are animals. All wolves are dogs.\nConclusions: I. All wolves are animals. II. All animals are wolves.",
+      "options": [
+        {"option_text": "Only I follows (correct: wolves⊆dogs⊆animals → all wolves are animals ✓; but not all animals are wolves II ✗)", "is_correct": true},
+        {"option_text": "Only II follows (wrong: II is an illegal reversal)", "is_correct": false},
+        {"option_text": "Both I and II follow (wrong: II doesn't follow)", "is_correct": false},
+        {"option_text": "Neither follows (wrong: I clearly follows)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Chain: wolves ⊆ dogs ⊆ animals. Conclusion I: All wolves are animals — TRUE (subset-subset transitivity ✓). Conclusion II: All animals are wolves — FALSE (animals is a much larger category than wolves; illegal conversion of 'All A are B' to 'All B are A'). Only I follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: Some politicians are honest. No honest person is corrupt.\nConclusions: I. Some politicians are not corrupt. II. No politician is corrupt.",
+      "options": [
+        {"option_text": "Only I follows (correct: some politicians are honest; no honest person=corrupt → those 'some' politicians are not corrupt (I ✓); but other politicians not in the 'honest' set might still be corrupt → II ✗)", "is_correct": true},
+        {"option_text": "Only II follows (wrong: II is too strong — only those politicians who are honest are guaranteed not corrupt)", "is_correct": false},
+        {"option_text": "Both I and II follow (wrong: II doesn't follow)", "is_correct": false},
+        {"option_text": "Neither follows (wrong: I follows)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Some politicians are honest (subset). No honest person is corrupt. Those 'some honest politicians' cannot be corrupt → some politicians are not corrupt (I ✓). But there may be OTHER politicians who are NOT honest, and those could be corrupt or not — we don't know. 'No politician is corrupt' (II) is too strong. Only I follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All stones are hard. Some hard things are cold.\nConclusions: I. Some stones are cold. II. Some cold things are hard.",
+      "options": [
+        {"option_text": "Only I follows (wrong: I doesn't follow — 'some hard things are cold' might be the hard things that are NOT stones; II follows because 'some hard=cold'→'some cold=hard')", "is_correct": false},
+        {"option_text": "Only II follows (correct: II: 'some hard are cold' → by conversion 'some cold are hard' ✓; I: stones⊆hard, some hard=cold — the cold subset might not include any stones; I ✗)", "is_correct": true},
+        {"option_text": "Both I and II follow (wrong: I doesn't follow)", "is_correct": false},
+        {"option_text": "Neither follows (wrong: II follows by conversion of 'some' statement)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. All stones ⊆ hard. Some hard ∩ cold ≠ ∅. Conclusion I: 'Some stones are cold' — the hard-cold intersection might not include any stones (only hard-non-stone objects might be cold). I ✗. Conclusion II: 'Some cold things are hard' — if some hard things are cold, then those cold things are hard (conversion of 'some' statement is always valid). II ✓. KEY: Converting 'Some A are B' → 'Some B are A' is ALWAYS valid.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: No book is a pen. Some pens are watches.\nConclusions: I. Some watches are not books. II. No watch is a book.",
+      "options": [
+        {"option_text": "Only I follows (correct: some pens=watches; no book=pen → pens are not books; those 'some pens' that are watches are not books → some watches are not books (I ✓); but there could be watches that are also books → II ✗)", "is_correct": true},
+        {"option_text": "Only II follows (wrong: II is too strong)", "is_correct": false},
+        {"option_text": "Both I and II follow (wrong: II doesn't follow)", "is_correct": false},
+        {"option_text": "Neither follows (wrong: I follows)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. No book is a pen (B∩P = ∅). Some pens are watches (P∩W ≠ ∅). Those pens that are watches are NOT books (since no book is a pen, and these are pens). So some watches (the pen-watches) are not books → I ✓. For II 'No watch is a book': watches might include things that are also books (watches not from the pen category). II ✗. Only I follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All circles are squares. All squares are triangles.\nConclusions: I. All circles are triangles. II. At least some triangles are circles.",
+      "options": [
+        {"option_text": "Only I follows (wrong: if I is true, then II also follows because circles are a subset of triangles → some triangles = circles)", "is_correct": false},
+        {"option_text": "Only II follows (wrong: I also follows by transitivity)", "is_correct": false},
+        {"option_text": "Both I and II follow (correct: circles⊆squares⊆triangles → all circles are triangles (I ✓); since circles⊆triangles, 'some triangles are circles' (II ✓))", "is_correct": true},
+        {"option_text": "Neither follows (wrong: both follow from the chain)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Chain: circles ⊆ squares ⊆ triangles. I: All circles are triangles — TRUE (transitive chain ✓). II: Some triangles are circles — TRUE (since all circles are a subset of triangles, at least those circles are triangles, making 'some triangles = circles' valid ✓). Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: Some cups are bowls. Some bowls are plates.\nConclusions: I. Some cups are plates. II. No cup is a plate.",
+      "options": [
+        {"option_text": "Only I follows (wrong: I doesn't necessarily follow — 'some+some' gives no definite conclusion; neither I nor II can be concluded)", "is_correct": false},
+        {"option_text": "Only II follows (wrong: II also can't be concluded definitively)", "is_correct": false},
+        {"option_text": "Neither I nor II follows (correct: 'Some+Some' → no definite conclusion; the cups in the first some may not be the same as bowls in the second some ✓)", "is_correct": true},
+        {"option_text": "Both I and II follow (wrong: they contradict each other; both can't follow)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. KEY RULE: Some A + Some B → No definite conclusion. The 'some cups' that are bowls may not be the 'some bowls' that are plates. So: cups might or might not be plates — we can't conclude either I or II. This is the classic 'Some + Some = Cannot conclude' rule. Neither follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All tables are chairs. No chair is a bed.\nConclusions: I. No table is a bed. II. Some beds are chairs.",
+      "options": [
+        {"option_text": "Only I follows (correct: tables⊆chairs; no chair=bed → no table=bed ✓; II 'some beds are chairs' — beds and chairs are disjoint (no chair=bed), so no bed is a chair → II ✗)", "is_correct": true},
+        {"option_text": "Only II follows (wrong: II contradicts the second statement)", "is_correct": false},
+        {"option_text": "Both I and II follow (wrong: II directly contradicts 'no chair is a bed')", "is_correct": false},
+        {"option_text": "Neither follows (wrong: I follows)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. tables ⊆ chairs (all tables are chairs). No chair is a bed (chairs ∩ beds = ∅). Since tables ⊆ chairs and chairs ∩ beds = ∅, it follows that tables ∩ beds = ∅ → No table is a bed (I ✓). Conclusion II 'some beds are chairs' directly contradicts 'no chair is a bed' — II ✗. Only I follows.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All trains are fast. Some fast things are buses.\nConclusion: Some buses are fast.",
+      "options": [
+        {"option_text": "The conclusion does NOT follow (wrong: the conclusion directly follows from 'some fast things are buses' by conversion)", "is_correct": false},
+        {"option_text": "The conclusion follows (correct: 'some fast things are buses' → by conversion 'some buses are fast' ✓)", "is_correct": true},
+        {"option_text": "The conclusion cannot be determined (wrong: it clearly follows by simple conversion)", "is_correct": false},
+        {"option_text": "Only partially follows (wrong: it fully and definitively follows)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 'Some fast things are buses' directly converts to 'Some buses are fast' — this is the simple conversion of a 'Some' statement: 'Some A are B' → 'Some B are A' (always valid). The conclusion 'Some buses are fast' FOLLOWS. The first statement (all trains are fast) is not even needed for this conclusion.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

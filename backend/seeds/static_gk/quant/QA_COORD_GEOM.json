@@ -1,0 +1,638 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Coordinate Geometry — distance, midpoint, slope, section formula",
+  "topic_code": "QA_COORD_GEOM",
+  "questions": [
+    {
+      "stem": "The centroid of a triangle with vertices A(2, 3), B(4, 7), and C(6, 5) has coordinates:",
+      "options": [
+        {
+          "option_text": "The centroid is at point (4, 5)",
+          "is_correct": true
+        },
+        {
+          "option_text": "The centroid is at point (3, 5)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The centroid is at point (4, 4)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The centroid is at point (12, 15)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. The centroid G of a triangle has coordinates equal to the average of all three vertices: G = ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3) = ((2+4+6)/3, (3+7+5)/3) = (12/3, 15/3) = (4, 5). Option D (12, 15) is the most common blunder — students add all three x-values (2+4+6=12) and y-values (3+7+5=15) but forget to divide by 3. Option B gets the x-average wrong (uses 9/3=3 instead of 12/3=4). Option C takes the wrong y-sum. **Short Trick:** Centroid = (Σx ÷ 3, Σy ÷ 3). Just add all three x-coordinates and divide by 3, then repeat for y. No elaborate formula — it is literally the arithmetic mean of the three vertices.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:38:42+00:00",
+      "id": "sgk_QA_COORD_GEOM_00001"
+    },
+    {
+      "stem": "What is the slope of the perpendicular bisector of the line segment joining P(2, 6) and Q(8, 2)?",
+      "options": [
+        {
+          "option_text": "The slope of perpendicular bisector is −2/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "The slope of perpendicular bisector is 2/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "The slope of perpendicular bisector is 3/2",
+          "is_correct": true
+        },
+        {
+          "option_text": "The slope of perpendicular bisector is −3/2",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Slope of PQ = (2−6)/(8−2) = −4/6 = −2/3. For two perpendicular lines the product of their slopes equals −1, so slope of the perpendicular bisector = −1 ÷ (−2/3) = 3/2. Option A (−2/3) is the slope of PQ itself — the single most common slip on this type. Option B (2/3) takes the reciprocal of PQ's slope but forgets to flip the sign. Option D (−3/2) negates the correct answer. Note: the bisector also passes through the midpoint (5, 4), but the question asks only for slope. **Short Trick:** Perpendicular slope rule — flip the fraction and change the sign. PQ slope = −2/3 → flip → −3/2 → change sign → +3/2. Two steps, no formula needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:38:42+00:00",
+      "id": "sgk_QA_COORD_GEOM_00002"
+    },
+    {
+      "stem": "Point P divides the line segment joining A(−1, 4) and B(5, 1) externally in the ratio 2:1. What are the coordinates of P?",
+      "options": [
+        {
+          "option_text": "Coordinates of point P are (3, 2)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Coordinates of point P are (11, −2)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Coordinates of point P are (7, −1)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Coordinates of point P are (−7, 7)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. External section formula with m=2, n=1: x = (m·x₂ − n·x₁)/(m−n) = (2×5 − 1×(−1))/(2−1) = (10+1)/1 = 11. y = (2×1 − 1×4)/(2−1) = (2−4)/1 = −2. So P = (11, −2). Option A (3, 2) is the result of mistakenly applying the INTERNAL formula: ((2×5+1×(−1))/3, (2×1+1×4)/3) = (9/3, 6/3) = (3, 2) — this is the single most frequent error on external-division questions. Option D (−7, 7) results from reversing the ratio to 1:2 in the external formula. Option C (7, −1) uses m−n=1 correctly in the denominator but makes arithmetic errors in the numerator. **Short Trick:** External formula = subtract (not add) in the numerator, and divide by (m−n) not (m+n). Memorise: 'External = Subtract, Internal = Add'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:38:42+00:00",
+      "id": "sgk_QA_COORD_GEOM_00003"
+    },
+    {
+      "stem": "Using the coordinate (shoelace) formula, find the area of the triangle with vertices A(1, 2), B(4, 6), and C(7, 3).",
+      "options": [
+        {
+          "option_text": "Area of triangle ABC is 7 sq units",
+          "is_correct": false
+        },
+        {
+          "option_text": "Area of triangle ABC is 10.5 sq units",
+          "is_correct": true
+        },
+        {
+          "option_text": "Area of triangle ABC is 21 sq units",
+          "is_correct": false
+        },
+        {
+          "option_text": "Area of triangle ABC is 14 sq units",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Area = (1/2)|x₁(y₂−y₃) + x₂(y₃−y₁) + x₃(y₁−y₂)| = (1/2)|1(6−3) + 4(3−2) + 7(2−6)| = (1/2)|3 + 4 − 28| = (1/2)(21) = 10.5 sq units. Option C (21) is the most common error — the ½ factor is dropped. Option D (14) arises from ignoring the negative sign inside the bracket: |3+4+7| = 14. Option A (7) = 21÷3, a wrong division. **Short Trick:** Shoelace method — write vertices in a column twice: (1,2), (4,6), (7,3), (1,2). Diagonal-right products: 1×6 + 4×3 + 7×2 = 6+12+14 = 32. Diagonal-left products: 2×4 + 6×7 + 3×1 = 8+42+3 = 53. Area = |32−53|/2 = 21/2 = 10.5. Fast and error-proof in the exam hall.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:38:42+00:00",
+      "id": "sgk_QA_COORD_GEOM_00004"
+    },
+    {
+      "stem": "The line joining A(k, 2) and B(3, 7) has a slope of 5/3. What is the value of k?",
+      "options": [
+        {
+          "option_text": "The value of k is 0, giving slope 5/3",
+          "is_correct": true
+        },
+        {
+          "option_text": "The value of k is 1, giving slope 5/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "The value of k is −3, giving slope 5/6",
+          "is_correct": false
+        },
+        {
+          "option_text": "The value of k is 6, giving slope −5/3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Slope = (y₂−y₁)/(x₂−x₁) = (7−2)/(3−k) = 5/(3−k). Set equal to 5/3: 5/(3−k) = 5/3 → cross-multiply → 15 = 5(3−k) → 15 = 15 − 5k → 5k = 0 → k = 0. Verify: slope = 5/(3−0) = 5/3 ✓. Option B (k=1) gives slope 5/(3−1) = 5/2 ≠ 5/3. Option C (k=−3) gives slope 5/(3+3) = 5/6 ≠ 5/3. Option D (k=6) gives slope 5/(3−6) = −5/3 — correct magnitude but wrong sign, a trap for students who ignore the negative. **Short Trick:** Since both the given slope and the numerator (7−2=5) carry the same numerator 5, the 5s cancel: 5/(3−k) = 5/3 → 3−k = 3 → k = 0. Spot the cancellation first and the algebra reduces to one line.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:38:42+00:00",
+      "id": "sgk_QA_COORD_GEOM_00005"
+    },
+    {
+      "stem": "Three consecutive vertices of parallelogram ABCD are A(1, 2), B(5, 6), and C(9, 4). What is the area of the parallelogram?",
+      "options": [
+        {
+          "option_text": "Area of parallelogram ABCD is 12 sq units",
+          "is_correct": false
+        },
+        {
+          "option_text": "Area of parallelogram ABCD is 24 sq units",
+          "is_correct": true
+        },
+        {
+          "option_text": "Area of parallelogram ABCD is 16 sq units",
+          "is_correct": false
+        },
+        {
+          "option_text": "Area of parallelogram ABCD is 48 sq units",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Step 1 — find D. Diagonals of a parallelogram bisect each other, so midpoint of AC = midpoint of BD. Midpoint of AC = ((1+9)/2, (2+4)/2) = (5, 3). If D = (d₁, d₂): (5+d₁)/2 = 5 → d₁ = 5; (6+d₂)/2 = 3 → d₂ = 0. So D = (5, 0). Step 2 — area = 2 × Area(△ABC). Area(△ABC) = (1/2)|1(6−4)+5(4−2)+9(2−6)| = (1/2)|2+10−36| = (1/2)(24) = 12. Parallelogram area = 2×12 = 24. Option A (12) is the area of △ABC alone — the factor-of-2 is the key trap. Option D (48) doubles once more unnecessarily. Option C (16) has no clean derivation and is a distraction for students who misapply base × height without finding D first. **Short Trick:** Use vectors AB⃗ = (4,4) and AD⃗ = (4,−2). Area = |4×(−2) − 4×4| = |−8−16| = 24. Faster than finding D and computing two triangle areas.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:38:42+00:00",
+      "id": "sgk_QA_COORD_GEOM_00006"
+    },
+    {
+      "stem": "The line through P(3, 1) and Q(−2, 6) meets the y-axis at A and the x-axis at B. Point R divides AB internally in the ratio 1:3. What are the coordinates of R?",
+      "options": [
+        {
+          "option_text": "The coordinates of point R are (3, 1)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coordinates of point R are (2, 2)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coordinates of point R are (0, 4)",
+          "is_correct": false
+        },
+        {
+          "option_text": "The coordinates of point R are (1, 3)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Step 1 — find the line. Slope = (6−1)/(−2−3) = 5/(−5) = −1. Equation through P(3,1): y−1 = −1(x−3) → y = −x+4. Step 2 — find intercepts. y-axis (A): x=0 → y=4, so A=(0, 4). x-axis (B): y=0 → x=4, so B=(4, 0). Step 3 — section formula (ratio 1:3). R = ((1×4+3×0)/(1+3), (1×0+3×4)/(1+3)) = (4/4, 12/4) = (1, 3). Option C (0, 4) is point A itself — confusing the y-intercept with R. Option B (2, 2) treats AB as divided at its midpoint (ratio 1:1 error). Option A (3, 1) is point P on the original line — a deliberate misdirection for students who stop at Step 1. **Short Trick:** At ratio 1:3, R is exactly ¼ of the way from A to B. x = 0 + ¼×(4−0) = 1; y = 4 + ¼×(0−4) = 4−1 = 3 → R = (1, 3). Reading 'internal 1:3' as '¼ from the first point' avoids the full formula.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:38:42+00:00",
+      "id": "sgk_QA_COORD_GEOM_00007"
+    },
+    {
+      "stem": "Point P divides the segment joining A(1, 3) and B(7, 9) internally in the ratio 1 : 2. What are the coordinates of P?",
+      "options": [
+        {
+          "option_text": "P = (5, 7), applying ratio as 2:1 instead of 1:2",
+          "is_correct": false
+        },
+        {
+          "option_text": "P = (3, 5), one-third of the way from A towards B",
+          "is_correct": true
+        },
+        {
+          "option_text": "P = (4, 6), treating both points as equal weights",
+          "is_correct": false
+        },
+        {
+          "option_text": "P = (3, 7), swapping A and B in the y-coordinate only",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Internal section formula: P = ((m·x₂+n·x₁)/(m+n), (m·y₂+n·y₁)/(m+n)) with m=1, n=2 gives x = (1×7+2×1)/3 = 9/3 = 3, y = (1×9+2×3)/3 = 15/3 = 5. Option A (5,7) swaps the ratio to 2:1 — the most common error: (2×7+1×1)/3=5, (2×9+1×3)/3=7. Option C (4,6) treats it as a midpoint (equal weights). Option D arises when students use m·y₁+n·y₂ instead of m·y₂+n·y₁, giving y=(1×3+2×9)/3=7. **Short Trick:** Ratio 1:2 means P is 1/3 of the way from A to B. x = 1+(1/3)(7−1) = 1+2 = 3; y = 3+(1/3)(9−3) = 3+2 = 5. No formula memorisation needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:50:36+00:00",
+      "id": "sgk_QA_COORD_GEOM_00008"
+    },
+    {
+      "stem": "In what ratio does the y-axis divide the line segment joining A(−4, 3) and B(8, 6)?",
+      "options": [
+        {
+          "option_text": "1 : 2 internally, dividing point lies at (0, 4)",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 : 1 internally, dividing point lies at (0, 5)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 2 externally, dividing point lies at (0, 2)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 3 internally, dividing point lies at (0, 3)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. For the y-axis, x=0. If ratio is m:n (internal), then (m·8+n·(−4))/(m+n) = 0 → 8m = 4n → m:n = 1:2. Point y = (1×6+2×3)/3 = 12/3 = 4, giving (0, 4). Option B reverses the ratio to 2:1; substituting gives x = (2×8+1×(−4))/3 = 12/3 = 4 ≠ 0, so the point doesn't lie on the y-axis. Option C (external 1:2) yields x = (1×8−2×(−4))/(1−2) = 16/(−1) = −16 ≠ 0. **Short Trick:** y-axis sets x=0 in section formula → m·x₂ = −n·x₁ → m:n = |x₁|:|x₂| = 4:8 = 1:2. Division is internal because x₁ and x₂ have opposite signs.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:50:36+00:00",
+      "id": "sgk_QA_COORD_GEOM_00009"
+    },
+    {
+      "stem": "What is the area of the quadrilateral with vertices A(1, 1), B(3, 4), C(7, 3), and D(5, 0), taken in order, using the shoelace formula?",
+      "options": [
+        {
+          "option_text": "7 sq units, area of only one triangle formed by a diagonal",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 sq units, rough estimate using a bounding rectangle",
+          "is_correct": false
+        },
+        {
+          "option_text": "14 sq units, exact result of the shoelace formula",
+          "is_correct": true
+        },
+        {
+          "option_text": "28 sq units, shoelace cross-sum without the ½ factor",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Shoelace: Area = ½|(x₁y₂−x₂y₁)+(x₂y₃−x₃y₂)+(x₃y₄−x₄y₃)+(x₄y₁−x₁y₄)| = ½|(1·4−3·1)+(3·3−7·4)+(7·0−5·3)+(5·1−1·0)| = ½|(4−3)+(9−28)+(0−15)+(5−0)| = ½|1−19−15+5| = ½×28 = 14 sq units. Option A (7) computes only one triangle formed by diagonal AC — that's half the area. Option D (28) forgets the ½ factor. Option B (12) is a rough bounding-box estimate, not a formula result. **Short Trick:** List vertices in order, write two columns (x then y), compute ↘ products minus ↗ products, sum, then halve. The ½ is non-negotiable — never skip it.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:50:36+00:00",
+      "id": "sgk_QA_COORD_GEOM_00010"
+    },
+    {
+      "stem": "A point on the x-axis is equidistant from P(3, 4) and Q(7, −2). What are the coordinates of that point?",
+      "options": [
+        {
+          "option_text": "(5, 0), taken as the average x-coordinate of P and Q",
+          "is_correct": false
+        },
+        {
+          "option_text": "(7/2, 0), found by equating squared distances to P and Q",
+          "is_correct": true
+        },
+        {
+          "option_text": "(11, 0), from equating distance ratios rather than values",
+          "is_correct": false
+        },
+        {
+          "option_text": "(−7/2, 0), from a sign error in the final linear equation",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let (a, 0) be the point. Equating squared distances: (a−3)²+16 = (a−7)²+4 → a²−6a+25 = a²−14a+53 → 8a = 28 → a = 7/2. Point is (7/2, 0). Option A (5, 0) is the average of x-coordinates — that's the midpoint of PQ projected onto the x-axis, which is a different concept. Option C (11, 0) equates distance ratios (AP/AQ = constant) rather than AP = AQ. Option D arises from moving 28 to the wrong side: 8a = −28 → a = −7/2. **Short Trick:** Always square both sides first to eliminate the radicals. The a² terms cancel automatically, leaving a linear equation in a — solved in two steps.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:50:36+00:00",
+      "id": "sgk_QA_COORD_GEOM_00011"
+    },
+    {
+      "stem": "For what value of p are the points P(p, 2), Q(3, 5), and R(7, 11) collinear?",
+      "options": [
+        {
+          "option_text": "p = 1, correct by setting the area of triangle PQR to zero",
+          "is_correct": true
+        },
+        {
+          "option_text": "p = 2, from an arithmetic slip in expanding the bracket",
+          "is_correct": false
+        },
+        {
+          "option_text": "p = −1, from a sign error in the area formula expansion",
+          "is_correct": false
+        },
+        {
+          "option_text": "p = 0, from incorrectly substituting p into slope PR",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. For collinearity, area = 0: ½|p(5−11)+3(11−2)+7(2−5)| = 0 → |−6p+27−21| = 0 → |−6p+6| = 0 → p = 1. Verify: slope PQ = (5−2)/(3−1) = 3/2; slope QR = (11−5)/(7−3) = 6/4 = 3/2 — equal, confirming collinearity. Option B (p=2): slope PQ = 3/(3−2) = 3 ≠ 3/2, so not collinear. Option C (p=−1) arises from writing −6p−6=0 instead of −6p+6=0 (sign flip when collecting constants). Option D (p=0): slope PR = (5−2)/(3−0) = 1 ≠ slope QR = 3/2, not collinear. **Short Trick:** Collinear ↔ Area = 0. Plug into the 3-point formula, set the linear bracket to zero, solve in one step — no slope comparisons needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:50:36+00:00",
+      "id": "sgk_QA_COORD_GEOM_00012"
+    },
+    {
+      "stem": "The circumcenter of the triangle with vertices A(1, 1), B(5, 1), and C(3, 5) lies at which of the following coordinates?",
+      "options": [
+        {
+          "option_text": "(3, 5/2), found by solving perpendicular bisectors of AB and BC",
+          "is_correct": true
+        },
+        {
+          "option_text": "(3, 7/3), centroid by averaging the three vertex coordinates",
+          "is_correct": false
+        },
+        {
+          "option_text": "(3, 1), treating the midpoint of horizontal base AB as the circumcenter",
+          "is_correct": false
+        },
+        {
+          "option_text": "(3, 3), arithmetic slip in the perpendicular bisector equations",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Since AB is horizontal (both y=1), its perpendicular bisector is the vertical line x=3. For BC: midpoint = (4, 3), slope BC = (5−1)/(3−5) = −2, so perpendicular slope = 1/2. Equation: y−3 = (1/2)(x−4). At x=3: y = 3−(1/2) = 5/2. Circumcenter = (3, 5/2). Verify: OA = OB = OC = √((3−1)²+(5/2−1)²) = √(4+9/4) = √(25/4) = 5/2. Option B (3, 7/3) is the centroid: ((1+5+3)/3, (1+1+5)/3) = (3, 7/3). Option C (3,1) is merely the midpoint of AB. Option D (3,3) comes from using the wrong intercept. **Short Trick:** Start with the horizontal or vertical side — its perpendicular bisector is trivial (x = const or y = const). This immediately fixes one coordinate of the circumcenter, leaving only a one-variable equation to solve.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:50:36+00:00",
+      "id": "sgk_QA_COORD_GEOM_00013"
+    },
+    {
+      "stem": "Line L passes through A(1, 5) with slope 3/4. A point P lies on L such that AP = 5 units. What are the two possible x-coordinates of P?",
+      "options": [
+        {
+          "option_text": "x = 5 or x = −3, using unit direction vector along slope 3/4",
+          "is_correct": true
+        },
+        {
+          "option_text": "x = 4 or x = −2, from taking (x−1)² = 16 as (x−1) = ±3",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 6 or x = −4, treating AP = 5 as purely horizontal distance",
+          "is_correct": false
+        },
+        {
+          "option_text": "x = 3 or x = −1, from incorrectly using slope value as distance",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Direction vector along slope 3/4 is (4, 3) with magnitude √(16+9) = 5 — a 3-4-5 Pythagorean triple. Unit vector = (4/5, 3/5). P = (1 ± 5·(4/5), 5 ± 5·(3/5)) = (1±4, 5±3) → (5, 8) or (−3, 2). So x = 5 or x = −3. Option C (6 or −4) treats AP=5 as a horizontal distance Δx=±5, ignoring the slope entirely. Option B (4 or −2) correctly reaches (x−1)²=16 but then takes ±3 instead of ±4 when square-rooting. Option D (3 or −1) confuses the slope ratio 3/4 with a displacement unit. **Short Trick:** When slope = p/q in lowest terms, the direction vector is (q, p). If AP exactly equals √(p²+q²), you have a Pythagorean triple — the x-step is ±q and y-step is ±p with no messy surds. Recognise the triple first, then substitute.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:50:36+00:00",
+      "id": "sgk_QA_COORD_GEOM_00014"
+    },
+    {
+      "stem": "What is the distance between points A(1, −2) and B(4, 2)?",
+      "options": [
+        {
+          "option_text": "3 units (difference in x-coordinates only)",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 units (applying distance formula correctly)",
+          "is_correct": true
+        },
+        {
+          "option_text": "√41 units (error: computing 3² + 4² without adjusting signs)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 units (difference in y-coordinates only)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. d = √((4−1)² + (2−(−2))²) = √(9 + 16) = √25 = 5 units. Option A (3 units) uses only |Δx| = 3; option D (4 units) uses only |Δy| = 2−(−2) = 4; option C (√41) wrongly computes √(3² + (2²+2²)) or similar sign confusion giving 41 under the root. **Short Trick:** Spot the 3-4-5 Pythagorean triple instantly — Δx = 3, Δy = 4 → d = 5, no calculator needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:50:57+00:00",
+      "id": "sgk_QA_COORD_GEOM_00015"
+    },
+    {
+      "stem": "What is the midpoint of the segment joining A(−3, 5) and B(7, −1)?",
+      "options": [
+        {
+          "option_text": "(5, −3) — computing (B − A)/2 instead of (A + B)/2",
+          "is_correct": false
+        },
+        {
+          "option_text": "(2, 2) — correctly averaging both x- and y-coordinates",
+          "is_correct": true
+        },
+        {
+          "option_text": "(4, 4) — summing coordinates correctly but forgetting to divide by 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "(2, 5) — taking A's y-coordinate as the midpoint y-value",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. M = ((−3+7)/2, (5+(−1))/2) = (4/2, 4/2) = (2, 2). Option A (5, −3) arises from (B−A)/2: x = (7−(−3))/2 = 5, y = (−1−5)/2 = −3 — subtracting instead of adding. Option C (4, 4) sums without the ÷2 step. Option D (2, 5) correctly averages x but carries A's y-coordinate through without change. **Short Trick:** Midpoint = coordinate-wise mean. Sanity check: each coordinate of M must lie strictly between the two endpoint values (−3 < 2 < 7 ✓; −1 < 2 < 5 ✓).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:50:57+00:00",
+      "id": "sgk_QA_COORD_GEOM_00016"
+    },
+    {
+      "stem": "In what ratio does the point P(2, −1) divide the segment joining A(−2, 3) and B(4, −3) internally?",
+      "options": [
+        {
+          "option_text": "1 : 2 internally (swapping m and n gives wrong point coordinates)",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 : 1 internally (section formula gives m : n = 2 : 1, verified)",
+          "is_correct": true
+        },
+        {
+          "option_text": "2 : 1 externally (applying external division formula by mistake)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 2 externally (both the ratio order and formula type are wrong)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Let ratio = m:n. Using x-coordinate: 2 = (4m − 2n)/(m+n) → 2m + 2n = 4m − 2n → 4n = 2m → m:n = 2:1. Verify with y-coordinate: (−3×2 + 3×1)/(2+1) = (−6+3)/3 = −1 ✓. Option A (1:2) swaps m and n; substituting gives point (0, 1) ≠ P(2, −1). Option C incorrectly applies the external division formula where no external division exists. **Short Trick:** Back-substitute m:n = 2:1 into x-formula: (4×2 − 2×1)/3 = 6/3 = 2 ✓ — quick one-step confirmation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:50:57+00:00",
+      "id": "sgk_QA_COORD_GEOM_00017"
+    },
+    {
+      "stem": "Lines L₁ and L₂ have slopes 2 and 1/2 respectively. What is the tangent of the acute angle between them?",
+      "options": [
+        {
+          "option_text": "tan θ = 3/4 (formula |m₁−m₂| ÷ |1+m₁m₂| gives (3/2) ÷ 2)",
+          "is_correct": true
+        },
+        {
+          "option_text": "tan θ = 3/2 (computing the numerator only, denominator ignored)",
+          "is_correct": false
+        },
+        {
+          "option_text": "tan θ = 4/3 (inverting numerator and denominator accidentally)",
+          "is_correct": false
+        },
+        {
+          "option_text": "tan θ = 1 (incorrectly assuming the lines form a 45° angle)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. tan θ = |m₁−m₂|/|1+m₁m₂| = |2 − 0.5|/|1 + 2×0.5| = 1.5/2 = 3/4. Step 1: numerator = |2 − ½| = 3/2. Step 2: denominator = |1 + (2)(½)| = |1+1| = 2. Step 3: (3/2) ÷ 2 = 3/4. Option B (3/2) stops after step 1. Option C (4/3) flips the fraction. Option D (1) confuses this with tan 45°, which requires m₁m₂ = 0 or m₁−m₂ = 1+m₁m₂. **Short Trick:** Always compute denominator first — if 1+m₁m₂ = 0, lines are perpendicular. Here 1+1 = 2 ≠ 0, so proceed: 1.5 ÷ 2 = 0.75 = 3/4.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:50:57+00:00",
+      "id": "sgk_QA_COORD_GEOM_00018"
+    },
+    {
+      "stem": "For what value of p are the points P(2, p), Q(5, 6), and R(8, 3) collinear?",
+      "options": [
+        {
+          "option_text": "p = 6 (assuming collinearity means P shares y-coordinate with Q)",
+          "is_correct": false
+        },
+        {
+          "option_text": "p = 3 (slope sign error: equating slope PQ to +1 instead of −1)",
+          "is_correct": false
+        },
+        {
+          "option_text": "p = 9 (setting triangle area to zero via the shoelace formula)",
+          "is_correct": true
+        },
+        {
+          "option_text": "p = 0 (incorrectly setting the sum of all y-coordinates to zero)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. For collinearity, area of △PQR = 0. Shoelace: (1/2)|2(6−3) + 5(3−p) + 8(p−6)| = 0 → |6 + 15 − 5p + 8p − 48| = 0 → |3p − 27| = 0 → p = 9. Option B (p=3) uses slope method but writes (6−p)/3 = +1 instead of slope QR = −1; correct gives (6−p)/3 = −1 → p = 9. Option A (p=6) is a naive misconception. Option D sets p+6+3 = 0 — a meaningless condition. **Short Trick:** Collect p terms directly: (8−5)p = −(6) − (15) + 48 = 27 → 3p = 27 → p = 9.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:50:57+00:00",
+      "id": "sgk_QA_COORD_GEOM_00019"
+    },
+    {
+      "stem": "Two vertices of a triangle are A(0, 0) and B(6, 0). The centroid is at G(3, 2). What is the area of the triangle in sq units?",
+      "options": [
+        {
+          "option_text": "6 sq units (using centroid's y-coordinate 2 as the triangle height)",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 sq units (height taken as 4, a midpoint confusion with vertex)",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 sq units (finding C = (3, 6) via centroid, then area formula)",
+          "is_correct": true
+        },
+        {
+          "option_text": "36 sq units (omitting the ½ factor in the area formula)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. From centroid formula: (0+6+xC)/3 = 3 → xC = 3; (0+0+yC)/3 = 2 → yC = 6. So C = (3, 6). Area = (1/2)|0(0−6) + 6(6−0) + 3(0−0)| = (1/2)|0 + 36 + 0| = 18 sq units. Option A (6) uses G's y-value (2) as height: ½×6×2 = 6 — centroid is NOT a vertex. Option B (12) guesses height = 4. Option D (36) forgets ½. **Short Trick:** A and B both lie on x-axis → base = 6, height = yC = 6. Area = ½ × 6 × 6 = 18. Recover C from centroid before computing, never use centroid as a vertex.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:50:57+00:00",
+      "id": "sgk_QA_COORD_GEOM_00020"
+    },
+    {
+      "stem": "Triangle ABC has vertices A(0, 0), B(6, 0), and C(0, 8). Where does the circumcenter of this triangle lie?",
+      "options": [
+        {
+          "option_text": "(2, 8/3) — centroid of the triangle, mistaken for circumcenter",
+          "is_correct": false
+        },
+        {
+          "option_text": "(3, 0) — midpoint of leg AB only, ignoring the vertical leg AC",
+          "is_correct": false
+        },
+        {
+          "option_text": "(3, 4) — correct: circumcenter = midpoint of hypotenuse BC",
+          "is_correct": true
+        },
+        {
+          "option_text": "(0, 4) — midpoint of leg AC only, ignoring the horizontal leg AB",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. AB lies along the x-axis and AC along the y-axis, so angle A = 90°. Key theorem: the circumcenter of a right triangle is the midpoint of its hypotenuse. Hypotenuse BC: midpoint = ((6+0)/2, (0+8)/2) = (3, 4). Option A (2, 8/3) is the centroid: ((0+6+0)/3, (0+0+8)/3). Options B and D are midpoints of the two legs — not the hypotenuse. **Short Trick:** Circumradius = hypotenuse/2 = (1/2)√(6²+8²) = (1/2)×10 = 5. Verify: distance from (3,4) to A(0,0) = √(9+16) = 5 ✓; to B(6,0) = √(9+16) = 5 ✓; to C(0,8) = √(9+16) = 5 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:50:57+00:00",
+      "id": "sgk_QA_COORD_GEOM_00021"
+    }
+  ]
+}

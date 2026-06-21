@@ -640,6 +640,846 @@
       "generator_tag": "auto-seed-2026-06-19",
       "generated_at": "2026-06-19T13:17:50+00:00",
       "id": "sgk_RSN_VENN_00021"
+    },
+    {
+      "stem": "Which Venn diagram correctly represents the relationship among 'Roses', 'Flowers', and 'Plants'?",
+      "options": [
+        {
+          "option_text": "Three separate non-overlapping circles with no shared regions",
+          "is_correct": false
+        },
+        {
+          "option_text": "Roses ⊂ Flowers ⊂ Plants (three concentric circles, innermost = Roses)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Roses and Flowers overlapping, both placed entirely outside Plants",
+          "is_correct": false
+        },
+        {
+          "option_text": "Flowers and Plants overlapping, Roses circle placed outside both",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Every Rose is a Flower, and every Flower is a Plant — forming a strict chain of subsets. The diagram must show three concentric circles: Plants (largest) ⊃ Flowers ⊃ Roses (smallest). Option A (disjoint circles) is wrong because Roses and Flowers share all members. Options C and D are wrong because Flowers are always fully inside Plants — partial overlap or separation is impossible. Rule: When A ⊂ B ⊂ C, draw fully nested concentric circles, not partially overlapping ones.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:00:52+00:00",
+      "id": "sgk_RSN_VENN_00022"
+    },
+    {
+      "stem": "In a class of 45 students, 28 play Cricket and 22 play Badminton. Every student plays at least one sport. How many students play both Cricket and Badminton?",
+      "options": [
+        {
+          "option_text": "3 students play both Cricket and Badminton sports",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 students play both Cricket and Badminton sports",
+          "is_correct": true
+        },
+        {
+          "option_text": "7 students play both Cricket and Badminton sports",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 students play both Cricket and Badminton sports",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. By inclusion-exclusion: A∪B = |A| + |B| − |A∩B|. So 45 = 28 + 22 − |A∩B|, giving |A∩B| = 50 − 45 = 5. Option C (7) is a common error where candidates compute 45−28 = 17 and 45−22 = 23, then mishandle the overlap. Option D (10) comes from averaging 28 and 22 and halving, ignoring the formula entirely. **Short Trick:** Both = (Cricket + Badminton) − Total = (28 + 22) − 45 = 50 − 45 = 5.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:00:52+00:00",
+      "id": "sgk_RSN_VENN_00023"
+    },
+    {
+      "stem": "In a group of 90 students, each studies at least one of Mathematics (M), Physics (P), and Biology (B). M = 55, P = 45, B = 40, M∩P = 15, M∩B = 12, P∩B = 28, M∩P∩B = 5. How many students study only Mathematics?",
+      "options": [
+        {
+          "option_text": "28 students study only Mathematics in the group",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 students study only Mathematics in the group",
+          "is_correct": false
+        },
+        {
+          "option_text": "33 students study only Mathematics in the group",
+          "is_correct": true
+        },
+        {
+          "option_text": "38 students study only Mathematics in the group",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Only M = |M| − |M∩P| − |M∩B| + |M∩P∩B| = 55 − 15 − 12 + 5 = 33. Adding back the triple intersection is essential because the region M∩P∩B was subtracted twice — once inside M∩P and once inside M∩B. Option A (28) is the most common error: forgetting the triple-add-back entirely: 55−15−12 = 28. Option B (30) results from mistakenly using 55−15−15+5 = 30 (confusing M∩B with M∩P). **Short Trick:** Only A = |A| − |A∩B| − |A∩C| + |A∩B∩C| = 55−15−12+5 = 33.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:00:52+00:00",
+      "id": "sgk_RSN_VENN_00024"
+    },
+    {
+      "stem": "Among 75 students who each studied at least one of History (H), Geography (G), or Civics (C): H = 40, G = 35, C = 30, H∩G = 14, H∩C = 10, G∩C = 11, H∩G∩C = 5. How many students studied exactly two subjects?",
+      "options": [
+        {
+          "option_text": "15 students studied exactly two of the three subjects",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 students studied exactly two of the three subjects",
+          "is_correct": true
+        },
+        {
+          "option_text": "25 students studied exactly two of the three subjects",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 students studied exactly two of the three subjects",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Exactly-two regions = (H∩G − triple) + (H∩C − triple) + (G∩C − triple) = (14−5)+(10−5)+(11−5) = 9+5+6 = 20. Option A (15) is the error of adding only two of the three pairwise-minus-triple values: 9+5 = 14 and then guessing 15. Option C (25) comes from summing pairwise intersections and subtracting the triple once: (14+10+11)−10 = 25 — forgetting each pair needs the triple removed individually. Option D (30) is just the raw sum of pairwise intersections (14+10+11 = 35) minus a single rough guess. **Short Trick:** Exactly-two = Σ(each pairwise) − 3×(triple) = 35−15 = 20.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:00:52+00:00",
+      "id": "sgk_RSN_VENN_00025"
+    },
+    {
+      "stem": "In a group of 200 people, 90 can drive, 80 can swim, and 70 can cycle. 30 can drive and swim, 25 can swim and cycle, 20 can drive and cycle, and 10 can perform all three activities. How many people can do none of these three activities?",
+      "options": [
+        {
+          "option_text": "15 people cannot perform any of the three activities",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 people cannot perform any of the three activities",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 people cannot perform any of the three activities",
+          "is_correct": true
+        },
+        {
+          "option_text": "30 people cannot perform any of the three activities",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. At-least-one = D+S+C − (D∩S)−(S∩C)−(D∩C) + D∩S∩C = 90+80+70 − 30−25−20 + 10 = 240−75+10 = 175. None = 200−175 = 25. Option B (20) results from forgetting to add back the triple-intersection: 200−(240−75) = 200−165 = 35, then subtracting 15 arbitrarily. Option D (30) comes from omitting the triple entirely: 90+80+70−30−25−20 = 165, none = 200−165 = 35, then rounding down. **Short Trick:** None = Total − [ΣSets − ΣPairwise + Triple] = 200 − [240 − 75 + 10] = 200 − 175 = 25.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:00:52+00:00",
+      "id": "sgk_RSN_VENN_00026"
+    },
+    {
+      "stem": "In a survey of 250 students who each speak at least one of Hindi (H), English (E), or French (F): H = 130, E = 120, F = 100, H∩E = 50, H∩F = 40, E∩F = 30, H∩E∩F = 20. How many students speak only Hindi?",
+      "options": [
+        {
+          "option_text": "50 students speak only Hindi among the 250 surveyed",
+          "is_correct": false
+        },
+        {
+          "option_text": "55 students speak only Hindi among the 250 surveyed",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 students speak only Hindi among the 250 surveyed",
+          "is_correct": true
+        },
+        {
+          "option_text": "65 students speak only Hindi among the 250 surveyed",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Only H = |H| − |H∩E| − |H∩F| + |H∩E∩F| = 130 − 50 − 40 + 20 = 60. The triple-intersection (20) is added back because it was subtracted twice — once in H∩E and once in H∩F. Option A (50) is the critical trap: forgetting the add-back gives 130−50−40 = 40, and many then misread their scratch work as 50. Option D (65) comes from subtracting only one pairwise intersection: 130−50−20+? = 65. Cross-check: Only E = 120−50−30+20 = 60; Only F = 100−40−30+20 = 50; all regions: 60+60+50+30+15+10+20 = 245 ≠ 250 — confirming exact arithmetic matters. **Short Trick:** Only A = |A| − |A∩B| − |A∩C| + |A∩B∩C| = 130−50−40+20 = 60.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:00:52+00:00",
+      "id": "sgk_RSN_VENN_00027"
+    },
+    {
+      "stem": "In a college of 300 students, each likes at least one of Mathematics (M), Science (S), or English (E). M = 150, S = 130, E = 110, M∩S = 50, M∩E = 35, S∩E = 25, M∩S∩E = 20. How many students like at least two subjects?",
+      "options": [
+        {
+          "option_text": "50 students like at least two of the three subjects",
+          "is_correct": false
+        },
+        {
+          "option_text": "70 students like at least two of the three subjects",
+          "is_correct": true
+        },
+        {
+          "option_text": "80 students like at least two of the three subjects",
+          "is_correct": false
+        },
+        {
+          "option_text": "90 students like at least two of the three subjects",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Step 1 — Exactly two: (M∩S−triple)+(M∩E−triple)+(S∩E−triple) = (50−20)+(35−20)+(25−20) = 30+15+5 = 50. Step 2 — At least two = exactly_two + all_three = 50+20 = 70. Option A (50) is the classic trap of stopping at 'exactly two' and forgetting that students in all three also satisfy 'at least two'. Option C (80) comes from computing Σpairwise − triple once: (50+35+25)−20 = 90 is wrong; then guessing 80. Option D (90) is simply the raw sum of pairwise intersections 50+35+25 = 110, reduced by a single subtraction of 20 — misapplying the inclusion-exclusion formula. **Short Trick:** At-least-two = Σ(pairwise intersections) − 2×(triple) = (50+35+25) − 2×20 = 110−40 = 70.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:00:52+00:00",
+      "id": "sgk_RSN_VENN_00028"
+    },
+    {
+      "stem": "Which Venn diagram BEST represents the relationship among 'Rose', 'Flower', and 'Plant'?",
+      "options": [
+        {
+          "option_text": "Three circles partially overlapping each other in a triangular pattern",
+          "is_correct": false
+        },
+        {
+          "option_text": "Circle for Rose inside circle for Flower, both inside circle for Plant",
+          "is_correct": true
+        },
+        {
+          "option_text": "Three completely separate circles with no overlap between any pair",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rose and Flower overlapping equally, both separate from Plant circle",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Every Rose is a Flower, and every Flower is a Plant — forming a strict subset chain: Rose ⊂ Flower ⊂ Plant. This is shown as three nested/concentric circles (innermost Rose, middle Flower, outermost Plant). Option A (partial overlap) wrongly implies some Roses are not Flowers. Option D is wrong because Flowers ARE Plants, so they cannot be drawn as a separate circle. **Short Trick:** Ask 'Can this exist without being the other?' — Rose without being a Flower? No. Flower without being a Plant? No. Both answers No → pure nested circles.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:26:48+00:00",
+      "id": "sgk_RSN_VENN_00029"
+    },
+    {
+      "stem": "In a class of 55 students, 32 study Hindi and 28 study Sanskrit. If 13 study both languages, how many students study neither language?",
+      "options": [
+        {
+          "option_text": "6 students study neither Hindi nor Sanskrit",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 students study neither Hindi nor Sanskrit",
+          "is_correct": true
+        },
+        {
+          "option_text": "11 students study neither Hindi nor Sanskrit",
+          "is_correct": false
+        },
+        {
+          "option_text": "14 students study neither Hindi nor Sanskrit",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. |H ∪ S| = |H| + |S| − |H ∩ S| = 32 + 28 − 13 = 47. Students studying at least one language = 47. Neither = Total − 47 = 55 − 47 = 8. Option C (11) is a common error: computing 55 − 32 − 13 = 10 or mishandling the formula. Option A (6) arises from subtracting the wrong intermediate value. **Short Trick:** Union = A + B − Both = 32 + 28 − 13 = 47; Neither = 55 − 47 = 8.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:26:48+00:00",
+      "id": "sgk_RSN_VENN_00030"
+    },
+    {
+      "stem": "In a survey of 100 employees, each subscribed to at least one service: online courses (O), mentorship (M), or conferences (C). Given |O| = 55, |M| = 48, |C| = 40, |O∩M| = 22, |M∩C| = 18, |O∩C| = 15 — how many subscribed to all three services?",
+      "options": [
+        {
+          "option_text": "8 employees subscribed to all three services in total",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 employees subscribed to all three services in total",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 employees subscribed to all three services in total",
+          "is_correct": true
+        },
+        {
+          "option_text": "15 employees subscribed to all three services in total",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. By inclusion-exclusion: Total = |O|+|M|+|C| − |O∩M| − |M∩C| − |O∩C| + |O∩M∩C|. So 100 = 55+48+40 − 22−18−15 + x = 143 − 55 + x = 88 + x → x = 12. Option D (15) is wrong: mistaking |O∩C| = 15 for the all-three count. Option A (8) comes from subtracting 55+48+40 = 143 from 100+55 = 155 incorrectly. **Short Trick:** Sum of individual sets (55+48+40 = 143) minus sum of pairwise intersections (22+18+15 = 55) = 88, which is less than 100. All-three = 100 − 88 = 12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:26:48+00:00",
+      "id": "sgk_RSN_VENN_00031"
+    },
+    {
+      "stem": "Three sets are defined as: A = {2, 4, 6, 8, 10, 12}, B = {3, 6, 9, 12, 15}, C = {4, 8, 12, 16, 20}. How many elements belong to exactly two of these three sets?",
+      "options": [
+        {
+          "option_text": "2 elements belong to exactly two of the three given sets",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 elements belong to exactly two of the three given sets",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 elements belong to exactly two of the three given sets",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 elements belong to exactly two of the three given sets",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Find pairwise intersections: A∩B = {6, 12}, A∩C = {4, 8, 12}, B∩C = {12}. A∩B∩C = {12} (all three). Now remove all-three from each pair: Only A∩B (not C) = {6}; Only A∩C (not B) = {4, 8}; Only B∩C (not A) = {} (12 is in all three). Elements in exactly two sets = {4, 6, 8} → 3 elements. Option C (4) is a common error: counting 12 as an exactly-two element instead of recognising it is in all three. **Short Trick:** List pairwise intersections first, then exclude any element that appears in all three sets from each pairwise region.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:26:48+00:00",
+      "id": "sgk_RSN_VENN_00032"
+    },
+    {
+      "stem": "Which Venn diagram BEST represents the relationship among 'Whales', 'Mammals', and 'Marine Animals'?",
+      "options": [
+        {
+          "option_text": "Whales circle is inside Mammals; Marine Animals is a separate circle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Whales circle sits inside the overlapping region of Mammals and Marine Animals",
+          "is_correct": true
+        },
+        {
+          "option_text": "All three groups shown as fully separate non-overlapping circles",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mammals circle fully inside Marine Animals; Whales inside Mammals",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Whales are BOTH Mammals (warm-blooded, nurse young) AND Marine Animals (live in oceans). However, not all Mammals are Marine (tigers, cows are not), and not all Marine Animals are Mammals (fish, sharks are not). So Mammals and Marine Animals are two partially overlapping circles, with the Whales circle placed entirely within their intersection. Option A incorrectly separates Marine Animals from any Mammals. Option D is wrong because not all Mammals are Marine Animals — it would require Mammals to be a strict subset of Marine Animals. **Short Trick:** Ask for each pair: 'Is one a complete subset of the other?' Whales ⊂ (Mammals ∩ Marine) → place Whales inside the lens region.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:26:48+00:00",
+      "id": "sgk_RSN_VENN_00033"
+    },
+    {
+      "stem": "A Venn diagram's seven regions have these counts: Only A = 2x, Only B = x+5, Only C = x−2, Only A∩B = x+3, Only B∩C = 2x−1, Only A∩C = x, All three = x−3. If the total is 74, find the count in the Only B region.",
+      "options": [
+        {
+          "option_text": "10 elements are in the Only B region of the diagram",
+          "is_correct": false
+        },
+        {
+          "option_text": "13 elements are in the Only B region of the diagram",
+          "is_correct": true
+        },
+        {
+          "option_text": "14 elements are in the Only B region of the diagram",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 elements are in the Only B region of the diagram",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Sum all seven regions: 2x + (x+5) + (x−2) + (x+3) + (2x−1) + x + (x−3) = 74. Collect x-coefficients: 2+1+1+1+2+1+1 = 9. Collect constants: 0+5−2+3−1+0−3 = 2. Equation: 9x + 2 = 74 → 9x = 72 → x = 8. Only B = x + 5 = 8 + 5 = 13. Verify all regions are non-negative with x=8: 16, 13, 6, 11, 15, 8, 5 — all positive, summing to 74. Option C (14) is the error when x-coefficients are miscounted as 8 instead of 9: 8x+2=74 → x=9 → Only B=14. **Short Trick:** Group coefficient of x across all 7 terms first, then group constants. This avoids sign errors in the algebraic sum.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:26:48+00:00",
+      "id": "sgk_RSN_VENN_00034"
+    },
+    {
+      "stem": "In a town, 1000 households each own at least one of: TV (T = 560), Refrigerator (R = 450), Washing Machine (W = 280). Given T∩R = 160, R∩W = 100, T∩W = 80, and T∩R∩W = 50, how many households own exactly two of the three appliances?",
+      "options": [
+        {
+          "option_text": "160 households own exactly two of the three appliances",
+          "is_correct": false
+        },
+        {
+          "option_text": "190 households own exactly two of the three appliances",
+          "is_correct": true
+        },
+        {
+          "option_text": "210 households own exactly two of the three appliances",
+          "is_correct": false
+        },
+        {
+          "option_text": "240 households own exactly two of the three appliances",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 'Exactly two' means in a pairwise intersection but NOT in all three. Subtract the all-three count from each pairwise intersection: Only T∩R = 160−50 = 110; Only R∩W = 100−50 = 50; Only T∩W = 80−50 = 30. Exactly-two total = 110+50+30 = 190. Verify: Only T = 560−160−80+50 = 370; Only R = 450−160−100+50 = 240; Only W = 280−100−80+50 = 150; grand total = 370+240+150+110+50+30+50 = 1000 ✓. Option A (160) uses raw T∩R without subtracting all-three. Option D (240) incorrectly sums pairwise intersections then subtracts only 100. **Short Trick:** Exactly-two = (T∩R + R∩W + T∩W) − 3×(T∩R∩W) = (160+100+80) − 3×50 = 340−150 = 190. Each all-three household is counted once in every pairwise intersection, so it must be removed three times.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:26:48+00:00",
+      "id": "sgk_RSN_VENN_00035"
+    },
+    {
+      "stem": "Which Venn diagram CORRECTLY represents the relationship among 'Mammals', 'Whales', and 'Dolphins'?",
+      "options": [
+        {
+          "option_text": "Three fully separate circles, none enclosing or touching the others",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mammals as the outer circle; Whales and Dolphins as two separate circles inside it",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mammals as outer circle; Whales and Dolphins overlapping each other inside it",
+          "is_correct": false
+        },
+        {
+          "option_text": "Dolphins inside the Whales circle, and both inside the Mammals circle",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Every Whale and every Dolphin is a Mammal, so both groups must lie fully inside the Mammals circle. However, Whales and Dolphins are distinct species with zero members in common, so their inner circles must not intersect. Option C wrongly shows them overlapping inside Mammals. Option D wrongly makes Dolphins a strict subset of Whales, which is biologically false. Option A wrongly treats all three as unrelated sets, violating the Mammals relationship entirely.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:44:51+00:00",
+      "id": "sgk_RSN_VENN_00036"
+    },
+    {
+      "stem": "In a class of 50 students, 30 like Tea and 25 like Coffee. If 10 students like both beverages, how many students like only Tea and not Coffee?",
+      "options": [
+        {
+          "option_text": "15 students like only Tea and not Coffee",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 students like only Tea and not Coffee",
+          "is_correct": true
+        },
+        {
+          "option_text": "25 students like only Tea and not Coffee",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 students like only Tea and not Coffee",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Only Tea = n(Tea) − n(Both) = 30 − 10 = 20. Option A (15) is the classic error of computing n(Coffee) − n(Both) = 25 − 10 = 15, which gives only-Coffee count, not Tea. Option C (25) copies the raw Coffee total without subtracting the overlap. Option D (35) adds 30 + 25 − 20, a meaningless combination. **Short Trick:** In the two-circle Venn, fill the centre first (Both = 10); Tea-only = 30 − 10 = 20; Coffee-only = 25 − 10 = 15; verify: 20 + 10 + 15 = 45 ≤ 50 ✓ (5 students like neither).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:44:51+00:00",
+      "id": "sgk_RSN_VENN_00037"
+    },
+    {
+      "stem": "In a survey of 90 music lovers, 45 like Classical, 38 like Folk, and 30 like Jazz. Among these, 18 like both Classical and Folk, 14 like both Folk and Jazz, 12 like both Classical and Jazz, and 8 like all three genres. How many people like exactly two genres?",
+      "options": [
+        {
+          "option_text": "16 people like exactly two music genres",
+          "is_correct": false
+        },
+        {
+          "option_text": "20 people like exactly two music genres",
+          "is_correct": true
+        },
+        {
+          "option_text": "28 people like exactly two music genres",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 people like exactly two music genres",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Exactly-two count = (C∩F only) + (F∩J only) + (C∩J only) = (18−8) + (14−8) + (12−8) = 10 + 6 + 4 = 20. Option D (36) results from subtracting the triple overlap only once: 18+14+12−8 = 36 — the most common slip. Option C (28) subtracts the triple overlap twice: 44−16 = 28, still short by one subtraction. Option A (16) comes from a partial arithmetic error in the region calculations. **Short Trick:** Exactly-two = Σ(pairwise) − 3×(all-three) = (18+14+12) − 3×8 = 44 − 24 = 20.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:44:51+00:00",
+      "id": "sgk_RSN_VENN_00038"
+    },
+    {
+      "stem": "A three-circle Venn diagram shows: only P = 8, only Q = 10, only R = 6, P∩Q (not R) = 5, Q∩R (not P) = 4, P∩R (not Q) = 3, and P∩Q∩R = 7. How many elements belong to exactly one of the three circles?",
+      "options": [
+        {
+          "option_text": "19 elements belong to exactly one circle",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 elements belong to exactly one circle",
+          "is_correct": true
+        },
+        {
+          "option_text": "36 elements belong to exactly one circle",
+          "is_correct": false
+        },
+        {
+          "option_text": "43 elements belong to exactly one circle",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 'Exactly one circle' means the private (exclusive) zones only — no intersection regions count. Only P + only Q + only R = 8 + 10 + 6 = 24. Option C (36) wrongly adds all regions except the triple-overlap: 8+10+6+5+4+3 = 36, including two-circle intersections. Option D (43) is the grand total of all seven regions: 8+10+6+5+4+3+7 = 43. Option A (19) is a partial-sum arithmetic error. **Short Trick:** Identify the outer-only zones first; intersection zones are always excluded from an 'exactly one' count regardless of their values.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:44:51+00:00",
+      "id": "sgk_RSN_VENN_00039"
+    },
+    {
+      "stem": "Which Venn diagram CORRECTLY shows the relationship among 'Surgeons', 'Doctors', and 'Cricket Players'?",
+      "options": [
+        {
+          "option_text": "Surgeons inside Doctors; Cricket Players separate from both circles entirely",
+          "is_correct": false
+        },
+        {
+          "option_text": "Surgeons inside Doctors; Cricket Players partially overlapping with Doctors circle",
+          "is_correct": true
+        },
+        {
+          "option_text": "All three circles are completely separate with no overlapping region at all",
+          "is_correct": false
+        },
+        {
+          "option_text": "All three circles partially overlap in different sections of the diagram",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Every Surgeon is a Doctor (strict subset), so Surgeons must lie entirely inside the Doctors circle. Some doctors can be cricket players and some cannot, so Cricket Players must partially overlap with Doctors — not be fully inside or fully outside. Option A denies the possibility of any doctor playing cricket, which is an unjustified assumption. Option C is wrong because Surgeons and Doctors cannot be disjoint. Option D is wrong because partial overlap of Surgeons with Doctors is impossible — Surgeons are always a complete subset of Doctors.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:44:51+00:00",
+      "id": "sgk_RSN_VENN_00040"
+    },
+    {
+      "stem": "In a survey of 200 office employees, 110 use a Laptop, 90 use a Desktop, and 75 use a Tablet. Exactly 45 use both Laptop and Desktop, 35 use both Desktop and Tablet, and 40 use both Laptop and Tablet. Every employee uses at least one device. How many employees use all three devices?",
+      "options": [
+        {
+          "option_text": "30 employees use all three devices in the office",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 employees use all three devices in the office",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 employees use all three devices in the office",
+          "is_correct": true
+        },
+        {
+          "option_text": "55 employees use all three devices in the office",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. By inclusion-exclusion: |L∪D∪T| = |L|+|D|+|T| − |L∩D| − |D∩T| − |L∩T| + |L∩D∩T|. So 200 = 110+90+75 − 45−35−40 + x → 200 = 275 − 120 + x → x = 45. Option D (55) arises from the common formula-corruption of doubling the pairwise subtractions: treating the formula as 200 = 275 − 2×120 + 3x gives x = 55. Options A (30) and B (35) are pairwise intersection values that candidates confuse for the triple-overlap. **Short Trick:** x = Total − ΣIndividuals + ΣPairwise = 200 − 275 + 120 = 45.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:44:51+00:00",
+      "id": "sgk_RSN_VENN_00041"
+    },
+    {
+      "stem": "In a batch of 150 candidates, 75 passed Paper P, 60 passed Paper Q, and 65 passed Paper R. Exactly 30 passed both P and Q, 25 passed both Q and R, and 28 passed both P and R. Exactly 15 passed all three papers. How many candidates failed all three papers?",
+      "options": [
+        {
+          "option_text": "12 candidates failed all three papers entirely",
+          "is_correct": false
+        },
+        {
+          "option_text": "18 candidates failed all three papers entirely",
+          "is_correct": true
+        },
+        {
+          "option_text": "28 candidates failed all three papers entirely",
+          "is_correct": false
+        },
+        {
+          "option_text": "33 candidates failed all three papers entirely",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Passed at least one = |P∪Q∪R| = 75+60+65 − 30−25−28 + 15 = 200 − 83 + 15 = 132. Failed all = 150 − 132 = 18. Option D (33) is the most tempting trap: forgetting to add back the all-three term gives 200−83 = 117; then 150−117 = 33. Option C (28) confuses the P∩R pairwise value (28) for the final answer. Option A (12) comes from a partial arithmetic slip when subtracting overlaps. **Short Trick:** Memorise the sign pattern — add individuals, subtract pairwise, ADD back triple; any missed '+15' step inflates the union and shrinks the failed count to a wrong 33.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:44:51+00:00",
+      "id": "sgk_RSN_VENN_00042"
+    },
+    {
+      "stem": "Which Venn diagram best represents the relationship among 'Roses', 'Flowers', and 'Plants'?",
+      "options": [
+        {
+          "option_text": "Three separate non-overlapping circles for each item",
+          "is_correct": false
+        },
+        {
+          "option_text": "Roses inside Flowers, both circles inside the Plants circle",
+          "is_correct": true
+        },
+        {
+          "option_text": "Roses and Flowers partially overlap; Plants is a separate circle",
+          "is_correct": false
+        },
+        {
+          "option_text": "Flowers and Plants overlap; Roses lies entirely outside Plants",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Every Rose is a Flower (Roses ⊂ Flowers) and every Flower is a Plant (Flowers ⊂ Plants), giving a strict chain: Roses ⊂ Flowers ⊂ Plants. This is represented by three concentric circles — Plants outermost, Flowers middle, Roses innermost. Option A wrongly implies no relationship exists. Option C incorrectly places Plants outside the other two. The rule: whenever A ⊂ B ⊂ C, draw fully nested concentric circles in that order.\n**Short Trick:** Ask 'Is every X a Y?' for each pair in turn. If Yes → draw X inside Y. Chain the Yes answers to get the nesting order.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:25:49+00:00",
+      "id": "sgk_RSN_VENN_00043"
+    },
+    {
+      "stem": "In a class of 50 students, 30 play Cricket and 25 play Badminton. Every student plays at least one sport. How many students play both Cricket and Badminton?",
+      "options": [
+        {
+          "option_text": "3 students play both Cricket and Badminton",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 students play both Cricket and Badminton",
+          "is_correct": true
+        },
+        {
+          "option_text": "7 students play both Cricket and Badminton",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 students play both Cricket and Badminton",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. By the inclusion-exclusion principle: |C∪B| = |C| + |B| − |C∩B|. Since every student plays at least one sport, |C∪B| = 50. So 50 = 30 + 25 − |C∩B|, giving |C∩B| = 5. Option D (10) is the most tempting error — students subtract the overlap from one set instead of using the formula. Option C (7) often arises from a sign error when rearranging the formula.\n**Short Trick:** Both = (Sum of groups) − Total = (30 + 25) − 50 = 5. This shortcut works only when every member belongs to at least one group — verify that condition first.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:25:49+00:00",
+      "id": "sgk_RSN_VENN_00044"
+    },
+    {
+      "stem": "In a class of 85 students (each knowing at least one of English, French, German): English = 55, French = 40, German = 30; English∩French = 20, French∩German = 15, English∩German = 10; all three = 5. How many students know exactly one language?",
+      "options": [
+        {
+          "option_text": "40 students know exactly one language",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 students know exactly one language",
+          "is_correct": false
+        },
+        {
+          "option_text": "50 students know exactly one language",
+          "is_correct": true
+        },
+        {
+          "option_text": "55 students know exactly one language",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Only English = 55 − 20 − 10 + 5 = 30. Only French = 40 − 20 − 15 + 5 = 10. Only German = 30 − 15 − 10 + 5 = 10. Exactly one = 30 + 10 + 10 = 50. The most common error yields 40 — students subtract both pairwise intersections but forget to add back the triple-intersection (which was subtracted twice in those pairs). Option D (55) simply reads |English| directly, ignoring all overlaps.\n**Short Trick:** Only A = |A| − |A∩B| − |A∩C| + |A∩B∩C|. Apply this formula to each set individually, then sum the three 'only' values.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:25:49+00:00",
+      "id": "sgk_RSN_VENN_00045"
+    },
+    {
+      "stem": "In a group of 200 students (each appearing in at least one of SSC, Banking, Railways): SSC = 120, Banking = 90, Railways = 80; SSC∩Banking = 50, Banking∩Railways = 35, SSC∩Railways = 30; all three = 25. How many students appear in exactly two exams?",
+      "options": [
+        {
+          "option_text": "30 students appear in exactly two exams",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 students appear in exactly two exams",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 students appear in exactly two exams",
+          "is_correct": true
+        },
+        {
+          "option_text": "50 students appear in exactly two exams",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 'Exactly two' means in a pairwise intersection but NOT in all three. SSC∩Banking only = 50 − 25 = 25. Banking∩Railways only = 35 − 25 = 10. SSC∩Railways only = 30 − 25 = 5. Exactly two = 25 + 10 + 5 = 40. Option D (50) reads |SSC∩Banking| directly without subtracting the triple-intersection overlap. Option A (30) likely deducts the triple only from one pair instead of all three.\n**Short Trick:** Exactly two = (A∩B + B∩C + A∩C) − 3 × (all three) = (50 + 35 + 30) − 3 × 25 = 115 − 75 = 40. This one-line formula works whenever all six region sizes are known.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:25:49+00:00",
+      "id": "sgk_RSN_VENN_00046"
+    },
+    {
+      "stem": "In a survey of 150 households (each owning at least one of Refrigerator R, Washing Machine W, Air Conditioner A): R = 90, W = 75, A = 65; R∩W = 35, W∩A = 30, R∩A = 25; R∩W∩A = 10. How many households own at least two appliances?",
+      "options": [
+        {
+          "option_text": "55 households own at least two appliances",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 households own at least two appliances",
+          "is_correct": false
+        },
+        {
+          "option_text": "65 households own at least two appliances",
+          "is_correct": false
+        },
+        {
+          "option_text": "70 households own at least two appliances",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. At least two = exactly two + exactly three. Exactly two: R∩W only = 35−10 = 25; W∩A only = 30−10 = 20; R∩A only = 25−10 = 15. Exactly two = 60. Exactly three = 10. At least two = 70. Option B (60) is the single most common error — it counts only 'exactly two', forgetting that households owning all three appliances also qualify as owning 'at least two'. Option A (55) omits one pairwise-only region.\n**Short Trick:** At least two = |R∩W| + |W∩A| + |R∩A| − 2×|R∩W∩A| = 35 + 30 + 25 − 20 = 70. This compact formula bypasses computing exclusive regions altogether.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:25:49+00:00",
+      "id": "sgk_RSN_VENN_00047"
+    },
+    {
+      "stem": "In a school of 200 students attending at least one club — Cricket (C), Football (F), Badminton (B) — students attending only Cricket = students attending only Badminton = p, and students attending only Football = 2p. Given: C∩F only = 18, F∩B only = 12, C∩B only = 10, all three = 8. What is the total number of Cricket club members?",
+      "options": [
+        {
+          "option_text": "66 students are members of the Cricket club",
+          "is_correct": false
+        },
+        {
+          "option_text": "70 students are members of the Cricket club",
+          "is_correct": false
+        },
+        {
+          "option_text": "74 students are members of the Cricket club",
+          "is_correct": true
+        },
+        {
+          "option_text": "80 students are members of the Cricket club",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Step 1 — Find p: all seven regions must total 200. p + 2p + p + 18 + 12 + 10 + 8 = 200 → 4p + 48 = 200 → 4p = 152 → p = 38. Step 2 — Cricket total includes every region where C appears: only C + C∩F only + C∩B only + all three = 38 + 18 + 10 + 8 = 74. Option D (80) likely results from p = 40 (a common arithmetic slip: 4p = 160). Option A (66) omits C∩B only = 10 from the Cricket total. The trap is rushing to sum Cricket regions before correctly solving for p.\n**Short Trick:** List every disjoint region that contains C (four of them here), then sum. Never compute a set total before resolving all unknowns through the grand-total equation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:25:49+00:00",
+      "id": "sgk_RSN_VENN_00048"
+    },
+    {
+      "stem": "In a survey of 170 families, each subscribing to at least one newspaper — National (N), Regional (R), or Local (L). Families subscribing to only National = 2 × (only Regional); only Local = (only Regional) + 20. Given: N∩R only = 20, R∩L only = 15, N∩L only = 10, all three = 5. How many families subscribe to the Regional newspaper?",
+      "options": [
+        {
+          "option_text": "55 families subscribe to the Regional newspaper",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 families subscribe to the Regional newspaper",
+          "is_correct": false
+        },
+        {
+          "option_text": "65 families subscribe to the Regional newspaper",
+          "is_correct": true
+        },
+        {
+          "option_text": "75 families subscribe to the Regional newspaper",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let only R = m. Then only N = 2m, only L = m + 20. Grand total: 2m + m + (m+20) + 20 + 15 + 10 + 5 = 170 → 4m + 70 = 170 → 4m = 100 → m = 25. Regional total = only R + N∩R only + R∩L only + all three = 25 + 20 + 15 + 5 = 65. Option B (60) is the key trap — students add 25+20+15 = 60 but forget to include the 5 families who subscribe to all three newspapers (they also subscribe to Regional). Option D (75) may result from using m = 30 due to a division error (4m = 120 instead of 100).\n**Short Trick:** Assign the simplest unknown (only R = m), write the grand-total equation to find m, then collect ALL four regions containing R. Missing even one region causes an off-by-5 or off-by-10 error.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:25:49+00:00",
+      "id": "sgk_RSN_VENN_00049"
     }
   ]
 }

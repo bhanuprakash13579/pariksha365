@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_SIMPLIFICATION",
+  "subject": "Quantitative Aptitude",
+  "topic": "Simplification — BODMAS and Arithmetic",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Simplify: 18 + 12 ÷ 4 × 2 − 6",
+      "options": [
+        {"option_text": "12 (wrong: follow BODMAS — D before M before A/S; 12÷4=3; 3×2=6; 18+6−6=18)", "is_correct": false},
+        {"option_text": "18 (correct: BODMAS: first division: 12÷4=3; then multiplication: 3×2=6; then left-to-right: 18+6−6=18 ✓)", "is_correct": true},
+        {"option_text": "24 (wrong: incorrect order of operations)", "is_correct": false},
+        {"option_text": "6 (wrong: incorrect simplification)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. BODMAS: Brackets → Orders (powers/roots) → Division → Multiplication → Addition → Subtraction. 18 + 12÷4×2 − 6. Step 1: 12÷4=3. Step 2: 3×2=6. Step 3: 18+6−6=18. **Rule:** Division and Multiplication have equal precedence — evaluate left to right.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Simplify: (15 + 9) ÷ 3 − (8 − 5) × 2",
+      "options": [
+        {"option_text": "2 (correct: (15+9)÷3−(8−5)×2=24÷3−3×2=8−6=2 ✓)", "is_correct": true},
+        {"option_text": "6 (wrong: incorrect bracket evaluation)", "is_correct": false},
+        {"option_text": "10 (wrong: if you ignore the subtraction part)", "is_correct": false},
+        {"option_text": "0 (wrong: close but subtraction step is off)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Step 1 — Brackets: (15+9)=24; (8−5)=3. Step 2 — Division: 24÷3=8. Step 3 — Multiplication: 3×2=6. Step 4 — Subtraction: 8−6=2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is the value of 2 + 3 × 4 − 8 ÷ 2?",
+      "options": [
+        {"option_text": "6 (wrong: 3×4=12; 8÷2=4; 2+12−4=10)", "is_correct": false},
+        {"option_text": "10 (correct: BODMAS: 3×4=12 and 8÷2=4 first; then 2+12−4=10 ✓)", "is_correct": true},
+        {"option_text": "15 (wrong: wrong application of BODMAS)", "is_correct": false},
+        {"option_text": "8 (wrong: wrong order of operations)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. BODMAS: Multiplication and Division before Addition and Subtraction. 3×4=12; 8÷2=4. Expression becomes: 2+12−4=10.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the value of: 144 ÷ 12 × 3 + 5² − 10",
+      "options": [
+        {"option_text": "41 (wrong: 144÷12=12; 12×3=36; 5²=25; 36+25−10=51)", "is_correct": false},
+        {"option_text": "51 (correct: 144÷12=12; 12×3=36; 5²=25; 36+25−10=51 ✓)", "is_correct": true},
+        {"option_text": "61 (wrong: partial calculation error)", "is_correct": false},
+        {"option_text": "29 (wrong: if powers were ignored)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. BODMAS: Orders (5²=25) first, then D/M left to right: 144÷12=12, then 12×3=36. Then A/S: 36+25−10=51.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If 3/4 of a number is 54, what is 2/3 of that number?",
+      "options": [
+        {"option_text": "36 (wrong: number=54÷(3/4)=72; 2/3 of 72=48, not 36)", "is_correct": false},
+        {"option_text": "48 (correct: 3/4 × N = 54; N = 72; 2/3 × 72 = 48 ✓)", "is_correct": true},
+        {"option_text": "40 (wrong: 40≠2/3×72)", "is_correct": false},
+        {"option_text": "54 (wrong: that's the given value, not 2/3 of the number)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 3/4 × N = 54 → N = 54 × 4/3 = 72. 2/3 of 72 = 48. **Short Trick:** Required fraction = (2/3)/(3/4) × 54 = (2/3 × 4/3) × 54 = 8/9 × 54 = 48.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Simplify: √(169) + ∛(27) − √(81)",
+      "options": [
+        {"option_text": "4 (correct: √169=13; ∛27=3; √81=9; 13+3−9=7... wait: 13+3=16; 16−9=7 — so 7, not 4)", "is_correct": false},
+        {"option_text": "7 (correct: √169=13; ∛27=3; √81=9; 13+3−9=7 ✓)", "is_correct": true},
+        {"option_text": "10 (wrong: 13+3−6=10; but √81=9, not 6)", "is_correct": false},
+        {"option_text": "3 (wrong: only partial terms calculated)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. √169 = 13 (13²=169); ∛27 = 3 (3³=27); √81 = 9 (9²=81). Expression = 13+3−9 = 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is 0.5 × 0.5 + 0.5 ÷ 0.5?",
+      "options": [
+        {"option_text": "0.5 (wrong: 0.5×0.5=0.25; 0.5÷0.5=1; 0.25+1=1.25)", "is_correct": false},
+        {"option_text": "1.25 (correct: BODMAS: M before D? No — same level, left to right: 0.5×0.5=0.25; 0.5÷0.5=1; sum=1.25 ✓)", "is_correct": true},
+        {"option_text": "1 (wrong: that's just the division part alone)", "is_correct": false},
+        {"option_text": "0.75 (wrong: 0.5+0.25=0.75 only if 0.5÷0.5=0; but 0.5÷0.5=1)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Apply BODMAS: Multiplication and Division before Addition. 0.5×0.5=0.25 and 0.5÷0.5=1. Sum = 0.25+1 = 1.25. Decimal arithmetic tip: 0.5 = 1/2; (1/2)×(1/2)=1/4=0.25; (1/2)÷(1/2)=1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the value: 1/2 + 1/3 + 1/6",
+      "options": [
+        {"option_text": "2/3 (wrong: 3/6+2/6+1/6=6/6=1)", "is_correct": false},
+        {"option_text": "1 (correct: LCM=6; 3/6+2/6+1/6=6/6=1 ✓)", "is_correct": true},
+        {"option_text": "5/6 (wrong: 5/6 would be 1/2+1/3+0=5/6 without the 1/6 term; actually 3/6+2/6=5/6; then +1/6=6/6=1)", "is_correct": false},
+        {"option_text": "7/6 (wrong: sum exceeds 1 would need 1/2+1/3+1/3=7/6; but 1/6≠1/3)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. LCM(2,3,6) = 6. 1/2=3/6; 1/3=2/6; 1/6=1/6. Sum = (3+2+1)/6 = 6/6 = 1.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Evaluate: 100 − [50 − {30 − (20 − 10)}]",
+      "options": [
+        {"option_text": "80 (wrong: work from inside out: (20−10)=10; {30−10}=20; {50−20}=30; 100−30=70)", "is_correct": false},
+        {"option_text": "70 (correct: innermost first: (20−10)=10; {30−10}=20; [50−20]=30; 100−30=70 ✓)", "is_correct": true},
+        {"option_text": "60 (wrong: partial bracket error)", "is_correct": false},
+        {"option_text": "90 (wrong: 100−10=90; only innermost bracket considered)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Solve innermost brackets first: (20−10)=10. Then curly brackets: {30−10}=20. Then square brackets: [50−20]=30. Final: 100−30=70. **Rule:** When brackets are nested, solve ( ) first, then { }, then [ ].",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A student scored 85% in an exam. If the total marks are 400, how many marks did the student score?",
+      "options": [
+        {"option_text": "320 (wrong: 85% of 400=340, not 320)", "is_correct": false},
+        {"option_text": "340 (correct: 85/100 × 400 = 85 × 4 = 340 marks ✓)", "is_correct": true},
+        {"option_text": "360 (wrong: 90% of 400=360; but score was 85%)", "is_correct": false},
+        {"option_text": "300 (wrong: 75% of 400=300; but score was 85%)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 85% of 400 = (85/100) × 400 = 85 × 4 = 340. **Short Trick:** x% of y = (x × y)/100. 85 × 4 = 340 (multiply 85 by 4 directly since 400/100=4).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

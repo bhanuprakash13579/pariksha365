@@ -1,0 +1,638 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "3D Mensuration — mixed tiers",
+  "topic_code": "QA_MEN_3D",
+  "questions": [
+    {
+      "stem": "A solid hemisphere has radius 7 cm. What is its Total Surface Area? (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "308 cm² — curved surface area only, base circle not included",
+          "is_correct": false
+        },
+        {
+          "option_text": "462 cm² — curved surface plus circular base, total surface area",
+          "is_correct": true
+        },
+        {
+          "option_text": "616 cm² — surface area computed as a full sphere with radius 7 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "154 cm² — area of the circular flat base of the hemisphere alone",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. TSA of a solid hemisphere = Curved Surface Area + Base Area = 2πr² + πr² = 3πr². Substituting r = 7: 3 × (22/7) × 49 = 3 × 22 × 7 = 462 cm². Option A (308 cm²) gives only the CSA = 2πr² = 308, ignoring the flat circular base — a very common error. Option C (616 cm²) uses 4πr² (full sphere formula), while D gives just the base circle πr² = 154 cm². **Short Trick:** Memorise the three hemisphere formulas as a chain — πr² (base), 2πr² (curved), 3πr² (total). Each step adds one πr². For r = 7: πr² = 22/7 × 49 = 154, so TSA = 3 × 154 = 462 cm².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:42:02+00:00",
+      "id": "sgk_QA_MEN_3D_00001"
+    },
+    {
+      "stem": "A cone has base radius 7 cm and slant height 25 cm. What is its Total Surface Area? (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "550 cm² — lateral surface area only; the circular base is not included",
+          "is_correct": false
+        },
+        {
+          "option_text": "858 cm² — lateral surface added to twice the base area (hemisphere slip)",
+          "is_correct": false
+        },
+        {
+          "option_text": "704 cm² — lateral surface plus base: correct total surface area of cone",
+          "is_correct": true
+        },
+        {
+          "option_text": "154 cm² — only the circular base πr² is computed; lateral surface skipped",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. TSA of cone = πrl + πr² = πr(l + r). With r = 7, l = 25: (22/7) × 7 × (25 + 7) = 22 × 32 = 704 cm². Option A (550 cm²) gives only the Curved Surface Area = πrl = 22 × 25 = 550, a frequent slip when students confuse CSA with TSA. Option B (858 cm²) arises from the error πrl + 2πr² = 550 + 308 = 858, where the hemisphere TSA formula (which has 2πr² for the base) is wrongly applied to a cone. Option D gives only πr² = 154 cm². **Short Trick:** TSA_cone = πr(l + r). Factor out πr first: (22/7) × 7 = 22, then multiply by (l + r) = 32. Answer = 22 × 32 = 704 cm². No fractions needed when r is a multiple of 7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:42:02+00:00",
+      "id": "sgk_QA_MEN_3D_00002"
+    },
+    {
+      "stem": "A metallic cylinder of base radius 6 cm and height 9 cm is melted and recast into small cones of base radius 3 cm and height 4 cm. How many complete cones are formed?",
+      "options": [
+        {
+          "option_text": "27 cones — correct; cylinder volume 324π ÷ cone volume 12π equals 27",
+          "is_correct": true
+        },
+        {
+          "option_text": "12 cones — when the cone's height is mistakenly set to 9 cm (cylinder height)",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 cones — when the cone height is mistakenly set to 3 cm (the cone's radius)",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 cones — when the ⅓ factor in the cone's volume formula is accidentally omitted",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Volume of cylinder = πR²H = π × 36 × 9 = 324π cm³. Volume of one small cone = (1/3)πr²h = (1/3) × π × 9 × 4 = 12π cm³. Number of cones = 324π ÷ 12π = 27. Option D (9 cones) is the most tempting error: forgetting the ⅓ gives cone volume = 36π, so 324/36 = 9. Option B (12 cones) comes from wrongly using the cylinder's height 9 cm as the cone's height: (1/3)π×9×9 = 27π, so 324/27 = 12. Option C (36 cones) uses h = 3 cm (confusing cone height with cone radius): (1/3)π×9×3 = 9π, so 324/9 = 36. **Short Trick:** Number of cones = (R²H) / ((1/3)r²h) = 3R²H / r²h = 3 × 36 × 9 / (9 × 4) = 972/36 = 27. The factor of 3 in the numerator comes from the cone's ⅓ flipping to the top.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:42:02+00:00",
+      "id": "sgk_QA_MEN_3D_00003"
+    },
+    {
+      "stem": "A bucket is shaped like a frustum with top radius 6 cm, bottom radius 3 cm and height 7 cm. Find its volume. (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "330 cm³ — when the cross-product term Rr is dropped from the formula",
+          "is_correct": false
+        },
+        {
+          "option_text": "594 cm³ — when (R+r)² is used instead of R²+r²+Rr in the formula",
+          "is_correct": false
+        },
+        {
+          "option_text": "462 cm³ — correct frustum volume using V = (πh/3)(R²+r²+Rr)",
+          "is_correct": true
+        },
+        {
+          "option_text": "264 cm³ — when only the larger base radius R is used, top radius r ignored",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. V = (πh/3)(R² + r² + Rr) with R = 6, r = 3, h = 7: = (22/7 × 7/3)(36 + 9 + 18) = (22/3)(63) = 22 × 21 = 462 cm³. Option A (330 cm³) forgets the cross-product Rr = 18, using only R² + r² = 45: (22/3)(45) = 330. Option B (594 cm³) expands (R+r)² = 81 instead of R²+r²+Rr = 63: (22/3)(81) = 594 — one extra Rr term sneaks in. Option D (264 cm³) ignores the top base: (22/3)(36) = 264. **Short Trick:** Frustum formula has a built-in AM-GM structure. The three terms R², Rr, r² form a geometric-like triplet. With R=6, r=3: sum = 36 + 18 + 9 = 63. Multiply: (22/3) × 63 = 22 × 21 = 462. Notice 7/3 × 22/7 = 22/3 — the 7s cancel cleanly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:42:02+00:00",
+      "id": "sgk_QA_MEN_3D_00004"
+    },
+    {
+      "stem": "A toy is made by fixing a solid hemisphere on top of a cylinder of equal radius. The common radius is 7 cm and the cylinder height is 10 cm. What is the total surface area of the toy? (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "748 cm² — curved surfaces of both shapes; flat base of the cylinder missed",
+          "is_correct": false
+        },
+        {
+          "option_text": "1056 cm² — both top and bottom circles of cylinder added alongside hemisphere CSA",
+          "is_correct": false
+        },
+        {
+          "option_text": "1210 cm² — full sphere surface area is used instead of hemisphere curved area",
+          "is_correct": false
+        },
+        {
+          "option_text": "902 cm² — base circle + cylinder CSA + hemisphere CSA; shared joint excluded",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Three exposed surfaces: (i) bottom circular base = πr², (ii) curved surface of cylinder = 2πrh, (iii) curved surface of hemisphere = 2πr². The shared circle where they join is interior — not exposed. Total = πr² + 2πrh + 2πr² = 3πr² + 2πrh = 3×(22/7)×49 + 2×(22/7)×7×10 = 3×154 + 2×22×10 = 462 + 440 = 902 cm². Option A (748) omits the bottom base: 2πrh + 2πr² = 440+308 = 748. Option B (1056) counts the top cylinder circle too: 2πrh + 2πr² + 2πr² = 440+308+308 = 1056. Option C (1210) uses 4πr² (full sphere) instead of 2πr² for the hemisphere: 4×154 + 154 + 440 = 1210. **Short Trick:** Count exposed faces like peeling layers. Bottom disc (1 circle) + cylinder wall (2πrh) + dome (2πr²). Total = πr²(3) + 2πrh. Plug: 154×3 + 440 = 462 + 440 = 902 cm².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:42:02+00:00",
+      "id": "sgk_QA_MEN_3D_00005"
+    },
+    {
+      "stem": "Two solid metallic spheres of radii 3 cm and 6 cm are melted together and recast into a solid cylinder of base radius 6 cm. Find the height of the cylinder.",
+      "options": [
+        {
+          "option_text": "8 cm — only the larger sphere (radius 6 cm) is counted in the total volume",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 cm — correct; combined sphere volume 324π divided by π×36 gives height 9 cm",
+          "is_correct": true
+        },
+        {
+          "option_text": "27 cm — both radii added to form one sphere of radius 9 cm before recasting",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 cm — cylinder base radius mistakenly taken as 3 cm (smaller sphere's radius)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total volume of both spheres = (4/3)π(3³ + 6³) = (4/3)π(27 + 216) = (4/3)π × 243 = 324π cm³. Setting equal to cylinder volume: π × 6² × h = 324π → 36h = 324 → h = 9 cm. Option A (8 cm) uses only the larger sphere: (4/3)π×216 = 288π; 288/36 = 8 — the smaller sphere is forgotten. Option C (27 cm) wrongly adds radii first to get r = 9: (4/3)π×729 = 972π; 972/36 = 27 — volumes don't add like radii. Option D (36 cm) takes the cylinder base radius as 3 (the smaller sphere's radius) instead of 6: 9h = 324 → h = 36. **Short Trick:** r₁³ + r₂³ = 27 + 216 = 243. Combined volume = (4/3)π×243 = 4π×81 = 324π. Cylinder: 36h = 324 → h = 9. Key habit: cube each radius separately before adding — never add radii, then cube.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:42:02+00:00",
+      "id": "sgk_QA_MEN_3D_00006"
+    },
+    {
+      "stem": "A frustum of a cone has top radius 7 cm, bottom radius 14 cm and height 24 cm. Find its Total Surface Area. (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "1650 cm² — lateral surface area only; both circular base areas are left out",
+          "is_correct": false
+        },
+        {
+          "option_text": "2354 cm² — height 24 cm used directly in CSA formula instead of slant height",
+          "is_correct": false
+        },
+        {
+          "option_text": "2420 cm² — slant height 25 cm computed first, then full TSA formula applied",
+          "is_correct": true
+        },
+        {
+          "option_text": "2266 cm² — only the larger base circle (R=14) is added to the lateral area",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Step 1 — Slant height: l = √(h² + (R−r)²) = √(24² + 7²) = √(576+49) = √625 = 25 cm. Step 2 — TSA = π(R+r)l + πR² + πr² = π×21×25 + π×196 + π×49 = π(525+196+49) = 770π = 770×(22/7) = 110×22 = 2420 cm². Option A (1650) gives only πl(R+r) = 525π = 1650 — bases omitted. Option B (2354) skips the slant-height step and plugs h=24 directly: π×21×24 + 245π = 504π+245π = 749π = 749×22/7 = 107×22 = 2354 — the single most common frustum error. Option D (2266) adds only the bottom base: (525+196)π = 721π = 721×22/7 = 103×22 = 2266. **Short Trick:** Always check if (R−r) and h form a Pythagorean triple before computing l. Here (7, 24, 25) is a classic triple — l = 25 directly. Then TSA = π × [21×25 + 14² + 7²] = π × [525+196+49] = 770π. Divide 770 by 7 = 110, multiply by 22 = 2420 cm².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:42:02+00:00",
+      "id": "sgk_QA_MEN_3D_00007"
+    },
+    {
+      "stem": "A solid cylinder has base radius 7 cm and height 10 cm. What is its Curved Surface Area? (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "220 cm², computed as πrh without the factor of 2",
+          "is_correct": false
+        },
+        {
+          "option_text": "440 cm², the correct value using the 2πrh formula",
+          "is_correct": true
+        },
+        {
+          "option_text": "308 cm², the combined area of both flat circular ends",
+          "is_correct": false
+        },
+        {
+          "option_text": "748 cm², which equals the Total Surface Area of the cylinder",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. CSA = 2πrh = 2 × (22/7) × 7 × 10 = 2 × 22 × 10 = 440 cm². Option A (220 cm²) drops the factor 2, computing πrh only — the single most common mistake. Option C (308 cm²) = 2πr² = 2 × (22/7) × 49 = 308, which is the area of the two flat circular ends, not the curved surface. Option D (748 cm²) = 2πr(h + r) = 2 × (22/7) × 7 × 17 = 748, which is the TSA, not the CSA. **Short Trick:** The 7s cancel beautifully: 2 × (22/7) × 7 × 10 = 2 × 22 × 10 = 440. Always check whether you need CSA (lateral only) or TSA (lateral + both circles) before plugging in.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:56:40+00:00",
+      "id": "sgk_QA_MEN_3D_00008"
+    },
+    {
+      "stem": "A solid cone of base radius 7 cm and height 6 cm is placed on top of a solid cylinder of the same base radius and height 10 cm. Find the total volume of the combined solid. (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "1540 cm³, counting only the cylinder and forgetting the cone",
+          "is_correct": false
+        },
+        {
+          "option_text": "1848 cm³, the correct combined volume of cone and cylinder",
+          "is_correct": true
+        },
+        {
+          "option_text": "2464 cm³, adding cone volume without applying the one-third factor",
+          "is_correct": false
+        },
+        {
+          "option_text": "1232 cm³, obtained by subtracting the cone from the cylinder",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. V_cylinder = πr²h = (22/7) × 49 × 10 = 22 × 70 = 1540 cm³. V_cone = (1/3)πr²h = (1/3) × (22/7) × 49 × 6 = (1/3) × 22 × 42 = (1/3) × 924 = 308 cm³. Total = 1540 + 308 = 1848 cm³. Option C (2464) is the most tempting error — forgetting the 1/3: adding 924 instead of 308 gives 2464. Option D (1232) subtracts as though the cone is a hollow cavity. Option A counts only the cylinder. **Short Trick:** V_cone = (1/3) × V_of_same-base-and-height cylinder. So compute V_cylinder for h = 6 first: 22 × 42 = 924; then divide by 3 = 308. Add to main cylinder's 1540 = 1848.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:56:40+00:00",
+      "id": "sgk_QA_MEN_3D_00009"
+    },
+    {
+      "stem": "A solid metallic sphere of radius 9 cm is melted and recast into small solid cylinders each of base radius 3 cm and height 3 cm. How many complete cylinders are formed? (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "27 cylinders, dropping the 4/3 factor from the sphere volume",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 cylinders, the correct count after recasting the sphere",
+          "is_correct": true
+        },
+        {
+          "option_text": "54 cylinders, an over-count from halving the cylinder's volume",
+          "is_correct": false
+        },
+        {
+          "option_text": "108 cylinders, using 4πr³ without dividing by 3 for the sphere",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. V_sphere = (4/3)π × 9³ = (4/3)π × 729 = 972π cm³. V_small_cylinder = π × 3² × 3 = 27π cm³. n = 972π ÷ 27π = 36. Option A (27): uses πr³ instead of (4/3)πr³, so V_sphere = 729π; 729/27 = 27 — the classic 4/3-forgotten error. Option D (108): uses 4πr³ = 2916π; 2916/27 = 108 — omitting the denominator 3 entirely. Option C (54) traps students who halve the cylinder volume to 13.5π. **Short Trick:** Cancel π first. n = (4/3 × 729) / 27 = 4 × 729 / 81 = 4 × 9 = 36. No calculator needed — just simplify step by step.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:56:40+00:00",
+      "id": "sgk_QA_MEN_3D_00010"
+    },
+    {
+      "stem": "A frustum of a cone has top radius 7 cm, bottom radius 14 cm and vertical height 24 cm. Find its Curved Surface Area. (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "550 cm², using the difference of the radii instead of their sum",
+          "is_correct": false
+        },
+        {
+          "option_text": "1650 cm², correct CSA using the sum of radii times the slant height",
+          "is_correct": true
+        },
+        {
+          "option_text": "1584 cm², using vertical height 24 cm instead of slant height 25 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "2420 cm², the Total Surface Area including both circular end-faces",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Step 1 — slant height: l = √[h² + (r₂ − r₁)²] = √[24² + 7²] = √[576 + 49] = √625 = 25 cm. Step 2 — CSA = π(r₁ + r₂) × l = (22/7) × 21 × 25 = 22 × 3 × 25 = 1650 cm². Option A (550): uses (r₂ − r₁) = 7 in the formula instead of the sum 21: (22/7) × 7 × 25 = 550. Option C (1584): skips the slant-height step, plugging h = 24 directly: (22/7) × 21 × 24 = 1584 — a very common exam error. Option D (2420): adds the two circular base areas π(7² + 14²) = (22/7) × 245 = 770; 1650 + 770 = 2420, giving TSA instead of CSA. **Short Trick:** Spot the Pythagorean triple: Δr = 14 − 7 = 7, h = 24 → triple 7-24-25, so l = 25 instantly. Then sum of radii = 21, and 21/7 = 3, giving (22 × 3 × 25) = 1650.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:56:40+00:00",
+      "id": "sgk_QA_MEN_3D_00011"
+    },
+    {
+      "stem": "A solid metallic cylinder of base radius 6 cm and height 8 cm is melted and recast into solid spheres of radius 2 cm each. How many complete spheres are formed? (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "18 spheres, mistakenly using the sphere's surface area as its volume",
+          "is_correct": false
+        },
+        {
+          "option_text": "27 spheres, the correct number obtained after recasting the cylinder",
+          "is_correct": true
+        },
+        {
+          "option_text": "36 spheres, omitting the 4/3 factor from the sphere volume formula",
+          "is_correct": false
+        },
+        {
+          "option_text": "54 spheres, using the hemisphere volume formula 2/3 πr³ by mistake",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. V_cylinder = πr²h = π × 36 × 8 = 288π cm³. V_sphere = (4/3)πr³ = (4/3) × π × 8 = (32/3)π cm³. n = 288π ÷ (32π/3) = 288 × 3/32 = 864/32 = 27. Option C (36): forgets 4/3, uses πr³ = 8π → 288/8 = 36. Option D (54): confuses sphere with hemisphere, using (2/3)πr³ = (16/3)π → 288 × 3/16 = 54. Option A (18): treats sphere volume as surface area 4πr² = 16π → 288/16 = 18. **Short Trick:** Cancel π, then n = (r_cyl² × h_cyl × 3) / (4 × r_sph³) = (36 × 8 × 3) / (4 × 8) = 864/32 = 27. The 8s in numerator and denominator cancel to give 36 × 3/4 = 27.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:56:40+00:00",
+      "id": "sgk_QA_MEN_3D_00012"
+    },
+    {
+      "stem": "A conical vessel of base radius 12 cm and height 16 cm is completely filled with water. This water is poured into an empty right circular cylinder of base radius 8 cm. What is the height of water in the cylindrical vessel? (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "6 cm — obtained by halving an incorrect intermediate calculation",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 cm — correct, by equating the cone's and cylinder's volumes",
+          "is_correct": true
+        },
+        {
+          "option_text": "16 cm — from swapping the cone's base radius and height values",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 cm — from omitting the one-third factor in the cone's volume",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. V_cone = (1/3)π × 12² × 16 = (1/3) × π × 144 × 16 = 768π cm³. Set equal to V_cylinder: π × 8² × H = 768π → 64H = 768 → H = 12 cm. Option D (36): the most common error — omits 1/3: V_cone (wrong) = π × 144 × 16 = 2304π; 2304/64 = 36. Option C (16): swaps r and h of the cone, using r = 16, h = 12: (1/3) × π × 256 × 12 = 1024π; 1024/64 = 16. Option A (6): an arithmetic slip — perhaps from halving the correct 12. **Short Trick:** π cancels throughout. H = (r_cone² × h_cone) / (3 × r_cyl²) = (144 × 16) / (3 × 64) = 2304/192 = 12. Memorise pattern: r² ratio drives most of the result.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:56:40+00:00",
+      "id": "sgk_QA_MEN_3D_00013"
+    },
+    {
+      "stem": "A composite solid is formed by placing a solid hemisphere of radius 7 cm on the flat circular base of a solid cone of the same base radius. The cone's height is 24 cm. Find the Total Surface Area of the composite solid. (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "704 cm², from applying the cone's own TSA formula πr(l + r) alone",
+          "is_correct": false
+        },
+        {
+          "option_text": "836 cm², from using vertical height 24 cm in place of slant height 25 cm",
+          "is_correct": false
+        },
+        {
+          "option_text": "858 cm², correct TSA = lateral cone surface + curved hemisphere surface",
+          "is_correct": true
+        },
+        {
+          "option_text": "1012 cm², adding an extra πr² for a base that is internally hidden",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Exposed surfaces: (i) lateral face of cone = πrl, and (ii) curved face of hemisphere = 2πr². The shared circular disk (hemisphere's flat face meeting the cone's base) is internal — not exposed, not counted. Slant height of cone: l = √(r² + h²) = √(49 + 576) = √625 = 25 cm. TSA = π × 7 × 25 + 2 × π × 49 = 175π + 98π = 273π = 273 × (22/7) = 39 × 22 = 858 cm². Option A (704): treats composite as a standalone cone: π × 7 × (25 + 7) = 224π = 704 — adds πr² instead of 2πr², equivalent to using the cone's own TSA formula. Option B (836): substitutes h = 24 for l in the cone's lateral term: π × 7 × 24 + 2π × 49 = 168π + 98π = 266π = 836. Option D (1012): adds an extra πr² = 22 × 7 = 154 imagining the bottom base is open, giving 858 + 154 = 1012. **Short Trick:** Rule for hemisphere-on-cone composites — exposed area = πrl + 2πr². The shared flat disk always cancels. Compute l first using the 7-24-25 Pythagorean triple, then 273 × 22/7 = 39 × 22 = 858.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T18:56:40+00:00",
+      "id": "sgk_QA_MEN_3D_00014"
+    },
+    {
+      "stem": "A right circular cone has base radius 6 cm and height 7 cm. Find its volume. (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "264 cubic centimetres",
+          "is_correct": true
+        },
+        {
+          "option_text": "792 cubic centimetres",
+          "is_correct": false
+        },
+        {
+          "option_text": "528 cubic centimetres",
+          "is_correct": false
+        },
+        {
+          "option_text": "132 cubic centimetres",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. V = ⅓πr²h = 1/3 × 22/7 × 36 × 7 = 1/3 × 22 × 36 = 264 cm³. Option 792 cm³ arises from omitting the ⅓ divisor (using πr²h instead). Option 528 cm³ comes from using 2/3 instead of 1/3 — mixing up hemisphere and cone formulas. Option 132 cm³ is half the correct value, from an arithmetic slip. **Short Trick:** Cancel the 7 with 22/7 immediately: V = 22 × 36 ÷ 3 = 22 × 12 = 264 cm³. The ÷3 and the 36 give 12, a quick mental step.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:06:26+00:00",
+      "id": "sgk_QA_MEN_3D_00015"
+    },
+    {
+      "stem": "A solid hemisphere has base radius 14 cm. Find its Curved Surface Area (the dome surface, excluding the flat circular base). (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "616 square centimetres",
+          "is_correct": false
+        },
+        {
+          "option_text": "1232 square centimetres",
+          "is_correct": true
+        },
+        {
+          "option_text": "1848 square centimetres",
+          "is_correct": false
+        },
+        {
+          "option_text": "924 square centimetres",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. CSA of hemisphere = 2πr² (curved dome only; base excluded). = 2 × 22/7 × 14² = 2 × 22/7 × 196 = 2 × 22 × 28 = 1232 cm². Option 616 cm² = πr² — the area of the flat circular base only; a classic mix-up of which surface is being asked. Option 1848 cm² = 3πr² — that is the Total Surface Area (dome + base), not CSA alone. Option 924 cm² = 3/2 πr² — a non-existent formula. **Short Trick:** Compute πr² first: 22/7 × 196 = 616. Then CSA = 2 × 616 = 1232; TSA = 3 × 616 = 1848. Memorise: CSA uses 2, TSA uses 3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:06:26+00:00",
+      "id": "sgk_QA_MEN_3D_00016"
+    },
+    {
+      "stem": "A metallic solid cone of base radius 6 cm and height 8 cm is melted and recast into small solid spheres each of radius 1 cm. How many complete spheres can be made? (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "24 spheres can be formed from the melt",
+          "is_correct": false
+        },
+        {
+          "option_text": "72 spheres can be formed from the melt",
+          "is_correct": true
+        },
+        {
+          "option_text": "96 spheres can be formed from the melt",
+          "is_correct": false
+        },
+        {
+          "option_text": "216 spheres can be formed from the melt",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. V_cone = ⅓πr²h = ⅓ × π × 36 × 8 = 96π cm³. V_sphere = (4/3)πR³ = (4/3)π × 1 = 4π/3 cm³. Number = 96π ÷ (4π/3) = 96 × 3/4 = 72. Option 24: from using V_sphere = 4πr³ (missing the 1/3 coefficient), so 96π/4π = 24 — a direct formula-recall error. Option 96: from treating sphere volume as πr³ = π, giving 96π/π = 96. Option 216: from omitting ⅓ in cone volume (πr²h = 288π), giving 288 ÷ (4/3) = 216. **Short Trick:** N = r²h / (4R³) = (36 × 8)/(4 × 1) = 288/4 = 72. The π and all ⅓ factors cancel completely — do this ratio arithmetic directly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:06:26+00:00",
+      "id": "sgk_QA_MEN_3D_00017"
+    },
+    {
+      "stem": "A solid sphere of radius r is placed inside a right circular cylinder that just encloses it (sphere touches the curved surface and both flat caps). What is the ratio of the volume of the sphere to the volume of the cylinder?",
+      "options": [
+        {
+          "option_text": "1 : 2, as sphere volume is half the cylinder",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 : 3, two-thirds of the cylinder's volume",
+          "is_correct": true
+        },
+        {
+          "option_text": "3 : 4, three-fourths of the cylinder volume",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 : 3, one-third of the cylinder's volume",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The enclosing cylinder has radius = r and height = 2r (equal to sphere diameter). V_sphere = (4/3)πr³. V_cylinder = πr² × 2r = 2πr³. Ratio = (4/3)πr³ : 2πr³ = 4/3 : 2 = 4 : 6 = 2 : 3. Option 1:2 is the most common error — it treats sphere volume as πr³ (forgetting the 4/3 factor). Option 1:3 confuses sphere with cone (⅓ factor). **Short Trick:** Ratio = (4/3) / 2 = 4/6 = 2/3. The sphere always occupies exactly two-thirds of its enclosing cylinder — a standard result worth memorising.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:06:26+00:00",
+      "id": "sgk_QA_MEN_3D_00018"
+    },
+    {
+      "stem": "Water flows through a cylindrical pipe of inner radius 7 cm at a speed of 5 m/s. How long will it take to fill a cylindrical tank of base radius 35 cm and height 10 m? (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "25 seconds to completely fill the tank",
+          "is_correct": false
+        },
+        {
+          "option_text": "50 seconds to completely fill the tank",
+          "is_correct": true
+        },
+        {
+          "option_text": "100 seconds to completely fill the tank",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 seconds to completely fill the tank",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Convert speed: 5 m/s = 500 cm/s. Volume entering per second = πr²v = 22/7 × 49 × 500 = 22 × 7 × 500 = 77,000 cm³/s. Tank volume = πR²H = 22/7 × 1225 × 1000 = 22 × 175,000 = 3,850,000 cm³. Time = 3,850,000 ÷ 77,000 = 50 s. Option 25 s: from halving the correct time, e.g. using pipe diameter instead of radius. Option 100 s: from a unit error — treating pipe radius as 7 m, making the pipe appear 100× narrower. **Short Trick:** π cancels outright. Time = R²H / (r²v) = (35² × 1000)/(7² × 500) = (1225 × 1000)/(49 × 500) = 1,225,000/24,500 = 50 s. Note 35/7 = 5, so (5² × 1000/500) = 25 × 2 = 50.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:06:26+00:00",
+      "id": "sgk_QA_MEN_3D_00019"
+    },
+    {
+      "stem": "A hollow metallic sphere with external radius 6 cm and internal radius 3 cm is melted and recast into a solid right circular cylinder of height 63 cm. What is the base radius of the cylinder? (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "6 cm radius (outer sphere dimension assumed)",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 cm radius (inner sphere cavity assumed)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 cm radius (r² = 4 mistakenly read as r = 4)",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 cm radius (volume-conservation equations solved)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. V_hollow = (4/3)π(R³ − r³) = (4/3) × 22/7 × (216 − 27) = (4/3) × 22/7 × 189. Since 189/7 = 27: = (4/3) × 22 × 27 = 4 × 22 × 9 = 792 cm³. V_cylinder = πr²h = 22/7 × r² × 63 = 22 × 9 × r² = 198r². Setting equal: 198r² = 792 → r² = 4 → r = 2 cm. Option 6 cm and 3 cm: shortcuts where a student reads off a sphere radius without computing. Option 4 cm: correct algebra produces r² = 4, but the student writes r = 4 instead of taking √4. **Short Trick:** Strip π: 4/3 × (6³ − 3³) = r² × 63 → 4/3 × 189 = 63r² → 252 = 63r² → r² = 4 → r = 2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:06:26+00:00",
+      "id": "sgk_QA_MEN_3D_00020"
+    },
+    {
+      "stem": "A tent is in the form of a cylinder of diameter 7 m and height 3 m, surmounted by a cone of the same base diameter and slant height 5 m. Find the total area of canvas required to make the tent (tent has no floor). (Use π = 22/7)",
+      "options": [
+        {
+          "option_text": "55 square metres (cone curved surface only)",
+          "is_correct": false
+        },
+        {
+          "option_text": "66 square metres (cylinder curved surface only)",
+          "is_correct": false
+        },
+        {
+          "option_text": "121 square metres (cone CSA plus cylinder CSA)",
+          "is_correct": true
+        },
+        {
+          "option_text": "198 square metres (CSA total plus both circular bases)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Radius r = 3.5 m. CSA of cone = πrl = 22/7 × 3.5 × 5 = 22 × 0.5 × 5 = 55 m². CSA of cylinder = 2πrh = 2 × 22/7 × 3.5 × 3 = 2 × 22 × 0.5 × 3 = 66 m². Total canvas = 55 + 66 = 121 m². The floor is absent (tent open at base), so no base circle is added. Option 55 m² or 66 m²: from counting only one component. Option 198 m²: adds both circular ends (2 × πr² = 2 × 22/7 × 12.25 = 77 m²), giving 121 + 77 = 198 — treating the tent as a closed solid. **Short Trick:** Diameter = 7 cancels 7 in 22/7 cleanly. CSA_cone = 22/7 × 7/2 × 5 = 11 × 5 = 55; CSA_cyl = 2 × 22/7 × 7/2 × 3 = 22 × 3 = 66; total = 121 m².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T03:06:26+00:00",
+      "id": "sgk_QA_MEN_3D_00021"
+    }
+  ]
+}

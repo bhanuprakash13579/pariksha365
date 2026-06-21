@@ -213,6 +213,216 @@
       "generator_tag": "auto-seed-2026-06-19",
       "generated_at": "2026-06-19T13:22:36+00:00",
       "id": "sgk_GK_INSTRUMENTS_USES_00007"
+    },
+    {
+      "stem": "ATM receipt printers and Point-of-Sale billing terminals both use a type of printer that requires no ink cartridge, toner, or ribbon. Which technology do these devices rely on?",
+      "options": [
+        {
+          "option_text": "Inkjet printer that ejects liquid ink onto paper",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thermal printer that uses heat-sensitive coated paper",
+          "is_correct": true
+        },
+        {
+          "option_text": "Dot-matrix printer that strikes an inked ribbon on paper",
+          "is_correct": false
+        },
+        {
+          "option_text": "Laser printer that fuses toner using an electrostatic drum",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Thermal printers apply localised heat to chemically coated paper, causing it to darken — no ink, toner, or ribbon needed. ATMs, POS terminals, and supermarket receipt machines all use thermal technology because it is fast, quiet, and low-maintenance. Dot-matrix uses an inked ribbon (older technology), inkjet uses liquid ink cartridges, and laser uses toner powder fused by a photosensitive drum. Candidates often confuse thermal with laser because both are 'non-ink', but laser requires a cartridge while thermal does not.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:58+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00008"
+    },
+    {
+      "stem": "At a supermarket checkout the cashier scans a product and its price appears instantly. The handheld scanner identifies the product by detecting which physical phenomenon?",
+      "options": [
+        {
+          "option_text": "Magnetic field variations encoded on the product label",
+          "is_correct": false
+        },
+        {
+          "option_text": "Radio waves reflected by a passive RFID chip in the label",
+          "is_correct": false
+        },
+        {
+          "option_text": "Differences in light reflectance between black bars and white spaces",
+          "is_correct": true
+        },
+        {
+          "option_text": "Infrared heat signature unique to each product package material",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. A barcode scanner shines a laser beam or LED array onto the barcode. Black bars absorb light while white spaces reflect it back to a photodetector; the pattern of dark/light pulses is decoded into a numeric product code. RFID (Option B) uses radio waves and does not need line-of-sight — it is a different technology used in toll tags and library books. Magnetic variations (Option A) describe MICR used on bank cheques. Infrared heat signatures are unrelated to retail scanning.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:58+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00009"
+    },
+    {
+      "stem": "A music producer connects an electronic keyboard to a recording computer using a MIDI interface. What does the MIDI connection actually transmit from the keyboard to the computer?",
+      "options": [
+        {
+          "option_text": "Compressed stereo audio waveforms sampled at 44.1 kHz",
+          "is_correct": false
+        },
+        {
+          "option_text": "Digital event messages encoding note, velocity, and duration only",
+          "is_correct": true
+        },
+        {
+          "option_text": "Analogue voltage signals later digitised by the sound card ADC",
+          "is_correct": false
+        },
+        {
+          "option_text": "Sheet-music notation exported in MusicXML text format",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. MIDI (Musical Instrument Digital Interface) is a performance-event protocol — it transmits which key was pressed, how hard (velocity 0–127), and for how long (duration), as compact numeric messages. It carries NO audio whatsoever; the receiving synthesiser or DAW software generates the actual sound using its own sound engine. Option A describes digital audio (PCM/WAV), which requires a dedicated audio interface, not MIDI. Option C describes an Analogue-to-Digital Converter role. Option D (MusicXML) is notation-software output, entirely separate from MIDI.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:58+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00010"
+    },
+    {
+      "stem": "A server-room technician installs a KVM switch to manage eight rack-mounted servers from a single workstation desk. Which set of peripherals does the KVM switch share across all eight servers?",
+      "options": [
+        {
+          "option_text": "Network interface cards and SAN storage HBA adapters only",
+          "is_correct": false
+        },
+        {
+          "option_text": "Keyboard, Video display monitor, and Mouse from one console",
+          "is_correct": true
+        },
+        {
+          "option_text": "Power supply units and UPS battery modules across all servers",
+          "is_correct": false
+        },
+        {
+          "option_text": "GPU cards and RAM modules pooled dynamically across the servers",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. KVM is the acronym for Keyboard, Video (monitor), Mouse. The switch lets one keyboard, one monitor, and one mouse control multiple servers by switching the signal electronically between them. This saves physical space and equipment cost. Each server retains its own NIC and storage HBA independently (Option A). Power distribution uses PDUs, not KVM switches (Option C). GPU and RAM pooling is handled by GPU virtualisation or NUMA, not KVM (Option D).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:58+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00011"
+    },
+    {
+      "stem": "A corporate IT team chooses Network Attached Storage (NAS) over a Storage Area Network (SAN) for their branch office. Which statement correctly distinguishes how these two systems present storage to client machines?",
+      "options": [
+        {
+          "option_text": "NAS uses block-level Fibre Channel; SAN uses file-level NFS protocol",
+          "is_correct": false
+        },
+        {
+          "option_text": "NAS serves files over TCP/IP while SAN exposes raw block storage to hosts",
+          "is_correct": true
+        },
+        {
+          "option_text": "NAS requires a dedicated private VLAN; SAN shares the workstation IP subnet",
+          "is_correct": false
+        },
+        {
+          "option_text": "NAS writes only to WORM optical discs; SAN stores data solely on tape arrays",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. NAS is essentially a file server — clients access it using file-level protocols (NFS on Linux, SMB/CIFS on Windows) over standard Ethernet/TCP/IP. SAN exposes block-level storage: the server sees a SAN volume as a locally attached raw disk (accessed via Fibre Channel or iSCSI). Option A completely reverses the protocols — Fibre Channel is a SAN technology, NFS is a NAS protocol. Option C reverses the networking requirements. Option D describes specific storage media (WORM, tape) and is unrelated to the NAS/SAN architectural distinction.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:58+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00012"
+    },
+    {
+      "stem": "A DMA (Direct Memory Access) controller is present in virtually every modern computer. What specific architectural bottleneck does it solve that a CPU-only data-transfer scheme creates?",
+      "options": [
+        {
+          "option_text": "Translating virtual memory page addresses to physical RAM locations",
+          "is_correct": false
+        },
+        {
+          "option_text": "Moving bulk data between peripherals and RAM without occupying the CPU",
+          "is_correct": true
+        },
+        {
+          "option_text": "Buffering incoming network packets inside a dedicated on-chip L3 cache",
+          "is_correct": false
+        },
+        {
+          "option_text": "Compressing data blocks on-the-fly before writing them to secondary storage",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Without DMA, the CPU must fetch every byte from a peripheral (disk, NIC, sound card) and store it to RAM individually — a programmed-I/O busy loop that holds the CPU hostage for the entire transfer duration. A DMA controller seizes the system bus autonomously, transfers the entire data block at hardware speed, and signals the CPU with a single interrupt only when done, freeing the CPU for other work throughout. Option A describes the Memory Management Unit (MMU), a separate component. Option C (network packet buffering in L3) is not a DMA function. Option D (on-the-fly compression) describes a dedicated compression engine, not DMA.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:58+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00013"
+    },
+    {
+      "stem": "An embedded systems engineer chooses hardware interrupt-driven I/O over software polling for a real-time pressure sensor. Which statement correctly captures the core trade-off that makes the interrupt approach preferable in this scenario?",
+      "options": [
+        {
+          "option_text": "Polling burns CPU in a busy-wait loop; interrupts free the CPU until an event fires",
+          "is_correct": true
+        },
+        {
+          "option_text": "Polling uses dedicated IRQ lines; interrupts rely on periodic software timer checks",
+          "is_correct": false
+        },
+        {
+          "option_text": "Interrupt service latency is always lower than polling latency across all architectures",
+          "is_correct": false
+        },
+        {
+          "option_text": "Polling is triggered by hardware assertion; interrupts are purely software-scheduled events",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. In software polling, the CPU spins continuously checking a status register even when no event has occurred, consuming 100% of its cycles on waiting (busy-wait). With hardware interrupts the CPU executes its main program undisturbed; when the sensor asserts an IRQ line the CPU saves context, runs the Interrupt Service Routine (ISR), and then resumes — only reacting when something actually happens. Options B and D reverse the definitions: IRQ lines are the hardware-interrupt mechanism, not a polling resource. Option C is a trap — interrupt latency is real (context save/restore overhead), and ultra-low-latency drivers sometimes deliberately use tight polling loops to beat interrupt latency, which is why Option C uses the absolute word 'always', making it factually false.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:04:58+00:00",
+      "id": "sgk_GK_INSTRUMENTS_USES_00014"
     }
   ]
 }

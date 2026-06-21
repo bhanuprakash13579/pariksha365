@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Matrix & Rule Detection",
+  "topic_code": "RSN_MATRIX",
+  "questions": [
+    {
+      "stem": "In the number matrix below, what value should replace the question mark? Row-1: (2, 5, 7) | Row-2: (4, 8, 12) | Row-3: (3, 9, ?)",
+      "options": [
+        {
+          "option_text": "11 — found by subtracting column 1 from column 2 of row 3, then adding 5",
+          "is_correct": false
+        },
+        {
+          "option_text": "14 — found by following the main diagonal pattern 2, 8, 14 (adding 6 each step)",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 — found by adding the first and second column values of row 3 together",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 — found by applying a column-wise decreasing arithmetic pattern to column 3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. In every row, col3 = col1 + col2: Row 1: 2+5=7 ✓; Row 2: 4+8=12 ✓; Row 3: 3+9=12. Option B (14) tempts students who trace the main diagonal (2, 8, ?) and assume a +6 pattern — but the diagonal rule does not govern this matrix. Option D (10) arises from wrongly applying a column-3 descending pattern (7, 12, 10), which is not consistent. **Short Trick:** Always verify the candidate rule on BOTH known rows before applying to the unknown. Row-sum rule: 2+5=7 ✓, 4+8=12 ✓ → confirmed; 3+9=12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:02:45+00:00",
+      "id": "sgk_RSN_MATRIX_00001"
+    },
+    {
+      "stem": "In the letter matrix below, which letter replaces the question mark? Row-1: (A, C, E) | Row-2: (B, D, F) | Row-3: (C, E, ?)",
+      "options": [
+        {
+          "option_text": "F — appears next in column 3 if each row simply continues the last letter",
+          "is_correct": false
+        },
+        {
+          "option_text": "H — appears if the column 3 gap resets to +2 starting from F in row 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "I — appears at alphabetical position 9, assuming a +3 jump from row 2 to row 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "G — appears at position 7, completing both the row's +2 gap and column's +1 rule",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. Two consistent rules operate simultaneously. Row rule: each row is an AP with gap +2 in alphabet positions — Row 3: C(3), E(5), G(7) ✓. Column rule: each column advances by +1 per row — Col 3: E(5), F(6), G(7) ✓. Both rules independently point to G. Option A (F) is wrong because F is already in Row 2, Col 3 — a student notices col3 moves E→F and extrapolates, but that gives col3 Row 3 = G, not F again. Option B (H) applies a +2 column jump instead of +1. **Short Trick:** In any letter matrix, check the row rule AND column rule — the answer is valid only if it satisfies both.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:02:45+00:00",
+      "id": "sgk_RSN_MATRIX_00002"
+    },
+    {
+      "stem": "In the number matrix below, what value should replace the question mark? Row-1: (3, 4, 12) | Row-2: (5, 6, 30) | Row-3: (7, 9, ?)",
+      "options": [
+        {
+          "option_text": "54 — result of multiplying column 2 values from rows 2 and 3 (6 × 9 = 54)",
+          "is_correct": false
+        },
+        {
+          "option_text": "63 — result of multiplying column 1 and column 2 values in row 3 (7 × 9 = 63)",
+          "is_correct": true
+        },
+        {
+          "option_text": "72 — result of multiplying the next integer after column 1 with column 2 (8 × 9)",
+          "is_correct": false
+        },
+        {
+          "option_text": "56 — result of multiplying column 1 value with its immediate successor (7 × 8)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The rule is col3 = col1 × col2 in every row: Row 1: 3×4=12 ✓; Row 2: 5×6=30 ✓; Row 3: 7×9=63. Option A (54) is the most tempting trap — a student who reads column 2 as 6 (from Row 2) instead of 9 (from Row 3) computes 6×9=54. Option D (56) increments col2 from 9 to 8 by mistake (7×8=56). Option C (72) increments col1 from 7 to 8 by mistake (8×9=72). **Short Trick:** In product matrices, lock the row before multiplying — always use both values from the SAME row. Verify: 3×4=12, 5×6=30; apply: 7×9=63.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:02:45+00:00",
+      "id": "sgk_RSN_MATRIX_00003"
+    },
+    {
+      "stem": "In the letter matrix below, which letter replaces the question mark? Row-1: (B, E, H) | Row-2: (D, G, J) | Row-3: (F, I, ?)",
+      "options": [
+        {
+          "option_text": "L — at alphabetical position 12, satisfying both row gap (+3) and column gap (+2)",
+          "is_correct": true
+        },
+        {
+          "option_text": "K — at alphabetical position 11, applying only the single-step column increment rule",
+          "is_correct": false
+        },
+        {
+          "option_text": "M — at alphabetical position 13, confusing the row-start gap with the within-row gap",
+          "is_correct": false
+        },
+        {
+          "option_text": "N — at alphabetical position 14, derived from a false diagonal sum rule in the matrix",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Row rule (within each row, gap = +3): Row 3: F(6), I(9), L(12) — gaps of +3 ✓. Column rule (each column advances +2 per row): Col 3: H(8)→J(10)→L(12) — gap of +2 per row ✓. Both rules converge on L (position 12). Option B (K, position 11) arises from using a +1 column increment instead of +2 — it would make Col 3: H, I, J, which doesn't match the observed H→J gap. Option C (M, position 13) confuses the inter-row start increment (+2, i.e., B→D→F) with the within-row gap (+3, i.e., B→E→H). **Short Trick:** Two-rule check — within-row gap: F+3=I, I+3=L ✓; cross-row col3 gap: H+2=J, J+2=L ✓. Only L satisfies both.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:02:45+00:00",
+      "id": "sgk_RSN_MATRIX_00004"
+    },
+    {
+      "stem": "In the number matrix below, what value should replace the question mark? Row-1: (6, 11, 16) | Row-2: (3, 8, 13) | Row-3: (7, ?, 17)",
+      "options": [
+        {
+          "option_text": "10 — derived from column 2's vertical pattern: 11, 8, 5 (subtract 3 per row)",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 — derived by applying a common difference of 4 to row 3 (7 + 4 = 11, 11 + 6 ≠ 17)",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 — derived by completing row 3 as an arithmetic progression with common difference 5",
+          "is_correct": true
+        },
+        {
+          "option_text": "13 — derived by matching row 3's column 2 with row 2's own column 3 value directly",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Each row forms an AP with common difference 5: Row 1: 6, 11, 16 (d=5) ✓; Row 2: 3, 8, 13 (d=5) ✓; Row 3: 7, ?, 17 → ?=7+5=12, and 12+5=17 ✓. Option A (10) follows column 2 vertically (11, 8, 5) — but a rule that governs columns need not govern rows, and using it here gives col2=5, while col3 of Row 3=17 ≠ 5+5=10. Option B (11) uses d=4, which gives 7+4=11, 11+6=17 — inconsistent difference, so it fails. **Short Trick:** When col1 and col3 of a row are both known, the common difference d = (col3−col1)/2 = (17−7)/2 = 5; therefore col2 = col1+d = 7+5 = 12.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:02:45+00:00",
+      "id": "sgk_RSN_MATRIX_00005"
+    },
+    {
+      "stem": "A matrix follows a hidden rule between its first two columns and third column. Identify the missing value (?). Row-1: (4, 25, 10) | Row-2: (9, 16, 12) | Row-3: (36, 49, ?)",
+      "options": [
+        {
+          "option_text": "42 — square root of (col1 × col2) in row 3: √(36 × 49) = √1764 = 42",
+          "is_correct": true
+        },
+        {
+          "option_text": "85 — direct sum of column 1 and column 2 values in row 3 (36 + 49 = 85)",
+          "is_correct": false
+        },
+        {
+          "option_text": "43 — arithmetic mean of column 1 and column 2 in row 3 (42.5, rounded up)",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 — square root of the larger column 2 value alone in row 3 (√49 = 7 only)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. The rule is the geometric mean: col3 = √(col1 × col2). Row 1: √(4×25)=√100=10 ✓; Row 2: √(9×16)=√144=12 ✓; Row 3: √(36×49)=√1764=42. Option C (43) uses the arithmetic mean (36+49)/2=42.5≈43 — plausible, but this fails on the earlier rows: AM of Row 1 = (4+25)/2=14.5 ≠ 10. Option D (7) applies √col2 alone (√49=7), ignoring col1 entirely. Option B (85) is the raw sum, which similarly fails the cross-check on Row 1 (4+25=29 ≠ 10). **Short Trick:** Recognise perfect squares in both columns: col1=6², col2=7² → col3=√(6²×7²)=6×7=42. Factor first, then compute.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:02:45+00:00",
+      "id": "sgk_RSN_MATRIX_00006"
+    },
+    {
+      "stem": "A 3×3 matrix is built using a well-known number relationship. Find the missing value (?). Row-1: (3, 4, 5) | Row-2: (5, 12, 13) | Row-3: (8, 15, ?)",
+      "options": [
+        {
+          "option_text": "23 — direct addition of both column values in row 3 without squaring (8 + 15)",
+          "is_correct": false
+        },
+        {
+          "option_text": "16 — treating column 3 as one more than column 2 of the same row (15 + 1 = 16)",
+          "is_correct": false
+        },
+        {
+          "option_text": "19 — applying col3 = col2 + (col1 ÷ 2), a weighted average approach (15 + 4)",
+          "is_correct": false
+        },
+        {
+          "option_text": "17 — applying √(col1² + col2²) = √(64 + 225) = √289 = 17 (Pythagorean rule)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Each row is a Pythagorean triple, satisfying col1² + col2² = col3²: Row 1: 3²+4²=9+16=25=5² ✓ (the classic 3-4-5 triple); Row 2: 5²+12²=25+144=169=13² ✓; Row 3: 8²+15²=64+225=289=17². Option A (23) just adds 8+15, ignoring the squared structure — the easiest trap. Option C (19) uses col3 = col2 + col1/2 = 15+4=19, which is numerically plausible but fails the cross-check on Row 2 (12+2.5=14.5 ≠ 13). Option B (16) treats col3 = col2+1, which fails on Row 1 (4+1=5 ✓ accidentally!) and Row 2 (12+1=13 ✓ accidentally!) but collapses on verification — the actual governing rule is Pythagorean, confirmed by two independent families. **Short Trick:** Memorise canonical Pythagorean families for SSC/IBPS: (3,4,5), (5,12,13), (8,15,17), (7,24,25), (9,40,41). Spotting the family in Row 1 and Row 2 immediately signals the pattern.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T13:02:45+00:00",
+      "id": "sgk_RSN_MATRIX_00007"
+    },
+    {
+      "stem": "A 3×3 number matrix is shown below. Each row obeys the same hidden rule. What value should replace the question mark? Row-1: (4, 7, 13) | Row-2: (6, 9, 9) | Row-3: (5, 11, ?)",
+      "options": [
+        {
+          "option_text": "6 — col-3 continues the column-3 downward sequence",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 — treating col-3 as double the col-1 value in each row",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 — every row sums to 24, so 5 + 11 + ? = 24 gives 8",
+          "is_correct": true
+        },
+        {
+          "option_text": "10 — averaging the previous col-3 values to find the next",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Rule: all three elements in each row sum to the same constant (24). Row-1: 4+7+13=24 ✓. Row-2: 6+9+9=24 ✓. Row-3: 5+11+?=24 → ?=8. Option A (6) and D (10) ignore the constant-sum rule. Option B (12) tests col-3=2×col-1, which fails for row-2 (2×6=12≠9). **Short Trick:** Check row sums before column patterns — if rows sum to the same value, the answer = row-sum − (col-1 + col-2) = 24 − 16 = 8.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:09:21+00:00",
+      "id": "sgk_RSN_MATRIX_00008"
+    },
+    {
+      "stem": "In the letter matrix below, the first two rows establish a jump pattern between columns. Which letter correctly replaces the question mark? Row-1: (C, E, H) | Row-2: (D, F, I) | Row-3: (E, G, ?)",
+      "options": [
+        {
+          "option_text": "J — col-2 letter G + 3 forward steps = J, matching the row rule",
+          "is_correct": true
+        },
+        {
+          "option_text": "H — advancing 1 letter beyond G, like the col-1 to col-2 jump",
+          "is_correct": false
+        },
+        {
+          "option_text": "I — treating col-3 as always shifted 2 places ahead of col-2",
+          "is_correct": false
+        },
+        {
+          "option_text": "K — extending by 4 steps as col-3 grows with increasing row index",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. In each row, the jump from col-1 to col-2 is +2 letters, and from col-2 to col-3 is +3 letters. Row-1: C→E (+2), E→H (+3) ✓. Row-2: D→F (+2), F→I (+3) ✓. Row-3: E→G (+2), G→? (+3). G is the 7th letter; 7+3=10th letter = J. Option H is only G+1. Option I is G+2. Option K is G+4 — the jump stays fixed at 3, it does not grow with row index. **Short Trick:** Assign positions (A=1…Z=26): G=7, 7+3=10=J.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:09:21+00:00",
+      "id": "sgk_RSN_MATRIX_00009"
+    },
+    {
+      "stem": "A number matrix follows a rule combining col-1 and col-2 to produce col-3. Identify the missing value. Row-1: (5, 3, 16) | Row-2: (7, 5, 24) | Row-3: (9, 7, ?)",
+      "options": [
+        {
+          "option_text": "28 — adding 4 to row-2's col-3 value of 24 by constant increment",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 — squaring col-1 value alone without involving col-2 at all",
+          "is_correct": false
+        },
+        {
+          "option_text": "40 — treating col-3 as col-1 × col-2 minus a constant of 23",
+          "is_correct": false
+        },
+        {
+          "option_text": "32 — rule is col1² − col2²: 9² − 7² = 81 − 49 = 32",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Rule: col-3 = col-1² − col-2². Row-1: 5²−3² = 25−9 = 16 ✓. Row-2: 7²−5² = 49−25 = 24 ✓. Row-3: 9²−7² = 81−49 = 32. Option A (28) relies on a constant +4 increment in col-3 (24+4=28), which is a coincidence of row-2 and not the true rule. The col-3 values 16, 24, 32 differ by 8, not 4. **Short Trick:** Use difference-of-squares identity a²−b² = (a+b)(a−b): (9+7)(9−7) = 16×2 = 32 — avoids squaring large numbers.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:09:21+00:00",
+      "id": "sgk_RSN_MATRIX_00010"
+    },
+    {
+      "stem": "A 3×3 matrix is constructed using a hidden rule that links every element to its row index (r) and column index (c), both starting at 1. Find the missing value. Row-1: (1, 4, 9) | Row-2: (4, 16, 36) | Row-3: (9, 36, ?)",
+      "options": [
+        {
+          "option_text": "81 — element = (r × c)², and (3 × 3)² = 9² = 81",
+          "is_correct": true
+        },
+        {
+          "option_text": "63 — adding 27 to 36, as the row-3 differences appear to be 9, 27",
+          "is_correct": false
+        },
+        {
+          "option_text": "54 — multiplying col-2 value 36 by factor 1.5 to follow a ratio",
+          "is_correct": false
+        },
+        {
+          "option_text": "144 — extending the ×4 ratio seen from 9 → 36 to get 36 × 4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Rule: element at (r, c) = (r×c)². Verify: (1,1)=1², (1,2)=2²=4, (1,3)=3²=9 ✓; (2,1)=2²=4, (2,2)=4²=16, (2,3)=6²=36 ✓; (3,3)=(3×3)²=9²=81. Option D (144) applies the ratio 9→36 (×4) forward: 36×4=144, but this ×4 ratio holds only within row-1 and fails in row-3 (9→36 in col-3 is also ×4, but that is the column-1 to column-3 ratio within one row — it does not persist as a row-to-row rule). **Short Trick:** Read the main diagonal first: 1, 16, 81 = 1², 4², 9² — the squared-product formula is revealed immediately.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:09:21+00:00",
+      "id": "sgk_RSN_MATRIX_00011"
+    },
+    {
+      "stem": "A 4×3 number matrix is built where col-1 is a perfect cube, col-2 is the corresponding perfect square, and col-3 is the integer base. Find the missing value. Row-1: (27, 9, 3) | Row-2: (64, 16, 4) | Row-3: (125, 25, 5) | Row-4: (216, ?, 6)",
+      "options": [
+        {
+          "option_text": "30 — adding 5 to col-2 of row-3, treating it as an arithmetic gap",
+          "is_correct": false
+        },
+        {
+          "option_text": "49 — continuing the square-number run 9, 16, 25, 49 and skipping 36",
+          "is_correct": false
+        },
+        {
+          "option_text": "36 — col-2 = n² where n = col-3 value; 6² = 36 exactly",
+          "is_correct": true
+        },
+        {
+          "option_text": "42 — dividing col-1 value 216 by 5 and rounding gives about 43",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. In every row the three columns carry n³, n², and n. Row-1: n=3 → 27, 9, 3 ✓. Row-2: n=4 → 64, 16, 4 ✓. Row-3: n=5 → 125, 25, 5 ✓. Row-4: n=6 (from col-3), so col-2 = 6² = 36. Option B (49) lists the perfect-square sequence as 9, 16, 25, 49 — incorrectly skipping 36 (=6²) and jumping to 7²; the anchor is always the col-3 base, not an independent sequence. **Short Trick:** Use col-3 as the key: n = col-3 → col-2 = n², col-1 = n³. Never guess col-2 from a standalone sequence.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:09:21+00:00",
+      "id": "sgk_RSN_MATRIX_00012"
+    },
+    {
+      "stem": "In a 3-column matrix, col-1 follows an arithmetic progression and col-3 is derived from col-2 by a single hidden operation. Find the missing value. Row-1: (7, 4, 16) | Row-2: (11, 6, 36) | Row-3: (15, 8, ?)",
+      "options": [
+        {
+          "option_text": "56 — adding constant gap of 20 to col-3 since 16 → 36 is a gap of 20",
+          "is_correct": false
+        },
+        {
+          "option_text": "100 — misreading col-2 as Fibonacci (4, 6, 10) and then squaring 10",
+          "is_correct": false
+        },
+        {
+          "option_text": "72 — computing 8 × 9 by conflating col-2 with a row multiplier",
+          "is_correct": false
+        },
+        {
+          "option_text": "64 — col-3 = (col-2)²; col-2 = 8, so 8² = 64 regardless of col-1",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Col-1 is arithmetic (+4): 7, 11, 15. Col-2 is arithmetic (+2): 4, 6, 8. Col-3 = (col-2)²: 4²=16, 6²=36, 8²=64. The deliberate trap is col-1 — it grows visibly and distracts candidates, but plays no role in deriving col-3. Option A (56) assumes col-3 differences are constant at 20; actually the differences are 36−16=20 and 64−36=28 (widening, as squares of even numbers must). Option B (100) results from a Fibonacci misread of col-2: col-2 is simply +2 each row (4, 6, 8), not 4, 6, 10. **Short Trick:** Isolate each column first — col-3 values 16, 36, 64 are 4², 6², 8², instantly revealing the squaring rule on col-2 alone.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:09:21+00:00",
+      "id": "sgk_RSN_MATRIX_00013"
+    },
+    {
+      "stem": "A symmetric 3×3 matrix is built by a two-variable positional rule. The matrix reads — Row-1: (2, 6, 12) | Row-2: (6, 16, 30) | Row-3: (12, 30, ?). Identify the missing value.",
+      "options": [
+        {
+          "option_text": "48 — adding 18 to 30 since col-3 differences appeared constant at 18",
+          "is_correct": false
+        },
+        {
+          "option_text": "42 — treating ? as the average of the two known row-3 values",
+          "is_correct": false
+        },
+        {
+          "option_text": "54 — formula is (r+c)×(r×c); for r=3, c=3: 6 × 9 = 54",
+          "is_correct": true
+        },
+        {
+          "option_text": "60 — doubling the gap of 18 between col-3 values 12 and 30",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Rule: element at (r, c) = (r+c)×(r×c). Check: (1,1)=2×1=2 ✓; (1,2)=3×2=6 ✓; (1,3)=4×3=12 ✓; (2,2)=4×4=16 ✓; (2,3)=5×6=30 ✓; (3,3)=6×9=54. Option A (48): col-3 values are 12, 30, 54 — differences are 18 and 24 (not constant). Note also that the matrix is symmetric: element(i,j) = element(j,i), e.g., (1,3)=(3,1)=12 and (2,3)=(3,2)=30 — this cross-check confirms no arithmetic shortcut works. **Short Trick:** Spot the symmetry first (row-1 col-3 = row-3 col-1 = 12; row-2 col-3 = row-3 col-2 = 30); symmetry signals a multiplicative positional rule, not a row-wise arithmetic one. Then (3,3) must exceed (3,2)=30 by more than 18.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:09:21+00:00",
+      "id": "sgk_RSN_MATRIX_00014"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Figure Series & Analogy",
+  "topic_code": "RSN_FIG_SERIES",
+  "questions": [
+    {
+      "stem": "In a figure analogy, each polygon contains exactly as many dots as it has diagonals. A triangle has 0 dots, a quadrilateral has 2 dots, a pentagon has 5 dots. How many dots does the hexagon figure contain?",
+      "options": [
+        {
+          "option_text": "6 dots, one for each side of the hexagon shape",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 dots, just one more than the pentagon has",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 dots, two dots per internal triangle of hexagon",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 dots, matching the hexagon's full diagonal count",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. Diagonals of a polygon = n(n-3)/2. For hexagon (n=6): 6×(6-3)/2 = 6×3/2 = 9. Series: triangle=0, quadrilateral=2, pentagon=5, hexagon=9. Option A (6) confuses diagonals with the number of sides. Option C (8) incorrectly multiplies the 4 internal triangles of a hexagon by 2. **Pattern Rule:** Differences between consecutive terms are +2, +3, +4 — the gap increases by 1 each step, so pentagon→hexagon gap = +4, giving 5+4=9. Always verify with the formula rather than trusting the difference pattern alone.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T12:56:08+00:00",
+      "id": "sgk_RSN_FIG_SERIES_00001"
+    },
+    {
+      "stem": "A figure series shows square grids growing step by step: Step 1 has a 1×1 grid (1 unit square), Step 2 has a 2×2 grid (4 unit squares), Step 3 has a 3×3 grid (9 unit squares), Step 4 has a 4×4 grid. Which option correctly describes Step 5?",
+      "options": [
+        {
+          "option_text": "20 unit squares arranged in a 4×5 rectangular grid",
+          "is_correct": false
+        },
+        {
+          "option_text": "25 unit squares arranged in a 5×5 square grid",
+          "is_correct": true
+        },
+        {
+          "option_text": "16 unit squares arranged in a 4×4 square grid",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 unit squares arranged in a 5×6 rectangular grid",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Each Step n produces an n×n grid with n² unit squares: Step 1=1, Step 2=4, Step 3=9, Step 4=16, Step 5=25. The shape remains a perfect square, not a rectangle. Option C (16) is Step 4's answer — the classic off-by-one trap when the series is shown with Step 4 already visible. Options A and D introduce non-square rectangular grids, which violates the invariant that every figure is a square. **Pattern Rule:** Always verify both the count AND the shape property (square vs rectangle) — both are part of the figure's identity in SSC matrix questions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T12:56:08+00:00",
+      "id": "sgk_RSN_FIG_SERIES_00002"
+    },
+    {
+      "stem": "A 3×3 figure matrix has one number per cell. Row 1: 8, 3, 5 | Row 2: 15, 6, 9 | Row 3: 11, 4, ?. Identify the rule operating across each row and find the missing number.",
+      "options": [
+        {
+          "option_text": "5, treating it as identical to Row 1's third value",
+          "is_correct": false
+        },
+        {
+          "option_text": "6, computed as the average of 11 and 4 in Row 3",
+          "is_correct": false
+        },
+        {
+          "option_text": "7, derived from the rule: Col1 minus Col2 equals Col3",
+          "is_correct": true
+        },
+        {
+          "option_text": "8, using the digit sum of Row 3's first two numbers",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Rule: Col1 − Col2 = Col3. Row 1: 8−3=5 ✓. Row 2: 15−6=9 ✓. Row 3: 11−4=7. Option B (6) claims average of (11+4)/2 = 7.5 ≈ 6, but 7.5 rounds to 8, not 6 — this option's own arithmetic is self-contradictory. Option D (8) adds digits: 1+1+4=6≠8. Option A copies Row 1's answer without testing any rule. **Verification Step:** Confirm the discovered rule against every given row before applying it to the unknown cell — eliminates patterns that accidentally fit only one row.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T12:56:08+00:00",
+      "id": "sgk_RSN_FIG_SERIES_00003"
+    },
+    {
+      "stem": "In a figure analogy: the letter 'b' reflected across a vertical axis gives the letter 'd'. Applying the same transformation (vertical-axis reflection) to the letter 'p', which letter results?",
+      "options": [
+        {
+          "option_text": "q — the vertical-axis mirror image of letter 'p'",
+          "is_correct": true
+        },
+        {
+          "option_text": "b — obtained by rotating letter 'p' by 90° clockwise",
+          "is_correct": false
+        },
+        {
+          "option_text": "d — produced by rotating letter 'p' by 180° around centre",
+          "is_correct": false
+        },
+        {
+          "option_text": "n — formed by flipping letter 'p' across a horizontal axis",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Reflecting 'b' across a vertical axis flips its bump from the right side to the left, producing 'd'. The same vertical-axis reflection on 'p' (bump on right, tail below baseline) flips the bump to the left, giving 'q'. Option D (n) is the result of a horizontal-axis reflection of 'p', not a vertical one. Option C (d) requires a 180° rotation of 'p', which is a distinct operation. **Quick Memory Map:** Vertical-axis reflections: b↔d and p↔q. Horizontal-axis reflections: b↔p and d↔q. These four form a symmetry group tested repeatedly in SSC figure-analogy sets.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T12:56:08+00:00",
+      "id": "sgk_RSN_FIG_SERIES_00004"
+    },
+    {
+      "stem": "Five figures each show one polygon nested inside another. Figure 1: triangle inside pentagon. Figure 2: square inside hexagon. Figure 3: pentagon inside heptagon. Figure 4: triangle inside hexagon. Figure 5: hexagon inside octagon. Which figure breaks the pattern followed by the other four?",
+      "options": [
+        {
+          "option_text": "Figure 1 — triangle inside pentagon (outer has 2 more sides)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Figure 2 — square inside hexagon (outer has 2 more sides)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Figure 4 — triangle inside hexagon (outer has 3 more sides)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Figure 5 — hexagon inside octagon (outer has 2 more sides)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. The rule: the outer polygon always has exactly 2 more sides than the inner polygon. Figure 1: 5−3=2 ✓. Figure 2: 6−4=2 ✓. Figure 3: 7−5=2 ✓. Figure 5: 8−6=2 ✓. Figure 4: hexagon(6) − triangle(3) = 3 ✗ — the gap is 3, not 2. The most tempting wrong choice is Figure 1 because triangle seems 'small', but 5−3=2 exactly satisfies the rule. **Strategy:** For odd-one-out questions, compute the defining measure (here: outer sides minus inner sides) for every figure before judging — never eliminate by visual intuition alone.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T12:56:08+00:00",
+      "id": "sgk_RSN_FIG_SERIES_00005"
+    },
+    {
+      "stem": "A 3×3 figure matrix has: Row 1: 2, 4, 12 | Row 2: 3, 9, 36 | Row 3: 4, 16, ?. The rule combines all three columns. What is the missing number?",
+      "options": [
+        {
+          "option_text": "64 — Col3 equals Col2 multiplied by Col1 directly",
+          "is_correct": false
+        },
+        {
+          "option_text": "60 — Col3 equals the previous Col3 value plus 24",
+          "is_correct": false
+        },
+        {
+          "option_text": "80 — Col3 equals Col2 multiplied by (Col1 + 1)",
+          "is_correct": true
+        },
+        {
+          "option_text": "96 — Col3 equals Col2 multiplied by (Col1 + 2)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Two layered observations: (i) Col2 = Col1² — confirmed: 2²=4, 3²=9, 4²=16. (ii) Col3 = Col2×(Col1+1): Row 1: 4×(2+1)=4×3=12 ✓. Row 2: 9×(3+1)=9×4=36 ✓. Row 3: 16×(4+1)=16×5=80. Option A (64) uses Col3=Col2×Col1=16×4=64; check Row 1: 4×2=8≠12 — fails. Option B (60) spots Col3 differences of +24 (36−12=24) and extends: 36+24=60; but the actual next difference is 80−36=44≠24 — not constant. Option D (96) uses (Col1+2): 16×6=96; check Row 1: 4×4=16≠12 — fails. **HARD Strategy:** Decompose into sub-patterns (Col2 vs Col1 first, then Col3 vs Col2) rather than scanning all three columns simultaneously — two-step decomposition is the key unlock.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T12:56:08+00:00",
+      "id": "sgk_RSN_FIG_SERIES_00006"
+    },
+    {
+      "stem": "In a 3×3 matrix every entry is a prime number. Row 1: 7, 11, 3 | Row 2: 13, 17, 5 | Row 3: 19, 23, ?. Two independent patterns operate simultaneously. What is the missing value?",
+      "options": [
+        {
+          "option_text": "5 — repeating the value already used in Row 2 Col3",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 — next term in Col3 and confirmed by the prime-column rule",
+          "is_correct": true
+        },
+        {
+          "option_text": "9 — next odd number in the Col3 arithmetic sequence",
+          "is_correct": false
+        },
+        {
+          "option_text": "11 — the next prime after 7 in the overall prime sequence",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Two simultaneous patterns converge: (1) Arithmetic columns — Col1: 7, 13, 19 (common difference +6); Col2: 11, 17, 23 (+6); Col3: 3, 5, ? (+2 each → 7). (2) All entries must be prime — Col3 lists consecutive primes: 3 (2nd prime), 5 (3rd prime), 7 (4th prime). Both patterns independently yield 7. Option A (5) repeats Row 2 Col3's value, which would break the consecutive-prime sequence in Col3. Option C (9) satisfies the +2 arithmetic but 9=3×3 is composite, disqualified by Pattern 2. Option D (11) is prime but requires a +6 step from 5, not the +2 that Col3 follows. **HARD Insight:** When two independent constraints (arithmetic + primality) converge on the same answer, that convergence is the intended confirmation signal — always check for dual constraints before finalising in hard matrix questions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-19",
+      "generated_at": "2026-06-19T12:56:08+00:00",
+      "id": "sgk_RSN_FIG_SERIES_00007"
+    }
+  ]
+}

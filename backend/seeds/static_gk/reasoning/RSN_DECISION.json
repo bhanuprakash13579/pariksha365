@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "subject": "Reasoning",
+  "topic": "Decision making — mixed tiers",
+  "topic_code": "RSN_DECISION",
+  "questions": [
+    {
+      "stem": "A government merit scholarship is granted if: (a) family annual income < ₹1.5 lakh, (b) applicant scored ≥ 65% in the qualifying exam, (c) applicant belongs to a rural area. Raju: family income ₹1.2 lakh/year, scored 68% in qualifying exam, belongs to a rural village. What decision should be taken?",
+      "options": [
+        {
+          "option_text": "Scholarship awarded — all three eligibility criteria are fully met",
+          "is_correct": true
+        },
+        {
+          "option_text": "Scholarship not awarded — income limit of ₹1.5 lakh is not satisfied",
+          "is_correct": false
+        },
+        {
+          "option_text": "Scholarship not awarded — 68% is below the required minimum of 70%",
+          "is_correct": false
+        },
+        {
+          "option_text": "Scholarship not awarded — rural area criterion requires an official certificate",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Check each criterion: (a) ₹1.2 lakh < ₹1.5 lakh ✓; (b) 68% ≥ 65% ✓; (c) rural village ✓. All three are satisfied, so Raju is awarded the scholarship. Option B is wrong — ₹1.2 lakh IS less than ₹1.5 lakh, so the income criterion is met. Option C invents a 70% cutoff; the stated rule requires only 65%. Option D adds a condition (official certificate) not mentioned anywhere in the criteria. Rule: verify every criterion against the given data; do not add unstated conditions.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:00:43+00:00",
+      "id": "sgk_RSN_DECISION_00001"
+    },
+    {
+      "stem": "A citizen may apply for a Voter ID card if: (a) age ≥ 18 years, (b) is an Indian citizen, (c) is a permanent resident of the constituency. Sunita: age 19, holds Indian citizenship, has lived in the same constituency for 4 years. What is the correct decision?",
+      "options": [
+        {
+          "option_text": "Eligible — age and citizenship alone are sufficient for voter enrollment",
+          "is_correct": false
+        },
+        {
+          "option_text": "Eligible — all three stated conditions are completely satisfied by Sunita",
+          "is_correct": true
+        },
+        {
+          "option_text": "Not eligible — minimum age for voter registration is 21 years in India",
+          "is_correct": false
+        },
+        {
+          "option_text": "Not eligible — permanent residency must be established for at least 5 years",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. (a) Sunita is 19 ≥ 18 ✓; (b) Indian citizen ✓; (c) permanent resident of the constituency ✓. All three criteria are met. Option A is wrong because all three criteria must be verified, not just two. Option C confuses the voting age (18) with the age to contest elections (25 for Lok Sabha) — a common knowledge trap. Option D invents a 5-year residency requirement that does not appear in the stated rules. Tip: in easy decision problems, trust the data given and do not import outside rules.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:00:43+00:00",
+      "id": "sgk_RSN_DECISION_00002"
+    },
+    {
+      "stem": "A firm may bid for a government construction tender if: (a) registered for ≥ 3 years, (b) annual turnover > ₹50 lakh in the previous year, (c) no ongoing litigation against the firm. EXCEPTION: A firm that has successfully completed a prior government project gets criterion (b) — turnover — waived. BuildPro Ltd: registered 4 years ago, turnover ₹38 lakh last year, no litigation, completed a government road project two years ago. What should be decided?",
+      "options": [
+        {
+          "option_text": "Eligible to bid — registration and litigation-free status alone are sufficient",
+          "is_correct": false
+        },
+        {
+          "option_text": "Eligible to bid — prior government project waives the turnover criterion here",
+          "is_correct": true
+        },
+        {
+          "option_text": "Not eligible — turnover ₹38 lakh is below the mandatory ₹50 lakh limit",
+          "is_correct": false
+        },
+        {
+          "option_text": "Not eligible — the waiver clause applies to registration period, not turnover",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Step 1 — Registration: 4 yrs ≥ 3 ✓. Step 2 — Turnover: ₹38 lakh < ₹50 lakh, but BuildPro completed a prior government project → Exception applies; criterion (b) is waived ✓. Step 3 — No litigation ✓. All effective criteria are satisfied. Option A is wrong — it skips verifying the turnover issue properly. Option C is the most tempting distractor: it correctly spots the turnover shortfall but ignores the exception clause entirely. Option D misreads the rule — it is turnover (criterion b) that is waived, not registration period. Key rule: always check exceptions BEFORE rejecting on a failed criterion.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:00:43+00:00",
+      "id": "sgk_RSN_DECISION_00003"
+    },
+    {
+      "stem": "A Below Poverty Line ration card is issued if: (a) household monthly income < ₹8,000, (b) no family member owns a motorised vehicle, (c) no family member is in government service. SPECIAL CLAUSE: If any household member has a certified permanent disability, the income limit is relaxed to < ₹13,000. Geeta's household: monthly income ₹10,500, no motorised vehicle, no government employee, one member holds a certified permanent disability certificate. What is the correct decision?",
+      "options": [
+        {
+          "option_text": "BPL card issued — disability clause raises income cap to ₹13,000; all criteria met",
+          "is_correct": true
+        },
+        {
+          "option_text": "BPL card not issued — ₹10,500 exceeds the standard ₹8,000 BPL income threshold",
+          "is_correct": false
+        },
+        {
+          "option_text": "BPL card issued — no vehicle and no government employee conditions alone suffice",
+          "is_correct": false
+        },
+        {
+          "option_text": "BPL card not issued — disability clause relaxes only the vehicle-ownership criterion",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Step 1 — Income: standard cap is ₹8,000, but a permanently disabled member exists → cap relaxed to ₹13,000; ₹10,500 < ₹13,000 ✓. Step 2 — No motorised vehicle ✓. Step 3 — No government employee ✓. All criteria are satisfied after applying the special clause. Option B is the most common error — it applies the standard limit without reading the special clause. Option C is wrong because all three criteria must be met; checking only two is insufficient. Option D fabricates a narrow scope for the disability clause; the rule explicitly states it relaxes the income limit.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:00:43+00:00",
+      "id": "sgk_RSN_DECISION_00004"
+    },
+    {
+      "stem": "A firm selects interns if: (a) applicant is currently enrolled in a degree programme, (b) CGPA ≥ 7.5 on a 10-point scale, (c) two reference letters from faculty members are submitted. EXCEPTION: A national-level award winner's CGPA criterion is fully waived. Preethi: 3rd-year B.Tech student, CGPA 6.8, has submitted two faculty reference letters, won a national-level science olympiad. What should the firm decide?",
+      "options": [
+        {
+          "option_text": "Selected — olympiad award waives CGPA rule; all remaining criteria are satisfied",
+          "is_correct": true
+        },
+        {
+          "option_text": "Not selected — CGPA 6.8 falls below the mandatory 7.5 threshold for internship",
+          "is_correct": false
+        },
+        {
+          "option_text": "Selected — two faculty reference letters alone override all other selection criteria",
+          "is_correct": false
+        },
+        {
+          "option_text": "Not selected — national award waiver is reserved for post-graduate applicants only",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Step 1 — Enrolled in B.Tech ✓. Step 2 — CGPA 6.8 < 7.5, but Preethi won a national science olympiad → Exception: CGPA criterion is waived ✓. Step 3 — Two faculty reference letters submitted ✓. All effective criteria are satisfied. Option B is wrong because it ignores the exception clause. Option C fabricates a rule that reference letters override other criteria — this does not appear anywhere in the problem. Option D adds a non-existent restriction (post-graduate only); the rule simply says 'national-level award winner' with no year-of-study condition. Strategy: exceptions must be checked after identifying a criterion failure, not before.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:00:43+00:00",
+      "id": "sgk_RSN_DECISION_00005"
+    },
+    {
+      "stem": "Candidates are shortlisted for Forest Guard if: (a) age 18–27 yrs, (b) ≥ 50% in Class 12, (c) passed both written test and physical endurance test, (d) no criminal record. RULE 1: ST/SC candidates get 5-year age relaxation. RULE 2: A candidate who fails the physical test but scores ≥ 85% in the written test is referred to the Selection Board for review — not directly selected, not directly rejected. RULE 3: Candidates holding a forest voluntary-service certificate get 5% marks relaxation in the written test. Vijay: 31 yrs, ST category, Class 12 with 52%, no criminal record, scored 87% in written test (after marks relaxation), failed physical endurance test. What is the decision?",
+      "options": [
+        {
+          "option_text": "Shortlisted directly — ST age relaxation and 87% written score satisfy all criteria",
+          "is_correct": false
+        },
+        {
+          "option_text": "Case sent to Selection Board — 87% written with physical failure triggers Rule 2",
+          "is_correct": true
+        },
+        {
+          "option_text": "Rejected — physical endurance test failure is an absolute disqualifier for Forest Guard",
+          "is_correct": false
+        },
+        {
+          "option_text": "Rejected — ST relaxation covers age only; written score cannot be relaxed under Rule 3",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Step 1 — Age: 31; ST relaxation adds 5 yrs → upper limit becomes 32; 31 ≤ 32 ✓. Step 2 — Class 12: 52% ≥ 50% ✓. Step 3 — No criminal record ✓. Step 4 — Written test: 87% ✓. Step 5 — Physical test: FAILED. Now apply Rule 2: written ≥ 85% AND physical failed → refer to Selection Board (neither select nor reject). Rule 2 fires before any automatic rejection. Option A is wrong: physical test failure blocks direct shortlisting regardless of written score. Option C is the most tempting distractor — it treats the physical test as absolute, ignoring that Rule 2 explicitly provides an alternative path. Option D misreads Rule 3 — it does not restrict ST candidates from using marks relaxation; moreover the governing rule here is Rule 2, not Rule 3.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:00:43+00:00",
+      "id": "sgk_RSN_DECISION_00006"
+    },
+    {
+      "stem": "An employee is nominated for overseas training if: (a) ≥ 4 yrs of service, (b) last appraisal rating ≥ 4/5, (c) no disciplinary proceedings in last 3 yrs, (d) division head has recommended. RULE X: Probationary employees are automatically ineligible. RULE Y: If an employee has a currently active internal grievance petition, the matter must be referred to the HR Committee before any nomination decision is made. RULE Z: An appraisal rating of 5/5 waives criterion (c) — disciplinary proceedings. Anand: 6 yrs service, appraisal rating 5/5, received a warning 2 yrs ago, division head recommended, not on probation, has an active internal grievance petition pending. What is the correct decision?",
+      "options": [
+        {
+          "option_text": "Nominated — Rule Z waives disciplinary criterion; all other nomination conditions met",
+          "is_correct": false
+        },
+        {
+          "option_text": "Referred to HR Committee — active grievance petition triggers Rule Y before nomination",
+          "is_correct": true
+        },
+        {
+          "option_text": "Not nominated — disciplinary warning within 3 years disqualifies under criterion (c)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Not nominated — Rule Y grievance referral automatically cancels the nomination process",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Step 1 — Service 6 yrs ≥ 4 ✓. Step 2 — Rating 5/5 → Rule Z fires: criterion (c) disciplinary proceedings is waived ✓. Step 3 — Division head recommended ✓. Step 4 — Not on probation → Rule X does not apply. Step 5 — Active grievance petition exists → Rule Y mandates referral to HR Committee before ANY nomination decision. Even though all criteria are satisfied after Rule Z is applied, Rule Y is a procedural override that must run first; the outcome is 'refer', not 'nominate' and not 'reject'. Option A is the most tempting distractor — it correctly applies Rule Z but ignores Rule Y entirely. Option C is wrong because Rule Z (5/5 rating) explicitly waives the disciplinary criterion. Option D overstates Rule Y — it says 'refer to HR Committee', not 'cancel the process'; D incorrectly treats referral as automatic rejection.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T19:00:43+00:00",
+      "id": "sgk_RSN_DECISION_00007"
+    }
+  ]
+}

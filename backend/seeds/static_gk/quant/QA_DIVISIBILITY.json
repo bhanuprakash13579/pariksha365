@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "subject": "Quantitative Aptitude",
+  "topic": "Divisibility & Remainders — rules, modular arithmetic, word problems",
+  "topic_code": "QA_DIVISIBILITY",
+  "questions": [
+    {
+      "stem": "Which of the following 5-digit numbers is exactly divisible by 11?",
+      "options": [
+        {
+          "option_text": "54321 (alternate-digit-sum = 9−6 = 3, not divisible by 11)",
+          "is_correct": false
+        },
+        {
+          "option_text": "72418 (alternate-digit-sum = 19−3 = 16, not divisible by 11)",
+          "is_correct": false
+        },
+        {
+          "option_text": "63756 (alternate-digit-sum = 19−8 = 11, exactly divisible by 11)",
+          "is_correct": true
+        },
+        {
+          "option_text": "81534 (alternate-digit-sum = 17−4 = 13, not divisible by 11)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Divisibility rule for 11: (sum of digits at odd positions from left) − (sum at even positions) must equal 0 or ±11. For 63756: (6+7+6) − (3+5) = 19−8 = 11 ✓. For 54321: (5+3+1)−(4+2) = 9−6 = 3 ✗. For 72418: (7+4+8)−(2+1) = 19−3 = 16 ✗. For 81534: (8+5+4)−(1+3) = 17−4 = 13 ✗. The tempting trap is 54321 — its digits look 'orderly' so students guess it is divisible by everything. **Short Trick:** Alternately add and subtract digits from the left: 6−3+7−5+6 = 11. If the running total equals 0 or ±11, the number passes the test.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:41:32+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00001"
+    },
+    {
+      "stem": "The three-digit number 7A3 is divisible by 3. Which of the following is a possible value of the digit A?",
+      "options": [
+        {
+          "option_text": "A = 1 (making 713 with digit-sum 11, not a multiple of 3)",
+          "is_correct": false
+        },
+        {
+          "option_text": "A = 4 (making 743 with digit-sum 14, not a multiple of 3)",
+          "is_correct": false
+        },
+        {
+          "option_text": "A = 7 (making 773 with digit-sum 17, not a multiple of 3)",
+          "is_correct": false
+        },
+        {
+          "option_text": "A = 5 (making 753 with digit-sum 15, which is a multiple of 3)",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. A number is divisible by 3 when its digit-sum is divisible by 3. For 7A3: digit-sum = 7+A+3 = 10+A. Testing each option: A=1 → sum 11 ✗; A=4 → sum 14 ✗; A=7 → sum 17 ✗; A=5 → sum 15 ✓. The tempting wrong choice is A=7 because 7 is a recognisable prime digit — but 10+7=17 is not divisible by 3. **Short Trick:** Since 10 ≡ 1 (mod 3), we need 1+A ≡ 0 (mod 3), i.e., A ≡ 2 (mod 3). Valid digits are 2, 5, 8. Only A=5 appears among the options.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:41:32+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00002"
+    },
+    {
+      "stem": "What is the remainder when 17⁵⁰ is divided by 7?",
+      "options": [
+        {
+          "option_text": "2 — 17 ≡ 3 (mod 7); cycle of 3 has length 6; 50 mod 6 = 2; so 3² ≡ 2 (mod 7)",
+          "is_correct": true
+        },
+        {
+          "option_text": "1 — occurs when the exponent is a multiple of 6 (completing a full cycle)",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 — occurs when the exponent leaves remainder 4 when divided by 6",
+          "is_correct": false
+        },
+        {
+          "option_text": "5 — occurs when the exponent leaves remainder 5 when divided by 6",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Step 1: 17 mod 7 = 3, so 17⁵⁰ ≡ 3⁵⁰ (mod 7). Step 2: Powers of 3 mod 7 cycle as 3, 2, 6, 4, 5, 1 — cycle length = 6. Step 3: 50 mod 6 = 2, so 3⁵⁰ ≡ 3² = 9 ≡ 2 (mod 7). Each wrong option is a genuine cycle-value of 3ⁿ mod 7 but at the wrong position: option B (1) requires exponent divisible by 6; option C (4) requires exponent ≡ 4 mod 6; option D (5) requires exponent ≡ 5 mod 6. The most common trap is computing 50 mod 7 = 1 instead of 50 mod 6 = 2. **Short Trick:** Reduce base mod divisor → find cycle length (try powers until you hit 1) → reduce exponent mod cycle length → read the answer from the cycle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:41:32+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00003"
+    },
+    {
+      "stem": "A positive integer, when divided by 5, 7, and 9 separately, leaves remainders 3, 5, and 7 respectively. What is the smallest such integer?",
+      "options": [
+        {
+          "option_text": "210 — wrong: arises from computing LCM(5, 6, 9) instead of LCM(5, 7, 9)",
+          "is_correct": false
+        },
+        {
+          "option_text": "315 — LCM found correctly but the constant deficiency of 2 was not subtracted",
+          "is_correct": false
+        },
+        {
+          "option_text": "628 — the next valid number in the sequence (313+315), not the smallest",
+          "is_correct": false
+        },
+        {
+          "option_text": "313 — deficiency = 2 in all three cases; LCM(5,7,9) = 315; so N = 315−2 = 313",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Key insight: 5−3 = 2, 7−5 = 2, 9−7 = 2. The deficiency (divisor minus remainder) is the same constant k = 2 for all three divisors. This means N+2 is divisible by 5, 7, and 9 simultaneously. So N+2 = LCM(5,7,9)×m. LCM(5,7,9) = 315. Smallest N = 315−2 = 313. Verify: 313÷5 = 62 rem 3 ✓; 313÷7 = 44 rem 5 ✓; 313÷9 = 34 rem 7 ✓. Option B (315) is the prime trap — the LCM is found correctly but students forget to subtract k. **Short Trick:** When (divisor − remainder) is the same constant k for every divisor, answer = LCM(divisors) − k. No simultaneous equations needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:41:32+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00004"
+    },
+    {
+      "stem": "What is the remainder when 1! + 2! + 3! + 4! + … + 100! is divided by 10?",
+      "options": [
+        {
+          "option_text": "0 — student wrongly assumes factorials from 1! onward all end in zero",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 — student stops at 1!+2!+3! = 1+2+6 = 9, missing the contribution of 4!",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 — for n≥5 units digit is 0; only 1!+2!+3!+4! = 1+2+6+24 = 33 matters",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 — student confuses 2! with 2² = 4; sum 1+4+6+4 = 15 gives units digit 5",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. For n ≥ 5, n! contains factors 2 and 5, so it is divisible by 10 — its units digit is 0, contributing nothing to the remainder mod 10. Only the first four factorials matter: 1!=1, 2!=2, 3!=6, 4!=24. Sum = 1+2+6+24 = 33. Remainder when 33 is divided by 10 = 3. Option B (9) is the off-by-one trap — stopping at 3! and missing 4!=24. Option D (5) comes from confusing 2! with 2²=4, giving 1+4+6+4=15. **Short Trick:** List only the units digits of factorials until you hit 0: 1, 2, 6, 4, 0, 0, …. Sum the non-zero ones: 1+2+6+4 = 13. Units digit of 13 is 3 — that is the remainder.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:41:32+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00005"
+    },
+    {
+      "stem": "The sum of two positive integers is 100 and their LCM is 495. What is their HCF?",
+      "options": [
+        {
+          "option_text": "HCF = 1 — yields x²−100x+495 = 0 with irrational roots; no integer pair exists",
+          "is_correct": false
+        },
+        {
+          "option_text": "HCF = 5 — pair is (45, 55); LCM(45,55) = 495 and 45+55 = 100, both confirmed",
+          "is_correct": true
+        },
+        {
+          "option_text": "HCF = 4 — impossible since 4 does not divide the LCM 495 without remainder",
+          "is_correct": false
+        },
+        {
+          "option_text": "HCF = 10 — impossible since 10 does not divide the LCM 495 without remainder",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Let HCF = d; write the numbers as da and db with gcd(a,b)=1. Then d(a+b)=100 and LCM = dab = 495. For d to be valid it must divide both 100 and 495. gcd(100, 495) = 5, so d ∈ {1, 5}. Testing d=5: a+b=20, ab=99. Solving x²−20x+99=0 gives x=(20±√4)/2 → 11 or 9. Since gcd(11,9)=1 ✓, the numbers are 55 and 45. LCM(55,45) = 5×11×9 = 495 ✓. Testing d=1: discriminant = 10000−1980 = 8020, not a perfect square — no integer solution. Options C (4) and D (10) are eliminated immediately since neither divides 495. **Short Trick:** HCF must divide LCM (always). Eliminate any option that does not divide 495 first; this cuts the field instantly and leaves only d=1 and d=5 to check properly.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:41:32+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00006"
+    },
+    {
+      "stem": "What is the remainder when 2¹⁰⁰ + 3¹⁰⁰ is divided by 5?",
+      "options": [
+        {
+          "option_text": "0 — error: reads 100 mod 4 = 0 as cycle-position 1; takes 2¹+3¹ = 5 ≡ 0 (mod 5)",
+          "is_correct": false
+        },
+        {
+          "option_text": "1 — error: applies Fermat's step to 2¹⁰⁰ ≡ 1 only; overlooks the 3¹⁰⁰ term entirely",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 — both 2¹⁰⁰ and 3¹⁰⁰ ≡ 1 (mod 5); their sum ≡ 1+1 = 2 (mod 5)",
+          "is_correct": true
+        },
+        {
+          "option_text": "4 — error: uses wrong cycle of length 3 for base 3; 100 mod 3 = 1; 3¹⁰⁰ ≡ 3; sum = 4",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. By Fermat's Little Theorem, a^(p−1) ≡ 1 (mod p) when p is prime and gcd(a,p)=1. Here p=5, so a⁴ ≡ 1 (mod 5) for a ∈ {1,2,3,4}. Since 100 = 4×25: 2¹⁰⁰ = (2⁴)²⁵ ≡ 1²⁵ = 1 (mod 5); 3¹⁰⁰ = (3⁴)²⁵ ≡ 1²⁵ = 1 (mod 5). Sum ≡ 1+1 = 2 (mod 5). Option A (0) is the top trap: 100 mod 4 = 0, which some students misread as 'use the 1st power', giving 2¹+3¹=5≡0. Option D (4) applies a wrong cycle length of 3 to base 3: 100 mod 3 = 1 → 3¹⁰⁰ ≡ 3; sum = 1+3 = 4. **Short Trick:** φ(5) = 4. Check 100 mod 4 = 0, meaning the exponent is a clean multiple of 4 — both bases reduce to 1. Add: 1+1 = 2. No cycle-table lookup needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-20",
+      "generated_at": "2026-06-20T14:41:32+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00007"
+    },
+    {
+      "stem": "The five-digit number 6P824 is divisible by 12. Which value of P satisfies this condition?",
+      "options": [
+        {
+          "option_text": "P = 2 (forming the number 62,824)",
+          "is_correct": false
+        },
+        {
+          "option_text": "P = 4 (forming the number 64,824)",
+          "is_correct": true
+        },
+        {
+          "option_text": "P = 5 (forming the number 65,824)",
+          "is_correct": false
+        },
+        {
+          "option_text": "P = 6 (forming the number 66,824)",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. For divisibility by 12, a number must pass both the ÷3 test and the ÷4 test independently. Last two digits of every option are 24, and 24 ÷ 4 = 6 exactly, so all four options pass the ÷4 test — that test cannot distinguish them. The ÷3 test requires digit sum divisible by 3: digit sum = 6 + P + 8 + 2 + 4 = 20 + P. P=2 → sum=22 (22 mod 3 = 1, fails); P=4 → sum=24 (24 ÷ 3 = 8, passes ✓); P=5 → sum=25 (fails); P=6 → sum=26 (fails). Option A (P=2) is the most tempting trap — 22 is close to 24 and looks plausible at a glance. Verify: 64,824 ÷ 12 = 5,402 exactly. **Short Trick:** Div by 12 = Div by 4 AND Div by 3. Check ÷4 first via last two digits (here always 24, so always OK). Then solve 20 + P ≡ 0 (mod 3) → P ≡ 1 (mod 3) → P ∈ {1, 4, 7}. Among the choices, only P = 4 qualifies.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:31:19+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00008"
+    },
+    {
+      "stem": "What is the remainder when (238 + 416 + 573) is divided by 7?",
+      "options": [
+        {
+          "option_text": "The sum 1,227 leaves a remainder of 1 after division by 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sum 1,227 leaves a remainder of 4 after division by 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sum 1,227 leaves a remainder of 5 after division by 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "The sum 1,227 leaves a remainder of 2 after division by 7",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. By the additive property of remainders: rem(A+B+C, d) = (rem(A,d) + rem(B,d) + rem(C,d)) mod d. Compute each: 238 = 34×7 exactly → remainder 0. 416 = 59×7 + 3 → remainder 3. 573 = 81×7 + 6 → remainder 6. Sum of remainders = 0 + 3 + 6 = 9. Final step: 9 mod 7 = 2. Option A (remainder 1) is the classic confusion of quotient with remainder — 9 ÷ 7 gives quotient 1, not remainder 1. Verify: 1,227 = 175×7 + 2 ✓. **Short Trick:** Never add the three numbers first. Divide each by 7 in your head: 238÷7 → rem 0; 416÷7 → rem 3; 573÷7 → rem 6. Add remainders: 9. Reduce: 9 − 7 = 2. Done in under 20 seconds.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:31:19+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00009"
+    },
+    {
+      "stem": "For any three consecutive positive integers n, (n+1), and (n+2), their product n(n+1)(n+2) is ALWAYS exactly divisible by which of the following?",
+      "options": [
+        {
+          "option_text": "The product is always divisible by 6",
+          "is_correct": true
+        },
+        {
+          "option_text": "The product is always divisible by 8",
+          "is_correct": false
+        },
+        {
+          "option_text": "The product is always divisible by 9",
+          "is_correct": false
+        },
+        {
+          "option_text": "The product is always divisible by 12",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Among any three consecutive integers, exactly one is a multiple of 3 (guaranteed factor of 3) and at least one is a multiple of 2 (guaranteed factor of 2). These together ensure divisibility by 2×3 = 6 in every case. All other options fail with the single counter-example n=1: product = 1×2×3 = 6. The value 6 is not divisible by 8, 9, or 12. Option D (12) is the most tempting trap — it holds for many values such as n=2 (product=24) and n=3 (product=60), but fails for n=1. Option B (8) would require three consecutive even integers, which is impossible since consecutive integers alternate parity. **Short Trick:** Use the combinatorics identity: the product of r consecutive integers is always divisible by r! (r-factorial), because you are choosing 1 element from each residue block. For 3 consecutive integers: 3! = 6. This is both necessary and sufficient — 6 is the exact guaranteed divisor.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:31:19+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00010"
+    },
+    {
+      "stem": "A number when divided by 16 leaves remainder 11, and when divided by 24 also leaves remainder 11. What is the smallest three-digit number satisfying both conditions?",
+      "options": [
+        {
+          "option_text": "The smallest three-digit number satisfying both conditions is 100",
+          "is_correct": false
+        },
+        {
+          "option_text": "The smallest three-digit number satisfying both conditions is 119",
+          "is_correct": false
+        },
+        {
+          "option_text": "The smallest three-digit number satisfying both conditions is 107",
+          "is_correct": true
+        },
+        {
+          "option_text": "The smallest three-digit number satisfying both conditions is 155",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. When a number N leaves the same remainder r with two divisors, then (N − r) is divisible by the LCM of those divisors. Here r = 11, and LCM(16, 24): write 16 = 2⁴, 24 = 2³×3 → LCM = 2⁴×3 = 48. So N − 11 = 48k for positive integer k. For the smallest three-digit N: 48k + 11 ≥ 100 → 48k ≥ 89 → k ≥ 1.854, so k = 2, giving N = 96 + 11 = 107. Check: 107 = 6×16 + 11 ✓ and 107 = 4×24 + 11 ✓. Option D (155 = 48×3 + 11) is the next valid number after 107, not the smallest three-digit one. Option A (100): 100 − 11 = 89, which is not divisible by 48. **Short Trick:** Same remainder with two divisors → (N − r) divisible by LCM. LCM(16,24) = 48. Smallest 3-digit: 48×2 + 11 = 107. Computing LCM using prime factorisation is faster than listing multiples.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:31:19+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00011"
+    },
+    {
+      "stem": "What is the remainder when (10²⁰ − 7) is divided by 9?",
+      "options": [
+        {
+          "option_text": "The remainder is 1 when (10²⁰ − 7) is divided by 9",
+          "is_correct": false
+        },
+        {
+          "option_text": "The remainder is 3 when (10²⁰ − 7) is divided by 9",
+          "is_correct": true
+        },
+        {
+          "option_text": "The remainder is 2 when (10²⁰ − 7) is divided by 9",
+          "is_correct": false
+        },
+        {
+          "option_text": "The remainder is 7 when (10²⁰ − 7) is divided by 9",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. The key identity: 10 ≡ 1 (mod 9), because 10 − 1 = 9. Raising both sides to any power: 10ⁿ ≡ 1ⁿ = 1 (mod 9) for every positive integer n. So 10²⁰ ≡ 1 (mod 9). Therefore 10²⁰ − 7 ≡ 1 − 7 = −6 ≡ −6 + 9 = 3 (mod 9). Verify with a small case: 10² − 7 = 93 = 10×9 + 3 ✓. Option D (7) is the classic trap — students directly treat '−7' as the remainder without accounting for the 10²⁰ contribution. Option A (1) arises from stopping after computing 10²⁰ ≡ 1 and forgetting to apply the −7. **Short Trick:** 10 ≡ 1 (mod 9) is the arithmetic engine behind the digit-sum rule. Any power of 10 leaves remainder 1 when divided by 9. So 10²⁰ − 7 ≡ 1 − 7 = −6 → add 9 → remainder 3. No exponent calculation required whatsoever.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:31:19+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00012"
+    },
+    {
+      "stem": "A positive integer N leaves remainder 3 when divided by 7, remainder 5 when divided by 11, and remainder 7 when divided by 13. What is the smallest positive value of N?",
+      "options": [
+        {
+          "option_text": "The smallest such positive integer is 423",
+          "is_correct": true
+        },
+        {
+          "option_text": "The smallest such positive integer is 347",
+          "is_correct": false
+        },
+        {
+          "option_text": "The smallest such positive integer is 385",
+          "is_correct": false
+        },
+        {
+          "option_text": "The smallest such positive integer is 463",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Spot the hidden additive structure: N ≡ 3 (mod 7) means N+4 ≡ 0 (mod 7). N ≡ 5 (mod 11) means N+6 ≡ 0 (mod 11). N ≡ 7 (mod 13) means N+6 ≡ 0 (mod 13). So (N+6) is divisible by both 11 and 13, hence by LCM(11,13) = 143. Write N = 143m − 6. Then N+4 = 143m − 2 must be divisible by 7. Since 143 = 20×7 + 3, we have 143 ≡ 3 (mod 7), giving 3m − 2 ≡ 0 (mod 7), i.e., 3m ≡ 2 (mod 7). The modular inverse of 3 (mod 7) is 5, since 3×5 = 15 ≡ 1 (mod 7). So m ≡ 5×2 = 10 ≡ 3 (mod 7). Smallest m = 3: N = 143×3 − 6 = 429 − 6 = 423. Verify: 423÷7=60 r 3 ✓; 423÷11=38 r 5 ✓; 423÷13=32 r 7 ✓. Option C (385 = 5×7×11): 385÷7=55 r 0 ≠ 3, fails immediately. **Short Trick:** Look for a uniform additive shift across all three conditions. Here N+4 ≡ 0 (mod 7) and N+6 ≡ 0 (mod 143). Group: N = 143m−6. Solve 3m ≡ 2 (mod 7) using inverse: m = 3. Answer = 143×3−6 = 423.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:31:19+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00013"
+    },
+    {
+      "stem": "What is the remainder when (6⁴⁷ + 8⁴⁷) is divided by 7?",
+      "options": [
+        {
+          "option_text": "The remainder is 3 when (6⁴⁷ + 8⁴⁷) is divided by 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "The remainder is 1 when (6⁴⁷ + 8⁴⁷) is divided by 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "The remainder is 6 when (6⁴⁷ + 8⁴⁷) is divided by 7",
+          "is_correct": false
+        },
+        {
+          "option_text": "The remainder is 0 when (6⁴⁷ + 8⁴⁷) is divided by 7",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Two methods confirm this. Method 1 (algebraic identity): aⁿ + bⁿ is divisible by (a+b) whenever n is odd. Here a=6, b=8, n=47 (odd). So (6⁴⁷ + 8⁴⁷) is divisible by 6+8=14=2×7. Since 7 divides 14, the expression is divisible by 7, giving remainder 0. Method 2 (modular arithmetic): 6 ≡ −1 (mod 7), so 6⁴⁷ ≡ (−1)⁴⁷ = −1 ≡ 6 (mod 7). And 8 ≡ 1 (mod 7), so 8⁴⁷ ≡ 1⁴⁷ = 1 (mod 7). Sum: 6+1=7 ≡ 0 (mod 7). Option B (1) is the most common trap — students correctly compute 8⁴⁷ ≡ 1 (mod 7) and stop, forgetting to add 6⁴⁷'s contribution. Option C (6) comes from computing only 6⁴⁷ mod 7. Verify: 6¹+8¹=14=7×2 ✓; 6³+8³=728=104×7 ✓. **Short Trick:** Memorise: aⁿ+bⁿ is divisible by (a+b) for all odd n. Spot 6+8=14=2×7 in one glance → remainder 0 instantly, with zero cycle-of-powers calculation needed.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T02:31:19+00:00",
+      "id": "sgk_QA_DIVISIBILITY_00014"
+    }
+  ]
+}
