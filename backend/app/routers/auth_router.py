@@ -94,7 +94,10 @@ async def debug_verify(
     if not user:
         return {"found": False, "email": email}
 
-    test_password = "Admin@Parisksha365"
+    import os as _os
+    test_password = _os.getenv("ADMIN_BOOTSTRAP_PASSWORD", "")
+    if not test_password:
+        return {"error": "ADMIN_BOOTSTRAP_PASSWORD env var not set — cannot run diagnostic"}
     stored_hash = user.password_hash
 
     try:

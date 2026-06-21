@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, SafeAreaView, Dimensions } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, SafeAreaView } from 'react-native';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { CategoryAPI, UserAPI } from '../../services/api';
 import { getCategoryAsset } from '../../utils/categoryAssets';
 import { COLORS } from '../../styles/theme';
 
-const { width } = Dimensions.get('window');
 
 export default function OnboardingScreen({ navigation, route }: any) {
     const isChangeExam = route.params?.isChangeExam || false;

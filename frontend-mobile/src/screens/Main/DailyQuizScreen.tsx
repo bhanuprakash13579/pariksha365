@@ -16,7 +16,7 @@ export default function DailyQuizScreen({ navigation }: any) {
             try {
                 const [catRes, weakRes, privateRes] = await Promise.all([
                     QuizAPI.getCategories(),
-                    QuizAPI.getWeakTopicQuiz(),
+                    QuizAPI.getWeakTopicQuiz(10),
                     PrivateModuleAPI.listMine().catch(() => ({ data: { modules: [] } })),
                 ]);
                 setCategories(catRes.data.categories || []);

@@ -4,10 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, FlatList, ScrollView, SafeAreaView, KeyboardAvoidingView, Platform, DimensionValue, Dimensions, Modal, Image, Alert, ActivityIndicator } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { BarChart, LineChart, ProgressChart } from 'react-native-chart-kit';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
-import * as AppleAuthentication from 'expo-apple-authentication';
-import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -45,26 +42,12 @@ const AttemptAPI = {
   submit: (attemptId: string) => api.post(`/attempts/${attemptId}/submit`),
 };
 
-// Replace with your actual IDs when generating for Web and Android
-const GOOGLE_IOS_CLIENT_ID = "592393648560-0csjsd0dvukv94qg05np14rj1v3o9gg2.apps.googleusercontent.com";
-const GOOGLE_WEB_CLIENT_ID = "592393648560-o4ou87jvmv6tj3uura8ls27td06pv0o5.apps.googleusercontent.com";
-const GOOGLE_ANDROID_CLIENT_ID = "592393648560-rpddhav13tiikcpgki71kvlegmi3s91c.apps.googleusercontent.com";
-
 const { width } = Dimensions.get('window');
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 // --- MOCK DATA ---
 // Removed static mock definitions. Data is now fetched dynamically from backend.
-
-const CHART_CONFIG = {
-  backgroundGradientFrom: "#ffffff",
-  backgroundGradientTo: "#ffffff",
-  color: (opacity = 1) => `rgba(249, 115, 22, ${opacity})`,
-  strokeWidth: 2,
-  barPercentage: 0.5,
-  useShadowColorFromDataset: false
-};
 
 // --- REUSABLE COMPONENTS ---
 const TestCard = ({ item, onPress }: any) => (
@@ -335,121 +318,27 @@ const AttemptHistoryScreen = ({ navigation }: any) => {
   );
 };
 
-const TestAnalysisScreen = () => {
-  return (
-    <ScrollView style={styles.container}>
-      <View style={styles.analysisHeader}>
-        <View style={{ alignItems: 'center' }}>
-          <ProgressChart
-            data={{ labels: ["Percentile"], data: [0.94] }}
-            width={width - 40}
-            height={150}
-            strokeWidth={16}
-            radius={50}
-            chartConfig={{ ...CHART_CONFIG, color: (opacity = 1) => `rgba(16, 185, 129, ${opacity})` }}
-            hideLegend={true}
-            style={{}}
-          />
-          <View style={{ position: 'absolute', top: 55, alignItems: 'center' }}>
-            <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#10b981' }}>94.5</Text>
-            <Text style={{ fontSize: 10, color: '#6b7280' }}>%ile</Text>
-          </View>
-        </View>
+const TestAnalysisScreen = ({ navigation }: any) => (
+  <View style={[styles.detailContainer, { justifyContent: 'center', alignItems: 'center' }]}>
+    <Ionicons name="analytics-outline" size={64} color="#d1d5db" />
+    <Text style={[styles.emptyText, { marginTop: 16 }]}>Analysis not available</Text>
+    <Text style={[styles.emptySubText, { marginTop: 8 }]}>Full analysis is shown immediately after completing a test.</Text>
+    <TouchableOpacity style={[styles.button, { marginTop: 24, paddingHorizontal: 32 }]} onPress={() => navigation.goBack()}>
+      <Text style={styles.buttonText}>Go Back</Text>
+    </TouchableOpacity>
+  </View>
+);
 
-        <View style={styles.statsBannerRow}>
-          <View style={styles.statsBox}>
-            <Text style={[styles.statsValue, { fontSize: 18, color: '#111827' }]}>1,402<Text style={{ fontSize: 10, color: '#9ca3af' }}>/10k</Text></Text>
-            <Text style={styles.statsLabel}>Rank</Text>
-          </View>
-          <View style={styles.statsBox}>
-            <Text style={[styles.statsValue, { fontSize: 18, color: '#111827' }]}>120<Text style={{ fontSize: 10, color: '#9ca3af' }}>/200</Text></Text>
-            <Text style={styles.statsLabel}>Score</Text>
-          </View>
-          <View style={styles.statsBox}>
-            <Text style={[styles.statsValue, { fontSize: 18, color: '#111827' }]}>88%</Text>
-            <Text style={styles.statsLabel}>Accuracy</Text>
-          </View>
-        </View>
-      </View>
-
-      <View style={styles.contentPadAlt}>
-        <Text style={styles.sectionTitle}>Section-wise Score</Text>
-        <View style={styles.chartWrapper}>
-          <BarChart
-            data={{
-              labels: ["Quant", "Reason", "Eng", "GK"],
-              datasets: [{ data: [45, 40, 25, 10] }]
-            }}
-            width={width - 64}
-            height={220}
-            yAxisLabel=""
-            yAxisSuffix=""
-            chartConfig={CHART_CONFIG}
-            verticalLabelRotation={0}
-            style={{ borderRadius: 16 }}
-            flatColor={true}
-            withInnerLines={false}
-          />
-        </View>
-
-        <Text style={[styles.sectionTitle, { marginTop: 20 }]}>Strong & Weak Areas</Text>
-        <View style={{ flexDirection: 'row', gap: 10 }}>
-          <View style={[styles.analysisCard, { borderColor: '#bbf7d0', backgroundColor: '#f0fdf4' }]}>
-            <Text style={[styles.cardTitle, { color: '#166534', marginBottom: 10 }]}>Strengths</Text>
-            <Text style={styles.tag}>Profit & Loss</Text>
-            <Text style={styles.tag}>Syllogism</Text>
-          </View>
-          <View style={[styles.analysisCard, { borderColor: '#fecaca', backgroundColor: '#fef2f2' }]}>
-            <Text style={[styles.cardTitle, { color: '#991b1b', marginBottom: 10 }]}>Weaknesses</Text>
-            <Text style={[styles.tag, { color: '#991b1b' }]}>Current Affairs</Text>
-            <Text style={[styles.tag, { color: '#991b1b' }]}>Vocabulary</Text>
-          </View>
-        </View>
-
-        <TouchableOpacity style={[styles.button, { marginTop: 30, marginBottom: 40 }]}>
-          <Text style={styles.buttonText}>Review All Answers</Text>
-        </TouchableOpacity>
-      </View>
-    </ScrollView>
-  );
-};
-
-const SeriesTrendScreen = ({ route }: any) => {
-  const { test } = route.params;
-  return (
-    <ScrollView style={styles.container}>
-      <View style={styles.analysisHeader}>
-        <Text style={styles.detailTitle}>{test.title}</Text>
-        <Text style={{ color: '#6b7280', marginTop: 5 }}>Performance Trajectory</Text>
-      </View>
-
-      <View style={styles.contentPadAlt}>
-        <Text style={styles.sectionTitle}>Score Progression</Text>
-        <View style={styles.chartWrapper}>
-          <LineChart
-            data={{
-              labels: ["M1", "M2", "M3", "M4", "M5"],
-              datasets: [{ data: [80, 95, 88, 110, 120] }]
-            }}
-            width={width - 64}
-            height={220}
-            chartConfig={CHART_CONFIG}
-            bezier
-            style={{ borderRadius: 16 }}
-            withShadow={false}
-            withHorizontalLines={true}
-            withVerticalLines={false}
-          />
-        </View>
-
-        <View style={styles.infoBox}>
-          <Text style={{ fontWeight: 'bold', color: '#166534' }}>Projected Result: Clear Cut-off</Text>
-          <Text style={[styles.infoText, { marginTop: 5 }]}>Based on your recent upward trend, you are projected to score ~135 in the actual exam, comfortably clearing the 130 cut-off mark.</Text>
-        </View>
-      </View>
-    </ScrollView>
-  );
-};
+const SeriesTrendScreen = ({ navigation }: any) => (
+  <View style={[styles.detailContainer, { justifyContent: 'center', alignItems: 'center' }]}>
+    <Ionicons name="trending-up-outline" size={64} color="#d1d5db" />
+    <Text style={[styles.emptyText, { marginTop: 16 }]}>Coming Soon</Text>
+    <Text style={[styles.emptySubText, { marginTop: 8 }]}>Series trend analysis will be available here.</Text>
+    <TouchableOpacity style={[styles.button, { marginTop: 24, paddingHorizontal: 32 }]} onPress={() => navigation.goBack()}>
+      <Text style={styles.buttonText}>Go Back</Text>
+    </TouchableOpacity>
+  </View>
+);
 const ReferEarnScreen = () => (
   <View style={styles.detailContainer}>
     <Text style={styles.detailTitle}>🎁 Refer & Earn</Text>

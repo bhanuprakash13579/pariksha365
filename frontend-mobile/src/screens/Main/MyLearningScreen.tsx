@@ -131,7 +131,7 @@ export default function MyLearningScreen({ navigation }: any) {
                             <TouchableOpacity
                                 key={att.id}
                                 style={[styles.card, { marginBottom: 10, borderLeftWidth: 3, borderLeftColor: statusColor }]}
-                                onPress={() => isCompleted && navigation.navigate('TestAnalysis', { attemptId: att.id })}
+                                onPress={() => isCompleted && navigation.navigate('PostTestResults', { attemptId: att.id })}
                                 activeOpacity={0.8}
                             >
                                 <View style={{ flex: 1 }}>
