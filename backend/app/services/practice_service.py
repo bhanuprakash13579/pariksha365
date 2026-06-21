@@ -37,6 +37,12 @@ QUIZ_CATEGORIES = [
 SUBJECT_KEY_MAP = {cat["key"]: cat["name"] for cat in QUIZ_CATEGORIES}
 
 
+def _subj_match(value: str):
+    """WHERE condition matching QuizQuestion.subject regardless of space vs underscore storage."""
+    norm = value.lower().replace("_", " ")
+    return func.replace(func.lower(QuizQuestion.subject), "_", " ") == norm
+
+
 async def get_quiz_categories_with_counts(db: AsyncSession) -> list:
     """Per-category question counts — single round-trip instead of one query
     per category (the old loop made 14 sequential COUNTs, ~14x the latency).
@@ -90,7 +96,7 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
     # Get all distinct topic_codes for this subject (prefer topic_code, fall back to topic text)
     tc_rows = (await db.execute(
         select(QuizQuestion.topic_code, QuizQuestion.topic)
-        .where(func.lower(QuizQuestion.subject) == canonical_subject.lower())
+        .where(_subj_match(canonical_subject))
         .distinct()
     )).all()
 
@@ -106,7 +112,7 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
         # Entire pool attempted today — reopen
         raw = (await db.execute(
             select(QuizQuestion)
-            .where(func.lower(QuizQuestion.subject) == canonical_subject.lower())
+            .where(_subj_match(canonical_subject))
             .order_by(func.random()).limit(limit)
         )).scalars().all()
         expanded = await _expand_passage_groups(db, list(raw))
@@ -159,13 +165,13 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
         if key.startswith("_topic_"):
             topic_text = pattern_map[key]
             cond = [
-                func.lower(QuizQuestion.subject) == canonical_subject.lower(),
+                _subj_match(canonical_subject),
                 func.lower(QuizQuestion.topic) == topic_text.lower(),
                 QuizQuestion.topic_code.is_(None),
             ]
         else:
             cond = [
-                func.lower(QuizQuestion.subject) == canonical_subject.lower(),
+                _subj_match(canonical_subject),
                 QuizQuestion.topic_code == key,
             ]
 
@@ -183,7 +189,7 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
     # Fill remaining slots (some patterns had < quota questions)
     if len(result_questions) < limit:
         exclude = seen_ids | attempted_today_ids
-        filler_cond = [func.lower(QuizQuestion.subject) == canonical_subject.lower()]
+        filler_cond = [_subj_match(canonical_subject)]
         if exclude:
             filler_cond.append(QuizQuestion.id.not_in(exclude))
         fillers = (await db.execute(
@@ -362,7 +368,7 @@ async def _fetch_prioritized_questions(
     # Phase 3: Subject + topic text fallback (for questions without topic_code)
     if len(result_qs) < limit:
         existing = {q.id for q in result_qs}
-        text_conditions = [func.lower(QuizQuestion.subject) == subject.lower()]
+        text_conditions = [_subj_match(subject)]
         if topic:
             text_conditions.append(func.lower(QuizQuestion.topic) == topic.lower())
         if existing:
@@ -377,7 +383,7 @@ async def _fetch_prioritized_questions(
     # Phase 4: Subject-only last resort
     if len(result_qs) < limit:
         existing = {q.id for q in result_qs}
-        subj_cond = [func.lower(QuizQuestion.subject) == subject.lower()]
+        subj_cond = [_subj_match(subject)]
         if existing:
             subj_cond.append(QuizQuestion.id.not_in(existing))
         fallback2 = (await db.execute(
@@ -399,7 +405,7 @@ async def get_more_practice(db: AsyncSession, user_id: uuid.UUID, subject: str,
     if topic_code:
         conditions = [QuizQuestion.topic_code == topic_code]
     else:
-        conditions = [func.lower(QuizQuestion.subject) == subject.lower()]
+        conditions = [_subj_match(subject)]
         if topic:
             conditions.append(func.lower(QuizQuestion.topic) == topic.lower())
 
@@ -412,7 +418,7 @@ async def get_more_practice(db: AsyncSession, user_id: uuid.UUID, subject: str,
 
     # Count remaining
     all_exclude = exclude_uuids + [q.id for q in questions]
-    count_cond = [QuizQuestion.topic_code == topic_code] if topic_code else [func.lower(QuizQuestion.subject) == subject.lower()]
+    count_cond = [QuizQuestion.topic_code == topic_code] if topic_code else [_subj_match(subject)]
     if all_exclude:
         count_cond.append(QuizQuestion.id.not_in(all_exclude))
     remaining = (await db.execute(select(func.count(QuizQuestion.id)).where(*count_cond))).scalar() or 0
@@ -824,7 +830,7 @@ async def _get_or_create_mastery(db: AsyncSession, user_id: uuid.UUID,
             count_stmt = select(func.count(QuizQuestion.id)).where(QuizQuestion.topic_code == topic_code)
         else:
             count_stmt = select(func.count(QuizQuestion.id)).where(
-                func.lower(QuizQuestion.subject) == subject.lower(),
+                _subj_match(subject),
                 func.lower(QuizQuestion.topic) == topic.lower()
             )
         total_avail = (await db.execute(count_stmt)).scalar() or 0
@@ -858,7 +864,7 @@ async def _update_mastery(db: AsyncSession, user_id: uuid.UUID, subject: str, to
     else:
         mastery.total_available = (await db.execute(
             select(func.count(QuizQuestion.id)).where(
-                func.lower(QuizQuestion.subject) == subject.lower(),
+                _subj_match(subject),
                 func.lower(QuizQuestion.topic) == topic.lower()
             )
         )).scalar() or 0
@@ -925,7 +931,7 @@ async def _count_weak_topic_questions(db, weak_topics) -> int:
                 select(func.count(QuizQuestion.id)).where(QuizQuestion.topic_code == wt.topic_code)
             )).scalar() or 0
         else:
-            conds = [func.lower(QuizQuestion.subject) == wt.subject.lower()]
+            conds = [_subj_match(wt.subject)]
             if wt.topic:
                 conds.append(func.lower(QuizQuestion.topic) == wt.topic.lower())
             count = (await db.execute(select(func.count(QuizQuestion.id)).where(*conds))).scalar() or 0
