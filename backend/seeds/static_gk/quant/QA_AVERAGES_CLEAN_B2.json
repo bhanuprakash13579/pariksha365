@@ -5,16 +5,16 @@
   "schema_version": "v2",
   "questions": [
     {
-      "stem": "The average of 10 numbers is 40. If the average of first 6 is 35 and the last 6 is 45, find the 7th number (which is common to both groups).",
+      "stem": "The sum of 3 numbers is 120. If two of the numbers are 30 and 50, find the third number.",
       "options": [
-        {"option_text": "25", "is_correct": false},
-        {"option_text": "30", "is_correct": true},
-        {"option_text": "35", "is_correct": false},
-        {"option_text": "40", "is_correct": false}
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "40", "is_correct": true},
+        {"option_text": "50", "is_correct": false},
+        {"option_text": "60", "is_correct": false}
       ],
       "correct_letter": "B",
-      "difficulty": "HARD",
-      "explanation": "B is correct. Sum of first 6 = 6×35 = 210. Sum of last 6 = 6×45 = 270. Total of all 10 = 10×40 = 400. 7th number = (210+270) − 400 = 480−400 = 80. Wait — the 7th number appears in BOTH groups: (Sum of first 6) + (Sum of last 6) = Sum of all 10 + 7th number (counted twice). 210+270 = 400 + 7th. 7th = 80. But answer should be 30... let me recheck: actually the 7th IS the bridge: 210+270-400=80. Hmm, answer should be 80. But I listed B=30. Let me recalculate: first 6 numbers sum=210, last 6 numbers (7-12? but total is 10). Actually: numbers 1-6 and 5-10 overlap at positions 5,6. 7th number is position 7 in the second group's first position. Reframe: 1st to 6th and 5th to 10th overlap at 5,6. This question is ambiguous. Correct computation: sum1+sum2 = total + overlap. 210+270=400+overlap; overlap=80. The 7th number (position bridging) depends on interpretation.",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Sum of 3 numbers = 120. Known two: 30 + 50 = 80. Third number = 120 − 80 = 40.",
       "staleness_risk": 0,
       "subject": null,
       "answer_source": "generated",
@@ -31,7 +31,7 @@
       ],
       "correct_letter": "B",
       "difficulty": "EASY",
-      "explanation": "B is correct. Incorrect total = 30×60 = 1800. Error: 45 entered instead of 75; difference = 75−45 = 30. Correct total = 1800+30 = 1830. Correct average = 1830/30 = 61.",
+      "explanation": "B is correct. Incorrect total = 30×60 = 1800. Error = 75−45 = 30 marks understated. Correct total = 1800+30 = 1830. Correct average = 1830/30 = 61.",
       "staleness_risk": 0,
       "subject": null,
       "answer_source": "generated",
@@ -65,7 +65,7 @@
       ],
       "correct_letter": "B",
       "difficulty": "MEDIUM",
-      "explanation": "B is correct. For 5 consecutive even numbers, the middle (3rd) number equals the average = 30. Numbers: 26, 28, 30, 32, 34. Largest = 34.",
+      "explanation": "B is correct. For 5 consecutive even numbers, the middle (3rd) number = average = 30. Numbers: 26, 28, 30, 32, 34. Largest = 34.",
       "staleness_risk": 0,
       "subject": null,
       "answer_source": "generated",
@@ -76,13 +76,13 @@
       "stem": "The average of 8 numbers is 25. When two more numbers are added, the average drops to 23. Find the average of the two new numbers.",
       "options": [
         {"option_text": "12", "is_correct": false},
-        {"option_text": "15", "is_correct": false},
-        {"option_text": "11", "is_correct": true},
+        {"option_text": "15", "is_correct": true},
+        {"option_text": "11", "is_correct": false},
         {"option_text": "13", "is_correct": false}
       ],
-      "correct_letter": "C",
+      "correct_letter": "B",
       "difficulty": "MEDIUM",
-      "explanation": "C is correct. Sum of 8 = 8×25 = 200. Sum of 10 = 10×23 = 230. Sum of two new numbers = 230−200 = 30. Average of two = 30/2 = 15. Wait: 30/2=15, not 11. Rechecking: if new total=230 and old=200, new numbers sum=30, average=15. But I marked C=11 as correct. Error: correct answer is B=15.",
+      "explanation": "B is correct. Sum of 8 = 8×25 = 200. Sum of 10 = 10×23 = 230. Sum of two new numbers = 230−200 = 30. Average of two new numbers = 30/2 = 15.",
       "staleness_risk": 0,
       "subject": null,
       "answer_source": "generated",
@@ -93,13 +93,13 @@
       "stem": "The average weight of a class of 25 students is 52 kg. If the teacher's weight is also included, the average becomes 54 kg. What is the teacher's weight?",
       "options": [
         {"option_text": "96 kg", "is_correct": false},
-        {"option_text": "102 kg", "is_correct": true},
-        {"option_text": "106 kg", "is_correct": false},
+        {"option_text": "100 kg", "is_correct": false},
+        {"option_text": "104 kg", "is_correct": true},
         {"option_text": "110 kg", "is_correct": false}
       ],
-      "correct_letter": "B",
+      "correct_letter": "C",
       "difficulty": "MEDIUM",
-      "explanation": "B is correct. Sum of 25 students = 25×52 = 1300 kg. Sum of 26 = 26×54 = 1404 kg. Teacher's weight = 1404−1300 = 104 kg. Note: 26×54 = 1404; 1404−1300=104. But I wrote B=102. Recalculating: 26×54 = 26×50+26×4 = 1300+104 = 1404. Teacher = 1404−1300 = 104 kg. None of the options matches correctly — correct answer is 104 kg.",
+      "explanation": "C is correct. Sum of 25 students = 25×52 = 1300 kg. Sum of 26 = 26×54 = 1404 kg. Teacher's weight = 1404−1300 = 104 kg.",
       "staleness_risk": 0,
       "subject": null,
       "answer_source": "generated",
@@ -107,7 +107,7 @@
       "generated_at": "2026-06-21T00:00:00+00:00"
     },
     {
-      "stem": "The average of marks scored by 40 students in a test is 45. The average of marks of the first 22 students is 48 and the average of the remaining students is:",
+      "stem": "The average of marks scored by 40 students in a test is 45. The average of marks of the first 22 students is 48. Find the average of the remaining students.",
       "options": [
         {"option_text": "38", "is_correct": false},
         {"option_text": "40", "is_correct": false},
@@ -116,7 +116,7 @@
       ],
       "correct_letter": "C",
       "difficulty": "MEDIUM",
-      "explanation": "C is correct. Total marks = 40×45 = 1800. Sum of first 22 = 22×48 = 1056. Sum of remaining 18 = 1800−1056 = 744. Average of remaining = 744/18 = 41.33 ≈ 41.",
+      "explanation": "C is correct. Total = 40×45 = 1800. Sum of first 22 = 22×48 = 1056. Sum of remaining 18 = 1800−1056 = 744. Average = 744/18 ≈ 41.3 ≈ 41.",
       "staleness_risk": 0,
       "subject": null,
       "answer_source": "generated",
@@ -141,7 +141,7 @@
       "generated_at": "2026-06-21T00:00:00+00:00"
     },
     {
-      "stem": "A batsman scores 56 runs in the 16th innings. This increases his average by 1. What is his average after 16 innings?",
+      "stem": "A batsman scores 56 runs in the 16th innings, increasing his average by 1. What is his average after 16 innings?",
       "options": [
         {"option_text": "40", "is_correct": false},
         {"option_text": "41", "is_correct": true},
@@ -150,7 +150,7 @@
       ],
       "correct_letter": "B",
       "difficulty": "HARD",
-      "explanation": "B is correct. Let previous average (after 15 innings) = x. New average (16 innings) = x+1. Sum of 15 innings = 15x. Sum of 16 innings = 15x+56. New average = (15x+56)/16 = x+1. 15x+56 = 16x+16. x = 40. New average = 41.",
+      "explanation": "B is correct. Let previous average after 15 innings = x. New average = x+1. (15x+56)/16 = x+1 → 15x+56 = 16x+16 → x = 40. New average = 41.",
       "staleness_risk": 0,
       "subject": null,
       "answer_source": "generated",
@@ -158,16 +158,16 @@
       "generated_at": "2026-06-21T00:00:00+00:00"
     },
     {
-      "stem": "The average of three numbers A, B, C is 60. A is 20 more than B. C is twice A. Find C.",
+      "stem": "The average of three numbers A, B, C is 60. A is 20 more than B, and C is twice A. Find C.",
       "options": [
         {"option_text": "70", "is_correct": false},
         {"option_text": "80", "is_correct": false},
-        {"option_text": "82", "is_correct": false},
-        {"option_text": "84", "is_correct": true}
+        {"option_text": "100", "is_correct": true},
+        {"option_text": "120", "is_correct": false}
       ],
-      "correct_letter": "D",
+      "correct_letter": "C",
       "difficulty": "HARD",
-      "explanation": "D is correct. A+B+C = 180. A = B+20, C = 2A. Substituting: (B+20)+B+2(B+20) = 180. B+20+B+2B+40=180. 4B+60=180. 4B=120. B=30. A=50. C=2×50=100. Wait: C=100, not 84. Let me recheck: A=B+20=50; C=2A=100; sum=30+50+100=180 ✓; avg=60 ✓. But I wrote D=84. Error. Correct answer is C=100, none of the options listed are right. This question has an error in the options.",
+      "explanation": "C is correct. A+B+C = 180. A = B+20; C = 2A. So (B+20)+B+2(B+20)=180 → 4B+60=180 → B=30. A=50, C=2×50=100. Verify: 30+50+100=180; average=60 ✓.",
       "staleness_risk": 0,
       "subject": null,
       "answer_source": "generated",

@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_PERMUTATION_COMBINATION_CLEAN",
+  "subject": "Quantitative Aptitude",
+  "topic": "Permutation and Combination",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "In how many ways can 5 people be arranged in a row?",
+      "options": [
+        {"option_text": "25", "is_correct": false},
+        {"option_text": "60", "is_correct": false},
+        {"option_text": "120", "is_correct": true},
+        {"option_text": "240", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 5 people in a row = 5! = 5×4×3×2×1 = 120 ways. **Formula:** n people in a row = n!",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "How many 3-letter words can be formed from {A, B, C, D, E} without repetition?",
+      "options": [
+        {"option_text": "10", "is_correct": false},
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "125", "is_correct": false},
+        {"option_text": "120", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. ⁵P₃ = 5!/(5−3)! = 5!/2! = 5×4×3 = 60. **Formula:** ⁿPᵣ = n!/(n−r)! = arrangements of r from n without repetition.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In how many ways can a committee of 3 be chosen from 8 people?",
+      "options": [
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "56", "is_correct": true},
+        {"option_text": "336", "is_correct": false},
+        {"option_text": "112", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. ⁸C₃ = 8!/(3!×5!) = (8×7×6)/(3×2×1) = 336/6 = 56. Order doesn't matter in a committee → combination, not permutation.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "How many 4-digit numbers can be formed using digits 1, 2, 3, 4, 5 without repetition?",
+      "options": [
+        {"option_text": "100", "is_correct": false},
+        {"option_text": "120", "is_correct": true},
+        {"option_text": "60", "is_correct": false},
+        {"option_text": "24", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. ⁵P₄ = 5!/(5−4)! = 5!/1! = 5×4×3×2 = 120. Alternatively: 5 choices for first digit × 4 × 3 × 2 = 120.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In how many ways can the letters of APPLE be arranged?",
+      "options": [
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "120", "is_correct": false},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. APPLE has 5 letters with P repeated twice. Arrangements = 5!/2! = 120/2 = 60. **Rule:** If n letters with one letter repeated r times → n!/r!",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A team of 4 is to be selected from 5 men and 3 women with at least 2 women. How many ways?",
+      "options": [
+        {"option_text": "14", "is_correct": false},
+        {"option_text": "22", "is_correct": false},
+        {"option_text": "35", "is_correct": true},
+        {"option_text": "18", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. At least 2 women means 2W or 3W. Case 1 (2W+2M): ³C₂×⁵C₂ = 3×10 = 30. Case 2 (3W+1M): ³C₃×⁵C₁ = 1×5 = 5. Total = 30+5 = 35.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In how many ways can 6 people sit around a circular table?",
+      "options": [
+        {"option_text": "720", "is_correct": false},
+        {"option_text": "120", "is_correct": true},
+        {"option_text": "360", "is_correct": false},
+        {"option_text": "60", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Circular permutation of n people = (n−1)! = (6−1)! = 5! = 120. Fix one person's position to eliminate rotational duplicates.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "What is the value of ¹⁰C₄?",
+      "options": [
+        {"option_text": "180", "is_correct": false},
+        {"option_text": "210", "is_correct": true},
+        {"option_text": "240", "is_correct": false},
+        {"option_text": "120", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. ¹⁰C₄ = 10!/(4!×6!) = (10×9×8×7)/(4×3×2×1) = 5040/24 = 210.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A bag has 5 red and 3 blue balls. In how many ways can 3 balls be drawn so that at least 1 is blue?",
+      "options": [
+        {"option_text": "35", "is_correct": false},
+        {"option_text": "46", "is_correct": true},
+        {"option_text": "56", "is_correct": false},
+        {"option_text": "10", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Total ways = ⁸C₃ = 56. Ways with NO blue (all red) = ⁵C₃ = 10. At least 1 blue = 56−10 = 46.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "How many 3-digit even numbers can be formed using {1, 2, 3, 4, 5} without repetition?",
+      "options": [
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "48", "is_correct": false},
+        {"option_text": "60", "is_correct": false},
+        {"option_text": "20", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Last digit must be 2 or 4 (even). For each: 4 choices for first digit × 3 for second. Ways = 2×4×3 = 24.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

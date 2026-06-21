@@ -1,0 +1,298 @@
+{
+  "topic_code": "RSN_DIRECTION_ADVANCED",
+  "subject": "Reasoning",
+  "topic": "Direction Sense — Advanced",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Starting from point A, a man walks 5 km North, then 3 km East, then 5 km South. How far is he from A and in which direction?",
+      "options": [
+        {
+          "option_text": "3 km East",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 km North",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 km East",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km West",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. North 5 km then South 5 km cancel out. Net displacement: 3 km East. He is 3 km East of A.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A man walks 4 km South, then 3 km West. What is the straight-line distance from his starting point?",
+      "options": [
+        {
+          "option_text": "5 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "7 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "4 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Using Pythagoras: √(4²+3²) = √(16+9) = √25 = 5 km. (3-4-5 right triangle)",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Riya faces South. She turns 90° clockwise, then 45° anticlockwise. Which direction does she now face?",
+      "options": [
+        {
+          "option_text": "South-West",
+          "is_correct": true
+        },
+        {
+          "option_text": "South-East",
+          "is_correct": false
+        },
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Start facing South. 90° clockwise (S→W) → West. 45° anticlockwise from West turns towards South → South-West.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "At 6 PM, a man walks towards the setting sun (West). After walking 2 km, he turns right and walks 3 km, then turns right again and walks 4 km. How far is he from the starting point?",
+      "options": [
+        {
+          "option_text": "√8 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "√13 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "5 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "3 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Start→2 km West (at -2,0). Turn right (North)→3 km North (at -2,3). Turn right (East)→4 km East (at 2,3). Distance from origin = √(2²+3²) = √(4+9) = √13 km.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Mohan starts from point P, walks 6 km North, turns right, walks 4 km, turns right, walks 6 km South, turns right, walks 2 km. How far is Mohan from P?",
+      "options": [
+        {
+          "option_text": "4 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "2 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "6 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "8 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. From P(0,0): 6N→(0,6). Turn right→East: 4E→(4,6). Turn right→South: 6S→(4,0). Turn right→West: 2W→(2,0). Distance from P(0,0) to (2,0) = 2 km East.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If South-East becomes North, North-East becomes West, what does North become?",
+      "options": [
+        {
+          "option_text": "South-East",
+          "is_correct": false
+        },
+        {
+          "option_text": "South-West",
+          "is_correct": true
+        },
+        {
+          "option_text": "North-West",
+          "is_correct": false
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. SE→N: rotated 135° CCW. NE→W: also 135° CCW. Applying same rotation: N (0°) + 135° CCW = 135° from N = SW direction. South-West.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A boy walks 3 km East, then 4 km North. He then turns around (faces South-West) and walks to reach back to the starting point. What is the total distance walked?",
+      "options": [
+        {
+          "option_text": "10 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "7 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "9 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "12 km",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. He walks 3 km East + 4 km North = 7 km. Distance from start = √(3²+4²) = 5 km. He walks back 5 km. Total = 3+4+5 = 12 km.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Two friends A and B start from the same point. A walks 5 km North, B walks 5 km South. They then each walk 3 km West. How far apart are A and B?",
+      "options": [
+        {
+          "option_text": "6 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 km",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 km",
+          "is_correct": false
+        },
+        {
+          "option_text": "13 km",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A ends at (-3, 5); B ends at (-3, -5). Distance = √((−3−(−3))²+(5−(−5))²) = √(0+100) = 10 km.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A person facing North turns 135° clockwise. Which direction is he now facing?",
+      "options": [
+        {
+          "option_text": "East",
+          "is_correct": false
+        },
+        {
+          "option_text": "South-West",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        },
+        {
+          "option_text": "South-East",
+          "is_correct": true
+        }
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. North (0°) + 135° clockwise = 135° from North (clockwise) = South-East direction. N→NE(45°)→E(90°)→SE(135°). Facing South-East.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In the morning, a person was facing the sun. He turned 90° clockwise, walked, then turned 90° anticlockwise. Which direction is he now facing?",
+      "options": [
+        {
+          "option_text": "East",
+          "is_correct": true
+        },
+        {
+          "option_text": "West",
+          "is_correct": false
+        },
+        {
+          "option_text": "North",
+          "is_correct": false
+        },
+        {
+          "option_text": "South",
+          "is_correct": false
+        }
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Morning sun rises in East, so person faces East initially. 90° CW → South. Then 90° CCW → East again. He faces East.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

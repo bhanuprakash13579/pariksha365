@@ -95,7 +95,7 @@
       "stem": "A man bought two articles for ₹5,000 each. He sold one at 20% profit and the other at 20% loss. What is his overall result?",
       "options": [
         {
-          "option_text": "No profit/no loss",
+          "option_text": "₹400 loss",
           "is_correct": false
         },
         {
@@ -240,7 +240,7 @@
       "stem": "A shopkeeper gives 3 articles free with every 12 articles purchased. What is the effective discount percentage?",
       "options": [
         {
-          "option_text": "20%",
+          "option_text": "18%",
           "is_correct": false
         },
         {
@@ -269,25 +269,25 @@
       "stem": "A person sells a watch at ₹1,800 and earns the same profit percentage as the cost price in rupees. What is the cost price?",
       "options": [
         {
-          "option_text": "₹900",
+          "option_text": "₹40",
           "is_correct": false
         },
         {
-          "option_text": "₹1,000",
+          "option_text": "₹50",
           "is_correct": false
         },
         {
-          "option_text": "₹1,200",
-          "is_correct": false
-        },
-        {
-          "option_text": "₹900",
+          "option_text": "₹60",
           "is_correct": true
+        },
+        {
+          "option_text": "₹80",
+          "is_correct": false
         }
       ],
-      "correct_letter": "D",
+      "correct_letter": "C",
       "difficulty": "HARD",
-      "explanation": "D is correct. Let CP = x. Profit% = x (same numeric value). SP = x + x×(x/100) = x(1 + x/100) = 1800. x(100+x)/100 = 1800. x²+100x = 180000. x²+100x−180000 = 0. Using quadratic formula: x = (−100+√(10000+720000))/2 = (−100+√730000)/2. √730000 ≈ 854.4. x ≈ 754/2 ≈ 377. For a cleaner SSC-style version: check x=300: 300+300×3=300+900=1200≠1800. x=375: 375+375×3.75=375+1406=1781≈1800 (rounding). This is a challenging algebraic problem — verify by substituting options in competitive exam context.",
+      "explanation": "Let CP = x. Profit% = x (same numeric value). SP = x(1 + x/100) = 96. x² + 100x − 9600 = 0. x = (−100+√(10000+38400))/2 = (−100+220)/2 = 60. CP = ₹60. Verify: 60 at 60% profit = 60×1.6 = ₹96 ✓.",
       "staleness_risk": 0,
       "subject": null,
       "answer_source": "generated",

@@ -1,0 +1,178 @@
+{
+  "topic_code": "RSN_BLOOD_RELATIONS_ADV",
+  "subject": "Reasoning",
+  "topic": "Blood Relations — Advanced",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Pointing to a woman, Rahul says 'She is the daughter of my grandfather's only son.' How is the woman related to Rahul?",
+      "options": [
+        {"option_text": "Sister", "is_correct": true},
+        {"option_text": "Cousin", "is_correct": false},
+        {"option_text": "Niece", "is_correct": false},
+        {"option_text": "Aunt", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Rahul's grandfather's only son = Rahul's father. The woman is the daughter of Rahul's father = Rahul's sister.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A is the brother of B. C is the mother of B. D is the father of C. How is A related to D?",
+      "options": [
+        {"option_text": "Son", "is_correct": false},
+        {"option_text": "Grandson", "is_correct": true},
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Son-in-law", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A's mother is C (since C is mother of B, and A is B's brother → same mother). C's father is D → D is A's maternal grandfather → A is D's grandson.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Introducing a man, a woman said 'His mother is the only daughter of my father.' How is the man related to the woman?",
+      "options": [
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Son", "is_correct": true},
+        {"option_text": "Nephew", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 'The only daughter of my father' = the woman herself (she is her own father's daughter). So the man's mother = the woman herself → the man is the woman's son.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "P and Q are brothers. R and S are sisters. P's son is S's brother. How is Q related to R?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": true},
+        {"option_text": "Grandfather", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. P's son is S's brother → P is the father of S and R (since R and S are sisters). P and Q are brothers → Q is P's brother → Q is the uncle of R and S.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "'A + B' means A is the father of B. 'A – B' means A is the wife of B. 'A × B' means A is the brother of B. 'A ÷ B' means A is the daughter of B. If P ÷ R × Q, what is Q to P?",
+      "options": [
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Uncle", "is_correct": true},
+        {"option_text": "Brother", "is_correct": false},
+        {"option_text": "Grandfather", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. P ÷ R = P is the daughter of R. R × Q = R is the brother of Q. So P's father is R, and R's brother is Q. Therefore Q is P's uncle.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a family of 6, there are parents, one grandfather, one grandmother, and two children. If Priya is the mother and Ravi is the father, who could be Priya's mother-in-law?",
+      "options": [
+        {"option_text": "The grandmother", "is_correct": true},
+        {"option_text": "One of the children", "is_correct": false},
+        {"option_text": "The grandfather", "is_correct": false},
+        {"option_text": "Cannot be determined", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Priya is the mother; Ravi is the father. Priya's mother-in-law = Ravi's mother = the grandmother in the family (she is the parent of the parents' generation).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Looking at a portrait, Vishal said 'Her mother is the wife of my father's son.' Vishal has no brothers. Who is in the portrait?",
+      "options": [
+        {"option_text": "Vishal's daughter", "is_correct": true},
+        {"option_text": "Vishal's wife", "is_correct": false},
+        {"option_text": "Vishal's niece", "is_correct": false},
+        {"option_text": "Vishal's sister", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Vishal has no brothers → 'my father's son' = Vishal himself. 'The wife of Vishal' = Vishal's wife. The portrait person's mother is Vishal's wife → the portrait person is Vishal's daughter.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A says to B: 'The man who married my mother is your father.' What is B to A?",
+      "options": [
+        {"option_text": "Sister or brother", "is_correct": true},
+        {"option_text": "Father", "is_correct": false},
+        {"option_text": "Nephew or niece", "is_correct": false},
+        {"option_text": "Cousin", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. 'The man who married my mother' = A's father. A's father is also B's father → A and B have the same father → they are siblings (brother or sister).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Meera's brother's father's wife's daughter is Priya. What is Priya's relationship to Meera?",
+      "options": [
+        {"option_text": "Sister", "is_correct": true},
+        {"option_text": "Cousin", "is_correct": false},
+        {"option_text": "Niece", "is_correct": false},
+        {"option_text": "Mother", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Meera's brother's father = Meera's father (they share the same father). Meera's father's wife = Meera's mother. Meera's mother's daughter = Meera's sister = Priya.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If X is the brother of Y, Y is the sister of Z, and Z is the son of W, how is W related to X?",
+      "options": [
+        {"option_text": "Mother or Father", "is_correct": true},
+        {"option_text": "Grandparent", "is_correct": false},
+        {"option_text": "Uncle or Aunt", "is_correct": false},
+        {"option_text": "Sibling", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Z is Y's brother; Y is X's sister. So X, Y, Z are all siblings. Z is W's son → W is the parent of Z → W is also the parent of X and Y. W is X's mother or father.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}
