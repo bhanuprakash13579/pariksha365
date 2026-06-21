@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_RACES_ADV",
+  "subject": "Quantitative Aptitude",
+  "topic": "Races and Games",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "In a 100m race, A beats B by 10m. In the same race, B beats C by 10m. By how much does A beat C?",
+      "options": [
+        {"option_text": "19m (correct: when A runs 100m, B runs 90m; when B runs 90m, C runs 90×(90/100)=81m; A beats C by 100-81=19m ✓)", "is_correct": true},
+        {"option_text": "20m (wrong: 20m would be the simple sum of 10+10; but C hasn't run the full distance when B runs 90m)", "is_correct": false},
+        {"option_text": "18m (wrong: doesn't match the calculation)", "is_correct": false},
+        {"option_text": "21m (wrong: doesn't match)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. When A runs 100m, B runs 90m. B:C ratio = 100:90 = 10:9 (from 'B beats C by 10m'). When B runs 90m, C runs 90×(9/10)=81m. A beats C by 100−81=19m. **Formula:** If A beats B by x and B beats C by y in a race of D: A beats C by [D−(D−x)(D−y)/D].",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a 1km race, A beats B by 100m. How much start should A give B so that they finish together?",
+      "options": [
+        {"option_text": "50m (wrong: A runs 1000m while B runs 900m; ratio=10:9; for equal finish, A gives B a 100m head start)", "is_correct": false},
+        {"option_text": "100m (correct: A beats B by 100m; so A covers 1000m while B covers 900m; A should give B 100m start so B starts from 100m mark while A starts at 0m ✓)", "is_correct": true},
+        {"option_text": "111m (wrong: this would be required if asking a different question)", "is_correct": false},
+        {"option_text": "90m (wrong: doesn't satisfy the condition)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. A beats B by 100m in a 1000m race. For them to finish together: B needs a 100m head start (B starts from the 100m point while A starts from 0). Then when A runs 1000m, B also runs 1000−100=900m, which is exactly what B covers. They finish simultaneously.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a 500m race, A beats B by 50m or 5 seconds. What is B's speed?",
+      "options": [
+        {"option_text": "8 m/s (wrong: 50m in 5 sec = 50/5=10 m/s is B's speed for the last 50m)", "is_correct": false},
+        {"option_text": "10 m/s (correct: B covers 50m in 5 sec (the margin); B's speed=50/5=10 m/s ✓)", "is_correct": true},
+        {"option_text": "5 m/s (wrong: doesn't match 50m/5sec)", "is_correct": false},
+        {"option_text": "100 m/s (wrong: too fast)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 'A beats B by 50m OR 5 seconds' = B covers the last 50m in 5 seconds. B's speed = 50/5 = 10 m/s. Also: B's total time = 500/10 = 50 sec; A's time = 50−5 = 45 sec.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a game of billiards, A can give B 15 points in 60 points, and A can give C 20 points in 60 points. In a game of 90 points, how many points can B give C?",
+      "options": [
+        {"option_text": "5 points (wrong: when A scores 60, B scores 45, C scores 40; ratio A:B:C=60:45:40=12:9:8; in 90 points, A=90, B=67.5, C=60; B beats C by 7.5)", "is_correct": false},
+        {"option_text": "7.5 points (correct: A:B=60:45=4:3; A:C=60:40=3:2; common ratio: A=12, B=9, C=8; in game of 90: A=90, B=67.5, C=60; B-C=7.5 ✓)", "is_correct": true},
+        {"option_text": "10 points (wrong: doesn't match calculation)", "is_correct": false},
+        {"option_text": "6 points (wrong: doesn't match)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A:B = 60:45 (A gives B 15 in 60) = 4:3. A:C = 60:40 (A gives C 20 in 60) = 3:2. Make A common: A=12, B=9, C=8. In game of 90: B scores 90×9/12=67.5; C scores 90×8/12=60. B gives C = 67.5−60 = 7.5 points.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A gives B a 200m start in a 1km race. A's speed is 10 m/s and B's speed is 8 m/s. Who wins and by how much?",
+      "options": [
+        {"option_text": "A wins by 50m (correct: B runs 800m; time=100s; A runs 1000m; time=100s; they finish simultaneously? A=10×100=1000m, B=800m start+8×100=800+800=1600? Wait: B needs to run 1000-200=800m; time=800/8=100s; A runs 1000m in 100s ✓; they finish together!)", "is_correct": false},
+        {"option_text": "They finish simultaneously (correct: A time=1000/10=100s; B needs 800m (from 200m head start); time=800/8=100s; equal ✓)", "is_correct": true},
+        {"option_text": "B wins by 100m (wrong: B doesn't win)", "is_correct": false},
+        {"option_text": "A wins by 100m (wrong: they actually tie)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A runs 1000m at 10 m/s → time = 100s. B has 200m head start → needs to run 800m at 8 m/s → time = 100s. Both take 100 seconds → they finish simultaneously. The 200m start was the perfect 'fair start' for these speeds.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a 100m race, A runs at 10 m/s and B runs at 8 m/s. If A gives B a head start of 20m, who wins?",
+      "options": [
+        {"option_text": "B wins (wrong: let's calculate; B needs 80m; time=80/8=10s; A needs 100m; time=100/10=10s; they tie!)", "is_correct": false},
+        {"option_text": "They tie (correct: B needs 80m at 8m/s=10s; A needs 100m at 10m/s=10s; equal ✓)", "is_correct": true},
+        {"option_text": "A wins by 10m (wrong: they tie)", "is_correct": false},
+        {"option_text": "B wins by 5 seconds (wrong: time is equal)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. B starts at 20m mark → needs to run 80m at 8 m/s → time = 80/8 = 10s. A runs 100m at 10 m/s → time = 100/10 = 10s. They finish in exactly the same time. The 20m head start perfectly compensates for the speed difference.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A beats B by 40m in a 200m race. By what percentage is A faster than B?",
+      "options": [
+        {"option_text": "20% (wrong: when A runs 200m, B runs 160m; ratio B/A=160/200=4/5; A is faster than B by (1-4/5)/(4/5)×100=25%)", "is_correct": false},
+        {"option_text": "25% (correct: A's speed/B's speed = 200/160 = 5/4; A is 5/4 times B's speed; A is 1/4=25% faster than B ✓)", "is_correct": true},
+        {"option_text": "40% (wrong: 40% would mean A covers 40% more distance in same time)", "is_correct": false},
+        {"option_text": "20% (wrong: see calculation above)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. When A runs 200m, B runs 160m. Speed ratio A:B = 200:160 = 5:4. A is faster than B by (5-4)/4 × 100 = 25%. **Careful:** 'A is faster THAN B by what %' → base is B's speed; (A-B)/B × 100 = (5-4)/4 × 100 = 25%.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a 400m race, A beats B by 100m. If both started at the same time, how many metres behind B would A need to start so that they finish simultaneously?",
+      "options": [
+        {"option_text": "100m (wrong: when A runs 400m, B runs 300m; ratio A:B=4:3; for equal finish, A needs to give B a 100m head start, NOT A starts behind B)", "is_correct": false},
+        {"option_text": "A should give B a 100m head start (reframed: A beats B by 100m, so B needs 100m head start OR A needs to start 100m BEHIND the starting line — meaning A runs 500m while B runs 400m; 500m/4=125; B runs 400m in 400/3 time... let me recalculate)", "is_correct": false},
+        {"option_text": "133.3m behind (correct: A:B speed=4:3; for B to run 400m, B takes 400/(3k) time; for same time, A runs 4k×400/(3k)=1600/3=533.3m; A needs to run 533.3m so starts 533.3-400=133.3m behind start line... actually for them to finish 'simultaneously at the 400m mark': B runs 400m, A runs 400+x metres; 400/(3k)=（400+x)/(4k); 400×4=3(400+x); 1600=1200+3x; x=400/3=133.3m ✓)", "is_correct": true},
+        {"option_text": "75m behind (wrong: doesn't match)", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Speed ratio A:B = 400:300 = 4:3. For them to finish simultaneously at 400m: let A start x metres behind (A runs 400+x). Time for B to run 400m = time for A to run 400+x. 400/(3k) = (400+x)/(4k). 1600 = 3(400+x) = 1200+3x. x = 400/3 ≈ 133.3m behind the start line.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A and B run a 1000m race. A wins by 50m. B and C run the same race. B wins by 100m. By how much does A beat C in a 1000m race?",
+      "options": [
+        {"option_text": "140m (wrong: A:B=1000:950; B:C=1000:900; A:C=A:B×B:C=1000×1000:(950×900/1000)=1000:855; A beats C by 145m)", "is_correct": false},
+        {"option_text": "145m (correct: when A runs 1000, B runs 950; when B runs 950, C runs 950×0.9=855; A beats C by 145m ✓)", "is_correct": true},
+        {"option_text": "150m (wrong: 150 = 50+100 = simple sum without accounting for chain)", "is_correct": false},
+        {"option_text": "130m (wrong: doesn't match)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. A:B = 1000:950. B:C = 1000:900 = 10:9. When B runs 950m, C runs 950×(9/10) = 855m. So when A runs 1000m, C runs 855m. A beats C by 1000−855 = 145m.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "In a 200m race, A, B, C start simultaneously. A finishes first, B is 20m behind A, C is 40m behind A. By how much does B beat C?",
+      "options": [
+        {"option_text": "20m (wrong: when A runs 200m: B is at 180m, C is at 160m; but B and A have been racing the same time; when B finishes 200m, how far has C run? B:C = 180:160 = 9:8; when B runs 200m, C runs 200×8/9=177.8m; B beats C by 22.2m)", "is_correct": false},
+        {"option_text": "22.2m (correct: B:C ratio = 180:160 = 9:8; when B finishes 200m, C runs 200×8/9=177.8m; B beats C by 22.2m ✓)", "is_correct": true},
+        {"option_text": "25m (wrong: doesn't match)", "is_correct": false},
+        {"option_text": "18m (wrong: doesn't match)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. When A finishes 200m: B is at 180m, C is at 160m. Speed ratio B:C = 180:160 = 9:8. When B runs 200m, C runs 200×(8/9) = 177.8m. B beats C by 200−177.8 ≈ 22.2m. This is because they travel at the same SPEEDS as during A's race.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

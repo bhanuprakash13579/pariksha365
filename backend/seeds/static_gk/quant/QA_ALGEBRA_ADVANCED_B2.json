@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_ALGEBRA_ADVANCED",
+  "subject": "Quantitative Aptitude",
+  "topic": "Algebra — Advanced Identities and Expressions",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "If x + 1/x = 3, find x² + 1/x².",
+      "options": [
+        {"option_text": "6 (wrong: x²+1/x²=(x+1/x)²-2=9-2=7)", "is_correct": false},
+        {"option_text": "7 (correct: (x+1/x)²=x²+2+1/x²; so x²+1/x²=(x+1/x)²-2=9-2=7 ✓)", "is_correct": true},
+        {"option_text": "9 (wrong: 9=(x+1/x)²=x²+2+1/x², not x²+1/x²)", "is_correct": false},
+        {"option_text": "11 (wrong: doesn't match)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Identity: (x+1/x)² = x²+2+1/x². So x²+1/x² = (x+1/x)²-2 = 3²-2 = 9-2 = 7. **Key identity:** x²+1/x² = (x+1/x)²-2 and x²-1/x² = (x-1/x)(x+1/x).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If x - 1/x = 4, find x² + 1/x².",
+      "options": [
+        {"option_text": "14 (wrong: (x-1/x)²=x²-2+1/x²=16; x²+1/x²=16+2=18)", "is_correct": false},
+        {"option_text": "18 (correct: (x-1/x)²=x²-2+1/x²=16; x²+1/x²=16+2=18 ✓)", "is_correct": true},
+        {"option_text": "16 (wrong: 16=(x-1/x)²=x²-2+1/x², not x²+1/x²)", "is_correct": false},
+        {"option_text": "20 (wrong: doesn't match)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Identity: (x-1/x)² = x²-2+1/x². So x²+1/x² = (x-1/x)²+2 = 4²+2 = 16+2 = 18. This is the counterpart to (x+1/x)²-2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If x + y = 7 and xy = 10, find x³ + y³.",
+      "options": [
+        {"option_text": "133 (correct: x³+y³=(x+y)(x²-xy+y²)=(x+y)[(x+y)²-3xy]=7[49-30]=7×19=133 ✓)", "is_correct": true},
+        {"option_text": "147 (wrong: 7×(49-2×10)=7×29=203; wrong formula)", "is_correct": false},
+        {"option_text": "343 (wrong: 343=7³=(x+y)³ which includes 3xy(x+y) terms)", "is_correct": false},
+        {"option_text": "100 (wrong: doesn't match)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. x³+y³ = (x+y)(x²-xy+y²) = (x+y)[(x+y)²-3xy] = 7×[7²-3×10] = 7×[49-30] = 7×19 = 133. **Identity:** x³+y³ = (x+y)³-3xy(x+y) = 343-3(10)(7)=343-210=133 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Factorise: x² - 5x + 6",
+      "options": [
+        {"option_text": "(x-2)(x-4) (wrong: (x-2)(x-4)=x²-6x+8≠x²-5x+6)", "is_correct": false},
+        {"option_text": "(x-2)(x-3) (correct: (x-2)(x-3)=x²-5x+6 ✓; roots sum=5, product=6)", "is_correct": true},
+        {"option_text": "(x+2)(x+3) (wrong: (x+2)(x+3)=x²+5x+6; wrong signs)", "is_correct": false},
+        {"option_text": "(x-1)(x-6) (wrong: (x-1)(x-6)=x²-7x+6; sum=7≠5)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. x²-5x+6: find two numbers with sum=5 and product=6: 2 and 3. Factors: (x-2)(x-3). Verify: (x-2)(x-3)=x²-3x-2x+6=x²-5x+6 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If 2x + 3y = 12 and 3x + 2y = 13, find x + y.",
+      "options": [
+        {"option_text": "4 (wrong: adding both equations: 5x+5y=25; x+y=5)", "is_correct": false},
+        {"option_text": "5 (correct: (2x+3y)+(3x+2y)=5(x+y)=25; x+y=5 ✓)", "is_correct": true},
+        {"option_text": "6 (wrong: 6×5=30≠25)", "is_correct": false},
+        {"option_text": "3 (wrong: 3×5=15≠25)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Add both equations: (2x+3y)+(3x+2y)=12+13 → 5x+5y=25 → 5(x+y)=25 → x+y=5. **Short Trick:** When coefficients in two equations are interchanged, adding gives you the sum of variables × (sum of coefficients per variable).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Simplify: (a+b)² - (a-b)²",
+      "options": [
+        {"option_text": "2a² + 2b² (wrong: (a+b)²=a²+2ab+b²; (a-b)²=a²-2ab+b²; difference=4ab)", "is_correct": false},
+        {"option_text": "4ab (correct: (a+b)²-(a-b)²=(a²+2ab+b²)-(a²-2ab+b²)=4ab ✓)", "is_correct": true},
+        {"option_text": "4a² (wrong: no 'a²' terms remain; they cancel)", "is_correct": false},
+        {"option_text": "4b² (wrong: 'b²' terms also cancel)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. (a+b)²-(a-b)² = (a²+2ab+b²)-(a²-2ab+b²) = 4ab. **Alternative:** Use difference of squares: (a+b)²-(a-b)² = [(a+b)+(a-b)][(a+b)-(a-b)] = [2a][2b] = 4ab.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If x = 2+√3, find x + 1/x.",
+      "options": [
+        {"option_text": "2√3 (wrong: 1/x=1/(2+√3)=(2-√3)/[(2+√3)(2-√3)]=(2-√3)/(4-3)=2-√3; x+1/x=(2+√3)+(2-√3)=4)", "is_correct": false},
+        {"option_text": "4 (correct: 1/x=2-√3 (rationalise); x+1/x=(2+√3)+(2-√3)=4 ✓)", "is_correct": true},
+        {"option_text": "2 (wrong: doesn't match calculation)", "is_correct": false},
+        {"option_text": "2+2√3 (wrong: doesn't match)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 1/x = 1/(2+√3). Rationalise: multiply by (2-√3)/(2-√3) = (2-√3)/(4-3) = 2-√3. x+1/x = (2+√3)+(2-√3) = 4. The conjugate surds (2+√3) and (2-√3) sum to 4.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If x + y + z = 0, find x³ + y³ + z³.",
+      "options": [
+        {"option_text": "0 (wrong: when x+y+z=0, there's a special identity that applies)", "is_correct": false},
+        {"option_text": "3xyz (correct: identity: if x+y+z=0, then x³+y³+z³=3xyz ✓)", "is_correct": true},
+        {"option_text": "xyz (wrong: missing the coefficient 3)", "is_correct": false},
+        {"option_text": "Cannot be determined (wrong: the identity gives exact value)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Special identity: if x+y+z=0, then x³+y³+z³=3xyz. This is derived from: x³+y³+z³-3xyz=(x+y+z)(x²+y²+z²-xy-yz-zx). If x+y+z=0, the right side=0, so x³+y³+z³=3xyz.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Solve: |2x - 6| = 4",
+      "options": [
+        {"option_text": "x = 5 only (wrong: |2x-6|=4 gives 2x-6=4 or 2x-6=-4; x=5 or x=1; two solutions)", "is_correct": false},
+        {"option_text": "x = 5 or x = 1 (correct: 2x-6=4→x=5; or 2x-6=-4→x=1 ✓)", "is_correct": true},
+        {"option_text": "x = 1 only (wrong: x=5 is also a solution)", "is_correct": false},
+        {"option_text": "x = 5 or x = -1 (wrong: 2x-6=-4→2x=2→x=1, not -1)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. |2x-6|=4 → two cases: Case 1: 2x-6=4 → 2x=10 → x=5. Case 2: 2x-6=-4 → 2x=2 → x=1. Solutions: x=5 or x=1. Verify: |2(5)-6|=|4|=4 ✓; |2(1)-6|=|-4|=4 ✓.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If a² + b² = 41 and a - b = 3, find ab.",
+      "options": [
+        {"option_text": "16 (correct: (a-b)²=a²-2ab+b²=9; 41-2ab=9; 2ab=32; ab=16 ✓)", "is_correct": true},
+        {"option_text": "20 (wrong: if ab=20: (a-b)²=a²+b²-2ab=41-40=1; a-b=1≠3)", "is_correct": false},
+        {"option_text": "12 (wrong: if ab=12: a²+b²-2×12=41-24=17; a-b=√17≠3)", "is_correct": false},
+        {"option_text": "8 (wrong: if ab=8: 41-16=25; a-b=5≠3)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. (a-b)² = a²-2ab+b² → a²+b²-2ab = (a-b)². 41-2ab=3²=9 → 2ab=32 → ab=16. Verify: a-b=3 and ab=16 → a and b satisfy x²-((a+b))x+16=0; also a²+b²=(a+b)²-2ab; and (a+b)²=(a-b)²+4ab=9+64=73, a+b=√73.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}

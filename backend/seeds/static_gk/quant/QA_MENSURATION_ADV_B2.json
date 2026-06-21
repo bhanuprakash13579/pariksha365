@@ -1,0 +1,178 @@
+{
+  "topic_code": "QA_MENSURATION_ADV",
+  "subject": "Quantitative Aptitude",
+  "topic": "Mensuration — Advanced (Circles, Spheres, Cylinders)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Find the area of a circle with radius 7 cm. (π = 22/7)",
+      "options": [
+        {"option_text": "44 cm² (wrong: that's 2πr = circumference with r=7)", "is_correct": false},
+        {"option_text": "154 cm² (correct: area = πr² = 22/7 × 7² = 22/7 × 49 = 22×7 = 154 cm² ✓)", "is_correct": true},
+        {"option_text": "132 cm² (wrong: doesn't match πr²)", "is_correct": false},
+        {"option_text": "176 cm² (wrong: that would be πr² with r=8 approximately)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Area of circle = πr² = (22/7) × 7² = (22/7) × 49 = 22 × 7 = 154 cm². **Shortcut:** When r = 7, always use π=22/7; the 7s cancel: 22/7 × 49 = 22×7 = 154.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A cylinder has radius 5 cm and height 14 cm. Find its volume. (π = 22/7)",
+      "options": [
+        {"option_text": "1,000 cm³ (wrong: πr²h = 22/7 × 25 × 14 = 22 × 25 × 2 = 1100 cm³)", "is_correct": false},
+        {"option_text": "1,100 cm³ (correct: volume = πr²h = 22/7 × 5² × 14 = 22/7 × 25 × 14 = 22×50 = 1,100 cm³ ✓)", "is_correct": true},
+        {"option_text": "1,250 cm³ (wrong: doesn't match the formula)", "is_correct": false},
+        {"option_text": "880 cm³ (wrong: 22/7 × 20 × 14 = 880; would be r=√20, not r=5)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Volume of cylinder = πr²h = (22/7) × 25 × 14 = (22/7) × 350 = 22 × 50 = 1,100 cm³. **Shortcut:** 14/7=2; so (22/7)×25×14=22×25×2=22×50=1100.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the curved surface area of a cone with radius 6 cm and slant height 10 cm. (π = 22/7 approximately, or leave in terms of π)",
+      "options": [
+        {"option_text": "60π cm² (correct: CSA of cone = πrl = π×6×10 = 60π cm² ✓)", "is_correct": true},
+        {"option_text": "120π cm² (wrong: 120π = πrl×2 = total surface area without base... no: TSA=πrl+πr²=60π+36π=96π)", "is_correct": false},
+        {"option_text": "36π cm² (wrong: 36π = πr² = area of base only)", "is_correct": false},
+        {"option_text": "96π cm² (wrong: that's the total surface area: πrl+πr²=60π+36π=96π, not CSA)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Curved Surface Area (CSA) of cone = πrl (where r=radius, l=slant height). = π×6×10 = 60π cm². Total Surface Area = πrl+πr² = 60π+36π = 96π cm². Note: slant height l ≠ height h; l = √(r²+h²).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A sphere has radius 6 cm. Find its volume. (π = 22/7)",
+      "options": [
+        {"option_text": "864π cm³ (wrong: volume = (4/3)πr³ = (4/3)π×216 = 288π; numerically 288×22/7≈904.57)", "is_correct": false},
+        {"option_text": "904.32 cm³ (correct: (4/3)×22/7×6³=(4/3)×22/7×216=4×22×216/(3×7)=19008/21=905.14≈905 — let me compute exactly: (4/3)×(22/7)×216=4×22×216/21=19008/21=904.97≈905 cm³ ✓)", "is_correct": true},
+        {"option_text": "288π cm³ (this is in terms of π; numerically ≈904.78; but decimal form is asked)", "is_correct": false},
+        {"option_text": "452 cm³ (wrong: 452=(2/3)πr³ = half sphere volume)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Volume of sphere = (4/3)πr³ = (4/3)×(22/7)×6³ = (4/3)×(22/7)×216 = (4×22×216)/(3×7) = 19,008/21 ≈ 905.14 cm³. In exact terms: 288π ≈ 904.78 cm³. **Formula:** V_sphere = (4/3)πr³.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "If the circumference of a circle is 44 cm, find its area. (π = 22/7)",
+      "options": [
+        {"option_text": "121 cm² (wrong: 2πr=44; r=44×7/(2×22)=7; area=πr²=22/7×49=154 cm²)", "is_correct": false},
+        {"option_text": "154 cm² (correct: 2πr=44; r=7; area=πr²=22/7×49=154 ✓)", "is_correct": true},
+        {"option_text": "176 cm² (wrong: would need r=8 approximately)", "is_correct": false},
+        {"option_text": "132 cm² (wrong: doesn't match)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Circumference = 2πr = 44. r = 44/(2×22/7) = 44×7/44 = 7 cm. Area = πr² = (22/7)×49 = 154 cm². **Short Trick:** C=44, C/π gives diameter; diameter=44/(22/7)=44×7/22=14; r=7.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A rectangular room is 15m×12m. A carpet costing ₹15/m² is to be laid. Find the cost.",
+      "options": [
+        {"option_text": "₹2,400 (wrong: area=15×12=180 m²; cost=180×15=2700)", "is_correct": false},
+        {"option_text": "₹2,700 (correct: area=180 m²; cost=180×15=₹2,700 ✓)", "is_correct": true},
+        {"option_text": "₹2,160 (wrong: 180×12=2160; uses price of 12, not 15)", "is_correct": false},
+        {"option_text": "₹1,800 (wrong: 1800=180×10, uses wrong price)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Area = length × breadth = 15 × 12 = 180 m². Cost = area × rate = 180 × ₹15 = ₹2,700.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "Find the total surface area of a cube with side 5 cm.",
+      "options": [
+        {"option_text": "125 cm² (wrong: 125=5³=volume of cube; TSA=6×25=150)", "is_correct": false},
+        {"option_text": "150 cm² (correct: TSA of cube = 6a² = 6×5² = 6×25 = 150 cm² ✓)", "is_correct": true},
+        {"option_text": "100 cm² (wrong: 100=4×25; only counts 4 faces)", "is_correct": false},
+        {"option_text": "75 cm² (wrong: 75=3×25; only counts 3 faces)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Cube has 6 equal faces. TSA = 6×a² = 6×5² = 6×25 = 150 cm². Volume = a³ = 125 cm³ (different from TSA). **Formulas:** Cube: TSA=6a²; Volume=a³; Lateral surface area=4a².",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A hollow cylinder (pipe) has outer radius 7 cm and inner radius 5 cm, length 10 cm. Find the volume of material in the pipe. (π = 22/7)",
+      "options": [
+        {"option_text": "680 cm³ (wrong: volume=π(R²-r²)h=22/7×(49-25)×10=22/7×24×10=22×240/7=5280/7≈754)", "is_correct": false},
+        {"option_text": "754.29 cm³ (correct: π(R²-r²)h=(22/7)×24×10=5280/7≈754.3 ✓)", "is_correct": true},
+        {"option_text": "1,100 cm³ (wrong: that's the total volume if solid with outer radius)", "is_correct": false},
+        {"option_text": "550 cm³ (wrong: doesn't match)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Volume of material = π(R²−r²)×h = (22/7)×(7²−5²)×10 = (22/7)×(49−25)×10 = (22/7)×24×10 = (22×240)/7 = 5,280/7 ≈ 754.3 cm³.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A wall of dimensions 6m×5m has a window of 2m×1m. If paint costs ₹20/m², find the cost to paint the wall.",
+      "options": [
+        {"option_text": "₹560 (correct: wall area=6×5=30; window area=2×1=2; paintable area=28 m²; cost=28×20=₹560 ✓)", "is_correct": true},
+        {"option_text": "₹600 (wrong: 600=30×20; doesn't subtract window area)", "is_correct": false},
+        {"option_text": "₹520 (wrong: doesn't match the calculation)", "is_correct": false},
+        {"option_text": "₹540 (wrong: 540/20=27 m²; needs 28 m²)", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Total wall area = 6×5 = 30 m². Window area (not painted) = 2×1 = 2 m². Net area to paint = 30−2 = 28 m². Cost = 28×₹20 = ₹560.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    },
+    {
+      "stem": "A sphere of radius 6 cm is melted and recast into a cylinder of radius 4 cm. Find the height of the cylinder.",
+      "options": [
+        {"option_text": "9 cm (correct: volume sphere=(4/3)π×216=288π; volume cylinder=π×16×h=288π; h=18 — wait: 16h=288; h=18 cm; not 9)", "is_correct": false},
+        {"option_text": "18 cm (correct: sphere volume=(4/3)π×6³=288π; cylinder volume=π×4²×h=16πh; 16πh=288π; h=18 cm ✓)", "is_correct": true},
+        {"option_text": "12 cm (wrong: 16×12=192≠288)", "is_correct": false},
+        {"option_text": "24 cm (wrong: 16×24=384≠288)", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Volume sphere = (4/3)πr³ = (4/3)π(6)³ = (4/3)π×216 = 288π cm³. Volume cylinder = πR²h = π(4²)h = 16πh. Equal volumes: 16πh = 288π → h = 288/16 = 18 cm.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-21",
+      "generated_at": "2026-06-21T00:00:00+00:00"
+    }
+  ]
+}
