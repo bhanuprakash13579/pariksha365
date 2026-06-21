@@ -320,7 +320,7 @@ const AttemptHistoryScreen = ({ navigation }: any) => {
     <ScrollView style={styles.container}>
       <View style={styles.contentPadAlt}>
         {attempts.map((attempt: any) => (
-          <TouchableOpacity key={attempt.id} style={styles.card} onPress={() => navigation.navigate('TestAnalysis')}>
+          <TouchableOpacity key={attempt.id} style={styles.card} onPress={() => navigation.navigate('PostTestResults', { attemptId: attempt.id })}>
             <View style={styles.flexRowBetween}>
               <View>
                 <Text style={styles.cardTitle}>Test Attempt</Text>

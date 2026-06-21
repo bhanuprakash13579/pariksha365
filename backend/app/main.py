@@ -142,15 +142,27 @@ async def _background_schema_selfheal() -> None:
         print(f"BG: column self-heal applied {ok}/{len(heal_stmts)} statements")
 
     # 3. Cashfree enum + payment columns. Idempotent.
+    # ALTER TYPE ADD VALUE cannot run inside a transaction on PostgreSQL, so we
+    # use AUTOCOMMIT isolation for that statement specifically.
     try:
-        async with SessionLocal() as db:
-            await db.execute(_sql_text("ALTER TYPE paymentprovider ADD VALUE IF NOT EXISTS 'CASHFREE';"))
-            await db.execute(_sql_text("ALTER TABLE payments ADD COLUMN IF NOT EXISTS payment_type VARCHAR DEFAULT 'COURSE';"))
-            await db.execute(_sql_text("ALTER TABLE payments ADD COLUMN IF NOT EXISTS exam_stage_id UUID REFERENCES exam_stages(id) ON DELETE SET NULL;"))
-            await db.commit()
-            print("BG: Cashfree schema self-heal completed")
+        async with engine.connect() as raw_conn:
+            await raw_conn.execution_options(isolation_level="AUTOCOMMIT").execute(
+                _sql_text("ALTER TYPE paymentprovider ADD VALUE IF NOT EXISTS 'CASHFREE';")
+            )
+        print("BG: Cashfree enum value ensured")
     except Exception as e:
-        print(f"BG: Cashfree schema self-heal skipped: {e!r}")
+        print(f"BG: Cashfree enum skipped: {e!r}")
+    for _stmt in (
+        "ALTER TABLE payments ADD COLUMN IF NOT EXISTS payment_type VARCHAR DEFAULT 'COURSE';",
+        "ALTER TABLE payments ADD COLUMN IF NOT EXISTS exam_stage_id UUID REFERENCES exam_stages(id) ON DELETE SET NULL;",
+    ):
+        try:
+            async with SessionLocal() as db:
+                await db.execute(_sql_text(_stmt))
+                await db.commit()
+        except Exception as e:
+            print(f"BG: payment column skipped — {_stmt[:60]}…: {e!r}")
+    print("BG: Cashfree schema self-heal completed")
 
     # 4. Category seeding — only if the table is empty.
     try:

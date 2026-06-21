@@ -58,8 +58,8 @@ async def forgot_password(
     """
     Request a password reset token. In production, this would be emailed.
     """
-    token = await auth_service.forgot_password(db, email=body.email)
-    return MessageResponse(message=f"Password reset token: {token}")
+    await auth_service.forgot_password(db, email=body.email)
+    return MessageResponse(message="If this email is registered, a password reset link has been sent.")
 
 @router.post("/reset-password", response_model=MessageResponse)
 async def reset_password(

@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { View, TouchableOpacity, TextInput, Image, Modal, Text, ScrollView, Platform, Keyboard } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 import { styles, COLORS } from '../styles/theme';
 import { SearchAPI } from '../services/api';
 
 export default function GlobalHeader({ onOpenDrawer, onSearch }: any) {
+    const navigation = useNavigation<any>();
     const [searchQuery, setSearchQuery] = useState('');
     const [searchResults, setSearchResults] = useState<{ categories: any[], courses: any[], tests: any[] }>({ categories: [], courses: [], tests: [] });
     const [isSearching, setIsSearching] = useState(false);
@@ -65,7 +67,7 @@ export default function GlobalHeader({ onOpenDrawer, onSearch }: any) {
                                     <View style={{ borderBottomWidth: 1, borderBottomColor: '#f3f4f6' }}>
                                         <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#9ca3af', textTransform: 'uppercase', paddingHorizontal: 15, paddingTop: 10, paddingBottom: 5 }}>Categories</Text>
                                         {searchResults.categories.map(cat => (
-                                            <TouchableOpacity key={cat.id} style={{ paddingHorizontal: 15, paddingVertical: 12 }} onPress={() => setShowResults(false)}>
+                                            <TouchableOpacity key={cat.id} style={{ paddingHorizontal: 15, paddingVertical: 12 }} onPress={() => { setShowResults(false); setSearchQuery(''); Keyboard.dismiss(); navigation.navigate('Category', { categoryTitle: cat.name, categoryId: cat.id, subcategories: cat.subcategories || [] }); }}>
                                                 <Text style={{ color: '#374151', fontSize: 14, fontWeight: '500' }}>{cat.name}</Text>
                                             </TouchableOpacity>
                                         ))}
@@ -76,7 +78,7 @@ export default function GlobalHeader({ onOpenDrawer, onSearch }: any) {
                                     <View style={{ borderBottomWidth: 1, borderBottomColor: '#f3f4f6' }}>
                                         <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#9ca3af', textTransform: 'uppercase', paddingHorizontal: 15, paddingTop: 10, paddingBottom: 5 }}>Courses</Text>
                                         {searchResults.courses.map(course => (
-                                            <TouchableOpacity key={course.id} style={{ paddingHorizontal: 15, paddingVertical: 12 }} onPress={() => setShowResults(false)}>
+                                            <TouchableOpacity key={course.id} style={{ paddingHorizontal: 15, paddingVertical: 12 }} onPress={() => { setShowResults(false); setSearchQuery(''); Keyboard.dismiss(); navigation.navigate('CourseDetail', { course }); }}>
                                                 <Text style={{ color: '#374151', fontSize: 14, fontWeight: '500' }}>{course.title}</Text>
                                             </TouchableOpacity>
                                         ))}
@@ -87,7 +89,7 @@ export default function GlobalHeader({ onOpenDrawer, onSearch }: any) {
                                     <View>
                                         <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#9ca3af', textTransform: 'uppercase', paddingHorizontal: 15, paddingTop: 10, paddingBottom: 5 }}>Test Series</Text>
                                         {searchResults.tests.map(test => (
-                                            <TouchableOpacity key={test.id} style={{ paddingHorizontal: 15, paddingVertical: 12 }} onPress={() => setShowResults(false)}>
+                                            <TouchableOpacity key={test.id} style={{ paddingHorizontal: 15, paddingVertical: 12 }} onPress={() => { setShowResults(false); setSearchQuery(''); Keyboard.dismiss(); navigation.navigate('TestDetail', { test, isGuest: false }); }}>
                                                 <Text style={{ color: '#374151', fontSize: 14, fontWeight: '500' }}>{test.title}</Text>
                                             </TouchableOpacity>
                                         ))}
