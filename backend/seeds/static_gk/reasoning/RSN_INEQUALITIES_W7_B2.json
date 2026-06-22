@@ -1,0 +1,168 @@
+{
+  "topic_code": "RSN_INEQUALITIES_W7",
+  "subject": "Reasoning",
+  "topic": "Coded Inequalities — Statement and Conclusions (Set W7)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Symbols used: $ means >, @ means <, © means ≥, # means ≤, % means =\nStatements: A $ B, B $ C\nConclusions: I. A $ C   II. C @ A\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Decoding: A > B and B > C. I: A $ C = A > C. Since A > B > C, A > C ✓. II: C @ A = C < A, which is the same as A > C ✓. Both conclusions follow — they express the same relationship from two sides.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T07:00:00+00:00"
+    },
+    {
+      "stem": "Symbols: $ = >, @ = <, © = ≥, # = ≤, % =\nStatements: P @ Q, Q % R\nConclusions: I. P @ R   II. R $ P\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Decoding: P < Q and Q = R. So P < Q = R, meaning P < R. I: P @ R = P < R ✓. II: R $ P = R > P, same as P < R ✓. Both express P < R and are correct.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T07:00:00+00:00"
+    },
+    {
+      "stem": "Symbols: $ = >, @ = <, © = ≥, # = ≤, % =\nStatements: M $ N, N © O\nConclusions: I. M $ O   II. O $ M\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Decoding: M > N and N ≥ O → M > N ≥ O → M > O. I: M $ O = M > O ✓. II: O $ M = O > M — contradicts M > O ✗. Only I follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T07:00:00+00:00"
+    },
+    {
+      "stem": "Symbols: $ = >, @ = <, © = ≥, # = ≤, % =\nStatement: A © B % C $ D\nConclusions: I. A $ D   II. B © D\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Decoding: A ≥ B = C > D. I: A $ D = A > D? A ≥ B = C > D → A ≥ C > D → A > D ✓. II: B © D = B ≥ D? B = C > D → B > D → B ≥ D ✓. Both follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T07:00:00+00:00"
+    },
+    {
+      "stem": "Symbols: $ = >, @ = <, © = ≥, # = ≤, % =\nStatement: A # B $ C @ D\nConclusions: I. A @ D   II. C @ B\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Decoding: A ≤ B > C < D. I: A @ D = A < D? A ≤ B > C < D — no direct chain from A to D. A could equal B which could be greater or less than D. Not definite ✗. II: C @ B = C < B? From B > C, C < B ✓. Only II follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T07:00:00+00:00"
+    },
+    {
+      "stem": "Symbols: $ = >, @ = <, © = ≥, # = ≤, % =\nStatement: P % Q © R # S\nConclusions: I. P © S   II. S $ R\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Decoding: P = Q ≥ R ≤ S. I: P © S = P ≥ S? P = Q ≥ R and R ≤ S — the chain breaks at R ≤ S. P could be < S or = S. Not definite ✗. II: S $ R = S > R? R ≤ S means S ≥ R — S could equal R. Not definitely S > R ✗. Neither follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T07:00:00+00:00"
+    },
+    {
+      "stem": "Symbols: $ = >, @ = <, © = ≥, # = ≤, % =\nStatements: E $ F, G # F, H % G\nConclusions: I. E $ H   II. F © H\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Decoding: E > F, G ≤ F, H = G. So H = G ≤ F → F ≥ H. And E > F ≥ H → E > H. I: E $ H = E > H ✓. II: F © H = F ≥ H? F ≥ G = H → F ≥ H ✓. Both follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T07:00:00+00:00"
+    },
+    {
+      "stem": "Symbols: $ = >, @ = <, © = ≥, # = ≤, % =\nStatements: X @ Y, Y # Z, Z % W\nConclusions: I. X @ W   II. W $ X\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Decoding: X < Y, Y ≤ Z, Z = W. Chain: X < Y ≤ Z = W → X < W. I: X @ W = X < W ✓. II: W $ X = W > X — same as X < W ✓. Both conclusions express the same valid inequality. Both follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T07:00:00+00:00"
+    },
+    {
+      "stem": "Symbols: $ = >, @ = <, © = ≥, # = ≤, % =\nStatement: A @ B © C % D $ E\nConclusions: I. A @ E   II. C $ E\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Decoding: A < B ≥ C = D > E. II: C $ E = C > E? C = D > E → C > E ✓. I: A @ E = A < E? A < B ≥ C = D > E. We know A < B and E < D = C ≤ B. A could be less or greater than E — no definite relationship ✗. Only II follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T07:00:00+00:00"
+    },
+    {
+      "stem": "Symbols: $ = >, @ = <, © = ≥, # = ≤, % =\nStatements: P # Q $ R, S @ R, T % S\nConclusions: I. T @ Q   II. P @ R\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Decoding: P ≤ Q > R, S < R, T = S. I: T @ Q = T < Q? T = S < R < Q (since Q > R and S < R, we get S < R and R < Q → S < Q → T = S < Q) ✓. II: P @ R = P < R? P ≤ Q > R — we know Q > R but P ≤ Q. P could equal Q (which is > R) giving P > R, or P could be ≤ R. Indeterminate ✗. Only I follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T07:00:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "topic_code": "QA_NUMBER_SYSTEM_W7",
+  "subject": "Quantitative Aptitude",
+  "topic": "Number System — HCF, LCM, Divisibility (Set W7)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "What is the HCF of 24 and 36?",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "12", "is_correct": true},
+        {"option_text": "18", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 24 = 2³×3; 36 = 2²×3². HCF = product of smallest powers of common prime factors = 2²×3 = 12. **Short Trick:** Divisibility check — 12 divides both 24 (÷2=OK) and 36 (÷3=OK); 18 doesn't divide 24.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "What is the LCM of 12, 18, and 24?",
+      "options": [
+        {"option_text": "36", "is_correct": false},
+        {"option_text": "48", "is_correct": false},
+        {"option_text": "72", "is_correct": true},
+        {"option_text": "144", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 12 = 2²×3; 18 = 2×3²; 24 = 2³×3. LCM = product of highest powers of all prime factors = 2³×3² = 8×9 = 72. Verify: 72÷12=6, 72÷18=4, 72÷24=3 — all whole numbers ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Which of the following numbers is divisible by both 3 and 4?",
+      "options": [
+        {"option_text": "46", "is_correct": false},
+        {"option_text": "58", "is_correct": false},
+        {"option_text": "84", "is_correct": true},
+        {"option_text": "92", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Divisible by both 3 and 4 = divisible by LCM(3,4)=12. Check: 84÷12=7 ✓. Divisibility rules: 84 is divisible by 3 (digit sum 8+4=12, divisible by 3) and by 4 (last two digits 84÷4=21). The others: 46÷4=11.5 (not by 4), 58÷3=19.3 (not by 3), 92÷3=30.7 (not by 3).",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "The LCM of two numbers is 48 and their HCF is 4. If one number is 12, what is the other?",
+      "options": [
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "14", "is_correct": false},
+        {"option_text": "16", "is_correct": true},
+        {"option_text": "20", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Key relation: LCM × HCF = Product of the two numbers. 48 × 4 = 12 × x → x = 192/12 = 16. Verify: HCF(12,16)=4 ✓, LCM(12,16)=48 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Find the remainder when 2451 is divided by 9.",
+      "options": [
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": true},
+        {"option_text": "5", "is_correct": false},
+        {"option_text": "6", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Remainder when divided by 9 = remainder of (sum of digits) ÷ 9. Digit sum of 2451: 2+4+5+1 = 12. 12 ÷ 9 = 1 remainder 3. So remainder = 3. **Short Trick (casting out 9s):** Digit sum until single digit: 12 → 1+2 = 3. This is the remainder.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "What is the smallest number that must be subtracted from 2531 to make it exactly divisible by 7?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": false},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. 2531 ÷ 7: 7 × 361 = 2527. 2531 − 2527 = 4 = remainder. To make it divisible, subtract the remainder: 2531 − 4 = 2527 = 7×361 ✓. **Short Trick:** Divide and find remainder; that's what you subtract.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "How many numbers between 1 and 100 (inclusive) are divisible by both 4 and 6?",
+      "options": [
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "7", "is_correct": false},
+        {"option_text": "8", "is_correct": true},
+        {"option_text": "9", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Divisible by both 4 and 6 = divisible by LCM(4,6) = 12. Multiples of 12 from 1–100: 12, 24, 36, 48, 60, 72, 84, 96 = 8 numbers. **Short Trick:** Count = floor(100/12) = floor(8.33) = 8.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "A number when divided by 5 gives remainder 3, and when divided by 7 gives remainder 5. Which of the following could be such a number?",
+      "options": [
+        {"option_text": "23", "is_correct": false},
+        {"option_text": "28", "is_correct": false},
+        {"option_text": "33", "is_correct": true},
+        {"option_text": "38", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Need x ≡ 3 (mod 5) and x ≡ 5 (mod 7). Numbers of form 5k+3: 3, 8, 13, 18, 23, 28, 33, ... Check each mod 7: 33 = 4×7 + 5 → remainder 5 ✓. Verify 23: 23÷7=3R2 ✗. 38: 38÷5=7R3 ✓ but 38÷7=5R3 ✗.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "The HCF of two numbers is 8 and their LCM is 120. If one number is 24, find the other.",
+      "options": [
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "40", "is_correct": true},
+        {"option_text": "48", "is_correct": false},
+        {"option_text": "60", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. LCM × HCF = Product of numbers. 120 × 8 = 24 × x → x = 960/24 = 40. Verify: HCF(24,40) = 8 ✓ (both divisible by 8; 24=8×3, 40=8×5; HCF=8 since 3 and 5 are coprime). LCM(24,40) = 8×3×5 = 120 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Find the smallest 4-digit number that is exactly divisible by 12, 15, and 20.",
+      "options": [
+        {"option_text": "1020", "is_correct": true},
+        {"option_text": "1080", "is_correct": false},
+        {"option_text": "1200", "is_correct": false},
+        {"option_text": "1260", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. LCM(12, 15, 20): 12=2²×3, 15=3×5, 20=2²×5. LCM = 2²×3×5 = 60. Smallest 4-digit multiple of 60: divide 1000 by 60 → quotient 16, remainder 40. Next multiple: 17×60 = 1020. **Short Trick:** LCM first, then: smallest 4-digit multiple = ⌈1000/LCM⌉ × LCM.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    }
+  ]
+}

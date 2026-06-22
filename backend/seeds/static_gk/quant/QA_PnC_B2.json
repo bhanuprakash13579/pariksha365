@@ -1,0 +1,168 @@
+{
+  "topic_code": "QA_PnC",
+  "subject": "Quantitative Aptitude",
+  "topic": "Permutations and Combinations",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "In how many ways can 4 students be seated in a row of 4 chairs?",
+      "options": [
+        {"option_text": "16", "is_correct": false},
+        {"option_text": "24", "is_correct": true},
+        {"option_text": "12", "is_correct": false},
+        {"option_text": "8", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Arranging 4 distinct students in 4 chairs = 4! = 4×3×2×1 = 24. **Short Trick:** Seats × (Seats−1) × ... × 1 = n! Visualise filling seats left to right: 4 choices for seat 1, 3 for seat 2, 2 for seat 3, 1 for seat 4 → 4×3×2×1 = 24.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "From a group of 6 people, in how many ways can a committee of 3 be selected?",
+      "options": [
+        {"option_text": "20", "is_correct": true},
+        {"option_text": "120", "is_correct": false},
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "15", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Order does not matter for a committee, so use combination: C(6,3) = 6!/(3!×3!) = (6×5×4)/(3×2×1) = 120/6 = 20. **Short Trick:** C(n,r) = C(n, n−r). C(6,3) = C(6,3) = 20. Common trap: using 6×5×4 = 120 (that's permutation P(6,3), which counts order).",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "How many 3-digit numbers can be formed using digits 1, 2, 3, 4, 5 without repetition?",
+      "options": [
+        {"option_text": "60", "is_correct": true},
+        {"option_text": "120", "is_correct": false},
+        {"option_text": "125", "is_correct": false},
+        {"option_text": "30", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Hundreds place: 5 choices; tens place: 4 remaining choices; units place: 3 remaining choices. Total = 5×4×3 = 60. This is P(5,3) = 5!/(5−3)! = 5!/2! = 60. Option B (120 = 5!) counts all arrangements of all 5 digits, not 3-digit numbers.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "In how many ways can the letters of the word 'LEVEL' be arranged?",
+      "options": [
+        {"option_text": "120", "is_correct": false},
+        {"option_text": "60", "is_correct": false},
+        {"option_text": "30", "is_correct": true},
+        {"option_text": "20", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. LEVEL has 5 letters: L appears 2 times, E appears 2 times, V appears once. Arrangements with repeated letters = 5! ÷ (2! × 2!) = 120 ÷ 4 = 30. **Short Trick:** Formula for repeated letters: n! ÷ (a! × b! × ...) where a, b are frequencies of repeated letters. Option A (120) ignores repetitions.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "In how many ways can a committee of 2 men and 3 women be formed from 5 men and 6 women?",
+      "options": [
+        {"option_text": "120", "is_correct": false},
+        {"option_text": "200", "is_correct": true},
+        {"option_text": "150", "is_correct": false},
+        {"option_text": "100", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Select 2 men from 5: C(5,2) = 10. Select 3 women from 6: C(6,3) = 20. Since both selections happen simultaneously, multiply: 10 × 20 = 200. **Short Trick:** For combined selection problems, always multiply (AND rule). Common error: adding instead of multiplying.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "A bag contains 5 red and 4 blue balls. In how many ways can 2 red and 1 blue ball be selected?",
+      "options": [
+        {"option_text": "20", "is_correct": false},
+        {"option_text": "30", "is_correct": false},
+        {"option_text": "40", "is_correct": true},
+        {"option_text": "36", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Select 2 reds from 5: C(5,2) = 5!/(2!3!) = 10. Select 1 blue from 4: C(4,1) = 4. Total = 10 × 4 = 40. Note: 36 (option D) is a plausible distractor — if someone uses C(4,2)×C(5,1) = 6×5 = 30, not 36, showing both common errors lead to different wrong answers.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "In how many ways can 8 people be seated around a circular table?",
+      "options": [
+        {"option_text": "40320", "is_correct": false},
+        {"option_text": "5040", "is_correct": true},
+        {"option_text": "720", "is_correct": false},
+        {"option_text": "2520", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Circular arrangements = (n−1)! because one position is fixed as reference to eliminate rotations that look identical. (8−1)! = 7! = 5040. Option A (40320 = 8!) is the linear arrangement. Option C (720 = 6!) is for 7 people. **Short Trick:** Circular = (n−1)! vs Linear = n!",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "A team of 3 is to be formed from 5 boys and 4 girls such that at least one girl is included. How many ways is this possible?",
+      "options": [
+        {"option_text": "80", "is_correct": false},
+        {"option_text": "74", "is_correct": true},
+        {"option_text": "68", "is_correct": false},
+        {"option_text": "84", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Total ways to choose 3 from 9 = C(9,3) = 84. Ways with NO girl (all boys) = C(5,3) = 10. At least one girl = 84 − 10 = 74. **Short Trick:** 'At least one' problems → use complement: Subtract the unwanted case (none of the required type) from the total.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "How many 4-digit numbers greater than 5000 can be formed using digits 3, 5, 7, 9 (repetition allowed)?",
+      "options": [
+        {"option_text": "128", "is_correct": false},
+        {"option_text": "192", "is_correct": true},
+        {"option_text": "256", "is_correct": false},
+        {"option_text": "144", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. For the number to exceed 5000, the thousands digit must be 5, 7, or 9 (not 3) → 3 choices. Each of the remaining 3 positions can be any of 4 digits (repetition allowed) → 4³ = 64. Total = 3 × 64 = 192. Note: 'greater than 5000' includes numbers starting with 5, so 5 is a valid thousands digit.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "From 7 consonants and 4 vowels, how many words can be formed using 3 consonants and 2 vowels?",
+      "options": [
+        {"option_text": "25200", "is_correct": true},
+        {"option_text": "12600", "is_correct": false},
+        {"option_text": "5040", "is_correct": false},
+        {"option_text": "3024", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Step 1 — Select: C(7,3) × C(4,2) = 35 × 6 = 210 ways to choose the letters. Step 2 — Arrange: The 5 selected letters can be arranged in 5! = 120 ways. Total = 210 × 120 = 25,200. Common error: forgetting the arrangement step (giving 210) or only computing C(7,3)×C(4,2)×5 = 1050.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "topic_code": "RSN_DIRECTION_SENSE_W7",
+  "subject": "Reasoning",
+  "topic": "Direction Sense (Set W7)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "A man walks 5 km north, then turns right and walks 3 km. Which direction is he now facing?",
+      "options": [
+        {"option_text": "North", "is_correct": false},
+        {"option_text": "East", "is_correct": true},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "West", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Facing north and turning right → facing east. The distance walked has no bearing on direction facing. Memory aid: N→turn right→E→turn right→S→turn right→W→turn right→N.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "You are standing facing east. You turn left. Which direction are you now facing?",
+      "options": [
+        {"option_text": "North", "is_correct": true},
+        {"option_text": "South", "is_correct": false},
+        {"option_text": "West", "is_correct": false},
+        {"option_text": "East", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Facing east and turning left (anticlockwise) → north. Clockwise: N→E→S→W→N. Anti-clockwise (left turn): E→N. So left from east = north.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "A person walks 10 km south, then 6 km west, then 10 km north. How far is he from the starting point?",
+      "options": [
+        {"option_text": "4 km", "is_correct": false},
+        {"option_text": "6 km", "is_correct": true},
+        {"option_text": "10 km", "is_correct": false},
+        {"option_text": "12 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 10 km south and 10 km north cancel out; net N-S movement = 0. Net east-west = 6 km west. Distance from start = 6 km (due west). The misdirection here is the long 10 km paths that cancel each other.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "A man walks 4 km north, turns right and walks 3 km east, then turns right and walks 4 km south. How far is he from his starting point?",
+      "options": [
+        {"option_text": "3 km", "is_correct": true},
+        {"option_text": "4 km", "is_correct": false},
+        {"option_text": "5 km", "is_correct": false},
+        {"option_text": "7 km", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. 4 km north and 4 km south cancel out; net N-S = 0. Net east = 3 km. Straight-line distance from start = 3 km (due east). Common trap: adding all distances (4+3+4=11) or applying Pythagoras when not needed.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Priya starts from her house, walks 6 km south, then turns east and walks 8 km. How far is she from her house?",
+      "options": [
+        {"option_text": "8 km", "is_correct": false},
+        {"option_text": "10 km", "is_correct": true},
+        {"option_text": "12 km", "is_correct": false},
+        {"option_text": "14 km", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. She moved 6 km south and 8 km east — two perpendicular directions. Straight-line distance = √(6² + 8²) = √(36 + 64) = √100 = 10 km. This is a classic 3-4-5 (×2) Pythagorean triple: 6-8-10.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Raj is facing northwest. He turns clockwise by 90°. Which direction is he now facing?",
+      "options": [
+        {"option_text": "Northeast", "is_correct": true},
+        {"option_text": "Southeast", "is_correct": false},
+        {"option_text": "Southwest", "is_correct": false},
+        {"option_text": "South", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Using compass bearings: NW = 315°. Clockwise 90° → 315° + 90° = 405° = 45° = NE. Alternatively: NW → clockwise 90° passes through N and arrives at NE. Clockwise 180° from NW would be SE.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "A person drives 20 km north, turns right and drives 15 km east, then turns right again and drives 20 km south. How far and in which direction is he from the starting point?",
+      "options": [
+        {"option_text": "15 km North", "is_correct": false},
+        {"option_text": "15 km East", "is_correct": true},
+        {"option_text": "20 km South", "is_correct": false},
+        {"option_text": "5 km East", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 20 km north and 20 km south cancel; net N-S = 0. Net east = 15 km. He is 15 km east of start. This type of question tests whether candidates track net displacement rather than total distance.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Radha walks 3 km east, then 4 km north, then 3 km west, then 4 km south. What is her displacement from the starting point?",
+      "options": [
+        {"option_text": "7 km", "is_correct": false},
+        {"option_text": "4 km", "is_correct": false},
+        {"option_text": "0 km", "is_correct": true},
+        {"option_text": "14 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 3E and 3W cancel; 4N and 4S cancel. Net position = starting point. Displacement = 0 km. She has walked 14 km total but returned to her starting point. This tests displacement (net) vs distance (total path).",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Vivek goes 4 km north, then 3 km east, then 2 km south, then 5 km west from his house. What is his displacement from home?",
+      "options": [
+        {"option_text": "2√2 km northwest", "is_correct": true},
+        {"option_text": "2 km north", "is_correct": false},
+        {"option_text": "4 km west", "is_correct": false},
+        {"option_text": "2 km southwest", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. Net north: 4 − 2 = 2 km north. Net east: 3 − 5 = −2 km (i.e., 2 km west). Position: 2 km north and 2 km west of start → northwest. Displacement = √(2² + 2²) = √8 = 2√2 km in the NW direction.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "A boy starts from X, walks 6 km north to Y, then 8 km west to Z, then 6 km south to W, then 2 km east to P, then 6 km south to Q. What is the straight-line distance from X to Q?",
+      "options": [
+        {"option_text": "6 km", "is_correct": false},
+        {"option_text": "8 km", "is_correct": false},
+        {"option_text": "6√2 km", "is_correct": true},
+        {"option_text": "10 km", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Tracking from X: after Y: 6N; after Z: 6N, 8W; after W: 0N, 8W; after P: 0N, 6W; after Q: 6S, 6W (6 km further south). Net from X: 6 km south and 6 km west. Distance = √(6² + 6²) = √72 = 6√2 km (in SW direction from X).",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    }
+  ]
+}

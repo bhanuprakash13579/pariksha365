@@ -1,0 +1,178 @@
+{
+  "topic_code": "RSN_CRITICAL_DEDUCTION",
+  "subject": "Reasoning",
+  "topic": "Critical Reasoning and Logical Deductions",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Statements: 'All roses are flowers. Some flowers fade quickly.' Conclusion: 'Some roses fade quickly.' Does the conclusion follow?",
+      "options": [
+        {"option_text": "Conclusion follows", "is_correct": false},
+        {"option_text": "Conclusion does not follow", "is_correct": true},
+        {"option_text": "Data is insufficient", "is_correct": false},
+        {"option_text": "Conclusion is partially true", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. 'Some flowers fade quickly' — these could be non-rose flowers. We cannot distribute the 'some' flowers that fade specifically onto roses. The conclusion does not necessarily follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: 'Some cats are dogs. All dogs are animals.' Conclusions: I. Some cats are animals. II. Some animals are cats. Which conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": true},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Some cats are dogs + All dogs are animals → Some cats are animals (I follows). From 'Some cats are animals', by conversion: Some animals are cats (II follows). Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "Argument: 'Should smoking be banned in public places? YES — because passive smoking is harmful to non-smokers.' Is this argument strong or weak?",
+      "options": [
+        {"option_text": "Strong and directly relevant", "is_correct": true},
+        {"option_text": "Weak and irrelevant", "is_correct": false},
+        {"option_text": "Partially relevant only", "is_correct": false},
+        {"option_text": "Too broad to evaluate", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. The argument directly addresses harm caused to non-smokers — a third party. Protecting others from harm is a strong and relevant reason to support a public ban.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: 'All managers are leaders. No leaders are lazy. Some lazy people are students.' Conclusions: I. No managers are lazy. II. Some students are not leaders. Which follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": true},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. All managers=leaders + No leaders=lazy → No managers=lazy (I follows). No leaders=lazy → No lazy=leaders (conversion). Some lazy=students → these students are not leaders (II follows). Both follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "Statement: 'The company's profits dropped 20% last year despite increased advertising spending.' Conclusion: 'Increased advertising does not guarantee increased profits.' Does the conclusion follow?",
+      "options": [
+        {"option_text": "Conclusion follows", "is_correct": true},
+        {"option_text": "Conclusion does not follow", "is_correct": false},
+        {"option_text": "Data is ambiguous", "is_correct": false},
+        {"option_text": "Conclusion is too broad", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. The statement is direct evidence that advertising spending increased yet profits fell. This validates the conclusion that advertising alone does not guarantee profits.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: 'No scientists are poets. All poets are artists.' Conclusions: I. No scientists are artists. II. Some artists are not scientists. Which follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": false},
+        {"option_text": "Only II", "is_correct": true},
+        {"option_text": "Both I and II", "is_correct": false},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. All poets=artists → some artists are poets. No scientists=poets → those poet-artists are not scientists → Some artists are not scientists (II follows). I does not follow: scientists could still be non-poet artists; we can't conclude 'no scientists are artists'.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "Argument: 'Should private schools be abolished? No — because private schools provide better quality education.' Is this argument strong?",
+      "options": [
+        {"option_text": "Strong argument", "is_correct": true},
+        {"option_text": "Weak argument", "is_correct": false},
+        {"option_text": "Irrelevant argument", "is_correct": false},
+        {"option_text": "Ambiguous argument", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. The argument directly addresses the core issue (education quality) and provides a substantive reason against abolition. It is strong because quality of education is central to the purpose of schools.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: 'All fruits have seeds. Mangoes are fruits.' Conclusions: I. Mangoes have seeds. II. All seeds come from fruits. Which follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": true},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": false},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. All fruits have seeds + Mangoes are fruits → Mangoes have seeds (I follows). II says 'All seeds come from fruits' — the premise only says fruits have seeds, not that only fruits have seeds. II does not follow.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: 'Most employees who work overtime are stressed. Rajan works overtime regularly. Stressed employees often have health issues.' Conclusion: 'Rajan likely has health issues.' Does the conclusion follow?",
+      "options": [
+        {"option_text": "Conclusion definitely follows", "is_correct": false},
+        {"option_text": "Conclusion follows as a probable inference", "is_correct": true},
+        {"option_text": "Conclusion does not follow", "is_correct": false},
+        {"option_text": "Insufficient data to judge", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 'Most' and 'often' introduce probability, not certainty. Rajan is likely stressed (most overtime workers are) and likely has health issues (stressed employees often do). The conclusion is appropriately qualified ('likely') — it follows as a probable inference, not a definite one.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "Statements: 'All banks charge interest.' 'Cooperative societies do not charge interest.' 'Moneylenders charge high interest.' Conclusions: I. Cooperative societies are not banks. II. Moneylenders are banks. Which follow?",
+      "options": [
+        {"option_text": "Only I", "is_correct": true},
+        {"option_text": "Only II", "is_correct": false},
+        {"option_text": "Both I and II", "is_correct": false},
+        {"option_text": "Neither I nor II", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. All banks charge interest; cooperatives do not → cooperatives cannot be banks (I follows). Moneylenders charge interest, but not all interest-chargers are banks; the statement does not establish moneylenders as banks (II does not follow).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    }
+  ]
+}

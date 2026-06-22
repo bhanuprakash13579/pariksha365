@@ -1,0 +1,178 @@
+{
+  "topic_code": "RSN_SEATING_ADV",
+  "subject": "Reasoning",
+  "topic": "Seating Arrangement — Advanced",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "In a row of 12 persons, Amit is 5th from the left end. What is his position from the right end?",
+      "options": [
+        {"option_text": "6th", "is_correct": false},
+        {"option_text": "7th", "is_correct": false},
+        {"option_text": "8th", "is_correct": true},
+        {"option_text": "9th", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Position from right = Total − Position from left + 1 = 12 − 5 + 1 = 8th from right.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "In a row of 10 persons, Priya is 4th from the left and Rahul is 7th from the left. How many persons are sitting between them?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Priya = position 4, Rahul = position 7. Persons between positions 4 and 7: positions 5 and 6 = 2 persons.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "A, B, C, D, E sit in a row. A is at the extreme left, E is at the extreme right, C is between B and D, B is between A and C. Who is in the middle?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "D", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. B is between A and C → A(1),B(2),C. C is between B and D → B(2),C(3),D(4). E is at extreme right = 5. Arrangement: A,B,C,D,E. Middle (3rd) = C.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "Six people A, B, C, D, E, F sit in a row. B is 3rd from left. D is immediately to the right of B. F is at the extreme right. A is immediately to the left of B. E is between D and F. What is C's position?",
+      "options": [
+        {"option_text": "1st from left", "is_correct": true},
+        {"option_text": "2nd from left", "is_correct": false},
+        {"option_text": "4th from left", "is_correct": false},
+        {"option_text": "6th from left", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. B=3rd; D=4th (right of B); A=2nd (left of B); F=6th (extreme right); E=5th (between D and F). Remaining person C = 1st position (extreme left).",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "7 persons sit in a row. P is 3rd from the left and 5th from the right. Q is 2 positions to the right of P. How many persons are to the right of Q?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Total = 3+5−1 = 7. P = 3rd from left. Q = 3+2 = 5th from left. Persons to right of Q = 7−5 = 2.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "Six people A, B, C, D, E, F sit around a circular table. A is opposite D. B is immediately to the right of A. C is immediately to the right of D. E is between B and F (clockwise). Who is opposite to B?",
+      "options": [
+        {"option_text": "E", "is_correct": false},
+        {"option_text": "C", "is_correct": true},
+        {"option_text": "F", "is_correct": false},
+        {"option_text": "A", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. In a 6-person circle (positions 1−6 clockwise): A(1) opposite D(4); B(2) right of A; C(5) right of D; E(3) and F(6) fill remaining spots with E between B and F clockwise. B(2) is opposite position 2+3=5 = C.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "5 people A, B, C, D, E sit in a row. A is not at either end. C is immediately to the left of D. B is at the right end. E is to the left of A. C is 2nd from the left. Who is at the leftmost position?",
+      "options": [
+        {"option_text": "A", "is_correct": false},
+        {"option_text": "B", "is_correct": false},
+        {"option_text": "D", "is_correct": false},
+        {"option_text": "E", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. C=2nd, D=3rd (right of C), B=5th (right end). A not at either end → A=4th. E is to left of A; remaining position is 1st → E=1st (leftmost). Arrangement: E,C,D,A,B.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "In a row of 9 persons, X is 4th from the left. Y is 4 places to the right of X. What is Y's position from the right end?",
+      "options": [
+        {"option_text": "1st from right", "is_correct": false},
+        {"option_text": "2nd from right", "is_correct": true},
+        {"option_text": "3rd from right", "is_correct": false},
+        {"option_text": "4th from right", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. X=4th from left, Y=4th+4=8th from left. Y from right = 9−8+1 = 2nd from right.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "A, B, C, D, E, F, G sit in a row. (i) B and E are at the two ends. (ii) D is 3rd from B's end. (iii) A is between C and D (D−A−C order). (iv) F is between D and E. B is at the left end. Find C's position from the right end.",
+      "options": [
+        {"option_text": "2nd from right", "is_correct": false},
+        {"option_text": "3rd from right", "is_correct": true},
+        {"option_text": "4th from right", "is_correct": false},
+        {"option_text": "5th from right", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. B(1),E(7); D=3rd from B=pos 3; D−A−C → A=4, C=5; F between D(3) and E(7) at pos 6; remaining G=2. Arrangement: B,G,D,A,C,F,E. C at position 5; from right = 7−5+1 = 3rd.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "stem": "Five people P, Q, R, S, T sit around a circular table facing the centre. Q is immediately to the right of P. R is 2nd to the left of Q. S is between R and T (clockwise). Who is to the immediate left of T?",
+      "options": [
+        {"option_text": "P", "is_correct": false},
+        {"option_text": "Q", "is_correct": false},
+        {"option_text": "R", "is_correct": false},
+        {"option_text": "S", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Let P=1. Q=2 (right of P). R: 2nd left of Q(2) = position 5. S between R(5) and T clockwise with 5 total; remaining positions 3,4 → S=3,T=4 (CW from R: 5→1→2→S(3)→T(4)). Immediate left of T(4) = position 3 = S.",
+      "staleness_risk": 0,
+      "subject": null,
+      "answer_source": "generated",
+      "generator_tag": "auto-seed-2026-06-22",
+      "generated_at": "2026-06-22T00:00:00+00:00"
+    }
+  ]
+}

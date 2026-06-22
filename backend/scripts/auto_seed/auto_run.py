@@ -286,7 +286,8 @@ def _generate_one(brief: dict, model_flag: list[str], dry_run: bool) -> tuple[st
 # ──────────────────────────────────────────────────────────────────────────────
 
 def run(n_topics: int = 20, target_total: int = 50000,
-        workers: int = 8, model: str = "sonnet", dry_run: bool = False) -> None:
+        workers: int = 8, model: str = "sonnet", dry_run: bool = False,
+        focus_subjects: list[str] | None = None) -> None:
 
     model_id = MODEL_ALIASES.get(model, model)
     model_flag = ["--model", model_id] if model != "sonnet" else []
@@ -297,8 +298,9 @@ def run(n_topics: int = 20, target_total: int = 50000,
 
     state = json.loads(_STATE_OUT.read_text())
     current = state.get("total_questions", 0)
+    focus_label = f" | focus={','.join(focus_subjects)}" if focus_subjects else ""
     print(f"Pool : {current:,} / {target_total:,}  need {max(0, target_total - current):,} more")
-    print(f"Setup: {workers} workers | model={model_id}" + (" | DRY RUN" if dry_run else ""))
+    print(f"Setup: {workers} workers | model={model_id}{focus_label}" + (" | DRY RUN" if dry_run else ""))
 
     from . import gates as _gates_mod
     from .priority import next_picks
@@ -307,13 +309,22 @@ def run(n_topics: int = 20, target_total: int = 50000,
     seen: set[str] = set()
     session_added = 0
 
+    def _filtered_picks(state: dict, n: int, exclude: set) -> list:
+        if focus_subjects:
+            # Fetch all scored topics so subject filter isn't blocked by lower-priority non-focus rows
+            picks = next_picks(state, n=9999, exclude=exclude)
+            picks = [p for p in picks if p["subject"] in focus_subjects][:n]
+        else:
+            picks = next_picks(state, n=n, exclude=exclude)
+        return picks
+
     while current < target_total and not (dry_run and wave >= 1):
         wave += 1
-        picks = next_picks(state, n=n_topics, exclude=seen)
+        picks = _filtered_picks(state, n_topics, seen)
         if not picks:
             seen.clear()
             state = json.loads(_STATE_OUT.read_text())
-            picks = next_picks(state, n=n_topics, exclude=seen)
+            picks = _filtered_picks(state, n_topics, seen)
             if not picks:
                 print("No more topics to fill — pool saturated.")
                 break
@@ -399,9 +410,13 @@ def main() -> int:
                     choices=list(MODEL_ALIASES.keys()) + list(MODEL_ALIASES.values()),
                     help="Model to use (default: sonnet)")
     ap.add_argument("--dry-run", action="store_true", help="Test plumbing without generating")
+    ap.add_argument("--focus", nargs="+", metavar="SUBJECT",
+                    help="Restrict picks to these subjects only "
+                         "(e.g. --focus 'Quantitative Aptitude' Reasoning English Vocabulary)")
     args = ap.parse_args()
     run(n_topics=args.topics, target_total=args.target,
-        workers=args.workers, model=args.model, dry_run=args.dry_run)
+        workers=args.workers, model=args.model, dry_run=args.dry_run,
+        focus_subjects=args.focus)
     return 0
 
 

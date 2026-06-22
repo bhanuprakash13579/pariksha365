@@ -1,0 +1,168 @@
+{
+  "topic_code": "RSN_SYLLOGISM_W7",
+  "subject": "Reasoning",
+  "topic": "Syllogisms — Statement and Conclusions (Set W7)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Statements: All dogs are animals. All animals are mammals.\nConclusion I: All dogs are mammals.\nConclusion II: Some mammals are dogs.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. I: All dogs → animals → mammals. So all dogs are mammals ✓. II: Since all dogs are mammals, some mammals (the dogs) are dogs — valid conversion ✓. Both follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Statements: No fish are birds. All birds can fly.\nConclusion I: No fish can fly.\nConclusion II: Some birds are not fish.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Conclusion I: 'No fish are birds + all birds fly' only tells us fish are not birds. Fish might fly for other reasons — I does NOT follow. Conclusion II: 'No fish are birds' → none of the birds are fish → ALL birds are not fish → so SOME birds are not fish ✓. Only II follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All roses are flowers. Some flowers are red.\nConclusion I: Some roses are red.\nConclusion II: All flowers are roses.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. I: All roses are flowers + some flowers are red. The red flowers may or may not be roses — I doesn't necessarily follow. II: 'All flowers are roses' is impossible (roses are a subset of flowers, not vice versa). Neither conclusion follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All cats are mammals. Some mammals are carnivores.\nConclusion I: Some cats are carnivores.\nConclusion II: Some carnivores are mammals.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. I: All cats are mammals + some mammals are carnivores. The carnivorous mammals may not be cats — I doesn't follow. II: 'Some mammals are carnivores' directly converts to 'Some carnivores are mammals' — valid by conversion ✓. Only II follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All teachers are graduates. No graduates are illiterates.\nConclusion I: No teachers are illiterates.\nConclusion II: Some illiterates are not graduates.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": true},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. I: All teachers are graduates + no graduates are illiterates → no teachers are illiterates ✓. II: 'No graduates are illiterates' converts to 'No illiterates are graduates' → ALL illiterates are not graduates → 'some illiterates are not graduates' is certainly true ✓. Both follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Statements: Some books are pens. All pens are expensive.\nConclusion I: Some books are expensive.\nConclusion II: All books are expensive.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. I: Some books are pens + all pens are expensive → those books that are pens are expensive → some books are expensive ✓. II: We don't know if ALL books are pens (only some are). Non-pen books may not be expensive — II doesn't follow. Only I follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Statements: No rivers are lakes. No lakes are ponds.\nConclusion I: No rivers are ponds.\nConclusion II: All ponds are rivers.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. The two statements share 'lakes' as the middle term but both are negative ('No ... are'). From two negative premises, no valid conclusion can be drawn in classical syllogism. The relationship between rivers and ponds is completely undetermined. Neither conclusion follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All men are mortal. Socrates is a man.\nConclusion I: Socrates is mortal.\nConclusion II: All mortals are men.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": true},
+        {"option_text": "Only II follows", "is_correct": false},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. I: Classic syllogism — Socrates is a man + all men are mortal → Socrates is mortal ✓. II: 'All mortals are men' would require the converse of 'All men are mortal', which doesn't follow in syllogistic logic (not all things that are mortal must be men). Only I follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Statements: Some stars are planets. All planets are celestial bodies. No celestial bodies are terrestrial.\nConclusion I: No stars are terrestrial.\nConclusion II: Some stars are celestial bodies.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "Only II follows", "is_correct": true},
+        {"option_text": "Both I and II follow", "is_correct": false},
+        {"option_text": "Neither follows", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. II: Some stars are planets + all planets are celestial → some stars (those that are planets) are celestial ✓. I: We know some stars are celestial (non-terrestrial). But the stars that are NOT planets may or may not be terrestrial — we can't conclude 'No stars are terrestrial'. Only II follows.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    },
+    {
+      "stem": "Statements: All officers are honest. Some officers are efficient.\nConclusion I: Some honest people are efficient.\nConclusion II: Some efficient people are honest.\nConclusion III: All officers are efficient.\nWhich conclusion(s) follow?",
+      "options": [
+        {"option_text": "Only I and II follow", "is_correct": true},
+        {"option_text": "Only III follows", "is_correct": false},
+        {"option_text": "Only I follows", "is_correct": false},
+        {"option_text": "None follows", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. I: Some officers are efficient + all officers are honest → those efficient officers are also honest → some honest people are efficient ✓. II: From I, some efficient people are officers → all officers are honest → those efficient officers are honest → some efficient people are honest ✓. III: 'Some officers are efficient' does NOT imply all are — III doesn't follow. Only I and II follow.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T06:00:00+00:00"
+    }
+  ]
+}
