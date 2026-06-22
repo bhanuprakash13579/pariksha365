@@ -1,0 +1,168 @@
+{
+  "topic_code": "RSN_CALENDAR_W7",
+  "subject": "Reasoning",
+  "topic": "Calendar — Day and Date Calculations (Set W7)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "How many odd days are there in a non-leap year?",
+      "options": [
+        {"option_text": "1 odd day", "is_correct": true},
+        {"option_text": "2 odd days", "is_correct": false},
+        {"option_text": "3 odd days", "is_correct": false},
+        {"option_text": "0 odd days", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. A non-leap year has 365 days = 52 weeks + 1 day. That extra 1 day is the 'odd day'. This odd day shifts what day of the week a given date falls on from one year to the next.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T10:30:00+00:00"
+    },
+    {
+      "stem": "January 1, 2024 is a Monday. What day of the week is January 8, 2024?",
+      "options": [
+        {"option_text": "Sunday", "is_correct": false},
+        {"option_text": "Monday", "is_correct": true},
+        {"option_text": "Tuesday", "is_correct": false},
+        {"option_text": "Saturday", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. January 8 is exactly 7 days (one complete week) after January 1. Since 7 days = 0 odd days, the day of the week repeats. Jan 1 = Monday → Jan 8 = Monday.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T10:30:00+00:00"
+    },
+    {
+      "stem": "A leap year has how many odd days?",
+      "options": [
+        {"option_text": "1", "is_correct": false},
+        {"option_text": "2", "is_correct": true},
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. A leap year has 366 days = 52 weeks + 2 days. So a leap year has 2 odd days. This is why dates jump 2 weekdays after a leap year rather than just 1.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T10:30:00+00:00"
+    },
+    {
+      "stem": "Today is Wednesday. What day of the week will it be after 100 days?",
+      "options": [
+        {"option_text": "Thursday", "is_correct": false},
+        {"option_text": "Sunday", "is_correct": false},
+        {"option_text": "Friday", "is_correct": true},
+        {"option_text": "Saturday", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. 100 days from now: 100 mod 7 = 2 (since 7×14=98, remainder 2). Wednesday + 2 days = Friday.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T10:30:00+00:00"
+    },
+    {
+      "stem": "If January 1 of a non-leap year falls on Monday, on what day does March 1 of the same year fall?",
+      "options": [
+        {"option_text": "Tuesday", "is_correct": false},
+        {"option_text": "Wednesday", "is_correct": false},
+        {"option_text": "Thursday", "is_correct": true},
+        {"option_text": "Friday", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. January has 31 days, February has 28 days (non-leap). Total from Jan 1 to Mar 1 = 31+28 = 59 days. 59 mod 7 = 3 (7×8=56, remainder 3). Monday + 3 = Thursday.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T10:30:00+00:00"
+    },
+    {
+      "stem": "What is the maximum number of Sundays that can occur in a year?",
+      "options": [
+        {"option_text": "51", "is_correct": false},
+        {"option_text": "53", "is_correct": true},
+        {"option_text": "52", "is_correct": false},
+        {"option_text": "54", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. A non-leap year = 52 complete weeks + 1 extra day. If that extra day is Sunday → 53 Sundays. A leap year = 52 weeks + 2 extra days; if either or both are Sunday → up to 53 Sundays. Maximum = 53 Sundays. (Both leap and non-leap years can have 53 Sundays.)",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T10:30:00+00:00"
+    },
+    {
+      "stem": "February 14 falls on a Tuesday in 2023. On what day will February 14 fall in 2024? (2023 is not a leap year; 2024 is a leap year.)",
+      "options": [
+        {"option_text": "Tuesday", "is_correct": false},
+        {"option_text": "Wednesday", "is_correct": true},
+        {"option_text": "Thursday", "is_correct": false},
+        {"option_text": "Monday", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. From Feb 14, 2023 to Feb 14, 2024: exactly 365 days pass (2023 is not a leap year — the extra Feb 29 belongs to 2024 AFTER Feb 14). 365 mod 7 = 1 odd day. Tuesday + 1 = Wednesday.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T10:30:00+00:00"
+    },
+    {
+      "stem": "Today is Monday, February 24. What was the date on the previous Saturday?",
+      "options": [
+        {"option_text": "February 22", "is_correct": true},
+        {"option_text": "February 21", "is_correct": false},
+        {"option_text": "February 20", "is_correct": false},
+        {"option_text": "February 23", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Monday to previous Saturday: count back 2 days (Mon → Sun → Sat = 2 days back). Feb 24 − 2 = Feb 22. The previous Saturday was February 22.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T10:30:00+00:00"
+    },
+    {
+      "stem": "How many leap years are there from 1901 to 2000 (inclusive)?",
+      "options": [
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "25", "is_correct": true},
+        {"option_text": "26", "is_correct": false},
+        {"option_text": "23", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. From 1901 to 2000, multiples of 4: 1904, 1908, ..., 2000 = (2000−1904)/4 + 1 = 24+1 = 25 values. Of these, 2000 is a century year divisible by 400 (leap year ✓). 1900 is excluded (before 1901). So all 25 are genuine leap years. Answer: 25.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T10:30:00+00:00"
+    },
+    {
+      "stem": "The year 2000 started on Saturday (January 1, 2000 = Saturday). What day did January 1, 2001 fall on?",
+      "options": [
+        {"option_text": "Sunday", "is_correct": false},
+        {"option_text": "Monday", "is_correct": true},
+        {"option_text": "Tuesday", "is_correct": false},
+        {"option_text": "Saturday", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. 2000 is a leap year: 366 days = 52 weeks + 2 odd days. Saturday + 2 = Monday. So January 1, 2001 fell on Monday. Key: a leap year contributes 2 odd days, advancing the weekday by 2 rather than the usual 1 for non-leap years.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T10:30:00+00:00"
+    }
+  ]
+}

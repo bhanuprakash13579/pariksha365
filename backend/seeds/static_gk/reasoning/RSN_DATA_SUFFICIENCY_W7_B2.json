@@ -1,0 +1,168 @@
+{
+  "topic_code": "RSN_DATA_SUFFICIENCY_W7",
+  "subject": "Reasoning",
+  "topic": "Data Sufficiency (Set W7)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "In each question below, a question is followed by two statements (I) and (II). Decide which statement(s) are sufficient.\n\nWhat is the value of x?\nI. 3x − 6 = 9\nII. x² − 3x − 10 = 0",
+      "options": [
+        {"option_text": "Statement I alone is sufficient, but II alone is not", "is_correct": true},
+        {"option_text": "Statement II alone is sufficient, but I alone is not", "is_correct": false},
+        {"option_text": "Both statements together are needed; neither alone is sufficient", "is_correct": false},
+        {"option_text": "Data in both statements together is not sufficient", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Statement I: 3x−6=9 → 3x=15 → x=5. Unique solution. Sufficient. Statement II: x²−3x−10=0 → (x−5)(x+2)=0 → x=5 or x=−2. Two possible values. Not sufficient. Only I gives a unique value.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "What is the area of rectangle ABCD?\nI. Its length is 12 cm.\nII. Its breadth is 8 cm.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient, but II alone is not", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient, but I alone is not", "is_correct": false},
+        {"option_text": "Both statements together are needed; neither alone is sufficient", "is_correct": true},
+        {"option_text": "Data in both statements together is not sufficient", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Area = length × breadth. Statement I gives length = 12 cm but not breadth. Statement II gives breadth = 8 cm but not length. Together: Area = 12 × 8 = 96 cm². Both statements are needed.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "Is the integer P an even number?\nI. P is divisible by 3.\nII. P is divisible by 4.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient, but II alone is not", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient, but I alone is not", "is_correct": true},
+        {"option_text": "Both statements together are needed; neither alone is sufficient", "is_correct": false},
+        {"option_text": "Data in both statements together is not sufficient", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Statement I: P divisible by 3 could be 3, 6, 9... (both odd and even). Not sufficient. Statement II: P divisible by 4 means P = 4k for some integer k → P is always even. Sufficient. Only II is sufficient.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "What is the exact value of integer x?\nI. x > 5\nII. x < 10",
+      "options": [
+        {"option_text": "Statement I alone is sufficient, but II alone is not", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient, but I alone is not", "is_correct": false},
+        {"option_text": "Both statements together are needed; neither alone is sufficient", "is_correct": false},
+        {"option_text": "Data in both statements together is not sufficient", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Together, we know 5 < x < 10, so x could be 6, 7, 8, or 9. Multiple values remain possible. Even both statements combined are insufficient to determine the exact value of x.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "Is quadrilateral ABCD a square?\nI. All four sides AB, BC, CD, DA are equal AND all four angles are 90°.\nII. Diagonal AC = Diagonal BD.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient, but II alone is not", "is_correct": true},
+        {"option_text": "Statement II alone is sufficient, but I alone is not", "is_correct": false},
+        {"option_text": "Both statements together are needed; neither alone is sufficient", "is_correct": false},
+        {"option_text": "Data in both statements together is not sufficient", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Statement I: all sides equal AND all angles 90° → definitively a square. Sufficient. Statement II: equal diagonals alone — rectangles and isosceles trapezoids also have equal diagonals. Without knowing it's a parallelogram with equal sides, this alone is NOT sufficient. Only Statement I conclusively confirms a square.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "What is the speed of a boat in still water?\nI. The boat travels 60 km downstream in 3 hours.\nII. The speed of the stream is 5 km/h.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient, but II alone is not", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient, but I alone is not", "is_correct": false},
+        {"option_text": "Both statements together are needed; neither alone is sufficient", "is_correct": true},
+        {"option_text": "Data in both statements together is not sufficient", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Statement I: downstream speed = 60/3 = 20 km/h. This is boat + stream, not the boat alone. Statement II: stream = 5 km/h, but no info on actual travel. Together: boat speed = 20 − 5 = 15 km/h. Both are needed.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "In parallelogram PQRS, is it a rectangle?\nI. PQ = QR (all sides are equal).\nII. Diagonal PR = Diagonal QS.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient, but II alone is not", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient, but I alone is not", "is_correct": true},
+        {"option_text": "Both statements together are needed; neither alone is sufficient", "is_correct": false},
+        {"option_text": "Data in both statements together is not sufficient", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. In a parallelogram, equal sides → rhombus (not necessarily rectangle). Statement I alone gives a rhombus. In a parallelogram, equal diagonals → rectangle (not a rhombus unless it's also a square). Statement II alone confirms it is a rectangle. Only Statement II is sufficient.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "What is the ratio of the number of apples to oranges in a basket?\nI. There are 15 apples in the basket.\nII. The total number of fruits in the basket is 35.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient, but II alone is not", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient, but I alone is not", "is_correct": false},
+        {"option_text": "Both statements together are needed; neither alone is sufficient", "is_correct": true},
+        {"option_text": "Data in both statements together is not sufficient", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Statement I: 15 apples, but unknown oranges → ratio unknown. Statement II: 35 total, but unknown split between apples and oranges. Together: oranges = 35 − 15 = 20. Ratio = 15:20 = 3:4. Both needed. (Assumes the basket has only apples and oranges.)",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "What is the two-digit number?\nI. The sum of its digits is 9.\nII. The two digits differ by 3.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient, but II alone is not", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient, but I alone is not", "is_correct": false},
+        {"option_text": "Both statements together are needed; neither alone is sufficient", "is_correct": false},
+        {"option_text": "Data in both statements together is not sufficient", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. Statement I alone: digits sum to 9 → 18, 27, 36, 45, 54, 63, 72, 81, 90. Multiple options. Statement II alone: digits differ by 3 → 14, 41, 25, 52, 36, 63, 47, 74, 58, 85, 69, 96, 30. Multiple options. Together: sum=9 and diff=3 → d₁+d₂=9, d₁−d₂=3 → d₁=6, d₂=3 → could be 63 or 36. Still two possible numbers! Not sufficient.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "What is Ravi's present age?\nI. Five years ago, Ravi's age was three times Mohan's age at that time.\nII. Mohan's present age is 12 years.",
+      "options": [
+        {"option_text": "Statement I alone is sufficient, but II alone is not", "is_correct": false},
+        {"option_text": "Statement II alone is sufficient, but I alone is not", "is_correct": false},
+        {"option_text": "Both statements together are needed; neither alone is sufficient", "is_correct": true},
+        {"option_text": "Data in both statements together is not sufficient", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Statement I alone: 'Ravi was 3× Mohan (5 years ago)' — unknown values for both. Statement II alone: Mohan = 12 now → Mohan was 7 five years ago. But we still need Statement I to find Ravi's past age. Together: Ravi was 3×7 = 21 five years ago → Ravi now = 26. Both needed.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    }
+  ]
+}

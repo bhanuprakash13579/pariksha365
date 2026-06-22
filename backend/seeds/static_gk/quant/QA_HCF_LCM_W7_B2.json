@@ -1,0 +1,168 @@
+{
+  "topic_code": "QA_HCF_LCM_W7",
+  "subject": "Quantitative Aptitude",
+  "topic": "HCF and LCM (Set W7)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "Find the HCF (Highest Common Factor) of 12 and 18.",
+      "options": [
+        {"option_text": "3", "is_correct": false},
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "6", "is_correct": true},
+        {"option_text": "12", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. 12 = 2² × 3. 18 = 2 × 3². HCF = product of lowest powers of common prime factors = 2¹ × 3¹ = 6. Alternative: list factors of 12 (1,2,3,4,6,12) and 18 (1,2,3,6,9,18) → highest common = 6.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T14:00:00+00:00"
+    },
+    {
+      "stem": "Find the LCM (Least Common Multiple) of 4 and 6.",
+      "options": [
+        {"option_text": "4", "is_correct": false},
+        {"option_text": "6", "is_correct": false},
+        {"option_text": "8", "is_correct": false},
+        {"option_text": "12", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. 4 = 2², 6 = 2 × 3. LCM = product of highest powers of all prime factors = 2² × 3 = 12. Check: 12 ÷ 4 = 3 ✓, 12 ÷ 6 = 2 ✓. **Short Trick:** LCM × HCF = product of numbers. HCF(4,6)=2. LCM = (4×6)/2 = 12.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T14:00:00+00:00"
+    },
+    {
+      "stem": "The HCF of two numbers is 6 and their LCM is 36. One of the numbers is 12. Find the other number.",
+      "options": [
+        {"option_text": "18", "is_correct": true},
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "36", "is_correct": false},
+        {"option_text": "54", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. Key formula: Product of two numbers = HCF × LCM. 12 × other = 6 × 36 = 216. Other = 216/12 = 18. Check: HCF(12,18)=6 ✓, LCM(12,18)=36 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T14:00:00+00:00"
+    },
+    {
+      "stem": "Find the HCF of 54 and 90.",
+      "options": [
+        {"option_text": "9", "is_correct": false},
+        {"option_text": "18", "is_correct": true},
+        {"option_text": "27", "is_correct": false},
+        {"option_text": "36", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. 54 = 2 × 3³. 90 = 2 × 3² × 5. Common prime factors with lowest powers: 2¹ × 3² = 2 × 9 = 18. HCF = 18. Verify: 54/18 = 3, 90/18 = 5 (both whole numbers ✓).",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T14:00:00+00:00"
+    },
+    {
+      "stem": "The LCM of two numbers is 120 and their HCF is 8. One number is 24. What is the other number?",
+      "options": [
+        {"option_text": "24", "is_correct": false},
+        {"option_text": "32", "is_correct": false},
+        {"option_text": "40", "is_correct": true},
+        {"option_text": "48", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Product of numbers = LCM × HCF = 120 × 8 = 960. Other number = 960/24 = 40. Check: LCM(24,40)=120 ✓, HCF(24,40)=8 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T14:00:00+00:00"
+    },
+    {
+      "stem": "Three ropes of lengths 42 m, 70 m, and 84 m are to be cut into equal pieces without any waste. What is the maximum possible length of each piece?",
+      "options": [
+        {"option_text": "6 m", "is_correct": false},
+        {"option_text": "7 m", "is_correct": false},
+        {"option_text": "12 m", "is_correct": false},
+        {"option_text": "14 m", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. To cut into equal pieces without waste, find HCF(42,70,84). 42 = 2×3×7; 70 = 2×5×7; 84 = 2²×3×7. HCF = 2×7 = 14 m. Maximum piece length = 14 m. Pieces: 42/14=3, 70/14=5, 84/14=6.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T14:00:00+00:00"
+    },
+    {
+      "stem": "Find the smallest number which when divided by 4, 6, and 9 leaves a remainder of 1 in each case.",
+      "options": [
+        {"option_text": "37", "is_correct": true},
+        {"option_text": "36", "is_correct": false},
+        {"option_text": "39", "is_correct": false},
+        {"option_text": "73", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. LCM(4,6,9) = LCM of 2²; 2×3; 3² = 2²×3² = 36. The required number = LCM + remainder = 36 + 1 = 37. Check: 37÷4 = 9 rem 1 ✓; 37÷6 = 6 rem 1 ✓; 37÷9 = 4 rem 1 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T14:00:00+00:00"
+    },
+    {
+      "stem": "Find the greatest number that divides both 134 and 167, leaving a remainder of 2 in each case.",
+      "options": [
+        {"option_text": "11", "is_correct": false},
+        {"option_text": "22", "is_correct": false},
+        {"option_text": "33", "is_correct": true},
+        {"option_text": "44", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Subtract remainder 2: 134−2=132, 167−2=165. Find HCF(132,165). 132=2²×3×11; 165=3×5×11. HCF=3×11=33. Check: 134÷33=4 rem 2 ✓; 167÷33=5 rem 2 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T14:00:00+00:00"
+    },
+    {
+      "stem": "Three bells ring at intervals of 12, 15, and 20 minutes. If they all ring together at 8:00 AM, at what time will they next all ring together?",
+      "options": [
+        {"option_text": "8:30 AM", "is_correct": false},
+        {"option_text": "9:00 AM", "is_correct": true},
+        {"option_text": "9:30 AM", "is_correct": false},
+        {"option_text": "10:00 AM", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. They ring together again after LCM(12,15,20) minutes. 12=2²×3; 15=3×5; 20=2²×5. LCM=2²×3×5=60 minutes. 8:00 AM + 60 minutes = 9:00 AM.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T14:00:00+00:00"
+    },
+    {
+      "stem": "Find the greatest 3-digit number that is exactly divisible by 8, 12, and 16.",
+      "options": [
+        {"option_text": "880", "is_correct": false},
+        {"option_text": "912", "is_correct": false},
+        {"option_text": "924", "is_correct": false},
+        {"option_text": "960", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. LCM(8,12,16): 8=2³; 12=2²×3; 16=2⁴. LCM=2⁴×3=48. Greatest 3-digit multiple of 48: 999÷48=20 remainder 39. So 20×48=960 is the greatest. Check: 960÷8=120 ✓; 960÷12=80 ✓; 960÷16=60 ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T14:00:00+00:00"
+    }
+  ]
+}

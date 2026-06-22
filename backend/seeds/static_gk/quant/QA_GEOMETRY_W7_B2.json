@@ -1,0 +1,168 @@
+{
+  "topic_code": "QA_GEOMETRY_W7",
+  "subject": "Quantitative Aptitude",
+  "topic": "Geometry — Triangles, Circles, and Quadrilaterals (Set W7)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "What is the area of a triangle with base 8 cm and height 5 cm?",
+      "options": [
+        {"option_text": "40 cm²", "is_correct": false},
+        {"option_text": "20 cm²", "is_correct": true},
+        {"option_text": "13 cm²", "is_correct": false},
+        {"option_text": "16 cm²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. Area of a triangle = (1/2) × base × height = (1/2) × 8 × 5 = 20 cm². Trap: 40 cm² = 8×5 (forgetting the 1/2).",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T13:00:00+00:00"
+    },
+    {
+      "stem": "What is the circumference of a circle with radius 7 cm? (Use π = 22/7)",
+      "options": [
+        {"option_text": "22 cm", "is_correct": false},
+        {"option_text": "154 cm", "is_correct": false},
+        {"option_text": "44 cm", "is_correct": true},
+        {"option_text": "88 cm", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. Circumference = 2πr = 2 × (22/7) × 7 = 2 × 22 = 44 cm. Trap: 154 cm = πr² (area, not circumference). 22 cm = πr (half of circumference).",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T13:00:00+00:00"
+    },
+    {
+      "stem": "A right-angled triangle has legs of 6 cm and 8 cm. What is the length of its hypotenuse?",
+      "options": [
+        {"option_text": "14 cm", "is_correct": false},
+        {"option_text": "√100 cm", "is_correct": false},
+        {"option_text": "12 cm", "is_correct": false},
+        {"option_text": "10 cm", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "EASY",
+      "explanation": "D is correct. By Pythagoras: hypotenuse² = 6² + 8² = 36 + 64 = 100. Hypotenuse = √100 = 10 cm. The 6-8-10 triangle is a scaled version of the classic 3-4-5 right triangle (×2). Memorise: 3-4-5, 5-12-13, 7-24-25, 8-15-17.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T13:00:00+00:00"
+    },
+    {
+      "stem": "What is the area of a circle with diameter 14 cm? (Use π = 22/7)",
+      "options": [
+        {"option_text": "154 cm²", "is_correct": true},
+        {"option_text": "44 cm²", "is_correct": false},
+        {"option_text": "308 cm²", "is_correct": false},
+        {"option_text": "196 cm²", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Diameter = 14 cm → radius = 7 cm. Area = πr² = (22/7) × 7² = (22/7) × 49 = 22 × 7 = 154 cm². Trap: 44 cm is the circumference. 308 = area × 2 (error). 196 = 14² (area of a square with side 14).",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T13:00:00+00:00"
+    },
+    {
+      "stem": "What is the perimeter of a rectangle with length 12 cm and breadth 8 cm?",
+      "options": [
+        {"option_text": "96 cm", "is_correct": false},
+        {"option_text": "40 cm", "is_correct": true},
+        {"option_text": "20 cm", "is_correct": false},
+        {"option_text": "48 cm", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. Perimeter = 2 × (length + breadth) = 2 × (12 + 8) = 2 × 20 = 40 cm. Trap: 96 cm = length × breadth (area, not perimeter). 20 cm = just length + breadth (forgot to multiply by 2).",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T13:00:00+00:00"
+    },
+    {
+      "stem": "In triangle ABC, angle A = 50° and angle B = 70°. What is angle C?",
+      "options": [
+        {"option_text": "120°", "is_correct": false},
+        {"option_text": "70°", "is_correct": false},
+        {"option_text": "60°", "is_correct": true},
+        {"option_text": "80°", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Sum of angles in any triangle = 180°. Angle C = 180° − 50° − 70° = 60°.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T13:00:00+00:00"
+    },
+    {
+      "stem": "What is the area of a rhombus with diagonals measuring 16 cm and 12 cm?",
+      "options": [
+        {"option_text": "56 cm²", "is_correct": false},
+        {"option_text": "192 cm²", "is_correct": false},
+        {"option_text": "128 cm²", "is_correct": false},
+        {"option_text": "96 cm²", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. Area of rhombus = (d₁ × d₂)/2 = (16 × 12)/2 = 192/2 = 96 cm². Trap: 192 cm² = d₁ × d₂ (forgetting the ÷2). Note: this formula also works for kites (same formula).",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T13:00:00+00:00"
+    },
+    {
+      "stem": "If the radius of a circle is doubled, its area becomes how many times the original area?",
+      "options": [
+        {"option_text": "4 times", "is_correct": true},
+        {"option_text": "2 times", "is_correct": false},
+        {"option_text": "8 times", "is_correct": false},
+        {"option_text": "6 times", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Original area = πr². New radius = 2r. New area = π(2r)² = 4πr² = 4 × original. Area scales as the square of the radius. So doubling the radius → 4× the area. If tripled → 9× area. Trap: 2× is only if circumference — which is linear.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T13:00:00+00:00"
+    },
+    {
+      "stem": "A triangle has sides 7 cm, 24 cm, and 25 cm. What is its area?",
+      "options": [
+        {"option_text": "175 cm²", "is_correct": false},
+        {"option_text": "168 cm²", "is_correct": false},
+        {"option_text": "120 cm²", "is_correct": false},
+        {"option_text": "84 cm²", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "HARD",
+      "explanation": "D is correct. First check: 7² + 24² = 49 + 576 = 625 = 25². It's a right triangle (7-24-25 Pythagorean triple). Area = (1/2) × 7 × 24 = 84 cm². The two legs (7 and 24) are the base and height for a right triangle.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T13:00:00+00:00"
+    },
+    {
+      "stem": "A square and a circle have equal perimeters. The square has a side of 22 cm. What is the area of the circle? (Use π = 22/7)",
+      "options": [
+        {"option_text": "484 cm²", "is_correct": false},
+        {"option_text": "616 cm²", "is_correct": true},
+        {"option_text": "1232 cm²", "is_correct": false},
+        {"option_text": "308 cm²", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "HARD",
+      "explanation": "B is correct. Perimeter of square = 4 × 22 = 88 cm. Circumference = 88 → 2πr = 88 → r = 88/(2 × 22/7) = 88 × 7/44 = 14 cm. Area = πr² = (22/7) × 14² = (22/7) × 196 = 22 × 28 = 616 cm². Trap: 484 = 22² (square's area, not the circle's).",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T13:00:00+00:00"
+    }
+  ]
+}

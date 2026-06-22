@@ -1,0 +1,168 @@
+{
+  "topic_code": "QA_HEIGHTS_DISTANCES_W7",
+  "subject": "Quantitative Aptitude",
+  "topic": "Heights and Distances — Trigonometry Applications (Set W7)",
+  "schema_version": "v2",
+  "questions": [
+    {
+      "stem": "A vertical tower casts a shadow of 10 m on the ground when the angle of elevation of the sun is 45°. What is the height of the tower?",
+      "options": [
+        {"option_text": "10 m", "is_correct": true},
+        {"option_text": "10√3 m", "is_correct": false},
+        {"option_text": "10/√3 m", "is_correct": false},
+        {"option_text": "5 m", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "EASY",
+      "explanation": "A is correct. tan(angle of elevation) = height/shadow. tan 45° = h/10. Since tan 45° = 1, h = 10 m. Key: tan 45° = 1 means height = shadow length when angle is 45°.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "A tree 12 m tall casts a shadow on the ground when the angle of elevation of the sun is 30°. What is the length of the shadow?",
+      "options": [
+        {"option_text": "6 m", "is_correct": false},
+        {"option_text": "12/√3 m", "is_correct": false},
+        {"option_text": "12√3 m", "is_correct": true},
+        {"option_text": "24 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "EASY",
+      "explanation": "C is correct. tan 30° = height/shadow → 1/√3 = 12/shadow → shadow = 12√3 m. **Tip:** tan 30° = 1/√3 ≈ 0.577. When the sun is low (small angle), the shadow is LONGER than the height.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "A ladder 10 m long makes an angle of 60° with the ground and leans against a wall. What is the horizontal distance from the foot of the ladder to the wall?",
+      "options": [
+        {"option_text": "10√3 m", "is_correct": false},
+        {"option_text": "5 m", "is_correct": true},
+        {"option_text": "5√3 m", "is_correct": false},
+        {"option_text": "10 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "EASY",
+      "explanation": "B is correct. cos 60° = horizontal/hypotenuse = base/10 → base = 10 × cos 60° = 10 × 1/2 = 5 m. The ladder, wall, and ground form a right triangle where the ladder is the hypotenuse.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "From a point on the ground 50 m away from the base of a building, the angle of elevation of the top is 30°. What is the height of the building?",
+      "options": [
+        {"option_text": "25 m", "is_correct": false},
+        {"option_text": "50 m", "is_correct": false},
+        {"option_text": "50√3 m", "is_correct": false},
+        {"option_text": "50/√3 m", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. tan 30° = h/50 → 1/√3 = h/50 → h = 50/√3 = 50√3/3 m (rationalised). Numerically ≈ 28.87 m. Trap: confusing tan 30° = 1/√3 with tan 60° = √3.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "From the top of a 75 m high tower, the angle of depression of a point at the base of a tree is 60°. How far is the tree from the base of the tower?",
+      "options": [
+        {"option_text": "75 m", "is_correct": false},
+        {"option_text": "75√3 m", "is_correct": false},
+        {"option_text": "25√3 m", "is_correct": true},
+        {"option_text": "25 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "MEDIUM",
+      "explanation": "C is correct. Angle of depression = angle of elevation from the base point to the tower top (alternate angles). tan 60° = 75/d → √3 = 75/d → d = 75/√3 = 25√3 m. **Key:** Angle of depression FROM the tower = Angle of elevation TO the tower.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "Two poles of equal height stand on either side of an 80 m wide road. From a point between them on the road, the angles of elevation of the tops are 60° and 30°. Find the height of each pole.",
+      "options": [
+        {"option_text": "20√3 m", "is_correct": true},
+        {"option_text": "40√3 m", "is_correct": false},
+        {"option_text": "20 m", "is_correct": false},
+        {"option_text": "10√3 m", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "MEDIUM",
+      "explanation": "A is correct. Let the point be at distance x from the 60°-pole. h = x tan60° = x√3. From the 30°-pole: h = (80−x) tan30° = (80−x)/√3. Setting equal: x√3 = (80−x)/√3 → 3x = 80−x → x = 20. h = 20√3 m.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "From the top of a 75 m high tower, the angle of depression of a car is 30°. How far is the car from the base of the tower?",
+      "options": [
+        {"option_text": "25√3 m", "is_correct": false},
+        {"option_text": "75√3 m", "is_correct": true},
+        {"option_text": "75/√3 m", "is_correct": false},
+        {"option_text": "75 m", "is_correct": false}
+      ],
+      "correct_letter": "B",
+      "difficulty": "MEDIUM",
+      "explanation": "B is correct. tan 30° = 75/d → 1/√3 = 75/d → d = 75√3 m. Note: tan 30° = 1/√3 (not √3), so the car is far away — angle of depression 30° means the car is at a much greater horizontal distance than the tower's height.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "A 12 m ladder leans against a wall making an angle of 60° with the ground. What is the height at which the ladder touches the wall?",
+      "options": [
+        {"option_text": "6 m", "is_correct": false},
+        {"option_text": "12 m", "is_correct": false},
+        {"option_text": "4√3 m", "is_correct": false},
+        {"option_text": "6√3 m", "is_correct": true}
+      ],
+      "correct_letter": "D",
+      "difficulty": "MEDIUM",
+      "explanation": "D is correct. sin 60° = height/hypotenuse = h/12 → h = 12 × (√3/2) = 6√3 m. Here the ladder is the hypotenuse; sin gives the vertical (opposite) side.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "From the top of a 75 m tall building, the angles of depression of the top and bottom of a shorter building are 30° and 60° respectively. What is the height of the shorter building?",
+      "options": [
+        {"option_text": "25 m", "is_correct": false},
+        {"option_text": "30 m", "is_correct": false},
+        {"option_text": "50 m", "is_correct": true},
+        {"option_text": "45 m", "is_correct": false}
+      ],
+      "correct_letter": "C",
+      "difficulty": "HARD",
+      "explanation": "C is correct. Let distance between buildings = d, shorter building height = h. From bottom (angle 60°): tan 60° = 75/d → d = 75/√3 = 25√3. From top (angle 30°): tan 30° = (75−h)/d → 1/√3 = (75−h)/(25√3) → 25 = 75−h → h = 50 m. Check: (75−50)/25√3 = 25/25√3 = 1/√3 = tan 30° ✓.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    },
+    {
+      "stem": "A 100 m tall tower stands between two points P and Q on the same horizontal plane but on opposite sides of the tower. The angles of elevation of the top from P and Q are 30° and 60° respectively. What is the distance PQ?",
+      "options": [
+        {"option_text": "400√3/3 m", "is_correct": true},
+        {"option_text": "200√3/3 m", "is_correct": false},
+        {"option_text": "100√3 m", "is_correct": false},
+        {"option_text": "200 m", "is_correct": false}
+      ],
+      "correct_letter": "A",
+      "difficulty": "HARD",
+      "explanation": "A is correct. From P (30°): tan 30° = 100/d₁ → d₁ = 100√3 m. From Q (60°): tan 60° = 100/d₂ → d₂ = 100/√3 = 100√3/3 m. PQ = d₁ + d₂ = 100√3 + 100√3/3 = 100√3(1 + 1/3) = 100√3 × 4/3 = 400√3/3 m ≈ 230.9 m.",
+      "staleness_risk": 0,
+      "answer_source": "generated",
+      "generator_tag": "manual-2026-06-22",
+      "generated_at": "2026-06-22T11:30:00+00:00"
+    }
+  ]
+}
