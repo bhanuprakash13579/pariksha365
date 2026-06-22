@@ -7,7 +7,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00001",
       "stem": "The average of 5 numbers is 20. What is their sum?",
-      "options": ["80", "90", "100", "120"],
+      "options": [
+        {
+          "option_text": "80",
+          "is_correct": false
+        },
+        {
+          "option_text": "90",
+          "is_correct": false
+        },
+        {
+          "option_text": "100",
+          "is_correct": true
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Sum = Average × Count = 20 × 5 = 100.\n\n**Short Trick:** Sum = Avg × n. Always start here before doing anything else in average problems.",
       "subject": "Quantitative Aptitude",
@@ -23,7 +40,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00002",
       "stem": "Find the average of 6, 8, 10, 12, 14.",
-      "options": ["9", "10", "11", "12"],
+      "options": [
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": true
+        },
+        {
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Sum = 6+8+10+12+14 = 50. Average = 50/5 = 10.\n\n**Short Trick:** These are consecutive even numbers with 5 terms. Average = middle term = 10. For any arithmetic sequence, average = middle value (or average of first and last).",
       "subject": "Quantitative Aptitude",
@@ -39,7 +73,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00003",
       "stem": "Average of 5 numbers is 12. A 6th number, 18, is added to the group. Find the new average.",
-      "options": ["12", "13", "14", "15"],
+      "options": [
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "13",
+          "is_correct": true
+        },
+        {
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Old sum = 5×12 = 60. New sum = 60+18 = 78. New average = 78/6 = 13.\n\n**Short Trick:** Change in total = 18 − 12 = +6 (new number minus old average). Spread over 6 numbers: rise in avg = 6/6 = 1. New avg = 12+1 = 13.",
       "subject": "Quantitative Aptitude",
@@ -55,7 +106,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00004",
       "stem": "Average age of 4 persons is 30 years. A 5th person joins and the average becomes 32 years. Find the age of the 5th person.",
-      "options": ["35", "38", "40", "42"],
+      "options": [
+        {
+          "option_text": "35",
+          "is_correct": false
+        },
+        {
+          "option_text": "38",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": true
+        },
+        {
+          "option_text": "42",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Old sum = 120. New sum = 32×5 = 160. 5th person's age = 160−120 = 40.\n\n**Short Trick:** 5th person's age = New avg × New count − Old avg × Old count = 32×5 − 30×4 = 160−120 = 40.",
       "subject": "Quantitative Aptitude",
@@ -71,7 +139,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00005",
       "stem": "Find the average of the first 10 natural numbers.",
-      "options": ["5", "5.5", "6", "6.5"],
+      "options": [
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "5.5",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "6.5",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Sum of first n naturals = n(n+1)/2 = 10×11/2 = 55. Average = 55/10 = 5.5.\n\n**Short Trick:** Average of first n natural numbers = (n+1)/2 = (10+1)/2 = 5.5. Memorise this formula.",
       "subject": "Quantitative Aptitude",
@@ -87,7 +172,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00006",
       "stem": "Find the average of the first 15 odd natural numbers.",
-      "options": ["14", "15", "16", "17"],
+      "options": [
+        {
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "17",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "First 15 odd numbers: 1, 3, 5, …, 29. Average = (1+29)/2 = 15.\n\n**Short Trick:** Average of first n odd numbers = n. Here n=15, so average = 15. (Also: average of first n even numbers = n+1.)",
       "subject": "Quantitative Aptitude",
@@ -103,7 +205,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00007",
       "stem": "The average of 3 numbers is 25. When one number is removed, the average of the remaining two becomes 22. What was the removed number?",
-      "options": ["27", "29", "31", "33"],
+      "options": [
+        {
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "option_text": "29",
+          "is_correct": false
+        },
+        {
+          "option_text": "31",
+          "is_correct": true
+        },
+        {
+          "option_text": "33",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Sum of 3 = 75. Sum of 2 = 44. Removed number = 75−44 = 31.\n\n**Short Trick:** Removed number = Old avg × Old count − New avg × New count = 3×25 − 2×22 = 75−44 = 31.",
       "subject": "Quantitative Aptitude",
@@ -119,7 +238,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00008",
       "stem": "The average of 10 numbers is 8. If each number is multiplied by 3, what is the new average?",
-      "options": ["8", "11", "24", "80"],
+      "options": [
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": true
+        },
+        {
+          "option_text": "80",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "When every number is multiplied by k, the average also multiplies by k. New average = 8 × 3 = 24.\n\n**Short Trick:** Avg scales linearly. Add k to all → avg increases by k. Multiply all by k → avg multiplies by k. No need to recalculate individual numbers.",
       "subject": "Quantitative Aptitude",
@@ -135,7 +271,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00009",
       "stem": "A batsman's average after 20 innings is 40 runs. He scores 61 in the 21st innings. Find his new average.",
-      "options": ["40", "41", "42", "43"],
+      "options": [
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "41",
+          "is_correct": true
+        },
+        {
+          "option_text": "42",
+          "is_correct": false
+        },
+        {
+          "option_text": "43",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Old sum = 20×40 = 800. New sum = 800+61 = 861. New average = 861/21 = 41.\n\n**Short Trick:** Rise in avg = (new score − old avg)/(new count) = (61−40)/21 = 21/21 = 1. New avg = 40+1 = 41.",
       "subject": "Quantitative Aptitude",
@@ -151,7 +304,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00010",
       "stem": "Average of 5 numbers is 18. The average of 3 of them is 16. Find the average of the remaining 2.",
-      "options": ["18", "20", "21", "22"],
+      "options": [
+        {
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "21",
+          "is_correct": true
+        },
+        {
+          "option_text": "22",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Total sum = 5×18 = 90. Sum of 3 = 3×16 = 48. Sum of remaining 2 = 90−48 = 42. Average = 42/2 = 21.\n\n**Short Trick:** Split totals, not averages. Remaining sum = 90−48 = 42. Avg = 42/2 = 21.",
       "subject": "Quantitative Aptitude",
@@ -167,7 +337,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00011",
       "stem": "A class of 30 students has average marks 60. A group of 20 students in that class has average 65. What is the average of the remaining 10 students?",
-      "options": ["45", "48", "50", "55"],
+      "options": [
+        {
+          "option_text": "45",
+          "is_correct": false
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "50",
+          "is_correct": true
+        },
+        {
+          "option_text": "55",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Total sum = 30×60 = 1800. Sum of 20 = 20×65 = 1300. Sum of remaining 10 = 1800−1300 = 500. Average = 500/10 = 50.\n\n**Short Trick:** Remaining avg = (Total sum − Known sum) / Remaining count = 500/10 = 50.",
       "subject": "Quantitative Aptitude",
@@ -183,7 +370,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00012",
       "stem": "Average of 11 persons' salaries is ₹5000. One person with salary ₹3800 leaves. Find the new average.",
-      "options": ["₹5000", "₹5080", "₹5120", "₹5200"],
+      "options": [
+        {
+          "option_text": "₹5000",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹5080",
+          "is_correct": false
+        },
+        {
+          "option_text": "₹5120",
+          "is_correct": true
+        },
+        {
+          "option_text": "₹5200",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Old sum = 11×5000 = ₹55000. New sum = 55000−3800 = ₹51200. New average = 51200/10 = ₹5120.\n\n**Short Trick:** When someone BELOW average leaves, average RISES. Since 3800 < 5000, avg rises. Rise = (5000−3800)/10 = 120. New avg = 5000+120 = 5120.",
       "subject": "Quantitative Aptitude",
@@ -199,7 +403,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00013",
       "stem": "A train covers 60 km at 30 km/h and the next 60 km at 60 km/h. Find the average speed for the entire journey.",
-      "options": ["40 km/h", "42 km/h", "45 km/h", "50 km/h"],
+      "options": [
+        {
+          "option_text": "40 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "42 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "45 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "50 km/h",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "A",
       "explanation": "Total distance = 120 km. Total time = 60/30 + 60/60 = 2+1 = 3 hours. Average speed = 120/3 = 40 km/h.\n\n**Short Trick (Equal Distance):** Average speed = 2ab/(a+b) where a, b are the two speeds = 2×30×60/(30+60) = 3600/90 = 40 km/h. WARNING: Never take simple average (45) for speed — always use Harmonic Mean for equal distances.",
       "subject": "Quantitative Aptitude",
@@ -215,7 +436,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00014",
       "stem": "The average of 8 numbers is 15. One number is incorrectly noted as 22 instead of the correct value 12. Find the correct average.",
-      "options": ["13.5", "13.75", "14", "14.25"],
+      "options": [
+        {
+          "option_text": "13.5",
+          "is_correct": false
+        },
+        {
+          "option_text": "13.75",
+          "is_correct": true
+        },
+        {
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "option_text": "14.25",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Recorded sum = 8×15 = 120. Correct sum = 120 − 22 + 12 = 110. Correct average = 110/8 = 13.75.\n\n**Short Trick:** Correct avg = Old avg + (correct value − wrong value)/n = 15 + (12−22)/8 = 15 − 10/8 = 15 − 1.25 = 13.75.",
       "subject": "Quantitative Aptitude",
@@ -231,7 +469,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00015",
       "stem": "The average age of 40 students is 16 years. When the teacher's age is included, the average becomes 17 years. Find the teacher's age.",
-      "options": ["53 years", "55 years", "57 years", "59 years"],
+      "options": [
+        {
+          "option_text": "53 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "55 years",
+          "is_correct": false
+        },
+        {
+          "option_text": "57 years",
+          "is_correct": true
+        },
+        {
+          "option_text": "59 years",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Old sum = 40×16 = 640. New sum = 41×17 = 697. Teacher's age = 697−640 = 57 years.\n\n**Short Trick:** Teacher's age = New avg + Old count × (New avg − Old avg) = 17 + 40×1 = 57. Each existing member contributes 1 extra to the sum; the teacher covers all of that plus the new average.",
       "subject": "Quantitative Aptitude",
@@ -247,7 +502,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00016",
       "stem": "Average marks of boys in a class is 70 and of girls is 80. The ratio of boys to girls is 3:2. Find the class average.",
-      "options": ["73", "74", "75", "76"],
+      "options": [
+        {
+          "option_text": "73",
+          "is_correct": false
+        },
+        {
+          "option_text": "74",
+          "is_correct": true
+        },
+        {
+          "option_text": "75",
+          "is_correct": false
+        },
+        {
+          "option_text": "76",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Weighted average = (3×70 + 2×80)/(3+2) = (210+160)/5 = 370/5 = 74.\n\n**Short Trick (Alligation):** Class avg lies between 70 and 80. Closer to boys' average because there are more boys. Using alligation: 3:2 ratio → avg = 70 + 2/(3+2) × 10 = 70+4 = 74.",
       "subject": "Quantitative Aptitude",
@@ -263,7 +535,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00017",
       "stem": "The average of five consecutive even numbers is 18. Find the largest number.",
-      "options": ["20", "22", "24", "26"],
+      "options": [
+        {
+          "option_text": "20",
+          "is_correct": false
+        },
+        {
+          "option_text": "22",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "26",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "For consecutive even numbers, average = middle (3rd) term. 3rd term = 18. The five numbers are 14, 16, 18, 20, 22. Largest = 22.\n\n**Short Trick:** For n consecutive numbers, average = middle term. For n=5, middle = 3rd. 3rd term = 18. 4th = 20, 5th = 22.",
       "subject": "Quantitative Aptitude",
@@ -279,7 +568,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00018",
       "stem": "A person travels equal distances at speeds of 20 km/h, 30 km/h, and 60 km/h. What is his average speed?",
-      "options": ["30 km/h", "32 km/h", "35 km/h", "36.67 km/h"],
+      "options": [
+        {
+          "option_text": "30 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "32 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "35 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "36.67 km/h",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "A",
       "explanation": "For 3 equal distances, average speed = 3 / (1/20 + 1/30 + 1/60) = 3 / ((3+2+1)/60) = 3 × 60/6 = 30 km/h.\n\n**Short Trick:** Harmonic mean of 3 speeds = 3 / (1/a + 1/b + 1/c). Here LCM(20,30,60) = 60. 1/20+1/30+1/60 = 3/60+2/60+1/60 = 6/60 = 1/10. Avg speed = 3/(1/10) = 30.",
       "subject": "Quantitative Aptitude",
@@ -295,7 +601,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00019",
       "stem": "Average weight of 3 boys is 40 kg and average weight of 2 girls is 45 kg. Find the average weight of the entire group.",
-      "options": ["41 kg", "42 kg", "43 kg", "44 kg"],
+      "options": [
+        {
+          "option_text": "41 kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "42 kg",
+          "is_correct": true
+        },
+        {
+          "option_text": "43 kg",
+          "is_correct": false
+        },
+        {
+          "option_text": "44 kg",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Total weight = 3×40 + 2×45 = 120+90 = 210 kg. Total persons = 5. Average = 210/5 = 42 kg.\n\n**Short Trick:** Weighted avg = (40×3 + 45×2)/5 = (120+90)/5 = 42. Note: 42 is closer to 40 (boys' avg) because there are more boys.",
       "subject": "Quantitative Aptitude",
@@ -311,7 +634,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00020",
       "stem": "Average of a, a+2, a+4, a+6, a+8 is 15. Find a.",
-      "options": ["9", "10", "11", "13"],
+      "options": [
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "11",
+          "is_correct": true
+        },
+        {
+          "option_text": "13",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "These are 5 terms in AP with first term a and common difference 2. Average = middle term = a+4. So a+4 = 15. a = 11.\n\n**Short Trick:** Average of any AP = middle term. Here 5 terms → middle is 3rd term = a+4 = 15. a = 11. No need to add all 5.",
       "subject": "Quantitative Aptitude",
@@ -327,7 +667,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00021",
       "stem": "The average of 9 numbers is 6. The average of the first 3 is 4 and the average of the last 3 is 8. Find the average of the middle 3 numbers.",
-      "options": ["5", "6", "7", "8"],
+      "options": [
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Total sum = 9×6 = 54. Sum of first 3 = 3×4 = 12. Sum of last 3 = 3×8 = 24. Sum of middle 3 = 54−12−24 = 18. Average = 18/3 = 6.\n\n**Short Trick:** Middle sum = Total − First group sum − Last group sum = 54−12−24 = 18. Avg = 6.",
       "subject": "Quantitative Aptitude",
@@ -343,7 +700,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00022",
       "stem": "A car covers 60 km in 2 hours and returns the same distance in 3 hours. Find the average speed for the entire journey.",
-      "options": ["22 km/h", "24 km/h", "25 km/h", "26 km/h"],
+      "options": [
+        {
+          "option_text": "22 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "24 km/h",
+          "is_correct": true
+        },
+        {
+          "option_text": "25 km/h",
+          "is_correct": false
+        },
+        {
+          "option_text": "26 km/h",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Total distance = 120 km. Total time = 2+3 = 5 hours. Average speed = 120/5 = 24 km/h.\n\n**Short Trick:** Speeds are 30 km/h (going) and 20 km/h (return). Average speed = 2ab/(a+b) = 2×30×20/(30+20) = 1200/50 = 24 km/h. Note: Simple average of 30 and 20 = 25, but 25 is WRONG for equal-distance problems.",
       "subject": "Quantitative Aptitude",
@@ -359,7 +733,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00023",
       "stem": "In a class of 50 students, the average marks are 72. When 5 students with average 60 leave and 5 different students with average 80 join, find the new average.",
-      "options": ["72", "73", "74", "75"],
+      "options": [
+        {
+          "option_text": "72",
+          "is_correct": false
+        },
+        {
+          "option_text": "73",
+          "is_correct": false
+        },
+        {
+          "option_text": "74",
+          "is_correct": true
+        },
+        {
+          "option_text": "75",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Old sum = 50×72 = 3600. After removing 5 students: 3600 − 5×60 = 3600−300 = 3300. After adding 5 new: 3300 + 5×80 = 3300+400 = 3700. New average = 3700/50 = 74.\n\n**Short Trick:** Net change in sum = 5×(80−60) = 5×20 = +100. Average rise = 100/50 = +2. New avg = 72+2 = 74.",
       "subject": "Quantitative Aptitude",
@@ -375,7 +766,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00024",
       "stem": "The average score of a student in 6 subjects is 75. The highest and lowest scores differ by 30, and the highest score is 95. Find the average of the remaining 4 subjects.",
-      "options": ["70", "71", "72.5", "73"],
+      "options": [
+        {
+          "option_text": "70",
+          "is_correct": false
+        },
+        {
+          "option_text": "71",
+          "is_correct": false
+        },
+        {
+          "option_text": "72.5",
+          "is_correct": true
+        },
+        {
+          "option_text": "73",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Total = 6×75 = 450. Highest = 95. Lowest = 95−30 = 65. Sum of remaining 4 = 450−95−65 = 290. Average = 290/4 = 72.5.\n\n**Short Trick:** Remove extremes from total. Sum of middle 4 = 450−(95+65) = 450−160 = 290. Avg = 72.5.",
       "subject": "Quantitative Aptitude",
@@ -391,7 +799,24 @@
     {
       "id": "sgk_QNT_AVERAGES_VI_MIXED_00025",
       "stem": "The arithmetic mean of 10 observations is 15. If each observation is first increased by 2 and then doubled, find the new mean.",
-      "options": ["30", "32", "34", "36"],
+      "options": [
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "32",
+          "is_correct": false
+        },
+        {
+          "option_text": "34",
+          "is_correct": true
+        },
+        {
+          "option_text": "36",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Step 1 — increase by 2: new mean = 15+2 = 17. Step 2 — double: new mean = 17×2 = 34.\n\n**Short Trick:** Linear transformation rule — if each xᵢ → a×xᵢ + b, then new mean = a×(old mean) + b. Here: first add 2, then multiply by 2: new mean = 2×(15+2) = 2×17 = 34. (Order of operations on the transformation matters.)",
       "subject": "Quantitative Aptitude",

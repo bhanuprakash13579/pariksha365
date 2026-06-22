@@ -7,7 +7,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00001",
       "stem": "What is the unit digit of 7^100?",
-      "options": ["1", "7", "3", "9"],
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "A",
       "explanation": "Unit digits of powers of 7 cycle in groups of 4: 7, 9, 3, 1. 100 ÷ 4 = 25 with remainder 0. Remainder 0 → 4th position → unit digit = 1.",
       "subject": "Quantitative Aptitude",
@@ -23,7 +40,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00002",
       "stem": "What is the HCF of 36 and 54?",
-      "options": ["9", "18", "27", "12"],
+      "options": [
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "option_text": "27",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Using Euclidean algorithm: 54 = 36×1 + 18; 36 = 18×2 + 0. HCF = 18.\nShort Trick: 36 = 2²×3², 54 = 2×3³. HCF = 2¹×3² = 18.",
       "subject": "Quantitative Aptitude",
@@ -39,7 +73,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00003",
       "stem": "What is the LCM of 12 and 18?",
-      "options": ["24", "48", "36", "72"],
+      "options": [
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": true
+        },
+        {
+          "option_text": "72",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "12 = 2²×3, 18 = 2×3². LCM = 2²×3² = 36.\nShort Trick: LCM = (12 × 18)/HCF(12,18) = 216/6 = 36.",
       "subject": "Quantitative Aptitude",
@@ -55,7 +106,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00004",
       "stem": "Which of the following is NOT a prime number?",
-      "options": ["47", "53", "61", "91"],
+      "options": [
+        {
+          "option_text": "47",
+          "is_correct": false
+        },
+        {
+          "option_text": "53",
+          "is_correct": false
+        },
+        {
+          "option_text": "61",
+          "is_correct": false
+        },
+        {
+          "option_text": "91",
+          "is_correct": true
+        }
+      ],
       "correct_letter": "D",
       "explanation": "91 = 7 × 13, so it is composite. 47, 53, and 61 are all prime (not divisible by any integer from 2 to their square roots).",
       "subject": "Quantitative Aptitude",
@@ -71,7 +139,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00005",
       "stem": "The product of two numbers is 2,160 and their HCF is 12. Their LCM is:",
-      "options": ["180", "240", "144", "120"],
+      "options": [
+        {
+          "option_text": "180",
+          "is_correct": true
+        },
+        {
+          "option_text": "240",
+          "is_correct": false
+        },
+        {
+          "option_text": "144",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "A",
       "explanation": "HCF × LCM = Product of the two numbers. LCM = 2160/12 = 180.",
       "subject": "Quantitative Aptitude",
@@ -87,7 +172,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00006",
       "stem": "What is the remainder when 7,777 is divided by 8?",
-      "options": ["5", "1", "3", "7"],
+      "options": [
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "7",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "7776 = 8 × 972. So 7777 = 8 × 972 + 1. Remainder = 1.\nShort Trick: Unit digit of 7777 is 7. 7 mod 8 = 7... actually 7777/8: last 3 digits = 777. 776/8 = 97; so 777 = 8×97+1 → remainder 1.",
       "subject": "Quantitative Aptitude",
@@ -103,7 +205,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00007",
       "stem": "Which of the following numbers is divisible by 11?",
-      "options": ["45678", "56798", "73953", "98765"],
+      "options": [
+        {
+          "option_text": "45678",
+          "is_correct": false
+        },
+        {
+          "option_text": "56798",
+          "is_correct": false
+        },
+        {
+          "option_text": "73953",
+          "is_correct": true
+        },
+        {
+          "option_text": "98765",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Divisibility by 11: |alternating digit sum| must be divisible by 11. For 73953: (7+9+3)−(3+5) = 19−8 = 11. Divisible ✓. For 45678: (4+6+8)−(5+7) = 18−12 = 6 (No). For 56798: (5+7+8)−(6+9) = 20−15 = 5 (No). For 98765: (9+7+5)−(8+6) = 21−14 = 7 (No).",
       "subject": "Quantitative Aptitude",
@@ -119,7 +238,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00008",
       "stem": "What is the sum 1 + 2 + 3 + ... + 50?",
-      "options": ["1225", "1250", "1260", "1275"],
+      "options": [
+        {
+          "option_text": "1225",
+          "is_correct": false
+        },
+        {
+          "option_text": "1250",
+          "is_correct": false
+        },
+        {
+          "option_text": "1260",
+          "is_correct": false
+        },
+        {
+          "option_text": "1275",
+          "is_correct": true
+        }
+      ],
       "correct_letter": "D",
       "explanation": "Sum = n(n+1)/2 = 50 × 51/2 = 2550/2 = 1275.",
       "subject": "Quantitative Aptitude",
@@ -135,7 +271,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00009",
       "stem": "The HCF and LCM of two numbers are 8 and 48 respectively. If one number is 24, the other number is:",
-      "options": ["16", "12", "24", "8"],
+      "options": [
+        {
+          "option_text": "16",
+          "is_correct": true
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "A",
       "explanation": "Product of numbers = HCF × LCM = 8 × 48 = 384. Other number = 384/24 = 16.",
       "subject": "Quantitative Aptitude",
@@ -151,7 +304,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00010",
       "stem": "How many prime numbers lie between 50 and 70?",
-      "options": ["3", "4", "5", "6"],
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Primes between 50 and 70: 53, 59, 61, 67. Count = 4. (51=3×17, 55=5×11, 57=3×19, 63=9×7, 65=5×13, 69=3×23 — all composite.)",
       "subject": "Quantitative Aptitude",
@@ -167,7 +337,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00011",
       "stem": "What is the remainder when 2^100 is divided by 3?",
-      "options": ["0", "2", "1", "3"],
+      "options": [
+        {
+          "option_text": "0",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Powers of 2 mod 3 cycle: 2¹ ≡ 2, 2² ≡ 1, 2³ ≡ 2, 2⁴ ≡ 1 ... Cycle length = 2. 100 is even → 2^100 ≡ 1 (mod 3).",
       "subject": "Quantitative Aptitude",
@@ -183,7 +370,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00012",
       "stem": "What is the smallest number that must be added to 1,750 to make it divisible by 13?",
-      "options": ["3", "4", "6", "5"],
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        }
+      ],
       "correct_letter": "D",
       "explanation": "1750 ÷ 13 = 134.6... → 134 × 13 = 1742; 135 × 13 = 1755. Add 1755 − 1750 = 5.",
       "subject": "Quantitative Aptitude",
@@ -199,7 +403,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00013",
       "stem": "Which of the following is divisible by 9?",
-      "options": ["576135", "478952", "561234", "358246"],
+      "options": [
+        {
+          "option_text": "576135",
+          "is_correct": true
+        },
+        {
+          "option_text": "478952",
+          "is_correct": false
+        },
+        {
+          "option_text": "561234",
+          "is_correct": false
+        },
+        {
+          "option_text": "358246",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "A",
       "explanation": "A number is divisible by 9 if its digit sum is divisible by 9. 576135: 5+7+6+1+3+5 = 27 (divisible by 9). 478952: 4+7+8+9+5+2 = 35 (No). 561234: 5+6+1+2+3+4 = 21 (No). 358246: 3+5+8+2+4+6 = 28 (No).",
       "subject": "Quantitative Aptitude",
@@ -215,7 +436,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00014",
       "stem": "Three bells ring at intervals of 6, 8, and 12 minutes respectively. They ring together at 9:00 AM. When do they next ring together?",
-      "options": ["9:20 AM", "9:24 AM", "9:30 AM", "9:36 AM"],
+      "options": [
+        {
+          "option_text": "9:20 AM",
+          "is_correct": false
+        },
+        {
+          "option_text": "9:24 AM",
+          "is_correct": true
+        },
+        {
+          "option_text": "9:30 AM",
+          "is_correct": false
+        },
+        {
+          "option_text": "9:36 AM",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "LCM(6, 8, 12) = 24 minutes. Next time = 9:00 AM + 24 min = 9:24 AM.",
       "subject": "Quantitative Aptitude",
@@ -231,7 +469,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00015",
       "stem": "What is the unit digit of (123)^50 × (456)^100?",
-      "options": ["6", "8", "4", "2"],
+      "options": [
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "2",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Unit digit of 3^50: cycle 3,9,7,1 (period 4). 50÷4 = 12 rem 2 → unit digit = 9. Unit digit of 6^100 = 6 (any power of 6 ends in 6). Unit digit of product = 9 × 6 = 54 → unit digit = 4.",
       "subject": "Quantitative Aptitude",
@@ -247,7 +502,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00016",
       "stem": "The greatest number that exactly divides 513, 783, and 1,107 is:",
-      "options": ["9", "18", "27", "54"],
+      "options": [
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "option_text": "27",
+          "is_correct": true
+        },
+        {
+          "option_text": "54",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Find HCF. 783−513=270; HCF(513,270): 513=270×1+243; 270=243×1+27; 243=27×9 → HCF=27. Check: 1107/27=41, 783/27=29, 513/27=19 ✓.",
       "subject": "Quantitative Aptitude",
@@ -263,7 +535,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00017",
       "stem": "The sum of squares of three consecutive integers is 194. The middle integer is:",
-      "options": ["6", "9", "10", "8"],
+      "options": [
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": true
+        }
+      ],
       "correct_letter": "D",
       "explanation": "Let middle integer = n. (n−1)² + n² + (n+1)² = 3n² + 2 = 194. 3n² = 192. n² = 64. n = 8.",
       "subject": "Quantitative Aptitude",
@@ -279,7 +568,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00018",
       "stem": "The LCM of the fractions 2/3, 5/6, and 4/9 is:",
-      "options": ["20/3", "2/9", "10/9", "5/3"],
+      "options": [
+        {
+          "option_text": "20/3",
+          "is_correct": true
+        },
+        {
+          "option_text": "2/9",
+          "is_correct": false
+        },
+        {
+          "option_text": "10/9",
+          "is_correct": false
+        },
+        {
+          "option_text": "5/3",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "A",
       "explanation": "LCM of fractions = LCM of numerators / HCF of denominators. Numerators: LCM(2,5,4) = 20. Denominators: HCF(3,6,9) = 3. LCM = 20/3.",
       "subject": "Quantitative Aptitude",
@@ -295,7 +601,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00019",
       "stem": "A number leaves a remainder of 3 when divided by 5, and a remainder of 4 when divided by 7. The smallest such positive number is:",
-      "options": ["13", "18", "23", "25"],
+      "options": [
+        {
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "option_text": "18",
+          "is_correct": true
+        },
+        {
+          "option_text": "23",
+          "is_correct": false
+        },
+        {
+          "option_text": "25",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "x ≡ 3 (mod 5) → x ∈ {3, 8, 13, 18, 23, ...}. Check mod 7: 3 mod 7=3 (No); 8 mod 7=1 (No); 13 mod 7=6 (No); 18 mod 7=4 ✓. Smallest x = 18.",
       "subject": "Quantitative Aptitude",
@@ -311,7 +634,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00020",
       "stem": "How many factors does 720 have in total?",
-      "options": ["24", "28", "30", "32"],
+      "options": [
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "28",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "option_text": "32",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "720 = 2⁴ × 3² × 5¹. Number of factors = (4+1)(2+1)(1+1) = 5 × 3 × 2 = 30.",
       "subject": "Quantitative Aptitude",
@@ -327,7 +667,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00021",
       "stem": "The smallest positive integer that leaves remainder 2 when divided by 3, 5, 7, and 11 is:",
-      "options": ["1153", "1155", "1156", "1157"],
+      "options": [
+        {
+          "option_text": "1153",
+          "is_correct": false
+        },
+        {
+          "option_text": "1155",
+          "is_correct": false
+        },
+        {
+          "option_text": "1156",
+          "is_correct": false
+        },
+        {
+          "option_text": "1157",
+          "is_correct": true
+        }
+      ],
       "correct_letter": "D",
       "explanation": "LCM(3,5,7,11) = 1155. Required number = 1155 + 2 = 1157. Verify: 1157/3 = 385 r2; 1157/5 = 231 r2; 1157/7 = 165 r2; 1157/11 = 105 r2 ✓.",
       "subject": "Quantitative Aptitude",
@@ -343,7 +700,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00022",
       "stem": "What is the remainder when (1³ + 2³ + 3³ + ... + 10³) is divided by 11?",
-      "options": ["1", "0", "10", "5"],
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "0",
+          "is_correct": true
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Sum of cubes = [n(n+1)/2]² = [10×11/2]² = 55² = 3025. 3025 ÷ 11 = 275 exactly. Remainder = 0.",
       "subject": "Quantitative Aptitude",
@@ -359,7 +733,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00023",
       "stem": "What is the largest 4-digit number exactly divisible by 18, 24, and 36?",
-      "options": ["9936", "9972", "9900", "9864"],
+      "options": [
+        {
+          "option_text": "9936",
+          "is_correct": true
+        },
+        {
+          "option_text": "9972",
+          "is_correct": false
+        },
+        {
+          "option_text": "9900",
+          "is_correct": false
+        },
+        {
+          "option_text": "9864",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "A",
       "explanation": "LCM(18,24,36) = 2³×3² = 72. Largest 4-digit multiple: 9999 ÷ 72 = 138.87... → 138 × 72 = 9936.",
       "subject": "Quantitative Aptitude",
@@ -375,7 +766,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00024",
       "stem": "What is the unit digit of (13)^7 × (17)^3?",
-      "options": ["7", "3", "9", "1"],
+      "options": [
+        {
+          "option_text": "7",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "1",
+          "is_correct": true
+        }
+      ],
       "correct_letter": "D",
       "explanation": "Unit digit of 3⁷: cycle 3,9,7,1 (period 4). 7÷4=1 rem 3 → unit digit = 7. Unit digit of 7³ = 343 → unit digit = 3. Product unit digit = 7 × 3 = 21 → unit digit = 1.",
       "subject": "Quantitative Aptitude",
@@ -391,7 +799,24 @@
     {
       "id": "sgk_QNT_NUMBER_SYSTEM_VII_MIXED_00025",
       "stem": "How many integers between 1 and 100 (inclusive) are divisible by 3 or 7?",
-      "options": ["40", "41", "43", "47"],
+      "options": [
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "41",
+          "is_correct": false
+        },
+        {
+          "option_text": "43",
+          "is_correct": true
+        },
+        {
+          "option_text": "47",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Divisible by 3: ⌊100/3⌋ = 33. By 7: ⌊100/7⌋ = 14. By 21 (LCM): ⌊100/21⌋ = 4. By inclusion-exclusion: 33 + 14 − 4 = 43.",
       "subject": "Quantitative Aptitude",

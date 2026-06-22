@@ -7,7 +7,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00001",
       "stem": "In how many ways can 4 students be arranged in a row?",
-      "options": ["12", "16", "24", "48"],
+      "options": [
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": true
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "This is a permutation of 4 distinct objects in 4 positions: 4! = 4 × 3 × 2 × 1 = 24.",
       "subject": "Quantitative Aptitude",
@@ -23,7 +40,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00002",
       "stem": "How many ways can 3 books be chosen from a shelf of 7 books?",
-      "options": ["21", "35", "42", "210"],
+      "options": [
+        {
+          "option_text": "21",
+          "is_correct": false
+        },
+        {
+          "option_text": "35",
+          "is_correct": true
+        },
+        {
+          "option_text": "42",
+          "is_correct": false
+        },
+        {
+          "option_text": "210",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Order doesn't matter (choosing, not arranging). C(7,3) = 7!/(3! × 4!) = (7 × 6 × 5)/(3 × 2 × 1) = 210/6 = 35.",
       "subject": "Quantitative Aptitude",
@@ -39,7 +73,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00003",
       "stem": "How many 2-digit numbers can be formed using digits {1, 2, 3, 4} if repetition is NOT allowed?",
-      "options": ["8", "10", "12", "16"],
+      "options": [
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "option_text": "16",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "First digit: 4 choices. Second digit: 3 remaining choices. Total = 4 × 3 = 12 = P(4,2).",
       "subject": "Quantitative Aptitude",
@@ -55,7 +106,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00004",
       "stem": "The value of C(10, 3) is:",
-      "options": ["70", "120", "210", "720"],
+      "options": [
+        {
+          "option_text": "70",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": true
+        },
+        {
+          "option_text": "210",
+          "is_correct": false
+        },
+        {
+          "option_text": "720",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "C(10,3) = 10!/(3! × 7!) = (10 × 9 × 8)/(3 × 2 × 1) = 720/6 = 120.",
       "subject": "Quantitative Aptitude",
@@ -71,7 +139,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00005",
       "stem": "In how many ways can the letters of the word 'CAT' be arranged?",
-      "options": ["3", "6", "9", "12"],
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "CAT has 3 distinct letters. Arrangements = 3! = 6: CAT, CTA, ACT, ATC, TCA, TAC.",
       "subject": "Quantitative Aptitude",
@@ -87,7 +172,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00006",
       "stem": "How many 3-digit numbers can be formed using digits {2, 3, 5, 7, 9} if repetition IS allowed?",
-      "options": ["60", "100", "120", "125"],
+      "options": [
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "100",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "125",
+          "is_correct": true
+        }
+      ],
       "correct_letter": "D",
       "explanation": "Each of the 3 positions can be any of 5 digits (repetition allowed). Total = 5 × 5 × 5 = 5³ = 125.",
       "subject": "Quantitative Aptitude",
@@ -103,7 +205,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00007",
       "stem": "In how many ways can a team of 3 be selected from 5 boys and 4 girls such that the team has exactly 2 boys and 1 girl?",
-      "options": ["30", "40", "48", "60"],
+      "options": [
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "40",
+          "is_correct": true
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Select 2 boys from 5: C(5,2) = 10. Select 1 girl from 4: C(4,1) = 4. Total = 10 × 4 = 40.",
       "subject": "Quantitative Aptitude",
@@ -119,7 +238,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00008",
       "stem": "In how many ways can the letters of the word 'LEVEL' be arranged?",
-      "options": ["30", "40", "60", "120"],
+      "options": [
+        {
+          "option_text": "30",
+          "is_correct": true
+        },
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "A",
       "explanation": "LEVEL: 5 letters — L appears 2 times, E appears 2 times, V appears 1 time. Arrangements = 5! / (2! × 2!) = 120 / 4 = 30.",
       "subject": "Quantitative Aptitude",
@@ -135,7 +271,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00009",
       "stem": "In how many ways can the letters of the word PENCIL be arranged such that the two vowels are always together?",
-      "options": ["120", "240", "360", "480"],
+      "options": [
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "240",
+          "is_correct": true
+        },
+        {
+          "option_text": "360",
+          "is_correct": false
+        },
+        {
+          "option_text": "480",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Vowels in PENCIL: E, I (2 vowels). Consonants: P, N, C, L (4 consonants).\nStep 1: Treat [EI] as one block → total items = 4 + 1 = 5.\nStep 2: Arrange 5 items = 5! = 120 ways.\nStep 3: The 2 vowels within the block can swap → 2! = 2 ways.\nTotal = 120 × 2 = 240.\n\n**Short Trick:** Vowels-together = (n−v+1)! × v!, where n=6, v=2. = 5! × 2! = 120 × 2 = 240.",
       "subject": "Quantitative Aptitude",
@@ -151,7 +304,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00010",
       "stem": "How many diagonals does a polygon with 8 sides (octagon) have?",
-      "options": ["16", "20", "24", "28"],
+      "options": [
+        {
+          "option_text": "16",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "28",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Diagonals = C(n,2) − n, where n = number of sides. C(8,2) − 8 = 28 − 8 = 20.\n\n**Short Trick:** Formula: n(n−3)/2 = 8×5/2 = 20.",
       "subject": "Quantitative Aptitude",
@@ -167,7 +337,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00011",
       "stem": "In how many ways can the word 'MISSISSIPPI' be arranged?",
-      "options": ["34,650", "69,300", "138,600", "277,200"],
+      "options": [
+        {
+          "option_text": "34,650",
+          "is_correct": true
+        },
+        {
+          "option_text": "69,300",
+          "is_correct": false
+        },
+        {
+          "option_text": "138,600",
+          "is_correct": false
+        },
+        {
+          "option_text": "277,200",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "A",
       "explanation": "MISSISSIPPI: 11 letters. M=1, I=4, S=4, P=2. Arrangements = 11! / (1! × 4! × 4! × 2!) = 39,916,800 / (1 × 24 × 24 × 2) = 39,916,800 / 1152 = 34,650.",
       "subject": "Quantitative Aptitude",
@@ -183,7 +370,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00012",
       "stem": "A committee of 4 is to be formed from 6 men and 4 women. In how many ways can this be done if the committee must contain at least 2 women?",
-      "options": ["90", "105", "115", "125"],
+      "options": [
+        {
+          "option_text": "90",
+          "is_correct": false
+        },
+        {
+          "option_text": "105",
+          "is_correct": false
+        },
+        {
+          "option_text": "115",
+          "is_correct": true
+        },
+        {
+          "option_text": "125",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "At least 2 women = (2W+2M) + (3W+1M) + (4W+0M).\nC(4,2)×C(6,2) = 6×15 = 90.\nC(4,3)×C(6,1) = 4×6 = 24.\nC(4,4)×C(6,0) = 1×1 = 1.\nTotal = 90 + 24 + 1 = 115.",
       "subject": "Quantitative Aptitude",
@@ -199,7 +403,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00013",
       "stem": "In how many ways can 6 people stand in a queue such that two specific people A and B are ALWAYS together?",
-      "options": ["120", "240", "360", "720"],
+      "options": [
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "240",
+          "is_correct": true
+        },
+        {
+          "option_text": "360",
+          "is_correct": false
+        },
+        {
+          "option_text": "720",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Treat A and B as a single unit → 5 units total. Arrangements of 5 units = 5! = 120. A and B can swap within their unit = 2! = 2. Total = 120 × 2 = 240.",
       "subject": "Quantitative Aptitude",
@@ -215,7 +436,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00014",
       "stem": "How many 4-digit even numbers can be formed using digits {1, 2, 3, 4, 5, 6} without repetition?",
-      "options": ["120", "180", "240", "360"],
+      "options": [
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "180",
+          "is_correct": true
+        },
+        {
+          "option_text": "240",
+          "is_correct": false
+        },
+        {
+          "option_text": "360",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Last digit must be even: {2, 4, 6} → 3 choices. Remaining 3 positions from remaining 5 digits: P(5,3) = 5×4×3 = 60. Total = 3 × 60 = 180.",
       "subject": "Quantitative Aptitude",
@@ -231,7 +469,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00015",
       "stem": "How many triangles can be formed by joining the vertices of a hexagon?",
-      "options": ["15", "18", "20", "24"],
+      "options": [
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "18",
+          "is_correct": false
+        },
+        {
+          "option_text": "20",
+          "is_correct": true
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Any 3 vertices of a hexagon form a triangle (no 3 vertices are collinear in a regular hexagon). C(6,3) = 6!/(3!×3!) = 20.",
       "subject": "Quantitative Aptitude",
@@ -247,7 +502,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00016",
       "stem": "In how many ways can the letters of 'ARRANGE' be arranged such that the two R's are never together?",
-      "options": ["360", "720", "900", "1260"],
+      "options": [
+        {
+          "option_text": "360",
+          "is_correct": false
+        },
+        {
+          "option_text": "720",
+          "is_correct": false
+        },
+        {
+          "option_text": "900",
+          "is_correct": true
+        },
+        {
+          "option_text": "1260",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "ARRANGE: 7 letters, A=2, R=2, N=1, G=1, E=1. Total arrangements = 7!/(2!×2!) = 5040/4 = 1260. Arrangements with both R's together: treat RR as one unit → 6 letters with A=2. Arrangements = 6!/2! = 720/2 = 360. R's NOT together = 1260 − 360 = 900.",
       "subject": "Quantitative Aptitude",
@@ -263,7 +535,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00017",
       "stem": "From 12 players, a group of 6 is to be selected. One specific player must ALWAYS be included and another specific player must ALWAYS be excluded. How many such groups are possible?",
-      "options": ["120", "210", "252", "462"],
+      "options": [
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "210",
+          "is_correct": false
+        },
+        {
+          "option_text": "252",
+          "is_correct": true
+        },
+        {
+          "option_text": "462",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Fix 1 player always IN, 1 player always OUT. Remaining available = 12 − 2 = 10. We still need 6 − 1 = 5 more players from these 10. C(10,5) = 10!/(5!×5!) = 252.",
       "subject": "Quantitative Aptitude",
@@ -279,7 +568,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00018",
       "stem": "In how many ways can 4 boys and 4 girls be seated in a row such that boys and girls sit ALTERNATELY?",
-      "options": ["576", "1152", "1440", "2880"],
+      "options": [
+        {
+          "option_text": "576",
+          "is_correct": false
+        },
+        {
+          "option_text": "1152",
+          "is_correct": true
+        },
+        {
+          "option_text": "1440",
+          "is_correct": false
+        },
+        {
+          "option_text": "2880",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Alternating patterns: BGBGBGBG or GBGBGBGB → 2 patterns. In each pattern: 4 boys in 4 boy-positions = 4! = 24. 4 girls in 4 girl-positions = 4! = 24. Total = 2 × 24 × 24 = 1152.",
       "subject": "Quantitative Aptitude",
@@ -295,7 +601,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00019",
       "stem": "The number of ways of selecting 3 consonants and 2 vowels from 7 consonants and 4 vowels is:",
-      "options": ["140", "210", "420", "840"],
+      "options": [
+        {
+          "option_text": "140",
+          "is_correct": false
+        },
+        {
+          "option_text": "210",
+          "is_correct": true
+        },
+        {
+          "option_text": "420",
+          "is_correct": false
+        },
+        {
+          "option_text": "840",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Select 3 consonants from 7: C(7,3) = 35. Select 2 vowels from 4: C(4,2) = 6. Ways to choose letters = 35 × 6 = 210. (If the question also asks for arrangements, multiply by 5! = 120, giving 25,200 — but as asked, it's 210 ways of selection.)",
       "subject": "Quantitative Aptitude",
@@ -311,7 +634,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00020",
       "stem": "In how many ways can 5 rings be worn on 3 fingers (any number of rings per finger allowed)?",
-      "options": ["15", "60", "120", "243"],
+      "options": [
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": false
+        },
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "243",
+          "is_correct": true
+        }
+      ],
       "correct_letter": "D",
       "explanation": "Each of the 5 rings can go on any of the 3 fingers independently. Total = 3⁵ = 243.",
       "subject": "Quantitative Aptitude",
@@ -327,7 +667,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00021",
       "stem": "How many 5-digit numbers divisible by 5 can be formed using {0, 1, 2, 3, 4, 5} without repetition?",
-      "options": ["216", "300", "360", "432"],
+      "options": [
+        {
+          "option_text": "216",
+          "is_correct": true
+        },
+        {
+          "option_text": "300",
+          "is_correct": false
+        },
+        {
+          "option_text": "360",
+          "is_correct": false
+        },
+        {
+          "option_text": "432",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "A",
       "explanation": "Divisible by 5 → last digit is 0 or 5.\nCase 1: Last digit = 0. First digit: 5 choices (1–5). Remaining 3 positions from remaining 4 digits: P(4,3) = 24. Sub-total = 5 × 24 = 120.\nCase 2: Last digit = 5. First digit: 4 choices (1,2,3,4 — cannot be 0 as first digit). Remaining 3 from remaining 4 (includes 0): P(4,3) = 24. Sub-total = 4 × 24 = 96.\nTotal = 120 + 96 = 216.",
       "subject": "Quantitative Aptitude",
@@ -343,7 +700,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00022",
       "stem": "A question paper has 2 sections. Section A has 5 questions; a student must answer at least 3. Section B has 3 questions; a student must answer at least 2. In how many ways can a student make his selection?",
-      "options": ["40", "56", "64", "80"],
+      "options": [
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "56",
+          "is_correct": false
+        },
+        {
+          "option_text": "64",
+          "is_correct": true
+        },
+        {
+          "option_text": "80",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Section A (≥3 from 5): C(5,3)+C(5,4)+C(5,5) = 10+5+1 = 16 ways.\nSection B (≥2 from 3): C(3,2)+C(3,3) = 3+1 = 4 ways.\nTotal = 16 × 4 = 64.",
       "subject": "Quantitative Aptitude",
@@ -359,7 +733,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00023",
       "stem": "In how many ways can 3 prizes be given to 4 students if a student can receive more than one prize?",
-      "options": ["12", "24", "48", "64"],
+      "options": [
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "64",
+          "is_correct": true
+        }
+      ],
       "correct_letter": "D",
       "explanation": "Each prize can be given to any of 4 students independently. Total = 4 × 4 × 4 = 4³ = 64.",
       "subject": "Quantitative Aptitude",
@@ -375,7 +766,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00024",
       "stem": "How many words (meaningful or not) can be formed from the letters of the word 'PENCIL', if no letter repeats, such that the word starts with a vowel?",
-      "options": ["120", "240", "360", "480"],
+      "options": [
+        {
+          "option_text": "120",
+          "is_correct": false
+        },
+        {
+          "option_text": "240",
+          "is_correct": true
+        },
+        {
+          "option_text": "360",
+          "is_correct": false
+        },
+        {
+          "option_text": "480",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "PENCIL vowels: E, I (2 vowels). Fix a vowel in the first position: 2 choices. Remaining 5 positions filled by remaining 5 letters: 5! = 120. Total = 2 × 120 = 240.",
       "subject": "Quantitative Aptitude",
@@ -391,7 +799,24 @@
     {
       "id": "sgk_QNT_PERMUTATION_COMBINATION_III_MIXED_00025",
       "stem": "In how many ways can 4 married couples be seated in a row such that each husband and wife always sit adjacent to each other?",
-      "options": ["48", "96", "144", "384"],
+      "options": [
+        {
+          "option_text": "48",
+          "is_correct": false
+        },
+        {
+          "option_text": "96",
+          "is_correct": false
+        },
+        {
+          "option_text": "144",
+          "is_correct": false
+        },
+        {
+          "option_text": "384",
+          "is_correct": true
+        }
+      ],
       "correct_letter": "D",
       "explanation": "Treat each couple as a unit → 4 units. Arrangements of 4 units = 4! = 24. Within each unit, the couple can swap = 2 ways. With 4 couples: 2⁴ = 16 internal arrangements. Total = 24 × 16 = 384.",
       "subject": "Quantitative Aptitude",

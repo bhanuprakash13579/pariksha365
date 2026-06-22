@@ -7,7 +7,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00001",
       "stem": "A can complete a work in 10 days and B can complete it in 15 days. How many days will they take together?",
-      "options": ["5", "6", "8", "9"],
+      "options": [
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Together = ab/(a+b) = 10×15/(10+15) = 150/25 = 6 days.\n\n**Short Trick (LCM method):** LCM(10,15)=30 = total work. A does 3 units/day, B does 2 units/day. Together = 5 units/day. Days = 30/5 = 6.",
       "subject": "Quantitative Aptitude",
@@ -23,7 +40,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00002",
       "stem": "A can do a piece of work in 12 days. He works for 4 days and leaves. What fraction of work remains?",
-      "options": ["1/4", "1/3", "2/3", "3/4"],
+      "options": [
+        {
+          "option_text": "1/4",
+          "is_correct": false
+        },
+        {
+          "option_text": "1/3",
+          "is_correct": false
+        },
+        {
+          "option_text": "2/3",
+          "is_correct": true
+        },
+        {
+          "option_text": "3/4",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Work done in 4 days = 4/12 = 1/3. Remaining = 1 − 1/3 = 2/3.\n\n**Short Trick:** Fraction remaining = (Total days − Days worked)/Total days = (12−4)/12 = 8/12 = 2/3.",
       "subject": "Quantitative Aptitude",
@@ -39,7 +73,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00003",
       "stem": "B can complete a work in 20 days. A is twice as efficient as B. How many days does A take alone?",
-      "options": ["8", "10", "12", "15"],
+      "options": [
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": true
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "A is twice as efficient → A does twice the work per day → A takes half the time. A's days = 20/2 = 10.\n\n**Short Trick:** Efficiency ratio a:b → Time ratio b:a. A is 2× efficient → A takes 1/2 of B's time = 10 days.",
       "subject": "Quantitative Aptitude",
@@ -55,7 +106,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00004",
       "stem": "Pipe A fills a tank in 6 hours and pipe B fills it in 12 hours. Both pipes are opened together. In how many hours is the tank full?",
-      "options": ["3", "4", "5", "6"],
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Together = 6×12/(6+12) = 72/18 = 4 hours.\n\n**Short Trick (LCM):** LCM(6,12)=12. A fills 2 units/hr, B fills 1 unit/hr. Net = 3 units/hr. Time = 12/3 = 4 hours.",
       "subject": "Quantitative Aptitude",
@@ -71,7 +139,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00005",
       "stem": "A, B, and C can do a work in 4, 6, and 12 days respectively. All three work together. In how many days is the work done?",
-      "options": ["1", "2", "3", "4"],
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "LCM(4,6,12) = 12 = total work. A = 3 units/day, B = 2 units/day, C = 1 unit/day. Together = 6 units/day. Days = 12/6 = 2.\n\n**Short Trick:** LCM method avoids fractions entirely. Always use LCM as total work for Time-Work questions.",
       "subject": "Quantitative Aptitude",
@@ -87,7 +172,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00006",
       "stem": "A and B together complete a work in 12 days. A alone can complete it in 18 days. How many days does B alone take?",
-      "options": ["24", "30", "36", "40"],
+      "options": [
+        {
+          "option_text": "24",
+          "is_correct": false
+        },
+        {
+          "option_text": "30",
+          "is_correct": false
+        },
+        {
+          "option_text": "36",
+          "is_correct": true
+        },
+        {
+          "option_text": "40",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "1/B = 1/12 − 1/18 = (3−2)/36 = 1/36. B alone takes 36 days.\n\n**Short Trick:** B's days = (A's days × Together days) / (A's days − Together days) = (18×12)/(18−12) = 216/6 = 36.",
       "subject": "Quantitative Aptitude",
@@ -103,7 +205,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00007",
       "stem": "5 men can complete a work in 10 days. How many days will 10 men take to complete the same work?",
-      "options": ["3", "4", "5", "6"],
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Total work = 5×10 = 50 man-days. 10 men: Days = 50/10 = 5 days.\n\n**Short Trick (M×D = constant):** M₁D₁ = M₂D₂ → 5×10 = 10×D₂ → D₂ = 5.",
       "subject": "Quantitative Aptitude",
@@ -119,7 +238,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00008",
       "stem": "A man can do 1/4 of work in 3 days. How many days does he need to complete the full work?",
-      "options": ["9", "10", "12", "15"],
+      "options": [
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "If 1/4 work takes 3 days, full work takes 3 × 4 = 12 days.\n\n**Short Trick:** Days for full work = Days given × (1 / fraction done) = 3 × (1/(1/4)) = 3 × 4 = 12.",
       "subject": "Quantitative Aptitude",
@@ -135,7 +271,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00009",
       "stem": "A+B together: 6 days. B+C together: 10 days. A+C together: 15 days. How many days does A alone take?",
-      "options": ["10", "12", "15", "20"],
+      "options": [
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "option_text": "20",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "1/A+1/B=1/6; 1/B+1/C=1/10; 1/A+1/C=1/15. Add all three: 2(1/A+1/B+1/C)=1/6+1/10+1/15=5/30+3/30+2/30=10/30=1/3. So 1/A+1/B+1/C=1/6. Then 1/A = 1/6 − 1/10 = 5/30−3/30 = 2/30 = 1/15. A alone = 15 days.\n\n**Short Trick:** Sum all three pair-equations, divide by 2 to get the combined rate, then subtract each pair to find individual rates.",
       "subject": "Quantitative Aptitude",
@@ -151,7 +304,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00010",
       "stem": "A can do work in 20 days, B in 30 days. B starts alone. A joins after 5 days. When is the work complete (from the start)?",
-      "options": ["12", "13", "15", "18"],
+      "options": [
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "13",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": true
+        },
+        {
+          "option_text": "18",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "LCM(20,30)=60. A=3 units/day, B=2 units/day. B alone for 5 days = 10 units. Remaining = 50 units. Together = 5 units/day. Days = 50/5 = 10 more days. Total = 5+10 = 15 days.\n\n**Short Trick:** Use LCM as total work, compute units done in each phase, divide remaining by joint rate.",
       "subject": "Quantitative Aptitude",
@@ -167,7 +337,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00011",
       "stem": "A is thrice as efficient as B. Together they finish work in 9 days. How many days does A alone take?",
-      "options": ["9", "10", "12", "15"],
+      "options": [
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": true
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Let B's rate = k, A's rate = 3k. Together = 4k = 1/9. k = 1/36. A's rate = 3/36 = 1/12. A alone = 12 days.\n\n**Short Trick:** If A is n times efficient as B and together they take T days, A alone = T×(n+1)/n = 9×4/3 = 12.",
       "subject": "Quantitative Aptitude",
@@ -183,7 +370,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00012",
       "stem": "Pipe A fills a tank in 10 hours. Pipe B (drain) empties it in 15 hours. Both are opened simultaneously on an empty tank. When will the tank be full?",
-      "options": ["25 hrs", "28 hrs", "30 hrs", "35 hrs"],
+      "options": [
+        {
+          "option_text": "25 hrs",
+          "is_correct": false
+        },
+        {
+          "option_text": "28 hrs",
+          "is_correct": false
+        },
+        {
+          "option_text": "30 hrs",
+          "is_correct": true
+        },
+        {
+          "option_text": "35 hrs",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "Net fill rate = 1/10 − 1/15 = 3/30 − 2/30 = 1/30 per hour. Tank full in 30 hours.\n\n**Short Trick (LCM):** LCM(10,15)=30. A fills 3 units/hr, B drains 2 units/hr. Net = +1 unit/hr. Time = 30/1 = 30 hours.",
       "subject": "Quantitative Aptitude",
@@ -199,7 +403,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00013",
       "stem": "6 workers can complete a job in 10 days. After 4 days of work, 3 more workers join. How many more days to finish the job?",
-      "options": ["3", "4", "5", "6"],
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Total work = 6×10 = 60 man-days. Done in 4 days = 6×4 = 24 man-days. Remaining = 36 man-days. New workforce = 6+3 = 9 workers. Days = 36/9 = 4 more days.\n\n**Short Trick:** Remaining work / new headcount = 36/9 = 4 days.",
       "subject": "Quantitative Aptitude",
@@ -215,7 +436,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00014",
       "stem": "A alone: 6 days. B alone: 4 days. C alone: 12 days. A and B work together for 2 days, then leave. C finishes the remaining work alone. How many days does C take?",
-      "options": ["1", "2", "3", "4"],
+      "options": [
+        {
+          "option_text": "1",
+          "is_correct": false
+        },
+        {
+          "option_text": "2",
+          "is_correct": true
+        },
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "LCM(6,4,12)=12. A=2, B=3, C=1 unit/day. A+B together in 2 days = 5×2 = 10 units. Remaining = 12−10 = 2 units. C alone = 2/1 = 2 days.\n\n**Short Trick:** Always assign LCM as total work. Never calculate fractions — use integers throughout.",
       "subject": "Quantitative Aptitude",
@@ -231,7 +469,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00015",
       "stem": "A and B together complete a work in 15 days. A alone in 20 days. How many days does B alone take?",
-      "options": ["40", "50", "60", "80"],
+      "options": [
+        {
+          "option_text": "40",
+          "is_correct": false
+        },
+        {
+          "option_text": "50",
+          "is_correct": false
+        },
+        {
+          "option_text": "60",
+          "is_correct": true
+        },
+        {
+          "option_text": "80",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "1/B = 1/15 − 1/20 = 4/60 − 3/60 = 1/60. B alone = 60 days.\n\n**Short Trick:** B alone = (A × Together)/(A − Together) = (20×15)/(20−15) = 300/5 = 60.",
       "subject": "Quantitative Aptitude",
@@ -247,7 +502,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00016",
       "stem": "Tap A fills a tank in 8 hours, tap B fills in 12 hours, and drain pipe C empties it in 24 hours. All three are opened simultaneously. How long to fill the tank?",
-      "options": ["5 hrs", "6 hrs", "8 hrs", "10 hrs"],
+      "options": [
+        {
+          "option_text": "5 hrs",
+          "is_correct": false
+        },
+        {
+          "option_text": "6 hrs",
+          "is_correct": true
+        },
+        {
+          "option_text": "8 hrs",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 hrs",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "LCM(8,12,24)=24. A=3, B=2, C=−1. Net = 4 units/hr. Time = 24/4 = 6 hours.\n\n**Short Trick:** Give drain a negative sign in the LCM method. Net rate = 3+2−1 = 4. Always use LCM to avoid fractions.",
       "subject": "Quantitative Aptitude",
@@ -263,7 +535,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00017",
       "stem": "A is 25% more efficient than B. B can complete a work in 20 days. How many days does A take?",
-      "options": ["14", "15", "16", "18"],
+      "options": [
+        {
+          "option_text": "14",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        },
+        {
+          "option_text": "16",
+          "is_correct": true
+        },
+        {
+          "option_text": "18",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "A is 25% more efficient → A's rate = 1.25 × B's rate. A's time = B's time / 1.25 = 20/1.25 = 16 days.\n\n**Short Trick:** If A is x% more efficient, A's time = 100/(100+x) × B's time = 100/125 × 20 = 4/5 × 20 = 16.",
       "subject": "Quantitative Aptitude",
@@ -279,7 +568,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00018",
       "stem": "Two pipes fill a tank in 36 and 45 hours respectively. Both are opened. After how many hours should the second pipe be closed so the tank fills in exactly 30 hours?",
-      "options": ["5 hrs", "7.5 hrs", "9 hrs", "10 hrs"],
+      "options": [
+        {
+          "option_text": "5 hrs",
+          "is_correct": false
+        },
+        {
+          "option_text": "7.5 hrs",
+          "is_correct": true
+        },
+        {
+          "option_text": "9 hrs",
+          "is_correct": false
+        },
+        {
+          "option_text": "10 hrs",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Pipe A works all 30 hours: fills 30/36 = 5/6 of tank. Pipe B must fill the remaining 1/6. B's rate = 1/45. Time for B = (1/6)/(1/45) = 45/6 = 7.5 hours. Close B after 7.5 hours.\n\n**Short Trick:** Find what A fills alone in full time, then compute what B must fill and divide by B's rate.",
       "subject": "Quantitative Aptitude",
@@ -295,7 +601,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00019",
       "stem": "A and B work on a task alternately, starting with A. A can do 1/3 of the work in a day; B can do 1/6. How many days to complete the work?",
-      "options": ["3", "4", "5", "6"],
+      "options": [
+        {
+          "option_text": "3",
+          "is_correct": false
+        },
+        {
+          "option_text": "4",
+          "is_correct": true
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Day 1 (A): 1/3 done. Day 2 (B): 1/6 done. After 2 days: 1/3+1/6=1/2. After Day 3 (A): 1/2+1/3=5/6. After Day 4 (B): 5/6+1/6=1. Work completes in 4 days.\n\n**Short Trick:** In each 2-day cycle, A+B do 1/3+1/6=1/2. After 2 cycles (4 days) = exactly 1 full work.",
       "subject": "Quantitative Aptitude",
@@ -311,7 +634,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00020",
       "stem": "A can do work in 12 days, B in 8 days. They work together for 3 days. Then A leaves. How many more days does B take to finish?",
-      "options": ["2", "3", "4", "5"],
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "LCM(12,8)=24. A=2, B=3 units/day. Together in 3 days = 5×3 = 15 units. Remaining = 24−15 = 9 units. B alone = 9/3 = 3 days.\n\n**Short Trick:** LCM method → remaining units / B's daily rate = 9/3 = 3 days.",
       "subject": "Quantitative Aptitude",
@@ -327,7 +667,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00021",
       "stem": "A, B, C can complete work in 12, 15, 20 days. D can undo/destroy the work and would undo it completely in 10 days. If all four work simultaneously, in how many days is work done?",
-      "options": ["8", "9", "10", "12"],
+      "options": [
+        {
+          "option_text": "8",
+          "is_correct": false
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "10",
+          "is_correct": true
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "LCM(12,15,20,10)=60. A=5, B=4, C=3 (build), D=−6 (destroys). Net = 5+4+3−6 = 6 units/day. Time = 60/6 = 10 days.\n\n**Short Trick:** Assign positive rates to builders, negative to destroyers. Net rate = 5+4+3−6=6. Work/net = 60/6 = 10.",
       "subject": "Quantitative Aptitude",
@@ -343,7 +700,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00022",
       "stem": "Two pipes fill a cistern in 15 and 20 minutes. A drain empties it in 60 minutes. All three are open and the cistern is already half full. How many minutes to fill completely?",
-      "options": ["4", "5", "6", "8"],
+      "options": [
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": true
+        },
+        {
+          "option_text": "6",
+          "is_correct": false
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "Net fill rate = 1/15+1/20−1/60. LCM(15,20,60)=60. Rates: 4+3−1=6 units/min. Need to fill half = 30 units. Time = 30/6 = 5 minutes.\n\n**Short Trick:** Net rate = 6 units/min. Half tank = 30 units. Time = 5 min.",
       "subject": "Quantitative Aptitude",
@@ -359,7 +733,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00023",
       "stem": "2 men or 3 women can complete a work in 12 days. In how many days can 4 men and 6 women complete the same work?",
-      "options": ["2", "3", "4", "5"],
+      "options": [
+        {
+          "option_text": "2",
+          "is_correct": false
+        },
+        {
+          "option_text": "3",
+          "is_correct": true
+        },
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "B",
       "explanation": "2 men = 3 women in capacity. So 1 man = 1.5 women. 4 men + 6 women = 4×1.5 + 6 = 6+6 = 12 women-equivalent. 3 women in 12 days → 36 woman-days total. 12 women: 36/12 = 3 days.\n\n**Short Trick:** Convert all to one unit (women). Total work = 3×12 = 36 woman-days. New workforce = 12 women. Days = 36/12 = 3.",
       "subject": "Quantitative Aptitude",
@@ -375,7 +766,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00024",
       "stem": "A and B working together finish a work in 6 days. A is 3 times as efficient as B. In how many days can A alone finish 3/4 of the work?",
-      "options": ["4", "5", "6", "8"],
+      "options": [
+        {
+          "option_text": "4",
+          "is_correct": false
+        },
+        {
+          "option_text": "5",
+          "is_correct": false
+        },
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "8",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "C",
       "explanation": "A = 3k, B = k. Together = 4k = 1/6. k = 1/24. A's rate = 3/24 = 1/8. A alone finishes full work in 8 days. For 3/4 work: 8 × 3/4 = 6 days.\n\n**Short Trick:** A alone days = Together × (n+1)/n where n=3: = 6×4/3 = 8. Then 3/4 of 8 = 6.",
       "subject": "Quantitative Aptitude",
@@ -391,7 +799,24 @@
     {
       "id": "sgk_QNT_TIME_WORK_VI_MIXED_00025",
       "stem": "A contractor hired 12 workers for 15 days. After 5 days, the pace was found to be slower and only 1/4 of work was done. How many extra workers must be hired to finish on time?",
-      "options": ["6", "9", "12", "15"],
+      "options": [
+        {
+          "option_text": "6",
+          "is_correct": true
+        },
+        {
+          "option_text": "9",
+          "is_correct": false
+        },
+        {
+          "option_text": "12",
+          "is_correct": false
+        },
+        {
+          "option_text": "15",
+          "is_correct": false
+        }
+      ],
       "correct_letter": "A",
       "explanation": "Total planned = 12×15 = 180 man-days. After 5 days (12 workers): 60 man-days used = 1/3 work. So full work = 180 man-days (consistent). Remaining = 2/3 work = 120 man-days. Remaining time = 10 days. Workers needed = 120/10 = 12. Extra = 12−12 = 0? Let me re-examine: if pace was slow and only 1/3 done in 5 days, actual work rate was slower. Total work = 60 man-days × 3 = 180 man-days (still same as planned). So no extra workers needed in this formulation. Let me revise: after 5 days only 1/4 done. Total work = 60×4 = 240 man-days. Remaining = 3/4 = 180 man-days in 10 days. Workers = 180/10 = 18. Extra = 18−12 = 6.\n\n**Short Trick:** Remaining work (man-days) = Total work − Done. Workers needed = Remaining / Remaining days. Extra = Workers needed − current.",
       "subject": "Quantitative Aptitude",
