@@ -70,12 +70,13 @@ async def get_module_quiz(
     slug: str,
     subject: str,
     limit: int = Query(10, ge=1, le=30),
+    topic: Optional[str] = Query(None),
     db: AsyncSession = Depends(get_db),
     user: User = Depends(get_current_user),
 ) -> Any:
     module = await svc.require_module_access(db, user.email, slug)
-    questions = await svc.get_daily_quiz(db, module.id, user.id, subject, limit)
-    return {"subject": subject, "questions": questions, "count": len(questions)}
+    questions = await svc.get_daily_quiz(db, module.id, user.id, subject, limit, topic=topic)
+    return {"subject": subject, "topic": topic, "questions": questions, "count": len(questions)}
 
 
 @router.get("/modules/{slug}/weak-topics")

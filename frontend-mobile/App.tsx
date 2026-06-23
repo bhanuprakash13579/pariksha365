@@ -107,6 +107,7 @@ import MockTestScreen from './src/screens/Test/MockTestScreen';
 import PostTestResultsScreen from './src/screens/Test/PostTestResultsScreen';
 import QuizSessionScreen from './src/screens/Main/QuizSessionScreen';
 import PrivateModuleScreen from './src/screens/Main/PrivateModuleScreen';
+import PrivateModuleTopicsScreen from './src/screens/Main/PrivateModuleTopicsScreen';
 
 // --- Testbook-Style Profile Screen ---
 const ProfileScreen = ({ navigation, route }: any) => {
@@ -672,6 +673,7 @@ export default function App() {
         <Stack.Screen name="PostTestResults" component={PostTestResultsScreen} options={{ headerShown: false }} />
         <Stack.Screen name="QuizSession" component={QuizSessionScreen} options={{ headerShown: false }} />
         <Stack.Screen name="PrivateModule" component={PrivateModuleScreen} options={({ route }: any) => ({ title: route.params?.moduleName || 'Special Practice' })} />
+        <Stack.Screen name="PrivateModuleTopics" component={PrivateModuleTopicsScreen} options={({ route }: any) => ({ title: route.params?.subject || 'Chapters' })} />
         {/* Testbook Sub-Screens */}
         <Stack.Screen name="EditProfile" component={EditProfileScreen} options={{ title: 'Edit Profile' }} />
         <Stack.Screen name="SavedQuestions" component={SavedQuestionsScreen} options={{ title: 'Saved Questions' }} />

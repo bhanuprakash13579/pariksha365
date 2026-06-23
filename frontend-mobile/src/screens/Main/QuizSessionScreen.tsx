@@ -38,7 +38,7 @@ interface QuizQuestion {
 export default function QuizSessionScreen({ navigation, route }: any) {
     const {
         subject, limit = 10, title = 'Daily Quiz',
-        moduleSlug, weakTopicMode = false, wrongPracticeMode = false,
+        moduleSlug, moduleTopic, weakTopicMode = false, wrongPracticeMode = false,
     } = route.params || {};
 
     const QUIZ_DURATION = 5 * 60;
@@ -80,7 +80,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                     : [];
 
                 if (moduleSlug) {
-                    res = await PrivateModuleAPI.getQuiz(moduleSlug, subject, limit);
+                    res = await PrivateModuleAPI.getQuiz(moduleSlug, subject, limit, moduleTopic);
                 } else if (wrongPracticeMode) {
                     res = await QuizAPI.getWrongPractice(limit, bmIds);
                 } else if (weakTopicMode) {

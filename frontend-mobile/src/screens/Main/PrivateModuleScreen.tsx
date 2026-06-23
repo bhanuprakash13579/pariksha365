@@ -26,6 +26,8 @@ const SUBJECT_EMOJI: Record<string, string> = {
     'Labour Laws': '⚖️',
     'Social Security': '🛡️',
     'Accounting': '📊',
+    'Finance & Accounts': '💰',
+    'Economics & Governance': '🏛️',
     'General Awareness': '🌐',
     'English': '📖',
     'Reasoning': '🧠',
@@ -142,11 +144,11 @@ export default function PrivateModuleScreen({ navigation, route }: any) {
                     return (
                         <TouchableOpacity
                             key={idx}
-                            onPress={() => navigation.navigate('QuizSession', {
+                            onPress={() => navigation.navigate('PrivateModuleTopics', {
+                                slug: module.slug,
+                                moduleName: module.name,
                                 subject: sub.subject,
-                                title: sub.subject,
-                                limit: 10,
-                                moduleSlug: module.slug,
+                                subjectEmoji: getEmoji(sub.subject),
                             })}
                             activeOpacity={0.85}
                             style={{
@@ -185,9 +187,9 @@ export default function PrivateModuleScreen({ navigation, route }: any) {
 
                             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', marginTop: 10 }}>
                                 <Text style={{ fontSize: 13, color: COLORS.primary, fontWeight: '600', marginRight: 4 }}>
-                                    {remaining > 0 ? 'Practice Now' : 'Revise'}
+                                    View Chapters
                                 </Text>
-                                <Ionicons name="arrow-forward-circle" size={18} color={COLORS.primary} />
+                                <Ionicons name="chevron-forward-circle" size={18} color={COLORS.primary} />
                             </View>
                         </TouchableOpacity>
                     );

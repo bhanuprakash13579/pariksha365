@@ -135,21 +135,25 @@ async def module_topic_summary(db: AsyncSession, module_id: uuid.UUID,
 # ──────────────── Question fetchers ────────────────
 
 async def get_daily_quiz(db: AsyncSession, module_id: uuid.UUID, user_id: uuid.UUID,
-                         subject: str, limit: int = 10) -> list[dict]:
-    """Random unattempted-today questions from a given subject within the module."""
+                         subject: str, limit: int = 10,
+                         topic: Optional[str] = None) -> list[dict]:
+    """Random unattempted-today questions from a given subject (and optional topic) within the module."""
     today_start = datetime.combine(datetime.utcnow().date(), datetime.min.time())
     attempted_today = select(PrivateModuleAttempt.question_id).where(
         PrivateModuleAttempt.user_id == user_id,
         PrivateModuleAttempt.module_id == module_id,
         PrivateModuleAttempt.attempted_at >= today_start,
     )
+    conditions = [
+        PrivateModuleQuestion.module_id == module_id,
+        PrivateModuleQuestion.subject == subject,
+        PrivateModuleQuestion.id.not_in(attempted_today),
+    ]
+    if topic:
+        conditions.append(PrivateModuleQuestion.topic == topic)
     stmt = (
         select(PrivateModuleQuestion)
-        .where(
-            PrivateModuleQuestion.module_id == module_id,
-            PrivateModuleQuestion.subject == subject,
-            PrivateModuleQuestion.id.not_in(attempted_today),
-        )
+        .where(*conditions)
         .order_by(func.random())
         .limit(limit)
     )

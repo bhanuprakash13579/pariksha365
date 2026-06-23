@@ -101,8 +101,12 @@ export const QuizAPI = {
 export const PrivateModuleAPI = {
     listMine: () => api.get('/private/modules'),
     getModule: (slug: string) => api.get(`/private/modules/${slug}`),
-    getQuiz: (slug: string, subject: string, limit?: number) =>
-        api.get(`/private/modules/${slug}/quiz/${encodeURIComponent(subject)}`, { params: limit ? { limit } : {} }),
+    getSubjectTopics: (slug: string, subject: string) =>
+        api.get(`/private/modules/${slug}/subjects/${encodeURIComponent(subject)}/topics`),
+    getQuiz: (slug: string, subject: string, limit?: number, topic?: string) =>
+        api.get(`/private/modules/${slug}/quiz/${encodeURIComponent(subject)}`, {
+            params: { ...(limit ? { limit } : {}), ...(topic ? { topic } : {}) }
+        }),
     getWeakTopics: (slug: string, limit?: number) =>
         api.get(`/private/modules/${slug}/weak-topics`, { params: limit ? { limit } : {} }),
     submitQuiz: (slug: string, answers: { question_id: string; selected_option_index: number | null }[]) =>
