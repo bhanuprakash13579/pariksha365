@@ -75,7 +75,13 @@ export const SearchAPI = {
 
 export const QuizAPI = {
     getCategories: () => api.get('/quiz/categories'),
-    getDailyQuiz: (subject: string, limit?: number) => api.get(`/quiz/daily/${subject}`, { params: limit ? { limit } : {} }),
+    getDailyQuiz: (subject: string, limit?: number, bookmarkedIds?: string[]) =>
+        api.get(`/quiz/daily/${subject}`, {
+            params: {
+                ...(limit ? { limit } : {}),
+                ...(bookmarkedIds && bookmarkedIds.length > 0 ? { bookmarked_ids: bookmarkedIds.join(',') } : {}),
+            }
+        }),
     getWeakTopicQuiz: (limit?: number) => api.get('/quiz/weak-topics', { params: limit ? { limit } : {} }),
     getMorePractice: (subject: string, topic?: string, excludeIds?: string[]) =>
         api.post(`/quiz/more-practice?subject=${encodeURIComponent(subject)}${topic ? `&topic=${encodeURIComponent(topic)}` : ''}&exclude_ids=${(excludeIds || []).join(',')}`),

@@ -29,6 +29,7 @@ QUIZ_CATEGORIES = [
     {"key": "quantitative_aptitude", "name": "Quantitative Aptitude", "icon": "calculator-outline", "color": "#6366f1"},
     {"key": "reasoning", "name": "Reasoning", "icon": "bulb-outline", "color": "#f97316"},
     {"key": "english", "name": "English", "icon": "language-outline", "color": "#14b8a6"},
+    {"key": "vocabulary", "name": "Vocabulary", "icon": "book-outline", "color": "#a855f7"},
     {"key": "computer_knowledge", "name": "Computer Knowledge", "icon": "desktop-outline", "color": "#8b5cf6"},
     {"key": "current_affairs", "name": "Current Affairs", "icon": "newspaper-outline", "color": "#ec4899"},
     {"key": "general_knowledge", "name": "General Knowledge", "icon": "school-outline", "color": "#84cc16"},
@@ -75,33 +76,62 @@ async def get_quiz_categories_with_counts(db: AsyncSession) -> list:
     ]
 
 
-async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, limit: int = 10) -> list:
+async def get_daily_quiz(
+    db: AsyncSession, user_id: uuid.UUID, subject: str,
+    limit: int = 10, bookmarked_ids: Optional[List[str]] = None
+) -> list:
     """
-    Pattern-diversity quiz:
-    - Discovery phase: unseen topic_codes come first so every practice session
-      introduces a new SSC CGL question-type (analogy, syllogism, profit-loss, etc.).
-    - Drill phase: once all patterns are seen, weak patterns surface first.
-    - Within each priority tier, questions are random so the student never gets
-      the exact same question back immediately.
+    Pattern-diversity quiz with per-question mastery gating:
+
+    Mastery rules (based on lifetime correct-answer count per question):
+    - correct_count == 0  → always in primary draw pool (unattempted or wrong-pending)
+    - correct_count == 1, NOT bookmarked → reserve only (excluded from primary draw)
+    - correct_count == 1, bookmarked → in primary draw pool (still learning it)
+    - correct_count >= 2  → reserve only, even if bookmarked (fully mastered, stop repeating)
+
+    Wrong/skipped questions are mixed into the primary pool randomly — they are NOT
+    pushed to the front.  Bookmarked questions that still qualify also appear naturally
+    in the random draw, not at priority position 1.
+
+    Topic ordering: discovery-first (never-practised topics come before weak/proficient),
+    then by accuracy ascending.  Aims for ≥ min(limit, topic_count) different topics.
     """
     canonical_subject = SUBJECT_KEY_MAP.get(subject.lower(), subject)
-    today_start = datetime.combine(datetime.utcnow().date(), datetime.min.time())
 
-    attempted_today_ids = set(r[0] for r in (await db.execute(
-        select(QuizAttempt.question_id).where(
-            QuizAttempt.user_id == user_id, QuizAttempt.attempted_at >= today_start
-        )
-    )).all())
+    # --- per-question correct-answer counts (all-time) ---
+    correct_count_rows = (await db.execute(
+        select(QuizAttempt.question_id, func.count(QuizAttempt.id).label("cnt"))
+        .where(QuizAttempt.user_id == user_id, QuizAttempt.was_correct == True)  # noqa
+        .group_by(QuizAttempt.question_id)
+    )).all()
+    correct_counts: dict = {row[0]: row[1] for row in correct_count_rows}
 
-    # Get all distinct topic_codes for this subject (prefer topic_code, fall back to topic text)
+    # correct once  → soft-mastered (excluded unless bookmarked)
+    mastered_once: set = {qid for qid, cnt in correct_counts.items() if cnt == 1}
+    # correct ≥ 2   → fully mastered (excluded even if bookmarked)
+    mastered_fully: set = {qid for qid, cnt in correct_counts.items() if cnt >= 2}
+
+    # Parse bookmarked IDs — these exempt questions from mastered_once exclusion
+    exempt: set = set()
+    if bookmarked_ids:
+        for bid in bookmarked_ids:
+            try:
+                exempt.add(uuid.UUID(str(bid)))
+            except (ValueError, AttributeError):
+                pass
+
+    # Primary draw exclusion: soft-mastered (not bookmarked) + fully mastered
+    excluded_from_primary: set = (mastered_once - exempt) | mastered_fully
+    # Reserve pool (shown only when primary is exhausted)
+    reserve_ids: set = excluded_from_primary
+
+    # Get all distinct topic_codes for this subject
     tc_rows = (await db.execute(
         select(QuizQuestion.topic_code, QuizQuestion.topic)
         .where(_subj_match(canonical_subject))
         .distinct()
     )).all()
 
-    # Build a map: canonical_key → display_topic
-    # Prefer topic_code as key; fall back to topic text for questions without codes
     pattern_map: dict[str, str] = {}
     for tc, topic in tc_rows:
         key = tc if tc else f"_topic_{topic or 'general'}"
@@ -109,7 +139,6 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
             pattern_map[key] = topic or "General"
 
     if not pattern_map:
-        # Entire pool attempted today — reopen
         raw = (await db.execute(
             select(QuizQuestion)
             .where(_subj_match(canonical_subject))
@@ -118,7 +147,7 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
         expanded = await _expand_passage_groups(db, list(raw))
         return [_serialize_quiz_question(q) for q in expanded]
 
-    # Load mastery records for this user's topic_codes in one round-trip
+    # Load topic mastery records for topic-priority ordering
     code_keys = [k for k in pattern_map if not k.startswith("_topic_")]
     mastery_map: dict[str, "UserTopicMastery"] = {}
     if code_keys:
@@ -130,8 +159,8 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
         )).scalars().all()
         mastery_map = {m.topic_code: m for m in rows}
 
-    # Priority ordering:
-    # 0 = never attempted (discovery)  → highest priority
+    # Topic priority:
+    # 0 = never attempted (discovery) → highest
     # 1 = weak         accuracy < 50%
     # 2 = improving    accuracy 50-70%
     # 3 = proficient   accuracy ≥ 70%
@@ -145,60 +174,79 @@ async def get_daily_quiz(db: AsyncSession, user_id: uuid.UUID, subject: str, lim
             return 2
         return 3
 
-    # Sort patterns: discovery first, then by priority; tie-break randomly
     sorted_patterns = sorted(pattern_map.keys(), key=lambda k: (_priority(k), random.random()))
 
-    # Cap selection to avoid too many same-topic questions; aim ≥1 per unique pattern
-    # How many patterns to cover: at least `limit` (one per question), or all if fewer
+    # Aim for ≥ min(limit, topic_count) different topics — 1 question each ideally
     patterns_to_use = sorted_patterns[:limit]
     per_pattern = max(1, limit // len(patterns_to_use))
 
     seen_ids: set = set()
     result_questions: list = []
+    reserve_questions: list = []  # collected for fallback
 
     for key in patterns_to_use:
         if len(result_questions) >= limit:
             break
         quota = min(per_pattern, limit - len(result_questions))
-        exclude = attempted_today_ids | seen_ids
 
         if key.startswith("_topic_"):
             topic_text = pattern_map[key]
-            cond = [
+            base_cond = [
                 _subj_match(canonical_subject),
                 func.lower(QuizQuestion.topic) == topic_text.lower(),
                 QuizQuestion.topic_code.is_(None),
             ]
         else:
-            cond = [
+            base_cond = [
                 _subj_match(canonical_subject),
                 QuizQuestion.topic_code == key,
             ]
 
+        # Primary draw: flat random pool (wrong + unattempted + bookmarked-soft-mastered)
+        exclude = excluded_from_primary | seen_ids
+        primary_cond = list(base_cond)
         if exclude:
-            cond.append(QuizQuestion.id.not_in(exclude))
+            primary_cond.append(QuizQuestion.id.not_in(exclude))
 
-        topic_qs = (await db.execute(
-            select(QuizQuestion).where(*cond).order_by(func.random()).limit(quota)
+        primary_qs = (await db.execute(
+            select(QuizQuestion).where(*primary_cond)
+            .order_by(func.random()).limit(quota)
         )).scalars().all()
 
-        for q in topic_qs:
+        # Collect reserve for this topic (used only when primary is exhausted)
+        if len(primary_qs) < quota and reserve_ids:
+            res_pool = reserve_ids - seen_ids - {q.id for q in primary_qs}
+            if res_pool:
+                rq = (await db.execute(
+                    select(QuizQuestion).where(*base_cond, QuizQuestion.id.in_(res_pool))
+                    .order_by(func.random()).limit(quota - len(primary_qs))
+                )).scalars().all()
+                reserve_questions.extend(rq)
+
+        for q in primary_qs:
             seen_ids.add(q.id)
             result_questions.append(q)
 
-    # Fill remaining slots (some patterns had < quota questions)
+    # Fill remaining slots from reserve (primary pool exhausted across all topics)
+    if len(result_questions) < limit and reserve_questions:
+        already = {q.id for q in result_questions}
+        for q in reserve_questions:
+            if q.id not in already and len(result_questions) < limit:
+                result_questions.append(q)
+                already.add(q.id)
+
+    # Last resort: any question from the subject
     if len(result_questions) < limit:
-        exclude = seen_ids | attempted_today_ids
-        filler_cond = [_subj_match(canonical_subject)]
-        if exclude:
-            filler_cond.append(QuizQuestion.id.not_in(exclude))
+        already = {q.id for q in result_questions}
+        any_cond = [_subj_match(canonical_subject)]
+        if already:
+            any_cond.append(QuizQuestion.id.not_in(already))
         fillers = (await db.execute(
-            select(QuizQuestion).where(*filler_cond)
+            select(QuizQuestion).where(*any_cond)
             .order_by(func.random()).limit(limit - len(result_questions))
         )).scalars().all()
         result_questions.extend(fillers)
 
-    # Shuffle the final set so discovery topics aren't always question #1
     random.shuffle(result_questions)
     expanded = await _expand_passage_groups(db, result_questions[:limit])
     return [_serialize_quiz_question(q) for q in expanded]

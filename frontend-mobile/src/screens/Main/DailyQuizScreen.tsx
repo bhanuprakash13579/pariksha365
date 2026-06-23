@@ -36,7 +36,7 @@ export default function DailyQuizScreen({ navigation }: any) {
         const map: Record<string, string> = {
             polity: '⚖️', history: '🏛️', geography: '🌍', economics: '📈',
             general_science: '🔬', reasoning: '🧠', quantitative_aptitude: '📐',
-            english: '📖', computer_knowledge: '💻', current_affairs: '📰',
+            english: '📖', vocabulary: '🔤', computer_knowledge: '💻', current_affairs: '📰',
             general_knowledge: '🎓', physics: '⚡', chemistry: '🧪',
             biology: '🌿', science_technology: '🚀',
         };

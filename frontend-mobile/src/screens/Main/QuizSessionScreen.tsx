@@ -28,9 +28,11 @@ interface QuizQuestion {
     diagram_svg?: string;
     explanation?: string;
     explanation_svg?: string;
+    difficulty?: string;
     options: { option_text: string; is_correct?: boolean }[];
     subject?: string;
     topic?: string;
+    topic_code?: string;
 }
 
 export default function QuizSessionScreen({ navigation, route }: any) {
@@ -74,7 +76,12 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                 } else if (weakTopicMode) {
                     res = await QuizAPI.getWeakTopicQuiz(limit);
                 } else {
-                    res = await QuizAPI.getDailyQuiz(subject, limit);
+                    // Pass bookmarked IDs so server exempts them from mastery exclusion
+                    const bmData = await AsyncStorage.getItem(BOOKMARK_KEY);
+                    const bmIds: string[] = bmData
+                        ? (JSON.parse(bmData) as any[]).map((q: any) => q.id).filter(Boolean)
+                        : [];
+                    res = await QuizAPI.getDailyQuiz(subject, limit, bmIds);
                 }
                 setQuestions(res.data?.questions || res.data || []);
             } catch (err) {
@@ -300,16 +307,38 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                         ) : null}
 
                         {/* ── Actions ── */}
+                        {/* Practice Again — restart same subject quiz */}
+                        {subject && !weakTopicMode && !moduleSlug && (
+                            <TouchableOpacity
+                                onPress={() => {
+                                    setSubmitted(false);
+                                    setScorecard(null);
+                                    setSelectedAnswers({});
+                                    setCurrentIdx(0);
+                                    setShowReview(false);
+                                    setLoading(true);
+                                    // Re-trigger the fetchQuiz effect by navigating to the same screen
+                                    navigation.replace('QuizSession', { subject, limit, title });
+                                }}
+                                style={{
+                                    backgroundColor: COLORS.primary, borderRadius: 14, paddingVertical: 16,
+                                    alignItems: 'center', marginBottom: 10,
+                                    shadowColor: COLORS.primary, shadowOpacity: 0.3, shadowRadius: 8,
+                                    shadowOffset: { width: 0, height: 4 }, elevation: 5,
+                                }}
+                            >
+                                <Text style={{ color: '#fff', fontWeight: '700', fontSize: 16 }}>🔄 Practice Again</Text>
+                            </TouchableOpacity>
+                        )}
+
                         <TouchableOpacity
                             onPress={() => navigation.goBack()}
                             style={{
-                                backgroundColor: COLORS.primary, borderRadius: 14, paddingVertical: 16,
-                                alignItems: 'center', marginBottom: 10,
-                                shadowColor: COLORS.primary, shadowOpacity: 0.3, shadowRadius: 8,
-                                shadowOffset: { width: 0, height: 4 }, elevation: 5,
+                                borderRadius: 14, paddingVertical: 14, alignItems: 'center',
+                                marginBottom: 10, borderWidth: 1, borderColor: '#e5e7eb', backgroundColor: '#fff',
                             }}
                         >
-                            <Text style={{ color: '#fff', fontWeight: '700', fontSize: 16 }}>Back to Categories</Text>
+                            <Text style={{ color: '#374151', fontWeight: '700', fontSize: 15 }}>Back to Categories</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
@@ -462,6 +491,38 @@ export default function QuizSessionScreen({ navigation, route }: any) {
             </View>
 
             <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 80 }}>
+                {/* Topic + difficulty chip */}
+                {(currentQ.subject || currentQ.topic) && (
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 8, flexWrap: 'wrap', gap: 6 }}>
+                        {currentQ.subject ? (
+                            <View style={{ backgroundColor: '#eff6ff', borderRadius: 6, paddingHorizontal: 8, paddingVertical: 3 }}>
+                                <Text style={{ fontSize: 11, fontWeight: '600', color: '#3b82f6' }}>
+                                    {currentQ.subject}
+                                </Text>
+                            </View>
+                        ) : null}
+                        {currentQ.topic ? (
+                            <View style={{ backgroundColor: '#f3f4f6', borderRadius: 6, paddingHorizontal: 8, paddingVertical: 3 }}>
+                                <Text style={{ fontSize: 11, color: '#6b7280', fontWeight: '500' }} numberOfLines={1}>
+                                    {currentQ.topic}
+                                </Text>
+                            </View>
+                        ) : null}
+                        {currentQ.difficulty ? (
+                            <View style={{
+                                borderRadius: 6, paddingHorizontal: 8, paddingVertical: 3,
+                                backgroundColor: currentQ.difficulty === 'EASY' ? '#f0fdf4' : currentQ.difficulty === 'HARD' ? '#fef2f2' : '#fff7ed',
+                            }}>
+                                <Text style={{
+                                    fontSize: 10, fontWeight: '700', letterSpacing: 0.3,
+                                    color: currentQ.difficulty === 'EASY' ? '#16a34a' : currentQ.difficulty === 'HARD' ? '#dc2626' : '#ea580c',
+                                }}>
+                                    {currentQ.difficulty}
+                                </Text>
+                            </View>
+                        ) : null}
+                    </View>
+                )}
                 <View style={{ backgroundColor: '#fff', borderRadius: 16, padding: 20, marginBottom: 16, borderWidth: 1, borderColor: '#f3f4f6' }}>
                     <Text style={{ fontSize: 15, fontWeight: '500', color: '#111827', lineHeight: 25 }}>
                         {currentQ.question_text}
@@ -508,6 +569,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                 flexDirection: 'row', paddingHorizontal: 16, paddingVertical: 12, paddingBottom: 24,
                 backgroundColor: '#fff', borderTopWidth: 1, borderTopColor: '#e5e7eb',
                 shadowColor: '#000', shadowOpacity: 0.08, shadowRadius: 12, shadowOffset: { width: 0, height: -3 }, elevation: 10,
+                alignItems: 'center',
             }}>
                 <TouchableOpacity
                     onPress={goPrev}
@@ -520,7 +582,24 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                     }}
                 >
                     <Ionicons name="chevron-back" size={16} color="#4b5563" />
-                    <Text style={{ color: '#4b5563', fontWeight: 'bold', fontSize: 14, marginLeft: 4 }}>Previous</Text>
+                    <Text style={{ color: '#4b5563', fontWeight: 'bold', fontSize: 14, marginLeft: 4 }}>Prev</Text>
+                </TouchableOpacity>
+
+                {/* Bookmark icon between prev and next */}
+                <TouchableOpacity
+                    onPress={() => toggleBookmark(currentQ)}
+                    style={{
+                        width: 44, height: 44, borderRadius: 12, alignItems: 'center', justifyContent: 'center',
+                        borderWidth: 1, borderColor: bookmarked.has(currentQ.id) ? COLORS.primary : '#e5e7eb',
+                        backgroundColor: bookmarked.has(currentQ.id) ? '#fff7ed' : '#fff',
+                        marginRight: 8,
+                    }}
+                >
+                    <Ionicons
+                        name={bookmarked.has(currentQ.id) ? 'bookmark' : 'bookmark-outline'}
+                        size={20}
+                        color={bookmarked.has(currentQ.id) ? COLORS.primary : '#9ca3af'}
+                    />
                 </TouchableOpacity>
 
                 {isLast ? (
@@ -529,7 +608,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                         disabled={submitting}
                         style={{
                             flex: 2, alignItems: 'center', justifyContent: 'center',
-                            paddingVertical: 12, backgroundColor: '#dc2626', borderRadius: 12, marginLeft: 8,
+                            paddingVertical: 12, backgroundColor: '#dc2626', borderRadius: 12,
                             shadowColor: '#dc2626', shadowOpacity: 0.3, shadowRadius: 6, shadowOffset: { width: 0, height: 3 }, elevation: 5,
                         }}
                     >
@@ -541,7 +620,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                         onPress={goNext}
                         style={{
                             flex: 2, flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
-                            paddingVertical: 12, backgroundColor: COLORS.primary, borderRadius: 12, marginLeft: 8,
+                            paddingVertical: 12, backgroundColor: COLORS.primary, borderRadius: 12,
                             shadowColor: COLORS.primary, shadowOpacity: 0.3, shadowRadius: 6, shadowOffset: { width: 0, height: 3 }, elevation: 5,
                         }}
                     >
