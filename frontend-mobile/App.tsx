@@ -4,10 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, FlatList, ScrollView, SafeAreaView, KeyboardAvoidingView, Platform, DimensionValue, Dimensions, Modal, Image, Alert, ActivityIndicator } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { BarChart, LineChart, ProgressChart } from 'react-native-chart-kit';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
-import * as AppleAuthentication from 'expo-apple-authentication';
-import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -45,35 +42,12 @@ const AttemptAPI = {
   submit: (attemptId: string) => api.post(`/attempts/${attemptId}/submit`),
 };
 
-const FlaggedAPI = {
-  flag: (question_source: string, question_id: string) =>
-    api.post('/me/flag', { question_source, question_id }),
-  unflag: (question_source: string, question_id: string) =>
-    api.delete('/me/flag', { params: { question_source, question_id } }),
-  list: (source?: string) =>
-    api.get('/me/flagged', { params: source ? { source } : {} }),
-};
-
-// Replace with your actual IDs when generating for Web and Android
-const GOOGLE_IOS_CLIENT_ID = "592393648560-0csjsd0dvukv94qg05np14rj1v3o9gg2.apps.googleusercontent.com";
-const GOOGLE_WEB_CLIENT_ID = "592393648560-o4ou87jvmv6tj3uura8ls27td06pv0o5.apps.googleusercontent.com";
-const GOOGLE_ANDROID_CLIENT_ID = "592393648560-rpddhav13tiikcpgki71kvlegmi3s91c.apps.googleusercontent.com";
-
 const { width } = Dimensions.get('window');
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 // --- MOCK DATA ---
 // Removed static mock definitions. Data is now fetched dynamically from backend.
-
-const CHART_CONFIG = {
-  backgroundGradientFrom: "#ffffff",
-  backgroundGradientTo: "#ffffff",
-  color: (opacity = 1) => `rgba(249, 115, 22, ${opacity})`,
-  strokeWidth: 2,
-  barPercentage: 0.5,
-  useShadowColorFromDataset: false
-};
 
 // --- REUSABLE COMPONENTS ---
 const TestCard = ({ item, onPress }: any) => (
@@ -279,139 +253,82 @@ const ProfileScreen = ({ navigation, route }: any) => {
 
 // --- Testbook Profile Sub-Screens ---
 const SavedQuestionsScreen = () => {
-  const [items, setItems] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [expandedId, setExpandedId] = useState<string | null>(null);
-  const [removing, setRemoving] = useState<string | null>(null);
+  const [saved, setSaved] = React.useState<any[]>([]);
+  const [loading, setLoading] = React.useState(true);
+  const [expanded, setExpanded] = React.useState<Set<string>>(new Set());
 
-  const load = async () => {
-    setLoading(true);
-    try {
-      const res = await FlaggedAPI.list();
-      setItems(res.data?.items || []);
-    } catch { /* silent */ }
-    finally { setLoading(false); }
+  React.useEffect(() => {
+    AsyncStorage.getItem('bookmarked_questions').then(raw => {
+      setSaved(raw ? JSON.parse(raw) : []);
+      setLoading(false);
+    }).catch(() => setLoading(false));
+  }, []);
+
+  const removeBookmark = async (id: string) => {
+    const updated = saved.filter(q => q.id !== id);
+    setSaved(updated);
+    await AsyncStorage.setItem('bookmarked_questions', JSON.stringify(updated));
   };
 
-  useEffect(() => { load(); }, []);
-
-  const handleRemove = async (item: any) => {
-    setRemoving(item.question_id);
-    try {
-      await FlaggedAPI.unflag(item.question_source, item.question_id);
-      setItems(prev => prev.filter(i => i.question_id !== item.question_id));
-    } catch { /* silent */ }
-    finally { setRemoving(null); }
+  const toggleExpand = (id: string) => {
+    const next = new Set(expanded);
+    next.has(id) ? next.delete(id) : next.add(id);
+    setExpanded(next);
   };
 
-  if (loading) {
-    return (
-      <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}>
-        <ActivityIndicator size="large" color="#f97316" />
-      </View>
-    );
-  }
+  if (loading) return <View style={[styles.detailContainer, { justifyContent: 'center', alignItems: 'center' }]}><ActivityIndicator size="large" color="#f97316" /></View>;
 
-  if (items.length === 0) {
-    return (
-      <View style={styles.detailContainer}>
-        <View style={styles.emptyState}>
-          <Ionicons name="bookmark-outline" size={64} color="#d1d5db" />
-          <Text style={styles.emptyText}>No saved questions yet.</Text>
-          <Text style={styles.emptySubText}>Tap the bookmark icon on any question during review to save it here.</Text>
-        </View>
+  if (saved.length === 0) return (
+    <View style={styles.detailContainer}>
+      <View style={styles.emptyState}>
+        <Ionicons name="bookmark-outline" size={64} color="#d1d5db" />
+        <Text style={styles.emptyText}>No saved questions yet.</Text>
+        <Text style={styles.emptySubText}>Tap the bookmark icon after a quiz to save questions here.</Text>
       </View>
-    );
-  }
+    </View>
+  );
 
   return (
-    <ScrollView style={styles.container} contentContainerStyle={{ padding: 16, paddingBottom: 40 }}>
-      <Text style={{ fontSize: 15, fontWeight: '700', color: '#111827', marginBottom: 12 }}>
-        {items.length} Saved Question{items.length !== 1 ? 's' : ''}
-      </Text>
-      {items.map((item, idx) => {
-        const isExpanded = expandedId === item.question_id;
-        const isRemoving = removing === item.question_id;
-        const sourceLabel = item.question_source === 'private_module' ? '📚 Module' : '📝 Quiz';
-        const sectionLabel = item.section ? ` · ${item.section}` : '';
-        return (
-          <View key={item.question_id} style={{
-            backgroundColor: '#fff', borderRadius: 12, marginBottom: 10,
-            borderWidth: 1, borderColor: '#e5e7eb', overflow: 'hidden',
-          }}>
-            {/* Header row */}
-            <TouchableOpacity
-              onPress={() => setExpandedId(isExpanded ? null : item.question_id)}
-              style={{ padding: 14, flexDirection: 'row', alignItems: 'flex-start' }}
-            >
-              <Text style={{ fontSize: 11, color: '#6b7280', marginRight: 6, marginTop: 2, minWidth: 18 }}>
-                {idx + 1}.
-              </Text>
-              <Text style={{ flex: 1, fontSize: 13, fontWeight: '600', color: '#111827', lineHeight: 20 }}
-                numberOfLines={isExpanded ? undefined : 3}>
-                {item.question_text || 'Question not available'}
-              </Text>
-              <Ionicons name={isExpanded ? 'chevron-up' : 'chevron-down'} size={16} color="#9ca3af" style={{ marginLeft: 8, marginTop: 2 }} />
-            </TouchableOpacity>
-
-            {/* Source tag */}
-            <View style={{ paddingHorizontal: 14, paddingBottom: 8, flexDirection: 'row', alignItems: 'center' }}>
-              <Text style={{ fontSize: 10, color: '#6b7280', backgroundColor: '#f3f4f6', borderRadius: 6, paddingHorizontal: 6, paddingVertical: 2 }}>
-                {sourceLabel}{sectionLabel}
-              </Text>
-              {item.subject && (
-                <Text style={{ fontSize: 10, color: '#6b7280', marginLeft: 6, backgroundColor: '#f3f4f6', borderRadius: 6, paddingHorizontal: 6, paddingVertical: 2 }}>
-                  {item.subject}
-                </Text>
+    <ScrollView style={styles.container}>
+      <View style={styles.contentPadAlt}>
+        <Text style={[styles.sectionTitle, { marginTop: 10 }]}>{saved.length} Saved Question{saved.length !== 1 ? 's' : ''}</Text>
+        {saved.map((q: any) => {
+          const isOpen = expanded.has(q.id);
+          return (
+            <View key={q.id} style={[styles.card, { flexDirection: 'column', alignItems: 'flex-start' }]}>
+              <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%', marginBottom: 8 }}>
+                <View style={{ flexDirection: 'row', gap: 6, flexWrap: 'wrap', flex: 1 }}>
+                  {q.subject && <View style={{ backgroundColor: '#fff7ed', paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6, borderWidth: 1, borderColor: '#fed7aa' }}><Text style={{ fontSize: 11, color: '#c2410c', fontWeight: '600' }}>{q.subject}</Text></View>}
+                  {q.topic && <View style={{ backgroundColor: '#f0f9ff', paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6, borderWidth: 1, borderColor: '#bae6fd' }}><Text style={{ fontSize: 11, color: '#0369a1', fontWeight: '600' }}>{q.topic}</Text></View>}
+                </View>
+                <TouchableOpacity onPress={() => removeBookmark(q.id)} style={{ padding: 4 }}>
+                  <Ionicons name="bookmark" size={20} color="#f97316" />
+                </TouchableOpacity>
+              </View>
+              <Text style={{ fontSize: 14, color: '#1f2937', fontWeight: '500', lineHeight: 20, marginBottom: 10 }}>{q.question_text}</Text>
+              {q.options?.map((opt: any, i: number) => (
+                <View key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', marginBottom: 5 }}>
+                  <View style={{ width: 22, height: 22, borderRadius: 11, backgroundColor: opt.is_correct ? '#dcfce7' : '#f3f4f6', borderWidth: 1, borderColor: opt.is_correct ? '#86efac' : '#e5e7eb', alignItems: 'center', justifyContent: 'center', marginRight: 8, marginTop: 1 }}>
+                    <Text style={{ fontSize: 10, fontWeight: 'bold', color: opt.is_correct ? '#16a34a' : '#6b7280' }}>{String.fromCharCode(65 + i)}</Text>
+                  </View>
+                  <Text style={{ fontSize: 13, color: opt.is_correct ? '#16a34a' : '#374151', flex: 1, lineHeight: 18, fontWeight: opt.is_correct ? '600' : '400' }}>{opt.option_text}</Text>
+                </View>
+              ))}
+              {q.explanation && (
+                <TouchableOpacity onPress={() => toggleExpand(q.id)} style={{ marginTop: 8 }}>
+                  <Text style={{ color: '#f97316', fontSize: 13, fontWeight: '600' }}>{isOpen ? '▲ Hide explanation' : '▼ Show explanation'}</Text>
+                </TouchableOpacity>
+              )}
+              {isOpen && q.explanation && (
+                <View style={{ marginTop: 8, backgroundColor: '#f0fdf4', borderRadius: 8, padding: 10, borderWidth: 1, borderColor: '#bbf7d0' }}>
+                  <Text style={{ fontSize: 13, color: '#166534', lineHeight: 18 }}>{q.explanation}</Text>
+                </View>
               )}
             </View>
-
-            {/* Expanded: options + explanation */}
-            {isExpanded && item.options?.length > 0 && (
-              <View style={{ paddingHorizontal: 14, paddingBottom: 4 }}>
-                {item.options.map((opt: any, i: number) => {
-                  const bg = opt.is_correct ? '#f0fdf4' : '#f9fafb';
-                  const border = opt.is_correct ? '#22c55e' : '#e5e7eb';
-                  return (
-                    <View key={i} style={{
-                      flexDirection: 'row', alignItems: 'flex-start',
-                      backgroundColor: bg, borderWidth: 1, borderColor: border,
-                      borderRadius: 8, paddingHorizontal: 10, paddingVertical: 8, marginBottom: 6,
-                    }}>
-                      <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#6b7280', marginRight: 6, marginTop: 1 }}>
-                        {String.fromCharCode(65 + i)}.
-                      </Text>
-                      <Text style={{ fontSize: 12, color: '#374151', flex: 1, lineHeight: 18 }}>{opt.option_text}</Text>
-                      {opt.is_correct && <Text style={{ color: '#16a34a', fontWeight: 'bold', fontSize: 14, marginLeft: 4 }}>✓</Text>}
-                    </View>
-                  );
-                })}
-                {item.explanation ? (
-                  <View style={{ backgroundColor: '#eff6ff', borderRadius: 8, padding: 10, marginBottom: 10, borderWidth: 1, borderColor: '#bfdbfe' }}>
-                    <Text style={{ fontSize: 12, color: '#1e40af', lineHeight: 18 }}>💡 {item.explanation}</Text>
-                  </View>
-                ) : null}
-              </View>
-            )}
-
-            {/* Remove button */}
-            <TouchableOpacity
-              onPress={() => handleRemove(item)}
-              disabled={isRemoving}
-              style={{
-                margin: 14, marginTop: 2, paddingVertical: 8, borderRadius: 8,
-                backgroundColor: '#fef2f2', borderWidth: 1, borderColor: '#fecaca',
-                flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
-              }}
-            >
-              <Ionicons name="bookmark" size={14} color="#ef4444" style={{ marginRight: 6 }} />
-              <Text style={{ fontSize: 12, color: '#ef4444', fontWeight: '600' }}>
-                {isRemoving ? 'Removing…' : 'Remove from Saved'}
-              </Text>
-            </TouchableOpacity>
-          </View>
-        );
-      })}
+          );
+        })}
+        <View style={{ height: 30 }} />
+      </View>
     </ScrollView>
   );
 };
@@ -457,7 +374,7 @@ const AttemptHistoryScreen = ({ navigation }: any) => {
     <ScrollView style={styles.container}>
       <View style={styles.contentPadAlt}>
         {attempts.map((attempt: any) => (
-          <TouchableOpacity key={attempt.id} style={styles.card} onPress={() => navigation.navigate('TestAnalysis')}>
+          <TouchableOpacity key={attempt.id} style={styles.card} onPress={() => navigation.navigate('PostTestResults', { attemptId: attempt.id })}>
             <View style={styles.flexRowBetween}>
               <View>
                 <Text style={styles.cardTitle}>Test Attempt</Text>
@@ -472,121 +389,27 @@ const AttemptHistoryScreen = ({ navigation }: any) => {
   );
 };
 
-const TestAnalysisScreen = () => {
-  return (
-    <ScrollView style={styles.container}>
-      <View style={styles.analysisHeader}>
-        <View style={{ alignItems: 'center' }}>
-          <ProgressChart
-            data={{ labels: ["Percentile"], data: [0.94] }}
-            width={width - 40}
-            height={150}
-            strokeWidth={16}
-            radius={50}
-            chartConfig={{ ...CHART_CONFIG, color: (opacity = 1) => `rgba(16, 185, 129, ${opacity})` }}
-            hideLegend={true}
-            style={{}}
-          />
-          <View style={{ position: 'absolute', top: 55, alignItems: 'center' }}>
-            <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#10b981' }}>94.5</Text>
-            <Text style={{ fontSize: 10, color: '#6b7280' }}>%ile</Text>
-          </View>
-        </View>
+const TestAnalysisScreen = ({ navigation }: any) => (
+  <View style={[styles.detailContainer, { justifyContent: 'center', alignItems: 'center' }]}>
+    <Ionicons name="analytics-outline" size={64} color="#d1d5db" />
+    <Text style={[styles.emptyText, { marginTop: 16 }]}>Analysis not available</Text>
+    <Text style={[styles.emptySubText, { marginTop: 8 }]}>Full analysis is shown immediately after completing a test.</Text>
+    <TouchableOpacity style={[styles.button, { marginTop: 24, paddingHorizontal: 32 }]} onPress={() => navigation.goBack()}>
+      <Text style={styles.buttonText}>Go Back</Text>
+    </TouchableOpacity>
+  </View>
+);
 
-        <View style={styles.statsBannerRow}>
-          <View style={styles.statsBox}>
-            <Text style={[styles.statsValue, { fontSize: 18, color: '#111827' }]}>1,402<Text style={{ fontSize: 10, color: '#9ca3af' }}>/10k</Text></Text>
-            <Text style={styles.statsLabel}>Rank</Text>
-          </View>
-          <View style={styles.statsBox}>
-            <Text style={[styles.statsValue, { fontSize: 18, color: '#111827' }]}>120<Text style={{ fontSize: 10, color: '#9ca3af' }}>/200</Text></Text>
-            <Text style={styles.statsLabel}>Score</Text>
-          </View>
-          <View style={styles.statsBox}>
-            <Text style={[styles.statsValue, { fontSize: 18, color: '#111827' }]}>88%</Text>
-            <Text style={styles.statsLabel}>Accuracy</Text>
-          </View>
-        </View>
-      </View>
-
-      <View style={styles.contentPadAlt}>
-        <Text style={styles.sectionTitle}>Section-wise Score</Text>
-        <View style={styles.chartWrapper}>
-          <BarChart
-            data={{
-              labels: ["Quant", "Reason", "Eng", "GK"],
-              datasets: [{ data: [45, 40, 25, 10] }]
-            }}
-            width={width - 64}
-            height={220}
-            yAxisLabel=""
-            yAxisSuffix=""
-            chartConfig={CHART_CONFIG}
-            verticalLabelRotation={0}
-            style={{ borderRadius: 16 }}
-            flatColor={true}
-            withInnerLines={false}
-          />
-        </View>
-
-        <Text style={[styles.sectionTitle, { marginTop: 20 }]}>Strong & Weak Areas</Text>
-        <View style={{ flexDirection: 'row', gap: 10 }}>
-          <View style={[styles.analysisCard, { borderColor: '#bbf7d0', backgroundColor: '#f0fdf4' }]}>
-            <Text style={[styles.cardTitle, { color: '#166534', marginBottom: 10 }]}>Strengths</Text>
-            <Text style={styles.tag}>Profit & Loss</Text>
-            <Text style={styles.tag}>Syllogism</Text>
-          </View>
-          <View style={[styles.analysisCard, { borderColor: '#fecaca', backgroundColor: '#fef2f2' }]}>
-            <Text style={[styles.cardTitle, { color: '#991b1b', marginBottom: 10 }]}>Weaknesses</Text>
-            <Text style={[styles.tag, { color: '#991b1b' }]}>Current Affairs</Text>
-            <Text style={[styles.tag, { color: '#991b1b' }]}>Vocabulary</Text>
-          </View>
-        </View>
-
-        <TouchableOpacity style={[styles.button, { marginTop: 30, marginBottom: 40 }]}>
-          <Text style={styles.buttonText}>Review All Answers</Text>
-        </TouchableOpacity>
-      </View>
-    </ScrollView>
-  );
-};
-
-const SeriesTrendScreen = ({ route }: any) => {
-  const { test } = route.params;
-  return (
-    <ScrollView style={styles.container}>
-      <View style={styles.analysisHeader}>
-        <Text style={styles.detailTitle}>{test.title}</Text>
-        <Text style={{ color: '#6b7280', marginTop: 5 }}>Performance Trajectory</Text>
-      </View>
-
-      <View style={styles.contentPadAlt}>
-        <Text style={styles.sectionTitle}>Score Progression</Text>
-        <View style={styles.chartWrapper}>
-          <LineChart
-            data={{
-              labels: ["M1", "M2", "M3", "M4", "M5"],
-              datasets: [{ data: [80, 95, 88, 110, 120] }]
-            }}
-            width={width - 64}
-            height={220}
-            chartConfig={CHART_CONFIG}
-            bezier
-            style={{ borderRadius: 16 }}
-            withShadow={false}
-            withHorizontalLines={true}
-            withVerticalLines={false}
-          />
-        </View>
-
-        <View style={styles.infoBox}>
-          <Text style={{ fontWeight: 'bold', color: '#166534' }}>Projected Result: Clear Cut-off</Text>
-          <Text style={[styles.infoText, { marginTop: 5 }]}>Based on your recent upward trend, you are projected to score ~135 in the actual exam, comfortably clearing the 130 cut-off mark.</Text>
-        </View>
-      </View>
-    </ScrollView>
-  );
-};
+const SeriesTrendScreen = ({ navigation }: any) => (
+  <View style={[styles.detailContainer, { justifyContent: 'center', alignItems: 'center' }]}>
+    <Ionicons name="trending-up-outline" size={64} color="#d1d5db" />
+    <Text style={[styles.emptyText, { marginTop: 16 }]}>Coming Soon</Text>
+    <Text style={[styles.emptySubText, { marginTop: 8 }]}>Series trend analysis will be available here.</Text>
+    <TouchableOpacity style={[styles.button, { marginTop: 24, paddingHorizontal: 32 }]} onPress={() => navigation.goBack()}>
+      <Text style={styles.buttonText}>Go Back</Text>
+    </TouchableOpacity>
+  </View>
+);
 const ReferEarnScreen = () => (
   <View style={styles.detailContainer}>
     <Text style={styles.detailTitle}>🎁 Refer & Earn</Text>

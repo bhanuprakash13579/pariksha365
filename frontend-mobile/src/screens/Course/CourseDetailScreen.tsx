@@ -95,7 +95,7 @@ export default function CourseDetailScreen({ navigation, route }: any) {
                             {folder.tests?.length === 0 ? <Text style={styles.metricText}>Empty folder.</Text> : null}
 
                             {folder.tests?.map((folderTest: any) => {
-                                const isLocked = !folder.is_free && course.price > 0; // Simplified lock logic for UI mockup
+                                const isLocked = !folder.is_free && course.price > 0 && !enrolled && !course.is_enrolled;
                                 const testData = folderTest.test_series || {};
 
                                 return (

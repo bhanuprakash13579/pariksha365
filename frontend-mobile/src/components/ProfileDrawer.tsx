@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, Modal, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import * as WebBrowser from 'expo-web-browser';
 import { styles, COLORS } from '../styles/theme';
 import { UserAPI } from '../services/api';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -48,11 +49,11 @@ export default function ProfileDrawer({ visible, onClose, isGuest }: any) {
                             <Ionicons name="home" size={22} color={COLORS.iconColor} />
                             <Text style={styles.drawerMenuText}>Home</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.drawerMenuItem}>
+                        <TouchableOpacity style={styles.drawerMenuItem} onPress={() => { onClose(); WebBrowser.openBrowserAsync('https://pariksha365.in/pass'); }}>
                             <Ionicons name="ticket" size={22} color={COLORS.iconColor} />
                             <Text style={styles.drawerMenuText}>Pass Pro MAX</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={styles.drawerMenuItem}>
+                        <TouchableOpacity style={styles.drawerMenuItem} onPress={() => { onClose(); WebBrowser.openBrowserAsync('https://pariksha365.in/notes'); }}>
                             <Ionicons name="book" size={22} color={COLORS.iconColor} />
                             <Text style={styles.drawerMenuText}>Study Notes</Text>
                             <View style={{ backgroundColor: '#fdba74', paddingHorizontal: 6, paddingVertical: 2, borderRadius: 4, marginLeft: 10 }}>

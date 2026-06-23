@@ -1,11 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, ScrollView, Dimensions, ActivityIndicator, TouchableOpacity } from 'react-native';
-import { BarChart } from 'react-native-chart-kit';
+import { View, Text, ScrollView, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { styles, COLORS } from '../../styles/theme';
 import { Ionicons } from '@expo/vector-icons';
 import { AnalyticsAPI } from '../../services/api';
 
-const screenWidth = Dimensions.get("window").width;
+
+function NativeBarChart({ data }: { data: { label: string; value: number }[] }) {
+    const max = Math.max(...data.map(d => d.value), 1);
+    return (
+        <View style={{ paddingVertical: 8 }}>
+            {data.map((item, i) => (
+                <View key={i} style={{ marginBottom: 10 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                        <Text style={{ fontSize: 12, color: '#6b7280', width: 90 }} numberOfLines={1}>{item.label}</Text>
+                        <View style={{ flex: 1, height: 18, backgroundColor: '#f3f4f6', borderRadius: 4, overflow: 'hidden' }}>
+                            <View style={{
+                                width: `${Math.min((item.value / max) * 100, 100)}%`,
+                                height: '100%', borderRadius: 4,
+                                backgroundColor: item.value >= 60 ? '#10b981' : item.value >= 40 ? '#f97316' : '#ef4444',
+                            }} />
+                        </View>
+                        <Text style={{ fontSize: 12, fontWeight: 'bold', color: '#374151', marginLeft: 8, width: 38, textAlign: 'right' }}>
+                            {Math.round(item.value)}%
+                        </Text>
+                    </View>
+                </View>
+            ))}
+        </View>
+    );
+}
 
 export default function AnalyticsScreen({ navigation }: any) {
     const [hierarchy, setHierarchy] = useState<any[]>([]);
@@ -100,25 +123,9 @@ export default function AnalyticsScreen({ navigation }: any) {
 
     const hasData = analyticsData?.subject_performances && analyticsData.subject_performances.length > 0;
 
-    const chartData = hasData ? {
-        labels: analyticsData.subject_performances.map((s: any) => s.subject.length > 5 ? s.subject.substring(0, 4) + '..' : s.subject),
-        datasets: [{ data: analyticsData.subject_performances.map((s: any) => s.accuracy_percentage) }]
-    } : { labels: ["No Data"], datasets: [{ data: [0] }] };
-
-    const chartConfig = {
-        backgroundGradientFrom: "#ffffff",
-        backgroundGradientTo: "#ffffff",
-        color: (opacity = 1) => `rgba(234, 88, 12, ${opacity})`, // orange-600
-        labelColor: (opacity = 1) => `rgba(107, 114, 128, ${opacity})`,
-        strokeWidth: 2,
-        barPercentage: 0.5,
-        fillShadowGradientFrom: COLORS.primary,
-        fillShadowGradientFromOpacity: 0.8,
-        fillShadowGradientTo: COLORS.primary,
-        fillShadowGradientToOpacity: 0.8,
-        useShadowColorFromDataset: false,
-        decimalPlaces: 0
-    };
+    const chartData = hasData
+        ? analyticsData.subject_performances.map((s: any) => ({ label: s.subject, value: s.accuracy_percentage }))
+        : [];
 
     return (
         <ScrollView style={styles.container}>
@@ -267,21 +274,10 @@ export default function AnalyticsScreen({ navigation }: any) {
 
                         {hasData ? (
                             <>
-                                {/* Bar Chart */}
+                                {/* Subject accuracy bars */}
                                 <Text style={[styles.sectionTitle, { marginTop: 10 }]}>Subject Accuracy (%)</Text>
-                                <View style={[styles.chartWrapper, { padding: 0, paddingRight: 15, paddingTop: 15, marginBottom: 20 }]}>
-                                    <BarChart
-                                        style={{ marginVertical: 8, borderRadius: 16 }}
-                                        data={chartData}
-                                        width={screenWidth - 40}
-                                        height={220}
-                                        yAxisLabel=""
-                                        yAxisSuffix="%"
-                                        chartConfig={chartConfig}
-                                        verticalLabelRotation={0}
-                                        fromZero={true}
-                                        showValuesOnTopOfBars={true}
-                                    />
+                                <View style={[styles.chartWrapper, { marginBottom: 20 }]}>
+                                    <NativeBarChart data={chartData} />
                                 </View>
 
                                 {/* Hero Metrics Grid */}
