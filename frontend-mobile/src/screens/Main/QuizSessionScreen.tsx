@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, SafeAreaView } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, ActivityIndicator, SafeAreaView, Modal } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { SvgXml } from 'react-native-svg';
@@ -36,7 +36,10 @@ interface QuizQuestion {
 }
 
 export default function QuizSessionScreen({ navigation, route }: any) {
-    const { subject, limit = 10, title = 'Daily Quiz', moduleSlug, weakTopicMode = false } = route.params || {};
+    const {
+        subject, limit = 10, title = 'Daily Quiz',
+        moduleSlug, weakTopicMode = false, wrongPracticeMode = false,
+    } = route.params || {};
 
     const QUIZ_DURATION = 5 * 60;
     const [questions, setQuestions] = useState<QuizQuestion[]>([]);
@@ -49,9 +52,9 @@ export default function QuizSessionScreen({ navigation, route }: any) {
     const [submitting, setSubmitting] = useState(false);
     const [timeLeft, setTimeLeft] = useState(QUIZ_DURATION);
     const [bookmarked, setBookmarked] = useState<Set<string>>(new Set());
+    const [showPalette, setShowPalette] = useState(false);
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-    // Load existing bookmarks
     useEffect(() => {
         AsyncStorage.getItem(BOOKMARK_KEY).then(data => {
             if (data) {
@@ -71,16 +74,18 @@ export default function QuizSessionScreen({ navigation, route }: any) {
         const fetchQuiz = async () => {
             try {
                 let res;
+                const bmData = await AsyncStorage.getItem(BOOKMARK_KEY);
+                const bmIds: string[] = bmData
+                    ? (JSON.parse(bmData) as any[]).map((q: any) => q.id).filter(Boolean)
+                    : [];
+
                 if (moduleSlug) {
                     res = await PrivateModuleAPI.getQuiz(moduleSlug, subject, limit);
+                } else if (wrongPracticeMode) {
+                    res = await QuizAPI.getWrongPractice(limit, bmIds);
                 } else if (weakTopicMode) {
                     res = await QuizAPI.getWeakTopicQuiz(limit);
                 } else {
-                    // Pass bookmarked IDs so server exempts them from mastery exclusion
-                    const bmData = await AsyncStorage.getItem(BOOKMARK_KEY);
-                    const bmIds: string[] = bmData
-                        ? (JSON.parse(bmData) as any[]).map((q: any) => q.id).filter(Boolean)
-                        : [];
                     res = await QuizAPI.getDailyQuiz(subject, limit, bmIds);
                 }
                 setQuestions(res.data?.questions || res.data || []);
@@ -91,7 +96,7 @@ export default function QuizSessionScreen({ navigation, route }: any) {
             }
         };
         fetchQuiz();
-    }, [subject, limit, moduleSlug, weakTopicMode]);
+    }, [subject, limit, moduleSlug, weakTopicMode, wrongPracticeMode]);
 
     useEffect(() => {
         if (!loading && questions.length > 0 && !submitted) {
@@ -189,7 +194,11 @@ export default function QuizSessionScreen({ navigation, route }: any) {
             <SafeAreaView style={{ flex: 1, backgroundColor: '#f9fafb', justifyContent: 'center', alignItems: 'center', padding: 20 }}>
                 <Ionicons name="help-circle-outline" size={48} color="#9ca3af" />
                 <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#111827', marginTop: 12 }}>No Questions Available</Text>
-                <Text style={{ color: '#6b7280', marginTop: 4, textAlign: 'center' }}>Try a different category or check back later.</Text>
+                <Text style={{ color: '#6b7280', marginTop: 4, textAlign: 'center' }}>
+                    {wrongPracticeMode
+                        ? "No wrong answers or bookmarks yet. Keep practising!"
+                        : "Try a different category or check back later."}
+                </Text>
                 <TouchableOpacity onPress={() => navigation.goBack()}
                     style={{ marginTop: 20, backgroundColor: COLORS.primary, paddingHorizontal: 24, paddingVertical: 12, borderRadius: 10 }}>
                     <Text style={{ color: '#fff', fontWeight: 'bold' }}>Go Back</Text>
@@ -228,7 +237,6 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                         </View>
                         <Text style={{ fontSize: 13, color: '#6b7280', marginBottom: 14 }}>Questions Correct</Text>
 
-                        {/* Progress bar */}
                         <View style={{ width: '100%', height: 8, backgroundColor: 'rgba(0,0,0,0.1)', borderRadius: 4, marginBottom: 6 }}>
                             <View style={{
                                 height: 8, borderRadius: 4,
@@ -259,7 +267,6 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                             ))}
                         </View>
 
-                        {/* ── Nudge message ── */}
                         {nudge ? (
                             <View style={{
                                 backgroundColor: '#eff6ff', borderWidth: 1, borderColor: '#bfdbfe',
@@ -307,38 +314,16 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                         ) : null}
 
                         {/* ── Actions ── */}
-                        {/* Practice Again — restart same subject quiz */}
-                        {subject && !weakTopicMode && !moduleSlug && (
-                            <TouchableOpacity
-                                onPress={() => {
-                                    setSubmitted(false);
-                                    setScorecard(null);
-                                    setSelectedAnswers({});
-                                    setCurrentIdx(0);
-                                    setShowReview(false);
-                                    setLoading(true);
-                                    // Re-trigger the fetchQuiz effect by navigating to the same screen
-                                    navigation.replace('QuizSession', { subject, limit, title });
-                                }}
-                                style={{
-                                    backgroundColor: COLORS.primary, borderRadius: 14, paddingVertical: 16,
-                                    alignItems: 'center', marginBottom: 10,
-                                    shadowColor: COLORS.primary, shadowOpacity: 0.3, shadowRadius: 8,
-                                    shadowOffset: { width: 0, height: 4 }, elevation: 5,
-                                }}
-                            >
-                                <Text style={{ color: '#fff', fontWeight: '700', fontSize: 16 }}>🔄 Practice Again</Text>
-                            </TouchableOpacity>
-                        )}
-
                         <TouchableOpacity
                             onPress={() => navigation.goBack()}
                             style={{
-                                borderRadius: 14, paddingVertical: 14, alignItems: 'center',
-                                marginBottom: 10, borderWidth: 1, borderColor: '#e5e7eb', backgroundColor: '#fff',
+                                backgroundColor: COLORS.primary, borderRadius: 14, paddingVertical: 16,
+                                alignItems: 'center', marginBottom: 10,
+                                shadowColor: COLORS.primary, shadowOpacity: 0.3, shadowRadius: 8,
+                                shadowOffset: { width: 0, height: 4 }, elevation: 5,
                             }}
                         >
-                            <Text style={{ color: '#374151', fontWeight: '700', fontSize: 15 }}>Back to Categories</Text>
+                            <Text style={{ color: '#fff', fontWeight: '700', fontSize: 16 }}>Back to Categories</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
@@ -373,7 +358,6 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                                     backgroundColor: '#fff', borderRadius: 14, padding: 16, marginBottom: 12,
                                     borderWidth: 1, borderColor: statusConfig.border,
                                 }}>
-                                    {/* Status badge + bookmark */}
                                     <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}>
                                         <View style={{
                                             paddingHorizontal: 9, paddingVertical: 4, borderRadius: 7,
@@ -397,12 +381,10 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                                         </TouchableOpacity>
                                     </View>
 
-                                    {/* Question text */}
                                     <Text style={{ fontSize: 13, fontWeight: '600', color: '#111827', marginBottom: 10, lineHeight: 20 }}>
                                         {idx + 1}. {q.question_text}
                                     </Text>
 
-                                    {/* Options */}
                                     {q.options.map((opt, i) => {
                                         const isOptCorrect = !!opt.is_correct;
                                         const isOptSelected = selIdx === i;
@@ -427,7 +409,6 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                                         );
                                     })}
 
-                                    {/* Explanation */}
                                     {q.explanation ? (
                                         <View style={{
                                             backgroundColor: '#eff6ff', borderRadius: 8, padding: 10, marginTop: 8,
@@ -455,6 +436,115 @@ export default function QuizSessionScreen({ navigation, route }: any) {
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: '#f9fafb' }}>
+            {/* ── Question Palette Modal (SSC CGL style) ── */}
+            <Modal visible={showPalette} transparent animationType="slide" onRequestClose={() => setShowPalette(false)}>
+                <TouchableOpacity
+                    style={{ flex: 1, backgroundColor: 'rgba(0,0,0,0.5)', justifyContent: 'flex-end' }}
+                    activeOpacity={1}
+                    onPress={() => setShowPalette(false)}
+                >
+                    <TouchableOpacity activeOpacity={1} onPress={() => {}}>
+                        <View style={{
+                            backgroundColor: '#fff',
+                            borderTopLeftRadius: 24, borderTopRightRadius: 24,
+                            padding: 20, paddingBottom: 36,
+                        }}>
+                            {/* Handle */}
+                            <View style={{ width: 40, height: 4, backgroundColor: '#e5e7eb', borderRadius: 2, alignSelf: 'center', marginBottom: 16 }} />
+
+                            <Text style={{ fontSize: 16, fontWeight: '700', color: '#111827', marginBottom: 4 }}>
+                                Question Navigator
+                            </Text>
+                            <Text style={{ fontSize: 12, color: '#6b7280', marginBottom: 16 }}>
+                                {answeredCount}/{questions.length} answered · tap any question to jump
+                            </Text>
+
+                            {/* Grid */}
+                            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+                                {questions.map((q, idx) => {
+                                    const isAnswered = selectedAnswers[idx] !== null && selectedAnswers[idx] !== undefined;
+                                    const isBookmarkedQ = bookmarked.has(q.id);
+                                    const isCurrent = idx === currentIdx;
+
+                                    let bg = '#f3f4f6';
+                                    let borderColor = '#e5e7eb';
+                                    let textColor = '#6b7280';
+                                    let borderWidth = 1;
+
+                                    if (isCurrent) {
+                                        bg = COLORS.primary; borderColor = COLORS.primary; textColor = '#fff'; borderWidth = 2;
+                                    } else if (isAnswered) {
+                                        bg = '#dcfce7'; borderColor = '#22c55e'; textColor = '#16a34a'; borderWidth = 1;
+                                    }
+                                    if (isBookmarkedQ && !isCurrent) {
+                                        borderColor = '#f97316'; borderWidth = 2;
+                                    }
+
+                                    return (
+                                        <TouchableOpacity
+                                            key={idx}
+                                            onPress={() => { setCurrentIdx(idx); setShowPalette(false); }}
+                                            style={{
+                                                width: 44, height: 44, borderRadius: 10,
+                                                backgroundColor: bg, borderWidth, borderColor,
+                                                alignItems: 'center', justifyContent: 'center',
+                                            }}
+                                        >
+                                            <Text style={{ fontSize: 13, fontWeight: '700', color: textColor }}>{idx + 1}</Text>
+                                            {isBookmarkedQ && !isCurrent && (
+                                                <View style={{
+                                                    position: 'absolute', top: -3, right: -3,
+                                                    width: 10, height: 10, borderRadius: 5,
+                                                    backgroundColor: '#f97316', borderWidth: 1, borderColor: '#fff',
+                                                }} />
+                                            )}
+                                        </TouchableOpacity>
+                                    );
+                                })}
+                            </View>
+
+                            {/* Legend */}
+                            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 16, marginTop: 20, paddingTop: 16, borderTopWidth: 1, borderTopColor: '#f3f4f6' }}>
+                                {[
+                                    { bg: COLORS.primary, border: COLORS.primary, text: '#fff', label: 'Current' },
+                                    { bg: '#dcfce7', border: '#22c55e', text: '#16a34a', label: 'Answered' },
+                                    { bg: '#f3f4f6', border: '#e5e7eb', text: '#6b7280', label: 'Not Answered' },
+                                    { bg: '#f3f4f6', border: '#f97316', text: '#6b7280', label: 'Bookmarked', dot: true },
+                                ].map((item, i) => (
+                                    <View key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+                                        <View style={{
+                                            width: 18, height: 18, borderRadius: 4,
+                                            backgroundColor: item.bg, borderWidth: 2, borderColor: item.border,
+                                        }}>
+                                            {item.dot && (
+                                                <View style={{
+                                                    position: 'absolute', top: -4, right: -4,
+                                                    width: 8, height: 8, borderRadius: 4, backgroundColor: '#f97316',
+                                                }} />
+                                            )}
+                                        </View>
+                                        <Text style={{ fontSize: 11, color: '#6b7280' }}>{item.label}</Text>
+                                    </View>
+                                ))}
+                            </View>
+
+                            {/* Submit from palette if all answered */}
+                            {answeredCount === questions.length && (
+                                <TouchableOpacity
+                                    onPress={() => { setShowPalette(false); handleSubmit(); }}
+                                    style={{
+                                        marginTop: 16, backgroundColor: '#dc2626', borderRadius: 12,
+                                        paddingVertical: 14, alignItems: 'center',
+                                    }}
+                                >
+                                    <Text style={{ color: '#fff', fontWeight: '700', fontSize: 15 }}>Submit Quiz</Text>
+                                </TouchableOpacity>
+                            )}
+                        </View>
+                    </TouchableOpacity>
+                </TouchableOpacity>
+            </Modal>
+
             {/* Header */}
             <View style={{
                 backgroundColor: '#fff', paddingHorizontal: 16, paddingVertical: 12,
@@ -467,18 +557,27 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                 <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#111827', flex: 1, textAlign: 'center', marginHorizontal: 8 }} numberOfLines={1}>
                     {title}
                 </Text>
-                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
                     <View style={{
                         backgroundColor: timeLeft < 60 ? '#fee2e2' : '#f3f4f6',
-                        paddingHorizontal: 7, paddingVertical: 3, borderRadius: 8, marginRight: 8,
+                        paddingHorizontal: 7, paddingVertical: 3, borderRadius: 8,
                     }}>
                         <Text style={{ fontSize: 12, fontWeight: 'bold', color: timeLeft < 60 ? '#dc2626' : '#374151' }}>
                             ⏱ {formatTime(timeLeft)}
                         </Text>
                     </View>
-                    <Text style={{ fontSize: 13, color: '#6b7280', fontWeight: '600' }}>
-                        {currentIdx + 1}/{questions.length}
-                    </Text>
+                    {/* Tappable Q counter — opens palette */}
+                    <TouchableOpacity
+                        onPress={() => setShowPalette(true)}
+                        style={{
+                            backgroundColor: '#eff6ff', paddingHorizontal: 9, paddingVertical: 4,
+                            borderRadius: 8, borderWidth: 1, borderColor: '#bfdbfe',
+                        }}
+                    >
+                        <Text style={{ fontSize: 12, fontWeight: '700', color: '#3b82f6' }}>
+                            {currentIdx + 1}/{questions.length}
+                        </Text>
+                    </TouchableOpacity>
                 </View>
             </View>
 
@@ -486,43 +585,11 @@ export default function QuizSessionScreen({ navigation, route }: any) {
             <View style={{ height: 3, backgroundColor: '#e5e7eb' }}>
                 <View style={{
                     height: 3, backgroundColor: COLORS.primary,
-                    width: `${((currentIdx + 1) / questions.length) * 100}%`,
+                    width: `${((answeredCount) / questions.length) * 100}%`,
                 }} />
             </View>
 
             <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 16, paddingBottom: 80 }}>
-                {/* Topic + difficulty chip */}
-                {(currentQ.subject || currentQ.topic) && (
-                    <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 8, flexWrap: 'wrap', gap: 6 }}>
-                        {currentQ.subject ? (
-                            <View style={{ backgroundColor: '#eff6ff', borderRadius: 6, paddingHorizontal: 8, paddingVertical: 3 }}>
-                                <Text style={{ fontSize: 11, fontWeight: '600', color: '#3b82f6' }}>
-                                    {currentQ.subject}
-                                </Text>
-                            </View>
-                        ) : null}
-                        {currentQ.topic ? (
-                            <View style={{ backgroundColor: '#f3f4f6', borderRadius: 6, paddingHorizontal: 8, paddingVertical: 3 }}>
-                                <Text style={{ fontSize: 11, color: '#6b7280', fontWeight: '500' }} numberOfLines={1}>
-                                    {currentQ.topic}
-                                </Text>
-                            </View>
-                        ) : null}
-                        {currentQ.difficulty ? (
-                            <View style={{
-                                borderRadius: 6, paddingHorizontal: 8, paddingVertical: 3,
-                                backgroundColor: currentQ.difficulty === 'EASY' ? '#f0fdf4' : currentQ.difficulty === 'HARD' ? '#fef2f2' : '#fff7ed',
-                            }}>
-                                <Text style={{
-                                    fontSize: 10, fontWeight: '700', letterSpacing: 0.3,
-                                    color: currentQ.difficulty === 'EASY' ? '#16a34a' : currentQ.difficulty === 'HARD' ? '#dc2626' : '#ea580c',
-                                }}>
-                                    {currentQ.difficulty}
-                                </Text>
-                            </View>
-                        ) : null}
-                    </View>
-                )}
                 <View style={{ backgroundColor: '#fff', borderRadius: 16, padding: 20, marginBottom: 16, borderWidth: 1, borderColor: '#f3f4f6' }}>
                     <Text style={{ fontSize: 15, fontWeight: '500', color: '#111827', lineHeight: 25 }}>
                         {currentQ.question_text}
@@ -585,12 +652,13 @@ export default function QuizSessionScreen({ navigation, route }: any) {
                     <Text style={{ color: '#4b5563', fontWeight: 'bold', fontSize: 14, marginLeft: 4 }}>Prev</Text>
                 </TouchableOpacity>
 
-                {/* Bookmark icon between prev and next */}
+                {/* Bookmark */}
                 <TouchableOpacity
                     onPress={() => toggleBookmark(currentQ)}
                     style={{
                         width: 44, height: 44, borderRadius: 12, alignItems: 'center', justifyContent: 'center',
-                        borderWidth: 1, borderColor: bookmarked.has(currentQ.id) ? COLORS.primary : '#e5e7eb',
+                        borderWidth: 1.5,
+                        borderColor: bookmarked.has(currentQ.id) ? COLORS.primary : '#e5e7eb',
                         backgroundColor: bookmarked.has(currentQ.id) ? '#fff7ed' : '#fff',
                         marginRight: 8,
                     }}

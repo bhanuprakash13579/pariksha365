@@ -443,6 +443,67 @@ async def _fetch_prioritized_questions(
     return result_qs[:limit]
 
 
+async def get_wrong_practice_quiz(
+    db: AsyncSession, user_id: uuid.UUID,
+    bookmarked_ids: Optional[List[str]] = None, limit: int = 20
+) -> dict:
+    """
+    "Revise Weak Areas" mode — returns questions from three pools:
+    1. Wrong/skipped: ever attempted incorrectly AND never since answered correctly
+    2. Bookmarked: passed from client AsyncStorage (user flagged them for review)
+    Pools are merged, deduplicated, then returned in random order.
+    """
+    # Per-question correct-answer counts (all-time)
+    correct_count_rows = (await db.execute(
+        select(QuizAttempt.question_id, func.count(QuizAttempt.id).label("cnt"))
+        .where(QuizAttempt.user_id == user_id, QuizAttempt.was_correct == True)  # noqa
+        .group_by(QuizAttempt.question_id)
+    )).all()
+    mastered: set = {row[0] for row in correct_count_rows if row[1] >= 1}
+
+    wrong_raw: set = set(r[0] for r in (await db.execute(
+        select(QuizAttempt.question_id).where(
+            QuizAttempt.user_id == user_id, QuizAttempt.was_correct == False  # noqa
+        ).distinct()
+    )).all())
+    wrong_ids = wrong_raw - mastered  # pending a first correct answer
+
+    bookmarked: set = set()
+    if bookmarked_ids:
+        for bid in bookmarked_ids:
+            try:
+                bookmarked.add(uuid.UUID(str(bid)))
+            except (ValueError, AttributeError):
+                pass
+
+    combined: set = wrong_ids | bookmarked
+
+    if not combined:
+        return {
+            "questions": [], "count": 0, "total_available": 0,
+            "wrong_count": 0, "bookmarked_count": len(bookmarked),
+            "message": "No weak questions found — great work! Keep practising to stay sharp.",
+        }
+
+    questions = (await db.execute(
+        select(QuizQuestion).where(QuizQuestion.id.in_(combined))
+        .order_by(func.random()).limit(limit)
+    )).scalars().all()
+
+    return {
+        "questions": [_serialize_quiz_question(q) for q in questions],
+        "count": len(questions),
+        "total_available": len(combined),
+        "wrong_count": len(wrong_ids),
+        "bookmarked_count": len(bookmarked),
+        "message": (
+            f"{len(combined)} questions to revise"
+            + (f" · {len(wrong_ids)} wrong/skipped" if wrong_ids else "")
+            + (f" · {len(bookmarked)} bookmarked" if bookmarked else "")
+        ),
+    }
+
+
 async def get_more_practice(db: AsyncSession, user_id: uuid.UUID, subject: str,
                             topic: Optional[str] = None, topic_code: Optional[str] = None,
                             exclude_ids: List[str] = [], limit: int = 10) -> dict:

@@ -89,6 +89,13 @@ export const QuizAPI = {
         api.post('/quiz/submit', { answers }),
     getStreak: () => api.get('/quiz/streak'),
     getWeakTopicsList: () => api.get('/quiz/weak-topics/list'),
+    getWrongPractice: (limit?: number, bookmarkedIds?: string[]) =>
+        api.get('/quiz/wrong-practice', {
+            params: {
+                ...(limit ? { limit } : {}),
+                ...(bookmarkedIds && bookmarkedIds.length > 0 ? { bookmarked_ids: bookmarkedIds.join(',') } : {}),
+            }
+        }),
 };
 
 export const PrivateModuleAPI = {

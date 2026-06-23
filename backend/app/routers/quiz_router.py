@@ -68,6 +68,18 @@ async def get_weak_topic_quiz(
     return await practice_service.get_weak_topic_quiz(db, user.id, limit)
 
 
+@router.get("/wrong-practice")
+async def get_wrong_practice_quiz(
+    db: AsyncSession = Depends(get_db),
+    user: User = Depends(get_current_user),
+    limit: int = Query(20, ge=1, le=50),
+    bookmarked_ids: Optional[str] = Query(None, description="Comma-separated bookmarked question UUIDs from client AsyncStorage")
+) -> Any:
+    """Return wrong/skipped + bookmarked questions as a revision quiz."""
+    bids = [b.strip() for b in bookmarked_ids.split(",") if b.strip()] if bookmarked_ids else []
+    return await practice_service.get_wrong_practice_quiz(db, user.id, bids, limit)
+
+
 @router.post("/more-practice")
 async def get_more_practice(
     subject: str = Query(...),

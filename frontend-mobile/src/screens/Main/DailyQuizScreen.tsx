@@ -154,7 +154,38 @@ export default function DailyQuizScreen({ navigation }: any) {
                     )}
                 </TouchableOpacity>
 
-                {/* ── PATHWAY 2: Cover More Ground ── */}
+                {/* ── PATHWAY 2: Revise Weak Areas ── */}
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('QuizSession', {
+                        title: 'Revise Weak Areas',
+                        wrongPracticeMode: true,
+                        limit: 20,
+                    })}
+                    activeOpacity={0.8}
+                    style={{
+                        borderRadius: 16, padding: 16, marginBottom: 20,
+                        backgroundColor: '#fef2f2', borderWidth: 1.5, borderColor: '#fecaca',
+                        flexDirection: 'row', alignItems: 'center',
+                        shadowColor: '#dc2626', shadowOpacity: 0.08,
+                        shadowRadius: 6, shadowOffset: { width: 0, height: 2 }, elevation: 2,
+                    }}
+                >
+                    <View style={{
+                        width: 44, height: 44, borderRadius: 12,
+                        backgroundColor: '#fee2e2', alignItems: 'center', justifyContent: 'center', marginRight: 12,
+                    }}>
+                        <Text style={{ fontSize: 22 }}>📋</Text>
+                    </View>
+                    <View style={{ flex: 1 }}>
+                        <Text style={{ fontSize: 16, fontWeight: '700', color: '#111827' }}>Revise Weak Areas</Text>
+                        <Text style={{ fontSize: 12, color: '#6b7280', marginTop: 2 }}>
+                            Wrong answers · skipped · bookmarked questions
+                        </Text>
+                    </View>
+                    <Ionicons name="chevron-forward" size={20} color="#dc2626" />
+                </TouchableOpacity>
+
+                {/* ── PATHWAY 3: Cover More Ground ── */}
                 <Text style={[styles.sectionTitle, { marginBottom: 4 }]}>📚 Cover More Ground</Text>
                 <Text style={{ color: '#6b7280', fontSize: 13, marginBottom: 16 }}>
                     Pick a subject — 10 questions spread across different topics.
